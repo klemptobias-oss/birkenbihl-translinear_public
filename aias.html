@@ -5,69 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Aias – Werkseite</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      :root{ --gap:14px; }
-
-      /* PDF oben rechts */
-      .pdf-frame { width:100%; height:78vh; border:1px solid var(--edge); background:#fafafa; }
-      .pdf-controls { display:flex; gap:8px; align-items:center; margin-bottom:8px; flex-wrap:wrap; }
-      .pdf-controls .muted { margin-left:auto; }
-      .radio { display:inline-flex; align-items:center; gap:6px; }
-
-      /* Textdarstellung */
-      .src { white-space: pre; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size:0.95rem; line-height:1.4; }
-      .small { font-size:0.85em; color:var(--muted); }
-      .ok { color:#2a7; } .warn { color:#c71; } .err { color:#c33; }
-      .save-dot { width:8px; height:8px; border-radius:50%; display:inline-block; margin-right:6px; background:#aaa; vertical-align:middle; }
-      .save-dot.ok { background:#2a7; } .save-dot.busy { background:#c71; }
-
-      /* Unten: zweispaltig, nur höher – nicht breiter als Seite */
-      .card-wide { width:100%; }
-      .bb-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--gap); }
-      @media (max-width: 1100px){ .bb-grid{ grid-template-columns:1fr; } }
-      .pane { border:1px solid var(--edge); background:#fff; border-radius:8px; }
-      .pane h3 { margin:0; padding:10px 12px; border-bottom:1px solid var(--edge); }
-      .pane-body { padding:10px 12px; }
-      .pane-body .split { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:8px; }
-      .srcbox { background:#f8f8f8; border:1px solid var(--edge); padding:8px; height:52vh; overflow:auto; }
-      .editor { width:100%; height:52vh; border:1px solid var(--edge); background:#fff; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size:0.95rem; line-height:1.4; padding:8px; }
-
-      /* Anzeige-Schalter (An/Aus) */
-      .toggle-row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:6px 0 10px; }
-      .toggle { display:inline-flex; align-items:center; gap:8px; border:1px solid var(--edge); padding:6px 8px; border-radius:8px; background:#fff; cursor:pointer; user-select:none; }
-      .toggle input { display:none; }
-      .state { font-weight:700; }
-      .state.on { color:#147a2e; }   /* grün */
-      .state.off{ color:#b5242a; }   /* rot */
-
-      /* Modal (Bestätigung Zurücksetzen) */
-      .modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.45); display:none; align-items:center; justify-content:center; z-index:1000; }
-      .modal { background:#fff; border:1px solid var(--edge); border-radius:10px; width:min(560px,92vw); box-shadow:0 10px 28px rgba(0,0,0,0.2); }
-      .modal-header { display:flex; align-items:center; justify-content:space-between; padding:12px 14px; border-bottom:1px solid var(--edge); }
-      .modal-title { font-weight:600; }
-      .modal-close { appearance:none; border:none; background:transparent; font-size:18px; line-height:1; cursor:pointer; padding:4px 6px; }
-      .modal-body { padding:14px; }
-      .modal-actions { display:flex; gap:8px; justify-content:flex-end; padding:12px 14px; border-top:1px solid var(--edge); }
-      .btn.secondary { background:#eee; color:#333; } .btn.danger { background:#b5242a; color:#fff; }
-
-      /* Modal: PDF-Optionen */
-      .opt-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.45); display:none; align-items:center; justify-content:center; z-index:1000; }
-      .opt-modal { background:#fff; border:1px solid var(--edge); border-radius:10px; width:min(640px,96vw); max-height:92vh; overflow:auto; box-shadow:0 10px 28px rgba(0,0,0,0.2); }
-      .opt-header { display:flex; align-items:center; justify-content:space-between; padding:12px 14px; border-bottom:1px solid var(--edge); }
-      .opt-title { font-weight:600; }
-      .opt-body { padding:14px; display:grid; grid-template-columns:1fr; gap:12px; }
-      .opt-section { border:1px dashed var(--edge); border-radius:8px; padding:10px; }
-      .opt-row { display:flex; flex-direction:column; gap:8px; }
-      .opt-check { display:flex; align-items:center; gap:8px; }
-      .opt-color-chip { display:inline-block; padding:2px 6px; border-radius:6px; font-weight:600; }
-      .chip-red { background:#ffd9d9; color:#b40000; }
-      .chip-green { background:#dcffe5; color:#0f6b2b; }
-      .chip-blue { background:#dbeaff; color:#0a3f91; }
-      .opt-actions { display:flex; gap:8px; justify-content:flex-end; padding:12px 14px; border-top:1px solid var(--edge); }
-      .opt-toggle-adv { margin-top:6px; }
-      details.opt-adv summary { cursor:pointer; font-weight:600; }
-      .muted-note { color:var(--muted); font-size:0.9em; }
-    </style>
+    <link rel="stylesheet" href="style_aias.css" />
   </head>
   <body>
     <div class="wrap">
