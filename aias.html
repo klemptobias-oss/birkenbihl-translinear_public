@@ -10,6 +10,8 @@
       .pdf-controls { display:flex; gap:8px; align-items:center; margin-bottom:8px; flex-wrap:wrap; }
       .pdf-controls .muted { margin-left:auto; }
       .radio { display:inline-flex; align-items:center; gap:6px; }
+      ol { padding-left: 1.2rem; }
+      .src { white-space: pre; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 0.92rem; line-height: 1.35; }
     </style>
   </head>
   <body>
@@ -23,7 +25,7 @@
       <!-- Hinweis -->
       <div class="notice">
         Links: <b>texte/Aias.txt</b> · Unten: <b>texte/Aias_birkenbihl.txt</b> ·
-        Rechts: eingebettetes PDF aus <b>pdf/TragödieAias_Normal.pdf</b> bzw. <b>…_Fett.pdf</b>
+        Rechts: eingebettetes PDF (Quelle: <b>Original</b> oder <b>Entwurf</b>, Darstellung: <b>Normal</b>/<b>Fett</b>)
       </div>
 
       <!-- Oben: Grid (links Original, rechts PDF-Viewer) -->
@@ -46,7 +48,18 @@
           <h2>PDF</h2>
           <div class="pane-body">
             <div class="pdf-controls">
+              <!-- Quelle: Original vs. Entwurf -->
               <span class="radio">
+                <input type="radio" name="pdfsrc" id="src-original" value="original" checked />
+                <label for="src-original">Original</label>
+              </span>
+              <span class="radio">
+                <input type="radio" name="pdfsrc" id="src-draft" value="draft" />
+                <label for="src-draft">Entwurf</label>
+              </span>
+
+              <!-- Darstellung: Normal vs. Fett -->
+              <span class="radio" style="margin-left:12px">
                 <input type="radio" name="pdfkind" id="pdf-normal" value="Normal" checked />
                 <label for="pdf-normal">Normal</label>
               </span>
@@ -54,10 +67,13 @@
                 <input type="radio" name="pdfkind" id="pdf-fett" value="Fett" />
                 <label for="pdf-fett">Fett</label>
               </span>
+
               <button class="btn" id="pdf-refresh" title="PDF neu laden">PDF aktualisieren</button>
               <a class="btn" href="pdf/TragödieAias_Normal.pdf" id="pdf-download" download>Aktuelles PDF herunterladen</a>
+
               <span class="muted">PDF wird aus der Birkenbihl-Datei durch den Build erzeugt.</span>
             </div>
+
             <object id="pdf-frame" class="pdf-frame" type="application/pdf"
               data="pdf/TragödieAias_Normal.pdf#view=FitH">
               <p>PDF kann nicht eingebettet werden. <a href="pdf/TragödieAias_Normal.pdf" target="_blank">Hier öffnen</a>.</p>
@@ -66,15 +82,19 @@
         </section>
       </div>
 
-      <!-- Unten: Birkenbihl-TXT mit Bearbeiten-Modus -->
+      <!-- Unten: Birkenbihl-TXT mit Bearbeiten-/Entwurfsmodus -->
       <section class="card" style="margin-top: 16px">
         <h2>Birkenbihl – Text</h2>
         <div class="pane-body">
           <div class="split">
-            <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen</a>
+            <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen (Original)</a>
+
             <button class="btn" id="bb-edit">Bearbeiten</button>
             <button class="btn" id="bb-cancel" style="display:none">Abbrechen</button>
-            <a class="btn" id="bb-save" style="display:none" download="Aias_birkenbihl.txt">Geänderte TXT herunterladen</a>
+            <a class="btn" id="bb-save" style="display:none" download="Aias_birkenbihl_DRAFT.txt">Entwurf als TXT speichern</a>
+
+            <!-- Leitfaden: Entwurfs-PDF erzeugen -->
+            <button class="btn" id="bb-draft-guide">PDF generieren (Entwurf)</button>
           </div>
 
           <!-- Vorschau -->
@@ -85,8 +105,20 @@
           <!-- Editor (unsichtbar bis „Bearbeiten“) -->
           <textarea id="bb-editor" class="src" style="display:none;width:100%;height:calc(70vh - 64px);border:1px solid var(--edge);background:#f7f7f7;"></textarea>
 
+          <!-- Schritt-für-Schritt-Anleitung für Draft-Build -->
+          <div id="draft-steps" class="notice" style="display:none; margin-top:8px">
+            <b>So erzeugst du dein Entwurfs-PDF, ohne das Original zu verändern:</b>
+            <ol>
+              <li>Klicke oben auf <i>„Entwurf als TXT speichern“</i> (lädt <code>Aias_birkenbihl_DRAFT.txt</code> herunter).</li>
+              <li>Öffne den Upload-Ordner <a href="https://github.com/klemptobias-oss/birkenbihl-translinear_public/upload/main/texte_drafts" target="_blank">texte_drafts/</a> und lade diese Datei hoch → <i>Commit changes</i>.</li>
+              <li>Warte, bis der Draft-Workflow gelaufen ist (Reiter <i>Actions</i>). Dann oben rechts im PDF-Bereich <b>„Entwurf“</b> wählen und auf <b>„PDF aktualisieren“</b> klicken.</li>
+            </ol>
+            Die fertigen Entwurfs-PDFs werden unter <code>pdf_drafts/</code> abgelegt und heißen <code>Aias_DRAFT_LATEST_Normal.pdf</code> bzw. <code>…_Fett.pdf</code>.
+          </div>
+
           <div class="notice" style="margin-top:8px">
-            Änderungen werden lokal gespeichert (Download). Für neue PDFs: geänderte Datei im Repo unter <code>texte/</code> ersetzen → Build erzeugt neue PDFs → oben „PDF aktualisieren“.
+            Hinweis: Der Entwurfsweg lässt das Original in <code>texte/</code> unberührt. Für „offizielle“ PDFs (im Ordner <code>pdf/</code>)
+            ersetzt du später die Originaldatei in <code>texte/</code> und lässt den Haupt-Workflow laufen.
           </div>
         </div>
       </section>
@@ -97,7 +129,7 @@
       </div>
     </div>
 
-    <!-- Skript: Bearbeiten/Download & PDF-Umschalter -->
+    <!-- Skript: Editor, Draft-Leitfaden & PDF-Umschalter -->
     <script>
       (function () {
         // --- Birkenbihl-Editor ---
@@ -140,27 +172,43 @@
           setTimeout(() => URL.revokeObjectURL(url), 30000);
         });
 
+        // Draft-Leitfaden ein-/ausblenden
+        const btnDraftGuide = document.getElementById("bb-draft-guide");
+        const draftSteps = document.getElementById("draft-steps");
+        btnDraftGuide?.addEventListener("click", () => {
+          draftSteps.style.display = draftSteps.style.display === "none" ? "" : "none";
+        });
+
         // --- PDF-Umschalter / Aktualisieren ---
         const pdfFrame = document.getElementById("pdf-frame");
         const pdfNormal = document.getElementById("pdf-normal");
         const pdfFett = document.getElementById("pdf-fett");
+        const srcOriginal = document.getElementById("src-original");
+        const srcDraft = document.getElementById("src-draft");
         const btnRefresh = document.getElementById("pdf-refresh");
         const btnPdfDownload = document.getElementById("pdf-download");
 
         function currentPdfPath() {
-          const base = "pdf/TragödieAias_";
           const kind = pdfFett.checked ? "Fett" : "Normal";
-          return base + kind + ".pdf";
+          const useDraft = srcDraft.checked;
+          if (useDraft) {
+            // Entwurfs-PDFs (LATEST-Alias aus dem Draft-Workflow)
+            return `pdf_drafts/Aias_DRAFT_LATEST_${kind}.pdf`;
+          } else {
+            // Offizielle PDFs (Haupt-Workflow)
+            return `pdf/TragödieAias_${kind}.pdf`;
+          }
         }
         function loadPdf(bust=false) {
           const url = currentPdfPath();
-          const withHash = url + "#view=FitH";
-          const finalUrl = bust ? (url + "?t=" + Date.now() + "#view=FitH") : withHash;
+          const finalUrl = bust ? (url + "?t=" + Date.now() + "#view=FitH") : (url + "#view=FitH");
           pdfFrame.setAttribute("data", finalUrl);
           btnPdfDownload.setAttribute("href", url);
         }
-        pdfNormal.addEventListener("change", () => loadPdf(true));
-        pdfFett.addEventListener("change", () => loadPdf(true));
+
+        [pdfNormal, pdfFett, srcOriginal, srcDraft].forEach(el => {
+          el?.addEventListener("change", () => loadPdf(true));
+        });
         btnRefresh.addEventListener("click", () => loadPdf(true));
 
         // Initial laden
