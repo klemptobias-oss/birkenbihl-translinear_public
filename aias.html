@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- ######## START: Werkseite – Aias ######## -->
     <div class="wrap">
       <!-- Kopfzeile -->
       <div class="bar">
@@ -17,12 +16,11 @@
 
       <!-- Hinweis -->
       <div class="notice">
-        Oben links: <b>texte/Aias.txt</b>. <br />
-        Unten separat: <b>texte/Aias_birkenbihl.txt</b>. <br />
-        (Beide Dateien gehören in den Ordner <code>texte/</code>.)
+        Oben links: <b>texte/Aias.txt</b> · Unten: <b>texte/Aias_birkenbihl.txt</b><br />
+        PDFs rechts: <b>pdf/TragödieAias_Normal.pdf</b> und <b>pdf/TragödieAias_Fett.pdf</b>
       </div>
 
-      <!-- Oben: Grid (links Original, rechts Platzhalter) -->
+      <!-- Oben: Grid (links Original, rechts PDF-Links) -->
       <div class="grid">
         <!-- Original (links) -->
         <section class="card">
@@ -32,20 +30,21 @@
               <a class="btn" href="texte/Aias.txt" download>Herunterladen</a>
             </div>
             <object data="texte/Aias.txt" type="text/plain">
-              <pre class="src">
-Konnte texte/Aias.txt nicht laden. Liegt die Datei im Ordner texte/?</pre
-              >
+              <pre class="src">Konnte texte/Aias.txt nicht laden. Liegt die Datei im Ordner texte/?</pre>
             </object>
           </div>
         </section>
 
-        <!-- Platzhalter (rechts) -->
+        <!-- PDFs (rechts) -->
         <section class="card">
-          <h2>PDF/Extras – Platzhalter</h2>
+          <h2>PDF</h2>
           <div class="pane-body">
+            <div class="split">
+              <a class="btn" href="pdf/TragödieAias_Normal.pdf" download>PDF Normal</a>
+              <a class="btn" href="pdf/TragödieAias_Fett.pdf" download>PDF Fett</a>
+            </div>
             <p class="muted">
-              Hier kommt später die PDF-Ansicht bzw. Werkzeuge (Suche,
-              Vers-Sprünge, PDF-Generator usw.). Aktuell bewusst leer gelassen.
+              Diese PDFs werden automatisch aus der aktuellen Birkenbihl-Datei gebaut (GitHub-Actions).
             </p>
           </div>
         </section>
@@ -55,82 +54,44 @@ Konnte texte/Aias.txt nicht laden. Liegt die Datei im Ordner texte/?</pre
       <section class="card" style="margin-top: 16px">
         <h2>Birkenbihl – Text</h2>
         <div class="pane-body">
-          <!-- ======= UPPER TRANSITION: Buttons-Erweiterung ======= -->
           <div class="split">
-            <a class="btn" href="texte/Aias_birkenbihl.txt" download
-              >Herunterladen</a
-            >
+            <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen</a>
             <button class="btn" id="bb-edit">Bearbeiten</button>
-            <button class="btn" id="bb-cancel" style="display: none">
-              Abbrechen
-            </button>
-            <a
-              class="btn"
-              id="bb-save"
-              style="display: none"
-              download="Aias_birkenbihl.txt"
-              >Geänderte TXT herunterladen</a
-            >
-            <!-- NEU: PDF-Button -->
-            <button class="btn" id="bb-pdf">PDF generieren</button>
+            <button class="btn" id="bb-cancel" style="display:none">Abbrechen</button>
+            <a class="btn" id="bb-save" style="display:none" download="Aias_birkenbihl.txt">Geänderte TXT herunterladen</a>
           </div>
-          <!-- ======= LOWER TRANSITION: Buttons-Erweiterung ======= -->
 
-          <!-- Vorschau (Standard) -->
-          <object
-            id="bb-view"
-            data="texte/Aias_birkenbihl.txt"
-            type="text/plain"
-          >
-            <pre class="src">
-Konnte texte/Aias_birkenbihl.txt nicht laden. Liegt die Datei im Ordner texte/?</pre
-            >
+          <!-- Vorschau -->
+          <object id="bb-view" data="texte/Aias_birkenbihl.txt" type="text/plain">
+            <pre class="src">Konnte texte/Aias_birkenbihl.txt nicht laden. Liegt die Datei im Ordner texte/?</pre>
           </object>
 
-          <!-- Editor (versteckt bis „Bearbeiten“) -->
-          <textarea
-            id="bb-editor"
-            class="src"
-            style="
-              display: none;
-              width: 100%;
-              height: calc(70vh - 64px);
-              border: 1px solid var(--edge);
-              background: #f7f7f7;
-            "
-          ></textarea>
+          <!-- Editor (unsichtbar bis „Bearbeiten“) -->
+          <textarea id="bb-editor" class="src" style="display:none;width:100%;height:calc(70vh - 64px);border:1px solid var(--edge);background:#f7f7f7;"></textarea>
         </div>
       </section>
 
       <!-- Quellen -->
       <div class="notice" style="margin-top: 12px">
-        Quelle Originaltexte: Perseus Digital Library · Eigene Aufbereitung:
-        Birkenbihl/Translinear
+        Quelle Originaltexte: Perseus Digital Library · Eigene Aufbereitung: Birkenbihl/Translinear
       </div>
     </div>
-    <!-- ######## ENDE: Werkseite – Aias ######## -->
 
-    <!-- ######## START: Skript – Bearbeiten + PDF ######## -->
+    <!-- Skript: Bearbeiten/Download der Birkenbihl-TXT -->
     <script>
       (function () {
-        // Pfad zur Birkenbihl-TXT (werkspezifisch)
         const filePath = "texte/Aias_birkenbihl.txt";
-
-        // UI-Elemente
         const btnEdit = document.getElementById("bb-edit");
         const btnCancel = document.getElementById("bb-cancel");
         const btnSave = document.getElementById("bb-save");
-        const btnPdf = document.getElementById("bb-pdf");
         const view = document.getElementById("bb-view");
         const editor = document.getElementById("bb-editor");
 
-        // Laden der TXT (für Editor oder PDF)
         async function loadText(path) {
           const res = await fetch(path, { cache: "no-store" });
           if (!res.ok) throw new Error("HTTP " + res.status);
           return await res.text();
         }
-
         function showEditor(text) {
           editor.value = text;
           view.style.display = "none";
@@ -139,7 +100,6 @@ Konnte texte/Aias_birkenbihl.txt nicht laden. Liegt die Datei im Ordner texte/?<
           btnCancel.style.display = "";
           btnSave.style.display = "";
         }
-
         function showView() {
           editor.style.display = "none";
           view.style.display = "";
@@ -147,95 +107,19 @@ Konnte texte/Aias_birkenbihl.txt nicht laden. Liegt die Datei im Ordner texte/?<
           btnCancel.style.display = "none";
           btnSave.style.display = "none";
         }
-
-        // Editiermodus
         btnEdit?.addEventListener("click", async () => {
-          try {
-            const txt = await loadText(filePath);
-            showEditor(txt);
-          } catch (e) {
-            alert(
-              "Konnte die TXT nicht laden.\n" +
-                "Tipp: Seite über http://localhost testen oder auf GitHub Pages ausführen.\n\nFehler: " +
-                e.message
-            );
-          }
+          try { showEditor(await loadText(filePath)); }
+          catch (e) { alert("Konnte die TXT nicht laden.\nFehler: " + e.message); }
         });
-
-        btnCancel?.addEventListener("click", () => {
-          showView();
-        });
-
+        btnCancel?.addEventListener("click", showView);
         btnSave?.addEventListener("click", () => {
-          const blob = new Blob([editor.value], {
-            type: "text/plain;charset=utf-8",
-          });
+          const blob = new Blob([editor.value], { type: "text/plain;charset=utf-8" });
           const url = URL.createObjectURL(blob);
           btnSave.href = url;
           setTimeout(() => URL.revokeObjectURL(url), 30000);
         });
-
-        // PDF-Generierung (Druckansicht → "Als PDF speichern")
-        btnPdf?.addEventListener("click", async () => {
-          try {
-            const text =
-              editor.style.display !== "none" && editor.value?.length
-                ? editor.value
-                : await loadText(filePath);
-            openPrintView(text);
-          } catch (e) {
-            alert("PDF-Ansicht konnte nicht erstellt werden:\n" + e.message);
-          }
-        });
-
-        function openPrintView(rawText) {
-          const css = `
-            @page { margin: 16mm; }
-            body { font: 12px/1.45 ui-monospace, Menlo, Consolas, monospace; color:#000; }
-            h1 { font: 700 16px/1.2 system-ui, Segoe UI, Roboto, Arial, sans-serif; margin: 0 0 8px; }
-            .meta { color:#444; font: 12px system-ui, Segoe UI, Roboto, Arial, sans-serif; margin: 0 0 12px; }
-            pre { white-space: pre-wrap; word-wrap: break-word; }
-            .box { border:1px solid #ccc; padding:10px; border-radius:8px; background:#f7f7f7; }
-          `;
-
-          const title =
-            document.querySelector(".title")?.textContent?.trim() ||
-            "Birkenbihl-Text";
-          const win = window.open("", "_blank");
-          if (!win) throw new Error("Popup blockiert. Bitte Popups erlauben.");
-
-          win.document.open();
-          win.document.write(`<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="utf-8">
-<title>${escapeHtml(title)} – PDF</title>
-<style>${css}</style>
-</head>
-<body>
-  <h1>${escapeHtml(title)} – PDF-Export</h1>
-  <div class="meta">
-    Quelle: aktuelle Birkenbihl-TXT (diese Seite) · Erzeugt: ${new Date().toLocaleString()}
-  </div>
-  <div class="box">
-    <pre>${escapeHtml(rawText)}</pre>
-  </div>
-  <script>
-    window.onload = function(){ window.print(); };
-  <\/script>
-</body>
-</html>`);
-          win.document.close();
-        }
-
-        function escapeHtml(s) {
-          return (s || "")
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;");
-        }
       })();
     </script>
-    <!-- ######## ENDE: Skript – Bearbeiten + PDF ######## -->
   </body>
 </html>
+
