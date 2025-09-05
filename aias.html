@@ -94,6 +94,20 @@
                 <button class="btn" id="bb-generate-original" title="PDF-Quelle oben auf Original stellen und neu laden">PDF generieren</button>
               </div>
 
+               <!-- +++ HIER NEU: Schriftgröße & Sync +++ -->
+              <div class="sizebar">
+                <button class="btn" id="orig-font-minus" title="Schrift kleiner">−</button>
+                <span class="chip">Original: <span id="orig-size-chip">100%</span></span>
+                <button class="btn" id="orig-font-plus" title="Schrift größer">+</button>
+
+                <span style="margin-left:10px"></span>
+                <label class="toggle" id="orig-sync-toggle" title="Scrollen Original↔Entwurf koppeln">
+                  <input type="checkbox" />
+                  <span>Scroll koppeln:</span>
+                  <span id="orig-sync-state" class="state off" data-on="An" data-off="Aus">Aus</span>
+                </label>
+              </div>
+  <!-- +++ ENDE NEU +++ -->
               <!-- Anzeige-Schalter (nur für Darstellungsansicht) -->
               <div class="toggle-row">
                 <label class="toggle" id="orig-toggle-tags">
@@ -124,6 +138,12 @@
                 <button class="btn" id="bb-generate-draft" title="Entwurf als PDF bauen (Cloud-Worker)">PDF generieren</button>
               </div>
 
+              <!-- +++ HIER NEU: Schriftgröße +++ -->
+              <div class="sizebar">
+                <button class="btn" id="draft-font-minus" title="Schrift kleiner">−</button>
+                <span class="chip">Entwurf: <span id="draft-size-chip">100%</span></span>
+                <button class="btn" id="draft-font-plus" title="Schrift größer">+</button>
+              </div>
               <!-- Anzeige-Schalter (nur für Darstellungsansicht) -->
               <div class="toggle-row">
                 <label class="toggle" id="draft-toggle-tags">
