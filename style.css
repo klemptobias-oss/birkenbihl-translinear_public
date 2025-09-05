@@ -1,0 +1,156 @@
+/* ######## START: Gemeinsames Stylesheet ######## */
+
+:root {
+  --bg: #ffffff; /* jetzt Weiß als Seite */
+  --card: #ffffff; /* Kartenflächen ebenfalls Weiß */
+  --ink: #000000; /* Hauptschrift Schwarz */
+  --muted: #444444; /* Nebeninfos dunkelgrau */
+  --accent: #000000; /* Akzent neutral schwarz */
+  --edge: #cccccc; /* dezente graue Kanten */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.5 system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg); /* jetzt Weiß aus :root */
+  color: var(--ink); /* Schwarz */
+  font: 16px/1.5 system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Links sichtbar kennzeichnen */
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* Buttons hell, gut konturiert */
+.btn {
+  display: inline-block;
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--edge); /* hellgraue Kante */
+  background: #ffffff; /* weißer Button */
+  cursor: pointer;
+}
+.btn:hover {
+  border-color: #000000; /* deutlicher Hover */
+  box-shadow: none;
+}
+
+.btn:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(125, 211, 252, 0.15);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--edge);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+}
+.card h2 {
+  margin: 0;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--edge);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.notice {
+  padding: 10px 12px;
+  border-bottom: 1px dashed var(--edge);
+  color: var(--muted); /* dunkelgrau auf weiß */
+  font-size: 14px;
+}
+
+.src {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  white-space: pre-wrap;
+}
+
+/* helles Einbettungsfeld statt dunkel */
+iframe,
+object {
+  width: 100%;
+  height: calc(70vh - 64px);
+  border: 1px solid var(--edge);
+  background: #f7f7f7; /* sehr hellgrau */
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  iframe,
+  object {
+    height: 50vh;
+  }
+}
+
+@media print {
+  .bar,
+  .notice,
+  .btn {
+    display: none;
+  }
+  .wrap {
+    padding: 0;
+  }
+  .card {
+    border: none;
+    border-radius: 0;
+    background: white;
+    color: black;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+}
+
+/* ######## ENDE: Gemeinsames Stylesheet ######## */

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Birkenbihl / Translinear – Startseite</title>
+
+    <!-- Gemeinsames Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ############################################################
+       ######## START: Startseiten-spezifische Stile (Baum) ######## -->
+    <style>
+      /* Baum-Navigation (nutzt die Farben aus style.css) */
+      .tree {
+        background: var(--card);
+        border: 1px solid var(--edge);
+        border-radius: 16px;
+        padding: 12px;
+      }
+      .node {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 4px;
+      }
+      .toggle {
+        width: 24px;
+        text-align: center;
+        border: 1px solid var(--edge);
+        border-radius: 6px;
+        cursor: pointer;
+        user-select: none;
+        line-height: 18px;
+      }
+      .label.branch {
+        font-weight: 700;
+      }
+      .label.leaf a {
+        text-decoration: underline;
+      }
+      .children {
+        margin-left: 24px;
+        padding-left: 8px;
+        border-left: 1px dashed var(--edge);
+      }
+      .toolbar {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+      .toolbar .btn {
+        background: #fff;
+      }
+      .hint {
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 6px;
+      }
+    </style>
+    <!-- ######## ENDE: Startseiten-spezifische Stile ######## -->
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- ############################################################
+         ######## START: Kopfbereich ######## -->
+      <div class="bar">
+        <div class="title">Birkenbihl / Translinear Übersetzungen</div>
+      </div>
+      <div class="notice">
+        Wähle unten eine Sprache → Textsorte → Autor → Werk. Pro Werk führt ein
+        Eintrag
+        <b>„Originaltext + Birkenbihl“</b> direkt zur Werkseite.
+      </div>
+      <!-- ######## ENDE: Kopfbereich ######## -->
+
+      <!-- ############################################################
+         ######## START: Navigation (Baum) ######## -->
+      <div class="toolbar">
+        <button class="btn" id="expand">Alles aufklappen</button>
+        <button class="btn" id="collapse">Alles zuklappen</button>
+      </div>
+
+      <nav class="tree" aria-label="Werke-Navigation">
+        <ul class="root">
+          <!-- Ebene 2: Sprachen -->
+          <li>
+            <div class="node">
+              <span class="toggle" role="button" aria-expanded="true">–</span>
+              <span class="label branch">Latein</span>
+            </div>
+            <ul class="children">
+              <li>
+                <div class="node">
+                  <span class="label leaf"
+                    ><a href="#" title="kommt später">—</a></span
+                  >
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="node">
+              <span class="toggle" role="button" aria-expanded="true">–</span>
+              <span class="label branch">Griechisch</span>
+            </div>
+            <ul class="children">
+              <!-- Ebene 3: Textsorten -->
+              <li>
+                <div class="node">
+                  <span class="toggle" role="button" aria-expanded="true"
+                    >–</span
+                  >
+                  <span class="label branch">Tragödie</span>
+                </div>
+                <ul class="children">
+                  <!-- Ebene 4: Autoren -->
+                  <li>
+                    <div class="node">
+                      <span class="toggle" role="button" aria-expanded="true"
+                        >–</span
+                      >
+                      <span class="label branch">Sophokles</span>
+                    </div>
+                    <ul class="children">
+                      <!-- Ebene 5: Werke -->
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Aias</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf">
+                                <a href="aias.html" title="Werkseite öffnen"
+                                  >Originaltext + Birkenbihl</a
+                                >
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Trachiniae</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf">
+                                <a
+                                  href="trachiniae.html"
+                                  title="Werkseite öffnen"
+                                  >Originaltext + Birkenbihl</a
+                                >
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <div class="node">
+                      <span class="toggle" role="button" aria-expanded="true"
+                        >–</span
+                      >
+                      <span class="label branch">Aischylos</span>
+                    </div>
+                    <ul class="children">
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Agamemnon</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf">
+                                <a
+                                  href="agamemnon.html"
+                                  title="Werkseite öffnen"
+                                  >Originaltext + Birkenbihl</a
+                                >
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <div class="node">
+                  <span class="toggle" role="button" aria-expanded="true"
+                    >–</span
+                  >
+                  <span class="label branch">Komödie</span>
+                </div>
+                <ul class="children">
+                  <li>
+                    <div class="node">
+                      <span class="toggle" role="button" aria-expanded="true"
+                        >–</span
+                      >
+                      <span class="label branch">Aristophanes</span>
+                    </div>
+                    <ul class="children">
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Plutos</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Lysistrate</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <div class="node">
+                  <span class="toggle" role="button" aria-expanded="true"
+                    >–</span
+                  >
+                  <span class="label branch">Epos</span>
+                </div>
+                <ul class="children">
+                  <li>
+                    <div class="node">
+                      <span class="toggle" role="button" aria-expanded="true"
+                        >–</span
+                      >
+                      <span class="label branch">Homer</span>
+                    </div>
+                    <ul class="children">
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Ilias</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl (Geversmaßt)</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Odyssee</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl (Geversmaßt)</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <div class="node">
+                      <span class="toggle" role="button" aria-expanded="true"
+                        >–</span
+                      >
+                      <span class="label branch">Hesiod</span>
+                    </div>
+                    <ul class="children">
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Theogonie</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl (Geversmaßt)</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <div class="node">
+                  <span class="toggle" role="button" aria-expanded="true"
+                    >–</span
+                  >
+                  <span class="label branch">Prosa</span>
+                </div>
+                <ul class="children">
+                  <li>
+                    <div class="node">
+                      <span class="toggle" role="button" aria-expanded="true"
+                        >–</span
+                      >
+                      <span class="label branch">Aristoteles</span>
+                    </div>
+                    <ul class="children">
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Rhetorik</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <div class="node">
+                      <span class="toggle" role="button" aria-expanded="true"
+                        >–</span
+                      >
+                      <span class="label branch">Thukydides</span>
+                    </div>
+                    <ul class="children">
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch"
+                            >Der Peloponnesische Krieg</span
+                          >
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <div class="node">
+                      <span class="toggle" role="button" aria-expanded="true"
+                        >–</span
+                      >
+                      <span class="label branch">Herodot</span>
+                    </div>
+                    <ul class="children">
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Historien</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <div class="node">
+                      <span class="toggle" role="button" aria-expanded="true"
+                        >–</span
+                      >
+                      <span class="label branch">Platon</span>
+                    </div>
+                    <ul class="children">
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Menon</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Phaidon</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Apologie</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="node">
+                          <span
+                            class="toggle"
+                            role="button"
+                            aria-expanded="true"
+                            >–</span
+                          >
+                          <span class="label branch">Symposion</span>
+                        </div>
+                        <ul class="children">
+                          <li>
+                            <div class="node">
+                              <span class="label leaf"
+                                ><a href="#" title="kommt später"
+                                  >Originaltext + Birkenbihl</a
+                                ></span
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="hint">
+          Tipp: Mit den kleinen Kästchen (–/+) klappst du einzelne Zweige
+          auf/zu.
+        </div>
+      </nav>
+      <!-- ######## ENDE: Navigation ######## -->
+    </div>
+
+    <!-- ############################################################
+       ######## START: kleines Script – Auf/Zu ######## -->
+    <script>
+      (function () {
+        // Einzelne Zweige auf/zu
+        document.querySelectorAll(".toggle").forEach(function (tg) {
+          tg.addEventListener("click", function () {
+            var ul = tg.parentElement.nextElementSibling;
+            var open = tg.getAttribute("aria-expanded") === "true";
+            tg.setAttribute("aria-expanded", String(!open));
+            tg.textContent = open ? "+" : "–";
+            if (ul && ul.classList.contains("children")) {
+              ul.style.display = open ? "none" : "";
+            }
+          });
+        });
+
+        // Alles aufklappen / zuklappen
+        var expand = document.getElementById("expand");
+        var collapse = document.getElementById("collapse");
+        function setAll(open) {
+          document.querySelectorAll(".toggle").forEach(function (tg) {
+            tg.setAttribute("aria-expanded", String(open));
+            tg.textContent = open ? "–" : "+";
+          });
+          document.querySelectorAll(".children").forEach(function (ul) {
+            ul.style.display = open ? "" : "none";
+          });
+        }
+        expand &&
+          expand.addEventListener("click", function () {
+            setAll(true);
+          });
+        collapse &&
+          collapse.addEventListener("click", function () {
+            setAll(false);
+          });
+      })();
+    </script>
+    <!-- ######## ENDE: Script ######## -->
+  </body>
+</html>
