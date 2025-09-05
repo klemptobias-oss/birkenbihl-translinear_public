@@ -18,8 +18,6 @@
       .save-dot { width:8px; height:8px; border-radius:50%; display:inline-block; margin-right:6px; background:#aaa; vertical-align:middle; }
       .save-dot.ok { background:#2a7; }
       .save-dot.busy { background:#c71; }
-      details.settings { margin-top:8px; }
-      details.settings summary { cursor:pointer; }
     </style>
   </head>
   <body>
@@ -133,27 +131,11 @@
           <!-- Editor (unsichtbar bis „Bearbeiten“) -->
           <textarea id="bb-editor" class="src" style="display:none;width:100%;height:calc(70vh - 64px);border:1px solid var(--edge);background:#fff;"></textarea>
 
-          <!-- Leitfaden/Automatik (optional) -->
-          <details class="settings">
-            <summary>Erweiterte Automatik (optional): GitHub-Token lokal hinterlegen, um <i>PDF generieren</i> ohne manuellen Upload auszuführen</summary>
-            <div class="small" style="margin-top:6px">
-              <p>Optional kannst du ein GitHub-Token (nur für dieses Repo) lokal im Browser speichern. Dann lädt „PDF generieren“ deinen Entwurf
-              automatisch nach <code>texte_drafts/</code> hoch und stößt den Build an.</p>
-              <label>GitHub Token:
-                <input id="gh-token" type="password" style="width:340px" placeholder="ghp_… (nur Inhalte-Rechte für dieses Repo)" />
-              </label>
-              <button class="btn" id="tok-save">Token speichern</button>
-              <button class="btn" id="tok-clear">Token löschen</button>
-              <span id="tok-status" class="small"></span>
-              <p class="warn">Sicherheit: Das Token wird nur in deinem Browser (localStorage) gehalten und bei Bedarf an die GitHub-API gesendet. Nicht auf fremden Geräten verwenden.</p>
-            </div>
-          </details>
-
           <div id="draft-status" class="small" style="margin-top:8px"></div>
 
           <div class="notice" style="margin-top:8px">
-            Hinweis: Der Entwurfsweg lässt das Original in <code>texte/</code> unberührt. Für „offizielle“ PDFs (im Ordner <code>pdf/</code>)
-            ersetzt du später die Originaldatei in <code>texte/</code> und lässt den Haupt-Workflow laufen.
+            Der Entwurfsweg lässt das Original in <code>texte/</code> unberührt. Für „offizielle“ PDFs ersetzt du später
+            die Originaldatei in <code>texte/</code> und lässt den Haupt-Workflow laufen.
           </div>
         </div>
       </section>
@@ -164,20 +146,16 @@
       </div>
     </div>
 
-    <!-- Skript: Toggle/Autosave/Generieren + optionaler Auto-Upload -->
+    <!-- Skript -->
     <script>
       (function () {
-        // ====== Repo-Konfiguration (an dein Repo angepasst) ======
-        const OWNER = "klemptobias-oss";
-        const REPO  = "birkenbihl-translinear_public";
-        const BRANCH = "main";
-        const DRAFT_UPLOAD_URL = `https://github.com/${OWNER}/${REPO}/upload/${BRANCH}/texte_drafts`;
-        const ACTIONS_URL = `https://github.com/${OWNER}/${REPO}/actions/workflows/tragoedie-build-drafts.yml`;
+        // ====== Repo-/Seiten-Konfiguration ======
         const DRAFT_PDF_BASE = "pdf_drafts/Aias_DRAFT_LATEST_"; // Normal/Fett
-        const OFFICIAL_PDF_BASE = "pdf/TragödieAias_"; // Normal/Fett
-        const LOCAL_KEY = "draft_Aias_birkenbihl"; // localStorage Key für Entwurf
-        const TOKEN_KEY = "gh_pat_for_" + OWNER + "_" + REPO;
-        const WORKER_URL = "https://birkenbihl-draft-01.klemp-tobias.workers.dev"; // <— deine Worker-URL
+        const OFFICIAL_PDF_BASE = "pdf/TragödieAias_";          // Normal/Fett
+        const LOCAL_KEY = "draft_Aias_birkenbihl";              // localStorage Key für Entwurf
+
+        // *** HIER deine Worker-URL eintragen ***
+        const WORKER_URL = "https://birkenbihl-draft-01.klemp-tobias.workers.dev";
 
         // ====== Elemente ======
         const bbViewOriginal = document.getElementById("bb-view-original");
@@ -202,66 +180,47 @@
         const btnPdfDownload = document.getElementById("pdf-download");
         const btnPdfOpen = document.getElementById("pdf-open");
 
-        // Token-UI
-        const tokInput = document.getElementById("gh-token");
-        const tokSave = document.getElementById("tok-save");
-        const tokClear = document.getElementById("tok-clear");
-        const tokStatus = document.getElementById("tok-status");
-
         // ====== Helpers ======
         function setSaveState(state, msg) {
-          // state: "ready" | "busy" | "ok"
-          saveDot.classList.remove("ok", "busy");
-          if (state === "busy") saveDot.classList.add("busy");
-          if (state === "ok") saveDot.classList.add("ok");
-          saveText.textContent = msg || (state === "ok" ? "Gespeichert" : state === "busy" ? "Speichere…" : "Bereit");
+          saveDot.classList.remove("ok","busy");
+          if (state==="busy") saveDot.classList.add("busy");
+          if (state==="ok")   saveDot.classList.add("ok");
+          saveText.textContent = msg || (state==="ok"?"Gespeichert":state==="busy"?"Speichere…":"Bereit");
         }
+        function loadLocalDraft(){ return localStorage.getItem(LOCAL_KEY) || ""; }
+        function saveLocalDraft(t){ localStorage.setItem(LOCAL_KEY, t||""); }
 
-        function loadLocalDraft() {
-          return localStorage.getItem(LOCAL_KEY) || "";
+        async function fetchText(path) {
+          const r = await fetch(path, { cache:"no-store" });
+          if (!r.ok) throw new Error("HTTP "+r.status);
+          return await r.text();
         }
-        function saveLocalDraft(text) {
-          localStorage.setItem(LOCAL_KEY, text || "");
-        }
-
-        // Unicode-sichere Base64
-        function toBase64Unicode(str) {
-          const bytes = new TextEncoder().encode(str || "");
-          let bin = "";
-          bytes.forEach(b => bin += String.fromCharCode(b));
-          return btoa(bin);
-        }
-
         function currentPdfPath() {
           const kind = pdfFett.checked ? "Fett" : "Normal";
-          const useDraft = srcDraft.checked;
-          return (useDraft ? DRAFT_PDF_BASE : OFFICIAL_PDF_BASE) + kind + ".pdf";
+          return (srcDraft.checked ? DRAFT_PDF_BASE : OFFICIAL_PDF_BASE) + kind + ".pdf";
         }
-        function updatePdfLinks(bust=false) {
+        function updatePdfLinks(bust=false){
           const url = currentPdfPath();
-          const bustUrl = url + (bust ? ("?t=" + Date.now()) : "");
-          pdfFrame.setAttribute("data", bustUrl + "#view=FitH");
+          const withBust = url + (bust ? ("?t="+Date.now()) : "");
+          pdfFrame.setAttribute("data", withBust + "#view=FitH");
           btnPdfDownload.setAttribute("href", url);
           btnPdfOpen.setAttribute("href", url);
         }
-
-        async function fetchText(path) {
-          const res = await fetch(path, { cache: "no-store" });
-          if (!res.ok) throw new Error("HTTP " + res.status);
-          return await res.text();
+        async function waitForPdf(url, attempts, delayMs){
+          for (let i=0;i<attempts;i++){
+            try { const r = await fetch(url + "?check="+Date.now(), { method:"HEAD", cache:"no-store" }); if (r.ok) return true; } catch {}
+            await new Promise(r=>setTimeout(r, delayMs));
+          }
+          return false;
         }
 
         // ====== Editor / Ansicht ======
-        // Vorhandenen Draft wiederherstellen
-        (function restoreDraft() {
-          const draft = loadLocalDraft();
-          if (draft) {
-            bbViewDraft.textContent = draft;
-            draftStatus.innerHTML = '<span class="ok">Entwurf aus lokalem Speicher wiederhergestellt.</span>';
-          }
+        (function restoreDraft(){
+          const d = loadLocalDraft();
+          if (d) { bbViewDraft.textContent = d; draftStatus.innerHTML = '<span class="ok">Entwurf lokal wiederhergestellt.</span>'; }
         })();
 
-        function showEditor(text) {
+        function showEditor(text){
           editor.value = text;
           bbViewOriginal.style.display = "none";
           bbViewDraft.style.display = "none";
@@ -269,176 +228,89 @@
           btnEdit.style.display = "none";
           btnCancel.style.display = "";
           btnSave.style.display = "";
-          setSaveState("ready", "Im Editor");
+          setSaveState("ready","Im Editor");
         }
-        function hideEditor() {
+        function hideEditor(){
           editor.style.display = "none";
           (bbViewDraftRadio.checked ? bbViewDraft : bbViewOriginal).style.display = "";
           btnEdit.style.display = "";
           btnCancel.style.display = "none";
           btnSave.style.display = "none";
-          setSaveState("ready", "Bereit");
+          setSaveState("ready","Bereit");
         }
 
-        btnEdit?.addEventListener("click", async () => {
+        btnEdit.addEventListener("click", async ()=>{
           setSaveState("busy");
           try {
-            // Bevorzugt aktuellen Entwurf öffnen, sonst Original laden
             const draft = loadLocalDraft();
             const text = draft || await fetchText("texte/Aias_birkenbihl.txt");
             showEditor(text);
             setSaveState("ready", draft ? "Entwurf bearbeiten" : "Original bearbeiten");
-          } catch (e) {
-            setSaveState("ready");
-            alert("Konnte Text nicht laden.\nFehler: " + e.message);
-          }
+          } catch(e){ setSaveState("ready"); alert("Konnte Text nicht laden: "+e.message); }
         });
-        btnCancel?.addEventListener("click", hideEditor);
+        btnCancel.addEventListener("click", hideEditor);
 
         // Autosave + Live-Entwurfsansicht
-        let saveTimer = null;
-        editor.addEventListener("input", () => {
+        let saveTimer=null;
+        editor.addEventListener("input", ()=>{
           setSaveState("busy");
           const val = editor.value;
           bbViewDraft.textContent = val;
           if (saveTimer) clearTimeout(saveTimer);
-          saveTimer = setTimeout(() => {
-            saveLocalDraft(val);
-            setSaveState("ok", "Gespeichert");
-          }, 300);
+          saveTimer=setTimeout(()=>{ saveLocalDraft(val); setSaveState("ok","Gespeichert"); }, 300);
         });
 
-        // Umschalter Original/Entwurf ansehen
-        function setBBView(which) {
-          if (editor.style.display !== "none") return; // im Editor nicht umschalten
-          if (which === "draft") {
-            bbViewOriginal.style.display = "none";
-            bbViewDraft.style.display = "";
-          } else {
-            bbViewDraft.style.display = "none";
-            bbViewOriginal.style.display = "";
-          }
+        // Umschalten Ansicht unten
+        function setBBView(which){
+          if (editor.style.display !== "none") return;
+          if (which==="draft"){ bbViewOriginal.style.display="none"; bbViewDraft.style.display=""; }
+          else { bbViewDraft.style.display="none"; bbViewOriginal.style.display=""; }
         }
-        bbViewOrigRadio.addEventListener("change", () => setBBView("original"));
-        bbViewDraftRadio.addEventListener("change", () => setBBView("draft"));
+        bbViewOrigRadio.addEventListener("change", ()=>setBBView("original"));
+        bbViewDraftRadio.addEventListener("change", ()=>setBBView("draft"));
 
         // Entwurf als TXT speichern
-        btnSave?.addEventListener("click", () => {
-          const text = editor.value ?? "";
-          const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+        btnSave.addEventListener("click", ()=>{
+          const blob = new Blob([editor.value??""], { type:"text/plain;charset=utf-8" });
           const url = URL.createObjectURL(blob);
-          btnSave.href = url;
-          setTimeout(() => URL.revokeObjectURL(url), 30000);
+          btnSave.href = url; setTimeout(()=>URL.revokeObjectURL(url), 30000);
         });
 
-        // ====== PDF-Einbettung steuern ======
-        [pdfNormal, pdfFett, srcOriginal, srcDraft].forEach(el => {
-          el?.addEventListener("change", () => updatePdfLinks(true));
-        });
-        btnRefresh.addEventListener("click", () => updatePdfLinks(true));
+        // PDF-Umschalter
+        [pdfNormal,pdfFett,srcOriginal,srcDraft].forEach(el=>el.addEventListener("change", ()=>updatePdfLinks(true)));
+        btnRefresh.addEventListener("click", ()=>updatePdfLinks(true));
         updatePdfLinks(false);
 
-        // ====== Optional: Token-Automatik ======
-        // Lade evtl. gespeichertes Token
-        const savedTok = localStorage.getItem(TOKEN_KEY) || "";
-        if (savedTok) { tokInput.value = "********"; tokStatus.textContent = "Token vorhanden (lokal)."; }
-        tokSave?.addEventListener("click", () => {
-          const v = tokInput.value.trim();
-          if (!v || v === "********") { tokStatus.textContent = "Kein neues Token eingegeben."; return; }
-          localStorage.setItem(TOKEN_KEY, v);
-          tokInput.value = "********";
-          tokStatus.innerHTML = '<span class="ok">Token gespeichert (nur lokal).</span>';
-        });
-        tokClear?.addEventListener("click", () => {
-          localStorage.removeItem(TOKEN_KEY);
-          tokInput.value = "";
-          tokStatus.innerHTML = '<span class="ok">Token gelöscht.</span>';
-        });
+        // ====== PDF generieren (Entwurf) → Worker ======
+        btnGenerate.addEventListener("click", async ()=>{
+          draftStatus.textContent = "";
+          const text = (editor.style.display!=="none") ? editor.value : loadLocalDraft();
+          if (!text || !text.trim()) { alert("Kein Entwurfstext vorhanden. Bitte auf „Bearbeiten“ klicken, Text anpassen und speichern."); return; }
 
-        // ====== PDF generieren (Entwurf) ======
-        btnGenerate?.addEventListener("click", async () => {
-  draftStatus.innerHTML = "";
-  // Textquelle: Editor (falls offen) sonst lokaler Entwurf
-  const text = (editor.style.display !== "none") ? editor.value : loadLocalDraft();
-  if (!text || !text.trim()) {
-    alert("Kein Entwurfstext vorhanden. Bitte auf „Bearbeiten“ klicken, Text anpassen und speichern.");
-    return;
-  }
+          try {
+            draftStatus.textContent = "⬆️ Entwurf wird an den Build-Dienst gesendet…";
+            const res = await fetch(WORKER_URL + "/draft", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ work: "Aias", text })
+            });
+            const j = await res.json().catch(()=> ({}));
+            if (!res.ok || !j.ok) throw new Error(j.error || ("HTTP "+res.status));
 
-  try {
-    // 1) An Worker senden
-    draftStatus.innerHTML = "⬆️ Entwurf wird an den Build-Dienst gesendet…";
-    const res = await fetch(WORKER_URL + "/draft", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ work: "Aias", text })
-    });
-    const j = await res.json().catch(() => ({}));
-    if (!res.ok || !j.ok) {
-      throw new Error("Upload fehlgeschlagen: " + (j.error || res.status));
-    }
-    draftStatus.innerHTML = "✅ Entwurf angenommen. Build startet…";
-
-    // 2) Auf PDF warten & einblenden
-    const targetNormal = DRAFT_PDF_BASE + "Normal.pdf";
-    const targetFett   = DRAFT_PDF_BASE + "Fett.pdf";
-    const want = pdfFett.checked ? targetFett : targetNormal;
-
-    const ok = await waitForPdf(want, 24, 5000); // bis ~2 Minuten
-    if (ok) {
-      srcDraft.checked = true;
-      srcOriginal.checked = false;
-      updatePdfLinks(true);
-      draftStatus.innerHTML = '✅ Entwurfs-PDF aktualisiert.';
-    } else {
-      draftStatus.innerHTML = '⚠️ PDF noch nicht bereit. Bitte gleich „PDF aktualisieren“ klicken.';
-    }
-  } catch (e) {
-    draftStatus.innerHTML = `<span class="err">Fehler: ${e.message}</span>`;
-  }
-});
-
-            if (!res.ok) {
-              const t = await res.text();
-              throw new Error(`Upload fehlgeschlagen (${res.status}): ${t}`);
-            }
-            draftStatus.innerHTML = `✅ Entwurf hochgeladen. <a href="${ACTIONS_URL}" target="_blank">Build wird gestartet…</a>`;
-
-            // Einfaches Polling: warte bis LATEST-PDF erreichbar, dann neu laden
-            const targetNormal = DRAFT_PDF_BASE + "Normal.pdf";
-            const targetFett   = DRAFT_PDF_BASE + "Fett.pdf";
-            const want = pdfFett.checked ? targetFett : targetNormal;
-
-            const ok = await waitForPdf(want, 24, 5_000); // bis zu ~2 min
+            draftStatus.textContent = "✅ Entwurf angenommen. Build startet…";
+            const target = (pdfFett.checked ? DRAFT_PDF_BASE+"Fett.pdf" : DRAFT_PDF_BASE+"Normal.pdf");
+            const ok = await waitForPdf(target, 24, 5000); // ~2 min
             if (ok) {
-              // auf Entwurf umschalten & neu laden
-              srcDraft.checked = true;
-              srcOriginal.checked = false;
+              srcDraft.checked = true; srcOriginal.checked = false;
               updatePdfLinks(true);
-              draftStatus.innerHTML = draftStatus.innerHTML + ' – <span class="ok">PDF aktualisiert.</span>';
+              draftStatus.innerHTML = '✅ Entwurfs-PDF aktualisiert.';
             } else {
-              draftStatus.innerHTML = draftStatus.innerHTML + ' – <span class="warn">PDF noch nicht bereit. Probiere „PDF aktualisieren“ in Kürze.</span>';
+              draftStatus.innerHTML = '⚠️ PDF noch nicht bereit. Bitte später „PDF aktualisieren“ klicken.';
             }
-          } catch (e) {
-            draftStatus.innerHTML = `<span class="err">Fehler: ${e.message}</span>`;
+          } catch(e) {
+            draftStatus.innerHTML = '<span class="err">Fehler: '+e.message+'</span>';
           }
         });
-
-        async function waitForPdf(url, attempts, delayMs) {
-          for (let i=0; i<attempts; i++) {
-            try {
-              const res = await fetch(url + "?check=" + Date.now(), { method: "HEAD", cache: "no-store" });
-              if (res.ok) return true;
-            } catch {}
-            await new Promise(r => setTimeout(r, delayMs));
-          }
-          return false;
-        }
-      })();
-    </script>
-  </body>
-</html>
-
       })();
     </script>
   </body>
