@@ -24,10 +24,14 @@ window.Utils = (function () {
 
   // ---------- Netz & Timing ----------
   async function fetchText(path) {
-    const r = await fetch(path, { cache: "no-store" });
-    if (!r.ok) throw new Error("HTTP " + r.status);
-    return await r.text();
+  // Cache-Busting gegen „hängende“ GitHub-Pages-Antworten
+  const url = path + (path.includes('?') ? '&' : '?') + 't=' + Date.now();
+  const r = await fetch(url, { cache: 'no-store' });
+  if (!r.ok) {
+    throw new Error(`HTTP ${r.status} für ${path}`);
   }
+  return await r.text();
+}
   async function waitForPdf(url, attempts, delayMs) {
     for (let i = 0; i < attempts; i++) {
       try {
