@@ -17,7 +17,7 @@
 
       <!-- Hinweis -->
       <div class="notice">
-        Links: <b>texte/Aias.txt</b> · Unten (breit): <b>Original (links)</b> & <b>Entwurf (rechts)</b> ·
+        Links: <b>texte/Aias.txt</b> · Unten: <b>Original (links)</b> & <b>Entwurf (rechts)</b> ·
         Rechts oben: eingebettetes PDF (Quelle: <b>Original</b>/<b>Entwurf</b>, Darstellung: <b>Normal</b>/<b>Fett</b>)
       </div>
 
@@ -76,9 +76,10 @@
         </section>
       </div>
 
-      <!-- Unten: Birkenbihl-TXT ZWEISPALTIG (breit, nur höher) -->
+      <!-- Unten: Birkenbihl-TXT ZWEISPALTIG -->
       <section class="card card-wide" style="margin-top:16px">
         <h2>Birkenbihl – Text</h2>
+
         <div class="small" style="display:flex; align-items:center; gap:10px; margin:6px 0 10px;">
           <span class="save-dot" id="save-dot"></span><span id="save-text" class="small">Bereit</span>
           <span id="draft-status" class="small" style="margin-left:auto"></span>
@@ -92,77 +93,71 @@
               <div class="split">
                 <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen (Original.txt)</a>
                 <button class="btn" id="bb-generate-original" title="PDF-Quelle oben auf Original stellen und neu laden">PDF generieren</button>
-              </div>
-
-               <!-- +++ HIER NEU: Schriftgröße & Sync +++ -->
-              <div class="sizebar">
-                <button class="btn" id="orig-font-minus" title="Schrift kleiner">−</button>
-                <span class="chip">Original: <span id="orig-size-chip">100%</span></span>
-                <button class="btn" id="orig-font-plus" title="Schrift größer">+</button>
-
-                <span style="margin-left:10px"></span>
-                <label class="toggle" id="orig-sync-toggle" title="Scrollen Original↔Entwurf koppeln">
-                  <input type="checkbox" />
-                  <span>Scroll koppeln:</span>
-                  <span id="orig-sync-state" class="state off" data-on="An" data-off="Aus">Aus</span>
+                <label class="small" title="Scroll vom Original auf den Entwurf spiegeln" style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;">
+                  <input type="checkbox" id="scroll-link" checked /> Scroll koppeln
                 </label>
               </div>
-  <!-- +++ ENDE NEU +++ -->
-              <!-- Anzeige-Schalter (nur für Darstellungsansicht) -->
-              <div class="toggle-row">
-                <label class="toggle" id="orig-toggle-tags">
-                  <input type="checkbox" />
-                  <span>Grammatikkürzel in Übersicht:</span>
-                  <span class="state on" data-on="An" data-off="Aus">An</span>
-                </label>
-                <label class="toggle" id="orig-toggle-colors">
-                  <input type="checkbox" />
-                  <span>Farbkürzel in Übersicht:</span>
-                  <span class="state on" data-on="An" data-off="Aus">An</span>
-                </label>
+
+              <div class="split" style="margin-top:-6px">
+                <div>
+                  <button class="btn" id="orig-font-minus" title="Schrift kleiner">–</button>
+                  <button class="btn" id="orig-font-plus"  title="Schrift größer">+</button>
+                </div>
+                <div class="toggle-row" style="margin-left:auto;">
+                  <label class="toggle" id="orig-toggle-tags">
+                    <input type="checkbox" checked />
+                    <span>Grammatikkürzel in Übersicht:</span>
+                    <span class="state on" data-on="An" data-off="Aus">An</span>
+                  </label>
+                  <label class="toggle" id="orig-toggle-colors">
+                    <input type="checkbox" checked />
+                    <span>Farbkürzel in Übersicht:</span>
+                    <span class="state on" data-on="An" data-off="Aus">An</span>
+                  </label>
+                </div>
               </div>
 
               <pre id="bb-original-pre" class="src srcbox">Lade Original…</pre>
             </div>
           </div>
 
-          <!-- RECHTE PANE: ENTWURF (lesen/bearbeiten) -->
+          <!-- RECHTE PANE: ENTWURF (editierbar + Vorschau) -->
           <div class="pane">
             <h3>Entwurf</h3>
             <div class="pane-body">
               <div class="split">
-                <button class="btn" id="bb-edit">Bearbeiten</button>
-                <button class="btn" id="bb-cancel" style="display:none">Abbrechen</button>
                 <button class="btn" id="bb-download-draft" title="Aktuellen Entwurf herunterladen (mit eindeutigem Code)">Herunterladen (Entwurf.txt)</button>
+                <button class="btn" id="bb-upload-draft"  title="Entwurf.txt aus Datei laden">Entwurf hochladen</button>
+                <input id="bb-upload-file" type="file" accept=".txt,text/plain" style="display:none" />
                 <button class="btn" id="bb-reset" title="Nur den lokalen Entwurf löschen">Entwurf zurücksetzen</button>
                 <button class="btn" id="bb-generate-draft" title="Entwurf als PDF bauen (Cloud-Worker)">PDF generieren</button>
               </div>
 
-              <!-- +++ HIER NEU: Schriftgröße +++ -->
-              <div class="sizebar">
-                <button class="btn" id="draft-font-minus" title="Schrift kleiner">−</button>
-                <span class="chip">Entwurf: <span id="draft-size-chip">100%</span></span>
-                <button class="btn" id="draft-font-plus" title="Schrift größer">+</button>
-              </div>
-              <!-- Anzeige-Schalter (nur für Darstellungsansicht) -->
-              <div class="toggle-row">
-                <label class="toggle" id="draft-toggle-tags">
-                  <input type="checkbox" />
-                  <span>Grammatikkürzel in Übersicht:</span>
-                  <span class="state on" data-on="An" data-off="Aus">An</span>
-                </label>
-                <label class="toggle" id="draft-toggle-colors">
-                  <input type="checkbox" />
-                  <span>Farbkürzel in Übersicht:</span>
-                  <span class="state on" data-on="An" data-off="Aus">An</span>
-                </label>
+              <div class="split" style="margin-top:-6px">
+                <div>
+                  <button class="btn" id="draft-font-minus" title="Schrift kleiner">–</button>
+                  <button class="btn" id="draft-font-plus"  title="Schrift größer">+</button>
+                </div>
+                <div class="toggle-row" style="margin-left:auto;">
+                  <label class="toggle" id="draft-toggle-tags">
+                    <input type="checkbox" checked />
+                    <span>Grammatikkürzel in Übersicht:</span>
+                    <span class="state on" data-on="An" data-off="Aus">An</span>
+                  </label>
+                  <label class="toggle" id="draft-toggle-colors">
+                    <input type="checkbox" checked />
+                    <span>Farbkürzel in Übersicht:</span>
+                    <span class="state on" data-on="An" data-off="Aus">An</span>
+                  </label>
+                </div>
               </div>
 
-              <!-- Anzeige-Ansicht -->
-              <pre id="bb-view-draft" class="src srcbox" style="display:block;"></pre>
+              <!-- Editor immer sichtbar -->
+              <textarea id="bb-editor" class="editor" placeholder="Entwurf bearbeiten…"></textarea>
 
-              <!-- Editor-Ansicht -->
-              <textarea id="bb-editor" class="editor" style="display:none;"></textarea>
+              <!-- Gefilterte Vorschau (wirkt mit obigen Schaltern) -->
+              <div class="small" style="margin-top:6px;opacity:0.8">Vorschau (Filter wirken hier, der Editor bleibt unverändert):</div>
+              <pre id="bb-draft-preview" class="src srcbox" style="height:40vh;"></pre>
             </div>
           </div>
         </div>
@@ -198,7 +193,7 @@
       </div>
     </div>
 
-    <!-- Modal: PDF-Optionen -->
+    <!-- Modal: PDF-Optionen (unverändert aus deiner Version) -->
     <div id="opt-backdrop" class="opt-backdrop" role="dialog" aria-modal="true" aria-labelledby="opt-title" aria-hidden="true">
       <div class="opt-modal" role="document">
         <div class="opt-header">
@@ -206,42 +201,23 @@
           <button class="modal-close" id="opt-close" aria-label="Schließen">×</button>
         </div>
         <div class="opt-body">
-          <!-- Basisoptionen -->
           <div class="opt-section">
             <div class="opt-row">
-              <label class="opt-check">
-                <input type="checkbox" id="opt-colors" checked />
-                <span>Farben zeigen</span>
-              </label>
-              <label class="opt-check">
-                <input type="checkbox" id="opt-tags" checked />
-                <span>Grammatikürzel zeigen</span>
-              </label>
+              <label class="opt-check"><input type="checkbox" id="opt-colors" checked /> <span>Farben zeigen</span></label>
+              <label class="opt-check"><input type="checkbox" id="opt-tags" checked /> <span>Grammatikürzel zeigen</span></label>
               <div class="muted-note">Tipp: Für Schwarz-Weiß die Farben abwählen; für „reine Birkenbihl“ die Grammatikürzel abwählen.</div>
             </div>
           </div>
-
-          <!-- Benutzerdefiniert (aufklappbar) -->
           <details class="opt-adv" id="opt-adv">
             <summary>Benutzerdefiniert</summary>
             <div class="opt-section" style="margin-top:10px">
               <div class="opt-row">
                 <div><b>Farbregeln (Beispiel, PoS-basiert)</b></div>
-                <label class="opt-check">
-                  <input type="checkbox" id="opt-color-n" checked />
-                  <span><span class="opt-color-chip chip-red">Substantive (N)</span> rot</span>
-                </label>
-                <label class="opt-check">
-                  <input type="checkbox" id="opt-color-v" checked />
-                  <span><span class="opt-color-chip chip-green">Verben (V)</span> grün</span>
-                </label>
-                <label class="opt-check">
-                  <input type="checkbox" id="opt-color-aj" checked />
-                  <span><span class="opt-color-chip chip-blue">Adjektive/Partizipien (Aj)</span> blau</span>
-                </label>
+                <label class="opt-check"><input type="checkbox" id="opt-color-n" checked /> <span><span class="opt-color-chip chip-red">Substantive (N)</span> rot</span></label>
+                <label class="opt-check"><input type="checkbox" id="opt-color-v" checked /> <span><span class="opt-color-chip chip-green">Verben (V)</span> grün</span></label>
+                <label class="opt-check"><input type="checkbox" id="opt-color-aj" checked /> <span><span class="opt-color-chip chip-blue">Adjektive/Partizipien (Aj)</span> blau</span></label>
               </div>
             </div>
-
             <div class="opt-section">
               <div class="opt-row">
                 <div><b>Ein-/Ausblenden von Kürzeln</b></div>
@@ -265,8 +241,7 @@
       </div>
     </div>
 
-<script src="utils.js"></script>
-<script src="aias.js"></script>
-</body>
+    <script src="utils.js"></script>
+    <script src="aias.js"></script>
+  </body>
 </html>
-
