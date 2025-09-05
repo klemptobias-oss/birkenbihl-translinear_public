@@ -1,63 +1,59 @@
-:root { --gap:14px; }
+:root{
+  --gap: 14px;
+
+  /* Typo & Pane-Höhe (zentral justierbar) */
+  --mono-size: 0.95rem;   /* Grundgröße Monospace */
+  --mono-line: 1.42;      /* Zeilenhöhe Monospace */
+  --pane-height: 68vh;    /* ~30% höher als vorher (52vh → 68vh) */
+}
 
 /* PDF oben rechts */
 .pdf-frame { width:100%; height:78vh; border:1px solid var(--edge); background:#fafafa; }
-.pdf-controls { display:flex; gap:8px; align-items:center; margin-bottom:8px; flex-wrap:wrap; }
+.pdf-controls { position:sticky; top:0; background:#fff; padding:8px 0; z-index:2;
+  display:flex; gap:8px; align-items:center; margin-bottom:8px; flex-wrap:wrap; }
 .pdf-controls .muted { margin-left:auto; }
 .radio { display:inline-flex; align-items:center; gap:6px; }
 
-/* Textdarstellung */
-.src { 
-  white-space: pre; 
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; 
-  font-size:0.93rem; 
-  line-height:1.38; 
+/* Textdarstellung (einheitlich) */
+.src, .editor {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: var(--mono-size);
+  line-height: var(--mono-line);
 }
 .small { font-size:0.85em; color:var(--muted); }
-.ok { color:#2a7; } 
-.warn { color:#c71; } 
-.err { color:#c33; }
-.save-dot { 
-  width:8px; 
-  height:8px; 
-  border-radius:50%; 
-  display:inline-block; 
-  margin-right:6px; 
-  background:#aaa; 
-  vertical-align:middle; 
-}
-.save-dot.ok { background:#2a7; } 
-.save-dot.busy { background:#c71; }
-details.settings { margin-top:8px; }
-details.settings summary { cursor:pointer; }
+.ok { color:#2a7; } .warn { color:#c71; } .err { color:#c33; }
+.save-dot { width:8px; height:8px; border-radius:50%; display:inline-block; margin-right:6px; background:#aaa; vertical-align:middle; }
+.save-dot.ok { background:#2a7; } .save-dot.busy { background:#c71; }
 
-/* Unten: zweispaltig, nur höher – nicht breiter als Seite */
+/* Unten: zweispaltig (breit), nur höher – nicht breiter als Seite */
 .card-wide { width:100%; }
 .bb-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--gap); }
-@media (max-width:1100px){ .bb-grid{ grid-template-columns:1fr; } }
+@media (max-width: 1100px){ .bb-grid{ grid-template-columns:1fr; } }
+
 .pane { border:1px solid var(--edge); background:#fff; border-radius:8px; }
 .pane h3 { margin:0; padding:10px 12px; border-bottom:1px solid var(--edge); }
 .pane-body { padding:10px 12px; }
 .pane-body .split { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:8px; }
-.srcbox { background:#f8f8f8; border:1px solid var(--edge); padding:8px; height:52vh; overflow:auto; }
-.editor { 
-  width:100%; 
-  height:52vh; 
-  border:1px solid var(--edge); 
-  background:#fff; 
-  font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; 
-  font-size:0.93rem; 
-  line-height:1.38; 
-  padding:8px; 
+
+.srcbox { background:#f8f8f8; border:1px solid var(--edge); padding:8px; height:var(--pane-height); overflow:auto; }
+.editor { width:100%; height:var(--pane-height); border:1px solid var(--edge); background:#fff;
+  padding:8px; }
+
+/* Vertikale Trennlinie zwischen Original und Entwurf (dezent) */
+.bb-grid > .pane + .pane { position: relative; }
+.bb-grid > .pane + .pane::before{
+  content:""; position:absolute; left:-7px; top:0; bottom:0;
+  width:1px; background: var(--edge);
 }
 
 /* Anzeige-Schalter (An/Aus) */
 .toggle-row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:6px 0 10px; }
-.toggle { display:inline-flex; align-items:center; gap:8px; border:1px solid var(--edge); padding:6px 8px; border-radius:8px; background:#fff; cursor:pointer; user-select:none; }
+.toggle { display:inline-flex; align-items:center; gap:8px; border:1px solid var(--edge); padding:8px 10px; border-radius:8px; background:#fff; cursor:pointer; user-select:none; }
 .toggle input { display:none; }
 .state { font-weight:700; }
 .state.on { color:#147a2e; }   /* grün */
 .state.off{ color:#b5242a; }   /* rot */
+.toggle:hover { background:#f5f7f8; }
 
 /* Modal (Bestätigung Zurücksetzen) */
 .modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.45); display:none; align-items:center; justify-content:center; z-index:1000; }
@@ -67,8 +63,7 @@ details.settings summary { cursor:pointer; }
 .modal-close { appearance:none; border:none; background:transparent; font-size:18px; line-height:1; cursor:pointer; padding:4px 6px; }
 .modal-body { padding:14px; }
 .modal-actions { display:flex; gap:8px; justify-content:flex-end; padding:12px 14px; border-top:1px solid var(--edge); }
-.btn.secondary { background:#eee; color:#333; } 
-.btn.danger { background:#b5242a; color:#fff; }
+.btn.secondary { background:#eee; color:#333; } .btn.danger { background:#b5242a; color:#fff; }
 
 /* Modal: PDF-Optionen */
 .opt-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.45); display:none; align-items:center; justify-content:center; z-index:1000; }
@@ -88,4 +83,6 @@ details.settings summary { cursor:pointer; }
 details.opt-adv summary { cursor:pointer; font-weight:600; }
 .muted-note { color:var(--muted); font-size:0.9em; }
 
-/* ===== Aias-spezifische Styles (vormals inline in aias.html) ===== */
+/* Font/Height Toolbars (neue kleine Gruppe) */
+.sizebar { display:flex; gap:6px; align-items:center; margin-bottom:6px; }
+.sizebar .chip { font-size:0.85em; color:#555; background:#f1f3f5; border:1px solid var(--edge); border-radius:6px; padding:2px 6px; }
