@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Trachiniae – Werkseite</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .pdf-frame { width: 100%; height: 78vh; border: 1px solid var(--edge); background: #fafafa; }
+      .pdf-controls { display:flex; gap:8px; align-items:center; margin-bottom:8px; flex-wrap:wrap; }
+      .pdf-controls .muted { margin-left:auto; }
+      .radio { display:inline-flex; align-items:center; gap:6px; }
+    </style>
   </head>
   <body>
     <div class="wrap">
-      <!-- Kopfzeile -->
       <div class="bar">
         <a class="btn" href="index.html">← Zurück zur Startseite</a>
         <div class="title">Trachiniae <span class="muted">Werkseite</span></div>
       </div>
 
-      <!-- Hinweis -->
       <div class="notice">
-        Oben links: <b>texte/Trachiniae.txt</b> · Unten: <b>texte/Trachiniae_birkenbihl.txt</b><br />
-        PDFs rechts: <b>pdf/TragödieTrachiniae_Normal.pdf</b> und <b>pdf/TragödieTrachiniae_Fett.pdf</b>
+        Links: <b>texte/Trachiniae.txt</b> · Unten: <b>texte/Trachiniae_birkenbihl.txt</b> ·
+        Rechts: eingebettetes PDF aus <b>pdf/TragödieTrachiniae_Normal.pdf</b>/<b>…_Fett.pdf</b>
       </div>
 
-      <!-- Oben: Grid (links Original, rechts PDF-Links) -->
       <div class="grid">
-        <!-- Original (links) -->
         <section class="card">
           <h2>Original – Rohtext</h2>
           <div class="pane-body">
@@ -35,22 +37,30 @@
           </div>
         </section>
 
-        <!-- PDFs (rechts) -->
         <section class="card">
           <h2>PDF</h2>
           <div class="pane-body">
-            <div class="split">
-              <a class="btn" href="pdf/TragödieTrachiniae_Normal.pdf" download>PDF Normal</a>
-              <a class="btn" href="pdf/TragödieTrachiniae_Fett.pdf" download>PDF Fett</a>
+            <div class="pdf-controls">
+              <span class="radio">
+                <input type="radio" name="pdfkind" id="pdf-normal" value="Normal" checked />
+                <label for="pdf-normal">Normal</label>
+              </span>
+              <span class="radio">
+                <input type="radio" name="pdfkind" id="pdf-fett" value="Fett" />
+                <label for="pdf-fett">Fett</label>
+              </span>
+              <button class="btn" id="pdf-refresh">PDF aktualisieren</button>
+              <a class="btn" href="pdf/TragödieTrachiniae_Normal.pdf" id="pdf-download" download>Aktuelles PDF herunterladen</a>
+              <span class="muted">PDF entsteht aus der Birkenbihl-Datei per Build.</span>
             </div>
-            <p class="muted">
-              Diese PDFs werden automatisch aus der aktuellen Birkenbihl-Datei gebaut (GitHub-Actions).
-            </p>
+            <object id="pdf-frame" class="pdf-frame" type="application/pdf"
+              data="pdf/TragödieTrachiniae_Normal.pdf#view=FitH">
+              <p>PDF kann nicht eingebettet werden. <a href="pdf/TragödieTrachiniae_Normal.pdf" target="_blank">Hier öffnen</a>.</p>
+            </object>
           </div>
         </section>
       </div>
 
-      <!-- Unten: Birkenbihl-TXT mit Bearbeiten-Modus -->
       <section class="card" style="margin-top: 16px">
         <h2>Birkenbihl – Text</h2>
         <div class="pane-body">
@@ -61,25 +71,26 @@
             <a class="btn" id="bb-save" style="display:none" download="Trachiniae_birkenbihl.txt">Geänderte TXT herunterladen</a>
           </div>
 
-          <!-- Vorschau -->
           <object id="bb-view" data="texte/Trachiniae_birkenbihl.txt" type="text/plain">
             <pre class="src">Konnte texte/Trachiniae_birkenbihl.txt nicht laden. Liegt die Datei im Ordner texte/?</pre>
           </object>
 
-          <!-- Editor -->
           <textarea id="bb-editor" class="src" style="display:none;width:100%;height:calc(70vh - 64px);border:1px solid var(--edge);background:#f7f7f7;"></textarea>
+
+          <div class="notice" style="margin-top:8px">
+            Für neue PDFs: geänderte Datei im Repo unter <code>texte/</code> ersetzen → Build → oben „PDF aktualisieren“.
+          </div>
         </div>
       </section>
 
-      <!-- Quellen -->
       <div class="notice" style="margin-top: 12px">
         Quelle Originaltexte: Perseus Digital Library · Eigene Aufbereitung: Birkenbihl/Translinear
       </div>
     </div>
 
-    <!-- Skript: Bearbeiten/Download -->
     <script>
       (function () {
+        // Editor
         const filePath = "texte/Trachiniae_birkenbihl.txt";
         const btnEdit = document.getElementById("bb-edit");
         const btnCancel = document.getElementById("bb-cancel");
@@ -118,8 +129,30 @@
           btnSave.href = url;
           setTimeout(() => URL.revokeObjectURL(url), 30000);
         });
+
+        // PDF
+        const pdfFrame = document.getElementById("pdf-frame");
+        const pdfNormal = document.getElementById("pdf-normal");
+        const pdfFett = document.getElementById("pdf-fett");
+        const btnRefresh = document.getElementById("pdf-refresh");
+        const btnPdfDownload = document.getElementById("pdf-download");
+
+        function currentPdfPath() {
+          const base = "pdf/TragödieTrachiniae_";
+          const kind = pdfFett.checked ? "Fett" : "Normal";
+          return base + kind + ".pdf";
+        }
+        function loadPdf(bust=false) {
+          const url = currentPdfPath();
+          const finalUrl = bust ? (url + "?t=" + Date.now() + "#view=FitH") : (url + "#view=FitH");
+          pdfFrame.setAttribute("data", finalUrl);
+          btnPdfDownload.setAttribute("href", url);
+        }
+        pdfNormal.addEventListener("change", () => loadPdf(true));
+        pdfFett.addEventListener("change", () => loadPdf(true));
+        btnRefresh.addEventListener("click", () => loadPdf(true));
+        loadPdf(false);
       })();
     </script>
   </body>
 </html>
-
