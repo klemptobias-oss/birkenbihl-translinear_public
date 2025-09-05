@@ -1,19 +1,17 @@
-<!-- aias.js -->
-<script>
+// aias.js — Seitenlogik für Aias (nutzt Utils)
 (function () {
-  // ====== Werks-Konfiguration ======
+  // ====== Konfiguration (werksbezogen) ======
   const CONF = {
     WORK: "Aias",
     LOCAL_KEY: "draft_Aias_birkenbihl",
-    TXT_ORIG_PATH: "./texte/Aias_birkenbihl.txt",
-    PDF_DRAFT_BASE: "pdf_drafts/Aias_DRAFT_LATEST_",   // + Normal/Fett[+Suffix].pdf
-    PDF_OFFICIAL_BASE: "pdf/TragödieAias_",            // + Normal/Fett.pdf
+    TXT_ORIG_PATH: "texte/Aias_birkenbihl.txt",
+    PDF_DRAFT_BASE: "pdf_drafts/Aias_DRAFT_LATEST_",       // + Normal/Fett[+Suffix].pdf
+    PDF_OFFICIAL_BASE: "pdf/TragödieAias_",                 // + Normal/Fett.pdf
     WORKER_URL: "https://birkenbihl-draft-01.klemp-tobias.workers.dev",
   };
-  const U = window.Utils;
 
-  // ====== Elemente ======
-  // PDF oben
+  // ====== Element-Handles ======
+  // Oben (PDF)
   const pdfFrame = document.getElementById("pdf-frame");
   const pdfNormal = document.getElementById("pdf-normal");
   const pdfFett = document.getElementById("pdf-fett");
@@ -23,29 +21,24 @@
   const btnPdfDownload = document.getElementById("pdf-download");
   const btnPdfOpen = document.getElementById("pdf-open");
 
-  // Original-Pane
+  // Unten (Original & Entwurf)
   const origPre = document.getElementById("bb-original-pre");
-  const origToggleTags = document.getElementById("orig-toggle-tags");
-  const origToggleColors = document.getElementById("orig-toggle-colors");
-  const origFontMinus = document.getElementById("orig-font-minus");
-  const origFontPlus  = document.getElementById("orig-font-plus");
-  const scrollLinkChk = document.getElementById("scroll-link");
+  const draftPre = document.getElementById("bb-view-draft");
+  const editor = document.getElementById("bb-editor");
 
-  // Draft-Pane
-  const draftEditor = document.getElementById("bb-editor");        // immer sichtbar/editierbar
-  const draftPreview = document.getElementById("bb-draft-preview"); // gefilterte Vorschau
-  const draftToggleTags = document.getElementById("draft-toggle-tags");
-  const draftToggleColors = document.getElementById("draft-toggle-colors");
-  const draftFontMinus = document.getElementById("draft-font-minus");
-  const draftFontPlus  = document.getElementById("draft-font-plus");
+  const btnEdit = document.getElementById("bb-edit");
+  const btnCancel = document.getElementById("bb-cancel");
   const btnDownloadDraft = document.getElementById("bb-download-draft");
-  const btnUploadDraft = document.getElementById("bb-upload-draft");
-  const fileDraft = document.getElementById("bb-upload-file");
-  const btnReset = document.getElementById("bb-reset");
   const btnGenerateOrig = document.getElementById("bb-generate-original");
   const btnGenerateDraft = document.getElementById("bb-generate-draft");
+  const btnReset = document.getElementById("bb-reset");
 
-  // Status
+  const origToggleTags = document.getElementById("orig-toggle-tags");
+  const origToggleColors = document.getElementById("orig-toggle-colors");
+  const draftToggleTags = document.getElementById("draft-toggle-tags");
+  const draftToggleColors = document.getElementById("draft-toggle-colors");
+
+  // Save/Status
   const saveDot = document.getElementById("save-dot");
   const saveText = document.getElementById("save-text");
   const draftStatus = document.getElementById("draft-status");
@@ -66,11 +59,11 @@
   const tagKo = document.getElementById("tag-Ko");
   const tagArt = document.getElementById("tag-Art");
   const tagAj = document.getElementById("tag-Aj");
-  const tagV  = document.getElementById("tag-V");
-  const tagN  = document.getElementById("tag-N");
+  const tagV = document.getElementById("tag-V");
+  const tagN = document.getElementById("tag-N");
   const optContextNote = document.getElementById("opt-context-note");
 
-  // Confirm-Modal (Reset)
+  // Bestätigungs-Modal (Zurücksetzen)
   const modalBackdrop = document.getElementById("confirm-backdrop");
   const modalClose = document.getElementById("confirm-close");
   const modalCancel = document.getElementById("confirm-cancel");
@@ -79,228 +72,266 @@
   // ====== State ======
   let rawOriginal = "";
   let rawDraft = "";
+  let optContext = "draft"; // "draft" | "original"
 
-  function pdfUrl(suffix = "") {
+  // ====== Kurz-Helper (aus Utils) ======
+  const U = window.Utils;
+
+  // ====== PDF-URL bauen und anzeigen ======
+  function currentPdfUrl(suffix = "") {
     const kind = pdfFett?.checked ? "Fett" : "Normal";
     const base = srcDraft?.checked ? CONF.PDF_DRAFT_BASE : CONF.PDF_OFFICIAL_BASE;
     return base + kind + (srcDraft?.checked ? (suffix || "") : "") + ".pdf";
   }
   function refreshPdf(bust = false, suffix = "") {
-    U.setPdfViewer(pdfFrame, btnPdfDownload, btnPdfOpen, pdfUrl(suffix), bust);
+    const url = currentPdfUrl(suffix);
+    U.setPdfViewer(pdfFrame, btnPdfDownload, btnPdfOpen, url, bust);
   }
 
-  // ====== Init: Texte laden & Draft initial füllen ======
-  (async function init() {
+  // ====== Start: Texte laden ======
+  (async function initTexts() {
     try {
       rawOriginal = await U.fetchText(CONF.TXT_ORIG_PATH);
     } catch (e) {
       rawOriginal = "Konnte " + CONF.TXT_ORIG_PATH + " nicht laden. Liegt die Datei im Ordner texte/?";
     }
-    // Original anzeigen (Start: Filter "An" -> nichts ausblenden)
+    // Default: Anzeige-Schalter = An (keine Filter)
     U.updateToggleLabel(origToggleTags, true);
     U.updateToggleLabel(origToggleColors, true);
-    origPre.textContent = U.renderWithFilters(rawOriginal, false, false);
+    if (origPre) origPre.textContent = U.renderWithFilters(rawOriginal, false, false);
 
-    // Draft aus localStorage, sonst Kopie des Originals
-    const stored = U.loadLocalDraft(CONF.LOCAL_KEY);
-    rawDraft = stored || rawOriginal;
-    draftEditor.value = rawDraft;
-
-    // Draft-Preview initial
+    // Entwurf: aus localStorage, fallback = Original
+    rawDraft = U.loadLocalDraft(CONF.LOCAL_KEY) || rawOriginal || "";
     U.updateToggleLabel(draftToggleTags, true);
     U.updateToggleLabel(draftToggleColors, true);
-    draftPreview.textContent = U.renderWithFilters(rawDraft, false, false);
-
-    // PDF initial
-    refreshPdf(false);
-
-    // Scroll-Sync: Original -> Draft (Preview + Editor), steuerbar per Checkbox
-    U.attachScrollSync(origPre, [draftPreview, draftEditor], () => !!scrollLinkChk?.checked);
+    if (draftPre) draftPre.textContent = U.renderWithFilters(rawDraft, false, false);
   })();
 
-  // ====== Filter-Schalter: ORIGINAL ======
+  // ====== Anzeige-Schalter ======
   function applyOriginalView() {
-    const hideTags = !(origToggleTags.querySelector("input")?.checked);
-    const hideColors = !(origToggleColors.querySelector("input")?.checked);
-    origPre.textContent = U.renderWithFilters(rawOriginal, hideTags, hideColors);
+    const hideTags = !(origToggleTags.querySelector("input").checked);
+    const hideColors = !(origToggleColors.querySelector("input").checked);
+    if (origPre) origPre.textContent = U.renderWithFilters(rawOriginal, hideTags, hideColors);
   }
+  function applyDraftView() {
+    const hideTags = !(draftToggleTags.querySelector("input").checked);
+    const hideColors = !(draftToggleColors.querySelector("input").checked);
+    if (draftPre) draftPre.textContent = U.renderWithFilters(rawDraft, hideTags, hideColors);
+  }
+
+  // Original toggles
   origToggleTags?.addEventListener("click", () => {
-    const inp = origToggleTags.querySelector("input");
-    inp.checked = !inp.checked;
-    U.updateToggleLabel(origToggleTags, inp.checked);
+    const input = origToggleTags.querySelector("input");
+    input.checked = !input.checked;
+    U.updateToggleLabel(origToggleTags, input.checked);
     applyOriginalView();
   });
   origToggleColors?.addEventListener("click", () => {
-    const inp = origToggleColors.querySelector("input");
-    inp.checked = !inp.checked;
-    U.updateToggleLabel(origToggleColors, inp.checked);
+    const input = origToggleColors.querySelector("input");
+    input.checked = !input.checked;
+    U.updateToggleLabel(origToggleColors, input.checked);
     applyOriginalView();
   });
 
-  // ====== Filter-Schalter: DRAFT (wirken auf Preview) ======
-  function applyDraftPreview() {
-    const hideTags = !(draftToggleTags.querySelector("input")?.checked);
-    const hideColors = !(draftToggleColors.querySelector("input")?.checked);
-    draftPreview.textContent = U.renderWithFilters(rawDraft, hideTags, hideColors);
-  }
+  // Draft toggles
   draftToggleTags?.addEventListener("click", () => {
-    const inp = draftToggleTags.querySelector("input");
-    inp.checked = !inp.checked;
-    U.updateToggleLabel(draftToggleTags, inp.checked);
-    applyDraftPreview();
+    const input = draftToggleTags.querySelector("input");
+    input.checked = !input.checked;
+    U.updateToggleLabel(draftToggleTags, input.checked);
+    applyDraftView();
   });
   draftToggleColors?.addEventListener("click", () => {
-    const inp = draftToggleColors.querySelector("input");
-    inp.checked = !inp.checked;
-    U.updateToggleLabel(draftToggleColors, inp.checked);
-    applyDraftPreview();
+    const input = draftToggleColors.querySelector("input");
+    input.checked = !input.checked;
+    U.updateToggleLabel(draftToggleColors, input.checked);
+    applyDraftView();
   });
 
-  // ====== Draft-Editor: live speichern & Preview updaten ======
-  let saveTimer = null;
-  draftEditor?.addEventListener("input", () => {
+  // ====== Editor ======
+  function showEditor(text) {
+    if (!editor || !draftPre) return;
+    editor.value = text || "";
+    editor.style.display = "block";
+    draftPre.style.display = "none";
+    if (btnCancel) btnCancel.style.display = "inline-block";
+    U.setSaveState(saveDot, saveText, "ready", "Im Editor");
+  }
+  function hideEditor() {
+    if (!editor || !draftPre) return;
+    editor.style.display = "none";
+    draftPre.style.display = "block";
+    if (btnCancel) btnCancel.style.display = "none";
+    U.setSaveState(saveDot, saveText, "ready", "Bereit");
+  }
+
+  btnEdit?.addEventListener("click", async () => {
     U.setSaveState(saveDot, saveText, "busy");
-    rawDraft = draftEditor.value || "";
-    applyDraftPreview();
+    try {
+      const draft = U.loadLocalDraft(CONF.LOCAL_KEY);
+      const text = draft || rawOriginal || (await U.fetchText(CONF.TXT_ORIG_PATH));
+      showEditor(text);
+      U.setSaveState(saveDot, saveText, "ready", draft ? "Entwurf bearbeiten" : "Original bearbeiten");
+    } catch (e) {
+      U.setSaveState(saveDot, saveText, "ready");
+      alert("Konnte Text nicht laden: " + e.message);
+    }
+  });
+  btnCancel?.addEventListener("click", hideEditor);
+
+  let saveTimer = null;
+  editor?.addEventListener("input", () => {
+    U.setSaveState(saveDot, saveText, "busy");
+    rawDraft = editor.value;
+    applyDraftView();
     if (saveTimer) clearTimeout(saveTimer);
     saveTimer = setTimeout(() => {
       U.saveLocalDraft(CONF.LOCAL_KEY, rawDraft);
       U.setSaveState(saveDot, saveText, "ok", "Gespeichert");
-    }, 250);
+    }, 300);
   });
 
-  // ====== Font-Regler ======
-  origFontMinus?.addEventListener("click", () => U.nudgeFont(origPre, -1));
-  origFontPlus ?.addEventListener("click", () => U.nudgeFont(origPre, +1));
-  draftFontMinus?.addEventListener("click", () => {
-    U.nudgeFont(draftEditor, -1);
-    U.nudgeFont(draftPreview, -1);
-  });
-  draftFontPlus ?.addEventListener("click", () => {
-    U.nudgeFont(draftEditor, +1);
-    U.nudgeFont(draftPreview, +1);
-  });
-
-  // ====== Entwurf herunterladen (mit Code) ======
+  // ====== Download Entwurf (mit Code) ======
   btnDownloadDraft?.addEventListener("click", async () => {
-    const text = draftEditor.value || rawDraft || "";
-    if (!text.trim()) { alert("Kein Entwurf vorhanden."); return; }
+    const text = (editor && editor.style.display !== "none") ? (editor.value || "") : (rawDraft || "");
+    if (!text.trim()) {
+      alert("Kein Entwurf vorhanden. Bitte Text erfassen.");
+      return;
+    }
     try {
       const code = await U.diffCode(rawOriginal || "", text);
       const fname = `${CONF.WORK}_birkenbihl_ENTWURF_${code}.txt`;
       const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
-      a.href = url; a.download = fname; document.body.appendChild(a); a.click();
-      setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 800);
+      a.href = url;
+      a.download = fname;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 1000);
     } catch (e) {
       alert("Konnte Entwurf nicht herunterladen: " + e.message);
     }
   });
 
-  // ====== Entwurf HOCHLADEN (lokale TXT in Editor laden) ======
-  btnUploadDraft?.addEventListener("click", () => fileDraft?.click());
-  fileDraft?.addEventListener("change", async (e) => {
-    const f = e.target.files && e.target.files[0];
-    if (!f) return;
-    try {
-      const txt = await f.text();
-      draftEditor.value = txt;
-      rawDraft = txt;
-      applyDraftPreview();
-      U.saveLocalDraft(CONF.LOCAL_KEY, rawDraft);
-      U.setSaveState(saveDot, saveText, "ok", "Entwurf importiert");
-      draftStatus.innerHTML = '<span class="ok">Entwurf geladen.</span>';
-    } catch (err) {
-      alert("Konnte Datei nicht lesen: " + err.message);
-    } finally {
-      fileDraft.value = "";
-    }
-  });
-
-  // ====== Entwurf zurücksetzen (nur lokal) ======
-  function openConfirm() { modalBackdrop.style.display = "flex"; modalBackdrop.setAttribute("aria-hidden", "false"); }
-  function closeConfirm(){ modalBackdrop.style.display = "none"; modalBackdrop.setAttribute("aria-hidden", "true"); }
+  // ====== Bestätigungs-Modal: Entwurf zurücksetzen ======
+  function openConfirm() {
+    if (!modalBackdrop) return;
+    modalBackdrop.style.display = "flex";
+    modalBackdrop.setAttribute("aria-hidden", "false");
+  }
+  function closeConfirm() {
+    if (!modalBackdrop) return;
+    modalBackdrop.style.display = "none";
+    modalBackdrop.setAttribute("aria-hidden", "true");
+  }
   btnReset?.addEventListener("click", openConfirm);
   modalClose?.addEventListener("click", closeConfirm);
   modalCancel?.addEventListener("click", closeConfirm);
   modalBackdrop?.addEventListener("click", (e) => { if (e.target === modalBackdrop) closeConfirm(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && modalBackdrop.style.display === "flex") closeConfirm(); });
-
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modalBackdrop && modalBackdrop.style.display === "flex") closeConfirm();
+  });
   modalOk?.addEventListener("click", () => {
     U.clearLocalDraft(CONF.LOCAL_KEY);
-    rawDraft = rawOriginal || "";
-    draftEditor.value = rawDraft;
-    applyDraftPreview();
-    draftStatus.innerHTML = '<span class="ok">Entwurf auf Original zurückgesetzt.</span>';
+    rawDraft = "";
+    if (draftPre) draftPre.textContent = "";
+    if (editor && editor.style.display !== "none") editor.value = "";
+    if (draftStatus) draftStatus.innerHTML = '<span class="ok">Lokaler Entwurf gelöscht.</span>';
     U.setSaveState(saveDot, saveText, "ready", "Bereit");
     closeConfirm();
   });
 
-  // ====== PDF-Panel oben ======
-  ;[pdfNormal, pdfFett, srcOriginal, srcDraft].forEach((el) => el && el.addEventListener("change", () => refreshPdf(true)));
+  // ====== PDF oben (Quelle & Kind & Refresh) ======
+  [pdfNormal, pdfFett, srcOriginal, srcDraft].forEach((el) =>
+    el && el.addEventListener("change", () => refreshPdf(true))
+  );
   btnRefresh?.addEventListener("click", () => refreshPdf(true));
+  // Initial
   refreshPdf(false);
 
-  // ====== PDF-Optionen-Modal ======
-  let optContext = "draft"; // "original" | "draft"
-  function openOptModal(ctx) {
-    optContext = ctx;
-    optContextNote.textContent =
-      ctx === "original"
-        ? "Hinweis: Oben wird auf „Original“ umgeschaltet. Offizielle PDFs liegen im Ordner pdf/."
-        : "Der Entwurf wird mit diesen Optionen gebaut und oben angezeigt.";
-    optBackdrop.style.display = "flex";
-    optBackdrop.setAttribute("aria-hidden", "false");
+  // ====== Optionen-Modal (PDF generieren) ======
+  const btnOpenOptsOriginal = document.getElementById("bb-generate-original");
+  const btnOpenOptsDraft = document.getElementById("bb-generate-draft");
+
+  function openOptModal(context) {
+    optContext = context;
+    if (optContextNote)
+      optContextNote.textContent =
+        context === "original"
+          ? "Hinweis: Oben wird auf „Original“ umgeschaltet. Offizielle PDFs liegen im Ordner pdf/."
+          : "Der Entwurf wird mit diesen Optionen gebaut und oben angezeigt.";
+    if (optBackdrop) {
+      optBackdrop.style.display = "flex";
+      optBackdrop.setAttribute("aria-hidden", "false");
+    }
   }
-  function closeOptModal() { optBackdrop.style.display = "none"; optBackdrop.setAttribute("aria-hidden", "true"); }
-  btnGenerateOrig?.addEventListener("click", () => openOptModal("original"));
-  btnGenerateDraft?.addEventListener("click", () => openOptModal("draft"));
+  function closeOptModal() {
+    if (!optBackdrop) return;
+    optBackdrop.style.display = "none";
+    optBackdrop.setAttribute("aria-hidden", "true");
+  }
+  btnOpenOptsOriginal?.addEventListener("click", () => openOptModal("original"));
+  btnOpenOptsDraft?.addEventListener("click", () => openOptModal("draft"));
   optClose?.addEventListener("click", closeOptModal);
   optCancel?.addEventListener("click", closeOptModal);
   optBackdrop?.addEventListener("click", (e) => { if (e.target === optBackdrop) closeOptModal(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && optBackdrop.style.display === "flex") closeOptModal(); });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && optBackdrop && optBackdrop.style.display === "flex") closeOptModal();
+  });
 
   function suffixFromOptions() {
-    let s = "";
-    if (!optColors.checked) s += "_BW";
-    if (!optTags.checked) s += "_NoTags";
-    if (optAdv.open) s += "_Custom";
-    return s;
+    let suffix = "";
+    if (optColors && !optColors.checked) suffix += "_BW";
+    if (optTags && !optTags.checked) suffix += "_NoTags";
+    if (optAdv && optAdv.open) suffix += "_Custom";
+    return suffix;
   }
   function collectOptionsPayload() {
     return {
-      colors: !!optColors.checked,
-      showTags: !!optTags.checked,
-      custom: optAdv.open
+      colors: !!(optColors && optColors.checked),
+      showTags: !!(optTags && optTags.checked),
+      custom: optAdv && optAdv.open
         ? {
-            colorByPOS: { N: !!optColorN.checked, V: !!optColorV.checked, Aj: !!optColorAj.checked },
+            colorByPOS: {
+              N: !!(optColorN && optColorN.checked),
+              V: !!(optColorV && optColorV.checked),
+              Aj: !!(optColorAj && optColorAj.checked),
+            },
             visibleTags: {
-              Av: !!tagAv.checked, Pt: !!tagPt.checked, Ko: !!tagKo.checked, Art: !!tagArt.checked,
-              Aj: !!tagAj.checked, V: !!tagV.checked, N: !!tagN.checked,
+              Av: !!(tagAv && tagAv.checked),
+              Pt: !!(tagPt && tagPt.checked),
+              Ko: !!(tagKo && tagKo.checked),
+              Art: !!(tagArt && tagArt.checked),
+              Aj: !!(tagAj && tagAj.checked),
+              V:  !!(tagV  && tagV.checked),
+              N:  !!(tagN  && tagN.checked),
             },
           }
         : null,
     };
   }
 
-  optGenerate?.addEventListener("click", async () => {
+  document.getElementById("opt-generate")?.addEventListener("click", async () => {
     const suffix = suffixFromOptions();
 
     if (optContext === "original") {
-      srcOriginal.checked = true; srcDraft.checked = false;
-      refreshPdf(true); // offizielle PDFs
-      draftStatus.innerHTML = '<span class="small">Quelle auf <b>Original</b> umgestellt.</span>';
+      if (srcOriginal) srcOriginal.checked = true;
+      if (srcDraft) srcDraft.checked = false;
+      refreshPdf(true); // ohne Suffix (offizielle PDFs)
+      if (draftStatus) draftStatus.innerHTML = '<span class="small">Quelle auf <b>Original</b> umgestellt.</span>';
       closeOptModal();
       return;
     }
 
-    // Entwurf bauen via Worker
-    const text = draftEditor.value || rawDraft || "";
-    if (!text.trim()) { alert("Kein Entwurfstext vorhanden."); return; }
+    // Entwurf wirklich bauen über Worker
+    const text = (editor && editor.style.display !== "none") ? editor.value : (rawDraft || "");
+    if (!text.trim()) {
+      alert("Kein Entwurfstext vorhanden. Bitte Text erfassen.");
+      return;
+    }
 
     try {
-      draftStatus.textContent = "⬆️ Entwurf wird an den Build-Dienst gesendet…";
+      if (draftStatus) draftStatus.textContent = "⬆️ Entwurf wird an den Build-Dienst gesendet…";
       const opts = collectOptionsPayload();
       const res = await fetch(CONF.WORKER_URL + "/draft", {
         method: "POST",
@@ -310,22 +341,25 @@
       const j = await res.json().catch(() => ({}));
       if (!res.ok || !j.ok) throw new Error(j.error || "HTTP " + res.status);
 
-      draftStatus.textContent = "✅ Entwurf angenommen. Build startet…";
-      srcDraft.checked = true; srcOriginal.checked = false;
+      if (draftStatus) draftStatus.textContent = "✅ Entwurf angenommen. Build startet…";
 
-      const kind = pdfFett.checked ? "Fett" : "Normal";
+      if (srcDraft) srcDraft.checked = true;
+      if (srcOriginal) srcOriginal.checked = false;
+
+      const kind = pdfFett && pdfFett.checked ? "Fett" : "Normal";
       const target = `${CONF.PDF_DRAFT_BASE}${kind}${suffix}.pdf`;
-      const ok = await U.waitForPdf(target, 24, 5000); // ~2 min
 
+      const ok = await U.waitForPdf(target, 24, 5000); // ~2 min
       refreshPdf(true, suffix);
-      draftStatus.innerHTML = ok
-        ? "✅ Entwurfs-PDF aktualisiert."
-        : '⚠️ PDF noch nicht bereit. Bitte später „PDF aktualisieren“ klicken.';
+      if (draftStatus) {
+        draftStatus.innerHTML = ok
+          ? "✅ Entwurfs-PDF aktualisiert."
+          : '⚠️ PDF noch nicht bereit. Bitte später „PDF aktualisieren“ klicken.';
+      }
     } catch (e) {
-      draftStatus.innerHTML = '<span class="err">Fehler: ' + e.message + "</span>";
+      if (draftStatus) draftStatus.innerHTML = '<span class="err">Fehler: ' + e.message + "</span>";
     } finally {
       closeOptModal();
     }
   });
 })();
-</script>
