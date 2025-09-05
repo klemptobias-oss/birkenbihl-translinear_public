@@ -18,6 +18,31 @@
       .save-dot { width:8px; height:8px; border-radius:50%; display:inline-block; margin-right:6px; background:#aaa; vertical-align:middle; }
       .save-dot.ok { background:#2a7; }
       .save-dot.busy { background:#c71; }
+
+      /* Modal (Bestätigung) */
+      .modal-backdrop {
+        position: fixed; inset: 0; background: rgba(0,0,0,0.45);
+        display: none; align-items: center; justify-content: center; z-index: 1000;
+      }
+      .modal {
+        background: #fff; border: 1px solid var(--edge); border-radius: 10px;
+        width: min(520px, 92vw); box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+      }
+      .modal-header {
+        display:flex; align-items:center; justify-content:space-between;
+        padding:12px 14px; border-bottom:1px solid var(--edge);
+      }
+      .modal-title { font-weight:600; }
+      .modal-close {
+        appearance:none; border:none; background:transparent; font-size: 18px; line-height:1;
+        cursor:pointer; padding:4px 6px;
+      }
+      .modal-body { padding: 14px; }
+      .modal-actions {
+        display:flex; gap:8px; justify-content:flex-end; padding:12px 14px; border-top:1px solid var(--edge);
+      }
+      .btn.secondary { background:#eee; color:#333; }
+      .btn.danger { background:#b5242a; color:#fff; }
     </style>
   </head>
   <body>
@@ -117,6 +142,7 @@
             <button class="btn" id="bb-cancel" style="display:none">Abbrechen</button>
             <a class="btn" id="bb-save" style="display:none" download="Aias_birkenbihl_DRAFT.txt">Entwurf als TXT speichern</a>
 
+            <button class="btn" id="bb-reset" title="Nur den lokalen Entwurf löschen">Entwurf zurücksetzen</button>
             <button class="btn" id="bb-generate">PDF generieren (Entwurf)</button>
           </div>
 
@@ -146,6 +172,24 @@
       </div>
     </div>
 
+    <!-- Bestätigungs-Modal -->
+    <div id="confirm-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="confirm-title" aria-hidden="true">
+      <div class="modal" role="document">
+        <div class="modal-header">
+          <div id="confirm-title" class="modal-title">Entwurf zurücksetzen?</div>
+          <button class="modal-close" id="confirm-close" aria-label="Schließen">×</button>
+        </div>
+        <div class="modal-body">
+          <p>Dieser Schritt löscht <b>nur den lokalen Entwurf</b> in deinem Browser. Das Original in <code>texte/</code> bleibt unverändert.</p>
+          <p>Möchtest du fortfahren?</p>
+        </div>
+        <div class="modal-actions">
+          <button class="btn secondary" id="confirm-cancel">Abbrechen</button>
+          <button class="btn danger" id="confirm-ok">Entwurf zurücksetzen</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Skript -->
     <script>
       (function () {
@@ -169,6 +213,7 @@
         const saveDot = document.getElementById("save-dot");
         const saveText = document.getElementById("save-text");
         const btnGenerate = document.getElementById("bb-generate");
+        const btnReset = document.getElementById("bb-reset");
         const draftStatus = document.getElementById("draft-status");
 
         const pdfFrame = document.getElementById("pdf-frame");
@@ -179,6 +224,12 @@
         const btnRefresh = document.getElementById("pdf-refresh");
         const btnPdfDownload = document.getElementById("pdf-download");
         const btnPdfOpen = document.getElementById("pdf-open");
+
+        // Modal-Elemente
+        const modalBackdrop = document.getElementById("confirm-backdrop");
+        const modalClose = document.getElementById("confirm-close");
+        const modalCancel = document.getElementById("confirm-cancel");
+        const modalOk = document.getElementById("confirm-ok");
 
         // ====== Helpers ======
         function setSaveState(state, msg) {
@@ -266,8 +317,8 @@
           if (which==="draft"){ bbViewOriginal.style.display="none"; bbViewDraft.style.display=""; }
           else { bbViewDraft.style.display="none"; bbViewOriginal.style.display=""; }
         }
-        bbViewOrigRadio.addEventListener("change", ()=>setBBView("original"));
-        bbViewDraftRadio.addEventListener("change", ()=>setBBView("draft"));
+        document.getElementById("bbview-original").addEventListener("change", ()=>setBBView("original"));
+        document.getElementById("bbview-draft").addEventListener("change", ()=>setBBView("draft"));
 
         // Entwurf als TXT speichern
         btnSave.addEventListener("click", ()=>{
@@ -276,10 +327,39 @@
           btnSave.href = url; setTimeout(()=>URL.revokeObjectURL(url), 30000);
         });
 
-        // PDF-Umschalter
+        // ====== PDF-Einbettung steuern ======
         [pdfNormal,pdfFett,srcOriginal,srcDraft].forEach(el=>el.addEventListener("change", ()=>updatePdfLinks(true)));
         btnRefresh.addEventListener("click", ()=>updatePdfLinks(true));
         updatePdfLinks(false);
+
+        // ====== Entwurf zurücksetzen (mit Bestätigungs-Modal) ======
+        function openConfirm(){ modalBackdrop.style.display = "flex"; modalBackdrop.setAttribute("aria-hidden","false"); }
+        function closeConfirm(){ modalBackdrop.style.display = "none"; modalBackdrop.setAttribute("aria-hidden","true"); }
+
+        btnReset.addEventListener("click", openConfirm);
+        modalClose.addEventListener("click", closeConfirm);
+        modalCancel.addEventListener("click", closeConfirm);
+        modalBackdrop.addEventListener("click", (e)=>{ if (e.target === modalBackdrop) closeConfirm(); });
+        document.addEventListener("keydown", (e)=>{ if (e.key === "Escape" && modalBackdrop.style.display === "flex") closeConfirm(); });
+
+        modalOk.addEventListener("click", ()=>{
+          // Löschen NUR des lokalen Entwurfs
+          localStorage.removeItem(LOCAL_KEY);
+          bbViewDraft.textContent = "";
+          if (editor.style.display === "none") {
+            // zurück auf Original-Ansicht
+            document.getElementById("bbview-original").checked = true;
+            document.getElementById("bbview-draft").checked = false;
+            bbViewDraft.style.display = "none";
+            bbViewOriginal.style.display = "";
+          } else {
+            // Editor offen → leeren
+            editor.value = "";
+          }
+          draftStatus.innerHTML = '<span class="ok">Lokaler Entwurf gelöscht.</span>';
+          setSaveState("ready","Bereit");
+          closeConfirm();
+        });
 
         // ====== PDF generieren (Entwurf) → Worker ======
         btnGenerate.addEventListener("click", async ()=>{
