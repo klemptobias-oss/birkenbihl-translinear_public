@@ -5,7 +5,7 @@
   const CONF = {
     WORK: "Aias",
     LOCAL_KEY: "draft_Aias_birkenbihl",
-    TXT_ORIG_PATH: "texte/Aias_birkenbihl.txt",
+    TXT_ORIG_PATH: "./texte/Aias_birkenbihl.txt",
     PDF_DRAFT_BASE: "pdf_drafts/Aias_DRAFT_LATEST_",   // + Normal/Fett[+Suffix].pdf
     PDF_OFFICIAL_BASE: "pdf/TragödieAias_",            // + Normal/Fett.pdf
     WORKER_URL: "https://birkenbihl-draft-01.klemp-tobias.workers.dev",
