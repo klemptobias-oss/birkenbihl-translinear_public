@@ -1,9 +1,7 @@
 // utils.js — gemeinsame Helfer, defensiv & wiederverwendbar
 (function () {
-  // Mini-Guard: sichere Objektpfade ohne Fehler
   const has = (obj, k) => Object.prototype.hasOwnProperty.call(obj || {}, k);
 
-  // ---- Save-Status UI (kleiner Punkt + Text) ----
   function setSaveState(dotEl, textEl, state, msg) {
     if (!dotEl || !textEl) return;
     dotEl.classList.remove("ok", "busy");
@@ -13,7 +11,6 @@
       msg || (state === "ok" ? "Gespeichert" : state === "busy" ? "Speichere…" : "Bereit");
   }
 
-  // ---- lokaler Entwurf (localStorage) ----
   function loadLocalDraft(key) {
     try { return localStorage.getItem(key) || ""; } catch { return ""; }
   }
@@ -24,7 +21,6 @@
     try { localStorage.removeItem(key); } catch {}
   }
 
-  // ---- Netz & Timing ----
   async function fetchText(path) {
     const r = await fetch(path, { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
@@ -45,23 +41,18 @@
     return false;
   }
 
-  // ---- PDF-Viewer-Helfer ----
   function setPdfViewer(frameEl, downloadEl, openEl, url, bust = false) {
     if (!frameEl || !downloadEl || !openEl || !url) return;
     const u = url + (bust ? "?t=" + Date.now() : "");
-    // Wichtig: <object> nutzt "data"
     frameEl.setAttribute("data", u + "#view=FitH");
     downloadEl.setAttribute("href", url);
     openEl.setAttribute("href", url);
   }
 
-  // ---- Anzeige-Filter (nur Ansicht, nicht Editor) ----
-  // (1) Grammatik-Tags in runden Klammern ausblenden: (…)
   function stripGrammarTags(text) {
     if (!text) return "";
     return text.replace(/\([^()\n]*\)/g, "");
   }
-  // (2) Farbkürzel (#, +, -) am Tokenanfang entfernen
   function stripColorPrefixes(text) {
     if (!text) return "";
     return text
@@ -78,7 +69,6 @@
       )
       .join("\n");
   }
-  // Kombinierte Renderer-Funktion
   function renderWithFilters(rawText, hideTags, hideColors) {
     let out = rawText || "";
     if (hideTags) out = stripGrammarTags(out);
@@ -86,7 +76,6 @@
     return out;
   }
 
-  // ---- Anzeige: Toggle-Label (An/Aus) pflegen ----
   function updateToggleLabel(toggleEl, isOn) {
     if (!toggleEl) return;
     const state = toggleEl.querySelector(".state");
@@ -96,7 +85,6 @@
     state.classList.toggle("off", !isOn);
   }
 
-  // ---- Dateiname (Entwurf) stabilisieren: kurzer Diff-Code ----
   async function sha256Hex(str) {
     const enc = new TextEncoder().encode(str || "");
     const buf = await crypto.subtle.digest("SHA-256", enc);
@@ -109,7 +97,6 @@
     return hex.slice(0, 8);
   }
 
-  // ---- Export in globalen Namensraum ----
   window.Utils = {
     setSaveState,
     loadLocalDraft,
