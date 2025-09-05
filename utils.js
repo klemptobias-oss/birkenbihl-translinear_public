@@ -1,17 +1,15 @@
-<!-- utils.js -->
-<script>
+// utils.js — gemeinsame Helfer (neutral, ohne Werksbezug)
 window.Utils = (function () {
-  // ---------- Save-Status ----------
+  // ---- Save-Status UI (kleiner Punkt + Text) ----
   function setSaveState(dotEl, textEl, state, msg) {
     if (!dotEl || !textEl) return;
     dotEl.classList.remove("ok", "busy");
     if (state === "busy") dotEl.classList.add("busy");
     if (state === "ok") dotEl.classList.add("ok");
-    textEl.textContent =
-      msg || (state === "ok" ? "Gespeichert" : state === "busy" ? "Speichere…" : "Bereit");
+    textEl.textContent = msg || (state === "ok" ? "Gespeichert" : state === "busy" ? "Speichere…" : "Bereit");
   }
 
-  // ---------- lokaler Entwurf ----------
+  // ---- lokaler Entwurf (localStorage) ----
   function loadLocalDraft(key) {
     try { return localStorage.getItem(key) || ""; } catch { return ""; }
   }
@@ -22,16 +20,15 @@ window.Utils = (function () {
     try { localStorage.removeItem(key); } catch {}
   }
 
-  // ---------- Netz & Timing ----------
+  // ---- Netz & Timing ----
   async function fetchText(path) {
-  // Cache-Busting gegen „hängende“ GitHub-Pages-Antworten
-  const url = path + (path.includes('?') ? '&' : '?') + 't=' + Date.now();
-  const r = await fetch(url, { cache: 'no-store' });
-  if (!r.ok) {
-    throw new Error(`HTTP ${r.status} für ${path}`);
+    // Cache-busting gegen „hängende“ GitHub-Pages-Antworten
+    const url = path + (path.includes("?") ? "&" : "?") + "t=" + Date.now();
+    const r = await fetch(url, { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status + " für " + path);
+    return await r.text();
   }
-  return await r.text();
-}
+
   async function waitForPdf(url, attempts, delayMs) {
     for (let i = 0; i < attempts; i++) {
       try {
@@ -43,16 +40,16 @@ window.Utils = (function () {
     return false;
   }
 
-  // ---------- PDF-Viewer ----------
+  // ---- PDF-Viewer-Helfer ----
   function setPdfViewer(frameEl, downloadEl, openEl, url, bust = false) {
     if (!frameEl || !downloadEl || !openEl) return;
-    const u = url + (bust ? "?t=" + Date.now() : "");
+    const u = url + (bust ? (url.includes("?") ? "&" : "?") + "t=" + Date.now() : "");
     frameEl.setAttribute("data", u + "#view=FitH");
     downloadEl.setAttribute("href", url);
     openEl.setAttribute("href", url);
   }
 
-  // ---------- Anzeige-Filter (nur Ansicht/Preview) ----------
+  // ---- Anzeige-Filter (nur Ansicht/Preview) ----
   function stripGrammarTags(text) {
     return (text || "").replace(/\([^()\n]*\)/g, "");
   }
@@ -86,7 +83,7 @@ window.Utils = (function () {
     state.classList.toggle("off", !isOn);
   }
 
-  // ---------- Hash/Code für Dateinamen ----------
+  // ---- Dateiname (Entwurf) stabilisieren ----
   async function sha256Hex(str) {
     const enc = new TextEncoder().encode(str);
     const buf = await crypto.subtle.digest("SHA-256", enc);
@@ -95,38 +92,6 @@ window.Utils = (function () {
   async function diffCode(original, draft) {
     const hex = await sha256Hex((original || "") + "|" + (draft || ""));
     return hex.slice(0, 8);
-  }
-
-  // ---------- Scroll-Sync ----------
-  // Quelle -> Ziel(e), prozentualer Abgleich; aktiv nur wenn getter() true liefert.
-  function attachScrollSync(sourceEl, targetEls, enabledGetter) {
-    if (!sourceEl || !targetEls?.length) return;
-    sourceEl.addEventListener("scroll", () => {
-      if (!enabledGetter || !enabledGetter()) return;
-      const max = sourceEl.scrollHeight - sourceEl.clientHeight;
-      const p = max > 0 ? sourceEl.scrollTop / max : 0;
-      targetEls.forEach((t) => {
-        if (!t) return;
-        const tMax = t.scrollHeight - t.clientHeight;
-        t.scrollTop = p * (tMax > 0 ? tMax : 0);
-      });
-    }, { passive: true });
-  }
-
-  // ---------- Font-Regler ----------
-  function getFontSize(el) {
-    const c = getComputedStyle(el);
-    const px = parseFloat(c.fontSize || "14");
-    return isNaN(px) ? 14 : px;
-  }
-  function setFontSize(el, px) {
-    if (el) el.style.fontSize = px + "px";
-  }
-  function nudgeFont(el, deltaPx, minPx = 10, maxPx = 24) {
-    if (!el) return;
-    const cur = getFontSize(el);
-    const next = Math.max(minPx, Math.min(maxPx, cur + deltaPx));
-    setFontSize(el, next);
   }
 
   return {
@@ -143,10 +108,5 @@ window.Utils = (function () {
     updateToggleLabel,
     sha256Hex,
     diffCode,
-    attachScrollSync,
-    getFontSize,
-    setFontSize,
-    nudgeFont,
   };
 })();
-</script>
