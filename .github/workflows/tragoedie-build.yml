@@ -27,10 +27,12 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install reportlab
 
-      - name: Ensure fonts (DejaVu)
+      - name: Install DejaVu fonts
         run: |
-          test -f DejaVuSans.ttf || wget -q https://github.com/dejavu-fonts/dejavu-fonts/raw/version_2_37/ttf/DejaVuSans.ttf
-          test -f DejaVuSans-Bold.ttf || wget -q https://github.com/dejavu-fonts/dejavu-fonts/raw/version_2_37/ttf/DejaVuSans-Bold.ttf
+          sudo apt-get update
+          sudo apt-get install -y fonts-dejavu-core
+          ln -sf /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf .
+          ln -sf /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf .
           ls -l DejaVuSans*.ttf
 
       - name: Build PDFs (Tragödie)
