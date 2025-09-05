@@ -357,48 +357,47 @@
 
         // ====== PDF generieren (Entwurf) ======
         btnGenerate?.addEventListener("click", async () => {
-          draftStatus.innerHTML = "";
-          // Quelle Text: Editor (falls offen) sonst lokaler Entwurf
-          const text = (editor.style.display !== "none") ? editor.value : loadLocalDraft();
-          if (!text || !text.trim()) {
-            alert("Kein Entwurfstext vorhanden. Bitte auf „Bearbeiten“ klicken, Text anpassen und speichern.");
-            return;
-          }
+  draftStatus.innerHTML = "";
+  // Textquelle: Editor (falls offen) sonst lokaler Entwurf
+  const text = (editor.style.display !== "none") ? editor.value : loadLocalDraft();
+  if (!text || !text.trim()) {
+    alert("Kein Entwurfstext vorhanden. Bitte auf „Bearbeiten“ klicken, Text anpassen und speichern.");
+    return;
+  }
 
-          const token = localStorage.getItem(TOKEN_KEY) || "";
-          if (!token) {
-            // Safe-Modus: Datei als Download + Upload-Seite öffnen
-            const fname = `Aias_birkenbihl_DRAFT_${Date.now()}.txt`;
-            const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
-            const url = URL.createObjectURL(blob);
-            // temporärer Download-Link
-            const a = document.createElement("a");
-            a.href = url; a.download = fname; document.body.appendChild(a); a.click();
-            setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 1000);
-            draftStatus.innerHTML = `📄 Entwurfsdatei <code>${fname}</code> gespeichert. Bitte hier hochladen: <a href="${DRAFT_UPLOAD_URL}" target="_blank">texte_drafts/</a>. Danach oben rechts „Entwurf“ wählen und „PDF aktualisieren“.`;
-            window.open(DRAFT_UPLOAD_URL, "_blank");
-            return;
-          }
+  try {
+    // 1) An Worker senden
+    draftStatus.innerHTML = "⬆️ Entwurf wird an den Build-Dienst gesendet…";
+    const res = await fetch(WORKER_URL + "/draft", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ work: "Aias", text })
+    });
+    const j = await res.json().catch(() => ({}));
+    if (!res.ok || !j.ok) {
+      throw new Error("Upload fehlgeschlagen: " + (j.error || res.status));
+    }
+    draftStatus.innerHTML = "✅ Entwurf angenommen. Build startet…";
 
-          // Pro-Modus: Automatischer Upload in texte_drafts via GitHub API
-          try {
-            draftStatus.innerHTML = "⬆️ Lade Entwurf hoch…";
-            const fname = `Aias_birkenbihl_DRAFT_${new Date().toISOString().replace(/[:\-T]/g,'').slice(0,15)}.txt`;
-            const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/texte_drafts/${fname}`;
-            const body = {
-              message: `draft: Aias birkenbihl (${fname})`,
-              content: toBase64Unicode(text),
-              branch: BRANCH
-            };
-            const res = await fetch(apiUrl, {
-              method: "PUT",
-              headers: {
-                "Authorization": "token " + token,
-                "Accept": "application/vnd.github+json",
-                "Content-Type": "application/json"
-              },
-              body: JSON.stringify(body)
-            });
+    // 2) Auf PDF warten & einblenden
+    const targetNormal = DRAFT_PDF_BASE + "Normal.pdf";
+    const targetFett   = DRAFT_PDF_BASE + "Fett.pdf";
+    const want = pdfFett.checked ? targetFett : targetNormal;
+
+    const ok = await waitForPdf(want, 24, 5000); // bis ~2 Minuten
+    if (ok) {
+      srcDraft.checked = true;
+      srcOriginal.checked = false;
+      updatePdfLinks(true);
+      draftStatus.innerHTML = '✅ Entwurfs-PDF aktualisiert.';
+    } else {
+      draftStatus.innerHTML = '⚠️ PDF noch nicht bereit. Bitte gleich „PDF aktualisieren“ klicken.';
+    }
+  } catch (e) {
+    draftStatus.innerHTML = `<span class="err">Fehler: ${e.message}</span>`;
+  }
+});
+
             if (!res.ok) {
               const t = await res.text();
               throw new Error(`Upload fehlgeschlagen (${res.status}): ${t}`);
