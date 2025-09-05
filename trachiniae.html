@@ -57,6 +57,7 @@ Konnte texte/Trachiniae.txt nicht laden. Liegt die Datei im Ordner texte/?</pre
       <section class="card" style="margin-top: 16px">
         <h2>Birkenbihl – Text</h2>
         <div class="pane-body">
+          <!-- ======= UPPER TRANSITION: Buttons-Erweiterung ======= -->
           <div class="split">
             <a class="btn" href="texte/Trachiniae_birkenbihl.txt" download
               >Herunterladen</a
@@ -72,7 +73,10 @@ Konnte texte/Trachiniae.txt nicht laden. Liegt die Datei im Ordner texte/?</pre
               download="Trachiniae_birkenbihl.txt"
               >Geänderte TXT herunterladen</a
             >
+            <!-- NEU: PDF-Button -->
+            <button class="btn" id="bb-pdf">PDF generieren</button>
           </div>
+          <!-- ======= LOWER TRANSITION: Buttons-Erweiterung ======= -->
 
           <!-- Vorschau (Standard) -->
           <object
@@ -108,24 +112,23 @@ Konnte texte/Trachiniae_birkenbihl.txt nicht laden. Liegt die Datei im Ordner te
     </div>
     <!-- ######## ENDE: Werkseite – Trachiniae ######## -->
 
-    <!-- ######## START: Skript – Bearbeiten-Modus ######## -->
+    <!-- ######## START: Skript – Bearbeiten + PDF ######## -->
     <script>
       (function () {
+        // Pfad zur Birkenbihl-TXT (werkspezifisch)
         const filePath = "texte/Trachiniae_birkenbihl.txt";
+
         const btnEdit = document.getElementById("bb-edit");
         const btnCancel = document.getElementById("bb-cancel");
         const btnSave = document.getElementById("bb-save");
+        const btnPdf = document.getElementById("bb-pdf");
         const view = document.getElementById("bb-view");
         const editor = document.getElementById("bb-editor");
 
         async function loadText(path) {
-          try {
-            const res = await fetch(path);
-            if (!res.ok) throw new Error("HTTP " + res.status);
-            return await res.text();
-          } catch (e) {
-            throw new Error("Laden fehlgeschlagen: " + e.message);
-          }
+          const res = await fetch(path, { cache: "no-store" });
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          return await res.text();
         }
 
         function showEditor(text) {
@@ -151,7 +154,8 @@ Konnte texte/Trachiniae_birkenbihl.txt nicht laden. Liegt die Datei im Ordner te
             showEditor(txt);
           } catch (e) {
             alert(
-              "Konnte die TXT nicht laden.\nTipp: Seite über http://localhost testen.\n\nFehler: " +
+              "Konnte die TXT nicht laden.\n" +
+                "Tipp: Seite über http://localhost testen.\n\nFehler: " +
                 e.message
             );
           }
@@ -169,8 +173,43 @@ Konnte texte/Trachiniae_birkenbihl.txt nicht laden. Liegt die Datei im Ordner te
           btnSave.href = url;
           setTimeout(() => URL.revokeObjectURL(url), 30000);
         });
-      })();
-    </script>
-    <!-- ######## ENDE: Skript ######## -->
-  </body>
-</html>
+
+        // PDF-Generierung (Druckansicht → "Als PDF speichern")
+        btnPdf?.addEventListener("click", async () => {
+          try {
+            const text =
+              editor.style.display !== "none" && editor.value?.length
+                ? editor.value
+                : await loadText(filePath);
+            openPrintView(text);
+          } catch (e) {
+            alert("PDF-Ansicht konnte nicht erstellt werden:\n" + e.message);
+          }
+        });
+
+        function openPrintView(rawText) {
+          const css = `
+            @page { margin: 16mm; }
+            body { font: 12px/1.45 ui-monospace, Menlo, Consolas, monospace; color:#000; }
+            h1 { font: 700 16px/1.2 system-ui, Segoe UI, Roboto, Arial, sans-serif; margin: 0 0 8px; }
+            .meta { color:#444; font: 12px system-ui, Segoe UI, Roboto, Arial, sans-serif; margin: 0 0 12px; }
+            pre { white-space: pre-wrap; word-wrap: break-word; }
+            .box { border:1px solid #ccc; padding:10px; border-radius:8px; background:#f7f7f7; }
+          `;
+          const title =
+            document.querySelector(".title")?.textContent?.trim() ||
+            "Birkenbihl-Text";
+          const win = window.open("", "_blank");
+          if (!win) throw new Error("Popup blockiert. Bitte Popups erlauben.");
+
+          win.document.open();
+          win.document.write(`<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>${escapeHtml(title)} – PDF</title>
+<style>${css}</style>
+</head>
+<body>
+  <h1>${escapeHtml(title)} – PDF-Export</h1>
+  <div class="me
