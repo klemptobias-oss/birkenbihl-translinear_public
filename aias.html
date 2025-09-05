@@ -26,7 +26,7 @@
       }
       .modal {
         background: #fff; border: 1px solid var(--edge); border-radius: 10px;
-        width: min(520px, 92vw); box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+        width: min(560px, 92vw); box-shadow: 0 10px 28px rgba(0,0,0,0.2);
       }
       .modal-header {
         display:flex; align-items:center; justify-content:space-between;
@@ -66,7 +66,7 @@
           <h2>Original – Rohtext</h2>
           <div class="pane-body">
             <div class="split">
-              <a class="btn" href="texte/Aias.txt" download>Herunterladen</a>
+              <a class="btn" href="texte/Aias.txt" download>Herunterladen (Original.txt)</a>
             </div>
             <object data="texte/Aias.txt" type="text/plain">
               <pre class="src">Konnte texte/Aias.txt nicht laden. Liegt die Datei im Ordner texte/?</pre>
@@ -136,11 +136,13 @@
 
           <!-- Button-Leiste -->
           <div class="split">
-            <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen (Original)</a>
+            <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen (Original.txt)</a>
 
             <button class="btn" id="bb-edit">Bearbeiten</button>
             <button class="btn" id="bb-cancel" style="display:none">Abbrechen</button>
-            <a class="btn" id="bb-save" style="display:none" download="Aias_birkenbihl_DRAFT.txt">Entwurf als TXT speichern</a>
+
+            <!-- Neuer, einheitlicher Entwurfs-Download -->
+            <button class="btn" id="bb-download-draft" title="Aktuellen Entwurf herunterladen (mit eindeutigem Code)">Herunterladen (Entwurf.txt)</button>
 
             <button class="btn" id="bb-reset" title="Nur den lokalen Entwurf löschen">Entwurf zurücksetzen</button>
             <button class="btn" id="bb-generate">PDF generieren (Entwurf)</button>
@@ -180,8 +182,9 @@
           <button class="modal-close" id="confirm-close" aria-label="Schließen">×</button>
         </div>
         <div class="modal-body">
-          <p>Dieser Schritt löscht <b>nur den lokalen Entwurf</b> in deinem Browser. Das Original in <code>texte/</code> bleibt unverändert.</p>
-          <p>Möchtest du fortfahren?</p>
+          <p>Dieser Schritt wird Ihren Entwurf <b>unwiderruflich löschen</b> und ihn auf den <b>Originalzustand</b> zurücksetzen.</p>
+          <p>Falls Sie Ihren Entwurf speichern möchten, klicken Sie auf <b>„Herunterladen (Entwurf.txt)“</b>. Sie können ihn dann auch offline bearbeiten und später neu hochladen.</p>
+          <p><b>Wollen Sie mit der Löschung Ihres Entwurfs fortfahren?</b></p>
         </div>
         <div class="modal-actions">
           <button class="btn secondary" id="confirm-cancel">Abbrechen</button>
@@ -198,7 +201,7 @@
         const OFFICIAL_PDF_BASE = "pdf/TragödieAias_";          // Normal/Fett
         const LOCAL_KEY = "draft_Aias_birkenbihl";              // localStorage Key für Entwurf
 
-        // *** HIER deine Worker-URL eintragen ***
+        // *** HIER ggf. deine Worker-URL anpassen ***
         const WORKER_URL = "https://birkenbihl-draft-01.klemp-tobias.workers.dev";
 
         // ====== Elemente ======
@@ -207,11 +210,7 @@
         const editor = document.getElementById("bb-editor");
         const btnEdit = document.getElementById("bb-edit");
         const btnCancel = document.getElementById("bb-cancel");
-        const btnSave = document.getElementById("bb-save");
-        const bbViewOrigRadio = document.getElementById("bbview-original");
-        const bbViewDraftRadio = document.getElementById("bbview-draft");
-        const saveDot = document.getElementById("save-dot");
-        const saveText = document.getElementById("save-text");
+        const btnDownloadDraft = document.getElementById("bb-download-draft");
         const btnGenerate = document.getElementById("bb-generate");
         const btnReset = document.getElementById("bb-reset");
         const draftStatus = document.getElementById("draft-status");
@@ -225,11 +224,18 @@
         const btnPdfDownload = document.getElementById("pdf-download");
         const btnPdfOpen = document.getElementById("pdf-open");
 
+        const bbViewOrigRadio = document.getElementById("bbview-original");
+        const bbViewDraftRadio = document.getElementById("bbview-draft");
+
         // Modal-Elemente
         const modalBackdrop = document.getElementById("confirm-backdrop");
         const modalClose = document.getElementById("confirm-close");
         const modalCancel = document.getElementById("confirm-cancel");
         const modalOk = document.getElementById("confirm-ok");
+
+        // Save-Indikator
+        const saveDot = document.getElementById("save-dot");
+        const saveText = document.getElementById("save-text");
 
         // ====== Helpers ======
         function setSaveState(state, msg) {
@@ -265,8 +271,21 @@
           return false;
         }
 
+        // SHA-256 (hex) – nutzt SubtleCrypto
+        async function sha256Hex(str){
+          const enc = new TextEncoder().encode(str);
+          const buf = await crypto.subtle.digest("SHA-256", enc);
+          const view = new Uint8Array(buf);
+          return Array.from(view).map(b=>b.toString(16).padStart(2,"0")).join("");
+        }
+        // „Abweichungs“-Code: Hash über Original + "|" + Entwurf (spiegelt Unterschiede)
+        async function diffCode(original, draft){
+          const hex = await sha256Hex((original||"") + "|" + (draft||""));
+          return hex.slice(0, 8); // kurzer, stabiler Code
+        }
+
         // ====== Editor / Ansicht ======
-        (function restoreDraft(){
+        (async function restoreDraft(){
           const d = loadLocalDraft();
           if (d) { bbViewDraft.textContent = d; draftStatus.innerHTML = '<span class="ok">Entwurf lokal wiederhergestellt.</span>'; }
         })();
@@ -278,7 +297,6 @@
           editor.style.display = "";
           btnEdit.style.display = "none";
           btnCancel.style.display = "";
-          btnSave.style.display = "";
           setSaveState("ready","Im Editor");
         }
         function hideEditor(){
@@ -286,7 +304,6 @@
           (bbViewDraftRadio.checked ? bbViewDraft : bbViewOriginal).style.display = "";
           btnEdit.style.display = "";
           btnCancel.style.display = "none";
-          btnSave.style.display = "none";
           setSaveState("ready","Bereit");
         }
 
@@ -317,14 +334,29 @@
           if (which==="draft"){ bbViewOriginal.style.display="none"; bbViewDraft.style.display=""; }
           else { bbViewDraft.style.display="none"; bbViewOriginal.style.display=""; }
         }
-        document.getElementById("bbview-original").addEventListener("change", ()=>setBBView("original"));
-        document.getElementById("bbview-draft").addEventListener("change", ()=>setBBView("draft"));
+        bbViewOrigRadio.addEventListener("change", ()=>setBBView("original"));
+        bbViewDraftRadio.addEventListener("change", ()=>setBBView("draft"));
 
-        // Entwurf als TXT speichern
-        btnSave.addEventListener("click", ()=>{
-          const blob = new Blob([editor.value??""], { type:"text/plain;charset=utf-8" });
-          const url = URL.createObjectURL(blob);
-          btnSave.href = url; setTimeout(()=>URL.revokeObjectURL(url), 30000);
+        // ====== Entwurf herunterladen (mit eindeutigem Code)
+        btnDownloadDraft.addEventListener("click", async ()=>{
+          const draftText = (editor.style.display!=="none") ? (editor.value||"") : loadLocalDraft();
+          if (!draftText.trim()){
+            alert("Kein Entwurf vorhanden. Bitte auf „Bearbeiten“ klicken, Text anpassen und speichern.");
+            return;
+          }
+          try {
+            const originalText = await fetchText("texte/Aias_birkenbihl.txt").catch(()=> "");
+            const code = await diffCode(originalText, draftText);
+            const fname = `Aias_birkenbihl_ENTWURF_${code}.txt`;
+            const blob = new Blob([draftText], { type: "text/plain;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url; a.download = fname;
+            document.body.appendChild(a); a.click();
+            setTimeout(()=>{ URL.revokeObjectURL(url); a.remove(); }, 1000);
+          } catch(e){
+            alert("Konnte Entwurf nicht herunterladen: " + e.message);
+          }
         });
 
         // ====== PDF-Einbettung steuern ======
@@ -348,8 +380,8 @@
           bbViewDraft.textContent = "";
           if (editor.style.display === "none") {
             // zurück auf Original-Ansicht
-            document.getElementById("bbview-original").checked = true;
-            document.getElementById("bbview-draft").checked = false;
+            bbViewOrigRadio.checked = true;
+            bbViewDraftRadio.checked = false;
             bbViewDraft.style.display = "none";
             bbViewOriginal.style.display = "";
           } else {
