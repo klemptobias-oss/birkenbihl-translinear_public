@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Aias – Werkseite</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .pdf-frame { width: 100%; height: 78vh; border: 1px solid var(--edge); background: #fafafa; }
+      .pdf-controls { display:flex; gap:8px; align-items:center; margin-bottom:8px; flex-wrap:wrap; }
+      .pdf-controls .muted { margin-left:auto; }
+      .radio { display:inline-flex; align-items:center; gap:6px; }
+    </style>
   </head>
   <body>
     <div class="wrap">
@@ -16,11 +22,11 @@
 
       <!-- Hinweis -->
       <div class="notice">
-        Oben links: <b>texte/Aias.txt</b> · Unten: <b>texte/Aias_birkenbihl.txt</b><br />
-        PDFs rechts: <b>pdf/TragödieAias_Normal.pdf</b> und <b>pdf/TragödieAias_Fett.pdf</b>
+        Links: <b>texte/Aias.txt</b> · Unten: <b>texte/Aias_birkenbihl.txt</b> ·
+        Rechts: eingebettetes PDF aus <b>pdf/TragödieAias_Normal.pdf</b> bzw. <b>…_Fett.pdf</b>
       </div>
 
-      <!-- Oben: Grid (links Original, rechts PDF-Links) -->
+      <!-- Oben: Grid (links Original, rechts PDF-Viewer) -->
       <div class="grid">
         <!-- Original (links) -->
         <section class="card">
@@ -35,17 +41,27 @@
           </div>
         </section>
 
-        <!-- PDFs (rechts) -->
+        <!-- PDF-Viewer (rechts) -->
         <section class="card">
           <h2>PDF</h2>
           <div class="pane-body">
-            <div class="split">
-              <a class="btn" href="pdf/TragödieAias_Normal.pdf" download>PDF Normal</a>
-              <a class="btn" href="pdf/TragödieAias_Fett.pdf" download>PDF Fett</a>
+            <div class="pdf-controls">
+              <span class="radio">
+                <input type="radio" name="pdfkind" id="pdf-normal" value="Normal" checked />
+                <label for="pdf-normal">Normal</label>
+              </span>
+              <span class="radio">
+                <input type="radio" name="pdfkind" id="pdf-fett" value="Fett" />
+                <label for="pdf-fett">Fett</label>
+              </span>
+              <button class="btn" id="pdf-refresh" title="PDF neu laden">PDF aktualisieren</button>
+              <a class="btn" href="pdf/TragödieAias_Normal.pdf" id="pdf-download" download>Aktuelles PDF herunterladen</a>
+              <span class="muted">PDF wird aus der Birkenbihl-Datei durch den Build erzeugt.</span>
             </div>
-            <p class="muted">
-              Diese PDFs werden automatisch aus der aktuellen Birkenbihl-Datei gebaut (GitHub-Actions).
-            </p>
+            <object id="pdf-frame" class="pdf-frame" type="application/pdf"
+              data="pdf/TragödieAias_Normal.pdf#view=FitH">
+              <p>PDF kann nicht eingebettet werden. <a href="pdf/TragödieAias_Normal.pdf" target="_blank">Hier öffnen</a>.</p>
+            </object>
           </div>
         </section>
       </div>
@@ -68,6 +84,10 @@
 
           <!-- Editor (unsichtbar bis „Bearbeiten“) -->
           <textarea id="bb-editor" class="src" style="display:none;width:100%;height:calc(70vh - 64px);border:1px solid var(--edge);background:#f7f7f7;"></textarea>
+
+          <div class="notice" style="margin-top:8px">
+            Änderungen werden lokal gespeichert (Download). Für neue PDFs: geänderte Datei im Repo unter <code>texte/</code> ersetzen → Build erzeugt neue PDFs → oben „PDF aktualisieren“.
+          </div>
         </div>
       </section>
 
@@ -77,9 +97,10 @@
       </div>
     </div>
 
-    <!-- Skript: Bearbeiten/Download der Birkenbihl-TXT -->
+    <!-- Skript: Bearbeiten/Download & PDF-Umschalter -->
     <script>
       (function () {
+        // --- Birkenbihl-Editor ---
         const filePath = "texte/Aias_birkenbihl.txt";
         const btnEdit = document.getElementById("bb-edit");
         const btnCancel = document.getElementById("bb-cancel");
@@ -118,8 +139,33 @@
           btnSave.href = url;
           setTimeout(() => URL.revokeObjectURL(url), 30000);
         });
+
+        // --- PDF-Umschalter / Aktualisieren ---
+        const pdfFrame = document.getElementById("pdf-frame");
+        const pdfNormal = document.getElementById("pdf-normal");
+        const pdfFett = document.getElementById("pdf-fett");
+        const btnRefresh = document.getElementById("pdf-refresh");
+        const btnPdfDownload = document.getElementById("pdf-download");
+
+        function currentPdfPath() {
+          const base = "pdf/TragödieAias_";
+          const kind = pdfFett.checked ? "Fett" : "Normal";
+          return base + kind + ".pdf";
+        }
+        function loadPdf(bust=false) {
+          const url = currentPdfPath();
+          const withHash = url + "#view=FitH";
+          const finalUrl = bust ? (url + "?t=" + Date.now() + "#view=FitH") : withHash;
+          pdfFrame.setAttribute("data", finalUrl);
+          btnPdfDownload.setAttribute("href", url);
+        }
+        pdfNormal.addEventListener("change", () => loadPdf(true));
+        pdfFett.addEventListener("change", () => loadPdf(true));
+        btnRefresh.addEventListener("click", () => loadPdf(true));
+
+        // Initial laden
+        loadPdf(false);
       })();
     </script>
   </body>
 </html>
-
