@@ -10,8 +10,16 @@
       .pdf-controls { display:flex; gap:8px; align-items:center; margin-bottom:8px; flex-wrap:wrap; }
       .pdf-controls .muted { margin-left:auto; }
       .radio { display:inline-flex; align-items:center; gap:6px; }
-      ol { padding-left: 1.2rem; }
       .src { white-space: pre; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 0.92rem; line-height: 1.35; }
+      .small { font-size: 0.85em; color: var(--muted); }
+      .ok { color: #2a7; }
+      .warn { color: #c71; }
+      .err { color: #c33; }
+      .save-dot { width:8px; height:8px; border-radius:50%; display:inline-block; margin-right:6px; background:#aaa; vertical-align:middle; }
+      .save-dot.ok { background:#2a7; }
+      .save-dot.busy { background:#c71; }
+      details.settings { margin-top:8px; }
+      details.settings summary { cursor:pointer; }
     </style>
   </head>
   <body>
@@ -24,8 +32,8 @@
 
       <!-- Hinweis -->
       <div class="notice">
-        Links: <b>texte/Aias.txt</b> · Unten: <b>texte/Aias_birkenbihl.txt</b> ·
-        Rechts: eingebettetes PDF (Quelle: <b>Original</b> oder <b>Entwurf</b>, Darstellung: <b>Normal</b>/<b>Fett</b>)
+        Links: <b>texte/Aias.txt</b> · Unten: <b>texte/Aias_birkenbihl.txt</b> (Original) und <b>Entwurf</b> (deine Live-Version) ·
+        Rechts: eingebettetes PDF (Quelle: <b>Original</b>/<b>Entwurf</b>, Darstellung: <b>Normal</b>/<b>Fett</b>)
       </div>
 
       <!-- Oben: Grid (links Original, rechts PDF-Viewer) -->
@@ -70,22 +78,40 @@
 
               <button class="btn" id="pdf-refresh" title="PDF neu laden">PDF aktualisieren</button>
               <a class="btn" href="pdf/TragödieAias_Normal.pdf" id="pdf-download" download>Aktuelles PDF herunterladen</a>
+              <a class="btn" href="pdf/TragödieAias_Normal.pdf" id="pdf-open" target="_blank">Im neuen Tab öffnen</a>
 
               <span class="muted">PDF wird aus der Birkenbihl-Datei durch den Build erzeugt.</span>
             </div>
 
             <object id="pdf-frame" class="pdf-frame" type="application/pdf"
               data="pdf/TragödieAias_Normal.pdf#view=FitH">
-              <p>PDF kann nicht eingebettet werden. <a href="pdf/TragödieAias_Normal.pdf" target="_blank">Hier öffnen</a>.</p>
+              <p>PDF kann nicht eingebettet werden.</p>
             </object>
           </div>
         </section>
       </div>
 
-      <!-- Unten: Birkenbihl-TXT mit Bearbeiten-/Entwurfsmodus -->
+      <!-- Unten: Birkenbihl-TXT mit Toggle Original/Entwurf, Editor, Autosave, PDF-Generieren -->
       <section class="card" style="margin-top: 16px">
         <h2>Birkenbihl – Text</h2>
         <div class="pane-body">
+          <!-- Anzeige-Umschalter -->
+          <div class="pdf-controls" style="margin-bottom:6px">
+            <span class="radio">
+              <input type="radio" name="bbview" id="bbview-original" value="original" checked />
+              <label for="bbview-original">Original ansehen</label>
+            </span>
+            <span class="radio">
+              <input type="radio" name="bbview" id="bbview-draft" value="draft" />
+              <label for="bbview-draft">Entwurf ansehen</label>
+            </span>
+
+            <span class="small" id="save-indicator" style="margin-left:auto">
+              <span class="save-dot" id="save-dot"></span><span id="save-text">Bereit</span>
+            </span>
+          </div>
+
+          <!-- Button-Leiste -->
           <div class="split">
             <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen (Original)</a>
 
@@ -93,28 +119,37 @@
             <button class="btn" id="bb-cancel" style="display:none">Abbrechen</button>
             <a class="btn" id="bb-save" style="display:none" download="Aias_birkenbihl_DRAFT.txt">Entwurf als TXT speichern</a>
 
-            <!-- Leitfaden: Entwurfs-PDF erzeugen -->
-            <button class="btn" id="bb-draft-guide">PDF generieren (Entwurf)</button>
+            <button class="btn" id="bb-generate">PDF generieren (Entwurf)</button>
           </div>
 
-          <!-- Vorschau -->
-          <object id="bb-view" data="texte/Aias_birkenbihl.txt" type="text/plain">
+          <!-- Original-Ansicht -->
+          <object id="bb-view-original" data="texte/Aias_birkenbihl.txt" type="text/plain">
             <pre class="src">Konnte texte/Aias_birkenbihl.txt nicht laden. Liegt die Datei im Ordner texte/?</pre>
           </object>
 
-          <!-- Editor (unsichtbar bis „Bearbeiten“) -->
-          <textarea id="bb-editor" class="src" style="display:none;width:100%;height:calc(70vh - 64px);border:1px solid var(--edge);background:#f7f7f7;"></textarea>
+          <!-- Entwurfs-Ansicht -->
+          <pre id="bb-view-draft" class="src" style="display:none; background:#f8f8f8; border:1px solid var(--edge); padding:8px; height:40vh; overflow:auto;"></pre>
 
-          <!-- Schritt-für-Schritt-Anleitung für Draft-Build -->
-          <div id="draft-steps" class="notice" style="display:none; margin-top:8px">
-            <b>So erzeugst du dein Entwurfs-PDF, ohne das Original zu verändern:</b>
-            <ol>
-              <li>Klicke oben auf <i>„Entwurf als TXT speichern“</i> (lädt <code>Aias_birkenbihl_DRAFT.txt</code> herunter).</li>
-              <li>Öffne den Upload-Ordner <a href="https://github.com/klemptobias-oss/birkenbihl-translinear_public/upload/main/texte_drafts" target="_blank">texte_drafts/</a> und lade diese Datei hoch → <i>Commit changes</i>.</li>
-              <li>Warte, bis der Draft-Workflow gelaufen ist (Reiter <i>Actions</i>). Dann oben rechts im PDF-Bereich <b>„Entwurf“</b> wählen und auf <b>„PDF aktualisieren“</b> klicken.</li>
-            </ol>
-            Die fertigen Entwurfs-PDFs werden unter <code>pdf_drafts/</code> abgelegt und heißen <code>Aias_DRAFT_LATEST_Normal.pdf</code> bzw. <code>…_Fett.pdf</code>.
-          </div>
+          <!-- Editor (unsichtbar bis „Bearbeiten“) -->
+          <textarea id="bb-editor" class="src" style="display:none;width:100%;height:calc(70vh - 64px);border:1px solid var(--edge);background:#fff;"></textarea>
+
+          <!-- Leitfaden/Automatik (optional) -->
+          <details class="settings">
+            <summary>Erweiterte Automatik (optional): GitHub-Token lokal hinterlegen, um <i>PDF generieren</i> ohne manuellen Upload auszuführen</summary>
+            <div class="small" style="margin-top:6px">
+              <p>Optional kannst du ein GitHub-Token (nur für dieses Repo) lokal im Browser speichern. Dann lädt „PDF generieren“ deinen Entwurf
+              automatisch nach <code>texte_drafts/</code> hoch und stößt den Build an.</p>
+              <label>GitHub Token:
+                <input id="gh-token" type="password" style="width:340px" placeholder="ghp_… (nur Inhalte-Rechte für dieses Repo)" />
+              </label>
+              <button class="btn" id="tok-save">Token speichern</button>
+              <button class="btn" id="tok-clear">Token löschen</button>
+              <span id="tok-status" class="small"></span>
+              <p class="warn">Sicherheit: Das Token wird nur in deinem Browser (localStorage) gehalten und bei Bedarf an die GitHub-API gesendet. Nicht auf fremden Geräten verwenden.</p>
+            </div>
+          </details>
+
+          <div id="draft-status" class="small" style="margin-top:8px"></div>
 
           <div class="notice" style="margin-top:8px">
             Hinweis: Der Entwurfsweg lässt das Original in <code>texte/</code> unberührt. Für „offizielle“ PDFs (im Ordner <code>pdf/</code>)
@@ -129,57 +164,34 @@
       </div>
     </div>
 
-    <!-- Skript: Editor, Draft-Leitfaden & PDF-Umschalter -->
+    <!-- Skript: Toggle/Autosave/Generieren + optionaler Auto-Upload -->
     <script>
       (function () {
-        // --- Birkenbihl-Editor ---
-        const filePath = "texte/Aias_birkenbihl.txt";
+        // ====== Repo-Konfiguration (an dein Repo angepasst) ======
+        const OWNER = "klemptobias-oss";
+        const REPO  = "birkenbihl-translinear_public";
+        const BRANCH = "main";
+        const DRAFT_UPLOAD_URL = `https://github.com/${OWNER}/${REPO}/upload/${BRANCH}/texte_drafts`;
+        const ACTIONS_URL = `https://github.com/${OWNER}/${REPO}/actions/workflows/tragoedie-build-drafts.yml`;
+        const DRAFT_PDF_BASE = "pdf_drafts/Aias_DRAFT_LATEST_"; // Normal/Fett
+        const OFFICIAL_PDF_BASE = "pdf/TragödieAias_"; // Normal/Fett
+        const LOCAL_KEY = "draft_Aias_birkenbihl"; // localStorage Key für Entwurf
+        const TOKEN_KEY = "gh_pat_for_" + OWNER + "_" + REPO;
+
+        // ====== Elemente ======
+        const bbViewOriginal = document.getElementById("bb-view-original");
+        const bbViewDraft = document.getElementById("bb-view-draft");
+        const editor = document.getElementById("bb-editor");
         const btnEdit = document.getElementById("bb-edit");
         const btnCancel = document.getElementById("bb-cancel");
         const btnSave = document.getElementById("bb-save");
-        const view = document.getElementById("bb-view");
-        const editor = document.getElementById("bb-editor");
+        const bbViewOrigRadio = document.getElementById("bbview-original");
+        const bbViewDraftRadio = document.getElementById("bbview-draft");
+        const saveDot = document.getElementById("save-dot");
+        const saveText = document.getElementById("save-text");
+        const btnGenerate = document.getElementById("bb-generate");
+        const draftStatus = document.getElementById("draft-status");
 
-        async function loadText(path) {
-          const res = await fetch(path, { cache: "no-store" });
-          if (!res.ok) throw new Error("HTTP " + res.status);
-          return await res.text();
-        }
-        function showEditor(text) {
-          editor.value = text;
-          view.style.display = "none";
-          editor.style.display = "";
-          btnEdit.style.display = "none";
-          btnCancel.style.display = "";
-          btnSave.style.display = "";
-        }
-        function showView() {
-          editor.style.display = "none";
-          view.style.display = "";
-          btnEdit.style.display = "";
-          btnCancel.style.display = "none";
-          btnSave.style.display = "none";
-        }
-        btnEdit?.addEventListener("click", async () => {
-          try { showEditor(await loadText(filePath)); }
-          catch (e) { alert("Konnte die TXT nicht laden.\nFehler: " + e.message); }
-        });
-        btnCancel?.addEventListener("click", showView);
-        btnSave?.addEventListener("click", () => {
-          const blob = new Blob([editor.value], { type: "text/plain;charset=utf-8" });
-          const url = URL.createObjectURL(blob);
-          btnSave.href = url;
-          setTimeout(() => URL.revokeObjectURL(url), 30000);
-        });
-
-        // Draft-Leitfaden ein-/ausblenden
-        const btnDraftGuide = document.getElementById("bb-draft-guide");
-        const draftSteps = document.getElementById("draft-steps");
-        btnDraftGuide?.addEventListener("click", () => {
-          draftSteps.style.display = draftSteps.style.display === "none" ? "" : "none";
-        });
-
-        // --- PDF-Umschalter / Aktualisieren ---
         const pdfFrame = document.getElementById("pdf-frame");
         const pdfNormal = document.getElementById("pdf-normal");
         const pdfFett = document.getElementById("pdf-fett");
@@ -187,32 +199,246 @@
         const srcDraft = document.getElementById("src-draft");
         const btnRefresh = document.getElementById("pdf-refresh");
         const btnPdfDownload = document.getElementById("pdf-download");
+        const btnPdfOpen = document.getElementById("pdf-open");
+
+        // Token-UI
+        const tokInput = document.getElementById("gh-token");
+        const tokSave = document.getElementById("tok-save");
+        const tokClear = document.getElementById("tok-clear");
+        const tokStatus = document.getElementById("tok-status");
+
+        // ====== Helpers ======
+        function setSaveState(state, msg) {
+          // state: "ready" | "busy" | "ok"
+          saveDot.classList.remove("ok", "busy");
+          if (state === "busy") saveDot.classList.add("busy");
+          if (state === "ok") saveDot.classList.add("ok");
+          saveText.textContent = msg || (state === "ok" ? "Gespeichert" : state === "busy" ? "Speichere…" : "Bereit");
+        }
+
+        function loadLocalDraft() {
+          return localStorage.getItem(LOCAL_KEY) || "";
+        }
+        function saveLocalDraft(text) {
+          localStorage.setItem(LOCAL_KEY, text || "");
+        }
+
+        // Unicode-sichere Base64
+        function toBase64Unicode(str) {
+          const bytes = new TextEncoder().encode(str || "");
+          let bin = "";
+          bytes.forEach(b => bin += String.fromCharCode(b));
+          return btoa(bin);
+        }
 
         function currentPdfPath() {
           const kind = pdfFett.checked ? "Fett" : "Normal";
           const useDraft = srcDraft.checked;
-          if (useDraft) {
-            // Entwurfs-PDFs (LATEST-Alias aus dem Draft-Workflow)
-            return `pdf_drafts/Aias_DRAFT_LATEST_${kind}.pdf`;
+          return (useDraft ? DRAFT_PDF_BASE : OFFICIAL_PDF_BASE) + kind + ".pdf";
+        }
+        function updatePdfLinks(bust=false) {
+          const url = currentPdfPath();
+          const bustUrl = url + (bust ? ("?t=" + Date.now()) : "");
+          pdfFrame.setAttribute("data", bustUrl + "#view=FitH");
+          btnPdfDownload.setAttribute("href", url);
+          btnPdfOpen.setAttribute("href", url);
+        }
+
+        async function fetchText(path) {
+          const res = await fetch(path, { cache: "no-store" });
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          return await res.text();
+        }
+
+        // ====== Editor / Ansicht ======
+        // Vorhandenen Draft wiederherstellen
+        (function restoreDraft() {
+          const draft = loadLocalDraft();
+          if (draft) {
+            bbViewDraft.textContent = draft;
+            draftStatus.innerHTML = '<span class="ok">Entwurf aus lokalem Speicher wiederhergestellt.</span>';
+          }
+        })();
+
+        function showEditor(text) {
+          editor.value = text;
+          bbViewOriginal.style.display = "none";
+          bbViewDraft.style.display = "none";
+          editor.style.display = "";
+          btnEdit.style.display = "none";
+          btnCancel.style.display = "";
+          btnSave.style.display = "";
+          setSaveState("ready", "Im Editor");
+        }
+        function hideEditor() {
+          editor.style.display = "none";
+          (bbViewDraftRadio.checked ? bbViewDraft : bbViewOriginal).style.display = "";
+          btnEdit.style.display = "";
+          btnCancel.style.display = "none";
+          btnSave.style.display = "none";
+          setSaveState("ready", "Bereit");
+        }
+
+        btnEdit?.addEventListener("click", async () => {
+          setSaveState("busy");
+          try {
+            // Bevorzugt aktuellen Entwurf öffnen, sonst Original laden
+            const draft = loadLocalDraft();
+            const text = draft || await fetchText("texte/Aias_birkenbihl.txt");
+            showEditor(text);
+            setSaveState("ready", draft ? "Entwurf bearbeiten" : "Original bearbeiten");
+          } catch (e) {
+            setSaveState("ready");
+            alert("Konnte Text nicht laden.\nFehler: " + e.message);
+          }
+        });
+        btnCancel?.addEventListener("click", hideEditor);
+
+        // Autosave + Live-Entwurfsansicht
+        let saveTimer = null;
+        editor.addEventListener("input", () => {
+          setSaveState("busy");
+          const val = editor.value;
+          bbViewDraft.textContent = val;
+          if (saveTimer) clearTimeout(saveTimer);
+          saveTimer = setTimeout(() => {
+            saveLocalDraft(val);
+            setSaveState("ok", "Gespeichert");
+          }, 300);
+        });
+
+        // Umschalter Original/Entwurf ansehen
+        function setBBView(which) {
+          if (editor.style.display !== "none") return; // im Editor nicht umschalten
+          if (which === "draft") {
+            bbViewOriginal.style.display = "none";
+            bbViewDraft.style.display = "";
           } else {
-            // Offizielle PDFs (Haupt-Workflow)
-            return `pdf/TragödieAias_${kind}.pdf`;
+            bbViewDraft.style.display = "none";
+            bbViewOriginal.style.display = "";
           }
         }
-        function loadPdf(bust=false) {
-          const url = currentPdfPath();
-          const finalUrl = bust ? (url + "?t=" + Date.now() + "#view=FitH") : (url + "#view=FitH");
-          pdfFrame.setAttribute("data", finalUrl);
-          btnPdfDownload.setAttribute("href", url);
-        }
+        bbViewOrigRadio.addEventListener("change", () => setBBView("original"));
+        bbViewDraftRadio.addEventListener("change", () => setBBView("draft"));
 
-        [pdfNormal, pdfFett, srcOriginal, srcDraft].forEach(el => {
-          el?.addEventListener("change", () => loadPdf(true));
+        // Entwurf als TXT speichern
+        btnSave?.addEventListener("click", () => {
+          const text = editor.value ?? "";
+          const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+          const url = URL.createObjectURL(blob);
+          btnSave.href = url;
+          setTimeout(() => URL.revokeObjectURL(url), 30000);
         });
-        btnRefresh.addEventListener("click", () => loadPdf(true));
 
-        // Initial laden
-        loadPdf(false);
+        // ====== PDF-Einbettung steuern ======
+        [pdfNormal, pdfFett, srcOriginal, srcDraft].forEach(el => {
+          el?.addEventListener("change", () => updatePdfLinks(true));
+        });
+        btnRefresh.addEventListener("click", () => updatePdfLinks(true));
+        updatePdfLinks(false);
+
+        // ====== Optional: Token-Automatik ======
+        // Lade evtl. gespeichertes Token
+        const savedTok = localStorage.getItem(TOKEN_KEY) || "";
+        if (savedTok) { tokInput.value = "********"; tokStatus.textContent = "Token vorhanden (lokal)."; }
+        tokSave?.addEventListener("click", () => {
+          const v = tokInput.value.trim();
+          if (!v || v === "********") { tokStatus.textContent = "Kein neues Token eingegeben."; return; }
+          localStorage.setItem(TOKEN_KEY, v);
+          tokInput.value = "********";
+          tokStatus.innerHTML = '<span class="ok">Token gespeichert (nur lokal).</span>';
+        });
+        tokClear?.addEventListener("click", () => {
+          localStorage.removeItem(TOKEN_KEY);
+          tokInput.value = "";
+          tokStatus.innerHTML = '<span class="ok">Token gelöscht.</span>';
+        });
+
+        // ====== PDF generieren (Entwurf) ======
+        btnGenerate?.addEventListener("click", async () => {
+          draftStatus.innerHTML = "";
+          // Quelle Text: Editor (falls offen) sonst lokaler Entwurf
+          const text = (editor.style.display !== "none") ? editor.value : loadLocalDraft();
+          if (!text || !text.trim()) {
+            alert("Kein Entwurfstext vorhanden. Bitte auf „Bearbeiten“ klicken, Text anpassen und speichern.");
+            return;
+          }
+
+          const token = localStorage.getItem(TOKEN_KEY) || "";
+          if (!token) {
+            // Safe-Modus: Datei als Download + Upload-Seite öffnen
+            const fname = `Aias_birkenbihl_DRAFT_${Date.now()}.txt`;
+            const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            // temporärer Download-Link
+            const a = document.createElement("a");
+            a.href = url; a.download = fname; document.body.appendChild(a); a.click();
+            setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 1000);
+            draftStatus.innerHTML = `📄 Entwurfsdatei <code>${fname}</code> gespeichert. Bitte hier hochladen: <a href="${DRAFT_UPLOAD_URL}" target="_blank">texte_drafts/</a>. Danach oben rechts „Entwurf“ wählen und „PDF aktualisieren“.`;
+            window.open(DRAFT_UPLOAD_URL, "_blank");
+            return;
+          }
+
+          // Pro-Modus: Automatischer Upload in texte_drafts via GitHub API
+          try {
+            draftStatus.innerHTML = "⬆️ Lade Entwurf hoch…";
+            const fname = `Aias_birkenbihl_DRAFT_${new Date().toISOString().replace(/[:\-T]/g,'').slice(0,15)}.txt`;
+            const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/texte_drafts/${fname}`;
+            const body = {
+              message: `draft: Aias birkenbihl (${fname})`,
+              content: toBase64Unicode(text),
+              branch: BRANCH
+            };
+            const res = await fetch(apiUrl, {
+              method: "PUT",
+              headers: {
+                "Authorization": "token " + token,
+                "Accept": "application/vnd.github+json",
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(body)
+            });
+            if (!res.ok) {
+              const t = await res.text();
+              throw new Error(`Upload fehlgeschlagen (${res.status}): ${t}`);
+            }
+            draftStatus.innerHTML = `✅ Entwurf hochgeladen. <a href="${ACTIONS_URL}" target="_blank">Build wird gestartet…</a>`;
+
+            // Einfaches Polling: warte bis LATEST-PDF erreichbar, dann neu laden
+            const targetNormal = DRAFT_PDF_BASE + "Normal.pdf";
+            const targetFett   = DRAFT_PDF_BASE + "Fett.pdf";
+            const want = pdfFett.checked ? targetFett : targetNormal;
+
+            const ok = await waitForPdf(want, 24, 5_000); // bis zu ~2 min
+            if (ok) {
+              // auf Entwurf umschalten & neu laden
+              srcDraft.checked = true;
+              srcOriginal.checked = false;
+              updatePdfLinks(true);
+              draftStatus.innerHTML = draftStatus.innerHTML + ' – <span class="ok">PDF aktualisiert.</span>';
+            } else {
+              draftStatus.innerHTML = draftStatus.innerHTML + ' – <span class="warn">PDF noch nicht bereit. Probiere „PDF aktualisieren“ in Kürze.</span>';
+            }
+          } catch (e) {
+            draftStatus.innerHTML = `<span class="err">Fehler: ${e.message}</span>`;
+          }
+        });
+
+        async function waitForPdf(url, attempts, delayMs) {
+          for (let i=0; i<attempts; i++) {
+            try {
+              const res = await fetch(url + "?check=" + Date.now(), { method: "HEAD", cache: "no-store" });
+              if (res.ok) return true;
+            } catch {}
+            await new Promise(r => setTimeout(r, delayMs));
+          }
+          return false;
+        }
+      })();
+    </script>
+  </body>
+</html>
+
       })();
     </script>
   </body>
