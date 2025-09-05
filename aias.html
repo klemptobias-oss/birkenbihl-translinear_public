@@ -6,81 +6,58 @@
     <title>Aias – Werkseite</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      :root{
-        --gap: 14px;
-      }
+      :root{ --gap:14px; }
 
       /* PDF oben rechts */
-      .pdf-frame { width: 100%; height: 78vh; border: 1px solid var(--edge); background: #fafafa; }
+      .pdf-frame { width:100%; height:78vh; border:1px solid var(--edge); background:#fafafa; }
       .pdf-controls { display:flex; gap:8px; align-items:center; margin-bottom:8px; flex-wrap:wrap; }
       .pdf-controls .muted { margin-left:auto; }
       .radio { display:inline-flex; align-items:center; gap:6px; }
 
       /* Textdarstellung */
-      .src { white-space: pre; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 0.92rem; line-height: 1.35; }
-
-      .small { font-size: 0.85em; color: var(--muted); }
-      .ok { color: #2a7; }
-      .warn { color: #c71; }
-      .err { color: #c33; }
+      .src { white-space: pre; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size:0.95rem; line-height:1.4; }
+      .small { font-size:0.85em; color:var(--muted); }
+      .ok { color:#2a7; } .warn { color:#c71; } .err { color:#c33; }
       .save-dot { width:8px; height:8px; border-radius:50%; display:inline-block; margin-right:6px; background:#aaa; vertical-align:middle; }
-      .save-dot.ok { background:#2a7; }
-      .save-dot.busy { background:#c71; }
+      .save-dot.ok { background:#2a7; } .save-dot.busy { background:#c71; }
 
-      /* Zweispaltiges, breites Layout für Birkenbihl-Text */
-      .card-wide { width: 100%; }
-      .bb-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: var(--gap);
-      }
-      .pane {
-        border: 1px solid var(--edge);
-        background: #fff;
-        border-radius: 8px;
-      }
-      .pane h3 {
-        margin: 0;
-        padding: 10px 12px;
-        border-bottom: 1px solid var(--edge);
-      }
-      .pane-body {
-        padding: 10px 12px;
-      }
+      /* Unten: breites, zweispaltiges Layout */
+      .card-wide { width:100%; }
+      .bb-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--gap); }
+      .pane { border:1px solid var(--edge); background:#fff; border-radius:8px; }
+      .pane h3 { margin:0; padding:10px 12px; border-bottom:1px solid var(--edge); }
+      .pane-body { padding:10px 12px; }
       .pane-body .split { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:8px; }
-      .pane-body .srcbox {
-        background:#f8f8f8; border:1px solid var(--edge); padding:8px; height: 40vh; overflow:auto;
-      }
-      .pane-body .editor {
-        width: 100%; height: 40vh; border:1px solid var(--edge); background:#fff;
-        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-        font-size: 0.92rem; line-height:1.35; padding:8px;
-      }
+      .srcbox { background:#f8f8f8; border:1px solid var(--edge); padding:8px; height:52vh; overflow:auto; }
+      .editor { width:100%; height:52vh; border:1px solid var(--edge); background:#fff; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size:0.95rem; line-height:1.4; padding:8px; }
 
-      /* Modal (Bestätigung) */
-      .modal-backdrop {
-        position: fixed; inset: 0; background: rgba(0,0,0,0.45);
-        display: none; align-items: center; justify-content: center; z-index: 1000;
-      }
-      .modal {
-        background: #fff; border: 1px solid var(--edge); border-radius: 10px;
-        width: min(560px, 92vw); box-shadow: 0 10px 28px rgba(0,0,0,0.2);
-      }
-      .modal-header {
-        display:flex; align-items:center; justify-content:space-between;
-        padding:12px 14px; border-bottom:1px solid var(--edge);
-      }
+      /* Modal (Bestätigung Zurücksetzen) */
+      .modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.45); display:none; align-items:center; justify-content:center; z-index:1000; }
+      .modal { background:#fff; border:1px solid var(--edge); border-radius:10px; width:min(560px,92vw); box-shadow:0 10px 28px rgba(0,0,0,0.2); }
+      .modal-header { display:flex; align-items:center; justify-content:space-between; padding:12px 14px; border-bottom:1px solid var(--edge); }
       .modal-title { font-weight:600; }
-      .modal-close {
-        appearance:none; border:none; background:transparent; font-size: 18px; line-height:1;
-        cursor:pointer; padding:4px 6px;
-      }
-      .modal-body { padding: 14px; }
-      .modal-actions {
-        display:flex; gap:8px; justify-content:flex-end; padding:12px 14px; border-top:1px solid var(--edge);
-      }
-      .btn.secondary { background:#eee; color:#333; }
-      .btn.danger { background:#b5242a; color:#fff; }
+      .modal-close { appearance:none; border:none; background:transparent; font-size:18px; line-height:1; cursor:pointer; padding:4px 6px; }
+      .modal-body { padding:14px; }
+      .modal-actions { display:flex; gap:8px; justify-content:flex-end; padding:12px 14px; border-top:1px solid var(--edge); }
+      .btn.secondary { background:#eee; color:#333; } .btn.danger { background:#b5242a; color:#fff; }
+
+      /* Modal (PDF-Optionen) */
+      .opt-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.45); display:none; align-items:center; justify-content:center; z-index:1000; }
+      .opt-modal { background:#fff; border:1px solid var(--edge); border-radius:10px; width:min(640px,96vw); max-height:92vh; overflow:auto; box-shadow:0 10px 28px rgba(0,0,0,0.2); }
+      .opt-header { display:flex; align-items:center; justify-content:space-between; padding:12px 14px; border-bottom:1px solid var(--edge); }
+      .opt-title { font-weight:600; }
+      .opt-body { padding:14px; display:grid; grid-template-columns:1fr; gap:12px; }
+      .opt-section { border:1px dashed var(--edge); border-radius:8px; padding:10px; }
+      .opt-row { display:flex; flex-direction:column; gap:8px; }
+      .opt-check { display:flex; align-items:center; gap:8px; }
+      .opt-color-chip { display:inline-block; padding:2px 6px; border-radius:6px; font-weight:600; }
+      .chip-red { background:#ffd9d9; color:#b40000; }
+      .chip-green { background:#dcffe5; color:#0f6b2b; }
+      .chip-blue { background:#dbeaff; color:#0a3f91; }
+      .opt-actions { display:flex; gap:8px; justify-content:flex-end; padding:12px 14px; border-top:1px solid var(--edge); }
+      .opt-toggle-adv { margin-top:6px; }
+      details.opt-adv summary { cursor:pointer; font-weight:600; }
+      .muted-note { color:var(--muted); font-size:0.9em; }
     </style>
   </head>
   <body>
@@ -167,12 +144,11 @@
             <div class="pane-body">
               <div class="split">
                 <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen (Original.txt)</a>
-                <!-- PDF-Button (Original): schaltet oben die PDF-Quelle um und lädt neu -->
+                <!-- PDF-Button (Original): öffnet Optionen, schaltet oben auf Original um -->
                 <button class="btn" id="bb-generate-original" title="PDF-Quelle oben auf Original stellen und neu laden">PDF generieren</button>
               </div>
-              <object id="bb-view-original" data="texte/Aias_birkenbihl.txt" type="text/plain">
-                <pre class="src srcbox">Konnte texte/Aias_birkenbihl.txt nicht laden. Liegt die Datei im Ordner texte/?</pre>
-              </object>
+              <!-- Neu: Original als <pre> für gleiche Schrift/Größe -->
+              <pre id="bb-original-pre" class="src srcbox">Lade Original…</pre>
             </div>
           </div>
 
@@ -186,6 +162,7 @@
                 <button class="btn" id="bb-download-draft" title="Aktuellen Entwurf herunterladen (mit eindeutigem Code)">Herunterladen (Entwurf.txt)</button>
 
                 <button class="btn" id="bb-reset" title="Nur den lokalen Entwurf löschen">Entwurf zurücksetzen</button>
+                <!-- PDF-Button (Entwurf): öffnet Optionen + wirkliche Generierung -->
                 <button class="btn" id="bb-generate-draft" title="Entwurf als PDF bauen (Cloud-Worker)">PDF generieren</button>
               </div>
 
@@ -210,7 +187,7 @@
       </div>
     </div>
 
-    <!-- Bestätigungs-Modal -->
+    <!-- Bestätigungs-Modal: Entwurf zurücksetzen -->
     <div id="confirm-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="confirm-title" aria-hidden="true">
       <div class="modal" role="document">
         <div class="modal-header">
@@ -229,11 +206,78 @@
       </div>
     </div>
 
+    <!-- Modal: PDF-Optionen -->
+    <div id="opt-backdrop" class="opt-backdrop" role="dialog" aria-modal="true" aria-labelledby="opt-title" aria-hidden="true">
+      <div class="opt-modal" role="document">
+        <div class="opt-header">
+          <div id="opt-title" class="opt-title">PDF-Optionen</div>
+          <button class="modal-close" id="opt-close" aria-label="Schließen">×</button>
+        </div>
+        <div class="opt-body">
+          <!-- Basisoptionen -->
+          <div class="opt-section">
+            <div class="opt-row">
+              <label class="opt-check">
+                <input type="checkbox" id="opt-colors" checked />
+                <span>Farben zeigen</span>
+              </label>
+              <label class="opt-check">
+                <input type="checkbox" id="opt-tags" checked />
+                <span>Grammatikürzel zeigen</span>
+              </label>
+              <div class="muted-note">Tipp: Für Schwarz-Weiß die Farben abwählen; für „reine Birkenbihl“ die Grammatikürzel abwählen.</div>
+            </div>
+          </div>
+
+          <!-- Benutzerdefiniert (aufklappbar) -->
+          <details class="opt-adv" id="opt-adv">
+            <summary>Benutzerdefiniert</summary>
+            <div class="opt-section" style="margin-top:10px">
+              <div class="opt-row">
+                <div><b>Farbregeln (Beispiel, PoS-basiert)</b></div>
+                <label class="opt-check">
+                  <input type="checkbox" id="opt-color-n" checked />
+                  <span><span class="opt-color-chip chip-red">Substantive (N)</span> rot</span>
+                </label>
+                <label class="opt-check">
+                  <input type="checkbox" id="opt-color-v" checked />
+                  <span><span class="opt-color-chip chip-green">Verben (V)</span> grün</span>
+                </label>
+                <label class="opt-check">
+                  <input type="checkbox" id="opt-color-aj" checked />
+                  <span><span class="opt-color-chip chip-blue">Adjektive/Partizipien (Aj)</span> blau</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="opt-section">
+              <div class="opt-row">
+                <div><b>Ein-/Ausblenden von Kürzeln</b></div>
+                <label class="opt-check"><input type="checkbox" id="tag-Av" checked /> <span>(Av) Adverb</span></label>
+                <label class="opt-check"><input type="checkbox" id="tag-Pt" checked /> <span>(Pt) Partikel</span></label>
+                <label class="opt-check"><input type="checkbox" id="tag-Ko" checked /> <span>(Ko) Konjunktion</span></label>
+                <label class="opt-check"><input type="checkbox" id="tag-Art" checked /> <span>(Art) Artikel</span></label>
+                <label class="opt-check"><input type="checkbox" id="tag-Aj" checked /> <span>(Aj) Adjektiv/Partizip</span></label>
+                <label class="opt-check"><input type="checkbox" id="tag-V"  checked /> <span>(V) Verb</span></label>
+                <label class="opt-check"><input type="checkbox" id="tag-N"  checked /> <span>(N) Nomen/Substantiv</span></label>
+                <div class="muted-note">Diese Liste ist ein Auszug. (Vollständige Steuerung folgt im Backend.)</div>
+              </div>
+            </div>
+          </details>
+        </div>
+        <div class="opt-actions">
+          <span class="muted-note" id="opt-context-note"></span>
+          <button class="btn secondary" id="opt-cancel">Abbrechen</button>
+          <button class="btn" id="opt-generate">PDF generieren</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Skript -->
     <script>
       (function () {
         // ====== Konfiguration ======
-        const DRAFT_PDF_BASE   = "pdf_drafts/Aias_DRAFT_LATEST_"; // Normal/Fett
+        const DRAFT_PDF_BASE   = "pdf_drafts/Aias_DRAFT_LATEST_"; // Normal/Fett + evtl. Suffix
         const OFFICIAL_PDF_BASE= "pdf/TragödieAias_";             // Normal/Fett
         const LOCAL_KEY        = "draft_Aias_birkenbihl";         // localStorage Key für Entwurf
 
@@ -251,7 +295,7 @@
         const btnPdfOpen = document.getElementById("pdf-open");
 
         // ====== Elemente unten (Birkenbihl) ======
-        const origObject = document.getElementById("bb-view-original");
+        const origPre = document.getElementById("bb-original-pre");
         const draftPre = document.getElementById("bb-view-draft");
         const editor = document.getElementById("bb-editor");
         const btnEdit = document.getElementById("bb-edit");
@@ -261,11 +305,31 @@
         const btnGenerateDraft = document.getElementById("bb-generate-draft");
         const btnReset = document.getElementById("bb-reset");
 
-        // Modal
+        // Modal: Zurücksetzen
         const modalBackdrop = document.getElementById("confirm-backdrop");
         const modalClose = document.getElementById("confirm-close");
         const modalCancel = document.getElementById("confirm-cancel");
         const modalOk = document.getElementById("confirm-ok");
+
+        // Modal: Optionen
+        const optBackdrop = document.getElementById("opt-backdrop");
+        const optClose = document.getElementById("opt-close");
+        const optCancel = document.getElementById("opt-cancel");
+        const optGenerate = document.getElementById("opt-generate");
+        const optColors = document.getElementById("opt-colors");
+        const optTags = document.getElementById("opt-tags");
+        const optAdv = document.getElementById("opt-adv");
+        const optColorN = document.getElementById("opt-color-n");
+        const optColorV = document.getElementById("opt-color-v");
+        const optColorAj= document.getElementById("opt-color-aj");
+        const tagAv = document.getElementById("tag-Av");
+        const tagPt = document.getElementById("tag-Pt");
+        const tagKo = document.getElementById("tag-Ko");
+        const tagArt= document.getElementById("tag-Art");
+        const tagAj = document.getElementById("tag-Aj");
+        const tagV  = document.getElementById("tag-V");
+        const tagN  = document.getElementById("tag-N");
+        const optContextNote = document.getElementById("opt-context-note");
 
         // Save-Indikator
         const saveDot = document.getElementById("save-dot");
@@ -287,12 +351,12 @@
           if (!r.ok) throw new Error("HTTP "+r.status);
           return await r.text();
         }
-        function currentPdfPath() {
+        function currentPdfPath(suffix="") {
           const kind = pdfFett.checked ? "Fett" : "Normal";
-          return (srcDraft.checked ? DRAFT_PDF_BASE : OFFICIAL_PDF_BASE) + kind + ".pdf";
+          return (srcDraft.checked ? DRAFT_PDF_BASE : OFFICIAL_PDF_BASE) + kind + (suffix||"") + ".pdf";
         }
-        function updatePdfLinks(bust=false){
-          const url = currentPdfPath();
+        function updatePdfLinks(bust=false, suffix=""){
+          const url = currentPdfPath(suffix);
           const withBust = url + (bust ? ("?t="+Date.now()) : "");
           pdfFrame.setAttribute("data", withBust + "#view=FitH");
           btnPdfDownload.setAttribute("href", url);
@@ -318,8 +382,10 @@
           return hex.slice(0, 8);
         }
 
-        // ====== Startzustand: lokalen Entwurf anzeigen (rechts, read-only) ======
-        (function restoreDraft(){
+        // ====== Start: Original laden (ins <pre>) & lokalen Entwurf anzeigen ======
+        (async function initTexts(){
+          try { origPre.textContent = await fetchText("texte/Aias_birkenbihl.txt"); }
+          catch(e){ origPre.textContent = "Konnte texte/Aias_birkenbihl.txt nicht laden. Liegt die Datei im Ordner texte/?"; }
           const d = loadLocalDraft();
           if (d) draftPre.textContent = d;
         })();
@@ -357,7 +423,7 @@
         editor.addEventListener("input", ()=>{
           setSaveState("busy");
           const val = editor.value;
-          draftPre.textContent = val;               // Live-Vorschau, falls man Editor wieder schließt
+          draftPre.textContent = val;
           if (saveTimer) clearTimeout(saveTimer);
           saveTimer=setTimeout(()=>{ saveLocalDraft(val); setSaveState("ok","Gespeichert"); }, 300);
         });
@@ -370,7 +436,7 @@
             return;
           }
           try {
-            const originalText = await fetchText("texte/Aias_birkenbihl.txt").catch(()=> "");
+            const originalText = origPre.textContent || await fetchText("texte/Aias_birkenbihl.txt").catch(()=> "");
             const code = await diffCode(originalText, draftText);
             const fname = `Aias_birkenbihl_ENTWURF_${code}.txt`;
             const blob = new Blob([draftText], { type: "text/plain;charset=utf-8" });
@@ -389,17 +455,9 @@
         btnRefresh.addEventListener("click", ()=>updatePdfLinks(true));
         updatePdfLinks(false);
 
-        // ====== „PDF generieren“ (Original-Seite, nur UI-Umschalten) ======
-        btnGenerateOrig.addEventListener("click", ()=>{
-          srcOriginal.checked = true;
-          srcDraft.checked = false;
-          updatePdfLinks(true);
-          draftStatus.innerHTML = '<span class="small">Quelle auf <b>Original</b> umgestellt. Offizielle PDFs werden durch den Haupt-Workflow erzeugt.</span>';
-        });
-
-        // ====== Entwurf zurücksetzen (mit Bestätigungs-Modal) ======
+        // ====== Zurücksetzen (mit Bestätigungs-Modal) ======
         function openConfirm(){ modalBackdrop.style.display = "flex"; modalBackdrop.setAttribute("aria-hidden","false"); }
-        function closeConfirm(){ modalBackdrop.style.display = "none"; modalBackdrop.setAttribute("aria-hidden","true"); }
+        function closeConfirm(){ modalBackdrop.style.display = "none";  modalBackdrop.setAttribute("aria-hidden","true"); }
         btnReset.addEventListener("click", openConfirm);
         modalClose.addEventListener("click", closeConfirm);
         modalCancel.addEventListener("click", closeConfirm);
@@ -415,18 +473,82 @@
           closeConfirm();
         });
 
-        // ====== „PDF generieren“ (Entwurf → Worker) ======
-        btnGenerateDraft.addEventListener("click", async ()=>{
-          draftStatus.textContent = "";
+        // ====== PDF-Optionen Modal ======
+        let optContext = "draft"; // "draft" | "original"
+        function openOptModal(context){
+          optContext = context;
+          optContextNote.textContent = (context==="original")
+            ? "Hinweis: Offizielle PDFs werden durch den Haupt-Workflow erzeugt. Dieser Dialog stellt oben die Anzeige auf „Original“."
+            : "Der Entwurf wird mit diesen Optionen gebaut und oben angezeigt.";
+          optBackdrop.style.display = "flex"; optBackdrop.setAttribute("aria-hidden","false");
+        }
+        function closeOptModal(){
+          optBackdrop.style.display = "none";  optBackdrop.setAttribute("aria-hidden","true");
+        }
+        optClose.addEventListener("click", closeOptModal);
+        optCancel.addEventListener("click", closeOptModal);
+        optBackdrop.addEventListener("click", (e)=>{ if (e.target === optBackdrop) closeOptModal(); });
+        document.addEventListener("keydown", (e)=>{ if (e.key === "Escape" && optBackdrop.style.display === "flex") closeOptModal(); });
+
+        // Buttons, die das Options-Modal öffnen
+        btnGenerateOrig.addEventListener("click", ()=>openOptModal("original"));
+        btnGenerateDraft.addEventListener("click", ()=>openOptModal("draft"));
+
+        // Berechne Dateinamen-Suffix je nach Optionen (für Draft-PDFs)
+        function suffixFromOptions() {
+          let suffix = "";
+          if (!optColors.checked) suffix += "_BW";
+          if (!optTags.checked)   suffix += "_NoTags";
+          if (optAdv.open)        suffix += "_Custom";
+          return suffix;
+        }
+        function collectOptionsPayload() {
+          return {
+            colors: !!optColors.checked,
+            showTags: !!optTags.checked,
+            custom: optAdv.open ? {
+              colorByPOS: {
+                N:  !!optColorN.checked,
+                V:  !!optColorV.checked,
+                Aj: !!optColorAj.checked
+              },
+              visibleTags: {
+                Av: !!tagAv.checked,
+                Pt: !!tagPt.checked,
+                Ko: !!tagKo.checked,
+                Art:!!tagArt.checked,
+                Aj: !!tagAj.checked,
+                V:  !!tagV.checked,
+                N:  !!tagN.checked
+              }
+            } : null
+          };
+        }
+
+        // Generieren (je nach Kontext)
+        optGenerate.addEventListener("click", async ()=>{
+          const suffix = suffixFromOptions();
+
+          if (optContext === "original") {
+            // UI-Only: oben auf Original umschalten & neu laden
+            srcOriginal.checked = true; srcDraft.checked = false;
+            updatePdfLinks(true); // OFFICIAL hat keine Suffixe
+            draftStatus.innerHTML = '<span class="small">Quelle auf <b>Original</b> umgestellt.</span>';
+            closeOptModal();
+            return;
+          }
+
+          // Entwurf: wirklicher Build
           const text = (editor.style.display!=="none") ? editor.value : loadLocalDraft();
           if (!text || !text.trim()) { alert("Kein Entwurfstext vorhanden. Bitte auf „Bearbeiten“ klicken, Text anpassen und speichern."); return; }
 
           try {
             draftStatus.textContent = "⬆️ Entwurf wird an den Build-Dienst gesendet…";
+            const opts = collectOptionsPayload();
             const res = await fetch(WORKER_URL + "/draft", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ work: "Aias", text })
+              body: JSON.stringify({ work: "Aias", text, opts }) // <— Optionen an den Worker
             });
             const j = await res.json().catch(()=> ({}));
             if (!res.ok || !j.ok) throw new Error(j.error || ("HTTP "+res.status));
@@ -434,9 +556,11 @@
             draftStatus.textContent = "✅ Entwurf angenommen. Build startet…";
             // Umschalten auf Entwurf + PDF neu prüfen
             srcDraft.checked = true; srcOriginal.checked = false;
-            const target = (pdfFett.checked ? DRAFT_PDF_BASE+"Fett.pdf" : DRAFT_PDF_BASE+"Normal.pdf");
+
+            const kind = pdfFett.checked ? "Fett" : "Normal";
+            const target = `pdf_drafts/Aias_DRAFT_LATEST_${kind}${suffix}.pdf`;
             const ok = await waitForPdf(target, 24, 5000); // ~2 min
-            updatePdfLinks(true);
+            updatePdfLinks(true, suffix);
             if (ok) {
               draftStatus.innerHTML = '✅ Entwurfs-PDF aktualisiert.';
             } else {
@@ -444,6 +568,8 @@
             }
           } catch(e) {
             draftStatus.innerHTML = '<span class="err">Fehler: '+e.message+'</span>';
+          } finally {
+            closeOptModal();
           }
         });
       })();
