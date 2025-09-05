@@ -1,0 +1,44 @@
+name: Build Tragödie PDFs
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'texte/*_birkenbihl.txt'
+      - 'tragoedie_pdf.py'
+      - 'build_tragoedie_adapter.py'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install reportlab
+
+      - name: Ensure fonts (DejaVu)
+        run: |
+          test -f DejaVuSans.ttf || wget -q https://github.com/dejavu-fonts/dejavu-fonts/raw/version_2_37/ttf/DejaVuSans.ttf
+          test -f DejaVuSans-Bold.ttf || wget -q https://github.com/dejavu-fonts/dejavu-fonts/raw/version_2_37/ttf/DejaVuSans-Bold.ttf
+          ls -l DejaVuSans*.ttf
+
+      - name: Build PDFs (Tragödie)
+        run: |
+          python build_tragoedie_adapter.py
+
+      - name: Commit PDFs
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'pdf/*.pdf'
+          message: 'CI: Tragödie-PDFs neu gebaut'
