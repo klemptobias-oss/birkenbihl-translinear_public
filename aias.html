@@ -93,9 +93,12 @@
               <div class="split">
                 <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen (Original.txt)</a>
                 <button class="btn" id="bb-generate-original" title="PDF-Quelle oben auf Original stellen und neu laden">PDF generieren</button>
-                <label class="small" title="Scroll vom Original auf den Entwurf spiegeln" style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;">
-                  <input type="checkbox" id="scroll-link" checked /> Scroll koppeln
-                </label>
+                <label class="toggle" id="scroll-link" style="margin-left:auto;">
+  <input type="checkbox" checked />
+  <span>Scroll koppeln:</span>
+  <span class="state on" data-on="An" data-off="Aus">An</span>
+</label>
+
               </div>
 
               <div class="split" style="margin-top:-6px">
