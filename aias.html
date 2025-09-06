@@ -94,18 +94,22 @@
                 <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen (Original.txt)</a>
                 <button class="btn" id="bb-generate-original" title="PDF-Quelle oben auf Original stellen und neu laden">PDF generieren</button>
                 <label class="toggle" id="scroll-link" style="margin-left:auto;">
-  <input type="checkbox" checked />
-  <span>Scroll koppeln:</span>
-  <span class="state on" data-on="An" data-off="Aus">An</span>
-</label>
+                  <input type="checkbox" checked />
+                  <span>Scroll koppeln:</span>
+                  <span class="state on" data-on="An" data-off="Aus">An</span>
+                </label>
 
               </div>
 
               <div class="split" style="margin-top:-6px">
                 <div>
                   <button class="btn" id="orig-font-minus" title="Schrift kleiner">–</button>
-                  <button class="btn" id="orig-font-plus"  title="Schrift größer">+</button>
-                </div>
+                 <label class="duo-toggle" id="orig-font-toggle">
+                  <button type="button" class="duo minus" id="orig-font-minus" aria-label="Schrift kleiner">−</button>
+                  <span>Textgröße</span>
+                  <button type="button" class="duo plus"  id="orig-font-plus"  aria-label="Schrift größer">+</button>
+                 </label>
+
                 <div class="toggle-row" style="margin-left:auto;">
                   <label class="toggle" id="orig-toggle-tags">
                     <input type="checkbox" checked />
@@ -139,7 +143,12 @@
               <div class="split" style="margin-top:-6px">
                 <div>
                   <button class="btn" id="draft-font-minus" title="Schrift kleiner">–</button>
-                  <button class="btn" id="draft-font-plus"  title="Schrift größer">+</button>
+                  <label class="duo-toggle" id="draft-font-toggle">
+                    <button type="button" class="duo minus" id="draft-font-minus" aria-label="Schrift kleiner">−</button>
+                    <span>Textgröße</span>
+                    <button type="button" class="duo plus"  id="draft-font-plus"  aria-label="Schrift größer">+</button>
+                  </label>
+
                 </div>
                 <div class="toggle-row" style="margin-left:auto;">
                   <label class="toggle" id="draft-toggle-tags">
@@ -157,10 +166,7 @@
 
               <!-- Editor immer sichtbar -->
               <textarea id="bb-editor" class="editor" placeholder="Entwurf bearbeiten…"></textarea>
-
-              <!-- Gefilterte Vorschau (wirkt mit obigen Schaltern) -->
-              <div class="small" style="margin-top:6px;opacity:0.8">Vorschau (Filter wirken hier, der Editor bleibt unverändert):</div>
-              <pre id="bb-draft-preview" class="src srcbox" style="height:40vh;"></pre>
+              
             </div>
           </div>
         </div>
