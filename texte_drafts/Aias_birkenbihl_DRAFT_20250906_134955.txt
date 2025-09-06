@@ -1,0 +1,1832 @@
+[1] #μῆνιν(A) -ἄειδε(Pre)(Akt)(Imv) #θεὰ(V) +Πηληϊάδεω(Aj)(G) #Ἀχιλῆος(G)
+[1] #Zorn -singe #Göttin +des|Peleus|Sohnes #des|Achilleus
+
+[2] +οὐλομένην(Aj)(A), ἣ(Pr)(N) +μυρί’(Aj)(A) #Ἀχαιοῖς(D) #ἄλγε’(A) -ἔθηκε(Aor)(Akt),
+[2] +verderbliche, die +unzählige #den|Achaiern #Schmerzen -verursachte,
+
+[3] +πολλὰς(Aj)(A) δ’(Pt) +ἰφθίμους(Aj)(A) #ψυχὰς(A) #Ἄϊδι(D) -προΐαψεν(Aor)(Akt)
+[3] +viele aber +tapfere #Seelen #dem|Hades -sandte|hin
+
+[4] #ἡρώων(G), αὐτοὺς(Pr)(A) δὲ(Pt) #ἑλώρια(A) -τεῦχε(Imp)(Akt) #κύνεσσιν(D)
+[4] #der|Helden, sie aber #Beute -machte #den|Hunden
+
+[5] #οἰωνοῖσί(D) τε(Pt) +πᾶσι(Aj)(D), #Διὸς(G) δ’(Pt) -ἐτελείετο(Imp)(M/P) #βουλή(N),
+[5] #den|Vögeln und +allen, #des|Zeus aber -erfüllte|sich #Plan,
+
+[6] ἐξ(Prp) οὗ(Pr)(G) δὴ(Pt) τὰ(Art)(A) +πρῶτα(Aj)(A)(Sup) -διαστήτην(Aor)(Akt) +ἐρίσαντε(Aor)(Akt)(N)
+[6] aus von|dem eben die +ersten -traten|auseinander +gezankt|habend
+
+[7] #Ἀτρεΐδης(N) τε(Pt) #ἄναξ(N) #ἀνδρῶν(G) καὶ(Ko) +δῖος(Aj)(N) #Ἀχιλλεύς(N).
+[7] #Atreide und #Herrscher #der|Männer und +göttlicher #Achilleus.
+
+[8] τίς(Pr)(N) τ’(Pt) ἄρ(Pt) σφωε(Pr)(A) #θεῶν(G) #ἔριδι(D) -ξυνέηκε(Aor)(Akt) -μάχεσθαι(Pre)(Inf)(M/P);
+[8] wer und also sie|beide #der|Götter #zum|Streit -brachte|zusammen -zu|kämpfen;
+
+[9] #Λητοῦς(G) καὶ(Ko) #Διὸς(G) #υἱός(N)· ὃ(Pr)(N) γὰρ(Pt) #βασιλῆϊ(D) +χολωθεὶς(Aor)(Pas)(N)
+[9] #der|Leto und #des|Zeus #Sohn· der denn #dem|König +erzürnt|worden
+
+[10] #νοῦσον(A) ἀνὰ(Prp) #στρατὸν(A) -ὄρσε(Aor)(Akt) +κακήν(Aj)(A), -ὀλέκοντο(Imp)(M/P) δὲ(Pt) #λαοί(N),
+[10] #Seuche durch|den #Heer -entfachte +schlimme, -gingen|zugrunde aber #Leute,
+
+[11] οὕνεκα(Ko) τὸν(Art)(A) #Χρύσην(A) -ἠτίμασεν(Aor)(Akt) #ἀρητῆρα(A)
+[11] weil den #Chryses -entehrte #Priester
+
+[12] #Ἀτρεΐδης(N)· ὃ(Pr)(N) γὰρ(Pt) -ἦλθε(Aor)(Akt) +θοὰς(Aj)(A) ἐπὶ(Prp) #νῆας(A) #Ἀχαιῶν(G)
+[12] #Atreide· der denn -kam +schnelle auf #Schiffe #der|Achaier
+
+[13] +λυσόμενός(Fu)(Med)(N) τε(Pt) #θύγατρα(A) +φέρων(Pre)(Akt)(N) τ’(Pt) +ἀπερείσι’(Aj)(A) #ἄποινα(A),
+[13] +lösen|wollend und #Tochter +tragend und +grenzen|lose #Lösegeld|e,
+
+[14] #στέμματ’(A) +ἔχων(Pre)(Akt)(N) ἐν(Prp) #χερσὶν(D) +ἑκηβόλου(Aj)(G) #Ἀπόλλωνος(G)
+[14] #Bänder +haltend in #Händen +fern|treffenden #Apollons
+
+[15] +χρυσέῳ(Aj)(D) ἀνὰ(Prp) #σκήπτρῳ(D), καὶ(Ko) -λίσσετο(Imp)(M/P) +πάντας(Aj)(A) #Ἀχαιούς(A),
+[15] +goldenen auf #Szepter, und -bat +alle #Achaier,
+
+[16] #Ἀτρεΐδα(A) δὲ(Pt) +μάλιστα(Av) +δύω(Aj)(A), #κοσμήτορε(A) #λαῶν(G)·
+[16] #Atreiden aber am|meisten +zwei, #Ordner #der|Leute·
+
+[17] #Ἀτρεΐδαι(N) τε(Pt) καὶ(Ko) +ἄλλοι(Aj)(N) +ἐϋκνήμιδες(Aj)(N) #Ἀχαιοί(N),
+[17] #Atreiden und +andere +wohl|beinschienen|versehene #Achaier,
+
+[18] ὑμῖν(Pr)(D) μὲν(Pt) #θεοὶ(N) -δοῖεν(Aor)(Akt)(Op) +Ὀλύμπια(Aj)(A) #δώματ’(A) +ἔχοντες(Pre)(Akt)(N)
+[18] euch zwar #Götter -mögen|geben +olympische #Häuser +haltend
+
+[19] -ἐκπέρσαι(Aor)(Inf)(Akt) #Πριάμοιο(G) #πόλιν(A), εὖ(Av) δ’(Pt) οἴκαδ’(Av) -ἱκέσθαι(Aor)(Inf)(Med)·
+[19] -zu|verwüsten #des|Priamos #Stadt, gut aber heimwärts -zu|gelangen·
+
+[20] #παῖδα(A) δ’(Pt) ἐμοὶ(Pr)(D) -λύσαιτε(Aor)(Akt)(Op) +φίλην(Aj)(A), τὰ(Art)(A) δ’(Pt) #ἄποινα(A) -δέχεσθαι(Pre)(Inf)(M/P),
+[20] #Tochter aber mir -löset +lieb, die aber #Lösegeld -an|nehmen,
+
+[21] +ἁζόμενοι(Pre)(M/P)(N) #Διὸς(G) #υἱὸν(A) +ἑκηβόλον(Aj)(A) #Ἀπόλλωνα(A).
+[21] +ehr|fürchtend #des|Zeus #Sohn +fern|treffenden #Apollon.
+
+[22] ἔνθ’(Av) +ἄλλοι(Aj)(N) μὲν(Pt) +πάντες(Aj)(N) -ἐπευφήμησαν(Aor)(Akt) #Ἀχαιοὶ(N)
+[22] dort +andere zwar +alle -beifall|riefen #Achaier
+
+[23] -αἰδεῖσθαί(Pre)(Inf)(M/P) θ’(Pt) #ἱερῆα(A) καὶ(Ko) +ἀγλαὰ(Aj)(A) -δέχθαι(Aor)(Inf)(Med) #ἄποινα(A)·
+[23] -zu|ehren und #Priester und +glänzende -an|nehmen #Lösegeld|e;
+
+[24] ἀλλ’(Ko) οὐκ(Pt) #Ἀτρεΐδῃ(D) #Ἀγαμέμνονι(D) -ἥνδανε(Imp)(Akt) #θυμῷ(D),
+[24] aber nicht #dem|Atreiden #Agamemnon -gefiel #dem|Sinn,
+
+[25] ἀλλὰ(Ko) κακῶς(Av) -ἀφίει(Imp)(Akt), +κρατερὸν(Aj)(A) δ’(Pt) ἐπὶ(Prp) #μῦθον(A) -ἔτελλε(Imp)(Akt)·
+[25] sondern schlecht -ließ|fort, +starken aber auf #Wort -befahl;
+
+[26] μή(Pt) σε(Pr)(A) #γέρον(V) +κοίλῃσιν(Aj)(D) ἐγὼ(Pr)(N) παρὰ(Prp) #νηυσὶ(D) -κιχείω(Aor)(Akt)(Kon)
+[26] nicht dich #Alter +hohlen ich bei #Schiffen -antreffe
+
+[27] ἢ(Ko) νῦν(Av) +δηθύνοντ’(Pre)(Akt)(A) ἢ(Ko) ὕστερον(Av)(Kmp) αὖτις(Av) +ἰόντα(Pre)(Akt)(A),
+[27] oder jetzt +verweilend oder später wiederum +gehend,
+
+[28] μή(Pt) νύ(Pt) τοι(Pr)(D) οὐ(Pt) -χραίσμῃ(Aor)(Akt)(Kon) #σκῆπτρον(N) καὶ(Ko) #στέμμα(N) #θεοῖο(G)·
+[28] nicht nun dir nicht -nütze #Szepter und #Binde #des|Gottes;
+
+[29] τὴν(Art)(A) δ’(Pt) ἐγὼ(Pr)(N) οὐ(Pt) -λύσω(Fu)(Akt)· πρίν(Ko) μιν(Pr)(A) καὶ(Ko) #γῆρας(A) -ἔπεισιν(Fu)(Akt)
+[29] die aber ich nicht -werde|lösen; bevor ihn auch #Alter -über|kommt
+
+[30] +ἡμετέρῳ(Aj)(D) ἐνὶ(Prp) #οἴκῳ(D) ἐν(Prp) #Ἄργεϊ(D) τηλόθι(Av) #πάτρης(G)
+[30] +unserem in #Haus in #Argos fern #der|Heimat
+
+[31] #ἱστὸν(A) +ἐποιχομένην(Pre)(M/P)(A) καὶ(Ko) +ἐμὸν(Aj)(A) #λέχος(A) +ἀντιόωσαν(Pre)(Akt)(A)·
+[31] #Webstuhl +bearbeitend und +mein #Bett +entgegen|gehend;
+
+[32] ἀλλ’(Ko) -ἴθι(Pre)(Imv)(Akt) μή(Pt) μ’(Pr)(A) -ἐρέθιζε(Pre)(Imv)(Akt) +σαώτερος(Aj)(N)(Kmp) ὥς(Ko) κε(Pt) -νέηαι(Aor)(Med)(Kon).
+[32] aber -geh nicht mich -reize +sicherer damit wohl -heim|kehrest.
+
+[33] ὣς(Av) -ἔφατ’(Imp)(M/P), -ἔδεισεν(Aor)(Akt) δ’(Pt) ὃ(Pr)(N) #γέρων(N) καὶ(Ko) -ἐπείθετο(Imp)(M/P) #μύθῳ(D)·
+[33] so -sprach, -fürchtete aber er #Greis und -gehorchte #dem|Wort;
+
+[34] -βῆ(AorS)(Akt) δ’(Pt) ἀκέων(Av) παρὰ(Prp) #θῖνα(A) +πολυφλοίσβοιο(Aj)(G) #θαλάσσης(G)·
+[34] -ging aber schweigend bei #Strand +viel|rauschender #des|Meeres;
+
+[35] +πολλὰ(Aj)(A) δ’(Pt) ἔπειτ’(Av) ἀπάνευθε(Av) +κιὼν(Pre)(Akt)(N) -ἠρᾶθ’(Aor)(Med) ὃ(Pr)(N) +γεραιὸς(Aj)(N)
+[35] +vieles aber dann fern|weg +gehend -betete er +greis
+
+[36] #Ἀπόλλωνι(D) #ἄνακτι(D), τὸν(Art)(A) +ἠΰκομος(Aj)(N) -τέκε(Aor)(Akt) #Λητώ(N)·
+[36] #dem|Apollon #Herrn, den +schön|gelockte -gebar #Leto;
+
+[37] -κλῦθί(Aor)(Imv)(Akt) μευ(Pr)(G) +ἀργυρότοξ’(Aj)(V), ὃς(Pr)(N) #Χρύσην(A) -ἀμφιβέβηκας(Per)(Akt)
+[37] -höre mein +silber|bogiger der #Chryse -um|schritten|hast
+
+[38] #Κίλλάν(A) τε(Pt) +ζαθέην(Aj)(A) #Τενέδοιό(G) τε(Pt) ἶφι(Av) -ἀνάσσεις(Pre)(Akt),
+[38] #Killa und +heilige #von|Tenedos und kräftig -herrschest,
+
+[39] #Σμινθεῦ(V) εἴ(Ko) ποτέ(Pt) τοι(Pr)(D) +χαρίεντ’(Aj)(A) ἐπὶ(Prp) #νηὸν(A) -ἔρεψα(Aor)(Akt),
+[39] #Smintheus wenn jemals dir +lieblich auf #Tempel -über|dachte,
+
+[40] ἢ(Ko) εἰ(Ko) δή(Pt) ποτέ(Pt) τοι(Pr)(D) κατὰ(Prp) +πίονα(Aj)(A) #μηρί’(A) -ἔκηα(Aor)(Akt)
+[40] oder wenn eben jemals dir nach +fette #Schenkel|stücke -verbrannte
+
+[41] #ταύρων(G) ἠδ’(Ko) #αἰγῶν(G), τὸ(Art)(A) δέ(Pt) μοι(Pr)(D) -κρήηνον(Aor)(Imv)(Akt) #ἐέλδωρ(A)·
+[41] #der|Stiere und #der|Ziegen, das aber mir -erfülle #Begehren;
+
+[42] -τίσειαν(Aor)(Akt)(Op) #Δαναοὶ(N) +ἐμὰ(Aj)(A) #δάκρυα(A) +σοῖσι(Aj)(D) #βέλεσσιν(D).
+[42] -mögen|bezahlen #Danaer +meine #Tränen +deinen #mit|Geschossen.
+
+[43] ὣς(Av) -ἔφατ’(Imp)(M/P) +εὐχόμενος(Pre)(M/P)(N), τοῦ(Pr)(G) δ’(Pt) -ἔκλυε(Imp)(Akt) #Φοῖβος(N) #Ἀπόλλων(N),
+[43] so -sprach +betend, dessen aber -hörte #Phoibos #Apollon,
+
+[44] -βῆ(AorS)(Akt) δὲ(Pt) κατ’(Prp) #Οὐλύμποιο(G) #καρήνων(G) +χωόμενος(Pre)(M/P)(N) #κῆρ(A),
+[44] -ging aber herab|von #des|Olympos #der|Gipfel +zürnend #Herz,
+
+[45] #τόξ’(A) #ὤμοισιν(D) +ἔχων(Pre)(Akt)(N) +ἀμφηρεφέα(Aj)(A) τε(Pt) #φαρέτρην(A)·
+[45] #Bogen #auf|den|Schultern +haltend +rings|bedeckte und #Köcher;
+
+[46] -ἔκλαγξαν(Aor)(Akt) δ’(Pt) ἄρ’(Pt) #ὀϊστοὶ(N) ἐπ’(Prp) #ὤμων(G) +χωομένοιο(Pre)(M/P)(G),
+[46] -erkrachten aber da #Pfeile auf #der|Schultern +des|Zürnenden,
+
+[47] αὐτοῦ(Av) +κινηθέντος(Aor)(Pas)(G)· ὃ(Pr)(N) δ’(Pt) -ἤϊε(Imp)(Akt) #νυκτὶ(D) +ἐοικώς(Per)(Akt)(N).
+[47] da|selbst +bewegt|wordenen; der aber -ging #bei|Nacht +gleichend.
+
+[48] -ἕζετ’(Imp)(M/P) ἔπειτ’(Av) ἀπάνευθε(Av) #νεῶν(G), μετὰ(Prp) δ’(Pt) #ἰὸν(A) -ἕηκε(Aor)(Akt)·
+[48] -setzte|sich dann fern|weg #der|Schiffe, mitten|unter aber #Pfeil -sandte;
+
+[49] +δεινὴ(Aj)(N) δὲ(Pt) #κλαγγὴ(N) -γένετ’(Aor)(Med) +ἀργυρέοιο(Aj)(G) #βιοῖο(G)·
+[49] +schreckliche aber #Klang -wurde +des|silbernen #Bogens;
+
+[50] #οὐρῆας(A) μὲν(Pt) πρῶτον(Av) -ἐπῴχετο(Imp)(M/P) καὶ(Ko) #κύνας(A) +ἀργούς(Aj)(A),
+[50] #Maultiere zwar zuerst -griff|an und #Hunde +schnelle,
+
+[51] αὐτὰρ(Ko) ἔπειτ’(Av) αὐτοῖσι(Pr)(D) #βέλος(A) +ἐχεπευκὲς(Aj)(A) +ἐφιεὶς(Pre)(Akt)(N)
+[51] aber dann ihnen|selbst #Geschoss +speer|scharfes +sendend
+
+[52] -βάλλ’(Imp)(Akt)· αἰεὶ(Av) δὲ(Pt) #πυραὶ(N) #νεκύων(G) -καίοντο(Imp)(M/P) +θαμειαί(Aj)(N).
+[52] -traf; immer aber #Scheiterhaufen #der|Toten -brannten +häufige.
+
+[53] ἐννῆμαρ(Av) μὲν(Pt) ἀνὰ(Prp) #στρατὸν(A) -ᾤχετο(Imp)(Med) #κῆλα(N) #θεοῖο(G),
+[53] neun|Tage zwar durch #das|Heer -zog|umher #Pfeile #des|Gottes,
+
+[54] τῇ(Art)(D) +δεκάτῃ(Aj)(D) δ’(Pt) #ἀγορὴν(A) δὲ(Pt) -καλέσσατο(Aor)(Med) #λαὸν(A) #Ἀχιλλεύς(N)·
+[54] am|zehnten aber #Versammlung aber -berief #Volk #Achilleus;
+
+[55] τῷ(Pr)(D) γὰρ(Pt) ἐπὶ(Prp) #φρεσὶ(D) -θῆκε(AorS)(Akt) #θεὰ(N) +λευκώλενος(Aj)(N) #Ἥρη(N)·
+[55] ihm denn auf #den|Sinnen -setzte #Göttin +weiß|armige #Hera;
+
+[56] -κήδετο(Imp)(Med) γὰρ(Pt) #Δαναῶν(G), ὅτι(Ko) ῥα(Pt) +θνήσκοντας(Pre)(Akt)(A) -ὁρᾶτο(Imp)(M/P).
+[56] -sorgte|sich denn #der|Danaer, weil ja +sterbende -sah.
+
+[57] οἳ(Pr)(N) δ’(Pt) ἐπεὶ(Ko) οὖν(Pt) -ἤγερθεν(Aor)(Pas) +ὁμηγερέες(Aj)(N) τε(Pt) -γένοντο(Aor)(Med),
+[57] die aber als nun -wurden|versammelt +zusammen|gekommen und -wurden,
+
+[58] τοῖσι(Pr)(D) δ’(Pt) +ἀνιστάμενος(Pre)(M/P)(N) -μετέφη(Imp)(Akt) #πόδας(A) +ὠκὺς(Aj)(N) #Ἀχιλλεύς(N)·
+[58] ihnen aber +sich|erhebend -sprach|unter #Füße +schnell #Achilleus;
+
+[59] #Ἀτρεΐδη(V) νῦν(Av) ἄμμε(Pr)(A) +παλιμπλαγχθέντας(Aor)(Pas)(A) -ὀΐω(Pre)(Akt)
+[59] #Sohn|des|Atreus nun uns +wieder|getrieben -ich|meine
+
+[60] ἂψ(Av) -ἀπονοστήσειν(Fu)(Inf)(Akt), εἴ(Ko) κεν(Pt) #θάνατόν(A) γε(Pt) -φύγοιμεν(Aor)(Akt)(Op),
+[60] wieder -zurück|kehren, wenn wohl #Tod doch -möchten|entkommen,
+
+[61] εἰ(Ko) δὴ(Pt) ὁμοῦ(Av) #πόλεμός(N) τε(Pt) -δαμᾷ(Pre)(Akt)(Kon) καὶ(Ko) #λοιμὸς(N) #Ἀχαιούς(A)·
+[61] wenn ja zugleich #Krieg und auch -bezwinge und #Seuche #Achaier;
+
+[62] ἀλλ’(Ko) -ἄγε(Pre)(Akt)(Imv) δή(Pt) τινα(Pr)(A) #μάντιν(A) -ἐρείομεν(Fu)(Akt) ἢ(Ko) #ἱερῆα(A)
+[62] aber -auf nun irgend|einen #Seher -befragen|wir oder #Priester
+
+[63] ἢ(Ko) καὶ(Ko) #ὀνειροπόλον(A), καὶ(Ko) γάρ(Pt) τ’(Pt) #ὄναρ(A) ἐκ(Prp) #Διός(G) -ἐστιν(Pre)(Akt),
+[63] oder auch #Traum|deuter, und denn und #Traum aus #des|Zeus -ist,
+
+[64] ὅς(Pr)(N) κ’(Pt) -εἴποι(Aor)(Akt)(Op) ὅ(Pr)(A) τι(Pr)(A) +τόσσον(Aj)(A) -ἐχώσατο(Aor)(Med) #Φοῖβος(N) #Ἀπόλλων(N),
+[64] der wohl -würde|sagen was irgend +so|viel -entrüstete|sich #Phoibos #Apollon,
+
+[65] εἴτ’(Ko) ἄρ’(Pt) ὅ(Pr)(N) γ’(Pt) #εὐχωλῆς(G) -ἐπιμέμφεται(Pre)(M/P) ἠδ’(Ko) #ἑκατόμβης(G),
+[65] sei|es ja er eben #des|Gebets -tadelt und #der|Hekatombe,
+
+[66] αἴ(Ko) κέν(Pt) πως(Av) #ἀρνῶν(G) #κνίσης(G) #αἰγῶν(G) τε(Pt) +τελείων(Aj)(G)
+[66] wenn wohl irgendwie #der|Lämmer #Opfer|duft #der|Ziegen und +voll|kommener
+
+[67] -βούλεται(Pre)(Med) +ἀντιάσας(Aor)(Akt)(N) ἡμῖν(Pr)(D) ἀπὸ(Prp) #λοιγὸν(A) -ἀμῦναι(Aor)(Med)(Inf).
+[67] -will +entgegen|gehend uns von #Verderben -abwehren.
+
+[68] ἤτοι(Pt) ὅ(Pr)(N) γ’(Pt) ὣς(Av) +εἰπὼν(Aor)(Akt)(N) κατ’(Prp) ἄρ’(Pt) -ἕζετο(Imp)(Med)· τοῖσι(Pr)(D) δ’(Pt) -ἀνέστη(AorS)(Akt)
+[68] ja er so +gesagt hin ja -setzte|sich; ihnen aber -stand|auf
+
+[69] #Κάλχας(N) #Θεστορίδης(N) #οἰωνοπόλων(G) ὄχ’(Av) +ἄριστος(Aj)(N)(Sup),
+[69] #Kalchas #Thestor|sohn #der|Vogel|deuter bei|weitem +bester,
+
+[70] ὃς(Pr)(N) -ᾔδη(Plq)(Akt) τά(Art)(A) τ’(Pt) +ἐόντα(Pre)(Akt)(A) τά(Art)(A) τ’(Pt) +ἐσσόμενα(Fu)(Med)(A) πρό(Prp) τ’(Pt) +ἐόντα(Pre)(Akt)(A),
+[70] der -wusste die und +seienden die und +sein|werdenden vor und +seienden,
+
+(71) καὶ(Ko) #νήεσσ’(D) -ἡγήσατ’(Aor)(Med) #Ἀχαιῶν(G) #Ἴλιον(A) εἴσω(Av)
+(71) und #den|Schiffen -führte|voran #der|Achaier #Ilion hinein
+
+(72) ἣν(Pr)(A) διὰ(Prp) #μαντοσύνην(A), τήν(Art)(A) οἱ(Pr)(D) -πόρε(Aor)(Akt) #Φοῖβος(N) #Ἀπόλλων(N)·
+(72) die durch #Weissagung, die ihm -gab #Phoibos #Apollon;
+
+(73) ὅ(Pr)(N) σφιν(Pr)(D) ἐὺ(Av) +φρονέων(Pre)(Akt)(N) -ἀγορήσατο(Aor)(Med) καὶ(Ko) -μετέειπεν(Aor)(Akt)·
+(73) der ihnen gut +denkend -sprach|im|Rat und -redete|weiter;
+
+(74) ὦ(ij) #Ἀχιλεῦ(V) -κέλεαί(Pre)(Akt) με(Pr)(A) #Διῒ(D) +φίλε(Aj)(V) -μυθήσασθαι(Aor)(Med)(Inf)
+(74) o #Achilleus -befiehlst mich #dem|Zeus +Lieber -zu|reden
+
+(75) #μῆνιν(A) #Ἀπόλλωνος(G) +ἑκατηβελέταο(Aj)(G) #ἄνακτος(G)·
+(75) #Zorn #des|Apollon +fern|schießenden #des|Herrschers;
+
+(76) τοὶ(Pt) γὰρ(Pt) ἐγὼν(Pr)(N) -ἐρέω(Fu)(Akt)· σὺ(Pr)(N) δὲ(Pt) -σύνθεο(Aor)(Med)(Imv) καί(Ko) μοι(Pr)(D) -ὄμοσσον(Aor)(Akt)(Imv)
+(76) fürwahr denn ich -werde|sagen; du aber -nimm|zu|Herzen und mir -schwöre
+
+(77) ἦ(Pt) μέν(Pt) μοι(Pr)(D) +πρόφρων(Aj)(N) #ἔπεσιν(D) καὶ(Ko) #χερσὶν(D) -ἀρήξειν(Fu)(Akt)(Inf)·
+(77) wahrlich zwar mir +willig #mit|Worten und #mit|Händen -zu|unterstützen;
+
+(78) ἦ(Pt) γὰρ(Pt) -ὀΐομαι(Pre)(Med) #ἄνδρα(A) -χολωσέμεν(Fu)(Akt)(Inf), ὃς(Pr)(N) μέγα(Av) +πάντων(Aj)(G)
+(78) ja denn -ich|glaube #Mann -zum|Zürnen, der sehr +aller
+
+(79) #Ἀργείων(G) -κρατέει(Pre)(Akt) καί(Ko) οἱ(Pr)(D) -πείθονται(Pre)(M/P) #Ἀχαιοί(N)·
+(79) #der|Argiver -herrscht|über und ihm -gehorchen #Achaier;
+
+(80) +κρείσσων(Aj)(N)(Kmp) γὰρ(Pt) #βασιλεὺς(N) ὅτε(Ko) -χώσεται(Fu)(Med) #ἀνδρὶ(D) +χέρηϊ(Aj)(D)·
+(80) +stärker denn #König wenn -zürnen|wird #einem|Mann +unterlegenen;
+
+(81) εἴ(Ko) περ(Pt) γάρ(Pt) τε(Pt) #χόλον(A) γε(Pt) καὶ(Ko) αὐτῆμαρ(Av) -καταπέψῃ(Aor)(Akt)(Kon),
+(81) wenn zwar denn und #Zorn ja und am|selben|Tage -hinunter|verdauen,
+
+(82) ἀλλά(Ko) τε(Pt) καὶ(Ko) μετόπισθεν(Av) -ἔχει(Pre)(Akt) #κότον(A), ὄφρα(Ko) -τελέσσῃ(Aor)(Akt)(Kon),
+(82) aber und auch hinterher -hält #Groll, bis -vollende,
+
+(83) ἐν(Prp) #στήθεσσιν(D) ἑοῖσι(Pr)(D)· σὺ(Pr)(N) δὲ(Pt) -φράσαι(Aor)(Med)(Imv) εἴ(Ko) με(Pr)(A) -σαώσεις(Aor)(Akt)(Kon).
+(83) in #in|der|Brust seinen|eigenen· du aber -sage ob mich -rettest.
+
+(84) τὸν(Art)(A) δ’(Pt) +ἀπαμειβόμενος(Pre)(M/P)(N) -προσέφη(Aor)(Akt) #πόδας(A) +ὠκὺς(Aj)(N) #Ἀχιλλεύς(N)·
+(84) den +antwortend -sprach #an|den|Füßen +schnell #Achilleus·
+
+(85) +θαρσήσας(Aor)(Akt)(N) μάλα(Av) -εἰπὲ(AorS)(Akt)(Imv) +θεοπρόπιον(Aj)(A) ὅ(Pr)(A) τι(Pr)(A) -οἶσθα(Per)(Akt)·
+(85) +Mut|fassend sehr -sprich +göttlich|Weissagtes was irgend|etwas -weißt·
+
+(86) οὐ(Pt) μὰ(Pt) γὰρ(Pt) #Ἀπόλλωνα(A) #Διῒ(D) +φίλον(Aj)(A), ᾧ(Pr)(D) τε(Pt) σὺ(Pr)(N) #Κάλχαν(V)
+(86) nicht bei denn #Apollon #dem|Zeus +lieb, welchem und du #Kalchas
+
+(87) +εὐχόμενος(Pre)(M/P)(N) #Δαναοῖσι(D) #θεοπροπίας(A) -ἀναφαίνεις(Pre)(Akt),
+(87) +betend #den|Danaern #Götter|Aussprüche -offenbarst,
+
+(88) οὔ(Pt) τις(Pr)(N) ἐμεῦ(Pr)(G) +ζῶντος(Pre)(Akt)(G) καὶ(Ko) ἐπὶ(Prp) #χθονὶ(D) +δερκομένοιο(Pre)(M/P)(G)
+(88) nicht irgend|jemand meines +lebenden und auf #der|Erde +blickenden
+
+(89) σοὶ(Pr)(D) +κοίλῃς(Aj)(D) παρὰ(Prp) #νηυσί(D) +βαρείας(Aj)(A) #χεῖρας(A) -ἐποίσει(Fu)(Akt)
+(89) dir +hohlen bei #den|Schiffen +schwere #Hände -wird|bringen
+
+(90) +συμπάντων(Aj)(G) #Δαναῶν(G), οὐδ’(Ko) ἢν(Ko) #Ἀγαμέμνονα(A) -εἴπῃς(AorS)(Akt)(Kon),
+(90) +aller|zusammen #der|Danaer, auch|nicht wenn #Agamemnon -nennst,
+
+[91] ὃς(Pr)(N) νῦν(Av) +πολλὸν(Aj)(A) +ἄριστος(Aj)(N)(Sup) #Ἀχαιῶν(G) -εὔχεται(Pre)(Med) -εἶναι(Pre)(Inf)(Akt).
+[91] der nun +um|viel +beste #der|Achaier -rühmt|sich -zu|sein.
+
+[92] καὶ(Ko) τότε(Av) δὴ(Pt) -θάρσησε(Aor)(Akt) καὶ(Ko) -ηὔδα(Aor)(Akt) #μάντις(N) +ἀμύμων(Aj)(N)·
+[92] und dann eben -fasste|Mut und -sprach #Seher +tadellos·
+
+[93] οὔ(Pt) τ’(Pt) ἄρ(Pt) ὅ(Pr)(N) γ’(Pt) #εὐχωλῆς(G) -ἐπιμέμφεται(Pre)(P/M) οὐδ’(Ko) #ἑκατόμβης(G),
+[93] nicht und also der ja #des|Gelübdes -nimmt|übel auch|nicht #der|Hekatombe,
+
+[94] ἀλλ’(Ko) ἕνεκ’(Prp) #ἀρητῆρος(G) ὃν(Pr)(A) -ἠτίμησ’(Aor)(Akt) #Ἀγαμέμνων(N),
+[94] aber um|willen #des|Priesters den -entehrte #Agamemnon,
+
+[95] οὐδ’(Ko) -ἀπέλυσε(Aor)(Akt) #θύγατρα(A) καὶ(Ko) οὐκ(Pt) -ἀπεδέξατ’(Aor)(Med) #ἄποινα(A),
+[95] auch|nicht -ließ|frei #Tochter und nicht -nahm|an #Lösegeld,
+
+[96] τοὔνεκ’(Pt) ἄρ’(Pt) #ἄλγε’(A) -ἔδωκεν(Aor)(Akt) +ἑκηβόλος(Aj)(N) ἠδ’(Ko) ἔτι(Av) -δώσει(Fu)(Akt)·
+[96] des|wegen also #Schmerzen -gab +fern|schießend und noch -wird|geben·
+
+[97] οὐδ’(Ko) ὅ(Pr)(N) γε(Pt) πρὶν(Av) #Δαναοῖσιν(D) +ἀεικέα(Aj)(A) #λοιγὸν(A) -ἀπώσει(Fu)(Akt)
+[97] auch|nicht der ja zuvor #den|Danaern +schimpflichen #Verderben -wird|abwehren
+
+[98] πρίν(Av) γ’(Pt) ἀπὸ(Prp) #πατρὶ(D) +φίλῳ(Aj)(D) -δόμεναι(Aor)(Med)(Inf) +ἑλικώπιδα(Aj)(A) #κούρην(A)
+[98] zuvor ja von #dem|Vater +lieben -zu|geben +roll|äugige #Mädchen
+
+[99] +ἀπριάτην(Aj)(A) +ἀνάποινον(Aj)(A), -ἄγειν(Pre)(Inf)(Akt) θ’(Pt) +ἱερὴν(Aj)(A) #ἑκατόμβην(A)
+[99] +un|gekauft +ohne|Lösegeld, -zu|führen und +heilige #Hekatombe
+
+[100] ἐς(Prp) #Χρύσην(A)· τότε(Av) κέν(Pt) μιν(Pr)(A) +ἱλασσάμενοι(Aor)(Med)(N) -πεπίθοιμεν(Aor)(Akt)(Op).
+[100] nach #Chryse· dann wohl ihn +versöhnt|habend -würden|wir|überreden.
+
+[101] ἤτοι(Pt) ὅ(Pr)(N) γ’(Pt) ὣς(Av) +εἰπὼν(AorS)(Akt)(N) κατ’(Prp) ἄρ’(Pt) -ἕζετο(Imp)(M/P)· τοῖσι(Pr)(D) δ’(Pt) -ἀνέστη(AorS)(Akt)
+[101] freilich der ja so +gesagt|habend hinab da -setzte|sich; denen aber -stand|auf
+
+[102] #ἥρως(N) #Ἀτρεΐδης(N) εὐρὺ(Av) +κρείων(Pre)(Akt)(N) #Ἀγαμέμνων(N)
+[102] #Held #Atreide weit +herrschend #Agamemnon
+
+[103] +ἀχνύμενος(Pre)(M/P)(N)· #μένεος(G) δὲ(Pt) μέγα(Av) #φρένες(N) +ἀμφιμέλαιναι(Aj)(N)
+[103] +trauernd; #des|Zorns aber sehr #Gemüter +ringsum|schwarz
+
+[104] -πίμπλαντ’(Imp)(M/P), #ὄσσε(N) δέ(Pt) οἱ(Pr)(D) #πυρὶ(D) +λαμπετόωντι(Pre)(Akt)(D) -ἐΐκτην(Imp)(Akt)·
+[104] -füllten|sich, #Augen aber ihm #mit|Feuer +glänzendem -glichen;
+
+[105] #Κάλχαντα(A) πρώτιστα(Av)(Sup) +κάκ’(Aj)(A) +ὀσσόμενος(Pre)(M/P)(N) -προσέειπε(AorS)(Akt)·
+[105] #Kalchas zuerst +böse +drohend|blickend -sprach|zu;
+
+[106] #μάντι(V) +κακῶν(Aj)(G) οὐ(Pt) πώ(Pt) ποτέ(Pt) μοι(Pr)(D) τὸ(A) +κρήγυον(Aj)(A) -εἶπας(AorS)(Akt)·
+[106] #Seher +der|Übel nicht je einmal mir das +Günstige -hast|gesagt;
+
+[107] αἰεί(Av) τοι(Pr)(D) τὰ(A) +κάκ’(Aj)(A) -ἐστὶ(Pre)(Akt) +φίλα(Aj)(A) #φρεσὶ(D) -μαντεύεσθαι(Pre)(M/P)(Inf),
+[107] immer dir die +üblen -ist +lieb #im|Geist -zu|weissagen,
+
+[108] +ἐσθλὸν(Aj)(A) δ’(Pt) οὔτέ(Ko) τί(Pr)(A) πω(Pt) -εἶπας(AorS)(Akt) #ἔπος(A) οὔτ’(Ko) -ἐτέλεσσας(Aor)(Akt)·
+[108] +Gutes aber weder irgend|etwas je -hast|gesagt #Wort noch -hast|vollendet;
+
+[109] καὶ(Ko) νῦν(Av) ἐν(Prp) #Δαναοῖσι(D) +θεοπροπέων(Pre)(Akt)(N) -ἀγορεύεις(Pre)(Akt)
+[109] und nun in #den|Danaern +weissagend -sprichst
+
+[110] ὡς(Ko) δὴ(Pt) τοῦδ’(Pr)(G) ἕνεκά(Prp) σφιν(Pr)(D) +ἑκηβόλος(Aj)(N) #ἄλγεα(A) -τεύχει(Pre)(Akt),
+[110] dass eben dieses um|willen ihnen +fern|schießend #Schmerzen -bereitet,
+
+[111] οὕνεκ’(Ko) ἐγὼ(Pr)(N) #κούρης(G) #Χρυσηΐδος(G) +ἀγλά’(Aj)(A) #ἄποινα(A)
+[111] weil ich #des|Mädchens #der|Chryseïs +herrliche #Lösegeld
+
+[112] οὐκ(Pt) -ἔθελον(Imp)(Akt) -δέξασθαι(Aor)(Med)(Inf), ἐπεὶ(Ko) πολὺ(Av) -βούλομαι(Pre)(Med) αὐτὴν(Pr)(A)
+[112] nicht -wollte -zu|empfangen, da sehr -will|ich sie
+
+[113] οἴκοι(Av) -ἔχειν(Pre)(Akt)(Inf)· καὶ(Ko) γάρ(Pt) ῥα(Pt) #Κλυταιμνήστρης(G) -προβέβουλα(Per)(Akt)
+[113] zu|Hause -zu|haben; und denn ja #der|Klytaimnestra -vor|gezogen|habe
+
+[114] +κουριδίης(Aj)(G) #ἀλόχου(G), ἐπεὶ(Ko) οὔ(Pt) ἑθέν(Pr)(G) -ἐστι(Pre)(Akt) +χερείων(Aj)(N)(Kmp),
+[114] +ehelichen #Ehefrau, da nicht von|ihr -ist +geringer,
+
+[115] οὐ(Pt) #δέμας(A) οὐδὲ(Ko) #φυήν(A), οὔτ’(Ko) ἂρ(Pt) #φρένας(A) οὔτέ(Ko) τι(Pr)(A) #ἔργα(A).
+[115] nicht #Körper noch #Wuchs, weder eben #Sinn noch irgend|etwas #Werke.
+
+[116] ἀλλὰ(Ko) καὶ(Ko) ὧς(Av) -ἐθέλω(Pre)(Akt) -δόμεναι(Aor)(Med)(Inf) πάλιν(Av) εἰ(Ko) τὸ(Art)(N) γ’(Pt) +ἄμεινον(Aj)(N)(Kmp)·
+[116] aber auch so -will|ich -zu|geben wieder wenn das ja +besser;
+
+[117] -βούλομ’(Pre)(Med) ἐγὼ(Pr)(N) #λαὸν(A) +σῶν(Aj)(A) -ἔμμεναι(Pre)(Akt)(Inf) ἢ(Ko) -ἀπολέσθαι(Aor)(Med)(Inf)·
+[117] -will|ich ich #Volk +heil -zu|sein oder -zu|verderben;
+
+[118] αὐτὰρ(Pt) ἐμοὶ(Pr)(D) #γέρας(A) αὐτίχ’(Av) -ἑτοιμάσατ’(Aor)(Akt)(Imv) ὄφρα(Ko) μὴ(Pt) +οἶος(Aj)(N)
+[118] aber mir #Ehrengabe sogleich -bereitet damit nicht +allein
+
+[119] #Ἀργείων(G) +ἀγέραστος(Aj)(N) -ἔω(Pre)(Akt), ἐπεὶ(Ko) οὐδὲ(Ko) -ἔοικε(Per)(Akt)·
+[119] #der|Argiver +ohne|Ehrengabe -bin, da auch|nicht -ziemt|sich;
+
+[120] -λεύσσετε(Pre)(Akt) γὰρ(Pt) τὸ(Art)(A) γε(Pt) +πάντες(Aj)(N) ὅ(Pr)(N) μοι(Pr)(D) #γέρας(N) -ἔρχεται(Pre)(M/P) ἄλλῃ(Av).
+[120] -schaut denn das ja +alle was mir #Ehrengabe -kommt anders|hin.
+
+[121] τὸν(Art)(A) δ’(Pt) -ἠμείβετ’(Imp)(M/P) ἔπειτα(Av) +ποδάρκης(Aj)(N) +δῖος(Aj)(N) #Ἀχιλλεύς(N)·
+[121] den aber -antwortete dann +fuß|schnell +göttlicher #Achilleus·
+
+[122] #Ἀτρεΐδη(V) +κύδιστε(Aj)(V)(Sup) +φιλοκτεανώτατε(Aj)(V)(Sup) +πάντων(Aj)(G),
+[122] #Atreide +ruhm|reichster +besitz|gierigster +aller,
+
+[123] πῶς(Av) γάρ(Pt) τοι(Pr)(D) -δώσουσι(Fu)(Akt) #γέρας(A) +μεγάθυμοι(Aj)(N) #Ἀχαιοί(N);
+[123] wie denn dir -werden|geben #Ehrengabe +groß|mütige #Achaier;
+
+[124] οὐδέ(Ko) τί(Pr)(A) που(Pt) -ἴδμεν(Per)(Akt) #ξυνήϊα(A) +κείμενα(Per)(M/P)(A) +πολλά(Aj)(A)·
+[124] und|nicht irgend|etwas wohl -wissen|wir #Gemein|Güter +liegend +viele·
+
+[125] ἀλλὰ(Ko) τὰ(Art)(A) μὲν(Pt) #πολίων(G) -ἐξεπράθομεν(Aor)(Akt), τὰ(Art)(N) -δέδασται(Per)(M/P),
+[125] aber die zwar #der|Städte -aus|plünderten|wir, die -sind|verteilt,
+
+[126] #λαοὺς(A) δ’(Pt) οὐκ(Pt) -ἐπέοικε(Per)(Akt) +παλίλλογα(Aj)(A) ταῦτ’(Pr)(A) -ἐπαγείρειν(Pre)(Akt)(Inf).
+[126] #Völker aber nicht -ziemt +wieder|gesagte diese -auf|zu|häufen.
+
+[127] ἀλλὰ(Ko) σύ(Pr)(N) μὲν(Pt) νῦν(Av) τήνδε(Pr)(A) #θεῷ(D) -πρόες(Aor)(Akt)(Imv)· αὐτὰρ(Pt) #Ἀχαιοὶ(N)
+[127] aber du zwar jetzt diese #dem|Gott -gib; aber #Achaier
+
+[128] +τριπλῇ(Aj)(D) +τετραπλῇ(Aj)(D) τ’(Pt) -ἀποτείσομεν(Fu)(Akt), αἴ(Ko) κέ(Pt) ποθι(Pt) #Ζεὺς(N)
+[128] +dreifach +vierfach und -werden|wir|vergelten, wenn wohl einmal #Zeus
+
+[129] -δῷσι(Aor)(Akt)(Kon) #πόλιν(A) #Τροίην(A) +εὐ|τείχεον(Aj)(A) -ἐξα|λαπάξαι(Aor)(Akt)(Inf).
+[129] -gebe #Stadt #Troja +gut|befestigte -aus|plündern.
+
+[130] τὸν(Art)(A) δ’(Pt) +ἀπαμειβόμενος(Pre)(M/P)(N) -προσέφη(AorS)(Akt) #κρείων(N) #Ἀγαμέμνων(N)·
+[130] den aber +antwortend -sprach #Herrscher #Agamemnon·
+
+[131] μή(Pt) δ’(Pt) οὕτως(Av) +ἀγαθός(Aj)(N) περ(Pt) +ἐὼν(Pre)(Akt)(N) +θεοείκελ’(Aj)(V) #Ἀχιλλεῦ(V)
+[131] nicht aber so +gut eben +seiend +götter|gleich #o|Achilleus
+
+[132] -κλέπτε(Pre)(Akt)(Imv) #νόῳ(D), ἐπεὶ(Ko) οὐ(Pt) -παρελεύσεαι(Fu)(Med) οὐδέ(Ko) με(Pr)(A) -πείσεις(Fu)(Akt).
+[132] -betrüge #mit|Sinn, da nicht -wirst|entkommen und|nicht mich -wirst|überzeugen.
+
+[133] ἦ(Pt) -ἐθέλεις(Pre)(Akt) ὄφρ’(Ko) αὐτὸς(Pr)(N) -ἔχῃς(Pre)(Akt)(Kon) #γέρας(A), αὐτὰρ(Pt) ἔμ’(Pr)(A) αὔτως(Av)
+[133] wahrlich -willst damit selbst -habest #Ehrengabe, aber mich einfach|so
+
+[134] -ἧσθαι(Per)(M/P)(Inf) +δευόμενον(Pre)(M/P)(A), -κέλεαι(Pre)(M/P) δέ(Pt) με(Pr)(A) τήνδ’(Pr)(A) -ἀποδοῦναι(Aor)(Akt)(Inf);
+[134] -zu|sitzen +bedürftig, -heißt|du aber mich diese -zurück|zugeben;
+
+[135] ἀλλ’(Ko) εἰ(Ko) μὲν(Pt) -δώσουσι(Fu)(Akt) #γέρας(A) +μεγάθυμοι(Aj)(N) #Ἀχαιοὶ(N)
+[135] aber wenn zwar -werden|geben #Ehrengabe +groß|mütige #Achaier
+
+[136] +ἄρσαντες(Aor)(Akt)(N) κατὰ(Prp) #θυμὸν(A) ὅπως(Ko) +ἀντάξιον(Aj)(A) -ἔσται(Fu)(Med)·
+[136] +gut|machend nach #Sinn damit +gleich|wert -wird|sein·
+
+[137] εἰ(Ko) δέ(Pt) κε(Pt) μὴ(Pt) -δώωσιν(Aor)(Akt)(Kon) ἐγὼ(Pr)(N) δέ(Pt) κεν(Pt) αὐτὸς(Pr)(N) -ἕλωμαι(Aor)(Med)(Kon)
+[137] wenn aber wohl nicht -geben|mögen ich aber wohl selbst -nehme|mir
+
+[138] ἢ(Ko) +τεὸν(Aj)(A) ἢ(Ko) #Αἴαντος(G) +ἰὼν(Pre)(Akt)(N) #γέρας(A), ἢ(Ko) #Ὀδυσῆος(G)
+[138] oder +deine oder #des|Aias +gehend #Ehrengabe, oder #des|Odysseus
+
+[139] -ἄξω(Fu)(Akt) +ἑλών(Aor)(Akt)(N)· ὃ(Pr)(N) δέ(Pt) κεν(Pt) -κεχολώσεται(Fu)(M/P) ὅν(Pr)(A) κεν(Pt) -ἵκωμαι(Aor)(Med)(Kon).
+[139] -werde|führen +genommen|habend; der aber wohl -wird|zürnen den wohl -erreiche|ich.
+
+[140] ἀλλ’(Ko) ἤτοι(Pt) μὲν(Pt) ταῦτα(Pr)(A) -μεταφρασόμεσθα(Fu)(Med) καὶ(Ko) αὖτις(Av),
+[140] aber freilich zwar dies|e -werden|wir|beraten und wiederum,
+
+[141] νῦν(Av) δ’(Pt) -ἄγε(Pre)(Akt)(Imv) #νῆα(A) +μέλαιναν(Aj)(A) -ἐρύσσομεν(Fu)(Akt) εἰς(Prp) #ἅλα(A) +δῖαν(Aj)(A),
+[141] jetzt aber -komm #Schiff +schwarz -werden|ziehen in #Meer +göttlich,
+
+[142] ἐν(Prp) δ’(Pt) #ἐρέτας(A) ἐπιτηδὲς(Av) -ἀγείρομεν(Pre)(Akt), ἐς(Prp) δ’(Pt) #ἑκατόμβην(A)
+[142] in aber #Ruderer zweckmäßig -versammeln, in aber #Hekatombe
+
+[143] -θείομεν(Pre)(Akt), ἂν(Pt) δ’(Pt) αὐτὴν(Pr)(A) #Χρυσηΐδα(A) +καλλιπάρῃον(Aj)(A)
+[143] -setzen|wir, wohl aber sie #Chryseïs +schön|wangig
+
+[144] -βήσομεν(Fu)(Akt)· +εἷς(Aj)(N) δέ(Pt) τις(Pr)(N) #ἀρχὸς(N) #ἀνὴρ(N) +βουληφόρος(Aj)(N) -ἔστω(Pre)(Akt)(Imv),
+[144] -werden|gehen; +ein aber irgend|einer #Anführer #Mann +Rats|tragend -sei,
+
+[145] ἢ(Ko) #Αἴας(N) ἢ(Ko) #Ἰδομενεὺς(N) ἢ(Ko) +δῖος(Aj)(N) #Ὀδυσσεὺς(N)
+[145] oder #Aias oder #Idomeneus oder +göttlich #Odysseus
+
+[146] ἠὲ(Ko) σὺ(Pr)(N) #Πηλεΐδη(V) +πάντων(Aj)(G) +ἐκπαγλότατ’(Aj)(N)(Sup) #ἀνδρῶν(G),
+[146] oder du #Peleus|Sohn +aller +schrecklichst #der|Männer,
+
+[147] ὄφρ’(Ko) ἥμιν(Pr)(D) +ἑκάεργον(Aj)(A) -ἱλάσσεαι(Pre)(Med) #ἱερὰ(A) +ῥέξας(Aor)(Akt)(N).
+[147] damit uns +fern|wirkend -versöhnst|du #heilige|Opfer +vollbracht|habend.
+
+[148] τὸν(Art)(A) δ’(Pt) ἄρ’(Pt) ὑπόδρα(Av) +ἰδὼν(Aor)(Akt)(N) -προσέφη(Aor)(Akt) #πόδας(A) +ὠκὺς(Aj)(N) #Ἀχιλλεύς(N)·
+[148] den aber also unter|den|Brauen|her +gesehen|habend -sprach|an #der|Füße +schnell #Achilleus;
+
+[149] ’ὤ(ij) μοι(Pr)(D) #ἀναιδείην(A) +ἐπιειμένε(Per)(M/P)(V) +κερδαλεόφρον(Aj)(V)
+[149] o mir #Unverschämtheit +bekleidet +gewinn|sinnig
+
+[150] πῶς(Av) τίς(Pr)(N) τοι(Pr)(D) +πρόφρων(Aj)(N) #ἔπεσιν(D) -πείθηται(Pre)(M/P)(Kon) #Ἀχαιῶν(G)
+[150] wie wer dir +willig #Worten -würde|gehorchen #der|Achaier
+
+[151] ἢ(Ko) #ὁδὸν(A) -ἐλθέμεναι(Aor)(Akt)(Inf) ἢ(Ko) #ἀνδράσιν(D) ἶφι(Av) -μάχεσθαι(Pre)(Med)(Inf);
+[151] oder #Weg -zu|kommen oder #mit|Männern mit|Kraft -zu|kämpfen;
+
+[152] οὐ(Pt) γὰρ(Pt) ἐγὼ(Pr)(N) #Τρώων(G) ἕνεκ’(Prp) -ἤλυθον(Aor)(Akt) #αἰχμητάων(G)
+[152] nicht denn ich #der|Troer um|willen -kam #der|Speerträger
+
+[153] δεῦρο(Av) +μαχησόμενος(Fu)(Med)(N), ἐπεὶ(Ko) οὔ(Pt) τί(Pr)(A) μοι(Pr)(D) +αἴτιοί(Aj)(N) -εἰσιν(Pre)(Akt)·
+[153] hierher +kämpfen|werdend, da nicht irgend|etwas mir +schuldig -sind;
+
+[154] οὐ(Pt) γὰρ(Pt) πώποτ’(Av) +ἐμὰς(Aj)(A) #βοῦς(A) -ἤλασαν(Aor)(Akt) οὐδὲ(Ko) μὲν(Pt) #ἵππους(A),
+[154] nicht denn jemals +meine #Rinder -trieben auch|nicht zwar #Pferde,
+
+[155] οὐδέ(Ko) ποτ’(Pt) ἐν(Prp) #Φθίῃ(D) +ἐριβώλακι(Aj)(D) +βωτιανείρῃ(Aj)(D)
+[155] auch|nicht einmal in #Phthia +reich|an|Schollen +männer|nährend
+
+[156] #καρπὸν(A) -ἐδηλήσαντ’(Aor)(Med), ἐπεὶ(Ko) ἦ(Pt) μάλα(Av) +πολλὰ(Aj)(A) μεταξὺ(Av)
+[156] #Frucht -schädigten, da wahrlich sehr +viele zwischen
+
+[157] #οὔρεά(A) τε(Pt) +σκιόεντα(Aj)(A) #θάλασσά(A) τε(Pt) +ἠχήεσσα(Aj)(A)·
+[157] #Berge und +schatten|reich #Meer und +hallend;
+
+[158] ἀλλὰ(Ko) σοί(Pr)(D) ὦ(ij) μέγ’(Av) +ἀναιδὲς(Aj)(V) ἅμ’(Av) -ἑσπόμεθ’(Aor)(Med) ὄφρα(Ko) σὺ(Pr)(N) -χαίρῃς(Pre)(Akt)(Kon),
+[158] aber dir o sehr +schamlos zusammen -folgten|wir damit du -freuest,
+
+[159] #τιμὴν(A) +ἀρνύμενοι(Pre)(Med)(N) #Μενελάῳ(D) σοί(Pr)(D) τε(Pt) +κυνῶπα(Aj)(V)
+[159] #Ehre +erringend #Menelaos dir und +Hunde|äugiger
+
+[160] πρὸς(Prp) #Τρώων(G)· τῶν(Art)(G) οὔ(Pt) τί(Pr)(A) -μετατρέπῃ(Pre)(M/P) οὐδ’(Ko) -ἀλεγίζεις(Pre)(Akt)·
+[160] gegen #der|Troer; der nicht irgend|etwas -wendest|du|dich auch|nicht -beachtest|du;
+
+[161] καὶ(Ko) δή(Pt) μοι(Pr)(D) #γέρας(A) +αὐτὸς(Aj)(N) -ἀφαιρήσεσθαι(Fu)(Med)(Inf) -ἀπειλεῖς(Pre)(Akt),
+[161] und eben mir #Ehren|gabe +selbst -weg|zu|nehmen -drohst|du,
+
+[162] ᾧ(Pr)(D) ἔπι(Prp) πολλὰ(Av) -μόγησα(Aor)(Akt), -δόσαν(Aor)(Akt) δέ(Pt) μοι(Pr)(D) #υἷες(N) #Ἀχαιῶν(G).
+[162] #dem auf viel -mühte|ich, -gaben aber mir #Söhne #der|Achaier.
+
+[163] οὐ(Pt) μὲν(Pt) σοί(Pr)(D) ποτε(Pt) +ἶσον(Aj)(A) -ἔχω(Pre)(Akt) #γέρας(A) ὁππότ’(Ko) #Ἀχαιοὶ(N)
+[163] nicht zwar dir jemals +gleich -habe|ich #Ehren|gabe wenn|immer #Achaier
+
+[164] #Τρώων(G) -ἐκπέρσωσ’(Aor)(Akt) εὖ(Av) +ναιόμενον(Pre)(M/P)(A) #πτολίεθρον(A)·
+[164] #der|Troer -aus|plündern gut +bewohnt #Stadt;
+
+[165] ἀλλὰ(Ko) τὸ(Art)(A) μὲν(Pt) +πλεῖον(Aj)(A) +πολυάϊκος(Aj)(G) #πολέμοιο(G)
+[165] aber das +mehr +viel|streitigen #des|Krieges
+
+[166] #χεῖρες(N) +ἐμαὶ(Aj)(N) -διέπουσ’(Pre)(Akt)· ἀτὰρ(Ko) ἤν(Ko) ποτε(Pt) #δασμὸς(N) -ἵκηται(Aor)(Med)(Kon),
+[166] #Hände +meine -führen; aber wenn jemals #Verteilung -kommen|sollte,
+
+[167] σοί(Pr)(D) τὸ(Art)(N) #γέρας(N) +πολὺ(Aj)(N) +μεῖζον(Aj)(N), ἐγὼ(Pr)(N) δ’(Pt) +ὀλίγον(Aj)(A) τε(Pt) +φίλον(Aj)(A) τε(Pt)
+[167] dir das #Ehren|gabe +viel +größer, ich aber +wenig und +lieb und
+
+[168] -ἔρχομ’(Pre)(M/P) +ἔχων(Pre)(Akt)(N) ἐπὶ(Prp) #νῆας(A), ἐπεί(Ko) κε(Pt) -κάμω(Aor)(Akt)(Kon) +πολεμίζων(Pre)(Akt)(N).
+[168] -gehe +haltend auf #Schiffe, da wohl -müde|werde -kriegend.
+
+[169] νῦν(Av) δ’(Pt) -εἶμι(Pre)(Akt) #Φθίην(A) δ’(Pt), ἐπεὶ(Ko) ἦ(Pt) πολὺ(Av) +φέρτερόν(Aj)(N) -ἐστιν(Pre)(Akt)
+[169] nun aber -gehe|ich #Phthia aber, da wahrlich viel +besser -ist
+
+[170] οἴκαδ’(Av) -ἴμεν(Pre)(Inf)(Akt) σὺν(Prp) #νηυσὶ(D) +κορωνίσιν(Aj)(D), οὐδέ(Ko) σ’(Pr)(A) -ὀΐω(Pre)(M/P)
+[170] heimwärts -zu|gehen mit #Schiffen +schnabel|gekrümmten, und|nicht dich -meine|ich
+
+(171) ἐνθάδ’(Av) +ἄτιμος(Aj)(N) +ἐὼν(Pre)(Akt)(N) #ἄφενος(A) καὶ(Ko) #πλοῦτον(A) -ἀφύξειν(Fu)(Inf)(Akt).
+(171) hier +ehrlos +seiend #Wohlstand und #Reichtum -an|zu|häufen.
+
+(172) τὸν(Art)(A) δ’(Pt) -ἠμείβετ’(Imp)(M/P) ἔπειτα(Av) #ἄναξ(N) #ἀνδρῶν(G) #Ἀγαμέμνων(N)·
+(172) den aber -antwortete dann #Herr #der|Männer #Agamemnon·
+
+(173) -φεῦγε(Pre)(Akt)(Imv) μάλ’(Av) εἴ(Ko) τοι(Pr)(D) #θυμὸς(N) -ἐπέσσυται(Per)(M/P), οὐδέ(Ko) σ’(Pr)(A) ἔγωγε(Pr)(N)
+(173) -flieh sehr wenn dir #Sinn -hat|sich|auf|gestürzt, und|nicht dich ich|selbst
+
+(174) -λίσσομαι(Pre)(M/P) ἕνεκ’(Prp) ἐμεῖο(Pr)(G) -μένειν(Pre)(Inf)(Akt)· πάρ’(Prp) ἔμοιγε(Pr)(D) καὶ(Ko) +ἄλλοι(Aj)(N)
+(174) -bitte um|willen meines -zu|bleiben; bei mir|ja und +andere
+
+(175) οἵ(Pr)(N) κέ(Pt) με(Pr)(A) -τιμήσουσι(Fu)(Akt), μάλιστα(Av)(Sup) δὲ(Pt) +μητίετα(Aj)(N) #Ζεύς(N).
+(175) die wohl mich -ehren|werden, am|meisten aber +rat|kundige #Zeus.
+
+(176) +ἔχθιστος(Aj)(N)(Sup) δέ(Pt) μοι(Pr)(D) -ἐσσι(Pre)(Akt) +διοτρεφέων(Aj)(G) #βασιλήων(G)·
+(176) +verhasst|ester aber mir -bist|du +zeus|genährten #der|Könige;
+
+(177) αἰεὶ(Av) γάρ(Pt) τοι(Pr)(D) #ἔρις(N) τε(Pt) +φίλη(Aj)(N) #πόλεμοί(N) τε(Pt) #μάχαι(N) τε(Pt)·
+(177) immer denn dir #Zank und +lieb #Kriege und #Kämpfe und;
+
+(178) εἰ(Ko) μάλα(Av) +καρτερός(Aj)(N) -ἐσσι(Pre)(Akt), #θεός(N) που(Pt) σοὶ(Pr)(D) τό(Art)(A) γ’(Pt) -ἔδωκεν(Aor)(Akt)·
+(178) wenn sehr +stark -bist|du, #Gott wohl dir das ja -gab;
+
+(179) οἴκαδ’(Av) +ἰὼν(Pre)(Akt)(N) σὺν(Prp) #νηυσί(D) τε(Pt) +σῇς(Aj)(D) καὶ(Ko) +σοῖς(Aj)(D) #ἑτάροισι(D)
+(179) heimwärts +gehend mit #Schiffen und +deinen und +deinen #Gefährten
+
+(180) #Μυρμιδόνεσσιν(D) -ἄνασσε(Pre)(Akt)(Imv), σέθεν(Pr)(G) δ’(Pt) ἐγὼ(Pr)(N) οὐκ(Pt) -ἀλεγίζω(Pre)(Akt),
+(180) #Myrmidonen -herrsche, deiner aber ich nicht -achte,
+
+(181) οὐδ’(Pt) -ὄθομαι(Pre)(M/P) +κοτέοντος(Pre)(Akt)(G)· -ἀπειλήσω(Fu)(Akt) δέ(Pt) τοι(Pr)(D) ὧδε(Av)·
+(181) und|nicht -achte +des|Zürnenden; -werde|drohen aber dir so;
+
+(182) ὡς(Ko) ἔμ’(Pr)(A) -ἀφαιρεῖται(Pre)(M/P) #Χρυσηΐδα(A) #Φοῖβος(N) #Ἀπόλλων(N),
+(182) wie mich -nimmt|weg #Chryseis #Phoibos #Apollon,
+
+(183) τὴν(Art)(A) μὲν(Pt) ἐγὼ(Pr)(N) σὺν(Prp) #νηΐ(D) τ’(Pt) +ἐμῇ(Aj)(D) καὶ(Ko) +ἐμοῖς(Aj)(D) #ἑτάροισι(D)
+(183) die zwar ich mit #Schiff und +meinem und +meinen #Gefährten
+
+(184) -πέμψω(Fu)(Akt), ἐγὼ(Pr)(N) δέ(Pt) κ’(Pt) -ἄγω(Pre)(Akt) #Βρισηΐδα(A) +καλλιπάρῃον(Aj)(A)
+(184) -werde|senden, ich aber wohl -führe #Briseis +schön|wangige
+
+(185) αὐτὸς(Pr)(N) +ἰὼν(Pre)(Akt)(N) #κλισίην(A) δὲ(Pt) τὸ(Art)(A) +σὸν(Aj)(A) #γέρας(A) ὄφρ’(Ko) ἐῢ(Av) -εἰδῇς(Per)(Akt)(Kon)
+(185) selbst +gehend #Zelt aber das +deinen #Ehren|lohn damit gut -erkennest
+
+(186) ὅσσον(Pr)(A) +φέρτερός(Aj)(N)(Kmp) -εἰμι(Pre)(Akt) σέθεν(Pr)(G), -στυγέῃ(Pre)(Akt)(Kon) δὲ(Pt) καὶ(Ko) +ἄλλος(Aj)(N)
+(186) wie|viel +besser -bin deiner, -verabscheue aber auch +ein|anderer
+
+(187) ἶσον(Av) ἐμοὶ(Pr)(D) -φάσθαι(Aor)(Med)(Inf) καὶ(Ko) -ὁμοιωθήμεναι(Aor)(Pas)(Inf) ἄντην(Av).
+(187) gleich mir -zu|sagen und -gleich|zu|werden gegenüber.
+
+(188) ὣς(Av) -φάτο(Aor)(Med) #Πηλεΐωνι(D) δ’(Pt) #ἄχος(N) -γένετ’(Aor)(Med), ἐν(Prp) δὲ(Pt) οἱ(Pr)(D) #ἦτορ(N)
+(188) so -sprach #dem|Peleiden aber #Kummer -wurde, in aber ihm #Herz
+
+(189) #στήθεσσιν(D) +λασίοισι(Aj)(D) διάνδιχα(Av) -μερμήριξεν(Aor)(Akt),
+(189) #in|den|Brüsten +haarigen zweifach -überlegte,
+
+(190) ἢ(Ko) ὅ(Pr)(N) γε(Pt) #φάσγανον(A) +ὀξὺ(Aj)(A) +ἐρυσσάμενος(Aor)(Med)(N) παρὰ(Prp) #μηροῦ(G)
+(190) oder der ja #Schwert +scharf +gezogen|habend neben #des|Schenkels
+
+(191) τοὺς(Art)(A) μὲν(Pt) -ἀναστήσειεν(Aor)(Akt)(Op), ὃ(Pr)(N) δ’(Pt) #Ἀτρεΐδην(A) -ἐναρίζοι(Pre)(Akt)(Op),
+(191) jene zwar -würde|auf|richten, der aber #Atreiden -würde|töten,
+
+(192) ἦε(Ko) #χόλον(A) -παύσειεν(Aor)(Akt)(Op) -ἐρητύσειέ(Aor)(Akt)(Op) τε(Pt) #θυμόν(A).
+(192) oder #Zorn -würde|beenden -würde|zügeln und #Sinn.
+
+(193) ἧος(Ko) ὃ(Pr)(N) ταῦθ’(Pr)(A) -ὥρμαινε(Imp)(Akt) κατὰ(Prp) #φρένα(A) καὶ(Ko) κατὰ(Prp) #θυμόν(A),
+(193) während er dies|e -überlegte nach #Verstand und nach #Sinn,
+
+(194) -ἕλκετο(Imp)(Med) δ’(Pt) ἐκ(Prp) #κολεοῖο(G) +μέγα(Aj)(A) #ξίφος(A), -ἦλθε(AorS)(Akt) δ’(Pt) #Ἀθήνη(N)
+(194) -zog aber aus #der|Scheide +großes #Schwert, -kam aber #Athene
+
+(195) οὐρανόθεν(Av)· πρὸ(Prp) γὰρ(Pt) -ἧκε(AorS)(Akt) #θεὰ(N) +λευκώλενος(Aj)(N) #Ἥρη(N)
+(195) vom|Himmel|her; zuvor denn -sandte #Göttin +weiß|armige #Hera
+
+(196) ἄμφω(Pr)(A) ὁμῶς(Av) #θυμῷ(D) +φιλέουσά(Pre)(Akt)(N) τε(Pt) +κηδομένη(Pre)(M/P)(N) τε(Pt)·
+(196) beide gleich #im|Sinn +liebend und +sorgend und;
+
+(197) -στῆ(AorS)(Akt) δ’(Pt) ὄπιθεν(Av), +ξανθῆς(Aj)(G) δὲ(Pt) #κόμης(G) -ἕλε(AorS)(Akt) #Πηλεΐωνα(A)
+(197) -stand aber von|hinten, +blonden aber #des|Haares -ergriff #Peleiden
+
+(198) +οἴῳ(Aj)(D) +φαινομένη(Pre)(M/P)(N)· τῶν(Art)(G) δ’(Pt) +ἄλλων(Aj)(G) οὔ(Pt) τις(Pr)(N) -ὁρᾶτο(Imp)(M/P)·
+(198) +allein +erscheinend; der aber +anderen nicht irgend|einer -wurde|gesehen;
+
+(199) -θάμβησεν(Aor)(Akt) δ’(Pt) #Ἀχιλεύς(N), μετὰ(Prp) δ’(Pt) -ἐτράπετ’(AorS)(Med), αὐτίκα(Av) δ’(Pt) -ἔγνω(AorS)(Akt)
+(199) -staunte aber #Achilleus, nachher aber -wandte|sich, sofort aber -erkannte
+
+(200) #Παλλάδ’(A) #Ἀθηναίην(A)· +δεινὼ(Aj)(N) δέ(Pt) οἱ(Pr)(D) #ὄσσε(N) -φάανθεν(AorS)(Akt)·
+(200) #Pallas #Athene; +furcht|bar aber ihm #Augen -leuchteten;
+
+(201) καί(Ko) μιν(Pr)(A) +φωνήσας(Aor)(Akt)(N) #ἔπεα(A) +πτερόεντα(Aj)(A) -προσηύδα(Imp)(Akt)·
+(201) und ihn +angeredet|habend #Worte +geflügelte -sprach|an;
+
+(202) τίπτ’(Av) αὖτ’(Av) +αἰγιόχοιο(Aj)(G) #Διὸς(G) #τέκος(V) -εἰλήλουθας(Per)(Akt);
+(202) warum|denn wiederum +Ägis|tragenden #des|Zeus #Kind -bist|gekommen?
+
+(203) ἦ(Pt) ἵνα(Ko) #ὕβριν(A) -ἴδῃς(Aor)(Akt)(Kon) #Ἀγαμέμνονος(G) #Ἀτρεΐδαο(G);
+(203) ist|es damit #Übermut -sehen|mögest #des|Agamemnon #des|Atreiden?
+
+(204) ἀλλ’(Ko) ἔκ(Prp) τοι(Pr)(D) -ἐρέω(Fu)(Akt), τὸ(Art)(A) δὲ(Pt) καὶ(Ko) -τελέεσθαι(Pre)(M/P)(Inf) -ὀΐω(Pre)(Akt)·
+(204) aber aus dir -werde|sagen, dieses aber auch -zu|vollenden -meine|ich;
+
+(205) ᾗς(Pr)(D) #ὑπεροπλίῃσι(D) τάχ’(Av) ἄν(Pt) ποτε(Pt) #θυμόν(A) -ὀλέσσῃς(Aor)(Akt)(Kon).
+(205) durch|welchen #Überheblichkeiten bald wohl einst #Sinn -verlieren|mögest.
+
+(206) τὸν(Pr)(A) δ’(Pt) αὖτε(Av) -προσέειπε(AorS)(Akt) #θεὰ(N) +γλαυκῶπις(Aj)(N) #Ἀθήνη(N)·
+(206) ihn aber wiederum -sprach|an #Göttin +eulen|äugige #Athene;
+
+(207) -ἦλθον(AorS)(Akt) ἐγὼ(Pr)(N) +παύσουσα(Fu)(Akt)(N) τὸ(Art)(A) σὸν(Pr)(A) #μένος(A), αἴ(Ko) κε(Pt) -πίθηαι(Aor)(Med)(Kon),
+(207) -kam ich +stillend|werdend den deinen #Mut, wenn wohl -gehorchst,
+
+(208) οὐρανόθεν(Av)· πρὸ(Prp) δέ(Pt) μ’(Pr)(A) -ἧκε(AorS)(Akt) #θεὰ(N) +λευκώλενος(Aj)(N) #Ἥρη(N)
+(208) vom|Himmel|her; vor aber mich -sandte #Göttin +weiß|armige #Hera
+
+(209) ἄμφω(Pr)(A) ὁμῶς(Av) #θυμῷ(D) +φιλέουσά(Pre)(Akt)(N) τε(Pt) +κηδομένη(Pre)(M/P)(N) τε(Pt)·
+(209) beide gleichermaßen #im|Sinn +liebend und +sorgend und;
+
+(210) ἀλλ’(Ko) -ἄγε(Pre)(Akt)(Imv) -λῆγε(Pre)(Akt)(Imv) #ἔριδος(G), μηδὲ(Ko) #ξίφος(A) -ἕλκεο(Pre)(Med)(Imv) #χειρί(D)·
+(210) aber -auf! -lasse|ab #des|Streites, und|nicht #Schwert -ziehe|dir #mit|der|Hand;
+
+(211) ἀλλ’(Ko) ἤτοι(Pt) #ἔπεσιν(D) μὲν(Pt) -ὀνείδισον(Aor)(Akt)(Imv) ὡς(Ko) -ἔσεταί(Fu)(Med) περ(Pt)·
+(211) aber jedenfalls #mit|Worten zwar -schmähe wie -wird|sein doch;
+
+(212) ὧδε(Av) γὰρ(Pt) -ἐξερέω(Fu)(Akt), τὸ(Art)(N) δὲ(Pt) καὶ(Ko) +τετελεσμένον(Per)(M/P)(N) -ἔσται(Fu)(Med)·
+(212) so denn -werde|ich|aussagen, das aber auch +vollendetes -wird|sein;
+
+(213) καί(Ko) ποτέ(Pt) τοι(Pr)(D) τρὶς(Av) +τόσσα(Aj)(A) -παρέσσεται(Fu)(Med) +ἀγλαὰ(Aj)(A) #δῶρα(A)
+(213) und einst dir dreimal +so|viele -werden|da|sein +herrliche #Gaben
+
+(214) #ὕβριος(G) εἵνεκα(Prp) τῆσδε(Pr)(G)· σὺ(Pr)(N) δ’(Pt) -ἴσχεο(Pre)(Med)(Imv), -πείθεο(Pre)(Med)(Imv) δ’(Pt) ἡμῖν(Pr)(D).
+(214) #der|Hybris um|willen dieser; du aber -halte|dich|zurück, -gehorche aber uns.
+
+(215) τὴν(Art)(A) δ’(Pt) +ἀπαμειβόμενος(Pre)(M/P)(N) -προσέφη(AorS)(Akt) #πόδας(A) +ὠκὺς(Aj)(A) #Ἀχιλλεύς(N)·
+(215) die aber +antwortend -sprach|an #mit|den|Füßen +schneller #Achilleus;
+
+(216) -χρὴ(Pre)(Akt) μὲν(Pt) σφωΐτερον(Av)(Kmp) γε(Pt) #θεὰ(V) #ἔπος(A) -εἰρύσσασθαι(Aor)(Med)(Inf)
+(216) -nötig zwar mehr|für|euch|beide doch #Göttin #Wort -zurückzuhalten
+
+(217) καὶ(Ko) μάλα(Av) περ(Pt) #θυμῷ(D) +κεχολωμένον(Per)(M/P)(A)· ὧς(Av) γὰρ(Pt) ἄμεινον(Av)(Kmp)·
+(217) und sehr doch #im|Sinn +erzürntes; so denn besser;
+
+(218) ὅς(Pr)(N) κε(Pt) #θεοῖς(D) -ἐπιπείθηται(Aor)(M/P)(Kon) μάλα(Av) τ’(Pt) -ἔκλυον(AorS)(Akt) αὐτοῦ(Pr)(G).
+(218) wer wohl #den|Göttern -gehorche sehr und -hörten seiner.
+
+(219) ἦ(Pt) καὶ(Ko) ἐπ’(Prp) +ἀργυρέῃ(Aj)(D) #κώπῃ(D) -σχέθε(AorS)(Akt) #χεῖρα(A) +βαρεῖαν(Aj)(A),
+(219) ja und auf +silbernen #Griff -legte #Hand +schwere,
+
+(220) ἂψ(Av) δ’(Pt) ἐς(Prp) #κουλεὸν(A) -ὦσε(AorS)(Akt) +μέγα(Aj)(A) #ξίφος(A), οὐδ’(Ko) -ἀπίθησε(AorS)(Akt)
+(220) zurück aber in #Scheide -stieß +großes #Schwert, und|nicht -ungehorchte.
+
+(221) #μύθῳ(D) #Ἀθηναίης(G)· ἣ(Pr)(N) δ’(Pt) #Οὔλυμπον(A) δὲ(Pt) -βεβήκει(Plq)(Akt)
+(221) #durch|das|Wort #der|Athene; sie aber #zum|Olymp aber -war|gegangen
+
+(222) #δώματ’(A) ἐς(Prp) +αἰγιόχοιο(Aj)(G) #Διὸς(G) μετὰ(Prp) #δαίμονας(A) +ἄλλους(Aj)(A).
+(222) #Hallen in +Ägis|tragenden #des|Zeus mit #Daimonen +anderen.
+
+(223) #Πηλεΐδης(N) δ’(Pt) ἐξαῦτις(Av) +ἀταρτηροῖς(Aj)(D) #ἐπέεσσιν(D)
+(223) #Peleides aber wieder +kränkenden #Worten
+
+(224) #Ἀτρεΐδην(A) -προσέειπε(AorS)(Akt), καὶ(Ko) οὔ(Pt) πω(Pt) -λῆγε(Imp)(Akt) #χόλοιο(G)·
+(224) #Atreiden -sprach|an, und nicht noch -ließ|ab #des|Zorns;
+
+(225) +οἰνοβαρές(Aj)(V), #κυνὸς(G) #ὄμματ’(A) +ἔχων(Pre)(Akt)(N), #κραδίην(A) δ’(Pt) #ἐλάφοιο(G),
+(225) +weinschwer, #des|Hundes #Augen +habend, #Herz aber #des|Hirsches,
+
+(226) οὔτέ(Ko) ποτ’(Pt) ἐς(Prp) #πόλεμον(A) ἅμα(Av) #λαῷ(D) -θωρηχθῆναι(Aor)(Pas)(Inf)
+(226) weder einst in #Krieg zugleich #mit|Volk -bewaffnet|zu|werden
+
+(227) οὔτε(Ko) #λόχον(A) δ’(Pt) -ἰέναι(Pre)(Inf)(Akt) σὺν(Prp) +ἀριστήεσσιν(Aj)(D) #Ἀχαιῶν(G)
+(227) noch #Hinterhalt aber -gehen mit +Besten #der|Achaier
+
+(228) -τέτληκας(Per)(Akt) #θυμῷ(D)· τὸ(Art)(N) δὲ(Pt) τοι(Pr)(D) #κὴρ(N) -εἴδεται(Pre)(M/P) -εἶναι(Pre)(Inf)(Akt).
+(228) -hast|erduldet #im|Sinn; das aber dir #Verderben -scheint -zu|sein.
+
+(229) ἦ(Pt) πολὺ(Av) λώϊόν(Av)(Kmp) -ἐστι(Pre)(Akt) κατὰ(Prp) #στρατὸν(A) +εὐρὺν(Aj)(A) #Ἀχαιῶν(G)
+(229) ja viel besser -ist durch #Heer +weit #der|Achaier
+
+(230) #δῶρ’(A) -ἀποαιρεῖσθαι(Pre)(Med)(Inf) ὅς(Pr)(N) τις(Pr)(N) σέθεν(Pr)(G) ἀντίον(Av) -εἴπῃ(Aor)(Akt)(Kon)·
+(230) #Gaben -weg|zu|nehmen wer jemand deiner gegenüber -sage;
+
+(231) +δημοβόρος(Aj)(N) #βασιλεὺς(N) ἐπεὶ(Ko) +οὐτιδανοῖσιν(Aj)(D) -ἀνάσσεις(Pre)(Akt)·
+(231) +Volk|verzehrender #König da +Nichtigen -herrschest;
+
+(232) ἦ(Pt) γὰρ(Pt) ἂν(Pt) #Ἀτρεΐδη(V) νῦν(Av) ὕστατα(Av)(Sup) -λωβήσαιο(Aor)(Med)(Op).
+(232) ja denn wohl #Atreide nun zuletzt -würdest|entehren.
+
+(233) ἀλλ’(Ko) ἔκ(Av) τοι(Pr)(D) -ἐρέω(Fu)(Akt) καὶ(Ko) ἐπὶ(Prp) +μέγαν(Aj)(A) #ὅρκον(A) -ὀμοῦμαι(Fu)(Med)·
+(233) aber heraus dir -werde|sagen und auf +großen #Eid -werde|schwören;
+
+(234) ναὶ(Pt) μὰ(Prp) τόδε(Pr)(A) #σκῆπτρον(A), τὸ(Art)(N) μὲν(Pt) οὔ(Pt) ποτε(Pt) #φύλλα(A) καὶ(Ko) #ὄζους(A)
+(234) ja bei dieses #Zepter, das zwar nicht jemals #Blätter und #Zweige
+
+(235) -φύσει(Fu)(Akt), ἐπεὶ(Ko) δὴ(Pt) πρῶτα(Av) #τομὴν(A) ἐν(Prp) #ὄρεσσι(D) -λέλοιπεν(Per)(Akt),
+(235) -wird|treiben, da eben zuerst #Schnitt in #Bergen -hat|verlassen,
+
+(236) οὐδ’(Pt) -ἀναθηλήσει(Fu)(Akt)· περὶ(Prp) γὰρ(Pt) ῥά(Pt) ἑ(Pr)(A) #χαλκὸς(N) -ἔλεψε(Aor)(Akt)
+(236) auch|nicht -wird|wieder|ausschlagen; um denn ja es #Erz -schälte|ab
+
+(237) #φύλλά(A) τε(Pt) καὶ(Ko) #φλοιόν(A)· νῦν(Av) αὖτέ(Pt) μιν(Pr)(A) #υἷες(N) #Ἀχαιῶν(G)
+(237) #Blätter und auch #Rinde; nun aber ihn #Söhne #der|Achaier
+
+(238) ἐν(Prp) #παλάμῃς(D) -φορέουσι(Pre)(Akt) #δικασπόλοι(N), οἵ(Pr)(N) τε(Pt) #θέμιστας(A)
+(238) in #Händen -tragen #Richter, die und #Satzungen
+
+(239) πρὸς(Prp) #Διὸς(G) -εἰρύαται(Pre)(M/P)· ὃ(Pr)(N) δέ(Pt) τοι(Pr)(D) +μέγας(Aj)(N) -ἔσσεται(Fu)(Akt) #ὅρκος(N)·
+(239) bei #des|Zeus -werden|bewahrt; welcher aber dir +groß -wird|sein #Eid;
+
+(240) ἦ(Pt) ποτ’(Pt) #Ἀχιλλῆος(G) #ποθὴ(N) -ἵξεται(Fu)(Med) #υἷας(A) #Ἀχαιῶν(G)
+(240) ja einst #des|Achilles #Sehnsucht -wird|erreichen #Söhne #der|Achaier
+
+(241) +σύμπαντας(Aj)(A)· τότε(Av) δ’(Pt) οὔ(Pt) τι(Pr)(A) -δυνήσεαι(Fu)(Med) +ἀχνύμενος(Pre)(M/P)(N) περ(Pt)
+(241) +alle|zusammen; dann aber nicht irgend|etwas -wirst|können +trauernd doch
+
+(242) -χραισμεῖν(Pre)(Inf)(Akt), εὖτ’(Ko) ἂν(Pt) +πολλοὶ(Aj)(N) ὑφ’(Prp) #Ἕκτορος(N)(G) +ἀνδροφόνοιο(Aj)(G)
+(242) -zu|nützen, wenn auch +viele unter|von #des|Hektor +Mann|tötenden
+
+(243) +θνήσκοντες(Pre)(Akt)(N) -πίπτωσι(Pre)(Akt)(Kon)· σὺ(Pr)(N) δ’(Pt) ἔνδοθι(Av) #θυμὸν(N)(A) -ἀμύξεις(Fu)(Akt)
+(243) +sterbend -fallen; du aber innen #Herz -wirst|zerreißen
+
+(244) +χωόμενος(Pre)(M/P)(N) ὅ(Pr)(A) τ’(Pt) +ἄριστον(Aj)(A)(Sup) #Ἀχαιῶν(N)(G) οὐδὲν(Pr)(A) -ἔτισας(Aor)(Akt).
+(244) +erzürnt was und +Beste #der|Achaier nichts -hast|vergolten.
+
+(245) ὣς(Av) -φάτο(Imp)(Med) #Πηλεΐδης(N), ποτὶ(Prp) δὲ(Pt) #σκῆπτρον(N)(A) -βάλε(AorS)(Akt) #γαίῃ(N)(D)
+(245) so -sprach|er #Pelei|de, hin|zu aber #Zepter -warf #zur|Erde
+
+(246) +χρυσείοις(Aj)(D) #ἥλοισι(N)(D) +πεπαρμένον(Per)(M/P)(A), -ἕζετο(Imp)(Med) δ’(Pt) αὐτός(Pr)(N)·
+(246) +goldenen #Nägeln +durch|stochen, -setzte|sich aber selbst;
+
+(247) #Ἀτρεΐδης(N) δ’(Pt) ἑτέρωθεν(Av) -ἐμήνιε(Imp)(Akt)· τοῖσι(Pr)(D) δὲ(Pt) #Νέστωρ(N)
+(247) #Atreide aber auf|der|anderen|Seite -zürnte; denen aber #Nestor
+
+(248) +ἡδυεπὴς(Aj)(N) -ἀνόρουσε(Aor)(Akt) +λιγὺς(Aj)(N) #Πυλίων(G) #ἀγορητής(N),
+(248) +süß|redend -sprang|auf +hell|tönend #der|Pylier #Redner,
+
+(249) τοῦ(Pr)(G) καὶ(Ko) ἀπὸ(Prp) #γλώσσης(N)(G) #μέλιτος(N)(G) +γλυκίων(Aj)(N)(Kmp) -ῥέεν(Imp)(Akt) #αὐδή(N)·
+(249) dessen und von #Zunge #Honig +süßer -floß #Stimme;
+
+(250) τῷ(Pr)(D) δ’(Pt) ἤδη(Av) +δύο(Aj)(N) μὲν(Pt) #γενεαὶ(N) +μερόπων(Aj)(G) #ἀνθρώπων(N)(G)
+(250) dem aber schon +zwei zwar #Generationen +der|Sterblichen #Menschen
+
+(251) -ἐφθίαθ’(Plq)(Akt), οἵ(Pr)(N) οἱ(Pr)(D) πρόσθεν(Av) ἅμα(Av) -τράφεν(Aor)(Pas) ἠδ’(Ko) -ἐγένοντο(Aor)(Med)
+(251) -waren|verstorben, die ihm zuvor zusammen -wurden|aufgezogen und -wurden|geboren
+
+(252) ἐν(Prp) #Πύλῳ(N)(D) +ἠγαθέῃ(Aj)(D), μετὰ(Prp) δὲ(Pt) +τριτάτοισιν(Aj)(D) -ἄνασσεν(Imp)(Akt)·
+(252) in #Pylos +sehr|gutem, mit aber +dritten -herrschte;
+
+(253) ὅ(Pr)(N) σφιν(Pr)(D) ἐὺ(Av) +φρονέων(Pre)(Akt)(N) -ἀγορήσατο(Aor)(Med) καὶ(Ko) -μετέειπεν(Aor)(Akt)·
+(253) der ihnen gut +denkend -hielt|Rede und -sprach|mit;
+
+(254) ὦ(ij) πόποι(ij) ἦ(Pt) +μέγα(Aj)(A) #πένθος(A) +Ἀχαιΐδα(Aj)(A) #γαῖαν(A) -ἱκάνει(Pre)(Akt)·
+(254) o ach wahrlich +großen #Kummer +achaiische #Erde -erreicht;
+
+(255) ἦ(Pt) κεν(Pt) -γηθήσαι(Aor)(Akt)(Op) #Πρίαμος(N) #Πριάμοιό(G) τε(Pt) #παῖδες(N)
+(255) wahrlich wohl -würde|sich|freuen #Priamos #des|Priamos und #Söhne
+
+(256) +ἄλλοι(Aj)(N) τε(Pt) #Τρῶες(N) μέγα(Av) κεν(Pt) -κεχαροίατο(Per)(M/P)(Op) #θυμῷ(D)
+(256) +andere und #Troer sehr wohl -würden|sich|freuen #im|Herzen
+
+(257) εἰ(Ko) σφῶϊν(Pr)(G) τάδε(Pr)(A) +πάντα(Aj)(A) -πυθοίατο(Aor)(Med)(Op) +μαρναμένοιϊν(Pre)(M/P)(D),
+(257) wenn euch|beider diese +allen -würden|erfahren +kämpfenden|beiden,
+
+(258) οἳ(Pr)(N) περὶ(Prp) μὲν(Pt) #βουλὴν(A) #Δαναῶν(G), περὶ(Prp) δ’(Pt) -ἐστὲ(Pre)(Akt) -μάχεσθαι(Pre)(Inf)(M/P).
+(258) die um zwar #Rat #der|Danaer, um aber -seid -zu|kämpfen.
+
+(259) ἀλλὰ(Ko) -πίθεσθ’(Aor)(Med)(Imv)· ἄμφω(Pr)(N) δὲ(Pt) +νεωτέρω(Aj)(N)(Kmp) -ἐστὸν(Pre)(Akt) ἐμεῖο(Pr)(G)·
+(259) aber -gehorcht! beide aber +jüngeren -seid|ihr|beide meiner;
+
+(260) ἤδη(Av) γάρ(Pt) ποτ’(Pt) ἐγὼ(Pr)(N) καὶ(Ko) +ἀρείοσιν(Aj)(D)(Kmp) ἠέ(Ko) περ(Pt) ὑμῖν(Pr)(D)
+(260) schon denn einst ich und +tapfereren oder doch euch
+
+(261) #ἀνδράσιν(D) -ὡμίλησα(Aor)(Akt), καὶ(Ko) οὔ(Pt) ποτέ(Av) μ’(Pr)(A) οἵ(Pr)(N) γ’(Pt) -ἀθέριζον(Imp)(Akt).
+(261) #mit|Männern -verkehrte|ich, und nicht jemals mich die ja -verachteten.
+
+(262) οὐ(Pt) γάρ(Pt) πω(Av) +τοίους(Aj)(A) -ἴδον(AorS)(Akt) #ἀνέρας(A), οὐδὲ(Ko) -ἴδωμαι(AorS)(Med)(Kon),
+(262) nicht denn noch +solche -sah|ich #Männer, auch|nicht -möge|ich|sehen,
+
+(263) οἷον(Pr)(A) #Πειρίθοόν(A) τε(Pt) #Δρύαντά(A) τε(Pt) #ποιμένα(A) #λαῶν(G)
+(263) wie|etwa #Peirithoos und #Dryas und #Hirten #des|Volkes
+
+(264) #Καινέα(A) τ’(Pt) #Ἐξάδιόν(A) τε(Pt) καὶ(Ko) +ἀντίθεον(Aj)(A) #Πολύφημον(A)
+(264) #Kaineus und #Exadios und +gott|gleich #Polyphēmos
+
+(265) #Θησέα(A) τ’(Pt) #Αἰγεΐδην(A), +ἐπιείκελον(Aj)(A) +ἀθανάτοισιν(Aj)(D)·
+(265) #Theseus und #Aigeiden, +gleich +den|Unsterblichen;
+
+(266) +κάρτιστοι(Aj)(N)(Sup) δὴ(Pt) οἵδε(Pr)(N) +ἐπιχθονίων(Aj)(G) -τράφεν(Aor)(Pas) #ἀνδρῶν(G)·
+(266) +die|stärksten eben diese +der|irdischen -wurden|aufgezogen #Männer;
+
+(267) +κάρτιστοι(Aj)(N)(Sup) μὲν(Pt) -ἔσαν(Imp)(Akt) καὶ(Ko) +καρτίστοις(Aj)(D)(Sup) -ἐμάχοντο(Imp)(M/P)
+(267) +stärksten zwar -waren|sie und +den|stärksten -kämpften|sie
+
+(268) #φηρσὶν(D) +ὀρεσκῴοισι(Aj)(D) καὶ(Ko) ἐκπάγλως(Av) -ἀπόλεσσαν(Aor)(Akt).
+(268) #Kentauren +berg|bewohnenden und außerordentlich -vernichteten|sie.
+
+(269) καὶ(Ko) μὲν(Pt) τοῖσιν(Art)(D) ἐγὼ(Pr)(N) -μεθομίλεον(Imp)(Akt) ἐκ(Prp) #Πύλου(G) +ἐλθὼν(AorS)(Akt)(N)
+(269) und zwar denen ich -verkehrte|ich aus #Pylos +gekommen
+
+(270) τηλόθεν(Av) ἐξ(Prp) +ἀπίης(Aj)(G) #γαίης(G)· -καλέσαντο(Aor)(Med) γὰρ(Pt) αὐτοί(Pr)(N)·
+(270) von|ferne aus +ferner #Erde; -luden|ein denn selbst;
+
+(271) καὶ(Ko) -μαχόμην(Imp)(M/P) κατ’(Prp) ἔμ’(Pr)(A) αὐτὸν(Pr)(A) ἐγώ(Pr)(N)· κείνοισι(Pr)(D) δ’(Pt) ἄν(Pt) οὔ(Pt) τις(Pr)(N)
+(271) und -kämpfte|ich gegen mich selbst ich· jenen aber wohl nicht irgend|einer
+
+(272) τῶν(Art)(G) οἳ(Pr)(N) νῦν(Av) #βροτοί(N)(N) -εἰσιν(Pre)(Akt) +ἐπιχθόνιοι(Aj)(N) -μαχέοιτο(Op)(M/P)·
+(272) derer die jetzt #Sterbliche -sind +irdische -würde|kämpfen·
+
+(273) καὶ(Ko) μέν(Pt) μευ(Pr)(G) #βουλέων(G) -ξύνιεν(Imp)(Akt) -πείθοντό(Imp)(M/P) τε(Pt) #μύθῳ(D)·
+(273) und zwar meiner #Ratschläge -verstanden|sie -gehorchten|sie und #Rede·
+
+(274) ἀλλὰ(Ko) -πίθεσθε(Aor)(Med)(Imv) καὶ(Ko) ὔμμες(Pr)(N), ἐπεὶ(Ko) -πείθεσθαι(Pre)(Inf)(M/P) ἄμεινον(Av)(Kmp)·
+(274) aber -gehorcht|ihr und ihr, da -zu|gehorchen besser·
+
+(275) μήτε(Ko) σὺ(Pr)(N) τόνδ’(Art)(A) +ἀγαθός(Aj)(N) περ(Pt) +ἐὼν(Pre)(Akt)(N) -ἀποαίρεο(Pre)(Med)(Imv) #κούρην(A),
+(275) noch du diesen +tüchtig doch +seiend -nimm|weg #Mädchen,
+
+(276) ἀλλ’(Ko) -ἔα(Pre)(Akt)(Imv) ὥς(Ko) οἱ(Pr)(D) πρῶτα(Av) -δόσαν(Aor)(Akt) #γέρας(A) #υἷες(N) #Ἀχαιῶν(G)·
+(276) sondern -lass wie ihm zuerst -gaben #Ehrengeschenk #Söhne #der|Achaier·
+
+(277) μήτε(Ko) σὺ(Pr)(N) #Πηλείδη(V) -θελ’(Pre)(Akt)(Imv) -ἐριζέμεναι(Pre)(Inf)(Akt) #βασιλῆϊ(D),
+(277) noch du #Peleide -wolle -zu|zanken #mit|dem|König,
+
+(278) ἀντιβίην(Av), ἐπεὶ(Ko) οὔ(Pt) ποθ’(Pt) +ὁμοίης(Aj)(G) -ἔμμορε(Per)(Akt) #τιμῆς(G)·
+(278) gegen|Gewalt, da nicht je +gleicher -hat|Anteil #Ehre·
+
+(279) +σκηπτοῦχος(Aj)(N) #βασιλεύς(N), ᾧ(Pr)(D) τε(Pt) #Ζεὺς(N) #κῦδος(A) -ἔδωκεν(Aor)(Akt).
+(279) +Zepter|tragend #König, welchem und #Zeus #Ruhm -gab.
+
+(280) εἰ(Ko) δὲ(Pt) σὺ(Pr)(N) +καρτερός(Aj)(N) -ἐσσι(Pre)(Akt) #θεὰ(N) δέ(Pt) σε(Pr)(A) -γείνατο(Aor)(Med) #μήτηρ(N),
+(280) wenn aber du +stark -bist #Göttin aber dich -gebar #Mutter,
+
+(281) ἀλλ’(Ko) ὅ(Pr)(N) γε(Pt) +φέρτερός(Aj)(N)(Kmp) -ἐστιν(Pre)(Akt) ἐπεὶ(Ko) +πλεόνεσσιν(Aj)(D)(Kmp) -ἀνάσσει(Pre)(Akt).
+(281) aber der ja +stärker -ist da +mehreren -herrscht.
+
+(282) #Ἀτρεΐδη(V) σὺ(Pr)(N) δὲ(Pt) -παῦε(Pre)(Akt)(Imv) +τεὸν(Aj)(A) #μένος(A)· αὐτὰρ(Pt) ἔγωγε(Pr)(N)
+(282) #Atreide du aber -höre|auf +deinen #Zorn· aber ich|selbst
+
+(283) -λίσσομ’(Pre)(M/P) #Ἀχιλλῆϊ(D) -μεθέμεν(Aor)(Inf)(Akt) #χόλον(A), ὃς(Pr)(N) μέγα(Av) +πᾶσιν(Aj)(D)
+(283) -bitte #dem|Achilleus -los|zu|lassen #Zorn, der sehr +allen
+
+(284) #ἕρκος(N) #Ἀχαιοῖσιν(D) -πέλεται(Pre)(M/P) #πολέμοιο(G) +κακοῖο(Aj)(G).
+(284) #Bollwerk #den|Achaiern -ist #des|Krieges +üblen.
+
+(285) τὸν(Art)(A) δ’(Pt) +ἀπαμειβόμενος(Pre)(M/P)(N) -προσέφη(Aor)(Akt) #κρείων(N) #Ἀγαμέμνων(N)·
+(285) den aber +antwortend -sprach|zu #Fürst #Agamemnon·
+
+(286) ναὶ(Pt) δὴ(Pt) ταῦτά(Pr)(A) γε(Pt) +πάντα(Aj)(A) #γέρον(V) κατὰ(Prp) #μοῖραν(A) -ἔειπες(Aor)(Akt)·
+(286) ja eben dies|e ja +alles #Greis nach #Anteil|Schicksal(≈) -sagtest·
+
+(287) ἀλλ’(Ko) ὅδ’(Pr)(N) #ἀνὴρ(N) -ἐθέλει(Pre)(Akt) περὶ(Prp) +πάντων(Aj)(G) -ἔμμεναι(Pre)(Inf)(Akt) +ἄλλων(Aj)(G),
+(287) aber dieser #Mann -will um +aller -zu|sein +anderer,
+
+(288) +πάντων(Aj)(G) μὲν(Pt) -κρατέειν(Pre)(Inf)(Akt) -ἐθέλει(Pre)(Akt), +πάντεσσι(Aj)(D) δ’(Pt) -ἀνάσσειν(Pre)(Inf)(Akt),
+(288) +aller zwar -herrschen -will, +allen aber -walten,
+
+(289) +πᾶσι(Aj)(D) δὲ(Pt) -σημαίνειν(Pre)(Inf)(Akt), ἅ(Pr)(A) τιν’(Pr)(A) οὐ(Pt) -πείσεσθαι(Fu)(Med)(Inf) -ὀΐω(Pre)(Akt)·
+(289) +allen aber -befehlen, was irgend|einer nicht -gehorchen|werden -meine·
+
+(290) εἰ(Ko) δὲ(Pt) μιν(Pr)(A) #αἰχμητὴν(A) -ἔθεσαν(Aor)(Akt) #θεοὶ(N) ἀἰὲν(Av) +ἐόντες(Pre)(Akt)(N)
+(290) wenn aber ihn #Speerträger -setzten #Götter immer +seiend
+
+(291) τοὔνεκά(Ko) οἱ(Pr)(D) -προθέουσιν(Pre)(Akt) #ὀνείδεα(A) -μυθήσασθαι(Aor)(Med)(Inf);
+(291) des|halb ihm -vor|bringen #Schmähungen -zu|reden?
+
+(292) τὸν(Art)(A) δ’(Pt) ἄρ’(Pt) ὑποβλήδην(Av) -ἠμείβετο(Imp)(M/P) +δῖος(Aj)(N) #Ἀχιλλεύς(N)·
+(292) den aber doch unter|brechend -antwortete +göttlicher #Achilles·
+
+(293) ἦ(Pt) γάρ(Pt) κεν(Pt) +δειλός(Aj)(N) τε(Pt) καὶ(Ko) +οὐτιδανὸς(Aj)(N) -καλεοίμην(Pre)(M/P)(Op)
+(293) ja denn wohl +feige und +nichtig -würde|genannt|werden,
+
+(294) εἰ(Ko) δὴ(Pt) σοὶ(Pr)(D) +πᾶν(Aj)(A) #ἔργον(A) -ὑπείξομαι(Fu)(Med) ὅττί(Ko) κεν(Pt) -εἴπῃς(Aor)(Akt)(Kon)·
+(294) wenn eben dir +jedes #Werk -werde|nachgeben was auch -du|sagest·
+
+(295) +ἄλλοισιν(Aj)(D) δὴ(Pt) ταῦτ’(Pr)(A) -ἐπιτέλλεο(Pre)(M/P)(Imv), μὴ(Pt) γὰρ(Pt) ἔμοιγε(Pr)(D)
+(295) +anderen eben dies -befiehl|dir, nicht denn mir|ja
+
+(296) -σήμαιν(Pre)(Akt)(Imv)· οὐ(Pt) γὰρ(Pt) ἔγωγ’(Pr)(N) ἔτι(Av) σοὶ(Pr)(D) -πείσεσθαι(Fu)(Med)(Inf) -ὀΐω(Pre)(Akt).
+(296) -weise|an· nicht denn ich|selbst noch dir -gehorchen|werden -meine.
+
+(297) ἄλλο(Pr)(A) δέ(Pt) τοι(Pr)(D) -ἐρέω(Fu)(Akt), σὺ(Pr)(N) δ’(Pt) ἐνὶ(Prp) #φρεσὶ(D) -βάλλεο(Pre)(M/P)(Imv) +σῇσι(Aj)(D)·
+(297) anderes aber dir -werde|sagen, du aber in #in|deinem|Sinn -wirf|dir +deinen.
+
+(298) #χερσὶ(D) μὲν(Pt) οὔ(Pt) τοι(Pr)(D) ἔγωγε(Pr)(N) -μαχήσομαι(Fu)(Med) εἵνεκα(Prp) #κούρης(G)
+(298) #mit|den|Händen zwar nicht dir ich|selbst -werde|kämpfen wegen #des|Mädchens
+
+(299) οὔτε(Pt) σοὶ(Pr)(D) οὔτέ(Pt) τῳ(Pr)(D) +ἄλλῳ(Aj)(D), ἐπεί(Ko) μ’(Pr)(A) -ἀφέλεσθέ(Aor)(Med) γε(Pt) +δόντες(Aor)(Akt)(N)·
+(299) weder dir noch irgend|einem +anderen, da mich -nahmt|ihr|weg ja +gebend·
+
+(300) τῶν(Art)(G) δ’(Pt) +ἄλλων(Aj)(G) ἅ(Pr)(N) μοί(Pr)(D) -ἔστι(Pre)(Akt) +θοῇ(Aj)(D) παρὰ(Prp) #νηῒ(D) +μελαίνῃ(Aj)(D)
+(300) der|anderen aber welche mir -ist +schnellen bei #Schiff +schwarzen
+
+(301) τῶν(Art)(G) οὐκ(Pt) ἄν(Pt) τι(Pr)(A) -φέροις(Pre)(Akt)(Op) +ἀνελὼν(Aor)(Akt)(N) +ἀέκοντος(Aj)(G) ἐμεῖο(Pr)(G)·
+(301) der nicht wohl irgend|etwas -würdest|tragen +weg|genommen +un|willigen von|mir;
+
+(302) εἰ(Ko) δ’(Pt) -ἄγε(Pre)(Akt)(Imv) μὴν(Pt) -πείρησαι(Aor)(Med)(Imv) ἵνα(Ko) -γνώωσι(Aor)(Akt)(Kon) καὶ(Ko) οἵδε(Pr)(N)·
+(302) wenn aber -auf! doch -versuche damit -mögen|erkennen und diese|hier;
+
+(303) αἶψά(Av) τοι(Pr)(D) #αἷμα(N) +κελαινὸν(Aj)(N) -ἐρωήσει(Fu)(Akt) περὶ(Prp) #δουρί(D).
+(303) sogleich dir #Blut +schwarz|es -wird|strömen um #Speer.
+
+(304) ὣς(Av) τώ(Pr)(N) γ’(Pt) +ἀντιβίοισι(Aj)(D) +μαχεσσαμένω(Aor)(Med)(D) #ἐπέεσσιν(D)
+(304) so die|beiden ja +gegen|gewaltigen +gekämpft|habenden #Worten
+
+(305) -ἀνστήτην(Aor)(Akt), -λῦσαν(Aor)(Akt) δ’(Pt) #ἀγορὴν(A) παρὰ(Prp) #νηυσὶν(D) #Ἀχαιῶν(G)·
+(305) -standen|auf, -lösten aber #Versammlung bei #Schiffen #der|Achaier·
+
+(306) #Πηλεΐδης(N) μὲν(Pt) ἐπὶ(Prp) #κλισίας(A) καὶ(Ko) #νῆας(A) +ἐΐσας(Aj)(A)
+(306) #Peleide zwar zu #Hütten und #Schiffe +wohl|gefügten
+
+(307) -ἤϊε(Imp)(Akt) σύν(Prp) τε(Pt) #Μενοιτιάδῃ(D) καὶ(Ko) οἷς(Pr)(D) #ἑτάροισιν(D)·
+(307) -ging zusammen|mit und #Menoitiaden und seinen #Gefährten·
+
+(308) #Ἀτρεΐδης(N) δ’(Pt) ἄρα(Pt) #νῆα(A) +θοὴν(Aj)(A) #ἅλα(A) δὲ(Pt) -προέρυσσεν(Imp)(Akt),
+(308) #Atreide aber also #Schiff +schnell|es #Meer aber -vor|zog,
+
+(309) ἐν(Prp) δ’(Pt) #ἐρέτας(A) -ἔκρινεν(Aor)(Akt) +ἐείκοσιν(Aj), ἐς(Prp) δ’(Pt) #ἑκατόμβην(A)
+(309) in aber #Ruderer -sonderte|aus +zwanzig, zu aber #Hekatombe
+
+(310) -βῆσε(Aor)(Akt) #θεῷ(D), ἀνὰ(Prp) δὲ(Pt) #Χρυσηΐδα(A) +καλλιπάρῃον(Aj)(A)
+(310) -sandte #dem|Gott, hinauf|an aber #Chryseïs +schön|wangige
+
+(311) -εἷσεν(Aor)(Akt) +ἄγων(Pre)(Akt)(N)· ἐν(Prp) δ’(Pt) #ἀρχὸς(N) -ἔβη(AorS)(Akt) +πολύμητις(Aj)(N) #Ὀδυσσεύς(N).
+(311) -setzte +führend; in aber #Anführer -ging +viel|ratsam #Odysseus.
+
+(312) οἳ(Pr)(N) μὲν(Pt) ἔπειτ’(Av) +ἀναβάντες(AorS)(Akt)(N) -ἐπέπλεον(Imp)(Akt) +ὑγρὰ(Aj)(A) #κέλευθα(A),
+(312) die zwar dann +hinauf|gestiegen -segelten +nasse #Wege,
+
+(313) #λαοὺς(A) δ’(Pt) #Ἀτρεΐδης(N) -ἀπολυμαίνεσθαι(Pre)(M/P)(Inf) -ἄνωγεν(Aor)(Akt)·
+(313) #Völker aber #Atreide -zu|sich|reinigen -befahl;
+
+(314) οἳ(Pr)(N) δ’(Pt) -ἀπελυμαίνοντο(Imp)(M/P) καὶ(Ko) εἰς(Prp) #ἅλα(A) #λύματα(A) -βάλλον(Imp)(Akt),
+(314) die aber -reinigten|sich und in #Meer #Waschungen -warfen,
+
+(315) -ἕρδον(Imp)(Akt) δ’(Pt) #Ἀπόλλωνι(D) +τεληέσσας(Aj)(A) #ἑκατόμβας(A)
+(315) -verrichteten aber #dem|Apollon +voll|endete #Hekatomben
+
+(316) #ταύρων(G) ἠδ’(Ko) #αἰγῶν(G) παρὰ(Prp) #θῖν’(A) #ἁλὸς(G) +ἀτρυγέτοιο(Aj)(G)·
+(316) #der|Stiere und #der|Ziegen bei #Strand #des|Meeres +un|geernteten,
+
+(317) #κνίση(N) δ’(Pt) #οὐρανὸν(A) -ἷκεν(AorS)(Akt) +ἑλισσομένη(Pre)(M/P)(N) περὶ(Prp) #καπνῷ(D).
+(317) #Dunst aber #Himmel -erreichte +sich|windend um #Rauch.
+
+(318) ὣς(Av) οἳ(Pr)(N) μὲν(Pt) τὰ(Pr)(A) -πένοντο(Imp)(M/P) κατὰ(Prp) #στρατόν(A)· οὐδ’(Ko) #Ἀγαμέμνων(N)
+(318) so die zwar dies -mühten|sich nach #Heer; und|nicht #Agamemnon
+
+(319) -λῆγ’(Imp)(Akt) #ἔριδος(G) τὴν(Art)(A) πρῶτον(Av) -ἐπηπείλησ’(Aor)(Akt) #Ἀχιλῆϊ(D),
+(319) -ließ|ab #des|Streits den zuerst -bedrohte #dem|Achilles,
+
+(320) ἀλλ’(Ko) ὅ(Pr)(N) γε(Pt) #Ταλθύβιόν(A) τε(Pt) καὶ(Ko) #Εὐρυβάτην(A) -προσέειπε(Aor)(Akt),
+(320) aber der ja #Talthybios und auch #Eurubates -redete|an,
+
+(321) τώ(Pr)(N) οἱ(Pr)(D) -ἔσαν(Imp)(Akt) #κήρυκε(N) καὶ(Ko) +ὀτρηρὼ(Aj)(N) #θεράποντε(N)·
+(321) die|zwei ihm -waren #Herolde und +tüchtige #Diener;
+
+(322) -ἔρχεσθον(Pre)(M/P)(Imv) #κλισίην(A) #Πηληϊάδεω(G) #Ἀχιλῆος(G)·
+(322) -gehet #Zelt #des|Peleus|Sohnes #Achilles;
+
+(323) #χειρὸς(G) +ἑλόντ’(AorS)(Akt)(A) -ἀγέμεν(Aor)(Inf)(Akt) #Βρισηΐδα(A) +καλλιπάρῃον(Aj)(A)·
+(323) #der|Hand +genommen|habend -zu|führen #Briseis +schön|wangig;
+
+(324) εἰ(Ko) δέ(Pt) κε(Pt) μὴ(Pt) -δώῃσιν(Aor)(Akt)(Kon) ἐγὼ(Pr)(N) δέ(Pt) κεν(Pt) αὐτὸς(Pr)(N) -ἕλωμαι(AorS)(Med)(Kon)
+(324) wenn aber wohl nicht -gebe ich aber wohl selbst -nähme
+
+(325) +ἐλθὼν(AorS)(Akt)(N) σὺν(Prp) +πλεόνεσσι(Aj)(D)(Kmp)· τό(Pr)(N) οἱ(Pr)(D) καὶ(Ko) +ῥίγιον(Aj)(N)(Kmp) -ἔσται(Fu)(Akt).
+(325) +gekommen|habend mit +mehr|Leuten; dies ihm auch +schlimmer -wird|sein.
+
+(326) ὣς(Av) +εἰπὼν(Aor)(Akt)(N) -προΐει(Imp)(Akt), +κρατερὸν(Aj)(A) δ’(Pt) ἐπὶ(Prp) #μῦθον(A) -ἔτελλε(Imp)(Akt)·
+(326) so +gesagt|habend -sandte|vor, +starken aber auf #Wort -befahl;
+
+(327) τὼ(Pr)(N) δ’(Pt) +ἀέκοντε(Aj)(N) -βάτην(AorS)(Akt) παρὰ(Prp) #θῖν’(A) #ἁλὸς(G) +ἀτρυγέτοιο(Aj)(G),
+(327) die|zwei aber +unwillige -gingen|beide an #Strand #des|Meeres +ungeernteten,
+
+(328) #Μυρμιδόνων(G) δ’(Pt) ἐπί(Prp) τε(Pt) #κλισίας(A) καὶ(Ko) #νῆας(A) -ἱκέσθην(Aor)(Med),
+(328) #der|Myrmidonen aber zu und #Zelte und #Schiffe -kamen|beide,
+
+(329) τὸν(Pr)(A) δ’(Pt) -εὗρον(AorS)(Akt) παρά(Prp) τε(Pt) #κλισίῃ(D) καὶ(Ko) #νηῒ(D) +μελαίνῃ(Aj)(D)
+(329) ihn aber -fanden neben und #dem|Zelt und #dem|Schiffe +schwarz
+
+(330) +ἥμενον(Pre)(M/P)(A)· οὐδ’(Ko) ἄρα(Pt) τώ(Pr)(A) γε(Pt) +ἰδὼν(AorS)(Akt)(N) -γήθησεν(Aor)(Akt) #Ἀχιλλεύς(N).
+(330) +sitzend; und|nicht also die|zwei ja +gesehen|habend -freute|sich #Achilles.
+
+(331) τὼ(Pr)(N) μὲν(Pt) +ταρβήσαντε(Aor)(Akt)(N) καὶ(Ko) +αἰδομένω(Pre)(M/P)(N) #βασιλῆα(A)
+(331) die|zwei zwar +erschrocken und +sich|scheuend #König
+
+(332) -στήτην(AorS)(Akt), οὐδέ(Ko) τί(Pr)(A) μιν(Pr)(A) -προσεφώνεον(Imp)(Akt) οὐδ’(Ko) -ἐρέοντο(Imp)(M/P)·
+(332) -standen|beide, und|nicht irgend|etwas ihn -sprachen|an und|nicht -fragten|sich;
+
+(333) αὐτὰρ(Ko) ὃ(Pr)(N) -ἔγνω(AorS)(Akt) ᾗσιν(Pr)(D) ἐνὶ(Prp) #φρεσὶ(D) -φώνησέν(Aor)(Akt) τε(Pt)·
+(333) aber er -erkannte seinen|eigenen in #Sinnen -sprach und;
+
+(334) -χαίρετε(Pre)(Akt)(Imv) #κήρυκες(N) #Διὸς(G) #ἄγγελοι(N) ἠδὲ(Ko) καὶ(Ko) #ἀνδρῶν(G),
+(334) -freuet|euch #Herolde #des|Zeus #Boten und und #der|Männer,
+
+(335) ἆσσον(Av) -ἴτ’(Pre)(Akt)(Imv)· οὔ(Pt) τί(Pr)(A) μοι(Pr)(D) ὔμμες(Pr)(N) +ἐπαίτιοι(Aj)(N) ἀλλ’(Ko) #Ἀγαμέμνων(N),
+(335) näher -gehet; nicht irgend|etwas mir ihr +schuldig aber #Agamemnon,
+
+(336) ὃ(Pr)(N) σφῶϊ(Pr)(D) -προΐει(Imp)(Akt) #Βρισηΐδος(G) εἵνεκα(Prp) #κούρης(G).
+(336) er euch|beiden -sandte #der|Briseis um|willen #des|Mädchens.
+
+(337) ἀλλ’(Ko) ἄγε(ij) +διογενὲς(Aj)(V) #Πατρόκλεες(V) -ἔξαγε(Pre)(Akt)(Imv) #κούρην(A)
+(337) aber auf! +zeus|geborener #Patroklos -führe|hinaus #Mädchen
+
+(338) καί(Ko) σφωϊν(Pr)(G) -δὸς(AorS)(Akt)(Imv) -ἄγειν(Pre)(Inf)(Akt)· τὼ(Pr)(N) δ’(Pt) +αὐτὼ(Aj)(N) #μάρτυροι(N) -ἔστων(Pre)(Akt)(Imv)
+(338) und euch|beider -gib -zu|führen; die|zwei aber +selbst|beide #Zeugen -sollen|sein
+
+(339) πρός(Prp) τε(Pt) #θεῶν(G) +μακάρων(Aj)(G) πρός(Prp) τε(Pt) +θνητῶν(Aj)(G) #ἀνθρώπων(G)
+(339) zu und #der|Götter +seligen zu und +sterblichen #der|Menschen
+
+(340) καὶ(Ko) πρὸς(Prp) τοῦ(Pr)(G) #βασιλῆος(G) +ἀπηνέος(Aj)(G) εἴ(Ko) ποτε(Pt) δ’(Pt) αὖτε(Av)
+(340) und zu des #Königs +schroffen wenn einmal aber wieder
+
+(341) #χρειὼ(N) ἐμεῖο(Pr)(G) -γένηται(Aor)(Med)(Kon) +ἀεικέα(Aj)(A) #λοιγὸν(A) -ἀμῦναι(Aor)(Inf)(Akt)
+(341) #Bedarf meiner -werde|entstehen +schändlichen #Verderben -abwehren
+
+(342) τοῖς(Art)(D) +ἄλλοις(Aj)(D)· ἦ(Pt) γὰρ(Pt) ὅ(Pr)(N) γ’(Pt) +ὀλοιῇσι(Aj)(D) #φρεσὶ(D) -θύει(Pre)(Akt),
+(342) den +anderen; ja denn er eben +verderblichen #Sinnen -tobt,
+
+(343) οὐδέ(Ko) τι(Pr)(A) -οἶδε(Per)(Akt) -νοῆσαι(Aor)(Inf)(Akt) ἅμα(Av) πρόσσω(Av) καὶ(Ko) ὀπίσσω(Av),
+(343) und|nicht irgend|etwas -weiß -zu|erwägen zugleich vorwärts und rückwärts,
+
+(344) ὅππως(Ko) οἱ(Pr)(D) παρὰ(Prp) #νηυσὶ(D) +σόοι(Aj)(N) -μαχέοιντο(Pre)(M/P)(Op) #Ἀχαιοί(N).
+(344) wie ihm bei #Schiffen +heil -kämpften #Achaier.
+
+(345) ὣς(Av) -φάτο(Imp)(M/P), #Πάτροκλος(N) δὲ(Pt) +φίλῳ(Aj)(D) -ἐπεπείθεθ’(Imp)(M/P) #ἑταίρῳ(D),
+(345) so -sprach, #Patroklos aber +lieben -gehorchte #Gefährten,
+
+(346) ἐκ(Prp) δ’(Pt) -ἄγαγε(Aor)(Akt) #κλισίης(G) #Βρισηΐδα(A) +καλλιπάρῃον(Aj)(A),
+(346) aus aber -führte|heraus #der|Hütte #Briseis +schön|wangig,
+
+(347) -δῶκε(Aor)(Akt) δ’(Pt) -ἄγειν(Pre)(Inf)(Akt)· τὼ(Pr)(N) δ’(Pt) αὖτις(Av) -ἴτην(Imp)(Akt) παρὰ(Prp) #νῆας(A) #Ἀχαιῶν(G)·
+(347) -gab aber -zu|führen; die|beiden aber wieder -gingen bei #Schiffe #der|Achaier;
+
+(348) ἣ(Pr)(N) δ’(Pt) +ἀέκουσ’(Aj)(N) ἅμα(Av) τοῖσι(Pr)(D) #γυνὴ(N) -κίεν(AorS)(Akt)· αὐτὰρ(Ko) #Ἀχιλλεὺς(N)
+(348) sie aber +unwillige zugleich mit|ihnen #Frau -ging; aber #Achilleus
+
+(349) +δακρύσας(Aor)(Akt)(N) #ἑτάρων(G) ἄφαρ(Av) -ἕζετο(Imp)(M/P) νόσφι(Prp) +λιασθείς(Aor)(Pas)(N),
+(349) +weinend #der|Gefährten sogleich -setzte|sich abseits +abgewandt,
+
+(350) #θῖν’(A) ἔφ’(Prp) #ἁλὸς(G) +πολιῆς(Aj)(G), +ὁρόων(Pre)(Akt)(N) ἐπ’(Prp) +ἀπείρονα(Aj)(A) #πόντον(A)·
+(350) #Strand auf #des|Meeres +grauen, +schauend auf +grenzenlosen #Meer;
+
+(351) πολλὰ(Av) δὲ(Pt) #μητρὶ(D) +φίλῃ(Aj)(D) -ἠρήσατο(Aor)(Med) #χεῖρας(A) +ὀρεγνύς(Pre)(Akt)(N)·
+(351) viel aber #der|Mutter +lieb -flehte|er|sich #Hände +aus|streckend;
+
+(352) #μῆτερ(V) ἐπεί(Ko) μ’(Pr)(A) -ἔτεκές(Aor)(Akt) γε(Pt) +μινυνθάδιόν(Aj)(A) περ(Pt) +ἐόντα(Pre)(Akt)(A),
+(352) #Mutter da mich -gebarst|du doch +kurz|lebig gerade +seiend,
+
+(353) #τιμήν(A) πέρ(Pt) μοι(Pr)(D) -ὄφελλεν(Imp)(Akt) +Ὀλύμπιος(Aj)(N) -ἐγγυαλίξαι(Aor)(Inf)(Akt)
+(353) #Ehre gerade mir -sollte +Olympischer -in|die|Hand|legen
+
+(354) #Ζεὺς(N) +ὑψιβρεμέτης(Aj)(N)· νῦν(Av) δ’(Pt) οὐδέ(Ko) με(Pr)(A) τυτθὸν(Av) -ἔτισεν(Aor)(Akt)·
+(354) #Zeus +hoch|donnernd; nun aber und|nicht mich ein|wenig -ehrte;
+
+(355) ἦ(Pt) γάρ(Pt) μ’(Pr)(A) #Ἀτρεΐδης(N) +εὐρὺ(Aj)(N) #κρείων(N) #Ἀγαμέμνων(N)
+(355) wahrlich denn mich #Atreide +weit #Herrscher #Agamemnon
+
+(356) -ἠτίμησεν(Aor)(Akt)· +ἑλὼν(Aor)(Akt)(N) γὰρ(Pt) -ἔχει(Pre)(Akt) #γέρας(A) αὐτὸς(Pr)(N) +ἀπούρας(Aor)(Akt)(N).
+(356) -entehrte; +genommen denn -hat #Ehrengabe selbst +weg|nehmend.
+
+(357) ὣς(Av) -φάτο(Imp)(M/P) #δάκρυ(A) +χέων(Pre)(Akt)(N), τοῦ(Pr)(G) δ’(Pt) -ἔκλυε(Imp)(Akt) +πότνια(Aj)(N) #μήτηρ(N)
+(357) so -sprach #Träne +gießend, seiner aber -hörte +ehrwürdige #Mutter
+
+(358) +ἡμένη(Pre)(M/P)(N) ἐν(Prp) #βένθεσσιν(D) #ἁλὸς(G) παρὰ(Prp) #πατρὶ(D) +γέροντι(Aj)(D)·
+(358) +sitzend in #Tiefen #des|Meeres bei #Vater +alt;
+
+(359) καρπαλίμως(Av) δ’(Pt) -ἀνέδυ(Aor)(Akt) +πολιῆς(Aj)(G) #ἁλὸς(G) ἠΰτ’(Ko) #ὀμίχλη(N),
+(359) schnell aber -stieg|empor +grauen #des|Meeres wie #Nebel,
+
+(360) καί(Ko) ῥα(Pt) πάροιθ’(Prp) αὐτοῖο(Pr)(G) -καθέζετο(Imp)(M/P) #δάκρυ(A) +χέοντος(Pre)(Akt)(G),
+(360) und ja vor seiner -setzte|sich #Träne +gießenden,
+
+(361) #χειρί(D) τέ(Pt) μιν(Pr)(A) -κατέρεξεν(Aor)(Akt) #ἔπος(A) τ’(Pt) -ἔφατ’(Imp)(M/P) ἔκ(Prp) τ’(Pt) -ὀνόμαζε(Imp)(Akt)·
+(361) #mit|der|Hand und ihn -streichelte #Wort und -sprach aus und -nannte|bei|Namen;
+
+(362) #τέκνον(V) τί(Pr)(A) -κλαίεις(Pre)(Akt); τί(Pr)(A) δέ(Pt) σε(Pr)(A) #φρένας(A) -ἵκετο(Aor)(Med) #πένθος(N);
+(362) #Kind warum -weinst|du? warum aber dich #Sinn|e -erreichte #Kummer?
+
+(363) -ἐξαύδα(Imv)(Akt), μὴ(Pt) -κεῦθε(Imv)(Akt) #νόῳ(D), ἵνα(Ko) -εἴδομεν(Aor)(Akt)(Kon) ἄμφω(Pr)(N).
+(363) -sprich|aus, nicht -verbirg #im|Geist, damit -sehen|wir beide.
+
+(364) τὴν(Pr)(A) δὲ(Pt) βαρὺ(Av) +στενάχων(Pre)(Akt)(N) -προσέφη(Aor)(Akt) #πόδας(A) +ὠκὺς(Aj)(N) #Ἀχιλλεύς(N)·
+(364) sie aber schwer +seufzend -sprach|zu #an|Füßen +schnell #Achilleus;
+
+(365) -οἶσθα(Per)(Akt)· τί(Pr)(A) ἤ(Ko) τοι(Pr)(D) ταῦτα(Pr)(A) +ἰδυίῃ(Per)(Akt)(D) πάντ’(Aj)(A) -ἀγορεύω(Pre)(Akt);
+(365) -weißt|du; warum oder dir diese +wissend +alle -sage|ich?
+
+(366) -ᾠχόμεθ’(Aor)(Med) ἐς(Prp) #Θήβην(A) +ἱερὴν(Aj)(A) #πόλιν(A) #Ἠετίωνος(G),
+(366) -gingen|wir nach #Thebe +heilige #Stadt #des|Eetion,
+
+(367) τὴν(Pr)(A) δὲ(Pt) -διεπράθομέν(Aor)(Akt) τε(Pt) καὶ(Ko) -ἤγομεν(Imp)(Akt) ἐνθάδε(Av) πάντα(Pr)(A)·
+(367) die aber -verwüsteten|wir und -führten|wir hierher alle;
+
+(368) καὶ(Ko) τὰ(Pr)(A) μὲν(Pt) εὖ(Av) -δάσσαντο(Aor)(Med) μετὰ(Prp) σφίσιν(Pr)(D) #υἷες(N) #Ἀχαιῶν(G),
+(368) und die zwar gut -teilten|sie unter sich #Söhne #der|Achaier,
+
+(369) ἐκ(Prp) δ’(Pt) -ἕλον(Aor)(Akt) #Ἀτρεΐδῃ(D) #Χρυσηΐδα(A) +καλλιπάρῃον(Aj)(A).
+(369) aus aber -nahmen|sie #dem|Atreiden #Chryseïs +schön|wangige.
+
+(370) #Χρύσης(N) δ’(Pt) αὖθ’(Pt) #ἱερεὺς(N) +ἑκατηβόλου(Aj)(G) #Ἀπόλλωνος(G)
+(370) #Chryses aber wiederum #Priester +des|fern|schießenden #Apollon
+
+(371) -ἦλθε(AorS)(Akt) +θοὰς(Aj)(A) ἐπὶ(Prp) #νῆας(A) #Ἀχαιῶν(G) +χαλκοχιτώνων(Aj)(G)
+(371) -kam +schnelle auf #Schiffe #der|Achaier +bronze|gewandeten
+
+(372) +λυσόμενός(Fu)(Med)(N) τε(Pt) #θύγατρα(A) +φέρων(Pre)(Akt)(N) τ’(Pt) +ἀπερείσι’(Aj)(A) #ἄποινα(A),
+(372) +los|kaufend und #Tochter +tragend und +zahl|lose #Löse|gaben,
+
+(373) #στέμματ’(A) +ἔχων(Pre)(Akt)(N) ἐν(Prp) #χερσὶν(D) +ἑκηβόλου(Aj)(G) #Ἀπόλλωνος(G)
+(373) #Binde|kränze +haltend in #Händen +fern|schießenden #des|Apollon
+
+(374) +χρυσέῳ(Aj)(D) ἀνὰ(Prp) #σκήπτρῳ(D), καὶ(Ko) -λίσσετο(Imp)(M/P) +πάντας(Aj)(A) #Ἀχαιούς(A),
+(374) +goldenen auf #Zepter, und -flehte +alle #Achaier,
+
+(375) #Ἀτρεΐδα(A) δὲ(Pt) μάλιστα(Av)(Sup) +δύω(Aj)(A) #κοσμήτορε(A) #λαῶν(G).
+(375) #Atreiden aber am|meisten +zwei #Ordner #der|Heere.
+
+(376) ἔνθ’(Av) +ἄλλοι(Aj)(N) μὲν(Pt) +πάντες(Aj)(N) -ἐπευφήμησαν(Aor)(Akt) #Ἀχαιοὶ(N)
+(376) da +andere zwar +alle -beifall|riefen #Achaier
+
+(377) -αἰδεῖσθαί(Pre)(Inf)(M/P) θ’(Pt) #ἱερῆα(A) καὶ(Ko) +ἀγλαὰ(Aj)(A) -δέχθαι(Aor)(Inf)(Med) #ἄποινα(A)·
+(377) -zu|ehren und #Priester und +glänzende -zu|empfangen #Löse|gaben;
+
+(378) ἀλλ’(Ko) οὐκ(Pt) #Ἀτρεΐδῃ(D) #Ἀγαμέμνονι(D) -ἥνδανε(Imp)(Akt) #θυμῷ(D),
+(378) aber nicht #dem|Atreiden #Agamemnon -gefiel #im|Herzen,
+
+(379) ἀλλὰ(Ko) κακῶς(Av) -ἀφίει(Imp)(Akt), +κρατερὸν(Aj)(A) δ’(Pt) ἐπὶ(Prp) #μῦθον(A) -ἔτελλε(Imp)(Akt)·
+(379) aber schlecht -entließ, +starken aber auf #Wort -befahl;
+
+(380) +χωόμενος(Pre)(M/P)(N) δ’(Pt) ὁ(Pr)(N) #γέρων(N) πάλιν(Av) -ᾤχετο(Imp)(M/P)· τοῖο(Pr)(G) δ’(Pt) #Ἀπόλλων(N)
+(380) +zürnend aber der #Greis wieder -fort|ging; dessen aber #Apollon
+
+(381) +εὐξαμένου(Aor)(Med)(G) -ἤκουσεν(Aor)(Akt), ἐπεὶ(Ko) μάλα(Av) οἱ(Pr)(D) +φίλος(Aj)(N) -ἦεν(Imp)(Akt),
+(381) +gebetet|habend -hörte, da sehr ihm +lieb -war,
+
+(382) -ἧκε(AorS)(Akt) δ’(Pt) ἐπ’(Prp) +Ἀργείοισι(Aj)(D) +κακὸν(Aj)(A) #βέλος(A)· οἳ(Pr)(N) δέ(Pt) νυ(Pt) #λαοὶ(N)
+(382) -sandte aber auf +argivischen +schlimmes #Geschoss; die aber nun #Leute
+
+(383) -θνῇσκον(Imp)(Akt) +ἐπασσύτεροι(Aj)(N)(Kmp), τὰ(Art)(A) δ’(Pt) -ἐπῴχετο(Imp)(M/P) #κῆλα(A) #θεοῖο(G)
+(383) -starben +immer|öfter, die aber -gingen|heran #Pfeile #des|Gottes
+
+(384) πάντῃ(Av) ἀνὰ(Prp) #στρατὸν(A) +εὐρὺν(Aj)(A) #Ἀχαιῶν(G)· ἄμμι(Pr)(D) δὲ(Pt) #μάντις(N)
+(384) überall durch #Heer +weit #der|Achaier; uns aber #Seher
+
+(385) εὖ(Av) +εἰδὼς(Per)(Akt)(N) -ἀγόρευε(Imp)(Akt) #θεοπροπίας(A) +ἑκάτοιο(Aj)(G).
+(385) gut +wissend -redete #Götter|sprüche +des|Fern|schießenden.
+
+(386) αὐτίκ’(Av) ἐγὼ(Pr)(N) +πρῶτος(Aj)(N)(Sup) -κελόμην(Aor)(Med) #θεὸν(A) -ἱλάσκεσθαι(Pre)(Inf)(M/P)·
+(386) sogleich ich +als|Erster -befahl|ich #Gott -zu|versöhnen;
+
+(387) #Ἀτρεΐωνα(A) δ’(Pt) ἔπειτα(Av) #χόλος(N) -λάβεν(AorS)(Akt), αἶψα(Av) δ’(Pt) +ἀναστὰς(AorS)(Akt)(N)
+(387) #den|Atreiden aber dann #Zorn -ergriff, sogleich aber +auf|gestanden
+
+(388) -ἠπείλησεν(Aor)(Akt) #μῦθον(A) ὃ(Pr)(A) δὴ(Pt) +τετελεσμένος(Per)(M/P)(N) -ἐστί(Pre)(Akt)·
+(388) -bedrohte #Wort das eben +vollendet -ist;
+
+(389) τὴν(Art)(A) μὲν(Pt) γὰρ(Pt) σὺν(Prp) #νηῒ(D) +θοῇ(Aj)(D) +ἑλίκωπες(Aj)(N) #Ἀχαιοὶ(N)
+(389) sie zwar denn mit #Schiff +schnellen +mit|rollenden|Augen #Achaier
+
+(390) ἐς(Prp) #Χρύσην(A) -πέμπουσιν(Pre)(Akt), -ἄγουσι(Pre)(Akt) δὲ(Pt) #δῶρα(A) #ἄνακτι(D)·
+(390) nach #Chryse -senden, -führen aber #Gaben #dem|Herrscher;
+
+(391) τὴν(Art)(A) δὲ(Pt) νέον(Av) κλισίηθεν(Av) -ἔβαν(AorS)(Akt) #κήρυκες(N) +ἄγοντες(Pre)(Akt)(N)
+(391) sie aber eben von|der|Hütte|her -gingen #Herolde +führend
+
+(392) #κούρην(A) #Βρισῆος(G) τήν(Pr)(A) μοι(Pr)(D) -δόσαν(AorS)(Akt) #υἷες(N) #Ἀχαιῶν(G).
+(392) #Mädchen #des|Briseus die mir -gaben #Söhne #der|Achaier.
+
+(393) ἀλλὰ(Ko) σὺ(Pr)(N) εἰ(Ko) -δύνασαί(Pre)(M/P) γε(Pt) -περίσχεο(Aor)(Med)(Imv) #παιδὸς(G) +ἑῆος(Aj)(G)·
+(393) aber du wenn -kannst doch -halte|zurück #des|Sohnes +eigenen;
+
+(394) +ἐλθοῦσ’(AorS)(Akt)(N) #Οὔλυμπον(A) δὲ(Pt) #Δία(A) -λίσαι(Aor)(Inf)(Akt), εἴ(Ko) ποτε(Pt) δή(Pt) τι(Pr)(A)
+(394) +gekommen #Olymp aber #Zeus -zu|bitten, wenn jemals eben irgend|etwas
+
+(395) ἢ(Ko) #ἔπει(D) -ὤνησας(Aor)(Akt) #κραδίην(A) #Διὸς(G) ἠὲ(Ko) καὶ(Ko) #ἔργῳ(D).
+(395) oder #mit|Wort -nütztest #Herz #des|Zeus oder auch #mit|Tat.
+
+(396) πολλάκι(Av) γάρ(Pt) σεο(Pr)(G) #πατρὸς(G) ἐνὶ(Prp) #μεγάροισιν(D) -ἄκουσα(Aor)(Akt)
+(396) oft denn deines #Vaters in #Hallen -hörte|ich
+
+(397) +εὐχομένης(Pre)(M/P)(G) ὅτ’(Ko) -ἔφησθα(Imp)(M/P) +κελαινεφέϊ(Aj)(D) #Κρονίωνι(D)
+(397) +betend als -sagtest +dunkel|bewölkten #dem|Kronion
+
+(398) +οἴη(Aj)(N) ἐν(Prp) #ἀθανάτοισιν(D) +ἀεικέα(Aj)(A) #λοιγὸν(A) -ἀμῦναι(Aor)(Med)(Inf),
+(398) +allein in #Unsterblichen +schändlichen #Verderben -abwehren,
+
+(399) ὁππότε(Ko) μιν(Pr)(A) -ξυνδῆσαι(Aor)(Akt)(Inf) #Ὀλύμπιοι(N) -ἤθελον(Imp)(Akt) +ἄλλοι(Aj)(N)
+(399) als ihn -zusammen|binden #Olympier -wollten +andere
+
+(400) #Ἥρη(N) τ’(Pt) ἠδὲ(Ko) #Ποσειδάων(N) καὶ(Ko) #Παλλὰς(N) #Ἀθήνη(N)·
+(400) #Hera und und #Poseidon und #Pallas #Athene·
+
+(401) ἀλλὰ(Ko) σὺ(Pr)(N) τόν(Art)(A) γ’(Pt) +ἐλθοῦσα(AorS)(Akt)(N) #θεὰ(N) -ὑπελύσαο(Aor)(Med) #δεσμῶν(G),
+(401) aber du den ja +gekommen #Göttin -löstest #von|Fesseln,
+
+(402) ὦχ’(Av) +ἑκατόγχειρον(Aj)(A) +καλέσασ’(Aor)(Akt)(N) ἐς(Prp) +μακρὸν(Aj)(A) #Ὄλυμπον(A),
+(402) schnell +hundert|händigen +gerufen|habend in +langen #Olymp,
+
+(403) ὃν(Pr)(A) #Βριάρεων(A) -καλέουσι(Pre)(Akt) #θεοί(N), #ἄνδρες(N) δέ(Pt) τε(Pt) +πάντες(Aj)(N)
+(403) welchen #Briareus -nennen #Götter, #Männer aber und +alle
+
+(404) #Αἰγαίων’(A), ὃ(Pr)(N) γὰρ(Pt) αὖτε(Av) #βίην(A) οὗ(Pr)(G) #πατρὸς(G) +ἀμείνων(Aj)(N)(Kmp)·
+(404) #Aigaion, der denn wiederum #Kraft seines #Vaters +besser,
+
+(405) ὅς(Pr)(N) ῥα(Pt) παρὰ(Prp) #Κρονίωνι(D) -καθέζετο(Imp)(M/P) #κύδεϊ(D) +γαίων(Pre)(Akt)(N)·
+(405) der eben bei #dem|Kronion -setzte|sich #mit|Ruhm +sich|freuend,
+
+(406) τὸν(Art)(A) καὶ(Ko) -ὑπέδεισαν(Aor)(Akt) +μάκαρες(Aj)(N) #θεοὶ(N) οὐδ’(Ko) ἔτ’(Av) -ἔδησαν(Aor)(Akt).
+(406) den und -fürchteten +selige #Götter und|nicht mehr -banden.
+
+(407) τῶν(Art)(G) νῦν(Av) μιν(Pr)(A) +μνήσασα(Aor)(Akt)(N) -παρέζεο(Aor)(Med)(Imv) καὶ(Ko) -λαβὲ(Aor)(Akt)(Imv) #γούνων(G)
+(407) der nun ihn +erinnert|habend -setz|dich|neben und -ergreife #der|Knie
+
+(408) αἴ(Ko) κέν(Pt) πως(Av) -ἐθέλῃσιν(Pre)(Akt)(Kon) ἐπὶ(Prp) #Τρώεσσιν(D) -ἀρῆξαι(Aor)(Akt)(Inf),
+(408) wenn wohl irgendwie -will gegen #den|Troern -beistehen,
+
+(409) τοὺς(Art)(A) δὲ(Pt) κατὰ(Prp) #πρύμνας(A) τε(Pt) καὶ(Ko) ἀμφ’(Prp) #ἅλα(A) -ἕλσαι(Aor)(Akt)(Inf) #Ἀχαιοὺς(A)
+(409) die aber hinab|zu #Heck|en und um #Meer -drängen #Achaier
+
+(410) +κτεινομένους(Pre)(M/P)(A), ἵνα(Ko) +πάντες(Aj)(N) -ἐπαύρωνται(Pre)(M/P)(Kon) #βασιλῆος(G),
+(410) +getötet|werdend, damit +alle -genießen #des|Königs,
+
+(411) -γνῷ(Aor)(Akt)(Op) δὲ(Pt) καὶ(Ko) #Ἀτρεΐδης(N) εὐρὺ(Av) +κρείων(Pre)(Akt)(N) #Ἀγαμέμνων(N)
+(411) -möge|er|erkennen aber und #Atride weit +herrschend #Agamemnon
+
+(412) ἣν(Pr)(A) #ἄτην(A) ὅ(Pr)(N) τ’(Pt) +ἄριστον(Aj)(N)(Sup) #Ἀχαιῶν(G) οὐδὲν(Pr)(A) -ἔτισεν(Aor)(Akt).
+(412) die #Verblendung der und +beste #der|Achaier nichts -ehrte.
+
+(413) τὸν(Art)(A) δ’(Pt) -ἠμείβετ’(Imp)(M/P) ἔπειτα(Av) #Θέτις(N) κατὰ(Prp) #δάκρυ(A) +χέουσα(Pre)(Akt)(N)·
+(413) den aber -antwortete dann #Thetis herab #Träne +gießend·
+
+(414) ὤ(ij) μοι(Pr)(D) #τέκνον(V) +ἐμόν(Aj)(V), τί(Pr)(A) νύ(Pt) σ’(Pr)(A) -ἔτρεφον(Imp)(Akt) +αἰνὰ(Aj)(A) +τεκοῦσα(Aor)(Akt)(N);
+(414) weh mir #Kind +mein, was denn dich -nährte|ich +schreckliche +geboren|habend;
+
+(415) αἴθ’(Pt) -ὄφελες(Aor)(Akt)(Op) παρὰ(Prp) #νηυσὶν(D) +ἀδάκρυτος(Aj)(N) καὶ(Ko) +ἀπήμων(Aj)(N)
+(415) ach -würdest|du bei #den|Schiffen +tränen|los und +un|versehrt
+
+(416) -ἧσθαι(Per)(M/P)(Inf), ἐπεί(Ko) νύ(Pt) τοι(Pr)(D) #αἶσα(N) μίνυνθά(Av) περ(Pt) οὔ(Pt) τι(Pt) μάλα(Av) δήν(Av)·
+(416) -zu|sitzen, da nun dir #Anteil|Schicksal(≈) wenig zwar nicht etwas sehr lange·
+
+(417) νῦν(Av) δ’(Pt) ἅμα(Av) τ’(Pt) +ὠκύμορος(Aj)(N) καὶ(Ko) +ὀϊζυρὸς(Aj)(N) περὶ(Prp) +πάντων(Aj)(G)
+(417) jetzt aber zugleich und +schnell|sterbend +elend über +aller
+
+(418) -ἔπλεο(Imp)(Akt)· τώ(Pt) σε(Pr)(A) +κακῇ(Aj)(D) #αἴσῃ(D) -τέκον(Aor)(Akt) ἐν(Prp) #μεγάροισι(D).
+(418) -warst|du· also dich +üblem #Los -gebar|ich in #Hallen.
+
+(419) τοῦτο(Pr)(A) δέ(Pt) τοι(Pr)(D) +ἐρέουσα(Fu)(Akt)(N) #ἔπος(A) #Διὶ(D) +τερπικεραύνῳ(Aj)(D)
+(419) dieses aber dir +sagen|werdend #Wort #dem|Zeus +den|Donner|liebenden
+
+(420) -εἶμ’(Fu)(Akt) αὐτὴ(Pr)(N) πρὸς(Prp) #Ὄλυμπον(A) +ἀγάννιφον(Aj)(A) αἴ(Ko) κε(Pt) -πίθηται(Aor)(Med)(Kon).
+(420) -werde|gehen|ich selbst zu #Olymp +sehr|schneeigen wenn wohl -gehorche|er.
+
+(421) ἀλλὰ(Κo) σὺ(Pr)(N) μὲν(Pt) νῦν(Av) #νηυσὶ(D) +παρήμενος(Pre)(M/P)(N) +ὠκυπόροισι(Aj)(D)
+(421) aber du zwar jetzt #bei|den|Schiffen +daneben|sitzend +schnell|fahrenden
+
+(422) -μήνι’(Pre)(Akt)(Imv) #Ἀχαιοῖσιν(D), #πολέμου(G) δ’(Pt) -ἀποπαύεο(Pre)(Med)(Imv) πάμπαν(Av)·
+(422) -zürne #den|Achaiern, #des|Krieges aber -höre|auf ganz;
+
+(423) #Ζεύς(N) γὰρ(Pt) ἐς(Prp) #Ὠκεανόν(A) μετ’(Prp) +ἀμύμονας(Aj)(A) #Αἰθιοπῆας(A)
+(423) #Zeus denn in #den|Okeanos zu +tadellose #Äthiopen
+
+(424) χθιζὸς(Av) -ἔβη(AorS)(Akt) κατὰ(Prp) #δαῖτα(A), #θεοὶ(N) δ’(Pt) ἅμα(Av) +πάντες(Aj)(N) -ἕποντο(Imp)(Med)·
+(424) gestern -ging|er zu #dem|Mahl, #Götter aber zugleich +alle -folgten;
+
+(425) +δωδεκάτῃ(Aj)(D) δέ(Pt) τοι(Pr)(D) αὖτις(Av) -ἐλεύσεται(Fu)(Med) #Οὔλυμπον(A) δέ(Pt),
+(425) +am|zwölften aber dir wieder -wird|kommen #zum|Olymp aber,
+
+(426) καὶ(Ko) τότ’(Av) ἔπειτά(Av) τοι(Pr)(D) -εἶμι(Fu)(Akt) #Διὸς(G) ποτὶ(Prp) +χαλκοβατές(Aj)(A) #δῶ(A),
+(426) und dann danach dir -werde|ich|gehen #des|Zeus zu +bronze|trittiges #Haus,
+
+(427) καί(Ko) μιν(Pr)(A) -γουνάσομαι(Fu)(Med) καί(Ko) μιν(Pr)(A) -πείσεσθαι(Fu)(Med)(Inf) -ὀΐω(Pre)(Akt).
+(427) und ihn -werde|ich|an|den|Knien|fassen und ihn -überreden|lassen -meine|ich.
+
+(428) ὣς(Av) ἄρα(Pt) +φωνήσασ’(Aor)(Akt)(N) -ἀπεβήσετο(Aor)(Med), τὸν(Art)(A) δὲ(Pt) -λίπ’(Aor)(Akt) αὐτοῦ(Av)
+(428) so also +gesprochen -ging|sie|fort, den aber -ließ|sie dort
+
+(429) +χωόμενον(Pre)(M/P)(A) κατὰ(Prp) #θυμὸν(A) +ἐϋζώνοιο(Aj)(G) #γυναικὸς(G)
+(429) +zürnend nach #Herz +der|wohl|gegürteten #Frau
+
+(430) τὴν(Art)(A) ῥα(Pt) #βίῃ(D) +ἀέκοντος(Aj)(G) -ἀπηύρων(Aor)(Akt)· αὐτὰρ(Pt) #Ὀδυσσεύς(N)
+(430) die ja #mit|Gewalt +des|un|willigen -raubten; aber #Odysseus
+
+(431) ἐς(Prp) #Χρύσην(A) -ἵκανεν(AorS)(Akt) +ἄγων(Pre)(Akt)(N) +ἱερὴν(Aj)(A) #ἑκατόμβην(A).
+(431) nach #Chryse -erreichte +führend +heilige #Hekatombe.
+
+(432) οἳ(Pr)(N) δ’(Pt) ὅτε(Ko) δὴ(Pt) #λιμένος(G) +πολυβενθέος(Aj)(G) ἐντὸς(Av) -ἵκοντο(Imp)(M/P)
+(432) sie aber als eben #des|Hafens +sehr|tiefen innen -kamen.
+
+(433) #ἱστία(A) μὲν(Pt) -στείλαντο(Aor)(Med), -θέσαν(Aor)(Akt) δ’(Pt) ἐν(Prp) #νηῒ(D) +μελαίνῃ(Aj)(D),
+(433) #Segel zwar -holten|ein, -setzten aber in #dem|Schiff +schwarzen,
+
+(434) #ἱστὸν(A) δ’(Pt) #ἱστοδόκῃ(D) -πέλασαν(Aor)(Akt) #προτόνοισιν(D) +ὑφέντες(Aor)(Akt)(N)
+(434) #Mast aber #zum|Mast|halter -brachten|nahe #mit|Vor|stagen +hinab|gelassen,
+
+(435) καρπαλίμως(Av), τὴν(Art)(A) δ’(Pt) εἰς(Prp) #ὅρμον(A) -προέρεσσαν(Aor)(Akt) #ἐρετμοῖς(D).
+(435) schnell, die aber in #Anker|platz -ruderten|vor #mit|Rudern.
+
+(436) ἐκ(Prp) δ’(Pt) #εὐνὰς(A) -ἔβαλον(Aor)(Akt), κατὰ(Prp) δὲ(Pt) #πρυμνήσι’(A) -ἔδησαν(Aor)(Akt)·
+(436) aus aber #Moor|taue -warfen, an aber #Heck|taue -banden;
+
+(437) ἐκ(Prp) δὲ(Pt) καὶ(Ko) αὐτοὶ(Pr)(N) -βαῖνον(Imp)(Akt) ἐπὶ(Prp) #ῥηγμῖνι(D) #θαλάσσης(G),
+(437) aus aber auch selbst -gingen auf #Brandungs|saum #des|Meeres,
+
+(438) ἐκ(Prp) δ’(Pt) #ἑκατόμβην(A) -βῆσαν(AorS)(Akt) +ἑκηβόλῳ(Aj)(D) #Ἀπόλλωνι(D)·
+(438) aus aber #Hekatombe -gingen +fern|schießenden #dem|Apollon;
+
+(439) ἐκ(Prp) δὲ(Pt) #Χρυσηῒς(N) #νηὸς(G) -βῆ(AorS)(Akt) +ποντοπόροιο(Aj)(G).
+(439) aus aber #Chryseïs #des|Schiffes -ging +see|fahrenden.
+
+(440) τὴν(Art)(A) μὲν(Pt) ἔπειτ’(Av) ἐπὶ(Prp) #βωμὸν(A) +ἄγων(Pre)(Akt)(N) +πολύμητις(Aj)(N) #Ὀδυσσεὺς(N)
+(440) die zwar dann auf #Altar +führend +viel|ratender #Odysseus
+
+(441) #πατρὶ(D) +φίλῳ(Aj)(D) ἐν(Prp) #χερσὶ(D) -τίθει(Imp)(Akt) καί(Ko) μιν(Pr)(A) -προσέειπεν(AorS)(Akt)·
+(441) #dem|Vater +lieb in #Händen -setzte und ihn -sprach|an;
+
+(442) ὦ(ij) #Χρύση(V), πρό(Av) μ’(Pr)(A) -ἔπεμψεν(Aor)(Akt) #ἄναξ(N) #ἀνδρῶν(G) #Ἀγαμέμνων(N)
+(442) o #o|Chryses, vorwärts mich -sandte #Fürst #der|Männer #Agamemnon
+
+(443) #παῖδά(A) τε(Pt) σοί(Pr)(D) -ἀγέμεν(Pre)(Inf)(Akt), #Φοίβῳ(D) θ’(Pt) +ἱερὴν(Aj)(A) #ἑκατόμβην(A)
+(443) #Tochter und dir -zu|führen, #dem|Phoibos und +heilige #Hekatombe
+
+(444) -ῥέξαι(Aor)(Inf)(Akt) ὑπὲρ(Prp) #Δαναῶν(G) ὄφρ’(Ko) -ἱλασόμεσθα(Fu)(Med) #ἄνακτα(A),
+(444) -dar|zubringen für #der|Danaer auf|daß -werden|versöhnen #den|Herrn,
+
+(445) ὃς(Pr)(N) νῦν(Av) #Ἀργείοισι(D) +πολύστονα(Aj)(A) #κήδε’(A) -ἐφῆκεν(Aor)(Akt).
+(445) der nun #den|Argivern +viel|seufzende #Kümmernisse -sandte|auf.
+
+(446) ὣς(Av) +εἰπών(Aor)(Akt)(N) ἐν(Prp) #χερσὶ(D) -τίθει(Imp)(Akt), ὃ(Pr)(N) δὲ(Pt) -δέξατο(Aor)(Med) +χαίρων(Pre)(Akt)(N)
+(446) so +gesagt|habend in #Händen -setzte, er aber -empfing +sich|freuend
+
+(447) #παῖδα(A) +φίλην(Aj)(A)· τοὶ(Pr)(N) δ’(Pt) ὦκα(Av) #θεῷ(D) +ἱερὴν(Aj)(A) #ἑκατόμβην(A)
+(447) #Tochter +liebe; sie aber schnell #dem|Gott +heilige #Hekatombe
+
+(448) ἑξείης(Av) -ἔστησαν(Aor)(Akt) +ἐΰδμητον(Aj)(A) περὶ(Prp) #βωμόν(A),
+(448) der|Reihe|nach -stellten|auf +wohl|gefügt um #Altar,
+
+(449) -χερνίψαντο(Aor)(Med) δ’(Pt) ἔπειτα(Av) καί(Ko) #οὐλοχύτας(A) -ἀνέλοντο(Aor)(Med).
+(449) -wuschen|sich aber dann und #Gersten|körner -nahmen|auf.
+
+(450) τοῖσιν(Pr)(D) δὲ(Pt) #Χρύσης(N) μεγάλ’(Av) -εὔχετο(Imp)(M/P) #χεῖρας(A) +ἀνασχών(Aor)(Akt)(N)·
+(450) ihnen aber #Chryses laut -betete #Hände +empor|gehoben;
+
+(451) -κλῦθί(Aor)(Akt)(Imv) μευ(Pr)(G) +ἀργυρότοξ’(Aj)(V), ὃς(Pr)(N) #Χρύσην(A) -ἀμφιβέβηκας(Per)(Akt)
+(451) -höre von|mir +silber|bogiger, der #Chryse -um|her|gestanden|hast
+
+(452) #Κίλλαν(A) τε(Pt) +ζαθέην(Aj)(A) #Τενέδοιό(G) τε(Pt) ἶφι(Av) -ἀνάσσεις(Pre)(Akt)·
+(452) #Cilla und +heilige #von|Tenedos und mit|Kraft -herrschest
+
+(453) ἦ(Pt) μὲν(Pt) δή(Pt) ποτ’(Pt) ἐμεῦ(Pr)(G) πάρος(Av) -ἔκλυες(AorS)(Akt) +εὐξαμένοιο(Aor)(Med)(G),
+(453) wahrlich ja gewiss einst von|mir zuvor -hörtest +gebetet|habenden,
+
+(454) -τίμησας(Aor)(Akt) μὲν(Pt) ἐμέ(Pr)(A), μέγα(Av) δ’(Pt) -ἴψαο(Aor)(Med) #λαὸν(A) #Ἀχαιῶν(G)·
+(454) -ehrtest zwar mich, sehr aber -zermalmtest #Volk #der|Achaier;
+
+(455) ἠδ’(Ko) ἔτι(Av) καὶ(Ko) νῦν(Av) μοι(Pr)(D) τόδ’(Pr)(A) -ἐπικρήηνον(Aor)(Akt)(Imv) #ἐέλδωρ(A)·
+(455) und noch auch jetzt mir dieses -erfülle #Begehren;
+
+(456) ἤδη(Av) νῦν(Av) #Δαναοῖσιν(D) +ἀεικέα(Aj)(A) #λοιγὸν(A) -ἄμυνον(Pre)(Akt)(Imv).
+(456) schon jetzt #den|Danaern +schändlichen #Verderben -wehre|ab.
+
+(457) ὣς(Av) -ἔφατ’(Imp)(Akt) +εὐχόμενος(Pre)(M/P)(N), τοῦ(Pr)(G) δ’(Pt) -ἔκλυε(AorS)(Akt) #Φοῖβος(N) #Ἀπόλλων(N).
+(457) so -sprach +betend, von|ihm aber -hörte #Phoibos #Apollon.
+
+(458) αὐτὰρ(Pt) ἐπεί(Ko) ῥ’(Pt) -εὔξαντο(Aor)(Med) καὶ(Ko) #οὐλοχύτας(A) -προβάλοντο(Aor)(Med),
+(458) aber als ja -beteten|sie und #Gersten|körner -streuten|vor,
+
+(459) -αὐέρυσαν(Aor)(Akt) μὲν(Pt) πρῶτα(Av) καὶ(Ko) -ἔσφαξαν(Aor)(Akt) καὶ(Ko) -ἔδειραν(Aor)(Akt),
+(459) -zogen|zurück zwar zuerst und -schlachteten und -häuteten,
+
+(460) #μηρούς(A) τ’(Pt) -ἐξέταμον(Aor)(Akt) κατά(Prp) τε(Pt) #κνίσῃ(D) -ἐκάλυψαν(Aor)(Akt)
+(460) #Schenkel und -schnitt|en|aus mit und #mit|Fettdampf -bedeckten
+
+(461) +δίπτυχα(Aj)(A) +ποιήσαντες(Aor)(Akt)(N), ἐπ’(Prp) αὐτῶν(Pr)(G) δ’(Pt) -ὠμοθέτησαν(Aor)(Akt)·
+(461) +zweifach|gefaltete +gemacht|habend, auf ihnen aber -roh|auflegten;
+
+(462) -καῖε(Imp)(Akt) δ’(Pt) ἐπὶ(Prp) #σχίζῃς(D) ὁ(Art)(N) #γέρων(N), ἐπὶ(Prp) δ’(Pt) +αἴθοπα(Aj)(A) #οἶνον(A)
+(462) -brannte aber auf #Spänen der #Greis, auf aber +glühend|roten #Wein
+
+(463) -λεῖβε(Imp)(Akt)· +νέοι(Aj)(N) δὲ(Pt) παρ’(Prp) αὐτὸν(Pr)(A) -ἔχον(Imp)(Akt) #πεμπώβολα(A) #χερσίν(D).
+(463) -goss; +junge aber bei ihn -hielten #fünf|zackige|Gabeln #in|den|Händen.
+
+(464) αὐτὰρ(Pt) ἐπεὶ(Ko) κατὰ(Prp) #μῆρε(A) -κάη(Aor)(Pas) καὶ(Ko) #σπλάγχνα(A) -πάσαντο(Aor)(Med),
+(464) aber als hinab #Schenkel -verbrannte und #Eingeweide -kosteten|sie,
+
+(465) -μίστυλλον(Imp)(Akt) τ’(Pt) ἄρα(Pt) +τἆλλα(Aj)(A) καὶ(Ko) ἀμφ’(Prp) #ὀβελοῖσιν(D) -ἔπειραν(Imp)(Akt),
+(465) -zerstückelten und also +die|übrigen|Stücke und um #Spießen -steckten|sie|auf,
+
+(466) -ὤπτησαν(Aor)(Akt) τε(Pt) περιφραδέως(Av), -ἐρύσαντο(Aor)(Med) τε(Pt) +πάντα(Aj)(A).
+(466) -rösteten und sorgfältig, -zogen|ab und +alles.
+
+(467) αὐτὰρ(Pt) ἐπεὶ(Ko) -παύσαντο(Aor)(Med) #πόνου(G) -τετύκοντο(Plq)(M/P) τε(Pt) #δαῖτα(A)
+(467) aber als -ließen|ab #der|Mühe -hatten|bereitet und #Mahlzeit
+
+(468) -δαίνυντ’(Imp)(Med), οὐδέ(Ko) τι(Pr)(A) #θυμὸς(N) -ἐδεύετο(Imp)(M/P) #δαιτὸς(G) +ἐΐσης(Aj)(G).
+(468) -schmausten, und|nicht irgend|etwas #Sinn -mangelte #der|Mahlzeit +gleichen.
+
+(469) αὐτὰρ(Pt) ἐπεὶ(Ko) #πόσιος(G) καὶ(Ko) #ἐδητύος(G) ἐξ(Prp) #ἔρον(A) -ἕντο(Aor)(Med),
+(469) aber als #des|Tranks und #der|Speise aus #Verlangen -ließen|ab,
+
+(470) #κοῦροι(N) μὲν(Pt) #κρητῆρας(A) -ἐπεστέψαντο(Aor)(Med) #ποτοῖο(G),
+(470) #Jünglinge zwar #Krater -um|kränzten|sich #des|Getränks,
+
+(471) -νώμησαν(Aor)(Akt) δ’(Pt) ἄρα(Pt) +πᾶσιν(Aj)(D) +ἐπαρξάμενοι(Aor)(Med)(N) #δεπάεσσιν(D)·
+(471) -verteilten aber also +allen +vor|geopfert|habend #mit|Bechern;
+
+(472) οἳ(Pr)(N) δὲ(Pt) +πανημέριοι(Aj)(N) #μολπῇ(D) #θεὸν(A) -ἱλάσκοντο(Imp)(Med)
+(472) die aber +ganztägig #mit|Gesang #Gott -versöhnten|sich
+
+(473) +καλὸν(Aj)(A) +ἀείδοντες(Pre)(Akt)(N) #παιήονα(A) #κοῦροι(N) #Ἀχαιῶν(G)
+(473) +schönen +singend #Paean #Jünglinge #der|Achaier
+
+(474) +μέλποντες(Pre)(Akt)(N) +ἑκάεργον(Aj)(A)· ὃ(Pr)(N) δὲ(Pt) #φρένα(A) -τέρπετ’(Pre)(M/P) +ἀκούων(Pre)(Akt)(N).
+(474) +preisend +fern|schießenden; der aber #Sinn -erfreut|sich +hörend.
+
+(475) ἦμος(Ko) δ’(Pt) #ἠέλιος(N) -κατέδυ(Aor)(Akt) καὶ(Ko) ἐπὶ(Prp) #κνέφας(A) -ἦλθε(Aor)(Akt),
+(475) als aber #Sonne -untertauchte und auf #Dunkel -kam,
+
+(476) δὴ(Pt) τότε(Av) -κοιμήσαντο(Aor)(Med) παρὰ(Prp) #πρυμνήσια(A) #νηός(G)·
+(476) eben dann -schliefen|sie bei #Heck|tauen #des|Schiffes;
+
+(477) ἦμος(Ko) δ’(Pt) +ἠριγένεια(Aj)(N) -φάνη(Aor)(Pas) +ῥοδοδάκτυλος(Aj)(N) #Ἠώς(N),
+(477) als aber +früh|geborene -erschien +rosen|fingrige #Eos,
+
+(478) καὶ(Ko) τότ’(Av) ἔπειτ’(Av) -ἀνάγοντο(Imp)(Med) μετὰ(Prp) #στρατὸν(A) +εὐρὺν(Aj)(A) #Ἀχαιῶν(G)·
+(478) und dann danach -setzten|hinaus|sich mitten|unter #Heer +weit #der|Achaier;
+
+(479) τοῖσιν(Pr)(D) δ’(Pt) +ἴκμενον(Aj)(A) #οὖρον(A) -ἵει(Imp)(Akt) +ἑκάεργος(Aj)(N) #Ἀπόλλων(N)·
+(479) ihnen aber +günstigen #Wind -sandte +fern|schießender #Apollon;
+
+(480) οἳ(Pr)(N) δ’(Pt) #ἱστὸν(A) -στήσαντ’(Aor)(Akt) ἀνά(Prp) θ’(Pt) #ἱστία(A) +λευκὰ(Aj)(A) -πέτασσαν(Aor)(Akt),
+(480) die aber #Mast -stellten, hinauf und #Segel +weiße -spannten,
+
+(481) ἐν(Prp) δ’(Pt) #ἄνεμος(N) -πρῆσεν(Aor)(Akt) +μέσον(Aj)(A) #ἱστίον(A), ἀμφὶ(Prp) δὲ(Pt) #κῦμα(A)
+(481) in aber #Wind -füllte +mittleres #Segel, um aber #Woge
+
+(482) #στείρῃ(D) +πορφύρεον(Aj)(A) μέγαλ’(Av) -ἴαχε(Imp)(Akt) #νηὸς(G) +ἰούσης(Pre)(Akt)(G)·
+(482) #am|Heck +purpur|farbenes laut -dröhnte #des|Schiffes +gehend;
+
+(483) ἣ(Pr)(N) δ’(Pt) -ἔθεεν(Imp)(Akt) κατὰ(Prp) #κῦμα(A) +διαπρήσσουσα(Pre)(Akt)(N) #κέλευθον(A).
+(483) die aber -eilte über #Woge +hindurch|schneidend #Weg.
+
+(484) αὐτὰρ(Pt) ἐπεί(Ko) ῥ’(Pt) -ἵκοντο(AorS)(Med) κατὰ(Prp) #στρατὸν(A) +εὐρὺν(Aj)(A) #Ἀχαιῶν(G),
+(484) aber als doch -kamen durch #Heer +weit #der|Achaier,
+
+(485) #νῆα(A) μὲν(Pt) οἵ(Pr)(N) γε(Pt) +μέλαιναν(Aj)(A) ἐπ’(Prp) #ἠπείροιο(G) -ἔρυσσαν(Aor)(Akt)
+(485) #Schiff zwar die eben +schwarzes auf #des|Festlands -zogen
+
+(486) ὑψοῦ(Av) ἐπὶ(Prp) #ψαμάθοις(D), ὑπὸ(Prp) δ’(Pt) #ἕρματα(A) +μακρὰ(Aj)(A) -τάνυσσαν(Aor)(Akt)·
+(486) hoch auf #auf|Sanden, unter aber #Stützen +lange -spannten;
+
+(487) αὐτοὶ(Pr)(N) δ’(Pt) -ἐσκίδναντο(Imp)(M/P) κατὰ(Prp) #κλισίας(A) τε(Pt) #νέας(A) τε(Pt).
+(487) selbst aber -zerstreuten|sich nach #Hütten und #Schiffe und.
+
+(488) αὐτὰρ(Pt) ὃ(Pr)(N) -μήνιε(Imp)(Akt) #νηυσὶ(D) +παρήμενος(Pre)(M/P)(N) +ὠκυπόροισι(Aj)(D)
+(488) aber er -zürnte #bei|den|Schiffen +daneben|sitzend +schnell|fahrenden
+
+(489) +διογενὴς(Aj)(N) #Πηλῆος(G) #υἱὸς(N) #πόδας(A) +ὠκὺς(Aj)(N) #Ἀχιλλεύς(N)·
+(489) +Zeus|geborener #des|Peleus #Sohn #Füße +schneller #Achilleus;
+
+(490) οὔτέ(Ko) ποτ’(Pt) εἰς(Prp) #ἀγορὴν(A) -πωλέσκετο(Imp)(Med) +κυδιάνειραν(Aj)(A)
+(490) weder je in #Versammlung -ging|gewöhnlich +ruhm|verleihende
+
+(491) οὔτέ(Ko) ποτ’(Pt) ἐς(Prp) #πόλεμον(A), ἀλλὰ(Ko) -φθινύθεσκε(Imp)(Akt) +φίλον(Aj)(N) #κῆρ(N)
+(491) weder je in #Krieg, aber -schwand +lieb #Herz
+
+(492) αὖθι(Av) +μένων(Pre)(Akt)(N), -ποθέεσκε(Imp)(Akt) δ’(Pt) #ἀϋτήν(A) τε(Pt) #πτόλεμόν(A) τε(Pt).
+(492) da +verweilend, -vermißte aber #Kampf|ruf und #Krieg und.
+
+(493) ἀλλ’(Ko) ὅτε(Ko) δή(Pt) ῥ’(Pt) ἐκ(Prp) τοῖο(Pr)(G) +δυωδεκάτη(Aj)(N) -γένετ’(Aor)(M/P) #ἠώς(N),
+(493) aber als eben doch aus dieses +zwölfte -wurde #Morgen|röte,
+
+(494) καὶ(Ko) τότε(Av) δὴ(Pt) πρὸς(Prp) #Ὄλυμπον(A) -ἴσαν(Imp)(Akt) #θεοὶ(N) αἰὲν(Av) +ἐόντες(Pre)(Akt)(N)
+(494) und dann eben zu #Olymp -gingen #Götter immer +seiend
+
+(495) +πάντες(Aj)(N) ἅμα(Av), #Ζεὺς(N) δ’(Pt) -ἦρχε(Imp)(Akt)· #Θέτις(N) δ’(Pt) οὐ(Pt) -λήθετ’(Imp)(M/P) #ἐφετμέων(G)
+(495) +alle zugleich, #Zeus aber -führte; #Thetis aber nicht -vergaß #Weisungen
+
+(496) #παιδὸς(G) ἑοῦ(Pr)(G), ἀλλ’(Ko) ἥ(Pr)(N) γ’(Pt) -ἀνεδύσετο(Aor)(Med) #κῦμα(A) #θαλάσσης(G).
+(496) #des|Sohnes ihres, aber die doch -tauchte|auf #Welle #des|Meeres.
+
+(497) ἠερίη(Av) δ’(Pt) -ἀνέβη(AorS)(Akt) +μέγαν(Aj)(A) #οὐρανὸν(A) #Οὔλυμπόν(A) τε(Pt).
+(497) früh|morgens aber -stieg +großen #Himmel #Olymp und.
+
+(498) -εὗρεν(AorS)(Akt) δ’(Pt) +εὐρύοπα(Aj)(A) #Κρονίδην(A) ἄτερ(Prp) +ἥμενον(Pre)(M/P)(A) ἄλλων(Pr)(G)
+(498) -fand aber +weit|blickenden #Kroniden ohne +sitzend der|anderen
+
+(499) +ἀκροτάτῃ(Aj)(D)(Sup) #κορυφῇ(D) +πολυδειράδος(Aj)(G) #Οὐλύμποιο(G)·
+(499) +höchsten #Gipfel +viel|rückigen #des|Olymp;
+
+(500) καί(Ko) ῥα(Pt) πάροιθ’(Prp) αὐτοῖο(Pr)(G) -καθέζετο(Aor)(Med), καί(Ko) -λάβε(AorS)(Akt) #γούνων(G)
+(500) und ja vor ihm -setzte|sich, und -ergriff #der|Knie
+
+(501) +σκαιῇ(Aj)(D), +δεξιτερῇ(Aj)(D) δ’(Pt) ἄρ’(Pt) ὑπ’(Prp) #ἀνθερεῶνος(G) +ἑλοῦσα(AorS)(Akt)(N)
+(501) +mit|der|linken, +mit|der|rechten aber ja unter #des|Kinns +ergriffen|habend
+
+(502) +λισσομένη(Pre)(M/P)(N) -προσέειπε(AorS)(Akt) #Δία(A) +Κρονίωνα(Aj)(A) #ἄνακτα(A)·
+(502) +flehend -redete|an #Zeus +Kronos|Sohn #Herrn;
+
+(503) #Ζεῦ(V) #πάτερ(V) εἴ(Ko) ποτε(Pt) δή(Pt) σε(Pr)(A) μετ’(Prp) +ἀθανάτοισιν(Aj)(D) -ὄνησα(Aor)(Akt)
+(503) #Zeus #Vater wenn einst eben dich unter +den|Unsterblichen -nützte|ich
+
+(504) ἢ(Ko) #ἔπει(D) ἢ(Ko) #ἔργῳ(D), #τόδε(Pr)(A) μοι(Pr)(D) -κρήηνον(Aor)(Akt)(Imv) #ἐέλδωρ(A)·
+(504) oder #mit|Wort oder #mit|Tat, #dies mir -erfülle #Wunsch;
+
+(505) -τίμησόν(Aor)(Akt)(Imv) μοι(Pr)(D) #υἱὸν(A) ὃς(Pr)(N) +ὠκυμορώτατος(Aj)(N)(Sup) ἄλλων(Pr)(G)
+(505) -ehre mir #Sohn der +früh|sterbendste der|anderen
+
+(506) -ἔπλετ’(Imp)(M/P)· ἀτάρ(Ko) μιν(Pr)(A) νῦν(Av) γε(Pt) #ἄναξ(N) #ἀνδρῶν(G) #Ἀγαμέμνων(N) -ἠτίμησεν(Aor)(Akt)·
+(506) -war|geworden; aber ihn nun doch #Herr #der|Männer #Agamemnon -entehrte;
+
+(507) +ἑλὼν(AorS)(Akt)(N) γὰρ(Pt) -ἔχει(Pre)(Akt) #γέρας(A) αὐτὸς(Pr)(N) +ἀπούρας(Aor)(Akt)(N).
+(507) +genommen|habend nämlich -hat #Ehrengeschenk er|selbst +wegnehmend.
+
+(508) ἀλλὰ(Ko) σύ(Pr)(N) πέρ(Pt) μιν(Pr)(A) -τῖσον(Aor)(Akt)(Imv) +Ὀλύμπιε(Aj)(V) #μητίετα(V) #Ζεῦ(V)·
+(508) aber du doch ihn -ehre +Olympischer #Rat|reicher #Zeus;
+
+(509) τόφρα(Av) δ’(Pt) ἐπὶ(Prp) #Τρώεσσι(D) -τίθει(Pre)(Akt)(Imv) #κράτος(A) ὄφρ’(Ko) ἂν(Pt) #Ἀχαιοὶ(N)
+(509) so|lange aber auf #den|Trojanern -setze #Macht bis ja #Achaier
+
+(510) #υἱὸν(A) +ἐμὸν(Aj)(A) -τίσωσιν(Aor)(Akt)(Kon) -ὀφέλλωσίν(Pre)(Akt)(Kon) τε(Pt) ἑ(Pr)(A) #τιμῇ(D).
+(510) #Sohn +meinen -vergelten -mehren und ihn #mit|Ehre.
+
+(511) ὣς(Av) -φάτο(Imp)(M/P)· τὴν(Art)(A) δ’(Pt) οὔ(Pt) τι(Pr)(A) -προσέφη(Imp)(Akt) +νεφεληγερέτα(Aj)(N) #Ζεύς(N),
+(511) so -sprach|er; sie aber nicht irgend|etwas -sprach|zu +Wolken|sammelnder #Zeus,
+
+(512) ἀλλ’(Ko) ἀκέων(Av) δὴν(Av) -ἧστο(Plq)(M/P)· #Θέτις(N) δ’(Pt) ὡς(Ko) -ἥψατο(Aor)(Med) #γούνων(G)
+(512) aber schweigend lange -saß; #Thetis aber als -berührte #der|Knie
+
+(513) ὣς(Av) -ἔχετ’(Imp)(M/P) +ἐμπεφυυῖα(Per)(Akt)(N), καὶ(Ko) -εἴρετο(Imp)(M/P) δεύτερον(Av) αὖτις(Av)·
+(513) so -hielt|sie|sich +ein|gewachsen, und -fragte zum|zweiten wieder;
+
+(514) νημερτές(Av) μὲν(Pt) δή(Pt) μοι(Pr)(D) -ὑπόσχεο(Aor)(Med)(Imv) καὶ(Ko) -κατάνευσον(Aor)(Akt)(Imv)
+(514) sicher zwar eben mir -versprich und -nicke|zu
+
+(515) ἢ(Ko) -ἀπόειπ’(Aor)(Akt)(Imv), ἐπεὶ(Ko) οὔ(Pt) τοι(Pr)(D) ἔπι(Prp) #δέος(N), ὄφρ’(Ko) ἐῢ(Av) -εἰδέω(Aor)(Akt)(Kon)
+(515) oder -sage|ab, da nicht dir auf #Furcht, damit gut -wisse|ich
+
+(516) ὅσσον(Pr)(A) ἐγὼ(Pr)(N) μετὰ(Prp) +πᾶσιν(Aj)(D) +ἀτιμοτάτη(Aj)(N)(Sup) #θεός(N) -εἰμι(Pre)(Akt).
+(516) wie|sehr ich mit +allen +am|meisten|entehrt #Göttin -bin.
+
+(517) τὴν(Art)(A) δὲ(Pt) μέγ’(Av) +ὀχθήσας(Aor)(Akt)(N) -προσέφη(Imp)(Akt) +νεφεληγερέτα(Aj)(N) #Ζεύς(N)·
+(517) sie aber sehr +erzürnt -sprach|zu +Wolken|sammelnder #Zeus;
+
+(518) ἦ(ij) δή(Pt) +λοίγια(Aj)(A) #ἔργ’(A) ὅ(Pr)(A) τέ(Pt) με(Pr)(A) -ἐχθοδοπῆσαι(Aor)(Inf)(Akt) -ἐφήσεις(Fu)(Akt)
+(518) wahrlich eben +verderbliche #Taten was und mich -Feindschaft|stiften -wirst|veranlassen
+
+(519) #Ἥρῃ(D) ὅτ’(Ko) ἄν(Pt) με(Pr)(A) -ἐρέθῃσιν(Pre)(Akt)(Kon) +ὀνειδείοις(Aj)(D) #ἐπέεσσιν(D)·
+(519) #der|Hera wenn ja mich -reizt +schmählichen #Worten;
+
+(520) ἣ(Pr)(N) δὲ(Pt) καὶ(Ko) αὔτως(Av) με(Pr)(A) αἰεὶ(Av) ἐν(Prp) +ἀθανάτοισι(Aj)(D) #θεοῖσι(D)
+(520) sie aber auch sowieso mich immer in +unsterblichen #Göttern
+
+(521) -νεικεῖ(Pre)(Akt), καί(Ko) τέ(Pt) με(Pr)(A) -φησι(Pre)(Akt) #μάχῃ(D) #Τρώεσσιν(D) -ἀρήγειν(Pre)(Inf)(Akt).
+(521) -schmäht|sie, und und mich -sagt #in|der|Schlacht #den|Troern -zu|helfen.
+
+(522) ἀλλὰ(Ko) σύ(Pr)(N) μέν(Pt) νῦν(Av) αὖτις(Av) -ἀπόστιχε(Aor)(Akt)(Imv) μή(Ko) τι(Pr)(A) -νοήσῃ(Aor)(Akt)(Kon) #Ἥρη(N).
+(522) aber du zwar jetzt wieder -gehe|weg nicht irgend|etwas -bemerke #Hera.
+
+(523) #Ἥρη(N)· ἐμοί(Pr)(D) δέ(Pt) κε(Pt) ταῦτα(Pr)(A) -μελήσεται(Fu)(M/P) ὄφρα(Ko) -τελέσσω(Aor)(Akt)(Kon)·
+(523) #Hera; mir aber ja diese -wird|Sorge|sein damit -vollende|ich;
+
+(524) εἰ(Ko) δ’(Pt) ἄγε(ij) τοι(Pr)(D) #κεφαλῇ(D) -κατανεύσομαι(Fu)(Med) ὄφρα(Ko) -πεποίθῃς(Per)(Akt)(Kon)·
+(524) wenn aber komm dir #mit|dem|Kopf -werde|ich|nicken damit -seiest|überzeugt.
+
+(525) τοῦτο(Pr)(N) γὰρ(Pt) ἐξ(Prp) ἐμέθεν(Pr)(G) γε(Pt) μετ’(Prp) +ἀθανάτοισι(Aj)(D) +μέγιστον(Aj)(N)(Sup)
+(525) dieses denn aus mir ja unter +unsterblichen +größtes
+
+(526) #τέκμωρ(N)· οὐ(Pt) γὰρ(Pt) +ἐμὸν(Aj)(N) +παλινάγρετον(Aj)(N) οὐδ’(Pt) +ἀπατηλὸν(Aj)(N)
+(526) #Beweis; nicht denn +mein +wieder|zurück|nehmbar noch +trügerisch
+
+(527) οὐδ’(Pt) +ἀτελεύτητον(Aj)(N) ὅ(Pr)(A) τί(Pr)(A) κεν(Pt) #κεφαλῇ(D) -κατανεύσω(Aor)(Akt)(Kon).
+(527) noch +unvollendet was irgend auch #mit|dem|Kopf -nicken|ich.
+
+(528) ἦ(ij) καὶ(Ko) +κυανέῃσιν(Aj)(D) ἐπ’(Prp) #ὀφρύσι(D) -νεῦσε(Aor)(Akt) #Κρονίων(N)·
+(528) wahrlich und +dunkel|blauen auf #Augen|brauen -nickte #Kronion;
+
+(529) +ἀμβρόσιαι(Aj)(N) δ’(Pt) ἄρα(Pt) #χαῖται(N) -ἐπερρώσαντο(Aor)(Med) #ἄνακτος(G)
+(529) +ambrosische aber also #Locken -fielen|herab #des|Herrschers
+
+(530) #κρατὸς(G) ἀπ’(Prp) +ἀθανάτοιο(Aj)(G)· +μέγαν(Aj)(A) δ’(Pt) -ἐλέλιξεν(Aor)(Akt) #Ὄλυμπον(A).
+(530) #des|Hauptes von +dem|Unsterblichen; +großen aber -erschütterte #Olymp.
+
+(531) τώ(Pr)(N) γ’(Pt) ὣς(Av) +βουλεύσαντε(Aor)(Akt)(N) -διέτμαγεν(Aor)(Akt)· ἣ(Pr)(N) μέν(Pt) ἔπειτα(Av)
+(531) die|zwei ja so +beraten|habend -trennten|sich; sie zwar dann
+
+(532) εἰς(Prp) #ἅλα(A) -ἆλτο(Aor)(Med) +βαθεῖαν(Aj)(A) ἀπ’(Prp) +αἰγλήεντος(Aj)(G) #Ὀλύμπου(G),
+(532) in #Meer -sprang +tief von +strahlenden #des|Olymp,
+
+(533) #Ζεὺς(N) δὲ(Pt) +ἑὸν(Aj)(A) πρὸς(Prp) #δῶμα(A)· #θεοὶ(N) δ’(Pt) ἅμα(Av) +πάντες(Aj)(N) -ἀνέσταν(Aor)(Akt)
+(533) #Zeus aber +eigenes zu #Haus; #Götter aber zugleich +alle -standen|auf
+
+(534) ἐξ(Prp) #ἑδέων(G) σφοῦ(Pr)(G) #πατρὸς(G) ἐναντίον(Av)· οὐδέ(Pt) τις(Pr)(N) -ἔτλη(AorS)(Akt)
+(534) aus #der|Sitze ihres #Vaters gegenüber; auch|nicht jemand -wagte
+
+(535) -μεῖναι(Aor)(Inf)(Akt) +ἐπερχόμενον(Pre)(M/P)(A), ἀλλ’(Ko) +ἀντίοι(Aj)(N) -ἔσταν(Aor)(Akt) +ἅπαντες(Aj)(N).
+(535) -zu|bleiben +heran|kommenden, aber +entgegen -stellten|sie|sich +alle.
+
+(536) ὣς(Av) ὃ(Pr)(N) μέν(Pt) ἔνθα(Av) -καθέζετ’(Imp)(M/P) ἐπὶ(Prp) #θρόνου(G)· οὐδέ(Pt) μιν(Pr)(A) #Ἥρη(N)
+(536) so er zwar dort -setzte|sich auf #des|Thrones; auch|nicht ihn #Hera
+
+(537) -ἠγνοίησεν(Aor)(Akt) +ἰδοῦσ’(AorS)(Akt)(N) ὅτι(Ko) οἱ(Pr)(D) -συμφράσσατο(Aor)(Med) #βουλὰς(A)
+(537) -übersah +gesehen|habend dass ihm -beriet|sich #Pläne
+
+(538) +ἀργυρόπεζα(Aj)(N) #Θέτις(N) #θυγάτηρ(N) +ἁλίοιο(Aj)(G) #γέροντος(G).
+(538) +silber|füßige #Thetis #Tochter +des|Meeres #Greises.
+
+(539) αὐτίκα(Av) +κερτομίοισι(Aj)(D) #Δία(A) #Κρονίωνα(A) -προσηύδα(Imp)(Akt)·
+(539) sofort +spöttischen #Zeus #Kronion -redete|an;
+
+(540) τίς(Pr)(N) δ’(Pt) αὖ(Av) τοι(Pr)(D) +δολομῆτα(Aj)(V) #θεῶν(G) -συμφράσσατο(Aor)(Med) #βουλάς(A);
+(540) wer aber wieder dir +listiger #der|Götter -beriet|sich #Pläne?
+
+(541) αἰεί(Av) τοι(Pr)(D) +φίλον(Aj)(N) -ἐστὶν(Pre)(Akt) ἐμεῦ(Pr)(G) ἀπὸ(Prp) νόσφιν(Prp) +ἐόντα(Pre)(Akt)(A)
+(541) immer dir +lieb -ist meiner von abseits +seiend
+
+(542) +κρυπτάδια(Aj)(A) +φρονέοντα(Pre)(Akt)(A) -δικαζέμεν(Pre)(Inf)(Akt)· οὐδέ(Pt) τί(Pr)(A) πώ(Av) μοι(Pr)(D)
+(542) +heimliche +denkend -zu|richten; und|nicht etwas je mir
+
+(543) +πρόφρων(Aj)(N) -τέτληκας(Per)(Akt) -εἰπεῖν(Aor)(Inf)(Akt) #ἔπος(A) ὅττι(Ko) -νοήσῃς(Aor)(Akt)(Kon).
+(543) +willig -hast|gewagt -zu|sagen #Wort dass -ersinnst.
+
+(544) τὴν(Art)(A) δ’(Pt) -ἠμείβετ’(Imp)(M/P) ἔπειτα(Av) #πατὴρ(N) #ἀνδρῶν(G) τε(Pt) #θεῶν(G) τε(Pt)·
+(544) die aber -antwortete dann #Vater #der|Männer und #der|Götter und;
+
+(545) #Ἥρη(V) μὴ(Pt) δὴ(Pt) +πάντας(Aj)(A) +ἐμοὺς(Aj)(A) -ἐπιέλπεο(Pre)(M/P)(Imv) #μύθους(A)
+(545) #Hera nicht eben +alle +meine -erwarte #Worte
+
+(546) -εἰδήσειν(Fu)(Inf)(Akt)· +χαλεποί(Aj)(N) τοι(Pr)(D) -ἔσοντ’(Fu)(Akt) #ἀλόχῳ(D) περ(Pt) +ἐούσῃ(Pre)(Akt)(D)·
+(546) -zu|wissen; +schwierig dir -werden #der|Ehefrau doch +seienden;
+
+(547) ἀλλ’(Ko) ὃν(Pr)(A) μέν(Pt) κ’(Pt) +ἐπιεικὲς(Aj)(A) -ἀκουέμεν(Pre)(Inf)(Akt) οὔ(Pt) τις(Pr)(N) ἔπειτα(Av)
+(547) aber den|welchen zwar ja +angemessen -zu|hören nicht jemand dann
+
+(548) οὔτε(Ko) #θεῶν(G) +πρότερος(Aj)(N)(Kmp) τὸν(Art)(A) -εἴσεται(Fu)(Med) οὔτ’(Ko) #ἀνθρώπων(G)·
+(548) weder #der|Götter +früher den -wird|wissen noch #der|Menschen;
+
+(549) ὃν(Pr)(A) δέ(Pt) κ’(Pt) ἐγὼν(Pr)(N) ἀπάνευθε(Prp) #θεῶν(G) -ἐθέλωμι(Pre)(Akt)(Kon) -νοῆσαι(Aor)(Inf)(Akt)
+(549) den|welchen aber ja ich fern #der|Götter -wolle -zu|ersinnen
+
+(550) μή(Pt) τι(Pr)(A) σὺ(Pr)(N) ταῦτα(Pr)(A) ἕκαστα(Pr)(A) -διείρεο(Pre)(M/P)(Imv) μηδὲ(Ko) -μετάλλα(Pre)(Imv)(Akt).
+(550) nicht etwas du diese je|einzelnen -frage|nach noch -erkundige|dich.
+
+(551) τὸν(Art)(A) δ’(Pt) -ἠμείβετ’(Imp)(M/P) ἔπειτα(Av) +βοῶπις(Aj)(N) +πότνια(Aj)(N) #Ἥρη(N)·
+(551) den aber -antwortete dann +rinder|äugig +herrin|haft #Hera;
+
+(552) +αἰνότατε(Aj)(V)(Sup) #Κρονίδη(V) +ποῖον(Aj)(A) τὸν(Art)(A) #μῦθον(A) -ἔειπες(AorS)(Akt);
+(552) +schrecklichster #Kronide +welchen den #Spruch -sagtest?
+
+(553) καὶ(Ko) λίην(Av) σε(Pr)(A) πάρος(Av) γ’(Pt) οὔτ’(Ko) -εἴρομαι(Pre)(M/P) οὔτε(Ko) -μεταλλῶ(Pre)(Akt),
+(553) und sehr dich früher ja weder -frage noch -nach|forsche,
+
+(554) ἀλλὰ(Ko) μάλ’(Av) +εὔκηλος(Aj)(N) τὰ(Art)(A) -φράζεαι(Pre)(M/P) ἅσσ’(Pr)(A) -ἐθέλῃσθα(Pre)(M/P)(Kon).
+(554) aber sehr +ruhig die -erklärst du welche -willst.
+
+(555) νῦν(Av) δ’(Pt) αἰνῶς(Av) -δείδοικα(Per)(Akt) κατὰ(Prp) #φρένα(A) μή(Pt) σε(Pr)(A) -παρείπῃ(AorS)(Akt)(Kon)
+(555) jetzt aber schrecklich -fürchte|ich #im|Sinn nicht dich -über|rede
+
+(556) +ἀργυρόπεζα(Aj)(N) #Θέτις(N) #θυγάτηρ(N) +ἁλίοιο(Aj)(G) #γέροντος(G)·
+(556) +silber|füßige #Thetis #Tochter +des|Meeres #Greises;
+
+(557) +ἠερίη(Aj)(N) γὰρ(Pt) σοί(Pr)(D) γε(Pt) -παρέζετο(Imp)(M/P) καὶ(Ko) -λάβε(AorS)(Akt) #γούνων(G)·
+(557) +morgendlich denn dir ja -setzte|sich|bei und -nahm #der|Knie;
+
+(558) τῇ(Pr)(D) σ’(Pr)(A) -ὀΐω(Pre)(Akt) -κατανεῦσαι(Aor)(Inf)(Akt) +ἐτήτυμον(Aj)(A) ὡς(Ko) #Ἀχιλῆα(A)
+(558) ihr dich -meine -zu|nicken +wahr dass #Achilleus
+
+(559) -τιμήσῃς(Aor)(Akt)(Kon), -ὀλέσῃς(Aor)(Akt)(Kon) δὲ(Pt) +πολέας(Aj)(A) ἐπὶ(Prp) #νηυσὶν(D) #Ἀχαιῶν(G).
+(559) -ehrst, -vernichtest aber +viele auf #Schiffen #der|Achaier.
+
+(560) τὴν(Art)(A) δ’(Pt) +ἀπαμειβόμενος(Pre)(M/P)(N) -προσέφη(AorS)(Akt) +νεφεληγερέτα(Aj)(N) #Ζεύς(N)·
+(560) die aber +antwortend -redete +wolken|sammelnd #Zeus;
+
+(561) +δαιμονίη(Aj)(V) αἰεὶ(Av) μὲν(Pt) -ὀΐεαι(Pre)(M/P) οὐδέ(Ko) σε(Pr)(A) -λήθω(Pre)(Akt)·
+(561) +du|Seltsame immer zwar -meinst und|nicht dich -entgehe;
+
+(562) -πρῆξαι(Aor)(Inf)(Akt) δ’(Pt) ἔμπης(Av) οὔ(Pt) τι(Pr)(A) -δυνήσεαι(Fu)(M/P), ἀλλ’(Ko) ἀπὸ(Prp) #θυμοῦ(G)
+(562) -zu|vollbringen aber dennoch nicht irgend|etwas -vermagst, sondern von #des|Mutes
+
+(563) μᾶλλον(Av) ἐμοὶ(Pr)(D) -ἔσεαι(Fu)(M/P)· τὸ(Art)(N) δέ(Pt) τοι(Pr)(D) καὶ(Ko) +ῥίγιον(Aj)(N)(Kmp) -ἔσται(Fu)(M/P).
+(563) mehr mir -wirst|sein; dies aber dir auch +kälter -wird|sein.
+
+(564) εἰ(Ko) δ’(Pt) οὕτω(Av) τοῦτ’(Pr)(N) -ἐστὶν(Pre)(Akt) ἐμοὶ(Pr)(D) -μέλλει(Pre)(Akt) +φίλον(Aj)(N) -εἶναι(Pre)(Inf)(Akt)·
+(564) wenn aber so dieses -ist mir -bevorsteht +lieb -zu|sein;
+
+(565) ἀλλ’(Ko) +ἀκέουσα(Pre)(M/P)(N) -κάθησο(Aor)(Med)(Imv), ἐμῷ(Aj)(D) δ’(Pt) -ἐπιπείθεο(Pre)(M/P)(Imv) #μύθῳ(D),
+(565) sondern +schweigend -setze|dich, +meinem aber -gehorche #Wort,
+
+(566) μή(Pt) νύ(Pt) τοι(Pr)(D) οὐ(Pt) -χραίσμωσιν(Pre)(Akt)(Kon) ὅσοι(Pr)(N) #θεοί(N) -εἰσ’(Pre)(Akt) ἐν(Prp) #Ὀλύμπῳ(D)
+(566) nicht nun dir nicht -nützen wie|viele #Götter -sind in #Olymp
+
+(567) ἆσσον(Av)(Kmp) +ἰόνθ’(Pre)(Akt)(A), ὅτε(Ko) κέν(Pt) τοι(Pr)(D) +ἀάπτους(Aj)(A) #χεῖρας(A) -ἐφείω(Aor)(Akt)(Kon).
+(567) näher +gehend, wenn wohl dir +unantastbare #Hände -los|lasse.
+
+(568) ὣς(Av) -ἔφατ’(Imp)(M/P) -ἔδεισεν(Aor)(Akt) δὲ(Pt) +βοῶπις(Aj)(N) +πότνια(Aj)(N) #Ἥρη(N),
+(568) so -sprach -fürchtete aber +rinder|äugige +herrin|hafte #Hera,
+
+(569) καί(Ko) ῥ’(Pt) +ἀκέουσα(Pre)(M/P)(N) -καθῆστο(Plq)(M/P) +ἐπιγνάμψασα(Aor)(Akt)(N) +φίλον(Aj)(A) #κῆρ(A)·
+(569) und dann +schweigend -saß +nieder|beugend +liebes #Herz;
+
+(570) -ὄχθησαν(Aor)(Pas) δ’(Pt) ἀνὰ(Prp) #δῶμα(A) #Διὸς(G) #θεοὶ(N) +Οὐρανίωνες(Aj)(N)·
+(570) -entrüsteten|sich aber durch #Haus #des|Zeus #Götter +Himmlische;
+
+(571) τοῖσιν(Art)(D) δ’(Pt) #Ἥφαιστος(N) +κλυτοτέχνης(Aj)(N) -ἦρχ’(Imp)(Akt) -ἀγορεύειν(Pre)(Inf)(Akt)
+(571) denen aber #Hephaistos +berühmt|kunst|kundig -begann -zu|reden
+
+(572) #μητρὶ(D) +φίλῃ(Aj)(D) #ἐπίηρα(A) +φέρων(Pre)(Akt)(N) +λευκωλένῳ(Aj)(D) #Ἥρῃ(D)·
+(572) #der|Mutter +lieben #Wohl|taten +tragend +weiß|armig #der|Hera·
+
+(573) ἦ(Pt) δὴ(Pt) +λοίγια(Aj)(N) #ἔργα(N) τάδ’(Pr)(N) -ἔσσεται(Fu)(M/P) οὐδ’(Ko) ἔτ’(Av) +ἀνεκτά(Aj)(N),
+(573) ja eben +verderbliche #Taten diese -wird|sein und|nicht mehr +erträglich,
+
+(574) εἰ(Ko) δὴ(Pt) σφὼ(Pr)(N) ἕνεκα(Prp) #θνητῶν(G) -ἐριδαίνετον(Pre)(Akt) ὧδε(Av),
+(574) wenn eben ihr|beide um|willen #der|Sterblichen -zankt|ihr|beide so,
+
+(575) ἐν(Prp) δὲ(Pt) #θεοῖσι(D) #κολῳὸν(A) -ἐλαύνετον(Pre)(Akt)· οὐδέ(Ko) τι(Pr)(A) #δαιτὸς(G)
+(575) in aber #den|Göttern #Schmäh|streit -treibt|ihr|beide· und|nicht irgend|etwas #der|Mahlzeit
+
+(576) +ἐσθλῆς(Aj)(G) -ἔσσεται(Fu)(M/P) #ἦδος(N), ἐπεὶ(Ko) τὰ(Art)(N) +χερείονα(Aj)(N)(Kmp) -νικᾷ(Pre)(Akt).
+(576) +guten -wird|sein #Genuss, da die +schlechteren -siegt.
+
+(577) #μητρὶ(D) δ’(Pt) ἐγὼ(Pr)(N) -παράφημι(Pre)(Akt) καὶ(Ko) αὐτῇ(Pr)(D) περ(Pt) +νοεούσῃ(Pre)(Akt)(D)
+(577) #der|Mutter aber ich -rate und ihr|selbst zwar +verstehenden
+
+(578) #πατρὶ(D) +φίλῳ(Aj)(D) #ἐπίηρα(A) -φέρειν(Pre)(Inf)(Akt) #Διί(D), ὄφρα(Ko) μὴ(Pt) αὖτε(Av)
+(578) #dem|Vater +lieben #Wohl|taten -zu|bringen #dem|Zeus, damit nicht wiederum
+
+(579) -νεικείῃσι(Pre)(Akt)(Kon) #πατήρ(N), σὺν(Prp) δ’(Pt) ἡμῖν(Pr)(D) #δαῖτα(A) -ταράξῃ(Aor)(Akt)(Kon).
+(579) -schelte #der|Vater, mit aber uns #Mahl|zeit -verwirre.
+
+(580) εἴ(Ko) περ(Pt) γάρ(Ko) κ’(Pt) -ἐθέλῃσιν(Pre)(Akt)(Kon) +Ὀλύμπιος(Aj)(N) #ἀστεροπητὴς(N)
+(580) wenn auch denn wohl -will +olympischer #Blitz|werfer
+
+(581) ἐξ(Prp) #ἑδέων(G) -στυφελίξαι(Aor)(Inf)(Akt)· ὃ(Pr)(N) γὰρ(Pt) πολὺ(Av) +φέρτατός(Aj)(N)(Sup) -ἐστιν(Pre)(Akt).
+(581) aus #der|Sitze -nieder|stoßen|zu; der nämlich sehr +bester -ist.
+
+(582) ἀλλὰ(Ko) σὺ(Pr)(N) τὸν(Art)(A) #ἐπέεσσι(D) -καθάπτεσθαι(Pre)(M/P)(Inf) +μαλακοῖσιν(Aj)(D)·
+(582) aber du den #mit|Worten -zu|an|reden|sich +sanften;
+
+(583) αὐτίκ’(Av) ἔπειθ’(Av) +ἵλαος(Aj)(N) +Ὀλύμπιος(Aj)(N) -ἔσσεται(Fu)(M/P) ἡμῖν(Pr)(D).
+(583) sogleich dann +gnädig +olympisch -wird|sein uns.
+
+(584) ὣς(Av) ἄρ’(Pt) -ἔφη(Imp)(Akt) καὶ(Ko) +ἀναΐξας(Aor)(Akt)(N) #δέπας(A) +ἀμφικύπελλον(Aj)(A)
+(584) so also -sagte und +auf|gesprungen #Becher +beid|henkelig
+
+(585) #μητρὶ(D) +φίλῃ(Aj)(D) ἐν(Prp) #χειρὶ(D) -τίθει(Imp)(Akt) καί(Ko) μιν(Pr)(A) -προσέειπε(Aor)(Akt)·
+(585) #der|Mutter +lieben in #Hand -setzte und sie -sprach|an;
+
+(586) -τέτλαθι(Per)(Akt)(Imv) #μῆτερ(V) +ἐμή(Aj)(V), καὶ(Ko) -ἀνάσχεο(Aor)(Med)(Imv) +κηδομένη(Pre)(M/P)(V) περ(Pt),
+(586) -ertrage #Mutter +meine, und -halte|aus +sorgend zwar,
+
+(587) μή(Pt) σε(Pr)(A) +φίλην(Aj)(A) περ(Pt) +ἐοῦσαν(Pre)(Akt)(A) ἐν(Prp) #ὀφθαλμοῖσιν(D) -ἴδωμαι(Aor)(Med)(Kon)
+(587) nicht dich +lieb zwar +seiend in #Augen -möge|ich|sehen
+
+(588) +θεινομένην(Pre)(M/P)(A), τότε(Av) δ’(Pt) οὔ(Pt) τι(Pr)(A) -δυνήσομαι(Fu)(Med) +ἀχνύμενός(Pre)(M/P)(N) περ(Pt)
+(588) +geschlagen|werdend, dann aber nicht irgend -werde|können +trauernd zwar
+
+(589) -χραισμεῖν(Pre)(Inf)(Akt)· +ἀργαλέος(Aj)(N) γὰρ(Pt) +Ὀλύμπιος(Aj)(N) -ἀντιφέρεσθαι(Pre)(M/P)(Inf)·
+(589) -zu|nützen; +beschwerlich nämlich +olympisch -sich|widersetzen|zu;
+
+(590) ἤδη(Av) γάρ(Pt) με(Pr)(A) καὶ(Ko) ἄλλοτ’(Av) -ἀλεξέμεναι(Aor)(Inf)(Akt) +μεμαῶτα(Per)(Akt)(A)
+(590) schon nämlich mich und ein|andermal -abwehren|zu +begierig.
+
+(591) -ῥῖψε(Aor)(Akt) #ποδὸς(G) +τεταγὼν(Aor)(Akt)(N) ἀπὸ(Prp) #βηλοῦ(G) +θεσπεσίοιο(Aj)(G),
+(591) -warf #des|Fußes +gepackt|habend von #der|Schwelle +wunderbar,
+
+(592) +πᾶν(Aj)(A) #ἦμαρ(A) δ’(Pt) -φερόμην(Imp)(M/P), ἅμα(Prp) δ’(Pt) #ἠελίῳ(D) +καταδύντι(Aor)(Akt)(D)
+(592) +ganzes #Tag aber -wurde|getragen, zugleich aber #mit|der|Sonne +unter|gehend
+
+(593) -κάππεσον(Aor)(Akt) ἐν(Prp) #Λήμνῳ(D), +ὀλίγος(Aj)(N) δ’(Pt) ἔτι(Av) #θυμὸς(N) -ἐνῆεν(Imp)(Akt)·
+(593) -fiel|ich|hinab in #Lemnos, +wenig aber noch #Mut -war|innen;
+
+(594) ἔνθά(Av) με(Pr)(A) #Σίντιες(N) #ἄνδρες(N) ἄφαρ(Av) -κομίσαντο(Aor)(Med) +πεσόντα(Aor)(Akt)(A).
+(594) dort mich #Sintier #Männer sogleich -nahmen|auf +gefallen.
+
+(595) ὣς(Av) -φάτο(Imp)(M/P), -μείδησεν(Aor)(Akt) δὲ(Pt) #θεὰ(N) +λευκώλενος(Aj)(N) #Ἥρη(N),
+(595) so -sprach|er, -lächelte aber #Göttin +weiß|armig #Hera,
+
+(596) +μειδήσασα(Aor)(Akt)(N) δὲ(Pt) #παιδὸς(G) -ἐδέξατο(Aor)(Med) #χειρὶ(D) #κύπελλον(A)·
+(596) +gelächelt|habend aber #des|Sohnes -nahm|entgegen #mit|der|Hand #Becher;
+
+(597) αὐτὰρ(Pt) ὃ(Pr)(N) τοῖς(Art)(D) +ἄλλοισι(Aj)(D) #θεοῖς(D) ἐνδέξια(Av) +πᾶσιν(Aj)(D)
+(597) aber er den +anderen #Göttern rechts|herum +allen
+
+(598) -οἰνοχόει(Imp)(Akt) +γλυκὺ(Aj)(A) #νέκταρ(A) ἀπὸ(Prp) #κρητῆρος(G) +ἀφύσσων(Pre)(Akt)(N)·
+(598) -schenkte|ein +süßen #Nektar von #des|Kraters +schöpfend;
+
+(599) +ἄσβεστος(Aj)(N) δ’(Pt) ἄρ’(Pt) -ἐνῶρτο(Aor)(Med) #γέλως(N) +μακάρεσσι(Aj)(D) #θεοῖσιν(D)
+(599) +un|löschbar aber doch -erhob|sich #Gelächter +seligen #Göttern
+
+(600) ὡς(Ko) -ἴδον(Aor)(Akt) #Ἥφαιστον(A) διὰ(Prp) #δώματα(A) +ποιπνύοντα(Pre)(Akt)(A).
+(600) als -sahen #Hephaistos durch #Hallen +hastend.
+
+(601) ὣς(Av) τότε(Av) μὲν(Pt) +πρόπαν(Aj)(A) #ἦμαρ(A) ἐς(Prp) #ἠέλιον(A) +καταδύντα(Aor)(Akt)(A)
+(601) so dann zwar +ganzes #Tag bis|zu #Sonne +unter|gehend
+
+(602) -δαίνυντ’(Imp)(M/P), οὐδέ(Ko) τι(Pr)(A) #θυμὸς(N) -ἐδεύετο(Imp)(M/P) #δαιτὸς(G) +ἐΐσης(Aj)(G),
+(602) -schmausten, und|nicht irgend|etwas #Mut -mangelte #der|Mahlzeit +gleichen,
+
+(603) οὐ(Pt) μὲν(Pt) #φόρμιγγος(G) +περικαλλέος(Aj)(G) ἣν(Pr)(A) -ἔχ’(Pre)(Akt) #Ἀπόλλων(N),
+(603) nicht zwar #der|Lyra +sehr|schönen die|welche -hat #Apollon,
+
+(604) #Μουσάων(G) θ’(Pt) αἳ(Pr)(N) -ἄειδον(Imp)(Akt) +ἀμειβόμεναι(Pre)(M/P)(N) #ὀπὶ(D) +καλῇ(Aj)(D).
+(604) #der|Musen und die -sangen +im|Wechsel #mit|Stimme +schönen.
+
+(605) αὐτὰρ(Pt) ἐπεὶ(Ko) -κατέδυ(Aor)(Akt) +λαμπρὸν(Aj)(A) #φάος(A) #ἠελίοιο(G),
+(605) aber da -sank +helles #Licht #der|Sonne,
+
+(606) οἳ(Pr)(N) μὲν(Pt) +κακκείοντες(Pre)(Akt)(N) -ἔβαν(AorS)(Akt) #οἶκον(A) δὲ(Pt) ἕκαστος(Pr)(N),
+(606) die zwar +zu|Bett|gehend -gingen #Haus aber jeder|einzelne,
+
+(607) ἧχι(Av) ἑκάστῳ(Pr)(D) #δῶμα(A) +περικλυτὸς(Aj)(N) +ἀμφιγυήεις(Aj)(N)
+(607) wo jedem #Haus +viel|gerühmt +krumm|beinig
+
+(608) #Ἥφαιστος(N) -ποίησεν(Aor)(Akt) +ἰδυίῃσι(Aj)(D) #πραπίδεσσι(D)·
+(608) #Hephaistos -machte +kundigen #Denk|kräften;
+
+(609) #Ζεὺς(N) δὲ(Pt) πρὸς(Prp) ὃν(Pr)(A) #λέχος(A) -ἤϊ’(Imp)(Akt) +Ὀλύμπιος(Aj)(N) #ἀστεροπητής(N),
+(609) #Zeus aber zu welches #Bett -ging +olympischer #Blitz|schleuderer,
+
+(610) ἔνθα(Av) πάρος(Av) -κοιμᾶθ’(Imp)(M/P) ὅτε(Ko) μιν(Pr)(A) +γλυκὺς(Aj)(N) #ὕπνος(N) -ἱκάνοι(Pre)(Akt)(Op)·
+(610) dort zuvor -schlief als ihn +süßer #Schlaf -käme;
+
+(611) ἔνθα(Av) -καθεῦδ’(Imp)(Akt) +ἀναβάς(Aor)(Akt)(N), παρὰ(Prp) δὲ(Pt) +χρυσόθρονος(Aj)(N) #Ἥρη(N).
+(611) dort -schlief +hinauf|gestiegen, bei aber +gold|thronig #Hera.
