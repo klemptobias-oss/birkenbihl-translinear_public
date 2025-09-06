@@ -85,30 +85,34 @@
           <span id="draft-status" class="small" style="margin-left:auto"></span>
         </div>
 
+        <!-- ===== bb-grid (zwei Spalten) ===== -->
         <div class="bb-grid">
           <!-- LINKE PANE: ORIGINAL (nur lesen) -->
           <div class="pane">
             <h3>Original</h3>
             <div class="pane-body">
+
+              <!-- Zeile: Download | PDF generieren | Scroll koppeln -->
               <div class="split">
                 <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen (Original.txt)</a>
                 <button class="btn" id="bb-generate-original" title="PDF-Quelle oben auf Original stellen und neu laden">PDF generieren</button>
+
                 <label class="toggle" id="scroll-link" style="margin-left:auto;">
                   <input type="checkbox" checked />
                   <span>Scroll koppeln:</span>
                   <span class="state on" data-on="An" data-off="Aus">An</span>
                 </label>
-
               </div>
 
+              <!-- Zeile: Doppelschalter ± | Original-Filter rechtsbündig -->
               <div class="split" style="margin-top:-6px">
                 <div>
-                 <label class="duo-toggle" id="orig-font-toggle">
-                  <button type="button" class="duo minus" id="orig-font-minus" aria-label="Schrift kleiner">−</button>
-                  <span>Textgröße</span>
-                  <button type="button" class="duo plus"  id="orig-font-plus"  aria-label="Schrift größer">+</button>
-                 </label>
-
+                  <label class="duo-toggle" id="orig-font-toggle">
+                    <button type="button" class="duo minus" id="orig-font-minus" aria-label="Schrift kleiner">−</button>
+                    <span>Textgröße</span>
+                    <button type="button" class="duo plus"  id="orig-font-plus"  aria-label="Schrift größer">+</button>
+                  </label>
+                </div>
                 <div class="toggle-row" style="margin-left:auto;">
                   <label class="toggle" id="orig-toggle-tags">
                     <input type="checkbox" checked />
@@ -127,10 +131,12 @@
             </div>
           </div>
 
-          <!-- RECHTE PANE: ENTWURF (editierbar + Vorschau) -->
+          <!-- RECHTE PANE: ENTWURF (editierbar) -->
           <div class="pane">
             <h3>Entwurf</h3>
             <div class="pane-body">
+
+              <!-- Zeile: Download/Upload/Reset/Build -->
               <div class="split">
                 <button class="btn" id="bb-download-draft" title="Aktuellen Entwurf herunterladen (mit eindeutigem Code)">Herunterladen (Entwurf.txt)</button>
                 <button class="btn" id="bb-upload-draft"  title="Entwurf.txt aus Datei laden">Entwurf hochladen</button>
@@ -139,6 +145,7 @@
                 <button class="btn" id="bb-generate-draft" title="Entwurf als PDF bauen (Cloud-Worker)">PDF generieren</button>
               </div>
 
+              <!-- Zeile: Doppelschalter ± für Editor -->
               <div class="split" style="margin-top:-6px">
                 <div>
                   <label class="duo-toggle" id="draft-font-toggle">
@@ -146,16 +153,15 @@
                     <span>Textgröße</span>
                     <button type="button" class="duo plus"  id="draft-font-plus"  aria-label="Schrift größer">+</button>
                   </label>
-
                 </div>
               </div>
 
-              <!-- Editor immer sichtbar -->
+              <!-- Editor -->
               <textarea id="bb-editor" class="editor" placeholder="Entwurf bearbeiten…"></textarea>
-              
             </div>
           </div>
         </div>
+        <!-- ===== /bb-grid ===== -->
 
         <div class="notice" style="margin-top:10px">
           Der Entwurfsweg lässt das Original in <code>texte/</code> unberührt. Für „offizielle“ PDFs ersetzt du später
@@ -188,7 +194,7 @@
       </div>
     </div>
 
-    <!-- Modal: PDF-Optionen (unverändert aus deiner Version) -->
+    <!-- Modal: PDF-Optionen -->
     <div id="opt-backdrop" class="opt-backdrop" role="dialog" aria-modal="true" aria-labelledby="opt-title" aria-hidden="true">
       <div class="opt-modal" role="document">
         <div class="opt-header">
@@ -236,8 +242,7 @@
       </div>
     </div>
 
-<script src="utils.js"></script>
-<script src="aias.js"></script>
-</body>
+    <script src="utils.js"></script>
+    <script src="aias.js"></script>
+  </body>
 </html>
-
