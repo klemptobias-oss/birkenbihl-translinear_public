@@ -86,3 +86,23 @@ details.opt-adv summary { cursor:pointer; font-weight:600; }
 /* Font/Height Toolbars (neue kleine Gruppe) */
 .sizebar { display:flex; gap:6px; align-items:center; margin-bottom:6px; }
 .sizebar .chip { font-size:0.85em; color:#555; background:#f1f3f5; border:1px solid var(--edge); border-radius:6px; padding:2px 6px; }
+
+/* Doppelschalter für Textgröße (− Textgröße +) */
+.duo-toggle{
+  display:inline-flex; align-items:center; gap:10px;
+  border:1px solid var(--edge); background:#fff; border-radius:999px;
+  padding:4px 10px; line-height:1;
+}
+.duo{
+  width:26px; height:26px; border-radius:50%;
+  border:1px solid var(--edge); background:#fff;
+  display:inline-flex; align-items:center; justify-content:center;
+  font-weight:700; font-size:16px; cursor:pointer;
+}
+.duo.minus{ color:#b5242a; }   /* rot */
+.duo.plus { color:#147a2e; }   /* grün */
+.duo:active{ transform:translateY(1px); }
+
+/* Kleiner optischer Ausgleich, falls nötig */
+#orig-font-toggle span, #draft-font-toggle span { font-weight:600; opacity:0.9; }
+
