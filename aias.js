@@ -13,24 +13,24 @@
     FONT_KEY_RIGHT: "font_Aias_draft_px",
     DRAFT_TOGGLE_TAGS_KEY:   "Aias_draft_toggle_tags",
     DRAFT_TOGGLE_COLORS_KEY: "Aias_draft_toggle_colors",
-    WAIT_ATTEMPTS: 24,
+    WAIT_ATTEMPTS: 24,     // ~2 Minuten bei 5s
     WAIT_DELAY_MS: 5000,
   };
 
   const U = window.Utils || {};
   const $ = (id) => document.getElementById(id);
 
-  // PDF oben
+  // ===== PDF oben =====
   const pdfFrame = $("pdf-frame"), pdfNormal = $("pdf-normal"), pdfFett = $("pdf-fett");
   const srcOriginal = $("src-original"), srcDraft = $("src-draft");
   const btnRefresh = $("pdf-refresh"), btnPdfDownload = $("pdf-download"), btnPdfOpen = $("pdf-open");
 
-  // Original (links)
+  // ===== Original (links) =====
   const origPre = $("bb-original-pre");
   const origToggleTags = $("orig-toggle-tags"), origToggleColors = $("orig-toggle-colors");
   const origSzDec = $("orig-font-minus"), origSzInc = $("orig-font-plus");
 
-  // Entwurf (rechts)
+  // ===== Entwurf (rechts) =====
   const editor = $("bb-editor");
   const draftView = $("bb-draft-view");
   const draftViewNote = $("draft-view-note");
@@ -38,28 +38,29 @@
   const btnUploadDraft = $("bb-upload-draft"), btnDownloadDraft = $("bb-download-draft"), btnReset = $("bb-reset");
   const btnGenerateOrig = $("bb-generate-original"), btnGenerateDraft = $("bb-generate-draft");
   const draftToggleTags = $("draft-toggle-tags");
-  const draftToggleColors = $("draft-toggle-colors"); // <-- FIX: korrekt deklariert
+  const draftToggleColors = $("draft-toggle-colors");
 
-  // Status / Save-UI
+  // ===== Status / Save-UI =====
   const saveDot = $("save-dot"), saveText = $("save-text"), draftStatus = $("draft-status");
 
-  // Optionen-Modal
+  // ===== Optionen-Modal =====
   const optBackdrop = $("opt-backdrop"), optClose = $("opt-close"), optCancel = $("opt-cancel"), optGenerate = $("opt-generate");
   const optColors = $("opt-colors"), optTags = $("opt-tags"), optAdv = $("opt-adv");
   const optColorN = $("opt-color-n"), optColorV = $("opt-color-v"), optColorAj = $("opt-color-aj");
   const tagAv = $("tag-Av"), tagPt = $("tag-Pt"), tagKo = $("tag-Ko"), tagArt = $("tag-Art"), tagAj = $("tag-Aj"), tagV = $("tag-V"), tagN = $("tag-N");
   const optContextNote = $("opt-context-note");
 
-  // Zurücksetzen-Modal
+  // ===== Zurücksetzen-Modal =====
   const modalBackdrop = $("confirm-backdrop"), modalClose = $("confirm-close");
   const modalCancel = $("confirm-cancel"), modalOk = $("confirm-ok");
 
-  // Scroll-Kopplung
+  // ===== Scroll-Kopplung =====
   const scrollToggle = $("scroll-link");
 
+  // ===== State =====
   let rawOriginal = "", rawDraft = "", optContext = "draft", unlinkScroll = () => {};
 
-  // ----- PDF-URL + Refresh -----
+  // ===== PDF-URL + Refresh =====
   function currentPdfUrl(suffix = "") {
     const kind = (pdfFett && pdfFett.checked) ? "Fett" : "Normal";
     const useDraft = !!(srcDraft && srcDraft.checked);
@@ -71,7 +72,7 @@
     if (U.setPdfViewer) U.setPdfViewer(pdfFrame, btnPdfDownload, btnPdfOpen, url, bust);
   }
 
-  // ----- Live-Polling für PDF-Fertigstellung -----
+  // ===== Live-Polling (HEAD) =====
   async function pollForPdf(url, attempts, delayMs, onTick) {
     for (let i = 1; i <= attempts; i++) {
       try {
@@ -87,7 +88,37 @@
     return false;
   }
 
-  // ----- Init -----
+  // ===== Verifikation: HEAD + Range-GET (PDF-Signatur) =====
+  async function verifyPdf(url) {
+    try {
+      // 1) HEAD
+      const head = await fetch(url + (url.includes("?") ? "&" : "?") + "vcheck=" + Date.now(), {
+        method: "HEAD",
+        cache: "no-store",
+      });
+      if (!head.ok) return false;
+      const ct = (head.headers.get("Content-Type") || "").toLowerCase();
+      const len = parseInt(head.headers.get("Content-Length") || "0", 10);
+      if (!ct.includes("pdf")) return false;
+      if (isFinite(len) && len > 0 && len < 500) return false; // zu klein → wahrscheinlich Platzhalter
+
+      // 2) Range-GET (erste Bytes) → %PDF-
+      const rng = await fetch(url, {
+        method: "GET",
+        headers: { Range: "bytes=0-7" },
+        cache: "no-store",
+      });
+      if (!rng.ok && rng.status !== 206 && rng.status !== 200) return false;
+      const buf = await rng.arrayBuffer();
+      const bytes = new Uint8Array(buf);
+      const txt = Array.from(bytes).map((b) => String.fromCharCode(b)).join("");
+      return txt.startsWith("%PDF-");
+    } catch {
+      return false;
+    }
+  }
+
+  // ===== Init =====
   (async function init() {
     try {
       rawOriginal = U.fetchText ? await U.fetchText(CONF.TXT_ORIG_PATH) : "";
@@ -103,7 +134,7 @@
       renderOriginal();
     }
 
-    // Entwurf: initialer Text
+    // Entwurf initial
     rawDraft = (U.loadLocalDraft ? U.loadLocalDraft(CONF.LOCAL_KEY) : "") || rawOriginal || "";
     if (editor) editor.value = rawDraft;
 
@@ -117,7 +148,7 @@
     if (optTags)   optTags.checked   = tagsOn;
     if (optColors) optColors.checked = colorsOn;
 
-    // Start-Modus anwenden
+    // Start-Modus
     updateDraftViewMode();
 
     restoreFontSizes();
@@ -125,7 +156,7 @@
     refreshPdf(false);
   })();
 
-  // ----- Helpers: persistente Booleans -----
+  // ===== Helpers: persistente Booleans =====
   function loadBool(key, fallback) {
     try {
       const v = localStorage.getItem(key);
@@ -137,7 +168,7 @@
     try { localStorage.setItem(key, value ? "1" : "0"); } catch {}
   }
 
-  // ----- Original-Filter (links) -----
+  // ===== Original-Filter (links) =====
   function currentOrigFilters() {
     const showTags   = !!(origToggleTags && origToggleTags.querySelector("input")?.checked);
     const showColors = !!(origToggleColors && origToggleColors.querySelector("input")?.checked);
@@ -162,7 +193,7 @@
   bindToggle(origToggleTags,   () => renderOriginal());
   bindToggle(origToggleColors, () => renderOriginal());
 
-  // ----- Entwurf: View/Editor umschalten -----
+  // ===== Entwurf: View/Editor umschalten =====
   function currentDraftFilters() {
     const showTags   = !!(draftToggleTags && draftToggleTags.querySelector("input")?.checked);
     const showColors = !!(draftToggleColors && draftToggleColors.querySelector("input")?.checked);
@@ -186,8 +217,7 @@
       if (editor) editor.style.display = "";
       if (draftViewNote) draftViewNote.style.display = "none";
     }
-    // Scroll-Kopplung neu setzen, weil Ziel sich ändert
-    setupCoupledScroll();
+    setupCoupledScroll(); // Ziel (editor vs. view) kann sich ändern
   }
 
   // Toggle-Bindings (Entwurf)
@@ -202,7 +232,7 @@
     updateDraftViewMode();
   });
 
-  // ----- Font-Größen -----
+  // ===== Font-Größen =====
   function restoreFontSizes() {
     try {
       const leftPx  = parseFloat(localStorage.getItem(CONF.FONT_KEY_LEFT)  || "0");
@@ -224,9 +254,8 @@
   draftSzDec && draftSzDec.addEventListener("click", () => bumpFont([visibleDraftScrollEl()], CONF.FONT_KEY_RIGHT, -1.0));
   draftSzInc && draftSzInc.addEventListener("click", () => bumpFont([visibleDraftScrollEl()], CONF.FONT_KEY_RIGHT, +1.0));
 
-  // ----- Scroll koppeln -----
+  // ===== Scroll koppeln =====
   function visibleDraftScrollEl() {
-    // Nimmt je nach Modus editor oder draftView
     const viewVisible = draftView && draftView.style.display !== "none";
     return viewVisible ? draftView : editor;
   }
@@ -250,13 +279,12 @@
     setupCoupledScroll();
   });
 
-  // ----- Editor + Autosave -----
+  // ===== Editor + Autosave =====
   let saveTimer = null;
   editor && editor.addEventListener("input", () => {
     U.setSaveState && U.setSaveState(saveDot, saveText, "busy");
     rawDraft = editor.value || "";
     if (saveTimer) clearTimeout(saveTimer);
-    // wenn Ansicht aktiv, gleich mitrendern
     if (draftView && draftView.style.display !== "none") renderDraftView();
     saveTimer = setTimeout(() => {
       U.saveLocalDraft && U.saveLocalDraft(CONF.LOCAL_KEY, rawDraft);
@@ -264,7 +292,7 @@
     }, 250);
   });
 
-  // Upload/Download/Reset
+  // ===== Upload/Download/Reset =====
   btnUploadDraft && btnUploadDraft.addEventListener("click", () => {
     const inp = document.createElement("input");
     inp.type = "file"; inp.accept = ".txt,text/plain";
@@ -311,11 +339,11 @@
     closeConfirm();
   });
 
-  // ----- PDF-Umschaltung -----
+  // ===== PDF-Umschaltung =====
   ;[pdfNormal, pdfFett, srcOriginal, srcDraft].forEach((el) => el && el.addEventListener("change", () => refreshPdf(true)));
   btnRefresh && btnRefresh.addEventListener("click", () => refreshPdf(true));
 
-  // ----- Optionen-Modal -----
+  // ===== Optionen-Modal =====
   function openOptModal(context) {
     optContext = context;
     if (optContextNote) {
@@ -401,10 +429,31 @@
       });
 
       if (ok) {
-        refreshPdf(true, suffix);
-        if (srcDraft) srcDraft.checked = true;
-        if (srcOriginal) srcOriginal.checked = false;
-        draftStatus && (draftStatus.textContent = "✅ Entwurfs-PDF bereit.");
+        // Verifizieren, dass es wirklich renderbar ist
+        draftStatus && (draftStatus.textContent = "Verifiziere fertiges Pdf…");
+        let verified = await verifyPdf(target);
+
+        if (!verified) {
+          // kurzes Nach-Polling nur für Verifikation
+          const t1 = Date.now();
+          const ok2 = await pollForPdf(target, 6, 5000, (i, max) => {
+            const sec = Math.round((Date.now() - t1) / 1000);
+            draftStatus && (draftStatus.textContent =
+              `Verifiziere Pdf … (${sec}s, Versuch ${i}/${max}).`);
+          });
+          if (ok2) verified = await verifyPdf(target);
+        }
+
+        if (verified) {
+          refreshPdf(true, suffix);
+          if (srcDraft) srcDraft.checked = true;
+          if (srcOriginal) srcOriginal.checked = false;
+          draftStatus && (draftStatus.textContent = "✅ Entwurfs-PDF bereit.");
+        } else {
+          draftStatus && (draftStatus.textContent =
+            'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. ' +
+            'Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
+        }
       } else {
         draftStatus && (draftStatus.textContent =
           'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. ' +
