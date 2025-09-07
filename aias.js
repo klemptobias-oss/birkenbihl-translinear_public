@@ -1,11 +1,11 @@
-/* aias.js — PDF-Umschaltung + Draft-Preview; Editor bleibt immer sichtbar; PDF-Hinweis entdoppelt */
+/* aias.js — PDF-Umschaltung + Draft-Preview; Editor bleibt sichtbar; robuste Toggle per input.change */
 (function () {
   const CONF = {
     WORK: "Aias",
     LOCAL_KEY: "draft_Aias_birkenbihl",
     TXT_ORIG_PATH: "texte/Aias_birkenbihl.txt",
-    PDF_DRAFT_BASE: "pdf_drafts/Aias_DRAFT_LATEST_", // + Normal/Fett[+Suffix].pdf
-    PDF_OFFICIAL_BASE: "pdf/TragödieAias_",          // + Normal/Fett.pdf
+    PDF_DRAFT_BASE: "pdf_drafts/Aias_DRAFT_LATEST_",
+    PDF_OFFICIAL_BASE: "pdf/TragödieAias_",
     WORKER_URL: "https://birkenbihl-draft-01.klemp-tobias.workers.dev",
     FONT_KEY_LEFT:  "font_Aias_original_px",
     FONT_KEY_RIGHT: "font_Aias_draft_px",
@@ -22,17 +22,16 @@
   // ===== PDF oben =====
   let pdfFrame      = $("pdf-frame");
   const btnRefresh  = $("pdf-refresh");
-  const btnPdfDL    = $("pdf-download"); // optional
-  const btnPdfOpen  = $("pdf-open");     // optional
+  const btnPdfDL    = $("pdf-download");
+  const btnPdfOpen  = $("pdf-open");
   const pdfControls = document.querySelector(".pdf-controls");
-  const pdfBusy     = $("pdf-busy");     // Overlay
-  const pdfMeta     = $("pdf-meta");     // „Zuletzt gebaut“-Zeile
-  const pdfHint     = $("pdf-hint");     // statische Hinweiszeile
+  const pdfBusy     = $("pdf-busy");
+  const pdfMeta     = $("pdf-meta");
+  const pdfHint     = $("pdf-hint");
   const DEFAULT_PDF_HINT = pdfHint ? pdfHint.textContent : "";
 
-  // Persistenz für Auswahl
-  const PDF_SRC_KEY  = "Aias_pdf_src";   // "original" | "draft"
-  const PDF_KIND_KEY = "Aias_pdf_kind";  // "Normal"  | "Fett"
+  const PDF_SRC_KEY  = "Aias_pdf_src";
+  const PDF_KIND_KEY = "Aias_pdf_kind";
 
   // ===== Original (links) =====
   const origPre = $("bb-original-pre");
@@ -41,8 +40,8 @@
 
   // ===== Entwurf (rechts) =====
   const editor = $("bb-editor");
-  const draftView = $("bb-draft-view");         // reine Ansicht (gefiltert)
-  const draftViewNote = $("draft-view-note");   // kleiner Hinweistext unter der Ansicht
+  const draftView = $("bb-draft-view");
+  const draftViewNote = $("draft-view-note");
   const draftSzDec = $("draft-font-minus"), draftSzInc = $("draft-font-plus");
   const btnUploadDraft = $("bb-upload-draft"), btnDownloadDraft = $("bb-download-draft"), btnReset = $("bb-reset");
   const btnGenerateOrig = $("bb-generate-original"), btnGenerateDraft = $("bb-generate-draft");
@@ -87,8 +86,6 @@
     }
     sTxt.textContent = text || "";
     spin.style.display = spinning ? "inline-block" : "none";
-
-    // Hinweis oben NICHT doppeln: während „spinning“ blenden wir die statische Zeile aus
     if (pdfHint) {
       pdfHint.style.display = spinning ? "none" : "";
       if (!spinning) pdfHint.textContent = DEFAULT_PDF_HINT;
@@ -96,7 +93,7 @@
   }
   function setPdfBusy(on) { if (pdfBusy) pdfBusy.style.display = on ? "flex" : "none"; }
 
-  // ----- PDF-Meta (Last-Modified + Größe, per HEAD) -----
+  // PDF-Meta (HEAD)
   function fmtSize(bytes) {
     if (!Number.isFinite(bytes) || bytes < 0) return "–";
     if (bytes < 1024) return bytes + " B";
@@ -114,21 +111,18 @@
       const len = parseInt(r.headers.get("Content-Length") || "0", 10);
       const when = lm ? new Date(lm).toLocaleString() : "unbekannt";
       pdfMeta.textContent = `Zuletzt gebaut: ${when} · Größe: ${fmtSize(len)}`;
-    } catch {
-      pdfMeta.textContent = "";
-    }
+    } catch { pdfMeta.textContent = ""; }
   }
 
-  // ===== Robustes Auslesen der PDF-UI =====
+  // ===== PDF-Auswahl =====
   function getPdfSrcKind() {
     const src = document.querySelector('input[name="pdfsrc"]:checked');
     const kind = document.querySelector('input[name="pdfkind"]:checked');
-    const srcVal  = src ? src.value : "original"; // "original" | "draft"
-    const kindVal = kind ? kind.value : "Normal"; // "Normal" | "Fett"
+    const srcVal  = src ? src.value : "original";
+    const kindVal = kind ? kind.value : "Normal";
     return { srcVal, kindVal };
   }
 
-  // ===== HEAD-Check mit Fallback auf Range-GET =====
   async function headOk(url) {
     try {
       const r = await fetch(url + (url.includes("?") ? "&" : "?") + "h=" + Date.now(), { method: "HEAD", cache: "no-store" });
@@ -146,7 +140,6 @@
     return false;
   }
 
-  // ===== Draft-URL automatisch ermitteln =====
   async function resolveDraftUrl(kind, suffix = "") {
     try {
       const last = localStorage.getItem(CONF.LAST_DRAFT_URL_KEY);
@@ -168,26 +161,21 @@
     return "";
   }
 
-  // ===== Offizielle URL bauen =====
   function buildOfficialUrl(kind) {
     return `${CONF.PDF_OFFICIAL_BASE}${kind}.pdf`;
   }
 
-  // ===== <object> hart neu laden + Links setzen =====
   function hardReloadPdf(url) {
     if (!pdfFrame) return;
     const bustUrl = url + (url.includes("?") ? "&" : "?") + "t=" + Date.now();
-
     if (btnPdfDL)   btnPdfDL.setAttribute("href", url);
     if (btnPdfOpen) btnPdfOpen.setAttribute("href", url);
-
     const clone = pdfFrame.cloneNode(true);
     clone.setAttribute("data", bustUrl + "#view=FitH");
     pdfFrame.replaceWith(clone);
     pdfFrame = $("pdf-frame");
-    console.log("[PDF] geladen:", url);
     setStatus(`Aktuelles PDF: ${url}`, false);
-    updatePdfMeta(url); // Meta (HEAD) nachladen
+    updatePdfMeta(url);
   }
 
   async function refreshPdf(_bust = true, suffix = "") {
@@ -209,7 +197,6 @@
     hardReloadPdf(buildOfficialUrl(kindVal));
   }
 
-  // ===== Live-Polling (HEAD) =====
   async function pollForPdf(url, attempts, delayMs, onTick) {
     for (let i = 1; i <= attempts; i++) {
       try {
@@ -225,13 +212,9 @@
     return false;
   }
 
-  // ===== Verifikation (Signatur prüfen) =====
   async function verifyPdf(url) {
     try {
-      const head = await fetch(url + (url.includes("?") ? "&" : "?") + "vcheck=" + Date.now(), {
-        method: "HEAD",
-        cache: "no-store",
-      });
+      const head = await fetch(url + (url.includes("?") ? "&" : "?") + "vcheck=" + Date.now(), { method: "HEAD", cache: "no-store" });
       if (!head.ok) return false;
       const ct = (head.headers.get("Content-Type") || "").toLowerCase();
       const len = parseInt(head.headers.get("Content-Length") || "0", 10);
@@ -262,11 +245,9 @@
       renderOriginal();
     }
 
-    // Entwurf initial
     rawDraft = (U.loadLocalDraft ? U.loadLocalDraft(CONF.LOCAL_KEY) : "") || rawOriginal || "";
     if (editor) editor.value = rawDraft;
 
-    // Entwurfs-Schalter (persistiert)
     const tagsOn   = loadBool(CONF.DRAFT_TOGGLE_TAGS_KEY,   true);
     const colorsOn = loadBool(CONF.DRAFT_TOGGLE_COLORS_KEY, true);
     if (U.updateToggleLabel) {
@@ -276,24 +257,16 @@
     if (optTags)   optTags.checked   = tagsOn;
     if (optColors) optColors.checked = colorsOn;
 
-    // Editor bleibt immer sichtbar – Ansicht je nach Filtern sichtbar/unsichtbar
     updateDraftViewMode();
-
     restoreFontSizes();
     setupCoupledScroll();
 
-    // Auswahl aus localStorage wiederherstellen
+    // Auswahl wiederherstellen
     try {
       const savedSrc  = localStorage.getItem(PDF_SRC_KEY);
       const savedKind = localStorage.getItem(PDF_KIND_KEY);
-      if (savedSrc) {
-        const el = document.querySelector(`input[name="pdfsrc"][value="${savedSrc}"]`);
-        if (el) el.checked = true;
-      }
-      if (savedKind) {
-        const el = document.querySelector(`input[name="pdfkind"][value="${savedKind}"]`);
-        if (el) el.checked = true;
-      }
+      if (savedSrc)  document.querySelector(`input[name="pdfsrc"][value="${savedSrc}"]`)?.setAttribute("checked", "checked");
+      if (savedKind) document.querySelector(`input[name="pdfkind"][value="${savedKind}"]`)?.setAttribute("checked", "checked");
     } catch {}
 
     await refreshPdf(true);
@@ -318,20 +291,36 @@
     const text = U.renderWithFilters ? U.renderWithFilters(rawOriginal, f.hideTags, f.hideColors) : rawOriginal;
     origPre.textContent = text || "— (leer) —";
   }
+
+  // ===== NEU: robuste Toggle-Bindings über input.change =====
   function bindToggle(toggleEl, onChange) {
     if (!toggleEl) return;
-    toggleEl.addEventListener("click", () => {
-      const input = toggleEl.querySelector("input");
-      if (!input) return;
-      input.checked = !input.checked;
+    const input = toggleEl.querySelector("input");
+    if (!input) return;
+
+    // Initiale Label-Synchronisation
+    U.updateToggleLabel && U.updateToggleLabel(toggleEl, input.checked);
+
+    // Reagiere auf den tatsächlichen Zustand (Browser toggelt selbst)
+    input.addEventListener("change", () => {
       U.updateToggleLabel && U.updateToggleLabel(toggleEl, input.checked);
       onChange && onChange(input.checked);
     });
+
+    // Optional: Klick auf Label (außerhalb des Inputs) soll nur das native Toggle auslösen
+    toggleEl.addEventListener("click", (e) => {
+      // Wenn direkt auf dem Input geklickt wurde, macht der Browser alles.
+      if (e.target === input) return;
+      // Sonst: Zustand invertieren und ein echtes change-Event feuern
+      input.checked = !input.checked;
+      input.dispatchEvent(new Event("change", { bubbles: true }));
+    });
   }
+
   bindToggle(origToggleTags,   () => renderOriginal());
   bindToggle(origToggleColors, () => renderOriginal());
 
-  // ===== Entwurf: Editor bleibt sichtbar; Ansicht bei Filtern dazu =====
+  // ===== Entwurf: Editor bleibt sichtbar; Vorschau bei Filtern =====
   function currentDraftFilters() {
     const showTags   = !!(draftToggleTags && draftToggleTags.querySelector("input")?.checked);
     const showColors = !!(draftToggleColors && draftToggleColors.querySelector("input")?.checked);
@@ -346,29 +335,25 @@
   function updateDraftViewMode() {
     const f = currentDraftFilters();
     const needPreview = f.hideTags || f.hideColors;
-    // Editor NIE verstecken:
-    if (editor) editor.style.display = "";
 
-    // Vorschau nur ein-/ausblenden
+    if (editor) editor.style.display = ""; // Editor NIE verstecken
     if (draftView) {
       draftView.style.display = needPreview ? "" : "none";
       if (needPreview) renderDraftView();
     }
     if (draftViewNote) draftViewNote.style.display = needPreview ? "" : "none";
-
-    // Scrollkopplung neu, da Ziel sich ändert
     setupCoupledScroll();
   }
 
   bindToggle(draftToggleTags, (isOn) => {
     saveBool(CONF.DRAFT_TOGGLE_TAGS_KEY, isOn);
     if (optTags) optTags.checked = isOn;
-    updateDraftViewMode();
+    updateDraftViewMode(); // sofortige Wirkung
   });
   bindToggle(draftToggleColors, (isOn) => {
     saveBool(CONF.DRAFT_TOGGLE_COLORS_KEY, isOn);
     if (optColors) optColors.checked = isOn;
-    updateDraftViewMode();
+    updateDraftViewMode(); // sofortige Wirkung
   });
 
   // ===== Font-Größen =====
@@ -395,7 +380,6 @@
 
   // ===== Scroll koppeln =====
   function visibleDraftScrollEl() {
-    // Falls Vorschau sichtbar, koppeln wir daran; sonst an den Editor
     const viewVisible = draftView && draftView.style.display !== "none";
     return viewVisible ? draftView : editor;
   }
@@ -409,7 +393,8 @@
       unlinkScroll = () => {};
     }
     if (U.updateToggleLabel && scrollToggle) {
-      U.updateToggleLabel(scrollToggle, !!(scrollToggle.querySelector("input")?.checked));
+      const inp = scrollToggle.querySelector("input");
+      U.updateToggleLabel(scrollToggle, !!(inp && inp.checked));
     }
   }
   scrollToggle && scrollToggle.addEventListener("click", () => {
@@ -485,7 +470,6 @@
       const t = ev.target;
       if (!(t instanceof HTMLInputElement)) return;
       if (t.name === "pdfsrc" || t.name === "pdfkind") {
-        // Auswahl persistieren
         try {
           const src  = document.querySelector('input[name="pdfsrc"]:checked')?.value;
           const kind = document.querySelector('input[name="pdfkind"]:checked')?.value;
