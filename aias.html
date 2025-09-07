@@ -145,13 +145,25 @@
                 <button class="btn" id="bb-generate-draft" title="Entwurf als PDF bauen (Cloud-Worker)">PDF generieren</button>
               </div>
 
-              <!-- Zeile: Doppelschalter ± für Editor -->
+              <!-- Zeile: Doppelschalter ± + Entwurf-Filter rechtsbündig -->
               <div class="split" style="margin-top:-6px">
                 <div>
                   <label class="duo-toggle" id="draft-font-toggle">
                     <button type="button" class="duo minus" id="draft-font-minus" aria-label="Schrift kleiner">−</button>
                     <span>Textgröße</span>
                     <button type="button" class="duo plus"  id="draft-font-plus"  aria-label="Schrift größer">+</button>
+                  </label>
+                </div>
+                <div class="toggle-row" style="margin-left:auto;">
+                  <label class="toggle" id="draft-toggle-tags">
+                    <input type="checkbox" checked />
+                    <span>Grammatikkürzel in Übersicht:</span>
+                    <span class="state on" data-on="An" data-off="Aus">An</span>
+                  </label>
+                  <label class="toggle" id="draft-toggle-colors">
+                    <input type="checkbox" checked />
+                    <span>Farbkürzel in Übersicht:</span>
+                    <span class="state on" data-on="An" data-off="Aus">An</span>
                   </label>
                 </div>
               </div>
