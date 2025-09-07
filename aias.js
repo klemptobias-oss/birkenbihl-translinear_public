@@ -43,6 +43,22 @@
   // Status / Save-UI
   const saveDot = $("save-dot"), saveText = $("save-text"), draftStatus = $("draft-status");
 
+   async function pollForPdf(url, attempts, delayMs, onTick) {
+    for (let i = 1; i <= attempts; i++) {
+      try {
+        onTick && onTick(i, attempts);
+        const r = await fetch(url + (url.includes("?") ? "&" : "?") + "check=" + Date.now(), {
+          method: "HEAD",
+          cache: "no-store",
+        });
+        if (r.ok) return true;
+      } catch {}
+      await new Promise((res) => setTimeout(res, delayMs));
+    }
+    return false;
+  }
+
+   
   // Optionen-Modal
   const optBackdrop = $("opt-backdrop"), optClose = $("opt-close"), optCancel = $("opt-cancel"), optGenerate = $("opt-generate");
   const optColors = $("opt-colors"), optTags = $("opt-tags"), optAdv = $("opt-adv");
@@ -375,15 +391,23 @@
       const kind = (pdfFett && pdfFett.checked) ? "Fett" : "Normal";
       const target = `${CONF.PDF_DRAFT_BASE}${kind}${suffix}.pdf`;
 
-      let ok = true;
-      if (U.waitForPdf) ok = await U.waitForPdf(target, CONF.WAIT_ATTEMPTS, CONF.WAIT_DELAY_MS);
-
-      refreshPdf(true, suffix);
+      const t0 = Date.now();
+      const ok = await pollForPdf(target, CONF.WAIT_ATTEMPTS, CONF.WAIT_DELAY_MS, (i, max) => {
+        const sec = Math.round((Date.now() - t0) / 1000);
+        draftStatus && (draftStatus.textContent =
+          `Pdf. wird generiert … (${sec}s, Versuch ${i}/${max}). ` +
+          `Sie können oben „Pdf aktualisieren“ klicken – ich lade automatisch, sobald es fertig ist.`);
+      });
 
       if (ok) {
-        draftStatus && (draftStatus.textContent = "✅ Ihre Anfrage zur PDF-Erstellung aus Ihrem Entwurf wurde gestellt.");
+        refreshPdf(true, suffix);
         if (srcDraft) srcDraft.checked = true;
         if (srcOriginal) srcOriginal.checked = false;
+        draftStatus && (draftStatus.textContent = "✅ Entwurfs-PDF bereit.");
+      } else {
+        draftStatus && (draftStatus.textContent =
+          'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. ' +
+          'Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
       } else {
         draftStatus && (draftStatus.textContent =
           'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
