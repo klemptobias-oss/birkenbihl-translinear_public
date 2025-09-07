@@ -1,10 +1,10 @@
-/* aias.js — robuste PDF-Umschaltung + Editor/Entwurf-Logik + Status */
+/* aias.js — robuste PDF-Umschaltung mit Draft-Autodetektion + Editor/Entwurf-Logik + Status */
 (function () {
   const CONF = {
     WORK: "Aias",
     LOCAL_KEY: "draft_Aias_birkenbihl",
     TXT_ORIG_PATH: "texte/Aias_birkenbihl.txt",
-    PDF_DRAFT_BASE: "pdf_drafts/Aias_DRAFT_LATEST_", // + Normal/Fett[+Suffix].pdf
+    PDF_DRAFT_BASE: "pdf_drafts/Aias_DRAFT_LATEST_", // historische Vorgabe
     PDF_OFFICIAL_BASE: "pdf/TragödieAias_",          // + Normal/Fett.pdf
     WORKER_URL: "https://birkenbihl-draft-01.klemp-tobias.workers.dev",
     FONT_KEY_LEFT:  "font_Aias_original_px",
@@ -13,13 +13,14 @@
     DRAFT_TOGGLE_COLORS_KEY: "Aias_draft_toggle_colors",
     WAIT_ATTEMPTS: 24,
     WAIT_DELAY_MS: 5000,
+    LAST_DRAFT_URL_KEY: "Aias_last_draft_url",       // Merker: zuletzt funktionierender Draft-Link
   };
 
   const U = window.Utils || {};
   const $ = (id) => document.getElementById(id);
 
   // ===== PDF oben =====
-  const pdfFrame    = $("pdf-frame");
+  let pdfFrame    = $("pdf-frame");
   const btnRefresh  = $("pdf-refresh");
   const btnPdfDL    = $("pdf-download");
   const btnPdfOpen  = $("pdf-open");
@@ -91,35 +92,74 @@
     return { srcVal, kindVal };
   }
 
-  // ===== PDF-URL bauen =====
-  function buildPdfUrl(suffix="") {
-    const { srcVal, kindVal } = getPdfSrcKind();
-    const useDraft = srcVal === "draft";
-    const base = useDraft ? CONF.PDF_DRAFT_BASE : CONF.PDF_OFFICIAL_BASE;
-    // Draft bekommt ggf. Suffix (BW/NoTags/Custom). Hier: Standard ohne Suffix.
-    return base + kindVal + (useDraft ? (suffix || "") : "") + ".pdf";
+  // ===== HEAD-Check =====
+  async function headOk(url) {
+    try {
+      const r = await fetch(url + (url.includes("?") ? "&" : "?") + "h=" + Date.now(), { method: "HEAD", cache: "no-store" });
+      return r.ok;
+    } catch { return false; }
   }
 
-  // ===== PDF wirklich neu laden (Klon-Trick) + Links setzen =====
-  function hardReloadPdf(url, bust=false) {
+  // ===== Draft-URL automatisch ermitteln (mehrere Kandidaten) =====
+  async function resolveDraftUrl(kind, suffix = "") {
+    // 1) Zuletzt funktionierende behalten (falls gleicher kind/suffix)
+    try {
+      const last = localStorage.getItem(CONF.LAST_DRAFT_URL_KEY);
+      if (last && last.includes(`_${kind}${suffix}.pdf`) && await headOk(last)) return last;
+    } catch {}
+
+    const candidates = [
+      `pdf_drafts/Aias_DRAFT_LATEST_${kind}${suffix}.pdf`,
+      `pdf/Aias_DRAFT_LATEST_${kind}${suffix}.pdf`,
+      `pdf_drafts/Aias_DRAFT_${kind}${suffix}.pdf`,
+      `pdf/Aias_DRAFT_${kind}${suffix}.pdf`,
+    ];
+    for (const url of candidates) {
+      if (await headOk(url)) {
+        try { localStorage.setItem(CONF.LAST_DRAFT_URL_KEY, url); } catch {}
+        return url;
+      }
+    }
+    return ""; // nichts gefunden
+  }
+
+  // ===== Offizielle URL bauen =====
+  function buildOfficialUrl(kind) {
+    return `${CONF.PDF_OFFICIAL_BASE}${kind}.pdf`;
+  }
+
+  // ===== <object> hart neu laden + Links setzen =====
+  function hardReloadPdf(url) {
     if (!pdfFrame || !btnPdfDL || !btnPdfOpen) return;
-    const finalUrl = url + (bust ? (url.includes("?") ? "&" : "?") + "t=" + Date.now() : "");
-    // Download/Open ohne Bust (sauberer Dateiname)
+    const bustUrl = url + (url.includes("?") ? "&" : "?") + "t=" + Date.now();
     btnPdfDL.setAttribute("href", url);
     btnPdfOpen.setAttribute("href", url);
-
-    // <object> neu aufbauen (einige Browser ignorieren data-Änderung sonst)
     const clone = pdfFrame.cloneNode(true);
-    clone.setAttribute("data", finalUrl + "#view=FitH");
+    clone.setAttribute("data", bustUrl + "#view=FitH");
     pdfFrame.replaceWith(clone);
-    // Referenz aktualisieren
-    const newRef = $("pdf-frame"); // gleiche ID, frisches Element
-    // nichts weiter nötig – Browser lädt das Objekt neu
+    pdfFrame = $("pdf-frame"); // Referenz erneuern
   }
 
-  function refreshPdf(bust=false, suffix="") {
-    const url = buildPdfUrl(suffix);
-    hardReloadPdf(url, bust);
+  async function refreshPdf(bust = true, suffix = "") {
+    const { srcVal, kindVal } = getPdfSrcKind();
+    // Entwurf → versuche Kandidaten, sonst fallback auf offiziell
+    if (srcVal === "draft") {
+      setPdfBusy(true);
+      const draftUrl = await resolveDraftUrl(kindVal, suffix);
+      if (draftUrl) {
+        hardReloadPdf(draftUrl);
+        setPdfBusy(false);
+        return;
+      } else {
+        setStatus("⚠️ Kein Entwurfs-PDF gefunden – zeige Original.", false);
+        // auf Original zurückschalten (UI respektieren?)
+        hardReloadPdf(buildOfficialUrl(kindVal));
+        setPdfBusy(false);
+        return;
+      }
+    }
+    // Original
+    hardReloadPdf(buildOfficialUrl(kindVal));
   }
 
   // ===== Live-Polling (HEAD) =====
@@ -192,8 +232,8 @@
     restoreFontSizes();
     setupCoupledScroll();
 
-    // Initial PDF entsprechend aktueller Radios laden (auch falls HTML Default nicht passt)
-    refreshPdf(true);
+    // Initial passend laden
+    await refreshPdf(true);
   })();
 
   // ===== persistente Booleans =====
@@ -373,22 +413,22 @@
     closeConfirm();
   });
 
-  // ===== PDF: delegierte Events auf dem Container (resistent gegen Duplikate) =====
+  // ===== PDF: delegierte Events auf dem Container =====
   if (pdfControls) {
-    pdfControls.addEventListener("change", (ev) => {
+    pdfControls.addEventListener("change", async (ev) => {
       const t = ev.target;
       if (!(t instanceof HTMLInputElement)) return;
       if (t.name === "pdfsrc" || t.name === "pdfkind") {
         setPdfBusy(true);
-        refreshPdf(true);
-        setTimeout(() => setPdfBusy(false), 400);
+        await refreshPdf(true);
+        setPdfBusy(false);
       }
     });
   }
-  btnRefresh && btnRefresh.addEventListener("click", () => {
+  btnRefresh && btnRefresh.addEventListener("click", async () => {
     setPdfBusy(true);
-    refreshPdf(true);
-    setTimeout(() => setPdfBusy(false), 400);
+    await refreshPdf(true);
+    setPdfBusy(false);
   });
 
   // ===== Optionen-Modal & Build =====
@@ -446,8 +486,8 @@
       if (srcOrig) srcOrig.checked = true;
       if (srcDraft) srcDraft.checked = false;
       setPdfBusy(true);
-      refreshPdf(true);
-      setTimeout(() => setPdfBusy(false), 400);
+      await refreshPdf(true);
+      setPdfBusy(false);
       setStatus('Quelle auf „Original“ umgestellt.', false);
       closeOptModal();
       return;
@@ -470,18 +510,27 @@
       if (!res.ok || !j.ok) throw new Error(j.error || ("HTTP " + res.status));
 
       const { kindVal } = getPdfSrcKind();
-      const target = `${CONF.PDF_DRAFT_BASE}${kindVal}${suffix}.pdf`;
+      // Kandidaten ermitteln und Polling gegen die *erste Kandidaten-URL*, die erreichbar wird
+      const candidates = [
+        `pdf_drafts/Aias_DRAFT_LATEST_${kindVal}${suffix}.pdf`,
+        `pdf/Aias_DRAFT_LATEST_${kindVal}${suffix}.pdf`,
+        `pdf_drafts/Aias_DRAFT_${kindVal}${suffix}.pdf`,
+        `pdf/Aias_DRAFT_${kindVal}${suffix}.pdf`,
+      ];
 
+      let target = "";
       const t0 = Date.now();
-      const ok = await pollForPdf(target, CONF.WAIT_ATTEMPTS, CONF.WAIT_DELAY_MS, (i, max) => {
-        const sec = Math.round((Date.now() - t0) / 1000);
-        setStatus(`Pdf. wird generiert … (${sec}s, Versuch ${i}/${max}). Sie können oben „Pdf aktualisieren“ klicken – ich lade automatisch, sobald es fertig ist.`, true);
-      });
+      outer: for (const url of candidates) {
+        const ok = await pollForPdf(url, CONF.WAIT_ATTEMPTS, CONF.WAIT_DELAY_MS, (i, max) => {
+          const sec = Math.round((Date.now() - t0) / 1000);
+          setStatus(`Pdf. wird generiert … (${sec}s, Versuch ${i}/${max}).`, true);
+        });
+        if (ok) { target = url; break outer; }
+      }
 
-      if (ok) {
+      if (target) {
         setStatus("Verifiziere fertiges Pdf…", true);
         let verified = await verifyPdf(target);
-
         if (!verified) {
           const t1 = Date.now();
           const ok2 = await pollForPdf(target, 6, 5000, (i, max) => {
@@ -490,15 +539,15 @@
           });
           if (ok2) verified = await verifyPdf(target);
         }
-
         if (verified) {
+          try { localStorage.setItem(CONF.LAST_DRAFT_URL_KEY, target); } catch {}
           // Quelle auf Entwurf umschalten
           const srcOrig = document.querySelector('input#src-original');
           const srcDr   = document.querySelector('input#src-draft');
           if (srcDr)   srcDr.checked = true;
           if (srcOrig) srcOrig.checked = false;
 
-          refreshPdf(true, suffix);
+          hardReloadPdf(target);
           setStatus("✅ Entwurfs-PDF bereit.", false);
           setPdfBusy(false);
         } else {
