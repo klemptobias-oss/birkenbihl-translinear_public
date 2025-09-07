@@ -1,5 +1,8 @@
-/* aias.js — schlanke Version: PDF-Steuerung, Scroll-Toggle, Original-Filter,
-   Entwurf-Editor, verbesserte Statusmeldungen beim Build */
+/* aias.js — schlanke Version mit Entwurf-Filter-Schaltern:
+   - PDF-Steuerung, Scroll-Toggle, Original-Filter
+   - Entwurf-Editor + (NEU) Entwurf-Toggle „Kürzel“/„Farben“ (wirken auf PDF-Optionen)
+   - verbesserte Statusmeldungen beim Build
+*/
 (function () {
   const CONF = {
     WORK: "Aias",
@@ -10,6 +13,8 @@
     WORKER_URL: "https://birkenbihl-draft-01.klemp-tobias.workers.dev",
     FONT_KEY_LEFT:  "font_Aias_original_px",
     FONT_KEY_RIGHT: "font_Aias_draft_px",
+    DRAFT_TOGGLE_TAGS_KEY:   "Aias_draft_toggle_tags",
+    DRAFT_TOGGLE_COLORS_KEY: "Aias_draft_toggle_colors",
     WAIT_ATTEMPTS: 24,
     WAIT_DELAY_MS: 5000,
   };
@@ -32,6 +37,10 @@
   const draftSzDec = $("draft-font-minus"), draftSzInc = $("draft-font-plus");
   const btnUploadDraft = $("bb-upload-draft"), btnDownloadDraft = $("bb-download-draft"), btnReset = $("bb-reset");
   const btnGenerateOrig = $("bb-generate-original"), btnGenerateDraft = $("bb-generate-draft");
+
+  // Entwurf-Filter-Schalter (UI wie links, wirken auf PDF-Optionen)
+  const draftToggleTags   = $("draft-toggle-tags");
+  const draftToggleColors = $("draft-toggle-colors");
 
   // Status / Save-UI
   const saveDot = $("save-dot"), saveText = $("save-text"), draftStatus = $("draft-status");
@@ -78,10 +87,33 @@
     rawDraft = (U.loadLocalDraft ? U.loadLocalDraft(CONF.LOCAL_KEY) : "") || rawOriginal || "";
     if (editor) editor.value = rawDraft;
 
+    // Entwurf-Filter initial (persistiert)
+    const draftTagsOn   = loadBool(CONF.DRAFT_TOGGLE_TAGS_KEY,   true);
+    const draftColorsOn = loadBool(CONF.DRAFT_TOGGLE_COLORS_KEY, true);
+    if (U.updateToggleLabel) {
+      U.updateToggleLabel(draftToggleTags,   draftTagsOn);
+      U.updateToggleLabel(draftToggleColors, draftColorsOn);
+    }
+    // sync in Optionen, damit Build passend läuft
+    if (optTags)   optTags.checked   = draftTagsOn;
+    if (optColors) optColors.checked = draftColorsOn;
+
     restoreFontSizes();
     setupCoupledScroll();
     refreshPdf(false);
   })();
+
+  // ----- Helpers: persistente Booleans -----
+  function loadBool(key, fallback) {
+    try {
+      const v = localStorage.getItem(key);
+      if (v === null) return fallback;
+      return v === "1";
+    } catch { return fallback; }
+  }
+  function saveBool(key, value) {
+    try { localStorage.setItem(key, value ? "1" : "0"); } catch {}
+  }
 
   // ----- Original-Filter -----
   function currentOrigFilters() {
@@ -95,18 +127,28 @@
     const text = U.renderWithFilters ? U.renderWithFilters(rawOriginal, f.hideTags, f.hideColors) : rawOriginal;
     origPre.textContent = text;
   }
-  function bindToggle(toggleEl, handler) {
+  function bindToggle(toggleEl, onChange) {
     if (!toggleEl) return;
     toggleEl.addEventListener("click", () => {
       const input = toggleEl.querySelector("input");
       if (!input) return;
       input.checked = !input.checked;
       U.updateToggleLabel && U.updateToggleLabel(toggleEl, input.checked);
-      handler && handler();
+      onChange && onChange(input.checked);
     });
   }
-  bindToggle(origToggleTags,   renderOriginal);
-  bindToggle(origToggleColors, renderOriginal);
+  bindToggle(origToggleTags,   () => renderOriginal());
+  bindToggle(origToggleColors, () => renderOriginal());
+
+  // ----- Entwurf-Filter-Schalter (wirken auf PDF-Optionen; kein Preview) -----
+  bindToggle(draftToggleTags, (isOn) => {
+    saveBool(CONF.DRAFT_TOGGLE_TAGS_KEY, isOn);
+    if (optTags) optTags.checked = isOn;
+  });
+  bindToggle(draftToggleColors, (isOn) => {
+    saveBool(CONF.DRAFT_TOGGLE_COLORS_KEY, isOn);
+    if (optColors) optColors.checked = isOn;
+  });
 
   // ----- Font-Größen -----
   function restoreFontSizes() {
@@ -218,6 +260,15 @@
         context === "original"
           ? "Hinweis: Oben wird auf „Original“ umgeschaltet. Offizielle PDFs liegen im Ordner pdf/."
           : "Der Entwurf wird mit diesen Optionen gebaut und oben angezeigt.";
+    }
+    // Beim Öffnen sicherstellen, dass Optionen die Entwurf-Schalter widerspiegeln
+    if (optTags && draftToggleTags) {
+      const on = !!draftToggleTags.querySelector("input")?.checked;
+      optTags.checked = on;
+    }
+    if (optColors && draftToggleColors) {
+      const on = !!draftToggleColors.querySelector("input")?.checked;
+      optColors.checked = on;
     }
     if (optBackdrop) { optBackdrop.style.display = "flex"; optBackdrop.setAttribute("aria-hidden", "false"); }
   }
