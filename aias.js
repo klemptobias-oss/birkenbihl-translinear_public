@@ -22,8 +22,8 @@
   // ===== PDF oben =====
   let pdfFrame    = $("pdf-frame");
   const btnRefresh  = $("pdf-refresh");
-  const btnPdfDL    = $("pdf-download");
-  const btnPdfOpen  = $("pdf-open");
+  const btnPdfDL    = $("pdf-download"); // kann fehlen
+  const btnPdfOpen  = $("pdf-open");     // kann fehlen
   const pdfControls = document.querySelector(".pdf-controls");
   const pdfBusy     = $("pdf-busy"); // optionales Overlay
 
@@ -98,7 +98,6 @@
       const r = await fetch(url + (url.includes("?") ? "&" : "?") + "h=" + Date.now(), { method: "HEAD", cache: "no-store" });
       if (r.ok) return true;
     } catch {}
-    // Fallback: Range-GET (manche Hosts/Proxies murren bei HEAD)
     try {
       const g = await fetch(url, { method: "GET", headers: { Range: "bytes=0-7" }, cache: "no-store" });
       if (g.ok || g.status === 206) {
@@ -111,9 +110,8 @@
     return false;
   }
 
-  // ===== Draft-URL automatisch ermitteln (mehrere Kandidaten) =====
+  // ===== Draft-URL automatisch ermitteln =====
   async function resolveDraftUrl(kind, suffix = "") {
-    // 1) Zuletzt funktionierende behalten (falls gleicher kind/suffix)
     try {
       const last = localStorage.getItem(CONF.LAST_DRAFT_URL_KEY);
       if (last && last.includes(`_${kind}${suffix}.pdf`) && await headOk(last)) return last;
@@ -131,7 +129,7 @@
         return url;
       }
     }
-    return ""; // nichts gefunden
+    return "";
   }
 
   // ===== Offizielle URL bauen =====
@@ -141,10 +139,13 @@
 
   // ===== <object> hart neu laden + Links setzen =====
   function hardReloadPdf(url) {
-    if (!pdfFrame || !btnPdfDL || !btnPdfOpen) return;
+    if (!pdfFrame) return;
     const bustUrl = url + (url.includes("?") ? "&" : "?") + "t=" + Date.now();
-    btnPdfDL.setAttribute("href", url);
-    btnPdfOpen.setAttribute("href", url);
+
+    // Links nur setzen, wenn vorhanden
+    if (btnPdfDL)   btnPdfDL.setAttribute("href", url);
+    if (btnPdfOpen) btnPdfOpen.setAttribute("href", url);
+
     const clone = pdfFrame.cloneNode(true);
     clone.setAttribute("data", bustUrl + "#view=FitH");
     pdfFrame.replaceWith(clone);
@@ -188,7 +189,7 @@
     return false;
   }
 
-  // ===== Verifikation: HEAD + Range-GET (PDF-Signatur) =====
+  // ===== Verifikation =====
   async function verifyPdf(url) {
     try {
       const head = await fetch(url + (url.includes("?") ? "&" : "?") + "vcheck=" + Date.now(), {
@@ -422,7 +423,7 @@
     closeConfirm();
   });
 
-  // ===== PDF: delegierte Events auf dem Container =====
+  // ===== PDF: delegierte Events =====
   if (pdfControls) {
     pdfControls.addEventListener("change", async (ev) => {
       const t = ev.target;
@@ -440,7 +441,7 @@
     setPdfBusy(false);
   });
 
-  // ===== Optionen-Modal & Build (unverändert) =====
+  // ===== Optionen-Modal & Build =====
   function openOptModal(context) {
     optContext = context;
     if (optContextNote) {
