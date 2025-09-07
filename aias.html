@@ -40,7 +40,7 @@
         <section class="card">
           <h2>PDF</h2>
           <div class="pane-body">
-             <div class="pdf-controls">
+            <div class="pdf-controls">
               <!-- Quelle: Original vs. Entwurf -->
               <span class="radio">
                 <input type="radio" name="pdfsrc" id="src-original" value="original" checked />
@@ -60,9 +60,9 @@
                 <input type="radio" name="pdfkind" id="pdf-fett" value="Fett" />
                 <label for="pdf-fett">Fett</label>
               </span>
-            </div>
 
               <button class="btn" id="pdf-refresh" type="button" title="PDF neu laden">PDF aktualisieren</button>
+              <a class="btn" href="pdf/TragödieAias_Normal.pdf" id="pdf-download" download>Aktuelles PDF herunterladen</a>
               <a class="btn" href="pdf/TragödieAias_Normal.pdf" id="pdf-open" target="_blank">Im neuen Tab öffnen</a>
 
               <span class="muted">Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „PDF aktualisieren“ um den aktuellen Stand zu überprüfen.</span>
@@ -97,12 +97,9 @@
           <div class="pane">
             <h3>Original</h3>
             <div class="pane-body">
-
-              <!-- Zeile: Download | PDF generieren | Scroll koppeln -->
+              <!-- Zeile: PDF generieren | Scroll koppeln -->
               <div class="split">
                 <button class="btn" id="bb-generate-original" type="button" title="PDF-Quelle oben auf Original stellen und neu laden">PDF generieren</button>
-                <button class="btn" id="bb-generate-original" title="PDF-Quelle oben auf Original stellen und neu laden">PDF generieren</button>
-
                 <label class="toggle" id="scroll-link" style="margin-left:auto;">
                   <input type="checkbox" checked />
                   <span>Scroll koppeln:</span>
@@ -141,7 +138,6 @@
           <div class="pane">
             <h3>Entwurf</h3>
             <div class="pane-body">
-
               <!-- Zeile: Download/Upload/Reset/Build -->
               <div class="split">
                 <button class="btn" id="bb-download-draft" type="button" title="Aktuellen Entwurf herunterladen (mit eindeutigem Code)">Herunterladen (Entwurf.txt)</button>
