@@ -153,4 +153,30 @@ object {
   }
 }
 
+/* ===== Spinner für Status-Zeile ===== */
+#draft-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#draft-status .spinner {
+  width: 14px;
+  height: 14px;
+  display: none;           /* per JS auf inline-block, wenn aktiv */
+  border: 2px solid rgba(0,0,0,0.15);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+#draft-status .status-text {
+  display: inline-block;
+  line-height: 1.2;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
 /* ######## ENDE: Gemeinsames Stylesheet ######## */
