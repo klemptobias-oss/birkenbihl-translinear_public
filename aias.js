@@ -1,6 +1,4 @@
-/* aias.js — Entwurf-Schalter wirken jetzt sichtbar:
-   Derselbe Bereich wechselt zwischen Editor (roh) und Ansicht (gefiltert).
-   Original links bleibt unverändert. */
+/* aias.js — Entwurf-Schalter mit sichtbarem Ladezustand (Spinner unten & PDF-Overlay oben) */
 (function () {
   const CONF = {
     WORK: "Aias",
@@ -13,7 +11,7 @@
     FONT_KEY_RIGHT: "font_Aias_draft_px",
     DRAFT_TOGGLE_TAGS_KEY:   "Aias_draft_toggle_tags",
     DRAFT_TOGGLE_COLORS_KEY: "Aias_draft_toggle_colors",
-    WAIT_ATTEMPTS: 24,     // ~2 Minuten bei 5s
+    WAIT_ATTEMPTS: 24,     // ~2 Min bei 5s
     WAIT_DELAY_MS: 5000,
   };
 
@@ -24,6 +22,7 @@
   const pdfFrame = $("pdf-frame"), pdfNormal = $("pdf-normal"), pdfFett = $("pdf-fett");
   const srcOriginal = $("src-original"), srcDraft = $("src-draft");
   const btnRefresh = $("pdf-refresh"), btnPdfDownload = $("pdf-download"), btnPdfOpen = $("pdf-open");
+  const pdfBusy = $("pdf-busy"); // Overlay (optional)
 
   // ===== Original (links) =====
   const origPre = $("bb-original-pre");
@@ -32,7 +31,7 @@
 
   // ===== Entwurf (rechts) =====
   const editor = $("bb-editor");
-  const draftView = $("bb-draft-view");
+  const draftView = $("bb-draft-view");      // falls vorhanden (gefilterte Ansicht)
   const draftViewNote = $("draft-view-note");
   const draftSzDec = $("draft-font-minus"), draftSzInc = $("draft-font-plus");
   const btnUploadDraft = $("bb-upload-draft"), btnDownloadDraft = $("bb-download-draft"), btnReset = $("bb-reset");
@@ -60,10 +59,9 @@
   // ===== State =====
   let rawOriginal = "", rawDraft = "", optContext = "draft", unlinkScroll = () => {};
 
-  // ===== Status-Helfer (Spinner an/aus) =====
+  // ===== Status- & PDF-Overlay-Helfer =====
   function setStatus(text, spinning) {
     if (!draftStatus) return;
-    // Struktur: <span class="spinner" aria-hidden="true"></span><span class="status-text">...</span>
     let spin = draftStatus.querySelector(".spinner");
     let sTxt = draftStatus.querySelector(".status-text");
     if (!spin) {
@@ -79,6 +77,10 @@
     }
     sTxt.textContent = text || "";
     spin.style.display = spinning ? "inline-block" : "none";
+  }
+  function setPdfBusy(on) {
+    if (!pdfBusy) return;
+    pdfBusy.style.display = on ? "flex" : "none";
   }
 
   // ===== PDF-URL + Refresh =====
@@ -112,7 +114,6 @@
   // ===== Verifikation: HEAD + Range-GET (PDF-Signatur) =====
   async function verifyPdf(url) {
     try {
-      // 1) HEAD
       const head = await fetch(url + (url.includes("?") ? "&" : "?") + "vcheck=" + Date.now(), {
         method: "HEAD",
         cache: "no-store",
@@ -121,22 +122,15 @@
       const ct = (head.headers.get("Content-Type") || "").toLowerCase();
       const len = parseInt(head.headers.get("Content-Length") || "0", 10);
       if (!ct.includes("pdf")) return false;
-      if (isFinite(len) && len > 0 && len < 500) return false; // zu klein → wahrscheinlich Platzhalter
+      if (isFinite(len) && len > 0 && len < 500) return false;
 
-      // 2) Range-GET (erste Bytes) → %PDF-
-      const rng = await fetch(url, {
-        method: "GET",
-        headers: { Range: "bytes=0-7" },
-        cache: "no-store",
-      });
+      const rng = await fetch(url, { method: "GET", headers: { Range: "bytes=0-7" }, cache: "no-store" });
       if (!rng.ok && rng.status !== 206 && rng.status !== 200) return false;
       const buf = await rng.arrayBuffer();
       const bytes = new Uint8Array(buf);
       const txt = Array.from(bytes).map((b) => String.fromCharCode(b)).join("");
       return txt.startsWith("%PDF-");
-    } catch {
-      return false;
-    }
+    } catch { return false; }
   }
 
   // ===== Init =====
@@ -148,18 +142,15 @@
       rawOriginal = "Konnte " + CONF.TXT_ORIG_PATH + " nicht laden. Liegt die Datei im Ordner texte/?";
     }
 
-    // Original initial render & Labels
     if (origPre) {
       U.updateToggleLabel && U.updateToggleLabel(origToggleTags, true);
       U.updateToggleLabel && U.updateToggleLabel(origToggleColors, true);
       renderOriginal();
     }
 
-    // Entwurf initial
     rawDraft = (U.loadLocalDraft ? U.loadLocalDraft(CONF.LOCAL_KEY) : "") || rawOriginal || "";
     if (editor) editor.value = rawDraft;
 
-    // Entwurfsschalter (persistiert) + PDF-Options-Sync
     const tagsOn   = loadBool(CONF.DRAFT_TOGGLE_TAGS_KEY,   true);
     const colorsOn = loadBool(CONF.DRAFT_TOGGLE_COLORS_KEY, true);
     if (U.updateToggleLabel) {
@@ -169,7 +160,6 @@
     if (optTags)   optTags.checked   = tagsOn;
     if (optColors) optColors.checked = colorsOn;
 
-    // Start-Modus
     updateDraftViewMode();
 
     restoreFontSizes();
@@ -177,19 +167,14 @@
     refreshPdf(false);
   })();
 
-  // ===== Helpers: persistente Booleans =====
+  // ===== persistente Booleans =====
   function loadBool(key, fallback) {
-    try {
-      const v = localStorage.getItem(key);
-      if (v === null) return fallback;
-      return v === "1";
-    } catch { return fallback; }
+    try { const v = localStorage.getItem(key); return v === null ? fallback : v === "1"; }
+    catch { return fallback; }
   }
-  function saveBool(key, value) {
-    try { localStorage.setItem(key, value ? "1" : "0"); } catch {}
-  }
+  function saveBool(key, value) { try { localStorage.setItem(key, value ? "1" : "0"); } catch {} }
 
-  // ===== Original-Filter (links) =====
+  // ===== Original-Filter =====
   function currentOrigFilters() {
     const showTags   = !!(origToggleTags && origToggleTags.querySelector("input")?.checked);
     const showColors = !!(origToggleColors && origToggleColors.querySelector("input")?.checked);
@@ -228,7 +213,7 @@
   }
   function updateDraftViewMode() {
     const f = currentDraftFilters();
-    const useView = f.hideTags || f.hideColors; // sobald etwas gefiltert werden soll
+    const useView = f.hideTags || f.hideColors;
     if (useView) {
       if (editor) editor.style.display = "none";
       if (draftView) { draftView.style.display = ""; renderDraftView(); }
@@ -238,10 +223,9 @@
       if (editor) editor.style.display = "";
       if (draftViewNote) draftViewNote.style.display = "none";
     }
-    setupCoupledScroll(); // Ziel (editor vs. view) kann sich ändern
+    setupCoupledScroll();
   }
 
-  // Toggle-Bindings (Entwurf)
   bindToggle(draftToggleTags, (isOn) => {
     saveBool(CONF.DRAFT_TOGGLE_TAGS_KEY, isOn);
     if (optTags) optTags.checked = isOn;
@@ -361,10 +345,19 @@
   });
 
   // ===== PDF-Umschaltung =====
-  ;[pdfNormal, pdfFett, srcOriginal, srcDraft].forEach((el) => el && el.addEventListener("change", () => refreshPdf(true)));
-  btnRefresh && btnRefresh.addEventListener("click", () => refreshPdf(true));
+  ;[pdfNormal, pdfFett, srcOriginal, srcDraft].forEach((el) => el && el.addEventListener("change", () => {
+    setPdfBusy(true);
+    refreshPdf(true);
+    // kleines Timeout: Overlay kurz zeigen, dann aus
+    setTimeout(() => setPdfBusy(false), 400);
+  }));
+  btnRefresh && btnRefresh.addEventListener("click", () => {
+    setPdfBusy(true);
+    refreshPdf(true);
+    setTimeout(() => setPdfBusy(false), 400);
+  });
 
-  // ===== Optionen-Modal =====
+  // ===== Optionen-Modal & Build =====
   function openOptModal(context) {
     optContext = context;
     if (optContextNote) {
@@ -373,7 +366,6 @@
           ? "Hinweis: Oben wird auf „Original“ umgeschaltet. Offizielle PDFs liegen im Ordner pdf/."
           : "Der Entwurf wird mit diesen Optionen gebaut und oben angezeigt.";
     }
-    // Optionen an Entwurfsschalter angleichen
     const f = currentDraftFilters();
     if (optTags)   optTags.checked   = !f.hideTags;
     if (optColors) optColors.checked = !f.hideColors;
@@ -381,6 +373,7 @@
     if (optBackdrop) { optBackdrop.style.display = "flex"; optBackdrop.setAttribute("aria-hidden", "false"); }
   }
   function closeOptModal() { if (!optBackdrop) return; optBackdrop.style.display = "none"; optBackdrop.setAttribute("aria-hidden", "true"); }
+
   btnGenerateOrig  && btnGenerateOrig.addEventListener("click", () => openOptModal("original"));
   btnGenerateDraft && btnGenerateDraft.addEventListener("click", () => openOptModal("draft"));
   optClose && optClose.addEventListener("click", closeOptModal);
@@ -415,7 +408,9 @@
     if (optContext === "original") {
       if (srcOriginal) srcOriginal.checked = true;
       if (srcDraft)    srcDraft.checked = false;
+      setPdfBusy(true);
       refreshPdf(true);
+      setTimeout(() => setPdfBusy(false), 400);
       setStatus('Quelle auf „Original“ umgestellt.', false);
       closeOptModal();
       return;
@@ -426,6 +421,7 @@
 
     try {
       setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
+      setPdfBusy(true);
 
       const opts = collectOptionsPayload();
       const res = await fetch(CONF.WORKER_URL + "/draft", {
@@ -446,12 +442,10 @@
       });
 
       if (ok) {
-        // Verifizieren, dass es wirklich renderbar ist
         setStatus("Verifiziere fertiges Pdf…", true);
         let verified = await verifyPdf(target);
 
         if (!verified) {
-          // kurzes Nach-Polling nur für Verifikation
           const t1 = Date.now();
           const ok2 = await pollForPdf(target, 6, 5000, (i, max) => {
             const sec = Math.round((Date.now() - t1) / 1000);
@@ -465,14 +459,18 @@
           if (srcDraft) srcDraft.checked = true;
           if (srcOriginal) srcOriginal.checked = false;
           setStatus("✅ Entwurfs-PDF bereit.", false);
+          setPdfBusy(false);
         } else {
           setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
+          // Overlay bleibt sichtbar, Nutzer kann „PDF aktualisieren“ klicken
         }
       } else {
         setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
+        // Overlay bleibt sichtbar – Bau läuft vermutlich noch
       }
     } catch (e) {
       setStatus('Fehler: ' + (e && e.message ? e.message : e), false);
+      setPdfBusy(false);
     } finally {
       closeOptModal();
     }
