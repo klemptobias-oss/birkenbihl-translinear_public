@@ -62,10 +62,10 @@
               </span>
 
               <button class="btn" id="pdf-refresh" title="PDF neu laden">PDF aktualisieren</button>
-              <a class="btn" href="pdf/TragödieAias_Normal.pdf" id="pdf-download" download>Aktuelles PDF herunterladen</a>
+              <button class="btn" id="pdf-refresh" type="button" title="PDF neu laden">PDF aktualisieren</button>
               <a class="btn" href="pdf/TragödieAias_Normal.pdf" id="pdf-open" target="_blank">Im neuen Tab öffnen</a>
 
-              <span class="muted">PDF wird aus der Birkenbihl-Datei durch den Build erzeugt.</span>
+              <span class="muted">Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „PDF aktualisieren“ um den aktuellen Stand zu überprüfen.</span>
             </div>
 
             <object id="pdf-frame" class="pdf-frame" type="application/pdf"
@@ -94,7 +94,7 @@
 
               <!-- Zeile: Download | PDF generieren | Scroll koppeln -->
               <div class="split">
-                <a class="btn" href="texte/Aias_birkenbihl.txt" download>Herunterladen (Original.txt)</a>
+                <button class="btn" id="bb-generate-original" type="button" title="PDF-Quelle oben auf Original stellen und neu laden">PDF generieren</button>
                 <button class="btn" id="bb-generate-original" title="PDF-Quelle oben auf Original stellen und neu laden">PDF generieren</button>
 
                 <label class="toggle" id="scroll-link" style="margin-left:auto;">
@@ -138,11 +138,11 @@
 
               <!-- Zeile: Download/Upload/Reset/Build -->
               <div class="split">
-                <button class="btn" id="bb-download-draft" title="Aktuellen Entwurf herunterladen (mit eindeutigem Code)">Herunterladen (Entwurf.txt)</button>
-                <button class="btn" id="bb-upload-draft"  title="Entwurf.txt aus Datei laden">Entwurf hochladen</button>
+                <button class="btn" id="bb-download-draft" type="button" title="Aktuellen Entwurf herunterladen (mit eindeutigem Code)">Herunterladen (Entwurf.txt)</button>
+                <button class="btn" id="bb-upload-draft"  type="button" title="Entwurf.txt aus Datei laden">Entwurf hochladen</button>
                 <input id="bb-upload-file" type="file" accept=".txt,text/plain" style="display:none" />
-                <button class="btn" id="bb-reset" title="Nur den lokalen Entwurf löschen">Entwurf zurücksetzen</button>
-                <button class="btn" id="bb-generate-draft" title="Entwurf als PDF bauen (Cloud-Worker)">PDF generieren</button>
+                <button class="btn" id="bb-reset" type="button" title="Nur den lokalen Entwurf löschen">Entwurf zurücksetzen</button>
+                <button class="btn" id="bb-generate-draft" type="button" title="Entwurf als PDF bauen (Cloud-Worker)">PDF generieren</button>
               </div>
 
               <!-- Zeile: Doppelschalter ± + Entwurf-Filter rechtsbündig -->
