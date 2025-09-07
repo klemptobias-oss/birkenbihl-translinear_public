@@ -1,10 +1,10 @@
-/* aias.js — robuste PDF-Umschaltung mit Draft-Autodetektion (HEAD→Range-GET Fallback) + Status */
+/* aias.js — PDF-Umschaltung + Draft-Preview; Editor bleibt immer sichtbar; PDF-Hinweis entdoppelt */
 (function () {
   const CONF = {
     WORK: "Aias",
     LOCAL_KEY: "draft_Aias_birkenbihl",
     TXT_ORIG_PATH: "texte/Aias_birkenbihl.txt",
-    PDF_DRAFT_BASE: "pdf_drafts/Aias_DRAFT_LATEST_", // historische Vorgabe
+    PDF_DRAFT_BASE: "pdf_drafts/Aias_DRAFT_LATEST_", // + Normal/Fett[+Suffix].pdf
     PDF_OFFICIAL_BASE: "pdf/TragödieAias_",          // + Normal/Fett.pdf
     WORKER_URL: "https://birkenbihl-draft-01.klemp-tobias.workers.dev",
     FONT_KEY_LEFT:  "font_Aias_original_px",
@@ -20,18 +20,20 @@
   const $ = (id) => document.getElementById(id);
 
   // ===== PDF oben =====
-  let pdfFrame    = $("pdf-frame");
+  let pdfFrame      = $("pdf-frame");
   const btnRefresh  = $("pdf-refresh");
-  const btnPdfDL    = $("pdf-download"); // kann fehlen
-  const btnPdfOpen  = $("pdf-open");     // kann fehlen
+  const btnPdfDL    = $("pdf-download"); // optional
+  const btnPdfOpen  = $("pdf-open");     // optional
   const pdfControls = document.querySelector(".pdf-controls");
-  const pdfBusy     = $("pdf-busy"); // optionales Overlay
-  const pdfMeta     = $("pdf-meta");
+  const pdfBusy     = $("pdf-busy");     // Overlay
+  const pdfMeta     = $("pdf-meta");     // „Zuletzt gebaut“-Zeile
+  const pdfHint     = $("pdf-hint");     // statische Hinweiszeile
+  const DEFAULT_PDF_HINT = pdfHint ? pdfHint.textContent : "";
 
-  // Persistenz-Keys für Auswahl
+  // Persistenz für Auswahl
   const PDF_SRC_KEY  = "Aias_pdf_src";   // "original" | "draft"
   const PDF_KIND_KEY = "Aias_pdf_kind";  // "Normal"  | "Fett"
-  
+
   // ===== Original (links) =====
   const origPre = $("bb-original-pre");
   const origToggleTags = $("orig-toggle-tags"), origToggleColors = $("orig-toggle-colors");
@@ -39,8 +41,8 @@
 
   // ===== Entwurf (rechts) =====
   const editor = $("bb-editor");
-  const draftView = $("bb-draft-view");
-  const draftViewNote = $("draft-view-note");
+  const draftView = $("bb-draft-view");         // reine Ansicht (gefiltert)
+  const draftViewNote = $("draft-view-note");   // kleiner Hinweistext unter der Ansicht
   const draftSzDec = $("draft-font-minus"), draftSzInc = $("draft-font-plus");
   const btnUploadDraft = $("bb-upload-draft"), btnDownloadDraft = $("bb-download-draft"), btnReset = $("bb-reset");
   const btnGenerateOrig = $("bb-generate-original"), btnGenerateDraft = $("bb-generate-draft");
@@ -85,10 +87,16 @@
     }
     sTxt.textContent = text || "";
     spin.style.display = spinning ? "inline-block" : "none";
+
+    // Hinweis oben NICHT doppeln: während „spinning“ blenden wir die statische Zeile aus
+    if (pdfHint) {
+      pdfHint.style.display = spinning ? "none" : "";
+      if (!spinning) pdfHint.textContent = DEFAULT_PDF_HINT;
+    }
   }
   function setPdfBusy(on) { if (pdfBusy) pdfBusy.style.display = on ? "flex" : "none"; }
 
- // ----- PDF-Meta (Last-Modified + Größe) -----
+  // ----- PDF-Meta (Last-Modified + Größe, per HEAD) -----
   function fmtSize(bytes) {
     if (!Number.isFinite(bytes) || bytes < 0) return "–";
     if (bytes < 1024) return bytes + " B";
@@ -110,7 +118,7 @@
       pdfMeta.textContent = "";
     }
   }
-  
+
   // ===== Robustes Auslesen der PDF-UI =====
   function getPdfSrcKind() {
     const src = document.querySelector('input[name="pdfsrc"]:checked');
@@ -166,24 +174,23 @@
   }
 
   // ===== <object> hart neu laden + Links setzen =====
-    function hardReloadPdf(url) {
+  function hardReloadPdf(url) {
     if (!pdfFrame) return;
     const bustUrl = url + (url.includes("?") ? "&" : "?") + "t=" + Date.now();
 
-    // Links nur setzen, wenn vorhanden
     if (btnPdfDL)   btnPdfDL.setAttribute("href", url);
     if (btnPdfOpen) btnPdfOpen.setAttribute("href", url);
 
     const clone = pdfFrame.cloneNode(true);
     clone.setAttribute("data", bustUrl + "#view=FitH");
     pdfFrame.replaceWith(clone);
-    pdfFrame = $("pdf-frame"); // Referenz erneuern
+    pdfFrame = $("pdf-frame");
     console.log("[PDF] geladen:", url);
-    // Meta (Last-Modified / Größe) nachladen – ohne Bust-Param
-     updatePdfMeta(url);
-   }
+    setStatus(`Aktuelles PDF: ${url}`, false);
+    updatePdfMeta(url); // Meta (HEAD) nachladen
+  }
 
-  async function refreshPdf(bust = true, suffix = "") {
+  async function refreshPdf(_bust = true, suffix = "") {
     const { srcVal, kindVal } = getPdfSrcKind();
     if (srcVal === "draft") {
       setPdfBusy(true);
@@ -218,7 +225,7 @@
     return false;
   }
 
-  // ===== Verifikation =====
+  // ===== Verifikation (Signatur prüfen) =====
   async function verifyPdf(url) {
     try {
       const head = await fetch(url + (url.includes("?") ? "&" : "?") + "vcheck=" + Date.now(), {
@@ -255,9 +262,11 @@
       renderOriginal();
     }
 
+    // Entwurf initial
     rawDraft = (U.loadLocalDraft ? U.loadLocalDraft(CONF.LOCAL_KEY) : "") || rawOriginal || "";
     if (editor) editor.value = rawDraft;
 
+    // Entwurfs-Schalter (persistiert)
     const tagsOn   = loadBool(CONF.DRAFT_TOGGLE_TAGS_KEY,   true);
     const colorsOn = loadBool(CONF.DRAFT_TOGGLE_COLORS_KEY, true);
     if (U.updateToggleLabel) {
@@ -267,24 +276,25 @@
     if (optTags)   optTags.checked   = tagsOn;
     if (optColors) optColors.checked = colorsOn;
 
+    // Editor bleibt immer sichtbar – Ansicht je nach Filtern sichtbar/unsichtbar
     updateDraftViewMode();
 
     restoreFontSizes();
     setupCoupledScroll();
-// Auswahl aus localStorage wiederherstellen
-    try {
-     const savedSrc  = localStorage.getItem(PDF_SRC_KEY);   // "original" | "draft"
-     const savedKind = localStorage.getItem(PDF_KIND_KEY);  // "Normal" | "Fett"
-     if (savedSrc) {
-       const el = document.querySelector(`input[name="pdfsrc"][value="${savedSrc}"]`);
-       if (el) el.checked = true;
-     }
-     if (savedKind) {
-       const el = document.querySelector(`input[name="pdfkind"][value="${savedKind}"]`);
-       if (el) el.checked = true;
-     }
-   } catch {}
 
+    // Auswahl aus localStorage wiederherstellen
+    try {
+      const savedSrc  = localStorage.getItem(PDF_SRC_KEY);
+      const savedKind = localStorage.getItem(PDF_KIND_KEY);
+      if (savedSrc) {
+        const el = document.querySelector(`input[name="pdfsrc"][value="${savedSrc}"]`);
+        if (el) el.checked = true;
+      }
+      if (savedKind) {
+        const el = document.querySelector(`input[name="pdfkind"][value="${savedKind}"]`);
+        if (el) el.checked = true;
+      }
+    } catch {}
 
     await refreshPdf(true);
   })();
@@ -321,7 +331,7 @@
   bindToggle(origToggleTags,   () => renderOriginal());
   bindToggle(origToggleColors, () => renderOriginal());
 
-  // ===== Entwurf: View/Editor umschalten =====
+  // ===== Entwurf: Editor bleibt sichtbar; Ansicht bei Filtern dazu =====
   function currentDraftFilters() {
     const showTags   = !!(draftToggleTags && draftToggleTags.querySelector("input")?.checked);
     const showColors = !!(draftToggleColors && draftToggleColors.querySelector("input")?.checked);
@@ -335,16 +345,18 @@
   }
   function updateDraftViewMode() {
     const f = currentDraftFilters();
-    const useView = f.hideTags || f.hideColors;
-    if (useView) {
-      if (editor) editor.style.display = "none";
-      if (draftView) { draftView.style.display = ""; renderDraftView(); }
-      if (draftViewNote) draftViewNote.style.display = "";
-    } else {
-      if (draftView) draftView.style.display = "none";
-      if (editor) editor.style.display = "";
-      if (draftViewNote) draftViewNote.style.display = "none";
+    const needPreview = f.hideTags || f.hideColors;
+    // Editor NIE verstecken:
+    if (editor) editor.style.display = "";
+
+    // Vorschau nur ein-/ausblenden
+    if (draftView) {
+      draftView.style.display = needPreview ? "" : "none";
+      if (needPreview) renderDraftView();
     }
+    if (draftViewNote) draftViewNote.style.display = needPreview ? "" : "none";
+
+    // Scrollkopplung neu, da Ziel sich ändert
     setupCoupledScroll();
   }
 
@@ -383,6 +395,7 @@
 
   // ===== Scroll koppeln =====
   function visibleDraftScrollEl() {
+    // Falls Vorschau sichtbar, koppeln wir daran; sonst an den Editor
     const viewVisible = draftView && draftView.style.display !== "none";
     return viewVisible ? draftView : editor;
   }
@@ -556,7 +569,7 @@
     if (!text.trim()) { alert("Kein Entwurfstext vorhanden."); return; }
 
     try {
-      setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
+      setStatus('Pdf. wird aus dem Entwurf erstellt… Bitte warten. Sie können oben „PDF aktualisieren“ klicken.', true);
       setPdfBusy(true);
 
       const opts = collectOptionsPayload();
@@ -608,10 +621,10 @@
           setStatus("✅ Entwurfs-PDF bereit.", false);
           setPdfBusy(false);
         } else {
-          setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
+          setStatus('Pdf. wird aus dem Entwurf erstellt… Sie können oben „PDF aktualisieren“ klicken.', true);
         }
       } else {
-        setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
+        setStatus('Pdf. wird aus dem Entwurf erstellt… Sie können oben „PDF aktualisieren“ klicken.', true);
       }
     } catch (e) {
       setStatus('Fehler: ' + (e && e.message ? e.message : e), false);
