@@ -37,28 +37,12 @@
   const draftSzDec = $("draft-font-minus"), draftSzInc = $("draft-font-plus");
   const btnUploadDraft = $("bb-upload-draft"), btnDownloadDraft = $("bb-download-draft"), btnReset = $("bb-reset");
   const btnGenerateOrig = $("bb-generate-original"), btnGenerateDraft = $("bb-generate-draft");
-  const draftToggleTags   = $("draft-toggle-tags");
-  the_draftToggleColors = $("draft-toggle-colors");
+  const draftToggleTags = $("draft-toggle-tags");
+  const draftToggleColors = $("draft-toggle-colors"); // <-- FIX: korrekt deklariert
 
   // Status / Save-UI
   const saveDot = $("save-dot"), saveText = $("save-text"), draftStatus = $("draft-status");
 
-   async function pollForPdf(url, attempts, delayMs, onTick) {
-    for (let i = 1; i <= attempts; i++) {
-      try {
-        onTick && onTick(i, attempts);
-        const r = await fetch(url + (url.includes("?") ? "&" : "?") + "check=" + Date.now(), {
-          method: "HEAD",
-          cache: "no-store",
-        });
-        if (r.ok) return true;
-      } catch {}
-      await new Promise((res) => setTimeout(res, delayMs));
-    }
-    return false;
-  }
-
-   
   // Optionen-Modal
   const optBackdrop = $("opt-backdrop"), optClose = $("opt-close"), optCancel = $("opt-cancel"), optGenerate = $("opt-generate");
   const optColors = $("opt-colors"), optTags = $("opt-tags"), optAdv = $("opt-adv");
@@ -75,7 +59,7 @@
 
   let rawOriginal = "", rawDraft = "", optContext = "draft", unlinkScroll = () => {};
 
-  // ----- PDF -----
+  // ----- PDF-URL + Refresh -----
   function currentPdfUrl(suffix = "") {
     const kind = (pdfFett && pdfFett.checked) ? "Fett" : "Normal";
     const useDraft = !!(srcDraft && srcDraft.checked);
@@ -85,6 +69,22 @@
   function refreshPdf(bust = false, suffix = "") {
     const url = currentPdfUrl(suffix);
     if (U.setPdfViewer) U.setPdfViewer(pdfFrame, btnPdfDownload, btnPdfOpen, url, bust);
+  }
+
+  // ----- Live-Polling für PDF-Fertigstellung -----
+  async function pollForPdf(url, attempts, delayMs, onTick) {
+    for (let i = 1; i <= attempts; i++) {
+      try {
+        onTick && onTick(i, attempts);
+        const r = await fetch(url + (url.includes("?") ? "&" : "?") + "check=" + Date.now(), {
+          method: "HEAD",
+          cache: "no-store",
+        });
+        if (r.ok) return true;
+      } catch {}
+      await new Promise((res) => setTimeout(res, delayMs));
+    }
+    return false;
   }
 
   // ----- Init -----
@@ -112,7 +112,7 @@
     const colorsOn = loadBool(CONF.DRAFT_TOGGLE_COLORS_KEY, true);
     if (U.updateToggleLabel) {
       U.updateToggleLabel(draftToggleTags,   tagsOn);
-      U.updateToggleLabel(the_draftToggleColors, colorsOn);
+      U.updateToggleLabel(draftToggleColors, colorsOn);
     }
     if (optTags)   optTags.checked   = tagsOn;
     if (optColors) optColors.checked = colorsOn;
@@ -165,7 +165,7 @@
   // ----- Entwurf: View/Editor umschalten -----
   function currentDraftFilters() {
     const showTags   = !!(draftToggleTags && draftToggleTags.querySelector("input")?.checked);
-    const showColors = !!(the_draftToggleColors && the_draftToggleColors.querySelector("input")?.checked);
+    const showColors = !!(draftToggleColors && draftToggleColors.querySelector("input")?.checked);
     return { hideTags: !showTags, hideColors: !showColors, showTags, showColors };
   }
   function renderDraftView() {
@@ -196,7 +196,7 @@
     if (optTags) optTags.checked = isOn;
     updateDraftViewMode();
   });
-  bindToggle(the_draftToggleColors, (isOn) => {
+  bindToggle(draftToggleColors, (isOn) => {
     saveBool(CONF.DRAFT_TOGGLE_COLORS_KEY, isOn);
     if (optColors) optColors.checked = isOn;
     updateDraftViewMode();
@@ -311,11 +311,11 @@
     closeConfirm();
   });
 
-  // PDF-Umschaltung
+  // ----- PDF-Umschaltung -----
   ;[pdfNormal, pdfFett, srcOriginal, srcDraft].forEach((el) => el && el.addEventListener("change", () => refreshPdf(true)));
   btnRefresh && btnRefresh.addEventListener("click", () => refreshPdf(true));
 
-  // Optionen-Modal
+  // ----- Optionen-Modal -----
   function openOptModal(context) {
     optContext = context;
     if (optContextNote) {
@@ -377,7 +377,8 @@
 
     try {
       draftStatus && (draftStatus.textContent =
-         'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
+        'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. ' +
+        'Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
 
       const opts = collectOptionsPayload();
       const res = await fetch(CONF.WORKER_URL + "/draft", {
@@ -408,9 +409,6 @@
         draftStatus && (draftStatus.textContent =
           'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. ' +
           'Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
-      } else {
-        draftStatus && (draftStatus.textContent =
-          'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
       }
     } catch (e) {
       draftStatus && (draftStatus.innerHTML = '<span class="err">Fehler: ' + (e && e.message ? e.message : e) + "</span>");
