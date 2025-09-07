@@ -1,5 +1,6 @@
-/* aias.js — ohne Mini-Preview. Original links unverändert.
-   Entwurfs-Schalter steuern PDF-Optionen (Textarea selbst kann nicht gefiltert werden). */
+/* aias.js — Entwurf-Schalter wirken jetzt sichtbar:
+   Derselbe Bereich wechselt zwischen Editor (roh) und Ansicht (gefiltert).
+   Original links bleibt unverändert. */
 (function () {
   const CONF = {
     WORK: "Aias",
@@ -31,11 +32,13 @@
 
   // Entwurf (rechts)
   const editor = $("bb-editor");
+  const draftView = $("bb-draft-view");
+  const draftViewNote = $("draft-view-note");
   const draftSzDec = $("draft-font-minus"), draftSzInc = $("draft-font-plus");
   const btnUploadDraft = $("bb-upload-draft"), btnDownloadDraft = $("bb-download-draft"), btnReset = $("bb-reset");
   const btnGenerateOrig = $("bb-generate-original"), btnGenerateDraft = $("bb-generate-draft");
   const draftToggleTags   = $("draft-toggle-tags");
-  const draftToggleColors = $("draft-toggle-colors");
+  the_draftToggleColors = $("draft-toggle-colors");
 
   // Status / Save-UI
   const saveDot = $("save-dot"), saveText = $("save-text"), draftStatus = $("draft-status");
@@ -93,10 +96,13 @@
     const colorsOn = loadBool(CONF.DRAFT_TOGGLE_COLORS_KEY, true);
     if (U.updateToggleLabel) {
       U.updateToggleLabel(draftToggleTags,   tagsOn);
-      U.updateToggleLabel(draftToggleColors, colorsOn);
+      U.updateToggleLabel(the_draftToggleColors, colorsOn);
     }
     if (optTags)   optTags.checked   = tagsOn;
     if (optColors) optColors.checked = colorsOn;
+
+    // Start-Modus anwenden
+    updateDraftViewMode();
 
     restoreFontSizes();
     setupCoupledScroll();
@@ -140,16 +146,44 @@
   bindToggle(origToggleTags,   () => renderOriginal());
   bindToggle(origToggleColors, () => renderOriginal());
 
-  // ----- Entwurf-Schalter (steuern PDF-Optionen; Textarea selbst bleibt unverändert) -----
+  // ----- Entwurf: View/Editor umschalten -----
+  function currentDraftFilters() {
+    const showTags   = !!(draftToggleTags && draftToggleTags.querySelector("input")?.checked);
+    const showColors = !!(the_draftToggleColors && the_draftToggleColors.querySelector("input")?.checked);
+    return { hideTags: !showTags, hideColors: !showColors, showTags, showColors };
+  }
+  function renderDraftView() {
+    if (!draftView) return;
+    const f = currentDraftFilters();
+    const text = editor ? (editor.value || "") : (rawDraft || "");
+    draftView.textContent = U.renderWithFilters ? U.renderWithFilters(text, f.hideTags, f.hideColors) : text;
+  }
+  function updateDraftViewMode() {
+    const f = currentDraftFilters();
+    const useView = f.hideTags || f.hideColors; // sobald etwas gefiltert werden soll
+    if (useView) {
+      if (editor) editor.style.display = "none";
+      if (draftView) { draftView.style.display = ""; renderDraftView(); }
+      if (draftViewNote) draftViewNote.style.display = "";
+    } else {
+      if (draftView) draftView.style.display = "none";
+      if (editor) editor.style.display = "";
+      if (draftViewNote) draftViewNote.style.display = "none";
+    }
+    // Scroll-Kopplung neu setzen, weil Ziel sich ändert
+    setupCoupledScroll();
+  }
+
+  // Toggle-Bindings (Entwurf)
   bindToggle(draftToggleTags, (isOn) => {
     saveBool(CONF.DRAFT_TOGGLE_TAGS_KEY, isOn);
     if (optTags) optTags.checked = isOn;
-    // Hinweis optional:
-    // draftStatus && (draftStatus.textContent = "Schalter wirkt beim PDF-Build. (Editor zeigt immer Rohtext.)");
+    updateDraftViewMode();
   });
-  bindToggle(draftToggleColors, (isOn) => {
+  bindToggle(the_draftToggleColors, (isOn) => {
     saveBool(CONF.DRAFT_TOGGLE_COLORS_KEY, isOn);
     if (optColors) optColors.checked = isOn;
+    updateDraftViewMode();
   });
 
   // ----- Font-Größen -----
@@ -159,6 +193,7 @@
       const rightPx = parseFloat(localStorage.getItem(CONF.FONT_KEY_RIGHT) || "0");
       if (origPre && leftPx  > 0 && U.setFontSize) U.setFontSize(origPre, leftPx);
       if (editor  && rightPx > 0 && U.setFontSize) U.setFontSize(editor,  rightPx);
+      if (draftView && rightPx > 0 && U.setFontSize) U.setFontSize(draftView, rightPx);
     } catch {}
   }
   function bumpFont(elList, storageKey, deltaPx) {
@@ -170,15 +205,21 @@
   }
   origSzDec && origSzDec.addEventListener("click", () => bumpFont([origPre], CONF.FONT_KEY_LEFT, -1.0));
   origSzInc && origSzInc.addEventListener("click", () => bumpFont([origPre], CONF.FONT_KEY_LEFT, +1.0));
-  draftSzDec && draftSzDec.addEventListener("click", () => bumpFont([editor],  CONF.FONT_KEY_RIGHT, -1.0));
-  draftSzInc && draftSzInc.addEventListener("click", () => bumpFont([editor],  CONF.FONT_KEY_RIGHT, +1.0));
+  draftSzDec && draftSzDec.addEventListener("click", () => bumpFont([visibleDraftScrollEl()], CONF.FONT_KEY_RIGHT, -1.0));
+  draftSzInc && draftSzInc.addEventListener("click", () => bumpFont([visibleDraftScrollEl()], CONF.FONT_KEY_RIGHT, +1.0));
 
   // ----- Scroll koppeln -----
+  function visibleDraftScrollEl() {
+    // Nimmt je nach Modus editor oder draftView
+    const viewVisible = draftView && draftView.style.display !== "none";
+    return viewVisible ? draftView : editor;
+  }
   function setupCoupledScroll() {
     unlinkScroll();
     const checked = !!(scrollToggle && scrollToggle.querySelector("input")?.checked);
-    if (origPre && editor && U.coupleScroll && checked) {
-      unlinkScroll = U.coupleScroll(origPre, editor, () => !!(scrollToggle && scrollToggle.querySelector("input")?.checked));
+    const rightPane = visibleDraftScrollEl();
+    if (origPre && rightPane && U.coupleScroll && checked) {
+      unlinkScroll = U.coupleScroll(origPre, rightPane, () => !!(scrollToggle && scrollToggle.querySelector("input")?.checked));
     } else {
       unlinkScroll = () => {};
     }
@@ -199,6 +240,8 @@
     U.setSaveState && U.setSaveState(saveDot, saveText, "busy");
     rawDraft = editor.value || "";
     if (saveTimer) clearTimeout(saveTimer);
+    // wenn Ansicht aktiv, gleich mitrendern
+    if (draftView && draftView.style.display !== "none") renderDraftView();
     saveTimer = setTimeout(() => {
       U.saveLocalDraft && U.saveLocalDraft(CONF.LOCAL_KEY, rawDraft);
       U.setSaveState && U.setSaveState(saveDot, saveText, "ok", "Gespeichert");
@@ -215,6 +258,7 @@
         const text = await file.text();
         rawDraft = text || ""; if (editor) editor.value = rawDraft;
         U.saveLocalDraft && U.saveLocalDraft(CONF.LOCAL_KEY, rawDraft);
+        if (draftView && draftView.style.display !== "none") renderDraftView();
         U.setSaveState && U.setSaveState(saveDot, saveText, "ok", "Entwurf geladen");
       } catch (e) { alert("Konnte Datei nicht lesen: " + e.message); }
     });
@@ -246,6 +290,7 @@
     U.clearLocalDraft && U.clearLocalDraft(CONF.LOCAL_KEY);
     rawDraft = rawOriginal || "";
     if (editor) editor.value = rawDraft;
+    if (draftView && draftView.style.display !== "none") renderDraftView();
     U.setSaveState && U.setSaveState(saveDot, saveText, "ready", "Bereit");
     closeConfirm();
   });
@@ -264,8 +309,9 @@
           : "Der Entwurf wird mit diesen Optionen gebaut und oben angezeigt.";
     }
     // Optionen an Entwurfsschalter angleichen
-    if (optTags && draftToggleTags)   optTags.checked   = !!draftToggleTags.querySelector("input")?.checked;
-    if (optColors && draftToggleColors) optColors.checked = !!draftToggleColors.querySelector("input")?.checked;
+    const f = currentDraftFilters();
+    if (optTags)   optTags.checked   = !f.hideTags;
+    if (optColors) optColors.checked = !f.hideColors;
 
     if (optBackdrop) { optBackdrop.style.display = "flex"; optBackdrop.setAttribute("aria-hidden", "false"); }
   }
