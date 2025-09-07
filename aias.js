@@ -1,8 +1,5 @@
-/* aias.js — schlanke Version mit Entwurf-Filter-Schaltern:
-   - PDF-Steuerung, Scroll-Toggle, Original-Filter
-   - Entwurf-Editor + (NEU) Entwurf-Toggle „Kürzel“/„Farben“ (wirken auf PDF-Optionen)
-   - verbesserte Statusmeldungen beim Build
-*/
+/* aias.js — Entwurf-Schalter mit sichtbarer Wirkung (Mini-Ansicht),
+   Original unverändert; PDF-Options-Sync und Statusmeldungen wie besprochen. */
 (function () {
   const CONF = {
     WORK: "Aias",
@@ -38,9 +35,11 @@
   const btnUploadDraft = $("bb-upload-draft"), btnDownloadDraft = $("bb-download-draft"), btnReset = $("bb-reset");
   const btnGenerateOrig = $("bb-generate-original"), btnGenerateDraft = $("bb-generate-draft");
 
-  // Entwurf-Filter-Schalter (UI wie links, wirken auf PDF-Optionen)
+  // Entwurf-Filter-Schalter + Mini-Ansicht
   const draftToggleTags   = $("draft-toggle-tags");
   const draftToggleColors = $("draft-toggle-colors");
+  const draftPreviewWrap  = $("draft-preview-wrap");
+  const draftPreview      = $("bb-draft-preview");
 
   // Status / Save-UI
   const saveDot = $("save-dot"), saveText = $("save-text"), draftStatus = $("draft-status");
@@ -78,25 +77,29 @@
     try { rawOriginal = U.fetchText ? await U.fetchText(CONF.TXT_ORIG_PATH) : ""; }
     catch { rawOriginal = "Konnte " + CONF.TXT_ORIG_PATH + " nicht laden. Liegt die Datei im Ordner texte/?"; }
 
+    // Original initial render & Labels
     if (origPre) {
       U.updateToggleLabel && U.updateToggleLabel(origToggleTags, true);
       U.updateToggleLabel && U.updateToggleLabel(origToggleColors, true);
-      renderOriginal(); // mit Filtern
+      renderOriginal();
     }
 
+    // Entwurf: initialer Text
     rawDraft = (U.loadLocalDraft ? U.loadLocalDraft(CONF.LOCAL_KEY) : "") || rawOriginal || "";
     if (editor) editor.value = rawDraft;
 
-    // Entwurf-Filter initial (persistiert)
-    const draftTagsOn   = loadBool(CONF.DRAFT_TOGGLE_TAGS_KEY,   true);
-    const draftColorsOn = loadBool(CONF.DRAFT_TOGGLE_COLORS_KEY, true);
+    // Entwurfsschalter (persistiert) + PDF-Options-Sync
+    const tagsOn   = loadBool(CONF.DRAFT_TOGGLE_TAGS_KEY,   true);
+    const colorsOn = loadBool(CONF.DRAFT_TOGGLE_COLORS_KEY, true);
     if (U.updateToggleLabel) {
-      U.updateToggleLabel(draftToggleTags,   draftTagsOn);
-      U.updateToggleLabel(draftToggleColors, draftColorsOn);
+      U.updateToggleLabel(draftToggleTags,   tagsOn);
+      U.updateToggleLabel(draftToggleColors, colorsOn);
     }
-    // sync in Optionen, damit Build passend läuft
-    if (optTags)   optTags.checked   = draftTagsOn;
-    if (optColors) optColors.checked = draftColorsOn;
+    if (optTags)   optTags.checked   = tagsOn;
+    if (optColors) optColors.checked = colorsOn;
+
+    // Mini-Ansicht initial füllen (zugeklappt; öffnet bei Wechsel)
+    renderDraftPreview();
 
     restoreFontSizes();
     setupCoupledScroll();
@@ -140,14 +143,32 @@
   bindToggle(origToggleTags,   () => renderOriginal());
   bindToggle(origToggleColors, () => renderOriginal());
 
-  // ----- Entwurf-Filter-Schalter (wirken auf PDF-Optionen; kein Preview) -----
+  // ----- Entwurf-Filter + Mini-Ansicht -----
+  function currentDraftFilters() {
+    const showTags   = !!(draftToggleTags && draftToggleTags.querySelector("input")?.checked);
+    const showColors = !!(draftToggleColors && draftToggleColors.querySelector("input")?.checked);
+    return { hideTags: !showTags, hideColors: !showColors };
+  }
+  function renderDraftPreview() {
+    if (!draftPreview) return;
+    const f = currentDraftFilters();
+    const text = editor ? (editor.value || "") : (rawDraft || "");
+    draftPreview.textContent = U.renderWithFilters ? U.renderWithFilters(text, f.hideTags, f.hideColors) : text;
+  }
+  function openPreviewIfClosed() {
+    if (draftPreviewWrap && !draftPreviewWrap.open) draftPreviewWrap.open = true;
+  }
   bindToggle(draftToggleTags, (isOn) => {
     saveBool(CONF.DRAFT_TOGGLE_TAGS_KEY, isOn);
     if (optTags) optTags.checked = isOn;
+    openPreviewIfClosed();
+    renderDraftPreview();
   });
   bindToggle(draftToggleColors, (isOn) => {
     saveBool(CONF.DRAFT_TOGGLE_COLORS_KEY, isOn);
     if (optColors) optColors.checked = isOn;
+    openPreviewIfClosed();
+    renderDraftPreview();
   });
 
   // ----- Font-Größen -----
@@ -157,6 +178,7 @@
       const rightPx = parseFloat(localStorage.getItem(CONF.FONT_KEY_RIGHT) || "0");
       if (origPre && leftPx  > 0 && U.setFontSize) U.setFontSize(origPre, leftPx);
       if (editor  && rightPx > 0 && U.setFontSize) U.setFontSize(editor,  rightPx);
+      if (draftPreview && rightPx > 0 && U.setFontSize) U.setFontSize(draftPreview, rightPx);
     } catch {}
   }
   function bumpFont(elList, storageKey, deltaPx) {
@@ -168,8 +190,8 @@
   }
   origSzDec && origSzDec.addEventListener("click", () => bumpFont([origPre], CONF.FONT_KEY_LEFT, -1.0));
   origSzInc && origSzInc.addEventListener("click", () => bumpFont([origPre], CONF.FONT_KEY_LEFT, +1.0));
-  draftSzDec && draftSzDec.addEventListener("click", () => bumpFont([editor],  CONF.FONT_KEY_RIGHT, -1.0));
-  draftSzInc && draftSzInc.addEventListener("click", () => bumpFont([editor],  CONF.FONT_KEY_RIGHT, +1.0));
+  draftSzDec && draftSzDec.addEventListener("click", () => bumpFont([editor, draftPreview], CONF.FONT_KEY_RIGHT, -1.0));
+  draftSzInc && draftSzInc.addEventListener("click", () => bumpFont([editor, draftPreview], CONF.FONT_KEY_RIGHT, +1.0));
 
   // ----- Scroll koppeln -----
   function setupCoupledScroll() {
@@ -197,6 +219,7 @@
     U.setSaveState && U.setSaveState(saveDot, saveText, "busy");
     rawDraft = editor.value || "";
     if (saveTimer) clearTimeout(saveTimer);
+    renderDraftPreview();
     saveTimer = setTimeout(() => {
       U.saveLocalDraft && U.saveLocalDraft(CONF.LOCAL_KEY, rawDraft);
       U.setSaveState && U.setSaveState(saveDot, saveText, "ok", "Gespeichert");
@@ -213,6 +236,7 @@
         const text = await file.text();
         rawDraft = text || ""; if (editor) editor.value = rawDraft;
         U.saveLocalDraft && U.saveLocalDraft(CONF.LOCAL_KEY, rawDraft);
+        renderDraftPreview();
         U.setSaveState && U.setSaveState(saveDot, saveText, "ok", "Entwurf geladen");
       } catch (e) { alert("Konnte Datei nicht lesen: " + e.message); }
     });
@@ -244,6 +268,7 @@
     U.clearLocalDraft && U.clearLocalDraft(CONF.LOCAL_KEY);
     rawDraft = rawOriginal || "";
     if (editor) editor.value = rawDraft;
+    renderDraftPreview();
     U.setSaveState && U.setSaveState(saveDot, saveText, "ready", "Bereit");
     closeConfirm();
   });
@@ -261,15 +286,10 @@
           ? "Hinweis: Oben wird auf „Original“ umgeschaltet. Offizielle PDFs liegen im Ordner pdf/."
           : "Der Entwurf wird mit diesen Optionen gebaut und oben angezeigt.";
     }
-    // Beim Öffnen sicherstellen, dass Optionen die Entwurf-Schalter widerspiegeln
-    if (optTags && draftToggleTags) {
-      const on = !!draftToggleTags.querySelector("input")?.checked;
-      optTags.checked = on;
-    }
-    if (optColors && draftToggleColors) {
-      const on = !!draftToggleColors.querySelector("input")?.checked;
-      optColors.checked = on;
-    }
+    // Optionen an Entwurfsschalter angleichen
+    if (optTags && draftToggleTags)   optTags.checked   = !!draftToggleTags.querySelector("input")?.checked;
+    if (optColors && draftToggleColors) optColors.checked = !!draftToggleColors.querySelector("input")?.checked;
+
     if (optBackdrop) { optBackdrop.style.display = "flex"; optBackdrop.setAttribute("aria-hidden", "false"); }
   }
   function closeOptModal() { if (!optBackdrop) return; optBackdrop.style.display = "none"; optBackdrop.setAttribute("aria-hidden", "true"); }
@@ -301,6 +321,7 @@
     };
   }
 
+  let optContext = "draft";
   const optGenerateHandler = async () => {
     const suffix = suffixFromOptions();
 
@@ -317,7 +338,6 @@
     if (!text.trim()) { alert("Kein Entwurfstext vorhanden."); return; }
 
     try {
-      // Deutliche Statusmeldung VOR dem Build
       draftStatus && (draftStatus.textContent =
         '🛠️ Entwurfs-PDF wird gebaut. Dies kann einige Sekunden dauern. ' +
         'Klicken Sie oben auf „PDF aktualisieren“, um den aktuellen Stand zu verfolgen.');
@@ -335,9 +355,7 @@
       const target = `${CONF.PDF_DRAFT_BASE}${kind}${suffix}.pdf`;
 
       let ok = true;
-      if (U.waitForPdf) {
-        ok = await U.waitForPdf(target, CONF.WAIT_ATTEMPTS, CONF.WAIT_DELAY_MS);
-      }
+      if (U.waitForPdf) ok = await U.waitForPdf(target, CONF.WAIT_ATTEMPTS, CONF.WAIT_DELAY_MS);
 
       refreshPdf(true, suffix);
 
