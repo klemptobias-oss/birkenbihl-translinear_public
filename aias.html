@@ -131,7 +131,7 @@
             </div>
           </div>
 
-          <!-- RECHTE PANE: ENTWURF (editierbar) -->
+          <!-- RECHTE PANE: ENTWURF (editierbar / oder Ansicht in derselben Fläche) -->
           <div class="pane">
             <h3>Entwurf</h3>
             <div class="pane-body">
@@ -168,9 +168,12 @@
                 </div>
               </div>
 
-              <!-- Editor -->
+              <!-- Editor / Ansicht (dieselbe Fläche, umschaltend) -->
               <textarea id="bb-editor" class="editor" placeholder="Entwurf bearbeiten…"></textarea>
-              <!-- (Keine Mini-Preview) -->
+              <pre id="bb-draft-view" class="src srcbox" style="display:none"></pre>
+              <div id="draft-view-note" class="small muted" style="display:none; margin-top:6px;">
+                Ansichtsmodus (gefiltert). Zum Bearbeiten Schalter wieder auf „An“ stellen.
+              </div>
             </div>
           </div>
         </div>
