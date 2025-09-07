@@ -60,6 +60,27 @@
   // ===== State =====
   let rawOriginal = "", rawDraft = "", optContext = "draft", unlinkScroll = () => {};
 
+  // ===== Status-Helfer (Spinner an/aus) =====
+  function setStatus(text, spinning) {
+    if (!draftStatus) return;
+    // Struktur: <span class="spinner" aria-hidden="true"></span><span class="status-text">...</span>
+    let spin = draftStatus.querySelector(".spinner");
+    let sTxt = draftStatus.querySelector(".status-text");
+    if (!spin) {
+      spin = document.createElement("span");
+      spin.className = "spinner";
+      spin.setAttribute("aria-hidden", "true");
+      draftStatus.appendChild(spin);
+    }
+    if (!sTxt) {
+      sTxt = document.createElement("span");
+      sTxt.className = "status-text";
+      draftStatus.appendChild(sTxt);
+    }
+    sTxt.textContent = text || "";
+    spin.style.display = spinning ? "inline-block" : "none";
+  }
+
   // ===== PDF-URL + Refresh =====
   function currentPdfUrl(suffix = "") {
     const kind = (pdfFett && pdfFett.checked) ? "Fett" : "Normal";
@@ -395,7 +416,7 @@
       if (srcOriginal) srcOriginal.checked = true;
       if (srcDraft)    srcDraft.checked = false;
       refreshPdf(true);
-      draftStatus && (draftStatus.innerHTML = '<span class="small">Quelle auf <b>Original</b> umgestellt.</span>');
+      setStatus('Quelle auf „Original“ umgestellt.', false);
       closeOptModal();
       return;
     }
@@ -404,9 +425,7 @@
     if (!text.trim()) { alert("Kein Entwurfstext vorhanden."); return; }
 
     try {
-      draftStatus && (draftStatus.textContent =
-        'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. ' +
-        'Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
+      setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
 
       const opts = collectOptionsPayload();
       const res = await fetch(CONF.WORKER_URL + "/draft", {
@@ -423,14 +442,12 @@
       const t0 = Date.now();
       const ok = await pollForPdf(target, CONF.WAIT_ATTEMPTS, CONF.WAIT_DELAY_MS, (i, max) => {
         const sec = Math.round((Date.now() - t0) / 1000);
-        draftStatus && (draftStatus.textContent =
-          `Pdf. wird generiert … (${sec}s, Versuch ${i}/${max}). ` +
-          `Sie können oben „Pdf aktualisieren“ klicken – ich lade automatisch, sobald es fertig ist.`);
+        setStatus(`Pdf. wird generiert … (${sec}s, Versuch ${i}/${max}). Sie können oben „Pdf aktualisieren“ klicken – ich lade automatisch, sobald es fertig ist.`, true);
       });
 
       if (ok) {
         // Verifizieren, dass es wirklich renderbar ist
-        draftStatus && (draftStatus.textContent = "Verifiziere fertiges Pdf…");
+        setStatus("Verifiziere fertiges Pdf…", true);
         let verified = await verifyPdf(target);
 
         if (!verified) {
@@ -438,8 +455,7 @@
           const t1 = Date.now();
           const ok2 = await pollForPdf(target, 6, 5000, (i, max) => {
             const sec = Math.round((Date.now() - t1) / 1000);
-            draftStatus && (draftStatus.textContent =
-              `Verifiziere Pdf … (${sec}s, Versuch ${i}/${max}).`);
+            setStatus(`Verifiziere Pdf … (${sec}s, Versuch ${i}/${max}).`, true);
           });
           if (ok2) verified = await verifyPdf(target);
         }
@@ -448,19 +464,15 @@
           refreshPdf(true, suffix);
           if (srcDraft) srcDraft.checked = true;
           if (srcOriginal) srcOriginal.checked = false;
-          draftStatus && (draftStatus.textContent = "✅ Entwurfs-PDF bereit.");
+          setStatus("✅ Entwurfs-PDF bereit.", false);
         } else {
-          draftStatus && (draftStatus.textContent =
-            'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. ' +
-            'Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
+          setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
         }
       } else {
-        draftStatus && (draftStatus.textContent =
-          'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. ' +
-          'Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
+        setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
       }
     } catch (e) {
-      draftStatus && (draftStatus.innerHTML = '<span class="err">Fehler: ' + (e && e.message ? e.message : e) + "</span>");
+      setStatus('Fehler: ' + (e && e.message ? e.message : e), false);
     } finally {
       closeOptModal();
     }
