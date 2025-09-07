@@ -361,8 +361,7 @@
 
     try {
       draftStatus && (draftStatus.textContent =
-        '🛠️ Entwurfs-PDF wird gebaut. Dies kann einige Sekunden dauern. ' +
-        'Klicken Sie oben auf „PDF aktualisieren“, um den aktuellen Stand zu verfolgen.');
+         'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
 
       const opts = collectOptionsPayload();
       const res = await fetch(CONF.WORKER_URL + "/draft", {
@@ -382,12 +381,12 @@
       refreshPdf(true, suffix);
 
       if (ok) {
-        draftStatus && (draftStatus.textContent = "✅ Entwurfs-PDF aktualisiert.");
+        draftStatus && (draftStatus.textContent = "✅ Ihre Anfrage zur PDF-Erstellung aus Ihrem Entwurf wurde gestellt.");
         if (srcDraft) srcDraft.checked = true;
         if (srcOriginal) srcOriginal.checked = false;
       } else {
         draftStatus && (draftStatus.textContent =
-          '🛠️ Entwurfs-PDF wird gebaut. Nutzen Sie „PDF aktualisieren“, um den Fortschritt zu prüfen.');
+          'Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.');
       }
     } catch (e) {
       draftStatus && (draftStatus.innerHTML = '<span class="err">Fehler: ' + (e && e.message ? e.message : e) + "</span>");
