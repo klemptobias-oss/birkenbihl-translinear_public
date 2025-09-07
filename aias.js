@@ -1,4 +1,4 @@
-/* aias.js — Entwurf-Schalter mit sichtbarem Ladezustand (Spinner unten & PDF-Overlay oben) */
+/* aias.js — robuste PDF-Umschaltung + Editor/Entwurf-Logik + Status */
 (function () {
   const CONF = {
     WORK: "Aias",
@@ -11,7 +11,7 @@
     FONT_KEY_RIGHT: "font_Aias_draft_px",
     DRAFT_TOGGLE_TAGS_KEY:   "Aias_draft_toggle_tags",
     DRAFT_TOGGLE_COLORS_KEY: "Aias_draft_toggle_colors",
-    WAIT_ATTEMPTS: 24,     // ~2 Min bei 5s
+    WAIT_ATTEMPTS: 24,
     WAIT_DELAY_MS: 5000,
   };
 
@@ -19,10 +19,12 @@
   const $ = (id) => document.getElementById(id);
 
   // ===== PDF oben =====
-  const pdfFrame = $("pdf-frame"), pdfNormal = $("pdf-normal"), pdfFett = $("pdf-fett");
-  const srcOriginal = $("src-original"), srcDraft = $("src-draft");
-  const btnRefresh = $("pdf-refresh"), btnPdfDownload = $("pdf-download"), btnPdfOpen = $("pdf-open");
-  const pdfBusy = $("pdf-busy"); // Overlay (optional)
+  const pdfFrame    = $("pdf-frame");
+  const btnRefresh  = $("pdf-refresh");
+  const btnPdfDL    = $("pdf-download");
+  const btnPdfOpen  = $("pdf-open");
+  const pdfControls = document.querySelector(".pdf-controls");
+  const pdfBusy     = $("pdf-busy"); // optionales Overlay
 
   // ===== Original (links) =====
   const origPre = $("bb-original-pre");
@@ -31,7 +33,7 @@
 
   // ===== Entwurf (rechts) =====
   const editor = $("bb-editor");
-  const draftView = $("bb-draft-view");      // falls vorhanden (gefilterte Ansicht)
+  const draftView = $("bb-draft-view");
   const draftViewNote = $("draft-view-note");
   const draftSzDec = $("draft-font-minus"), draftSzInc = $("draft-font-plus");
   const btnUploadDraft = $("bb-upload-draft"), btnDownloadDraft = $("bb-download-draft"), btnReset = $("bb-reset");
@@ -59,7 +61,7 @@
   // ===== State =====
   let rawOriginal = "", rawDraft = "", optContext = "draft", unlinkScroll = () => {};
 
-  // ===== Status- & PDF-Overlay-Helfer =====
+  // ===== Status-/Overlay-Helfer =====
   function setStatus(text, spinning) {
     if (!draftStatus) return;
     let spin = draftStatus.querySelector(".spinner");
@@ -78,21 +80,46 @@
     sTxt.textContent = text || "";
     spin.style.display = spinning ? "inline-block" : "none";
   }
-  function setPdfBusy(on) {
-    if (!pdfBusy) return;
-    pdfBusy.style.display = on ? "flex" : "none";
+  function setPdfBusy(on) { if (pdfBusy) pdfBusy.style.display = on ? "flex" : "none"; }
+
+  // ===== Robustes Auslesen der PDF-UI =====
+  function getPdfSrcKind() {
+    const src = document.querySelector('input[name="pdfsrc"]:checked');
+    const kind = document.querySelector('input[name="pdfkind"]:checked');
+    const srcVal  = src ? src.value : "original"; // "original" | "draft"
+    const kindVal = kind ? kind.value : "Normal"; // "Normal" | "Fett"
+    return { srcVal, kindVal };
   }
 
-  // ===== PDF-URL + Refresh =====
-  function currentPdfUrl(suffix = "") {
-    const kind = (pdfFett && pdfFett.checked) ? "Fett" : "Normal";
-    const useDraft = !!(srcDraft && srcDraft.checked);
+  // ===== PDF-URL bauen =====
+  function buildPdfUrl(suffix="") {
+    const { srcVal, kindVal } = getPdfSrcKind();
+    const useDraft = srcVal === "draft";
     const base = useDraft ? CONF.PDF_DRAFT_BASE : CONF.PDF_OFFICIAL_BASE;
-    return base + kind + (useDraft ? (suffix || "") : "") + ".pdf";
+    // Draft bekommt ggf. Suffix (BW/NoTags/Custom). Hier: Standard ohne Suffix.
+    return base + kindVal + (useDraft ? (suffix || "") : "") + ".pdf";
   }
-  function refreshPdf(bust = false, suffix = "") {
-    const url = currentPdfUrl(suffix);
-    if (U.setPdfViewer) U.setPdfViewer(pdfFrame, btnPdfDownload, btnPdfOpen, url, bust);
+
+  // ===== PDF wirklich neu laden (Klon-Trick) + Links setzen =====
+  function hardReloadPdf(url, bust=false) {
+    if (!pdfFrame || !btnPdfDL || !btnPdfOpen) return;
+    const finalUrl = url + (bust ? (url.includes("?") ? "&" : "?") + "t=" + Date.now() : "");
+    // Download/Open ohne Bust (sauberer Dateiname)
+    btnPdfDL.setAttribute("href", url);
+    btnPdfOpen.setAttribute("href", url);
+
+    // <object> neu aufbauen (einige Browser ignorieren data-Änderung sonst)
+    const clone = pdfFrame.cloneNode(true);
+    clone.setAttribute("data", finalUrl + "#view=FitH");
+    pdfFrame.replaceWith(clone);
+    // Referenz aktualisieren
+    const newRef = $("pdf-frame"); // gleiche ID, frisches Element
+    // nichts weiter nötig – Browser lädt das Objekt neu
+  }
+
+  function refreshPdf(bust=false, suffix="") {
+    const url = buildPdfUrl(suffix);
+    hardReloadPdf(url, bust);
   }
 
   // ===== Live-Polling (HEAD) =====
@@ -164,7 +191,9 @@
 
     restoreFontSizes();
     setupCoupledScroll();
-    refreshPdf(false);
+
+    // Initial PDF entsprechend aktueller Radios laden (auch falls HTML Default nicht passt)
+    refreshPdf(true);
   })();
 
   // ===== persistente Booleans =====
@@ -344,13 +373,18 @@
     closeConfirm();
   });
 
-  // ===== PDF-Umschaltung =====
-  ;[pdfNormal, pdfFett, srcOriginal, srcDraft].forEach((el) => el && el.addEventListener("change", () => {
-    setPdfBusy(true);
-    refreshPdf(true);
-    // kleines Timeout: Overlay kurz zeigen, dann aus
-    setTimeout(() => setPdfBusy(false), 400);
-  }));
+  // ===== PDF: delegierte Events auf dem Container (resistent gegen Duplikate) =====
+  if (pdfControls) {
+    pdfControls.addEventListener("change", (ev) => {
+      const t = ev.target;
+      if (!(t instanceof HTMLInputElement)) return;
+      if (t.name === "pdfsrc" || t.name === "pdfkind") {
+        setPdfBusy(true);
+        refreshPdf(true);
+        setTimeout(() => setPdfBusy(false), 400);
+      }
+    });
+  }
   btnRefresh && btnRefresh.addEventListener("click", () => {
     setPdfBusy(true);
     refreshPdf(true);
@@ -406,8 +440,11 @@
     const suffix = suffixFromOptions();
 
     if (optContext === "original") {
-      if (srcOriginal) srcOriginal.checked = true;
-      if (srcDraft)    srcDraft.checked = false;
+      // Nur Quelle umschalten + reload
+      const srcOrig = document.querySelector('input#src-original');
+      const srcDraft = document.querySelector('input#src-draft');
+      if (srcOrig) srcOrig.checked = true;
+      if (srcDraft) srcDraft.checked = false;
       setPdfBusy(true);
       refreshPdf(true);
       setTimeout(() => setPdfBusy(false), 400);
@@ -432,8 +469,8 @@
       const j = await res.json().catch(() => ({}));
       if (!res.ok || !j.ok) throw new Error(j.error || ("HTTP " + res.status));
 
-      const kind = (pdfFett && pdfFett.checked) ? "Fett" : "Normal";
-      const target = `${CONF.PDF_DRAFT_BASE}${kind}${suffix}.pdf`;
+      const { kindVal } = getPdfSrcKind();
+      const target = `${CONF.PDF_DRAFT_BASE}${kindVal}${suffix}.pdf`;
 
       const t0 = Date.now();
       const ok = await pollForPdf(target, CONF.WAIT_ATTEMPTS, CONF.WAIT_DELAY_MS, (i, max) => {
@@ -455,18 +492,21 @@
         }
 
         if (verified) {
+          // Quelle auf Entwurf umschalten
+          const srcOrig = document.querySelector('input#src-original');
+          const srcDr   = document.querySelector('input#src-draft');
+          if (srcDr)   srcDr.checked = true;
+          if (srcOrig) srcOrig.checked = false;
+
           refreshPdf(true, suffix);
-          if (srcDraft) srcDraft.checked = true;
-          if (srcOriginal) srcOriginal.checked = false;
           setStatus("✅ Entwurfs-PDF bereit.", false);
           setPdfBusy(false);
         } else {
           setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
-          // Overlay bleibt sichtbar, Nutzer kann „PDF aktualisieren“ klicken
+          // Overlay bleibt sichtbar, Nutzer kann manuell prüfen
         }
       } else {
         setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
-        // Overlay bleibt sichtbar – Bau läuft vermutlich noch
       }
     } catch (e) {
       setStatus('Fehler: ' + (e && e.message ? e.message : e), false);
