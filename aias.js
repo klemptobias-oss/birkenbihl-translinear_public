@@ -26,7 +26,12 @@
   const btnPdfOpen  = $("pdf-open");     // kann fehlen
   const pdfControls = document.querySelector(".pdf-controls");
   const pdfBusy     = $("pdf-busy"); // optionales Overlay
+  const pdfMeta     = $("pdf-meta");
 
+  // Persistenz-Keys für Auswahl
+  const PDF_SRC_KEY  = "Aias_pdf_src";   // "original" | "draft"
+  const PDF_KIND_KEY = "Aias_pdf_kind";  // "Normal"  | "Fett"
+  
   // ===== Original (links) =====
   const origPre = $("bb-original-pre");
   const origToggleTags = $("orig-toggle-tags"), origToggleColors = $("orig-toggle-colors");
@@ -83,6 +88,29 @@
   }
   function setPdfBusy(on) { if (pdfBusy) pdfBusy.style.display = on ? "flex" : "none"; }
 
+ // ----- PDF-Meta (Last-Modified + Größe) -----
+  function fmtSize(bytes) {
+    if (!Number.isFinite(bytes) || bytes < 0) return "–";
+    if (bytes < 1024) return bytes + " B";
+    const kb = bytes / 1024;
+    if (kb < 1024) return kb.toFixed(1) + " KB";
+    const mb = kb / 1024;
+    return mb.toFixed(2) + " MB";
+  }
+  async function updatePdfMeta(url) {
+    if (!pdfMeta) return;
+    try {
+      const r = await fetch(url + (url.includes("?") ? "&" : "?") + "m=" + Date.now(), { method: "HEAD", cache: "no-store" });
+      if (!r.ok) throw 0;
+      const lm  = r.headers.get("Last-Modified");
+      const len = parseInt(r.headers.get("Content-Length") || "0", 10);
+      const when = lm ? new Date(lm).toLocaleString() : "unbekannt";
+      pdfMeta.textContent = `Zuletzt gebaut: ${when} · Größe: ${fmtSize(len)}`;
+    } catch {
+      pdfMeta.textContent = "";
+    }
+  }
+  
   // ===== Robustes Auslesen der PDF-UI =====
   function getPdfSrcKind() {
     const src = document.querySelector('input[name="pdfsrc"]:checked');
@@ -138,7 +166,7 @@
   }
 
   // ===== <object> hart neu laden + Links setzen =====
-  function hardReloadPdf(url) {
+    function hardReloadPdf(url) {
     if (!pdfFrame) return;
     const bustUrl = url + (url.includes("?") ? "&" : "?") + "t=" + Date.now();
 
@@ -151,8 +179,9 @@
     pdfFrame.replaceWith(clone);
     pdfFrame = $("pdf-frame"); // Referenz erneuern
     console.log("[PDF] geladen:", url);
-    setStatus(`Aktuelles PDF: ${url}`, false);
-  }
+    // Meta (Last-Modified / Größe) nachladen – ohne Bust-Param
+     updatePdfMeta(url);
+   }
 
   async function refreshPdf(bust = true, suffix = "") {
     const { srcVal, kindVal } = getPdfSrcKind();
@@ -242,6 +271,20 @@
 
     restoreFontSizes();
     setupCoupledScroll();
+// Auswahl aus localStorage wiederherstellen
+    try {
+     const savedSrc  = localStorage.getItem(PDF_SRC_KEY);   // "original" | "draft"
+     const savedKind = localStorage.getItem(PDF_KIND_KEY);  // "Normal" | "Fett"
+     if (savedSrc) {
+       const el = document.querySelector(`input[name="pdfsrc"][value="${savedSrc}"]`);
+       if (el) el.checked = true;
+     }
+     if (savedKind) {
+       const el = document.querySelector(`input[name="pdfkind"][value="${savedKind}"]`);
+       if (el) el.checked = true;
+     }
+   } catch {}
+
 
     await refreshPdf(true);
   })();
@@ -429,6 +472,13 @@
       const t = ev.target;
       if (!(t instanceof HTMLInputElement)) return;
       if (t.name === "pdfsrc" || t.name === "pdfkind") {
+        // Auswahl persistieren
+        try {
+          const src  = document.querySelector('input[name="pdfsrc"]:checked')?.value;
+          const kind = document.querySelector('input[name="pdfkind"]:checked')?.value;
+          if (src)  localStorage.setItem(PDF_SRC_KEY,  src);
+          if (kind) localStorage.setItem(PDF_KIND_KEY, kind);
+        } catch {}
         setPdfBusy(true);
         await refreshPdf(true);
         setPdfBusy(false);
