@@ -105,22 +105,3 @@ details.opt-adv summary { cursor:pointer; font-weight:600; }
 
 /* Kleiner optischer Ausgleich, falls nötig */
 #orig-font-toggle span, #draft-font-toggle span { font-weight:600; opacity:0.9; }
-/* kompakte Entwurfs-Vorschau */
-.draft-preview-wrap { margin-top:8px; }
-.draft-preview-wrap summary { cursor:pointer; font-weight:600; }
-.small-preview { height:36vh; }
-
-/* Suchzeile im Original */
-.search-row {
-  display:flex; gap:8px; align-items:center;
-  margin:8px 0 10px;
-}
-.search-row input[type="text"] {
-  flex:1 1 auto;
-}
-
-/* Treffer-Markierung im Original */
-mark.find-hit { background:#ffee7a; padding:0 2px; border-radius:2px; }
-mark.find-current { outline:1px solid #cc8f00; }
-
-
