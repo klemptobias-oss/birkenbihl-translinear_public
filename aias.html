@@ -41,6 +41,7 @@
           <h2>PDF</h2>
           <div class="pane-body">
             <div class="pdf-controls">
+              <!-- Quelle: Original vs. Entwurf -->
               <span class="radio">
                 <input type="radio" name="pdfsrc" id="src-original" value="original" checked />
                 <label for="src-original">Original</label>
@@ -49,6 +50,8 @@
                 <input type="radio" name="pdfsrc" id="src-draft" value="draft" />
                 <label for="src-draft">Entwurf</label>
               </span>
+
+              <!-- Darstellung: Normal vs. Fett -->
               <span class="radio" style="margin-left:12px">
                 <input type="radio" name="pdfkind" id="pdf-normal" value="Normal" checked />
                 <label for="pdf-normal">Normal</label>
@@ -124,19 +127,6 @@
                 </div>
               </div>
 
-              <!-- SUCHE im Original -->
-              <div class="search-row">
-                <input id="orig-search" type="text" placeholder="Suche im Original (Text oder /Regex/)" />
-                <button class="btn" id="orig-find">Suchen</button>
-                <button class="btn" id="orig-prev" title="Vorheriger Treffer">◀</button>
-                <button class="btn" id="orig-next" title="Nächster Treffer">▶</button>
-                <label class="opt-check" title="Reguläre Ausdrücke verwenden">
-                  <input type="checkbox" id="orig-regex" />
-                  <span>Regex</span>
-                </label>
-                <span class="muted" id="orig-count" style="margin-left:auto">0 Treffer</span>
-              </div>
-
               <pre id="bb-original-pre" class="src srcbox">Lade Original…</pre>
             </div>
           </div>
@@ -168,12 +158,6 @@
 
               <!-- Editor -->
               <textarea id="bb-editor" class="editor" placeholder="Entwurf bearbeiten…"></textarea>
-
-              <!-- optionale Mini-Vorschau (zugeklappt) -->
-              <details id="draft-preview-wrap" class="draft-preview-wrap">
-                <summary>Vorschau anzeigen (wirkt mit den Schaltern oben)</summary>
-                <pre id="bb-draft-preview" class="src srcbox small-preview">—</pre>
-              </details>
             </div>
           </div>
         </div>
