@@ -1,4 +1,4 @@
-/* aias.js — robuste PDF-Umschaltung mit Draft-Autodetektion + Editor/Entwurf-Logik + Status */
+/* aias.js — robuste PDF-Umschaltung mit Draft-Autodetektion (HEAD→Range-GET Fallback) + Status */
 (function () {
   const CONF = {
     WORK: "Aias",
@@ -13,7 +13,7 @@
     DRAFT_TOGGLE_COLORS_KEY: "Aias_draft_toggle_colors",
     WAIT_ATTEMPTS: 24,
     WAIT_DELAY_MS: 5000,
-    LAST_DRAFT_URL_KEY: "Aias_last_draft_url",       // Merker: zuletzt funktionierender Draft-Link
+    LAST_DRAFT_URL_KEY: "Aias_last_draft_url",
   };
 
   const U = window.Utils || {};
@@ -92,12 +92,23 @@
     return { srcVal, kindVal };
   }
 
-  // ===== HEAD-Check =====
+  // ===== HEAD-Check mit Fallback auf Range-GET =====
   async function headOk(url) {
     try {
       const r = await fetch(url + (url.includes("?") ? "&" : "?") + "h=" + Date.now(), { method: "HEAD", cache: "no-store" });
-      return r.ok;
-    } catch { return false; }
+      if (r.ok) return true;
+    } catch {}
+    // Fallback: Range-GET (manche Hosts/Proxies murren bei HEAD)
+    try {
+      const g = await fetch(url, { method: "GET", headers: { Range: "bytes=0-7" }, cache: "no-store" });
+      if (g.ok || g.status === 206) {
+        const buf = await g.arrayBuffer();
+        const bytes = new Uint8Array(buf);
+        const sig = Array.from(bytes).map(b=>String.fromCharCode(b)).join("");
+        return sig.startsWith("%PDF-");
+      }
+    } catch {}
+    return false;
   }
 
   // ===== Draft-URL automatisch ermitteln (mehrere Kandidaten) =====
@@ -138,11 +149,12 @@
     clone.setAttribute("data", bustUrl + "#view=FitH");
     pdfFrame.replaceWith(clone);
     pdfFrame = $("pdf-frame"); // Referenz erneuern
+    console.log("[PDF] geladen:", url);
+    setStatus(`Aktuelles PDF: ${url}`, false);
   }
 
   async function refreshPdf(bust = true, suffix = "") {
     const { srcVal, kindVal } = getPdfSrcKind();
-    // Entwurf → versuche Kandidaten, sonst fallback auf offiziell
     if (srcVal === "draft") {
       setPdfBusy(true);
       const draftUrl = await resolveDraftUrl(kindVal, suffix);
@@ -152,13 +164,11 @@
         return;
       } else {
         setStatus("⚠️ Kein Entwurfs-PDF gefunden – zeige Original.", false);
-        // auf Original zurückschalten (UI respektieren?)
         hardReloadPdf(buildOfficialUrl(kindVal));
         setPdfBusy(false);
         return;
       }
     }
-    // Original
     hardReloadPdf(buildOfficialUrl(kindVal));
   }
 
@@ -232,7 +242,6 @@
     restoreFontSizes();
     setupCoupledScroll();
 
-    // Initial passend laden
     await refreshPdf(true);
   })();
 
@@ -431,7 +440,7 @@
     setPdfBusy(false);
   });
 
-  // ===== Optionen-Modal & Build =====
+  // ===== Optionen-Modal & Build (unverändert) =====
   function openOptModal(context) {
     optContext = context;
     if (optContextNote) {
@@ -480,7 +489,6 @@
     const suffix = suffixFromOptions();
 
     if (optContext === "original") {
-      // Nur Quelle umschalten + reload
       const srcOrig = document.querySelector('input#src-original');
       const srcDraft = document.querySelector('input#src-draft');
       if (srcOrig) srcOrig.checked = true;
@@ -510,7 +518,6 @@
       if (!res.ok || !j.ok) throw new Error(j.error || ("HTTP " + res.status));
 
       const { kindVal } = getPdfSrcKind();
-      // Kandidaten ermitteln und Polling gegen die *erste Kandidaten-URL*, die erreichbar wird
       const candidates = [
         `pdf_drafts/Aias_DRAFT_LATEST_${kindVal}${suffix}.pdf`,
         `pdf/Aias_DRAFT_LATEST_${kindVal}${suffix}.pdf`,
@@ -541,7 +548,6 @@
         }
         if (verified) {
           try { localStorage.setItem(CONF.LAST_DRAFT_URL_KEY, target); } catch {}
-          // Quelle auf Entwurf umschalten
           const srcOrig = document.querySelector('input#src-original');
           const srcDr   = document.querySelector('input#src-draft');
           if (srcDr)   srcDr.checked = true;
@@ -552,7 +558,6 @@
           setPdfBusy(false);
         } else {
           setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
-          // Overlay bleibt sichtbar, Nutzer kann manuell prüfen
         }
       } else {
         setStatus('Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu zwei Minuten in Anspruch nehmen. Klicken Sie regelmäßig auf „Pdf aktualisieren“ um den aktuellen Stand zu überprüfen.', true);
