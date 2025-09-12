@@ -1,11 +1,7 @@
 {
-  "languages": ["griechisch"],
-  "kinds": ["poesie", "prosa"],
-  "entries": [
-    {
-      "kind": "poesie",
-      "author": "Aischylos",
-      "author_display": "Aischylos",
+  "poesie": {
+    "Aischylos": {
+      "display": "Aischylos",
       "works": [
         {
           "id": "Der_gefesselte_Prometheus",
@@ -14,10 +10,8 @@
         }
       ]
     },
-    {
-      "kind": "poesie",
-      "author": "Sophokles",
-      "author_display": "Sophokles",
+    "Sophokles": {
+      "display": "Sophokles",
       "works": [
         {
           "id": "Aias",
@@ -25,11 +19,11 @@
           "meter_capable": false
         }
       ]
-    },
-    {
-      "kind": "prosa",
-      "author": "Platon",
-      "author_display": "Platon",
+    }
+  },
+  "prosa": {
+    "Platon": {
+      "display": "Platon",
       "works": [
         {
           "id": "Menon",
@@ -38,17 +32,5 @@
         }
       ]
     }
-
-    /* === So fügst du Neues hinzu ===
-    {
-      "kind": "poesie",
-      "author": "Homer",
-      "author_display": "Homer",
-      "works": [
-        {"id": "Ilias_1._Gesang", "title": "Ilias – 1. Gesang", "meter_capable": true},
-        {"id": "Odyssee_1._Gesang", "title": "Odyssee – 1. Gesang", "meter_capable": true}
-      ]
-    }
-    */
-  ]
+  }
 }
