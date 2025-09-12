@@ -1,130 +1,110 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Werkseite – Original + Birkenbihl</title>
+<head>
+  <meta charset="UTF-8">
+  <title id="work-title">Werkseite</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="work.js" defer></script>
+</head>
+<body>
+  <!-- 
+    work.html – Universelle Werkseite
+    =================================
+    Verwendung:
+    - URL-Parameter ?kind=<poesie|prosa>&author=<Autor>&work=<Werk>
+    - Beispiel: work.html?kind=poesie&author=Aischylos&work=Der_gefesselte_Prometheus
+    - Beispiel: work.html?kind=poesie&author=Sophokles&work=Aias
+    - Beispiel: work.html?kind=prosa&author=Platon&work=Menon
 
-    <!-- Gemeinsamer Stil + Werk-spezifische Ergänzungen wiederverwenden -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="work.css" />
+    Textquellen (immer im Repo vorhanden):
+    - texte/<kind>/<Autor>/<Werk>.txt                → Originaltext
+    - texte/<kind>/<Autor>/<Werk>_birkenbihl.txt     → Birkenbihl-Version
+    - Drafts werden direkt im Editor unten rechts bearbeitet und später zu PDFs.
 
+    PDFs:
+    - Original-PDFs: pdf/original_<kind>_pdf/<Autor>/<Werk>_...
+    - Draft-PDFs:    pdf_drafts/draft_<kind>_pdf/<Autor>/<Werk>_DRAFT_LATEST_...
+    (Details siehe work.js → pdfPath())
+  -->
 
-    <!--
-      ###############################################################
-      #  WIE ERWEITERE ICH DIE SEITE UM NEUE WERKE / AUTOREN?     #
-      ###############################################################
-      1) Lege deine Dateien gemäß Ordnerstruktur ab:
-         - POESIE: texte/poesie/<Autor>/<Werk>.txt
-                   texte/poesie/<Autor>/<Werk>_birkenbihl.txt
-         - PROSA:  texte/prosa/<Autor>/<Werk>.txt
-                   texte/prosa/<Autor>/<Werk>_birkenbihl.txt
+  <header>
+    <h1 id="work-title">Werkseite</h1>
+  </header>
 
-      2) PDFs werden vom Build in diese Ordner gerendert:
-         - POESIE: pdf/original_poesie_pdf/<Autor>/<BASIS>_<Strength>_<Color>_<Tags>[_Versmaß].pdf
-         - PROSA:  pdf/original_prosa_pdf/<Autor>/<BASIS>_<Strength>_<Color>_<Tags>.pdf
-         Hinweis: <BASIS> (= pdfStem) kannst du hier in JS (CONFIG) je Werk setzen.
-
-      3) Trage das Werk unten in CONFIG.WORKS ein:
-         - key: frei wählbarer Slug (nur intern)
-         - kind: "poesie" oder "prosa"
-         - author: Ordnername wie auf Platte (z. B. "Aischylos", "Platon")
-         - work:   Dateistamm wie auf Platte (z. B. "Der_gefesselte_Prometheus", "Aias", "Menon")
-         - pdfStem: Basis für PDF-Dateinamen (z. B. "PlatonMenon" bei PROSA; bei POESIE meist identisch mit work)
-         - supportsMeter: true, wenn Versmaß-Optionen angezeigt werden sollen; sonst false
-
-      4) Aufruf-URL:
-         work.html?kind=poesie&author=Aischylos&work=Der_gefesselte_Prometheus
-         work.html?kind=poesie&author=Sophokles&work=Aias
-         work.html?kind=prosa&author=Platon&work=Menon
-
-      5) Existierende Beispiele (siehe CONFIG.WORKS):
-         - Aischylos / Der_gefesselte_Prometheus (Poesie, mit Versmaß)
-         - Sophokles / Aias (Poesie, ohne Versmaß)
-         - Platon / Menon (Prosa, ohne Versmaß)
-    -->
-  </head>
-  <body>
-    <div class="wrap">
-      <div class="bar">
-        <div class="title" id="page-title">Originaltext + Birkenbihl</div>
+  <!-- PDF-Auswahl -->
+  <section id="pdf-viewer">
+    <h2>PDF-Ansicht</h2>
+    <div class="button-groups">
+      <div class="group">
+        <label><input type="radio" name="srcSel" value="original" checked> Original</label>
+        <label><input type="radio" name="srcSel" value="draft"> Entwurf</label>
       </div>
-
-      <div class="grid">
-        <!-- Links oben: Original -->
-        <div class="card">
-          <h2>Original (oben links)</h2>
-          <div class="src srcbox" id="orig-src">Lade Original…</div>
-        </div>
-
-        <!-- Rechts oben: PDF-Viewer + Schalter -->
-        <div class="card">
-          <div class="pdf-controls">
-            <!-- Reihe 1: Original vs Entwurf (PDF-Quelle) -->
-            <label class="radio"><input type="radio" name="which" value="original" checked /> <span>Original</span></label>
-            <label class="radio"><input type="radio" name="which" value="draft" /> <span>Entwurf</span></label>
-
-            <!-- Reihe 2: Stärke -->
-            <span style="width:14px;"></span>
-            <label class="radio"><input type="radio" name="strength" value="Normal" checked /> <span>Normal</span></label>
-            <label class="radio"><input type="radio" name="strength" value="GR_Fett" /> <span>Fett</span></label>
-            <label class="radio"><input type="radio" name="strength" value="DE_Fett" /> <span>DE-Fett</span></label>
-
-            <!-- Reihe 3: Farbe -->
-            <span style="width:14px;"></span>
-            <label class="radio"><input type="radio" name="color" value="Colour" checked /> <span>Colour</span></label>
-            <label class="radio"><input type="radio" name="color" value="BlackWhite" /> <span>BlackWhite</span></label>
-
-            <!-- Reihe 4: Tags -->
-            <span style="width:14px;"></span>
-            <label class="radio"><input type="radio" name="tags" value="Tag" checked /> <span>Tags</span></label>
-            <label class="radio"><input type="radio" name="tags" value="NoTags" /> <span>NoTag</span></label>
-
-            <!-- Reihe 5: Versmaß – wird dynamisch ein-/ausgeblendet -->
-            <span id="meter-row" style="display:none;">
-              <span style="width:14px;"></span>
-              <label class="radio"><input type="radio" name="meter" value="with" /> <span>Versmaß</span></label>
-              <label class="radio"><input type="radio" name="meter" value="without" checked /> <span>Ohne Versmaß</span></label>
-            </span>
-
-            <span class="muted" id="pdf-hint">PDF-Kombination wählen…</span>
-          </div>
-
-          <div class="pdf-frame">
-            <div class="pdf-busy" id="pdf-busy">
-              <div class="pdf-busy-inner">
-                <span class="spinner"></span>
-                <span>PDF wird geladen…</span>
-              </div>
-            </div>
-            <object id="pdf-view" type="application/pdf" data=""></object>
-          </div>
-        </div>
-
-        <!-- Links unten: Birkenbihl-Original -->
-        <div class="card">
-          <h2>Birkenbihl (unten links)</h2>
-          <div class="src srcbox" id="bb-src">Lade Birkenbihl…</div>
-        </div>
-
-        <!-- Rechts unten: Entwurf-Editor -->
-        <div class="card">
-          <h2>Entwurf (unten rechts)</h2>
-          <div class="pane-body">
-            <div class="split">
-              <button class="btn" id="btn-load-draft">Letzten Entwurf laden</button>
-              <button class="btn" id="btn-generate">PDF erzeugen</button>
-              <span id="draft-status">
-                <span class="spinner" id="draft-spinner"></span>
-                <span class="status-text muted">bereit</span>
-              </span>
-            </div>
-            <textarea class="editor" id="draft-editor" placeholder="Hier eigenen Entwurf bearbeiten/speichern…"></textarea>
-          </div>
-        </div>
+      <div class="group">
+        <label><input type="radio" name="strengthSel" value="NORMAL" checked> Normal</label>
+        <label><input type="radio" name="strengthSel" value="GR_FETT"> Fett</label>
+        <label><input type="radio" name="strengthSel" value="DE_FETT"> DE-Fett</label>
+      </div>
+      <div class="group">
+        <label><input type="radio" name="colorSel" value="COLOUR" checked> Colour</label>
+        <label><input type="radio" name="colorSel" value="BLACK_WHITE"> BlackWhite</label>
+      </div>
+      <div class="group">
+        <label><input type="radio" name="tagSel" value="TAGS" checked> Tags</label>
+        <label><input type="radio" name="tagSel" value="NO_TAGS"> NoTag</label>
+      </div>
+      <div class="group" id="meterRow" style="display:none">
+        <label><input type="radio" name="meterSel" value="METER_ON" checked> Versmaß</label>
+        <label><input type="radio" name="meterSel" value="METER_OFF"> Ohne Versmaß</label>
       </div>
     </div>
+    <p id="pdfStatus" class="status">PDF-Status: ...</p>
+    <iframe id="pdfFrame" src="" width="100%" height="600px"></iframe>
+  </section>
 
-    <script src="work.js"></script>
-  </body>
+  <!-- Textanzeige -->
+  <section id="text-viewer">
+    <h2>Texte</h2>
+    <div class="text-columns">
+      <!-- Original -->
+      <div class="col">
+        <h3>Original</h3>
+        <div class="toolbar">
+          <label><input type="checkbox" id="origHideTags"> Tags verstecken</label>
+          <label><input type="checkbox" id="origHideColors"> Farbkürzel verstecken</label>
+          <button id="origSizeMinus">-</button>
+          <button id="origSizePlus">+</button>
+        </div>
+        <pre id="origSrc" class="src"></pre>
+      </div>
+
+      <!-- Birkenbihl -->
+      <div class="col">
+        <h3>Birkenbihl</h3>
+        <div class="toolbar">
+          <label><input type="checkbox" id="birkHideTags"> Tags verstecken</label>
+          <label><input type="checkbox" id="birkHideColors"> Farbkürzel verstecken</label>
+          <button id="birkSizeMinus">-</button>
+          <button id="birkSizePlus">+</button>
+        </div>
+        <pre id="birkSrc" class="src"></pre>
+      </div>
+
+      <!-- Entwurf -->
+      <div class="col">
+        <h3>Entwurf</h3>
+        <div class="toolbar">
+          <label><input type="checkbox" id="draftHideTags"> Tags verstecken</label>
+          <label><input type="checkbox" id="draftHideColors"> Farbkürzel verstecken</label>
+          <button id="draftSizeMinus">-</button>
+          <button id="draftSizePlus">+</button>
+          <button id="resetDraftBtn">Entwurf zurücksetzen</button>
+        </div>
+        <textarea id="draftEditor" class="editor"></textarea>
+      </div>
+    </div>
+    <div class="sync-option">
+      <label><input type="checkbox" id="syncScroll"> Scrollen synchronisieren (Original ↔ Birkenbihl)</label>
+    </div>
+  </section>
+</body>
 </html>
