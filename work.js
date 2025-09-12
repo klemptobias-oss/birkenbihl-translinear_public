@@ -1,221 +1,393 @@
-/* ==========================================================
-   Allgemeines Werk-Script für Original + Birkenbihl + PDF
-   ----------------------------------------------------------
-   URL-Parameter:
-     ?kind=poesie|prosa&author=<Autor>&work=<Werk>
-
-   Datenquellen:
-     - Original (oben links):
-       texte/<kind>/<Autor>/<Werk>.txt
-     - Birkenbihl (unten links):
-       texte/<kind>/<Autor>/<Werk>_birkenbihl.txt
-     - PDF (oben rechts, Viewer):
-       Poesie: pdf/original_poesie_pdf/<Autor>/<pdfStem>_<Strength>_<Color>_<Tags>[ _Versmaß].pdf
-       Prosa : pdf/original_prosa_pdf/<Autor>/<pdfStem>_<Strength>_<Color>_<Tags>.pdf
-
-   pdfStem: pro Werk konfigurierbar, falls Generator andere Basis nutzt.
-   Beispiele unten in CONFIG.WORKS.
-
-   Drafts (unten rechts):
-     - Hier nur UI (Editor + Buttons). Der eigentliche PDF-Build läuft
-       wie gehabt über eure Adapter, nicht im Browser.
-
-   ========================================================== */
+// work.js — universelle Werk-Logik (Poesie & Prosa)
+// Lädt Texte/PDFs gemäß URL-Parametern ?kind=<poesie|prosa>&author=<Autor>&work=<Werk>
+// und stellt die alte Funktionalität (Tags/Farben ausblenden, Textgröße ±, Scroll-Sync, PDF-Kombis) bereit.
 
 (function () {
-  // ---------- Konfiguration (bestehende Werke als Beispiele) ----------
-  const CONFIG = {
-    // Sichtbare Labels optional; technisch maßgeblich sind author/work/kind
-    WORKS: [
-      {
-        // Poesie mit Versmaß
-        label: "Aischylos – Der gefesselte Prometheus",
-        kind: "poesie",
-        author: "Aischylos",
-        work: "Der_gefesselte_Prometheus",
-        // PDFs heißen typischerweise wie das Work (wenn ihr so generiert)
-        pdfStem: "Der_gefesselte_Prometheus",
-        supportsMeter: true
-      },
-      {
-        // Poesie ohne Versmaß
-        label: "Sophokles – Aias",
-        kind: "poesie",
-        author: "Sophokles",
-        work: "Aias",
-        pdfStem: "Aias",
-        supportsMeter: false
-      },
-      {
-        // Prosa ohne Versmaß; Prosa-PDFs nutzen oft Autor+Werk als Basis
-        label: "Platon – Menon",
-        kind: "prosa",
-        author: "Platon",
-        work: "Menon",
-        pdfStem: "PlatonMenon",
-        supportsMeter: false
-      }
-    ]
+  // ---------- Helpers ----------
+  const $ = (sel) => document.querySelector(sel);
+  const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+  function getQS() {
+    const u = new URL(location.href);
+    const kind = (u.searchParams.get("kind") || "").toLowerCase(); // poesie | prosa
+    const author = u.searchParams.get("author") || "";
+    const work = u.searchParams.get("work") || "";
+    return { kind, author, work };
+  }
+
+  function safeId(s) {
+    return s.replace(/\s+/g, "_");
+  }
+
+  // Map Radiovaluess → Dateinamens-Segmente
+  const StrengthLabel = {
+    NORMAL: "Normal",
+    GR_FETT: "GR_Fett",
+    DE_FETT: "DE_Fett",
+  };
+  const ColorLabel = {
+    COLOUR: "Colour",
+    BLACK_WHITE: "BlackWhite",
+  };
+  const TagLabel = {
+    TAGS: "Tag",
+    NO_TAGS: "NoTags",
   };
 
-  // ---------- URL-Parameter auslesen ----------
-  const params = new URLSearchParams(location.search);
-  const kind = (params.get("kind") || "").toLowerCase();      // "poesie" | "prosa"
-  const author = params.get("author") || "";
-  const work = params.get("work") || "";
+  // Ermittelt, ob für (kind, author, work) Versmaß-Schalter gezeigt werden sollen
+  // Heuristik: Poesie hat optional Versmaß; Prosa nie. Du kannst hier feiner per Autor/Werk steuern.
+  function supportsMeter(kind, author, work) {
+    if (kind !== "poesie") return false;
+    // Feinsteuerung: Aischylos Der_gefesselte_Prometheus, Homer, Hesiod, ApolloniosRhodos, ggf. weitere
+    const a = author.toLowerCase();
+    const w = work.toLowerCase();
+    if (a === "aischylos" && /prometheus|gefesselte/.test(w)) return true;
+    if (a === "homer") return true;
+    if (a === "hesiod") return true;
+    if (a === "apolloniosrhodos") return true;
+    // viele Sophokles-Stücke ohne Meter:
+    return false;
+  }
 
-  // passendes Werk-Profil ermitteln (oder Fallback aus URL bauen)
-  const profile =
-    CONFIG.WORKS.find(
-      w =>
-        w.kind.toLowerCase() === kind &&
-        w.author === author &&
-        w.work === work
-    ) ||
-    {
-      // Fallback: funktioniert, wenn Verzeichnis/Dateinamen exakt stimmen
-      label: `${author} – ${work}`.replaceAll("_", " "),
-      kind,
-      author,
-      work,
-      pdfStem:
-        kind === "prosa"
-          ? `${author}${work}` // z.B. PlatonMenon
-          : work, // z.B. Der_gefesselte_Prometheus
-      supportsMeter: kind === "poesie" // bei Poesie standardmäßig anzeigen
+  function textPath(kind, author, work, variant) {
+    // variant: "orig" => <work>.txt, "birk" => <work>_birkenbihl.txt
+    const base = `texte/${kind}/${author}/${work}`;
+    return variant === "birk" ? `${base}_birkenbihl.txt` : `${base}.txt`;
+  }
+
+  function pdfPath(kind, author, work, srcKind, strength, color, tag, meterOn) {
+    const baseDir =
+      srcKind === "original"
+        ? `pdf/original_${kind}_pdf/${author}`
+        : `pdf_drafts/draft_${kind}_pdf/${author}`;
+
+    const fileCore =
+      srcKind === "original"
+        ? `${work}_${StrengthLabel[strength]}_${ColorLabel[color]}_${TagLabel[tag]}`
+        : `${work}_DRAFT_LATEST_${StrengthLabel[strength]}_${ColorLabel[color]}_${TagLabel[tag]}`;
+
+    const meter = meterOn ? "_Versmaß" : "";
+    return `${baseDir}/${fileCore}${meter}.pdf`;
+  }
+
+  // ----------- Tag/Color-Filterung im Text (reine Anzeige → zerstört Original nicht) -----------
+  // Grammatik-Tags sind Klammer-Token wie (N) (Aor) (Akt) usw. – optional selektiv später erweiterbar.
+  const TAG_RE = /\(([A-Za-z/≈]+)\)/g;
+  // Farbkürzel: führende # / + / - (deine Praxis im Text)
+  const COLOR_PREFIX_RE = /(^|[\s\[])[#\+\-]([^\s\]\)]+)/g;
+
+  function renderWithOptions(raw, { hideTags, hideColors }) {
+    let s = raw || "";
+    if (hideTags) {
+      s = s.replace(TAG_RE, ""); // alle Klammer-Tags ausblenden
+    }
+    if (hideColors) {
+      // nur Präfix (#|+|-) entfernen, Wort erhalten
+      s = s.replace(COLOR_PREFIX_RE, (m, leading, word) => `${leading}${word}`);
+    }
+    return s;
+  }
+
+  // ----------- Größe/Scroll -----------
+  function adjustFontSize(el, delta) {
+    const cs = getComputedStyle(el);
+    const cur = parseFloat(cs.fontSize || "16");
+    const next = Math.max(10, Math.min(32, cur + delta));
+    el.style.fontSize = next + "px";
+  }
+  function syncScroll(a, b, on) {
+    if (!on) {
+      a.onscroll = null;
+      b.onscroll = null;
+      return;
+    }
+    let lock = false;
+    const link = (src, dst) => {
+      src.addEventListener("scroll", () => {
+        if (lock) return;
+        lock = true;
+        const r = src.scrollTop / (src.scrollHeight - src.clientHeight || 1);
+        dst.scrollTop = r * (dst.scrollHeight - dst.clientHeight);
+        lock = false;
+      });
+    };
+    link(a, b);
+    link(b, a);
+  }
+
+  // ----------- State -----------
+  const state = {
+    kind: "",
+    author: "",
+    work: "",
+    meterEnabled: false,
+
+    // Anzeigeoptionen für Previews/Editoren
+    origHideTags: false,
+    origHideColors: false,
+    birkHideTags: false,
+    birkHideColors: false,
+    draftHideTags: false,
+    draftHideColors: false,
+
+    // Texte
+    rawOrig: "",
+    rawBirk: "",
+    rawDraft: "",
+
+    // PDF-Auswahl
+    selectedSrc: "original", // original | draft
+    selectedStrength: "NORMAL",
+    selectedColor: "COLOUR",
+    selectedTag: "TAGS",
+    selectedMeter: "METER_OFF",
+  };
+
+  // ----------- Init ----------
+  async function init() {
+    const { kind, author, work } = getQS();
+    if (!kind || !author || !work) {
+      console.warn("URL-Parameter unvollständig. Erwartet ?kind=&author=&work=");
+      return;
+    }
+    state.kind = kind;
+    state.author = author;
+    state.work = work;
+    state.meterEnabled = supportsMeter(kind, author, work);
+
+    // UI: Versmaß-Reihe sichtbar/unsichtbar
+    const meterRow = $("#meterRow");
+    if (meterRow) meterRow.style.display = state.meterEnabled ? "" : "none";
+
+    // Titel (optional)
+    const headTitle = $("#work-title");
+    if (headTitle) {
+      headTitle.textContent = `${author} — ${work.replace(/_/g, " ")}`;
+    }
+
+    // Texte laden
+    await loadTexts(kind, author, work);
+
+    // Controls binden
+    bindControls();
+
+    // Anfangs-PDF setzen
+    updatePdf();
+
+    // Scroll-Sync initial
+    const origEl = $("#origSrc");
+    const birkEl = $("#birkSrc");
+    const syncCb = $("#syncScroll");
+    if (origEl && birkEl && syncCb) {
+      syncScroll(origEl, birkEl, syncCb.checked);
+      syncCb.addEventListener("change", () =>
+        syncScroll(origEl, birkEl, syncCb.checked)
+      );
+    }
+  }
+
+  async function loadTexts(kind, author, work) {
+    const [origUrl, birkUrl] = [
+      textPath(kind, author, work, "orig"),
+      textPath(kind, author, work, "birk"),
+    ];
+
+    const loadOne = async (url) => {
+      try {
+        const r = await fetch(url, { cache: "no-store" });
+        if (!r.ok) throw new Error(r.status + " " + r.statusText);
+        return await r.text();
+      } catch (e) {
+        console.warn("Konnte Text nicht laden:", url, e);
+        return ""; // leer anzeigen, aber UI bleibt bedienbar
+      }
     };
 
-  // ---------- Titel setzen ----------
-  const pageTitle = document.getElementById("page-title");
-  if (pageTitle) pageTitle.textContent = `Originaltext + Birkenbihl — ${profile.label}`;
+    state.rawOrig = await loadOne(origUrl);
+    state.rawBirk = await loadOne(birkUrl);
 
-  // ---------- DOM-Refs ----------
-  const origBox = document.getElementById("orig-src");
-  const bbBox = document.getElementById("bb-src");
-  const pdfObj = document.getElementById("pdf-view");
-  const pdfBusy = document.getElementById("pdf-busy");
-  const meterRow = document.getElementById("meter-row");
-  const draftEditor = document.getElementById("draft-editor");
-  const draftSpinner = document.getElementById("draft-spinner");
-  const draftStatus = document.querySelector("#draft-status .status-text");
+    // Draft initial = Birkenbihl (falls leer, dann orig)
+    state.rawDraft = state.rawBirk || state.rawOrig;
 
-  // Zeige/Verstecke Versmaß-Reihe
-  meterRow.style.display = profile.supportsMeter ? "" : "none";
-
-  // ---------- Hilfsfunktionen ----------
-  function pathText(kind, author, work, isBirkenbihl) {
-    const base = `texte/${kind}/${author}/${work}`;
-    return isBirkenbihl ? `${base}_birkenbihl.txt` : `${base}.txt`;
+    renderAllText();
   }
 
-  function pdfBaseDir(kind, author) {
-    return kind === "poesie"
-      ? `pdf/original_poesie_pdf/${author}`
-      : `pdf/original_prosa_pdf/${author}`;
-  }
-
-  function currentRadio(name) {
-    const el = document.querySelector(`input[name="${name}"]:checked`);
-    return el ? el.value : null;
-  }
-
-  function pdfName(stem, strength, color, tags, withMeter) {
-    // Beispiel: Aias_Normal_Colour_Tag[_Versmaß].pdf
-    const meterPart = withMeter ? "_Versmaß" : "";
-    return `${stem}_${strength}_${color}_${tags}${meterPart}.pdf`;
-  }
-
-  function setPDF(src) {
-    if (!pdfObj) return;
-    pdfBusy.style.display = "flex";
-    pdfObj.data = ""; // reset
-    // Preload via Image-Workaround geht bei PDF nicht sauber; wir setzen direkt.
-    pdfObj.addEventListener(
-      "load",
-      () => {
-        pdfBusy.style.display = "none";
-      },
-      { once: true }
-    );
-    // onerror greift bei <object> nicht immer; wir geben einfach aus.
-    pdfObj.data = src;
-  }
-
-  async function fetchText(url) {
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
-    return await res.text();
-  }
-
-  // ---------- Initiale Texte laden ----------
-  (async function loadTexts() {
-    try {
-      const origPath = pathText(profile.kind, profile.author, profile.work, false);
-      const bbPath = pathText(profile.kind, profile.author, profile.work, true);
-
-      origBox.textContent = "Lade Original…";
-      bbBox.textContent = "Lade Birkenbihl…";
-
-      const [orig, bb] = await Promise.all([
-        fetchText(origPath).catch(() => "(Kein Original gefunden)"),
-        fetchText(bbPath).catch(() => "(Keine Birkenbihl-Datei gefunden)")
-      ]);
-
-      origBox.textContent = orig;
-      bbBox.textContent = bb;
-    } catch (e) {
-      origBox.textContent = "(Fehler beim Laden der Texte)";
-      bbBox.textContent = "(Fehler beim Laden der Texte)";
+  function renderAllText() {
+    // Original
+    const origEl = $("#origSrc");
+    if (origEl) {
+      origEl.textContent = renderWithOptions(state.rawOrig, {
+        hideTags: state.origHideTags,
+        hideColors: state.origHideColors,
+      });
     }
-  })();
-
-  // ---------- PDF-Kombination anwenden ----------
-  function updatePDFFromControls() {
-    const which = currentRadio("which") || "original"; // "original" | "draft"
-    const strength = currentRadio("strength") || "Normal";
-    const color = currentRadio("color") || "Colour";
-    const tags = currentRadio("tags") || "Tag";
-    const meterVal = currentRadio("meter") || "without";
-    const withMeter = profile.supportsMeter && meterVal === "with";
-
-    // Drafts hätten später eigenen Speicherort; hier nutzen wir weiterhin "original"
-    const baseDir = pdfBaseDir(profile.kind, profile.author);
-    const fileName = pdfName(profile.pdfStem, strength, color, tags, withMeter);
-    const full = `${baseDir}/${fileName}`;
-
-    setPDF(full);
-    const hint = document.getElementById("pdf-hint");
-    if (hint) hint.textContent = `Quelle: ${full}`;
+    // Birkenbihl
+    const birkEl = $("#birkSrc");
+    if (birkEl) {
+      birkEl.textContent = renderWithOptions(state.rawBirk, {
+        hideTags: state.birkHideTags,
+        hideColors: state.birkHideColors,
+      });
+    }
+    // Draft
+    const draftTa = $("#draftEditor");
+    if (draftTa) {
+      // textarea zeigt IMMER Rohtext (Bearbeitung)
+      draftTa.value = state.rawDraft || "";
+      // separate Preview? Wenn ja, hier rendern.
+    }
   }
 
-  // Initial setzen
-  updatePDFFromControls();
+  function bindControls() {
+    // --- Original-Schalter
+    const origTags = $("#origHideTags");
+    if (origTags)
+      origTags.addEventListener("change", () => {
+        state.origHideTags = !!origTags.checked;
+        renderAllText();
+      });
+    const origColors = $("#origHideColors");
+    if (origColors)
+      origColors.addEventListener("change", () => {
+        state.origHideColors = !!origColors.checked;
+        renderAllText();
+      });
+    const oMinus = $("#origSizeMinus");
+    const oPlus = $("#origSizePlus");
+    if (oMinus)
+      oMinus.addEventListener("click", () => adjustFontSize($("#origSrc"), -1));
+    if (oPlus)
+      oPlus.addEventListener("click", () => adjustFontSize($("#origSrc"), +1));
 
-  // ---------- Listener auf alle Radios ----------
-  document.querySelectorAll('input[type="radio"]').forEach((el) => {
-    el.addEventListener("change", updatePDFFromControls);
-  });
+    // --- Birkenbihl-Schalter
+    const birkTags = $("#birkHideTags");
+    if (birkTags)
+      birkTags.addEventListener("change", () => {
+        state.birkHideTags = !!birkTags.checked;
+        renderAllText();
+      });
+    const birkColors = $("#birkHideColors");
+    if (birkColors)
+      birkColors.addEventListener("change", () => {
+        state.birkHideColors = !!birkColors.checked;
+        renderAllText();
+      });
+    const bMinus = $("#birkSizeMinus");
+    const bPlus = $("#birkSizePlus");
+    if (bMinus)
+      bMinus.addEventListener("click", () => adjustFontSize($("#birkSrc"), -1));
+    if (bPlus)
+      bPlus.addEventListener("click", () => adjustFontSize($("#birkSrc"), +1));
 
-  // ---------- Draft-Bedienelemente (UI-Stub wie gehabt) ----------
-  document.getElementById("btn-load-draft")?.addEventListener("click", () => {
-    draftSpinner.style.display = "inline-block";
-    draftStatus.textContent = "lade letzten Entwurf…";
-    // Hier könnt ihr ggf. AJAX an euren Server hängen. Wir stubben:
-    setTimeout(() => {
-      draftSpinner.style.display = "none";
-      draftStatus.textContent = "bereit";
-      // Keine Änderung am Editor in diesem Stub.
-    }, 600);
-  });
+    // --- Draft-Schalter
+    const dTags = $("#draftHideTags");
+    if (dTags)
+      dTags.addEventListener("change", () => {
+        state.draftHideTags = !!dTags.checked;
+        // Draft-Preview wäre hier; Editor bleibt roh
+      });
+    const dColors = $("#draftHideColors");
+    if (dColors)
+      dColors.addEventListener("change", () => {
+        state.draftHideColors = !!dColors.checked;
+      });
 
-  document.getElementById("btn-generate")?.addEventListener("click", () => {
-    draftSpinner.style.display = "inline-block";
-    draftStatus.textContent = "PDF wird erzeugt…";
-    // Hier würde man euren Adapter (serverseitig) triggern.
-    setTimeout(() => {
-      draftSpinner.style.display = "none";
-      draftStatus.textContent = "fertig (siehe Viewer oben rechts)";
-      // Optional: Nach Build könntet ihr updatePDFFromControls() erneut aufrufen.
-    }, 1200);
-  });
+    const draftTa = $("#draftEditor");
+    if (draftTa) {
+      draftTa.addEventListener("input", () => {
+        state.rawDraft = draftTa.value;
+        // lokale Speicherung (Session) möglich:
+        // sessionStorage.setItem(draftKey(), state.rawDraft);
+      });
+    }
+
+    const dMinus = $("#draftSizeMinus");
+    const dPlus = $("#draftSizePlus");
+    if (dMinus)
+      dMinus.addEventListener("click", () =>
+        adjustFontSize($("#draftEditor"), -1)
+      );
+    if (dPlus)
+      dPlus.addEventListener("click", () =>
+        adjustFontSize($("#draftEditor"), +1)
+      );
+
+    // Reset Draft (Warnmodal optional)
+    const resetBtn = $("#resetDraftBtn");
+    if (resetBtn) {
+      resetBtn.addEventListener("click", () => {
+        if (
+          confirm(
+            "Entwurf zurücksetzen? Ungespeicherte Änderungen gehen verloren."
+          )
+        ) {
+          state.rawDraft = state.rawBirk || state.rawOrig || "";
+          renderAllText();
+        }
+      });
+    }
+
+    // --- PDF-Radiogruppen (Quelle / Stärke / Farbe / Tags / Versmaß)
+    bindRadioGroup("srcSel", (v) => {
+      state.selectedSrc = v; // 'original' | 'draft'
+      updatePdf();
+    });
+    bindRadioGroup("strengthSel", (v) => {
+      state.selectedStrength = v; // NORMAL | GR_FETT | DE_FETT
+      updatePdf();
+    });
+    bindRadioGroup("colorSel", (v) => {
+      state.selectedColor = v; // COLOUR | BLACK_WHITE
+      updatePdf();
+    });
+    bindRadioGroup("tagSel", (v) => {
+      state.selectedTag = v; // TAGS | NO_TAGS
+      updatePdf();
+    });
+    bindRadioGroup("meterSel", (v) => {
+      state.selectedMeter = v; // METER_ON | METER_OFF
+      updatePdf();
+    });
+  }
+
+  function bindRadioGroup(name, onChange) {
+    $$(`input[name="${name}"]`).forEach((input) => {
+      input.addEventListener("change", () => {
+        if (input.checked) onChange(input.value);
+      });
+    });
+  }
+
+  function updatePdf() {
+    const frame = $("#pdfFrame");
+    if (!frame) return;
+    const meterOn =
+      state.meterEnabled && state.selectedMeter === "METER_ON" ? true : false;
+
+    const url = pdfPath(
+      state.kind,
+      state.author,
+      state.work,
+      state.selectedSrc,
+      state.selectedStrength,
+      state.selectedColor,
+      state.selectedTag,
+      meterOn
+    );
+    frame.src = url;
+
+    const status = $("#pdfStatus");
+    if (status) {
+      status.textContent = `Quelle: ${
+        state.selectedSrc === "original" ? "Original" : "Entwurf"
+      } · ${StrengthLabel[state.selectedStrength]} · ${
+        ColorLabel[state.selectedColor]
+      } · ${TagLabel[state.selectedTag]}${
+        meterOn ? " · Versmaß" : ""
+      }`;
+    }
+  }
+
+  // Run
+  document.addEventListener("DOMContentLoaded", init);
 })();
