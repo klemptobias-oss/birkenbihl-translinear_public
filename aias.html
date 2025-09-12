@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-genre="poesie" data-author="Sophokles" data-work="Aias">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,15 +7,39 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style_aias.css" />
     <style>
-      /* Kleine Zusatzstile für die Tag-Optionen */
-      .opt-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px 14px; }
-      .opt-check { display:inline-flex; align-items:center; gap:8px; margin:2px 0; }
-      .opt-hint { color: var(--muted); font-size: 12px; }
-      .opt-section h4 { margin: 8px 0 6px; }
-      .opt-toolbar { display:flex; gap:8px; margin:6px 0 10px; flex-wrap:wrap; }
-      .opt-chip { padding:2px 6px; border:1px solid var(--edge); border-radius:8px; font-size:12px; }
-      .muted-note.small { font-size:12px; }
-      .list-note { margin-top:4px; }
+      /* Zusatzstile für Tag-Optionen (kurz gehalten) */
+      .opt-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 8px 14px;
+      }
+      .opt-check {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 2px 0;
+      }
+      .opt-section h4 {
+        margin: 8px 0 6px;
+      }
+      .opt-toolbar {
+        display: flex;
+        gap: 8px;
+        margin: 6px 0 10px;
+        flex-wrap: wrap;
+      }
+      .opt-chip {
+        padding: 2px 6px;
+        border: 1px solid var(--edge);
+        border-radius: 8px;
+        font-size: 12px;
+      }
+      .muted-note.small {
+        font-size: 12px;
+      }
+      .list-note {
+        margin-top: 4px;
+      }
     </style>
   </head>
   <body>
@@ -28,8 +52,9 @@
 
       <!-- Hinweis -->
       <div class="notice">
-        Links: <b>texte/Aias.txt</b> · Unten: <b>Original (links)</b> & <b>Entwurf (rechts)</b> ·
-        Rechts oben: eingebettetes PDF (Quelle: <b>Original</b>/<b>Entwurf</b>, Darstellung: <b>Normal</b>/<b>Fett</b>)
+        Links: <b>Original .txt</b> · Unten: <b>Original (links)</b> &
+        <b>Entwurf (rechts)</b> · Rechts oben: eingebettetes PDF (Quelle:
+        <b>Original</b>/<b>Entwurf</b>, Darstellung: <b>Normal</b>/<b>Fett</b>)
       </div>
 
       <!-- Oben: Grid (links Original, rechts PDF-Viewer) -->
@@ -39,10 +64,15 @@
           <h2>Original – Rohtext</h2>
           <div class="pane-body">
             <div class="split">
-              <a class="btn" href="texte/Aias.txt" download>Herunterladen (Original.txt)</a>
+              <!-- Platzhalter – aias.js setzt korrekten Pfad (texte/poesie/Sophokles/Aias.txt) -->
+              <a class="btn" id="dl-original-txt" href="#" download
+                >Herunterladen (Original.txt)</a
+              >
             </div>
-            <object data="texte/Aias.txt" type="text/plain">
-              <pre class="src">Konnte texte/Aias.txt nicht laden. Liegt die Datei im Ordner texte/?</pre>
+            <object id="orig-txt-frame" data="#" type="text/plain">
+              <pre class="src">
+Konnte Original nicht laden. Liegt die Datei unter texte/poesie/&lt;Autor&gt;/&lt;Werk&gt;.txt?</pre
+              >
             </object>
           </div>
         </section>
@@ -54,17 +84,34 @@
             <div class="pdf-controls">
               <!-- Quelle: Original vs. Entwurf -->
               <span class="radio">
-                <input type="radio" name="pdfsrc" id="src-original" value="original" checked />
+                <input
+                  type="radio"
+                  name="pdfsrc"
+                  id="src-original"
+                  value="original"
+                  checked
+                />
                 <label for="src-original">Original</label>
               </span>
               <span class="radio">
-                <input type="radio" name="pdfsrc" id="src-draft" value="draft" />
+                <input
+                  type="radio"
+                  name="pdfsrc"
+                  id="src-draft"
+                  value="draft"
+                />
                 <label for="src-draft">Entwurf</label>
               </span>
 
               <!-- Darstellung: Normal vs. Fett -->
-              <span class="radio" style="margin-left:12px">
-                <input type="radio" name="pdfkind" id="pdf-normal" value="Normal" checked />
+              <span class="radio" style="margin-left: 12px">
+                <input
+                  type="radio"
+                  name="pdfkind"
+                  id="pdf-normal"
+                  value="Normal"
+                  checked
+                />
                 <label for="pdf-normal">Normal</label>
               </span>
               <span class="radio">
@@ -72,17 +119,35 @@
                 <label for="pdf-fett">Fett</label>
               </span>
 
-              <button class="btn" id="pdf-refresh" type="button" title="PDF neu laden">PDF aktualisieren</button>
-              <a class="btn" href="pdf/TragödieAias_Normal.pdf" id="pdf-download" download>Aktuelles PDF herunterladen</a>
-              <a class="btn" href="pdf/TragödieAias_Normal.pdf" id="pdf-open" target="_blank">Im neuen Tab öffnen</a>
+              <button
+                class="btn"
+                id="pdf-refresh"
+                type="button"
+                title="PDF neu laden"
+              >
+                PDF aktualisieren
+              </button>
+              <!-- Platzhalter – aias.js setzt korrekte Hrefs (pdf/original_poesie_pdf/… bzw. pdf_drafts/draft_poesie_pdf/…) -->
+              <a class="btn" href="#" id="pdf-download" download
+                >Aktuelles PDF herunterladen</a
+              >
+              <a class="btn" href="#" id="pdf-open" target="_blank"
+                >Im neuen Tab öffnen</a
+              >
 
-              <span class="muted">Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu 60 Sekunden in Anspruch nehmen. Klicken Sie regelmäßig auf „PDF aktualisieren“ um den aktuellen Stand zu überprüfen.</span>
-              <span class="muted" id="pdf-hint">Pdf. wird aus dem Entwurf erstellt. Dies kann bis zu 60 Sekunden in Anspruch nehmen. Klicken Sie regelmäßig auf „PDF aktualisieren“ um den aktuellen Stand zu überprüfen.</span>
+              <span class="muted" id="pdf-hint"
+                >PDF wird aus dem Entwurf erstellt. Bitte ggf. „PDF
+                aktualisieren“ klicken.</span
+              >
               <span class="small" id="pdf-meta"></span>
             </div>
 
-            <object id="pdf-frame" class="pdf-frame" type="application/pdf"
-              data="pdf/TragödieAias_Normal.pdf#view=FitH">
+            <object
+              id="pdf-frame"
+              class="pdf-frame"
+              type="application/pdf"
+              data="#"
+            >
               <p>PDF kann nicht eingebettet werden.</p>
             </object>
             <div id="pdf-busy" class="pdf-busy" aria-hidden="true">
@@ -96,12 +161,26 @@
       </div>
 
       <!-- Unten: Birkenbihl-TXT ZWEISPALTIG -->
-      <section class="card card-wide" style="margin-top:16px">
+      <section class="card card-wide" style="margin-top: 16px">
         <h2>Birkenbihl – Text</h2>
 
-        <div class="small" style="display:flex; align-items:center; gap:10px; margin:6px 0 10px;">
-          <span class="save-dot" id="save-dot"></span><span id="save-text" class="small">Bereit</span>
-          <span id="draft-status" class="small" style="margin-left:auto" aria-live="polite"></span>
+        <div
+          class="small"
+          style="
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 6px 0 10px;
+          "
+        >
+          <span class="save-dot" id="save-dot"></span
+          ><span id="save-text" class="small">Bereit</span>
+          <span
+            id="draft-status"
+            class="small"
+            style="margin-left: auto"
+            aria-live="polite"
+          ></span>
         </div>
 
         <!-- ===== bb-grid (zwei Spalten) ===== -->
@@ -112,24 +191,49 @@
             <div class="pane-body">
               <!-- Zeile: PDF generieren | Scroll koppeln -->
               <div class="split">
-                <button class="btn" id="bb-generate-original" type="button" title="PDF-Quelle oben auf Original stellen und neu laden">PDF generieren</button>
-                <label class="toggle" id="scroll-link" style="margin-left:auto;">
+                <button
+                  class="btn"
+                  id="bb-generate-original"
+                  type="button"
+                  title="PDF-Quelle oben auf Original stellen und neu laden"
+                >
+                  PDF generieren
+                </button>
+                <label
+                  class="toggle"
+                  id="scroll-link"
+                  style="margin-left: auto"
+                >
                   <input type="checkbox" checked />
                   <span>Scroll koppeln:</span>
                   <span class="state on" data-on="An" data-off="Aus">An</span>
                 </label>
               </div>
 
-              <!-- Zeile: Doppelschalter ± | Original-Filter rechtsbündig -->
-              <div class="split" style="margin-top:-6px">
+              <!-- Zeile: Doppelschalter ± | Original-Filter -->
+              <div class="split" style="margin-top: -6px">
                 <div>
                   <label class="duo-toggle" id="orig-font-toggle">
-                    <button type="button" class="duo minus" id="orig-font-minus" aria-label="Schrift kleiner">−</button>
+                    <button
+                      type="button"
+                      class="duo minus"
+                      id="orig-font-minus"
+                      aria-label="Schrift kleiner"
+                    >
+                      −
+                    </button>
                     <span>Textgröße</span>
-                    <button type="button" class="duo plus"  id="orig-font-plus"  aria-label="Schrift größer">+</button>
+                    <button
+                      type="button"
+                      class="duo plus"
+                      id="orig-font-plus"
+                      aria-label="Schrift größer"
+                    >
+                      +
+                    </button>
                   </label>
                 </div>
-                <div class="toggle-row" style="margin-left:auto;">
+                <div class="toggle-row" style="margin-left: auto">
                   <label class="toggle" id="orig-toggle-tags">
                     <input type="checkbox" checked />
                     <span>Grammatikkürzel in Übersicht:</span>
@@ -147,29 +251,76 @@
             </div>
           </div>
 
-          <!-- RECHTE PANE: ENTWURF (editierbar / oder Ansicht in derselben Fläche) -->
+          <!-- RECHTE PANE: ENTWURF (editierbar / oder Ansicht) -->
           <div class="pane">
             <h3>Entwurf</h3>
             <div class="pane-body">
               <!-- Zeile: Download/Upload/Reset/Build -->
               <div class="split">
-                <button class="btn" id="bb-download-draft" type="button" title="Aktuellen Entwurf herunterladen (mit eindeutigem Code)">Herunterladen (Entwurf.txt)</button>
-                <button class="btn" id="bb-upload-draft"  type="button" title="Entwurf.txt aus Datei laden">Entwurf hochladen</button>
-                <input id="bb-upload-file" type="file" accept=".txt,text/plain" style="display:none" />
-                <button class="btn" id="bb-reset" type="button" title="Nur den lokalen Entwurf löschen">Entwurf zurücksetzen</button>
-                <button class="btn" id="bb-generate-draft" type="button" title="Entwurf als PDF bauen (Cloud-Worker)">PDF generieren</button>
+                <button
+                  class="btn"
+                  id="bb-download-draft"
+                  type="button"
+                  title="Aktuellen Entwurf herunterladen (mit eindeutigem Code)"
+                >
+                  Herunterladen (Entwurf.txt)
+                </button>
+                <button
+                  class="btn"
+                  id="bb-upload-draft"
+                  type="button"
+                  title="Entwurf.txt aus Datei laden"
+                >
+                  Entwurf hochladen
+                </button>
+                <input
+                  id="bb-upload-file"
+                  type="file"
+                  accept=".txt,text/plain"
+                  style="display: none"
+                />
+                <button
+                  class="btn"
+                  id="bb-reset"
+                  type="button"
+                  title="Nur den lokalen Entwurf löschen"
+                >
+                  Entwurf zurücksetzen
+                </button>
+                <button
+                  class="btn"
+                  id="bb-generate-draft"
+                  type="button"
+                  title="Entwurf als PDF bauen"
+                >
+                  PDF generieren
+                </button>
               </div>
 
-              <!-- Zeile: Doppelschalter ± + Entwurf-Filter rechtsbündig -->
-              <div class="split" style="margin-top:-6px">
+              <!-- Zeile: Doppelschalter ± + Entwurf-Filter -->
+              <div class="split" style="margin-top: -6px">
                 <div>
                   <label class="duo-toggle" id="draft-font-toggle">
-                    <button type="button" class="duo minus" id="draft-font-minus" aria-label="Schrift kleiner">−</button>
+                    <button
+                      type="button"
+                      class="duo minus"
+                      id="draft-font-minus"
+                      aria-label="Schrift kleiner"
+                    >
+                      −
+                    </button>
                     <span>Textgröße</span>
-                    <button type="button" class="duo plus"  id="draft-font-plus"  aria-label="Schrift größer">+</button>
+                    <button
+                      type="button"
+                      class="duo plus"
+                      id="draft-font-plus"
+                      aria-label="Schrift größer"
+                    >
+                      +
+                    </button>
                   </label>
                 </div>
-                <div class="toggle-row" style="margin-left:auto;">
+                <div class="toggle-row" style="margin-left: auto">
                   <label class="toggle" id="draft-toggle-tags">
                     <input type="checkbox" checked />
                     <span>Grammatikkürzel in Übersicht:</span>
@@ -183,63 +334,113 @@
                 </div>
               </div>
 
-              <!-- Editor / Ansicht (dieselbe Fläche, umschaltend) -->
-              <textarea id="bb-editor" class="editor" placeholder="Entwurf bearbeiten…"></textarea>
-              <pre id="bb-draft-view" class="src srcbox" style="display:none"></pre>
-              <div id="draft-view-note" class="small muted" style="display:none; margin-top:6px;">
-                Ansichtsmodus (gefiltert). Zum Bearbeiten Schalter wieder auf „An“ stellen.
+              <!-- Editor / Ansicht -->
+              <textarea
+                id="bb-editor"
+                class="editor"
+                placeholder="Entwurf bearbeiten…"
+              ></textarea>
+              <pre
+                id="bb-draft-view"
+                class="src srcbox"
+                style="display: none"
+              ></pre>
+              <div
+                id="draft-view-note"
+                class="small muted"
+                style="display: none; margin-top: 6px"
+              >
+                Ansichtsmodus (gefiltert). Zum Bearbeiten Schalter wieder auf
+                „An“ stellen.
               </div>
             </div>
           </div>
         </div>
-        <!-- ===== /bb-grid ===== -->
 
-        <div class="notice" style="margin-top:10px">
-          Der Entwurfsweg lässt das Original in <code>texte/</code> unberührt. Für „offizielle“ PDFs ersetzt du später
-          die Originaldatei in <code>texte/</code> und lässt den Haupt-Workflow laufen.
+        <div class="notice" style="margin-top: 10px">
+          Der Entwurfsweg lässt das Original in <code>texte/</code> unberührt.
+          Für „offizielle“ PDFs ersetzt du später die Originaldatei in
+          <code>texte/</code> und lässt den Haupt-Workflow laufen.
         </div>
       </section>
 
       <!-- Quellen -->
-      <div class="notice" style="margin-top:12px">
-        Quelle Originaltexte: Perseus Digital Library · Eigene Aufbereitung: Birkenbihl/Translinear
+      <div class="notice" style="margin-top: 12px">
+        Quelle Originaltexte: Perseus Digital Library · Eigene Aufbereitung:
+        Birkenbihl/Translinear
       </div>
     </div>
 
-    <!-- Bestätigungs-Modal: Entwurf zurücksetzen -->
-    <div id="confirm-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="confirm-title" aria-hidden="true">
+    <!-- Modal: Entwurf löschen -->
+    <div
+      id="confirm-backdrop"
+      class="modal-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="confirm-title"
+      aria-hidden="true"
+    >
       <div class="modal" role="document">
         <div class="modal-header">
-          <div id="confirm-title" class="modal-title">Entwurf zurücksetzen?</div>
-          <button class="modal-close" id="confirm-close" aria-label="Schließen">×</button>
+          <div id="confirm-title" class="modal-title">
+            Entwurf zurücksetzen?
+          </div>
+          <button class="modal-close" id="confirm-close" aria-label="Schließen">
+            ×
+          </button>
         </div>
         <div class="modal-body">
-          <p>Dieser Schritt wird Ihren Entwurf <b>unwiderruflich löschen</b> und ihn auf den <b>Originalzustand</b> zurücksetzen.</p>
-          <p>Falls Sie Ihren Entwurf speichern möchten, klicken Sie auf <b>„Herunterladen (Entwurf.txt)“</b>. Sie können ihn dann auch offline bearbeiten und später neu hochladen.</p>
-          <p><b>Wollen Sie mit der Löschung Ihres Entwurfs fortfahren?</b></p>
+          <p>
+            Dieser Schritt wird Ihren Entwurf <b>unwiderruflich löschen</b> und
+            ihn auf den <b>Originalzustand</b> zurücksetzen.
+          </p>
+          <p>
+            Falls Sie Ihren Entwurf speichern möchten, klicken Sie auf
+            <b>„Herunterladen (Entwurf.txt)“</b>.
+          </p>
+          <p><b>Wollen Sie fortfahren?</b></p>
         </div>
         <div class="modal-actions">
           <button class="btn secondary" id="confirm-cancel">Abbrechen</button>
-          <button class="btn danger" id="confirm-ok">Entwurf zurücksetzen</button>
+          <button class="btn danger" id="confirm-ok">
+            Entwurf zurücksetzen
+          </button>
         </div>
       </div>
     </div>
 
     <!-- Modal: PDF-Optionen -->
-    <div id="opt-backdrop" class="opt-backdrop" role="dialog" aria-modal="true" aria-labelledby="opt-title" aria-hidden="true">
+    <div
+      id="opt-backdrop"
+      class="opt-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="opt-title"
+      aria-hidden="true"
+    >
       <div class="opt-modal" role="document">
         <div class="opt-header">
           <div id="opt-title" class="opt-title">PDF-Optionen</div>
-          <button class="modal-close" id="opt-close" aria-label="Schließen">×</button>
+          <button class="modal-close" id="opt-close" aria-label="Schließen">
+            ×
+          </button>
         </div>
         <div class="opt-body">
-
           <!-- Grundschalter -->
           <div class="opt-section">
             <div class="opt-row">
-              <label class="opt-check"><input type="checkbox" id="opt-colors" checked /> <span>Farben zeigen</span></label>
-              <label class="opt-check"><input type="checkbox" id="opt-tags" checked /> <span>Grammatik-Kürzel zeigen</span></label>
-              <div class="muted-note small">Tipp: Für Schwarz-Weiß die Farben abwählen; für „reine Birkenbihl“ die Kürzel abwählen.</div>
+              <label class="opt-check"
+                ><input type="checkbox" id="opt-colors" checked />
+                <span>Farben zeigen</span></label
+              >
+              <label class="opt-check"
+                ><input type="checkbox" id="opt-tags" checked />
+                <span>Grammatik-Kürzel zeigen</span></label
+              >
+              <div class="muted-note small">
+                Für Schwarz-Weiß Farben abwählen; für „reine Birkenbihl“ Kürzel
+                abwählen.
+              </div>
             </div>
           </div>
 
@@ -247,21 +448,111 @@
           <details class="opt-adv" id="opt-adv" open>
             <summary>Benutzerdefiniert</summary>
 
-            <!-- Farblogik (PoS-basiert; ohne Verwechslung „V“) -->
-            <div class="opt-section" style="margin-top:10px">
+            <!-- Farblogik (PoS-basiert; KEINE Verwechslung „V“/Verb) -->
+            <div class="opt-section" style="margin-top: 10px">
               <div class="opt-row">
                 <div><b>Farbregeln (PoS-basiert)</b></div>
                 <div class="opt-grid">
-                  <label class="opt-check"><input type="checkbox" class="opt-color-pos" data-pos="Aj" checked /> <span><span class="opt-chip">Aj (Adjektiv/Partizip)</span> einfärben</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-color-pos" data-pos="Pt" checked /> <span><span class="opt-chip">Pt (Partikel)</span> einfärben</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-color-pos" data-pos="Prp" checked /> <span><span class="opt-chip">Prp (Präposition)</span> einfärben</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-color-pos" data-pos="Av" checked /> <span><span class="opt-chip">Av (Adverb)</span> einfärben</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-color-pos" data-pos="Ko" checked /> <span><span class="opt-chip">Ko (Konjunktion)</span> einfärben</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-color-pos" data-pos="Art" checked /> <span><span class="opt-chip">Art (Artikel)</span> einfärben</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-color-pos" data-pos="Pr" checked /> <span><span class="opt-chip">Pr (Pronomen)</span> einfärben</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-color-pos" data-pos="ij" checked /> <span><span class="opt-chip">ij (Interjektion)</span> einfärben</span></label>
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-color-pos"
+                      data-pos="Aj"
+                      checked
+                    />
+                    <span
+                      ><span class="opt-chip">Aj (Adjektiv/Partizip)</span>
+                      einfärben</span
+                    ></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-color-pos"
+                      data-pos="Pt"
+                      checked
+                    />
+                    <span
+                      ><span class="opt-chip">Pt (Partikel)</span>
+                      einfärben</span
+                    ></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-color-pos"
+                      data-pos="Prp"
+                      checked
+                    />
+                    <span
+                      ><span class="opt-chip">Prp (Präposition)</span>
+                      einfärben</span
+                    ></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-color-pos"
+                      data-pos="Av"
+                      checked
+                    />
+                    <span
+                      ><span class="opt-chip">Av (Adverb)</span> einfärben</span
+                    ></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-color-pos"
+                      data-pos="Ko"
+                      checked
+                    />
+                    <span
+                      ><span class="opt-chip">Ko (Konjunktion)</span>
+                      einfärben</span
+                    ></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-color-pos"
+                      data-pos="Art"
+                      checked
+                    />
+                    <span
+                      ><span class="opt-chip">Art (Artikel)</span>
+                      einfärben</span
+                    ></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-color-pos"
+                      data-pos="Pr"
+                      checked
+                    />
+                    <span
+                      ><span class="opt-chip">Pr (Pronomen)</span>
+                      einfärben</span
+                    ></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-color-pos"
+                      data-pos="ij"
+                      checked
+                    />
+                    <span
+                      ><span class="opt-chip">ij (Interjektion)</span>
+                      einfärben</span
+                    ></label
+                  >
                 </div>
-                <div class="opt-hint list-note">Hinweis: Die Kasus-Kürzel N/D/G/A/V sind <i>keine</i> Wortarten und werden nicht als Farb-PoS benutzt.</div>
+                <div class="opt-hint list-note">
+                  Hinweis: N/D/G/A/V sind <i>Kasus</i> (SUP-Tags), keine
+                  PoS-Farben.
+                </div>
               </div>
             </div>
 
@@ -270,31 +561,160 @@
               <div class="opt-row">
                 <h4>Ein-/Ausblenden von <b>SUP-Tags</b> (über dem Wort)</h4>
                 <div class="opt-toolbar">
-                  <button class="btn secondary" type="button" id="sup-all">Alle an</button>
-                  <button class="btn secondary" type="button" id="sup-none">Alle aus</button>
+                  <button class="btn secondary" type="button" id="sup-all">
+                    Alle an
+                  </button>
+                  <button class="btn secondary" type="button" id="sup-none">
+                    Alle aus
+                  </button>
                 </div>
                 <div class="opt-grid">
-                  <!-- Kasus -->
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="N"  checked /> <span>(N) Nominativ</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="D"  checked /> <span>(D) Dativ</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="G"  checked /> <span>(G) Genitiv</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="A"  checked /> <span>(A) Akkusativ</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="V"  checked /> <span>(V) Vokativ</span></label>
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="N"
+                      checked
+                    />
+                    <span>(N) Nominativ</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="D"
+                      checked
+                    />
+                    <span>(D) Dativ</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="G"
+                      checked
+                    />
+                    <span>(G) Genitiv</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="A"
+                      checked
+                    />
+                    <span>(A) Akkusativ</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="V"
+                      checked
+                    />
+                    <span>(V) Vokativ</span></label
+                  >
 
-                  <!-- Wortarten u. Spezial -->
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="Aj" checked /> <span>(Aj) Adjektiv/Partizip</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="Pt" checked /> <span>(Pt) Partikel</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="Prp" checked /> <span>(Prp) Präposition</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="Av" checked /> <span>(Av) Adverb</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="Ko" checked /> <span>(Ko) Konjunktion</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="Art" checked /> <span>(Art) Artikel</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="Pr" checked /> <span>(Pr) Pronomen</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="ij" checked /> <span>(ij) Interjektion</span></label>
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="Aj"
+                      checked
+                    />
+                    <span>(Aj) Adjektiv/Partizip</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="Pt"
+                      checked
+                    />
+                    <span>(Pt) Partikel</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="Prp"
+                      checked
+                    />
+                    <span>(Prp) Präposition</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="Av"
+                      checked
+                    />
+                    <span>(Av) Adverb</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="Ko"
+                      checked
+                    />
+                    <span>(Ko) Konjunktion</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="Art"
+                      checked
+                    />
+                    <span>(Art) Artikel</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="Pr"
+                      checked
+                    />
+                    <span>(Pr) Pronomen</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="ij"
+                      checked
+                    />
+                    <span>(ij) Interjektion</span></label
+                  >
 
-                  <!-- Komp/Sup, Näherung -->
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="Kmp" checked /> <span>(Kmp) Komparativ</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="Sup" checked /> <span>(Sup) Superlativ</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sup" data-tag="≈"  checked /> <span>(≈) „1-Wort-Übersetzung schwierig“</span></label>
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="Kmp"
+                      checked
+                    />
+                    <span>(Kmp) Komparativ</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="Sup"
+                      checked
+                    />
+                    <span>(Sup) Superlativ</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sup"
+                      data-tag="≈"
+                      checked
+                    />
+                    <span>(≈) „1-Wort-Übersetzung schwierig“</span></label
+                  >
                 </div>
               </div>
             </div>
@@ -304,39 +724,161 @@
               <div class="opt-row">
                 <h4>Ein-/Ausblenden von <b>SUB-Tags</b> (unter dem Wort)</h4>
                 <div class="opt-toolbar">
-                  <button class="btn secondary" type="button" id="sub-all">Alle an</button>
-                  <button class="btn secondary" type="button" id="sub-none">Alle aus</button>
+                  <button class="btn secondary" type="button" id="sub-all">
+                    Alle an
+                  </button>
+                  <button class="btn secondary" type="button" id="sub-none">
+                    Alle aus
+                  </button>
                 </div>
                 <div class="opt-grid">
-                  <!-- Tempora -->
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Pre" checked /> <span>(Pre) Präsens</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Imp" checked /> <span>(Imp) Imperfekt</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Aor" checked /> <span>(Aor) Aorist</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="AorS" checked /> <span>(AorS) starker Aorist</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Per" checked /> <span>(Per) Perfekt</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Plq" checked /> <span>(Plq) Plusquamperfekt</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Fu"  checked /> <span>(Fu) Futur</span></label>
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Pre"
+                      checked
+                    />
+                    <span>(Pre) Präsens</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Imp"
+                      checked
+                    />
+                    <span>(Imp) Imperfekt</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Aor"
+                      checked
+                    />
+                    <span>(Aor) Aorist</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="AorS"
+                      checked
+                    />
+                    <span>(AorS) starker Aorist</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Per"
+                      checked
+                    />
+                    <span>(Per) Perfekt</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Plq"
+                      checked
+                    />
+                    <span>(Plq) Plusquamperfekt</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Fu"
+                      checked
+                    />
+                    <span>(Fu) Futur</span></label
+                  >
 
-                  <!-- Modus / Formen -->
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Inf" checked /> <span>(Inf) Infinitiv</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Imv" checked /> <span>(Imv) Imperativ</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Kon" checked /> <span>(Kon) Konjunktiv</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Op"  checked /> <span>(Op) Optativ</span></label>
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Inf"
+                      checked
+                    />
+                    <span>(Inf) Infinitiv</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Imv"
+                      checked
+                    />
+                    <span>(Imv) Imperativ</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Kon"
+                      checked
+                    />
+                    <span>(Kon) Konjunktiv</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Op"
+                      checked
+                    />
+                    <span>(Op) Optativ</span></label
+                  >
 
-                  <!-- Genus Verbi -->
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Akt" checked /> <span>(Akt) Aktiv</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Med" checked /> <span>(Med) Medium</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Pas" checked /> <span>(Pas) Passiv</span></label>
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="M/P" checked /> <span>(M/P) Medium/Passiv unklar</span></label>
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Akt"
+                      checked
+                    />
+                    <span>(Akt) Aktiv</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Med"
+                      checked
+                    />
+                    <span>(Med) Medium</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Pas"
+                      checked
+                    />
+                    <span>(Pas) Passiv</span></label
+                  >
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="M/P"
+                      checked
+                    />
+                    <span>(M/P) Medium oder Passiv</span></label
+                  >
 
-                  <!-- Sonstiges -->
-                  <label class="opt-check"><input type="checkbox" class="opt-sub" data-tag="Pr"  checked /> <span>(Pr) <i>nicht</i> Präposition – hier: Pronomen in SUB ist selten; ggf. unbenutzt</span></label>
-                </div>
-
-                <div class="opt-hint list-note">
-                  <bErläuterungen:</b> Bei Verben: Zeitform (Pre/Imp/Aor/AorS/Per/Plq/Fu) + Genus Verbi (Akt/Med/Pas/M/P) + ggf. Modus (Kon/Op/Inf/Imv).
-                  Indikativ wird <i>nicht</i> eigens markiert. Partizipien tragen **mehrere** Infos (Zeitform → Genus Verbi → Kasus). Beispiele:
-                  <code>+ἀντιόωσαν(Pre)(Akt)(A)</code>, <code>+ἰών(Pre)(Akt)(N)</code>, <code>-λύσωμαι(Aor)(Med)(Kon)</code>, <code>-λύεται(Pre)(M/P)</code>.
+                  <label class="opt-check"
+                    ><input
+                      type="checkbox"
+                      class="opt-sub"
+                      data-tag="Pr"
+                      checked
+                    />
+                    <span>(Pr) Pronomen</span></label
+                  >
                 </div>
               </div>
             </div>
@@ -354,42 +896,48 @@
 
     <script src="utils.js"></script>
     <script>
-      // Klein hinzugefügte Logik: Auswahl bündeln → JSON in hidden Feld
+      // Kleine Hilfslogik: Auswahl bündeln → JSON in hidden Feld.
       (function () {
         function gatherSelected(selector, attr) {
           return Array.from(document.querySelectorAll(selector))
-            .filter(el => el.checked)
-            .map(el => el.getAttribute(attr));
+            .filter((el) => el.checked)
+            .map((el) => el.getAttribute(attr));
         }
         function setAll(selector, on) {
-          document.querySelectorAll(selector).forEach(el => { el.checked = !!on; });
+          document.querySelectorAll(selector).forEach((el) => {
+            el.checked = !!on;
+          });
         }
-        // Toolbar-Buttons
-        const supAll  = document.getElementById('sup-all');
-        const supNone = document.getElementById('sup-none');
-        const subAll  = document.getElementById('sub-all');
-        const subNone = document.getElementById('sub-none');
-        supAll  && supAll.addEventListener('click', () => setAll('.opt-sup', true));
-        supNone && supNone.addEventListener('click', () => setAll('.opt-sup', false));
-        subAll  && subAll.addEventListener('click', () => setAll('.opt-sub', true));
-        subNone && subNone.addEventListener('click', () => setAll('.opt-sub', false));
+        // Buttons "alle an/aus"
+        const supAll = document.getElementById("sup-all");
+        const supNone = document.getElementById("sup-none");
+        const subAll = document.getElementById("sub-all");
+        const subNone = document.getElementById("sub-none");
+        supAll &&
+          supAll.addEventListener("click", () => setAll(".opt-sup", true));
+        supNone &&
+          supNone.addEventListener("click", () => setAll(".opt-sup", false));
+        subAll &&
+          subAll.addEventListener("click", () => setAll(".opt-sub", true));
+        subNone &&
+          subNone.addEventListener("click", () => setAll(".opt-sub", false));
 
-        // Hauptbutton: PDF generieren
-        const btn = document.getElementById('opt-generate');
-        btn && btn.addEventListener('click', () => {
-          const payload = {
-            show_colors: document.getElementById('opt-colors')?.checked ?? true,
-            show_tags:   document.getElementById('opt-tags')?.checked ?? true,
-            // PoS-Farbsteuerung (Aj/Pt/Prp/Av/Ko/Art/Pr/ij)
-            color_pos:   gatherSelected('.opt-color-pos', 'data-pos'),
-            // Ausgewählte Grammar-Tags
-            sup_keep:    gatherSelected('.opt-sup', 'data-tag'),   // SUP_TAGS
-            sub_keep:    gatherSelected('.opt-sub', 'data-tag'),   // SUB_TAGS
-          };
-          document.getElementById('selected-tags-json').value = JSON.stringify(payload);
-          // aias.js darf jetzt die Hidden-Value lesen und an den Build-Prozess übergeben
-          // (z.B. via Fetch-POST / Querystring / lokaler Worker-Aufruf).
-        });
+        // Hauptbutton: PDF generieren → Payload ablegen
+        const btn = document.getElementById("opt-generate");
+        btn &&
+          btn.addEventListener("click", () => {
+            const payload = {
+              show_colors:
+                document.getElementById("opt-colors")?.checked ?? true,
+              show_tags: document.getElementById("opt-tags")?.checked ?? true,
+              color_pos: gatherSelected(".opt-color-pos", "data-pos"),
+              sup_keep: gatherSelected(".opt-sup", "data-tag"),
+              sub_keep: gatherSelected(".opt-sub", "data-tag"),
+            };
+            document.getElementById("selected-tags-json").value =
+              JSON.stringify(payload);
+            // aias.js liest das Feld und triggert den Builder (poesie).
+          });
       })();
     </script>
     <script src="aias.js"></script>

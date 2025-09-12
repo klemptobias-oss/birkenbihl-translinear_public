@@ -4,7 +4,7 @@
 
 from pathlib import Path
 from shared.fonts_and_styles import register_dejavu, make_gr_de_styles
-register_dejavu(Path(__file__).resolve().parent.parent / "shared" / "fonts")
+register_dejavu(Path(__file__).resolve().parent / "shared" / "fonts")
 
 # Import für Preprocessing
 try:
@@ -214,11 +214,69 @@ INTER_PAIR_GAP_MM = CONT_PAIR_GAP_MM
 
 # ----------------------- Tags & Regex -----------------------
 # (Altlasten bleiben bewusst erhalten; spätere Bereinigung geplant)
-SUP_TAGS = {'N','D','G','A','V','m','f','n','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','ij','Sup'}
-SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','FuP','Inf','Imv','Akt','Med','Pas','Kon','Op','S','P','Pr','AorS','M/P'}
+SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','ij','Sup'}
+SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
 
 RE_TAG       = re.compile(r'\(([A-Za-z/≈]+)\)')
 RE_TAG_NAKED = re.compile(r'\([A-Za-z/≈]+\)')
+
+# ----------------------- Tag-Placement Overrides (hoch/tief/aus) -----------------------
+# Globale Laufzeit-Overrides, z. B. {"Pt":"off","Aor":"sub","≈":"sup"}
+_PLACEMENT_OVERRIDES: dict[str, str] = {}
+
+def set_tag_placement_overrides(overrides: dict | None):
+    """Von außen (unified_api) einstellbar. Werte: "sup" | "sub" | "off"."""
+    global _PLACEMENT_OVERRIDES
+    _PLACEMENT_OVERRIDES = {}
+    if overrides:
+        # nur gültige Werte übernehmen, Keys als plain Strings
+        for k, v in overrides.items():
+            v2 = (v or '').strip().lower()
+            if v2 in ('sup', 'sub', 'off'):
+                _PLACEMENT_OVERRIDES[str(k)] = v2
+
+def _partition_tags_for_display(tags: list[str], *, is_greek_row: bool) -> tuple[list[str], list[str], list[str]]:
+    """
+    Teilt tags in (sups, subs, rest) gemäß:
+      - Standard (SUP_TAGS/SUB_TAGS)
+      - DE-Zeile: nur '≈' im Sup sichtbar (wie gehabt)
+      - Overrides: _PLACEMENT_OVERRIDES hat Vorrang: 'sup'/'sub'/'off'
+    """
+    if not tags:
+        return [], [], []
+
+    if not is_greek_row:
+        # DE-Zeile: nur '≈' bleibt (wie bisher)
+        return (['≈'] if '≈' in tags else []), [], []
+
+    # GR-Zeile: Standard-Verteilung
+    sups = [t for t in tags if t in SUP_TAGS]
+    subs = [t for t in tags if t in SUB_TAGS]
+    rest = [t for t in tags if (t not in SUP_TAGS and t not in SUB_TAGS)]
+
+    # Overrides anwenden
+    if _PLACEMENT_OVERRIDES:
+        keep_sup, keep_sub, keep_off = [], [], []
+        for t in tags:
+            mode = _PLACEMENT_OVERRIDES.get(t)
+            if mode == 'sup':
+                keep_sup.append(t)
+            elif mode == 'sub':
+                keep_sub.append(t)
+            elif mode == 'off':
+                keep_off.append(t)
+
+        if keep_sup or keep_sub or keep_off:
+            vis = [t for t in tags if t not in keep_off]
+            # Rest, der weder explizit sup noch sub ist, bleibt nach Default-Verteilung sichtbar
+            default_sup = [t for t in sups if t in vis and t not in keep_sup and t not in keep_sub]
+            default_sub = [t for t in subs if t in vis and t not in keep_sup and t not in keep_sub]
+            default_rest = [t for t in rest if t in vis and t not in keep_sup and t not in keep_sub]
+            sups = keep_sup + default_sup
+            subs = keep_sub + default_sub
+            rest = default_rest
+
+    return sups, subs, rest
 
 RE_INLINE_MARK = re.compile(r'^\(\s*(?:[0-9]+[a-z]*|[a-z])\s*\)$', re.IGNORECASE)
 
@@ -323,14 +381,11 @@ def format_token_markup(token:str, *, reverse_mode:bool=False, is_greek_row:bool
     color = None
     color_pos = -1
     if '#' in raw:
-        color_pos = raw.find('#')
-        color = '#FF0000'
+        color_pos = raw.find('#'); color = '#FF0000'
     elif '+' in raw:
-        color_pos = raw.find('+')
-        color = '#1E90FF'
+        color_pos = raw.find('+'); color = '#1E90FF'
     elif '-' in raw:
-        color_pos = raw.find('-')
-        color = '#228B22'
+        color_pos = raw.find('-'); color = '#228B22'
 
     # Entferne den Farbcode aus dem raw-Text
     if color_pos >= 0:
@@ -356,13 +411,11 @@ def format_token_markup(token:str, *, reverse_mode:bool=False, is_greek_row:bool
         core += '*'
     if reverse_mode and is_greek_row: is_bold = True
 
-    # Tag-Retusche: DE behält nur ≈ im Sup
-    if not is_greek_row:
-        sups, subs, rest = (['≈'] if '≈' in tags else []), [], []
+    # NEU: Partition via Overrides
+    if is_greek_row:
+        sups, subs, rest = _partition_tags_for_display(tags, is_greek_row=True)
     else:
-        sups = [t for t in tags if t in SUP_TAGS]
-        subs = [t for t in tags if t in SUB_TAGS]
-        rest = [t for t in tags if (t not in SUP_TAGS and t not in SUB_TAGS)]
+        sups, subs, rest = _partition_tags_for_display(tags, is_greek_row=False)
 
     core = xml_escape(core.replace('-', '|'))
     parts = []
@@ -403,15 +456,19 @@ def visible_measure_token(token:str, *, font:str, size:float, is_greek_row:bool=
         core += '*'
 
     w = _measure_string(core.replace('-', '|'), font, size)
-    if tags:
-        kept = tags if is_greek_row else (['≈'] if '≈' in tags else [])
-        if kept:
-            tag_width = TAG_WIDTH_FACTOR * _measure_string(''.join(kept), font, size)
-            # Obergrenze: Begrenze die Tag-Breite um übermäßige Ausdehnung zu verhindern
-            max_tag_width = min(tag_width, TAG_MAX_WIDTH_PT)
-            w += max_tag_width
-    return w + SAFE_EPS_PT + 2*CELL_PAD_LR_PT
 
+    # NEU: gleiche Partition wie in der Darstellung
+    sups, subs, rest = _partition_tags_for_display(tags, is_greek_row=is_greek_row)
+
+    # Breite der sichtbaren Tags addieren (beschränkt)
+    kept = sups + subs + rest
+    if kept:
+        tag_width = TAG_WIDTH_FACTOR * _measure_string(''.join(kept), font, size)
+        max_tag_width = min(tag_width, TAG_MAX_WIDTH_PT)
+        w += max_tag_width
+
+    return w + SAFE_EPS_PT + 2*CELL_PAD_LR_PT
+    
 # ----------------------- Parsing (Prosa + Dialog) -----------------------
 def detect_eq_heading(line:str):
     s = (line or '').strip()
@@ -693,7 +750,11 @@ def build_tables_for_stream(gr_tokens, de_tokens, *,
 # ----------------------- PDF-Erstellung -----------------------
 def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                gr_size:float=9.0, de_size:float=8.0,
-               color_mode:str="COLOR", tag_mode:str="TAGS"):
+               color_mode:str="COLOR", tag_mode:str="TAGS",
+               placement_overrides: dict | None = None):
+
+    # Tag-Placement-Overrides (hoch/tief/aus) anwenden
+    set_tag_placement_overrides(placement_overrides)
 
     # Setze kritische Konstanten basierend auf tag_mode
     global INTRA_PAIR_GAP_MM, CONT_PAIR_GAP_MM, SPEAKER_GAP_MM

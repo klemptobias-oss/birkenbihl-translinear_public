@@ -54,7 +54,8 @@ def _process_one_input(infile: str) -> None:
         out_name = _add_suffix_before_ext(name_no_meter, "_Versmaß") if meter_on else name_no_meter
         versmass_mode = "KEEP_MARKERS" if meter_on else "REMOVE_MARKERS"
         opts = PdfRenderOptions(strength=strength, color_mode=color, tag_mode=tag, versmass_mode=versmass_mode)
-        create_pdf_unified("drama", Poesie, blocks, out_name, opts)
+        # Render über unified_api – Poesie = "poesie"
+        create_pdf_unified("poesie", Poesie, blocks, out_name, opts, payload=None)
         print(f"✓ PDF erstellt → {out_name}")
 
 def main():
@@ -72,4 +73,3 @@ if __name__ == "__main__":
     main()
 # === LOWER TRANSITION =====================================================================
 ######## ENDE: poesie_pdf.py ########
-

@@ -84,6 +84,46 @@ CFG = {
 SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','ij','Sup'}
 SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
 
+# ======= Dynamische Hoch/Tief-Overrides aus dem Preprocess/UI =======
+# Mapping: Tag -> "sup" | "sub" | "off"
+# - "sup": Tag wird als <sup> gesetzt (egal ob bisher SUP oder SUB)
+# - "sub": Tag wird als <sub> gesetzt
+# - "off": Tag wird unterdrückt (gar nicht angezeigt/mitsummiert)
+PLACEMENT_OVERRIDES: dict[str, str] = {}
+
+def _classify_tag_with_overrides(tag: str) -> str:
+    """
+    Rückgabe: "sup" | "sub" | "rest" | "off"
+    - Overrides haben Vorrang.
+    - Ohne Override: Klassifikation nach SUP_TAGS/SUB_TAGS; sonst "rest".
+    """
+    v = PLACEMENT_OVERRIDES.get(tag)
+    if v in ("sup", "sub", "off"):
+        return v
+
+    # zusammengesetzte Tags "A/B" zulassen
+    parts = [p for p in tag.split('/') if p]
+    if parts and all(p in SUP_TAGS for p in parts):
+        return "sup"
+    if parts and all(p in SUB_TAGS for p in parts):
+        return "sub"
+    return "rest"
+
+def _partition_tags_for_display(tags: list[str]) -> tuple[list[str], list[str], list[str]]:
+    """Teile in (sups, subs, rest) auf und wende Overrides an; 'off' wird entfernt."""
+    sups, subs, rest = [], [], []
+    for t in tags:
+        cls = _classify_tag_with_overrides(t)
+        if cls == "sup":
+            sups.append(t)
+        elif cls == "sub":
+            subs.append(t)
+        elif cls == "rest":
+            rest.append(t)
+        # "off" -> ignorieren
+    return sups, subs, rest
+
+
 RE_INLINE_MARK  = re.compile(r'^\(\s*(?:[0-9]+[a-z]*|[a-z])\s*\)$', re.IGNORECASE)
 RE_TAG       = re.compile(r'\(([A-Za-z/≈]+)\)')
 RE_TAG_NAKED = re.compile(r'\([A-Za-z/≈]+\)')
@@ -581,11 +621,18 @@ def visible_measure_token(token:str, *, font:str, size:float, cfg, is_greek_row:
     tags_all = RE_TAG_FINDALL.findall(t)
     tags = _filter_tags(tags_all)
 
+    # Nur Tags mitzählen, die tatsächlich angezeigt werden (Overrides beachten)
+    if is_greek_row and tags:
+        sups, subs, rest = _partition_tags_for_display(tags)
+        shown = sups + subs + rest  # "off" ist bereits entfernt
+    else:
+        shown = []
+
     w = _sw(core_meas, font, size)
     if is_greek_row and had_leading_bar:
         w += _sw('|', font, size)
-    if is_greek_row and tags:
-        w += cfg['TAG_WIDTH_FACTOR'] * _sw(''.join(tags), font, size)
+    if is_greek_row and shown:
+        w += cfg['TAG_WIDTH_FACTOR'] * _sw(''.join(shown), font, size)
     if is_greek_row and end_bar_count:
         w += end_bar_count * _sw('|', font, size)
 
@@ -632,11 +679,12 @@ def format_token_markup(token:str, *, is_greek_row:bool, gr_bold:bool, remove_ba
         core_html = xml_escape(core_no_end)
 
     if is_greek_row:
-        sups = [t for t in tags if t in SUP_TAGS]
-        subs = [t for t in tags if t in SUB_TAGS]
-        rest = [t for t in tags if (t not in SUP_TAGS and t not in SUB_TAGS)]
+        # Zuerst Standard-Filter (HIDE_TAGS), dann per Overrides partitionieren
+        sups, subs, rest = _partition_tags_for_display(tags)
     else:
+        # DE-Zeile: nur ≈ als Sup (wie gehabt)
         sups, subs, rest = (['≈'] if '≈' in tags else []), [], []
+
 
     parts = []
     if is_bold: parts.append('<b>')
@@ -1006,14 +1054,26 @@ def build_tables_for_pair(gr_tokens, de_tokens, *,
     return tables
 
 # ========= PDF-Erzeugung =========
-def create_pdf(blocks, pdf_name:str, *, gr_bold:bool, de_bold:bool = False, versmass_display: bool = False, tag_mode: str = "TAGS"):
+def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
+               de_bold:bool = False,
+               versmass_display: bool = False,
+               tag_mode: str = "TAGS",
+               placement_overrides: dict[str, str] | None = None):
+
     # NoTags-Schalter global setzen, wenn Dateiname auf _NoTags.pdf endet
     global CURRENT_IS_NOTAGS
     CURRENT_IS_NOTAGS = pdf_name.lower().endswith("_notags.pdf")
-    left_margin = 10*MM; right_margin = 10*MM
-    doc = SimpleDocTemplate(pdf_name, pagesize=A4,
-                            leftMargin=left_margin, rightMargin=right_margin,
-                            topMargin=14*MM,  bottomMargin=14*MM)
+    # Optionale Hoch/Tief/Off-Overrides aus Preprocess/UI aktivieren
+    global PLACEMENT_OVERRIDES
+    PLACEMENT_OVERRIDES = dict(placement_overrides or {})
+    left_margin = 10*MM
+    right_margin = 10*MM
+    doc = SimpleDocTemplate(
+        pdf_name, pagesize=A4,
+        leftMargin=left_margin, rightMargin=right_margin,
+        topMargin=14*MM, bottomMargin=14*MM
+    )
+
     frame_w = A4[0] - left_margin - right_margin
 
     base = getSampleStyleSheet()
