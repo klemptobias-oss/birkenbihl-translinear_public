@@ -1,0 +1,75 @@
+######## START: poesie_pdf.py ########
+# === UPPER TRANSITION (Poesie-Orchestrator mit optionalen Datei-Argumenten) ===============
+"""
+poesie_pdf.py
+Orchestrator für Poesie (Tragödie/Komödie/Epos).
+
+- Standard: verarbeitet ALLE .txt im Projekt-Root.
+- Wenn Dateipfade als Argumente übergeben werden (sys.argv[1:]),
+  verarbeitet er GENAU diese Dateien (egal wo sie liegen).
+
+Erzeugt 24 Varianten pro Input:
+Strength (NORMAL|GR_FETT|DE_FETT) × Color (COLOR|BLACK_WHITE)
+× Tags (TAGS|NO_TAGS) × Versmaß (AUS|AN).
+
+Versmaß-Darstellung wird über Suffix "_Versmaß" im Dateinamen aktiviert.
+"""
+
+from __future__ import annotations
+from pathlib import Path
+import os, re, itertools, sys
+
+import Poesie_Code as Poesie
+from shared.unified_api import create_pdf_unified, PdfRenderOptions
+from shared.naming import base_from_input_path, output_pdf_name, PdfRenderOptions as NameOpts
+
+def _discover_inputs_default() -> list[str]:
+    root = Path(".")
+    return sorted(str(p) for p in root.glob("*.txt"))
+
+def _args_or_default() -> list[str]:
+    # Wenn Argumente übergeben wurden, nimm GENAU diese Dateien
+    if len(sys.argv) > 1:
+        return [str(Path(a)) for a in sys.argv[1:]]
+    return _discover_inputs_default()
+
+def _add_suffix_before_ext(filename: str, suffix: str) -> str:
+    p = Path(filename)
+    return p.with_name(p.stem + suffix + p.suffix).name
+
+def _process_one_input(infile: str) -> None:
+    if not os.path.isfile(infile):
+        print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
+
+    base = base_from_input_path(Path(infile))
+    blocks = Poesie.process_input_file(infile)
+
+    strengths = ("NORMAL", "GR_FETT", "DE_FETT")
+    colors    = ("COLOR", "BLACK_WHITE")
+    tags      = ("TAGS", "NO_TAGS")
+    meters    = (False, True)  # Versmaß AUS/AN
+
+    for strength, color, tag, meter_on in itertools.product(strengths, colors, tags, meters):
+        name_no_meter = output_pdf_name(base, NameOpts(strength=strength, color_mode=color, tag_mode=tag))
+        out_name = _add_suffix_before_ext(name_no_meter, "_Versmaß") if meter_on else name_no_meter
+        versmass_mode = "KEEP_MARKERS" if meter_on else "REMOVE_MARKERS"
+        opts = PdfRenderOptions(strength=strength, color_mode=color, tag_mode=tag, versmass_mode=versmass_mode)
+        create_pdf_unified("drama", Poesie, blocks, out_name, opts)
+        print(f"✓ PDF erstellt → {out_name}")
+
+def main():
+    inputs = _args_or_default()
+    if not inputs:
+        print("⚠ Keine .txt gefunden."); return
+    for infile in inputs:
+        print(f"→ Verarbeite: {infile}")
+        try:
+            _process_one_input(infile)
+        except Exception as e:
+            print(f"✗ Fehler bei {infile}: {e}")
+
+if __name__ == "__main__":
+    main()
+# === LOWER TRANSITION =====================================================================
+######## ENDE: poesie_pdf.py ########
+

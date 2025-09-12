@@ -1,0 +1,12 @@
+# Artefakte
+pdf/
+pdf_drafts/
+*.pdf
+
+# Python-Cache
+__pycache__/
+*.pyc
+
+# Editor/OS
+.DS_Store
+
