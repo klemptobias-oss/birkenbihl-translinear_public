@@ -32,7 +32,7 @@ import { loadCatalog, getWorkMeta } from './catalog.js';
 // Einstellungen
 // ======================================================================
 
-const WORKER_BASE = 'https://<DEIN-WORKER-NAME>.workers.dev';  // <<< HIER deine Worker-URL eintragen
+const WORKER_BASE = https://birkenbihl-draft-01.klemp-tobias.workers.dev/;  // <<< HIER deine Worker-URL eintragen
 
 // ======================================================================
 // DOM-Utils
