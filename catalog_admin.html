@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Katalog-Editor</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    h1 { font-size: 20px; }
+    .author, .work { border: 1px solid #ccc; padding: 8px; margin: 6px 0; border-radius: 6px; }
+    .author { background: #f9f9f9; }
+    .work { background: #fff; margin-left: 20px; }
+    label { display: block; margin-top: 4px; }
+    input[type="text"] { width: 100%; padding: 4px; }
+    button { margin: 4px 0; }
+    .save { background: #007acc; color: white; padding: 6px 12px; border: none; cursor: pointer; border-radius: 4px; }
+    .save:hover { background: #005fa3; }
+  </style>
+</head>
+<body>
+  <h1>Katalog-Editor</h1>
+  <p>Hier kannst du <code>catalog.json</code> bearbeiten, ohne JSON direkt zu schreiben.<br>
+  Füge Autoren oder Werke hinzu, passe Titel an und exportiere dann die neue Datei.</p>
+
+  <div id="catalog"></div>
+
+  <button id="addAuthor">+ Autor hinzufügen</button>
+  <br><br>
+  <button class="save" id="downloadBtn">📥 Exportieren (catalog.json)</button>
+
+  <script type="module">
+    import { loadCatalog } from './catalog.js';
+
+    let catalogData = null;
+
+    function render() {
+      const root = document.getElementById('catalog');
+      root.innerHTML = '';
+      if (!catalogData) return;
+
+      catalogData.entries.forEach((author, ai) => {
+        const div = document.createElement('div');
+        div.className = 'author';
+
+        div.innerHTML = `
+          <label>Gattung: 
+            <input type="text" value="${author.kind}" data-ai="${ai}" data-field="kind">
+          </label>
+          <label>Autor (intern): 
+            <input type="text" value="${author.author}" data-ai="${ai}" data-field="author">
+          </label>
+          <label>Autor (Anzeige): 
+            <input type="text" value="${author.author_display}" data-ai="${ai}" data-field="author_display">
+          </label>
+          <button data-ai="${ai}" class="addWork">+ Werk hinzufügen</button>
+        `;
+
+        // Werke rendern
+        author.works.forEach((work, wi) => {
+          const wdiv = document.createElement('div');
+          wdiv.className = 'work';
+          wdiv.innerHTML = `
+            <label>ID: <input type="text" value="${work.id}" data-ai="${ai}" data-wi="${wi}" data-field="id"></label>
+            <label>Titel: <input type="text" value="${work.title}" data-ai="${ai}" data-wi="${wi}" data-field="title"></label>
+            <label>Versmaßfähig:
+              <input type="checkbox" ${work.meter_capable ? 'checked' : ''} data-ai="${ai}" data-wi="${wi}" data-field="meter_capable">
+            </label>
+            <button data-ai="${ai}" data-wi="${wi}" class="removeWork">Werk löschen</button>
+          `;
+          div.appendChild(wdiv);
+        });
+
+        root.appendChild(div);
+      });
+
+      bindEvents();
+    }
+
+    function bindEvents() {
+      // Eingaben überwachen
+      document.querySelectorAll('input').forEach(inp => {
+        inp.addEventListener('input', e => {
+          const ai = e.target.dataset.ai;
+          const wi = e.target.dataset.wi;
+          const field = e.target.dataset.field;
+          if (wi !== undefined) {
+            // Werk
+            if (field === 'meter_capable') {
+              catalogData.entries[ai].works[wi][field] = e.target.checked;
+            } else {
+              catalogData.entries[ai].works[wi][field] = e.target.value;
+            }
+          } else {
+            // Autor
+            catalogData.entries[ai][field] = e.target.value;
+          }
+        });
+      });
+
+      // Werk hinzufügen
+      document.querySelectorAll('.addWork').forEach(btn => {
+        btn.addEventListener('click', e => {
+          const ai = e.target.dataset.ai;
+          catalogData.entries[ai].works.push({
+            id: 'Neues_Werk',
+            title: 'Neues Werk',
+            meter_capable: false
+          });
+          render();
+        });
+      });
+
+      // Werk löschen
+      document.querySelectorAll('.removeWork').forEach(btn => {
+        btn.addEventListener('click', e => {
+          const ai = e.target.dataset.ai;
+          const wi = e.target.dataset.wi;
+          catalogData.entries[ai].works.splice(wi, 1);
+          render();
+        });
+      });
+    }
+
+    document.getElementById('addAuthor').addEventListener('click', () => {
+      catalogData.entries.push({
+        kind: 'poesie',
+        author: 'NeuerAutor',
+        author_display: 'Neuer Autor',
+        works: []
+      });
+      render();
+    });
+
+    document.getElementById('downloadBtn').addEventListener('click', () => {
+      const blob = new Blob([JSON.stringify(catalogData, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'catalog.json';
+      a.click();
+    });
+
+    // Init
+    (async function init() {
+      catalogData = await loadCatalog();
+      render();
+    })();
+  </script>
+</body>
+</html>
