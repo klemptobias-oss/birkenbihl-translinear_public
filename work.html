@@ -3,196 +3,127 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Werkansicht – Birkenbihl / Translinear</title>
+    <title>Werkseite – Original + Birkenbihl</title>
+
+    <!-- Gemeinsamer Stil + Werk-spezifische Ergänzungen wiederverwenden -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_aias.css" />
 
     <!--
-    ==============================================================
-    WIE DU DIESE SEITE FÜR NEUE WERKE / AUTOREN NUTZT
-    --------------------------------------------------------------
-    1) Datenquellen angeben (ENTWEDER ODER):
-       a) Im <body> unten die data-Attribute setzen:
-          data-genre="poesie" oder "prosa"
-          data-author="Aischylos" (ohne Slash/Backslash)
-          data-work="Der_gefesselte_Prometheus" (Dateiname ohne .txt)
-       b) Oder über URL-Parameter aufrufen:
-          work.html?genre=poesie&author=Aischylos&work=Der_gefesselte_Prometheus
+      ###############################################################
+      #  WIE ERWEITERE ICH DIE SEITE UM NEUE WERKE / AUTOREN?     #
+      ###############################################################
+      1) Lege deine Dateien gemäß Ordnerstruktur ab:
+         - POESIE: texte/poesie/<Autor>/<Werk>.txt
+                   texte/poesie/<Autor>/<Werk>_birkenbihl.txt
+         - PROSA:  texte/prosa/<Autor>/<Werk>.txt
+                   texte/prosa/<Autor>/<Werk>_birkenbihl.txt
 
-    2) Dateien ablegen (genau diese Struktur):
-       - Original:  texte/<genre>/<Autor>/<Werk>.txt
-       - Birkenbihl: texte/<genre>/<Autor>/<Werk>_birkenbihl.txt
-       - PDFs (automatisch erzeugt, falls vorhanden):
-         pdf/original_<genre>_pdf/<Autor>/<Werk>_<Strength>_<Colour|BlackWhite>_<Tag|NoTags>[_Versmaß].pdf
-         (Entwürfe analog unter pdf_drafts/draft_<genre>_pdf/<Autor>/...)
+      2) PDFs werden vom Build in diese Ordner gerendert:
+         - POESIE: pdf/original_poesie_pdf/<Autor>/<BASIS>_<Strength>_<Color>_<Tags>[_Versmaß].pdf
+         - PROSA:  pdf/original_prosa_pdf/<Autor>/<BASIS>_<Strength>_<Color>_<Tags>.pdf
+         Hinweis: <BASIS> (= pdfStem) kannst du hier in JS (CONFIG) je Werk setzen.
 
-    3) Beispiele (an denen du dich orientieren kannst):
-       - Poesie/Aischylos:
-         genre=poesie, author=Aischylos, work=Der_gefesselte_Prometheus
-         → texte/poesie/Aischylos/Der_gefesselte_Prometheus.txt
-         → texte/poesie/Aischylos/Der_gefesselte_Prometheus_birkenbihl.txt
+      3) Trage das Werk unten in CONFIG.WORKS ein:
+         - key: frei wählbarer Slug (nur intern)
+         - kind: "poesie" oder "prosa"
+         - author: Ordnername wie auf Platte (z. B. "Aischylos", "Platon")
+         - work:   Dateistamm wie auf Platte (z. B. "Der_gefesselte_Prometheus", "Aias", "Menon")
+         - pdfStem: Basis für PDF-Dateinamen (z. B. "PlatonMenon" bei PROSA; bei POESIE meist identisch mit work)
+         - supportsMeter: true, wenn Versmaß-Optionen angezeigt werden sollen; sonst false
 
-       - Poesie/Sophokles:
-         genre=poesie, author=Sophokles, work=Aias
-         → texte/poesie/Sophokles/Aias.txt
-         → texte/poesie/Sophokles/Aias_birkenbihl.txt
+      4) Aufruf-URL:
+         work.html?kind=poesie&author=Aischylos&work=Der_gefesselte_Prometheus
+         work.html?kind=poesie&author=Sophokles&work=Aias
+         work.html?kind=prosa&author=Platon&work=Menon
 
-       - Prosa/Platon:
-         genre=prosa, author=Platon, work=Menon
-         → texte/prosa/Platon/Menon.txt
-         → texte/prosa/Platon/Menon_birkenbihl.txt
-
-    4) Falls (noch) keine Dateien vorhanden sind:
-       - Der Textbereich zeigt „Noch kein … vorhanden.“
-       - Der PDF-Viewer meldet „PDF (noch) nicht vorhanden.“
-       Das ist normal – so kannst du die Seitenstruktur VORAB anlegen.
-
-    5) Buttons:
-       - Oben rechts kannst du zwischen Original / Entwurf, Normal / Fett / DE-Fett,
-         Colour / BlackWhite, Tags / NoTag und Versmaß / Ohne Versmaß wählen.
-       - Jede Änderung lädt automatisch die passende PDF-Variante (falls vorhanden).
-
-    ==============================================================
+      5) Existierende Beispiele (siehe CONFIG.WORKS):
+         - Aischylos / Der_gefesselte_Prometheus (Poesie, mit Versmaß)
+         - Sophokles / Aias (Poesie, ohne Versmaß)
+         - Platon / Menon (Prosa, ohne Versmaß)
     -->
-
-    <style>
-      /* Ein paar schlanke Defaults, damit es überall gut aussieht */
-      .wrap { max-width: 1200px; margin: 0 auto; padding: 16px; }
-      .bar { display:flex; align-items:center; justify-content:space-between; margin-bottom: 12px; }
-      .title { font-weight: 700; font-size: 20px; }
-      .muted { color: var(--muted, #666); font-size: 14px; }
-      .grid { display: grid; gap: 12px; }
-      .cols-2 { grid-template-columns: 1fr 1fr; }
-      .panel { border: 1px solid var(--edge, #ddd); border-radius: 12px; padding: 12px; background: var(--card, #fff); }
-      .panel h3 { margin: 0 0 8px; font-size: 16px; }
-      .textbox { white-space: pre-wrap; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; background: #fafafa; border: 1px solid #eee; border-radius: 8px; padding: 10px; min-height: 140px; }
-      .controls { display: grid; grid-template-columns: repeat(5, minmax(160px, 1fr)); gap: 8px; align-items: start; }
-      .ctrl-group { border: 1px solid var(--edge, #ddd); border-radius: 10px; padding: 8px; background: var(--card, #fff); }
-      .ctrl-group legend { font-weight: 600; font-size: 13px; padding: 0 6px; }
-      .ctrl-group label { display: inline-flex; align-items: center; gap: 6px; margin: 3px 6px 3px 0; font-size: 14px; }
-      .viewer { border: 1px solid var(--edge, #ddd); border-radius: 12px; overflow: hidden; background: #fff; }
-      .viewer-head { display:flex; align-items:center; justify-content: space-between; padding: 8px 12px; border-bottom: 1px solid var(--edge, #ddd); background: var(--card, #fff); }
-      .viewer-body { min-height: 70vh; background: #f8f9fb; }
-      #pdf-frame { width: 100%; height: 70vh; border: 0; display:block; background: #fff; }
-      .kv { display:flex; gap: 16px; flex-wrap: wrap; font-size: 14px; color: var(--muted, #666); }
-      .kv b { color: #222; }
-      .help { font-size: 13px; color: var(--muted, #666); }
-      @media (max-width: 1000px) {
-        .controls { grid-template-columns: 1fr; }
-        .grid.cols-2 { grid-template-columns: 1fr; }
-      }
-    </style>
   </head>
-
-  <!--
-    Setze hier die Standard-Werte für diese Seite ODER nutze URL-Parameter.
-    Wenn du NUR url-Parameter nutzen willst, kannst du die data-Attribute leer lassen.
-    Beispiele:
-      data-genre="poesie" data-author="Aischylos" data-work="Der_gefesselte_Prometheus"
-      oder: work.html?genre=prosa&author=Platon&work=Menon
-  -->
-  <body data-genre="poesie" data-author="" data-work="">
+  <body>
     <div class="wrap">
       <div class="bar">
-        <div class="title">Werkansicht</div>
-        <div class="help">Tipp: Du kannst diese Seite auch mit Parametern aufrufen, z.B.
-          <code>?genre=poesie&amp;author=Aischylos&amp;work=Der_gefesselte_Prometheus</code>.
-        </div>
+        <div class="title" id="page-title">Originaltext + Birkenbihl</div>
       </div>
 
-      <!-- Kontextanzeige (wird von work.js befüllt) -->
-      <div class="panel">
-        <div class="kv">
-          <div>Genre: <b id="ctx-genre">—</b></div>
-          <div>Autor: <b id="ctx-author">—</b></div>
-          <div>Werk: <b id="ctx-work">—</b></div>
+      <div class="grid">
+        <!-- Links oben: Original -->
+        <div class="card">
+          <h2>Original (oben links)</h2>
+          <div class="src srcbox" id="orig-src">Lade Original…</div>
         </div>
-      </div>
 
-      <div class="grid cols-2" style="margin-top:12px">
-        <!-- Linke Spalte: Texte -->
-        <div class="panel">
-          <h3>Original</h3>
-          <pre id="orig-text" class="textbox">Lade Original…</pre>
-        </div>
-        <div class="panel">
-          <h3>Birkenbihl</h3>
-          <pre id="birk-text" class="textbox">Lade Birkenbihl…</pre>
-        </div>
-      </div>
+        <!-- Rechts oben: PDF-Viewer + Schalter -->
+        <div class="card">
+          <div class="pdf-controls">
+            <!-- Reihe 1: Original vs Entwurf (PDF-Quelle) -->
+            <label class="radio"><input type="radio" name="which" value="original" checked /> <span>Original</span></label>
+            <label class="radio"><input type="radio" name="which" value="draft" /> <span>Entwurf</span></label>
 
-      <!-- PDF-Viewer -->
-      <div class="viewer" style="margin-top:12px">
-        <div class="viewer-head">
-          <div><strong>PDF-Viewer</strong> <span class="muted" id="pdf-status"></span></div>
-          <div class="controls">
-            <!-- Original vs. Entwurf -->
-            <fieldset class="ctrl-group">
-              <legend>Quelle</legend>
-              <label><input type="radio" name="mode-origin" value="Original" checked /> Original</label>
-              <label><input type="radio" name="mode-origin" value="Entwurf" /> Entwurf</label>
-            </fieldset>
+            <!-- Reihe 2: Stärke -->
+            <span style="width:14px;"></span>
+            <label class="radio"><input type="radio" name="strength" value="Normal" checked /> <span>Normal</span></label>
+            <label class="radio"><input type="radio" name="strength" value="GR_Fett" /> <span>Fett</span></label>
+            <label class="radio"><input type="radio" name="strength" value="DE_Fett" /> <span>DE-Fett</span></label>
 
-            <!-- Normal / GR_Fett / DE_Fett -->
-            <fieldset class="ctrl-group">
-              <legend>Stärke</legend>
-              <label><input type="radio" name="opt-strength" value="NORMAL" checked /> Normal</label>
-              <label><input type="radio" name="opt-strength" value="GR_FETT" /> Fett</label>
-              <label><input type="radio" name="opt-strength" value="DE_FETT" /> DE-Fett</label>
-            </fieldset>
+            <!-- Reihe 3: Farbe -->
+            <span style="width:14px;"></span>
+            <label class="radio"><input type="radio" name="color" value="Colour" checked /> <span>Colour</span></label>
+            <label class="radio"><input type="radio" name="color" value="BlackWhite" /> <span>BlackWhite</span></label>
 
-            <!-- Farbe -->
-            <fieldset class="ctrl-group">
-              <legend>Farbe</legend>
-              <label><input type="radio" name="opt-color" value="Colour" checked /> Colour</label>
-              <label><input type="radio" name="opt-color" value="BlackWhite" /> BlackWhite</label>
-            </fieldset>
+            <!-- Reihe 4: Tags -->
+            <span style="width:14px;"></span>
+            <label class="radio"><input type="radio" name="tags" value="Tag" checked /> <span>Tags</span></label>
+            <label class="radio"><input type="radio" name="tags" value="NoTags" /> <span>NoTag</span></label>
 
-            <!-- Tags -->
-            <fieldset class="ctrl-group">
-              <legend>Grammatik-Tags</legend>
-              <label><input type="radio" name="opt-tags" value="Tag" checked /> Tags</label>
-              <label><input type="radio" name="opt-tags" value="NoTag" /> NoTag</label>
-            </fieldset>
+            <!-- Reihe 5: Versmaß – wird dynamisch ein-/ausgeblendet -->
+            <span id="meter-row" style="display:none;">
+              <span style="width:14px;"></span>
+              <label class="radio"><input type="radio" name="meter" value="with" /> <span>Versmaß</span></label>
+              <label class="radio"><input type="radio" name="meter" value="without" checked /> <span>Ohne Versmaß</span></label>
+            </span>
 
-            <!-- Versmaß -->
-            <fieldset class="ctrl-group">
-              <legend>Versmaß</legend>
-              <label><input type="radio" name="opt-meter" value="Versmass" /> Versmaß</label>
-              <label><input type="radio" name="opt-meter" value="Ohne" checked /> Ohne Versmaß</label>
-            </fieldset>
+            <span class="muted" id="pdf-hint">PDF-Kombination wählen…</span>
+          </div>
+
+          <div class="pdf-frame">
+            <div class="pdf-busy" id="pdf-busy">
+              <div class="pdf-busy-inner">
+                <span class="spinner"></span>
+                <span>PDF wird geladen…</span>
+              </div>
+            </div>
+            <object id="pdf-view" type="application/pdf" data=""></object>
           </div>
         </div>
-        <div class="viewer-body">
-          <iframe id="pdf-frame" title="PDF-Viewer" loading="lazy"></iframe>
-        </div>
-      </div>
 
-      <!-- Hinweisbereich -->
-      <div class="panel" style="margin-top:12px">
-        <div class="help">
-          <b>Hinweis:</b> Wenn eine Variante nicht existiert, erscheint oben rechts die Meldung
-          „PDF (noch) nicht vorhanden.“. Du kannst die PDFs jederzeit nachträglich erzeugen
-          (Adapter/Renderer), ohne die Seite anzupassen.
+        <!-- Links unten: Birkenbihl-Original -->
+        <div class="card">
+          <h2>Birkenbihl (unten links)</h2>
+          <div class="src srcbox" id="bb-src">Lade Birkenbihl…</div>
+        </div>
+
+        <!-- Rechts unten: Entwurf-Editor -->
+        <div class="card">
+          <h2>Entwurf (unten rechts)</h2>
+          <div class="pane-body">
+            <div class="split">
+              <button class="btn" id="btn-load-draft">Letzten Entwurf laden</button>
+              <button class="btn" id="btn-generate">PDF erzeugen</button>
+              <span id="draft-status">
+                <span class="spinner" id="draft-spinner"></span>
+                <span class="status-text muted">bereit</span>
+              </span>
+            </div>
+            <textarea class="editor" id="draft-editor" placeholder="Hier eigenen Entwurf bearbeiten/speichern…"></textarea>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Globale Viewer-Logik (eine Datei für alle Werke) -->
     <script src="work.js"></script>
-
-    <!-- Mini-Hook: Kontext-Anzeige füllen, sobald work.js WORK_CTX bereitstellt -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const poll = setInterval(() => {
-          if (window.WORK_CTX) {
-            document.getElementById("ctx-genre").textContent  = window.WORK_CTX.genre || "—";
-            document.getElementById("ctx-author").textContent = window.WORK_CTX.author || "—";
-            document.getElementById("ctx-work").textContent   = window.WORK_CTX.work || "—";
-            clearInterval(poll);
-          }
-        }, 50);
-        setTimeout(() => clearInterval(poll), 3000);
-      });
-    </script>
   </body>
 </html>
