@@ -1,12 +1,9 @@
-# Artefakte
-pdf/
-pdf_drafts/
-*.pdf
-
-# Python-Cache
+# Bytecode
 __pycache__/
 *.pyc
 
-# Editor/OS
+# Editor-/OS-Kleinkram
 .DS_Store
+.idea/
+.vscode/
 
