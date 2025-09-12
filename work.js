@@ -1,213 +1,221 @@
-// work.js — eine Datei für alle Werke (Poesie & Prosa)
-//
-// Liest Konfiguration aus data-Attributen ODER URL-Parametern:
-//   genre: "poesie" | "prosa"
-//   author: z.B. "Aischylos"
-//   work:   z.B. "Der_gefesselte_Prometheus"
-//
-// Erwartete Struktur (wie von dir definiert):
-//  Texte (Original/Birkenbihl):
-//    texte/<genre>/<Author>/<Work>.txt
-//    texte/<genre>/<Author>/<Work>_birkenbihl.txt
-//  PDFs (Original/Drafts):
-//    pdf/original_<genre>_pdf/<Author>/<Base>_<Strength>_<Color>_<Tag>[ _Versmaß ].pdf
-//    pdf_drafts/draft_<genre>_pdf/<Author>/<Base>_<Strength>_<Color>_<Tag>[ _Versmaß ].pdf
-//
-// UI-Erwartung (optional, wird robust geprüft):
-//   - <pre id="orig-text">, <pre id="birk-text">
-//   - <iframe id="pdf-frame">
-//   - Radiogruppen (name-Attribute oder data-role):
-//       Gruppe Quelle:    name="mode-origin" -> values: "Original" | "Entwurf"
-//       Gruppe Stärke:    name="opt-strength" -> values: "NORMAL" | "GR_FETT" | "DE_FETT"
-//       Gruppe Farbe:     name="opt-color"    -> values: "Colour" | "BlackWhite"
-//       Gruppe Tags:      name="opt-tags"     -> values: "Tag" | "NoTag"
-//       Gruppe Versmaß:   name="opt-meter"    -> values: "Versmass" | "Ohne"
-//   - Falls IDs stattdessen genutzt werden: Buttons mit data-role="option" und data-group="..." data-value="..."
-//     werden ebenfalls unterstützt.
-//
-// Hinweise:
-//  - Umlaute/Leerzeichen werden unverändert übernommen. Achte darauf, Work/Author genau so zu benennen,
-//    wie die Dateien heißen (z.B. "Der_gefesselte_Prometheus").
-//
+/* ==========================================================
+   Allgemeines Werk-Script für Original + Birkenbihl + PDF
+   ----------------------------------------------------------
+   URL-Parameter:
+     ?kind=poesie|prosa&author=<Autor>&work=<Werk>
 
-// ---------------------- Utilities ----------------------
-function qs(sel, root = document) { return root.querySelector(sel); }
-function qsa(sel, root = document) { return Array.from(root.querySelectorAll(sel)); }
+   Datenquellen:
+     - Original (oben links):
+       texte/<kind>/<Autor>/<Werk>.txt
+     - Birkenbihl (unten links):
+       texte/<kind>/<Autor>/<Werk>_birkenbihl.txt
+     - PDF (oben rechts, Viewer):
+       Poesie: pdf/original_poesie_pdf/<Autor>/<pdfStem>_<Strength>_<Color>_<Tags>[ _Versmaß].pdf
+       Prosa : pdf/original_prosa_pdf/<Autor>/<pdfStem>_<Strength>_<Color>_<Tags>.pdf
 
-function getParam(name, fallback = "") {
-  const u = new URL(window.location.href);
-  return u.searchParams.get(name) || fallback;
-}
+   pdfStem: pro Werk konfigurierbar, falls Generator andere Basis nutzt.
+   Beispiele unten in CONFIG.WORKS.
 
-function getDataOrParam(key, fallback = "") {
-  const root = document.body || document.documentElement;
-  const dataVal = root?.dataset?.[key] || "";
-  return getParam(key, dataVal || fallback);
-}
+   Drafts (unten rechts):
+     - Hier nur UI (Editor + Buttons). Der eigentliche PDF-Build läuft
+       wie gehabt über eure Adapter, nicht im Browser.
 
-function textExistsElem(id) { return !!qs(`#${id}`); }
-function setText(id, txt) { const el = qs(`#${id}`); if (el) el.textContent = txt; }
+   ========================================================== */
 
-async function fetchTextOrNull(url) {
-  try {
-    const resp = await fetch(url, { cache: "no-store" });
-    if (!resp.ok) return null;
-    return await resp.text();
-  } catch { return null; }
-}
-
-async function urlExists(url) {
-  try {
-    const resp = await fetch(url, { method: "HEAD", cache: "no-store" });
-    return resp.ok;
-  } catch { return false; }
-}
-
-// ---------------------- Config aus Seite/URL ----------------------
-function readWorkConfig() {
-  // genre: "poesie" | "prosa"
-  const genre = (getDataOrParam("genre", "poesie") || "").toLowerCase();
-  const author = getDataOrParam("author", "");
-  const work = getDataOrParam("work", "");
-
-  // Normierte Basen/Ordner
-  const txtBase = `texte/${genre}/${author}/${work}`;
-  const pdfBaseOriginal = `pdf/original_${genre}_pdf/${author}/`;
-  const pdfBaseDraft   = `pdf_drafts/draft_${genre}_pdf/${author}/`;
-
-  return {
-    genre, author, work,
-    paths: {
-      txtOrig: `${txtBase}.txt`,
-      txtBirk: `${txtBase}_birkenbihl.txt`,
-      pdfOriginalDir: pdfBaseOriginal,
-      pdfDraftDir: pdfBaseDraft
-    }
+(function () {
+  // ---------- Konfiguration (bestehende Werke als Beispiele) ----------
+  const CONFIG = {
+    // Sichtbare Labels optional; technisch maßgeblich sind author/work/kind
+    WORKS: [
+      {
+        // Poesie mit Versmaß
+        label: "Aischylos – Der gefesselte Prometheus",
+        kind: "poesie",
+        author: "Aischylos",
+        work: "Der_gefesselte_Prometheus",
+        // PDFs heißen typischerweise wie das Work (wenn ihr so generiert)
+        pdfStem: "Der_gefesselte_Prometheus",
+        supportsMeter: true
+      },
+      {
+        // Poesie ohne Versmaß
+        label: "Sophokles – Aias",
+        kind: "poesie",
+        author: "Sophokles",
+        work: "Aias",
+        pdfStem: "Aias",
+        supportsMeter: false
+      },
+      {
+        // Prosa ohne Versmaß; Prosa-PDFs nutzen oft Autor+Werk als Basis
+        label: "Platon – Menon",
+        kind: "prosa",
+        author: "Platon",
+        work: "Menon",
+        pdfStem: "PlatonMenon",
+        supportsMeter: false
+      }
+    ]
   };
-}
 
-// ---------------------- Selection-Reader ----------------------
-// liest radiogruppen ODER data-role Buttons (Fallbacks gesetzt)
-function readSelection(groupName, fallbackValue) {
-  // 1) Radiobuttons mit name=groupName
-  const radios = qsa(`input[type="radio"][name="${groupName}"]`);
-  const sel = radios.find(r => r.checked);
-  if (sel) return sel.value;
+  // ---------- URL-Parameter auslesen ----------
+  const params = new URLSearchParams(location.search);
+  const kind = (params.get("kind") || "").toLowerCase();      // "poesie" | "prosa"
+  const author = params.get("author") || "";
+  const work = params.get("work") || "";
 
-  // 2) Buttons/Links mit data-role="option" und data-group="groupName"
-  const active = qs(`[data-role="option"][data-group="${groupName}"][aria-pressed="true"]`);
-  if (active) return active.dataset.value;
+  // passendes Werk-Profil ermitteln (oder Fallback aus URL bauen)
+  const profile =
+    CONFIG.WORKS.find(
+      w =>
+        w.kind.toLowerCase() === kind &&
+        w.author === author &&
+        w.work === work
+    ) ||
+    {
+      // Fallback: funktioniert, wenn Verzeichnis/Dateinamen exakt stimmen
+      label: `${author} – ${work}`.replaceAll("_", " "),
+      kind,
+      author,
+      work,
+      pdfStem:
+        kind === "prosa"
+          ? `${author}${work}` // z.B. PlatonMenon
+          : work, // z.B. Der_gefesselte_Prometheus
+      supportsMeter: kind === "poesie" // bei Poesie standardmäßig anzeigen
+    };
 
-  // 3) Fallback
-  return fallbackValue;
-}
+  // ---------- Titel setzen ----------
+  const pageTitle = document.getElementById("page-title");
+  if (pageTitle) pageTitle.textContent = `Originaltext + Birkenbihl — ${profile.label}`;
 
-function currentUiOptions() {
-  // Quelle: Original/Entwurf
-  const origin = readSelection("mode-origin", "Original"); // "Original" | "Entwurf"
+  // ---------- DOM-Refs ----------
+  const origBox = document.getElementById("orig-src");
+  const bbBox = document.getElementById("bb-src");
+  const pdfObj = document.getElementById("pdf-view");
+  const pdfBusy = document.getElementById("pdf-busy");
+  const meterRow = document.getElementById("meter-row");
+  const draftEditor = document.getElementById("draft-editor");
+  const draftSpinner = document.getElementById("draft-spinner");
+  const draftStatus = document.querySelector("#draft-status .status-text");
 
-  // Stärke
-  const strength = readSelection("opt-strength", "NORMAL"); // "NORMAL" | "GR_FETT" | "DE_FETT"
+  // Zeige/Verstecke Versmaß-Reihe
+  meterRow.style.display = profile.supportsMeter ? "" : "none";
 
-  // Farbe
-  // Achtung: Dateinamens-Suffixe sind "Colour" | "BlackWhite" (genau so!)
-  const color = readSelection("opt-color", "Colour"); // "Colour" | "BlackWhite"
-
-  // Tags
-  const tags = readSelection("opt-tags", "Tag"); // "Tag" | "NoTag"
-
-  // Versmaß
-  const meter = readSelection("opt-meter", "Ohne"); // "Versmass" | "Ohne"
-
-  return { origin, strength, color, tags, meter };
-}
-
-// ---------------------- PDF-Namenslogik ----------------------
-function buildPdfFileName(base, opts) {
-  // base = Werk-Name (Dateistamm), z.B. "Der_gefesselte_Prometheus"
-  const colourPart = (opts.color === "Colour") ? "Colour" : "BlackWhite";
-  const tagPart    = (opts.tags  === "Tag")    ? "Tag"    : "NoTags";
-  const meterPart  = (opts.meter === "Versmass") ? "_Versmaß" : "";
-
-  return `${base}_${opts.strength}_${colourPart}_${tagPart}${meterPart}.pdf`;
-}
-
-// ---------------------- Loader: Texte ----------------------
-async function loadTexts(cfg) {
-  if (textExistsElem("orig-text")) {
-    setText("orig-text", "Lade Original…");
-    const t = await fetchTextOrNull(cfg.paths.txtOrig);
-    setText("orig-text", t ?? "Noch kein Original vorhanden.");
+  // ---------- Hilfsfunktionen ----------
+  function pathText(kind, author, work, isBirkenbihl) {
+    const base = `texte/${kind}/${author}/${work}`;
+    return isBirkenbihl ? `${base}_birkenbihl.txt` : `${base}.txt`;
   }
 
-  if (textExistsElem("birk-text")) {
-    setText("birk-text", "Lade Birkenbihl…");
-    const t = await fetchTextOrNull(cfg.paths.txtBirk);
-    setText("birk-text", t ?? "Noch keine Birkenbihl-Datei vorhanden.");
+  function pdfBaseDir(kind, author) {
+    return kind === "poesie"
+      ? `pdf/original_poesie_pdf/${author}`
+      : `pdf/original_prosa_pdf/${author}`;
   }
-}
 
-// ---------------------- Loader: PDF-Viewer ----------------------
-async function updatePdfFrame(cfg) {
-  const frame = qs("#pdf-frame");
-  if (!frame) return;
-
-  const { origin, strength, color, tags, meter } = currentUiOptions();
-
-  const base = cfg.work; // Dateistamm = Work
-  const pdfName = buildPdfFileName(base, { strength, color, tags, meter });
-  const dir = (origin === "Entwurf") ? cfg.paths.pdfDraftDir : cfg.paths.pdfOriginalDir;
-  const url = dir + pdfName;
-
-  // Versuche die URL; wenn nicht vorhanden -> freundliche Meldung
-  const ok = await urlExists(url);
-  if (ok) {
-    frame.src = url;
-    qs("#pdf-status") && (qs("#pdf-status").textContent = "");
-  } else {
-    frame.removeAttribute("src");
-    qs("#pdf-status") && (qs("#pdf-status").textContent = "PDF (noch) nicht vorhanden.");
+  function currentRadio(name) {
+    const el = document.querySelector(`input[name="${name}"]:checked`);
+    return el ? el.value : null;
   }
-}
 
-// ---------------------- Event-Wiring ----------------------
-function wireControls(cfg) {
-  // Für Radiogruppen: on change → PDF neu setzen
-  ["mode-origin", "opt-strength", "opt-color", "opt-tags", "opt-meter"].forEach(group => {
-    qsa(`input[type="radio"][name="${group}"]`).forEach(el => {
-      el.addEventListener("change", () => updatePdfFrame(cfg));
-    });
+  function pdfName(stem, strength, color, tags, withMeter) {
+    // Beispiel: Aias_Normal_Colour_Tag[_Versmaß].pdf
+    const meterPart = withMeter ? "_Versmaß" : "";
+    return `${stem}_${strength}_${color}_${tags}${meterPart}.pdf`;
+  }
+
+  function setPDF(src) {
+    if (!pdfObj) return;
+    pdfBusy.style.display = "flex";
+    pdfObj.data = ""; // reset
+    // Preload via Image-Workaround geht bei PDF nicht sauber; wir setzen direkt.
+    pdfObj.addEventListener(
+      "load",
+      () => {
+        pdfBusy.style.display = "none";
+      },
+      { once: true }
+    );
+    // onerror greift bei <object> nicht immer; wir geben einfach aus.
+    pdfObj.data = src;
+  }
+
+  async function fetchText(url) {
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+    return await res.text();
+  }
+
+  // ---------- Initiale Texte laden ----------
+  (async function loadTexts() {
+    try {
+      const origPath = pathText(profile.kind, profile.author, profile.work, false);
+      const bbPath = pathText(profile.kind, profile.author, profile.work, true);
+
+      origBox.textContent = "Lade Original…";
+      bbBox.textContent = "Lade Birkenbihl…";
+
+      const [orig, bb] = await Promise.all([
+        fetchText(origPath).catch(() => "(Kein Original gefunden)"),
+        fetchText(bbPath).catch(() => "(Keine Birkenbihl-Datei gefunden)")
+      ]);
+
+      origBox.textContent = orig;
+      bbBox.textContent = bb;
+    } catch (e) {
+      origBox.textContent = "(Fehler beim Laden der Texte)";
+      bbBox.textContent = "(Fehler beim Laden der Texte)";
+    }
+  })();
+
+  // ---------- PDF-Kombination anwenden ----------
+  function updatePDFFromControls() {
+    const which = currentRadio("which") || "original"; // "original" | "draft"
+    const strength = currentRadio("strength") || "Normal";
+    const color = currentRadio("color") || "Colour";
+    const tags = currentRadio("tags") || "Tag";
+    const meterVal = currentRadio("meter") || "without";
+    const withMeter = profile.supportsMeter && meterVal === "with";
+
+    // Drafts hätten später eigenen Speicherort; hier nutzen wir weiterhin "original"
+    const baseDir = pdfBaseDir(profile.kind, profile.author);
+    const fileName = pdfName(profile.pdfStem, strength, color, tags, withMeter);
+    const full = `${baseDir}/${fileName}`;
+
+    setPDF(full);
+    const hint = document.getElementById("pdf-hint");
+    if (hint) hint.textContent = `Quelle: ${full}`;
+  }
+
+  // Initial setzen
+  updatePDFFromControls();
+
+  // ---------- Listener auf alle Radios ----------
+  document.querySelectorAll('input[type="radio"]').forEach((el) => {
+    el.addEventListener("change", updatePDFFromControls);
   });
 
-  // Für data-role Buttons
-  qsa(`[data-role="option"]`).forEach(btn => {
-    btn.addEventListener("click", () => {
-      const pressed = btn.getAttribute("aria-pressed") === "true";
-      const group = btn.dataset.group;
-      // in der Gruppe erst alle auf false, dann diesen auf true
-      qsa(`[data-role="option"][data-group="${group}"]`).forEach(b => b.setAttribute("aria-pressed", "false"));
-      btn.setAttribute("aria-pressed", pressed ? "false" : "true");
-      updatePdfFrame(cfg);
-    });
+  // ---------- Draft-Bedienelemente (UI-Stub wie gehabt) ----------
+  document.getElementById("btn-load-draft")?.addEventListener("click", () => {
+    draftSpinner.style.display = "inline-block";
+    draftStatus.textContent = "lade letzten Entwurf…";
+    // Hier könnt ihr ggf. AJAX an euren Server hängen. Wir stubben:
+    setTimeout(() => {
+      draftSpinner.style.display = "none";
+      draftStatus.textContent = "bereit";
+      // Keine Änderung am Editor in diesem Stub.
+    }, 600);
   });
-}
 
-// ---------------------- Bootstrap ----------------------
-document.addEventListener("DOMContentLoaded", async () => {
-  const cfg = readWorkConfig();
-
-  // Wenn Work/Author fehlen, nicht abstürzen – zeige Hinweis
-  if (!cfg.author || !cfg.work) {
-    setText("orig-text", "Fehlende Parameter: author/work.");
-    setText("birk-text", "Fehlende Parameter: author/work.");
-    qs("#pdf-status") && (qs("#pdf-status").textContent = "Fehlende Parameter: author/work.");
-    return;
-  }
-
-  await loadTexts(cfg);
-  await updatePdfFrame(cfg);
-  wireControls(cfg);
-
-  // Expose für Debug/andere Skripte
-  window.WORK_CTX = cfg;
-});
+  document.getElementById("btn-generate")?.addEventListener("click", () => {
+    draftSpinner.style.display = "inline-block";
+    draftStatus.textContent = "PDF wird erzeugt…";
+    // Hier würde man euren Adapter (serverseitig) triggern.
+    setTimeout(() => {
+      draftSpinner.style.display = "none";
+      draftStatus.textContent = "fertig (siehe Viewer oben rechts)";
+      // Optional: Nach Build könntet ihr updatePDFFromControls() erneut aufrufen.
+    }, 1200);
+  });
+})();
