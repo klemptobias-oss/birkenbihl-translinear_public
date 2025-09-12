@@ -1,110 +1,88 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title id="work-title">Werkseite</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="work.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Werk – Birkenbihl / Translinear</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .controls { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:12px; }
+    .group { background: var(--card); border:1px solid var(--edge); border-radius:12px; padding:10px; }
+    .group h4 { margin:0 0 8px 0; font-size:14px; color:var(--muted); }
+    .group .row { display:flex; gap:10px; flex-wrap:wrap; }
+    .group label { display:inline-flex; align-items:center; gap:6px; padding:4px 8px; border:1px solid var(--edge); border-radius:8px; cursor:pointer; user-select:none; }
+    .group input[type="radio"] { accent-color: var(--accent); }
+    .pane-wrap { display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-top:12px; }
+    .pane { border:1px solid var(--edge); border-radius:12px; background:#fff; padding:8px; display:flex; flex-direction:column; min-height:280px; }
+    .pane h3 { margin:4px 0 8px 0; font-size:16px; }
+    .pane .tools { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+    .pane .tools .spacer { flex:1; }
+    .pane pre, .pane textarea { flex:1; border:1px solid var(--edge); border-radius:8px; padding:8px; white-space: pre-wrap; overflow:auto; background:#fafafa; }
+    .pane textarea { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .viewer { margin-top:14px; border:1px solid var(--edge); border-radius:12px; background:#fff; }
+    #pdfStatus { padding:8px 10px; font-size:14px; color:var(--muted); border-bottom:1px solid var(--edge); }
+    #pdfFrame { width:100%; height:70vh; border:0; display:block; }
+  </style>
 </head>
 <body>
-  <!-- 
-    work.html – Universelle Werkseite
-    =================================
-    Verwendung:
-    - URL-Parameter ?kind=<poesie|prosa>&author=<Autor>&work=<Werk>
-    - Beispiel: work.html?kind=poesie&author=Aischylos&work=Der_gefesselte_Prometheus
-    - Beispiel: work.html?kind=poesie&author=Sophokles&work=Aias
-    - Beispiel: work.html?kind=prosa&author=Platon&work=Menon
-
-    Textquellen (immer im Repo vorhanden):
-    - texte/<kind>/<Autor>/<Werk>.txt                → Originaltext
-    - texte/<kind>/<Autor>/<Werk>_birkenbihl.txt     → Birkenbihl-Version
-    - Drafts werden direkt im Editor unten rechts bearbeitet und später zu PDFs.
-
-    PDFs:
-    - Original-PDFs: pdf/original_<kind>_pdf/<Autor>/<Werk>_...
-    - Draft-PDFs:    pdf_drafts/draft_<kind>_pdf/<Autor>/<Werk>_DRAFT_LATEST_...
-    (Details siehe work.js → pdfPath())
-  -->
-
-  <header>
-    <h1 id="work-title">Werkseite</h1>
-  </header>
-
-  <!-- PDF-Auswahl -->
-  <section id="pdf-viewer">
-    <h2>PDF-Ansicht</h2>
-    <div class="button-groups">
-      <div class="group">
-        <label><input type="radio" name="srcSel" value="original" checked> Original</label>
-        <label><input type="radio" name="srcSel" value="draft"> Entwurf</label>
-      </div>
-      <div class="group">
-        <label><input type="radio" name="strengthSel" value="NORMAL" checked> Normal</label>
-        <label><input type="radio" name="strengthSel" value="GR_FETT"> Fett</label>
-        <label><input type="radio" name="strengthSel" value="DE_FETT"> DE-Fett</label>
-      </div>
-      <div class="group">
-        <label><input type="radio" name="colorSel" value="COLOUR" checked> Colour</label>
-        <label><input type="radio" name="colorSel" value="BLACK_WHITE"> BlackWhite</label>
-      </div>
-      <div class="group">
-        <label><input type="radio" name="tagSel" value="TAGS" checked> Tags</label>
-        <label><input type="radio" name="tagSel" value="NO_TAGS"> NoTag</label>
-      </div>
-      <div class="group" id="meterRow" style="display:none">
-        <label><input type="radio" name="meterSel" value="METER_ON" checked> Versmaß</label>
-        <label><input type="radio" name="meterSel" value="METER_OFF"> Ohne Versmaß</label>
+  <div class="wrap">
+    <div class="bar">
+      <div class="title" id="work-title">Werkseite</div>
+      <div class="right">
+        <a class="btn" href="index.html">Start</a>
       </div>
     </div>
-    <p id="pdfStatus" class="status">PDF-Status: ...</p>
-    <iframe id="pdfFrame" src="" width="100%" height="600px"></iframe>
-  </section>
 
-  <!-- Textanzeige -->
-  <section id="text-viewer">
-    <h2>Texte</h2>
-    <div class="text-columns">
-      <!-- Original -->
-      <div class="col">
-        <h3>Original</h3>
-        <div class="toolbar">
-          <label><input type="checkbox" id="origHideTags"> Tags verstecken</label>
-          <label><input type="checkbox" id="origHideColors"> Farbkürzel verstecken</label>
-          <button id="origSizeMinus">-</button>
-          <button id="origSizePlus">+</button>
+    <!-- Dynamische Knopfleiste -->
+    <div id="controls" class="controls" aria-label="Anzeige-Optionen"></div>
+
+    <!-- Quelltexte -->
+    <div class="pane-wrap">
+      <div class="pane">
+        <h3>Original (.txt)</h3>
+        <div class="tools">
+          <label><input type="checkbox" id="origHideTags" />Grammatik-Tags ausblenden</label>
+          <label><input type="checkbox" id="origHideColors" />Farbkürzel ausblenden</label>
+          <div class="spacer"></div>
+          <button class="btn" id="origSizeMinus">A−</button>
+          <button class="btn" id="origSizePlus">A+</button>
         </div>
-        <pre id="origSrc" class="src"></pre>
+        <pre id="origSrc" aria-live="polite">Lade Original…</pre>
       </div>
 
-      <!-- Birkenbihl -->
-      <div class="col">
-        <h3>Birkenbihl</h3>
-        <div class="toolbar">
-          <label><input type="checkbox" id="birkHideTags"> Tags verstecken</label>
-          <label><input type="checkbox" id="birkHideColors"> Farbkürzel verstecken</label>
-          <button id="birkSizeMinus">-</button>
-          <button id="birkSizePlus">+</button>
+      <div class="pane">
+        <h3>Birkenbihl (.txt)</h3>
+        <div class="tools">
+          <label><input type="checkbox" id="birkHideTags" />Grammatik-Tags ausblenden</label>
+          <label><input type="checkbox" id="birkHideColors" />Farbkürzel ausblenden</label>
+          <label><input type="checkbox" id="syncScroll" checked />Scroll synchronisieren</label>
+          <div class="spacer"></div>
+          <button class="btn" id="birkSizeMinus">A−</button>
+          <button class="btn" id="birkSizePlus">A+</button>
         </div>
-        <pre id="birkSrc" class="src"></pre>
-      </div>
-
-      <!-- Entwurf -->
-      <div class="col">
-        <h3>Entwurf</h3>
-        <div class="toolbar">
-          <label><input type="checkbox" id="draftHideTags"> Tags verstecken</label>
-          <label><input type="checkbox" id="draftHideColors"> Farbkürzel verstecken</label>
-          <button id="draftSizeMinus">-</button>
-          <button id="draftSizePlus">+</button>
-          <button id="resetDraftBtn">Entwurf zurücksetzen</button>
-        </div>
-        <textarea id="draftEditor" class="editor"></textarea>
+        <pre id="birkSrc" aria-live="polite">Lade Birkenbihl…</pre>
       </div>
     </div>
-    <div class="sync-option">
-      <label><input type="checkbox" id="syncScroll"> Scrollen synchronisieren (Original ↔ Birkenbihl)</label>
+
+    <!-- Entwurf -->
+    <div class="pane" style="margin-top:12px;">
+      <h3>Entwurf (bearbeitbar)</h3>
+      <div class="tools">
+        <button class="btn" id="resetDraftBtn">Entwurf zurücksetzen</button>
+        <div class="spacer"></div>
+        <button class="btn" id="draftSizeMinus">A−</button>
+        <button class="btn" id="draftSizePlus">A+</button>
+      </div>
+      <textarea id="draftEditor" rows="12" placeholder="Hier können Sie Ihren Entwurf bearbeiten…"></textarea>
     </div>
-  </section>
+
+    <!-- PDF-Viewer -->
+    <div class="viewer" style="margin-top:12px;">
+      <div id="pdfStatus">PDF-Status: …</div>
+      <iframe id="pdfFrame" title="PDF-Ansicht"></iframe>
+    </div>
+  </div>
+
+  <script type="module" src="work.js"></script>
 </body>
 </html>
