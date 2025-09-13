@@ -299,8 +299,16 @@ function createTagRow(tag, type, defaultHigh) {
   rotCheck.type = "checkbox";
   rotCheck.id = `color_red_${tag}`;
   rotCheck.addEventListener("change", () => {
-    updateTagColor(tag, "red", rotCheck.checked);
-    updateTagRowColor(div, tag, "red", rotCheck.checked);
+    if (rotCheck.checked) {
+      // Deaktiviere andere Farben
+      blauCheck.checked = false;
+      gruenCheck.checked = false;
+      updateTagColor(tag, "red", true);
+      updateTagRowColor(div, tag, "red", true);
+    } else {
+      updateTagColor(tag, "red", false);
+      updateTagRowColor(div, tag, "red", false);
+    }
   });
 
   // Blau Checkbox (Spalte 5)
@@ -308,8 +316,16 @@ function createTagRow(tag, type, defaultHigh) {
   blauCheck.type = "checkbox";
   blauCheck.id = `color_blue_${tag}`;
   blauCheck.addEventListener("change", () => {
-    updateTagColor(tag, "blue", blauCheck.checked);
-    updateTagRowColor(div, tag, "blue", blauCheck.checked);
+    if (blauCheck.checked) {
+      // Deaktiviere andere Farben
+      rotCheck.checked = false;
+      gruenCheck.checked = false;
+      updateTagColor(tag, "blue", true);
+      updateTagRowColor(div, tag, "blue", true);
+    } else {
+      updateTagColor(tag, "blue", false);
+      updateTagRowColor(div, tag, "blue", false);
+    }
   });
 
   // Grün Checkbox (Spalte 6)
@@ -317,8 +333,16 @@ function createTagRow(tag, type, defaultHigh) {
   gruenCheck.type = "checkbox";
   gruenCheck.id = `color_green_${tag}`;
   gruenCheck.addEventListener("change", () => {
-    updateTagColor(tag, "green", gruenCheck.checked);
-    updateTagRowColor(div, tag, "green", gruenCheck.checked);
+    if (gruenCheck.checked) {
+      // Deaktiviere andere Farben
+      rotCheck.checked = false;
+      blauCheck.checked = false;
+      updateTagColor(tag, "green", true);
+      updateTagRowColor(div, tag, "green", true);
+    } else {
+      updateTagColor(tag, "green", false);
+      updateTagRowColor(div, tag, "green", false);
+    }
   });
 
   // Nicht Zeigen Checkbox (Spalte 7)
@@ -517,7 +541,7 @@ function setupModalEvents() {
     const statusSpan = toggleAllColorsBtn.querySelector(".toggle-status");
 
     if (isOn) {
-       // Alle Farben deaktivieren
+       // Originale Farben deaktivieren - alle Farben entfernen
        [...SUP_TAGS, ...SUB_TAGS].forEach((tag) => {
          delete state.tagConfig.tagColors[tag];
          const rotCheck = document.getElementById(`color_red_${tag}`);
@@ -533,7 +557,7 @@ function setupModalEvents() {
       statusSpan.textContent = "Aus";
       statusSpan.className = "toggle-status red";
     } else {
-      // Alle Farben aktivieren (zurück zu Standard)
+      // Originale Farben aktivieren - Standard-Konfiguration
       [...SUP_TAGS, ...SUB_TAGS].forEach((tag) => {
         // Nur Aj auf blau setzen (Standard)
         if (tag === "Aj") {
@@ -666,7 +690,7 @@ async function performRendering() {
   form.append("options", JSON.stringify(payload));
 
   try {
-    const res = await fetch(`${WORKER_BASE}`, {
+    const res = await fetch(`${WORKER_BASE}/render`, {
       method: "POST",
       body: form,
       mode: "cors",

@@ -382,10 +382,11 @@
 
 .placement-header {
   display: grid;
-  grid-template-columns: 120px 1fr 1fr 1fr 1fr 1fr 1fr; /* Feste Breite für Tag-Name + Hoch + Tief + rot + blau + grün + Nicht Zeigen */
+  grid-template-columns: 120px 1fr 1fr 1fr 1fr 1fr 1fr; /* Feste Breite für Tag-Name + Hoch + Tief + rot + blau + grün + Tag verstecken */
   gap: 8px;
   margin-bottom: 10px;
   text-align: center;
+  margin-left: 0; /* Entferne margin-left um Header zu zentrieren */
 }
 
 .placement-label,
