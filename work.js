@@ -347,11 +347,10 @@ function updateTagRowColor(row, tag, color, enabled) {
     row.style.borderColor = getColorBorder(color);
   } else {
     // Prüfe ob andere Farben aktiv sind
-    // Escape special characters in tag for CSS selector
-    const escapedTag = tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const hasRed = row.querySelector(`#color_red_${escapedTag}`).checked;
-    const hasBlue = row.querySelector(`#color_blue_${escapedTag}`).checked;
-    const hasGreen = row.querySelector(`#color_green_${escapedTag}`).checked;
+    // Finde die Checkboxen direkt ohne CSS-Selektor
+    const hasRed = row.querySelector(`input[id="color_red_${tag}"]`)?.checked || false;
+    const hasBlue = row.querySelector(`input[id="color_blue_${tag}"]`)?.checked || false;
+    const hasGreen = row.querySelector(`input[id="color_green_${tag}"]`)?.checked || false;
 
     if (hasRed) {
       row.style.backgroundColor = getColorBackground("red");
@@ -518,19 +517,18 @@ function setupModalEvents() {
     const statusSpan = toggleAllColorsBtn.querySelector(".toggle-status");
 
     if (isOn) {
-      // Alle Farben deaktivieren
-      [...SUP_TAGS, ...SUB_TAGS].forEach((tag) => {
-        delete state.tagConfig.tagColors[tag];
-        const escapedTag = tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-        const rotCheck = document.getElementById(`color_red_${escapedTag}`);
-        const blauCheck = document.getElementById(`color_blue_${escapedTag}`);
-        const gruenCheck = document.getElementById(`color_green_${escapedTag}`);
-        if (rotCheck) rotCheck.checked = false;
-        if (blauCheck) blauCheck.checked = false;
-        if (gruenCheck) gruenCheck.checked = false;
-        const row = rotCheck?.closest(".tag-checkbox");
-        if (row) updateTagRowColor(row, tag, "red", false);
-      });
+       // Alle Farben deaktivieren
+       [...SUP_TAGS, ...SUB_TAGS].forEach((tag) => {
+         delete state.tagConfig.tagColors[tag];
+         const rotCheck = document.getElementById(`color_red_${tag}`);
+         const blauCheck = document.getElementById(`color_blue_${tag}`);
+         const gruenCheck = document.getElementById(`color_green_${tag}`);
+         if (rotCheck) rotCheck.checked = false;
+         if (blauCheck) blauCheck.checked = false;
+         if (gruenCheck) gruenCheck.checked = false;
+         const row = rotCheck?.closest(".tag-checkbox");
+         if (row) updateTagRowColor(row, tag, "red", false);
+       });
       toggleAllColorsBtn.dataset.state = "off";
       statusSpan.textContent = "Aus";
       statusSpan.className = "toggle-status red";
@@ -540,8 +538,7 @@ function setupModalEvents() {
         // Nur Aj auf blau setzen (Standard)
         if (tag === "Aj") {
           state.tagConfig.tagColors[tag] = "blue";
-          const escapedTag = tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-          const blauCheck = document.getElementById(`color_blue_${escapedTag}`);
+          const blauCheck = document.getElementById(`color_blue_${tag}`);
           if (blauCheck) {
             blauCheck.checked = true;
             const row = blauCheck.closest(".tag-checkbox");
@@ -669,7 +666,7 @@ async function performRendering() {
   form.append("options", JSON.stringify(payload));
 
   try {
-    const res = await fetch(`${WORKER_BASE}/render`, {
+    const res = await fetch(`${WORKER_BASE}`, {
       method: "POST",
       body: form,
       mode: "cors",
