@@ -372,7 +372,6 @@
   margin-bottom: 15px;
 }
 
-
 .placement-header {
   display: grid;
   grid-template-columns: 120px 1fr 1fr 1fr 1fr 1fr 1fr; /* 7 Spalten: Tag (120px) + hoch-gestellt + tief-gestellt + rot + blau + grün + Tag verstecken */
@@ -383,10 +382,9 @@
   padding: 0 12px; /* Gleiche Padding wie bei .tag-checkbox */
 }
 
-
 .tag-placeholder {
   font-size: 11px;
-  color: transparent; /* Unsichtbar machen */
+  color: #f8fafc; /* Gleiche Farbe wie Hintergrund der .tag-checkbox */
   font-weight: 500;
   padding: 4px 2px;
   text-align: center;
