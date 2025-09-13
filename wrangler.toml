@@ -1,0 +1,4 @@
+name = "birkenbihl-draft-01"
+main = "worker.js"
+compatibility_date = "2025-09-05"
+workers_dev = true
