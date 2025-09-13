@@ -2,3 +2,10 @@ name = "birkenbihl-draft-01"
 main = "worker.js"
 compatibility_date = "2025-09-05"
 workers_dev = true
+
+# Umgebungsvariablen für GitHub API
+[vars]
+OWNER = "klemptobias-oss"
+REPO = "birkenbihl-translinear_public"
+BRANCH = "main"
+# GITHUB_TOKEN muss über wrangler secret set gesetzt werden

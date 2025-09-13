@@ -150,6 +150,11 @@ export default {
     const token = env.GITHUB_TOKEN;
 
     if (!owner || !repo || !token) {
+      console.log("Missing environment variables:", {
+        owner: !!owner,
+        repo: !!repo,
+        token: !!token,
+      });
       return resp(
         {
           ok: false,

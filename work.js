@@ -134,6 +134,7 @@ function basePdfDir() {
   if (state.source === "original") {
     return `${PDF_BASE}/${state.kind}/${state.author}/${state.work}`;
   } else {
+    // Für Entwürfe: pdf_drafts/poesie_drafts/Autor/Werk/ oder pdf_drafts/prosa_drafts/Autor/Werk/
     const kindDraft =
       state.kind === "poesie" ? "poesie_drafts" : "prosa_drafts";
     return `${DRAFT_BASE}/${kindDraft}/${state.author}/${state.work}`;
@@ -744,23 +745,12 @@ async function performRendering() {
   form.append("filename", file.name);
 
   try {
-    // Versuche verschiedene Endpoints (nur die, die der Worker unterstützt)
-    let res;
-    const endpoints = ["/render", "/api/render", "/generate", "/draft"];
-
-    for (const endpoint of endpoints) {
-      try {
-        res = await fetch(`${WORKER_BASE}${endpoint}`, {
-          method: "POST",
-          body: form,
-          mode: "cors",
-        });
-        if (res.ok) break;
-      } catch (e) {
-        console.log(`Endpoint ${endpoint} failed:`, e.message);
-        continue;
-      }
-    }
+    // Nur eine Anfrage an /draft - das ist der korrekte Endpoint
+    const res = await fetch(`${WORKER_BASE}/draft`, {
+      method: "POST",
+      body: form,
+      mode: "cors",
+    });
 
     if (!res || !res.ok) {
       // Fallback: Versuche lokalen Server
@@ -794,19 +784,28 @@ async function performRendering() {
     const data = await res.json();
     if (!data?.ok) throw new Error("Worker-Antwort unvollständig.");
 
-    // Der Worker speichert nur Textdateien, keine PDFs
-    // Zeige eine entsprechende Meldung
-    el.draftStatus.textContent = `Entwurf erfolgreich gespeichert! (${data.filename})`;
+    // Der Worker speichert den Text in texte_drafts/
+    el.draftStatus.textContent = `Text gespeichert: ${data.filename}`;
 
-    // Für PDF-Anzeige verwenden wir ein Fallback
+    // Zeige Anweisungen für PDF-Generierung
+    setTimeout(() => {
+      el.draftStatus.innerHTML = `
+        <div style="color: #059669; font-weight: bold;">
+          ✓ Text gespeichert: ${data.filename}
+        </div>
+        <div style="color: #dc2626; margin-top: 8px;">
+          ⚠ PDF-Generierung: Führen Sie manuell aus:<br>
+          <code style="background: #f3f4f6; padding: 2px 4px; border-radius: 3px;">
+            python build_${state.kind}_drafts_adapter.py texte_drafts/${state.kind}/${state.author}/${state.work}/${data.filename}
+          </code>
+        </div>
+      `;
+    }, 1000);
+
+    // Für PDF-Anzeige verwenden wir ein Fallback (falls PDFs bereits existieren)
     state.lastDraftUrl = getCurrentPdfUrl();
     state.source = "draft";
     updatePdfView(true);
-
-    // Zeige zusätzliche Info
-    setTimeout(() => {
-      el.draftStatus.textContent = `Text gespeichert: ${data.filename}. PDF-Generierung noch nicht verfügbar.`;
-    }, 2000);
   } catch (e) {
     console.error(e);
     if (
