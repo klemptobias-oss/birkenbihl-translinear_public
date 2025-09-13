@@ -372,9 +372,12 @@ function updateTagRowColor(row, tag, color, enabled) {
   } else {
     // Prüfe ob andere Farben aktiv sind
     // Finde die Checkboxen direkt ohne CSS-Selektor
-    const hasRed = row.querySelector(`input[id="color_red_${tag}"]`)?.checked || false;
-    const hasBlue = row.querySelector(`input[id="color_blue_${tag}"]`)?.checked || false;
-    const hasGreen = row.querySelector(`input[id="color_green_${tag}"]`)?.checked || false;
+    const hasRed =
+      row.querySelector(`input[id="color_red_${tag}"]`)?.checked || false;
+    const hasBlue =
+      row.querySelector(`input[id="color_blue_${tag}"]`)?.checked || false;
+    const hasGreen =
+      row.querySelector(`input[id="color_green_${tag}"]`)?.checked || false;
 
     if (hasRed) {
       row.style.backgroundColor = getColorBackground("red");
@@ -541,18 +544,27 @@ function setupModalEvents() {
     const statusSpan = toggleAllColorsBtn.querySelector(".toggle-status");
 
     if (isOn) {
-       // Originale Farben deaktivieren - alle Farben entfernen
-       [...SUP_TAGS, ...SUB_TAGS].forEach((tag) => {
-         delete state.tagConfig.tagColors[tag];
-         const rotCheck = document.getElementById(`color_red_${tag}`);
-         const blauCheck = document.getElementById(`color_blue_${tag}`);
-         const gruenCheck = document.getElementById(`color_green_${tag}`);
-         if (rotCheck) rotCheck.checked = false;
-         if (blauCheck) blauCheck.checked = false;
-         if (gruenCheck) gruenCheck.checked = false;
-         const row = rotCheck?.closest(".tag-checkbox");
-         if (row) updateTagRowColor(row, tag, "red", false);
-       });
+      // Originale Farben deaktivieren - alle Farben entfernen
+      [...SUP_TAGS, ...SUB_TAGS].forEach((tag) => {
+        delete state.tagConfig.tagColors[tag];
+        const rotCheck = document.getElementById(`color_red_${tag}`);
+        const blauCheck = document.getElementById(`color_blue_${tag}`);
+        const gruenCheck = document.getElementById(`color_green_${tag}`);
+        if (rotCheck) rotCheck.checked = false;
+        if (blauCheck) blauCheck.checked = false;
+        if (gruenCheck) gruenCheck.checked = false;
+        const row = rotCheck?.closest(".tag-checkbox");
+        if (row) updateTagRowColor(row, tag, "red", false);
+      });
+
+      // Quick Controls auch deaktivieren
+      state.tagConfig.quickControls.partizipeBlau = false;
+      state.tagConfig.quickControls.verbenGruen = false;
+      state.tagConfig.quickControls.nomenRot = false;
+      document.getElementById("partizipeBlau").checked = false;
+      document.getElementById("verbenGruen").checked = false;
+      document.getElementById("nomenRot").checked = false;
+
       toggleAllColorsBtn.dataset.state = "off";
       statusSpan.textContent = "Aus";
       statusSpan.className = "toggle-status red";
@@ -570,6 +582,15 @@ function setupModalEvents() {
           }
         }
       });
+
+      // Quick Controls auch aktivieren
+      state.tagConfig.quickControls.partizipeBlau = true;
+      state.tagConfig.quickControls.verbenGruen = true;
+      state.tagConfig.quickControls.nomenRot = true;
+      document.getElementById("partizipeBlau").checked = true;
+      document.getElementById("verbenGruen").checked = true;
+      document.getElementById("nomenRot").checked = true;
+
       toggleAllColorsBtn.dataset.state = "on";
       statusSpan.textContent = "An";
       statusSpan.className = "toggle-status green";

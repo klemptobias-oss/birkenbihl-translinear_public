@@ -387,6 +387,7 @@
   margin-bottom: 10px;
   text-align: center;
   margin-left: 0; /* Entferne margin-left um Header zu zentrieren */
+  padding: 0 12px; /* Gleiche Padding wie bei .tag-checkbox */
 }
 
 .placement-label,
