@@ -372,17 +372,10 @@
   margin-bottom: 15px;
 }
 
-.tag-group h4 {
-  margin: 0 0 10px 0;
-  font-size: 16px;
-  color: #374151;
-  text-align: center;
-  margin-left: 50px; /* Verschiebt "Stellung" nach rechts, über Hoch/Tief */
-}
 
 .placement-header {
   display: grid;
-  grid-template-columns: 120px 1fr 1fr 1fr 1fr 1fr 1fr; /* Feste Breite für Tag-Name + Hoch + Tief + rot + blau + grün + Tag verstecken */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* 6 Spalten: hoch-gestellt + tief-gestellt + rot + blau + grün + Tag verstecken */
   gap: 8px;
   margin-bottom: 10px;
   text-align: center;
@@ -390,13 +383,6 @@
   padding: 0 12px; /* Gleiche Padding wie bei .tag-checkbox */
 }
 
-.tag-name-header {
-  font-size: 11px;
-  color: #6b7280;
-  font-weight: 600;
-  padding: 4px 2px;
-  text-align: center;
-}
 
 .placement-label,
 .color-label,
@@ -411,13 +397,13 @@
   font-weight: 600;
 }
 
-.color-label:nth-child(4) {
+.color-label:nth-child(3) {
   color: #ef4444;
 } /* rot */
-.color-label:nth-child(5) {
+.color-label:nth-child(4) {
   color: #3b82f6;
 } /* blau */
-.color-label:nth-child(6) {
+.color-label:nth-child(5) {
   color: #10b981;
 } /* grün */
 
@@ -434,7 +420,7 @@
 
 .tag-checkbox {
   display: grid;
-  grid-template-columns: 120px 1fr 1fr 1fr 1fr 1fr 1fr; /* Feste Breite für Tag-Name + Hoch + Tief + rot + blau + grün + Nicht Zeigen */
+  grid-template-columns: 120px 1fr 1fr 1fr 1fr 1fr 1fr; /* Feste Breite für Tag-Name + hoch-gestellt + tief-gestellt + rot + blau + grün + Tag verstecken */
   gap: 8px;
   align-items: center;
   padding: 8px 12px;
