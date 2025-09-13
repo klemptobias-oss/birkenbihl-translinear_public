@@ -1,136 +1,173 @@
-/* ===== Werkseiten-spezifische Styles (generisch) =====
-   - nutzt Variablen aus style.css (z.B. --edge, --card, --muted)
-   - zusätzliche, nur hier benutzte Variablen:
-     --gap, --mono-size, --mono-line, --pane-height
-*/
-:root{
-  --gap: 14px;
+/* ======= Kopfbereich ======= */
+.topbar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--paper, #fafafa);
+  border-bottom: 1px solid var(--edge, #e5e7eb);
+  padding: 10px 16px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+.topbar-left{ justify-self: start; }
+.topbar-center{ justify-self: center; }
+.topbar-right{ justify-self: end; }
 
-  /* Typo & Pane-Höhe (zentral justierbar) */
-  --mono-size: 0.95rem;   /* Grundgröße Monospace */
-  --mono-line: 1.42;      /* Zeilenhöhe Monospace */
-  --pane-height: 68vh;    /* Höhe der unteren Edit-/Ansichtspane */
+.back-link{
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--link, #0b5);
+}
+.back-link:hover{ text-decoration: underline; }
+
+.page-title{
+  margin: 0;
+  font-size: clamp(22px, 3.2vw, 34px); /* deutlich größer */
+  font-weight: 800;
+  text-align: center;                  /* mittig */
+  line-height: 1.2;
 }
 
-/* ===== PDF oben rechts ===== */
-/* style.css setzt bereits Overlay/Spinner-Positionierung; hier Größe/Anordnung */
-.pdf-frame { width:100%; height:78vh; border:1px solid var(--edge); background:#fafafa; }
-.pdf-controls {
-  position: sticky; top:0; background:#fff; padding:8px 0; z-index:2;
-  display:flex; gap:8px; align-items:center; margin-bottom:8px; flex-wrap:wrap;
-}
-.pdf-controls .muted { margin-left:auto; }
-.radio { display:inline-flex; align-items:center; gap:6px; }
-
-/* ===== Textdarstellung ===== */
-.src, .editor {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: var(--mono-size);
-  line-height: var(--mono-line);
-}
-.small { font-size:0.85em; color:var(--muted); }
-.ok { color:#2a7; } .warn { color:#c71; } .err { color:#c33; }
-.save-dot { width:8px; height:8px; border-radius:50%; display:inline-block; margin-right:6px; background:#aaa; vertical-align:middle; }
-.save-dot.ok { background:#2a7; } .save-dot.busy { background:#c71; }
-
-/* ===== Unten: zweispaltig (breit) ===== */
-.card-wide { width:100%; }
-.bb-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--gap); }
-@media (max-width: 1100px){ .bb-grid{ grid-template-columns:1fr; } }
-
-.pane { border:1px solid var(--edge); background:#fff; border-radius:8px; }
-.pane h3 { margin:0; padding:10px 12px; border-bottom:1px solid var(--edge); }
-.pane-body { padding:10px 12px; }
-.pane-body .split { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:8px; }
-
-.srcbox {
-  background:#f8f8f8; border:1px solid var(--edge); padding:8px;
-  height:var(--pane-height); overflow:auto;
-}
-.editor {
-  width:100%; height:var(--pane-height); border:1px solid var(--edge);
-  background:#fff; padding:8px;
+/* ======= Layout ======= */
+.wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
 }
 
-/* Dezente vertikale Trennlinie zwischen Original und Entwurf */
-.bb-grid > .pane + .pane { position: relative; }
-.bb-grid > .pane + .pane::before{
-  content:""; position:absolute; left:-7px; top:0; bottom:0;
-  width:1px; background: var(--edge);
+.notice.small{
+  font-size: 13px;
+  color: var(--muted,#666);
+  margin-bottom: 12px;
 }
 
-/* ===== Anzeige-Schalter (An/Aus) ===== */
-.toggle-row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:6px 0 10px; }
-.toggle {
-  display:inline-flex; align-items:center; gap:8px;
-  border:1px solid var(--edge); padding:8px 10px; border-radius:8px;
-  background:#fff; cursor:pointer; user-select:none;
-}
-.toggle input { display:none; }
-.state { font-weight:700; }
-.state.on { color:#147a2e; }   /* grün */
-.state.off{ color:#b5242a; }   /* rot */
-.toggle:hover { background:#f5f7f8; }
-
-/* ===== Modal (Bestätigung & Optionen) ===== */
-.modal-backdrop,
-.opt-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.45); display:none; align-items:center; justify-content:center; z-index:1000; }
-
-.modal,
-.opt-modal {
-  background:#fff; border:1px solid var(--edge); border-radius:10px;
-  width:min(640px,96vw); max-height:92vh; overflow:auto;
-  box-shadow:0 10px 28px rgba(0,0,0,0.2);
+.grid-2x2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
-.modal { width:min(560px,92vw); }
+/* ======= Paneel ======= */
+.pane{
+  background: var(--card, #fff);
+  border: 1px solid var(--edge, #e5e7eb);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
-.modal-header, .opt-header {
-  display:flex; align-items:center; justify-content:space-between;
-  padding:12px 14px; border-bottom:1px solid var(--edge);
-}
-.modal-title, .opt-title { font-weight:600; }
-.modal-close { appearance:none; border:none; background:transparent; font-size:18px; line-height:1; cursor:pointer; padding:4px 6px; }
-.modal-body { padding:14px; }
-.modal-actions { display:flex; gap:8px; justify-content:flex-end; padding:12px 14px; border-top:1px solid var(--edge); }
-.btn.secondary { background:#eee; color:#333; } .btn.danger { background:#b5242a; color:#fff; }
-
-/* Modal: PDF-Optionen */
-.opt-body { padding:14px; display:grid; grid-template-columns:1fr; gap:12px; }
-.opt-section { border:1px dashed var(--edge); border-radius:8px; padding:10px; }
-.opt-row { display:flex; flex-direction:column; gap:8px; }
-.opt-check { display:flex; align-items:center; gap:8px; }
-.opt-color-chip { display:inline-block; padding:2px 6px; border-radius:6px; font-weight:600; }
-.chip-red { background:#ffd9d9; color:#b40000; }
-.chip-green { background:#dcffe5; color:#0f6b2b; }
-.chip-blue { background:#dbeaff; color:#0a3f91; }
-.opt-actions { display:flex; gap:8px; justify-content:flex-end; padding:12px 14px; border-top:1px solid var(--edge); }
-.opt-toggle-adv { margin-top:6px; }
-details.opt-adv summary { cursor:pointer; font-weight:600; }
-.muted-note { color:var(--muted); font-size:0.9em; }
-
-/* ===== Font/Height Toolbars ===== */
-.sizebar { display:flex; gap:6px; align-items:center; margin-bottom:6px; }
-.sizebar .chip {
-  font-size:0.85em; color:#555; background:#f1f3f5;
-  border:1px solid var(--edge); border-radius:6px; padding:2px 6px;
+  /* >>> höher machen (≈ 5–6 cm extra) */
+  min-height: 560px;  /* ~5.5 cm mehr als "normal groß" */
 }
 
-/* Doppelschalter für Textgröße (− / +) */
-.duo-toggle{
-  display:inline-flex; align-items:center; gap:10px;
-  border:1px solid var(--edge); background:#fff; border-radius:999px;
-  padding:4px 10px; line-height:1;
+.pane-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--edge, #e5e7eb);
+  background: #f9fafb;
 }
-.duo{
-  width:26px; height:26px; border-radius:50%;
-  border:1px solid var(--edge); background:#fff;
-  display:inline-flex; align-items:center; justify-content:center;
-  font-weight:700; font-size:16px; cursor:pointer;
+.pane-title{
+  font-weight: 700;
 }
-.duo.minus{ color:#b5242a; }   /* rot */
-.duo.plus { color:#147a2e; }   /* grün */
-.duo:active{ transform:translateY(1px); }
+.pane-tools .btn{
+  margin-left: 6px;
+}
 
-/* kleiner optischer Ausgleich */
-#orig-font-toggle span, #draft-font-toggle span { font-weight:600; opacity:0.9; }
+.pane-body{
+  flex: 1 1 auto;
+  padding: 12px;
+}
+.pane-body.scroll{
+  overflow: auto;
+}
+.pane-body.mono{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* PDF-Viewer im Paneel */
+.pdf-body{
+  padding: 0;
+}
+.pdf-body iframe{
+  width: 100%;
+  height: 100%;        /* füllt die erhöhte Paneelhöhe sauber aus */
+  border: 0;
+  display: block;
+}
+
+/* ======= Segmented Controls ======= */
+.option-groups{
+  padding: 10px 12px 0;
+  border-bottom: 1px solid var(--edge, #e5e7eb);
+}
+.opt-row{
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.opt-label{
+  font-weight: 600;
+}
+.seg{
+  display: inline-flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.seg-btn{
+  border: 1px solid var(--edge,#e5e7eb);
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.seg-btn.active{
+  background: #0b5;
+  color: #fff;
+  border-color: #0b5;
+}
+
+/* ======= Buttons/Inputs ======= */
+.btn{
+  border: 1px solid var(--edge,#e5e7eb);
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.btn.primary{
+  background: #0b5;
+  color: #fff;
+  border-color: #0b5;
+}
+.btn:disabled{
+  opacity: .5;
+  cursor: not-allowed;
+}
+.draft-uploader{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--edge, #e5e7eb);
+}
+.muted{
+  color: var(--muted,#666);
+  font-size: 13px;
+}
+
+/* ======= Responsiv ======= */
+@media (max-width: 900px){
+  .grid-2x2{
+    grid-template-columns: 1fr;
+  }
+  .pane{
+    min-height: 480px; /* auf kleineren Screens etwas niedriger */
+  }
+}
