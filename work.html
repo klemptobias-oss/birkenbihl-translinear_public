@@ -226,41 +226,72 @@
           <button id="closeModal" class="btn">&times;</button>
         </div>
         <div class="modal-body">
+          <!-- Quick Controls oben -->
+          <div class="quick-controls">
+            <div class="color-quick-controls">
+              <label class="color-checkbox blue">
+                <input type="checkbox" id="partizipeBlau" checked />
+                <span class="checkmark blue"></span>
+                Partizipe blau
+              </label>
+              <label class="color-checkbox green">
+                <input type="checkbox" id="verbenGruen" checked />
+                <span class="checkmark green"></span>
+                Verben grün
+              </label>
+              <label class="color-checkbox red">
+                <input type="checkbox" id="nomenRot" checked />
+                <span class="checkmark red"></span>
+                Nomen rot
+              </label>
+            </div>
+            <div class="general-controls">
+              <button id="toggleAllTags" class="btn toggle-btn" data-state="on">
+                <span class="toggle-text">Alle Tags</span>
+                <span class="toggle-status green">An</span>
+              </button>
+              <button
+                id="toggleAllColors"
+                class="btn toggle-btn"
+                data-state="on"
+              >
+                <span class="toggle-text">Alle Farben</span>
+                <span class="toggle-status green">An</span>
+              </button>
+            </div>
+          </div>
+
           <div class="config-section">
-            <h3>Grammatik-Tags</h3>
+            <h3>Tag-Konfiguration</h3>
             <div class="tag-controls">
               <div class="tag-group">
-                <h4>Hochgestellt (SUP_TAGS)</h4>
-                <div class="tag-checkboxes" id="supTagsContainer">
-                  <!-- Wird dynamisch gefüllt -->
+                <div class="group-header">
+                  <h4>Stellung</h4>
+                  <div class="placement-header">
+                    <span class="placement-label">Hoch</span>
+                    <span class="placement-label">Tief</span>
+                    <span class="color-label">rot</span>
+                    <span class="color-label">blau</span>
+                    <span class="color-label">grün</span>
+                    <span class="hide-label">Nicht<br />Zeigen</span>
+                  </div>
                 </div>
+                <div id="supTagsContainer" class="tag-checkboxes"></div>
               </div>
               <div class="tag-group">
-                <h4>Tiefgestellt (SUB_TAGS)</h4>
-                <div class="tag-checkboxes" id="subTagsContainer">
-                  <!-- Wird dynamisch gefüllt -->
+                <div class="group-header">
+                  <h4>Stellung</h4>
+                  <div class="placement-header">
+                    <span class="placement-label">Hoch</span>
+                    <span class="placement-label">Tief</span>
+                    <span class="color-label">rot</span>
+                    <span class="color-label">blau</span>
+                    <span class="color-label">grün</span>
+                    <span class="hide-label">Nicht<br />Zeigen</span>
+                  </div>
                 </div>
+                <div id="subTagsContainer" class="tag-checkboxes"></div>
               </div>
-              <div class="tag-group">
-                <h4>Farbsteuerung (COLOR_POS_WHITELIST)</h4>
-                <div class="tag-checkboxes" id="colorTagsContainer">
-                  <!-- Wird dynamisch gefüllt -->
-                </div>
-              </div>
-            </div>
-            <div class="quick-controls">
-              <button id="disableAllTags" class="btn">
-                Alle Tags deaktivieren
-              </button>
-              <button id="enableAllTags" class="btn">
-                Alle Tags aktivieren
-              </button>
-              <button id="disableAllColors" class="btn">
-                Alle Farben deaktivieren
-              </button>
-              <button id="enableAllColors" class="btn">
-                Alle Farben aktivieren
-              </button>
             </div>
           </div>
         </div>

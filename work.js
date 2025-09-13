@@ -1,7 +1,7 @@
 // work.js — universelle Werkseite
 
 // 1) KONFIG
-const WORKER_BASE = "https://birkenbihl-draft-01.klemp-tobias.workers.dev"; // <— HIER deine Worker-URL
+const WORKER_BASE = "https://birkenbihl-draft-01.klemp-tobias.workers.dev"; // Externer Worker
 const TXT_BASE = "texte"; // texte/<kind>/<author>/<work>/
 const PDF_BASE = "pdf"; // pdf/<kind>/<author>/<work>/
 const DRAFT_BASE = "pdf_drafts"; // pdf_drafts/<kind>_drafts/<author>/<work>/
@@ -104,6 +104,13 @@ const state = {
     subTags: new Set(SUB_TAGS),
     colorTags: new Set(COLOR_POS_WHITELIST),
     placementOverrides: {}, // Tag -> "sup" | "sub" | "off"
+    tagColors: {}, // Tag -> "red" | "blue" | "green"
+    hiddenTags: new Set(), // Tags die nicht angezeigt werden sollen
+    quickControls: {
+      partizipeBlau: true,
+      verbenGruen: true,
+      nomenRot: true,
+    },
   },
 };
 
@@ -229,66 +236,187 @@ function hideRenderingModal() {
 }
 
 function populateTagControls() {
-  // SUP_TAGS Container füllen
+  // SUP_TAGS Container füllen (standardmäßig alle auf "Hoch")
   const supContainer = document.getElementById("supTagsContainer");
   supContainer.innerHTML = "";
 
   SUP_TAGS.forEach((tag) => {
-    const checkbox = createTagCheckbox(
-      tag,
-      "sup",
-      state.tagConfig.supTags.has(tag)
-    );
-    supContainer.appendChild(checkbox);
+    const tagRow = createTagRow(tag, "sup", true); // standardmäßig hoch
+    supContainer.appendChild(tagRow);
   });
 
-  // SUB_TAGS Container füllen
+  // SUB_TAGS Container füllen (standardmäßig alle auf "Tief")
   const subContainer = document.getElementById("subTagsContainer");
   subContainer.innerHTML = "";
 
   SUB_TAGS.forEach((tag) => {
-    const checkbox = createTagCheckbox(
-      tag,
-      "sub",
-      state.tagConfig.subTags.has(tag)
-    );
-    subContainer.appendChild(checkbox);
+    const tagRow = createTagRow(tag, "sub", false); // standardmäßig tief
+    subContainer.appendChild(tagRow);
   });
 
-  // COLOR_TAGS Container füllen
-  const colorContainer = document.getElementById("colorTagsContainer");
-  colorContainer.innerHTML = "";
+  // Quick Controls setzen - Standard: alle aktiviert
+  document.getElementById("partizipeBlau").checked = true;
+  document.getElementById("verbenGruen").checked = true;
+  document.getElementById("nomenRot").checked = true;
 
-  COLOR_POS_WHITELIST.forEach((tag) => {
-    const checkbox = createTagCheckbox(
-      tag,
-      "color",
-      state.tagConfig.colorTags.has(tag)
-    );
-    colorContainer.appendChild(checkbox);
-  });
+  // Setze nur Aj auf blau (Standard)
+  const ajBlauCheck = document.getElementById(`color_blue_Aj`);
+  if (ajBlauCheck) {
+    ajBlauCheck.checked = true;
+    state.tagConfig.tagColors["Aj"] = "blue";
+    const row = ajBlauCheck.closest(".tag-checkbox");
+    if (row) updateTagRowColor(row, "Aj", "blue", true);
+  }
 }
 
-function createTagCheckbox(tag, type, checked) {
+function createTagRow(tag, type, defaultHigh) {
   const div = document.createElement("div");
   div.className = "tag-checkbox";
 
-  const checkbox = document.createElement("input");
-  checkbox.type = "checkbox";
-  checkbox.id = `${type}_${tag}`;
-  checkbox.checked = checked;
-  checkbox.addEventListener("change", () =>
-    updateTagConfig(tag, type, checkbox.checked)
+  // Tag-Name (Spalte 1)
+  const tagName = document.createElement("span");
+  tagName.textContent = tag;
+  tagName.className = "tag-name";
+
+  // Hoch Radio Button (Spalte 2)
+  const hochRadio = document.createElement("input");
+  hochRadio.type = "radio";
+  hochRadio.name = `placement_${tag}`;
+  hochRadio.value = "hoch";
+  hochRadio.checked = defaultHigh;
+  hochRadio.addEventListener("change", () => updateTagPlacement(tag, "hoch"));
+
+  // Tief Radio Button (Spalte 3)
+  const tiefRadio = document.createElement("input");
+  tiefRadio.type = "radio";
+  tiefRadio.name = `placement_${tag}`;
+  tiefRadio.value = "tief";
+  tiefRadio.checked = !defaultHigh;
+  tiefRadio.addEventListener("change", () => updateTagPlacement(tag, "tief"));
+
+  // Rot Checkbox (Spalte 4)
+  const rotCheck = document.createElement("input");
+  rotCheck.type = "checkbox";
+  rotCheck.id = `color_red_${tag}`;
+  rotCheck.addEventListener("change", () => {
+    updateTagColor(tag, "red", rotCheck.checked);
+    updateTagRowColor(div, tag, "red", rotCheck.checked);
+  });
+
+  // Blau Checkbox (Spalte 5)
+  const blauCheck = document.createElement("input");
+  blauCheck.type = "checkbox";
+  blauCheck.id = `color_blue_${tag}`;
+  blauCheck.addEventListener("change", () => {
+    updateTagColor(tag, "blue", blauCheck.checked);
+    updateTagRowColor(div, tag, "blue", blauCheck.checked);
+  });
+
+  // Grün Checkbox (Spalte 6)
+  const gruenCheck = document.createElement("input");
+  gruenCheck.type = "checkbox";
+  gruenCheck.id = `color_green_${tag}`;
+  gruenCheck.addEventListener("change", () => {
+    updateTagColor(tag, "green", gruenCheck.checked);
+    updateTagRowColor(div, tag, "green", gruenCheck.checked);
+  });
+
+  // Nicht Zeigen Checkbox (Spalte 7)
+  const hideCheck = document.createElement("input");
+  hideCheck.type = "checkbox";
+  hideCheck.id = `hide_${tag}`;
+  hideCheck.addEventListener("change", () =>
+    updateTagVisibility(tag, hideCheck.checked)
   );
 
-  const label = document.createElement("label");
-  label.htmlFor = `${type}_${tag}`;
-  label.textContent = tag;
-
-  div.appendChild(checkbox);
-  div.appendChild(label);
+  // Alles in die richtige Reihenfolge bringen
+  div.appendChild(tagName);
+  div.appendChild(hochRadio);
+  div.appendChild(tiefRadio);
+  div.appendChild(rotCheck);
+  div.appendChild(blauCheck);
+  div.appendChild(gruenCheck);
+  div.appendChild(hideCheck);
 
   return div;
+}
+
+function updateTagRowColor(row, tag, color, enabled) {
+  if (enabled) {
+    row.style.backgroundColor = getColorBackground(color);
+    row.style.borderColor = getColorBorder(color);
+  } else {
+    // Prüfe ob andere Farben aktiv sind
+    // Escape special characters in tag for CSS selector
+    const escapedTag = tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const hasRed = row.querySelector(`#color_red_${escapedTag}`).checked;
+    const hasBlue = row.querySelector(`#color_blue_${escapedTag}`).checked;
+    const hasGreen = row.querySelector(`#color_green_${escapedTag}`).checked;
+
+    if (hasRed) {
+      row.style.backgroundColor = getColorBackground("red");
+      row.style.borderColor = getColorBorder("red");
+    } else if (hasBlue) {
+      row.style.backgroundColor = getColorBackground("blue");
+      row.style.borderColor = getColorBorder("blue");
+    } else if (hasGreen) {
+      row.style.backgroundColor = getColorBackground("green");
+      row.style.borderColor = getColorBorder("green");
+    } else {
+      row.style.backgroundColor = "#f8fafc";
+      row.style.borderColor = "#e2e8f0";
+    }
+  }
+}
+
+function getColorBackground(color) {
+  switch (color) {
+    case "red":
+      return "#fef2f2";
+    case "blue":
+      return "#eff6ff";
+    case "green":
+      return "#f0fdf4";
+    default:
+      return "#f8fafc";
+  }
+}
+
+function getColorBorder(color) {
+  switch (color) {
+    case "red":
+      return "#fecaca";
+    case "blue":
+      return "#bfdbfe";
+    case "green":
+      return "#bbf7d0";
+    default:
+      return "#e2e8f0";
+  }
+}
+
+function updateTagPlacement(tag, placement) {
+  if (placement === "hoch") {
+    state.tagConfig.placementOverrides[tag] = "sup";
+  } else if (placement === "tief") {
+    state.tagConfig.placementOverrides[tag] = "sub";
+  }
+}
+
+function updateTagColor(tag, color, enabled) {
+  if (enabled) {
+    state.tagConfig.tagColors[tag] = color;
+  } else {
+    delete state.tagConfig.tagColors[tag];
+  }
+}
+
+function updateTagVisibility(tag, hidden) {
+  if (hidden) {
+    state.tagConfig.hiddenTags.add(tag);
+  } else {
+    state.tagConfig.hiddenTags.delete(tag);
+  }
 }
 
 function updateTagConfig(tag, type, enabled) {
@@ -320,8 +448,6 @@ function setupModalEvents() {
   const confirmBtn = document.getElementById("confirmRendering");
   const disableAllTagsBtn = document.getElementById("disableAllTags");
   const enableAllTagsBtn = document.getElementById("enableAllTags");
-  const disableAllColorsBtn = document.getElementById("disableAllColors");
-  const enableAllColorsBtn = document.getElementById("enableAllColors");
 
   // Modal schließen
   closeBtn?.addEventListener("click", hideRenderingModal);
@@ -333,43 +459,100 @@ function setupModalEvents() {
     performRendering();
   });
 
-  // Quick Controls
-  disableAllTagsBtn?.addEventListener("click", () => {
-    document
-      .querySelectorAll("#supTagsContainer input, #subTagsContainer input")
-      .forEach((cb) => {
-        cb.checked = false;
-        const tag = cb.id.split("_")[1];
-        const type = cb.id.split("_")[0];
-        updateTagConfig(tag, type, false);
+  // Quick Controls - Farben
+  const partizipeBlau = document.getElementById("partizipeBlau");
+  const verbenGruen = document.getElementById("verbenGruen");
+  const nomenRot = document.getElementById("nomenRot");
+
+  partizipeBlau?.addEventListener("change", (e) => {
+    state.tagConfig.quickControls.partizipeBlau = e.target.checked;
+    // Diese Quick Controls sind unabhängig von der Tabelle
+    // Sie steuern nur die globale Farb-Logik
+  });
+
+  verbenGruen?.addEventListener("change", (e) => {
+    state.tagConfig.quickControls.verbenGruen = e.target.checked;
+    // Diese Quick Controls sind unabhängig von der Tabelle
+    // Sie steuern nur die globale Farb-Logik
+  });
+
+  nomenRot?.addEventListener("change", (e) => {
+    state.tagConfig.quickControls.nomenRot = e.target.checked;
+    // Diese Quick Controls sind unabhängig von der Tabelle
+    // Sie steuern nur die globale Farb-Logik
+  });
+
+  // Toggle Controls
+  const toggleAllTagsBtn = document.getElementById("toggleAllTags");
+  const toggleAllColorsBtn = document.getElementById("toggleAllColors");
+
+  toggleAllTagsBtn?.addEventListener("click", () => {
+    const isOn = toggleAllTagsBtn.dataset.state === "on";
+    const statusSpan = toggleAllTagsBtn.querySelector(".toggle-status");
+
+    if (isOn) {
+      // Alle Tags deaktivieren
+      [...SUP_TAGS, ...SUB_TAGS].forEach((tag) => {
+        state.tagConfig.hiddenTags.add(tag);
+        const hideCheck = document.getElementById(`hide_${tag}`);
+        if (hideCheck) hideCheck.checked = true;
       });
-  });
-
-  enableAllTagsBtn?.addEventListener("click", () => {
-    document
-      .querySelectorAll("#supTagsContainer input, #subTagsContainer input")
-      .forEach((cb) => {
-        cb.checked = true;
-        const tag = cb.id.split("_")[1];
-        const type = cb.id.split("_")[0];
-        updateTagConfig(tag, type, true);
+      toggleAllTagsBtn.dataset.state = "off";
+      statusSpan.textContent = "Aus";
+      statusSpan.className = "toggle-status red";
+    } else {
+      // Alle Tags aktivieren
+      [...SUP_TAGS, ...SUB_TAGS].forEach((tag) => {
+        state.tagConfig.hiddenTags.delete(tag);
+        const hideCheck = document.getElementById(`hide_${tag}`);
+        if (hideCheck) hideCheck.checked = false;
       });
+      toggleAllTagsBtn.dataset.state = "on";
+      statusSpan.textContent = "An";
+      statusSpan.className = "toggle-status green";
+    }
   });
 
-  disableAllColorsBtn?.addEventListener("click", () => {
-    document.querySelectorAll("#colorTagsContainer input").forEach((cb) => {
-      cb.checked = false;
-      const tag = cb.id.split("_")[1];
-      updateTagConfig(tag, "color", false);
-    });
-  });
+  toggleAllColorsBtn?.addEventListener("click", () => {
+    const isOn = toggleAllColorsBtn.dataset.state === "on";
+    const statusSpan = toggleAllColorsBtn.querySelector(".toggle-status");
 
-  enableAllColorsBtn?.addEventListener("click", () => {
-    document.querySelectorAll("#colorTagsContainer input").forEach((cb) => {
-      cb.checked = true;
-      const tag = cb.id.split("_")[1];
-      updateTagConfig(tag, "color", true);
-    });
+    if (isOn) {
+      // Alle Farben deaktivieren
+      [...SUP_TAGS, ...SUB_TAGS].forEach((tag) => {
+        delete state.tagConfig.tagColors[tag];
+        const escapedTag = tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        const rotCheck = document.getElementById(`color_red_${escapedTag}`);
+        const blauCheck = document.getElementById(`color_blue_${escapedTag}`);
+        const gruenCheck = document.getElementById(`color_green_${escapedTag}`);
+        if (rotCheck) rotCheck.checked = false;
+        if (blauCheck) blauCheck.checked = false;
+        if (gruenCheck) gruenCheck.checked = false;
+        const row = rotCheck?.closest(".tag-checkbox");
+        if (row) updateTagRowColor(row, tag, "red", false);
+      });
+      toggleAllColorsBtn.dataset.state = "off";
+      statusSpan.textContent = "Aus";
+      statusSpan.className = "toggle-status red";
+    } else {
+      // Alle Farben aktivieren (zurück zu Standard)
+      [...SUP_TAGS, ...SUB_TAGS].forEach((tag) => {
+        // Nur Aj auf blau setzen (Standard)
+        if (tag === "Aj") {
+          state.tagConfig.tagColors[tag] = "blue";
+          const escapedTag = tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+          const blauCheck = document.getElementById(`color_blue_${escapedTag}`);
+          if (blauCheck) {
+            blauCheck.checked = true;
+            const row = blauCheck.closest(".tag-checkbox");
+            if (row) updateTagRowColor(row, tag, "blue", true);
+          }
+        }
+      });
+      toggleAllColorsBtn.dataset.state = "on";
+      statusSpan.textContent = "An";
+      statusSpan.className = "toggle-status green";
+    }
   });
 
   // Modal außerhalb klicken schließt es
@@ -386,8 +569,50 @@ async function renderDraftViaWorker(file) {
   showRenderingModal();
 }
 
+function preprocessTextForRendering(text) {
+  let processedText = text;
+
+  // Entferne alle Farb-Marker basierend auf Quick Controls
+  if (!state.tagConfig.quickControls.nomenRot) {
+    // Entferne # Marker (Nomen rot)
+    processedText = processedText.replace(/#/g, "");
+  }
+
+  if (!state.tagConfig.quickControls.verbenGruen) {
+    // Entferne - Marker (Verben grün)
+    processedText = processedText.replace(/-/g, "");
+  }
+
+  if (!state.tagConfig.quickControls.partizipeBlau) {
+    // Entferne + Marker nur bei Partizipien (Pt, Prp), aber nicht bei Adjektiven (Aj)
+    // Das ist komplexer - wir müssen nach Tags suchen
+    processedText = processedText.replace(/\+(?=\w+\(Pt\))/g, "");
+    processedText = processedText.replace(/\+(?=\w+\(Prp\))/g, "");
+  }
+
+  // Jetzt füge neue Marker basierend auf Tag-Konfiguration hinzu
+  Object.entries(state.tagConfig.tagColors).forEach(([tag, color]) => {
+    // Escape special characters in tag for regex
+    const escapedTag = tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const tagPattern = new RegExp(`\\b(\\w+)\\(${escapedTag}\\)`, "g");
+    processedText = processedText.replace(tagPattern, (match, word) => {
+      if (color === "red" && !processedText.includes(`#${word}`)) {
+        return `#${word}(${tag})`;
+      } else if (color === "green" && !processedText.includes(`-${word}`)) {
+        return `-${word}(${tag})`;
+      } else if (color === "blue" && !processedText.includes(`+${word}`)) {
+        return `+${word}(${tag})`;
+      }
+      return match;
+    });
+  });
+
+  return processedText;
+}
+
 async function performRendering() {
   let file = el.draftFile.files?.[0];
+  let textContent = "";
 
   if (!file) {
     // Wenn keine Datei hochgeladen wurde, verwende den aktuellen Entwurfs-Text
@@ -398,11 +623,21 @@ async function performRendering() {
       return;
     }
 
-    // Erstelle eine Blob-Datei aus dem Text
-    const blob = new Blob([draftText], { type: "text/plain" });
+    // Preprocess den Text basierend auf Tag-Konfiguration
+    textContent = preprocessTextForRendering(draftText);
+
+    // Erstelle eine Blob-Datei aus dem verarbeiteten Text
+    const blob = new Blob([textContent], { type: "text/plain" });
     file = new File([blob], `${state.work}_birkenbihl_draft.txt`, {
       type: "text/plain",
     });
+  } else {
+    // Wenn eine Datei hochgeladen wurde, lese sie und preprocess sie
+    textContent = await file.text();
+    textContent = preprocessTextForRendering(textContent);
+
+    const blob = new Blob([textContent], { type: "text/plain" });
+    file = new File([blob], file.name, { type: "text/plain" });
   }
 
   el.draftStatus.textContent = "Rendere Entwurf...";
@@ -423,6 +658,9 @@ async function performRendering() {
       sub_tags: Array.from(state.tagConfig.subTags),
       color_pos_whitelist: Array.from(state.tagConfig.colorTags),
       placement_overrides: state.tagConfig.placementOverrides,
+      tag_colors: state.tagConfig.tagColors,
+      hidden_tags: Array.from(state.tagConfig.hiddenTags),
+      quick_controls: state.tagConfig.quickControls,
     },
   };
 
@@ -434,6 +672,7 @@ async function performRendering() {
     const res = await fetch(`${WORKER_BASE}/render`, {
       method: "POST",
       body: form,
+      mode: "cors",
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
@@ -540,12 +779,20 @@ function wireEvents() {
       draftDownload.addEventListener("click", (e) => {
         e.preventDefault();
         const draftText = el.draftText.textContent;
+        if (!draftText || draftText.trim() === "") {
+          alert("Kein Entwurfs-Text vorhanden zum Herunterladen.");
+          return;
+        }
         const blob = new Blob([draftText], { type: "text/plain" });
         const url = URL.createObjectURL(blob);
-        draftDownload.href = url;
-        draftDownload.download = `${state.work}_birkenbihl_entwurf.txt`;
-        // Cleanup nach dem Download
-        setTimeout(() => URL.revokeObjectURL(url), 1000);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `${state.work}_birkenbihl_entwurf.txt`;
+        a.style.display = "none";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
       });
     }
   }
