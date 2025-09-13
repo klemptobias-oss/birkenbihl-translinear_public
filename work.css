@@ -58,7 +58,7 @@
   flex-direction: column;
 
   /* >>> höher machen (≈ 5–6 cm extra) */
-  min-height: 800px;  /* ~5.5 cm mehr als "normal groß" */
+  min-height: 560px;  /* ~5.5 cm mehr als "normal groß" */
 }
 
 .pane-head{
@@ -70,7 +70,7 @@
   background: #f9fafb;
 }
 .pane-title{
-  font-weight: 2500;
+  font-weight: 700;
 }
 .pane-tools .btn{
   margin-left: 6px;
