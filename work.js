@@ -1,7 +1,7 @@
 // work.js — universelle Werkseite
 
 // 1) KONFIG
-const WORKER_BASE = 'https://birkenbihl-draft-01.klemp-tobias.workers.dev'; // <— HIER deine Worker-URL
+const WORKER_BASE = "https://birkenbihl-draft-01.klemp-tobias.workers.dev"; // <— HIER deine Worker-URL
 const TXT_BASE    = 'texte';        // texte/<kind>/<author>/<work>.txt
 const PDF_BASE    = 'pdf';          // pdf/original_..._pdf/<author>/*.pdf
 const DRAFT_BASE  = 'pdf_drafts';   // pdf_drafts/draft_..._pdf/<author>/*.pdf
