@@ -7,9 +7,42 @@ const PDF_BASE = "pdf"; // pdf/<kind>/<author>/<work>/
 const DRAFT_BASE = "pdf_drafts"; // pdf_drafts/<kind>_drafts/<author>/<work>/
 
 // Tag-Definitionen (aus den Python-Codes)
-const SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','Sup','Ij'};
-const SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'};
-const COLOR_POS_WHITELIST = {'Aj','Pt','Prp','Av','Ko','Art','Pr','Ij'};
+const SUP_TAGS = [
+  "N",
+  "D",
+  "G",
+  "A",
+  "V",
+  "Aj",
+  "Pt",
+  "Prp",
+  "Av",
+  "Ko",
+  "Art",
+  "≈",
+  "Kmp",
+  "Sup",
+  "Ij",
+];
+const SUB_TAGS = [
+  "Pre",
+  "Imp",
+  "Aor",
+  "Per",
+  "Plq",
+  "Fu",
+  "Inf",
+  "Imv",
+  "Akt",
+  "Med",
+  "Pas",
+  "Kon",
+  "Op",
+  "Pr",
+  "AorS",
+  "M/P",
+];
+const COLOR_POS_WHITELIST = ["Aj", "Pt", "Prp", "Av", "Ko", "Art", "Pr", "Ij"];
 
 // 2) URL-Parameter
 function getParam(name, dflt = "") {
@@ -64,14 +97,14 @@ const state = {
 
   meterSupported: false,
   lastDraftUrl: null, // vom Worker zurückbekommen
-  
+
   // Modal-Konfiguration
   tagConfig: {
     supTags: new Set(SUP_TAGS),
     subTags: new Set(SUB_TAGS),
     colorTags: new Set(COLOR_POS_WHITELIST),
-    placementOverrides: {} // Tag -> "sup" | "sub" | "off"
-  }
+    placementOverrides: {}, // Tag -> "sup" | "sub" | "off"
+  },
 };
 
 // 6) Hilfen
@@ -183,81 +216,95 @@ async function saveDraftText() {
 
 // 9) Modal-System für Tag-Konfiguration
 function showRenderingModal() {
-  const modal = document.getElementById('renderingModal');
-  modal.style.display = 'flex';
-  
+  const modal = document.getElementById("renderingModal");
+  modal.style.display = "flex";
+
   // Modal mit aktuellen Tag-Konfigurationen füllen
   populateTagControls();
 }
 
 function hideRenderingModal() {
-  const modal = document.getElementById('renderingModal');
-  modal.style.display = 'none';
+  const modal = document.getElementById("renderingModal");
+  modal.style.display = "none";
 }
 
 function populateTagControls() {
   // SUP_TAGS Container füllen
-  const supContainer = document.getElementById('supTagsContainer');
-  supContainer.innerHTML = '';
-  
-  Array.from(SUP_TAGS).forEach(tag => {
-    const checkbox = createTagCheckbox(tag, 'sup', state.tagConfig.supTags.has(tag));
+  const supContainer = document.getElementById("supTagsContainer");
+  supContainer.innerHTML = "";
+
+  SUP_TAGS.forEach((tag) => {
+    const checkbox = createTagCheckbox(
+      tag,
+      "sup",
+      state.tagConfig.supTags.has(tag)
+    );
     supContainer.appendChild(checkbox);
   });
-  
+
   // SUB_TAGS Container füllen
-  const subContainer = document.getElementById('subTagsContainer');
-  subContainer.innerHTML = '';
-  
-  Array.from(SUB_TAGS).forEach(tag => {
-    const checkbox = createTagCheckbox(tag, 'sub', state.tagConfig.subTags.has(tag));
+  const subContainer = document.getElementById("subTagsContainer");
+  subContainer.innerHTML = "";
+
+  SUB_TAGS.forEach((tag) => {
+    const checkbox = createTagCheckbox(
+      tag,
+      "sub",
+      state.tagConfig.subTags.has(tag)
+    );
     subContainer.appendChild(checkbox);
   });
-  
+
   // COLOR_TAGS Container füllen
-  const colorContainer = document.getElementById('colorTagsContainer');
-  colorContainer.innerHTML = '';
-  
-  Array.from(COLOR_POS_WHITELIST).forEach(tag => {
-    const checkbox = createTagCheckbox(tag, 'color', state.tagConfig.colorTags.has(tag));
+  const colorContainer = document.getElementById("colorTagsContainer");
+  colorContainer.innerHTML = "";
+
+  COLOR_POS_WHITELIST.forEach((tag) => {
+    const checkbox = createTagCheckbox(
+      tag,
+      "color",
+      state.tagConfig.colorTags.has(tag)
+    );
     colorContainer.appendChild(checkbox);
   });
 }
 
 function createTagCheckbox(tag, type, checked) {
-  const div = document.createElement('div');
-  div.className = 'tag-checkbox';
-  
-  const checkbox = document.createElement('input');
-  checkbox.type = 'checkbox';
+  const div = document.createElement("div");
+  div.className = "tag-checkbox";
+
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
   checkbox.id = `${type}_${tag}`;
   checkbox.checked = checked;
-  checkbox.addEventListener('change', () => updateTagConfig(tag, type, checkbox.checked));
-  
-  const label = document.createElement('label');
+  checkbox.addEventListener("change", () =>
+    updateTagConfig(tag, type, checkbox.checked)
+  );
+
+  const label = document.createElement("label");
   label.htmlFor = `${type}_${tag}`;
   label.textContent = tag;
-  
+
   div.appendChild(checkbox);
   div.appendChild(label);
-  
+
   return div;
 }
 
 function updateTagConfig(tag, type, enabled) {
-  if (type === 'sup') {
+  if (type === "sup") {
     if (enabled) {
       state.tagConfig.supTags.add(tag);
     } else {
       state.tagConfig.supTags.delete(tag);
     }
-  } else if (type === 'sub') {
+  } else if (type === "sub") {
     if (enabled) {
       state.tagConfig.subTags.add(tag);
     } else {
       state.tagConfig.subTags.delete(tag);
     }
-  } else if (type === 'color') {
+  } else if (type === "color") {
     if (enabled) {
       state.tagConfig.colorTags.add(tag);
     } else {
@@ -267,62 +314,66 @@ function updateTagConfig(tag, type, enabled) {
 }
 
 function setupModalEvents() {
-  const modal = document.getElementById('renderingModal');
-  const closeBtn = document.getElementById('closeModal');
-  const cancelBtn = document.getElementById('cancelRendering');
-  const confirmBtn = document.getElementById('confirmRendering');
-  const disableAllTagsBtn = document.getElementById('disableAllTags');
-  const enableAllTagsBtn = document.getElementById('enableAllTags');
-  const disableAllColorsBtn = document.getElementById('disableAllColors');
-  const enableAllColorsBtn = document.getElementById('enableAllColors');
-  
+  const modal = document.getElementById("renderingModal");
+  const closeBtn = document.getElementById("closeModal");
+  const cancelBtn = document.getElementById("cancelRendering");
+  const confirmBtn = document.getElementById("confirmRendering");
+  const disableAllTagsBtn = document.getElementById("disableAllTags");
+  const enableAllTagsBtn = document.getElementById("enableAllTags");
+  const disableAllColorsBtn = document.getElementById("disableAllColors");
+  const enableAllColorsBtn = document.getElementById("enableAllColors");
+
   // Modal schließen
-  closeBtn?.addEventListener('click', hideRenderingModal);
-  cancelBtn?.addEventListener('click', hideRenderingModal);
-  
+  closeBtn?.addEventListener("click", hideRenderingModal);
+  cancelBtn?.addEventListener("click", hideRenderingModal);
+
   // Modal bestätigen
-  confirmBtn?.addEventListener('click', () => {
+  confirmBtn?.addEventListener("click", () => {
     hideRenderingModal();
     performRendering();
   });
-  
+
   // Quick Controls
-  disableAllTagsBtn?.addEventListener('click', () => {
-    document.querySelectorAll('#supTagsContainer input, #subTagsContainer input').forEach(cb => {
+  disableAllTagsBtn?.addEventListener("click", () => {
+    document
+      .querySelectorAll("#supTagsContainer input, #subTagsContainer input")
+      .forEach((cb) => {
+        cb.checked = false;
+        const tag = cb.id.split("_")[1];
+        const type = cb.id.split("_")[0];
+        updateTagConfig(tag, type, false);
+      });
+  });
+
+  enableAllTagsBtn?.addEventListener("click", () => {
+    document
+      .querySelectorAll("#supTagsContainer input, #subTagsContainer input")
+      .forEach((cb) => {
+        cb.checked = true;
+        const tag = cb.id.split("_")[1];
+        const type = cb.id.split("_")[0];
+        updateTagConfig(tag, type, true);
+      });
+  });
+
+  disableAllColorsBtn?.addEventListener("click", () => {
+    document.querySelectorAll("#colorTagsContainer input").forEach((cb) => {
       cb.checked = false;
-      const tag = cb.id.split('_')[1];
-      const type = cb.id.split('_')[0];
-      updateTagConfig(tag, type, false);
+      const tag = cb.id.split("_")[1];
+      updateTagConfig(tag, "color", false);
     });
   });
-  
-  enableAllTagsBtn?.addEventListener('click', () => {
-    document.querySelectorAll('#supTagsContainer input, #subTagsContainer input').forEach(cb => {
+
+  enableAllColorsBtn?.addEventListener("click", () => {
+    document.querySelectorAll("#colorTagsContainer input").forEach((cb) => {
       cb.checked = true;
-      const tag = cb.id.split('_')[1];
-      const type = cb.id.split('_')[0];
-      updateTagConfig(tag, type, true);
+      const tag = cb.id.split("_")[1];
+      updateTagConfig(tag, "color", true);
     });
   });
-  
-  disableAllColorsBtn?.addEventListener('click', () => {
-    document.querySelectorAll('#colorTagsContainer input').forEach(cb => {
-      cb.checked = false;
-      const tag = cb.id.split('_')[1];
-      updateTagConfig(tag, 'color', false);
-    });
-  });
-  
-  enableAllColorsBtn?.addEventListener('click', () => {
-    document.querySelectorAll('#colorTagsContainer input').forEach(cb => {
-      cb.checked = true;
-      const tag = cb.id.split('_')[1];
-      updateTagConfig(tag, 'color', true);
-    });
-  });
-  
+
   // Modal außerhalb klicken schließt es
-  modal?.addEventListener('click', (e) => {
+  modal?.addEventListener("click", (e) => {
     if (e.target === modal) {
       hideRenderingModal();
     }
@@ -337,7 +388,7 @@ async function renderDraftViaWorker(file) {
 
 async function performRendering() {
   let file = el.draftFile.files?.[0];
-  
+
   if (!file) {
     // Wenn keine Datei hochgeladen wurde, verwende den aktuellen Entwurfs-Text
     const draftText = el.draftText.textContent;
@@ -365,14 +416,14 @@ async function performRendering() {
     color_mode: state.color, // Colour | BlackWhite
     tag_mode: state.tags === "Tag" ? "TAGS" : "NO_TAGS",
     versmass: state.meterSupported && state.meter === "with" ? "ON" : "OFF",
-    
+
     // Neue Tag-Konfiguration
     tag_config: {
       sup_tags: Array.from(state.tagConfig.supTags),
       sub_tags: Array.from(state.tagConfig.subTags),
       color_pos_whitelist: Array.from(state.tagConfig.colorTags),
-      placement_overrides: state.tagConfig.placementOverrides
-    }
+      placement_overrides: state.tagConfig.placementOverrides,
+    },
   };
 
   const form = new FormData();
@@ -501,14 +552,17 @@ function wireEvents() {
 
   updateDownloadButtons();
 
-  // Entwurfs-Text initialisieren
-  await initializeDraftText();
-
-  // Modal-Events einrichten
-  setupModalEvents();
+  // Titel setzen
+  el.pageTitle.textContent = `${state.author} – ${state.work}`;
 
   // Inhalte und PDF anzeigen
   await loadTexts();
   wireEvents();
   updatePdfView(false);
+
+  // Entwurfs-Text initialisieren
+  await initializeDraftText();
+
+  // Modal-Events einrichten
+  setupModalEvents();
 })();
