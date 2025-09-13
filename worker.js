@@ -6,18 +6,21 @@ export default {
     const origin = request.headers.get("Origin") || "";
     const allowedList = (env.ALLOWED_ORIGIN || "")
       .split(",")
-      .map(s => s.trim())
+      .map((s) => s.trim())
       .filter(Boolean);
-    const allowOrigin = allowedList.length === 0
-      ? "*"
-      : (allowedList.includes(origin) ? origin : allowedList[0]);
+    const allowOrigin =
+      allowedList.length === 0
+        ? "*"
+        : allowedList.includes(origin)
+        ? origin
+        : allowedList[0];
 
     const CORS = {
       "Access-Control-Allow-Origin": allowOrigin,
-      "Vary": "Origin",
+      Vary: "Origin",
       "Access-Control-Allow-Methods": "POST, OPTIONS",
       "Access-Control-Allow-Headers": "content-type",
-      "Access-Control-Max-Age": "86400"
+      "Access-Control-Max-Age": "86400",
     };
 
     if (request.method === "OPTIONS") {
@@ -25,15 +28,28 @@ export default {
     }
 
     // --------- Routen ---------
-    const accepted = new Set(["/draft", "/render", "/api/render", "/generate", "/"]);
+    const accepted = new Set([
+      "/draft",
+      "/render",
+      "/api/render",
+      "/generate",
+      "/",
+    ]);
 
     // Healthcheck
     if (request.method === "GET" && url.pathname === "/") {
-      return new Response("OK birkenbihl-draft-01", { status: 200, headers: CORS });
+      return new Response("OK birkenbihl-draft-01", {
+        status: 200,
+        headers: CORS,
+      });
     }
 
     if (!accepted.has(url.pathname)) {
-      return resp({ ok: false, error: "not_found", message: "Unknown route" }, 404, CORS);
+      return resp(
+        { ok: false, error: "not_found", message: "Unknown route" },
+        404,
+        CORS
+      );
     }
     if (request.method !== "POST") {
       return resp({ ok: false, error: "method_not_allowed" }, 405, CORS);
@@ -79,7 +95,15 @@ export default {
         filename = (data.filename ?? "").toString().trim();
       }
     } catch (e) {
-      return resp({ ok: false, error: "invalid_payload", message: "Payload could not be parsed" }, 400, CORS);
+      return resp(
+        {
+          ok: false,
+          error: "invalid_payload",
+          message: "Payload could not be parsed",
+        },
+        400,
+        CORS
+      );
     }
 
     // --------- Validierung & Normalisierung ---------
@@ -87,17 +111,32 @@ export default {
     const BYTE_LIMIT = 1 * 1024 * 1024; // 1 MiB
     const textBytes = new TextEncoder().encode(text || "");
     if (!text) {
-      return resp({ ok: false, error: "empty_text", message: "No text provided" }, 400, CORS);
+      return resp(
+        { ok: false, error: "empty_text", message: "No text provided" },
+        400,
+        CORS
+      );
     }
     if (textBytes.length > BYTE_LIMIT) {
-      return resp({ ok: false, error: "too_large", message: `Text exceeds ${BYTE_LIMIT} bytes` }, 413, CORS);
+      return resp(
+        {
+          ok: false,
+          error: "too_large",
+          message: `Text exceeds ${BYTE_LIMIT} bytes`,
+        },
+        413,
+        CORS
+      );
     }
 
     // Dateinamen-Strategie:
     // 1) bevorzugt 'filename' wenn .txt, sonst
     // 2) 'work' als Basis, sonst
     // 3) "Entwurf"
-    let baseName = (filename && filename.endsWith(".txt")) ? stripUnsafe(filename.replace(/\.txt$/i, "")) : "";
+    let baseName =
+      filename && filename.endsWith(".txt")
+        ? stripUnsafe(filename.replace(/\.txt$/i, ""))
+        : "";
     if (!baseName) baseName = stripUnsafe(work) || "Entwurf";
 
     // Endgültiger Name (zeitgestempelt, Kollisionen vermeiden)
@@ -105,60 +144,90 @@ export default {
     const path = `texte_drafts/${stamped}`;
 
     // --------- GitHub API: Datei anlegen ---------
-    const owner  = env.OWNER;
-    const repo   = env.REPO;
+    const owner = env.OWNER;
+    const repo = env.REPO;
     const branch = env.BRANCH || "main";
-    const token  = env.GITHUB_TOKEN;
+    const token = env.GITHUB_TOKEN;
 
     if (!owner || !repo || !token) {
-      return resp({ ok: false, error: "misconfigured", message: "OWNER/REPO/GITHUB_TOKEN missing" }, 500, CORS);
+      return resp(
+        {
+          ok: false,
+          error: "misconfigured",
+          message: "OWNER/REPO/GITHUB_TOKEN missing",
+        },
+        500,
+        CORS
+      );
     }
 
-    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURI(path)}`;
+    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURI(
+      path
+    )}`;
     const body = {
       message: `draft: ${baseName} birkenbihl (${stamped})`,
       content: toBase64Utf8(text),
-      branch
+      branch,
     };
 
     const gh = await fetch(apiUrl, {
       method: "PUT",
       headers: {
-        "Authorization": `Bearer ${token}`,
-        "Accept": "application/vnd.github+json",
+        Authorization: `Bearer ${token}`,
+        Accept: "application/vnd.github+json",
         "Content-Type": "application/json",
-        "User-Agent": "birkenbihl-worker/1.0"
+        "User-Agent": "birkenbihl-worker/1.0",
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     });
 
     if (!gh.ok) {
       const errTxt = await gh.text().catch(() => "");
-      return resp({ ok: false, error: "github_error", status: gh.status, details: errTxt.slice(0, 2000) }, 502, CORS);
+      return resp(
+        {
+          ok: false,
+          error: "github_error",
+          status: gh.status,
+          details: errTxt.slice(0, 2000),
+        },
+        502,
+        CORS
+      );
     }
 
     const res = await gh.json();
-    return resp({
-      ok: true,
-      path,
-      filename: stamped,
-      size_bytes: textBytes.length,
-      html_url: res.content?.html_url || null
-    }, 200, CORS);
-  }
+
+    // Für jetzt geben wir eine einfache Antwort zurück
+    // In Zukunft könnte hier PDF-Generierung implementiert werden
+    return resp(
+      {
+        ok: true,
+        path,
+        filename: stamped,
+        size_bytes: textBytes.length,
+        html_url: res.content?.html_url || null,
+        message:
+          "Text erfolgreich gespeichert. PDF-Generierung noch nicht implementiert.",
+      },
+      200,
+      CORS
+    );
+  },
 }; // <- WICHTIG: export-default Block wird hier geschlossen!
 
 // ---------- Hilfsfunktionen ----------
 function resp(obj, status = 200, headers = {}) {
   return new Response(JSON.stringify(obj), {
     status,
-    headers: { "Content-Type": "application/json; charset=utf-8", ...headers }
+    headers: { "Content-Type": "application/json; charset=utf-8", ...headers },
   });
 }
 
 function tsStamp(d = new Date()) {
-  const p = n => n.toString().padStart(2, "0");
-  return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}_${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}`;
+  const p = (n) => n.toString().padStart(2, "0");
+  return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}_${p(
+    d.getHours()
+  )}${p(d.getMinutes())}${p(d.getSeconds())}`;
 }
 
 // Entfernt problematische Zeichen aus Dateinamenbasis
@@ -173,6 +242,6 @@ function stripUnsafe(s = "") {
 function toBase64Utf8(str) {
   const bytes = new TextEncoder().encode(str || "");
   let bin = "";
-  bytes.forEach(b => (bin += String.fromCharCode(b)));
+  bytes.forEach((b) => (bin += String.fromCharCode(b)));
   return btoa(bin);
 }

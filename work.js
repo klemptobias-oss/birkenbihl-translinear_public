@@ -652,26 +652,32 @@ function preprocessTextForRendering(text) {
   return processedText;
 }
 
+// Hilfsfunktion für aktuelle PDF-URL
+function getCurrentPdfUrl() {
+  return buildPdfUrlFromSelection();
+}
+
 // Fallback für lokale PDF-Generierung
 async function simulateLocalPdfGeneration(payload) {
   try {
     // Simuliere PDF-Generierung mit einem Dummy-PDF
     console.log("Simuliere PDF-Generierung mit Konfiguration:", payload);
-    
+
     // Erstelle eine Dummy-PDF-URL (verwende ein existierendes PDF als Fallback)
     const dummyPdfUrl = getCurrentPdfUrl();
     state.lastDraftUrl = dummyPdfUrl;
-    
+
     // Quelle automatisch auf Entwurf schalten und anzeigen
     state.source = "draft";
     updatePdfView(true);
-    el.draftStatus.textContent = "Entwurf erfolgreich gerendert! (Fallback-Modus)";
-    
+    el.draftStatus.textContent =
+      "Entwurf erfolgreich gerendert! (Fallback-Modus)";
+
     // Zeige Info-Meldung
     setTimeout(() => {
-      el.draftStatus.textContent = "Hinweis: Worker nicht erreichbar. Verwende Fallback-PDF. Für echte PDF-Generierung kontaktieren Sie den Administrator.";
+      el.draftStatus.textContent =
+        "Hinweis: Worker nicht erreichbar. Verwende Fallback-PDF. Für echte PDF-Generierung kontaktieren Sie den Administrator.";
     }, 3000);
-    
   } catch (error) {
     console.error("Fallback-Fehler:", error);
     el.draftStatus.textContent = "Fehler beim Fallback-Rendering.";
@@ -734,12 +740,13 @@ async function performRendering() {
 
   const form = new FormData();
   form.append("file", file, file.name);
-  form.append("options", JSON.stringify(payload));
+  form.append("work", state.work);
+  form.append("filename", file.name);
 
   try {
-    // Versuche verschiedene Endpoints
+    // Versuche verschiedene Endpoints (nur die, die der Worker unterstützt)
     let res;
-    const endpoints = ["/render", "/api/render", "/generate", "/"];
+    const endpoints = ["/render", "/api/render", "/generate", "/draft"];
 
     for (const endpoint of endpoints) {
       try {
@@ -770,27 +777,36 @@ async function performRendering() {
             state.lastDraftUrl = localData.pdf_url;
             state.source = "draft";
             updatePdfView(true);
-            el.draftStatus.textContent = "Entwurf erfolgreich gerendert! (Lokaler Server)";
+            el.draftStatus.textContent =
+              "Entwurf erfolgreich gerendert! (Lokaler Server)";
             return;
           }
         }
       } catch (localError) {
         console.log("Lokaler Server nicht verfügbar:", localError.message);
       }
-      
+
       // Letzter Fallback: Simuliere PDF-Generierung
       await simulateLocalPdfGeneration(payload);
       return;
     }
 
     const data = await res.json();
-    if (!data?.ok || !data?.pdf_url)
-      throw new Error("Worker-Antwort unvollständig.");
-    state.lastDraftUrl = data.pdf_url;
-    // Quelle automatisch auf Entwurf schalten und anzeigen
+    if (!data?.ok) throw new Error("Worker-Antwort unvollständig.");
+
+    // Der Worker speichert nur Textdateien, keine PDFs
+    // Zeige eine entsprechende Meldung
+    el.draftStatus.textContent = `Entwurf erfolgreich gespeichert! (${data.filename})`;
+
+    // Für PDF-Anzeige verwenden wir ein Fallback
+    state.lastDraftUrl = getCurrentPdfUrl();
     state.source = "draft";
     updatePdfView(true);
-    el.draftStatus.textContent = "Entwurf erfolgreich gerendert!";
+
+    // Zeige zusätzliche Info
+    setTimeout(() => {
+      el.draftStatus.textContent = `Text gespeichert: ${data.filename}. PDF-Generierung noch nicht verfügbar.`;
+    }, 2000);
   } catch (e) {
     console.error(e);
     if (
