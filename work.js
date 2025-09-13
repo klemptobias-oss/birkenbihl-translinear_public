@@ -727,7 +727,11 @@ async function performRendering() {
     el.draftStatus.textContent = "Entwurf erfolgreich gerendert!";
   } catch (e) {
     console.error(e);
-    el.draftStatus.textContent = "Fehler beim Rendern des Entwurfs.";
+    if (e.message && (e.message.includes("CORS") || e.message.includes("Cross-Origin") || e.message.includes("NetworkError"))) {
+      el.draftStatus.textContent = "CORS-Fehler: Worker nicht erreichbar. Bitte versuchen Sie es auf der GitHub-Seite (https://klemptobias-oss.github.io/birkenbihl-translinear_public/).";
+    } else {
+      el.draftStatus.textContent = "Fehler beim Rendern des Entwurfs.";
+    }
   }
 }
 
