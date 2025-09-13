@@ -1,300 +1,238 @@
-// work.js — universelles Werk-Script mit Worker-Anbindung
-// Erwartet URL-Parameter: kind=poesie|prosa, author=..., work=...
-// Benötigt catalog.js (loadCatalog, getWorkMeta, txtPaths) im <script type="module"> in work.html
-//
-// DOM-Erwartungen (IDs/Names):
-// - iframe#pdfFrame
-// - span#pdfStatus
-// - Radios name="srcSel"         values: original|draft
-// - Radios name="strengthSel"    values: Normal|GR_Fett|DE_Fett
-// - Radios name="colorSel"       values: Colour|BlackWhite
-// - Radios name="tagSel"         values: Tag|NoTags
-// - Radios name="meterSel"       values: On|Off      (optional; nur wenn meter_capable)
-// - input#draftFile (accept .txt), button#draftUploadBtn
-//
-// Pfad-Konvention PDF (original):
-// pdf/original_poesie_pdf/<Author>/<WorkId>_<Strength>_<Colour|BlackWhite>_<Tag|NoTags>[ _Versmaß].pdf
-// pdf/original_prosa_pdf/<Author>/<WorkId>_<Strength>_<Colour|BlackWhite>_<Tag|NoTags>.pdf
-//
-// Pfad-Konvention PDF (draft, durch Renderer erzeugt):
-// pdf_drafts/draft_poesie_pdf/<Author>/<WorkId>_<Strength>_<Colour|BlackWhite>_<Tag|NoTags>[ _Versmaß].pdf
-// pdf_drafts/draft_prosa_pdf/<Author>/<WorkId>_<Strength>_<Colour|BlackWhite>_<Tag|NoTags>.pdf
-//
-// Cloudflare Worker (Upload/Status):
-// - POST  {WORKER_BASE}/drafts/upload  (multipart/form-data: file, kind, author, work, strength, color_mode, tag_mode, meter_on)
-// - GET   {WORKER_BASE}/drafts/status?jobId=...
-//
-// WICHTIG: WORKER_BASE unten eintragen!
+// work.js — universelle Werkseite
 
-import { loadCatalog, getWorkMeta } from './catalog.js';
+// 1) KONFIG
+const WORKER_BASE = 'https://birkenbihl-draft-01.klemp-tobias.workers.dev'; // <— HIER deine Worker-URL
+const TXT_BASE    = 'texte';        // texte/<kind>/<author>/<work>.txt
+const PDF_BASE    = 'pdf';          // pdf/original_..._pdf/<author>/*.pdf
+const DRAFT_BASE  = 'pdf_drafts';   // pdf_drafts/draft_..._pdf/<author>/*.pdf
 
-// ======================================================================
-// Einstellungen
-// ======================================================================
-
-const WORKER_BASE = 'https://birkenbihl-draft-01.klemp-tobias.workers.dev';  // <<< HIER deine Worker-URL eintragen
-
-// ======================================================================
-// DOM-Utils
-// ======================================================================
-
-const $ = (sel, root = document) => root.querySelector(sel);
-const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
-
-function getParam(name, def = '') {
+// 2) URL-Parameter
+function getParam(name, dflt = '') {
   const u = new URL(location.href);
-  return u.searchParams.get(name) || def;
+  return u.searchParams.get(name) || dflt;
 }
 
-function setStatus(msg) {
-  const el = $('#pdfStatus');
-  if (el) el.textContent = msg || '';
+// 3) Mini-Kataloghelfer (nur für Meter-Schalter; rest über Dateikonvention)
+async function fetchCatalog() {
+  const res = await fetch('catalog.json', { cache: 'no-store' });
+  if (!res.ok) return null;
+  return res.json();
+}
+function findMeta(cat, kind, author, work) {
+  try {
+    const k = kind.toLowerCase();
+    const a = author;
+    const w = work;
+    const bucket = cat?.[k] || {};
+    const au = bucket?.[a] || {};
+    return au?.works?.find(x => x.id === w) || null;
+  } catch { return null; }
 }
 
-function selectedValue(groupName, fallback) {
-  const el = $$(`input[name="${groupName}"]`).find(r => r.checked);
-  return el ? el.value : fallback;
+// 4) DOM refs
+const el = {
+  pageTitle:   document.getElementById('pageTitle'),
+  origPre:     document.getElementById('origPre'),
+  origStatus:  document.getElementById('origStatus'),
+  bkvPre:      document.getElementById('bkvPre'),
+  bkvStatus:   document.getElementById('bkvStatus'),
+  meterRow:    document.getElementById('meterRow'),
+  pdfFrame:    document.getElementById('pdfFrame'),
+  pdfStatus:   document.getElementById('pdfStatus'),
+  dlBtn:       document.getElementById('downloadBtn'),
+  draftFile:   document.getElementById('draftFile'),
+  draftBtn:    document.getElementById('draftUploadBtn'),
+};
+
+// 5) State
+const state = {
+  kind:   getParam('kind', 'poesie'),     // poesie | prosa
+  author: getParam('author', 'Unsortiert'),
+  work:   getParam('work', 'Unbenannt'),
+
+  // UI-Optionen
+  source:   'original',  // original | draft
+  strength: 'Normal',    // Normal | GR_Fett | DE_Fett
+  color:    'Colour',    // Colour | BlackWhite
+  tags:     'Tag',       // Tag | NoTags
+  meter:    'Off',       // Off | On  (nur wenn unterstützt)
+
+  meterSupported: false,
+  lastDraftUrl:   null,  // vom Worker zurückbekommen
+};
+
+// 6) Hilfen
+function setStatus(node, msg) { if (node) node.textContent = msg || ''; }
+function clearPre(node) { if (node) node.textContent = ''; }
+
+// PDF-Dateiname gemäß deiner Konvention:
+// <Author><Work>_<Strength>_<Colour|BlackWhite>_<Tag|NoTags>[_Versmaß].pdf
+function buildPdfFilename() {
+  const base = `${state.author}${state.work}`;
+  const parts = [base, state.strength, state.color, (state.tags === 'Tag' ? 'Tag' : 'NoTags')];
+  if (state.meterSupported && state.meter === 'On') parts.push('Versmaß');
+  return parts.join('_') + '.pdf';
 }
 
-function setRadio(groupName, value) {
-  const found = $$(`input[name="${groupName}"]`).find(r => r.value === value);
-  if (found) found.checked = true;
-}
-
-function show(el, on = true) {
-  if (!el) return;
-  el.style.display = on ? '' : 'none';
-}
-
-function byId(id) {
-  const el = document.getElementById(id);
-  if (!el) console.warn(`[work.js] Element #${id} fehlt`);
-  return el;
-}
-
-// ======================================================================
-// Optionen lesen/schreiben
-// ======================================================================
-
-function currentOptions(meta) {
-  const source = selectedValue('srcSel', 'original'); // original|draft
-  const strength = selectedValue('strengthSel', 'Normal'); // Normal|GR_Fett|DE_Fett
-  const color_mode = selectedValue('colorSel', 'Colour'); // Colour|BlackWhite
-  const tag_mode = selectedValue('tagSel', 'Tag'); // Tag|NoTags
-
-  let meter_on = false;
-  if (meta?.meter_capable) {
-    meter_on = (selectedValue('meterSel', 'Off') === 'On');
-  }
-  return { source, strength, color_mode, tag_mode, meter_on };
-}
-
-function normalizeOptionsForKind(opts, kind) {
-  // Bei PROSA gibt es kein Versmaß — sicherheitshalber aus
-  if (kind === 'prosa') return { ...opts, meter_on: false };
-  return opts;
-}
-
-// ======================================================================
-// Pfade/URLs
-// ======================================================================
-
-function pdfBaseDir(kind, variant /* original|draft */) {
-  const isDraft = (variant === 'draft');
-  if (kind === 'poesie') return isDraft ? 'pdf_drafts/draft_poesie_pdf' : 'pdf/original_poesie_pdf';
-  if (kind === 'prosa')  return isDraft ? 'pdf_drafts/draft_prosa_pdf'  : 'pdf/original_prosa_pdf';
-  return isDraft ? 'pdf_drafts' : 'pdf';
-}
-
-function buildPdfName(workId, strength, color_mode, tag_mode, meter_on, kind) {
-  // Stärke
-  // Normal|GR_Fett|DE_Fett  →  Normal / GR_Fett / DE_Fett (1:1)
-  const strengthPart = strength;
-
-  // Farbe
-  // Colour|BlackWhite → Colour / BlackWhite (1:1)
-  const colorPart = color_mode;
-
-  // Tags
-  // Tag|NoTags → Tag / NoTags (1:1)
-  const tagPart = tag_mode;
-
-  // Versmaß (nur bei Poesie): Suffix "_Versmaß"
-  const meterPart = (kind === 'poesie' && meter_on) ? '_Versmaß' : '';
-
-  return `${workId}_${strengthPart}_${colorPart}_${tagPart}${meterPart}.pdf`;
-}
-
-function pdfUrl(kind, author, workId, opts) {
-  const baseDir = pdfBaseDir(kind, opts.source);
-  const name = buildPdfName(workId, opts.strength, opts.color_mode, opts.tag_mode, opts.meter_on, kind);
-  return `${baseDir}/${author}/${name}`;
-}
-
-// ======================================================================
-// Worker-Anbindung (Upload + Polling)
-// ======================================================================
-
-async function uploadDraft(kind, author, workId, file, opts) {
-  if (!WORKER_BASE.includes('workers.dev')) {
-    throw new Error('WORKER_BASE nicht konfiguriert (work.js)');
-  }
-  const fd = new FormData();
-  fd.append('file', file);
-  fd.append('kind', kind);
-  fd.append('author', author);
-  fd.append('work', workId);
-  fd.append('strength', opts.strength);
-  fd.append('color_mode', opts.color_mode);
-  fd.append('tag_mode', opts.tag_mode);
-  fd.append('meter_on', String(opts.meter_on));
-
-  const res = await fetch(`${WORKER_BASE}/drafts/upload`, { method: 'POST', body: fd });
-  const data = await res.json().catch(() => ({}));
-  if (!res.ok) {
-    throw new Error(data?.error || `Upload fehlgeschlagen (${res.status})`);
-  }
-  return data; // { jobId, draftPdfUrl:null }
-}
-
-async function pollDraft(jobId, { maxTries = 180, intervalMs = 2000 } = {}) {
-  for (let i = 0; i < maxTries; i++) {
-    const res = await fetch(`${WORKER_BASE}/drafts/status?jobId=${encodeURIComponent(jobId)}`, { cache: 'no-store' });
-    const s = await res.json().catch(() => ({}));
-    if (s.state === 'done' && s.draftPdfUrl) return s.draftPdfUrl;
-    if (s.state === 'error') throw new Error('Render-Fehler beim Worker');
-    await new Promise(r => setTimeout(r, intervalMs));
-  }
-  throw new Error('Timeout beim Rendern');
-}
-
-// ======================================================================
-// PDF-Viewer steuern
-// ======================================================================
-
-function setPdfFrame(url) {
-  const frame = byId('pdfFrame');
-  if (frame) {
-    frame.src = url;
+function basePdfDir() {
+  if (state.source === 'original') {
+    return state.kind === 'poesie'
+      ? `${PDF_BASE}/original_poesie_pdf/${state.author}`
+      : `${PDF_BASE}/original_prosa_pdf/${state.author}`;
+  } else {
+    return state.kind === 'poesie'
+      ? `${DRAFT_BASE}/draft_poesie_pdf/${state.author}`
+      : `${DRAFT_BASE}/draft_prosa_pdf/${state.author}`;
   }
 }
-
-function refreshPdf(kind, author, workId, meta) {
-  const raw = currentOptions(meta);
-  const opts = normalizeOptionsForKind(raw, kind);
-  const url = pdfUrl(kind, author, workId, opts);
-  setStatus('PDF laden …');
-  setPdfFrame(url);
-  // Setze Status nach kurzer Zeit wieder neutral
-  setTimeout(() => setStatus(''), 500);
+function buildPdfUrlFromSelection() {
+  const name = buildPdfFilename();
+  return `${basePdfDir()}/${name}`;
 }
 
-// ======================================================================
-// UI-Hooks / Initialisierung
-// ======================================================================
-
-function bindOptionGroup(groupName, handler) {
-  $$(`input[name="${groupName}"]`).forEach(r => {
-    r.addEventListener('change', handler);
-  });
-}
-
-function initOptionBindings(kind, author, workId, meta) {
-  const onChange = () => refreshPdf(kind, author, workId, meta);
-
-  bindOptionGroup('srcSel', onChange);
-  bindOptionGroup('strengthSel', onChange);
-  bindOptionGroup('colorSel', onChange);
-  bindOptionGroup('tagSel', onChange);
-  bindOptionGroup('meterSel', onChange); // existiert evtl. nicht – macht nichts
-
-  // Defaults setzen (falls kein vorgewählter Wert)
-  if (!$$('input[name="srcSel"]').some(r => r.checked))       setRadio('srcSel', 'original');
-  if (!$$('input[name="strengthSel"]').some(r => r.checked)) setRadio('strengthSel', 'Normal');
-  if (!$$('input[name="colorSel"]').some(r => r.checked))    setRadio('colorSel', 'Colour');
-  if (!$$('input[name="tagSel"]').some(r => r.checked))      setRadio('tagSel', 'Tag');
-  if (meta?.meter_capable) {
-    if (!$$('input[name="meterSel"]').some(r => r.checked))  setRadio('meterSel', 'Off');
+function updatePdfView(fromWorker = false) {
+  // Wenn Entwurf gewählt UND wir haben gerade eine Worker-URL -> die bevorzugen
+  if (state.source === 'draft' && state.lastDraftUrl && fromWorker) {
+    el.pdfFrame.src = state.lastDraftUrl;
+    el.dlBtn.href = state.lastDraftUrl;
+    setStatus(el.pdfStatus, 'Entwurf vom Worker geladen.');
+    return;
   }
+  // Andernfalls normaler statischer Pfad
+  const url = buildPdfUrlFromSelection();
+  el.pdfFrame.src = url;
+  el.dlBtn.href = url;
+  setStatus(el.pdfStatus, state.source === 'original'
+    ? 'Original-PDF geladen.'
+    : 'Draft-PDF (statisch) geladen. Falls leer → bitte Entwurf rendern.');
 }
 
-function initMeterVisibility(meterCapable) {
-  // Wir erwarten einen Container um die Versmaß-Optionen,
-  // z. B. <div id="meterRow">…</div>
-  const row = byId('meterRow');
-  show(row, !!meterCapable);
-}
-
-// Draft-Upload: Datei + Optionen → Worker → Polling → Entwurfs-PDF im Viewer
-function initDraftUpload(kind, author, workId, meta) {
-  const fileInp = byId('draftFile');
-  const btn = byId('draftUploadBtn');
-  if (!fileInp || !btn) return;
-
-  btn.addEventListener('click', async () => {
-    try {
-      const f = fileInp.files?.[0];
-      if (!f) {
-        alert('Bitte zuerst eine .txt-Datei auswählen.');
-        return;
-      }
-      const raw = currentOptions(meta);
-      const opts = normalizeOptionsForKind(raw, kind);
-      setStatus('Upload/Render gestartet …');
-
-      const { jobId } = await uploadDraft(kind, author, workId, f, opts);
-      setStatus('Warte auf PDF (Entwurf) …');
-
-      const pdfUrlDraft = await pollDraft(jobId);
-      // Quelle auf „Entwurf“ umschalten + PDF setzen
-      setRadio('srcSel', 'draft');
-      setPdfFrame(pdfUrlDraft);
-      setStatus('Entwurfs-PDF bereit.');
-    } catch (e) {
-      console.error(e);
-      setStatus('Fehler: ' + (e?.message || e));
-      alert('Fehler beim Erzeugen des Entwurfs-PDF:\n' + (e?.message || e));
+// 7) Texte laden (oben links + unten links)
+async function loadTexts() {
+  const base = `${TXT_BASE}/${state.kind}/${state.author}/${state.work}`;
+  // Original
+  try {
+    const r = await fetch(`${base}.txt`, { cache:'no-store' });
+    if (r.ok) {
+      el.origPre.textContent = await r.text();
+      setStatus(el.origStatus, 'Fertig.');
+    } else {
+      clearPre(el.origPre);
+      setStatus(el.origStatus, 'Original nicht gefunden.');
     }
-  });
+  } catch {
+    clearPre(el.origPre);
+    setStatus(el.origStatus, 'Fehler beim Laden.');
+  }
+  // Birkenbihl
+  try {
+    const r = await fetch(`${base}_birkenbihl.txt`, { cache:'no-store' });
+    if (r.ok) {
+      el.bkvPre.textContent = await r.text();
+      setStatus(el.bkvStatus, 'Fertig.');
+    } else {
+      clearPre(el.bkvPre);
+      setStatus(el.bkvStatus, 'Birkenbihl nicht gefunden.');
+    }
+  } catch {
+    clearPre(el.bkvPre);
+    setStatus(el.bkvStatus, 'Fehler beim Laden.');
+  }
 }
 
-// ======================================================================
-// Startpunkt
-// ======================================================================
+// 8) Worker-Aufruf (Entwurf rendern)
+async function renderDraftViaWorker(file) {
+  if (!file) return setStatus(el.pdfStatus, 'Bitte zuerst eine .txt-Datei wählen.');
+  setStatus(el.pdfStatus, 'Sende Entwurf an Worker …');
 
-async function main() {
-  const kind   = getParam('kind', 'poesie'); // poesie|prosa
-  const author = getParam('author', 'Unsortiert');
-  const workId = getParam('work', 'Unbenannt');
+  // Optionen payload wie bei deinen Renderern
+  const payload = {
+    kind: state.kind,          // poesie | prosa
+    author: state.author,      // Ordnername
+    work: state.work,          // Werk-ID (nur informativ)
+    strength: state.strength,  // Normal | GR_Fett | DE_Fett
+    color_mode: state.color,   // Colour | BlackWhite
+    tag_mode: state.tags === 'Tag' ? 'TAGS' : 'NO_TAGS',
+    versmass: (state.meterSupported && state.meter === 'On') ? 'ON' : 'OFF'
+  };
+
+  const form = new FormData();
+  form.append('file', file, file.name);
+  form.append('options', JSON.stringify(payload));
 
   try {
-    const cat = await loadCatalog();
-    const meta = getWorkMeta(cat, kind, author, workId);
-    if (!meta) {
-      setStatus('Fehler: Werk nicht im Katalog.');
-      console.error('[work.js] Kein Eintrag im Katalog:', { kind, author, workId });
-      return;
-    }
-
-    // Versmaß-Zeile ein-/ausblenden
-    initMeterVisibility(!!meta.meter_capable);
-
-    // Optionen binden + Defaults setzen
-    initOptionBindings(kind, author, workId, meta);
-
-    // Erste Anzeige
-    refreshPdf(kind, author, workId, meta);
-
-    // Draft-Upload aktivieren
-    initDraftUpload(kind, author, workId, meta);
-
-    // Debug-Info in der Konsole
-    console.log('[work.js] Ready:', { kind, author, workId, meta });
-
+    const res = await fetch(`${WORKER_BASE}/render`, { method:'POST', body: form });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    if (!data?.ok || !data?.pdf_url) throw new Error('Worker-Antwort unvollständig.');
+    state.lastDraftUrl = data.pdf_url;
+    // Quelle automatisch auf Entwurf schalten und anzeigen
+    state.source = 'draft';
+    document.querySelector('input[name="srcSel"][value="draft"]').checked = true;
+    updatePdfView(true);
   } catch (e) {
     console.error(e);
-    setStatus('Fehler beim Initialisieren: ' + (e?.message || e));
+    setStatus(el.pdfStatus, 'Worker-Fehler beim Rendern.');
   }
 }
 
-document.addEventListener('DOMContentLoaded', main);
+// 9) Events
+function wireRadios() {
+  // Quelle
+  document.querySelectorAll('input[name="srcSel"]').forEach(r => {
+    r.addEventListener('change', () => {
+      state.source = r.value;
+      updatePdfView(false);
+    });
+  });
+  // Stärke
+  document.querySelectorAll('input[name="strengthSel"]').forEach(r => {
+    r.addEventListener('change', () => {
+      state.strength = r.value;
+      updatePdfView(false);
+    });
+  });
+  // Farbe
+  document.querySelectorAll('input[name="colorSel"]').forEach(r => {
+    r.addEventListener('change', () => {
+      state.color = r.value;
+      updatePdfView(false);
+    });
+  });
+  // Tags
+  document.querySelectorAll('input[name="tagSel"]').forEach(r => {
+    r.addEventListener('change', () => {
+      state.tags = r.value;
+      updatePdfView(false);
+    });
+  });
+  // Versmaß (falls sichtbar)
+  document.querySelectorAll('input[name="meterSel"]').forEach(r => {
+    r.addEventListener('change', () => {
+      state.meter = r.value;
+      updatePdfView(false);
+    });
+  });
+
+  // Draft-Button
+  el.draftBtn?.addEventListener('click', () => renderDraftViaWorker(el.draftFile.files?.[0]));
+}
+
+// 10) Init
+(async function init() {
+  // Titel
+  el.pageTitle.textContent = `${state.author} – ${state.work}`;
+
+  // Katalog für Meter-Fähigkeit
+  try {
+    const cat = await fetchCatalog();
+    const meta = findMeta(cat, state.kind, state.author, state.work);
+    state.meterSupported = !!meta?.meter;  // true/false
+    el.meterRow.style.display = state.meterSupported ? '' : 'none';
+  } catch { /* ohne Katalog: kein Versmaß */ }
+
+  // Inhalte und PDF anzeigen
+  await loadTexts();
+  wireRadios();
+  updatePdfView(false);
+})();
