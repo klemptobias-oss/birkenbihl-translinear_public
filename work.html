@@ -23,9 +23,8 @@
   </header>
 
   <main class="wrap">
-    <!-- kleine Info-Zeile (kannst du löschen, wenn du willst) -->
     <div class="notice small">
-      Diese Werkseite ist universell. Sie lädt anhand der URL-Parameter <code>?kind=&amp;author=&amp;work=</code>.
+      (Hinweis für Redaktion) Diese Werkseite lädt per URL-Parametern <code>?kind=&amp;author=&amp;work=</code>.
     </div>
 
     <!-- ======= 2×2-Grid ======= -->
@@ -48,11 +47,14 @@
         <div class="pane-head">
           <div class="pane-title">PDF</div>
           <div class="pane-tools">
-            <a id="btnPdfDownload" class="btn" href="#" download>PDF herunterladen</a>
+            <button id="btnPdfZoomIn" class="btn" title="Größer">A+</button>
+            <button id="btnPdfZoomOut" class="btn" title="Kleiner">A−</button>
+            <button id="btnPdfOpenTab" class="btn" title="In neuem Tab öffnen">PDF in neuem Tab öffnen</button>
+            <a id="btnPdfDownload" class="btn primary" href="#" download>Aktuelles PDF herunterladen</a>
           </div>
         </div>
 
-        <!-- Schalter: Quelle / Stärke / Farbe / Tags / Versmaß (wird bei Prosa automatisch ohne Versmaß angezeigt) -->
+        <!-- Schalter: Quelle / Stärke / Farbe / Tags / Versmaß -->
         <div class="option-groups">
           <div class="opt-row">
             <div class="opt-label">Quelle</div>
@@ -96,7 +98,7 @@
           </div>
         </div>
 
-        <div class="pane-body pdf-body">
+        <div class="pane-body pdf-body" id="pdfPane" style="--pdfScale:1">
           <iframe id="pdfFrame" title="PDF-Ansicht" loading="lazy"></iframe>
         </div>
       </div>
@@ -118,7 +120,8 @@
         <div class="pane-head">
           <div class="pane-title">Entwurf → PDF</div>
           <div class="pane-tools">
-            <a id="btnDraftPdfDownload" class="btn" href="#" download>PDF herunterladen</a>
+            <button id="btnDraftPdfZoomIn" class="btn" title="Größer">A+</button>
+            <button id="btnDraftPdfZoomOut" class="btn" title="Kleiner">A−</button>
           </div>
         </div>
 
@@ -128,7 +131,7 @@
           <span class="muted" id="draftStatus">Bereit.</span>
         </div>
 
-        <div class="pane-body pdf-body">
+        <div class="pane-body pdf-body" id="draftPdfPane" style="--pdfScale:1">
           <iframe id="draftPdfFrame" title="Draft-PDF" loading="lazy"></iframe>
         </div>
       </div>
@@ -137,11 +140,77 @@
 
   <!-- Globale Utils -->
   <script src="utils.js"></script>
-  <!-- Worker-Client & Werk-Logik -->
+  <!-- Worker-Basis für Draft-Render -->
   <script>
-    // Worker Basis (falls abweichend, hier anpassen)
     window.WORKER_BASE = "https://birkenbihl-draft-01.klemp-tobias.workers.dev";
   </script>
+  <!-- Hauptlogik (deine vorhandene Datei) -->
   <script src="work.js"></script>
+
+  <!-- Kleines Patch-Skript: Titel säubern, PDF-Links & Zoom -->
+  <script>
+    (function(){
+      function cleanTitle() {
+        const h = document.getElementById('pageTitle');
+        if (!h) return;
+        h.textContent = h.textContent.replace(/_/g, ' ');
+      }
+
+      // PDF-Links aktualisieren, wenn sich die Iframe-Quelle ändert
+      function hookPdfLinks() {
+        const iframe = document.getElementById('pdfFrame');
+        const dl = document.getElementById('btnPdfDownload');
+        const open = document.getElementById('btnPdfOpenTab');
+        if (!iframe || !dl || !open) return;
+
+        const update = () => {
+          const src = iframe.getAttribute('src') || '#';
+          dl.href = src;
+          // Dateiname aus dem Pfad ziehen
+          try {
+            const nm = src.split('/').pop() || 'auswahl.pdf';
+            dl.setAttribute('download', nm);
+          } catch {}
+          open.onclick = (e)=>{ e.preventDefault(); if(src && src!=='#') window.open(src, '_blank'); };
+        };
+
+        // sofort & bei Änderungen aktualisieren
+        update();
+        const mo = new MutationObserver(update);
+        mo.observe(iframe, { attributes: true, attributeFilter: ['src'] });
+
+        // Auch bei Klicks auf die Optionen absichern
+        document.addEventListener('click', (ev)=>{
+          const t = ev.target;
+          if (t && t.classList && t.classList.contains('seg-btn')) {
+            setTimeout(update, 0);
+          }
+        });
+      }
+
+      // Einfache PDF-"Zooms" über CSS-Scale
+      function setupPdfZoom() {
+        function makeZoom(paneId, plusBtnId, minusBtnId) {
+          const pane = document.getElementById(paneId);
+          const plus = document.getElementById(plusBtnId);
+          const minus = document.getElementById(minusBtnId);
+          if (!pane || !plus || !minus) return;
+          let scale = 1;
+          const apply = ()=> pane.style.setProperty('--pdfScale', String(scale));
+          plus.addEventListener('click', ()=>{ scale = Math.min(2.5, +(scale+0.1).toFixed(2)); apply(); });
+          minus.addEventListener('click', ()=>{ scale = Math.max(0.6, +(scale-0.1).toFixed(2)); apply(); });
+          apply();
+        }
+        makeZoom('pdfPane', 'btnPdfZoomIn', 'btnPdfZoomOut');
+        makeZoom('draftPdfPane', 'btnDraftPdfZoomIn', 'btnDraftPdfZoomOut');
+      }
+
+      document.addEventListener('DOMContentLoaded', ()=>{
+        cleanTitle();
+        hookPdfLinks();
+        setupPdfZoom();
+      });
+    })();
+  </script>
 </body>
 </html>
