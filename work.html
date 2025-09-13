@@ -5,182 +5,145 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Werkansicht – Birkenbihl / Translinear</title>
 
-  <!-- Gemeinsame Styles (falls vorhanden) -->
   <link rel="stylesheet" href="style.css" />
-  <!-- Spezifische Styles für die Werkseite (optional) -->
   <link rel="stylesheet" href="work.css" />
 
   <style>
-    /* Minimaler Fallback, falls work.css nicht existiert */
     :root {
-      --edge: #e5e7eb;
-      --card: #fafafa;
-      --muted: #6b7280;
-      --accent: #111827;
+      --edge:#e5e7eb; --card:#fafafa; --muted:#6b7280;
     }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; margin: 0; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 16px; }
-    .bar { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; }
-    .title { font-weight: 700; font-size: 20px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; margin:0; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 16px; }
+    .bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+    .title { font-weight:700; font-size:20px; }
+    .panel { background: var(--card); border:1px solid var(--edge); border-radius:12px; padding:12px; }
+    .grid-2x2 { display:grid; grid-template-columns: 1fr 1fr; grid-auto-rows: minmax(200px, auto); gap:12px; }
+    .head-row { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px; }
     .muted { color: var(--muted); }
-    .panel { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 12px; }
-    .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .row { display:flex; align-items:center; flex-wrap: wrap; gap: 12px; }
-    .row h3 { margin: 0 8px 0 0; font-size: 15px; }
-    .field { display:flex; align-items:center; gap: 8px; }
-    .sep { height: 1px; background: var(--edge); margin: 8px 0; }
-    .pdf-wrap { margin-top: 12px; }
-    .pdf-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; }
-    #pdfStatus { font-size: 13px; color: var(--muted); }
-    iframe { width: 100%; height: 80vh; border: 1px solid var(--edge); border-radius: 8px; background: #fff; }
-    .note { font-size: 13px; color: var(--muted); }
-    .btn { padding: 6px 10px; border: 1px solid var(--edge); background:#fff; border-radius: 8px; cursor: pointer; }
-    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
-    .danger { color:#b91c1c; }
-    .pill { padding: 2px 8px; border-radius: 999px; background: #eef2ff; color:#1e3a8a; font-size: 12px; }
-    .radio-group label { margin-right: 10px; }
+    pre.viewer { margin:0; white-space:pre-wrap; word-wrap:break-word; max-height: 36vh; overflow:auto; background:#fff; border:1px solid var(--edge); border-radius:8px; padding:10px; }
+    .btn { padding:6px 10px; border:1px solid var(--edge); background:#fff; border-radius:8px; cursor:pointer; }
+    .btn:disabled { opacity:.55; cursor:not-allowed; }
+    .radio-group label { margin-right:12px; }
+    iframe#pdfFrame { width:100%; height:72vh; background:#fff; border:1px solid var(--edge); border-radius:8px; }
+    .note { font-size:13px; color:var(--muted); }
+    .sep { height:1px; background:var(--edge); margin:8px 0; }
   </style>
 </head>
-
 <body>
   <div class="wrap">
-    <!-- Kopf -->
     <div class="bar">
       <div class="title" id="pageTitle">Werkansicht</div>
-      <div>
-        <a class="btn" href="index.html" title="Zurück zur Startseite">← Start</a>
-      </div>
+      <div><a class="btn" href="index.html">← Start</a></div>
     </div>
 
-    <div class="panel">
-      <!-- Hinweis für Admins/Redaktion -->
-      <div class="note">
-        Diese Werkseite ist universell. Welche Datei geladen wird, steuern die URL-Parameter:
-        <code>?kind=poesie|prosa&amp;author=AutorOrdner&amp;work=WerkId</code>.<br/>
-        Pfad-Konvention für .txt: <code>texte/&lt;kind&gt;/&lt;author&gt;/&lt;work&gt;.txt</code> und <code>…/_birkenbihl.txt</code>.
-      </div>
+    <!-- 2×2-Layout -->
+    <div class="grid-2x2">
 
-      <!-- Metainfos -->
-      <div class="row" style="margin-top:8px">
-        <div id="workMetaLine" class="pill">–</div>
-      </div>
+      <!-- (1) Original-Text (oben links) -->
+      <section class="panel">
+        <div class="head-row">
+          <h3 style="margin:0">Original-Text</h3>
+          <span id="origStatus" class="note">Lade Original…</span>
+        </div>
+        <pre id="origPre" class="viewer"></pre>
+      </section>
 
-      <div class="sep"></div>
+      <!-- (2) PDF + Schalter (oben rechts) -->
+      <section class="panel">
+        <div class="head-row">
+          <h3 style="margin:0">PDF</h3>
+          <div class="head-row" style="gap:8px">
+            <a id="downloadBtn" class="btn" href="#" download>PDF herunterladen</a>
+            <span id="pdfStatus" class="note"></span>
+          </div>
+        </div>
 
-      <!-- Optionen -->
-      <div class="grid">
         <!-- Quelle -->
-        <div class="panel">
-          <div class="row">
-            <h3>Quelle</h3>
-            <div class="radio-group field" role="group" aria-label="Quelle wählen">
-              <label><input type="radio" name="srcSel" value="original" checked /> Original</label>
-              <label><input type="radio" name="srcSel" value="draft" /> Entwurf</label>
-            </div>
-          </div>
-
-          <div class="sep"></div>
-
-          <!-- Entwurf-Upload -->
-          <div class="row">
-            <h3>Entwurf</h3>
-            <input type="file" id="draftFile" accept=".txt" />
-            <button class="btn" id="draftUploadBtn">Entwurf → PDF erzeugen</button>
-          </div>
-
-          <div class="note" style="margin-top:6px;">
-            Beim Rendern eines Entwurfs werden die gewählten Optionen (Fett/Normal, Farbe, Tags, ggf. Versmaß) berücksichtigt.
+        <div class="head-row">
+          <strong>Quelle</strong>
+          <div class="radio-group" role="group" aria-label="Quelle wählen">
+            <label><input type="radio" name="srcSel" value="original" checked> Original</label>
+            <label><input type="radio" name="srcSel" value="draft"> Entwurf</label>
           </div>
         </div>
 
-        <!-- Darstellung -->
-        <div class="panel">
-          <!-- Stärke -->
-          <div class="row">
-            <h3>Stärke</h3>
-            <div class="radio-group field" role="group" aria-label="Stärke wählen">
-              <label><input type="radio" name="strengthSel" value="Normal" checked /> Normal</label>
-              <label><input type="radio" name="strengthSel" value="GR_Fett" /> Fett</label>
-              <label><input type="radio" name="strengthSel" value="DE_Fett" /> DE-Fett</label>
-            </div>
-          </div>
+        <div class="sep"></div>
 
-          <div class="sep"></div>
-
-          <!-- Farbe -->
-          <div class="row">
-            <h3>Farbe</h3>
-            <div class="radio-group field" role="group" aria-label="Farbmodus wählen">
-              <label><input type="radio" name="colorSel" value="Colour" checked /> Colour</label>
-              <label><input type="radio" name="colorSel" value="BlackWhite" /> BlackWhite</label>
-            </div>
-          </div>
-
-          <div class="sep"></div>
-
-          <!-- Tags -->
-          <div class="row">
-            <h3>Grammatik-Tags</h3>
-            <div class="radio-group field" role="group" aria-label="Tags ein-/ausblenden">
-              <label><input type="radio" name="tagSel" value="Tag" checked /> Tags</label>
-              <label><input type="radio" name="tagSel" value="NoTags" /> NoTag</label>
-            </div>
-          </div>
-
-          <div class="sep"></div>
-
-          <!-- Versmaß (wird dynamisch ein-/ausgeblendet) -->
-          <div class="row" id="meterRow">
-            <h3>Versmaß</h3>
-            <div class="radio-group field" role="group" aria-label="Versmaß anzeigen">
-              <label><input type="radio" name="meterSel" value="On" /> Versmaß</label>
-              <label><input type="radio" name="meterSel" value="Off" checked /> Ohne Versmaß</label>
-            </div>
+        <!-- Stärke -->
+        <div class="head-row">
+          <strong>Stärke</strong>
+          <div class="radio-group" role="group" aria-label="Stärke wählen">
+            <label><input type="radio" name="strengthSel" value="Normal" checked> Normal</label>
+            <label><input type="radio" name="strengthSel" value="GR_Fett"> Fett</label>
+            <label><input type="radio" name="strengthSel" value="DE_Fett"> DE-Fett</label>
           </div>
         </div>
-      </div>
 
-      <!-- PDF -->
-      <div class="pdf-wrap">
-        <div class="pdf-head">
-          <div id="pdfStatus"></div>
-          <div class="note">Wenn nichts erscheint: Pfade/Dateinamen prüfen (Ordner/Datei exakt wie im Katalog).</div>
+        <!-- Farbe -->
+        <div class="head-row">
+          <strong>Farbe</strong>
+          <div class="radio-group" role="group" aria-label="Farbe wählen">
+            <label><input type="radio" name="colorSel" value="Colour" checked> Colour</label>
+            <label><input type="radio" name="colorSel" value="BlackWhite"> BlackWhite</label>
+          </div>
         </div>
+
+        <!-- Tags -->
+        <div class="head-row">
+          <strong>Grammatik-Tags</strong>
+          <div class="radio-group" role="group" aria-label="Tags wählen">
+            <label><input type="radio" name="tagSel" value="Tag" checked> Tags</label>
+            <label><input type="radio" name="tagSel" value="NoTags"> NoTag</label>
+          </div>
+        </div>
+
+        <!-- Versmaß (bei Poesie-Werken mit Meter) -->
+        <div class="head-row" id="meterRow" style="display:none">
+          <strong>Versmaß</strong>
+          <div class="radio-group" role="group" aria-label="Versmaß wählen">
+            <label><input type="radio" name="meterSel" value="On"> Versmaß</label>
+            <label><input type="radio" name="meterSel" value="Off" checked> Ohne Versmaß</label>
+          </div>
+        </div>
+
+        <div class="sep"></div>
+
         <iframe id="pdfFrame" title="PDF-Ansicht"></iframe>
-      </div>
+      </section>
+
+      <!-- (3) Birkenbihl-Text (unten links) -->
+      <section class="panel">
+        <div class="head-row">
+          <h3 style="margin:0">Birkenbihl-Text</h3>
+          <span id="bkvStatus" class="note">Lade Birkenbihl…</span>
+        </div>
+        <pre id="bkvPre" class="viewer"></pre>
+      </section>
+
+      <!-- (4) Entwurf & Worker (unten rechts) -->
+      <section class="panel">
+        <div class="head-row">
+          <h3 style="margin:0">Entwurf → PDF</h3>
+          <span class="note">Deine Datei bleibt lokal, der Worker rendert serverseitig.</span>
+        </div>
+
+        <div class="head-row">
+          <input type="file" id="draftFile" accept=".txt" />
+          <button id="draftUploadBtn" class="btn">Entwurf jetzt rendern</button>
+        </div>
+
+        <div class="note" id="draftNote" style="margin-top:6px">
+          Tipp: Oben „Quelle: Entwurf“ wählen, um die frisch gerenderte PDF automatisch anzuzeigen.
+        </div>
+      </section>
+
     </div>
   </div>
 
-  <!-- Module laden -->
-  <script type="module">
-    import { loadCatalog, getWorkMeta } from './catalog.js';
-    // Nur für die Titelzeile – Rendering macht work.js selbst
-    function getParam(name, def = '') {
-      const u = new URL(location.href);
-      return u.searchParams.get(name) || def;
-    }
-    document.addEventListener('DOMContentLoaded', async () => {
-      const kind = getParam('kind','poesie');
-      const author = getParam('author','Unsortiert');
-      const work = getParam('work','Unbenannt');
-      try {
-        const cat = await loadCatalog();
-        const meta = getWorkMeta(cat, kind, author, work);
-        const title = document.getElementById('pageTitle');
-        const metaLine = document.getElementById('workMetaLine');
-        if (meta) {
-          title.textContent = `${meta.author_display} – ${meta.title}`;
-          metaLine.textContent = `${kind} · ${meta.author_display} · ${meta.title}`;
-        } else {
-          title.textContent = 'Werkansicht – (nicht im Katalog)';
-          metaLine.textContent = 'Eintrag fehlt im Katalog';
-        }
-      } catch (e) {
-        console.error(e);
-      }
-    });
-  </script>
-  <script type="module" src="./work.js"></script>
+  <!-- Katalog-Helfer (liest catalog.json) -->
+  <script type="module" src="catalog.js"></script>
+  <!-- Logik für diese Seite -->
+  <script type="module" src="work.js"></script>
   <noscript>Bitte JavaScript aktivieren.</noscript>
 </body>
 </html>
