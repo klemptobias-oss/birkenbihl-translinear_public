@@ -23,7 +23,7 @@
 
 .page-title{
   margin: 0;
-  font-size: clamp(22px, 3.2vw, 34px); /* deutlich größer */
+  font-size: clamp(24px, 3.6vw, 38px); /* deutlich größer */
   font-weight: 800;
   text-align: center;                  /* mittig */
   line-height: 1.2;
@@ -57,8 +57,8 @@
   display: flex;
   flex-direction: column;
 
-  /* >>> höher machen (≈ 5–6 cm extra) */
-  min-height: 560px;  /* ~5.5 cm mehr als "normal groß" */
+  /* >>> ~10 cm höher (10cm ≈ 378px) – vorher 560px, jetzt ~ 560+380 ≈ 940px */
+  min-height: 940px;
 }
 
 .pane-head{
@@ -92,10 +92,14 @@
 /* PDF-Viewer im Paneel */
 .pdf-body{
   padding: 0;
+  /* Zoom via CSS-Variable */
+  --pdfScale: 1;
 }
 .pdf-body iframe{
-  width: 100%;
-  height: 100%;        /* füllt die erhöhte Paneelhöhe sauber aus */
+  width: calc(100% / var(--pdfScale));
+  height: calc(100% / var(--pdfScale));
+  transform: scale(var(--pdfScale));
+  transform-origin: top left;
   border: 0;
   display: block;
 }
@@ -168,6 +172,6 @@
     grid-template-columns: 1fr;
   }
   .pane{
-    min-height: 480px; /* auf kleineren Screens etwas niedriger */
+    min-height: 760px; /* auf kleineren Screens weiterhin deutlich höher */
   }
 }
