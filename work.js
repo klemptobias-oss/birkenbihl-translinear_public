@@ -711,12 +711,28 @@ async function performRendering() {
   form.append("options", JSON.stringify(payload));
 
   try {
-    const res = await fetch(`${WORKER_BASE}`, {
-      method: "POST",
-      body: form,
-      mode: "cors",
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    // Versuche verschiedene Endpoints
+    let res;
+    const endpoints = ['/render', '/api/render', '/generate', '/'];
+    
+    for (const endpoint of endpoints) {
+      try {
+        res = await fetch(`${WORKER_BASE}${endpoint}`, {
+          method: "POST",
+          body: form,
+          mode: "cors",
+        });
+        if (res.ok) break;
+      } catch (e) {
+        console.log(`Endpoint ${endpoint} failed:`, e.message);
+        continue;
+      }
+    }
+    
+    if (!res || !res.ok) {
+      throw new Error(`HTTP ${res?.status || 'Unknown'} - Alle Endpoints fehlgeschlagen`);
+    }
+    
     const data = await res.json();
     if (!data?.ok || !data?.pdf_url)
       throw new Error("Worker-Antwort unvollständig.");
