@@ -49,7 +49,8 @@ class PdfRenderOptions:
 # --------------------------------------------------------------------------------------
 
 def _poesie_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
-                 placement_overrides: Optional[dict] = None):
+                 placement_overrides: Optional[dict] = None,
+                 tag_config: Optional[dict] = None):
     """
     Poesie (Drama/Komödie/Epos-Layout):
     - Versmaß-Darstellung: aktiv, wenn "_Versmaß" im Dateinamen steht.
@@ -63,7 +64,8 @@ def _poesie_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
             gr_bold=True, de_bold=False,
             versmass_display=versmass_display,
             tag_mode=opts.tag_mode,
-            placement_overrides=placement_overrides
+            placement_overrides=placement_overrides,
+            tag_config=tag_config
         )
 
     if opts.strength == "NORMAL":
@@ -72,7 +74,8 @@ def _poesie_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
             gr_bold=False, de_bold=False,
             versmass_display=versmass_display,
             tag_mode=opts.tag_mode,
-            placement_overrides=placement_overrides
+            placement_overrides=placement_overrides,
+            tag_config=tag_config
         )
 
     if opts.strength == "DE_FETT":
@@ -81,14 +84,16 @@ def _poesie_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
             gr_bold=False, de_bold=True,
             versmass_display=versmass_display,
             tag_mode=opts.tag_mode,
-            placement_overrides=placement_overrides
+            placement_overrides=placement_overrides,
+            tag_config=tag_config
         )
 
     raise ValueError(f"Poesie: Unbekannte strength={opts.strength!r}")
 
 
 def _prosa_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
-                placement_overrides: Optional[dict] = None):
+                placement_overrides: Optional[dict] = None,
+                tag_config: Optional[dict] = None):
     """
     Prosa:
     - Kein Versmaß-Rendering.
@@ -99,7 +104,8 @@ def _prosa_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
         strength=opts.strength,
         color_mode=opts.color_mode,
         tag_mode=opts.tag_mode,
-        placement_overrides=placement_overrides
+        placement_overrides=placement_overrides,
+        tag_config=tag_config
     )
 
 
@@ -113,7 +119,8 @@ def create_pdf_unified(kind: Literal["poesie", "prosa"],
                        blocks,
                        out_pdf: str,
                        options: PdfRenderOptions,
-                       payload: Optional[dict] = None):
+                       payload: Optional[dict] = None,
+                       tag_config: Optional[dict] = None):
     """
     Orchestriert:
       1) Vorverarbeitung (mit optionaler UI-Payload —> Custom-Farben/Tags)
@@ -123,9 +130,9 @@ def create_pdf_unified(kind: Literal["poesie", "prosa"],
       {
         "show_colors": bool,
         "show_tags":   bool,
-        "color_pos":   [ "Aj","Pt","Prp","Av","Ko","Art","Pr","ij" ],
-        "sup_keep":    [ "N","D","G","A","V","Aj","Pt","Prp","Av","Ko","Art","≈","Kmp","Sup","ij" ],
-        "sub_keep":    [ "Pre","Imp","Aor","AorS","Per","Plq","Fu","Inf","Imv","Akt","Med","Pas","Kon","Op","Pr","M/P" ],
+        "color_pos":   [ "Aj","Pt","Prp","Av","Ko","Art","Pr","Ij" ],
+        "sup_keep":    [ "N","D","G","A","V","Aj","Pt","Prp","Av","Ko","Art","≈","Kmp","Sup","Ij" ],
+        "sub_keep":    [ "Pre","Imp","Aor","AorS","Per","Plq","Inf","Imv","Akt","Med","Pas","Kon","Op","Pr","M/P" ],
         "versmass":    "NORMAL" | "KEEP_MARKERS" | "REMOVE_MARKERS",
         "place":       { "Tag":"sup|sub|off", ... }    # Hoch/Tief/Aus – nur Poesie
       }
@@ -158,10 +165,12 @@ def create_pdf_unified(kind: Literal["poesie", "prosa"],
     # 2) Renderer-spezifischer Aufruf
     if k == "poesie":
         return _poesie_call(mod, pre_blocks, out_pdf, options,
-                            placement_overrides=placement_overrides)
+                            placement_overrides=placement_overrides,
+                            tag_config=tag_config)
     if k == "prosa":
         return _prosa_call(mod, pre_blocks, out_pdf, options,
-                           placement_overrides=placement_overrides)
+                           placement_overrides=placement_overrides,
+                           tag_config=tag_config)
 
     # (sollte wegen Prüfung oben nie erreicht werden)
     raise ValueError(f"Unbekannter kind='{kind}'. Erwartet: poesie|prosa")

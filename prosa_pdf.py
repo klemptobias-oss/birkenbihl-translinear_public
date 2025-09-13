@@ -29,7 +29,7 @@ def _args_or_default() -> list[str]:
         return [str(Path(a)) for a in sys.argv[1:]]
     return _discover_inputs_default()
 
-def _process_one_input(infile: str) -> None:
+def _process_one_input(infile: str, tag_config: dict = None) -> None:
     if not os.path.isfile(infile):
         print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
 
@@ -43,17 +43,36 @@ def _process_one_input(infile: str) -> None:
     for strength, color, tag in itertools.product(strengths, colors, tags):
         out_name = output_pdf_name(base, NameOpts(strength=strength, color_mode=color, tag_mode=tag))
         opts = PdfRenderOptions(strength=strength, color_mode=color, tag_mode=tag, versmass_mode="REMOVE_MARKERS")
-        create_pdf_unified("prosa", Prosa, blocks, out_name, opts)
+        create_pdf_unified("prosa", Prosa, blocks, out_name, opts, payload=None, tag_config=tag_config)
         print(f"✓ PDF erstellt → {out_name}")
 
 def main():
     inputs = _args_or_default()
     if not inputs:
         print("⚠ Keine .txt gefunden."); return
+    
+    # Parse command line arguments for tag config
+    import argparse
+    parser = argparse.ArgumentParser(description='Prosa PDF Generator')
+    parser.add_argument('input_files', nargs='*', help='Input files to process')
+    parser.add_argument('--tag-config', help='JSON file with tag configuration')
+    args = parser.parse_args()
+    
+    # Load tag configuration if provided
+    tag_config = None
+    if args.tag_config:
+        import json
+        try:
+            with open(args.tag_config, 'r', encoding='utf-8') as f:
+                tag_config = json.load(f)
+            print(f"Tag-Konfiguration geladen: {len(tag_config.get('sup_tags', []))} SUP, {len(tag_config.get('sub_tags', []))} SUB")
+        except Exception as e:
+            print(f"Fehler beim Laden der Tag-Konfiguration: {e}")
+    
     for infile in inputs:
         print(f"→ Verarbeite: {infile}")
         try:
-            _process_one_input(infile)
+            _process_one_input(infile, tag_config)
         except Exception as e:
             print(f"✗ Fehler bei {infile}: {e}")
 

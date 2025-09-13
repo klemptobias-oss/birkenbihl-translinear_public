@@ -10,7 +10,7 @@ Kompatibilität:
 - NEU: optionale Feineinstellungen:
     - color_pos_keep: Iterable[str] | None
         → PoS-Liste, für die Farbcodes (#/+/−) beibehalten werden (nur wenn color_mode="COLOR").
-          Alle anderen Tokens werden entfärbt. Mögliche PoS: {"Aj","Pt","Prp","Av","Ko","Art","Pr","ij"}
+          Alle anderen Tokens werden entfärbt. Mögliche PoS: {"Aj","Pt","Prp","Av","Ko","Art","Pr","Ij"}
     - sup_keep: Iterable[str] | None
         → SUP-Tags, die beibehalten werden (alle anderen werden entfernt).
     - sub_keep: Iterable[str] | None
@@ -48,14 +48,14 @@ import re
 from typing import List, Dict, Any, Iterable, Optional
 
 # ======= Konstanten (müssen mit dem Renderer-Stand zusammenpassen) =======
-SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','Sup','ij'}
+SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','Sup','Ij'}
 SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
 
 # PoS-Kandidaten für Farbsteuerung (bewusst keine Kasus!)
-COLOR_POS_WHITELIST = {'Aj','Pt','Prp','Av','Ko','Art','Pr','ij'}
+COLOR_POS_WHITELIST = {'Aj','Pt','Prp','Av','Ko','Art','Pr','Ij'}
 
 # ======= Regexe =======
-RE_PAREN_TAG     = re.compile(r'\(([A-Za-z/≈]+)\)')
+RE_PAREN_TAG     = re.compile(r'\(([A-Za-z0-9/≈]+)\)')
 RE_LEAD_BAR_COLOR= re.compile(r'^\|\s*([+\-#])')  # |+ |# |- (Farbcode NACH leitender '|')
 
 # ======= Typen =======

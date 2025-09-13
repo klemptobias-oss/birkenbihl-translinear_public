@@ -23,7 +23,7 @@ from reportlab.pdfbase      import pdfmetrics
 from reportlab.platypus     import SimpleDocTemplate, Paragraph, Spacer, KeepTogether, Table, TableStyle
 from reportlab.lib          import colors
 
-import re, os, html
+import re, os, html, json, argparse
 
 # =============================================================================
 # PROSA-KONFIGURATION: Klare, separate Einstellungen für alle Parameter
@@ -213,16 +213,48 @@ INTER_PAIR_GAP_MM_NO_TAGS = CONT_PAIR_GAP_MM_NO_TAGS
 INTER_PAIR_GAP_MM = CONT_PAIR_GAP_MM
 
 # ----------------------- Tags & Regex -----------------------
-# (Altlasten bleiben bewusst erhalten; spätere Bereinigung geplant)
-SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','ij','Sup'}
-SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
+# Standard-Tag-Definitionen (können durch Tag-Config überschrieben werden)
+DEFAULT_SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','Ij','Sup'}
+DEFAULT_SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
 
-RE_TAG       = re.compile(r'\(([A-Za-z/≈]+)\)')
-RE_TAG_NAKED = re.compile(r'\([A-Za-z/≈]+\)')
+# Dynamische Tag-Konfiguration (wird zur Laufzeit gesetzt)
+SUP_TAGS = DEFAULT_SUP_TAGS.copy()
+SUB_TAGS = DEFAULT_SUB_TAGS.copy()
+
+RE_TAG       = re.compile(r'\(([A-Za-z0-9/≈]+)\)')
+RE_TAG_NAKED = re.compile(r'\([A-Za-z0-9/≈]+\)')
 
 # ----------------------- Tag-Placement Overrides (hoch/tief/aus) -----------------------
 # Globale Laufzeit-Overrides, z. B. {"Pt":"off","Aor":"sub","≈":"sup"}
 _PLACEMENT_OVERRIDES: dict[str, str] = {}
+
+def load_tag_config(config_file: str = None) -> None:
+    """Lädt Tag-Konfiguration aus JSON-Datei"""
+    global SUP_TAGS, SUB_TAGS, _PLACEMENT_OVERRIDES
+    
+    if not config_file or not os.path.exists(config_file):
+        return
+    
+    try:
+        with open(config_file, 'r', encoding='utf-8') as f:
+            config = json.load(f)
+        
+        # Aktualisiere SUP_TAGS
+        if 'sup_tags' in config:
+            SUP_TAGS = set(config['sup_tags'])
+        
+        # Aktualisiere SUB_TAGS
+        if 'sub_tags' in config:
+            SUB_TAGS = set(config['sub_tags'])
+        
+        # Aktualisiere PLACEMENT_OVERRIDES
+        if 'placement_overrides' in config:
+            _PLACEMENT_OVERRIDES = config['placement_overrides']
+        
+        print(f"Tag-Konfiguration geladen: {len(SUP_TAGS)} SUP, {len(SUB_TAGS)} SUB")
+        
+    except Exception as e:
+        print(f"Fehler beim Laden der Tag-Konfiguration: {e}")
 
 def set_tag_placement_overrides(overrides: dict | None):
     """Von außen (unified_api) einstellbar. Werte: "sup" | "sub" | "off"."""
@@ -751,10 +783,29 @@ def build_tables_for_stream(gr_tokens, de_tokens, *,
 def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                gr_size:float=9.0, de_size:float=8.0,
                color_mode:str="COLOR", tag_mode:str="TAGS",
-               placement_overrides: dict | None = None):
+               placement_overrides: dict | None = None,
+               tag_config: dict | None = None):
 
     # Tag-Placement-Overrides (hoch/tief/aus) anwenden
     set_tag_placement_overrides(placement_overrides)
+
+    # Preprocessing mit Tag-Konfiguration anwenden
+    if tag_config:
+        try:
+            from shared.preprocess import apply_from_payload
+            # Konvertiere tag_config zu preprocess payload
+            payload = {
+                "show_colors": color_mode == "COLOR",
+                "show_tags": tag_mode == "TAGS",
+                "color_pos": tag_config.get('color_pos_whitelist', []),
+                "sup_keep": tag_config.get('sup_tags', []),
+                "sub_keep": tag_config.get('sub_tags', []),
+                "versmass": "NORMAL"
+            }
+            blocks = apply_from_payload(blocks, payload)
+            print(f"Preprocessing angewendet: {len(tag_config.get('sup_tags', []))} SUP, {len(tag_config.get('sub_tags', []))} SUB")
+        except Exception as e:
+            print(f"Fehler beim Preprocessing: {e}")
 
     # Setze kritische Konstanten basierend auf tag_mode
     global INTRA_PAIR_GAP_MM, CONT_PAIR_GAP_MM, SPEAKER_GAP_MM
@@ -1024,9 +1075,47 @@ def run_batch(input_files):
 
 # ----------------------- MAIN -----------------------
 if __name__ == '__main__':
-    inputs = sorted([str(p) for p in Path('.').glob('InputFließtext*.txt')])
-    if not inputs:
-        print("⚠ Keine Input*.txt gefunden.")
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description='Prosa PDF Generator')
+    parser.add_argument('input_file', nargs='?', help='Input file to process')
+    parser.add_argument('--tag-config', help='JSON file with tag configuration')
+    args = parser.parse_args()
+    
+    # Load tag configuration if provided
+    if args.tag_config:
+        load_tag_config(args.tag_config)
+    
+    if args.input_file:
+        # Process single file
+        if not os.path.isfile(args.input_file):
+            print(f"⚠ Datei nicht gefunden: {args.input_file}")
+            exit(1)
+        try:
+            print(f"→ Verarbeite: {args.input_file}")
+            blocks = process_input_file(args.input_file)
+            label = label_from_input_name(args.input_file)
+            
+            out_normal = output_name_for_label(label, reverse=False)
+            create_pdf(blocks, out_normal, strength="NORMAL",
+                       gr_size=NORMAL_GR_SIZE, de_size=NORMAL_DE_SIZE)
+            print(f"✓ PDF erstellt → {out_normal}")
+            
+            out_fett = output_name_for_label(label, reverse=False) + "_Fett"
+            create_pdf(blocks, out_fett, strength="GR_FETT",
+                       gr_size=REVERSE_GR_SIZE, de_size=REVERSE_DE_SIZE)
+            print(f"✓ PDF erstellt → {out_fett}")
+            
+            out_rev = output_name_for_label(label, reverse=True)
+            create_pdf(blocks, out_rev, strength="GR_FETT",
+                       gr_size=REVERSE_GR_SIZE, de_size=REVERSE_DE_SIZE)
+            print(f"✓ PDF erstellt → {out_rev}")
+        except Exception as e:
+            print(f"✗ Fehler bei {args.input_file}: {e}")
     else:
-        run_batch(inputs)
+        # Process batch
+        inputs = sorted([str(p) for p in Path('.').glob('InputFließtext*.txt')])
+        if not inputs:
+            print("⚠ Keine Input*.txt gefunden.")
+        else:
+            run_batch(inputs)
 

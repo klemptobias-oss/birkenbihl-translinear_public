@@ -15,7 +15,7 @@ from reportlab.lib.enums    import TA_CENTER, TA_LEFT, TA_RIGHT
 from reportlab.pdfbase      import pdfmetrics
 from reportlab.platypus     import SimpleDocTemplate, Paragraph, Spacer, KeepTogether, Table, TableStyle, Flowable
 from reportlab.lib          import colors
-import re, os, html, unicodedata
+import re, os, html, unicodedata, json, argparse
 
 # ========= Optik / Einheiten =========
 MM = RL_MM
@@ -81,8 +81,13 @@ CFG = {
 }
 
 # ========= Tags/Regex =========
-SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','ij','Sup'}
-SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
+# Standard-Tag-Definitionen (können durch Tag-Config überschrieben werden)
+DEFAULT_SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','ij','Sup'}
+DEFAULT_SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
+
+# Dynamische Tag-Konfiguration (wird zur Laufzeit gesetzt)
+SUP_TAGS = DEFAULT_SUP_TAGS.copy()
+SUB_TAGS = DEFAULT_SUB_TAGS.copy()
 
 # ======= Dynamische Hoch/Tief-Overrides aus dem Preprocess/UI =======
 # Mapping: Tag -> "sup" | "sub" | "off"
@@ -90,6 +95,34 @@ SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Ko
 # - "sub": Tag wird als <sub> gesetzt
 # - "off": Tag wird unterdrückt (gar nicht angezeigt/mitsummiert)
 PLACEMENT_OVERRIDES: dict[str, str] = {}
+
+def load_tag_config(config_file: str = None) -> None:
+    """Lädt Tag-Konfiguration aus JSON-Datei"""
+    global SUP_TAGS, SUB_TAGS, PLACEMENT_OVERRIDES
+    
+    if not config_file or not os.path.exists(config_file):
+        return
+    
+    try:
+        with open(config_file, 'r', encoding='utf-8') as f:
+            config = json.load(f)
+        
+        # Aktualisiere SUP_TAGS
+        if 'sup_tags' in config:
+            SUP_TAGS = set(config['sup_tags'])
+        
+        # Aktualisiere SUB_TAGS
+        if 'sub_tags' in config:
+            SUB_TAGS = set(config['sub_tags'])
+        
+        # Aktualisiere PLACEMENT_OVERRIDES
+        if 'placement_overrides' in config:
+            PLACEMENT_OVERRIDES = config['placement_overrides']
+        
+        print(f"Tag-Konfiguration geladen: {len(SUP_TAGS)} SUP, {len(SUB_TAGS)} SUB")
+        
+    except Exception as e:
+        print(f"Fehler beim Laden der Tag-Konfiguration: {e}")
 
 def _classify_tag_with_overrides(tag: str) -> str:
     """
@@ -202,9 +235,6 @@ def is_greek_line(line: str) -> bool:
 
     # Mindestens 2 griechische Buchstaben für eine griechische Zeile
     return greek_letters >= 2
-
-# ========= Versmaß-Overlay (angepasst aus Epos) =========
-HIDE_TAGS = {'Med','Pas','Akt','M/P','P/M'}
 
 def _color_from_marker(ch):
     if ch == '+': return '#1E90FF'
@@ -1058,7 +1088,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                de_bold:bool = False,
                versmass_display: bool = False,
                tag_mode: str = "TAGS",
-               placement_overrides: dict[str, str] | None = None):
+               placement_overrides: dict[str, str] | None = None,
+               tag_config: dict | None = None):
 
     # NoTags-Schalter global setzen, wenn Dateiname auf _NoTags.pdf endet
     global CURRENT_IS_NOTAGS
@@ -1066,6 +1097,24 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
     # Optionale Hoch/Tief/Off-Overrides aus Preprocess/UI aktivieren
     global PLACEMENT_OVERRIDES
     PLACEMENT_OVERRIDES = dict(placement_overrides or {})
+    
+    # Preprocessing mit Tag-Konfiguration anwenden
+    if tag_config:
+        try:
+            from shared.preprocess import apply_from_payload
+            # Konvertiere tag_config zu preprocess payload
+            payload = {
+                "show_colors": not pdf_name.lower().endswith("_blackwhite.pdf"),
+                "show_tags": not CURRENT_IS_NOTAGS,
+                "color_pos": tag_config.get('color_pos_whitelist', []),
+                "sup_keep": tag_config.get('sup_tags', []),
+                "sub_keep": tag_config.get('sub_tags', []),
+                "versmass": "KEEP_MARKERS" if versmass_display else "NORMAL"
+            }
+            blocks = apply_from_payload(blocks, payload)
+            print(f"Preprocessing angewendet: {len(tag_config.get('sup_tags', []))} SUP, {len(tag_config.get('sub_tags', []))} SUB")
+        except Exception as e:
+            print(f"Fehler beim Preprocessing: {e}")
     left_margin = 10*MM
     right_margin = 10*MM
     doc = SimpleDocTemplate(
@@ -1357,9 +1406,38 @@ def run_batch(input_files):
             print(f"✗ Fehler bei {infile}: {e}")
 
 if __name__ == '__main__':
-    inputs = process_inputs_glob()
-    if not inputs:
-        print("⚠ Keine InputKomödie* / InputTragödie* gefunden.")
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description='Poesie PDF Generator')
+    parser.add_argument('input_file', nargs='?', help='Input file to process')
+    parser.add_argument('--tag-config', help='JSON file with tag configuration')
+    args = parser.parse_args()
+    
+    # Load tag configuration if provided
+    if args.tag_config:
+        load_tag_config(args.tag_config)
+    
+    if args.input_file:
+        # Process single file
+        if not os.path.isfile(args.input_file):
+            print(f"⚠ Datei nicht gefunden: {args.input_file}")
+            exit(1)
+        try:
+            print(f"→ Verarbeite: {args.input_file}")
+            blocks = process_input_file(args.input_file)
+            cat, label = category_and_label_from_input(args.input_file)
+            out_fett = output_name_fett(cat, label)
+            create_pdf(blocks, out_fett, gr_bold=True)
+            print(f"✓ PDF erstellt → {out_fett}")
+            out_norm = output_name_normal(cat, label)
+            create_pdf(blocks, out_norm, gr_bold=False)
+            print(f"✓ PDF erstellt → {out_norm}")
+        except Exception as e:
+            print(f"✗ Fehler bei {args.input_file}: {e}")
     else:
-        run_batch(inputs)
+        # Process batch
+        inputs = process_inputs_glob()
+        if not inputs:
+            print("⚠ Keine InputKomödie* / InputTragödie* gefunden.")
+        else:
+            run_batch(inputs)
 

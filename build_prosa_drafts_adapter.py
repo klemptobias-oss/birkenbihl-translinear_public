@@ -1,138 +1,97 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-from __future__ import annotations
+######## START: build_prosa_drafts_adapter.py ########
 from pathlib import Path
-import json
-import traceback
-
-# Module aus deinem Repo
-import Prosa_Code as Prosa
-from shared.unified_api import create_pdf_unified, PdfRenderOptions
-from shared.naming import base_from_input_path, output_pdf_name, PdfRenderOptions as NameOpts
+import subprocess, sys, json
 
 ROOT = Path(__file__).parent.resolve()
+SRC_ROOT = ROOT / "texte_drafts" / "prosa"               # Eingaben
+DST_BASE = ROOT / "pdf_drafts" / "prosa_drafts"          # Ausgaben
 
-DRAFTS_ROOT = ROOT / "texte_drafts" / "prosa_drafts"
-OUT_ROOT    = ROOT / "pdf_drafts"   / "draft_prosa_pdf"
+RUNNER = ROOT / "prosa_pdf.py"                           # 12 Varianten (Prosa)
 
-# ---------- Hilfen ----------
+def run_one(input_path: Path, tag_config: dict = None) -> None:
+    if not input_path.is_file():
+        print(f"⚠ Datei fehlt: {input_path} — übersprungen"); return
 
-def _load_payload_for(draft: Path) -> dict | None:
-    """
-    Lade optional eine Payload:
-      1) <stem>.json neben der .txt
-      2) payload.json im selben Ordner
-    """
-    cand1 = draft.with_suffix(".json")
-    cand2 = draft.parent / "payload.json"
-    for c in (cand1, cand2):
-        if c.exists() and c.is_file():
-            try:
-                return json.loads(c.read_text(encoding="utf-8"))
-            except Exception:
-                print(f"⚠ Payload ungültig (ignoriert): {c}")
-    return None
+    # Extrahiere Autor und Werk aus dem Pfad
+    # input_path: texte_drafts/prosa/Autor/Werk/datei.txt
+    # relative_to(SRC_ROOT): Autor/Werk/datei.txt
+    relative_path = input_path.relative_to(SRC_ROOT)
+    path_parts = relative_path.parts
+    author = path_parts[0]
+    work = path_parts[1] if len(path_parts) > 1 else ""
+    
+    # Erstelle Zielordner: pdf_drafts/prosa_drafts/Autor/Werk/
+    target_dir = DST_BASE / author / work
+    target_dir.mkdir(parents=True, exist_ok=True)
 
-def _ensure_outdir_for(draft: Path) -> Path:
-    """Zielordner: pdf_drafts/draft_prosa_pdf/<Autor>/"""
-    author = draft.parent.name
-    outdir = OUT_ROOT / author
-    outdir.mkdir(parents=True, exist_ok=True)
-    return outdir
-
-def _opts_from_payload(payload: dict | None) -> PdfRenderOptions:
-    """
-    Übersetze UI-Payload in PdfRenderOptions (ohne Versmaß – Prosa rendert kein Versmaß).
-    """
-    if not payload:
-        return PdfRenderOptions(
-            strength="NORMAL",
-            color_mode="COLOR",
-            tag_mode="TAGS",
-            versmass_mode="NORMAL",  # ignoriert vom Prosa-Renderer
-        )
-    strength = payload.get("strength", "NORMAL")
-    show_colors = bool(payload.get("show_colors", True))
-    show_tags   = bool(payload.get("show_tags",   True))
-    color_mode  = "COLOR" if show_colors else "BLACK_WHITE"
-    tag_mode    = "TAGS"  if show_tags   else "NO_TAGS"
-    return PdfRenderOptions(
-        strength=strength,
-        color_mode=color_mode,
-        tag_mode=tag_mode,
-        versmass_mode="NORMAL",
-    )
-
-def _discover_latest_txts_per_author() -> list[Path]:
-    """
-    Durchläuft autoren-Ordner unter DRAFTS_ROOT und wählt je Autor die
-    zuletzt geänderte .txt-Datei (mtime) aus.
-    """
-    latest: list[Path] = []
-    if not DRAFTS_ROOT.exists():
-        return latest
-
-    for author_dir in sorted([p for p in DRAFTS_ROOT.iterdir() if p.is_dir()]):
-        txts = sorted(author_dir.glob("*.txt"))
-        if not txts:
-            continue
-        newest = max(txts, key=lambda p: p.stat().st_mtime)
-        latest.append(newest)
-    return latest
-
-# ---------- Hauptlogik ----------
-
-def _process_one(draft_txt: Path) -> None:
+    # Extrahiere den Basisnamen der Eingabedatei (ohne .txt)
+    input_stem = input_path.stem
+    
+    before = {p.name for p in ROOT.glob("*.pdf")}
+    print(f"→ Erzeuge PDFs für: {input_path}")
+    
+    # Erstelle temporäre Konfigurationsdatei für Tag-Einstellungen
+    config_file = None
+    if tag_config:
+        config_file = ROOT / "temp_tag_config.json"
+        with open(config_file, 'w', encoding='utf-8') as f:
+            json.dump(tag_config, f, ensure_ascii=False, indent=2)
+    
     try:
-        if not draft_txt.exists():
-            print(f"⚠ fehlt: {draft_txt}")
+        # Führe den Runner mit optionaler Konfiguration aus
+        cmd = [sys.executable, str(RUNNER), str(input_path)]
+        if config_file:
+            cmd.extend(["--tag-config", str(config_file)])
+        
+        # Führe den Runner aus und übertrage Tag-Konfiguration
+        result = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True)
+        if result.returncode != 0:
+            print(f"Fehler beim Ausführen des Runners: {result.stderr}")
             return
-
-        payload = _load_payload_for(draft_txt)
-        opts    = _opts_from_payload(payload)
-
-        # 1) Parsen
-        blocks = Prosa.process_input_file(str(draft_txt))
-
-        # 2) Name bauen (Standard-Namensschema) – in Prosa KEIN Versmaß-Suffix
-        base = base_from_input_path(draft_txt)
-        out_name = output_pdf_name(
-            base,
-            NameOpts(
-                strength=opts.strength,
-                color_mode=opts.color_mode,
-                tag_mode=opts.tag_mode,
-            ),
-        )
-
-        # 3) Zielordner
-        outdir = _ensure_outdir_for(draft_txt)
-        out_pdf = outdir / out_name
-
-        # 4) Rendern
-        create_pdf_unified(
-            "prosa",
-            Prosa,
-            blocks,
-            str(out_pdf),
-            options=opts,
-            payload=payload,   # darf None sein
-        )
-        print(f"✓ Draft → {out_pdf}")
+        print(result.stdout)
     except Exception as e:
-        print(f"✗ Fehler bei {draft_txt.name}: {e}")
-        traceback.print_exc()
+        print(f"Fehler beim Ausführen des Runners: {e}")
+        return
+    finally:
+        # Lösche temporäre Konfigurationsdatei
+        if config_file and config_file.exists():
+            config_file.unlink()
+    
+    after = {p.name for p in ROOT.glob("*.pdf")}
+    new_pdfs = sorted(after - before)
+
+    if not new_pdfs:
+        print("⚠ Keine PDFs erzeugt."); return
+
+    # Filtere nur die PDFs, die zu dieser Eingabedatei gehören
+    relevant_pdfs = [name for name in new_pdfs if name.startswith(input_stem)]
+    
+    if not relevant_pdfs:
+        print(f"⚠ Keine passenden PDFs für {input_stem} gefunden."); return
+
+    for name in relevant_pdfs:
+        src = ROOT / name
+        dst = target_dir / name
+        src.replace(dst)
+        print(f"✓ PDF → {dst}")
 
 def main():
-    drafts = _discover_latest_txts_per_author()
-    if not drafts:
-        print("✗ Keine Prosa-Drafts gefunden (je Autor keine .txt).")
-        return
-    for p in drafts:
-        print(f"→ Verarbeite jüngsten Entwurf für Autor '{p.parent.name}': {p.name}")
-        _process_one(p)
+    if len(sys.argv) < 2:
+        print("Verwendung: python build_prosa_drafts_adapter.py <input_file> [tag_config.json]")
+        sys.exit(1)
+    
+    input_file = Path(sys.argv[1])
+    tag_config = None
+    
+    # Lade Tag-Konfiguration falls vorhanden
+    if len(sys.argv) > 2:
+        config_file = Path(sys.argv[2])
+        if config_file.exists():
+            with open(config_file, 'r', encoding='utf-8') as f:
+                tag_config = json.load(f)
+    
+    run_one(input_file, tag_config)
 
 if __name__ == "__main__":
     main()
-
+######## END: build_prosa_drafts_adapter.py ########

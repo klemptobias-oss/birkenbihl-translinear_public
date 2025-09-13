@@ -1,216 +1,398 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Werkseite</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Werkseite</title>
 
-  <!-- Basis-Stile -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- Werk-spezifisches Layout -->
-  <link rel="stylesheet" href="work.css" />
-</head>
-<body>
-  <!-- ======= Kopf ======= -->
-  <header class="topbar">
-    <div class="topbar-left">
-      <a class="back-link" href="index.html">← Zurück zur Startseite</a>
+    <!-- Basis-Stile -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Werk-spezifisches Layout -->
+    <link rel="stylesheet" href="work.css" />
+  </head>
+  <body>
+    <!-- ======= Kopf ======= -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <a class="back-link" href="index.html">← Zurück zur Startseite</a>
+      </div>
+      <div class="topbar-center">
+        <h1 id="pageTitle" class="page-title">Autor – Werk</h1>
+      </div>
+      <div class="topbar-right"></div>
+    </header>
+
+    <main class="wrap">
+      <div class="notice small">
+        (Hinweis für Redaktion) Diese Werkseite lädt per URL-Parametern
+        <code>?kind=&amp;author=&amp;work=</code>.
+      </div>
+
+      <!-- ======= 2×2-Grid ======= -->
+      <section class="grid-2x2">
+        <!-- Original-Text (oben links) -->
+        <div class="pane">
+          <div class="pane-head">
+            <div class="pane-title">Original-Text</div>
+            <div class="pane-tools">
+              <button id="btnOrigPlus" class="btn" title="Schrift größer">
+                A+
+              </button>
+              <button id="btnOrigMinus" class="btn" title="Schrift kleiner">
+                A−
+              </button>
+              <a id="btnOrigDownload" class="btn primary" href="#" download
+                >Original.txt herunterladen</a
+              >
+            </div>
+          </div>
+          <div id="origText" class="pane-body mono scroll"></div>
+        </div>
+
+        <!-- PDF (oben rechts) -->
+        <div class="pane">
+          <div class="pane-head">
+            <div class="pane-title">PDF</div>
+            <div class="pane-tools">
+              <button
+                id="btnPdfOpenTab"
+                class="btn"
+                title="In neuem Tab öffnen"
+              >
+                PDF in neuem Tab öffnen
+              </button>
+              <a id="btnPdfDownload" class="btn primary" href="#" download
+                >Aktuelles PDF herunterladen</a
+              >
+            </div>
+          </div>
+
+          <!-- Schalter: Quelle / Stärke / Farbe / Tags / Versmaß -->
+          <div class="option-groups">
+            <div class="opt-row">
+              <div class="opt-label">Quelle</div>
+              <div class="seg">
+                <button class="seg-btn" data-opt="source" data-val="original">
+                  Original
+                </button>
+                <button class="seg-btn" data-opt="source" data-val="draft">
+                  Entwurf
+                </button>
+              </div>
+            </div>
+
+            <div class="opt-row">
+              <div class="opt-label">Stärke</div>
+              <div class="seg" id="seg-strength">
+                <button class="seg-btn" data-opt="strength" data-val="Normal">
+                  Normal
+                </button>
+                <button class="seg-btn" data-opt="strength" data-val="GR_Fett">
+                  Fett
+                </button>
+                <button class="seg-btn" data-opt="strength" data-val="DE_Fett">
+                  DE-Fett
+                </button>
+              </div>
+            </div>
+
+            <div class="opt-row">
+              <div class="opt-label">Farbe</div>
+              <div class="seg">
+                <button class="seg-btn" data-opt="color" data-val="Colour">
+                  Colour
+                </button>
+                <button class="seg-btn" data-opt="color" data-val="BlackWhite">
+                  BlackWhite
+                </button>
+              </div>
+            </div>
+
+            <div class="opt-row">
+              <div class="opt-label">Grammatik-Tags</div>
+              <div class="seg">
+                <button class="seg-btn" data-opt="tags" data-val="Tag">
+                  Tags
+                </button>
+                <button class="seg-btn" data-opt="tags" data-val="NoTags">
+                  NoTag
+                </button>
+              </div>
+            </div>
+
+            <div class="opt-row" id="opt-meter-row">
+              <div class="opt-label">Versmaß</div>
+              <div class="seg">
+                <button class="seg-btn" data-opt="meter" data-val="with">
+                  Versmaß
+                </button>
+                <button class="seg-btn" data-opt="meter" data-val="without">
+                  Ohne Versmaß
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pane-body pdf-body" id="pdfPane" style="--pdfScale: 1">
+            <iframe id="pdfFrame" title="PDF-Ansicht" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Birkenbihl-Text (unten links) -->
+        <div class="pane">
+          <div class="pane-head">
+            <div class="pane-title">Birkenbihl-Text</div>
+            <div class="pane-tools">
+              <button id="btnBirPlus" class="btn" title="Schrift größer">
+                A+
+              </button>
+              <button id="btnBirMinus" class="btn" title="Schrift kleiner">
+                A−
+              </button>
+              <a
+                id="btnBirkenbihlDownload"
+                class="btn primary"
+                href="#"
+                download
+                >Birkenbihl.txt herunterladen</a
+              >
+            </div>
+          </div>
+          <div id="birkenbihlText" class="pane-body mono scroll"></div>
+        </div>
+
+        <!-- Entwurf → PDF (unten rechts) -->
+        <div class="pane">
+          <div class="pane-head">
+            <div class="pane-title">Entwurf → PDF</div>
+            <div class="pane-tools">
+              <button id="btnDraftTextPlus" class="btn" title="Schrift größer">
+                A+
+              </button>
+              <button
+                id="btnDraftTextMinus"
+                class="btn"
+                title="Schrift kleiner"
+              >
+                A−
+              </button>
+              <a id="btnDraftDownload" class="btn primary" href="#" download>
+                Birkenbihl-Entwurf.txt herunterladen
+              </a>
+            </div>
+          </div>
+
+          <div class="draft-uploader">
+            <input id="draftFile" type="file" accept=".txt" />
+            <button id="btnRenderDraft" class="btn primary">
+              Entwurf jetzt rendern
+            </button>
+            <span class="muted" id="draftStatus">Bereit.</span>
+          </div>
+
+          <div
+            id="draftText"
+            class="pane-body mono scroll"
+            contenteditable="true"
+            style="
+              min-height: 200px;
+              border: 1px solid #e5e7eb;
+              padding: 8px;
+              margin: 8px;
+              border-radius: 4px;
+            "
+          ></div>
+
+          <div
+            class="pane-body pdf-body"
+            id="draftPdfPane"
+            style="--pdfScale: 1"
+          >
+            <iframe
+              id="draftPdfFrame"
+              title="Draft-PDF"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rendering-Modal -->
+    <div id="renderingModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>PDF-Rendering konfigurieren</h2>
+          <button id="closeModal" class="btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="config-section">
+            <h3>Grammatik-Tags</h3>
+            <div class="tag-controls">
+              <div class="tag-group">
+                <h4>Hochgestellt (SUP_TAGS)</h4>
+                <div class="tag-checkboxes" id="supTagsContainer">
+                  <!-- Wird dynamisch gefüllt -->
+                </div>
+              </div>
+              <div class="tag-group">
+                <h4>Tiefgestellt (SUB_TAGS)</h4>
+                <div class="tag-checkboxes" id="subTagsContainer">
+                  <!-- Wird dynamisch gefüllt -->
+                </div>
+              </div>
+              <div class="tag-group">
+                <h4>Farbsteuerung (COLOR_POS_WHITELIST)</h4>
+                <div class="tag-checkboxes" id="colorTagsContainer">
+                  <!-- Wird dynamisch gefüllt -->
+                </div>
+              </div>
+            </div>
+            <div class="quick-controls">
+              <button id="disableAllTags" class="btn">
+                Alle Tags deaktivieren
+              </button>
+              <button id="enableAllTags" class="btn">
+                Alle Tags aktivieren
+              </button>
+              <button id="disableAllColors" class="btn">
+                Alle Farben deaktivieren
+              </button>
+              <button id="enableAllColors" class="btn">
+                Alle Farben aktivieren
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="cancelRendering" class="btn">Abbrechen</button>
+          <button id="confirmRendering" class="btn primary">
+            PDFs rendern
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="topbar-center">
-      <h1 id="pageTitle" class="page-title">Autor – Werk</h1>
-    </div>
-    <div class="topbar-right"></div>
-  </header>
 
-  <main class="wrap">
-    <div class="notice small">
-      (Hinweis für Redaktion) Diese Werkseite lädt per URL-Parametern <code>?kind=&amp;author=&amp;work=</code>.
-    </div>
+    <!-- Globale Utils -->
+    <script src="utils.js"></script>
+    <!-- Worker-Basis für Draft-Render -->
+    <script>
+      window.WORKER_BASE =
+        "https://birkenbihl-draft-01.klemp-tobias.workers.dev";
+    </script>
+    <!-- Hauptlogik (deine vorhandene Datei) -->
+    <script src="work.js"></script>
 
-    <!-- ======= 2×2-Grid ======= -->
-    <section class="grid-2x2">
-
-      <!-- Original-Text (oben links) -->
-      <div class="pane">
-        <div class="pane-head">
-          <div class="pane-title">Original-Text</div>
-          <div class="pane-tools">
-            <button id="btnOrigPlus" class="btn" title="Schrift größer">A+</button>
-            <button id="btnOrigMinus" class="btn" title="Schrift kleiner">A−</button>
-          </div>
-        </div>
-        <div id="origText" class="pane-body mono scroll"></div>
-      </div>
-
-      <!-- PDF (oben rechts) -->
-      <div class="pane">
-        <div class="pane-head">
-          <div class="pane-title">PDF</div>
-          <div class="pane-tools">
-            <button id="btnPdfZoomIn" class="btn" title="Größer">A+</button>
-            <button id="btnPdfZoomOut" class="btn" title="Kleiner">A−</button>
-            <button id="btnPdfOpenTab" class="btn" title="In neuem Tab öffnen">PDF in neuem Tab öffnen</button>
-            <a id="btnPdfDownload" class="btn primary" href="#" download>Aktuelles PDF herunterladen</a>
-          </div>
-        </div>
-
-        <!-- Schalter: Quelle / Stärke / Farbe / Tags / Versmaß -->
-        <div class="option-groups">
-          <div class="opt-row">
-            <div class="opt-label">Quelle</div>
-            <div class="seg">
-              <button class="seg-btn" data-opt="source" data-val="original">Original</button>
-              <button class="seg-btn" data-opt="source" data-val="draft">Entwurf</button>
-            </div>
-          </div>
-
-          <div class="opt-row">
-            <div class="opt-label">Stärke</div>
-            <div class="seg" id="seg-strength">
-              <button class="seg-btn" data-opt="strength" data-val="Normal">Normal</button>
-              <button class="seg-btn" data-opt="strength" data-val="GR_Fett">Fett</button>
-              <button class="seg-btn" data-opt="strength" data-val="DE_Fett">DE-Fett</button>
-            </div>
-          </div>
-
-          <div class="opt-row">
-            <div class="opt-label">Farbe</div>
-            <div class="seg">
-              <button class="seg-btn" data-opt="color" data-val="Colour">Colour</button>
-              <button class="seg-btn" data-opt="color" data-val="BlackWhite">BlackWhite</button>
-            </div>
-          </div>
-
-          <div class="opt-row">
-            <div class="opt-label">Grammatik-Tags</div>
-            <div class="seg">
-              <button class="seg-btn" data-opt="tags" data-val="Tag">Tags</button>
-              <button class="seg-btn" data-opt="tags" data-val="NoTags">NoTag</button>
-            </div>
-          </div>
-
-          <div class="opt-row" id="opt-meter-row">
-            <div class="opt-label">Versmaß</div>
-            <div class="seg">
-              <button class="seg-btn" data-opt="meter" data-val="with">Versmaß</button>
-              <button class="seg-btn" data-opt="meter" data-val="without">Ohne Versmaß</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="pane-body pdf-body" id="pdfPane" style="--pdfScale:1">
-          <iframe id="pdfFrame" title="PDF-Ansicht" loading="lazy"></iframe>
-        </div>
-      </div>
-
-      <!-- Birkenbihl-Text (unten links) -->
-      <div class="pane">
-        <div class="pane-head">
-          <div class="pane-title">Birkenbihl-Text</div>
-          <div class="pane-tools">
-            <button id="btnBirPlus" class="btn" title="Schrift größer">A+</button>
-            <button id="btnBirMinus" class="btn" title="Schrift kleiner">A−</button>
-          </div>
-        </div>
-        <div id="birkenbihlText" class="pane-body mono scroll"></div>
-      </div>
-
-      <!-- Entwurf → PDF (unten rechts) -->
-      <div class="pane">
-        <div class="pane-head">
-          <div class="pane-title">Entwurf → PDF</div>
-          <div class="pane-tools">
-            <button id="btnDraftPdfZoomIn" class="btn" title="Größer">A+</button>
-            <button id="btnDraftPdfZoomOut" class="btn" title="Kleiner">A−</button>
-          </div>
-        </div>
-
-        <div class="draft-uploader">
-          <input id="draftFile" type="file" accept=".txt" />
-          <button id="btnRenderDraft" class="btn primary">Entwurf jetzt rendern</button>
-          <span class="muted" id="draftStatus">Bereit.</span>
-        </div>
-
-        <div class="pane-body pdf-body" id="draftPdfPane" style="--pdfScale:1">
-          <iframe id="draftPdfFrame" title="Draft-PDF" loading="lazy"></iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Globale Utils -->
-  <script src="utils.js"></script>
-  <!-- Worker-Basis für Draft-Render -->
-  <script>
-    window.WORKER_BASE = "https://birkenbihl-draft-01.klemp-tobias.workers.dev";
-  </script>
-  <!-- Hauptlogik (deine vorhandene Datei) -->
-  <script src="work.js"></script>
-
-  <!-- Kleines Patch-Skript: Titel säubern, PDF-Links & Zoom -->
-  <script>
-    (function(){
-      function cleanTitle() {
-        const h = document.getElementById('pageTitle');
-        if (!h) return;
-        h.textContent = h.textContent.replace(/_/g, ' ');
-      }
-
-      // PDF-Links aktualisieren, wenn sich die Iframe-Quelle ändert
-      function hookPdfLinks() {
-        const iframe = document.getElementById('pdfFrame');
-        const dl = document.getElementById('btnPdfDownload');
-        const open = document.getElementById('btnPdfOpenTab');
-        if (!iframe || !dl || !open) return;
-
-        const update = () => {
-          const src = iframe.getAttribute('src') || '#';
-          dl.href = src;
-          // Dateiname aus dem Pfad ziehen
-          try {
-            const nm = src.split('/').pop() || 'auswahl.pdf';
-            dl.setAttribute('download', nm);
-          } catch {}
-          open.onclick = (e)=>{ e.preventDefault(); if(src && src!=='#') window.open(src, '_blank'); };
-        };
-
-        // sofort & bei Änderungen aktualisieren
-        update();
-        const mo = new MutationObserver(update);
-        mo.observe(iframe, { attributes: true, attributeFilter: ['src'] });
-
-        // Auch bei Klicks auf die Optionen absichern
-        document.addEventListener('click', (ev)=>{
-          const t = ev.target;
-          if (t && t.classList && t.classList.contains('seg-btn')) {
-            setTimeout(update, 0);
-          }
-        });
-      }
-
-      // Einfache PDF-"Zooms" über CSS-Scale
-      function setupPdfZoom() {
-        function makeZoom(paneId, plusBtnId, minusBtnId) {
-          const pane = document.getElementById(paneId);
-          const plus = document.getElementById(plusBtnId);
-          const minus = document.getElementById(minusBtnId);
-          if (!pane || !plus || !minus) return;
-          let scale = 1;
-          const apply = ()=> pane.style.setProperty('--pdfScale', String(scale));
-          plus.addEventListener('click', ()=>{ scale = Math.min(2.5, +(scale+0.1).toFixed(2)); apply(); });
-          minus.addEventListener('click', ()=>{ scale = Math.max(0.6, +(scale-0.1).toFixed(2)); apply(); });
-          apply();
+    <!-- Kleines Patch-Skript: Titel säubern, PDF-Links & Zoom -->
+    <script>
+      (function () {
+        function cleanTitle() {
+          const h = document.getElementById("pageTitle");
+          if (!h) return;
+          h.textContent = h.textContent.replace(/_/g, " ");
         }
-        makeZoom('pdfPane', 'btnPdfZoomIn', 'btnPdfZoomOut');
-        makeZoom('draftPdfPane', 'btnDraftPdfZoomIn', 'btnDraftPdfZoomOut');
-      }
 
-      document.addEventListener('DOMContentLoaded', ()=>{
-        cleanTitle();
-        hookPdfLinks();
-        setupPdfZoom();
-      });
-    })();
-  </script>
-</body>
+        // PDF-Links aktualisieren, wenn sich die Iframe-Quelle ändert
+        function hookPdfLinks() {
+          const iframe = document.getElementById("pdfFrame");
+          const dl = document.getElementById("btnPdfDownload");
+          const open = document.getElementById("btnPdfOpenTab");
+          if (!iframe || !dl || !open) return;
+
+          const update = () => {
+            const src = iframe.getAttribute("src") || "#";
+            dl.href = src;
+            // Dateiname aus dem Pfad ziehen
+            try {
+              const nm = src.split("/").pop() || "auswahl.pdf";
+              dl.setAttribute("download", nm);
+            } catch {}
+            open.onclick = (e) => {
+              e.preventDefault();
+              if (src && src !== "#") window.open(src, "_blank");
+            };
+          };
+
+          // sofort & bei Änderungen aktualisieren
+          update();
+          const mo = new MutationObserver(update);
+          mo.observe(iframe, { attributes: true, attributeFilter: ["src"] });
+
+          // Auch bei Klicks auf die Optionen absichern
+          document.addEventListener("click", (ev) => {
+            const t = ev.target;
+            if (t && t.classList && t.classList.contains("seg-btn")) {
+              setTimeout(update, 0);
+            }
+          });
+        }
+
+        // Einfache PDF-"Zooms" über CSS-Scale
+        function setupPdfZoom() {
+          function makeZoom(paneId, plusBtnId, minusBtnId) {
+            const pane = document.getElementById(paneId);
+            const plus = document.getElementById(plusBtnId);
+            const minus = document.getElementById(minusBtnId);
+            if (!pane || !plus || !minus) return;
+            let scale = 1;
+            const apply = () =>
+              pane.style.setProperty("--pdfScale", String(scale));
+            plus.addEventListener("click", () => {
+              scale = Math.min(2.5, +(scale + 0.1).toFixed(2));
+              apply();
+            });
+            minus.addEventListener("click", () => {
+              scale = Math.max(0.6, +(scale - 0.1).toFixed(2));
+              apply();
+            });
+            apply();
+          }
+          makeZoom("draftPdfPane", "btnDraftPdfZoomIn", "btnDraftPdfZoomOut");
+        }
+
+        // Text-Zoom-Funktionalität
+        function setupTextZoom() {
+          function makeTextZoom(textId, plusBtnId, minusBtnId) {
+            const textElement = document.getElementById(textId);
+            const plus = document.getElementById(plusBtnId);
+            const minus = document.getElementById(minusBtnId);
+            if (!textElement || !plus || !minus) return;
+
+            let fontSize = 14; // Standard-Schriftgröße
+            const apply = () => (textElement.style.fontSize = fontSize + "px");
+
+            plus.addEventListener("click", () => {
+              fontSize = Math.min(24, fontSize + 2);
+              apply();
+            });
+
+            minus.addEventListener("click", () => {
+              fontSize = Math.max(10, fontSize - 2);
+              apply();
+            });
+
+            apply(); // Initial anwenden
+          }
+
+          makeTextZoom("origText", "btnOrigPlus", "btnOrigMinus");
+          makeTextZoom("birkenbihlText", "btnBirPlus", "btnBirMinus");
+          makeTextZoom("draftText", "btnDraftTextPlus", "btnDraftTextMinus");
+        }
+
+        // Download-Button-Funktionalität wird in work.js gehandhabt
+        function setupDownloadButtons() {
+          // Die Download-Buttons werden in work.js initialisiert
+          // Hier nur Platzhalter für zukünftige Erweiterungen
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+          cleanTitle();
+          hookPdfLinks();
+          setupPdfZoom();
+          setupTextZoom();
+          setupDownloadButtons();
+        });
+      })();
+    </script>
+  </body>
 </html>
