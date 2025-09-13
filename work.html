@@ -1,149 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Werkansicht – Birkenbihl / Translinear</title>
+  <title>Werkseite</title>
 
+  <!-- Basis-Stile -->
   <link rel="stylesheet" href="style.css" />
+  <!-- Werk-spezifisches Layout -->
   <link rel="stylesheet" href="work.css" />
-
-  <style>
-    :root {
-      --edge:#e5e7eb; --card:#fafafa; --muted:#6b7280;
-    }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; margin:0; }
-    .wrap { max-width: 1200px; margin: 0 auto; padding: 16px; }
-    .bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
-    .title { font-weight:700; font-size:20px; }
-    .panel { background: var(--card); border:1px solid var(--edge); border-radius:12px; padding:12px; }
-    .grid-2x2 { display:grid; grid-template-columns: 1fr 1fr; grid-auto-rows: minmax(200px, auto); gap:12px; }
-    .head-row { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px; }
-    .muted { color: var(--muted); }
-    pre.viewer { margin:0; white-space:pre-wrap; word-wrap:break-word; max-height: 36vh; overflow:auto; background:#fff; border:1px solid var(--edge); border-radius:8px; padding:10px; }
-    .btn { padding:6px 10px; border:1px solid var(--edge); background:#fff; border-radius:8px; cursor:pointer; }
-    .btn:disabled { opacity:.55; cursor:not-allowed; }
-    .radio-group label { margin-right:12px; }
-    iframe#pdfFrame { width:100%; height:72vh; background:#fff; border:1px solid var(--edge); border-radius:8px; }
-    .note { font-size:13px; color:var(--muted); }
-    .sep { height:1px; background:var(--edge); margin:8px 0; }
-  </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="bar">
-      <div class="title" id="pageTitle">Werkansicht</div>
-      <div><a class="btn" href="index.html">← Start</a></div>
+  <!-- ======= Kopf ======= -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <a class="back-link" href="index.html">← Zurück zur Startseite</a>
+    </div>
+    <div class="topbar-center">
+      <h1 id="pageTitle" class="page-title">Autor – Werk</h1>
+    </div>
+    <div class="topbar-right"></div>
+  </header>
+
+  <main class="wrap">
+    <!-- kleine Info-Zeile (kannst du löschen, wenn du willst) -->
+    <div class="notice small">
+      Diese Werkseite ist universell. Sie lädt anhand der URL-Parameter <code>?kind=&amp;author=&amp;work=</code>.
     </div>
 
-    <!-- 2×2-Layout -->
-    <div class="grid-2x2">
+    <!-- ======= 2×2-Grid ======= -->
+    <section class="grid-2x2">
 
-      <!-- (1) Original-Text (oben links) -->
-      <section class="panel">
-        <div class="head-row">
-          <h3 style="margin:0">Original-Text</h3>
-          <span id="origStatus" class="note">Lade Original…</span>
+      <!-- Original-Text (oben links) -->
+      <div class="pane">
+        <div class="pane-head">
+          <div class="pane-title">Original-Text</div>
+          <div class="pane-tools">
+            <button id="btnOrigPlus" class="btn" title="Schrift größer">A+</button>
+            <button id="btnOrigMinus" class="btn" title="Schrift kleiner">A−</button>
+          </div>
         </div>
-        <pre id="origPre" class="viewer"></pre>
-      </section>
+        <div id="origText" class="pane-body mono scroll"></div>
+      </div>
 
-      <!-- (2) PDF + Schalter (oben rechts) -->
-      <section class="panel">
-        <div class="head-row">
-          <h3 style="margin:0">PDF</h3>
-          <div class="head-row" style="gap:8px">
-            <a id="downloadBtn" class="btn" href="#" download>PDF herunterladen</a>
-            <span id="pdfStatus" class="note"></span>
+      <!-- PDF (oben rechts) -->
+      <div class="pane">
+        <div class="pane-head">
+          <div class="pane-title">PDF</div>
+          <div class="pane-tools">
+            <a id="btnPdfDownload" class="btn" href="#" download>PDF herunterladen</a>
           </div>
         </div>
 
-        <!-- Quelle -->
-        <div class="head-row">
-          <strong>Quelle</strong>
-          <div class="radio-group" role="group" aria-label="Quelle wählen">
-            <label><input type="radio" name="srcSel" value="original" checked> Original</label>
-            <label><input type="radio" name="srcSel" value="draft"> Entwurf</label>
+        <!-- Schalter: Quelle / Stärke / Farbe / Tags / Versmaß (wird bei Prosa automatisch ohne Versmaß angezeigt) -->
+        <div class="option-groups">
+          <div class="opt-row">
+            <div class="opt-label">Quelle</div>
+            <div class="seg">
+              <button class="seg-btn" data-opt="source" data-val="original">Original</button>
+              <button class="seg-btn" data-opt="source" data-val="draft">Entwurf</button>
+            </div>
+          </div>
+
+          <div class="opt-row">
+            <div class="opt-label">Stärke</div>
+            <div class="seg" id="seg-strength">
+              <button class="seg-btn" data-opt="strength" data-val="Normal">Normal</button>
+              <button class="seg-btn" data-opt="strength" data-val="GR_Fett">Fett</button>
+              <button class="seg-btn" data-opt="strength" data-val="DE_Fett">DE-Fett</button>
+            </div>
+          </div>
+
+          <div class="opt-row">
+            <div class="opt-label">Farbe</div>
+            <div class="seg">
+              <button class="seg-btn" data-opt="color" data-val="Colour">Colour</button>
+              <button class="seg-btn" data-opt="color" data-val="BlackWhite">BlackWhite</button>
+            </div>
+          </div>
+
+          <div class="opt-row">
+            <div class="opt-label">Grammatik-Tags</div>
+            <div class="seg">
+              <button class="seg-btn" data-opt="tags" data-val="Tag">Tags</button>
+              <button class="seg-btn" data-opt="tags" data-val="NoTags">NoTag</button>
+            </div>
+          </div>
+
+          <div class="opt-row" id="opt-meter-row">
+            <div class="opt-label">Versmaß</div>
+            <div class="seg">
+              <button class="seg-btn" data-opt="meter" data-val="with">Versmaß</button>
+              <button class="seg-btn" data-opt="meter" data-val="without">Ohne Versmaß</button>
+            </div>
           </div>
         </div>
 
-        <div class="sep"></div>
+        <div class="pane-body pdf-body">
+          <iframe id="pdfFrame" title="PDF-Ansicht" loading="lazy"></iframe>
+        </div>
+      </div>
 
-        <!-- Stärke -->
-        <div class="head-row">
-          <strong>Stärke</strong>
-          <div class="radio-group" role="group" aria-label="Stärke wählen">
-            <label><input type="radio" name="strengthSel" value="Normal" checked> Normal</label>
-            <label><input type="radio" name="strengthSel" value="GR_Fett"> Fett</label>
-            <label><input type="radio" name="strengthSel" value="DE_Fett"> DE-Fett</label>
+      <!-- Birkenbihl-Text (unten links) -->
+      <div class="pane">
+        <div class="pane-head">
+          <div class="pane-title">Birkenbihl-Text</div>
+          <div class="pane-tools">
+            <button id="btnBirPlus" class="btn" title="Schrift größer">A+</button>
+            <button id="btnBirMinus" class="btn" title="Schrift kleiner">A−</button>
+          </div>
+        </div>
+        <div id="birkenbihlText" class="pane-body mono scroll"></div>
+      </div>
+
+      <!-- Entwurf → PDF (unten rechts) -->
+      <div class="pane">
+        <div class="pane-head">
+          <div class="pane-title">Entwurf → PDF</div>
+          <div class="pane-tools">
+            <a id="btnDraftPdfDownload" class="btn" href="#" download>PDF herunterladen</a>
           </div>
         </div>
 
-        <!-- Farbe -->
-        <div class="head-row">
-          <strong>Farbe</strong>
-          <div class="radio-group" role="group" aria-label="Farbe wählen">
-            <label><input type="radio" name="colorSel" value="Colour" checked> Colour</label>
-            <label><input type="radio" name="colorSel" value="BlackWhite"> BlackWhite</label>
-          </div>
+        <div class="draft-uploader">
+          <input id="draftFile" type="file" accept=".txt" />
+          <button id="btnRenderDraft" class="btn primary">Entwurf jetzt rendern</button>
+          <span class="muted" id="draftStatus">Bereit.</span>
         </div>
 
-        <!-- Tags -->
-        <div class="head-row">
-          <strong>Grammatik-Tags</strong>
-          <div class="radio-group" role="group" aria-label="Tags wählen">
-            <label><input type="radio" name="tagSel" value="Tag" checked> Tags</label>
-            <label><input type="radio" name="tagSel" value="NoTags"> NoTag</label>
-          </div>
+        <div class="pane-body pdf-body">
+          <iframe id="draftPdfFrame" title="Draft-PDF" loading="lazy"></iframe>
         </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- Versmaß (bei Poesie-Werken mit Meter) -->
-        <div class="head-row" id="meterRow" style="display:none">
-          <strong>Versmaß</strong>
-          <div class="radio-group" role="group" aria-label="Versmaß wählen">
-            <label><input type="radio" name="meterSel" value="On"> Versmaß</label>
-            <label><input type="radio" name="meterSel" value="Off" checked> Ohne Versmaß</label>
-          </div>
-        </div>
-
-        <div class="sep"></div>
-
-        <iframe id="pdfFrame" title="PDF-Ansicht"></iframe>
-      </section>
-
-      <!-- (3) Birkenbihl-Text (unten links) -->
-      <section class="panel">
-        <div class="head-row">
-          <h3 style="margin:0">Birkenbihl-Text</h3>
-          <span id="bkvStatus" class="note">Lade Birkenbihl…</span>
-        </div>
-        <pre id="bkvPre" class="viewer"></pre>
-      </section>
-
-      <!-- (4) Entwurf & Worker (unten rechts) -->
-      <section class="panel">
-        <div class="head-row">
-          <h3 style="margin:0">Entwurf → PDF</h3>
-          <span class="note">Deine Datei bleibt lokal, der Worker rendert serverseitig.</span>
-        </div>
-
-        <div class="head-row">
-          <input type="file" id="draftFile" accept=".txt" />
-          <button id="draftUploadBtn" class="btn">Entwurf jetzt rendern</button>
-        </div>
-
-        <div class="note" id="draftNote" style="margin-top:6px">
-          Tipp: Oben „Quelle: Entwurf“ wählen, um die frisch gerenderte PDF automatisch anzuzeigen.
-        </div>
-      </section>
-
-    </div>
-  </div>
-
-  <!-- Katalog-Helfer (liest catalog.json) -->
-  <script type="module" src="catalog.js"></script>
-  <!-- Logik für diese Seite -->
-  <script type="module" src="work.js"></script>
-  <noscript>Bitte JavaScript aktivieren.</noscript>
+  <!-- Globale Utils -->
+  <script src="utils.js"></script>
+  <!-- Worker-Client & Werk-Logik -->
+  <script>
+    // Worker Basis (falls abweichend, hier anpassen)
+    window.WORKER_BASE = "https://birkenbihl-draft-01.klemp-tobias.workers.dev";
+  </script>
+  <script src="work.js"></script>
 </body>
 </html>
