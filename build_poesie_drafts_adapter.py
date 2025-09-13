@@ -4,7 +4,7 @@ import subprocess, sys, json
 
 ROOT = Path(__file__).parent.resolve()
 SRC_ROOT = ROOT / "texte_drafts" / "poesie"              # Eingaben
-DST_BASE = ROOT / "pdf_drafts" / "poesie_drafts"         # Ausgaben
+DST_BASE = ROOT / "pdf_drafts" / "poesie"                # Ausgaben (spiegelbildlich)
 
 RUNNER = ROOT / "poesie_pdf.py"                          # 24 Varianten (Poesie)
 

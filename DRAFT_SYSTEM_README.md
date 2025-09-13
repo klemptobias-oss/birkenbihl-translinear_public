@@ -37,16 +37,20 @@ pip install reportlab
 
 ### Schritt 2: PDFs generieren
 
-Führe einen der folgenden Befehle aus:
+Führe den entsprechenden Befehl aus:
 
 ```bash
-# Für alle neuen Entwürfe (empfohlen)
-python generate_draft_pdfs.py
-
-# Für einen spezifischen Entwurf
+# Für Poesie-Entwürfe
 python build_poesie_drafts_adapter.py texte_drafts/poesie/Aischylos/Der_gefesselte_Prometheus/datei.txt
+
+# Für Prosa-Entwürfe
 python build_prosa_drafts_adapter.py texte_drafts/prosa/Platon/Menon/datei.txt
 ```
+
+**Wichtig:** Verwende den korrekten Adapter:
+
+- `build_poesie_drafts_adapter.py` für Poesie-Entwürfe (24 PDF-Varianten)
+- `build_prosa_drafts_adapter.py` für Prosa-Entwürfe (12 PDF-Varianten)
 
 ### Schritt 3: PDFs anzeigen
 
@@ -68,13 +72,13 @@ texte_drafts/
             └── Menon_birkenbihl_DRAFT_20250113_143335.txt
 
 pdf_drafts/
-├── poesie_drafts/
+├── poesie/
 │   └── Aischylos/
 │       └── Der_gefesselte_Prometheus/
 │           ├── Der_gefesselte_Prometheus_birkenbihl_Normal_Colour_Tag.pdf
 │           ├── Der_gefesselte_Prometheus_birkenbihl_Normal_BlackWhite_Tag.pdf
-│           └── ... (12 Varianten)
-└── prosa_drafts/
+│           └── ... (24 Varianten)
+└── prosa/
     └── Platon/
         └── Menon/
             ├── Menon_birkenbihl_Normal_Colour_Tag.pdf

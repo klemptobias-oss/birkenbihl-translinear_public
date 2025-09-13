@@ -134,10 +134,9 @@ function basePdfDir() {
   if (state.source === "original") {
     return `${PDF_BASE}/${state.kind}/${state.author}/${state.work}`;
   } else {
-    // Für Entwürfe: pdf_drafts/poesie_drafts/Autor/Werk/ oder pdf_drafts/prosa_drafts/Autor/Werk/
-    const kindDraft =
-      state.kind === "poesie" ? "poesie_drafts" : "prosa_drafts";
-    return `${DRAFT_BASE}/${kindDraft}/${state.author}/${state.work}`;
+    // Für Entwürfe: pdf_drafts/poesie/Autor/Werk/ oder pdf_drafts/prosa/Autor/Werk/
+    // Spiegelbildlich zu texte_drafts/poesie/ und texte_drafts/prosa/
+    return `${DRAFT_BASE}/${state.kind}/${state.author}/${state.work}`;
   }
 }
 function buildPdfUrlFromSelection() {
@@ -798,6 +797,7 @@ async function performRendering() {
           <code style="background: #f3f4f6; padding: 2px 4px; border-radius: 3px;">
             python build_${state.kind}_drafts_adapter.py texte_drafts/${state.kind}/${state.author}/${state.work}/${data.filename}
           </code>
+          <br><small style="color: #6b7280;">PDFs werden in pdf_drafts/${state.kind}/${state.author}/${state.work}/ erstellt</small>
         </div>
       `;
     }, 1000);

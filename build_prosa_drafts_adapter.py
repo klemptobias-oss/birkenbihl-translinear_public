@@ -4,7 +4,7 @@ import subprocess, sys, json
 
 ROOT = Path(__file__).parent.resolve()
 SRC_ROOT = ROOT / "texte_drafts" / "prosa"               # Eingaben
-DST_BASE = ROOT / "pdf_drafts" / "prosa_drafts"          # Ausgaben
+DST_BASE = ROOT / "pdf_drafts" / "prosa"                 # Ausgaben (spiegelbildlich)
 
 RUNNER = ROOT / "prosa_pdf.py"                           # 12 Varianten (Prosa)
 
