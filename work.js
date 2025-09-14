@@ -47,7 +47,9 @@ const COLOR_POS_WHITELIST = ["Aj", "Pt", "Prp", "Av", "Ko", "Art", "Pr", "Ij"];
 // 2) URL-Parameter
 function getParam(name, dflt = "") {
   const u = new URL(location.href);
-  return u.searchParams.get(name) || dflt;
+  const value = u.searchParams.get(name);
+  // Decode URL-encoded values and trim whitespace
+  return value ? decodeURIComponent(value).trim() : dflt;
 }
 
 // 3) Mini-Kataloghelfer (nur für Meter-Schalter; rest über Dateikonvention)
@@ -740,10 +742,10 @@ async function performRendering() {
 
   const form = new FormData();
   form.append("file", file, file.name);
-  form.append("work", state.work);
+  form.append("work", state.work.trim());
   form.append("filename", file.name);
-  form.append("kind", state.kind);
-  form.append("author", state.author);
+  form.append("kind", state.kind.trim());
+  form.append("author", state.author.trim());
 
   try {
     // Nur eine Anfrage an /draft - das ist der korrekte Endpoint

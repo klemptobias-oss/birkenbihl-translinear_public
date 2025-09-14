@@ -255,10 +255,12 @@ function tsStamp(d = new Date()) {
 
 // Entfernt problematische Zeichen aus Dateinamenbasis
 function stripUnsafe(s = "") {
+  if (!s) return "";
   // erlaubt Buchstaben, Ziffern, Leerraum, Unterstrich, Minus, Punkt
-  const cleaned = s.replace(/[^A-Za-z0-9 _.\-]/g, " ").trim();
-  // stauche Mehrfach-Leerzeichen
-  return cleaned.replace(/\s+/g, " ").slice(0, 64) || "";
+  let cleaned = s.replace(/[^A-Za-z0-9 _.\-]/g, " ").trim();
+  // stauche Mehrfach-Leerzeichen und ersetze sie durch Unterstriche
+  cleaned = cleaned.replace(/\s+/g, "_");
+  return cleaned.slice(0, 64) || "";
 }
 
 // RFC4648-Base64 ohne Zeilenumbrüche, UTF-8-sicher
