@@ -790,20 +790,37 @@ async function performRendering() {
     // Der Worker speichert den Text in texte_drafts/
     el.draftStatus.textContent = `Text gespeichert: ${data.filename}`;
 
-    // Zeige Anweisungen für PDF-Generierung
+    // Zeige Status basierend auf Worker-Antwort
     setTimeout(() => {
-      el.draftStatus.innerHTML = `
-        <div style="color: #059669; font-weight: bold;">
-          ✓ Text gespeichert: ${data.filename}
-        </div>
-        <div style="color: #dc2626; margin-top: 8px;">
-          ⚠ PDF-Generierung: Führen Sie manuell aus:<br>
-          <code style="background: #f3f4f6; padding: 2px 4px; border-radius: 3px;">
-            python build_${state.kind}_drafts_adapter.py texte_drafts/${state.kind}_drafts/${state.author}/${state.work}/${data.filename}
-          </code>
-          <br><small style="color: #6b7280;">PDFs werden in pdf_drafts/${state.kind}_drafts/${state.author}/${state.work}/ erstellt</small>
-        </div>
-      `;
+      if (data.workflow_triggered) {
+        el.draftStatus.innerHTML = `
+          <div style="color: #059669; font-weight: bold;">
+            ✓ Text gespeichert: ${data.filename}
+          </div>
+          <div style="color: #059669; margin-top: 8px;">
+            🚀 PDF-Generierung automatisch gestartet!
+            <br><small style="color: #6b7280;">PDFs werden in wenigen Minuten verfügbar sein.</small>
+          </div>
+          <div style="color: #6b7280; margin-top: 8px; font-size: 12px;">
+            <a href="https://github.com/klemptobias-oss/birkenbihl-translinear_public/actions" target="_blank">
+              GitHub Actions anzeigen →
+            </a>
+          </div>
+        `;
+      } else {
+        el.draftStatus.innerHTML = `
+          <div style="color: #059669; font-weight: bold;">
+            ✓ Text gespeichert: ${data.filename}
+          </div>
+          <div style="color: #dc2626; margin-top: 8px;">
+            ⚠ PDF-Generierung: Führen Sie manuell aus:<br>
+            <code style="background: #f3f4f6; padding: 2px 4px; border-radius: 3px;">
+              python build_${state.kind}_drafts_adapter.py texte_drafts/${state.kind}_drafts/${state.author}/${state.work}/${data.filename}
+            </code>
+            <br><small style="color: #6b7280;">PDFs werden in pdf_drafts/${state.kind}_drafts/${state.author}/${state.work}/ erstellt</small>
+          </div>
+        `;
+      }
     }, 1000);
 
     // Für PDF-Anzeige verwenden wir ein Fallback (falls PDFs bereits existieren)
