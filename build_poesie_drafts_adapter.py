@@ -32,6 +32,28 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     # Extrahiere den Basisnamen der Eingabedatei (ohne .txt)
     input_stem = input_path.stem
     
+    # Lese den Text und extrahiere Tag-Konfiguration
+    text_content = input_path.read_text(encoding="utf-8")
+    tag_config = None
+    
+    # Suche nach Tag-Konfiguration im Text
+    import re
+    config_match = re.search(r'<!-- TAG_CONFIG:(.+?) -->', text_content)
+    if config_match:
+        try:
+            import json
+            tag_config = json.loads(config_match.group(1))
+            print(f"✓ Tag-Konfiguration gefunden: {len(tag_config.get('tag_colors', {}))} Farben, {len(tag_config.get('hidden_tags', []))} versteckte Tags")
+        except Exception as e:
+            print(f"⚠ Fehler beim Parsen der Tag-Konfiguration: {e}")
+    
+    # Entferne Tag-Konfiguration aus dem Text für die Verarbeitung
+    clean_text = re.sub(r'<!-- TAG_CONFIG:.+? -->\n?', '', text_content)
+    
+    # Schreibe bereinigten Text in temporäre Datei
+    temp_input = ROOT / f"temp_{input_path.name}"
+    temp_input.write_text(clean_text, encoding="utf-8")
+    
     before = {p.name for p in ROOT.glob("*.pdf")}
     print(f"→ Erzeuge PDFs für: {input_path}")
     
@@ -44,7 +66,7 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     
     try:
         # Führe den Runner mit optionaler Konfiguration aus
-        cmd = [sys.executable, str(RUNNER), str(input_path)]
+        cmd = [sys.executable, str(RUNNER), str(temp_input)]
         if config_file:
             cmd.extend(["--tag-config", str(config_file)])
         
@@ -58,9 +80,11 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
         print(f"Fehler beim Ausführen des Runners: {e}")
         return
     finally:
-        # Lösche temporäre Konfigurationsdatei
+        # Lösche temporäre Dateien
         if config_file and config_file.exists():
             config_file.unlink()
+        if temp_input.exists():
+            temp_input.unlink()
     
     after = {p.name for p in ROOT.glob("*.pdf")}
     new_pdfs = sorted(after - before)

@@ -747,6 +747,9 @@ async function performRendering() {
   form.append("kind", state.kind.trim());
   form.append("author", state.author.trim());
 
+  // Tag-Konfiguration als JSON hinzufügen
+  form.append("tag_config", JSON.stringify(payload.tag_config));
+
   try {
     // Nur eine Anfrage an /draft - das ist der korrekte Endpoint
     const res = await fetch(`${WORKER_BASE}/draft`, {

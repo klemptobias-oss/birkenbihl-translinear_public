@@ -61,6 +61,7 @@ export default {
     let filename = "";
     let kind = "";
     let author = "";
+    let tagConfig = null;
 
     try {
       const ct = (request.headers.get("content-type") || "").toLowerCase();
@@ -72,6 +73,7 @@ export default {
         filename = (data.filename ?? "").toString().trim();
         kind = (data.kind ?? "").toString().trim();
         author = (data.author ?? "").toString().trim();
+        tagConfig = data.tag_config || null;
       } else if (ct.includes("text/plain")) {
         text = await request.text();
         // optional: work/filename können via Queryparam kommen
@@ -95,6 +97,17 @@ export default {
         filename = (form.get("filename") || "").toString().trim();
         kind = (form.get("kind") || "").toString().trim();
         author = (form.get("author") || "").toString().trim();
+
+        // Tag-Konfiguration aus FormData extrahieren
+        const tagConfigStr = form.get("tag_config");
+        if (tagConfigStr) {
+          try {
+            tagConfig = JSON.parse(tagConfigStr.toString());
+          } catch (e) {
+            console.log("Fehler beim Parsen der Tag-Konfiguration:", e.message);
+            tagConfig = null;
+          }
+        }
       } else {
         // Fallback: versuchen als JSON
         const data = await request.json();
@@ -161,6 +174,14 @@ export default {
     // Pfad: texte_drafts/{kind}_drafts/{author}/{work}/{filename}
     const path = `texte_drafts/${kindSafe}_drafts/${authorSafe}/${workSafe}/${stamped}`;
 
+    // Tag-Konfiguration in den Text einbetten (falls vorhanden)
+    let textWithConfig = text;
+    if (tagConfig) {
+      const configHeader = `<!-- TAG_CONFIG:${JSON.stringify(tagConfig)} -->\n`;
+      textWithConfig = configHeader + text;
+      console.log("Tag-Konfiguration eingebettet:", Object.keys(tagConfig));
+    }
+
     // --------- GitHub API: Datei anlegen ---------
     const owner = env.OWNER;
     const repo = env.REPO;
@@ -189,7 +210,7 @@ export default {
     )}`;
     const body = {
       message: `draft: ${baseName} birkenbihl (${stamped})`,
-      content: toBase64Utf8(text),
+      content: toBase64Utf8(textWithConfig),
       branch,
     };
 
