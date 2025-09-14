@@ -22,6 +22,7 @@ on:
   push:
     paths:
       - "texte_drafts/**/*_birkenbihl_DRAFT_*.txt"
+      - "texte_drafts/**/*_DRAFT_*.txt"
       - "build_prosa_drafts_adapter.py"
       - "build_poesie_drafts_adapter.py"
       - "prosa_pdf.py"
@@ -58,53 +59,74 @@ jobs:
         run: |
           echo "Build Draft PDFs gestartet..."
 
-          # Prüfe ob spezifische Datei über Parameter übergeben wurde
-          if [ -n "${{ github.event.inputs.draft_file }}" ]; then
-            echo "Verarbeite spezifische Draft-Datei: ${{ github.event.inputs.draft_file }}"
-            
-            # Bestimme ob es Prosa oder Poesie ist
-            if [[ "${{ github.event.inputs.draft_file }}" == *"/prosa_drafts/"* ]]; then
-              echo "Erstelle Prosa PDFs für: ${{ github.event.inputs.draft_file }}"
-              python build_prosa_drafts_adapter.py "${{ github.event.inputs.draft_file }}"
-            elif [[ "${{ github.event.inputs.draft_file }}" == *"/poesie_drafts/"* ]]; then
-              echo "Erstelle Poesie PDFs für: ${{ github.event.inputs.draft_file }}"
-              python build_poesie_drafts_adapter.py "${{ github.event.inputs.draft_file }}"
-            else
-              echo "Unbekannter Draft-Typ für: ${{ github.event.inputs.draft_file }}"
-            fi
+          # Finde alle Draft-Dateien die in diesem Commit geändert wurden
+          echo "Suche nach geänderten Draft-Dateien..."
+
+          # Prüfe ob es vorherige Commits gibt
+          if git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
+            # Vergleiche mit vorherigem Commit
+            DRAFT_FILES=$(git diff --name-only HEAD~1 HEAD | grep 'texte_drafts/.*_DRAFT_.*\.txt$' || true)
           else
-            echo "Suche nach neuen Draft-Dateien..."
+            # Erster Commit - suche alle Draft-Dateien
+            echo "Erster Commit erkannt, suche alle Draft-Dateien..."
+            DRAFT_FILES=$(find texte_drafts -name "*_DRAFT_*.txt" 2>/dev/null || true)
+          fi
+
+          if [ -z "$DRAFT_FILES" ]; then
+            echo "Keine neuen Draft-Dateien gefunden"
+            exit 0
+          fi
+
+          echo "Gefundene Draft-Dateien:"
+          echo "$DRAFT_FILES"
+
+          # Verarbeite jede Draft-Datei
+          for file in $DRAFT_FILES; do
+            echo "Verarbeite: $file"
             
-            # Finde alle Draft-Dateien die in diesem Commit hinzugefügt wurden
-            DRAFT_FILES=$(git diff --name-only HEAD~1 HEAD | grep 'texte_drafts/.*_birkenbihl_DRAFT_.*\.txt$' || true)
-            
-            if [ -z "$DRAFT_FILES" ]; then
-              echo "Keine neuen Draft-Dateien gefunden"
-              exit 0
-            fi
-            
-            echo "Gefundene Draft-Dateien:"
-            echo "$DRAFT_FILES"
-            
-            # Verarbeite jede Draft-Datei
-            for file in $DRAFT_FILES; do
-              echo "Verarbeite: $file"
+            # Extrahiere Autor und Werk aus dem Pfad
+            # z.B. texte_drafts/prosa_drafts/Platon/Menon/datei.txt
+            IFS='/' read -ra PATH_PARTS <<< "$file"
+            if [ ${#PATH_PARTS[@]} -ge 4 ]; then
+              KIND_TYPE="${PATH_PARTS[1]}"  # prosa_drafts oder poesie_drafts
+              AUTHOR="${PATH_PARTS[2]}"     # Platon
+              WORK="${PATH_PARTS[3]}"       # Menon
               
-              # Bestimme ob es Prosa oder Poesie ist
-              if [[ "$file" == *"/prosa_drafts/"* ]]; then
+              echo "Gefunden: Art=$KIND_TYPE, Autor=$AUTHOR, Werk=$WORK"
+              
+              # Lösche alte PDFs für dieses Werk
+              PDF_DIR="pdf_drafts/${KIND_TYPE}/${AUTHOR}/${WORK}"
+              if [ -d "$PDF_DIR" ]; then
+                echo "Lösche alte PDFs in: $PDF_DIR"
+                find "$PDF_DIR" -name "*.pdf" -delete
+              fi
+              
+              # Bestimme ob es Prosa oder Poesie ist und erstelle neue PDFs
+              if [[ "$KIND_TYPE" == "prosa_drafts" ]]; then
                 echo "Erstelle Prosa PDFs für: $file"
                 python build_prosa_drafts_adapter.py "$file"
-              elif [[ "$file" == *"/poesie_drafts/"* ]]; then
+              elif [[ "$KIND_TYPE" == "poesie_drafts" ]]; then
                 echo "Erstelle Poesie PDFs für: $file"
                 python build_poesie_drafts_adapter.py "$file"
               else
                 echo "Unbekannter Draft-Typ für: $file"
               fi
-            done
-          fi
+            else
+              echo "Ungültiger Pfad für: $file"
+            fi
+          done
 
       - name: Commit Draft PDFs
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: "pdf_drafts/**/*.pdf"
-          message: "CI: Draft PDFs neu gebaut"
+        run: |
+          echo "Comitte PDF-Änderungen..."
+
+          # Füge alle PDF-Änderungen hinzu (neue und gelöschte)
+          git add pdf_drafts/
+
+          # Prüfe ob es Änderungen gibt
+          if git diff --cached --quiet; then
+            echo "Keine PDF-Änderungen zu committen"
+          else
+            git commit -m "CI: Draft PDFs neu gebaut - $(date '+%Y-%m-%d %H:%M:%S')"
+            echo "PDFs erfolgreich committed"
+          fi

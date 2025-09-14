@@ -220,43 +220,9 @@ export default {
 
     const res = await gh.json();
 
-    // Triggere GitHub Action für PDF-Generierung
-    let workflowTriggered = false;
-    try {
-      const workflowUrl = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/build-drafts.yml/dispatches`;
-      const workflowBody = {
-        ref: branch,
-        inputs: {
-          draft_file: path,
-          kind: kindSafe,
-          author: authorSafe,
-          work: workSafe,
-        },
-      };
-
-      const workflowRes = await fetch(workflowUrl, {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          Accept: "application/vnd.github+json",
-          "Content-Type": "application/json",
-          "User-Agent": "birkenbihl-worker/1.0",
-        },
-        body: JSON.stringify(workflowBody),
-      });
-
-      if (workflowRes.ok) {
-        workflowTriggered = true;
-        console.log("GitHub Action für PDF-Generierung getriggert");
-      } else {
-        console.log(
-          "GitHub Action konnte nicht getriggert werden:",
-          workflowRes.status
-        );
-      }
-    } catch (e) {
-      console.log("Fehler beim Triggern der GitHub Action:", e.message);
-    }
+    // GitHub Action wird automatisch durch den Push-Event ausgelöst
+    // da die Action auf Push-Events in texte_drafts reagiert
+    console.log("Draft gespeichert, GitHub Action wird automatisch ausgelöst");
 
     return resp(
       {
@@ -265,10 +231,9 @@ export default {
         filename: stamped,
         size_bytes: textBytes.length,
         html_url: res.content?.html_url || null,
-        workflow_triggered: workflowTriggered,
-        message: workflowTriggered
-          ? "Text gespeichert und PDF-Generierung gestartet. PDFs werden in wenigen Minuten verfügbar sein."
-          : "Text gespeichert. PDF-Generierung konnte nicht automatisch gestartet werden.",
+        workflow_triggered: true,
+        message:
+          "Text gespeichert und PDF-Generierung automatisch gestartet. PDFs werden in wenigen Minuten verfügbar sein.",
       },
       200,
       CORS
