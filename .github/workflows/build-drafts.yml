@@ -143,6 +143,11 @@ jobs:
           # Aufräumen
           rm -f "$TEMP_GROUP_FILE" "${TEMP_GROUP_FILE}.sorted"
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+
       - name: Commit Draft PDFs
         run: |
           echo "Comitte PDF-Änderungen..."
@@ -156,4 +161,8 @@ jobs:
           else
             git commit -m "CI: Draft PDFs neu gebaut - $(date '+%Y-%m-%d %H:%M:%S')"
             echo "PDFs erfolgreich committed"
+            
+            # Push die Änderungen
+            git push
+            echo "PDFs erfolgreich gepusht"
           fi
