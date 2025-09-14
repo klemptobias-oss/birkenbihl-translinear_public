@@ -29,6 +29,18 @@ def run_one(input_path: Path) -> None:
     pdf_drafts_dir = ROOT / "pdf_drafts" / "poesie_drafts" / author / work
     texte_drafts_dir.mkdir(parents=True, exist_ok=True)
     pdf_drafts_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Erstelle .gitkeep Dateien um sicherzustellen, dass die Ordner bei Git gepusht werden
+    gitkeep_target = target_dir / ".gitkeep"
+    gitkeep_texte_drafts = texte_drafts_dir / ".gitkeep"
+    gitkeep_pdf_drafts = pdf_drafts_dir / ".gitkeep"
+    
+    if not gitkeep_target.exists():
+        gitkeep_target.write_text("")
+    if not gitkeep_texte_drafts.exists():
+        gitkeep_texte_drafts.write_text("")
+    if not gitkeep_pdf_drafts.exists():
+        gitkeep_pdf_drafts.write_text("")
 
     # Extrahiere den Basisnamen der Eingabedatei (ohne .txt)
     input_stem = input_path.stem
