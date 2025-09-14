@@ -91,10 +91,10 @@ export default {
             filename = file.name || filename;
           }
         }
-        work = (form.get("work") || work || "").toString().trim();
-        filename = (form.get("filename") || filename || "").toString().trim();
-        kind = (form.get("kind") || kind || "").toString().trim();
-        author = (form.get("author") || author || "").toString().trim();
+        work = (form.get("work") || "").toString().trim();
+        filename = (form.get("filename") || "").toString().trim();
+        kind = (form.get("kind") || "").toString().trim();
+        author = (form.get("author") || "").toString().trim();
       } else {
         // Fallback: versuchen als JSON
         const data = await request.json();
