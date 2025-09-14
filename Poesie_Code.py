@@ -84,6 +84,7 @@ CFG = {
 # Standard-Tag-Definitionen (können durch Tag-Config überschrieben werden)
 DEFAULT_SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','ij','Sup'}
 DEFAULT_SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
+HIDE_TAGS = set()  # Tags, die komplett versteckt werden sollen
 
 # Dynamische Tag-Konfiguration (wird zur Laufzeit gesetzt)
 SUP_TAGS = DEFAULT_SUP_TAGS.copy()

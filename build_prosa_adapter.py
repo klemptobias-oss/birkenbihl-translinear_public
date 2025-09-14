@@ -23,6 +23,12 @@ def run_one(input_path: Path) -> None:
     # Erstelle Zielordner: pdf/prosa/Autor/Werk/
     target_dir = DST_BASE / author / work
     target_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Erstelle spiegelidentische Ordner in texte_drafts und pdf_drafts
+    texte_drafts_dir = ROOT / "texte_drafts" / "prosa_drafts" / author / work
+    pdf_drafts_dir = ROOT / "pdf_drafts" / "prosa_drafts" / author / work
+    texte_drafts_dir.mkdir(parents=True, exist_ok=True)
+    pdf_drafts_dir.mkdir(parents=True, exist_ok=True)
 
     # Extrahiere den Basisnamen der Eingabedatei (ohne .txt)
     input_stem = input_path.stem
