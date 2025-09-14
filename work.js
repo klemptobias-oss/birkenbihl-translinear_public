@@ -134,9 +134,9 @@ function basePdfDir() {
   if (state.source === "original") {
     return `${PDF_BASE}/${state.kind}/${state.author}/${state.work}`;
   } else {
-    // Für Entwürfe: pdf_drafts/poesie/Autor/Werk/ oder pdf_drafts/prosa/Autor/Werk/
-    // Spiegelbildlich zu texte_drafts/poesie/ und texte_drafts/prosa/
-    return `${DRAFT_BASE}/${state.kind}/${state.author}/${state.work}`;
+    // Für Entwürfe: pdf_drafts/poesie_drafts/Autor/Werk/ oder pdf_drafts/prosa_drafts/Autor/Werk/
+    // Spiegelbildlich zu texte_drafts/poesie_drafts/ und texte_drafts/prosa_drafts/
+    return `${DRAFT_BASE}/${state.kind}_drafts/${state.author}/${state.work}`;
   }
 }
 function buildPdfUrlFromSelection() {
@@ -208,7 +208,7 @@ async function initializeDraftText() {
 
 async function saveDraftText() {
   const draftText = el.draftText.textContent;
-  const draftPath = `texte_drafts/${state.kind}/${state.author}/${state.work}`;
+  const draftPath = `texte_drafts/${state.kind}_drafts/${state.author}/${state.work}`;
 
   try {
     // Hier würde normalerweise der Text an den Server gesendet werden
@@ -742,6 +742,8 @@ async function performRendering() {
   form.append("file", file, file.name);
   form.append("work", state.work);
   form.append("filename", file.name);
+  form.append("kind", state.kind);
+  form.append("author", state.author);
 
   try {
     // Nur eine Anfrage an /draft - das ist der korrekte Endpoint
@@ -795,9 +797,9 @@ async function performRendering() {
         <div style="color: #dc2626; margin-top: 8px;">
           ⚠ PDF-Generierung: Führen Sie manuell aus:<br>
           <code style="background: #f3f4f6; padding: 2px 4px; border-radius: 3px;">
-            python build_${state.kind}_drafts_adapter.py texte_drafts/${state.kind}/${state.author}/${state.work}/${data.filename}
+            python build_${state.kind}_drafts_adapter.py texte_drafts/${state.kind}_drafts/${state.author}/${state.work}/${data.filename}
           </code>
-          <br><small style="color: #6b7280;">PDFs werden in pdf_drafts/${state.kind}/${state.author}/${state.work}/ erstellt</small>
+          <br><small style="color: #6b7280;">PDFs werden in pdf_drafts/${state.kind}_drafts/${state.author}/${state.work}/ erstellt</small>
         </div>
       `;
     }, 1000);

@@ -59,6 +59,8 @@ export default {
     let text = "";
     let work = "";
     let filename = "";
+    let kind = "";
+    let author = "";
 
     try {
       const ct = (request.headers.get("content-type") || "").toLowerCase();
@@ -68,11 +70,15 @@ export default {
         text = (data.text ?? "").toString();
         work = (data.work ?? "").toString().trim();
         filename = (data.filename ?? "").toString().trim();
+        kind = (data.kind ?? "").toString().trim();
+        author = (data.author ?? "").toString().trim();
       } else if (ct.includes("text/plain")) {
         text = await request.text();
         // optional: work/filename können via Queryparam kommen
         work = (url.searchParams.get("work") || "").trim();
         filename = (url.searchParams.get("filename") || "").trim();
+        kind = (url.searchParams.get("kind") || "").trim();
+        author = (url.searchParams.get("author") || "").trim();
       } else if (ct.includes("multipart/form-data")) {
         const form = await request.formData();
         // text kann als Textfeld oder als Datei kommen
@@ -87,12 +93,16 @@ export default {
         }
         work = (form.get("work") || work || "").toString().trim();
         filename = (form.get("filename") || filename || "").toString().trim();
+        kind = (form.get("kind") || kind || "").toString().trim();
+        author = (form.get("author") || author || "").toString().trim();
       } else {
         // Fallback: versuchen als JSON
         const data = await request.json();
         text = (data.text ?? "").toString();
         work = (data.work ?? "").toString().trim();
         filename = (data.filename ?? "").toString().trim();
+        kind = (data.kind ?? "").toString().trim();
+        author = (data.author ?? "").toString().trim();
       }
     } catch (e) {
       return resp(
@@ -141,7 +151,15 @@ export default {
 
     // Endgültiger Name (zeitgestempelt, Kollisionen vermeiden)
     const stamped = `${baseName}_birkenbihl_DRAFT_${tsStamp()}.txt`;
-    const path = `texte_drafts/${stamped}`;
+
+    // Erstelle den korrekten Pfad basierend auf kind, author und work
+    // Fallback falls Parameter fehlen
+    const kindSafe = kind || "prosa"; // Standard zu prosa falls nicht angegeben
+    const authorSafe = stripUnsafe(author) || "Unsortiert";
+    const workSafe = stripUnsafe(work) || "Unbenannt";
+
+    // Pfad: texte_drafts/{kind}_drafts/{author}/{work}/{filename}
+    const path = `texte_drafts/${kindSafe}_drafts/${authorSafe}/${workSafe}/${stamped}`;
 
     // --------- GitHub API: Datei anlegen ---------
     const owner = env.OWNER;
