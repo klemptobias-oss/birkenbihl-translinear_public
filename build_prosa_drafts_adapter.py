@@ -3,8 +3,8 @@ from pathlib import Path
 import subprocess, sys, json
 
 ROOT = Path(__file__).parent.resolve()
-SRC_ROOT = ROOT / "texte_drafts" / "prosa"               # Eingaben
-DST_BASE = ROOT / "pdf_drafts" / "prosa"                 # Ausgaben (spiegelbildlich)
+SRC_ROOT = ROOT / "texte_drafts" / "prosa_drafts"        # Eingaben
+DST_BASE = ROOT / "pdf_drafts" / "prosa_drafts"          # Ausgaben (spiegelbildlich)
 
 RUNNER = ROOT / "prosa_pdf.py"                           # 12 Varianten (Prosa)
 
@@ -13,7 +13,7 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
         print(f"⚠ Datei fehlt: {input_path} — übersprungen"); return
 
     # Extrahiere Autor und Werk aus dem Pfad
-    # input_path: texte_drafts/prosa/Autor/Werk/datei.txt
+    # input_path: texte_drafts/prosa_drafts/Autor/Werk/datei.txt
     # relative_to(SRC_ROOT): Autor/Werk/datei.txt
     relative_path = input_path.relative_to(SRC_ROOT)
     path_parts = relative_path.parts
@@ -23,6 +23,11 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     # Erstelle Zielordner: pdf_drafts/prosa_drafts/Autor/Werk/
     target_dir = DST_BASE / author / work
     target_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Erstelle .gitkeep Datei um sicherzustellen, dass der Ordner bei Git gepusht wird
+    gitkeep_file = target_dir / ".gitkeep"
+    if not gitkeep_file.exists():
+        gitkeep_file.write_text("")
 
     # Extrahiere den Basisnamen der Eingabedatei (ohne .txt)
     input_stem = input_path.stem
