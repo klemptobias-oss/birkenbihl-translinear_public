@@ -47,16 +47,17 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
         print(f"✓ PDF erstellt → {out_name}")
 
 def main():
-    inputs = _args_or_default()
-    if not inputs:
-        print("⚠ Keine .txt gefunden."); return
-    
     # Parse command line arguments for tag config
     import argparse
     parser = argparse.ArgumentParser(description='Prosa PDF Generator')
     parser.add_argument('input_files', nargs='*', help='Input files to process')
     parser.add_argument('--tag-config', help='JSON file with tag configuration')
     args = parser.parse_args()
+    
+    # Use input files from arguments, or fallback to default discovery
+    inputs = args.input_files if args.input_files else _args_or_default()
+    if not inputs:
+        print("⚠ Keine .txt gefunden."); return
     
     # Load tag configuration if provided
     tag_config = None
