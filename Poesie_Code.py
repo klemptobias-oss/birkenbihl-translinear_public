@@ -1107,7 +1107,6 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             payload = {
                 "show_colors": not pdf_name.lower().endswith("_blackwhite.pdf"),
                 "show_tags": not CURRENT_IS_NOTAGS,
-                "color_pos": tag_config.get('color_pos_whitelist', []),
                 "sup_keep": tag_config.get('sup_tags', []),
                 "sub_keep": tag_config.get('sub_tags', []),
                 "versmass": "KEEP_MARKERS" if versmass_display else "NORMAL"

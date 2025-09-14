@@ -797,7 +797,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             payload = {
                 "show_colors": color_mode == "COLOR",
                 "show_tags": tag_mode == "TAGS",
-                "color_pos": tag_config.get('color_pos_whitelist', []),
                 "sup_keep": tag_config.get('sup_tags', []),
                 "sub_keep": tag_config.get('sub_tags', []),
                 "versmass": "NORMAL"

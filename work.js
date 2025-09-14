@@ -42,7 +42,7 @@ const SUB_TAGS = [
   "AorS",
   "M/P",
 ];
-const COLOR_POS_WHITELIST = ["Aj", "Pt", "Prp", "Av", "Ko", "Art", "Pr", "Ij"];
+// COLOR_POS_WHITELIST entfernt - Farben werden jetzt direkt in tag_colors definiert
 
 // 2) URL-Parameter
 function getParam(name, dflt = "") {
@@ -104,7 +104,6 @@ const state = {
   tagConfig: {
     supTags: new Set(SUP_TAGS),
     subTags: new Set(SUB_TAGS),
-    colorTags: new Set(COLOR_POS_WHITELIST),
     placementOverrides: {}, // Tag -> "sup" | "sub" | "off"
     tagColors: {}, // Tag -> "red" | "blue" | "green"
     hiddenTags: new Set(), // Tags die nicht angezeigt werden sollen
@@ -732,7 +731,6 @@ async function performRendering() {
     tag_config: {
       sup_tags: Array.from(state.tagConfig.supTags),
       sub_tags: Array.from(state.tagConfig.subTags),
-      color_pos_whitelist: Array.from(state.tagConfig.colorTags),
       placement_overrides: state.tagConfig.placementOverrides,
       tag_colors: state.tagConfig.tagColors,
       hidden_tags: Array.from(state.tagConfig.hiddenTags),

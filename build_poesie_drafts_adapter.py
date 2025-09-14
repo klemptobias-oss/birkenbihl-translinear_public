@@ -93,7 +93,9 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
         print("⚠ Keine PDFs erzeugt."); return
 
     # Filtere nur die PDFs, die zu dieser Eingabedatei gehören
-    relevant_pdfs = [name for name in new_pdfs if name.startswith(input_stem)]
+    # Berücksichtige sowohl den ursprünglichen Namen als auch den temp_ Namen
+    temp_stem = f"temp_{input_path.name.replace('.txt', '')}"
+    relevant_pdfs = [name for name in new_pdfs if name.startswith(input_stem) or name.startswith(temp_stem)]
     
     if not relevant_pdfs:
         print(f"⚠ Keine passenden PDFs für {input_stem} gefunden."); return

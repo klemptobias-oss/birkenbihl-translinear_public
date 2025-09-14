@@ -51,8 +51,7 @@ from typing import List, Dict, Any, Iterable, Optional
 SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','Sup','Ij'}
 SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
 
-# PoS-Kandidaten für Farbsteuerung (bewusst keine Kasus!)
-COLOR_POS_WHITELIST = {'Aj','Pt','Prp','Av','Ko','Art','Pr','Ij'}
+# COLOR_POS_WHITELIST entfernt - Farben werden jetzt direkt in tag_colors definiert
 
 # ======= Regexe =======
 RE_PAREN_TAG     = re.compile(r'\(([A-Za-z0-9/≈]+)\)')
@@ -318,7 +317,7 @@ def apply_from_payload(blocks: List[Dict[str, Any]], payload: Dict[str, Any], *,
       {
         "show_colors": bool,
         "show_tags":   bool,
-        "color_pos":   [ "Aj","Pt",... ],     # PoS für Farbe
+        # color_pos entfernt - Farben werden jetzt direkt in tag_colors definiert
         "sup_keep":    [ "N","D","G","A","V","Aj",... ],
         "sub_keep":    [ "Pre","Imp","Aor","AorS","Per",... ],
         "versmass":    "NORMAL" | "KEEP_MARKERS" | "REMOVE_MARKERS"
@@ -327,19 +326,18 @@ def apply_from_payload(blocks: List[Dict[str, Any]], payload: Dict[str, Any], *,
     show_colors = bool(payload.get("show_colors", True))
     show_tags   = bool(payload.get("show_tags",   True))
 
-    color_pos_keep = payload.get("color_pos") or []
     sup_keep       = payload.get("sup_keep")   or []
     sub_keep       = payload.get("sub_keep")   or []
     versmass_mode  = payload.get("versmass", default_versmass_mode)
 
     # --- Normalisierung auf Extremfälle (wichtig für Suffixe/Namen) ---
-    # Farben: Wenn global aus ODER Liste leer → BLACK_WHITE
-    if (not show_colors) or (len(color_pos_keep) == 0):
+    # Farben: Wenn global aus → BLACK_WHITE, sonst COLOR
+    if not show_colors:
         color_mode = "BLACK_WHITE"
         color_pos_arg = None
     else:
         color_mode = "COLOR"
-        color_pos_arg = color_pos_keep
+        color_pos_arg = None  # Alle Farben werden beibehalten
 
     # Tags: Wenn global aus ODER beide Listen leer → NO_TAGS
     if (not show_tags) or (len(sup_keep) == 0 and len(sub_keep) == 0):
