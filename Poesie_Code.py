@@ -84,7 +84,6 @@ CFG = {
 # Standard-Tag-Definitionen (können durch Tag-Config überschrieben werden)
 DEFAULT_SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','ij','Sup'}
 DEFAULT_SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
-HIDE_TAGS = set()  # Tags, die komplett versteckt werden sollen
 
 # Dynamische Tag-Konfiguration (wird zur Laufzeit gesetzt)
 SUP_TAGS = DEFAULT_SUP_TAGS.copy()
@@ -135,7 +134,13 @@ def _classify_tag_with_overrides(tag: str) -> str:
     if v in ("sup", "sub", "off"):
         return v
 
-    # zusammengesetzte Tags "A/B" zulassen
+    # ZUERST: Prüfe ob das gesamte Tag direkt in den Listen enthalten ist
+    if tag in SUP_TAGS:
+        return "sup"
+    if tag in SUB_TAGS:
+        return "sub"
+    
+    # Fallback: zusammengesetzte Tags "A/B" zulassen (aber nur wenn alle Teile in den Listen sind)
     parts = [p for p in tag.split('/') if p]
     if parts and all(p in SUP_TAGS for p in parts):
         return "sup"
@@ -252,8 +257,6 @@ def _strip_leading_bar_color(core: str):
     new_core = m.group(0).replace(m.group(1), '') + core[m.end():]
     return new_core, color, True
 
-def _filter_tags(tags):
-    return [t for t in tags if t not in HIDE_TAGS]
 
 def _end_has_bar(tok: str) -> bool:
     if not tok: return False
@@ -321,7 +324,7 @@ class ToplineTokenFlowable(Flowable):
     def _extract_tags(self, s_raw:str):
         body = self._strip_prefix(s_raw)
         found = RE_TAG_FINDALL.findall(body)
-        self._tags = [t for t in found if t not in HIDE_TAGS]
+        self._tags = found
         return self._tags
 
     def _tag_visual_width(self, font:str, size:float) -> float:
@@ -649,8 +652,7 @@ def visible_measure_token(token:str, *, font:str, size:float, cfg, is_greek_row:
     else:
         core_meas = core_no_end
 
-    tags_all = RE_TAG_FINDALL.findall(t)
-    tags = _filter_tags(tags_all)
+    tags = RE_TAG_FINDALL.findall(t)
 
     # Nur Tags mitzählen, die tatsächlich angezeigt werden (Overrides beachten)
     if is_greek_row and tags:
@@ -685,8 +687,7 @@ def format_token_markup(token:str, *, is_greek_row:bool, gr_bold:bool, remove_ba
     m_endbars = re.search(r'\|+\s*$', raw)
     end_bar_count = len(m_endbars.group(0).strip()) if m_endbars else 0
 
-    tags_all = RE_TAG_FINDALL.findall(raw)
-    tags = _filter_tags(tags_all)
+    tags = RE_TAG_FINDALL.findall(raw)
     core_all = RE_TAG_STRIP.sub('', raw).strip()
     core_no_end = re.sub(r'\|+\s*$', '', core_all)
 
@@ -710,7 +711,7 @@ def format_token_markup(token:str, *, is_greek_row:bool, gr_bold:bool, remove_ba
         core_html = xml_escape(core_no_end)
 
     if is_greek_row:
-        # Zuerst Standard-Filter (HIDE_TAGS), dann per Overrides partitionieren
+        # Partitioniere Tags nach Overrides
         sups, subs, rest = _partition_tags_for_display(tags)
     else:
         # DE-Zeile: nur ≈ als Sup (wie gehabt)

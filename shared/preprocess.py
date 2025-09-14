@@ -98,15 +98,18 @@ def _extract_tags(token: str) -> List[str]:
     return RE_PAREN_TAG.findall(token)
 
 def _is_known_sup(tag: str) -> bool:
+    # ZUERST: Prüfe ob das gesamte Tag direkt in den Listen enthalten ist
     if tag in SUP_TAGS:
         return True
-    # zusammengesetzte Tags (M/P) oder A/B/C
+    # Fallback: zusammengesetzte Tags (A/B/C) - aber nur wenn alle Teile in SUP_TAGS sind
     parts = [p for p in tag.split('/') if p]
     return all(p in SUP_TAGS for p in parts)
 
 def _is_known_sub(tag: str) -> bool:
+    # ZUERST: Prüfe ob das gesamte Tag direkt in den Listen enthalten ist
     if tag in SUB_TAGS:
         return True
+    # Fallback: zusammengesetzte Tags (A/B/C) - aber nur wenn alle Teile in SUB_TAGS sind
     parts = [p for p in tag.split('/') if p]
     return all(p in SUB_TAGS for p in parts)
 
@@ -126,10 +129,20 @@ def _remove_selected_tags(token: str,
 
     def repl(m):
         tag = m.group(1)
-        # Zerlege evtl. 'A/B' in Einzeltags (wir entscheiden „bekannt“/„unbekannt“ auf Basis aller Teile)
-        parts = [p for p in tag.split('/') if p]
-        is_sup = all(p in SUP_TAGS for p in parts)
-        is_sub = all(p in SUB_TAGS for p in parts)
+        
+        # ZUERST: Prüfe ob das gesamte Tag direkt in den Listen enthalten ist
+        is_sup_direct = tag in SUP_TAGS
+        is_sub_direct = tag in SUB_TAGS
+        
+        if is_sup_direct or is_sub_direct:
+            # Direktes Match gefunden
+            is_sup = is_sup_direct
+            is_sub = is_sub_direct
+        else:
+            # Fallback: Zerlege evtl. 'A/B' in Einzeltags (für zusammengesetzte Tags)
+            parts = [p for p in tag.split('/') if p]
+            is_sup = all(p in SUP_TAGS for p in parts)
+            is_sub = all(p in SUB_TAGS for p in parts)
 
         if not (is_sup or is_sub):
             # fremde/sonstige Tags bleiben stehen
@@ -140,13 +153,27 @@ def _remove_selected_tags(token: str,
 
         # Filtermodus: nur die gewünschten behalten
         if is_sup and sup_keep is not None:
-            if all(p in sup_keep for p in parts):
-                return m.group(0)  # behalten
-            return ''  # raus
+            if is_sup_direct:
+                # Direktes Match: prüfe ob Tag in sup_keep
+                if tag in sup_keep:
+                    return m.group(0)  # behalten
+                return ''  # raus
+            else:
+                # Zusammengesetztes Tag: prüfe alle Teile
+                if all(p in sup_keep for p in parts):
+                    return m.group(0)  # behalten
+                return ''  # raus
         if is_sub and sub_keep is not None:
-            if all(p in sub_keep for p in parts):
-                return m.group(0)
-            return ''
+            if is_sub_direct:
+                # Direktes Match: prüfe ob Tag in sub_keep
+                if tag in sub_keep:
+                    return m.group(0)
+                return ''
+            else:
+                # Zusammengesetztes Tag: prüfe alle Teile
+                if all(p in sub_keep for p in parts):
+                    return m.group(0)
+                return ''
         # Falls keine Keep-Liste für die Kategorie übergeben wurde:
         # Standard: behalten
         return m.group(0)
