@@ -2,7 +2,7 @@
 
 ==St. 70a==
 
-[ΜΈΝΩ:] ἔχεις(Prä)(Akt) μοι(Pr)(D) εἰπεῖν(AorS)(Inf)(Akt), ὦ(Ij) Σώκρατες(V), ἆρα(Pt) διδακτὸν(Adj)(N)
+[ΜΈΝΩ:] ἔχεις(Prä)(Akt) μοι(Pr)(D) εἰπεῖν(AorS)(Inf)(Akt), ὦ(ij) Σώκρατες(V), ἆρα(Pt) διδακτὸν(Adj)(N)
 [ΜΈΝΩ:] hast mir zu|sagen, o Sokrates, etwa lehrbar
 
 ἡ(Art)(N) ἀρετή(N); ἢ(Kon) οὐ(Pt) διδακτὸν(Adj)(N) ἀλλʼ(Kon) ἀσκητόν(Adj)(N); ἢ(Kon)
@@ -14,7 +14,7 @@ weder durch|Übung|erworben noch lernbar, sondern von|Natur entsteht den
 ἀνθρώποις(D) ἢ(Kon) ἄλλῳ(Adj)(D) τινὶ(Pr)(D) τρόπῳ(D);
 Menschen oder anderem irgend|einem Weise;
 
-[ΣΏΚΡ:] ὦ(Ij) Μένων(V), πρὸ(Prp) τοῦ(Art)(G) μὲν(Pt) Θετταλοὶ(N) εὐδόκιμοι(Adj)(N)
+[ΣΏΚΡ:] ὦ(ij) Μένων(V), πρὸ(Prp) τοῦ(Art)(G) μὲν(Pt) Θετταλοὶ(N) εὐδόκιμοι(Adj)(N)
 [ΣΏΚΡ:] o Meno, vor dem zwar Thessalier angesehen
 
 ἦσαν(Imp)(Akt) ἐν(Prp) τοῖς(Art)(D) Ἕλλησιν(D) καὶ(Kon) ἐθαυμάζοντο(Imp)(M/P) ἐφʼ(Prp) ἱππικῇ(Adj)(D)
@@ -58,7 +58,7 @@ antwortend.
 
 ==St. 71a==
 
-[ΣΏΚΡ:] ἐνθάδε(Adv) δέ(Pt), ὦ(Ij) φίλε(Adj)(V) Μένων(V), τὸ(Art)(N) ἐναντίον(Adj)(N)
+[ΣΏΚΡ:] ἐνθάδε(Adv) δέ(Pt), ὦ(ij) φίλε(Adj)(V) Μένων(V), τὸ(Art)(N) ἐναντίον(Adj)(N)
 [ΣΏΚΡ:] hier aber o lieber Meno, das entgegengesetzte
 
 περιέστηκεν(Per)(Akt)· ὥσπερ(Kon) αὐχμός(N) τις(Pr)(N) τῆς(Art)(G) σοφίας(G) γέγονεν(Per)(Akt), καὶ(Kon)
@@ -73,7 +73,7 @@ die Weisheit. wenn jedenfalls|nun irgend|einen willst so zu|fragen
 τῶν(Art)(G) ἐνθάδε(Adv), οὐδεὶς(Pr)(N) ὅστις(Pr)(N) οὐ(Pt) γελάσεται(Fu)(M/P) καὶ(Kon) ἐρεῖ(Fu)(Akt)·
 der hier, keiner wer|immer nicht wird|lachen und wird|sagen·
 
-«ὦ(Ij) ξένε(V), κινδυνεύω(Prä)(Akt) σοι(Pr)(D) δοκεῖν(Prä)(Inf)(Akt) μακάριός(Adj)(N) τις(Pr)(N) εἶναι(Prä)(Inf)(Akt)—
+«ὦ(ij) ξένε(V), κινδυνεύω(Prä)(Akt) σοι(Pr)(D) δοκεῖν(Prä)(Inf)(Akt) μακάριός(Adj)(N) τις(Pr)(N) εἶναι(Prä)(Inf)(Akt)—
 «o Fremder, stehe|in|Gefahr dir zu|scheinen selig irgend|einer zu|sein—
 
 ἀρετὴν(A) γοῦν(Pt) εἴτε(Kon) διδακτὸν(Adj)(A) εἴθʼ(Kon) ὅτῳ(Pr)(D) τρόπῳ(D) παραγίγνεται(Prä)(M/P)
@@ -88,7 +88,7 @@ nicht lehrbar zu|wissen, sodass auch|nicht selbst|dies was einmal
 ἐστὶ(Prä)(Akt) τὸ(Art)(A) παράπαν(Adv) ἀρετὴ(N) τυγχάνω(Prä)(Akt) εἰδώς(Per)(Akt)(N)». [71b] ἐγὼ(Pr)(N)
 ist das ganz|und|gar Tugend gerate wissend». [71b] ich
 
-οὖν(Pt) καὶ(Kon) αὐτός(Pr)(N), ὦ(Ij) Μένων(V), οὕτως(Adv) ἔχω(Prä)(Akt)· συμπένομαι(Prä)(M/P)
+οὖν(Pt) καὶ(Kon) αὐτός(Pr)(N), ὦ(ij) Μένων(V), οὕτως(Adv) ἔχω(Prä)(Akt)· συμπένομαι(Prä)(M/P)
 nun auch selber, o Meno, so bin|gestellt· darble|mit
 
 τοῖς(Art)(D) πολίταις(D) τούτου(Pr)(G) τοῦ(Art)(G) πράγματος(G), καὶ(Kon) ἐμαυτὸν(Pr)(A) καταμέμφομαι(Prä)(M/P)
@@ -118,7 +118,7 @@ sei|es und die|entgegengesetzten|Dinge dieser; scheint dir fähig und
 εἶναι(Prä)(Inf)(Akt);
 zu|sein;
 
-[ΜΈΝΩ:] οὐκ(Pt) ἔμοιγε(Pr)(D). ἀλλὰ(Kon) σύ(Pr)(N), ὦ(Ij) Σώκρατες(V), ἀληθῶς(Adv)
+[ΜΈΝΩ:] οὐκ(Pt) ἔμοιγε(Pr)(D). ἀλλὰ(Kon) σύ(Pr)(N), ὦ(ij) Σώκρατες(V), ἀληθῶς(Adv)
 [ΜΈΝΩ:] nicht mir|ja. sondern du, o Sokrates, wahrhaft
 
 [71c] οὐδʼ(Pt) ὅτι(Kon) ἀρετή(N) ἐστιν(Prä)(Akt) οἶσθα(Per)(Akt), ἀλλὰ(Kon) ταῦτα(Pr)(A) περὶ(Prp)
@@ -127,7 +127,7 @@ zu|sein;
 σοῦ(Pr)(G) καὶ(Kon) οἴκαδε(Adv) ἀπαγγέλλωμεν(Prä)(Akt)(Knj);
 deiner und heim|wärts melden|sollen|wir;
 
-[ΣΏΚΡ:] μὴ(Pt) μόνον(Adj)(A) γε(Pt), ὦ(Ij) ἑταῖρε(V), ἀλλὰ(Kon) καὶ(Kon)
+[ΣΏΚΡ:] μὴ(Pt) μόνον(Adj)(A) γε(Pt), ὦ(ij) ἑταῖρε(V), ἀλλὰ(Kon) καὶ(Kon)
 [ΣΏΚΡ:] nicht nur doch, o Gefährte, sondern auch
 
 ὅτι(Kon) οὐδʼ(Pt) ἄλλῳ(Adj)(D) πω(Pt) ἐνέτυχον(Aor)(Akt) εἰδότι(Per)(Akt)(D), ὡς(Kon) ἐμοὶ(Pr)(D)
@@ -151,7 +151,7 @@ denn vermutlich dir eben|dieselben jenem.
 [ΣΏΚΡ:] ἐκεῖνον(Pr)(A) μὲν(Pt) τοίνυν(Pt) ἐῶμεν(Prä)(Akt)(Knj), ἐπειδὴ(Kon) καὶ(Kon) ἄπεστιν(Prä)(Akt)·
 [ΣΏΚΡ:] jenen zwar denn|nun lassen|wir, weil und ist|abwesend·
 
-σὺ(Pr)(N) δὲ(Pt) αὐτός(Pr)(N), ὦ(Ij) πρὸς(Prp) θεῶν(G), Μένων(V), τί(Pr)(A)
+σὺ(Pr)(N) δὲ(Pt) αὐτός(Pr)(N), ὦ(ij) πρὸς(Prp) θεῶν(G), Μένων(V), τί(Pr)(A)
 du aber selbst, o bei Göttern, Meno, was
 
 φῂς(Prä)(Akt) ἀρετήν(A) εἶναι(Prä)(Inf)(Akt); εἶπον(AorS)(Imv)(Akt) καὶ(Kon) μὴ(Pt) φθονήσῃς(Aor)(Akt)(Knj), ἵνα(Kon)
@@ -166,7 +166,7 @@ wissend und Gorgias, ich aber gesagt|habend keinem je
 εἰδότι(Per)(Akt)(D) ἐντετυχηκέναι(Per)(Inf)(Akt).
 wissenden begegnet|zu|haben.
 
-[ΜΈΝΩ:] [71e] ἀλλʼ(Kon) οὐ(Pt) χαλεπόν(Adj)(N), ὦ(Ij) Σώκρατες(V), εἰπεῖν(AorS)(Inf)(Akt). πρῶτον(Adv)(Sup)
+[ΜΈΝΩ:] [71e] ἀλλʼ(Kon) οὐ(Pt) χαλεπόν(Adj)(N), ὦ(ij) Σώκρατες(V), εἰπεῖν(AorS)(Inf)(Akt). πρῶτον(Adv)(Sup)
 [ΜΈΝΩ:] [71e] aber nicht schwierig, o Sokrates, zu|sagen. zuerst
 
 μέν(Pt), εἰ(Kon) βούλει(Prä)(M/P) ἀνδρὸς(G) ἀρετήν(A), ῥᾴδιον(Adj)(N), ὅτι(Kon) αὕτη(Pr)(N)
@@ -213,16 +213,16 @@ denn der Handlungen und der Lebens|alter auf je|den
 ἔργον(A) ἑκάστῳ(Pr)(D) ἡμῶν(Pr)(G) ἡ(Art)(N) ἀρετή(N) ἐστιν(Prä)(Akt) ὡσαύτως(Adv) δὲ(Pt)
 Aufgabe je|dem von|uns die Tugend ist ebenso aber
 
-οἶμαι(Prä)(M/P) ὦ(Ij) Σώκρατες(V), καὶ(Kon) ἡ(Art)(N) κακία(N).
+οἶμαι(Prä)(M/P) ὦ(ij) Σώκρατες(V), καὶ(Kon) ἡ(Art)(N) κακία(N).
 ich|meine o Sokrates, und die Schlechtigkeit.
 
-[ΣΏΚΡ:] πολλῇ(Adj)(D) γέ(Pt) τινι(Pr)(D) εὐτυχίᾳ(D) ἔοικα(Per)(Akt) κεχρῆσθαι(Per)(M/P)(Inf), ὦ(Ij)
+[ΣΏΚΡ:] πολλῇ(Adj)(D) γέ(Pt) τινι(Pr)(D) εὐτυχίᾳ(D) ἔοικα(Per)(Akt) κεχρῆσθαι(Per)(M/P)(Inf), ὦ(ij)
 [ΣΏΚΡ:] vieler doch irgend|ein|er Glück scheine|ich gebraucht|zu|haben, o
 
 Μένων(V), εἰ(Kon) μίαν(Adj)(A) ζητῶν(Prä)(Akt)(N) ἀρετὴν(A) σμῆνός(G) τι(Pr)(A) ἀνηύρηκα(Per)(Akt)
 Meno, wenn eine suchend Tugend Schwarm irgend|ein habe|aufgefunden
 
-ἀρετῶν(G) παρὰ(Prp) σοι(Pr)(D) κείμενον(Prä)(M/P)(A). ἀτάρ(Pt), ὦ(Ij) Μένων(V), κατὰ(Prp)
+ἀρετῶν(G) παρὰ(Prp) σοι(Pr)(D) κείμενον(Prä)(M/P)(A). ἀτάρ(Pt), ὦ(ij) Μένων(V), κατὰ(Prp)
 Tugenden bei dir liegend. jedoch o Meno, gemäß
 
 ταύτην(Pr)(A) τὴν(Art)(A) εἰκόνα(A) τὴν(Art)(A) [72b] περὶ(Prp) τὰ(Art)(A) σμήνη(A), εἴ(Kon)
@@ -261,7 +261,7 @@ sind, die andere der anderen.
 [ΣΏΚΡ:] [72c] εἰ(Kon) οὖν(Pt) εἶπον(AorS)(Akt) μετὰ(Prp) ταῦτα(Pr)(A) · «τοῦτο(Pr)(A) τοίνυν(Pt)
 [ΣΏΚΡ:] [72c] wenn nun ich|sagte nach diesen · «dies also|nun
 
-μοι(Pr)(D) αὐτὸ(Pr)(A) εἰπέ(Aor)(Imv)(Akt), ὦ(Ij) Μένων(V) · ᾧ(Pr)(D) οὐδὲν(Pr)(A) διαφέρουσιν(Prä)(Akt)
+μοι(Pr)(D) αὐτὸ(Pr)(A) εἰπέ(Aor)(Imv)(Akt), ὦ(ij) Μένων(V) · ᾧ(Pr)(D) οὐδὲν(Pr)(A) διαφέρουσιν(Prä)(Akt)
 mir selbst sage, o Meno · worin nichts unterscheiden|sich
 
 ἀλλὰ(Kon) ταὐτόν(Adj)(A) εἰσιν(Prä)(Akt) ἅπασαι(Adj)(N), τί(Adv) τοῦτο(Pr)(A) φῂς(Prä)(Akt) εἶναι(Prä)(Inf)(Akt);»
@@ -303,7 +303,7 @@ Erfragte.
 [ΣΏΚΡ:] πότερον(Kon) δὲ(Pt) περὶ(Prp) ἀρετῆς(G) μόνον(Adv) σοι(Pr)(D) οὕτω(Adv)
 [ΣΏΚΡ:] ob aber über der|Tugend nur dir so
 
-δοκεῖ(Prä)(Akt), ὦ(Ij) Μένων(V), ἄλλη(Adj)(N) μὲν(Pt) ἀνδρὸς(G) εἶναι(Prä)(Inf)(Akt) ἄλλη(Adj)(N)
+δοκεῖ(Prä)(Akt), ὦ(ij) Μένων(V), ἄλλη(Adj)(N) μὲν(Pt) ἀνδρὸς(G) εἶναι(Prä)(Inf)(Akt) ἄλλη(Adj)(N)
 scheint, o Meno, andere zwar des|Mannes zu|sein andere
 
 δὲ(Pt) γυναικός(G) καὶ(Kon) τῶν(Art)(G) ἄλλων(Adj)(G) ἢ(Kon) καὶ(Kon) περὶ(Prp)
@@ -362,7 +362,7 @@ wird|sich|unterscheiden etwas, wenn|auch in Kind sei wenn|auch in
 πρεσβύτῃ(D), ἐάντε(Kon) ἐν(Prp) γυναικὶ(D) ἐάντε(Kon) ἐν(Prp) ἀνδρί(D);
 Greis, wenn|auch in Frau wenn|auch in Mann;
 
-[ΜΈΝΩ:] ἔμοιγέ(Pr)(D) πως(Adv) δοκεῖ(Prä)(Akt), ὦ(Ij) Σώκρατες(V), τοῦτο(Pr)(A) οὐκέτι(Adv)
+[ΜΈΝΩ:] ἔμοιγέ(Pr)(D) πως(Adv) δοκεῖ(Prä)(Akt), ὦ(ij) Σώκρατες(V), τοῦτο(Pr)(A) οὐκέτι(Adv)
 [ΜΈΝΩ:] mir|gewiss irgendwie scheint, o Sokrates, dieses nicht|mehr
 
 ὅμοιον(Adj)(A) εἶναι(Prä)(Inf)(Akt) τοῖς(Art)(D) ἄλλοις(Adj)(D) τούτοις(Pr)(D).
@@ -467,7 +467,7 @@ nach aller.
 [ΣΏΚΡ:] ἀλλὰ(Kon) μὴν(Pt) ζητῶ(Prä)(Akt) γε(Pt). ἀλλʼ(Kon) ἆρα(Pt) καὶ(Kon)
 [ΣΏΚΡ:] aber freilich suche doch. aber denn auch
 
-παιδὸς(G) ἡ(Art)(N) αὐτὴ(Adj)(N) ἀρετή(N), ὦ(Ij) Μένων(V), καὶ(Kon) δούλου(G),
+παιδὸς(G) ἡ(Art)(N) αὐτὴ(Adj)(N) ἀρετή(N), ὦ(ij) Μένων(V), καὶ(Kon) δούλου(G),
 des|Kindes die dieselbe Tugend, o Menon, auch des|Sklaven,
 
 ἄρχειν(Prä)(Inf)(Akt) οἵω(Adj)(D) τε(Pt) εἶναι(Prä)(Inf)(Akt) τοῦ(Art)(G) δεσπότου(G), καὶ(Kon) δοκεῖ(Prä)(Akt)
@@ -476,10 +476,10 @@ zu|herrschen fähig und zu|sein des Herrn, und scheint
 σοι(Pr)(D) ἔτι(Adv) ἂν(Pt) δοῦλος(N) εἶναι(Prä)(Inf)(Akt) ὁ(Art)(N) ἄρχων(N);
 dir noch wohl Sklave zu|sein der Herrscher;
 
-[ΜΈΝΩ:] οὐ(Pt) πάνυ(Adv) μοι(Pr)(D) δοκεῖ(Prä)(Akt), ὦ(Ij) Σώκρατες(V).
+[ΜΈΝΩ:] οὐ(Pt) πάνυ(Adv) μοι(Pr)(D) δοκεῖ(Prä)(Akt), ὦ(ij) Σώκρατες(V).
 [ΜΈΝΩ:] nicht sehr mir scheint, o Sokrates.
 
-[ΣΏΚΡ:] οὐ(Pt) γὰρ(Pt) εἰκός(Adj)(N), ὦ(Ij) ἄριστε(Adj)(V)· ἔτι(Adv) γὰρ(Pt)
+[ΣΏΚΡ:] οὐ(Pt) γὰρ(Pt) εἰκός(Adj)(N), ὦ(ij) ἄριστε(Adj)(V)· ἔτι(Adv) γὰρ(Pt)
 [ΣΏΚΡ:] nicht denn wahrscheinlich, o Bester· noch denn
 
 καὶ(Kon) τόδε(Pr)(A) σκόπει(Prä)(Imv)(Akt). ἄρχειν(Prä)(Inf)(Akt) φῂς(Prä)(Akt) οἷόν(Adj)(A) τʼ(Pt) εἶναι(Prä)(Inf)(Akt).
@@ -488,10 +488,10 @@ auch dieses betrachte. zu|herrschen sagst fähig und zu|sein.
 οὐ(Pt) προσθήσομεν(Fu)(Akt) αὐτόσε(Adv) τὸ(Art)(A) δικαίως(Adv), ἀδίκως(Adv) δὲ(Pt) μή(Pt);
 nicht fügen|hinzu dorthin das gerecht, ungerecht aber nicht;
 
-[ΜΈΝΩ:] οἶμαι(Prä)(M/P) ἔγωγε(Pr)(N)· ἡ(Art)(N) γὰρ(Pt) δικαιοσύνη(N), ὦ(Ij) Σώκρατες(V), ἀρετή(N) ἐστιν(Prä)(Akt).
+[ΜΈΝΩ:] οἶμαι(Prä)(M/P) ἔγωγε(Pr)(N)· ἡ(Art)(N) γὰρ(Pt) δικαιοσύνη(N), ὦ(ij) Σώκρατες(V), ἀρετή(N) ἐστιν(Prä)(Akt).
 [ΜΈΝΩ:] ich|glaube ich|jedenfalls· die denn Gerechtigkeit, o Sokrates, Tugend ist.
 
-[ΣΏΚΡ:] [73e] πότερον(Pt) ἀρετή(N), ὦ(Ij) Μένων(V), ἢ(Kon) ἀρετή(N) τις(Pr)(N);
+[ΣΏΚΡ:] [73e] πότερον(Pt) ἀρετή(N), ὦ(ij) Μένων(V), ἢ(Kon) ἀρετή(N) τις(Pr)(N);
 [ΣΏΚΡ:] [73e] ob Tugend, o Menon, oder Tugend irgend|eine;
 
 [ΜΈΝΩ:] πῶς(Adv) τοῦτο(Pr)(A) λέγεις(Prä)(Akt);
@@ -535,7 +535,7 @@ du nun mir sage andere Tugenden.
 σωφροσύνη(N) καὶ(Kon) σοφία(N) καὶ(Kon) μεγαλοπρέπεια(N) καὶ(Kon) ἄλλαι(Adj)(N) πάμπολλαι(Adj)(N).
 Besonnenheit und Weisheit und Großartigkeit und andere sehr|viele.
 
-[ΣΏΚΡ:] πάλιν(Adv), ὦ(Ij) Μένων(V), ταὐτὸν(Adj)(A) πεπόνθαμεν(Per)(Akt)· πολλὰς(Adj)(A) αὖ(Pt) ηὑρήκαμεν(Per)(Akt)
+[ΣΏΚΡ:] πάλιν(Adv), ὦ(ij) Μένων(V), ταὐτὸν(Adj)(A) πεπόνθαμεν(Per)(Akt)· πολλὰς(Adj)(A) αὖ(Pt) ηὑρήκαμεν(Per)(Akt)
 [ΣΏΚΡ:] wieder, o Menon, das|gleiche haben|erfahren· viele wiederum haben|gefunden
 
 ἀρετὰς(A) μίαν(Adj)(A) ζητοῦντες(Prä)(Akt)(N), ἄλλον(Adj)(A) τρόπον(A) ἢ(Kon) νυνδή(Adv)·
@@ -547,7 +547,7 @@ die aber eine, welche durch aller dieser ist,
 οὐ(Pt) δυνάμεθα(Prä)(M/P) ἀνευρεῖν(AorS)(Inf)(Akt).
 nicht wir|können auf|finden.
 
-[ΜΈΝΩ:] οὐ(Pt) γὰρ(Pt) δύναμαί(Prä)(M/P) πω(Pt), ὦ(Ij) Σώκρατες(V), ὡς(Kon)
+[ΜΈΝΩ:] οὐ(Pt) γὰρ(Pt) δύναμαί(Prä)(M/P) πω(Pt), ὦ(ij) Σώκρατες(V), ὡς(Kon)
 [ΜΈΝΩ:] nicht denn kann|ich noch, o Sokrates, wie
 
 σὺ(Pr)(N) ζητεῖς(Prä)(Akt), [74b] μίαν(Adj)(A) ἀρετὴν(A) λαβεῖν(AorS)(Inf)(Akt) κατὰ(Prp) πάντων(Adj)(G), ὥσπερ(Kon)
@@ -568,7 +568,7 @@ so verhält|es|sich über jedes· wenn irgend|jemand dich fragen|würde
 τοῦτο(Pr)(A) ὃ(Pr)(A) νυνδὴ(Adv) ἐγὼ(Pr)(N) ἔλεγον(Imp)(Akt), «τί(Pr)(A) ἐστιν(Prä)(Akt) σχῆμα(N),»
 dieses welches soeben ich sagte|ich, «was ist Gestalt,»
 
-ὦ(Ij) Μένων(V); εἰ(Kon) αὐτῷ(Pr)(D) εἶπες(Aor)(Akt) ὅτι(Kon) στρογγυλότης(N), εἴ(Kon)
+ὦ(ij) Μένων(V); εἰ(Kon) αὐτῷ(Pr)(D) εἶπες(Aor)(Akt) ὅτι(Kon) στρογγυλότης(N), εἴ(Kon)
 o Menon; wenn ihm sagtest|du dass Rund|heit, wenn
 
 σοι(Pr)(D) εἶπεν(Aor)(Akt) ἅπερ(Pr)(A) ἐγώ(Pr)(N), «πότερον(Pt) σχῆμα(N) ἡ(Art)(N) στρογγυλότης(N)
@@ -676,7 +676,7 @@ mehr sagst das Runde zu|sein rund oder gerade,
 οὐδὲ(Kon)(Pt) τὸ(Art)(A) εὐθὺ(Adj)(A) εὐθὺ(Adj)(A) ἢ(Kon) στρογγύλον(Adj)(A);
 auch|nicht das Gerade gerade oder rund;
 
-[ΜΈΝΩ:] οὐ(Pt) δήπου(Pt), ὦ(Ij) Σώκρατες(V).
+[ΜΈΝΩ:] οὐ(Pt) δήπου(Pt), ὦ(ij) Σώκρατες(V).
 [ΜΈΝΩ:] nicht wohl, o Sokrates(V).
 
 [ΣΏΚΡ:] ἀλλὰ(Kon) μὴν(Pt) σχῆμά(N) γε(Pt) οὐδὲν(Pr)(A) μᾶλλον(Adv)(Kmp) φῂς(Prä)(Akt)
@@ -702,7 +702,7 @@ ist, das Gestalt; versuche zu|sagen. wenn nun dem
 ἐρωτῶντι(Prä)(Akt)(D) οὕτως(Adv) ἢ(Kon) περὶ(Prp) σχήματος(G) ἢ(Kon) χρώματος(G) εἶπες(Aor)(Akt)
 fragenden so oder über der|Gestalt oder der|Farbe sagtest
 
-ὅτι(Kon) «ἀλλʼ(Kon) οὐδὲ(Kon)(Pt) μανθάνω(Prä)(Akt) ἔγωγε(Pr)(N) ὅτι(Kon) βούλει(Prä)(Med), ὦ(Ij)
+ὅτι(Kon) «ἀλλʼ(Kon) οὐδὲ(Kon)(Pt) μανθάνω(Prä)(Akt) ἔγωγε(Pr)(N) ὅτι(Kon) βούλει(Prä)(Med), ὦ(ij)
 dass «aber auch|nicht lerne ich|jedenfalls dass willst, o
 
 ἄνθρωπε(V), οὐδὲ(Kon)(Pt) οἶδα(Per)(Akt) ὅτι(Kon) λέγεις(Prä)(Akt),» ἴσως(Adv) ἂν(Pt) ἐθαύμασε(Aor)(Akt)
@@ -711,7 +711,7 @@ Mensch(V), auch|nicht weiß dass sagst,» vielleicht wohl staunte
 καὶ(Kon) εἶπεν(Aor)(Akt)· «οὐ(Pt) μανθάνεις(Prä)(Akt) ὅτι(Kon) ζητῶ(Prä)(Akt) τὸ(Art)(A) ἐπὶ(Prp)
 und sagte· «nicht lernst dass suche das auf
 
-πᾶσιν(Adj)(D) τούτοις(Pr)(D) ταὐτόν(Adj)(A);» ἢ(Kon) οὐδὲ(Kon)(Pt) ἐπὶ(Prp) τούτοις(Pr)(D), ὦ(Ij)
+πᾶσιν(Adj)(D) τούτοις(Pr)(D) ταὐτόν(Adj)(A);» ἢ(Kon) οὐδὲ(Kon)(Pt) ἐπὶ(Prp) τούτοις(Pr)(D), ὦ(ij)
 allen diesen das|Gleiche;» oder auch|nicht auf diesen, o
 
 Μένων(V), ἔχοις(Prä)(Akt)(Op) ἂν(Pt) εἰπεῖν(Aor)(Inf)(Akt), εἴ(Kon) τίς(Pr)(N) σε(Pr)(A) ἐρωτῴη(Prä)(Akt)(Op)·
