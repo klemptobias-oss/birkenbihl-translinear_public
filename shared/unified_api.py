@@ -168,24 +168,34 @@ def create_pdf_unified(kind: Literal["poesie", "prosa"],
     # 1) Vorverarbeitung (+ optionale UI-Payload)
     #    - Payload leer/None -> Standard apply(...)
     #    - Payload gesetzt   -> apply_from_payload(...) inkl. Normalisierung auf Extremfälle
-    if payload is not None:
+    
+    # NEU: Wenn tag_config übergeben wird, aber keine Payload,
+    # erstelle eine Payload. Das vereinheitlicht den Drafts-Workflow.
+    effective_payload = payload
+    if effective_payload is None and tag_config is not None:
+        effective_payload = {
+            "color_mode": options.color_mode,
+            "tag_config": tag_config,
+            "versmass": options.versmass_mode,
+            # 'place' overrides werden in Poesie-spezifischem Code erwartet,
+            # hier vorerst nicht automatisch übernommen.
+        }
+
+    if effective_payload is not None:
         pre_blocks = preprocess.apply_from_payload(
             blocks,
-            payload,
-            default_color_mode=options.color_mode,
-            default_tag_mode=options.tag_mode,
+            effective_payload,
             default_versmass_mode=options.versmass_mode
         )
-        placement_overrides = payload.get("place") or None
+        placement_overrides = effective_payload.get("place") or None
     else:
         # Standard-Vorverarbeitung: apply() direkt aufrufen
-        # Die Logik zum Hinzufügen von Farbsymbolen wurde in apply() verschoben
-        # und wird nur aktiv, wenn eine tag_config übergeben wird (hier nicht der Fall).
         pre_blocks = preprocess.apply(
             blocks,
             color_mode=options.color_mode,
             tag_mode=options.tag_mode,
-            versmass_mode=options.versmass_mode
+            versmass_mode=options.versmass_mode,
+            tag_config=tag_config # tag_config hier weitergeben
         )
         placement_overrides = None
 

@@ -42,10 +42,33 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
     colors    = ("COLOR", "BLACK_WHITE")
     tags      = ("TAGS", "NO_TAGS")
 
+    # Standard-Farbkonfiguration für den Prosa-Adapter
+    # Diese wird verwendet, wenn keine spezifische Konfiguration (z.B. aus einem Draft) kommt.
+    default_prosa_tag_config = {
+        # Nomen rot
+        "nomen": {"color": "red"},
+        "nomen_N": {"color": "red"}, "nomen_G": {"color": "red"}, "nomen_D": {"color": "red"}, "nomen_A": {"color": "red"}, "nomen_V": {"color": "red"},
+        # Verben grün
+        "verb": {"color": "green"},
+        "verb_Pra": {"color": "green"}, "verb_Imp": {"color": "green"}, "verb_Aor": {"color": "green"}, "verb_AorS": {"color": "green"}, "verb_Per": {"color": "green"}, "verb_Plq": {"color": "green"}, "verb_Fu": {"color": "green"},
+        "verb_Akt": {"color": "green"}, "verb_Med": {"color": "green"}, "verb_Pas": {"color": "green"}, "verb_MP": {"color": "green"}, "verb_Inf": {"color": "green"}, "verb_Op": {"color": "green"}, "verb_Knj": {"color": "green"}, "verb_Imv": {"color": "green"},
+        # Adjektive & Partizipien blau
+        "adjektiv": {"color": "blue"},
+        "adjektiv_N": {"color": "blue"}, "adjektiv_G": {"color": "blue"}, "adjektiv_D": {"color": "blue"}, "adjektiv_A": {"color": "blue"}, "adjektiv_V": {"color": "blue"}, "adjektiv_Kmp": {"color": "blue"}, "adjektiv_Sup": {"color": "blue"},
+        "partizip": {"color": "blue"},
+        "partizip_Pra": {"color": "blue"}, "partizip_Imp": {"color": "blue"}, "partizip_Aor": {"color": "blue"}, "partizip_AorS": {"color": "blue"}, "partizip_Per": {"color": "blue"}, "partizip_Plq": {"color": "blue"}, "partizip_Fu": {"color": "blue"},
+        "partizip_N": {"color": "blue"}, "partizip_G": {"color": "blue"}, "partizip_D": {"color": "blue"}, "partizip_A": {"color": "blue"}, "partizip_V": {"color": "blue"},
+        "partizip_Akt": {"color": "blue"}, "partizip_Med": {"color": "blue"}, "partizip_Pas": {"color": "blue"}, "partizip_MP": {"color": "blue"},
+    }
+    
+    # Wenn keine spezifische tag_config übergeben wird (Standardfall für build_prosa_adapter),
+    # verwende die Standard-Farbkonfiguration.
+    final_tag_config = tag_config if tag_config is not None else default_prosa_tag_config
+
     for strength, color, tag in itertools.product(strengths, colors, tags):
         out_name = output_pdf_name(base, NameOpts(strength=strength, color_mode=color, tag_mode=tag))
         opts = PdfRenderOptions(strength=strength, color_mode=color, tag_mode=tag, versmass_mode="REMOVE_MARKERS")
-        create_pdf_unified("prosa", Prosa, blocks, out_name, opts, payload=None, tag_config=tag_config)
+        create_pdf_unified("prosa", Prosa, blocks, out_name, opts, payload=None, tag_config=final_tag_config)
         print(f"✓ PDF erstellt → {out_name}")
 
 def main():

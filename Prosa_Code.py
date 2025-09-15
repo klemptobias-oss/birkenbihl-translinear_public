@@ -430,6 +430,10 @@ def format_token_markup(token:str, *, reverse_mode:bool=False, is_greek_row:bool
         color_pos = raw.find('+'); color = '#1E90FF'
     elif '-' in raw:
         color_pos = raw.find('-'); color = '#228B22'
+    elif '§' in raw:
+        color_pos = raw.find('§'); color = '#FF00FF'  # Magenta
+    elif '$' in raw:
+        color_pos = raw.find('$'); color = '#FFA500'  # Orange
 
     # Entferne den Farbcode aus dem raw-Text
     if color_pos >= 0:
@@ -481,8 +485,8 @@ def visible_measure_token(token:str, *, font:str, size:float, is_greek_row:bool=
         w = _measure_string(f'[{inner}]', font, size)
         return w + SAFE_EPS_PT + INLINE_EXTRA_PT + 2*CELL_PAD_LR_PT
 
-    # Entferne ALLE Farbcodes (#, +, -) aus dem Token
-    for color_char in ['#', '+', '-']:
+    # Entferne ALLE Farbcodes (#, +, -, §, $) aus dem Token
+    for color_char in ['#', '+', '-', '§', '$']:
         t = t.replace(color_char, '')
     strong = '~' in t; t = t.replace('~','')
 
@@ -814,20 +818,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     # Tag-Placement-Overrides (hoch/tief/aus) anwenden
     set_tag_placement_overrides(placement_overrides)
 
-    # Preprocessing mit Tag-Konfiguration anwenden
-    if tag_config:
-        try:
-            from shared.preprocess import apply_from_payload
-            # Konvertiere tag_config zu preprocess payload
-            payload = {
-                "color_mode": "BlackWhite" if color_mode == "BLACK_WHITE" else "Colour",
-                "tag_config": tag_config,
-                "versmass": "NORMAL"
-            }
-            blocks = apply_from_payload(blocks, payload)
-            print(f"Preprocessing angewendet: {len(tag_config.get('sup_tags', []))} SUP, {len(tag_config.get('sub_tags', []))} SUB")
-        except Exception as e:
-            print(f"Fehler beim Preprocessing: {e}")
+    # =============================================================================
+    # HINWEIS: Die Vorverarbeitung (Färben, Tag-Filterung) wird jetzt ZENTRAL
+    # in shared/unified_api.py gehandhabt. Die 'blocks', die hier ankommen,
+    # sind bereits fertig vorverarbeitet.
+    # =============================================================================
 
     # Setze kritische Konstanten basierend auf tag_mode
     global INTRA_PAIR_GAP_MM, CONT_PAIR_GAP_MM, SPEAKER_GAP_MM
@@ -1003,15 +998,14 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         'de_tokens': dt
                     })
 
-            # Wende Preprocessing auf Zitat-Blöcke an
-            processed_quote_blocks = preprocess.apply(temp_quote_blocks, color_mode=color_mode, tag_mode=tag_mode)
-
-            # Sammle die verarbeiteten Tokens
+            # Die Vorverarbeitung passiert jetzt in unified_api. Die Blöcke sind bereits prozessiert.
+            # Sammle die Tokens direkt aus den vorverarbeiteten Blöcken.
             q_gr, q_de = [], []
-            for block in processed_quote_blocks:
+            for block in temp_quote_blocks: # Iteriere über die gerade erstellten, aber unprozessierten Blöcke
                 if block['type'] == 'pair':
                     q_gr.extend(block.get('gr_tokens', []))
                     q_de.extend(block.get('de_tokens', []))
+
 
             # Für Zitate verwenden wir den gleichen Stil wie normale Tokens
             quote_de_style = ParagraphStyle('QuoteDE', parent=base['Normal'],
