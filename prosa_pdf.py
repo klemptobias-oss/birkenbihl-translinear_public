@@ -118,7 +118,11 @@ def main():
         try:
             with open(args.tag_config, 'r', encoding='utf-8') as f:
                 tag_config = json.load(f)
-            print(f"Tag-Konfiguration geladen: {len(tag_config.get('sup_tags', []))} SUP, {len(tag_config.get('sub_tags', []))} SUB")
+            # Debug-Ausgabe nur für externe JSON-Dateien (nicht für Draft-Konfigurationen)
+            if 'sup_tags' in tag_config and 'sub_tags' in tag_config:
+                print(f"Tag-Konfiguration geladen: {len(tag_config.get('sup_tags', []))} SUP, {len(tag_config.get('sub_tags', []))} SUB")
+            else:
+                print(f"Tag-Konfiguration geladen: {len(tag_config)} Regeln")
         except Exception as e:
             print(f"Fehler beim Laden der Tag-Konfiguration: {e}")
     

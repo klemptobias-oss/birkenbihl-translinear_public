@@ -1,6 +1,6 @@
 ######## START: build_prosa_drafts_adapter.py ########
 from pathlib import Path
-import subprocess, sys, json
+import subprocess, sys, json, re
 
 ROOT = Path(__file__).parent.resolve()
 SRC_ROOT = ROOT / "texte_drafts" / "prosa_drafts"        # Eingaben
@@ -8,9 +8,36 @@ DST_BASE = ROOT / "pdf_drafts" / "prosa_drafts"          # Ausgaben (spiegelbild
 
 RUNNER = ROOT / "prosa_pdf.py"                           # 12 Varianten (Prosa)
 
+def extract_tag_config_from_file(file_path: Path) -> dict:
+    """
+    Extrahiert die TAG_CONFIG aus der ersten Zeile der Datei.
+    """
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            first_line = f.readline().strip()
+            
+        # Suche nach dem HTML-Kommentar mit der TAG_CONFIG
+        match = re.search(r'<!-- TAG_CONFIG:(.*?) -->', first_line)
+        if match:
+            json_str = match.group(1)
+            return json.loads(json_str)
+        else:
+            return {}
+    except Exception as e:
+        print(f"⚠ Fehler beim Extrahieren der Tag-Konfiguration aus {file_path}: {e}")
+        return {}
+
 def run_one(input_path: Path, tag_config: dict = None) -> None:
     if not input_path.is_file():
         print(f"⚠ Datei fehlt: {input_path} — übersprungen"); return
+
+    # Extrahiere Tag-Konfiguration aus der Datei, falls keine externe übergeben wurde
+    if tag_config is None:
+        tag_config = extract_tag_config_from_file(input_path)
+        if tag_config:
+            print(f"✓ Tag-Konfiguration aus Datei extrahiert: {len(tag_config)} Regeln")
+        else:
+            print("⚠ Keine Tag-Konfiguration gefunden, verwende Standard-Konfiguration")
 
     # Extrahiere Autor und Werk aus dem Pfad
     # input_path: texte_drafts/prosa_drafts/Autor/Werk/datei.txt
@@ -114,12 +141,16 @@ def main():
     input_file = Path(sys.argv[1])
     tag_config = None
     
-    # Lade Tag-Konfiguration falls vorhanden
+    # Lade Tag-Konfiguration falls vorhanden (optionaler zweiter Parameter)
     if len(sys.argv) > 2:
         config_file = Path(sys.argv[2])
         if config_file.exists():
-            with open(config_file, 'r', encoding='utf-8') as f:
-                tag_config = json.load(f)
+            try:
+                with open(config_file, 'r', encoding='utf-8') as f:
+                    tag_config = json.load(f)
+            except json.JSONDecodeError as e:
+                print(f"⚠ Fehler beim Laden der JSON-Konfiguration: {e}")
+                tag_config = None
     
     run_one(input_file, tag_config)
 

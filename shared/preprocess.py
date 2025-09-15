@@ -297,7 +297,11 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
 
                 for tag in relevant_tags:
                     rule_id = f"{wortart}_{tag}"
-                    if rule_id in config:
+                    # Versuche auch normalisierte Versionen für Draft-Kompatibilität
+                    normalized_rule_id = _normalize_rule_id(rule_id)
+                    
+                    rule_config = config.get(rule_id) or config.get(normalized_rule_id)
+                    if rule_config:
                         rank = -1
                         # Prüfe, ob der Tag in der Hierarchie-Liste für die Wortart ist
                         if wortart in HIERARCHIE and tag in HIERARCHIE[wortart]:
@@ -439,6 +443,41 @@ def _process_pair_block(block: Dict[str, Any],
     de_t = proc_tokens(_split(de_s), is_greek_line=False)
     return {**block, 'gr': _join(gr_t), 'de': _join(de_t)}
 
+# ======= Hilfsfunktionen =======
+
+def _normalize_tag_name(tag: str) -> str:
+    """
+    Normalisiert Tag-Namen für Kompatibilität mit Draft-Dateien.
+    """
+    # Normalisiere Umlaute
+    tag = tag.replace('Pra', 'Prä')
+    
+    # Normalisiere Wortart-Präfixe
+    if tag.startswith('adverb'):
+        tag = tag.replace('adverb', 'adv')
+    if tag.startswith('pronomen'):
+        tag = tag.replace('pronomen', 'pr')
+    if tag.startswith('artikel'):
+        tag = tag.replace('artikel', 'art')
+    
+    return tag
+
+def _normalize_rule_id(rule_id: str) -> str:
+    """
+    Normalisiert Regel-IDs für Kompatibilität mit Draft-Dateien.
+    """
+    if '_' not in rule_id:
+        return rule_id
+    
+    parts = rule_id.split('_')
+    if len(parts) >= 2:
+        wortart = parts[0]
+        tag = '_'.join(parts[1:])  # In case there are multiple underscores
+        normalized_tag = _normalize_tag_name(tag)
+        return f"{wortart}_{normalized_tag}"
+    
+    return rule_id
+
 # ======= Öffentliche, granulare API =======
 
 def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -461,17 +500,32 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
     
     sup_keep, sub_keep = set(), set()
     if tag_config:
+        # Starte mit allen bekannten Tags
+        sup_keep = SUP_TAGS.copy()
+        sub_keep = SUB_TAGS.copy()
+        
+        # Entferne Tags, die explizit als "hide" markiert sind
         for rule_id, conf in tag_config.items():
-            tag = rule_id.split('_')[-1] if '_' in rule_id else None
+            # Normalisiere die Regel-ID für Draft-Kompatibilität
+            normalized_rule_id = _normalize_rule_id(rule_id)
+            
+            tag = normalized_rule_id.split('_')[-1] if '_' in normalized_rule_id else None
             if not tag: continue
 
-            if not conf.get('hide'):
+            if conf.get('hide'):
+                # Tag soll versteckt werden
+                sup_keep.discard(tag)
+                sub_keep.discard(tag)
+            else:
+                # Tag soll angezeigt werden - setze Placement falls spezifiziert
                 placement = conf.get('placement')
-                if placement == 'sup': sup_keep.add(tag)
-                elif placement == 'sub': sub_keep.add(tag)
-                elif placement is None:
-                    if tag in SUP_TAGS: sup_keep.add(tag)
-                    if tag in SUB_TAGS: sub_keep.add(tag)
+                if placement == 'sup': 
+                    sub_keep.discard(tag)  # Entferne aus SUB, falls vorhanden
+                    sup_keep.add(tag)
+                elif placement == 'sub': 
+                    sup_keep.discard(tag)  # Entferne aus SUP, falls vorhanden
+                    sub_keep.add(tag)
+                # Wenn placement=None, bleibt das Tag in beiden Sets (falls vorhanden)
     else:
         # Wenn keine Config da ist, alle bekannten Tags behalten
         sup_keep = SUP_TAGS
