@@ -91,6 +91,15 @@ const el = {
   confirmBtn: document.getElementById("confirmRendering"),
   toggleColorsBtn: document.getElementById("toggleAllColors"),
   toggleHiddenBtn: document.getElementById("toggleAllTagsHidden"),
+
+  // Neue Elemente
+  toggleBirkenbihlTagsBtn: document.getElementById("toggleBirkenbihlTags"),
+  toggleDraftTagsBtn: document.getElementById("toggleDraftTags"),
+  resetDraftBtn: document.getElementById("resetDraft"),
+  resetDraftModal: document.getElementById("resetDraftModal"),
+  closeResetModalBtn: document.getElementById("closeResetModal"),
+  cancelResetBtn: document.getElementById("cancelReset"),
+  confirmResetBtn: document.getElementById("confirmReset"),
 };
 
 // 5) State
@@ -108,6 +117,7 @@ const state = {
 
   meterSupported: false,
   lastDraftUrl: null, // vom Worker zurückbekommen
+  originalBirkenbihlText: "", // Zum Zurücksetzen des Entwurfs
 
   // Modal-Konfiguration
   tagConfig: {
@@ -277,7 +287,9 @@ async function loadTexts() {
       cache: "no-store",
     });
     if (r.ok) {
-      el.birkenbihlText.textContent = await r.text();
+      const text = await r.text();
+      state.originalBirkenbihlText = text; // Original speichern
+      el.birkenbihlText.innerHTML = addSpansToTags(text);
     } else {
       el.birkenbihlText.textContent = "Birkenbihl-Text nicht gefunden.";
     }
@@ -289,23 +301,20 @@ async function loadTexts() {
 // 8) Entwurfs-System
 async function initializeDraftText() {
   // Lade den Birkenbihl-Text als Basis für den Entwurf
-  try {
-    const base = `${TXT_BASE}/${state.kind}/${state.author}/${state.work}`;
-    const r = await fetch(`${base}/${state.work}_birkenbihl.txt`, {
-      cache: "no-store",
-    });
-    if (r.ok) {
-      const text = await r.text();
-      el.draftText.textContent = text;
-      el.draftStatus.textContent = "Entwurf bereit. Text bearbeitbar.";
-    } else {
-      el.draftText.textContent = "Birkenbihl-Text nicht gefunden.";
-      el.draftStatus.textContent = "Fehler: Birkenbihl-Text nicht verfügbar.";
-    }
-  } catch {
-    el.draftText.textContent = "Fehler beim Laden des Entwurfs.";
-    el.draftStatus.textContent = "Fehler beim Laden.";
+  // (wird jetzt nur noch aus dem State geladen)
+  if (state.originalBirkenbihlText) {
+    el.draftText.innerHTML = addSpansToTags(state.originalBirkenbihlText);
+    el.draftStatus.textContent = "Entwurf bereit. Text bearbeitbar.";
+  } else {
+    el.draftText.textContent = "Fehler: Birkenbihl-Text nicht verfügbar.";
+    el.draftStatus.textContent = "Fehler: Birkenbihl-Text nicht verfügbar.";
   }
+}
+
+function addSpansToTags(text) {
+  // Regex, um (Tag)-Strukturen zu finden
+  const tagRegex = /(\([A-Za-z0-9/≈äöüßÄÖÜ]+\))/g;
+  return text.replace(tagRegex, '<span class="grammatik-tag">$1</span>');
 }
 
 async function saveDraftText() {
@@ -1261,6 +1270,44 @@ function wireEvents() {
     performRendering();
   });
 
+  // Neue Event Listeners
+  el.draftFile?.addEventListener("change", (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        el.draftText.innerHTML = addSpansToTags(e.target.result);
+        el.draftStatus.textContent = `Datei ${file.name} geladen.`;
+      };
+      reader.readAsText(file);
+    }
+  });
+
+  el.toggleBirkenbihlTagsBtn?.addEventListener("click", () => {
+    el.birkenbihlText.classList.toggle("tags-hidden");
+  });
+
+  el.toggleDraftTagsBtn?.addEventListener("click", () => {
+    el.draftText.classList.toggle("tags-hidden");
+  });
+
+  el.resetDraftBtn?.addEventListener("click", () => {
+    el.resetDraftModal.style.display = "flex";
+  });
+
+  el.closeResetModalBtn?.addEventListener("click", () => {
+    el.resetDraftModal.style.display = "none";
+  });
+
+  el.cancelResetBtn?.addEventListener("click", () => {
+    el.resetDraftModal.style.display = "none";
+  });
+
+  el.confirmResetBtn?.addEventListener("click", () => {
+    initializeDraftText();
+    el.resetDraftModal.style.display = "none";
+  });
+
   // Entwurfs-Text Auto-Save (optional)
   el.draftText?.addEventListener("input", () => {
     el.draftStatus.textContent = "Entwurf geändert. Bereit zum Rendern.";
@@ -1350,7 +1397,4 @@ function wireEvents() {
 
   // Entwurfs-Text initialisieren
   await initializeDraftText();
-
-  // Modal-Events einrichten
-  setupModalEvents();
 })();

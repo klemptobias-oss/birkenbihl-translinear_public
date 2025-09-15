@@ -143,6 +143,13 @@
           <div class="pane-head">
             <div class="pane-title">Birkenbihl-Text</div>
             <div class="pane-tools">
+              <button
+                id="toggleBirkenbihlTags"
+                class="btn"
+                title="Grammatik-Tags ein-/ausblenden"
+              >
+                Tags ausblenden
+              </button>
               <button id="btnBirPlus" class="btn" title="Schrift größer">
                 A+
               </button>
@@ -166,6 +173,16 @@
           <div class="pane-head">
             <div class="pane-title">Entwurf → PDF</div>
             <div class="pane-tools">
+              <button
+                id="toggleDraftTags"
+                class="btn"
+                title="Grammatik-Tags ein-/ausblenden"
+              >
+                Tags ausblenden
+              </button>
+              <button id="resetDraft" class="btn" title="Entwurf zurücksetzen">
+                Entwurf zurücksetzen
+              </button>
               <button id="btnDraftTextPlus" class="btn" title="Schrift größer">
                 A+
               </button>
@@ -183,7 +200,15 @@
           </div>
 
           <div class="draft-uploader">
-            <input id="draftFile" type="file" accept=".txt" />
+            <label for="draftFile" id="draftFileLabel" class="btn primary"
+              >Entwurf.txt hochladen</label
+            >
+            <input
+              id="draftFile"
+              type="file"
+              accept=".txt"
+              class="visually-hidden"
+            />
             <button id="btnRenderDraft" class="btn primary">
               Entwurf jetzt rendern
             </button>
@@ -217,6 +242,31 @@
         </div>
       </section>
     </main>
+
+    <!-- Reset Draft Confirmation Modal -->
+    <div id="resetDraftModal" class="modal" style="display: none">
+      <div class="modal-content confirmation-modal">
+        <div class="modal-header">
+          <h2>Entwurf zurücksetzen</h2>
+          <button id="closeResetModal" class="btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Wenn Sie auf “Entwurf zurücksetzen” klicken, wird Ihr aktueller
+            Entwurf gelöscht und der originale Entwurf wiederhergestellt. Sie
+            können Ihren Entwurf herunterladen, falls Sie ihn lieber speichern
+            wollen und ihn später wieder hochladen.
+          </p>
+          <p><strong>Wollen Sie mit dem Zurücksetzen fortfahren?</strong></p>
+        </div>
+        <div class="modal-footer">
+          <button id="cancelReset" class="btn">Abbrechen</button>
+          <button id="confirmReset" class="btn primary">
+            Entwurf zurücksetzen
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- Rendering-Modal -->
     <div id="renderingModal" class="modal" style="display: none">

@@ -94,8 +94,13 @@
 .pane-body.mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
-  white-space: pre-wrap;
-  word-break: break-word;
+  white-space: pre-wrap; /* sorgt für korrekten Zeilenumbruch */
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.pane-body.tags-hidden .grammatik-tag {
+  display: none;
 }
 
 /* PDF-Viewer im Paneel */
@@ -165,11 +170,20 @@
 }
 .draft-uploader {
   display: flex;
-  gap: 8px;
   align-items: center;
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--edge, #e5e7eb);
+  gap: 12px;
+  padding: 8px;
+  background: #f9fafb;
 }
+#draftFileLabel {
+  background-color: #22c55e; /* Selbes Grün wie die anderen Buttons */
+  color: white;
+  cursor: pointer;
+}
+#draftFileLabel:hover {
+  background-color: #16a34a;
+}
+
 .muted {
   color: var(--muted, #666);
   font-size: 13px;
@@ -202,6 +216,10 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+}
+
+.modal-content.confirmation-modal {
+  max-width: 500px;
 }
 
 .modal-header {
