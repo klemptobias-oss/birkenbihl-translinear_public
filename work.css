@@ -333,6 +333,28 @@
   padding-bottom: 12px;
 }
 
+#tag-config-table .group-leader td {
+  background-color: #e5e7eb;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#tag-config-table .group-separator td {
+  padding: 0;
+  height: 1px;
+  border: none;
+  border-bottom: 2px solid #9ca3af;
+}
+
+#tag-config-table tr[data-group] {
+  border-left: 2px solid #d1d5db;
+  border-right: 2px solid #d1d5db;
+}
+
+#tag-config-table tr[data-group]:last-of-type {
+  border-bottom: 2px solid #d1d5db;
+}
+
 /* Zeilenhintergrundfarben */
 .color-bg-red {
   background-color: rgba(239, 68, 68, 0.15);

@@ -119,67 +119,101 @@ const state = {
   },
 };
 
-// Datenstruktur für die neue Konfigurationstabelle
-const tagConfigRows = [
-  { group: "Nomen", tag: "Nomen", cat: "nomen" },
-  { tag: "N", name: "Nominativ (N)", cat: "nomen" },
-  { tag: "G", name: "Genitiv (G)", cat: "nomen" },
-  { tag: "D", name: "Dativ (D)", cat: "nomen" },
-  { tag: "A", name: "Akkusativ (A)", cat: "nomen" },
-  { tag: "V", name: "Vokativ (V)", cat: "nomen" },
-  { group: "Verben", tag: "Verben", cat: "verb" },
-  { tag: "Prä", name: "Präsenz(Prä)", cat: "verb" },
-  { tag: "Imp", name: "Imperfekt (Imp)", cat: "verb" },
-  { tag: "Aor", name: "Aorist (Aor)", cat: "verb" },
-  { tag: "AorS", name: "Aorist Stark (AorS)", cat: "verb" },
-  { tag: "Per", name: "Perfekt (Per)", cat: "verb" },
-  { tag: "Plq", name: "Plusquamperfekt (Plq)", cat: "verb" },
-  { tag: "Fu", name: "Futur (Fu)", cat: "verb" },
-  { tag: "Akt", name: "Aktiv (Akt)", cat: "verb" },
-  { tag: "Med", name: "Medium (Med)", cat: "verb" },
-  { tag: "Pas", name: "Passiv (Pas)", cat: "verb" },
-  { tag: "M/P", name: "Medium/Passiv (M/P)", cat: "verb" },
-  { tag: "Inf", name: "Infinitiv (Inf)", cat: "verb" },
-  { tag: "Op", name: "Optativ (Op)", cat: "verb" },
-  { tag: "Knj", name: "Konjunktiv (Knj)", cat: "verb" },
-  { tag: "Imv", name: "Imperativ (Imv)", cat: "verb" },
-  { group: "Partizipien", tag: "Partizipien", cat: "partizip" },
-  { tag: "Prä", name: "Präsenz(Prä)", cat: "partizip" },
-  { tag: "Imp", name: "Imperfekt (Imp)", cat: "partizip" },
-  { tag: "Aor", name: "Aorist (Aor)", cat: "partizip" },
-  { tag: "AorS", name: "Aorist Stark (AorS)", cat: "partizip" },
-  { tag: "Per", name: "Perfekt (Per)", cat: "partizip" },
-  { tag: "Plq", name: "Plusquamperfekt (Plq)", cat: "partizip" },
-  { tag: "Fu", name: "Futur (Fu)", cat: "partizip" },
-  { tag: "Akt", name: "Aktiv (Akt)", cat: "partizip" },
-  { tag: "Med", name: "Medium (Med)", cat: "partizip" },
-  { tag: "Pas", name: "Passiv (Pas)", cat: "partizip" },
-  { tag: "M/P", name: "Medium/Passiv (M/P)", cat: "partizip" },
-  { group: "Adjektiv", tag: "Adj", name: "Adjektiv (Adj)", cat: "adjektiv" },
-  { tag: "N", name: "Nominativ (N)", cat: "adjektiv" },
-  { tag: "G", name: "Genitiv (G)", cat: "adjektiv" },
-  { tag: "D", name: "Dativ (D)", cat: "adjektiv" },
-  { tag: "A", name: "Akkusativ (A)", cat: "adjektiv" },
-  { tag: "V", name: "Vokativ (V)", cat: "adjektiv" },
-  { tag: "Kmp", name: "Komparativ (Kmp)", cat: "adjektiv" },
-  { tag: "Sup", name: "Superlativ (Sup)", cat: "adjektiv" },
-  { group: "Adverb", tag: "Adv", name: "Adverb (Adv)", cat: "adverb" },
-  { tag: "Kmp", name: "Komparativ (Kmp)", cat: "adverb" },
-  { tag: "Sup", name: "Superlativ (Sup)", cat: "adverb" },
-  { group: "Pronomen", tag: "Pr", name: "Pronomen (Pr)", cat: "pronomen" },
-  { tag: "N", name: "Nominativ (N)", cat: "pronomen" },
-  { tag: "G", name: "Genitiv (G)", cat: "pronomen" },
-  { tag: "D", name: "Dativ (D)", cat: "pronomen" },
-  { tag: "A", name: "Akkusativ (A)", cat: "pronomen" },
-  { group: "Artikel", tag: "Art", name: "Artikel (Art)", cat: "artikel" },
-  { tag: "N", name: "Nominativ (N)", cat: "artikel" },
-  { tag: "G", name: "Genitiv (G)", cat: "artikel" },
-  { tag: "D", name: "Dativ (D)", cat: "artikel" },
-  { tag: "A", name: "Akkusativ (A)", cat: "artikel" },
-  { group: "Präposition", tag: "Prp", name: "Präposition (Prp)" },
-  { group: "Konjunktion", tag: "Kon", name: "Konjunktion (Kon)" },
-  { group: "Partikel", tag: "Pt", name: "Partikel (Pt)" },
-  { group: "Interjektion", tag: "ij", name: "Interjektion (ij)" },
+// Neue, strukturierte Definition für die Konfigurationstabelle
+const tagConfigDefinition = [
+  {
+    leader: { id: "nomen", display: "Nomen" },
+    members: [
+      { id: "nomen_N", display: "Nominativ (N)", tag: "N" },
+      { id: "nomen_G", display: "Genitiv (G)", tag: "G" },
+      { id: "nomen_D", display: "Dativ (D)", tag: "D" },
+      { id: "nomen_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "nomen_V", display: "Vokativ (V)", tag: "V" },
+    ],
+  },
+  {
+    leader: { id: "verb", display: "Verben" },
+    members: [
+      { id: "verb_Pra", display: "Präsenz(Prä)", tag: "Prä" },
+      { id: "verb_Imp", display: "Imperfekt (Imp)", tag: "Imp" },
+      { id: "verb_Aor", display: "Aorist (Aor)", tag: "Aor" },
+      { id: "verb_AorS", display: "Aorist Stark (AorS)", tag: "AorS" },
+      { id: "verb_Per", display: "Perfekt (Per)", tag: "Per" },
+      { id: "verb_Plq", display: "Plusquamperfekt (Plq)", tag: "Plq" },
+      { id: "verb_Fu", display: "Futur (Fu)", tag: "Fu" },
+      { id: "verb_Akt", display: "Aktiv (Akt)", tag: "Akt" },
+      { id: "verb_Med", display: "Medium (Med)", tag: "Med" },
+      { id: "verb_Pas", display: "Passiv (Pas)", tag: "Pas" },
+      { id: "verb_MP", display: "Medium/Passiv (M/P)", tag: "M/P" },
+      { id: "verb_Inf", display: "Infinitiv (Inf)", tag: "Inf" },
+      { id: "verb_Op", display: "Optativ (Op)", tag: "Op" },
+      { id: "verb_Knj", display: "Konjunktiv (Knj)", tag: "Knj" },
+      { id: "verb_Imv", display: "Imperativ (Imv)", tag: "Imv" },
+    ],
+  },
+  {
+    leader: { id: "partizip", display: "Partizipien" },
+    members: [
+      { id: "partizip_Pra", display: "Präsenz(Prä)", tag: "Prä" },
+      { id: "partizip_Imp", display: "Imperfekt (Imp)", tag: "Imp" },
+      { id: "partizip_Aor", display: "Aorist (Aor)", tag: "Aor" },
+      { id: "partizip_AorS", display: "Aorist Stark (AorS)", tag: "AorS" },
+      { id: "partizip_Per", display: "Perfekt (Per)", tag: "Per" },
+      { id: "partizip_Plq", display: "Plusquamperfekt (Plq)", tag: "Plq" },
+      { id: "partizip_Fu", display: "Futur (Fu)", tag: "Fu" },
+      { id: "partizip_N", display: "Nominativ (N)", tag: "N" },
+      { id: "partizip_G", display: "Genitiv (G)", tag: "G" },
+      { id: "partizip_D", display: "Dativ (D)", tag: "D" },
+      { id: "partizip_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "partizip_V", display: "Vokativ (V)", tag: "V" },
+      { id: "partizip_Akt", display: "Aktiv (Akt)", tag: "Akt" },
+      { id: "partizip_Med", display: "Medium (Med)", tag: "Med" },
+      { id: "partizip_Pas", display: "Passiv (Pas)", tag: "Pas" },
+      { id: "partizip_MP", display: "Medium/Passiv (M/P)", tag: "M/P" },
+    ],
+  },
+  {
+    leader: { id: "adjektiv", display: "Adjektiv (Adj)", tag: "Adj" },
+    members: [
+      { id: "adjektiv_N", display: "Nominativ (N)", tag: "N" },
+      { id: "adjektiv_G", display: "Genitiv (G)", tag: "G" },
+      { id: "adjektiv_D", display: "Dativ (D)", tag: "D" },
+      { id: "adjektiv_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "adjektiv_V", display: "Vokativ (V)", tag: "V" },
+      { id: "adjektiv_Kmp", display: "Komparativ (Kmp)", tag: "Kmp" },
+      { id: "adjektiv_Sup", display: "Superlativ (Sup)", tag: "Sup" },
+    ],
+  },
+  {
+    leader: { id: "adverb", display: "Adverb (Adv)", tag: "Adv" },
+    members: [
+      { id: "adverb_Kmp", display: "Komparativ (Kmp)", tag: "Kmp" },
+      { id: "adverb_Sup", display: "Superlativ (Sup)", tag: "Sup" },
+    ],
+  },
+  {
+    leader: { id: "pronomen", display: "Pronomen (Pr)", tag: "Pr" },
+    members: [
+      { id: "pronomen_N", display: "Nominativ (N)", tag: "N" },
+      { id: "pronomen_G", display: "Genitiv (G)", tag: "G" },
+      { id: "pronomen_D", display: "Dativ (D)", tag: "D" },
+      { id: "pronomen_A", display: "Akkusativ (A)", tag: "A" },
+    ],
+  },
+  {
+    leader: { id: "artikel", display: "Artikel (Art)", tag: "Art" },
+    members: [
+      { id: "artikel_N", display: "Nominativ (N)", tag: "N" },
+      { id: "artikel_G", display: "Genitiv (G)", tag: "G" },
+      { id: "artikel_D", display: "Dativ (D)", tag: "D" },
+      { id: "artikel_A", display: "Akkusativ (A)", tag: "A" },
+    ],
+  },
+  // Standalone items (keine eigene Gruppe)
+  { standalone: { id: "prp", display: "Präposition (Prp)", tag: "Prp" } },
+  { standalone: { id: "kon", display: "Konjunktion (Kon)", tag: "Kon" } },
+  { standalone: { id: "pt", display: "Partikel (Pt)", tag: "Pt" } },
+  { standalone: { id: "ij", display: "Interjektion (ij)", tag: "ij" } },
 ];
 
 // 6) Hilfen
@@ -794,18 +828,8 @@ async function performRendering() {
     tag_mode: state.tags === "Tag" ? "TAGS" : "NO_TAGS",
     versmass: state.meterSupported && state.meter === "with" ? "ON" : "OFF",
 
-    // Neue Tag-Konfiguration
-    tag_config: {
-      sup_tags: Object.entries(state.tagConfig.placementOverrides)
-        .filter(([, val]) => val === "sup")
-        .map(([key]) => key),
-      sub_tags: Object.entries(state.tagConfig.placementOverrides)
-        .filter(([, val]) => val === "sub")
-        .map(([key]) => key),
-      placement_overrides: state.tagConfig.placementOverrides, // bleibt für alle fälle
-      tag_colors: state.tagConfig.tagColors,
-      hidden_tags: Array.from(state.tagConfig.hiddenTags),
-    },
+    // Die gesamte, neue Tag-Konfiguration wird gesendet
+    tag_config: state.tagConfig,
   };
 
   const form = new FormData();
@@ -917,51 +941,69 @@ async function performRendering() {
 /**
  * PDF-Konfigurations-Modal
  */
+function createTableRow(item, isGroupLeader = false) {
+  const tr = document.createElement("tr");
+  tr.dataset.id = item.id;
+  if (isGroupLeader) {
+    tr.classList.add("group-leader");
+  }
+
+  // Modifikations-Spalte (Name)
+  tr.innerHTML = `<td>${item.display}</td>`;
+
+  // Checkbox-Spalten
+  const actions = [
+    { type: "placement", value: "sup", label: "hochgestellt" },
+    { type: "placement", value: "sub", label: "tiefgestellt" },
+    { type: "color", value: "red", label: "rot" },
+    { type: "color", value: "orange", label: "orange" },
+    { type: "color", value: "blue", label: "blau" },
+    { type: "color", value: "green", label: "grün" },
+    { type: "color", value: "magenta", label: "magenta" },
+    { type: "hide", value: "hide", label: "Tag verstecken" },
+  ];
+
+  actions.forEach((action) => {
+    const td = document.createElement("td");
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.dataset.type = action.type;
+    input.dataset.value = action.value;
+    input.title = action.label;
+    td.appendChild(input);
+    tr.appendChild(td);
+  });
+  return tr;
+}
+
 function showTagConfigModal() {
   const tbody = el.modalTbody;
   if (!tbody) return;
 
   // 1. Tabelle leeren und neu aufbauen
   tbody.innerHTML = "";
-  tagConfigRows.forEach((item) => {
-    if (item.group && !item.name) {
-      // Gruppen-Header-Zeile
-      const tr = document.createElement("tr");
-      tr.classList.add("group-header");
-      tr.innerHTML = `<td colspan="9">${item.group}</td>`;
-      tbody.appendChild(tr);
-    } else {
-      // Normale Konfigurations-Zeile
-      const tr = document.createElement("tr");
-      tr.dataset.tag = item.tag;
-      tr.dataset.cat = item.cat || "";
+  tagConfigDefinition.forEach((group) => {
+    if (group.leader) {
+      // Gruppen-Anführer-Zeile
+      const leaderRow = createTableRow(group.leader, true);
+      leaderRow.dataset.group = group.leader.id;
+      tbody.appendChild(leaderRow);
 
-      // Modifikations-Spalte (Name)
-      const name = item.name || item.tag;
-      tr.innerHTML = `<td>${name}</td>`;
+      // Trennlinie
+      const separatorRow = document.createElement("tr");
+      separatorRow.classList.add("group-separator");
+      separatorRow.innerHTML = `<td colspan="9"></td>`;
+      tbody.appendChild(separatorRow);
 
-      // Checkbox-Spalten
-      const actions = [
-        { type: "placement", value: "sup" },
-        { type: "placement", value: "sub" },
-        { type: "color", value: "red" },
-        { type: "color", value: "orange" },
-        { type: "color", value: "blue" },
-        { type: "color", value: "green" },
-        { type: "color", value: "magenta" },
-        { type: "hide", value: "hide" },
-      ];
-
-      actions.forEach((action) => {
-        const td = document.createElement("td");
-        const input = document.createElement("input");
-        input.type = "checkbox";
-        input.dataset.type = action.type;
-        input.dataset.value = action.value;
-        td.appendChild(input);
-        tr.appendChild(td);
+      // Mitglieder-Zeilen
+      group.members.forEach((member) => {
+        const memberRow = createTableRow(member);
+        memberRow.dataset.group = group.leader.id;
+        tbody.appendChild(memberRow);
       });
-      tbody.appendChild(tr);
+    } else if (group.standalone) {
+      const standaloneRow = createTableRow(group.standalone);
+      tbody.appendChild(standaloneRow);
     }
   });
 
@@ -970,8 +1012,11 @@ function showTagConfigModal() {
   updateTableFromState();
 
   // 3. Event Listeners hinzufügen
+  tbody.removeEventListener("change", handleTableChange); // Alte Listener entfernen
   tbody.addEventListener("change", handleTableChange);
+  el.toggleColorsBtn.removeEventListener("click", toggleOriginalColors);
   el.toggleColorsBtn.addEventListener("click", toggleOriginalColors);
+  el.toggleHiddenBtn.removeEventListener("click", toggleAllTagsHidden);
   el.toggleHiddenBtn.addEventListener("click", toggleAllTagsHidden);
 
   // 4. Modal anzeigen
@@ -980,55 +1025,79 @@ function showTagConfigModal() {
 
 function applyInitialConfig() {
   // Setzt die Standardkonfiguration (Farben und Platzierung)
-  state.tagConfig.tagColors = {};
-  state.tagConfig.placementOverrides = {};
+  state.tagConfig = {}; // Reset
 
-  // Standardfarben
+  // Standardfarben anwenden
   if (el.toggleColorsBtn.dataset.state === "on") {
-    tagConfigRows.forEach((item) => {
-      if (!item.tag) return;
-      if (item.cat === "nomen") state.tagConfig.tagColors[item.tag] = "red";
-      if (item.cat === "verb") state.tagConfig.tagColors[item.tag] = "green";
-      if (item.cat === "partizip" || item.cat === "adjektiv")
-        state.tagConfig.tagColors[item.tag] = "blue";
-    });
+    // Nomen -> rot
+    tagConfigDefinition
+      .find((g) => g.leader?.id === "nomen")
+      ?.members.forEach((m) => {
+        state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "red" };
+      });
+    // Verben -> grün
+    tagConfigDefinition
+      .find((g) => g.leader?.id === "verb")
+      ?.members.forEach((m) => {
+        state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "green" };
+      });
+    // Partizipien & Adjektive -> blau
+    tagConfigDefinition
+      .find((g) => g.leader?.id === "partizip")
+      ?.members.forEach((m) => {
+        state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "blue" };
+      });
+    tagConfigDefinition
+      .find((g) => g.leader?.id === "adjektiv")
+      ?.members.forEach((m) => {
+        state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "blue" };
+      });
   }
 
-  // Standardplatzierungen
-  SUP_TAGS.forEach((tag) => (state.tagConfig.placementOverrides[tag] = "sup"));
-  SUB_TAGS.forEach((tag) => (state.tagConfig.placementOverrides[tag] = "sub"));
-
-  // Versteckte Tags: initial leer
-  state.tagConfig.hiddenTags = new Set();
+  // Standardplatzierungen anwenden
+  const allItems = tagConfigDefinition.flatMap(
+    (g) => g.members || [g.standalone]
+  );
+  allItems.forEach((item) => {
+    if (item && item.tag) {
+      if (SUP_TAGS.includes(item.tag)) {
+        state.tagConfig[item.id] = {
+          ...state.tagConfig[item.id],
+          placement: "sup",
+        };
+      }
+      if (SUB_TAGS.includes(item.tag)) {
+        state.tagConfig[item.id] = {
+          ...state.tagConfig[item.id],
+          placement: "sub",
+        };
+      }
+    }
+  });
 }
 
 function updateTableFromState() {
-  const rows = el.modalTbody.querySelectorAll("tr[data-tag]");
+  const rows = el.modalTbody.querySelectorAll("tr[data-id]");
   rows.forEach((tr) => {
-    const tag = tr.dataset.tag;
+    const id = tr.dataset.id;
+    const config = state.tagConfig[id] || {};
     const checkboxes = tr.querySelectorAll("input[type=checkbox]");
-    let rowColor = "";
+
+    let rowColor = config.color || "";
 
     checkboxes.forEach((cb) => {
       const { type, value } = cb.dataset;
       cb.checked = false; // Reset
 
-      if (
-        type === "placement" &&
-        state.tagConfig.placementOverrides[tag] === value
-      ) {
-        cb.checked = true;
-      }
-      if (type === "color" && state.tagConfig.tagColors[tag] === value) {
-        cb.checked = true;
-        rowColor = value;
-      }
-      if (type === "hide" && state.tagConfig.hiddenTags.has(tag)) {
-        cb.checked = true;
-      }
+      if (type === "placement" && config.placement === value) cb.checked = true;
+      if (type === "color" && config.color === value) cb.checked = true;
+      if (type === "hide" && config.hide) cb.checked = true;
     });
 
-    tr.className = rowColor ? `color-bg-${rowColor}` : "";
+    tr.className = tr.classList.contains("group-leader") ? "group-leader" : "";
+    if (rowColor) {
+      tr.classList.add(`color-bg-${rowColor}`);
+    }
   });
 }
 
@@ -1037,10 +1106,37 @@ function handleTableChange(event) {
   if (checkbox.type !== "checkbox") return;
 
   const tr = checkbox.closest("tr");
-  const tag = tr.dataset.tag;
+  const id = tr.dataset.id;
   const { type, value } = checkbox.dataset;
 
-  // Exklusivität sicherstellen
+  // Funktion zum Aktualisieren eines einzelnen Eintrags
+  const updateConfig = (targetId, updateType, updateValue, isChecked) => {
+    state.tagConfig[targetId] = state.tagConfig[targetId] || {};
+    const currentConfig = state.tagConfig[targetId];
+
+    if (isChecked) {
+      currentConfig[updateType] = updateValue;
+    } else {
+      delete currentConfig[updateType];
+    }
+  };
+
+  // Wenn ein Gruppenanführer geändert wird, wende es auf alle Mitglieder an
+  if (tr.classList.contains("group-leader")) {
+    const groupId = tr.dataset.group;
+    const memberRows = el.modalTbody.querySelectorAll(
+      `tr[data-group="${groupId}"]`
+    );
+    memberRows.forEach((memberTr) => {
+      if (memberTr === tr) return; // Nicht auf sich selbst anwenden
+      updateConfig(memberTr.dataset.id, type, value, checkbox.checked);
+    });
+  }
+
+  // Aktualisiere den State für das geklickte Element
+  updateConfig(id, type, value, checkbox.checked);
+
+  // Exklusivität sicherstellen (nur für die geklickte Zeile)
   if (checkbox.checked) {
     const groupSelector = `input[data-type="${type}"]`;
     tr.querySelectorAll(groupSelector).forEach((cb) => {
@@ -1048,21 +1144,7 @@ function handleTableChange(event) {
     });
   }
 
-  // State aktualisieren
-  if (type === "placement") {
-    if (checkbox.checked) state.tagConfig.placementOverrides[tag] = value;
-    else delete state.tagConfig.placementOverrides[tag];
-  }
-  if (type === "color") {
-    if (checkbox.checked) state.tagConfig.tagColors[tag] = value;
-    else delete state.tagConfig.tagColors[tag];
-  }
-  if (type === "hide") {
-    if (checkbox.checked) state.tagConfig.hiddenTags.add(tag);
-    else state.tagConfig.hiddenTags.delete(tag);
-  }
-
-  // UI aktualisieren (Hintergrundfarbe)
+  // UI komplett aktualisieren, um alle Änderungen (auch Gruppen) widerzuspiegeln
   updateTableFromState();
 }
 
@@ -1095,17 +1177,19 @@ function toggleOriginalColors() {
 
 function toggleAllTagsHidden() {
   const turnOn = toggleButton(el.toggleHiddenBtn);
-  const checkboxes = el.modalTbody.querySelectorAll('input[data-type="hide"]');
-  checkboxes.forEach((cb) => {
-    const tag = cb.closest("tr").dataset.tag;
+  const allIds = Array.from(el.modalTbody.querySelectorAll("tr[data-id]")).map(
+    (tr) => tr.dataset.id
+  );
+
+  allIds.forEach((id) => {
+    state.tagConfig[id] = state.tagConfig[id] || {};
     if (turnOn) {
-      cb.checked = true;
-      state.tagConfig.hiddenTags.add(tag);
+      state.tagConfig[id].hide = true;
     } else {
-      cb.checked = false;
-      state.tagConfig.hiddenTags.delete(tag);
+      delete state.tagConfig[id].hide;
     }
   });
+  updateTableFromState();
 }
 
 function hideTagConfigModal() {

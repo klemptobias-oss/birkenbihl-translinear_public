@@ -45,20 +45,41 @@ Effekte:
 
 from __future__ import annotations
 import re
-from typing import List, Dict, Any, Iterable, Optional
+from typing import List, Dict, Any, Iterable, Optional, Set
 
-# ======= Tag-Definitionen für die Farbsymbol-Logik =======
+# ======= Tag-Definitionen für die Erkennungslogik =======
 KASUS_TAGS = {'N', 'G', 'D', 'A', 'V'}
-MODUS_TAGS = {'Inf', 'Op', 'Imv', 'Kon'}
 TEMPUS_TAGS = {'Aor', 'Prä', 'Imp', 'AorS', 'Per', 'Plq', 'Fu'}
 DIATHESE_TAGS = {'Med', 'Pas', 'Akt', 'M/P'}
-ADJEKTIV_TAGS = {'Adj'}
+MODUS_TAGS = {'Inf', 'Op', 'Imv', 'Knj'}
+STEIGERUNG_TAGS = {'Kmp', 'Sup'}
+
+# Alle Tags, die eine Wortart eindeutig identifizieren
+WORTART_IDENTIFIER_TAGS = {
+    'Adj': 'adjektiv',
+    'Adv': 'adverb',
+    'Pr': 'pronomen',
+    'Art': 'artikel',
+    'Prp': 'prp',
+    'Kon': 'kon',
+    'Pt': 'pt',
+    'ij': 'ij'
+}
+
+# Reihenfolge für Hierarchie-Überschreibung innerhalb der Gruppen
+HIERARCHIE = {
+    'verb': ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'Akt', 'Med', 'Pas', 'M/P', 'Inf', 'Op', 'Knj', 'Imv'],
+    'partizip': ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'N', 'G', 'D', 'A', 'V', 'Akt', 'Med', 'Pas', 'M/P'],
+    'adjektiv': ['N', 'G', 'D', 'A', 'V', 'Kmp', 'Sup'],
+    'adverb': ['Kmp', 'Sup'],
+    'pronomen': ['N', 'G', 'D', 'A'],
+    'artikel': ['N', 'G', 'D', 'A'],
+    'nomen': ['N', 'G', 'D', 'A', 'V'],
+}
 
 # ======= Konstanten (müssen mit dem Renderer-Stand zusammenpassen) =======
 SUP_TAGS = {'N','D','G','A','V','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','Sup','ij'}
 SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Knj','Op','Pr','AorS','M/P'}
-
-# COLOR_POS_WHITELIST entfernt - Farben werden jetzt direkt in tag_colors definiert
 
 # ======= Regexe =======
 RE_PAREN_TAG     = re.compile(r'\(([A-Za-z0-9/≈äöüßÄÖÜ]+)\)')
@@ -113,6 +134,31 @@ def _extract_tags(token: str) -> List[str]:
     if not token:
         return []
     return RE_PAREN_TAG.findall(token)
+
+def _get_wortart_and_relevant_tags(token_tags: Set[str]) -> (Optional[str], Set[str]):
+    """
+    Analysiert die Tags eines Tokens und bestimmt die Wortart und die für die
+    Konfiguration relevanten Tags.
+    """
+    # 1. Eindeutige Identifier prüfen (Adj, Adv, Pr, Art, etc.)
+    for tag, wortart in WORTART_IDENTIFIER_TAGS.items():
+        if tag in token_tags:
+            return wortart, token_tags
+
+    # 2. Komplexe Fälle: Nomen, Verb, Partizip
+    hat_kasus = bool(token_tags.intersection(KASUS_TAGS))
+    hat_tempus = bool(token_tags.intersection(TEMPUS_TAGS))
+
+    if hat_kasus and hat_tempus:
+        return 'partizip', token_tags
+    if hat_tempus and not hat_kasus:
+        return 'verb', token_tags
+    if hat_kasus and not hat_tempus:
+        # Nomen: nur Kasus-Tag(s)
+        if all(t in KASUS_TAGS for t in token_tags):
+             return 'nomen', token_tags
+
+    return None, set()
 
 def _is_known_sup(tag: str) -> bool:
     # ZUERST: Prüfe ob das gesamte Tag direkt in den Listen enthalten ist
@@ -212,13 +258,13 @@ def _has_any_pos(token: str, pos_whitelist: set[str]) -> bool:
     return False
 
 
-def _apply_colors_from_config(blocks: List[Dict[str, Any]], tag_colors: Dict[str, str]) -> List[Dict[str, Any]]:
+def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict[str, Any]]:
     """
-    Fügt Farbsymbole basierend auf einer `tag_colors`-Konfiguration hinzu und überträgt sie.
+    Fügt Farbsymbole und (zukünftig) Platzierungen basierend auf der vollen Konfiguration hinzu.
     """
-    if not tag_colors:
+    if not config:
         return blocks
-
+        
     new_blocks = []
     for block in blocks:
         if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
@@ -233,32 +279,57 @@ def _apply_colors_from_config(blocks: List[Dict[str, Any]], tag_colors: Dict[str
                 if not token or any(c in token for c in COLOR_SYMBOLS):
                     continue
 
-                token_tags = _extract_tags(token)
-                color_to_apply = None
-                
-                for tag in token_tags:
-                    if tag in tag_colors:
-                        color_to_apply = tag_colors[tag]
-                        break # Erster gefundener Tag bestimmt die Farbe
-                
-                if color_to_apply and color_to_apply in COLOR_MAP:
-                    symbol = COLOR_MAP[color_to_apply]
-                    
-                    # Symbol im griechischen Token einfügen
-                    match = RE_WORD_START.search(token)
-                    if match:
-                        new_gr_tokens[i] = token[:match.start(2)] + symbol + token[match.start(2):]
+                token_tags = set(_extract_tags(token))
+                if not token_tags:
+                    continue
 
-                        # Symbol auf deutsches Token übertragen, falls vorhanden und farblos
-                        if i < len(de_tokens):
-                            de_tok = de_tokens[i]
-                            if de_tok and not any(c in de_tok for c in COLOR_SYMBOLS):
-                                de_match = RE_WORD_START.search(de_tok)
-                                if de_match:
-                                    new_de_tokens[i] = de_tok[:de_match.start(2)] + symbol + de_tok[de_match.start(2):]
-                                else:
-                                    new_de_tokens[i] = symbol + de_tok
+                wortart, relevant_tags = _get_wortart_and_relevant_tags(token_tags)
+                if not wortart:
+                    continue
+                
+                # Finde die relevanteste Regel basierend auf der Hierarchie
+                best_rule_config = None
+                highest_rank = -1
 
+                for tag in relevant_tags:
+                    rule_id = f"{wortart}_{tag}"
+                    if rule_id in config:
+                        rank = -1
+                        # Prüfe, ob der Tag in der Hierarchie-Liste für die Wortart ist
+                        if wortart in HIERARCHIE and tag in HIERARCHIE[wortart]:
+                            rank = HIERARCHIE[wortart].index(tag)
+                        
+                        if rank > highest_rank:
+                            highest_rank = rank
+                            best_rule_config = config[rule_id]
+
+                # Gruppenanführer-Regel als Fallback
+                if not best_rule_config:
+                    group_leader_id = f"{wortart}"
+                    if group_leader_id in config:
+                        best_rule_config = config[group_leader_id]
+                
+                # Regel anwenden (aktuell nur Farbe)
+                if best_rule_config and 'color' in best_rule_config:
+                    color = best_rule_config['color']
+                    if color in COLOR_MAP:
+                        symbol = COLOR_MAP[color]
+                        
+                        # Symbol im griechischen Token einfügen
+                        match = RE_WORD_START.search(token)
+                        if match:
+                            new_gr_tokens[i] = token[:match.start(2)] + symbol + token[match.start(2):]
+
+                            # Symbol auf deutsches Token übertragen
+                            if i < len(de_tokens):
+                                de_tok = de_tokens[i]
+                                if de_tok and not any(c in de_tok for c in COLOR_SYMBOLS):
+                                    de_match = RE_WORD_START.search(de_tok)
+                                    if de_match:
+                                        new_de_tokens[i] = de_tok[:de_match.start(2)] + symbol + de_tok[de_match.start(2):]
+                                    else:
+                                        new_de_tokens[i] = symbol + de_tok
+            
             new_block['gr_tokens'] = new_gr_tokens
             new_block['de_tokens'] = new_de_tokens
             new_blocks.append(new_block)
@@ -371,29 +442,37 @@ def apply(blocks: List[Dict[str, Any]],
           tag_mode: TagMode,
           versmass_mode: VersmassMode = "NORMAL",
           # NEU (optional):
-          tag_config: Optional[Dict[str, Any]] = None,
-          sup_keep: Optional[Iterable[str]] = None,
-          sub_keep: Optional[Iterable[str]] = None) -> List[Dict[str, Any]]:
+          tag_config: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
     """
     Vorverarbeitung der Blockliste. Gibt eine NEUE Liste zurück.
-    - tag_config: Das neue Konfigurationsobjekt vom Frontend.
-    - sup_keep / sub_keep: Iterable Tag-Kürzel, die behalten werden (alle übrigen bekannten SUP/SUB werden entfernt).
-                           None → keine Einschränkung (alle bekannten Tag-Typen bleiben erhalten).
+    - tag_config: Das neue, detaillierte Konfigurationsobjekt vom Frontend.
     """
     
     blocks_to_process = blocks
-    if tag_config and tag_config.get('tag_colors'):
-        blocks_to_process = _apply_colors_from_config(blocks, tag_config.get('tag_colors'))
+    if color_mode == "COLOR" and tag_config:
+        blocks_to_process = _apply_colors_and_placements(blocks, tag_config)
 
-    # color_pos_keep wird nicht mehr verwendet
-    cpos = None
-    
-    keep_sup = None
-    if sup_keep is not None:
-        keep_sup = set(sup_keep)
-    keep_sub = None
-    if sub_keep is not None:
-        keep_sub = set(sub_keep)
+    # Tag-Listen aus der Konfiguration ableiten
+    sup_keep = set()
+    sub_keep = set()
+    if tag_mode == "TAGS" and tag_config:
+        for rule_id, conf in tag_config.items():
+            # Extrahiere Tag aus der ID, z.B. "nomen_N" -> "N"
+            tag = rule_id.split('_')[-1] if '_' in rule_id else None
+            if not tag: # Gruppenanführer-Regeln ignorieren
+                continue
+
+            if not conf.get('hide'):
+                if conf.get('placement') == 'sup':
+                    sup_keep.add(tag)
+                elif conf.get('placement') == 'sub':
+                    sub_keep.add(tag)
+                # Fallback: wenn keine Platzierung gesetzt, aber Tag nicht versteckt
+                # und in den globalen Listen -> behalten
+                elif 'placement' not in conf:
+                    if tag in SUP_TAGS: sup_keep.add(tag)
+                    if tag in SUB_TAGS: sub_keep.add(tag)
+
 
     out: List[Dict[str, Any]] = []
     for b in blocks_to_process:
@@ -404,9 +483,9 @@ def apply(blocks: List[Dict[str, Any]],
                 color_mode=color_mode,
                 tag_mode=tag_mode,
                 versmass_mode=versmass_mode,
-                color_pos_keep=cpos,
-                sup_keep=keep_sup,
-                sub_keep=keep_sub,
+                color_pos_keep=None, # Veraltet
+                sup_keep=sup_keep,
+                sub_keep=sub_keep,
             ))
         else:
             out.append(b)
@@ -417,41 +496,21 @@ def apply_from_payload(blocks: List[Dict[str, Any]], payload: Dict[str, Any], *,
                        default_versmass_mode: VersmassMode = "NORMAL") -> List[Dict[str, Any]]:
     """
     Verarbeitet die Konfiguration aus dem Frontend.
-    Payload-Format (neu):
-      {
-        "kind": "poesie",
-        "author": "...",
-        "work": "...",
-        "color_mode": "Colour" | "BlackWhite",
-        // ... andere Metadaten
-        "tag_config": {
-          "placement_overrides": { "N": "sup", "Prä": "sub", ... },
-          "tag_colors": { "N": "red", ... },
-          "hidden_tags": [ "V", "D", ... ]
-        }
-      }
     """
     tag_config = payload.get("tag_config", {})
     
     # 1. Farbmodus bestimmen
     color_mode = "BLACK_WHITE" if payload.get("color_mode") == "BlackWhite" else "COLOR"
 
-    # 2. Tag-Modus und Keep-Listen bestimmen
-    hidden_tags = set(tag_config.get("hidden_tags", []))
-    placement = tag_config.get("placement_overrides", {})
+    # 2. Tag-Modus bestimmen (vereinfacht)
+    # Wenn alle Tags auf "hide" stehen, ist es NO_TAGS, ansonsten TAGS
+    # Die Detail-Logik, welche Tags gezeigt werden, steckt jetzt in `apply`
+    all_hidden = True
+    if not tag_config or not all(conf.get('hide', False) for conf in tag_config.values()):
+        all_hidden = False
+        
+    tag_mode = "NO_TAGS" if all_hidden else "TAGS"
     
-    all_known_tags = SUP_TAGS.union(SUB_TAGS)
-    
-    # Wenn alle Tags versteckt sind, ist der Modus NO_TAGS
-    if hidden_tags.issuperset(all_known_tags):
-        tag_mode = "NO_TAGS"
-        sup_arg = None
-        sub_arg = None
-    else:
-        tag_mode = "TAGS"
-        sup_arg = {tag for tag, place in placement.items() if place == "sup" and tag not in hidden_tags}
-        sub_arg = {tag for tag, place in placement.items() if place == "sub" and tag not in hidden_tags}
-
     # 3. Versmaß-Modus
     versmass_mode  = payload.get("versmass", default_versmass_mode)
 
@@ -461,7 +520,5 @@ def apply_from_payload(blocks: List[Dict[str, Any]], payload: Dict[str, Any], *,
         tag_mode=tag_mode,
         versmass_mode=versmass_mode,
         tag_config=tag_config,
-        sup_keep=sup_arg,
-        sub_keep=sub_arg,
     )
 
