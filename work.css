@@ -177,41 +177,55 @@
 
 /* ======= Modal ======= */
 .modal {
+  display: none;
   position: fixed;
-  top: 0;
+  z-index: 1000;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .modal-content {
-  background: white;
-  border-radius: 12px;
-  max-width: 800px;
-  max-height: 90vh;
-  width: 90%;
-  overflow: hidden;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: auto;
+  max-width: 85%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
 }
 
 .modal-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e5e7eb;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #e5e7eb;
-  background: #f9fafb;
 }
 
 .modal-header h2 {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.5em; /* 20% größer */
+}
+
+.header-controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.header-controls .btn {
+  font-size: 1em; /* 20% größer */
+  padding: 8px 14px;
 }
 
 .modal-body {
@@ -233,6 +247,7 @@
   margin-top: 0;
   margin-bottom: 15px;
   color: #374151;
+  font-size: 1.4em; /* 20% größer */
 }
 
 /* Quick Controls */
@@ -299,7 +314,16 @@
 
 #tag-config-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate; /* Wichtig für Lücken und Radien */
+  border-spacing: 0 1em; /* Vertikaler Abstand zwischen Gruppen */
+}
+
+#tag-config-table thead {
+  text-align: center;
+}
+
+#tag-config-table th:last-child {
+  text-align: center;
 }
 
 #tag-config-table th,
@@ -309,28 +333,23 @@
   text-align: left;
 }
 
-#tag-config-table th {
-  background-color: #f9fafb;
-  font-weight: 600;
-  font-size: 0.9em;
+#tag-config-table tbody {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
 }
 
-#tag-config-table td:not(:first-child) {
-  text-align: center;
+#tag-config-table tbody tr:first-child td:first-child {
+  border-top-left-radius: 8px;
 }
-
-#tag-config-table input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
+#tag-config-table tbody tr:first-child td:last-child {
+  border-top-right-radius: 8px;
 }
-
-#tag-config-table .group-header td {
-  background-color: #f3f4f6;
-  font-weight: bold;
-  font-size: 1.1em;
-  padding-top: 12px;
-  padding-bottom: 12px;
+#tag-config-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+#tag-config-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
 }
 
 #tag-config-table .group-leader td {
@@ -343,33 +362,40 @@
   padding: 0;
   height: 1px;
   border: none;
-  border-bottom: 2px solid #9ca3af;
+  background-color: #9ca3af;
 }
 
 #tag-config-table tr[data-group] {
-  border-left: 2px solid #d1d5db;
-  border-right: 2px solid #d1d5db;
+  border-left: none;
+  border-right: none;
 }
 
 #tag-config-table tr[data-group]:last-of-type {
-  border-bottom: 2px solid #d1d5db;
+  border-bottom: none;
+}
+
+.config-hint {
+  margin-top: 24px;
+  font-size: 0.9em;
+  color: #4b5563;
+  line-height: 1.5;
 }
 
 /* Zeilenhintergrundfarben */
 .color-bg-red {
-  background-color: rgba(239, 68, 68, 0.15);
+  background-color: rgba(239, 68, 68, 0.15) !important;
 }
 .color-bg-orange {
-  background-color: rgba(249, 115, 22, 0.15);
+  background-color: rgba(249, 115, 22, 0.15) !important;
 }
 .color-bg-blue {
-  background-color: rgba(59, 130, 246, 0.15);
+  background-color: rgba(59, 130, 246, 0.15) !important;
 }
 .color-bg-green {
-  background-color: rgba(34, 197, 94, 0.15);
+  background-color: rgba(34, 197, 94, 0.15) !important;
 }
 .color-bg-magenta {
-  background-color: rgba(217, 70, 239, 0.15);
+  background-color: rgba(217, 70, 239, 0.15) !important;
 }
 
 /* Color Checkboxes */

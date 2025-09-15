@@ -960,7 +960,7 @@ function createTableRow(item, isGroupLeader = false) {
     { type: "color", value: "blue", label: "blau" },
     { type: "color", value: "green", label: "grün" },
     { type: "color", value: "magenta", label: "magenta" },
-    { type: "hide", value: "hide", label: "Tag verstecken" },
+    { type: "hide", value: "hide", label: "Tag nicht zeigen" },
   ];
 
   actions.forEach((action) => {
@@ -977,12 +977,15 @@ function createTableRow(item, isGroupLeader = false) {
 }
 
 function showTagConfigModal() {
-  const tbody = el.modalTbody;
-  if (!tbody) return;
+  const table = document.getElementById("tag-config-table");
+  if (!table) return;
 
-  // 1. Tabelle leeren und neu aufbauen
-  tbody.innerHTML = "";
+  // Alte tbody-Elemente entfernen
+  table.querySelectorAll("tbody").forEach((tbody) => tbody.remove());
+
   tagConfigDefinition.forEach((group) => {
+    const tbody = document.createElement("tbody");
+
     if (group.leader) {
       // Gruppen-Anführer-Zeile
       const leaderRow = createTableRow(group.leader, true);
@@ -1005,6 +1008,7 @@ function showTagConfigModal() {
       const standaloneRow = createTableRow(group.standalone);
       tbody.appendChild(standaloneRow);
     }
+    table.appendChild(tbody);
   });
 
   // 2. Initialkonfiguration anwenden
@@ -1012,8 +1016,9 @@ function showTagConfigModal() {
   updateTableFromState();
 
   // 3. Event Listeners hinzufügen
-  tbody.removeEventListener("change", handleTableChange); // Alte Listener entfernen
-  tbody.addEventListener("change", handleTableChange);
+  const tableBodyContainer = document.getElementById("tag-config-table");
+  tableBodyContainer.removeEventListener("change", handleTableChange); // Alte Listener entfernen
+  tableBodyContainer.addEventListener("change", handleTableChange);
   el.toggleColorsBtn.removeEventListener("click", toggleOriginalColors);
   el.toggleColorsBtn.addEventListener("click", toggleOriginalColors);
   el.toggleHiddenBtn.removeEventListener("click", toggleAllTagsHidden);
@@ -1121,6 +1126,15 @@ function handleTableChange(event) {
     }
   };
 
+  // Exklusivität für placement und hide sicherstellen
+  if (checkbox.checked) {
+    if (type === "placement") {
+      updateConfig(id, "hide", false, false); // hide entfernen
+    } else if (type === "hide") {
+      updateConfig(id, "placement", null, false); // placement entfernen
+    }
+  }
+
   // Wenn ein Gruppenanführer geändert wird, wende es auf alle Mitglieder an
   if (tr.classList.contains("group-leader")) {
     const groupId = tr.dataset.group;
@@ -1129,6 +1143,15 @@ function handleTableChange(event) {
     );
     memberRows.forEach((memberTr) => {
       if (memberTr === tr) return; // Nicht auf sich selbst anwenden
+
+      // Exklusivität auch für Gruppenmitglieder anwenden
+      if (checkbox.checked) {
+        if (type === "placement")
+          updateConfig(memberTr.dataset.id, "hide", false, false);
+        if (type === "hide")
+          updateConfig(memberTr.dataset.id, "placement", null, false);
+      }
+
       updateConfig(memberTr.dataset.id, type, value, checkbox.checked);
     });
   }
@@ -1136,7 +1159,7 @@ function handleTableChange(event) {
   // Aktualisiere den State für das geklickte Element
   updateConfig(id, type, value, checkbox.checked);
 
-  // Exklusivität sicherstellen (nur für die geklickte Zeile)
+  // Exklusivität sicherstellen (innerhalb der Zeile für den geklickten Typ)
   if (checkbox.checked) {
     const groupSelector = `input[data-type="${type}"]`;
     tr.querySelectorAll(groupSelector).forEach((cb) => {

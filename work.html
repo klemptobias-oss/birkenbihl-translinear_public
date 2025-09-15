@@ -223,31 +223,23 @@
       <div class="modal-content">
         <div class="modal-header">
           <h2>PDF-Rendering konfigurieren</h2>
+          <div class="header-controls">
+            <button id="toggleAllColors" class="btn toggle-btn" data-state="on">
+              <span class="toggle-text">Originale Farben</span>
+              <span class="toggle-status green">An</span>
+            </button>
+            <button
+              id="toggleAllTagsHidden"
+              class="btn toggle-btn"
+              data-state="off"
+            >
+              <span class="toggle-text">Alle Tags verstecken</span>
+              <span class="toggle-status red">Aus</span>
+            </button>
+          </div>
           <button id="closeModal" class="btn">&times;</button>
         </div>
         <div class="modal-body">
-          <!-- Quick Controls oben -->
-          <div class="quick-controls">
-            <div class="general-controls">
-              <button
-                id="toggleAllColors"
-                class="btn toggle-btn"
-                data-state="on"
-              >
-                <span class="toggle-text">Originale Farben</span>
-                <span class="toggle-status green">An</span>
-              </button>
-              <button
-                id="toggleAllTagsHidden"
-                class="btn toggle-btn"
-                data-state="off"
-              >
-                <span class="toggle-text">Alle Tags verstecken</span>
-                <span class="toggle-status red">Aus</span>
-              </button>
-            </div>
-          </div>
-
           <div class="config-section">
             <h3>Tag-Konfiguration</h3>
             <div class="tag-table-container">
@@ -262,14 +254,26 @@
                     <th>blau</th>
                     <th>grün</th>
                     <th>magenta</th>
-                    <th>Tag verstecken</th>
+                    <th>Tag nicht<br />zeigen</th>
                   </tr>
                 </thead>
-                <tbody id="tag-config-tbody">
-                  <!-- Zeilen werden dynamisch per JavaScript eingefügt -->
-                </tbody>
+                <!-- TBODYs werden dynamisch per JavaScript eingefügt -->
               </table>
             </div>
+            <p class="config-hint">
+              Hinweis: Originale Tag-Konfiguration ist voreingestellt. Innerhalb
+              einer Gruppe (z.B. Verben) überschreiben die weiter unten
+              liegenden Farbeinstellungen die darüberliegenden. Beispiel: Tempus
+              in der Gruppe Verben wird grün eingestellt, Aktiv in der Gruppe
+              Verben aber rot. Dann erscheinen Verben in allen Tempora mit
+              Passiv-, Medium- und Medium/Passiv-Tags grün, Verben mit Tag Aktiv
+              aber rot. Wenn “Tag nicht zeigen” gewählt wird, werden die Worte
+              selbst trotzdem die von Ihnen ausgewählte Farbe erhalten. Es wird
+              zusätzlich zu dem von Ihnen konfigurierten PDF immer auch
+              zusätzlich die _BlackWhite, _NoTags, _Tags, _Colour, _GR-Fett,
+              _DE-Fett und _Normal Version erzeugt. Das Rendern der PDFs kann
+              bis zu 2 Minuten dauern.
+            </p>
           </div>
         </div>
         <div class="modal-footer">
