@@ -338,48 +338,6 @@ async function saveDraftText() {
 // 10) Worker-Aufruf (Entwurf rendern)
 // Die alte Sektion wurde entfernt, da sie durch die neue Logik ersetzt wurde.
 
-function preprocessTextForRendering(text) {
-  let processedText = text;
-
-  // Entferne alle Farb-Marker basierend auf Quick Controls
-  if (!state.tagConfig.quickControls.nomenRot) {
-    // Entferne # Marker (Nomen rot)
-    processedText = processedText.replace(/#/g, "");
-  }
-
-  if (!state.tagConfig.quickControls.verbenGruen) {
-    // Entferne - Marker (Verben grün)
-    processedText = processedText.replace(/-/g, "");
-  }
-
-  if (!state.tagConfig.quickControls.partizipeBlau) {
-    // Entferne + Marker nur bei Partizipien (Pt, Prp), aber nicht bei Adjektiven (Adj)
-    // Das ist komplexer - wir müssen nach Tags suchen
-    processedText = processedText.replace(/\+(?=\w+\(Pt\))/g, "");
-    processedText = processedText.replace(/\+(?=\w+\(Prp\))/g, "");
-  }
-
-  // Jetzt füge neue Marker basierend auf Tag-Konfiguration hinzu
-  Object.entries(state.tagConfig.tagColors).forEach(([tag, color]) => {
-    // Escape special characters in tag for regex
-    const escapedTag = tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const tagPattern = new RegExp(`\\b(\\w+)\\(${escapedTag}\\)`, "g");
-    processedText = processedText.replace(tagPattern, (match, word) => {
-      if (color === "red" && !processedText.includes(`#${word}`)) {
-        return `#${word}(${tag})`;
-      } else if (color === "green" && !processedText.includes(`-${word}`)) {
-        return `-${word}(${tag})`;
-      } else if (color === "blue" && !processedText.includes(`+${word}`)) {
-        return `+${word}(${tag})`;
-      }
-      return match;
-    });
-  });
-
-  return processedText;
-}
-
-// Hilfsfunktion für aktuelle PDF-URL
 function getCurrentPdfUrl() {
   return buildPdfUrlFromSelection();
 }
@@ -413,33 +371,21 @@ async function simulateLocalPdfGeneration(payload) {
 
 async function performRendering() {
   let file = el.draftFile.files?.[0];
-  let textContent = "";
 
   if (!file) {
-    // Wenn keine Datei hochgeladen wurde, verwende den aktuellen Entwurfs-Text
+    // Wenn keine Datei hochgeladen wurde, erstelle eine aus dem Editor-Inhalt
     const draftText = el.draftText.textContent;
     if (!draftText || draftText.trim() === "") {
       el.draftStatus.textContent =
         "Bitte zuerst Text eingeben oder Datei hochladen.";
       return;
     }
-
-    // Preprocess den Text basierend auf Tag-Konfiguration
-    textContent = preprocessTextForRendering(draftText);
-
-    // Erstelle eine Blob-Datei aus dem verarbeiteten Text
-    const blob = new Blob([textContent], { type: "text/plain" });
+    const blob = new Blob([draftText], { type: "text/plain" });
     file = new File([blob], `${state.work}_birkenbihl_draft.txt`, {
       type: "text/plain",
     });
-  } else {
-    // Wenn eine Datei hochgeladen wurde, lese sie und preprocess sie
-    textContent = await file.text();
-    textContent = preprocessTextForRendering(textContent);
-
-    const blob = new Blob([textContent], { type: "text/plain" });
-    file = new File([blob], file.name, { type: "text/plain" });
   }
+  // Ab hier ist `file` entweder die hochgeladene oder die aus dem Editor erstellte Datei.
 
   el.draftStatus.textContent = "Rendere Entwurf...";
 
