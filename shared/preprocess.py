@@ -193,9 +193,12 @@ def _remove_selected_tags(token: str,
     def repl(m):
         tag = m.group(1)
         
+        # NEU: Normalisiere Umlaute für den Vergleich
+        tag_normalized = tag.replace('Prä', 'Prä')
+
         # ZUERST: Prüfe ob das gesamte Tag direkt in den Listen enthalten ist
-        is_sup_direct = tag in SUP_TAGS
-        is_sub_direct = tag in SUB_TAGS
+        is_sup_direct = tag_normalized in SUP_TAGS
+        is_sub_direct = tag_normalized in SUB_TAGS
         
         if is_sup_direct or is_sub_direct:
             # Direktes Match gefunden
@@ -203,7 +206,7 @@ def _remove_selected_tags(token: str,
             is_sub = is_sub_direct
         else:
             # Fallback: Zerlege evtl. 'A/B' in Einzeltags (für zusammengesetzte Tags)
-            parts = [p for p in tag.split('/') if p]
+            parts = [p for p in tag_normalized.split('/') if p]
             is_sup = all(p in SUP_TAGS for p in parts)
             is_sub = all(p in SUB_TAGS for p in parts)
 
@@ -218,7 +221,7 @@ def _remove_selected_tags(token: str,
         if is_sup and sup_keep is not None:
             if is_sup_direct:
                 # Direktes Match: prüfe ob Tag in sup_keep
-                if tag in sup_keep:
+                if tag_normalized in sup_keep:
                     return m.group(0)  # behalten
                 return ''  # raus
             else:
@@ -229,7 +232,7 @@ def _remove_selected_tags(token: str,
         if is_sub and sub_keep is not None:
             if is_sub_direct:
                 # Direktes Match: prüfe ob Tag in sub_keep
-                if tag in sub_keep:
+                if tag_normalized in sub_keep:
                     return m.group(0)
                 return ''
             else:
@@ -448,48 +451,92 @@ def apply(blocks: List[Dict[str, Any]],
     - tag_config: Das neue, detaillierte Konfigurationsobjekt vom Frontend.
     """
     
-    blocks_to_process = blocks
+    # 1. Farben anwenden (wenn color_mode="COLOR")
+    # Dieser Schritt fügt die Farbsymbole (#, +, §, $) basierend auf der tag_config hinzu.
+    # Die Original-Tags bleiben für den nächsten Schritt erhalten.
+    blocks_with_colors = blocks
     if color_mode == "COLOR" and tag_config:
-        blocks_to_process = _apply_colors_and_placements(blocks, tag_config)
+        blocks_with_colors = _apply_colors_and_placements(blocks, tag_config)
 
-    # Tag-Listen aus der Konfiguration ableiten
-    sup_keep = set()
-    sub_keep = set()
+    # 2. Tags filtern/entfernen (je nach tag_mode)
+    # Dieser Schritt wird NACH dem Hinzufügen der Farben ausgeführt.
+    sup_keep, sub_keep = None, None
+    remove_all_tags = (tag_mode == "NO_TAGS")
+
     if tag_mode == "TAGS" and tag_config:
+        sup_keep = set()
+        sub_keep = set()
         for rule_id, conf in tag_config.items():
-            # Extrahiere Tag aus der ID, z.B. "nomen_N" -> "N"
             tag = rule_id.split('_')[-1] if '_' in rule_id else None
-            if not tag: # Gruppenanführer-Regeln ignorieren
-                continue
+            if not tag: continue
 
             if not conf.get('hide'):
-                if conf.get('placement') == 'sup':
+                placement = conf.get('placement')
+                if placement == 'sup':
                     sup_keep.add(tag)
-                elif conf.get('placement') == 'sub':
+                elif placement == 'sub':
                     sub_keep.add(tag)
-                # Fallback: wenn keine Platzierung gesetzt, aber Tag nicht versteckt
-                # und in den globalen Listen -> behalten
-                elif 'placement' not in conf:
+                elif placement is None:
                     if tag in SUP_TAGS: sup_keep.add(tag)
                     if tag in SUB_TAGS: sub_keep.add(tag)
-
-
+    
     out: List[Dict[str, Any]] = []
-    for b in blocks_to_process:
-        # Erweitert, um sowohl 'pair' (Poesie) als auch 'flow' (Prosa) Blöcke zu verarbeiten.
+    for b in blocks_with_colors:
         if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
-            out.append(_process_pair_block(
+            out.append(_process_pair_block_for_tags(
                 b,
-                color_mode=color_mode,
-                tag_mode=tag_mode,
-                versmass_mode=versmass_mode,
-                color_pos_keep=None, # Veraltet
                 sup_keep=sup_keep,
                 sub_keep=sub_keep,
+                remove_all=remove_all_tags
             ))
         else:
             out.append(b)
+
+    # 3. Farbcodes für BLACK_WHITE-Modus entfernen
+    # Dieser Schritt ist der letzte, um sicherzustellen, dass die Farben
+    # auch dann korrekt hinzugefügt wurden, wenn die Tags danach entfernt werden.
+    if color_mode == "BLACK_WHITE":
+        final_blocks = []
+        for b in out:
+            if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
+                final_blocks.append(_strip_colors_from_block(b))
+            else:
+                final_blocks.append(b)
+        return final_blocks
+        
     return out
+
+# Hilfsfunktion zum Entfernen von Tags in einem Block
+def _process_pair_block_for_tags(block: Dict[str, Any], *,
+                                 sup_keep: Optional[set[str]],
+                                 sub_keep: Optional[set[str]],
+                                 remove_all: bool) -> Dict[str, Any]:
+    def proc_tokens(seq: Iterable[str]) -> List[str]:
+        return [
+            _remove_selected_tags(tok, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=remove_all)
+            for tok in (seq or [])
+        ]
+    
+    if 'gr_tokens' in block or 'de_tokens' in block:
+        return {
+            **block,
+            'gr_tokens': proc_tokens(block.get('gr_tokens', [])),
+            'de_tokens': proc_tokens(block.get('de_tokens', [])),
+        }
+    return block
+
+# Hilfsfunktion zum Entfernen von Farben in einem Block
+def _strip_colors_from_block(block: Dict[str, Any]) -> Dict[str, Any]:
+    def proc_tokens(seq: Iterable[str]) -> List[str]:
+        return [_strip_all_colors(tok) for tok in (seq or [])]
+
+    if 'gr_tokens' in block or 'de_tokens' in block:
+        return {
+            **block,
+            'gr_tokens': proc_tokens(block.get('gr_tokens', [])),
+            'de_tokens': proc_tokens(block.get('de_tokens', [])),
+        }
+    return block
 
 # ======= Komfort: Payload aus UI (Hidden JSON) verarbeiten =======
 def apply_from_payload(blocks: List[Dict[str, Any]], payload: Dict[str, Any], *,
