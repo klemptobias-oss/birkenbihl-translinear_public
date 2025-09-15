@@ -344,22 +344,19 @@ function getCurrentPdfUrl() {
 }
 
 async function performRendering() {
-  let file = el.draftFile.files?.[0];
-
-  if (!file) {
-    // Wenn keine Datei hochgeladen wurde, erstelle eine aus dem Editor-Inhalt
-    const draftText = el.draftText.textContent;
-    if (!draftText || draftText.trim() === "") {
-      el.draftStatus.textContent =
-        "Bitte zuerst Text eingeben oder Datei hochladen.";
-      return;
-    }
-    const blob = new Blob([draftText], { type: "text/plain" });
-    file = new File([blob], `${state.work}_birkenbihl_draft.txt`, {
-      type: "text/plain",
-    });
+  // Der Text aus dem Editor ist immer die Quelle der Wahrheit.
+  const draftText = el.draftText.textContent;
+  if (!draftText || draftText.trim() === "") {
+    el.draftStatus.textContent =
+      "Bitte zuerst Text eingeben oder Datei hochladen.";
+    return;
   }
-  // Ab hier ist `file` entweder die hochgeladene oder die aus dem Editor erstellte Datei.
+
+  // Erstelle eine Blob-Datei aus dem Editor-Inhalt
+  const blob = new Blob([draftText], { type: "text/plain" });
+  const file = new File([blob], `${state.work}_birkenbihl_draft.txt`, {
+    type: "text/plain",
+  });
 
   el.draftStatus.textContent = "Rendere Entwurf...";
 
@@ -453,7 +450,7 @@ async function performRendering() {
       el.draftStatus.textContent =
         "CORS-Fehler: Worker nicht erreichbar. Bitte versuchen Sie es auf der GitHub-Seite (https://klemptobias-oss.github.io/birkenbihl-translinear_public/).";
     } else {
-      el.draftStatus.textContent = "Fehler beim Rendern des Entwurfs.";
+      el.draftStatus.textContent = "Fehler beim Fallback-Rendering.";
     }
   }
 }
@@ -794,6 +791,8 @@ function wireEvents() {
       reader.onload = (e) => {
         el.draftText.innerHTML = addSpansToTags(e.target.result);
         el.draftStatus.textContent = `Datei ${file.name} geladen.`;
+        // Nach dem Laden leeren, um eine versehentliche Wiederverwendung zu vermeiden
+        event.target.value = null;
       };
       reader.readAsText(file);
     }
