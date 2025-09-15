@@ -338,35 +338,9 @@ async function saveDraftText() {
 // 10) Worker-Aufruf (Entwurf rendern)
 // Die alte Sektion wurde entfernt, da sie durch die neue Logik ersetzt wurde.
 
+// Hilfsfunktion für aktuelle PDF-URL
 function getCurrentPdfUrl() {
   return buildPdfUrlFromSelection();
-}
-
-// Fallback für lokale PDF-Generierung
-async function simulateLocalPdfGeneration(payload) {
-  try {
-    // Simuliere PDF-Generierung mit einem Dummy-PDF
-    console.log("Simuliere PDF-Generierung mit Konfiguration:", payload);
-
-    // Erstelle eine Dummy-PDF-URL (verwende ein existierendes PDF als Fallback)
-    const dummyPdfUrl = getCurrentPdfUrl();
-    state.lastDraftUrl = dummyPdfUrl;
-
-    // Quelle automatisch auf Entwurf schalten und anzeigen
-    state.source = "draft";
-    updatePdfView(true);
-    el.draftStatus.textContent =
-      "Entwurf erfolgreich gerendert! (Fallback-Modus)";
-
-    // Zeige Info-Meldung
-    setTimeout(() => {
-      el.draftStatus.textContent =
-        "Hinweis: Worker nicht erreichbar. Verwende Fallback-PDF. Für echte PDF-Generierung kontaktieren Sie den Administrator.";
-    }, 3000);
-  } catch (error) {
-    console.error("Fallback-Fehler:", error);
-    el.draftStatus.textContent = "Fehler beim Fallback-Rendering.";
-  }
 }
 
 async function performRendering() {
@@ -422,32 +396,7 @@ async function performRendering() {
     });
 
     if (!res || !res.ok) {
-      // Fallback: Versuche lokalen Server
-      console.log("Worker nicht erreichbar, versuche lokalen Server...");
-      try {
-        const localRes = await fetch("http://localhost:5000/render", {
-          method: "POST",
-          body: form,
-          mode: "cors",
-        });
-        if (localRes.ok) {
-          const localData = await localRes.json();
-          if (localData?.ok || localData?.pdf_url) {
-            state.lastDraftUrl = localData.pdf_url;
-            state.source = "draft";
-            updatePdfView(true);
-            el.draftStatus.textContent =
-              "Entwurf erfolgreich gerendert! (Lokaler Server)";
-            return;
-          }
-        }
-      } catch (localError) {
-        console.log("Lokaler Server nicht verfügbar:", localError.message);
-      }
-
-      // Letzter Fallback: Simuliere PDF-Generierung
-      await simulateLocalPdfGeneration(payload);
-      return;
+      throw new Error(`Worker request failed with status ${res.status}`);
     }
 
     const data = await res.json();

@@ -220,8 +220,8 @@ def pre_substitutions(s:str) -> str:
     if not s: return s
     punct = r'(?:,|\.|;|:|!|\?|%|…|\u00B7|\u0387|\u037E)'
     s = re.sub(rf'\s+{punct}', lambda m: m.group(0).lstrip(), s)
-    s = re.sub(r'([\(\[\{\«“‹‘])\s+', r'\1', s)
-    s = re.sub(r'\s+([\)\]\}\»”›’])', r'\1', s)
+    s = re.sub(r'([\(\[\{\«"‹''])\s+', r'\1', s)
+    s = re.sub(r'\s+([\)\]\}\»"›'']', r'\1', s)
     s = re.sub(r'[\u200B\u200C\u200D\uFEFF\u00A0]', '', s)
     s = re.sub(r'\(([#\+\-])', r'\1(', s)
     s = re.sub(r'\[([#\+\-])', r'\1[', s)
@@ -949,7 +949,7 @@ def build_tables_for_pair(gr_tokens, de_tokens, *,
         sp_w  = max(global_speaker_width_pt, SPEAKER_COL_MIN_MM * MM)
         sp_gap= SPEAKER_GAP_MM*MM
     elif reserve_speaker_col:
-        # Kein Sprecher in diesem Pair – aber Spalte bleibt als „Laterne“ reserviert, mit globaler Breite
+        # Kein Sprecher in diesem Pair – aber Spalte bleibt als "Laterne" reserviert, mit globaler Breite
         sp_w  = max(global_speaker_width_pt, SPEAKER_COL_MIN_MM * MM)
         sp_gap= SPEAKER_GAP_MM*MM
 
@@ -1124,10 +1124,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
         try:
             # Konvertiere tag_config zu preprocess payload
             payload = {
-                "show_colors": not pdf_name.lower().endswith("_blackwhite.pdf"),
-                "show_tags": not CURRENT_IS_NOTAGS,
-                "sup_keep": tag_config.get('sup_tags', []),
-                "sub_keep": tag_config.get('sub_tags', []),
+                "color_mode": "BlackWhite" if pdf_name.lower().endswith("_blackwhite.pdf") else "Colour",
+                "tag_config": tag_config,
                 "versmass": "KEEP_MARKERS" if versmass_display else "NORMAL"
             }
             blocks = preprocess.apply_from_payload(blocks, payload)

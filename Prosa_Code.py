@@ -820,10 +820,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             from shared.preprocess import apply_from_payload
             # Konvertiere tag_config zu preprocess payload
             payload = {
-                "show_colors": color_mode == "COLOR",
-                "show_tags": tag_mode == "TAGS",
-                "sup_keep": tag_config.get('sup_tags', []),
-                "sub_keep": tag_config.get('sub_tags', []),
+                "color_mode": "BlackWhite" if color_mode == "BLACK_WHITE" else "Colour",
+                "tag_config": tag_config,
                 "versmass": "NORMAL"
             }
             blocks = apply_from_payload(blocks, payload)

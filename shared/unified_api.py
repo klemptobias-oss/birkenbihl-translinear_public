@@ -178,13 +178,11 @@ def create_pdf_unified(kind: Literal["poesie", "prosa"],
         )
         placement_overrides = payload.get("place") or None
     else:
-        # Standard-Vorverarbeitung für Prosa und Poesie
-        # Schritt 1: Farbsymbole hinzufügen.
-        blocks_with_symbols = preprocess.add_color_symbols(blocks)
-        
-        # Schritt 2: Tags/Farben je nach Modus entfernen/filtern.
+        # Standard-Vorverarbeitung: apply() direkt aufrufen
+        # Die Logik zum Hinzufügen von Farbsymbolen wurde in apply() verschoben
+        # und wird nur aktiv, wenn eine tag_config übergeben wird (hier nicht der Fall).
         pre_blocks = preprocess.apply(
-            blocks_with_symbols,
+            blocks,
             color_mode=options.color_mode,
             tag_mode=options.tag_mode,
             versmass_mode=options.versmass_mode
