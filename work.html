@@ -140,22 +140,9 @@
 
         <!-- Birkenbihl-Text (unten links) -->
         <div class="pane">
-          <div class="pane-head">
-            <div class="pane-title">Birkenbihl-Text</div>
-            <div class="pane-tools">
-              <button
-                id="toggleBirkenbihlTags"
-                class="btn"
-                title="Grammatik-Tags ein-/ausblenden"
-              >
-                Tags ausblenden
-              </button>
-              <button id="btnBirPlus" class="btn" title="Schrift größer">
-                A+
-              </button>
-              <button id="btnBirMinus" class="btn" title="Schrift kleiner">
-                A−
-              </button>
+          <div class="pane-head complex-header">
+            <div class="header-row">
+              <div class="pane-title">Original Birkenbihl-Text</div>
               <a
                 id="btnBirkenbihlDownload"
                 class="btn primary"
@@ -164,54 +151,89 @@
                 >Birkenbihl.txt herunterladen</a
               >
             </div>
+            <div class="header-separator"></div>
+            <div class="header-row">
+              <div class="display-controls">
+                <button
+                  id="toggleBirkenbihlTags"
+                  class="btn toggle-btn"
+                  data-state="on"
+                  title="Grammatik-Tags ein-/ausblenden"
+                >
+                  <span class="toggle-text">Tags sichtbar</span>
+                  <span class="toggle-status green">An</span>
+                </button>
+                <button id="btnBirPlus" class="btn" title="Schrift größer">
+                  A+
+                </button>
+                <button id="btnBirMinus" class="btn" title="Schrift kleiner">
+                  A−
+                </button>
+              </div>
+            </div>
           </div>
           <div id="birkenbihlText" class="pane-body mono scroll"></div>
         </div>
 
         <!-- Entwurf → PDF (unten rechts) -->
         <div class="pane">
-          <div class="pane-head">
-            <div class="pane-title">Entwurf → PDF</div>
-            <div class="pane-tools">
-              <button
-                id="toggleDraftTags"
-                class="btn"
-                title="Grammatik-Tags ein-/ausblenden"
-              >
-                Tags ausblenden
+          <div class="pane-head complex-header">
+            <div class="header-row">
+              <div class="pane-title">Entwurf → PDF</div>
+              <div class="file-actions">
+                <a id="btnDraftDownload" class="btn primary" href="#" download
+                  >Entwurf.txt herunterladen</a
+                >
+                <label for="draftFile" id="draftFileLabel" class="btn primary"
+                  >Entwurf.txt hochladen</label
+                >
+                <input
+                  id="draftFile"
+                  type="file"
+                  accept=".txt"
+                  class="visually-hidden"
+                />
+              </div>
+            </div>
+            <div class="header-row">
+              <button id="btnRenderDraft" class="btn primary">
+                PDF aus Entwurf rendern
               </button>
+            </div>
+            <div class="header-separator"></div>
+            <div class="header-row">
+              <div class="display-controls">
+                <button
+                  id="toggleDraftTags"
+                  class="btn toggle-btn"
+                  data-state="on"
+                  title="Grammatik-Tags ein-/ausblenden"
+                >
+                  <span class="toggle-text">Tags sichtbar</span>
+                  <span class="toggle-status green">An</span>
+                </button>
+                <button
+                  id="btnDraftTextPlus"
+                  class="btn"
+                  title="Schrift größer"
+                >
+                  A+
+                </button>
+                <button
+                  id="btnDraftTextMinus"
+                  class="btn"
+                  title="Schrift kleiner"
+                >
+                  A−
+                </button>
+              </div>
               <button id="resetDraft" class="btn" title="Entwurf zurücksetzen">
                 Entwurf zurücksetzen
               </button>
-              <button id="btnDraftTextPlus" class="btn" title="Schrift größer">
-                A+
-              </button>
-              <button
-                id="btnDraftTextMinus"
-                class="btn"
-                title="Schrift kleiner"
-              >
-                A−
-              </button>
-              <a id="btnDraftDownload" class="btn primary" href="#" download>
-                Birkenbihl-Entwurf.txt herunterladen
-              </a>
             </div>
           </div>
 
           <div class="draft-uploader">
-            <label for="draftFile" id="draftFileLabel" class="btn primary"
-              >Entwurf.txt hochladen</label
-            >
-            <input
-              id="draftFile"
-              type="file"
-              accept=".txt"
-              class="visually-hidden"
-            />
-            <button id="btnRenderDraft" class="btn primary">
-              Entwurf jetzt rendern
-            </button>
             <span class="muted" id="draftStatus">Bereit.</span>
           </div>
 

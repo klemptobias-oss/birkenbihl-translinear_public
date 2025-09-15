@@ -39,9 +39,10 @@
 
 /* ======= Layout ======= */
 .wrap {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 1rem;
+  padding-bottom: 50vh; /* Platz zum Scrollen am Ende */
 }
 
 .notice.small {
@@ -58,12 +59,12 @@
 
 /* ======= Paneel ======= */
 .pane {
+  display: flex;
+  flex-direction: column;
   background: var(--card, #fff);
   border: 1px solid var(--edge, #e5e7eb);
   border-radius: 12px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 
   /* >>> ~10 cm höher (10cm ≈ 378px) – vorher 560px, jetzt ~ 560+380 ≈ 940px */
   min-height: 940px;
@@ -76,6 +77,7 @@
   padding: 10px 12px;
   border-bottom: 1px solid var(--edge, #e5e7eb);
   background: #f9fafb;
+  flex-shrink: 0; /* Header soll nicht schrumpfen */
 }
 .pane-title {
   font-weight: 700;
@@ -85,7 +87,7 @@
 }
 
 .pane-body {
-  flex: 1 1 auto;
+  flex-grow: 1; /* Body soll den verfügbaren Platz füllen */
   padding: 12px;
 }
 .pane-body.scroll {
@@ -652,6 +654,29 @@
 .quick-controls .btn {
   font-size: 12px;
   padding: 6px 12px;
+}
+
+.complex-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.header-separator {
+  height: 1px;
+  background-color: #e5e7eb;
+  width: 100%;
+}
+.display-controls,
+.file-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 /* ======= Responsiv ======= */
