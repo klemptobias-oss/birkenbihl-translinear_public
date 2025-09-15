@@ -66,9 +66,7 @@
   border: 1px solid var(--edge, #e5e7eb);
   border-radius: 12px;
   overflow: hidden;
-
-  /* >>> ~10 cm höher (10cm ≈ 378px) – vorher 560px, jetzt ~ 560+380 ≈ 940px */
-  min-height: 940px;
+  height: 100%;
 }
 
 .pane-head {
