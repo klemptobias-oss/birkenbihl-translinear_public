@@ -87,7 +87,9 @@
 }
 
 .pane-body {
-  flex-grow: 1; /* Body soll den verfügbaren Platz füllen */
+  flex: 1 1 auto; /* Body soll den verfügbaren Platz füllen */
+  min-height: 0; /* Verhindert Flexbox-Schrumpfprobleme */
+  overflow-y: auto;
   padding: 12px;
 }
 .pane-body.scroll {
@@ -666,6 +668,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+  /* Wrapper für linksbündige Elemente, damit space-between funktioniert */
+}
+.header-row > button {
+  flex-shrink: 0;
 }
 .header-separator {
   height: 1px;

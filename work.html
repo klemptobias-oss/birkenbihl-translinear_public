@@ -158,9 +158,9 @@
                   id="toggleBirkenbihlTags"
                   class="btn toggle-btn"
                   data-state="on"
-                  title="Grammatik-Tags ein-/ausblenden"
+                  title="Grammatik-Tags im Editor ein-/ausblenden"
                 >
-                  <span class="toggle-text">Tags sichtbar</span>
+                  <span class="toggle-text">Tags im Editor sichtbar</span>
                   <span class="toggle-status green">An</span>
                 </button>
                 <button id="btnBirPlus" class="btn" title="Schrift größer">
@@ -172,7 +172,7 @@
               </div>
             </div>
           </div>
-          <div id="birkenbihlText" class="pane-body mono scroll"></div>
+          <div id="birkenbihlText" class="pane-body mono"></div>
         </div>
 
         <!-- Entwurf → PDF (unten rechts) -->
@@ -180,25 +180,23 @@
           <div class="pane-head complex-header">
             <div class="header-row">
               <div class="pane-title">Entwurf → PDF</div>
-              <div class="file-actions">
-                <a id="btnDraftDownload" class="btn primary" href="#" download
-                  >Entwurf.txt herunterladen</a
-                >
-                <label for="draftFile" id="draftFileLabel" class="btn primary"
-                  >Entwurf.txt hochladen</label
-                >
-                <input
-                  id="draftFile"
-                  type="file"
-                  accept=".txt"
-                  class="visually-hidden"
-                />
-              </div>
+              <a id="btnDraftDownload" class="btn primary" href="#" download
+                >Entwurf.txt herunterladen</a
+              >
             </div>
             <div class="header-row">
               <button id="btnRenderDraft" class="btn primary">
                 PDF aus Entwurf rendern
               </button>
+              <label for="draftFile" id="draftFileLabel" class="btn primary"
+                >Entwurf.txt hochladen</label
+              >
+              <input
+                id="draftFile"
+                type="file"
+                accept=".txt"
+                class="visually-hidden"
+              />
             </div>
             <div class="header-separator"></div>
             <div class="header-row">
@@ -207,9 +205,9 @@
                   id="toggleDraftTags"
                   class="btn toggle-btn"
                   data-state="on"
-                  title="Grammatik-Tags ein-/ausblenden"
+                  title="Grammatik-Tags im Editor ein-/ausblenden"
                 >
-                  <span class="toggle-text">Tags sichtbar</span>
+                  <span class="toggle-text">Tags im Editor sichtbar</span>
                   <span class="toggle-status green">An</span>
                 </button>
                 <button
@@ -239,28 +237,9 @@
 
           <div
             id="draftText"
-            class="pane-body mono scroll"
+            class="pane-body mono"
             contenteditable="true"
-            style="
-              min-height: 200px;
-              border: 1px solid #e5e7eb;
-              padding: 8px;
-              margin: 8px;
-              border-radius: 4px;
-            "
           ></div>
-
-          <div
-            class="pane-body pdf-body"
-            id="draftPdfPane"
-            style="--pdfScale: 1"
-          >
-            <iframe
-              id="draftPdfFrame"
-              title="Draft-PDF"
-              loading="lazy"
-            ></iframe>
-          </div>
         </div>
       </section>
     </main>

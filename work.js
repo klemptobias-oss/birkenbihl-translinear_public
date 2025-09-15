@@ -880,7 +880,7 @@ function wireEvents() {
     });
   });
 
-  // Draft-Button öffnet jetzt das Modal
+  // "PDF aus Entwurf rendern"-Button öffnet das Modal
   el.draftBtn?.addEventListener("click", showTagConfigModal);
 
   // Modal-Buttons
@@ -935,6 +935,36 @@ function wireEvents() {
   el.draftText?.addEventListener("input", () => {
     el.draftStatus.textContent = "Entwurf geändert. Bereit zum Rendern.";
   });
+
+  // Schriftgrößen-Buttons
+  document
+    .getElementById("btnOrigPlus")
+    ?.addEventListener("click", () => updateFontSize("origText", 1));
+  document
+    .getElementById("btnOrigMinus")
+    ?.addEventListener("click", () => updateFontSize("origText", -1));
+  document
+    .getElementById("btnBirPlus")
+    ?.addEventListener("click", () => updateFontSize("birkenbihlText", 1));
+  document
+    .getElementById("btnBirMinus")
+    ?.addEventListener("click", () => updateFontSize("birkenbihlText", -1));
+  document
+    .getElementById("btnDraftTextPlus")
+    ?.addEventListener("click", () => updateFontSize("draftText", 1));
+  document
+    .getElementById("btnDraftTextMinus")
+    ?.addEventListener("click", () => updateFontSize("draftText", -1));
+}
+
+function updateFontSize(elementId, change) {
+  const el = document.getElementById(elementId);
+  if (el) {
+    let currentSize = parseFloat(
+      window.getComputedStyle(el, null).getPropertyValue("font-size")
+    );
+    el.style.fontSize = currentSize + change + "px";
+  }
 }
 
 // 10) Init
