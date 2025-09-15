@@ -228,28 +228,7 @@
         <div class="modal-body">
           <!-- Quick Controls oben -->
           <div class="quick-controls">
-            <div class="color-quick-controls">
-              <label class="color-checkbox blue">
-                <input type="checkbox" id="partizipeBlau" checked />
-                <span class="checkmark blue"></span>
-                Partizipe blau
-              </label>
-              <label class="color-checkbox green">
-                <input type="checkbox" id="verbenGruen" checked />
-                <span class="checkmark green"></span>
-                Verben grün
-              </label>
-              <label class="color-checkbox red">
-                <input type="checkbox" id="nomenRot" checked />
-                <span class="checkmark red"></span>
-                Nomen rot
-              </label>
-            </div>
             <div class="general-controls">
-              <button id="toggleAllTags" class="btn toggle-btn" data-state="on">
-                <span class="toggle-text">Alle Tags</span>
-                <span class="toggle-status green">An</span>
-              </button>
               <button
                 id="toggleAllColors"
                 class="btn toggle-btn"
@@ -258,40 +237,38 @@
                 <span class="toggle-text">Originale Farben</span>
                 <span class="toggle-status green">An</span>
               </button>
+              <button
+                id="toggleAllTagsHidden"
+                class="btn toggle-btn"
+                data-state="off"
+              >
+                <span class="toggle-text">Alle Tags verstecken</span>
+                <span class="toggle-status red">Aus</span>
+              </button>
             </div>
           </div>
 
           <div class="config-section">
             <h3>Tag-Konfiguration</h3>
-            <div class="tag-controls">
-              <div class="tag-group">
-                <div class="group-header">
-                  <div class="placement-header">
-                    <span class="tag-placeholder">Tag</span>
-                    <span class="placement-label">hoch-<br />gestellt</span>
-                    <span class="placement-label">tief-<br />gestellt</span>
-                    <span class="color-label">rot</span>
-                    <span class="color-label">blau</span>
-                    <span class="color-label">grün</span>
-                    <span class="hide-label">Tag<br />verstecken</span>
-                  </div>
-                </div>
-                <div id="supTagsContainer" class="tag-checkboxes"></div>
-              </div>
-              <div class="tag-group">
-                <div class="group-header">
-                  <div class="placement-header">
-                    <span class="tag-placeholder">Tag</span>
-                    <span class="placement-label">hoch-<br />gestellt</span>
-                    <span class="placement-label">tief-<br />gestellt</span>
-                    <span class="color-label">rot</span>
-                    <span class="color-label">blau</span>
-                    <span class="color-label">grün</span>
-                    <span class="hide-label">Tag<br />verstecken</span>
-                  </div>
-                </div>
-                <div id="subTagsContainer" class="tag-checkboxes"></div>
-              </div>
+            <div class="tag-table-container">
+              <table id="tag-config-table">
+                <thead>
+                  <tr>
+                    <th>Modifikation</th>
+                    <th>hochgestellt</th>
+                    <th>tiefgestellt</th>
+                    <th>rot</th>
+                    <th>orange</th>
+                    <th>blau</th>
+                    <th>grün</th>
+                    <th>magenta</th>
+                    <th>Tag verstecken</th>
+                  </tr>
+                </thead>
+                <tbody id="tag-config-tbody">
+                  <!-- Zeilen werden dynamisch per JavaScript eingefügt -->
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

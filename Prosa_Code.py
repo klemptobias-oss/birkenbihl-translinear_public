@@ -214,15 +214,15 @@ INTER_PAIR_GAP_MM = CONT_PAIR_GAP_MM
 
 # ----------------------- Tags & Regex -----------------------
 # Standard-Tag-Definitionen (können durch Tag-Config überschrieben werden)
-DEFAULT_SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','Ij','Sup'}
-DEFAULT_SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
+DEFAULT_SUP_TAGS = {'N','D','G','A','V','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','ij','Sup'}
+DEFAULT_SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Knj','Op','Pr','AorS','M/P'}
 
 # Dynamische Tag-Konfiguration (wird zur Laufzeit gesetzt)
 SUP_TAGS = DEFAULT_SUP_TAGS.copy()
 SUB_TAGS = DEFAULT_SUB_TAGS.copy()
 
-RE_TAG       = re.compile(r'\(([A-Za-z0-9/≈]+)\)')
-RE_TAG_NAKED = re.compile(r'\([A-Za-z0-9/≈]+\)')
+RE_TAG       = re.compile(r'\(([A-Za-z0-9/≈äöüßÄÖÜ]+)\)')
+RE_TAG_NAKED = re.compile(r'\([A-Za-z0-9/≈äöüßÄÖÜ]+\)')
 
 # ----------------------- Tag-Placement Overrides (hoch/tief/aus) -----------------------
 # Globale Laufzeit-Overrides, z. B. {"Pt":"off","Aor":"sub","≈":"sup"}
@@ -267,6 +267,15 @@ def set_tag_placement_overrides(overrides: dict | None):
             if v2 in ('sup', 'sub', 'off'):
                 _PLACEMENT_OVERRIDES[str(k)] = v2
 
+def _normalize_tag_case(tag: str) -> str:
+    """
+    Normalisiert Tag-Groß-/Kleinschreibung für Kompatibilität.
+    Konvertiert Ij -> ij für Rückwärtskompatibilität.
+    """
+    if tag == 'Ij':
+        return 'ij'
+    return tag
+
 def _partition_tags_for_display(tags: list[str], *, is_greek_row: bool) -> tuple[list[str], list[str], list[str]]:
     """
     Teilt tags in (sups, subs, rest) gemäß:
@@ -277,19 +286,22 @@ def _partition_tags_for_display(tags: list[str], *, is_greek_row: bool) -> tuple
     if not tags:
         return [], [], []
 
+    # Normalisiere Tags für Kompatibilität
+    normalized_tags = [_normalize_tag_case(tag) for tag in tags]
+
     if not is_greek_row:
         # DE-Zeile: nur '≈' bleibt (wie bisher)
-        return (['≈'] if '≈' in tags else []), [], []
+        return (['≈'] if '≈' in normalized_tags else []), [], []
 
-    # GR-Zeile: Standard-Verteilung
-    sups = [t for t in tags if t in SUP_TAGS]
-    subs = [t for t in tags if t in SUB_TAGS]
-    rest = [t for t in tags if (t not in SUP_TAGS and t not in SUB_TAGS)]
+    # GR-Zeile: Standard-Verteilung mit normalisierten Tags
+    sups = [t for t in normalized_tags if t in SUP_TAGS]
+    subs = [t for t in normalized_tags if t in SUB_TAGS]
+    rest = [t for t in normalized_tags if (t not in SUP_TAGS and t not in SUB_TAGS)]
 
-    # Overrides anwenden
+    # Overrides anwenden (mit normalisierten Tags)
     if _PLACEMENT_OVERRIDES:
         keep_sup, keep_sub, keep_off = [], [], []
-        for t in tags:
+        for t in normalized_tags:
             mode = _PLACEMENT_OVERRIDES.get(t)
             if mode == 'sup':
                 keep_sup.append(t)
@@ -299,7 +311,7 @@ def _partition_tags_for_display(tags: list[str], *, is_greek_row: bool) -> tuple
                 keep_off.append(t)
 
         if keep_sup or keep_sub or keep_off:
-            vis = [t for t in tags if t not in keep_off]
+            vis = [t for t in normalized_tags if t not in keep_off]
             # Rest, der weder explizit sup noch sub ist, bleibt nach Default-Verteilung sichtbar
             default_sup = [t for t in sups if t in vis and t not in keep_sup and t not in keep_sub]
             default_sub = [t for t in subs if t in vis and t not in keep_sup and t not in keep_sub]
@@ -781,10 +793,23 @@ def build_tables_for_stream(gr_tokens, de_tokens, *,
 
 # ----------------------- PDF-Erstellung -----------------------
 def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
-               gr_size:float=9.0, de_size:float=8.0,
                color_mode:str="COLOR", tag_mode:str="TAGS",
                placement_overrides: dict | None = None,
                tag_config: dict | None = None):
+
+    # Leite gr_size und de_size aus strength ab, wie in der alten Logik
+    if strength == "NORMAL":
+        gr_size = NORMAL_GR_SIZE
+        de_size = NORMAL_DE_SIZE
+    elif strength == "GR_FETT":
+        gr_size = REVERSE_GR_SIZE
+        de_size = REVERSE_DE_SIZE
+    elif strength == "DE_FETT":
+        gr_size = DE_FETT_GR_SIZE
+        de_size = DE_FETT_DE_SIZE
+    else:
+        gr_size = NORMAL_GR_SIZE
+        de_size = NORMAL_DE_SIZE
 
     # Tag-Placement-Overrides (hoch/tief/aus) anwenden
     set_tag_placement_overrides(placement_overrides)
@@ -869,8 +894,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         fontName='DejaVu', fontSize=de_size, leading=_leading_for(de_size),
         alignment=TA_JUSTIFY, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0, textColor=colors.HexColor('#777'))
 
-    # Reflow
-    flow_blocks = group_pairs_into_flows(blocks)
+    # Die Blöcke kommen jetzt vorverarbeitet und tokenisiert an.
+    flow_blocks = blocks
+
     # Meta-Flag: ob irgendwo Sprecher auftraten
     any_speaker = False
     if flow_blocks and flow_blocks[-1].get('type') == '_meta':
@@ -1057,17 +1083,17 @@ def run_batch(input_files):
 
             out_normal = output_name_for_label(label, reverse=False)
             create_pdf(blocks, out_normal, strength="NORMAL",
-                       gr_size=NORMAL_GR_SIZE, de_size=NORMAL_DE_SIZE)
+                       color_mode=color_mode, tag_mode=tag_mode)
             print(f"✓ PDF erstellt → {out_normal}")
 
             out_fett = output_name_for_label(label, reverse=False) + "_Fett"
             create_pdf(blocks, out_fett, strength="GR_FETT",
-                       gr_size=REVERSE_GR_SIZE, de_size=REVERSE_DE_SIZE)
+                       color_mode=color_mode, tag_mode=tag_mode)
             print(f"✓ PDF erstellt → {out_fett}")
 
             out_rev = output_name_for_label(label, reverse=True)
             create_pdf(blocks, out_rev, strength="GR_FETT",
-                       gr_size=REVERSE_GR_SIZE, de_size=REVERSE_DE_SIZE)
+                       color_mode=color_mode, tag_mode=tag_mode)
             print(f"✓ PDF erstellt → {out_rev}")
         except Exception as e:
             print(f"✗ Fehler bei {infile}: {e}")
@@ -1096,17 +1122,17 @@ if __name__ == '__main__':
             
             out_normal = output_name_for_label(label, reverse=False)
             create_pdf(blocks, out_normal, strength="NORMAL",
-                       gr_size=NORMAL_GR_SIZE, de_size=NORMAL_DE_SIZE)
+                       color_mode=color_mode, tag_mode=tag_mode)
             print(f"✓ PDF erstellt → {out_normal}")
             
             out_fett = output_name_for_label(label, reverse=False) + "_Fett"
             create_pdf(blocks, out_fett, strength="GR_FETT",
-                       gr_size=REVERSE_GR_SIZE, de_size=REVERSE_DE_SIZE)
+                       color_mode=color_mode, tag_mode=tag_mode)
             print(f"✓ PDF erstellt → {out_fett}")
             
             out_rev = output_name_for_label(label, reverse=True)
             create_pdf(blocks, out_rev, strength="GR_FETT",
-                       gr_size=REVERSE_GR_SIZE, de_size=REVERSE_DE_SIZE)
+                       color_mode=color_mode, tag_mode=tag_mode)
             print(f"✓ PDF erstellt → {out_rev}")
         except Exception as e:
             print(f"✗ Fehler bei {args.input_file}: {e}")

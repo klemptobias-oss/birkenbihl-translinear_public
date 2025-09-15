@@ -34,7 +34,9 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
         print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
 
     base = base_from_input_path(Path(infile))
-    blocks = Prosa.process_input_file(infile)
+    blocks_raw = Prosa.process_input_file(infile)
+    # Tokenisierung direkt hier durchführen, um die Pipeline an Poesie anzugleichen
+    blocks = Prosa.group_pairs_into_flows(blocks_raw)
 
     strengths = ("NORMAL", "GR_FETT", "DE_FETT")
     colors    = ("COLOR", "BLACK_WHITE")

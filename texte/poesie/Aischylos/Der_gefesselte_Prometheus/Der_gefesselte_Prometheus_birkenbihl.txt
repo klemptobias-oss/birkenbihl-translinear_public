@@ -1,209 +1,209 @@
-(1) [ΚΡΑΤ:] #ΧθοiνὸςL(G) |μὲνi(Pt) ἐςL(Prp) |+τηLλουL|ρὸνi(Aj)(A) -ἥL|κοiμενL(Pre)(Akt) |#πέiδονL(A),|
-(1) [ΚΡΑΤ:] #der|Erde, zwar, in +fern -sind|gekommen #das|Land,
+(1) [ΚΡΑΤ:] ΧθοiνὸςL(G) |μὲνi(Pt) ἐςL(Prp) |τηLλουL|ρὸνi(Adj)(A) ἥL|κοiμενL(Prä)(Akt) |πέiδονL(A),|
+(1) [ΚΡΑΤ:] der|Erde, zwar, in fern sind|gekommen das|Land,
 
-(2) +ΣκύiθηνL(Aj)(A) |ἐςi(Prp) #οἷL|μονi(A), +ἄrβαr|τονi(Aj)(A) εἰςL(Prp) |#ἐiρηL|μίiανL(A).|
-(2) +skythisch in #den|Weg, +unbetreten in #Wüste.
+(2) ΣκύiθηνL(Adj)(A) |ἐςi(Prp) οἷL|μονi(A), ἄrβαr|τονi(Adj)(A) εἰςL(Prp) |ἐiρηL|μίiανL(A).|
+(2) skythisch in den|Weg, unbetreten in Wüste.
 
-(3) #ἭLφαιL|στεi(V), σοίL(Pr)(D) |δὲi(Pt) -χρὴL(Pre)(Akt) |-μέiλεινL(Pre)(Inf)(Akt) |#ἐiπιL|στοiλὰςL(A)|
-(3) #Hephaistos, dir aber -ist|nötig -zu|kümmern #Weisungen
+(3) ἭLφαιL|στεi(V), σοίL(Pr)(D) |δὲi(Pt) χρὴL(Prä)(Akt) |μέiλεινL(Prä)(Inf)(Akt) |ἐiπιL|στοiλὰςL(A)|
+(3) Hephaistos, dir aber ist|nötig zu|kümmern Weisungen
 
-(4) ἅςL(Pr)(A) σοιL(Pr)(D) |#παiτὴρL(N) |-ἐiφεῖL|τοi(Imp)(M/P), τόνL|δεi(Pr)(A) πρὸςL(Prp) |#πέiτραιςL(D)|
-(4) welche dir #Vater -befahl, diesen bei #Felsen
+(4) ἅςL(Pr)(A) σοιL(Pr)(D) |παiτὴρL(N) |ἐiφεῖL|τοi(Imp)(M/P), τόνL|δεi(Pr)(A) πρὸςL(Prp) |πέiτραιςL(D)|
+(4) welche dir Vater befahl, diesen bei Felsen
 
-(5) +ὑLψηL|λοiκρήL|μνοιςL(Aj)(D) τὸνL(Art)(A) |#λεiωρL|γὸνi(A) -ὀχL|μάiσαιL(Aor)(Inf)(Akt)|
-(5) +hoch|steil den #Übel|täter -zu|fesseln
+(5) ὑLψηL|λοiκρήL|μνοιςL(Adj)(D) τὸνL(Art)(A) |λεiωρL|γὸνi(A) ὀχL|μάiσαιL(Aor)(Inf)(Akt)|
+(5) hoch|steil den Übel|täter zu|fesseln
 
-(6) +ἀrδαrμανL|τίiνωνL(Aj)(G) |#δεLσμῶνL(G) |ἐνi(Prp) +ἀρL|ρήLκτοιςL(Aj)(D) |#πέiδαιςL(D).|
-(6) +adamantin #aus|Fesseln in +unlösbar #Fuß|fesseln.
+(6) ἀrδαrμανL|τίiνωνL(Adj)(G) |δεLσμῶνL(G) |ἐνi(Prp) ἀρL|ρήLκτοιςL(Adj)(D) |πέiδαιςL(D).|
+(6) adamantin aus|Fesseln in unlösbar Fuß|fesseln.
 
-(7) τὸi(Art)(N) σὸνL(Pr)(N) |γὰρi #ἄνL|θοςL(N), +πανL|τέχiνουL(Aj)(G) |#πυiρὸςL(G) |#σέiλαςL(N),|
-(7) das dein denn #Blüte, +all|kunst(≈) #des|Feuers #Glanz,
+(7) τὸi(Art)(N) σὸνL(Pr)(N) |γὰρi ἄνL|θοςL(N), πανL|τέχiνουL(Adj)(G) |πυiρὸςL(G) |σέiλαςL(N),|
+(7) das dein denn Blüte, all|kunst(≈) des|Feuers Glanz,
 
-(8) +θνηLτοῖL|σιi(Aj)(D) +κλέL|ψαςi(Aor)(Akt)(N) -ὤL|παiσενL(Aor)(Akt). |+τοιLᾶσL|δέi(Aj)(G) τοιL(Pt)|
-(8) +den|Sterblichen +gestohlen|habend -verlieh. +solcher|Art wohl
+(8) θνηLτοῖL|σιi(Adj)(D) κλέL|ψαςi(Aor)(Akt)(N) ὤL|παiσενL(Aor)(Akt). |τοιLᾶσL|δέi(Adj)(G) τοιL(Pt)|
+(8) den|Sterblichen gestohlen|habend verlieh. solcher|Art wohl
 
-(9) #ἁiμαρL|τίiαςL(G) |σφεi(Pr)(A) -δεῖL(Pre)(Akt) |#θεiοῖςL(D) |-δοῦLναιL(AorS)(Inf)(Akt) |#δίiκηνL(A),|
-(9) #der|Verfehlungen ihn -ist|nötig #den|Göttern -zu|geben #Strafe,
+(9) ἁiμαρL|τίiαςL(G) |σφεi(Pr)(A) δεῖL(Prä)(Akt) |θεiοῖςL(D) |δοῦLναιL(AorS)(Inf)(Akt) |δίiκηνL(A),|
+(9) der|Verfehlungen ihn ist|nötig den|Göttern zu|geben Strafe,
 
-(10) ὡςL(Ko) ἂνL(Pt) |-διiδαχL|θῇL(Aor)(Pas)(Kon) τὴνL(Art)(A) |#ΔιiὸςL(G) |#τυiρανL|νίiδαL(A)|
-(10) damit wohl -gelehrt|werde die #des|Zeus #Tyrannis
+(10) ὡςL(Kon) ἂνL(Pt) |διiδαχL|θῇL(Aor)(Pas)(Knj) τὴνL(Art)(A) |ΔιiὸςL(G) |τυiρανL|νίiδαL(A)|
+(10) damit wohl gelehrt|werde die des|Zeus Tyrannis
 
-(11) -στέρLγεινL(Pre)(Inf)(Akt), |+φιiλανL|θρώLπουL(Aj)(G) |δὲi(Pt) -παύL|εLσθαιL(Pre)(Inf)(M/P) |#τρόiπουL(G).|
-(11) -lieben, +menschen|freundlichen aber -auf|hören #der|Weise.
+(11) στέρLγεινL(Prä)(Inf)(Akt), |φιiλανL|θρώLπουL(Adj)(G) |δὲi(Pt) παύL|εLσθαιL(Prä)(Inf)(M/P) |τρόiπουL(G).|
+(11) lieben, menschen|freundlichen aber auf|hören der|Weise.
 
-(12) [ΗΦΑΙ:] #ΚράiτοςL(V) |#ΒίiαL(V) |τεL(Pt), σφῷνL(Pr)(G) |μὲνi(Pt) #ἐνL|τοiλὴL(N) |#ΔιiὸςL(G)|
-(12) [ΗΦΑΙ:] #Kratos #Bia und, euer|beider zwar #Befehl #des|Zeus
+(12) [ΗΦΑΙ:] ΚράiτοςL(V) |ΒίiαL(V) |τεL(Pt), σφῷνL(Pr)(G) |μὲνi(Pt) ἐνL|τοiλὴL(N) |ΔιiὸςL(G)|
+(12) [ΗΦΑΙ:] Kratos Bia und, euer|beider zwar Befehl des|Zeus
 
-(13) -ἔiχειL(Pre)(Akt) |#τέiλοςL(A) |δὴL(Pt) κοὐL|δὲνi(Ko)(Pr)(A) ἐμL|ποiδὼνL(Av) |ἔiτιL(Av)·|
-(13) -hat #Ende ja und|nichts im|Wege noch·
+(13) ἔiχειL(Prä)(Akt) |τέiλοςL(A) |δὴL(Pt) κοὐL|δὲνi(Kon)(Pr)(A) ἐμL|ποiδὼνL(Adv) |ἔiτιL(Adv)·|
+(13) hat Ende ja und|nichts im|Wege noch·
 
-(14) ἐiγὼL(Pr)(N) |δʼ(Pt) +ἄiτολL|μόςi(Aj)(N) -εἰL|μιi(Pre)(Akt) +συγL|γεiνῆL(Aj)(A) |#θεiὸνL(A)|
-(14) ich aber +un|tapfer -bin +verwandten #Gott
+(14) ἐiγὼL(Pr)(N) |δʼ(Pt) ἄiτολL|μόςi(Adj)(N) εἰL|μιi(Prä)(Akt) συγL|γεiνῆL(Adj)(A) |θεiὸνL(A)|
+(14) ich aber un|tapfer bin verwandten Gott
 
-(15) -δῆLσαιL(Aor)(Inf)(Akt) |#βίiᾳL(D) |#φάiραγL|γιi(D) πρὸςL(Prp) |+δυLσχειL|μέiρῳL(Aj)(D).|
-(15) -zu|binden #mit|Gewalt #in|der|Kluft zu +schwer|winterlichen.
+(15) δῆLσαιL(Aor)(Inf)(Akt) |βίiᾳL(D) |φάiραγL|γιi(D) πρὸςL(Prp) |δυLσχειL|μέiρῳL(Adj)(D).|
+(15) zu|binden mit|Gewalt in|der|Kluft zu schwer|winterlichen.
 
-(16) πάνLτωςL(Av) |δʼ(Pt) #ἀiνάγL|κηL(N) τῶνL|δέi(Pr)(G) μοιL(Pr)(D) |#τόλLμανL(A) |-σχεiθεῖνL(AorS)(Inf)(Akt)·|
-(16) ganz|gewiss aber #Not der|dieser mir #Mut -zu|bekommen·
+(16) πάνLτωςL(Adv) |δʼ(Pt) ἀiνάγL|κηL(N) τῶνL|δέi(Pr)(G) μοιL(Pr)(D) |τόλLμανL(A) |σχεiθεῖνL(AorS)(Inf)(Akt)·|
+(16) ganz|gewiss aber Not der|dieser mir Mut zu|bekommen·
 
-(17) -ἐLξωL|ριiάL|ζεινL(Pre)(Inf)(Akt) γὰρL(Pt) |#παiτρὸςL(G) |#λόiγουςL(A) |+βαiρύL(Aj)(N).|
-(17) -verbannen denn #des|Vaters #Worte +schwer.
+(17) ἐLξωL|ριiάL|ζεινL(Prä)(Inf)(Akt) γὰρL(Pt) |παiτρὸςL(G) |λόiγουςL(A) |βαiρύL(Adj)(N).|
+(17) verbannen denn des|Vaters Worte schwer.
 
-(18) τῆςL(Art)(G) +ὀρL|θοiβούL|λουL(Aj)(G) #Θέrμιr|δοςi(G) +αἰL|πυiμῆL|ταi(Aj)(V) #παῖL(V),|
-(18) der +recht|beratenen #der|Themis +hoch|sinnige #Knabe,
+(18) τῆςL(Art)(G) ὀρL|θοiβούL|λουL(Adj)(G) Θέrμιr|δοςi(G) αἰL|πυiμῆL|ταi(Adj)(V) παῖL(V),|
+(18) der recht|beratenen der|Themis hoch|sinnige Knabe,
 
-(19) +ἄLκονL|τάi(Aj)(A) σʼ(Pr)(A) +ἄL|κωνL(Aj)(N) +δυσL|λύiτοιςL(Aj)(D) |#χαλLκεύL|μαiσιL(D)|
-(19) +un|willigen dich +un|willig +schwer|lösbaren #mit|Schmiede|arbeiten
+(19) ἄLκονL|τάi(Adj)(A) σʼ(Pr)(A) ἄL|κωνL(Adj)(N) δυσL|λύiτοιςL(Adj)(D) |χαλLκεύL|μαiσιL(D)|
+(19) un|willigen dich un|willig schwer|lösbaren mit|Schmiede|arbeiten
 
-(20) -προLσπασL|σαiλεύL|σωL(Fu)(Akt) τῷδLʼ(Art)(D) |+ἀiπανL|θρώLπῳL(Aj)(D) |#πάiγῳL(D)|
-(20) -an|pflocken werde ich diesem +un|menschlichen #Fels
+(20) προLσπασL|σαiλεύL|σωL(Fu)(Akt) τῷδLʼ(Art)(D) |ἀiπανL|θρώLπῳL(Adj)(D) |πάiγῳL(D)|
+(20) an|pflocken werde ich diesem un|menschlichen Fels
 
-(21) ἵνiʼ(Ko) οὔL|τεi(Ko) #φωL|νὴνL(A) οὔL|τεi(Ko) τουL(Pr)(G) |#μορLφὴνL(A) |#βροiτῶνL(G)|
-(21) damit weder #Stimme noch irgend|eines #Gestalt #der|Sterblichen
+(21) ἵνiʼ(Kon) οὔL|τεi(Kon) φωL|νὴνL(A) οὔL|τεi(Kon) τουL(Pr)(G) |μορLφὴνL(A) |βροiτῶνL(G)|
+(21) damit weder Stimme noch irgend|eines Gestalt der|Sterblichen
 
-(22) -ὄLψειL(Fu)(M/P), |+σταiθευL|τὸςL(Aj)(N) δʼ(Pt) #ἡL|λίiουL(G) |+φοίLβῃL(Aj)(D) |#φλοiγὶL(D)|
-(22) -wirst|sehen, +fest aber #der|Sonne +hell #Flamme
+(22) ὄLψειL(Fu)(M/P), |σταiθευL|τὸςL(Adj)(N) δʼ(Pt) ἡL|λίiουL(G) |φοίLβῃL(Adj)(D) |φλοiγὶL(D)|
+(22) wirst|sehen, fest aber der|Sonne hell Flamme
 
-(23) #χροιLᾶςL(G) |-ἀiμείL|ψειςL(Fu)(Akt) #ἄνL|θοςi(A). +ἀL|σμέiνῳL(Aj)(D) |δέi(Pt) σοιL(Pr)(D)|
-(23) #der|Haut|Farbe -wirst|wechseln #Blüte. +gern aber dir
+(23) χροιLᾶςL(G) |ἀiμείL|ψειςL(Fu)(Akt) ἄνL|θοςi(A). ἀL|σμέiνῳL(Adj)(D) |δέi(Pt) σοιL(Pr)(D)|
+(23) der|Haut|Farbe wirst|wechseln Blüte. gern aber dir
 
-(24) ἡL(Art)(N) +ποιL|κιiλείL|μωνL(Aj)(N) #νὺξL(N) |-ἀiποL|κρύLψειL(Fu)(Akt) |#φάiοςL(A),|
-(24) die +bunte #Nacht -wird|verbergen #Licht,
+(24) ἡL(Art)(N) ποιL|κιiλείL|μωνL(Adj)(N) νὺξL(N) |ἀiποL|κρύLψειL(Fu)(Akt) |φάiοςL(A),|
+(24) die bunte Nacht wird|verbergen Licht,
 
-(25) #πάχLνηνL(A) |θʼ(Pt) +ἑiῴL|ανi(Aj)(A) #ἥL|λιiοςL(N) |-σκεiδᾷL(Pre)(Akt) |πάiλινL(Av)·|
-(25) #Reif und +morgenlich #Sonne -zerstreut wieder·
+(25) πάχLνηνL(A) |θʼ(Pt) ἑiῴL|ανi(Adj)(A) ἥL|λιiοςL(N) |σκεiδᾷL(Prä)(Akt) |πάiλινL(Adv)·|
+(25) Reif und morgenlich Sonne zerstreut wieder·
 
-(26) ἀiεὶL(Av) |δὲi(Pt) τοῦL(Art)(G) |+παiρόνL|τοςi(Pre)(Akt)(G) #ἀχL|θηLδὼνL(N) |#καiκοῦL(G)|
-(26) immer aber des +gegenwärtigen #Verdruss #des|Übels
+(26) ἀiεὶL(Adv) |δὲi(Pt) τοῦL(Art)(G) |παiρόνL|τοςi(Prä)(Akt)(G) ἀχL|θηLδὼνL(N) |καiκοῦL(G)|
+(26) immer aber des gegenwärtigen Verdruss des|Übels
 
-(27) -τρύLσειL(Fu)(Akt) |σʼ(Pr)(A)· ὁi(Art)(N) +λωL|φήLσωνL(Fu)(Akt)(N) |γὰρi(Pt) οὐL(Pt) |-πέiφυL|κέi(Per)(Akt) πωL(Av).|
-(27) -wird|zermürben dich· der +der|ablassen|werdende(≈) denn nicht -ist|von|Natur noch.
+(27) τρύLσειL(Fu)(Akt) |σʼ(Pr)(A)· ὁi(Art)(N) λωL|φήLσωνL(Fu)(Akt)(N) |γὰρi(Pt) οὐL(Pt) |πέiφυL|κέi(Per)(Akt) πωL(Adv).|
+(27) wird|zermürben dich· der der|ablassen|werdende(≈) denn nicht ist|von|Natur noch.
 
-(28) +τοιLαῦτLʼ(Aj)(A) |-ἐiπηύL|ρωL(Aor)(Akt) τοῦL(Art)(G) |+φιiλανL|θρώLπουL(Aj)(G) |#τρόiπουL(G).|
-(28) +solches -fand des +menschen|freundlichen #Art.
+(28) τοιLαῦτLʼ(Adj)(A) |ἐiπηύL|ρωL(Aor)(Akt) τοῦL(Art)(G) |φιiλανL|θρώLπουL(Adj)(G) |τρόiπουL(G).|
+(28) solches fand des menschen|freundlichen Art.
 
-(29) #θεiὸςL(N) |#θεiῶνL(G) |γὰρi(Pt) οὐχL(Pt) |+ὑiποL|πτήσLσωνL(Pre)(Akt)(N) |#χόiλονL(A)|
-(29) #Gott #der|Götter denn nicht +duckend #Zorn
+(29) θεiὸςL(N) |θεiῶνL(G) |γὰρi(Pt) οὐχL(Pt) |ὑiποL|πτήσLσωνL(Prä)(Akt)(N) |χόiλονL(A)|
+(29) Gott der|Götter denn nicht duckend Zorn
 
-(30) #βροiτοῖL|σιi(D) #τιL|μὰςL(A) -ὤL|παiσαςL(Aor)(Akt) |πέiραL(Av) |#δίiκηςL(G).|
-(30) #den|Sterblichen #Ehren -gabst jenseits #der|Gerechtigkeit.
+(30) βροiτοῖL|σιi(D) τιL|μὰςL(A) ὤL|παiσαςL(Aor)(Akt) |πέiραL(Adv) |δίiκηςL(G).|
+(30) den|Sterblichen Ehren gabst jenseits der|Gerechtigkeit.
 
-(31) ἀνθLʼ(Prp) ὧνL(Pr)(G) |+ἀiτερL|πῆL(Aj)(A) τήνL|δεi(Pr)(A) -φρουL|ρήLσειςL(Fu)(Akt) |#πέiτρανL(A)|
-(31) statt der|welchen +unangenehme diese -wirst|bewachen #Felsen
+(31) ἀνθLʼ(Prp) ὧνL(Pr)(G) |ἀiτερL|πῆL(Adj)(A) τήνL|δεi(Pr)(A) φρουL|ρήLσειςL(Fu)(Akt) |πέiτρανL(A)|
+(31) statt der|welchen unangenehme diese wirst|bewachen Felsen
 
-(32) ὀρLθοL|στάiδηνL(Av), |+ἄiυL|πνοςi(Aj)(N), οὐL(Pt) |+κάμLπτωνL(Pre)(Akt)(N) |#γόiνυL(A)·|
-(32) aufrecht, +schlaflos, nicht +beugend #Knie·
+(32) ὀρLθοL|στάiδηνL(Adv), |ἄiυL|πνοςi(Adj)(N), οὐL(Pt) |κάμLπτωνL(Prä)(Akt)(N) |γόiνυL(A)·|
+(32) aufrecht, schlaflos, nicht beugend Knie·
 
-(33) +πολLλοὺςL(Aj)(A) |δʼ(Pt) #ὀiδυρL|μοὺςL(A) καὶL(Ko) |#γόiουςL(A) |+ἀiνωL|φεiλεῖςL(Aj)(A)|
-(33) +viele aber #Klagen und #Wehklagen +nutzlose
+(33) πολLλοὺςL(Adj)(A) |δʼ(Pt) ὀiδυρL|μοὺςL(A) καὶL(Kon) |γόiουςL(A) |ἀiνωL|φεiλεῖςL(Adj)(A)|
+(33) viele aber Klagen und Wehklagen nutzlose
 
-(34) -φθέγLξῃL(Fu)(Med)· |#ΔιiὸςL(G) |γὰρL(Pt) +δυL|σπαiραίL|τηLτοιL(Aj)(N) |#φρέiνεςL(N).|
-(34) -wirst|ausstoßen· #des|Zeus denn +schwer|zu|erweichende #Gemüter.
+(34) φθέγLξῃL(Fu)(Med)· |ΔιiὸςL(G) |γὰρL(Pt) δυL|σπαiραίL|τηLτοιL(Adj)(N) |φρέiνεςL(N).|
+(34) wirst|ausstoßen· des|Zeus denn schwer|zu|erweichende Gemüter.
 
-(35) +ἅiπαςL(Aj)(N) |δὲi(Pt) +τραL|χὺςi(Aj)(N) ὅL|στιςi(Pr)(N) ἂνL(Pt) |νέiονL(Av) |-κραiτῇL(Pre)(Akt)(Kon).|
-(35) +ganz aber +rau wer wohl neulich -herrsche.
+(35) ἅiπαςL(Adj)(N) |δὲi(Pt) τραL|χὺςi(Adj)(N) ὅL|στιςi(Pr)(N) ἂνL(Pt) |νέiονL(Adv) |κραiτῇL(Prä)(Akt)(Knj).|
+(35) ganz aber rau wer wohl neulich herrsche.
 
-(36) [ΚΡΑΤ:] εἶLενL(ij), |τίi(Av) -μέλL|λειςL(Pre)(Akt) καὶL(Ko) |-καiτοιL|κτίLζῃL(Pre)(Akt)(Kon) |μάiτηνL(Av);|
-(36) [ΚΡΑΤ:] wohl|denn, warum -zögerst und -bejammerst du vergebens;
+(36) [ΚΡΑΤ:] εἶLενL(Ij), |τίi(Adv) μέλL|λειςL(Prä)(Akt) καὶL(Kon) |καiτοιL|κτίLζῃL(Prä)(Akt)(Knj) |μάiτηνL(Adv);|
+(36) [ΚΡΑΤ:] wohl|denn, warum zögerst und bejammerst du vergebens;
 
-(37) τίi(Av) τὸνL(Art)(A) |#θεiοῖςL(D) |+ἔχLθιL|στονi(Aj)(Sup)(A) οὐL(Pt) |-στυiγεῖςL(Pre)(Akt) |#θεiόνL(A),|
-(37) warum den #den|Göttern +am|meisten|verhassten nicht -verabscheust du #Gott,
+(37) τίi(Adv) τὸνL(Art)(A) |θεiοῖςL(D) |ἔχLθιL|στονi(Adj)(Sup)(A) οὐL(Pt) |στυiγεῖςL(Prä)(Akt) |θεiόνL(A),|
+(37) warum den den|Göttern am|meisten|verhassten nicht verabscheust du Gott,
 
-(38) ὅLστιςL(Pr)(N) |τὸi(Art)(A) σὸνL(Pr)(A) |+θνηLτοῖL|σιi(Aj)(D) -προὔL|δωLκενL(Aor)(Akt) |#γέiραςL(A);|
-(38) der das dein +den|Sterblichen -gab|vorher #Ehren|anteil;
+(38) ὅLστιςL(Pr)(N) |τὸi(Art)(A) σὸνL(Pr)(A) |θνηLτοῖL|σιi(Adj)(D) προὔL|δωLκενL(Aor)(Akt) |γέiραςL(A);|
+(38) der das dein den|Sterblichen gab|vorher Ehren|anteil;
 
-(39) [ΗΦΑΙ:] τὸi(Art)(N) +συγL|γεiνέςL(Aj)(N) |τοιL(Pt) +δειL|νὸνi(Aj)(N) ἥL(Ko) |θʼ(Pt) #ὁiμιL|λίiαL(N).|
-(39) [ΗΦΑΙ:] das +verwandte wohl +schlimm und auch #Umgang.
+(39) [ΗΦΑΙ:] τὸi(Art)(N) συγL|γεiνέςL(Adj)(N) |τοιL(Pt) δειL|νὸνi(Adj)(N) ἥL(Kon) |θʼ(Pt) ὁiμιL|λίiαL(N).|
+(39) [ΗΦΑΙ:] das verwandte wohl schlimm und auch Umgang.
 
-(40) [ΚΡΑΤ:] -σύμLφημLʼ(Pre)(Akt)· |-ἀiνηL|κουLστεῖνL(Pre)(Inf)(Akt) |δὲi(Pt) τῶνL(Art)(G) |#παiτρὸςL(G) |#λόiγωνL(G)|
-(40) [ΚΡΑΤ:] -stimme|zu· -nicht|gehorchen aber der #des|Vaters #Worte
+(40) [ΚΡΑΤ:] σύμLφημLʼ(Prä)(Akt)· |ἀiνηL|κουLστεῖνL(Prä)(Inf)(Akt) |δὲi(Pt) τῶνL(Art)(G) |παiτρὸςL(G) |λόiγωνL(G)|
+(40) [ΚΡΑΤ:] stimme|zu· nicht|gehorchen aber der des|Vaters Worte
 
-(41) +οἷLόνL(Aj)(A) |τεi(Pt) πῶςL(Av); |οὐL(Pt) τοῦL|τοi(Pr)(A) -δειL|μαίLνειςL(Pre)(Akt) |+πλέiονL(Av)(Kmp);|
-(41) +möglich ja wie; nicht dies -fürchtest|du +mehr;
+(41) οἷLόνL(Adj)(A) |τεi(Pt) πῶςL(Adv); |οὐL(Pt) τοῦL|τοi(Pr)(A) δειL|μαίLνειςL(Prä)(Akt) |πλέiονL(Adv)(Kmp);|
+(41) möglich ja wie; nicht dies fürchtest|du mehr;
 
-(42) [ΗΦΑΙ:] αἰLείL(Av) |γεi(Pt) δὴL(Pt) |+νηLλὴςL(Aj)(N) |σύi(Pr)(N) καὶL(Ko) |#θράiσουςL(G) |+πλέiωςL(Aj)(N).|
-(42) [ΗΦΑΙ:] immer doch ja +un|mitleidig du und #der|Dreistigkeit +voll.
+(42) [ΗΦΑΙ:] αἰLείL(Adv) |γεi(Pt) δὴL(Pt) |νηLλὴςL(Adj)(N) |σύi(Pr)(N) καὶL(Kon) |θράiσουςL(G) |πλέiωςL(Adj)(N).|
+(42) [ΗΦΑΙ:] immer doch ja un|mitleidig du und der|Dreistigkeit voll.
 
-(43) [ΚΡΑΤ:] #ἄiκοςL(N) |γὰρi(Pt) οὐL|δὲνL(Pr)(A) τόνL|δεi(Pr)(A) -θρηL|νεῖLσθαιL(Pre)(Inf)(M/P). |σύi(Pr)(N) δὲL(Pt)|
-(43) [ΚΡΑΤ:] #Heilmittel denn nichts diesen -zu|beklagen. du aber
+(43) [ΚΡΑΤ:] ἄiκοςL(N) |γὰρi(Pt) οὐL|δὲνL(Pr)(A) τόνL|δεi(Pr)(A) θρηL|νεῖLσθαιL(Prä)(Inf)(M/P). |σύi(Pr)(N) δὲL(Pt)|
+(43) [ΚΡΑΤ:] Heilmittel denn nichts diesen zu|beklagen. du aber
 
-(44) τὰi(Art)(A) μηL|δὲνi(Pr)(A) +ὠL|φεiλοῦνL|ταi(Pre)(Akt)(A) μὴL(Pt) |-πόiνειL(Pre)(Imv)(Akt) |μάiτηνL(Av).|
-(44) die nichts +nützenden nicht -mühe|dich vergebens.
+(44) τὰi(Art)(A) μηL|δὲνi(Pr)(A) ὠL|φεiλοῦνL|ταi(Prä)(Akt)(A) μὴL(Pt) |πόiνειL(Prä)(Imv)(Akt) |μάiτηνL(Adv).|
+(44) die nichts nützenden nicht mühe|dich vergebens.
 
-(45) [ΗΦΑΙ:] ὦL(ij) πολL|λὰi(Av) +μιL|σηLθεῖL|σαi(Aor)(Pas)(N) #χειL|ρωLναL|ξίiαL(N).|
-(45) [ΗΦΑΙ:] o vielfach +gehasste #Hand|werk.
+(45) [ΗΦΑΙ:] ὦL(Ij) πολL|λὰi(Adv) μιL|σηLθεῖL|σαi(Aor)(Pas)(N) χειL|ρωLναL|ξίiαL(N).|
+(45) [ΗΦΑΙ:] o vielfach gehasste Hand|werk.
 
-(46) [ΚΡΑΤ:] τίi(Av) νινL(Pr)(A) |-στυiγεῖςL(Pre)(Akt); |#πόiνωνL(G) |γὰρi(Pt) ὡςL(Ko) |+ἁiπλῷL(Aj)(D) |#λόiγῳL(D)|
-(46) [ΚΡΑΤ:] warum ihn -verabscheust|du; #der|Mühen denn wie +einfach #Wort
+(46) [ΚΡΑΤ:] τίi(Adv) νινL(Pr)(A) |στυiγεῖςL(Prä)(Akt); |πόiνωνL(G) |γὰρi(Pt) ὡςL(Kon) |ἁiπλῷL(Adj)(D) |λόiγῳL(D)|
+(46) [ΚΡΑΤ:] warum ihn verabscheust|du; der|Mühen denn wie einfach Wort
 
-(47) τῶνL(Art)(G) νῦνL(Av) |+παiρόνL|τωνL(Pre)(Akt)(G) οὐL|δὲνi(Pr)(N) #αἰL|τίiαL(N) |#τέχiνηL(N).|
-(47) der|jetzt +gegenwärtigen nichts #Ursache #Kunst.
+(47) τῶνL(Art)(G) νῦνL(Adv) |παiρόνL|τωνL(Prä)(Akt)(G) οὐL|δὲνi(Pr)(N) αἰL|τίiαL(N) |τέχiνηL(N).|
+(47) der|jetzt gegenwärtigen nichts Ursache Kunst.
 
-(48) [ΗΦΑΙ:] ἔμLπαςL(Av) |τιςi(Pr)(N) αὐL|τὴνL(Pr)(A) +ἄλL|λοςi(Aj)(N) -ὤL|φεiλενL(Imp)(Akt) |-λαiχεῖνL(Aor)(Inf)(Akt).|
-(48) [ΗΦΑΙ:] dennoch einer sie +anderer -hätte|sollen -erlangen.
+(48) [ΗΦΑΙ:] ἔμLπαςL(Adv) |τιςi(Pr)(N) αὐL|τὴνL(Pr)(A) ἄλL|λοςi(Adj)(N) ὤL|φεiλενL(Imp)(Akt) |λαiχεῖνL(Aor)(Inf)(Akt).|
+(48) [ΗΦΑΙ:] dennoch einer sie anderer hätte|sollen erlangen.
 
-(49) [ΚΡΑΤ:] +ἅiπαντLʼ(Aj)(A) |+ἐiπαχL|θῆL(Aj)(A) πλὴνL(Prp) |#θεiοῖL|σιi(D) -κοιL|ραiνεῖνL(Pre)(Inf)(Akt)·|
-(49) [ΚΡΑΤ:] +alles +beschwerliche außer #den|Göttern -zu|herrschen·
+(49) [ΚΡΑΤ:] ἅiπαντLʼ(Adj)(A) |ἐiπαχL|θῆL(Adj)(A) πλὴνL(Prp) |θεiοῖL|σιi(D) κοιL|ραiνεῖνL(Prä)(Inf)(Akt)·|
+(49) [ΚΡΑΤ:] alles beschwerliche außer den|Göttern zu|herrschen·
 
-(50) +ἐiλεύL|θεiροςL(Aj)(N) |γὰρi(Pt) οὔL|τιςi(Pr)(N) -ἐL|στὶi(Pre)(Akt) πλὴνL(Prp) |#ΔιiόςL(G).|
-(50) +frei denn keiner -ist außer #des|Zeus.
+(50) ἐiλεύL|θεiροςL(Adj)(N) |γὰρi(Pt) οὔL|τιςi(Pr)(N) ἐL|στὶi(Prä)(Akt) πλὴνL(Prp) |ΔιiόςL(G).|
+(50) frei denn keiner ist außer des|Zeus.
 
-(51) [ΗΦΑΙ:] -ἔLγνωL|καi(Per)(Akt) τοῖσL|δεi(Pr)(D) κοὐL|δὲνi(Ko)(Pr)(A) -ἀνL|τειLπεῖνL(AorS)(Inf)(Akt) |-ἔiχωL(Pre)(Akt).|
-(51) [ΗΦΑΙ:] -ich|habe|erkannt zu|diesen und|nichts -gegen|zu|sagen -habe.
+(51) [ΗΦΑΙ:] ἔLγνωL|καi(Per)(Akt) τοῖσL|δεi(Pr)(D) κοὐL|δὲνi(Kon)(Pr)(A) ἀνL|τειLπεῖνL(AorS)(Inf)(Akt) |ἔiχωL(Prä)(Akt).|
+(51) [ΗΦΑΙ:] ich|habe|erkannt zu|diesen und|nichts gegen|zu|sagen habe.
 
-(52) [ΚΡΑΤ:] οὔLκουνL(Pt) |-ἐiπείL|ξῃL(Aor)(Akt)(Kon) τῷL|δεi(Pr)(D) #δεL|σμὰi(A) -πεrριr|βαiλεῖνL(AorS)(Inf)(Akt),|
-(52) [ΚΡΑΤ:] nicht|also -wirst|du|eilen diesem #Fesseln -um|zu|werfen,
+(52) [ΚΡΑΤ:] οὔLκουνL(Pt) |ἐiπείL|ξῃL(Aor)(Akt)(Knj) τῷL|δεi(Pr)(D) δεL|σμὰi(A) πεrριr|βαiλεῖνL(AorS)(Inf)(Akt),|
+(52) [ΚΡΑΤ:] nicht|also wirst|du|eilen diesem Fesseln um|zu|werfen,
 
-(53) ὡςL(Ko) μὴL(Pt) |σʼ(Pr)(A) +ἐiλιL|νύiονL|ταi(Pre)(Akt)(A) -προσL|δερχLθῇL(Aor)(M/P)(Kon) |#παiτήρL(N);|
-(53) damit nicht dich +ruhend -heran|komme #Vater;
+(53) ὡςL(Kon) μὴL(Pt) |σʼ(Pr)(A) ἐiλιL|νύiονL|ταi(Prä)(Akt)(A) προσL|δερχLθῇL(Aor)(M/P)(Knj) |παiτήρL(N);|
+(53) damit nicht dich ruhend heran|komme Vater;
 
-(54) [ΗΦΑΙ:] καὶL(Ko) δὴL(Pt) |+πρόiχειL|ραL(Aj)(A) #ψάrλιr|αi(A) -δέρL|κεLσθαιL(Pre)(M/P)(Inf) |πάiραL(Av).|
-(54) [ΗΦΑΙ:] und ja +bereit #Gebisse -zu|sehen zur|Hand.
+(54) [ΗΦΑΙ:] καὶL(Kon) δὴL(Pt) |πρόiχειL|ραL(Adj)(A) ψάrλιr|αi(A) δέρL|κεLσθαιL(Prä)(M/P)(Inf) |πάiραL(Adv).|
+(54) [ΗΦΑΙ:] und ja bereit Gebisse zu|sehen zur|Hand.
 
-(55) [ΚΡΑΤ:] +βαiλώνL(AorS)(Akt)(N) |νινi(Pr)(A) ἀμL|φὶi(Prp) #χερL|σὶνi(D) +ἐγL|κραiτεῖL(Aj)(D) |#σθέiνειL(D)|
-(55) [ΚΡΑΤ:] +geworfen ihn um #Händen +festem #Kraft
+(55) [ΚΡΑΤ:] βαiλώνL(AorS)(Akt)(N) |νινi(Pr)(A) ἀμL|φὶi(Prp) χερL|σὶνi(D) ἐγL|κραiτεῖL(Adj)(D) |σθέiνειL(D)|
+(55) [ΚΡΑΤ:] geworfen ihn um Händen festem Kraft
 
-(56) #ῥαιLστῆL|ριi(D) -θεῖL|νεi(Aor)(Imv)(Akt), -πασL|σάiλευL|εi(Pre)(Imv)(Akt) πρὸςL(Prp) |#πέiτραιςL(D).|
-(56) #mit|dem|Hammer -schlage, -pfahle an #Felsen.
+(56) ῥαιLστῆL|ριi(D) θεῖL|νεi(Aor)(Imv)(Akt), πασL|σάiλευL|εi(Prä)(Imv)(Akt) πρὸςL(Prp) |πέiτραιςL(D).|
+(56) mit|dem|Hammer schlage, pfahle an Felsen.
 
-(57) [ΗΦΑΙ:] -πεiραίL|νεiταιL(Pre)(M/P) |δὴL(Pt) κοὐL(Ko)(Pt) |μαiτᾷL(Av) |#τοὔρLγονL(A) |τόiδεL(Pr)(A).|
-(57) [ΗΦΑΙ:] -vollendet|wird ja und|nicht vergebens das #Werk dieses.
+(57) [ΗΦΑΙ:] πεiραίL|νεiταιL(Prä)(M/P) |δὴL(Pt) κοὐL(Kon)(Pt) |μαiτᾷL(Adv) |τοὔρLγονL(A) |τόiδεL(Pr)(A).|
+(57) [ΗΦΑΙ:] vollendet|wird ja und|nicht vergebens das Werk dieses.
 
-(58) [ΚΡΑΤ:] -ἄiρασL|σεi(Pre)(Imv)(Akt) μᾶλL|λονL(Av)(Kmp), -σφίγL|γεi(Pre)(Imv)(Akt), μηL|δαiμῇL(Av) |-χάiλαL(Aor)(Imv)(Akt).|
-(58) [ΚΡΑΤ:] -schmettere +mehr, -ziehe|fest, keineswegs -löse.
+(58) [ΚΡΑΤ:] ἄiρασL|σεi(Prä)(Imv)(Akt) μᾶλL|λονL(Adv)(Kmp), σφίγL|γεi(Prä)(Imv)(Akt), μηL|δαiμῇL(Adv) |χάiλαL(Aor)(Imv)(Akt).|
+(58) [ΚΡΑΤ:] schmettere mehr, ziehe|fest, keineswegs löse.
 
-(59) [ΚΡΑΤ:] +δειLνὸςL(Aj)(N) |γὰρi(Pt) -εὑL|ρεῖνL(Aor)(Inf)(Akt) κἀξL(Ko)(Prp) |+ἀiμηL|χάiνωνL(Aj)(G) |#πόiρονL(A).|
-(59) [ΚΡΑΤ:] +kundig denn -zu|finden und|aus +Unmöglichkeiten #Ausweg.
+(59) [ΚΡΑΤ:] δειLνὸςL(Adj)(N) |γὰρi(Pt) εὑL|ρεῖνL(Aor)(Inf)(Akt) κἀξL(Kon)(Prp) |ἀiμηL|χάiνωνL(Adj)(G) |πόiρονL(A).|
+(59) [ΚΡΑΤ:] kundig denn zu|finden und|aus Unmöglichkeiten Ausweg.
 
-(60) [ΗΦΑΙ:] -ἄiραL|ρενi(Per)(Akt) ἥL|δεi(Pr)(N) γʼ(Pt) #ὠL|λέiνηL(N) |δυiσεL|κλύiτωςL(Av).|
-(60) [ΗΦΑΙ:] -hat|gesessen diese doch #Unterarm schwer|lösbar.
+(60) [ΗΦΑΙ:] ἄiραL|ρενi(Per)(Akt) ἥL|δεi(Pr)(N) γʼ(Pt) ὠL|λέiνηL(N) |δυiσεL|κλύiτωςL(Adv).|
+(60) [ΗΦΑΙ:] hat|gesessen diese doch Unterarm schwer|lösbar.
 
-(61) [ΚΡΑΤ:] καὶL(Ko) τήνL|δεi(Pr)(A) νῦνL(Av) |-πόρLπαL|σονi(Aor)(Imv)(Akt) ἀL|σφαiλῶςL(Av), |ἵiναL(Ko)|
-(61) [ΚΡΑΤ:] und diese|hier nun -schnalle fest, damit
+(61) [ΚΡΑΤ:] καὶL(Kon) τήνL|δεi(Pr)(A) νῦνL(Adv) |πόρLπαL|σονi(Aor)(Imv)(Akt) ἀL|σφαiλῶςL(Adv), |ἵiναL(Kon)|
+(61) [ΚΡΑΤ:] und diese|hier nun schnalle fest, damit
 
-(62) -μάiθῃL(Aor)(Akt)(Kon) |#σοiφιL|στὴςL(N) +ὢνL(Pre)(Akt)(N) |#ΔιiὸςL(G) |+νωLθέL|στεiροςL(Aj)(Kmp)(N).|
-(62) -lerne #Sophist +seiend #des|Zeus +träge|rer.
+(62) μάiθῃL(Aor)(Akt)(Knj) |σοiφιL|στὴςL(N) ὢνL(Prä)(Akt)(N) |ΔιiὸςL(G) |νωLθέL|στεiροςL(Adj)(Kmp)(N).|
+(62) lerne Sophist seiend des|Zeus träge|rer.
 
-(63) [ΗΦΑΙ:] πλὴνL(Ko) τοῦδLʼ(Pr)(G) |ἂνi(Pt) οὐL|δεὶςL(Pr)(N) ἐνL|δίiκωςL(Av) |-μέμLψαιL|τόi(Aor)(Med)(Op) μοιL(Pr)(D).|
-(63) [ΗΦΑΙ:] außer dieses wohl niemand rechtens -möchte|tadeln mir.
+(63) [ΗΦΑΙ:] πλὴνL(Kon) τοῦδLʼ(Pr)(G) |ἂνi(Pt) οὐL|δεὶςL(Pr)(N) ἐνL|δίiκωςL(Adv) |μέμLψαιL|τόi(Aor)(Med)(Op) μοιL(Pr)(D).|
+(63) [ΗΦΑΙ:] außer dieses wohl niemand rechtens möchte|tadeln mir.
 
-(64) [ΚΡΑΤ:] +ἀrδαrμανL|τίiνουL(Aj)(G) |νῦνL(Av) #σφηL|νὸςi(G) +αὐL|θάiδηL(Aj)(A) |#γνάiθονL(A)|
-(64) [ΚΡΑΤ:] +adamantin|en nun #des|Keils +eigensinnig|e #Kiefer
+(64) [ΚΡΑΤ:] ἀrδαrμανL|τίiνουL(Adj)(G) |νῦνL(Adv) σφηL|νὸςi(G) αὐL|θάiδηL(Adj)(A) |γνάiθονL(A)|
+(64) [ΚΡΑΤ:] adamantin|en nun des|Keils eigensinnig|e Kiefer
 
-(65) #στέρLνωνL(G) |διiαμL|πὰξL(Av) -πασL|σάiλευL|ε(Pre)(Imv)(Akt) ἐρLρωL|μέiνωςL(Av).|
-(65) #der|Brüste ganz|hindurch -pfahle kräftig.
+(65) στέρLνωνL(G) |διiαμL|πὰξL(Adv) πασL|σάiλευL|ε(Prä)(Imv)(Akt) ἐρLρωL|μέiνωςL(Adv).|
+(65) der|Brüste ganz|hindurch pfahle kräftig.
 
-(66) [ΗΦΑΙ:] αἰLαῖL(ij), |#ΠροiμηL|θεῦL(V), σῶνL(Pr)(G) |-ὑiπερL|στέiνωL(Pre)(Akt) |#πόiνωνL(G).|
-(66) [ΗΦΑΙ:] ach, #o|Prometheus, deiner -über|stöhne|ich #Leiden.
+(66) [ΗΦΑΙ:] αἰLαῖL(Ij), |ΠροiμηL|θεῦL(V), σῶνL(Pr)(G) |ὑiπερL|στέiνωL(Prä)(Akt) |πόiνωνL(G).|
+(66) [ΗΦΑΙ:] ach, o|Prometheus, deiner über|stöhne|ich Leiden.
 
-(67) [ΚΡΑΤ:] σὺi(Pr)(N) δʼ(Pt) αὖL(Pt) |-καiτοL|κνεῖςL(Pre)(Akt) τῶνL(Art)(G) |#ΔιiόςL(G) |τʼ(Pt) #ἐχLθρῶνL(G) |ὕiπερL(Prp)|
-(67) [ΚΡΑΤ:] du aber wiederum -zögerst der #des|Zeus und #Feinde um|willen
+(67) [ΚΡΑΤ:] σὺi(Pr)(N) δʼ(Pt) αὖL(Pt) |καiτοL|κνεῖςL(Prä)(Akt) τῶνL(Art)(G) |ΔιiόςL(G) |τʼ(Pt) ἐχLθρῶνL(G) |ὕiπερL(Prp)|
+(67) [ΚΡΑΤ:] du aber wiederum zögerst der des|Zeus und Feinde um|willen
 
-(68) -στέiνειςL(Pre)(Akt); |ὅiπωςL(Ko) |μὴL(Pt) σαυL|τὸνi(Pr)(A) -οἰL|κτιiεῖςL(Pre)(Akt) |ποiτεL(Av).|
-(68) -stöhnst; damit nicht dich|selbst -beklagst einst.
+(68) στέiνειςL(Prä)(Akt); |ὅiπωςL(Kon) |μὴL(Pt) σαυL|τὸνi(Pr)(A) οἰL|κτιiεῖςL(Prä)(Akt) |ποiτεL(Adv).|
+(68) stöhnst; damit nicht dich|selbst beklagst einst.
 
-(69) [ΗΦΑΙ:] -ὁiρᾷςL(Pre)(Akt) |#θέiαL|μαi(A) +δυL|σθέiαL|τονi(Aj)(A) #ὄμL|μαiσινL(D).|
-(69) [ΗΦΑΙ:] -siehst #Schauspiel +schwer|anzuschauendes #Augen.
+(69) [ΗΦΑΙ:] ὁiρᾷςL(Prä)(Akt) |θέiαL|μαi(A) δυL|σθέiαL|τονi(Adj)(A) ὄμL|μαiσινL(D).|
+(69) [ΗΦΑΙ:] siehst Schauspiel schwer|anzuschauendes Augen.
 
-(70) [ΚΡΑΤ:] -ὁiρῶL(Pre)(Akt) |+κυiροῦνL|ταi(Pre)(Akt)(A) τόνL|δεi(Pr)(A) τῶνL(Art)(G) |+ἐiπαL|ξίiωνL(Aj)(G).|
-(70) [ΚΡΑΤ:] -sehe +bekräftigenden diesen|hier der +verdienten.
+(70) [ΚΡΑΤ:] ὁiρῶL(Prä)(Akt) |κυiροῦνL|ταi(Prä)(Akt)(A) τόνL|δεi(Pr)(A) τῶνL(Art)(G) |ἐiπαL|ξίiωνL(Adj)(G).|
+(70) [ΚΡΑΤ:] sehe bekräftigenden diesen|hier der verdienten.

@@ -10,7 +10,7 @@ Kompatibilität:
 - NEU: optionale Feineinstellungen:
     - color_pos_keep: Iterable[str] | None
         → PoS-Liste, für die Farbcodes (#/+/−) beibehalten werden (nur wenn color_mode="COLOR").
-          Alle anderen Tokens werden entfärbt. Mögliche PoS: {"Aj","Pt","Prp","Av","Ko","Art","Pr","Ij"}
+          Alle anderen Tokens werden entfärbt. Mögliche PoS: {"Adj","Pt","Prp","Adv","Kon","Art","Pr","ij"}
     - sup_keep: Iterable[str] | None
         → SUP-Tags, die beibehalten werden (alle anderen werden entfernt).
     - sub_keep: Iterable[str] | None
@@ -47,15 +47,32 @@ from __future__ import annotations
 import re
 from typing import List, Dict, Any, Iterable, Optional
 
+# ======= Tag-Definitionen für die Farbsymbol-Logik =======
+KASUS_TAGS = {'N', 'G', 'D', 'A', 'V'}
+MODUS_TAGS = {'Inf', 'Op', 'Imv', 'Kon'}
+TEMPUS_TAGS = {'Aor', 'Prä', 'Imp', 'AorS', 'Per', 'Plq', 'Fu'}
+DIATHESE_TAGS = {'Med', 'Pas', 'Akt', 'M/P'}
+ADJEKTIV_TAGS = {'Adj'}
+
 # ======= Konstanten (müssen mit dem Renderer-Stand zusammenpassen) =======
-SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','Sup','Ij'}
-SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
+SUP_TAGS = {'N','D','G','A','V','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','Sup','ij'}
+SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Knj','Op','Pr','AorS','M/P'}
 
 # COLOR_POS_WHITELIST entfernt - Farben werden jetzt direkt in tag_colors definiert
 
 # ======= Regexe =======
-RE_PAREN_TAG     = re.compile(r'\(([A-Za-z0-9/≈]+)\)')
-RE_LEAD_BAR_COLOR= re.compile(r'^\|\s*([+\-#])')  # |+ |# |- (Farbcode NACH leitender '|')
+RE_PAREN_TAG     = re.compile(r'\(([A-Za-z0-9/≈äöüßÄÖÜ]+)\)')
+RE_LEAD_BAR_COLOR= re.compile(r'^\|\s*([+\-#§$])')  # |+ |# |- |§ |$ (Farbcode NACH leitender '|')
+RE_WORD_START = re.compile(r'([(\[|]*)([\w\u0370-\u03FF\u1F00-\u1FFF\u1F00-\u1FFF]+)') # Findet den Anfang eines Wortes, auch mit Präfixen wie (, [ oder |
+
+COLOR_SYMBOLS = {'#', '+', '-', '§', '$'}
+COLOR_MAP = {
+    'red': '#',
+    'blue': '+',
+    'green': '-',
+    'magenta': '§',
+    'orange': '$',
+}
 
 # ======= Typen =======
 ColorMode   = str  # "COLOR" | "BLACK_WHITE"
@@ -87,7 +104,7 @@ def _strip_all_colors(token: str) -> str:
     # Erst Spezialfall '|<color>' behandeln
     t = _strip_leading_bar_color_only(token)
     # Jetzt alle übrigen Farbcodes tilgen
-    for ch in ['#', '+', '-']:
+    for ch in COLOR_SYMBOLS:
         t = t.replace(ch, '')
     return t
 
@@ -194,6 +211,63 @@ def _has_any_pos(token: str, pos_whitelist: set[str]) -> bool:
                 return True
     return False
 
+
+def _apply_colors_from_config(blocks: List[Dict[str, Any]], tag_colors: Dict[str, str]) -> List[Dict[str, Any]]:
+    """
+    Fügt Farbsymbole basierend auf einer `tag_colors`-Konfiguration hinzu und überträgt sie.
+    """
+    if not tag_colors:
+        return blocks
+
+    new_blocks = []
+    for block in blocks:
+        if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
+            new_block = block.copy()
+            gr_tokens = new_block.get('gr_tokens', [])
+            de_tokens = new_block.get('de_tokens', [])
+            
+            new_gr_tokens = list(gr_tokens)
+            new_de_tokens = list(de_tokens)
+
+            for i, token in enumerate(gr_tokens):
+                if not token or any(c in token for c in COLOR_SYMBOLS):
+                    continue
+
+                token_tags = _extract_tags(token)
+                color_to_apply = None
+                
+                for tag in token_tags:
+                    if tag in tag_colors:
+                        color_to_apply = tag_colors[tag]
+                        break # Erster gefundener Tag bestimmt die Farbe
+                
+                if color_to_apply and color_to_apply in COLOR_MAP:
+                    symbol = COLOR_MAP[color_to_apply]
+                    
+                    # Symbol im griechischen Token einfügen
+                    match = RE_WORD_START.search(token)
+                    if match:
+                        new_gr_tokens[i] = token[:match.start(2)] + symbol + token[match.start(2):]
+
+                        # Symbol auf deutsches Token übertragen, falls vorhanden und farblos
+                        if i < len(de_tokens):
+                            de_tok = de_tokens[i]
+                            if de_tok and not any(c in de_tok for c in COLOR_SYMBOLS):
+                                de_match = RE_WORD_START.search(de_tok)
+                                if de_match:
+                                    new_de_tokens[i] = de_tok[:de_match.start(2)] + symbol + de_tok[de_match.start(2):]
+                                else:
+                                    new_de_tokens[i] = symbol + de_tok
+
+            new_block['gr_tokens'] = new_gr_tokens
+            new_block['de_tokens'] = new_de_tokens
+            new_blocks.append(new_block)
+        else:
+            new_blocks.append(block)
+    
+    return new_blocks
+
+
 # ======= Token-Prozessor =======
 def _process_token(token: str,
                    *,
@@ -297,30 +371,34 @@ def apply(blocks: List[Dict[str, Any]],
           tag_mode: TagMode,
           versmass_mode: VersmassMode = "NORMAL",
           # NEU (optional):
-          color_pos_keep: Optional[Iterable[str]] = None,
+          tag_config: Optional[Dict[str, Any]] = None,
           sup_keep: Optional[Iterable[str]] = None,
           sub_keep: Optional[Iterable[str]] = None) -> List[Dict[str, Any]]:
     """
     Vorverarbeitung der Blockliste. Gibt eine NEUE Liste zurück.
-    - color_pos_keep: Iterable PoS-Tags (aus COLOR_POS_WHITELIST), für die Farbcodes erhalten bleiben.
-                      None → keine Einschränkung (Farben bleiben überall erhalten, sofern color_mode="COLOR").
+    - tag_config: Das neue Konfigurationsobjekt vom Frontend.
     - sup_keep / sub_keep: Iterable Tag-Kürzel, die behalten werden (alle übrigen bekannten SUP/SUB werden entfernt).
                            None → keine Einschränkung (alle bekannten Tag-Typen bleiben erhalten).
     """
-    # Defensive Normalisierung der optionalen Parameter
+    
+    blocks_to_process = blocks
+    if tag_config and tag_config.get('tag_colors'):
+        blocks_to_process = _apply_colors_from_config(blocks, tag_config.get('tag_colors'))
+
+    # color_pos_keep wird nicht mehr verwendet
     cpos = None
-    if color_pos_keep is not None:
-        cpos = {p for p in color_pos_keep if p in COLOR_POS_WHITELIST}
+    
     keep_sup = None
     if sup_keep is not None:
-        keep_sup = {t for t in sup_keep if t in SUP_TAGS}
+        keep_sup = set(sup_keep)
     keep_sub = None
     if sub_keep is not None:
-        keep_sub = {t for t in sub_keep if t in SUB_TAGS}
+        keep_sub = set(sub_keep)
 
     out: List[Dict[str, Any]] = []
-    for b in blocks:
-        if isinstance(b, dict) and b.get('type') == 'pair':
+    for b in blocks_to_process:
+        # Erweitert, um sowohl 'pair' (Poesie) als auch 'flow' (Prosa) Blöcke zu verarbeiten.
+        if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
             out.append(_process_pair_block(
                 b,
                 color_mode=color_mode,
@@ -336,52 +414,53 @@ def apply(blocks: List[Dict[str, Any]],
 
 # ======= Komfort: Payload aus UI (Hidden JSON) verarbeiten =======
 def apply_from_payload(blocks: List[Dict[str, Any]], payload: Dict[str, Any], *,
-                       default_color_mode: ColorMode = "COLOR",
-                       default_tag_mode: TagMode = "TAGS",
                        default_versmass_mode: VersmassMode = "NORMAL") -> List[Dict[str, Any]]:
     """
-    Payload:
+    Verarbeitet die Konfiguration aus dem Frontend.
+    Payload-Format (neu):
       {
-        "show_colors": bool,
-        "show_tags":   bool,
-        # color_pos entfernt - Farben werden jetzt direkt in tag_colors definiert
-        "sup_keep":    [ "N","D","G","A","V","Aj",... ],
-        "sub_keep":    [ "Pre","Imp","Aor","AorS","Per",... ],
-        "versmass":    "NORMAL" | "KEEP_MARKERS" | "REMOVE_MARKERS"
+        "kind": "poesie",
+        "author": "...",
+        "work": "...",
+        "color_mode": "Colour" | "BlackWhite",
+        // ... andere Metadaten
+        "tag_config": {
+          "placement_overrides": { "N": "sup", "Prä": "sub", ... },
+          "tag_colors": { "N": "red", ... },
+          "hidden_tags": [ "V", "D", ... ]
+        }
       }
     """
-    show_colors = bool(payload.get("show_colors", True))
-    show_tags   = bool(payload.get("show_tags",   True))
+    tag_config = payload.get("tag_config", {})
+    
+    # 1. Farbmodus bestimmen
+    color_mode = "BLACK_WHITE" if payload.get("color_mode") == "BlackWhite" else "COLOR"
 
-    sup_keep       = payload.get("sup_keep")   or []
-    sub_keep       = payload.get("sub_keep")   or []
-    versmass_mode  = payload.get("versmass", default_versmass_mode)
-
-    # --- Normalisierung auf Extremfälle (wichtig für Suffixe/Namen) ---
-    # Farben: Wenn global aus → BLACK_WHITE, sonst COLOR
-    if not show_colors:
-        color_mode = "BLACK_WHITE"
-        color_pos_arg = None
-    else:
-        color_mode = "COLOR"
-        color_pos_arg = None  # Alle Farben werden beibehalten
-
-    # Tags: Wenn global aus ODER beide Listen leer → NO_TAGS
-    if (not show_tags) or (len(sup_keep) == 0 and len(sub_keep) == 0):
+    # 2. Tag-Modus und Keep-Listen bestimmen
+    hidden_tags = set(tag_config.get("hidden_tags", []))
+    placement = tag_config.get("placement_overrides", {})
+    
+    all_known_tags = SUP_TAGS.union(SUB_TAGS)
+    
+    # Wenn alle Tags versteckt sind, ist der Modus NO_TAGS
+    if hidden_tags.issuperset(all_known_tags):
         tag_mode = "NO_TAGS"
         sup_arg = None
         sub_arg = None
     else:
         tag_mode = "TAGS"
-        sup_arg = sup_keep
-        sub_arg = sub_keep
+        sup_arg = {tag for tag, place in placement.items() if place == "sup" and tag not in hidden_tags}
+        sub_arg = {tag for tag, place in placement.items() if place == "sub" and tag not in hidden_tags}
+
+    # 3. Versmaß-Modus
+    versmass_mode  = payload.get("versmass", default_versmass_mode)
 
     return apply(
         blocks,
         color_mode=color_mode,
         tag_mode=tag_mode,
         versmass_mode=versmass_mode,
-        color_pos_keep=color_pos_arg,
+        tag_config=tag_config,
         sup_keep=sup_arg,
         sub_keep=sub_arg,
     )

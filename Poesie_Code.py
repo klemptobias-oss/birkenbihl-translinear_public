@@ -17,6 +17,15 @@ from reportlab.platypus     import SimpleDocTemplate, Paragraph, Spacer, KeepTog
 from reportlab.lib          import colors
 import re, os, html, unicodedata, json, argparse
 
+# Import für Preprocessing
+try:
+    from shared import preprocess
+except ImportError:
+    # Fallback für direkten Aufruf
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+    from shared import preprocess
+
 # ========= Optik / Einheiten =========
 MM = RL_MM
 GR_SIZE = 8.4
@@ -82,8 +91,8 @@ CFG = {
 
 # ========= Tags/Regex =========
 # Standard-Tag-Definitionen (können durch Tag-Config überschrieben werden)
-DEFAULT_SUP_TAGS = {'N','D','G','A','V','Aj','Pt','Prp','Av','Ko','Art','≈','Kmp','ij','Sup'}
-DEFAULT_SUB_TAGS = {'Pre','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Kon','Op','Pr','AorS','M/P'}
+DEFAULT_SUP_TAGS = {'N','D','G','A','V','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','ij','Sup'}
+DEFAULT_SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Knj','Op','Pr','AorS','M/P'}
 
 # Dynamische Tag-Konfiguration (wird zur Laufzeit gesetzt)
 SUP_TAGS = DEFAULT_SUP_TAGS.copy()
@@ -124,24 +133,36 @@ def load_tag_config(config_file: str = None) -> None:
     except Exception as e:
         print(f"Fehler beim Laden der Tag-Konfiguration: {e}")
 
+def _normalize_tag_case(tag: str) -> str:
+    """
+    Normalisiert Tag-Groß-/Kleinschreibung für Kompatibilität.
+    Konvertiert Ij -> ij für Rückwärtskompatibilität.
+    """
+    if tag == 'Ij':
+        return 'ij'
+    return tag
+
 def _classify_tag_with_overrides(tag: str) -> str:
     """
     Rückgabe: "sup" | "sub" | "rest" | "off"
     - Overrides haben Vorrang.
     - Ohne Override: Klassifikation nach SUP_TAGS/SUB_TAGS; sonst "rest".
     """
-    v = PLACEMENT_OVERRIDES.get(tag)
+    # Normalisiere Tag für Kompatibilität
+    normalized_tag = _normalize_tag_case(tag)
+    
+    v = PLACEMENT_OVERRIDES.get(normalized_tag)
     if v in ("sup", "sub", "off"):
         return v
 
     # ZUERST: Prüfe ob das gesamte Tag direkt in den Listen enthalten ist
-    if tag in SUP_TAGS:
+    if normalized_tag in SUP_TAGS:
         return "sup"
-    if tag in SUB_TAGS:
+    if normalized_tag in SUB_TAGS:
         return "sub"
     
     # Fallback: zusammengesetzte Tags "A/B" zulassen (aber nur wenn alle Teile in den Listen sind)
-    parts = [p for p in tag.split('/') if p]
+    parts = [p for p in normalized_tag.split('/') if p]
     if parts and all(p in SUP_TAGS for p in parts):
         return "sup"
     if parts and all(p in SUB_TAGS for p in parts):
@@ -153,25 +174,23 @@ def _partition_tags_for_display(tags: list[str]) -> tuple[list[str], list[str], 
     sups, subs, rest = [], [], []
     for t in tags:
         cls = _classify_tag_with_overrides(t)
+        normalized_tag = _normalize_tag_case(t)  # Normalisiere für Rückgabe
         if cls == "sup":
-            sups.append(t)
+            sups.append(normalized_tag)
         elif cls == "sub":
-            subs.append(t)
+            subs.append(normalized_tag)
         elif cls == "rest":
-            rest.append(t)
+            rest.append(normalized_tag)
         # "off" -> ignorieren
     return sups, subs, rest
 
 
 RE_INLINE_MARK  = re.compile(r'^\(\s*(?:[0-9]+[a-z]*|[a-z])\s*\)$', re.IGNORECASE)
-RE_TAG       = re.compile(r'\(([A-Za-z/≈]+)\)')
-RE_TAG_NAKED = re.compile(r'\([A-Za-z/≈]+\)')
-
-RE_TAG       = re.compile(r'\(\s*([A-Za-z/≈]+)\s*\)')
-RE_TAG_NAKED = re.compile(r'\(\s*[A-Za-z/≈]+\s*\)')
+RE_TAG       = re.compile(r'\(\s*([A-Za-z/≈äöüßÄÖÜ]+)\s*\)')
+RE_TAG_NAKED = re.compile(r'\(\s*[A-Za-z/≈äöüßÄÖÜ]+\s*\)')
 RE_GREEK_CHARS = re.compile(r'[\u0370-\u03FF\u1F00-\u1FFF]')
-RE_TAG_FINDALL = re.compile(r'\(([A-Za-z/≈]+)\)')
-RE_TAG_STRIP   = re.compile(r'\([A-Za-z/≈]+\)')
+RE_TAG_FINDALL = re.compile(r'\(\s*([A-Za-z/≈äöüßÄÖÜ]+)\s*\)')
+RE_TAG_STRIP   = re.compile(r'\(\s*[A-Za-z/≈äöüßÄÖÜ]+\s*\)')
 RE_LEADING_BAR_COLOR = re.compile(r'^\|\s*([+\-#])')  # |+ |# |- am Tokenanfang
 
 # Sprecher-Tokens: [Χορ:] bzw. Λυσ:
@@ -1103,7 +1122,6 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
     # Preprocessing mit Tag-Konfiguration anwenden
     if tag_config:
         try:
-            from shared.preprocess import apply_from_payload
             # Konvertiere tag_config zu preprocess payload
             payload = {
                 "show_colors": not pdf_name.lower().endswith("_blackwhite.pdf"),
@@ -1112,7 +1130,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 "sub_keep": tag_config.get('sub_tags', []),
                 "versmass": "KEEP_MARKERS" if versmass_display else "NORMAL"
             }
-            blocks = apply_from_payload(blocks, payload)
+            blocks = preprocess.apply_from_payload(blocks, payload)
             print(f"Preprocessing angewendet: {len(tag_config.get('sup_tags', []))} SUP, {len(tag_config.get('sub_tags', []))} SUB")
         except Exception as e:
             print(f"Fehler beim Preprocessing: {e}")

@@ -13,19 +13,19 @@ const SUP_TAGS = [
   "G",
   "A",
   "V",
-  "Aj",
+  "Adj",
   "Pt",
   "Prp",
-  "Av",
-  "Ko",
+  "Adv",
+  "Kon",
   "Art",
   "≈",
   "Kmp",
   "Sup",
-  "Ij",
+  "ij",
 ];
 const SUB_TAGS = [
-  "Pre",
+  "Prä",
   "Imp",
   "Aor",
   "Per",
@@ -36,7 +36,7 @@ const SUB_TAGS = [
   "Akt",
   "Med",
   "Pas",
-  "Kon",
+  "Knj",
   "Op",
   "Pr",
   "AorS",
@@ -82,6 +82,15 @@ const el = {
   draftFile: document.getElementById("draftFile"),
   draftBtn: document.getElementById("btnRenderDraft"),
   draftStatus: document.getElementById("draftStatus"),
+
+  // Modal-Elemente
+  modal: document.getElementById("renderingModal"),
+  modalTbody: document.getElementById("tag-config-tbody"),
+  closeModalBtn: document.getElementById("closeModal"),
+  cancelBtn: document.getElementById("cancelRendering"),
+  confirmBtn: document.getElementById("confirmRendering"),
+  toggleColorsBtn: document.getElementById("toggleAllColors"),
+  toggleHiddenBtn: document.getElementById("toggleAllTagsHidden"),
 };
 
 // 5) State
@@ -105,15 +114,73 @@ const state = {
     supTags: new Set(SUP_TAGS),
     subTags: new Set(SUB_TAGS),
     placementOverrides: {}, // Tag -> "sup" | "sub" | "off"
-    tagColors: {}, // Tag -> "red" | "blue" | "green"
+    tagColors: {}, // Tag -> "red" | "orange" | "blue" | "green" | "magenta"
     hiddenTags: new Set(), // Tags die nicht angezeigt werden sollen
-    quickControls: {
-      partizipeBlau: true,
-      verbenGruen: true,
-      nomenRot: true,
-    },
   },
 };
+
+// Datenstruktur für die neue Konfigurationstabelle
+const tagConfigRows = [
+  { group: "Nomen", tag: "Nomen", cat: "nomen" },
+  { tag: "N", name: "Nominativ (N)", cat: "nomen" },
+  { tag: "G", name: "Genitiv (G)", cat: "nomen" },
+  { tag: "D", name: "Dativ (D)", cat: "nomen" },
+  { tag: "A", name: "Akkusativ (A)", cat: "nomen" },
+  { tag: "V", name: "Vokativ (V)", cat: "nomen" },
+  { group: "Verben", tag: "Verben", cat: "verb" },
+  { tag: "Prä", name: "Präsenz(Prä)", cat: "verb" },
+  { tag: "Imp", name: "Imperfekt (Imp)", cat: "verb" },
+  { tag: "Aor", name: "Aorist (Aor)", cat: "verb" },
+  { tag: "AorS", name: "Aorist Stark (AorS)", cat: "verb" },
+  { tag: "Per", name: "Perfekt (Per)", cat: "verb" },
+  { tag: "Plq", name: "Plusquamperfekt (Plq)", cat: "verb" },
+  { tag: "Fu", name: "Futur (Fu)", cat: "verb" },
+  { tag: "Akt", name: "Aktiv (Akt)", cat: "verb" },
+  { tag: "Med", name: "Medium (Med)", cat: "verb" },
+  { tag: "Pas", name: "Passiv (Pas)", cat: "verb" },
+  { tag: "M/P", name: "Medium/Passiv (M/P)", cat: "verb" },
+  { tag: "Inf", name: "Infinitiv (Inf)", cat: "verb" },
+  { tag: "Op", name: "Optativ (Op)", cat: "verb" },
+  { tag: "Knj", name: "Konjunktiv (Knj)", cat: "verb" },
+  { tag: "Imv", name: "Imperativ (Imv)", cat: "verb" },
+  { group: "Partizipien", tag: "Partizipien", cat: "partizip" },
+  { tag: "Prä", name: "Präsenz(Prä)", cat: "partizip" },
+  { tag: "Imp", name: "Imperfekt (Imp)", cat: "partizip" },
+  { tag: "Aor", name: "Aorist (Aor)", cat: "partizip" },
+  { tag: "AorS", name: "Aorist Stark (AorS)", cat: "partizip" },
+  { tag: "Per", name: "Perfekt (Per)", cat: "partizip" },
+  { tag: "Plq", name: "Plusquamperfekt (Plq)", cat: "partizip" },
+  { tag: "Fu", name: "Futur (Fu)", cat: "partizip" },
+  { tag: "Akt", name: "Aktiv (Akt)", cat: "partizip" },
+  { tag: "Med", name: "Medium (Med)", cat: "partizip" },
+  { tag: "Pas", name: "Passiv (Pas)", cat: "partizip" },
+  { tag: "M/P", name: "Medium/Passiv (M/P)", cat: "partizip" },
+  { group: "Adjektiv", tag: "Adj", name: "Adjektiv (Adj)", cat: "adjektiv" },
+  { tag: "N", name: "Nominativ (N)", cat: "adjektiv" },
+  { tag: "G", name: "Genitiv (G)", cat: "adjektiv" },
+  { tag: "D", name: "Dativ (D)", cat: "adjektiv" },
+  { tag: "A", name: "Akkusativ (A)", cat: "adjektiv" },
+  { tag: "V", name: "Vokativ (V)", cat: "adjektiv" },
+  { tag: "Kmp", name: "Komparativ (Kmp)", cat: "adjektiv" },
+  { tag: "Sup", name: "Superlativ (Sup)", cat: "adjektiv" },
+  { group: "Adverb", tag: "Adv", name: "Adverb (Adv)", cat: "adverb" },
+  { tag: "Kmp", name: "Komparativ (Kmp)", cat: "adverb" },
+  { tag: "Sup", name: "Superlativ (Sup)", cat: "adverb" },
+  { group: "Pronomen", tag: "Pr", name: "Pronomen (Pr)", cat: "pronomen" },
+  { tag: "N", name: "Nominativ (N)", cat: "pronomen" },
+  { tag: "G", name: "Genitiv (G)", cat: "pronomen" },
+  { tag: "D", name: "Dativ (D)", cat: "pronomen" },
+  { tag: "A", name: "Akkusativ (A)", cat: "pronomen" },
+  { group: "Artikel", tag: "Art", name: "Artikel (Art)", cat: "artikel" },
+  { tag: "N", name: "Nominativ (N)", cat: "artikel" },
+  { tag: "G", name: "Genitiv (G)", cat: "artikel" },
+  { tag: "D", name: "Dativ (D)", cat: "artikel" },
+  { tag: "A", name: "Akkusativ (A)", cat: "artikel" },
+  { group: "Präposition", tag: "Prp", name: "Präposition (Prp)" },
+  { group: "Konjunktion", tag: "Kon", name: "Konjunktion (Kon)" },
+  { group: "Partikel", tag: "Pt", name: "Partikel (Pt)" },
+  { group: "Interjektion", tag: "ij", name: "Interjektion (ij)" },
+];
 
 // 6) Hilfen
 
@@ -260,13 +327,13 @@ function populateTagControls() {
   document.getElementById("verbenGruen").checked = true;
   document.getElementById("nomenRot").checked = true;
 
-  // Setze nur Aj auf blau (Standard)
-  const ajBlauCheck = document.getElementById(`color_blue_Aj`);
+  // Setze nur Adj auf blau (Standard)
+  const ajBlauCheck = document.getElementById(`color_blue_Adj`);
   if (ajBlauCheck) {
     ajBlauCheck.checked = true;
-    state.tagConfig.tagColors["Aj"] = "blue";
+    state.tagConfig.tagColors["Adj"] = "blue";
     const row = ajBlauCheck.closest(".tag-checkbox");
-    if (row) updateTagRowColor(row, "Aj", "blue", true);
+    if (row) updateTagRowColor(row, "Adj", "blue", true);
   }
 }
 
@@ -572,8 +639,8 @@ function setupModalEvents() {
     } else {
       // Originale Farben aktivieren - Standard-Konfiguration
       [...SUP_TAGS, ...SUB_TAGS].forEach((tag) => {
-        // Nur Aj auf blau setzen (Standard)
-        if (tag === "Aj") {
+        // Nur Adj auf blau setzen (Standard)
+        if (tag === "Adj") {
           state.tagConfig.tagColors[tag] = "blue";
           const blauCheck = document.getElementById(`color_blue_${tag}`);
           if (blauCheck) {
@@ -627,7 +694,7 @@ function preprocessTextForRendering(text) {
   }
 
   if (!state.tagConfig.quickControls.partizipeBlau) {
-    // Entferne + Marker nur bei Partizipien (Pt, Prp), aber nicht bei Adjektiven (Aj)
+    // Entferne + Marker nur bei Partizipien (Pt, Prp), aber nicht bei Adjektiven (Adj)
     // Das ist komplexer - wir müssen nach Tags suchen
     processedText = processedText.replace(/\+(?=\w+\(Pt\))/g, "");
     processedText = processedText.replace(/\+(?=\w+\(Prp\))/g, "");
@@ -729,12 +796,15 @@ async function performRendering() {
 
     // Neue Tag-Konfiguration
     tag_config: {
-      sup_tags: Array.from(state.tagConfig.supTags),
-      sub_tags: Array.from(state.tagConfig.subTags),
-      placement_overrides: state.tagConfig.placementOverrides,
+      sup_tags: Object.entries(state.tagConfig.placementOverrides)
+        .filter(([, val]) => val === "sup")
+        .map(([key]) => key),
+      sub_tags: Object.entries(state.tagConfig.placementOverrides)
+        .filter(([, val]) => val === "sub")
+        .map(([key]) => key),
+      placement_overrides: state.tagConfig.placementOverrides, // bleibt für alle fälle
       tag_colors: state.tagConfig.tagColors,
       hidden_tags: Array.from(state.tagConfig.hiddenTags),
-      quick_controls: state.tagConfig.quickControls,
     },
   };
 
@@ -844,6 +914,209 @@ async function performRendering() {
   }
 }
 
+/**
+ * PDF-Konfigurations-Modal
+ */
+function showTagConfigModal() {
+  const tbody = el.modalTbody;
+  if (!tbody) return;
+
+  // 1. Tabelle leeren und neu aufbauen
+  tbody.innerHTML = "";
+  tagConfigRows.forEach((item) => {
+    if (item.group && !item.name) {
+      // Gruppen-Header-Zeile
+      const tr = document.createElement("tr");
+      tr.classList.add("group-header");
+      tr.innerHTML = `<td colspan="9">${item.group}</td>`;
+      tbody.appendChild(tr);
+    } else {
+      // Normale Konfigurations-Zeile
+      const tr = document.createElement("tr");
+      tr.dataset.tag = item.tag;
+      tr.dataset.cat = item.cat || "";
+
+      // Modifikations-Spalte (Name)
+      const name = item.name || item.tag;
+      tr.innerHTML = `<td>${name}</td>`;
+
+      // Checkbox-Spalten
+      const actions = [
+        { type: "placement", value: "sup" },
+        { type: "placement", value: "sub" },
+        { type: "color", value: "red" },
+        { type: "color", value: "orange" },
+        { type: "color", value: "blue" },
+        { type: "color", value: "green" },
+        { type: "color", value: "magenta" },
+        { type: "hide", value: "hide" },
+      ];
+
+      actions.forEach((action) => {
+        const td = document.createElement("td");
+        const input = document.createElement("input");
+        input.type = "checkbox";
+        input.dataset.type = action.type;
+        input.dataset.value = action.value;
+        td.appendChild(input);
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    }
+  });
+
+  // 2. Initialkonfiguration anwenden
+  applyInitialConfig();
+  updateTableFromState();
+
+  // 3. Event Listeners hinzufügen
+  tbody.addEventListener("change", handleTableChange);
+  el.toggleColorsBtn.addEventListener("click", toggleOriginalColors);
+  el.toggleHiddenBtn.addEventListener("click", toggleAllTagsHidden);
+
+  // 4. Modal anzeigen
+  el.modal.style.display = "block";
+}
+
+function applyInitialConfig() {
+  // Setzt die Standardkonfiguration (Farben und Platzierung)
+  state.tagConfig.tagColors = {};
+  state.tagConfig.placementOverrides = {};
+
+  // Standardfarben
+  if (el.toggleColorsBtn.dataset.state === "on") {
+    tagConfigRows.forEach((item) => {
+      if (!item.tag) return;
+      if (item.cat === "nomen") state.tagConfig.tagColors[item.tag] = "red";
+      if (item.cat === "verb") state.tagConfig.tagColors[item.tag] = "green";
+      if (item.cat === "partizip" || item.cat === "adjektiv")
+        state.tagConfig.tagColors[item.tag] = "blue";
+    });
+  }
+
+  // Standardplatzierungen
+  SUP_TAGS.forEach((tag) => (state.tagConfig.placementOverrides[tag] = "sup"));
+  SUB_TAGS.forEach((tag) => (state.tagConfig.placementOverrides[tag] = "sub"));
+
+  // Versteckte Tags: initial leer
+  state.tagConfig.hiddenTags = new Set();
+}
+
+function updateTableFromState() {
+  const rows = el.modalTbody.querySelectorAll("tr[data-tag]");
+  rows.forEach((tr) => {
+    const tag = tr.dataset.tag;
+    const checkboxes = tr.querySelectorAll("input[type=checkbox]");
+    let rowColor = "";
+
+    checkboxes.forEach((cb) => {
+      const { type, value } = cb.dataset;
+      cb.checked = false; // Reset
+
+      if (
+        type === "placement" &&
+        state.tagConfig.placementOverrides[tag] === value
+      ) {
+        cb.checked = true;
+      }
+      if (type === "color" && state.tagConfig.tagColors[tag] === value) {
+        cb.checked = true;
+        rowColor = value;
+      }
+      if (type === "hide" && state.tagConfig.hiddenTags.has(tag)) {
+        cb.checked = true;
+      }
+    });
+
+    tr.className = rowColor ? `color-bg-${rowColor}` : "";
+  });
+}
+
+function handleTableChange(event) {
+  const checkbox = event.target;
+  if (checkbox.type !== "checkbox") return;
+
+  const tr = checkbox.closest("tr");
+  const tag = tr.dataset.tag;
+  const { type, value } = checkbox.dataset;
+
+  // Exklusivität sicherstellen
+  if (checkbox.checked) {
+    const groupSelector = `input[data-type="${type}"]`;
+    tr.querySelectorAll(groupSelector).forEach((cb) => {
+      if (cb !== checkbox) cb.checked = false;
+    });
+  }
+
+  // State aktualisieren
+  if (type === "placement") {
+    if (checkbox.checked) state.tagConfig.placementOverrides[tag] = value;
+    else delete state.tagConfig.placementOverrides[tag];
+  }
+  if (type === "color") {
+    if (checkbox.checked) state.tagConfig.tagColors[tag] = value;
+    else delete state.tagConfig.tagColors[tag];
+  }
+  if (type === "hide") {
+    if (checkbox.checked) state.tagConfig.hiddenTags.add(tag);
+    else state.tagConfig.hiddenTags.delete(tag);
+  }
+
+  // UI aktualisieren (Hintergrundfarbe)
+  updateTableFromState();
+}
+
+function toggleButton(btn, forceState) {
+  let currentState =
+    forceState !== undefined
+      ? forceState
+      : btn.dataset.state === "on"
+      ? "off"
+      : "on";
+  btn.dataset.state = currentState;
+  const status = btn.querySelector(".toggle-status");
+  if (currentState === "on") {
+    status.textContent = "An";
+    status.classList.remove("red");
+    status.classList.add("green");
+  } else {
+    status.textContent = "Aus";
+    status.classList.remove("green");
+    status.classList.add("red");
+  }
+  return currentState === "on";
+}
+
+function toggleOriginalColors() {
+  toggleButton(el.toggleColorsBtn);
+  applyInitialConfig();
+  updateTableFromState();
+}
+
+function toggleAllTagsHidden() {
+  const turnOn = toggleButton(el.toggleHiddenBtn);
+  const checkboxes = el.modalTbody.querySelectorAll('input[data-type="hide"]');
+  checkboxes.forEach((cb) => {
+    const tag = cb.closest("tr").dataset.tag;
+    if (turnOn) {
+      cb.checked = true;
+      state.tagConfig.hiddenTags.add(tag);
+    } else {
+      cb.checked = false;
+      state.tagConfig.hiddenTags.delete(tag);
+    }
+  });
+}
+
+function hideTagConfigModal() {
+  if (el.modal) el.modal.style.display = "none";
+}
+
+function updateStateFromTable() {
+  // Diese Funktion ist jetzt in handleTableChange integriert und sollte nicht mehr separat benötigt werden
+  // Der State wird bei jeder Änderung direkt aktualisiert.
+}
+
 // 9) Events
 function wireEvents() {
   // Alle Segment-Buttons (Quelle, Stärke, Farbe, Tags, Versmaß)
@@ -870,10 +1143,16 @@ function wireEvents() {
     });
   });
 
-  // Draft-Button
-  el.draftBtn?.addEventListener("click", () =>
-    renderDraftViaWorker(el.draftFile.files?.[0])
-  );
+  // Draft-Button öffnet jetzt das Modal
+  el.draftBtn?.addEventListener("click", showTagConfigModal);
+
+  // Modal-Buttons
+  el.closeModalBtn?.addEventListener("click", hideTagConfigModal);
+  el.cancelBtn?.addEventListener("click", hideTagConfigModal);
+  el.confirmBtn?.addEventListener("click", () => {
+    hideTagConfigModal();
+    performRendering();
+  });
 
   // Entwurfs-Text Auto-Save (optional)
   el.draftText?.addEventListener("input", () => {

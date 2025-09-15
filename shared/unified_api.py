@@ -98,15 +98,39 @@ def _prosa_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
     Prosa:
     - Kein Versmaß-Rendering.
     - placement_overrides (hoch/tief/aus) jetzt ebenfalls durchreichen.
+    - Die Signatur ist nun an _poesie_call angeglichen.
     """
-    return mod.create_pdf(
-        blocks, out_pdf,
-        strength=opts.strength,
-        color_mode=opts.color_mode,
-        tag_mode=opts.tag_mode,
-        placement_overrides=placement_overrides,
-        tag_config=tag_config
-    )
+    if opts.strength == "GR_FETT":
+        return mod.create_pdf(
+            blocks, out_pdf,
+            strength="GR_FETT",
+            color_mode=opts.color_mode,
+            tag_mode=opts.tag_mode,
+            placement_overrides=placement_overrides,
+            tag_config=tag_config
+        )
+
+    if opts.strength == "NORMAL":
+        return mod.create_pdf(
+            blocks, out_pdf,
+            strength="NORMAL",
+            color_mode=opts.color_mode,
+            tag_mode=opts.tag_mode,
+            placement_overrides=placement_overrides,
+            tag_config=tag_config
+        )
+
+    if opts.strength == "DE_FETT":
+        return mod.create_pdf(
+            blocks, out_pdf,
+            strength="DE_FETT",
+            color_mode=opts.color_mode,
+            tag_mode=opts.tag_mode,
+            placement_overrides=placement_overrides,
+            tag_config=tag_config
+        )
+    
+    raise ValueError(f"Prosa: Unbekannte strength={opts.strength!r}")
 
 
 
@@ -130,9 +154,9 @@ def create_pdf_unified(kind: Literal["poesie", "prosa"],
       {
         "show_colors": bool,
         "show_tags":   bool,
-        "color_pos":   [ "Aj","Pt","Prp","Av","Ko","Art","Pr","Ij" ],
-        "sup_keep":    [ "N","D","G","A","V","Aj","Pt","Prp","Av","Ko","Art","≈","Kmp","Sup","Ij" ],
-        "sub_keep":    [ "Pre","Imp","Aor","AorS","Per","Plq","Inf","Imv","Akt","Med","Pas","Kon","Op","Pr","M/P" ],
+        "color_pos":   [ "Adj","Pt","Prp","Adv","Kon","Art","Pr","ij" ],
+        "sup_keep":    [ "N","D","G","A","V","Adj","Pt","Prp","Adv","Kon","Art","≈","Kmp","Sup","ij" ],
+        "sub_keep":    [ "Prä","Imp","Aor","AorS","Per","Plq","Inf","Imv","Akt","Med","Pas","Knj","Op","Pr","M/P" ],
         "versmass":    "NORMAL" | "KEEP_MARKERS" | "REMOVE_MARKERS",
         "place":       { "Tag":"sup|sub|off", ... }    # Hoch/Tief/Aus – nur Poesie
       }
@@ -154,8 +178,13 @@ def create_pdf_unified(kind: Literal["poesie", "prosa"],
         )
         placement_overrides = payload.get("place") or None
     else:
+        # Standard-Vorverarbeitung für Prosa und Poesie
+        # Schritt 1: Farbsymbole hinzufügen.
+        blocks_with_symbols = preprocess.add_color_symbols(blocks)
+        
+        # Schritt 2: Tags/Farben je nach Modus entfernen/filtern.
         pre_blocks = preprocess.apply(
-            blocks,
+            blocks_with_symbols,
             color_mode=options.color_mode,
             tag_mode=options.tag_mode,
             versmass_mode=options.versmass_mode
