@@ -285,7 +285,8 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                 token_tags = set(_extract_tags(token))
                 if not token_tags:
                     continue
-
+                
+                # Bestimme Wortart und relevante Tags
                 wortart, relevant_tags = _get_wortart_and_relevant_tags(token_tags)
                 if not wortart:
                     continue
@@ -438,7 +439,103 @@ def _process_pair_block(block: Dict[str, Any],
     de_t = proc_tokens(_split(de_s), is_greek_line=False)
     return {**block, 'gr': _join(gr_t), 'de': _join(de_t)}
 
-# ======= Öffentliche API =======
+# ======= Öffentliche, granulare API =======
+
+def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """
+    Fügt Farbsymbole (#, +, §, $) basierend auf der tag_config hinzu.
+    Gibt eine NEUE, tief kopierte Blockliste zurück.
+    Die Original-Tags bleiben vollständig erhalten.
+    """
+    import copy
+    return _apply_colors_and_placements(copy.deepcopy(blocks), tag_config)
+
+def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Filtert Tags basierend auf den 'hide' und 'placement' Regeln in tag_config.
+    Wenn tag_config=None ist, bleiben alle Tags erhalten.
+    Gibt eine NEUE, tief kopierte Blockliste zurück.
+    """
+    import copy
+    blocks_copy = copy.deepcopy(blocks)
+    
+    sup_keep, sub_keep = set(), set()
+    if tag_config:
+        for rule_id, conf in tag_config.items():
+            tag = rule_id.split('_')[-1] if '_' in rule_id else None
+            if not tag: continue
+
+            if not conf.get('hide'):
+                placement = conf.get('placement')
+                if placement == 'sup': sup_keep.add(tag)
+                elif placement == 'sub': sub_keep.add(tag)
+                elif placement is None:
+                    if tag in SUP_TAGS: sup_keep.add(tag)
+                    if tag in SUB_TAGS: sub_keep.add(tag)
+    else:
+        # Wenn keine Config da ist, alle bekannten Tags behalten
+        sup_keep = SUP_TAGS
+        sub_keep = SUB_TAGS
+
+    processed_blocks = []
+    for b in blocks_copy:
+        if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
+            processed_blocks.append(_process_pair_block_for_tags(
+                b, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=False
+            ))
+        else:
+            processed_blocks.append(b)
+    return processed_blocks
+
+def remove_all_tags(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Entfernt ALLE bekannten Grammatik-Tags (SUP und SUB).
+    Gibt eine NEUE, tief kopierte Blockliste zurück.
+    """
+    import copy
+    blocks_copy = copy.deepcopy(blocks)
+    processed_blocks = []
+    for b in blocks_copy:
+        if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
+            processed_blocks.append(_process_pair_block_for_tags(
+                b, sup_keep=set(), sub_keep=set(), remove_all=True
+            ))
+        else:
+            processed_blocks.append(b)
+    return processed_blocks
+
+def remove_all_color_symbols(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Entfernt ALLE Farbsymbole (#, +, §, $) aus allen Tokens.
+    Gibt eine NEUE, tief kopierte Blockliste zurück.
+    """
+    import copy
+    blocks_copy = copy.deepcopy(blocks)
+    processed_blocks = []
+    for b in blocks_copy:
+        if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
+            processed_blocks.append(_strip_colors_from_block(b))
+        else:
+            processed_blocks.append(b)
+    return processed_blocks
+
+
+# ======= Hilfen: PoS-Ermittlung für Farbregel =======
+def _has_any_pos(token: str, pos_whitelist: set[str]) -> bool:
+    """
+    Prüft, ob das Token mind. einen (TAG) aus der pos_whitelist trägt.
+    Die Prüfung erfolgt auf SUP+SUB-Tags (da PoS bei dir als SUP-Tags geführt werden).
+    """
+    tags = _extract_tags(token)
+    for t in tags:
+        parts = [p for p in t.split('/') if p]
+        for p in parts:
+            if p in pos_whitelist:
+                return True
+    return False
+
+
+# ======= Veraltete Öffentliche API (wird schrittweise entfernt) =======
 def apply(blocks: List[Dict[str, Any]],
           *,
           color_mode: ColorMode,

@@ -165,40 +165,13 @@ def create_pdf_unified(kind: Literal["poesie", "prosa"],
     if k not in {"poesie", "prosa"}:
         raise ValueError(f"Unbekannter kind='{kind}'. Erwartet: poesie|prosa")
 
-    # 1) Vorverarbeitung (+ optionale UI-Payload)
-    #    - Payload leer/None -> Standard apply(...)
-    #    - Payload gesetzt   -> apply_from_payload(...) inkl. Normalisierung auf Extremfälle
+    # HINWEIS: Die Vorverarbeitung wurde nach `prosa_pdf.py` verlagert, um eine
+    # granulare Steuerung pro PDF-Variante zu ermöglichen. Diese Funktion dient
+    # jetzt primär als Hülle für den Renderer-Aufruf. Die übergebenen `blocks`
+    # sollten bereits vollständig vorverarbeitet sein.
+    pre_blocks = blocks
+    placement_overrides = payload.get("place") if payload else None
     
-    # NEU: Wenn tag_config übergeben wird, aber keine Payload,
-    # erstelle eine Payload. Das vereinheitlicht den Drafts-Workflow.
-    effective_payload = payload
-    if effective_payload is None and tag_config is not None:
-        effective_payload = {
-            "color_mode": options.color_mode,
-            "tag_config": tag_config,
-            "versmass": options.versmass_mode,
-            # 'place' overrides werden in Poesie-spezifischem Code erwartet,
-            # hier vorerst nicht automatisch übernommen.
-        }
-
-    if effective_payload is not None:
-        pre_blocks = preprocess.apply_from_payload(
-            blocks,
-            effective_payload,
-            default_versmass_mode=options.versmass_mode
-        )
-        placement_overrides = effective_payload.get("place") or None
-    else:
-        # Standard-Vorverarbeitung: apply() direkt aufrufen
-        pre_blocks = preprocess.apply(
-            blocks,
-            color_mode=options.color_mode,
-            tag_mode=options.tag_mode,
-            versmass_mode=options.versmass_mode,
-            tag_config=tag_config # tag_config hier weitergeben
-        )
-        placement_overrides = None
-
     # 2) Renderer-spezifischer Aufruf
     if k == "poesie":
         return _poesie_call(mod, pre_blocks, out_pdf, options,
