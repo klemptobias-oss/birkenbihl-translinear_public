@@ -220,8 +220,8 @@ def pre_substitutions(s:str) -> str:
     if not s: return s
     punct = r'(?:,|\.|;|:|!|\?|%|…|\u00B7|\u0387|\u037E)'
     s = re.sub(rf'\s+{punct}', lambda m: m.group(0).lstrip(), s)
-    s = re.sub(r'([\(\[\{\«"‹''])\s+', r'\1', s)
-    s = re.sub(r'\s+([\)\]\}\»"›'']', r'\1', s)
+    s = re.sub(r'([\(\[\{\«“‹‘])\s+', r'\1', s)
+    s = re.sub(r'\s+([\)\]\}\»”›’])', r'\1', s)
     s = re.sub(r'[\u200B\u200C\u200D\uFEFF\u00A0]', '', s)
     s = re.sub(r'\(([#\+\-])', r'\1(', s)
     s = re.sub(r'\[([#\+\-])', r'\1[', s)
