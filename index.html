@@ -1,139 +1,218 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Birkenbihl / Translinear – Startseite</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .tree { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 12px; }
-    .node { display: flex; align-items: center; gap: 8px; padding: 6px 4px; }
-    .toggle { width: 24px; text-align: center; border: 1px solid var(--edge); border-radius: 6px;
-              cursor: pointer; user-select: none; line-height: 18px; }
-    .label.branch { font-weight: 700; }
-    .label.leaf a { text-decoration: underline; }
-    .children { margin-left: 24px; padding-left: 8px; border-left: 1px dashed var(--edge); }
-    .toolbar { display: flex; gap: 8px; margin-bottom: 12px; }
-    .toolbar .btn { background: #fff; }
-    .hint { color: var(--muted); font-size: 14px; margin-top: 6px; }
-    .notice small { color: var(--muted); }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <div class="bar"><div class="title">Birkenbihl / Translinear Übersetzungen</div></div>
-    <div class="notice">
-      Wähle <b>Textsorte → Autor → Werk</b>. Links führen zur universellen Werkseite.
-      <br><small>Katalog: <code>catalog.json</code>. Neue Einträge nur dort ergänzen.</small>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Birkenbihl / Translinear – Startseite</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .tree {
+        background: var(--card);
+        border: 1px solid var(--edge);
+        border-radius: 16px;
+        padding: 12px;
+      }
+      h2.language-header {
+        font-size: 1.8em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid var(--edge);
+      }
+      .node {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 4px;
+      }
+      .toggle {
+        width: 24px;
+        text-align: center;
+        border: 1px solid var(--edge);
+        border-radius: 6px;
+        cursor: pointer;
+        user-select: none;
+        line-height: 18px;
+      }
+      .label.branch {
+        font-weight: 700;
+      }
+      .label.leaf a {
+        text-decoration: underline;
+      }
+      .children {
+        margin-left: 24px;
+        padding-left: 8px;
+        border-left: 1px dashed var(--edge);
+      }
+      .toolbar {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+      .toolbar .btn {
+        background: #fff;
+      }
+      .hint {
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 6px;
+      }
+      .notice small {
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="bar">
+        <div class="title">Birkenbihl / Translinear Übersetzungen</div>
+      </div>
+      <div class="notice">
+        Wähle <b>Textsorte → Autor → Werk</b>. Links führen zur universellen
+        Werkseite. <br /><small
+          >Katalog: <code>catalog.json</code>. Neue Einträge nur dort
+          ergänzen.</small
+        >
+      </div>
+
+      <div class="toolbar">
+        <button class="btn" id="expand">Alles aufklappen</button>
+        <button class="btn" id="collapse">Alles zuklappen</button>
+      </div>
+
+      <nav class="tree" aria-label="Werke-Navigation" id="catalogContainer">
+        <!-- Der Katalog wird hier dynamisch eingefügt -->
+      </nav>
+
+      <div class="hint">
+        Tipp: Mit den kleinen Kästchen (–/+) klappst du Zweige auf/zu.
+      </div>
     </div>
 
-    <div class="toolbar">
-      <button class="btn" id="expand">Alles aufklappen</button>
-      <button class="btn" id="collapse">Alles zuklappen</button>
-    </div>
+    <script type="module">
+      import {
+        loadCatalog,
+        listLanguages,
+        listKindsByLanguage,
+        listAuthors,
+        listWorks,
+      } from "./catalog.js";
 
-    <nav class="tree" aria-label="Werke-Navigation">
-      <ul class="root" id="catalogRoot"></ul>
-    </nav>
+      function createToggleable(labelText, open = true) {
+        const li = document.createElement("li");
+        const node = document.createElement("div");
+        node.className = "node";
 
-    <div class="hint">Tipp: Mit den kleinen Kästchen (–/+) klappst du Zweige auf/zu.</div>
-  </div>
+        const tg = document.createElement("span");
+        tg.className = "toggle";
+        tg.setAttribute("role", "button");
+        tg.setAttribute("aria-expanded", String(open));
+        tg.textContent = open ? "–" : "+";
 
-  <script type="module">
-    import { loadCatalog, listKinds, listAuthorsByKind, listWorks } from './catalog.js';
+        const label = document.createElement("span");
+        label.className = "label branch";
+        label.textContent = labelText;
 
-    function toggleable(labelText, open = true) {
-      const li = document.createElement('li');
-      const node = document.createElement('div');
-      node.className = 'node';
+        node.appendChild(tg);
+        node.appendChild(label);
+        li.appendChild(node);
 
-      const tg = document.createElement('span');
-      tg.className = 'toggle';
-      tg.setAttribute('role','button');
-      tg.setAttribute('aria-expanded', String(open));
-      tg.textContent = open ? '–' : '+';
+        const ul = document.createElement("ul");
+        ul.className = "children";
+        if (!open) ul.style.display = "none";
+        li.appendChild(ul);
 
-      const label = document.createElement('span');
-      label.className = 'label branch';
-      label.textContent = labelText;
+        tg.addEventListener("click", () => {
+          const isOpen = tg.getAttribute("aria-expanded") === "true";
+          tg.setAttribute("aria-expanded", String(!isOpen));
+          tg.textContent = isOpen ? "+" : "–";
+          ul.style.display = isOpen ? "none" : "";
+        });
 
-      node.appendChild(tg);
-      node.appendChild(label);
-      li.appendChild(node);
+        return { li, ul };
+      }
 
-      const ul = document.createElement('ul');
-      ul.className = 'children';
-      if (!open) ul.style.display = 'none';
-      li.appendChild(ul);
+      function createLeafLink(text, href) {
+        const li = document.createElement("li");
+        const node = document.createElement("div");
+        node.className = "node";
+        const span = document.createElement("span");
+        span.className = "label leaf";
+        const a = document.createElement("a");
+        a.href = href;
+        a.textContent = text;
+        a.title = "Werkseite öffnen";
+        span.appendChild(a);
+        node.appendChild(span);
+        li.appendChild(node);
+        return li;
+      }
 
-      tg.addEventListener('click', () => {
-        const isOpen = tg.getAttribute('aria-expanded') === 'true';
-        tg.setAttribute('aria-expanded', String(!isOpen));
-        tg.textContent = isOpen ? '+' : '–';
-        ul.style.display = isOpen ? 'none' : '';
-      });
+      (async function init() {
+        const container = document.getElementById("catalogContainer");
+        const cat = await loadCatalog();
 
-      return { li, ul };
-    }
+        // Ebene 1: Sprachen
+        const languages = listLanguages(cat);
+        for (const lang of languages) {
+          const header = document.createElement("h2");
+          header.className = "language-header";
+          header.textContent = lang;
+          container.appendChild(header);
 
-    function leafLink(text, href) {
-      const li = document.createElement('li');
-      const node = document.createElement('div');
-      node.className = 'node';
-      const span = document.createElement('span');
-      span.className = 'label leaf';
-      const a = document.createElement('a');
-      a.href = href;
-      a.textContent = text;
-      a.title = 'Werkseite öffnen';
-      span.appendChild(a);
-      node.appendChild(span);
-      li.appendChild(node);
-      return li;
-    }
+          const rootUl = document.createElement("ul");
+          rootUl.className = "root";
+          container.appendChild(rootUl);
 
-    (async function init() {
-      const root = document.getElementById('catalogRoot');
-      const cat = await loadCatalog();
+          // Ebene 2: Gattungen (Poesie, Prosa)
+          const kinds = listKindsByLanguage(cat, lang);
+          for (const kind of kinds) {
+            const kindNode = createToggleable(
+              kind.charAt(0).toUpperCase() + kind.slice(1),
+              true
+            );
+            rootUl.appendChild(kindNode.li);
 
-      // Ebene: Kinds (poesie, prosa)
-      for (const kind of listKinds(cat)) {
-        const kindNode = toggleable(kind === 'poesie' ? 'Poesie' : 'Prosa', true);
-        root.appendChild(kindNode.li);
+            // Ebene 3: Autoren
+            const authors = listAuthors(cat, lang, kind);
+            for (const a of authors) {
+              const aNode = createToggleable(a.display, true);
+              kindNode.ul.appendChild(aNode.li);
 
-        // Ebene: Autoren je Kind
-        const authors = listAuthorsByKind(cat, kind);
-        for (const a of authors) {
-          const aNode = toggleable(a.display, true);
-          kindNode.ul.appendChild(aNode.li);
-
-          // Ebene: Werke
-          const works = listWorks(cat, kind, a.author);
-          for (const w of works) {
-            const workNode = toggleable(w.title, true);
-            aNode.ul.appendChild(workNode.li);
-
-            const url = `work.html?kind=${encodeURIComponent(kind)}&author=${encodeURIComponent(a.author)}&work=${encodeURIComponent(w.id)}`;
-            workNode.ul.appendChild(leafLink('Originaltext + Birkenbihl' + (w.meter_capable ? ' (Versmaß-fähig)' : ''), url));
+              // Ebene 4: Werke
+              const works = listWorks(cat, lang, kind, a.author);
+              for (const w of works) {
+                const url = `work.html?lang=${encodeURIComponent(
+                  lang
+                )}&kind=${encodeURIComponent(kind)}&author=${encodeURIComponent(
+                  a.author
+                )}&work=${encodeURIComponent(w.id)}`;
+                const linkText =
+                  "Originaltext + Birkenbihl" +
+                  (w.versmass ? " (Versmaß-fähig)" : "");
+                const workLeaf = createLeafLink(linkText, url);
+                aNode.ul.appendChild(workLeaf);
+              }
+            }
           }
         }
-      }
 
-      // Buttons "Alles auf/zu"
-      const expand = document.getElementById('expand');
-      const collapse = document.getElementById('collapse');
-      function setAll(open) {
-        document.querySelectorAll('.toggle').forEach(tg => {
-          tg.setAttribute('aria-expanded', String(open));
-          tg.textContent = open ? '–' : '+';
-        });
-        document.querySelectorAll('.children').forEach(ul => {
-          ul.style.display = open ? '' : 'none';
-        });
-      }
-      expand?.addEventListener('click', () => setAll(true));
-      collapse?.addEventListener('click', () => setAll(false));
-    })();
-  </script>
-</body>
+        // Buttons "Alles auf/zu"
+        const expand = document.getElementById("expand");
+        const collapse = document.getElementById("collapse");
+        function setAll(open) {
+          document.querySelectorAll(".toggle").forEach((tg) => {
+            tg.setAttribute("aria-expanded", String(open));
+            tg.textContent = open ? "–" : "+";
+          });
+          document.querySelectorAll(".children").forEach((ul) => {
+            ul.style.display = open ? "" : "none";
+          });
+        }
+        expand?.addEventListener("click", () => setAll(true));
+        collapse?.addEventListener("click", () => setAll(false));
+      })();
+    </script>
+  </body>
 </html>

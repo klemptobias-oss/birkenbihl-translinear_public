@@ -23,6 +23,7 @@ import Poesie_Code as Poesie
 from shared.unified_api import create_pdf_unified, PdfRenderOptions
 from shared.naming import base_from_input_path, output_pdf_name, PdfRenderOptions as NameOpts
 from shared import preprocess
+from shared.versmass import has_meter_markers
 
 
 def _discover_inputs_default() -> list[str]:
@@ -39,6 +40,14 @@ def _add_suffix_before_ext(filename: str, suffix: str) -> str:
     p = Path(filename)
     return p.with_name(p.stem + suffix + p.suffix).name
 
+def _input_has_meter_info(blocks: list[dict]) -> bool:
+    """Prüft, ob irgendein gr_tokens-Block in der Datei Versmaß-Marker enthält."""
+    for block in blocks:
+        if block.get('type') == 'pair':
+            if has_meter_markers(block.get('gr_tokens', [])):
+                return True
+    return False
+
 def _process_one_input(infile: str, tag_config: dict = None) -> None:
     if not os.path.isfile(infile):
         print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
@@ -49,7 +58,15 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
     strengths = ("NORMAL", "GR_FETT", "DE_FETT")
     colors    = ("COLOR", "BLACK_WHITE")
     tags      = ("TAGS", "NO_TAGS")
-    meters    = (False, True)  # Versmaß AUS/AN
+    
+    # NEU: Prüfe, ob die Input-Datei überhaupt Versmaß-Infos enthält
+    input_contains_meter = _input_has_meter_info(blocks)
+    if input_contains_meter:
+        print("  → Versmaß-Informationen gefunden, _Versmaß-PDFs werden erstellt.")
+        meters = (False, True)
+    else:
+        print("  → Keine Versmaß-Informationen gefunden, _Versmaß-PDFs werden übersprungen.")
+        meters    = (False,) # Nur die Variante OHNE Versmaß-Suffix erstellen
 
     default_poesie_tag_config = {
         # Nomen rot

@@ -1,46 +1,40 @@
 ######## START: build_poesie_adapter.py ########
 from pathlib import Path
 import subprocess, sys
+from shared.catalog_updater import update_catalog
 
 ROOT = Path(__file__).parent.resolve()
-SRC_ROOT = ROOT / "texte" / "poesie"                # Eingaben
-DST_BASE = ROOT / "pdf" / "poesie"                  # Ausgaben
+RUNNER = ROOT / "poesie_pdf.py"
 
-RUNNER = ROOT / "poesie_pdf.py"                      # 24 Varianten (Poesie)
-
-def run_one(input_path: Path) -> None:
+def run_one(input_path: Path, language: str) -> None:
     if not input_path.is_file():
         print(f"⚠ Datei fehlt: {input_path} — übersprungen"); return
 
     # Extrahiere Autor und Werk aus dem Pfad
-    # input_path: texte/poesie/Autor/Werk/datei.txt
-    # relative_to(SRC_ROOT): Autor/Werk/datei.txt
-    relative_path = input_path.relative_to(SRC_ROOT)
-    path_parts = relative_path.parts
-    author = path_parts[0]
-    work = path_parts[1] if len(path_parts) > 1 else ""
+    # Pfad: texte/griechisch/poesie/Autor/Werk/datei.txt
+    try:
+        relative_base = ROOT / "texte" / language / "poesie"
+        relative_path = input_path.relative_to(relative_base)
+        path_parts = relative_path.parts
+        author = path_parts[0]
+        work = path_parts[1]
+    except (ValueError, IndexError):
+        print(f"✗ Pfad konnte nicht zerlegt werden: {input_path}"); return
     
-    # Erstelle Zielordner: pdf/poesie/Autor/Werk/
-    target_dir = DST_BASE / author / work
+    # Korrigierte Zielordner-Struktur: <Hauptordner>/<Sprache>/<Gattung>/...
+    target_dir = ROOT / "pdf" / language / "poesie" / author / work
     target_dir.mkdir(parents=True, exist_ok=True)
     
-    # Erstelle spiegelidentische Ordner in texte_drafts und pdf_drafts
-    texte_drafts_dir = ROOT / "texte_drafts" / "poesie_drafts" / author / work
-    pdf_drafts_dir = ROOT / "pdf_drafts" / "poesie_drafts" / author / work
+    # Erstelle spiegelidentische Ordner
+    texte_drafts_dir = ROOT / "texte_drafts" / language / "poesie" / author / work
+    pdf_drafts_dir = ROOT / "pdf_drafts" / language / "poesie" / author / work
     texte_drafts_dir.mkdir(parents=True, exist_ok=True)
     pdf_drafts_dir.mkdir(parents=True, exist_ok=True)
     
-    # Erstelle .gitkeep Dateien um sicherzustellen, dass die Ordner bei Git gepusht werden
-    gitkeep_target = target_dir / ".gitkeep"
-    gitkeep_texte_drafts = texte_drafts_dir / ".gitkeep"
-    gitkeep_pdf_drafts = pdf_drafts_dir / ".gitkeep"
-    
-    if not gitkeep_target.exists():
-        gitkeep_target.write_text("")
-    if not gitkeep_texte_drafts.exists():
-        gitkeep_texte_drafts.write_text("")
-    if not gitkeep_pdf_drafts.exists():
-        gitkeep_pdf_drafts.write_text("")
+    # Erstelle .gitkeep Dateien
+    (target_dir / ".gitkeep").touch(exist_ok=True)
+    (texte_drafts_dir / ".gitkeep").touch(exist_ok=True)
+    (pdf_drafts_dir / ".gitkeep").touch(exist_ok=True)
 
     # Extrahiere den Basisnamen der Eingabedatei (ohne .txt)
     input_stem = input_path.stem
@@ -54,7 +48,6 @@ def run_one(input_path: Path) -> None:
     if not new_pdfs:
         print("⚠ Keine PDFs erzeugt."); return
 
-    # Filtere nur die PDFs, die zu dieser Eingabedatei gehören
     relevant_pdfs = [name for name in new_pdfs if name.startswith(input_stem)]
     
     if not relevant_pdfs:
@@ -65,36 +58,48 @@ def run_one(input_path: Path) -> None:
         dst = target_dir / name
         src.replace(dst)
         print(f"✓ PDF → {dst}")
+        
+    # Katalog aktualisieren
+    update_catalog(language, "Poesie", author, work, input_path)
 
 def main():
     if not RUNNER.exists():
         print(f"✗ {RUNNER.name} nicht gefunden – Abbruch."); sys.exit(1)
-    if not SRC_ROOT.exists():
-        print(f"✗ Eingabeordner fehlt: {SRC_ROOT} – Abbruch."); sys.exit(1)
-
-    # Suche rekursiv nach _birkenbihl.txt und BIRKENBIHL.txt Dateien
-    # in der Struktur: texte/poesie/Autor/Werk/*.txt
-    birkenbihl_patterns = [
-        "**/*_birkenbihl.txt",
-        "**/*BIRKENBIHL*.txt"
-    ]
     
-    inputs = []
-    for pattern in birkenbihl_patterns:
-        inputs.extend(SRC_ROOT.glob(pattern))
-    
-    inputs = sorted(inputs)
-    
-    if not inputs:
-        print(f"✗ Keine _birkenbihl.txt oder BIRKENBIHL.txt Dateien in {SRC_ROOT}/<Autor>/<Werk>/ gefunden – Abbruch."); sys.exit(1)
+    src_root = ROOT / "texte"
+    if not src_root.is_dir():
+        print(f"✗ Haupt-Textordner '{src_root}' nicht gefunden – Abbruch."); sys.exit(1)
 
-    print(f"✓ Gefunden: {len(inputs)} Birkenbihl-Dateien")
-    for inp in inputs:
-        print(f"  - {inp.relative_to(SRC_ROOT)}")
+    language_dirs = [p for p in src_root.iterdir() if p.is_dir()]
+    if not language_dirs:
+        print(f"✗ Keine Sprachordner in '{src_root}' gefunden – Abbruch."); sys.exit(1)
 
-    for inp in inputs:
+    print(f"✓ {len(language_dirs)} Sprachordner gefunden: {[r.name for r in language_dirs]}")
+    all_inputs = []
+
+    for lang_dir in language_dirs:
+        search_root = lang_dir / "poesie"
+        if not search_root.is_dir():
+            continue
+
+        birkenbihl_patterns = ["**/*_birkenbihl.txt", "**/*BIRKENBIHL*.txt"]
+        
+        inputs_for_lang = []
+        for pattern in birkenbihl_patterns:
+            inputs_for_lang.extend(search_root.glob(pattern))
+        
+        if inputs_for_lang:
+            print(f"✓ Gefunden: {len(inputs_for_lang)} Birkenbihl-Dateien in '{lang_dir.name}/poesie'")
+            for inp in sorted(inputs_for_lang):
+                print(f"  - {inp.relative_to(search_root)}")
+                all_inputs.append((inp, lang_dir.name))
+
+    if not all_inputs:
+        print(f"✗ Keine Birkenbihl-Dateien in Unterordnern gefunden – Abbruch."); sys.exit(1)
+
+    for inp, lang_name in all_inputs:
         try:
-            run_one(inp)
+            run_one(inp, lang_name)
         except subprocess.CalledProcessError as e:
             print(f"✗ Fehler bei {inp.name}: {e}")
 

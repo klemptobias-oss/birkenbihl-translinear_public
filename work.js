@@ -1,9 +1,11 @@
 // work.js — universelle Werkseite
 
+import { loadCatalog, getWorkMeta } from "./catalog.js";
+
 // 1) KONFIG
 const WORKER_BASE = "https://birkenbihl-draft-01.klemp-tobias.workers.dev"; // Externer Worker
 const TXT_BASE = "texte"; // texte/<kind>/<author>/<work>/
-const PDF_BASE = "pdf"; // pdf/<kind>/<author>/<work>/
+const PDF_BASE = "pdf"; // pdf/<kind>/<Sprache>/<author>/<work>/
 const DRAFT_BASE = "pdf_drafts"; // pdf_drafts/<kind>_drafts/<author>/<work>/
 
 // Tag-Definitionen (aus den Python-Codes)
@@ -100,13 +102,17 @@ const el = {
   closeResetModalBtn: document.getElementById("closeResetModal"),
   cancelResetBtn: document.getElementById("cancelReset"),
   confirmResetBtn: document.getElementById("confirmReset"),
+  grammarTagsBtn: document.getElementById("btnGrammarTags"), // Annahme: ID für den Button
 };
 
 // 5) State
 const state = {
+  lang: getParam("lang", "griechisch"),
   kind: getParam("kind", "poesie"), // poesie | prosa
   author: getParam("author", "Unsortiert"),
   work: getParam("work", "Unbenannt"),
+
+  workMeta: null, // Wird nach dem Laden des Katalogs gefüllt
 
   // UI-Optionen
   source: "original", // original | draft
@@ -243,12 +249,19 @@ function buildPdfFilename() {
 }
 
 function basePdfDir() {
+  if (!state.workMeta || !state.workMeta.path) {
+    console.error("Work metadata with path not loaded!");
+    return "pdf/error";
+  }
+
+  // Der Pfad aus catalog.json ist nun der vollständige relative Pfad.
+  // z.B. griechisch/poesie/Aischylos/Der_gefesselte_Prometheus
+  const complete_path = state.workMeta.path.replace(/_/g, " ");
+
   if (state.source === "original") {
-    return `${PDF_BASE}/${state.kind}/${state.author}/${state.work}`;
+    return `${PDF_BASE}/${complete_path}`;
   } else {
-    // Für Entwürfe: pdf_drafts/poesie_drafts/Autor/Werk/ oder pdf_drafts/prosa_drafts/Autor/Werk/
-    // Spiegelbildlich zu texte_drafts/poesie_drafts/ und texte_drafts/prosa_drafts/
-    return `${DRAFT_BASE}/${state.kind}_drafts/${state.author}/${state.work}`;
+    return `${DRAFT_BASE}/${complete_path}`;
   }
 }
 function buildPdfUrlFromSelection() {
@@ -267,12 +280,22 @@ function updatePdfView(fromWorker = false) {
   el.pdfFrame.src = url;
 }
 
-// 7) Texte laden (oben links + unten links)
+// 7) Texte laden (angepasst an die neue Struktur)
 async function loadTexts() {
-  const base = `${TXT_BASE}/${state.kind}/${state.author}/${state.work}`;
+  if (!state.workMeta || !state.workMeta.path) {
+    console.error("Work metadata with path not loaded!");
+    return;
+  }
+
+  // Der Pfad aus dem Katalog ist der vollständige relative Pfad.
+  const basePath = state.workMeta.path.replace(/_/g, " ");
+  const textBasePath = `texte/${basePath}`;
+
   // Original
   try {
-    const r = await fetch(`${base}/${state.work}.txt`, { cache: "no-store" });
+    const r = await fetch(`${textBasePath}/${state.work}.txt`, {
+      cache: "no-store",
+    });
     if (r.ok) {
       el.origText.textContent = await r.text();
     } else {
@@ -281,9 +304,10 @@ async function loadTexts() {
   } catch {
     el.origText.textContent = "Fehler beim Laden.";
   }
+
   // Birkenbihl
   try {
-    const r = await fetch(`${base}/${state.work}_birkenbihl.txt`, {
+    const r = await fetch(`${textBasePath}/${state.work}_birkenbihl.txt`, {
       cache: "no-store",
     });
     if (r.ok) {
@@ -882,18 +906,40 @@ function updateFontSize(elementId, change) {
 
 // 10) Init
 (async function init() {
-  // Titel
-  el.pageTitle.textContent = `${state.author} – ${state.work}`;
-
-  // Katalog für Meter-Fähigkeit
+  // Zuerst Katalog laden, um Metadaten zu erhalten
   try {
-    const cat = await fetchCatalog();
-    const meta = findMeta(cat, state.kind, state.author, state.work);
-    state.meterSupported = !!meta?.meter_capable; // true/false
+    const cat = await loadCatalog();
+    state.workMeta = getWorkMeta(
+      cat,
+      state.lang,
+      state.kind,
+      state.author,
+      state.work
+    );
+
+    if (!state.workMeta) {
+      throw new Error("Werk nicht im Katalog gefunden.");
+    }
+
+    state.meterSupported = state.workMeta.versmass; // true/false
+
+    // UI-Elemente basierend auf Metadaten aktualisieren
     el.meterRow.style.display = state.meterSupported ? "" : "none";
-  } catch {
-    /* ohne Katalog: kein Versmaß */
+
+    if (el.grammarTagsBtn) {
+      el.grammarTagsBtn.style.display = state.meterSupported ? "" : "none";
+    }
+  } catch (e) {
+    console.error("Fehler beim Laden des Katalogs oder der Werk-Metadaten:", e);
+    // Fallback: Versmaß-Optionen ausblenden
+    el.meterRow.style.display = "none";
+    if (el.grammarTagsBtn) el.grammarTagsBtn.style.display = "none";
   }
+
+  // Titel
+  el.pageTitle.textContent = `${
+    state.workMeta?.author_display || state.author
+  } – ${state.workMeta?.title || state.work}`;
 
   // Standard-Buttons als aktiv markieren
   document.querySelectorAll(".seg-btn").forEach((btn) => {
@@ -917,13 +963,17 @@ function updateFontSize(elementId, change) {
     const draftDownload = document.getElementById("btnDraftDownload");
 
     if (origDownload) {
-      const origUrl = `${TXT_BASE}/${state.kind}/${state.author}/${state.work}/${state.work}.txt`;
+      const origUrl = `texte/${state.workMeta.path.replace(/_/g, " ")}/${
+        state.work
+      }.txt`;
       origDownload.href = origUrl;
       origDownload.download = `${state.work}.txt`;
     }
 
     if (birkenbihlDownload) {
-      const birkenbihlUrl = `${TXT_BASE}/${state.kind}/${state.author}/${state.work}/${state.work}_birkenbihl.txt`;
+      const birkenbihlUrl = `texte/${state.workMeta.path.replace(/_/g, " ")}/${
+        state.work
+      }_birkenbihl.txt`;
       birkenbihlDownload.href = birkenbihlUrl;
       birkenbihlDownload.download = `${state.work}_birkenbihl.txt`;
     }

@@ -1,58 +1,69 @@
-// catalog.js – minimale Katalog-API für Start- und Werkseiten
-// Nutzung: import { loadCatalog, listKinds, listAuthorsByKind, listWorks, getWorkMeta } from './catalog.js';
+// catalog.js – API zur Navigation durch die hierarchische Werk-Datenbank (catalog.json)
+// Nutzung: import { loadCatalog, ... } from './catalog.js';
 
 let _cache = null;
 
 export async function loadCatalog() {
   if (_cache) return _cache;
-  const res = await fetch('./catalog.json', { cache: 'no-store' });
-  if (!res.ok) throw new Error('catalog.json konnte nicht geladen werden');
+  const res = await fetch("./catalog.json", { cache: "no-store" });
+  if (!res.ok) throw new Error("catalog.json konnte nicht geladen werden");
   _cache = await res.json();
   return _cache;
 }
 
-// "poesie" | "prosa"
-export function listKinds(cat) {
-  return Object.keys(cat);
+// Gibt alle verfügbaren Sprachen zurück.
+// z.B. ["Griechisch", "Latein"]
+export function listLanguages(cat) {
+  return Object.keys(cat?.Sprachen || {});
 }
 
-// Autorenobjekte je Kind, sortiert nach display
+// Gibt die Gattungen für eine gegebene Sprache zurück.
+// z.B. ["Poesie", "Prosa"]
+export function listKindsByLanguage(cat, language) {
+  const langNode = cat?.Sprachen?.[language] || {};
+  return Object.keys(langNode);
+}
+
+// Gibt die Autoren für eine gegebene Sprache und Gattung zurück.
 // Rückgabe-Element: { author: "Aischylos", display: "Aischylos" }
-export function listAuthorsByKind(cat, kind) {
-  const node = cat[kind] || {};
-  return Object.keys(node)
-    .map(a => ({ author: a, display: node[a].display || a }))
-    .sort((x, y) => x.display.localeCompare(y.display, 'de'));
+export function listAuthors(cat, language, kind) {
+  const kindNode = cat?.Sprachen?.[language]?.[kind] || {};
+  return Object.keys(kindNode)
+    .map((a) => ({ author: a, display: kindNode[a].display || a })) // Annahme: display-Name ist optional
+    .sort((x, y) => x.display.localeCompare(y.display, "de"));
 }
 
-// Werke je (kind, author), sortiert nach title
-// Rückgabe-Element: { id: "Der_gefesselte_Prometheus", title: "...", meter_capable: true|false }
-export function listWorks(cat, kind, author) {
-  const a = cat[kind]?.[author];
-  if (!a) return [];
-  return (a.works || []).slice().sort((x, y) => x.title.localeCompare(y.title, 'de'));
+// Gibt die Werke für einen gegebenen Pfad (Sprache, Gattung, Autor) zurück.
+// Rückgabe-Element: { id: "Der_gefesselte_Prometheus", title: "Der gefesselte Prometheus", versmass: true, path: "..." }
+export function listWorks(cat, language, kind, author) {
+  const authorNode = cat?.Sprachen?.[language]?.[kind]?.[author] || {};
+  return Object.keys(authorNode)
+    .map((workId) => {
+      const workData = authorNode[workId];
+      return {
+        id: workId,
+        title: workId.replace(/_/g, " "), // Erzeuge einen lesbaren Titel aus der ID
+        ...workData, // Enthält "path" und "versmass"
+      };
+    })
+    .sort((x, y) => x.title.localeCompare(y.title, "de"));
 }
 
-// Vollständige Metadaten eines Werks
-export function getWorkMeta(cat, kind, author, workId) {
-  const works = listWorks(cat, kind, author);
-  const w = works.find(x => x.id === workId);
+// Ruft die vollständigen Metadaten eines Werks ab.
+export function getWorkMeta(cat, language, kind, author, workId) {
+  const works = listWorks(cat, language, kind, author);
+  const w = works.find((x) => x.id === workId);
   if (!w) return null;
+
+  // Bestimme den Anzeigenamen des Autors (falls vorhanden, sonst Fallback)
+  const authorNode = cat?.Sprachen?.[language]?.[kind]?.[author] || {};
+  const author_display = authorNode.display || author;
+
   return {
+    language,
     kind,
     author,
-    author_display: cat[kind]?.[author]?.display || author,
-    ...w
-  };
-}
-
-// Hilfsfunktion: Dateipfade zu den .txts gemäß unserer Ordnerkonvention
-// - Original:   texte/<kind>/<author>/<work>.txt
-// - Birkenbihl: texte/<kind>/<author>/<work>_birkenbihl.txt
-export function txtPaths(kind, author, workId) {
-  const base = `texte/${kind}/${author}/${workId}`;
-  return {
-    original: `${base}.txt`,
-    birkenbihl: `${base}_birkenbihl.txt`
+    author_display,
+    ...w,
   };
 }

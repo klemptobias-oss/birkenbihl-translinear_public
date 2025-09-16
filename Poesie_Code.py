@@ -28,8 +28,16 @@ except ImportError:
 
 # ========= Optik / Einheiten =========
 MM = RL_MM
+
+# Hilfsfunktion für String-Breite
+def _sw(text: str, font_name: str, font_size: float) -> float:
+    """Berechnet die Breite eines Textes in Punkten."""
+    try:
+        return pdfmetrics.stringWidth(text, font_name, font_size)
+    except:
+        return len(text) * font_size * 0.6  # Fallback
 GR_SIZE = 8.4
-DE_SIZE = 7.8
+DE_SIZE = 7.0
 SECTION_SIZE = 12.0
 
 # Titel (geschweifte Klammern)
@@ -41,17 +49,24 @@ SECTION_SIZE       = 11.0  # kleiner als vorher (war 12.0)
 SECTION_SPACE_BEFORE_MM = 4.0  # kleinerer Abstand vor Überschrift
 SECTION_SPACE_AFTER_MM  = 3.0  # kleinerer Abstand nach Überschrift
 
-INTER_PAIR_GAP_MM = 12.0
+# Inter/Intra Pair Gaps - jetzt getrennt für Versmaß vs. Normal
+INTER_PAIR_GAP_MM_VERSMASS = 0.0    # Abstand zwischen Paaren bei Versmaß-PDFs
+INTER_PAIR_GAP_MM_NORMAL = 4.5       # Abstand zwischen Paaren bei normalen PDFs
+INTRA_PAIR_GAP_MM_VERSMASS = 1      # Abstand innerhalb Paaren bei Versmaß-PDFs
+INTRA_PAIR_GAP_MM_NORMAL = 1        # Abstand innerhalb Paaren bei normalen PDFs
+
+# Fallback für Kompatibilität (werden dynamisch gesetzt)
+INTER_PAIR_GAP_MM = 4.5
 INTRA_PAIR_GAP_MM = 1
 
 # Sprecher-Laterne (links)
-SPEAKER_COL_MIN_MM = .0   # breitere Laterne
-SPEAKER_GAP_MM     = 3.0    # größerer fester Abstand zwischen Laterne und Text
-NUM_GAP_MM         = 1.5
-SPEAKER_EXTRA_PAD_PT = 5.0   # zusätzlicher Puffer in Punkten, verhindert Zeilenumbruch von ":" etc.
+SPEAKER_COL_MIN_MM = 0.0   # breitere Laterne
+SPEAKER_GAP_MM     = 0.0    # größerer fester Abstand zwischen Laterne und Text
+NUM_GAP_MM         = 1.0
+SPEAKER_EXTRA_PAD_PT = 4.0   # zusätzlicher Puffer in Punkten, verhindert Zeilenumbruch von ":" etc.
 
-CELL_PAD_LR_PT      = 2.1
-SAFE_EPS_PT         = 5.5
+CELL_PAD_LR_PT      = 0.0
+SAFE_EPS_PT         = 0.5
 CURRENT_IS_NOTAGS = False   # wird in create_pdf() anhand des Ziel-Dateinamens gesetzt
 METER_ADJUST_LEFT_PT  = 1.6  # Schieberegler für Silben LINKS von |
 METER_ADJUST_RIGHT_PT = 1.6  # Schieberegler für Silben RECHTS von |
@@ -76,17 +91,21 @@ def center_word_in_width(word_html: str, word_width_pt: float, total_width_pt: f
 
 # ------- EINSTELLUNGEN (gemeinsames CFG wie im Epos-Code) -------
 CFG = {
-    'TAG_WIDTH_FACTOR_TAGGED': 0.9,    # vorher effektiv ~1.30 → etwas enger
-    'TOKEN_BASE_PAD_PT_TAGS': 1.0,     # Grundpuffer bei getaggten Tokens (klein)
-    'TOKEN_BASE_PAD_PT_NOTAGS': 1.3,   # Grundpuffer bei ungetaggten Tokens (sichtbar)
-    'NUM_COLOR': colors.HexColor('#777'),
+    'TAG_WIDTH_FACTOR_TAGGED': 0.8,    # vorher effektiv ~1.30 → etwas enger
+    'TOKEN_PAD_PT_VERSMASS_TAG': 2.0,    # Regler für Abstand zwischen Wörtern bei _Versmaß+Tag PDFs
+    'TOKEN_PAD_PT_VERSMASS_NOTAG': 4,  # Regler für Abstand zwischen Wörtern bei _Versmaß+NoTag PDFs
+    'TOKEN_PAD_PT_NORMAL_TAG': 1,      # Regler für Abstand zwischen Wörtern bei Normal+Tag PDFs
+    'TOKEN_PAD_PT_NORMAL_NOTAG': 2.0,    # Regler für Abstand zwischen Wörtern bei Normal+NoTag PDFs
+    'NUM_COLOR': colors.black,
     'NUM_SIZE_FACTOR': 0.84,
     # Versmaß (wie im Epos-Code)
     'TOPLINE_Y_FACTOR': 2.5,
-    'LONG_THICK_PT': 1.4,
+    'LONG_THICK_PT': 0.9,
     'BREVE_HEIGHT_PT': 3.8,
-    'BAR_THICK_PT': 0.9,
-    'TAG_WIDTH_FACTOR': 0.85,  # wie im Epos-Code
+    'BAR_THICK_PT': 0.8,
+    'TAG_WIDTH_FACTOR': 0.80,  # wie im Epos-Code
+    'TOKEN_BASE_PAD_PT_TAGS': 1.0,     # Grundpuffer bei getaggten Tokens (klein)
+    'TOKEN_BASE_PAD_PT_NOTAGS': 1.3,   # Grundpuffer bei ungetaggten Tokens (sichtbar)
 }
 
 # ========= Tags/Regex =========
@@ -930,16 +949,28 @@ def process_input_file(fname:str):
     return blocks
 
 # ========= Tabellenbau – NUM → Sprecher → Einrückung → Tokens =========
-def build_tables_for_pair(gr_tokens, de_tokens, *,
-                          speaker:str = '',
-                          line_label:str = '',
-                          doc_width_pt:float = 0.0,
-                          token_gr_style=None, token_de_style=None, num_style=None, style_speaker=None,
-                          gr_bold:bool = False,
-                          reserve_speaker_col: bool = False,
+def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str], 
                           indent_pt: float = 0.0,
                           global_speaker_width_pt: float = None,
-                          meter_on: bool = False):
+                          meter_on: bool = False,
+                          tag_mode: str = "TAGS",
+                          speaker: str = "",
+                          reserve_speaker_col: bool = False,
+                          line_label: str = "",
+                          doc_width_pt: float = None,
+                          token_gr_style = None,
+                          token_de_style = None,
+                          num_style = None,
+                          style_speaker = None,
+                          gr_bold: bool = False):
+    # Standardwerte setzen falls nicht übergeben
+    if doc_width_pt is None:
+        doc_width_pt = A4[0] - 40*MM  # A4-Breite minus Ränder
+    if num_style is None:
+        num_style = ParagraphStyle('Default', fontName='DejaVu', fontSize=8)
+    if global_speaker_width_pt is None:
+        global_speaker_width_pt = 0.0
+    
     # linke Spaltenbreiten
     # Nummernspalte
     num_w   = max(6.0*MM, _sw('[999]', num_style.fontName, num_style.fontSize) + 2.0)
@@ -967,14 +998,27 @@ def build_tables_for_pair(gr_tokens, de_tokens, *,
     gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
     de = de_tokens[:] + [''] * (cols - len(de_tokens))
 
-    # Effektive cfg abhängig von meter_on (Versmaß an/aus)
+    # Effektive cfg abhängig von meter_on (Versmaß an/aus) und tag_mode
     eff_cfg = dict(CFG)
     if meter_on:
         eff_cfg['CELL_PAD_LR_PT'] = 0.0   # MUSS 0 SEIN für lückenlose Topline
-        eff_cfg['SAFE_EPS_PT']     = 3.0  # wie im Epos angemessen klein
+        if tag_mode == "TAGS":
+            eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_TAG', 1.0)
+        else:
+            eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_NOTAG', 0.5)
+        # Versmaß-spezifische Gaps
+        eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_VERSMASS
+        eff_cfg['INTRA_PAIR_GAP_MM'] = INTRA_PAIR_GAP_MM_VERSMASS
     else:
-        eff_cfg['CELL_PAD_LR_PT'] = 2.1   # bisheriger Standard
-        eff_cfg['SAFE_EPS_PT']     = 5.5  # bisheriger Standard
+        # Für normale PDFs ist ein kleiner Zell-Innenabstand gut, der Hauptabstand kommt vom Token-Pad.
+        eff_cfg['CELL_PAD_LR_PT'] = 0.5
+        if tag_mode == "TAGS":
+            eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_NORMAL_TAG', 4.0)
+        else:
+            eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_NORMAL_NOTAG', 3.0)
+        # Normal-spezifische Gaps
+        eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL
+        eff_cfg['INTRA_PAIR_GAP_MM'] = INTRA_PAIR_GAP_MM_NORMAL
 
     # Breiten
     widths = []
@@ -1062,7 +1106,7 @@ def build_tables_for_pair(gr_tokens, de_tokens, *,
         num_para_de = _p('\u00A0', num_style)
         num_gap_gr  = _p('', token_gr_style); num_gap_de = _p('', token_de_style)
 
-        sp_para_gr  = _p(f'<font color="#777">{xml_escape(f"[{speaker}]:")}</font>', style_speaker) if (first_slice and sp_w>0 and speaker) else _p('', style_speaker)
+        sp_para_gr  = _p(xml_escape(f"[{speaker}]:"), style_speaker) if (first_slice and sp_w>0 and speaker) else _p('', style_speaker)
         sp_para_de  = _p('', style_speaker)
         sp_gap_gr   = _p('', token_gr_style); sp_gap_de = _p('', token_de_style)
 
@@ -1123,6 +1167,18 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
     global PLACEMENT_OVERRIDES
     PLACEMENT_OVERRIDES = dict(placement_overrides or {})
     
+    # Versmaß-spezifische Abstände setzen
+    global INTER_PAIR_GAP_MM, INTRA_PAIR_GAP_MM
+    if versmass_display:
+        INTER_PAIR_GAP_MM = INTER_PAIR_GAP_MM_VERSMASS
+        INTRA_PAIR_GAP_MM = INTRA_PAIR_GAP_MM_VERSMASS
+    else:
+        INTER_PAIR_GAP_MM = INTER_PAIR_GAP_MM_NORMAL
+        INTRA_PAIR_GAP_MM = INTRA_PAIR_GAP_MM_NORMAL
+    
+    # Debug-Ausgabe
+    print(f"DEBUG: versmass_display={versmass_display}, INTER_PAIR_GAP_MM={INTER_PAIR_GAP_MM}, INTRA_PAIR_GAP_MM={INTRA_PAIR_GAP_MM}")
+    
     left_margin = 10*MM
     right_margin = 10*MM
     doc = SimpleDocTemplate(
@@ -1155,7 +1211,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
         alignment=TA_CENTER, spaceAfter=TITLE_SPACE_AFTER*MM, keepWithNext=True)
     style_speaker = ParagraphStyle('Speaker', parent=base['Normal'],
         fontName='DejaVu', fontSize=DE_SIZE, leading=_leading_for(DE_SIZE),
-        alignment=TA_LEFT, textColor=colors.HexColor('#777'))
+        alignment=TA_LEFT, textColor=colors.black)
         
              # Globale Sprecher-Spaltenbreite (max über alle Sprecher) mit Puffer
     def _speaker_col_width(text:str) -> float:
@@ -1448,4 +1504,9 @@ if __name__ == '__main__':
             print("⚠ Keine InputKomödie* / InputTragödie* gefunden.")
         else:
             run_batch(inputs)
+
+# ========= PDF-Erstellung mit Versmaß-spezifischen Abständen =========
+# Die ursprüngliche create_pdf Funktion wurde bereits oben definiert und 
+# enthält bereits die Versmaß-spezifische Logik. Diese doppelte Definition
+# wurde entfernt, um Endlosschleifen zu vermeiden.
 

@@ -101,7 +101,7 @@ SOURCE_RIGHT_INDENT_MM = 10.0  # Einzug für Quellen von rechts
 INLINE_EXTRA_PT = 3.0          # Zusätzlicher Platz für Inline-Elemente
 INLINE_COLOR_HEX = "#777"      # Farbe für Inline-Elemente
 INLINE_SCALE = 0.84            # Skalierung für Inline-Elemente (korrigiert)
-NUM_COLOR_HEX = "#777"          # Farbe für Zahlen
+NUM_COLOR_HEX = "#000000"          # Farbe für Zahlen
 
 # ----------------------- KONFIGURATIONS-FUNKTION -----------------------
 # Zentrale Funktion zur Erstellung der kompletten Konfiguration
@@ -736,7 +736,7 @@ def build_tables_for_stream(gr_tokens, de_tokens, *,
         slice_gr, slice_de, slice_w = gr[i:j], de[i:j], widths[i:j]
 
         # linke Zusatzspalten
-        sp_cell_gr = Paragraph(f'<font color="#777">{xml_escape(speaker_display)}</font>', style_speaker) if (first_slice and speaker_width_pt>0 and speaker_display) else Paragraph('', style_speaker)
+        sp_cell_gr = Paragraph(xml_escape(speaker_display), style_speaker) if (first_slice and speaker_width_pt>0 and speaker_display) else Paragraph('', style_speaker)
         sp_cell_de = Paragraph('', style_speaker)
         sp_gap_gr  = Paragraph('', token_gr_style); sp_gap_de = Paragraph('', token_de_style)
 
@@ -885,7 +885,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)
     style_speaker = ParagraphStyle('Speaker', parent=base['Normal'],
         fontName='DejaVu', fontSize=de_size, leading=_leading_for(de_size),
-        alignment=TA_JUSTIFY, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0, textColor=colors.HexColor('#777'))
+        alignment=TA_JUSTIFY, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0, textColor=colors.black)
 
     # Die Blöcke kommen jetzt vorverarbeitet und tokenisiert an.
     flow_blocks = blocks

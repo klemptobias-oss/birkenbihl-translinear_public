@@ -38,21 +38,25 @@ def run_one(input_path: Path) -> None:
     else:
         print("⚠ Keine Tag-Konfiguration gefunden, verwende Standard-Konfiguration des Runners")
 
-    # Extrahiere Autor und Werk aus dem Pfad
-    # input_path: texte_drafts/poesie_drafts/Autor/Werk/datei.txt
-    # relative_to(SRC_ROOT): Autor/Werk/datei.txt
+    # Extrahiere Sprache, Autor und Werk aus dem Pfad
+    # Pfad: texte_drafts/<Sprache>/poesie/<Autor>/<Werk>/datei.txt
     try:
-        relative_path = input_path.relative_to(SRC_ROOT)
-        path_parts = relative_path.parts
-        author = path_parts[0]
-        work = path_parts[1] if len(path_parts) > 1 else ""
-    except ValueError:
-        # Fallback, wenn die Datei außerhalb des erwarteten Pfades liegt
+        parts = input_path.parts
+        texte_drafts_index = parts.index("texte_drafts")
+        
+        language = parts[texte_drafts_index + 1]
+        # gattung "poesie" ist an index + 2
+        author = parts[texte_drafts_index + 3]
+        work = parts[texte_drafts_index + 4]
+
+    except (ValueError, IndexError):
+        # Fallback, wenn die Struktur nicht wie erwartet ist
         author = "unknown"
         work = "unknown"
+        language = "unknown"
     
-    # Erstelle Zielordner: pdf_drafts/poesie_drafts/Autor/Werk/
-    target_dir = DST_BASE / author / work
+    # Korrigierte Zielordner-Struktur: pdf_drafts/<Sprache>/poesie/<Autor>/<Werk>/
+    target_dir = ROOT / "pdf_drafts" / language / "poesie" / author / work
     target_dir.mkdir(parents=True, exist_ok=True)
     
     # Erstelle .gitkeep Datei um sicherzustellen, dass der Ordner bei Git gepusht wird
