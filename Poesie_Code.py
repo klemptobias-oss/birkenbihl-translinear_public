@@ -191,7 +191,7 @@ RE_TAG_NAKED = re.compile(r'\(\s*[A-Za-z/≈äöüßÄÖÜ]+\s*\)')
 RE_GREEK_CHARS = re.compile(r'[\u0370-\u03FF\u1F00-\u1FFF]')
 RE_TAG_FINDALL = re.compile(r'\(\s*([A-Za-z/≈äöüßÄÖÜ]+)\s*\)')
 RE_TAG_STRIP   = re.compile(r'\(\s*[A-Za-z/≈äöüßÄÖÜ]+\s*\)')
-RE_LEADING_BAR_COLOR = re.compile(r'^\|\s*([+\-#])')  # |+ |# |- am Tokenanfang
+RE_LEADING_BAR_COLOR = re.compile(r'^\|\s*([+\-#§$])')  # |+ |# |- am Tokenanfang
 
 # Sprecher-Tokens: [Χορ:] bzw. Λυσ:
 RE_SPK_BRACKET = re.compile(r'^\[[^\]]*:\]$')                         # [Χορ:]
@@ -220,8 +220,8 @@ def pre_substitutions(s:str) -> str:
     if not s: return s
     punct = r'(?:,|\.|;|:|!|\?|%|…|\u00B7|\u0387|\u037E)'
     s = re.sub(rf'\s+{punct}', lambda m: m.group(0).lstrip(), s)
-    s = re.sub(r'([\(\[\{\«“‹‘])\s+', r'\1', s)
-    s = re.sub(r'\s+([\)\]\}\»”›’])', r'\1', s)
+    s = re.sub(r'([\(\[\{\«"‹''])\s+', r'\1', s)
+    s = re.sub(r'\s+([\)\]\}\»"›''])', r'\1', s)
     s = re.sub(r'[\u200B\u200C\u200D\uFEFF\u00A0]', '', s)
     s = re.sub(r'\(([#\+\-])', r'\1(', s)
     s = re.sub(r'\[([#\+\-])', r'\1[', s)
@@ -265,6 +265,8 @@ def _color_from_marker(ch):
     if ch == '+': return '#1E90FF'
     if ch == '-': return '#228B22'
     if ch == '#': return '#FF0000'
+    if ch == '§': return '#FF00FF'  # Magenta
+    if ch == '$': return '#FFA500'  # Orange
     return None
 
 def _strip_leading_bar_color(core: str):
@@ -654,7 +656,7 @@ def visible_measure_token(token:str, *, font:str, size:float, cfg, is_greek_row:
         w = _sw(nobreak_chars(vis), font, size)
         return w + cfg.get('SAFE_EPS_PT', 3.0) + 2 * cfg.get('CELL_PAD_LR_PT', 0.0)
 
-    for color_char in ['#', '+', '-']:
+    for color_char in ['#', '+', '-', '§', '$']:
         t = t.replace(color_char, '')
     t = t.replace('~', '')
 
@@ -700,6 +702,8 @@ def format_token_markup(token:str, *, is_greek_row:bool, gr_bold:bool, remove_ba
     if '#' in raw: color_pos = raw.find('#'); color = '#FF0000'
     elif '+' in raw: color_pos = raw.find('+'); color = '#1E90FF'
     elif '-' in raw: color_pos = raw.find('-'); color = '#228B22'
+    elif '§' in raw: color_pos = raw.find('§'); color = '#FF00FF'  # Magenta
+    elif '$' in raw: color_pos = raw.find('$'); color = '#FFA500'  # Orange
     if color_pos >= 0: raw = raw[:color_pos] + raw[color_pos+1:]
     raw = raw.replace('~','')
 
@@ -1119,19 +1123,6 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
     global PLACEMENT_OVERRIDES
     PLACEMENT_OVERRIDES = dict(placement_overrides or {})
     
-    # Preprocessing mit Tag-Konfiguration anwenden
-    if tag_config:
-        try:
-            # Konvertiere tag_config zu preprocess payload
-            payload = {
-                "color_mode": "BlackWhite" if pdf_name.lower().endswith("_blackwhite.pdf") else "Colour",
-                "tag_config": tag_config,
-                "versmass": "KEEP_MARKERS" if versmass_display else "NORMAL"
-            }
-            blocks = preprocess.apply_from_payload(blocks, payload)
-            print(f"Preprocessing angewendet: {len(tag_config.get('sup_tags', []))} SUP, {len(tag_config.get('sub_tags', []))} SUB")
-        except Exception as e:
-            print(f"Fehler beim Preprocessing: {e}")
     left_margin = 10*MM
     right_margin = 10*MM
     doc = SimpleDocTemplate(

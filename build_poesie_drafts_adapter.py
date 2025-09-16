@@ -1,6 +1,6 @@
 ######## START: build_poesie_drafts_adapter.py ########
 from pathlib import Path
-import subprocess, sys, json
+import subprocess, sys, json, re
 
 ROOT = Path(__file__).parent.resolve()
 SRC_ROOT = ROOT / "texte_drafts" / "poesie_drafts"       # Eingaben
@@ -8,17 +8,48 @@ DST_BASE = ROOT / "pdf_drafts" / "poesie_drafts"         # Ausgaben (spiegelbild
 
 RUNNER = ROOT / "poesie_pdf.py"                          # 24 Varianten (Poesie)
 
-def run_one(input_path: Path, tag_config: dict = None) -> None:
+def extract_tag_config_from_file(file_path: Path) -> dict:
+    """
+    Extrahiert die TAG_CONFIG aus der ersten Zeile der Datei.
+    """
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            first_line = f.readline().strip()
+            
+        # Suche nach dem HTML-Kommentar mit der TAG_CONFIG
+        match = re.search(r'<!-- TAG_CONFIG:(.*?) -->', first_line)
+        if match:
+            json_str = match.group(1)
+            return json.loads(json_str)
+        else:
+            return {}
+    except Exception as e:
+        print(f"⚠ Fehler beim Extrahieren der Tag-Konfiguration aus {file_path}: {e}")
+        return {}
+
+def run_one(input_path: Path) -> None:
     if not input_path.is_file():
         print(f"⚠ Datei fehlt: {input_path} — übersprungen"); return
+
+    # Extrahiere Tag-Konfiguration aus der Datei
+    tag_config = extract_tag_config_from_file(input_path)
+    if tag_config:
+        print(f"✓ Tag-Konfiguration aus Datei extrahiert: {len(tag_config)} Regeln")
+    else:
+        print("⚠ Keine Tag-Konfiguration gefunden, verwende Standard-Konfiguration des Runners")
 
     # Extrahiere Autor und Werk aus dem Pfad
     # input_path: texte_drafts/poesie_drafts/Autor/Werk/datei.txt
     # relative_to(SRC_ROOT): Autor/Werk/datei.txt
-    relative_path = input_path.relative_to(SRC_ROOT)
-    path_parts = relative_path.parts
-    author = path_parts[0]
-    work = path_parts[1] if len(path_parts) > 1 else ""
+    try:
+        relative_path = input_path.relative_to(SRC_ROOT)
+        path_parts = relative_path.parts
+        author = path_parts[0]
+        work = path_parts[1] if len(path_parts) > 1 else ""
+    except ValueError:
+        # Fallback, wenn die Datei außerhalb des erwarteten Pfades liegt
+        author = "unknown"
+        work = "unknown"
     
     # Erstelle Zielordner: pdf_drafts/poesie_drafts/Autor/Werk/
     target_dir = DST_BASE / author / work
@@ -32,32 +63,18 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     # Extrahiere den Basisnamen der Eingabedatei (ohne .txt)
     input_stem = input_path.stem
     
-    # Lese den Text und extrahiere Tag-Konfiguration
+    # Lese den Text und entferne die Konfigurationszeile
     text_content = input_path.read_text(encoding="utf-8")
-    tag_config = None
-    
-    # Suche nach Tag-Konfiguration im Text
-    import re
-    config_match = re.search(r'<!-- TAG_CONFIG:(.+?) -->', text_content)
-    if config_match:
-        try:
-            import json
-            tag_config = json.loads(config_match.group(1))
-            print(f"✓ Tag-Konfiguration gefunden: {len(tag_config.get('tag_colors', {}))} Farben, {len(tag_config.get('hidden_tags', []))} versteckte Tags")
-        except Exception as e:
-            print(f"⚠ Fehler beim Parsen der Tag-Konfiguration: {e}")
-    
-    # Entferne Tag-Konfiguration aus dem Text für die Verarbeitung
-    clean_text = re.sub(r'<!-- TAG_CONFIG:.+? -->\n?', '', text_content)
+    clean_text = re.sub(r'<!-- TAG_CONFIG:.+? -->\n?', '', text_content, count=1)
     
     # Schreibe bereinigten Text in temporäre Datei
     temp_input = ROOT / f"temp_{input_path.name}"
     temp_input.write_text(clean_text, encoding="utf-8")
     
     before = {p.name for p in ROOT.glob("*.pdf")}
-    print(f"→ Erzeuge PDFs für: {input_path}")
+    print(f"→ Erzeuge PDFs für: {temp_input.name}")
     
-    # Erstelle temporäre Konfigurationsdatei für Tag-Einstellungen
+    # Erstelle temporäre Konfigurationsdatei für Tag-Einstellungen, falls eine Konfig vorhanden ist
     config_file = None
     if tag_config:
         config_file = ROOT / "temp_tag_config.json"
@@ -70,14 +87,13 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
         if config_file:
             cmd.extend(["--tag-config", str(config_file)])
         
-        # Führe den Runner aus und übertrage Tag-Konfiguration
-        result = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True)
-        if result.returncode != 0:
-            print(f"Fehler beim Ausführen des Runners: {result.stderr}")
-            return
+        # Führe den Runner aus
+        result = subprocess.run(cmd, cwd=str(ROOT), check=True, capture_output=True, text=True)
         print(result.stdout)
-    except Exception as e:
-        print(f"Fehler beim Ausführen des Runners: {e}")
+
+    except subprocess.CalledProcessError as e:
+        print(f"Fehler beim Ausführen des Runners für {input_path.name}:")
+        print(e.stderr)
         return
     finally:
         # Lösche temporäre Dateien
@@ -92,36 +108,32 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     if not new_pdfs:
         print("⚠ Keine PDFs erzeugt."); return
 
-    # Filtere nur die PDFs, die zu dieser Eingabedatei gehören
-    # Berücksichtige sowohl den ursprünglichen Namen als auch den temp_ Namen
-    temp_stem = f"temp_{input_path.name.replace('.txt', '')}"
-    relevant_pdfs = [name for name in new_pdfs if name.startswith(input_stem) or name.startswith(temp_stem)]
+    # Der Runner benennt die PDFs nach dem temporären Dateinamen.
+    # Wir müssen sie zurück auf den originalen Stammnamen umbenennen.
+    temp_stem = temp_input.stem
     
-    if not relevant_pdfs:
-        print(f"⚠ Keine passenden PDFs für {input_stem} gefunden."); return
-
-    for name in relevant_pdfs:
-        src = ROOT / name
-        dst = target_dir / name
-        src.replace(dst)
-        print(f"✓ PDF → {dst}")
+    for name in new_pdfs:
+        if name.startswith(temp_stem):
+            # Ersetze den temporären Stamm durch den originalen
+            final_name = name.replace(temp_stem, input_stem, 1)
+            src = ROOT / name
+            dst = target_dir / final_name
+            src.replace(dst)
+            print(f"✓ PDF → {dst}")
 
 def main():
+    # Dieser Adapter wird typischerweise mit genau einem Dateipfad aufgerufen.
     if len(sys.argv) < 2:
-        print("Verwendung: python build_poesie_drafts_adapter.py <input_file> [tag_config.json]")
+        print(f"Verwendung: python {sys.argv[0]} <input_file_path>")
         sys.exit(1)
     
     input_file = Path(sys.argv[1])
-    tag_config = None
     
-    # Lade Tag-Konfiguration falls vorhanden
-    if len(sys.argv) > 2:
-        config_file = Path(sys.argv[2])
-        if config_file.exists():
-            with open(config_file, 'r', encoding='utf-8') as f:
-                tag_config = json.load(f)
-    
-    run_one(input_file, tag_config)
+    if not input_file.exists():
+        print(f"✗ Eingabedatei nicht gefunden: {input_file}")
+        sys.exit(1)
+
+    run_one(input_file)
 
 if __name__ == "__main__":
     main()

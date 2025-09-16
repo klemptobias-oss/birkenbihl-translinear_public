@@ -1,3 +1,4 @@
+<!-- TAG_CONFIG:{"nomen_N":{"color":"magenta","placement":"sup"},"nomen_G":{"color":"magenta","placement":"sup"},"nomen_D":{"color":"magenta","placement":"sup"},"nomen_A":{"color":"magenta","placement":"sup"},"nomen_V":{"color":"magenta","placement":"sup"},"verb_Pra":{"color":"green","placement":"sub"},"verb_Imp":{"color":"green","placement":"sub"},"verb_Aor":{"color":"green","placement":"sub"},"verb_AorS":{"color":"green","placement":"sub"},"verb_Per":{"color":"green","placement":"sub"},"verb_Plq":{"color":"green","placement":"sub"},"verb_Fu":{"color":"magenta","placement":"sub"},"verb_Akt":{"color":"magenta","placement":"sub"},"verb_Med":{"color":"magenta","placement":"sub"},"verb_Pas":{"color":"magenta","placement":"sub"},"verb_MP":{"color":"magenta","placement":"sub"},"verb_Inf":{"color":"green","placement":"sub"},"verb_Op":{"color":"green","placement":"sub"},"verb_Knj":{"color":"green","placement":"sub"},"verb_Imv":{"color":"green","placement":"sub"},"partizip_Pra":{"color":"blue","placement":"sub"},"partizip_Imp":{"color":"blue","placement":"sub"},"partizip_Aor":{"color":"orange","placement":"sub"},"partizip_AorS":{"color":"orange","placement":"sub"},"partizip_Per":{"color":"orange","placement":"sub"},"partizip_Plq":{"color":"orange","placement":"sub"},"partizip_Fu":{"color":"orange","placement":"sub"},"partizip_N":{"color":"blue","placement":"sup"},"partizip_G":{"color":"blue","placement":"sup"},"partizip_D":{"color":"blue","placement":"sup"},"partizip_A":{"color":"blue","placement":"sup"},"partizip_V":{"color":"blue","placement":"sup"},"partizip_Akt":{"color":"blue","placement":"sub"},"partizip_Med":{"color":"blue","placement":"sub"},"partizip_Pas":{"color":"blue","placement":"sub"},"partizip_MP":{"color":"blue","placement":"sub"},"adjektiv_N":{"color":"blue","placement":"sup"},"adjektiv_G":{"color":"blue","placement":"sup"},"adjektiv_D":{"color":"blue","placement":"sup"},"adjektiv_A":{"color":"blue","placement":"sup"},"adjektiv_V":{"color":"blue","placement":"sup"},"adjektiv_Kmp":{"color":"blue","placement":"sup"},"adjektiv_Sup":{"color":"blue","placement":"sup"},"adjektiv":{"placement":"sup"},"adverb":{"placement":"sup","color":"orange"},"adverb_Kmp":{"placement":"sup","color":"orange"},"adverb_Sup":{"placement":"sup","color":"orange"},"pronomen":{"placement":"sub","color":"magenta"},"pronomen_N":{"placement":"sup","color":"magenta"},"pronomen_G":{"placement":"sup","color":"magenta"},"pronomen_D":{"placement":"sup","color":"magenta"},"pronomen_A":{"placement":"sup","color":"magenta"},"artikel":{"placement":"sup","color":"orange"},"artikel_N":{"placement":"sup","color":"orange"},"artikel_G":{"placement":"sup","color":"orange"},"artikel_D":{"placement":"sup","color":"orange"},"artikel_A":{"placement":"sup","color":"orange"},"prp":{"placement":"sup"},"kon":{"placement":"sup"},"pt":{"placement":"sup"},"ij":{"placement":"sup"}} -->
 (1) [ΚΡΑΤ:] ΧθοiνὸςL(G) |μὲνi(Pt) ἐςL(Prp) |τηLλουL|ρὸνi(Adj)(A) ἥL|κοiμενL(Prä)(Akt) |πέiδονL(A),|
 (1) [ΚΡΑΤ:] der|Erde, zwar, in fern sind|gekommen das|Land,
 
@@ -103,7 +104,7 @@
 (35) ἅiπαςL(Adj)(N) |δὲi(Pt) τραL|χὺςi(Adj)(N) ὅL|στιςi(Pr)(N) ἂνL(Pt) |νέiονL(Adv) |κραiτῇL(Prä)(Akt)(Knj).|
 (35) ganz aber rau wer wohl neulich herrsche.
 
-(36) [ΚΡΑΤ:] εἶLενL(ij), |τίi(Adv) μέλL|λειςL(Prä)(Akt) καὶL(Kon) |καiτοιL|κτίLζῃL(Prä)(Akt)(Knj) |μάiτηνL(Adv);|
+(36) [ΚΡΑΤ:] εἶLενL(Ij), |τίi(Adv) μέλL|λειςL(Prä)(Akt) καὶL(Kon) |καiτοιL|κτίLζῃL(Prä)(Akt)(Knj) |μάiτηνL(Adv);|
 (36) [ΚΡΑΤ:] wohl|denn, warum zögerst und bejammerst du vergebens;
 
 (37) τίi(Adv) τὸνL(Art)(A) |θεiοῖςL(D) |ἔχLθιL|στονi(Adj)(Sup)(A) οὐL(Pt) |στυiγεῖςL(Prä)(Akt) |θεiόνL(A),|
@@ -130,7 +131,7 @@
 (44) τὰi(Art)(A) μηL|δὲνi(Pr)(A) ὠL|φεiλοῦνL|ταi(Prä)(Akt)(A) μὴL(Pt) |πόiνειL(Prä)(Imv)(Akt) |μάiτηνL(Adv).|
 (44) die nichts nützenden nicht mühe|dich vergebens.
 
-(45) [ΗΦΑΙ:] ὦL(ij) πολL|λὰi(Adv) μιL|σηLθεῖL|σαi(Aor)(Pas)(N) χειL|ρωLναL|ξίiαL(N).|
+(45) [ΗΦΑΙ:] ὦL(Ij) πολL|λὰi(Adv) μιL|σηLθεῖL|σαi(Aor)(Pas)(N) χειL|ρωLναL|ξίiαL(N).|
 (45) [ΗΦΑΙ:] o vielfach gehasste Hand|werk.
 
 (46) [ΚΡΑΤ:] τίi(Adv) νινL(Pr)(A) |στυiγεῖςL(Prä)(Akt); |πόiνωνL(G) |γὰρi(Pt) ὡςL(Kon) |ἁiπλῷL(Adj)(D) |λόiγῳL(D)|
@@ -193,7 +194,7 @@
 (65) στέρLνωνL(G) |διiαμL|πὰξL(Adv) πασL|σάiλευL|ε(Prä)(Imv)(Akt) ἐρLρωL|μέiνωςL(Adv).|
 (65) der|Brüste ganz|hindurch pfahle kräftig.
 
-(66) [ΗΦΑΙ:] αἰLαῖL(ij), |ΠροiμηL|θεῦL(V), σῶνL(Pr)(G) |ὑiπερL|στέiνωL(Prä)(Akt) |πόiνωνL(G).|
+(66) [ΗΦΑΙ:] αἰLαῖL(Ij), |ΠροiμηL|θεῦL(V), σῶνL(Pr)(G) |ὑiπερL|στέiνωL(Prä)(Akt) |πόiνωνL(G).|
 (66) [ΗΦΑΙ:] ach, o|Prometheus, deiner über|stöhne|ich Leiden.
 
 (67) [ΚΡΑΤ:] σὺi(Pr)(N) δʼ(Pt) αὖL(Pt) |καiτοL|κνεῖςL(Prä)(Akt) τῶνL(Art)(G) |ΔιiόςL(G) |τʼ(Pt) ἐχLθρῶνL(G) |ὕiπερL(Prp)|
