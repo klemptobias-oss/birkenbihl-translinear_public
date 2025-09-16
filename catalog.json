@@ -1,69 +1,43 @@
 {
-  "poesie": {
-    "Aischylos": {
-      "display": "Aischylos",
-      "works": [
-        {
-          "id": "Der_gefesselte_Prometheus",
-          "title": "Der gefesselte Prometheus",
-          "meter_capable": true
-        }
-      ]
-    },
-    "Sophokles": {
-      "display": "Sophokles",
-      "works": [
-        {
-          "id": "Aias",
-          "title": "Aias",
-          "meter_capable": false
-        }
-      ]
-    }
-  },
-  "prosa": {
-    "Platon": {
-      "display": "Platon",
-      "works": [
-        {
-          "id": "Menon",
-          "title": "Menon",
-          "meter_capable": false
-        }
-      ]
-    }
-  },
   "Sprachen": {
     "griechisch": {
-      "Prosa": {
-        "Platon": {
-          "Menon": {
-            "path": "griechisch/Prosa/Platon/Menon",
+      "poesie": {
+        "Aristophanes": {
+          "Plutos": {
+            "path": "griechisch/poesie/Aristophanes/Plutos",
+            "versmass": false
+          }
+        },
+        "Aischylos": {
+          "Der_gefesselte_Prometheus": {
+            "path": "griechisch/poesie/Aischylos/Der_gefesselte_Prometheus",
             "versmass": true
           }
         }
       },
-      "Poesie": {
-        "Aischylos": {
-          "Der_gefesselte_Prometheus": {
-            "path": "griechisch/Poesie/Aischylos/Der_gefesselte_Prometheus",
-            "versmass": true
-          }
-        },
-        "Aristophanes": {
-          "Plutos": {
-            "path": "griechisch/Poesie/Aristophanes/Plutos",
-            "versmass": true
+      "prosa": {
+        "Platon": {
+          "Menon": {
+            "path": "griechisch/prosa/Platon/Menon",
+            "versmass": false
           }
         }
       }
     },
     "latein": {
-      "Poesie": {
+      "poesie": {
         "Aischylos": {
           "Der_gefesselte_Prometheus": {
-            "path": "latein/Poesie/Aischylos/Der_gefesselte_Prometheus",
+            "path": "latein/poesie/Aischylos/Der_gefesselte_Prometheus",
             "versmass": true
+          }
+        }
+      },
+      "prosa": {
+        "Platon": {
+          "Menon": {
+            "path": "latein/prosa/Platon/Menon",
+            "versmass": false
           }
         }
       }

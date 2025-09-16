@@ -1,7 +1,7 @@
 ######## START: build_prosa_adapter.py ########
 from pathlib import Path
 import subprocess, sys
-from shared.catalog_updater import update_catalog
+# from shared.catalog_updater import update_catalog <-- Entfernt
 
 ROOT = Path(__file__).parent.resolve()
 RUNNER = ROOT / "prosa_pdf.py"
@@ -59,8 +59,8 @@ def run_one(input_path: Path, language: str) -> None:
         src.replace(dst)
         print(f"✓ PDF → {dst}")
 
-    # Katalog aktualisieren
-    update_catalog(language, "Prosa", author, work, input_path)
+    # Katalog aktualisieren <-- Entfernt
+    # update_catalog(language, "Prosa", author, work, input_path)
 
 def main():
     if not RUNNER.exists():
