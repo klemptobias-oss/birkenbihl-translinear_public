@@ -77,8 +77,8 @@ def center_word_in_width(word_html: str, word_width_pt: float, total_width_pt: f
 # ------- EINSTELLUNGEN (gemeinsames CFG wie im Epos-Code) -------
 CFG = {
     'TAG_WIDTH_FACTOR_TAGGED': 0.9,    # vorher effektiv ~1.30 → etwas enger
-    'TOKEN_BASE_PAD_PT_TAGS': 1.5,     # Grundpuffer bei getaggten Tokens (klein)
-    'TOKEN_BASE_PAD_PT_NOTAGS': 2.0,   # Grundpuffer bei ungetaggten Tokens (sichtbar)
+    'TOKEN_BASE_PAD_PT_TAGS': 1.0,     # Grundpuffer bei getaggten Tokens (klein)
+    'TOKEN_BASE_PAD_PT_NOTAGS': 1.3,   # Grundpuffer bei ungetaggten Tokens (sichtbar)
     'NUM_COLOR': colors.HexColor('#777'),
     'NUM_SIZE_FACTOR': 0.84,
     # Versmaß (wie im Epos-Code)
@@ -389,7 +389,7 @@ class ToplineTokenFlowable(Flowable):
 
     def _bar_x_positions(self, font:str, size:float):
         t = self.token_raw.strip()
-        if t and t[0] in '#+-': t_work = t[1:]
+        if t and t[0] in '#+-§$': t_work = t[1:]
         else: t_work = t
         t_no_tags = RE_TAG_STRIP.sub('', t_work)
 
