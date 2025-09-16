@@ -504,23 +504,29 @@ function showTagConfigModal() {
     const tbody = document.createElement("tbody");
 
     if (group.leader) {
-      // Gruppen-Anführer-Zeile
-      const leaderRow = createTableRow(group.leader, true);
-      leaderRow.dataset.group = group.leader.id;
-      tbody.appendChild(leaderRow);
+      // Gruppen-Anführer-Zeile nur anzeigen, wenn er einen konfigurierbaren Tag hat
+      if (group.leader.tag) {
+        const leaderRow = createTableRow(group.leader, true);
+        leaderRow.dataset.group = group.leader.id;
+        tbody.appendChild(leaderRow);
+      }
 
-      // Trennlinie
-      const separatorRow = document.createElement("tr");
-      separatorRow.classList.add("group-separator");
-      separatorRow.innerHTML = `<td colspan="9"></td>`;
-      tbody.appendChild(separatorRow);
+      // Trennlinie nur anzeigen, wenn es Mitglieder gibt
+      if (group.members && group.members.length > 0) {
+        const separatorRow = document.createElement("tr");
+        separatorRow.classList.add("group-separator");
+        separatorRow.innerHTML = `<td colspan="9"></td>`;
+        tbody.appendChild(separatorRow);
+      }
 
       // Mitglieder-Zeilen
-      group.members.forEach((member) => {
-        const memberRow = createTableRow(member);
-        memberRow.dataset.group = group.leader.id;
-        tbody.appendChild(memberRow);
-      });
+      if (group.members) {
+        group.members.forEach((member) => {
+          const memberRow = createTableRow(member);
+          memberRow.dataset.group = group.leader.id;
+          tbody.appendChild(memberRow);
+        });
+      }
     } else if (group.standalone) {
       const standaloneRow = createTableRow(group.standalone);
       tbody.appendChild(standaloneRow);
@@ -577,9 +583,22 @@ function applyInitialConfig() {
   }
 
   // Standardplatzierungen anwenden
-  const allItems = tagConfigDefinition.flatMap(
-    (g) => g.members || [g.standalone]
-  );
+  const allItems = tagConfigDefinition.flatMap((g) => {
+    const items = [];
+    // Füge den Leader hinzu, wenn er einen Tag hat
+    if (g.leader && g.leader.tag) {
+      items.push(g.leader);
+    }
+    // Füge die Members hinzu
+    if (g.members) {
+      items.push(...g.members);
+    }
+    // Füge Standalone-Items hinzu
+    if (g.standalone) {
+      items.push(g.standalone);
+    }
+    return items;
+  });
   allItems.forEach((item) => {
     if (item && item.tag) {
       if (SUP_TAGS.includes(item.tag)) {

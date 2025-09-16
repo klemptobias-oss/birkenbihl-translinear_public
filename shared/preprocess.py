@@ -291,31 +291,37 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                 if not wortart:
                     continue
                 
-                # Finde die relevanteste Regel basierend auf der Hierarchie
+                # Finde die relevanteste Regel basierend auf der Prioritäts-Hierarchie
                 best_rule_config = None
-                highest_rank = -1
+                highest_priority = -1
 
+                # 1. Prüfe Gruppenanführer-Regel zuerst (niedrigste Priorität)
+                group_leader_id = f"{wortart}"
+                group_leader_config = config.get(group_leader_id)
+                if group_leader_config and 'color' in group_leader_config:
+                    best_rule_config = group_leader_config
+                    highest_priority = 0
+
+                # 2. Prüfe alle spezifischen Tags (höhere Priorität = weiter unten in der Tabelle)
                 for tag in relevant_tags:
                     rule_id = f"{wortart}_{tag}"
                     # Versuche auch normalisierte Versionen für Draft-Kompatibilität
                     normalized_rule_id = _normalize_rule_id(rule_id)
                     
                     rule_config = config.get(rule_id) or config.get(normalized_rule_id)
-                    if rule_config:
-                        rank = -1
-                        # Prüfe, ob der Tag in der Hierarchie-Liste für die Wortart ist
+                    if rule_config and 'color' in rule_config:
+                        # Bestimme Priorität basierend auf Position in der HIERARCHIE
+                        priority = 0
                         if wortart in HIERARCHIE and tag in HIERARCHIE[wortart]:
-                            rank = HIERARCHIE[wortart].index(tag)
+                            # Höhere Priorität = weiter unten in der Liste
+                            priority = HIERARCHIE[wortart].index(tag) + 1
+                        else:
+                            # Fallback: Tags ohne Hierarchie bekommen Standard-Priorität
+                            priority = 100
                         
-                        if rank > highest_rank:
-                            highest_rank = rank
-                            best_rule_config = config[rule_id]
-
-                # Gruppenanführer-Regel als Fallback
-                if not best_rule_config:
-                    group_leader_id = f"{wortart}"
-                    if group_leader_id in config:
-                        best_rule_config = config[group_leader_id]
+                        if priority > highest_priority:
+                            highest_priority = priority
+                            best_rule_config = rule_config
                 
                 # Regel anwenden (aktuell nur Farbe)
                 if best_rule_config and 'color' in best_rule_config:
