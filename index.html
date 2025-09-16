@@ -9,15 +9,17 @@
       .tree {
         background: var(--card);
         border: 1px solid var(--edge);
-        border-radius: 16px;
-        padding: 12px;
+        border-radius: 0px; /* Eckig statt rund */
+        padding: 20px; /* Mehr Abstand zum Inhalt */
+        margin: 20px 0;
       }
       h2.language-header {
-        font-size: 1.8em;
+        font-size: 2.2em; /* Größer für Sprachen */
         margin-top: 20px;
-        margin-bottom: 10px;
-        padding-bottom: 5px;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
         border-bottom: 2px solid var(--edge);
+        font-weight: bold;
       }
       .node {
         display: flex;
@@ -43,7 +45,7 @@
       .children {
         margin-left: 24px;
         padding-left: 8px;
-        border-left: 1px dashed var(--edge);
+        /* Entfernt: border-left: 1px dashed var(--edge); */
       }
       .toolbar {
         display: flex;
@@ -111,6 +113,18 @@
         left: 3px;
         top: 15px;
       }
+
+      /* Schriftgrößen für verschiedene Ebenen */
+      .kind-label {
+        font-size: 1.4em; /* Größer für Kategorien (Poesie/Prosa) */
+        font-weight: bold;
+      }
+      .author-label {
+        font-size: 1.1em; /* Normal für Autoren */
+      }
+      .work-label {
+        font-size: 1.1em; /* Normal für Werke */
+      }
     </style>
   </head>
   <body>
@@ -118,26 +132,10 @@
       <div class="bar">
         <div class="title">Birkenbihl / Translinear Übersetzungen</div>
       </div>
-      <div class="notice">
-        Wähle <b>Textsorte → Autor → Werk</b>. Links führen zur universellen
-        Werkseite. <br /><small
-          >Katalog: <code>catalog.json</code>. Neue Einträge nur dort
-          ergänzen.</small
-        >
-      </div>
-
-      <div class="toolbar">
-        <button class="btn" id="expand">Alles aufklappen</button>
-        <button class="btn" id="collapse">Alles zuklappen</button>
-      </div>
 
       <nav class="tree" aria-label="Werke-Navigation" id="catalogContainer">
         <!-- Der Katalog wird hier dynamisch eingefügt -->
       </nav>
-
-      <div class="hint">
-        Tipp: Mit den kleinen Kästchen (–/+) klappst du Zweige auf/zu.
-      </div>
     </div>
 
     <script type="module">
@@ -149,7 +147,7 @@
         listWorks,
       } from "./catalog.js";
 
-      function createToggleable(labelText, open = true) {
+      function createToggleable(labelText, open = true, cssClass = "") {
         const li = document.createElement("li");
         const node = document.createElement("div");
         node.className = "node";
@@ -161,7 +159,7 @@
         tg.textContent = open ? "–" : "+";
 
         const label = document.createElement("span");
-        label.className = "label branch";
+        label.className = `label branch ${cssClass}`;
         label.textContent = labelText;
 
         node.appendChild(tg);
@@ -220,19 +218,23 @@
           for (const kind of kinds) {
             const kindNode = createToggleable(
               kind.charAt(0).toUpperCase() + kind.slice(1),
-              true
+              true,
+              "kind-label"
             );
             rootUl.appendChild(kindNode.li);
 
             // Ebene 3: Autoren
             const authors = listAuthors(cat, lang, kind);
             for (const a of authors) {
-              const aNode = createToggleable(a.display, true);
+              const aNode = createToggleable(a.display, true, "author-label");
               kindNode.ul.appendChild(aNode.li);
 
               // Ebene 4: Werke
               const works = listWorks(cat, lang, kind, a.author);
               for (const w of works) {
+                const workNode = createToggleable(w.title, true, "work-label");
+                aNode.ul.appendChild(workNode.li);
+
                 const url = `work.html?lang=${encodeURIComponent(
                   lang
                 )}&kind=${encodeURIComponent(kind)}&author=${encodeURIComponent(
@@ -242,26 +244,11 @@
                   "Originaltext + Birkenbihl" +
                   (w.versmass ? " (Versmaß-fähig)" : "");
                 const workLeaf = createLeafLink(linkText, url);
-                aNode.ul.appendChild(workLeaf);
+                workNode.ul.appendChild(workLeaf);
               }
             }
           }
         }
-
-        // Buttons "Alles auf/zu"
-        const expand = document.getElementById("expand");
-        const collapse = document.getElementById("collapse");
-        function setAll(open) {
-          document.querySelectorAll(".toggle").forEach((tg) => {
-            tg.setAttribute("aria-expanded", String(open));
-            tg.textContent = open ? "–" : "+";
-          });
-          document.querySelectorAll(".children").forEach((ul) => {
-            ul.style.display = open ? "" : "none";
-          });
-        }
-        expand?.addEventListener("click", () => setAll(true));
-        collapse?.addEventListener("click", () => setAll(false));
       })();
     </script>
   </body>
