@@ -465,6 +465,8 @@ def _normalize_tag_name(tag: str) -> str:
         tag = tag.replace('pronomen', 'pr')
     if tag.startswith('artikel'):
         tag = tag.replace('artikel', 'art')
+    if tag.startswith('adjektiv'):
+        tag = tag.replace('adjektiv', 'adj')
     
     # Normalisiere Standalone-Tags zu den korrekten Tag-Namen
     if tag == 'pr':
