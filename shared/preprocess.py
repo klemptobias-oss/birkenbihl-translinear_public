@@ -466,6 +466,26 @@ def _normalize_tag_name(tag: str) -> str:
     if tag.startswith('artikel'):
         tag = tag.replace('artikel', 'art')
     
+    # Normalisiere Standalone-Tags zu den korrekten Tag-Namen
+    if tag == 'pr':
+        return 'Pr'
+    elif tag == 'adj':
+        return 'Adj'
+    elif tag == 'kon':
+        return 'Kon'
+    elif tag == 'pt':
+        return 'Pt'
+    elif tag == 'art':
+        return 'Art'
+    elif tag == 'prp':
+        return 'Prp'
+    elif tag == 'adv':
+        return 'Adv'
+    elif tag == 'ij':
+        return 'ij'
+    elif tag == 'MP':
+        return 'M/P'
+    
     return tag
 
 def _normalize_rule_id(rule_id: str) -> str:
@@ -473,7 +493,8 @@ def _normalize_rule_id(rule_id: str) -> str:
     Normalisiert Regel-IDs für Kompatibilität mit Draft-Dateien.
     """
     if '_' not in rule_id:
-        return rule_id
+        # Für Standalone-Tags (ohne Unterstrich)
+        return _normalize_tag_name(rule_id)
     
     parts = rule_id.split('_')
     if len(parts) >= 2:
@@ -522,7 +543,13 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             # Normalisiere die Regel-ID für Draft-Kompatibilität
             normalized_rule_id = _normalize_rule_id(rule_id)
             
-            tag = normalized_rule_id.split('_')[-1] if '_' in normalized_rule_id else None
+            # Extrahiere Tag aus der Regel-ID
+            if '_' in normalized_rule_id:
+                tag = normalized_rule_id.split('_')[-1]
+            else:
+                # Für Standalone-Tags (ohne Unterstrich)
+                tag = normalized_rule_id
+            
             if not tag: continue
 
             if conf.get('hide'):
