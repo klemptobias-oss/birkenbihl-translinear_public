@@ -282,18 +282,25 @@ function updatePdfView(fromWorker = false) {
 
 // 7) Texte laden (angepasst an die neue Struktur)
 async function loadTexts() {
-  if (!state.workMeta || !state.workMeta.path) {
-    console.error("Work metadata with path not loaded!");
+  if (
+    !state.workMeta ||
+    !state.workMeta.path ||
+    !state.workMeta.filename_base
+  ) {
+    console.error("Work metadata with path and filename_base not loaded!");
+    el.origText.textContent = "Fehler: Werk-Metadaten unvollständig.";
+    el.birkenbihlText.textContent = "Fehler: Werk-Metadaten unvollständig.";
     return;
   }
 
   // Der Pfad aus dem Katalog ist der vollständige relative Pfad.
   const basePath = state.workMeta.path.replace(/_/g, " ");
   const textBasePath = `texte/${basePath}`;
+  const filenameBase = state.workMeta.filename_base;
 
   // Original
   try {
-    const r = await fetch(`${textBasePath}/${state.work}.txt`, {
+    const r = await fetch(`${textBasePath}/${filenameBase}.txt`, {
       cache: "no-store",
     });
     if (r.ok) {
@@ -307,7 +314,7 @@ async function loadTexts() {
 
   // Birkenbihl
   try {
-    const r = await fetch(`${textBasePath}/${state.work}_birkenbihl.txt`, {
+    const r = await fetch(`${textBasePath}/${filenameBase}_birkenbihl.txt`, {
       cache: "no-store",
     });
     if (r.ok) {
@@ -961,21 +968,24 @@ function updateFontSize(elementId, change) {
     const origDownload = document.getElementById("btnOrigDownload");
     const birkenbihlDownload = document.getElementById("btnBirkenbihlDownload");
     const draftDownload = document.getElementById("btnDraftDownload");
+    const filenameBase = state.workMeta?.filename_base || state.work;
 
     if (origDownload) {
-      const origUrl = `texte/${state.workMeta.path.replace(/_/g, " ")}/${
-        state.work
-      }.txt`;
+      const origUrl = `texte/${state.workMeta.path.replace(
+        /_/g,
+        " "
+      )}/${filenameBase}.txt`;
       origDownload.href = origUrl;
-      origDownload.download = `${state.work}.txt`;
+      origDownload.download = `${filenameBase}.txt`;
     }
 
     if (birkenbihlDownload) {
-      const birkenbihlUrl = `texte/${state.workMeta.path.replace(/_/g, " ")}/${
-        state.work
-      }_birkenbihl.txt`;
+      const birkenbihlUrl = `texte/${state.workMeta.path.replace(
+        /_/g,
+        " "
+      )}/${filenameBase}_birkenbihl.txt`;
       birkenbihlDownload.href = birkenbihlUrl;
-      birkenbihlDownload.download = `${state.work}_birkenbihl.txt`;
+      birkenbihlDownload.download = `${filenameBase}_birkenbihl.txt`;
     }
 
     if (draftDownload) {

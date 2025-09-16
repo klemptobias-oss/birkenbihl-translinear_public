@@ -5,13 +5,15 @@
         "Aristophanes": {
           "Plutos": {
             "path": "griechisch/poesie/Aristophanes/Plutos",
-            "versmass": false
+            "versmass": false,
+            "filename_base": "Plutos"
           }
         },
         "Aischylos": {
           "Der_gefesselte_Prometheus": {
             "path": "griechisch/poesie/Aischylos/Der_gefesselte_Prometheus",
-            "versmass": true
+            "versmass": true,
+            "filename_base": "Der_gefesselte_Prometheus"
           }
         }
       },
@@ -19,7 +21,8 @@
         "Platon": {
           "Menon": {
             "path": "griechisch/prosa/Platon/Menon",
-            "versmass": false
+            "versmass": false,
+            "filename_base": "Menon"
           }
         }
       }
@@ -29,7 +32,8 @@
         "Aischylos": {
           "Der_gefesselte_Prometheus": {
             "path": "latein/poesie/Aischylos/Der_gefesselte_Prometheus",
-            "versmass": true
+            "versmass": true,
+            "filename_base": "Der_gefesselte_Prometheus"
           }
         }
       },
@@ -37,7 +41,8 @@
         "Platon": {
           "Menon": {
             "path": "latein/prosa/Platon/Menon",
-            "versmass": false
+            "versmass": false,
+            "filename_base": "Menon"
           }
         }
       }

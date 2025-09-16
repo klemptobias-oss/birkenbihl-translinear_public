@@ -4,6 +4,7 @@ from pathlib import Path
 # Definiere das Wurzelverzeichnis des Projekts
 ROOT = Path(__file__).parent.resolve()
 PDF_ROOT = ROOT / "pdf"
+TEXTE_ROOT = ROOT / "texte" # NEU: Pfad zum Texte-Verzeichnis
 CATALOG_PATH = ROOT / "catalog.json"
 
 def generate_catalog():
@@ -44,7 +45,20 @@ def generate_catalog():
                     work = work_dir.name
                     print(f"        - Werk: {work}")
 
-                    # Prüfe auf Versmaß-Fähigkeit
+                    # Finde den Basis-Dateinamen im entsprechenden 'texte'-Verzeichnis
+                    base_filename = work # Fallback
+                    text_work_dir = TEXTE_ROOT / language / kind / author / work
+                    if text_work_dir.is_dir():
+                        birkenbihl_files = list(text_work_dir.glob("*_birkenbihl.txt"))
+                        if birkenbihl_files:
+                            base_filename = birkenbihl_files[0].name.replace("_birkenbihl.txt", "")
+                            print(f"          ✓ Basis-Dateiname gefunden: {base_filename}")
+                        else:
+                            print(f"          ⚠ Kein '_birkenbihl.txt' in {text_work_dir} gefunden, verwende Ordnernamen als Fallback.")
+                    else:
+                        print(f"          ⚠ Text-Verzeichnis {text_work_dir} nicht gefunden.")
+
+                    # Prüfe auf Versmaß-Fähigkeit im 'pdf'-Verzeichnis
                     has_versmass = False
                     pdf_files = list(work_dir.glob("*.pdf"))
                     if not pdf_files:
@@ -63,7 +77,8 @@ def generate_catalog():
                     
                     catalog["Sprachen"][language][kind][author][work] = {
                         "path": work_path,
-                        "versmass": has_versmass
+                        "versmass": has_versmass,
+                        "filename_base": base_filename # NEU: Der exakte Dateiname
                     }
 
     # Schreibe die neue catalog.json

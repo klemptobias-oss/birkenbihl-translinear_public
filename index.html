@@ -61,6 +61,56 @@
       .notice small {
         color: var(--muted);
       }
+
+      /* NEU: Styles für die Baum-Visualisierung */
+      .tree .root {
+        padding-left: 0;
+      }
+      .tree ul {
+        list-style-type: none;
+        padding-left: 20px;
+      }
+      .tree li {
+        position: relative;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .tree li::before,
+      .tree li::after {
+        content: "";
+        position: absolute;
+        left: -12px;
+      }
+      /* Horizontale Linie */
+      .tree li::before {
+        border-top: 1px solid var(--edge);
+        top: 18px; /* Vertikale Position anpassen */
+        width: 15px;
+        height: 0;
+      }
+      /* Vertikale Linie */
+      .tree li::after {
+        border-left: 1px solid var(--edge);
+        height: 100%;
+        width: 0px;
+        top: -12px; /* Startpunkt anpassen */
+      }
+      /* Keine vertikale Linie für das letzte Element in einer Liste */
+      .tree li:last-child::after {
+        height: 30px;
+      }
+      /* Kleines Quadrat am "Ende" der Linie (vor dem Text) */
+      .tree .node::after {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: var(--edge);
+        position: absolute;
+        left: 3px;
+        top: 15px;
+      }
     </style>
   </head>
   <body>
