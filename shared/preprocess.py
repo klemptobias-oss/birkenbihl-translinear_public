@@ -479,6 +479,11 @@ def _normalize_rule_id(rule_id: str) -> str:
     if len(parts) >= 2:
         wortart = parts[0]
         tag = '_'.join(parts[1:])  # In case there are multiple underscores
+        
+        # Spezielle Behandlung für M/P Tag in Regel-IDs
+        if tag == 'M/P':
+            return f"{wortart}_MP"
+        
         normalized_tag = _normalize_tag_name(tag)
         return f"{wortart}_{normalized_tag}"
     
