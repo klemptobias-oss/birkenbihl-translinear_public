@@ -254,9 +254,11 @@ function basePdfDir() {
     return "pdf/error";
   }
 
-  // Der Pfad aus catalog.json ist nun der vollständige relative Pfad.
+  // Der Pfad aus catalog.json ist der vollständige relative Pfad mit Sprachebene.
   // z.B. griechisch/poesie/Aischylos/Der_gefesselte_Prometheus
   const complete_path = state.workMeta.path.replace(/_/g, " ");
+
+  console.log("Building PDF directory path:", complete_path);
 
   if (state.source === "original") {
     return `${PDF_BASE}/${complete_path}`;
@@ -293,10 +295,13 @@ async function loadTexts() {
     return;
   }
 
-  // Der Pfad aus dem Katalog ist der vollständige relative Pfad.
+  // Der Pfad aus dem Katalog ist der vollständige relative Pfad mit Sprachebene.
+  // z.B. "griechisch/poesie/Aischylos/Der_gefesselte_Prometheus"
   const basePath = state.workMeta.path.replace(/_/g, " ");
   const textBasePath = `texte/${basePath}`;
   const filenameBase = state.workMeta.filename_base;
+
+  console.log("Loading texts from:", textBasePath);
 
   // Original
   try {
@@ -305,11 +310,17 @@ async function loadTexts() {
     });
     if (r.ok) {
       el.origText.textContent = await r.text();
+      console.log("Original text loaded successfully");
     } else {
-      el.origText.textContent = "Original nicht gefunden.";
+      el.origText.textContent = `Original nicht gefunden: ${textBasePath}/${filenameBase}.txt`;
+      console.error(
+        "Original text not found:",
+        `${textBasePath}/${filenameBase}.txt`
+      );
     }
-  } catch {
+  } catch (e) {
     el.origText.textContent = "Fehler beim Laden.";
+    console.error("Error loading original text:", e);
   }
 
   // Birkenbihl
@@ -321,11 +332,17 @@ async function loadTexts() {
       const text = await r.text();
       state.originalBirkenbihlText = text; // Original speichern
       el.birkenbihlText.innerHTML = addSpansToTags(text);
+      console.log("Birkenbihl text loaded successfully");
     } else {
-      el.birkenbihlText.textContent = "Birkenbihl-Text nicht gefunden.";
+      el.birkenbihlText.textContent = `Birkenbihl-Text nicht gefunden: ${textBasePath}/${filenameBase}_birkenbihl.txt`;
+      console.error(
+        "Birkenbihl text not found:",
+        `${textBasePath}/${filenameBase}_birkenbihl.txt`
+      );
     }
-  } catch {
+  } catch (e) {
     el.birkenbihlText.textContent = "Fehler beim Laden.";
+    console.error("Error loading birkenbihl text:", e);
   }
 }
 
@@ -977,6 +994,7 @@ function updateFontSize(elementId, change) {
       )}/${filenameBase}.txt`;
       origDownload.href = origUrl;
       origDownload.download = `${filenameBase}.txt`;
+      console.log("Original download URL:", origUrl);
     }
 
     if (birkenbihlDownload) {
@@ -986,6 +1004,7 @@ function updateFontSize(elementId, change) {
       )}/${filenameBase}_birkenbihl.txt`;
       birkenbihlDownload.href = birkenbihlUrl;
       birkenbihlDownload.download = `${filenameBase}_birkenbihl.txt`;
+      console.log("Birkenbihl download URL:", birkenbihlUrl);
     }
 
     if (draftDownload) {
