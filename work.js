@@ -15,6 +15,7 @@ const SUP_TAGS = [
   "G",
   "A",
   "V",
+  "Du",
   "Adj",
   "Pt",
   "Prp",
@@ -80,8 +81,9 @@ const el = {
   birkenbihlText: document.getElementById("birkenbihlText"),
   draftText: document.getElementById("draftText"),
   meterRow: document.getElementById("opt-meter-row"),
-  pdfFrame: document.getElementById("pdfFrame"),
+  pdfRenderer: document.getElementById("pdfRenderer"),
   draftFile: document.getElementById("draftFile"),
+  draftFileLabel: document.getElementById("draftFileLabel"),
   draftBtn: document.getElementById("btnRenderDraft"),
   draftStatus: document.getElementById("draftStatus"),
 
@@ -96,7 +98,9 @@ const el = {
 
   // Neue Elemente
   toggleBirkenbihlTagsBtn: document.getElementById("toggleBirkenbihlTags"),
+  toggleBirkenbihlMetrumBtn: document.getElementById("toggleBirkenbihlMetrum"),
   toggleDraftTagsBtn: document.getElementById("toggleDraftTags"),
+  toggleDraftMetrumBtn: document.getElementById("toggleDraftMetrum"),
   resetDraftBtn: document.getElementById("resetDraft"),
   resetDraftModal: document.getElementById("resetDraftModal"),
   closeResetModalBtn: document.getElementById("closeResetModal"),
@@ -135,20 +139,30 @@ const state = {
   },
 };
 
+// Debug: URL-Parameter ausgeben
+console.log("URL-Parameter:", {
+  lang: state.lang,
+  kind: state.kind,
+  author: state.author,
+  work: state.work,
+  fullUrl: location.href,
+});
+
 // Neue, strukturierte Definition für die Konfigurationstabelle
 const tagConfigDefinition = [
   {
-    leader: { id: "nomen", display: "Nomen" },
+    leader: { id: "nomen", display: "Nomen", tag: "Nomen" },
     members: [
       { id: "nomen_N", display: "Nominativ (N)", tag: "N" },
       { id: "nomen_G", display: "Genitiv (G)", tag: "G" },
       { id: "nomen_D", display: "Dativ (D)", tag: "D" },
       { id: "nomen_A", display: "Akkusativ (A)", tag: "A" },
       { id: "nomen_V", display: "Vokativ (V)", tag: "V" },
+      { id: "nomen_Du", display: "Dual (Du)", tag: "Du" },
     ],
   },
   {
-    leader: { id: "verb", display: "Verben" },
+    leader: { id: "verb", display: "Verben", tag: "Verben" },
     members: [
       { id: "verb_Pra", display: "Präsenz(Prä)", tag: "Prä" },
       { id: "verb_Imp", display: "Imperfekt (Imp)", tag: "Imp" },
@@ -157,6 +171,7 @@ const tagConfigDefinition = [
       { id: "verb_Per", display: "Perfekt (Per)", tag: "Per" },
       { id: "verb_Plq", display: "Plusquamperfekt (Plq)", tag: "Plq" },
       { id: "verb_Fu", display: "Futur (Fu)", tag: "Fu" },
+      { id: "verb_Du", display: "Dual (Du)", tag: "Du" },
       { id: "verb_Akt", display: "Aktiv (Akt)", tag: "Akt" },
       { id: "verb_Med", display: "Medium (Med)", tag: "Med" },
       { id: "verb_Pas", display: "Passiv (Pas)", tag: "Pas" },
@@ -168,7 +183,7 @@ const tagConfigDefinition = [
     ],
   },
   {
-    leader: { id: "partizip", display: "Partizipien" },
+    leader: { id: "partizip", display: "Partizipien", tag: "Partizipien" },
     members: [
       { id: "partizip_Pra", display: "Präsenz(Prä)", tag: "Prä" },
       { id: "partizip_Imp", display: "Imperfekt (Imp)", tag: "Imp" },
@@ -182,6 +197,7 @@ const tagConfigDefinition = [
       { id: "partizip_D", display: "Dativ (D)", tag: "D" },
       { id: "partizip_A", display: "Akkusativ (A)", tag: "A" },
       { id: "partizip_V", display: "Vokativ (V)", tag: "V" },
+      { id: "partizip_Du", display: "Dual (Du)", tag: "Du" },
       { id: "partizip_Akt", display: "Aktiv (Akt)", tag: "Akt" },
       { id: "partizip_Med", display: "Medium (Med)", tag: "Med" },
       { id: "partizip_Pas", display: "Passiv (Pas)", tag: "Pas" },
@@ -196,6 +212,7 @@ const tagConfigDefinition = [
       { id: "adjektiv_D", display: "Dativ (D)", tag: "D" },
       { id: "adjektiv_A", display: "Akkusativ (A)", tag: "A" },
       { id: "adjektiv_V", display: "Vokativ (V)", tag: "V" },
+      { id: "adjektiv_Du", display: "Dual (Du)", tag: "Du" },
       { id: "adjektiv_Kmp", display: "Komparativ (Kmp)", tag: "Kmp" },
       { id: "adjektiv_Sup", display: "Superlativ (Sup)", tag: "Sup" },
     ],
@@ -214,6 +231,7 @@ const tagConfigDefinition = [
       { id: "pronomen_G", display: "Genitiv (G)", tag: "G" },
       { id: "pronomen_D", display: "Dativ (D)", tag: "D" },
       { id: "pronomen_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "pronomen_Du", display: "Dual (Du)", tag: "Du" },
     ],
   },
   {
@@ -223,9 +241,10 @@ const tagConfigDefinition = [
       { id: "artikel_G", display: "Genitiv (G)", tag: "G" },
       { id: "artikel_D", display: "Dativ (D)", tag: "D" },
       { id: "artikel_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "artikel_Du", display: "Dual (Du)", tag: "Du" },
     ],
   },
-  // Standalone items (keine eigene Gruppe)
+  // Einzelne Grammatik-Tags als normale Zeilen (nicht als Gruppenleiter)
   { standalone: { id: "prp", display: "Präposition (Prp)", tag: "Prp" } },
   { standalone: { id: "kon", display: "Konjunktion (Kon)", tag: "Kon" } },
   { standalone: { id: "pt", display: "Partikel (Pt)", tag: "Pt" } },
@@ -237,15 +256,32 @@ const tagConfigDefinition = [
 // PDF-Dateiname gemäß deiner Konvention:
 // <Work>_birkenbihl_<Strength>_<Colour|BlackWhite>_<Tag|NoTags>[_Versmaß].pdf
 function buildPdfFilename() {
-  const parts = [
-    state.work,
-    "birkenbihl",
-    state.strength,
-    state.color,
-    state.tags === "Tag" ? "Tag" : "NoTags",
-  ];
-  if (state.meterSupported && state.meter === "with") parts.push("Versmaß");
-  return parts.join("_") + ".pdf";
+  if (!state.workMeta || !state.workMeta.filename_base) {
+    console.error("Work metadata with filename_base not loaded!");
+    return "error.pdf";
+  }
+
+  let filename = state.workMeta.filename_base;
+  console.log("Building filename from base:", filename, "with options:", {
+    source: state.source,
+    strength: state.strength,
+    color: state.color,
+    tags: state.tags,
+    meter: state.meter,
+  });
+
+  // Alle Dateien haben "birkenbihl" im Namen
+  filename += "_birkenbihl";
+  if (state.strength === "GR_Fett") filename += "_GR_Fett";
+  else if (state.strength === "DE_Fett") filename += "_DE_Fett";
+  if (state.color === "BlackWhite") filename += "_BlackWhite";
+  else if (state.color === "Colour") filename += "_Colour";
+  if (state.tags === "NoTags") filename += "_NoTags";
+  else if (state.tags === "Tag") filename += "_Tag";
+  if (state.meterSupported && state.meter === "with") filename += "_Versmaß";
+
+  console.log("Generated filename:", filename + ".pdf");
+  return filename + ".pdf";
 }
 
 function basePdfDir() {
@@ -256,15 +292,15 @@ function basePdfDir() {
 
   // Der Pfad aus catalog.json ist der vollständige relative Pfad mit Sprachebene.
   // z.B. griechisch/poesie/Aischylos/Der_gefesselte_Prometheus
-  const complete_path = state.workMeta.path.replace(/_/g, " ");
+  const complete_path = state.workMeta.path;
 
+  console.log("Work Meta Path:", state.workMeta.path);
   console.log("Building PDF directory path:", complete_path);
+  console.log("PDF Base:", PDF_BASE, "Draft Base:", DRAFT_BASE);
+  console.log("Source:", state.source);
 
-  if (state.source === "original") {
-    return `${PDF_BASE}/${complete_path}`;
-  } else {
-    return `${DRAFT_BASE}/${complete_path}`;
-  }
+  // Alle Dateien sind Birkenbihl-Versionen, daher verwenden wir den gleichen Pfad
+  return `${PDF_BASE}/${complete_path}`;
 }
 function buildPdfUrlFromSelection() {
   const name = buildPdfFilename();
@@ -274,12 +310,40 @@ function buildPdfUrlFromSelection() {
 function updatePdfView(fromWorker = false) {
   // Wenn Entwurf gewählt UND wir haben gerade eine Worker-URL -> die bevorzugen
   if (state.source === "draft" && state.lastDraftUrl && fromWorker) {
-    el.pdfFrame.src = state.lastDraftUrl;
+    loadPdfIntoRenderer(state.lastDraftUrl);
     return;
   }
-  // Andernfalls normaler statischer Pfad
-  const url = buildPdfUrlFromSelection();
-  el.pdfFrame.src = url;
+
+  // Sicherstellen, dass pdfOptions mit state synchronisiert sind
+  pdfOptions.strength = state.strength || "Normal";
+  pdfOptions.color = state.color || "Colour";
+  pdfOptions.tags = state.tags || "Tag";
+  // Versmaß-Logik: Verwende state.meter (wurde bereits korrekt gesetzt)
+  pdfOptions.meter = state.meter;
+
+  console.log("updatePdfView Debug:", {
+    stateMeter: state.meter,
+    pdfOptionsMeter: pdfOptions.meter,
+    meterSupported: state.meterSupported,
+  });
+
+  // Neue PDF-URL basierend auf aktuellen Optionen generieren
+  const url = buildPdfUrlForRenderer();
+  loadPdfIntoRenderer(url);
+}
+
+function loadPdfIntoRenderer(pdfUrl) {
+  // PDF-Renderer direkt im PDF-Fenster initialisieren
+  initPdfRenderer();
+
+  // Sicherstellen, dass pdfOptions mit state synchronisiert sind
+  pdfOptions.strength = state.strength || "Normal";
+  pdfOptions.color = state.color || "Colour";
+  pdfOptions.tags = state.tags || "Tag";
+  // Versmaß-Logik: Verwende state.meter (wurde bereits korrekt gesetzt)
+  pdfOptions.meter = state.meter;
+
+  loadPdfIntoRendererDirect(pdfUrl);
 }
 
 // 7) Texte laden (angepasst an die neue Struktur)
@@ -297,25 +361,24 @@ async function loadTexts() {
 
   // Der Pfad aus dem Katalog ist der vollständige relative Pfad mit Sprachebene.
   // z.B. "griechisch/poesie/Aischylos/Der_gefesselte_Prometheus"
-  const basePath = state.workMeta.path.replace(/_/g, " ");
-  const textBasePath = `texte/${basePath}`;
+  const textBasePath = state.workMeta.path; // Bereits vollständig
   const filenameBase = state.workMeta.filename_base;
 
-  console.log("Loading texts from:", textBasePath);
+  console.log("Loading texts from:", textBasePath, "filename:", filenameBase);
 
   // Original
   try {
-    const r = await fetch(`${textBasePath}/${filenameBase}.txt`, {
+    const r = await fetch(`texte/${textBasePath}/${filenameBase}.txt`, {
       cache: "no-store",
     });
     if (r.ok) {
       el.origText.textContent = await r.text();
       console.log("Original text loaded successfully");
     } else {
-      el.origText.textContent = `Original nicht gefunden: ${textBasePath}/${filenameBase}.txt`;
+      el.origText.textContent = `Original nicht gefunden: texte/${textBasePath}/${filenameBase}.txt`;
       console.error(
         "Original text not found:",
-        `${textBasePath}/${filenameBase}.txt`
+        `texte/${textBasePath}/${filenameBase}.txt`
       );
     }
   } catch (e) {
@@ -325,19 +388,22 @@ async function loadTexts() {
 
   // Birkenbihl
   try {
-    const r = await fetch(`${textBasePath}/${filenameBase}_birkenbihl.txt`, {
-      cache: "no-store",
-    });
+    const r = await fetch(
+      `texte/${textBasePath}/${filenameBase}_birkenbihl.txt`,
+      {
+        cache: "no-store",
+      }
+    );
     if (r.ok) {
       const text = await r.text();
       state.originalBirkenbihlText = text; // Original speichern
       el.birkenbihlText.innerHTML = addSpansToTags(text);
       console.log("Birkenbihl text loaded successfully");
     } else {
-      el.birkenbihlText.textContent = `Birkenbihl-Text nicht gefunden: ${textBasePath}/${filenameBase}_birkenbihl.txt`;
+      el.birkenbihlText.textContent = `Birkenbihl-Text nicht gefunden: texte/${textBasePath}/${filenameBase}_birkenbihl.txt`;
       console.error(
         "Birkenbihl text not found:",
-        `${textBasePath}/${filenameBase}_birkenbihl.txt`
+        `texte/${textBasePath}/${filenameBase}_birkenbihl.txt`
       );
     }
   } catch (e) {
@@ -388,7 +454,7 @@ async function saveDraftText() {
 
 // Hilfsfunktion für aktuelle PDF-URL
 function getCurrentPdfUrl() {
-  return buildPdfUrlFromSelection();
+  return buildPdfUrlForRenderer();
 }
 
 async function performRendering() {
@@ -542,29 +608,49 @@ function createTableRow(item, isGroupLeader = false) {
 }
 
 function showTagConfigModal() {
-  const table = document.getElementById("tag-config-table");
-  if (!table) return;
+  // 1. Container für kleine Tabellen leeren
+  const tablesContainer = document.getElementById("tag-config-tables");
+  if (!tablesContainer) return;
 
-  // Alte tbody-Elemente entfernen
-  table.querySelectorAll("tbody").forEach((tbody) => tbody.remove());
+  // Container leeren
+  tablesContainer.innerHTML = "";
+
+  // 2. Für jede Gruppe eine eigene Tabelle erstellen
+  const standaloneItems = []; // Sammle standalone Items für eine gemeinsame Tabelle
 
   tagConfigDefinition.forEach((group) => {
-    const tbody = document.createElement("tbody");
-
     if (group.leader) {
-      // Gruppen-Anführer-Zeile nur anzeigen, wenn er einen konfigurierbaren Tag hat
+      // Neue Tabelle für diese Gruppe erstellen
+      const table = document.createElement("table");
+      table.className = "tag-group-table";
+
+      // Header für die Tabelle
+      const thead = document.createElement("thead");
+      thead.innerHTML = `
+        <tr>
+          <th>Modifikation</th>
+          <th>hochgestellt</th>
+          <th>tiefgestellt</th>
+          <th>rot</th>
+          <th>orange</th>
+          <th>blau</th>
+          <th>grün</th>
+          <th>magenta</th>
+          <th>Tag nicht<br />zeigen</th>
+        </tr>
+      `;
+      table.appendChild(thead);
+
+      // Tbody für die Tabelle
+      const tbody = document.createElement("tbody");
+
+      // Gruppenleiter-Zeile nur anzeigen, wenn er einen konfigurierbaren Tag hat
       if (group.leader.tag) {
         const leaderRow = createTableRow(group.leader, true);
+        leaderRow.classList.add("group-leader");
         leaderRow.dataset.group = group.leader.id;
+        leaderRow.dataset.id = group.leader.id; // Wichtig: auch data-id setzen
         tbody.appendChild(leaderRow);
-      }
-
-      // Trennlinie nur anzeigen, wenn es Mitglieder gibt
-      if (group.members && group.members.length > 0) {
-        const separatorRow = document.createElement("tr");
-        separatorRow.classList.add("group-separator");
-        separatorRow.innerHTML = `<td colspan="9"></td>`;
-        tbody.appendChild(separatorRow);
       }
 
       // Mitglieder-Zeilen
@@ -575,27 +661,63 @@ function showTagConfigModal() {
           tbody.appendChild(memberRow);
         });
       }
+
+      table.appendChild(tbody);
+      tablesContainer.appendChild(table);
     } else if (group.standalone) {
-      const standaloneRow = createTableRow(group.standalone);
-      tbody.appendChild(standaloneRow);
+      // Sammle standalone Items für eine gemeinsame Tabelle
+      standaloneItems.push(group.standalone);
     }
-    table.appendChild(tbody);
   });
 
-  // 2. Initialkonfiguration anwenden
+  // 3. Erstelle eine gemeinsame Tabelle für alle standalone Items
+  if (standaloneItems.length > 0) {
+    const table = document.createElement("table");
+    table.className = "tag-group-table";
+
+    // Header für die Tabelle
+    const thead = document.createElement("thead");
+    thead.innerHTML = `
+      <tr>
+        <th>Modifikation</th>
+        <th>hochgestellt</th>
+        <th>tiefgestellt</th>
+        <th>rot</th>
+        <th>orange</th>
+        <th>blau</th>
+        <th>grün</th>
+        <th>magenta</th>
+        <th>Tag nicht<br />zeigen</th>
+      </tr>
+    `;
+    table.appendChild(thead);
+
+    // Tbody für die Tabelle
+    const tbody = document.createElement("tbody");
+
+    // Alle standalone Items als gleichgestellte Zeilen hinzufügen
+    standaloneItems.forEach((item) => {
+      const row = createTableRow(item);
+      tbody.appendChild(row);
+    });
+
+    table.appendChild(tbody);
+    tablesContainer.appendChild(table);
+  }
+
+  // 4. Initialkonfiguration anwenden
   applyInitialConfig();
   updateTableFromState();
 
-  // 3. Event Listeners hinzufügen
-  const tableBodyContainer = document.getElementById("tag-config-table");
-  tableBodyContainer.removeEventListener("change", handleTableChange); // Alte Listener entfernen
-  tableBodyContainer.addEventListener("change", handleTableChange);
+  // 5. Event Listeners hinzufügen
+  tablesContainer.removeEventListener("change", handleTableChange); // Alte Listener entfernen
+  tablesContainer.addEventListener("change", handleTableChange);
   el.toggleColorsBtn.removeEventListener("click", toggleOriginalColors);
   el.toggleColorsBtn.addEventListener("click", toggleOriginalColors);
   el.toggleHiddenBtn.removeEventListener("click", toggleAllTagsHidden);
   el.toggleHiddenBtn.addEventListener("click", toggleAllTagsHidden);
 
-  // 4. Modal anzeigen
+  // 6. Modal anzeigen
   el.modal.style.display = "flex";
 }
 
@@ -603,32 +725,58 @@ function applyInitialConfig() {
   // Setzt die Standardkonfiguration (Farben und Platzierung)
   state.tagConfig = {}; // Reset
 
-  // Standardfarben anwenden
-  if (el.toggleColorsBtn.dataset.state === "on") {
-    // Nomen -> rot
-    tagConfigDefinition
-      .find((g) => g.leader?.id === "nomen")
-      ?.members.forEach((m) => {
-        state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "red" };
-      });
-    // Verben -> grün
-    tagConfigDefinition
-      .find((g) => g.leader?.id === "verb")
-      ?.members.forEach((m) => {
-        state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "green" };
-      });
-    // Partizipien & Adjektive -> blau
-    tagConfigDefinition
-      .find((g) => g.leader?.id === "partizip")
-      ?.members.forEach((m) => {
-        state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "blue" };
-      });
-    tagConfigDefinition
-      .find((g) => g.leader?.id === "adjektiv")
-      ?.members.forEach((m) => {
-        state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "blue" };
-      });
+  // Standardfarben IMMER anwenden (nicht nur wenn Toggle aktiv ist)
+  // Nomen -> rot
+  const nomenGroup = tagConfigDefinition.find((g) => g.leader?.id === "nomen");
+  if (nomenGroup?.leader?.tag) {
+    state.tagConfig[nomenGroup.leader.id] = {
+      ...state.tagConfig[nomenGroup.leader.id],
+      color: "red",
+    };
   }
+  nomenGroup?.members.forEach((m) => {
+    state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "red" };
+  });
+
+  // Verben -> grün
+  const verbGroup = tagConfigDefinition.find((g) => g.leader?.id === "verb");
+  if (verbGroup?.leader?.tag) {
+    state.tagConfig[verbGroup.leader.id] = {
+      ...state.tagConfig[verbGroup.leader.id],
+      color: "green",
+    };
+  }
+  verbGroup?.members.forEach((m) => {
+    state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "green" };
+  });
+
+  // Partizipien -> blau
+  const partizipGroup = tagConfigDefinition.find(
+    (g) => g.leader?.id === "partizip"
+  );
+  if (partizipGroup?.leader?.tag) {
+    state.tagConfig[partizipGroup.leader.id] = {
+      ...state.tagConfig[partizipGroup.leader.id],
+      color: "blue",
+    };
+  }
+  partizipGroup?.members.forEach((m) => {
+    state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "blue" };
+  });
+
+  // Adjektive -> blau
+  const adjektivGroup = tagConfigDefinition.find(
+    (g) => g.leader?.id === "adjektiv"
+  );
+  if (adjektivGroup?.leader?.tag) {
+    state.tagConfig[adjektivGroup.leader.id] = {
+      ...state.tagConfig[adjektivGroup.leader.id],
+      color: "blue",
+    };
+  }
+  adjektivGroup?.members.forEach((m) => {
+    state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "blue" };
+  });
 
   // Standardplatzierungen anwenden
   const allItems = tagConfigDefinition.flatMap((g) => {
@@ -666,30 +814,45 @@ function applyInitialConfig() {
 }
 
 function updateTableFromState() {
-  const table = document.getElementById("tag-config-table");
-  if (!table) return;
-  const rows = table.querySelectorAll("tr[data-id]");
-  rows.forEach((tr) => {
-    const id = tr.dataset.id;
-    const config = state.tagConfig[id] || {};
-    const checkboxes = tr.querySelectorAll("input[type=checkbox]");
+  const tablesContainer = document.getElementById("tag-config-tables");
+  if (!tablesContainer) return;
 
-    let rowColor = config.color || "";
+  const tables = tablesContainer.querySelectorAll(".tag-group-table");
+  tables.forEach((table) => {
+    const rows = table.querySelectorAll("tr[data-id]");
+    rows.forEach((tr) => {
+      const id = tr.dataset.id;
+      const config = state.tagConfig[id] || {};
+      const checkboxes = tr.querySelectorAll("input[type=checkbox]");
 
-    checkboxes.forEach((cb) => {
-      const { type, value } = cb.dataset;
-      cb.checked = false; // Reset
+      let rowColor = config.color || "";
 
-      if (type === "placement" && config.placement === value) cb.checked = true;
-      if (type === "color" && config.color === value) cb.checked = true;
-      if (type === "hide" && config.hide) cb.checked = true;
+      checkboxes.forEach((cb) => {
+        const { type, value } = cb.dataset;
+        cb.checked = false; // Reset
+
+        if (type === "placement" && config.placement === value)
+          cb.checked = true;
+        if (type === "color" && config.color === value) cb.checked = true;
+        if (type === "hide" && config.hide) cb.checked = true;
+      });
+
+      tr.className = tr.classList.contains("group-leader")
+        ? "group-leader"
+        : "";
+      // Entferne alle color-bg Klassen, da wir jetzt inline-Styles verwenden
+      tr.classList.remove(
+        "color-bg-red",
+        "color-bg-green",
+        "color-bg-blue",
+        "color-bg-orange",
+        "color-bg-magenta"
+      );
     });
-
-    tr.className = tr.classList.contains("group-leader") ? "group-leader" : "";
-    if (rowColor) {
-      tr.classList.add(`color-bg-${rowColor}`);
-    }
   });
+
+  // Hintergrundfarben der Zellen aktualisieren
+  updateCellBackgroundColors();
 }
 
 function handleTableChange(event) {
@@ -755,6 +918,64 @@ function handleTableChange(event) {
 
   // UI komplett aktualisieren, um alle Änderungen (auch Gruppen) widerzuspiegeln
   updateTableFromState();
+
+  // Hintergrundfarben der Zellen aktualisieren
+  updateCellBackgroundColors();
+}
+
+function updateCellBackgroundColors() {
+  const tablesContainer = document.getElementById("tag-config-tables");
+  if (!tablesContainer) return;
+
+  const tables = tablesContainer.querySelectorAll(".tag-group-table");
+  tables.forEach((table) => {
+    // Alle Zeilen zurücksetzen
+    const allRows = table.querySelectorAll("tr");
+    allRows.forEach((row) => {
+      const cells = row.querySelectorAll("td");
+      cells.forEach((cell) => {
+        cell.style.backgroundColor = "#ffffff";
+      });
+    });
+
+    // Nur Zeilen mit data-id durchgehen und basierend auf state.tagConfig färben
+    const dataRows = table.querySelectorAll("tr[data-id]");
+    dataRows.forEach((row) => {
+      const cells = row.querySelectorAll("td");
+      const id = row.dataset.id;
+      const config = state.tagConfig[id] || {};
+      const isGroupLeader = row.classList.contains("group-leader");
+
+      // Priorität: color > placement (hide beeinflusst die Farbe NICHT)
+      let backgroundColor = "#ffffff";
+
+      // Prüfe auf Farben (höchste Priorität)
+      if (config.color) {
+        const colorMap = {
+          red: "#ef4444", // Kräftigeres Rot
+          orange: "#f97316", // Kräftigeres Orange
+          blue: "#3b82f6", // Kräftigeres Blau
+          green: "#22c55e", // Kräftigeres Grün
+          magenta: "#c084fc", // Kräftigeres Magenta
+        };
+        backgroundColor = colorMap[config.color] || "#ffffff";
+      } else if (config.placement) {
+        // Prüfe auf placement (hochgestellt/tiefgestellt)
+        backgroundColor = "#e5e7eb"; // Grau
+      } else if (isGroupLeader) {
+        // Gruppenanführer ohne Farbe und ohne Platzierung werden grau
+        backgroundColor = "#e5e7eb"; // Grau
+      }
+
+      // "Tag nicht zeigen" beeinflusst die Hintergrundfarbe NICHT
+      // Es wird nur für die PDF-Generierung verwendet
+
+      // Ganze Zeile mit der ermittelten Farbe färben
+      cells.forEach((cell) => {
+        cell.style.backgroundColor = backgroundColor;
+      });
+    });
+  });
 }
 
 function toggleButton(btn, forceState) {
@@ -778,20 +999,185 @@ function toggleButton(btn, forceState) {
   return currentState === "on";
 }
 
+function toggleMetrumMarkers(textElement, buttonElement) {
+  const isCurrentlyOn = buttonElement.dataset.state === "on";
+  const newState = isCurrentlyOn ? "off" : "on";
+
+  // Button-Status aktualisieren
+  toggleButton(buttonElement, newState);
+
+  // Speichere den aktuellen Zustand der Metrum-Marker
+  textElement.dataset.metrumHidden = newState === "off" ? "true" : "false";
+
+  // Text basierend auf beiden Toggle-Zuständen neu rendern
+  updateTextDisplay(textElement);
+}
+
+function updateTextDisplay(textElement) {
+  // Hole den Originaltext
+  let originalText;
+  if (textElement.id === "birkenbihlText") {
+    originalText = state.originalBirkenbihlText
+      ? addSpansToTags(state.originalBirkenbihlText)
+      : textElement.innerHTML;
+  } else if (textElement.id === "draftText") {
+    originalText = state.originalBirkenbihlText
+      ? addSpansToTags(state.originalBirkenbihlText)
+      : textElement.innerHTML;
+  } else {
+    originalText = textElement.innerHTML;
+  }
+
+  let processedText = originalText;
+
+  // Prüfe Metrum-Marker Status
+  const metrumHidden = textElement.dataset.metrumHidden === "true";
+  if (metrumHidden) {
+    // EINFACHERE LÖSUNG: Zeilenweise verarbeiten
+    const lines = processedText.split("\n");
+    const processedLines = lines.map((line) => {
+      // Entferne Sprecher-Bezeichnungen aus der Analyse: [ΚΡΑΤ:] etc.
+      const lineWithoutSpeakers = line.replace(/\[.*?\]/g, "");
+
+      // Prüfe, ob die Zeile (ohne Sprecher) griechische Buchstaben enthält
+      const hasGreekLetters =
+        /[αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ]/.test(
+          lineWithoutSpeakers
+        );
+
+      if (hasGreekLetters) {
+        // Griechische Zeile: Entferne Metrum-Marker, aber schütze Grammatik-Tags
+        return line.replace(/[iLr|](?![^<]*>)/g, (match, offset, string) => {
+          const beforeMatch = string.substring(0, offset);
+          const openParens = (beforeMatch.match(/\(/g) || []).length;
+          const closeParens = (beforeMatch.match(/\)/g) || []).length;
+
+          // Wenn wir innerhalb von Klammern sind, behalte das Zeichen
+          if (openParens > closeParens) {
+            return match;
+          }
+
+          // Andernfalls entferne es
+          return "";
+        });
+      } else {
+        // Deutsche Zeile: Behalte alle Zeichen
+        return line;
+      }
+    });
+
+    processedText = processedLines.join("\n");
+  }
+
+  // Prüfe Grammatik-Tags Status
+  const tagsHidden = textElement.classList.contains("tags-hidden");
+  if (tagsHidden) {
+    // Grammatik-Tags ausblenden - erweitertes Pattern für alle Grammatik-Tags
+    // Erlaubt lateinische Buchstaben, Umlaute, Schrägstriche, Symbole und andere Sonderzeichen
+    // Jetzt auch für mehrstellige Tags wie "Du" (Dual)
+    processedText = processedText.replace(/\([A-Za-zäöüÄÖÜß/≈]+\)/g, "");
+  }
+
+  textElement.innerHTML = processedText;
+}
+
 function toggleOriginalColors() {
-  toggleButton(el.toggleColorsBtn);
-  applyInitialConfig();
+  const isOn = toggleButton(el.toggleColorsBtn);
+
+  if (isOn) {
+    // Button ist jetzt AN - Nur Standardfarben anwenden (nicht placement)
+    const nomenGroup = tagConfigDefinition.find(
+      (g) => g.leader?.id === "nomen"
+    );
+    if (nomenGroup?.leader?.tag) {
+      state.tagConfig[nomenGroup.leader.id] = {
+        ...state.tagConfig[nomenGroup.leader.id],
+        color: "red",
+      };
+    }
+    nomenGroup?.members.forEach((m) => {
+      state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "red" };
+    });
+
+    const verbGroup = tagConfigDefinition.find((g) => g.leader?.id === "verb");
+    if (verbGroup?.leader?.tag) {
+      state.tagConfig[verbGroup.leader.id] = {
+        ...state.tagConfig[verbGroup.leader.id],
+        color: "green",
+      };
+    }
+    verbGroup?.members.forEach((m) => {
+      state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "green" };
+    });
+
+    const partizipGroup = tagConfigDefinition.find(
+      (g) => g.leader?.id === "partizip"
+    );
+    if (partizipGroup?.leader?.tag) {
+      state.tagConfig[partizipGroup.leader.id] = {
+        ...state.tagConfig[partizipGroup.leader.id],
+        color: "blue",
+      };
+    }
+    partizipGroup?.members.forEach((m) => {
+      state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "blue" };
+    });
+
+    const adjektivGroup = tagConfigDefinition.find(
+      (g) => g.leader?.id === "adjektiv"
+    );
+    if (adjektivGroup?.leader?.tag) {
+      state.tagConfig[adjektivGroup.leader.id] = {
+        ...state.tagConfig[adjektivGroup.leader.id],
+        color: "blue",
+      };
+    }
+    adjektivGroup?.members.forEach((m) => {
+      state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "blue" };
+    });
+  } else {
+    // Button ist jetzt AUS - Alle Farben entfernen
+    const tablesContainer = document.getElementById("tag-config-tables");
+    if (!tablesContainer) return;
+
+    const tables = tablesContainer.querySelectorAll(".tag-group-table");
+    const allIds = [];
+
+    tables.forEach((table) => {
+      const tableIds = Array.from(table.querySelectorAll("tr[data-id]")).map(
+        (tr) => tr.dataset.id
+      );
+      allIds.push(...tableIds);
+    });
+
+    allIds.forEach((id) => {
+      if (state.tagConfig[id]) {
+        delete state.tagConfig[id].color;
+        // Entferne leere Objekte
+        if (Object.keys(state.tagConfig[id]).length === 0) {
+          delete state.tagConfig[id];
+        }
+      }
+    });
+  }
+
   updateTableFromState();
 }
 
 function toggleAllTagsHidden() {
   const turnOn = toggleButton(el.toggleHiddenBtn);
-  const table = document.getElementById("tag-config-table");
-  if (!table) return;
+  const tablesContainer = document.getElementById("tag-config-tables");
+  if (!tablesContainer) return;
 
-  const allIds = Array.from(table.querySelectorAll("tr[data-id]")).map(
-    (tr) => tr.dataset.id
-  );
+  const tables = tablesContainer.querySelectorAll(".tag-group-table");
+  const allIds = [];
+
+  tables.forEach((table) => {
+    const tableIds = Array.from(table.querySelectorAll("tr[data-id]")).map(
+      (tr) => tr.dataset.id
+    );
+    allIds.push(...tableIds);
+  });
 
   allIds.forEach((id) => {
     state.tagConfig[id] = state.tagConfig[id] || {};
@@ -850,6 +1236,11 @@ function wireEvents() {
     performRendering();
   });
 
+  // Button für Datei-Upload triggert den versteckten File-Input
+  el.draftFileLabel?.addEventListener("click", () => {
+    el.draftFile?.click();
+  });
+
   // Neue Event Listeners für Datei-Upload, Tag-Toggle und Reset
   el.draftFile?.addEventListener("change", (event) => {
     const file = event.target.files[0];
@@ -868,11 +1259,21 @@ function wireEvents() {
   el.toggleBirkenbihlTagsBtn?.addEventListener("click", () => {
     el.birkenbihlText.classList.toggle("tags-hidden");
     toggleButton(el.toggleBirkenbihlTagsBtn);
+    updateTextDisplay(el.birkenbihlText);
+  });
+
+  el.toggleBirkenbihlMetrumBtn?.addEventListener("click", () => {
+    toggleMetrumMarkers(el.birkenbihlText, el.toggleBirkenbihlMetrumBtn);
   });
 
   el.toggleDraftTagsBtn?.addEventListener("click", () => {
     el.draftText.classList.toggle("tags-hidden");
     toggleButton(el.toggleDraftTagsBtn);
+    updateTextDisplay(el.draftText);
+  });
+
+  el.toggleDraftMetrumBtn?.addEventListener("click", () => {
+    toggleMetrumMarkers(el.draftText, el.toggleDraftMetrumBtn);
   });
 
   el.resetDraftBtn?.addEventListener("click", () => {
@@ -924,12 +1325,21 @@ function updateFontSize(elementId, change) {
     let currentSize = parseFloat(
       window.getComputedStyle(el, null).getPropertyValue("font-size")
     );
-    el.style.fontSize = currentSize + change + "px";
+    // Sehr feine Abstufungen: 0.25px statt 1px (sichtbar, aber fein)
+    el.style.fontSize = currentSize + change * 0.4 + "px";
   }
 }
 
 // 10) Init
 (async function init() {
+  console.log("work.js init started");
+  // Warten, bis DOM geladen ist
+  if (document.readyState === "loading") {
+    await new Promise((resolve) => {
+      document.addEventListener("DOMContentLoaded", resolve);
+    });
+  }
+
   // Zuerst Katalog laden, um Metadaten zu erhalten
   try {
     const cat = await loadCatalog();
@@ -947,23 +1357,132 @@ function updateFontSize(elementId, change) {
 
     state.meterSupported = state.workMeta.versmass; // true/false
 
+    // Titel setzen
+    el.pageTitle.textContent = `${
+      state.workMeta.author_display || state.author
+    } – ${state.workMeta.title || state.work}`;
+
     // UI-Elemente basierend auf Metadaten aktualisieren
-    el.meterRow.style.display = state.meterSupported ? "" : "none";
+    if (el.meterRow) {
+      el.meterRow.style.display = state.meterSupported ? "" : "none";
+    }
 
     if (el.grammarTagsBtn) {
       el.grammarTagsBtn.style.display = state.meterSupported ? "" : "none";
     }
+
+    // Metrum-Marker Buttons ein-/ausblenden
+    const birkenbihlMetrumBtn = document.getElementById(
+      "toggleBirkenbihlMetrum"
+    );
+    const draftMetrumBtn = document.getElementById("toggleDraftMetrum");
+
+    if (birkenbihlMetrumBtn) {
+      if (state.meterSupported) {
+        birkenbihlMetrumBtn.style.removeProperty("display");
+      } else {
+        birkenbihlMetrumBtn.style.setProperty("display", "none", "important");
+      }
+      console.log(
+        "Birkenbihl Metrum Button display gesetzt:",
+        birkenbihlMetrumBtn.style.display
+      );
+    }
+    if (draftMetrumBtn) {
+      if (state.meterSupported) {
+        draftMetrumBtn.style.removeProperty("display");
+      } else {
+        draftMetrumBtn.style.setProperty("display", "none", "important");
+      }
+      console.log(
+        "Draft Metrum Button display gesetzt:",
+        draftMetrumBtn.style.display
+      );
+    }
+
+    console.log(
+      "Metrum-Marker Buttons:",
+      state.meterSupported ? "angezeigt" : "ausgeblendet"
+    );
+    console.log("Birkenbihl Metrum Button gefunden:", !!birkenbihlMetrumBtn);
+    console.log("Draft Metrum Button gefunden:", !!draftMetrumBtn);
+
+    // Versmaß-Button-Gruppe im PDF-Renderer ein-/ausblenden
+    // Suche nach der Gruppe, die die meter-Buttons enthält
+    const meterButtons = document.querySelectorAll(
+      '#pdfRendererContainer [data-opt="meter"]'
+    );
+    const meterGroup =
+      meterButtons.length > 0
+        ? meterButtons[0].closest(".pdf-options-group")
+        : null;
+
+    if (meterGroup) {
+      meterGroup.style.display = state.meterSupported ? "" : "none";
+      console.log(
+        "Versmaß-Button-Gruppe:",
+        state.meterSupported ? "angezeigt" : "ausgeblendet"
+      );
+      console.log("Gefundene meter-Buttons:", meterButtons.length);
+      console.log("Meter-Gruppe gefunden:", !!meterGroup);
+      console.log("Meter-Gruppe display style:", meterGroup.style.display);
+    } else {
+      console.log("Versmaß-Button-Gruppe nicht gefunden!");
+    }
+
+    // Jetzt PDF-Optionen korrekt setzen und Controls initialisieren
+    console.log("=== LOAD WORK META DEBUG ===");
+    console.log("state.meterSupported:", state.meterSupported);
+    console.log("state.meter:", state.meter);
+    console.log("pdfOptions.meter:", pdfOptions.meter);
+
+    // Erst Controls initialisieren (setzt state.meter korrekt)
+    initPdfOptionControls();
+
+    // Dann PDF laden mit korrekten Werten
+    updatePdfView(false);
   } catch (e) {
     console.error("Fehler beim Laden des Katalogs oder der Werk-Metadaten:", e);
     // Fallback: Versmaß-Optionen ausblenden
-    el.meterRow.style.display = "none";
-    if (el.grammarTagsBtn) el.grammarTagsBtn.style.display = "none";
+    if (el.meterRow) {
+      el.meterRow.style.display = "none";
+    }
+    if (el.grammarTagsBtn) {
+      el.grammarTagsBtn.style.display = "none";
+    }
+
+    // Metrum-Marker Buttons ausblenden (Fallback)
+    const birkenbihlMetrumBtn = document.getElementById(
+      "toggleBirkenbihlMetrum"
+    );
+    const draftMetrumBtn = document.getElementById("toggleDraftMetrum");
+
+    if (birkenbihlMetrumBtn) {
+      birkenbihlMetrumBtn.style.display = "none";
+    }
+    if (draftMetrumBtn) {
+      draftMetrumBtn.style.display = "none";
+    }
+
+    console.log("Metrum-Marker Buttons: ausgeblendet (Fallback)");
+
+    // Versmaß-Button-Gruppe im PDF-Renderer ausblenden
+    const meterButtons = document.querySelectorAll(
+      '#pdfRendererContainer [data-opt="meter"]'
+    );
+    const meterGroup =
+      meterButtons.length > 0
+        ? meterButtons[0].closest(".pdf-options-group")
+        : null;
+
+    if (meterGroup) {
+      meterGroup.style.display = "none";
+      console.log("Versmaß-Button-Gruppe: ausgeblendet (Fallback)");
+    }
   }
 
-  // Titel
-  el.pageTitle.textContent = `${
-    state.workMeta?.author_display || state.author
-  } – ${state.workMeta?.title || state.work}`;
+  // Titel (wird später nochmal mit korrekten Werten überschrieben)
+  el.pageTitle.textContent = `${state.author} – ${state.work}`;
 
   // Standard-Buttons als aktiv markieren
   document.querySelectorAll(".seg-btn").forEach((btn) => {
@@ -985,6 +1504,7 @@ function updateFontSize(elementId, change) {
     const origDownload = document.getElementById("btnOrigDownload");
     const birkenbihlDownload = document.getElementById("btnBirkenbihlDownload");
     const draftDownload = document.getElementById("btnDraftDownload");
+    const pdfDownload = document.getElementById("btnPdfDownload");
     const filenameBase = state.workMeta?.filename_base || state.work;
 
     if (origDownload) {
@@ -992,8 +1512,15 @@ function updateFontSize(elementId, change) {
         /_/g,
         " "
       )}/${filenameBase}.txt`;
-      origDownload.href = origUrl;
-      origDownload.download = `${filenameBase}.txt`;
+      origDownload.addEventListener("click", (e) => {
+        e.preventDefault();
+        const a = document.createElement("a");
+        a.href = origUrl;
+        a.download = `${filenameBase}.txt`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
       console.log("Original download URL:", origUrl);
     }
 
@@ -1002,8 +1529,15 @@ function updateFontSize(elementId, change) {
         /_/g,
         " "
       )}/${filenameBase}_birkenbihl.txt`;
-      birkenbihlDownload.href = birkenbihlUrl;
-      birkenbihlDownload.download = `${filenameBase}_birkenbihl.txt`;
+      birkenbihlDownload.addEventListener("click", (e) => {
+        e.preventDefault();
+        const a = document.createElement("a");
+        a.href = birkenbihlUrl;
+        a.download = `${filenameBase}_birkenbihl.txt`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
       console.log("Birkenbihl download URL:", birkenbihlUrl);
     }
 
@@ -1028,18 +1562,443 @@ function updateFontSize(elementId, change) {
         URL.revokeObjectURL(url);
       });
     }
+
+    if (pdfDownload) {
+      pdfDownload.addEventListener("click", (e) => {
+        e.preventDefault();
+        const pdfUrl = getCurrentPdfUrl();
+        const a = document.createElement("a");
+        a.href = pdfUrl;
+        a.download = buildPdfFilename();
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    }
   }
 
   updateDownloadButtons();
 
-  // Titel setzen
-  el.pageTitle.textContent = `${state.author} – ${state.work}`;
+  // Titel setzen (wird bereits oben gesetzt, hier überschreiben wir es mit den korrekten Werten)
+  el.pageTitle.textContent = `${
+    state.workMeta?.author_display || state.author
+  } – ${state.workMeta?.title || state.work}`;
 
   // Inhalte und PDF anzeigen
   await loadTexts();
   wireEvents();
-  updatePdfView(false);
+
+  // PDF-Optionen vor dem ersten Laden synchronisieren
+  pdfOptions.strength = state.strength || "Normal";
+  pdfOptions.color = state.color || "Colour";
+  pdfOptions.tags = state.tags || "Tag";
+  // Versmaß-Logik: Wird später in loadWorkMeta() korrekt gesetzt
+  // pdfOptions.meter wird erst nach dem Laden der Metadaten gesetzt
+
+  // updatePdfView() wird später in loadWorkMeta() aufgerufen, nachdem meterSupported gesetzt wurde
 
   // Entwurfs-Text initialisieren
   await initializeDraftText();
 })();
+
+// PDF-Renderer direkt im PDF-Fenster
+// PDF-Optionen Status
+let pdfOptions = {
+  source: "original",
+  strength: "Normal",
+  color: "Colour",
+  tags: "Tag",
+  meter: "without", // Wird basierend auf meterSupported dynamisch gesetzt
+};
+
+// PDF-Renderer Status
+let pdfRenderer = {
+  pdf: null,
+  scale: 1.2,
+  fitToWidth: false,
+  currentPage: 1,
+  rendering: false,
+  elements: {},
+};
+
+// PDF-URL basierend auf Optionen erstellen
+function buildPdfUrlForRenderer() {
+  // Verwende pdfOptions für die PDF-URL-Generierung
+  if (!state.workMeta || !state.workMeta.filename_base) {
+    console.error("Work metadata with filename_base not loaded!");
+    return "pdf/error/error.pdf";
+  }
+
+  let filename = state.workMeta.filename_base;
+
+  // Alle Dateien haben "birkenbihl" im Namen
+  filename += "_birkenbihl";
+
+  // Stärke
+  if (pdfOptions.strength === "GR_Fett") filename += "_GR_Fett";
+  else if (pdfOptions.strength === "DE_Fett") filename += "_DE_Fett";
+  else filename += "_Normal";
+
+  // Farbe
+  if (pdfOptions.color === "BlackWhite") filename += "_BlackWhite";
+  else filename += "_Colour";
+
+  // Tags
+  if (pdfOptions.tags === "NoTags") filename += "_NoTags";
+  else filename += "_Tag";
+
+  // Versmaß (nur wenn aktiviert)
+  if (pdfOptions.meter === "with") filename += "_Versmaß";
+
+  const url = `${PDF_BASE}/${state.workMeta.path}/${filename}.pdf`;
+  console.log("Generated PDF URL:", url);
+  console.log("PDF Options Debug:", {
+    strength: pdfOptions.strength,
+    color: pdfOptions.color,
+    tags: pdfOptions.tags,
+    meter: pdfOptions.meter,
+    meterSupported: state.meterSupported,
+  });
+  return url;
+}
+
+// Diese Funktion wurde entfernt - verwende stattdessen buildPdfFilename()
+
+// PDF-Renderer initialisieren
+function initPdfRenderer() {
+  pdfRenderer.elements = {
+    container: document.getElementById("pdfRendererContainer"),
+    toolbar: document.getElementById("pdfToolbar"),
+    pages: document.getElementById("pdfPages"),
+    pageNum: document.getElementById("pdfPageNum"),
+    pageCount: document.getElementById("pdfPageCount"),
+    prev: document.getElementById("pdfPrev"),
+    next: document.getElementById("pdfNext"),
+    downloadBtn: document.getElementById("pdfDownloadBtn"),
+    openTabBtn: document.getElementById("pdfOpenTabBtn"),
+  };
+}
+
+// PDF neu laden
+async function loadPdfIntoRendererDirect(pdfUrl) {
+  try {
+    // PDF.js Library verfügbar machen
+    const pdfjs = window["pdfjs-dist/build/pdf"];
+
+    // PDF laden
+    const task = pdfjs.getDocument(pdfUrl);
+    pdfRenderer.pdf = await task.promise;
+
+    // UI aktualisieren
+    if (pdfRenderer.elements.pageCount) {
+      pdfRenderer.elements.pageCount.textContent = pdfRenderer.pdf.numPages;
+    }
+
+    // Lade-Animation entfernen
+    if (pdfRenderer.elements.pages) {
+      pdfRenderer.elements.pages.innerHTML = "";
+    }
+
+    // Alle Seiten rendern
+    await renderAllPdfPages();
+
+    // Events anhängen
+    attachPdfEvents();
+  } catch (error) {
+    console.error("Fehler beim Laden des PDFs:", error);
+    console.error("PDF URL war:", pdfUrl);
+    if (pdfRenderer.elements.pages) {
+      pdfRenderer.elements.pages.innerHTML = `
+        <div class="pdf-loading" style="color: #ef4444;">
+          ❌ Fehler beim Laden des PDFs<br>
+          <small>URL: ${pdfUrl}</small><br>
+          <small>Fehler: ${error.message}</small>
+        </div>
+      `;
+    }
+  }
+}
+
+// Alle PDF-Seiten rendern
+async function renderAllPdfPages() {
+  if (!pdfRenderer.pdf || !pdfRenderer.elements.pages) return;
+
+  for (let n = 1; n <= pdfRenderer.pdf.numPages; n++) {
+    const page = await pdfRenderer.pdf.getPage(n);
+    const holder = document.createElement("div");
+    holder.className = "pdf-page";
+
+    const canvas = document.createElement("canvas");
+    holder.appendChild(canvas);
+
+    const label = document.createElement("div");
+    label.className = "pdf-page-num";
+    label.textContent = `Seite ${n}`;
+    holder.appendChild(label);
+
+    pdfRenderer.elements.pages.appendChild(holder);
+    await renderPdfIntoCanvas(page, canvas);
+  }
+  updatePdfPageIndicator(1);
+}
+
+async function renderPdfIntoCanvas(page, canvas) {
+  const context = canvas.getContext("2d", { alpha: false });
+
+  // Höhere Standard-Skalierung für bessere Schärfe
+  const scale = pdfRenderer.scale || 2.0; // Erhöht von 1.5 auf 2.0 für bessere Schärfe
+  const viewport = page.getViewport({ scale });
+
+  // Canvas-Größe direkt setzen
+  canvas.width = viewport.width;
+  canvas.height = viewport.height;
+
+  // CSS-Größe für korrekte Darstellung (volle Breite)
+  canvas.style.width = "100%";
+  canvas.style.height = "auto";
+
+  // PDF rendern
+  await page.render({
+    canvasContext: context,
+    viewport: viewport,
+    intent: "display",
+    renderInteractiveForms: false,
+  }).promise;
+}
+
+// Optionen-Schalter initialisieren
+function initPdfOptionControls() {
+  console.log("initPdfOptionControls aufgerufen");
+  const optionBtns = document.querySelectorAll(
+    "#pdfRendererContainer .pdf-option-btn"
+  );
+  console.log("Gefundene Buttons:", optionBtns.length);
+
+  optionBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const opt = this.dataset.opt;
+      const val = this.dataset.val;
+
+      // Aktiven Button in der Gruppe setzen
+      const group = this.closest(".pdf-options-group");
+      const buttons = group.querySelectorAll(".pdf-option-btn");
+      buttons.forEach((b) => {
+        b.classList.remove("active");
+      });
+      this.classList.add("active");
+
+      // Option speichern
+      pdfOptions[opt] = val;
+
+      // Synchronisiere mit state für alte Funktionen
+      if (opt === "source") {
+        state.source = val;
+        // pdfOptions.source wird nicht mehr verwendet
+      } else if (opt === "strength") {
+        state.strength = val;
+        pdfOptions.strength = val;
+      } else if (opt === "color") {
+        state.color = val;
+        pdfOptions.color = val;
+      } else if (opt === "tags") {
+        state.tags = val;
+        pdfOptions.tags = val;
+      } else if (opt === "meter") {
+        state.meter = val;
+        pdfOptions.meter = val;
+      }
+
+      // PDF neu laden
+      const newPdfUrl = buildPdfUrlForRenderer();
+      loadPdfIntoRendererDirect(newPdfUrl);
+    });
+  });
+
+  // Standard-Optionen aktivieren (mit CSS-Klasse)
+  const originalBtn = document.querySelector(
+    '#pdfRendererContainer [data-opt="source"][data-val="original"]'
+  );
+  const normalBtn = document.querySelector(
+    '#pdfRendererContainer [data-opt="strength"][data-val="Normal"]'
+  );
+  const colourBtn = document.querySelector(
+    '#pdfRendererContainer [data-opt="color"][data-val="Colour"]'
+  );
+  const tagBtn = document.querySelector(
+    '#pdfRendererContainer [data-opt="tags"][data-val="Tag"]'
+  );
+  const withBtn = document.querySelector(
+    '#pdfRendererContainer [data-opt="meter"][data-val="with"]'
+  );
+
+  // Debug: Prüfe ob Buttons gefunden wurden
+  console.log("Button Debug:", {
+    originalBtn: !!originalBtn,
+    normalBtn: !!normalBtn,
+    colourBtn: !!colourBtn,
+    tagBtn: !!tagBtn,
+    withBtn: !!withBtn,
+  });
+
+  // Debug: Alle PDF-Option-Buttons auf der Seite finden
+  const allPdfBtns = document.querySelectorAll(".pdf-option-btn");
+  console.log("Alle PDF-Option-Buttons auf der Seite:", allPdfBtns.length);
+  allPdfBtns.forEach((btn, index) => {
+    console.log(`Button ${index}:`, {
+      opt: btn.dataset.opt,
+      val: btn.dataset.val,
+      text: btn.textContent.trim(),
+    });
+  });
+
+  // Standard-Werte für state und pdfOptions setzen
+  // Alle Dateien sind Birkenbihl-Versionen, daher ist "source" nicht relevant
+  if (!state.source) state.source = "original";
+  if (!state.strength) state.strength = "Normal";
+  if (!state.color) state.color = "Colour";
+  if (!state.tags) state.tags = "Tag";
+
+  // Versmaß-Logik: Immer basierend auf meterSupported setzen
+  state.meter = state.meterSupported ? "with" : "without";
+
+  console.log("=== INIT PDF OPTION CONTROLS DEBUG ===");
+  console.log("state.meterSupported:", state.meterSupported);
+  console.log("state.meter (after setting):", state.meter);
+
+  // Synchronisiere pdfOptions mit state
+  // pdfOptions.source wird nicht mehr verwendet
+  pdfOptions.strength = state.strength;
+  pdfOptions.color = state.color;
+  pdfOptions.tags = state.tags;
+  pdfOptions.meter = state.meter;
+
+  if (originalBtn) originalBtn.classList.add("active");
+  if (normalBtn) normalBtn.classList.add("active");
+  if (colourBtn) colourBtn.classList.add("active");
+  if (tagBtn) tagBtn.classList.add("active");
+
+  // Versmaß-Button basierend auf meterSupported aktivieren
+  // Zuerst alle Versmaß-Buttons deaktivieren
+  const allMeterButtons = document.querySelectorAll(
+    '#pdfRendererContainer [data-opt="meter"]'
+  );
+  allMeterButtons.forEach((btn) => btn.classList.remove("active"));
+
+  // Debug-Logging
+  console.log("Button-Aktivierung Debug:", {
+    meterSupported: state.meterSupported,
+    meter: state.meter,
+    withBtn: !!withBtn,
+  });
+
+  // Dann den richtigen Button aktivieren
+  if (state.meterSupported && state.meter === "with" && withBtn) {
+    console.log("Aktiviere 'Versmaß' Button");
+    withBtn.classList.add("active");
+  } else {
+    const withoutBtn = document.querySelector(
+      '#pdfRendererContainer [data-opt="meter"][data-val="without"]'
+    );
+    console.log("Aktiviere 'Ohne Versmaß' Button");
+    if (withoutBtn) withoutBtn.classList.add("active");
+  }
+}
+
+function attachPdfEvents() {
+  if (!pdfRenderer.elements.pages) return;
+
+  // Seite beim Scrollen merken
+  const io = new IntersectionObserver(
+    (entries) => {
+      let top = entries
+        .filter((e) => e.isIntersecting)
+        .map((e) => {
+          const idx =
+            [...pdfRenderer.elements.pages.children].indexOf(e.target) + 1;
+          return { idx, ratio: e.intersectionRatio };
+        })
+        .sort((a, b) => b.ratio - a.ratio)[0];
+      if (top) updatePdfPageIndicator(top.idx);
+    },
+    { root: null, threshold: [0.1, 0.25, 0.5, 0.75, 1] }
+  );
+
+  [...pdfRenderer.elements.pages.children].forEach((c) => io.observe(c));
+
+  // Navigation
+  if (pdfRenderer.elements.prev) {
+    pdfRenderer.elements.prev.addEventListener("click", () =>
+      scrollToPdfPage(pdfRenderer.currentPage - 1)
+    );
+  }
+  if (pdfRenderer.elements.next) {
+    pdfRenderer.elements.next.addEventListener("click", () =>
+      scrollToPdfPage(pdfRenderer.currentPage + 1)
+    );
+  }
+
+  // Open Tab Button
+  if (pdfRenderer.elements.openTabBtn) {
+    pdfRenderer.elements.openTabBtn.addEventListener("click", () => {
+      const pdfUrl = getCurrentPdfUrl();
+      const newWindow = window.open(pdfUrl, "_blank");
+      if (newWindow) {
+        newWindow.focus();
+      }
+    });
+  }
+
+  // Download Button
+  if (pdfRenderer.elements.downloadBtn) {
+    pdfRenderer.elements.downloadBtn.addEventListener("click", () => {
+      const pdfUrl = getCurrentPdfUrl();
+      const a = document.createElement("a");
+      a.href = pdfUrl;
+      a.download = buildPdfFilename();
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    });
+  }
+
+  // Bei Fenstergröße neu anpassen
+  window.addEventListener(
+    "resize",
+    debouncePdf(async () => {
+      if (pdfRenderer.fitToWidth) await rerenderPdf();
+    }, 120)
+  );
+}
+
+function updatePdfPageIndicator(n) {
+  pdfRenderer.currentPage = Math.max(1, Math.min(n, pdfRenderer.pdf.numPages));
+  if (pdfRenderer.elements.pageNum) {
+    pdfRenderer.elements.pageNum.textContent = pdfRenderer.currentPage;
+  }
+}
+
+function scrollToPdfPage(n) {
+  n = Math.max(1, Math.min(n, pdfRenderer.pdf.numPages));
+  const target = pdfRenderer.elements.pages.children[n - 1];
+  if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+async function rerenderPdf() {
+  if (!pdfRenderer.pdf) return;
+
+  // Sämtliche Canvas neu zeichnen
+  for (let i = 0; i < pdfRenderer.pdf.numPages; i++) {
+    const page = await pdfRenderer.pdf.getPage(i + 1);
+    const canvas =
+      pdfRenderer.elements.pages.children[i].querySelector("canvas");
+    await renderPdfIntoCanvas(page, canvas);
+  }
+}
+
+function debouncePdf(fn, ms) {
+  let t;
+  return (...args) => {
+    clearTimeout(t);
+    t = setTimeout(() => fn(...args), ms);
+  };
+}

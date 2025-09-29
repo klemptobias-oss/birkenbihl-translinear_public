@@ -78,7 +78,7 @@ HIERARCHIE = {
 }
 
 # ======= Konstanten (müssen mit dem Renderer-Stand zusammenpassen) =======
-SUP_TAGS = {'N','D','G','A','V','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','Sup','ij'}
+SUP_TAGS = {'N','D','G','A','V','Du','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','Sup','ij'}
 SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Knj','Op','Pr','AorS','M/P'}
 
 # ======= Regexe =======

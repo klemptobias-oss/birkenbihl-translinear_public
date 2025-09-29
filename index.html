@@ -6,6 +6,33 @@
     <title>Birkenbihl / Translinear – Startseite</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      .title-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .title-ornament {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: -50px; /* Negativer Abstand für Überlappung */
+        position: relative;
+        z-index: 1;
+      }
+
+      .rosette-left,
+      .rosette-right {
+        width: 346px; /* Große seitliche Verzierungen */
+        height: auto;
+        opacity: 0.8;
+      }
+
+      .title-frame {
+        width: 578px; /* Größe für das neue Titel-Bild */
+        height: auto;
+        max-width: 100%;
+      }
+
       .tree {
         background: var(--card);
         border: 1px solid var(--edge);
@@ -14,12 +41,13 @@
         margin: 20px 0;
       }
       h2.language-header {
-        font-size: 2.2em; /* Größer für Sprachen */
-        margin-top: 20px;
-        margin-bottom: 15px;
-        padding-bottom: 8px;
-        border-bottom: 2px solid var(--edge);
+        font-size: 2.2em; /* Zurück zu normaler Größe */
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 3px solid var(--edge);
         font-weight: bold;
+        text-align: left; /* Linksbündig */
       }
       .node {
         display: flex;
@@ -114,23 +142,46 @@
         top: 15px;
       }
 
-      /* Schriftgrößen für verschiedene Ebenen */
+      /* Schriftgrößen für verschiedene Ebenen - klare Hierarchie */
       .kind-label {
-        font-size: 1.4em; /* Größer für Kategorien (Poesie/Prosa) */
+        font-size: 2em; /* Noch größer für Kategorien (Poesie/Prosa) */
         font-weight: bold;
+        color: #2c3e50; /* Dunkler für bessere Sichtbarkeit */
       }
       .author-label {
-        font-size: 1.1em; /* Normal für Autoren */
+        font-size: 1.6em; /* Größer für Autoren */
+        font-weight: 600;
+        color: #34495e; /* Etwas heller als Gattung */
       }
       .work-label {
-        font-size: 1.1em; /* Normal für Werke */
+        font-size: 1.2em; /* Größer für Werke */
+        font-weight: 500;
+        color: #5d6d7e; /* Noch heller */
       }
     </style>
   </head>
   <body>
     <div class="wrap">
       <div class="bar">
-        <div class="title">Birkenbihl / Translinear Übersetzungen</div>
+        <div class="title-container">
+          <div class="title-ornament">
+            <img
+              src="Bilder/Verzierung links rechts.png"
+              alt="Verzierung links"
+              class="rosette-left"
+            />
+            <img
+              src="Bilder/birkenbihl überschrift2.png"
+              alt=""
+              class="title-frame"
+            />
+            <img
+              src="Bilder/Verzierung links rechts.png"
+              alt="Verzierung rechts"
+              class="rosette-right"
+            />
+          </div>
+        </div>
       </div>
 
       <nav class="tree" aria-label="Werke-Navigation" id="catalogContainer">

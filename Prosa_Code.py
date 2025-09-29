@@ -214,7 +214,7 @@ INTER_PAIR_GAP_MM = CONT_PAIR_GAP_MM
 
 # ----------------------- Tags & Regex -----------------------
 # Standard-Tag-Definitionen (können durch Tag-Config überschrieben werden)
-DEFAULT_SUP_TAGS = {'N','D','G','A','V','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','ij','Sup'}
+DEFAULT_SUP_TAGS = {'N','D','G','A','V','Du','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','ij','Sup'}
 DEFAULT_SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Knj','Op','Pr','AorS','M/P'}
 
 # Dynamische Tag-Konfiguration (wird zur Laufzeit gesetzt)

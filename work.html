@@ -23,17 +23,12 @@
     </header>
 
     <main class="wrap">
-      <div class="notice small">
-        (Hinweis für Redaktion) Diese Werkseite lädt per URL-Parametern
-        <code>?kind=&amp;author=&amp;work=</code>.
-      </div>
-
       <!-- ======= 2×2-Grid ======= -->
       <section class="grid-2x2">
         <!-- Original-Text (oben links) -->
         <div class="pane">
           <div class="pane-head">
-            <div class="pane-title">Original-Text</div>
+            <div class="pane-title">Original.txt</div>
             <div class="pane-tools">
               <button id="btnOrigPlus" class="btn" title="Schrift größer">
                 A+
@@ -41,135 +36,194 @@
               <button id="btnOrigMinus" class="btn" title="Schrift kleiner">
                 A−
               </button>
-              <a id="btnOrigDownload" class="btn primary" href="#" download
-                >Original.txt herunterladen</a
-              >
+              <button id="btnOrigDownload" class="btn primary">
+                Original.txt herunterladen
+              </button>
             </div>
           </div>
           <div id="origText" class="pane-body mono scroll"></div>
         </div>
 
         <!-- PDF (oben rechts) -->
-        <div class="pane">
+        <div class="pane pdf-pane">
           <div class="pane-head">
-            <div class="pane-title">PDF</div>
+            <div class="pane-title">PDF-Ansicht</div>
             <div class="pane-tools">
-              <button
-                id="btnPdfOpenTab"
-                class="btn"
-                title="In neuem Tab öffnen"
-              >
+              <button class="btn" id="pdfOpenTabBtn">
                 PDF in neuem Tab öffnen
               </button>
-              <a id="btnPdfDownload" class="btn primary" href="#" download
-                >Aktuelles PDF herunterladen</a
-              >
+              <button class="btn primary" id="pdfDownloadBtn">
+                Aktuelles PDF herunterladen
+              </button>
             </div>
           </div>
+          <div class="pane-body pdf-body">
+            <!-- PDF-Renderer direkt im PDF-Fenster -->
+            <div class="pdf-renderer-container" id="pdfRendererContainer">
+              <!-- PDF-Toolbar -->
+              <div class="pdf-toolbar" id="pdfToolbar">
+                <!-- Navigation-Zeile: Seite links, Zoom Mitte, Source rechts -->
+                <div class="pdf-toolbar-row pdf-nav-row">
+                  <div class="pdf-nav-left">
+                    <button class="btn" id="pdfPrev">⟨</button>
+                    <div>
+                      <span id="pdfPageLabel">Seite</span>
+                      <strong id="pdfPageNum">–</strong>/<span id="pdfPageCount"
+                        >–</span
+                      >
+                    </div>
+                    <button class="btn" id="pdfNext">⟩</button>
+                  </div>
+                  <div class="pdf-source-controls">
+                    <div class="pdf-options-group">
+                      <button
+                        class="pdf-option-btn active"
+                        data-opt="source"
+                        data-val="original"
+                      >
+                        Original
+                      </button>
+                      <button
+                        class="pdf-option-btn"
+                        data-opt="source"
+                        data-val="draft"
+                      >
+                        Entwurf
+                      </button>
+                    </div>
+                  </div>
+                </div>
 
-          <!-- Schalter: Quelle / Stärke / Farbe / Tags / Versmaß -->
-          <div class="option-groups">
-            <div class="opt-row">
-              <div class="opt-label">Quelle</div>
-              <div class="seg">
-                <button class="seg-btn" data-opt="source" data-val="original">
-                  Original
-                </button>
-                <button class="seg-btn" data-opt="source" data-val="draft">
-                  Entwurf
-                </button>
+                <!-- PDF-Toolbar - Zeile 2: PDF-Optionen -->
+                <div class="pdf-toolbar-row pdf-options-row">
+                  <div class="pdf-options-integrated">
+                    <div class="pdf-options-group">
+                      <button
+                        class="pdf-option-btn active"
+                        data-opt="strength"
+                        data-val="Normal"
+                      >
+                        Normal
+                      </button>
+                      <button
+                        class="pdf-option-btn"
+                        data-opt="strength"
+                        data-val="GR_Fett"
+                      >
+                        Fett
+                      </button>
+                      <button
+                        class="pdf-option-btn"
+                        data-opt="strength"
+                        data-val="DE_Fett"
+                      >
+                        DE-Fett
+                      </button>
+                    </div>
+
+                    <div class="pdf-options-group">
+                      <button
+                        class="pdf-option-btn active"
+                        data-opt="color"
+                        data-val="Colour"
+                      >
+                        Colour
+                      </button>
+                      <button
+                        class="pdf-option-btn"
+                        data-opt="color"
+                        data-val="BlackWhite"
+                      >
+                        BlackWhite
+                      </button>
+                    </div>
+
+                    <div class="pdf-options-group">
+                      <button
+                        class="pdf-option-btn active"
+                        data-opt="tags"
+                        data-val="Tag"
+                      >
+                        Tags
+                      </button>
+                      <button
+                        class="pdf-option-btn"
+                        data-opt="tags"
+                        data-val="NoTags"
+                      >
+                        NoTag
+                      </button>
+                    </div>
+
+                    <div class="pdf-options-group">
+                      <button
+                        class="pdf-option-btn active"
+                        data-opt="meter"
+                        data-val="with"
+                      >
+                        Versmaß
+                      </button>
+                      <button
+                        class="pdf-option-btn"
+                        data-opt="meter"
+                        data-val="without"
+                      >
+                        Ohne Versmaß
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PDF-Seiten -->
+              <div class="pdf-pages" id="pdfPages">
+                <div class="pdf-loading">
+                  <div class="pdf-spinner"></div>
+                  PDF wird geladen...
+                </div>
               </div>
             </div>
-
-            <div class="opt-row">
-              <div class="opt-label">Stärke</div>
-              <div class="seg" id="seg-strength">
-                <button class="seg-btn" data-opt="strength" data-val="Normal">
-                  Normal
-                </button>
-                <button class="seg-btn" data-opt="strength" data-val="GR_Fett">
-                  Fett
-                </button>
-                <button class="seg-btn" data-opt="strength" data-val="DE_Fett">
-                  DE-Fett
-                </button>
-              </div>
-            </div>
-
-            <div class="opt-row">
-              <div class="opt-label">Farbe</div>
-              <div class="seg">
-                <button class="seg-btn" data-opt="color" data-val="Colour">
-                  Colour
-                </button>
-                <button class="seg-btn" data-opt="color" data-val="BlackWhite">
-                  BlackWhite
-                </button>
-              </div>
-            </div>
-
-            <div class="opt-row">
-              <div class="opt-label">Grammatik-Tags</div>
-              <div class="seg">
-                <button class="seg-btn" data-opt="tags" data-val="Tag">
-                  Tags
-                </button>
-                <button class="seg-btn" data-opt="tags" data-val="NoTags">
-                  NoTag
-                </button>
-              </div>
-            </div>
-
-            <div class="opt-row" id="opt-meter-row">
-              <div class="opt-label">Versmaß</div>
-              <div class="seg">
-                <button class="seg-btn" data-opt="meter" data-val="with">
-                  Versmaß
-                </button>
-                <button class="seg-btn" data-opt="meter" data-val="without">
-                  Ohne Versmaß
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="pane-body pdf-body" id="pdfPane" style="--pdfScale: 1">
-            <iframe id="pdfFrame" title="PDF-Ansicht" loading="lazy"></iframe>
           </div>
         </div>
 
         <!-- Birkenbihl-Text (unten links) -->
         <div class="pane">
-          <div class="pane-head complex-header">
-            <div class="header-row">
-              <div class="pane-title">Original Birkenbihl-Text</div>
-              <a
-                id="btnBirkenbihlDownload"
-                class="btn primary"
-                href="#"
-                download
-                >Birkenbihl.txt herunterladen</a
-              >
+          <div class="pane-head">
+            <div class="pane-title">Original-Birkenbihl.txt</div>
+            <div class="pane-tools">
+              <button id="btnBirkenbihlDownload" class="btn primary">
+                Birkenbihl.txt herunterladen
+              </button>
             </div>
-            <div class="header-separator"></div>
-            <div class="header-row">
-              <div class="display-controls">
-                <button
-                  id="toggleBirkenbihlTags"
-                  class="btn toggle-btn"
-                  data-state="on"
-                  title="Grammatik-Tags im Editor ein-/ausblenden"
-                >
-                  <span class="toggle-text">Tags im Editor sichtbar</span>
-                  <span class="toggle-status green">An</span>
-                </button>
-                <button id="btnBirPlus" class="btn" title="Schrift größer">
-                  A+
-                </button>
-                <button id="btnBirMinus" class="btn" title="Schrift kleiner">
-                  A−
-                </button>
-              </div>
+          </div>
+          <!-- Zweite Header-Zeile -->
+          <div class="pane-head">
+            <div class="pane-title"></div>
+            <div class="pane-tools">
+              <button
+                id="toggleBirkenbihlTags"
+                class="toggle-btn"
+                data-state="on"
+                title="Grammatik-Tags im Editor ein-/ausblenden"
+              >
+                Grammatik-Tags anzeigen
+                <span class="toggle-status green">An</span>
+              </button>
+              <button
+                id="toggleBirkenbihlMetrum"
+                class="toggle-btn"
+                data-state="on"
+                title="Metrum-Marker ein-/ausblenden"
+              >
+                Metrum-Marker anzeigen
+                <span class="toggle-status green">An</span>
+              </button>
+              <button id="btnBirPlus" class="btn" title="Schrift größer">
+                A+
+              </button>
+              <button id="btnBirMinus" class="btn" title="Schrift kleiner">
+                A−
+              </button>
             </div>
           </div>
           <div id="birkenbihlText" class="pane-body mono"></div>
@@ -177,63 +231,63 @@
 
         <!-- Entwurf → PDF (unten rechts) -->
         <div class="pane">
-          <div class="pane-head complex-header">
-            <div class="header-row">
-              <div class="pane-title">Entwurf → PDF</div>
-              <a id="btnDraftDownload" class="btn primary" href="#" download
-                >Entwurf.txt herunterladen</a
-              >
-            </div>
-            <div class="header-row">
-              <button id="btnRenderDraft" class="btn primary">
-                PDF aus Entwurf rendern
+          <div class="pane-head">
+            <div class="pane-title">Entwurf → PDF</div>
+            <div class="pane-tools">
+              <button id="draftFileLabel" class="btn primary">
+                Entwurf.txt hochladen
               </button>
-              <label for="draftFile" id="draftFileLabel" class="btn primary"
-                >Entwurf.txt hochladen</label
-              >
-              <input
-                id="draftFile"
-                type="file"
-                accept=".txt"
-                class="visually-hidden"
-              />
+              <button id="btnDraftDownload" class="btn primary">
+                Entwurf.txt herunterladen
+              </button>
+              <button id="btnRenderDraft" class="btn primary">
+                PDF aus Entwurf erstellen
+              </button>
             </div>
-            <div class="header-separator"></div>
-            <div class="header-row">
-              <div class="display-controls">
-                <button
-                  id="toggleDraftTags"
-                  class="btn toggle-btn"
-                  data-state="on"
-                  title="Grammatik-Tags im Editor ein-/ausblenden"
-                >
-                  <span class="toggle-text">Tags im Editor sichtbar</span>
-                  <span class="toggle-status green">An</span>
-                </button>
-                <button
-                  id="btnDraftTextPlus"
-                  class="btn"
-                  title="Schrift größer"
-                >
-                  A+
-                </button>
-                <button
-                  id="btnDraftTextMinus"
-                  class="btn"
-                  title="Schrift kleiner"
-                >
-                  A−
-                </button>
-              </div>
+          </div>
+          <!-- Zweite Header-Zeile -->
+          <div class="pane-head">
+            <div class="pane-title"></div>
+            <div class="pane-tools">
+              <button
+                id="toggleDraftTags"
+                class="toggle-btn"
+                data-state="on"
+                title="Grammatik-Tags im Editor ein-/ausblenden"
+              >
+                Grammatik-Tags anzeigen
+                <span class="toggle-status green">An</span>
+              </button>
+              <button
+                id="toggleDraftMetrum"
+                class="toggle-btn"
+                data-state="on"
+                title="Metrum-Marker ein-/ausblenden"
+              >
+                Metrum-Marker anzeigen
+                <span class="toggle-status green">An</span>
+              </button>
+              <button id="btnDraftTextPlus" class="btn" title="Schrift größer">
+                A+
+              </button>
+              <button
+                id="btnDraftTextMinus"
+                class="btn"
+                title="Schrift kleiner"
+              >
+                A−
+              </button>
               <button id="resetDraft" class="btn" title="Entwurf zurücksetzen">
                 Entwurf zurücksetzen
               </button>
             </div>
           </div>
-
-          <div class="draft-uploader">
-            <span class="muted" id="draftStatus">Bereit.</span>
-          </div>
+          <input
+            id="draftFile"
+            type="file"
+            accept=".txt"
+            style="display: none"
+          />
 
           <div
             id="draftText"
@@ -292,49 +346,42 @@
         </div>
         <div class="modal-body">
           <div class="config-section">
-            <h3>Tag-Konfiguration</h3>
-            <div class="tag-table-container">
-              <table id="tag-config-table">
-                <thead>
-                  <tr>
-                    <th>Modifikation</th>
-                    <th>hochgestellt</th>
-                    <th>tiefgestellt</th>
-                    <th>rot</th>
-                    <th>orange</th>
-                    <th>blau</th>
-                    <th>grün</th>
-                    <th>magenta</th>
-                    <th>Tag nicht<br />zeigen</th>
-                  </tr>
-                </thead>
-                <!-- TBODYs werden dynamisch per JavaScript eingefügt -->
-              </table>
-            </div>
+            <h3>Tag- und Farbkonfiguration</h3>
             <p class="config-hint">
-              Hinweis: Originale Tag-Konfiguration ist voreingestellt. Innerhalb
-              einer Gruppe (z.B. Verben) überschreiben die weiter unten
-              liegenden Farbeinstellungen die darüberliegenden. Beispiel: Tempus
-              in der Gruppe Verben wird grün eingestellt, Aktiv in der Gruppe
-              Verben aber rot. Dann erscheinen Verben in allen Tempora mit
-              Passiv-, Medium- und Medium/Passiv-Tags grün, Verben mit Tag Aktiv
-              aber rot. Wenn “Tag nicht zeigen” gewählt wird, werden die Worte
-              selbst trotzdem die von Ihnen ausgewählte Farbe erhalten. Es wird
-              zusätzlich zu dem von Ihnen konfigurierten PDF immer auch
-              zusätzlich die _BlackWhite, _NoTags, _Tags, _Colour, _GR-Fett,
-              _DE-Fett und _Normal Version erzeugt. Das Rendern der PDFs kann
-              bis zu 2 Minuten dauern.
+              Hinweis: Die originale Tag- und Farbkonfiguration ist
+              voreingestellt. Innerhalb einer Gruppe (z.B. Verben) überschreiben
+              die weiter unten liegenden Farbeinstellungen die darüberliegenden.
+              Beispiel: Die Tempora in der Gruppe Verben werden auf grün
+              eingestellt. Das Aktiv in der Gruppe Verben ist aber rot
+              eingestellt. Dann erscheinen Verben grün, Verben mit Aktiv-Tag
+              aber rot. Es wird immer zu dem von Ihnen konfigurierten PDF die
+              _BlackWhite, _NoTags, _Tags, _Colour, _GR-Fett, _DE-Fett und
+              _Normal Version zusätzlich erzeugt. Das Erstellen der PDFs kann
+              bis zu 60 Sekunden dauern.
             </p>
+            <div class="tag-table-container">
+              <div id="tag-config-tables">
+                <!-- Hier werden die einzelnen Gruppentabellen dynamisch erstellt -->
+              </div>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
           <button id="cancelRendering" class="btn">Abbrechen</button>
           <button id="confirmRendering" class="btn primary">
-            PDFs rendern
+            PDFs erstellen
           </button>
         </div>
       </div>
     </div>
+
+    <!-- PDF.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script>
+      // PDF.js Worker konfigurieren
+      window["pdfjs-dist/build/pdf"].GlobalWorkerOptions.workerSrc =
+        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js";
+    </script>
 
     <!-- Globale Utils -->
     <script src="utils.js"></script>
@@ -344,7 +391,7 @@
         "https://birkenbihl-draft-01.klemp-tobias.workers.dev";
     </script>
     <!-- Hauptlogik (deine vorhandene Datei) -->
-    <script src="work.js"></script>
+    <script type="module" src="work.js"></script>
 
     <!-- Kleines Patch-Skript: Titel säubern, PDF-Links & Zoom -->
     <script>
@@ -390,29 +437,6 @@
           });
         }
 
-        // Einfache PDF-"Zooms" über CSS-Scale
-        function setupPdfZoom() {
-          function makeZoom(paneId, plusBtnId, minusBtnId) {
-            const pane = document.getElementById(paneId);
-            const plus = document.getElementById(plusBtnId);
-            const minus = document.getElementById(minusBtnId);
-            if (!pane || !plus || !minus) return;
-            let scale = 1;
-            const apply = () =>
-              pane.style.setProperty("--pdfScale", String(scale));
-            plus.addEventListener("click", () => {
-              scale = Math.min(2.5, +(scale + 0.1).toFixed(2));
-              apply();
-            });
-            minus.addEventListener("click", () => {
-              scale = Math.max(0.6, +(scale - 0.1).toFixed(2));
-              apply();
-            });
-            apply();
-          }
-          makeZoom("draftPdfPane", "btnDraftPdfZoomIn", "btnDraftPdfZoomOut");
-        }
-
         // Text-Zoom-Funktionalität
         function setupTextZoom() {
           function makeTextZoom(textId, plusBtnId, minusBtnId) {
@@ -451,9 +475,34 @@
         document.addEventListener("DOMContentLoaded", () => {
           cleanTitle();
           hookPdfLinks();
-          setupPdfZoom();
           setupTextZoom();
           setupDownloadButtons();
+
+          // SUPER EINFACHE LÖSUNG: Beide unteren Text-Fenster gleich groß machen
+          setTimeout(() => {
+            const birkenbihlText = document.getElementById("birkenbihlText");
+            const draftText = document.getElementById("draftText");
+
+            if (birkenbihlText) {
+              birkenbihlText.style.height = "800px";
+              birkenbihlText.style.maxHeight = "800px";
+              birkenbihlText.style.minHeight = "800px";
+              birkenbihlText.style.overflowY = "auto";
+              birkenbihlText.style.display = "block";
+              birkenbihlText.style.flex = "none";
+              console.log("Birkenbihl-Fenster auf 800px gesetzt!");
+            }
+
+            if (draftText) {
+              draftText.style.height = "800px";
+              draftText.style.maxHeight = "800px";
+              draftText.style.minHeight = "800px";
+              draftText.style.overflowY = "auto";
+              draftText.style.display = "block";
+              draftText.style.flex = "none";
+              console.log("Entwurf-Fenster auf 800px gesetzt!");
+            }
+          }, 100);
         });
       })();
     </script>
