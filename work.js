@@ -575,10 +575,23 @@ function buildPdfUrlFromSelection() {
 }
 
 function updatePdfView(fromWorker = false) {
-  // Wenn Entwurf gewählt UND wir haben gerade eine Worker-URL -> die bevorzugen
-  if (state.source === "draft" && state.lastDraftUrl && fromWorker) {
-    loadPdfIntoRenderer(state.lastDraftUrl);
-    return;
+  if (state.source === "draft") {
+    if (state.draftBuildActive) {
+      showDraftWaitingPlaceholder({});
+      return;
+    }
+    if (state.manualDraftBuildRequired && !state.draftHasResult) {
+      showDraftManualPlaceholder({});
+      return;
+    }
+    if (!state.lastDraftUrl || !state.draftHasResult) {
+      showDraftEmptyPlaceholder();
+      return;
+    }
+    if (state.lastDraftUrl && fromWorker) {
+      loadPdfIntoRenderer(state.lastDraftUrl);
+      return;
+    }
   }
 
   // Sicherstellen, dass pdfOptions mit state synchronisiert sind
@@ -929,6 +942,10 @@ async function performRendering() {
   });
 
   el.draftStatus.textContent = "Rendere Entwurf...";
+  state.draftBuildActive = true;
+  state.draftHasResult = false;
+  state.manualDraftBuildRequired = false;
+  state.pendingDraftFilename = null;
 
   // Erweiterte Optionen mit Tag-Konfiguration
   const payload = {
@@ -1017,6 +1034,9 @@ async function performRendering() {
     console.error(e);
     state.draftBuildActive = false;
     state.pendingDraftFilename = null;
+    state.manualDraftBuildRequired = false;
+    state.manualDraftCommand = null;
+    state.draftHasResult = false;
     if (
       e.message &&
       (e.message.includes("CORS") ||

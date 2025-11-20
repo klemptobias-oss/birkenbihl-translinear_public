@@ -26,9 +26,6 @@ build/
 pdf/
 pdf/**
 
-pdf_drafts/**
-!pdf_drafts/**/.gitkeep
-
 Result/
 Result/**
 
