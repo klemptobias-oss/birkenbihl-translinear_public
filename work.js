@@ -8,6 +8,7 @@ const GH_REPO = "birkenbihl-translinear_public";
 const GH_BASE = `https://github.com/${GH_OWNER}/${GH_REPO}/releases/download`;
 const GH_RAW_BRANCH = "main";
 const GH_RAW_BASE = `https://raw.githubusercontent.com/${GH_OWNER}/${GH_REPO}/${GH_RAW_BRANCH}`;
+const GH_ACTIONS_URL = `https://github.com/${GH_OWNER}/${GH_REPO}/actions`;
 
 const WORKER_BASE = "https://birkenbihl-draft-01.klemp-tobias.workers.dev"; // Externer Worker
 const GH_RELEASE_PROXY = `${WORKER_BASE}/release`;
@@ -148,6 +149,9 @@ const state = {
   meterSupported: false,
   meterPageActive: false,
   lastDraftUrl: null, // vom Worker zurückbekommen
+  pendingDraftFilename: null, // merkt sich den zuletzt gestarteten Build
+  manualDraftBuildRequired: false,
+  manualDraftCommand: null,
   originalBirkenbihlText: "", // Zum Zurücksetzen des Entwurfs
 
   // Modal-Konfiguration
@@ -558,6 +562,10 @@ function buildPdfUrlFromSelection() {
 }
 
 function updatePdfView(fromWorker = false) {
+  if (state.source === "draft" && !state.lastDraftUrl) {
+    showDraftEmptyPlaceholder();
+    return;
+  }
   // Wenn Entwurf gewählt UND wir haben gerade eine Worker-URL -> die bevorzugen
   if (state.source === "draft" && state.lastDraftUrl && fromWorker) {
     loadPdfIntoRenderer(state.lastDraftUrl);
@@ -597,6 +605,114 @@ function loadPdfIntoRenderer(pdfUrl) {
   pdfOptions.meter = state.meter;
 
   loadPdfIntoRendererDirect(pdfUrl);
+}
+
+function escapeHtml(str = "") {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function showPdfPlaceholder(kind, opts = {}) {
+  initPdfRenderer();
+  const pages = pdfRenderer.elements?.pages;
+  pdfRenderer.pdf = null;
+  pdfRenderer.currentPage = 1;
+  if (pdfRenderer.elements?.pageCount) pdfRenderer.elements.pageCount.textContent = "–";
+  if (pdfRenderer.elements?.pageNum) pdfRenderer.elements.pageNum.textContent = "–";
+
+  if (!pages) return;
+
+  const iconHtml = opts.icon ? `<div class="pdf-placeholder-icon">${opts.icon}</div>` : "";
+  const titleHtml = opts.title ? `<h3>${opts.title}</h3>` : "";
+  const messageHtml = opts.message ? `<p>${opts.message}</p>` : "";
+  const detailsHtml = opts.details ? `<div class="pdf-placeholder-details">${opts.details}</div>` : "";
+
+  pages.innerHTML = `
+    <div class="pdf-placeholder ${escapeHtml(kind)}">
+      ${iconHtml}
+      <div class="pdf-placeholder-content">
+        ${titleHtml}
+        ${messageHtml}
+        ${detailsHtml}
+      </div>
+    </div>
+  `;
+}
+
+function showDraftWaitingPlaceholder(extra = {}) {
+  const safeFilename = extra.filename ? `<code>${escapeHtml(extra.filename)}</code>` : "";
+  const safeUrl = extra.url ? `<code>${escapeHtml(extra.url)}</code>` : "";
+  const extraInfo = `
+    ${safeFilename ? `<p>Datei: ${safeFilename}</p>` : ""}
+    ${safeUrl ? `<p>Zielpfad: ${safeUrl}</p>` : ""}
+    <p>
+      <a href="${GH_ACTIONS_URL}" target="_blank" rel="noopener">
+        GitHub Actions Status ansehen →
+      </a>
+    </p>
+  `;
+
+  showPdfPlaceholder("draft-waiting", {
+    icon: "🚀",
+    title: "PDF-Generierung läuft …",
+    message:
+      "Der Worker hat den Entwurf gespeichert. GitHub baut nun alle PDF-Varianten – das dauert meistens weniger als eine Minute.",
+    details: extraInfo,
+  });
+}
+
+function showDraftEmptyPlaceholder() {
+  showPdfPlaceholder("draft-empty", {
+    icon: "📝",
+    title: "Noch kein Entwurfs-PDF vorhanden",
+    message:
+      "Nutzen Sie den grünen Button „PDF aus Entwurf erstellen“, um eine neue Entwurfs-PDF zu starten. Sobald der Build fertig ist, erscheint sie automatisch hier.",
+  });
+}
+
+function showDraftManualPlaceholder(extra = {}) {
+  const command = extra.command ? `<code>${escapeHtml(extra.command)}</code>` : "";
+  showPdfPlaceholder("draft-manual", {
+    icon: "🛠️",
+    title: "Manuelle PDF-Erstellung erforderlich",
+    message:
+      "Für diesen Entwurf konnte keine GitHub-Aktion gestartet werden. Führen Sie den folgenden Befehl lokal aus, um die PDFs zu erzeugen und hochzuladen:",
+    details: command ? `<p>${command}</p>` : "",
+  });
+}
+
+function showDraftErrorPlaceholder(extra = {}) {
+  const safeMessage = extra.message ? escapeHtml(extra.message) : "";
+  const safeUrl = extra.url ? `<code>${escapeHtml(extra.url)}</code>` : "";
+  showPdfPlaceholder("draft-error", {
+    icon: "⚠️",
+    title: "PDF konnte nicht geladen werden",
+    message:
+      "Beim Laden des Entwurfs ist ein Fehler aufgetreten. Bitte nach kurzer Zeit noch einmal versuchen oder auf „Original“ wechseln.",
+    details: `
+      ${safeMessage ? `<p>Technische Info: ${safeMessage}</p>` : ""}
+      ${safeUrl ? `<p>Ziel: ${safeUrl}</p>` : ""}
+    `,
+  });
+}
+
+function showOriginalPdfErrorPlaceholder(extra = {}) {
+  const safeMessage = extra.message ? escapeHtml(extra.message) : "";
+  const safeUrl = extra.url ? `<code>${escapeHtml(extra.url)}</code>` : "";
+  showPdfPlaceholder("pdf-error", {
+    icon: "⚠️",
+    title: "PDF konnte nicht geladen werden",
+    message:
+      "Bitte nutzen Sie „PDF in neuem Tab öffnen“ oder laden Sie die Seite neu. Der Link könnte vorübergehend nicht verfügbar sein.",
+    details: `
+      ${safeMessage ? `<p>Technische Info: ${safeMessage}</p>` : ""}
+      ${safeUrl ? `<p>Ziel: ${safeUrl}</p>` : ""}
+    `,
+  });
 }
 
 // 7) Texte laden (angepasst an die neue Struktur)
@@ -845,6 +961,7 @@ async function performRendering() {
     el.draftStatus.textContent = `Text gespeichert: ${data.filename}`;
 
     // Zeige Status basierend auf Worker-Antwort
+    const manualCommand = `python build_${state.kind}_drafts_adapter.py texte_drafts/${state.kind}_drafts/${state.author}/${state.work}/${data.filename}`;
     setTimeout(() => {
       if (data.workflow_triggered) {
         el.draftStatus.innerHTML = `
@@ -856,11 +973,15 @@ async function performRendering() {
             <br><small style="color: #6b7280;">PDFs werden in wenigen Minuten verfügbar sein.</small>
           </div>
           <div style="color: #6b7280; margin-top: 8px; font-size: 12px;">
-            <a href="https://github.com/klemptobias-oss/birkenbihl-translinear_public/actions" target="_blank">
+            <a href="${GH_ACTIONS_URL}" target="_blank">
               GitHub Actions anzeigen →
             </a>
           </div>
         `;
+        showDraftWaitingPlaceholder({
+          filename: data.filename,
+          url: state.lastDraftUrl,
+        });
       } else {
         el.draftStatus.innerHTML = `
           <div style="color: #059669; font-weight: bold;">
@@ -869,17 +990,21 @@ async function performRendering() {
           <div style="color: #dc2626; margin-top: 8px;">
             ⚠ PDF-Generierung: Führen Sie manuell aus:<br>
             <code style="background: #f3f4f6; padding: 2px 4px; border-radius: 3px;">
-              python build_${state.kind}_drafts_adapter.py texte_drafts/${state.kind}_drafts/${state.author}/${state.work}/${data.filename}
+              ${manualCommand}
             </code>
             <br><small style="color: #6b7280;">PDFs werden in pdf_drafts/${state.kind}_drafts/${state.author}/${state.work}/ erstellt</small>
           </div>
         `;
+        showDraftManualPlaceholder({ command: manualCommand });
       }
     }, 1000);
 
     // Für PDF-Anzeige verwenden wir das erwartete Draft-Ziel
     state.source = "draft";
     state.lastDraftUrl = buildDraftPdfUrl(buildDraftPdfFilename());
+    state.pendingDraftFilename = data.filename;
+    state.manualDraftBuildRequired = !data.workflow_triggered;
+    state.manualDraftCommand = data.workflow_triggered ? null : manualCommand;
     updatePdfView(true);
   } catch (e) {
     console.error(e);
@@ -2159,6 +2284,11 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
     // PDF laden
     const task = pdfjs.getDocument(pdfUrl);
     pdfRenderer.pdf = await task.promise;
+    if (state.source === "draft") {
+      state.pendingDraftFilename = null;
+      state.manualDraftBuildRequired = false;
+      state.manualDraftCommand = null;
+    }
 
     // UI aktualisieren
     if (pdfRenderer.elements.pageCount) {
@@ -2178,14 +2308,20 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
   } catch (error) {
     console.error("Fehler beim Laden des PDFs:", error);
     console.error("PDF URL war:", pdfUrl);
-    if (pdfRenderer.elements.pages) {
-      pdfRenderer.elements.pages.innerHTML = `
-        <div class="pdf-loading" style="color: #ef4444;">
-          ❌ Fehler beim Laden des PDFs<br>
-          <small>URL: ${pdfUrl}</small><br>
-          <small>Fehler: ${error.message}</small>
-        </div>
-      `;
+    const message = error?.message || "";
+    if (state.source === "draft") {
+      if (state.manualDraftBuildRequired) {
+        showDraftManualPlaceholder({ command: state.manualDraftCommand });
+      } else if (/Missing PDF/i.test(message) || /Unexpected server response/i.test(message)) {
+        showDraftWaitingPlaceholder({
+          filename: state.pendingDraftFilename,
+          url: pdfUrl,
+        });
+      } else {
+        showDraftErrorPlaceholder({ message, url: pdfUrl });
+      }
+    } else {
+      showOriginalPdfErrorPlaceholder({ message, url: pdfUrl });
     }
   }
 }
@@ -2263,30 +2399,14 @@ function initPdfOptionControls() {
 
       // Synchronisiere mit state für alte Funktionen
       if (opt === "source") {
-        // Spezialbehandlung für "Entwurf" Button
+        state.source = val;
         if (val === "draft") {
-          // Prüfe, ob ein Entwurfs-PDF existiert
           if (!state.lastDraftUrl) {
-            // Kein Entwurfs-PDF vorhanden - Fehlermeldung anzeigen
-            alert(
-              "Es wurde noch kein PDF aus dem Entwurf erstellt.\n\nBitte verwenden Sie den grünen Button 'PDF aus Entwurf erstellen', um ein Entwurfs-PDF zu generieren."
-            );
-            // Button zurücksetzen auf "Original"
-            buttons.forEach((b) => {
-              b.classList.remove("active");
-            });
-            const originalBtn = group.querySelector('[data-val="original"]');
-            if (originalBtn) originalBtn.classList.add("active");
-            state.source = "original";
-            return; // Abbrechen, kein PDF laden
+            showDraftEmptyPlaceholder();
+            return;
           }
-          // Entwurfs-PDF existiert - laden
-          state.source = val;
           loadPdfIntoRendererDirect(state.lastDraftUrl);
-          return; // Frühzeitiger Return, da wir das Entwurfs-PDF laden
-        } else {
-          // "Original" Button geklickt
-          state.source = val;
+          return;
         }
       } else if (opt === "strength") {
         state.strength = val;
