@@ -545,7 +545,7 @@ function buildReleaseProxyUrl(filename, disposition = "inline") {
   }
   const params = new URLSearchParams({
     tag: state.workMeta.release_tag,
-    file: filename,
+    file: filename,  // Filename wird vom Worker automatisch URL-encoded
     mode: disposition === "attachment" ? "attachment" : "inline",
   });
   return `${GH_RELEASE_PROXY}?${params.toString()}`;

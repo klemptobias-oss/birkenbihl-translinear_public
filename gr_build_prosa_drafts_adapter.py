@@ -130,8 +130,15 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
         print(f"⚠ Keine passenden PDFs für {input_stem} gefunden."); return
 
     for name in relevant_pdfs:
+        # Entferne das temp_ Präfix falls vorhanden
+        final_name = name
+        if name.startswith("temp_"):
+            # temp_Nomoi_12_birkenbihl_draft_birkenbihl_DRAFT_..._GR_Fett_Colour_Tag.pdf
+            # → Nomoi_12_birkenbihl_draft_birkenbihl_DRAFT_..._GR_Fett_Colour_Tag.pdf
+            final_name = name[5:]  # Entferne "temp_"
+        
         src = ROOT / name
-        dst = target_dir / name
+        dst = target_dir / final_name
         src.replace(dst)
         print(f"✓ PDF → {dst}")
 

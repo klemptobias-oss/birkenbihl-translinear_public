@@ -111,8 +111,10 @@ def run_one(input_path: Path) -> None:
     
     for name in new_pdfs:
         if name.startswith(temp_stem):
-            # Ersetze den temporären Stamm durch den originalen
-            final_name = name.replace(temp_stem, input_stem, 1)
+            # Entferne das temp_ Präfix komplett
+            # temp_Werk_birkenbihl_draft_..._GR_Fett_Colour_Tag.pdf
+            # → Werk_birkenbihl_draft_..._GR_Fett_Colour_Tag.pdf
+            final_name = name[5:]  # Entferne "temp_"
             src = ROOT / name
             dst = target_dir / final_name
             src.replace(dst)
