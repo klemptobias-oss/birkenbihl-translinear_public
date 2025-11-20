@@ -152,6 +152,8 @@ const state = {
   pendingDraftFilename: null, // merkt sich den zuletzt gestarteten Build
   manualDraftBuildRequired: false,
   manualDraftCommand: null,
+  draftBuildActive: false,
+  draftHasResult: false,
   originalBirkenbihlText: "", // Zum Zurücksetzen des Entwurfs
 
   // Modal-Konfiguration
@@ -573,10 +575,6 @@ function buildPdfUrlFromSelection() {
 }
 
 function updatePdfView(fromWorker = false) {
-  if (state.source === "draft" && !state.lastDraftUrl) {
-    showDraftEmptyPlaceholder();
-    return;
-  }
   // Wenn Entwurf gewählt UND wir haben gerade eine Worker-URL -> die bevorzugen
   if (state.source === "draft" && state.lastDraftUrl && fromWorker) {
     loadPdfIntoRenderer(state.lastDraftUrl);
@@ -683,12 +681,13 @@ function showDraftEmptyPlaceholder() {
     icon: "📝",
     title: "Noch kein Entwurfs-PDF vorhanden",
     message:
-      "Nutzen Sie den grünen Button „PDF aus Entwurf erstellen“, um eine neue Entwurfs-PDF zu starten. Sobald der Build fertig ist, erscheint sie automatisch hier.",
+      "Nutzen Sie den grünen Button „PDF aus Entwurf erstellen“, um aus einem neuen Entwurf PDFs zu erstellen. Sobald der PDF-Builder fertig ist, erscheinen sie automatisch in der PDF-Ansicht.",
   });
 }
 
 function showDraftManualPlaceholder(extra = {}) {
-  const command = extra.command ? `<code>${escapeHtml(extra.command)}</code>` : "";
+  const commandValue = extra.command || state.manualDraftCommand || "";
+  const command = commandValue ? `<code>${escapeHtml(commandValue)}</code>` : "";
   showPdfPlaceholder("draft-manual", {
     icon: "🛠️",
     title: "Manuelle PDF-Erstellung erforderlich",
@@ -978,41 +977,46 @@ async function performRendering() {
     // Der Worker speichert den Text in texte_drafts/
     el.draftStatus.textContent = `✓ Text gespeichert: ${data.filename}`;
 
-    // Zeige Status basierend auf Worker-Antwort
     const draftFilePath = getDraftTextAbsolutePath(data.filename);
     const manualCommand = `python build_${state.kind}_drafts_adapter.py ${draftFilePath}`;
-    setTimeout(() => {
-      if (data.workflow_triggered) {
-        el.draftStatus.textContent = `✓ Text gespeichert: ${data.filename} – PDFs werden gleich angezeigt.`;
-        showDraftWaitingPlaceholder({
-          filename: data.filename,
-          url: state.lastDraftUrl,
-        });
-      } else {
-        el.draftStatus.innerHTML = `
-          <div style="color: #059669; font-weight: bold;">
-            ✓ Text gespeichert: ${data.filename}
-          </div>
-          <div style="color: #dc2626; margin-top: 6px;">
-            Bitte lokal ausführen:<br>
-            <code style="background: #f3f4f6; padding: 2px 4px; border-radius: 3px; display: inline-block; margin-top: 4px;">
-              ${manualCommand}
-            </code>
-          </div>
-        `;
-        showDraftManualPlaceholder({ command: manualCommand });
-      }
-    }, 600);
+    const buildActive = !!data.workflow_triggered;
+    const manualRequired = !buildActive;
 
     // Für PDF-Anzeige verwenden wir das erwartete Draft-Ziel
     state.source = "draft";
     state.lastDraftUrl = buildDraftPdfUrl(buildDraftPdfFilename());
-    state.pendingDraftFilename = data.filename;
-    state.manualDraftBuildRequired = !data.workflow_triggered;
-    state.manualDraftCommand = data.workflow_triggered ? null : manualCommand;
+    state.pendingDraftFilename = buildActive ? data.filename : null;
+    state.draftBuildActive = buildActive;
+    state.draftHasResult = false;
+    state.manualDraftBuildRequired = manualRequired;
+    state.manualDraftCommand = manualRequired ? manualCommand : null;
+
+    if (buildActive) {
+      el.draftStatus.textContent = `✓ Text gespeichert: ${data.filename} – PDFs werden gleich angezeigt.`;
+      showDraftWaitingPlaceholder({
+        filename: data.filename,
+        url: state.lastDraftUrl,
+      });
+    } else {
+      el.draftStatus.innerHTML = `
+        <div style="color: #059669; font-weight: bold;">
+          ✓ Text gespeichert: ${data.filename}
+        </div>
+        <div style="color: #dc2626; margin-top: 6px;">
+          Bitte lokal ausführen:<br>
+          <code style="background: #f3f4f6; padding: 2px 4px; border-radius: 3px; display: inline-block; margin-top: 4px;">
+            ${manualCommand}
+          </code>
+        </div>
+      `;
+      showDraftManualPlaceholder({ command: manualCommand });
+    }
+
     updatePdfView(true);
   } catch (e) {
     console.error(e);
+    state.draftBuildActive = false;
+    state.pendingDraftFilename = null;
     if (
       e.message &&
       (e.message.includes("CORS") ||
@@ -1841,6 +1845,8 @@ function wireEvents() {
   // Entwurfs-Text Auto-Save (optional)
   el.draftText?.addEventListener("input", () => {
     el.draftStatus.textContent = "Entwurf geändert. Bereit zum Rendern.";
+    state.draftHasResult = false;
+    state.draftBuildActive = false;
   });
 
   // Schriftgrößen-Buttons
@@ -2293,6 +2299,8 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
       state.pendingDraftFilename = null;
       state.manualDraftBuildRequired = false;
       state.manualDraftCommand = null;
+      state.draftBuildActive = false;
+      state.draftHasResult = true;
     }
 
     // UI aktualisieren
@@ -2315,13 +2323,16 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
     console.error("PDF URL war:", pdfUrl);
     const message = error?.message || "";
     if (state.source === "draft") {
-      if (state.manualDraftBuildRequired) {
+      if (state.manualDraftBuildRequired && !state.draftHasResult) {
         showDraftManualPlaceholder({ command: state.manualDraftCommand });
-      } else if (state.pendingDraftFilename || /Missing PDF/i.test(message) || /Unexpected server response/i.test(message)) {
+      } else if (state.draftBuildActive) {
         showDraftWaitingPlaceholder({
           filename: state.pendingDraftFilename,
           url: pdfUrl,
         });
+      } else if (/Missing PDF/i.test(message) || /Unexpected server response/i.test(message)) {
+        state.draftHasResult = false;
+        showDraftEmptyPlaceholder();
       } else {
         showDraftErrorPlaceholder({ message, url: pdfUrl });
       }

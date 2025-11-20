@@ -396,7 +396,9 @@ function sanitizeWorkPath(path = "") {
 }
 
 function stateLangFallback(kindSafe = "prosa") {
-  return kindSafe === "poesie" ? "griechisch" : "griechisch";
+  if (kindSafe === "poesie") return "griechisch";
+  if (kindSafe === "prosa") return "griechisch";
+  return "griechisch";
 }
 
 function tsStamp(d = new Date()) {
