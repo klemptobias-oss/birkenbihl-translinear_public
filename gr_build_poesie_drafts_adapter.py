@@ -38,25 +38,18 @@ def run_one(input_path: Path) -> None:
     else:
         print("⚠ Keine Tag-Konfiguration gefunden, verwende Standard-Konfiguration des Runners")
 
-    # Extrahiere Sprache, Autor und Werk aus dem Pfad
-    # Pfad: texte_drafts/<Sprache>/poesie/<Autor>/<Werk>/datei.txt
+    # Ableitung des relativen Pfads unterhalb von texte_drafts
     try:
-        parts = input_path.parts
+        parts = input_path.resolve().parts
         texte_drafts_index = parts.index("texte_drafts")
-        
-        language = parts[texte_drafts_index + 1]
-        # gattung "poesie" ist an index + 2
-        author = parts[texte_drafts_index + 3]
-        work = parts[texte_drafts_index + 4]
-
+        relative_parts = list(parts[texte_drafts_index + 1 : -1])
+        if not relative_parts:
+            raise ValueError("leerer relativer Pfad")
     except (ValueError, IndexError):
-        # Fallback, wenn die Struktur nicht wie erwartet ist
-        author = "unknown"
-        work = "unknown"
-        language = "unknown"
+        relative_parts = ["unknown", "poesie", "Unsortiert", "Unbenannt"]
     
-    # Korrigierte Zielordner-Struktur: pdf_drafts/<Sprache>/poesie/<Autor>/<Werk>/
-    target_dir = ROOT / "pdf_drafts" / language / "poesie" / author / work
+    relative_path = Path(*relative_parts)
+    target_dir = ROOT / "pdf_drafts" / relative_path
     target_dir.mkdir(parents=True, exist_ok=True)
     
     # Erstelle .gitkeep Datei um sicherzustellen, dass der Ordner bei Git gepusht wird

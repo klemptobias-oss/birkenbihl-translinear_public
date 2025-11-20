@@ -87,53 +87,43 @@ jobs:
           TEMP_GROUP_FILE=$(mktemp)
 
           for file in $DRAFT_FILES; do
-            # Extrahiere Autor und Werk aus dem Pfad
-            # z.B. texte_drafts/prosa_drafts/Platon/Menon/datei.txt
-            IFS='/' read -ra PATH_PARTS <<< "$file"
-            if [ ${#PATH_PARTS[@]} -ge 4 ]; then
-              KIND_TYPE="${PATH_PARTS[1]}"  # prosa_drafts oder poesie_drafts
-              AUTHOR="${PATH_PARTS[2]}"     # Platon
-              WORK="${PATH_PARTS[3]}"       # Menon
-              
-              # Extrahiere Zeitstempel aus Dateinamen
-              # z.B. Menon_birkenbihl_draft_birkenbihl_DRAFT_20250914_125549.txt
-              FILENAME="${PATH_PARTS[4]}"
-              TIMESTAMP=$(echo "$FILENAME" | grep -o '[0-9]\{8\}_[0-9]\{6\}' || echo "00000000_000000")
-              
-              echo "${KIND_TYPE}|${AUTHOR}|${WORK}|${TIMESTAMP}|${file}" >> "$TEMP_GROUP_FILE"
-            fi
+            REL_PATH="${file#texte_drafts/}"
+            DIR_PATH=$(dirname "$REL_PATH")
+            FILENAME=$(basename "$REL_PATH")
+            TIMESTAMP=$(echo "$FILENAME" | grep -o '[0-9]\{8\}_[0-9]\{6\}' || echo "00000000_000000")
+            echo "${DIR_PATH}|${TIMESTAMP}|${file}" >> "$TEMP_GROUP_FILE"
           done
 
-          # Sortiere nach Art, Autor, Werk, dann nach Zeitstempel (neueste zuerst)
-          sort -t'|' -k1,1 -k2,2 -k3,3 -k4,4r "$TEMP_GROUP_FILE" > "${TEMP_GROUP_FILE}.sorted"
+          # Sortiere nach Werkpfad und Zeitstempel (neueste zuerst)
+          sort -t'|' -k1,1 -k2,2r "$TEMP_GROUP_FILE" > "${TEMP_GROUP_FILE}.sorted"
 
-          # Verarbeite nur den neuesten Draft pro Autor/Werk
+          # Verarbeite nur den neuesten Draft pro Werk
           CURRENT_GROUP=""
-          while IFS='|' read -r KIND_TYPE AUTHOR WORK TIMESTAMP FILE; do
-            GROUP_KEY="${KIND_TYPE}|${AUTHOR}|${WORK}"
+          while IFS='|' read -r DIR_PATH TIMESTAMP FILE; do
+            GROUP_KEY="${DIR_PATH}"
             
             if [ "$GROUP_KEY" != "$CURRENT_GROUP" ]; then
               CURRENT_GROUP="$GROUP_KEY"
               echo "Verarbeite neuesten Draft: $FILE (Zeitstempel: $TIMESTAMP)"
               
               # Lösche alte PDFs für dieses Werk
-              PDF_DIR="pdf_drafts/${KIND_TYPE}/${AUTHOR}/${WORK}"
+              PDF_DIR="pdf_drafts/${DIR_PATH}"
               if [ -d "$PDF_DIR" ]; then
                 echo "Lösche alte PDFs in: $PDF_DIR"
                 find "$PDF_DIR" -name "*.pdf" -delete
               fi
               
+              KIND=$(echo "$DIR_PATH" | cut -d'/' -f2)
+              
               # Bestimme ob es Prosa oder Poesie ist und erstelle neue PDFs
-              if [[ "$KIND_TYPE" == "prosa_drafts" ]]; then
+              if [[ "$KIND" == "prosa" ]]; then
                 echo "Erstelle Prosa PDFs für: $FILE"
-                # Verwende absoluten Pfad
                 python build_prosa_drafts_adapter.py "$(pwd)/$FILE"
-              elif [[ "$KIND_TYPE" == "poesie_drafts" ]]; then
+              elif [[ "$KIND" == "poesie" ]]; then
                 echo "Erstelle Poesie PDFs für: $FILE"
-                # Verwende absoluten Pfad
                 python build_poesie_drafts_adapter.py "$(pwd)/$FILE"
               else
-                echo "Unbekannter Draft-Typ für: $FILE"
+                echo "Unbekannter Draft-Typ ($KIND) für: $FILE"
               fi
             else
               echo "Überspringe älteren Draft: $FILE (Zeitstempel: $TIMESTAMP)"

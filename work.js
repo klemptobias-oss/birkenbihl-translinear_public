@@ -164,6 +164,24 @@ const state = {
   },
 };
 
+function getDraftWorkPath() {
+  if (state.workMeta?.path) return state.workMeta.path;
+  const segments = [
+    state.lang,
+    state.kind,
+    state.category,
+    state.author,
+    state.work,
+  ].filter(Boolean);
+  return segments.join("/");
+}
+
+function getDraftTextAbsolutePath(filename = "") {
+  const base = getDraftWorkPath();
+  const parts = ["texte_drafts", base, filename].filter(Boolean);
+  return parts.join("/").replace(/\/+/g, "/");
+}
+
 // Debug: URL-Parameter ausgeben
 console.log("URL-Parameter:", {
   lang: state.lang,
@@ -532,15 +550,8 @@ function buildReleaseProxyUrl(filename, disposition = "inline") {
 }
 
 function buildDraftRelativePath(filename) {
-  const segments = [
-    "pdf_drafts",
-    state.lang,
-    state.kind,
-    state.category,
-    state.author,
-    state.work,
-    filename,
-  ];
+  const workPath = getDraftWorkPath();
+  const segments = ["pdf_drafts", workPath, filename];
   return segments.filter(Boolean).join("/").replace(/\/+/g, "/");
 }
 
@@ -644,8 +655,10 @@ function showPdfPlaceholder(kind, opts = {}) {
 }
 
 function showDraftWaitingPlaceholder(extra = {}) {
-  const safeFilename = extra.filename ? `<code>${escapeHtml(extra.filename)}</code>` : "";
-  const safeUrl = extra.url ? `<code>${escapeHtml(extra.url)}</code>` : "";
+  const filename = extra.filename || state.pendingDraftFilename;
+  const url = extra.url || state.lastDraftUrl;
+  const safeFilename = filename ? `<code>${escapeHtml(filename)}</code>` : "";
+  const safeUrl = url ? `<code>${escapeHtml(url)}</code>` : "";
   const extraInfo = `
     ${safeFilename ? `<p>Datei: ${safeFilename}</p>` : ""}
     ${safeUrl ? `<p>Zielpfad: ${safeUrl}</p>` : ""}
@@ -938,6 +951,11 @@ async function performRendering() {
   form.append("filename", file.name);
   form.append("kind", state.kind.trim());
   form.append("author", state.author.trim());
+  form.append("language", state.lang.trim());
+  form.append("category", (state.category || "").trim());
+  if (state.workMeta?.path) {
+    form.append("work_path", state.workMeta.path);
+  }
 
   // Tag-Konfiguration als JSON hinzufügen
   form.append("tag_config", JSON.stringify(payload.tag_config));
@@ -958,26 +976,14 @@ async function performRendering() {
     if (!data?.ok) throw new Error("Worker-Antwort unvollständig.");
 
     // Der Worker speichert den Text in texte_drafts/
-    el.draftStatus.textContent = `Text gespeichert: ${data.filename}`;
+    el.draftStatus.textContent = `✓ Text gespeichert: ${data.filename}`;
 
     // Zeige Status basierend auf Worker-Antwort
-    const manualCommand = `python build_${state.kind}_drafts_adapter.py texte_drafts/${state.kind}_drafts/${state.author}/${state.work}/${data.filename}`;
+    const draftFilePath = getDraftTextAbsolutePath(data.filename);
+    const manualCommand = `python build_${state.kind}_drafts_adapter.py ${draftFilePath}`;
     setTimeout(() => {
       if (data.workflow_triggered) {
-        el.draftStatus.innerHTML = `
-          <div style="color: #059669; font-weight: bold;">
-            ✓ Text gespeichert: ${data.filename}
-          </div>
-          <div style="color: #059669; margin-top: 8px;">
-            🚀 PDF-Generierung automatisch gestartet!
-            <br><small style="color: #6b7280;">PDFs werden in wenigen Minuten verfügbar sein.</small>
-          </div>
-          <div style="color: #6b7280; margin-top: 8px; font-size: 12px;">
-            <a href="${GH_ACTIONS_URL}" target="_blank">
-              GitHub Actions anzeigen →
-            </a>
-          </div>
-        `;
+        el.draftStatus.textContent = `✓ Text gespeichert: ${data.filename} – PDFs werden gleich angezeigt.`;
         showDraftWaitingPlaceholder({
           filename: data.filename,
           url: state.lastDraftUrl,
@@ -987,17 +993,16 @@ async function performRendering() {
           <div style="color: #059669; font-weight: bold;">
             ✓ Text gespeichert: ${data.filename}
           </div>
-          <div style="color: #dc2626; margin-top: 8px;">
-            ⚠ PDF-Generierung: Führen Sie manuell aus:<br>
-            <code style="background: #f3f4f6; padding: 2px 4px; border-radius: 3px;">
+          <div style="color: #dc2626; margin-top: 6px;">
+            Bitte lokal ausführen:<br>
+            <code style="background: #f3f4f6; padding: 2px 4px; border-radius: 3px; display: inline-block; margin-top: 4px;">
               ${manualCommand}
             </code>
-            <br><small style="color: #6b7280;">PDFs werden in pdf_drafts/${state.kind}_drafts/${state.author}/${state.work}/ erstellt</small>
           </div>
         `;
         showDraftManualPlaceholder({ command: manualCommand });
       }
-    }, 1000);
+    }, 600);
 
     // Für PDF-Anzeige verwenden wir das erwartete Draft-Ziel
     state.source = "draft";
@@ -2312,7 +2317,7 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
     if (state.source === "draft") {
       if (state.manualDraftBuildRequired) {
         showDraftManualPlaceholder({ command: state.manualDraftCommand });
-      } else if (/Missing PDF/i.test(message) || /Unexpected server response/i.test(message)) {
+      } else if (state.pendingDraftFilename || /Missing PDF/i.test(message) || /Unexpected server response/i.test(message)) {
         showDraftWaitingPlaceholder({
           filename: state.pendingDraftFilename,
           url: pdfUrl,

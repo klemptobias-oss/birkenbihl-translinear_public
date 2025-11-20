@@ -151,6 +151,9 @@ export default {
     let filename = "";
     let kind = "";
     let author = "";
+    let language = "";
+    let category = "";
+    let workPath = "";
     let tagConfig = null;
 
     try {
@@ -164,12 +167,18 @@ export default {
         kind = (data.kind ?? "").toString().trim();
         author = (data.author ?? "").toString().trim();
         tagConfig = data.tag_config || null;
+        language = (data.language ?? "").toString().trim();
+        category = (data.category ?? "").toString().trim();
+        workPath = (data.work_path ?? "").toString().trim();
       } else if (ct.includes("text/plain")) {
         text = await request.text();
         work = (url.searchParams.get("work") || "").trim();
         filename = (url.searchParams.get("filename") || "").trim();
         kind = (url.searchParams.get("kind") || "").trim();
         author = (url.searchParams.get("author") || "").trim();
+        language = (url.searchParams.get("language") || "").trim();
+        category = (url.searchParams.get("category") || "").trim();
+        workPath = (url.searchParams.get("work_path") || "").trim();
       } else if (ct.includes("multipart/form-data")) {
         const form = await request.formData();
         if (form.has("text")) {
@@ -185,6 +194,9 @@ export default {
         filename = (form.get("filename") || "").toString().trim();
         kind = (form.get("kind") || "").toString().trim();
         author = (form.get("author") || "").toString().trim();
+        language = (form.get("language") || "").toString().trim();
+        category = (form.get("category") || "").toString().trim();
+        workPath = (form.get("work_path") || "").toString().trim();
 
         const tagConfigStr = form.get("tag_config");
         if (tagConfigStr) {
@@ -202,6 +214,9 @@ export default {
         filename = (data.filename ?? "").toString().trim();
         kind = (data.kind ?? "").toString().trim();
         author = (data.author ?? "").toString().trim();
+        language = (data.language ?? "").toString().trim();
+        category = (data.category ?? "").toString().trim();
+        workPath = (data.work_path ?? "").toString().trim();
       }
     } catch (e) {
       return resp(
@@ -246,11 +261,25 @@ export default {
 
     const stamped = `${baseName}_birkenbihl_DRAFT_${tsStamp()}.txt`;
 
-    const kindSafe = kind || "prosa";
-    const authorSafe = stripUnsafe(author) || "Unsortiert";
-    const workSafe = stripUnsafe(work) || "Unbenannt";
+    const kindSafe = sanitizePathSegment(kind) || "prosa";
+    const authorSafe = sanitizePathSegment(author) || "Unsortiert";
+    const workSafe = sanitizePathSegment(work) || "Unbenannt";
+    const languageSafe = sanitizePathSegment(language) || stateLangFallback(kindSafe);
+    const categorySafe = sanitizePathSegment(category);
 
-    const path = `texte_drafts/${kindSafe}_drafts/${authorSafe}/${workSafe}/${stamped}`;
+    const providedWorkPathSegments = sanitizeWorkPath(workPath);
+    const inferredSegments =
+      providedWorkPathSegments.length >= 2
+        ? providedWorkPathSegments
+        : [
+            languageSafe,
+            kindSafe,
+            ...(categorySafe ? [categorySafe] : []),
+            authorSafe,
+            workSafe,
+          ];
+
+    const path = ["texte_drafts", ...inferredSegments, stamped].join("/");
 
     let textWithConfig = text;
     if (tagConfig) {
@@ -343,6 +372,31 @@ function resp(obj, status = 200, headers = {}) {
     status,
     headers: { "Content-Type": "application/json; charset=utf-8", ...headers },
   });
+}
+
+function sanitizePathSegment(segment = "") {
+  if (!segment) return "";
+  let cleaned = segment
+    .toString()
+    .trim()
+    .replace(/[\x00-\x1F<>:"|?*]/g, "_")
+    .replace(/[\\]/g, "_")
+    .replace(/\s+/g, "_")
+    .replace(/\//g, "_");
+  if (cleaned === "." || cleaned === "..") return "";
+  return cleaned;
+}
+
+function sanitizeWorkPath(path = "") {
+  if (!path) return [];
+  return path
+    .split("/")
+    .map((seg) => sanitizePathSegment(seg))
+    .filter(Boolean);
+}
+
+function stateLangFallback(kindSafe = "prosa") {
+  return kindSafe === "poesie" ? "griechisch" : "griechisch";
 }
 
 function tsStamp(d = new Date()) {
