@@ -45,7 +45,7 @@ export function listAuthors(cat, language, kind, category) {
   const categoryNode = cat?.Sprachen?.[language]?.[kind]?.[category] || {};
   return Object.keys(categoryNode)
     .map((a) => ({ author: a, display: categoryNode[a].display || a })) // Annahme: display-Name ist optional
-    .sort((x, y) => x.display.localeCompare(y.display, "de"));
+    .sort((x, y) => naturalCollator.compare(x.display, y.display));
 }
 
 // Gibt die Werke für einen gegebenen Pfad (Sprache, Gattung, Kategorie, Autor) zurück.

@@ -529,150 +529,98 @@ const tagConfigDefinition =
 
 // PDF-Dateiname gemäß deiner Konvention:
 // <Work>_<lang>_de[_en]_stil1_birkenbihl_<Strength>_<Colour|BlackWhite>_<Tag|NoTags>[_Versmass].pdf
-function buildPdfFilenameBase() {
+function getLocalizedFilenameBase() {
   if (!state.workMeta || !state.workMeta.filename_base) {
     console.error("Work metadata with filename_base not loaded!");
-    return "error";
+    return null;
   }
 
-  // filename_base enthält bereits: <work>_<lang>_de_en_stil1 oder <work>_<lang>_de_stil1
-  // Wir müssen prüfen, ob es 2- oder 3-sprachig ist
   let filename = state.workMeta.filename_base;
+  const hasDeEn = filename.includes("_de_en_");
+  const hasPureDe = hasDeEn ? false : filename.includes("_de_");
+  const hasPureEn = hasDeEn ? false : filename.includes("_en_");
 
-  // Wenn der filename_base _de_en_ enthält, ist es 3-sprachig
-  // Wenn er nur _de_ enthält (ohne _en), ist es 2-sprachig
-  const is3Lang = filename.includes("_de_en_");
-
-  // Wenn der User eine andere Sprachversion will, müssen wir den filename_base anpassen
-  if (state.languages === "3" && !is3Lang) {
-    // User will 3-sprachig, aber filename_base ist 2-sprachig
-    // Ersetze _de_stil1 durch _de_en_stil1
-    filename = filename.replace("_de_stil1", "_de_en_stil1");
-  } else if (state.languages === "2" && is3Lang) {
-    // User will 2-sprachig, aber filename_base ist 3-sprachig
-    // Ersetze _de_en_stil1 durch _de_stil1
-    filename = filename.replace("_de_en_stil1", "_de_stil1");
-  }
-
-  console.log("Building filename from base:", filename, "with options:", {
-    source: state.source,
-    strength: state.strength,
-    color: state.color,
-    tags: state.tags,
-    meter: state.meter,
-    languages: state.languages,
-    meterMode: state.meterMode,
-  });
-
-  // Wenn Versmaß-Modus aktiv ist, füge "_Versmass" JETZT ein (vor "_birkenbihl")
-  if (state.meter === "with") {
-    filename += "_Versmass";
-    console.log("Versmaß-Modus aktiv, filename wird zu:", filename);
-  }
-
-  // Alle Dateien haben "birkenbihl" im Namen
-  filename += "_birkenbihl";
-
-  // Bestimme die Sprache aus dem filename_base (z.B. "_gr_" oder "_lat_")
-  const isGreek = filename.includes("_gr_");
-  const isLatin = filename.includes("_lat_");
-
-  console.log("=== BUILD PDF FILENAME DEBUG ===");
-  console.log("filename_base:", state.workMeta.filename_base);
-  console.log("isGreek:", isGreek, "isLatin:", isLatin);
-  console.log("state.strength:", state.strength);
-  console.log("state.lang:", state.lang);
-
-  // Strength: "Fett" → GR_Fett/LAT_Fett, "Normal" → _Normal
-  if (state.strength === "Normal") {
-    filename += "_Normal";
-    console.log("Using Normal");
-  } else if (state.strength === "Fett") {
-    // Fett: GR_Fett für Griechisch, LAT_Fett für Latein
-    if (isGreek) {
-      filename += "_GR_Fett";
-      console.log("Using GR_Fett for Greek");
-    } else if (isLatin) {
-      filename += "_LAT_Fett";
-      console.log("Using LAT_Fett for Latin");
-    } else {
-      console.warn("WARNING: Could not determine language! Using fallback");
-      // Fallback basierend auf state.lang
-      if (state.lang === "griechisch") {
-        filename += "_GR_Fett";
-      } else if (state.lang === "latein") {
-        filename += "_LAT_Fett";
-      }
+  if (state.languages === "3") {
+    if (!hasDeEn) {
+      if (hasPureDe) filename = filename.replace("_de_", "_de_en_");
+      else if (hasPureEn) filename = filename.replace("_en_", "_de_en_");
     }
   } else {
-    console.warn("WARNING: Unknown strength value:", state.strength);
-    // Fallback: Fett
-    if (isGreek) {
-      filename += "_GR_Fett";
-    } else if (isLatin) {
-      filename += "_LAT_Fett";
+    if (state.translationTarget === "en") {
+      if (hasDeEn) filename = filename.replace("_de_en_", "_en_");
+      else if (hasPureDe) filename = filename.replace("_de_", "_en_");
+    } else {
+      if (hasDeEn) filename = filename.replace("_de_en_", "_de_");
+      else if (hasPureEn) filename = filename.replace("_en_", "_de_");
     }
   }
 
-  // Farbe: Colour oder BlackWhite
-  if (state.color === "BlackWhite") filename += "_BlackWhite";
-  else if (state.color === "Colour") filename += "_Colour";
-
-  // Tags: Tag oder NoTags
-  if (state.tags === "NoTags") filename += "_NoTags";
-  else if (state.tags === "Tag") filename += "_Tag";
+  if (state.meter === "with" && !filename.endsWith("_Versmass")) {
+    filename += "_Versmass";
+  }
 
   return filename;
 }
 
-function buildDraftFilenameFromStem(stem) {
-  if (!stem) return null;
-  let filename = stem;
-  const isGreek = filename.includes("_gr_");
-  const isLatin = filename.includes("_lat_");
+function buildVariantSuffix(localizedBase) {
+  const base = localizedBase || getLocalizedFilenameBase();
+  if (!base) return "";
+  const isGreek = base.includes("_gr_");
+  const isLatin = base.includes("_lat_");
 
+  let suffix = "";
   if (state.strength === "Normal") {
-    filename += "_Normal";
-  } else if (state.strength === "Fett") {
-    if (isGreek) filename += "_GR_Fett";
-    else if (isLatin) filename += "_LAT_Fett";
-    else filename += state.lang === "latein" ? "_LAT_Fett" : "_GR_Fett";
+    suffix += "_Normal";
   } else {
-    if (isGreek) filename += "_GR_Fett";
-    else if (isLatin) filename += "_LAT_Fett";
+    const marker =
+      state.strength === "Fett"
+        ? isGreek
+          ? "_GR_Fett"
+          : isLatin
+          ? "_LAT_Fett"
+          : state.lang === "latein"
+          ? "_LAT_Fett"
+          : "_GR_Fett"
+        : isGreek
+        ? "_GR_Fett"
+        : isLatin
+        ? "_LAT_Fett"
+        : "";
+    suffix += marker;
   }
 
-  if (state.color === "BlackWhite") filename += "_BlackWhite";
-  else filename += "_Colour";
+  suffix += state.color === "BlackWhite" ? "_BlackWhite" : "_Colour";
+  suffix += state.tags === "NoTags" ? "_NoTags" : "_Tag";
 
-  if (state.tags === "NoTags") filename += "_NoTags";
-  else filename += "_Tag";
+  return suffix;
+}
 
-  return filename;
+function buildReleaseBase() {
+  const localized = getLocalizedFilenameBase();
+  if (!localized) return null;
+  const metaPrefix = state.workMeta?.meta_prefix || "";
+  return metaPrefix ? `${metaPrefix}__${localized}` : localized;
+}
+
+function buildFullReleaseName() {
+  const base = buildReleaseBase();
+  if (!base) return null;
+  const suffix = buildVariantSuffix();
+  return `${base}${suffix}`;
 }
 
 function buildDraftPdfFilename() {
-  if (state.draftBase) {
-    const draftStem = buildDraftFilenameFromStem(state.draftBase);
-    if (!draftStem) return "error.pdf";
-    const draftName = `${draftStem}.pdf`;
-    console.log("Generated draft filename (draft base):", draftName);
-    return draftName;
-  }
-  const base = buildPdfFilenameBase();
-  if (base === "error") return "error.pdf";
-  const draftName = `${base}.pdf`;
-  console.log("Generated draft filename (fallback):", draftName);
-  return draftName;
+  const releaseBase = state.draftBase || buildReleaseBase();
+  if (!releaseBase) return "error.pdf";
+  const name = `${releaseBase}${buildVariantSuffix()}.pdf`;
+  console.log("Generated draft filename:", name);
+  return name;
 }
 
 function buildPdfFilename() {
-  const base = buildPdfFilenameBase();
-  if (base === "error") return "error.pdf";
-
-  const metaPrefix = state.workMeta?.meta_prefix || "";
-  const finalName = metaPrefix ? `${metaPrefix}__${base}.pdf` : `${base}.pdf`;
-
+  const full = buildFullReleaseName();
+  if (!full) return "error.pdf";
+  const finalName = `${full}.pdf`;
   console.log("Generated filename:", finalName);
   return finalName;
 }
@@ -1030,6 +978,16 @@ async function performRendering() {
     return;
   }
 
+  const releaseBase = buildReleaseBase();
+  if (!releaseBase) {
+    el.draftStatus.textContent =
+      "Metadaten fehlen – bitte laden Sie die Seite neu.";
+    return;
+  }
+
+  state.draftBase = releaseBase;
+  persistDraftBase();
+
   // Erstelle eine Blob-Datei aus dem Editor-Inhalt
   const blob = new Blob([draftText], { type: "text/plain" });
   const file = new File([blob], `${state.work}_birkenbihl_draft.txt`, {
@@ -1067,6 +1025,8 @@ async function performRendering() {
   if (state.workMeta?.path) {
     form.append("work_path", state.workMeta.path);
   }
+  form.append("release_base", releaseBase);
+  form.append("translation_target", state.translationTarget);
 
   // Tag-Konfiguration als JSON hinzufügen
   form.append("tag_config", JSON.stringify(payload.tag_config));
@@ -1176,6 +1136,7 @@ function createTableRow(item, isGroupLeader = false) {
     { type: "color", value: "green", label: "grün" },
     { type: "color", value: "violett", label: "violett" },
     { type: "hide", value: "hide", label: "Tag nicht zeigen" },
+    { type: "translation", value: "translation", label: "Übersetzung ausblenden" },
   ];
 
   actions.forEach((action) => {
@@ -1221,6 +1182,7 @@ function showTagConfigModal() {
           <th>grün</th>
           <th>violett</th>
           <th>Tag nicht<br />zeigen</th>
+          <th>Übersetzung<br />ausblenden</th>
         </tr>
       `;
       table.appendChild(thead);
@@ -1272,6 +1234,7 @@ function showTagConfigModal() {
         <th>grün</th>
         <th>violett</th>
         <th>Tag nicht<br />zeigen</th>
+        <th>Übersetzung<br />ausblenden</th>
       </tr>
     `;
     table.appendChild(thead);
@@ -1464,6 +1427,7 @@ function updateTableFromState() {
           cb.checked = true;
         if (type === "color" && config.color === value) cb.checked = true;
         if (type === "hide" && config.hide) cb.checked = true;
+        if (type === "translation" && config.hideTranslation) cb.checked = true;
       });
 
       tr.className = tr.classList.contains("group-leader")
@@ -1497,6 +1461,12 @@ function handleTableChange(event) {
   const updateConfig = (targetId, updateType, updateValue, isChecked) => {
     state.tagConfig[targetId] = state.tagConfig[targetId] || {};
     const currentConfig = state.tagConfig[targetId];
+
+    if (updateType === "translation") {
+      if (isChecked) currentConfig.hideTranslation = true;
+      else delete currentConfig.hideTranslation;
+      return;
+    }
 
     if (isChecked) {
       currentConfig[updateType] = updateValue;
@@ -2018,6 +1988,14 @@ async function loadWorkMeta() {
 
     if (!state.workMeta) {
       throw new Error("Werk nicht im Katalog gefunden.");
+    }
+
+    if (!state.draftBase) {
+      const inferredBase = buildReleaseBase();
+      if (inferredBase) {
+        state.draftBase = inferredBase;
+        persistDraftBase();
+      }
     }
 
     state.meterSupported = state.workMeta.versmass; // true/false (ob Versmaß-PDFs existieren)

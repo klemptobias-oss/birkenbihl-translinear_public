@@ -10,22 +10,25 @@ RUNNER = ROOT / "poesie_pdf.py"                          # 24 Varianten (Poesie)
 
 def extract_tag_config_from_file(file_path: Path) -> dict:
     """
-    Extrahiert die TAG_CONFIG aus der ersten Zeile der Datei.
+    Extrahiert die TAG_CONFIG aus den ersten Kilobytes der Datei.
     """
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            first_line = f.readline().strip()
-            
-        # Suche nach dem HTML-Kommentar mit der TAG_CONFIG
-        match = re.search(r'<!-- TAG_CONFIG:(.*?) -->', first_line)
+            snippet = f.read(8192)
+        match = re.search(r'<!-- TAG_CONFIG:(.*?) -->', snippet)
         if match:
             json_str = match.group(1)
             return json.loads(json_str)
-        else:
-            return {}
+        return {}
     except Exception as e:
         print(f"⚠ Fehler beim Extrahieren der Tag-Konfiguration aus {file_path}: {e}")
         return {}
+
+def extract_release_base(text: str) -> str:
+    match = re.search(r'<!-- RELEASE_BASE:(.+?) -->', text)
+    if match:
+        return match.group(1).strip()
+    return ""
 
 def run_one(input_path: Path) -> None:
     if not input_path.is_file():
@@ -60,9 +63,10 @@ def run_one(input_path: Path) -> None:
     # Extrahiere den Basisnamen der Eingabedatei (ohne .txt)
     input_stem = input_path.stem
     
-    # Lese den Text und entferne die Konfigurationszeile
+    # Lese den Text und entferne die Konfigurationszeilen
     text_content = input_path.read_text(encoding="utf-8")
-    clean_text = re.sub(r'<!-- TAG_CONFIG:.+? -->\n?', '', text_content, count=1)
+    release_base = extract_release_base(text_content)
+    clean_text = re.sub(r'<!-- (TAG_CONFIG|RELEASE_BASE):.+? -->\n?', '', text_content)
     
     # Schreibe bereinigten Text in temporäre Datei
     temp_input = ROOT / f"temp_{input_path.name}"
@@ -109,16 +113,30 @@ def run_one(input_path: Path) -> None:
     # Wir müssen sie zurück auf den originalen Stammnamen umbenennen.
     temp_stem = temp_input.stem
     
+    sanitized_release_base = release_base.strip()
+    
     for name in new_pdfs:
-        if name.startswith(temp_stem):
-            # Entferne das temp_ Präfix komplett
-            # temp_Werk_birkenbihl_draft_..._GR_Fett_Colour_Tag.pdf
-            # → Werk_birkenbihl_draft_..._GR_Fett_Colour_Tag.pdf
-            final_name = name[5:]  # Entferne "temp_"
-            src = ROOT / name
-            dst = target_dir / final_name
-            src.replace(dst)
-            print(f"✓ PDF → {dst}")
+        bare = name[:-4] if name.lower().endswith(".pdf") else name
+        suffix = ""
+        if bare.startswith(temp_stem):
+            suffix = bare[len(temp_stem):]
+        else:
+            original_stem = input_stem
+            if bare.startswith(original_stem):
+                suffix = bare[len(original_stem):]
+            else:
+                suffix = bare
+
+        if sanitized_release_base:
+            final_bare = f"{sanitized_release_base}{suffix}"
+        else:
+            final_bare = bare[5:] if bare.startswith("temp_") else bare
+
+        final_name = f"{final_bare}.pdf"
+        src = ROOT / name
+        dst = target_dir / final_name
+        src.replace(dst)
+        print(f"✓ PDF → {dst}")
 
 def main():
     # Dieser Adapter wird typischerweise mit genau einem Dateipfad aufgerufen.

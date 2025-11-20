@@ -168,6 +168,7 @@ export default {
     let category = "";
     let workPath = "";
     let tagConfig = null;
+    let releaseBase = "";
 
     try {
       const ct = (request.headers.get("content-type") || "").toLowerCase();
@@ -183,6 +184,7 @@ export default {
         language = (data.language ?? "").toString().trim();
         category = (data.category ?? "").toString().trim();
         workPath = (data.work_path ?? "").toString().trim();
+        releaseBase = sanitizeReleaseBase(data.release_base);
       } else if (ct.includes("text/plain")) {
         text = await request.text();
         work = (url.searchParams.get("work") || "").trim();
@@ -192,6 +194,7 @@ export default {
         language = (url.searchParams.get("language") || "").trim();
         category = (url.searchParams.get("category") || "").trim();
         workPath = (url.searchParams.get("work_path") || "").trim();
+        releaseBase = sanitizeReleaseBase(url.searchParams.get("release_base"));
       } else if (ct.includes("multipart/form-data")) {
         const form = await request.formData();
         if (form.has("text")) {
@@ -210,6 +213,7 @@ export default {
         language = (form.get("language") || "").toString().trim();
         category = (form.get("category") || "").toString().trim();
         workPath = (form.get("work_path") || "").toString().trim();
+        releaseBase = sanitizeReleaseBase(form.get("release_base"));
 
         const tagConfigStr = form.get("tag_config");
         if (tagConfigStr) {
@@ -230,6 +234,7 @@ export default {
         language = (data.language ?? "").toString().trim();
         category = (data.category ?? "").toString().trim();
         workPath = (data.work_path ?? "").toString().trim();
+        releaseBase = sanitizeReleaseBase(data.release_base);
       }
     } catch (e) {
       return resp(
@@ -295,10 +300,16 @@ export default {
     const path = ["texte_drafts", ...inferredSegments, stamped].join("/");
 
     let textWithConfig = text;
+    const metadataHeaders = [];
+    if (releaseBase) {
+      metadataHeaders.push(`<!-- RELEASE_BASE:${releaseBase} -->`);
+    }
     if (tagConfig) {
-      const configHeader = `<!-- TAG_CONFIG:${JSON.stringify(tagConfig)} -->\n`;
-      textWithConfig = configHeader + text;
+      metadataHeaders.push(`<!-- TAG_CONFIG:${JSON.stringify(tagConfig)} -->`);
       console.log("Tag-Konfiguration eingebettet:", Object.keys(tagConfig));
+    }
+    if (metadataHeaders.length) {
+      textWithConfig = metadataHeaders.join("\n") + "\n" + text;
     }
 
     // --------- GitHub API: Datei anlegen ---------
@@ -372,6 +383,7 @@ export default {
         workflow_triggered: true,
         message:
           "Text gespeichert und PDF-Generierung automatisch gestartet. PDFs werden in wenigen Minuten verfügbar sein.",
+        release_base: releaseBase || null,
       },
       200,
       CORS
@@ -410,6 +422,11 @@ function replaceGermanUmlauts(str = "") {
 function stripDiacritics(str = "") {
   if (typeof str.normalize !== "function") return str;
   return str.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+}
+
+function sanitizeReleaseBase(value) {
+  if (!value) return "";
+  return value.toString().replace(/[\r\n]/g, "").trim();
 }
 
 function sanitizePathSegment(segment = "") {

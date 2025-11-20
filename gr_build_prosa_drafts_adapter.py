@@ -10,22 +10,25 @@ RUNNER = ROOT / "prosa_pdf.py"                           # 12 Varianten (Prosa)
 
 def extract_tag_config_from_file(file_path: Path) -> dict:
     """
-    Extrahiert die TAG_CONFIG aus der ersten Zeile der Datei.
+    Extrahiert die TAG_CONFIG aus den ersten Kilobytes der Datei.
     """
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            first_line = f.readline().strip()
-            
-        # Suche nach dem HTML-Kommentar mit der TAG_CONFIG
-        match = re.search(r'<!-- TAG_CONFIG:(.*?) -->', first_line)
+            snippet = f.read(8192)
+        match = re.search(r'<!-- TAG_CONFIG:(.*?) -->', snippet)
         if match:
             json_str = match.group(1)
             return json.loads(json_str)
-        else:
-            return {}
+        return {}
     except Exception as e:
         print(f"⚠ Fehler beim Extrahieren der Tag-Konfiguration aus {file_path}: {e}")
         return {}
+
+def extract_release_base(text: str) -> str:
+    match = re.search(r'<!-- RELEASE_BASE:(.+?) -->', text)
+    if match:
+        return match.group(1).strip()
+    return ""
 
 def run_one(input_path: Path, tag_config: dict = None) -> None:
     if not input_path.is_file():
@@ -64,20 +67,19 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     # Lese den Text und extrahiere Tag-Konfiguration
     text_content = input_path.read_text(encoding="utf-8")
     tag_config = None
+    release_base = extract_release_base(text_content)
     
     # Suche nach Tag-Konfiguration im Text
-    import re
     config_match = re.search(r'<!-- TAG_CONFIG:(.+?) -->', text_content)
     if config_match:
         try:
-            import json
             tag_config = json.loads(config_match.group(1))
             print(f"✓ Tag-Konfiguration gefunden: {len(tag_config.get('tag_colors', {}))} Farben, {len(tag_config.get('hidden_tags', []))} versteckte Tags")
         except Exception as e:
             print(f"⚠ Fehler beim Parsen der Tag-Konfiguration: {e}")
     
-    # Entferne Tag-Konfiguration aus dem Text für die Verarbeitung
-    clean_text = re.sub(r'<!-- TAG_CONFIG:.+? -->\n?', '', text_content)
+    # Entferne Metadaten-Kommentare aus dem Text für die Verarbeitung
+    clean_text = re.sub(r'<!-- (TAG_CONFIG|RELEASE_BASE):.+? -->\n?', '', text_content)
     
     # Schreibe bereinigten Text in temporäre Datei
     temp_input = ROOT / f"temp_{input_path.name}"
@@ -129,13 +131,24 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     if not relevant_pdfs:
         print(f"⚠ Keine passenden PDFs für {input_stem} gefunden."); return
 
+    sanitized_release_base = release_base.strip()
+    
     for name in relevant_pdfs:
-        # Entferne das temp_ Präfix falls vorhanden
-        final_name = name
-        if name.startswith("temp_"):
-            # temp_Nomoi_12_birkenbihl_draft_birkenbihl_DRAFT_..._GR_Fett_Colour_Tag.pdf
-            # → Nomoi_12_birkenbihl_draft_birkenbihl_DRAFT_..._GR_Fett_Colour_Tag.pdf
-            final_name = name[5:]  # Entferne "temp_"
+        bare = name[:-4] if name.lower().endswith(".pdf") else name
+        suffix = ""
+        temp_prefix = f"temp_{input_stem}"
+        if bare.startswith(temp_prefix):
+            suffix = bare[len(temp_prefix):]
+        elif bare.startswith(input_stem):
+            suffix = bare[len(input_stem):]
+        else:
+            suffix = bare
+        
+        if sanitized_release_base:
+            final_bare = f"{sanitized_release_base}{suffix}"
+        else:
+            final_bare = bare[5:] if bare.startswith("temp_") else bare
+        final_name = f"{final_bare}.pdf"
         
         src = ROOT / name
         dst = target_dir / final_name
