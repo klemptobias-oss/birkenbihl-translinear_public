@@ -29,6 +29,9 @@ except ImportError:
 # ========= Optik / Einheiten =========
 MM = RL_MM
 
+# Globaler Flag für lateinische Texte (keine Versmaß-Marker-Entfernung)
+CURRENT_IS_LATIN = False
+
 # Hilfsfunktion für String-Breite
 def _sw(text: str, font_name: str, font_size: float) -> float:
     """Berechnet die Breite eines Textes in Punkten."""
@@ -49,15 +52,33 @@ SECTION_SIZE       = 11.0  # kleiner als vorher (war 12.0)
 SECTION_SPACE_BEFORE_MM = 4.0  # kleinerer Abstand vor Überschrift
 SECTION_SPACE_AFTER_MM  = 3.0  # kleinerer Abstand nach Überschrift
 
-# Inter/Intra Pair Gaps - jetzt getrennt für Versmaß vs. Normal
-INTER_PAIR_GAP_MM_VERSMASS = 0.0    # Abstand zwischen Paaren bei Versmaß-PDFs
-INTER_PAIR_GAP_MM_NORMAL = 4.5       # Abstand zwischen Paaren bei normalen PDFs
-INTRA_PAIR_GAP_MM_VERSMASS = 1      # Abstand innerhalb Paaren bei Versmaß-PDFs
-INTRA_PAIR_GAP_MM_NORMAL = 1        # Abstand innerhalb Paaren bei normalen PDFs
+# Gleichheitszeichen-Überschriften (wie in Prosa)
+# WICHTIG: Größen-Staffelung: ==== (größte) > === > == (kleinste)
+H1_EQ_SIZE = 24.0              # Größe der H1-Überschriften (==== Text ====) - verkleinert
+H1_SPACE_AFTER_MM = 4          # Abstand nach H1-Überschriften
+H2_EQ_SIZE = 18.0              # Größe der H2-Überschriften (=== Text ===) - verkleinert
+H2_SPACE_AFTER_MM = 3          # Abstand nach H2-Überschriften
+H3_EQ_SIZE = 15.3              # Größe der H3-Überschriften (== Text ==)
+H3_SPACE_AFTER_MM = 2          # Abstand nach H3-Überschriften
 
-# Fallback für Kompatibilität (werden dynamisch gesetzt)
+# ========= ABSTÄNDE-REGLER (POESIE) =========
+# Diese Regler steuern alle Abstände in den Poesie-PDFs
+
+# 1. ABSTÄNDE ZWISCHEN VERSPAAREN (Abstand von einem Verspaar zum nächsten)
+INTER_PAIR_GAP_MM_VERSMASS = 0.0    # Abstand zwischen Verspaaren bei Versmaß-PDFs
+INTER_PAIR_GAP_MM_NORMAL_TAG = 2.0      # Abstand zwischen Verspaaren bei Tag PDFs (KOMPAKTER als vorher!)
+INTER_PAIR_GAP_MM_NORMAL_NOTAG = 1.0    # Abstand zwischen Verspaaren bei NoTag PDFs (MAXIMAL ENG: 1.0mm)
+
+# 2. ABSTÄNDE INNERHALB EINES VERSPAARS
+# 2a. Abstand zwischen antiker Zeile und erster Übersetzungszeile
+INTRA_PAIR_ANCIENT_TO_MODERN_TAG = 0.7      # Mit Tags (KOMPAKTER: 0.7mm statt 1.5mm)
+INTRA_PAIR_ANCIENT_TO_MODERN_NOTAG = 0.2    # Ohne Tags (MAXIMAL ENG: 0.2mm wie Prosa)
+
+# 2b. Abstand zwischen den 2 Übersetzungszeilen (nur bei 3-sprachigen PDFs)
+INTRA_PAIR_DE_TO_EN = -1.5          # Negativ = sehr eng, 0 = normal, positiv = mehr Abstand
+
+# Fallback für Kompatibilität (wird dynamisch gesetzt)
 INTER_PAIR_GAP_MM = 4.5
-INTRA_PAIR_GAP_MM = 1
 
 # Sprecher-Laterne (links)
 SPEAKER_COL_MIN_MM = 0.0   # breitere Laterne
@@ -94,7 +115,7 @@ CFG = {
     'TAG_WIDTH_FACTOR_TAGGED': 0.8,    # vorher effektiv ~1.30 → etwas enger
     'TOKEN_PAD_PT_VERSMASS_TAG': 2.0,    # Regler für Abstand zwischen Wörtern bei _Versmaß+Tag PDFs
     'TOKEN_PAD_PT_VERSMASS_NOTAG': 4,  # Regler für Abstand zwischen Wörtern bei _Versmaß+NoTag PDFs
-    'TOKEN_PAD_PT_NORMAL_TAG': 1,      # Regler für Abstand zwischen Wörtern bei Normal+Tag PDFs
+    'TOKEN_PAD_PT_NORMAL_TAG': 2.5,      # Regler für Abstand zwischen Wörtern bei Normal+Tag PDFs (REDUZIERT für Kompaktheit)
     'TOKEN_PAD_PT_NORMAL_NOTAG': 2.0,    # Regler für Abstand zwischen Wörtern bei Normal+NoTag PDFs
     'NUM_COLOR': colors.black,
     'NUM_SIZE_FACTOR': 0.84,
@@ -110,8 +131,8 @@ CFG = {
 
 # ========= Tags/Regex =========
 # Standard-Tag-Definitionen (können durch Tag-Config überschrieben werden)
-DEFAULT_SUP_TAGS = {'N','D','G','A','V','Du','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','ij','Sup'}
-DEFAULT_SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Knj','Op','Pr','AorS','M/P'}
+DEFAULT_SUP_TAGS = {'N','D','G','A','V','Du','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','ij','Sup','Abl'}  # NEU: Abl für Latein
+DEFAULT_SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Knj','Op','Pr','AorS','M/P','Gdv','Ger','Spn','Fu1','Fu2'}  # NEU: Gdv, Ger, Spn, Fu1, Fu2 für Latein
 
 # Dynamische Tag-Konfiguration (wird zur Laufzeit gesetzt)
 SUP_TAGS = DEFAULT_SUP_TAGS.copy()
@@ -206,10 +227,10 @@ def _partition_tags_for_display(tags: list[str]) -> tuple[list[str], list[str], 
 
 RE_INLINE_MARK  = re.compile(r'^\(\s*(?:[0-9]+[a-z]*|[a-z])\s*\)$', re.IGNORECASE)
 RE_TAG       = re.compile(r'\(\s*([A-Za-z/≈äöüßÄÖÜ]+)\s*\)')
-RE_TAG_NAKED = re.compile(r'\(\s*[A-Za-z/≈äöüßÄÖÜ]+\s*\)')
+RE_TAG_NAKED = re.compile(r'\(\s*[A-Za-z0-9/≈äöüßÄÖÜ]+\s*\)')
 RE_GREEK_CHARS = re.compile(r'[\u0370-\u03FF\u1F00-\u1FFF]')
-RE_TAG_FINDALL = re.compile(r'\(\s*([A-Za-z/≈äöüßÄÖÜ]+)\s*\)')
-RE_TAG_STRIP   = re.compile(r'\(\s*[A-Za-z/≈äöüßÄÖÜ]+\s*\)')
+RE_TAG_FINDALL = re.compile(r'\(\s*([A-Za-z0-9/≈äöüßÄÖÜ]+)\s*\)')  # NEU: 0-9 für Fu1, Fu2
+RE_TAG_STRIP   = re.compile(r'\(\s*[A-Za-z0-9/≈äöüßÄÖÜ]+\s*\)')  # NEU: 0-9 für Fu1, Fu2
 RE_LEADING_BAR_COLOR = re.compile(r'^\|\s*([+\-#§$])')  # |+ |# |- am Tokenanfang
 
 # Sprecher-Tokens: [Χορ:] bzw. Λυσ:
@@ -219,10 +240,17 @@ RE_SPEAKER_GR  = re.compile(r'^[\u0370-\u03FF\u1F00-\u1FFF]+:$')      # Λυσ:
 RE_SECTION         = re.compile(r'^\s*\[\[\s*(.+?)\s*\]\]\s*$')
 RE_SECTION_SINGLE  = re.compile(r'^\s*\[\s*(.+?)\s*\]\s*$')
 RE_BRACE_TITLE     = re.compile(r'^\s*\{\s*(.+?)\s*\}\s*$')           # {Titel}
+RE_ZEILE_LOST      = re.compile(r'^\s*(\(\d+[a-z]*\))?\s*(\[[^\]]*:\])?\s*\[\[Zeile\s+Lost\]\]\s*$', re.IGNORECASE)  # [[Zeile Lost]] mit optionaler Zeilennummer und Sprecher
+
+# Gleichheitszeichen-Überschriften (wie in Prosa)
+# WICHTIG: Reihenfolge der Prüfung: ==== zuerst, dann ===, dann ==
+RE_EQ_H1 = re.compile(r'^\s*={4}\s*(.+?)\s*={4}\s*$')                 # ==== Text ====
+RE_EQ_H2 = re.compile(r'^\s*={3}\s*(.+?)\s*={3}\s*$')                 # === Text ===
+RE_EQ_H3 = re.compile(r'^\s*={2}\s*(.+?)\s*={2}\s*$')                 # == Text ==
 
 # Label-Token wie [12], [12a], (12), (12a) – optional mit Punkt
-RE_LABEL_TOKEN     = re.compile(r'^[\[\(]\s*(\d+)([a-z])?\s*[\]\)]\.?$', re.IGNORECASE)
-RE_LABEL_STRIP     = re.compile(r'^(?:\[\s*\d+[a-z]?\s*\]\.?\s*|\(\s*\d+[a-z]?\s*\)\.?\s*)', re.IGNORECASE)
+RE_LABEL_TOKEN     = re.compile(r'^[\[\(]\s*(-?\d+)([a-z])?\s*[\]\)]\.?$', re.IGNORECASE)
+RE_LABEL_STRIP     = re.compile(r'^(?:\[\s*-?\d+[a-z]?\s*\]\.?\s*|\(\s*-?\d+[a-z]?\s*\)\.?\s*)', re.IGNORECASE)
 
 # ========= Utils =========
 def _leading_for(size: float) -> float: return round(size * 1.30 + 0.6, 1)
@@ -236,15 +264,20 @@ def normalize_spaces(s:str) -> str:
     return re.sub(r'\s+', ' ', (s or '').strip())
 
 def pre_substitutions(s:str) -> str:
+    """
+    DEAKTIVIERT: Input-Texte gelten als "gesäubert", keine automatischen Umstellungen mehr.
+    Die Funktion gibt den String unverändert zurück.
+    """
     if not s: return s
-    punct = r'(?:,|\.|;|:|!|\?|%|…|\u00B7|\u0387|\u037E)'
-    s = re.sub(rf'\s+{punct}', lambda m: m.group(0).lstrip(), s)
-    s = re.sub(r'([\(\[\{\«"‹''])\s+', r'\1', s)
-    s = re.sub(r'\s+([\)\]\}\»"›''])', r'\1', s)
-    s = re.sub(r'[\u200B\u200C\u200D\uFEFF\u00A0]', '', s)
-    s = re.sub(r'\(([#\+\-])', r'\1(', s)
-    s = re.sub(r'\[([#\+\-])', r'\1[', s)
-    s = re.sub(r'\{([#\+\-])', r'\1{', s)
+    # Alte Regeln deaktiviert - Input-Texte sind bereits korrekt formatiert
+    # punct = r'(?:,|\.|;|:|!|\?|%|…|\u00B7|\u0387|\u037E)'
+    # s = re.sub(rf'\s+{punct}', lambda m: m.group(0).lstrip(), s)
+    # s = re.sub(r'([\(\[\{\«"‹''])\s+', r'\1', s)
+    # s = re.sub(r'\s+([\)\]\}\»"›''])', r'\1', s)
+    # s = re.sub(r'[\u200B\u200C\u200D\uFEFF\u00A0]', '', s)
+    # s = re.sub(r'\(([#\+\-])', r'\1(', s)
+    # s = re.sub(r'\[([#\+\-])', r'\1[', s)
+    # s = re.sub(r'\{([#\+\-])', r'\1{', s)
     return s
 
 def _sw(text:str, font:str, size:float) -> float:
@@ -260,8 +293,29 @@ def _strip_speaker_prefix_for_classify(line: str) -> str:
     if m2: return m2.group(1)
     return s
 
+def extract_line_number(s: str) -> tuple[str | None, str]:
+    """
+    Extrahiert die Zeilennummer am Anfang einer Zeile.
+    Format: (123) oder (123a) oder (123b) etc.
+    
+    Returns:
+        (line_number, rest_of_line) oder (None, original_line)
+    
+    Beispiele:
+        "(1) Text hier" → ("1", "Text hier")
+        "(100a) Text" → ("100a", "Text")
+        "Text ohne Nummer" → (None, "Text ohne Nummer")
+    """
+    s = (s or '').strip()
+    # Regex für Zeilennummer: (Zahl[optionaler Buchstabe]) - auch negative Zahlen!
+    m = re.match(r'^\((-?\d+[a-z]*)\)\s*(.*)$', s, re.IGNORECASE)
+    if m:
+        return (m.group(1), m.group(2))
+    return (None, s)
+
 def is_greek_line(line: str) -> bool:
     """
+    DEPRECATED: Alte Methode basierend auf griechischen Buchstaben.
     Robustere Erkennung griechischer Zeilen.
     Zählt nur griechische Buchstaben (keine Satzzeichen) und verlangt
     mindestens 2 griechische Buchstaben für eine valide griechische Zeile.
@@ -280,11 +334,32 @@ def is_greek_line(line: str) -> bool:
     # Mindestens 2 griechische Buchstaben für eine griechische Zeile
     return greek_letters >= 2
 
+def is_latin_line(s:str) -> bool:
+    """
+    Erkennt lateinische Zeilen anhand lateinischer Buchstaben.
+    Lateinisch = normale ASCII-Buchstaben, aber keine deutschen Umlaute.
+    """
+    if not s:
+        return False
+    s = s.strip()
+    # Entferne Zeilennummer, Sprecher, Tags etc. für die Analyse
+    s_clean = re.sub(r'^\(\d+[a-z]*\)', '', s)  # Zeilennummer
+    s_clean = re.sub(r'^\[[^\]]*:\]', '', s_clean)  # Sprecher
+    s_clean = re.sub(r'\([^)]*\)', '', s_clean)  # Tags
+    
+    # Zähle lateinische Buchstaben (a-z, A-Z, aber keine Umlaute)
+    latin_count = sum(1 for ch in s_clean if ch.isalpha() and ord(ch) < 128)
+    # Zähle deutsche Umlaute
+    german_count = sum(1 for ch in s_clean if ch in 'äöüÄÖÜß')
+    
+    # Wenn mehr lateinische als deutsche Buchstaben → lateinisch
+    return latin_count > german_count and latin_count >= 2
+
 def _color_from_marker(ch):
     if ch == '+': return '#1E90FF'
     if ch == '-': return '#228B22'
     if ch == '#': return '#FF0000'
-    if ch == '§': return '#FF00FF'  # Magenta
+    if ch == '§': return '#9370DB'  # Sanftes Violett (wie Blumen) - Pendant zum sanften Blau
     if ch == '$': return '#FFA500'  # Orange
     return None
 
@@ -359,7 +434,8 @@ class ToplineTokenFlowable(Flowable):
         self.next_token_starts_with_bar = next_token_starts_with_bar
 
     def _strip_prefix(self, s:str) -> str:
-        return s[1:] if s and s[0] in '#+-' else s
+        # WICHTIG: Auch neue Farbmarker § (lila) und $ (orange) entfernen!
+        return s[1:] if s and s[0] in '#+-§$' else s
 
     def _extract_tags(self, s_raw:str):
         body = self._strip_prefix(s_raw)
@@ -381,7 +457,9 @@ class ToplineTokenFlowable(Flowable):
 
     def _core_visible_text(self) -> str:
         s = self._core_with_markers()
-        s = re.sub(r'[Lir]+', '', s).replace('-', '|')
+        # DEAKTIVIERT für lateinische Texte: i, r, L sind normale Buchstaben, keine Versmaß-Marker
+        if not CURRENT_IS_LATIN:
+            s = re.sub(r'[Lir]+', '', s).replace('-', '|')
         return s.strip()
 
     def _parse_segments(self):
@@ -578,6 +656,13 @@ class ToplineTokenFlowable(Flowable):
 
 # ========= Tokenizer / Label / Sprecher =========
 def tokenize(line:str):
+    # LATEINISCH: (N)(Abl) → (Abl) Transformation
+    # Entferne (N) vor Ablativ-Tags, da Nomen mit Ablativ implizit sind
+    if line and '(N)(Abl)' in line:
+        # Prüfe ob es eine lateinische Zeile ist (enthält lateinische Buchstaben)
+        if not RE_GREEK_CHARS.search(line):
+            line = re.sub(r'\(N\)\(Abl\)', '(Abl)', line)
+    
     line = normalize_spaces(pre_substitutions(line or ''))
     if not line: return []
     raw = line.split(' ')
@@ -586,12 +671,24 @@ def tokenize(line:str):
         if not tok: continue
         if buf:
             buf.append(tok)
-            if tok.endswith(']'): out.append(' '.join(buf)); buf = []
+            if tok.endswith(']'): 
+                # NUR zusammenfassen wenn es ein Sprecher ist (endet mit `:]`)
+                combined = ' '.join(buf)
+                if combined.endswith(':]'):
+                    out.append(combined)
+                else:
+                    # Philologische Marker - NICHT zusammenfassen!
+                    out.extend(buf)
+                buf = []
             continue
         if tok.startswith('[') and not tok.endswith(']'):
-            buf = [tok]; continue
+            # Start eines mehrteiligen Tokens - sammle erstmal
+            buf = [tok]
+            continue
         out.append(tok)
-    if buf: out.append(' '.join(buf))
+    if buf: 
+        # Falls noch was im Buffer ist - als separate Tokens hinzufügen
+        out.extend(buf)
     return out
 
 def _is_label_token(t: str):
@@ -633,7 +730,11 @@ def split_leading_label_and_speaker(tokens):
     return label, base, speaker, toks
 
 # ------- Elisions-Übertragung (aus Epos übernommen) -------
-APOSTS = ('\u2019', '\u02BC')  # ’ und ʼ
+APOSTS = (
+    '\u02BC',  # ʼ MODIFIER LETTER APOSTROPHE (primär, das schönste!)
+    '\u2019',  # ' RIGHT SINGLE QUOTATION MARK
+    '\u1FBD',  # ᾽ GREEK KORONIS (in Kallimachos etc.)
+)
 
 def propagate_elision_markers(gr_tokens):
     out = gr_tokens[:]
@@ -687,7 +788,8 @@ def visible_measure_token(token:str, *, font:str, size:float, cfg, is_greek_row:
 
     core_no_end, _color2, had_leading_bar = _strip_leading_bar_color(core_no_end)
 
-    if is_greek_row:
+    if is_greek_row and not CURRENT_IS_LATIN:
+        # DEAKTIVIERT für lateinische Texte: i, r, L sind normale Buchstaben, keine Versmaß-Marker
         core_meas = re.sub(r'[Lir]+', '', core_no_end).replace('-', '|')
     else:
         core_meas = core_no_end
@@ -721,7 +823,7 @@ def format_token_markup(token:str, *, is_greek_row:bool, gr_bold:bool, remove_ba
     if '#' in raw: color_pos = raw.find('#'); color = '#FF0000'
     elif '+' in raw: color_pos = raw.find('+'); color = '#1E90FF'
     elif '-' in raw: color_pos = raw.find('-'); color = '#228B22'
-    elif '§' in raw: color_pos = raw.find('§'); color = '#FF00FF'  # Magenta
+    elif '§' in raw: color_pos = raw.find('§'); color = '#9370DB'  # Sanftes Violett (wie Blumen) - Pendant zum sanften Blau
     elif '$' in raw: color_pos = raw.find('$'); color = '#FFA500'  # Orange
     if color_pos >= 0: raw = raw[:color_pos] + raw[color_pos+1:]
     raw = raw.replace('~','')
@@ -741,7 +843,8 @@ def format_token_markup(token:str, *, is_greek_row:bool, gr_bold:bool, remove_ba
         core_no_end = core_no_end.replace('*','')
         is_bold = True
 
-    if is_greek_row:
+    if is_greek_row and not CURRENT_IS_LATIN:
+        # DEAKTIVIERT für lateinische Texte: i, r, L sind normale Buchstaben, keine Versmaß-Marker
         core_for_width = re.sub(r'[Lir]+', '', core_no_end).replace('-', '|')
         core_html_main = _make_core_html_with_invisible_bars(
             core_for_width,
@@ -876,10 +979,32 @@ def detect_section(line:str):
     if m2: return m2.group(1).strip()
     return None
 
+def detect_eq_heading(line:str):
+    """Erkennt Gleichheitszeichen-Überschriften wie ==== Text ==== oder === Text ==="""
+    s = (line or '').strip()
+    m = RE_EQ_H1.match(s)
+    if m: return ('h1_eq', m.group(1).strip())
+    m = RE_EQ_H2.match(s)
+    if m: return ('h2_eq', m.group(1).strip())
+    m = RE_EQ_H3.match(s)
+    if m: return ('h3_eq', m.group(1).strip())
+    return (None, None)
+
 # ========= Parser =========
 def process_input_file(fname:str):
     with open(fname, encoding='utf-8') as f:
         raw = [ln.rstrip('\n') for ln in f]
+    
+    # LATEINISCH: (N)(Abl) → (Abl) Transformation für ALLE Zeilen
+    # Prüfe ob es ein lateinischer Text ist (keine griechischen Zeichen)
+    is_latin_text = False
+    for line in raw:
+        if line.strip() and not is_empty_or_sep(line.strip()):
+            is_latin_text = not RE_GREEK_CHARS.search(line)
+            break
+    
+    if is_latin_text:
+        raw = [re.sub(r'\(N\)\(Abl\)', '(Abl)', ln) for ln in raw]
 
     blocks = []
     i = 0
@@ -894,57 +1019,171 @@ def process_input_file(fname:str):
             blocks.append({'type':'title_brace', 'text': m.group(1).strip()})
             i += 1; continue
 
+        # ==== Überschrift ==== / === Überschrift === / == Überschrift ==
+        # WICHTIG: Entferne Zeilennummer vor der Prüfung, falls vorhanden
+        line_num_temp, line_without_num = extract_line_number(line)
+        htyp, htxt = detect_eq_heading(line_without_num if line_num_temp else line)
+        if htyp:
+            blocks.append({'type': htyp, 'text': htxt})
+            i += 1; continue
+
+        # [[Zeile Lost]] - Sonderfall: keine Übersetzung, keine Versmaß-Marker-Entfernung
+        if RE_ZEILE_LOST.match(line):
+            blocks.append({'type':'zeile_lost', 'text': line})
+            i += 1; continue
+
         # [[Abschnitt]] / [Abschnitt]
         sec = detect_section(line)
         if sec:
             blocks.append({'type':'section', 'text':sec})
             i += 1; continue
 
-        # Klassifikation: Label/Sprecher vorn für Klassifizierung weg
-        line_cls = _strip_speaker_prefix_for_classify(line)
-        if is_greek_line(line_cls):
-            gr_line = line
+        # NEUE LOGIK: Zeilennummern-basierte Paarbildung
+        # Extrahiere Zeilennummer der aktuellen Zeile
+        line_num, line_content = extract_line_number(line)
+        
+        if line_num is not None:
+            # Wir haben eine Zeilennummer gefunden
+            # Schaue voraus, um zu prüfen, ob die nächste(n) Zeile(n) dieselbe Nummer haben
+            lines_with_same_num = [line]
+            j = i + 1
+            
+            # Sammle alle aufeinanderfolgenden Zeilen mit derselben Nummer
+            # (überspringe leere Zeilen dazwischen)
+            while j < len(raw):
+                next_line = (raw[j] or '').strip()
+                if is_empty_or_sep(next_line):
+                    j += 1
+                    continue
+                
+                next_num, _ = extract_line_number(next_line)
+                if next_num == line_num:
+                    lines_with_same_num.append(next_line)
+                    j += 1
+                else:
+                    break
+            
+            # Jetzt haben wir alle Zeilen mit derselber Nummer
+            num_lines = len(lines_with_same_num)
+            
+            if num_lines >= 2:
+                # Zweisprachig (2) oder Dreisprachig (3+): gr/lat_de oder gr/lat_de_en
+                # WICHTIG: Erste Zeile = IMMER antike Sprache, zweite = IMMER Übersetzung
+                # UNABHÄNGIG von Sprechern oder Buchstaben!
+                gr_line = lines_with_same_num[0]
+                de_line = lines_with_same_num[1]
+                en_line = lines_with_same_num[2] if num_lines >= 3 else None
+                
+                # Tokenisieren & führende Label/Sprecher abwerfen
+                gr_tokens = tokenize(gr_line)
+                de_tokens = tokenize(de_line)
+
+                lbl_gr, base_gr, sp_gr, gr_tokens = split_leading_label_and_speaker(gr_tokens)
+                lbl_de, base_de, sp_de, de_tokens = split_leading_label_and_speaker(de_tokens)
+
+                line_label = lbl_gr or lbl_de or ''
+                base_num   = base_gr if base_gr is not None else base_de
+                speaker    = sp_gr or ''
+
+                # WICHTIG: Elisions-Übertragung direkt nach dem Tokenizing anwenden
+                gr_tokens = propagate_elision_markers(gr_tokens)
+
+                # Für 3-sprachige Texte: Englische Zeile verarbeiten
+                en_tokens = []
+                if en_line:
+                    en_tokens = tokenize(en_line)
+                    # Entferne Zeilennummer und Sprecher aus englischer Zeile
+                    lbl_en, base_en, sp_en, en_tokens = split_leading_label_and_speaker(en_tokens)
+
+                blocks.append({
+                    'type':'pair',
+                    'speaker': speaker,
+                    'label': line_label,
+                    'base':  base_num,
+                    'gr_tokens': gr_tokens,
+                    'de_tokens': de_tokens,
+                    'en_tokens': en_tokens  # NEU: Englische Tokens für 3-sprachige Texte
+                })
+                i = j
+                continue
+            else:
+                # Nur eine Zeile mit dieser Nummer - könnte Strukturzeile oder Fehler sein
+                # Als Fallback: Prüfe Sprachinhalt (OHNE Sprecher zu berücksichtigen!)
+                line_without_speaker = _strip_speaker_prefix_for_classify(line_content)
+                if is_greek_line(line_without_speaker) or is_latin_line(line_without_speaker):
+                    # Antike Sprache ohne Übersetzung
+                    gr_tokens = tokenize(line)
+                    lbl_gr, base_gr, sp_gr, gr_tokens = split_leading_label_and_speaker(gr_tokens)
+                    gr_tokens = propagate_elision_markers(gr_tokens)
+                    
+                    blocks.append({
+                        'type':'pair',
+                        'speaker': sp_gr or '',
+                        'label': lbl_gr or '',
+                        'base': base_gr,
+                        'gr_tokens': gr_tokens,
+                        'de_tokens': []
+                    })
+                else:
+                    # Deutsche Zeile ohne antike Sprache
+                    de_tokens = tokenize(line)
+                    lbl_de, base_de, _sp_de, de_tokens = split_leading_label_and_speaker(de_tokens)
+                    blocks.append({
+                        'type':'pair',
+                        'speaker':'',
+                        'label': lbl_de or '',
+                        'base': base_de,
+                        'gr_tokens': [],
+                        'de_tokens': de_tokens
+                    })
+                i = j
+                continue
+        else:
+            # Keine Zeilennummer gefunden - Fallback auf alte Logik
+            line_cls = _strip_speaker_prefix_for_classify(line)
+            if is_greek_line(line_cls) or is_latin_line(line_cls):
+                gr_line = line
+                i += 1
+                while i < len(raw) and is_empty_or_sep(raw[i]): i += 1
+
+                de_line = ''
+                if i < len(raw):
+                    cand = (raw[i] or '').strip()
+                    cand_cls = _strip_speaker_prefix_for_classify(cand)
+                    if not (is_greek_line(cand_cls) or is_latin_line(cand_cls)):
+                        de_line = cand
+                        i += 1
+
+                # Tokenisieren & führende Label/Sprecher abwerfen
+                gr_tokens = tokenize(gr_line)
+                de_tokens = tokenize(de_line)
+
+                lbl_gr, base_gr, sp_gr, gr_tokens = split_leading_label_and_speaker(gr_tokens)
+                lbl_de, base_de, sp_de, de_tokens = split_leading_label_and_speaker(de_tokens)
+
+                line_label = lbl_gr or lbl_de or ''
+                base_num   = base_gr if base_gr is not None else base_de
+                speaker    = sp_gr or ''
+
+                # WICHTIG: Elisions-Übertragung direkt nach dem Tokenizing anwenden
+                gr_tokens = propagate_elision_markers(gr_tokens)
+
+                blocks.append({
+                    'type':'pair',
+                    'speaker': speaker,
+                    'label': line_label,
+                    'base':  base_num,
+                    'gr_tokens': gr_tokens,
+                    'de_tokens': de_tokens
+                })
+                continue
+
+            # reine DE-Zeile – Label & Sprecher raus, Sprecher nicht anzeigen
+            de_tokens = tokenize(line)
+            lbl_de, base_de, _sp_de, de_tokens = split_leading_label_and_speaker(de_tokens)
+            blocks.append({'type':'pair', 'speaker':'', 'label': (lbl_de or ''), 'base': base_de,
+                           'gr_tokens': [], 'de_tokens': de_tokens})
             i += 1
-            while i < len(raw) and is_empty_or_sep(raw[i]): i += 1
-
-            de_line = ''
-            if i < len(raw):
-                cand = (raw[i] or '').strip()
-                cand_cls = _strip_speaker_prefix_for_classify(cand)
-                if not is_greek_line(cand_cls):
-                    de_line = cand
-                    i += 1
-
-            # Tokenisieren & führende Label/Sprecher abwerfen (beide, beliebige Reihenfolge)
-            gr_tokens = tokenize(gr_line)
-            de_tokens = tokenize(de_line)
-
-            lbl_gr, base_gr, sp_gr, gr_tokens = split_leading_label_and_speaker(gr_tokens)
-            lbl_de, base_de, sp_de, de_tokens = split_leading_label_and_speaker(de_tokens)
-
-            line_label = lbl_gr or lbl_de or ''
-            base_num   = base_gr if base_gr is not None else base_de
-            speaker    = sp_gr or ''   # DE-Sprecher verwerfen
-
-            # WICHTIG: Elisions-Übertragung direkt nach dem Tokenizing anwenden
-            gr_tokens = propagate_elision_markers(gr_tokens)
-
-            blocks.append({
-                'type':'pair',
-                'speaker': speaker,
-                'label': line_label,
-                'base':  base_num,       # wichtig fürs Stufenlayout
-                'gr_tokens': gr_tokens,
-                'de_tokens': de_tokens
-            })
-            continue
-
-        # reine DE-Zeile – Label & Sprecher raus, Sprecher nicht anzeigen
-        de_tokens = tokenize(line)
-        lbl_de, base_de, _sp_de, de_tokens = split_leading_label_and_speaker(de_tokens)
-        blocks.append({'type':'pair', 'speaker':'', 'label': (lbl_de or ''), 'base': base_de,
-                       'gr_tokens': [], 'de_tokens': de_tokens})
-        i += 1
 
     return blocks
 
@@ -962,7 +1201,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str],
                           token_de_style = None,
                           num_style = None,
                           style_speaker = None,
-                          gr_bold: bool = False):
+                          gr_bold: bool = False,
+                          en_tokens: list[str] = None):
     # Standardwerte setzen falls nicht übergeben
     if doc_width_pt is None:
         doc_width_pt = A4[0] - 40*MM  # A4-Breite minus Ränder
@@ -994,9 +1234,13 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str],
     if avail_tokens_w < 60: avail_tokens_w = doc_width_pt * 0.9
 
     # Spaltenlängen angleichen (zeilengetreu)
-    cols = max(len(gr_tokens), len(de_tokens))
+    # Für 3-sprachige Texte: englische Zeile einbeziehen
+    if en_tokens is None:
+        en_tokens = []
+    cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
     gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
     de = de_tokens[:] + [''] * (cols - len(de_tokens))
+    en = en_tokens[:] + [''] * (cols - len(en_tokens))
 
     # Effektive cfg abhängig von meter_on (Versmaß an/aus) und tag_mode
     eff_cfg = dict(CFG)
@@ -1006,29 +1250,37 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str],
             eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_TAG', 1.0)
         else:
             eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_NOTAG', 0.5)
-        # Versmaß-spezifische Gaps
+        # Versmaß-spezifische Gaps (INTER_PAIR wird global gesetzt, INTRA wird direkt berechnet)
         eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_VERSMASS
-        eff_cfg['INTRA_PAIR_GAP_MM'] = INTRA_PAIR_GAP_MM_VERSMASS
     else:
         # Für normale PDFs ist ein kleiner Zell-Innenabstand gut, der Hauptabstand kommt vom Token-Pad.
         eff_cfg['CELL_PAD_LR_PT'] = 0.5
         if tag_mode == "TAGS":
             eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_NORMAL_TAG', 4.0)
+            eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL_TAG
         else:
             eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_NORMAL_NOTAG', 3.0)
-        # Normal-spezifische Gaps
-        eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL
-        eff_cfg['INTRA_PAIR_GAP_MM'] = INTRA_PAIR_GAP_MM_NORMAL
+            eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL_NOTAG
 
-    # Breiten
+    # Breiten: Berücksichtige auch englische Zeile
     widths = []
     for k in range(cols):
         w_gr = visible_measure_token(gr[k], font=token_gr_style.fontName, size=token_gr_style.fontSize, cfg=eff_cfg, is_greek_row=True)  if gr[k] else 0.0
         w_de = visible_measure_token(de[k], font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if de[k] else 0.0
-        widths.append(max(w_gr, w_de))
+        w_en = visible_measure_token(en[k], font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if en[k] else 0.0
+        widths.append(max(w_gr, w_de, w_en))
 
     tables, i, first_slice = [], 0, True
-    gap_pts = INTRA_PAIR_GAP_MM * MM
+    
+    # Dynamischer Abstand zwischen antiker und moderner Zeile
+    # Abhängig von Tag/NoTag
+    if CURRENT_IS_NOTAGS:
+        gap_ancient_to_modern = INTRA_PAIR_ANCIENT_TO_MODERN_NOTAG * MM
+    else:
+        gap_ancient_to_modern = INTRA_PAIR_ANCIENT_TO_MODERN_TAG * MM
+    
+    # Abstand zwischen DE und EN (nur bei 3-sprachigen PDFs)
+    gap_de_to_en = INTRA_PAIR_DE_TO_EN  # in Punkten, nicht MM!
 
     while i < cols:
         acc, j = 0.0, i
@@ -1038,6 +1290,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str],
             acc += w; j += 1
 
         slice_gr, slice_de, slice_w = gr[i:j], de[i:j], widths[i:j]
+        slice_en = en[i:j]  # Für 3-sprachige Texte
 
         # Zellen
         def _p(text, st): return Paragraph(text, st)
@@ -1101,27 +1354,56 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str],
             de_html_centered = center_word_in_width(de_html, de_meas, de_width, token_de_style.fontName, token_de_style.fontSize)
             de_cells.append(Paragraph(de_html_centered, token_de_style))
 
+        # EN-Zellen (für 3-sprachige Texte)
+        en_cells = []
+        has_en = any(slice_en)
+        if has_en:
+            for idx, t in enumerate(slice_en):
+                if not t:
+                    en_cells.append(Paragraph('', token_de_style))
+                    continue
+                en_html = format_token_markup(t, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
+                en_width = slice_w[idx]
+                en_meas  = visible_measure_token(t, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
+                en_html_centered = center_word_in_width(en_html, en_meas, en_width, token_de_style.fontName, token_de_style.fontSize)
+                en_cells.append(Paragraph(en_html_centered, token_de_style))
+
         # Linke Spalten: NUM → Gap → SPRECHER → Gap → INDENT → Tokens
-        num_para_gr = _p(xml_escape(f'[{line_label}]') if (first_slice and line_label) else '\u00A0', num_style)
+        # WICHTIG: Zeilennummer in <font> Tag wrappen, damit "-" nicht als Farbmarker interpretiert wird
+        if first_slice and line_label:
+            num_text = f'<font color="black">[{xml_escape(line_label)}]</font>'
+        else:
+            num_text = '\u00A0'
+        num_para_gr = _p(num_text, num_style)
         num_para_de = _p('\u00A0', num_style)
+        num_para_en = _p('\u00A0', num_style) if has_en else None
         num_gap_gr  = _p('', token_gr_style); num_gap_de = _p('', token_de_style)
+        num_gap_en  = _p('', token_de_style) if has_en else None
 
         sp_para_gr  = _p(xml_escape(f"[{speaker}]:"), style_speaker) if (first_slice and sp_w>0 and speaker) else _p('', style_speaker)
         sp_para_de  = _p('', style_speaker)
+        sp_para_en  = _p('', style_speaker) if has_en else None
         sp_gap_gr   = _p('', token_gr_style); sp_gap_de = _p('', token_de_style)
+        sp_gap_en   = _p('', token_de_style) if has_en else None
 
         indent_gr   = _p('', token_gr_style)
         indent_de   = _p('', token_de_style)
+        indent_en   = _p('', token_de_style) if has_en else None
 
         row_gr = [num_para_gr, num_gap_gr, sp_para_gr, sp_gap_gr, indent_gr] + gr_cells
         row_de = [num_para_de, num_gap_de, sp_para_de, sp_gap_de, indent_de] + de_cells
         col_w  = [num_w, num_gap, sp_w,        sp_gap,   indent_w] + slice_w
 
-        tbl = Table([row_gr, row_de], colWidths=col_w, hAlign='LEFT')
+        # Für 3-sprachige Texte: englische Zeile hinzufügen
+        if has_en:
+            row_en = [num_para_en, num_gap_en, sp_para_en, sp_gap_en, indent_en] + en_cells
+            tbl = Table([row_gr, row_de, row_en], colWidths=col_w, hAlign='LEFT')
+        else:
+            tbl = Table([row_gr, row_de], colWidths=col_w, hAlign='LEFT')
 
         if meter_on:
             # Versmaß: KEIN Innenabstand, sonst entstehen Lücken zwischen Flowables
-            tbl.setStyle(TableStyle([
+            style_list = [
                 ('LEFTPADDING',   (0,0), (-1,-1), 0.0),
                 ('RIGHTPADDING',  (0,0), (-1,-1), 0.0),
                 ('TOPPADDING',    (0,0), (-1,-1), 0.0),
@@ -1129,13 +1411,21 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str],
                 ('VALIGN',        (0,0), (-1,-1), 'BOTTOM'),
                 ('ALIGN',         (0,0), (0,-1), 'RIGHT'),  # Nummern rechts
                 ('ALIGN',         (1,0), (-1,-1), 'LEFT'),  # Rest links (wie im Epos)
-                ('BOTTOMPADDING', (0,0), (-1,0), gap_pts/2.0),
-                ('TOPPADDING',    (0,1), (-1,1), gap_pts/2.0),
+                # Abstand zwischen antiker Zeile (0) und erster Übersetzungszeile (1)
+                ('BOTTOMPADDING', (0,0), (-1,0), gap_ancient_to_modern/2.0),
+                ('TOPPADDING',    (0,1), (-1,1), gap_ancient_to_modern/2.0),
                 ('RIGHTPADDING',  (2,0), (2,-1), 2.0),      # Sprecher-Spalte darf etwas Luft haben
-            ]))
+            ]
+            # NEU: Für 3-sprachige Texte: Padding zwischen Zeilen
+            # Zeile 1 (GR) und Zeile 2 (DE): normaler Abstand (siehe oben)
+            # Zeile 2 (DE) und Zeile 3 (EN): SEHR MINIMAL, fast direkt untereinander
+            if has_en:
+                style_list.append(('BOTTOMPADDING', (0,1), (-1,1), gap_de_to_en))
+                style_list.append(('TOPPADDING',    (0,2), (-1,2), gap_de_to_en))
+            tbl.setStyle(TableStyle(style_list))
         else:
             # Nicht-Versmaß: bisheriges Padding-Verhalten
-            tbl.setStyle(TableStyle([
+            style_list = [
                 ('LEFTPADDING',   (0,0), (-1,-1), CELL_PAD_LR_PT),
                 ('RIGHTPADDING',  (0,0), (-1,-1), CELL_PAD_LR_PT),
                 ('TOPPADDING',    (0,0), (-1,-1), 0.0),
@@ -1143,10 +1433,18 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str],
                 ('VALIGN',        (0,0), (-1,-1), 'BOTTOM'),
                 ('ALIGN',         (0,0), (0,-1), 'RIGHT'),
                 ('ALIGN',         (1,0), (-1,-1), 'LEFT'),
-                ('BOTTOMPADDING', (0,0), (-1,0), gap_pts/2.0),
-                ('TOPPADDING',    (0,1), (-1,1), gap_pts/2.0),
+                # Abstand zwischen antiker Zeile (0) und erster Übersetzungszeile (1)
+                ('BOTTOMPADDING', (0,0), (-1,0), gap_ancient_to_modern/2.0),
+                ('TOPPADDING',    (0,1), (-1,1), gap_ancient_to_modern/2.0),
                 ('RIGHTPADDING',  (2,0), (2,-1), 2.0),
-            ]))
+            ]
+            # NEU: Für 3-sprachige Texte: Padding zwischen Zeilen
+            # Zeile 1 (GR) und Zeile 2 (DE): normaler Abstand (siehe oben)
+            # Zeile 2 (DE) und Zeile 3 (EN): SEHR MINIMAL, fast direkt untereinander
+            if has_en:
+                style_list.append(('BOTTOMPADDING', (0,1), (-1,1), gap_de_to_en))
+                style_list.append(('TOPPADDING',    (0,2), (-1,2), gap_de_to_en))
+            tbl.setStyle(TableStyle(style_list))
         tables.append(tbl)
         first_slice, i = False, j
 
@@ -1163,21 +1461,29 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
     # NoTags-Schalter global setzen, wenn Dateiname auf _NoTags.pdf endet
     global CURRENT_IS_NOTAGS
     CURRENT_IS_NOTAGS = pdf_name.lower().endswith("_notags.pdf")
+    # Lateinischer Text? (keine Versmaß-Marker-Entfernung für i, r, L)
+    global CURRENT_IS_LATIN
+    CURRENT_IS_LATIN = "_LAT_" in pdf_name.upper() or "_lat_" in pdf_name.lower()
     # Optionale Hoch/Tief/Off-Overrides aus Preprocess/UI aktivieren
     global PLACEMENT_OVERRIDES
     PLACEMENT_OVERRIDES = dict(placement_overrides or {})
     
-    # Versmaß-spezifische Abstände setzen
-    global INTER_PAIR_GAP_MM, INTRA_PAIR_GAP_MM
+    # Versmaß-spezifische Abstände setzen (abhängig von versmass_display UND tag_mode)
+    global INTER_PAIR_GAP_MM
     if versmass_display:
         INTER_PAIR_GAP_MM = INTER_PAIR_GAP_MM_VERSMASS
-        INTRA_PAIR_GAP_MM = INTRA_PAIR_GAP_MM_VERSMASS
     else:
-        INTER_PAIR_GAP_MM = INTER_PAIR_GAP_MM_NORMAL
-        INTRA_PAIR_GAP_MM = INTRA_PAIR_GAP_MM_NORMAL
+        # Normal-PDFs: Unterscheide zwischen TAG und NOTAG
+        if CURRENT_IS_NOTAGS:
+            INTER_PAIR_GAP_MM = INTER_PAIR_GAP_MM_NORMAL_NOTAG
+        else:
+            INTER_PAIR_GAP_MM = INTER_PAIR_GAP_MM_NORMAL_TAG
+    
+    # Intra-Pair Abstand für Debug
+    intra_val = INTRA_PAIR_ANCIENT_TO_MODERN_NOTAG if CURRENT_IS_NOTAGS else INTRA_PAIR_ANCIENT_TO_MODERN_TAG
     
     # Debug-Ausgabe
-    print(f"DEBUG: versmass_display={versmass_display}, INTER_PAIR_GAP_MM={INTER_PAIR_GAP_MM}, INTRA_PAIR_GAP_MM={INTRA_PAIR_GAP_MM}")
+    print(f"DEBUG Poesie: versmass={versmass_display}, tag_mode={'NO_TAGS' if CURRENT_IS_NOTAGS else 'TAGS'}, INTER_PAIR={INTER_PAIR_GAP_MM}mm, INTRA_PAIR={intra_val}mm")
     
     left_margin = 10*MM
     right_margin = 10*MM
@@ -1203,12 +1509,24 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                                fontSize=num_size, leading=_leading_for(num_size),
                                textColor=CFG['NUM_COLOR'], alignment=TA_RIGHT, wordWrap='LTR', splitLongWords=0)
     style_section = ParagraphStyle('Section', parent=base['Normal'],
-        fontName='DejaVu-Bold', fontSize=SECTION_SIZE, leading=_leading_for(SECTION_SIZE),
-        alignment=TA_LEFT, spaceBefore=SECTION_SPACE_BEFORE_MM*MM,
-        spaceAfter=SECTION_SPACE_AFTER_MM*MM, keepWithNext=True)
+        fontName='DejaVu', fontSize=SECTION_SIZE, leading=_leading_for(SECTION_SIZE),
+        alignment=TA_LEFT, spaceBefore=0,
+        spaceAfter=SECTION_SPACE_AFTER_MM*MM, keepWithNext=False)
     style_title = ParagraphStyle('TitleBrace', parent=base['Normal'],
-        fontName='DejaVu-Bold', fontSize=TITLE_BRACE_SIZE, leading=_leading_for(TITLE_BRACE_SIZE),
-        alignment=TA_CENTER, spaceAfter=TITLE_SPACE_AFTER*MM, keepWithNext=True)
+        fontName='DejaVu', fontSize=TITLE_BRACE_SIZE, leading=_leading_for(TITLE_BRACE_SIZE),
+        alignment=TA_CENTER, spaceAfter=TITLE_SPACE_AFTER*MM, keepWithNext=False)
+    
+    # Gleichheitszeichen-Überschriften (wie in Prosa)
+    # H1 (====): zentriert, H2/H3 (===, ==): linksbündig, ALLE nicht fett (Tinte sparen!)
+    style_eq_h1 = ParagraphStyle('EqH1', parent=base['Normal'],
+        fontName='DejaVu', fontSize=H1_EQ_SIZE, leading=_leading_for(H1_EQ_SIZE),
+        alignment=TA_CENTER, spaceAfter=H1_SPACE_AFTER_MM*MM, keepWithNext=False)
+    style_eq_h2 = ParagraphStyle('EqH2', parent=base['Normal'],
+        fontName='DejaVu', fontSize=H2_EQ_SIZE, leading=_leading_for(H2_EQ_SIZE),
+        alignment=TA_LEFT, spaceAfter=H2_SPACE_AFTER_MM*MM, keepWithNext=False)
+    style_eq_h3 = ParagraphStyle('EqH3', parent=base['Normal'],
+        fontName='DejaVu', fontSize=H3_EQ_SIZE, leading=_leading_for(H3_EQ_SIZE),
+        alignment=TA_LEFT, spaceAfter=H3_SPACE_AFTER_MM*MM, keepWithNext=False)
     style_speaker = ParagraphStyle('Speaker', parent=base['Normal'],
         fontName='DejaVu', fontSize=DE_SIZE, leading=_leading_for(DE_SIZE),
         alignment=TA_LEFT, textColor=colors.black)
@@ -1221,9 +1539,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
         w = _sw(disp, style_speaker.fontName, style_speaker.fontSize)
         return max(SPEAKER_COL_MIN_MM * MM, w + SPEAKER_EXTRA_PAD_PT)
 
-    all_speakers = [ (b.get('speaker') or '') for b in blocks if b.get('type') == 'pair' and (b.get('speaker') or '') ]
-    global_speaker_width_pt = max([_speaker_col_width(s) for s in all_speakers], default=SPEAKER_COL_MIN_MM * MM)
-
+    # KEINE globale Sprecher-Spaltenbreite mehr!
+    # Jede Zeile hat ihre eigene Sprecher-Spaltenbreite
+    
     elements = []
 
     # Sprecher-Laterne global reservieren, sobald irgendwo ein Sprecher vorkommt
@@ -1231,46 +1549,162 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
 
     # Stufenlayout: kumulative Breite pro Basisvers
     cum_width_by_base = {}  # base:int -> float pt
+    
+    # Sprecher-Tracking: Nur bei Wechsel oder nach Überschrift anzeigen
+    last_speaker = None
+    last_was_heading = False  # True wenn der letzte Block eine Überschrift war
 
     i = 0
     while i < len(blocks):
         b = blocks[i]
         t = b['type']
 
+        # {Titel} Funktion existiert nicht mehr - überspringe diese Blöcke
         if t == 'title_brace':
-            elements.append(Paragraph(xml_escape(b['text']), style_title))
-            elements.append(Spacer(1, 2*MM))
             i += 1; continue
 
-        if t == 'section':
-            para = Paragraph(xml_escape(b['text']), style_section)
+        # [[Zeile Lost]] - Sonderfall: als normale Zeile formatieren mit eckigen Klammern
+        if t == 'zeile_lost':
+            raw_text = b['text']
+            
+            # Parse: (123) [Sprecher:] [[Zeile Lost]]
+            # Ziel: [123] [Sprecher:] [[Zeile Lost]]
+            match_lost = re.match(r'^\s*\((\d+[a-z]*)\)\s*(\[[^\]]*:\])?\s*\[\[Zeile\s+Lost\]\]\s*$', raw_text, re.IGNORECASE)
+            
+            if match_lost:
+                line_num = match_lost.group(1)
+                speaker = match_lost.group(2) if match_lost.group(2) else ''
+                
+                # Formatiere wie normale Zeilen: [123] [Sprecher:] [[Zeile Lost]]
+                formatted_parts = []
+                formatted_parts.append(f'<font name="DejaVu" size="{num_style.fontSize}">[{line_num}]</font>')
+                if speaker:
+                    formatted_parts.append(f'<font name="DejaVu" size="{style_speaker.fontSize}">{xml_escape(speaker)}</font>')
+                formatted_parts.append('<font name="DejaVu">[[Zeile Lost]]</font>')
+                formatted_text = ' '.join(formatted_parts)
+            else:
+                # Fallback: Zeige den Text wie er ist
+                formatted_text = xml_escape(raw_text)
+            
+            # Zeige als Paragraph mit normalem Abstand
+            zeile_lost_style = ParagraphStyle('ZeileLost', parent=base['Normal'],
+                fontName='DejaVu', fontSize=DE_SIZE, leading=_leading_for(DE_SIZE),
+                alignment=TA_LEFT)
+            elements.append(Paragraph(formatted_text, zeile_lost_style))
+            elements.append(Spacer(1, INTER_PAIR_GAP_MM * MM))  # Normaler Abstand wie zwischen Zeilen
+            i += 1; continue
 
-            # Sammle die nächsten 2 Textzeilen für KeepTogether
-            next_elements = [para]
-            text_lines_found = 0
+        # Gleichheitszeichen-Überschriften (wie in Prosa)
+        # WICHTIG: Alle aufeinanderfolgenden Überschriften sammeln und mit erster Textzeile koppeln
+        # WICHTIG: Überschriften mit "Gedicht" markieren den Beginn eines neuen Gedichts
+        # → Kumulative Einrückung zurücksetzen (nur bei "Gedicht"-Überschriften)
+        if t in ['h1_eq', 'h2_eq', 'h3_eq', 'section']:
+            # Bei Überschriften, die "Gedicht" enthalten, kumulative Breite zurücksetzen
+            # Dies verhindert, dass Zeilen aus verschiedenen Gedichten kumulativ eingerückt werden
+            heading_text = b.get('text', '').lower()
+            if t in ['h1_eq', 'h2_eq', 'h3_eq'] and 'gedicht' in heading_text:
+                cum_width_by_base = {}  # Reset für neues Gedicht
+            
+            # Wähle den richtigen Style basierend auf dem Typ
+            if t == 'h1_eq':
+                para_style = style_eq_h1
+            elif t == 'h2_eq':
+                para_style = style_eq_h2
+            elif t == 'h3_eq':
+                para_style = style_eq_h3
+            else:  # section
+                para_style = style_section
+            
+            # Sammle aufeinanderfolgende Überschriften
+            headers = [Paragraph(xml_escape(b['text']), para_style)]
             temp_i = i + 1
-
-            # Suche nach den nächsten 2 Textzeilen (pairs)
-            while temp_i < len(blocks) and text_lines_found < 2:
+            
+            while temp_i < len(blocks):
                 next_b = blocks[temp_i]
+                next_t = next_b['type']
+                
+                if next_t in ['h1_eq', 'h2_eq', 'h3_eq', 'section']:
+                    # Weitere Überschrift - hinzufügen
+                    next_heading_text = next_b.get('text', '').lower()
+                    if next_t in ['h1_eq', 'h2_eq', 'h3_eq'] and 'gedicht' in next_heading_text:
+                        cum_width_by_base = {}
+                    
+                    if next_t == 'h1_eq':
+                        next_para_style = style_eq_h1
+                    elif next_t == 'h2_eq':
+                        next_para_style = style_eq_h2
+                    elif next_t == 'h3_eq':
+                        next_para_style = style_eq_h3
+                    else:
+                        next_para_style = style_section
+                    
+                    headers.append(Paragraph(xml_escape(next_b['text']), next_para_style))
+                    temp_i += 1
+                elif next_t in ['blank', 'title_brace']:
+                    temp_i += 1
+                else:
+                    break
+            
+            # Suche nach den nächsten 2 pair-Blöcken
+            scan = temp_i
+            while scan < len(blocks) and blocks[scan]['type'] == 'blank':
+                scan += 1
+            
+            # Sammle die ersten 2 Textzeilen (ohne sie zu rendern)
+            pair_blocks_to_couple = []
+            temp_scan = scan
+            
+            while temp_scan < len(blocks) and len(pair_blocks_to_couple) < 2:
+                next_b = blocks[temp_scan]
                 if next_b['type'] == 'pair':
-                    # Erstelle die Tabellen für diese Zeile
-                    next_gr_tokens = next_b.get('gr_tokens', [])[:]
-                    next_de_tokens = next_b.get('de_tokens', [])[:]
-                    next_speaker = next_b.get('speaker') or ''
-                    next_line_label = next_b.get('label') or ''
-                    next_base_num = next_b.get('base')
+                    pair_blocks_to_couple.append((temp_scan, next_b))
+                    temp_scan += 1
+                elif next_b['type'] in ['blank', 'title_brace']:
+                    temp_scan += 1
+                else:
+                    break
+            
+            if pair_blocks_to_couple:
+                # EINFACHSTE UND ROBUSTESTE STRATEGIE:
+                # Alle Überschriften + NUR die erste Textzeile in KeepTogether
+                # Das ist klein genug und garantiert, dass Überschriften nicht allein stehen
+                
+                # Rendere die ersten 2 Textzeilen und sammle sie
+                rendered_lines = []
+                for idx, (block_idx, pair_b) in enumerate(pair_blocks_to_couple):
+                    next_gr_tokens = pair_b.get('gr_tokens', [])[:]
+                    next_de_tokens = pair_b.get('de_tokens', [])[:]
+                    next_en_tokens = pair_b.get('en_tokens', [])
+                    next_speaker = pair_b.get('speaker') or ''
+                    next_line_label = pair_b.get('label') or ''
+                    next_base_num = pair_b.get('base')
 
+                    next_gr_tokens = propagate_elision_markers(next_gr_tokens)
+                    
                     next_indent_pt = 0.0
                     if next_base_num is not None:
                         next_indent_pt = max(0.0, cum_width_by_base.get(next_base_num, 0.0))
 
-                    # Prüfe auf Versmaß-Marker für diese temporäre Zeile
                     next_has_versmass = has_meter_markers(next_gr_tokens)
+                    
+                    # Sprecher-Logik für Zeilen nach Überschrift
+                    # idx == 0: Erste Zeile nach Überschrift → Sprecher immer anzeigen
+                    # idx > 0: Weitere Zeilen → nur bei Sprecherwechsel anzeigen
+                    next_display_speaker = next_speaker
+                    if next_speaker:
+                        if idx == 0 or next_speaker != last_speaker:
+                            # Erste Zeile nach Überschrift ODER Sprecherwechsel
+                            next_display_speaker = next_speaker
+                        else:
+                            # Gleicher Sprecher wie vorher - nicht anzeigen
+                            next_display_speaker = ''
+                        last_speaker = next_speaker
+                    
+                    next_current_speaker_width_pt = _speaker_col_width(next_speaker) if next_speaker else 0.0
 
                     next_tables = build_tables_for_pair(
                         next_gr_tokens, next_de_tokens,
-                        speaker=next_speaker,
+                        speaker=next_display_speaker,
                         line_label=next_line_label,
                         doc_width_pt=frame_w,
                         token_gr_style=token_gr, token_de_style=token_de,
@@ -1278,87 +1712,57 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         gr_bold=gr_bold,
                         reserve_speaker_col=reserve_all_speakers,
                         indent_pt=next_indent_pt,
-                        global_speaker_width_pt=global_speaker_width_pt,
-                        meter_on=versmass_display and next_has_versmass
+                        global_speaker_width_pt=next_current_speaker_width_pt,
+                        meter_on=versmass_display and next_has_versmass,
+                        en_tokens=next_en_tokens
                     )
 
-                    next_elements.extend(next_tables)
-                    text_lines_found += 1
-                    # Füge Abstand zwischen den Textzeilen in der KeepTogether-Gruppe hinzu
-                    # (außer nach der letzten Zeile)
-                    if text_lines_found < 2:  # Noch nicht die letzte Zeile erreicht
-                        next_elements.append(Spacer(1, INTER_PAIR_GAP_MM * MM))
+                    # Sammle die Zeilen
+                    rendered_lines.append(KeepTogether(next_tables))
 
-                    # Nach dem Rendern: Breite gutschreiben (aber nur für diese temporäre Berechnung)
+                    # Breite gutschreiben
                     if next_base_num is not None:
                         next_w = measure_rendered_line_width(
                             next_gr_tokens, next_de_tokens,
                             gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
                             remove_bars_instead=True
                         )
-                        # Hier nicht in cum_width_by_base eintragen, da das später nochmal gemacht wird
-
-                elif next_b['type'] == 'section':
-                    # Bei weiteren Überschriften stoppen - diese werden separat verarbeitet
-                    break
-                elif next_b['type'] not in ['blank', 'title_brace']:
-                    # Bei anderen Elementen stoppen
-                    break
-
-                temp_i += 1
-
-            if text_lines_found > 0:
-                # Überschrift mit nächsten Textzeilen verkoppeln
-                elements.append(KeepTogether(next_elements))
-
-                # Abstand nach KeepTogether-Gruppe hinzufügen
-                # Finde den nächsten relevanten Block nach der Gruppe
-                next_relevant_idx = temp_i
-                while next_relevant_idx < len(blocks):
-                    next_block = blocks[next_relevant_idx]
-                    if next_block['type'] not in ['blank', 'title_brace']:
-                        break
-                    next_relevant_idx += 1
-
-                if next_relevant_idx < len(blocks):
-                    next_block = blocks[next_relevant_idx]
-                    if next_block['type'] == 'section':
-                        # Weniger Abstand vor Überschriften
-                        elements.append(Spacer(1, SECTION_SPACE_AFTER_MM * MM * 0.5))
-                    else:
-                        # Normaler Abstand vor weiteren Textzeilen
-                        elements.append(Spacer(1, INTER_PAIR_GAP_MM * MM))
-                # Bei letzter Gruppe: keinen zusätzlichen Abstand
-
-                i = temp_i
+                        cum_width_by_base[next_base_num] = cum_width_by_base.get(next_base_num, 0.0) + next_w
+                
+                # OPTIMIERTE LÖSUNG gegen weiße Flächen:
+                # Problem: Große KeepTogether-Blöcke erzwingen zu früh Seitenumbrüche
+                # Lösung: Kleinere Blöcke + keepWithNext=True
+                
+                # 1. Alle Überschriften zusammen (mit keepWithNext=True im Style)
+                if len(headers) > 0:
+                    elements.append(KeepTogether(headers))
+                
+                # 2. Erste Textzeile (wird durch keepWithNext an Überschriften gekoppelt)
+                if len(rendered_lines) > 0:
+                    elements.append(rendered_lines[0])
+                    elements.append(Spacer(1, INTER_PAIR_GAP_MM * MM))
+                
+                # 3. Zweite Textzeile einzeln
+                if len(rendered_lines) > 1:
+                    elements.append(rendered_lines[1])
+                    elements.append(Spacer(1, INTER_PAIR_GAP_MM * MM))
+                
+                # WICHTIG: last_was_heading = False, weil wir gerade Textzeilen verarbeitet haben
+                # Die nächsten Zeilen sollen normale Sprecher-Logik verwenden
+                last_was_heading = False
+                i = temp_scan
             else:
-                # Keine Textzeilen gefunden, nur Überschrift
-                elements.append(para)
-
-                # Abstand nach einzelner Überschrift hinzufügen
-                # Finde den nächsten relevanten Block
-                next_relevant_idx = temp_i
-                while next_relevant_idx < len(blocks):
-                    next_block = blocks[next_relevant_idx]
-                    if next_block['type'] not in ['blank', 'title_brace']:
-                        break
-                    next_relevant_idx += 1
-
-                if next_relevant_idx < len(blocks):
-                    next_block = blocks[next_relevant_idx]
-                    if next_block['type'] == 'section':
-                        # Weniger Abstand zwischen aufeinanderfolgenden Überschriften
-                        elements.append(Spacer(1, SECTION_SPACE_AFTER_MM * MM * 0.5))
-                    else:
-                        # Normaler Abstand vor Textzeilen
-                        elements.append(Spacer(1, INTER_PAIR_GAP_MM * MM))
-
-                i = temp_i  # Verwende temp_i statt i+1, um keine Überschriften zu überspringen
+                # Keine Textzeilen gefunden - Header allein
+                elements.append(KeepTogether(headers))
+                last_was_heading = True
+                i = temp_i
+            
             continue
 
         if t == 'pair':
             gr_tokens = b.get('gr_tokens', [])[:]
             de_tokens = b.get('de_tokens', [])[:]
+            en_tokens = b.get('en_tokens', [])  # NEU: Englische Tokens für 3-sprachige Texte
             speaker   = b.get('speaker') or ''
             line_label= b.get('label') or ''
             base_num  = b.get('base')  # None oder int
@@ -1374,21 +1778,42 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
 
             # Prüfe auf Versmaß-Marker
             has_versmass = has_meter_markers(gr_tokens)
+            
+            # NEUE LOGIK: Sprecher nur bei Wechsel oder nach Überschrift anzeigen
+            display_speaker = speaker
+            if speaker:
+                # Sprecher anzeigen wenn:
+                # 1. Nach einer Überschrift (last_was_heading)
+                # 2. Sprecherwechsel (speaker != last_speaker)
+                # 3. Erster Sprecher überhaupt (last_speaker is None)
+                if not last_was_heading and speaker == last_speaker:
+                    # Gleicher Sprecher wie vorher - NICHT anzeigen
+                    display_speaker = ''
+                
+                # Update tracking
+                last_speaker = speaker
+                last_was_heading = False
+            
+            # Berechne Sprecher-Spaltenbreite für DIESE Zeile
+            # WICHTIG: Verwende den AKTUELLEN Sprecher für die Breite, auch wenn er nicht angezeigt wird!
+            current_speaker_width_pt = _speaker_col_width(speaker) if speaker else 0.0
 
             tables = build_tables_for_pair(
                 gr_tokens, de_tokens,
-                speaker=speaker,
-                line_label=line_label,                 # <<< WICHTIG: Label übergeben
+                speaker=display_speaker,  # Verwende display_speaker statt speaker!
+                line_label=line_label,
                 doc_width_pt=frame_w,
                 token_gr_style=token_gr, token_de_style=token_de, num_style=num_style, style_speaker=style_speaker,
                 gr_bold=gr_bold,
                 reserve_speaker_col=reserve_all_speakers,
                 indent_pt=indent_pt,
-                global_speaker_width_pt=global_speaker_width_pt,
-                meter_on=versmass_display and has_versmass
+                global_speaker_width_pt=current_speaker_width_pt,  # Verwende aktuelle Breite!
+                meter_on=versmass_display and has_versmass,
+                en_tokens=en_tokens
             )
-            for t2 in tables:
-                elements.append(KeepTogether([t2]))
+            # WICHTIG: Alle Tabellen eines Paares/Triplikats zusammenhalten
+            # (verhindert, dass GR/DE/EN über Seitenumbrüche getrennt werden)
+            elements.append(KeepTogether(tables))
 
             # Abstand nach jedem Textblock hinzufügen
             # Finde den nächsten relevanten Block (überspringe 'blank' und 'title_brace')

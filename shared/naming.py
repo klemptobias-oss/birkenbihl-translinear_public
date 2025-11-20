@@ -6,7 +6,7 @@ shared/naming.py
 Zentrale, einheitliche Namenslogik für PDF-Ausgaben.
 
 Varianten & Suffixe:
-- Stärke/Fettung:  NORMAL → _Normal  |  GR_FETT → _GR_Fett  |  DE_FETT → _DE_Fett
+- Stärke/Fettung:  NORMAL → _Normal  |  GR_FETT → _GR_Fett  |  LAT_FETT → _LAT_Fett  |  DE_FETT → _DE_Fett
 - Farbmodus:       COLOR  → _Colour  |  BLACK_WHITE → _BlackWhite
 - Tagmodus:        TAGS   → _Tag     |  NO_TAGS → _NoTags
 
@@ -20,7 +20,7 @@ from pathlib import Path
 from typing import Literal
 
 # ----- Typen -----
-Strength  = Literal["NORMAL", "GR_FETT", "DE_FETT"]
+Strength  = Literal["NORMAL", "GR_FETT", "LAT_FETT", "DE_FETT"]
 ColorMode = Literal["COLOR", "BLACK_WHITE"]
 TagMode   = Literal["TAGS", "NO_TAGS"]
 
@@ -65,6 +65,7 @@ def base_from_input_path(input_path: Path) -> str:
 # ----- Suffixe -----
 def _suffix_for_strength(s: Strength) -> str:
     if s == "GR_FETT": return "_GR_Fett"
+    if s == "LAT_FETT": return "_LAT_Fett"
     if s == "DE_FETT": return "_DE_Fett"
     return "_Normal"  # NORMAL
 
@@ -106,6 +107,8 @@ def parse_strength_token(token: str) -> Strength:
     tok = (token or "").strip().lower()
     if tok in {"gr_fett", "gr-fett", "grbold", "boldgr"}:
         return "GR_FETT"
+    if tok in {"lat_fett", "lat-fett", "latbold", "boldlat"}:
+        return "LAT_FETT"
     if tok in {"de_fett", "de-fett", "debold", "boldde"}:
         return "DE_FETT"
     return "NORMAL"

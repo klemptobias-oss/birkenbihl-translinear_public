@@ -1,9 +1,66 @@
-# Bytecode
-__pycache__/
-*.pyc
-
-# Editor-/OS-Kleinkram
+# OS / Editor
 .DS_Store
-.idea/
-.vscode/
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.log
+*.bak
+*.orig
+*.lock
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+
+# Node/Build-Caches
+node_modules/
+dist/
+build/
+.cache/
+
+# Große/abgeleitete Artefakte – NIEMALS pushen
+pdf/
+pdf/**
+
+pdf_drafts/**
+!pdf_drafts/**/.gitkeep
+
+Result/
+Result/**
+
+buckets/
+buckets/**
+
+zips/
+zips/**
+
+*.zip
+*.tar.gz
+*.7z
+
+Birkenbihl_text_repository/
+server.log
+
+# Lokale Einmal-/Hilfs-Skripte (nicht mehr versionieren)
+fix_layout.py
+final_swap.py
+swap_panes.py
+swap_panes_v2.py
+restructure_folders.py
+organize_birkenbihl_texts.py
+flachmacher.py
+
+# Lokale "Voll"-Adapter (nur Drafts-Adapter online nötig) ### LIEBER DOCH AUF WEBSEITE SENDEN, VIELLEICHT SIND WEBSITE ADAPTER VERALTET ODER SOWAS?
+#gr_build_poesie_adapter.py
+#gr_build_prosa_adapter.py
+#lat_build_poesie_adapter.py
+#lat_build_prosa_adapter.py
+
+# Optional: temporäre Test-Dateien
+test.html
+clear_cache.html
 

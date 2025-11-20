@@ -56,8 +56,8 @@
 
 .grid-2x2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; /* Gleicher Platz für beide Zeilen */
+  grid-template-columns: 1fr 1fr; /* 2 Spalten nebeneinander: links Entwurf, rechts PDF */
+  grid-template-rows: 1fr; /* Nur noch 1 Zeile */
   gap: 16px;
   width: 100%;
   min-height: calc(100vh - 120px);
@@ -100,12 +100,20 @@
 }
 
 /* PDF-Pane speziell - kein grauer Hintergrund */
+.pdf-pane .pane-head {
+  display: flex !important; /* Stelle sicher, dass der Header sichtbar ist */
+  position: relative;
+  z-index: 10; /* Über dem PDF-Canvas */
+  background: #f9fafb;
+}
+
 .pdf-pane .pane-body {
   padding: 0; /* Kein Padding für PDF */
   background: transparent; /* Kein grauer Hintergrund */
   height: 100%; /* Volle Höhe nutzen */
   min-height: 100%; /* Mindesthöhe für vollständige Darstellung */
   overflow: visible; /* Kein Abschneiden */
+  position: relative;
 }
 .pane-body.scroll {
   overflow: auto;
@@ -773,8 +781,8 @@ html body .pane-head:first-child .btn.primary {
 .color-bg-green {
   background-color: rgba(34, 197, 94, 0.15) !important;
 }
-.color-bg-magenta {
-  background-color: rgba(217, 70, 239, 0.15) !important;
+.color-bg-violett {
+  background-color: rgba(147, 112, 219, 0.15) !important; /* Medium Purple */
 }
 
 /* Color Checkboxes */
@@ -1128,6 +1136,36 @@ html body .pane-head:first-child .btn.primary {
   font-weight: 500 !important;
 }
 
+/* Original/Entwurf Buttons (data-opt="source") - nur aktiver Button grün */
+/* Inaktive Buttons: normale graue Farbe */
+button.pdf-option-btn[data-opt="source"],
+.pdf-toolbar button.pdf-option-btn[data-opt="source"],
+.pdf-options-group button.pdf-option-btn[data-opt="source"] {
+  background: #f3f4f6 !important;
+  background-color: #f3f4f6 !important;
+  color: #374151 !important;
+  border-color: #d1d5db !important;
+}
+
+button.pdf-option-btn[data-opt="source"]:hover,
+.pdf-toolbar button.pdf-option-btn[data-opt="source"]:hover {
+  background: #e5e7eb !important;
+  background-color: #e5e7eb !important;
+  border-color: #9ca3af !important;
+}
+
+/* Aktiver Button: Helleres Grün wie "PDF aus Entwurf erstellen" (#059669) */
+button.pdf-option-btn[data-opt="source"].active,
+.pdf-toolbar button.pdf-option-btn[data-opt="source"].active,
+.pdf-options-group button.pdf-option-btn[data-opt="source"].active {
+  background: #059669 !important;
+  background-color: #059669 !important;
+  color: white !important;
+  border-color: #059669 !important;
+  font-weight: 600 !important;
+  box-shadow: none !important; /* Kein Leucht-Effekt */
+}
+
 /* PDF-Toolbar im PDF-Fenster */
 .pdf-toolbar {
   position: sticky;
@@ -1187,8 +1225,8 @@ html body .pane-head:first-child .btn.primary {
 
 .pdf-options-row {
   justify-content: flex-start !important; /* Linksbündig statt zentriert */
-  padding-top: 4px !important;
-  border-top: 1px solid var(--edge, #e5e7eb) !important;
+  padding-top: 0 !important; /* Kein Padding, da nur noch eine Zeile */
+  border-top: none !important; /* Keine Trennlinie mehr */
 }
 
 .dark-theme .pdf-toolbar,

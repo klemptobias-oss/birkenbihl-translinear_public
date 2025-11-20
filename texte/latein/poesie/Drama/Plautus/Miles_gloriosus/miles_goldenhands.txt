@@ -1,0 +1,1486 @@
+(-28x) == Argumentum I ==
+(-28)  PROLOGUS: Meretrīcem Athēnīs Ephesum mīles āvehit.
+(-27)  PROLOGUS: Id dum erō amantī servus nūntiāre vult
+(-26)  PROLOGUS: Lēgātō peregre, ipsus captust in marī
+(-25)  PROLOGUS: Et ēīdem illī mīlitī dōnō datust.
+(-24)  PROLOGUS: Suum arcessit servus erum Athēnīs et forat
+(-23)  PROLOGUS: Geminīs commūnem clam parietem in aedibus,
+(-22)  PROLOGUS: Licēre ut quīret convenīre amantibus.
+(-21)  PROLOGUS: Obhaerentīs cūstōs hōs videt dē tēgulīs,
+(-20)  PROLOGUS: Rīdiculīs autem, quasi sit alia, lūditur.
+(-19)  PROLOGUS: Itemque impellit mīlitem Palaestriō
+(-18)  PROLOGUS: Omissam faciat concubīnam, quandō eī
+(-17)  PROLOGUS: Senis vīcīnī cupiat uxor nūbere.
+(-16)  PROLOGUS: Ultrō abeat ōrat, dōnat multa. ipse in domō
+(-15)  PROLOGUS: Senis prehēnsus poenās prō moechō luit.
+(-14x) == Argumentum Ii ==
+(-14)  PROLOGUS: Meretrīcem ingenuam dēperībat mūtuō
+(-13)  PROLOGUS: Athēniēnsis juvenis; Naupactum is domō
+(-12)  PROLOGUS: lēgātus abiit. mīles in eandem incidit,
+(-11)  PROLOGUS: dēportat Ephesum invītam. servus Atticī,
+(-10)  PROLOGUS: ut nūntiāret dominō factum, nāvigat;
+(-9)  PROLOGUS: capitur, dōnātur illī captus mīlitī.
+(-8)  PROLOGUS: ad erum ut venīret Ephesum scrībit. advolat
+(-7)  PROLOGUS: adulēscēns atque in proximō dēvertitur
+(-6)  PROLOGUS: apud hospitem paternum. medium parietem
+(-5)  PROLOGUS: perfōdit servus commeātus clanculum
+(-4)  PROLOGUS: quā foret amantum. geminam fingit mulieris
+(-3)  PROLOGUS: sorōrem adesse. mox eī dominus aedium
+(-2)  PROLOGUS: suam clientam sollicitandum ad mīlitem
+(-1)  PROLOGUS: subōrnat. capitur ille, spērat nūptiās,
+(0)  PROLOGUS: dīmittit concubīnam et moechus vāpulat.
+(1y) === Akt I ===
+(1x) == Szene I.i ==
+(1)  PYRGOPOLYNICES MILES: Cūrāte ut splendor meō sit clupeō clārior
+(2)  PYRGOPOLYNICES MILES: quam sōlis radiī esse ōlim cum sūdumst solent,
+(3)  PYRGOPOLYNICES MILES: ut, ubi ūsus veniat, contrā cōnsertā manū
+(4)  PYRGOPOLYNICES MILES: praestringat oculōrum aciem in aciē hostibus.
+(5)  PYRGOPOLYNICES MILES: nam ego hanc māchaeram mihi cōnsōlārī volō,;
+(6)  PYRGOPOLYNICES MILES: nē lāmentētur nēve animum dēspondeat,
+(7)  PYRGOPOLYNICES MILES: quia sē jam prīdem fēriātam gestitem,
+(8)  PYRGOPOLYNICES MILES: quae misera gestit fartem facere ex hostibus.
+(9)  PYRGOPOLYNICES MILES: sed ubi Artotrōgus hīc est? Stat propter virum
+(10)  ARTOTRŌGUS PARASITUS: fortem atque fortūnātum et fōrmā rēgiā;
+(11)  ARTOTRŌGUS PARASITUS: tum bellātorem Mars haud ausit dīcere
+(12)  ARTOTRŌGUS PARASITUS: neque aequiperāre suās virtūtēs ad tuās.
+(13)  PYRGOPOLYNICES MILES: Quemne ego servāvī in campīs Curculiōniīs,
+(14)  PYRGOPOLYNICES MILES: ubi Bumbomachidēs Clutomēstoridysarchidēs
+(15)  PYRGOPOLYNICES MILES: erat imperātor summus, Neptūnī nepōs?
+(16)  ARTOTRŌGUS PARASITUS: Meminī. nempe illum dīcis cum armīs aureīs,
+(17)  ARTOTRŌGUS PARASITUS: cuius tū legiōnēs difflāvistī spīritū,
+(18)  ARTOTRŌGUS PARASITUS: quasi ventus folia aut pāniculum tēctōrium.
+(19)  PYRGOPOLYNICES MILES: Istūc quidem edepol nihil est. Nihil hercle hoc quidemst
+(20)  ARTOTRŌGUS PARASITUS: praeut alia dicam quae tū numquam fēcerīs.
+(21)  ARTOTRŌGUS PARASITUS: perjūriōrem hōc hominem sī quis vīderit
+(22)  ARTOTRŌGUS PARASITUS: aut glōriārum plēniōrem quam illic est,
+(23)  ARTOTRŌGUS PARASITUS: mē sibi habētō, ego mē mancūpio dabō;
+(24)  ARTOTRŌGUS PARASITUS: nisi ūnum, epitȳrum ēstur īnsānum bene.
+(25)  PYRGOPOLYNICES MILES: Ubi tū ēs? Eccum. edepol vel elephantō in Indiā,
+(26)  ARTOTRŌGUS PARASITUS: quō pactō eī pugnō praefrēgistī bracchium.
+(27)  PYRGOPOLYNICES MILES: Quid, bracchium? Illud dīcere voluī, femur.
+(28)  PYRGOPOLYNICES MILES: At indīligenter īceram. Pol sī quidem
+(29)  ARTOTRŌGUS PARASITUS: cōnixus essēs, per corium, per vīscera
+(30)  ARTOTRŌGUS PARASITUS: perque os elephantī trānsminēret bracchium.
+(31)  PYRGOPOLYNICES MILES: Nōlō istaec hīc nunc. Nē hercle operae pretium quidemst
+(32)  ARTOTRŌGUS PARASITUS: mihi tē nārrāre tuās quī virtūtēs sciam.
+(33)  ARTOTRŌGUS PARASITUS: venter creat omnīs hāsce aerumnās: auribus
+(34)  ARTOTRŌGUS PARASITUS: peraurienda sunt, nē dentēs dentiant,
+(35)  ARTOTRŌGUS PARASITUS: et assentandumst quidquid hīc mentībitur.
+(36)  PYRGOPOLYNICES MILES: Quid illūc quod dīcō? Ehem, scio jam quid vīs dīcere.
+(37)  ARTOTRŌGUS PARASITUS: factum hercle est, meminī fierī. Quid id est? Quidquid est.
+(38)  PYRGOPOLYNICES MILES: Habēs Tabellās vīs rogāre? habeō, et stilum.
+(39)  PYRGOPOLYNICES MILES: Facētē advertis tuum animum ad animum meum.
+(40)  ARTOTRŌGUS PARASITUS: Nōvisse mōrēs tuōs mē meditātē decet
+(41)  ARTOTRŌGUS PARASITUS: cūramque adhibēre, ut praeolat mihi quod tū velīs.
+(42)  PYRGOPOLYNICES MILES: Ecquid meministī? Meminī: centum in Ciliciā
+(43)  ARTOTRŌGUS PARASITUS: et quīnquāgintā, centum in Scytholatrōniā,
+(44)  ARTOTRŌGUS PARASITUS: trīgintā Sardōs, sexāgintā Macedonēs
+(45)  ARTOTRŌGUS PARASITUS: sunt hominēs quōs tū occīdistī ūnō diē.
+(46)  PYRGOPOLYNICES MILES: Quanta istaec hominum summast? Septem mīlia.
+(47)  PYRGOPOLYNICES MILES: Tantum esse oportet. rēctē ratiōnem tenēs.
+(48)  ARTOTRŌGUS PARASITUS: At nūllōs habeō scrīptōs: sīc meminī tamen.
+(49)  PYRGOPOLYNICES MILES: Edepol memoriā ēs optumā. Offae monent.
+(50)  PYRGOPOLYNICES MILES: Dum tāle faciēs quāle adhūc, assiduō edēs,
+(51)  PYRGOPOLYNICES MILES: commūnicābō semper tē mēnsā meā.
+(52)  ARTOTRŌGUS PARASITUS: Quid in Cappadociā, ubi tū quīngentōs simul,
+(53)  ARTOTRŌGUS PARASITUS: nī hebēs māchaera foret, ūnō ictū occīderās?
+(54)  PYRGOPOLYNICES MILES: At peditastellī quia erant, sīvī vīverent.
+(55)  ARTOTRŌGUS PARASITUS: Quid tibi ego dicam, quod omnēs mortālēs sciunt,
+(56)  ARTOTRŌGUS PARASITUS: Pyrgopolynīcem tē ūnum in terrā vīvere
+(57)  ARTOTRŌGUS PARASITUS: virtūte et fōrmā et factīs invictissimum?
+(58)  ARTOTRŌGUS PARASITUS: amant tēd omnēs mulierēs, neque injūriā,
+(59)  ARTOTRŌGUS PARASITUS: quī sīs tam pulcher; vel illae quae herī palliō
+(60)  ARTOTRŌGUS PARASITUS: mē reprehendērunt. Quid eae dīxērunt tibī?
+(61)  ARTOTRŌGUS PARASITUS: Rogitābant: ‘hicine Achillēs est?’ inquit mihī.
+(62)  ARTOTRŌGUS PARASITUS: ‘immō ejus frāter’ inquam ‘est’. ibi illārum altera
+(63)  ARTOTRŌGUS PARASITUS: ‘ergō mēcastor pulcher est’ inquit mihī
+(64)  ARTOTRŌGUS PARASITUS: ‘et līberālis. vide caesariēs quam decet.
+(65)  ARTOTRŌGUS PARASITUS: ne illae sunt fortūnātae quae cum istō cubant.’
+(66)  PYRGOPOLYNICES MILES: Itane aibant tandem? Quaen mē ambae obsecrāverint,
+(67)  ARTOTRŌGUS PARASITUS: ut tē hodiē quasi pompam illā praeterdūcerem?
+(68)  PYRGOPOLYNICES MILES: Nimiast miseria nimis pulchrum esse hominem. Immō itast.
+(69)  ARTOTRŌGUS PARASITUS: molestae sunt: ōrant, ambiunt, exobsecrant
+(70)  ARTOTRŌGUS PARASITUS: vidēre ut liceat, ad sēsē arcessī jubent,
+(71)  ARTOTRŌGUS PARASITUS: ut tuō nōn liceat dare operam negōtiō.
+(72)  PYRGOPOLYNICES MILES: Vidētur tempus esse, ut eāmus ad forum,
+(73)  PYRGOPOLYNICES MILES: ut in tabellīs quōs cōnsignāvī hīc herī
+(74)  PYRGOPOLYNICES MILES: latrōnēs, ībus dēnumerem stīpendium.
+(75)  PYRGOPOLYNICES MILES: nam rēx Seleucus mē opere ōrāvit maximō,
+(76)  PYRGOPOLYNICES MILES: ut sibi latrōnēs cōgerem et cōnscrīberem.
+(77)  PYRGOPOLYNICES MILES: rēgī hunc diem mihi operam dēcrētumst dare.
+(78)  ARTOTRŌGUS PARASITUS: Age eāmus ergō. Sequiminī, satellitēs.
+(79y) === Akt II ===
+(79x) == Szene Ii.i ==
+(79)  PALAESTRIO SERVUS: Mihi ad ēnārrandum hoc argūmentum est cōmitās,
+(80)  PALAESTRIO SERVUS: sī ad auscultandum vestra erit benignitās;
+(81)  PALAESTRIO SERVUS: quī autem auscultāre nōlet, exsurgat forās,
+(82)  PALAESTRIO SERVUS: ut sīt ubi sedeat ille quī auscultāre volt.
+(83)  PALAESTRIO SERVUS: nunc quā assēdistis causā in fēstīvō locō,
+(84)  PALAESTRIO SERVUS: cōmoediāī quam nōs āctūrī sumus
+(85)  PALAESTRIO SERVUS: et argūmentum et nōmen vōbīs ēloquar.
+(86)  PALAESTRIO SERVUS: Ἀλαζών Graecē huic nōmen est cōmoediae,
+(87)  PALAESTRIO SERVUS: id nōs Latīnē glōriōsum dīcimus.
+(88)  PALAESTRIO SERVUS: hoc oppidum Ephesust; illest mīles meus erus,
+(89)  PALAESTRIO SERVUS: quī hinc ad forum abiit, glōriōsus, impudēns,
+(90)  PALAESTRIO SERVUS: stercoreus, plēnus perjūrī atque adulterī.
+(91)  PALAESTRIO SERVUS: ait sēsē ultrō omnīs mulierēs sectārier:
+(92)  PALAESTRIO SERVUS: is dērīdiculōst, quāquā incēdit, omnibus.
+(93)  PALAESTRIO SERVUS: itaque hīc meretrīcēs, labiīs dum ductant eum,
+(94)  PALAESTRIO SERVUS: majōrem partem videās valgīs sāviīs.
+(95)  PALAESTRIO SERVUS: nam ego hau diū apud hunc servitūtem serviō;
+(96)  PALAESTRIO SERVUS: id volo vōs scīre, quō modo ad hunc dēvēnerim
+(97)  PALAESTRIO SERVUS: in servitūtem ab eō cui servīvī prius.
+(98)  PALAESTRIO SERVUS: date operam, nam nunc argūmentum exōrdiar.
+(99)  PALAESTRIO SERVUS: erat erus Athēnīs mihi adulēscēns optimus;
+(100)  PALAESTRIO SERVUS: is amābat meretrīcem ācre Athēnīs Atticīs,
+(101)  PALAESTRIO SERVUS: et illa illum contrā; quī est amor cultū optimus.
+(102)  PALAESTRIO SERVUS: is pūblicē lēgātus Naupactum fuit
+(103)  PALAESTRIO SERVUS: magnāī rēī pūblicāī grātiā.
+(104)  PALAESTRIO SERVUS: interibi hic mīles forte Athēnās advenit,
+(105)  PALAESTRIO SERVUS: īnsinuat sēsē ad illam amīcam mei erī
+(106)  PALAESTRIO SERVUS: occēpit ejus mātrī suppalpārier
+(107)  PALAESTRIO SERVUS: vīnō, ōrnāmentīs opiparīsque obsōniīs,
+(108)  PALAESTRIO SERVUS: itaque intimum ibi sē mīles apud lēnam facit.
+(109)  PALAESTRIO SERVUS: ubi prīmum ēvēnit mīlitī huic occāsiō,
+(110)  PALAESTRIO SERVUS: sublinit ōs illī lēnae, mātrī mulieris,
+(111)  PALAESTRIO SERVUS: quam erus meus amābat; nam is illīus fīliam
+(112)  PALAESTRIO SERVUS: conicit in nāvem mīles clam mātrem suam,
+(113)  PALAESTRIO SERVUS: eamque hūc invītam mulierem in Ephesum advehit.
+(114)  PALAESTRIO SERVUS: ubi amīcam erīlem Athēnīs āvectam sciō,
+(115)  PALAESTRIO SERVUS: ego quantum vīvus possum mihi nāvem parō,
+(116)  PALAESTRIO SERVUS: īnscendō, ut eam rem Naupactum ad erum nūntiem.
+(117)  PALAESTRIO SERVUS: ubi sumus prōvectī in altum, fit quod dī volunt,
+(118)  PALAESTRIO SERVUS: capiunt praedōnēs nāvem illam ubi vectus fuī:
+(119)  PALAESTRIO SERVUS: prius periī quam ad erum vēnī, quō īre occēperam.
+(120)  PALAESTRIO SERVUS: ille ‹quī› mē cēpit dat mē huic dōnō mīlitī.
+(121)  PALAESTRIO SERVUS: hic postquam in aedīs mē ad sē dēdūxit domum,
+(122)  PALAESTRIO SERVUS: videō illam amīcam erilem, Athēnīs quae fuit.
+(123)  PALAESTRIO SERVUS: ubi contrā aspexit mē, oculīs mihi signum dedit,
+(124)  PALAESTRIO SERVUS: nē sē appellārem; deinde, postquam occāsiō est,
+(125)  PALAESTRIO SERVUS: conqueritur mēcum mulier fortūnās suās:
+(126)  PALAESTRIO SERVUS: ait sēsē Athēnās fugere cupere ex hāc domū,
+(127)  PALAESTRIO SERVUS: sēsē illum amāre meum erum, Athēnīs quī fuit,
+(128)  PALAESTRIO SERVUS: neque pejus quemquam ōdisse quam istum mīlitem.
+(129)  PALAESTRIO SERVUS: ego quoniam īnspexī mulieris sententiam,
+(130)  PALAESTRIO SERVUS: cēpī tabellās, cōnsignāvī, clanculum
+(131)  PALAESTRIO SERVUS: dedi mercātōrī cuidam, quī ad illum dēferat
+(132)  PALAESTRIO SERVUS: meum erum, quī Athēnīs fuerat, quī hanc amāverat,
+(133)  PALAESTRIO SERVUS: ut is hūc venīret. is nōn sprēvit nūntium;
+(134)  PALAESTRIO SERVUS: nam et vēnit et is in proximō hīc dēvertitur
+(135)  PALAESTRIO SERVUS: apud suum paternum hospitem, lepidum senem;
+(136)  PALAESTRIO SERVUS: isque illī amantī suō hospitī mōrem gerit
+(137)  PALAESTRIO SERVUS: nōsque operā cōnsiliōque adhortātur, juvat.
+(138)  PALAESTRIO SERVUS: itaque ego parāvī hīc intus magnās māchinās,
+(139)  PALAESTRIO SERVUS: quī amantīs ūnā inter sē facerem convenās.
+(140)  PALAESTRIO SERVUS: nam ūnum conclāve, concubīnae quod dedit
+(141)  PALAESTRIO SERVUS: mīles, quō nēmō nisi eapse īnferret pedem,
+(142)  PALAESTRIO SERVUS: in eō conclāvī ego perfōdī parietem,
+(143)  PALAESTRIO SERVUS: quā commeātus clam esset hinc hūc mulierī;
+(144)  PALAESTRIO SERVUS: et sene sciente hoc fēcī: is cōnsilium dedit.
+(145)  PALAESTRIO SERVUS: nam meus cōnservus est homō hau magnī pretī,
+(146)  PALAESTRIO SERVUS: quem concubīnae mīles cūstōdem addidit.
+(147)  PALAESTRIO SERVUS: eī nōs facētīs fabricīs et doctīs dolīs
+(148)  PALAESTRIO SERVUS: glaucūmam ob oculōs obiciēmus eumque ita
+(149)  PALAESTRIO SERVUS: faciēmus ut quod vīderit nē vīderit.
+(150)  PALAESTRIO SERVUS: et mox nē errētis, haec duārum hodiē vicem
+(151)  PALAESTRIO SERVUS: et hinc et illinc mulier feret imāginem,
+(152)  PALAESTRIO SERVUS: atque eadem erit, vērum alia esse assimulābitur.
+(153)  PALAESTRIO SERVUS: ita sublinētur ōs cūstōdī mulieris.
+(154)  PALAESTRIO SERVUS: sed foris concrepuit hinc ā vīcīnō sene;
+(155)  PALAESTRIO SERVUS: ipse exit: hic illest lepidus quem dīxī senex.
+(156x) == Szene Ii.ii ==
+(156)  PERIPLECTOMENUS SENEX: Nī hercle diffrēgeritis tālōs posthāc quemque in tēgulīs
+(157)  PERIPLECTOMENUS SENEX: vīderitis aliēnum, ego vestra faciam latera lōrea.
+(158)  PERIPLECTOMENUS SENEX: miquidem jam arbitrī vīcīnī sunt, meae quid fīat domī,
+(159)  PERIPLECTOMENUS SENEX: ita per impluvium intrō spectant. nunc adeō ēdīcō omnibus:
+(160)  PERIPLECTOMENUS SENEX: quemque ā mīlite hōc vīderitis hominem in nostrīs tēgulīs,
+(161)  PERIPLECTOMENUS SENEX: extrā ūnum Palaestriōnem, hūc dēturbātōte in viam.
+(162)  PERIPLECTOMENUS SENEX: quod ille gallīnam aut columbam sē sectārī aut sīmiam
+(163)  PERIPLECTOMENUS SENEX: dīcat, disperiistis nī usque ad mortem male mulcāssitis.
+(164)  PERIPLECTOMENUS SENEX: atque adeō ut nē lēgī fraudem faciant āleāriae,
+(165)  PERIPLECTOMENUS SENEX: accūrātōte ut sine tālīs domī agitent convīvium.
+(166)  PALAESTRIO SERVUS: Nescioquid malefactum ā nostrā hīc familiāst, quantum audiō:
+(167)  PALAESTRIO SERVUS: ita hic senex tālōs ēlīdī jussit cōnservīs meīs;
+(168)  PALAESTRIO SERVUS: sed mē excēpit: nihilī faciō, quid illīs faciat cēterīs.
+(169)  PALAESTRIO SERVUS: aggrediār hominem. Estne adversum hic quī advenit Palaestriō?
+(170)  PALAESTRIO SERVUS: Quid agis, Periplectomene? Hau multōs hominēs, sī optandum foret,
+(171)  PERIPLECTOMENUS SENEX: nunc vidēre et convenīre quam tē māvellem. Quid est?
+(172)  PALAESTRIO SERVUS: quid tumultuās cum nostrā familiā? Occīsī sumus.
+(173)  PALAESTRIO SERVUS: Quid negōtīst? Rēs palamst. Quae rēs palamst? Dē tēgulīs
+(174)  PERIPLECTOMENUS SENEX: modo Nescioquis īnspectāvit vestrum familiārium
+(175)  PERIPLECTOMENUS SENEX: per nostrum impluvium intus apud nōs Philocōmasium atque hospitem
+(176)  PERIPLECTOMENUS SENEX: ōsculantīs. Quis homō id vīdit? Tuus cōnservus. Quis is homōst?
+(177)  PERIPLECTOMENUS SENEX: Nesciō, ita abripuit repente sēsē subitō. Suspicor
+(178)  PALAESTRIO SERVUS: mē periisse. Ubi abīt, conclāmō: ‘heus quid agis tū’ inquam ‘in tēgulīs?’
+(179)  PERIPLECTOMENUS SENEX: ille mihi abiēns ita respondit ‘sē sectārī sīmiam.’
+(180)  PALAESTRIO SERVUS: Vae mihi miserō, cui pereundumst propter nihilī bēstiam.
+(181)  PALAESTRIO SERVUS: sed Philocōmasium hīcine etiam nunc est? Cum exībam, hīc erat.
+(182)  PALAESTRIO SERVUS: Ī sīs, jube trānsīre hūc quantum possit, sē ut videant domī
+(183)  PALAESTRIO SERVUS: familiārēs, nisi quidem illa nōs volt, quī servī sumus,
+(184)  PALAESTRIO SERVUS: propter amōrem suum omnīs crucibus contubernālīs darī.
+(185)  PERIPLECTOMENUS SENEX: Dīxī ego istūc; nisi quid aliud vīs. Volō. hoc eī dīcitō:
+(185a)  PALAESTRIO SERVUS: profectō ut nē quōquam dē ingeniō dēgrediātur muliebrī
+(186)  PALAESTRIO SERVUS: eārumque artem et disciplīnam optineat colere. Quem ad modum?
+(187)  PALAESTRIO SERVUS: Ut eum, quī hīc sē vīdit, verbīs vincat, nē is sē vīderit.
+(188)  PALAESTRIO SERVUS: siquidem centiēns hīc vīsa sit, tamen īnfitiās eat.
+(189)  PALAESTRIO SERVUS: ōs habet, linguam, perfidiam, malitiam atque audāciam,
+(189a)  PALAESTRIO SERVUS: cōnfīdentiam, cōnfirmitātem, fraudulentiam.
+(190)  PALAESTRIO SERVUS: quī arguat sē, eum contrā vincat jūrejūrandō suō:
+(191)  PALAESTRIO SERVUS: domi habet animum falsiloquum, falsificum, falsijūrium,
+(192)  PALAESTRIO SERVUS: domi dolōs, domi dēlēnifica facta, domi fallāciās.
+(193)  PALAESTRIO SERVUS: nam mulier holitōrī numquam supplicat, sī quast mala:
+(194)  PALAESTRIO SERVUS: domi habet hortum et condīmenta ad omnīs mōrēs maleficōs.
+(195)  PERIPLECTOMENUS SENEX: Ego istaec, sī erit hīc, nūntiābō. sed quid est, Palaestriō,
+(196)  PERIPLECTOMENUS SENEX: quod volūtās tūte tēcum in corde? Paulisper tacē,
+(197)  PALAESTRIO SERVUS: dum ego mihī cōnsilia in animum convocō et dum cōnsulō
+(198)  PALAESTRIO SERVUS: quid agam, quem dolum dolōsō contrā cōnservō parem,
+(199)  PALAESTRIO SERVUS: quī illam hīc vīdit ōsculantem, id vīsum ut nē vīsum siet.
+(200)  PERIPLECTOMENUS SENEX: Quaere: ego hinc abscesserō aps tē hūc interim. illūc sīs vidē,
+(201)  PERIPLECTOMENUS SENEX: quem ad modum astitit, sevērō fronte cūrāns cōgitāns.
+(202)  PERIPLECTOMENUS SENEX: pectus digitīs pultat, cor crēdō ēvocātūrust forās;
+(203)  PERIPLECTOMENUS SENEX: ecce āvertit: nīxus laevō in femine habet laevam manum,
+(204)  PERIPLECTOMENUS SENEX: dexterā digitīs ratiōnem computat, feriēns femur
+(205)  PERIPLECTOMENUS SENEX: dexterum. ita vehementer īcit: quod agat aegrē suppetit.
+(206)  PERIPLECTOMENUS SENEX: concrepuit digitīs: labōrat; crēbrō commūtat status,
+(207)  PERIPLECTOMENUS SENEX: eccere autem capite nūtat: nōn placet quod repperit.
+(208)  PERIPLECTOMENUS SENEX: quidquid est, incoctum nōn exprōmet, bene coctum dabit.
+(209)  PERIPLECTOMENUS SENEX: ecce autem aedificat: columnam mentō suffīgit suō.
+(210)  PERIPLECTOMENUS SENEX: apage, nōn placet profectō mī illaec aedificātiō;
+(211)  PERIPLECTOMENUS SENEX: nam ōs columnātum poētae esse indaudīvī barbarō,
+(212)  PERIPLECTOMENUS SENEX: cui bīnī cūstōdēs semper tōtīs hōrīs occubant.
+(213)  PERIPLECTOMENUS SENEX: eugae, euschēmē hercle astitīt et dūlicē et cōmoedicē;
+(214)  PERIPLECTOMENUS SENEX: numquam hodiē quiescet prius quam id quod petit perfēcerit.
+(215)  PERIPLECTOMENUS SENEX: habet opīnor. age sī quid agis, vigilā, nē somnō studē,
+(216)  PERIPLECTOMENUS SENEX: nisi quidem hīc agitāre māvīs varius virgīs vigiliās.
+(217)  PERIPLECTOMENUS SENEX: tibi ego dīcō. an heri maduistī? heus tē alloquor, Palaestriō:
+(218)  PERIPLECTOMENUS SENEX: vigilā inquam, expergīscere inquam, lūcet hoc inquam. Audiō.
+(219)  PERIPLECTOMENUS SENEX: Viden hostīs tibi adesse tuōque tergō obsidium? cōnsule,
+(220)  PERIPLECTOMENUS SENEX: arripe opem auxiliumque ad hanc rem: properē hoc, nōn placidē decet.
+(221)  PERIPLECTOMENUS SENEX: antevenī aliquā aliquō saltū circumdūce exercitum,
+(222)  PERIPLECTOMENUS SENEX: cōge in obsidium perduellīs, nostrīs praesidium parā;
+(223)  PERIPLECTOMENUS SENEX: interclūde inimīcīs commeātum, tibi mūnī viam
+(224)  PERIPLECTOMENUS SENEX: quā cibātus commeātusque ad tē et legiōnēs tuās
+(225)  PERIPLECTOMENUS SENEX: tūtō possit pervenīre: hanc rem age, rēs subitāria est.
+(226)  PERIPLECTOMENUS SENEX: reperī, comminīscere, cedodum calidum cōnsilium citō,
+(227)  PERIPLECTOMENUS SENEX: quae hīc sunt vīsa ut vīsa nē sint, facta infecta nē sient.
+(228)  PERIPLECTOMENUS SENEX: magnam illic homō rem incipissit, magna mūnit moenia.
+(229)  PERIPLECTOMENUS SENEX: tū ūnus sī recipere hoc ad tē dīcis, cōnfīdentiast
+(230)  PERIPLECTOMENUS SENEX: nōs inimīcōs prōfligāre posse. Dīcō et recipiō
+(231)  PALAESTRIO SERVUS: ad mē. Et ego impetrāre dīcō id quod petis. At tē Juppiter
+(232)  PALAESTRIO SERVUS: bene amet. Audēn participāre mē quod commentu's? Tacē,
+(233)  PALAESTRIO SERVUS: dum in regiōnem āstūtiārum meārum tē indūcō, ut sciās
+(234)  PALAESTRIO SERVUS: juxtā mēcum mea cōnsilia. Salva sūmēs indidem.
+(235)  PALAESTRIO SERVUS: Erus meus elephantī coriō circumtentust, nōn suō,
+(236)  PALAESTRIO SERVUS: neque habet plūs sapientiāī quam lapis. Ego istūc sciō.
+(237)  PALAESTRIO SERVUS: Nunc sīc ratiōnem incipissō, hanc īnstituam āstūtiam,
+(238)  PALAESTRIO SERVUS: ut Philocōmasiō hanc sorōrem geminam germānam alteram
+(239)  PALAESTRIO SERVUS: dīcam Athēnīs advēnisse cum amātōre aliquō suō,
+(240)  PALAESTRIO SERVUS: tam similem, quam lacte lactīst; apud tē eōs hīc dēvertier
+(241)  PALAESTRIO SERVUS: dīcam hospitiō. Eugae eugae, lepidē, laudō commentum tuum.
+(242)  PALAESTRIO SERVUS: Ut sī illīc concrīminātus sīt adversum mīlitem
+(243)  PALAESTRIO SERVUS: meus cōnservus, eam vīdisse hīc cum aliēnō ōsculārī, eam
+(244)  PALAESTRIO SERVUS: arguam vīdisse apud tē contrā cōnservum meum
+(245)  PALAESTRIO SERVUS: cum suō amātōre amplexantem atque ōsculantem. Immō optimē.
+(246)  PERIPLECTOMENUS SENEX: idem ego dīcam, sī ex mē exquīret mīles. Sed simillimās
+(247)  PALAESTRIO SERVUS: dīcitō esse, et Philocōmasiō id praecipiendum est ut sciat,
+(248)  PALAESTRIO SERVUS: nē titubet, sī exquīret ex eā mīles. Nimis doctum dolum.
+(249)  PERIPLECTOMENUS SENEX: sed sī ambās vidēre in ūnō mīles conciliō volet,
+(250)  PERIPLECTOMENUS SENEX: quid agimus? Facilest: trecentae possunt causae colligī:
+(251)  PALAESTRIO SERVUS: ‘nōn domist, abiīt ambulātum, dormīt, ōrnātur, lavat,
+(252)  PALAESTRIO SERVUS: prandet, pōtat: occupātast, operae nōn est, nōn potest,’
+(253)  PALAESTRIO SERVUS: quantum vīs prōlātiōnis, dum modo hunc prīmā viā
+(254)  PALAESTRIO SERVUS: indūcāmus, vēra ut esse crēdat quae mentībitur.
+(255)  PERIPLECTOMENUS SENEX: Placet ut dīcis. Intrō abī ergō, et sī istī est mulier, eam jubē
+(256)  PALAESTRIO SERVUS: cito domum trānsīre, atque haec eī dīce mōnstrā praecipe,
+(257)  PALAESTRIO SERVUS: ut teneat cōnsilia nostra, quem ad modum exōrsī sumus,
+(258)  PALAESTRIO SERVUS: dē geminā sorōre. Doctē tibi illam perdoctam dabō.
+(259)  PERIPLECTOMENUS SENEX: numquid aliud? Intrō ut abeās. Abeō. Et quidem ego ībō domum
+(260)  PALAESTRIO SERVUS: atque hominem investīgandō operam huic dissimulābiliter dabō,
+(261)  PALAESTRIO SERVUS: quī fuerit cōnservus quī hodiē sit sectātus sīmiam.
+(262)  PALAESTRIO SERVUS: nam ille nōn potuit quīn sermōne suō aliquem familiārium
+(263)  PALAESTRIO SERVUS: participāverit dē amīcā erī, sēsē vīdisse eam
+(264)  PALAESTRIO SERVUS: hīc in proximō ōsculantem cum aliēnō adulēscentulō.
+(265)  PALAESTRIO SERVUS: nōvī mōrem: egomet tacēre nequeō sōlus quod sciō.
+(266)  PALAESTRIO SERVUS: sī inveniō quī vīdit, ad eum vīneam pluteōsque agam:
+(267)  PALAESTRIO SERVUS: rēs parātast, vī pugnandōque hominem caperest certa rēs.
+(268)  PALAESTRIO SERVUS: sī ita nōn reperiō, ībō odōrāns quasi canis vēnāticus,
+(269)  PALAESTRIO SERVUS: usque dōnec persecūtus vulpem erō vestīgiīs.
+(270)  PALAESTRIO SERVUS: sed forēs crepuērunt nostrae, ego vōcī moderābor meae;
+(271)  PALAESTRIO SERVUS: nam illic est Philocōmasiō cūstōs meus cōnservus quī it forās.
+(272x) == Szene Ii.iii ==
+(272)  SCELEDRUS SERVUS: Nisi quidem ego hodiē ambulāvī dormiēns in tēgulīs,
+(273)  SCELEDRUS SERVUS: certō edepol scio mē vīdisse hīc proximae vīcīniae
+(274)  SCELEDRUS SERVUS: Philocōmasium erīlem amīcam sibi malam rem quaerere.
+(275)  PALAESTRIO SERVUS: Hic illam vīdit ōsculantem, quantum hunc audīvī loquī.
+(276)  SCELEDRUS SERVUS: Quis hic est? Tuus cōnservus. quid agis, Sceledre? Tē, Palaestriō,
+(277)  SCELEDRUS SERVUS: volup est convēnisse. Quid jam? aut quid negōtīst? fac sciam.
+(278)  SCELEDRUS SERVUS: Metuō Quid metuis? Nē hercle hodiē, quantum hīc familiāriumst,
+(279)  SCELEDRUS SERVUS: maxumum in malum cruciātumque insuliāmus. Tū salī
+(280)  PALAESTRIO SERVUS: sōlus, nam ego istam īnsultūram et dēsultūram nīl moror.
+(281)  SCELEDRUS SERVUS: Nescīs tū fortasse, apud nōs facinus quod nātumst novum.
+(282)  PALAESTRIO SERVUS: Quod id est facinus? Impudīcum. Tūte scias sōlī tibi,
+(283)  PALAESTRIO SERVUS: mihi nē dixīs, scīre nōlō. Nōn enim faciam quīn sciās.
+(284)  SCELEDRUS SERVUS: sīmiam hodiē sum sectātus nostram in hōrum tēgulīs.
+(285)  PALAESTRIO SERVUS: Edepol, Sceledre, homō sectātu's nihilī nēquam bēstiam.
+(286)  SCELEDRUS SERVUS: Dī tē perdant. Tē istūc aequum quoniam occēpistī, ēloquī.
+(287)  SCELEDRUS SERVUS: Forte fortūnā per impluvium hūc dēspexī in proximum,
+(288)  SCELEDRUS SERVUS: atque ego illī aspiciō ōsculantem Philocōmasium cum alterō
+(289)  SCELEDRUS SERVUS: Nescioquō adulēscente. Quod ego, Sceledre, scelus ex tē audiō?
+(290)  SCELEDRUS SERVUS: Profectō vīdī. Tūtin? Egomet duōbus hīs oculīs meīs.
+(291)  PALAESTRIO SERVUS: Abi, nōn vērisimile dīcis, neque vīdistī. Num tibī
+(292)  SCELEDRUS SERVUS: lippus videor? Medicum istūc tibi meliust percontārier.
+(293)  PALAESTRIO SERVUS: vērum enim tū istam, sī tē dī ament, temere hau tollās fābulam:
+(294)  PALAESTRIO SERVUS: tuīs nunc crūribus capitīque fraudem capitālem hinc creās.
+(295)  PALAESTRIO SERVUS: nam tibi jam ut pereās parātum est dupliciter, nisi supprimis
+(296)  PALAESTRIO SERVUS: tuum stultiloquium. Quī vērō dupliciter? Dīcam tibi.
+(297)  PALAESTRIO SERVUS: primumdum, sī falsō īnsimulās Philocōmasium, hōc perieris;
+(298)  PALAESTRIO SERVUS: iterum, sī id vērumst, tū eī cūstōs additus ‹ēō› perieris;
+(299)  SCELEDRUS SERVUS: Quid fuat mē, nesciō: haec mē vīdisse ego certō sciō.
+(300)  PALAESTRIO SERVUS: Pergin, īnfēlīx? Quid tibi vīs dicam nisi quod vīderim?
+(301)  SCELEDRUS SERVUS: quīn etiam nunc intus hīc in proximōst. Eho an nōn domīst?
+(302)  SCELEDRUS SERVUS: Vīse, abī intrō tūte, nam ego mī jam nīl crēdī postulō.
+(303)  PALAESTRIO SERVUS: Certum est facere. Hīc tē opperiam; eadem illī īnsidiās dabō,
+(304)  SCELEDRUS SERVUS: quam mox horsum ad stabulum juvenīx recipiat sē ‹ē› pābulō.
+(305)  SCELEDRUS SERVUS: quid ego nunc faciam? cūstōdem mē illī mīles addidit:
+(306)  SCELEDRUS SERVUS: nunc sī indicium faciō, interiī; ‹interiī› sī taceō tamen,
+(307)  SCELEDRUS SERVUS: sī hoc palam fuerit. quid pejus muliere aut audācius?
+(308)  SCELEDRUS SERVUS: dum ego in tēgulīs sum, illaec sē‹sē ex› hospitiō edit forās;
+(309)  SCELEDRUS SERVUS: edepol facinus fēcit audāx. hōccine sī mīles sciat,
+(310)  SCELEDRUS SERVUS: crēdō hercle hās sustollat aedīs tōtās atque hunc in crucem.
+(311)  SCELEDRUS SERVUS: hercle quidquid est, mussitābō potius quam inteream male;
+(312)  SCELEDRUS SERVUS: nōn ego possum quae ipsa sēsē vēnditat tūtārier.
+(313)  PALAESTRIO SERVUS: Sceledre, Sceledre, quis homō in terrā tē alter est audācior?
+(314)  PALAESTRIO SERVUS: quis magis dīs inimīcīs nātus quam tū atque īrātīs? Quid est?
+(315)  PALAESTRIO SERVUS: Juben tibi oculōs effodīrī, quibus id quod nusquam est vidēs?
+(316)  SCELEDRUS SERVUS: Quid, nusquam? Nōn ego tuam empsim vītam vitiōsā nuce.
+(317)  SCELEDRUS SERVUS: Quid negōtīst? Quid negōtī sit rogās? Cūr nōn rogem?
+(318)  PALAESTRIO SERVUS: Nōn tū tibi istam praetruncārī linguam largiloquam jubēs?
+(319)  SCELEDRUS SERVUS: Quam ob rem jubeam? Philocōmasium eccam domī, quam in proximō
+(320)  PALAESTRIO SERVUS: vīdisse aibās tē ōsculantem atque amplexantem cum alterō.
+(321)  SCELEDRUS SERVUS: Mīrumst loliō victitāre tē tam vīlī trīticō.
+(322)  PALAESTRIO SERVUS: Quid jam? Quia luscītiōsu's. Verberō, edepol tū quidem
+(323)  PALAESTRIO SERVUS: caecus, nōn luscītiōsu's. nam illa quidem eccam domī.
+(324)  SCELEDRUS SERVUS: Quid, domī? Domī hercle vērō. Abi, lūdis mē, Palaestriō.
+(325)  PALAESTRIO SERVUS: Tum mihi sunt manus inquinātae. Quīdum? Quia lūdō lutō.
+(326)  SCELEDRUS SERVUS: Vae capitī tuō. ‹Tuō› istūc, Sceledre, prōmittō fore,
+(327)  PALAESTRIO SERVUS: nisi oculōs ōrātiōnemque aliam commūtās tibi.
+(328)  PALAESTRIO SERVUS: sed fores concrepuērunt nostrae. At ego īlicō observō forīs;
+(329)  SCELEDRUS SERVUS: nam nihil est quā hinc hūc trānsīre ea possit nisi rēctō ōstiō.
+(330)  PALAESTRIO SERVUS: Quīn domī eccam. Nescioquae tē, Sceledre, scelera suscitant.
+(331)  SCELEDRUS SERVUS: Mihi ego videō, mihi ego sapiō, mihi ego crēdō plūrimum:
+(332)  SCELEDRUS SERVUS: mē homo nēmō dēterrēbit, quīn ea in hīs sit aedibus.
+(333)  SCELEDRUS SERVUS: hīc obsistam, nē imprūdentī hūc ea sē surrēpsit mihi.
+(334)  PALAESTRIO SERVUS: Meus illic homō est, dēturbābō jam ego illum dē pugnāculīs.
+(335)  PALAESTRIO SERVUS: vīn jam faciam, utī stultividum tē fateāre? Age face.
+(336)  PALAESTRIO SERVUS: Neque tē quicquam sapere corde neque oculīs ūtī? Volō.
+(337)  PALAESTRIO SERVUS: Nempe tu istīc ais esse erīlem concubīnam? Atque arguō
+(338)  SCELEDRUS SERVUS: eam mē vīdisse ōsculantem hīc intus cum aliēnō virō.
+(339)  PALAESTRIO SERVUS: Scīn tū nūllum commeātum hinc esse ā nōbīs? Sciō.
+(340)  PALAESTRIO SERVUS: Neque sōlārium neque hortum, nisi per impluvium? Sciō.
+(341)  PALAESTRIO SERVUS: Quid nunc? sī ea domīst, sī faciō, ut eam exīre hinc videās domō,
+(342)  PALAESTRIO SERVUS: dignun ēs verberibus multīs? Dignus. Servā istās forēs,
+(343)  PALAESTRIO SERVUS: nē tibi clam sē subterdūcat istinc atque hūc trānseat.
+(344)  SCELEDRUS SERVUS: Cōnsilium est ita facere. Pede ego jam illam hūc tibi sistam in viam.
+(345)  SCELEDRUS SERVUS: Agedum ergō face. volo scīre, utrum egon id quod vīdī vīderim
+(346)  SCELEDRUS SERVUS: an illic faciat, quod factūrum dīcit, ut ea sit domī.
+(347)  SCELEDRUS SERVUS: nam ego quidem meōs oculōs habeō nec rogō ūtendōs forīs.
+(348)  SCELEDRUS SERVUS: sed hic illī subparasītātur semper, hic eae proximust,
+(349)  SCELEDRUS SERVUS: prīmus ad cibum vocātur, prīmō pulmentum datur;
+(350)  SCELEDRUS SERVUS: nam illic noster est fortasse circiter triennium,
+(351)  SCELEDRUS SERVUS: neque cuiquam quam illīc in nostrā meliust famulō familiā.
+(352)  SCELEDRUS SERVUS: sed ego hoc quod agō, id mē agere oportet, hoc observāre ōstium.
+(353)  SCELEDRUS SERVUS: sīc obsistam. hāc quidem pol certō verba mihi numquam dabunt.
+(354x) == Szene Ii.iv ==
+(354)  PALAESTRIO SERVUS: Praecepta facitō ut meminerīs. Totiēns monēre mīrumst.
+(355)  PALAESTRIO SERVUS: At metuō ut satis sīs subdola. Cedo vel decem, ēdocēbō
+(356)  PHILOCOMASIUM MERETRIX: minimē malās ut sint malae, mihi sōlae quod superfit.
+(357)  PALAESTRIO SERVUS: Age nūnciam īnsiste in dolōs; ego abs tē procul recēdam.
+(358)  PALAESTRIO SERVUS: quid aīs tū, Sceledre? Hanc rem gerō. habeō aurīs, loquere quidvīs.
+(359)  PALAESTRIO SERVUS: Crēdō ego istōc exemplō tibi esse pereundum extrā portam,
+(360)  PALAESTRIO SERVUS: dispessīs manibus, patibulum cum habēbis. Quamnam ob rem?
+(361)  PALAESTRIO SERVUS: Respice dum ad laevam: quis illaec est mulier? Prō dī immortālēs,
+(362)  SCELEDRUS SERVUS: eri concubīnast haec quidem. Mihi quoque pol ita vidētur.
+(363)  PALAESTRIO SERVUS: age nūnciam, quandō libet Quid agam? Perīre properā.
+(364)  PHILOCOMASIUM MERETRIX: Ubi iste est bonus servus, quī probrī mē maxumī innocentem
+(365)  PHILOCOMASIUM MERETRIX: falsō īnsimulāvit? Em tibi, hic mihi dīxit tibi quae dīxī.
+(366)  PHILOCOMASIUM MERETRIX: Tūn mē vīdisse in proxumō hīc, sceleste, ais ōsculantem?
+(367)  PALAESTRIO SERVUS: Ac cum aliēnō adulēscentulō dīxit. Dīxī hercle vērō.
+(368)  PHILOCOMASIUM MERETRIX: Tūn mē vīdistī? Atque hīs quidem hercle oculīs. Carēbis, crēdō,
+(369)  PHILOCOMASIUM MERETRIX: quī plūs vident quam quod vident. Numquam hercle dēterrēbor
+(370)  SCELEDRUS SERVUS: quīn vīderim id quod vīderim. Ego stulta et mōra multum,
+(371)  PHILOCOMASIUM MERETRIX: quae cum hōc īnsānō fābuler, quem pol ego capitis perdam.
+(372)  SCELEDRUS SERVUS: Nōlī minitārī: scio crucem futūram mihi sepulchrum;
+(373)  SCELEDRUS SERVUS: ibi meī sunt majōrēs sitī, patēr, avus, proavus, abavus.
+(374)  SCELEDRUS SERVUS: nōn possunt mihi mināciīs tuīs hīsce oculī effodīrī.
+(375)  SCELEDRUS SERVUS: sed paucīs verbīs tē volō, Palaestriō. obsecrō tē,
+(376)  SCELEDRUS SERVUS: unde exīt haec? Unde nisi domō? Domō? Mē viden? Tē videō.
+(377)  SCELEDRUS SERVUS: nimis mīrumst facinus, quō modō haec hinc hūc trānsīre potuit;
+(378)  SCELEDRUS SERVUS: nam certō neque sōlāriumst apud nōs neque hortus ūllus
+(379)  SCELEDRUS SERVUS: neque fenestra nisi clatrāta; nam certē ego tē hīc intus vīdī.
+(380)  PALAESTRIO SERVUS: Pergin, sceleste, intendere hanc arguere? Ēcastor ergō
+(381)  PHILOCOMASIUM MERETRIX: mī hau falsum ēvēnit somnium, quod noctū hāc somniāvī.
+(382)  PALAESTRIO SERVUS: Quid somniāstī? Ego ēloquar. sed amābō advertite animum.
+(383)  PHILOCOMASIUM MERETRIX: hāc nocte in somnīs mea soror geminast germāna vīsa
+(384)  PHILOCOMASIUM MERETRIX: vēnisse Athēnīs in Ephesum cum suō amātōre quōdam;
+(385)  PHILOCOMASIUM MERETRIX: ī ambō hospitiō hūc in proxumum mihi dēvertisse vīsī.
+(386)  PALAESTRIO SERVUS: Palaestriōnis somnium nārrātur. perge porrō.
+(387)  PHILOCOMASIUM MERETRIX: Ego laeta vīsa, quia soror vēnisset, propter eandem
+(388)  PHILOCOMASIUM MERETRIX: suspīciōnem maximam sum vīsa sustinēre.
+(389)  PHILOCOMASIUM MERETRIX: nam arguere in somnīs mē meus mihi familiāris vīsust,
+(390)  PHILOCOMASIUM MERETRIX: mē cum aliēnō adulēscentulō, quasi nunc tū, esse ōsculātam,
+(391)  PHILOCOMASIUM MERETRIX: cum illa ōsculāta mea soror gemina esset suumpte amīcum.
+(392)  PHILOCOMASIUM MERETRIX: id mē īnsimulātam perperam falsum esse somniāvī.
+(393)  PALAESTRIO SERVUS: Satin eadem vigilantī expetunt quae in somnīs vīsa memorās?
+(394)  PALAESTRIO SERVUS: eu hercle praesēns somnium. abī intrō et comprecāre.
+(395)  PALAESTRIO SERVUS: nārrandum ego istūc mīlitī cēnsēbō. Facere certum est,
+(396)  PHILOCOMASIUM MERETRIX: neque mē quidem patiar probrī falsō impūne īnsimulātam.
+(397)  SCELEDRUS SERVUS: Timeō quid rērum gesserim, ita dorsus tōtus prūrit.
+(398)  PALAESTRIO SERVUS: Scīn tē periisse? Nunc quidem domi certō est. certa rēs est
+(399)  SCELEDRUS SERVUS: nunc nostrum observāre ōstium, ubi ubist. At, Sceledre, quaesō,
+(400)  PALAESTRIO SERVUS: ut ad id exemplum somnium quam simile somniāvit
+(401)  PALAESTRIO SERVUS: atque ut tū suspicātus ēs eam vīdisse ōsculantem.
+(402)  SCELEDRUS SERVUS: Nescioquid crēdam egomet mihī jam, ita quod vīdisse crēdō
+(403)  SCELEDRUS SERVUS: mē id jam nōn vīdisse arbitror. Nē tū hercle sērō, opīnor,
+(404)  PALAESTRIO SERVUS: resipīscēs: sī ad erum haec rēs prius praevenit perībis pulchrē.
+(405)  SCELEDRUS SERVUS: Nunc dēmum experior, mī ob oculōs cālīginem opstitisse.
+(406)  PALAESTRIO SERVUS: Dūdum edepol plānum est id quidem, quae hīc usque fuerit intus.
+(407)  SCELEDRUS SERVUS: Nihil habeō certī quid loquar: nōn vīdī eam, etsī vīdī.
+(408)  PALAESTRIO SERVUS: Nē tū edepol stultitiā tuā nōs paene perdidistī:
+(409)  PALAESTRIO SERVUS: dum tē fidēlem facere erō voluistī, absūmptu's paene.
+(410)  PALAESTRIO SERVUS: sed fores vīcīnī proxumī crepuērunt. conticīscam.
+(411x) == Szene Ii.v ==
+(411)  PHILOCOMASIUM MERETRIX: Inde ignem in āram, ut Ephesiae Diānae laeta laudēs
+(412)  PHILOCOMASIUM MERETRIX: grātīsque agam eīque ut Arabicō fūmificem odōre amoenē,
+(413)  PHILOCOMASIUM MERETRIX: cum mē in locīs Neptūniīs templīsque turbulentīs
+(414)  PHILOCOMASIUM MERETRIX: servāvit, saevīs flūctibus ubi sum afflīctāta multum.
+(415)  SCELEDRUS SERVUS: Palaestriō, ō Palaestriō. Ō Sceledre, Sceledre, quid vīs?
+(416)  SCELEDRUS SERVUS: Haec mulier, quae hinc exīt modo, estne erilis concubīna
+(417)  SCELEDRUS SERVUS: Philocōmasium, an nōn est ea? Hercle opīnor, ea vidētur.
+(418)  PALAESTRIO SERVUS: sed facinus mīrum est, quō modo haec hinc hūc trānsīre potuit,
+(419)  PALAESTRIO SERVUS: sī quidem east. An dubium tibi est eam esse hanc? Ea vidētur.
+(420)  SCELEDRUS SERVUS: Adeāmus, appellēmus. heus, quid istūc est, Philocōmasium?
+(421)  SCELEDRUS SERVUS: quid tibi istīc in istīsce aedibus dēbētur, quid negōtīst?
+(422)  SCELEDRUS SERVUS: quid nunc tacēs? tēcum loquōr. Immō edepol tūte tēcum;
+(423)  PALAESTRIO SERVUS: nam haec nīl respondet. Tē alloquor, vitī probrīque plēna,
+(424)  SCELEDRUS SERVUS: quae circum vīcīnōs vagās. Quīcum tū fābulāre?
+(425)  SCELEDRUS SERVUS: Quīcum nisi tēcum? Quis tu homō ēs, aut mēcum quid est negōtī?
+(426)  SCELEDRUS SERVUS: Mē rogās? Hem quī sim? Quīn ego hoc rogem quod nesciam?
+(427)  PALAESTRIO SERVUS: Quis ego sum igitur, sī hunc ignōrās? Mihi odiōsus, quisquis ēs,
+(428)  PHILOCOMASIUM MERETRIX: et tū et hic. Nōn nōs nōvistī? Neutrum. Metuō maximē,
+(429)  PALAESTRIO SERVUS: Quid metuis? Enim nē nōs nōsmet perdiderīmus uspiam;
+(430)  SCELEDRUS SERVUS: nam nec tē neque mē nōvisse ait haec. Persectārī hīc volō,
+(431)  PALAESTRIO SERVUS: Sceledre, nōs nostrī an aliēnī sīmus, nē dum quispiam
+(432)  PALAESTRIO SERVUS: nōs vīcīnōrum imprūdentīs aliquis immūtāverit.
+(433)  SCELEDRUS SERVUS: Certē equidem noster sum. Et pol ego. quaeris tū, mulier, malum.
+(434)  PALAESTRIO SERVUS: tibi ego dīcō, heus, Philocōmasium. Quae tē intemperiae tenent,
+(435)  PHILOCOMASIUM MERETRIX: quī mē perperam perplexō nōmine appellēs? Eho,
+(436)  PALAESTRIO SERVUS: quis igitur vocāre? Diceae nōmen est. Injūria ēs,
+(437)  SCELEDRUS SERVUS: falsum nōmen possidēre, Philocōmasium, postulās;
+(438)  SCELEDRUS SERVUS: ἄδικος ēs tū, nōn δικαία et meō erō facis injūriam.
+(439)  PHILOCOMASIUM MERETRIX: Egone? Tūne. Quae heri Athēnīs Ephesum advēnī vesperī
+(440)  PHILOCOMASIUM MERETRIX: cum meō amātōre, adulēscente Athēniēnsī? Dīc mihi,
+(441)  PALAESTRIO SERVUS: quid hic tibi in Ephesō est negōtī? Geminam germānam meam
+(442)  PHILOCOMASIUM MERETRIX: hīc sorōrem esse indaudīvī, eam vēnī quaesītum. Mala ēs.
+(443)  PHILOCOMASIUM MERETRIX: Immō ēcastor stulta multum, quae vōbīscum fābuler.
+(444)  PHILOCOMASIUM MERETRIX: abeō. Abīre nōn sinam tē. Mitte. Manifēstāria ēs.
+(445)  SCELEDRUS SERVUS: nōn omittō. At jam crepābunt mihi manūs, mālae tibi,
+(446)  PHILOCOMASIUM MERETRIX: nisi mē omittis. Quid, malum, astās? quīn retinēs altrīnsecus?
+(447)  PALAESTRIO SERVUS: Nīl moror negōtiōsum mī esse tergum. quī sciō
+(448)  PALAESTRIO SERVUS: an ista nōn sit Philocōmasium atque alia ejus similis siet?
+(449)  PHILOCOMASIUM MERETRIX: Mittis mē an nōn mittis? Immō vī atque invītam ingrātiīs,
+(450)  SCELEDRUS SERVUS: nisi voluntāte ībis, rapiam tē domum. Hosticum hoc mihi
+(451)  PHILOCOMASIUM MERETRIX: domicilium est, Athēnīs domus est Atque erus ego istam domum
+(452)  PHILOCOMASIUM MERETRIX: neque moror neque vōs quī hominēs sītis nōvī neque sciō.
+(453)  SCELEDRUS SERVUS: Lēge agitō: tē nusquam mittam, nisi dās firmātam fidem,
+(454)  SCELEDRUS SERVUS: tē hūc, sī omīserō, intrō itūram. Vī mē cōgis, quisquis ēs.
+(455)  PHILOCOMASIUM MERETRIX: dō fidem, sī omittis, istō mē intrō itūram quō jubēs.
+(456)  SCELEDRUS SERVUS: Ecce omittō. At ego abeō missa. Muliebrī fēcit fidē.
+(457)  PALAESTRIO SERVUS: Sceledre, ‹ē› manibus āmīsistī praedam. tam east quam potis
+(458)  PALAESTRIO SERVUS: nostra erīlis concubīna. vīn tū facere hoc strēnuē?
+(459)  SCELEDRUS SERVUS: Quid faciam? effer mihi māchaeram hūc intus. Quid faciēs eā?
+(460)  PALAESTRIO SERVUS: Intrō rumpam rēctā in aedīs: quemque hīc intus vīderō
+(461)  PALAESTRIO SERVUS: cum Philocōmasiō ōsculantem, eum ego obtruncābō extempulō.
+(462)  SCELEDRUS SERVUS: Vīsanest ea esse? Immō edepol plānē east. Sed quō modō
+(463)  SCELEDRUS SERVUS: dissimulābat. Abi, māchaeram hūc effer. Jam faxo hīc erit.
+(464)  PALAESTRIO SERVUS: Neque eques neque pedes profectōst quisquam tantā audāciā,
+(465)  PALAESTRIO SERVUS: quī aequē faciat cōnfīdenter quicquam quam mulier facit.
+(466)  PALAESTRIO SERVUS: ut utrubīque ōrātiōnem doctē dīvīsit suam,
+(467)  PALAESTRIO SERVUS: ut sublinitur ōs cūstōdī cautō, cōnservō meō.
+(468)  PALAESTRIO SERVUS: nimis beat quod commeātus trānstinet trāns parietem.
+(469)  SCELEDRUS SERVUS: Heus, Palaestriō, māchaerā nihil opust. Quid jam, aut quid est?
+(470)  SCELEDRUS SERVUS: Domī eccam erīlem concubīnam. Quid, domī? In lectō cubat.
+(471)  PALAESTRIO SERVUS: Edepol nē tū tibi malam rem repperistī, ut praedicās.
+(472)  SCELEDRUS SERVUS: Quid jam? Quia hanc attingere ausu's mulierem hinc ex proximō.
+(473)  SCELEDRUS SERVUS: Magis hercle metuō. Sed numquam quisquam faciet quīn soror
+(474)  PALAESTRIO SERVUS: istaec sit gemina hūjus: eam pol tū ōsculantem hīc vīderās.
+(475)  SCELEDRUS SERVUS: Id quidem palam est eam esse, ut dīcis; quid propius fuit,
+(476)  SCELEDRUS SERVUS: quam ut perīrem, sī ēlocūtus essem erō? Ergō, sī sapis,
+(477)  PALAESTRIO SERVUS: mussitābis: plūs oportet scīre servum quam loquī.
+(478)  PALAESTRIO SERVUS: ego abeō ā tē, nē quid tēcum cōnsilī commisceam,
+(479)  PALAESTRIO SERVUS: atque apud hunc erō vīcīnum; tuae mihi turbae nōn placent.
+(480)  PALAESTRIO SERVUS: erus sī veniet, sī mē quaeret, hīc erō: hinc mē arcessitō.
+(481x) == Szene Ii.vi ==
+(481)  SCELEDRUS SERVUS: Satin abiit ille neque erīlī negōtiō
+(482)  SCELEDRUS SERVUS: plūs cūrat, quasi nōn servitūtem serviat?
+(483)  SCELEDRUS SERVUS: certō illa quidem hīc nunc intus est in aedibus,
+(484)  SCELEDRUS SERVUS: nam egomet cubantem eam modo offendī domī.
+(485)  SCELEDRUS SERVUS: certum est nunc observātiōnī operam dare.
+(486)  PERIPLECTOMENUS SENEX: nōn hercle hīsce hominēs mē marem, sed fēminam
+(487)  PERIPLECTOMENUS SENEX: vīcīnī rentur esse servī mīlitis:
+(488)  PERIPLECTOMENUS SENEX: ita mē lūdificant. meamne hīc invītam hospitam,
+(489)  PERIPLECTOMENUS SENEX: quae heri hūc Athēnīs cum hospite advēnit meō,
+(490)  PERIPLECTOMENUS SENEX: tractātam et lūdificātam, ingenuam et līberam?
+(491)  SCELEDRUS SERVUS: Periī hercle, hic ad mē rēctā habet rēctam viam.
+(492)  SCELEDRUS SERVUS: metuō, illaec mihi rēs nē malō magnō fuat,
+(493)  SCELEDRUS SERVUS: quantum hunc audīvī facere verbōrum senem.
+(494)  PERIPLECTOMENUS SENEX: Accēdam ad hominem. tūn, Sceledre, hīc, scelerum caput,
+(495)  PERIPLECTOMENUS SENEX: meam lūdificāvistī hospitam ante aedīs modo?
+(496)  SCELEDRUS SERVUS: Vīcīne, auscultā quaesō. Ego auscultem tibi?
+(497)  SCELEDRUS SERVUS: Purgāre volo mē. Tūn tēd expūrgēs mihi
+(498)  PERIPLECTOMENUS SENEX: quī facinus tantum tamque indignum fēcerīs?
+(499)  PERIPLECTOMENUS SENEX: an quia latrōcināminī, arbitrāminī
+(500)  PERIPLECTOMENUS SENEX: quidvīs licēre facere vōbīs, verberō?
+(501)  SCELEDRUS SERVUS: Licetne? At ita mē dī deaeque omnēs ament,
+(502)  PERIPLECTOMENUS SENEX: nisi mihi supplicium virgārum dē tē datur
+(503)  PERIPLECTOMENUS SENEX: longum diūtinumque, ā māne ad vesperum,
+(504)  PERIPLECTOMENUS SENEX: quod meās cōnfrēgistī imbricīs et tēgulās,
+(505)  PERIPLECTOMENUS SENEX: ibi dum condignam tē sectātu's sīmiam,
+(506)  PERIPLECTOMENUS SENEX: quodque inde īnspectāvistī meum apud mē hospitem
+(507)  PERIPLECTOMENUS SENEX: amplexum amīcam, cum ōsculābātur, suam,
+(508)  PERIPLECTOMENUS SENEX: quodque concubīnam erīlem īnsimulāre ausus ēs
+(509)  PERIPLECTOMENUS SENEX: probrī pudīcam mēque summī flāgitī,
+(510)  PERIPLECTOMENUS SENEX: tum quod tractāvistī hospitam ante aedīs meās:
+(511)  PERIPLECTOMENUS SENEX: nisi mihi supplicium stimuleum dē tē datur,
+(512)  PERIPLECTOMENUS SENEX: dēdecoris plēniōrem erum faciam tuum,
+(513)  PERIPLECTOMENUS SENEX: quam magnō ventō plēnumst undārum mare.
+(514)  SCELEDRUS SERVUS: Ita sum coāctus, Periplectomene, ut nesciam
+(515)  SCELEDRUS SERVUS: utrum mē postulāre prius tēcum aequiust
+(516)  SCELEDRUS SERVUS: nisi sī istaec nōn est haec neque haec istast, mihī
+(517)  SCELEDRUS SERVUS: mē expūrigāre haec tibi vidētur aequius;
+(518)  SCELEDRUS SERVUS: sīcut etiam nunc nesciō quid vīderim:
+(519)  SCELEDRUS SERVUS: itast ista hujus similis nostrāī tua,
+(520)  SCELEDRUS SERVUS: siquidem nōn eadem est. Vīsē ad mē intrō, jam sciēs.
+(521)  SCELEDRUS SERVUS: Licetne? Quīn tē jubeō; et placidē nōscitā.
+(522)  SCELEDRUS SERVUS: Ita facere certum est. Heus, Philocōmasium, citō
+(523)  PERIPLECTOMENUS SENEX: trānscurre curriculō ad nōs, ita negōtiumst.
+(524)  PERIPLECTOMENUS SENEX: post, quandō exierit Sceledrus ā nōbīs, cito
+(525)  PERIPLECTOMENUS SENEX: trānscurritō ad vōs rūrsum curriculō domum.
+(526)  PERIPLECTOMENUS SENEX: nunc pol ego metuō nē quid īnfuscāverit.
+(527)  PERIPLECTOMENUS SENEX: sī hic nōn vidēbit mulierem, aperītur foris.
+(528)  SCELEDRUS SERVUS: Prō dī immortālēs, similiōrem mulierem
+(529)  SCELEDRUS SERVUS: magisque eandem, ut pote quae nōn sit eadem, nōn reor
+(531)  SCELEDRUS SERVUS: deōs facere posse. Quid nunc? Commeruī malum.
+(532)  PERIPLECTOMENUS SENEX: Quid igitur? eanest? Etsī east, nōn est ea.
+(533)  PERIPLECTOMENUS SENEX: Vīdistīn istam? Vīdī, et illam et hospitem,
+(534)  SCELEDRUS SERVUS: complexam atque ōsculantem. Eanest? Nescio.
+(535)  PERIPLECTOMENUS SENEX: Vīn scīre plānē? Cupiō. Abī intrō ad vōs domum
+(536)  PERIPLECTOMENUS SENEX: continuō, vide sitne istaec vestra intus. Licet,
+(537)  SCELEDRUS SERVUS: pulchrē admonuistī. jam ego ad tē exībō forās.
+(538)  PERIPLECTOMENUS SENEX: Numquam edepol hominem quemquam lūdificārier
+(539)  PERIPLECTOMENUS SENEX: magis facētē vīdī et magis mīrīs modīs.
+(540)  PERIPLECTOMENUS SENEX: sed eccum ēgreditur. Periplectomene, tē obsecrō
+(541)  SCELEDRUS SERVUS: per deōs atque hominēs perque stultitiam meam
+(542)  SCELEDRUS SERVUS: perque tua genua Quid obsecrās mē? Īnscītiae
+(543)  SCELEDRUS SERVUS: meae et stultitiae ignōscās. nunc dēmum sciō
+(544)  SCELEDRUS SERVUS: mē fuisse excordem, caecum, incōgitābilem.
+(545)  SCELEDRUS SERVUS: nam Philocōmasium eccam intus. Quid nunc, furcifer?
+(546)  PERIPLECTOMENUS SENEX: vīdistīn ambās? Vīdī. Erum exhibeās volō.
+(547)  SCELEDRUS SERVUS: Meruisse equidem mē maximum fateor malum,
+(548)  SCELEDRUS SERVUS: et tuae fēcisse mē hospitae ajō injūriam;
+(549)  SCELEDRUS SERVUS: sed meam esse erīlem concubīnam cēnsuī,
+(550)  SCELEDRUS SERVUS: cui mē cūstōdem erus addidit mīles meus.
+(551)  SCELEDRUS SERVUS: nam ex ūnō puteō similior numquam potis
+(552)  SCELEDRUS SERVUS: aqua aquāī sūmī quam haec est atque ista hospita.
+(553)  SCELEDRUS SERVUS: et mē despexe ad tē per impluvium tuum
+(554)  SCELEDRUS SERVUS: fateor. Quid nī fateāre, egō quod vīderim?
+(555)  PERIPLECTOMENUS SENEX: et ibi ōsculantem meum hospitem cum istā hospitā
+(556)  PERIPLECTOMENUS SENEX: vīdistī? Vīdī (cūr negem quod vīderim?),
+(557)  SCELEDRUS SERVUS: sed Philocōmasium mē vīdisse cēnsuī.
+(558)  PERIPLECTOMENUS SENEX: Ratun istīc mē hominem esse omnium minimī pretī,
+(559)  PERIPLECTOMENUS SENEX: sī ego mē sciente paterer vīcīnō meō
+(560)  PERIPLECTOMENUS SENEX: eam fierī apud mē tam īnsignītē injūriam?
+(561)  SCELEDRUS SERVUS: Nunc dēmum ā mē īnsipienter factum esse arbitror,
+(562)  SCELEDRUS SERVUS: cum rem cognōscō; at nōn malitiōsē tamen
+(563)  SCELEDRUS SERVUS: fēcī. Immō indignē; nam hominem servum suōs
+(564)  PERIPLECTOMENUS SENEX: domitōs habēre oportet oculōs et manūs
+(565)  PERIPLECTOMENUS SENEX: ōrātiōnemque. Egone sī post hunc diem
+(566)  SCELEDRUS SERVUS: muttīverō, etiam quod egomet certō sciam,
+(567)  SCELEDRUS SERVUS: datō excruciandum mē: egomet mē dēdam tibi;
+(568)  SCELEDRUS SERVUS: nunc hoc mī ignōsce quaesō. Vincam animum meum,
+(569)  PERIPLECTOMENUS SENEX: nē malitiōsē factum id esse aps tē arbitrer.
+(570)  PERIPLECTOMENUS SENEX: ignōscam tibi istūc. At tibi dī faciant bene.
+(571)  PERIPLECTOMENUS SENEX: Nē tū hercle, sī tē di ament, linguam comprimēs
+(572)  PERIPLECTOMENUS SENEX: posthāc, etiam illud quod sciēs nescīveris
+(573)  PERIPLECTOMENUS SENEX: nec vīderis quod vīderis. Bene mē monēs,
+(574)  SCELEDRUS SERVUS: ita facere certum est. sed satine ōrātu's? Abī.
+(575)  SCELEDRUS SERVUS: Numquid nunc aliud mē vīs? Nē mē nōverīs.
+(576)  SCELEDRUS SERVUS: Dedit hic mihi verba. quam benignē grātiam
+(577)  SCELEDRUS SERVUS: fēcit, nē īrātus esset. scio quam rem gerat:
+(578)  SCELEDRUS SERVUS: ut mīles cum extemplō ā forō adveniat domum,
+(579)  SCELEDRUS SERVUS: domi comprehendar. ūnā hic et Palaestriō
+(580)  SCELEDRUS SERVUS: mē habent vēnālem: sēnsī et jam dūdum sciō.
+(581)  SCELEDRUS SERVUS: numquam hercle ex istā nassā ego hodiē ēscam petam;
+(582)  SCELEDRUS SERVUS: nam jam aliquō aufugiam et mē occultābō aliquot diēs,
+(583)  SCELEDRUS SERVUS: dum haec cōnsilēscunt turbae atque īrae lēniunt.
+(584)  SCELEDRUS SERVUS: nam ūnī satis populō impiō meruī malī.
+(585)  SCELEDRUS SERVUS: vērum tamendem quidquid est, ībō hinc domum.
+(586)  PERIPLECTOMENUS SENEX: Illic hinc abscessit. sat edepol certō sciō,
+(587)  PERIPLECTOMENUS SENEX: occīsam saepe sapere plūs multō suem:
+(588)  PERIPLECTOMENUS SENEX: quoin id adimātur nē id quod vīdit vīderit.
+(589)  PERIPLECTOMENUS SENEX: nam illīus oculī atque aurēs atque opīniō
+(590)  PERIPLECTOMENUS SENEX: trānsfūgēre ad nōs. usque adhūc āctum est probē;
+(591)  PERIPLECTOMENUS SENEX: nimium fēstīvam mulier operam praehibuit.
+(592)  PERIPLECTOMENUS SENEX: redeō in senātum rursum; nam Palaestriō
+(593)  PERIPLECTOMENUS SENEX: domi nunc apud mē est, Sceledrus nunc autemst forīs:
+(594)  PERIPLECTOMENUS SENEX: frequēns senātus poterit nunc habērier.
+(595)  PERIPLECTOMENUS SENEX: ībō intrō, nē, dum absum, alter sortī dēfuat.
+(596y) === Akt III ===
+(596x) == Szene Iii.i ==
+(596)  PALAESTRIO SERVUS: Cohibēte intrā līmen etiam vōs parumper, Pleusiclēs,
+(597)  PALAESTRIO SERVUS: sinite mē prius perspectāre, nē uspiam īnsidiae sient
+(598)  PALAESTRIO SERVUS: concilium quod habēre volumus. nam opus est nunc tūtō locō,
+(599)  PALAESTRIO SERVUS: unde inimīcus nē quis nostrī spolia capiat cōnsilī.
+(600)  PALAESTRIO SERVUS: nam bene cōnsultum incōnsultum est, sī id inimīcīs ūsuīst,
+(601)  PALAESTRIO SERVUS: neque potest quīn, sī id inimīcīs ūsuīst, obsit tibī;
+(602)  PALAESTRIO SERVUS: nam bene cōnsultum cōnsilium surripitur saepissimē,
+(603)  PALAESTRIO SERVUS: sī minus cum cūrā aut cautēlā locus loquendī lēctus est.
+(604)  PALAESTRIO SERVUS: quippe quī, sī rescīvēre inimīcī cōnsilium tuum,
+(605)  PALAESTRIO SERVUS: tuōpte tibi cōnsiliō occlūdunt linguam et cōnstringunt manūs,
+(606)  PALAESTRIO SERVUS: atque eadem quae illīs voluistī facere, illī faciunt tibī.
+(607)  PALAESTRIO SERVUS: sed speculābor, nē quis aut hinc aut ab laevā aut dexterā
+(608)  PALAESTRIO SERVUS: nostrō cōnsiliō vēnātor assit cum aurītīs plagīs.
+(609)  PALAESTRIO SERVUS: sterilis hinc prōspectus usque ad ultumam est plateam probē.
+(610)  PALAESTRIO SERVUS: ēvocābō. heus Periplectomene et Pleusiclēs, prōgrediminī.
+(611)  PERIPLECTOMENUS SENEX: Ecce nōs tibi oboedientēs. Facilest imperium in bonīs.
+(612)  PALAESTRIO SERVUS: sed volo scīre: eōdem cōnsiliō, quod intus meditātī sumus,
+(613)  PALAESTRIO SERVUS: gerimus rem? Magis nōn potest esse ad rem ūtibile. Immo ‹enim...›
+(614)  PALAESTRIO SERVUS: quid tibi, Pleusiclēs? Quodne vōbīs placeat, displiceat mihi?
+(615)  PALAESTRIO SERVUS: quis homo sit magis meus quam tū ēs? Loquere lepidē et commodē.
+(616)  PERIPLECTOMENUS SENEX: Pol ita decet hunc facere. At hoc mē facinus miserum mācerat
+(617)  PLEUSICLES ADULESCENS: meumque cor corpusque cruciat. Quid id est quod cruciat? cedo.
+(618)  PLEUSICLES ADULESCENS: Mē tibi istūc aetātis hominī facinora puerīlia
+(619)  PLEUSICLES ADULESCENS: obicere, neque tē decōra neque tuīs virtūtibus;
+(620)  PLEUSICLES ADULESCENS: ea tē expetere ex opibus summīs mei honōris grātiā
+(621)  PLEUSICLES ADULESCENS: mihique amantī īre opitulātum atque ea tē facere facinora,
+(622)  PLEUSICLES ADULESCENS: quae istaec aetās fugere facta magis quam sectārī solet:
+(623)  PLEUSICLES ADULESCENS: eam pudet mē tibi in senectā obicere sollicitūdinem.
+(624)  PALAESTRIO SERVUS: Novo modo tu homō amās, siquidem tē quicquam quod faxīs pudet;
+(625)  PALAESTRIO SERVUS: nihil amās, umbrā ēs amantis magis quam amātor, Pleusiclēs.
+(626)  PLEUSICLES ADULESCENS: Hancine aetātem exercēre meī mē amōris grātiā?
+(627)  PERIPLECTOMENUS SENEX: Quid aīs tū? itane tibi ego videor oppidō Ācherunticus?
+(628)  PERIPLECTOMENUS SENEX: tam capulāris, tamne tibi diū videor vītam vīvere?
+(629)  PERIPLECTOMENUS SENEX: nam equidem hau sum annōs nātus praeter quīnquāgintā et quattuor,
+(630)  PERIPLECTOMENUS SENEX: clārē oculīs videō, pernīx sum pedibus, manibus mōbilis.
+(631)  PALAESTRIO SERVUS: Sī albicapillus hic, vidētur neutiquam ab ingeniō senex.
+(632)  PALAESTRIO SERVUS: inest in hōc ēmussitāta sua sibi ingenua indolēs.
+(633)  PLEUSICLES ADULESCENS: Pol id quidem experiōr ita esse ut praedicās, Palaestriō;
+(634)  PLEUSICLES ADULESCENS: nam benignitās quidem hujus oppidō adulēscentu līst.
+(635)  PERIPLECTOMENUS SENEX: Immō, hospes, magis cum perīclum faciēs, magis nōscēs meam
+(636)  PERIPLECTOMENUS SENEX: cōmitātem ergā tē amantem. Quid opus nōta nōscere?
+(637)  PERIPLECTOMENUS SENEX: Ut apud tē exemplum experiundī habeās, nē quaerās forīs;
+(638)  PERIPLECTOMENUS SENEX: nam nisi quī ipse amāvit, aegrē amantis ingenium īnspicit:
+(639)  PERIPLECTOMENUS SENEX: et ego amōris aliquantum habeō ūmōrisque etiam in corpore,
+(641)  PERIPLECTOMENUS SENEX: necdum exāruī ex amoenīs rēbus et voluptāriīs.
+(642)  PERIPLECTOMENUS SENEX: vel cavillātor facētus vel convīva commodus
+(643)  PERIPLECTOMENUS SENEX: idem erō, neque ego oblocūtor alterī in convīviō:
+(644)  PERIPLECTOMENUS SENEX: incommoditāte abstinēre mē apud convīvās commodō
+(645)  PERIPLECTOMENUS SENEX: commeminī et meam ōrātiōnis jūstam partem persequī
+(646)  PERIPLECTOMENUS SENEX: et meam partem itidem tacēre, cum aliēna est ōrātiō;
+(647)  PERIPLECTOMENUS SENEX: minimē spūtātor, screātor sum, itidem minimē mūcidus:
+(648)  PERIPLECTOMENUS SENEX: post Ephesī sum nātus, nōn enim in Āpulīs; nōn sum Animula.
+(649)  PALAESTRIO SERVUS: Ō lepidum semisenem, sī quās memorat virtūtēs habet,
+(650)  PALAESTRIO SERVUS: atque equidem plānē ēducātum in nūtrīcātū Veneriō.
+(651)  PERIPLECTOMENUS SENEX: Plūs dabō quam praedicābō ex mē venustātis tibi.
+(652)  PERIPLECTOMENUS SENEX: neque ego numquam aliēnum scortum subigitō in convīviō,
+(653)  PERIPLECTOMENUS SENEX: neque praeripiō pulpāmentum neque praevertō pōculum,
+(654)  PERIPLECTOMENUS SENEX: neque per vīnum umquam ex mē exoritur discidium in convīviō:
+(655)  PERIPLECTOMENUS SENEX: sī quis ibi est odiōsus, abeō domum, sermōnem sēgregō;
+(656)  PERIPLECTOMENUS SENEX: Venerem, amōrem amoenitātemque accubāns exerceō.
+(657)  PALAESTRIO SERVUS: Tuī quidem edepol omnēs mōrēs ad venustātem vigent,
+(658)  PALAESTRIO SERVUS: cedo trīs mī hominēs aurichalcō contrā cum istīs mōribus.
+(659)  PLEUSICLES ADULESCENS: At quidem illūc aetātis quī sit nōn inveniēs alterum
+(660)  PLEUSICLES ADULESCENS: lepidiōrem ad omnīs rēs nec quī amīcus amīcō sit magis.
+(661)  PERIPLECTOMENUS SENEX: Tūte mē ut fateāre faciam esse adulēscentem mōribus,
+(662)  PERIPLECTOMENUS SENEX: ita apud omnīs compārēbō tibi rēs benefactīs frequēns.
+(663)  PERIPLECTOMENUS SENEX: opusne erit tibi advocātō trīstī, īrācundō? ecce mē;
+(664)  PERIPLECTOMENUS SENEX: opusne lēnī? lēniōrem dīcēs quam mūtum est mare,
+(665)  PERIPLECTOMENUS SENEX: liquidiusculusque erō quam ventus est favōnius.
+(666)  PERIPLECTOMENUS SENEX: vel hilarissimum convīvam hinc indidem exprōmam tibi,
+(667)  PERIPLECTOMENUS SENEX: vel prīmārium parasītum atque obsōnātōrem optimum;
+(668)  PERIPLECTOMENUS SENEX: tum ad saltandum nōn cinaedus malacus aequēst atque ego.
+(669)  PALAESTRIO SERVUS: Quid ad illās artīs optāssis, sī optiō ēveniat tibi?
+(670)  PLEUSICLES ADULESCENS: Hujus prō meritīs ut referrī pariter possit grātia,
+(671)  PLEUSICLES ADULESCENS: tibique, quibus nunc mē esse experior summae sollicitūdinī.
+(672)  PLEUSICLES ADULESCENS: at tibi tantō sūmptuī esse mihi molestumst. Mōrus ēs.
+(673)  PERIPLECTOMENUS SENEX: nam in malā uxōre atque inimīcō sī quid sūmās, sūmptus est,
+(674)  PERIPLECTOMENUS SENEX: in bonō hospite atque amīcō quaestus est quod sūmitur
+(675)  PERIPLECTOMENUS SENEX: et quod in dīnīs rēbus sūmās sumptī sapientī lucrōst.
+(676)  PERIPLECTOMENUS SENEX: deum virtūte est tē unde hospitiō accipiam apud mē cōmiter:
+(677)  PERIPLECTOMENUS SENEX: ēs, bibe, animō obsequere mēcum atque onerā tē hilaritūdine.
+(678)  PERIPLECTOMENUS SENEX: līberae sunt aedēs, līber sum autem ego: mē volo vīvere.
+(679)  PERIPLECTOMENUS SENEX: nam mihi, deum virtūte dīcam, propter dīvitiās meās
+(680)  PERIPLECTOMENUS SENEX: licuit uxōrem dōtātam genere summō dūcere;
+(681)  PERIPLECTOMENUS SENEX: sed nōlō mī oblātrātrīcem in aedīs intrō mittere.
+(682)  PALAESTRIO SERVUS: Cūr nōn vīs? nam prōcreāre līberōs lepidumst opus.
+(683)  PERIPLECTOMENUS SENEX: Hercle vērō līberum esse tēte, id multō lepidiust.
+(684)  PALAESTRIO SERVUS: Tu homō et alterī sapienter potis ēs cōnsulere et tibi.
+(685)  PERIPLECTOMENUS SENEX: Nam bona uxor suāve ductūst, sī sit usquam gentium
+(686)  PERIPLECTOMENUS SENEX: ubi ea possit invenīrī; vērum egone eam dūcam domum,
+(687)  PERIPLECTOMENUS SENEX: quae mihi numquam hoc dīcat ‘eme, mī vir, lānam, unde tibi pallium
+(688)  PERIPLECTOMENUS SENEX: malacum et calidum cōnficiātur tunicaeque hībernae bonae,
+(689)  PERIPLECTOMENUS SENEX: nē algeās hāc hieme’ (hoc numquam verbum ex uxōre audiās),
+(690)  PERIPLECTOMENUS SENEX: vērum prius quam gallī cantent quae mē ē somnō suscitet,
+(691)  PERIPLECTOMENUS SENEX: dīcat ‘dā, mī vir, calendīs meam quī mātrem mūnerem,
+(692)  PERIPLECTOMENUS SENEX: dā quī faciam condimenta dā quod dem quinquātribus
+(693)  PERIPLECTOMENUS SENEX: praecantrīcī, conjectrīcī, hariolae atque haruspicae;
+(694)  PERIPLECTOMENUS SENEX: flāgitiumst, sī nīl mittētur quae superciliō spicit;
+(695)  PERIPLECTOMENUS SENEX: tum plicātrīcem clēmenter nōn potest quīn mūnerem;
+(696)  PERIPLECTOMENUS SENEX: jam prīdem, quia nihil abstulerit, suscēnset ceriāria;
+(697)  PERIPLECTOMENUS SENEX: tum opstetrīx expostulāvit mēcum, parum missum sibi;
+(698)  PERIPLECTOMENUS SENEX: quid? nūtrīcī nōn missūru's quicquam, quae vernās alit?’
+(699)  PERIPLECTOMENUS SENEX: haec atque hujus similia alia damnā multa mulierum
+(700)  PERIPLECTOMENUS SENEX: mē uxōre prohibent, mihi quae hujus similīs sermōnēs serat.
+(701)  PALAESTRIO SERVUS: Dī tibi propitiī sunt, nam hercle sī istam semel āmīserīs
+(702)  PALAESTRIO SERVUS: lībertātem, hau facile in eundem rursum restituēs locum.
+(703)  PLEUSICLES ADULESCENS: At illa laus est, magnō in genere et in dīvitiīs maximīs
+(704)  PLEUSICLES ADULESCENS: līberōs hominem ēducāre, generī monumentum et sibi.
+(705)  PERIPLECTOMENUS SENEX: Quandō habeō multōs cognātōs, quid opus sit mihi līberīs?
+(706)  PERIPLECTOMENUS SENEX: nunc bene vīvō et fortūnātē atque ut volō atque animō ut libet.
+(707)  PERIPLECTOMENUS SENEX: mea bona meā mortī cognātīs dīdam, inter eōs partiam.
+(708)  PERIPLECTOMENUS SENEX: i apud mē aderunt, mē cūrābunt, vīsent quid agam, ecquid velim.
+(709)  PERIPLECTOMENUS SENEX: prius quam lūcet assunt, rogitant noctū ut somnum cēperim.
+(710)  PERIPLECTOMENUS SENEX: eōs prō līberīs habēbō, quī mihi mittunt mūnera.
+(711)  PERIPLECTOMENUS SENEX: sacrificant: dant inde partem mihi majōrem quam sibi,
+(712)  PERIPLECTOMENUS SENEX: abdūcunt ad exta; mē ad sē ad prandium, ad cēnam vocant;
+(713)  PERIPLECTOMENUS SENEX: ille miserrimum sē rētur, minimum quī mīsit mihi.
+(714)  PERIPLECTOMENUS SENEX: illī inter sē certant dōnīs, egomet mēcum mussitō:
+(715)  PERIPLECTOMENUS SENEX: bona mea inhiant, mē certātim nūtrīcant et mūnerant.
+(716)  PALAESTRIO SERVUS: Nimis bonā ratiōne nimiumque ad tē et tuam vītam vidēs:
+(717)  PALAESTRIO SERVUS: et tibi sunt geminī et trigeminī, sī tē bene habēs, fīliī.
+(718)  PERIPLECTOMENUS SENEX: Pol sī habuissem, satis cēpissem miseriārum ē līberīs:
+(719)  PERIPLECTOMENUS SENEX: continuō excruciārer animī: sī eī forte fūisset febris,
+(721)  PERIPLECTOMENUS SENEX: cēnsērem ēmorī; cecidissetve ēbrius aut dē equō uspiam,
+(722)  PERIPLECTOMENUS SENEX: metuerem nē ibi diffrēgisset crūra aut cervīcēs sibi.
+(723)  PALAESTRIO SERVUS: Huic hominī dignum est dīvitiās esse et diū vītam darī,
+(724)  PALAESTRIO SERVUS: quī et rem servat et sē bene habet suīsque amīcīs ūsuī est.
+(725)  PLEUSICLES ADULESCENS: Ō lepidum caput. ita mē dī deaeque ament, aequum fuit
+(726)  PLEUSICLES ADULESCENS: deōs parāvisse, ūnō exemplō nē omnēs vītam vīverent;
+(727)  PLEUSICLES ADULESCENS: sīcuti mercī pretium statuit quī est probus agorānomus:
+(728)  PLEUSICLES ADULESCENS: quae probast mers, pretium eī statuit, prō virtūte ut vēneat,
+(729)  PLEUSICLES ADULESCENS: quae improbast, prō mercis vitiō dominum pretiō pauperet,
+(730)  PLEUSICLES ADULESCENS: itidem dīvōs dispertīsse vītam hūmānam aequum fuit:
+(731)  PLEUSICLES ADULESCENS: quī lepidē ingeniātus esset, vītam eī longinquam darent,
+(732)  PLEUSICLES ADULESCENS: quī improbī essent et scelestī, īs adimerent animam cito.
+(733)  PLEUSICLES ADULESCENS: sī hoc parāvissent, et hominēs essent minus multī malī
+(734)  PLEUSICLES ADULESCENS: et minus audācter scelesta facerent facta, et posteā,
+(735)  PLEUSICLES ADULESCENS: quī hominēs probī essent, esset īs annōna vīlior.
+(736)  PERIPLECTOMENUS SENEX: Quī deōrum cōnsilia culpet, stultus īnscītusque sit,
+(737)  PERIPLECTOMENUS SENEX: quīque eōs vituperet. nunc istīs rēbus dēsistī decet.
+(738)  PERIPLECTOMENUS SENEX: nunc volō obsōnāre, ut, hospes, tuā tē ex virtūte et meā
+(739)  PERIPLECTOMENUS SENEX: meae domī accipiam benignē, lepidē et lepidīs vīctibus.
+(740)  PLEUSICLES ADULESCENS: Nīl mē paenitet jam quantō sūmptuī fuerim tibi;
+(741)  PLEUSICLES ADULESCENS: nam hospes nūllus tam in amīcī hospitium dēvertī potest,
+(742)  PLEUSICLES ADULESCENS: quīn, ubi trīduum continuum fuerit, jam odiōsus siet;
+(743)  PLEUSICLES ADULESCENS: vērum ubi diēs decem continuōs sīt, east odiōrum Īlias:
+(744)  PLEUSICLES ADULESCENS: tam etsī dominus nōn invītus patitur, servī murmurant.
+(745)  PERIPLECTOMENUS SENEX: Serviendae servitūtī ego servōs īnstrūxī mihi,
+(746)  PERIPLECTOMENUS SENEX: hospes, nōn quī mī imperārent quibusve ego essem obnoxius:
+(747)  PERIPLECTOMENUS SENEX: sī illīs aegrēst mihi quod volup est, meō rēmigiō rem gerō,
+(748)  PERIPLECTOMENUS SENEX: tamen id quod odiōst faciendumst cum malō atque ingrātiīs.
+(749)  PERIPLECTOMENUS SENEX: nunc, quod occēpī, obsōnātum pergam. Sī certumst tibi,
+(750)  PLEUSICLES ADULESCENS: commodulum obsōnā, nē magnō sūmptū: mihi quidvīs sat est.
+(751)  PERIPLECTOMENUS SENEX: Quīn tu istanc ōrātiōnem hinc veterem atque antīquam āmovēs?
+(752)  PERIPLECTOMENUS SENEX: prōlētāriō sermōne nunc quidem, hospes, ūtere;
+(753)  PERIPLECTOMENUS SENEX: nam eī solent, quandō accubuēre, ubi cēna appositast, dīcere:
+(754)  PERIPLECTOMENUS SENEX: ‘quid opus fuit hōc ‹sumptō› sūmptū tantō nostrā grātiā?
+(755)  PERIPLECTOMENUS SENEX: īnsānīvistī hercle, nam idem hoc hominibus sat erat decem.’
+(756)  PERIPLECTOMENUS SENEX: quod eōrum causā obsōnātumst culpant et comedunt tamen.
+(757)  PALAESTRIO SERVUS: Fit pol illūc ad illūc exemplum. ut doctē et perspectē sapit.
+(758)  PERIPLECTOMENUS SENEX: Sed eīdem hominēs numquam dīcunt, quamquam appositumst ampliter:
+(759)  PERIPLECTOMENUS SENEX: ‘jubē illud dēmī; tolle hanc patinam; removē pernam, nīl moror;
+(760)  PERIPLECTOMENUS SENEX: aufer illam offam porcīnam, probus hic conger frīgidust,
+(761)  PERIPLECTOMENUS SENEX: removē, abī aufer’ nēminem eōrum haec assevērāre audiās,
+(762)  PERIPLECTOMENUS SENEX: sed prōcellunt sē et prōcumbunt dīmidiātī, dum appetunt.
+(763)  PALAESTRIO SERVUS: Bonus bene ut malōs dēscrīpsit mōrēs. hau centēsimam
+(764)  PERIPLECTOMENUS SENEX: partem dīxī atque, ōtium reī sī sit, possum exprōmere.
+(765)  PALAESTRIO SERVUS: Igitur id quod agitur, ēī hīc prīmum praevertī decet.
+(766)  PALAESTRIO SERVUS: nunc hōc animum advertite ambō. mihi opus est operā tuā,
+(767)  PALAESTRIO SERVUS: Periplectomene; nam ego invēnī lepidam sȳcophantiam,
+(768)  PALAESTRIO SERVUS: quī admutilētur mīles usque caesariātus atque utī
+(769)  PALAESTRIO SERVUS: huic amantī ac Philocōmasiō hanc efficiāmus cōpiam,
+(770)  PALAESTRIO SERVUS: ut hic eam abdūcāt habeatque. Darī istanc ratiōnem volō.
+(771)  PALAESTRIO SERVUS: At ego mī ānulum darī istunc tuum volō. Quam ad rem ūsuī est?
+(772)  PALAESTRIO SERVUS: Quandō habēbō, igitur ratiōnem meārum fabricārum dabō.
+(773)  PERIPLECTOMENUS SENEX: Ūtere, accipe. Accipe ā mē rursum ratiōnem dolī,
+(774)  PALAESTRIO SERVUS: quam īnstituī. Perpūrigātīs damus tibi ambō operam auribus.
+(775)  PALAESTRIO SERVUS: Erus meus ita magnus moechus mulierum est, ut nēminem
+(776)  PALAESTRIO SERVUS: fūisse aequē neque futūrum crēdō. Crēdō ego istūc idem.
+(777)  PALAESTRIO SERVUS: Isque Alexandrī praestāre praedicat fōrmam suam,
+(778)  PALAESTRIO SERVUS: itaque omnīs sē ultrō sectārī in Ephesō memorat mulierēs.
+(779)  PERIPLECTOMENUS SENEX: Edepol quī tē dē istō multī cupiunt nōn mentīrier,
+(780)  PERIPLECTOMENUS SENEX: sed ego ita esse ut dīcis teneō pulchrē. proin, Palaestriō,
+(781)  PERIPLECTOMENUS SENEX: quam potis tam verba cōnfer maximē ad compendium.
+(782)  PALAESTRIO SERVUS: Ecquam tū potis reperīre fōrmā lepidā mulierem,
+(783)  PALAESTRIO SERVUS: cui facētiārum cor pectusque sit plēnum et dolī?
+(784)  PERIPLECTOMENUS SENEX: Ingenuamne an lībertīnam? Aequī istūc faciō, dum modo
+(785)  PALAESTRIO SERVUS: eam dēs quae sit quaestuōsa, quae alat corpus corpore,
+(786)  PALAESTRIO SERVUS: cuique sapiat pectus; nam cor nōn potest, quod nūlla habet.
+(787)  PERIPLECTOMENUS SENEX: Lautam vīs an quae nōndum sit lauta? Sīc consucidam,
+(788)  PALAESTRIO SERVUS: quam lepidissimam potis quamque adulēscentem maximē.
+(789)  PERIPLECTOMENUS SENEX: Habeō eccillam meam clientam, meretrīcem adulēscentulam.
+(790)  PERIPLECTOMENUS SENEX: sed quid eā ūsus est? Ut ad tē eam jam dēdūcās domum
+(791)  PALAESTRIO SERVUS: itaque eam hūc ōrnātam addūcās, ex mātrōnārum modō,
+(792)  PALAESTRIO SERVUS: capite cōmptō, crīnīs vittāsque habeat, assimuletque sē
+(793)  PALAESTRIO SERVUS: tuam esse uxōrem: ita praecipiundum est. Errō quam īnsistās viam.
+(794)  PALAESTRIO SERVUS: At sciētis. sed ecqua ancillast illī? Est prīmē cata.
+(795)  PALAESTRIO SERVUS: Eā quoque opus est. ita praecipitō mulierī atque ancillulae,
+(796)  PALAESTRIO SERVUS: ut simulet sē tuam esse uxōrem et dēperīre hunc mīlitem,
+(797)  PALAESTRIO SERVUS: quasique hunc ānulum faveae suae dederit, ea porrō mihi,
+(798)  PALAESTRIO SERVUS: mīlitī ut darem, quasique ego rēī sim interpres. Audiō;
+(799)  PERIPLECTOMENUS SENEX: nē mē surdum esse verberāvit, sī audēs. ego rēctē meīs
+(799a)  PERIPLECTOMENUS SENEX: auribus ūtor
+(800)  PALAESTRIO SERVUS: eī dabō, ‹ā› tuā mī uxōre dīcam dēlātum et datum,
+(801)  PALAESTRIO SERVUS: ut sēsē ad eum conciliārem; ille ejusmodī est: cupiet miser,
+(802)  PALAESTRIO SERVUS: quī nisi adulteriō studiōsus reī nūllī aliaest improbus.
+(803)  PERIPLECTOMENUS SENEX: Nōn potuit reperīre, sī ipsī Sōlī quaerendās darēs,
+(804)  PERIPLECTOMENUS SENEX: lepidiōrēs duās ad hanc rem quam ego. habe animum bonum.
+(805)  PALAESTRIO SERVUS: Ergō accūrā, sed properē opus est. nunc tū auscultā, Pleusiclēs.
+(806)  PLEUSICLES ADULESCENS: Tibi sum oboediēns. Hoc facitō, mīles domum ubi advēnerit,
+(807)  PALAESTRIO SERVUS: meminerīs nē Philocōmasium nōminēs. Quem nōminem?
+(808)  PALAESTRIO SERVUS: Diceam. Nempe eandem quae dūdum cōnstitūtast. Pāx, abī.
+(809)  PLEUSICLES ADULESCENS: Meminerō. sed quid meminisse id rēfert, ‹rogō› ego tē tamen.
+(810)  PALAESTRIO SERVUS: Ego enim dīcam tum quandō ūsus poscet; intereā tacē,
+(811)  PALAESTRIO SERVUS: ut nunc etiam hic agit, actūtum partīs dēfendās tuās.
+(812)  PLEUSICLES ADULESCENS: Eō ego intrō igitur. Et praecepta sōbriē ut cūrēs face.
+(813x) == Szene Iii.ii ==
+(813)  PALAESTRIO SERVUS: quantās rēs turbō, quantās moveō māchinās.
+(814)  PALAESTRIO SERVUS: ēripiam ego hodiē concubīnam mīlitī,
+(815)  PALAESTRIO SERVUS: sī centuriātī bene sunt maniplārēs meī.
+(816)  PALAESTRIO SERVUS: sed illum vocābō. heus Sceledre, nisi negōtiumst,
+(817)  PALAESTRIO SERVUS: prōgredere ante aedīs, tē vocat Palaestriō.
+(818)  LUCRĪO SERVUS: Nōn operaest Sceledrō. Quid jam? Sorbet dormiēns.
+(819)  PALAESTRIO SERVUS: Quid, sorbet? Illud, stertit, voluī dīcere.
+(820)  LUCRĪO SERVUS: sed quia cōnsimile est, cum stertās, quasi sorbeās
+(821)  PALAESTRIO SERVUS: Eho an dormit Sceledrus intus? Nōn nāsō quidem,
+(822)  LUCRĪO SERVUS: nam eō magnum clāmat. tetigit calicem clanculum,
+(823)  LUCRĪO SERVUS: dum mīsit nardum in amphoram, cellārius.
+(824)  PALAESTRIO SERVUS: Eho tū sceleste, quī illī suppromu's, eho
+(826)  LUCRĪO SERVUS: Quid vīs? Quī lubitum est illī condormīscere?
+(827)  LUCRĪO SERVUS: Oculīs opīnor. Nōn tē istūc rogitō, scelus.
+(828)  PALAESTRIO SERVUS: prōcēde hūc. periistī jam, nisi vērum sciō.
+(829)  PALAESTRIO SERVUS: prōmpsistī tū illī vīnum? Nōn prōmpsī. Negās?
+(830)  LUCRĪO SERVUS: Negō hercle vērō, nam ille mē vetuit dīcere;
+(831)  LUCRĪO SERVUS: neque equidem hēmīnās octo exprōmpsī in urceum
+(832)  LUCRĪO SERVUS: neque illic calidum ēbibīt in prandium.
+(833)  PALAESTRIO SERVUS: Neque tū bibistī? Dī mē perdant, sī bibī,
+(834)  LUCRĪO SERVUS: sī bibere potuī. Quid jam? Quia enim obsorbuī;
+(835)  LUCRĪO SERVUS: nam nimis calēbat, ambūrēbat gutturem.
+(836)  PALAESTRIO SERVUS: Aliī ēbriī sunt, aliī poscam pōtitant.
+(837)  PALAESTRIO SERVUS: bonō supprōmō et prōmō cellam crēditam.
+(838)  LUCRĪO SERVUS: Tu hercle idem facerēs, sī tibi esset crēdita:
+(839)  LUCRĪO SERVUS: quoniam aemulārī nōn licet, nunc invidēs.
+(841)  PALAESTRIO SERVUS: Eho an umquam prōmpsit antehāc? respondē, scelus.
+(842)  PALAESTRIO SERVUS: atque ut tū scīre possīs, ‹ego› dīcō tibi:
+(843)  PALAESTRIO SERVUS: sī falsa dīcēs, Lucriō, excruciābere.
+(844)  LUCRĪO SERVUS: Ita vērō? ut tū ipse mē dīxisse dēlicēs,
+(845)  LUCRĪO SERVUS: post ē sagīnā ego ēiciar cellāriā,
+(846)  LUCRĪO SERVUS: ut tibi, sī promptēs, alium supprōmum parēs.
+(847)  PALAESTRIO SERVUS: Nōn edepol faciam. age ēloquere audācter mihi.
+(848)  LUCRĪO SERVUS: Numquam edepol vīdī prōmere. vērum hoc erat:
+(849)  LUCRĪO SERVUS: mihi imperābat, ego prōmēbam posteā.
+(850)  PALAESTRIO SERVUS: Hōc illī crēbrō capite sistēbant cadī.
+(851)  LUCRĪO SERVUS: Nōn hercle tam istōc validē cassābant cadī;
+(852)  LUCRĪO SERVUS: sed in cellā erat paulum nimis loculī lūbricī,
+(853)  LUCRĪO SERVUS: ibi erat bilībris aula sīc propter cadōs,
+(854)  LUCRĪO SERVUS: ea saepe deciēns complēbātur: vīdī eam
+(855)  LUCRĪO SERVUS: plēnam atque inānem fierī, plēnam maximē;
+(856)  LUCRĪO SERVUS: ubi bacchābātur aula, cassābant cadī.
+(857)  PALAESTRIO SERVUS: Abī, abī intrō jam. vōs in cellā vīnāriā
+(858)  PALAESTRIO SERVUS: bacchānal facitis. jam hercle ego erum addūcam ā forō.
+(859)  LUCRĪO SERVUS: Periī, excruciābit mē erus, domum sī vēnerit,
+(860)  LUCRĪO SERVUS: cum haec facta scībit, quia sibī nōn dīxerim.
+(861)  LUCRĪO SERVUS: fugiam hercle aliquō atque hoc in diem extollam malum.
+(862)  LUCRĪO SERVUS: nē dīxerītis, obsecrō, huic, vestram fidem.
+(863)  PALAESTRIO SERVUS: Quō tu abīs? Missus sum aliquō: jam hūc revēnerō.
+(864)  PALAESTRIO SERVUS: Quis mīsit? Philocōmasium. Abī, āctūtum redī.
+(865)  LUCRĪO SERVUS: Quaesō tamen tū meam partem, īnfortūnium
+(866)  LUCRĪO SERVUS: sī dīvidētur, mē absente accipitō tamen.
+(867)  PALAESTRIO SERVUS: Modo intellēxī quam rem mulier gesserit:
+(868)  PALAESTRIO SERVUS: quia Sceledrus dormit, hunc subcustodem suum
+(869)  PALAESTRIO SERVUS: foras ablēgāvit, dum ab sē hūc trānsīret. placet.
+(870)  PALAESTRIO SERVUS: sed Periplectomenus quam eī mandāvī mulierem
+(871)  PALAESTRIO SERVUS: nimis lepidā fōrmā dūcit. dī hercle hanc rem adjuvant.
+(872)  PALAESTRIO SERVUS: quam dignē ōrnāta incēdit, hau meretrīciē.
+(873)  PALAESTRIO SERVUS: lepidē hoc succēdit sub manūs negōtium.
+(874x) == Szene Iii.iii ==
+(874)  PERIPLECTOMENUS SENEX: Rem omnem tibi, Acroteleutium, tibique ūnā, Milphidippa,
+(875)  PERIPLECTOMENUS SENEX: domi dēmōnstrāvī in ōrdine. hanc fabricam fallāciāsque
+(876)  PERIPLECTOMENUS SENEX: minus sī tenētis, dēnuō volo percipiātis plānē;
+(877)  PERIPLECTOMENUS SENEX: satis sī intellegitis, aliud est quod potius fābulēmur.
+(878)  ACRŌTELEUTIUM MERETRIX: Stultitia atque īnsipientia mea istaec sit, mī patrōne,
+(879)  ACRŌTELEUTIUM MERETRIX: mē īre in opus aliēnum aut ibī meam operam pollicitārī,
+(880)  ACRŌTELEUTIUM MERETRIX: sī ea in opificīnā nesciam aut mala esse aut fraudulenta.
+(881)  PERIPLECTOMENUS SENEX: At meliust ‹com›monērier. Meretrīcem commonērī,
+(882)  ACRŌTELEUTIUM MERETRIX: quam sānē magnī rēferat, nīl clam est. quīn egomet ultrō,
+(883)  ACRŌTELEUTIUM MERETRIX: postquam adbibēre aurēs meae tuam ōram ōrātiōnis,
+(884)  ACRŌTELEUTIUM MERETRIX: tibi dīxī, mīles quem ad modum potisset deasciārī.
+(885)  PERIPLECTOMENUS SENEX: At nēmō sōlus satis sapit. nam ego multōs saepe vīdī
+(886)  PERIPLECTOMENUS SENEX: regiōnem fugere cōnsilī prius quam repertam habērent.
+(887)  ACRŌTELEUTIUM MERETRIX: Sī quid faciendum est mulierī male atque malitiōsē,
+(888)  ACRŌTELEUTIUM MERETRIX: ea sibi immortālis memoriast meminisse et sempiterna;
+(889)  ACRŌTELEUTIUM MERETRIX: sīn bene quid aut fidēliter faciendumst eō dēveniunt,
+(890)  ACRŌTELEUTIUM MERETRIX: oblīviōsae extempulō ut fīant, meminisse nequeunt.
+(891)  PERIPLECTOMENUS SENEX: Ergō istūc metuō, cum venit vōbīs faciundum utrumque:
+(892)  PERIPLECTOMENUS SENEX: nam id prōderit mihi, mīlitī male quod faciētis ambae.
+(893)  ACRŌTELEUTIUM MERETRIX: Dum nescientēs quod bonum faciāmus, nē formīda.
+(894)  PERIPLECTOMENUS SENEX: Mala mille merēs. St! Nē pavē, pejōribus conveniunt.
+(896)  PERIPLECTOMENUS SENEX: Ita vōs decet. cōnsequiminī. Cessō ego illīs obviam īre?
+(897)  PALAESTRIO SERVUS: venīre salvum gaudeō, lepidē hercle ōrnātus cēdis.
+(898)  PERIPLECTOMENUS SENEX: Bene opportūnēque obviam ēs, Palaestriō. em tibi assunt
+(899)  PERIPLECTOMENUS SENEX: quās mē jussistī addūcere et quō ōrnātū. eu, noster estō.
+(900)  PALAESTRIO SERVUS: Palaestriō Acroteleutium salūtat. Quis hic amābō est,
+(901)  ACRŌTELEUTIUM MERETRIX: quī tam prō nōtā nōminat mē? Hic noster architectust.
+(902)  ACRŌTELEUTIUM MERETRIX: Salvē, architecte. Salva sīs. sed dīc mihi, ecquid hic tē
+(903)  PALAESTRIO SERVUS: onerāvit praeceptīs? Probē meditātam utramque dūcō.
+(904)  PALAESTRIO SERVUS: Audīre cupiō, quem ad modum; nē quid peccētis paveō.
+(905)  PERIPLECTOMENUS SENEX: Ad tua praecepta dē meō nihil hīs novum apposīvī.
+(906)  ACRŌTELEUTIUM MERETRIX: Nempe lūdificārī mīlitem tuum erum vīs? Ēlocūta ēs.
+(907)  ACRŌTELEUTIUM MERETRIX: Lepidē et sapienter, commodē et facētē rēs parātast.
+(908)  PALAESTRIO SERVUS: Atque hujus uxōrem ‹esse› tē volō assimulāre. Fīat.
+(909)  PALAESTRIO SERVUS: Quasi mīlitī animum adjēcerīs, simulāre. Sīc futūrum est.
+(910)  PALAESTRIO SERVUS: Quasique ea rēs per mē interpretem et tuam ancillam eī cūrētur.
+(911)  ACRŌTELEUTIUM MERETRIX: Bonus vātēs poterās esse, nam quae sunt futūra dīcis.
+(912)  PALAESTRIO SERVUS: Quasique ānulum hunc ancillula tua abs tē dētulerit ad mē,
+(913)  PALAESTRIO SERVUS: quem ego mīlitī ‹porrō› darem tuīs verbīs. Vēra dīcis.
+(914)  PERIPLECTOMENUS SENEX: Quid istīs nunc memorātīs opust quae commeminēre? Meliust.
+(915)  ACRŌTELEUTIUM MERETRIX: nam, mī patrōne, hoc cōgitātō, ubi probus est architectus,
+(916)  ACRŌTELEUTIUM MERETRIX: bene līneātam sī semel carīnam collocāvit,
+(917)  ACRŌTELEUTIUM MERETRIX: facile esse nāvem facere, ubī fundāta, cōnstitūtast.
+(918)  ACRŌTELEUTIUM MERETRIX: nunc haec carīna satis probē fundāta, bene statūtast,
+(919)  ACRŌTELEUTIUM MERETRIX: assunt fabrī architecticī ad eam rem haud imperītī.
+(920)  ACRŌTELEUTIUM MERETRIX: sī nōn nōs māteriārius remorātur, quod opus quī det
+(921)  ACRŌTELEUTIUM MERETRIX: (nōvī indolem nostrī ingenī), citō erit parāta nāvis.
+(922)  PALAESTRIO SERVUS: Nempe tū nōvistī mīlitem meum erum? Rogāre mīrumst.
+(923)  ACRŌTELEUTIUM MERETRIX: populī odium quidnī nōverim, magnidicum, cincinnātum,
+(924)  ACRŌTELEUTIUM MERETRIX: moechum unguentātum. Num ille tē nam nōvit? Numquam vīdit:
+(925)  ACRŌTELEUTIUM MERETRIX: quī nōverit mē quis ego sim? Nimis lepidē fābulāre;
+(926)  PALAESTRIO SERVUS: eō pote fuerit lepidius pol fierī. Potin ut hominem
+(927)  ACRŌTELEUTIUM MERETRIX: mihi dēs, quiescās cētera? nī lūdificāta lepidē
+(928)  ACRŌTELEUTIUM MERETRIX: ero, culpam omnem in mē impōnitō. Age igitur intrō abīte,
+(929)  PALAESTRIO SERVUS: īnsistite hoc negōtium sapienter. Alia cūrā.
+(930)  PALAESTRIO SERVUS: Age, Periplectomene, hās nūnciam dūc intrō; ego ad forum illum
+(931)  PALAESTRIO SERVUS: conveniam atque illī hunc ānulum dabō, atque praedicābō
+(932)  PALAESTRIO SERVUS: ā tua uxōre mihi datum esse eamque illum dēperīre.
+(933)  PALAESTRIO SERVUS: hanc ad nōs, cum extemplō ā forō veniēmus, mittitōte,
+(934)  PALAESTRIO SERVUS: quasi clanculum ad eum missa sit. Faciēmus. alia cūrā.
+(935)  PALAESTRIO SERVUS: Vōs modo cūrāte, ego illum probē jam onerātum hūc acciēbō.
+(936)  PERIPLECTOMENUS SENEX: Bene ambulā, bene rem gerās. egone hoc sī efficiam plānē,
+(937)  PERIPLECTOMENUS SENEX: ut concubīnam mīlitis meus hospes habeat hodiē
+(938)  PERIPLECTOMENUS SENEX: atque hinc Athēnās āvehat, sī hodiē hunc dolum dolāmus,
+(939)  PERIPLECTOMENUS SENEX: quid tibi ego mittam mūneris! Datne ab sē mulier operam?
+(941)  PERIPLECTOMENUS SENEX: Lepidissume et compsissimē. Cōnfīdō cōnfutūrum.
+(942)  ACRŌTELEUTIUM MERETRIX: ubi facta erit collātiō nostrārum malitiārum,
+(943)  ACRŌTELEUTIUM MERETRIX: hau vereor nē nōs subdolā perfidiā pervincāmur.
+(944)  PERIPLECTOMENUS SENEX: Abeāmus ergō intrō, haec utī meditēmur cōgitātē,
+(945)  PERIPLECTOMENUS SENEX: ut accūrātē et commodē hoc quod agendumst exsequāmur,
+(946)  PERIPLECTOMENUS SENEX: nē quid, ubi mīles vēnerit, titubētur. Tū morāre.
+(947x) === Akt 4 ===
+(947)  PYRGOPOLYNICES MILES: Volup est, quod agās, sī id prōcēdit lepidē at‹que ex› sententiā;
+(948)  PYRGOPOLYNICES MILES: nam ego hodiē ad Seleucum rēgem mīsī parasītum meum,
+(949)  PYRGOPOLYNICES MILES: ut latrōnēs quōs condūxī hinc ad Seleucum dūceret,
+(950)  PYRGOPOLYNICES MILES: quī ejus rēgnum tūtārentur, mihi dum fieret ōtium
+(951)  PALAESTRIO SERVUS: Quīn tū tuam rem cūrā potius quam Seleucī, quae tibi
+(952)  PALAESTRIO SERVUS: condiciō nova et lūculenta fertur per mē interpretem.
+(953)  PYRGOPOLYNICES MILES: Immō omnīs rēs posteriōrēs pōnō atque operam dō tibi.
+(954)  PYRGOPOLYNICES MILES: loquere: aurīs meās profectō dēdō in diciōnem tuam.
+(955)  PALAESTRIO SERVUS: Circumspicedum, nē quis nostrō hīc auceps sermōnī siet.
+(956)  PALAESTRIO SERVUS: nam hoc negōtī clandestīnō ut agerem mandātumst mihi.
+(957)  PYRGOPOLYNICES MILES: Nēmō adest. Hunc arrabōnem amōris prīmum ā mē accipe.
+(958)  PYRGOPOLYNICES MILES: Quid hic? unde est? Ā lūculentā ac fēstīvā fēminā,
+(959)  PALAESTRIO SERVUS: quae tē amat tuamque expetessit pulchram pulchritūdinem;
+(960)  PALAESTRIO SERVUS: ejus nunc mī ānulum ad tē ancilla porrō ut dēferrem dedit.
+(961)  PYRGOPOLYNICES MILES: Quid ea? ingenuan an festūca facta ē servā līberast?
+(962)  PALAESTRIO SERVUS: Vāh, egone ut ad tē ab lībertīnā esse audērem internūntius,
+(963)  PALAESTRIO SERVUS: quī ingenuīs satis respōnsāre nequeās quae cupiunt tuī?
+(964)  PYRGOPOLYNICES MILES: Nūptan est an vidua? Et nūpta et vidua. Quō pactō potis
+(966)  PYRGOPOLYNICES MILES: nūpta et vidua esse eadem? Quia adulēscēns nūptast cum sene.
+(967)  PYRGOPOLYNICES MILES: Eugae. Lepidā et līberālī fōrmāst. Cave mendācium.
+(968)  PALAESTRIO SERVUS: Ad tuam fōrmam illa ūna dignast. Hercle pulchram praedicās.
+(969)  PYRGOPOLYNICES MILES: sed quis east? Senis hujus uxor Periplectomenī ē proximō;
+(970)  PALAESTRIO SERVUS: ea dēmoritur tē atque ab illō cupit abīre: ōdit senem.
+(971)  PALAESTRIO SERVUS: nunc tē ōrāre atque obsecrāre jussit, ut eam cōpiam
+(972)  PALAESTRIO SERVUS: sibi potestātemque faciās. Cupiō hercle equidem, sī illa volt.
+(973)  PALAESTRIO SERVUS: Quae cupit? Quid illā faciēmus concubīnā, quae domīst?
+(974)  PALAESTRIO SERVUS: Quīn tū illam jube abs tē abīre quō libet: sīcut soror
+(975)  PALAESTRIO SERVUS: ejus hūc gemina vēnit Ephesum et māter, accersuntque eam.
+(976)  PYRGOPOLYNICES MILES: Eho tū, advēnit Ephesum māter ejus? Ājunt quī sciunt.
+(977)  PYRGOPOLYNICES MILES: Hercle occāsiōnem lepidam, ut mulierem exclūdam forās.
+(978)  PALAESTRIO SERVUS: Immō vīn tū lepidē facere? Loquere et cōnsilium cedo.
+(979)  PALAESTRIO SERVUS: Vīn tū illam āctūtum āmovēre, ā tē ut abeat per grātiam?
+(980)  PYRGOPOLYNICES MILES: Cupiō. Tum tē hoc facere oportet. tibi dīvitiārum affatimst:
+(981)  PALAESTRIO SERVUS: jube sibi aurum atque ōrnāmenta, quae illī instruxtī mulierī,
+(982)  PALAESTRIO SERVUS: dōnō habēre, ‹abīre›, auferre abs tē quō lubeat sibī.
+(983)  PYRGOPOLYNICES MILES: Placet ut dīcis; sed ne istanc āmittam et haec mūtet fidem
+(984)  PYRGOPOLYNICES MILES: vide modō. Vāh dēlicātu's, quae tē tamquam oculōs amet.
+(985)  PYRGOPOLYNICES MILES: Venus mē amat. St tacē, aperiuntur fores, concēde hūc clanculum.
+(986)  PALAESTRIO SERVUS: haec celox illīust, quae hinc ēgreditur, internūntia,
+(987)  PYRGOPOLYNICES MILES: Quae haec celox? Ancillula illīust, quae hinc ēgreditur forās.
+(988)  PALAESTRIO SERVUS: quae ānulum istunc attulit quem tibi dedī. Edepol haec quidem
+(989)  PYRGOPOLYNICES MILES: bellulast. Pithēcium haec est prae illā et spinturnīcium.
+(990)  PALAESTRIO SERVUS: viden tū illam oculīs vēnātūram facere atque aucupium auribus?
+(991x) == Szene Iv.ii ==
+(991)  MILPHIDIPPA ANCILLA: Jam est ante aedīs circus ubi sunt lūdī faciendī mihi.
+(992)  MILPHIDIPPA ANCILLA: dissimulābō, hōs quasi nōn videam neque esse hīc etiamdum sciam.
+(993)  PYRGOPOLYNICES MILES: Tace, subauscultēmus ecquid dē mē fīat mentiō.
+(994)  MILPHIDIPPA ANCILLA: Numquis hic prope adest quī rem aliēnam potius cūret quam suam,
+(995)  MILPHIDIPPA ANCILLA: quī aucupet mē quid agam, quī dē vesperī vīvat suō?
+(996)  MILPHIDIPPA ANCILLA: eōs nunc hominēs metuō, mihi nē obsint nēve opstent uspiam,
+(997)  MILPHIDIPPA ANCILLA: domo sī bītant, dum hūc transbītat, quae hujus cupiēns corporīst,
+(998)  MILPHIDIPPA ANCILLA: quae amat hunc hominem nimium lepidum et nimiā pulchritūdine,
+(999)  MILPHIDIPPA ANCILLA: mīlitem Pyrgopolynīcem. Satin haec quoque mē dēperit?
+(1000)  PYRGOPOLYNICES MILES: meam laudat speciem. edepol hujus sermō hau cinerem quaeritat.
+(1001)  PALAESTRIO SERVUS: Quō argūmentō? Quia enim loquitur lautē et minimē sordidē.
+(1002)  PALAESTRIO SERVUS: Quidquid istaec dē tē loquitur: nihil attrectat sordidī.
+(1003)  PYRGOPOLYNICES MILES: Tum autem illa ipsa est nimium lepida nimisque nitida fēmina.
+(1004)  PYRGOPOLYNICES MILES: hercle vērō jam allubēscit prīmulum, Palaestriō.
+(1005)  PALAESTRIO SERVUS: Priusne quam illam oculīs tu Videōn id quod crēdō tibi?
+(1006)  PYRGOPOLYNICES MILES: tum haec celocula autem illā absente subigit mē ut amem. Hercle hanc quidem
+(1007)  PALAESTRIO SERVUS: nīl tū amāssis; mī haec dēspōnsast: tibi sī illa hodiē nūpserit,
+(1008)  PALAESTRIO SERVUS: ego hanc continuō uxōrem dūcam. Quid ergō hanc dubitās colloquī?
+(1009)  PALAESTRIO SERVUS: Sequere hāc mē ergō. Pedisequus tibi sum. Utinam, cujus grātiā
+(1010)  MILPHIDIPPA ANCILLA: foras sum ēgressa, conveniundī mihi potestās ēvenat.
+(1011)  PALAESTRIO SERVUS: Erit, et tibi exoptātum optinget, bonum habe animum, nē formīdā;
+(1012)  PALAESTRIO SERVUS: homo quīdamst quī scit, quod quaeris ubī sit. Quem ego hīc audīvī?
+(1013)  PALAESTRIO SERVUS: Socium tuōrum conciliōrum et participem cōnsiliōrum.
+(1014)  MILPHIDIPPA ANCILLA: Tum pol ego id quod cēlō hau cēlō. Immō et cēlās et nōn cēlās.
+(1015)  MILPHIDIPPA ANCILLA: Quō argūmentō? Īnfīdōs cēlās: ego sum tibi firmē fīdus.
+(1016)  MILPHIDIPPA ANCILLA: Cedo signum, sī hārunc Bacchārum ēs. Amat mulier quaedam quendam.
+(1017)  MILPHIDIPPA ANCILLA: Pol istūc quidem multae. At nōn multae dē digitō dōnum mittunt.
+(1018)  MILPHIDIPPA ANCILLA: Enim cognōvī nunc, fēcistī modo mī ex prōclīvō plānum.
+(1019)  MILPHIDIPPA ANCILLA: sed hic numquis adest? Vel adest vel nōn. Cedo tē mihi sōlae sōlum.
+(1020)  PALAESTRIO SERVUS: Brevin an longinquō sermōnī? Tribus verbīs. Jam ad tē redeō.
+(1021)  PYRGOPOLYNICES MILES: Quid ego? hīc astābō tantisper cum hāc fōrmā et factīs frūstrā?
+(1022)  PALAESTRIO SERVUS: Patere atque āstā, tibi ego hanc dō operam. Properādum, standō excrucior.
+(1023)  PALAESTRIO SERVUS: Pedetemptim (tū haec scīs) tractāre solēs hāsce hujus modi mercīs.
+(1024)  PYRGOPOLYNICES MILES: Age age ut tibi maxume concinnumst. Nūllumst hōc stolidius saxum.
+(1025)  PALAESTRIO SERVUS: redeō ad tē. quid mē voluistī? Quō pactō hoc Ilium appellī
+(1026)  MILPHIDIPPA ANCILLA: velis, ut ferrem abs tē cōnsilium. Quasi hunc dēpereat Teneō istūc.
+(1027)  PALAESTRIO SERVUS: collaudātō fōrmam et faciem et virtūtēs commemorātō.
+(1028)  MILPHIDIPPA ANCILLA: Ad eam rem habeō omnem aciem, tibi utī dūdum jam dēmōnstrāvī.
+(1029)  PALAESTRIO SERVUS: Tū cētera cūrā et contemplā et dē meīs vēnātor verbīs.
+(1030)  PYRGOPOLYNICES MILES: Aliquam mihi partem hodiē operae dēs dēnique, tandem ades, remelīgō
+(1031)  PALAESTRIO SERVUS: Assum, impera, sī quid vīs. Quid illaec nārrat tibi? Lāmentārī
+(1032)  PALAESTRIO SERVUS: ait illam, miseram cruciārī et lacrimantem sē afflīctāre,
+(1033)  PALAESTRIO SERVUS: quia tīs egeat, quia tē careat. ob eam rem hūc ad tē missast.
+(1034)  PYRGOPOLYNICES MILES: Jubē adīre. At scīn quid tū faciās? facitō fastīdī plēnum,
+(1035)  PALAESTRIO SERVUS: quasi nōn libeat; mē inclāmātō, quia sīc tē vulgō vulgem.
+(1036)  PYRGOPOLYNICES MILES: Meminī et praeceptīs pārēbō. Vocon ergō hanc quae tē quaerit?
+(1037)  PYRGOPOLYNICES MILES: Adeat, sī quid volt. Sī quid vīs, adi, mulier. Pulcher, salvē.
+(1038)  PYRGOPOLYNICES MILES: Meum cognōmentum commemorat dī tibi dent quaecumque optēs.
+(1039)  MILPHIDIPPA ANCILLA: Tēcum aetātem exigere ut liceat Nimium optās. Nōn mē dīcō,
+(1040)  MILPHIDIPPA ANCILLA: sed eram meam, quae tē dēmoritur. Aliaemultae Aliae idem istūc cupiunt
+(1041)  PYRGOPOLYNICES MILES: quibus cōpia nōn est. Ēcastōr hau mīrum, sī tē habes cārum,
+(1042)  MILPHIDIPPA ANCILLA: hominem tam pulchrum et praeclārum virtūte et fōrmā et factīs.
+(1043)  MILPHIDIPPA ANCILLA: deus dignior fuit quisquam homo quī esset? Nōn hercle hūmānust ergō
+(1044)  PALAESTRIO SERVUS: nam vulturiō plūs hūmānī crēdō est. Magnum mē faciam
+(1045)  PYRGOPOLYNICES MILES: nunc cum illaec mē sīc collaudat. Viden tū ignāvum, ut sēsē īnfert?
+(1046)  PALAESTRIO SERVUS: quīn tū huic respondē, haec illaec est ab illā quam dūdum ‹dīxī›.
+(1047)  PYRGOPOLYNICES MILES: Qua ab illārum? nam ita mē occursant multae: meminisse hau possum.
+(1048)  MILPHIDIPPA ANCILLA: Ab illā quae digitōs dēspoliat suōs et tuōs digitōs decorat.
+(1049)  MILPHIDIPPA ANCILLA: nam hunc ānulum ab tuī cupientī huic dētuli, hic ‹ad tē› porrō.
+(1050)  PYRGOPOLYNICES MILES: Quid nunc tibi vīs, mulier? memorā. Ut quae tē cupit, eam nē spernās,
+(1051)  MILPHIDIPPA ANCILLA: quae per tuam nunc vītam vīvit: sit necne sit, spēs in tē ūnō est.
+(1052)  PYRGOPOLYNICES MILES: Quid nunc volt? Tē compellāre et complectī et contrectāre.
+(1053)  MILPHIDIPPA ANCILLA: nam nisi tū illī fers suppetiās, jam illa animum dēspondēbit.
+(1054)  MILPHIDIPPA ANCILLA: age, mī Achillēs, fīat quod tē ōrō, servā illam pulchram pulchrē,
+(1055)  MILPHIDIPPA ANCILLA: exprōme benignum ex tē ingenium, mi urbicape, occīsor rēgum.
+(1056)  PYRGOPOLYNICES MILES: Eu hercle odiōsās rēs. quotiēns hoc tibi, verberō, ego interdīxī,
+(1057)  PYRGOPOLYNICES MILES: meam nē sīc vulgō pollicitēre operam? Audīn tū, mulier?
+(1058)  PALAESTRIO SERVUS: dīxī hoc tibi dūdum, et nunc dīcō: nisi huic verrī affertur mercēs,
+(1059)  PALAESTRIO SERVUS: nōn hic suō sēminiō quemquam porclēnam impertītūrust.
+(1061)  MILPHIDIPPA ANCILLA: Dabitur quantum ipsus pretī poscet. Talentum Philippī huic opus aurī est;
+(1062)  PALAESTRIO SERVUS: minus ab nēmine accipiēt. Eu ēcastor nimis vīlest tandem.
+(1063)  PYRGOPOLYNICES MILES: Nōn mihi avāritia umquam innātast: satis habeō dīvitiārum,
+(1064)  PYRGOPOLYNICES MILES: plūs mī aurī mīlle est modiōrum Philippī. Praeter thēnsaurōs.
+(1065)  PALAESTRIO SERVUS: tum argentī montēs, nōn massās habet, Aetina nōn aequē altast.
+(1066)  MILPHIDIPPA ANCILLA: Eu ēcastōr hominem perjūrum. Ut lūdō? Quid ego? ut sublectō?
+(1067)  MILPHIDIPPA ANCILLA: sed amābō, mitte mēd āctūtum. Quīn tū huic respondēs aliquid,
+(1068)  PALAESTRIO SERVUS: aut factūrum aut nōn factūrum? Quid illam miseram animī excruciās,
+(1069)  MILPHIDIPPA ANCILLA: quae numquam male dē tē meritast? Jubē eampse exīre hūc ad nōs.
+(1070)  PYRGOPOLYNICES MILES: dīc mē omnia quae vult factūrum. Facis nunc ut tē facere aequum,
+(1071)  MILPHIDIPPA ANCILLA: cum, quae tē volt, eandem tū vīs, Nōn īnsulsum huic ingenium.
+(1072)  MILPHIDIPPA ANCILLA: cumque mē ōrātrīcem hau sprēvistī sīstīque exōrāre ex tē.
+(1073)  MILPHIDIPPA ANCILLA: quid est? ut lūdō? Nequeō hercle equidem rīsū moderārier: ‹hahahae›
+(1074)  MILPHIDIPPA ANCILLA: ob eam causam hūc abs tē avertī. Nōn edepol tū scīs, mulier,
+(1075)  PYRGOPOLYNICES MILES: quantum ego honōrem nunc illī habeō. Sciō, et istūc illī dīcam.
+(1076)  PALAESTRIO SERVUS: Contrā aurō aliī hanc vēndere potuīt operam. Pol istūc tibi crēdō.
+(1077)  PALAESTRIO SERVUS: Meri bellātōrēs gignuntur, quās hic praegnātīs fēcit,
+(1078)  PALAESTRIO SERVUS: et puerī annōs octingentōs vīvunt. Vae tibi, nūgātor.
+(1079)  PYRGOPOLYNICES MILES: Quīn mīlle annōrum perpetuō vīvunt, ab saeclō ad saeclum.
+(1080)  PALAESTRIO SERVUS: Eō minus dīxī, nē haec cēnsēret mē adversum sē mentīrī.
+(1081)  MILPHIDIPPA ANCILLA: Periī, quot hic ipse annōs vīvet, cujus fīlii tam diū vīvunt?
+(1082)  PYRGOPOLYNICES MILES: Postriduō nātus sum ego, mulier, quam Juppiter ex Ope nātust.
+(1083)  PALAESTRIO SERVUS: Sī hic prīdiē nātus foret quam ille est, hic habēret rēgnum in caelō.
+(1084)  MILPHIDIPPA ANCILLA: Jam jam sat, amābō, est. sinite abeam, sī possum, vīva ā vōbīs.
+(1085)  PALAESTRIO SERVUS: Quīn ergō abis, quandō respōnsumst? Ībō atque illam hūc addūcam,
+(1086)  MILPHIDIPPA ANCILLA: propter ‹quam› opera est mihi. numquid vīs? Nē magis sim pulcher quam sum,
+(1087)  PYRGOPOLYNICES MILES: ita mē mea fōrma habet sollicitum. Quid hic nunc stās? quīn abis? Abeō.
+(1088)  PALAESTRIO SERVUS: Atque adeō, audīn, dīcito doctē et cordātē, ut cōr eī saliat
+(1089)  PALAESTRIO SERVUS: Philocōmasiō dīc, sī est istīc, domum ut trānseat: hunc hīc esse.
+(1090)  MILPHIDIPPA ANCILLA: Hīc cum mea era est, hinc clam nostrum hunc sermōnem sublēgērunt.
+(1091)  PALAESTRIO SERVUS: Lepide factumst: jam ex sermōne hōc gubernābunt doctius porrō.
+(1092)  MILPHIDIPPA ANCILLA: Remorāre, abeō. Neque tē remoror neque tangō neque tē taceō.
+(1093)  PYRGOPOLYNICES MILES: Jube mātūrāre illam exīre hūc. jam istīc reī praevertēmur.
+(1094x) == Szene Iv.iii ==
+(1094)  PYRGOPOLYNICES MILES: Quid nunc mī ēs auctor ut faciam, Palaestriō,
+(1095)  PYRGOPOLYNICES MILES: dē concubīnā? nam nūllō pactō potest
+(1096)  PYRGOPOLYNICES MILES: prius haec in aedīs recipī quam illam āmīserim.
+(1097)  PALAESTRIO SERVUS: Quid mē cōnsultās quid agās? dīxī equidem tibi
+(1098)  PALAESTRIO SERVUS: quō id pactō fierī possit clēmentissimē.
+(1099)  PALAESTRIO SERVUS: aurum atque vestem muliebrem omnem habeat sibi,
+(1100)  PALAESTRIO SERVUS: quae illī īnstrūxistī: sūmat, habeat, auferat;
+(1101)  PALAESTRIO SERVUS: dīcāsque tempus maxumē esse, ut eat domum:
+(1102)  PALAESTRIO SERVUS: sorōrem geminam adesse et mātrem dīcitō,
+(1103)  PALAESTRIO SERVUS: quibus concomitāta rēctē dēveniat domum.
+(1104)  PYRGOPOLYNICES MILES: Quī tū scīs eās adesse? Quia oculīs meīs
+(1105)  PALAESTRIO SERVUS: vīdī hīc sorōrem esse ejus. Convēnitne eam?
+(1106)  PALAESTRIO SERVUS: Convēnit. Ecquid fortis vīsast? Omnia
+(1107)  PALAESTRIO SERVUS: vīs optinēre. Ubi mātrem esse ajēbat soror?
+(1108)  PALAESTRIO SERVUS: Cubāre in nāvī lippam atque oculīs turgidīs
+(1109)  PALAESTRIO SERVUS: nauclērus dīxit, quī illās advēxit, mihī.
+(1110)  PALAESTRIO SERVUS: is ad hōs nauclērus hospitiō dēvertitur.
+(1111)  PYRGOPOLYNICES MILES: Quid is? ecquid fortis? Abi sīs hinc, nam tū quidem
+(1112)  PALAESTRIO SERVUS: ad equās fuistī scītus admissārius,
+(1113)  PALAESTRIO SERVUS: quī cōnsectāre quā marīs quā fēminās.
+(1114)  PALAESTRIO SERVUS: hoc age nunc. Istūc quod dās cōnsilium mihi,
+(1115)  PYRGOPOLYNICES MILES: tē cum illā verba facere dē istā rē volō;
+(1116)  PYRGOPOLYNICES MILES: nam cum illā sānē congruus sermō tibi.
+(1117)  PALAESTRIO SERVUS: Quī potius quam tūte adeās, tuam rem tūte agās?
+(1118)  PALAESTRIO SERVUS: dīcās uxōrem tibi necessum dūcere;
+(1119)  PALAESTRIO SERVUS: cognātōs persuādēre, amīcōs cōgere.
+(1120)  PYRGOPOLYNICES MILES: Itan tū cēnsēs? Quid ego ni ita cēnseam?
+(1121)  PYRGOPOLYNICES MILES: Ībō igitur intrō. tū hīc ante aedīs interim
+(1122)  PYRGOPOLYNICES MILES: speculāre, ut, ubi illaec prōdeat, mē prōvocēs.
+(1123)  PALAESTRIO SERVUS: Tū modo istūc cūrā quod agis. Cūrātum id quidemst.
+(1124)  PYRGOPOLYNICES MILES: quīn sī voluntāte nōlet, vī extrūdam forās.
+(1125)  PALAESTRIO SERVUS: Istūc cave faxīs; quīn potius per grātiam
+(1126)  PALAESTRIO SERVUS: bonam abeat abs tē. atque illaec quae dīxī datō,
+(1127)  PALAESTRIO SERVUS: aurum, ōrnāmenta quae illī īnstrūxistī ferat.
+(1128)  PYRGOPOLYNICES MILES: Cupiō hercle. Crēdō tē facile impetrāssere.
+(1129)  PALAESTRIO SERVUS: sed abī intrō. nōlī stāre. Tibi sum oboediēns.
+(1130)  PALAESTRIO SERVUS: Numquid vidētur dēmūtāre ‹aliō› atque utī
+(1131)  PALAESTRIO SERVUS: dīxī esse vōbīs dūdum hunc moechum mīlitem?
+(1132)  PALAESTRIO SERVUS: nunc ad mē ut veniat ūsust Acroteleutium aut
+(1133)  PALAESTRIO SERVUS: ancillula ejus aut Pleusiclēs. prō Juppiter,
+(1134)  PALAESTRIO SERVUS: satine ut Commoditās usquequaque mē adjuvat?
+(1135)  PALAESTRIO SERVUS: nam quōs vidēre exoptābam mē maximē,
+(1136)  PALAESTRIO SERVUS: ūnā exeuntīs videō hinc ē proximō.
+(1137x) == Szene Iv.iv ==
+(1137)  ACRŌTELEUTIUM MERETRIX: Sequiminī, simul circumspicite, nē quis assit arbiter.
+(1138)  MILPHIDIPPA ANCILLA: Nēminem pol videō, nisi hunc quem volumus conventum. Et ego vōs.
+(1139)  MILPHIDIPPA ANCILLA: Quid agis, noster architecte? Egone architectus? vāh. Quid est?
+(1140)  PALAESTRIO SERVUS: Quia enim nōn sum dignus prae tē, pālum ut fīgam in parietem.
+(1141)  ACRŌTELEUTIUM MERETRIX: Heia vērō. Nimis facētē nimisque fācundē malast.
+(1142)  PALAESTRIO SERVUS: ut lepidē dēruncināvit mīlitem. At etiam parum.
+(1143)  PALAESTRIO SERVUS: Bonō animō ēs: negōtium omne jam succēdit sub manūs;
+(1144)  PALAESTRIO SERVUS: vōs modo porrō, ut occēpistis, date operam adjūtābilem.
+(1145)  PALAESTRIO SERVUS: nam ipse mīles concubīnam intrō abiit ōrātum suam,
+(1146)  PALAESTRIO SERVUS: ab sē ut abeat cum sorōre et mātre Athēnās. Eu, probē.
+(1147)  PALAESTRIO SERVUS: Quīn etiam aurum atque ōrnāmenta, quae ipse īnstrūxit, mulierī
+(1148)  PALAESTRIO SERVUS: omnia dat dōnō, ā sē ut abeat: ita ego cōnsilium dedī.
+(1149)  PLEUSICLES ADULESCENS: Facile istūc quidemst, sī et illa vult et ille autem cupit.
+(1150)  PALAESTRIO SERVUS: Nōn tū scīs, cum ex altō puteō sūrsum ad summum ēscenderīs,
+(1151)  PALAESTRIO SERVUS: maximum perīclum inde esse ab summō nē rursum cadās?
+(1152)  PALAESTRIO SERVUS: nunc haec rēs apud summum puteum geritur: sī praesēnserit
+(1153)  PALAESTRIO SERVUS: mīles, nihil efferrī poterit hūjus: nunc cum maximē
+(1154)  PALAESTRIO SERVUS: opust dolīs: domī esse ad eam rem videō silvāī satis,
+(1155)  PALAESTRIO SERVUS: mulierēs trēs, quārtus tūte ēs, quīntus ego, sextus senex;
+(1156)  PALAESTRIO SERVUS: quod apud nōs fallāciārum sex situmst, certō sciō
+(1157)  PALAESTRIO SERVUS: oppidum quodvīs vidētur posse expugnārī dolīs.
+(1158)  PALAESTRIO SERVUS: date modo operam. Id nōs ad tē, sī quid vellēs, vēnimus.
+(1159)  PALAESTRIO SERVUS: Lepidē facitis. nunc hanc tibi ego imperō prōvinciam.
+(1160)  ACRŌTELEUTIUM MERETRIX: Impetrābis, imperātor, quod ego poterō, quod volēs.
+(1161)  PALAESTRIO SERVUS: Mīlitem lepidē, et facētē et lautē lūdificārier
+(1162)  PALAESTRIO SERVUS: volo. Voluptātem mēcastor mī imperās. Scīn quem ad modum?
+(1163)  ACRŌTELEUTIUM MERETRIX: Nempe ut assimulem mē amōre istīus differrī. Tenēs.
+(1164)  ACRŌTELEUTIUM MERETRIX: Quasique istīus causā amōris ex hōc mātrimōniō
+(1165)  ACRŌTELEUTIUM MERETRIX: abierim, cupiēns istīus nūptiārum. Omne ōrdine.
+(1166)  PALAESTRIO SERVUS: nisi modo ūnum hoc: hāsce esse aedīs dīcās dōtālīs tuās,
+(1167)  PALAESTRIO SERVUS: hinc senem aps tē abiisse, postquam fēcerīs dīvertium:
+(1168)  PALAESTRIO SERVUS: nē ille mox vereātur introīre in aliēnam domum.
+(1169)  ACRŌTELEUTIUM MERETRIX: Bene monēs. Sed ubi ille exierit intus, istinc tē procul
+(1170)  PALAESTRIO SERVUS: ita volō assimulāre, prae illius fōrmā quasi spernās tuam
+(1171)  PALAESTRIO SERVUS: quasique ejus opulentitātem revereāris, et simul
+(1172)  PALAESTRIO SERVUS: fōrmam, amoenitātem illīus, faciem, pulchritūdinem
+(1173)  PALAESTRIO SERVUS: collaudātō. satin praeceptumst? Teneō. satinest, sī tibi
+(1174)  ACRŌTELEUTIUM MERETRIX: meum opus ita dabō expolītum, ut improbāre nōn queās?
+(1175)  PALAESTRIO SERVUS: Sat habeō. nunc tibi vicissim quae imperābō ea discitō.
+(1176)  PALAESTRIO SERVUS: cum extemplō hoc erit factum, ubi intrō haec abierīt, ibi tū īlicō
+(1177)  PALAESTRIO SERVUS: facitō utī veniās ōrnātū hūc ad nōs nauclēricō;
+(1178)  PALAESTRIO SERVUS: causeam habeās ferrūgineam, et scutulam ob oculōs lāneam,
+(1179)  PALAESTRIO SERVUS: palliolum habeās ferrūgineum (nam is colos thalassicust),
+(1180)  PALAESTRIO SERVUS: id cōnexum in umerō laevō, ēfāfillātō bracchiō,
+(1181)  PALAESTRIO SERVUS: praecīnctūs aliquī: assimulātō quasi gubernātor siēs;
+(1182)  PALAESTRIO SERVUS: atque apud hunc senem omnia haec sunt, nam is piscātōrēs habet.
+(1183)  PLEUSICLES ADULESCENS: Quid? ubi erō exōrnātus quīn tū dīcis quid factūrus sim?
+(1184)  PALAESTRIO SERVUS: Hūc venītō et mātris verbīs Philocōmasium arcessitō,
+(1186)  PALAESTRIO SERVUS: ut, sī itūra sīt Athēnās, eat tēcum ad portum citō,
+(1187)  PALAESTRIO SERVUS: atque ut jubeat ferrī in nāvim sī quid impōnī velit.
+(1188)  PALAESTRIO SERVUS: nisi eat, tē solūtūrum esse nāvim: ventum operam dare.
+(1189)  PLEUSICLES ADULESCENS: Satis placet pictūra. perge. Ille extemplō illam hortābitur
+(1190)  PALAESTRIO SERVUS: ut eat, ut properet, nē mātrī mora sit Multimodīs sapis.
+(1191)  PALAESTRIO SERVUS: Ego illī dīcam, ut mē adjūtōrem, quī onus feram ad portum, roget.
+(1192)  PALAESTRIO SERVUS: ille jubēbit mē īre cum illā ad portum. ego adeō, ut tū sciās,
+(1193)  PALAESTRIO SERVUS: prōrsum Athēnās prōtinam abībō tēcum. Atque ubi illō vēnerīs,
+(1194)  PLEUSICLES ADULESCENS: trīduum servīre numquam tē, quīn līber sīs, sinam.
+(1195)  PALAESTRIO SERVUS: Abi citō atque ōrnā tē. Numquid aliud? Haec ut meminerīs.
+(1196)  PLEUSICLES ADULESCENS: Abeō. Et vōs abīte hinc intrō āctūtum; nam illum hūc sat sciō
+(1197)  PALAESTRIO SERVUS: jam exitūrum esse intus. Celebre apud nōs imperium tuumst.
+(1198)  PALAESTRIO SERVUS: Agite abscēdite ergō. ecce autem commodum aperītur foris.
+(1199)  PALAESTRIO SERVUS: hilarus exit: impetrāvit. inhiat quod nusquam est miser.
+(1200x) == Szene Iv.v ==
+(1200)  PYRGOPOLYNICES MILES: Quod voluī ut voluī impetrāvī, per amīcitiam et grātiam,
+(1201)  PYRGOPOLYNICES MILES: ā Philocōmasiō. Quid tam intus fuisse tē dīcam diū?
+(1202)  PYRGOPOLYNICES MILES: Numquam ego mē tam sēnsī amārī quam nunc ab illā muliere.
+(1203)  PALAESTRIO SERVUS: Quid jam? Ut multa verba fēcī, ut lenta māteriēs fuit.
+(1204)  PYRGOPOLYNICES MILES: vērum postrēmō impetrāvī ut voluī: dōnāvī, dedī
+(1205)  PYRGOPOLYNICES MILES: quae voluit, quae postulāvit; ‹tē› quoque ‹eī› dōnō dedī.
+(1206)  PALAESTRIO SERVUS: Etiam mē? quō modo ego vīvam sine tē? Age, animō bonō ēs,
+(1207)  PYRGOPOLYNICES MILES: īdem egō tē līberābō. nam sī possem ūllō modō
+(1208)  PYRGOPOLYNICES MILES: impetrāre ut abīret, nē tē abdūcerēt, operam dedī;
+(1209)  PYRGOPOLYNICES MILES: vērum oppressit. Deōs spērābō tēque. postrēmō tamen
+(1210)  PALAESTRIO SERVUS: etsī istūc mī acerbumst, quia erō tē carendum est optimō,
+(1211)  PALAESTRIO SERVUS: saltem id volup est, cum ex virtūte fōrmāī ēvēnit tibī
+(1212)  PALAESTRIO SERVUS: meā operā super hāc vīcīnā, quam ego nunc conciliō tibi.
+(1213)  PYRGOPOLYNICES MILES: Quid opust verbīs? lībertātem tibi ego et dīvitiās dabō,
+(1214)  PYRGOPOLYNICES MILES: sī impetrās. Reddam impetrātum. At gestiō. At modicē decet:
+(1215)  PALAESTRIO SERVUS: moderāre animō, nē sīs cupidus. sed eccam ipsam, ēgreditur forās.
+(1216x) == Szene Iv.vi ==
+(1216)  MILPHIDIPPA ANCILLA: Era, eccum praestō mīlitem. Ubi est? Ad laevam. Videō.
+(1217)  MILPHIDIPPA ANCILLA: Aspicitō līmīs nē ille nōs sē sentiat vidēre.
+(1218)  ACRŌTELEUTIUM MERETRIX: Videō. edepol nunc nōs tempus est malās pejōrēs fierī.
+(1219)  MILPHIDIPPA ANCILLA: Tuumst prīncipium. Obsecrō, tūte ipsum convēnistī?
+(1220)  ACRŌTELEUTIUM MERETRIX: nē parce vōcem, ut audiat. Cum ipsō pol sum locūta,
+(1221)  MILPHIDIPPA ANCILLA: placidē, ipsae dum libitum est mihi, ōtiōse, meō arbitrātū
+(1222)  PYRGOPOLYNICES MILES: Audīn quae loquitur? Audiō. quam laeta est, quia tēd adiit.
+(1223)  ACRŌTELEUTIUM MERETRIX: Ō, fortūnāta mulier ēs. Ut amārī videor. Dignu's.
+(1224)  ACRŌTELEUTIUM MERETRIX: Permīrum ēcastor praedicās, tē adiisse atque exōrāsse;
+(1225)  ACRŌTELEUTIUM MERETRIX: per epistulam aut per nūntium, quasi rēgem, adīrī eum ajunt.
+(1226)  MILPHIDIPPA ANCILLA: Namque edepol vix fuit cōpia adeundī atque impetrandī.
+(1227)  PALAESTRIO SERVUS: Ut tū inclītu's apud mulierēs. Patiar, quandō ita Venus volt.
+(1228)  ACRŌTELEUTIUM MERETRIX: Venerī pol habeō grātiam, eandemque et ōrō et quaesō,
+(1229)  ACRŌTELEUTIUM MERETRIX: ut ejus mihi sit cōpia quem amō quemque expetessō
+(1230)  ACRŌTELEUTIUM MERETRIX: benignusque ergā mē siet, quod cupiam nē gravētur.
+(1231)  MILPHIDIPPA ANCILLA: Spērō ita futūrum, quamquam eum multae sibi expetessunt:
+(1232)  MILPHIDIPPA ANCILLA: ille illās spernit sēgregāt ab sē omnīs, extrā tē ūnam.
+(1233)  ACRŌTELEUTIUM MERETRIX: Ergō iste metus mē mācerat, quod ille fastīdiōsust,
+(1234)  ACRŌTELEUTIUM MERETRIX: ne oculī ejus sententiam mūtent, ubi vīderit mē,
+(1235)  ACRŌTELEUTIUM MERETRIX: atque ejus ēlegantia meam extemplō speciem spernat.
+(1236)  MILPHIDIPPA ANCILLA: Nōn faciet, modo bonum animum habē. Ut ipsa sē contemnit.
+(1237)  ACRŌTELEUTIUM MERETRIX: Metuō, nē praedicātiō tua nunc meam fōrmam exsuperet.
+(1238)  MILPHIDIPPA ANCILLA: Istūc cūrāvī, ut opīniōne illīus pulchrior sīs.
+(1239)  ACRŌTELEUTIUM MERETRIX: Sī pol mē nōlet dūcere uxōrem, genua amplectar
+(1240)  ACRŌTELEUTIUM MERETRIX: atque obsecrābō; aliō modō, sī nōn quībō impetrāre,
+(1241)  ACRŌTELEUTIUM MERETRIX: cōnscīscam lētum: vīvere sine illō scio mē nōn posse.
+(1242)  PYRGOPOLYNICES MILES: Prohibendam mortem mulierī videō. adībōn? Minimē;
+(1243)  PALAESTRIO SERVUS: nam tū tē vīlem fēceris, sī tē ultrō largiēre:
+(1244)  PALAESTRIO SERVUS: sine ultrō veniat; quaeritet, dēsīderēt, exspectet
+(1245)  PALAESTRIO SERVUS: sine: perdere istam glōriam vīs, quam habēs? cave sīs faxīs.
+(1246)  PALAESTRIO SERVUS: nam nūllī mortālī sciō obtigisse hoc, nisi duōbus,
+(1247)  PALAESTRIO SERVUS: tibi et Phaōnī Lesbiō, tam mulier se ut amāret.
+(1248)  ACRŌTELEUTIUM MERETRIX: Eō intrō, an tū illunc ēvocās forās, mea Milphidippa.
+(1249)  MILPHIDIPPA ANCILLA: Immō opperiāmur, dum exeāt aliquis. Dūrāre nequeō,
+(1250)  ACRŌTELEUTIUM MERETRIX: quīn eam intrō. Occlūsae sunt forēs. Effringam. Sāna nōn ēs.
+(1251)  ACRŌTELEUTIUM MERETRIX: Sī amāvit umquam aut sī parem sapientiam habet ac fōrmam,
+(1252)  ACRŌTELEUTIUM MERETRIX: per amōrem sī quid fēcerō, clēmentī hic animō ignōscet.
+(1253)  PALAESTRIO SERVUS: Ut, quaesō, amōre perditast tē misera. Mūtuum fit.
+(1254)  PALAESTRIO SERVUS: Tace, nē audiat. Quid astitistī obstupida? cūr nōn pultās?
+(1255)  ACRŌTELEUTIUM MERETRIX: Quia nōn est intus quem ego volō. Quī scīs? Sciō dē olefactū
+(1256)  ACRŌTELEUTIUM MERETRIX: nam odōre nāsum sentiat, sī intus sit. Hariolātur.
+(1257)  PYRGOPOLYNICES MILES: Quia me amat, proptereā Venus fēcīt eam ut dīvināret.
+(1258)  ACRŌTELEUTIUM MERETRIX: Nesciō ubi hic prope adest quem expetō vidēre: olet profectō.
+(1259)  PYRGOPOLYNICES MILES: Nāsō pol jam haec quidem plūs videt quam oculīs. Caeca amōre est.
+(1260)  ACRŌTELEUTIUM MERETRIX: Tene mē obsecrō. Cūr? Nē cadam. Quid ita? Quia stāre nequeō,
+(1261)  ACRŌTELEUTIUM MERETRIX: ita animus per oculōs meōs ‹meus› dēfit. Mīlitem pol
+(1262)  MILPHIDIPPA ANCILLA: tū aspexistī. Ita. Nōn videō. ubi est? Vidērēs pol, sī amārēs.
+(1263)  MILPHIDIPPA ANCILLA: Nōn edepol tū illum magis amās, quam ego, mea, sī per tē liceat.
+(1264)  PALAESTRIO SERVUS: Omnēs profectō mulierēs tē amant, ut quaeque aspexit.
+(1265)  PYRGOPOLYNICES MILES: Nescio, tū ex mē hoc audīverīs an nōn: nepōs sum Veneris.
+(1266)  ACRŌTELEUTIUM MERETRIX: Mea Milphidippa, adī obsecrō et congredere. Ut mē verētur.
+(1267)  PALAESTRIO SERVUS: Illa ad nōs pergit. Vōs volō. Et nōs tē. Ut jussistī,
+(1268)  MILPHIDIPPA ANCILLA: eram meam ēdūxī forās. Videō. Jubē ergō adīre.
+(1269)  PYRGOPOLYNICES MILES: Indūxī in animum, nē ōderim item ut aliās, quandō ōrāstī.
+(1270)  MILPHIDIPPA ANCILLA: Verbum edepol facere nōn potis, sī accesserit prope ad tē.
+(1271)  MILPHIDIPPA ANCILLA: dum tē obtuētur, interim linguam oculī praecīdērunt.
+(1272)  PYRGOPOLYNICES MILES: Levandum morbum mulierī videō. Ut tremit atque extimuit,
+(1273)  MILPHIDIPPA ANCILLA: postquam tēd aspexit. Virī quoque armātī idem istūc faciunt,
+(1274)  PYRGOPOLYNICES MILES: nē tū mīrēre mulierem. sed quid illa vult mē facere?
+(1275)  MILPHIDIPPA ANCILLA: Ad sē ut eās: tēcum vīvere vult atque aetātem exigere.
+(1276)  PYRGOPOLYNICES MILES: Egon ad illam eam, quae nūpta sit? vir ejus mē dēprehendat.
+(1277)  MILPHIDIPPA ANCILLA: Quīn tuā causā exēgit virum ab sē. Quī id facere potuit?
+(1278)  MILPHIDIPPA ANCILLA: aedēs dōtālis hujus sunt. Itane? Ita pol. Jube domum īre.
+(1279)  PYRGOPOLYNICES MILES: jam ego illī erō. Vide nē siēs in exspectātiōne,
+(1280)  MILPHIDIPPA ANCILLA: nē illam animī excruciēs. Nōn erō profectō. ābīte. Abīmus.
+(1281)  PYRGOPOLYNICES MILES: Sed quid ego videō? Quid vidēs? Nescioquis eccum incēdit
+(1282)  PYRGOPOLYNICES MILES: ōrnātū quidem thalassicō. It ad nōs, vult tē profectō.
+(1283)  PALAESTRIO SERVUS: nauclērus hic quidem est. Videlicēt accersit hanc jam. Crēdō.
+(1284x) == Szene Iv.vii ==
+(1284)  PLEUSICLES ADULESCENS: Alium aliō pactō propter amōrem nī sciam
+(1285)  PLEUSICLES ADULESCENS: fēcisse multa nēquiter, verear magis
+(1286)  PLEUSICLES ADULESCENS: mē amōris causā hōc ōrnātū incēdere.
+(1287)  PLEUSICLES ADULESCENS: vērum cum multōs multa admissē accēperim
+(1288)  PLEUSICLES ADULESCENS: inhonesta propter amōrem atque aliēna ā bonīs:
+(1289)  PLEUSICLES ADULESCENS: mittō jam, ut occīdī Achillēs cīvīs passus est
+(1290)  PLEUSICLES ADULESCENS: sed eccum Palaestriōnem, stat cum mīlitī:
+(1291)  PLEUSICLES ADULESCENS: ōrātiō aliō mihi dēmūtandast mea.
+(1292)  PLEUSICLES ADULESCENS: mulier profectō nātast ex ipsā Morā;
+(1293)  PLEUSICLES ADULESCENS: nam quaevīs alia quae morast aequē, mora
+(1294)  PLEUSICLES ADULESCENS: minor ea vidētur quam quae propter mulieremst.
+(1295)  PLEUSICLES ADULESCENS: hoc adeō fierī crēdō cōnsuētūdine.
+(1296)  PLEUSICLES ADULESCENS: nam ego hanc accersō Philocōmasium. sed forēs
+(1297)  PLEUSICLES ADULESCENS: pultābō. heus, ecquis hīc est? Adulēscēns, quid est?
+(1298)  PALAESTRIO SERVUS: quid vīs? quid pultās? Philocōmasium quaeritō.
+(1299)  PLEUSICLES ADULESCENS: ā mātre illīus veniō. si itūrast, eat.
+(1300)  PLEUSICLES ADULESCENS: omnīs morātur: nāvim cupimus solvere.
+(1301)  PYRGOPOLYNICES MILES: Jam dūdum rēs parātast. ī, Palaestriō,
+(1302)  PYRGOPOLYNICES MILES: aurum, ōrnāmenta, vestem, pretiōsa omnia
+(1303)  PYRGOPOLYNICES MILES: dūc adjūtōrēs tēcum ad nāvim quī ferant.
+(1304)  PYRGOPOLYNICES MILES: omnia composita sunt quae dōnāvī: auferat.
+(1305)  PALAESTRIO SERVUS: Eō. Quaesō hercle properā. Nōn morābitur.
+(1306)  PYRGOPOLYNICES MILES: quid istūc, quaesō? quid oculō factumst tuō?
+(1307)  PLEUSICLES ADULESCENS: Habeō equidem hercle oculum. At laevum dīcō. Ēloquar.
+(1308)  PLEUSICLES ADULESCENS: amōris causā hercle hōc ego oculō ūtor minus,
+(1309)  PLEUSICLES ADULESCENS: nam sī abstinuissem amōrem, tamquam hōc ūterer.
+(1310)  PLEUSICLES ADULESCENS: sed nimis morantur mē diū. Eccōs exeunt.
+(1311x) == Szene Iv.viii ==
+(1311)  PALAESTRIO SERVUS: Quid modī flendō quaesō hodiē faciēs? Quid ego nī fleam?
+(1312)  PHILOCOMASIUM MERETRIX: ubi pulcherrumē ēgī aetātem, inde abeō. Em hominem tibī,
+(1313)  PALAESTRIO SERVUS: quī ā mātre et sorōre vēnit. Videō. Audīn, Palaestriō?
+(1314)  PALAESTRIO SERVUS: Quid vīs? Quīn tū jubes efferrī omnia quae istī dedī?
+(1315)  PLEUSICLES ADULESCENS: Philocōmasium, salvē. Et tū salvē. Māterque et soror
+(1316)  PLEUSICLES ADULESCENS: tibi salūtem mē jussērunt dīcere. Salvae sient.
+(1317)  PLEUSICLES ADULESCENS: Ōrant tē, ut eās, ventus operam dum dat, ut vēlum explicent;
+(1318)  PLEUSICLES ADULESCENS: nam mātrī oculī sī valērent, mēcum vēnissent simul.
+(1319)  PHILOCOMASIUM MERETRIX: Ībō; quamquam invīta faciō, impietās sit nisi eam. Sapis.
+(1320)  PYRGOPOLYNICES MILES: Sī nōn mēcum aetātem ēgisset, hodiē stulta vīveret.
+(1321)  PHILOCOMASIUM MERETRIX: Istūc crucior, ā virō mē tālī abaliēnārier,
+(1322)  PHILOCOMASIUM MERETRIX: nam tū quemvīs potis ēs facere ut āfluat facētiīs;
+(1323)  PHILOCOMASIUM MERETRIX: et quia tēcum eram, proptereā animō eram ferōcior:
+(1324)  PHILOCOMASIUM MERETRIX: eam nōbilitātem āmittendam videō. Nē flē. Nōn queō,
+(1325)  PHILOCOMASIUM MERETRIX: cum tē videō. Habē bonum animum. Sciō ego quid doleat mihi.
+(1326)  PALAESTRIO SERVUS: Nam nīl mīror, sī libenter, Philocōmasium, hīc erās,
+(1327)  PALAESTRIO SERVUS: ‹sī› fōrma hūjus, mōrēs, virtūs, attinuēre animum hīc tuum,
+(1328)  PALAESTRIO SERVUS: cum ego servus quandō aspiciō hunc, lacrumō quia dījungimur.
+(1329)  PHILOCOMASIUM MERETRIX: Obsecrō licet complectī prius quam proficīscō? Licet.
+(1330)  PHILOCOMASIUM MERETRIX: Ō mī ocule, ō mī anime. Obsecrō, tene mulierem,
+(1331)  PALAESTRIO SERVUS: nē afflīgātur. Quid istūc quaesōst? Quia abs tē abīt, animō male
+(1332)  PALAESTRIO SERVUS: factum est huic repente miserae. Curre intrō atque effertō aquam.
+(1333)  PALAESTRIO SERVUS: Nihil aquam moror, quiescat mālō. nē intervēnerīs,
+(1334)  PALAESTRIO SERVUS: quaesō, dum resipīscit. Capita inter sē nimis nexa hīsce habent.
+(1335)  PYRGOPOLYNICES MILES: nōn placet. labra ab labellīs aufer, nauta, cave malum.
+(1336)  PLEUSICLES ADULESCENS: Temptābam spīrārent an nōn. Aurem admōtam oportuit.
+(1337)  PLEUSICLES ADULESCENS: Sī magis vīs, eam omittam. Nōlō: retineās. fiō miser
+(1338)  PYRGOPOLYNICES MILES: Exīte atque efferte hūc intus omnia quae istī dedī.
+(1339)  PALAESTRIO SERVUS: Etiam nunc salūtō tē, Lār familiāris, prius quam eō.
+(1340)  PALAESTRIO SERVUS: cōnservī cōnservaeque omnēs, bene valēte et vīvite,
+(1341)  PALAESTRIO SERVUS: bene quaesō inter vōs dīcātis mī mēd absentī tamen.
+(1342)  PYRGOPOLYNICES MILES: Age, Palaestriō, bonō animō ēs. Ēheu, nequeō quīn fleam,
+(1343)  PALAESTRIO SERVUS: cum abs tē abeam. Fer aequō animō. Sciō ego quid doleat mihi.
+(1344)  PHILOCOMASIUM MERETRIX: Sed quid hoc? quae rēs? quid videō? lūx, salvē
+(1345)  PLEUSICLES ADULESCENS: ‹Et tū salvē.› Jam resipīstī? Obsecrō, quem amplexa sum
+(1345a)  PHILOCOMASIUM MERETRIX: hominem? periī. sumne ego apud mē? Nē timē, voluptās mea.
+(1347)  PYRGOPOLYNICES MILES: Quid istūc est negōtī? Animus hanc modo hīc relīquerat.
+(1348)  PALAESTRIO SERVUS: metuōque et timeō, nē hoc tandem prōpalam fīat nimis.
+(1349)  PYRGOPOLYNICES MILES: Quid id est? Nōs secundum ferrī nunc per urbem haec omnia,
+(1350)  PALAESTRIO SERVUS: nē quis tibi hoc vitiō vertat. Mea, nōn illōrum dedī:
+(1351)  PYRGOPOLYNICES MILES: parvī ego illōs faciō. agite, īte cum dīs benevolentibus.
+(1352)  PALAESTRIO SERVUS: Tuā ego hoc causā dīcō. Crēdō. Jam valē. Et tū bene valē.
+(1353)  PALAESTRIO SERVUS: Īte cito, jam ego assequar vōs: cum erō pauca volo loquī.
+(1354)  PALAESTRIO SERVUS: quamquam aliōs fidēliōrēs semper habuistī tibi
+(1355)  PALAESTRIO SERVUS: quam mē, tamen tibi habeō magnam grātiam rērum omnium;
+(1356)  PALAESTRIO SERVUS: et, ita sī sententia esset, tibi servīre māluī
+(1357)  PALAESTRIO SERVUS: multō, quam aliī lībertus esse. Habe animum. bonum
+(1358)  PALAESTRIO SERVUS: Ēheu, cum vēnit mī in mentem, ut mōrēs mūtandī sient,
+(1359)  PALAESTRIO SERVUS: muliebrēs mōrēs discendī, obliviscendī stratiōticī.
+(1360)  PYRGOPOLYNICES MILES: Fac sīs frūgī. Jam nōn possum, āmīsī omnem libīdinem.
+(1361)  PYRGOPOLYNICES MILES: Ī, sequere illōs, nē morere. Bene valē. Et tū bene valē.
+(1362)  PALAESTRIO SERVUS: Quaesō meminerīs, sī forte līber fierī occēperim
+(1363)  PALAESTRIO SERVUS: (mittam nūntium ad tē), nē mē dēserās. Nōn est meum.
+(1364)  PALAESTRIO SERVUS: Cōgitātō identidem, tibi quam fidēlis fūerim.
+(1365)  PALAESTRIO SERVUS: sī id faciēs, tum dēmum scībis, tibi quī bonus sit, quī malus.
+(1366)  PYRGOPOLYNICES MILES: Sciō et perspexī saepe. Vērum cum antehāc, hodiē maximē
+(1367)  PALAESTRIO SERVUS: sciēs: immō hodiē mē tuum factum faxō post dīcēs magis.
+(1368)  PYRGOPOLYNICES MILES: Vix reprimor quīn tē manēre jubeam. Cavē istūc fēcerīs:
+(1369)  PALAESTRIO SERVUS: dīcant tē mendācem nec vērum esse, fide nūllā esse tē,
+(1370)  PALAESTRIO SERVUS: dicent servōrum praeter mē esse fidēlem nēminem.
+(1371)  PALAESTRIO SERVUS: nam sī honestē cēnseam tē facere posse, suādeam;
+(1372)  PALAESTRIO SERVUS: vērum nōn potest. cave faxīs. Abi jam. Patiar quidquid est.
+(1373)  PYRGOPOLYNICES MILES: Bene valē igitur. Īre meliust strēnuē. Etiam nunc valē.
+(1374)  PYRGOPOLYNICES MILES: ante hoc factum hunc sum arbitrātus semper servum pessimum:
+(1375)  PYRGOPOLYNICES MILES: eum fidēlem mī esse inveniō. cum egomet mēcum cōgitō,
+(1376)  PYRGOPOLYNICES MILES: stultē fēcī quī hunc āmīsī. ībō hinc intrō nūnciam
+(1377)  PYRGOPOLYNICES MILES: ad amōrēs meōs. sed, sēnsī, hinc sonitum fēcērunt forēs.
+(1378x) == Szene Iv.ix ==
+(1378)  PUER: Nē mē moneātis, meminī ego officium meum,
+(1379)  PUER: ego jam conveniam illum, ubi ubi est gentium;
+(1380)  PUER: investīgābō, operae nōn parcō meae.
+(1381)  PYRGOPOLYNICES MILES: Mē quaerit illic. ībō hūīc puerō obviam.
+(1382)  PUER: Ehem, tē quaerō. salvē, vir lepidissime,
+(1383)  PUER: cumulāte commoditāte, praeter cēterōs
+(1384)  PUER: duo dī quem cūrant. Quī duō? Mārs et Venus.
+(1385)  PYRGOPOLYNICES MILES: Facētum puerum. Intrō tē ut eās obsecrat,
+(1386)  PUER: tē volt, tē quaerit, tēque exspectāns expetit.
+(1387)  PUER: amantī fer opem. quid stās? quīn intrō īs? Eō.
+(1388)  PUER: Ipsus illic sēsē jam impedīvit in plagās;
+(1389)  PUER: parātae īnsidiae sunt: in stātū stat senex,
+(1390)  PUER: ut adoriātur moechum, quī fōrmāst ferōx,
+(1391)  PUER: quī omnīs sē amāre crēdit, quaeque aspexerit
+(1392)  PUER: mulier: eum ōdērunt quā viri quā mulierēs.
+(1393)  PUER: nunc in tumultum ībō: intus clāmōrem audiō.
+(1394y) === Akt V ===
+(1394x) == Szene V.i ==
+(1394)  PERIPLECTOMENUS SENEX: Dūcite istum; sī nōn sequitur, rapite sublīmem forās,
+(1395)  PERIPLECTOMENUS SENEX: facite inter terram atque caelum ut siet, dīscindite.
+(1396)  PYRGOPOLYNICES MILES: Obsecrō hercle, Periplectomene, tē. Nēquīquam hercle obsecrās.
+(1397)  PERIPLECTOMENUS SENEX: vidē ut istīc tibi sīt acūtus, Cāriō, culter probē.
+(1398)  CARIŌ COCVS: Quīn jamdūdum gestit moechō hoc abdōmen adimere,
+(1399)  CARIŌ COCVS: ut faciam quasi puerō in collō pendeant crepundia.
+(1400)  PYRGOPOLYNICES MILES: Periī. Haud etiam, numerō hoc dīcis. Jamne in hominem involō?
+(1401)  PERIPLECTOMENUS SENEX: Immō etiam prius verberētur fustibus. Multum quidem.
+(1401a)  CARIŌ COCVS: ...
+(1402)  PERIPLECTOMENUS SENEX: Cūr ēs ausus subigitāre aliēnam uxōrem, impudēns?
+(1403)  PYRGOPOLYNICES MILES: Ita mē di ament, ultrō ventumst ad mē. Mentītur, ferī.
+(1404)  PYRGOPOLYNICES MILES: Mane, dum nārrō. Quid cessātis? Nōn licet mihi dīcere?
+(1405)  PERIPLECTOMENUS SENEX: Dīc. Ōrātus sum, ad eam ut īrem. Cūr īre ausu's? em tibi.
+(1406)  PYRGOPOLYNICES MILES: Oiei! satis sum verberātus. obsecrō. Quam mox secō?
+(1407)  PERIPLECTOMENUS SENEX: Ubi libet: dispennite hominem dīversum et distendite.
+(1408)  PYRGOPOLYNICES MILES: Obsecrō hercle tē, ut mea verba audiās prius quam secat.
+(1409)  PERIPLECTOMENUS SENEX: Loquere. Nōn dē nihilō factum est: viduam hercle esse cēnsuī,
+(1410)  PYRGOPOLYNICES MILES: itaque ancilla, conciliātrīx quae erat, dīcēbat mihi.
+(1411)  PERIPLECTOMENUS SENEX: Jūra tē nōn nocitūrum esse hominī dē hāc rē nēminī,
+(1412)  PERIPLECTOMENUS SENEX: quod tū hodiē hīc verberātu's aut quod verberābere,
+(1413)  PERIPLECTOMENUS SENEX: sī tē salvum hinc āmittēmus Venerium nepōtulum.
+(1414)  PYRGOPOLYNICES MILES: Jūrō per Jovem et Māvortem, mē nocitūrum nēminī,
+(1415)  PYRGOPOLYNICES MILES: quod ego hīc hodiē vāpulārim, jūreque id factum arbitror;
+(1416)  PYRGOPOLYNICES MILES: et sī intestātus nōn abeō hinc, bene agitur prō noxiā.
+(1417)  PERIPLECTOMENUS SENEX: Quid sī id nōn faxīs? Ut vīvam semper intestābilis.
+(1418)  CARIŌ COCVS: Verberētur etiam, postibi āmittendum cēnseō.
+(1419)  PYRGOPOLYNICES MILES: Dī tibī bene faciant semper, cum advocātus mihi bene ēs.
+(1420)  CARIŌ COCVS: Ergō dēs minam aurī nōbīs. Quam ob rem? Salvīs testibus
+(1421)  CARIŌ COCVS: ut ted hodiē hinc āmittāmus Venerium nepōtulum;
+(1422)  CARIŌ COCVS: aliter hinc nōn ībis, nē sīs frūstrā. Dabitur. Magis sapis.
+(1423)  CARIŌ COCVS: dē tunicā et chlamyde et māchaerā nē quid spērēs, nōn ferēs.
+(1424)  CARIŌ COCVS: Verberōn etiam, an jam mittis? Mītis sum equidem fustibus.
+(1425)  PYRGOPOLYNICES MILES: obsecrō vōs. Solvite istunc. Grātiam habeō tibi.
+(1426)  PERIPLECTOMENUS SENEX: Sī posthāc prehenderō ego tē hīc, carēbis testibus.
+(1427)  PYRGOPOLYNICES MILES: Causam hau dīcō. Eāmus intrō, Cāriō. Servōs meōs
+(1428)  PYRGOPOLYNICES MILES: eccōs videō. Philocōmasium jam profecta est? dīc mihi.
+(1429)  SERVUS: Jam dūdum. Ei mihī. Magis dīcās, sī sciās quod egō sciō.
+(1430)  SERVUS: nam ille quī lānam ob oculum habēbat ‹laevum›, nauta nōn erat.
+(1431)  PYRGOPOLYNICES MILES: Quis erat igitur? Philocōmasiō amātor. Quī tū scīs? Sciō.
+(1432)  SERVUS: nam postquam portā exiērunt, nīl cessārunt īlicō
+(1433)  SERVUS: ōsculārī atque amplexārī inter sē. Vae miserō mihi,
+(1434)  PYRGOPOLYNICES MILES: verba mihi data esse videō. scelus virī Palaestriō,
+(1435)  PYRGOPOLYNICES MILES: is mē in hanc illēxit fraudem. jūre factum jūdicō;
+(1436)  PYRGOPOLYNICES MILES: sī sīc aliīs moechīs fīat, minus hīc moechōrum siet,
+(1437)  PYRGOPOLYNICES MILES: magis metuant, minus hās rēs studeant. eāmus ad mē. plaudite.

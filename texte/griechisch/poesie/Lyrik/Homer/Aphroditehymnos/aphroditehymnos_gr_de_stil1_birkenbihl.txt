@@ -1,0 +1,585 @@
+==== Aphroditehymnos ====
+(1) μοῦσά(V) μοι(Pr)(D) ἔννεπε(Prä)(Akt)(Imv) ἔργα(A) πολυχρύσου(Adj)(G) Ἀφροδίτης(G),
+(1) Muse mir sage Werke viel|goldenen der|Aphrodite,
+(2) Κύπριδος(G), ἥτε(Pr)(N)(Pt) θεοῖσιν(D) ἐπὶ(Prp) γλυκὺν(Adj)(A) ἵμερον(A) ὦρσε(Aor)(Akt)
+(2) der|Kypris, die|auch den|Göttern auf süßen Sehnsucht weckte
+(3) καί(Kon) τ᾽(Pt) ἐδαμάσσατο(Aor)(Med) φῦλα(A) καταθνητῶν(Adj)(G) ἀνθρώπων(G)
+(3) und auch bezähmte Stämme der|sterblichen Menschen
+(4) οἰωνούς(A) τε(Pt) διιπετέας(Adj)(A) καὶ(Kon) θηρία(A) πάντα(Adj)(A),
+(4) Vögel auch durch|den|Himmel|fliegende und Tiere alle,
+(5) ἠμὲν(Kon) ὅσ᾽(Pr)(A) ἤπειρος(N) πολλὰ(Adj)(A) τρέφει(Prä)(Akt) ἠδ᾽(Kon) ὅσα(Pr)(A) πόντος(N):
+(5) sowohl so|viel|wie Festland vieles nährt als|auch so|viel|wie Meer:
+(6) πᾶσιν(Adj)(D) δ᾽(Pt) ἔργα(N) μέμηλεν(Per)(Akt) ἐυστεφάνου(Adj)(G) Κυθερείης(G).
+(6) allen aber Werke liegen|am|Herzen der|gut|bekränzten Kytherie.
+(7) τρισσὰς(Adj)(A) δ᾽(Pt) οὐ(Pt) δύναται(Prä)(M/P) πεπιθεῖν(Per)(Akt)(Inf) φρένας(A) οὐδ᾽(Pt) ἀπατῆσαι(Aor)(Akt)(Inf):
+(7) die|dreien aber nicht vermag zu|überzeugen Gemüter noch zu|täuschen:
+(8) κούρην(A) τ᾽(Pt) αἰγιόχοιο(Adj)(G) Διός(G), γλαυκῶπιν(Adj)(A) Ἀθήνην(A):
+(8) Jungfrau auch des|Ägis|tragenden des|Zeus, eulen|äugige Athene:
+(9) οὐ(Pt) γὰρ(Pt) οἱ(Pr)(D) εὔαδεν(Aor)(Akt) ἔργα(N) πολυχρύσου(Adj)(G) Ἀφροδίτης(G),
+(9) nicht denn ihr gefiel Werke viel|goldenen der|Aphrodite,
+(10) ἀλλ᾽(Kon) ἄρα(Pt) οἱ(Pr)(D) πόλεμοί(N) τε(Pt) ἅδον(Aor)(Akt) καὶ(Kon) ἔργον(N) Ἄρηος(G)
+(10) sondern also ihr Kriege auch gefielen und Werk des|Ares
+(11) ὑσμῖναί(N) τε(Pt) μάχαι(N) τε(Pt) καὶ(Kon) ἀγλαὰ(Adj)(A) ἔργ᾽(A) ἀλεγύνειν(Prä)(Akt)(Inf).
+(11) Nah|kämpfe auch Schlachten auch und glänzende Werke zu|bereiten.
+(12) πρώτη(Adj)(N) τέκτονας(A) ἄνδρας(A) ἐπιχθονίους(Adj)(A) ἐδίδαξε(Aor)(Akt)
+(12) als|Erste Zimmerleute Männer irdische lehrte
+(13) ποιῆσαι(Aor)(Akt)(Inf) σατίνας(A) τε(Pt) καὶ(Kon) ἅρματα(A) ποικίλα(Adj)(A) χαλκῷ(D).
+(13) machen Wagen|aufbauten auch und Wagen bunt|verzierte mit|Bronze.
+(14) ἣ(Pr)(N) δέ(Pt) τε(Pt) παρθενικὰς(Adj)(A) ἁπαλόχροας(Adj)(A) ἐν(Prp) μεγάροισιν(D)
+(14) die aber auch jungfräuliche zart|häutige in den|Hallen
+(15) ἀγλαὰ(Adj)(A) ἔργ᾽(A) ἐδίδαξεν(Aor)(Akt) ἐπὶ(Prp) φρεσὶ(D) θεῖσα(AorS)(Akt)(N) ἑκάστῃ(Pr)(D).
+(15) glänzende Werke lehrte auf Sinnen gesetzt|habend jeder.
+(16) οὐδέ(Pt) ποτ᾽(Pt) Ἀρτέμιδα(A) χρυσηλάκατον(Adj)(A), κελαδεινὴν(Adj)(A)
+(16) auch|nicht jemals Artemis gold|schäftige, laut|tönende
+(17) δάμναται(Prä)(M/P) ἐν(Prp) φιλότητι(D) φιλομμειδὴς(Adj)(N) Ἀφροδίτη(N).
+(17) bezwingt in Liebe lächeln|liebende Aphrodite.
+(18) καὶ(Kon) γὰρ(Pt) τῇ(Pr)(D) ἅδε(Aor)(Akt) τόξα(N) καὶ(Kon) οὔρεσι(D) θῆρας(A) ἐναίρειν(Prä)(Akt)(Inf),
+(18) und denn ihr gefallen Bögen und auf|Bergen Wild|tiere zu|töten,
+(19) φόρμιγγές(N) τε(Pt) χοροί(N) τε(Pt) διαπρύσιοί(Adj)(N) τ᾽(Pt) ὀλολυγαὶ(N)
+(19) Leiern auch Chöre auch durchdringende auch Jubel|schreie
+(20) ἄλσεά(N) τε(Pt) σκιόεντα(Adj)(N) δικαίων(G) τε(Pt) πτόλις(N) ἀνδρῶν(G).
+(20) Haine auch schattige der|Gerechten auch Stadt der|Männer.
+(21) οὐδὲ(Pt) μὲν(Pt) αἰδοίῃ(Adj)(D) κούρῃ(D) ἅδε(Aor)(Akt) ἔργ᾽(N) Ἀφροδίτης(G),
+(21) auch|nicht zwar der|ehrwürdigen der|Jungfrau gefiel Werke der|Aphrodite,
+(22) Ἱστίῃ(D), ἣν(Pr)(A) πρώτην(Adj)(A) τέκετο(AorS)(Med) Κρόνος(N) ἀγκυλομήτης(Adj)(N),
+(22) der|Hestia, die erste gebar Kronos krumm|ratender,
+(23) αὖτις(Adv) δ᾽(Pt) ὁπλοτάτην(Adj)(Sup)(A), βουλῇ(D) Διὸς(G) αἰγιόχοιο(Adj)(G),
+(23) wieder aber jüngste, durch|den|Rat des|Zeus Ägis|tragenden,
+(24) πότνιαν(A), ἣν(Pr)(A) ἐμνῶντο(Imp)(Med) Ποσειδάων(N) καὶ(Kon) Ἀπόλλων(N):
+(24) Herrin, die warben|um Poseidon und Apollon:
+(25) ἣ(Pr)(N) δὲ(Pt) μαλ᾽(Adv) οὐκ(Pt) ἔθελεν(Imp)(Akt), ἀλλὰ(Kon) στερεῶς(Adv) ἀπέειπεν(Aor)(Akt):
+(25) sie aber sehr nicht wollte, sondern fest sprach|ab:
+(26) ὤμοσε(AorS)(Akt) δὲ(Pt) μέγαν(Adj)(A) ὅρκον(A), ὃ(Pr)(A) δὴ(Pt) τετελεσμένος(Per)(M/P)(N) ἐστίν(Prä)(Akt),
+(26) er|schwor aber großen Eid, den ja vollendet ist,
+(27) ἁψαμένη(Aor)(Med)(N) κεφαλῆς(G) πατρὸς(G) Διὸς(G) αἰγιόχοιο(Adj)(G),
+(27) angefasst|habend Hauptes des|Vaters des|Zeus Ägis|tragenden,
+(28) παρθένος(N) ἔσσεσθαι(Fu)(M/P)(Inf) πάντ᾽(Adj)(A) ἤματα(A), δῖα(Adj)(N) θεάων(G).
+(28) Jungfrau zu|sein alle Tage, göttliche der|Göttinnen.
+(29) τῇ(Pr)(D) δὲ(Pt) πατὴρ(N) Ζεὺς(N) δῶκε(AorS)(Akt) καλὸν(Adj)(A) γέρας(A) ἀντὶ(Prp) γάμοιο(G)
+(29) ihr aber Vater Zeus gab schönes Ehren|teil anstatt der|Heirat
+(30) καὶ(Kon) τε(Pt) μέσῳ(Adj)(D) οἴκῳ(D) κατ᾽(Prp) ἄρ᾽(Pt) ἕζετο(Imp)(Med) πῖαρ(A) ἑλοῦσα(AorS)(Akt)(N).
+(30) und auch mittleren im|Hause nach also setzte|sich Fett genommen|habend.
+(31) πᾶσιν(Adj)(D) δ᾽(Pt) ἐν(Prp) νηοῖσι(D) θεῶν(G) τιμάοχός(Adj)(N) ἐστι(Prä)(Akt)
+(31) allen aber in Tempeln der|Götter Ehren|inhaberin ist
+(32) καὶ(Kon) παρὰ(Prp) πᾶσι(Adj)(D) βροτοῖσι(D) θεῶν(G) πρέσβειρα(N) τέτυκται(Per)(M/P).
+(32) und bei allen Sterblichen der|Götter Abgesandte ist|geworden.
+(33) τάων(Pr)(G) οὐ(Pt) δύναται(Prä)(M/P) πεπιθεῖν(Per)(Akt)(Inf) φρένας(A) οὐδ᾽(Pt) ἀπατῆσαι(Aor)(Akt)(Inf):
+(33) deren nicht vermag zu|überzeugen Gemüter noch zu|täuschen:
+(34) τῶν(Pr)(G) δ᾽(Pt) ἄλλων(Adj)(G) οὔ(Pt) πέρ(Pt) τι(Pr) πεφυγμένον(Per)(M/P)(N) ἔστ᾽(Prä)(Akt) Ἀφροδίτην(A)
+(34) der aber anderen nicht gar etwas entflohen ist Aphrodite
+(35) οὔτε(Kon) θεῶν(G) μακάρων(Adj)(G) οὔτε(Kon) θνητῶν(Adj)(G) ἀνθρώπων(G).
+(35) weder der|Götter seligen noch sterblichen Menschen.
+(36) καί(Kon) τε(Pt) παρὲκ(Prp) Ζηνὸς(G) νόον(A) ἤγαγε(AorS)(Akt) τερπικεραύνου(Adj)(G),
+(36) und auch abseits|von des|Zeus Sinn führte Blitz|liebenden,
+(37) ὅστε(Pr)(N) μέγιστός(Adj)(Sup)(N) τ᾽(Pt) ἐστὶ(Prä)(Akt) μεγίστης(Adj)(Sup)(G) τ᾽(Pt) ἔμμορε(Per)(Akt) τιμῆς(G).
+(37) der|welcher größter auch ist größter auch hat|Anteil Ehre.
+(38) καί(Kon) τε(Pt) τοῦ(Pr)(G), εὖτ᾽(Kon) ἐθέλοι(Prä)(Akt)(Op), πυκινὰς(Adj)(A) φρένας(A) ἐξαπαφοῦσα(Prä)(Akt)(N)
+(38) und auch seines, wenn er|wollte, dichten Sinn täuschend
+(39) ῥηιδίως(Adv) συνέμιξε(Aor)(Akt) καταθνητῇσι(Adj)(D) γυναιξίν(D),
+(39) leicht mischte mit|sterblichen Frauen,
+(40) Ἥρης(G) ἐκλελαθοῦσα(Per)(Akt)(N), κασιγνήτης(G) ἀλόχου(G) τε(Pt),
+(40) der|Hera unbemerkt|geblieben, der|Schwester der|Gattin auch,
+(41) ἣ(Pr)(N) μέγα(Adv) εἶδος(A) ἀρίστη(Adj)(Sup)(N) ἐν(Prp) ἀθανάτῃσι(Adj)(D) θεῇσι(D).
+(41) die sehr Gestalt beste unter unsterblichen Göttinnen.
+(42) κυδίστην(Adj)(Sup)(A) δ᾽(Pt) ἄρα(Pt) μιν(Pr)(A) τέκετο(AorS)(Med) Κρόνος(N) ἀγκυλομήτης(Adj)(N)
+(42) ruhmvollste aber also sie gebar Kronos krumm|ratender
+(43) μήτηρ(N) τε(Pt) Ῥείη(N): Ζεὺς(N) δ᾽(Pt) ἄφθιτα(Adj)(A) μήδεα(A) εἰδὼς(Per)(Akt)(N)
+(43) Mutter auch Rhea: Zeus aber unvergängliche Pläne wissend
+(44) αἰδοίην(Adj)(A) ἄλοχον(A) ποιήσατο(Aor)(Med) κέδν᾽(Adj)(A) εἰδυῖαν(Per)(Akt)(A).
+(44) ehrwürdige Gattin machte|sich treue wissende.
+(45) τῇ(Pr)(D) δὲ(Pt) καὶ(Kon) αὐτῇ(Pr)(D) Ζεὺς(N) γλυκὺν(Adj)(A) ἵμερον(A) ἔμβαλε(AorS)(Akt) θυμῷ(D)
+(45) ihr aber auch selbst Zeus süßen Sehnsucht warf|hinein in|den|Sinn
+(46) ἀνδρὶ(D) καταθνητῷ(Adj)(D) μιχθήμεναι(Aor)(Pas)(Inf), ὄφρα(Kon) τάχιστα(Adv)(Sup)
+(46) mit|einem sterblichen sich|zu|mischen, damit baldmöglichst
+(47) μηδ᾽(Pt) αὐτὴ(Pr)(N) βροτέης(Adj)(G) εὐνῆς(G) ἀποεργμένη(Per)(M/P)(N) εἴη(Prä)(Akt)(Op),
+(47) auch|nicht sie|selbst der|sterblichen Lagerstatt abgehalten wäre,
+(48) καί(Kon) ποτ᾽(Pt) ἐπευξαμένη(Aor)(Med)(N) εἴπῃ(Aor)(Akt)(Knj) μετὰ(Prp) πᾶσι(Adj)(D) θεοῖσιν(D)
+(48) und einmal sich|gerühmt|habend sage unter allen Göttern
+(49) ἡδὺ(Adj)(A) γελοιήσασα(Aor)(Akt)(N), φιλομμειδὴς(Adj)(N) Ἀφροδίτη(N),
+(49) süß gelächelt|habend, lächeln|liebende Aphrodite,
+(50) ὤς(Adv) ῥα(Pt) θεοὺς(A) συνέμιξε(Aor)(Akt) καταθνητῇσι(Adj)(D) γυναιξί(D),
+(50) so ja Götter mischte mit|sterblichen Frauen,
+(51) καί(Kon) τε(Pt) καταθνητοὺς(Adj)(A) υἱεῖς(A) τέκον(AorS)(Akt) ἀθανάτοισιν(Adj)(D),
+(51) und auch sterbliche Söhne gebaren den|Unsterblichen,
+(52) ὥς(Adv) τε(Pt) θεὰς(A) ἀνέμιξε(Aor)(Akt) καταθνητοῖς(Adj)(D) ἀνθρώποις(D).
+(52) so auch Göttinnen mischte mit|sterblichen Menschen.
+(53) Ἀγχίσεω(G) δ᾽(Pt) ἄρα(Pt) οἱ(Pr)(D) γλυκὺν(Adj)(A) ἵμερον(A) ἔμβαλε(AorS)(Akt) θυμῷ(D),
+(53) des|Anchises aber also ihm süßen Sehnsucht warf|hinein in|den|Sinn,
+(54) ὃς(Pr)(N) τότ᾽(Pt) ἐν(Prp) ἀκροπόλοις(Adj)(D) ὄρεσιν(D) πολυπιδάκου(Adj)(G) Ἴδης(G)
+(54) der damals in hoch|gipfligen Bergen viel|quelligen der|Ida
+(55) βουκολέεσκεν(Imp)(Akt) βοῦς(A) δέμας(A) ἀθανάτοισιν(Adj)(D) ἐοικώς(Per)(Akt)(N).
+(55) hütete|immer Rinder Gestalt den|Unsterblichen gleichend.
+(56) τὸν(Pr)(A) δὴ(Pt) ἔπειτα(Adv) ἰδοῦσα(AorS)(Akt)(N) φιλομμειδὴς(Adj)(N) Ἀφροδίτη(N)
+(56) den ja dann gesehen|habend lächeln|liebende Aphrodite
+(57) ἠράσατ᾽(Aor)(Med), ἔκπαγλος(Adj)(N) δὲ(Pt) κατὰ(Prp) φρένας(A) ἵμερος(N) εἷλεν(AorS)(Akt).
+(57) liebte, außerordentlich aber durch Sinne Sehnsucht ergriff.
+(58) ἐς(Prp) Κύπρον(A) δ᾽(Pt) ἐλθοῦσα(AorS)(Akt)(N) θυώδεα(Adj)(A) νηὸν(A) ἔδυνεν(Aor)(Akt),
+(58) nach Zypern aber gekommen|seiend duftenden Tempel trat|ein,
+(59) ἐς(Prp) Πάφον(A): ἔνθα(Adv) δέ(Pt) οἱ(Pr)(D) τέμενος(N) βωμός(N) τε(Pt) θυώδης(Adj)(N).
+(59) nach Paphos: dort aber ihr Heiligtum Altar auch duftend.
+(60) ἐνθ᾽(Adv) ἥ(Pr)(N) γ᾽(Pt) εἰσελθοῦσα(AorS)(Akt)(N) θύρας(A) ἐπέθηκε(AorS)(Akt) φαεινάς(Adj)(A):
+(60) dort die ja hineingegangen|seiend Türen legte|an helle:
+(61) ἔνθα(Adv) δέ(Pt) μιν(Pr)(A) Χάριτες(N) λοῦσαν(Aor)(Akt) καὶ(Kon) χρῖσαν(Aor)(Akt) ἐλαίῳ(D)
+(61) dort aber sie Chariten badeten und salbten mit|Öl
+(62) ἀμβρότῳ(Adj)(D), οἷα(Pr) θεοὺς(A) ἐπενήνοθεν(Per)(Akt) αἰὲν(Adv) ἐόντας(Prä)(Akt)(A),
+(62) ambrosischem, wie Götter über|kleidet|hat immer seiende,
+(63) ἀμβροσίῳ(Adj)(D) ἑδανῷ(Adj)(D), τό(Pr)(A) ῥά(Pt) οἱ(Pr)(D) τεθυωμένον(Per)(M/P)(A) ἦεν(Imp)(Akt).
+(63) ambrosischem angenehmen, das ja ihr beräuchert|gewesen war.
+(64) ἑσσαμένη(Aor)(Med)(N) δ᾽(Pt) εὖ(Adv) πάντα(A) περὶ(Prp) χροῒ(D) εἵματα(A) καλὰ(Adj)(A)
+(64) angetan|habend aber gut alle um Haut Gewänder schöne
+(65) χρυσῷ(D) κοσμηθεῖσα(Aor)(Pas)(N) φιλομμειδὴς(Adj)(N) Ἀφροδίτη(N)
+(65) mit|Gold geschmückt|seiend lächeln|liebende Aphrodite
+(66) σεύατ᾽(Aor)(Med) ἐπὶ(Prp) Τροίης(G) προλιποῦσ᾽(AorS)(Akt)(N) εὐώδεα(Adj)(A) Κύπρον(A),
+(66) eilte zu Trojas vorverlassen|habend duftende Zypern,
+(67) ὕψι(Adv) μετὰ(Prp) νέφεσιν(D) ῥίμφα(Adv) πρήσσουσα(Prä)(Akt)(N) κέλευθον(A).
+(67) hoch zwischen Wolken rasch gehend Weg.
+(68) Ἴδην(A) δ᾽(Pt) ἵκανεν(AorS)(Akt) πολυπίδακα(Adj)(A), μητέρα(A) θηρῶν(G),
+(68) Ida aber erreichte viel|quellige, Mutter der|Tiere,
+(69) βῆ(AorS)(Akt) δ᾽(Pt) ἰθὺς(Adv) σταθμοῖο(G) δι᾽(Prp) οὔρεος(G): οἳ(Pr)(N) δὲ(Pt) μετ᾽(Prp) αὐτὴν(Pr)(A)
+(69) ging aber gerade des|Stalles durch des|Berges: die aber mit ihr
+(70) σαίνοντες(Prä)(Akt)(N) πολιοί(Adj)(N) τε(Pt) λύκοι(N) χαροποί(Adj)(N) τε(Pt) λέοντες(N),
+(70) schwänzelnd graue auch Wölfe hell|äugige auch Löwen,
+(71) ἄρκτοι(N) παρδάλιές(N) τε(Pt) θοαὶ(Adj)(N) προκάδων(G) ἀκόρητοι(Adj)(N)
+(71) Bären Leoparden auch schnelle der|Rehe unersättliche
+(72) ἤισαν(Imp)(Akt): ἣ(Pr)(N) δ᾽(Pt) ὁρόωσα(Prä)(Akt)(N) μετὰ(Prp) φρεσὶ(D) τέρπετο(Imp)(M/P) θυμὸν(A)
+(72) sie|gingen: die aber sehend inmitten der|Sinnen freute|sich den|Sinn
+(73) καὶ(Kon) τοῖς(Pr)(D) ἐν(Prp) στήθεσσι(D) βάλ᾽(AorS)(Akt) ἵμερον(A): οἳ(Pr)(N) δ᾽(Pt) ἅμα(Adv) πάντες(Adj)(N)
+(73) und denen in den|Brüsten warf Sehnsucht: die aber zugleich alle
+(74) σύνδυο(Adv) κοιμήσαντο(Aor)(Med) κατὰ(Prp) σκιόεντας(Adj)(A) ἐναύλους(A):
+(74) zusammen|zwei legten|sich hinab|in schattige Schlupf|winkel:
+(75) αὐτὴ(Pr)(N) δ᾽(Pt) ἐς(Prp) κλισίας(A) εὐποιήτους(Adj)(A) ἀφίκανε(AorS)(Akt):
+(75) sie|selbst aber in die|Hütten gut|gemachte gelangte|hin:
+(76) τὸν(Pr)(A) δ᾽(Pt) εὗρε(AorS)(Akt) σταθμοῖσι(D) λελειμμένον(Per)(M/P)(A) οἶον(Adj)(A) ἀπ᾽(Prp) ἄλλων(Adj)(G)
+(76) den aber fand in|den|Ställen zurück|gelassenen allein von den|anderen
+(77) Ἀγχίσην(A) ἥρωα(A), θεῶν(G) ἄπο(Prp) κάλλος(A) ἔχοντα(Prä)(Akt)(A).
+(77) Anchises Helden, der|Götter fern|von Schönheit habenden.
+(78) οἳ(Pr)(N) δ᾽(Pt) ἅμα(Adv) βουσὶν(D) ἕποντο(Imp)(M/P) νομοὺς(A) κατὰ(Prp) ποιήεντας(Adj)(A)
+(78) die aber zugleich den|Rindern folgten Weide|plätze entlang|durch gras|reiche
+(79) πάντες(Adj)(N): ὃ(Pr)(N) δὲ(Pt) σταθμοῖσι(D) λελειμμένος(Per)(M/P)(N) οἶος(Adj)(N) ἀπ᾽(Prp) ἄλλων(Adj)(G)
+(79) alle: er aber bei|den|Ställen zurück|gelassen allein von den|anderen
+(80) πωλεῖτ᾽(Prä)(M/P) ἔνθα(Adv) καὶ(Kon) ἔνθα(Adv) διαπρύσιον(Adv) κιθαρίζων(Prä)(Akt)(N).
+(80) ging|umher hier und dort durch|dringend Kithara|spielend.
+(81) στῆ(AorS)(Akt) δ᾽(Pt) αὐτοῦ(Adv) προπάροιθε(Prp) Διὸς(G) θυγάτηρ(N) Ἀφροδίτη(N)
+(81) trat|hin aber da vor des|Zeus Tochter Aphrodite
+(82) παρθένῳ(D) ἀδμήτῃ(Adj)(D) μέγεθος(A) καὶ(Kon) εἶδος(A) ὁμοίη(Adj)(N),
+(82) einer|Jungfrau un|gezähmten Größe und Gestalt gleich,
+(83) μή(Pt) μιν(Pr)(A) ταρβήσειεν(Aor)(Akt)(Op) ἐν(Prp) ὀφθαλμοῖσι(D) νοήσας(Aor)(Akt)(N).
+(83) nicht sie erschrecke in den|Augen wahrgenommen|habend.
+(84) Ἀγχίσης(N) δ᾽(Pt) ὁρόων(Prä)(Akt)(N) ἐφράζετο(Imp)(M/P) θαύμαινέν(Imp)(Akt) τε(Pt)
+(84) Anchises aber sehend überlegte|sich staunte auch
+(85) εἶδός(A) τε(Pt) μέγεθός(A) τε(Pt) καὶ(Kon) εἵματα(A) σιγαλόεντα(Adj)(A).
+(85) Gestalt auch Größe auch und Gewänder glänzende.
+(86) πέπλόν(A) μὲν(Pt) γὰρ(Pt) ἕεστο(Plq)(M/P) φαεινότερον(Adj)(Kmp)(A) πυρὸς(G) αὐγῆς(G),
+(86) Überwurf zwar denn hatte|an heller des|Feuers des|Strahls,
+(87) καλόν(Adj)(A), χρύσειον(Adj)(A), παμποίκιλον(Adj)(A): ὡς(Adv) δὲ(Pt) σελήνη(N)
+(87) schön, golden, all|bunt|verziert: wie aber Mond
+(88) στήθεσιν(D) ἀμφ᾽(Prp) ἁπαλοῖσιν(Adj)(D) ἐλάμπετο(Imp)(M/P), θαῦμα(A) ἰδέσθαι(Aor)(Med)(Inf):
+(88) an|den|Brüsten rings|um weichen glänzte|sich, Wunder zu|sehen:
+(89) εἶχε(Imp)(Akt) δ᾽(Pt) ἐπιγναμπτὰς(Adj)(A) ἕλικας(A) κάλυκάς(A) τε(Pt) φαεινάς(Adj)(A):
+(89) hatte aber auf|gebogene Windungen Kelche auch glänzende:
+(90) ὅρμοι(N) δ᾽(Pt) ἀμφ᾽(Prp) ἁπαλῇ(Adj)(D) δειρῇ(D) περικαλλέες(Adj)(N) ἦσαν(Imp)(Akt).
+(90) Hals|ketten aber um weichen Hals sehr|schöne waren.
+(91) Ἀγχίσην(A) δ᾽(Pt) ἔρος(N) εἷλεν(AorS)(Akt), ἔπος(A) δέ(Pt) μιν(Pr)(A) ἀντίον(Adv) ηὔδα(Imp)(Akt):
+(91) Anchises aber Liebe ergriff, Wort aber ihn von|Angesicht sprach:
+(92) χαῖρε(Prä)(Akt)(Imv), ἄνασσ᾽(V), ἥ(Pr)(N) τις(Pr) μακάρων(Adj)(G) τάδε(Pr)(A) δώμαθ᾽(A) ἱκάνεις(Prä)(Akt),
+(92) sei|gegrüßt, Herrin, die welche der|Seligen diese Häuser erreichst,
+(93) Ἄρτεμις(N) ἢ(Kon) Λητὼ(N) ἠὲ(Kon) χρυσέη(Adj)(N) Ἀφροδίτη(N)
+(93) Artemis oder Leto oder goldene Aphrodite
+(94) ἢ(Kon) Θέμις(N) ἠυγενὴς(Adj)(N) ἠὲ(Kon) γλαυκῶπις(Adj)(N) Ἀθήνη(N),
+(94) oder Themis edel|geborene oder grau|äugige Athene,
+(95) ἤ(Kon) πού(Adv) τις(Pr)(N) Χαρίτων(G) δεῦρ᾽(Adv) ἤλυθες(AorS)(Akt), αἵτε(Pr)(N)(Pt) θεοῖσι(D)
+(95) oder wohl eine der|Chariten hierher kamst, die|ja den|Göttern
+(96) πᾶσιν(Adj)(D) ἑταιρίζουσι(Prä)(Akt) καὶ(Kon) ἀθάνατοι(Adj)(N) καλέονται(Prä)(M/P),
+(96) allen geleiten und Unsterbliche heißen,
+(97) ἤ(Kon) τις(Pr)(N) Νυμφάων(G), αἵτ᾽(Pr)(N)(Pt) ἄλσεα(A) καλὰ(Adj)(A) νέμονται(Prä)(M/P)
+(97) oder eine der|Nymphen, die|ja Haine schöne bewohnen
+(98) ἢ(Kon) Νυμφῶν(G), αἳ(Pr)(N) καλὸν(Adj)(A) ὄρος(A) τόδε(Pr)(A) ναιετάουσι(Prä)(Akt)
+(98) oder der|Nymphen, die schönes Gebirge dieses bewohnen
+(99) καὶ(Kon) πηγὰς(A) ποταμῶν(G), καὶ(Kon) πίσεα(A) ποιήεντα(Adj)(A).
+(99) und Quellen der|Flüsse, und Wiesen gras|reiche.
+(100) σοὶ(Pr)(D) δ᾽(Pt) ἐγὼ(Pr)(N) ἐν(Prp) σκοπιῇ(D), περιφαινομένῳ(Prä)(M/P)(D) ἐνὶ(Prp) χώρῳ(D),
+(100) dir aber ich in Wacht|höhe, rings|sichtbaren in Ort,
+(101) βωμὸν(A) ποιήσω(Fu)(Akt), ῥέξω(Fu)(Akt) δέ(Pt) τοι(Pr)(D) ἱερὰ(Adj)(A) καλὰ(Adj)(A)
+(101) Altar werde|machen, werde|vollziehen aber dir heilige|Dinge schöne
+(102) ὥρῃσιν(D) πάσῃσι(Adj)(D). σὺ(Pr)(N) δ᾽(Pt) εὔφρονα(Adj)(A) θυμὸν(A) ἔχουσα(Prä)(Akt)(N)
+(102) zu|den|Jahres|zeiten allen. du aber wohl|gesinnten Sinn habend
+(103) δός(Aor)(Akt)(Imv) με(Pr)(A) μετὰ(Prp) Τρώεσσιν(D) ἀριπρεπέ᾽(Adj)(A) ἔμμεναι(Prä)(Akt)(Inf) ἄνδρα(A),
+(103) gib mich unter den|Troern sehr|auffälligen zu|sein Mann,
+(104) ποίει(Prä)(Akt)(Imv) δ᾽(Pt) ἐξοπίσω(Adv) θαλερὸν(Adj)(A) γόνον(A), αὐτὰρ(Kon) ἔμ᾽(Pr)(A) αὐτὸν(Pr)(A)
+(104) mache aber später kräftigen Sprössling, doch mich selbst
+(105) δηρὸν(Adv) ἐὺ(Adv) ζώειν(Prä)(Akt)(Inf) καὶ(Kon) ὁρᾶν(Prä)(Akt)(Inf) φάος(A) ἠελίοιο(G),
+(105) lange gut zu|leben und zu|sehen Licht der|Sonne,
+(106) ὄλβιον(Adj)(A) ἐν(Prp) λαοῖς(D), καὶ(Kon) γήραος(G) οὐδὸν(A) ἱκέσθαι(Aor)(Med)(Inf).
+(106) glückselig in den|Leuten, und des|Alters Schwelle zu|erreichen.
+(107) τὸν(Pr)(A) δ᾽(Pt) ἠμείβετ᾽(Imp)(M/P) ἔπειτα(Adv) Διὸς(G) θυγάτηρ(N) Ἀφροδίτη(N):
+(107) ihn aber entgegnete|sich danach des|Zeus Tochter Aphrodite:
+(108) Ἀγχίση(V), κύδιστε(Adj)(Sup)(V) χαμαιγενέων(Adj)(G) ἀνθρώπων(G),
+(108) Anchises, ruhm|reichster erden|geborenen der|Menschen,
+(109) οὔ(Pt) τίς(Pr)(N) τοι(Pr)(D) θεός(N) εἰμι(Prä)(Akt): τί(Pr) μ᾽(Pr)(A) ἀθανάτῃσιν(Adj)(D) ἐίσκεις(Prä)(Akt);
+(109) nicht jemand dir Gott bin: warum mich den|Unsterblichen gleich|setzt;
+(110) ἀλλὰ(Kon) καταθνητή(Adj)(N) τε(Pt), γυνὴ(N) δέ(Pt) με(Pr)(A) γείνατο(Aor)(Med) μήτηρ(N).
+(110) sondern sterbliche auch, Frau aber mich gebar Mutter.
+(111) Ὀτρεὺς(N) δ᾽(Pt) ἐστὶ(Prä)(Akt) πατὴρ(N) ὀνομακλυτός(Adj)(N), εἴ(Kon) που(Adv) ἀκούεις(Prä)(Akt),
+(111) Otreus aber ist Vater namens|berühmt, wenn wohl hörst,
+(112) ὃς(Pr)(N) πάσης(Adj)(G) Φρυγίης(G) εὐτειχήτοιο(Adj)(G) ἀνάσσει(Prä)(Akt).
+(112) der der|ganzen Phrygiens wohl|um|mauerten herrscht.
+(113) γλῶσσαν(A) δ᾽(Pt) ὑμετέρην(Adj)(A) τε(Pt) καὶ(Kon) ἡμετέρην(Adj)(A) σάφα(Adv) οἶδα(Per)(Akt).
+(113) Sprache aber eure auch und unsere klar weiß|ich.
+(114) Τρῳὰς(N) γὰρ(Pt) μεγάρῳ(D) με(Pr)(A) τροφὸς(N) τρέφεν(Imp)(Akt): ἣ(Pr)(N) δὲ(Pt) διαπρὸ(Adv)
+(114) Trojanerin denn im|Palast mich Amme nährte: die aber ganz|und|gar
+(115) σμικρὴν(Adj)(A) παῖδ᾽(A) ἀτίταλλε(Imp)(Akt), φίλης(Adj)(G) παρὰ(Prp) μητρὸς(G) ἑλοῦσα(AorS)(Akt)(N).
+(115) kleines Kind zog|auf, der|lieben von Mutter genommen|habend.
+(116) ὣς(Adv) δή(Pt) τοι(Pr)(D) γλῶσσάν(A) γε(Pt) καὶ(Kon) ὑμετέρην(Adj)(A) εὖ(Adv) οἶδα(Per)(Akt).
+(116) so ja dir Sprache doch und eure gut weiß|ich.
+(117) νῦν(Adv) δέ(Pt) μ᾽(Pr)(A) ἀνήρπαξε(Aor)(Akt) χρυσόρραπις(Adj)(N) Ἀργειφόντης(N)
+(117) jetzt aber mich ent|führte gold|stabtragender Argus|töter
+(118) ἐκ(Prp) χοροῦ(G) Ἀρτέμιδος(G) χρυσηλακάτου(Adj)(G), κελαδεινῆς(Adj)(G).
+(118) aus dem|Reigen der|Artemis gold|schäftigen, laut|tönenden.
+(119) πολλαὶ(Adj)(N) δὲ(Pt) νύμφαι(N) καὶ(Kon) παρθένοι(N) ἀλφεσίβοιαι(Adj)(N)
+(119) viele aber Nymphen und Jungfrauen braut|preis|bringende
+(120) παίζομεν(Prä)(Akt), ἀμφὶ(Prp) δ᾽(Pt) ὅμιλος(N) ἀπείριτος(Adj)(N) ἐστεφάνωτο(Plq)(M/P).
+(120) spielten|wir, rings|um aber Haufen un|zähliger war|umkränzt|worden.
+(121) ἔνθεν(Adv) μ᾽(Pr)(A) ἥρπαξε(Aor)(Akt) χρυσόρραπις(Adj)(N) Ἀργειφόντης(N):
+(121) von|dort mich raubte gold|stabtragender Argus|töter:
+(122) πολλὰ(Adj)(A) δ᾽(Pt) ἔπ᾽(Prp) ἤγαγεν(Aor)(Akt) ἔργα(A) καταθνητῶν(Adj)(G) ἀνθρώπων(G),
+(122) viele aber über führte Werke der|sterblichen Menschen,
+(123) πολλὴν(Adj)(A) δ᾽(Pt) ἄκληρόν(Adj)(A) τε(Pt) καὶ(Kon) ἄκτιτον(Adj)(A), ἣν(Pr)(A) διὰ(Prp) θῆρες(N)
+(123) viel aber un|zugeteilte auch und un|besessene, die durch Tiere
+(124) ὠμοφάγοι(Adj)(N) φοιτῶσι(Prä)(Akt) κατὰ(Prp) σκιόεντας(Adj)(A) ἐναύλους(A):
+(124) roh|fressende streifen durch schattige Schlupf|winkel:
+(125) οὐδὲ(Pt) ποσὶ(D) ψαύσειν(Fu)(Akt)(Inf) ἐδόκουν(Imp)(Akt) φυσιζόου(Adj)(G) αἴης(G):
+(125) auch|nicht mit|den|Füßen zu|berühren dünkte|mich leben|hauchender Erde:
+(126) Ἀγχίσεω(G) δέ(Pt) με(Pr)(A) φάσκε(Prä)(Akt) παραὶ(Prp) λέχεσιν(D) καλέεσθαι(Prä)(M/P)(Inf)
+(126) des|Anchises aber mich behauptete bei den|Lagern genannt|zu|werden
+(127) κουριδίην(Adj)(A) ἄλοχον(A), σοὶ(Pr)(D) δ᾽(Pt) ἀγλαὰ(Adj)(A) τέκνα(A) τεκεῖσθαι(Fu)(Med)(Inf).
+(127) recht|mäßige Gattin, dir aber glänzende Kinder gebären|zu|werden.
+(128) αὐτὰρ(Kon) ἐπεὶ(Kon) δὴ(Pt) δεῖξε(Aor)(Akt) καὶ(Kon) ἔφρασεν(Aor)(Akt), ἦ(Pt) τοι(Pr)(D) ὅ(Pr)(N) γ᾽(Pt) αὖτις(Adv)
+(128) doch als ja zeigte und erklärte, wahrlich dir der ja wieder
+(129) ἀθανάτων(Adj)(G) μετὰ(Prp) φῦλ᾽(A) ἀπέβη(AorS)(Akt) κρατὺς(Adj)(N) Ἀργειφόντης(N):
+(129) der|Unsterblichen zu Scharen ging|hinweg der|mächtige Argus|töter:
+(130) αὐτὰρ(Kon) ἐγώ(Pr)(N) σ᾽(Pr)(A) ἱκόμην(Aor)(Med), κρατερὴ(Adj)(N) δέ(Pt) μοι(Pr)(D) ἔπλετ᾽(Imp)(Akt) ἀνάγκη(N).
+(130) doch ich dich erreichte, starke aber mir ward Not.
+(131) ἀλλά(Kon) σε(Pr)(A) πρὸς(Prp) Ζηνὸς(G) γουνάζομαι(Prä)(M/P) ἠδὲ(Kon) τοκήων(G)
+(131) aber dich bei Zeus flehe|ich|an und der|Eltern
+(132) ἐσθλῶν(Adj)(G): οὐ(Pt) μὲν(Pt) γάρ(Pt) κε(Pt) κακοὶ(Adj)(N) τοιόνδε(Adj)(A) τέκοιεν(Aor)(Akt)(Op):
+(132) der|Tüchtigen: nicht zwar denn wohl Schlechte einen|solchen zeugten:
+(133) ἀδμήτην(Adj)(A) μ᾽(Pr)(A) ἀγαγὼν(AorS)(Akt)(N) καὶ(Kon) ἀπειρήτην(Adj)(A) φιλότητος(G)
+(133) un|gebändigte mich geführt|habend und unerfahrene der|Liebe
+(134) πατρί(D) τε(Pt) σῷ(Adj)(D) δεῖξον(Aor)(Akt)(Imv) καὶ(Kon) μητέρι(D) κέδν᾽(Adj)(A) εἰδυίῃ(Per)(Akt)(D)
+(134) dem|Vater auch deinem zeige und der|Mutter Kluges wissenden
+(135) σοῖς(Adj)(D) τε(Pt) κασιγνήτοις(D), οἵ(Pr)(N) τοι(Pr)(D) ὁμόθεν(Adv) γεγάασιν(Per)(Akt).
+(135) deinen auch Brüdern, die dir vom|gleichen|Ort ent|stammen.
+(136) οὔ(Pt) σφιν(Pr)(D) ἀεικελίη(Adj)(N) νυὸς(N) ἔσσομαι(Fu)(M/P), ἀλλ᾽(Kon) εἰκυῖα(Per)(Akt)(N).
+(136) nicht ihnen schändliche Schwieger|tochter werde|sein, sondern gleich|seiend.
+(137) πέμψαι(Aor)(Akt)(Imv) δ᾽(Pt) ἄγγελον(A) ὦκα(Adv) μετὰ(Prp) Φρύγας(A) αἰολοπώλους(Adj)(A)
+(137) sende aber Boten schnell zu den|Phrygern schiller|rossigen
+(138) εἰπεῖν(Aor)(Akt)(Inf) πατρί(D) τ᾽(Pt) ἐμῷ(Adj)(D) καὶ(Kon) μητέρι(D) κηδομένῃ(Prä)(M/P)(D) περ(Pt):
+(138) zu|sagen dem|Vater auch meinem und der|Mutter sich|sorgenden doch:
+(139) οἳ(Pr)(N) δέ(Pt) κε(Pt) τοι(Pr)(D) χρυσόν(A) τε(Pt) ἅλις(Adv) ἐσθῆτά(A) θ᾽(Pt) ὑφαντὴν(Adj)(A)
+(139) die aber wohl dir Gold auch reichlich Kleidung auch gewebte
+(140) πέμψουσιν(Fu)(Akt): σὺ(Pr)(N) δὲ(Pt) πολλὰ(Adj)(A) καὶ(Kon) ἀγλαὰ(Adj)(A) δέχθαι(Aor)(Med)(Inf) ἄποινα(A).
+(140) werden|senden: du aber viele und glänzende zu|empfangen Löse|gelder.
+(141) ταῦτα(Pr)(A) δὲ(Pt) ποιήσας(Aor)(Akt)(N) δαίνυ(Prä)(M/P)(Imv) γάμον(A) ἱμερόεντα(Adj)(A),
+(141) diese aber gemacht|habend halte|Gastmahl Hochzeit lieb|erweckende,
+(142) τίμιον(Adj)(A) ἀνθρώποισι(D) καὶ(Kon) ἀθανάτοισι(Adj)(D) θεοῖσιν(D).
+(142) ehr|würdig den|Menschen und den|Unsterblichen den|Göttern.
+(143) ὣς(Adv) εἰποῦσα(Aor)(Akt)(N) θεὰ(N) γλυκὺν(Adj)(A) ἵμερον(A) ἔμβαλε(Aor)(Akt) θυμῷ(D).
+(143) so gesagt|habend Göttin süßen Sehnsucht warf|hinein in|den|Sinn.
+(144) Ἀγχίσην(A) δ᾽(Pt) ἔρος(N) εἷλεν(AorS)(Akt) ἔπος(A) τ᾽(Pt) ἔφατ᾽(Imp)(M/P) ἔκ(Prp) τ᾽(Pt) ὀνόμαζεν(Imp)(Akt):
+(144) Anchisen aber Liebe ergriff Wort auch sprach aus auch nannte:
+(145) εἰ(Kon) μὲν(Pt) θνητή(Adj)(N) τ᾽(Pt) ἐσσι(Prä)(Akt), γυνὴ(N) δέ(Pt) σε(Pr)(A) γείνατο(Aor)(Med) μήτηρ(N),
+(145) wenn zwar sterblich auch bist, Frau aber dich gebar Mutter,
+(146) Ὀτρεὺς(N) δ᾽(Pt) ἐστὶ(Prä)(Akt) πατὴρ(N) ὀνομακλυτός(Adj)(N), ὡς(Kon) ἀγορεύεις(Prä)(Akt),
+(146) Otreus aber ist Vater namens|berühmt, wie du|sagst,
+(147) ἀθανάτου(Adj)(G) δὲ(Pt) ἕκητι(Prp) διακτόρου(G) ἐνθάδ᾽(Adv) ἱκάνεις(Prä)(Akt)
+(147) des|unsterblichen aber auf|Geheiß des|Boten hierher kommst
+(148) Ἑρμέω(G), ἐμὴ(Adj)(N) δ᾽(Pt) ἄλοχος(N) κεκλήσεαι(Per)(M/P) ἤματα(A) πάντα(Adj)(A):
+(148) des|Hermes, meine aber Gattin wirst|genannt|werden Tage alle:
+(149) οὔ(Pt) τις(Pr)(N) ἔπειτα(Adv) θεῶν(G) οὔτε(Kon) θνητῶν(Adj)(G) ἀνθρώπων(G)
+(149) nicht jemand danach der|Götter weder der|sterblichen der|Menschen
+(150) ἐνθάδε(Adv) με(Pr)(A) σχήσει(Fu)(Akt), πρὶν(Kon) σῇ(Adj)(D) φιλότητι(D) μιγῆναι(Aor)(Pas)(Inf)
+(150) hier mich wird|halten, bevor deiner mit|Liebe gemischt|zu|werden
+(151) αὐτίκα(Adv) νῦν(Adv): οὐδ᾽(Pt) εἴ(Kon) κεν(Pt) ἑκηβόλος(Adj)(N) αὐτὸς(Pr)(N) Ἀπόλλων(N)
+(151) sofort jetzt: auch|nicht wenn wohl weit|schießende selbst Apollon
+(152) τόξου(G) ἀπ᾽(Prp) ἀργυρέου(Adj)(G) προΐῃ(Prä)(Akt)(Op) βέλεα(A) στονόεντα(Adj)(A).
+(152) des|Bogens von silbernen würde|senden Pfeile weh|klagende.
+(153) βουλοίμην(Prä)(M/P)(Op) κεν(Pt) ἔπειτα(Adv), γύναι(V) ἐικυῖα(Per)(Akt)(N) θεῇσι(D),
+(153) würde|wollen wohl danach, o|Frau gleichend den|Göttinnen,
+(154) σῆς(Adj)(G) εὐνῆς(G) ἐπιβὰς(AorS)(Akt)(N) δῦναι(AorS)(Akt)(Inf) δόμον(A) Ἄιδος(G) εἴσω(Adv).
+(154) deiner Lager|statt auf|gestiegen|seiend ein|zugehen Haus des|Hades hinein.
+(155) ὣς(Adv) εἰπὼν(Aor)(Akt)(N) λάβε(AorS)(Akt) χεῖρα(A): φιλομμειδὴς(Adj)(N) δ᾽(Pt) Ἀφροδίτη(N)
+(155) so gesagt|habend nahm Hand: lächeln|liebende aber Aphrodite
+(156) ἕρπε(Prä)(Akt)(Imv) μεταστρεφθεῖσα(Aor)(Pas)(N) κατ᾽(Prp) ὄμματα(A) καλὰ(Adj)(A) βαλοῦσα(AorS)(Akt)(N)
+(156) gehe um|gewendet|seiend über Augen schöne werfend|seiend
+(157) ἐς(Prp) λέχος(A) εὔστρωτον(Adj)(A), ὅθι(Adv) περ(Pt) πάρος(Adv) ἔσκεν(Imp)(Akt) ἄνακτι(D)
+(157) in Bett gut|gebreitet, wo ja früher war dem|Herrn
+(158) χλαίνῃσιν(D) μαλακῇς(Adj)(D) ἐστρωμένον(Per)(M/P)(A): αὐτὰρ(Kon) ὕπερθεν(Adv)
+(158) Decken weichen aus|gebreitet|seiend: doch darüber
+(159) ἄρκτων(G) δέρματ᾽(N) ἔκειτο(Imp)(M/P) βαρυφθόγγων(Adj)(G) τε(Pt) λεόντων(G),
+(159) der|Bären Häute lagen tief|tönenden auch der|Löwen,
+(160) τοὺς(A) αὐτὸς(Pr)(N) κατέπεφνεν(AorS)(Akt) ἐν(Prp) οὔρεσιν(D) ὑψηλοῖσιν(Adj)(D).
+(160) die selbst erschlug in Bergen hohen.
+(161) οἳ(Pr)(N) δ᾽(Pt) ἐπεὶ(Kon) οὖν(Pt) λεχέων(G) εὐποιήτων(Adj)(G) ἐπέβησαν(AorS)(Akt),
+(161) die aber als nun der|Lager|stätten gut|gemachten bestiegen,
+(162) κόσμον(A) μέν(Pt) οἱ(Pr)(D) πρῶτον(Adv) ἀπὸ(Prp) χροὸς(G) εἷλε(AorS)(Akt) φαεινόν(Adj)(A),
+(162) Schmuck zwar ihr zuerst von der|Haut nahm glänzenden,
+(163) πόρπας(A) τε(Pt) γναμπτάς(Adj)(A) θ᾽(Pt) ἕλικας(A) κάλυκάς(A) τε(Pt) καὶ(Kon) ὅρμους(A).
+(163) Spangen auch gekrümmte auch Windungs|ringe Kelche auch und Hals|ketten.
+(164) λῦσε(Aor)(Akt) δέ(Pt) οἱ(Pr)(D) ζώνην(A) ἰδὲ(Kon) εἵματα(A) σιγαλόεντα(Adj)(A)
+(164) löste aber ihr Gürtel und Gewänder glänzende
+(165) ἔκδυε(Imp)(Akt) καὶ(Kon) κατέθηκεν(AorS)(Akt) ἐπὶ(Prp) θρόνου(G) ἀργυροήλου(Adj)(G)
+(165) zog|aus und legte|hin auf des|Throns silber|genagelten
+(166) Ἀγχίσης(N): ὃ(Pr)(N) δ᾽(Pt) ἔπειτα(Adv) θεῶν(G) ἰότητι(D) καὶ(Kon) αἴσῃ(D)
+(166) Anchises: der aber danach der|Götter Wille und Schicksal
+(167) ἀθανάτῃ(Adj)(D) παρέλεκτο(Aor)(Med) θεᾷ(D) βροτός(N), οὐ(Pt) σάφα(Adv) εἰδώς(Per)(Akt)(N).
+(167) unsterblichen legte|sich|daneben der|Göttin Sterblicher, nicht klar gewusst|habend.
+(168) ἦμος(Kon) δ᾽(Pt) ἂψ(Adv) εἰς(Prp) αὖλιν(A) ἀποκλίνουσι(Prä)(Akt) νομῆες(N)
+(168) als aber wieder in Hürde|Stall wenden|zurück Hirten
+(169) βοῦς(A) τε(Pt) καὶ(Kon) ἴφια(Adj)(A) μῆλα(A) νομῶν(G) ἐξ(Prp) ἀνθεμοέντων(Adj)(G):
+(169) Rinder auch und kräftige Schafe der|Weiden aus blumen|reichen:
+(170) τῆμος(Adv) ἄρ᾽(Pt) Ἀγχίσῃ(D) μὲν(Pt) ἐπὶ(Prp) γλυκὺν(Adj)(A) ὕπνον(A) ἔχευε(Imp)(Akt)
+(170) dann also Anchises zwar auf süßen Schlaf goss
+(171) νήδυμον(Adj)(A), αὐτὴ(Pr)(N) δὲ(Pt) χροῒ(D) ἕννυτο(Imp)(M/P) εἵματα(A) καλά(Adj)(A).
+(171) wohlig|süßen, sie|selbst aber auf|Haut kleidete|sich Gewänder schöne.
+(172) ἑσσαμένη(Aor)(Med)(N) δ᾽(Pt) εὖ(Adv) πάντα(Adj)(A) περὶ(Prp) χροῒ(D) δῖα(Adj)(N) θεάων(G)
+(172) angelegt|habend aber gut alle um Haut göttliche der|Göttinnen
+(173) ἔστη(AorS)(Akt) πὰρ(Prp) κλισίῃ(D), κεὐποιήτοιο(Kon)(Adj)(G) μελάθρου(G)
+(173) stand bei Hütte, und|gut|gemachten des|Gemachs
+(174) κῦρε(Aor)(Akt) κάρη(A): κάλλος(N) δὲ(Pt) παρειάων(G) ἀπέλαμπεν(Imp)(Akt)
+(174) neigte Kopf: Schönheit aber der|Wangen strahlte
+(175) ἄμβροτον(Adj)(A), οἷόν(Pr)(A) τ᾽(Pt) ἐστὶν(Prä)(Akt) ἐυστεφάνου(Adj)(G) Κυθερείης(G),
+(175) unsterblich, wie auch ist der|gut|bekränzten Kytherie,
+(176) ἐξ(Prp) ὕπνου(G) τ᾽(Pt) ἀνέγειρεν(Aor)(Akt) ἔπος(A) τ᾽(Pt) ἔφατ᾽(Imp)(M/P) ἔκ(Prp) τ᾽(Pt) ὀνόμαζεν(Imp)(Akt):
+(176) aus des|Schlafes auch weckte Wort auch sprach aus auch nannte:
+(177) ὄρσεο(Aor)(Med)(Imv), Δαρδανίδη(V): τί(Pr)(A) νυ(Pt) νήγρετον(Adj)(A) ὕπνον(A) ἰαύεις(Prä)(Akt);
+(177) steh|auf, Dardaniden: warum nun un|weckbaren Schlaf schläfst;
+(178) καὶ(Kon) φράσαι(Aor)(Med)(Imv), εἴ(Kon) τοι(Pr)(D) ὁμοίη(Adj)(N) ἐγὼν(Pr)(N) ἰνδάλλομαι(Prä)(M/P) εἶναι(Prä)(Akt)(Inf),
+(178) und sage, ob dir gleich ich erscheine zu|sein,
+(179) οἵην(Adj)(A) δή(Pt) με(Pr)(A) τὸ(A) πρῶτον(Adv) ἐν(Prp) ὀφθαλμοῖσι(D) νόησας(Aor)(Akt);
+(179) wie|beschaffene ja mich das zuerst in Augen wahrnahmst;
+(180) ὣς(Adv) φάθ᾽(Aor)(M/P): ὃ(Pr)(N) δ᾽(Pt) ἐξ(Prp) ὕπνοιο(G) μάλ᾽(Adv) ἐμμαπέως(Adv) ὑπάκουσεν(Aor)(Akt).
+(180) so sprach: der aber aus des|Schlafes sehr eilends hörte|zu.
+(181) ὡς(Kon) δὲ(Pt) ἴδεν(AorS)(Akt) δειρήν(A) τε(Pt) καὶ(Kon) ὄμματα(A) κάλ᾽(Adj)(A) Ἀφροδίτης(G),
+(181) als aber sah Hals auch und Augen schöne der|Aphrodite,
+(182) τάρβησέν(Aor)(Akt) τε(Pt) καὶ(Kon) ὄσσε(Du)(A) παρακλιδὸν(Adv) ἔτραπεν(Aor)(M/P) ἄλλῃ(Adv):
+(182) erschrak auch und Augen seitwärts wendete|sich anderswohin:
+(183) ἂψ(Adv) δ᾽(Pt) αὖτις(Adv) χλαίνῃ(D) τε(Pt) καλύψατο(Aor)(Med) καλὰ(Adj)(A) πρόσωπα(A)
+(183) wieder aber abermals Mantel auch bedeckte|sich schöne Antlitze
+(184) καί(Kon) μιν(Pr)(A) λισσόμενος(Prä)(M/P)(N) ἔπεα(A) πτερόεντα(Adj)(A) προσηύδα(Imp)(Akt):
+(184) und sie bittend|seiend Worte geflügelte redete|an:
+(185) αὐτίκα(Adv) σ᾽(Pr)(A) ὡς(Kon) τὰ(A) πρῶτα(Adj)(A), θεά(V), ἴδον(AorS)(Akt) ὀφθαλμοῖσιν(D),
+(185) sogleich dich als die ersten, Göttin, sah|ich mit|Augen,
+(186) ἔγνων(AorS)(Akt) ὡς(Kon) θεὸς(N) ἦσθα(Imp)(Akt): σὺ(Pr)(N) δ᾽(Pt) οὐ(Pt) νημερτὲς(Adj)(A) ἔειπες(Aor)(Akt).
+(186) erkannte|ich dass Gott warst: du aber nicht un|fehlbar sagtest.
+(187) ἀλλά(Kon) σε(Pr)(A) πρὸς(Prp) Ζηνὸς(G) γουνάζομαι(Prä)(M/P) αἰγιόχοιο(Adj)(G),
+(187) aber dich bei des|Zeus flehe|ich|an Ägis|tragenden,
+(188) μή(Pt) με(Pr)(A) ζῶντ᾽(Prä)(Akt)(A) ἀμενηνὸν(Adj)(A) ἐν(Prp) ἀνθρώποισιν(D) ἐάσῃς(Aor)(Akt)(Knj)
+(188) nicht mich lebend kraftlos in den|Menschen ließest
+(189) ναίειν(Prä)(Akt)(Inf), ἀλλ᾽(Kon) ἐλέαιρ᾽(Aor)(Akt)(Imv): ἐπεὶ(Kon) οὐ(Pt) βιοθάλμιος(Adj)(N) ἀνὴρ(N)
+(189) zu|wohnen, sondern erbarme|dich: weil nicht lebens|kräftig Mann
+(190) γίγνεται(Prä)(M/P), ὅς(Pr)(N) τε(Pt) θεαῖς(D) εὐνάζεται(Prä)(M/P) ἀθανάτῃσι(Adj)(D).
+(190) wird, der auch Göttinnen beischläft unsterblichen.
+(191) τὸν(Pr)(A) δ᾽(Pt) ἠμείβετ᾽(Imp)(M/P) ἔπειτα(Adv) Διὸς(G) θυγάτηρ(N) Ἀφροδίτη(N):
+(191) den aber antwortete danach des|Zeus Tochter Aphrodite:
+(192) Ἀγχίση(V), κύδιστε(Adj)(Sup)(V) καταθνητῶν(Adj)(G) ἀνθρώπων(G),
+(192) Anchises, ruhmes|reichster der|sterblichen Menschen,
+(193) θάρσει(Prä)(Akt)(Imv), μηδέ(Pt) τι(Pr)(A) σῇσι(Adj)(D) μετὰ(Prp) φρεσὶ(D) δείδιθι(Per)(Akt)(Imv) λίην(Adv):
+(193) fasse|Mut, und|nicht etwas deinen mitten|in Sinnen fürchte zu|sehr:
+(194) οὐ(Pt) γάρ(Pt) τοί(Pr)(D) τι(Pr)(A) δέος(A) παθέειν(Aor)(Akt)(Inf) κακὸν(Adj)(A) ἐξ(Prp) ἐμέθεν(Pr)(G) γε(Pt),
+(194) nicht denn dir etwas Furcht zu|erleiden schlimmes aus von|mir doch,
+(195) οὐδ᾽(Pt) ἄλλων(Adj)(G) μακάρων(G): ἐπεὶ(Kon) ἦ(Pt) φίλος(Adj)(N) ἐσσὶ(Prä)(Akt) θεοῖσι(D).
+(195) auch|nicht anderer der|Seligen: da wahrlich freund bist den|Göttern.
+(196) σοὶ(Pr)(D) δ᾽(Pt) ἔσται(Fu)(M/P) φίλος(Adj)(N) υἱός(N), ὃς(Pr)(N) ἐν(Prp) Τρώεσσιν(D) ἀνάξει(Fu)(Akt)
+(196) dir aber wird|sein lieber Sohn, der in den|Troern herrschen|wird
+(197) καὶ(Kon) παῖδες(N) παίδεσσι(D) διαμπερὲς(Adv) ἐκγεγάοντες(Per)(Akt)(N):
+(197) und Söhne Kinder|kindern beständig entsprossen|seiend:
+(198) τῷ(Pr)(D) δὲ(Pt) καὶ(Kon) Αἰνείας(N) ὄνομ᾽(N) ἔσσεται(Fu)(M/P), οὕνεκα(Kon) μ᾽(Pr)(A) αἰνὸν(Adj)(A)
+(198) dem aber auch Aineias Name wird|sein, weil mich schrecklichen
+(199) ἔσχεν(AorS)(Akt) ἄχος(A), ἕνεκα(Prp) βροτοῦ(G) ἀνέρος(G) ἔμπεσον(AorS)(Akt) εὐνῇ(D):
+(199) ergriff Schmerz, wegen des|Sterblichen des|Mannes hin|fiel|ich in|dem|Bett:
+(200) ἀγχίθεοι(Adj)(N) δὲ(Pt) μάλιστα(Adv) καταθνητῶν(Adj)(G) ἀνθρώπων(G)
+(200) götter|nahe aber am|meisten der|sterblichen Menschen
+(201) αἰεὶ(Adv) ἀφ᾽(Prp) ὑμετέρης(Adj)(G) γενεῆς(G) εἶδός(A) τε(Pt) φυήν(A) τε(Pt).
+(201) immer von eurer Geschlecht|slinie Gestalt auch Wuchs auch.
+(202) ἦ(Pt) τοι(Pt) μὲν(Pt) ξανθὸν(Adj)(A) Γανυμήδεα(A) μητιέτα(Adj)(N) Ζεὺς(N)
+(202) fürwahr ja zwar blonden Ganymed rat|kundiger Zeus
+(203) ἥρπασε(Aor)(Akt) ὃν(Pr)(A) διὰ(Prp) κάλλος(A), ἵν᾽(Kon) ἀθανάτοισι(Adj)(D) μετείη(Prä)(Akt)(Op)
+(203) raubte den wegen Schönheit, damit den|Unsterblichen beiwohne|würde
+(204) καί(Kon) τε(Pt) Διὸς(G) κατὰ(Prp) δῶμα(A) θεοῖς(D) ἐπιοινοχοεύοι(Prä)(Akt)(Op),
+(204) und auch des|Zeus im Haus den|Göttern ein|schenken|würde,
+(205) θαῦμα(A) ἰδεῖν(Aor)(Akt)(Inf), πάντεσσι(Adj)(D) τετιμένος(Per)(M/P)(N) ἀθανάτοισι(Adj)(D),
+(205) Wunder zu|sehen, allen geehrt|seiend den|Unsterblichen,
+(206) χρυσέου(Adj)(G) ἐκ(Prp) κρητῆρος(G) ἀφύσσων(Prä)(Akt)(N) νέκταρ(A) ἐρυθρόν(Adj)(A).
+(206) des|goldenen aus Kraters ausschöpfend Nektar roten.
+(207) Τρῶα(A) δὲ(Pt) πένθος(A) ἄλαστον(Adj)(A) ἔχε(Imp)(Akt) φρένας(A), οὐδέ(Pt) τι(Pr) ᾔδει(Plq)(Akt),
+(207) Tros aber Leid unvergessliches hielt Sinnen, auch|nicht etwas wusste,
+(208) ὅππη(Kon) οἱ(Pr)(D) φίλον(Adj)(A) υἱὸν(A) ἀνήρπασε(Aor)(Akt) θέσπις(Adj)(N) ἄελλα(N):
+(208) wohin ihm lieben Sohn entriss göttliche Sturmbö:
+(209) τὸν(Pr)(A) δὴ(Pt) ἔπειτα(Adv) γόασκε(Imp)(Akt) διαμπερὲς(Adv) ἤματα(A) πάντα(Adj)(A)
+(209) den ja danach beklagte beständig Tage alle
+(210) καί(Kon) μιν(Pr)(A) Ζεὺς(N) ἐλέησε(Aor)(Akt), δίδου(Imp)(Akt) δέ(Pt) οἱ(Pr)(D) υἷος(G) ἄποινα(A),
+(210) und ihn Zeus erbarmte, gab aber ihm des|Sohnes Löse|gelder,
+(211) ἵππους(A) ἀρσίποδας(Adj)(A), τοί(Pr)(N) τ᾽(Pt) ἀθανάτους(Adj)(A) φορέουσι(Prä)(Akt).
+(211) Pferde hoch|füßige, die auch die|Unsterblichen tragen.
+(212) τούς(Pr)(A) οἱ(Pr)(D) δῶρον(A) ἔδωκεν(AorS)(Akt) ἔχειν(Prä)(Akt)(Inf): εἶπεν(AorS)(Akt) δὲ(Pt) ἕκαστα(A)
+(212) jene ihm Geschenk gab zu|haben: sagte aber alles|einzelne
+(213) Ζηνὸς(G) ἐφημοσύνῃσι(D) διάκτορος(G) Ἀργειφόντης(N),
+(213) des|Zeus durch|die|Weisungen des|Boten Argus|töter,
+(214) ὡς(Kon) ἔοι(Prä)(Akt)(Op) ἀθάνατος(Adj)(N) καὶ(Kon) ἀγήρως(Adj)(N) ἶσα(Adv) θεοῖσιν(D).
+(214) dass wäre unsterblich und alterslos gleich den|Göttern.
+(215) αὐτὰρ(Kon) ἐπειδὴ(Kon) Ζηνὸς(G) ὅ(Pr)(N) γ᾽(Pt) ἔκλυεν(Imp)(Akt) ἀγγελιάων(G),
+(215) aber als des|Zeus der ja hörte Botschaften,
+(216) οὐκέτ᾽(Adv) ἔπειτα(Adv) γόασκε(Imp)(Akt), γεγήθει(Per)(Akt) δὲ(Pt) φρένας(A) ἔνδον(Adv),
+(216) nicht|mehr danach beklagte, freute|sich aber Sinn innen,
+(217) γηθόσυνος(Adj)(N) δ᾽(Pt) ἵπποισιν(D) ἀελλοπόδεσσιν(Adj)(D) ὀχεῖτο(Imp)(M/P).
+(217) freudig aber mit|Pferden wirbel|füßigen fuhr.
+(218) ὣς(Adv) δ᾽(Pt) αὖ(Adv) Τιθωνὸν(A) χρυσόθρονος(Adj)(N) ἥρπασεν(Aor)(Akt) Ἠώς(N),
+(218) so aber wieder Tithonon gold|thronige raubte Eos,
+(219) ὑμετέρης(Adj)(G) γενεῆς(G), ἐπιείκελον(Adj)(A) ἀθανάτοισι(Adj)(D).
+(219) eurer Geschlecht|slinie, gleich den|Unsterblichen.
+(220) Βῆ(AorS)(Akt) δ᾽(Pt) ἴμεν(Prä)(Akt)(Inf) αἰτήσουσα(Fu)(Akt)(N) κελαινεφέα(Adj)(A) Κρονίωνα(A),
+(220) ging aber zu|gehen bittend|zukünftig dunkel|bewölkten Kronion,
+(221) ἀθάνατόν(Adj)(A) τ᾽(Pt) εἶναι(Prä)(Akt)(Inf) καὶ(Kon) ζώειν(Prä)(Akt)(Inf) ἤματα(A) πάντα(Adj)(A):
+(221) unsterblich auch zu|sein und zu|leben Tage alle:
+(222) τῇ(Pr)(D) δὲ(Pt) Ζεὺς(N) ἐπένευσε(Aor)(Akt) καὶ(Kon) ἐκρήηνεν(Aor)(Akt) ἐέλδωρ(A).
+(222) ihr aber Zeus nickte und erfüllte Wunsch.
+(223) νηπίη(Adj)(N), οὐδ᾽(Pt) ἐνόησε(Aor)(Akt) μετὰ(Prp) φρεσὶ(D) πότνια(Adj)(N) Ἠὼς(N)
+(223) kindisch, auch|nicht bemerkte mit Sinnen Herrin Eos
+(224) ἥβην(A) αἰτῆσαι(Aor)(Akt)(Inf) ξῦσαί(Aor)(Akt)(Inf) τ᾽(Pt) ἄπο(Prp) γῆρας(A) ὀλοιόν(Adj)(A).
+(224) Jugend zu|erbitten abzukratzen auch weg Alter verderbliches.
+(225) τὸν(Pr)(A) δ᾽(Pt) ἦ(Pt) τοι(Pt) εἵως(Adv) μὲν(Pt) ἔχεν(Imp)(Akt) πολυήρατος(Adj)(N) ἥβη(N),
+(225) ihn aber ja doch solange zwar hielt viel|begehrte Jugend,
+(226) Ἠοῖ(D) τερπόμενος(Prä)(M/P)(N) χρυσοθρόνῳ(Adj)(D), ἠριγενείῃ(Adj)(D)
+(226) bei|Eos sich|freuend gold|thronigen, früh|geborenen
+(227) ναῖε(Imp)(Akt) παρ᾽(Prp) Ὠκεανοῖο(G) ῥοῇς(D) ἐπὶ(Prp) πείρασι(D) γαίης(G):
+(227) wohnte bei des|Okeanos Strömen auf Grenzen der|Erde:
+(228) αὐτὰρ(Kon) ἐπεὶ(Kon) πρῶται(Adj)(N) πολιαὶ(Adj)(N) κατέχυντο(Imp)(M/P) ἔθειραι(N)
+(228) aber als erste graue übergossen|wurden Haare
+(229) καλῆς(Adj)(G) ἐκ(Prp) κεφαλῆς(G) εὐηγενέος(Adj)(G) τε(Pt) γενείου(G),
+(229) der|schönen aus Kopfes edel|geborenen auch des|Bartes,
+(230) τοῦ(Pr)(G) δ᾽(Pt) ἦ(Pt) τοι(Pt) εὐνῆς(G) μὲν(Pt) ἀπείχετο(Imp)(M/P) πότνια(Adj)(N) Ἠώς(N),
+(230) von|dem aber ja doch des|Lagers zwar hielt|sich|fern Herrin Eos,
+(231) αὐτὸν(Pr)(A) δ᾽(Pt) αὖτ᾽(Adv) ἀτίταλλεν(Imp)(Akt) ἐνὶ(Prp) μεγάροισιν(D) ἔχουσα(Prä)(Akt)(N),
+(231) ihn aber wieder hegte in Gemächern haltend,
+(232) σίτῳ(D) τ᾽(Pt) ἀμβροσίῃ(D) τε(Pt) καὶ(Kon) εἵματα(A) καλὰ(Adj)(A) διδοῦσα(Prä)(Akt)(N).
+(232) Speise auch Ambrosia auch und Gewänder schöne gebend.
+(233) ἀλλ᾽(Kon) ὅτε(Kon) δὴ(Pt) πάμπαν(Adv) στυγερὸν(Adj)(A) κατὰ(Prp) γῆρας(A) ἔπειγεν(Imp)(Akt),
+(233) aber als ja ganz verhasstes herab Alter drängte,
+(234) οὐδέ(Kon) τι(Pr) κινῆσαι(Aor)(Akt)(Inf) μελέων(G) δύνατ᾽(Prä)(M/P) οὐδ᾽(Kon) ἀναεῖραι(Aor)(Akt)(Inf),
+(234) und|nicht etwas zu|bewegen der|Glieder vermochte und|nicht auf|zu|heben,
+(235) ἥδε(Pr)(N) δέ(Pt) οἱ(Pr)(D) κατὰ(Prp) θυμὸν(A) ἀρίστη(Adj)(N)(Sup) φαίνετο(Imp)(M/P) βουλή(N):
+(235) diese aber ihm gemäß dem|Sinn beste schien|sich Plan:
+(236) ἐν(Prp) θαλάμῳ(D) κατέθηκε(AorS)(Akt), θύρας(A) δ᾽(Pt) ἐπέθηκε(AorS)(Akt) φαεινάς(Adj)(A).
+(236) in Gemach legte|hin, Türen aber legte|an helle.
+(237) τοῦ(Pr)(G) δ᾽(Pt) ἦ(Pt) τοι(Pt) φωνὴ(N) ῥέει(Prä)(Akt) ἄσπετος(Adj)(N), οὐδέ(Kon) τι(Pr) κῖκυς(N)
+(237) seine aber ja doch Stimme fließt unaussprechlich, und|nicht etwas Kraft
+(238) ἔσθ᾽(Prä)(Akt), οἵη(Pr)(N) πάρος(Adv) ἔσκεν(Imp)(Akt) ἐνὶ(Prp) γναμπτοῖσι(Adj)(D) μέλεσσιν(D).
+(238) ist, wie ehemals war in biegsamen Gliedern.
+(239) οὐκ(Pt) ἂν(Pt) ἐγώ(Pr)(N) γε(Pt) σὲ(Pr)(A) τοῖον(Adj)(A) ἐν(Prp) ἀθανάτοισιν(Adj)(D) ἑλοίμην(Aor)(Med)(Op)
+(239) nicht wohl ich ja dich solchen unter Unsterblichen wählen|würde
+(240) ἀθάνατόν(Adj)(A) τ᾽(Pt) εἶναι(Prä)(Akt)(Inf) καὶ(Kon) ζώειν(Prä)(Akt)(Inf) ἤματα(A) πάντα(Adj)(A).
+(240) unsterblich auch zu|sein und zu|leben Tage alle.
+(241) ἀλλ᾽(Kon) εἰ(Kon) μὲν(Pt) τοιοῦτος(Adj)(N) ἐὼν(Prä)(Akt)(N) εἶδός(A) τε(Pt) δέμας(A) τε(Pt)
+(241) sondern wenn zwar solcher seiend Gestalt auch Leib auch
+(242) ζώοις(Prä)(Akt)(Op) ἡμέτερός(Adj)(N) τε(Pt) πόσις(N) κεκλημένος(Per)(M/P)(N) εἴης(Prä)(Akt)(Op),
+(242) lebtest unser auch Gatte genannt wärest,
+(243) οὐκ(Pt) ἂν(Pt) ἔπειτά(Adv) μ᾽(Pr)(A) ἄχος(N) πυκινὰς(Adj)(A) φρένας(A) ἀμφικαλύπτοι(Prä)(Akt)(Op).
+(243) nicht wohl danach mich Schmerz dichte Sinne um|hüllte.
+(244) νῦν(Adv) δέ(Pt) σε(Pr)(A) μὲν(Pt) τάχα(Adv) γῆρας(N) ὁμοίιον(Adj)(N) ἀμφικαλύψει(Fu)(Akt)
+(244) nun aber dich zwar bald Alter gleiches um|hüllen|wird
+(245) νηλειές(Adj)(N), τό(Pr)(N) τ᾽(Pt) ἔπειτα(Adv) παρίσταται(Prä)(M/P) ἀνθρώποισιν(D),
+(245) unbarmherzig, das auch danach bei|steht Menschen,
+(246) οὐλόμενον(Adj)(N), καματηρόν(Adj)(N), ὅτε(Kon) στυγέουσι(Prä)(Akt) θεοί(N) περ(Pt).
+(246) verderblich, mühevoll, wenn verabscheuen Götter gar.
+(247) αὐτὰρ(Kon) ἐμοὶ(Pr)(D) μέγ᾽(Adv) ὄνειδος(N) ἐν(Prp) ἀθανάτοισι(Adj)(D) θεοῖσιν(D)
+(247) aber mir groß Schmach unter Unsterblichen Göttern
+(248) ἔσσεται(Fu)(M/P) ἤματα(A) πάντα(Adj)(A) διαμπερὲς(Adv) εἵνεκα(Prp) σεῖο(Pr)(G),
+(248) wird|sein Tage alle beständig wegen deiner,
+(249) οἳ(Pr)(N) πρὶν(Adv) ἐμοὺς(Adj)(A) ὀάρους(A) καὶ(Kon) μήτιας(A), αἷς(Pr)(D) ποτε(Pt) πάντας(Adj)(A)
+(249) die früher meine Gespräche und Ratschläge, mit|denen einst alle
+(250) ἀθανάτους(Adj)(A) συνέμιξα(Aor)(Akt) καταθνητῇσι(Adj)(D) γυναιξί(D),
+(250) Unsterblichen vermischte mit|sterblichen Frauen,
+(251) τάρβεσκον(Imp)(Akt): πάντας(Adj)(A) γὰρ(Pt) ἐμὸν(Adj)(N) δάμνασκε(Imp)(Akt) νόημα(N).
+(251) scheuten: alle denn mein Gedanke bezwang|immer.
+(252) νῦν(Adv) δὲ(Pt) δὴ(Pt) οὐκέτι(Adv) μοι(Pr)(D) στόμα(N) χείσεται(Fu)(M/P) ἐξονομῆναι(Aor)(Akt)(Inf)
+(252) nun aber ja nicht|mehr mir Mund wird|fließen heraus|zu|nennen
+(253) τοῦτο(Pr)(A) μετ᾽(Prp) ἀθανάτοισιν(Adj)(D), ἐπεὶ(Kon) μάλα(Adv) πολλὸν(Adv) ἀάσθην(Aor)(M/P),
+(253) dies unter Unsterblichen, da sehr viel verirrte|ich,
+(254) σχέτλιον(Adj)(A), οὐκ(Pt) ὀνοταστόν(Adj)(A), ἀπεπλάγχθην(Aor)(M/P) δὲ(Pt) νόοιο(G),
+(254) verwegenes, nicht nennenswertes, ab|irrte|ich aber des|Sinnes,
+(255) παῖδα(A) δ᾽(Pt) ὑπὸ(Prp) ζώνῃ(D) ἐθέμην(Aor)(Med) βροτῷ(D) εὐνηθεῖσα(Aor)(Pas)(N).
+(255) Kind aber unter Gürtel setzte|ich Sterblichen be|schlafen|worden.
+(256) τὸν(Pr)(A) μέν(Pt), ἐπὴν(Kon) δὴ(Pt) πρῶτον(Adv) ἴδῃ(Aor)(Akt)(Knj) φάος(A) ἠελίοιο(G),
+(256) den zwar, wenn|wann ja zuerst sieht Licht der|Sonne,
+(257) Νύμφαι(N) μιν(Pr)(A) θρέψουσιν(Fu)(Akt) ὀρεσκῷοι(Adj)(N) βαθύκολποι(Adj)(N),
+(257) Nymphen ihn werden|nähren berg|wohnende tief|busige,
+(258) αἳ(Pr)(N) τόδε(Pr)(A) ναιετάουσιν(Prä)(Akt) ὄρος(A) μέγα(Adj)(A) τε(Pt) ζάθεόν(Adj)(A) τε(Pt):
+(258) die dieses be|wohnen Berg großen auch heiligen auch:
+(259) αἵ(Pr)(N) ῥ᾽(Pt) οὔτε(Kon) θνητοῖς(Adj)(D) οὔτ᾽(Kon) ἀθανάτοισιν(Adj)(D) ἕπονται(Prä)(M/P).
+(259) die ja weder Sterblichen noch Unsterblichen folgen.
+(260) δηρὸν(Adv) μὲν(Pt) ζώουσι(Prä)(Akt) καὶ(Kon) ἄμβροτον(Adj)(A) εἶδαρ(A) ἔδουσι(Prä)(Akt)
+(260) lange zwar leben und ambrosische Speise essen
+(261) καί(Kon) τε(Pt) μετ᾽(Prp) ἀθανάτοισι(Adj)(D) καλὸν(Adj)(A) χορὸν(A) ἐρρώσαντο(Aor)(M/P).
+(261) und auch unter Unsterblichen schönen Reigen nahmen|teil.
+(262) τῇσι(Pr)(D) δὲ(Pt) Σειληνοὶ(N) καὶ(Kon) ἐύσκοπος(Adj)(N) Ἀργειφόντης(N)
+(262) bei|ihnen aber Silene und scharf|blickender Argus|töter
+(263) μίσγοντ᾽(Prä)(Akt) ἐν(Prp) φιλότητι(D) μυχῷ(D) σπείων(Prä)(Akt)(N) ἐροέντων(Adj)(G).
+(263) mischen|sich in Liebe im|Winkel gießend der|lieblich|strömenden.
+(264) τῇσι(Pr)(D) δ᾽(Pt) ἅμ᾽(Adv) ἢ(Kon) ἐλάται(N) ἠὲ(Kon) δρύες(N) ὑψικάρηνοι(Adj)(N)
+(264) bei|ihnen aber zugleich entweder Tannen oder Eichen hoch|wipflige
+(265) γεινομένῃσιν(Prä)(M/P)(D) ἔφυσαν(Aor)(Akt) ἐπὶ(Prp) χθονὶ(D) βωτιανείρῃ(Adj)(D),
+(265) geboren|werdenden wuchsen auf Erde menschen|nährender,
+(266) καλαί(Adj)(N), τηλεθάουσαι(Prä)(Akt)(N), ἐν(Prp) οὔρεσιν(D) ὑψηλοῖσιν(Adj)(D).
+(266) schöne, blühend|seiend, in Bergen hohen.
+(267) ἑστᾶσ᾽(Per)(M/P)(N) ἠλίβατοι(Adj)(N), τεμένη(A) δέ(Pt) ἑ(Pr)(A) κικλήσκουσιν(Prä)(Akt)
+(267) stehend steil, Heiligtümer aber sie nennen
+(268) ἀθανάτων(Adj)(G): τὰς(Pr)(A) δ᾽(Pt) οὔ(Pt) τι(Pr) βροτοὶ(N) κείρουσι(Prä)(Akt) σιδήρῳ(D):
+(268) der|Unsterblichen: jene aber nicht etwas Sterbliche schneiden mit|Eisen:
+(269) ἀλλ᾽(Kon) ὅτε(Kon) κεν(Pt) δὴ(Pt) μοῖρα(N) παρεστήκῃ(Per)(Akt)(Knj) θανάτοιο(G),
+(269) sondern wenn wohl ja Anteil|Schicksal bei|steht des|Todes,
+(270) ἀζάνεται(Prä)(M/P) μὲν(Pt) πρῶτον(Adv) ἐπὶ(Prp) χθονὶ(D) δένδρεα(N) καλά(Adj)(N),
+(270) verdorren zwar zuerst auf Erde Bäume schöne,
+(271) φλοιὸς(N) δ᾽(Pt) ἀμφιπεριφθινύθει(Imp)(Akt), πίπτουσι(Prä)(Akt) δ᾽(Pt) ἄπ᾽(Prp) ὄζοι(N),
+(271) Rinde aber rings|um|hin|schwand, fallen aber ab Zweige,
+(272) τῶν(Pr)(G) δέ(Pt) θ᾽(Pt) ὁμοῦ(Adv) ψυχὴ(N) λείπει(Prä)(Akt) φάος(A) ἠελίοιο(G).
+(272) deren aber auch zugleich Seele verlässt Licht der|Sonne.
+(273) αἳ(Pr)(N) μὲν(Pt) ἐμὸν(Adj)(A) θρέψουσι(Fu)(Akt) παρὰ(Prp) σφίσιν(Pr)(D) υἱὸν(A) ἔχουσαι(Prä)(Akt)(N).
+(273) die zwar meinen werden|nähren bei sich Sohn haltend.
+(274) τὸν(Pr)(A) μὲν(Pt) ἐπὴν(Kon) δὴ(Pt) πρῶτον(Adv) ἕλῃ(Aor)(Akt)(Knj) πολυήρατος(Adj)(N) ἥβη(N),
+(274) den zwar wenn|wann ja zuerst ergreife viel|begehrte Jugend,
+(275) ἄξουσίν(Fu)(Akt) σοι(Pr)(D) δεῦρο(Adv) θεαὶ(N) δείξουσί(Fu)(Akt) τε(Pt) παῖδα(A).
+(275) werden|führen dir hierher Göttinnen werden|zeigen auch Kind.
+(276) σοὶ(Pr)(D) δ᾽(Pt) ἐγώ(Pr)(N), ὄφρα(Kon) κε(Pt) ταῦτα(Pr)(A) μετὰ(Prp) φρεσὶ(D) πάντα(Adj)(A) διέλθω(AorS)(Akt)(Knj),
+(276) dir aber ich, damit ja dieses mitten|in Sinnen alle durch|gehe,
+(277) ἐς(Prp) πέμπτον(Adj)(A) ἔτος(A) αὖτις(Adv) ἐλεύσομαι(Fu)(Med) υἱὸν(A) ἄγουσα(Prä)(Akt)(N).
+(277) in fünftes Jahr wieder werde|kommen Sohn führend.
+(278) τὸν(Pr)(A) μὲν(Pt) ἐπὴν(Kon) δὴ(Pt) πρῶτον(Adv) ἴδῃς(AorS)(Akt)(Knj) θάλος(A) ὀφθαλμοῖσι(D),
+(278) den zwar wenn|wann ja zuerst siehst Spross mit|Augen,
+(279) γηθήσεις(Fu)(Akt) ὁρόων(Prä)(Akt)(N): μάλα(Adv) γὰρ(Pt) θεοείκελος(Adj)(N) ἔσται(Fu)(M/P):
+(279) wirst|dich|freuen sehend: sehr denn Gott|gleich wird|sein:
+(280) ἄξεις(Fu)(Akt) δ᾽(Pt) αὐτίκα(Adv) νιν(Pr)(A) ποτὶ(Prp) Ἴλιον(A) ἠνεμόεσσαν(Adj)(A).
+(280) wirst|führen aber sofort ihn zu Ilion wind|reich.
+(281) ἢν(Kon) δέ(Pt) τις(Pr)(N) εἴρηταί(Per)(M/P) σε(Pr)(A) καταθνητῶν(Adj)(G) ἀνθρώπων(G),
+(281) wenn aber jemand gesagt|ist dich der|sterblichen Menschen,
+(282) ἥ(Pr)(N) τις(Pr)(N) σοι(Pr)(D) φίλον(Adj)(A) υἱὸν(A) ὑπὸ(Prp) ζώνῃ(D) θέτο(Aor)(Med) μήτηρ(N),
+(282) die irgendeine dir lieben Sohn unter dem|Gürtel setzte Mutter,
+(283) τῷ(Pr)(D) δὲ(Pt) σὺ(Pr)(N) μυθεῖσθαι(Prä)(M/P)(Inf) μεμνημένος(Per)(M/P)(N), ὥς(Kon) σε(Pr)(A) κελεύω(Prä)(Akt):
+(283) dem aber du zu|reden erinnert|seiend, wie dich befehle:
+(284) φάσθαι(Aor)(Med)(Inf) τοι(Pr)(D) Νύμφης(G) καλυκώπιδος(Adj)(G) ἔκγονον(A) εἶναι(Prä)(Akt)(Inf),
+(284) zu|sagen dir der|Nymphe schön|wangigen Abkömmling zu|sein,
+(285) αἳ(Pr)(N) τόδε(Pr)(A) ναιετάουσιν(Prä)(Akt) ὄρος(A) καταειμένον(Per)(Pas)(A) ὕλῃ(D).
+(285) die dieses be|wohnen Berg bedeckt|worden mit|Wald.
+(286) εἰ(Kon) δέ(Pt) κεν(Pt) ἐξείπῃς(AorS)(Akt)(Knj) καὶ(Kon) ἐπεύξεαι(Prä)(M/P) ἄφρονι(Adj)(D) θυμῷ(D)
+(286) wenn aber wohl aus|sprichst und rühmst|dich törichtem Sinn
+(287) ἐν(Prp) φιλότητι(D) μιγῆναι(Aor)(Pas)(Inf) ἐυστεφάνῳ(Adj)(D) Κυθερείῃ(D),
+(287) in Liebe gemischt|zu|werden gut|bekränzten Kytherie,
+(288) Ζεύς(N) σε(Pr)(A) χολωσάμενος(Aor)(Med)(N) βαλέει(Fu)(Akt) ψολόεντι(Adj)(D) κεραυνῷ(D).
+(288) Zeus dich erzürnt|seiend wird|werfen rußig mit|dem|Blitz.
+(289) εἴρηταί(Per)(M/P) τοι(Pr)(D) πάντα(Adj)(N): σὺ(Pr)(N) δὲ(Pt) φρεσὶ(D) σῇσι(Adj)(D) νοήσας(Aor)(Akt)(N),
+(289) gesagt|ist dir alles: du aber in|Sinnen deinen verstanden|habend,
+(290) ἴσχεο(Prä)(M/P)(Imv) μηδ᾽(Pt) ὀνόμαινε(Prä)(Akt)(Imv), θεῶν(G) δ᾽(Pt) ἐποπίζεο(Prä)(M/P)(Imv) μῆνιν(A).
+(290) halte|dich|zurück und|nicht nenne, der|Götter aber achte|auf Zorn.
+(292) χαῖρε(Prä)(Akt)(Imv), θεά(V), Κύπροιο(G) ἐυκτιμένης(Per)(Pas)(G) μεδέουσα(Prä)(Akt)(N):
+(292) sei|gegrüßt, Göttin, Zyperns wohl|erbauten waltend|seiend:
+(293) σεῦ(Pr)(G) δ᾽(Pt) ἐγὼ(Pr)(N) ἀρξάμενος(Aor)(Med)(N) μεταβήσομαι(Fu)(Med) ἄλλον(Adj)(A) ἐς(Prp) ὕμνον(A).
+(293) deiner aber ich angefangen|habend werde|übergehen anderen in Hymnus.

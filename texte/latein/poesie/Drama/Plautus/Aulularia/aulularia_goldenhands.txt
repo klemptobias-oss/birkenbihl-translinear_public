@@ -1,0 +1,913 @@
+(-23x) == Argumentum I ==
+(-23)  LAR FAMILIARIS PROLOGUS: Senex avārus vix sibi crēdēns Eucliō
+(-22)  LAR FAMILIARIS PROLOGUS: domī suae dēfossam multīs cum opibus
+(-21)  LAR FAMILIARIS PROLOGUS: aulam invenit, rūrsumque penitus conditam
+(-20)  LAR FAMILIARIS PROLOGUS: exsanguis āmēns servat. ejus fīliam
+(-19)  LAR FAMILIARIS PROLOGUS: Lycōnidēs vitiārat. intereā senex
+(-18)  LAR FAMILIARIS PROLOGUS: Megadōrus ā sorōre suāsus dūcere
+(-17)  LAR FAMILIARIS PROLOGUS: uxōrem avārī gnātam dēposcit sibi.
+(-16)  LAR FAMILIARIS PROLOGUS: dūrus senex vix prōmittit, atque aulae timēns
+(-15)  LAR FAMILIARIS PROLOGUS: domō sublātam variīs abstrūdit locīs.
+(-14)  LAR FAMILIARIS PROLOGUS: īnsidiās servus facit hujus Lycōnidis
+(-13)  LAR FAMILIARIS PROLOGUS: quī virginem vitiārat; atque ipse obsecrat
+(-12)  LAR FAMILIARIS PROLOGUS: avunculum Megadōrum sibimet cēdere
+(-11)  LAR FAMILIARIS PROLOGUS: uxōrem amantī. per dolum mox Eucliō
+(-10)  LAR FAMILIARIS PROLOGUS: cum perdidisset aulam, īnspērātō invenit
+(-9)  LAR FAMILIARIS PROLOGUS: laetusque nātam collocat Lycōnidī.
+(-8x) == Argumentum Ii ==
+(-8)  LAR FAMILIARIS PROLOGUS: Aulam repertam aurī plēnam Eucliō
+(-7)  LAR FAMILIARIS PROLOGUS: Vī summā servat, miserīs affectus modīs.
+(-6)  LAR FAMILIARIS PROLOGUS: Lycōnidēs istīus vitiat fīliam.
+(-5)  LAR FAMILIARIS PROLOGUS: Vult hanc Megadōrus indōtātam dūcere,
+(-4)  LAR FAMILIARIS PROLOGUS: Libēnsque ut faciat dat coquōs cum obsōniō.
+(-3)  LAR FAMILIARIS PROLOGUS: Aurō formīdat Eucliō, abstrūdit forīs.
+(-2)  LAR FAMILIARIS PROLOGUS: Rē omnī īnspectā compressōris servolus
+(-1)  LAR FAMILIARIS PROLOGUS: Id surpit. illic Eucliōnī rem refert.
+(0)  LAR FAMILIARIS PROLOGUS: Ab eō dōnātur aurō, uxōre et fīliō.
+(1x) === Prolog ===
+(1)  LAR FAMILIARIS PROLOGUS: Nē quis mīrētur quī sim, paucīs ēloquar.
+(2)  LAR FAMILIARIS PROLOGUS: ego Lār sum familiāris ex hāc familiā
+(3)  LAR FAMILIARIS PROLOGUS: unde exeuntem mē aspexistis. hanc domum
+(4)  LAR FAMILIARIS PROLOGUS: jam multōs annōs est cum possideō et colō
+(5)  LAR FAMILIARIS PROLOGUS: patrīque avōque jam hujus quī nunc hīc habet.
+(6)  LAR FAMILIARIS PROLOGUS: sed mi avus hujus obsecrāns concrēdidit
+(7)  LAR FAMILIARIS PROLOGUS: thēnsaurum aurī clam omnīs: in mediō focō
+(8)  LAR FAMILIARIS PROLOGUS: dēfōdit, venerāns me ut id servārem sibi.
+(9)  LAR FAMILIARIS PROLOGUS: is quoniam moritur (ita avidō ingeniō fuit)
+(10)  LAR FAMILIARIS PROLOGUS: numquam indicāre id fīliō voluit suō,
+(11)  LAR FAMILIARIS PROLOGUS: inopemque optāvit potius eum relinquere,
+(12)  LAR FAMILIARIS PROLOGUS: quam eum thēnsaurum commōnstrāret fīliō;
+(13)  LAR FAMILIARIS PROLOGUS: agrī relīquit ēī nōn magnum modum,
+(14)  LAR FAMILIARIS PROLOGUS: quō cum labōre magnō et miserē vīveret.
+(15)  LAR FAMILIARIS PROLOGUS: ubi is obiit mortem quī mihi id aurum crēdidit,
+(16)  LAR FAMILIARIS PROLOGUS: coepī observāre, ecquī majōrem fīlius
+(17)  LAR FAMILIARIS PROLOGUS: mihi honōrem habēret quam ejus habuisset pater.
+(18)  LAR FAMILIARIS PROLOGUS: atque ille vērō minus minusque impendiō
+(19)  LAR FAMILIARIS PROLOGUS: cūrāre minusque mē impertīre honōribus.
+(20)  LAR FAMILIARIS PROLOGUS: item ā mē contrā factum est, nam item obiit diem.
+(21)  LAR FAMILIARIS PROLOGUS: is ex sē hunc relīquit quī hīc nunc habitat fīlium
+(22)  LAR FAMILIARIS PROLOGUS: pariter mōrātum ut pater avusque hujus fuit.
+(23)  LAR FAMILIARIS PROLOGUS: huic fīlia ūna est. ea mihī cottīdiē
+(24)  LAR FAMILIARIS PROLOGUS: aut tūre aut vīnō aut aliquī semper supplicat,
+(25)  LAR FAMILIARIS PROLOGUS: dat mihi corōnās. ejus honōris grātiā
+(26)  LAR FAMILIARIS PROLOGUS: fēcī, thēnsaurum ut hīc reperīret Eucliō,
+(27)  LAR FAMILIARIS PROLOGUS: quō illam facilius nūptum, sī vellet, daret.
+(28)  LAR FAMILIARIS PROLOGUS: nam compressit eam dē summō adulēscēns locō.
+(29)  LAR FAMILIARIS PROLOGUS: is scīt adulēscēns quae sit quam compresserit,
+(30)  LAR FAMILIARIS PROLOGUS: illa illum nescit, neque compressam autem pater.
+(31)  LAR FAMILIARIS PROLOGUS: eam ego hodiē faciam ut hic senex dē proximō
+(32)  LAR FAMILIARIS PROLOGUS: sibi uxōrem poscat. id eā faciam grātiā,
+(33)  LAR FAMILIARIS PROLOGUS: quō ille eam facilius dūcat quī compresserat.
+(34)  LAR FAMILIARIS PROLOGUS: et hic quī poscet eam sibi uxōrem senex,
+(35)  LAR FAMILIARIS PROLOGUS: is adulēscentis illīus est avunculus,
+(36)  LAR FAMILIARIS PROLOGUS: quī illam stuprāvit noctū, Cereris vigiliīs.
+(37)  LAR FAMILIARIS PROLOGUS: sed hic senex jam clāmat intus ut solet.
+(38)  LAR FAMILIARIS PROLOGUS: anum forās extrūdit, nē sit cōnscia.
+(39)  LAR FAMILIARIS PROLOGUS: crēdō aurum īnspicere vult, nē surruptum siet.
+(40y) === Akt I ===
+(40x) == Szene I.i ==
+(40)  EUCLIO SENEX: Exī, inquam. age exī. exeundum hercle tibi hinc est forās,
+(41)  EUCLIO SENEX: circumspectātrīx cum oculīs ēmissīciīs.
+(42)  STAPHYLA ANUS: Nam cūr mē miseram verberās? Ut misera sīs
+(43)  EUCLIO SENEX: atque ut tē dignam mala malam aetātem exigās.
+(44)  STAPHYLA ANUS: Nam quā mē nunc causā extrūsistī ex aedibus?
+(45)  EUCLIO SENEX: Tibi ego ratiōnem reddam, stimulōrum seges?
+(46)  EUCLIO SENEX: illūc regredere ab ōstiō. illūc sīs vidē,
+(47)  EUCLIO SENEX: ut incēdit. at scīn quō modō tibi rēs sē habet?
+(48)  EUCLIO SENEX: sī hercle hodiē fustem cēperō aut stimulum in manum,
+(49)  EUCLIO SENEX: testūdineum istum tibi ego grandībō gradum.
+(50)  STAPHYLA ANUS: Utinam mē dīvī adaxint ad suspendium
+(51)  STAPHYLA ANUS: potius quidem quam hōc pactō apud tē serviam.
+(52)  EUCLIO SENEX: At ut scelesta sōla sēcum murmurat.
+(53)  EUCLIO SENEX: oculōs hercle ego istōs, improba, effodiam tibi,
+(54)  EUCLIO SENEX: nē mē observāre possīs quid rērum geram.
+(55)  EUCLIO SENEX: abscēde etiam nunc, etiam nunc, etiam, ohē,
+(56)  EUCLIO SENEX: istīc astātō. sī hercle tū ex istōc locō
+(57)  EUCLIO SENEX: digitum trānsversum aut unguem lātum excesserīs
+(58)  EUCLIO SENEX: aut sī respexis, dōnicum ego tē jusserō,
+(59)  EUCLIO SENEX: continuō hercle ego tē dēdam discipulam crucī.
+(60)  EUCLIO SENEX: scelestiōrem mē hāc anū certō sciō
+(61)  EUCLIO SENEX: vīdisse numquam, nimisque ego hanc metuō male,
+(62)  EUCLIO SENEX: nē mī ex īnsidiīs verba imprūdentī duit
+(63)  EUCLIO SENEX: neu persentīscat aurum ubi est absconditum,
+(64)  EUCLIO SENEX: quae in occipitiō quoque habet oculōs pessima.
+(65)  EUCLIO SENEX: nunc ībō ut vīsam estne ita aurum ut condidī,
+(66)  EUCLIO SENEX: quod mē sollicitat plūrimīs miserum modīs.
+(67)  STAPHYLA ANUS: Noenum mēcastor quid ego erō dīcam meō
+(68)  STAPHYLA ANUS: malae reī ēvēnisse quamve īnsāniam,
+(69)  STAPHYLA ANUS: queō comminīscī; ita mē miseram ad hunc modum
+(70)  STAPHYLA ANUS: deciēns diē ūnō saepe extrūdit aedibus.
+(71)  STAPHYLA ANUS: nescio pol quae illunc hominem intemperiae tenent:
+(72)  STAPHYLA ANUS: pervigilat noctēs tōtās, tum autem interdiūs
+(73)  STAPHYLA ANUS: quasi claudus sūtor domi sedet tōtōs diēs.
+(74)  STAPHYLA ANUS: neque jam quō pactō cēlem erīlis fīliae
+(75)  STAPHYLA ANUS: probrum, propinqua partitūdō cui appetit,
+(76)  STAPHYLA ANUS: queō comminīscī; neque quicquam meliust mihi,
+(77)  STAPHYLA ANUS: ut opīnor, quam ex mē ut ūnam faciam litteram
+(78)  STAPHYLA ANUS: longam, meum laqueō collum quandō obstrīnxerō.
+(79x) == Szene I.ii ==
+(79)  EUCLIO SENEX: Nunc dēfaecātō dēmum animō ēgredior domō,
+(80)  EUCLIO SENEX: postquam perspexī salva esse intus omnia.
+(81)  EUCLIO SENEX: redi nūnciam intrō atque intus servā. Quippinī?
+(82)  STAPHYLA ANUS: ego intus servem? an nē quis aedīs auferat?
+(83)  STAPHYLA ANUS: nam hīc apud nōs nihil est aliud quaestī fūribus,
+(84)  STAPHYLA ANUS: ita ināniīs sunt opplētae atque arāneīs.
+(85)  EUCLIO SENEX: Mīrum quīn tuā mē causā faciat Juppiter
+(86)  EUCLIO SENEX: Philippum rēgem aut Dārēum, trivenēfica.
+(87)  EUCLIO SENEX: arāneās mihi ego illās servārī volō.
+(88)  EUCLIO SENEX: pauper sum; fateor, patior; quod dī dant ferō.
+(89)  EUCLIO SENEX: abī intrō, occlūde jānuam. jam ego hīc erō.
+(90)  EUCLIO SENEX: cave quemquam aliēnum in aedīs intrō mīserīs.
+(91)  EUCLIO SENEX: quod quispiam ignem quaerat, exstinguī volō,
+(92)  EUCLIO SENEX: nē causae quid sit quod tē quisquam quaeritet.
+(93)  EUCLIO SENEX: nam sī ignis vīvet, tu exstinguēre extempulō.
+(94)  EUCLIO SENEX: tum aquam aufūgisse dīcitō, sī quis petet.
+(95)  EUCLIO SENEX: cultrum, secūrim, pistillum, mortārium,
+(96)  EUCLIO SENEX: quae ūtenda vāsa semper vīcīnī rogant,
+(97)  EUCLIO SENEX: furēs vēnisse atque abstulisse dīcitō.
+(98)  EUCLIO SENEX: profectō in aedīs meās mē absente nēminem
+(99)  EUCLIO SENEX: volō intrō mittī. atque etiam hoc praedīcō tibi,
+(100)  EUCLIO SENEX: sī Bona Fortūna veniat, nē intrō mīserīs.
+(101)  STAPHYLA ANUS: Pol ea ipsa crēdō nē intrō mittātur cavet,
+(102)  STAPHYLA ANUS: nam ad aedīs nostrās nusquam adit, quāquam prope.
+(103)  EUCLIO SENEX: Tacē atque abī intrō. Taceō atque abeō. Occlūde sīs
+(104)  EUCLIO SENEX: forēs ambōbus pessulīs. jam ego hīc erō.
+(105)  EUCLIO SENEX: discrucior animī, quia ab domō abeundum est mihi.
+(106)  EUCLIO SENEX: nimis hercle invītus abeō. sed quid agam sciō.
+(107)  EUCLIO SENEX: nam noster nostrae quī est magister cūriae
+(108)  EUCLIO SENEX: dīvidere argentī dīxit nummōs in virōs;
+(109)  EUCLIO SENEX: id sī relinquō ac nōn petō, omnēs īlicō
+(110)  EUCLIO SENEX: mē suspicentur, crēdō, habēre aurum domī.
+(111)  EUCLIO SENEX: nam vērī simile nōn est hominem pauperem
+(112)  EUCLIO SENEX: pauxillum parvī facere quīn nummum petat.
+(113)  EUCLIO SENEX: nam nunc cum cēlō sēdulō omnīs, nē sciant,
+(114)  EUCLIO SENEX: omnēs videntur scīre et mē benignius
+(115)  EUCLIO SENEX: omnēs salūtant quam salūtābant prius;
+(116)  EUCLIO SENEX: adeunt, cōnsistunt, cōpulantur dexterās,
+(117)  EUCLIO SENEX: rogitant mē ut valeam, quid agam, quid rērum geram.
+(118)  EUCLIO SENEX: nunc quō profectus sum ībō; postideā domum
+(119)  EUCLIO SENEX: mē rūrsum quantum poterō tantum recipiam.
+(120y) === Akt II ===
+(120x) == Szene Ii.i ==
+(120)  EUNOMIA MATRONA: Velim tē arbitrārī mē haec verba, frāter,
+(121)  EUNOMIA MATRONA: meāī fidēī tuāīque rēī
+(122)  EUNOMIA MATRONA: causā facere, ut aequum est germānam sorōrem.
+(123)  EUNOMIA MATRONA: quamquam hau falsa sum nōs odiōsās habērī;
+(124)  EUNOMIA MATRONA: nam multum loquācēs meritō omnēs habēmur,
+(125)  EUNOMIA MATRONA: nec mūtam profectō repertam ūllam esse
+(126)  EUNOMIA MATRONA: aut hodiē dīcunt mulierem aut ūllō in saeclō.
+(127)  EUNOMIA MATRONA: vērum hoc, frāter, ūnum tamen cōgitātō,
+(128)  EUNOMIA MATRONA: tibī proximam mē mihīque esse item tē;
+(129)  EUNOMIA MATRONA: ita aequum est quod in rem esse utrīque arbitrēmur
+(130)  EUNOMIA MATRONA: et mī tē et tibī mē cōnsulere et monēre;
+(131)  EUNOMIA MATRONA: neque occultum id habērī neque per metum mussārī,
+(132)  EUNOMIA MATRONA: quīn participem pariter egō tē et tū mē ut faciās.
+(133)  EUNOMIA MATRONA: eō nunc ego sēcrētō tēd hūc forās sēdūxī,
+(134)  EUNOMIA MATRONA: ut tuam rem ego tēcum hīc loquerer familiārem.
+(135)  MEGADORUS SENEX: Dā mī, optuma fēmina, manum.
+(136)  EUNOMIA MATRONA: Ubi ea est? quis eā est nam optima?
+(137)  MEGADORUS SENEX: Tū. Tūne aīs? Sī negas, negō.
+(138)  EUNOMIA MATRONA: Decet tē quidem vēra prōloquī;
+(139)  EUNOMIA MATRONA: nam optuma nūlla potest ēligī:
+(140)  EUNOMIA MATRONA: alia aliā pejor, frāter, est. Idem ego arbitror,
+(141)  MEGADORUS SENEX: nec tibi adversārī certum est dē istāc rē umquam, soror.
+(142)  EUNOMIA MATRONA: Dā mihi operam amābō. Tuast, ūtere atque
+(143)  MEGADORUS SENEX: imperā, sī quid vīs.
+(144)  EUNOMIA MATRONA: Id quod in rem tuam optumum esse arbitror,
+(145)  EUNOMIA MATRONA: tēd id monitum adventō.
+(146)  MEGADORUS SENEX: Soror, mōre tuō facis. Facta volō.
+(147)  MEGADORUS SENEX: Quid est id, soror? Quod tibī sempiternum
+(148)  EUNOMIA MATRONA: salūtāre sit: līberīs prōcreandīs,
+(149)  EUNOMIA MATRONA: ita dī faxint, volo tē uxōrem
+(150)  EUNOMIA MATRONA: domum dūcere. Ei occidi. Quid ita?
+(151)  MEGADORUS SENEX: Quia mihi miserō cerebrum excutiunt
+(152)  MEGADORUS SENEX: tua dicta, soror: lapidēs loqueris.
+(153)  EUNOMIA MATRONA: Heia, hoc face quod tē jubet soror. Sī lubeat, faciam.
+(154)  EUNOMIA MATRONA: In rem hoc tuam est. Ut quidem ēmoriar prius quam dūcam.
+(155)  MEGADORUS SENEX: sed hīs lēgibus sī quam dare vīs dūcam:
+(156)  MEGADORUS SENEX: quae crās veniat, perendiē forās ferātur;
+(157)  MEGADORUS SENEX: hīs lēgibus quam dare vīs? cedo: nūptias adōrnā.
+(158)  EUNOMIA MATRONA: Cum maximā possum tibī, frāter, dare dōte;
+(159)  EUNOMIA MATRONA: sed est grandior nātū: media est mulieris aetās.
+(160)  EUNOMIA MATRONA: eam sī jubēs, frāter, tibī mē poscere, poscam.
+(161)  MEGADORUS SENEX: Num nōn vīs mē interrogāre tē? Immō, sī quid vīs, rogā.
+(162)  MEGADORUS SENEX: Post mediam aetātem quī mediā dūcit uxōrem domum,
+(163)  MEGADORUS SENEX: sī eam senex anum praegnātem fortuītō fēcerit,
+(164)  MEGADORUS SENEX: quid dubitās, quīn sit parātum nōmen puerō Postumus?
+(165)  MEGADORUS SENEX: nunc ego istum, soror, labōrem dēmam et dēminuam tibi.
+(166)  MEGADORUS SENEX: ego virtūte deum et majōrum nostrum dīves sum satis.
+(167)  MEGADORUS SENEX: istās magnās factiōnēs, animōs, dōtēs dapsilīs,
+(168)  MEGADORUS SENEX: clāmōrēs, imperia, eburāta vehicla, pallās, purpuram,
+(169)  MEGADORUS SENEX: nīl moror quae in servitūtem sūmptibus redigunt virōs.
+(170)  EUNOMIA MATRONA: Dīc mihi, quaesō, quis ea est, quam vīs dūcere uxōrem? Ēloquar.
+(171)  MEGADORUS SENEX: nōstīn hunc senem Eucliōnem ex proximō pauperculum?
+(172)  EUNOMIA MATRONA: Nōvī, hominem hau malum mēcastor. Ejus cupiō fīliam
+(173)  MEGADORUS SENEX: virginem mihi dēspondērī. verba nē faciās, soror.
+(174)  MEGADORUS SENEX: scio quid dictūra ēs: hanc esse pauperem. haec pauper placet.
+(175)  EUNOMIA MATRONA: Dī bene vertant. Idem ego spērō. Quid mē? num quid vīs? Valē.
+(176)  EUNOMIA MATRONA: Et tū, frāter. Ego conveniam Eucliōnem, sī domī est.
+(177)  MEGADORUS SENEX: sed eccum videō. nesciō unde sēsē homō recipit domum.
+(178x) == Szene Ii.ii ==
+(178)  EUCLIO SENEX: Praesāgībat mī animus frūstrā mē īre, cum exībam domō;
+(179)  EUCLIO SENEX: itaque abībam invītus; nam neque quisquam cūriālium
+(180)  EUCLIO SENEX: vēnit neque magister quem dīvidere argentum oportuit.
+(181)  EUCLIO SENEX: nunc domum properāre properō, nam egomet sum hīc, animus domī est.
+(182)  MEGADORUS SENEX: Salvus atque fortūnātus, Eucliō, semper siēs.
+(183)  EUCLIO SENEX: Dī tē ament, Megadōre. Quid tū? rēctēn atque ut vīs valēs?
+(184)  EUCLIO SENEX: Nōn temerārium est, ubi dīves blandē appellat pauperem.
+(185)  EUCLIO SENEX: jam illic homō aurum scit mē habēre, eō mē salūtat blandius.
+(186)  MEGADORUS SENEX: Ain tū tē valēre? Pol ego hau perbene ā pecūniā.
+(187)  MEGADORUS SENEX: Pol sī est animus aequus tibi, sat habēs quī bene vītam colās.
+(188)  EUCLIO SENEX: Anus hercle huic indicium fēcit dē aurō, perspicuē palam est,
+(189)  EUCLIO SENEX: cui ego jam linguam praecīdam atque oculōs effodiam domī.
+(190)  MEGADORUS SENEX: Quid tū sōlus tēcum loquere? Meam pauperiem conqueror.
+(191)  EUCLIO SENEX: virginem habeō grandem, dōte cassam atque illocābilem,
+(192)  EUCLIO SENEX: neque eam queō locāre cuiquam. Tace, bonum habē animum, Eucliō.
+(193)  MEGADORUS SENEX: dabitur, adjuvābere ā mē. dīc, sī quid opust, imperā.
+(194)  EUCLIO SENEX: Nunc petit, cum pollicētur; inhiat aurum ut dēvoret.
+(195)  EUCLIO SENEX: alterā manū fert lapidem, pānem ostentat alterā.
+(196)  EUCLIO SENEX: nēminī crēdō quī largē blandust dīves pauperī:
+(197)  EUCLIO SENEX: ubi manum inicit benignē, ibi onerat aliquam zāmiam.
+(198)  EUCLIO SENEX: ego istōs nōvī polypōs, qui ubi quidquid tetigērunt tenent.
+(199)  MEGADORUS SENEX: Dā mī operam parumper. paucīs, Eucliō, est quod tē volō
+(200)  MEGADORUS SENEX: dē commūnī rē appellāre mea et tuā. Ei miserō mihi,
+(201)  EUCLIO SENEX: aurum mī intus harpagātum est. nunc hic eam rem vult, sciō,
+(202)  EUCLIO SENEX: mēcum adīre ad pactiōnem. vērum intervīsam domum.
+(203)  MEGADORUS SENEX: Quo abīs? Jam revertar ad tē: nam est quod invīsam domum.
+(204)  MEGADORUS SENEX: Crēdō edepol, ubi mentiōnem ego fēcerō dē fīliā,
+(205)  MEGADORUS SENEX: mī ut dēspondeat, sēsē ā mē dērīdērī rēbitur;
+(206)  MEGADORUS SENEX: neque illō quisquam est alter hodiē ex paupertāte parcior.
+(207)  EUCLIO SENEX: Dī mē servant, salva rēs est. salvum est sī quid nōn perit.
+(208)  EUCLIO SENEX: nimis malē timuī. prius quam intrō rediī, exanimātus fuī.
+(209)  EUCLIO SENEX: redeō ad tē, Megadōre, sī quid mē vīs. Habeō grātiam.
+(210)  MEGADORUS SENEX: quaesō, quod tē percontābor, nē id tē pigeat prōloquī.
+(211)  EUCLIO SENEX: Dum quidem nē quid percontēris quod nōn lubeat prōloquī.
+(212)  MEGADORUS SENEX: Dīc mihi, quālī mē arbitrāre genere prōgnātum? Bonō.
+(213)  MEGADORUS SENEX: Quid fidē? Bonā. Quid factīs? Neque malīs neque improbīs.
+(214)  MEGADORUS SENEX: Aetātem meam scīs? Sciō esse grandem, item ut pecūniam.
+(215)  MEGADORUS SENEX: Certē edepol equidem tē cīvem sine malā omnī malitiā
+(216)  MEGADORUS SENEX: semper sum arbitrātus et nunc arbitrōr. Aurum huic olet.
+(217)  EUCLIO SENEX: quid nunc mē vīs? Quoniam tū mē et ego tē quālis sīs sciō,
+(218)  MEGADORUS SENEX: quae rēs rēctē vertat mihique tibique tuaeque fīliae,
+(219)  MEGADORUS SENEX: fīliam tuam mī uxōrem poscō. prōmitte hoc fore.
+(220)  EUCLIO SENEX: Heia, Megadōre, hau decōrum facinus tuīs factīs facis,
+(221)  EUCLIO SENEX: ut inopem atque innoxium abs tē atque abs tuīs mē irrīdeās.
+(222)  EUCLIO SENEX: nam dē tē neque rē neque verbīs meruī ut facerēs quod facis.
+(223)  MEGADORUS SENEX: Neque edepol ego tē dērīsum veniō neque dērīdeō,
+(224)  MEGADORUS SENEX: neque dignum arbitror. Cūr igitur poscis meam gnātam tibi?
+(225)  MEGADORUS SENEX: Ut propter mē tibi sit melius mihique propter te et tuōs.
+(226)  EUCLIO SENEX: Venit hoc mihi, Megadōre, in mentem, tēd esse hominem dīvitem,
+(227)  EUCLIO SENEX: factiōsum, mē autem esse hominem pauperum pauperrimum;
+(228)  EUCLIO SENEX: nunc sī fīliam locassim meam tibi, in mentem venit
+(229)  EUCLIO SENEX: tē bovem esse et mē esse asellum: ubi tēcum conjūnctus siem,
+(230)  EUCLIO SENEX: ubi onus nequeam ferre pariter, jaceam ego asinus in lutō,
+(231)  EUCLIO SENEX: tū mē bōs magis hau respiciās, gnātus quasi numquam siem.
+(232)  EUCLIO SENEX: et tē ūtār inīquiōre et meus mē ōrdō irrīdeat,
+(233)  EUCLIO SENEX: neutrubi habeam stabile stabulum, sī quid dīvertī fuat:
+(234)  EUCLIO SENEX: asinī mē mordicibus scindant, boves incursent cornibus.
+(235)  EUCLIO SENEX: hoc magnum est perīclum, ab asinīs ad bovēs trānscendere.
+(236)  MEGADORUS SENEX: Quam ad probōs propinquitāte proximē tē adjūnxerīs,
+(237)  MEGADORUS SENEX: tam optumum est. tū condiciōnem hanc accipe, auscultā mihi,
+(238)  MEGADORUS SENEX: atque eam dēspondē mī. At nihil est dōtis quod dem. Nē duās.
+(239)  MEGADORUS SENEX: dum modō mōrāta rēctē veniat, dōtāta est satis.
+(240)  EUCLIO SENEX: Eō dīcō, nē mē thēnsaurōs repperisse cēnseās.
+(241)  MEGADORUS SENEX: Nōvī, nē doceās. dēspondē. Fīat. sed prō Juppiter,
+(242)  EUCLIO SENEX: num ego disperiī? Quid tibi est? Quid crepuit quasi ferrum modō?
+(243)  MEGADORUS SENEX: Hīc apud mē hortum cōnfodere jussī. sed ubi hic est homō?
+(244)  MEGADORUS SENEX: abiit neque mē certiōrem fēcit. fastīdit meī,
+(246)  MEGADORUS SENEX: quia videt mē suam amīcitiam velle: mōre hominum facit;
+(247)  MEGADORUS SENEX: nam sī opulentus it petītum pauperiōris grātiam,
+(248)  MEGADORUS SENEX: pauper metuit congredīrī, per metum male rem gerit.
+(249)  MEGADORUS SENEX: īdem, quandō occāsiō illaec periit, post sērō cupit.
+(250)  EUCLIO SENEX: Sī hercle ego tē nōn ēlinguandam dederō usque ab rādīcibus,
+(251)  EUCLIO SENEX: imperō auctorque ‹ego› sum, ut tū mē cuivīs castrandum locēs.
+(252)  MEGADORUS SENEX: Videō hercle ego tē mē arbitrārī, Eucliō, hominem idōneum,
+(253)  MEGADORUS SENEX: quem senectā aetāte lūdōs faciās, hau meritō meō.
+(254)  EUCLIO SENEX: Neque edepol, Megadōre, faciō, neque, sī cupiam, cōpia est.
+(255)  MEGADORUS SENEX: Quid nunc? etiam mihi dēspondēs fīliam? Illīs lēgibus,
+(256)  EUCLIO SENEX: cum illā dōte quam tibi dīxī. Spondēn ergō? Spondeō.
+(257)  MEGADORUS SENEX: Dī bene vertant. Ita dī faxint. illud facitō ut meminerīs,
+(258)  EUCLIO SENEX: convēnisse ut nē quid dōtis mea ad tē afferret fīlia.
+(259)  MEGADORUS SENEX: Meminī. At scio quō vōs soleātis pactō perplexārier:
+(260)  EUCLIO SENEX: pactum nōn pāctum est, nōn pactum pactum est, quod vōbīs libet.
+(261)  MEGADORUS SENEX: Nūlla contrōversia mihi tēcum erit. sed nūptiās
+(262)  MEGADORUS SENEX: num quae causa est quīn faciāmus hodiē? Immō edepol optima.
+(263)  MEGADORUS SENEX: Ībō igitur, parābō. numquid mē vīs? Istūc. ī, valē.
+(264)  MEGADORUS SENEX: Heus, Strobīle, sequere properē mē ad macellum strēnuē.
+(265)  EUCLIO SENEX: Illic hinc abiit. dī immortālēs, obsecrō, aurum quid valet.
+(266)  EUCLIO SENEX: crēdō ego illum jam indaudīsse mī esse thēnsaurum domī.
+(267)  EUCLIO SENEX: id inhiāt, eā affīnitātem hanc obstināvit grātiā.
+(268x) == Szene Ii.iii ==
+(268)  EUCLIO SENEX: ubi tū ēs, quae dēblaterāvistī jam vīcīnīs omnibus,
+(269)  EUCLIO SENEX: meae mē fīliae datūrum dōtem? heus, Staphyla, tē vocō.
+(270)  EUCLIO SENEX: ecquid audīs? vāscula intus pūrē properā atque ēlue:
+(271)  EUCLIO SENEX: fīliam dēspondī ego: hodiē huic nūptum Megadōrō dabō.
+(272)  STAPHYLA ANUS: Dī bene vertant. vērum ēcastor nōn potest, subitum est nimis.
+(273)  EUCLIO SENEX: Tacē atque abī. cūrāta fac sint cum ā forō redeam domum;
+(274)  EUCLIO SENEX: atque aedīs occlūde; jam ego hīc aderō. Quid ego nunc agam?
+(275)  STAPHYLA ANUS: nunc nōbīs prope adest exitium, mī atque erīlī fīliae,
+(276)  STAPHYLA ANUS: nunc probrum atque partitūdō prope adest ut fīat palam;
+(277)  STAPHYLA ANUS: quod cēlātum atque occultātum est usque adhūc, nunc nōn potest.
+(278)  STAPHYLA ANUS: ībō intrō, ut erus quae imperāvit facta, cum veniat, sient.
+(279)  STAPHYLA ANUS: nam ēcastor malum maerōre metuō nē mixtum bibam.
+(280x) == Szene Ii.iv ==
+(280)  PYTHODICUS SERVUS: Postquam obsōnāvit erus et condūxit coquōs
+(281)  PYTHODICUS SERVUS: tībīcināsque hāsce apud forum, ēdīxit mihi
+(282)  PYTHODICUS SERVUS: ut dispertīrem obsōnium hīc bifāriam.
+(283)  ANTHRAX COCUS: Mequidem hercle, dīcam prōpalam, nōn dīvidēs;
+(284)  ANTHRAX COCUS: sī quō tū tōtum mē īre vīs, operam dabō.
+(285)  CONGRIO COCUS: Bellum et pudīcum vērō prōstibulum poplī.
+(286)  CONGRIO COCUS: post sī quis vellet, tē hau nōn vellēs dīvidī.
+(287)  PYTHODICUS SERVUS: Atque ego istūc, Anthrax, aliōversum dīxeram,
+(288)  PYTHODICUS SERVUS: nōn istūc quod tū īnsimulās. sed erus nūptiās
+(289)  PYTHODICUS SERVUS: meus hodiē faciet. Cujus dūcit fīliam?
+(290)  PYTHODICUS SERVUS: Vīcīnī hujus Eucliōnis ‹hinc› ē proximō.
+(291)  PYTHODICUS SERVUS: ēī adeō obsōnī hinc jussit dīmidium darī,
+(292)  PYTHODICUS SERVUS: coquum alterum itidemque alteram tībīcinam.
+(293)  ANTHRAX COCUS: Nempe hūc dīmidium dīcis, dīmidium domum?
+(294)  PYTHODICUS SERVUS: Nempe sīcut dīcis. Quid? hic nōn poterat dē suō
+(295)  ANTHRAX COCUS: senex obsōnārī fīliāī nūptiīs?
+(296)  PYTHODICUS SERVUS: Vāh. Quid negōtīst? Quid negōtī sit rogās?
+(297)  PYTHODICUS SERVUS: pūmex nōn aequē est ārdus atque hic est senex.
+(298)  ANTHRAX COCUS: Ain tandem? Ita esse ut dīxī. tūtē exīstumā:
+(298a)  PYTHODICUS SERVUS: ...
+(299)  PYTHODICUS SERVUS: suam rem periisse sēque ērādīcārier.
+(300)  PYTHODICUS SERVUS: quīn dīvum atque hominum clāmat continuō fidem,
+(301)  PYTHODICUS SERVUS: dē suō tigillō fūmus sī quā exit forās.
+(302)  PYTHODICUS SERVUS: quīn cum it dormītum, follem obstringit ob gulam.
+(303)  ANTHRAX COCUS: Cūr? Nē quid animae forte āmittat dormiēns.
+(304)  ANTHRAX COCUS: Etiamne obtūrat īnferiōrem gutturem,
+(305)  ANTHRAX COCUS: nē quid animāī forte āmittat dormiēns?
+(306)  PYTHODICUS SERVUS: Haec mihi tē ut tibi mēd aequum est, crēdō, crēdere.
+(307)  ANTHRAX COCUS: Immō equidem crēdō. At scīn etiam quō modō?
+(308)  PYTHODICUS SERVUS: aquam hercle plōrat, cum lavat, profundere.
+(309)  ANTHRAX COCUS: Cēnsēn talentum magnum exōrārī pote
+(310)  ANTHRAX COCUS: ab istōc sene ut det, quī fiāmus līberī?
+(311)  PYTHODICUS SERVUS: Famem hercle ūtendam sī rogēs, numquam dabit.
+(312)  PYTHODICUS SERVUS: quīn ipsī prīdem tōnsor unguīs dēmpserat:
+(313)  PYTHODICUS SERVUS: collēgit, omnia abstulit praesegmina.
+(314)  ANTHRAX COCUS: Edepol mortālem parcē parcum praedicās.
+(315)  PYTHODICUS SERVUS: Cēnsēn vērō adeō esse parcum et miserē vīvere?
+(316)  PYTHODICUS SERVUS: pulmentum prīdem ēripuit ēī mīluus:
+(317)  PYTHODICUS SERVUS: homō ad praetōrem plōrābundus dēvenit;
+(318)  PYTHODICUS SERVUS: īnfit ibi postulāre plōrāns, ējulāns,
+(319)  PYTHODICUS SERVUS: ut sibi licēret mīluum vadārier.
+(320)  PYTHODICUS SERVUS: sēscenta sunt quae memorem, sī sit ōtium.
+(321)  PYTHODICUS SERVUS: sed uter vestrōrum est celerior? memorā mihi.
+(322)  ANTHRAX COCUS: Ego, ut multō melior. Cocum ego, nōn fūrem rogō.
+(323)  ANTHRAX COCUS: Coquum ergō dīcō. Quid tu aīs? Sīc sum ut vidēs.
+(324)  ANTHRAX COCUS: Coquus ille nūndinālest, in nōnum diem
+(325)  ANTHRAX COCUS: solet īre coctum. Tūn, trium litterārum homō,
+(326)  CONGRIO COCUS: mē vituperās? fūr. Etiam fūr, trifurcifer.
+(327x) == Szene Ii.v ==
+(327)  PYTHODICUS SERVUS: Tace nūnciam tū, atque agnum hinc uter est pinguior
+(328)  PYTHODICUS SERVUS: cape atque abī intrō ad nōs. Licet. Tū, Congriō,
+(329)  PYTHODICUS SERVUS: hunc sūme atque abī intrō illō, et vōs illum sequiminī.
+(330)  PYTHODICUS SERVUS: vōs cēterī īte hūc ad nōs. Hercle injūriā
+(331)  CONGRIO COCUS: dispertīvistī: pinguiōrem agnum istī habent.
+(332)  PYTHODICUS SERVUS: At nunc tibi dabitur pinguior tībīcina.
+(333)  PYTHODICUS SERVUS: ī sānē cum illō, Phrygia. tū autem, Eleusium,
+(334)  PYTHODICUS SERVUS: hūc intrō abī ad nōs. Ō Strobīle subdole,
+(335)  CONGRIO COCUS: hūcine detrustī mē ad senem parcissimum?
+(336)  CONGRIO COCUS: ubi sī quid poscam, usque ad ravim poscam prius
+(337)  CONGRIO COCUS: quam quicquam dētur. Stultu's, et sine grātiā est
+(338)  PYTHODICUS SERVUS: ibi rēctē facere, quandō quod faciās perit.
+(339)  CONGRIO COCUS: Quī vērō? Rogitās? jam prīncipiō in aedibus
+(340)  PYTHODICUS SERVUS: turba istīc nūlla tibi erit: siquid ūtī volēs,
+(341)  PYTHODICUS SERVUS: domō abs tē affertō, nē operam perdās poscere.
+(342)  PYTHODICUS SERVUS: hīc autem apud nōs magna turba ac familia est,
+(343)  PYTHODICUS SERVUS: supellēx, aurum, vestis, vāsa argentea:
+(344)  PYTHODICUS SERVUS: ibi sī perierit quippiam (quod tē sciō
+(345)  PYTHODICUS SERVUS: facile abstinēre posse, sī nihil obviam est)
+(346)  PYTHODICUS SERVUS: dīcant: coquī abstulērunt, comprehendite,
+(347)  PYTHODICUS SERVUS: vincīte, verberāte, in puteum condite.
+(348)  PYTHODICUS SERVUS: hōrum tibi istīc nihil ēveniet: quippe quī
+(349)  PYTHODICUS SERVUS: ubi quid surripiās nihil est. sequere hāc mē. Sequor.
+(350x) == Szene Ii.vi ==
+(350)  PYTHODICUS SERVUS: Heus, Staphyla, prōdī atque ōstium aperī. Quī vocat?
+(351)  PYTHODICUS SERVUS: Strobīlus. Quid vīs? Hōs ut accipiās coquōs
+(352)  PYTHODICUS SERVUS: tībīcinamque obsōniumque in nūptiās.
+(353)  PYTHODICUS SERVUS: Megadōrus jussit Eucliōnī haec mittere.
+(354)  STAPHYLA ANUS: Cererīn, Strobīle, hās sunt factūrī nūptiās?
+(355)  PYTHODICUS SERVUS: Quī? Quia tēmētī nihil allātum intellegō.
+(356)  PYTHODICUS SERVUS: At jam afferētur, sī ā forō ipsus redierit.
+(357)  STAPHYLA ANUS: Ligna hīc apud nōs nūlla sunt. Sunt asserēs?
+(358)  STAPHYLA ANUS: Sunt pol. Sunt igitur ligna, nē quaerās forīs.
+(359)  STAPHYLA ANUS: Quid, impūrāte? quamquam Vulcānō studēs,
+(360)  STAPHYLA ANUS: cēnaene causā aut tuae mercēdis grātiā
+(361)  STAPHYLA ANUS: nōs nostrās aedīs postulās combūrere?
+(362)  CONGRIO COCUS: hau postulō. Dūc istōs intrō. Sequiminī.
+(363x) == Szene Ii.vii ==
+(363)  PYTHODICUS SERVUS: Cūrāte. ego intervīsam quid faciant coquī;
+(364)  PYTHODICUS SERVUS: quōs pol ut ego hodiē servem, cūra maxuma est.
+(365)  PYTHODICUS SERVUS: nisi ūnum hoc faciam, ut in puteō cēnam coquant:
+(366)  PYTHODICUS SERVUS: inde coctam sūrsum subdūcēmus corbulīs.
+(367)  PYTHODICUS SERVUS: si autem deorsum comedent, sī quid coxerint,
+(368)  PYTHODICUS SERVUS: superī incēnātī sunt et cēnātī īnferī.
+(369)  PYTHODICUS SERVUS: sed verba hīc faciō, quasi negōtī nīl siet,
+(370)  PYTHODICUS SERVUS: rapācidārum ubi tantum sīt in aedibus.
+(371x) == Szene Ii.viii ==
+(371)  EUCLIO SENEX: Voluī animum tandem cōnfirmāre hodiē meum,
+(372)  EUCLIO SENEX: ut bene mē habērem fīliāī nūptiīs.
+(373)  EUCLIO SENEX: veniō ad macellum, rogitō piscīs: indicant
+(374)  EUCLIO SENEX: cārōs; agnīnam cāram, cāram būbulam,
+(375)  EUCLIO SENEX: vitulīnam, cētum, porcīnam: cāra omnia.
+(376)  EUCLIO SENEX: atque eō fuērunt cāriōra, aes nōn erat.
+(377)  EUCLIO SENEX: abeō illim īrātus quoniam mihi nīl est quī emam.
+(378)  EUCLIO SENEX: ita illīs impūrīs omnibus adiī manum.
+(379)  EUCLIO SENEX: deinde egomet mēcum cōgitāre interviās
+(380)  EUCLIO SENEX: occēpī: fēstō diē sī quid prōdēgerīs,
+(381)  EUCLIO SENEX: profēstō egēre liceat, nisi pepercerīs.
+(382)  EUCLIO SENEX: postquam hanc ratiōnem ventrī cordīque ēdidī,
+(383)  EUCLIO SENEX: accessit animus ad meam sententiam,
+(384)  EUCLIO SENEX: quam minimō sūmptū fīliam ut nūptum darem.
+(385)  EUCLIO SENEX: nunc tusculum ēmī et hāsce corōnās flōreās:
+(386)  EUCLIO SENEX: haec impōnentur in focō nostrō Larī,
+(387)  EUCLIO SENEX: ut fortūnātās faciat gnātae nūptiās.
+(388)  EUCLIO SENEX: sed quid ego apertās aedīs nostrās cōnspicor?
+(389)  EUCLIO SENEX: et strepitust intus. numnam ego compīlor miser?
+(390)  CONGRIO COCUS: Aulam majōrem, sī pote, ex vīcīniā
+(391)  CONGRIO COCUS: pete: haec est parva, capere nōn quit. Ei mihi,
+(392)  EUCLIO SENEX: periī hercle. aurum rapitur, aula quaeritur.
+(393)  EUCLIO SENEX: nīmīrum occidor, nisi ego intrō hūc properē properō currere.
+(394)  EUCLIO SENEX: Apollō, quaesō, subvenī mī atque adjuvā,
+(395)  EUCLIO SENEX: cōnfīge sagittīs fūrēs thensaurāriōs,
+(396)  EUCLIO SENEX: sī cui in rē tālī jam subvēnistī antidhāc.
+(397)  EUCLIO SENEX: sed cessō prius quam prōrsus periī currere?
+(398x) == Szene Ii.ix ==
+(398)  ANTHRAX COCUS: Dromō, desquāmā piscīs. tū, Māchaeriō,
+(399)  ANTHRAX COCUS: congrum, mūrēnam exdorsuā quantum potest.
+(400)  ANTHRAX COCUS: ego hinc artoptam ex proximō ūtendam petō
+(401)  ANTHRAX COCUS: ā Congriōne. tū istum gallum, sī sapis,
+(402)  ANTHRAX COCUS: glabriōrem reddēs mihi quam vulsus lūdiust.
+(403)  ANTHRAX COCUS: sed quid hoc clāmōris oritur hinc ex proximō?
+(404)  ANTHRAX COCUS: coquī hercle, crēdō, faciunt officium suum.
+(405)  ANTHRAX COCUS: fugiam intrō, nē quid turbāī hīc itidem fuat.
+(406y) === Akt III ===
+(406x) == Szene Iii.i ==
+(406)  CONGRIO COCUS: Attatae cīvēs populārēs, incolae, accolae, advenae omnēs,
+(407)  CONGRIO COCUS: date viam quā fugere liceat, facite tōtae plateae pateant.
+(408)  CONGRIO COCUS: neque ego umquam nisi hodiē ad Bacchās vēnī in Bacchānāl coquinātum,
+(409)  CONGRIO COCUS: ita mē miserum et meōs discipulōs fustibus male contudērunt.
+(410)  CONGRIO COCUS: tōtus doleō atque oppido periī, ita mē iste habuit senex gymnasium;
+(411)  CONGRIO COCUS: attāt, periī hercle ego miser,
+(411a)  CONGRIO COCUS: aperit bacchānāl, adest,
+(412)  CONGRIO COCUS: sequitur. scio quam rem geram: hoc
+(412a)  CONGRIO COCUS: ipsus magister mē docuit.
+(413)  CONGRIO COCUS: neque ligna ego usquam gentium praebērī vīdī pulchrius,
+(414)  CONGRIO COCUS: itaque omnīs exēgit forās, mē atque hōs, onustōs fustibus.
+(415x) == Szene Iii.ii ==
+(415)  EUCLIO SENEX: Redi. quō fugis nunc? tene, tenē. Quid, stolide, clāmās?
+(416)  EUCLIO SENEX: Quia ad trīsvirōs jam ego dēferam nōmen tuum. Quam ob rem?
+(417)  EUCLIO SENEX: Quia cultrum habēs. Coquum decet. Quid comminātu's
+(418)  EUCLIO SENEX: mihi? Istūc male factum arbitror, quia nōn latus fōdī.
+(419)  EUCLIO SENEX: Homo nūllust tē scelestior quī vīvāt hodiē,
+(420)  EUCLIO SENEX: neque cui ego dē industriā amplius male plūs libens faxim.
+(421)  CONGRIO COCUS: Pol etsī taceās, palam id quidem est: rēs ipsa testīst;
+(422)  CONGRIO COCUS: ita fustibus sum mollior magis quam ūllus cinaedus.
+(423)  CONGRIO COCUS: sed quid tibī nōs tāctiōst, mendīcē homo? Quae rēs?
+(424)  EUCLIO SENEX: etiam rogitās? an quia minus quam aequum erat fēcī?
+(425)  CONGRIO COCUS: Sine, at hercle cum magnō malō tuō, sī hoc caput sentit.
+(426)  EUCLIO SENEX: Pol ego hau sciō quid post fuat: tuum nunc caput sentit.
+(427)  EUCLIO SENEX: sed in aedibus quid tibi meīs nam erat negōtī
+(428)  EUCLIO SENEX: mē absente, nisi ego jusseram? volo scīre. Tacē ergō.
+(429)  CONGRIO COCUS: quia vēnimus coctum ad nūptiās. Quid tū, malum, cūrās,
+(430)  EUCLIO SENEX: utrum crūdum an coctum ego edim, nisi tū mī ēs tūtor?
+(431)  CONGRIO COCUS: Volo scīre, sinas an nōn sinās nōs coquere hīc cēnam?
+(432)  EUCLIO SENEX: Volo scīre ego item, meae domī mean salva futūra?
+(433)  CONGRIO COCUS: Utinam mea mihi modo auferam, quae attuli, salva:
+(434)  CONGRIO COCUS: mē hau paenitet, tua nē expetam. Scio, nē doce, nōvī.
+(435)  CONGRIO COCUS: Quid est quā prohibēs nunc grātiā nōs coquere hīc cēnam?
+(436)  CONGRIO COCUS: quid fēcimus, quid dīximus tibi secus quam vellēs?
+(437)  EUCLIO SENEX: Etiam rogitās, scelestē homō, qui angulos omnīs
+(438)  EUCLIO SENEX: meārum aedium et conclāvium mihi pervium facitis?
+(439)  EUCLIO SENEX: ibi ubī tibi erat negōtium, ad focum sī adessēs,
+(440)  EUCLIO SENEX: nōn fissile auferrēs caput: meritō id tibi factum est.
+(441)  EUCLIO SENEX: adeō ut tū meam sententiam jam nōscere possīs:
+(442)  EUCLIO SENEX: sī ad jānuam hūc accesserīs, nisi jussero, propius,
+(443)  EUCLIO SENEX: ego tē faciam miserrimus mortālis utī sīs.
+(444)  EUCLIO SENEX: scīs jam meam sententiam. Quō abīs? redi rūrsum.
+(445)  CONGRIO COCUS: ita mē bene amet Laverna, tē jam jam, nisi reddī
+(446)  CONGRIO COCUS: mihi vāsa jubēs, pīpulō tē hīc differam ante aedīs.
+(447)  CONGRIO COCUS: quid ego nunc agam? nē ego edepol vēnī hūc auspiciō malō.
+(448)  CONGRIO COCUS: nummō sum conductus: plūs jam medicō mercēdest opus.
+(449x) == Szene Iii.iii ==
+(449)  EUCLIO SENEX: Hoc quidem hercle, quōquō ībō, mēcum erit, mēcum feram,
+(450)  EUCLIO SENEX: neque istī id in tantīs perīclīs umquam committam ut siet.
+(451)  EUCLIO SENEX: īte sānē nūnc intrō, omnēs, et coquī et tībīcinae,
+(452)  EUCLIO SENEX: etiam intrō dūce, sī vīs, vel gregem vēnālium,
+(453)  EUCLIO SENEX: coquite, facite, festīnāte nūnciam quantum libet.
+(454)  CONGRIO COCUS: Temperī, postquam implēvistī fustī fissōrum caput.
+(455)  EUCLIO SENEX: Intrō abīte, opera hūc conducta est vestra, nōn ōrātiō.
+(456)  CONGRIO COCUS: Heus, senex, prō vāpulandō hercle ego abs tē mercēdem petam.
+(457)  CONGRIO COCUS: coctum egō, nōn vāpulātum, dūdum conductus fuī.
+(458)  EUCLIO SENEX: Lēge agitō mēcum. molestus nē sīs. ī, cēnam coque,
+(459)  EUCLIO SENEX: aut abī in malum cruciātum ab aedibus. Abi tū modo.
+(460x) == Szene Iii.iv ==
+(460)  EUCLIO SENEX: Illic hinc abiit. dī immortālēs, facinus audāx incipit
+(461)  EUCLIO SENEX: quī cum opulentō pauper coepit rem habēre aut negōtium.
+(462)  EUCLIO SENEX: velutī Megadōrus temptat mē omnibus miserum modīs,
+(463)  EUCLIO SENEX: quī simulāvit mei honōris mittere hūc causā coquōs:
+(464)  EUCLIO SENEX: is eā causā mīsit, hoc quī surriperent miserō mihi.
+(465)  EUCLIO SENEX: condignē etiam meus mēd intus gallus gallinācius,
+(466)  EUCLIO SENEX: quī erat anū pecūliāris, perdidit paenissimē.
+(467)  EUCLIO SENEX: ubi erat haec dēfossa, occēpit ibi scalpurrīre ungulīs
+(468)  EUCLIO SENEX: circumcircā. quid opust verbīs? ita mihi pectus peracuit:
+(469)  EUCLIO SENEX: capiō fustem, obtruncō gallum, fūrem manufestārium.
+(470)  EUCLIO SENEX: crēdō edepol ego illī mercēdem gallō pollicitōs coquōs,
+(471)  EUCLIO SENEX: sī id palam fēcisset. exēmī ex manū manūbrium.
+(472)  EUCLIO SENEX: quid opust verbīs? facta est pugna in gallō gallināciō.
+(473)  EUCLIO SENEX: sed Megadōrus meus affīnis eccum incēdit ā forō.
+(474)  EUCLIO SENEX: jam hunc nōn ausim praeterīre, quīn cōnsistam et colloquar.
+(475x) == Szene Iii.v ==
+(475)  MEGADORUS SENEX: Nārrāvī amīcīs multīs cōnsilium meum
+(476)  MEGADORUS SENEX: dē condiciōne hāc. Eucliōnis fīliam
+(477)  MEGADORUS SENEX: laudant. sapienter factum et cōnsiliō bonō.
+(478)  MEGADORUS SENEX: nam meō quidem animō si idem faciant cēterī
+(479)  MEGADORUS SENEX: opulentiōrēs, pauperiōrum fīliās
+(480)  MEGADORUS SENEX: ut indōtātās dūcant uxōrēs domum,
+(481)  MEGADORUS SENEX: et multō fīat cīvitās concordior,
+(482)  MEGADORUS SENEX: et invidiā nōs minōre ūtāmur quam ūtimur,
+(483)  MEGADORUS SENEX: et illae malam rem metuant quam metuunt magis,
+(484)  MEGADORUS SENEX: et nōs minōre sūmptū sīmus quam sumus.
+(485)  MEGADORUS SENEX: in maximam illūc populī partem est optimum
+(486)  MEGADORUS SENEX: in pauciōrēs avidōs altercātiō est,
+(487)  MEGADORUS SENEX: quōrum animīs avidīs atque īnsatietātibus
+(488)  MEGADORUS SENEX: neque lēx neque sūtor capere est quī possit modum.
+(489)  MEGADORUS SENEX: namque hoc quī dīcat ‘quo illae nūbent dīvitēs
+(490)  MEGADORUS SENEX: dōtātae, si istud jūs pauperibus pōnitur?’
+(491)  MEGADORUS SENEX: quō lubeant, nūbant, dum dōs nē fīat comēs.
+(492)  MEGADORUS SENEX: hoc si ita fīat, mōrēs meliōrēs sibi
+(493)  MEGADORUS SENEX: pārent, prō dōte quōs ferant, quam nunc ferunt,
+(494)  MEGADORUS SENEX: ego faxim mūlī, pretiō quī superant equōs,
+(495)  MEGADORUS SENEX: sint vīliōrēs Gallicīs canthēriīs.
+(496)  EUCLIO SENEX: Ita mē dī amābunt ut ego hunc auscultō libēns.
+(497)  EUCLIO SENEX: nimis lepidē fēcit verba ad parsimōniam.
+(498)  MEGADORUS SENEX: Nūlla igitur dīcat ‘equidem dōtem ad tē attulī
+(499)  MEGADORUS SENEX: majōrem multō quam tibi erat pecūnia;
+(500)  MEGADORUS SENEX: enim mihi quidem aequumst purpuram atque aurum darī,
+(501)  MEGADORUS SENEX: ancillās, mūlōs, mūliōnēs, pedisequōs,
+(502)  MEGADORUS SENEX: salūtigerulōs puerōs, vehicla quī vehar.’
+(503)  EUCLIO SENEX: Ut mātrōnārum hic facta pernōvit probē.
+(504)  EUCLIO SENEX: mōribus praefectum mulierum hunc factum velim.
+(505)  MEGADORUS SENEX: Nunc quōquō veniās plūs plaustrōrum in aedibus
+(506)  MEGADORUS SENEX: videās quam rūrī, quandō ad vīllam vēnerīs.
+(507)  MEGADORUS SENEX: sed hoc etiam pulchrum est praequam ubī sūmptūs petunt.
+(508)  MEGADORUS SENEX: stat fullō, phyrgio, aurifex, lānārius;
+(509)  MEGADORUS SENEX: caupōnēs patagiāriī, indusiāriī,
+(510)  MEGADORUS SENEX: flammāriī, violāriī, carināriī;
+(511)  MEGADORUS SENEX: aut manuleāriī, aut murobathāriī,
+(512)  MEGADORUS SENEX: propōlae linteōnēs, calceolāriī;
+(513)  MEGADORUS SENEX: sedentāriī sūtōrēs diabathrāriī,
+(514)  MEGADORUS SENEX: soleāriī astant, astant molocināriī;
+(515)  MEGADORUS SENEX: petunt fullōnēs, sarcinātōrēs petunt;
+(516)  MEGADORUS SENEX: strophiāriī astant, astant simul zōnāriī.
+(517)  MEGADORUS SENEX: jam hōsce absolūtōs cēnseās: cēdunt, petunt
+(518)  MEGADORUS SENEX: trecēnī, cum stant thȳlacistae in ātriīs
+(519)  MEGADORUS SENEX: textōrēs limbulāriī, arculāriī.
+(520)  MEGADORUS SENEX: dūcuntur, datur aes. jam absolūtōs cēnseās,
+(521)  MEGADORUS SENEX: cum incēdunt īnfectōrēs corcōtāriī,
+(522)  MEGADORUS SENEX: aut aliqua mala crux semper est, quae aliquid petat.
+(523)  EUCLIO SENEX: Compellārem ego illum, nī metuam nē dēsinat
+(524)  EUCLIO SENEX: memorāre mōrēs mulierum: nunc sīc sinam.
+(525)  MEGADORUS SENEX: Ubi nūgivēndīs rēs solūta est omnibus,
+(526)  MEGADORUS SENEX: ibi ad postrēmum cēdit mīlēs, aes petit.
+(527)  MEGADORUS SENEX: ītur, putātur ratiō cum argentāriō;
+(528)  MEGADORUS SENEX: mīlēs imprānsus astat, aes cēnset darī.
+(529)  MEGADORUS SENEX: ubi disputāta est ratiō cum argentāriō,
+(530)  MEGADORUS SENEX: etiam ipsus ultrō dēbet argentāriō:
+(531)  MEGADORUS SENEX: spēs prōrogātur mīlitī in alium diem.
+(532)  MEGADORUS SENEX: haec sunt atque aliae multae in magnīs dōtibus
+(533)  MEGADORUS SENEX: incommoditātēs sūmptūsque intolerābilēs.
+(534)  MEGADORUS SENEX: nam quae indōtāta est, ea in potestāte est virī;
+(535)  MEGADORUS SENEX: dōtātae mactant et malō et damnō virōs.
+(536)  MEGADORUS SENEX: sed eccum affīnem ante aedīs. quid agis, Eucliō?
+(537x) == Szene Iii.vi ==
+(537)  EUCLIO SENEX: Nimium libenter ēdī sermōnem tuum.
+(538)  MEGADORUS SENEX: An audīvistī? Usque ā prīncipiō omnia.
+(539)  MEGADORUS SENEX: Tamen meō quidem animō aliquantō faciās rēctius,
+(540)  MEGADORUS SENEX: sī nitidior sīs fīliāī nūptiīs.
+(541)  EUCLIO SENEX: Prō rē nitōrem et glōriam prō cōpiā
+(542)  EUCLIO SENEX: quī habent, meminērunt sēsē unde oriundī sient.
+(543)  EUCLIO SENEX: neque pol, Megadōre, mihi neque cuiquam pauperī
+(544)  EUCLIO SENEX: opīniōne melius rēs strūcta est domī.
+(545)  MEGADORUS SENEX: Immō est quod satis est, et dī faciant ut siet
+(546)  MEGADORUS SENEX: plūs plūsque et istūc sospitent quod nunc habēs.
+(547)  EUCLIO SENEX: Illud mihi verbum nōn placet ‘quod nunc habēs.’
+(548)  EUCLIO SENEX: tam hoc scit mē habēre quam egomet. anus fēcit palam.
+(549)  MEGADORUS SENEX: Quid tū tē sōlus ē senātū sēvocās?
+(550)  EUCLIO SENEX: Pol ego ut tē accūsem meritō meditābar. Quid est?
+(551)  EUCLIO SENEX: Quid sit mē rogitās? quī mihi omnīs angulōs
+(552)  EUCLIO SENEX: fūrum implēvistī in aedibus miserō mihi,
+(553)  EUCLIO SENEX: quī mī intrō mīstī in aedīs quīngentōs coquōs,
+(554)  EUCLIO SENEX: cum sēnīs manibus, genere Gēryonāceō;
+(555)  EUCLIO SENEX: quōs sī Argus servet, quī oculeus tōtus fuit,
+(556)  EUCLIO SENEX: quem quondam Īōnī Jūnō cūstōdem addidit,
+(557)  EUCLIO SENEX: is numquam servet. praetereā tībīcinam,
+(558)  EUCLIO SENEX: quae mī interbibere sōla, sī vīnō scatat,
+(559)  EUCLIO SENEX: Corinthiēnsem fontem Pīrēnam potest.
+(560)  EUCLIO SENEX: tum obsōnium autem... Pol vel legiōnī sat est.
+(561)  MEGADORUS SENEX: etiam agnum mīsī. Quō quidem agnō sat sciō
+(562)  EUCLIO SENEX: magis cūriōsam nusquam esse ūllam bēluam.
+(563)  MEGADORUS SENEX: Volō ego ex tē scīre quī sit agnus cūriō.
+(564)  EUCLIO SENEX: Quia ossa ac pellis tōtust, ita cūrā macet.
+(565)  EUCLIO SENEX: quīn exta īnspicere in sōle eī vīvō licet:
+(566)  EUCLIO SENEX: ita is pellūcet quasi lanterna Pūnica.
+(567)  MEGADORUS SENEX: Caedundum condūxī ego illum. Tum tū idem optimumst
+(568)  EUCLIO SENEX: loces efferendum; nam jam, crēdō, mortuust.
+(569)  MEGADORUS SENEX: Pōtāre ego hodiē, Eucliō, tēcum volō.
+(570)  EUCLIO SENEX: Nōn pōtem egō quidem hercle. At ego jusserō
+(571)  MEGADORUS SENEX: cadum ūnum vīnī veteris ā mē afferrier.
+(572)  EUCLIO SENEX: Nōlō hercle, nam mihi bibere dēcrētum est aquam.
+(573)  MEGADORUS SENEX: Ego tē hodiē reddam madidum, sī vīvō, probē,
+(574)  MEGADORUS SENEX: tibi cui dēcrētum est bibere aquam. Scio quam rem agat:
+(575)  EUCLIO SENEX: ut mē dēpōnat vīnō, eam affectat viam,
+(576)  EUCLIO SENEX: post hoc quod habeō ut commūtet colōniam.
+(577)  EUCLIO SENEX: ego id cavēbō, nam alicubi abstrūdam forīs.
+(578)  EUCLIO SENEX: ego faxo et operam et vīnum perdiderit simul.
+(579)  MEGADORUS SENEX: Ego, nisi quid mē vīs, eō lavātum, ut sacruficem.
+(580)  EUCLIO SENEX: Edepol, nē tū, aula, multōs inimīcōs habēs
+(581)  EUCLIO SENEX: atque istūc aurum quod tibī concrēditum est.
+(582)  EUCLIO SENEX: nunc hoc mihi factū est optumum, ut tēd auferam,
+(583)  EUCLIO SENEX: aula, in Fidēī fānum: ibi abstrūdam probē.
+(584)  EUCLIO SENEX: Fidēs, nōvistī mē et ego tē: cave sīs tibi,
+(585)  EUCLIO SENEX: nē tū immūtāssīs nōmen, sī hoc concrēduō.
+(586)  EUCLIO SENEX: ībō ad tē frētus tuā, Fidēs, fīdūciā.
+(587y) === Akt IV ===
+(587x) == Szene Iv.i ==
+(587)  STROBILUS SERVUS: Hoc est servī facinus frūgī, facere quod ego persequor,
+(588)  STROBILUS SERVUS: nē morae molestiaeque imperium erīle habeat sibi.
+(589)  STROBILUS SERVUS: nam quī erō ex sententiā servīre servus postulat,
+(590)  STROBILUS SERVUS: in erum mātūra, in sē sēra condecet capessere.
+(591)  STROBILUS SERVUS: sīn dormītet, ita dormītet, servum sēsē ut cōgitet.
+(592)  STROBILUS SERVUS: nam quī amantī ero servitūtem servit, quasi ego serviō,
+(593)  STROBILUS SERVUS: sī erum videt superāre amōrem, hoc servī esse officium reor,
+(594)  STROBILUS SERVUS: retinēre ad salūtem, nōn enim quō incumbāt eō impellere.
+(595)  STROBILUS SERVUS: quasi puerī quī nāre discunt scirpea induitur ratis,
+(596)  STROBILUS SERVUS: quī labōrent minus, facilius ut nent et moveant manūs,
+(597)  STROBILUS SERVUS: eōdem modo servum ratem esse amantī erō aequum cēnseō,
+(598)  STROBILUS SERVUS: ut eum toleret, nē pessum abeat tamquam
+(599)  STROBILUS SERVUS: erī ille imperium ēdiscat, ut quod frōns velīt oculī sciant;
+(600)  STROBILUS SERVUS: quod jubeat citīs quadrīgīs citius properet persequī.
+(601)  STROBILUS SERVUS: quī eā cūrābit, abstinēbit cēnsiōne būbulā,
+(602)  STROBILUS SERVUS: nec suā operā rediget umquam in splendōrem compedēs.
+(603)  STROBILUS SERVUS: nunc erus meus amat fīliam hujus Eucliōnis pauperis;
+(604)  STROBILUS SERVUS: eam erō nunc renūntiātum est nūptum huic Megadōrō darī.
+(605)  STROBILUS SERVUS: is speculātum hūc mīsit mē, ut quae fierent fieret particeps.
+(606)  STROBILUS SERVUS: nunc sine omnī suspīciōne in ārā hīc assīdam sacrā;
+(607)  STROBILUS SERVUS: hinc ego et hūc et illūc poterō quid agant arbitrārier.
+(607ax) == Szene Iv.ii ==
+(607a)  EUCLIO SENEX: Tū modo cave cuiquam indicāssīs aurum meum esse istīc, Fidēs:
+(608)  EUCLIO SENEX: nōn metuō nē quisquam inveniat, ita probē in latebrīs situmst.
+(609)  EUCLIO SENEX: edepol nē illic pulchram praedam agat, sī quis illam invēnerit
+(610)  EUCLIO SENEX: aulam onustam aurī; vērum id tē quaesō ut prohibessīs, Fidēs.
+(611)  EUCLIO SENEX: nunc lavābō, ut rem dīvīnam faciam, nē affīnem morer
+(612)  EUCLIO SENEX: quīn ubi accersat meam extemplō fīliam dūcat domum.
+(613)  EUCLIO SENEX: vide, Fidēs, etiam atque etiam nunc, salvam ut aulam abs tē auferam:
+(614)  EUCLIO SENEX: tuae fidē concrēdidī aurum, in tuō lūcō et fānō est situm.
+(615)  STROBILUS SERVUS: Dī immortālēs, quod ego hunc hominem facinus audīvī loquī:
+(616)  STROBILUS SERVUS: sē aulam onustam aurī abstrūsisse hīc intus in fānō Fidē.
+(617)  STROBILUS SERVUS: cave tū illī fidēlis, quaesō, potius fuerīs, quam mihi.
+(618)  STROBILUS SERVUS: atque hic pater est, ut ego opīnor, hujus, erus quam amat, virginis.
+(619)  STROBILUS SERVUS: ībō hinc intrō, perscrūtābor fānum, sī inveniam uspiam
+(620)  STROBILUS SERVUS: aurum, dum hic est occupātus. sed sī reppererō, ō Fidēs,
+(621)  STROBILUS SERVUS: mulsī congiālem plēnam faciam tibi fidēliam.
+(622)  STROBILUS SERVUS: id adeō tibi faciam; vērum ego mihi bibām, ubi id fēcerō.
+(624x) == Szene Iv.iii ==
+(624)  EUCLIO SENEX: Nōn temere est quod corvus cantat mihi nunc ab laevā manū;
+(625)  EUCLIO SENEX: simul rādēbat pedibus terram et vōce croccībat suā:
+(626)  EUCLIO SENEX: continuō meum cor coepit artem facere lūdicram
+(627)  EUCLIO SENEX: atque in pectus ēmicāre. sed ego cessō currere?
+(628x) == Szene Iv.iv ==
+(628)  EUCLIO SENEX: Ī forās, lumbrīce, quī sub terrā ērēpsistī modō,
+(629)  EUCLIO SENEX: quī modo nusquam comparēbās, nunc, cum comparēs, perīs.
+(630)  EUCLIO SENEX: ego edepol tē, praestrīgiātor, miserīs jam accipiam modīs.
+(631)  STROBILUS SERVUS: Quae tē mala crux agitat? quid tibi mēcum est commercī, senex?
+(632)  STROBILUS SERVUS: quid mē afflīctās? quid mē raptās? quā mē causā verberās?
+(633)  EUCLIO SENEX: Verberābilissume, etiam rogitās, nōn fūr, sed trifur?
+(634)  STROBILUS SERVUS: Quid tibi surrupuī? Redde hūc sīs. Quid tibi vīs reddam? Rogās?
+(635)  STROBILUS SERVUS: Nīl equidem tibi abstulī. At illud quod tibi abstulerās cedo.
+(636)  EUCLIO SENEX: ecquid agis? Quid agām? Auferre nōn potēs. Quid vīs tibi?
+(637)  EUCLIO SENEX: Pōne. Id quidem pol tē datāre crēdō cōnsuētum, senex.
+(638)  EUCLIO SENEX: Pōne hoc sīs, aufer cavillam, nōn ego nunc nūgās agō.
+(639)  STROBILUS SERVUS: Quid ergō pōnam? quīn tū ēloquere quidquid est suō nōmine.
+(640)  STROBILUS SERVUS: nōn hercle equidem quicquam sūmpsī nec tetigī. Ostende hūc manūs.
+(641)  STROBILUS SERVUS: Em tibi, ostendī, eccās. Videō. age ostende etiam tertiam.
+(642)  STROBILUS SERVUS: Lāruae hunc atque intemperiae īnsāniaeque agitant senem.
+(643)  STROBILUS SERVUS: facin injūriam mihi? Fateor, quia nōn pendēs, maximam.
+(644)  EUCLIO SENEX: atque id quoque jam fīet, nisi fatēre. Quid fatear tibi?
+(645)  EUCLIO SENEX: Quid abstulistī hinc? Dī mē perdant. sī ego tuī quicquam abstulī
+(646)  STROBILUS SERVUS: nīve adeō abstulisse vellem. Agedum, excutedum pallium.
+(647)  STROBILUS SERVUS: Tuō arbitrātū. Nē inter tunicās habeās. Temptā quā libet.
+(648)  EUCLIO SENEX: Vāh, scelestus quam benignē: ut nē abstulisse intellegam.
+(649)  EUCLIO SENEX: nōvī sȳcophantiās. age rursum ostende hūc manum
+(650)  EUCLIO SENEX: dexteram. Em. Nunc laevam ostende. Quīn equidem ambās prōferō.
+(651)  EUCLIO SENEX: Jam scrūtārī mittō. redde hūc. Quid reddam? Ā, nūgās agis,
+(652)  EUCLIO SENEX: certē habēs. Habeō ego? quid habeō? Nōn dīcō, audīre expetis.
+(653)  EUCLIO SENEX: id meum, quidquid habēs, redde. Insānīs: perscrūtātus ēs
+(654)  STROBILUS SERVUS: tuō arbitrātū, neque tuī mē quicquam invēnistī penēs.
+(655)  EUCLIO SENEX: Mane, mane. quis illic est? quis hic intus alter erat tēcum simul?
+(656)  EUCLIO SENEX: periī hercle: ille nunc intus turbat, hunc sī āmittō hic abierit.
+(657)  EUCLIO SENEX: postrēmō hunc jam perscrūtāvī, hic nihil habēt. abi quō libet.
+(658)  STROBILUS SERVUS: Juppiter tē dīque perdant. hau male ēgit grātiās.
+(659)  EUCLIO SENEX: ībō intrō atque illī sociennō tuō jam interstringam gulam.
+(660)  EUCLIO SENEX: fugin hinc ab oculīs? abīn an nōn? Abeō. Cave sīs recipiās.
+(661x) == Szene Iv.v ==
+(661)  STROBILUS SERVUS: Ēmortuum ego mē māvelim lētō malō
+(662)  STROBILUS SERVUS: quam nōn ego illī dem hodiē īnsidiās senī.
+(663)  STROBILUS SERVUS: nam hic jam nōn audēbit aurum abstrūdere:
+(664)  STROBILUS SERVUS: crēdō efferet jam sēcum et mūtābit locum.
+(665)  STROBILUS SERVUS: attāt, foris crepuit. senex eccum aurum effert forās.
+(666)  STROBILUS SERVUS: tantisper hūc ego ad jānuam concesserō.
+(667x) == Szene Iv.vi ==
+(667)  EUCLIO SENEX: Fidē cēnsēbam maximam multō fidem
+(668)  EUCLIO SENEX: esse, ea sublēvit ōs mihī paenissimē:
+(669)  EUCLIO SENEX: nī subvēnisset corvus, periissem miser.
+(670)  EUCLIO SENEX: nimis hercle ego illum corvum ad mē veniat velim,
+(671)  EUCLIO SENEX: quī indicium fēcit, ut ego illīc aliquid bonī
+(672)  EUCLIO SENEX: dīcam; nam quod edit tam duim quam perduim.
+(673)  EUCLIO SENEX: nunc hoc ubi abstrūdam cōgitō sōlum locum.
+(674)  EUCLIO SENEX: Silvānī lūcus extrā mūrum est āvius,
+(675)  EUCLIO SENEX: crēbrō salictō opplētus. ibi sūmam locum.
+(676)  EUCLIO SENEX: certumst, Silvānō potius crēdam quam Fidē.
+(677)  STROBILUS SERVUS: Eugae, eugae, dī mē salvum et servātum volunt.
+(678)  STROBILUS SERVUS: jam ego illūc praecurram atque īnscendam aliquam in arborem,
+(679)  STROBILUS SERVUS: indeque observābō, aurum ubi abstrūdat senex.
+(680)  STROBILUS SERVUS: quamquam hīc manēre me erus sēsē jusserat;
+(681)  STROBILUS SERVUS: certum est, malam rem potius quaeram cum lucrō.
+(682x) == Szene Iv.vii ==
+(682)  LYCONIDES ADULESCENS: Dīxī tibi, māter, juxtā mēcum rem tenēs,
+(683)  LYCONIDES ADULESCENS: super Ēucliōnis fīliā. nunc tē obsecrō
+(684)  LYCONIDES ADULESCENS: resecrōque, māter, quod dūdum obsecrāveram:
+(685)  LYCONIDES ADULESCENS: fac mentiōnem cum aunculō, māter mea.
+(686)  EUNOMIA MATRONA: Scīs tūte facta velle mē quae tū velīs,
+(687)  EUNOMIA MATRONA: et istūc cōnfīdō ā frātre mē impetrāssere;
+(688)  EUNOMIA MATRONA: et causa jūsta est, siquidem ita est ut praedicās,
+(689)  EUNOMIA MATRONA: tē eam compressisse vīnolentum virginem.
+(690)  LYCONIDES ADULESCENS: Egone ut tē adversum mentiar, māter mea?
+(691)  PHAEDRIA PUELLA: Periī, mea nūtrīx. obsecrō tē, uterum dolet.
+(692)  PHAEDRIA PUELLA: Jūnō Lūcīna, tuam fidem! Em, māter mea,
+(693)  LYCONIDES ADULESCENS: tibi rem potiōrem verbō: clāmat, parturit.
+(694)  EUNOMIA MATRONA: Ī hāc intrō mēcum, gnāte mī, ad frātrem meum,
+(695)  EUNOMIA MATRONA: ut istūc quod mē ōrās impetrātum ab eō auferam.
+(696)  LYCONIDES ADULESCENS: Ī, jam sequor tē, māter. sed servum meum
+(697)  LYCONIDES ADULESCENS: Strobīlum mīror ubi sit, quem ego mē jusseram
+(698)  LYCONIDES ADULESCENS: hīc opperīrī. nunc ego mēcum cōgitō:
+(699)  LYCONIDES ADULESCENS: sī mihi dat operam, mē illī īrāscī injūrium est.
+(700)  LYCONIDES ADULESCENS: ībō intrō, ubī dē capite meō sunt comitia.
+(701x) == Szene Iv.viii ==
+(701)  STROBILUS SERVUS: Pīcīs dīvitiīs, quī aureōs montīs colunt,
+(702)  STROBILUS SERVUS: ego sōlus superō. nam istōs rēgēs cēterōs
+(703)  STROBILUS SERVUS: memorāre nōlō, hominum mendīcābula:
+(704)  STROBILUS SERVUS: ego sum ille rēx Philippus. ō lepidum diem.
+(705)  STROBILUS SERVUS: nam ut dūdum hinc abiī, multō illō advēnī prior
+(706)  STROBILUS SERVUS: multōque prius mē collocāvī in arborem
+(707)  STROBILUS SERVUS: indeque exspectābam aurum ubi abstrūdēbat senex.
+(708)  STROBILUS SERVUS: ubi ille abiit, ego mē deorsum dūcō dē arbore,
+(709)  STROBILUS SERVUS: effodio aulam aurī plēnam. inde ex eō locō
+(710)  STROBILUS SERVUS: videō recipere sē senem; ille mē nōn videt,
+(711)  STROBILUS SERVUS: nam ego dēclīnāvī paululum mē extrā viam.
+(712)  STROBILUS SERVUS: attāt, eccum ipsum. ībō ut hoc condam domum.
+(713x) == Szene Iv.ix ==
+(713)  EUCLIO SENEX: Periī interiī occidi. quō curram? quō nōn curram? tene, tene. quem? quis?
+(714)  EUCLIO SENEX: nescio, nīl videō, caecus eō atque equidem quo eam aut ubi sim aut quī sim
+(715)  EUCLIO SENEX: nequeō cum animō certum investīgāre. obsecro vōs ego, mī auxiliō,
+(716)  EUCLIO SENEX: ōrō obtestor, sītis et hominem dēmōnstrētis, quis eam abstulerit.
+(718)  EUCLIO SENEX: quid aīs tū? tibi crēdere certum est, nam esse bonum ex vultū cognōscō.
+(719)  EUCLIO SENEX: quid est? quid rīdētis? nōvī omnīs, scio fūrēs esse hīc complūrīs,
+(717)  EUCLIO SENEX: quī vestītū et crētā occultant sēsē atque sedent quasi sint frūgī.
+(720)  EUCLIO SENEX: hem, nēmō habet hōrum? occīdistī. dīc igitur, quis habet? nescīs?
+(721)  EUCLIO SENEX: heu mē miserum, miserē periī,
+(721a)  EUCLIO SENEX: male perditus, pessumē ornātus eō:
+(722)  EUCLIO SENEX: tantum gemitī et mali maestitiaeque
+(722a)  EUCLIO SENEX: hic diēs mī optulit, famem et pauperiem.
+(723)  EUCLIO SENEX: perditissumus ego sum omnium in terrā;
+(723a)  EUCLIO SENEX: quid mī opust vītā, quī tantum aurī
+(724)  EUCLIO SENEX: perdidi, quod concūstōdīvī
+(724a)  EUCLIO SENEX: sēdulō? egōmet mē dēfraudāvī
+(725)  EUCLIO SENEX: animumque meum geniumque meum;
+(725a)  EUCLIO SENEX: nunc eo aliī laetificantur
+(726)  EUCLIO SENEX: meō malō et damnō. pati nequeō.
+(727)  LYCONIDES ADULESCENS: Quīnam homō hīc ante aedīs nostrās
+(727a)  LYCONIDES ADULESCENS: ējulāns conqueritur maerēns?
+(728)  LYCONIDES ADULESCENS: atque hicquidem Eucliō est, ut opīnor.
+(728a)  LYCONIDES ADULESCENS: oppidō ego interiī: palamst rēs,
+(729)  LYCONIDES ADULESCENS: scit peperisse jam, ut ego opīnor,
+(729a)  LYCONIDES ADULESCENS: fīliam suam. nunc mī incertumst
+(730)  LYCONIDES ADULESCENS: abeam an maneam, an adeam an fugiam.
+(730a)  LYCONIDES ADULESCENS: quid agam edepol nesciō.
+(731x) == Szene Iv.x ==
+(731)  EUCLIO SENEX: Quis homō hīc loquitur? Ego sum miser. Immō ego sum, et miserē perditus,
+(732)  EUCLIO SENEX: cui tanta mala maestitūdōque optigīt. Animō bonō ēs.
+(733)  EUCLIO SENEX: Quo obsecrō, pactō esse possum? Quia istūc facinus, quod tuum
+(734)  LYCONIDES ADULESCENS: sollicitāt animum, id ego fēcī et fateor. Quid ego ex tē audiō?
+(735)  LYCONIDES ADULESCENS: Id quod vērumst. Quid ego dē tē commeruī, adulēscēns, malī,
+(736)  EUCLIO SENEX: quam ob rem ita facerēs mēque meōsque perditum īrēs līberōs?
+(737)  LYCONIDES ADULESCENS: Deus impulsor mihi fuit, is mē ad illam illēxit. Quō modō?
+(738)  LYCONIDES ADULESCENS: Fateor peccāvisse mē et mē culpam commeritum sciō;
+(739)  LYCONIDES ADULESCENS: id adeō tē ōrātum adveniō ut animō aequō ignōscās mihi.
+(740)  EUCLIO SENEX: Cūr id ausu's facere, ut id quod nōn tuum esset tangerēs?
+(741)  LYCONIDES ADULESCENS: Quid vīs fierī? factum est illud: fierī īnfectum nōn potest.
+(742)  LYCONIDES ADULESCENS: deōs crēdō voluisse; nam nī vellent, nōn fieret, sciō.
+(743)  EUCLIO SENEX: At ego deōs crēdō voluisse ut apud mē tē in nervō ēnicem.
+(744)  LYCONIDES ADULESCENS: Nē istūc dixīs. Quid tibi ergō meam mē invītō tāctiōst?
+(745)  LYCONIDES ADULESCENS: Quia vīnī vitiō atque amōris fēcī. Homō audācissime,
+(746)  EUCLIO SENEX: cum istācin tē ōrātiōne hūc ad mē adīre ausum, impudēns!
+(747)  EUCLIO SENEX: nam sī istūc jūs est ut tū istūc excūsāre possiēs,
+(748)  EUCLIO SENEX: lūcī clārō dēripiāmus aurum mātrōnis palam,
+(749)  EUCLIO SENEX: post id sī prehēnsī sīmus, excūsēmus ēbriōs
+(750)  EUCLIO SENEX: nōs fēcisse amōris causā. nimis vīlest vīnum atque amor,
+(751)  EUCLIO SENEX: sī ēbriō atque amantī impūne facere quod lubeat licet.
+(752)  LYCONIDES ADULESCENS: Quīn tibi ultrō supplicātum veniō ob stultitiam meam.
+(753)  EUCLIO SENEX: Nōn mī hominēs placent quī quandō male fēcērunt pūrigant.
+(754)  EUCLIO SENEX: tū illam scībās nōn tuam esse: nōn attāctam oportuit.
+(755)  LYCONIDES ADULESCENS: Ergō quia sum tangere ausus, hau causificor quīn eam
+(756)  LYCONIDES ADULESCENS: ego habeam potissimum. Tūn habeās mē invītō meam?
+(757)  LYCONIDES ADULESCENS: hau tē invītō postulō; sed meam esse oportēre arbitror.
+(758)  LYCONIDES ADULESCENS: quīn tū jam inveniēs, inquam, meam illam esse oportēre, Eucliō.
+(759)  EUCLIO SENEX: nisi refers. Quid tibi ego referam? Quod surripuistī meum.
+(760)  EUCLIO SENEX: Jam quidem hercle tē ad praetōrem rapiam et tibi scrībam dicam,
+(761)  LYCONIDES ADULESCENS: Surripuī ego tuum? unde? aut quid id est? Ita tē amābit Juppiter,
+(762)  EUCLIO SENEX: ut tū nescīs. Nisi quidem tū mihi quid quaerās dīxerīs.
+(763)  EUCLIO SENEX: Aulam aurī, inquam, tē reposcō, quam tū cōnfessu's mihi
+(764)  EUCLIO SENEX: tē abstulisse. Neque edepol ego dīxī neque fēcī. Negās?
+(765)  LYCONIDES ADULESCENS: Pernegō immō. nam neque ego aurum neque istaec aula quae siet
+(766)  LYCONIDES ADULESCENS: scio nec nōvī. Illam, ex Silvānī lūcō quam abstulerās, cedo.
+(767)  EUCLIO SENEX: ī, refer. dīmidiam tēcum potius partem dīvidam.
+(768)  EUCLIO SENEX: tam etsī fūr mihi ēs, molestus nōn erō. ī vērō, refer.
+(769)  LYCONIDES ADULESCENS: Sānus tū nōn ēs quī fūrem mē vocēs. ego tē, Eucliō,
+(770)  LYCONIDES ADULESCENS: de aliā rē rescīvisse cēnsuī, quod ad mē attinet;
+(771)  LYCONIDES ADULESCENS: magna est quam ego tēcum ōtiōsē, sī ōtium est, cupiō loquī.
+(772)  EUCLIO SENEX: Dīc bonā fidē: tū id aurum nōn surripuistī? Bonā.
+(773)  EUCLIO SENEX: Neque scīs id quī abstulerit? Istūc quoque bonā. Atque id sī sciēs
+(774)  EUCLIO SENEX: quī abstulerit, mihi indicābis? Faciam. Neque partem tibi
+(775)  EUCLIO SENEX: ab eō quisque est indipīscēs neque fūrem excipiēs? Ita.
+(776)  EUCLIO SENEX: Quid sī fallis? Tum mē faciat quod vult magnus Juppiter.
+(777)  EUCLIO SENEX: Sat habeō. age nunc loquere quid vīs. Sī mē nōvistī minus,
+(778)  LYCONIDES ADULESCENS: genere quō sim gnātus: hic mihi est Megadōrus aunculus,
+(779)  LYCONIDES ADULESCENS: meus fuit patēr Antimachus, ego vocor Lycōnidēs,
+(780)  LYCONIDES ADULESCENS: māter est Eunomia. Nōvī genus. nunc quid vīs? id volō
+(781)  EUCLIO SENEX: nōscere. Fīliam ex tē tu habēs. Immō eccillam domī.
+(782)  LYCONIDES ADULESCENS: Eam tū dēspondistī, opīnor, meō aunculō. Omnem rem tenēs.
+(783)  LYCONIDES ADULESCENS: Is mē nunc renūntiāre repudium jussit tibi.
+(784)  EUCLIO SENEX: Repudium rēbus parātīs, exōrnātīs nūptiīs?
+(785)  EUCLIO SENEX: ut illum dī immortālēs omnēs deaeque quantum est perduint,
+(786)  EUCLIO SENEX: quem propter hodiē aurī tantum perdidī īnfēlīx, miser.
+(787)  LYCONIDES ADULESCENS: Bonō animō ēs, bene dīce. nunc quae rēs tibi et gnātae tuae
+(788)  LYCONIDES ADULESCENS: bene fēlīciterque vertat; ita dī faxint, inquitō.
+(789)  EUCLIO SENEX: Ita dī faciant. Et mihi ita dī faciant. audī nūnciam.
+(790)  LYCONIDES ADULESCENS: qui homo culpam admīsit in sē, nūllust tam parvī pretī,
+(791)  LYCONIDES ADULESCENS: quīn pudeat, quīn pūrget sēsē. nunc tē obtestor, Eucliō,
+(792)  LYCONIDES ADULESCENS: ut sī quid ego ergā tē imprūdēns peccāvī aut gnātam tuam,
+(793)  LYCONIDES ADULESCENS: ut mī ignōscās eamque uxōrem mihi dēs, ut lēgēs jubent.
+(794)  LYCONIDES ADULESCENS: ego mē injūriam fēcisse fīliae fateor tuae,
+(795)  LYCONIDES ADULESCENS: Cereris vigiliīs, per vīnum atque impulsū adulēscentiae.
+(796)  EUCLIO SENEX: Ei mihi, quod ego facinus ex tē audiō? Cūr ējulās,
+(797)  LYCONIDES ADULESCENS: quem ego avum fēcī jam ut essēs fīliāī nūptiīs?
+(798)  LYCONIDES ADULESCENS: nam tua gnāta peperit, decumō mēnse post: numerum cape;
+(799)  LYCONIDES ADULESCENS: eā rē repudium remīsit aunculus causā meā.
+(800)  LYCONIDES ADULESCENS: i intrō, exquaere, sitne ita ut ego praedīcō. Periī oppidō,
+(801)  EUCLIO SENEX: ita mihi ad malum malae rēs plūrimae sē agglūtinant.
+(802)  EUCLIO SENEX: ībō intrō, ut quid hujus vērum sit sciam. Jam tē sequor.
+(803)  LYCONIDES ADULESCENS: haec propemodum jam esse in vadō salūtis rēs vidētur.
+(804)  LYCONIDES ADULESCENS: nunc servum esse ubi dīcam meum Strobīlum nōn reperiō;
+(805)  LYCONIDES ADULESCENS: nisi etiam hīc opperiar tamen paulisper; posteā intrō
+(806)  LYCONIDES ADULESCENS: hunc subsequar. nunc interim spatium eī dabō exquīrendī
+(807)  LYCONIDES ADULESCENS: meum factum ex gnātae pedisequā nūtrīce anū: ea rem nōvit.
+(808y) === Akt V ===
+(808x) == Szene V.i ==
+(808)  STROBILUS SERVUS: Dī immortālēs, quibus et quantīs mē dōnātis gaudiīs.
+(809)  STROBILUS SERVUS: quadrilībrem aulam aurō onustam habeō. quis mē est dītior?
+(810)  STROBILUS SERVUS: quis mē Athēnīs nunc magis quisquam est homo cui dī sint propitiī?
+(811)  LYCONIDES ADULESCENS: Certō enim ego vōcem hīc loquentis modo mī audīre vīsus sum. Hem,
+(812)  STROBILUS SERVUS: erumne ego aspiciō meum? Videōn ego hunc servum meum?
+(813)  STROBILUS SERVUS: Ipsus est. Haud alius est. Congrediar. Contollam gradum.
+(814)  LYCONIDES ADULESCENS: crēdō ego illum, ut jussī, eampsē anum adiisse, hujus nūtrīcem virginis.
+(816)  STROBILUS SERVUS: Quīn ego illī mē invēnisse dīcō hanc praedam atque ēloquor,
+(817)  STROBILUS SERVUS: igitur ōrābō ut manū mē ēmittat. ībō atque ēloquar.
+(818)  STROBILUS SERVUS: Repperī... Quid repperistī? Nōn quod puerī clāmitant
+(819)  STROBILUS SERVUS: in fabā sē repperisse. Jamne autem, ut solēs? dēlūdis.
+(820)  STROBILUS SERVUS: Ere, manē, ēloquar jam, auscultā. Age ergō loquere. Repperī hodiē,
+(821)  STROBILUS SERVUS: ere, dīvitiās nimiās. Ubinam? Quadrilībrem, inquam, aulam aurī plēnam.
+(822)  LYCONIDES ADULESCENS: Quod ego facinus audiō ex tē? Eucliōnī huic seni surripuī.
+(823)  LYCONIDES ADULESCENS: ubi id est aurum? In arcā apud mē. nunc volo mē ēmittī manū.
+(824)  LYCONIDES ADULESCENS: Egone tē ēmittam manū,
+(825)  LYCONIDES ADULESCENS: scelerum cumulātissime?
+(826)  STROBILUS SERVUS: Abī, ere, scio quam rem gerās.
+(827)  STROBILUS SERVUS: lepidē hercle animum tuum temptāvī. jam ut ēriperēs apparābās:
+(828)  STROBILUS SERVUS: quid facerēs, sī repperissem? Nōn potēs probāsse nūgās.
+(829)  LYCONIDES ADULESCENS: ī, redde aurum. Reddam ego aurum? Redde, inquam, ut huic reddātur. Unde?
+(830)  LYCONIDES ADULESCENS: Quod modo fassu's esse in arcā. Soleō hercle ego garrīre nūgās.
+(831)  LYCONIDES ADULESCENS: Ita loquor. At scīn quō modō?
+(832)  LYCONIDES ADULESCENS: Vel hercle ēnicā, numquam hinc ferēs ā mē
+(835y) === Fragmenta ===
+(835x) == Non. ==
+(835)  STROBILUS SERVUS: prō illīs corcōtīs, strophiīs, sūmptū uxōriō
+(836x) == Gel. N.a. ==
+(836)  STROBILUS SERVUS: ut admemordit hominem
+(837x) == Non. ==
+(837)  EUCLIO SENEX: ego effodiēbam in diē dēnōs scrobēs.
+(838x) == Non. ==
+(838)  EUCLIO SENEX: nec noctū nec diū quiētus umquam servābam eam: nunc dormiam.
+(839x) == Non. ==
+(839)  EUCLIO SENEX: quī mī holera crūda pōnunt, hallec adduint.

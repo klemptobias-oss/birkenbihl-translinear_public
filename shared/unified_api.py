@@ -28,7 +28,7 @@ from typing import Any, Optional, Literal
 from . import preprocess
 
 
-Strength = Literal["NORMAL", "GR_FETT", "DE_FETT"]
+Strength = Literal["NORMAL", "GR_FETT", "LAT_FETT", "DE_FETT"]
 ColorMode = Literal["COLOR", "BLACK_WHITE"]
 TagMode = Literal["TAGS", "NO_TAGS"]
 VersmassMode = Literal["NORMAL", "KEEP_MARKERS", "REMOVE_MARKERS"]
@@ -53,12 +53,13 @@ def _poesie_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
                  tag_config: Optional[dict] = None):
     """
     Poesie (Drama/Komödie/Epos-Layout):
-    - Versmaß-Darstellung: aktiv, wenn "_Versmaß" im Dateinamen steht.
+    - Versmaß-Darstellung: aktiv, wenn versmass_mode="KEEP_MARKERS"
     - placement_overrides werden 1:1 an den Renderer gereicht.
+    - LAT_FETT wird wie GR_FETT behandelt (antike Sprache fett)
     """
-    versmass_display = "_Versmaß" in out_pdf
+    versmass_display = (opts.versmass_mode == "KEEP_MARKERS")
 
-    if opts.strength == "GR_FETT":
+    if opts.strength == "GR_FETT" or opts.strength == "LAT_FETT":
         return mod.create_pdf(
             blocks, out_pdf,
             gr_bold=True, de_bold=False,
@@ -99,11 +100,12 @@ def _prosa_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
     - Kein Versmaß-Rendering.
     - placement_overrides (hoch/tief/aus) jetzt ebenfalls durchreichen.
     - Die Signatur ist nun an _poesie_call angeglichen.
+    - LAT_FETT wird wie GR_FETT behandelt (antike Sprache fett)
     """
-    if opts.strength == "GR_FETT":
+    if opts.strength == "GR_FETT" or opts.strength == "LAT_FETT":
         return mod.create_pdf(
             blocks, out_pdf,
-            strength="GR_FETT",
+            strength=opts.strength,  # Übergebe die tatsächliche Strength
             color_mode=opts.color_mode,
             tag_mode=opts.tag_mode,
             placement_overrides=placement_overrides,

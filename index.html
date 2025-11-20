@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Birkenbihl / Translinear – Startseite</title>
+    <title>Antike-Translinear – Startseite</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       .title-container {
@@ -144,19 +144,154 @@
 
       /* Schriftgrößen für verschiedene Ebenen - klare Hierarchie */
       .kind-label {
-        font-size: 2em; /* Noch größer für Kategorien (Poesie/Prosa) */
+        font-size: 2em; /* Größer für Gattungen (Poesie/Prosa) */
         font-weight: bold;
         color: #2c3e50; /* Dunkler für bessere Sichtbarkeit */
       }
-      .author-label {
-        font-size: 1.6em; /* Größer für Autoren */
+      .category-label {
+        font-size: 1.7em; /* NEU: Für Kategorien (Epos, Drama, etc.) */
         font-weight: 600;
-        color: #34495e; /* Etwas heller als Gattung */
+        color: #34495e; /* Zwischen Gattung und Autor */
+      }
+
+      /* NEU: Farbige Hintergründe für Kategorien */
+      .category-Drama {
+        background-color: rgba(
+          147,
+          112,
+          219,
+          0.18
+        ); /* Lila mit mehr Blauton (Medium Purple) */
+        border-radius: 8px;
+        padding: 8px 12px;
+      }
+      .category-Epos {
+        background-color: rgba(
+          178,
+          34,
+          34,
+          0.15
+        ); /* Kräftigeres Rot (Firebrick) */
+        border-radius: 8px;
+        padding: 8px 12px;
+      }
+      .category-Lyrik {
+        background-color: rgba(255, 235, 59, 0.15); /* Gelb */
+        border-radius: 8px;
+        padding: 8px 12px;
+      }
+      .category-Historie {
+        background-color: rgba(76, 175, 80, 0.15); /* Grün */
+        border-radius: 8px;
+        padding: 8px 12px;
+      }
+      .category-Philosophie_Rhetorik {
+        background-color: rgba(33, 150, 243, 0.15); /* Blau bis Hellblau */
+        border-radius: 8px;
+        padding: 8px 12px;
+      }
+      .author-label {
+        font-size: 1.4em; /* Für Autoren */
+        font-weight: 600;
+        color: #5d6d7e; /* Etwas heller */
       }
       .work-label {
-        font-size: 1.2em; /* Größer für Werke */
+        font-size: 1.2em; /* Für Werke */
         font-weight: 500;
-        color: #5d6d7e; /* Noch heller */
+        color: #7f8c8d; /* Am hellsten */
+      }
+
+      /* Tab-Navigation Styles */
+      .tab-navigation {
+        display: flex;
+        gap: 0;
+        margin: 30px 0 0 0;
+        border-bottom: 3px solid var(--edge);
+        background: transparent;
+      }
+      .tab-btn {
+        padding: 15px 30px;
+        background: #e8e8e8;
+        border: 1px solid var(--edge);
+        border-bottom: none;
+        cursor: pointer;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #5d6d7e;
+        transition: all 0.3s ease;
+        border-radius: 8px 8px 0 0;
+        margin-right: 5px;
+      }
+      .tab-btn:hover {
+        background: #d5d5d5;
+        color: #2c3e50;
+      }
+      .tab-btn.active {
+        background: var(--card);
+        color: #2c3e50;
+        border-bottom: 3px solid var(--card);
+        margin-bottom: -3px;
+        font-weight: 700;
+      }
+      .tab-content {
+        display: none;
+      }
+      .tab-content.active {
+        display: block;
+      }
+      .info-content {
+        background: var(--card);
+        border: 1px solid var(--edge);
+        border-radius: 8px;
+        padding: 30px;
+        margin: 20px 0;
+        line-height: 1.8;
+      }
+      .info-content h2 {
+        font-size: 1.8em;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        color: #2c3e50;
+        border-bottom: 2px solid var(--edge);
+        padding-bottom: 10px;
+      }
+      .info-content h3 {
+        font-size: 1.4em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #34495e;
+      }
+      .info-content p {
+        margin: 10px 0;
+        color: #2c3e50;
+      }
+      .info-content ul {
+        margin: 10px 0;
+        padding-left: 30px;
+      }
+      .info-content li {
+        margin: 8px 0;
+        color: #2c3e50;
+      }
+      
+      /* Ausklappbare Abschnitte */
+      details summary {
+        cursor: pointer;
+        user-select: none;
+      }
+      
+      details summary .toggle-icon::before {
+        content: "▼ ausklappen";
+        color: #7f8c8d;
+        font-size: 0.9em;
+        margin-left: 8px;
+      }
+      
+      details[open] summary .toggle-icon::before {
+        content: "▲ einklappen";
+        color: #7f8c8d;
+        font-size: 0.9em;
+        margin-left: 8px;
       }
     </style>
   </head>
@@ -164,29 +299,1184 @@
     <div class="wrap">
       <div class="bar">
         <div class="title-container">
-          <div class="title-ornament">
-            <img
-              src="Bilder/Verzierung links rechts.png"
-              alt="Verzierung links"
-              class="rosette-left"
-            />
-            <img
-              src="Bilder/birkenbihl überschrift2.png"
-              alt=""
-              class="title-frame"
-            />
-            <img
-              src="Bilder/Verzierung links rechts.png"
-              alt="Verzierung rechts"
-              class="rosette-right"
-            />
-          </div>
+          <h1
+            style="
+              text-align: center;
+              font-size: 2.5em;
+              margin: 20px 0;
+              color: #2c3e50;
+            "
+          >
+            Antike Translinear-Texte
+          </h1>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="tab-navigation">
+          <button class="tab-btn active" data-tab="translinear-griechisch">
+            Translinear-Griechisch
+          </button>
+          <button class="tab-btn" data-tab="translinear-latein">
+            Translinear-Latein
+          </button>
+          <button class="tab-btn" data-tab="benutzerhinweise">
+            Benutzerhinweise
+          </button>
+          <button class="tab-btn" data-tab="impressum">Impressum</button>
         </div>
       </div>
 
-      <nav class="tree" aria-label="Werke-Navigation" id="catalogContainer">
-        <!-- Der Katalog wird hier dynamisch eingefügt -->
-      </nav>
+      <!-- Tab: Translinear-Griechisch -->
+      <div class="tab-content active" id="tab-translinear-griechisch">
+        <nav
+          class="tree"
+          aria-label="Griechische Werke-Navigation"
+          id="catalogContainerGriechisch"
+        >
+          <!-- Der griechische Katalog wird hier dynamisch eingefügt -->
+        </nav>
+      </div>
+
+      <!-- Tab: Translinear-Latein -->
+      <div class="tab-content" id="tab-translinear-latein">
+        <nav
+          class="tree"
+          aria-label="Lateinische Werke-Navigation"
+          id="catalogContainerLatein"
+        >
+          <!-- Der lateinische Katalog wird hier dynamisch eingefügt -->
+        </nav>
+      </div>
+
+      <!-- Tab: Benutzerhinweise -->
+      <div class="tab-content" id="tab-benutzerhinweise">
+        <div class="info-content">
+          <h2>Benutzerhinweise</h2>
+
+          <h3>Benutzerhinweise Antike Translinear-Texte</h3>
+          <p>
+            Diese neue Seite (16.11.25) bietet translineare Übersetzungen
+            klassischer griechischer und lateinischer Texte. Der Prozess der "Übersetzung" wurde dabei vom
+            relativ neuen Modell Chat-GPT5 (Thinking) durchgeführt. Ebenfalls
+            wurden die grammatikalischen Kürzel durch die KI generiert. Bei
+            einigen griechischen (vielleicht bald auch lateinischen?) Werken,
+            vor allem Epen, gibt es aktuell optional noch eine metrische
+            Darstellung (Versmaß-Darstellung).
+          </p>
+
+          <h3>Inhalte</h3>
+          <ul>
+            <li>
+              <strong>Sprachen:</strong> Es sind für jeden antiken Text sowohl
+              deutsche, als auch englische Übersetzungen vorhanden, sowie eine
+              dreisprachige Version (die eine Übereinanderlegung der deutschen
+              und englischen Übersetzung ist). Die Übersetzungen werden
+              unabhängig von einander erstellt durch die KI (also nicht im
+              selben Gespräch), was dem dreisprachigen Dokument den Vorteil
+              geben könnte, dass der Text zwei Mal auf zwei unterschiedliche
+              Weisen durchdacht und übersetzt wurde, was eventuell verschiedene
+              Bedeutungsnuancen besser herausstellen könnte.
+            </li>
+            <li>
+              <strong>Gattungen/Werke:</strong> Die Werke sind zuerst in Poesie
+              und Prosa unterteilt, wobei Poesie sich aus Drama, Epos und Lyrik
+              ergibt und Prosa hier den Bereich Historie und
+              Philosophie/Rhetorik inkludiert. Es wurde versucht, ein möglichst
+              breites Spektrum an aktuell sowie historisch wichtigen, oft
+              gelesenen und oft übersetzten Werken und Autoren abzubilden.
+            </li>
+            <li>
+              <strong>Textquellen</strong> Alle Textgrundlagen stammen entweder
+              von der großartigen Seite hypotactic.com ODER, falls sie dort
+              nicht verfügbar waren, von der Sammlung griechischer und
+              lateinischer Texte auf
+              https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman.
+              Eventuelle Fehler bei der Extraktion und Gewinnung der Texte sowie bei der Erzeugung des Materials durch die KI
+              könnten sich hier und da eingeschlichen haben, da aufgrund der
+              Fülle an Werken aktuell noch nicht alles genau durchgesehen werden
+              konnte.
+            </li>
+          </ul>
+
+          <h3>Dokumente für jedes Werk</h3>
+          <p>
+            Zusammenfassung: Für jedes Werk stehen verschiedene grundsätzliche
+            Input-Texte zur Verfügung:
+          </p>
+          <ul>
+            <li>
+              <strong>2-sprachig:</strong> Griechisch/Latein → Deutsch
+              (translinear)
+            </li>
+            <li>
+              <strong>2-sprachig:</strong> Griechisch/Latein → Englisch
+              (translinear)
+            </li>
+            <li>
+              <strong>3-sprachig:</strong> Griechisch/Latein → Deutsch/Englisch
+              (translinear)
+            </li>
+            <li>
+              <strong>Mit Versmaß:</strong> Bei einigen poetischen Texten kann
+              zusätzlich das Versmaß angezeigt werden.
+            </li>
+          </ul>
+          <p>
+            Jeder Input-Text erzeugt wiederum 2 x 2 x 2 = 8 verschiedene PDFs,
+            die zur Auswahl stehen:
+          </p>
+          <ul>
+            <li>
+              <strong>_Color oder _BlackWhite:</strong> Schwarz-weiß Version,
+              oder farbige Version. Bei der farbigen Version sind Verben stets
+              grün, Nomen rot, Adjektive blau, und Partizipe, Gerundium,
+              Gerundivum und Supinum stets violett eingefärbt. Individuelle
+              Färbungen (basierend auf Grammatiktags und 5. Farbe orange) können
+              im Builder eingestellt werden (s.u.).
+            </li>
+            <li>
+              <strong>_Fett oder _Normal:</strong> Die antike Textzeile und die
+              Überschriften werden entweder in Fett oder Normal dargestellt
+              (könnte vielleicht Tinte sparen beim Drucken, aber Fett sieht
+              schöner aus).
+            </li>
+            <li>
+              <strong>_Tag oder _NoTag:</strong> Es werden Dokumente stets mit
+              oder ohne die Grammatiktags dargestellt. Eine selektive
+              Darstellung nur einiger der Tags und der Ausschluss von anderen
+              kann ebenfalls im Builder vorgenommen werden (s.u.).
+            </li>
+          </ul>
+          <p>
+            Hilfreich ist die Funktion <strong>PDF in neuem Tab öffnen</strong>,
+            um das PDF sinnvoll betrachten zu können.
+          </p>
+
+          <h3>Bedeutung der Grammatik-Tags</h3>
+          <p>
+            Die Grammatiktags werden im PDF hoch- oder tiefgestellt neben den
+            Wörtern im antiken Text dargestellt. Hier eine Übersicht der
+            verwendeten Tags:
+          </p>
+
+          <p><strong>Hochgestellte Tags (Wortart und Kasus/Modus):</strong></p>
+          <ul style="column-count: 2; column-gap: 30px">
+            <li><strong>(N)</strong> – Nominativ</li>
+            <li><strong>(D)</strong> – Dativ</li>
+            <li><strong>(G)</strong> – Genitiv</li>
+            <li><strong>(A)</strong> – Akkusativ</li>
+            <li><strong>(V)</strong> – Vokativ</li>
+            <li><strong>(Abl)</strong> – Ablativ (Latein)</li>
+            <li><strong>(Du)</strong> – Dual (Griechisch)</li>
+            <li><strong>(Adj)</strong> – Adjektiv</li>
+            <li><strong>(Pt)</strong> – Partikel</li>
+            <li><strong>(Prp)</strong> – Präposition</li>
+            <li><strong>(Adv)</strong> – Adverb</li>
+            <li><strong>(Kon)</strong> – Konjunktion</li>
+            <li><strong>(Art)</strong> – Artikel (Griechisch)</li>
+            <li><strong>(ij)</strong> – Interjektion</li>
+            <li><strong>(Kmp)</strong> – Komparativ</li>
+            <li><strong>(Sup)</strong> – Superlativ</li>
+            <li><strong>(≈)</strong> – Übersetzung mit nur 1 Wort schwierig</li>
+          </ul>
+
+          <p>
+            <strong
+              >Tiefgestellte Tags (Tempus, Modus, Genus Verbi,
+              Pronomen):</strong
+            >
+          </p>
+          <ul style="column-count: 2; column-gap: 30px">
+            <li><strong>(Pr)</strong> – Pronomen</li>
+            <li><strong>(Prä)</strong> – Präsens</li>
+            <li><strong>(Imp)</strong> – Imperfekt</li>
+            <li><strong>(Aor)</strong> – Aorist (Griechisch)</li>
+            <li><strong>(AorS)</strong> – Starker Aorist (Griechisch)</li>
+            <li><strong>(Per)</strong> – Perfekt</li>
+            <li><strong>(Plq)</strong> – Plusquamperfekt</li>
+            <li><strong>(Fu)</strong> – Futur (Griechisch)</li>
+            <li><strong>(Fu1)</strong> – Futur I (Latein)</li>
+            <li><strong>(Fu2)</strong> – Futur II (Latein)</li>
+            <li><strong>(Inf)</strong> – Infinitiv</li>
+            <li><strong>(Akt)</strong> – Aktiv</li>
+            <li><strong>(Med)</strong> – Medium (Griechisch)</li>
+            <li><strong>(Pas)</strong> – Passiv</li>
+            <li>
+              <strong>(M/P)</strong> – Medium oder Passiv (morphologisch
+              identisch) (Griechisch)
+            </li>
+            <li><strong>(Knj)</strong> – Konjunktiv</li>
+            <li><strong>(Imv)</strong> – Imperativ</li>
+            <li><strong>(Op)</strong> – Optativ (Griechisch)</li>
+            <li><strong>(Gdv)</strong> – Gerundivum (Latein)</li>
+            <li><strong>(Ger)</strong> – Gerundium (Latein)</li>
+            <li><strong>(Spn)</strong> – Supinum (Latein)</li>
+          </ul>
+
+          <p>
+            <strong>Hinweis:</strong> Diese Tags können kombiniert auftreten,
+            z.B. <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">(N)(Prä)(Akt)</code> für ein Partizip im Nominativ, Präsens, Aktiv.
+          </p>
+
+          <!-- BEISPIEL 2: Noch ein Bild einfügen -->
+          <h3>Besonderheiten: Zitate, Quellen und Versmaß</h3>
+          <p>Es gibt einige Besonderheiten in manchen Werken: Bei manchen Prosa Werken sind im Text oft "Zitate", optional auch "Quellen" gekennzeichnet.
+          Sofern die Quelle vorhanden ist, wird sie im PDF angegeben, falls nicht, wird der zitierte Text ohne Quellenangabe geliefert. Die Zitate und die 
+          dazugehören Quellenangaben stammen in jedem Fall aus der Perseus Seite zu dem Werk selbst und sind dort auch erkennbar. Es handelt sich oft um 
+          Teststellen wie: "Es sagte doch schon Homer, dass: .... " Die Zitate sind, 
+          um sie vom Text abzuheben, zentriert dargestellt. Hier einmal zwei Beispiele von Zitaten mit und ohne Quellenangabe:
+          
+                </p>
+          <img
+            src="Bilder/BENUTZERHINWEISE/politeia_quelle.png"
+            alt="PDF Builder Konfiguration"
+            style="
+              max-width: 70%;
+              height: auto;
+              display: block;
+              margin: 20px auto;
+              border: 2px solid var(--edge);
+              border-radius: 8px;
+            "
+          />
+          <p
+            style="
+              text-align: center;
+              color: var(--muted);
+              font-size: 0.9em;
+              margin-top: -10px;
+            "
+          >
+            Abbildung 1: Politeia 1 griechisch-deutsch, typisches Beispiel eines Zitates mit Quellenangabe.
+          </p>
+          
+          <div style="margin: 40px 0;"></div>
+          
+          <img
+            src="Bilder/BENUTZERHINWEISE/newrepublicaZITATOHNEQUELLE.png"
+            alt="PDF Builder Konfiguration"
+            style="
+              max-width: 70%;
+              height: auto;
+              display: block;
+              margin: 20px auto;
+              border: 2px solid var(--edge);
+              border-radius: 8px;
+            "
+          />
+          <p
+            style="
+              text-align: center;
+              color: var(--muted);
+              font-size: 0.9em;
+              margin-top: -10px;
+            "
+          >
+            Abbildung 2: Republica 1 latein-deutsch, typisches Beispiel eines Zitates ohne weitere Quellenangabe.
+          </p>
+          
+          
+          Für einige Werke ist eine Versmaß-Darstellung vorhanden, welche lange und kurze Silben kennzeichnet.
+          Dabei sind lange silben durch waagerechte Linien
+          über der Silbe gekennzeichnet und kurze Silben durch zwei kleine Wellen (uu). Dabei ist es stets so, dass die Grammatikkürzel (falls eingeschaltet) 
+          mit zum Wort gehören und sich
+          die Darstellung auch über sie erstreckt. Bei Tragödien sind ebenfalls teilweise Versmaße gegeben. Dabei sind Zäsuren, also ungerelmäßig
+          auftretende kurze Silben, die anstelle von einer einzelnen langen oder kurzen Silbe stehen, stets rot und nach OBEN gewölbt dargestellt (anstatt schwarz
+          und 
+          nach unten gewölbt, wie normale kurze Silben). Die Informationen zu langen und kurzen Silben stammen von der sehr schönen und wertvollen Seite
+          Hypotactic.com und können dort eingesehen werden.
+          </p>
+          <img
+            src="Bilder/BENUTZERHINWEISE/Bild_1_Versmaß.png"
+            alt="PDF Builder Konfiguration"
+            style="
+              max-width: 70%;
+              height: auto;
+              display: block;
+              margin: 20px auto;
+              border: 2px solid var(--edge);
+              border-radius: 8px;
+            "
+          />
+          <p
+            style="
+              text-align: center;
+              color: var(--muted);
+              font-size: 0.9em;
+              margin-top: -10px;
+            "
+          >
+            Abbildung 3: Ilias 1 griechisch-deutsch, typischer Hexameter in Versmaßdarstellung.
+          </p>
+          
+          <p>Die Tragödien, Oden und Hymnen haben eine Versmaßdarstellung, die aufgrund der Komplexität der verschiedenen Versmaße nur die 
+          Längen und Kürzen quantitativ darstellt, nicht aber die Füße in jedem Fall eingezeichnet hat (diese ließen sich durch den Builder manuell hinzufügen,
+          s.u.).</p>
+          
+         <p><strong> Wichtig: Bekannter Fehler:</strong> Bei Ellisionsapostrophen tritt leider in der Versmaßdarstellung aktuell ein Fehler auf. Bei Wörtern wie γʼ 
+          oder σʼ oder δʼ, die eigentlich keine eigenständigen Silben sprachlich darstellen, sondern nur durch Verschmelzung mit dem Nachfolgenden zur Silbe werden,
+          wird aktuell eine kurze Silbe (uu) über dem δʼ oder σʼ angezeigt, die natürlich nicht wirklich sprachlich realisiert wird. Hier erkennbar an Zeile
+          845 im gefesselten Prometheus, bei dem δʼ ἀπʼ  als zwei kurze Silben beschrieben wird, obwohl es klarerweise nur eine sein kann. Eine Zäsur des Versmaßes 
+          (hier 6-füßiger Jambus) ist in Zeile 843 zu sehen.</p>
+         </p>
+          <img
+            src="Bilder/BENUTZERHINWEISE/korrektbild4zäsurundfehler.png"
+            alt="PDF Builder Konfiguration"
+            style="
+              max-width: 70%;
+              height: auto;
+              display: block;
+              margin: 20px auto;
+              border: 2px solid var(--edge);
+              border-radius: 8px;
+            "
+          />
+          <p
+            style="
+              text-align: center;
+              color: var(--muted);
+              font-size: 0.9em;
+              margin-top: -10px;
+            "
+          >
+            Abbildung 4: Prometheus griechisch-deutsch, Versmaß Version, typischer 6 füßiger Jambus mit Zäsur in rot und Ellisionsapostroph-Bug in Zeile 845.
+          </p>
+          
+
+          <h3>(Fortgeschritten) Bedienung des PDF Builders</h3>
+          <p>
+            Der PDF Builder ist dazu da, eigenständig PDFs erzeugen zu können, um kleine Fehler oder ungünstige
+            Übersetzungen der Wörter anzupassen und Farben und Grammatikkürzel zu individualisieren. Den PDF Builder ruft man auf,
+            indem man auf einer Werkseite (egal welches Werk) auf den
+            dunkelgrünen Button
+            <strong>"PDF aus Entwurf erstellen"</strong> klickt. Es öffnet sich
+            darauf die Tag- und Farbkonfigurationstabelle. Mit dem Klick unten
+            rechts auf <strong>PDFs erstellen</strong>, werden dann die PDFs
+            erzeugt (es dauert eine kurze Zeit, bis sie in der PDF-Ansicht unter
+            <strong>Entwurf</strong> angezeigt werden). Änderungen im Text können vorgenommen werden, indem der translinear.txt manipuliert wird und daraus ein neues
+            PDF erzeugt wird. Eine Beispielhafte Vorgehensweise ist diese:
+          </p>
+          <ul>
+            <li
+              style="
+                margin-bottom: 30px;
+                padding-left: 20px;
+                border-left: 3px solid #95a5a6;
+              "
+            >
+              <strong>1.) Textgrundlage erhalten</strong>
+
+              <p style="margin-top: 10px; margin-bottom: 10px">
+                Auf einer Werkseite oben links mit
+                <strong>"Entwurf.txt herunterladen"</strong> die Basisdatei
+                (translinear.txt) herunterladen.
+              </p>
+
+              <p style="margin-bottom: 10px">
+                <strong>• Vollständigen Text laden:</strong> Es ist sehr
+                empfehlenswert, den "ganzen" Text herunterzuladen und nicht
+                vorher Symbole durch die Buttons
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >"Grammatik-Tags Anzeigen (Aus)"</code
+                >
+                und
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >"Metrum-Marker Anzeigen (Aus)"</code
+                >
+                auszuschalten. Sonst werden diese Symbole nicht in die .txt
+                Datei geladen und können später nicht mehr verwendet werden um Metrum-Darstellungen oder Grammatiktags zu erzeugen.
+              </p>
+              
+              <p
+                style="
+                  margin-top: 10px;
+                  margin-bottom: 0;
+                  padding: 10px;
+                  background: #e8f4f8;
+                  border-left: 3px solid #3498db;
+                  border-radius: 3px;
+                "
+              >
+                <strong>💡 Tipp:</strong> Es ist auch ohne Download möglich, den
+                Text direkt im Browserfenster zu bearbeiten. Aber: Beim
+                Herunterladen ist die Datei "permanent", während Änderungen im
+                Browser verloren gehen, wenn man die Seite verlässt.
+              </p>
+              
+              </li>
+
+            <li style="margin-bottom: 30px; padding-left: 20px; border-left: 3px solid #95a5a6;">
+              <strong
+                >2.) Ausführliche Darstellung der
+                Bearbeitungsmöglichkeiten</strong
+              >
+              <p style="margin-top: 10px; margin-bottom: 10px;">
+                Die heruntergeladene translinear.txt Datei mit einem sinnvollen
+                Text-Editor öffnen und nach Wunsch bearbeiten. Die Bearbeitungen
+                können vielfältig sein, sollten aber gewissen Regeln folgen. Zum
+                Einfügen neuer Dinge oder beim Ändern von Dingen sollte sich
+                stets an der Grundstruktur der bereitgestellten translinear.txt
+                Datei orientiert werden. Dies liegt daran, dass der Text eine
+                gewisse Struktur haben muss um korrekt vom Builder verarbeitet zu
+                werden. Es ist hilfreich, bei der .txt Bearbeitung das originale
+                PDF parallel im Blick zu haben.
+              </p>
+              
+              <p style="margin-bottom: 10px">
+                <strong>• Wortanzahl beachten:</strong> In jeder Zeile sollte
+                stets die selbe Anzahl an Wörtern stehen, da der Code "Wort 1
+                unter Wort 1", "Wort 2 unter Wort 2" usw. stellt, um die
+                translineare Darstellung zu erreichen.
+              </p>
+
+              <p style="margin-bottom: 10px">
+                <strong>• Pipe-Zeichen:</strong> Wörter wie
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >durch|das|Meer</code
+                >
+                (mehrere Wörter über
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >|</code
+                >
+                verbunden, <kbd style="background: #f8f9fa; padding: 3px 6px; border: 1px solid #bbb; border-radius: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.1); font-family: monospace; font-size: 0.9em;">AltGr</kbd> + <kbd style="background: #f8f9fa; padding: 3px 6px; border: 1px solid #bbb; border-radius: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.1); font-family: monospace; font-size: 0.9em;">&lt;</kbd> auf der Tastatur) zählen als EIN Wort.
+              </p>
+
+              <p
+                style="
+                  margin-bottom: 0;
+                  padding: 10px;
+                  background: #fff3cd;
+                  border-left: 3px solid #f39c12;
+                  border-radius: 3px;
+                "
+              >
+                <strong>⚠️ Wichtig:</strong> Bei ungleicher Anzahl von Wörtern
+                in antiker Zeile oder Übersetzungszeile verschieben sich die
+                Zeilen gegeneinander und es steht nicht mehr das richtige Wort unter dem richtigen Wort!
+              </p>
+            </li>
+
+            <li
+              style="
+                margin-bottom: 30px;
+                padding-left: 20px;
+                border-left: 3px solid #3498db;
+              "
+            >
+              <strong>2.1 Einfach mögliche Änderungen:</strong>
+
+              <p style="margin-top: 10px; margin-bottom: 10px">
+                <strong>• Übersetzungen ändern:</strong> Einfach das
+                ungewünschte Wort der Übersetzungszeile mit dem richtigen
+                tauschen.
+              </p>
+
+              <p style="margin-bottom: 10px">
+                <strong>• Antiken Text ändern:</strong> Auch der antike Text ist
+                natürlich änderbar, wobei die Grammatiktags natürlich manuell
+                gesetzt werden müssten, wenn man den antiken Text ändert. In der
+                PDF Erstellung selbst ist keine "KI" am Werk, die Grammatiktags
+                automatisch setzen würde.
+              </p>
+
+              <p style="margin-bottom: 10px">
+                <strong>• Grammatikkürzel bearbeiten:</strong> Individuelle
+                Grammatikkürzel sind einfach änderbar oder einzeln löschbar
+                (z.B.
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Aor)</code
+                >
+                Aorist ändern auf
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Imp)</code
+                >
+                für Imperfekt, falls ein Fehler im gegebenen Text vorliegt). Es
+                ist aber <strong>nicht möglich</strong> neue Kürzel einfach zu
+                "erstellen" (z.B.
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Pl)</code
+                >
+                für Plural oder
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Dep)</code
+                >
+                für Deponens) – neue Kürzel aller Art werden NICHT einfach so
+                erkannt und hoch- oder tiefgestellt.
+              </p>
+
+              <p style="margin-bottom: 10px">
+                <strong>• Überschriften einfügen/löschen:</strong> Manuell
+                Überschriften einfügen oder löschen ist ebenfalls möglich:
+              </p>
+              <ul style="margin-left: 20px; margin-bottom: 10px">
+                <li>
+                  Kleine linksbündige Überschriften:
+                  <code
+                    style="
+                      background: #f0f0f0;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                    "
+                    >== Strophe 1 ==</code
+                  >
+                  oder
+                  <code
+                    style="
+                      background: #f0f0f0;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                    "
+                    >== St. 18a ==</code
+                  >
+                </li>
+                <li>
+                  Mittelgroße Überschriften:
+                  <code
+                    style="
+                      background: #f0f0f0;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                    "
+                    >=== Chor ===</code
+                  >
+                </li>
+                <li>
+                  Große zentrierte Überschriften:
+                  <code
+                    style="
+                      background: #f0f0f0;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                    "
+                    >==== Text der großen Überschrift ====</code
+                  >
+                </li>
+              </ul>
+              <p style="margin-bottom: 10px">
+                <strong>• Zitate oder Quellen einfügen/löschen:</strong> Text, der im translinear.txt Dokument zwischen [Zitat Anfang] und [Zitat Ende]
+                steht, wird als Zitat 
+                dargestellt. Text, der Zwischen [Quelle Anfang] und [Quelle Ende] steht, wird als Quelle dargestellt.
+              </p>
+            </li>
+            <li
+              style="
+                margin-bottom: 30px;
+                padding-left: 20px;
+                border-left: 3px solid #95a5a6;
+              "
+            >
+              <details style="cursor: pointer;">
+                <summary style="list-style: none; outline: none;">
+                  <strong style="font-size: 1.05em; user-select: none;">
+                    ⚠️ 2.2 Sehr fortgeschritten (gerne überspringen, zur
+                    Vollständigkeit): Versmaß Versionen
+                    <span class="toggle-icon"></span>
+                  </strong>
+                </summary>
+
+              <div style="margin-top: 15px;">
+              <p style="margin-bottom: 15px">
+                Aktuell gibt es in griechischen Input-Texten auf den
+                Versmaß-Werkseiten sogenannte <strong>"Meter Marker"</strong>,
+                diese "kodieren" die Längen und Kürzen der Silben im Text:
+              </p>
+
+              <ul style="margin-left: 20px; margin-bottom: 15px">
+                <li>
+                  <code
+                    style="
+                      background: white;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                      font-weight: bold;
+                    "
+                    >i</code
+                  >
+                  = kurze Silbe
+                </li>
+                <li>
+                  <code
+                    style="
+                      background: white;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                      font-weight: bold;
+                    "
+                    >L</code
+                  >
+                  = lange Silbe
+                </li>
+                <li>
+                  <code
+                    style="
+                      background: white;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                      font-weight: bold;
+                      color: red;
+                    "
+                    >r</code
+                  >
+                  = kurze Silbe während einer Zäsur (rot und nach oben gewölbt
+                  in der Versmaßdarstellung)
+                </li>
+                <li>
+                  <code
+                    style="
+                      background: white;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                      font-weight: bold;
+                    "
+                    >|</code
+                  >
+                  = Fuß-Trenner (z.B. 6 Füße pro Hexameterzeile, im PDF als
+                  senkrechte Linie sichtbar)
+                </li>
+              </ul>
+
+              <p style="margin-bottom: 15px">
+                <strong
+                  >Beispiel typischer Zeilen mit Meter-Markern (Ilias 1,
+                  griechisch-deutsch):</strong
+                >
+              </p>
+
+              <div style="font-family: monospace; font-size: 0.95em;">
+                <p style="margin: 0 0 2px 0; color: #2c3e50;">
+                  (1) μῆLνινi(A) ἄi|ειLδεi(Prä)(Akt)(Imv) θεi|ὰL(V)
+                  ΠηL|ληLϊiάi|δεωL(G) Ἀiχιi|λῆLοςL(G)|
+                </p>
+                <p style="margin: 0 0 15px 0; color: #7f8c8d;">(1) Zorn sing Göttin des|Peleus|Sohnes des|Achilleus</p>
+              </div>
+              <div style="font-family: monospace; font-size: 0.95em;">
+                <p style="margin: 0 0 2px 0; color: #2c3e50;">
+                  (2) οὐLλοiμέi|νηνL(Adj)(A), ἣL(Pr)(N) |μυLρίiʼ(Adj)(A)
+                  Ἀi|χαιLοῖςL(D) |ἄλLγεiʼ(A) ἔi|θηLκεL(AorS)(Akt),|
+                </p>
+                <p style="margin: 0 0 15px 0; color: #7f8c8d;">
+                  (2) verderblich, die unzählige den|Achaiern Schmerzen setzte,
+                </p>
+              </div>
+              <div style="font-family: monospace; font-size: 0.95em;">
+                <p style="margin: 0 0 2px 0; color: #2c3e50;">
+                  (3) πολLλὰςL(Adj)(A) |δʼ(Pt) ἰφLθίL|μουςL(Adj)(A) ψυL|χὰςL(A)
+                  Ἄiϊi|διL(D) προiΐi|αLψενL(Aor)(Akt)|
+                </p>
+                <p style="margin: 0 0 15px 0; color: #7f8c8d;">(3) viele aber tapfere Seelen zu|Hades sandte|hin</p>
+              </div>
+
+              <div style="font-family: monospace; font-size: 0.95em;">
+                <p style="margin: 0 0 2px 0; color: #2c3e50;">
+                  (18) ὑLμῖνL(Pr)(D) |μὲνL(Pt) θεοὶL(N) |δοῖLενi(Aor)(Akt)(Op)
+                  Ὀi|λύμLπιiαi(Adj)(A) |δώLματiʼ(A) ἔi|χονLτεςL(Prä)(Akt)(N)|
+                </p>
+                <p style="margin: 0 0 15px 0; color: #7f8c8d;">(18) euch zwar Götter gäben Olympische Häuser habend</p>
+              </div>
+              <div style="font-family: monospace; font-size: 0.95em;">
+                <p style="margin: 0 0 2px 0; color: #2c3e50;">
+                  (19) ἐκLπέρL|σαιL(Aor)(Akt)(Inf) Πριiάi|μοιLοi(G) πόi|λινL(A),
+                  εὖL(Adv) |δʼ(Pt) οἴLκαδiʼ(Adv) ἱi|κέσLθαιL(Aor)(Med)(Inf)·|
+                </p>
+                <p style="margin: 0 0 15px 0; color: #7f8c8d;">
+                  (19) aus|plündern des|Priamos Stadt, gut aber heimwärts
+                  gelangen·|
+                </p>
+              </div>
+              <div style="font-family: monospace; font-size: 0.95em;">
+                <p style="margin: 0 0 2px 0; color: #2c3e50;">
+                  (20) παῖLδαi(A) δʼ(Pt) ἐi|μοὶL(Pr)(D) λύL|σαιLτεi(Aor)(Akt)(Op)
+                  φίi|ληνL(Adj)(A), τὰi(Art)(A) δʼ(Pt) ἄi|ποιLναi(A)
+                  δέi|χεσLθαιL(Prä)(M/P)(Inf),|
+                </p>
+                <p style="margin: 0 0 15px 0; color: #7f8c8d;">
+                  (20) Tochter aber mir löset lieb, die aber Löse|gaben
+                  anzunehmen,
+                </p>
+              </div>
+
+              <p style="margin-bottom: 15px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                <strong
+                  >Die Marker i, r, L, | sollten nach diesen Regeln gesetzt
+                  werden:</strong
+                >
+              </p>
+
+              <div style="margin-left: 15px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                <p style="margin-bottom: 12px">
+                  <strong style="color: #2c3e50">2.2.1.) Grundregel:</strong> Direkt
+                  nach jeder Silbe die entsprechenden Marker platzieren.<br />
+                  <span style="margin-left: 20px"
+                    >Beispiel:
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >μῆLνινi(A)</code
+                    >
+                    (Lang-Kurz),
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >θεi|ὰL(V)</code
+                    >
+                    (Kurz-Lang)</span
+                  >
+                </p>
+
+                <p style="margin-bottom: 12px">
+                  <strong style="color: #2c3e50">2.2.1) Fuß-Marker:</strong>
+                  Wenn ein Maß vollendet ist, einen
+                  <code
+                    style="
+                      background: white;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                    "
+                    >|</code
+                  >
+                  setzen.<br />
+                  <span style="margin-left: 20px"
+                    >Beispiel:
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >μῆLνινi(A) ἄi|</code
+                    >
+                    (Lang-Kurz-Kurz → Hexameter vollständig,
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >ἄi|</code
+                    >
+                    trägt Kurz- und Fuß-Symbol gleichzeitig)</span
+                  >
+                </p>
+
+                <p style="margin-bottom: 12px">
+                  <strong style="color: #e74c3c"
+                    >2.2.2) ⚠️ Wichtige Zusatzregel:</strong
+                  >
+                  Der Marker
+                  <code
+                    style="
+                      background: white;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                    "
+                    >|</code
+                  >
+                  steht <strong>niemals am Ende eines Wortes</strong>. Falls er
+                  dort stehen müsste, wird er an den
+                  <strong>Anfang des nächsten Wortes</strong> gerückt.<br />
+                  <span style="margin-left: 20px"
+                    >❌ Falsch:
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >ἣL|(Pr)(N) μυLρίiʼ(Adj)(A)</code
+                    ></span
+                  ><br />
+                  <span style="margin-left: 20px"
+                    >✅ Richtig:
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >ἣL(Pr)(N) |μυLρίiʼ(Adj)(A)</code
+                    ></span
+                  >
+                </p>
+
+                <p style="margin-bottom: 12px">
+                  <strong style="color: #e74c3c"
+                    >2.2.3) Sonderbehandlung Ellisionsapostrophe:</strong
+                  >
+                  Bei Silben mit Ellisionsapostrophen wie
+                  <code
+                    style="
+                      background: white;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                    "
+                    >δʼ(Pt)</code
+                  >, die keine eigenständig auszusprechenden Silben sind,
+                  sondern nur mit der darauffolgenden Silbe verschmelzen, steht
+                  <strong>KEIN eigenständiger Meter-Marker</strong>.<br />
+                  <span style="margin-left: 20px"
+                    >Beispiel:
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >|δʼ(Pt) ἰφLθίL|μουςL(Adj)(A)</code
+                    ></span
+                  ><br />
+                  <span style="margin-left: 20px"
+                    >→
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >δʼ(Pt)</code
+                    >
+                    trägt keinen Marker,
+                    <strong>da es keine eigenständige Silbe</strong> ist. Es
+                    erhält im PDF den Marker
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >L</code
+                    >
+                    von der rechts danebenstehenden Silbe, mit der es
+                    verschmilzt → es entsteht
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >δʼL(Pt) ἰφL</code
+                    >
+                    als EINE lange Silbe "δἰφ".</span
+                  ><br /><br />
+                  <span style="margin-left: 20px"
+                    ><strong>Im abgrenzenden Vergleich dazu:</strong>
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >|δώLματiʼ(A) ἔi|</code
+                    >
+                    – hier liegt auch ein Ellisionsapostroph vor, was aber eine
+                    eigenständige Silbe ist (<code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >δώLματiʼ(A)</code
+                    >
+                    = Lang-Kurz), daher trägt die Silbe ihr
+                    <code
+                      style="
+                        background: white;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                      "
+                      >i</code
+                    >
+                    als kurze Silbe noch
+                    <strong>vor dem Ellisionsapostroph</strong>!</span
+                  >
+                </p>
+
+                <p style="margin-bottom: 12px">
+                  <strong style="color: #2c3e50">2.2.4) Vers-Ende:</strong> Am
+                  Ende eines Verses wird ebenfalls ein
+                  <code
+                    style="
+                      background: white;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                    "
+                    >|</code
+                  >
+                  gesetzt (der Fuß, der den letzten Takt abschließt).
+                </p>
+              </div>
+              </div>
+              </details>
+            </li>
+
+            <li
+              style="
+                margin-bottom: 30px;
+                padding-left: 20px;
+                border-left: 3px solid #95a5a6;
+              "
+            >
+              <strong>3.) Bearbeiteten Text einbetten</strong>
+
+              <p style="margin-top: 10px; margin-bottom: 10px">
+                Die .txt Datei über den Knopf
+                <strong>"Entwurf.txt hochladen"</strong> neu in das Entwurf --> PDF Fenster laden und damit in die
+                entsprechende Werkseite einbetten.
+              </p>
+
+            </li>
+
+            <li
+              style="
+                margin-bottom: 30px;
+                padding-left: 20px;
+                border-left: 3px solid #95a5a6;
+              "
+            >
+              <strong>4.) PDF-Erstellung vorbereiten</strong>
+
+              <p style="margin-top: 10px; margin-bottom: 10px">
+                Auf den dunkelgrünen Button
+                <strong>"PDF aus Entwurf erstellen"</strong> klicken. Es öffnet
+                sich die Tag- und Farbkonfigurationstabelle mit den
+                "original"-Einstellungen voreingestellt.
+              </p>
+
+              <p style="margin-bottom: 10px">
+                <strong>• Tags konfigurieren:</strong> Nun kann man (optional)
+                die gewünschten Färbungen der Wörter, Hoch- und Tiefstellungen
+                der Tags, oder auch Unsichtbarmachung gewisser Gruppen von Tags
+                (ganz rechts:
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >"Tag nicht zeigen"</code
+                >) konfigurieren. Dies ermöglicht zum Beispiel, 
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Adv)</code
+                >
+                Adverb oder
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Prp)</code
+                >
+                Präposition nicht als Tag zu zeigen.
+              </p>
+
+              <p style="margin-bottom: 10px">
+                <strong>• Konflikte bei mehreren Tags:</strong> Bei Wörtern mit
+                mehreren Tags (wie Partizipe) können Konflikte auftauchen (z.B.
+                wenn man
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >"aktiv"</code
+                >
+                rot färbt, aber
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >"aorist"</code
+                >
+                blau).
+              </p>
+
+              <p style="margin-bottom: 0">
+                <strong>• Prioritätsregel:</strong> Änderungen WEITER UNTEN in
+                der Tabelle überschreiben obere Einstellungen. Beispiel: da
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >"aktiv"</code
+                >
+                weiter unten in der Tabelle für Verben steht, überschreibt die gewählte Farbe des
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Akt)</code
+                >
+                Tags die hypothetische Blaufärbung von
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Aor)</code
+                >-getaggten Verben. Dies ermöglicht z.B. auch Adverbien rot zu
+                färben, aber komparative und superlative Adverbien anders, da
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Kmp)</code
+                >
+                oder
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Sup)</code
+                >
+                die
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Adv)</code
+                >-Farbe überschreiben.
+              </p>
+            </li>
+
+            <li
+              style="
+                margin-bottom: 30px;
+                padding-left: 20px;
+                border-left: 3px solid #95a5a6;
+              "
+            >
+              <strong>5.) PDF erstellen</strong>
+
+              <p style="margin-top: 10px; margin-bottom: 10px">
+                Auf den Knopf unten rechts in der Tabelle
+                <strong>"PDFs erstellen"</strong> klicken.
+              </p>
+
+              <p style="margin-bottom: 10px">
+                <strong>• Wartezeit:</strong> Nach ca. 1 Minute sollten rechts
+                in der Werkseite im Fenster <strong>"PDF-Ansicht"</strong> die
+                PDFs aus dem Entwurf erscheinen. Dazu sollte man statt den Reiter <strong>original</strong> den Reiter <strong>Entwurf</strong> anklicken.
+              </p>
+
+              <p style="margin-bottom: 10px">
+                <strong>• Automatische Varianten:</strong> Es werden automatisch
+                immer mehrere Versionen erstellt: schwarz-weiß, farbig, mit/ohne
+                Grammatik-Tags, mit/ohne fetter Schrift in der antiken Zeile.
+              </p>
+
+              <p
+                style="
+                  margin-bottom: 0;
+                  padding: 10px;
+                  background: #f8d7da;
+                  border-left: 3px solid #dc3545;
+                  border-radius: 3px;
+                "
+              >
+                <strong>⚠️ WICHTIG:</strong> Im Idealfall die PDFs
+                herunterladen, da sie sonst vermutlich schnell verschwinden,
+                wenn man die Seite verlässt!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tab: Impressum -->
+      <div class="tab-content" id="tab-impressum">
+        <div class="info-content">
+          <h2>Impressum</h2>
+
+          <h3>Angaben gemäß § 5 TMG</h3>
+          <p>
+            Name / Firma<br />
+            Straße und Hausnummer<br />
+            PLZ und Ort<br />
+          </p>
+
+          <h3>Kontakt</h3>
+          <p>E-Mail: klemp.tobias@gmx.net<br /></p>
+
+          <h3>Haftungsausschluss</h3>
+          <p>
+            Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für
+            die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können
+            wir jedoch keine Gewähr übernehmen.
+          </p>
+
+          <h3>Urheberrecht</h3>
+          <p>
+            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
+            diesen Seiten unterliegen dem deutschen Urheberrecht. Sie dürfen nicht kommerziell genutzt werden, wohl aber in jeder anderen erdenklichen Weise und
+            dürfen auch gerne weiter verbreitet werden!
+          </p>
+        </div>
+      </div>
     </div>
 
     <script type="module">
@@ -194,6 +1484,7 @@
         loadCatalog,
         listLanguages,
         listKindsByLanguage,
+        listCategoriesByKind,
         listAuthors,
         listWorks,
       } from "./catalog.js";
@@ -248,59 +1539,214 @@
         return li;
       }
 
-      (async function init() {
-        const container = document.getElementById("catalogContainer");
-        const cat = await loadCatalog();
+      // Hilfsfunktion: Formatiere Kategorienamen für die Anzeige
+      function formatCategoryName(category) {
+        // "Philosophie_Rhetorik" -> "Philosophie / Rhetorik"
+        return category.replace(/_/g, " / ");
+      }
 
-        // Ebene 1: Sprachen
-        const languages = listLanguages(cat);
-        for (const lang of languages) {
-          const header = document.createElement("h2");
-          header.className = "language-header";
-          header.textContent = lang;
-          container.appendChild(header);
+      // Hilfsfunktion zum Erstellen einer Sprachseite
+      function buildLanguageCatalog(container, cat, lang) {
+        const header = document.createElement("h2");
+        header.className = "language-header";
+        header.textContent = lang.charAt(0).toUpperCase() + lang.slice(1);
+        container.appendChild(header);
 
-          const rootUl = document.createElement("ul");
-          rootUl.className = "root";
-          container.appendChild(rootUl);
+        const rootUl = document.createElement("ul");
+        rootUl.className = "root";
+        container.appendChild(rootUl);
 
-          // Ebene 2: Gattungen (Poesie, Prosa)
-          const kinds = listKindsByLanguage(cat, lang);
-          for (const kind of kinds) {
-            const kindNode = createToggleable(
-              kind.charAt(0).toUpperCase() + kind.slice(1),
+        // Ebene 2: Gattungen (Poesie, Prosa)
+        const kinds = listKindsByLanguage(cat, lang);
+        for (const kind of kinds) {
+          const kindNode = createToggleable(
+            kind.charAt(0).toUpperCase() + kind.slice(1),
+            true,
+            "kind-label"
+          );
+          rootUl.appendChild(kindNode.li);
+
+          // Ebene 3: Kategorien (Epos, Drama, Lyrik, etc.)
+          const categories = listCategoriesByKind(cat, lang, kind);
+          for (const category of categories) {
+            const categoryNode = createToggleable(
+              formatCategoryName(category),
               true,
-              "kind-label"
+              "category-label"
             );
-            rootUl.appendChild(kindNode.li);
+            // Füge spezifische Kategorie-Klasse für Hintergrundfarbe hinzu
+            categoryNode.li.classList.add(`category-${category}`);
+            kindNode.ul.appendChild(categoryNode.li);
 
-            // Ebene 3: Autoren
-            const authors = listAuthors(cat, lang, kind);
+            // Ebene 4: Autoren
+            const authors = listAuthors(cat, lang, kind, category);
             for (const a of authors) {
               const aNode = createToggleable(a.display, true, "author-label");
-              kindNode.ul.appendChild(aNode.li);
+              categoryNode.ul.appendChild(aNode.li);
 
-              // Ebene 4: Werke
-              const works = listWorks(cat, lang, kind, a.author);
+              // Ebene 5: Werke
+              const works = listWorks(cat, lang, kind, category, a.author);
               for (const w of works) {
                 const workNode = createToggleable(w.title, true, "work-label");
                 aNode.ul.appendChild(workNode.li);
 
-                const url = `work.html?lang=${encodeURIComponent(
+                // Bestimme die Sprachrichtung basierend auf der Sprache
+                const sourceLang =
+                  lang === "griechisch" ? "Griechisch" : "Latein";
+
+                // OHNE Versmaß: 3 Zweige (de, en, de_en)
+                // 1. Original → Deutsch
+                const url_de = `work.html?lang=${encodeURIComponent(
                   lang
-                )}&kind=${encodeURIComponent(kind)}&author=${encodeURIComponent(
+                )}&kind=${encodeURIComponent(
+                  kind
+                )}&category=${encodeURIComponent(
+                  category
+                )}&author=${encodeURIComponent(
                   a.author
-                )}&work=${encodeURIComponent(w.id)}`;
-                const linkText =
-                  "Originaltext + Birkenbihl" +
-                  (w.versmass ? " (Versmaß-fähig)" : "");
-                const workLeaf = createLeafLink(linkText, url);
-                workNode.ul.appendChild(workLeaf);
+                )}&work=${encodeURIComponent(
+                  w.id
+                )}&languages=2&meter=false&target=de`;
+                const linkText_de = `${sourceLang} → Deutsch (translinear)`;
+                const workLeaf_de = createLeafLink(linkText_de, url_de);
+                workNode.ul.appendChild(workLeaf_de);
+
+                // 2. Original → Englisch
+                const url_en = `work.html?lang=${encodeURIComponent(
+                  lang
+                )}&kind=${encodeURIComponent(
+                  kind
+                )}&category=${encodeURIComponent(
+                  category
+                )}&author=${encodeURIComponent(
+                  a.author
+                )}&work=${encodeURIComponent(
+                  w.id
+                )}&languages=2&meter=false&target=en`;
+                const linkText_en = `${sourceLang} → Englisch (translinear)`;
+                const workLeaf_en = createLeafLink(linkText_en, url_en);
+                workNode.ul.appendChild(workLeaf_en);
+
+                // 3. Original → Deutsch/Englisch
+                const url_de_en = `work.html?lang=${encodeURIComponent(
+                  lang
+                )}&kind=${encodeURIComponent(
+                  kind
+                )}&category=${encodeURIComponent(
+                  category
+                )}&author=${encodeURIComponent(
+                  a.author
+                )}&work=${encodeURIComponent(w.id)}&languages=3&meter=false`;
+                const linkText_de_en = `${sourceLang} → Deutsch/Englisch (translinear)`;
+                const workLeaf_de_en = createLeafLink(
+                  linkText_de_en,
+                  url_de_en
+                );
+                workNode.ul.appendChild(workLeaf_de_en);
+
+                // Falls Versmaß verfügbar: zusätzlich 3 Zweige MIT Versmaß
+                if (w.versmass) {
+                  // 4. Original → Deutsch + Versmaß
+                  const url_de_m = `work.html?lang=${encodeURIComponent(
+                    lang
+                  )}&kind=${encodeURIComponent(
+                    kind
+                  )}&category=${encodeURIComponent(
+                    category
+                  )}&author=${encodeURIComponent(
+                    a.author
+                  )}&work=${encodeURIComponent(
+                    w.id
+                  )}&languages=2&meter=true&target=de`;
+                  const linkText_de_m = `${sourceLang} → Deutsch (translinear + Versmaß)`;
+                  const workLeaf_de_m = createLeafLink(linkText_de_m, url_de_m);
+                  workNode.ul.appendChild(workLeaf_de_m);
+
+                  // 5. Original → Englisch + Versmaß
+                  const url_en_m = `work.html?lang=${encodeURIComponent(
+                    lang
+                  )}&kind=${encodeURIComponent(
+                    kind
+                  )}&category=${encodeURIComponent(
+                    category
+                  )}&author=${encodeURIComponent(
+                    a.author
+                  )}&work=${encodeURIComponent(
+                    w.id
+                  )}&languages=2&meter=true&target=en`;
+                  const linkText_en_m = `${sourceLang} → Englisch (translinear + Versmaß)`;
+                  const workLeaf_en_m = createLeafLink(linkText_en_m, url_en_m);
+                  workNode.ul.appendChild(workLeaf_en_m);
+
+                  // 6. Original → Deutsch/Englisch + Versmaß
+                  const url_de_en_m = `work.html?lang=${encodeURIComponent(
+                    lang
+                  )}&kind=${encodeURIComponent(
+                    kind
+                  )}&category=${encodeURIComponent(
+                    category
+                  )}&author=${encodeURIComponent(
+                    a.author
+                  )}&work=${encodeURIComponent(w.id)}&languages=3&meter=true`;
+                  const linkText_de_en_m = `${sourceLang} → Deutsch/Englisch (translinear + Versmaß)`;
+                  const workLeaf_de_en_m = createLeafLink(
+                    linkText_de_en_m,
+                    url_de_en_m
+                  );
+                  workNode.ul.appendChild(workLeaf_de_en_m);
+                }
               }
             }
           }
         }
+      }
+
+      (async function init() {
+        const cat = await loadCatalog();
+
+        // Erstelle griechischen Katalog
+        const containerGriechisch = document.getElementById(
+          "catalogContainerGriechisch"
+        );
+        if (containerGriechisch) {
+          buildLanguageCatalog(containerGriechisch, cat, "griechisch");
+        }
+
+        // Erstelle lateinischen Katalog
+        const containerLatein = document.getElementById(
+          "catalogContainerLatein"
+        );
+        if (containerLatein) {
+          buildLanguageCatalog(containerLatein, cat, "latein");
+        }
       })();
+
+      // Tab-Funktionalität
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabButtons = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const targetTab = button.getAttribute("data-tab");
+
+            // Entferne active-Klasse von allen Buttons und Contents
+            tabButtons.forEach((btn) => btn.classList.remove("active"));
+            tabContents.forEach((content) =>
+              content.classList.remove("active")
+            );
+
+            // Füge active-Klasse zum geklickten Button hinzu
+            button.classList.add("active");
+
+            // Zeige den entsprechenden Tab-Content
+            const targetContent = document.getElementById(`tab-${targetTab}`);
+            if (targetContent) {
+              targetContent.classList.add("active");
+            }
+          });
+        });
+      });
     </script>
   </body>
 </html>

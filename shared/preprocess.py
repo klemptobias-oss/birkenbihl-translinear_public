@@ -48,11 +48,12 @@ import re
 from typing import List, Dict, Any, Iterable, Optional, Set
 
 # ======= Tag-Definitionen für die Erkennungslogik =======
-KASUS_TAGS = {'N', 'G', 'D', 'A', 'V'}
-TEMPUS_TAGS = {'Aor', 'Prä', 'Imp', 'AorS', 'Per', 'Plq', 'Fu'}
+KASUS_TAGS = {'N', 'G', 'D', 'A', 'V', 'Abl'}  # NEU: Abl für Latein
+TEMPUS_TAGS = {'Aor', 'Prä', 'Imp', 'AorS', 'Per', 'Plq', 'Fu', 'Fu1', 'Fu2'}  # NEU: Fu1, Fu2 für Latein
 DIATHESE_TAGS = {'Med', 'Pas', 'Akt', 'M/P'}
 MODUS_TAGS = {'Inf', 'Op', 'Imv', 'Knj'}
 STEIGERUNG_TAGS = {'Kmp', 'Sup'}
+LATEINISCHE_VERBFORMEN = {'Ger', 'Gdv', 'Spn'}  # NEU: Spezielle lateinische Verbformen
 
 # Alle Tags, die eine Wortart eindeutig identifizieren
 WORTART_IDENTIFIER_TAGS = {
@@ -68,18 +69,18 @@ WORTART_IDENTIFIER_TAGS = {
 
 # Reihenfolge für Hierarchie-Überschreibung innerhalb der Gruppen
 HIERARCHIE = {
-    'verb': ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'Akt', 'Med', 'Pas', 'M/P', 'Inf', 'Op', 'Knj', 'Imv'],
-    'partizip': ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'N', 'G', 'D', 'A', 'V', 'Akt', 'Med', 'Pas', 'M/P'],
+    'verb': ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'Fu1', 'Fu2', 'Akt', 'Med', 'Pas', 'M/P', 'Inf', 'Op', 'Knj', 'Imv'],  # NEU: Fu1, Fu2
+    'partizip': ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'Fu1', 'Fu2', 'N', 'G', 'D', 'A', 'V', 'Akt', 'Med', 'Pas', 'M/P'],  # NEU: Fu1, Fu2
     'adjektiv': ['N', 'G', 'D', 'A', 'V', 'Kmp', 'Sup'],
     'adverb': ['Kmp', 'Sup'],
     'pronomen': ['N', 'G', 'D', 'A'],
     'artikel': ['N', 'G', 'D', 'A'],
-    'nomen': ['N', 'G', 'D', 'A', 'V'],
+    'nomen': ['N', 'G', 'D', 'A', 'V', 'Abl'],  # NEU: Abl für Latein
 }
 
 # ======= Konstanten (müssen mit dem Renderer-Stand zusammenpassen) =======
-SUP_TAGS = {'N','D','G','A','V','Du','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','Sup','ij'}
-SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Knj','Op','Pr','AorS','M/P'}
+SUP_TAGS = {'N','D','G','A','V','Du','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','Sup','ij','Abl'}  # NEU: Abl für Latein
+SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Knj','Op','Pr','AorS','M/P','Gdv','Ger','Spn','Fu1','Fu2'}  # NEU: Gdv, Ger, Spn, Fu1, Fu2 für Latein
 
 # ======= Regexe =======
 RE_PAREN_TAG     = re.compile(r'\(([A-Za-z0-9/≈äöüßÄÖÜ]+)\)')
@@ -92,6 +93,7 @@ COLOR_MAP = {
     'blue': '+',
     'green': '-',
     'magenta': '§',
+    'purple': '§',  # purple = magenta (sanftes Violett)
     'orange': '$',
 }
 
@@ -141,21 +143,51 @@ def _get_wortart_and_relevant_tags(token_tags: Set[str]) -> (Optional[str], Set[
     Konfiguration relevanten Tags.
     """
     # 1. Eindeutige Identifier prüfen (Adj, Adv, Pr, Art, etc.)
-    for tag, wortart in WORTART_IDENTIFIER_TAGS.items():
-        if tag in token_tags:
-            return wortart, token_tags
+    # ABER: Kon und Pt werden NUR als Wortart erkannt, wenn sie das EINZIGE Tag sind
+    # (z.B. tribuendoqueAblKonGer soll als Verb erkannt werden, nicht als Kon)
+    # (z.B. obtinendineGPtGer soll als Verb erkannt werden, nicht als Pt)
+    # (z.B. MīlesneNPt soll als Nomen erkannt werden, nicht als Pt)
+    
+    # Spezialfall: Wenn Kon oder Pt vorhanden ist UND andere Tags, ignoriere sie komplett
+    ignorable_tags = {'Kon', 'Pt'}  # Tags, die nur als Wortart gelten, wenn sie alleine stehen
+    has_ignorable = bool(token_tags.intersection(ignorable_tags))
+    
+    if has_ignorable and len(token_tags) > 1:
+        # Prüfe andere Tags (ohne Kon/Pt) in WORTART_IDENTIFIER_TAGS
+        for tag, wortart in WORTART_IDENTIFIER_TAGS.items():
+            if tag not in ignorable_tags and tag in token_tags:
+                return wortart, token_tags
+        # Kein anderer Identifier gefunden, fahre mit komplexer Logik fort
+        # (z.B. obtinendineGPtGer hat G+Ger, die nicht in WORTART_IDENTIFIER_TAGS sind)
+    elif not has_ignorable:
+        # Normale Prüfung (weder Kon noch Pt vorhanden)
+        for tag, wortart in WORTART_IDENTIFIER_TAGS.items():
+            if tag in token_tags:
+                return wortart, token_tags
+    # Wenn Kon oder Pt das EINZIGE Tag ist, wird es als 'kon' oder 'pt' erkannt
 
     # 2. Komplexe Fälle: Nomen, Verb, Partizip
     hat_kasus = bool(token_tags.intersection(KASUS_TAGS))
     hat_tempus = bool(token_tags.intersection(TEMPUS_TAGS))
+    hat_modus = bool(token_tags.intersection(MODUS_TAGS))  # NEU: Inf, Op, Imv, Knj
+    hat_lat_verbform = bool(token_tags.intersection(LATEINISCHE_VERBFORMEN))  # NEU: Ger, Gdv, Spn
 
     if hat_kasus and hat_tempus:
         return 'partizip', token_tags
     if hat_tempus and not hat_kasus:
         return 'verb', token_tags
+    # NEU: Modus (Inf, Op, Imv, Knj) als Verben behandeln (z.B. morīInfAkt)
+    if hat_modus and not hat_kasus:
+        return 'verb', token_tags
+    # NEU: Lateinische Verbformen (Ger, Gdv, Spn) als Verben behandeln
+    # AUCH wenn zusätzlich Kon/Pt vorhanden ist (z.B. cogitandiqueGKonGer, obtinendineGPtGer)
+    if hat_lat_verbform:
+        return 'verb', token_tags
     if hat_kasus and not hat_tempus:
-        # Nomen: nur Kasus-Tag(s)
-        if all(t in KASUS_TAGS for t in token_tags):
+        # Nomen: nur Kasus-Tag(s), AUCH mit Kon/Pt/Du erlaubt (z.B. sollertiaqueAblKon, MīlesneNPt, ἵππωDuN)
+        # Entferne Kon, Pt und Du aus der Prüfung (Du = Dual, optional bei Nomen)
+        tags_ohne_ignorable = token_tags - {'Kon', 'Pt', 'Du'}
+        if tags_ohne_ignorable and all(t in KASUS_TAGS for t in tags_ohne_ignorable):
              return 'nomen', token_tags
 
     return None, set()
@@ -274,9 +306,11 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
             new_block = block.copy()
             gr_tokens = new_block.get('gr_tokens', [])
             de_tokens = new_block.get('de_tokens', [])
+            en_tokens = new_block.get('en_tokens', [])  # NEU: Englische Tokens für 3-sprachige Texte
             
             new_gr_tokens = list(gr_tokens)
             new_de_tokens = list(de_tokens)
+            new_en_tokens = list(en_tokens) if en_tokens else []  # NEU: Englische Tokens kopieren
 
             for i, token in enumerate(gr_tokens):
                 if not token or any(c in token for c in COLOR_SYMBOLS):
@@ -343,9 +377,21 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                                         new_de_tokens[i] = de_tok[:de_match.start(2)] + symbol + de_tok[de_match.start(2):]
                                     else:
                                         new_de_tokens[i] = symbol + de_tok
+                            
+                            # NEU: Symbol auch auf englisches Token übertragen (für 3-sprachige Texte)
+                            if i < len(new_en_tokens):
+                                en_tok = en_tokens[i]
+                                if en_tok and not any(c in en_tok for c in COLOR_SYMBOLS):
+                                    en_match = RE_WORD_START.search(en_tok)
+                                    if en_match:
+                                        new_en_tokens[i] = en_tok[:en_match.start(2)] + symbol + en_tok[en_match.start(2):]
+                                    else:
+                                        new_en_tokens[i] = symbol + en_tok
             
             new_block['gr_tokens'] = new_gr_tokens
             new_block['de_tokens'] = new_de_tokens
+            if new_en_tokens:  # NEU: Englische Tokens nur setzen, wenn vorhanden
+                new_block['en_tokens'] = new_en_tokens
             new_blocks.append(new_block)
         else:
             new_blocks.append(block)
@@ -711,11 +757,15 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
         ]
     
     if 'gr_tokens' in block or 'de_tokens' in block:
-        return {
+        result = {
             **block,
             'gr_tokens': proc_tokens(block.get('gr_tokens', [])),
             'de_tokens': proc_tokens(block.get('de_tokens', [])),
         }
+        # NEU: Auch en_tokens verarbeiten, falls vorhanden
+        if 'en_tokens' in block:
+            result['en_tokens'] = proc_tokens(block.get('en_tokens', []))
+        return result
     return block
 
 # Hilfsfunktion zum Entfernen von Farben in einem Block
@@ -724,11 +774,15 @@ def _strip_colors_from_block(block: Dict[str, Any]) -> Dict[str, Any]:
         return [_strip_all_colors(tok) for tok in (seq or [])]
 
     if 'gr_tokens' in block or 'de_tokens' in block:
-        return {
+        result = {
             **block,
             'gr_tokens': proc_tokens(block.get('gr_tokens', [])),
             'de_tokens': proc_tokens(block.get('de_tokens', [])),
         }
+        # NEU: Auch en_tokens entfärben, falls vorhanden
+        if 'en_tokens' in block:
+            result['en_tokens'] = proc_tokens(block.get('en_tokens', []))
+        return result
     return block
 
 # ======= Komfort: Payload aus UI (Hidden JSON) verarbeiten =======

@@ -1,0 +1,1045 @@
+(1x) === Prolog ===
+(1)  Medea: Dī conjugālēs tūque geniālis torī,
+(2)  Medea: Lūcīna, cūstōs quaeque domitūram freta
+(3)  Medea: Tīphyn novam frēnāre docuistī ratem,
+(4)  Medea: et tū, profundī saeve dominātor maris,
+(5)  Medea: clārumque Tītān dīvidēns orbī diem,
+(6)  Medea: tacitīsque praebēns cōnscium sacrīs jubar
+(7)  Medea: Hecatē trifōrmis, quōsque jūrāvit mihī
+(8)  Medea: deōs Iāsōn, quōsque Mēdēae magis
+(9)  Medea: fās est precārī: noctis aeternae chaos,
+(10)  Medea: āversa superīs rēgna mānēsque impiōs
+(11)  Medea: dominumque rēgnī trīstis et dominam fidē
+(12)  Medea: meliōre raptam, vōce nōn faustā precor.
+(13)  Medea: nunc, nunc adeste sceleris ultrīcēs deae,
+(14)  Medea: crīnem solūtīs squālidae serpentibus,
+(15)  Medea: ātram cruentīs manibus amplexae facem,
+(16)  Medea: adeste, thalamīs horridae quondam meīs
+(17)  Medea: quālēs stetistis: conjugī lētum novae
+(18)  Medea: lētumque socerō et rēgiae stirpī date.
+(19)  Medea: Num pejus aliquid? quod precer spōnsō malum?
+(20)  Medea: vīvat; per urbēs erret ignōtās egēns
+(21)  Medea: exul pavēns invīsus incertī laris,
+(22)  Medea: jam nōtus hospes līmen aliēnum expetat;
+(23)  Medea: mē conjugem optō, quōque nōn aliud queam
+(24)  Medea: pejus precārī, līberōs similēs patrī
+(25)  Medea: similēsque mātrī: parta jam, parta ultiō est:
+(26)  Medea: peperī. Querēlās verbaque in cassum serō?
+(27)  Medea: nōn ībō in hostēs? manibus excutiam facēs
+(28)  Medea: caelōque lūcem; spectat hoc nostrī sator
+(29)  Medea: Sōl generis, et spectātur, et currū īnsidēns
+(30)  Medea: per solita pūrī spatia dēcurrit polī?
+(31)  Medea: nōn redit in ortūs et remētītur diem?
+(32)  Medea: dā, dā per aurās curribus patriīs vehī,
+(33)  Medea: committe habēnās, genitor, et flagrantibus
+(34)  Medea: ignifera lōrīs tribue moderārī juga:
+(35)  Medea: geminō Corinthos lītorī oppōnēns morās
+(36)  Medea: cremāta flammīs maria committat duo.
+(37)  Medea: hoc restat ūnum, prōnubam thalamō feram
+(38)  Medea: ut ipsa pīnum postque sacrificās precēs
+(39)  Medea: caedam dicātīs victimās altāribus.
+(40)  Medea: Per vīscera ipsa quaere suppliciō viam,
+(41)  Medea: sī vīvis, anime, sī quid antīquī tibī
+(42)  Medea: remanet vigōris; pelle fēmineōs metūs
+(43)  Medea: et inhospitālem Caucasum mente indue.
+(44)  Medea: quodcumque vīdit Phāsis aut Pontus nefās,
+(45)  Medea: vidēbit Isthmos. effera ignōta horrida,
+(46)  Medea: tremenda caelō pariter ac terrīs mala
+(47)  Medea: mēns intus agitat: vulnera et caedem et vagum
+(48)  Medea: fūnus per artūs; levia memorāvī nimis:
+(49)  Medea: haec virgo fēcī; gravior exsurgat dolor:
+(50)  Medea: majōra jam mē scelera post partūs decent.
+(51)  Medea: accingere īrā tēque in exitium parā
+(52)  Medea: furōre tōtō. paria nārrentur tua
+(53)  Medea: repudia thalamīs: quō virum linquēs modō?
+(54)  Medea: hōc quō secūta es. rumpe jam sēgnēs morās:
+(55)  Medea: quae scelere parta est, scelere linquenda est domus.
+(56x) === Chor (gemischt) ===
+(56)  Chorus: Ad rēgum thalamōs nūmine prōsperō
+(57)  Chorus: quī caelum superī quīque regunt fretum
+(58)  Chorus: adsint cum populīs rīte faventibus.
+(59)  Chorus: Prīmum scēptriferīs colla Tonantibus
+(60)  Chorus: taurus celsa ferat tergore candidō;
+(61)  Chorus: Lūcīnam niveī fēmina corporis
+(62)  Chorus: intemptāta jugō plācet, et asperī
+(63)  Chorus: Mārtis sanguineās quae cohibet manūs,
+(64)  Chorus: quae dat belligerīs foedera gentibus
+(65)  Chorus: et cornū retinet dīvite cōpiam,
+(66)  Chorus: dōnētur tenerā mītior hostiā.
+(67)  Chorus: Et tū, quī facibus lēgitimīs ades,
+(68)  Chorus: noctem discutiēns auspice dexterā
+(69)  Chorus: hūc incēde gradū marcidus ēbriō,
+(70)  Chorus: praecingēns roseō tempora vinculō.
+(71)  Chorus: Et tū, quae, geminī praevia temporis,
+(72)  Chorus: tardē, stēlla, redīs semper amantibus:
+(73)  Chorus: tē mātrēs, avidē tē cupiunt nurūs
+(74)  Chorus: quamprīmum radiōs spargere lūcidōs.
+(75)  Chorus: Vincit virgineus decor
+(76)  Chorus: longē Cecropiās nurūs,
+(77)  Chorus: et quās Tāygetī jugīs
+(78)  Chorus: exercet juvenum modō
+(79)  Chorus: mūrīs quod caret oppidum,
+(80)  Chorus: et quās Āonius latex
+(81)  Chorus: Alphēosque sacer lavat.
+(82)  Chorus: Sī fōrmā velit aspicī,
+(83)  Chorus: cēdent Aesoniō ducī
+(84)  Chorus: prōlēs fulminis improbī
+(85)  Chorus: aptat quī juga tigribus,
+(86)  Chorus: nec nōn, quī tripodas movet,
+(87)  Chorus: frāter virginis asperae,
+(88)  Chorus: cēdet Castore cum suō
+(89)  Chorus: Pollūx caestibus aptior.
+(90)  Chorus: Sīc, sīc, caelicolae, precor,
+(91)  Chorus: vincat fēmina conjugēs,
+(92)  Chorus: vir longē superet virōs.
+(93)  Chorus: Haec cum fēmineō cōnstitit in chorō,
+(94)  Chorus: ūnīus faciēs praenitet omnibus.
+(95)  Chorus: sīc cum sōle perit sīdereus decor,
+(96)  Chorus: et dēnsī latitant Plēiadum gregēs,
+(97)  Chorus: cum Phoebē solidum lūmine nōn suō
+(98)  Chorus: orbem circuitīs cornibus alligat.
+(99)  Chorus: ostrō sīc niveus pūniceō color
+(100)  Chorus: perfūsus rubuit, sīc nitidum jubar
+(101)  Chorus: pāstor lūce novā rōscidus aspicit.
+(102)  Chorus: Ēreptus thalamīs Phāsidis horridī,
+(103)  Chorus: effrēnae solitus pectora conjugis
+(104)  Chorus: invītā trepidus prēndere dexterā,
+(105)  Chorus: fēlīx Aeoliam corripe virginem
+(106)  Chorus: nunc prīmum socerīs spōnse volentibus.
+(107)  Chorus: Concessō, juvenēs, lūdite jūrgiō,
+(108)  Chorus: hinc illinc, juvenēs, mittite carmina:
+(109)  Chorus: rāra est in dominōs jūsta licentia.
+(110)  Chorus: Candida thyrsigerī prōlēs generōsa Lyaeī,
+(111)  Chorus: multifidam jam tempus erat succendere pīnum:
+(112)  Chorus: excute sollemnem digitīs marcentibus ignem.
+(113)  Chorus: fēsta dicāx fundat convīcia fescennīnus,
+(114)  Chorus: solvat turba jocōs; tacitīs eat illa tenebrīs,
+(115)  Chorus: sī qua peregrīnō nūbit fūrtīva marītō.
+(116x) === Akt 1 ===
+(116)  Medea: Occidimus: aurēs pepulit hymenaeus meās.
+(117)  Medea: vix ipsa tantum, vix adhūc crēdō malum.
+(118)  Medea: hoc facere Iāsōn potuit, ēreptō patre
+(119)  Medea: patriā atque rēgnō sēdibus sōlam exterīs
+(120)  Medea: dēserere dūrus? merita contempsit mea
+(121)  Medea: quī scelere flammās vīderat vincī et mare?
+(122)  Medea: adeōne crēdit omne cōnsūmptum nefās?
+(123)  Medea: incerta vēcors mente nōn sānā feror
+(124)  Medea: partēs in omnēs; unde mē ulcīscī queam?
+(125)  Medea: utinam esset illī frāter! est conjūnx: in hanc
+(126)  Medea: ferrum exigātur. hoc meīs satis est malīs?
+(127)  Medea: sī quod Pelasgae, sī quod urbēs barbarae
+(128)  Medea: nōvēre facinus quod tuae ignōrent manūs,
+(129)  Medea: nunc est parandum. scelera tē hortentur tua
+(130)  Medea: et cūncta redeant: inclitum rēgnī decus
+(131)  Medea: raptum et nefandae virginis parvus comes
+(132)  Medea: dīvīsus ēnse, fūnus ingestum patrī
+(133)  Medea: sparsumque pontō corpus et Peliae senis
+(134)  Medea: dēcocta aēnō membra: fūnestum impiē
+(135)  Medea: quam saepe fūdī sanguinem, et nūllum scelus
+(136)  Medea: īrāta fēcī: saevit īnfēlīx amor.
+(137)  Medea: Quid tamen Iāsōn potuit, aliēnī arbitrī
+(138)  Medea: jūrisque factus? dēbuit ferrō obvium
+(139)  Medea: offerre pectus: melius, ā melius, dolor
+(140)  Medea: furiōse, loquere. sī potest, vīvat meus,
+(141)  Medea: ut fuit, Iāsōn; sī minus, vīvat tamen
+(142)  Medea: memorque nostrī mūnerī parcat meō.
+(143)  Medea: Culpa est Creontis tōta, quī scēptrō impotēns
+(144)  Medea: conjugia solvit quīque genetrīcem abstrahit
+(145)  Medea: gnātīs et artō pignore astrictam fidem
+(146)  Medea: dirimit: petātur, sōlus hic poenās luat,
+(147)  Medea: quās dēbet. altō cinere cumulābō domum;
+(148)  Medea: vidēbit ātrum verticem flammīs agī
+(149)  Medea: Malēa longās nāvibus flectēns morās.
+(150)  Nutrix: Silē, obsecrō, questūsque sēcrētō abditōs
+(151)  Nutrix: mandā dolōrī. gravia quisquis vulnera
+(152)  Nutrix: patiente et aequō mūtus animō pertulit,
+(153)  Nutrix: referre potuit: īra quae tegitur nocet;
+(154)  Nutrix: professa perdunt odia vindictae locum.
+(155)  Medea: Levis est dolor, quī capere cōnsilium potest
+(156)  Medea: et clepere sēsē: magna nōn latitant mala.
+(157)  Medea: libet īre contrā. Siste furiālem impetum,
+(158)  Nutrix: alumna: vix tē tacita dēfendit quiēs.
+(159)  Medea: Fortūna fortēs metuit, ignāvōs premit.
+(160)  Nutrix: Tunc est probanda, sī locum virtūs habet.
+(161)  Medea: Numquam potest nōn esse virtūtī locus.
+(162)  Nutrix: Spēs nūlla rēbus mōnstrat adflīctīs viam.
+(163)  Medea: Quī nīl potest spērāre, dēspēret nihil.
+(164)  Nutrix: Abiēre Colchī, conjugis nūlla est fidēs
+(165)  Nutrix: nihilque superest opibus ē tantīs tibī.
+(166)  Medea: Mēdēa superest: hīc mare et terrās vidēs
+(167)  Medea: ferrumque et ignēs et deōs et fulmina.
+(168)  Nutrix: Rēx est timendus. Rēx meus fuerat pater.
+(169)  Nutrix: Nōn metuis arma? Sint licet terrā ēdita.
+(170)  Nutrix: Moriēre. Cupiō. Profuge. Paenituit fugae.
+(171)  Nutrix: Mēdēa. Fīam. Māter es. Cui sim vidē.
+(172)  Nutrix: Profugere dubitās? Fugiam, at ulcīscar prius.
+(173)  Nutrix: Vindex sequētur. Forsan inveniam morās.
+(174)  Nutrix: Compesce verba, parce jam, dēmēns, minīs
+(175)  Nutrix: animōsque minue: temporī aptārī decet.
+(176)  Medea: Fortūna opēs auferre, nōn animum potest.
+(177)  Medea: Sed cujus ictū rēgius cardō strepit?
+(178)  Medea: ipse est Pelasgō tumidus imperiō Creō.
+(179)  Creo: Mēdēa, Colchī noxium Aeētae genus,
+(180)  Creo: nōndum meīs exportat ē rēgnīs pedem?
+(181)  Creo: mōlītur aliquid: nōta fraus, nōta est manus.
+(182)  Creo: cui parcet illa quemve sēcūrum sinet?
+(183)  Creo: abolēre properē pessimam ferrō luem
+(184)  Creo: equidem parābam: precibus ēvīcit gener.
+(185)  Creo: concessa vīta est, līberet fīnēs metū
+(186)  Creo: abeatque tūta. fert gradum contrā ferōx
+(187)  Creo: mināxque nostrōs propius affātūs petit.
+(188)  Creo: Arcēte, famulī, tāctū et accessū procul,
+(189)  Creo: jubēte sileat. rēgium imperium patī
+(190)  Creo: aliquando discat. Vāde vēlōcī viā
+(191)  Creo: mōnstrumque saevum horribile jamdūdum āvehe.
+(192)  Medea: Quod crīmen aut quae culpa multātur fugā?
+(193)  Creo: Quae causa pellat, innocēns mulier rogat.
+(194)  Medea: Sī jūdicās, cognōsce, sī rēgnās, jubē.
+(195)  Creo: Aequum atque inīquum rēgis imperium ferās.
+(196)  Medea: Inīqua numquam rēgna perpetuō manent.
+(197)  Creo: Ī, querere Colchīs. Redeo: quī āvēxit, ferat.
+(198)  Creo: Vōx cōnstitūtō sēra dēcrētō venit.
+(199)  Medea: Quī statuit aliquid parte inaudītā alterā,
+(200)  Medea: aequum licet statuerit, haud aequus fuit.
+(201)  Creo: Audītus ā tē Pelia supplicium tulit?
+(202)  Creo: sed fāre, causae dētur ēgregiae locus.
+(203)  Medea: Difficile quam sit animum ab īrā flectere
+(204)  Medea: jam concitātum quamque rēgāle hoc putet
+(205)  Medea: scēptrīs superbās quisquis admōvit manūs,
+(206)  Medea: quā coepit īre, rēgiā didicī meā.
+(207)  Medea: quamvīs enim sim clāde miserandā obruta,
+(208)  Medea: expulsa supplex sōla dēserta, undique
+(209)  Medea: afflīcta, quondam nōbilī fulsī patre
+(210)  Medea: avōque clārum Sōle dēdūxī genus.
+(211)  Medea: quodcumque placidīs flexibus Phāsis rigat
+(212)  Medea: Pontusque quidquid Scythicus ā tergō videt,
+(213)  Medea: palūstribus quā maria dulcēscunt aquīs,
+(214)  Medea: armāta peltīs quidquid exterret cohors
+(215)  Medea: inclūsa rīpīs vidua Thermōdontiīs,
+(216)  Medea: hoc omne noster genitor imperiō regit.
+(217)  Medea: generōsa, fēlīx, decore rēgālī potēns
+(218)  Medea: fulsī: petēbant tunc meōs thalamōs procī,
+(219)  Medea: quī nunc petuntur. rapida fortūna ac levis
+(220)  Medea: praecepsque rēgnō ēripuit, exiliō dedit.
+(221)  Medea: cōnfīde rēgnīs, cum levis magnās opēs
+(222)  Medea: hūc ferat et illūc cāsus: hoc rēgēs habent
+(223)  Medea: magnificum et ingēns, nūlla quod rapiat diēs:
+(224)  Medea: prōdesse miserīs, supplicēs fīdō lare
+(225)  Medea: prōtegere. Sōlum hoc Colchicō rēgnō extulī,
+(226)  Medea: decus illud ingēns Graeciae et flōrem inclitum,
+(227)  Medea: praesidia Achīvae gentis et prōlem deum
+(228)  Medea: servāsse mēmet. mūnus est Orpheus meum,
+(229)  Medea: quī saxa cantū mulcet et silvās trahit,
+(230)  Medea: geminumque mūnus Castor et Pollūx meum est
+(231)  Medea: satīque Boreā quīque trāns Pontum quoque
+(232)  Medea: summōta Lynceus lūmine immissō videt,
+(233)  Medea: omnēsque Minyae: nam ducum taceō ducem,
+(234)  Medea: prō quō nihil dēbētur: hunc nūllī imputō;
+(235)  Medea: vōbīs revēxī cēterōs, ūnum mihī.
+(236)  Medea: Incesse nunc et cūncta flāgitia ingere:
+(237)  Medea: fatēbor; obicī crīmen hoc sōlum potest,
+(238)  Medea: Argō reversa. virginī placeat pudor
+(239)  Medea: paterque placeat: tōta cum ducibus ruet
+(240)  Medea: Pelasga tellūs, hīc tuus prīmum gener
+(241)  Medea: taurī ferōcis ōre flagrantī occidet.
+(242)  Medea: [fortūna causam quae volet nostram premat,
+(243)  Medea: nōn paenitet servāsse tot rēgum decus]
+(244)  Medea: quodcumque culpā praemium ex omnī tulī,
+(245)  Medea: hoc est penes tē. sī placet, damnā ream;
+(246)  Medea: sed redde crīmen. sum nocēns, fateor, Creō:
+(247)  Medea: tālem sciēbās esse, cum genua attigī
+(248)  Medea: fidemque supplex praesidis dextrā petī;
+(249)  Medea: terrā hāc miseriīs angulum et sēdem rogō
+(250)  Medea: latebrāsque vīlēs: urbe sī pellī placet,
+(251)  Medea: dētur remōtus aliquis in rēgnīs locus.
+(252)  Creo: Nōn esse mē quī scēptra violentus geram
+(253)  Creo: nec quī superbō miseriās calcem pede,
+(254)  Creo: testātus equidem videor haud clārē parum
+(255)  Creo: generum exulem legendō et adflīctum et gravī
+(256)  Creo: terrōre pavidum, quippe quem poenae expetit
+(257)  Creo: lētōque Acastus rēgna Thessalica optinēns.
+(258)  Creo: seniō trementem dēbilī atque aevō gravem
+(259)  Creo: patrem perēmptum queritur et caesī senis
+(260)  Creo: discissa membra, cum dolō captae tuō
+(261)  Creo: piae sorōrēs impium audērent nefās.
+(262)  Creo: potest Iāsōn, sī tuam causam āmovēs,
+(263)  Creo: suam tuērī: nūllus innocuum cruor
+(264)  Creo: contāmināvit, āfuit ferrō manus
+(265)  Creo: proculque vestrō pūrus ā coetū stetit.
+(266)  Creo: Tū, tū malōrum māchinātrīx facinorum,
+(267)  Creo: cui fēminae nēquitia, ad audendum omnia
+(268)  Creo: rōbur virīle est, nūlla fāmae memoria,
+(269)  Creo: ēgredere, pūrgā rēgna, lētālēs simul
+(270)  Creo: tēcum aufer herbās, līberā cīvēs metū,
+(271)  Creo: alia sedēns tellūre sollicitā deōs.
+(272)  Medea: Profugere cōgis? redde fugientī ratem
+(273)  Medea: vel redde comitem; fugere cūr sōlam jubēs?
+(274)  Medea: nōn sōla vēnī. bella sī metuis patī,
+(275)  Medea: utrumque rēgnō pelle. cūr sontēs duōs
+(276)  Medea: distinguis? illī Pelia, nōn nōbīs jacet;
+(277)  Medea: fugam, rapīnās adice, dēsertum patrem
+(278)  Medea: lacerumque frātrem, quidquid etiamnunc novās
+(279)  Medea: docet marītus conjugēs, nōn est meum:
+(280)  Medea: totiēns nocēns sum facta, sed numquam mihī.
+(281)  Creo: Jam exīsse decuit. quid seris fandō morās?
+(282)  Medea: Supplex recēdēns illud extrēmum precor,
+(283)  Medea: nē culpa nātōs mātris īnsontēs trahat.
+(284)  Creo: Vāde: hōs paternō ut genitor excipiam sinū.
+(285)  Medea: Per ego auspicātōs rēgiī thalamī torōs,
+(286)  Medea: per spēs futūrās perque rēgnōrum statūs,
+(287)  Medea: Fortūna variā dubia quōs agitat vice,
+(288)  Medea: precor, brevem largīre fugientī moram,
+(289)  Medea: dum extrēma nātīs māter īnfīgō ōscula,
+(290)  Medea: fortasse moriēns. Fraudibus tempus petis.
+(291)  Medea: Quae fraus timērī tempore exiguō potest?
+(292)  Creo: Nūllum ad nocendum tempus angustum est malīs.
+(293)  Medea: Parumne miserae temporis lacrimīs negās?
+(294)  Creo: Etsī repugnat precibus īnfīxus timor,
+(295)  Creo: ūnus parandō dabitur exiliō diēs.
+(296)  Medea: Nimis est, recīdās aliquid ex istō licet;
+(297)  Medea: et ipsa properō. Capite supplicium luēs,
+(298)  Creo: clārum priusquam Phoebus attollat diem
+(299)  Creo: nisi cēdis Isthmō. Sacra mē thalamī vocant,
+(300)  Creo: vocat precārī fēstus Hymenaeō diēs.
+(301x) === Chor (Anapäste) ===
+(301)  Chorus: Audāx nimium quī freta prīmus
+(302)  Chorus: rate tam fragilī perfida rūpit
+(303)  Chorus: terrāsque suās posterga vidēns
+(304)  Chorus: animam levibus crēdidit aurīs,
+(305)  Chorus: dubiōque secāns aequora cursū
+(306)  Chorus: potuit tenuī fīdere lignō
+(307)  Chorus: inter vītae mortisque vicēs
+(308)  Chorus: nimium gracilī līmite ductō.
+(309)  Chorus: Nōndum quisquam sīdera nōrat,
+(310)  Chorus: stēllīsque, quibus pingitur aethēr,
+(311)  Chorus: nōn erat ūsus, nōndum pluviās
+(312)  Chorus: Hyadas poterat vītāre ratis,
+(313)  Chorus: nōn Ōleniae lūmina caprae,
+(314)  Chorus: nec quae sequitur flectitque senex
+(315)  Chorus: Attica tardus plaustra Boōtēs,
+(316)  Chorus: nōndum Boreās, nōndum Zephyrus
+(317)  Chorus: nōmen habēbant.
+(318)  Chorus: Ausus Tīphys pandere vastō
+(319)  Chorus: carbasa pontō
+(320)  Chorus: lēgēsque novās scrībere ventīs:
+(321)  Chorus: nunc līna sinū tendere tōtō,
+(322)  Chorus: nunc prōlātō pede trānsversōs
+(323)  Chorus: captāre notōs, nunc antemnās
+(324)  Chorus: mediō tūtās pōnere mālō,
+(325)  Chorus: nunc in summō religāre locō,
+(326)  Chorus: cum jam tōtōs avidus nimium
+(327)  Chorus: nāvita flātūs optat et altō
+(328)  Chorus: rubicunda tremunt sīpara vēlō.
+(329)  Chorus: Candida nostrī saecula patrēs
+(330)  Chorus: vīdēre procul fraude remōtā.
+(331)  Chorus: sua quisque piger lītora tangēns
+(332)  Chorus: patriōque senex factus in arvō,
+(333)  Chorus: parvō dīves nisi quās tulerat
+(334)  Chorus: nātāle solum nōn nōrat opēs.
+(335)  Chorus: Bene dissaeptī foedera mundī
+(336)  Chorus: trāxit in ūnum Thessala pīnus
+(337)  Chorus: jussitque patī verbera pontum
+(338)  Chorus: partemque metūs fierī nostrī
+(339)  Chorus: mare sēpositum.
+(340)  Chorus: Dedit illa gravēs improba poenās
+(341)  Chorus: per tam longōs ducta timōrēs,
+(342)  Chorus: cum duo montēs, claustra profundī,
+(343)  Chorus: hinc atque illinc subitō impulsū
+(344)  Chorus: velut aetheriō gemerent sonitū,
+(345)  Chorus: spargeret arcēs nūbēsque ipsās
+(346)  Chorus: mare dēprēnsum.
+(347)  Chorus: Palluit audāx Tīphys et omnēs
+(348)  Chorus: lābente manū mīsit habēnās,
+(349)  Chorus: Orpheus tacuit torpente lyrā
+(350)  Chorus: ipsaque vōcem perdidit Argō.
+(350)  Chorus: Quid cum Siculī virgo Pelōrī,
+(351)  Chorus: rabidōs uterō succīncta canēs,
+(352)  Chorus: omnīs pariter solvit hiātūs?
+(353)  Chorus: quis nōn tōtōs horruit artūs
+(354)  Chorus: totiēns ūnō lātrante malō?
+(355)  Chorus: Quid cum Ausonium dīrae pestēs
+(356)  Chorus: vōce canōrā mare mulcērent,
+(357)  Chorus: cum Pīeriā resonāns citharā
+(358)  Chorus: Thrācius Orpheus
+(359)  Chorus: solitam cantū retinēre ratēs
+(360)  Chorus: paene coēgit Sīrēna sequī?
+(361)  Chorus: Quod fuit hujus pretium cursūs?
+(362)  Chorus: aurea pellis
+(363)  Chorus: majusque marī Mēdēa malum,
+(364)  Chorus: mercēs prīmā digna carīnā.
+(365)  Chorus: Nunc jam cessit pontus et omnēs
+(365)  Chorus: patitur lēgēs:
+(366)  Chorus: nōn Palladiā compācta manū
+(367)  Chorus: rēgum referēns inclita rēmōs
+(368)  Chorus: quaeritur Argō;
+(369)  Chorus: quaelibet altum cumba pererrat.
+(370)  Chorus: Terminus omnis mōtus et urbēs
+(370)  Chorus: mūrōs terrā posuēre novā,
+(371)  Chorus: nīl quā fuerat sēde relīquit
+(372)  Chorus: pervius orbis:
+(373)  Chorus: Indus gelidum pōtat Araxēn,
+(374)  Chorus: Albin Persae Rhēnumque bibunt;
+(375)  Chorus: venient annīs saecula sērīs,
+(376)  Chorus: quibus Ōceanus vincula rērum
+(377)  Chorus: laxet et ingēns pateat tellūs
+(378)  Chorus: Tēthȳsque novōs dētegat orbēs
+(379)  Chorus: nec sit terrīs ultima Thūlē.
+(380x) === Akt 2 ===
+(380)  Nutrix: Alumna, celerem quō rapis tēctīs pedem?
+(381)  Nutrix: resiste et īrās comprime ac retinē impetum.
+(382)  Nutrix: Incerta quālis entheōs gressūs tulit
+(383)  Nutrix: cum jam receptō maenas īnsānit deō
+(384)  Nutrix: Pindī nivālis vertice aut Nȳsae jugīs,
+(385)  Nutrix: tālis recursat hūc et hūc mōtū efferō,
+(386)  Nutrix: furōris ōre signa lymphātī gerēns.
+(387)  Nutrix: flammāta faciēs, spīritum ex altō citat,
+(388)  Nutrix: prōclāmat, oculōs ūberī flētū rigat,
+(389)  Nutrix: renīdet: omnis specimen affectūs capit.
+(390)  Nutrix: haeret: minātur aestuat queritur gemit.
+(391)  Nutrix: quō pondus animī verget? ubi pōnet minās?
+(392)  Nutrix: ubi sē iste flūctus franget? exundat furor.
+(393)  Nutrix: nōn facile sēcum versat aut medium scelus;
+(394)  Nutrix: sē vincet: īrae nōvimus veteris notās.
+(395)  Nutrix: magnum aliquid īnstat, efferum immāne impium:
+(396)  Nutrix: vultum Furōris cerno. dī fallant metum!
+(397)  Medea: Sī quaeris odiō, misera, quem statuās modum,
+(398)  Medea: imitāre amōrem. rēgiās egone ut facēs
+(399)  Medea: inulta patiar? sēgnis hic ībit diēs,
+(400)  Medea: tantō petītus ambitū, tantō datus?
+(401)  Medea: dum terra caelum media lībrātum feret
+(402)  Medea: nitidusque certās mundus ēvolvet vicēs
+(403)  Medea: numerusque harēnīs dērit et sōlem diēs,
+(404)  Medea: noctem sequentur astra, dum siccās polus
+(405)  Medea: versābit Arctōs, flūmina in pontum cadent,
+(406)  Medea: numquam meus cessābit in poenās furor
+(407)  Medea: crēscetque semper: quae ferārum immānitās,
+(408)  Medea: quae Scylla, quae Charybdis Ausonium mare
+(409)  Medea: Siculumque sorbēns quaeve anhēlantem premēns
+(410)  Medea: Tītāna tantīs Aetna fervēbit minīs?
+(411)  Medea: nōn rapidus amnis, nōn procellōsum mare
+(412)  Medea: pontusve cōrō saevus aut vīs ignium
+(413)  Medea: adjūta flātū possit inhibēre impetum
+(414)  Medea: īrāsque nostrās: sternam et ēvertam omnia.
+(415)  Medea: Timuit Creontem ac bella Thessalicī ducis?
+(416)  Medea: amor timēre nēminem vērus potest.
+(417)  Medea: sed cesserit coāctus et dederit manūs:
+(418)  Medea: adīre certē et conjugem extrēmō alloquī
+(419)  Medea: sermōne potuit, hoc quoque extimuit ferōx;
+(420)  Medea: laxāre certē tempus immītis fugae
+(421)  Medea: generō licēbat, līberīs ūnus diēs
+(422)  Medea: datus est duōbus. nōn queror tempus breve:
+(423)  Medea: multum patēbit. faciet hic faciet diēs
+(424)  Medea: quod nūllus umquam taceat: invādam deōs
+(425)  Medea: et cūncta quatiam. Recipe turbātum malīs,
+(426)  Nutrix: era, pectus, animum mītigā. Sōla est quiēs,
+(427)  Medea: mēcum ruīnā cūncta sī videō obruta:
+(428)  Medea: mēcum omnia abeant. trahere, cum pereās, libet.
+(429)  Nutrix: Quam multa sint timenda, sī perstās, vidē:
+(430)  Nutrix: nēmō potentēs aggredī tūtus potest.
+(431)  Iason: Ō dūra fāta semper et sortem asperam,
+(432)  Iason: cum saevit et cum parcit ex aequō malam!
+(433)  Iason: remedia quotiēns invenit nōbīs deus
+(434)  Iason: perīculīs pejōra: sī vellem fidem
+(435)  Iason: praestāre meritīs conjugis, lētō fuit
+(436)  Iason: caput offerendum; sī morī nōllem, fidē
+(437)  Iason: miserō carendum. nōn timor vīcit fidem,
+(438)  Iason: sed trepida pietās: quippe sequerētur necem
+(439)  Iason: prōlēs parentum. sāncta sī caelum incolis
+(440)  Iason: Jūstitia, nūmen invocō ac testor tuum:
+(441)  Iason: nātī patrem vīcēre. quīn ipsam quoque,
+(442)  Iason: etsī ferōx est corde nec patiēns jugī,
+(443)  Iason: cōnsulere nātīs mālle quam thalamīs reor.
+(444)  Iason: cōnstituit animus precibus īrātam aggredī;
+(445)  Iason: atque ecce, vīsō mēmet exsiluit, furit,
+(446)  Iason: fert odia prae sē: tōtus in vultū est dolor.
+(447)  Medea: Fugimus, Iāsōn, fugimus: hoc nōn est novum,
+(448)  Medea: mūtāre sēdēs; causa fugiendī nova est:
+(449)  Medea: prō tē solēbam fugere; discēdō, exeō,
+(450)  Medea: penātibus profugere quam cōgis tuīs.
+(451)  Medea: ad quōs remittis? Phāsin et Colchōs petam
+(452)  Medea: patriumque rēgnum quaeque frāternus cruor
+(453)  Medea: perfūdit arva? quās petī terrās jubēs?
+(454)  Medea: quae maria mōnstrās? Ponticī faucēs fretī
+(455)  Medea: per quās revēxī nōbilem rēgum manum
+(456)  Medea: adulterum secūta per Symplēgadas?
+(457)  Medea: patruamne Iōlcon, Thessala an Tempē petam?
+(458)  Medea: quāscumque aperuī tibi viās, clausī mihī;
+(459)  Medea: quō mē remittis? exulī exilium imperās
+(460)  Medea: nec dās. eātur. rēgius jussit gener:
+(461)  Medea: nihil recūsō. dīra supplicia ingere:
+(462)  Medea: meruī. cruentīs paelicem poenīs premat
+(463)  Medea: rēgālis īra, vinculīs oneret manūs
+(464)  Medea: clausamque saxō noctis aeternae obruat:
+(465)  Medea: minōra meritīs patiar, ingrātum caput,
+(466)  Medea: revolvat animus igneōs taurī hālitūs
+(467)  Medea: interque saevōs gentis indomitae metūs
+(468)  Medea: armiferō in arvō flammeum Aeētae pecus,
+(469)  Medea: hostisque subitī tēla, cum jussū meō
+(470)  Medea: terrigena mīles mūtuā caede occidit;
+(471)  Medea: adice expetīta spolia Phrixēī arietis
+(472)  Medea: somnōque jussum lūmina ignōtō dare
+(473)  Medea: īnsomne mōnstrum, trāditum frātrem necī
+(474)  Medea: et scelere in ūnō nōn semel factum scelus,
+(475)  Medea: ausāsque nātās fraude dēceptās meā
+(476)  Medea: secāre membra nōn revīctūrī senis:
+(477)  Medea: [aliēna quaerēns rēgna, dēseruī mea]
+(478)  Medea: per spēs tuōrum līberum et certum larem,
+(479)  Medea: per victa mōnstra, per manūs, prō tē quibus
+(480)  Medea: numquam pepercī, perque praeteritōs metūs,
+(481)  Medea: per caelum et undās, conjugī testēs meī,
+(482)  Medea: miserēre, redde supplicī fēlīx vicem.
+(483)  Medea: ex opibus illīs, quās procul raptās Scythae
+(484)  Medea: usque ā perustīs Indiae populīs agunt,
+(485)  Medea: quās quia referta vix domus gāzās capit,
+(486)  Medea: ōrnāmus aurō nemora, nīl exul tulī
+(487)  Medea: nisi frātris artūs: hōs quoque impendī tibī;
+(488)  Medea: tibi patria cessit, tibi pater frāter pudor;
+(489)  Medea: hāc dōte nūpsī. redde fugientī sua.
+(490)  Iason: Perimere cum tē vellet īnfēstus Creō,
+(491)  Iason: lacrimīs meīs ēvictus exilium dedit.
+(492)  Medea: Poenam putābam: mūnus, ut videō, est fuga.
+(493)  Iason: Dum licet abīre, profuge tēque hinc ēripe:
+(494)  Iason: gravis īra rēgum est semper. Hoc suādēs mihī,
+(495)  Medea: praestās Creūsae: paelicem invīsam āmovēs.
+(496)  Iason: Mēdēa amōrēs obicit? Et caedem et dolōs.
+(497)  Iason: Obicere crīmen quod potes tandem mihī?
+(498)  Medea: Quodcumque fēcī. Restat hoc ūnum īnsuper,
+(499)  Iason: tuīs ut etiam sceleribus fīam nocēns.
+(500)  Medea: Tua illa, tua sunt illa: cui prōdest scelus,
+(501)  Medea: is fēcit, omnēs conjugem īnfāmem arguant,
+(502)  Medea: sōlus tuēre, sōlus īnsontem vocā:
+(503)  Medea: tibi innocēns sit quisquis est prō tē nocēns.
+(504)  Iason: Ingrāta vīta est cujus acceptae pudet.
+(505)  Medea: Retinenda nōn est cujus acceptae pudet.
+(506)  Iason: Quīn potius īrā concitum pectus domā,
+(507)  Iason: plācāre nātīs. Abdicō ējūrō abnuō:
+(508)  Medea: meīs Creūsa līberīs frātrēs dabit?
+(509)  Iason: Rēgīna nātīs exulum, afflīctīs potēns.
+(510)  Medea: Nē veniat umquam tam malus miserīs diēs,
+(511)  Medea: quī prōle foedā misceat prōlem inclitam,
+(512)  Medea: Phoebī nepōtēs Sīsyphī nepōtibus.
+(513)  Iason: Quid, misera, mēque tēque in exitium trahis?
+(514)  Iason: abscēde, quaesō. Supplicem audīvit Creō.
+(515)  Iason: Quid facere possim, loquere. Prō mē vel scelus.
+(516)  Iason: Hinc rēx et illinc... Est et hīs major metus
+(517)  Medea: Mēdēa. nōs, marīte, certēmus sine,
+(518)  Medea: sit pretium Iāsōn. Cēdo dēfessus malīs.
+(519)  Iason: et ipsa cāsūs saepe jam expertōs timē.
+(520)  Medea: Fortūna semper omnis īnfrā mē stetit.
+(521)  Iason: Acastus īnstat. Propior est hostis Creō:
+(522)  Medea: utrumque profuge. nōn ut in socerum manūs
+(523)  Medea: armēs nec ut tē caede cognātā inquinēs
+(524)  Medea: Mēdēa cōgit: innocēns mēcum fuge.
+(525)  Iason: Et quis resistet, gemina sī bella ingruant,
+(526)  Iason: Creō atque Acastus arma sī jungant sua?
+(527)  Medea: Hīs adice Colchōs, adice et Aeētēn ducem,
+(528)  Medea: Scythās Pelasgīs junge: dēmersōs dabō.
+(529)  Iason: Alta extimēscō scēptra. Nē cupiās vidē.
+(530)  Iason: Suspecta nē sint, longa colloquia amputā.
+(531)  Medea: Nunc summe tōtō Juppiter caelō tonā,
+(532)  Medea: intende dextram, vindicēs flammās parā
+(533)  Medea: omnemque ruptīs nūbibus mundum quate.
+(534)  Medea: nec dēligentī tēla lībrentur manū
+(535)  Medea: vel mē vel istum: quisquis ē nōbīs cadet
+(536)  Medea: nocēns perībit, nōn potest in nōs tuum
+(537)  Medea: errāre fulmen. Sāna meditārī incipe
+(538)  Iason: et placida fāre. sī quod ex socerī domō
+(539)  Iason: potest fugam levāre sōlāmen, pete.
+(540)  Medea: Contemnere animus rēgiās, ut scīs, opēs
+(541)  Medea: potest soletque; līberōs tantum fugae
+(542)  Medea: habēre comitēs liceat, in quōrum sinū
+(543)  Medea: lacrimās profundam. tē novī gnātī manent.
+(544)  Iason: Pārēre precibus cupere mē fateor tuīs;
+(545)  Iason: pietās vetat: namque istud ut possim patī,
+(546)  Iason: nōn ipse mēmet cōgat et rēx et socer.
+(547)  Iason: haec causa vītae est, hoc perustī pectoris
+(548)  Iason: cūrīs levāmen. spīritū citius queam
+(549)  Iason: carēre, membrīs, lūce. Sīc nātōs amat?
+(550)  Medea: bene est, tenētur, vulnerī patuit locus.
+(551)  Medea: Suprēma certē liceat abeuntem loquī
+(552)  Medea: mandāta, liceat ultimum amplexum dare:
+(553)  Medea: grātum est. et illud vōce jam extrēmā petō,
+(554)  Medea: nē, sī qua noster dubius effūdit dolor,
+(555)  Medea: maneant in animō verba: meliōris tibī
+(556)  Medea: memoria nostrī sedeat; haec īrae data
+(557)  Medea: oblitterentur. Omnia ex animō expulī
+(558)  Iason: precorque et ipse, fervidam ut mentem regās
+(559)  Iason: placidēque tractēs: miseriās lēnit quiēs.
+(560)  Medea: Discessit. itane est? vādis oblītus meī
+(561)  Medea: et tot meōrum facinorum? excidimus tibī?
+(562)  Medea: numquam excidēmus. hoc age, omnīs advocā
+(563)  Medea: vīrēs et artēs. frūctus est scelerum tibī
+(564)  Medea: nūllum scelus putāre. vix fraudī est locus:
+(565)  Medea: timēmur. hāc aggredere, quā nēmō potest
+(566)  Medea: quicquam timēre. perge, nunc audē, incipe
+(567)  Medea: quidquid potest Mēdēa, quidquid nōn potest.
+(568)  Medea: Tū, fīda nūtrīx, socia maerōris meī
+(569)  Medea: variīque cāsūs, misera cōnsilia adjuvā.
+(570)  Medea: est palla nōbīs, mūnus aetheriae domūs
+(571)  Medea: decusque rēgnī, pignus Aeētae datum
+(572)  Medea: ā Sōle generis, est et aurō textilī
+(573)  Medea: monīle fulgēns quodque gemmārum nitor
+(574)  Medea: distinguit aurum, quō solent cingī comae.
+(575)  Medea: haec nostra nātī dōna nūbentī ferant,
+(576)  Medea: sed ante dīrīs inlita ac tīncta artibus.
+(577)  Medea: vocētur Hecatē. sacra lētifica apparā:
+(578)  Medea: statuantur ārae, flamma jam tēctīs sonet.
+(579x) === Chor (sapphics) ===
+(579)  Chorus: Nūlla vīs flammae tumidīve ventī
+(580)  Chorus: tanta, nec tēlī metuenda tortī,
+(581)  Chorus: quanta cum conjūnx viduāta taedīs
+(582)  Chorus: ārdet et ōdit;
+(583)  Chorus: nōn ubi hībernōs nebulōsus imbrēs
+(584)  Chorus: Auster advēxit properatque torrēns
+(585)  Chorus: Hister et jūnctōs vetat esse pontēs
+(586)  Chorus: ac vagus errat;
+(587)  Chorus: nōn ubi impellit Rhodanus profundum,
+(588)  Chorus: aut ubi in rīvōs nivibus solūtīs
+(589)  Chorus: sōle jam fortī mediōque vēre
+(590)  Chorus: tābuit Haemus.
+(591)  Chorus: caecus est ignis stimulātus īrā
+(592)  Chorus: nec regī cūrat patiturve frēnōs
+(593)  Chorus: aut timet mortem: cupit īre in ipsōs
+(594)  Chorus: obvius ēnsēs.
+(595)  Chorus: Parcite, ō dīvī, veniam precāmur,
+(596)  Chorus: vīvat ut tūtus mare quī subēgit.
+(597)  Chorus: sed furit vincī dominus profundī
+(598)  Chorus: rēgna secunda.
+(599)  Chorus: ausus aeternōs agitāre currūs
+(600)  Chorus: immemor mētae juvenis paternae
+(601)  Chorus: quōs polō sparsit furiōsus ignēs
+(602)  Chorus: ipse recēpit.
+(603)  Chorus: cōnstitit nūllī via nōta magnō:
+(604)  Chorus: vāde quā tūtum populō priōrī,
+(605)  Chorus: rumpe nec sacrō violente sāncta
+(606)  Chorus: foedera mundī.
+(607)  Chorus: Quisquis audācis tetigit carīnae
+(608)  Chorus: nōbilēs rēmōs nemorisque sacrī
+(609)  Chorus: Pēlion dēnsā spoliāvit umbrā,
+(610)  Chorus: quisquis intrāvit scopulōs vagantēs
+(611)  Chorus: et tot ēmēnsus pelagī labōrēs
+(612)  Chorus: barbarā fūnem religāvit ōrā
+(613)  Chorus: raptor externī reditūrus aurī,
+(614)  Chorus: exitū dīrō temerāta pontī
+(615)  Chorus: jūra piāvit.
+(616)  Chorus: Exigit poenās mare prōvocātum:
+(617)  Chorus: Tīphys, in prīmīs domitor profundī,
+(618)  Chorus: līquit indoctō regimen magistrō;
+(619)  Chorus: lītore externō, procul ā paternīs
+(620)  Chorus: occidēns rēgnīs tumulōque vīlī
+(621)  Chorus: tēctus ignōtās jacet inter umbrās.
+(622)  Chorus: Aulis āmissī memor inde rēgis
+(623)  Chorus: portibus lentīs retinet carīnās
+(624)  Chorus: stāre querentēs.
+(625)  Chorus: Ille vōcālī genitus Camēnā,
+(626)  Chorus: cujus ad chordās modulante plēctrō
+(627)  Chorus: restitit torrēns, siluēre ventī,
+(628)  Chorus: cui suō cantū volucris relictō
+(629)  Chorus: adfuit tōtā comitante silvā,
+(630)  Chorus: Thrāciōs sparsus jacuit per agrōs,
+(631)  Chorus: at caput trīstī fluitāvit Hebrō:
+(632)  Chorus: contigit nōtam Styga Tartarumque,
+(633)  Chorus: nōn reditūrus.
+(634)  Chorus: Strāvit Alcīdēs Aquilōne nātōs,
+(635)  Chorus: patre Neptūnō genitum necāvit
+(636)  Chorus: sūmere innumerās solitum figūrās:
+(637)  Chorus: ipse post terrae pelagīque pācem,
+(638)  Chorus: post ferī Dītis patefacta rēgna
+(639)  Chorus: vīvus ārdentī recubāns in Oetā
+(640)  Chorus: praebuit saevīs sua membra flammīs
+(641)  Chorus: tābe cōnsūmptus geminī cruōris,
+(642)  Chorus: mūnere nūptae.
+(643)  Chorus: Strāvit Ancaeum violentus ictū
+(644)  Chorus: saetiger; frātrem, Meleagre, mātris
+(645)  Chorus: impius mactās morerisque dextrā
+(646)  Chorus: mātris īrātae: meruēre cūnctī,
+(647)  Chorus: morte quod crīmen tener expiāvit
+(648)  Chorus: Herculī magnō puer inrepertus,
+(649)  Chorus: raptus, heu, tūtās puer inter undās?
+(650)  Chorus: īte nunc, fortēs, perarāte pontum
+(651)  Chorus: fonte timendō.
+(652)  Chorus: Idmonem, quamvīs bene fāta nōsset,
+(653)  Chorus: condidit serpēns Libycīs harēnīs;
+(654)  Chorus: omnibus vērāx, sibi falsus ūnī
+(655)  Chorus: concidit Mopsus caruitque Thēbīs.
+(656)  Chorus: ille sī vērē cecinit futūra,
+(657)  Chorus: exul errābit Thetidis marītus;
+(661)  Chorus: fulmine et pontō moriēns Oīleī
+(662)  Chorus: patriōque pendet
+(663)  Chorus: crīmine poenās.
+(658)  Chorus: Igne fallācī nocitūrus Argīs
+(659)  Chorus: Nauplius praeceps cadet in profundum;
+(662)  Chorus: conjugis fātum redimēns Pheraeī
+(663)  Chorus: uxor impendēs animam marītō.
+(664)  Chorus: ipse quī praedam spoliumque jussit
+(665)  Chorus: aureum prīmā revehī carīnā
+(666)  Chorus: [ustus accēnsō Peliās aēnō]
+(667)  Chorus: ārsit angustās vagus inter undās.
+(668)  Chorus: Jam satis, dīvī, mare vindicāstis:
+(669)  Chorus: parcite jussō.
+(670x) === Akt 3 ===
+(670)  Nutrix: Pavet animus, horret: magna perniciēs adest.
+(671)  Nutrix: immāne quantum augēscit et sēmet dolor
+(672)  Nutrix: accendit ipse vimque praeteritam integrat.
+(673)  Nutrix: vīdī furentem saepe et aggressam deōs,
+(674)  Nutrix: caelum trahentem: majus hīs, majus parat
+(675)  Nutrix: Mēdēa mōnstrum. namque ut attonitō gradū
+(676)  Nutrix: ēvāsit et penetrāle fūnestum attigit,
+(677)  Nutrix: tōtās opēs effundit et quidquid diū
+(678)  Nutrix: etiam ipsa timuit prōmit atque omnem explicat
+(679)  Nutrix: turbam malōrum, arcāna sēcrēta abdita,
+(680)  Nutrix: et trīste laevā comparāns sacrum manū
+(681)  Nutrix: pestēs vocat quāscumque ferventis creat
+(682)  Nutrix: harēna Libyae quāsque perpetuā nive
+(683)  Nutrix: Taurus coercet frīgore Arctōō rigēns,
+(684)  Nutrix: et omne mōnstrum. tracta magicīs cantibus
+(685)  Nutrix: squāmifera latebrīs turba dēsertīs adest.
+(686)  Nutrix: hīc saeva serpēns corpus immēnsum trahit
+(687)  Nutrix: trifidamque linguam exsertat et quaerit quibus
+(688)  Nutrix: mortifera veniat: carmine audītō stupet
+(689)  Nutrix: tumidumque nōdīs corpus aggestīs plicat
+(690)  Nutrix: cōgitque in orbēs. 'Parva sunt' inquit 'mala
+(691)  Nutrix: et vīle tēlum est, īma quod tellūs creat:
+(692)  Nutrix: caelō petam venēna. jam jam tempus est
+(693)  Nutrix: aliquid movēre fraude vulgārī altius.
+(694)  Nutrix: hūc ille vastī mōre torrentis patēns
+(695)  Nutrix: dēscendat anguis, cujus immēnsōs duae,
+(696)  Nutrix: major minorque, sentiunt nōdōs ferae
+(697)  Nutrix: (major Pelasgīs apta, Sīdoniīs minor),
+(698)  Nutrix: pressāsque tandem solvat Ophiūchus manūs
+(699)  Nutrix: vīrusque fundat; adsit ad cantūs meōs
+(700)  Nutrix: lacessere ausus gemina Pȳthōn nūmina,
+(701)  Nutrix: et Hydra et omnis redeat Herculeā manū
+(702)  Nutrix: succīsa serpēns caede sē reparāns suā.
+(703)  Nutrix: tū quoque relictīs pervigil Colchīs ades,
+(704)  Nutrix: sōpīte prīmum cantibus, serpēns, meīs.'
+(705)  Nutrix: Postquam ēvocāvit omne serpentum genus,
+(706)  Nutrix: congerit in ūnum frūgis īnfaustae mala:
+(707)  Nutrix: quaecumque generat invius saxīs Eryx,
+(708)  Nutrix: quae fert opertīs hieme perpetuā jugīs
+(709)  Nutrix: sparsus cruōre Caucasus Promētheī,
+(711)  Nutrix: et quīs sagittās dīvitēs Arabes linunt
+(710)  Nutrix: pharetrāque pugnāx Mēdus aut Parthī levēs,
+(712)  Nutrix: aut quōs sub axe frīgidō sūcōs legunt
+(713)  Nutrix: lūcīs Suēbae nōbilēs Hyrcāniīs;
+(714)  Nutrix: quodcumque tellūs vēre nīdificō creat
+(715)  Nutrix: aut rigida cum jam brūma dēcussit decus
+(716)  Nutrix: nemorum et nivālī cūncta cōnstrīnxit gelū,
+(717)  Nutrix: quodcumque grāmen flōre mortiferō viret,
+(718)  Nutrix: dīrusve tortīs sūcus in rādīcibus
+(719)  Nutrix: causās nocendī gignit, attrectat manū.
+(720)  Nutrix: Haemonius illās contulit pestēs Athōs,
+(721)  Nutrix: hās Pindus ingēns, illa Pangaeī jugīs
+(722)  Nutrix: teneram cruentā falce dēposuit comam;
+(723)  Nutrix: hās aluit altum gurgitem Tigris premēns,
+(724)  Nutrix: Dānuvius illās, hās per ārentīs plagās
+(725)  Nutrix: tepidīs Hydaspēs gemmifer currēns aquīs,
+(726)  Nutrix: nōmenque terrīs quī dedit Baetīs suīs
+(727)  Nutrix: Hesperia pulsāns maria languentī vadō.
+(728)  Nutrix: haec passa ferrum est, dum parat Phoebus diem,
+(729)  Nutrix: illīus altā nocte succīsus frutex;
+(730)  Nutrix: at hujus ungue secta cantātō seges.
+(731)  Nutrix: Mortifera carpit grāmina ac serpentium
+(732)  Nutrix: saniem exprimit miscetque et obscēnās avēs
+(733)  Nutrix: maestīque cor būbōnis et raucae strigis
+(734)  Nutrix: exsecta vīvae vīscera. haec scelerum artifex
+(735)  Nutrix: discrēta pōnit: hīs rapāx vīs ignium,
+(736)  Nutrix: hīs gelida pigrī frīgoris glaciēs inest.
+(737)  Nutrix: addit venēnīs verba nōn illīs minus
+(738)  Nutrix: metuenda. Sonuit ecce vēsānō gradū
+(739)  Nutrix: canitque. mundus vōcibus prīmīs tremit.
+(740)  Medea: Comprecor vulgus silentum vōsque fērālēs deōs
+(741)  Medea: et Chaos caecum atque opācam Dītis umbrōsī domum,
+(742)  Medea: Tartarī rīpīs ligātōs squālidae Mortis specūs.
+(743)  Medea: supplicīs, animae, remissīs currite ad thalamōs novōs:
+(744)  Medea: rota resistat membra torquēns, tangat Ixīōn humum,
+(745)  Medea: Tantalus sēcūrus undās hauriat Pīrēnidas,
+(746)  Medea: [gravior ūnī poena sedeat conjugis socerō meī]
+(747)  Medea: lūbricus per saxa retrō Sīsyphum solvat lapis.
+(748)  Medea: vōs quoque, urnīs quās forātīs inritus lūdit labor,
+(749)  Medea: Danaides, coīte: vestrās hic diēs quaerit manūs.
+(750)  Medea: nunc meīs vocāta sacrīs, noctium sīdus, venī
+(751)  Medea: pessimōs indūta vultūs, fronte nōn ūnā mināx.
+(752)  Medea: Tibi mōre gentis vinculō solvēns comam
+(753)  Medea: sēcrēta nūdō nemora lūstrāvī pede
+(754)  Medea: et ēvocāvī nūbibus siccīs aquās
+(755)  Medea: ēgīque ad īmum maria, et Ōceanus gravēs
+(756)  Medea: interius undās aestibus victīs dedit,
+(757)  Medea: pariterque mundus lēge cōnfūsā aetheris
+(758)  Medea: et sōlem et astra vīdit et vetitum mare
+(759)  Medea: tetigistis, ursae. temporum flexī vicēs:
+(760)  Medea: aestīva tellūs horruit cantū meō,
+(761)  Medea: coācta messem vīdit hībernam Cerēs;
+(762)  Medea: violenta Phāsis vertit in fontem vada
+(763)  Medea: et Hister, in tot ōra dīvīsus, trucēs
+(764)  Medea: compressit undās omnibus rīpīs piger;
+(765)  Medea: sonuēre flūctūs, tumuit īnsānum mare
+(766)  Medea: tacente ventō; nemoris antīquī domus
+(767)  Medea: āmīsit umbrās vōcis imperiō meae.
+(768)  Medea: diē relictō Phoebus in mediō stetit,
+(769)  Medea: Hyadesque nostrīs cantibus mōtae labant:
+(770)  Medea: adesse sacrīs tempus est, Phoebē, tuīs.
+(771x) === Monodie (Epode) ===
+(771)  Medea: Tibi haec cruenta serta texuntur manū,
+(772)  Medea: novēna quae serpēns ligat,
+(773)  Medea: tibi haec Typhōeus membra quae discors tulit,
+(774)  Medea: quī rēgna concussit Jovis.
+(775)  Medea: vectōris istīc perfidī sanguis inest,
+(776)  Medea: quem Nessus exspīrāns dedit.
+(777)  Medea: Oetaeus istō cinere dēfēcit rogus,
+(778)  Medea: quī vīrus Herculeum bibit.
+(779)  Medea: piae sorōris, impiae mātris, facem
+(780)  Medea: ultrīcis Althaeae vidēs.
+(781)  Medea: relīquit istās inviō plūmās specū
+(782)  Medea: Harpyia, dum Zētēn fugit.
+(783)  Medea: hīs adice pinnās sauciae Stymphālidos
+(784)  Medea: Lernaea passae spīcula.
+(785)  Medea: sonuistis, ārae, tripodas agnōscō meōs
+(786)  Medea: favente commōtōs deā.
+(787x) === Monodie (Anapäste) ===
+(787)  Medea: Videō Triviae currūs agilēs,
+(788)  Medea: nōn quōs plēnō lūcida vultū
+(789)  Medea: pernox agitat,
+(790)  Medea: sed quōs faciē lūrida maestā,
+(791)  Medea: cum Thessalicīs vexāta minīs
+(792)  Medea: caelum frēnō propiōre legit.
+(793)  Medea: sīc face trīstem pallida lūcem
+(794)  Medea: funde per aurās,
+(795)  Medea: horrōre novō terrē populōs
+(795)  Medea: inque auxilium, Dictynna, tuum
+(796)  Medea: pretiōsa sonent aera Corinthī.
+(797)  Medea: Tibi sanguineō caespite sacrum
+(798)  Medea: sollemne damus,
+(799)  Medea: tibi dē mediō rapta sepulcrō
+(800)  Medea: fax nocturnōs sustulit ignēs,
+(801)  Medea: tibi mōta caput flexā vōcēs
+(802)  Medea: cervīce dedī,
+(803)  Medea: tibi fūnereō dē mōre jacēns
+(804)  Medea: passōs cingit vitta capillōs,
+(805)  Medea: tibi jactātur trīstis Stygiā
+(805)  Medea: rāmus ab undā,
+(806)  Medea: tibi nūdātō pectore maenas
+(807)  Medea: sacrō feriam bracchia cultrō.
+(808)  Medea: mānet noster sanguis ad ārās:
+(809)  Medea: assuēsce, manus, stringere ferrum
+(810)  Medea: cārōsque patī posse cruōrēs:
+(811)  Medea: sacrum laticem percussa dedī.
+(812)  Medea: Quodsī nimium saepe vocārī
+(813)  Medea: quereris vōtīs, ignōsce, precor:
+(814)  Medea: causa vocandī, Persēi, tuōs
+(815)  Medea: saepius arcūs
+(816)  Medea: ūna atque eadem est semper, Iāsōn.
+(817)  Medea: Tū nunc vestēs tinge Creūsae,
+(818)  Medea: quās cum prīmum sūmpserit, īmās
+(819)  Medea: ūrat serpēns flamma medullās.
+(820)  Medea: Ignis fulvō clūsus in aurō
+(821)  Medea: latet obscūrus, quem mihi caelī
+(822)  Medea: quī fūrta luit viscere fētō
+(823)  Medea: dedit et docuit condere vīrēs
+(824)  Medea: arte, Promētheus; dedit et tenuī
+(825)  Medea: sulphure tēctōs Mulciber ignēs,
+(826)  Medea: et vīvācis fulgura flammae
+(827)  Medea: dē cognātō Phaethonte tulī.
+(828)  Medea: habeō mediae dōna Chimaerae,
+(829)  Medea: habeō flammās ustō taurī
+(830)  Medea: gutture raptās,
+(831)  Medea: quās permixtō felle Medūsae
+(832)  Medea: tacitum jussī servāre malum.
+(833)  Medea: Adde venēnīs stimulōs, Hecatē,
+(834)  Medea: dōnīsque meīs sēmina flammae
+(835)  Medea: condita servā:
+(835)  Medea: fallant vīsūs tāctūsque ferant,
+(836)  Medea: meet in pectus vēnāsque calor,
+(837)  Medea: stillent artūs ossaque fūment
+(838)  Medea: vincatque suās flagrante comā
+(839)  Medea: nova nūpta facēs.
+(840)  Medea: Vōta tenentur: ter lātrātūs
+(841)  Medea: audāx Hecatē dedit et sacrōs
+(842)  Medea: ēdidit ignēs face lūctiferā.
+(843)  Medea: Perācta vīs est omnis: hūc gnātōs vocā,
+(844)  Medea: pretiōsa per quōs dōna nūbentī feram.
+(845)  Medea: Īte, īte, nātī, mātris īnfaustae genus,
+(846)  Medea: plācāte vōbīs mūnere et multā prece
+(847)  Medea: dominam ac novercam. vādite et celerēs domum
+(848)  Medea: referte gressūs, ultimō amplexū ut fruar.
+(849x) === Chor (Jambisch Dimeter katalektisch) ===
+(849)  Chorus: Quōnam cruenta maenas
+(850)  Chorus: praeceps amōre saevō
+(851)  Chorus: rapitur? quod impotentī
+(852)  Chorus: facinus parat furōre?
+(853)  Chorus: vultūs citātus īrā
+(854)  Chorus: riget et caput ferōcī
+(855)  Chorus: quatiēns superba mōtū
+(856)  Chorus: rēgī minātur ultrō.
+(857)  Chorus: quis crēdat exulem?
+(858)  Chorus: Flagrant genae rubentēs,
+(859)  Chorus: pallor fugat rubōrem.
+(860)  Chorus: nūllum vagante fōrmā
+(861)  Chorus: servat diū colōrem.
+(862)  Chorus: hūc fert pedēs et illūc,
+(863)  Chorus: ut tigris orba nātīs
+(864)  Chorus: cursū furente lūstrat
+(865)  Chorus: Gangēticum nemus.
+(866)  Chorus: Frēnāre nescit īrās
+(867)  Chorus: Mēdēa, nōn amōrēs;
+(868)  Chorus: nunc īra amorque causam
+(869)  Chorus: jūnxēre: quid sequētur?
+(870)  Chorus: quandō efferet Pelasgīs
+(871)  Chorus: nefanda Colchis arvīs
+(872)  Chorus: gressum metūque solvet
+(873)  Chorus: rēgnum simulque rēgēs?
+(874)  Chorus: Nunc, Phoebe, mitte currūs
+(875)  Chorus: nūllō morante lōrō,
+(876)  Chorus: nox condat alma lūcem,
+(877)  Chorus: mergat diem timendum
+(878)  Chorus: dux noctis Hesperus.
+(879x) === Akt 4 ===
+(879)  Nuntius: Periēre cūncta, concidit rēgnī status;
+(880)  Nuntius: nāta atque genitor cinere permixtō jacent.
+(881)  Chorus: Quā fraude captī? Quā solent rēgēs capī:
+(882)  Nuntius: dōnīs. In illīs esse quis potuit dolus?
+(883)  Nuntius: Et ipse mīror vixque jam factō malō
+(884)  Nuntius: potuisse fierī crēdo. Quis clādis modus?
+(885)  Nuntius: Avidus per omnem rēgiae partem furit
+(886)  Nuntius: immissus ignis: jam domus tōta occidit,
+(887)  Nuntius: urbī timētur. Unda flammās opprimat.
+(888)  Nuntius: Et hoc in istā clāde mīrandum accidit:
+(889)  Nuntius: alit unda flammās, quōque prohibētur magis,
+(890)  Nuntius: magis ārdet ignis; ipsa praesidia occupat.
+(891)  Nutrix: Effer citātum sēde Pelopēā gradum,
+(892)  Nutrix: Mēdēa, praeceps quāslibet terrās pete.
+(893)  Medea: Egone ut recēdam? sī profūgissem prius,
+(894)  Medea: ad hoc redīrem. nūptiās spectō novās.
+(895)  Medea: quid, anime, cessās? sequere fēlīcem impetum.
+(896)  Medea: pars ultiōnis ista, quā gaudēs, quota est?
+(897)  Medea: amās adhūc, furiōse, sī satis est tibī
+(898)  Medea: caelebs Iāsōn. quaere poenārum genus
+(899)  Medea: haut ūsitātum jamque sīc tēmet parā:
+(900)  Medea: fās omne cēdat, abeat expulsus pudor;
+(901)  Medea: vindicta levis est quam ferunt pūrae manūs.
+(902)  Medea: incumbe in īrās tēque languentem excitā
+(903)  Medea: penitusque veterēs pectore ex īmō impetūs
+(904)  Medea: violentus haurī. quidquid admissum est adhūc,
+(905)  Medea: pietās vocētur. hoc age! ēn faxō sciant
+(906)  Medea: quam levia fuerint quamque vulgāris notae
+(907)  Medea: quae commodāvī scelera. prōlūsit dolor
+(908)  Medea: per ista noster: quid manūs poterant rudēs
+(909)  Medea: audēre magnum, quid puellāris furor?
+(910)  Medea: Mēdēa nunc sum; crēvit ingenium malīs:
+(911)  Medea: juvat, juvat rapuisse frāternum caput,
+(912)  Medea: artūs juvat secuisse et arcānō patrem
+(913)  Medea: spoliāsse sacrō, juvat in exitium senis
+(914)  Medea: armāsse nātās. quaere māteriam, dolor:
+(915)  Medea: ad omne facinus nōn rudem dextram afferēs.
+(916)  Medea: Quō tē igitur, īra, mittis, aut quae perfidō
+(917)  Medea: intendis hostī tēla? nescioquid ferōx
+(918)  Medea: dēcrēvit animus intus et nōndum sibī
+(919)  Medea: audet fatērī. stulta properāvī nimis:
+(920)  Medea: ex paelice utinam līberōs hostis meus
+(921)  Medea: aliquōs habēret; quidquid ex illō tuum est,
+(922)  Medea: Creūsa peperit. placuit hoc poenae genus,
+(923)  Medea: meritōque placuit: ultimum magnō scelus
+(924)  Medea: animō parandum est: līberī quondam meī,
+(925)  Medea: vōs prō paternīs sceleribus poenās date.
+(926)  Medea: Cor pepulit horror, membra torpēscunt gelū
+(927)  Medea: pectusque tremuit. īra discessit locō
+(928)  Medea: māterque tōtā conjuge expulsā redit.
+(929)  Medea: egone ut meōrum līberum ac prōlis meae
+(930)  Medea: fundam cruōrem? melius, ā, dēmēns furor!
+(931)  Medea: incognitum istud facinus ac dīrum nefās
+(932)  Medea: ā mē quoque absit; quod scelus miserī luent?
+(933)  Medea: scelus est Iāsōn genitor et majus scelus
+(934)  Medea: Mēdēa māter. occidant, nōn sunt meī;
+(935)  Medea: pereant, meī sunt. crīmine et culpā carent,
+(936)  Medea: sunt innocentēs, fateor: et frāter fuit.
+(937)  Medea: quid, anime, titubās? ōra quid lacrimae rigant
+(938)  Medea: variamque nunc hūc īra, nunc illūc amor
+(939)  Medea: dīdūcit? anceps aestus incertam rapit;
+(940)  Medea: ut saeva rapidī bella cum ventī gerunt,
+(941)  Medea: utrimque flūctūs maria discordēs agunt
+(942)  Medea: dubiumque fervet pelagus, haut aliter meum
+(943)  Medea: cor fluctuātur: īra pietātem fugat
+(944)  Medea: īramque pietās, cēde pietātī, dolor.
+(945)  Medea: Hūc, cāra prōlēs, ūnicum afflīctae domūs
+(946)  Medea: sōlāmen, hūc vōs ferte et īnfūsōs mihī
+(947)  Medea: conjungite artūs. habeat incolumēs pater,
+(948)  Medea: dum et māter habeat, urguet exilium ac fuga:
+(949)  Medea: jam jam meō rapientur āvulsī ē sinū,
+(950)  Medea: flentēs, gementēs, ōsculīs pereant patris,
+(951)  Medea: periēre mātris. rūrsus incrēscit dolor
+(952)  Medea: et fervet odium, repetit invītam manum
+(953)  Medea: antīqua Erīnȳs, īra, quā dūcis, sequor.
+(954)  Medea: utinam superbae turba Tantalidos meō
+(955)  Medea: exīsset uterō bisque septēnōs parēns
+(956)  Medea: nātōs tulissem! sterilis in poenās fuī:
+(957)  Medea: frātrī patrīque quod sat est, peperī duōs.
+(958)  Medea: Quōnam ista tendit turba Furiārum impotēns?
+(959)  Medea: quem quaerit aut quō flammeōs ictūs parat,
+(960)  Medea: aut cui cruentās agmen īnfernum facēs
+(961)  Medea: intentat? ingēns anguis excussō sonat
+(962)  Medea: tortus flagellō. quem trabe īnfēstā petit
+(963)  Medea: Megaera? cujus umbra dispersīs venit
+(964)  Medea: incerta membrīs? frāter est, poenās petit:
+(965)  Medea: dabimus, sed omnēs. fīge lūminibus facēs,
+(966)  Medea: laniā, perūre, pectus ēn Furiīs patet.
+(967)  Medea: Discēdere ā mē, frāter, ultrīcēs deās
+(968)  Medea: mānēsque ad īmōs īre sēcūrās jubē:
+(969)  Medea: mihi mē relinque et ūtere hāc, frāter, manū
+(970)  Medea: quae strīnxit ēnsem; victimā mānēs tuōs
+(971)  Medea: plācāmus istā. Quid repēns affert sonus?
+(972)  Medea: parantur arma mēque in exitium petunt.
+(973)  Medea: excelsa nostrae tēcta cōnscendam domūs
+(974)  Medea: caede incohātā. perge tū mēcum comes.
+(975)  Medea: tuum quoque ipsa corpus hinc mēcum āveham.
+(976)  Medea: nunc hoc age, anime: nōn in occultō tibi est
+(977)  Medea: perdenda virtūs; approbā populō manum.
+(978)  Iason: Quīcumque rēgum clādibus fīdus dolēs,
+(979)  Iason: concurre, ut ipsam sceleris auctōrem horridī
+(980)  Iason: capiāmus. hūc, hūc, fortis armiferī cohors,
+(981)  Iason: cōnferte tēla, vertite ex īmō domum.
+(982)  Medea: Jam jam recēpī scēptra germānum patrem,
+(983)  Medea: spoliumque Colchī pecudis aurātae tenent;
+(984)  Medea: rediēre rēgna, rapta virginitās redīt.
+(985)  Medea: ō placida tandem nūmina, ō fēstum diem,
+(986)  Medea: ō nūptiālem! vāde, perfectum est scelus,
+(987)  Medea: vindicta nōndum: perage, dum faciunt manūs.
+(988)  Medea: quid nunc morāris, anime? quid dubitās? potēns
+(989)  Medea: jam cecidit īra? paenitet factī, pudet.
+(990)  Medea: quid, misera, fēcī? misera? paeniteat licet,
+(991)  Medea: fēcī. voluptās magna mē invītam subit,
+(992)  Medea: et ecce crēscit. dēerat hoc ūnum mihī,
+(993)  Medea: spectātor iste. nīl adhūc factī reor:
+(994)  Medea: quidquid sine istō fēcimus sceleris perīt.
+(995)  Iason: Ēn ipsa tēctī parte praecipitī imminet.
+(996)  Iason: hūc rapiat ignēs aliquis, ut flammīs cadat
+(997)  Iason: suīs perusta. Congere extrēmum tuīs
+(998)  Medea: nātīs, Iāsōn, fūnus ac tumulum strue:
+(999)  Medea: conjūnx socerque jūsta jam fūnctīs habent
+(1000)  Medea: ā mē sepultī; gnātus hic fātum tulit,
+(1001)  Medea: hic tē vidente dabitur exitiō parī.
+(1002)  Iason: Per nūmen omne perque commūnēs fugās
+(1003)  Iason: torōsque, quōs nōn nostra violāvit fidēs,
+(1004)  Iason: jam parce nātō. sī quod est crīmen, meum est:
+(1005)  Iason: mē dēdo mortī; noxium mactā caput.
+(1006)  Medea: Hāc quā recūsās, quā dolēs, ferrum exigam.
+(1007)  Medea: ī nunc, superbe, virginum thalamōs pete,
+(1008)  Medea: relinque mātrēs. Unus est poenae satis.
+(1009)  Medea: Sī posset ūnā caede satiārī manus,
+(1010)  Medea: nūllam petīsset. ut duōs perimam, tamen
+(1011)  Medea: nimium est dolōrī numerus angustus meō.
+(1012)  Medea: in mātre sī quod pignus etiamnunc latet,
+(1013)  Medea: scrūtābor ēnse vīscera et ferrō extraham.
+(1014)  Iason: Jam perage coeptum facinus, haut ultrā precor,
+(1015)  Iason: moramque saltem supplicīs dōnā meīs.
+(1016)  Medea: Perfruere lentō scelere, nē properā, dolor:
+(1017)  Medea: meus diēs est; tempore acceptō ūtimur.
+(1018)  Iason: Īnfesta, mēmet perime. Miserērī jubēs.
+(1019)  Medea: bene est, perāctum est. plūra nōn habuī, dolor,
+(1020)  Medea: quae tibi litārem. lūmina hūc tumida allevā,
+(1021)  Medea: ingrāte Iāsōn. conjugem agnōscis tuam?
+(1022)  Medea: sīc fugere soleō. patuit in caelum via:
+(1023)  Medea: squāmōsa geminī colla serpentēs jugō
+(1024)  Medea: summissa praebent. recipe jam gnātōs, parēns;
+(1025)  Medea: ego inter aurās ālitī currū vehar.
+(1026)  Iason: Per alta vāde spatia sublīme aetheris,
+(1027)  Iason: testāre nūllōs esse, quā veheris, deōs.

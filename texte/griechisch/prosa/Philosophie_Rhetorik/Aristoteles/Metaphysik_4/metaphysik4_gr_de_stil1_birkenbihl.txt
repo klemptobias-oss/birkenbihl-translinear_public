@@ -1,0 +1,1379 @@
+==== Metaphysik 4 ====
+== St. 1003a ==
+= § 1 =
+(4) ἔστιν(Prä)(Akt) ἐπιστήμη(N) τις(Pr)(N) ἣ(Pr)(N) θεωρεῖ(Prä)(Akt) τὸ(Art)(A) ὂν(Prä)(Akt)(A) ᾗ(Kon) ὂν(Prä)(Akt)(A) καὶ(Kon)
+(4) es|gibt Wissenschaft eine|gewisse welche betrachtet das Seiende insofern|als seiend und
+(5) τὰ(Art)(A) τούτῳ(Pr)(D) ὑπάρχοντα(Prä)(Akt)(A) καθʼ(Prp) αὑτό(Pr)(A). αὕτη(Pr)(N) δʼ(Pt) ἐστὶν(Prä)(Akt) οὐδεμιᾷ(Adj)(D) τῶν(Art)(G)
+(5) die diesem vorhanden|seienden hinsichtlich sich|selbst. diese aber ist keinerlei der
+(6) ἐν(Prp) μέρει(D) λεγομένων(Prä)(M/P)(G) ἡ(Art)(N) αὐτή(Pr)(N)· οὐδεμία(Adj)(N) γὰρ(Pt) τῶν(Art)(G) ἄλλων(Adj)(G) ἐπισκοπεῖ(Prä)(Akt)
+(6) in einem|Teil gesagt|werdenden die dieselbe· keine denn der anderen untersucht
+(7) καθόλου(Adv) περὶ(Prp) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G) ᾗ(Kon) ὄν(Prä)(Akt)(A), ἀλλὰ(Kon) μέρος(A) αὐτοῦ(Pr)(G) τι(Pr)(A)
+(7) im|Allgemeinen über des Seienden insofern|als seiend, aber einen|Teil von|ihm irgendeinen
+(8) ἀποτεμόμεναι(AorS)(Med)(N) περὶ(Prp) τούτου(Pr)(G) θεωροῦσι(Prä)(Akt) τὸ(Art)(A) συμβεβηκός(Per)(Akt)(A), οἷον(Kon) αἱ(Art)(N) μαθηματικαὶ(Adj)(N) τῶν(Art)(G)
+(8) abgetrennt|habend über dieses betrachten das Zugekommene, wie die mathematischen der
+(9) ἐπιστημῶν(G). ἐπεὶ(Kon) δὲ(Pt) τὰς(Art)(A) ἀρχὰς(A) καὶ(Kon) τὰς(Art)(A) ἀκροτάτας(Adj)(Sup)(A) αἰτίας(A) ζητοῦμεν(Prä)(Akt),
+(9) Wissenschaften. da aber die Anfänge und die äußersten Ursachen suchen,
+(10) δῆλον(Adj)(N) ὡς(Kon) φύσεώς(G) τινος(Pr)(G) αὐτὰς(Pr)(A) ἀναγκαῖον(Adj)(A) εἶναι(Prä)(Inf)(Akt) καθʼ(Prp) αὑτήν(Pr)(A). εἰ(Kon)
+(10) klar dass Natur irgendeiner sie notwendig zu|sein hinsichtlich sich|selbst. wenn
+(11) οὖν(Pt) καὶ(Kon) οἱ(Art)(N) τὰ(Art)(A) στοιχεῖα(A) τῶν(Art)(G) ὄντων(Prä)(Akt)(G) ζητοῦντες(Prä)(Akt)(N) ταύτας(Pr)(A) τὰς(Art)(A)
+(11) nun und die die Elemente der Seienden suchend diese die
+(12) ἀρχὰς(A) ἐζήτουν(Imp)(Akt), ἀνάγκη(N) καὶ(Kon) τὰ(Art)(A) στοιχεῖα(A) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G) εἶναι(Prä)(Inf)(Akt) μὴ(Pt)
+(12) Anfänge suchten, notwendig auch die Elemente des Seienden zu|sein nicht
+(13) κατὰ(Prp) συμβεβηκὸς(Per)(Akt)(A) ἀλλʼ(Kon) ᾗ(Kon) ὄν(Prä)(Akt)(A)· διὸ(Kon) καὶ(Kon) ἡμῖν(Pr)(D) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G)
+(13) nach dem|Zufälligen sondern insofern|als seiend· daher auch uns des Seienden
+(14) ᾗ(Kon) ὂν(Prä)(Akt)(A) τὰς(Art)(A) πρώτας(Adj)(A) αἰτίας(A) ληπτέον(Adj).
+(14) insofern|als seiend die ersten Ursachen zu|nehmen.
+== St. 1003b ==
+= § 2 =
+(17) τὸ(Art)(N) δὲ(Pt) ὂν(Prä)(Akt)(N) λέγεται(Prä)(M/P) μὲν(Pt) πολλαχῶς(Adv), ἀλλὰ(Kon) πρὸς(Prp) ἓν(Pr)(A) καὶ(Kon)
+(17) das aber Seiende wird|gesagt zwar vielfach, aber auf eins und
+(18) μίαν(Adj)(A) τινὰ(Pr)(A) φύσιν(A) καὶ(Kon) οὐχ(Pt) ὁμωνύμως(Adv) ἀλλʼ(Kon) ὥσπερ(Kon) καὶ(Kon) τὸ(Art)(N)
+(18) eine gewisse Natur und nicht gleichnamig sondern so|wie auch das
+(19) ὑγιεινὸν(Adj)(N) ἅπαν(Adj)(N) πρὸς(Prp) ὑγίειαν(A), τὸ(Art)(N) μὲν(Pt) τῷ(Art)(D) φυλάττειν(Prä)(Inf)(Akt) τὸ(Art)(N) δὲ(Pt)
+(19) gesundheitsfördernde alles auf Gesundheit, das zwar durch|dem Bewahren das aber
+(20) τῷ(Art)(D) ποιεῖν(Prä)(Inf)(Akt) τὸ(Art)(N) δὲ(Pt) τῷ(Art)(D) σημεῖον(N) εἶναι(Prä)(Inf)(Akt) τῆς(Art)(G) ὑγιείας(G) τὸ(Art)(N)
+(20) durch|dem Machen das aber durch|dem Zeichen zu|sein der Gesundheit das
+(21) δʼ(Pt) ὅτι(Kon) δεκτικὸν(Adj)(N) αὐτῆς(Pr)(G), καὶ(Kon) τὸ(Art)(N) ἰατρικὸν(Adj)(N) πρὸς(Prp) ἰατρικήν(A) (τὸ(Art)(N)
+(21) aber dass empfänglich ihrer, und das ärztliche auf Heilkunde (das
+(22) μὲν(Pt) γὰρ(Pt) τῷ(Art)(D) ἔχειν(Prä)(Inf)(Akt) ἰατρικὴν(A) λέγεται(Prä)(M/P) ἰατρικὸν(Adj)(N) τὸ(Art)(N) δὲ(Pt) τῷ(Art)(D)
+(22) zwar denn durch|dem Haben ärztliche wird|gesagt ärztlich das aber durch|dem
+(23) εὐφυὲς(Adj)(N) εἶναι(Prä)(Inf)(Akt) πρὸς(Prp) αὐτὴν(Pr)(A) τὸ(Art)(N) δὲ(Pt) τῷ(Art)(D) ἔργον(N) εἶναι(Prä)(Inf)(Akt) τῆς(Art)(G)
+(23) begabt zu|sein hin|zu ihr das aber durch|dem Werk zu|sein der
+(24) ἰατρικῆς(G)), ὁμοιοτρόπως(Adv) δὲ(Pt) καὶ(Kon) ἄλλα(Adj)(N) ληψόμεθα(Fu)(Med) λεγόμενα(Prä)(M/P)(N) τούτοις(Pr)(D), — οὕτω(Adv) δὲ(Pt) καὶ(Kon)
+(24) Heilkunde), ähnlich aber auch andere werden|nehmen gesagt|werdende diesen, — so aber auch
+(25) τὸ(Art)(N) ὂν(Prä)(Akt)(N) λέγεται(Prä)(M/P) πολλαχῶς(Adv) μὲν(Pt) ἀλλʼ(Kon) ἅπαν(Adj)(N) πρὸς(Prp) μίαν(Adj)(A) ἀρχήν(A)·
+(25) das Seiende wird|gesagt vielfach zwar aber alles auf einen Anfang·
+(26) τὰ(Art)(N) μὲν(Pt) γὰρ(Pt) ὅτι(Kon) οὐσίαι(N), ὄντα(Prä)(Akt)(N) λέγεται(Prä)(M/P), τὰ(Art)(N) δʼ(Pt) ὅτι(Kon)
+(26) die zwar denn dass Substanzen, seiende wird|gesagt, die aber dass
+(27) πάθη(N) οὐσίας(G), τὰ(Art)(N) δʼ(Pt) ὅτι(Kon) ὁδὸς(N) εἰς(Prp) οὐσίαν(A) ἢ(Kon) φθοραὶ(N)
+(27) Affektionen der, die aber dass Weg in Substanz oder Verderbnisse
+(28) ἢ(Kon) στερήσεις(N) ἢ(Kon) ποιότητες(N) ἢ(Kon) ποιητικὰ(Adj)(N) ἢ(Kon) γεννητικὰ(Adj)(N) οὐσίας(G) ἢ(Kon)
+(28) oder Entbehrungen oder Qualitäten oder machende oder erzeugende der|Substanz oder
+(29) τῶν(Art)(G) πρὸς(Prp) τὴν(Art)(A) οὐσίαν(A) λεγομένων(Prä)(M/P)(G), ἢ(Kon) τούτων(Pr)(G) τινὸς(Pr)(G) ἀποφάσεις(N) ἢ(Kon)
+(29) der zu der Substanz gesagt|werdenden, oder dieser irgendeines Verneinungen oder
+(30) οὐσίας(G)· διὸ(Kon) καὶ(Kon) τὸ(Art)(N) μὴ(Pt) ὂν(Prä)(Akt)(N) εἶναι(Prä)(Inf)(Akt) μὴ(Pt) ὄν(Prä)(Akt)(N) φαμεν(Prä)(Akt).
+(30) der|Substanz· darum auch das nicht Seiende zu|sein nicht seiend sagen|wir.
+(31) καθάπερ(Kon) οὖν(Pt) καὶ(Kon) τῶν(Art)(G) ὑγιεινῶν(Adj)(G) ἁπάντων(Adj)(G) μία(Adj)(N) ἐπιστήμη(N) ἔστιν(Prä)(Akt), ὁμοίως(Adv)
+(31) so|wie nun auch der gesundheitsfördernden aller eine Wissenschaft ist, gleichermaßen
+(32) τοῦτο(Pr)(N) καὶ(Kon) ἐπὶ(Prp) τῶν(Art)(G) ἄλλων(Adj)(G). οὐ(Pt) γὰρ(Pt) μόνον(Adv) τῶν(Art)(G) καθʼ(Prp)
+(32) dies auch bei den anderen. nicht denn nur der nach
+(33) ἓν(Pr)(A) λεγομένων(Prä)(M/P)(G) ἐπιστήμης(G) ἐστὶ(Prä)(Akt) θεωρῆσαι(Aor)(Inf)(Akt) μιᾶς(Adj)(G) ἀλλὰ(Kon) καὶ(Kon) τῶν(Art)(G) πρὸς(Prp)
+(33) eins gesagt|werdenden der|Wissenschaft ist zu|betrachten einer sondern auch der auf
+(34) μίαν(Adj)(A) λεγομένων(Prä)(M/P)(G) φύσιν(A)· καὶ(Kon) γὰρ(Pt) ταῦτα(Pr)(N) τρόπον(A) τινὰ(Pr)(A) λέγονται(Prä)(M/P) καθʼ(Prp)
+(34) eine gesagt|werdenden Natur· auch denn diese Weise eine|gewisse werden|gesagt nach
+(35) ἕν(Pr)(N). δῆλον(Adj)(N) οὖν(Pt) ὅτι(Kon) καὶ(Kon) τὰ(Art)(N) ὄντα(Prä)(Akt)(N) μιᾶς(Adj)(G) θεωρῆσαι(Aor)(Inf)(Akt) ᾗ(Kon)
+(35) eins. klar nun dass auch die Seienden einer zu|betrachten insofern|als
+(36) ὄντα(Prä)(Akt)(N). πανταχοῦ(Adv) δὲ(Pt) κυρίως(Adv) τοῦ(Art)(G) πρώτου(Adj)(G) ἡ(Art)(N) ἐπιστήμη(N), καὶ(Kon) ἐξ(Prp)
+(36) seiend. überall aber vornehmlich des ersten die Wissenschaft, und aus
+(37) οὗ(Pr)(G) τὰ(Art)(N) ἄλλα(Adj)(N) ἤρτηται(Per)(M/P), καὶ(Kon) διʼ(Prp) ὃ(Pr)(A) λέγονται(Prä)(M/P). εἰ(Kon) οὖν(Pt)
+(37) wovon die anderen abhängen, und durch welches werden|gesagt. wenn nun
+(38) τοῦτʼ(Pr)(N) ἐστὶν(Prä)(Akt) ἡ(Art)(N) οὐσία(N), τῶν(Art)(G) οὐσιῶν(G) ἂν(Pt) δέοι(Prä)(Akt)(Op) τὰς(Art)(A) ἀρχὰς(A)
+(38) dies ist die Substanz, der Substanzen wohl wäre|nötig die Anfänge
+(39) καὶ(Kon) τὰς(Art)(A) αἰτίας(A) ἔχειν(Prä)(Inf)(Akt) τὸν(Art)(A) φιλόσοφον(A). — ἅπαντος(Adj)(G) δὲ(Pt) γένους(G) καὶ(Kon) αἴσθησις(N)
+(39) und die Ursachen zu|haben den Philosophen. — allen aber der|Gattung und Wahrnehmung
+(40) μία(Adj)(N) ἑνὸς(Pr)(G) καὶ(Kon) ἐπιστήμη(N), οἷον(Kon) γραμματικὴ(N) μία(Adj)(N) οὖσα(Prä)(Akt)(N) πάσας(Adj)(A) θεωρεῖ(Prä)(Akt)
+(40) eine eines und Wissenschaft, wie Grammatik eine seiend alle betrachtet
+(41) τὰς(Art)(A) φωνάς(A)· διὸ(Kon) καὶ(Kon) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G) ᾗ(Kon) ὂν(Prä)(Akt)(A) ὅσα(Pr)(N) εἴδη(N)
+(41) die Laute· daher auch des Seienden insofern|als seiend so|viele|wie Arten
+(42) θεωρῆσαι(Aor)(Inf)(Akt) μιᾶς(Adj)(G) ἐστὶν(Prä)(Akt) ἐπιστήμης(G) τῷ(Art)(D) γένει(D), τά(Art)(N) τε(Pt) εἴδη(N) τῶν(Art)(G)
+(42) zu|betrachten einer ist Wissenschaft der Gattung, die und Arten der
+(43) εἰδῶν(G). εἰ(Kon) δὴ(Pt) τὸ(Art)(N) ὂν(Prä)(Akt)(N) καὶ(Kon) τὸ(Art)(N) ἓν(Pr)(N) ταὐτὸν(Adj)(N) καὶ(Kon)
+(43) der|Formen. wenn nun das Seiende und das Eine dasselbe und
+(44) μία(Adj)(N) φύσις(N) τῷ(Art)(D) ἀκολουθεῖν(Prä)(Inf)(Akt) ἀλλήλοις(Pr)(D) ὥσπερ(Kon) ἀρχὴ(N) καὶ(Kon) αἴτιον(N), ἀλλʼ(Kon)
+(44) eine Natur durch|dem Folgen einander so|wie Anfang und Ursache, sondern
+(45) οὐχ(Pt) ὡς(Kon) ἑνὶ(Adj)(D) λόγῳ(D) δηλούμενα(Prä)(M/P)(N) (διαφέρει(Prä)(Akt) δὲ(Pt) οὐθὲν(Pr)(N) οὐδʼ(Pt) ἂν(Pt)
+(45) nicht als einem Wort ausgedrückt|werdende (unterscheidet|sich aber nichts auch|nicht wohl
+(46) ὁμοίως(Adv) ὑπολάβωμεν(Aor)(Akt)(Knj), ἀλλὰ(Kon) καὶ(Kon) πρὸ(Prp) ἔργου(G) μᾶλλον(Adv))· ταὐτὸ(Adj)(N) γὰρ(Pt) εἷς(Pr)(N)
+(46) ähnlich wir|annehmen|mögen, sondern auch vor Werk mehr)· dasselbe denn ein
+(47) ἄνθρωπος(N) καὶ(Kon) ἄνθρωπος(N), καὶ(Kon) ὢν(Prä)(Akt)(N) ἄνθρωπος(N) καὶ(Kon) ἄνθρωπος(N), καὶ(Kon) οὐχ(Pt)
+(47) Mensch und Mensch, und seiend Mensch und Mensch, und nicht
+(48) ἕτερόν(Adj)(N) τι(Pr)(N) δηλοῖ(Prä)(Akt) κατὰ(Prp) τὴν(Art)(A) λέξιν(A) ἐπαναδιπλούμενον(Prä)(M/P)(N) τὸ(Art)(N) εἷς(Pr)(N) ἄνθρωπος(N)
+(48) anderes etwas zeigt nach den Ausdruck zurück|verdoppelt|werdende das ein Mensch
+(49) καὶ(Kon) εἷς(Pr)(N) ὢν(Prä)(Akt)(N) ἄνθρωπος(N) (δῆλον(Adj)(N) δʼ(Pt) ὅτι(Kon) οὐ(Pt) χωρίζεται(Prä)(M/P) οὔτʼ(Pt)
+(49) und ein seiend Mensch (klar aber dass nicht wird|getrennt weder
+(50) ἐπὶ(Prp) γενέσεως(G) οὔτʼ(Pt) ἐπὶ(Prp) φθορᾶς(G)) , ὁμοίως(Adv) δὲ(Pt) καὶ(Kon) ἐπὶ(Prp)
+(50) bei Entstehung noch bei Verderbung) , ähnlich aber auch bei
+(51) τοῦ(Art)(G) ἑνός(Pr)(G), ὥστε(Kon) φανερὸν(Adj)(N) ὅτι(Kon) ἡ(Art)(N) πρόσθεσις(N) ἐν(Prp) τούτοις(Pr)(D) ταὐτὸ(Adj)(N)
+(51) des Einen, so|dass offenbar dass die Hinzufügung in diesen dasselbe
+(52) δηλοῖ(Prä)(Akt), καὶ(Kon) οὐδὲν(Pr)(N) ἕτερον(Adj)(N) τὸ(Art)(N) ἓν(Pr)(N) παρὰ(Prp) τὸ(Art)(A) ὄν(Prä)(Akt)(A), ἔτι(Adv)
+(52) zeigt, und nichts anderes das Eine neben das Seiende, noch
+(53) δʼ(Pt) ἡ(Art)(N) ἑκάστου(Pr)(G) οὐσία(N) ἕν(Pr)(N) ἐστιν(Prä)(Akt) οὐ(Pt) κατὰ(Prp) συμβεβηκός(Per)(Akt)(A), ὁμοίως(Adv)
+(53) aber die eines|jeden Substanz eins ist nicht nach Zugefallenem, gleichermaßen
+(54) δὲ(Pt) καὶ(Kon) ὅπερ(Pr)(N) ὄν(Prä)(Akt)(N) τι(Pr)(N)· — ὥσθʼ(Kon) ὅσα(Pr)(N) περ(Pt) τοῦ(Art)(G) ἑνὸς(Pr)(G) εἴδη(N),
+(54) aber auch welches seiend etwas· — so|dass so|viele|wie ja des Einen Arten,
+(55) τοσαῦτα(Pr)(N) καὶ(Kon) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G)· περὶ(Prp) ὧν(Pr)(G) τὸ(Art)(N) τί(Pr)(N) ἐστι(Prä)(Akt) τῆς(Art)(G)
+(55) ebensoviele auch des Seienden· über deren das Was ist der
+(56) αὐτῆς(Pr)(G) ἐπιστήμης(G) τῷ(Art)(D) γένει(D) θεωρῆσαι(Aor)(Inf)(Akt), λέγω(Prä)(Akt) δʼ(Pt) οἷον(Kon) περὶ(Prp) ταὐτοῦ(Adj)(G)
+(56) derselben Wissenschaft der Gattung zu|betrachten, ich|sage aber zum|Beispiel über des|Selben
+(57) καὶ(Kon) ὁμοίου(Adj)(G) καὶ(Kon) τῶν(Art)(G) ἄλλων(Adj)(G) τῶν(Art)(G) τοιούτων(Adj)(G). σχεδὸν(Adv) δὲ(Pt) πάντα(Adj)(N)
+(57) und des|Ähnlichen und der anderen der solchen. beinahe aber alles
+(58) ἀνάγεται(Prä)(M/P) τἀναντία(Art)(A)(Adj)(A) εἰς(Prp) τὴν(Art)(A) ἀρχὴν(A) ταύτην(Pr)(A)·
+(58) wird|zurückgeführt die|Gegensätzlichen in den Anfang diesen·
+== St. 1004a ==
+(60) τεθεωρήσθω(Per)(M/P)(Imv) δʼ(Pt) ἡμῖν(Pr)(D) ταῦτα(Pr)(N) ἐν(Prp) τῇ(Art)(D) ἐκλογῇ(D) τῶν(Art)(G) ἐναντίων(Adj)(G). καὶ(Kon)
+(60) sei|betrachtet aber uns diese in der Auswahl der Gegenteile. und
+(61) τοσαῦτα(Adj)(N) μέρη(N) φιλοσοφίας(G) ἔστιν(Prä)(Akt) ὅσαι(Pr)(N) περ(Pt) αἱ(Art)(N) οὐσίαι(N)· ὥστε(Kon) ἀναγκαῖον(Adj)(A)
+(61) so|viele Teile der|Philosophie sind wie|viele ja die Substanzen· so|dass notwendig
+(62) εἶναί(Prä)(Inf)(Akt) τινα(Pr)(A) πρώτην(Adj)(Sup)(A) καὶ(Kon) ἐχομένην(Prä)(M/P)(A) αὐτῶν(Pr)(G). ὑπάρχει(Prä)(Akt) γὰρ(Pt) εὐθὺς(Adv) γένη(N)
+(62) zu|sein eine|gewisse erste und folgende ihrer. es|gibt denn sogleich Gattungen
+(63) ἔχον(Prä)(Akt)(N) τὸ(Art)(A) ὂν(Prä)(Akt)(A) καὶ(Kon) τὸ(Art)(A) ἕν(Pr)(A)· διὸ(Kon) καὶ(Kon) αἱ(Art)(N) ἐπιστῆμαι(N)
+(63) habend das Seiende und das Eine· deshalb auch die Wissenschaften
+(64) ἀκολουθήσουσι(Fu)(Akt) τούτοις(Pr)(D). ἔστι(Prä)(Akt) γὰρ(Pt) ὁ(Art)(N) φιλόσοφος(N) ὥσπερ(Kon) ὁ(Art)(N) μαθηματικὸς(Adj)(N) λεγόμενος(Prä)(M/P)(N)·
+(64) werden|folgen diesen. ist denn der Philosoph so|wie der Mathematiker genannt·
+(65) καὶ(Kon) γὰρ(Pt) αὕτη(Pr)(N) ἔχει(Prä)(Akt) μέρη(A), καὶ(Kon) πρώτη(Adj)(Sup)(N) τις(Pr)(N) καὶ(Kon) δευτέρα(Adj)(N)
+(65) und denn diese hat Teile, und erste eine und zweite
+(66) ἔστιν(Prä)(Akt) ἐπιστήμη(N) καὶ(Kon) ἄλλαι(Adj)(N) ἐφεξῆς(Adv) ἐν(Prp) τοῖς(Art)(D) μαθήμασιν(D). — ἐπεὶ(Kon) δὲ(Pt) μιᾶς(Pr)(G)
+(66) ist Wissenschaft und andere der|Reihe|nach in den Lehr|fächern. — da aber einer
+(67) τἀντικείμενα(Art)(N)(Prä)(M/P)(N) θεωρῆσαι(Aor)(Inf)(Akt), τῷ(Art)(D) δὲ(Pt) ἑνὶ(Pr)(D) ἀντίκειται(Prä)(M/P) πλῆθος(N)— ἀπόφασιν(A) δὲ(Pt) καὶ(Kon) στέρησιν(A)
+(67) die|Entgegengesetzten zu|betrachten, dem aber einem entgegen|steht Menge— Verneinung aber und Entbehrung
+(68) μιᾶς(Pr)(G) ἐστὶ(Prä)(Akt) θεωρῆσαι(Aor)(Inf)(Akt) διὰ(Prp) τὸ(Art)(A) ἀμφοτέρως(Adv) θεωρεῖσθαι(Prä)(M/P)(Inf) τὸ(Art)(A) ἓν(Pr)(A) οὗ(Pr)(G)
+(68) einer ist zu|betrachten durch das in|beiderlei|Weise betrachtet|zu|werden das Eine dessen
+(69) ἡ(Art)(N) ἀπόφασις(N) ἢ(Kon) ἡ(Art)(N) στέρησις(N) (ἢ(Kon) ⟦γὰρ⟧(Pt) ἁπλῶς(Adv) λέγομεν(Prä)(Akt) ὅτι(Kon)
+(69) die Verneinung oder die Entbehrung (oder ja einfach sagen|wir dass
+(70) οὐχ(Pt) ὑπάρχει(Prä)(Akt) ἐκεῖνο(Pr)(N), ἤ(Kon) τινι(Pr)(D) γένει(D)· ἔνθα(Kon) μὲν(Pt) οὖν(Pt) †τῷ(Art)(D)
+(70) nicht besteht jenes, oder irgendeinem Geschlecht· dort zwar nun †dem
+(71) ἑνὶ(Pr)(D) ἡ(Art)(N) διαφορὰ(N) πρόσεστι(Prä)(Akt) παρὰ(Prp) τὸ(Art)(A) ἐν(Prp) τῇ(Art)(D) ἀποφάσει(D)†, ἀπουσία(N)
+(71) einem die Unterschied hinzu|ist neben das in der Verneinung†, Abwesenheit
+(72) γὰρ(Pt) ἡ(Art)(N) ἀπόφασις(N) ἐκείνου(Pr)(G) ἐστίν(Prä)(Akt), ἐν(Prp) δὲ(Pt) τῇ(Art)(D) στερήσει(D) καὶ(Kon)
+(72) denn die Verneinung jenes ist, in aber der Entbehrung und
+(73) ὑποκειμένη(Prä)(M/P)(N) τις(Pr)(N) φύσις(N) γίγνεται(Prä)(M/P) καθʼ(Prp) ἧς(Pr)(G) λέγεται(Prä)(M/P) ἡ(Art)(N) στέρησις(N)) τῷ(Art)(D)
+(73) unterliegend eine Natur wird nach der gesagt|wird die Entbehrung) dem
+(74) δʼ(Pt) ἑνὶ(Pr)(D) πλῆθος(N) ἀντίκειται(Prä)(M/P)— ὥστε(Kon) καὶ(Kon) τἀντικείμενα(Art)(N)(Prä)(M/P)(N) τοῖς(Art)(D) εἰρημένοις(Per)(M/P)(D), τό(Art)(N) τε(Pt)
+(74) aber einem Menge entgegen|steht— so|dass auch die|Entgegengesetzten den Gesagten, das und
+(75) ἕτερον(Adj)(N) καὶ(Kon) ἀνόμοιον(Adj)(N) καὶ(Kon) ἄνισον(Adj)(N) καὶ(Kon) ὅσα(Pr)(N) ἄλλα(Adj)(N) λέγεται(Prä)(M/P) ἢ(Kon)
+(75) anders und unähnlich und ungleich und so|viele andere wird|gesagt oder
+(76) κατὰ(Prp) ταῦτα(Pr)(A) ἢ(Kon) κατὰ(Prp) πλῆθος(A) καὶ(Kon) τὸ(Art)(A) ἕν(Pr)(A), τῆς(Art)(G) εἰρημένης(Per)(M/P)(G)
+(76) nach diese oder nach Menge und das Eine, der genannten
+(77) γνωρίζειν(Prä)(Inf)(Akt) ἐπιστήμης(G)· ὧν(Pr)(G) ἐστὶ(Prä)(Akt) καὶ(Kon) ἡ(Art)(N) ἐναντιότης(N)· διαφορὰ(N) γάρ(Pt) τις(Pr)(N)
+(77) erkennen der|Wissenschaft· deren ist auch die Gegensätzlichkeit· Unterschied denn irgendeine
+(78) ἡ(Art)(N) ἐναντιότης(N), ἡ(Art)(N) δὲ(Pt) διαφορὰ(N) ἑτερότης(N). ὥστʼ(Kon) ἐπειδὴ(Kon) πολλαχῶς(Adv) τὸ(Art)(N)
+(78) die Gegensätzlichkeit, die aber Unterschied Andersheit. so|dass da|ja vielfach das
+(79) ἓν(Pr)(N) λέγεται(Prä)(M/P), καὶ(Kon) ταῦτα(Pr)(N) πολλαχῶς(Adv) μὲν(Pt) λεχθήσεται(Fu)(Pas), ὅμως(Adv) δὲ(Pt) μιᾶς(Pr)(G)
+(79) Eine wird|gesagt, und diese vielfach zwar wird|gesagt|werden, dennoch aber einer
+(80) ἅπαντά(Adj)(A) ἐστι(Prä)(Akt) γνωρίζειν(Prä)(Inf)(Akt)· οὐ(Pt) γὰρ(Pt) εἰ(Kon) πολλαχῶς(Adv), ἑτέρας(Adj)(A), ἀλλʼ(Kon) εἰ(Kon)
+(80) alles ist erkennen· nicht denn wenn vielfach, andere, sondern wenn
+(81) μήτε(Kon) καθʼ(Prp) ἓν(Pr)(A) μήτε(Kon) πρὸς(Prp) ἓν(Pr)(A) οἱ(Art)(N) λόγοι(N) ἀναφέρονται(Prä)(M/P). ἐπεὶ(Kon)
+(81) weder gemäß einem noch zu einem die Gründe beziehen|sich. da
+(82) δὲ(Pt) πάντα(Adj)(N) πρὸς(Prp) τὸ(Art)(A) πρῶτον(Adj)(Sup)(A) ἀναφέρεται(Prä)(M/P), οἷον(Kon) ὅσα(Pr)(N) ἓν(Pr)(N) λέγεται(Prä)(M/P)
+(82) aber alles zu das Erste wird|bezogen, zum|Beispiel so|viele Eine wird|gesagt
+(83) πρὸς(Prp) τὸ(Art)(A) πρῶτον(Adj)(Sup)(A) ἕν(Pr)(A), ὡσαύτως(Adv) φατέον(Adj)(N) καὶ(Kon) περὶ(Prp) ταὐτοῦ(Adj)(G) καὶ(Kon)
+(83) zu das erste Eine, ebenso zu|sagen auch über des|Selben und
+(84) ἑτέρου(Adj)(G) καὶ(Kon) τῶν(Art)(G) ἐναντίων(Adj)(G) ἔχειν(Prä)(Inf)(Akt)· ὥστε(Kon) διελόμενον(Aor)(M/P)(A) ποσαχῶς(Adv) λέγεται(Prä)(M/P) ἕκαστον(Adj)(A),
+(84) des|anderen und der Gegenteile zu|haben· so|dass abgegrenzt in|wie|vielerlei wird|gesagt jedes|einzelne,
+(85) οὕτως(Adv) ἀποδοτέον(Adj)(N) πρὸς(Prp) τὸ(Art)(A) πρῶτον(Adj)(Sup)(A) ἐν(Prp) ἑκάστῃ(Adj)(D) κατηγορίᾳ(D) πῶς(Adv) πρὸς(Prp)
+(85) so zu|geben zu das Erste in jeder Kategorie wie zu
+(86) ἐκεῖνο(Pr)(A) λέγεται(Prä)(M/P)· τὰ(Art)(N) μὲν(Pt) γὰρ(Pt) τῷ(Art)(D) ἔχειν(Prä)(Inf)(Akt) ἐκεῖνο(Pr)(A) τὰ(Art)(N) δὲ(Pt)
+(86) jenes wird|gesagt· die zwar denn durch|das Haben jenes die aber
+(87) τῷ(Art)(D) ποιεῖν(Prä)(Inf)(Akt) τὰ(Art)(N) δὲ(Pt) κατʼ(Prp) ἄλλους(Adj)(A) λεχθήσεται(Fu)(Pas) τοιούτους(Adj)(A) τρόπους(A). — φανερὸν(Adj)(N) οὖν(Pt)
+(87) durch|das Tun die aber nach andere wird|gesagt|werden solche Weisen. — offenbar also
+(88) ὅπερ(Pr)(N) ἐν(Prp) ταῖς(Art)(D) ἀπορίαις(D) ἐλέχθη(Aor)(Pas) ὅτι(Kon) μιᾶς(Pr)(G) περὶ(Prp) τούτων(Pr)(G) καὶ(Kon)
+(88) was in den Schwierigkeiten wurde|gesagt dass einer über dieser und
+(89) τῆς(Art)(G) οὐσίας(G) ἐστὶ(Prä)(Akt) λόγον(A) ἔχειν(Prä)(Inf)(Akt) (τοῦτο(Pr)(N) δʼ(Pt) ἦν(Imp)(Akt) ἓν(Pr)(N) τῶν(Art)(G)
+(89) der Substanz ist Rede zu|haben (dies aber war eins der
+(90) ἐν(Prp) τοῖς(Art)(D) ἀπορήμασιν(D)), καὶ(Kon) ἔστι(Prä)(Akt) τοῦ(Art)(G) φιλοσόφου(G) περὶ(Prp) πάντων(Adj)(G) δύνασθαι(Prä)(M/P)(Inf)
+(90) in den Problem|fragen), und ist des Philosophen über aller vermögen|zu
+(91) θεωρεῖν(Prä)(Inf)(Akt).
+(91) betrachten.
+== St. 1004b ==
+(93) εἰ(Kon) γὰρ(Pt) μὴ(Pt) τοῦ(Art)(G) φιλοσόφου(G), τίς(Pr)(N) ἔσται(Fu)(Akt) ὁ(Art)(N) ἐπισκεψόμενος(Fu)(Med)(N) εἰ(Kon)
+(93) wenn denn nicht des Philosophen, wer wird|sein der untersuchen|werdende ob
+(94) ταὐτὸ(Adj)(N) Σωκράτης(N) καὶ(Kon) Σωκράτης(N) καθήμενος(Prä)(M/P)(N), ἢ(Kon) εἰ(Kon) ἓν(Pr)(N) ἑνὶ(Pr)(D) ἐναντίον(Adj)(N),
+(94) dasselbe Sokrates und Sokrates sitzend, oder ob eins einem entgegen,
+(95) ἢ(Kon) τί(Pr)(N) ἐστι(Prä)(Akt) τὸ(Art)(N) ἐναντίον(Adj)(N) ἢ(Kon) ποσαχῶς(Adv) λέγεται(Prä)(M/P); ὁμοίως(Adv) δὲ(Pt)
+(95) oder was ist das Entgegengesetzte oder in|wie|vielerlei wird|gesagt; gleichermaßen aber
+(96) καὶ(Kon) περὶ(Prp) τῶν(Art)(G) ἄλλων(Adj)(G) τῶν(Art)(G) τοιούτων(Adj)(G). ἐπεὶ(Kon) οὖν(Pt) τοῦ(Art)(G) ἑνὸς(Pr)(G)
+(96) auch über der anderen der solchen. da nun des Einen
+(97) ᾗ(Kon) ἓν(Pr)(N) καὶ(Kon) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G) ᾗ(Kon) ὂν(Prä)(Akt)(N) ταῦτα(Pr)(N) καθʼ(Prp) αὑτά(Pr)(A)
+(97) insofern eins und des Seienden insofern seiend diese nach sich|selbst
+(98) ἐστι(Prä)(Akt) πάθη(N), ἀλλʼ(Kon) οὐχ(Pt) ᾗ(Kon) ἀριθμοὶ(N) ἢ(Kon) γραμμαὶ(N) ἢ(Kon) πῦρ(N),
+(98) sind Eigenschaften, sondern nicht insofern Zahlen oder Linien oder Feuer,
+(99) δῆλον(Adj)(N) ὡς(Kon) ἐκείνης(Pr)(G) τῆς(Art)(G) ἐπιστήμης(G) καὶ(Kon) τί(Pr)(A) ἐστι(Prä)(Akt) γνωρίσαι(Aor)(Inf)(Akt) καὶ(Kon)
+(99) klar dass jener der Wissenschaft und was ist zu|erkennen und
+(100) τὰ(Art)(A) συμβεβηκότʼ(Per)(Akt)(A) αὐτοῖς(Pr)(D). καὶ(Kon) οὐ(Pt) ταύτῃ(Pr)(D) ἁμαρτάνουσιν(Prä)(Akt) οἱ(Art)(N) περὶ(Prp) αὐτῶν(Pr)(G)
+(100) die Zugekommenen ihnen. und nicht hierin verfehlen die über sie
+(101) σκοπούμενοι(Prä)(M/P)(N) ὡς(Kon) οὐ(Pt) φιλοσοφοῦντες(Prä)(Akt)(N), ἀλλʼ(Kon) ὅτι(Kon) πρότερον(Adv) ἡ(Art)(N) οὐσία(N), περὶ(Prp)
+(101) untersuchend wie nicht philosophierend, sondern dass früher die Substanz, über
+(102) ἧς(Pr)(G) οὐθὲν(Pr)(A) ἐπαΐουσιν(Prä)(Akt), ἐπεὶ(Kon) ὥσπερ(Kon) ἔστι(Prä)(Akt) καὶ(Kon) ἀριθμοῦ(G) ᾗ(Kon) ἀριθμὸς(N)
+(102) welcher nichts verstehen, da so|wie ist auch der|Zahl insofern Zahl
+(103) ἴδια(Adj)(N) πάθη(N), οἷον(Kon) περιττότης(N) ἀρτιότης(N), συμμετρία(N) ἰσότης(N), ὑπεροχὴ(N) ἔλλειψις(N), καὶ(Kon)
+(103) eigene Eigenschaften, zum|Beispiel Ungeradheit Geradheit, Ebenmaß Gleichheit, Übermaß Mangel, und
+(104) ταῦτα(Pr)(N) καὶ(Kon) καθʼ(Prp) αὑτοὺς(Pr)(A) καὶ(Kon) πρὸς(Prp) ἀλλήλους(Pr)(A) ὑπάρχει(Prä)(Akt) τοῖς(Art)(D) ἀριθμοῖς(D)
+(104) dieses auch an sich|selbst und zu einander besteht den Zahlen
+(105) (ὁμοίως(Adv) δὲ(Pt) καὶ(Kon) στερεῷ(Adj)(D) καὶ(Kon) ἀκινήτῳ(Adj)(D) καὶ(Kon) κινουμένῳ(Prä)(M/P)(D) ἀβαρεῖ(Adj)(D) τε(Pt)
+(105) (ähnlich aber auch dem|Festem und dem|Unbewegten und dem|Bewegten dem|Leichten und
+(106) καὶ(Kon) βάρος(A) ἔχοντι(Prä)(Akt)(D) ἔστιν(Prä)(Akt) ἕτερα(Adj)(N) ἴδια(Adj)(N)), οὕτω(Adv) καὶ(Kon) τῷ(Art)(D) ὄντι(Prä)(Akt)(D)
+(106) und Gewicht habendem ist andere eigene), so auch dem Seienden
+(107) ᾗ(Kon) ὂν(Prä)(Akt)(N) ἔστι(Prä)(Akt) τινὰ(Pr)(A) ἴδια(Adj)(A), καὶ(Kon) ταῦτʼ(Pr)(N) ἐστὶ(Prä)(Akt) περὶ(Prp) ὧν(Pr)(G)
+(107) insofern seiend ist einige eigene, und diese ist über deren
+(108) τοῦ(Art)(G) φιλοσόφου(G) ἐπισκέψασθαι(Aor)(Med)(Inf) τὸ(Art)(A) ἀληθές(Adj)(A). σημεῖον(N) δέ(Pt)· οἱ(Art)(N) γὰρ(Pt) διαλεκτικοὶ(Adj)(N)
+(108) des Philosophen zu|untersuchen das Wahre. Zeichen aber· die denn dialektischen
+(109) καὶ(Kon) σοφισταὶ(N) τὸ(Art)(A) αὐτὸ(Adj)(A) μὲν(Pt) ὑποδύονται(Prä)(M/P) σχῆμα(A) τῷ(Art)(D) φιλοσόφῳ(D)· ἡ(Art)(N)
+(109) auch Sophisten das gleiche zwar nehmen|an Gestalt dem Philosophen· die
+(110) γὰρ(Pt) σοφιστικὴ(Adj)(N) φαινομένη(Prä)(M/P)(N) μόνον(Adv) σοφία(N) ἐστί(Prä)(Akt), καὶ(Kon) οἱ(Art)(N) διαλεκτικοὶ(Adj)(N) διαλέγονται(Prä)(M/P)
+(110) denn sophistische scheinend nur Weisheit ist, und die dialektischen unterreden|sich
+(111) περὶ(Prp) ἁπάντων(Adj)(G), κοινὸν(Adj)(N) δὲ(Pt) πᾶσι(Adj)(D) τὸ(Art)(N) ὄν(Prä)(Akt)(N) ἐστιν(Prä)(Akt), διαλέγονται(Prä)(M/P) δὲ(Pt)
+(111) über aller, gemeinsam aber allen das Seiende ist, unterreden|sich aber
+(112) περὶ(Prp) τούτων(Pr)(G) δῆλον(Adj)(N) ὅτι(Kon) διὰ(Prp) τὸ(Art)(A) τῆς(Art)(G) φιλοσοφίας(G) ταῦτα(Pr)(N) εἶναι(Prä)(Inf)(Akt)
+(112) über dieser klar dass wegen das der Philosophie diese zu|sein
+(113) οἰκεῖα(Adj)(N). περὶ(Prp) μὲν(Pt) γὰρ(Pt) τὸ(Art)(A) αὐτὸ(Adj)(A) γένος(A) στρέφεται(Prä)(M/P) ἡ(Art)(N) σοφιστικὴ(Adj)(N)
+(113) eigen. über zwar denn die gleiche Gattung wendet|sich die sophistische
+(114) καὶ(Kon) ἡ(Art)(N) διαλεκτικὴ(Adj)(N) τῇ(Art)(D) φιλοσοφίᾳ(D), ἀλλὰ(Kon) διαφέρει(Prä)(Akt) τῆς(Art)(G) μὲν(Pt) τῷ(Art)(D)
+(114) auch die dialektische der Philosophie, aber unterscheidet|sich der zwar durch|das
+(115) τρόπῳ(D) τῆς(Art)(G) δυνάμεως(G), τῆς(Art)(G) δὲ(Pt) τοῦ(Art)(G) βίου(G) τῇ(Art)(D) προαιρέσει(D)· ἔστι(Prä)(Akt)
+(115) Weise der Kraft, der aber des Lebens der Entscheidung· ist
+(116) δὲ(Pt) ἡ(Art)(N) διαλεκτικὴ(Adj)(N) πειραστικὴ(Adj)(N) περὶ(Prp) ὧν(Pr)(G) ἡ(Art)(N) φιλοσοφία(N) γνωριστική(Adj)(N), ἡ(Art)(N)
+(116) aber die dialektische prüfend über deren die Philosophie erkennend, die
+(117) δὲ(Pt) σοφιστικὴ(Adj)(N) φαινομένη(Prä)(M/P)(N), οὖσα(Prä)(Akt)(N) δʼ(Pt) οὔ(Pt). ἔτι(Adv) τῶν(Art)(G) ἐναντίων(Adj)(G) ἡ(Art)(N)
+(117) aber sophistische scheinend, seiend aber nicht. noch der Gegenteile die
+(118) ἑτέρα(Adj)(N) συστοιχία(N) στέρησις(N), καὶ(Kon) πάντα(N) ἀνάγεται(Prä)(M/P) εἰς(Prp) τὸ(Art)(A) ὂν(Prä)(Akt)(A) καὶ(Kon)
+(118) andere Reihe Entbehrung, und alles wird|zurückgeführt in das Seiende und
+(119) τὸ(Art)(A) μὴ(Pt) ὄν(Prä)(Akt)(A), καὶ(Kon) εἰς(Prp) ἓν(Pr)(A) καὶ(Kon) πλῆθος(A), οἷον(Kon) στάσις(N)
+(119) das nicht Seiende, und in eins und Vielheit, zum|Beispiel Ruhe
+(120) τοῦ(Art)(G) ἑνὸς(Pr)(G) κίνησις(N) δὲ(Pt) τοῦ(Art)(G) πλήθους(G)· τὰ(Art)(N) δʼ(Pt) ὄντα(Prä)(Akt)(N) καὶ(Kon)
+(120) des Einen Bewegung aber der Vielheit· die aber seienden und
+(121) τὴν(Art)(A) οὐσίαν(A) ὁμολογοῦσιν(Prä)(Akt) ἐξ(Prp) ἐναντίων(Adj)(G) σχεδὸν(Adv) ἅπαντες(Adj)(N) συγκεῖσθαι(Prä)(M/P)(Inf)· πάντες(Adj)(N) γοῦν(Pt)
+(121) die Substanz geben|zu aus Gegenteilen beinahe alle zusammen|gesetzt|zu|sein· alle wenigstens
+(122) τὰς(Art)(A) ἀρχὰς(A) ἐναντίας(Adj)(A) λέγουσιν(Prä)(Akt)· οἱ(Art)(N) μὲν(Pt) γὰρ(Pt) περιττὸν(Adj)(A) καὶ(Kon) ἄρτιον(Adj)(A),
+(122) die Anfänge entgegengesetzten sagen· die zwar denn ungerade und gerade,
+(123) οἱ(Art)(N) δὲ(Pt) θερμὸν(Adj)(A) καὶ(Kon) ψυχρόν(Adj)(A), οἱ(Art)(N) δὲ(Pt) πέρας(A) καὶ(Kon) ἄπειρον(Adj)(A),
+(123) die aber warm und kalt, die aber Grenze und Unendliche,
+(124) οἱ(Art)(N) δὲ(Pt) φιλίαν(A) καὶ(Kon) νεῖκος(A). πάντα(N) δὲ(Pt) καὶ(Kon) τἆλλα(Art)(N)(Adj)(N) ἀναγόμενα(Prä)(M/P)(N)
+(124) die aber Freundschaft und Streit. alles aber und die|anderen|Dinge zurück|geführt|werdend
+(125) φαίνεται(Prä)(M/P) εἰς(Prp) τὸ(Art)(A) ἓν(Pr)(A) καὶ(Kon) πλῆθος(A) (εἰλήφθω(Per)(Pas)(Imv) γὰρ(Pt) ἡ(Art)(N) ἀναγωγὴ(N)
+(125) scheint in das Eine und Vielheit (es|sei|gesetzt denn die Zurück|führung
+(126) ἡμῖν(Pr)(D)),
+(126) uns),
+== St. 1005a ==
+(128) αἱ(Art)(N) δʼ(Pt) ἀρχαὶ(N) καὶ(Kon) παντελῶς(Adv) αἱ(Art)(N) παρὰ(Prp) τῶν(Art)(G) ἄλλων(Adj)(G) ὡς(Kon)
+(128) die aber Anfänge auch ganz die von den anderen wie
+(129) εἰς(Prp) γένη(A) ταῦτα(Pr)(A) πίπτουσιν(Prä)(Akt). φανερὸν(Adj)(N) οὖν(Pt) καὶ(Kon) ἐκ(Prp) τούτων(Pr)(G) ὅτι(Kon)
+(129) in Gattungen diese fallen. klar nun auch aus diesen dass
+(130) μιᾶς(Adj)(G) ἐπιστήμης(G) τὸ(Art)(A) ὂν(Prä)(Akt)(A) ᾗ(Kon) ὂν(Prä)(Akt)(A) θεωρῆσαι(Aor)(Akt)(Inf). πάντα(Adj)(N) γὰρ(Pt) ἢ(Kon)
+(130) einer Wissenschaft das Seiende insofern seiend zu|betrachten. alles denn entweder
+(131) ἐναντία(Adj)(N) ἢ(Kon) ἐξ(Prp) ἐναντίων(Adj)(G), ἀρχαὶ(N) δὲ(Pt) τῶν(Art)(G) ἐναντίων(Adj)(G) τὸ(Art)(N) ἓν(Pr)(N)
+(131) Gegensätzliche oder aus Gegenteilen, Anfänge aber der Gegenteile das Eine
+(132) καὶ(Kon) πλῆθος(A). ταῦτα(Pr)(N) δὲ(Pt) μιᾶς(Adj)(G) ἐπιστήμης(G), εἴτε(Kon) καθʼ(Prp) ἓν(Pr)(A) λέγεται(Prä)(M/P)
+(132) und Vielheit. dieses aber einer Wissenschaft, sei|es gemäß einem wird|gesagt
+(133) εἴτε(Kon) μή(Pt), ὥσπερ(Kon) ἴσως(Adv) ἔχει(Prä)(Akt) καὶ(Kon) τἀληθές(Art)(N)(Adj)(N). ἀλλʼ(Kon) ὅμως(Adv) εἰ(Kon)
+(133) sei|es nicht, so|wie vielleicht verhält|sich auch das|Wahre. aber dennoch wenn
+(134) καὶ(Kon) πολλαχῶς(Adv) λέγεται(Prä)(M/P) τὸ(Art)(N) ἕν(Pr)(N), πρὸς(Prp) τὸ(Art)(A) πρῶτον(Adj)(A) τἆλλα(Art)(N)(Adj)(N) λεχθήσεται(Fu)(Pas)
+(134) auch vielfach wird|gesagt das Eine, auf das Erste die|anderen|Dinge wird|gesagt|werden
+(135) καὶ(Kon) τὰ(Art)(N) ἐναντία(Adj)(N) ὁμοίως(Adv), καὶ(Kon) διὰ(Prp) τοῦτο(Pr)(A) καὶ(Kon) εἰ(Kon) μὴ(Pt)
+(135) auch die Gegenteiligen ähnlich, und wegen dieses auch wenn nicht
+(136) ἔστι(Prä)(Akt) τὸ(Art)(N) ὂν(Prä)(Akt)(N) ἢ(Kon) τὸ(Art)(N) ἓν(Pr)(N) καθόλου(Adv) καὶ(Kon) ταὐτὸ(Adj)(N) ἐπὶ(Prp)
+(136) ist das Seiende oder das Eine allgemein und dasselbe bei
+(137) πάντων(Adj)(G) ἢ(Kon) χωριστόν(Adj)(N), ὥσπερ(Kon) ἴσως(Adv) οὐκ(Pt) ἔστιν(Prä)(Akt) ἀλλὰ(Kon) τὰ(Art)(N) μὲν(Pt)
+(137) aller oder getrennt, so|wie vielleicht nicht ist sondern die zwar
+(138) πρὸς(Prp) ἓν(Pr)(A) τὰ(Art)(N) δὲ(Pt) τῷ(Art)(D) ἐφεξῆς(Adv). καὶ(Kon) διὰ(Prp) τοῦτο(Pr)(A) οὐ(Pt)
+(138) auf eins die aber dem Folgenden. und wegen dieses nicht
+(139) τοῦ(Art)(G) γεωμέτρου(G) θεωρῆσαι(Aor)(Akt)(Inf) τί(Pr)(A) τὸ(Art)(N) ἐναντίον(Adj)(N) ἢ(Kon) τέλειον(Adj)(N) ἢ(Kon) ἓν(Pr)(N)
+(139) des Geometers zu|betrachten was das Entgegengesetzte oder Vollendete oder Eins
+(140) ἢ(Kon) ὂν(Prä)(Akt)(N) ἢ(Kon) ταὐτὸν(Adj)(N) ἢ(Kon) ἕτερον(Adj)(N), ἀλλʼ(Kon) ἢ(Kon) ἐξ(Prp) ὑποθέσεως(G).
+(140) oder Seiendes oder Dasselbe oder Andere, sondern nur aus Voraussetzung.
+(141) ὅτι(Kon) μὲν(Pt) οὖν(Pt) μιᾶς(Adj)(G) ἐπιστήμης(G) τὸ(Art)(A) ὂν(Prä)(Akt)(A) ᾗ(Kon) ὂν(Prä)(Akt)(A) θεωρῆσαι(Aor)(Akt)(Inf)
+(141) dass zwar nun einer Wissenschaft das Seiende insofern seiend zu|betrachten
+(142) καὶ(Kon) τὰ(Art)(N) ὑπάρχοντα(Prä)(Akt)(N) αὐτῷ(Pr)(D) ᾗ(Kon) ὄν(Prä)(Akt)(N), δῆλον(Adj)(N), καὶ(Kon) ὅτι(Kon) οὐ(Pt)
+(142) auch die vorhandenen ihm insofern seiend, klar, und dass nicht
+(143) μόνον(Adv) τῶν(Art)(G) οὐσιῶν(G) ἀλλὰ(Kon) καὶ(Kon) τῶν(Art)(G) ὑπαρχόντων(Prä)(Akt)(G) ἡ(Art)(N) αὐτὴ(Adj)(N) θεωρητική(Adj)(N),
+(143) nur der Substanzen sondern auch der Vorhandenen die gleiche Betrachtung,
+(144) τῶν(Art)(G) τε(Pt) εἰρημένων(Per)(M/P)(G) καὶ(Kon) περὶ(Prp) προτέρου(Adj)(G) καὶ(Kon) ὑστέρου(Adj)(G), καὶ(Kon) γένους(G)
+(144) der und Gesagten auch über früheren und späteren, und Gattung
+(145) καὶ(Kon) εἴδους(G), καὶ(Kon) ὅλου(G) καὶ(Kon) μέρους(G) καὶ(Kon) τῶν(Art)(G) ἄλλων(Adj)(G) τῶν(Art)(G)
+(145) und Art, und Ganzen und Teils und der anderen der
+(146) τοιούτων(Adj)(G).
+(146) solchen.
+== St. 1005b ==
+= § 3 =
+(149) λεκτέον(Adj)(N) δὲ(Pt) πότερον(Pr)(A) μιᾶς(Adj)(G) ἢ(Kon) ἑτέρας(Adj)(G) ἐπιστήμης(G) περί(Prp) τε(Pt) τῶν(Art)(G)
+(149) zu|sagen aber ob einer oder anderer Wissenschaft über und die
+(150) ἐν(Prp) τοῖς(Art)(D) μαθήμασι(D) καλουμένων(Prä)(M/P)(G) ἀξιωμάτων(G) καὶ(Kon) περὶ(Prp) τῆς(Art)(G) οὐσίας(G). φανερὸν(Adj)(N)
+(150) in den Lehr|fächern genannt|werdenden Axiome und über die Substanz. klar
+(151) δὴ(Pt) ὅτι(Kon) μιᾶς(Adj)(G) τε(Pt) καὶ(Kon) τῆς(Art)(G) τοῦ(Art)(G) φιλοσόφου(G) καὶ(Kon) ἡ(Art)(N)
+(151) ja dass einer und auch der des Philosophen auch die
+(152) περὶ(Prp) τούτων(Pr)(G) ἐστὶ(Prä)(Akt) σκέψις(N)· ἅπασι(Adj)(D) γὰρ(Pt) ὑπάρχει(Prä)(Akt) τοῖς(Art)(D) οὖσιν(Prä)(Akt)(D) ἀλλʼ(Kon)
+(152) über dieser ist Untersuchung· allen denn kommt|zu den Seienden aber
+(153) οὐ(Pt) γένει(D) τινὶ(Pr)(D) χωρὶς(Prp) ἰδίᾳ(Adv) τῶν(Art)(G) ἄλλων(Adj)(G). καὶ(Kon) χρῶνται(Prä)(M/P) μὲν(Pt)
+(153) nicht Geschlecht irgendeinem ohne eigenständig der anderen. und gebrauchen zwar
+(154) πάντες(Adj)(N), ὅτι(Kon) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G) ἐστὶν(Prä)(Akt) ᾗ(Kon) ὄν(Prä)(Akt)(N), ἕκαστον(Pr)(N) δὲ(Pt) τὸ(Art)(N)
+(154) alle, weil des Seienden ist insofern seiend, jedes aber das
+(155) γένος(N) ὄν(Prä)(Akt)(N)· ἐπὶ(Prp) τοσοῦτον(Pr)(A) δὲ(Pt) χρῶνται(Prä)(M/P) ἐφʼ(Prp) ὅσον(Pr)(A) αὐτοῖς(Pr)(D) ἱκανόν(Adj)(A),
+(155) Geschlecht seiend· bis|zu diesem|Maß aber gebrauchen insofern so|weit ihnen ausreicht,
+(156) τοῦτο(Pr)(N) δʼ(Pt) ἔστιν(Prä)(Akt) ὅσον(Pr)(A) ἐπέχει(Prä)(Akt) τὸ(Art)(N) γένος(N) περὶ(Prp) οὗ(Pr)(G) φέρουσι(Prä)(Akt)
+(156) dies aber ist so|viel umfasst das Geschlecht über welches sie|vortragen
+(157) τὰς(Art)(A) ἀποδείξεις(A)· ὥστʼ(Kon) ἐπεὶ(Kon) δῆλον(Adj)(N) ὅτι(Kon) ᾗ(Kon) ὄντα(Prä)(Akt)(N) ὑπάρχει(Prä)(Akt) πᾶσι(Adj)(D)
+(157) die Beweise· so|dass da klar dass insofern seiend zukommt allen
+(158) (τοῦτο(Pr)(N) γὰρ(Pt) αὐτοῖς(Pr)(D) τὸ(Art)(N) κοινόν(Adj)(N)), τοῦ(Art)(G) περὶ(Prp) τὸ(Art)(A) ὂν(Prä)(Akt)(A) ᾗ(Kon)
+(158) (dies denn ihnen das Gemeinsame), des über das Seiende insofern
+(159) ὂν(Prä)(Akt)(N) γνωρίζοντος(Prä)(Akt)(G) καὶ(Kon) περὶ(Prp) τούτων(Pr)(G) ἐστὶν(Prä)(Akt) ἡ(Art)(N) θεωρία(N). διόπερ(Kon) οὐθεὶς(Pr)(N)
+(159) seiend Erkennenden auch über dieses ist die Betrachtung. deshalb niemand
+(160) τῶν(Art)(G) κατὰ(Prp) μέρος(A) ἐπισκοπούντων(Prä)(Akt)(G) ἐγχειρεῖ(Prä)(Akt) λέγειν(Prä)(Akt)(Inf) τι(Pr)(A) περὶ(Prp) αὐτῶν(Pr)(G), εἰ(Kon)
+(160) der nach Teil Untersuchenden unternimmt zu|sagen etwas über sie, ob
+(161) ἀληθῆ(Adj)(A) ἢ(Kon) μή(Pt), οὔτε(Kon) γεωμέτρης(N) οὔτʼ(Kon) ἀριθμητικός(N), ἀλλὰ(Kon) τῶν(Art)(G) φυσικῶν(Adj)(G)
+(161) Wahres oder nicht, weder Geometer noch Arithmetiker, sondern der Natur|forscher
+(162) ἔνιοι(Pr)(N), εἰκότως(Adv) τοῦτο(Pr)(A) δρῶντες(Prä)(Akt)(N)· μόνοι(Adj)(N) γὰρ(Pt) ᾤοντο(Imp)(M/P) περί(Prp) τε(Pt) τῆς(Art)(G)
+(162) einige, mit|Grund dies tuend· allein denn meinten über und der
+(163) ὅλης(Adj)(G) φύσεως(G) σκοπεῖν(Prä)(Akt)(Inf) καὶ(Kon) περὶ(Prp) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G). ἐπεὶ(Kon) δʼ(Pt) ἔστιν(Prä)(Akt)
+(163) ganzen Natur zu|betrachten und über das Seienden. da aber ist
+(164) ἔτι(Adv) τοῦ(Art)(G) φυσικοῦ(Adj)(G) τις(Pr)(N) ἀνωτέρω(Adv)(Kmp) (ἓν(Pr)(N) γάρ(Pt) τι(Pr)(N) γένος(N) τοῦ(Art)(G)
+(164) noch des Physikers einer höher (eins denn gewisses Geschlecht des
+(165) ὄντος(Prä)(Akt)(G) ἡ(Art)(N) φύσις(N)) , τοῦ(Art)(G) καθόλου(Adv) καὶ(Kon) τοῦ(Art)(G) περὶ(Prp) τὴν(Art)(A)
+(165) Seienden die Natur) , des Allgemeinen und des über die
+(166) πρώτην(Adj)(A) οὐσίαν(A) θεωρητικοῦ(Adj)(G) καὶ(Kon) ἡ(Art)(N) περὶ(Prp) τούτων(Pr)(G) ἂν(Pt) εἴη(Prä)(Akt)(Op) σκέψις(N)·
+(166) erste Substanz Erkennenden und die über dieses wohl wäre Untersuchung·
+(167) ἔστι(Prä)(Akt) δὲ(Pt) σοφία(N) τις(Pr)(N) καὶ(Kon) ἡ(Art)(N) φυσική(Adj)(N), ἀλλʼ(Kon) οὐ(Pt) πρώτη(Adj)(N).
+(167) ist aber Weisheit eine auch die Physik, aber nicht erste.
+(168) ὅσα(Pr)(N) δʼ(Pt) ἐγχειροῦσι(Prä)(Akt) τῶν(Art)(G) λεγόντων(Prä)(Akt)(G) τινὲς(Pr)(N) περὶ(Prp) τῆς(Art)(G) ἀληθείας(G) ὃν(Pr)(A)
+(168) so|vieles aber unternehmen der Sprechenden einige über die Wahrheit welchen
+(169) τρόπον(A) δεῖ(Prä)(Akt) ἀποδέχεσθαι(Prä)(M/P)(Inf), διʼ(Prp) ἀπαιδευσίαν(A) τῶν(Art)(G) ἀναλυτικῶν(Adj)(G) τοῦτο(Pr)(A) δρῶσιν(Prä)(Akt)· δεῖ(Prä)(Akt)
+(169) Weise muss annehmen, wegen Un|gebildetheit der Analytik dies tun· muss
+(170) γὰρ(Pt) περὶ(Prp) τούτων(Pr)(G) ἥκειν(Prä)(Akt)(Inf) προεπισταμένους(Per)(M/P)(A) ἀλλὰ(Kon) μὴ(Pt) ἀκούοντας(Prä)(Akt)(A) ζητεῖν. — ὅτι(Prä)(Akt)(Inf) μὲν(Pt)
+(170) denn über dieses zu|kommen vorher|Kundige statt nicht Hörende zu|suchen. — dass zwar
+(171) οὖν(Pt) τοῦ(Art)(G) φιλοσόφου(G), καὶ(Kon) τοῦ(Art)(G) περὶ(Prp) πάσης(Adj)(G) τῆς(Art)(G) οὐσίας(G) θεωροῦντος(Prä)(Akt)(G)
+(171) nun des Philosophen, auch des über ganzen der Substanz Betrachtenden
+(172) ᾗ(Kon) πέφυκεν(Per)(Akt), καὶ(Kon) περὶ(Prp) τῶν(Art)(G) συλλογιστικῶν(Adj)(G) ἀρχῶν(G) ἐστὶν(Prä)(Akt) ἐπισκέψασθαι(Aor)(Med)(Inf), δῆλον(Adj)(N)·
+(172) insofern von|Natur|ist, auch über die Schluss|regeln Anfänge ist zu|untersuchen, klar·
+(173) προσήκει(Prä)(Akt) δὲ(Pt) τὸν(Art)(A) μάλιστα(Adv)(Sup) γνωρίζοντα(Prä)(Akt)(A) περὶ(Prp) ἕκαστον(Pr)(A) γένος(A) ἔχειν(Prä)(Akt)(Inf) λέγειν(Prä)(Akt)(Inf)
+(173) ziemt aber den am|meisten Erkennenden über jedes Geschlecht zu|haben zu|sagen
+(174) τὰς(Art)(A) βεβαιοτάτας(Adj)(Sup)(A) ἀρχὰς(A) τοῦ(Art)(G) πράγματος(G), ὥστε(Kon) καὶ(Kon) τὸν(Art)(A) περὶ(Prp) τῶν(Art)(G)
+(174) die sichersten Anfänge der Sache, so|dass auch den über die
+(175) ὄντων(Prä)(Akt)(G) ᾗ(Kon) ὄντα(Prä)(Akt)(A) τὰς(Art)(A) πάντων(Adj)(G) βεβαιοτάτας(Adj)(Sup)(A). ἔστι(Prä)(Akt) δʼ(Pt) οὗτος(Pr)(N) ὁ(Art)(N)
+(175) Seienden insofern seiend die aller sichersten. ist aber dieser der
+(176) φιλόσοφος(N). βεβαιοτάτη(Adj)(Sup)(N) δʼ(Pt) ἀρχὴ(N) πασῶν(Adj)(G) περὶ(Prp) ἣν(Pr)(A) διαψευσθῆναι(Aor)(Pas)(Inf) ἀδύνατον(Adj)(N)· γνωριμωτάτην(Adj)(Sup)(A)
+(176) Philosoph. sicherste aber Anfang aller über welche widerlegt|werden unmöglich· bekannteste
+(177) τε(Pt) γὰρ(Pt) ἀναγκαῖον(Adj) εἶναι(Prä)(Inf)(Akt) τὴν(Art)(A) τοιαύτην(Adj)(A) (περὶ(Prp) γὰρ(Pt) ἃ(Pr)(A) μὴ(Pt)
+(177) und denn notwendig zu|sein die solche (über denn welche|Dinge nicht
+(178) γνωρίζουσιν(Prä)(Akt) ἀπατῶνται(Prä)(M/P) πάντες(Adj)(N)) καὶ(Kon) ἀνυπόθετον(Adj)(N). ἣν(Pr)(A) γὰρ(Pt) ἀναγκαῖον(Adj) ἔχειν(Prä)(Inf)(Akt) τὸν(Art)(A)
+(178) erkennen werden|getäuscht alle) und voraussetzungslos. welche denn notwendig zu|haben den
+(179) ὁτιοῦν(Pr)(A) ξυνιέντα(Prä)(Akt)(A) τῶν(Art)(G) ὄντων(Prä)(Akt)(G), τοῦτο(Pr)(N) οὐχ(Pt) ὑπόθεσις(N)· ὃ(Pr)(A) δὲ(Pt) γνωρίζειν(Prä)(Inf)(Akt)
+(179) irgend|etwas verstehend der Seienden, dieses nicht Hypothese· was aber erkennen
+(180) ἀναγκαῖον(Adj) τῷ(Art)(D) ὁτιοῦν(Pr)(D) γνωρίζοντι(Prä)(Akt)(D), καὶ(Kon) ἥκειν(Prä)(Inf)(Akt) ἔχοντα(Prä)(Akt)(A) ἀναγκαῖον(Adj). ὅτι(Kon) μὲν(Pt)
+(180) notwendig dem irgendeinem erkennenden, und kommen habend notwendig. dass zwar
+(181) οὖν(Pt) βεβαιοτάτη(Adj)(Sup)(N) ἡ(Art)(N) τοιαύτη(Adj)(N) πασῶν(Adj)(G) ἀρχή(N), δῆλον(Adj)(N)· τίς(Pr)(N) δʼ(Pt) ἔστιν(Prä)(Akt)
+(181) nun sicherste die solche aller Anfang, klar· welche aber ist
+(182) αὕτη(Pr)(N), μετὰ(Prp) ταῦτα(Pr)(A) λέγωμεν(Prä)(Akt)(Knj). τὸ(Art)(N) γὰρ(Pt) αὐτὸ(Adj)(N) ἅμα(Adv) ὑπάρχειν(Prä)(Inf)(Akt) τε(Pt)
+(182) diese, nach diesen sagen|wir. das denn gleiche zugleich bestehen und
+(183) καὶ(Kon) μὴ(Pt) ὑπάρχειν(Prä)(Inf)(Akt) ἀδύνατον(Adj)(N) τῷ(Art)(D) αὐτῷ(Pr)(D) καὶ(Kon) κατὰ(Prp) τὸ(Art)(A) αὐτό(Adj)(A)
+(183) und nicht bestehen unmöglich dem selben und gemäß das Selbe
+(184) (καὶ(Kon) ὅσα(Pr)(N) ἄλλα(Adj)(N) προσδιορισαίμεθʼ(Aor)(Med)(Op) ἄν(Pt), ἔστω(Prä)(Akt)(Imv) προσδιωρισμένα(Per)(M/P)(N) πρὸς(Prp) τὰς(Art)(A) λογικὰς(Adj)(A)
+(184) (und so|vieles|wie andere genau|bestimmen|würden|wir wohl, sei abgegrenzt hinsichtlich der logischen
+(185) δυσχερείας(G))· αὕτη(Pr)(N) δὴ(Pt) πασῶν(Adj)(G) ἐστὶ(Prä)(Akt) βεβαιοτάτη(Adj)(Sup)(N) τῶν(Art)(G) ἀρχῶν(G)· ἔχει(Prä)(Akt) γὰρ(Pt)
+(185) Schwierigkeiten)· diese ja aller ist sicherste der Anfänge· hat denn
+(186) τὸν(Art)(A) εἰρημένον(Per)(M/P)(A) διορισμόν(A). ἀδύνατον(Adj)(N) γὰρ(Pt) ὁντινοῦν(Pr)(A) ταὐτὸν(Adj)(A) ὑπολαμβάνειν(Prä)(Inf)(Akt) εἶναι(Prä)(Inf)(Akt) καὶ(Kon)
+(186) den gesagten Bestimmung. unmöglich denn irgendeinen dasselbe anzunehmen zu|sein und
+(187) μὴ(Pt) εἶναι(Prä)(Inf)(Akt), καθάπερ(Kon) τινὲς(Pr)(N) οἴονται(Prä)(M/P) λέγειν(Prä)(Inf)(Akt) Ἡράκλειτον(A). οὐκ(Pt) ἔστι(Prä)(Akt) γὰρ(Pt)
+(187) nicht zu|sein, so|wie einige meinen sagen Heraklit. nicht ist denn
+(188) ἀναγκαῖον(Adj)(N), ἅ(Pr)(A) τις(Pr)(N) λέγει(Prä)(Akt), ταῦτα(Pr)(A) καὶ(Kon) ὑπολαμβάνειν(Prä)(Inf)(Akt)· εἰ(Kon) δὲ(Pt) μὴ(Pt)
+(188) notwendig, was jemand sagt, dieses auch anzunehmen· wenn aber nicht
+(189) ἐνδέχεται(Prä)(M/P) ἅμα(Adv) ὑπάρχειν(Prä)(Inf)(Akt) τῷ(Art)(D) αὐτῷ(Pr)(D) τἀναντία(N) (προσδιωρίσθω(Aor)(Pas)(Imv) δʼ(Pt) ἡμῖν(Pr)(D) καὶ(Kon)
+(189) ist|möglich zugleich zu|bestehen dem selben die|Gegenteile (zusätzlich|bestimmt|werde aber uns auch
+(190) ταύτῃ(Pr)(D) τῇ(Art)(D) προτάσει(D) τὰ(Art)(N) εἰωθότα(Per)(Akt)(N)), ἐναντία(Adj)(N) δʼ(Pt) ἐστὶ(Prä)(Akt) δόξα(N) δόξῃ(D)
+(190) dieser der Voraussetzung die Gewohnten), entgegengesetzt aber ist Meinung Meinung
+(191) ἡ(Art)(N) τῆς(Art)(G) ἀντιφάσεως(G), φανερὸν(Adj)(N) ὅτι(Kon) ἀδύνατον(Adj)(N) ἅμα(Adv) ὑπολαμβάνειν(Prä)(Inf)(Akt) τὸν(Art)(A) αὐτὸν(Adj)(A)
+(191) die des Widerspruchs, offenbar dass unmöglich zugleich anzunehmen den selben
+(192) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) τὸ(Art)(A) αὐτό(Adj)(A)· ἅμα(Adv) γὰρ(Pt) ἂν(Pt) ἔχοι(Prä)(Akt)(Op)
+(192) zu|sein und nicht zu|sein das Selbe· zugleich denn wohl hätte
+(193) τὰς(Art)(A) ἐναντίας(Adj)(A) δόξας(A) ὁ(Art)(N) διεψευσμένος(Per)(M/P)(N) περὶ(Prp) τούτου(Pr)(G). διὸ(Kon) πάντες(Adj)(N) οἱ(Art)(N)
+(193) die entgegengesetzten Meinungen der widerlegte über dieses. deshalb alle die
+(194) ἀποδεικνύντες(Prä)(Akt)(N) εἰς(Prp) ταύτην(Pr)(A) ἀνάγουσιν(Prä)(Akt) ἐσχάτην(Adj)(A) δόξαν(A)· φύσει(D) γὰρ(Pt) ἀρχὴ(N) καὶ(Kon)
+(194) beweisend auf diese führen|zurück letzten Meinung· von|Natur denn Anfang und
+(195) τῶν(Art)(G) ἄλλων(Adj)(G) ἀξιωμάτων(G) αὕτη(Pr)(N) πάντων(Pr)(G).
+(195) der anderen Axiome diese aller.
+== St. 1006a ==
+= § 4 =
+(198) εἰσὶ(Prä)(Akt) δέ(Pt) τινες(Pr)(N) οἵ(Pr)(N), καθάπερ(Kon) εἴπομεν(Aor)(Akt), αὐτοί(Pr)(N) τε(Pt) ἐνδέχεσθαί(Prä)(M/P)(Inf) φασι(Prä)(Akt)
+(198) es|sind aber einige die, so|wie sagten|wir, selbst und möglich|sein sagen
+(199) τὸ(Art)(N) αὐτὸ(Adj)(N) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) μὴ(Pt) εἶναι(Prä)(Inf)(Akt), καὶ(Kon) ὑπολαμβάνειν(Prä)(Inf)(Akt) οὕτως(Adv). χρῶνται(Prä)(M/P)
+(199) das Gleiche zu|sein und nicht zu|sein, und anzunehmen so. bedienen|sich
+(200) δὲ(Pt) τῷ(Art)(D) λόγῳ(D) τούτῳ(Pr)(D) πολλοὶ(Adj)(N) καὶ(Kon) τῶν(Art)(G) περὶ(Prp) φύσεως(G). ἡμεῖς(Pr)(N)
+(200) aber dem Wort diesem viele und der über Natur. wir
+(201) δὲ(Pt) νῦν(Adv) εἰλήφαμεν(Per)(Akt) ὡς(Kon) ἀδυνάτου(Adj)(G) ὄντος(Prä)(Akt)(G) ἅμα(Adv) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) μὴ(Pt)
+(201) aber nun wir|haben|angenommen als|dass des|Unmöglichen seienden zugleich zu|sein und nicht
+(202) εἶναι(Prä)(Inf)(Akt), καὶ(Kon) διὰ(Prp) τούτου(Pr)(G) ἐδείξαμεν(Aor)(Akt) ὅτι(Kon) βεβαιοτάτη(Adj)(Sup)(N) αὕτη(Pr)(N) τῶν(Art)(G) ἀρχῶν(G)
+(202) zu|sein, und durch dieses zeigten|wir dass sicherste diese der Anfänge
+(203) πασῶν(Adj)(G). ἀξιοῦσι(Prä)(Akt) δὴ(Pt) καὶ(Kon) τοῦτο(Pr)(A) ἀποδεικνύναι(Prä)(Inf)(Akt) τινὲς(Pr)(N) διʼ(Prp) ἀπαιδευσίαν(A)· ἔστι(Prä)(Akt)
+(203) aller. fordern ja auch dieses zu|beweisen einige aus Ungebildetheit· ist
+(204) γὰρ(Pt) ἀπαιδευσία(N) τὸ(Art)(N) μὴ(Pt) γιγνώσκειν(Prä)(Inf)(Akt) τίνων(Pr)(G) δεῖ(Prä)(Akt) ζητεῖν(Prä)(Inf)(Akt) ἀπόδειξιν(A) καὶ(Kon)
+(204) denn Ungebildetheit das nicht erkennen welcher|Dinge muss suchen Beweis und
+(205) τίνων(Pr)(G) οὐ(Pt) δεῖ(Prä)(Akt)· ὅλως(Adv) μὲν(Pt) γὰρ(Pt) ἁπάντων(Adj)(G) ἀδύνατον(Adj)(N) ἀπόδειξιν(A) εἶναι(Prä)(Inf)(Akt)
+(205) welcher|Dinge nicht muss· überhaupt zwar denn aller unmöglich Beweis zu|sein
+(206) (εἰς(Prp) ἄπειρον(A) γὰρ(Pt) ἂν(Pt) βαδίζοι(Prä)(Akt)(Op), ὥστε(Kon) μηδʼ(Pt) οὕτως(Adv) εἶναι(Prä)(Inf)(Akt) ἀπόδειξιν(A)),
+(206) (in Unendliche denn wohl würde|gehen, so|dass auch|nicht so zu|sein Beweis),
+(207) εἰ(Kon) δέ(Pt) τινων(Pr)(G) μὴ(Pt) δεῖ(Prä)(Akt) ζητεῖν(Prä)(Inf)(Akt) ἀπόδειξιν(A), τίνα(Pr)(A) ἀξιοῦσιν(Prä)(Akt) εἶναι(Prä)(Inf)(Akt)
+(207) wenn aber einiger nicht muss suchen Beweis, welche fordern zu|sein
+(208) μᾶλλον(Adv)(Kmp) τοιαύτην(Adj)(A) ἀρχὴν(A) οὐκ(Pt) ἂν(Pt) ἔχοιεν(Prä)(Akt)(Op) εἰπεῖν(Aor)(Akt)(Inf). ἔστι(Prä)(Akt) δʼ(Pt) ἀποδεῖξαι(Aor)(Akt)(Inf)
+(208) mehr solche Anfang nicht wohl hätten zu|sagen. ist aber zu|beweisen
+(209) ἐλεγκτικῶς(Adv) καὶ(Kon) περὶ(Prp) τούτου(Pr)(G) ὅτι(Kon) ἀδύνατον(Adj)(N), ἂν(Pt) μόνον(Adj)(A) τι(Pr)(N) λέγῃ(Prä)(Akt)(Knj)
+(209) widerlegend und über dieses dass unmöglich, wohl nur etwas sage
+(210) ὁ(Art)(N) ἀμφισβητῶν(Prä)(Akt)(N)· ἂν(Pt) δὲ(Pt) μηθέν(Pr)(A), γελοῖον(Adj)(N) τὸ(Art)(N) ζητεῖν(Prä)(Inf)(Akt) λόγον(A) πρὸς(Prp)
+(210) der Bestreitende· wohl aber nichts, lächerlich das suchen Rede gegen
+(211) τὸν(Art)(A) μηθενὸς(Pr)(G) ἔχοντα(Prä)(Akt)(A) λόγον(A), ᾗ(Kon) μὴ(Pt) ἔχει(Prä)(Akt)· ὅμοιος(Adj)(N) γὰρ(Pt) φυτῷ(D)
+(211) den keines habenden Rede, insofern nicht hat· ähnlich denn Pflanze
+(212) ὁ(Art)(N) τοιοῦτος(Adj)(N) ᾗ(Kon) τοιοῦτος(Adj)(N) ἤδη(Adv). τὸ(Art)(N) δʼ(Pt) ἐλεγκτικῶς(Adv) ἀποδεῖξαι(Aor)(Akt)(Inf) λέγω(Prä)(Akt)
+(212) der solcher insofern solcher schon. das aber widerlegend zu|beweisen sage|ich
+(213) διαφέρειν(Prä)(Inf)(Akt) καὶ(Kon) τὸ(Art)(N) ἀποδεῖξαι(Aor)(Akt)(Inf), ὅτι(Kon) ἀποδεικνύων(Prä)(Akt)(N) μὲν(Pt) ἂν(Pt) δόξειεν(Aor)(Akt)(Op) αἰτεῖσθαι(Prä)(M/P)(Inf)
+(213) sich|unterscheiden und das zu|beweisen, dass beweisend zwar wohl würde|scheinen zu|fordern
+(214) τὸ(Art)(A) ἐν(Prp) ἀρχῇ(D), ἄλλου(Adj)(G) δὲ(Pt) τοῦ(Art)(G) τοιούτου(Adj)(G) αἰτίου(G) ὄντος(Prä)(Akt)(G) ἔλεγχος(N)
+(214) das im Anfang, eines|anderen aber des solchen Grundes seienden Widerlegung
+(215) ἂν(Pt) εἴη(Prä)(Akt)(Op) καὶ(Kon) οὐκ(Pt) ἀπόδειξις(N). ἀρχὴ(N) δὲ(Pt) πρὸς(Prp) ἅπαντα(Adj)(A) τὰ(Art)(A)
+(215) wohl wäre und nicht Beweis. Anfang aber zu allen den
+(216) τοιαῦτα(Adj)(A) οὐ(Pt) τὸ(Art)(N) ἀξιοῦν(Prä)(Akt)(N) ἢ(Kon) εἶναί(Prä)(Inf)(Akt) τι(Pr)(N) λέγειν(Prä)(Inf)(Akt) ἢ(Kon) μὴ(Pt)
+(216) solchen nicht das fordernde oder zu|sein etwas sagen oder nicht
+(217) εἶναι(Prä)(Inf)(Akt) (τοῦτο(Pr)(N) μὲν(Pt) γὰρ(Pt) τάχʼ(Adv) ἄν(Pt) τις(Pr)(N) ὑπολάβοι(Aor)(Akt)(Op) τὸ(Art)(A) ἐξ(Prp)
+(217) zu|sein (dieses zwar denn vielleicht wohl jemand würde|annehmen das aus
+(218) ἀρχῆς(G) αἰτεῖν(Prä)(Akt)(Inf)), ἀλλὰ(Kon) σημαίνειν(Prä)(Inf)(Akt) γέ(Pt) τι(Pr)(N) καὶ(Kon) αὑτῷ(Pr)(D) καὶ(Kon) ἄλλῳ(Adj)(D)·
+(218) Anfangs zu|fordern), sondern bedeuten ja etwas auch sich|selbst und einem|anderen·
+(219) τοῦτο(Pr)(N) γὰρ(Pt) ἀνάγκη(N), εἴπερ(Kon) λέγοι(Prä)(Akt)(Op) τι(Pr)(N). εἰ(Kon) γὰρ(Pt) μή(Pt), οὐκ(Pt)
+(219) dieses denn notwendig, wenn|wirklich würde|sagen etwas. wenn denn nicht, nicht
+(220) ἂν(Pt) εἴη(Prä)(Akt)(Op) τῷ(Art)(D) τοιούτῳ(Adj)(D) λόγος(N), οὔτʼ(Kon) αὐτῷ(Pr)(D) πρὸς(Prp) αὑτὸν(Pr)(A) οὔτε(Kon)
+(220) wohl wäre dem solchen Rede, weder ihm zu sich|selbst noch
+(221) πρὸς(Prp) ἄλλον(Adj)(A). ἂν(Pt) δέ(Pt) τις(Pr)(N) τοῦτο(Pr)(A) διδῷ(Prä)(Akt)(Knj), ἔσται(Fu)(Akt) ἀπόδειξις(N)· ἤδη(Adv)
+(221) zu einem|anderen. wohl aber jemand dieses gewähre, wird|sein Beweis· schon
+(222) γάρ(Pt) τι(Pr)(N) ἔσται(Fu)(Akt) ὡρισμένον(Per)(M/P)(N). ἀλλʼ(Kon) αἴτιος(Adj)(N) οὐχ(Pt) ὁ(Art)(N) ἀποδεικνὺς(Prä)(Akt)(N) ἀλλʼ(Kon)
+(222) denn etwas wird|sein bestimmt. sondern Urheber nicht der Beweisende sondern
+(223) ὁ(Art)(N) ὑπομένων(Prä)(Akt)(N)· ἀναιρῶν(Prä)(Akt)(N) γὰρ(Pt) λόγον(A) ὑπομένει(Prä)(Akt) λόγον(A). ἔτι(Adv) δὲ(Pt) ὁ(Art)(N)
+(223) der Einräumende· aufhebende denn Rede erträgt Rede. noch aber der
+(224) τοῦτο(Pr)(A) συγχωρήσας(Aor)(Akt)(N) συγκεχώρηκέ(Per)(Akt) τι(Pr)(A) ἀληθὲς(Adj)(A) εἶναι(Prä)(Inf)(Akt) χωρὶς(Prp) ἀποδείξεως(G) ὥστε(Kon) οὐκ(Pt)
+(224) dieses zugestimmt|habend hat|zugestimmt etwas Wahres zu|sein ohne Beweises so|dass nicht
+(225) ἂν(Pt) πᾶν(Adj)(N) οὕτως(Adv) καὶ(Kon) οὐχ(Pt) οὕτως(Adv) ἔχοι(Prä)(Akt)(Op). — πρῶτον(Adv) μὲν(Pt) οὖν(Pt) δῆλον(Adj)(N)
+(225) wohl jedes so und nicht so verhielte|sich. — zuerst zwar nun klar
+(226) ὡς(Kon) τοῦτό(Pr)(N) γʼ(Pt) αὐτὸ(Adj)(N) ἀληθές(Adj)(N), ὅτι(Kon) σημαίνει(Prä)(Akt) τὸ(Art)(N) ὄνομα(N) τὸ(Art)(N)
+(226) dass dieses ja selbst wahr, dass bedeutet der Name das
+(227) εἶναι(Prä)(Inf)(Akt) ἢ(Kon) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) τοδί(Pr)(N), ὥστʼ(Kon) οὐκ(Pt) ἂν(Pt) πᾶν(Adj)(N) οὕτως(Adv)
+(227) zu|sein oder nicht zu|sein dieses|hier, so|dass nicht wohl jedes so
+(228) καὶ(Kon) οὐχ(Pt) οὕτως(Adv) ἔχοι(Prä)(Akt)(Op)· ἔτι(Adv) εἰ(Kon) τὸ(Art)(N) ἄνθρωπος(N) σημαίνει(Prä)(Akt) ἕν(Pr)(N),
+(228) und nicht so verhielte|sich· weiter wenn der Mensch bedeutet eins,
+(229) ἔστω(Prä)(Akt)(Imv) τοῦτο(Pr)(N) τὸ(Art)(N) ζῷον(N) δίπουν(Adj)(N). λέγω(Prä)(Akt) δὲ(Pt) τὸ(Art)(N) ἓν(Pr)(N) σημαίνειν(Prä)(Inf)(Akt)
+(229) sei dieses das Lebewesen zweifüßig. sage|ich aber das eine zu|bedeuten
+(230) τοῦτο(Pr)(N)· εἰ(Kon) τοῦτʼ(Pr)(N) ἔστιν(Prä)(Akt) ἄνθρωπος(N), ἂν(Pt) ᾖ(Prä)(Akt)(Knj) τι(Pr)(N) ἄνθρωπος(N), τοῦτʼ(Pr)(N)
+(230) dieses· wenn dieses ist Mensch, wohl sei etwas Mensch, dieses
+(231) ἔσται(Fu)(Akt) τὸ(Art)(N) ἀνθρώπῳ(D) εἶναι(Prä)(Inf)(Akt) (διαφέρει(Prä)(Akt) δʼ(Pt) οὐθὲν(Pr)(N) οὐδʼ(Pt) εἰ(Kon) πλείω(Adj)(Kmp)(N)
+(231) wird|sein das dem|Menschen zu|sein (unterscheidet|sich aber nichts auch|nicht wenn mehr
+(232) τις(Pr)(N) φαίη(Prä)(Akt)(Op) σημαίνειν(Prä)(Inf)(Akt) μόνον(Adv) δὲ(Pt) ὡρισμένα(Per)(M/P)(N),
+(232) jemand würde|sagen zu|bedeuten nur aber Bestimmte,
+== St. 1006b ==
+(234) τεθείη(Per)(M/P)(Op) γὰρ(Pt) ἂν(Pt) ἐφʼ(Prp) ἑκάστῳ(Adj)(D) λόγῳ(D) ἕτερον(Adj)(A) ὄνομα(A)· λέγω(Prä)(Akt) δʼ(Pt)
+(234) wäre|gesetzt denn wohl auf bei|jedem Rede anderes Name· ich|sage aber
+(235) οἷον(Kon), εἰ(Kon) μὴ(Pt) φαίη(Prä)(Akt)(Op) τὸ(Art)(A) ἄνθρωπος(A) ἓν(Pr)(A) σημαίνειν(Prä)(Inf)(Akt), πολλὰ(Adj)(A) δέ(Pt),
+(235) zum|Beispiel, wenn nicht würde|sagen das Mensch eins bedeuten, vieles aber,
+(236) ὧν(Pr)(G) ἑνὸς(Pr)(G) μὲν(Pt) εἷς(Pr)(N) λόγος(N) τὸ(Art)(N) ζῷον(N) δίπουν(Adj)(N), εἶεν(Prä)(Akt)(Op) δὲ(Pt)
+(236) deren eines zwar ein Aussage das Lebewesen zweifüßig, seien aber
+(237) καὶ(Kon) ἕτεροι(Adj)(N) πλείους(Adj)(Kmp)(N), ὡρισμένοι(Per)(M/P)(N) δὲ(Pt) τὸν(Art)(A) ἀριθμόν(A)· τεθείη(Per)(M/P)(Op) γὰρ(Pt) ἂν(Pt)
+(237) und andere mehrere, bestimmt|seiend aber die Zahl· wäre|gesetzt denn wohl
+(238) ἴδιον(Adj)(N) ὄνομα(N) καθʼ(Prp) ἕκαστον(Adj)(A) τὸν(Art)(A) λόγον(A)· εἰ(Kon) δὲ(Pt) μή(Pt) τεθείη(Per)(M/P)(Op),
+(238) eigen Name gemäß jedem die Aussage· wenn aber nicht wäre|gesetzt,
+(239) ἀλλʼ(Kon) ἄπειρα(Adj)(A) σημαίνειν(Prä)(Inf)(Akt) φαίη(Prä)(Akt)(Op), φανερὸν(Adj)(N) ὅτι(Kon) οὐκ(Pt) ἂν(Pt) εἴη(Prä)(Akt)(Op) λόγος(N)·
+(239) sondern unendliche bedeuten würde|sagen, offenbar dass nicht wohl wäre Aussage·
+(240) τὸ(Art)(N) γὰρ(Pt) μὴ(Pt) ἓν(Pr) σημαίνειν(Prä)(Inf)(Akt) οὐθὲν(Pr) σημαίνειν(Prä)(Inf)(Akt) ἐστίν(Prä)(Akt), μὴ(Pt) σημαινόντων(Prä)(Akt)(G)
+(240) das denn nicht eins bedeuten bedeuten nichts ist, nicht bedeutend|seiender
+(241) δὲ(Pt) τῶν(Art)(G) ὀνομάτων(G) ἀνῄρηται(Per)(M/P) τὸ(Art)(N) διαλέγεσθαι(Prä)(M/P)(Inf) πρὸς(Prp) ἀλλήλους(Pr)(A), κατὰ(Prp) δὲ(Pt)
+(241) aber der Namen ist|aufgehoben das sich|unterreden mit einander, gemäß aber
+(242) τὴν(Art)(A) ἀλήθειαν(A) καὶ(Kon) πρὸς(Prp) αὑτόν(Pr)(A)· οὐθὲν(Pr) γὰρ(Pt) ἐνδέχεται(Prä)(M/P) νοεῖν(Prä)(Inf)(Akt) μὴ(Pt)
+(242) die Wahrheit auch zu sich|selbst· nichts denn ist|möglich denken nicht
+(243) νοοῦντα(Prä)(Akt)(A) ἕν(Pr)(A), εἰ(Kon) δʼ(Pt) ἐνδέχεται(Prä)(M/P), τεθείη(Per)(M/P)(Op) ἂν(Pt) ὄνομα(N) τούτῳ(Pr)(D) τῷ(Art)(D)
+(243) denkend|seiend eins, wenn aber ist|möglich, wäre|gesetzt wohl Name diesem Ding
+(244) πράγματι(D) ἕν(Pr)). — ἔστω(Prä)(Akt)(Imv) δή(Pt), ὥσπερ(Kon) ἐλέχθη(Aor)(Pas) κατʼ(Prp) ἀρχάς(A), σημαῖνόν(Prä)(Akt)(N) τι(Pr) τὸ(Art)(N)
+(244) Sache|D eins). — es|sei ja, wie wurde|gesagt gemäß Anfängen, bedeutend|seiend etwas der
+(245) ὄνομα(N) καὶ(Kon) σημαῖνον(Prä)(Akt)(N) ἕν(Pr)· οὐ(Pt) δὴ(Pt) ἐνδέχεται(Prä)(M/P) τὸ(Art)(N) ἀνθρώπῳ(D) εἶναι(Prä)(Inf)(Akt)
+(245) Name und bedeutend|seiend eins· nicht ja ist|möglich das dem|Menschen|D zu|sein
+(246) σημαίνειν(Prä)(Inf)(Akt) ὅπερ(Pr)(A) ἀνθρώπῳ(D) μὴ(Pt) εἶναι(Prä)(Inf)(Akt), εἰ(Kon) τὸ(Art)(N) ἄνθρωπος(N) σημαίνει(Prä)(Akt) μὴ(Pt)
+(246) zu|bedeuten dasselbe dem|Menschen|D nicht zu|sein, wenn das Mensch bedeutet nicht
+(247) μόνον(Adv) καθʼ(Prp) ἑνὸς(Pr)(G) ἀλλὰ(Kon) καὶ(Kon) ἕν(Pr) (οὐ(Pt) γὰρ(Pt) τοῦτο(Pr) ἀξιοῦμεν(Prä)(Akt)
+(247) nur gemäß eines sondern auch eins (nicht denn dies fordern
+(248) τὸ(Art)(A) ἓν(Pr) σημαίνειν(Prä)(Inf)(Akt), τὸ(Art)(A) καθʼ(Prp) ἑνός(Pr)(G), ἐπεὶ(Kon) οὕτω(Adv) γε(Pt) κἂν(Kon)(Pt)
+(248) das Eins zu|bedeuten, das gemäß eines, da so ja und|wohl
+(249) τὸ(Art)(N) μουσικὸν(Adj)(N) καὶ(Kon) τὸ(Art)(N) λευκὸν(Adj)(N) καὶ(Kon) τὸ(Art)(N) ἄνθρωπος(N) ἓν(Pr)(N) ἐσήμαινεν(Imp)(Akt),
+(249) das Musische und das Weiße und das Mensch eins bedeutete,
+(250) ὥστε(Kon) ἓν(Pr)(N) ἅπαντα(Adj)(N) ἔσται(Fu)(Akt)· συνώνυμα(Adj)(N) γάρ(Pt)). καὶ(Kon) οὐκ(Pt) ἔσται(Fu)(Akt) εἶναι(Prä)(Inf)(Akt)
+(250) so|dass eins alles wird|sein· gleich|benannt denn). und nicht wird|sein zu|sein
+(251) καὶ(Kon) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) τὸ(Art)(A) αὐτὸ(Adj)(A) ἀλλʼ(Kon) ἢ(Kon) καθʼ(Prp) ὁμωνυμίαν(A), ὥσπερ(Kon)
+(251) und nicht zu|sein das Selbe sondern oder gemäß Gleich|namigkeit, wie
+(252) ἂν(Pt) εἰ(Kon) ὃν(Pr)(A) ἡμεῖς(Pr)(N) ἄνθρωπον(A) καλοῦμεν(Prä)(Akt), ἄλλοι(Adj)(N) μὴ(Pt) ἄνθρωπον(A) καλοῖεν(Prä)(Akt)(Op)·
+(252) wohl wenn welchen wir Menschen nennen, andere nicht Menschen nennen|würden·
+(253) τὸ(Art)(N) δʼ(Pt) ἀπορούμενον(Prä)(M/P)(N) οὐ(Pt) τοῦτό(Pr)(N) ἐστιν(Prä)(Akt), εἰ(Kon) ἐνδέχεται(Prä)(M/P) τὸ(Art)(N) αὐτὸ(Adj)(N)
+(253) das aber in|Verlegenheit|Seiendes nicht dies ist, ob möglich|ist das Selbe
+(254) ἅμα(Adv) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ἄνθρωπον(A) τὸ(Art)(N) ὄνομα(N), ἀλλὰ(Kon) τὸ(Art)(N)
+(254) zugleich zu|sein und nicht zu|sein Mensch der Name, sondern die
+(255) πρᾶγμα(N). εἰ(Kon) δὲ(Pt) μὴ(Pt) σημαίνει(Prä)(Akt) ἕτερον(Adj)(A) τὸ(Art)(N) ἄνθρωπος(N) καὶ(Kon) τὸ(Art)(N)
+(255) Sache. wenn aber nicht bedeutet anderes das Mensch und das
+(256) μὴ(Pt) ἄνθρωπος(N), δῆλον(Adj)(N) ὅτι(Kon) καὶ(Kon) τὸ(Art)(N) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ἀνθρώπῳ(D) τοῦ(Art)(G)
+(256) nicht Mensch, offenbar dass auch das nicht zu|sein dem|Menschen|D des
+(257) εἶναι(Prä)(Inf)(Akt) ἀνθρώπῳ(D)· ὥστʼ(Kon) ἔσται(Fu)(Akt) τὸ(Art)(N) ἀνθρώπῳ(D) εἶναι(Prä)(Inf)(Akt) μὴ(Pt) ἀνθρώπῳ(D) εἶναι(Prä)(Inf)(Akt)·
+(257) zu|sein dem|Menschen|D· so|dass wird|sein das dem|Menschen|D zu|sein nicht dem|Menschen|D zu|sein·
+(258) ἓν(Pr)(N) γὰρ(Pt) ἔσται(Fu)(Akt). τοῦτο(Pr)(N) γὰρ(Pt) σημαίνει(Prä)(Akt) τὸ(Art)(N) εἶναι(Prä)(Inf)(Akt) ἕν(Pr), τὸ(Art)(N)
+(258) eins denn wird|sein. dies denn bedeutet das zu|sein eins, das
+(259) ὡς(Kon) λώπιον(N) καὶ(Kon) ἱμάτιον(N), εἰ(Kon) ὁ(Art)(N) λόγος(N) εἷς(Pr)(N)· εἰ(Kon) δὲ(Pt)
+(259) wie Mantel|stück und Gewand, wenn die Aussage eins· wenn aber
+(260) ἔσται(Fu)(Akt) ἕν(Pr), ἓν(Pr) σημανεῖ(Fu)(Akt) τὸ(Art)(N) ἀνθρώπῳ(D) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) μὴ(Pt) ἀνθρώπῳ(D).
+(260) wird|sein eins, eins wird|bedeuten das dem|Menschen|D zu|sein und nicht dem|Menschen|D.
+(261) ἀλλʼ(Kon) ἐδέδεικτο(Plq)(M/P) ὅτι(Kon) ἕτερον(Adj)(A) σημαίνει(Prä)(Akt). ἀνάγκη(N) τοίνυν(Pt), εἴ(Kon) τί(Pr) ἐστιν(Prä)(Akt)
+(261) sondern war|gezeigt|worden dass anderes bedeutet. Notwendigkeit also, wenn etwas ist
+(262) ἀληθὲς(Adj)(A) εἰπεῖν(Aor)(Akt)(Inf) ὅτι(Kon) ἄνθρωπος(N), ζῷον(A) εἶναι(Prä)(Inf)(Akt) δίπουν(Adj)(A) (τοῦτο(Pr)(N) γὰρ(Pt) ἦν(Imp)(Akt)
+(262) Wahres zu|sagen dass Mensch, Lebewesen zu|sein zweifüßig (dies denn war
+(263) ὃ(Pr)(N) ἐσήμαινε(Imp)(Akt) τὸ(Art)(N) ἄνθρωπος(N))· εἰ(Kon) δʼ(Pt) ἀνάγκη(N) τοῦτο(Pr), οὐκ(Pt) ἐνδέχεται(Prä)(M/P)
+(263) was bedeutete das Mensch)· wenn aber Notwendigkeit dies, nicht ist|möglich
+(264) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ⟦τότε⟧(Adv) τὸ(Art)(N) αὐτὸ(Adj)(N) ζῷον(N) δίπουν(Adj)(N) (τοῦτο(Pr)(N) γὰρ(Pt) σημαίνει(Prä)(Akt)
+(264) nicht zu|sein ⟦damals⟧ das Selbe Lebewesen zweifüßig (dies denn bedeutet
+(265) τὸ(Art)(N) ἀνάγκη(N) εἶναι(Prä)(Inf)(Akt), τὸ(Art)(N) ἀδύνατον(Adj)(N) εἶναι(Prä)(Inf)(Akt) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ἄνθρωπον(A))· οὐκ(Pt)
+(265) das Notwendige zu|sein, das Unmögliche zu|sein nicht zu|sein Mensch)· nicht
+(266) ἄρα(Pt) ἐνδέχεται(Prä)(M/P) ἅμα(Adv) ἀληθὲς(Adj)(A) εἶναι(Prä)(Inf)(Akt) εἰπεῖν(Aor)(Akt)(Inf) τὸ(Art)(N) αὐτὸ(Adj)(N) ἄνθρωπον(A) εἶναι(Prä)(Inf)(Akt)
+(266) also ist|möglich zugleich Wahres zu|sein zu|sagen das Selbe Mensch zu|sein
+(267) καὶ(Kon) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ἄνθρωπον(A). ὁ(Art)(N) δʼ(Pt) αὐτὸς(Adj)(N) λόγος(N) καὶ(Kon) ἐπὶ(Prp)
+(267) und nicht zu|sein Mensch. das aber gleiche Argument auch bezüglich
+(268) τοῦ(Art)(G) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ἄνθρωπον(A)·
+(268) des nicht zu|sein Menschen·
+== St. 1007a ==
+(270) τὸ(Art)(N) γὰρ(Pt) ἀνθρώπῳ(D) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) τὸ(Art)(N) μὴ(Pt) ἀνθρώπῳ(D) εἶναι(Prä)(Inf)(Akt) ἕτερον(Adj)(N)
+(270) das denn dem|Menschen|D zu|sein und das nicht dem|Menschen|D zu|sein anderes
+(271) σημαίνει(Prä)(Akt), εἴπερ(Kon) καὶ(Kon) τὸ(Art)(N) λευκὸν(Adj)(N) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) τὸ(Art)(N) ἄνθρωπον(N) εἶναι(Prä)(Inf)(Akt)
+(271) bedeutet, wenn|wirklich auch das Weiß zu|sein und das Mensch zu|sein
+(272) ἕτερον(Adj)(N)· πολὺ(Adv) γὰρ(Pt) ἀντίκειται(Prä)(M/P) ἐκεῖνο(Pr)(N) μᾶλλον(Adv)(Kmp), ὥστε(Kon) σημαίνειν(Prä)(Inf)(Akt) ἕτερον(Adj)(A). εἰ(Kon)
+(272) anderes· viel denn steht|entgegen jenes mehr, so|dass zu|bedeuten anderes. wenn
+(273) δὲ(Pt) καὶ(Kon) τὸ(Art)(N) λευκὸν(Adj)(N) φήσει(Fu)(Akt) τὸ(Art)(N) αὐτὸ(Adj)(N) καὶ(Kon) ἓν(Pr)(A) σημαίνειν(Prä)(Inf)(Akt),
+(273) aber auch das Weiß wird|sagen das Selbe und eins zu|bedeuten,
+(274) πάλιν(Adv) τὸ(Art)(N) αὐτὸ(Adj)(N) ἐροῦμεν(Fu)(Akt) ὅπερ(Pr)(N) καὶ(Kon) πρότερον(Adv)(Kmp) ἐλέχθη(Aor)(Pas), ὅτι(Kon) ἓν(Pr)(N)
+(274) wiederum das Selbe werden|sagen was|eben auch früher wurde|gesagt, dass eins
+(275) πάντα(Adj)(N) ἔσται(Fu)(Akt) καὶ(Kon) οὐ(Pt) μόνον(Adv) τὰ(Art)(N) ἀντικείμενα(Prä)(M/P)(N). εἰ(Kon) δὲ(Pt) μὴ(Pt)
+(275) alles wird|sein und nicht nur die Entgegengesetzten. wenn aber nicht
+(276) ἐνδέχεται(Prä)(M/P) τοῦτο(Pr), συμβαίνει(Prä)(Akt) τὸ(Art)(N) λεχθέν(Aor)(Pas)(N), ἂν(Pt) ἀποκρίνηται(Prä)(M/P)(Knj) τὸ(Art)(N) ἐρωτώμενον(Prä)(M/P)(N). ἐὰν(Kon)
+(276) ist|möglich dies, folgt das Gesagte, wohl antworte das Gefragte. wenn
+(277) δὲ(Pt) προστιθῇ(Prä)(M/P)(Knj) ἐρωτῶντος(Prä)(Akt)(G) ἁπλῶς(Adv) καὶ(Kon) τὰς(Art)(A) ἀποφάσεις(A), οὐκ(Pt) ἀποκρίνεται(Prä)(M/P) τὸ(Art)(N)
+(277) aber hinzufüge des|Fragers|G einfach auch die Verneinungen, nicht antwortet das
+(278) ἐρωτώμενον(Prä)(M/P)(N). οὐθὲν(Pr)(N) γὰρ(Pt) κωλύει(Prä)(Akt) εἶναι(Prä)(Inf)(Akt) τὸ(Art)(N) αὐτὸ(Adj)(N) καὶ(Kon) ἄνθρωπον(A) καὶ(Kon)
+(278) Gefragte. nichts denn hindert zu|sein das Selbe und Menschen und
+(279) λευκὸν(Adj)(A) καὶ(Kon) ἄλλα(Adj)(A) μυρία(Adj)(A) τὸ(Art)(N) πλῆθος(N)· ἀλλʼ(Kon) ὅμως(Adv) ἐρομένου(Prä)(M/P)(G) εἰ(Kon)
+(279) weiß und andere zahllose die Menge· aber dennoch des|Fragenden|G ob
+(280) ἀληθὲς(Adj)(A) εἰπεῖν(Aor)(Akt)(Inf) ἄνθρωπον(A) τοῦτο(Pr)(A) εἶναι(Prä)(Inf)(Akt) ἢ(Kon) οὔ(Pt), ἀποκριτέον(Adj)(N) τὸ(Art)(N) ἓν(Pr)(N)
+(280) Wahr zu|sagen Mensch dies zu|sein oder nicht, zu|antworten das eins
+(281) σημαῖνον(Prä)(Akt)(N) καὶ(Kon) οὐ(Pt) προσθετέον(Adj)(N) ὅτι(Kon) καὶ(Kon) λευκὸν(Adj)(N) καὶ(Kon) μέγα(Adj)(N). καὶ(Kon)
+(281) bedeutend|seiend und nicht hinzuzufügen dass auch weiß und groß. und
+(282) γὰρ(Pt) ἀδύνατον(Adj)(N) ἄπειρά(Adj)(A) γʼ(Pt) ὄντα(Prä)(Akt)(A) τὰ(Art)(A) συμβεβηκότα(Per)(Akt)(A) διελθεῖν(AorS)(Akt)(Inf)· ἢ(Kon) οὖν(Pt)
+(282) denn unmöglich unzählige ja seiende die Zugekommenen durchzugehen· oder also
+(283) ἅπαντα(Adj)(A) διελθέτω(AorS)(Akt)(Imv) ἢ(Kon) μηθέν(Pr)(A). ὁμοίως(Adv) τοίνυν(Pt) εἰ(Kon) καὶ(Kon) μυριάκις(Adv) ἐστὶ(Prä)(Akt)
+(283) alles gehe|durch oder nichts. ebenso also wenn auch un|zähl|mal ist
+(284) τὸ(Art)(N) αὐτὸ(Adj)(N) ἄνθρωπος(N) καὶ(Kon) οὐκ(Pt) ἄνθρωπος(N), οὐ(Pt) προσαποκριτέον(Adj)(N) τῷ(Art)(D) ἐρομένῳ(Fu)(Med)(D)
+(284) das Selbe Mensch und nicht Mensch, nicht zusätzlich|zu|antworten dem Fragenden|D
+(285) εἰ(Kon) ἔστιν(Prä)(Akt) ἄνθρωπος(N), ὅτι(Kon) ἐστὶν(Prä)(Akt) ἅμα(Adv) καὶ(Kon) οὐκ(Pt) ἄνθρωπος(N), εἰ(Kon)
+(285) ob ist Mensch, dass ist zugleich und nicht Mensch, wenn
+(286) μὴ(Pt) καὶ(Kon) τἆλλα(Art)(N)(Adj)(N) ὅσα(Pr)(N) συμβέβηκε(Per)(Akt) προσαποκριτέον(Adj)(N), ὅσα(Pr)(N) ἐστὶν(Prä)(Akt) ἢ(Kon) μὴ(Pt)
+(286) nicht auch die|anderen so|vieles|wie zugekommen|ist zusätzlich|zu|antworten, so|vieles|wie ist oder nicht
+(287) ἔστιν(Prä)(Akt)· ἐὰν(Kon) δὲ(Pt) τοῦτο(Pr) ποιῇ(Prä)(Akt)(Knj), οὐ(Pt) διαλέγεται(Prä)(M/P). — ὅλως(Adv) δʼ(Pt) ἀναιροῦσιν(Prä)(Akt) οἱ(Art)(N)
+(287) ist· wenn aber dies tut, nicht unterredet|sich. — insgesamt aber heben|auf die
+(288) τοῦτο(Pr) λέγοντες(Prä)(Akt)(N) οὐσίαν(A) καὶ(Kon) τὸ(Art)(N) τί(Pr)(N) ἦν(Imp)(Akt) εἶναι(Prä)(Inf)(Akt). πάντα(Adj)(N) γὰρ(Pt)
+(288) dies sagend|Seiende Substanz und das was war zu|sein. alles denn
+(289) ἀνάγκη(N) συμβεβηκέναι(Per)(Akt)(Inf) φάσκειν(Prä)(Akt)(Inf) αὐτοῖς(Pr)(D), καὶ(Kon) τὸ(Art)(N) ὅπερ(Pr)(N) ἀνθρώπῳ(D) εἶναι(Prä)(Inf)(Akt) ἢ(Kon)
+(289) Notwendigkeit zu|geschehen|sein zu|behaupten ihnen, und das was|eben dem|Menschen|D zu|sein oder
+(290) ζῴῳ(D) εἶναι(Prä)(Inf)(Akt) μὴ(Pt) εἶναι(Prä)(Inf)(Akt). εἰ(Kon) γὰρ(Pt) ἔσται(Fu)(Akt) τι(Pr)(N) ὅπερ(Pr)(N) ἀνθρώπῳ(D)
+(290) dem|Lebewesen zu|sein nicht zu|sein. wenn denn wird|sein etwas was dem|Menschen
+(291) εἶναι(Prä)(Inf)(Akt), τοῦτο(Pr)(N) οὐκ(Pt) ἔσται(Fu)(Akt) μὴ(Pt) ἀνθρώπῳ(D) εἶναι(Prä)(Inf)(Akt) ἢ(Kon) μὴ(Pt) εἶναι(Prä)(Inf)(Akt)
+(291) zu|sein, dieses nicht wird|sein nicht dem|Menschen zu|sein oder nicht zu|sein
+(292) ἀνθρώπῳ(D) (καίτοι(Pt) αὗται(Pr)(N) ἀποφάσεις(N) τούτου(Pr)(G))· ἓν(Pr)(N) γὰρ(Pt) ἦν(Imp)(Akt) ὃ(Pr)(A) ἐσήμαινε(Imp)(Akt),
+(292) dem|Menschen (und|doch diese Verneinungen dessen)· eins denn war was er|bedeutete,
+(293) καὶ(Kon) ἦν(Imp)(Akt) τοῦτό(Pr)(N) τινος(Pr)(G) οὐσία(N). τὸ(Art)(N) δʼ(Pt) οὐσίαν(A) σημαίνειν(Prä)(Inf)(Akt) ἐστὶν(Prä)(Akt)
+(293) und war dies eines|irgendjemandes Substanz. das aber Substanz zu|bedeuten ist
+(294) ὅτι(Kon) οὐκ(Pt) ἄλλο(Adj)(N) τι(Pr)(N) τὸ(Art)(N) εἶναι(Prä)(Inf)(Akt) αὐτῷ(Pr)(D). εἰ(Kon) δʼ(Pt) ἔσται(Fu)(Akt)
+(294) dass nicht anderes etwas das Sein ihm. wenn aber wird|sein
+(295) αὐτῷ(Pr)(D) τὸ(Art)(N) ὅπερ(Pr)(N) ἀνθρώπῳ(D) εἶναι(Prä)(Inf)(Akt) ἢ(Kon) ὅπερ(Pr)(N) μὴ(Pt) ἀνθρώπῳ(D) εἶναι(Prä)(Inf)(Akt)
+(295) ihm das welches dem|Menschen zu|sein oder welches nicht dem|Menschen zu|sein
+(296) ἢ(Kon) ὅπερ(Pr)(N) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ἀνθρώπῳ(D), ἄλλο(Adj)(N) ἔσται(Fu)(Akt), ὥστʼ(Kon) ἀναγκαῖον(Adj)(N) αὐτοῖς(Pr)(D)
+(296) oder welches nicht zu|sein dem|Menschen, anderes wird|sein, so|dass notwendig ihnen
+(297) λέγειν(Prä)(Inf)(Akt) ὅτι(Kon) οὐθενὸς(Pr)(G) ἔσται(Fu)(Akt) τοιοῦτος(Adj)(N) λόγος(N), ἀλλὰ(Kon) πάντα(Adj)(N) κατὰ(Prp) συμβεβηκός(Per)(Akt)(A)·
+(297) zu|sagen dass von|keinem wird|sein solcher Ausspruch, sondern alles nach Zugefallenem·
+(298) τούτῳ(Pr)(D) γὰρ(Pt) διώρισται(Per)(M/P) οὐσία(N) καὶ(Kon) τὸ(Art)(N) συμβεβηκός(Per)(Akt)(N)· τὸ(Art)(N) γὰρ(Pt) λευκὸν(Adj)(N)
+(298) durch|dieses denn ist|abgegrenzt Substanz und das Zugekommene· das denn Weiße
+(299) τῷ(Art)(D) ἀνθρώπῳ(D) συμβέβηκεν(Per)(Akt) ὅτι(Kon) ἔστι(Prä)(Akt) μὲν(Pt) λευκὸς(Adj)(N) ἀλλʼ(Kon) οὐχ(Pt) ὅπερ(Pr)(A)
+(299) dem Menschen ist|zugestoßen dass er|ist zwar weiß aber nicht welches
+(300) λευκόν(Adj)(N). εἰ(Kon) δὲ(Pt) πάντα(Adj)(N) κατὰ(Prp) συμβεβηκὸς(Per)(Akt)(A) λέγεται(Prä)(M/P), οὐθὲν(Pr)(N) ἔσται(Fu)(Akt) πρῶτον(Adj)(N)
+(300) weiß. wenn aber alles nach Zugefallenem wird|gesagt, nichts wird|sein erstes
+(301) τὸ(Art)(N) καθʼ(Prp) οὗ(Pr)(G), εἰ(Kon) ἀεὶ(Adv) τὸ(Art)(N) συμβεβηκὸς(Per)(Akt)(N) καθʼ(Prp) ὑποκειμένου(Per)(M/P)(G) τινὸς(Pr)(G)
+(301) das gemäß dessen, wenn stets das Zugekommene gemäß des|Unterliegenden irgendeines
+(302) σημαίνει(Prä)(Akt) τὴν(Art)(A) κατηγορίαν(A).
+(302) bedeutet die Kategorie.
+== St. 1007b ==
+(304) ἀνάγκη(N) ἄρα(Pt) εἰς(Prp) ἄπειρον(Adj)(A) ἰέναι(Prä)(Inf)(Akt). ἀλλʼ(Kon) ἀδύνατον(Adj)(N)· οὐδὲ(Kon) γὰρ(Pt) πλείω(Adj)(Kmp)(N)
+(304) Notwendigkeit also in das|Unendliche zu|gehen. aber unmöglich· auch|nicht denn mehr
+(305) συμπλέκεται(Prä)(M/P) δυοῖν(Adj)(Du)(D)· τὸ(Art)(N) γὰρ(Pt) συμβεβηκὸς(Per)(Akt)(N) οὐ(Pt) συμβεβηκότι(Per)(Akt)(D) συμβεβηκός(Per)(Akt)(N), εἰ(Kon) μὴ(Pt)
+(305) ver|schlingt|sich von|zweien· das denn Zugekommene nicht Zugekommenem Zugekommenes, wenn nicht
+(306) ὅτι(Kon) ἄμφω(Adj)(Du)(N) συμβέβηκε(Per)(Akt) ταὐτῷ(Adj)(D), λέγω(Prä)(Akt) δʼ(Pt) οἷον(Kon) τὸ(Art)(N) λευκὸν(Adj)(N) μουσικὸν(Adj)(N)
+(306) dass beide es|zugestoßen|ist dem|Selben, sage aber zum|Beispiel das Weiße musikalisch
+(307) καὶ(Kon) τοῦτο(Pr)(N) λευκὸν(Adj)(N) ὅτι(Kon) ἄμφω(Adj)(Du)(N) τῷ(Art)(D) ἀνθρώπῳ(D) συμβέβηκεν(Per)(Akt). ἀλλʼ(Kon) οὐχ(Pt)
+(307) und dieses weiß weil beide dem Menschen zugestoßen|sind. aber nicht
+(308) ὁ(Art)(N) Σωκράτης(N) μουσικὸς(Adj)(N) οὕτως(Adv), ὅτι(Kon) ἄμφω(Adj)(Du)(N) συμβέβηκεν(Per)(Akt) ἑτέρῳ(Adj)(D) τινί(Pr)(D). ἐπεὶ(Kon)
+(308) der Sokrates musikalisch so, weil beide zugestoßen|sind einem|anderen irgendeinem. da
+(309) τοίνυν(Pt) τὰ(Art)(N) μὲν(Pt) οὕτως(Adv) τὰ(Art)(N) δʼ(Pt) ἐκείνως(Adv) λέγεται(Prä)(M/P) συμβεβηκότα(Per)(Akt)(N), ὅσα(Pr)(N)
+(309) demnach die zwar so die aber anderso werden|gesagt Zugekommene, so|viele
+(310) οὕτως(Adv) λέγεται(Prä)(M/P) ὡς(Kon) τὸ(Art)(N) λευκὸν(Adj)(N) τῷ(Art)(D) Σωκράτει(D), οὐκ(Pt) ἐνδέχεται(Prä)(M/P) ἄπειρα(Adj)(A)
+(310) so wird|gesagt wie das Weiße dem Sokrates, nicht ist|möglich unendliche
+(311) εἶναι(Prä)(Inf)(Akt) ἐπὶ(Prp) τὸ(Art)(A) ἄνω(Adv), οἷον(Kon) τῷ(Art)(D) Σωκράτει(D) τῷ(Art)(D) λευκῷ(Adj)(D) ἕτερόν(Adj)(A)
+(311) zu|sein hin|auf das Oben, zum|Beispiel dem Sokrates dem weißen anderes
+(312) τι(Pr)(N) συμβεβηκός(Per)(Akt)(N)· οὐ(Pt) γὰρ(Pt) γίγνεταί(Prä)(M/P) τι(Pr)(N) ἓν(Pr)(N) ἐξ(Prp) ἁπάντων(Adj)(G). οὐδὲ(Kon)
+(312) etwas Zugekommenes· nicht denn entsteht etwas eins aus allen. auch|nicht
+(313) δὴ(Pt) τῷ(Art)(D) λευκῷ(Adj)(D) ἕτερόν(Adj)(N) τι(Pr)(N) ἔσται(Fu)(Akt) συμβεβηκός(Per)(Akt)(N), οἷον(Kon) τὸ(Art)(N) μουσικόν(Adj)(N)·
+(313) ja dem weißen anderes etwas wird|sein Zugekommenes, zum|Beispiel das Musikalische·
+(314) οὐθέν(Pr)(N) τε(Pt) γὰρ(Pt) μᾶλλον(Adv)(Kmp) τοῦτο(Pr)(N) ἐκείνῳ(Pr)(D) ἢ(Kon) ἐκεῖνο(Pr)(N) τούτῳ(Pr)(D) συμβέβηκεν(Per)(Akt),
+(314) keines und denn mehr dieses jenem als jenes diesem zugestoßen|ist,
+(315) καὶ(Kon) ἅμα(Adv) διώρισται(Per)(M/P) ὅτι(Kon) τὰ(Art)(N) μὲν(Pt) οὕτω(Adv) συμβέβηκε(Per)(Akt) τὰ(Art)(N) δʼ(Pt)
+(315) und zugleich ist|abgegrenzt dass die zwar so zugestoßen|hat die aber
+(316) ὡς(Kon) τὸ(Art)(N) μουσικὸν(Adj)(N) Σωκράτει(D)· ὅσα(Pr)(N) δʼ(Pt) οὕτως(Adv), οὐ(Pt) συμβεβηκότι(Per)(Akt)(D) συμβέβηκε(Per)(Akt)
+(316) wie das Musikalische Sokrates· so|viele aber so, nicht Zugekommenem ist|zugestoßen
+(317) συμβεβηκός(Per)(Akt)(N), ἀλλʼ(Kon) ὅσα(Pr)(N) ἐκείνως(Adv), ὥστʼ(Kon) οὐ(Pt) πάντα(Adj)(N) κατὰ(Prp) συμβεβηκὸς(Per)(Akt)(A) λεχθήσεται(Fu)(Pas).
+(317) Zugekommenes, sondern so|viele anderso, so|dass nicht alles nach Zugefallenem wird|gesagt|werden.
+(318) ἔσται(Fu)(Akt) ἄρα(Pt) τι(Pr)(N) καὶ(Kon) ὣς(Adv) οὐσίαν(A) σημαῖνον(Prä)(Akt)(N). εἰ(Kon) δὲ(Pt) τοῦτο(Pr)(N),
+(318) wird|sein also etwas auch so Substanz bedeutend. wenn aber dieses,
+(319) δέδεικται(Per)(M/P) ὅτι(Kon) ἀδύνατον(Adj)(N) ἅμα(Adv) κατηγορεῖσθαι(Prä)(M/P)(Inf) τὰς(Art)(A) ἀντιφάσεις(A). — ἔτι(Adv) εἰ(Kon) ἀληθεῖς(Adj)(N) αἱ(Art)(N)
+(319) ist|gezeigt dass unmöglich zugleich ausgesagt|zu|werden die Widersprüche. — noch wenn wahr die
+(320) ἀντιφάσεις(N) ἅμα(Adv) κατὰ(Prp) τοῦ(Art)(G) αὐτοῦ(Pr)(G) πᾶσαι(Adj)(N), δῆλον(Adj)(N) ὡς(Kon) ἅπαντα(Adj)(N) ἔσται(Fu)(Akt)
+(320) Widersprüche zugleich gegen des Selben alle, klar wie alles wird|sein
+(321) ἕν(Pr)(N). ἔσται(Fu)(Akt) γὰρ(Pt) τὸ(Art)(N) αὐτὸ(Adj)(N) καὶ(Kon) τριήρης(N) καὶ(Kon) τοῖχος(N) καὶ(Kon)
+(321) eins. wird|sein denn das Selbe auch Trireme und Mauer und
+(322) ἄνθρωπος(N), εἰ(Kon) κατὰ(Prp) παντός(Adj)(G) τι(Pr)(A) ἢ(Kon) καταφῆσαι(Aor)(Akt)(Inf) ἢ(Kon) ἀποφῆσαι(Aor)(Akt)(Inf) ἐνδέχεται(Prä)(M/P),
+(322) Mensch, wenn gemäß von|jedem etwas entweder zu|behaupten oder zu|verneinen ist|möglich,
+(323) καθάπερ(Kon) ἀνάγκη(N) τοῖς(Art)(D) τὸν(Art)(A) Πρωταγόρου(G) λέγουσι(Prä)(Akt)(D) λόγον(A). εἰ(Kon) γάρ(Pt) τῳ(Pr)(D)
+(323) so|wie Notwendigkeit den den Protagoras sagenden Spruch. wenn denn einem
+(324) δοκεῖ(Prä)(Akt) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) τριήρης(N) ὁ(Art)(N) ἄνθρωπος(N), δῆλον(Adj)(N) ὡς(Kon) οὐκ(Pt) ἔστι(Prä)(Akt)
+(324) scheint nicht zu|sein Trireme der Mensch, klar wie nicht ist
+(325) τριήρης(N)· ὥστε(Kon) καὶ(Kon) ἔστιν(Prä)(Akt), εἴπερ(Kon) ἡ(Art)(N) ἀντίφασις(N) ἀληθής(Adj)(N). καὶ(Kon) γίγνεται(Prä)(M/P)
+(325) Trireme· so|dass auch ist, wenn|wirklich die Widerspruch wahr. und wird
+(326) δὴ(Pt) τὸ(Art)(N) τοῦ(Art)(G) Ἀναξαγόρου(G), ὁμοῦ(Adv) πάντα(Adj)(N) χρήματα(N)· ὥστε(Kon) μηθὲν(Pr)(N) ἀληθῶς(Adv)
+(326) ja das des Anaxagoras, zugleich alle Dinge· so|dass nichts wahrhaft
+(327) ὑπάρχειν(Prä)(Inf)(Akt). τὸ(Art)(N) ἀόριστον(Adj)(N) οὖν(Pt) ἐοίκασι(Per)(Akt) λέγειν(Prä)(Inf)(Akt), καὶ(Kon) οἰόμενοι(Prä)(M/P)(N) τὸ(Art)(N) ὂν(Prä)(Akt)(N)
+(327) zu|zukommen. das Unbestimmte also scheinen|sie zu|sagen, und meinend das Seiende
+(328) λέγειν(Prä)(Inf)(Akt) περὶ(Prp) τοῦ(Art)(G) μὴ(Pt) ὄντος(Prä)(Akt)(G) λέγουσιν(Prä)(Akt)· τὸ(Art)(N) γὰρ(Pt) δυνάμει(D) ὂν(Prä)(Akt)(N)
+(328) zu|sagen über des nicht Seienden sagen|sie· das denn der|Möglichkeit|nach Seiende
+(329) καὶ(Kon) μὴ(Pt) ἐντελεχείᾳ(D) τὸ(Art)(N) ἀόριστόν(Adj)(N) ἐστιν(Prä)(Akt). ἀλλὰ(Kon) μὴν(Pt) λεκτέον(Adj)(N) γʼ(Pt)
+(329) und nicht in|Wirklichkeit das Unbestimmte ist. aber freilich zu|sagen doch
+(330) αὐτοῖς(Pr)(D) κατὰ(Prp) παντὸς(Adj)(G) ⟦παντὸς⟧(Adj)(G) τὴν(Art)(A) κατάφασιν(A) ἢ(Kon) τὴν(Art)(A) ἀπόφασιν(A)· ἄτοπον(Adj)(N)
+(330) ihnen gemäß von|jedem ⟦von|jedem⟧ die Behauptung oder die Verneinung· absurd
+(331) γὰρ(Pt) εἰ(Kon) ἑκάστῳ(Adj)(D) ἡ(Art)(N) μὲν(Pt) αὐτοῦ(Pr)(G) ἀπόφασις(N) ὑπάρξει(Fu)(Akt), ἡ(Art)(N) δʼ(Pt)
+(331) denn wenn jedem die zwar seine Verneinung wird|zukommen, die aber
+(332) ἑτέρου(Adj)(G) ὃ(Pr)(N) μὴ(Pt) ὑπάρχει(Prä)(Akt) αὐτῷ(Pr)(D) οὐχ(Pt) ὑπάρξει(Fu)(Akt)· λέγω(Prä)(Akt) δʼ(Pt) οἷον(Kon)
+(332) eines|anderen was nicht zukommt ihm nicht wird|zukommen· ich|sage aber zum|Beispiel
+(333) εἰ(Kon) ὀληθὲς(Adj)(N) εἰπεῖν(Aor)(Akt)(Inf) τὸν(Art)(A) ἄνθρωπον(A) ὅτι(Kon) οὐκ(Pt) ἄνθρωπος(N), δῆλον(Adj)(N) ὅτι(Kon)
+(333) wenn wahr zu|sagen den Menschen dass nicht Mensch, klar dass
+(334) καὶ(Kon) ἢ(Kon) τριήρης(N) ἢ(Kon) οὐ(Pt) τριήρης(N). εἰ(Kon) μὲν(Pt) οὖν(Pt) ἡ(Art)(N)
+(334) auch entweder Trireme oder nicht Trireme. wenn zwar nun die
+(335) κατάφασις(N), ἀνάγκη(N) καὶ(Kon) τὴν(Art)(A) ἀπόφασιν(A)· εἰ(Kon) δὲ(Pt) μὴ(Pt) ὑπάρχει(Prä)(Akt) ἡ(Art)(N)
+(335) Behauptung, Notwendigkeit auch die Verneinung· wenn aber nicht besteht die
+(336) κατάφασις(N), ἥ(Pr)(N) γε(Pt) ἀπόφασις(N) ὑπάρξει(Fu)(Akt) μᾶλλον(Adv)(Kmp) ἢ(Kon) ἡ(Art)(N) αὐτοῦ(Pr)(G).
+(336) Behauptung, diese ja Verneinung wird|zukommen eher als die seine.
+== St. 1008a ==
+(338) εἰ(Kon) οὖν(Pt) κἀκείνη(Kon)(Pr)(N) ὑπάρχει(Prä)(Akt), ὑπάρξει(Fu)(Akt) καὶ(Kon) ἡ(Art)(N) τῆς(Art)(G) τριήρους(G)· εἰ(Kon)
+(338) wenn nun und|jene besteht, wird|zukommen auch die der Trireme· wenn
+(339) δʼ(Pt) αὕτη(Pr)(N), καὶ(Kon) ἡ(Art)(N) κατάφασις(N). — ταῦτά(Pr)(N) τε(Pt) οὖν(Pt) συμβαίνει(Prä)(Akt) τοῖς(Art)(D) λέγουσι(Prä)(Akt)(D)
+(339) aber diese, auch die Behauptung. — dieses und nun geschieht den sagenden
+(340) τὸν(Art)(A) λόγον(A) τοῦτον(Pr)(A), καὶ(Kon) ὅτι(Kon) οὐκ(Pt) ἀνάγκη(N) ἢ(Kon) φάναι(Aor)(Akt)(Inf) ἢ(Kon)
+(340) den Spruch diesen, und dass nicht Notwendigkeit entweder zu|behaupten oder
+(341) ἀποφάναι(Aor)(Akt)(Inf). εἰ(Kon) γὰρ(Pt) ἀληθὲς(Adj)(N) ὅτι(Kon) ἄνθρωπος(N) καὶ(Kon) οὐκ(Pt) ἄνθρωπος(N), δῆλον(Adj)(N)
+(341) zu|verneinen. wenn denn wahr dass Mensch und nicht Mensch, klar
+(342) ὅτι(Kon) καὶ(Kon) οὔτʼ(Kon) ἄνθρωπος(N) οὔτʼ(Kon) οὐκ(Pt) ἄνθρωπος(N) ἔσται(Fu)(Akt)· τοῖν(Art)(Du)(G) γὰρ(Pt)
+(342) dass auch weder Mensch noch nicht Mensch wird|sein· den|beiden denn
+(343) δυοῖν(Adj)(Du)(G) δύο(Adj)(N) ἀποφάσεις(N), εἰ(Kon) δὲ(Pt) μία(Adj)(N) ἐξ(Prp) ἀμφοῖν(Adj)(Du)(G) ἐκείνη(Pr)(N), καὶ(Kon)
+(343) von|zweien zwei Verneinungen, wenn aber eine aus beiden jene, auch
+(344) αὕτη(Pr)(N) μία(Adj)(N) ἂν(Pt) εἴη(Prä)(Akt)(Op) ἀντικειμένη(Prä)(M/P)(N). — ἔτι(Adv) ἤτοι(Kon) περὶ(Prp) ἅπαντα(Adj)(A) οὕτως(Adv) ἔχει(Prä)(Akt),
+(344) diese eine wohl wäre entgegengesetzt. — noch entweder über alle so verhält|es|sich,
+(345) καὶ(Kon) ἔστι(Prä)(Akt) καὶ(Kon) λευκὸν(Adj)(N) καὶ(Kon) οὐ(Pt) λευκὸν(Adj)(N) καὶ(Kon) ὂν(Prä)(Akt)(N) καὶ(Kon)
+(345) und ist auch weiß und nicht weiß und seiend und
+(346) οὐκ(Pt) ὄν(Prä)(Akt)(N), καὶ(Kon) περὶ(Prp) τὰς(Art)(A) ἄλλας(Adj)(A) φάσεις(A) καὶ(Kon) ἀποφάσεις(A) ὁμοιοτρόπως(Adv),
+(346) nicht seiend, und über die anderen Behauptungen und Verneinungen ähnlich|weise,
+(347) ἢ(Kon) οὒ(Pt) ἀλλὰ(Kon) περὶ(Prp) μέν(Pt) τινας(Pr)(A), περί(Prp) τινας(Pr)(A) δʼ(Pt) οὔ(Pt).
+(347) oder nicht aber über zwar einige, über einige aber nicht.
+(348) καὶ(Kon) εἰ(Kon) μὲν(Pt) μὴ(Pt) περὶ(Prp) πάσας(Adj)(A), αὗται(Pr)(N) ἂν(Pt) εἶεν(Prä)(Akt)(Op) ὁμολογούμεναι(Prä)(M/P)(N)·
+(348) und wenn zwar nicht über alle, diese wohl wären anerkannt|werdend·
+(349) εἰ(Kon) δὲ(Pt) περὶ(Prp) πάσας(Adj)(A), πάλιν(Adv) ἤτοι(Kon) καθʼ(Prp) ὅσων(Pr)(G) τὸ(Art)(N) φῆσαι(Aor)(Inf)(Akt)
+(349) wenn aber über alle, wiederum entweder gemäß so|vieler das zu|behaupten
+(350) καὶ(Kon) ἀποφῆσαι(Aor)(Inf)(Akt) καὶ(Kon) καθʼ(Prp) ὅσων(Pr)(G) ἀποφῆσαι(Aor)(Inf)(Akt) καὶ(Kon) φῆσαι(Aor)(Inf)(Akt), ἢ(Kon) κατὰ(Prp)
+(350) und verneinen|zu|sagen und gemäß so|vieler verneinen|zu|sagen und behaupten|zu|sagen, oder gemäß
+(351) μὲν(Pt) ὧν(Pr)(G) φῆσαι(Aor)(Inf)(Akt) καὶ(Kon) ἀποφῆσαι(Aor)(Inf)(Akt), καθʼ(Prp) ὅσων(Pr)(G) δὲ(Pt) ἀποφῆσαι(Aor)(Inf)(Akt) οὐ(Pt)
+(351) zwar derer behaupten|zu|sagen und verneinen|zu|sagen, gemäß so|vieler aber verneinen|zu|sagen nicht
+(352) πάντων(Adj)(G) φῆσαι(Aor)(Inf)(Akt). καὶ(Kon) εἰ(Kon) μὲν(Pt) οὕτως(Adv), εἴη(Prä)(Akt)(Op) ἄν(Pt) τι(Pr)(N) παγίως(Adv)
+(352) aller behaupten|zu|sagen. und wenn zwar so, wäre wohl etwas fest
+(353) οὐκ(Pt) ὄν(Prä)(Akt)(N), καὶ(Kon) αὕτη(Pr)(N) βεβαία(Adj)(N) δόξα(N), καὶ(Kon) εἰ(Kon) τὸ(Art)(N) μὴ(Pt)
+(353) nicht seiend, und diese sichere Meinung, und wenn das nicht
+(354) εἶναι(Prä)(Inf)(Akt) βέβαιόν(Adj)(N) τι(Pr)(N) καὶ(Kon) γνώριμον(Adj)(N), γνωριμωτέρα(Adj)(Kmp)(N) ἂν(Pt) εἴη(Prä)(Akt)(Op) ἡ(Art)(N) φάσις(N)
+(354) zu|sein sicher etwas und bekannt, bekannter wohl wäre die Behauptung
+(355) ἡ(Art)(N) ἀντικειμένη(Prä)(M/P)(N)· εἰ(Kon) δὲ(Pt) ὁμοίως(Adv) καὶ(Kon) ὅσα(Pr)(N) ἀποφῆσαι(Aor)(Inf)(Akt) φάναι(Aor)(Inf)(Akt), ἀνάγκη(N)
+(355) die entgegengesetzt|seiende· wenn aber gleichermaßen auch so|viele verneinen|zu|sagen behaupten|zu|sagen, Notwendigkeit
+(356) ἤτοι(Kon) ἀληθὲς(Adj)(N) διαιροῦντα(Prä)(Akt)(A) λέγειν(Prä)(Inf)(Akt), οἷον(Kon) ὅτι(Kon) λευκὸν(Adj)(A) καὶ(Kon) πάλιν(Adv) ὅτι(Kon)
+(356) entweder wahr unterscheidend sagen, zum|Beispiel dass weiß und wiederum dass
+(357) οὐ(Pt) λευκόν(Adj)(A), ἢ(Kon) οὔ(Pt). καὶ(Kon) εἰ(Kon) μὲν(Pt) μὴ(Pt) ἀληθὲς(Adj)(N) διαιροῦντα(Prä)(Akt)(A)
+(357) nicht weiß, oder nicht. und wenn zwar nicht wahr unterscheidend
+(358) λέγειν(Prä)(Inf)(Akt), οὐ(Pt) λέγει(Prä)(Akt) τε(Pt) ταῦτα(Pr)(A) καὶ(Kon) οὐκ(Pt) ἔστιν(Prä)(Akt) οὐθέν(Pr)(N) (τὰ(Art)(N)
+(358) sagen, nicht sagt ja dieses und nicht ist nichts (die
+(359) δὲ(Pt) μὴ(Pt) ὄντα(Prä)(Akt)(A) πῶς(Adv) ἂν(Pt) φθέγξαιτο(Aor)(Med)(Op) ἢ(Kon) βαδίσειεν(Aor)(Akt)(Op); ), καὶ(Kon) πάντα(Adj)(A)
+(359) aber nicht seienden wie wohl würde|laut|geben oder würde|gehen; ), und alles
+(360) δʼ(Pt) ἂν(Pt) εἴη(Prä)(Akt)(Op) ἕν(Pr)(N), ὥσπερ(Kon) καὶ(Kon) πρότερον(Adv)(Kmp) εἴρηται(Per)(M/P), καὶ(Kon) ταὐτὸν(Adj)(N)
+(360) aber wohl wäre eins, so|wie auch früher ist|gesagt|worden, und dasselbe
+(361) ἔσται(Fu)(Akt) καὶ(Kon) ἄνθρωπος(N) καὶ(Kon) θεὸς(N) καὶ(Kon) τριήρης(N) καὶ(Kon) αἱ(Art)(N) ἀντιφάσεις(N)
+(361) wird|sein auch Mensch und Gott und Trireme und die Widersprüche
+(362) αὐτῶν(Pr)(G) (εἰ(Kon) γὰρ(Pt) ὁμοίως(Adv) καθʼ(Prp) ἑκάστου(Pr)(G), οὐδὲν(Pr)(N) διοίσει(Fu)(Akt) ἕτερον(Adj)(N) ἑτέρου(Adj)(G)·
+(362) ihrer (wenn denn gleichermaßen gemäß eines|jeden, nichts wird|sich|unterscheiden anderes des|anderen·
+(363) εἰ(Kon) γὰρ(Pt) διοίσει(Fu)(Akt), τοῦτʼ(Pr)(N) ἔσται(Fu)(Akt) ἀληθὲς(Adj)(N) καὶ(Kon) ἴδιον(Adj)(N))· ὁμοίως(Adv) δὲ(Pt)
+(363) wenn denn wird|sich|unterscheiden, dieses wird|sein wahr und eigen)· gleichermaßen aber
+(364) καὶ(Kon) εἰ(Kon) διαιροῦντα(Prä)(Akt)(A) ἐνδέχεται(Prä)(M/P) ἀληθεύειν(Prä)(Inf)(Akt), συμβαίνει(Prä)(Akt) τὸ(Art)(N) λεχθέν(Per)(Pas)(N), πρὸς(Prp) δὲ(Pt)
+(364) und wenn unterscheidend ist|möglich wahr|sagen, folgt das Gesagte, zu aber
+(365) τούτῳ(Pr)(D) ὅτι(Kon) πάντες(Adj)(N) ἂν(Pt) ἀληθεύοιεν(Prä)(Akt)(Op) καὶ(Kon) πάντες(Adj)(N) ἂν(Pt) ψεύδοιντο(Prä)(M/P)(Op), καὶ(Kon)
+(365) diesem dass alle wohl würden|wahr|reden und alle wohl würden|lügen, und
+(366) αὐτὸς(Pr)(N) αὑτὸν(Pr)(A) ὁμολογεῖ(Prä)(Akt) ψεύδεσθαι(Prä)(M/P)(Inf). ἅμα(Adv) δὲ(Pt) φανερὸν(Adj)(N) ὅτι(Kon) περὶ(Prp) οὐθενός(Pr)(G)
+(366) selbst sich|selbst gesteht zu|lügen. zugleich aber offenbar dass über von|nichts
+(367) ἐστι(Prä)(Akt) πρὸς(Prp) τοῦτον(Pr)(A) ἡ(Art)(N) σκέψις(N)· οὐθὲν(Pr)(N) γὰρ(Pt) λέγει(Prä)(Akt). οὔτε(Kon) γὰρ(Pt)
+(367) ist zu diesen die Untersuchung· nichts denn sagt. weder denn
+(368) οὕτως(Adv) οὔτʼ(Kon) οὐχ(Pt) οὕτως(Adv) λέγει(Prä)(Akt), ἀλλʼ(Kon) οὕτως(Adv) τε(Pt) καὶ(Kon) οὐχ(Pt)
+(368) so noch nicht so sagt, sondern so und auch nicht
+(369) οὕτως(Adv)· καὶ(Kon) πάλιν(Adv) γε(Pt) ταῦτα(Pr)(A) ἀπόφησιν(A) ἄμφω(Adj)(Du), ὅτι(Kon) οὔθʼ(Kon) οὕτως(Adv)
+(369) so· und wieder doch dieses Verneinung beide, dass weder so
+(370) οὔτε(Kon) οὐχ(Pt) οὕτως(Adv)· εἰ(Kon) γὰρ(Pt) μή(Pt), ἤδη(Adv) ἄν(Pt) τι(Pr)(N) εἴη(Prä)(Akt)(Op)
+(370) noch nicht so· wenn denn nicht, schon wohl etwas wäre
+(371) ὡρισμένον(Per)(M/P)(N). — ἔτι(Adv) εἰ(Kon) ὅταν(Kon) ἡ(Art)(N) φάσις(N) ἀληθὴς(Adj)(N) ᾖ(Prä)(Akt)(Knj), ἡ(Art)(N) ἀπόφασις(N) ψευδής(Adj)(N),
+(371) bestimmt. — weiter wenn immer|wenn die Behauptung wahr sei, die Verneinung falsch,
+(372) κἂν(Kon)(Pt) αὕτη(Pr)(N) ἀληθὴς(Adj)(N) ᾖ(Prä)(Akt)(Knj), ἡ(Art)(N) κατάφασις(N) ψευδής(Adj)(N), οὐκ(Pt) ἂν(Pt) εἴη(Prä)(Akt)(Op)
+(372) und|wohl diese wahr sei, die Bejahung falsch, nicht wohl wäre
+(373) τὸ(Art)(N) αὐτὸ(Adj)(N) ἅμα(Adv) φάναι(Aor)(Inf)(Akt) καὶ(Kon) ἀποφάναι(Aor)(Inf)(Akt) ἀληθῶς(Adv).
+(373) das gleiche zugleich behaupten|zu|sagen und verneinen|zu|sagen wahrhaft.
+== St. 1008b ==
+(375) ἀλλʼ(Kon) ἴσως(Adv) φαῖεν(Aor)(Akt)(Op) ἂν(Pt) τοῦτʼ(Pr)(N) εἶναι(Prä)(Inf)(Akt) τὸ(Art)(N) ἐξ(Prp) ἀρχῆς(G) κείμενον(Per)(M/P)(N). — ἔτι(Adv)
+(375) aber vielleicht würden|sagen wohl dieses zu|sein das aus Anfangs liegend|gesetzt. — weiter
+(376) ἆρα(ij) ὁ(Art)(N) μὲν(Pt) ἢ(Kon) ἔχειν(Prä)(Inf)(Akt) πως(Adv) ὑπολαμβάνων(Prä)(Akt)(N) ἢ(Kon) μὴ(Pt) ἔχειν(Prä)(Inf)(Akt)
+(376) ob der zwar entweder zu|haben irgendwie annehmend oder nicht zu|haben
+(377) διέψευσται(Per)(M/P), ὁ(Art)(N) δὲ(Pt) ἄμφω(Adj)(Du) ἀληθεύει(Prä)(Akt); εἰ(Kon) γὰρ(Pt) ἀληθεύει(Prä)(Akt), τί(Pr)(N) ἂν(Pt)
+(377) ist|widerlegt, der aber beide wahr|redet; wenn denn wahr|redet, was wohl
+(378) εἴη(Prä)(Akt)(Op) τὸ(Art)(N) λεγόμενον(Prä)(M/P)(N) ὅτι(Kon) τοιαύτη(Adj)(N) τῶν(Art)(G) ὄντων(Prä)(Akt)(G) ἡ(Art)(N) φύσις(N); εἰ(Kon)
+(378) wäre das Gesagte dass so|beschaffen der Seienden die Natur; wenn
+(379) δὲ(Pt) μὴ(Pt) ἀληθεύει(Prä)(Akt), ἀλλὰ(Kon) μᾶλλον(Adv)(Kmp) ἀληθεύει(Prä)(Akt) ἢ(Kon) ὁ(Art)(N) ἐκείνως(Adv) ὑπολαμβάνων(Prä)(Akt)(N),
+(379) aber nicht wahr|redet, sondern mehr wahr|redet als der so|jenermaßen annehmend,
+(380) ἤδη(Adv) πως(Adv) ἔχοι(Prä)(Akt)(Op) ἂν(Pt) τὰ(Art)(N) ὄντα(Prä)(Akt)(N), καὶ(Kon) τοῦτʼ(Pr)(N) ἀληθὲς(Adj)(N) ἂν(Pt)
+(380) schon irgendwie würde|sich|verhalten wohl die Seienden, und dieses wahr wohl
+(381) εἴη(Prä)(Akt)(Op), καὶ(Kon) οὐχ(Pt) ἅμα(Adv) καὶ(Kon) οὐκ(Pt) ἀληθές(Adj)(N). εἰ(Kon) δὲ(Pt) ὁμοίως(Adv)
+(381) wäre, und nicht zugleich und nicht wahr. wenn aber gleichermaßen
+(382) ἅπαντες(Adj)(N) καὶ(Kon) ψεύδονται(Prä)(M/P) καὶ(Kon) ἀληθῆ(Adj)(A) λέγουσιν(Prä)(Akt), οὔτε(Kon) φθέγξασθαι(Aor)(Med)(Inf) οὔτʼ(Kon) εἰπεῖν(Aor)(Akt)(Inf)
+(382) alle und lügen und Wahres sagen, weder zu|laut|geben noch zu|sagen
+(383) τῷ(Art)(D) τοιούτῳ(Adj)(D) ἔσται(Fu)(Akt)· ἅμα(Adv) γὰρ(Pt) ταῦτά(Pr)(A) τε(Pt) καὶ(Kon) οὐ(Pt) ταῦτα(Pr)(A)
+(383) dem solchen wird|sein· zugleich denn diese und auch nicht diese
+(384) λέγει(Prä)(Akt). εἰ(Kon) δὲ(Pt) μηθὲν(Pr)(N) ὑπολαμβάνει(Prä)(Akt) ἀλλʼ(Kon) ὁμοίως(Adv) οἴεται(Prä)(M/P) καὶ(Kon) οὐκ(Pt)
+(384) sagt. wenn aber nichts nimmt|an sondern gleichermaßen meint und nicht
+(385) οἴεται(Prä)(M/P), τί(Pr)(N) ἂν(Pt) διαφερόντως(Adv) ἔχοι(Prä)(Akt)(Op) τῶν(Art)(G) γε(Pt) φυτῶν(G); ὅθεν(Adv) καὶ(Kon)
+(385) meint, was wohl verschieden würde|sich|verhalten der ja Pflanzen; woher auch
+(386) μάλιστα(Adv)(Sup) φανερόν(Adj)(N) ἐστιν(Prä)(Akt) ὅτι(Kon) οὐδεὶς(Pr)(N) οὕτω(Adv) διάκειται(Prä)(M/P) οὔτε(Kon) τῶν(Art)(G) ἄλλων(Adj)(G)
+(386) am|meisten offenbar ist dass niemand so ist|gestimmt weder der anderen
+(387) οὔτε(Kon) τῶν(Art)(G) λεγόντων(Prä)(Akt)(G) τὸν(Art)(A) λόγον(A) τοῦτον(Pr)(A). διὰ(Prp) τί(Pr)(N) γὰρ(Pt) βαδίζει(Prä)(Akt)
+(387) noch der sagend|seienden den Spruch diesen. wegen warum denn geht
+(388) Μέγαράδε(Adv) ἀλλʼ(Kon) οὐχ(Pt) ἡσυχάζει(Prä)(Akt), οἰόμενος(Prä)(M/P)(N) βαδίζειν(Prä)(Inf)(Akt) δεῖν(Prä)(Inf)(Akt); οὐδʼ(Kon) εὐθέως(Adv) ἕωθεν(Adv)
+(388) nach|Megara sondern nicht ruht, meinend zu|gehen müssen; auch|nicht sogleich früh|morgens
+(389) πορεύεται(Prä)(M/P) εἰς(Prp) φρέαρ(A) ἢ(Kon) εἰς(Prp) φάραγγα(A), ἐὰν(Kon) τύχῃ(Aor)(Akt)(Knj), ἀλλὰ(Kon) φαίνεται(Prä)(M/P)
+(389) geht in Brunnen oder in Schlucht, falls es|treffe, sondern erscheint
+(390) εὐλαβούμενος(Prä)(M/P)(N), ὡς(Kon) οὐχ(Pt) ὁμοίως(Adv) οἰόμενος(Prä)(M/P)(N) μὴ(Pt) ἀγαθὸν(Adj)(N) εἶναι(Prä)(Inf)(Akt) τὸ(Art)(N) ἐμπεσεῖν(Aor)(Akt)(Inf)
+(390) vorsichtig|seiend, als|ob nicht gleichermaßen meinend nicht gut zu|sein das hinein|fallen
+(391) καὶ(Kon) ἀγαθόν(Adj)(N); δῆλον(Adj)(N) ἄρα(Pt) ὅτι(Kon) τὸ(Art)(N) μὲν(Pt) βέλτιον(Adj)(Kmp)(N) ὑπολαμβάνει(Prä)(Akt) τὸ(Art)(N)
+(391) und gut; offenbar also dass das zwar Bessere nimmt|an das
+(392) δʼ(Pt) οὐ(Pt) βέλτιον(Adj)(Kmp)(N). εἰ(Kon) δὲ(Pt) τοῦτο(Pr)(N), καὶ(Kon) τὸ(Art)(N) μὲν(Pt) ἄνθρωπον(A)
+(392) aber nicht besser. wenn aber dies, und das zwar Menschen
+(393) τὸ(Art)(N) δʼ(Pt) οὐκ(Pt) ἄνθρωπον(A) καὶ(Kon) τὸ(Art)(N) μὲν(Pt) γλυκὺ(Adj)(N) τὸ(Art)(N) δʼ(Pt)
+(393) das aber nicht Menschen und das zwar süß das aber
+(394) οὐ(Pt) γλυκὺ(Adj)(N) ἀνάγκη(N) ὑπολαμβάνειν(Prä)(Inf)(Akt). οὐ(Pt) γὰρ(Pt) ἐξ(Prp) ἴσου(Adj)(G) ἅπαντα(Adj)(A) ζητεῖ(Prä)(Akt)
+(394) nicht süß Notwendigkeit anzunehmen. nicht denn aus Gleichen alles sucht
+(395) καὶ(Kon) ὑπολαμβάνει(Prä)(Akt), ὅταν(Kon) οἰηθεὶς(Aor)(M/P)(N) βέλτιον(Adj)(Kmp)(N) εἶναι(Prä)(Inf)(Akt) τὸ(Art)(N) πιεῖν(Aor)(Akt)(Inf) ὕδωρ(A) καὶ(Kon)
+(395) und nimmt|an, wenn|immer gemeint|habend besser zu|sein das zu|trinken Wasser und
+(396) ἰδεῖν(Aor)(Akt)(Inf) ἄνθρωπον(A) εἶτα(Adv) ζητῇ(Prä)(Akt)(Knj) αὐτά(Pr)(A)· καίτοι(Pt) ἔδει(Imp)(Akt) γε(Pt), εἰ(Kon) ταὐτὸν(Adj)(N)
+(396) zu|sehen Menschen danach suche diese· und|doch war|nötig ja, wenn dasselbe
+(397) ἦν(Imp)(Akt) ὁμοίως(Adv) καὶ(Kon) ἄνθρωπος(N) καὶ(Kon) οὐκ(Pt) ἄνθρωπος(N). ἀλλʼ(Kon) ὅπερ(Pr)(N) ἐλέχθη(Aor)(Pas),
+(397) war gleichermaßen und Mensch und nicht Mensch. sondern welches|eben wurde|gesagt,
+(398) οὐθεὶς(Pr)(N) ὃς(Pr)(N) οὐ(Pt) φαίνεται(Prä)(M/P) τὰ(Art)(A) μὲν(Pt) εὐλαβούμενος(Prä)(M/P)(N) τὰ(Art)(A) δʼ(Pt) οὔ(Pt)·
+(398) niemand welcher nicht erscheint die zwar vorsichtig|seiend die aber nicht·
+(399) ὥστε(Kon), ὡς(Kon) ἔοικε(Per)(Akt), πάντες(Adj)(N) ὑπολαμβάνουσιν(Prä)(Akt) ἔχειν(Prä)(Inf)(Akt) ἁπλῶς(Adv), εἰ(Kon) μὴ(Pt) περὶ(Prp)
+(399) so|dass, wie es|scheint, alle nehmen|an haben einfach, wenn nicht über
+(400) ἅπαντα(Adj)(A), ἀλλὰ(Kon) περὶ(Prp) τὸ(Art)(N) ἄμεινον(Adj)(Kmp)(N) καὶ(Kon) χεῖρον(Adj)(Kmp)(N). εἰ(Kon) δὲ(Pt) μὴ(Pt)
+(400) alles, sondern über das Bessere und das|Schlechtere. wenn aber nicht
+(401) ἐπιστάμενοι(Prä)(M/P)(N) ἀλλὰ(Kon) δοξάζοντες(Prä)(Akt)(N), πολὺ(Adv) μᾶλλον(Adv)(Kmp) ἐπιμελητέον(Adj)(N) ἂν(Pt) εἴη(Prä)(Akt)(Op) τῆς(Art)(G) ἀληθείας(G),
+(401) wissend|seiend sondern meinend|seiend, viel mehr zu|pflegen wohl wäre der Wahrheit,
+(402) ὥσπερ(Kon) καὶ(Kon) νοσώδει(Adj)(D) ὄντι(Prä)(Akt)(D) ἢ(Kon) ὑγιεινῷ(Adj)(D) τῆς(Art)(G) ὑγιείας(G)· καὶ(Kon) γὰρ(Pt)
+(402) so|wie auch krankhaft|seiendem seiend oder gesundem der Gesundheit· und denn
+(403) ὁ(Art)(N) δοξάζων(Prä)(Akt)(N) πρὸς(Prp) τὸν(Art)(A) ἐπιστάμενον(Prä)(M/P)(A) οὐχ(Pt) ὑγιεινῶς(Adv) διάκειται(Prä)(M/P) πρὸς(Prp) τὴν(Art)(A)
+(403) der meinend|seiend zu den Wissenden nicht gesundheitlich ist|gestimmt zu die
+(404) ἀλήθειαν(A). — ἔτι(Adv) εἰ(Kon) ὅτι(Kon) μάλιστα(Adv)(Sup) πάντα(Adj)(A) οὕτως(Adv) ἔχει(Prä)(Akt) καὶ(Kon) οὐχ(Pt) οὕτως(Adv),
+(404) Wahrheit. — noch wenn so|sehr wie|möglich alles so verhält|es|sich und nicht so,
+(405) ἀλλὰ(Kon) τό(Art)(N) γε(Pt) μᾶλλον(Adv)(Kmp) καὶ(Kon) ἧττον(Adv)(Kmp) ἔνεστιν(Prä)(Akt) ἐν(Prp) τῇ(Art)(D) φύσει(D)
+(405) aber das ja mehr und weniger ist|vorhanden in der Natur
+(406) τῶν(Art)(G) ὄντων(Prä)(Akt)(G)· οὐ(Pt) γὰρ(Pt) ἂν(Pt) ὁμοίως(Adv) φήσαιμεν(Aor)(Akt)(Op) εἶναι(Prä)(Inf)(Akt) τὰ(Art)(A) δύο(Adj)(A)
+(406) der Seienden· nicht denn wohl gleichermaßen würden|wir|sagen zu|sein die zwei
+(407) ἄρτια(Adj)(A) καὶ(Kon) τὰ(Art)(A) τρία(Adj)(A), οὐδʼ(Kon) ὁμοίως(Adv) διέψευσται(Per)(M/P) ὁ(Art)(N) τὰ(Art)(A) τέτταρα(Adj)(A)
+(407) geraden und die drei, noch gleichermaßen ist|widerlegt der die vier
+(408) πέντε(Adj)(A) οἰόμενος(Prä)(M/P)(N) καὶ(Kon) ὁ(Art)(N) χίλια(Adj)(A). εἰ(Kon) οὖν(Pt) μὴ(Pt) ὁμοίως(Adv), δῆλον(Adj)(N)
+(408) fünf meinend und der tausend. wenn nun nicht gleichermaßen, klar
+(409) ὅτι(Kon) ἅτερος(Adj)(N) ἧττον(Adv)(Kmp), ὥστε(Kon) μᾶλλον(Adv)(Kmp) ἀληθεύει(Prä)(Akt). εἰ(Kon) οὖν(Pt) τὸ(Art)(N) μᾶλλον(Adv)(Kmp)
+(409) dass der|eine weniger, so|dass mehr wahr|redet. wenn nun das mehr
+(410) ἐγγύτερον(Adv)(Kmp),
+(410) näher,
+== St. 1009a ==
+(412) εἴη(Prä)(Akt)(Op) γε(Pt) ἄν(Pt) τι(Pr)(N) ἀληθὲς(Adj)(N) οὗ(Pr)(G) ἐγγύτερον(Adv)(Kmp) τὸ(Art)(N) μᾶλλον(Adv)(Kmp) ἀληθές(Adj)(N).
+(412) wäre ja wohl etwas wahr dessen näher das mehr wahr.
+(413) κἂν(Kon)(Pt) εἰ(Kon) μὴ(Pt) ἔστιν(Prä)(Akt), ἀλλʼ(Kon) ἤδη(Adv) γέ(Pt) τι(Pr)(N) ἔστι(Prä)(Akt) βεβαιότερον(Adj)(Kmp)(N)
+(413) und|wohl wenn nicht ist, sondern schon ja etwas ist sicherer
+(414) καὶ(Kon) ἀληθινώτερον(Adj)(Kmp)(N), καὶ(Kon) τοῦ(Art)(G) λόγου(G) ἀπηλλαγμένοι(Per)(M/P)(N) ἂν(Pt) εἴημεν(Prä)(Akt)(Op) τοῦ(Art)(G) ἀκράτου(Adj)(G)
+(414) und wahrer, und des Wortes befreit|seiend wohl wären|wir des ungebändigten
+(415) καὶ(Kon) κωλύοντός(Prä)(Akt)(G) τι(Pr)(A) τῇ(Art)(D) διανοίᾳ(D) ὁρίσαι(Aor)(Akt)(Inf).
+(415) und hindernden etwas dem Denken zu|bestimmen.
+== St. 1009b ==
+= § 5 =
+(418) ἔστι(Prä)(Akt) δʼ(Pt) ἀπὸ(Prp) τῆς(Art)(G) αὐτῆς(Pr)(G) δόξης(G) καὶ(Kon) ὁ(Art)(N) Πρωταγόρου(G) λόγος(N),
+(418) ist aber aus der derselben Meinung und der des|Protagoras Spruch,
+(419) καὶ(Kon) ἀνάγκη(N) ὁμοίως(Adv) αὐτοὺς(Pr)(A) ἄμφω(Adj)(Du)(A) ἢ(Kon) εἶναι(Prä)(Inf)(Akt) ἢ(Kon) μὴ(Pt) εἶναι(Prä)(Inf)(Akt)·
+(419) und Notwendigkeit gleichermaßen sie beide entweder zu|sein oder nicht zu|sein·
+(420) εἴτε(Kon) γὰρ(Pt) τὰ(Art)(N) δοκοῦντα(Prä)(Akt)(N) πάντα(Adj)(A) ἐστὶν(Prä)(Akt) ἀληθῆ(Adj)(A) καὶ(Kon) τὰ(Art)(N) φαινόμενα(Prä)(M/P)(N),
+(420) sei|es|dass denn die scheinenden alle sind wahr und die erscheinenden,
+(421) ἀνάγκη(N) εἶναι(Prä)(Inf)(Akt) πάντα(Adj)(A) ἅμα(Adv) ἀληθῆ(Adj)(A) καὶ(Kon) ψευδῆ(Adj)(A) (πολλοὶ(Adj)(N) γὰρ(Pt) τἀναντία(Art)(A)(Adj)(A)
+(421) Notwendigkeit zu|sein alles zugleich wahr und falsch (viele denn die|Gegenteiligen
+(422) ὑπολαμβάνουσιν(Prä)(Akt) ἀλλήλοις(Pr)(D), καὶ(Kon) τοὺς(Art)(A) μὴ(Pt) ταὐτὰ(Adj)(A) δοξάζοντας(Prä)(Akt)(A) ἑαυτοῖς(Pr)(D) διεψεῦσθαι(Aor)(M/P)(Inf) νομίζουσιν(Prä)(Akt)·
+(422) nehmen|an einander, und die nicht dieselben meinenden sich|selbst widerlegt|zu|haben meinen·
+(423) ὥστʼ(Kon) ἀνάγκη(N) τὸ(Art)(N) αὐτὸ(Adj)(N) εἶναί(Prä)(Inf)(Akt) τε(Pt) καὶ(Kon) μὴ(Pt) εἶναι(Prä)(Inf)(Akt)), καὶ(Kon)
+(423) so|dass Notwendigkeit das selbe zu|sein auch und nicht zu|sein), und
+(424) εἰ(Kon) τοῦτʼ(Pr)(N) ἔστιν(Prä)(Akt), ἀνάγκη(N) τὰ(Art)(N) δοκοῦντα(Prä)(Akt)(N) εἶναι(Prä)(Inf)(Akt) πάντʼ(Adj)(A) ἀληθῆ(Adj)(A) (τὰ(Art)(N)
+(424) wenn dieses ist, Notwendigkeit die scheinenden zu|sein alles wahr (die
+(425) ἀντικείμενα(Prä)(M/P)(N) γὰρ(Pt) δοξάζουσιν(Prä)(Akt) ἀλλήλοις(Pr)(D) οἱ(Art)(N) διεψευσμένοι(Per)(M/P)(N) καὶ(Kon) ἀληθεύοντες(Prä)(Akt)(N)· εἰ(Kon) οὖν(Pt)
+(425) Entgegengesetzten denn behaupten einander die widerlegt|seienden und wahr|redenden· wenn nun
+(426) ἔχει(Prä)(Akt) τὰ(Art)(N) ὄντα(Prä)(Akt)(N) οὕτως(Adv), ἀληθεύσουσι(Fu)(Akt) πάντες(Adj)(N)) . ὅτι(Kon) μὲν(Pt) οὖν(Pt)
+(426) verhält|es|sich die Seienden so, werden|wahr|reden alle) . dass zwar nun
+(427) ἀπὸ(Prp) τῆς(Art)(G) αὐτῆς(Pr)(G) εἰσὶ(Prä)(Akt) διανοίας(G) ἀμφότεροι(Adj)(N) οἱ(Art)(N) λόγοι(N), δῆλον(Adj)(N)· ἔστι(Prä)(Akt)
+(427) aus der derselben sind des|Denkens beide die Sprüche, klar· ist
+(428) δʼ(Pt) οὐχ(Pt) ὁ(Art)(N) αὐτὸς(Adj)(N) τρόπος(N) πρὸς(Prp) ἅπαντας(Adj)(A) τῆς(Art)(G) ἐντεύξεως(G)· οἱ(Art)(N)
+(428) aber nicht der gleiche Weise zu allen der Begegnung· die
+(429) μὲν(Pt) γὰρ(Pt) πειθοῦς(G) δέονται(Prä)(M/P) οἱ(Art)(N) δὲ(Pt) βίας(G). ὅσοι(Pr)(N) μὲν(Pt) γὰρ(Pt)
+(429) zwar denn der|Überredung bedürfen die aber der|Gewalt. soviele zwar denn
+(430) ἐκ(Prp) τοῦ(Art)(G) ἀπορῆσαι(Aor)(Akt)(Inf) ὑπέλαβον(Aor)(Akt) οὕτως(Adv), τούτων(Pr)(G) εὐΐατος(Adj)(N) ἡ(Art)(N) ἄγνοια(N) (οὐ(Pt)
+(430) aus dem Ratlos|sein nahmen|an so, dieser leicht|heilbar die Unwissenheit (nicht
+(431) γὰρ(Pt) πρὸς(Prp) τὸν(Art)(A) λόγον(A) ἀλλὰ(Kon) πρὸς(Prp) τὴν(Art)(A) διάνοιαν(A) ἡ(Art)(N) ἀπάντησις(N)
+(431) denn zu den Spruch sondern zu die Denken die Antwort
+(432) αὐτῶν(Pr)(G))· ὅσοι(Pr)(N) δὲ(Pt) λόγου(G) χάριν(A) λέγουσι(Prä)(Akt), τούτων(Pr)(G) δʼ(Pt) ἔλεγχος(N) ἴασις(N)
+(432) ihrer)· soviele|wie aber des|Spruchs um|willen sagen, dieser aber Widerlegung Heilung
+(433) τοῦ(Art)(G) ἐν(Prp) τῇ(Art)(D) φωνῇ(D) λόγου(G) καὶ(Kon) τοῦ(Art)(G) ἐν(Prp) τοῖς(Art)(D) ὀνόμασιν(D).
+(433) des in der Stimme Spruchs und des in den Namen.
+(434) ἐλήλυθε(Per)(Akt) δὲ(Pt) τοῖς(Art)(D) διαποροῦσιν(Prä)(Akt)(D) αὕτη(Pr)(N) ἡ(Art)(N) δόξα(N) ἐκ(Prp) τῶν(Art)(G) αἰσθητῶν(Adj)(G),
+(434) ist|gekommen aber den Zweifelnden diese die Meinung aus den Wahrnehmbaren,
+(435) ἡ(Art)(N) μὲν(Pt) τοῦ(Art)(G) ἅμα(Adv) τὰς(Art)(A) ἀντιφάσεις(A) καὶ(Kon) τἀναντία(Art)(A)(Adj)(A) ὑπάρχειν(Prä)(Inf)(Akt) ὁρῶσιν(Prä)(Akt)
+(435) die zwar der zugleich die Widersprüche und die|Gegenteiligen zu|bestehen sehen
+(436) ἐκ(Prp) ταὐτοῦ(Adj)(G) γιγνόμενα(Prä)(M/P)(N) τἀναντία(Art)(N)(Adj)(N)· εἰ(Kon) οὖν(Pt) μὴ(Pt) ἐνδέχεται(Prä)(M/P) γίγνεσθαι(Prä)(M/P)(Inf) τὸ(Art)(A)
+(436) aus dem|Selben werdend die|Gegenteiligen· wenn nun nicht ist|möglich zu|werden das
+(437) μὴ(Pt) ὄν(Prä)(Akt)(N), προϋπῆρχεν(Imp)(Akt) ὁμοίως(Adv) τὸ(Art)(N) πρᾶγμα(N) ἄμφω(Adj)(Du)(N) ὄν(Prä)(Akt)(N), ὥσπερ(Kon) καὶ(Kon)
+(437) nicht seiend, bestand|zuvor gleichermaßen die Sache beide seiend, so|wie auch
+(438) Ἀναξαγόρας(N) μεμῖχθαι(Per)(M/P)(Inf) πᾶν(Adj)(N) ἐν(Prp) παντί(Adj)(D) φησι(Prä)(Akt) καὶ(Kon) Δημόκριτος(N)· καὶ(Kon) γὰρ(Pt)
+(438) Anaxagoras gemischt|zu|sein alles in jedem sagt und Demokrit· und denn
+(439) οὗτος(Pr)(N) τὸ(Art)(N) κενὸν(Adj)(N) καὶ(Kon) τὸ(Art)(N) πλῆρες(Adj)(N) ὁμοίως(Adv) καθʼ(Prp) ὁτιοῦν(Pr) ὑπάρχειν(Prä)(Inf)(Akt)
+(439) dieser das Leere und das Volle ähnlich gemäß wie|auch|immer zu|bestehen
+(440) μέρος(N), καίτοι(Pt) τὸ(Art)(N) μὲν(Pt) ὂν(Prä)(Akt)(N) τούτων(Pr)(G) εἶναι(Prä)(Inf)(Akt) τὸ(Art)(N) δὲ(Pt) μὴ(Pt)
+(440) Teil, und|doch das zwar seiend dieser zu|sein das aber nicht
+(441) ὄν(Prä)(Akt)(N). πρὸς(Prp) μὲν(Pt) οὖν(Pt) τοὺς(Art)(A) ἐκ(Prp) τούτων(Pr)(G) ὑπολαμβάνοντας(Prä)(Akt)(A) ἐροῦμεν(Fu)(Akt) ὅτι(Kon)
+(441) seiend. zu zwar nun die aus diesen annehmenden werden|wir|sagen dass
+(442) τρόπον(A) μέν(Pt) τινα(Pr)(A) ὀρθῶς(Adv) λέγουσι(Prä)(Akt) τρόπον(A) δέ(Pt) τινα(Pr)(A) ἀγνοοῦσιν(Prä)(Akt)· τὸ(Art)(N)
+(442) Weise zwar irgendeine richtig sagen Weise aber irgendeine nicht|kennen· das
+(443) γὰρ(Pt) ὂν(Prä)(Akt)(N) λέγεται(Prä)(M/P) διχῶς(Adv), ὥστʼ(Kon) ἔστιν(Prä)(Akt) ὃν(Pr)(A) τρόπον(A) ἐνδέχεται(Prä)(M/P) γίγνεσθαί(Prä)(M/P)(Inf)
+(443) denn seiend wird|gesagt zweifach, so|dass ist in|welcher Weise ist|möglich zu|werden
+(444) τι(Pr)(N) ἐκ(Prp) τοῦ(Art)(G) μὴ(Pt) ὄντος(Prä)(Akt)(G), ἔστι(Prä)(Akt) δʼ(Pt) ὃν(Pr)(A) οὔ(Pt), καὶ(Kon)
+(444) etwas aus dem nicht Seienden, ist aber in|welcher nicht, und
+(445) ἅμα(Adv) τὸ(Art)(N) αὐτὸ(Adj)(N) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) ὂν(Prä)(Akt)(N) καὶ(Kon) μὴ(Pt) ὄν(Prä)(Akt)(N), ἀλλʼ(Kon)
+(445) zugleich das selbe zu|sein und seiend und nicht seiend, sondern
+(446) οὐ(Pt) κατὰ(Prp) ταὐτὸ(Adj)(A) ὄν(Prä)(Akt)(N)· δυνάμει(D) μὲν(Pt) γὰρ(Pt) ἐνδέχεται(Prä)(M/P) ἅμα(Adv) ταὐτὸ(Adj)(A)
+(446) nicht gemäß dasselbe seiend· der|Möglichkeit|nach zwar denn ist|möglich zugleich dasselbe
+(447) εἶναι(Prä)(Inf)(Akt) τὰ(Art)(N) ἐναντία(Adj)(N), ἐντελεχείᾳ(D) δʼ(Pt) οὔ(Pt). ἔτι(Adv) δʼ(Pt) ἀξιώσομεν(Fu)(Akt) αὐτοὺς(Pr)(A)
+(447) zu|sein die Gegenteiligen, in|Wirklichkeit aber nicht. noch aber werden|wir|fordern sie
+(448) ὑπολαμβάνειν(Prä)(Akt)(Inf) καὶ(Kon) ἄλλην(Adj)(A) τινὰ(Pr)(A) οὐσίαν(A) εἶναι(Prä)(Inf)(Akt) τῶν(Art)(G) ὄντων(Prä)(Akt)(G) ᾗ(Pr)(D) οὔτε(Kon)
+(448) anzunehmen und andere irgendeine Substanz zu|sein der Seienden in|sofern weder
+(449) κίνησις(N) ὑπάρχει(Prä)(Akt) οὔτε(Kon) φθορὰ(N) οὔτε(Kon) γένεσις(N) τὸ(Art)(N) παράπαν(Adv). —ὅμοιως(Adv) δὲ(Pt)
+(449) Bewegung besteht weder Verderbung noch Entstehung das überhaupt. —ähnlich|weise aber
+(450) καὶ(Kon) ἡ(Art)(N) περὶ(Prp) τὰ(Art)(A) φαινόμενα(Prä)(M/P)(A) ἀλήθεια(N) ἐνίοις(Adj)(D) ἐκ(Prp) τῶν(Art)(G) αἰσθητῶν(Adj)(G)
+(450) auch die über die Erscheinungen Wahrheit einigen aus den Wahrnehmbaren
+(451) ἐλήλυθεν(Per)(Akt). τὸ(Art)(N) μὲν(Pt) γὰρ(Pt) ἀληθὲς(Adj)(N) οὐ(Pt) πλήθει(D) κρίνεσθαι(Prä)(M/P)(Inf) οἴονται(Prä)(M/P) προσήκειν(Prä)(Akt)(Inf)
+(451) ist|gekommen. das zwar denn Wahre nicht von|der|Menge beurteilt|zu|werden meinen zukommen
+(452) οὐδὲ(Kon) ὀλιγότητι(D), τὸ(Art)(N) δʼ(Pt) αὐτὸ(Adj)(N) τοῖς(Art)(D) μὲν(Pt) γλυκὺ(Adj)(N) γευομένοις(Prä)(M/P)(D) δοκεῖν(Prä)(Akt)(Inf)
+(452) auch|nicht von|der|Wenigkeit, das aber selbe den zwar süß kostenden scheinen
+(453) εἶναι(Prä)(Inf)(Akt) τοῖς(Art)(D) δὲ(Pt) πικρόν(Adj)(N), ὥστʼ(Kon) εἰ(Kon) πάντες(Adj)(N) ἔκαμνον(Imp)(Akt) ἢ(Kon) πάντες(Adj)(N)
+(453) zu|sein den aber bitter, so|dass wenn alle krank|waren oder alle
+(454) παρεφρόνουν(Imp)(Akt), δύο(Adj)(N) δʼ(Pt) ἢ(Kon) τρεῖς(Adj)(N) ὑγίαινον(Imp)(Akt) ἢ(Kon) νοῦν(A) εἶχον(Imp)(Akt), δοκεῖν(Prä)(Akt)(Inf)
+(454) wahnsinnig|waren, zwei aber oder drei gesund|waren oder Verstand hatten, scheinen
+(455) ἂν(Pt) τούτους(Pr)(A) κάμνειν(Prä)(Akt)(Inf) καὶ(Kon) παραφρονεῖν(Prä)(Akt)(Inf) τοὺς(Art)(A) δʼ(Pt) ἄλλους(Adj)(A) οὔ(Pt)· ἔτι(Adv)
+(455) wohl diese krank|sein und wahnsinnig|sein die aber anderen nicht· noch
+(456) δὲ(Pt) καὶ(Kon) πολλοῖς(Adj)(D) τῶν(Art)(G) ἄλλων(Adj)(G) ζῴων(G) τἀναντία(Art)(N)(Adj)(N) περὶ(Prp) τῶν(Art)(G) αὐτῶν(Adj)(G)
+(456) aber auch vielen der anderen Tiere die|Gegenteiligen über der selben
+(457) φαίνεσθαι(Prä)(M/P)(Inf) καὶ(Kon) ἡμῖν(Pr)(D), καὶ(Kon) αὐτῷ(Pr)(D) δὲ(Pt) ἑκάστῳ(Adj)(D) πρὸς(Prp) αὑτὸν(Pr)(A) οὐ(Pt)
+(457) zu|erscheinen auch uns, und ihm aber jedem zu sich|selbst nicht
+(458) ταὐτὰ(Adj)(N) κατὰ(Prp) τὴν(Art)(A) αἴσθησιν(A) ἀεὶ(Adv) δοκεῖν(Prä)(Akt)(Inf). ποῖα(Adj)(N) οὖν(Pt) τούτων(Pr)(G) ἀληθῆ(Adj)(N)
+(458) dieselben gemäß die Wahrnehmung immer scheinen. welche nun dieser wahr
+(459) ἢ(Kon) ψευδῆ(Adj)(N), ἄδηλον(Adj)(N)· οὐθὲν(Pr)(N) γὰρ(Pt) μᾶλλον(Adv)(Kmp) τάδε(Pr)(N) ἢ(Kon) τάδε(Pr)(N) ἀληθῆ(Adj)(N),
+(459) oder falsch, unklar· nichts denn mehr dieses|hier oder dieses|hier wahr,
+(460) ἀλλʼ(Kon) ὁμοίως(Adv). διὸ(Kon) Δημόκριτός(N) γέ(Pt) φησιν(Prä)(Akt) ἤτοι(Kon) οὐθὲν(Pr)(N) εἶναι(Prä)(Inf)(Akt) ἀληθὲς(Adj)(N)
+(460) sondern gleichermaßen. daher Demokrit ja sagt entweder nichts zu|sein wahr
+(461) ἢ(Kon) ἡμῖν(Pr)(D) γʼ(Pt) ἄδηλον(Adj)(N). ὅλως(Adv) δὲ(Pt) διὰ(Prp) τὸ(Art)(A) ὑπολαμβάνειν(Prä)(Inf)(Akt) φρόνησιν(A)
+(461) oder uns ja unklar. überhaupt aber durch das annehmen Einsicht
+(462) μὲν(Pt) τὴν(Art)(A) αἴσθησιν(A), ταύτην(Pr)(A) δʼ(Pt) εἶναι(Prä)(Inf)(Akt) ἀλλοίωσιν(A), τὸ(Art)(N) φαινόμενον(Prä)(M/P)(N) κατὰ(Prp)
+(462) zwar die Wahrnehmung, diese aber zu|sein Veränderung, das Erscheinende gemäß
+(463) τὴν(Art)(A) αἴσθησιν(A) ἐξ(Prp) ἀνάγκης(G) ἀληθὲς(Adj)(N) εἶναί(Prä)(Inf)(Akt) φασιν(Prä)(Akt)· ἐκ(Prp) τούτων(Pr)(G) γὰρ(Pt)
+(463) die Wahrnehmung aus Notwendigkeit wahr zu|sein sagen|sie· aus diesen denn
+(464) καὶ(Kon) Ἐμπεδοκλῆς(N) καὶ(Kon) Δημόκριτος(N) καὶ(Kon) τῶν(Art)(G) ἄλλων(Adj)(G) ὡς(Kon) ἔπος(A) εἰπεῖν(Aor)(Akt)(Inf)
+(464) und Empedokles und Demokrit und der anderen wie Wort zu|sagen
+(465) ἕκαστος(Pr)(N) τοιαύταις(Adj)(D) δόξαις(D) γεγένηνται(Per)(M/P) ἔνοχοι(Adj)(N). καὶ(Kon) γὰρ(Pt) Ἐμπεδοκλῆς(N) μεταβάλλοντας(Prä)(Akt)(A) τὴν(Art)(A)
+(465) jeder solchen Meinungen sind|geworden verfallen. und denn Empedokles wechselnd die
+(466) ἕξιν(A) μεταβάλλειν(Prä)(Inf)(Akt) φησὶ(Prä)(Akt) τὴν(Art)(A) φρόνησιν(A)·
+(466) Beschaffenheit verändern sagt die Einsicht·
+(467) [Zitat Anfang]
+(468) πρὸς(Prp) παρεὸν(Prä)(Akt)(A) γὰρ(Pt) μῆτις(N) ἐναύξεται(Fu)(M/P) ἀνθρώποισιν(D).
+(468) zu dem|Vorhandenen denn Klugheit wird|anwachsen den|Menschen|D.
+(469) [Zitat Ende]
+(470) [Quelle Anfang] Empedocles Fr. 106 [Quelle Ende]
+(471) [Quelle Anfang] Empedocles Fr. 106 [Quelle Ende]
+(472) καὶ(Kon) ἐν(Prp) ἑτέροις(Adj)(D) δὲ(Pt) λέγει(Prä)(Akt) ὅτι(Kon)
+(472) und in anderen aber sagt dass
+(473) [Zitat Anfang]
+(474) ὅσσον(Adj)(A) δʼ(Pt) ἀλλοῖοι(Adj)(N) μετέφυν(AorS)(Akt), τόσον(Adj)(A) ἄρ(Pt) σφισιν(Pr)(D) αἰεὶ(Adv)
+(474) wieviel aber verschieden wurden|verändert, so|viel ja ihnen|D immer
+(475) καὶ(Kon) τὸ(Art)(N) φρονεῖν(Prä)(Inf)(Akt) ἀλλοῖα(Adj)(N) παρίστατο(Imp)(M/P).
+(475) und das Denken anders|artig stellte|sich|dar.
+(476) [Zitat Ende]
+(477) [Quelle Anfang] Empedocles Fr. 108 [Quelle Ende]
+(478) [Quelle Anfang] Empedocles Fr. 108 [Quelle Ende]
+(479) καὶ(Kon) Παρμενίδης(N) δὲ(Pt) ἀποφαίνεται(Prä)(M/P) τὸν(Art)(A) αὐτὸν(Adj)(A) τρόπον(A)·
+(479) und Parmenides aber legt|dar die gleiche Weise·
+(480) [Zitat Anfang]
+(481) ὡς(Kon) γὰρ(Pt) ἑκάστοτʼ(Adv) ἔχει(Prä)(Akt) κρᾶσιν(A) μελέων(G) πολυκάμπτων(Adj)(G),
+(481) wie denn jedes|Mal hat Mischung der|Glieder viel|ge|bogener,
+(482) τὼς(Adv) νόος(N) ἀνθρώποισι(D) παρίσταται(Prä)(M/P)· τὸ(Art)(N) γὰρ(Pt) αὐτὸ(Adj)(N)
+(482) so Sinn den|Menschen|D stellt|sich|dar· das denn gleiche
+(483) ἔστιν(Prä)(Akt) ὅπερ(Pr)(N) φρονέει(Prä)(Akt), μελέων(G) φύσις(N) ἀνθρώποισιν(D)
+(483) ist welches|eben denkt, der|Glieder Natur den|Menschen|D
+(484) καὶ(Kon) πᾶσιν(Adj)(D) καὶ(Kon) παντί(Adj)(D)· τὸ(Art)(N) γὰρ(Pt) πλέον(Adj)(Kmp)(N) ἐστὶ(Prä)(Akt) νόημα(N).
+(484) und allen und jedem· das denn mehr ist Gedanke.
+(485) [Zitat Ende]
+(486) [Quelle Anfang] Parmenides Fr. 16 [Quelle Ende]
+(487) [Quelle Anfang] Parmenides Fr. 16 [Quelle Ende]
+(488) Ἀναξαγόρου(G) δὲ(Pt) καὶ(Kon) ἀπόφθεγμα(N) μνημονεύεται(Prä)(M/P) πρὸς(Prp) τῶν(Art)(G) ἑταίρων(G) τινάς(Pr)(A), ὅτι(Kon)
+(488) des|Anaxagoras aber auch Spruch wird|erinnert von|seiten der Gefährten einige, dass
+(489) τοιαῦτʼ(Adj)(N) αὐτοῖς(Pr)(D) ἔσται(Fu)(Akt) τὰ(Art)(N) ὄντα(Prä)(Akt)(N) οἷα(Pr)(N) ἂν(Pt) ὑπολάβωσιν(Aor)(Akt)(Knj). φασὶ(Prä)(Akt) δὲ(Pt)
+(489) solche ihnen wird|sein die Seienden welche wohl sie|annehmen. sagen|sie aber
+(490) καὶ(Kon) τὸν(Art)(A) Ὅμηρον(A) ταύτην(Pr)(A) ἔχοντα(Prä)(Akt)(A) φαίνεσθαι(Prä)(M/P)(Inf) τὴν(Art)(A) δόξαν(A), ὅτι(Kon) ἐποίησε(Aor)(Akt)
+(490) und den Homer diese habend zu|scheinen die Meinung, dass er|machte
+(491) τὸν(Art)(A) Ἕκτορα(A), ὡς(Kon) ἐξέστη(AorS)(Akt) ὑπὸ(Prp) τῆς(Art)(G) πληγῆς(G), κεῖσθαι(Prä)(M/P)(Inf) ἀλλοφρονέοντα(Prä)(Akt)(A), ὡς(Kon)
+(491) den Hektor, wie er|geriet|aus|sich unter der Wunde, zu|liegen anders|denkend, wie
+(492) φρονοῦντας(Prä)(Akt)(A) μὲν(Pt) καὶ(Kon) τοὺς(Art)(A) παραφρονοῦντας(Prä)(Akt)(A) ἀλλʼ(Kon) οὐ(Pt) ταὐτά(Adj)(N). δῆλον(Adj)(N) οὖν(Pt)
+(492) Denkende zwar und die wahn|sinnigen aber nicht dieselben. klar nun
+(493) ὅτι(Kon), εἰ(Kon) ἀμφότεραι(Adj)(N) φρονήσεις(N), καὶ(Kon) τὰ(Art)(N) ὄντα(Prä)(Akt)(N) ἅμα(Adv) οὕτω(Adv) τε(Pt)
+(493) dass, wenn beide Einsichten, auch die Seienden zugleich so und
+(494) καὶ(Kon) οὐχ(Pt) οὕτως(Adv) ἔχει(Prä)(Akt). ᾗ(Kon) καὶ(Kon) χαλεπώτατον(Adj)(Sup)(N) τὸ(Art)(N) συμβαῖνόν(Prä)(Akt)(N) ἐστιν(Prä)(Akt)·
+(494) und nicht so verhält|es|sich. insofern auch am|schwierigsten das Sich|Ereignende ist·
+(495) εἰ(Kon) γὰρ(Pt) οἱ(Art)(N) μάλιστα(Adv)(Sup) τὸ(Art)(N) ἐνδεχόμενον(Prä)(M/P)(N) ἀληθὲς(Adj)(N) ἑωρακότες(Per)(Akt)(N)— οὗτοι(Pr)(N) δʼ(Pt) εἰσὶν(Prä)(Akt)
+(495) wenn denn die am|meisten das Mögliche wahr gesehen|Habende— diese aber sind
+(496) οἱ(Art)(N) μάλιστα(Adv)(Sup) ζητοῦντες(Prä)(Akt)(N) αὐτὸ(Pr)(A) καὶ(Kon) φιλοῦντες(Prä)(Akt)(N)— οὗτοι(Pr)(N) τοιαύτας(Adj)(A) ἔχουσι(Prä)(Akt) τὰς(Art)(A) δόξας(A)
+(496) die am|meisten suchend es und liebend— diese solche haben die Meinungen
+(497) καὶ(Kon) ταῦτα(Pr)(A) ἀποφαίνονται(Prä)(M/P) περὶ(Prp) τῆς(Art)(G) ἀληθείας(G), πῶς(Adv) οὐκ(Pt) ἄξιον(Adj)(N) ἀθυμῆσαι(Aor)(Akt)(Inf)
+(497) und dieses legen|dar über der Wahrheit, wie nicht würdig mut|los|zu|werden
+(498) τοὺς(Art)(A) φιλοσοφεῖν(Prä)(Inf)(Akt) ἐγχειροῦντας(Prä)(Akt)(A); τὸ(Art)(N) γὰρ(Pt) τὰ(Art)(A) πετόμενα(Prä)(M/P)(A) διώκειν(Prä)(Inf)(Akt) τὸ(Art)(N) ζητεῖν(Prä)(Inf)(Akt)
+(498) die philosophieren unter|nehmen|de; das denn die fliegende verfolgen das suchen
+(499) ἂν(Pt) εἴη(Prä)(Akt)(Op) τὴν(Art)(A) ἀλήθειαν(A).
+(499) wohl wäre die Wahrheit.
+== St. 1010a ==
+(501) —αἴτιον(Adj)(N) δὲ(Pt) τῆς(Art)(G) δόξης(G) τούτοις(Pr)(D) ὅτι(Kon) περὶ(Prp) τῶν(Art)(G) ὄντων(Prä)(Akt)(G) μὲν(Pt)
+(501) —Ursache aber der Meinung diesen dass über der Seienden zwar
+(502) τὴν(Art)(A) ἀλήθειαν(A) ἐσκόπουν(Imp)(Akt), τὰ(Art)(A) δʼ(Pt) ὄντα(Prä)(Akt)(A) ὑπέλαβον(Aor)(Akt) εἶναι(Prä)(Inf)(Akt) τὰ(Art)(A) αἰσθητὰ(Adj)(A)
+(502) die Wahrheit betrachteten, die aber Seienden nahmen|an zu|sein die Wahrnehmbaren
+(503) μόνον(Adv)· ἐν(Prp) δὲ(Pt) τούτοις(Pr)(D) πολλὴ(Adj)(N) ἡ(Art)(N) τοῦ(Art)(G) ἀορίστου(Adj)(G) φύσις(N) ἐνυπάρχει(Prä)(Akt)
+(503) nur· in aber diesen viel die des Unbestimmten Natur ist|inne|wohnend
+(504) καὶ(Kon) ἡ(Art)(N) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G) οὕτως(Adv) ὥσπερ(Kon) εἴπομεν(Aor)(Akt)· διὸ(Kon) εἰκότως(Adv) μὲν(Pt)
+(504) und die des Seienden so wie wir|sagten· deshalb mit|Grund zwar
+(505) λέγουσιν(Prä)(Akt), οὐκ(Pt) ἀληθῆ(Adj)(A) δὲ(Pt) λέγουσιν(Prä)(Akt) (οὕτω(Adv) γὰρ(Pt) ἁρμόττει(Prä)(Akt) μᾶλλον(Adv)(Kmp) εἰπεῖν(Aor)(Akt)(Inf)
+(505) sie|sagen, nicht Wahres aber sagen|sie (so denn passt mehr zu|sagen
+(506) ἢ(Kon) ὥσπερ(Kon) Ἐπίχαρμος(N) εἰς(Prp) Ξενοφάνην(A)). ἔτι(Adv) δὲ(Pt) πᾶσαν(Adj)(A) ὁρῶντες(Prä)(Akt)(N) ταύτην(Pr)(A)
+(506) als wie Epicharmos gegen Xenophanes). noch aber ganze schauend diese
+(507) κινουμένην(Prä)(M/P)(A) τὴν(Art)(A) φύσιν(A), κατὰ(Prp) δὲ(Pt) τοῦ(Art)(G) μεταβάλλοντος(Prä)(Akt)(G) οὐθὲν(Pr)(A) ἀληθευόμενον(Prä)(M/P)(A), περί(Prp)
+(507) bewegt|werdende die Natur, gegen aber des Wandelnden nichts für|wahr|Gehaltenes, über
+(508) γε(Pt) τὸ(Art)(N) πάντῃ(Adv) πάντως(Adv) μεταβάλλον(Prä)(Akt)(N) οὐκ(Pt) ἐνδέχεσθαι(Prä)(M/P)(Inf) ἀληθεύειν(Prä)(Inf)(Akt). ἐκ(Prp) γὰρ(Pt)
+(508) ja das überall durchaus Wandelnde nicht möglich|sein wahr|sagen. aus denn
+(509) ταύτης(Pr)(G) τῆς(Art)(G) ὑπολήψεως(G) ἐξήνθησεν(Aor)(Akt) ἡ(Art)(N) ἀκροτάτη(Adj)(Sup)(N) δόξα(N) τῶν(Art)(G) εἰρημένων(Per)(M/P)(G), ἡ(Art)(N)
+(509) dieser der Annahme er|blühte die äußerste Meinung der Gesagten, die
+(510) τῶν(Art)(G) φασκόντων(Prä)(Akt)(G) ἡρακλειτίζειν(Prä)(Inf)(Akt) καὶ(Kon) οἵαν(Pr)(A) Κρατύλος(N) εἶχεν(Imp)(Akt), ὃς(Pr)(N) τὸ(Art)(A) τελευταῖον(Adj)(N)
+(510) der Behauptenden herakleitisch|sein und wie|eine Kratylos hatte, welcher das Letzte
+(511) οὐθὲν(Pr)(N) ᾤετο(Imp)(M/P) δεῖν(Prä)(Inf)(Akt) λέγειν(Prä)(Inf)(Akt) ἀλλὰ(Kon) τὸν(Art)(A) δάκτυλον(A) ἐκίνει(Imp)(Akt) μόνον(Adv), καὶ(Kon)
+(511) nichts meinte nötig zu|sagen sondern den Finger bewegte nur, und
+(512) Ἡρακλείτῳ(D) ἐπετίμα(Imp)(Akt) εἰπόντι(Aor)(Akt)(D) ὅτι(Kon) δὶς(Adv) τῷ(Art)(D) αὐτῷ(Adj)(D) ποταμῷ(D) οὐκ(Pt) ἔστιν(Prä)(Akt)
+(512) Heraklit|D tadelte sagend|D dass zweimal dem selben Fluss|D nicht ist
+(513) ἐμβῆναι(AorS)(Akt)(Inf)· αὐτὸς(Pr)(N) γὰρ(Pt) ᾤετο(Imp)(M/P) οὐδʼ(Kon)(Pt) ἅπαξ(Adv). ἡμεῖς(Pr)(N) δὲ(Pt) καὶ(Kon) πρὸς(Prp)
+(513) ein|steigen· er|selbst denn meinte nicht|einmal einmal. wir aber auch gegen
+(514) τοῦτον(Pr)(A) τὸν(Art)(A) λόγον(A) ἐροῦμεν(Fu)(Akt) ὅτι(Kon) τὸ(Art)(N) μὲν(Pt) μεταβάλλον(Prä)(Akt)(N) ὅτε(Kon) μεταβάλλει(Prä)(Akt)
+(514) diesen den Spruch werden|wir|sagen dass das zwar Wandelnde wann wandelt
+(515) ἔχει(Prä)(Akt) τινὰ(Pr)(A) αὐτοῖς(Pr)(D) λόγον(A) μὴ(Pt) οἴεσθαι(Prä)(M/P)(Inf) εἶναι(Prä)(Inf)(Akt), καίτοι(Pt) ἔστι(Prä)(Akt) γε(Pt)
+(515) hat irgendeinen ihnen|D Grund nicht zu|meinen zu|sein, und|doch ist ja
+(516) ἀμφισβητήσιμον(Adj)(N)· τό(Art)(N) τε(Pt) γὰρ(Pt) ἀποβάλλον(Prä)(Akt)(N) ἔχει(Prä)(Akt) τι(Pr)(A) τοῦ(Art)(G) ἀποβαλλομένου(Prä)(M/P)(G), καὶ(Kon)
+(516) streitbar· das und denn Abwerfende hat etwas des Abgeworfenen, und
+(517) τοῦ(Art)(G) γιγνομένου(Prä)(M/P)(G) ἤδη(Adv) ἀνάγκη(N) τι(Pr)(N) εἶναι(Prä)(Inf)(Akt), ὅλως(Adv) τε(Pt) εἰ(Kon) φθείρεται(Prä)(M/P),
+(517) des Werdenden schon Notwendigkeit etwas zu|sein, insgesamt und wenn wird|vernichtet,
+(518) ὑπάρξει(Fu)(Akt) τι(Pr)(N) ὄν(Prä)(Akt)(N), καὶ(Kon) εἰ(Kon) γίγνεται(Prä)(M/P), ἐξ(Prp) οὗ(Pr)(G) γίγνεται(Prä)(M/P) καὶ(Kon)
+(518) wird|bestehen etwas seiend, und wenn entsteht, aus woraus entsteht und
+(519) ὑφʼ(Prp) οὗ(Pr)(G) γεννᾶται(Prä)(M/P) ἀναγκαῖον(Adj)(N) εἶναι(Prä)(Inf)(Akt), καὶ(Kon) τοῦτο(Pr)(N) μὴ(Pt) ἰέναι(Prä)(Inf)(Akt) εἰς(Prp)
+(519) von dem wird|ge|zeugt notwendig zu|sein, und dieses nicht gehen in
+(520) ἄπειρον(Adj)(N). ἀλλὰ(Kon) ταῦτα(Pr)(A) παρέντες(Aor)(Akt)(N) ἐκεῖνα(Pr)(A) λέγωμεν(Prä)(Akt)(Knj), ὅτι(Kon) οὐ(Pt) ταὐτό(Adj)(N) ἐστι(Prä)(Akt)
+(520) Unendliche. sondern dieses beiseite|gelassen|Habende jene wollen|sagen, dass nicht dasselbe ist
+(521) τὸ(Art)(N) μεταβάλλειν(Prä)(Inf)(Akt) κατὰ(Prp) τὸ(Art)(A) ποσὸν(A) καὶ(Kon) κατὰ(Prp) τὸ(Art)(A) ποιόν(A)· κατὰ(Prp)
+(521) das verwandeln gemäß das Quantität und gemäß das Qualität· gemäß
+(522) μὲν(Pt) οὖν(Pt) τὸ(Art)(N) ποσὸν(N) ἔστω(Prä)(Akt)(Imv) μὴ(Pt) μένον(Prä)(Akt)(N), ἀλλὰ(Kon) κατὰ(Prp) τὸ(Art)(A)
+(522) zwar nun das Quantität es|sei nicht bleibend, sondern gemäß das
+(523) εἶδος(A) ἅπαντα(Adj)(A) γιγνώσκομεν(Prä)(Akt). ἔτι(Adv) δʼ(Pt) ἄξιον(Adj)(N) ἐπιτιμῆσαι(Aor)(Akt)(Inf) τοῖς(Art)(D) οὕτως(Adv) ὑπολαμβάνουσιν(Prä)(Akt)(D),
+(523) Form alles erkennen|wir. noch aber würdig zu|tadeln denen so annehmenden,
+(524) ὅτι(Kon) καὶ(Kon) αὐτῶν(Pr)(G) τῶν(Art)(G) αἰσθητῶν(Adj)(G) ἐπὶ(Prp) τῶν(Art)(G) ἐλαττόνων(Adj)(Kmp)(G) τὸν(Art)(A) ἀριθμὸν(A)
+(524) dass auch ihrer der Wahrnehmbaren auf der geringeren die Zahl
+(525) ἰδόντες(AorS)(Akt)(N) οὕτως(Adv) ἔχοντα(Prä)(Akt)(A) περὶ(Prp) ὅλου(Adj)(G) τοῦ(Art)(G) οὐρανοῦ(G) ὁμοίως(Adv) ἀπεφήναντο(Aor)(M/P)· ὁ(Art)(N)
+(525) gesehen|Habende so seiend|es über ganzen des Himmels gleichermaßen erklärten|sie· der
+(526) γὰρ(Pt) περὶ(Prp) ἡμᾶς(Pr)(A) τοῦ(Art)(G) αἰσθητοῦ(Adj)(G) τόπος(N) ἐν(Prp) φθορᾷ(D) καὶ(Kon) γενέσει(D)
+(526) denn um uns des Wahrnehmbaren Ort in Verderbnis und Entstehung
+(527) διατελεῖ(Prä)(Akt) μόνος(Adj)(N) ὤν(Prä)(Akt)(N), ἀλλʼ(Kon) οὗτος(Pr)(N) οὐθὲν(Pr)(N) ὡς(Kon) εἰπεῖν(Aor)(Akt)(Inf) μόριον(N) τοῦ(Art)(G)
+(527) dauert|fort allein seiend, sondern dieser nichts so zu|sagen Teil des
+(528) παντός(Adj)(G) ἐστιν(Prä)(Akt), ὥστε(Kon) δικαιότερον(Adj)(Kmp)(A) ἂν(Pt) διʼ(Prp) ἐκεῖνα(Pr)(A) τούτων(Pr)(G) ἀπεψηφίσαντο(Aor)(Med) ἢ(Kon)
+(528) von|allem ist, so|dass gerechter wohl wegen jene dieser frei|sprachen als
+(529) διὰ(Prp) ταῦτα(Pr)(A) ἐκείνων(Pr)(G) κατεψηφίσαντο(Aor)(Med). ἔτι(Adv) δὲ(Pt) δῆλον(Adj)(N) ὅτι(Kon) καὶ(Kon) πρὸς(Prp)
+(529) wegen dieser jener ver|urteilten. noch aber klar dass auch gegenüber
+(530) τούτους(Pr)(A) ταὐτὰ(Adj)(A) τοῖς(Art)(D) πάλαι(Adv) λεχθεῖσιν(Aor)(Pas)(D) ἐροῦμεν(Fu)(Akt)· ὅτι(Kon) γὰρ(Pt) ἔστιν(Prä)(Akt) ἀκίνητός(Adj)(N)
+(530) diesen die|selben den einst gesagt|wordenen werden|sagen· dass denn ist un|bewegt
+(531) τις(Pr)(N) φύσις(N) δεικτέον(Adj)(N) αὐτοῖς(Pr)(D) καὶ(Kon) πειστέον(Adj)(N) αὐτούς(Pr)(A). καίτοι(Pt) γε(Pt) συμβαίνει(Prä)(Akt)
+(531) eine|gewisse Natur zu|zeigen ihnen und zu|überzeugen sie. und|doch ja es|ergibt|sich
+(532) τοῖς(Art)(D) ἅμα(Adv) φάσκουσιν(Prä)(Akt)(D) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ἠρεμεῖν(Prä)(Inf)(Akt) μᾶλλον(Adv)(Kmp) φάναι(Aor)(Inf)(Akt)
+(532) denen zugleich behauptend zu|sein und nicht zu|sein zu|ruhen mehr zu|behaupten
+(533) πάντα(Adj)(A) ἢ(Kon) κινεῖσθαι(Prä)(M/P)(Inf)· οὐ(Pt) γὰρ(Pt) ἔστιν(Prä)(Akt) εἰς(Prp) ὅ(Pr)(A) τι(Pr)(A) μεταβαλεῖ(Fu)(Akt)·
+(533) alles als sich|zu|bewegen· nicht denn ist in was etwas wird|wechseln·
+(534) ἅπαντα(Adj)(N) γὰρ(Pt) ὑπάρχει(Prä)(Akt) πᾶσιν(Adj)(D).
+(534) alles|insgesamt denn kommt|zu allen.
+== St. 1010b ==
+(536) —περὶ(Prp) δὲ(Pt) τῆς(Art)(G) ἀληθείας(G), ὡς(Kon) οὐ(Pt) πᾶν(Adj)(N) τὸ(Art)(N) φαινόμενον(Prä)(M/P)(N) ἀληθές(Adj)(N),
+(536) —über aber der Wahrheit, dass nicht jedes das scheinende wahr,
+(537) πρῶτον(Adv) μὲν(Pt) ὅτι(Kon) οὐδʼ(Pt) ⟦εἰ⟧(Kon) ἡ(Art)(N) αἴσθησις(N) ⟦μὴ⟧(Pt) ψευδὴς(Adj)(N) τοῦ(Art)(G)
+(537) erstens zwar dass nicht|einmal wenn die Wahrnehmung nicht falsch des
+(538) γε(Pt) ἰδίου(Adj)(G) ἐστίν(Prä)(Akt), ἀλλʼ(Kon) ἡ(Art)(N) φαντασία(N) οὐ(Pt) ταὐτὸν(Adj)(N) τῇ(Art)(D) αἰσθήσει(D).
+(538) ja Eigenen ist, sondern die Vorstellung nicht das|selbe der Wahrnehmung.
+(539) εἶτʼ(Adv) ἄξιον(Adj)(N) θαυμάσαι(Aor)(Inf)(Akt) εἰ(Kon) τοῦτʼ(Pr)(A) ἀποροῦσι(Prä)(Akt), πότερον(Kon) τηλικαῦτά(Adj)(N) ἐστι(Prä)(Akt) τὰ(Art)(N)
+(539) dann würdig zu|staunen ob dies sind|ratlos, ob so|groß ist die
+(540) μεγέθη(N) καὶ(Kon) τὰ(Art)(N) χρώματα(N) τοιαῦτα(Adj)(N) οἷα(Pr)(N) τοῖς(Art)(D) ἄπωθεν(Adv) φαίνεται(Prä)(M/P) ἢ(Kon)
+(540) Größen und die Farben solche wie den von|fern erscheint oder
+(541) οἷα(Pr)(N) τοῖς(Art)(D) ἐγγύθεν(Adv), καὶ(Kon) πότερον(Kon) οἷα(Pr)(N) τοῖς(Art)(D) ὑγιαίνουσιν(Prä)(Akt)(D) ἢ(Kon) οἷα(Pr)(N)
+(541) wie den aus|der|Nähe, und ob wie den gesund|seienden oder wie
+(542) τοῖς(Art)(D) κάμνουσιν(Prä)(Akt)(D), καὶ(Kon) βαρύτερα(Adj)(Kmp)(N) πότερον(Kon) ἃ(Pr)(A) τοῖς(Art)(D) ἀσθενοῦσιν(Prä)(Akt)(D) ἢ(Kon) ἃ(Pr)(A)
+(542) den leidend|seienden, und schwerer ob was den schwach|seienden oder was
+(543) τοῖς(Art)(D) ἰσχύουσιν(Prä)(Akt)(D), καὶ(Kon) ἀληθῆ(Adj)(N) πότερον(Kon) ἃ(Pr)(A) τοῖς(Art)(D) καθεύδουσιν(Prä)(Akt)(D) ἢ(Kon) ἃ(Pr)(A)
+(543) den stark|seienden, und wahre ob was den schlafend|seienden oder was
+(544) τοῖς(Art)(D) ἐγρηγορόσιν(Per)(Akt)(D). ὅτι(Kon) μὲν(Pt) γὰρ(Pt) οὐκ(Pt) οἴονταί(Prä)(M/P) γε(Pt), φανερόν(Adj)(N)· οὐθεὶς(Pr)(N)
+(544) den wach|seienden. dass zwar denn nicht meinen ja, offenkundig· niemand
+(545) γοῦν(Pt), ἐὰν(Kon) ὑπολάβῃ(Aor)(Akt)(Knj) νύκτωρ(Adv) Ἀθήνῃσιν(D) εἶναι(Prä)(Inf)(Akt) ὢν(Prä)(Akt)(N) ἐν(Prp) Λιβύῃ(D), πορεύεται(Prä)(M/P)
+(545) wenigstens, wenn an|nehme bei|Nacht in|Athen zu|sein seiend in Libyen, geht
+(546) εἰς(Prp) τὸ(Art)(A) ᾠδεῖον(A). ἔτι(Adv) δὲ(Pt) περὶ(Prp) τοῦ(Art)(G) μέλλοντος(Prä)(Akt)(G), ὥσπερ(Kon) καὶ(Kon)
+(546) in|das|hinein das Odeion. noch aber über des Zukünftigen, so|wie auch
+(547) Πλάτων(N) λέγει(Prä)(Akt), οὐ(Pt) δήπου(Pt) ὁμοίως(Adv) κυρία(Adj)(N) ἡ(Art)(N) τοῦ(Art)(G) ἰατροῦ(G) δόξα(N)
+(547) Platon sagt, nicht wohl gleich maßgeblich die des Arztes Meinung
+(548) καὶ(Kon) ἡ(Art)(N) τοῦ(Art)(G) ἀγνοοῦντος(Prä)(Akt)(G), οἷον(Kon) περὶ(Prp) τοῦ(Art)(G) μέλλοντος(Prä)(Akt)(G) ἔσεσθαι(Fu)(Inf)(Akt) ὑγιοῦς(Adj)(G)
+(548) und die des Unwissenden, zum|Beispiel über des Zukünftigen sein|werden gesund
+(549) ἢ(Kon) μὴ(Pt) μέλλοντος(Prä)(Akt)(G). ἔτι(Adv) δὲ(Pt) ἐπʼ(Prp) αὐτῶν(Pr)(G) τῶν(Art)(G) αἰσθήσεων(G) οὐχ(Pt)
+(549) oder nicht Zukünftigen. noch aber auf ihrer der Wahrnehmungen nicht
+(550) ὁμοίως(Adv) κυρία(Adj)(N) ἡ(Art)(N) τοῦ(Art)(G) ἀλλοτρίου(Adj)(G) καὶ(Kon) ἰδίου(Adj)(G) ἢ(Kon) τοῦ(Art)(G) πλησίον(Adj)(G)
+(550) gleich maßgeblich die des Fremden und Eigenen oder des Nahen
+(551) καὶ(Kon) τοῦ(Art)(G) αὑτῆς(Pr)(G), ἀλλὰ(Kon) περὶ(Prp) μὲν(Pt) χρώματος(G) ὄψις(N), οὐ(Pt) γεῦσις(N),
+(551) und des ihrer|selbst, sondern über zwar Farbe Sehen, nicht Schmecken,
+(552) περὶ(Prp) δὲ(Pt) χυμοῦ(G) γεῦσις(N), οὐκ(Pt) ὄψις(N)· ὧν(Pr)(G) ἑκάστη(Adj)(N) ἐν(Prp) τῷ(Art)(D)
+(552) über aber Saft Schmecken, nicht Sehen· deren jede in dem
+(553) αὐτῷ(Pr)(D) χρόνῳ(D) περὶ(Prp) τὸ(Art)(A) αὐτὸ(Adj)(A) οὐδέποτε(Adv) φησιν(Prä)(Akt) ἅμα(Adv) οὕτω(Adv) καὶ(Kon)
+(553) selben Zeit über das selbe niemals sagt zugleich so und
+(554) οὐχ(Pt) οὕτως(Adv) ἔχειν(Prä)(Inf)(Akt). ἀλλʼ(Kon) οὐδὲ(Kon) ἐν(Prp) ἑτέρῳ(Adj)(D) χρόνῳ(D) περί(Prp) γε(Pt)
+(554) nicht so sich|verhalten. sondern auch|nicht in anderer Zeit über ja
+(555) τὸ(Art)(A) πάθος(A) ἠμφισβήτησεν(Aor)(Akt), ἀλλὰ(Kon) περὶ(Prp) τὸ(Art)(A) ᾧ(Pr)(D) συμβέβηκε(Per)(Akt) τὸ(Art)(N) πάθος(N).
+(555) das Affekt bestritt, sondern über das dem ist|zugestoßen der Affekt.
+(556) λέγω(Prä)(Akt) δʼ(Pt) οἷον(Kon) ὁ(Art)(N) μὲν(Pt) αὐτὸς(Pr)(N) οἶνος(N) δόξειεν(Aor)(Akt)(Op) ἂν(Pt) ἢ(Kon)
+(556) ich|sage aber zum|Beispiel der zwar selbe Wein würde|scheinen wohl entweder
+(557) μεταβαλὼν(Aor)(Akt)(N) ἢ(Kon) τοῦ(Art)(G) σώματος(G) μεταβαλόντος(Aor)(Akt)(G) ὁτὲ(Pt) μὲν(Pt) εἶναι(Prä)(Inf)(Akt) γλυκὺς(Adj)(N) ὁτὲ(Pt)
+(557) verändert|habend oder des Körpers verändert|habend bald zwar zu|sein süß bald
+(558) δὲ(Pt) οὐ(Pt) γλυκύς(Adj)(N)· ἀλλʼ(Kon) οὐ(Pt) τό(Art)(N) γε(Pt) γλυκύ(Adj)(N), οἷόν(Kon) ἐστιν(Prä)(Akt)
+(558) aber nicht süß· sondern nicht das ja Süße, wie es|ist
+(559) ὅταν(Kon) ᾖ(Prä)(Akt)(Knj), οὐδεπώποτε(Adv) μετέβαλεν(Aor)(Akt), ἀλλʼ(Kon) ἀεὶ(Adv) ἀληθεύει(Prä)(Akt) περὶ(Prp) αὐτοῦ(Pr)(G), καὶ(Kon)
+(559) wenn|immer sei, noch|niemals veränderte, sondern immer sagt|wahr über es, und
+(560) ἔστιν(Prä)(Akt) ἐξ(Prp) ἀνάγκης(G) τὸ(Art)(N) ἐσόμενον(Fu)(M/P)(N) γλυκὺ(Adj)(N) τοιοῦτον(Adj)(N). καίτοι(Pt) τοῦτο(Pr)(N) ἀναιροῦσιν(Prä)(Akt)
+(560) ist aus Notwendigkeit das sein|werdende süß solch. und|doch dies heben|auf
+(561) οὗτοι(Pr)(N) οἱ(Art)(N) λόγοι(N) ἅπαντες(Adj)(N), ὥσπερ(Kon) καὶ(Kon) οὐσίαν(A) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) μηθενός(Pr)(G),
+(561) diese die Reden sämtlich, so|wie auch Substanz nicht zu|sein von|keinem,
+(562) οὕτω(Adv) μηδʼ(Pt) ἐξ(Prp) ἀνάγκης(G) μηθέν(Pr)(N)· τὸ(Art)(N) γὰρ(Pt) ἀναγκαῖον(Adj)(N) οὐκ(Pt) ἐνδέχεται(Prä)(M/P)
+(562) so auch|nicht aus Notwendigkeit nichts· das denn Notwendige nicht ist|möglich
+(563) ἄλλως(Adv) καὶ(Kon) ἄλλως(Adv) ἔχειν(Prä)(Inf)(Akt), ὥστʼ(Kon) εἴ(Kon) τι(Pr)(N) ἔστιν(Prä)(Akt) ἐξ(Prp) ἀνάγκης(G),
+(563) anders und anders sich|verhalten, so|dass wenn etwas ist aus Notwendigkeit,
+(564) οὐχ(Pt) ἕξει(Fu)(Akt) οὕτω(Adv) τε(Pt) καὶ(Kon) οὐχ(Pt) οὕτως(Adv). — ὅλως(Adv) τʼ(Pt) εἴπερ(Kon) ἔστι(Prä)(Akt)
+(564) nicht wird|haben so und auch nicht so. — insgesamt und wenn|wirklich ist
+(565) τὸ(Art)(N) αἰσθητὸν(Adj)(N) μόνον(Adj)(N), οὐθὲν(Pr)(N) ἂν(Pt) εἴη(Prä)(Akt)(Op) μὴ(Pt) ὄντων(Prä)(Akt)(G) τῶν(Art)(G) ἐμψύχων(Adj)(G)·
+(565) das Wahrnehmbare nur, nichts wohl wäre nicht seiender der Beseelten·
+(566) αἴσθησις(N) γὰρ(Pt) οὐκ(Pt) ἂν(Pt) εἴη(Prä)(Akt)(Op). τὸ(Art)(N) μὲν(Pt) οὖν(Pt) μήτε(Kon) τὰ(Art)(N)
+(566) Wahrnehmung denn nicht wohl wäre. das zwar nun weder die
+(567) αἰσθητὰ(Adj)(N) εἶναι(Prä)(Inf)(Akt) μήτε(Kon) τὰ(Art)(N) αἰσθήματα(N) ἴσως(Adv) ἀληθές(Adj)(N) (τοῦ(Art)(G) γὰρ(Pt) αἰσθανομένου(Prä)(M/P)(G)
+(567) Wahrnehmbaren zu|sein noch die Empfindungen vielleicht wahr (des denn Wahrnehmenden
+(568) πάθος(N) τοῦτό(Pr)(N) ἐστι(Prä)(Akt)), τὸ(Art)(N) δὲ(Pt) τὰ(Art)(N) ὑποκείμενα(Prä)(M/P)(N) μὴ(Pt) εἶναι(Prä)(Inf)(Akt), ἃ(Pr)(N)
+(568) Affekt dies ist), das aber die Unterliegenden nicht zu|sein, welche
+(569) ποιεῖ(Prä)(Akt) τὴν(Art)(A) αἴσθησιν(A), καὶ(Kon) ἄνευ(Prp) αἰσθήσεως(G), ἀδύνατον(Adj)(N). οὐ(Pt) γὰρ(Pt) δὴ(Pt)
+(569) macht die Wahrnehmung, und ohne Wahrnehmung, unmöglich. nicht denn ja
+(570) ἥ(Art)(N) γʼ(Pt) αἴσθησις(N) αὐτὴ(Pr)(N) ἑαυτῆς(Pr)(G) ἐστίν(Prä)(Akt), ἀλλʼ(Kon) ἔστι(Prä)(Akt) τι(Pr)(N) καὶ(Kon)
+(570) die ja Wahrnehmung selbst ihrer|selbst ist, sondern ist etwas auch
+(571) ἕτερον(Adj)(N) παρὰ(Prp) τὴν(Art)(A) αἴσθησιν(A), ὃ(Pr)(N) ἀνάγκη(N) πρότερον(Adv)(Kmp) εἶναι(Prä)(Inf)(Akt) τῆς(Art)(G) αἰσθήσεως(G)·
+(571) anderes neben die Wahrnehmung, was notwendig früher zu|sein der Wahrnehmung·
+== St. 1011a ==
+(573) τὸ(Art)(N) γὰρ(Pt) κινοῦν(Prä)(Akt)(N) τοῦ(Art)(G) κινουμένου(Prä)(M/P)(G) φύσει(D) πρότερόν(Adv)(Kmp) ἐστι(Prä)(Akt), κἂν(Kon) εἰ(Kon)
+(573) das denn Bewegende des Bewegten von|Natur früher ist, und|wenn wenn
+(574) λέγεται(Prä)(M/P) πρὸς(Prp) ἄλληλα(Adj)(N) ταῦτα(Pr)(N), οὐθὲν(Pr)(N) ἧττον(Adv)(Kmp).
+(574) wird|gesagt zu einander dieses, keineswegs weniger.
+== St. 1011b ==
+= § 6 =
+(577) εἰσὶ(Prä)(Akt) δέ(Pt) τινες(Pr)(N) οἳ(Pr)(N) ἀποροῦσι(Prä)(Akt) καὶ(Kon) τῶν(Art)(G) ταῦτα(Pr)(A) πεπεισμένων(Per)(M/P)(G) καὶ(Kon)
+(577) sind aber einige die ratlos|sind und der dieses überzeugten und
+(578) τῶν(Art)(G) τοὺς(Art)(A) λόγους(A) τούτους(Pr)(A) μόνον(Adv) λεγόντων(Prä)(Akt)(G)· ζητοῦσι(Prä)(Akt) γὰρ(Pt) τίς(Pr)(N) ὁ(Art)(N)
+(578) der die Reden diese nur sagenden· suchen denn wer der
+(579) κρινῶν(Prä)(Akt)(N) τὸν(Art)(A) ὑγιαίνοντα(Prä)(Akt)(A) καὶ(Kon) ὅλως(Adv) τὸν(Art)(A) περὶ(Prp) ἕκαστα(Adj)(A) κρινοῦντα(Fu)(Akt)(A) ὀρθῶς(Adv).
+(579) beurteilend den gesund|seienden und gänzlich den über je|Einzelnes richten|werdenden richtig.
+(580) τὰ(Art)(N) δὲ(Pt) τοιαῦτα(Adj)(N) ἀπορήματα(N) ὅμοιά(Adj)(N) ἐστι(Prä)(Akt) τῷ(Art)(D) ἀπορεῖν(Prä)(Inf)(Akt) πότερον(Kon) καθεύδομεν(Prä)(Akt)
+(580) die aber solchen Aporien ähnlich ist dem zu|zweifeln ob wir|schlafen
+(581) νῦν(Adv) ἢ(Kon) ἐγρηγόραμεν(Per)(Akt), δύνανται(Prä)(M/P) δʼ(Pt) αἱ(Art)(N) ἀπορίαι(N) αἱ(Art)(N) τοιαῦται(Adj)(N) πᾶσαι(Adj)(N)
+(581) jetzt oder wir|sind|wach|gewesen, können aber die Aporien die derartigen alle
+(582) τὸ(Art)(N) αὐτό(Adj)(N)· πάντων(Adj)(G) γὰρ(Pt) λόγον(A) ἀξιοῦσιν(Prä)(Akt) εἶναι(Prä)(Inf)(Akt) οὗτοι(Pr)(N)· ἀρχὴν(A) γὰρ(Pt)
+(582) das selbe· aller denn Begründung fordern zu|sein diese· Anfang denn
+(583) ζητοῦσι(Prä)(Akt), καὶ(Kon) ταύτην(Pr)(A) διʼ(Prp) ἀποδείξεως(G) λαμβάνειν(Prä)(Inf)(Akt), ἐπεὶ(Kon) ὅτι(Kon) γε(Pt) πεπεισμένοι(Per)(M/P)(N)
+(583) suchen, und diesen durch Beweis zu|nehmen, weil dass ja überzeugt
+(584) οὐκ(Pt) εἰσί(Prä)(Akt), φανεροί(Adj)(N) εἰσιν(Prä)(Akt) ἐν(Prp) ταῖς(Art)(D) πράξεσιν(D). ἀλλʼ(Kon) ὅπερ(Pr)(N) εἴπομεν(Aor)(Akt),
+(584) nicht sind, offenbar sind in den Taten. sondern eben|was wir|sagten,
+(585) τοῦτο(Pr)(N) αὐτῶν(Pr)(G) τὸ(Art)(N) πάθος(N) ἐστίν(Prä)(Akt)· λόγον(A) γὰρ(Pt) ζητοῦσιν(Prä)(Akt) ὧν(Pr)(G) οὐκ(Pt)
+(585) dies ihrer das Leiden ist· Begründung denn suchen deren nicht
+(586) ἔστι(Prä)(Akt) λόγος(N)· ἀποδείξεως(G) γὰρ(Pt) ἀρχὴ(N) οὐκ(Pt) ἀπόδειξίς(N) ἐστιν(Prä)(Akt). οὗτοι(Pr)(N) μὲν(Pt)
+(586) es|gibt Begründung· der|Beweisführung denn Anfang nicht Beweisführung ist. diese zwar
+(587) οὖν(Pt) ῥᾳδίως(Adv) ἂν(Pt) τοῦτο(Pr)(A) πεισθεῖεν(Aor)(Pas)(Op) (ἔστι(Prä)(Akt) γὰρ(Pt) οὐ(Pt) χαλεπὸν(Adj)(N) λαβεῖν(AorS)(Akt)(Inf))·
+(587) also leicht wohl dies überzeugt|würden|sein (es|ist denn nicht schwierig zu|fassen)·
+(588) οἱ(Art)(N) δʼ(Pt) ἐν(Prp) τῷ(Art)(D) λόγῳ(D) τὴν(Art)(A) βίαν(A) μόνον(Adv) ζητοῦντες(Prä)(Akt)(N) ἀδύνατον(Adj)(A)
+(588) die aber in dem Wort die Gewalt nur suchend Unmögliches
+(589) ζητοῦσιν(Prä)(Akt)· ἐναντία(Adj)(A) γὰρ(Pt) εἰπεῖν(AorS)(Akt)(Inf) ἀξιοῦσιν(Prä)(Akt), εὐθὺς(Adv) ἐναντία(Adj)(A) λέγοντες(Prä)(Akt)(N). εἰ(Kon) δὲ(Pt)
+(589) suchen· Gegenteilige denn zu|sagen fordern, sogleich Gegenteilige sagend. wenn aber
+(590) μὴ(Pt) ἔστι(Prä)(Akt) πάντα(Adj)(N) πρός(Prp) τι(Pr)(A), ἀλλʼ(Kon) ἔνιά(Adj)(N) ἐστι(Prä)(Akt) καὶ(Kon) αὐτὰ(Pr)(N)
+(590) nicht ist alles zu etwas, sondern einiges ist auch selbst
+(591) καθʼ(Prp) αὑτά(Pr)(A), οὐκ(Pt) ἂν(Pt) εἴη(Prä)(Akt)(Op) πᾶν(Adj)(N) τὸ(Art)(A) φαινόμενον(Prä)(M/P)(A) ἀληθές(Adj)(N)· τὸ(Art)(N)
+(591) gemäß sich|selbst, nicht wohl wäre jedes das Erscheinende wahr· das
+(592) γὰρ(Pt) φαινόμενον(Prä)(M/P)(N) τινί(Pr)(D) ἐστι(Prä)(Akt) φαινόμενον(Prä)(M/P)(N)· ὥστε(Kon) ὁ(Art)(N) λέγων(Prä)(Akt)(N) ἅπαντα(Adj)(A) τὰ(Art)(A)
+(592) denn Erscheinende irgendwem ist Erscheinende· so|dass der sagend alle die
+(593) φαινόμενα(Prä)(M/P)(A) εἶναι(Prä)(Inf)(Akt) ἀληθῆ(Adj)(A) ἅπαντα(Adj)(A) ποιεῖ(Prä)(Akt) τὰ(Art)(A) ὄντα(Prä)(Akt)(A) πρός(Prp) τι(Pr)(A). διὸ(Kon)
+(593) Erscheinenden zu|sein wahr alle macht die Seienden zu etwas. darum
+(594) καὶ(Kon) φυλακτέον(Adj)(N) τοῖς(Art)(D) τὴν(Art)(A) βίαν(A) ἐν(Prp) τῷ(Art)(D) λόγῳ(D) ζητοῦσιν(Prä)(Akt)(D), ἅμα(Adv)
+(594) auch zu|hüten denen die Gewalt in dem Wort Suchenden, zugleich
+(595) δὲ(Pt) καὶ(Kon) ὑπέχειν(Prä)(Akt)(Inf) λόγον(A) ἀξιοῦσιν(Prä)(Akt), ὅτι(Kon) οὐ(Pt) τὸ(Art)(N) φαινόμενον(Prä)(M/P)(N) ἔστιν(Prä)(Akt)
+(595) aber auch unter|ziehen Rechenschaft fordern, dass nicht das Erscheinende ist
+(596) ἀλλὰ(Kon) τὸ(Art)(N) φαινόμενον(Prä)(M/P)(N) ᾧ(Pr)(D) φαίνεται(Prä)(M/P) καὶ(Kon) ὅτε(Kon) φαίνεται(Prä)(M/P) καὶ(Kon) ᾗ(Pr)(D)
+(596) sondern das Erscheinende dem|es erscheint und wenn erscheint und in|der|Weise
+(597) καὶ(Kon) ὥς(Adv). ἂν(Pt) δʼ(Pt) ὑπέχωσι(Prä)(Akt)(Knj) μὲν(Pt) λόγον(A), μὴ(Pt) οὕτω(Adv) δʼ(Pt)
+(597) und wie. wohl aber unter|ziehen zwar Rechenschaft, nicht so aber
+(598) ὑπέχωσι(Prä)(Akt)(Knj), συμβήσεται(Fu)(Akt) αὑτοῖς(Pr)(D) τἀναντία(Art)(A)(Adj)(A) ταχὺ(Adv) λέγειν(Prä)(Inf)(Akt). ἐνδέχεται(Prä)(M/P) γὰρ(Pt) τὸ(Art)(N) αὐτὸ(Adj)(N)
+(598) unter|ziehen, wird|geschehen ihnen|selbst die|Gegenteiligen schnell zu|sagen. ist|möglich denn das Selbe
+(599) κατὰ(Prp) μὲν(Pt) τὴν(Art)(A) ὄψιν(A) μέλι(N) φαίνεσθαι(Prä)(M/P)(Inf) τῇ(Art)(D) δὲ(Pt) γεύσει(D) μή(Pt),
+(599) gemäß zwar der Sicht Honig erscheinen dem aber Geschmack nicht,
+(600) καὶ(Kon) τῶν(Art)(G) ὀφθαλμῶν(G) δυοῖν(Adj)(Du)(G) ὄντοιν(Prä)(Akt)(Du)(G) μὴ(Pt) ταὐτὰ(Adj)(N) ἑκατέρᾳ(Adj)(D) τῇ(Art)(D) ὄψει(D),
+(600) und der Augen zwei seiend nicht dieselben je|einer der Sicht,
+(601) ἂν(Pt) ὦσιν(Prä)(Akt)(Knj) ἀνόμοιαι(Adj)(N)· ἐπεὶ(Kon) πρός(Prp) γε(Pt) τοὺς(Art)(A) διὰ(Prp) τὰς(Art)(A) πάλαι(Adv)
+(601) wohl seien unähnliche· da zu ja die wegen der einst
+(602) εἰρημένας(Per)(M/P)(A) αἰτίας(A) τὸ(Art)(N) φαινόμενον(Prä)(M/P)(N) φάσκοντας(Prä)(Akt)(A) ἀληθὲς(Adj)(N) εἶναι(Prä)(Inf)(Akt), καὶ(Kon) διὰ(Prp) τοῦτο(Pr)(A)
+(602) gesagt|wordenen Ursachen das Erscheinende behauptend wahr zu|sein, und wegen dieses
+(603) πάνθʼ(Adj)(A) ὁμοίως(Adv) εἶναι(Prä)(Inf)(Akt) ψευδῆ(Adj)(A) καὶ(Kon) ἀληθῆ(Adj)(A)· οὔτε(Kon) γὰρ(Pt) ἅπασι(Adj)(D) ταὐτὰ(Adj)(N)
+(603) alles gleichermaßen zu|sein falsche und wahre· weder denn allen dieselben
+(604) φαίνεσθαι(Prä)(M/P)(Inf) οὔτε(Kon) ταὐτῷ(Adj)(D) ἀεὶ(Adv) ταὐτά(Adj)(N), ἀλλὰ(Kon) πολλάκις(Adv) τἀναντία(Adj)(A) κατὰ(Prp) τὸν(Art)(A)
+(604) erscheinen noch demselben immer dieselben, sondern oft die|Gegenteiligen gemäß den
+(605) αὐτὸν(Adj)(A) χρόνον(A) (ἡ(Art)(N) μὲν(Pt) γὰρ(Pt) ἁφὴ(N) δύο(Adj)(A) λέγει(Prä)(Akt) ἐν(Prp) τῇ(Art)(D)
+(605) gleichen Zeit (die zwar denn Berührung zwei sagt in der
+(606) ἐπαλλάξει(D) τῶν(Art)(G) δακτύλων(G) ἡ(Art)(N) δʼ(Pt) ὄψις(N) ἕν(Pr)(N))· — ἀλλʼ(Kon) οὔ(Pt) τι(Pr)(N) τῇ(Art)(D)
+(606) Wechsel der Finger die aber Sicht eins)· — sondern nicht etwas der
+(607) αὐτῇ(Pr)(D) γε(Pt) καὶ(Kon) κατὰ(Prp) τὸ(Art)(A) αὐτὸ(Adj)(A) αἰσθήσει(D) καὶ(Kon) ὡσαύτως(Adv) καὶ(Kon)
+(607) selben ja und gemäß das Selbe Wahrnehmung und gleichermaßen und
+(608) ἐν(Prp) τῷ(Art)(D) αὐτῷ(Adj)(D) χρόνῳ(D), ὥστε(Kon) τοῦτʼ(Pr)(N) ἂν(Pt) εἴη(Prä)(Akt)(Op) ἀληθές(Adj)(N). ἀλλʼ(Kon)
+(608) in der selben Zeit, so|dass dies wohl wäre wahr. sondern
+(609) ἴσως(Adv) διὰ(Prp) τοῦτʼ(Pr)(A) ἀνάγκη(N) λέγειν(Prä)(Inf)(Akt) τοῖς(Art)(D) μὴ(Pt) διʼ(Prp) ἀπορίαν(A) ἀλλὰ(Kon)
+(609) vielleicht wegen dieses Notwendigkeit zu|sagen den nicht durch Ratlosigkeit sondern
+(610) λόγου(G) χάριν(Prp) λέγουσιν(Prä)(Akt), ὅτι(Kon) οὐκ(Pt) ἔστιν(Prä)(Akt) ἀληθὲς(Adj)(N) τοῦτο(Pr)(N) ἀλλὰ(Kon) τούτῳ(Pr)(D)
+(610) des Wortes|wegen sagen, dass nicht ist wahr dieses sondern diesem|D
+(611) ἀληθές(Adj)(N). καὶ(Kon) ὥσπερ(Kon) δὴ(Pt) πρότερον(Adv)(Kmp) εἴρηται(Per)(M/P), ἀνάγκη(N) πρός(Prp) τι(Pr)(A) ποιεῖν(Prä)(Inf)(Akt)
+(611) wahr. und so|wie ja früher ist|gesagt|worden, Notwendigkeit zu etwas zu|machen
+(612) ἅπαντα(Adj)(A) καὶ(Kon) πρὸς(Prp) δόξαν(A) καὶ(Kon) αἴσθησιν(A), ὥστʼ(Kon) οὔτε(Kon) γέγονεν(Per)(Akt) οὔτʼ(Kon)
+(612) alles auch zu Meinung und Wahrnehmung, so|dass weder ist|geworden noch
+(613) ἔσται(Fu)(Akt) οὐθὲν(Pr)(N) μηθενὸς(Pr)(G) προδοξάσαντος(Aor)(Akt)(G). εἰ(Kon) δὲ(Pt) γέγονεν(Per)(Akt) ἢ(Kon) ἔσται(Fu)(Akt), δῆλον(Adj)(N)
+(613) wird|sein nichts keines vorher|gemeint|habenden. wenn aber ist|geworden oder wird|sein, klar
+(614) ὅτι(Kon) οὐκ(Pt) ἂν(Pt) εἴη(Prä)(Akt)(Op) ἅπαντα(Adj)(N) πρὸς(Prp) δόξαν(A). ἔτι(Adv) εἰ(Kon) ἕν(Pr)(N),
+(614) dass nicht wohl wäre alles zu Meinung. noch wenn eins,
+(615) πρὸς(Prp) ἓν(Pr)(A) ἢ(Kon) πρὸς(Prp) ὡρισμένον(Per)(M/P)(A)· καὶ(Kon) εἰ(Kon) τὸ(Art)(N) αὐτὸ(Adj)(N) καὶ(Kon)
+(615) zu einem oder zu Bestimmten· und wenn das Selbe und
+(616) ἥμισυ(Adj)(N) καὶ(Kon) ἴσον(Adj)(N), ἀλλʼ(Kon) οὐ(Pt) πρὸς(Prp) τὸ(Art)(A) διπλάσιόν(Adj)(A) γε(Pt) τὸ(Art)(A)
+(616) halb und gleich, sondern nicht zu dem doppelt ja das
+(617) ἴσον(Adj)(N). πρὸς(Prp) δὴ(Pt) τὸ(Art)(A) δοξάζον(Prä)(Akt)(A) εἰ(Kon) ταὐτὸ(Adj)(N) ἄνθρωπος(N) καὶ(Kon) τὸ(Art)(N)
+(617) gleiche. zu ja das Meinende wenn dasselbe Mensch und das
+(618) δοξαζόμενον(Prä)(M/P)(N), οὐκ(Pt) ἔσται(Fu)(Akt) ἄνθρωπος(N) τὸ(Art)(N) δοξάζον(Prä)(Akt)(N) ἀλλὰ(Kon) τὸ(Art)(N) δοξαζόμενον(Prä)(M/P)(N). εἰ(Kon)
+(618) Gemeinte, nicht wird|sein Mensch das Meinende sondern das Gemeinte. wenn
+(619) δʼ(Pt) ἕκαστον(Pr)(N) ἔσται(Fu)(Akt) πρὸς(Prp) τὸ(Art)(A) δοξάζον(Prä)(Akt)(A), πρὸς(Prp) ἄπειρα(Adj)(A) ἔσται(Fu)(Akt) τῷ(Art)(D)
+(619) aber jedes wird|sein zu dem Meinenden, zu Unendlichen wird|sein dem
+(620) εἴδει(D) τὸ(Art)(N) δοξάζον(Prä)(Akt)(N). ὅτι(Kon) μὲν(Pt) οὖν(Pt) βεβαιοτάτη(Adj)(Sup)(N) δόξα(N) πασῶν(Adj)(G) τὸ(Art)(N)
+(620) Form das Meinende. dass zwar nun sicherste Meinung aller das
+(621) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ἀληθεῖς(Adj)(A) ἅμα(Adv) τὰς(Art)(A) ἀντικειμένας(Prä)(M/P)(A) φάσεις(A), καὶ(Kon) τί(Pr)(N) συμβαίνει(Prä)(Akt)
+(621) nicht zu|sein wahr zugleich die entgegengesetzten Aussagen, und was geschieht
+(622) τοῖς(Art)(D) οὕτω(Adv) λέγουσι(Prä)(Akt)(D), καὶ(Kon) διὰ(Prp) τί(Pr)(A) οὕτω(Adv) λέγουσι(Prä)(Akt)(D), τοσαῦτα(Adj)(N) εἰρήσθω(Per)(M/P)(Imv)·
+(622) den so Sprechenden, und wegen warum so Sprechenden, so|viel sei|gesagt·
+(623) ἐπεὶ(Kon) δʼ(Pt) ἀδύνατον(Adj)(N) τὴν(Art)(A) ἀντίφασιν(A) ἅμα(Adv) ἀληθεύεσθαι(Prä)(M/P)(Inf) κατὰ(Prp) τοῦ(Art)(G) αὐτοῦ(Adj)(G),
+(623) da aber unmöglich den Widerspruch zugleich wahr|sein gemäß des Selben,
+(624) φανερὸν(Adj)(N) ὅτι(Kon) οὐδὲ(Kon) τἀναντία(Art)(N)(Adj)(N) ἅμα(Adv) ὑπάρχειν(Prä)(Inf)(Akt) ἐνδέχεται(Prä)(M/P) τῷ(Art)(D) αὐτῷ(Adj)(D)· τῶν(Art)(G)
+(624) offenbar dass auch|nicht die|Gegenteiligen zugleich bestehen ist|möglich dem Selben· der
+(625) μὲν(Pt) γὰρ(Pt) ἐναντίων(Adj)(G) θάτερον(Adj)(N) στέρησίς(N) ἐστιν(Prä)(Akt) οὐχ(Pt) ἧττον(Adv)(Kmp), οὐσίας(G) δὲ(Pt)
+(625) zwar denn der|Gegenteile das|eine Entbehrung ist nicht weniger, der|Substanz aber
+(626) στέρησις(N)· ἡ(Art)(N) δὲ(Pt) στέρησις(N) ἀπόφασίς(N) ἐστιν(Prä)(Akt) ἀπό(Prp) τινος(Pr)(G) ὡρισμένου(Per)(M/P)(G) γένους(G)·
+(626) Entbehrung· die aber Entbehrung Verneinung ist von irgend|einem bestimmten Geschlecht·
+(627) εἰ(Kon) οὖν(Pt) ἀδύνατον(Adj)(N) ἅμα(Adv) καταφάναι(Aor)(Akt)(Inf) καὶ(Kon) ἀποφάναι(Aor)(Akt)(Inf) ἀληθῶς(Adv), ἀδύνατον(Adj)(N) καὶ(Kon)
+(627) wenn nun unmöglich zugleich zu|behaupten und zu|verneinen wahrhaft, unmöglich auch
+(628) τἀναντία(Adj)(A) ὑπάρχειν(Prä)(Inf)(Akt) ἅμα(Adv), ἀλλʼ(Kon) ἢ(Kon) πῇ(Adv) ἄμφω(Adj)(Du)(N) ἢ(Kon) θάτερον(Adj)(N) μὲν(Pt)
+(628) die|Gegenteiligen bestehen zugleich, sondern entweder irgendwie beide oder das|eine zwar
+(629) πῇ(Adv) θάτερον(Adj)(N) δὲ(Pt) ἁπλῶς(Adv).
+(629) irgendwie das|andere aber einfach.
+== St. 1012a ==
+= § 7 =
+(632) ἀλλὰ(Kon) μὴν(Pt) οὐδὲ(Kon) μεταξὺ(Adv) ἀντιφάσεως(G) ἐνδέχεται(Prä)(M/P) εἶναι(Prä)(Inf)(Akt) οὐθέν(Pr)(N), ἀλλʼ(Kon) ἀνάγκη(N)
+(632) aber freilich auch|nicht zwischen des|Widerspruchs ist|möglich zu|sein nichts, sondern Notwendigkeit
+(633) ἢ(Kon) φάναι(Aor)(Akt)(Inf) ἢ(Kon) ἀποφάναι(Aor)(Akt)(Inf) ἓν(Pr)(A) καθʼ(Prp) ἑνὸς(Pr)(G) ὁτιοῦν(Pr)(A). δῆλον(Adj)(N) δὲ(Pt)
+(633) entweder zu|behaupten oder zu|verneinen eins gemäß eines was|auch|immer. klar aber
+(634) πρῶτον(Adv) μὲν(Pt) ὁρισαμένοις(Aor)(Med)(D) τί(Pr)(A) τὸ(Art)(N) ἀληθὲς(Adj)(N) καὶ(Kon) ψεῦδος(N). τὸ(Art)(N) μὲν(Pt)
+(634) zuerst zwar festgesetzt|habenden was das Wahre und Falsche. das zwar
+(635) γὰρ(Pt) λέγειν(Prä)(Inf)(Akt) τὸ(Art)(A) ὂν(Prä)(Akt)(A) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ἢ(Kon) τὸ(Art)(A) μὴ(Pt) ὂν(Prä)(Akt)(A)
+(635) denn zu|sagen das Seiende nicht zu|sein oder das nicht Seiende
+(636) εἶναι(Prä)(Inf)(Akt) ψεῦδος(N), τὸ(Art)(N) δὲ(Pt) τὸ(Art)(A) ὂν(Prä)(Akt)(A) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) τὸ(Art)(A) μὴ(Pt)
+(636) zu|sein Falschheit, das aber das Seiende zu|sein und das nicht
+(637) ὂν(Prä)(Akt)(A) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ἀληθές(Adj)(N), ὥστε(Kon) καὶ(Kon) ὁ(Art)(N) λέγων(Prä)(Akt)(N) εἶναι(Prä)(Inf)(Akt) ἢ(Kon)
+(637) Seiende nicht zu|sein wahr, so|dass auch der sagend zu|sein oder
+(638) μὴ(Pt) ἀληθεύσει(Fu)(Akt) ἢ(Kon) ψεύσεται(Fu)(M/P)· ἀλλʼ(Kon) οὔτε(Kon) τὸ(Art)(N) ὂν(Prä)(Akt)(N) λέγεται(Prä)(M/P) μὴ(Pt)
+(638) nicht wird|wahrreden oder wird|lügen· sondern weder das Seiende wird|gesagt nicht
+(639) εἶναι(Prä)(Inf)(Akt) ἢ(Kon) εἶναι(Prä)(Inf)(Akt) οὔτε(Kon) τὸ(Art)(N) μὴ(Pt) ὄν(Prä)(Akt)(N). ἔτι(Adv) ἤτοι(Kon) μεταξὺ(Adv)
+(639) zu|sein oder zu|sein weder das nicht Seiende. ferner entweder zwischen
+(640) ἔσται(Fu)(Akt) τῆς(Art)(G) ἀντιφάσεως(G) ὥσπερ(Kon) τὸ(Art)(N) φαιὸν(Adj)(N) μέλανος(Adj)(G) καὶ(Kon) λευκοῦ(Adj)(G), ἢ(Kon)
+(640) wird|sein des Widerspruchs wie das grau des|Schwarzen und des|Weißen, oder
+(641) ὡς(Kon) τὸ(Art)(N) μηδέτερον(Adj)(N) ἀνθρώπου(G) καὶ(Kon) ἵππου(G). εἰ(Kon) μὲν(Pt) οὖν(Pt) οὕτως(Adv),
+(641) wie das keines|von|beiden des|Menschen und des|Pferdes. wenn zwar nun so,
+(642) οὐκ(Pt) ἂν(Pt) μεταβάλλοι(Prä)(Akt)(Op) (ἐκ(Prp) μὴ(Pt) ἀγαθοῦ(Adj)(G) γὰρ(Pt) εἰς(Prp) ἀγαθὸν(Adj)(A) μεταβάλλει(Prä)(Akt)
+(642) nicht wohl wechselte (aus nicht Gutem denn in Gutes wechselt
+(643) ἢ(Kon) ἐκ(Prp) τούτου(Pr)(G) εἰς(Prp) μὴ(Pt) ἀγαθόν(Adj)(A)), νῦν(Adv) δʼ(Pt) ἀεὶ(Adv) φαίνεται(Prä)(M/P)
+(643) oder aus diesem in nicht gut), jetzt aber immer erscheint
+(644) (οὐ(Pt) γὰρ(Pt) ἔστι(Prä)(Akt) μεταβολὴ(N) ἀλλʼ(Kon) ἢ(Kon) εἰς(Prp) τὰ(Art)(A) ἀντικείμενα(Prä)(M/P)(A) καὶ(Kon)
+(644) (nicht denn ist Veränderung sondern entweder in die Entgegengesetzten und
+(645) μεταξύ(Adv))· εἰ(Kon) δʼ(Pt) ἔστι(Prä)(Akt) μεταξύ(Adv), καὶ(Kon) οὕτως(Adv) εἴη(Prä)(Akt)(Op) ἄν(Pt) τις(Pr)(N)
+(645) zwischen)· wenn aber ist zwischen, und so wäre wohl jemand
+(646) εἰς(Prp) λευκὸν(Adj)(A) οὐκ(Pt) ἐκ(Prp) μὴ(Pt) λευκοῦ(Adj)(G) γένεσις(N), νῦν(Adv) δʼ(Pt) οὐχ(Pt)
+(646) in weiß nicht aus nicht weißen Entstehung, jetzt aber nicht
+(647) ὁρᾶται(Prä)(M/P). ἔτι(Adv) πᾶν(Adj)(N) τὸ(Art)(N) διανοητὸν(Adj)(N) καὶ(Kon) νοητὸν(Adj)(N) ἡ(Art)(N) διάνοια(N) ἢ(Kon)
+(647) wird|gesehen. weiter jedes das denkbar und erkennbar die Denkkraft entweder
+(648) κατάφησιν(A) ἢ(Kon) ἀπόφησιν(A)— τοῦτο(Pr)(N) δʼ(Pt) ἐξ(Prp) ὁρισμοῦ(G) δῆλον(Adj)(N)— ὅταν(Kon) ἀληθεύῃ(Prä)(Akt)(Knj) ἢ(Kon) ψεύδηται(Prä)(M/P)(Knj)·
+(648) Bejahung oder Verneinung— dieses aber aus Definition offenkundig— wenn|immer wahr|sagt oder sich|irrt·
+(649) ὅταν(Kon) μὲν(Pt) ὡδὶ(Adv) συνθῇ(Aor)(Akt)(Knj) φᾶσα(Prä)(Akt)(N) ἢ(Kon) ἀποφᾶσα(Prä)(Akt)(N), ἀληθεύει(Prä)(Akt), ὅταν(Kon) δὲ(Pt)
+(649) wenn|immer zwar so zusammen|füge behauptend oder verneinend, wahr|redet, wenn|immer aber
+(650) ὡδί(Adv), ψεύδεται(Prä)(M/P). ἔτι(Adv) παρὰ(Prp) πάσας(Adj)(A) δεῖ(Prä)(Akt) εἶναι(Prä)(Inf)(Akt) τὰς(Art)(A) ἀντιφάσεις(A), εἰ(Kon)
+(650) so, lügt. weiter gegen alle muss sein die Widersprüche, wenn
+(651) μὴ(Pt) λόγου(G) ἕνεκα(Prp) λέγεται(Prä)(M/P)· ὥστε(Kon) καὶ(Kon) οὔτε(Kon) ἀληθεύσει(Fu)(Akt) τις(Pr)(N) οὔτʼ(Kon)
+(651) nicht des|Wortes um|willen wird|gesagt· so|dass und|auch weder wird|wahr|reden jemand noch
+(652) οὐκ(Pt) ἀληθεύσει(Fu)(Akt), καὶ(Kon) παρὰ(Prp) τὸ(Art)(A) ὂν(Prä)(Akt)(A) καὶ(Kon) τὸ(Art)(A) μὴ(Pt) ὂν(Prä)(Akt)(A)
+(652) nicht wird|wahr|reden, und gegen das Seiende und das nicht Seiende
+(653) ἔσται(Fu)(Akt), ὥστε(Kon) καὶ(Kon) παρὰ(Prp) γένεσιν(A) καὶ(Kon) φθορὰν(A) μεταβολή(N) τις(Pr)(N) ἔσται(Fu)(Akt).
+(653) wird|sein, so|dass auch gegen Entstehung und Verderbung Veränderung irgendeine wird|sein.
+(654) ἔτι(Adv) ἐν(Prp) ὅσοις(Pr)(D) γένεσιν(A) ἡ(Art)(N) ἀπόφασις(N) τὸ(Art)(A) ἐναντίον(Adj)(A) ἐπιφέρει(Prä)(Akt), καὶ(Kon)
+(654) weiter in in|denen Entstehung die Verneinung das Entgegengesetzte hinzu|bringt, und
+(655) ἐν(Prp) τούτοις(Pr)(D) ἔσται(Fu)(Akt), οἷον(Kon) ἐν(Prp) ἀριθμοῖς(D) οὔτε(Kon) περιττὸς(Adj)(N) οὔτε(Kon) οὐ(Pt)
+(655) in diesen wird|sein, zum|Beispiel in Zahlen weder ungerade weder nicht
+(656) περιττὸς(Adj)(N) ἀριθμός(N)· ἀλλʼ(Kon) ἀδύνατον(Adj)(N)· ἐκ(Prp) τοῦ(Art)(G) ὁρισμοῦ(G) δὲ(Pt) δῆλον(Adj)(N). ἔτι(Adv)
+(656) ungerade Zahl· aber unmöglich· aus des Definition aber offenkundig. weiter
+(657) εἰς(Prp) ἄπειρον(Adj)(A) βαδιεῖται(Fu)(M/P), καὶ(Kon) οὐ(Pt) μόνον(Adv) ἡμιόλια(Adj)(N) τὰ(Art)(N) ὄντα(Prä)(Akt)(N) ἔσται(Fu)(Akt)
+(657) in Unendliche wird|gehen, und nicht nur anderthalbe die Seienden wird|sein
+(658) ἀλλὰ(Kon) πλείω(Adj)(N)(Kmp). πάλιν(Adv) γὰρ(Pt) ἔσται(Fu)(Akt) ἀποφῆσαι(Aor)(Akt)(Inf) τοῦτο(Pr)(A) πρὸς(Prp) τὴν(Art)(A) φάσιν(A)
+(658) sondern mehr. wieder denn wird|sein zu|verneinen dieses zu der Bejahung
+(659) καὶ(Kon) τὴν(Art)(A) ἀπόφασιν(A), καὶ(Kon) τοῦτʼ(Pr)(N) ἔσται(Fu)(Akt) τι(Pr)(N)· ἡ(Art)(N) γὰρ(Pt) οὐσία(N)
+(659) und die Verneinung, und dieses wird|sein etwas· die denn Substanz
+(660) ἐστί(Prä)(Akt) τις(Pr)(N) αὐτοῦ(Pr)(G) ἄλλη(Adj)(N). ἔτι(Adv) ὅταν(Kon) ἐρομένου(Prä)(M/P)(G) εἰ(Kon) λευκόν(Adj)(N) ἐστιν(Prä)(Akt)
+(660) ist irgendeine seiner andere. weiter wenn|immer des|Fragenden ob weiß ist
+(661) εἴπῃ(Aor)(Akt)(Knj) ὅτι(Kon) οὔ(Pt), οὐθὲν(Pr)(N) ἄλλο(Adj)(N) ἀποπέφηκεν(Per)(Akt) ἢ(Kon) τὸ(Art)(N) εἶναι(Prä)(Inf)(Akt)· ἀπόφασις(N)
+(661) sage dass nein, nichts anderes hat|ausgesagt als das Sein· Verneinung
+(662) δὲ(Pt) τὸ(Art)(N) μὴ(Pt) εἶναι(Prä)(Inf)(Akt). ἐλήλυθε(Per)(Akt) δʼ(Pt) ἐνίοις(Adj)(D) αὕτη(Pr)(N) ἡ(Art)(N) δόξα(N)
+(662) aber das nicht zu|sein. ist|gekommen aber einigen diese die Meinung
+(663) ὥσπερ(Kon) καὶ(Kon) ἄλλαι(Adj)(N) τῶν(Art)(G) παραδόξων(Adj)(G)· ὅταν(Kon) γὰρ(Pt) λύειν(Prä)(Akt)(Inf) μὴ(Pt) δύνωνται(Prä)(M/P)(Knj)
+(663) so|wie auch andere der paradoxen· wenn|immer denn auflösen nicht können
+(664) λόγους(A) ἐριστικούς(Adj)(A), ἐνδόντες(Aor)(Akt)(N) τῷ(Art)(D) λόγῳ(D) σύμφασιν(A) ἀληθὲς(Adj)(N) εἶναι(Prä)(Inf)(Akt) τὸ(Art)(N) συλλογισθέν(Aor)(M/P)(N).
+(664) Reden streit|süchtige, nachgegeben|habend dem Wort Zustimmung wahr zu|sein das Geschlussfolgerte.
+(665) οἱ(Art)(N) μὲν(Pt) οὖν(Pt) διὰ(Prp) τοιαύτην(Adj)(A) αἰτίαν(A) λέγουσιν(Prä)(Akt), οἱ(Art)(N) δὲ(Pt) διὰ(Prp)
+(665) die zwar nun wegen solcher Ursache sagen, die aber wegen
+(666) τὸ(Art)(N) πάντων(Adj)(G) ζητεῖν(Prä)(Akt)(Inf) λόγον(A). ἀρχὴ(N) δὲ(Pt) πρὸς(Prp) ἅπαντας(Adj)(A) τούτους(Pr)(A) ἐξ(Prp)
+(666) das aller suchen Grund. Anfang aber gegen alle diese aus
+(667) ὁρισμοῦ(G). ὁρισμὸς(N) δὲ(Pt) γίγνεται(Prä)(M/P) ἐκ(Prp) τοῦ(Art)(G) σημαίνειν(Prä)(Inf)(Akt) τι(Pr)(N) ἀναγκαῖον(Adj)(N) εἶναι(Prä)(Inf)(Akt)
+(667) Definition. Definition aber geschieht aus des bedeuten etwas notwendig zu|sein
+(668) αὐτούς(Pr)(A)· ὁ(Art)(N) γὰρ(Pt) λόγος(N) οὗ(Pr)(G) τὸ(Art)(N) ὄνομα(N) σημεῖον(N) ὁρισμὸς(N) ἔσται(Fu)(Akt).
+(668) sie· der denn Spruch dessen der Name Zeichen Definition wird|sein.
+(669) ἔοικε(Per)(Akt) δʼ(Pt) ὁ(Art)(N) μὲν(Pt) Ἡρακλείτου(G) λόγος(N), λέγων(Prä)(Akt)(N) πάντα(Adj)(A) εἶναι(Prä)(Inf)(Akt) καὶ(Kon)
+(669) scheint aber der zwar des|Heraklit Spruch, sagend alles zu|sein und
+(670) μὴ(Pt) εἶναι(Prä)(Inf)(Akt), ἅπαντα(Adj)(A) ἀληθῆ(Adj)(A) ποιεῖν(Prä)(Inf)(Akt), ὁ(Art)(N) δʼ(Pt) Ἀναξαγόρου(G), εἶναί(Prä)(Inf)(Akt) τι(Pr)(N)
+(670) nicht zu|sein, alles wahr machen, der aber des|Anaxagoras, zu|sein etwas
+(671) μεταξὺ(Prp) τῆς(Art)(G) ἀντιφάσεως(G), πάντα(Adj)(A) ψευδῆ(Adj)(A)· ὅταν(Kon) γὰρ(Pt) μιχθῇ(Aor)(M/P)(Knj), οὔτε(Kon) ἀγαθὸν(Adj)(N)
+(671) zwischen der des|Wider|spruchs, alles falsch· wenn|immer denn gemischt|werde, weder gut
+(672) οὔτε(Kon) οὐκ(Pt) ἀγαθὸν(Adj)(N) τὸ(Art)(N) μῖγμα(N), ὥστʼ(Kon) οὐδὲν(Pr)(A) εἰπεῖν(Aor)(Akt)(Inf) ἀληθές(Adj)(N).
+(672) noch nicht gut das Gemisch, so|dass nichts sagen wahr.
+== St. 1012b ==
+= § 8 =
+(675) διωρισμένων(Per)(M/P)(G) δὲ(Pt) τούτων(Pr)(G) φανερὸν(Adj)(N) ὅτι(Kon) καὶ(Kon) τὰ(Art)(N) μοναχῶς(Adv) λεγόμενα(Prä)(M/P)(N) καὶ(Kon)
+(675) abgegrenzt|wordener aber dieser offenkundig dass auch die allein gesagt|werdenden und
+(676) κατὰ(Prp) πάντων(Adj)(G) ἀδύνατον(Adj)(N) ὑπάρχειν(Prä)(Inf)(Akt) ὥσπερ(Kon) τινὲς(Pr)(N) λέγουσιν(Prä)(Akt), οἱ(Art)(N) μὲν(Pt) οὐθὲν(Pr)(A)
+(676) gemäß aller unmöglich zu|bestehen so|wie einige sagen, die zwar nichts
+(677) φάσκοντες(Prä)(Akt)(N) ἀληθὲς(Adj)(A) εἶναι(Prä)(Inf)(Akt) (οὐθὲν(Pr)(N) γὰρ(Pt) κωλύειν(Prä)(Inf)(Akt) φασὶν(Prä)(Akt) οὕτως(Adv) ἅπαντα(Adj)(A) εἶναι(Prä)(Inf)(Akt)
+(677) behauptend wahr zu|sein (nichts denn hindern sagen|sie so alles zu|sein
+(678) ὥσπερ(Kon) τὸ(Art)(N) τὴν(Art)(A) διάμετρον(A) σύμμετρον(Adj)(A) εἶναι(Prä)(Inf)(Akt)), οἱ(Art)(N) δὲ(Pt) πάντʼ(Adj)(A) ἀληθῆ(Adj)(A).
+(678) so|wie das die Diagonale kom|mensurabel zu|sein), die aber alles wahr.
+(679) σχεδὸν(Adv) γὰρ(Pt) οὗτοι(Pr)(N) οἱ(Art)(N) λόγοι(N) οἱ(Art)(N) αὐτοὶ(Adj)(N) τῷ(Art)(D) Ἡρακλείτου(G)· ὁ(Art)(N)
+(679) beinahe denn diese die Reden die selben dem Heraklits· der
+(680) γὰρ(Pt) λέγων(Prä)(Akt)(N) ὅτι(Kon) πάντʼ(Adj)(A) ἀληθῆ(Adj)(A) καὶ(Kon) πάντα(Adj)(A) ψευδῆ(Adj)(A), καὶ(Kon) χωρὶς(Prp)
+(680) denn sagend dass alles wahr und alles falsch, und getrennt|von
+(681) λέγει(Prä)(Akt) τῶν(Art)(G) λόγων(G) ἑκάτερον(Adj)(A) τούτων(Pr)(G), ὥστʼ(Kon) εἴπερ(Kon) ἀδύνατα(Adj)(N) ἐκεῖνα(Pr)(N), καὶ(Kon)
+(681) sagt der Aussagen jeweils|jedes dieser, so|dass wenn|wirklich unmögliche jene, auch
+(682) ταῦτα(Pr)(A) ἀδύνατον(Adj)(N) εἶναι(Prä)(Inf)(Akt). ἔτι(Adv) δὲ(Pt) φανερῶς(Adv) ἀντιφάσεις(N) εἰσὶν(Prä)(Akt) ἃς(Pr)(A) οὐχ(Pt)
+(682) dieses unmöglich zu|sein. weiter aber offenkundig Widersprüche sind welche nicht
+(683) οἷόν(Adj)(N) τε(Pt) ἅμα(Adv) ἀληθεῖς(Adj)(A) εἶναι(Prä)(Inf)(Akt)— οὐδὲ(Kon) δὴ(Pt) ψευδεῖς(Adj)(A) πάσας(Adj)(A)· καίτοι(Pt) δόξειέ(Aor)(Akt)(Op)
+(683) möglich ja zugleich wahre zu|sein— auch|nicht ja falsche alle· und|doch würde|scheinen
+(684) γʼ(Pt) ἂν(Pt) μᾶλλον(Adv)(Kmp) ἐνδέχεσθαι(Prä)(M/P)(Inf) ἐκ(Prp) τῶν(Art)(G) εἰρημένων(Per)(M/P)(G). ἀλλὰ(Kon) πρὸς(Prp) πάντας(Adj)(A)
+(684) ja wohl mehr möglich|sein aus den Gesagten. aber gegen alle
+(685) τοὺς(Art)(A) τοιούτους(Adj)(A) λόγους(A) αἰτεῖσθαι(Prä)(M/P)(Inf) δεῖ(Prä)(Akt), καθάπερ(Kon) ἐλέχθη(Aor)(Pas) καὶ(Kon) ἐν(Prp) τοῖς(Art)(D)
+(685) die solchen Reden zu|fordern muss, so|wie wurde|gesagt auch in den
+(686) ἐπάνω(Adv) λόγοις(D), οὐχὶ(Pt) εἶναί(Prä)(Inf)(Akt) τι(Pr)(N) ἢ(Kon) μὴ(Pt) εἶναι(Prä)(Inf)(Akt) ἀλλὰ(Kon) σημαίνειν(Prä)(Inf)(Akt)
+(686) obigen Reden, nicht zu|sein etwas oder nicht zu|sein sondern bedeuten
+(687) τι(Pr)(N), ὥστε(Kon) ἐξ(Prp) ὁρισμοῦ(G) διαλεκτέον(Adj)(N) λαβόντας(Aor)(Akt)(A) τί(Pr)(A) σημαίνει(Prä)(Akt) τὸ(Art)(N) ψεῦδος(N)
+(687) etwas, so|dass aus Definition zu|erörtern genommen|habend was bedeutet das Falsche
+(688) ἢ(Kon) τὸ(Art)(N) ἀληθές(Adj)(N). εἰ(Kon) δὲ(Pt) μηθὲν(Pr)(N) ἄλλο(Adj)(N) τὸ(Art)(N) ἀληθὲς(Adj)(N) φάναι(Aor)(Akt)(Inf)
+(688) oder das Wahre. wenn aber nichts anderes das Wahre behaupten
+(689) ἢ(Kon) ⟦ὃ⟧(Pr)(N) ἀποφάναι(Aor)(Akt)(Inf) ψεῦδός(N) ἐστιν(Prä)(Akt), ἀδύνατον(Adj)(N) πάντα(Adj)(A) ψευδῆ(Adj)(A) εἶναι(Prä)(Inf)(Akt)· ἀνάγκη(N)
+(689) als ⟦was⟧ zu|verneinen Falsches ist, unmöglich alles falsch zu|sein· Notwendigkeit
+(690) γὰρ(Pt) τῆς(Art)(G) ἀντιφάσεως(G) θάτερον(Adj)(N) εἶναι(Prä)(Inf)(Akt) μόριον(N) ἀληθές(Adj)(N). ἔτι(Adv) εἰ(Kon) πᾶν(Adj)(N)
+(690) denn des Widerspruchs das|eine zu|sein Teil wahr. weiter wenn jedes
+(691) ἢ(Kon) φάναι(Aor)(Akt)(Inf) ἢ(Kon) ἀποφάναι(Aor)(Akt)(Inf) ἀναγκαῖον(Adj)(N), ἀδύνατον(Adj)(N) ἀμφότερα(Adj)(A) ψευδῆ(Adj)(A) εἶναι(Prä)(Inf)(Akt)· θάτερον(Adj)(N)
+(691) entweder behaupten oder verneinen notwendig, unmöglich beide falsch zu|sein· das|eine
+(692) γὰρ(Pt) μόριον(N) τῆς(Art)(G) ἀντιφάσεως(G) ψεῦδός(N) ἐστιν(Prä)(Akt). συμβαίνει(Prä)(Akt) δὴ(Pt) καὶ(Kon) τὸ(Art)(N)
+(692) denn Teil des Widerspruchs falsch ist. es|folgt ja auch das
+(693) θρυλούμενον(Prä)(M/P)(N) πᾶσι(Adj)(D) τοῖς(Art)(D) τοιούτοις(Adj)(D) λόγοις(D), αὐτοὺς(Pr)(A) ἑαυτοὺς(Pr)(A) ἀναιρεῖν(Prä)(Akt)(Inf). ὁ(Art)(N) μὲν(Pt)
+(693) sprich|wörtlich|Gesagte allen den solchen Reden, sich selbst auf|heben. der zwar
+(694) γὰρ(Pt) πάντα(Adj)(A) ἀληθῆ(Adj)(A) λέγων(Prä)(Akt)(N) καὶ(Kon) τὸν(Art)(A) ἐναντίον(Adj)(A) αὑτοῦ(Pr)(G) λόγον(A) ἀληθῆ(Adj)(A)
+(694) denn alles wahr sagend auch den entgegengesetzten seines|selbst Spruch wahr
+(695) ποιεῖ(Prä)(Akt), ὥστε(Kon) τὸν(Art)(A) ἑαυτοῦ(Pr)(G) οὐκ(Pt) ἀληθῆ(Adj)(A) (ὁ(Art)(N) γὰρ(Pt) ἐναντίος(Adj)(N) οὔ(Pt)
+(695) macht, so|dass den eigenen nicht wahr (der denn entgegengesetzte nicht
+(696) φησιν(Prä)(Akt) αὐτὸν(Pr)(A) ἀληθῆ(Adj)(A)), ὁ(Art)(N) δὲ(Pt) πάντα(Adj)(A) ψευδῆ(Adj)(A) καὶ(Kon) αὐτὸς(Pr)(N) αὑτόν(Pr)(A).
+(696) sagt ihn wahr), der aber alles falsche und selbst sich.
+(697) ἐὰν(Kon) δʼ(Pt) ἐξαιρῶνται(Prä)(M/P)(Knj) ὁ(Art)(N) μὲν(Pt) τὸν(Art)(A) ἐναντίον(Adj)(A) ὡς(Kon) οὐκ(Pt) ἀληθὴς(Adj)(N)
+(697) falls aber nehmen|aus der zwar den entgegengesetzten als nicht wahr
+(698) μόνος(Adj)(N) ἐστίν(Prä)(Akt), ὁ(Art)(N) δὲ(Pt) τὸν(Art)(A) αὑτοῦ(Pr)(G) ὡς(Kon) οὐ(Pt) ψευδής(Adj)(N), οὐδὲν(Pr)(N)
+(698) allein ist, der aber den seinen als nicht falsch, nichts
+(699) ἧττον(Adv)(Kmp) ἀπείρους(Adj)(A) συμβαίνει(Prä)(Akt) αὐτοῖς(Pr)(D) αἰτεῖσθαι(Prä)(M/P)(Inf) λόγους(A) ἀληθεῖς(Adj)(A) καὶ(Kon) ψευδεῖς(Adj)(A)· ὁ(Art)(N)
+(699) weniger unzählige es|geschieht ihnen|D zu|fordern Aussagen wahre und falsche· der
+(700) γὰρ(Pt) λέγων(Prä)(Akt)(N) τὸν(Art)(A) ἀληθῆ(Adj)(A) λόγον(A) ἀληθῆ(Adj)(A) ἀληθής(Adj)(N), τοῦτο(Pr)(N) δʼ(Pt) εἰς(Prp)
+(700) denn sagend den wahren Spruch wahr wahr, dieses aber in
+(701) ἄπειρον(Adj)(A) βαδιεῖται(Fu)(M/P). — φανερὸν(Adj)(N) δʼ(Pt) ὅτι(Kon) οὐδʼ(Pt) οἱ(Art)(N) πάντα(Adj)(A) ἠρεμεῖν(Prä)(Inf)(Akt) λέγοντες(Prä)(Akt)(N) ἀληθῆ(Adj)(A)
+(701) das|Unendliche wird|gehen. — offenkundig aber dass auch|nicht die alles zu|ruhen sagend|seiende Wahres
+(702) λέγουσιν(Prä)(Akt) οὐδʼ(Pt) οἱ(Art)(N) πάντα(Adj)(A) κινεῖσθαι(Prä)(M/P)(Inf). εἰ(Kon) μὲν(Pt) γὰρ(Pt) ἠρεμεῖ(Prä)(Akt) πάντα(Adj)(A),
+(702) sagen auch|nicht die alles sich|bewegen. wenn zwar denn ruht alles,
+(703) ἀεὶ(Adv) ταὐτὰ(Adj)(N) ἀληθῆ(Adj)(N) καὶ(Kon) ψευδῆ(Adj)(N) ἔσται(Fu)(Akt), φαίνεται(Prä)(M/P) δὲ(Pt) τοῦτο(Pr)(N) μεταβάλλον(Prä)(Akt)(N)
+(703) immer dieselben wahre und falsche wird|sein, erscheint aber dieses wechselnd|seiend
+(704) (ὁ(Art)(N) γὰρ(Pt) λέγων(Prä)(Akt)(N) ποτὲ(Adv) αὐτὸς(Pr)(N) οὐκ(Pt) ἦν(Imp)(Akt) καὶ(Kon) πάλιν(Adv) οὐκ(Pt)
+(704) (der denn sagend einst selbst nicht war und wieder nicht
+(705) ἔσται(Fu)(Akt))· εἰ(Kon) δὲ(Pt) πάντα(Adj)(N) κινεῖται(Prä)(M/P), οὐθὲν(Pr)(N) ἔσται(Fu)(Akt) ἀληθές(Adj)(N)· πάντα(Adj)(N) ἄρα(Pt)
+(705) wird|sein)· wenn aber alles bewegt|sich, nichts wird|sein wahr· alles also
+(706) ψευδῆ(Adj)(N)· ἀλλὰ(Kon) δέδεικται(Per)(M/P) ὅτι(Kon) ἀδύνατον(Adj)(N). ἔτι(Adv) ἀνάγκη(N) τὸ(Art)(A) ὂν(Prä)(Akt)(A) μεταβάλλειν(Prä)(Akt)(Inf)·
+(706) falsche· sondern ist|gezeigt dass unmöglich. noch Notwendigkeit das Seiende zu|verändern·
+(707) ἔκ(Prp) τινος(Pr)(G) γὰρ(Pt) εἴς(Prp) τι(Pr)(A) ἡ(Art)(N) μεταβολή(N). ἀλλὰ(Kon) μὴν(Pt) οὐδὲ(Pt)
+(707) aus irgend|einem denn in etwas die Ver|änderung. sondern freilich auch|nicht
+(708) πάντα(Adj)(N) ἠρεμεῖ(Prä)(Akt) ἢ(Kon) κινεῖται(Prä)(M/P) ποτέ(Adv), ἀεὶ(Adv) δʼ(Pt) οὐθέν(Pr)(N)· ἔστι(Prä)(Akt) γάρ(Pt)
+(708) alles ruht oder bewegt|sich jemals, immer aber nichts· ist denn
+(709) τι(Pr)(N) ὃ(Pr)(N) ἀεὶ(Adv) κινεῖ(Prä)(Akt) τὰ(Art)(A) κινούμενα(Prä)(M/P)(A), καὶ(Kon) τὸ(Art)(N) πρῶτον(Adj)(N) κινοῦν(Prä)(Akt)(N)
+(709) etwas was immer bewegt die bewegt|werdenden, und das erste Bewegende
+(710) ἀκίνητον(Adj)(N) αὐτό(Pr)(N).
+(710) unbewegt selbst.

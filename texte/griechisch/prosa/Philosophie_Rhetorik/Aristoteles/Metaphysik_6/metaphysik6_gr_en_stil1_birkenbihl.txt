@@ -1,0 +1,379 @@
+==== Metaphysik 6 ====
+== St. 1025b ==
+= § 1 =
+(4) αἱ(Art)(N) ἀρχαὶ(N) καὶ(Kon) τὰ(Art)(N) αἴτια(N) ζητεῖται(Prä)(M/P) τῶν(Art)(G) ὄντων(Prä)(Akt)(G), δῆλον(Adj)(N) δὲ(Pt)
+(4) the principles and the causes is|sought of|the beings, clear but
+(5) ὅτι(Kon) ᾗ(Adv) ὄντα(Prä)(Akt)(A). ἔστι(Prä)(Akt) γάρ(Pt) τι(Pr)(N) αἴτιον(N) ὑγιείας(G) καὶ(Kon) εὐεξίας(G),
+(5) that in|so|far|as being|things. there|is for some|thing cause of|health and of|wellbeing,
+(6) καὶ(Kon) τῶν(Art)(G) μαθηματικῶν(Adj)(G) εἰσὶν(Prä)(Akt) ἀρχαὶ(N) καὶ(Kon) στοιχεῖα(N) καὶ(Kon) αἴτια(N), καὶ(Kon)
+(6) and of|the mathematical|things there|are principles and elements and causes, and
+(7) ὅλως(Adv) δὲ(Pt) πᾶσα(Adj)(N) ἐπιστήμη(N) διανοητικὴ(Adj)(N) ἢ(Kon) μετέχουσά(Prä)(Akt)(N) τι(Pr)(A) διανοίας(G) περὶ(Prp)
+(7) in|general but every science intellectual or sharing some|thing of|intellect about
+(8) αἰτίας(G) καὶ(Kon) ἀρχάς(A) ἐστιν(Prä)(Akt) ἢ(Kon) ἀκριβεστέρας(Adj)(A)(Kmp) ἢ(Kon) ἁπλουστέρας(Adj)(A)(Kmp). ἀλλὰ(Kon) πᾶσαι(Adj)(N)
+(8) of|causes and principles is or more|exact or more|simple. but all
+(9) αὗται(Pr)(N) περὶ(Prp) ὄν(Prä)(Akt)(A) τι(Pr)(A) καὶ(Kon) γένος(A) τι(Pr)(A) περιγραψάμεναι(Aor)(Med)(N) περὶ(Prp) τούτου(Pr)(G)
+(9) these about being some and kind some having|outlined about this
+(10) πραγματεύονται(Prä)(M/P), ἀλλʼ(Kon) οὐχὶ(Pt) περὶ(Prp) ὄντος(Prä)(Akt)(G) ἁπλῶς(Adv) οὐδὲ(Kon) ᾗ(Adv) ὄν(Prä)(Akt)(N), οὐδὲ(Kon)
+(10) busy|themselves, but not about of|being simply nor in|so|far|as being, nor
+(11) τοῦ(Art)(G) τί(Pr)(N) ἐστιν(Prä)(Akt) οὐθένα(Pr)(A) λόγον(A) ποιοῦνται(Prä)(M/P), ἀλλʼ(Kon) ἐκ(Prp) τούτου(Pr)(G), αἱ(Art)(N)
+(11) of|the what|it|is is no account they|make, but from this, the
+(12) μὲν(Pt) αἰσθήσει(D) ποιήσασαι(Aor)(Akt)(N) αὐτὸ(Pr)(A) δῆλον(Adj)(A) αἱ(Art)(N) δʼ(Kon) ὑπόθεσιν(A) λαβοῦσαι(AorS)(Akt)(N) τὸ(Art)(A)
+(12) indeed by|perception having|made it clear the but hypothesis having|taken the
+(13) τί(Pr)(N) ἐστιν(Prä)(Akt), οὕτω(Adv) τὰ(Art)(A) καθʼ(Prp) αὑτὰ(Pr)(A) ὑπάρχοντα(Prä)(Akt)(A) τῷ(Art)(D) γένει(D) περὶ(Prp)
+(13) what|it|is is, thus the according|to them|selves being to|the kind about
+(14) ὅ(Pr)(A) εἰσιν(Prä)(Akt) ἀποδεικνύουσιν(Prä)(Akt) ἢ(Kon) ἀναγκαιότερον(Adj)(A)(Kmp) ἢ(Kon) μαλακώτερον(Adj)(A)(Kmp)· διόπερ(Kon) φανερὸν(Adj)(N) ὅτι(Kon)
+(14) what they|are they|demonstrate either more|necessary or more|soft· therefore clear that
+(15) οὐκ(Pt) ἔστιν(Prä)(Akt) ἀπόδειξις(N) οὐσίας(G) οὐδὲ(Kon) τοῦ(Art)(G) τί(Pr)(N) ἐστιν(Prä)(Akt) ἐκ(Prp) τῆς(Art)(G)
+(15) not is demonstration of|substance nor of|the what|it|is is from the
+(16) τοιαύτης(Adj)(G) ἐπαγωγῆς(G), ἀλλά(Kon) τις(Pr)(N) ἄλλος(Adj)(N) τρόπος(N) τῆς(Art)(G) δηλώσεως(G). ὁμοίως(Adv) δὲ(Pt)
+(16) such induction, but some other way of|the making|clear. likewise but
+(17) οὐδʼ(Kon) εἰ(Kon) ἔστιν(Prä)(Akt) ἢ(Kon) μὴ(Pt) ἔστι(Prä)(Akt) τὸ(Art)(N) γένος(N) περὶ(Prp) ὃ(Pr)(A)
+(17) nor if it|is or not is the kind about which
+(18) πραγματεύονται(Prä)(M/P) οὐδὲν(Pr)(A) λέγουσι(Prä)(Akt), διὰ(Prp) τὸ(Art)(A) τῆς(Art)(G) αὐτῆς(Adj)(G) εἶναι(Prä)(Inf)(Akt) διανοίας(G) τό(Art)(N)
+(18) they|busy|themselves nothing they|say, because|of the of|the same to|be of|thought the
+(19) τε(Pt) τί(Pr)(N) ἐστι(Prä)(Akt) δῆλον(Adj)(N) ποιεῖν(Prä)(Inf)(Akt) καὶ(Kon) εἰ(Kon) ἔστιν(Prä)(Akt). — ἐπεὶ(Kon) δὲ(Pt) καὶ(Kon)
+(19) and what it|is clear to|make and if it|is. — since but also
+(20) ἡ(Art)(N) φυσικὴ(Adj)(N) ἐπιστήμη(N) τυγχάνει(Prä)(Akt) οὖσα(Prä)(Akt)(N) περὶ(Prp) γένος(A) τι(Pr)(A) τοῦ(Art)(G) ὄντος(G)
+(20) the natural science happens being about kind some of|the being
+(21) (περὶ(Prp) γὰρ(Pt) τὴν(Art)(A) τοιαύτην(Adj)(A) ἐστὶν(Prä)(Akt) οὐσίαν(A) ἐν(Prp) ᾗ(Pr)(D) ἡ(Art)(N) ἀρχὴ(N)
+(21) (about for the such is substance in in|which the beginning
+(22) τῆς(Art)(G) κινήσεως(G) καὶ(Kon) στάσεως(G) ἐν(Prp) αὐτᾖ(Pr)(D), δῆλον(Adj)(N) ὅτι(Kon) οὔτε(Kon) πρακτική(Adj)(N)
+(22) of|the motion and rest in it|self, clear that neither practical
+(23) ἐστιν(Prä)(Akt) οὔτε(Kon) ποιητική(Adj)(N) (τῶν(Art)(G) μὲν(Pt) γὰρ(Pt) ποιητῶν(G) ἐν(Prp) τῷ(Art)(D) ποιοῦντι(Prä)(Akt)(D)
+(23) is nor productive (of|the indeed for makers in the making
+(24) ἡ(Art)(N) ἀρχή(N), ἢ(Kon) νοῦς(N) ἢ(Kon) τέχνη(N) ἢ(Kon) δύναμίς(N) τις(Pr)(N), τῶν(Art)(G)
+(24) the principle, either mind or art or power some, of|the
+(25) δὲ(Pt) πρακτῶν(Adj)(G) ἐν(Prp) τῷ(Art)(D) πράττοντι(Prä)(Akt)(D), ἡ(Art)(N) προαίρεσις(N)· τὸ(Art)(N) αὐτὸ(Pr)(N) γὰρ(Pt)
+(25) but practical|things in the acting, the choice· the same for
+(26) τὸ(Art)(N) πρακτὸν(Adj)(N) καὶ(Kon) προαιρετόν(Adj)(N)), ὥστε(Kon) εἰ(Kon) πᾶσα(Adj)(N) διάνοια(N) ἢ(Kon) πρακτικὴ(Adj)(N)
+(26) the doable and choosable), so|that if every thought either practical
+(27) ἢ(Kon) ποιητικὴ(Adj)(N) ἢ(Kon) θεωρητική(Adj)(N), ἡ(Art)(N) φυσικὴ(Adj)(N) θεωρητική(Adj)(N) τις(Pr)(N) ἂν(Pt) εἴη(Prä)(Akt)(Op),
+(27) or productive or theoretical, the natural theoretical some would be,
+(28) ἀλλὰ(Kon) θεωρητικὴ(Adj)(N) περὶ(Prp) τοιοῦτον(Adj)(A) ὂν(Prä)(Akt)(A) ὅ(Pr)(A) ἐστι(Prä)(Akt) δυνατὸν(Adj)(N) κινεῖσθαι(Prä)(M/P)(Inf), καὶ(Kon)
+(28) but theoretical about such being which is possible to|be|moved, and
+(29) περὶ(Prp) οὐσίαν(A) τὴν(Art)(A) κατὰ(Prp) τὸν(Art)(A) λόγον(A) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολὺ(Adj)(A)
+(29) about substance the according|to the account as upon the most
+(30) ὡς(Kon) οὐ(Kon) χωριστὴν(Adj)(A) μόνον(Adv). δεῖ(Prä)(Akt) δὲ(Pt) τὸ(Art)(A) τί(Pr)(N) ἦν(Imp)(Akt) εἶναι(Prä)(Inf)(Akt)
+(30) as not separate only. it|is|necessary but the what was to|be
+(31) καὶ(Kon) τὸν(Art)(A) λόγον(A) πῶς(Adv) ἐστὶ(Prä)(Akt) μὴ(Pt) λανθάνειν(Prä)(Inf)(Akt), ὡς(Kon) ἄνευ(Prp) γε(Pt)
+(31) and the account how it|is not to|escape|notice, as without at|least
+(32) τούτου(Pr)(G) τὸ(Art)(N) ζητεῖν(Prä)(Inf)(Akt) μηδέν(Pr)(N) ἐστι(Prä)(Akt) ποιεῖν(Prä)(Inf)(Akt). ἔστι(Prä)(Akt) δὲ(Pt) τῶν(Art)(G) ὁριζομένων(Prä)(M/P)(G)
+(32) of|this the to|seek nothing is to|do. there|is but of|the defining
+(33) καὶ(Kon) τῶν(Art)(G) τί(Pr)(N) ἐστι(Prä)(Akt) τὰ(Art)(N) μὲν(Pt) ὡς(Kon) τὸ(Art)(N) σιμὸν(Adj)(N) τὰ(Art)(N)
+(33) and of|the what it|is the indeed as the snub the
+(34) δʼ(Kon) ὡς(Kon) τὸ(Art)(N) κοῖλον(N). διαφέρει(Prä)(Akt) δὲ(Pt) ταῦτα(Pr)(N) ὅτι(Kon) τὸ(Art)(N) μὲν(Pt)
+(34) but as the hollow. it|differs but these that the indeed
+(35) σιμὸν(Adj)(N) συνειλημμένον(Per)(M/P)(N) ἐστὶ(Prä)(Akt) μετὰ(Prp) τῆς(Art)(G) ὕλης(G) (ἔστι(Prä)(Akt) γὰρ(Pt) τὸ(Art)(N) σιμὸν(Adj)(N)
+(35) snub taken|together is with the matter (is for the snub
+(36) κοίλη(Adj)(N) ῥίς(N)), ἡ(Art)(N) δὲ(Pt) κοιλότης(N) ἄνευ(Prp) ὕλης(G) αἰσθητῆς(Adj)(G).
+(36) hollow nose), the but hollowness without matter perceptible.
+== St. 1026a ==
+(38) εἰ(Kon) δὴ(Pt) πάντα(Adj)(N) τὰ(Art)(N) φυσικὰ(Adj)(N) ὁμοίως(Adv) τῷ(Art)(D) σιμῷ(Adj)(D) λέγονται(Prä)(M/P), οἷον(Adv)
+(38) if indeed all the natural likewise to|the snub are|said, for|example
+(39) ῥὶς(N) ὀφθαλμὸς(N) πρόσωπον(N) σὰρξ(N) ὀστοῦν(N), ὅλως(Adv) ζῷον(N), φύλλον(N) ῥίζα(N) φλοιός(N),
+(39) nose eye face flesh bone, in|general animal, leaf root bark,
+(40) ὅλως(Adv) φυτόν(N) (οὐθενὸς(Pr)(G) γὰρ(Pt) ἄνευ(Prp) κινήσεως(G) ὁ(Art)(N) λόγος(N) αὐτῶν(Pr)(G), ἀλλʼ(Kon)
+(40) in|general plant (of|nothing for without motion the account of|them, but
+(41) ἀεὶ(Adv) ἔχει(Prä)(Akt) ὕλην(A)), δῆλον(Adj)(N) πῶς(Adv) δεῖ(Prä)(Akt) ἐν(Prp) τοῖς(Art)(D) φυσικοῖς(Adj)(D) τὸ(Art)(A)
+(41) always has matter), clear how it|is|necessary in the natural|things the
+(42) τί(Pr)(N) ἐστι(Prä)(Akt) ζητεῖν(Prä)(Inf)(Akt) καὶ(Kon) ὁρίζεσθαι(Prä)(M/P)(Inf), καὶ(Kon) διότι(Kon) καὶ(Kon) περὶ(Prp) ψυχῆς(G)
+(42) what|it|is is to|seek and to|define, and why also about soul
+(43) ἐνίας(Adj)(A) θεωρῆσαι(Aor)(Akt)(Inf) τοῦ(Art)(G) φυσικοῦ(Adj)(G), ὅση(Pr)(N) μὴ(Pt) ἄνευ(Prp) τῆς(Art)(G) ὕλης(G) ἐστίν(Prä)(Akt).
+(43) some to|consider of|the natural, so|much not without the matter is.
+(44) ὅτι(Kon) μὲν(Pt) οὖν(Pt) ἡ(Art)(N) φυσικὴ(Adj)(N) θεωρητική(Adj)(N) ἐστι(Prä)(Akt), φανερὸν(Adj)(N) ἐκ(Prp) τούτων(Pr)(G)·
+(44) that indeed then the natural theoretical is, clear from these·
+(45) ἀλλʼ(Kon) ἔστι(Prä)(Akt) καὶ(Kon) ἡ(Art)(N) μαθηματικὴ(Adj)(N) θεωρητική(Adj)(N)· ἀλλʼ(Kon) εἰ(Kon) ἀκινήτων(Adj)(G) καὶ(Kon)
+(45) but is and the mathematical theoretical· but if of|unmoved and
+(46) χωριστῶν(Adj)(G) ἐστί(Prä)(Akt), νῦν(Adv) ἄδηλον(Adj)(N), ὅτι(Kon) μέντοι(Pt) ἔνια(Pr)(N) μαθήματα(N) ᾗ(Adv) ἀκίνητα(Adj)(N)
+(46) of|separate is, now unclear, that however some lessons insofar|as unmoved
+(47) καὶ(Kon) ᾗ(Adv) χωριστὰ(Adj)(N) θεωρεῖ(Prä)(Akt), δῆλον(Adj)(N). εἰ(Kon) δέ(Pt) τί(Pr)(N) ἐστιν(Prä)(Akt) ἀΐδιον(Adj)(N)
+(47) and insofar|as separate it|contemplates, clear. if but something is eternal
+(48) καὶ(Kon) ἀκίνητον(Adj)(N) καὶ(Kon) χωριστόν(Adj)(N), φανερὸν(Adj)(N) ὅτι(Kon) θεωρητικῆς(Adj)(G) τὸ(Art)(N) γνῶναι(AorS)(Akt)(Inf), οὐ(Pt)
+(48) and unmoving and separate, evident that of|theoretical the to|know, not
+(49) μέντοι(Pt) φυσικῆς(Adj)(G) γε(Pt) (περὶ(Prp) κινητῶν(Adj)(G) γάρ(Pt) τινων(Pr)(G) ἡ(Art)(N) φυσικἤ(Adj)(N) οὐδὲ(Kon)
+(49) however of|natural at|least (about moving|things for some the natural nor
+(50) μαθηματικῆς(Adj)(G), ἀλλὰ(Kon) προτέρας(Adj)(G)(Kmp) ἀμφοῖν(Pr)(Du)(G). ἡ(Art)(N) μὲν(Pt) γὰρ(Pt) φυσικὴ(Adj)(N) περὶ(Prp) χωριστὰ(Adj)(A)
+(50) of|mathematical, but of|prior of|both. the indeed for natural about separate
+(51) μὲν(Pt) ἀλλʼ(Kon) οὐκ(Pt) ἀκίνητα(Adj)(A), τῆς(Art)(G) δὲ(Pt) μαθηματικῆς(Adj)(G) ἔνια(Pr)(N) περὶ(Prp) ἀκίνητα(Adj)(A)
+(51) indeed but not unmoving, of|the but mathematical some about unmoving
+(52) μὲν(Pt) οὐ(Pt) χωριστὰ(Adj)(A) δὲ(Pt) ἴσως(Adv) ἀλλʼ(Kon) ὡς(Kon) ἐν(Prp) ὕλῃ(D)· ἡ(Art)(N)
+(52) indeed not separate but perhaps but as in matter· the
+(53) δὲ(Pt) πρώτη(Adj)(N) καὶ(Kon) περὶ(Prp) χωριστὰ(Adj)(A) καὶ(Kon) ἀκίνητα(Adj)(A). ἀνάγκη(N) δὲ(Pt) πάντα(Adj)(A)
+(53) but first and about separate and unmoving. necessity but all
+(54) μὲν(Pt) τὰ(Art)(A) αἴτια(A) ἀΐδια(Adj)(A) εἶναι(Prä)(Inf)(Akt), μάλιστα(Adv) δὲ(Pt) ταῦτα(Pr)(A)· ταῦτα(Pr)(N) γὰρ(Pt)
+(54) indeed the causes eternal to|be, most but these· these for
+(55) αἴτια(N) τοῖς(Art)(D) φανεροῖς(Adj)(D) τῶν(Art)(G) θείων(Adj)(G). ὥστε(Kon) τρεῖς(Adj)(N) ἂν(Pt) εἶεν(Prä)(Akt)(Op) φιλοσοφίαι(N)
+(55) causes to|the manifest|things of the|divine. so|that three would be philosophies
+(56) θεωρητικαί(Adj)(N), μαθηματική(Adj)(N), φυσική(Adj)(N), θεολογική(Adj)(N) (οὐ(Pt) γὰρ(Pt) ἄδηλον(Adj)(N) ὅτι(Kon) εἴ(Kon) που(Adv)
+(56) theoretical, mathematical, natural, theological (not for unclear that if somewhere
+(57) τὸ(Art)(N) θεῖον(Adj)(N) ὑπάρχει(Prä)(Akt), ἐν(Prp) τῇ(Art)(D) τοιαύτῃ(Adj)(D) φύσει(D) ὑπάρχεἰ(Prä)(Akt), καὶ(Kon) τὴν(Art)(A)
+(57) the divine exists, in the such nature exists, and the
+(58) τιμιωτάτην(Adj)(A)(Sup) δεῖ(Prä)(Akt) περὶ(Prp) τὸ(Art)(A) τιμιώτατον(Adj)(A)(Sup) γένος(A) εἶναι(Prä)(Inf)(Akt). αἱ(Art)(N) μὲν(Pt) οὖν(Pt)
+(58) most|honorable it|is|necessary about the most|honorable kind to|be. the indeed then
+(59) θεωρητικαὶ(Adj)(N)(Sup) τῶν(Art)(G) ἄλλων(Adj)(G) ἐπιστημῶν(G) αἱρετώταται(Adj)(N)(Sup), αὕτη(Pr)(N) δὲ(Kon) τῶν(Art)(G) θεωρητικῶν(Adj)(G). ἀπορήσειε(Aor)(Akt)(Op)
+(59) theoretical of other the|sciences most|choiceworthy, this but of the|theoretical. be|at|a|loss
+(60) γὰρ(Pt) ἄν(Pt) τις(Pr)(N) πότερόν(Kon) ποθʼ(Adv) ἡ(Art)(N) πρώτη(Adj)(N) φιλοσοφία(N) καθόλου(Adv) ἐστὶν(Prä)(Akt)
+(60) for would someone whether ever the first philosophy according|to|the|whole is
+(61) ἢ(Kon) περί(Prp) τι(Pr)(A) γένος(A) καὶ(Kon) φύσιν(A) τινὰ(Pr)(A) μίαν(Adj)(A) (οὐ(Pt) γὰρ(Pt)
+(61) or about some kind and nature some one (not for
+(62) ὁ(Art)(N) αὐτὸς(Adj)(N) τρόπος(N) οὐδʼ(Kon) ἐν(Prp) ταῖς(Art)(D) μαθηματικαῖς(Adj)(D), ἀλλʼ(Kon) ἡ(Art)(N) μὲν(Pt)
+(62) the same way nor in the mathematical, but the indeed
+(63) γεωμετρία(N) καὶ(Kon) ἀστρολογία(N) περί(Prp) τινα(Pr)(A) φύσιν(A) εἰσίν(Prä)(Akt), ἡ(Art)(N) δὲ(Kon) καθόλου(Adv)
+(63) geometry and astrology about some nature are, the but according|to|the|whole
+(64) πασῶν(Adj)(G) κοινἤ(Adj)(N)· εἰ(Kon) μὲν(Pt) οὖν(Pt) μὴ(Pt) ἔστι(Prä)(Akt) τις(Pr)(N) ἑτέρα(Adj)(N) οὐσία(N)
+(64) of|all common· if indeed then not is some other substance
+(65) παρὰ(Prp) τὰς(Art)(A) φύσει(D) συνεστηκυίας(Per)(Akt)(G), ἡ(Art)(N) φυσικὴ(Adj)(N) ἂν(Pt) εἴη(Prä)(Akt)(Op) πρώτη(Adj)(N) ἐπιστήμη(N)·
+(65) beside the by|nature having|been|put|together, the natural would be first science·
+(66) εἰ(Kon) δʼ(Kon) ἔστι(Prä)(Akt) τις(Pr)(N) οὐσία(N) ἀκίνητος(Adj)(N), αὕτη(Pr)(N) προτέρα(Adj)(N)(Kmp) καὶ(Kon) φιλοσοφία(N)
+(66) if but there|is some substance unmoved, this prior and philosophy
+(67) πρώτη(Adj)(N), καὶ(Kon) καθόλου(Adv) οὕτως(Adv) ὅτι(Kon) πρώτη(Adj)(N)· καὶ(Kon) περὶ(Prp) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G)
+(67) first, and according|to|the|whole thus that first· and about of the|being
+(68) ᾗ(Adv) ὂν(Prä)(Akt)(N) ταύτης(Pr)(G) ἂν(Pt) εἴη(Prä)(Akt)(Op) θεωρῆσαι(Aor)(Akt)(Inf), καὶ(Kon) τί(Pr)(N) ἐστι(Prä)(Akt) καὶ(Kon)
+(68) insofar|as being of|this would be to|contemplate, and what is and
+(69) τὰ(Art)(N) ὑπάρχοντα(Prä)(Akt)(N) ᾗ(Adv) ὄν(Prä)(Akt)(N).
+(69) the being|present insofar|as being.
+== St. 1026b ==
+= § 2 =
+(72) ἀλλʼ(Kon) ἐπεὶ(Kon) τὸ(Art)(N) ὂν(Prä)(Akt)(N) τὸ(Art)(N) ἁπλῶς(Adv) λεγόμενον(Prä)(M/P)(N) λέγεται(Prä)(M/P) πολλαχῶς(Adv), ὧν(Pr)(G)
+(72) but since the being the simply being|said is|said in|many|ways, of|which
+(73) ἓν(Adj)(N) μὲν(Pt) ἦν(Imp)(Akt) τὸ(Art)(N) κατὰ(Prp) συμβεβηκός(Per)(Akt)(N), ἕτερον(Adj)(N) δὲ(Kon) τὸ(Art)(N) ὡς(Kon)
+(73) one indeed was the according|to accidental, another but the as
+(74) ἀληθές(Adj)(N), καὶ(Kon) τὸ(Art)(N) μὴ(Pt) ὂν(Prä)(Akt)(N) ὡς(Kon) τὸ(Art)(N) ψεῦδος(N), παρὰ(Prp) ταῦτα(Pr)(A)
+(74) true, and the not being as the falsehood, beside these
+(75) δʼ(Kon) ἐστὶ(Prä)(Akt) τὰ(Art)(N) σχήματα(N) τῆς(Art)(G) κατηγορίας(G) (οἷον(Adv) τὸ(Art)(N) μὲν(Pt) τί(Pr)(N),
+(75) but there|is the figures of the|category (for|example the indeed what,
+(76) τὸ(Art)(N) δὲ(Kon) ποιόν(Adj)(N), τὸ(Art)(N) δὲ(Kon) ποσόν(Adj)(N), τὸ(Art)(N) δὲ(Kon) πού(Adv), τὸ(Art)(N)
+(76) the but quality, the but quantity, the but where, the
+(77) δὲ(Kon) ποτέ(Adv), καὶ(Kon) εἴ(Kon) τι(Pr)(N) ἄλλο(Adj)(N) σημαίνει(Prä)(Akt) τὸν(Art)(A) τρόπον(A) τοῦτον(Pr)(A)),
+(77) but when, and if something other signifies the way this),
+(78) ἔτι(Adv) παρὰ(Prp) ταῦτα(Pr)(A) πάντα(Adj)(A) τὸ(Art)(N) δυνάμει(D) καὶ(Kon) ἐνεργείᾳ(D)· — ἐπεὶ(Kon) δὴ(Pt) πολλαχῶς(Adv)
+(78) further besides these all the in|potentiality and in|actuality· — since indeed in|many|ways
+(79) λέγεται(Prä)(M/P) τὸ(Art)(N) ὄν(Prä)(Akt)(N), πρῶτον(Adv) περὶ(Prp) τοῦ(Art)(G) κατὰ(Prp) συμβεβηκὸς(Per)(Akt)(G) λεκτέον(Adj)(N), ὅτι(Kon)
+(79) is|said the being, first about the according|to the|accidental to|be|said, that
+(80) οὐδεμία(Adj)(N) ἐστὶ(Prä)(Akt) περὶ(Prp) αὐτὸ(Pr)(A) θεωρία(N). σημεῖον(N) δέ(Kon)· οὐδεμιᾷ(Adj)(D) γὰρ(Pt) ἐπιστήμῃ(D)
+(80) no is about it inquiry. sign but· to|no for science
+(81) ἐπιμελὲς(Adj)(N) περὶ(Prp) αὐτοῦ(Pr)(G) οὔτε(Kon) πρακτικῇ(Adj)(D) οὔτε(Kon) ποιητικῇ(Adj)(D) οὔτε(Kon) θεωρητικῇ(Adj)(D). οὔτε(Kon)
+(81) a|concern about it neither practical nor productive nor theoretical. neither
+(82) γὰρ(Pt) ὁ(Art)(N) ποιῶν(Prä)(Akt)(N) οἰκίαν(A) ποιεῖ(Prä)(Akt) ὅσα(Pr)(N) συμβαίνει(Prä)(Akt) ἅμα(Adv) τῇ(Art)(D) οἰκίᾳ(D)
+(82) for the making house makes as|many|things|as happen together|with the house
+(83) γιγνομένῃ(Prä)(M/P)(D) (ἄπειρα(Adj)(N) γάρ(Pt) ἐστιν(Prä)(Akt)· τοῖς(Art)(D) μὲν(Pt) γὰρ(Pt) ἡδεῖαν(Adj)(A) τοῖς(Art)(D) δὲ(Kon)
+(83) coming|to|be (countless for are· to|the indeed for pleasant to|the but
+(84) βλαβερὰν(Adj)(A) τοῖς(Art)(D) δʼ(Kon) ὠφέλιμον(Adj)(A) οὐθὲν(Pr)(A) εἶναι(Prä)(Inf)(Akt) κωλύει(Prä)(Akt) τὴν(Art)(A) ποιηθεῖσαν(Aor)(Pas)(A), καὶ(Kon)
+(84) harmful to|the but beneficial nothing to|be hinders the having|been|made, and
+(85) ἑτέραν(Adj)(A) ὡς(Kon) εἰπεῖν(Aor)(Akt)(Inf) πάντων(Adj)(G) τῶν(Art)(G) ὄντων(Prä)(Akt)(G)· ὧν(Pr)(G) οὐθενός(Pr)(G) ἐστιν(Prä)(Akt) ἡ(Art)(N)
+(85) different as to|say of|all of the|beings· of|which of|nothing is the
+(86) οἰκοδομικὴ(Adj)(N) ποιητικἤ(Adj)(N), τὸν(Art)(A) αὐτὸν(Adj)(A) δὲ(Kon) τρόπον(A) οὐδʼ(Kon) ὁ(Art)(N) γεωμέτρης(N) θεωρεῖ(Prä)(Akt)
+(86) building productive, the same but way not|even the geometer considers
+(87) τὰ(Art)(A) οὕτω(Adv) συμβεβηκότα(Per)(Akt)(A) τοῖς(Art)(D) σχήμασιν(D), οὐδʼ(Kon) εἰ(Kon) ἕτερόν(Adj)(N) ἐστι(Prä)(Akt) τρίγωνον(N)
+(87) the thus having|happened to|the figures, not|even if different is triangle
+(88) καὶ(Kon) τρίγωνον(N) δύο(Adj)(A) ὀρθὰς(Adj)(A) ἔχον(Prä)(Akt)(N). καὶ(Kon) τοῦτʼ(Pr)(N) εὐλόγως(Adv) συμπίπτει(Prä)(Akt)· ὥσπερ(Kon)
+(88) and triangle two right|angles having. and this reasonably befits· just|as
+(89) γὰρ(Pt) ὄνομά(N) τι(Pr)(N) μόνον(Adv) τὸ(Art)(N) συμβεβηκός(Per)(Akt)(N) ἐστιν(Prä)(Akt). διὸ(Kon) Πλάτων(N) τρόπον(A)
+(89) for name some only the accidental is. therefore Plato way
+(90) τινὰ(Pr)(A) οὐ(Pt) κακῶς(Adv) τὴν(Art)(A) σοφιστικὴν(Adj)(A) περὶ(Prp) τὸ(Art)(A) μὴ(Pt) ὂν(Prä)(Akt)(A) ἔταξεν(Aor)(Akt).
+(90) some not badly the sophistic about the not being arranged.
+(91) εἰσὶ(Prä)(Akt) γὰρ(Pt) οἱ(Art)(N) τῶν(Art)(G) σοφιστῶν(G) λόγοι(N) περὶ(Prp) τὸ(Art)(A) συμβεβηκὸς(Per)(Akt)(A) ὡς(Kon)
+(91) are for the of the|sophists arguments about the accidental as
+(92) εἰπεῖν(Aor)(Akt)(Inf) μάλιστα(Adv)(Sup) πάντων(Adj)(G), πότερον(Kon) ἕτερον(Adj)(N) ἢ(Kon) ταὐτὸν(Adj)(N) μουσικὸν(Adj)(N) καὶ(Kon) γραμματικόν(Adj)(N),
+(92) to|say most of|all, whether different or the|same musical and grammatical,
+(93) καὶ(Kon) μουσικὸς(Adj)(N) Κορίσκος(N) καὶ(Kon) Κορίσκος(N), καὶ(Kon) εἰ(Kon) πᾶν(Adj)(N) ὃ(Pr)(N) ἂν(Pt)
+(93) and musical Coriscus and Coriscus, and if every which would
+(94) ᾖ(Prä)(Akt)(Knj), μὴ(Pt) ἀεὶ(Adv) δέ(Kon), γέγονεν(Per)(Akt), ὥστʼ(Kon) εἰ(Kon) μουσικὸς(Adj)(N) ὢν(Prä)(Akt)(N) γραμματικὸς(Adj)(N)
+(94) should|be, not always but, has|become, so|that if musical being grammatical
+(95) γέγονε(Per)(Akt), καὶ(Kon) γραμματικὸς(Adj)(N) ὢν(Prä)(Akt)(N) μουσικός(Adj)(N), καὶ(Kon) ὅσοι(Pr)(N) δὴ(Pt) ἄλλοι(Adj)(N) τοιοῦτοι(Adj)(N)
+(95) has|become, and grammatical being musical, and as|many|as indeed other such
+(96) τῶν(Art)(G) λόγων(G) εἰσίν(Prä)(Akt)· φαίνεται(Prä)(M/P) γὰρ(Pt) τὸ(Art)(N) συμβεβηκὸς(Per)(Akt)(N) ἐγγύς(Adv) τι(Pr)(N) τοῦ(Art)(G)
+(96) of the|arguments are· appears for the accidental near somewhat of
+(97) μὴ(Pt) ὄντος(Prä)(Akt)(G). δῆλον(Adj)(N) δὲ(Kon) καὶ(Kon) ἐκ(Prp) τῶν(Art)(G) τοιούτων(Adj)(G) λόγων(G)· τῶν(Art)(G)
+(97) not being. clear but also from of such arguments· of
+(98) μὲν(Pt) γὰρ(Pt) ἄλλον(Adj)(A) τρόπον(A) ὄντων(Prä)(Akt)(G) ἔστι(Prä)(Akt) γένεσις(N) καὶ(Kon) φθορά(N), τῶν(Art)(G)
+(98) indeed for another way of|things|being there|is coming|to|be and perishing, of
+(99) δὲ(Kon) κατὰ(Prp) συμβεβηκὸς(Per)(Akt)(G) οὐκ(Pt) ἔστιν(Prä)(Akt). ἀλλʼ(Kon) ὅμως(Adv) λεκτέον(Adj)(N) ἔτι(Adv) περὶ(Prp)
+(99) but according|to the|accidental not is. but nevertheless to|be|said still about
+(100) τοῦ(Art)(G) συμβεβηκότος(Per)(Akt)(G) ἐφʼ(Prp) ὅσον(Pr)(N) ἐνδέχεται(Prä)(M/P), τίς(Pr)(N) ἡ(Art)(N) φύσις(N) αὐτοῦ(Pr)(G) καὶ(Kon)
+(100) of the|accidental on as|much|as it|is|possible, what|sort the nature of|it and
+(101) διὰ(Prp) τίνʼ(Pr)(A) αἰτίαν(A) ἔστιν(Prä)(Akt)· ἅμα(Adv) γὰρ(Pt) δῆλον(Adj)(N) ἴσως(Adv) ἔσται(Fu)(Akt) καὶ(Kon)
+(101) through what cause is· at|the|same|time for clear perhaps will|be and
+(102) διὰ(Prp) τί(Pr)(N) ἐπιστήμη(N) οὐκ(Pt) ἔστιν(Prä)(Akt) αὐτοῦ(Pr)(G). — ἐπεὶ(Kon) οὖν(Pt) ἐστὶν(Prä)(Akt) ἐν(Prp) τοῖς(Art)(D)
+(102) through what knowledge not is of|it. — since then there|is in the
+(103) οὖσι(Prä)(Akt)(D) τὰ(Art)(N) μὲν(Pt) ἀεὶ(Adv) ὡσαύτως(Adv) ἔχοντα(Prä)(Akt)(N) καὶ(Kon) ἐξ(Prp) ἀνάγκης(G), οὐ(Pt)
+(103) beings the indeed always in|the|same|way holding and from necessity, not
+(104) τῆς(Art)(G) κατὰ(Prp) τὸ(Art)(A) βίαιον(Adj)(A) λεγομένης(Prä)(M/P)(G) ἀλλʼ(Kon) ἣν(Pr)(A) λέγομεν(Prä)(Akt) τῷ(Art)(D) μὴ(Pt)
+(104) of according|to the violent being|said but which we|say by|the not
+(105) ἐνδέχεσθαι(Prä)(M/P)(Inf) ἄλλως(Adv), τὰ(Art)(N) δʼ(Kon) ἐξ(Prp) ἀνάγκης(G) μὲν(Pt) οὐκ(Pt) ἔστιν(Prä)(Akt) οὐδʼ(Kon)
+(105) to|be|possible otherwise, the but from necessity indeed not is nor
+(106) ἀεί(Adv), ὡς(Kon) δʼ(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολύ(Adj)(A), αὕτη(Pr)(N) ἀρχὴ(N) καὶ(Kon) αὕτη(Pr)(N)
+(106) always, as but upon the most, this principle and this
+(107) αἰτία(N) ἐστὶ(Prä)(Akt) τοῦ(Art)(G) εἶναι(Prä)(Inf)(Akt) τὸ(Art)(N) συμβεβηκός(Per)(Akt)(N)· ὃ(Pr)(N) γὰρ(Pt) ἂν(Pt) ᾖ(Prä)(Akt)(Knj)
+(107) cause is of to|be the accidental· which for would should|be
+(108) μήτʼ(Kon) ἀεὶ(Adv) μήθʼ(Kon) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολύ(Adj)(A), τοῦτό(Pr)(N) φαμεν(Prä)(Akt) συμβεβηκὸς(Per)(Akt)(N)
+(108) neither always nor as upon the most, this we|say accidental
+(109) εἶναι(Prä)(Inf)(Akt). οἷον(Adv) ἐπὶ(Prp) κυνὶ(D) ἂν(Pt) χειμὼν(N) γένηται(AorS)(M/P)(Knj) καὶ(Kon) ψῦχος(N), τοῦτο(Pr)(N)
+(109) to|be. for|example upon dog would winter should|come|to|be and cold, this
+(110) συμβῆναί(AorS)(Akt)(Inf) φαμεν(Prä)(Akt), ἀλλʼ(Kon) οὐκ(Pt) ἂν(Pt) πνῖγος(N) καὶ(Kon) ἀλέα(N), ὅτι(Kon) τὸ(Art)(N)
+(110) to|happen we|say, but not would stifling|heat and parching|heat, because the
+(111) μὲν(Pt) ἀεὶ(Adv) ἢ(Kon) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολὺ(Adj)(A) τὸ(Art)(N) δʼ(Kon) οὔ(Pt).
+(111) indeed always or as upon the most the but not.
+(112) καὶ(Kon) τὸν(Art)(A) ἄνθρωπον(A) λευκὸν(Adj)(A) εἶναι(Prä)(Inf)(Akt) συμβέβηκεν(Per)(Akt) (οὔτε(Kon) γὰρ(Pt) ἀεὶ(Adv) οὔθʼ(Kon)
+(112) and the man white to|be has|happened (neither for always nor
+(113) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολὔ(Adj)(A), ζῷον(N) δʼ(Kon) οὐ(Pt) κατὰ(Prp) συμβεβηκός(Per)(Akt)(N). καὶ(Kon)
+(113) as upon the most, animal but not according|to accident. and
+(114) τὸ(Art)(N) ὑγιάζειν(Prä)(Inf)(Akt) δὲ(Kon) τὸν(Art)(A) οἰκοδόμον(A) συμβεβηκός(Per)(Akt)(N),
+(114) the to|be|healthy but the builder accidental,
+== St. 1027a ==
+(116) ὅτι(Kon) οὐ(Pt) πέφυκε(Per)(Akt) τοῦτο(Pr)(N) ποιεῖν(Prä)(Inf)(Akt) οἰκοδόμος(N) ἀλλὰ(Kon) ἰατρός(N), ἀλλὰ(Kon) συνέβη(AorS)(Akt)
+(116) because not is|by|nature this to|do builder but doctor, but happened
+(117) ἰατρὸν(A) εἶναι(Prä)(Inf)(Akt) τὸν(Art)(A) οἰκοδόμον(A). καὶ(Kon) ὀψοποιὸς(N) ἡδονῆς(G) στοχαζόμενος(Prä)(M/P)(N) ποιήσειεν(Aor)(Akt)(Op) ἄν(Pt)
+(117) doctor to|be the house|builder. and cook of|pleasure aiming make would
+(118) τι(Pr)(A) ὑγιεινόν(Adj)(A), ἀλλʼ(Kon) οὐ(Pt) κατὰ(Prp) τὴν(Art)(A) ὀψοποιητικήν(Adj)(A)· διὸ(Kon) συνέβη(AorS)(Akt), φαμέν(Prä)(Akt),
+(118) something healthful, but not according|to the cookery|art· therefore it|happened, we|say,
+(119) καὶ(Kon) ἔστιν(Prä)(Akt) ὡς(Kon) ποιεῖ(Prä)(Akt), ἁπλῶς(Adv) δʼ(Pt) οὔ(Pt). τῶν(Art)(G) μὲν(Pt) γὰρ(Pt)
+(119) and it|is as he|does, simply but not. of|the at|least for
+(120) ἄλλων(Adj)(G) ἐνίοτε(Adv) δυνάμεις(N) εἰσὶν(Prä)(Akt) αἱ(Art)(N) ποιητικαί(Adj)(N), τῶν(Art)(G) δʼ(Pt) οὐδεμία(Adj)(N) τέχνη(N)
+(120) others sometimes powers are the productive, of|the but no art
+(121) οὐδὲ(Kon) δύναμις(N) ὡρισμένη(Per)(Pas)(N)· τῶν(Art)(G) γὰρ(Pt) κατὰ(Prp) συμβεβηκὸς(Per)(Akt)(A) ὄντων(Prä)(Akt)(G) ἢ(Kon) γιγνομένων(Prä)(M/P)(G)
+(121) nor power determinate· of|the for according|to accidental being or becoming
+(122) καὶ(Kon) τὸ(Art)(N) αἴτιόν(N) ἐστι(Prä)(Akt) κατὰ(Prp) συμβεβηκός(Per)(Akt)(A). ὥστʼ(Kon) ἐπεὶ(Kon) οὐ(Pt) πάντα(Adj)(N)
+(122) and the cause is according|to accident. so|that since not all
+(123) ἐστὶν(Prä)(Akt) ἐξ(Prp) ἀνάγκης(G) καὶ(Kon) ἀεὶ(Adv) ἢ(Kon) ὄντα(Prä)(Akt)(N) ἢ(Kon) γιγνόμενα(Prä)(M/P)(N), ἀλλὰ(Kon)
+(123) are from necessity and always either being or coming|to|be, but
+(124) τὰ(Art)(N) πλεῖστα(Adj)(N)(Sup) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολύ(Adj)(A), ἀνάγκη(N) εἶναι(Prä)(Inf)(Akt) τὸ(Art)(N) κατὰ(Prp)
+(124) the most as upon the most, necessity to|be the according|to
+(125) συμβεβηκὸς(Per)(Akt)(A) ὄν(Prä)(Akt)(N)· οἷον(Adv) οὔτʼ(Kon) ἀεὶ(Adv) οὔθʼ(Kon) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολὺ(Adj)(A)
+(125) accidental being· for|example neither always nor as upon the most
+(126) ὁ(Art)(N) λευκὸς(Adj)(N) μουσικός(Adj)(N) ἐστιν(Prä)(Akt), ἐπεὶ(Kon) δὲ(Pt) γίγνεταί(Prä)(M/P) ποτε(Adv), κατὰ(Prp) συμβεβηκὸς(Per)(Akt)(A)
+(126) the white musical is, since but happens sometime, according|to accident
+(127) ἔσται(Fu)(Akt) (εἰ(Kon) δὲ(Pt) μή(Pt), πάντʼ(Adj)(N) ἔσται(Fu)(Akt) ἐξ(Prp) ἀνάγκης(G))· ὥστε(Kon) ἡ(Art)(N)
+(127) it|will|be (if but not, all will|be from necessity)· so|that the
+(128) ὕλη(N) ἔσται(Fu)(Akt) αἰτία(N) ἡ(Art)(N) ἐνδεχομένη(Prä)(M/P)(N) παρὰ(Prp) τὸ(Art)(A) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A)
+(128) matter will|be cause the contingent contrary|to the as upon the
+(129) πολὺ(Adj)(A) ἄλλως(Adv) τοῦ(Art)(G) συμβεβηκότος(Per)(Akt)(G). ἀρχὴν(A) δὲ(Pt) τηνδὶ(Pr)(A) ληπτέον(Adj)(A), πότερον(Kon) οὐδέν(Pr)(N)
+(129) most otherwise of|the accidental. a|beginning but this|here to|be|taken, whether nothing
+(130) ἐστιν(Prä)(Akt) οὔτʼ(Kon) αἰεὶ(Adv) οὔθʼ(Kon) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολύ(Adj)(A). ἢ(Kon) τοῦτο(Pr)(N)
+(130) is neither always nor as upon the most. or this
+(131) ἀδύνατον(Adj)(N); ἔστιν(Prä)(Akt) ἄρα(Pt) τι(Pr)(N) παρὰ(Prp) ταῦτα(Pr)(A) τὸ(Art)(N) ὁπότερʼ(Pr)(N) ἔτυχε(AorS)(Akt) καὶ(Kon)
+(131) impossible; is then something beside these the whichever happened and
+(132) κατὰ(Prp) συμβεβηκός(Per)(Akt)(A). ἀλλὰ(Kon) πότερον(Kon) τὸ(Art)(N) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολύ(Adj)(A), τὸ(Art)(N)
+(132) according|to accident. but whether the as upon the most, the
+(133) δʼ(Pt) ἀεὶ(Adv) οὐθενὶ(Pr)(D) ὑπάρχει(Prä)(Akt), ἢ(Kon) ἔστιν(Prä)(Akt) ἄττα(Pr)(N) ἀΐδια(Adj)(N); περὶ(Prp) μὲν(Pt)
+(133) but always to|no|one belongs, or there|are some everlasting; about at|least
+(134) οὖν(Pt) τούτων(Pr)(G) ὕστερον(Adv) σκεπτέον(Adj)(N), ὅτι(Kon) δʼ(Pt) ἐπιστήμη(N) οὐκ(Pt) ἔστι(Prä)(Akt) τοῦ(Art)(G)
+(134) then these later to|be|examined, that but knowledge not is of|the
+(135) συμβεβηκότος(Per)(Akt)(G) φανερόν(Adj)(N)· ἐπιστήμη(N) μὲν(Pt) γὰρ(Pt) πᾶσα(Adj)(N) ἢ(Kon) τοῦ(Art)(G) ἀεὶ(Adv) ἢ(Kon)
+(135) accidental clear· knowledge at|least for every either of|the always or
+(136) τοῦ(Art)(G) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολύ(Adj)(A)— πῶς(Adv) γὰρ(Pt) ἢ(Kon) μαθήσεται(Fu)(M/P) ἢ(Kon) διδάξει(Fu)(Akt)
+(136) of|the as upon the most— how for either will|learn or will|teach
+(137) ἄλλον(Pr)(A); δεῖ(Prä)(Akt) γὰρ(Pt) ὡρίσθαι(Per)(M/P)(Inf) ἢ(Kon) τῷ(Art)(D) ἀεὶ(Adv) ἢ(Kon) τῷ(Art)(D) ὡς(Kon)
+(137) another; it|is|necessary for to|be|defined either by|the always or by|the as
+(138) ἐπὶ(Prp) τὸ(Art)(A) πολύ(Adj)(A), οἷον(Adv) ὅτι(Kon) ὠφέλιμον(Adj)(N) τὸ(Art)(N) μελίκρατον(N) τῷ(Art)(D) πυρέττοντι(Prä)(Akt)(D)
+(138) upon the most, for|example that beneficial the honey|water to|the feverish|person
+(139) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολύ(Adj)(A)— τὸ(Art)(N) δὲ(Pt) παρὰ(Prp) τοῦτο(Pr)(A) οὐχ(Pt) ἕξει(Fu)(Akt) λέγειν(Prä)(Inf)(Akt),
+(139) as upon the most— the but beside this not will|have to|say,
+(140) πότε(Adv) οὔ(Pt), οἷον(Adv) νουμηνίᾳ(D)· ἢ(Kon) γὰρ(Pt) ἀεὶ(Adv) ἢ(Kon) ὡς(Kon) ἐπὶ(Prp)
+(140) when not, for|example at|the|new|moon· either for always or as upon
+(141) τὸ(Art)(A) πολὺ(Adj)(A) καὶ(Kon) τὸ(Art)(A) τῇ(Art)(D) νουμηνίᾳ(D)· τὸ(Art)(N) δὲ(Pt) συμβεβηκός(Per)(Akt)(N) ἐστι(Prä)(Akt)
+(141) the most and the at|the new|moon· the but accidental is
+(142) παρὰ(Prp) ταῦτα(Pr)(A). τί(Pr)(N) μὲν(Pt) οὖν(Pt) ἐστὶ(Prä)(Akt) τὸ(Art)(N) συμβεβηκὸς(Per)(Akt)(N) καὶ(Kon) διὰ(Prp)
+(142) beside these. what at|least then is the accidental and through
+(143) τίνʼ(Pr)(A) αἰτίαν(A) καὶ(Kon) ὅτι(Kon) ἐπιστήμη(N) οὐκ(Pt) ἔστιν(Prä)(Akt) αὐτοῦ(Pr)(G), εἴρηται(Per)(M/P).
+(143) what cause and that knowledge not is of|it, has|been|said.
+== St. 1027b ==
+= § 3 =
+(146) ὅτι(Kon) δʼ(Pt) εἰσὶν(Prä)(Akt) ἀρχαὶ(N) καὶ(Kon) αἴτια(N) γενητὰ(Adj)(N) καὶ(Kon) φθαρτὰ(Adj)(N) ἄνευ(Prp)
+(146) that but there|are principles and causes generated and perishable without
+(147) τοῦ(Art)(G) γίγνεσθαι(Prä)(M/P)(Inf) καὶ(Kon) φθείρεσθαι(Prä)(M/P)(Inf), φανερόν(Adj)(N). εἰ(Kon) γὰρ(Pt) μὴ(Pt) τοῦτʼ(Pr)(N), ἐξ(Prp)
+(147) of|the to|come|to|be and to|perish, evident. if for not this, from
+(148) ἀνάγκης(G) πάντʼ(Adj)(N) ἔσται(Fu)(Akt), εἰ(Kon) τοῦ(Art)(G) γιγνομένου(Prä)(M/P)(G) καὶ(Kon) φθειρομένου(Prä)(M/P)(G) μὴ(Pt) κατὰ(Prp)
+(148) necessity all will|be, if of|the becoming and perishing not according|to
+(149) συμβεβηκὸς(Per)(Akt)(A) αἴτιόν(A) τι(Pr)(A) ἀνάγκη(N) εἶναι(Prä)(Inf)(Akt). πότερον(Kon) γὰρ(Pt) ἔσται(Fu)(Akt) τοδὶ(Pr)(N) ἢ(Kon)
+(149) accident cause some necessity to|be. whether for there|will|be this or
+(150) οὔ(Pt); ἐάν(Kon) γε(Pt) τοδὶ(Pr)(N) γένηται(Aor)(M/P)(Knj)· εἰ(Kon) δὲ(Pt) μή(Pt), οὔ(Pt). τοῦτο(Pr)(N)
+(150) not; if indeed this should|happen· if but not, not. this
+(151) δὲ(Pt) ἐὰν(Kon) ἄλλο(Adj)(N). καὶ(Kon) οὕτω(Adv) δῆλον(Adj)(N) ὅτι(Kon) ἀεὶ(Adv) χρόνου(G) ἀφαιρουμένου(Prä)(M/P)(G)
+(151) but if another. and thus clear that always of|time being|subtracted
+(152) ἀπὸ(Prp) πεπερασμένου(Per)(M/P)(G) χρόνου(G) ἥξει(Fu)(Akt) ἐπὶ(Prp) τὸ(Art)(A) νῦν(Adv), ὥστε(Kon) ὁδὶ(Pr)(N) ἀποθανεῖται(Fu)(M/P)
+(152) from limited time it|will|come to the now, so|that this|man will|die
+(153) νόσῳ(D) ἢ(Kon) βίᾳ(D), ἐάν(Kon) γε(Pt) ἐξέλθῃ(AorS)(Akt)(Knj)· τοῦτο(Pr)(N) δὲ(Pt) ἐὰν(Kon) διψήσῃ(Aor)(Akt)(Knj)·
+(153) by|disease or by|force, if indeed he|should|go|out· this but if he|should|thirst·
+(154) τοῦτο(Pr)(N) δὲ(Pt) ἐὰν(Kon) ἄλλο(Adj)(N)· καὶ(Kon) οὕτως(Adv) ἥξει(Fu)(Akt) εἰς(Prp) ὃ(Pr)(A) νῦν(Adv)
+(154) this but if another· and thus it|will|come into that|which now
+(155) ὑπάρχει(Prä)(Akt), ἢ(Kon) εἰς(Prp) τῶν(Art)(G) γεγονότων(Per)(Akt)(G) τι(Pr)(A). οἷον(Adv) ἐὰν(Kon) διψήσῃ(Aor)(Akt)(Knj)· τοῦτο(Pr)(N)
+(155) obtains, or into of|the things|having|happened something. for|example if he|should|thirst· this
+(156) δὲ(Pt) εἰ(Kon) ἐσθίει(Prä)(Akt) δριμέα(Adj)(A)· τοῦτο(Pr)(N) δʼ(Pt) ἤτοι(Pt) ὑπάρχει(Prä)(Akt) ἢ(Kon) οὔ(Pt)·
+(156) but if he|eats pungent|things· this but either obtains or not·
+(157) ὥστʼ(Kon) ἐξ(Prp) ἀνάγκης(G) ἀποθανεῖται(Fu)(M/P) ἢ(Kon) οὐκ(Pt) ἀποθανεῖται(Fu)(M/P). ὁμοίως(Adv) δὲ(Pt) κἂν(Kon)(Pt)
+(157) so|that from necessity he|will|die or not he|will|die. likewise but and|if
+(158) ὑπερπηδήσῃ(Aor)(Akt)(Knj) τις(Pr)(N) εἰς(Prp) τὰ(Art)(A) γενόμενα(Aor)(Med)(A), ὁ(Art)(N) αὐτὸς(Adj)(N) λόγος(N)· ἤδη(Adv) γὰρ(Pt)
+(158) he|should|leap|over someone into the things|that|happened, the same account· already for
+(159) ὑπάρχει(Prä)(Akt) τοῦτο(Pr)(N) ἔν(Prp) τινι(Pr)(D), λέγω(Prä)(Akt) δὲ(Pt) τὸ(Art)(N) γεγονός(Per)(Akt)(N)· ἐξ(Prp) ἀνάγκης(G)
+(159) it|obtains this in something, I|say but the thing|that|has|happened· from necessity
+(160) ἄρα(Pt) πάντα(Adj)(N) ἔσται(Fu)(Akt) τὰ(Art)(N) ἐσόμενα(Fu)(M/P)(N), οἷον(Adv) τὸ(Art)(N) ἀποθανεῖν(AorS)(Inf)(Akt) τὸν(Art)(A) ζῶντα(Prä)(Akt)(A)·
+(160) then all will|be the things|to|come, for|example the to|die the living|one·
+(161) ἤδη(Adv) γάρ(Pt) τι(Pr)(N) γέγονεν(Per)(Akt), οἷον(Adv) τὰ(Art)(N) ἐναντία(Adj)(N) ἐν(Prp) τῷ(Art)(D) αὐτῷ(Adj)(D).
+(161) already for something has|happened, for|example the opposites in the same.
+(162) ἀλλʼ(Kon) εἰ(Kon) νόσῳ(D) ἢ(Kon) βίᾳ(D), οὔπω(Adv), ἀλλʼ(Kon) ἐὰν(Kon) τοδὶ(Pr)(N) γένηται(Aor)(M/P)(Knj).
+(162) but if by|disease or by|force, not|yet, but if this should|happen.
+(163) δῆλον(Adj)(N) ἄρα(Pt) ὅτι(Kon) μέχρι(Prp) τινὸς(Pr)(G) βαδίζει(Prä)(Akt) ἀρχῆς(G), αὕτη(Pr)(N) δʼ(Pt) οὐκέτι(Adv)
+(163) clear then that up|to some|point it|goes of|a|principle, this but no|longer
+(164) εἰς(Prp) ἄλλο(Adj)(A). ἔσται(Fu)(Akt) οὖν(Pt) ἡ(Art)(N) τοῦ(Art)(G) ὁπότερʼ(Pr)(G) ἔτυχεν(AorS)(Akt) αὕτη(Pr)(N), καὶ(Kon)
+(164) into another. there|will|be then the of|the whichever happened this, and
+(165) αἴτιον(N) τῆς(Art)(G) γενέσεως(G) αὐτῆς(Pr)(G) ἄλλο(Adj)(N) οὐθέν(Pr)(N). ἀλλʼ(Kon) εἰς(Prp) ἀρχὴν(A) ποίαν(Adj)(A)
+(165) cause of|the coming|to|be of|it other nothing. but into a|principle what|kind
+(166) καὶ(Kon) αἴτιον(N) ποῖον(Adj)(N) ἡ(Art)(N) ἀναγωγὴ(N) ἡ(Art)(N) τοιαύτη(Adj)(N), πότερον(Kon) ὡς(Kon) εἰς(Prp)
+(166) and cause what|kind the regression the such, whether as into
+(167) ὕλην(A) ἢ(Kon) ὡς(Kon) εἰς(Prp) τὸ(Art)(A) οὗ(Pr)(G) ἕνεκα(Prp) ἢ(Kon) ὡς(Kon) εἰς(Prp)
+(167) matter or as into the of|which for|the|sake or as into
+(168) τὸ(Art)(A) κινῆσαν(Aor)(Akt)(A), μάλιστα(Adv) σκεπτέον(Adj)(N).
+(168) the mover, most to|be|examined.
+== St. 1028a ==
+= § 4 =
+(171) περὶ(Prp) μὲν(Pt) οὖν(Pt) τοῦ(Art)(G) κατὰ(Prp) συμβεβηκὸς(Per)(Akt)(A) ὄντος(Prä)(Akt)(G) ἀφείσθω(Aor)(M/P)(Imv) (διώρισται(Per)(M/P) γὰρ(Pt)
+(171) about at|least then of|the according|to accident being let|it|be|dismissed (it|has|been|defined for
+(172) ἱκανῶς(Adv))· τὸ(Art)(N) δὲ(Pt) ὡς(Kon) ἀληθὲς(Adj)(N) ὄν(Prä)(Akt)(N), καὶ(Kon) μὴ(Pt) ὂν(Prä)(Akt)(N) ὡς(Kon)
+(172) sufficiently)· the but as true being, and not being as
+(173) ψεῦδος(N), ἐπειδὴ(Kon) παρὰ(Prp) σύνθεσίν(A) ἐστι(Prä)(Akt) καὶ(Kon) διαίρεσιν(A), τὸ(Art)(N) δὲ(Pt) σύνολον(N)
+(173) falsehood, since beside combination is and division, the but whole
+(174) περὶ(Prp) μερισμὸν(A) ἀντιφάσεως(G) (τὸ(Art)(N) μὲν(Pt) γὰρ(Pt) ἀληθὲς(Adj)(N) τὴν(Art)(A) κατάφασιν(A) ἐπὶ(Prp)
+(174) about division of|contradiction (the at|least for true the affirmation upon
+(175) τῷ(Art)(D) συγκειμένῳ(Per)(M/P)(D) ἔχει(Prä)(Akt) τὴν(Art)(A) δʼ(Pt) ἀπόφασιν(A) ἐπὶ(Prp) τῷ(Art)(D) διῃρημένῳ(Per)(M/P)(D), τὸ(Art)(N)
+(175) to|the having|been|put|together has the but negation upon the having|been|divided, the
+(176) δὲ(Pt) ψεῦδος(N) τούτου(Pr)(G) τοῦ(Art)(G) μερισμοῦ(G) τὴν(Art)(A) ἀντίφασιν(A)· πῶς(Adv) δὲ(Pt) τὸ(Art)(N)
+(176) but falsehood of|this of the|division the contradiction· how but the
+(177) ἅμα(Adv) ἢ(Kon) τὸ(Art)(N) χωρὶς(Adv) νοεῖν(Prä)(Akt)(Inf) συμβαίνει(Prä)(Akt), ἄλλος(Adj)(N) λόγος(N), λέγω(Prä)(Akt) δὲ(Pt)
+(177) at|once or the separately to|think it|happens, another account, I|say but
+(178) τὸ(Art)(N) ἅμα(Adv) καὶ(Kon) τὸ(Art)(N) χωρὶς(Adv) ὥστε(Kon) μὴ(Pt) τὸ(Art)(A) ἐφεξῆς(Adv) ἀλλʼ(Kon)
+(178) the at|once and the separately so|that not the in|order but
+(179) ἕν(Adj)(A) τι(Pr)(A) γίγνεσθαἰ(Prä)(M/P)(Inf)· οὐ(Pt) γάρ(Pt) ἐστι(Prä)(Akt) τὸ(Art)(N) ψεῦδος(N) καὶ(Kon) τὸ(Art)(N)
+(179) one something to|become· not for is the falsehood and the
+(180) ἀληθὲς(Adj)(N) ἐν(Prp) τοῖς(Art)(D) πράγμασιν(D), οἷον(Adv) τὸ(Art)(N) μὲν(Pt) ἀγαθὸν(Adj)(N) ἀληθὲς(Adj)(N) τὸ(Art)(N)
+(180) true in the things, for|example the indeed good true the
+(181) δὲ(Pt) κακὸν(Adj)(N) εὐθὺς(Adv) ψεῦδος(N), ἀλλʼ(Kon) ἐν(Prp) διανοίᾳ(D), περὶ(Prp) δὲ(Pt) τὰ(Art)(A)
+(181) but bad straightway falsehood, but in thought, about but the
+(182) ἁπλᾶ(Adj)(A) καὶ(Kon) τὰ(Art)(A) τί(Pr)(N) ἐστιν(Prä)(Akt) οὐδʼ(Kon) ἐν(Prp) διανοίᾳ(D)· — ὅσα(Pr)(N) μὲν(Pt) οὖν(Pt)
+(182) simple and the what is nor in thought· — as|many|as indeed then
+(183) δεῖ(Prä)(Akt) θεωρῆσαι(Aor)(Akt)(Inf) περὶ(Prp) τὸ(Art)(A) οὕτως(Adv) ὂν(Prä)(Akt)(A) καὶ(Kon) μὴ(Pt) ὄν(Prä)(Akt)(A), ὕστερον(Adv)
+(183) it|is|necessary to|consider about the thus being and not being, later
+(184) ἐπισκεπτέον(Adj)(N)· ἐπεὶ(Kon) δὲ(Pt) ἡ(Art)(N) συμπλοκή(N) ἐστιν(Prä)(Akt) καὶ(Kon) ἡ(Art)(N) διαίρεσις(N) ἐν(Prp)
+(184) to|be|examined· since but the combination is and the division in
+(185) διανοίᾳ(D) ἀλλʼ(Kon) οὐκ(Pt) ἐν(Prp) τοῖς(Art)(D) πράγμασι(D), τὸ(Art)(N) δʼ(Pt) οὕτως(Adv) ὂν(Prä)(Akt)(N)
+(185) thought but not in the things, the but thus being
+(186) ἕτερον(Adj)(N) ὂν(Prä)(Akt)(N) τῶν(Art)(G) κυρίως(Adv) (ἢ(Kon) γὰρ(Pt) τὸ(Art)(N) τί(Pr)(N) ἐστιν(Prä)(Akt) ἢ(Kon)
+(186) other being of in|the|primary|sense (or for the what is or
+(187) ὅτι(Kon) ποιὸν(Adj)(N) ἢ(Kon) ὅτι(Kon) ποσὸν(Adj)(N) ἤ(Kon) τι(Pr)(N) ἄλλο(Adj)(N) συνάπτει(Prä)(Akt) ἢ(Kon)
+(187) that of|what|kind or that how|much or something other it|joins or
+(188) ἀφαιρεῖ(Prä)(Akt) ἡ(Art)(N) διάνοιἀ(N), τὸ(Art)(N) μὲν(Pt) ὡς(Kon) συμβεβηκὸς(Per)(Akt)(N) καὶ(Kon) τὸ(Art)(N) ὡς(Kon)
+(188) it|removes the thought, the indeed as having|happened and the as
+(189) ἀληθὲς(Adj)(N) ὂν(Prä)(Akt)(N) ἀφετέον(Adj)(N)— τὸ(Art)(N) γὰρ(Pt) αἴτιον(N) τοῦ(Art)(G) μὲν(Pt) ἀόριστον(Adj)(N) τοῦ(Art)(G) δὲ(Pt)
+(189) true being to|be|dismissed— the for cause of indeed indefinite of but
+(190) τῆς(Art)(G) διανοίας(G) τι(Pr)(N) πάθος(N), καὶ(Kon) ἀμφότερα(Adj)(N) περὶ(Prp) τὸ(Art)(A) λοιπὸν(Adj)(A) γένος(A)
+(190) of the|thought some affection, and both about the remaining kind
+(191) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G), καὶ(Kon) οὐκ(Pt) ἔξω(Adv) δηλοῦσιν(Prä)(Akt) οὖσάν(Prä)(Akt)(A) τινα(Pr)(A) φύσιν(A) τοῦ(Art)(G)
+(191) of being, and not outside they|make|clear being some nature of
+(192) ὄντος(Prä)(Akt)(G)— διὸ(Kon) ταῦτα(Pr)(A) μὲν(Pt) ἀφείσθω(Aor)(Med)(Imv), σκεπτέον(Adj)(N) δὲ(Pt) τοῦ(Art)(G) ὄντος(Prä)(Akt)(G) αὐτοῦ(Pr)(G) τὰ(Art)(A)
+(192) being— therefore these indeed let|be|dismissed, to|be|examined but of being it|self the
+(193) αἴτια(A) καὶ(Kon) τὰς(Art)(A) ἀρχὰς(A) ᾗ(Adv) ὄν(Prä)(Akt)(N). φανερὸν(Adj)(N) δʼ(Pt) ἐν(Prp) οἷς(Pr)(D)
+(193) causes and the principles insofar|as being. clear but in in|which
+(194) διωρισάμεθα(Aor)(Med) περὶ(Prp) τοῦ(Art)(G) ποσαχῶς(Adv) λέγεται(Prä)(M/P) ἕκαστον(Adj)(N), ὅτι(Kon) πολλαχῶς(Adv) λέγεται(Prä)(M/P) τὸ(Art)(N)
+(194) we|have|defined about of how|many|ways it|is|said each, that in|many|ways it|is|said the
+(195) ὄν(Prä)(Akt)(N).
+(195) being.

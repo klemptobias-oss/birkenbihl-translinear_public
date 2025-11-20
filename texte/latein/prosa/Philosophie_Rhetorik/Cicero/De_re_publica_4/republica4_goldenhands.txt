@@ -1,0 +1,156 @@
+(1) ==== Buch 4 ====
+(2) === Liber Quartus ===
+(3) === Kapitel 1 ===
+(4) [Zitat Anfang]
+(5) Atque ipsa mens ea, quae futura videt, praeterita meminit.
+(6) [Zitat Ende]
+(7) [Quelle Anfang] Non. 500M [Quelle Ende]
+(8) [Zitat Anfang]
+(9) Etenim, si nemo est quin emori malit quam converti in aliquam figuram bestiae, quamvis hominis mentem sit habiturus, quanto est miserius in hominis figura animo esse efferato! Mihi quidem tanto videtur, quanto praestabilior est animus corpore.
+(10) [Zitat Ende]
+(11) [Quelle Anfang] Lactant. Div. Inst. 5.11.2 [Quelle Ende]
+(12) [Zitat Anfang]
+(13) se non putare idem esse arietis et P. Africani bonum.
+(14) [Zitat Ende]
+(15) [Quelle Anfang] August. c. Iul. 5.12.59 [Quelle Ende]
+(16) [Zitat Anfang]
+(17) eademque obiectu suo umbram noctemque efficiat cum ad numerum dierum aptam, tum ad laborum quietem.
+(18) [Zitat Ende]
+(19) [Quelle Anfang] Non. 234M [Quelle Ende]
+(20) [Zitat Anfang]
+(21) Cumque autumno terra se ad concipiendas fruges patefecerit, hieme ad †concipiendas relaxarit, aestiva maturitate alia mitigaverit, alia torruerit.
+(22) [Zitat Ende]
+(23) [Quelle Anfang] Non. 343M [Quelle Ende]
+(24) [Zitat Anfang]
+(25) cum adhibent in pecuda pastores.
+(26) [Zitat Ende]
+(27) [Quelle Anfang] Non. 159M [Quelle Ende]
+(28) === Kapitel 2 ===
+(29) = § 2 =
+(30) gratiam. Quam commode ordines discripti, aetates, classes, equitatus, in quo
+(31) suffragia sunt etiam senatus, nimis multis iam stulte hanc utilitatem
+(32) tolli cupientibus, qui novam largitionem quaerunt aliquo plebei scito reddendorum
+(33) equorum.
+(34) === Kapitel 3 ===
+(35) = § 3 =
+(36) Considerate nunc, cetera quam sint provisa sapienter ad illam civium
+(37) beate et honeste vivendi societatem; ea est enim prima causa
+(38) coeundi, et id hominibus effici ex re publica debet partim
+(39) institutis, alia legibus. Principio disciplinam puerilem ingenuis, de qua Graeci
+(40) multum frustra laborarunt, et in qua una Polybius noster hospes
+(41) nostrorum institutorum neglegentiam accusat, nullam certam aut destinatam legibus aut
+(42) publice expositam aut unam omnium esse voluerunt. Nam
+(43) [Zitat Anfang]
+(44) ad militiam euntibus dari solitos esse custodes, a quibus primo anno regantur.
+(45) [Zitat Ende]
+(46) [Quelle Anfang] Serv. A. 5.546 [Quelle Ende]
+(47) [Zitat Anfang]
+(48) non modo ut Spartae, rapere ubi pueri et clepere discunt.
+(49) [Zitat Ende]
+(50) [Quelle Anfang] Non. 20M [Quelle Ende]
+(51) [Zitat Anfang]
+(52) opprobrio fuisse adulescentibus, si amatores non haberent.
+(53) [Zitat Ende]
+(54) [Quelle Anfang] Serv. A. 10.325 [Quelle Ende]
+(55) === Kapitel 4 ===
+(56) = § 4 =
+(57) nudari puberem. Ita sunt alte repetita quasi fundamenta quaedam verecundiae.
+(58) Iuventutis vero exercitatio quam absurda in gymnasiis! quam levis epheborum
+(59) illa militia! quam contrectationes et amores soluti et liberi! mitto
+(60) apud Eleos et Thebanos, apud quos in amore ingenuorum libido
+(61) etiam permissam habet et solutam licentiam; Lacedaemonii ipsi, cum omnia
+(62) concedunt in amore iuvenum praeter stuprum, tenui sane muro dissaepiunt
+(63) id, quod excipiunt; conplexus enim concubitusque permittunt palliis interiectis. Hic
+(64) Laelius: Praeclare intellego, Scipio, te in iis Graeciae disciplinis, quas
+(65) reprendis, cum populis nobilissimis malle quam cum tuo Platone luctari,
+(66) quem ne attingis quidem, praesertim cum
+(67) === Kapitel 5 ===
+(68) [Zitat Anfang]
+(69) et noster Plato magis etiam quam Lycurgus, omnia qui prorsus iubet esse communia, ne quis civis propriam aut suam rem ullam queat dicere.
+(70) [Zitat Ende]
+(71) [Quelle Anfang] Non. 362M [Quelle Ende]
+(72) [Zitat Anfang]
+(73) Ego vero eodem, quo ille Homerum redimitum coronis et delibutum unguentis emittit ex ea urbe, quam sibi ipse fingit.
+(74) [Zitat Ende]
+(75) [Quelle Anfang] Non. 308M [Quelle Ende]
+(76) === Kapitel 6 ===
+(77) [Zitat Anfang]
+(78) Censoris iudicium nihil fere damnato nisi ruborem offert. Itaque, ut omnis ea iudicatio versatur tantum modo in nomine, animadversio illa ignominia dicta est.
+(79) [Zitat Ende]
+(80) [Quelle Anfang] Non. 24M [Quelle Ende]
+(81) [Zitat Anfang]
+(82) Horum †in severitatem dicitur inhorruisse primum civitas.
+(83) [Zitat Ende]
+(84) [Quelle Anfang] Non. 423M [Quelle Ende]
+(85) [Zitat Anfang]
+(86) Nec vero mulieribus praefectus praeponatur, qui apud Graecos creari solet, sed sit censor, qui viros doceat moderari uxoribus.
+(87) [Zitat Ende]
+(88) [Quelle Anfang] Non. 499M [Quelle Ende]
+(89) [Zitat Anfang]
+(90) Ita magnam habet vim disciplina verecundiae; carent temeto omnes mulieres.
+(91) [Zitat Ende]
+(92) [Quelle Anfang] Non. 5M [Quelle Ende]
+(93) [Zitat Anfang]
+(94) Atque etiam si qua erat famosa, ei cognati osculum non ferebant.
+(95) [Zitat Ende]
+(96) [Quelle Anfang] Non. 306M [Quelle Ende]
+(97) [Zitat Anfang]
+(98) Itaque a petendo petulantia, a procando, id est poscendo, procacitas nominata est.
+(99) [Zitat Ende]
+(100) [Quelle Anfang] Non. 23M [Quelle Ende]
+(101) === Kapitel 7 ===
+(102) [Zitat Anfang]
+(103) Nolo enim eundem populum imperatorem et portitorem esse terrarum. Optimum autem et in privatis familiis et in re publica vectigal duco esse parsimoniam. Fides enim nomen ipsum mihi videtur habere, cum fit, quod dicitur.
+(104) [Zitat Ende]
+(105) [Quelle Anfang] Non. 24M [Quelle Ende]
+(106) [Zitat Anfang]
+(107) In cive excelso atque homine nobili blanditiam, adsentationem, ambitionem †meam esse levitatis.
+(108) [Zitat Ende]
+(109) [Quelle Anfang] Non. 194M [Quelle Ende]
+(110) === Kapitel 8 ===
+(111) [Zitat Anfang]
+(112) Admiror, nec rerum solum, sed verborum etiam elegantiam. Si iurgant, inquit. Benivolorum concertatio, non lis inimicorum, iurgium dicitur . Iurgare igitur lex putat inter se vicinos, non litigare.
+(113) [Zitat Ende]
+(114) [Quelle Anfang] Non. 430Msq. [Quelle Ende]
+(115) [Zitat Anfang]
+(116) eosdem terminos hominum curae atque vitae, sic pontificio iure sanctitudo sepulturae.
+(117) [Zitat Ende]
+(118) [Quelle Anfang] Non. 174M [Quelle Ende]
+(119) [Zitat Anfang]
+(120) quod insepultos reliquissent eos, quos e mari propter vim tempestatis excipere non potuissent, innocentes necaverint.
+(121) [Zitat Ende]
+(122) [Quelle Anfang] Non. 293M [Quelle Ende]
+(123) [Zitat Anfang]
+(124) nec in hac dissensione suscepi populi causam, sed bonorum.
+(125) [Zitat Ende]
+(126) [Quelle Anfang] Non. 519M [Quelle Ende]
+(127) [Zitat Anfang]
+(128) Non enim facile valenti populo resistitur, si aut nihil iuris impertias aut parum.
+(129) [Zitat Ende]
+(130) [Quelle Anfang] Prisc. GL 3.76K [Quelle Ende]
+(131) [Zitat Anfang]
+(132) Cui quidem utinam vere fideliter †abundiente auguraverim.
+(133) [Zitat Ende]
+(134) [Quelle Anfang] Non. 469M [Quelle Ende]
+(135) === Kapitel 9 ===
+(136) [Zitat Anfang]
+(137) Ad quos cum accessit clamor et adprobatio populi quasi magni cuiusdam et sapientis magistri, quas illi obducunt tenebras, quos invehunt metus, quas inflammant cupiditates!
+(138) [Zitat Ende]
+(139) [Quelle Anfang] August. C.D. 2.14ext. [Quelle Ende]
+(140) === Kapitel 10 ===
+(141) [Zitat Anfang]
+(142) Cum artem ludicram scaenamque totam in probro ducerent, genus id hominum non modo honore civium reliquorum carere, sed etiam tribu moveri notatione censoria voluerunt.
+(143) [Zitat Ende]
+(144) [Quelle Anfang] August. C.D. 2.13 [Quelle Ende]
+(145) [Zitat Anfang]
+(146) Numquam comoediae, nisi consuetudo vitae pateretur, probare sua theatris flagitia potuissent. quem illa non adtigit vel potius quem non vexavit? cui pepercit? Esto, populares homines inprobos, in re publica seditiosos, Cleonem, Cleophontem, Hyperbolum laesit. Patiamur, etsi eius modi cives a censore melius est quam a poeta notari; sed Periclen, cum iam suae civitati maxima auctoritate plurimos annos domi et belli praefuisset, violari versibus, et eos agi in scaena non plus decuit, quam si Plautus noster voluisset aut Naevius Publio et Gnaeo Scipioni aut Caecilius Marco Catoni male dicere
+(147) [Zitat Ende]
+(148) [Quelle Anfang] August. C.D. 2.9 [Quelle Ende]
+(149) [Zitat Anfang]
+(150) Nostrae contra duo decim tabulae cum perpaucas res capite sanxissent, in his hanc quoque sanciendam putaverunt, si quis occentavisset sive carmen condidisset, quod infamiam faceret flagitiumve alteri. Praeclare; iudiciis enim magistratuum, disceptationibus legitimis propositam vitam, non poetarum ingeniis, habere debemus nec probrum audire nisi ea lege, ut respondere liceat et iudicio defendere. veteribus displicuisse Romanis vel laudari quemquam in scaena vivum hominem vel vituperari.
+(151) [Zitat Ende]
+(152) === Kapitel 11 ===
+(153) [Zitat Anfang]
+(154) Aeschines Atheniensis, vir eloquentissimus, cum adulescens tragoedias actitavisset, rem publicam capessivit, et Aristodemum, tragicum item actorem, maximis de rebus pacis et belli legatum ad Philippum Athenienses saepe miserunt.
+(155) [Zitat Ende]
+(156) [Quelle Anfang] August. C.D. 2.11 [Quelle Ende]

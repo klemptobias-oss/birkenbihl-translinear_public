@@ -1,0 +1,2064 @@
+==== Medea ====
+=== Prolog ===
+(1) [MEDEA:] Dī(V) conjugālēs(Adj)(V) tūque(Pr)(N)(Kon) geniālis(Adj)(G) torī(G),
+(1) [MEDEA:] Götter eheliche du|und zum|Ehebett|gehörig des|Bettes,
+(2) [MEDEA:] Lūcīna(V), cūstōs(V) quaeque(Pr)(N)(Kon) domitūram(Fu1)(Akt)(A) freta(A)
+(2) [MEDEA:] Lucina, Hüterin die|und zähmen|werdend Meerengen
+(3) [MEDEA:] Tīphyn(A) novam(Adj)(A) frēnāre(Inf)(Akt) docuistī(Per)(Akt) ratem(A),
+(3) [MEDEA:] Tiphys neu zügeln hast|gelehrt Schiff,
+(4) [MEDEA:] et(Kon) tū(Pr)(N), profundī(G) saeve(Adv) dominātor(N) maris(G),
+(4) [MEDEA:] und du, des|Tiefen grausam Herrscher des|Meeres,
+(5) [MEDEA:] clārumque(Adj)(A)(Kon) Tītān(N) dīvidēns(Prä)(Akt)(N) orbī(D) diem(A),
+(5) [MEDEA:] hell|und Titan teilend der|Welt den|Tag,
+(6) [MEDEA:] tacitīsque(Adj)(Abl)(Kon) praebēns(Prä)(Akt)(N) cōnscium(Adj)(A) sacrīs(D) jubar(A)
+(6) [MEDEA:] schweigenden|und darbietend wissendes zu|den|Riten Strahlenglanz
+(7) [MEDEA:] Hecatē(V) trifōrmis(Adj)(V), quōsque(Pr)(A)(Kon) jūrāvit(Per)(Akt) mihī(Pr)(D)
+(7) [MEDEA:] Hekate dreigestaltete, welche|und geschworen|hat mir
+(8) [MEDEA:] deōs(A) Iāsōn(N), quōsque(Pr)(A)(Kon) Mēdēae(G) magis(Adv)(Kmp)
+(8) [MEDEA:] Götter Jason, welche|und der|Medea mehr
+(9) [MEDEA:] fās(N) est(Prä)(Akt) precārī(Inf)(Akt): noctis(G) aeternae(Adj)(G) chaos(N),
+(9) [MEDEA:] erlaubt ist bitten: Chaos der|ewigen Nacht,
+(10) [MEDEA:] āversa(Adj)(N) superīs(D) rēgna(N) mānēsque(N)(Kon) impiōs(Adj)(A)
+(10) [MEDEA:] abgewandt den|Göttern Reiche Totengeister|und gottlose
+(11) [MEDEA:] dominumque(N)(Kon) rēgnī(G) trīstis(Adj)(A) et(Kon) dominam(N) fidē(G)
+(11) [MEDEA:] den|Herrn|und des|Reiches traurig und die|Herrin der|Treue
+(12) [MEDEA:] meliōre(Adj)(Abl)(Kmp) raptam(Per)(Pas)(A), vōce(A) nōn(Pt) faustā(Adj)(A) precor(Prä)(Akt).
+(12) [MEDEA:] mit|besserer geraubte, Stimme nicht günstiger bete|ich.
+(13) [MEDEA:] nunc(Adv), nunc(Adv) adeste(Prä)(Imv)(Akt) sceleris(G) ultrīcēs(Adj)(N) deae(N),
+(13) [MEDEA:] jetzt, jetzt seid|zugegen des|Verbrechens rächende Göttinnen,
+(14) [MEDEA:] crīnem(A) solūtīs(Per)(Pas)(Abl) squālidae(Adj)(N) serpentibus(Abl),
+(14) [MEDEA:] das|Haar mit|gelösten verwahrloste mit|Schlangen,
+(15) [MEDEA:] ātram(Adj)(A) cruentīs(Adj)(Abl) manibus(Abl) amplexae(Per)(Pas)(N) facem(A),
+(15) [MEDEA:] schwarze mit|blutigen mit|Händen umschlungen Fackel,
+(16) [MEDEA:] adeste(Prä)(Imv)(Akt), thalamīs(D) horridae(Adj)(N) quondam(Adv) meīs(Pr)(D)
+(16) [MEDEA:] seid|zugegen, den|Hochzeiten schreckliche einst meinen
+(17) [MEDEA:] quālēs(Pr)(N) stetistis(Per)(Akt): conjugī(D) lētum(N) novae(Adj)(G)
+(17) [MEDEA:] was|für standet: dem|Ehegatten Tod der|Neuen
+(18) [MEDEA:] lētumque(N)(Kon) socerō(D) et(Kon) rēgiae(Adj)(G) stirpī(D) date(Prä)(Imv)(Akt).
+(18) [MEDEA:] und|Tod dem|Schwiegervater und des|königlichen Stammes gebt.
+(19) [MEDEA:] Num(Pt) pejus(Adv)(Kmp) aliquid(Pr)(N)? quod(Pr)(A) precer(Prä)(Knj)(Akt) spōnsō(D) malum(N)?
+(19) [MEDEA:] etwa schlimmer irgendetwas? das ich|erbitte dem|Bräutigam Übel?
+(20) [MEDEA:] vīvat(Prä)(Knj)(Akt); per(Prp) urbēs(A) erret(Prä)(Knj)(Akt) ignōtās(Adj)(A) egēns(Prä)(Akt)(N)
+(20) [MEDEA:] er|möge|leben; durch die|Städte er|irre unbekannte bedürftig
+(21) [MEDEA:] exul(N) pavēns(Prä)(Akt)(N) invīsus(Per)(Pas)(N) incertī(Adj)(G) laris(G),
+(21) [MEDEA:] Verbannter bangend verhaßt des|unsicheren Heims,
+(22) [MEDEA:] jam(Adv) nōtus(Per)(Pas)(N) hospes(N) līmen(A) aliēnum(Adj)(A) expetat(Prä)(Knj)(Akt);
+(22) [MEDEA:] schon bekannt|geworden Gast Schwelle fremde er|soll|aufsuchen;
+(23) [MEDEA:] mē(Pr)(A) conjugem(A) optō(Prä)(Akt), quōque(Kon) nōn(Pt) aliud(Pr)(A) queam(Prä)(Knj)(Akt)
+(23) [MEDEA:] mich Ehefrau wünsche|ich, und|auch nicht anderes ich|kann
+(24) [MEDEA:] pejus(Adv)(Kmp) precārī(Inf)(Akt), līberōs(A) similēs(Adj)(A) patrī(D)
+(24) [MEDEA:] schlimmer erbitten, Kinder ähnliche dem|Vater
+(25) [MEDEA:] similēsque(Adj)(A)(Kon) mātrī(D): parta(Per)(Pas)(N) jam(Adv), parta(Per)(Pas)(N) ultiō(N) est(Prä)(Akt):
+(25) [MEDEA:] ähnliche|und der|Mutter: erreicht schon, erreicht Rache ist:
+(26) [MEDEA:] peperī(Per)(Akt). Querēlās(A) verbaque(A)(Kon) in(Prp) cassum(A) serō(Prä)(Akt)?
+(26) [MEDEA:] ich|gebar. Klagen Worte|und in vergeblich säe|ich?
+(27) [MEDEA:] nōn(Pt) ībō(Fu1)(Akt) in(Prp) hostēs(A)? manibus(Abl) excutiam(Fu1)(Akt) facēs(A)
+(27) [MEDEA:] nicht werde|ich|gehen gegen Feinde? mit|Händen werde|ich|ausschütteln Fackeln
+(28) [MEDEA:] caelōque(Abl)(Kon) lūcem(A); spectat(Prä)(Akt) hoc(Pr)(A) nostrī(G) sator(N)
+(28) [MEDEA:] am|Himmel|und Licht; schaut dies unseres Urheber
+(29) [MEDEA:] Sōl(N) generis(G), et(Kon) spectātur(Prä)(Pas), et(Kon) currū(Abl) īnsidēns(Prä)(Akt)(N)
+(29) [MEDEA:] Sonne des|Geschlechts, und wird|angeschaut, und im|Wagen sitzend
+(30) [MEDEA:] per(Prp) solita(A) pūrī(Adj)(G) spatia(A) dēcurrit(Prä)(Akt) polī(G)?
+(30) [MEDEA:] durch gewohnte des|reinen Räume läuft|hin der|Himmels?
+(31) [MEDEA:] nōn(Pt) redit(Prä)(Akt) in(Prp) ortūs(A) et(Kon) remētītur(Prä)(Akt) diem(A)?
+(31) [MEDEA:] nicht kehrt|zurück in Aufgänge und mißt|erneut den|Tag?
+(32) [MEDEA:] dā(Prä)(Imv)(Akt), dā(Prä)(Imv)(Akt) per(Prp) aurās(A) curribus(Abl) patriīs(Adj)(Abl) vehī(Inf)(Pas),
+(32) [MEDEA:] gib, gib durch Lüfte mit|Wagen väterlichen gefahren|zu|werden,
+(33) [MEDEA:] committe(Prä)(Imv)(Akt) habēnās(A), genitor(N), et(Kon) flagrantibus(Adj)(Abl)
+(33) [MEDEA:] überlasse Zügel, Vater, und brennenden
+(34) [MEDEA:] ignifera(Adj)(Abl) lōrīs(Abl) tribue(Prä)(Imv)(Akt) moderārī(Inf)(Akt) juga(A):
+(34) [MEDEA:] feuertragenden mit|Riemen gewähre zu|lenken Joche:
+(35) [MEDEA:] geminō(Adj)(Abl) Corinthos(N) lītorī(Abl) oppōnēns(Prä)(Akt)(N) morās(A)
+(35) [MEDEA:] dem|doppelten Korinth dem|Ufer entgegensetzend Verzögerungen
+(36) [MEDEA:] cremāta(Per)(Pas)(N) flammīs(Abl) maria(A) committat(Prä)(Knj)(Akt) duo(Adj)(A).
+(36) [MEDEA:] verbrannt durch|Flammen Meere verbinde|er|möge zwei.
+(37) [MEDEA:] hoc(Pr)(A) restat(Prä)(Akt) ūnum(N), prōnubam(N) thalamō(D) feram(Prä)(Knj)(Akt)
+(37) [MEDEA:] dies bleibt einzig, Brautführerin dem|Gemach ich|bringe
+(38) [MEDEA:] ut(Kon) ipsa(Pr)(N) pīnum(A) postque(Kon) sacrificās(Adj)(A) precēs(A)
+(38) [MEDEA:] damit selbst Fackel und|danach geweihte Gebete
+(39) [MEDEA:] caedam(Prä)(Knj)(Akt) dicātīs(Per)(Pas)(Abl) victimās(A) altāribus(Abl).
+(39) [MEDEA:] ich|schlachte auf|geweihten Opfer|tiere Altären.
+(40) [MEDEA:] Per(Prp) vīscera(A) ipsa(Adj)(A) quaere(Prä)(Imv)(Akt) suppliciō(D) viam(A),
+(40) [MEDEA:] durch Eingeweide selbst suche der|Bestrafung Weg,
+(41) [MEDEA:] sī(Kon) vīvis(Prä)(Akt), anime(V), sī(Kon) quid(Pr)(A) antīquī(Adj)(G) tibī(Pr)(D)
+(41) [MEDEA:] wenn du|lebst, Geist, wenn etwas des|alten dir
+(42) [MEDEA:] remanet(Prä)(Akt) vigōris(G); pelle(Prä)(Imv)(Akt) fēmineōs(Adj)(A) metūs(A)
+(42) [MEDEA:] verbleibt der|Kraft; vertreibe weibliche Ängste
+(43) [MEDEA:] et(Kon) inhospitālem(Adj)(A) Caucasum(A) mente(Abl) indue(Prä)(Imv)(Akt).
+(43) [MEDEA:] und unwirtlichen Kaukasus mit|Geist lege|an.
+(44) [MEDEA:] quodcumque(Pr)(A) vīdit(Per)(Akt) Phāsis(N) aut(Kon) Pontus(N) nefās(N),
+(44) [MEDEA:] was|auch|immer gesehen|hat Phasis oder Pontos Frevel,
+(45) [MEDEA:] vidēbit(Fu1)(Akt) Isthmos(N). effera(Adj)(A) ignōta(Adj)(A) horrida(Adj)(A),
+(45) [MEDEA:] wird|sehen Isthmos. wilde unbekannte schaurige,
+(46) [MEDEA:] tremenda(Ger)(A) caelō(Abl) pariter(Adv) ac(Kon) terrīs(Abl) mala(A)
+(46) [MEDEA:] zu|fürchten im|Himmel ebenso wie auf|Erden Übel
+(47) [MEDEA:] mēns(N) intus(Adv) agitat(Prä)(Akt): vulnera(A) et(Kon) caedem(A) et(Kon) vagum(Adj)(A)
+(47) [MEDEA:] der|Sinn innen treibt: Wunden und Mord und umherschweifend
+(48) [MEDEA:] fūnus(N) per(Prp) artūs(A); levia(Adj)(A) memorāvī(Per)(Akt) nimis(Adv):
+(48) [MEDEA:] Leichnam durch Glieder; Geringes habe|ich|erwähnt zu|sehr:
+(49) [MEDEA:] haec(Pr)(A) virgo(N) fēcī(Per)(Akt); gravior(Adj)(N)(Kmp) exsurgat(Prä)(Knj)(Akt) dolor(N):
+(49) [MEDEA:] dies Jungfrau habe|ich|getan; schwererer erhebe|sich Schmerz:
+(50) [MEDEA:] majōra(Adj)(A)(Kmp) jam(Adv) mē(Pr)(A) scelera(A) post(Prp) partūs(A) decent(Prä)(Akt).
+(50) [MEDEA:] größere schon mich Verbrechen nach Geburten geziemen.
+(51) [MEDEA:] accingere(Prä)(Imv)(Akt) īrā(Abl) tēque(Pr)(A)(Kon) in(Prp) exitium(A) parā(Prä)(Imv)(Akt)
+(51) [MEDEA:] gürte|dich mit|Zorn dich|und in Verderben bereite
+(52) [MEDEA:] furōre(N) tōtō(Adj)(Abl). paria(Adj)(N) nārrentur(Prä)(Pas) tua(Adj)(N)
+(52) [MEDEA:] durch|Raserei ganze. gleiche sollen|erzählt|werden deine
+(53) [MEDEA:] repudia(N) thalamīs(Abl): quō(Pr)(Abl) virum(A) linquēs(Fu1)(Akt) modō(N)?
+(53) [MEDEA:] Verstoßungen von|Ehebetten: auf|welche|Weise den|Mann wirst|du|verlassen Art?
+(54) [MEDEA:] hōc(Pr)(A) quō(Pr)(Abl) secūta(Per)(Pas)(N) es(Prä)(Akt). rumpe(Prä)(Imv)(Akt) jam(Adv) sēgnēs(Adj)(A) morās(A):
+(54) [MEDEA:] dies wodurch gefolgt bist. zerreiß schon träge Verzögerungen:
+(55) [MEDEA:] quae(Pr)(N) scelere(Abl) parta(Per)(Pas)(N) est(Prä)(Akt), scelere(Abl) linquenda(Fu1)(Pas)(N)(Gdv) est(Prä)(Akt) domus(N).
+(55) [MEDEA:] die durch|Verbrechen erworben ist, durch|Verbrechen zu|verlassen ist Haus.
+=== Chor (gemischt) ===
+(56) [CHORUS:] Ad(Prp) rēgum(G) thalamōs(A) nūmine(N) prōsperō(Adj)(Abl)
+(56) [CHORUS:] zu der|Könige Gemächer mit|Wirkmacht günstiger
+(57) [CHORUS:] quī(Pr)(N) caelum(A) superī(N) quīque(Pr)(N)(Kon) regunt(Prä)(Akt) fretum(A)
+(57) [CHORUS:] die den|Himmel die|Oberen und|die beherrschen Meer
+(58) [CHORUS:] adsint(Prä)(Knj)(Akt) cum(Prp) populīs(Abl) rīte(Adv) faventibus(Prä)(Akt)(Abl).
+(58) [CHORUS:] mögen|beistehen mit Völkern ordnungsgemäß begünstigenden.
+(59) [CHORUS:] Prīmum(Adv) scēptriferīs(Adj)(Abl) colla(A) Tonantibus(D)
+(59) [CHORUS:] zuerst den|Zeptertragenden Nacken dem|Donnerer
+(60) [CHORUS:] taurus(N) celsa(Adj)(A) ferat(Prä)(Knj)(Akt) tergore(Abl) candidō(Adj)(Abl);
+(60) [CHORUS:] Stier hohe trage mit|Rücken weißem;
+(61) [CHORUS:] Lūcīnam(A) niveī(Adj)(G) fēmina(N) corporis(G)
+(61) [CHORUS:] die|Lucina des|schneeigen Frau Leibes
+(62) [CHORUS:] intemptāta(Per)(Pas)(N) jugō(Abl) plācet(Prä)(Akt), et(Kon) asperī(Adj)(G)
+(62) [CHORUS:] unberührt vom|Joch gefällt, und des|rauhen
+(63) [CHORUS:] Mārtis(G) sanguineās(Adj)(A) quae(Pr)(N) cohibet(Prä)(Akt) manūs(A),
+(63) [CHORUS:] des|Mars blutige die zurückhält Hände,
+(64) [CHORUS:] quae(Pr)(N) dat(Prä)(Akt) belligerīs(Adj)(D) foedera(A) gentibus(D)
+(64) [CHORUS:] die gibt kriegführenden Bündnisse Völkern
+(65) [CHORUS:] et(Kon) cornū(N) retinet(Prä)(Akt) dīvite(Adj)(Abl) cōpiam(A),
+(65) [CHORUS:] und mit|Horn hält|zurück reiche Fülle,
+(66) [CHORUS:] dōnētur(Prä)(Pas) tenerā(Adj)(Abl) mītior(Adj)(N)(Kmp) hostiā(Abl).
+(66) [CHORUS:] werde|beschenkt mit|zarter milder Opfergabe.
+(67) [CHORUS:] Et(Kon) tū(Pr)(N), quī(Pr)(N) facibus(Abl) lēgitimīs(Adj)(Abl) ades(Prä)(Akt),
+(67) [CHORUS:] und du, der mit|Fackeln rechtmäßigen beiwohnst,
+(68) [CHORUS:] noctem(A) discutiēns(Prä)(Akt)(N) auspice(Abl) dexterā(Abl)
+(68) [CHORUS:] die|Nacht zerstreuend unter|Auspizien der|rechten|Hand
+(69) [CHORUS:] hūc(Adv) incēde(Prä)(Imv)(Akt) gradū(Abl) marcidus(Adj)(N) ēbriō(Adj)(Abl),
+(69) [CHORUS:] hierher schreite mit|Schritt schlaff trunkenem,
+(70) [CHORUS:] praecingēns(Prä)(Akt)(N) roseō(Adj)(Abl) tempora(A) vinculō(Abl).
+(70) [CHORUS:] umgürtelnd mit|rosigem die|Schläfen Band.
+(71) [CHORUS:] Et(Kon) tū(Pr)(N), quae(Pr)(N), geminī(Adj)(G) praevia(Adj)(N) temporis(G),
+(71) [CHORUS:] und du, die, des|zweifachen vorausschreitend der|Zeit,
+(72) [CHORUS:] tardē(Adv), stēlla(V), redīs(Prä)(Akt) semper(Adv) amantibus(D):
+(72) [CHORUS:] langsam, Stern, kehrst|zurück immer den|Liebenden:
+(73) [CHORUS:] tē(Pr)(A) mātrēs(N), avidē(Adv) tē(Pr)(A) cupiunt(Prä)(Akt) nurūs(N)
+(73) [CHORUS:] dich Mütter, begierig dich begehren Schwiegertöchter
+(74) [CHORUS:] quamprīmum(Adv) radiōs(A) spargere(Inf)(Akt) lūcidōs(Adj)(A).
+(74) [CHORUS:] so|bald|wie|möglich Strahlen aus|streuen hell|leuchtende.
+(75) [CHORUS:] Vincit(Prä)(Akt) virgineus(Adj)(N) decor(N)
+(75) [CHORUS:] übertrifft jungfräulicher Anmut
+(76) [CHORUS:] longē(Adv) Cecropiās(Adj)(A) nurūs(A),
+(76) [CHORUS:] weit die|Cecropischen Schwiegertöchter,
+(77) [CHORUS:] et(Kon) quās(Pr)(A) Tāygetī(G) jugīs(Abl)
+(77) [CHORUS:] und die des|Taygetus auf|den|Höhen
+(78) [CHORUS:] exercet(Prä)(Akt) juvenum(G) modō(Abl)
+(78) [CHORUS:] übt der|Jungen auf|Art
+(79) [CHORUS:] mūrīs(Abl) quod(Pr)(N) caret(Prä)(Akt) oppidum(N),
+(79) [CHORUS:] an|Mauern welches entbehrt Stadt,
+(80) [CHORUS:] et(Kon) quās(Pr)(A) Āonius(Adj)(N) latex(N)
+(80) [CHORUS:] und die aonischer Flüssigkeit
+(81) [CHORUS:] Alphēosque(N)(Kon) sacer(Adj)(N) lavat(Prä)(Akt).
+(81) [CHORUS:] Alpheios|und heilig wäscht.
+(82) [CHORUS:] Sī(Kon) fōrmā(Abl) velit(Prä)(Knj)(Akt) aspicī(Inf)(Pas),
+(82) [CHORUS:] wenn an|Schönheit möchte angesehen|zu|werden,
+(83) [CHORUS:] cēdent(Prä)(Akt) Aesoniō(Adj)(D) ducī(D)
+(83) [CHORUS:] weichen dem|Aesonischen dem|Führer
+(84) [CHORUS:] prōlēs(N) fulminis(G) improbī(Adj)(G)
+(84) [CHORUS:] Nachkommenschaft des|Blitzes unzüchtigen
+(85) [CHORUS:] aptat(Prä)(Akt) quī(Pr)(N) juga(A) tigribus(D),
+(85) [CHORUS:] fügt der|wer Joche den|Tigern,
+(86) [CHORUS:] nec(Pt) nōn(Pt), quī(Pr)(N) tripodas(A) movet(Prä)(Akt),
+(86) [CHORUS:] und auch, der|wer Dreifüße bewegt,
+(87) [CHORUS:] frāter(N) virginis(G) asperae(Adj)(G),
+(87) [CHORUS:] Bruder der|Jungfrau rauen,
+(88) [CHORUS:] cēdet(Prä)(Akt) Castore(Abl) cum(Prp) suō(Adj)(Abl)
+(88) [CHORUS:] weicht Castor mit seinem
+(89) [CHORUS:] Pollūx(N) caestibus(Abl) aptior(Adj)(N)(Kmp).
+(89) [CHORUS:] Pollux mit|Faustkämpfen geeigneter.
+(90) [CHORUS:] Sīc(Adv), sīc(Adv), caelicolae(V), precor(Prä)(Akt),
+(90) [CHORUS:] so, so, Himmlische, ich|bete,
+(91) [CHORUS:] vincat(Prä)(Knj)(Akt) fēmina(N) conjugēs(A),
+(91) [CHORUS:] übertreffe Frau Ehegatten,
+(92) [CHORUS:] vir(N) longē(Adv) superet(Prä)(Knj)(Akt) virōs(A).
+(92) [CHORUS:] Mann weit überrage Männer.
+(93) [CHORUS:] Haec(Pr)(N) cum(Prp) fēmineō(Adj)(Abl) cōnstitit(Per)(Akt) in(Prp) chorō(Abl),
+(93) [CHORUS:] diese wenn im|weiblichen stand in Chor,
+(94) [CHORUS:] ūnīus(Adj)(G) faciēs(N) praenitet(Prä)(Akt) omnibus(Pr)(D).
+(94) [CHORUS:] der|Einen Antlitz leuchtet|hervor allen.
+(95) [CHORUS:] sīc(Adv) cum(Prp) sōle(Abl) perit(Prä)(Akt) sīdereus(Adj)(N) decor(N),
+(95) [CHORUS:] so wenn mit|der|Sonne vergeht sternischer Schmuck,
+(96) [CHORUS:] et(Kon) dēnsī(Adj)(N) latitant(Prä)(Akt) Plēiadum(G) gregēs(N),
+(96) [CHORUS:] und dichte verbergen|sich der|Pleiaden Scharen,
+(97) [CHORUS:] cum(Prp) Phoebē(N) solidum(Adj)(A) lūmine(Abl) nōn(Pt) suō(Adj)(Abl)
+(97) [CHORUS:] wenn Phoebe vollen mit|Licht nicht eigenem
+(98) [CHORUS:] orbem(A) circuitīs(Per)(Pas)(Abl) cornibus(Abl) alligat(Prä)(Akt).
+(98) [CHORUS:] Kreis mit|umlaufenen Hörnern bindet.
+(99) [CHORUS:] ostrō(Abl) sīc(Adv) niveus(Adj)(N) pūniceō(Adj)(Abl) color(N)
+(99) [CHORUS:] mit|Purpur so schneeweißer purpurroter Farbe
+(100) [CHORUS:] perfūsus(Per)(Pas)(N) rubuit(Per)(Akt), sīc(Adv) nitidum(Adj)(A) jubar(A)
+(100) [CHORUS:] durchtränkt erglühte, so glänzenden Strahlenglanz
+(101) [CHORUS:] pāstor(N) lūce(Abl) novā(Adj)(Abl) rōscidus(Adj)(N) aspicit(Prä)(Akt).
+(101) [CHORUS:] Hirt mit|Licht neu tauig erblickt.
+(102) [CHORUS:] Ēreptus(Per)(Pas)(N) thalamīs(Abl) Phāsidis(G) horridī(Adj)(G),
+(102) [CHORUS:] entrissen den|Brautgemächern des|Phasis rauhen,
+(103) [CHORUS:] effrēnae(Adj)(G) solitus(Per)(Pas)(N) pectora(A) conjugis(G)
+(103) [CHORUS:] der|Zügellosen gewohnt Herzen der|Gattin
+(104) [CHORUS:] invītā(Adj)(Abl) trepidus(Adj)(N) prēndere(Inf)(Akt) dexterā(Abl),
+(104) [CHORUS:] widerwilliger bebt zu|ergreifen rechter|Hand,
+(105) [CHORUS:] fēlīx(Adj)(N) Aeoliam(Adj)(A) corripe(Prä)(Imv)(Akt) virginem(A)
+(105) [CHORUS:] glücklich äolische ergreife Jungfrau
+(106) [CHORUS:] nunc(Adv) prīmum(Adv) socerīs(Abl) spōnse(V) volentibus(Prä)(Akt)(Abl).
+(106) [CHORUS:] nun zum|ersten den|Schwiegervätern Bräutigam willigen.
+(107) [CHORUS:] Concessō(Per)(Pas)(Abl), juvenēs(V), lūdite(Prä)(Imv)(Akt) jūrgiō(Abl),
+(107) [CHORUS:] gewährt, ihr|Jungen, spielt mit|Zank,
+(108) [CHORUS:] hinc(Adv) illinc(Adv), juvenēs(V), mittite(Prä)(Imv)(Akt) carmina(A):
+(108) [CHORUS:] hier dort, ihr|Jungen, sendet Lieder:
+(109) [CHORUS:] rāra(Adj)(N) est(Prä)(Akt) in(Prp) dominōs(A) jūsta(Adj)(N) licentia(N).
+(109) [CHORUS:] selten ist gegen Herren gerechte Freiheit.
+(110) [CHORUS:] Candida(Adj)(N) thyrsigerī(Adj)(G) prōlēs(N) generōsa(Adj)(N) Lyaeī(G),
+(110) [CHORUS:] strahlende des|Thyrsos|tragenden Nachkommenschaft edle des|Lyaeus,
+(111) [CHORUS:] multifidam(Adj)(A) jam(Adv) tempus(N) erat(Imp)(Akt) succendere(Inf)(Akt) pīnum(A):
+(111) [CHORUS:] vielfach|gespaltene schon Zeit war zu|entzünden Kiefernfackel:
+(112) [CHORUS:] excute(Prä)(Imv)(Akt) sollemnem(Adj)(A) digitīs(Abl) marcentibus(Prä)(Akt)(Abl) ignem(A).
+(112) [CHORUS:] schüttle feierlichen mit|Fingern welkenden Brand.
+(113) [CHORUS:] fēsta(Adj)(A) dicāx(Adj)(N) fundat(Prä)(Akt) convīcia(A) fescennīnus(N),
+(113) [CHORUS:] festliche schlagfertig ergieße Schmähreden der|Fescennine,
+(114) [CHORUS:] solvat(Prä)(Knj)(Akt) turba(N) jocōs(A); tacitīs(Adj)(Abl) eat(Prä)(Knj)(Akt) illa(Pr)(N) tenebrīs(Abl),
+(114) [CHORUS:] löse Menge Scherze; schweigend gehe jene in|Dunkelheiten,
+(115) [CHORUS:] sī(Kon) qua(Pr)(N) peregrīnō(Adj)(D) nūbit(Prä)(Akt) fūrtīva(Adj)(N) marītō(D).
+(115) [CHORUS:] wenn welche fremdem heiratet heimliche Ehemann.
+=== Akt 1 ===
+(116) [MEDEA:] Occidimus(Per)(Akt): aurēs(A) pepulit(Per)(Akt) hymenaeus(N) meās(Adj)(A).
+(116) [MEDEA:] wir|sind|untergegangen: Ohren hat|getroffen Hochzeitslied meine.
+(117) [MEDEA:] vix(Adv) ipsa(Adj)(N) tantum(Adv), vix(Adv) adhūc(Adv) crēdō(Prä)(Akt) malum(A).
+(117) [MEDEA:] kaum ich|selbst so|sehr, kaum noch glaube Übel.
+(118) [MEDEA:] hoc(Pr)(A) facere(Inf)(Akt) Iāsōn(N) potuit(Per)(Akt), ēreptō(Per)(Pas)(Abl) patre(Abl)
+(118) [MEDEA:] dies zu|tun Jason vermochte, entrissenem Vater
+(119) [MEDEA:] patriā(Abl) atque(Kon) rēgnō(Abl) sēdibus(Abl) sōlam(Adj)(A) exterīs(Adj)(Abl)
+(119) [MEDEA:] Heimat und Königreich Sitzen einsame fremden
+(120) [MEDEA:] dēserere(Inf)(Akt) dūrus(Adj)(N)? merita(A) contempsit(Per)(Akt) mea(Adj)(A)
+(120) [MEDEA:] zu|verlassen hart? Verdienste verachtete meine
+(121) [MEDEA:] quī(Pr)(N) scelere(Abl) flammās(A) vīderat(Plq)(Akt) vincī(Inf)(Pas) et(Kon) mare(A)?
+(121) [MEDEA:] der durch|Verbrechen Flammen gesehen|hatte besiegt|zu|werden und Meer?
+(122) [MEDEA:] adeōne(Pt) crēdit(Prä)(Akt) omne(Adj)(N) cōnsūmptum(Per)(Pas)(N) nefās(N)?
+(122) [MEDEA:] so|sehr|denn glaubt ganz vernichtet Frevel?
+(123) [MEDEA:] incerta(Adj)(N) vēcors(Adj)(N) mente(Abl) nōn(Pt) sānā(Adj)(Abl) feror(Prä)(Pas)
+(123) [MEDEA:] unsicher rasend mit|Sinn nicht gesund werde|getrieben
+(124) [MEDEA:] partēs(A) in(Prp) omnēs(A); unde(Adv) mē(Pr)(A) ulcīscī(Inf)(Akt) queam(Prä)(Knj)(Akt)?
+(124) [MEDEA:] Seiten in alle; woher mich zu|rächen könnte|ich?
+(125) [MEDEA:] utinam(Pt) esset(Prä)(Knj)(Akt) illī(Pr)(D) frāter(N)! est(Prä)(Akt) conjūnx(N): in(Prp) hanc(Pr)(A)
+(125) [MEDEA:] möchten|doch wäre ihm Bruder! ist Gattin: gegen diese
+(126) [MEDEA:] ferrum(N) exigātur(Prä)(Knj)(Pas). hoc(Pr)(N) meīs(Adj)(Abl) satis(Adv) est(Prä)(Akt) malīs(Abl)?
+(126) [MEDEA:] Eisen werde|getrieben. dies meinen genügend ist Übeln?
+(127) [MEDEA:] sī(Kon) quod(Pr)(N) Pelasgae(Adj)(N), sī(Kon) quod(Pr)(N) urbēs(N) barbarae(Adj)(N)
+(127) [MEDEA:] wenn irgend|etwas Pelasgische, wenn irgend|etwas Städte barbarische
+(128) [MEDEA:] nōvēre(Per)(Akt) facinus(A) quod(Pr)(A) tuae(Adj)(N) ignōrent(Prä)(Knj)(Akt) manūs(N),
+(128) [MEDEA:] kannten Frevel das deine nicht|kennen Hände,
+(129) [MEDEA:] nunc(Adv) est(Prä)(Akt) parandum(Fu1)(Pas)(N)(Gdv). scelera(N) tē(Pr)(A) hortentur(Prä)(Knj)(Akt) tua(Adj)(N)
+(129) [MEDEA:] jetzt ist zu|bereiten. Verbrechen mögen|antreiben dich deine
+(130) [MEDEA:] et(Kon) cūncta(Adj)(N) redeant(Prä)(Knj)(Akt): inclitum(Adj)(N) rēgnī(G) decus(N)
+(130) [MEDEA:] und alles mögen|zurückkehren: berühmter des|Reiches Schmuck
+(131) [MEDEA:] raptum(Per)(Pas)(N) et(Kon) nefandae(Adj)(G) virginis(G) parvus(Adj)(N) comes(N)
+(131) [MEDEA:] geraubt und der|frevelhaften Jungfrau kleiner Begleiter
+(132) [MEDEA:] dīvīsus(Per)(Pas)(N) ēnse(Abl), fūnus(N) ingestum(Per)(Pas)(N) patrī(D)
+(132) [MEDEA:] zerteilt mit|Schwert, Leichenlast hineingestürzt dem|Vater
+(133) [MEDEA:] sparsumque(Per)(Pas)(N)(Kon) pontō(Abl) corpus(N) et(Kon) Peliae(G) senis(G)
+(133) [MEDEA:] und|zerstreut auf|dem|Meer Körper und des|Pelias Greises
+(134) [MEDEA:] dēcocta(Per)(Pas)(N) aēnō(Abl) membra(N): fūnestum(Adj)(N) impiē(Adv)
+(134) [MEDEA:] ausgekocht im|Kessel Glieder: Leichen|bringend frevelhaft
+(135) [MEDEA:] quam(Adv) saepe(Adv) fūdī(Per)(Akt) sanguinem(A), et(Kon) nūllum(Adj)(N) scelus(N)
+(135) [MEDEA:] wie oft vergoss|ich Blut, und kein Verbrechen
+(136) [MEDEA:] īrāta(Adj)(N) fēcī(Per)(Akt): saevit(Prä)(Akt) īnfēlīx(Adj)(N) amor(N).
+(136) [MEDEA:] zornig tat|ich: wütet unglückliche Liebe.
+(137) [MEDEA:] Quid(Pr)(A) tamen(Pt) Iāsōn(N) potuit(Per)(Akt), aliēnī(Adj)(G) arbitrī(G)
+(137) [MEDEA:] was jedoch Jason vermochte, eines|Fremden Richters
+(138) [MEDEA:] jūrisque(G)(Kon) factus(Per)(Pas)(N)? dēbuit(Per)(Akt) ferrō(D) obvium(Adj)(A)
+(138) [MEDEA:] und|des|Rechts geworden? musste mit|Eisen entgegen
+(139) [MEDEA:] offerre(Inf)(Akt) pectus(A): melius(Adv)(Kmp), ā(ij) melius(Adv)(Kmp), dolor(V)
+(139) [MEDEA:] darbieten Brust: besser, ach besser, Schmerz
+(140) [MEDEA:] furiōse(Adv), loquere(Prä)(Imv)(Akt). sī(Kon) potest(Prä)(Akt), vīvat(Prä)(Knj)(Akt) meus(Adj)(N),
+(140) [MEDEA:] rasend, sprich. wenn kann, lebe mein,
+(141) [MEDEA:] ut(Kon) fuit(Per)(Akt), Iāsōn(N); sī(Kon) minus(Adv), vīvat(Prä)(Knj)(Akt) tamen(Pt)
+(141) [MEDEA:] wie war, Jason; wenn weniger, lebe dennoch
+(142) [MEDEA:] memorque(Adj)(N)(Kon) nostrī(Pr)(G) mūnerī(D) parcat(Prä)(Knj)(Akt) meō(Adj)(D).
+(142) [MEDEA:] eingedenk|und unserer dem|Dienst möge|schonen meinem.
+(143) [MEDEA:] Culpa(N) est(Prä)(Akt) Creontis(G) tōta(Adj)(N), quī(Pr)(N) scēptrō(N)(Abl) impotēns(Adj)(N)
+(143) [MEDEA:] Schuld ist des|Kreons ganz, der mit|dem|Zepter maßlos
+(144) [MEDEA:] conjugia(A) solvit(Prä)(Akt) quīque(Pr)(N)(Kon) genetrīcem(A) abstrahit(Prä)(Akt)
+(144) [MEDEA:] Ehen löst der|auch die|Mutter weg|zieht
+(145) [MEDEA:] gnātīs(D) et(Kon) artō(Adj)(Abl) pignore(N)(Abl) astrictam(Per)(Pas)(A) fidem(A)
+(145) [MEDEA:] den|Kindern und engem mit|dem|Band fest|gebundene Treue
+(146) [MEDEA:] dirimit(Prä)(Akt): petātur(Prä)(Knj)(Pas), sōlus(Adj)(N) hic(Pr)(N) poenās(A) luat(Prä)(Knj)(Akt),
+(146) [MEDEA:] trennt: werde|gefordert, allein dieser Strafen möge|büßen,
+(147) [MEDEA:] quās(Pr)(A) dēbet(Prä)(Akt). altō(Adj)(Abl) cinere(N)(Abl) cumulābō(Fu1)(Akt) domum(A);
+(147) [MEDEA:] die er|schuldet. mit|hoher Asche werde|aufhäufen das|Haus;
+(148) [MEDEA:] vidēbit(Fu1)(Akt) ātrum(Adj)(A) verticem(A) flammīs(N)(Abl) agī(Prä)(Inf)(Pas)
+(148) [MEDEA:] wird|sehen schwarzen Gipfel von|Flammen geführt|zu|werden
+(149) [MEDEA:] Malēa(N) longās(Adj)(A) nāvibus(D) flectēns(Prä)(Akt)(N) morās(A).
+(149) [MEDEA:] Malea lange den|Schiffen biegend Verzögerungen.
+(150) [NUTRIX:] Silē(Prä)(Imv)(Akt), obsecrō(Prä)(Akt), questūsque(A)(Kon) sēcrētō(Adj)(Abl) abditōs(Per)(Pas)(A)
+(150) [NUTRIX:] schweige, ich|beschwöre, Klagen|und im|Geheimen verborgene
+(151) [NUTRIX:] mandā(Prä)(Imv)(Akt) dolōrī(D). gravia(Adj)(A) quisquis(Pr)(N) vulnera(A)
+(151) [NUTRIX:] übertrage dem|Schmerz. schwere wer|auch|immer Wunden
+(152) [NUTRIX:] patiente(Prä)(Akt)(Abl) et(Kon) aequō(Adj)(Abl) mūtus(Adj)(N) animō(N)(Abl) pertulit(Per)(Akt),
+(152) [NUTRIX:] mit|geduldigem und gleichmütigem stumm Sinn hat|ertragen,
+(153) [NUTRIX:] referre(Prä)(Inf)(Akt) potuit(Per)(Akt): īra(N) quae(Pr)(N) tegitur(Prä)(Pas) nocet(Prä)(Akt);
+(153) [NUTRIX:] zu|berichten konnte: Zorn die wird|verdeckt schadet;
+(154) [NUTRIX:] professa(Per)(Pas)(N) perdunt(Prä)(Akt) odia(N) vindictae(G) locum(A).
+(154) [NUTRIX:] offen|gezeigte nehmen|weg Feindschaften der|Rache Platz.
+(155) [MEDEA:] Levis(Adj)(N) est(Prä)(Akt) dolor(N), quī(Pr)(N) capere(Prä)(Inf)(Akt) cōnsilium(A) potest(Prä)(Akt)
+(155) [MEDEA:] leicht ist der|Schmerz, der zu|fassen Plan kann
+(156) [MEDEA:] et(Kon) clepere(Prä)(Inf)(Akt) sēsē(Pr)(A): magna(Adj)(N) nōn(Pt) latitant(Prä)(Akt) mala(N).
+(156) [MEDEA:] und sich|weg|stehlen sich|selbst: große nicht verbergen|sich Übel.
+(157) [MEDEA:] libet(Prä)(Akt) īre(Prä)(Inf)(Akt) contrā(Prp). Siste(Prä)(Imv)(Akt) furiālem(Adj)(A) impetum(A),
+(157) [MEDEA:] es|gefällt zu|gehen gegen. halte|an rasenden Ansturm,
+(158) [NUTRIX:] alumna(V): vix(Adv) tē(Pr)(A) tacita(Adj)(Abl) dēfendit(Prä)(Akt) quiēs(N).
+(158) [NUTRIX:] Zögling: kaum dich mit|stiller schützt Ruhe.
+(159) [MEDEA:] Fortūna(N) fortēs(Adj)(A) metuit(Prä)(Akt), ignāvōs(Adj)(A) premit(Prä)(Akt).
+(159) [MEDEA:] Glück|Schicksal Tapfere fürchtet, Feige drückt.
+(160) [NUTRIX:] Tunc(Adv) est(Prä)(Akt) probanda(Fu1)(Pas)(N)(Gdv), sī(Kon) locum(A) virtūs(N) habet(Prä)(Akt).
+(160) [NUTRIX:] dann ist zu|prüfende, wenn den|Platz die|Tugend hat.
+(161) [MEDEA:] Numquam(Adv) potest(Prä)(Akt) nōn(Pt) esse(Prä)(Inf)(Akt) virtūtī(D) locus(N).
+(161) [MEDEA:] niemals kann nicht sein der|Tugend Platz.
+(162) [NUTRIX:] Spēs(N) nūlla(Adj)(N) rēbus(N)(Abl) mōnstrat(Prä)(Akt) adflīctīs(Per)(Pas)(Abl) viam(A).
+(162) [NUTRIX:] Hoffnung keine bei|den|Dingen zeigt bedrängten Weg.
+(163) [MEDEA:] Quī(Pr)(N) nīl(Pr)(A) potest(Prä)(Akt) spērāre(Prä)(Inf)(Akt), dēspēret(Prä)(Knj)(Akt) nihil(Pr)(A).
+(163) [MEDEA:] wer nichts kann zu|hoffen, möge|verzweifeln nichts.
+(164) [NUTRIX:] Abiēre(Per)(Akt) Colchī(N), conjugis(G) nūlla(Adj)(N) est(Prä)(Akt) fidēs(N)
+(164) [NUTRIX:] gingen|fort Kolcher, des|Ehegatten keine ist Treue
+(165) [NUTRIX:] nihilque(Pr)(N)(Kon) superest(Prä)(Akt) opibus(N)(Abl) ē(Prp) tantīs(Adj)(Abl) tibī(Pr)(D).
+(165) [NUTRIX:] und|nichts bleibt|übrig von|den|Mitteln aus so|großen dir.
+(166) [MEDEA:] Mēdēa(N) superest(Prä)(Akt): hīc(Adv) mare(A) et(Kon) terrās(A) vidēs(Prä)(Akt)
+(166) [MEDEA:] Medea bleibt|übrig: hier Meer und Länder siehst|du
+(167) [MEDEA:] ferrumque(A)(Kon) et(Kon) ignēs(A) et(Kon) deōs(A) et(Kon) fulmina(A).
+(167) [MEDEA:] Eisen|und und Feuer und Götter und Blitze.
+(168) [NUTRIX:] Rēx(N) est(Prä)(Akt) timendus(Fu1)(Pas)(N)(Gdv). Rēx(N) meus(Adj)(N) fuerat(Plq)(Akt) pater(N).
+(168) [NUTRIX:] der|König ist zu|fürchten. König mein war|gewesen Vater.
+(169) [NUTRIX:] Nōn(Pt) metuis(Prä)(Akt) arma(A)? Sint(Prä)(Knj)(Akt) licet(Pt) terrā(N)(Abl) ēdita(Per)(Pas)(N).
+(169) [NUTRIX:] nicht fürchtest|du Waffen? mögen|sein auch|wenn aus|der|Erde hervor|gebracht.
+(170) [NUTRIX:] Moriēre(Fu1)(Akt). Cupiō(Prä)(Akt). Profuge(Prä)(Imv)(Akt). Paenituit(Per)(Akt) fugae(G).
+(170) [NUTRIX:] du|wirst|sterben. ich|wünsche. flieh. es|hat|gereut der|Flucht.
+(171) [NUTRIX:] Mēdēa(V). Fīam(Fu1)(Akt). Māter(N) es(Prä)(Akt). Cui(Pr)(D) sim(Prä)(Knj)(Akt) vidē(Prä)(Imv)(Akt).
+(171) [NUTRIX:] Medea. ich|werde. Mutter bist. wem ich|sei sieh.
+(172) [NUTRIX:] Profugere(Prä)(Inf)(Akt) dubitās(Prä)(Akt)? Fugiam(Prä)(Knj)(Pas), at(Kon) ulcīscar(Prä)(Knj)(Pas) prius(Adv).
+(172) [NUTRIX:] zu|fliehen zögerst|du? ich|möge|fliehen, aber ich|möge|rächen zuvor.
+(173) [NUTRIX:] Vindex(N) sequētur(Fu1)(Pas). Forsan(Adv) inveniam(Prä)(Knj)(Akt) morās(A).
+(173) [NUTRIX:] Rächer wird|folgen. vielleicht möge|ich|finden Verzögerungen.
+(174) [NUTRIX:] Compesce(Prä)(Imv)(Akt) verba(A), parce(Prä)(Imv)(Akt) jam(Adv), dēmēns(Adj)(V), minīs(D)
+(174) [NUTRIX:] zügle Worte, verschone schon, Wahnsinnige, den|Drohungen
+(175) [NUTRIX:] animōsque(A)(Kon) minue(Prä)(Imv)(Akt): temporī(D) aptārī(Prä)(Inf)(Pas) decet(Prä)(Akt).
+(175) [NUTRIX:] Gemüter|und mindere: der|Zeit angepasst|zu|werden ziemt.
+(176) [MEDEA:] Fortūna(N) opēs(A) auferre(Prä)(Inf)(Akt), nōn(Pt) animum(A) potest(Prä)(Akt).
+(176) [MEDEA:] das|Glück|Schicksal Reichtümer weg|nehmen, nicht den|Geist kann.
+(177) [MEDEA:] Sed(Kon) cujus(Pr)(G) ictū(N)(Abl) rēgius(Adj)(N) cardō(N) strepit(Prä)(Akt)?
+(177) [MEDEA:] aber wessen durch|den|Schlag königliche Türangel knarrt|??
+(178) [MEDEA:] ipse(Pr)(N) est(Prä)(Akt) Pelasgō(Adj)(Abl) tumidus(Adj)(N) imperiō(N)(Abl) Creō(N).
+(178) [MEDEA:] er|selbst ist pelasgischer durch|Herrschaft hochmütig Kreon.
+(179) [CREO:] Mēdēa(V), Colchī(Adj)(G) noxium(Adj)(N) Aeētae(G) genus(N),
+(179) [CREO:] Medea, des|Kolchis schädliches des|Aeetes Geschlecht,
+(180) [CREO:] nōndum(Adv) meīs(Adj)(Abl) exportat(Prä)(Akt) ē(Prp) rēgnīs(Abl) pedem(A)?
+(180) [CREO:] noch|nicht meinen hinaus|trägt aus den|Reichen Fuß?
+(181) [CREO:] mōlītur(Prä)(Akt) aliquid(Pr)(A): nōta(Adj)(N) fraus(N), nōta(Adj)(N) est(Prä)(Akt) manus(N).
+(181) [CREO:] betreibt etwas: bekannt List, bekannt ist Hand.
+(182) [CREO:] cui(Pr)(D) parcet(Fu1)(Akt) illa(Pr)(N) quemve(Pr)(A)(Kon) sēcūrum(Adj)(A) sinet(Fu1)(Akt)?
+(182) [CREO:] wem wird|schonen jene wen|und sicher lässt|sie?
+(183) [CREO:] abolēre(Prä)(Inf)(Akt) properē(Adv) pessimam(Adj)(A)(Sup) ferrō(N)(Abl) luem(A)
+(183) [CREO:] abschaffen eilends schlimmste mit|Eisen Seuche
+(184) [CREO:] equidem(Pt) parābam(Imp)(Akt): precibus(N)(Abl) ēvīcit(Per)(Akt) gener(N).
+(184) [CREO:] freilich bereitete|ich: durch|Bitten hat|überwunden Schwiegersohn.
+(185) [CREO:] concessa(Per)(Pas)(N) vīta(N) est(Prä)(Akt), līberet(Prä)(Knj)(Akt) fīnēs(A) metū(N)(Abl)
+(185) [CREO:] gewährt Leben ist, befreie|es|möge Grenzen von|Furcht
+(186) [CREO:] abeatque(Prä)(Knj)(Akt)(Kon) tūta(Adj)(N). fert(Prä)(Akt) gradum(A) contrā(Prp) ferōx(Adj)(N)
+(186) [CREO:] gehe|fort|und sicher. trägt Schritt gegen wild
+(187) [CREO:] mināxque(Adj)(N)(Kon) nostrōs(Adj)(A) propius(Adv)(Kmp) affātūs(A) petit(Prä)(Akt).
+(187) [CREO:] drohend|und unsere näher Anreden sucht.
+(188) [CREO:] Arcēte(Prä)(Imv)(Akt), famulī(V), tāctū(N)(Abl) et(Kon) accessū(N)(Abl) procul(Adv),
+(188) [CREO:] haltet|ab, Diener, durch|Berührung und durch|Zugang fern,
+(189) [CREO:] jubēte(Prä)(Imv)(Akt) sileat(Prä)(Knj)(Akt). rēgium(Adj)(A) imperium(A) patī(Prä)(Inf)(Akt)
+(189) [CREO:] befiehlt lasst|schweigen. königliche Herrschaft ertragen
+(190) [CREO:] aliquando(Adv) discat(Prä)(Knj)(Akt). Vāde(Prä)(Imv)(Akt) vēlōcī(Adj)(Abl) viā(N)(Abl)
+(190) [CREO:] irgendwann möge|lernen. geh auf|schnellem Weg
+(191) [CREO:] mōnstrumque(A)(Kon) saevum(Adj)(A) horribile(Adj)(A) jamdūdum(Adv) āvehe(Prä)(Imv)(Akt).
+(191) [CREO:] Ungeheuer|und grimmiges schreckliches längst fort|führe.
+(192) [MEDEA:] Quod(Pr)(N) crīmen(N) aut(Kon) quae(Pr)(N) culpa(N) multātur(Prä)(Pas) fugā(N)(Abl)?
+(192) [MEDEA:] welches Verbrechen oder welche Schuld wird|gebüßt durch|die|Flucht?
+(193) [CREO:] Quae(Pr)(N) causa(N) pellat(Prä)(Knj)(Akt), innocēns(Adj)(N) mulier(N) rogat(Prä)(Akt).
+(193) [CREO:] welche Grund vertreibe|möge, unschuldig Frau fragt.
+(194) [MEDEA:] Sī(Kon) jūdicās(Prä)(Akt), cognōsce(Prä)(Imv)(Akt), sī(Kon) rēgnās(Prä)(Akt), jubē(Prä)(Imv)(Akt).
+(194) [MEDEA:] wenn richtest|du, erkenne, wenn herrschst|du, befiehl.
+(195) [CREO:] Aequum(Adj)(A) atque(Kon) inīquum(Adj)(A) rēgis(G) imperium(A) ferās(Prä)(Knj)(Akt).
+(195) [CREO:] Gerechtes und Ungerechtes des|Königs Herrschaft sollst|tragen.
+(196) [MEDEA:] Inīqua(Adj)(N) numquam(Adv) rēgna(N) perpetuō(Adv) manent(Prä)(Akt).
+(196) [MEDEA:] ungerechte niemals Reiche fortwährend bleiben.
+(197) [CREO:] Ī(Prä)(Imv)(Akt), querere(Prä)(Inf)(Akt) Colchīs(N)(Abl). Redeo(Prä)(Akt): quī(Pr)(N) āvēxit(Per)(Akt), ferat(Prä)(Knj)(Akt).
+(197) [CREO:] geh, zu|beklagen in|Kolchis. ich|kehre|zurück: wer weg|geführt|hat, trage|er.
+(198) [CREO:] Vōx(N) cōnstitūtō(Per)(Pas)(Abl) sēra(Adj)(N) dēcrētō(N)(Abl) venit(Prä)(Akt).
+(198) [CREO:] Stimme bei|beschlossenem zu|spät Beschluss kommt.
+(199) [MEDEA:] Quī(Pr)(N) statuit(Prä)(Akt) aliquid(Pr)(A) parte(N)(Abl) inaudītā(Per)(Pas)(Abl) alterā(Adj)(Abl),
+(199) [MEDEA:] wer festsetzt etwas mit|Teil ungehört anderem,
+(200) [MEDEA:] aequum(Adj)(A) licet(Pt) statuerit(Per)(Knj)(Akt), haud(Pt) aequus(Adj)(N) fuit(Per)(Akt).
+(200) [MEDEA:] gerecht obwohl habe|beschlossen, nicht gerecht war.
+(201) [CREO:] Audītus(Per)(Pas)(N) ā(Prp) tē(Pr)(Abl) Pelia(N) supplicium(A) tulit(Per)(Akt)?
+(201) [CREO:] angehört|worden von dir Pelias Strafe hat|getragen?
+(202) [CREO:] sed(Kon) fāre(Prä)(Imv)(Akt), causae(D) dētur(Prä)(Knj)(Pas) ēgregiae(Adj)(D) locus(N).
+(202) [CREO:] aber sprich, der|Sache werde|gegeben hervorragenden Platz.
+(203) [MEDEA:] Difficile(Adj)(N) quam(Adv) sit(Prä)(Knj)(Akt) animum(A) ab(Prp) īrā(N)(Abl) flectere(Prä)(Inf)(Akt)
+(203) [MEDEA:] schwierig wie ist den|Sinn von der|Wut ab|biegen|zu
+(204) [MEDEA:] jam(Adv) concitātum(Per)(Pas)(A) quamque(Pr)(N)(Kon) rēgāle(Adj)(N) hoc(Pr)(N) putet(Prä)(Knj)(Akt)
+(204) [MEDEA:] schon auf|gewühlt und|welcher königlich dies meint|möge
+(205) [MEDEA:] scēptrīs(N)(Abl) superbās(Adj)(A) quisquis(Pr)(N) admōvit(Per)(Akt) manūs(A),
+(205) [MEDEA:] mit|Zeptern hochmütige wer angelegt|hat Hände,
+(206) [MEDEA:] quā(Pr)(Abl) coepit(Per)(Akt) īre(Prä)(Inf)(Akt), rēgiā(Adj)(Abl) didicī(Per)(Akt) meā(Adj)(Abl).
+(206) [MEDEA:] auf|welchem begann er|gehen, im|königlichen habe|ich|gelernt meinem.
+(207) [MEDEA:] quamvīs(Kon) enim(Pt) sim(Prä)(Knj)(Akt) clāde(N)(Abl) miserandā(Per)(Pas)(Abl) obruta(Per)(Pas)(N),
+(207) [MEDEA:] obwohl nämlich ich|sei von|Unglück bemitleidenswerter über|häuft,
+(208) [MEDEA:] expulsa(Per)(Pas)(N) supplex(Adj)(N) sōla(Adj)(N) dēserta(Per)(Pas)(N), undique(Adv)
+(208) [MEDEA:] vertrieben flehende allein verlassen, allseits
+(209) [MEDEA:] afflīcta(Per)(Pas)(N), quondam(Adv) nōbilī(Adj)(Abl) fulsī(Per)(Akt) patre(N)(Abl)
+(209) [MEDEA:] niedergeschlagen, einst edlen glänzte|ich mit|dem|Vater
+(210) [MEDEA:] avōque(N)(Abl)(Kon) clārum(Adj)(A) Sōle(N)(Abl) dēdūxī(Per)(Akt) genus(A).
+(210) [MEDEA:] mit|dem|Großvater|und berühmtes von|der|Sonne leitete|ich|her Geschlecht.
+(211) [MEDEA:] quodcumque(Pr)(A) placidīs(Adj)(Abl) flexibus(N)(Abl) Phāsis(N) rigat(Prä)(Akt)
+(211) [MEDEA:] was|auch|immer sanften mit|Biegungen Phasis bewässert
+(212) [MEDEA:] Pontusque(N)(Kon) quidquid(Pr)(A) Scythicus(Adj)(N) ā(Prp) tergō(N)(Abl) videt(Prä)(Akt),
+(212) [MEDEA:] Pontos|und was|auch|immer skythische von dem|Rücken sieht,
+(213) [MEDEA:] palūstribus(Adj)(Abl) quā(Adv) maria(N) dulcēscunt(Prä)(Akt) aquīs(N)(Abl),
+(213) [MEDEA:] sumpfigen wo Meere werden|süß durch|Wasser,
+(214) [MEDEA:] armāta(Per)(Pas)(N) peltīs(N)(Abl) quidquid(Pr)(A) exterret(Prä)(Akt) cohors(N)
+(214) [MEDEA:] bewaffnete mit|kleinen|Schilden was|auch|immer schreckt Kohorte
+(215) [MEDEA:] inclūsa(Per)(Pas)(N) rīpīs(N)(Abl) vidua(Adj)(N) Thermōdontiīs(Adj)(Abl),
+(215) [MEDEA:] eingeschlossene von|Ufern männer|lose des|Thermodon,
+(216) [MEDEA:] hoc(Pr)(A) omne(Adj)(A) noster(Adj)(N) genitor(N) imperiō(N)(Abl) regit(Prä)(Akt).
+(216) [MEDEA:] dies alles unser Vater mit|Herrschaft herrscht.
+(217) [MEDEA:] generōsa(Adj)(N), fēlīx(Adj)(N), decore(N)(Abl) rēgālī(Adj)(Abl) potēns(Adj)(N)
+(217) [MEDEA:] edle, glückliche, mit|Zier königlicher mächtige
+(218) [MEDEA:] fulsī(Per)(Akt): petēbant(Imp)(Akt) tunc(Adv) meōs(Adj)(A) thalamōs(A) procī(N),
+(218) [MEDEA:] glänzte|ich: erstrebten damals meine Brautgemächer Freier,
+(219) [MEDEA:] quī(Pr)(N) nunc(Adv) petuntur(Prä)(Pas). rapida(Adj)(N) fortūna(N) ac(Kon) levis(Adj)(N)
+(219) [MEDEA:] die jetzt werden|begehrt. schnelle Glück|Schicksal und leichte
+(220) [MEDEA:] praecepsque(Adj)(N)(Kon) rēgnō(N)(Abl) ēripuit(Per)(Akt), exiliō(D) dedit(Per)(Akt).
+(220) [MEDEA:] kopfüber|und aus|dem|Reich entriss, dem|Exil gab.
+(221) [MEDEA:] cōnfīde(Prä)(Imv)(Akt) rēgnīs(D), cum(Kon) levis(Adj)(N) magnās(Adj)(A) opēs(A)
+(221) [MEDEA:] vertraue den|Reichen, wenn leichte große Mittel|Kräfte
+(222) [MEDEA:] hūc(Adv) ferat(Prä)(Knj)(Akt) et(Kon) illūc(Adv) cāsus(N): hoc(Pr)(N) rēgēs(N) habent(Prä)(Akt)
+(222) [MEDEA:] hierhin trage|möge und dorthin Zufall|Fall: dies Könige haben
+(223) [MEDEA:] magnificum(Adj)(N) et(Kon) ingēns(Adj)(N), nūlla(Adj)(N) quod(Pr)(N) rapiat(Prä)(Knj)(Akt) diēs(N):
+(223) [MEDEA:] großartig und gewaltig, kein was raube|möge Tag:
+(224) [MEDEA:] prōdesse(Prä)(Inf)(Akt) miserīs(Adj)(D), supplicēs(Adj)(A) fīdō(Adj)(Abl) lare(N)(Abl)
+(224) [MEDEA:] nützen den|Elenden, Flehende treuem Heim
+(225) [MEDEA:] prōtegere(Prä)(Inf)(Akt). Sōlum(Adv) hoc(Pr)(A) Colchicō(Adj)(Abl) rēgnō(N)(Abl) extulī(Per)(Akt),
+(225) [MEDEA:] beschützen. nur dies kolchischem Königreich trug|ich|heraus,
+(226) [MEDEA:] decus(A) illud(Pr)(A) ingēns(Adj)(A) Graeciae(G) et(Kon) flōrem(A) inclitum(Adj)(A),
+(226) [MEDEA:] Ruhm jenes gewaltigen der|Griechen und Blüte berühmte,
+(227) [MEDEA:] praesidia(A) Achīvae(Adj)(G) gentis(G) et(Kon) prōlem(A) deum(G)
+(227) [MEDEA:] Stützen der|achäischen Volks und Nachkommenschaft der|Götter
+(228) [MEDEA:] servāsse(Per)(Inf)(Akt) mēmet(Pr)(A). mūnus(N) est(Prä)(Akt) Orpheus(N) meum(Adj)(N),
+(228) [MEDEA:] gerettet|zu|haben mich|selbst. Geschenk ist Orpheus mein,
+(229) [MEDEA:] quī(Pr)(N) saxa(A) cantū(N)(Abl) mulcet(Prä)(Akt) et(Kon) silvās(A) trahit(Prä)(Akt),
+(229) [MEDEA:] der Steine durch|Gesang besänftigt und Wälder zieht,
+(230) [MEDEA:] geminumque(Adj)(N)(Kon) mūnus(N) Castor(N) et(Kon) Pollūx(N) meum(Adj)(N) est(Prä)(Akt)
+(230) [MEDEA:] doppeltes|und Geschenk Kastor und Pollux mein ist
+(231) [MEDEA:] satīque(Per)(Pas)(N)(Kon) Boreā(N)(Abl) quīque(Pr)(N)(Kon) trāns(Prp) Pontum(A) quoque(Pt)
+(231) [MEDEA:] Gezeugte|und vom|Boreas und|die|welche über den|Pontus auch
+(232) [MEDEA:] summōta(Per)(Pas)(Abl) Lynceus(N) lūmine(N)(Abl) immissō(Per)(Pas)(Abl) videt(Prä)(Akt),
+(232) [MEDEA:] weg|geschoben Lynkeus mit|Licht hinein|gelassenem sieht,
+(233) [MEDEA:] omnēsque(Adj)(N)(Kon) Minyae(N): nam(Pt) ducum(G) taceō(Prä)(Akt) ducem(A),
+(233) [MEDEA:] alle|und Minyer: denn der|Führer verschweige|ich Führer,
+(234) [MEDEA:] prō(Prp) quō(Pr)(Abl) nihil(Pr)(N) dēbētur(Prä)(Pas): hunc(Pr)(A) nūllī(Adj)(D) imputō(Prä)(Akt);
+(234) [MEDEA:] für wen nichts wird|geschuldet: diesen keinem rechne|ich|an;
+(235) [MEDEA:] vōbīs(Pr)(D) revēxī(Per)(Akt) cēterōs(Adj)(A), ūnum(Adj)(A) mihī(Pr)(D).
+(235) [MEDEA:] euch brachte|ich|zurück die|anderen, einen mir.
+(236) [MEDEA:] Incesse(Prä)(Imv)(Akt) nunc(Adv) et(Kon) cūncta(Adj)(A) flāgitia(A) ingere(Prä)(Imv)(Akt):
+(236) [MEDEA:] greife|an jetzt und alle Schändlichkeiten häufe|auf:
+(237) [MEDEA:] fatēbor(Fu1)(Akt); obicī(Prä)(Inf)(Pas) crīmen(N) hoc(Pr)(N) sōlum(Adv) potest(Prä)(Akt),
+(237) [MEDEA:] ich|werde|gestehen; vorgeworfen|zu|werden Anklage dieses nur kann,
+(238) [MEDEA:] Argō(N)(Abl) reversa(Per)(Pas)(N). virginī(D) placeat(Prä)(Knj)(Akt) pudor(N)
+(238) [MEDEA:] mit|der|Argo zurück|gekehrt. dem|Mädchen gefalle|möge Scham
+(239) [MEDEA:] paterque(N)(Kon) placeat(Prä)(Knj)(Akt): tōta(Adj)(N) cum(Prp) ducibus(N)(Abl) ruet(Fu1)(Akt)
+(239) [MEDEA:] Vater|und gefalle|möge: ganz mit den|Führern wird|stürzen
+(240) [MEDEA:] Pelasga(Adj)(N) tellūs(N), hīc(Adv) tuus(Adj)(N) prīmum(Adv) gener(N)
+(240) [MEDEA:] pelasgische Erde, hier dein zuerst Schwiegersohn
+(241) [MEDEA:] taurī(G) ferōcis(Adj)(G) ōre(N)(Abl) flagrantī(Prä)(Akt)(Abl) occidet(Fu1)(Akt).
+(241) [MEDEA:] des|Stieres wilden im|Mund brennenden wird|fallen.
+(242) [MEDEA:] [fortūna(N) causam(A) quae(Pr)(N) volet(Fu1)(Akt) nostram(Adj)(A) premat(Prä)(Knj)(Akt),
+(242) [MEDEA:] [[das|Glück|Schicksal den|Grund der|welche wird|wollen unseren bedrücke|möge,
+(243) [MEDEA:] nōn(Pt) paenitet(Prä)(Akt) servāsse(Per)(Inf)(Akt) tot(Adj) rēgum(G) decus(A)]
+(243) [MEDEA:] nicht reut|es gerettet|zu|haben so|vieler der|Könige Ruhm]]
+(244) [MEDEA:] quodcumque(Pr)(N) culpā(N)(Abl) praemium(A) ex(Prp) omnī(Adj)(Abl) tulī(Per)(Akt),
+(244) [MEDEA:] was|auch|immer durch|Schuld Lohn aus jedem trug|ich,
+(245) [MEDEA:] hoc(Pr)(N) est(Prä)(Akt) penes(Prp) tē(Pr)(A). sī(Kon) placet(Prä)(Akt), damnā(Prä)(Imv)(Akt) ream(A);
+(245) [MEDEA:] dies ist bei dir. wenn gefällt, verurteile die|Angeklagte;
+(246) [MEDEA:] sed(Kon) redde(Prä)(Imv)(Akt) crīmen(A). sum(Prä)(Akt) nocēns(Adj)(N), fateor(Prä)(Akt), Creō(V):
+(246) [MEDEA:] aber gib|zurück die|Anschuldigung. ich|bin schuldige, bekenne|ich, Kreon:
+(247) [MEDEA:] tālem(Adj)(A) sciēbās(Imp)(Akt) esse(Prä)(Inf)(Akt), cum(Kon) genua(A) attigī(Per)(Akt)
+(247) [MEDEA:] eine|solche wusstest|du zu|sein, als die|Knie berührte|ich
+(248) [MEDEA:] fidemque(A)(Kon) supplex(Adj)(N) praesidis(G) dextrā(N)(Abl) petī(Prä)(Inf)(Pas);
+(248) [MEDEA:] Vertrauen|und flehend des|Beschützers mit|der|rechten|Hand erbeten|zu|werden;
+(249) [MEDEA:] terrā(N)(Abl) hāc(Pr)(Abl) miseriīs(N)(Abl) angulum(A) et(Kon) sēdem(A) rogō(Prä)(Akt)
+(249) [MEDEA:] auf|dem|Land diesem für|Nöte Winkel und Sitz bitte|ich
+(250) [MEDEA:] latebrāsque(A)(Kon) vīlēs(Adj)(A): urbe(N)(Abl) sī(Kon) pellī(Prä)(Inf)(Pas) placet(Prä)(Akt),
+(250) [MEDEA:] Schlupfwinkel|und geringe: aus|der|Stadt wenn verstoßen|zu|werden gefällt,
+(251) [MEDEA:] dētur(Prä)(Knj)(Pas) remōtus(Adj)(N) aliquis(Pr)(N) in(Prp) rēgnīs(A) locus(N).
+(251) [MEDEA:] werde|gegeben entlegener irgendein in den|Reichen Ort.
+(252) [CREO:] Nōn(Pt) esse(Prä)(Inf)(Akt) mē(Pr)(A) quī(Pr)(N) scēptra(A) violentus(Adj)(N) geram(Prä)(Knj)(Akt)
+(252) [CREO:] nicht zu|sein mich der Zepter gewalttätig trage|möge
+(253) [CREO:] nec(Kon) quī(Pr)(N) superbō(Adj)(Abl) miseriās(A) calcem(A) pede(N)(Abl),
+(253) [CREO:] noch der hochmütigem Elenden Ferse mit|dem|Fuß,
+(254) [CREO:] testātus(Per)(Pas)(N) equidem(Pt) videor(Prä)(Pas) haud(Pt) clārē(Adv) parum(Adv)
+(254) [CREO:] bezeugt|habend freilich scheine|ich nicht deutlich zu|wenig
+(255) [CREO:] generum(A) exulem(A) legendō(Prä)(Ger)(Abl) et(Kon) adflīctum(Per)(Pas)(A) et(Kon) gravī(Adj)(Abl)
+(255) [CREO:] den|Schwiegersohn verbannte durch|Wählen und nieder|gedrückt und schwerem
+(256) [CREO:] terrōre(N)(Abl) pavidum(Adj)(A), quippe(Pt) quem(Pr)(A) poenae(N) expetit(Prä)(Akt)
+(256) [CREO:] durch|Schrecken furchtsamen, freilich den Strafen verfolgen
+(257) [CREO:] lētōque(A)(Kon) Acastus(N) rēgna(A) Thessalica(Adj)(A) optinēns(Prä)(Akt)(N).
+(257) [CREO:] den|Tod|und Acastus Reiche thessalische innehabend.
+(258) [CREO:] seniō(N)(Abl) trementem(Prä)(Akt)(A) dēbilī(Adj)(Abl) atque(Kon) aevō(N)(Abl) gravem(Adj)(A)
+(258) [CREO:] durch|Alter zitternden schwachem und durch|Lebenszeit schweren
+(259) [CREO:] patrem(A) perēmptum(Per)(Pas)(A) queritur(Prä)(Pas) et(Kon) caesī(Per)(Pas)(G) senis(G)
+(259) [CREO:] den|Vater getötet beklagt|er und des|erschlagenen Greises
+(260) [CREO:] discissa(Per)(Pas)(A) membra(A), cum(Kon) dolō(N)(Abl) captae(Per)(Pas)(N) tuō(Adj)(Abl)
+(260) [CREO:] zerrissene Glieder, als durch|List gefangene deiner
+(261) [CREO:] piae(Adj)(N) sorōrēs(N) impium(Adj)(A) audērent(Imp)(Knj)(Akt) nefās(A).
+(261) [CREO:] fromme Schwestern frevelhaftes wagten|sie Unrecht.
+(262) [CREO:] potest(Prä)(Akt) Iāsōn(N), sī(Kon) tuam(Adj)(A) causam(A) āmovēs(Prä)(Akt),
+(262) [CREO:] vermag Jason, wenn deine Sache entfernst|du,
+(263) [CREO:] suam(Adj)(A) tuērī(Prä)(Inf)(Pas): nūllus(Adj)(N) innocuum(Adj)(A) cruor(N)
+(263) [CREO:] seine zu|schützen: kein Unschuldigen Blut
+(264) [CREO:] contāmināvit(Per)(Akt), āfuit(Per)(Akt) ferrō(N)(Abl) manus(N)
+(264) [CREO:] befleckte, fehlte dem|Schwert die|Hand
+(265) [CREO:] proculque(Adv)(Kon) vestrō(Adj)(Abl) pūrus(Adj)(N) ā(Prp) coetū(N)(Abl) stetit(Per)(Akt).
+(265) [CREO:] fern|und eurem rein von der|Versammlung stand.
+(266) [CREO:] Tū(Pr)(N), tū(Pr)(N) malōrum(Adj)(G) māchinātrīx(N) facinorum(G),
+(266) [CREO:] du, du der|Übel Anstifterin der|Taten,
+(267) [CREO:] cui(Pr)(D) fēminae(G) nēquitia(N), ad(Prp) audendum(Prä)(Ger)(A) omnia(Pr)(A)
+(267) [CREO:] der der|Frau Nichtsnutzigkeit, zum Wagen alles
+(268) [CREO:] rōbur(N) virīle(Adj)(N) est(Prä)(Akt), nūlla(Adj)(N) fāmae(G) memoria(N),
+(268) [CREO:] Kraft männliche ist, kein des|Rufes Gedächtnis,
+(269) [CREO:] ēgredere(Prä)(Imv)(Pas), pūrgā(Prä)(Imv)(Akt) rēgna(A), lētālēs(Adj)(A) simul(Adv)
+(269) [CREO:] geh|hinaus, säubere die|Reiche, tödliche zugleich
+(270) [CREO:] tēcum(Pr)(Abl)(Prp) aufer(Prä)(Imv)(Akt) herbās(A), līberā(Prä)(Imv)(Akt) cīvēs(A) metū(N)(Abl),
+(270) [CREO:] mit|dir fort|trage Kräuter, befreie Bürger von|Furcht,
+(271) [CREO:] alia(Adj)(Abl) sedēns(Prä)(Akt)(N) tellūre(N)(Abl) sollicitā(Adj)(A) deōs(A).
+(271) [CREO:] auf|anderer sitzend Erde beunruhigten Götter.
+(272) [MEDEA:] Profugere(Prä)(Inf)(Akt) cōgis(Prä)(Akt)? redde(Prä)(Imv)(Akt) fugientī(Prä)(Akt)(D) ratem(A)
+(272) [MEDEA:] zu|fliehen zwingst|du? gib|zurück der|Fliehenden Schiff
+(273) [MEDEA:] vel(Kon) redde(Prä)(Imv)(Akt) comitem(A); fugere(Prä)(Inf)(Akt) cūr(Adv) sōlam(Adj)(A) jubēs(Prä)(Akt)?
+(273) [MEDEA:] oder gib|zurück Begleiter; zu|fliehen warum allein befiehlst|du?
+(274) [MEDEA:] nōn(Pt) sōla(Adj)(N) vēnī(Per)(Akt). bella(A) sī(Kon) metuis(Prä)(Akt) patī(Inf)(Pas),
+(274) [MEDEA:] nicht allein kam|ich. Kriege wenn du|fürchtest zu|erleiden,
+(275) [MEDEA:] utrumque(Adj)(A) rēgnō(N)(Abl) pelle(Prä)(Imv)(Akt). cūr(Adv) sontēs(Adj)(A) duōs(Adj)(A)
+(275) [MEDEA:] beide aus|dem|Reich treibe|aus. warum Schuldige zwei
+(276) [MEDEA:] distinguis(Prä)(Akt)? illī(Pr)(D) Pelia(N), nōn(Pt) nōbīs(Pr)(D) jacet(Prä)(Akt);
+(276) [MEDEA:] unterscheidest|du|?? jenem Pelias, nicht für|uns liegt;
+(277) [MEDEA:] fugam(A), rapīnās(A) adice(Prä)(Imv)(Akt), dēsertum(Per)(Pas)(A) patrem(A)
+(277) [MEDEA:] Flucht, Raubzüge füge|hinzu, verlassenen Vater
+(278) [MEDEA:] lacerumque(Adj)(A)(Kon) frātrem(A), quidquid(Pr)(A) etiamnunc(Adv) novās(Adj)(A)
+(278) [MEDEA:] zerfetzten|und Bruder, was|auch|immer auch|jetzt neue
+(279) [MEDEA:] docet(Prä)(Akt) marītus(N) conjugēs(A), nōn(Pt) est(Prä)(Akt) meum(Adj)(N):
+(279) [MEDEA:] lehrt Ehemann Ehefrauen, nicht ist mein:
+(280) [MEDEA:] totiēns(Adv) nocēns(Prä)(Akt)(N) sum(Prä)(Akt) facta(Per)(Pas)(N), sed(Kon) numquam(Adv) mihī(Pr)(D).
+(280) [MEDEA:] so|oft schuldig|seiend bin gemacht, aber niemals mir.
+(281) [CREO:] Jam(Adv) exīsse(Per)(Inf)(Akt) decuit(Per)(Akt). quid(Pr)(A) seris(Prä)(Akt) fandō(Ger)(Abl) morās(A)?
+(281) [CREO:] schon hinausgegangen|zu|sein es|hat|geziemt. was säst|du durch|Sprechen Verzögerungen?
+(282) [MEDEA:] Supplex(Adj)(N) recēdēns(Prä)(Akt)(N) illud(Pr)(A) extrēmum(Adj)(A) precor(Prä)(Akt),
+(282) [MEDEA:] flehende weg|gehend jenes letzte bitte|ich,
+(283) [MEDEA:] nē(Kon) culpa(N) nātōs(A) mātris(G) īnsontēs(Adj)(A) trahat(Prä)(Knj)(Akt).
+(283) [MEDEA:] dass|nicht Schuld Söhne der|Mutter unschuldige ziehe|mit|sich.
+(284) [CREO:] Vāde(Prä)(Imv)(Akt): hōs(Pr)(A) paternō(Adj)(Abl) ut(Kon) genitor(N) excipiam(Prä)(Knj)(Akt) sinū(N)(Abl).
+(284) [CREO:] geh: diese mit|väterlichem damit Vater ich|aufnehme Schoß.
+(285) [MEDEA:] Per(Prp) ego(Pr)(N) auspicātōs(Per)(Pas)(A) rēgiī(Adj)(G) thalamī(G) torōs(A),
+(285) [MEDEA:] bei ich günstig|geweihten des|königlichen Brautgemachs Betten,
+(286) [MEDEA:] per(Prp) spēs(A) futūrās(Adj)(A) perque(Prp)(Kon) rēgnōrum(G) statūs(A),
+(286) [MEDEA:] durch Hoffnungen künftige und|durch der|Reiche Zustände,
+(287) [MEDEA:] Fortūna(N) variā(Adj)(Abl) dubia(Adj)(Abl) quōs(Pr)(A) agitat(Prä)(Akt) vice(N)(Abl),
+(287) [MEDEA:] Fortuna mit|wechselnder zweifelhafter welche bewegt durch|Wechsel,
+(288) [MEDEA:] precor(Prä)(Akt), brevem(Adj)(A) largīre(Prä)(Imv)(Pas) fugientī(Prä)(Akt)(D) moram(A),
+(288) [MEDEA:] ich|bitte, kurzen gewähre der|Fliehenden Aufschub,
+(289) [MEDEA:] dum(Kon) extrēma(Adj)(A) nātīs(D) māter(N) īnfīgō(Prä)(Akt) ōscula(A),
+(289) [MEDEA:] solange letzte den|Söhnen Mutter ein|präge Küsse,
+(290) [MEDEA:] fortasse(Adv) moriēns(Prä)(Akt)(N). Fraudibus(N)(Abl) tempus(A) petis(Prä)(Akt).
+(290) [MEDEA:] vielleicht sterbend. durch|Arglisten Zeit ersuchst|du.
+(291) [MEDEA:] Quae(Pr)(N) fraus(N) timērī(Inf)(Pas) tempore(N)(Abl) exiguō(Adj)(Abl) potest(Prä)(Akt)?
+(291) [MEDEA:] welche List gefürchtet|zu|werden in|der|Zeit geringen kann?
+(292) [CREO:] Nūllum(Adj)(N) ad(Prp) nocendum(Ger)(A) tempus(N) angustum(Adj)(N) est(Prä)(Akt) malīs(Adj)(D).
+(292) [CREO:] keine zu Schaden|zufügen Zeit eng ist den|Bösen.
+(293) [MEDEA:] Parumne(Pt) miserae(Adj)(D) temporis(G) lacrimīs(N)(Abl) negās(Prä)(Akt)?
+(293) [MEDEA:] zu|wenig|? der|Elenden an|Zeit für|Tränen verwehrst|du?
+(294) [CREO:] Etsī(Kon) repugnat(Prä)(Akt) precibus(N)(Abl) īnfīxus(Per)(Pas)(N) timor(N),
+(294) [CREO:] auch|wenn widersetzt|sich den|Bitten eingesenkte Furcht,
+(295) [CREO:] ūnus(Adj)(N) parandō(Ger)(D) dabitur(Fu1)(Pas) exiliō(D) diēs(N).
+(295) [CREO:] einziger zum|Vorbereiten wird|gegeben|werden dem|Exil Tag.
+(296) [MEDEA:] Nimis(Adv) est(Prä)(Akt), recīdās(Prä)(Knj)(Akt) aliquid(Pr)(A) ex(Prp) istō(Pr)(Abl) licet(Pt);
+(296) [MEDEA:] zu|sehr ist, du|mögest|abschneiden irgendetwas aus jenem ist|erlaubt;
+(297) [MEDEA:] et(Kon) ipsa(Pr)(N) properō(Prä)(Akt). Capite(N)(Abl) supplicium(A) luēs(Fu1)(Akt),
+(297) [MEDEA:] und selbst beeile|ich|mich. mit|dem|Kopf Strafe wirst|du|büßen,
+(298) [CREO:] clārum(Adj)(A) priusquam(Kon) Phoebus(N) attollat(Prä)(Knj)(Akt) diem(A)
+(298) [CREO:] hellen bevor Phoebus empor|hebe Tag
+(299) [CREO:] nisi(Kon) cēdis(Prä)(Akt) Isthmō(N)(Abl). Sacra(N) mē(Pr)(A) thalamī(G) vocant(Prä)(Akt),
+(299) [CREO:] wenn|nicht weichst|du vom|Isthmus. heilige mich des|Brautgemachs rufen,
+(300) [CREO:] vocat(Prä)(Akt) precārī(Inf)(Pas) fēstus(Adj)(N) Hymenaeō(D) diēs(N).
+(300) [CREO:] ruft zu|bitten festlicher dem|Hymenaios Tag.
+=== Chor (Anapäste) ===
+(301) [CHORUS:] Audāx(Adj)(N) nimium(Adv) quī(Pr)(N) freta(A) prīmus(Adj)(N)
+(301) [CHORUS:] kühn allzu der Meerengen zuerst
+(302) [CHORUS:] rate(N)(Abl) tam(Adv) fragilī(Adj)(Abl) perfida(Adj)(Abl) rūpit(Per)(Akt)
+(302) [CHORUS:] mit|dem|Schiff so zerbrechlichen treulosen brach
+(303) [CHORUS:] terrāsque(A)(Kon) suās(Adj)(A) posterga(A) vidēns(Prä)(Akt)(N)
+(303) [CHORUS:] Länder|und seine hinter|den|Rücken sehend
+(304) [CHORUS:] animam(A) levibus(Adj)(D) crēdidit(Per)(Akt) aurīs(D),
+(304) [CHORUS:] Seele den|leichten hat|anvertraut Winden,
+(305) [CHORUS:] dubiōque(Adj)(Abl)(Kon) secāns(Prä)(Akt)(N) aequora(A) cursū(N)(Abl)
+(305) [CHORUS:] unsicheren|und schneidend Meere mit|Kurs
+(306) [CHORUS:] potuit(Per)(Akt) tenuī(Adj)(Abl) fīdere(Inf)(Akt) lignō(N)(Abl)
+(306) [CHORUS:] vermochte dem|dünnen zu|vertrauen Holz
+(307) [CHORUS:] inter(Prp) vītae(G) mortisque(G)(Kon) vicēs(A)
+(307) [CHORUS:] zwischen des|Lebens und|des|Todes Wechseln
+(308) [CHORUS:] nimium(Adv) gracilī(Adj)(Abl) līmite(N)(Abl) ductō(Per)(Pas)(Abl).
+(308) [CHORUS:] allzu schmalem Grenzweg gezogen.
+(309) [CHORUS:] Nōndum(Adv) quisquam(Pr)(N) sīdera(A) nōrat(Plq)(Akt),
+(309) [CHORUS:] noch|nicht irgendjemand Sterne hatte|gekannt,
+(310) [CHORUS:] stēllīsque(N)(Abl)(Kon), quibus(Pr)(Abl) pingitur(Prä)(Pas) aethēr(N),
+(310) [CHORUS:] Sternen|und, mit|welchen wird|bemalt Äther,
+(311) [CHORUS:] nōn(Pt) erat(Imp)(Akt) ūsus(N), nōndum(Adv) pluviās(A)
+(311) [CHORUS:] nicht war Gebrauch, noch|nicht Regen
+(312) [CHORUS:] Hyadas(A) poterat(Imp)(Akt) vītāre(Inf)(Akt) ratis(N),
+(312) [CHORUS:] Hyaden konnte meiden Schiff,
+(313) [CHORUS:] nōn(Pt) Ōleniae(Adj)(G) lūmina(A) caprae(G),
+(313) [CHORUS:] nicht der|Olenischen Lichter Ziege,
+(314) [CHORUS:] nec(Kon) quae(Pr)(N) sequitur(Prä)(Pas) flectitque(Prä)(Akt)(Kon) senex(N)
+(314) [CHORUS:] noch welche folgt und|biegt Greis
+(315) [CHORUS:] Attica(Adj)(A) tardus(Adj)(N) plaustra(A) Boōtēs(N),
+(315) [CHORUS:] attische langsam Wagen Bootes,
+(316) [CHORUS:] nōndum(Adv) Boreās(N), nōndum(Adv) Zephyrus(N)
+(316) [CHORUS:] noch|nicht Boreas, noch|nicht Zephyrus
+(317) [CHORUS:] nōmen(A) habēbant(Imp)(Akt).
+(317) [CHORUS:] Namen hatten.
+(318) [CHORUS:] Ausus(Per)(Akt)(N) Tīphys(N) pandere(Inf)(Akt) vastō(Adj)(Abl)
+(318) [CHORUS:] gewagt|habend Tiphys zu|spannen weitem
+(319) [CHORUS:] carbasa(A) pontō(N)(Abl)
+(319) [CHORUS:] Segel auf|dem|Meer
+(320) [CHORUS:] lēgēsque(A)(Kon) novās(Adj)(A) scrībere(Inf)(Akt) ventīs(D):
+(320) [CHORUS:] Gesetze|und neue zu|schreiben den|Winden:
+(321) [CHORUS:] nunc(Adv) līna(A) sinū(N)(Abl) tendere(Inf)(Akt) tōtō(Adj)(Abl),
+(321) [CHORUS:] nun Leinen mit|Bauch zu|spannen ganzem,
+(322) [CHORUS:] nunc(Adv) prōlātō(Per)(Pas)(Abl) pede(N)(Abl) trānsversōs(Adj)(A)
+(322) [CHORUS:] nun vorgestrecktem Fuß querlaufende
+(323) [CHORUS:] captāre(Inf)(Akt) notōs(Adj)(A), nunc(Adv) antemnās(A)
+(323) [CHORUS:] zu|fangen bekannte, nun Rahen
+(324) [CHORUS:] mediō(Adj)(Abl) tūtās(Adj)(A) pōnere(Inf)(Akt) mālō(N)(Abl),
+(324) [CHORUS:] im|mittleren sichere zu|setzen Mast,
+(325) [CHORUS:] nunc(Adv) in(Prp) summō(Adj)(Abl) religāre(Inf)(Akt) locō(N)(Abl),
+(325) [CHORUS:] nun in obersten zu|festbinden Ort,
+(326) [CHORUS:] cum(Kon) jam(Adv) tōtōs(Adj)(A) avidus(Adj)(N) nimium(Adv)
+(326) [CHORUS:] wenn schon ganze begierig allzu
+(327) [CHORUS:] nāvita(N) flātūs(A) optat(Prä)(Akt) et(Kon) altō(Adj)(Abl)
+(327) [CHORUS:] Seemann Winde wünscht und auf|dem|Tiefen
+(328) [CHORUS:] rubicunda(Adj)(N) tremunt(Prä)(Akt) sīpara(N) vēlō(N)(Abl).
+(328) [CHORUS:] rötliche zittern Segel|tücher am|Segel.
+(329) [CHORUS:] Candida(Adj)(A) nostrī(Pr)(G) saecula(A) patrēs(N)
+(329) [CHORUS:] helle unserer Zeiten Väter
+(330) [CHORUS:] vīdēre(Per)(Akt) procul(Adv) fraude(N)(Abl) remōtā(Per)(Pas)(Abl).
+(330) [CHORUS:] sahen fern Betrug entfernt.
+(331) [CHORUS:] sua(Adj)(A) quisque(Pr)(N) piger(Adj)(N) lītora(A) tangēns(Prä)(Akt)(N)
+(331) [CHORUS:] eigene je|der träge Küsten berührend
+(332) [CHORUS:] patriōque(Adj)(Abl)(Kon) senex(N) factus(Per)(Pas)(N) in(Prp) arvō(N)(Abl),
+(332) [CHORUS:] heimischem|und Greis geworden in Acker,
+(333) [CHORUS:] parvō(N)(Abl) dīves(Adj)(N) nisi(Kon) quās(Pr)(A) tulerat(Plq)(Akt)
+(333) [CHORUS:] mit|Wenig reich außer welche hatte|getragen
+(334) [CHORUS:] nātāle(Adj)(N) solum(N) nōn(Pt) nōrat(Plq)(Akt) opēs(A).
+(334) [CHORUS:] gebürtige Erde nicht hatte|gekannt Reichtümer.
+(335) [CHORUS:] Bene(Adv) dissaeptī(Per)(Pas)(G) foedera(N) mundī(G)
+(335) [CHORUS:] gut abgetrennten Bündnisse der|Welt
+(336) [CHORUS:] trāxit(Per)(Akt) in(Prp) ūnum(Adj)(A) Thessala(Adj)(N) pīnus(N)
+(336) [CHORUS:] zog in eines thessalische Kiefer
+(337) [CHORUS:] jussitque(Per)(Akt)(Kon) patī(Inf)(Pas) verbera(A) pontum(A)
+(337) [CHORUS:] hieß|und zu|erleiden Schläge das|Meer
+(338) [CHORUS:] partemque(A)(Kon) metūs(G) fierī(Inf)(Pas) nostrī(Pr)(G)
+(338) [CHORUS:] Teil|und der|Furcht zu|werden unserer
+(339) [CHORUS:] mare(N) sēpositum(Per)(Pas)(N).
+(339) [CHORUS:] Meer abgesondert.
+(340) [CHORUS:] Dedit(Per)(Akt) illa(Pr)(N) gravēs(Adj)(A) improba(Adj)(N) poenās(A)
+(340) [CHORUS:] gab jene schwere frevelhafte Strafen
+(341) [CHORUS:] per(Prp) tam(Adv) longōs(Adj)(A) ducta(Per)(Pas)(N) timōrēs(A),
+(341) [CHORUS:] durch so lange geführt Ängste,
+(342) [CHORUS:] cum(Kon) duo(Adj)(N) montēs(N), claustra(N) profundī(G),
+(342) [CHORUS:] als zwei Berge, Schranken des|Tiefen,
+(343) [CHORUS:] hinc(Adv) atque(Kon) illinc(Adv) subitō(Adj)(Abl) impulsū(N)(Abl)
+(343) [CHORUS:] hier und dort plötzlichem Stoß
+(344) [CHORUS:] velut(Kon) aetheriō(Adj)(Abl) gemerent(Imp)(Knj)(Akt) sonitū(N)(Abl),
+(344) [CHORUS:] wie ätherischem würden|stöhnen Klang,
+(345) [CHORUS:] spargeret(Imp)(Knj)(Akt) arcēs(A) nūbēsque(A)(Kon) ipsās(Adj)(A)
+(345) [CHORUS:] würde|zerstreuen Burgen|spitzen Wolken|und selbst
+(346) [CHORUS:] mare(N) dēprēnsum(Per)(Pas)(N).
+(346) [CHORUS:] Meer ergriffen.
+(347) [CHORUS:] Palluit(Per)(Akt) audāx(Adj)(N) Tīphys(N) et(Kon) omnēs(Pr)(N)
+(347) [CHORUS:] erbleichte kühn Tiphys und alle
+(348) [CHORUS:] lābente(Prä)(Akt)(Abl) manū(N)(Abl) mīsit(Per)(Akt) habēnās(A),
+(348) [CHORUS:] gleitender Hand ließ Zügel,
+(349) [CHORUS:] Orpheus(N) tacuit(Per)(Akt) torpente(Prä)(Akt)(Abl) lyrā(N)(Abl)
+(349) [CHORUS:] Orpheus schwieg erstarrender Leier
+(350) [CHORUS:] Quid(Pr)(A) cum(Kon) Siculī(Adj)(G) virgo(N) Pelōrī(G),
+(350) [CHORUS:] was als des|sizilischen Jungfrau des|Pelorus,
+(351) [CHORUS:] rabidōs(Adj)(A) uterō(N)(Abl) succīncta(Per)(Pas)(N) canēs(A),
+(351) [CHORUS:] tollwütige am|Leib gegürtet Hunde,
+(352) [CHORUS:] omnīs(Adj)(A) pariter(Adv) solvit(Prä)(Akt) hiātūs(A)?
+(352) [CHORUS:] alle gleichzeitig löst Rachen?
+(353) [CHORUS:] quis(Pr)(N) nōn(Pt) tōtōs(Adj)(A) horruit(Per)(Akt) artūs(A)
+(353) [CHORUS:] wer nicht ganze erschauerte Glieder
+(354) [CHORUS:] totiēns(Adv) ūnō(Adj)(Abl) lātrante(Prä)(Akt)(Abl) malō(N)(Abl)?
+(354) [CHORUS:] so|oft mit|einem bellend Übel?
+(355) [CHORUS:] Quid(Pr)(A) cum(Kon) Ausonium(Adj)(A) dīrae(Adj)(N) pestēs(N)
+(355) [CHORUS:] was als ausonisches schreckliche Plagen
+(356) [CHORUS:] vōce(N)(Abl) canōrā(Adj)(Abl) mare(A) mulcērent(Imp)(Knj)(Akt),
+(356) [CHORUS:] mit|Stimme klangreicher das|Meer besänftigten,
+(357) [CHORUS:] cum(Kon) Pīeriā(Adj)(Abl) resonāns(Prä)(Akt)(N) citharā(N)(Abl)
+(357) [CHORUS:] wenn mit|pierischer tönend Leier
+(358) [CHORUS:] Thrācius(Adj)(N) Orpheus(N)
+(358) [CHORUS:] thrakischer Orpheus
+(359) [CHORUS:] solitam(Per)(Pas)(A) cantū(N)(Abl) retinēre(Inf)(Akt) ratēs(A)
+(359) [CHORUS:] gewohnte durch|Gesang zurück|zuhalten Schiffe
+(360) [CHORUS:] paene(Adv) coēgit(Per)(Akt) Sīrēna(A) sequī(Inf)(Akt)?
+(360) [CHORUS:] fast zwang die|Sirene folgen?
+(361) [CHORUS:] Quod(Pr)(N) fuit(Per)(Akt) hujus(Pr)(G) pretium(N) cursūs(G)?
+(361) [CHORUS:] was war dieses Preis des|Laufs?
+(362) [CHORUS:] aurea(Adj)(N) pellis(N)
+(362) [CHORUS:] goldenes Fell
+(363) [CHORUS:] majusque(Adj)(N)(Kmp)(Kon) marī(N)(Abl) Mēdēa(N) malum(N),
+(363) [CHORUS:] größeres|und als|dem|Meer Medea Übel,
+(364) [CHORUS:] mercēs(N) prīmā(Adj)(Abl) digna(Adj)(N) carīnā(N)(Abl).
+(364) [CHORUS:] Lohn der|ersten würdig des|Schiffes.
+(365) [CHORUS:] patitur(Prä)(Pas) lēgēs(A):
+(365) [CHORUS:] er|leidet Gesetze:
+(366) [CHORUS:] nōn(Pt) Palladiā(Adj)(Abl) compācta(Per)(Pas)(N) manū(N)(Abl)
+(366) [CHORUS:] nicht palladischer zusammen|gefügt durch|die|Hand
+(367) [CHORUS:] rēgum(G) referēns(Prä)(Akt)(N) inclita(Adj)(N) rēmōs(A)
+(367) [CHORUS:] der|Könige zurück|tragend berühmte Ruder
+(368) [CHORUS:] quaeritur(Prä)(Pas) Argō(N);
+(368) [CHORUS:] wird|gesucht Argo;
+(369) [CHORUS:] quaelibet(Pr)(N) altum(A) cumba(N) pererrat(Prä)(Akt).
+(369) [CHORUS:] irgendeine die|Tiefe Barke durch|wandert.
+(370) [CHORUS:] mūrōs(A) terrā(N)(Abl) posuēre(Per)(Akt) novā(Adj)(Abl),
+(370) [CHORUS:] Mauern auf|Erde setzten neuer,
+(371) [CHORUS:] nīl(Pr)(N) quā(Pr)(Abl) fuerat(Plq)(Akt) sēde(N)(Abl) relīquit(Per)(Akt)
+(371) [CHORUS:] nichts wo gewesen|war am|Sitz ließ|zurück
+(372) [CHORUS:] pervius(Adj)(N) orbis(N):
+(372) [CHORUS:] durch|gängige Welt:
+(373) [CHORUS:] Indus(N) gelidum(Adj)(A) pōtat(Prä)(Akt) Araxēn(A),
+(373) [CHORUS:] der|Inder kalten trinkt den|Araxes,
+(374) [CHORUS:] Albin(A) Persae(N) Rhēnumque(A)(Kon) bibunt(Prä)(Akt);
+(374) [CHORUS:] die|Elbe Perser den|Rhein|und trinken;
+(375) [CHORUS:] venient(Fu1)(Akt) annīs(N)(Abl) saecula(N) sērīs(Adj)(Abl),
+(375) [CHORUS:] werden|kommen in|Jahren Zeitalter späten,
+(376) [CHORUS:] quibus(Pr)(Abl) Ōceanus(N) vincula(A) rērum(G)
+(376) [CHORUS:] in|welchen Ozean Fesseln der|Dinge
+(377) [CHORUS:] laxet(Prä)(Knj)(Akt) et(Kon) ingēns(Adj)(N) pateat(Prä)(Knj)(Akt) tellūs(N)
+(377) [CHORUS:] möge|lösen und gewaltige möge|offen|stehen Erde
+(378) [CHORUS:] Tēthȳsque(N)(Kon) novōs(Adj)(A) dētegat(Prä)(Knj)(Akt) orbēs(A)
+(378) [CHORUS:] Tethys|und neue möge|enthüllen Welt|Kreise
+(379) [CHORUS:] nec(Kon) sit(Prä)(Knj)(Akt) terrīs(D) ultima(Adj)(N) Thūlē(N).
+(379) [CHORUS:] noch möge|sein für|die|Länder letzte Thule.
+=== Akt 2 ===
+(380) [NUTRIX:] Alumna(V), celerem(Adj)(A) quō(Adv) rapis(Prä)(Akt) tēctīs(N)(Abl) pedem(A)?
+(380) [NUTRIX:] Zögling, schnellen wohin reißt|du zu|den|Dächern Schritt?
+(381) [NUTRIX:] resiste(Prä)(Imv)(Akt) et(Kon) īrās(A) comprime(Prä)(Imv)(Akt) ac(Kon) retinē(Prä)(Imv)(Akt) impetum(A).
+(381) [NUTRIX:] halte|ein und Zorne drücke|nieder und halte|zurück Angriff.
+(382) [NUTRIX:] Incerta(Adj)(N) quālis(Pr)(N) entheōs(Adj)(A) gressūs(A) tulit(Per)(Akt)
+(382) [NUTRIX:] unsicher wie|beschaffen gott|be|seelte Schritte trug
+(383) [NUTRIX:] cum(Kon) jam(Adv) receptō(Per)(Pas)(Abl) maenas(N) īnsānit(Prä)(Akt) deō(N)(Abl)
+(383) [NUTRIX:] wenn schon empfangenen Mänade rast mit|dem|Gott
+(384) [NUTRIX:] Pindī(G) nivālis(Adj)(G) vertice(N)(Abl) aut(Kon) Nȳsae(G) jugīs(N)(Abl),
+(384) [NUTRIX:] des|Pindos schneeigen auf|dem|Gipfel oder der|Nysa auf|den|Bergrücken,
+(385) [NUTRIX:] tālis(Adj)(N) recursat(Prä)(Akt) hūc(Adv) et(Kon) hūc(Adv) mōtū(N)(Abl) efferō(Adj)(Abl),
+(385) [NUTRIX:] solche läuft|zurück hierher und dorthin mit|Bewegung wilder,
+(386) [NUTRIX:] furōris(G) ōre(N)(Abl) signa(A) lymphātī(Adj)(G) gerēns(Prä)(Akt)(N).
+(386) [NUTRIX:] des|Wahnsinns im|Antlitz Zeichen des|Rasenden tragend.
+(387) [NUTRIX:] flammāta(Per)(Pas)(N) faciēs(N), spīritum(A) ex(Prp) altō(Adj)(Abl) citat(Prä)(Akt),
+(387) [NUTRIX:] entzündet Gesicht, Atem aus der|Tiefe ruft,
+(388) [NUTRIX:] prōclāmat(Prä)(Akt), oculōs(A) ūberī(Adj)(Abl) flētū(N)(Abl) rigat(Prä)(Akt),
+(388) [NUTRIX:] ruft|laut, Augen reichlichem Weinen benetzt,
+(389) [NUTRIX:] renīdet(Prä)(Akt): omnis(Adj)(A) specimen(A) affectūs(G) capit(Prä)(Akt).
+(389) [NUTRIX:] lächelt: jedes Zeichen des|Gefühls faßt.
+(390) [NUTRIX:] haeret(Prä)(Akt): minātur(Prä)(Akt) aestuat(Prä)(Akt) queritur(Prä)(Pas) gemit(Prä)(Akt).
+(390) [NUTRIX:] hängt|fest: droht wallt klagt stöhnt.
+(391) [NUTRIX:] quō(Adv) pondus(N) animī(G) verget(Prä)(Akt)? ubi(Adv) pōnet(Fu1)(Akt) minās(A)?
+(391) [NUTRIX:] wohin Gewicht des|Geistes neigt|sich? wo wird|setzen Drohungen?
+(392) [NUTRIX:] ubi(Adv) sē(Pr)(A) iste(Adj)(N) flūctus(N) franget(Fu1)(Akt)? exundat(Prä)(Akt) furor(N).
+(392) [NUTRIX:] wo sich dieser Woge wird|brechen? über|schwappt Raserei.
+(393) [NUTRIX:] nōn(Pt) facile(Adv) sēcum(Pr)(Abl)(Prp) versat(Prä)(Akt) aut(Kon) medium(Adj)(A) scelus(A);
+(393) [NUTRIX:] nicht leicht mit|sich wälzt oder mittleres Verbrechen;
+(394) [NUTRIX:] sē(Pr)(A) vincet(Fu1)(Akt): īrae(G) nōvimus(Per)(Akt) veteris(Adj)(G) notās(A).
+(394) [NUTRIX:] sich wird|besiegen: des|Zornes kennen|wir alten Zeichen.
+(395) [NUTRIX:] magnum(Adj)(N) aliquid(Pr)(N) īnstat(Prä)(Akt), efferum(Adj)(N) immāne(Adj)(N) impium(Adj)(N):
+(395) [NUTRIX:] großes etwas steht|bevor, wildes ungeheures gott|loses:
+(396) [NUTRIX:] vultum(A) Furōris(G) cerno(Prä)(Akt). dī(N) fallant(Prä)(Knj)(Akt) metum(A)!
+(396) [NUTRIX:] Antlitz des|Wahns erkenne|ich. Götter mögen|täuschen Furcht!
+(397) [MEDEA:] Sī(Kon) quaeris(Prä)(Akt) odiō(N)(Abl), misera(V), quem(Pr)(A) statuās(Prä)(Knj)(Akt) modum(A),
+(397) [MEDEA:] wenn du|suchst mit|Haß, Elende, welchen setzen|mögest Maß,
+(398) [MEDEA:] imitāre(Prä)(Imv)(Pas) amōrem(A). rēgiās(Adj)(A) egone(Pr)(N) ut(Kon) facēs(A)
+(398) [MEDEA:] ahme|nach Liebe. königliche ich|etwa dass Fackeln
+(399) [MEDEA:] inulta(Adj)(N) patiar(Prä)(Knj)(Pas)? sēgnis(Adj)(N) hic(Pr)(N) ībit(Fu1)(Akt) diēs(N),
+(399) [MEDEA:] ungerächt werde|erdulden|möge? träge dieser wird|gehen Tag,
+(400) [MEDEA:] tantō(Adj)(Abl) petītus(Per)(Pas)(N) ambitū(N)(Abl), tantō(Adj)(Abl) datus(Per)(Pas)(N)?
+(400) [MEDEA:] so|großen gesucht Umlauf|Werbung, so|großen gegeben?
+(401) [MEDEA:] dum(Kon) terra(N) caelum(A) media(Adj)(Abl) lībrātum(Per)(Pas)(A) feret(Fu1)(Akt)
+(401) [MEDEA:] während Erde den|Himmel in|der|Mitte aus|balanciert tragen|wird
+(402) [MEDEA:] nitidusque(Adj)(N)(Kon) certās(Adj)(A) mundus(N) ēvolvet(Fu1)(Akt) vicēs(A)
+(402) [MEDEA:] glänzende|und feste Welt wird|entwickeln Wechsel
+(403) [MEDEA:] numerusque(N)(Kon) harēnīs(D) dērit(Fu1)(Akt) et(Kon) sōlem(A) diēs(N),
+(403) [MEDEA:] Zahl|und den|Sanden wird|fehlen und die|Sonne Tag,
+(404) [MEDEA:] noctem(A) sequentur(Fu1)(Pas) astra(N), dum(Kon) siccās(Adj)(A) polus(N)
+(404) [MEDEA:] Nacht werden|folgen Sterne, während trockenen Pol
+(405) [MEDEA:] versābit(Fu1)(Akt) Arctōs(A), flūmina(N) in(Prp) pontum(A) cadent(Fu1)(Akt),
+(405) [MEDEA:] wird|wenden Bären, Flüsse in das|Meer werden|fallen,
+(406) [MEDEA:] numquam(Adv) meus(Adj)(N) cessābit(Fu1)(Akt) in(Prp) poenās(A) furor(N)
+(406) [MEDEA:] niemals mein wird|aufhören zu den|Strafen Raserei
+(407) [MEDEA:] crēscetque(Fu1)(Akt)(Kon) semper(Adv): quae(Pr)(N) ferārum(G) immānitās(N),
+(407) [MEDEA:] wird|wachsen|und immer: welch der|Tiere Ungeheuerlichkeit,
+(408) [MEDEA:] quae(Pr)(N) Scylla(N), quae(Pr)(N) Charybdis(N) Ausonium(Adj)(A) mare(A)
+(408) [MEDEA:] welche Skylla, welche Charybdis ausonisches Meer
+(409) [MEDEA:] Siculumque(Adj)(A)(Kon) sorbēns(Prä)(Akt)(N) quaeve(Pr)(N)(Kon) anhēlantem(Prä)(Akt)(A) premēns(Prä)(Akt)(N)
+(409) [MEDEA:] sizilisches|und verschlingend oder|welche keuchenden drückend
+(410) [MEDEA:] Tītāna(A) tantīs(Adj)(Abl) Aetna(N) fervēbit(Fu1)(Akt) minīs(N)(Abl)?
+(410) [MEDEA:] den|Titan mit|so|großen Ätna wird|sieden Drohungen?
+(411) [MEDEA:] nōn(Pt) rapidus(Adj)(N) amnis(N), nōn(Pt) procellōsum(Adj)(N) mare(N)
+(411) [MEDEA:] nicht reißender Strom, nicht stürmisches Meer
+(412) [MEDEA:] pontusve(N)(Kon) cōrō(N)(Abl) saevus(Adj)(N) aut(Kon) vīs(N) ignium(G)
+(412) [MEDEA:] oder|Meer durch|den|Cōrus grimmig oder Kraft des|Feuers
+(413) [MEDEA:] adjūta(Per)(Pas)(N) flātū(N)(Abl) possit(Prä)(Knj)(Akt) inhibēre(Inf)(Akt) impetum(A)
+(413) [MEDEA:] unterstützt durch|Hauch könne hemmen Ansturm
+(414) [MEDEA:] īrāsque(A)(Kon) nostrās(Adj)(A): sternam(Fu1)(Akt) et(Kon) ēvertam(Fu1)(Akt) omnia(A).
+(414) [MEDEA:] Zorne|und unsere: werde|niedermachen und werde|umstürzen alles.
+(415) [MEDEA:] Timuit(Per)(Akt) Creontem(A) ac(Kon) bella(A) Thessalicī(Adj)(G) ducis(G)?
+(415) [MEDEA:] fürchtete Kreon und Kriege des|thessalischen Führers?
+(416) [MEDEA:] amor(N) timēre(Inf)(Akt) nēminem(Pr)(A) vērus(Adj)(N) potest(Prä)(Akt).
+(416) [MEDEA:] Liebe fürchten niemanden wahre kann.
+(417) [MEDEA:] sed(Kon) cesserit(Per)(Knj)(Akt) coāctus(Per)(Pas)(N) et(Kon) dederit(Per)(Knj)(Akt) manūs(A):
+(417) [MEDEA:] aber sei|gewichen gezwungener und habe|gegeben Hände:
+(418) [MEDEA:] adīre(Inf)(Akt) certē(Adv) et(Kon) conjugem(A) extrēmō(Adj)(Abl) alloquī(Inf)(Akt)
+(418) [MEDEA:] hin|zugehen sicher und Ehegatten mit|letztem ansprechen
+(419) [MEDEA:] sermōne(N)(Abl) potuit(Per)(Akt), hoc(Pr)(A) quoque(Adv) extimuit(Per)(Akt) ferōx(Adj)(N);
+(419) [MEDEA:] Wort vermocht, dieses auch erschrak|heftig wild;
+(420) [MEDEA:] laxāre(Inf)(Akt) certē(Adv) tempus(A) immītis(Adj)(G) fugae(G)
+(420) [MEDEA:] lösen|lockern sicher Zeit der|harten Flucht
+(421) [MEDEA:] generō(D) licēbat(Imp)(Akt), līberīs(D) ūnus(Adj)(N) diēs(N)
+(421) [MEDEA:] dem|Schwiegersohn war|erlaubt, den|Kindern ein Tag
+(422) [MEDEA:] datus(Per)(Pas)(N) est(Prä)(Akt) duōbus(Adj)(D). nōn(Pt) queror(Prä)(Pas) tempus(A) breve(Adj)(A):
+(422) [MEDEA:] gegeben ist den|Zweien. nicht ich|beklage die|Zeit kurze:
+(423) [MEDEA:] multum(Adv) patēbit(Fu1)(Akt). faciet(Fu1)(Akt) hic(Pr)(N) faciet(Fu1)(Akt) diēs(N)
+(423) [MEDEA:] viel wird|offenstehen. wird|machen dieser wird|machen Tag
+(424) [MEDEA:] quod(Pr)(A) nūllus(Adj)(N) umquam(Adv) taceat(Prä)(Knj)(Akt): invādam(Fu1)(Akt) deōs(A)
+(424) [MEDEA:] was niemand jemals schweige|möge: ich|werde|anfallen die|Götter
+(425) [MEDEA:] et(Kon) cūncta(Adj)(A) quatiam(Fu1)(Akt). Recipe(Prä)(Imv)(Akt) turbātum(Per)(Pas)(A) malīs(Adj)(Abl),
+(425) [MEDEA:] und alles werde|ich|erschüttern. nimm|zurück aufgewühlt durch|die|Übel,
+(426) [NUTRIX:] era(V), pectus(A), animum(A) mītigā(Prä)(Imv)(Akt). Sōla(Adj)(N) est(Prä)(Akt) quiēs(N),
+(426) [NUTRIX:] Herrin, Brust, Sinn mildere. allein ist Ruhe,
+(427) [MEDEA:] mēcum(Pr)(Abl)(Prp) ruīnā(N)(Abl) cūncta(Adj)(A) sī(Kon) videō(Prä)(Akt) obruta(Per)(Pas)(A):
+(427) [MEDEA:] mit|mir durch|den|Sturz alles wenn ich|sehe bedeckt:
+(428) [MEDEA:] mēcum(Pr)(Abl)(Prp) omnia(Adj)(N) abeant(Prä)(Knj)(Akt). trahere(Prä)(Inf)(Akt), cum(Kon) pereās(Prä)(Knj)(Akt), libet(Prä)(Akt).
+(428) [MEDEA:] mit|mir alles mögen|weggehen. zu|ziehen, wenn du|zugrunde|gehst|mögest, es|gefällt.
+(429) [NUTRIX:] Quam(Adv) multa(Adj)(N) sint(Prä)(Knj)(Akt) timenda(Fu1)(Pas)(N)(Gdv), sī(Kon) perstās(Prä)(Akt), vidē(Prä)(Imv)(Akt):
+(429) [NUTRIX:] wie viele seien|mögen zu|fürchtende, wenn du|verharrst, sieh:
+(430) [NUTRIX:] nēmō(Pr)(N) potentēs(Adj)(A) aggredī(Prä)(Inf)(Pas) tūtus(Adj)(N) potest(Prä)(Akt).
+(430) [NUTRIX:] niemand die|Mächtigen angreifen sicher kann.
+(431) [IASON:] Ō(ij) dūra(Adj)(A) fāta(A) semper(Adv) et(Kon) sortem(A) asperam(Adj)(A),
+(431) [IASON:] o harte Schicksale immer und das|Los raue,
+(432) [IASON:] cum(Kon) saevit(Prä)(Akt) et(Kon) cum(Kon) parcit(Prä)(Akt) ex(Prp) aequō(Adj)(Abl) malam(Adj)(A)!
+(432) [IASON:] wenn es|wütet und wenn es|schont aus dem|Gleichen schlechtes!
+(433) [IASON:] remedia(A) quotiēns(Adv) invenit(Prä)(Akt) nōbīs(Pr)(D) deus(N)
+(433) [IASON:] Heil|mittel wie|oft findet für|uns der|Gott
+(434) [IASON:] perīculīs(N)(Abl) pejōra(Adj)(N)(Kmp): sī(Kon) vellem(Imp)(Knj)(Akt) fidem(A)
+(434) [IASON:] als|den|Gefahren schlimmere: wenn ich|wollte die|Treue
+(435) [IASON:] praestāre(Prä)(Inf)(Akt) meritīs(N)(Abl) conjugis(G), lētō(N)(Abl) fuit(Per)(Akt)
+(435) [IASON:] zu|erweisen den|Verdiensten der|Gattin, mit|dem|Tod war
+(436) [IASON:] caput(N) offerendum(Fu1)(Pas)(N)(Gdv); sī(Kon) morī(Prä)(Inf)(Pas) nōllem(Imp)(Knj)(Akt), fidē(N)(Abl)
+(436) [IASON:] der|Kopf zu|dar|bieten; wenn zu|sterben ich|nicht|wollte, an|Treue
+(437) [IASON:] miserō(Adj)(D) carendum(Fu1)(Pas)(N)(Gdv). nōn(Pt) timor(N) vīcit(Per)(Akt) fidem(A),
+(437) [IASON:] dem|Elenden zu|ent|behren. nicht die|Furcht überwand die|Treue,
+(438) [IASON:] sed(Kon) trepida(Adj)(N) pietās(N): quippe(Pt) sequerētur(Imp)(Knj)(Pas) necem(A)
+(438) [IASON:] sondern zitternde Pietät: denn würde|folgen|möge den|Tod
+(439) [IASON:] prōlēs(N) parentum(G). sāncta(Adj)(V) sī(Kon) caelum(A) incolis(Prä)(Akt)
+(439) [IASON:] Nachkommenschaft der|Eltern. Heilige wenn den|Himmel du|bewohnst
+(440) [IASON:] Jūstitia(V), nūmen(A) invocō(Prä)(Akt) ac(Kon) testor(Prä)(Pas) tuum(Adj)(A):
+(440) [IASON:] Gerechtigkeit, Gott|heit ich|rufe|an und ich|bezeuge deine:
+(441) [IASON:] nātī(N) patrem(A) vīcēre(Per)(Akt). quīn(Pt) ipsam(Pr)(A) quoque(Pt),
+(441) [IASON:] die|Söhne den|Vater haben|überwunden. ja|sogar sie|selbst auch,
+(442) [IASON:] etsī(Kon) ferōx(Adj)(N) est(Prä)(Akt) corde(N)(Abl) nec(Kon) patiēns(Prä)(Akt)(N) jugī(G),
+(442) [IASON:] auch|wenn wild ist im|Herzen und|nicht duldsam des|Jochs,
+(443) [IASON:] cōnsulere(Prä)(Inf)(Akt) nātīs(D) mālle(Prä)(Inf)(Akt) quam(Kon) thalamīs(D) reor(Prä)(Pas).
+(443) [IASON:] fürsorgen den|Kindern lieber|wollen als den|Ehe|betten ich|meine.
+(444) [IASON:] cōnstituit(Per)(Akt) animus(N) precibus(N)(Abl) īrātam(Adj)(A) aggredī(Prä)(Inf)(Pas);
+(444) [IASON:] hat|beschlossen der|Sinn durch|Bitten die|Zornige an|greifen;
+(445) [IASON:] atque(Kon) ecce(ij), vīsō(Per)(Pas)(Abl) mēmet(Pr)(A) exsiluit(Per)(Akt), furit(Prä)(Akt),
+(445) [IASON:] und siehe, beim|Anblick meiner|selbst sprang|hinaus, rast,
+(446) [IASON:] fert(Prä)(Akt) odia(A) prae(Prp) sē(Pr)(Abl): tōtus(Adj)(N) in(Prp) vultū(N)(Abl) est(Prä)(Akt) dolor(N).
+(446) [IASON:] trägt Hass vor sich: ganz in dem|Gesicht ist Schmerz.
+(447) [MEDEA:] Fugimus(Prä)(Akt), Iāsōn(V), fugimus(Prä)(Akt): hoc(Pr)(N) nōn(Pt) est(Prä)(Akt) novum(Adj)(N),
+(447) [MEDEA:] wir|fliehen, Jason, wir|fliehen: dies nicht ist neu,
+(448) [MEDEA:] mūtāre(Prä)(Inf)(Akt) sēdēs(A); causa(N) fugiendī(Ger)(G) nova(Adj)(N) est(Prä)(Akt):
+(448) [MEDEA:] wechseln Wohn|sitze; Grund des|Fliehens neu ist:
+(449) [MEDEA:] prō(Prp) tē(Pr)(Abl) solēbam(Imp)(Akt) fugere(Prä)(Inf)(Akt); discēdō(Prä)(Akt), exeō(Prä)(Akt),
+(449) [MEDEA:] für dich pflegte|ich fliehen; ich|gehe|fort, ich|gehe|hinaus,
+(450) [MEDEA:] penātibus(N)(Abl) profugere(Prä)(Inf)(Akt) quam(Kon) cōgis(Prä)(Akt) tuīs(Adj)(Abl).
+(450) [MEDEA:] von|den|Haus|göttern weg|zufliehen als du|zwingst deinen.
+(451) [MEDEA:] ad(Prp) quōs(Pr)(A) remittis(Prä)(Akt)? Phāsin(A) et(Kon) Colchōs(A) petam(Fu1)(Akt)
+(451) [MEDEA:] zu welche sendest|du|zurück? den|Phasis und die|Kolcher werde|ich|aufsuchen
+(452) [MEDEA:] patriumque(Adj)(A)(Kon) rēgnum(A) quaeque(Pr)(N)(Kon) frāternus(Adj)(N) cruor(N)
+(452) [MEDEA:] väterliches|und Königreich welches|und brüderlicher Blut
+(453) [MEDEA:] perfūdit(Per)(Akt) arva(A)? quās(Pr)(A) petī(Prä)(Inf)(Pas) terrās(A) jubēs(Prä)(Akt)?
+(453) [MEDEA:] hat|durchtränkt Fluren? welche aufgesucht|zu|werden Länder befiehlst|du?
+(454) [MEDEA:] quae(Pr)(N) maria(A) mōnstrās(Prä)(Akt)? Ponticī(Adj)(G) faucēs(A) fretī(G)
+(454) [MEDEA:] welche Meere zeigst|du? des|pontischen Schlünde des|Meer|engpasses
+(455) [MEDEA:] per(Prp) quās(Pr)(A) revēxī(Per)(Akt) nōbilem(Adj)(A) rēgum(G) manum(A)
+(455) [MEDEA:] durch welche brachte|ich|zurück edle der|Könige Schar
+(456) [MEDEA:] adulterum(A) secūta(Per)(Pas)(N) per(Prp) Symplēgadas(A)?
+(456) [MEDEA:] Ehebrecher gefolgt|habend durch die|Symplēgaden?
+(457) [MEDEA:] patruamne(Adj)(A)(Pt) Iōlcon(A), Thessala(Adj)(A) an(Kon) Tempē(A) petam(Fu1)(Akt)?
+(457) [MEDEA:] onkel|liche|? Iolkos, thessalische oder Tempe werde|ich|aufsuchen?
+(458) [MEDEA:] quāscumque(Pr)(N) aperuī(Per)(Akt) tibi(Pr)(D) viās(A), clausī(Per)(Akt) mihī(Pr)(D);
+(458) [MEDEA:] welche|auch|immer öffnete|ich dir Wege, schloß|ich mir;
+(459) [MEDEA:] quō(Adv) mē(Pr)(A) remittis(Prä)(Akt)? exulī(Adj)(D) exilium(A) imperās(Prä)(Akt)
+(459) [MEDEA:] wohin mich sendest|du|zurück? dem|Verbannten das|Exil befiehlst|du
+(460) [MEDEA:] nec(Kon) dās(Prä)(Akt). eātur(Prä)(Knj)(Pas). rēgius(Adj)(N) jussit(Per)(Akt) gener(N):
+(460) [MEDEA:] und|nicht gibst|du. es|möge|gegangen|werden. königlicher hat|befohlen Schwiegersohn:
+(461) [MEDEA:] nihil(Pr)(A) recūsō(Prä)(Akt). dīra(Adj)(A) supplicia(A) ingere(Prä)(Imv)(Akt):
+(461) [MEDEA:] nichts lehne|ich|ab. schreckliche Strafen häufe|auf:
+(462) [MEDEA:] meruī(Per)(Akt). cruentīs(Adj)(Abl) paelicem(A) poenīs(N)(Abl) premat(Prä)(Knj)(Akt)
+(462) [MEDEA:] ich|habe|verdient. mit|blutigen die|Nebenfrau Strafen möge|nieder|drücken
+(463) [MEDEA:] rēgālis(Adj)(N) īra(N), vinculīs(N)(Abl) oneret(Prä)(Knj)(Akt) manūs(A)
+(463) [MEDEA:] königlicher Zorn, mit|Fesseln möge|belasten Hände
+(464) [MEDEA:] clausamque(Per)(Pas)(A)(Kon) saxō(N)(Abl) noctis(G) aeternae(Adj)(G) obruat(Prä)(Knj)(Akt):
+(464) [MEDEA:] eingeschlossene|und mit|dem|Stein der|ewigen Nacht möge|verschütten:
+(465) [MEDEA:] minōra(Adj)(A) meritīs(D) patiar(Prä)(Knj)(Pas), ingrātum(Adj)(A) caput(A),
+(465) [MEDEA:] Geringeres den|Verdiensten möge|ich|erleiden, undankbaren Kopf,
+(466) [MEDEA:] revolvat(Prä)(Knj)(Akt) animus(N) igneōs(Adj)(A) taurī(G) hālitūs(A)
+(466) [MEDEA:] möge|zurück|wälzen Sinn feurige des|Stieres Atem|züge
+(467) [MEDEA:] interque(Prp)(Kon) saevōs(Adj)(A) gentis(G) indomitae(Adj)(G) metūs(A)
+(467) [MEDEA:] zwischen|und wilde des|unbezähmten Volkes Ängste
+(468) [MEDEA:] armiferō(Adj)(Abl) in(Prp) arvō(N)(Abl) flammeum(Adj)(A) Aeētae(G) pecus(A),
+(468) [MEDEA:] waffen|tragenden in dem|Feld flammendes des|Aeetes Vieh,
+(469) [MEDEA:] hostisque(G)(Kon) subitī(Adj)(G) tēla(A), cum(Kon) jussū(N)(Abl) meō(Adj)(Abl)
+(469) [MEDEA:] des|Feindes|und plötzlichen Waffen, als auf|Befehl meinem
+(470) [MEDEA:] terrigena(Adj)(N) mīles(N) mūtuā(Adj)(Abl) caede(N)(Abl) occidit(Per)(Akt);
+(470) [MEDEA:] erd|geborener Krieger durch|gegenseitige Tötung fiel;
+(471) [MEDEA:] adice(Prä)(Imv)(Akt) expetīta(Per)(Pas)(A) spolia(A) Phrixēī(Adj)(G) arietis(G)
+(471) [MEDEA:] füge|hinzu erstrebte Beute|stücke des|Phrixos Widders
+(472) [MEDEA:] somnōque(N)(Abl)(Kon) jussum(Per)(Pas)(A) lūmina(A) ignōtō(Adj)(D) dare(Prä)(Inf)(Akt)
+(472) [MEDEA:] dem|Schlaf|und befohlen die|Augen unbekannten zu|geben
+(473) [MEDEA:] īnsomne(Adj)(A) mōnstrum(A), trāditum(Per)(Pas)(A) frātrem(A) necī(D)
+(473) [MEDEA:] schlaf|loses Un|geheuer, übergeben den|Bruder dem|Tod
+(474) [MEDEA:] et(Kon) scelere(N)(Abl) in(Prp) ūnō(Adj)(Abl) nōn(Pt) semel(Adv) factum(Per)(Pas)(A) scelus(A),
+(474) [MEDEA:] und durch|Verbrechen in einem nicht einmal getan Verbrechen,
+(475) [MEDEA:] ausāsque(Per)(Pas)(A)(Kon) nātās(A) fraude(N)(Abl) dēceptās(Per)(Pas)(A) meā(Adj)(Abl)
+(475) [MEDEA:] gewagt|habende|und Töchter durch|List getäuschte meiner
+(476) [MEDEA:] secāre(Prä)(Inf)(Akt) membra(A) nōn(Pt) revīctūrī(Fu1)(Akt)(G) senis(G):
+(476) [MEDEA:] zu|zer|schneiden Glieder nicht wieder|auf|leben|werdenden des|Greises:
+(477) [MEDEA:] [aliēna(Adj)(A) quaerēns(Prä)(Akt)(N) rēgna(A), dēseruī(Per)(Akt) mea(Adj)(A)]
+(477) [MEDEA:] [fremde suchend Reiche, verließ|ich die|meinen]
+(478) [MEDEA:] per(Prp) spēs(A) tuōrum(Adj)(G) līberum(G) et(Kon) certum(Adj)(A) larem(A),
+(478) [MEDEA:] durch Hoffnungen deiner Kinder und sicheren Herd,
+(479) [MEDEA:] per(Prp) victa(Per)(Pas)(A) mōnstra(A), per(Prp) manūs(A), prō(Prp) tē(Pr)(Abl) quibus(Pr)(Abl)
+(479) [MEDEA:] durch besiegte Un|geheuer, durch Hände, für dich mit|welchen
+(480) [MEDEA:] numquam(Adv) pepercī(Per)(Akt), perque(Prp)(Kon) praeteritōs(Per)(Pas)(A) metūs(A),
+(480) [MEDEA:] niemals verschonte|ich, durch|und vergangene Ängste,
+(481) [MEDEA:] per(Prp) caelum(A) et(Kon) undās(A), conjugī(D) testēs(A) meī(Pr)(G),
+(481) [MEDEA:] durch Himmel und Wellen, dem|Ehebund Zeugen meiner,
+(482) [MEDEA:] miserēre(Prä)(Imv)(Akt), redde(Prä)(Imv)(Akt) supplicī(Adj)(D) fēlīx(Adj)(A) vicem(A).
+(482) [MEDEA:] erbarme|dich, gib|zurück dem|Flehenden glückliche Gegen|gabe.
+(483) [MEDEA:] ex(Prp) opibus(N)(Abl) illīs(Pr)(Abl), quās(Pr)(A) procul(Adv) raptās(Per)(Pas)(A) Scythae(N)
+(483) [MEDEA:] aus Reichtümern jenen, welche weit geraubte die|Skythen
+(484) [MEDEA:] usque(Adv) ā(Prp) perustīs(Per)(Pas)(Abl) Indiae(G) populīs(N)(Abl) agunt(Prä)(Akt),
+(484) [MEDEA:] bis von versengten Indiens Völkern treiben|sie,
+(485) [MEDEA:] quās(Pr)(A) quia(Kon) referta(Per)(Pas)(N) vix(Adv) domus(N) gāzās(A) capit(Prä)(Akt),
+(485) [MEDEA:] welche weil gefüllte kaum das|Haus Schätze faßt,
+(486) [MEDEA:] ōrnāmus(Prä)(Akt) aurō(N)(Abl) nemora(A), nīl(Pr)(A) exul(N) tulī(Per)(Akt)
+(486) [MEDEA:] schmücken|wir mit|Gold Haine, nichts Verbannter trug|ich
+(487) [MEDEA:] nisi(Kon) frātris(G) artūs(A): hōs(Pr)(A) quoque(Pt) impendī(Per)(Akt) tibī(Pr)(D);
+(487) [MEDEA:] außer des|Bruders Glieder: diese auch wandte|ich|auf für|dich;
+(488) [MEDEA:] tibi(Pr)(D) patria(N) cessit(Per)(Akt), tibi(Pr)(D) pater(N) frāter(N) pudor(N);
+(488) [MEDEA:] dir die|Heimat wich, dir Vater Bruder Scham;
+(489) [MEDEA:] hāc(Pr)(Abl) dōte(N)(Abl) nūpsī(Per)(Akt). redde(Prä)(Imv)(Akt) fugientī(Prä)(Akt)(D) sua(Pr)(A).
+(489) [MEDEA:] mit|dieser Mitgift heiratete|ich. gib|zurück der|Fliehenden das|Ihre.
+(490) [IASON:] Perimere(Prä)(Inf)(Akt) cum(Kon) tē(Pr)(A) vellet(Imp)(Knj)(Akt) īnfēstus(Adj)(N) Creō(N),
+(490) [IASON:] zu|töten als dich wollte feindlicher Kreon,
+(491) [IASON:] lacrimīs(N)(Abl) meīs(Adj)(Abl) ēvictus(Per)(Pas)(N) exilium(A) dedit(Per)(Akt).
+(491) [IASON:] mit|Tränen meinen überwunden|worden das|Exil gab.
+(492) [MEDEA:] Poenam(A) putābam(Imp)(Akt): mūnus(N), ut(Kon) videō(Prä)(Akt), est(Prä)(Akt) fuga(N).
+(492) [MEDEA:] Strafe glaubte|ich: Geschenk, wie sehe|ich, ist Flucht.
+(493) [IASON:] Dum(Kon) licet(Prä)(Akt) abīre(Prä)(Inf)(Akt), profuge(Prä)(Imv)(Akt) tēque(Pr)(A)(Kon) hinc(Adv) ēripe(Prä)(Imv)(Akt):
+(493) [IASON:] solange es|ist|erlaubt weg|zu|gehen, flieh dich|und von|hier reiße|fort:
+(494) [IASON:] gravis(Adj)(N) īra(N) rēgum(G) est(Prä)(Akt) semper(Adv). Hoc(Pr)(N) suādēs(Prä)(Akt) mihī(Pr)(D),
+(494) [IASON:] schwer Zorn der|Könige ist immer. dies empfiehlst|du mir,
+(495) [MEDEA:] praestās(Prä)(Akt) Creūsae(D): paelicem(A) invīsam(Adj)(A) āmovēs(Prä)(Akt).
+(495) [MEDEA:] leistest|du der|Kreusa: Nebenfrau verhaßte entfernst|du.
+(496) [IASON:] Mēdēa(V) amōrēs(A) obicit(Prä)(Akt)? Et(Kon) caedem(A) et(Kon) dolōs(A).
+(496) [IASON:] Medea Lieben wirft|vor? und Mord und Listen.
+(497) [IASON:] Obicere(Prä)(Inf)(Akt) crīmen(A) quod(Pr)(A) potes(Prä)(Akt) tandem(Adv) mihī(Pr)(D)?
+(497) [IASON:] vorzuwerfen Anklage welche kannst|du endlich mir?
+(498) [MEDEA:] Quodcumque(Pr)(N) fēcī(Per)(Akt). Restat(Prä)(Akt) hoc(Pr)(A) ūnum(Adj)(A) īnsuper(Adv),
+(498) [MEDEA:] was|auch|immer tat|ich. bleibt|übrig dies eins obendrein,
+(499) [IASON:] tuīs(Adj)(Abl) ut(Kon) etiam(Adv) sceleribus(N)(Abl) fīam(Prä)(Knj)(Akt) nocēns(Adj)(N).
+(499) [IASON:] durch|deine damit auch Verbrechen werde|ich schuldig.
+(500) [MEDEA:] Tua(Adj)(N) illa(Pr)(N), tua(Adj)(N) sunt(Prä)(Akt) illa(Pr)(N): cui(Pr)(D) prōdest(Prä)(Akt) scelus(N),
+(500) [MEDEA:] deine jene, deine sind jene: wem nützt das|Verbrechen,
+(501) [MEDEA:] is(Pr)(N) fēcit(Per)(Akt), omnēs(Adj)(N) conjugem(A) īnfāmem(Adj)(A) arguant(Prä)(Knj)(Akt),
+(501) [MEDEA:] der hat|getan, alle Ehefrau schmähliche mögen|beschuldigen,
+(502) [MEDEA:] sōlus(Adj)(N) tuēre(Prä)(Imv)(Pas), sōlus(Adj)(N) īnsontem(Adj)(A) vocā(Prä)(Imv)(Akt):
+(502) [MEDEA:] allein schütze, allein die|Unschuldige nenn|du:
+(503) [MEDEA:] tibi(Pr)(D) innocēns(Adj)(N) sit(Prä)(Knj)(Akt) quisquis(Pr)(N) est(Prä)(Akt) prō(Prp) tē(Pr)(A) nocēns(Adj)(N).
+(503) [MEDEA:] dir unschuldig möge|sein wer|auch|immer ist für dich schuldig.
+(504) [IASON:] Ingrāta(Adj)(N) vīta(N) est(Prä)(Akt) cujus(Pr)(G) acceptae(Per)(Pas)(G) pudet(Prä)(Akt).
+(504) [IASON:] undankbares Leben ist dessen der|Angenommenen schämt|man|sich.
+(505) [MEDEA:] Retinenda(Fu1)(Pas)(N)(Gdv) nōn(Pt) est(Prä)(Akt) cujus(Pr)(G) acceptae(Per)(Pas)(G) pudet(Prä)(Akt).
+(505) [MEDEA:] fest|zu|haltende nicht ist dessen der|Angenommenen schämt|man|sich.
+(506) [IASON:] Quīn(Pt) potius(Adv) īrā(N)(Abl) concitum(Per)(Pas)(A) pectus(A) domā(Prä)(Imv)(Akt),
+(506) [IASON:] warum|nicht vielmehr mit|Zorn aufgestachelt Herz bändige,
+(507) [IASON:] plācāre(Prä)(Imv)(Akt) nātīs(D). Abdicō(Prä)(Akt) ējūrō(Prä)(Akt) abnuō(Prä)(Akt):
+(507) [IASON:] besänftige den|Söhnen. ich|verstoße ich|schwöre|ab ich|lehne|ab:
+(508) [MEDEA:] meīs(Adj)(D) Creūsa(N) līberīs(D) frātrēs(A) dabit(Fu1)(Akt)?
+(508) [MEDEA:] meinen Kreusa Kindern Brüder wird|geben?
+(509) [IASON:] Rēgīna(N) nātīs(D) exulum(G), afflīctīs(Per)(Pas)(D) potēns(Adj)(N).
+(509) [IASON:] die|Königin den|Söhnen der|Verbannten, den|Bedrängten mächtig.
+(510) [MEDEA:] Nē(Pt) veniat(Prä)(Knj)(Akt) umquam(Adv) tam(Adv) malus(Adj)(N) miserīs(Adj)(D) diēs(N),
+(510) [MEDEA:] dass|nicht möge|kommen jemals so schlimmer den|Elenden Tag,
+(511) [MEDEA:] quī(Pr)(N) prōle(N)(Abl) foedā(Adj)(Abl) misceat(Prä)(Knj)(Akt) prōlem(A) inclitam(Adj)(A),
+(511) [MEDEA:] der mit|Nachwuchs häßlichem mische|er Nachwuchs berühmten,
+(512) [MEDEA:] Phoebī(G) nepōtēs(N) Sīsyphī(G) nepōtibus(D).
+(512) [MEDEA:] des|Phoebus Enkel des|Sisyphos den|Enkeln.
+(513) [IASON:] Quid(Pr)(A), misera(Adj)(V), mēque(Pr)(A)(Kon) tēque(Pr)(A)(Kon) in(Prp) exitium(A) trahis(Prä)(Akt)?
+(513) [IASON:] was, Elende, mich|und dich|und in Verderben ziehst|du?
+(514) [IASON:] abscēde(Prä)(Imv)(Akt), quaesō(Prä)(Akt). Supplicem(Adj)(A) audīvit(Per)(Akt) Creō(N).
+(514) [IASON:] geh|weg, ich|bitte. den|Flehenden hörte Kreon.
+(515) [IASON:] Quid(Pr)(A) facere(Prä)(Inf)(Akt) possim(Prä)(Knj)(Akt), loquere(Prä)(Imv)(Pas). Prō(Prp) mē(Pr)(A) vel(Kon) scelus(N).
+(515) [IASON:] was zu|tun könnte|ich, sprich. für mich oder|auch Verbrechen.
+(516) [IASON:] Hinc(Adv) rēx(N) et(Kon) illinc(Adv). . . Est(Prä)(Akt) et(Kon) hīs(Pr)(D) major(Adj)(N)(Kmp) metus(N)
+(516) [IASON:] von|hier der|König und von|dort. . . ist auch diesen größer Furcht
+(517) [MEDEA:] Mēdēa(N). nōs(Pr)(N), marīte(V), certēmus(Prä)(Knj)(Akt) sine(Prä)(Imv)(Akt),
+(517) [MEDEA:] Medea. wir, Ehegatte, mögen|wir|streiten lass|zu,
+(518) [MEDEA:] sit(Prä)(Knj)(Akt) pretium(N) Iāsōn(N). Cēdo(Prä)(Akt) dēfessus(Per)(Pas)(N) malīs(N)(Abl).
+(518) [MEDEA:] möge|sein der|Preis Jason. ich|gebe|nach ermüdet von|Übeln.
+(519) [IASON:] et(Kon) ipsa(Pr)(N) cāsūs(A) saepe(Adv) jam(Adv) expertōs(Per)(Pas)(A) timē(Prä)(Imv)(Akt).
+(519) [IASON:] und selbst Fälle oft schon erprobte fürchte.
+(520) [MEDEA:] Fortūna(N) semper(Adv) omnis(Adj)(N) īnfrā(Prp) mē(Pr)(A) stetit(Per)(Akt).
+(520) [MEDEA:] Glück|Schicksal immer jede unter mich stand.
+(521) [IASON:] Acastus(N) īnstat(Prä)(Akt). Propior(Adj)(N)(Kmp) est(Prä)(Akt) hostis(N) Creō(N):
+(521) [IASON:] Acastus drängt. näher ist der|Feind Kreon:
+(522) [MEDEA:] utrumque(Pr)(A) profuge(Prä)(Imv)(Akt). nōn(Pt) ut(Kon) in(Prp) socerum(A) manūs(A)
+(522) [MEDEA:] beide flieh. nicht damit gegen den|Schwiegervater Hände
+(523) [MEDEA:] armēs(Prä)(Knj)(Akt) nec(Kon) ut(Kon) tē(Pr)(A) caede(N)(Abl) cognātā(Adj)(Abl) inquinēs(Prä)(Knj)(Akt)
+(523) [MEDEA:] mögest|bewaffnen noch damit dich mit|Bluttat verwandter besudelst|du
+(524) [MEDEA:] Mēdēa(N) cōgit(Prä)(Akt): innocēns(Adj)(N) mēcum(Pr)(Abl)(Prp) fuge(Prä)(Imv)(Akt).
+(524) [MEDEA:] Medea treibt|an: unschuldig mit|mir flieh.
+(525) [IASON:] Et(Kon) quis(Pr)(N) resistet(Fu1)(Akt), gemina(Adj)(N) sī(Kon) bella(N) ingruant(Prä)(Knj)(Akt),
+(525) [IASON:] und wer wird|widerstehen, doppelte wenn Kriege hereinbrechen,
+(526) [IASON:] Creō(N) atque(Kon) Acastus(N) arma(A) sī(Kon) jungant(Prä)(Knj)(Akt) sua(Adj)(A)?
+(526) [IASON:] Kreon und|auch Acastus Waffen wenn vereinen|mögen ihre?
+(527) [MEDEA:] Hīs(Pr)(D) adice(Prä)(Imv)(Akt) Colchōs(A), adice(Prä)(Imv)(Akt) et(Kon) Aeētēn(A) ducem(A),
+(527) [MEDEA:] zu|diesen füge|hinzu Kolcher, füge|hinzu und Aeetes Führer,
+(528) [MEDEA:] Scythās(A) Pelasgīs(D) junge(Prä)(Imv)(Akt): dēmersōs(Per)(Pas)(A) dabō(Fu1)(Akt).
+(528) [MEDEA:] Skythen den|Pelasgern verbinde: versenkte werde|ich|geben.
+(529) [IASON:] Alta(Adj)(A) extimēscō(Prä)(Akt) scēptra(A). Nē(Pt) cupiās(Prä)(Knj)(Akt) vidē(Prä)(Imv)(Akt).
+(529) [IASON:] hohe fürchte|ich|sehr Zepter. dass|nicht wünschen|mögest|du sieh.
+(530) [IASON:] Suspecta(Adj)(N) nē(Pt) sint(Prä)(Knj)(Akt), longa(Adj)(N) colloquia(N) amputā(Prä)(Imv)(Akt).
+(530) [IASON:] verdächtig dass|nicht seien|mögen, lange Gespräche schneide|ab.
+(531) [MEDEA:] Nunc(Adv) summe(Adj)(V)(Sup) tōtō(Adj)(Abl) Juppiter(V) caelō(N)(Abl) tonā(Prä)(Imv)(Akt),
+(531) [MEDEA:] nun höchster ganzen Jupiter im|Himmel donner|du,
+(532) [MEDEA:] intende(Prä)(Imv)(Akt) dextram(A), vindicēs(Adj)(A) flammās(A) parā(Prä)(Imv)(Akt)
+(532) [MEDEA:] strecke|aus rechte|Hand, rächende Flammen bereite
+(533) [MEDEA:] omnemque(Adj)(A)(Kon) ruptīs(Per)(Pas)(Abl) nūbibus(N)(Abl) mundum(A) quate(Prä)(Imv)(Akt).
+(533) [MEDEA:] ganzen|und zerrissenen Wolken Welt erschüttere.
+(534) [MEDEA:] nec(Kon) dēligentī(Prä)(Akt)(Abl) tēla(N) lībrentur(Prä)(Knj)(Pas) manū(N)(Abl)
+(534) [MEDEA:] und|nicht sorgsamer Geschosse mögen|geschwungen|werden mit|der|Hand
+(535) [MEDEA:] vel(Kon) mē(Pr)(A) vel(Kon) istum(Pr)(A): quisquis(Pr)(N) ē(Prp) nōbīs(Pr)(Abl) cadet(Fu1)(Akt)
+(535) [MEDEA:] oder|auch mich oder|auch jenen: wer|auch|immer aus uns wird|fallen
+(536) [MEDEA:] nocēns(Adj)(N) perībit(Fu1)(Akt), nōn(Pt) potest(Prä)(Akt) in(Prp) nōs(Pr)(A) tuum(Adj)(A)
+(536) [MEDEA:] schuldig wird|zugrunde|gehen, nicht kann auf uns dein
+(537) [MEDEA:] errāre(Prä)(Inf)(Akt) fulmen(N). Sāna(Adj)(A) meditārī(Prä)(Inf)(Pas) incipe(Prä)(Imv)(Akt)
+(537) [MEDEA:] fehl|gehen Blitz. Gesundes zu|überlegen beginne
+(538) [IASON:] et(Kon) placida(Adj)(A) fāre(Prä)(Imv)(Pas). sī(Kon) quod(Pr)(N) ex(Prp) socerī(G) domō(N)(Abl)
+(538) [IASON:] und Ruhiges sprich. wenn etwas aus des|Schwiegervaters Haus
+(539) [IASON:] potest(Prä)(Akt) fugam(A) levāre(Prä)(Inf)(Akt) sōlāmen(A), pete(Prä)(Imv)(Akt).
+(539) [IASON:] kann Flucht erleichtern Trost, suche.
+(540) [MEDEA:] Contemnere(Prä)(Inf)(Akt) animus(N) rēgiās(Adj)(A), ut(Kon) scīs(Prä)(Akt), opēs(A)
+(540) [MEDEA:] verachten Sinn königliche, wie weißt|du, Güter
+(541) [MEDEA:] potest(Prä)(Akt) soletque(Prä)(Akt)(Kon); līberōs(A) tantum(Adv) fugae(D)
+(541) [MEDEA:] kann pflegt|und; Kinder nur der|Flucht
+(542) [MEDEA:] habēre(Prä)(Inf)(Akt) comitēs(A) liceat(Prä)(Knj)(Akt), in(Prp) quōrum(Pr)(G) sinū(N)(Abl)
+(542) [MEDEA:] zu|haben Begleiter möge|es|erlaubt|sein, in deren Schoß
+(543) [MEDEA:] lacrimās(A) profundam(Prä)(Knj)(Akt). tē(Pr)(A) novī(Adj)(N) gnātī(N) manent(Prä)(Akt).
+(543) [IASON:] Tränen gieße|ich|aus. dich neue Söhne erwarten.
+(544) [IASON:] Pārēre(Prä)(Inf)(Akt) precibus(D) cupere(Prä)(Inf)(Akt) mē(Pr)(A) fateor(Prä)(Pas) tuīs(Adj)(D);
+(544) [IASON:] gehorchen Bitten zu|wünschen mich ich|gestehe deinen;
+(545) [IASON:] pietās(N) vetat(Prä)(Akt): namque(Pt) istud(Pr)(A) ut(Kon) possim(Prä)(Knj)(Akt) patī(Prä)(Inf)(Pas),
+(545) [IASON:] Pietät verbietet: denn|nämlich dieses dass könnte|ich ertragen,
+(546) [IASON:] nōn(Pt) ipse(Pr)(N) mēmet(Pr)(A) cōgat(Prä)(Knj)(Akt) et(Kon) rēx(N) et(Kon) socer(N).
+(546) [IASON:] nicht selbst mich|selbst möge|zwingen und der|König und Schwiegervater.
+(547) [IASON:] haec(Pr)(N) causa(N) vītae(G) est(Prä)(Akt), hoc(Pr)(N) perustī(Per)(Pas)(G) pectoris(G)
+(547) [IASON:] dies Grund des|Lebens ist, dies des|verbrannten Herzens
+(548) [IASON:] cūrīs(D) levāmen(N). spīritū(N)(Abl) citius(Adv)(Kmp) queam(Prä)(Knj)(Akt)
+(548) [IASON:] für|Sorgen Linderung. als|dem|Atem schneller könnte|ich
+(549) [IASON:] carēre(Prä)(Inf)(Akt), membrīs(N)(Abl), lūce(N)(Abl). Sīc(Adv) nātōs(A) amat(Prä)(Akt)?
+(549) [IASON:] ent|behren, der|Glieder, des|Lichts. so die|Söhne liebt|man?
+(550) [MEDEA:] bene(Adv) est(Prä)(Akt), tenētur(Prä)(Pas), vulnerī(D) patuit(Per)(Akt) locus(N).
+(550) [MEDEA:] gut ist, wird|gehalten, der|Wunde war|offen Ort.
+(551) [MEDEA:] Suprēma(Adj)(A) certē(Adv) liceat(Prä)(Knj)(Akt) abeuntem(Prä)(Akt)(A) loquī(Prä)(Inf)(Pas)
+(551) [MEDEA:] letzte|Worte gewiss es|möge|erlaubt|sein den|Fortgehenden zu|sprechen
+(552) [MEDEA:] mandāta(A), liceat(Prä)(Knj)(Akt) ultimum(Adj)(A) amplexum(A) dare(Prä)(Inf)(Akt):
+(552) [MEDEA:] Weisungen, es|möge|erlaubt|sein letzten Umarmung zu|geben:
+(553) [MEDEA:] grātum(Adj)(N) est(Prä)(Akt). et(Kon) illud(Pr)(A) vōce(N)(Abl) jam(Adv) extrēmā(Adj)(Abl) petō(Prä)(Akt),
+(553) [MEDEA:] angenehm ist. und jenes mit|der|Stimme schon letzten erbitte|ich,
+(554) [MEDEA:] nē(Kon), sī(Kon) qua(Pr)(N) noster(Adj)(N) dubius(Adj)(N) effūdit(Per)(Akt) dolor(N),
+(554) [MEDEA:] dass|nicht, wenn irgend|etwas unser zweifelnder ausgegossen|hat Schmerz,
+(555) [MEDEA:] maneant(Prä)(Knj)(Akt) in(Prp) animō(N)(Abl) verba(N): meliōris(Adj)(G)(Kmp) tibī(Pr)(D)
+(555) [MEDEA:] mögen|bleiben in dem|Geist Worte: besserer dir
+(556) [MEDEA:] memoria(N) nostrī(Pr)(G) sedeat(Prä)(Knj)(Akt); haec(Pr)(N) īrae(G) data(Per)(Pas)(N)
+(556) [MEDEA:] Erinnerung unserer möge|ruhen; diese der|Wut gegeben
+(557) [MEDEA:] oblitterentur(Prä)(Knj)(Pas). Omnia(Adj)(A) ex(Prp) animō(N)(Abl) expulī(Per)(Akt)
+(557) [MEDEA:] mögen|ausgelöscht|werden. alles aus dem|Sinn trieb|ich|hinaus
+(558) [IASON:] precorque(Prä)(Pas)(Kon) et(Kon) ipse(Pr)(N), fervidam(Adj)(A) ut(Kon) mentem(A) regās(Prä)(Knj)(Akt)
+(558) [IASON:] ich|bete|und und selbst, glühende dass Sinn du|mögest|lenken
+(559) [IASON:] placidēque(Adv)(Kon) tractēs(Prä)(Knj)(Akt): miseriās(A) lēnit(Prä)(Akt) quiēs(N).
+(559) [IASON:] ruhig|und du|mögest|behandeln: Leiden lindert Ruhe.
+(560) [MEDEA:] Discessit(Per)(Akt). itane(Pt) est(Prä)(Akt)? vādis(Prä)(Akt) oblītus(Per)(Pas)(N) meī(Pr)(G)
+(560) [MEDEA:] ist|fortgegangen. so|? ist? du|gehst vergessen|habend meiner
+(561) [MEDEA:] et(Kon) tot(Adj)(N) meōrum(Adj)(G) facinorum(G)? excidimus(Prä)(Akt) tibī(Pr)(D)?
+(561) [MEDEA:] und so|viele meiner Taten? entfallen|wir dir?
+(562) [MEDEA:] numquam(Adv) excidēmus(Fu1)(Akt). hoc(Pr)(A) age(Prä)(Imv)(Akt), omnīs(Adj)(A) advocā(Prä)(Imv)(Akt)
+(562) [MEDEA:] niemals werden|wir|entfallen. dies tue, alle rufe|herbei
+(563) [MEDEA:] vīrēs(A) et(Kon) artēs(A). frūctus(N) est(Prä)(Akt) scelerum(G) tibī(Pr)(D)
+(563) [MEDEA:] Kräfte und Künste. Frucht ist der|Verbrechen dir
+(564) [MEDEA:] nūllum(Adj)(A) scelus(A) putāre(Prä)(Inf)(Akt). vix(Adv) fraudī(D) est(Prä)(Akt) locus(N):
+(564) [MEDEA:] kein Verbrechen zu|halten. kaum für|List ist Raum:
+(565) [MEDEA:] timēmur(Prä)(Pas). hāc(Pr)(Abl) aggredere(Prä)(Imv)(Pas), quā(Pr)(Abl) nēmō(Pr)(N) potest(Prä)(Akt)
+(565) [MEDEA:] wir|werden|gefürchtet. auf|diesem greife|an, auf|welchem niemand kann
+(566) [MEDEA:] quicquam(Pr)(A) timēre(Prä)(Inf)(Akt). perge(Prä)(Imv)(Akt), nunc(Adv) audē(Prä)(Imv)(Akt), incipe(Prä)(Imv)(Akt)
+(566) [MEDEA:] irgend|etwas zu|fürchten. fahre|fort, jetzt wage, beginne
+(567) [MEDEA:] quidquid(Pr)(N) potest(Prä)(Akt) Mēdēa(N), quidquid(Pr)(N) nōn(Pt) potest(Prä)(Akt).
+(567) [MEDEA:] was|auch|immer vermag Medea, was|auch|immer nicht vermag.
+(568) [MEDEA:] Tū(Pr)(N), fīda(Adj)(V) nūtrīx(V), socia(V) maerōris(G) meī(Pr)(G)
+(568) [MEDEA:] du, treue Amme, Gefährtin der|Trauer meiner
+(569) [MEDEA:] variīque(Adj)(G)(Kon) cāsūs(G), misera(Adj)(A) cōnsilia(A) adjuvā(Prä)(Imv)(Akt).
+(569) [MEDEA:] verschiedenen|und Fälle, elend Ratschläge hilf.
+(570) [MEDEA:] est(Prä)(Akt) palla(N) nōbīs(Pr)(D), mūnus(N) aetheriae(Adj)(G) domūs(G)
+(570) [MEDEA:] es|ist Mantel uns, Geschenk des|ätherischen Hauses
+(571) [MEDEA:] decusque(N)(Kon) rēgnī(G), pignus(N) Aeētae(G) datum(Per)(Pas)(N)
+(571) [MEDEA:] Schmuck|und des|Reiches, Pfand des|Aeētes gegeben
+(572) [MEDEA:] ā(Prp) Sōle(N)(Abl) generis(G), est(Prä)(Akt) et(Kon) aurō(N)(Abl) textilī(Adj)(Abl)
+(572) [MEDEA:] von der|Sonne des|Geschlechts, ist auch mit|Gold gewebt
+(573) [MEDEA:] monīle(N) fulgēns(Prä)(Akt)(N) quodque(Pr)(N)(Kon) gemmārum(G) nitor(N)
+(573) [MEDEA:] Halsband glänzend welches|auch der|Edelsteine Glanz
+(574) [MEDEA:] distinguit(Prä)(Akt) aurum(A), quō(Pr)(Abl) solent(Prä)(Akt) cingī(Prä)(Inf)(Pas) comae(N).
+(574) [MEDEA:] ziert Gold, womit pflegen umgürtet|zu|werden Haare.
+(575) [MEDEA:] haec(Pr)(A) nostra(Adj)(N) nātī(N) dōna(A) nūbentī(Prä)(Akt)(D) ferant(Prä)(Knj)(Akt),
+(575) [MEDEA:] diese unsere Söhne Gaben der|Heiratenden mögen|tragen,
+(576) [MEDEA:] sed(Kon) ante(Adv) dīrīs(Adj)(Abl) inlita(Per)(Pas)(N) ac(Kon) tīncta(Per)(Pas)(N) artibus(N)(Abl).
+(576) [MEDEA:] aber zuvor mit|schrecklichen eingesalbt und gefärbt Künsten.
+(577) [MEDEA:] vocētur(Prä)(Knj)(Pas) Hecatē(V). sacra(A) lētifica(Adj)(A) apparā(Prä)(Imv)(Akt):
+(577) [MEDEA:] es|werde|angerufen Hekate. Riten erfreuende bereite:
+(578) [MEDEA:] statuantur(Prä)(Knj)(Pas) ārae(N), flamma(N) jam(Adv) tēctīs(N)(Abl) sonet(Prä)(Knj)(Akt).
+(578) [MEDEA:] mögen|aufgestellt|werden Altäre, Flamme schon in|den|Häusern ertöne.
+=== Chor (sapphics) ===
+(579) [CHORUS:] Nūlla(Adj)(N) vīs(N) flammae(G) tumidīve(Adj)(G)(Kon) ventī(G)
+(579) [CHORUS:] keine Kraft des|Feuers des|aufgeblähten|oder des|Windes
+(580) [CHORUS:] tanta(Adj)(N), nec(Kon) tēlī(G) metuenda(Fu1)(Pas)(N)(Gdv) tortī(Per)(Pas)(G),
+(580) [CHORUS:] so|groß, und|nicht des|Geschosses zu|fürchtende gedrehten,
+(581) [CHORUS:] quanta(Adj)(N) cum(Kon) conjūnx(N) viduāta(Per)(Pas)(N) taedīs(N)(Abl)
+(581) [CHORUS:] so|groß|wie wenn Ehegattin beraubt der|Fackeln
+(582) [CHORUS:] ārdet(Prä)(Akt) et(Kon) ōdit(Prä)(Akt);
+(582) [CHORUS:] brennt und haßt;
+(583) [CHORUS:] nōn(Pt) ubi(Kon) hībernōs(Adj)(A) nebulōsus(Adj)(N) imbrēs(A)
+(583) [CHORUS:] nicht wo winterliche nebelige Regen
+(584) [CHORUS:] Auster(N) advēxit(Per)(Akt) properatque(Prä)(Akt)(Kon) torrēns(Prä)(Akt)(N)
+(584) [CHORUS:] Auster hat|herbeigebracht eilt|und reißend
+(585) [CHORUS:] Hister(N) et(Kon) jūnctōs(Per)(Pas)(A) vetat(Prä)(Akt) esse(Prä)(Inf)(Akt) pontēs(A)
+(585) [CHORUS:] Hister und verbundene verbietet zu|sein Brücken
+(586) [CHORUS:] ac(Kon) vagus(Adj)(N) errat(Prä)(Akt);
+(586) [CHORUS:] und umherschweifend irrt;
+(587) [CHORUS:] nōn(Pt) ubi(Kon) impellit(Prä)(Akt) Rhodanus(N) profundum(A),
+(587) [CHORUS:] nicht wo stößt|an Rhodanus die|Tiefe,
+(588) [CHORUS:] aut(Kon) ubi(Kon) in(Prp) rīvōs(A) nivibus(N)(Abl) solūtīs(Per)(Pas)(Abl)
+(588) [CHORUS:] oder wo in Bäche aus|Schnee auf|gelösten
+(589) [CHORUS:] sōle(N)(Abl) jam(Adv) fortī(Adj)(Abl) mediōque(Adj)(Abl)(Kon) vēre(N)(Abl)
+(589) [CHORUS:] von|der|Sonne schon starken mittleren|und Frühling
+(590) [CHORUS:] tābuit(Per)(Akt) Haemus(N).
+(590) [CHORUS:] schmolz Hämos.
+(591) [CHORUS:] caecus(Adj)(N) est(Prä)(Akt) ignis(N) stimulātus(Per)(Pas)(N) īrā(N)(Abl)
+(591) [CHORUS:] blind ist Brand angestachelt durch|Zorn
+(592) [CHORUS:] nec(Kon) regī(Prä)(Inf)(Pas) cūrat(Prä)(Akt) patiturve(Prä)(Pas)(Kon) frēnōs(A)
+(592) [CHORUS:] noch beherrscht|zu|werden kümmert|es|sich erträgt|und Zügel
+(593) [CHORUS:] aut(Kon) timet(Prä)(Akt) mortem(A): cupit(Prä)(Akt) īre(Prä)(Inf)(Akt) in(Prp) ipsōs(Pr)(A)
+(593) [CHORUS:] oder fürchtet Tod: verlangt zu|gehen in die|selbst
+(594) [CHORUS:] obvius(Adj)(N) ēnsēs(A).
+(594) [CHORUS:] entgegen Schwerter.
+(595) [CHORUS:] Parcite(Prä)(Imv)(Akt), ō(ij) dīvī(V), veniam(A) precāmur(Prä)(Pas),
+(595) [CHORUS:] schont, o Götter, Verzeihung wir|bitten,
+(596) [CHORUS:] vīvat(Prä)(Knj)(Akt) ut(Kon) tūtus(Adj)(N) mare(A) quī(Pr)(N) subēgit(Per)(Akt).
+(596) [CHORUS:] er|möge|leben damit sicher Meer wer unterworfen|hat.
+(597) [CHORUS:] sed(Kon) furit(Prä)(Akt) vincī(Prä)(Inf)(Pas) dominus(N) profundī(G)
+(597) [CHORUS:] aber rast besiegt|zu|werden Herr der|Tiefe
+(598) [CHORUS:] rēgna(A) secunda(Adj)(A).
+(598) [CHORUS:] Reiche günstige.
+(599) [CHORUS:] ausus(Per)(Pas)(N) aeternōs(Adj)(A) agitāre(Prä)(Inf)(Akt) currūs(A)
+(599) [CHORUS:] gewagt ewige zu|treiben Wagen
+(600) [CHORUS:] immemor(Adj)(N) mētae(G) juvenis(N) paternae(Adj)(G)
+(600) [CHORUS:] vergessend der|Schranke Jüngling des|väterlichen
+(601) [CHORUS:] quōs(Pr)(A) polō(N)(Abl) sparsit(Per)(Akt) furiōsus(Adj)(N) ignēs(A)
+(601) [CHORUS:] welche am|Himmel streute rasend Feuer
+(602) [CHORUS:] ipse(Pr)(N) recēpit(Per)(Akt).
+(602) [CHORUS:] selbst nahm|zurück.
+(603) [CHORUS:] cōnstitit(Per)(Akt) nūllī(Pr)(D) via(N) nōta(Per)(Pas)(N) magnō(Adj)(D):
+(603) [CHORUS:] stand|fest keinem Weg bekannt großen:
+(604) [CHORUS:] vāde(Prä)(Imv)(Akt) quā(Pr)(Abl) tūtum(Adj)(N) populō(D) priōrī(Adj)(D),
+(604) [CHORUS:] gehe wo sicher dem|Volk früheren,
+(605) [CHORUS:] rumpe(Prä)(Imv)(Akt) nec(Kon) sacrō(N)(Abl) violente(Prä)(Akt)(N) sāncta(Adj)(A)
+(605) [CHORUS:] zerbrich und|nicht mit|Heiligem gewaltsam Heiliges
+(606) [CHORUS:] foedera(A) mundī(G).
+(606) [CHORUS:] Bündnisse der|Welt.
+(607) [CHORUS:] Quisquis(Pr)(N) audācis(Adj)(G) tetigit(Per)(Akt) carīnae(G)
+(607) [CHORUS:] wer|auch|immer der|kühnen berührte des|Schiffes
+(608) [CHORUS:] nōbilēs(Adj)(A) rēmōs(A) nemorisque(G)(Kon) sacrī(Adj)(G)
+(608) [CHORUS:] edle Ruder des|Haines|und heiligen
+(609) [CHORUS:] Pēlion(N) dēnsā(Adj)(Abl) spoliāvit(Per)(Akt) umbrā(N)(Abl),
+(609) [CHORUS:] Pelion von|dichtem beraubte Schatten,
+(610) [CHORUS:] quisquis(Pr)(N) intrāvit(Per)(Akt) scopulōs(A) vagantēs(Prä)(Akt)(A)
+(610) [CHORUS:] wer|auch|immer betrat Felsen umherschweifende
+(611) [CHORUS:] et(Kon) tot(Adj)(A) ēmēnsus(Per)(Pas)(N) pelagī(G) labōrēs(A)
+(611) [CHORUS:] und so|viele durch|messen|habend des|Meeres Mühen
+(612) [CHORUS:] barbarā(Adj)(Abl) fūnem(A) religāvit(Per)(Akt) ōrā(N)(Abl)
+(612) [CHORUS:] an|fremder Tau band|fest Küste
+(613) [CHORUS:] raptor(N) externī(Adj)(G) reditūrus(Fu1)(Akt)(N) aurī(G),
+(613) [CHORUS:] Räuber des|fremden zurückkehrend|werdend Goldes,
+(614) [CHORUS:] exitū(N)(Abl) dīrō(Adj)(Abl) temerāta(Per)(Pas)(N) pontī(G)
+(614) [CHORUS:] durch|Ausgang grimmigen entweiht des|Meeres
+(615) [CHORUS:] jūra(A) piāvit(Per)(Akt).
+(615) [CHORUS:] Rechte sühnte.
+(616) [CHORUS:] Exigit(Prä)(Akt) poenās(A) mare(N) prōvocātum(Per)(Pas)(N):
+(616) [CHORUS:] fordert Strafen Meer herausgefordert:
+(617) [CHORUS:] Tīphys(N), in(Prp) prīmīs(Adj)(Abl) domitor(N) profundī(G),
+(617) [CHORUS:] Tiphys, in den|Ersten Bezwinger der|Tiefe,
+(618) [CHORUS:] līquit(Per)(Akt) indoctō(Adj)(D) regimen(A) magistrō(D);
+(618) [CHORUS:] ließ|zurück dem|Unkundigen Steuer Lenker;
+(619) [CHORUS:] lītore(N)(Abl) externō(Adj)(Abl), procul(Adv) ā(Prp) paternīs(Adj)(Abl)
+(619) [CHORUS:] an|Küste fremden, weit von väterlichen
+(620) [CHORUS:] occidēns(Prä)(Akt)(N) rēgnīs(N)(Abl) tumulōque(N)(Abl)(Kon) vīlī(Adj)(Abl)
+(620) [CHORUS:] untergehend den|Reichen und|Grab billigem
+(621) [CHORUS:] tēctus(Per)(Pas)(N) ignōtās(Adj)(A) jacet(Prä)(Akt) inter(Prp) umbrās(A).
+(621) [CHORUS:] bedeckt fremde liegt zwischen Schatten.
+(622) [CHORUS:] Aulis(N) āmissī(Per)(Pas)(G) memor(Adj)(N) inde(Adv) rēgis(G)
+(622) [CHORUS:] Aulis des|Verlorenen eingedenk dorther des|Königs
+(623) [CHORUS:] portibus(N)(Abl) lentīs(Adj)(Abl) retinet(Prä)(Akt) carīnās(A)
+(623) [CHORUS:] mit|Häfen langsamen hält|zurück Schiffe
+(624) [CHORUS:] stāre(Prä)(Inf)(Akt) querentēs(Prä)(Akt)(A).
+(624) [CHORUS:] zu|stehen klagende.
+(625) [CHORUS:] Ille(Pr)(N) vōcālī(Adj)(Abl) genitus(Per)(Pas)(N) Camēnā(N)(Abl),
+(625) [CHORUS:] jener klangvollen geboren von|der|Muse,
+(626) [CHORUS:] cujus(Pr)(G) ad(Prp) chordās(A) modulante(Prä)(Akt)(Abl) plēctrō(N)(Abl)
+(626) [CHORUS:] dessen an die|Saiten modulierend mit|dem|Plektrum
+(627) [CHORUS:] restitit(Per)(Akt) torrēns(Prä)(Akt)(N), siluēre(Per)(Akt) ventī(N),
+(627) [CHORUS:] stand|still reißender|Strom, verstummten Winde,
+(628) [CHORUS:] cui(Pr)(D) suō(Adj)(Abl) cantū(N)(Abl) volucris(N) relictō(Per)(Pas)(Abl)
+(628) [CHORUS:] dem mit|seinem Gesang der|Vogel zurückgelassen
+(629) [CHORUS:] adfuit(Per)(Akt) tōtā(Adj)(Abl) comitante(Prä)(Akt)(Abl) silvā(N)(Abl),
+(629) [CHORUS:] kam|hinzu ganzen begleitend mit|dem|Wald,
+(630) [CHORUS:] Thrāciōs(Adj)(A) sparsus(Per)(Pas)(N) jacuit(Per)(Akt) per(Prp) agrōs(A),
+(630) [CHORUS:] thrakische zerstreut lag durch die|Felder,
+(631) [CHORUS:] at(Kon) caput(N) trīstī(Adj)(Abl) fluitāvit(Per)(Akt) Hebrō(N)(Abl):
+(631) [CHORUS:] aber der|Kopf auf|dem|traurigen trieb auf|dem|Hebrus:
+(632) [CHORUS:] contigit(Per)(Akt) nōtam(Adj)(A) Styga(A) Tartarumque(A)(Kon),
+(632) [CHORUS:] erreichte berühmten|bekannten den|Styx Tartaros|und,
+(633) [CHORUS:] nōn(Pt) reditūrus(Fu1)(Akt)(N).
+(633) [CHORUS:] nicht zurückkehren|werdend.
+(634) [CHORUS:] Strāvit(Per)(Akt) Alcīdēs(N) Aquilōne(N)(Abl) nātōs(Per)(Pas)(A),
+(634) [CHORUS:] streckte|nieder Alkides vom|Boreas Geborene,
+(635) [CHORUS:] patre(N)(Abl) Neptūnō(N)(Abl) genitum(Per)(Pas)(A) necāvit(Per)(Akt)
+(635) [CHORUS:] vom|Vater Neptun geborenen tötete
+(636) [CHORUS:] sūmere(Prä)(Inf)(Akt) innumerās(Adj)(A) solitum(Per)(Pas)(A) figūrās(A):
+(636) [CHORUS:] anzunehmen unzählige gewohnt Gestalten:
+(637) [CHORUS:] ipse(Pr)(N) post(Prp) terrae(G) pelagīque(G)(Kon) pācem(A),
+(637) [CHORUS:] er|selbst nach des|Landes des|Meeres|und Frieden,
+(638) [CHORUS:] post(Prp) ferī(Adj)(G) Dītis(G) patefacta(Per)(Pas)(A) rēgna(A)
+(638) [CHORUS:] nach des|wilden des|Dis geöffneten Reiche
+(639) [CHORUS:] vīvus(Adj)(N) ārdentī(Prä)(Akt)(Abl) recubāns(Prä)(Akt)(N) in(Prp) Oetā(N)(Abl)
+(639) [CHORUS:] lebend auf|dem|brennenden zurückliegend in Oeta
+(640) [CHORUS:] praebuit(Per)(Akt) saevīs(Adj)(Abl) sua(Adj)(A) membra(A) flammīs(N)(Abl)
+(640) [CHORUS:] bot|dar den|grausamen seine Glieder Flammen
+(641) [CHORUS:] tābe(N)(Abl) cōnsūmptus(Per)(Pas)(N) geminī(Adj)(G) cruōris(G),
+(641) [CHORUS:] durch|Fäulnis verzehrt des|zweifachen Blutes,
+(642) [CHORUS:] mūnere(N)(Abl) nūptae(G).
+(642) [CHORUS:] durch|die|Gabe der|Braut.
+(643) [CHORUS:] Strāvit(Per)(Akt) Ancaeum(A) violentus(Adj)(N) ictū(N)(Abl)
+(643) [CHORUS:] streckte|nieder Ankaeus heftig mit|dem|Schlage
+(644) [CHORUS:] saetiger(Adj)(N); frātrem(A), Meleagre(V), mātris(G)
+(644) [CHORUS:] borstiger; den|Bruder, Meleager, der|Mutter
+(645) [CHORUS:] impius(Adj)(N) mactās(Prä)(Akt) morerisque(Prä)(Pas)(Kon) dextrā(N)(Abl)
+(645) [CHORUS:] frevelhaft schlachtest stirbst|und mit|der|Rechten
+(646) [CHORUS:] mātris(G) īrātae(Per)(Pas)(G): meruēre(Per)(Akt) cūnctī(Adj)(N),
+(646) [CHORUS:] der|zornigen Mutter: verdienten alle,
+(647) [CHORUS:] morte(N)(Abl) quod(Pr)(N) crīmen(N) tener(Adj)(N) expiāvit(Per)(Akt)
+(647) [CHORUS:] durch|den|Tod welches Verbrechen zart sühnte
+(648) [CHORUS:] Herculī(D) magnō(Adj)(D) puer(N) inrepertus(Per)(Pas)(N),
+(648) [CHORUS:] dem|Herkules großen Knabe nicht|aufgefunden,
+(649) [CHORUS:] raptus(Per)(Pas)(N), heu(ij), tūtās(Adj)(A) puer(N) inter(Prp) undās(A)?
+(649) [CHORUS:] geraubt, ach, sichere Knabe zwischen Wellen?
+(650) [CHORUS:] īte(Prä)(Imv)(Akt) nunc(Adv), fortēs(Adj)(V), perarāte(Prä)(Imv)(Akt) pontum(A)
+(650) [CHORUS:] geht jetzt, Tapfere, durchpflügt das|Meer
+(651) [CHORUS:] fonte(N)(Abl) timendō(Fu1)(Pas)(Abl)(Gdv).
+(651) [CHORUS:] aus|der|Quelle zu|fürchtenden.
+(652) [CHORUS:] Idmonem(A), quamvīs(Kon) bene(Adv) fāta(A) nōsset(Plq)(Knj)(Akt),
+(652) [CHORUS:] Idmon, obwohl gut Schicksale gekannt|hätte,
+(653) [CHORUS:] condidit(Per)(Akt) serpēns(Prä)(Akt)(N) Libycīs(Adj)(Abl) harēnīs(N)(Abl);
+(653) [CHORUS:] verscharrte Schlange in|libyschen Sanden;
+(654) [CHORUS:] omnibus(Adj)(Abl) vērāx(Adj)(N), sibi(Pr)(D) falsus(Per)(Pas)(N) ūnī(Adj)(D)
+(654) [CHORUS:] allen wahrhaftig, sich|selbst falsch allein
+(655) [CHORUS:] concidit(Per)(Akt) Mopsus(N) caruitque(Per)(Akt)(Kon) Thēbīs(N)(Abl).
+(655) [CHORUS:] stürzte|zusammen Mopsus entbehrte|und Theben.
+(656) [CHORUS:] ille(Pr)(N) sī(Kon) vērē(Adv) cecinit(Per)(Akt) futūra(Adj)(A),
+(656) [CHORUS:] jener wenn wahrhaft sang Zukünftiges,
+(657) [CHORUS:] exul(N) errābit(Fu1)(Akt) Thetidis(G) marītus(N);
+(657) [CHORUS:] Verbannter wird|irren der|Thetis Gatte;
+(658) [CHORUS:] Igne(N)(Abl) fallācī(Adj)(Abl) nocitūrus(Fu1)(Akt)(N) Argīs(D)
+(658) [CHORUS:] mit|dem|Feuer trügerischen schaden|werdend den|Argivern
+(659) [CHORUS:] Nauplius(N) praeceps(Adj)(N) cadet(Fu1)(Akt) in(Prp) profundum(A);
+(659) [CHORUS:] Nauplios kopfvoran wird|fallen in die|Tiefe;
+(661) [CHORUS:] fulmine(N)(Abl) et(Kon) pontō(N)(Abl) moriēns(Prä)(Akt)(N) Oīleī(G)
+(661) [CHORUS:] durch|den|Blitz und durch|das|Meer sterbend des|Oileus
+(662) [CHORUS:] conjugis(G) fātum(A) redimēns(Prä)(Akt)(N) Pheraeī(Adj)(G)
+(662) [CHORUS:] des|Gatten Schicksal einlösend des|Pheräers
+(663) [CHORUS:] uxor(V) impendēs(Fu1)(Akt) animam(A) marītō(D).
+(663) [CHORUS:] Gattin wirst|aufwenden das|Leben dem|Ehemann.
+(664) [CHORUS:] ipse(Pr)(N) quī(Pr)(N) praedam(A) spoliumque(A)(Kon) jussit(Per)(Akt)
+(664) [CHORUS:] er|selbst der Beute Beutestück|und befahl
+(665) [CHORUS:] aureum(Adj)(A) prīmā(Adj)(Abl) revehī(Prä)(Inf)(Pas) carīnā(N)(Abl)
+(665) [CHORUS:] goldenes mit|dem|ersten zurückgetragen|zu|werden Schiff
+(666) [CHORUS:] [ustus(Per)(Pas)(N) accēnsō(Per)(Pas)(Abl) Peliās(N) aēnō(N)(Abl)]
+(666) [CHORUS:] [verbrannt im|erhitzten Pelias Kessel]
+(667) [CHORUS:] ārsit(Per)(Akt) angustās(Adj)(A) vagus(Adj)(N) inter(Prp) undās(A).
+(667) [CHORUS:] brannte enge umherschweifend zwischen Wellen.
+(668) [CHORUS:] Jam(Adv) satis(Adv), dīvī(V), mare(A) vindicāstis(Per)(Akt):
+(668) [CHORUS:] nun genug, Götter, das|Meer habt|gerächt:
+(669) [CHORUS:] parcite(Prä)(Imv)(Akt) jussō(N)(Abl).
+(669) [CHORUS:] schont dem|Befehl.
+=== Akt 3 ===
+(670) [NUTRIX:] Pavet(Prä)(Akt) animus(N), horret(Prä)(Akt): magna(Adj)(N) perniciēs(N) adest(Prä)(Akt).
+(670) [NUTRIX:] bebt der|Geist, schaudert: groß Verderben ist|da.
+(671) [NUTRIX:] immāne(Adj)(N) quantum(Pr)(N) augēscit(Prä)(Akt) et(Kon) sēmet(Pr)(A) dolor(N)
+(671) [NUTRIX:] ungeheuer wie|sehr wächst und sich|selbst Schmerz
+(672) [NUTRIX:] accendit(Prä)(Akt) ipse(Pr)(N) vimque(A)(Kon) praeteritam(Adj)(A) integrat(Prä)(Akt).
+(672) [NUTRIX:] entzündet selbst Kraft|und vergangene erneuert.
+(673) [NUTRIX:] vīdī(Per)(Akt) furentem(Prä)(Akt)(A) saepe(Adv) et(Kon) aggressam(Per)(Pas)(A) deōs(A),
+(673) [NUTRIX:] ich|sah rasend oft und angegriffen|habend die|Götter,
+(674) [NUTRIX:] caelum(A) trahentem(Prä)(Akt)(A): majus(Adj)(N)(Kmp) hīs(Pr)(Abl), majus(Adj)(N)(Kmp) parat(Prä)(Akt)
+(674) [NUTRIX:] den|Himmel ziehend: größer als|diesen, größer bereitet
+(675) [NUTRIX:] Mēdēa(N) mōnstrum(N). namque(Pt) ut(Kon) attonitō(Per)(Pas)(Abl) gradū(N)(Abl)
+(675) [NUTRIX:] Medea Ungeheuer. denn wie betäubtem Schritt
+(676) [NUTRIX:] ēvāsit(Per)(Akt) et(Kon) penetrāle(A) fūnestum(Adj)(A) attigit(Per)(Akt),
+(676) [NUTRIX:] entkam und das|Heiligtum unheilbringendes berührte,
+(677) [NUTRIX:] tōtās(Adj)(A) opēs(A) effundit(Prä)(Akt) et(Kon) quidquid(Pr)(N) diū(Adv)
+(677) [NUTRIX:] alle Mittel|Kräfte ergießt und was|auch|immer lange
+(678) [NUTRIX:] etiam(Adv) ipsa(Pr)(N) timuit(Per)(Akt) prōmit(Prä)(Akt) atque(Kon) omnem(Adj)(A) explicat(Prä)(Akt)
+(678) [NUTRIX:] auch selbst fürchtete holt|hervor und|auch alles entfaltet
+(679) [NUTRIX:] turbam(A) malōrum(Adj)(G), arcāna(Adj)(A) sēcrēta(Adj)(A) abdita(Per)(Pas)(A),
+(679) [NUTRIX:] Schar der|Übel, geheime Geheimnisse verborgene,
+(680) [NUTRIX:] et(Kon) trīste(Adj)(A) laevā(Adj)(Abl) comparāns(Prä)(Akt)(N) sacrum(A) manū(N)(Abl)
+(680) [NUTRIX:] und trauriges mit|der|linken bereitend Opfer Hand
+(681) [NUTRIX:] pestēs(A) vocat(Prä)(Akt) quāscumque(Pr)(A) ferventis(Prä)(Akt)(G) creat(Prä)(Akt)
+(681) [NUTRIX:] Pest|seuchen ruft welche|auch|immer des|brennenden erschafft
+(682) [NUTRIX:] harēna(N) Libyae(G) quāsque(Pr)(A)(Kon) perpetuā(Adj)(Abl) nive(N)(Abl)
+(682) [NUTRIX:] der|Sand Libyens welche|und mit|ewigem Schnee
+(683) [NUTRIX:] Taurus(N) coercet(Prä)(Akt) frīgore(N)(Abl) Arctōō(Adj)(Abl) rigēns(Prä)(Akt)(N),
+(683) [NUTRIX:] der|Taurus hemmt durch|die|Kälte arktische erstarrend,
+(684) [NUTRIX:] et(Kon) omne(Adj)(A) mōnstrum(A). tracta(Per)(Pas)(N) magicīs(Adj)(Abl) cantibus(N)(Abl)
+(684) [NUTRIX:] und jedes Ungeheuer. herbeigezogen durch|magische Lieder
+(685) [NUTRIX:] squāmifera(Adj)(N) latebrīs(N)(Abl) turba(N) dēsertīs(Adj)(Abl) adest(Prä)(Akt).
+(685) [NUTRIX:] schuppen|tragende in|Verstecken Schar verlassenen ist|zugegen.
+(686) [NUTRIX:] hīc(Adv) saeva(Adj)(N) serpēns(Prä)(Akt)(N) corpus(A) immēnsum(Adj)(A) trahit(Prä)(Akt)
+(686) [NUTRIX:] hier wilde Schlange Körper ungeheuren zieht
+(687) [NUTRIX:] trifidamque(Adj)(A)(Kon) linguam(A) exsertat(Prä)(Akt) et(Kon) quaerit(Prä)(Akt) quibus(Pr)(Abl)
+(687) [NUTRIX:] dreigespaltene|und Zunge streckt|vor und sucht wodurch
+(688) [NUTRIX:] mortifera(Adj)(N) veniat(Prä)(Knj)(Akt): carmine(N)(Abl) audītō(Per)(Pas)(Abl) stupet(Prä)(Akt)
+(688) [NUTRIX:] Todes|bringendes möge|kommen: bei|dem|Lied gehört|wordenem erstarrt
+(689) [NUTRIX:] tumidumque(Adj)(A)(Kon) nōdīs(N)(Abl) corpus(A) aggestīs(Per)(Pas)(Abl) plicat(Prä)(Akt)
+(689) [NUTRIX:] geschwollenes|und mit|Knoten Körper aufgehäuften faltet|ein
+(690) [NUTRIX:] cōgitque(Prä)(Akt)(Kon) in(Prp) orbēs(A). 'Parva(Adj)(N) sunt'(Prä)(Akt) inquit(Prä)(Akt) 'mala(N)
+(690) [NUTRIX:] zwingt|und in Ringe. klein sind sagt|sie Übel
+(691) [NUTRIX:] et(Kon) vīle(Adj)(N) tēlum(N) est(Prä)(Akt), īma(Adj)(N) quod(Pr)(N) tellūs(N) creat(Prä)(Akt):
+(691) [NUTRIX:] und wertlos Waffe ist, tiefste welches Erde schafft:
+(692) [NUTRIX:] caelō(N)(Abl) petam(Fu1)(Akt) venēna(A). jam(Adv) jam(Adv) tempus(N) est(Prä)(Akt)
+(692) [NUTRIX:] vom|Himmel werde|suchen Gifte. jetzt sofort Zeit ist
+(693) [NUTRIX:] aliquid(Pr)(N) movēre(Prä)(Inf)(Akt) fraude(N)(Abl) vulgārī(Adj)(Abl) altius(Adv)(Kmp).
+(693) [NUTRIX:] etwas bewegen durch|den|Trug gewöhnlichen höher.
+(694) [NUTRIX:] hūc(Adv) ille(Pr)(N) vastī(Adj)(G) mōre(N)(Abl) torrentis(Prä)(Akt)(G) patēns(Prä)(Akt)(N)
+(694) [NUTRIX:] hierher jener des|gewaltigen nach|Art des|strömenden gähnend|offen
+(695) [NUTRIX:] dēscendat(Prä)(Knj)(Akt) anguis(N), cujus(Pr)(G) immēnsōs(Adj)(A) duae(Adj)(N),
+(695) [NUTRIX:] möge|hinabsteigen Schlange, deren ungeheure zwei,
+(696) [NUTRIX:] major(Adj)(N)(Kmp) minorque(Adj)(N)(Kmp)(Kon), sentiunt(Prä)(Akt) nōdōs(A) ferae(N)
+(696) [NUTRIX:] größere kleinere|und, fühlen Knoten Bestien
+(697) [NUTRIX:] (major(Adj)(N)(Kmp) Pelasgīs(D) apta(Per)(Pas)(N), Sīdoniīs(Adj)(D) minor(Adj)(N)(Kmp)),
+(697) [NUTRIX:] (größere den|Pelasgern geeignet, den|Sidoniern kleinere),
+(698) [NUTRIX:] pressāsque(Per)(Pas)(A)(Kon) tandem(Adv) solvat(Prä)(Knj)(Akt) Ophiūchus(N) manūs(A)
+(698) [NUTRIX:] gedrückten|und endlich möge|lösen Ophiuchus Hände
+(699) [NUTRIX:] vīrusque(A)(Kon) fundat(Prä)(Knj)(Akt); adsit(Prä)(Knj)(Akt) ad(Prp) cantūs(A) meōs(Adj)(A)
+(699) [NUTRIX:] Gift|und möge|ergießen; möge|bei|sein zu Gesänge meine
+(700) [NUTRIX:] lacessere(Prä)(Inf)(Akt) ausus(Per)(Pas)(N) gemina(Adj)(A) Pȳthōn(N) nūmina(A),
+(700) [NUTRIX:] herauszufordern gewagt|habend zweifache Python Gottheiten,
+(701) [NUTRIX:] et(Kon) Hydra(N) et(Kon) omnis(Adj)(N) redeat(Prä)(Knj)(Akt) Herculeā(Adj)(Abl) manū(N)(Abl)
+(701) [NUTRIX:] und Hydra und jede soll|zurückkehren mit|herkulischer Hand
+(702) [NUTRIX:] succīsa(Per)(Pas)(N) serpēns(N) caede(N)(Abl) sē(Pr)(A) reparāns(Prä)(Akt)(N) suā(Adj)(Abl).
+(702) [NUTRIX:] niedergeschlagen Schlange durch|die|Tötung sich wiederherstellend eigener.
+(703) [NUTRIX:] tū(Pr)(N) quoque(Adv) relictīs(Per)(Pas)(Abl) pervigil(Adj)(N) Colchīs(N)(Abl) ades(Prä)(Imv)(Akt),
+(703) [NUTRIX:] du auch mit|den|zurückgelassenen immerwach Kolchern sei|zugegen,
+(704) [NUTRIX:] sōpīte(Per)(Pas)(V) prīmum(Adv) cantibus(N)(Abl), serpēns(V), meīs(Adj)(Abl).'
+(704) [NUTRIX:] schlaf|gelullter zuerst durch|Lieder, Schlange, meinen.'
+(705) [NUTRIX:] Postquam(Kon) ēvocāvit(Per)(Akt) omne(Adj)(A) serpentum(G) genus(A),
+(705) [NUTRIX:] nachdem hat|herausgerufen jedes der|Schlangen Geschlecht,
+(706) [NUTRIX:] congerit(Prä)(Akt) in(Prp) ūnum(Adj)(A) frūgis(G) īnfaustae(Adj)(G) mala(A):
+(706) [NUTRIX:] häuft in eines der|Frucht unheilvollen Übel:
+(707) [NUTRIX:] quaecumque(Pr)(N) generat(Prä)(Akt) invius(Adj)(N) saxīs(N)(Abl) Eryx(N),
+(707) [NUTRIX:] was|auch|immer erzeugt unzugängliche durch|Felsen Eryx,
+(708) [NUTRIX:] quae(Pr)(N) fert(Prä)(Akt) opertīs(Per)(Pas)(Abl) hieme(N)(Abl) perpetuā(Adj)(Abl) jugīs(N)(Abl)
+(708) [NUTRIX:] die trägt bedeckten durch|den|Winter dauernden Höhen
+(709) [NUTRIX:] sparsus(Per)(Pas)(N) cruōre(N)(Abl) Caucasus(N) Promētheī(G),
+(709) [NUTRIX:] besprengt mit|Blut Kaukasus des|Prometheus,
+(710) [NUTRIX:] pharetrāque(N)(Abl)(Kon) pugnāx(Adj)(N) Mēdus(N) aut(Kon) Parthī(N) levēs(Adj)(N),
+(710) [NUTRIX:] mit|dem|Köcher|und kampffreudig Meder oder Parther Leichte,
+(711) [NUTRIX:] et(Kon) quīs(Pr)(Abl) sagittās(A) dīvitēs(Adj)(N) Arabes(N) linunt(Prä)(Akt)
+(711) [NUTRIX:] und mit|welchen Pfeile reiche Araber bestreichen
+(712) [NUTRIX:] aut(Kon) quōs(Pr)(A) sub(Prp) axe(N)(Abl) frīgidō(Adj)(Abl) sūcōs(A) legunt(Prä)(Akt)
+(712) [NUTRIX:] oder welche unter dem|Himmelsgewölbe kalten Säfte sammeln
+(713) [NUTRIX:] lūcīs(N)(Abl) Suēbae(Adj)(Abl) nōbilēs(Adj)(N) Hyrcāniīs(Adj)(Abl);
+(713) [NUTRIX:] in|Wäldern suebischen berühmt hyrcanischen;
+(714) [NUTRIX:] quodcumque(Pr)(N) tellūs(N) vēre(N)(Abl) nīdificō(Adj)(Abl) creat(Prä)(Akt)
+(714) [NUTRIX:] was|auch|immer Erde im|Frühling nest|bauenden erschafft
+(715) [NUTRIX:] aut(Kon) rigida(Adj)(N) cum(Kon) jam(Adv) brūma(N) dēcussit(Per)(Akt) decus(A)
+(715) [NUTRIX:] oder starre wenn schon Mittwinter abgeschüttelt|hat Schmuck
+(716) [NUTRIX:] nemorum(G) et(Kon) nivālī(Adj)(Abl) cūncta(Adj)(A) cōnstrīnxit(Per)(Akt) gelū(N)(Abl),
+(716) [NUTRIX:] der|Haine und schneeigem alles hat|zusammengepresst durch|Frost,
+(717) [NUTRIX:] quodcumque(Pr)(N) grāmen(N) flōre(N)(Abl) mortiferō(Adj)(Abl) viret(Prä)(Akt),
+(717) [NUTRIX:] was|auch|immer Gras mit|Blüte tödlicher grünt,
+(718) [NUTRIX:] dīrusve(Adj)(N)(Kon) tortīs(Per)(Pas)(Abl) sūcus(N) in(Prp) rādīcibus(N)(Abl)
+(718) [NUTRIX:] schrecklicher|oder gedrehten Saft in Wurzeln
+(719) [NUTRIX:] causās(A) nocendī(Ger)(G) gignit(Prä)(Akt), attrectat(Prä)(Akt) manū(N)(Abl).
+(719) [NUTRIX:] Ursachen des|Schadens|Zufügens erzeugt, berührt mit|der|Hand.
+(720) [NUTRIX:] Haemonius(Adj)(N) illās(Pr)(A) contulit(Per)(Akt) pestēs(A) Athōs(N),
+(720) [NUTRIX:] thessalischer jene hat|vereinigt Seuchen Athos,
+(721) [NUTRIX:] hās(Pr)(A) Pindus(N) ingēns(Adj)(N), illa(Pr)(N) Pangaeī(Adj)(G) jugīs(N)(Abl)
+(721) [NUTRIX:] diese Pindos gewaltig, jene des|Pangaion auf|den|Bergrücken
+(722) [NUTRIX:] teneram(Adj)(A) cruentā(Adj)(Abl) falce(N)(Abl) dēposuit(Per)(Akt) comam(A);
+(722) [NUTRIX:] zarte blutiger Sichel hat|niedergelegt Haar;
+(723) [NUTRIX:] hās(Pr)(A) aluit(Per)(Akt) altum(Adj)(A) gurgitem(A) Tigris(N) premēns(Prä)(Akt)(N),
+(723) [NUTRIX:] diese hat|genährt tiefen Strudel Tigris drückend,
+(724) [NUTRIX:] Dānuvius(N) illās(Pr)(A), hās(Pr)(A) per(Prp) ārentīs(Per)(Pas)(A) plagās(A)
+(724) [NUTRIX:] Donau jene, diese durch ausgetrocknete Gebiete
+(725) [NUTRIX:] tepidīs(Adj)(Abl) Hydaspēs(N) gemmifer(Adj)(N) currēns(Prä)(Akt)(N) aquīs(N)(Abl),
+(725) [NUTRIX:] warmen Hydaspes edelstein|tragender fließend Wässern,
+(726) [NUTRIX:] nōmenque(A)(Kon) terrīs(D) quī(Pr)(N) dedit(Per)(Akt) Baetīs(D) suīs(Adj)(D)
+(726) [NUTRIX:] Namen|und den|Ländern der|welcher gab dem|Baetis seinen
+(727) [NUTRIX:] Hesperia(Adj)(N) pulsāns(Prä)(Akt)(N) maria(A) languentī(Per)(Pas)(Abl) vadō(N)(Abl).
+(727) [NUTRIX:] hesperischer schlagend Meere mit|schlaffem Seicht|Wasser.
+(728) [NUTRIX:] haec(Pr)(N) passa(Per)(Pas)(N) ferrum(A) est(Prä)(Akt), dum(Kon) parat(Prä)(Akt) Phoebus(N) diem(A),
+(728) [NUTRIX:] dieses erlitten|habend Eisen ist, während bereitet Phoebus Tag,
+(729) [NUTRIX:] illīus(Pr)(G) altā(Adj)(Abl) nocte(N)(Abl) succīsus(Per)(Pas)(N) frutex(N);
+(729) [NUTRIX:] dessen hoher Nacht abgeschnitten Strauch;
+(730) [NUTRIX:] at(Kon) hujus(Pr)(G) ungue(N)(Abl) secta(Per)(Pas)(N) cantātō(Per)(Pas)(Abl) seges(N).
+(730) [NUTRIX:] aber dessen mit|dem|Nagel geschnitten beschworenem Saat.
+(731) [NUTRIX:] Mortifera(Adj)(A) carpit(Prä)(Akt) grāmina(A) ac(Kon) serpentium(G)
+(731) [NUTRIX:] tödliche pflückt Gräser und der|Schlangen
+(732) [NUTRIX:] saniem(A) exprimit(Prä)(Akt) miscetque(Prä)(Akt)(Kon) et(Kon) obscēnās(Adj)(A) avēs(A)
+(732) [NUTRIX:] Eiter preßt|aus mischt|und und anstößige Vögel
+(733) [NUTRIX:] maestīque(Adj)(G)(Kon) cor(A) būbōnis(G) et(Kon) raucae(Adj)(G) strigis(G)
+(733) [NUTRIX:] traurigen|und Herz des|Uhus und heiseren Eule
+(734) [NUTRIX:] exsecta(Per)(Pas)(N) vīvae(Adj)(G) vīscera(A). haec(Pr)(N) scelerum(G) artifex(N)
+(734) [NUTRIX:] herausgeschnittene der|Lebenden Eingeweide. dies der|Verbrechen Künstlerin
+(735) [NUTRIX:] discrēta(Per)(Pas)(N) pōnit(Prä)(Akt): hīs(Pr)(D) rapāx(Adj)(N) vīs(N) ignium(G),
+(735) [NUTRIX:] getrennte setzt: diesen raubgierige Kraft des|Feuers,
+(736) [NUTRIX:] hīs(Pr)(D) gelida(Adj)(N) pigrī(Adj)(G) frīgoris(G) glaciēs(N) inest(Prä)(Akt).
+(736) [NUTRIX:] diesen kalter träge der|Kälte Eis ist|inne.
+(737) [NUTRIX:] addit(Prä)(Akt) venēnīs(D) verba(A) nōn(Pt) illīs(Pr)(D) minus(Adv)(Kmp)
+(737) [NUTRIX:] fügt|hinzu den|Giften Worte nicht jenen weniger
+(738) [NUTRIX:] metuenda(Fu1)(Pas)(N)(Gdv). Sonuit(Per)(Akt) ecce(ij) vēsānō(Adj)(Abl) gradū(N)(Abl)
+(738) [NUTRIX:] zu|fürchtende. erscholl siehe wahnsinnigem Schritt
+(739) [NUTRIX:] canitque(Prä)(Akt)(Kon). mundus(N) vōcibus(N)(Abl) prīmīs(Adj)(Abl) tremit(Prä)(Akt).
+(739) [NUTRIX:] singt|und. Welt mit|Stimmen ersten bebt.
+(740) [MEDEA:] Comprecor(Prä)(Akt) vulgus(A) silentum(Adj)(G) vōsque(Pr)(A)(Kon) fērālēs(Adj)(A) deōs(A)
+(740) [MEDEA:] ich|beschwöre Volk der|Schweigenden euch|und todesbringende Götter
+(741) [MEDEA:] et(Kon) Chaos(A) caecum(Adj)(A) atque(Kon) opācam(Adj)(A) Dītis(G) umbrōsī(Adj)(G) domum(A),
+(741) [MEDEA:] und Chaos blinden und dunkle des|Dis schattigen Haus,
+(742) [MEDEA:] Tartarī(G) rīpīs(N)(Abl) ligātōs(Per)(Pas)(A) squālidae(Adj)(G) Mortis(G) specūs(A).
+(742) [MEDEA:] des|Tartarus an|Ufern gebunden der|schmutzigen des|Todes Höhlen.
+(743) [MEDEA:] supplicīs(Adj)(G), animae(V), remissīs(Per)(Pas)(Abl) currite(Prä)(Imv)(Akt) ad(Prp) thalamōs(A) novōs(Adj)(A):
+(743) [MEDEA:] der|Flehenden, Seelen, entsandten eilt zu Brautgemächern neuen:
+(744) [MEDEA:] rota(N) resistat(Prä)(Knj)(Akt) membra(A) torquēns(Prä)(Akt)(N), tangat(Prä)(Knj)(Akt) Ixīōn(N) humum(A),
+(744) [MEDEA:] Rad möge|stehenbleiben Glieder drehend, möge|berühren Ixion Erde,
+(745) [MEDEA:] Tantalus(N) sēcūrus(Adj)(N) undās(A) hauriat(Prä)(Knj)(Akt) Pīrēnidas(Adj)(A),
+(745) [MEDEA:] Tantalus sorglos Wellen möge|schöpfen pirenidische,
+(746) [MEDEA:] [gravior(Adj)(N)(Kmp) ūnī(Adj)(D) poena(N) sedeat(Prä)(Knj)(Akt) conjugis(G) socerō(D) meī(Pr)(G)]
+(746) [MEDEA:] [schwerere dem|einen Strafe möge|sitzen des|Gattens dem|Schwiegervater meines]
+(747) [MEDEA:] lūbricus(Adj)(N) per(Prp) saxa(A) retrō(Adv) Sīsyphum(A) solvat(Prä)(Knj)(Akt) lapis(N).
+(747) [MEDEA:] glitschiger durch Felsen zurück Sisyphos möge|lösen Stein.
+(748) [MEDEA:] vōs(Pr)(A) quoque(Adv), urnīs(N)(Abl) quās(Pr)(A) forātīs(Per)(Pas)(Abl) inritus(Adj)(N) lūdit(Prä)(Akt) labor(N),
+(748) [MEDEA:] euch auch, mit|den|Krügen welche durchlöcherten vergeblicher spielt Mühe,
+(749) [MEDEA:] Danaides(V), coīte(Prä)(Imv)(Akt): vestrās(Pr)(A) hic(Pr)(N) diēs(N) quaerit(Prä)(Akt) manūs(A).
+(749) [MEDEA:] Danaiden, kommt|zusammen: eure dieser Tag sucht Hände.
+(750) [MEDEA:] nunc(Adv) meīs(Adj)(Abl) vocāta(Per)(Pas)(V) sacrīs(N)(Abl), noctium(G) sīdus(V), venī(Prä)(Imv)(Akt)
+(750) [MEDEA:] jetzt durch|meine gerufen Weihen, der|Nächte Stern, komm
+(751) [MEDEA:] pessimōs(Adj)(A)(Sup) indūta(Per)(Pas)(N) vultūs(A), fronte(N)(Abl) nōn(Pt) ūnā(Adj)(Abl) mināx(Adj)(N).
+(751) [MEDEA:] äußerst|schlimme angetan Gesichter, mit|der|Stirn nicht einen drohend.
+(752) [MEDEA:] Tibi(Pr)(D) mōre(N)(Abl) gentis(G) vinculō(N)(Abl) solvēns(Prä)(Akt)(N) comam(A)
+(752) [MEDEA:] dir nach|Sitte des|Volkes mit|dem|Band lösend Haar
+(753) [MEDEA:] sēcrēta(Adj)(A) nūdō(Adj)(Abl) nemora(A) lūstrāvī(Per)(Akt) pede(N)(Abl)
+(753) [MEDEA:] geheime bloßem Haine durchschritt|ich mit|dem|Fuß
+(754) [MEDEA:] et(Kon) ēvocāvī(Per)(Akt) nūbibus(N)(Abl) siccīs(Adj)(Abl) aquās(A)
+(754) [MEDEA:] und rief|heraus aus|Wolken trockenen Wasser
+(755) [MEDEA:] ēgīque(Per)(Akt)(Kon) ad(Prp) īmum(Adj)(A) maria(A), et(Kon) Ōceanus(N) gravēs(Adj)(A)
+(755) [MEDEA:] trieb|und zu tiefstem Meere, und Ozean schwere
+(756) [MEDEA:] interius(Adv) undās(A) aestibus(N)(Abl) victīs(Per)(Pas)(Abl) dedit(Per)(Akt),
+(756) [MEDEA:] weiter|hinein Wogen von|Strömungen besiegten gab,
+(757) [MEDEA:] pariterque(Adv)(Kon) mundus(N) lēge(N)(Abl) cōnfūsā(Per)(Pas)(Abl) aetheris(G)
+(757) [MEDEA:] gleichermaßen|und Welt durch|Gesetz verwirrten des|Äthers
+(758) [MEDEA:] et(Kon) sōlem(A) et(Kon) astra(A) vīdit(Per)(Akt) et(Kon) vetitum(Per)(Pas)(A) mare(A)
+(758) [MEDEA:] und Sonne und Sterne sah und verbotenes Meer
+(759) [MEDEA:] tetigistis(Per)(Akt), ursae(V). temporum(G) flexī(Per)(Pas)(N) vicēs(A):
+(759) [MEDEA:] habt|berührt, Bären. der|Zeiten gebogen Wechsel:
+(760) [MEDEA:] aestīva(Adj)(N) tellūs(N) horruit(Per)(Akt) cantū(N)(Abl) meō(Adj)(Abl),
+(760) [MEDEA:] sommerliche Erde erschauerte durch|Gesang meinen,
+(761) [MEDEA:] coācta(Per)(Pas)(N) messem(A) vīdit(Per)(Akt) hībernam(Adj)(A) Cerēs(N);
+(761) [MEDEA:] gezwungene Ernte sah winterliche Ceres;
+(762) [MEDEA:] violenta(Adj)(N) Phāsis(N) vertit(Per)(Akt) in(Prp) fontem(A) vada(A)
+(762) [MEDEA:] heftige Phasis wandte in Quelle Furten
+(763) [MEDEA:] et(Kon) Hister(N), in(Prp) tot(Adj)(A) ōra(A) dīvīsus(Per)(Pas)(N), trucēs(Adj)(A)
+(763) [MEDEA:] und Hister, in so|viele Mündungen geteilt, wilde
+(764) [MEDEA:] compressit(Per)(Akt) undās(A) omnibus(Adj)(Abl) rīpīs(N)(Abl) piger(Adj)(N);
+(764) [MEDEA:] drückte|zusammen Wellen an|allen Ufern träge;
+(765) [MEDEA:] sonuēre(Per)(Akt) flūctūs(N), tumuit(Per)(Akt) īnsānum(Adj)(N) mare(N)
+(765) [MEDEA:] erschallten Wogen, quoll|empor wahnsinniges Meer
+(766) [MEDEA:] tacente(Prä)(Akt)(Abl) ventō(N)(Abl); nemoris(G) antīquī(Adj)(G) domus(N)
+(766) [MEDEA:] bei|schweigendem Wind; des|Haines alten Haus
+(767) [MEDEA:] āmīsit(Per)(Akt) umbrās(A) vōcis(G) imperiō(Abl) meae(G).
+(767) [MEDEA:] hat|verloren die|Schatten der|Stimme durch|den|Befehl meiner.
+(768) [MEDEA:] diē(Abl) relictō(Per)(Pas)(Abl) Phoebus(N) in(Prp) mediō(Abl) stetit(Per)(Akt),
+(768) [MEDEA:] bei|dem|Tag verlassenem Phoebus in der|Mitte stand,
+(769) [MEDEA:] Hyadesque(N)(Kon) nostrīs(Abl) cantibus(Abl) mōtae(Per)(Pas)(N) labant(Prä)(Akt):
+(769) [MEDEA:] Hyaden|und unseren Liedern bewegt wanken:
+(770) [MEDEA:] adesse(Prä)(Inf)(Akt) sacrīs(D) tempus(N) est(Prä)(Akt), Phoebē(V), tuīs(D).
+(770) [MEDEA:] zu|gegen|sein den|Riten Zeit ist, Phoebe, deinen.
+=== Monodie (Epode) ===
+(771) [MEDEA:] Tibi(D) haec(Pr)(N) cruenta(Adj)(N) serta(N) texuntur(Prä)(Pas) manū(Abl),
+(771) [MEDEA:] für|dich diese blutigen Kränze werden|geflochten mit|der|Hand,
+(772) [MEDEA:] novēna(Adj)(N) quae(Pr)(A) serpēns(N) ligat(Prä)(Akt),
+(772) [MEDEA:] neunfache welche Schlange bindet,
+(773) [MEDEA:] tibi(D) haec(Pr)(A) Typhōeus(N) membra(A) quae(Pr)(A) discors(Adj)(N) tulit(Per)(Akt),
+(773) [MEDEA:] für|dich diese Typhoeus Glieder welche zwieträchtige brachte,
+(774) [MEDEA:] quī(Pr)(N) rēgna(A) concussit(Per)(Akt) Jovis(G).
+(774) [MEDEA:] der Reiche erschütterte des|Jupiter.
+(775) [MEDEA:] vectōris(G) istīc(Adv) perfidī(Adj)(G) sanguis(N) inest(Prä)(Akt),
+(775) [MEDEA:] des|Trägers dort treulosen Blut ist|enthalten,
+(776) [MEDEA:] quem(Pr)(A) Nessus(N) exspīrāns(Prä)(Akt)(N) dedit(Per)(Akt).
+(776) [MEDEA:] den Nessus aus|hauchend gab.
+(777) [MEDEA:] Oetaeus(Adj)(N) istō(Abl) cinere(Abl) dēfēcit(Per)(Akt) rogus(N),
+(777) [MEDEA:] oetäischer mit|dieser Asche erlosch Scheiterhaufen,
+(778) [MEDEA:] quī(Pr)(N) vīrus(A) Herculeum(Adj)(A) bibit(Prä)(Akt).
+(778) [MEDEA:] der Gift herkulisches trinkt.
+(779) [MEDEA:] piae(Adj)(G) sorōris(G), impiae(Adj)(G) mātris(G), facem(A)
+(779) [MEDEA:] der|frommen Schwester, der|frevlerischen Mutter, Fackel
+(780) [MEDEA:] ultrīcis(Adj)(G) Althaeae(G) vidēs(Prä)(Akt).
+(780) [MEDEA:] der|rächenden der|Althaea siehst.
+(781) [MEDEA:] relīquit(Per)(Akt) istās(Pr)(A) inviō(Adj)(Abl) plūmās(A) specū(Abl)
+(781) [MEDEA:] ließ|zurück diese in|wegloser Federn Höhle
+(782) [MEDEA:] Harpyia(N), dum(Kon) Zētēn(A) fugit(Prä)(Akt).
+(782) [MEDEA:] Harpyie, während den|Zetes flieht.
+(783) [MEDEA:] hīs(Pr)(D) adice(Prä)(Imv)(Akt) pinnās(A) sauciae(Adj)(G) Stymphālidos(G)
+(783) [MEDEA:] zu|diesen füge|hinzu Flügel der|verwundeten der|Stymphalis
+(784) [MEDEA:] Lernaea(Adj)(A) passae(Per)(Pas)(N) spīcula(A).
+(784) [MEDEA:] lernäischen erlittene Wurfspieße.
+(785) [MEDEA:] sonuistis(Per)(Akt), ārae(V), tripodas(A) agnōscō(Prä)(Akt) meōs(Adj)(A)
+(785) [MEDEA:] habt|geklungen, Altäre, Dreifüße erkenne|ich meine
+(786) [MEDEA:] favente(Prä)(Akt)(Abl) commōtōs(Per)(Pas)(A) deā(Abl).
+(786) [MEDEA:] bei|begünstigender bewegte Göttin.
+=== Monodie (Anapäste) ===
+(787) [MEDEA:] Videō(Prä)(Akt) Triviae(G) currūs(A) agilēs(Adj)(A),
+(787) [MEDEA:] ich|sehe der|Trivia Wagen behende,
+(788) [MEDEA:] nōn(Pt) quōs(Pr)(A) plēnō(Adj)(Abl) lūcida(Adj)(Abl) vultū(Abl)
+(788) [MEDEA:] nicht welche mit|vollem hellem Antlitz
+(789) [MEDEA:] pernox(Adj)(N) agitat(Prä)(Akt),
+(789) [MEDEA:] nächtelang treibt,
+(790) [MEDEA:] sed(Kon) quōs(Pr)(A) faciē(Abl) lūrida(Adj)(Abl) maestā(Adj)(Abl),
+(790) [MEDEA:] sondern welche mit|dem|Gesicht bleichem traurigen,
+(791) [MEDEA:] cum(Kon) Thessalicīs(Adj)(Abl) vexāta(Per)(Pas)(N) minīs(Abl)
+(791) [MEDEA:] wenn thessalischen gequälte Drohungen
+(792) [MEDEA:] caelum(A) frēnō(Abl) propiōre(Adj)(Abl)(Kmp) legit(Prä)(Akt).
+(792) [MEDEA:] den|Himmel mit|dem|Zügel näheren durch|mißt.
+(793) [MEDEA:] sīc(Adv) face(Abl) trīstem(Adj)(A) pallida(Adj)(N) lūcem(A)
+(793) [MEDEA:] so mit|der|Fackel trauriges bleiches Licht
+(794) [MEDEA:] funde(Prä)(Imv)(Akt) per(Prp) aurās(A),
+(794) [MEDEA:] gieße durch die|Lüfte,
+(795) [MEDEA:] inque(Prp)(Kon) auxilium(A), Dictynna(V), tuum(Adj)(A)
+(795) [MEDEA:] in|und Hilfe, Dictynna, deine
+(796) [MEDEA:] pretiōsa(Adj)(N) sonent(Prä)(Knj)(Akt) aera(A) Corinthī(G).
+(796) [MEDEA:] kostbare mögen|erklingen Erze von|Korinth.
+(797) [MEDEA:] Tibi(D) sanguineō(Adj)(Abl) caespite(Abl) sacrum(N)
+(797) [MEDEA:] für|dich mit|blutgetränktem Rasen Opfer
+(798) [MEDEA:] sollemne(Adj)(A) damus(Prä)(Akt),
+(798) [MEDEA:] feierliches geben|wir,
+(799) [MEDEA:] tibi(D) dē(Prp) mediō(Adj)(Abl) rapta(Per)(Pas)(N) sepulcrō(Abl)
+(799) [MEDEA:] dir aus mittlerem geraubte Grab
+(800) [MEDEA:] fax(N) nocturnōs(Adj)(A) sustulit(Per)(Akt) ignēs(A),
+(800) [MEDEA:] Fackel nächtliche hob|empor Feuer,
+(801) [MEDEA:] tibi(D) mōta(Per)(Pas)(N) caput(A) flexā(Per)(Pas)(Abl) vōcēs(A)
+(801) [MEDEA:] dir bewegt den|Kopf mit|gebeugter Stimmen
+(802) [MEDEA:] cervīce(Abl) dedī(Per)(Akt),
+(802) [MEDEA:] mit|dem|Nacken gab|ich,
+(803) [MEDEA:] tibi(D) fūnereō(Adj)(Abl) dē(Prp) mōre(Abl) jacēns(Prä)(Akt)(N)
+(803) [MEDEA:] für|dich bestattungsartigen nach Brauch liegend
+(804) [MEDEA:] passōs(Per)(Pas)(A) cingit(Prä)(Akt) vitta(N) capillōs(A),
+(804) [MEDEA:] herabgelassene umgürtet Binde Haare,
+(805) [MEDEA:] rāmus(N) ab(Prp) undā(Abl),
+(805) [MEDEA:] Zweig von der|Welle,
+(806) [MEDEA:] tibi(D) nūdātō(Per)(Pas)(Abl) pectore(Abl) maenas(N)
+(806) [MEDEA:] dir mit|entblößtem Brust Mänade
+(807) [MEDEA:] sacrō(Adj)(Abl) feriam(Fu1)(Akt) bracchia(A) cultrō(Abl).
+(807) [MEDEA:] mit|heiligem werde|ich|schlagen Arme mit|dem|Messer.
+(808) [MEDEA:] mānet(Prä)(Akt) noster(Adj)(N) sanguis(N) ad(Prp) ārās(A):
+(808) [MEDEA:] bleibt unser Blut an den|Altären:
+(809) [MEDEA:] assuēsce(Prä)(Imv)(Akt), manus(V), stringere(Prä)(Inf)(Akt) ferrum(A)
+(809) [MEDEA:] gewöhne|dich, Hände, zu|ziehen Eisen
+(810) [MEDEA:] cārōsque(Adj)(A)(Kon) patī(Prä)(Inf)(Pas) posse(Prä)(Inf)(Akt) cruōrēs(A):
+(810) [MEDEA:] teuren|und zu|erleiden zu|können Blutmassen:
+(811) [MEDEA:] sacrum(Adj)(A) laticem(A) percussa(Per)(Pas)(N) dedī(Per)(Akt).
+(811) [MEDEA:] heiligen Saft geschlagen gab|ich.
+(812) [MEDEA:] Quodsī(Kon) nimium(Adv) saepe(Adv) vocārī(Prä)(Inf)(Pas)
+(812) [MEDEA:] wenn|also allzu oft gerufen|zu|werden
+(813) [MEDEA:] quereris(Prä)(Pas) vōtīs(Abl), ignōsce(Prä)(Imv)(Akt), precor(Prä)(Pas):
+(813) [MEDEA:] beklagst|du bei|den|Gelübden, vergib, ich|bitte:
+(814) [MEDEA:] causa(N) vocandī(Ger)(G), Persēi(V), tuōs(Adj)(A)
+(814) [MEDEA:] Grund des|Rufens, Perseus, deine
+(815) [MEDEA:] saepius(Adv)(Kmp) arcūs(A)
+(815) [MEDEA:] häufiger Bogen
+(816) [MEDEA:] ūna(Adj)(N) atque(Kon) eadem(Adj)(N) est(Prä)(Akt) semper(Adv), Iāsōn(V).
+(816) [MEDEA:] eine und dieselbe ist immer, Jason.
+(817) [MEDEA:] Tū(Pr)(N) nunc(Adv) vestēs(A) tinge(Prä)(Imv)(Akt) Creūsae(G),
+(817) [MEDEA:] du jetzt Kleider tränke der|Kreusa,
+(818) [MEDEA:] quās(Pr)(A) cum(Kon) prīmum(Adv) sūmpserit(Per)(Knj)(Akt), īmās(Adj)(A)
+(818) [MEDEA:] welche sobald zuerst angelegt|haben|wird, die|untersten
+(819) [MEDEA:] ūrat(Prä)(Knj)(Akt) serpēns(N) flamma(N) medullās(A).
+(819) [MEDEA:] möge|brennen Schlange Flamme Mark.
+(820) [MEDEA:] Ignis(N) fulvō(Adj)(Abl) clūsus(Per)(Pas)(N) in(Prp) aurō(Abl)
+(820) [MEDEA:] Feuer in|gelblichem eingeschlossen in Gold
+(821) [MEDEA:] latet(Prä)(Akt) obscūrus(Adj)(N), quem(Pr)(A) mihi(Pr)(D) caelī(G)
+(821) [MEDEA:] verbirgt|sich dunkel, den mir des|Himmels
+(822) [MEDEA:] quī(Pr)(N) fūrta(A) luit(Per)(Akt) viscere(Abl) fētō(Adj)(Abl)
+(822) [MEDEA:] der Diebstähle büßte mit|Eingeweide trächtigen
+(823) [MEDEA:] dedit(Per)(Akt) et(Kon) docuit(Per)(Akt) condere(Prä)(Inf)(Akt) vīrēs(A)
+(823) [MEDEA:] gab und lehrte zu|bergen Kräfte
+(824) [MEDEA:] arte(Abl), Promētheus(N); dedit(Per)(Akt) et(Kon) tenuī(Adj)(Abl)
+(824) [MEDEA:] durch|Kunst, Prometheus; gab und dünnem
+(825) [MEDEA:] sulphure(Abl) tēctōs(Per)(Pas)(A) Mulciber(N) ignēs(A),
+(825) [MEDEA:] mit|Schwefel bedeckte Mulciber Feuer,
+(826) [MEDEA:] et(Kon) vīvācis(Adj)(G) fulgura(A) flammae(G)
+(826) [MEDEA:] und der|lebhaften Blitze der|Flamme
+(827) [MEDEA:] dē(Prp) cognātō(Adj)(Abl) Phaethonte(Abl) tulī(Per)(Akt).
+(827) [MEDEA:] von verwandtem Phaethon trug|ich.
+(828) [MEDEA:] habeō(Prä)(Akt) mediae(Adj)(G) dōna(A) Chimaerae(G),
+(828) [MEDEA:] habe|ich der|mittleren Gaben der|Chimaira,
+(829) [MEDEA:] habeō(Prä)(Akt) flammās(A) ustō(Per)(Pas)(Abl) taurī(G)
+(829) [MEDEA:] habe|ich Flammen aus|verbranntem des|Stieres
+(830) [MEDEA:] gutture(Abl) raptās(Per)(Pas)(A),
+(830) [MEDEA:] aus|der|Kehle geraubte,
+(831) [MEDEA:] quās(Pr)(A) permixtō(Per)(Pas)(Abl) felle(Abl) Medūsae(G)
+(831) [MEDEA:] welche mit|vermischter Galle der|Medusa
+(832) [MEDEA:] tacitum(Adj)(A) jussī(Per)(Akt) servāre(Prä)(Inf)(Akt) malum(A).
+(832) [MEDEA:] stilles ich|habe|befohlen zu|bewahren Übel.
+(833) [MEDEA:] Adde(Prä)(Imv)(Akt) venēnīs(D) stimulōs(A), Hecatē(V),
+(833) [MEDEA:] füge|hinzu den|Giften Stachel, Hekate,
+(834) [MEDEA:] dōnīsque(Abl)(Kon) meīs(Abl) sēmina(A) flammae(G)
+(834) [MEDEA:] und|mit|Gaben meinen Samen der|Flamme
+(835) [MEDEA:] fallant(Prä)(Knj)(Akt) vīsūs(A) tāctūsque(A)(Kon) ferant(Prä)(Knj)(Akt),
+(835) [MEDEA:] mögen|täuschen Sehen Berührungen|und mögen|tragen,
+(836) [MEDEA:] meet(Prä)(Akt) in(Prp) pectus(A) vēnāsque(A)(Kon) calor(N),
+(836) [MEDEA:] dringt in die|Brust Adern|und Wärme,
+(837) [MEDEA:] stillent(Prä)(Knj)(Akt) artūs(A) ossaque(A)(Kon) fūment(Prä)(Knj)(Akt)
+(837) [MEDEA:] mögen|tröpfeln Glieder Knochen|und mögen|rauchen
+(838) [MEDEA:] vincatque(Prä)(Knj)(Akt)(Kon) suās(Adj)(A) flagrante(Prä)(Akt)(Abl) comā(Abl)
+(838) [MEDEA:] möge|übertreffen|und ihre mit|flammender Haarpracht
+(839) [MEDEA:] nova(Adj)(N) nūpta(N) facēs(A).
+(839) [MEDEA:] neue Braut Fackeln.
+(840) [MEDEA:] Vōta(N) tenentur(Prä)(Pas): ter(Adv) lātrātūs(N)
+(840) [MEDEA:] Gelübde werden|erfüllt: dreimal Gebell
+(841) [MEDEA:] audāx(Adj)(N) Hecatē(N) dedit(Per)(Akt) et(Kon) sacrōs(Adj)(A)
+(841) [MEDEA:] kühn Hekate gab und heilige
+(842) [MEDEA:] ēdidit(Per)(Akt) ignēs(A) face(Abl) lūctiferā(Adj)(Abl).
+(842) [MEDEA:] entließ Feuer mit|der|Fackel leidbringenden.
+(843) [MEDEA:] Perācta(Per)(Pas)(N) vīs(N) est(Prä)(Akt) omnis(Adj)(N): hūc(Adv) gnātōs(A) vocā(Prä)(Imv)(Akt),
+(843) [MEDEA:] vollendet Kraft ist ganz: hierher Söhne rufe,
+(844) [MEDEA:] pretiōsa(Adj)(A) per(Prp) quōs(Pr)(A) dōna(A) nūbentī(Prä)(Akt)(D) feram(Fu1)(Akt).
+(844) [MEDEA:] kostbare durch welche Gaben der|Heiratenden werde|ich|tragen.
+(845) [MEDEA:] Īte(Prä)(Imv)(Akt), īte(Prä)(Imv)(Akt), nātī(V), mātris(G) īnfaustae(Adj)(G) genus(N),
+(845) [MEDEA:] geht, geht, Söhne, der|Mutter unheilvollen Geschlecht,
+(846) [MEDEA:] plācāte(Prä)(Imv)(Akt) vōbīs(Abl) mūnere(Abl) et(Kon) multā(Adj)(Abl) prece(Abl)
+(846) [MEDEA:] besänftigt euch mit|der|Gabe und mit|vieler Bitte
+(847) [MEDEA:] dominam(A) ac(Kon) novercam(A). vādite(Prä)(Imv)(Akt) et(Kon) celerēs(Adj)(A) domum(A)
+(847) [MEDEA:] die|Herrin und die|Stiefmutter. geht und schnelle nach|Hause
+(848) [MEDEA:] referte(Prä)(Imv)(Akt) gressūs(A), ultimō(Adj)(Abl) amplexū(N)(Abl) ut(Kon) fruar(Prä)(Knj)(Akt).
+(848) [MEDEA:] bringt|zurück Schritte, letzten mit|der|Umarmung damit ich|genieße.
+=== Chor (Jambisch Dimeter katalektisch) ===
+(849) [CHORUS:] Quōnam(Adv) cruenta(Adj)(N) maenas(N)
+(849) [CHORUS:] wohin|denn blutige Mänade
+(850) [CHORUS:] praeceps(Adj)(N) amōre(N)(Abl) saevō(Adj)(Abl)
+(850) [CHORUS:] kopfüber durch|die|Liebe wilde
+(851) [CHORUS:] rapitur(Prä)(Pas)? quod(Pr)(N) impotentī(Adj)(Abl)
+(851) [CHORUS:] wird|fortgerissen? welches ungebändigten
+(852) [CHORUS:] facinus(A) parat(Prä)(Akt) furōre(N)(Abl)?
+(852) [CHORUS:] Verbrechen bereitet durch|die|Raserei?
+(853) [CHORUS:] vultūs(N) citātus(Per)(Pas)(N) īrā(N)(Abl)
+(853) [CHORUS:] Antlitz aufgejagt durch|Zorn
+(854) [CHORUS:] riget(Prä)(Akt) et(Kon) caput(N) ferōcī(Adj)(Abl)
+(854) [CHORUS:] ist|starr und Kopf wildem
+(855) [CHORUS:] quatiēns(Prä)(Akt)(N) superba(Adj)(N) mōtū(N)(Abl)
+(855) [CHORUS:] schüttelnd übermütig mit|Bewegung
+(856) [CHORUS:] rēgī(D) minātur(Prä)(Pas) ultrō(Adv).
+(856) [CHORUS:] dem|König droht von|selbst.
+(857) [CHORUS:] quis(Pr)(N) crēdat(Prä)(Knj)(Akt) exulem(A)?
+(857) [CHORUS:] wer würde|glauben einen|Verbannten?
+(858) [CHORUS:] Flagrant(Prä)(Akt) genae(N) rubentēs(Prä)(Akt)(N),
+(858) [CHORUS:] lodern Wangen rötend,
+(859) [CHORUS:] pallor(N) fugat(Prä)(Akt) rubōrem(A).
+(859) [CHORUS:] Blässe vertreibt das|Rot.
+(860) [CHORUS:] nūllum(Adj)(N) vagante(Prä)(Akt)(Abl) fōrmā(N)(Abl)
+(860) [CHORUS:] kein wechselnder Gestalt
+(861) [CHORUS:] servat(Prä)(Akt) diū(Adv) colōrem(A).
+(861) [CHORUS:] bewahrt lange Farbe.
+(862) [CHORUS:] hūc(Adv) fert(Prä)(Akt) pedēs(A) et(Kon) illūc(Adv),
+(862) [CHORUS:] hierhin trägt Füße und dorthin,
+(863) [CHORUS:] ut(Kon) tigris(N) orba(Adj)(N) nātīs(N)(Abl)
+(863) [CHORUS:] wie Tigerin beraubt an|Kindern
+(864) [CHORUS:] cursū(N)(Abl) furente(Prä)(Akt)(Abl) lūstrat(Prä)(Akt)
+(864) [CHORUS:] mit|dem|Lauf rasend durchstreift
+(865) [CHORUS:] Gangēticum(Adj)(A) nemus(A).
+(865) [CHORUS:] gangetischen Hain.
+(866) [CHORUS:] Frēnāre(Prä)(Inf)(Akt) nescit(Prä)(Akt) īrās(A)
+(866) [CHORUS:] zügeln weiß|nicht Zorne
+(867) [CHORUS:] Mēdēa(V), nōn(Pt) amōrēs(A);
+(867) [CHORUS:] Medea, nicht Lieben;
+(868) [CHORUS:] nunc(Adv) īra(N) amorque(N)(Kon) causam(A)
+(868) [CHORUS:] jetzt Zorn und|Liebe Grund
+(869) [CHORUS:] jūnxēre(Per)(Akt): quid(Pr)(N) sequētur(Fu1)(Pas)?
+(869) [CHORUS:] haben|vereinigt: was wird|folgen?
+(870) [CHORUS:] quandō(Adv) efferet(Fu1)(Akt) Pelasgīs(Adj)(D)
+(870) [CHORUS:] wann wird|tragen zu|den|Pelasgern
+(871) [CHORUS:] nefanda(Adj)(A) Colchis(N) arvīs(D)
+(871) [CHORUS:] unsagbaren die|Kolcherin zu|den|Feldern
+(872) [CHORUS:] gressum(A) metūque(N)(Abl)(Kon) solvet(Fu1)(Akt)
+(872) [CHORUS:] Schritt und|durch|die|Furcht wird|lösen
+(873) [CHORUS:] rēgnum(A) simulque(Adv)(Kon) rēgēs(A)?
+(873) [CHORUS:] das|Reich zugleich|und die|Könige?
+(874) [CHORUS:] Nunc(Adv), Phoebe(V), mitte(Prä)(Imv)(Akt) currūs(A)
+(874) [CHORUS:] jetzt, Phoebus, sende Wagen
+(875) [CHORUS:] nūllō(Adj)(Abl) morante(Prä)(Akt)(Abl) lōrō(N)(Abl),
+(875) [CHORUS:] mit|keinem verzögernd Zügel,
+(876) [CHORUS:] nox(N) condat(Prä)(Knj)(Akt) alma(Adj)(N) lūcem(A),
+(876) [CHORUS:] Nacht möge|verbergen gnädige das|Licht,
+(877) [CHORUS:] mergat(Prä)(Knj)(Akt) diem(A) timendum(Fu1)(Pas)(A)(Gdv)
+(877) [CHORUS:] möge|versenken den|Tag zu|fürchtenden
+(878) [CHORUS:] dux(N) noctis(G) Hesperus(N).
+(878) [CHORUS:] Führer der|Nacht Hesperus.
+=== Akt 4 ===
+(879) [NUNTIUS:] Periēre(Per)(Akt) cūncta(Adj)(N), concidit(Per)(Akt) rēgnī(G) status(N);
+(879) [NUNTIUS:] sind|zugrundegegangen alles, ist|zusammengebrochen des|Reiches Zustand;
+(880) [NUNTIUS:] nāta(N) atque(Kon) genitor(N) cinere(N)(Abl) permixtō(Per)(Pas)(Abl) jacent(Prä)(Akt).
+(880) [NUNTIUS:] die|Tochter und der|Vater in|Asche vermischt liegen.
+(881) [CHORUS:] Quā(Pr)(Abl) fraude(N)(Abl) captī(Per)(Pas)(N)? Quā(Pr)(Abl) solent(Prä)(Akt) rēgēs(N) capī(Prä)(Inf)(Pas):
+(881) [CHORUS:] durch|welchen Trug gefangen? durch|welchen pflegen Könige gefangen|zu|werden:
+(882) [NUNTIUS:] dōnīs(N)(Abl). In(Prp) illīs(Pr)(Abl) esse(Prä)(Inf)(Akt) quis(Pr)(N) potuit(Per)(Akt) dolus(N)?
+(882) [NUNTIUS:] durch|Geschenke. in jenen sein wer konnte List?
+(883) [NUNTIUS:] Et(Kon) ipse(Pr)(N) mīror(Prä)(Pas) vixque(Adv)(Kon) jam(Adv) factō(Per)(Pas)(Abl) malō(N)(Abl)
+(883) [NUNTIUS:] und selbst staune|ich kaum|und schon dem|geschehenen Übel
+(884) [NUNTIUS:] potuisse(Per)(Inf)(Akt) fierī(Prä)(Inf)(Pas) crēdo(Prä)(Akt). Quis(Pr)(N) clādis(G) modus(N)?
+(884) [NUNTIUS:] gekonnt|zu|haben zu|geschehen glaube|ich. welches der|Katastrophe Maß?
+(885) [NUNTIUS:] Avidus(Adj)(N) per(Prp) omnem(Adj)(A) rēgiae(Adj)(G) partem(A) furit(Prä)(Akt)
+(885) [NUNTIUS:] gierig durch jede des|Palastes Teil tobt
+(886) [NUNTIUS:] immissus(Per)(Pas)(N) ignis(N): jam(Adv) domus(N) tōta(Adj)(N) occidit(Per)(Akt),
+(886) [NUNTIUS:] losgelassener Brand: schon Haus ganz ist|untergegangen,
+(887) [NUNTIUS:] urbī(D) timētur(Prä)(Pas). Unda(N) flammās(A) opprimat(Prä)(Knj)(Akt).
+(887) [NUNTIUS:] für|die|Stadt wird|gefürchtet. Welle Flammen möge|niederdrücken.
+(888) [NUNTIUS:] Et(Kon) hoc(Pr)(N) in(Prp) istā(Pr)(Abl) clāde(N)(Abl) mīrandum(Fu1)(Pas)(N)(Gdv) accidit(Prä)(Akt):
+(888) [NUNTIUS:] und dies in jener Katastrophe zu|verwunderndes geschieht:
+(889) [NUNTIUS:] alit(Prä)(Akt) unda(N) flammās(A), quōque(Adv)(Kon) prohibētur(Prä)(Pas) magis(Adv)(Kmp),
+(889) [NUNTIUS:] nährt Welle Flammen, auch wird|gehemmt mehr,
+(890) [NUNTIUS:] magis(Adv)(Kmp) ārdet(Prä)(Akt) ignis(N); ipsa(Pr)(N) praesidia(A) occupat(Prä)(Akt).
+(890) [NUNTIUS:] mehr brennt Feuer; selbst Schutzwerke nimmt|ein.
+(891) [NUTRIX:] Effer(Prä)(Imv)(Akt) citātum(Per)(Pas)(A) sēde(N)(Abl) Pelopēā(Adj)(Abl) gradum(A),
+(891) [NUTRIX:] trage|hinaus beschleunigten aus|dem|Sitz pelopäischen Schritt,
+(892) [NUTRIX:] Mēdēa(V), praeceps(Adj)(N) quāslibet(Pr)(A) terrās(A) pete(Prä)(Imv)(Akt).
+(892) [NUTRIX:] Medea, kopfüber welche|auch|immer Länder suche|auf.
+(893) [MEDEA:] Egone(Pr)(N)(Pt) ut(Kon) recēdam(Prä)(Knj)(Akt)? sī(Kon) profūgissem(Plq)(Knj)(Akt) prius(Adv),
+(893) [MEDEA:] ich|? etwa|dass ich|weiche? wenn ich|wäre|geflohen früher,
+(894) [MEDEA:] ad(Prp) hoc(Pr)(A) redīrem(Imp)(Knj)(Akt). nūptiās(A) spectō(Prä)(Akt) novās(Adj)(A).
+(894) [MEDEA:] zu diesem würde|ich|zurückkehren. Hochzeit schaue|ich|zu neuen.
+(895) [MEDEA:] quid(Pr)(N), anime(V), cessās(Prä)(Akt)? sequere(Prä)(Imv)(Pas) fēlīcem(Adj)(A) impetum(A).
+(895) [MEDEA:] was, Geist, säumst|du? folge glücklichen Ansturm.
+(896) [MEDEA:] pars(N) ultiōnis(G) ista(Pr)(N), quā(Pr)(Abl) gaudēs(Prä)(Akt), quota(Adj)(N) est(Prä)(Akt)?
+(896) [MEDEA:] Teil der|Rache diese, woran freust|du|dich, wie|groß ist?
+(897) [MEDEA:] amās(Prä)(Akt) adhūc(Adv), furiōse(V), sī(Kon) satis(Adv) est(Prä)(Akt) tibī(Pr)(D)
+(897) [MEDEA:] liebst noch, Tollkopf, wenn genug ist dir
+(898) [MEDEA:] caelebs(Adj)(N) Iāsōn(N). quaere(Prä)(Imv)(Akt) poenārum(G) genus(A)
+(898) [MEDEA:] eheloser Jason. suche der|Strafen Art
+(899) [MEDEA:] haut(Pt) ūsitātum(Adj)(A) jamque(Adv)(Kon) sīc(Adv) tēmet(Pr)(A) parā(Prä)(Imv)(Akt):
+(899) [MEDEA:] nicht gewöhnliche und|schon so dich|selbst bereite:
+(900) [MEDEA:] fās(N) omne(Adj)(N) cēdat(Prä)(Knj)(Akt), abeat(Prä)(Knj)(Akt) expulsus(Per)(Pas)(N) pudor(N);
+(900) [MEDEA:] heiliges|Recht alles möge|weichen, möge|fortgehen vertrieben Scham;
+(901) [MEDEA:] vindicta(N) levis(Adj)(N) est(Prä)(Akt) quam(Kon) ferunt(Prä)(Akt) pūrae(Adj)(N) manūs(N).
+(901) [MEDEA:] Rache leicht ist als tragen reine Hände.
+(902) [MEDEA:] incumbe(Prä)(Imv)(Akt) in(Prp) īrās(A) tēque(Pr)(A)(Kon) languentem(Prä)(Akt)(A) excitā(Prä)(Imv)(Akt)
+(902) [MEDEA:] beuge|dich auf Zorne und|dich schlaff|seienden wecke|auf
+(903) [MEDEA:] penitusque(Adv)(Kon) veterēs(Adj)(A) pectore(N)(Abl) ex(Prp) īmō(Adj)(Abl) impetūs(A)
+(903) [MEDEA:] tief|und alte aus|der|Brust aus tiefstem Anstürme
+(904) [MEDEA:] violentus(Adj)(N) haurī(Prä)(Imv)(Akt). quidquid(Pr)(N) admissum(Per)(Pas)(N) est(Prä)(Akt) adhūc(Adv),
+(904) [MEDEA:] gewaltsam schöpfe. was|auch|immer begangen ist bislang,
+(905) [MEDEA:] pietās(N) vocētur(Prä)(Knj)(Pas). hoc(Pr)(A) age(Prä)(Imv)(Akt)! ēn(ij) faxō(Fu2)(Akt) sciant(Prä)(Knj)(Akt)
+(905) [MEDEA:] Pflicht|Treue möge|genannt|werden. dies tue! sieh ich|werde|dafür|sorgen sie|mögen|wissen
+(906) [MEDEA:] quam(Adv) levia(Adj)(N) fuerint(Per)(Knj)(Akt) quamque(Adv)(Kon) vulgāris(Adj)(G) notae(G)
+(906) [MEDEA:] wie gering gewesen|seien und|wie alltäglicher Prägung
+(907) [MEDEA:] quae(Pr)(N) commodāvī(Per)(Akt) scelera(A). prōlūsit(Per)(Akt) dolor(N)
+(907) [MEDEA:] welche überließ|ich Verbrechen. hat|vorgeübt Schmerz
+(908) [MEDEA:] per(Prp) ista(Pr)(A) noster(Adj)(N): quid(Pr)(N) manūs(N) poterant(Imp)(Akt) rudēs(Adj)(N)
+(908) [MEDEA:] durch diese unser: was Hände konnten ungeübte
+(909) [MEDEA:] audēre(Prä)(Inf)(Akt) magnum(Adj)(A), quid(Pr)(N) puellāris(Adj)(N) furor(N)?
+(909) [MEDEA:] wagen Großes, was mädchenhafter Wahn?
+(910) [MEDEA:] Mēdēa(N) nunc(Adv) sum(Prä)(Akt); crēvit(Per)(Akt) ingenium(N) malīs(N)(Abl):
+(910) [MEDEA:] Medea jetzt bin|ich; ist|gewachsen Anlage durch|Übeln:
+(911) [MEDEA:] juvat(Prä)(Akt), juvat(Prä)(Akt) rapuisse(Per)(Inf)(Akt) frāternum(Adj)(A) caput(A),
+(911) [MEDEA:] es|freut, es|freut geraubt|zu|haben brüderliches Haupt,
+(912) [MEDEA:] artūs(A) juvat(Prä)(Akt) secuisse(Per)(Inf)(Akt) et(Kon) arcānō(Adj)(Abl) patrem(A)
+(912) [MEDEA:] Glieder freut zer|schnitten|zu|haben und geheimen Vater
+(913) [MEDEA:] spoliāsse(Per)(Inf)(Akt) sacrō(Adj)(Abl), juvat(Prä)(Akt) in(Prp) exitium(A) senis(G)
+(913) [MEDEA:] beraubt|zu|haben heiligem, freut in Untergang des|Greises
+(914) [MEDEA:] armāsse(Per)(Inf)(Akt) nātās(A). quaere(Prä)(Imv)(Akt) māteriam(A), dolor(V):
+(914) [MEDEA:] bewaffnet|zu|haben Töchter. suche Stoff, Schmerz:
+(915) [MEDEA:] ad(Prp) omne(Adj)(A) facinus(A) nōn(Pt) rudem(Adj)(A) dextram(A) afferēs(Fu1)(Akt).
+(915) [MEDEA:] zu jedem Verbrechen nicht ungeübte Rechte wirst|du|heranbringen.
+(916) [MEDEA:] Quō(Adv) tē(Pr)(A) igitur(Pt), īra(V), mittis(Prä)(Akt), aut(Kon) quae(Pr)(N) perfidō(Adj)(D)
+(916) [MEDEA:] wohin dich also, Zorn, sendest|du, oder welche dem|Treulosen
+(917) [MEDEA:] intendis(Prä)(Akt) hostī(D) tēla(A)? nescioquid(Pr)(N) ferōx(Adj)(N)
+(917) [MEDEA:] richtest dem|Feind Waffen? irgend|etwas wild
+(918) [MEDEA:] dēcrēvit(Per)(Akt) animus(N) intus(Adv) et(Kon) nōndum(Adv) sibī(Pr)(D)
+(918) [MEDEA:] hat|beschlossen Sinn innen und noch|nicht sich|selbst
+(919) [MEDEA:] audet(Prä)(Akt) fatērī(Prä)(Inf)(Pas). stulta(Adj)(N) properāvī(Per)(Akt) nimis(Adv):
+(919) [MEDEA:] wagt zu|gestehen. Törin eilte|ich zu|sehr:
+(920) [MEDEA:] ex(Prp) paelice(N)(Abl) utinam(ij) līberōs(A) hostis(G) meus(Adj)(N)
+(920) [MEDEA:] aus der|Nebenfrau ach|wenn|doch Kinder des|Feindes mein
+(921) [MEDEA:] aliquōs(Pr)(A) habēret(Imp)(Knj)(Akt); quidquid(Pr)(N) ex(Prp) illō(Pr)(Abl) tuum(Adj)(N) est(Prä)(Akt),
+(921) [MEDEA:] einige hätte; was|auch|immer aus jenem dein ist,
+(922) [MEDEA:] Creūsa(N) peperit(Per)(Akt). placuit(Per)(Akt) hoc(Pr)(N) poenae(G) genus(N),
+(922) [MEDEA:] Kreusa hat|geboren. gefiel dieses der|Strafe Art,
+(923) [MEDEA:] meritōque(Adv)(Kon) placuit(Per)(Akt): ultimum(Adj)(A) magnō(Adj)(Abl) scelus(A)
+(923) [MEDEA:] verdientermaßen|und gefiel: letztes mit|großem Verbrechen
+(924) [MEDEA:] animō(N)(Abl) parandum(Fu1)(Pas)(N)(Gdv) est(Prä)(Akt): līberī(N) quondam(Adv) meī(Adj)(G),
+(924) [MEDEA:] im|Geist vorzubereiten ist: Kinder einst meine,
+(925) [MEDEA:] vōs(Pr)(N) prō(Prp) paternīs(Adj)(Abl) sceleribus(N)(Abl) poenās(A) date(Prä)(Imv)(Akt).
+(925) [MEDEA:] ihr für die|väterlichen Verbrechen Strafen gebt.
+(926) [MEDEA:] Cor(N) pepulit(Per)(Akt) horror(N), membra(N) torpēscunt(Prä)(Akt) gelū(N)(Abl)
+(926) [MEDEA:] Herz stieß Schauder, Glieder erstarren durch|Frost
+(927) [MEDEA:] pectusque(N)(Kon) tremuit(Per)(Akt). īra(N) discessit(Per)(Akt) locō(N)(Abl)
+(927) [MEDEA:] Brust|und zitterte. Zorn wich vom|Ort
+(928) [MEDEA:] māterque(N)(Kon) tōtā(Adj)(Abl) conjuge(N)(Abl) expulsā(Per)(Pas)(Abl) redit(Prä)(Akt).
+(928) [MEDEA:] Mutter|und mit|ganzer Gattin vertrieben kehrt|zurück.
+(929) [MEDEA:] egone(Pr)(N)(Pt) ut(Kon) meōrum(Adj)(G) līberum(G) ac(Kon) prōlis(G) meae(Adj)(G)
+(929) [MEDEA:] ich|? dass meiner der|Kinder und der|Nachkommenschaft meiner
+(930) [MEDEA:] fundam(Prä)(Knj)(Akt) cruōrem(A)? melius(Adv)(Kmp), ā(ij), dēmēns(Adj)(V) furor(N)!
+(930) [MEDEA:] vergieße|ich Blut? besser, ach, wahnsinnige Raserei!
+(931) [MEDEA:] incognitum(Adj)(N) istud(Pr)(N) facinus(N) ac(Kon) dīrum(Adj)(N) nefās(N)
+(931) [MEDEA:] unbekannt jene Frevel|Tat und schreckliches Unrecht|Frevel
+(932) [MEDEA:] ā(Prp) mē(Pr)(Abl) quoque(Pt) absit(Prä)(Knj)(Akt); quod(Pr)(N) scelus(N) miserī(Adj)(N) luent(Fu1)(Akt)?
+(932) [MEDEA:] von mir auch sei|fern; welches Verbrechen die|Elenden werden|büßen?
+(933) [MEDEA:] scelus(N) est(Prä)(Akt) Iāsōn(N) genitor(N) et(Kon) majus(Adj)(N)(Kmp) scelus(N)
+(933) [MEDEA:] Verbrechen ist Jason Erzeuger|Vater und größeres Verbrechen
+(934) [MEDEA:] Mēdēa(N) māter(N). occidant(Prä)(Knj)(Akt), nōn(Pt) sunt(Prä)(Akt) meī(Adj)(N);
+(934) [MEDEA:] Medea Mutter. mögen|umkommen, nicht sind meine;
+(935) [MEDEA:] pereant(Prä)(Knj)(Akt), meī(Adj)(N) sunt(Prä)(Akt). crīmine(N)(Abl) et(Kon) culpā(N)(Abl) carent(Prä)(Akt),
+(935) [MEDEA:] mögen|zugrunde|gehen, meine sind. an|Verbrechen und Schuld entbehren|sie,
+(936) [MEDEA:] sunt(Prä)(Akt) innocentēs(Adj)(N), fateor(Prä)(Pas): et(Kon) frāter(N) fuit(Per)(Akt).
+(936) [MEDEA:] sind Unschuldige, bekenne|ich: und Bruder war.
+(937) [MEDEA:] quid(Pr)(A), anime(V), titubās(Prä)(Akt)? ōra(A) quid(Pr)(A) lacrimae(N) rigant(Prä)(Akt)
+(937) [MEDEA:] was, Geist, wankst|du? Gesichter was Tränen benetzen
+(938) [MEDEA:] variamque(Adj)(A)(Kon) nunc(Adv) hūc(Adv) īra(N), nunc(Adv) illūc(Adv) amor(N)
+(938) [MEDEA:] wechselhafte|und jetzt hierher Zorn, jetzt dorthin Liebe
+(939) [MEDEA:] dīdūcit(Prä)(Akt)? anceps(Adj)(N) aestus(N) incertam(Adj)(A) rapit(Prä)(Akt);
+(939) [MEDEA:] zieht|auseinander? zwiespältig Aufwallung unsichere reißt|fort;
+(940) [MEDEA:] ut(Kon) saeva(Adj)(N) rapidī(Adj)(N) bella(A) cum(Kon) ventī(N) gerunt(Prä)(Akt),
+(940) [MEDEA:] wie grausame reißende Kriege wenn Winde führen,
+(941) [MEDEA:] utrimque(Adv) flūctūs(N) maria(A) discordēs(Adj)(A) agunt(Prä)(Akt)
+(941) [MEDEA:] beiderseits Wogen Meere uneinig treiben
+(942) [MEDEA:] dubiumque(Adj)(N)(Kon) fervet(Prä)(Akt) pelagus(N), haut(Pt) aliter(Adv) meum(Adj)(N)
+(942) [MEDEA:] ungewisses|und kocht Meer, nicht anders mein
+(943) [MEDEA:] cor(N) fluctuātur(Prä)(Pas): īra(N) pietātem(A) fugat(Prä)(Akt)
+(943) [MEDEA:] Herz wogt: Zorn Pietät verjagt
+(944) [MEDEA:] īramque(A)(Kon) pietās(N), cēde(Prä)(Imv)(Akt) pietātī(D), dolor(V).
+(944) [MEDEA:] den|Zorn|und Pflicht|Treue, weiche der|Pietät, Schmerz.
+(945) [MEDEA:] Hūc(Adv), cāra(Adj)(N) prōlēs(N), ūnicum(Adj)(N) afflīctae(Per)(Pas)(G) domūs(G)
+(945) [MEDEA:] hierher, geliebte Nachkommenschaft, einziger der|bedrängten des|Hauses
+(946) [MEDEA:] sōlāmen(N), hūc(Adv) vōs(Pr)(N) ferte(Prä)(Imv)(Akt) et(Kon) īnfūsōs(Per)(Pas)(A) mihī(Pr)(D)
+(946) [MEDEA:] Trost, hierher ihr tragt und eingegossene mir
+(947) [MEDEA:] conjungite(Prä)(Imv)(Akt) artūs(A). habeat(Prä)(Knj)(Akt) incolumēs(Adj)(A) pater(N),
+(947) [MEDEA:] verbindet Glieder. möge|haben unversehrte Vater,
+(948) [MEDEA:] dum(Kon) et(Kon) māter(N) habeat(Prä)(Knj)(Akt), urguet(Prä)(Akt) exilium(N) ac(Kon) fuga(N):
+(948) [MEDEA:] solange auch Mutter möge|haben, drängt Exil und Flucht:
+(949) [MEDEA:] jam(Adv) jam(Adv) meō(Adj)(Abl) rapientur(Fu1)(Pas) āvulsī(Per)(Pas)(N) ē(Prp) sinū(N)(Abl),
+(949) [MEDEA:] schon schon meinem werden|fort|gerissen abgerissen aus dem|Schoß,
+(950) [MEDEA:] flentēs(Prä)(Akt)(N), gementēs(Prä)(Akt)(N), ōsculīs(N)(Abl) pereant(Prä)(Knj)(Akt) patris(G),
+(950) [MEDEA:] weinend, seufzend, mit|Küssen mögen|zugrunde|gehen des|Vaters,
+(951) [MEDEA:] periēre(Per)(Akt) mātris(G). rūrsus(Adv) incrēscit(Prä)(Akt) dolor(N)
+(951) [MEDEA:] sind|zugrunde|gegangen der|Mutter. wieder wächst|an Schmerz
+(952) [MEDEA:] et(Kon) fervet(Prä)(Akt) odium(N), repetit(Prä)(Akt) invītam(Adj)(A) manum(A)
+(952) [MEDEA:] und kocht Hass, verlangt|zurück unwillige Hand
+(953) [MEDEA:] antīqua(Adj)(N) Erīnȳs(N), īra(V), quā(Pr)(Abl) dūcis(Prä)(Akt), sequor(Prä)(Pas).
+(953) [MEDEA:] alte Erinys, Zorn, durch|welche führst|du, folge|ich.
+(954) [MEDEA:] utinam(ij) superbae(Adj)(G) turba(N) Tantalidos(G) meō(Adj)(Abl)
+(954) [MEDEA:] möchte|doch der|hochmütigen Schar der|Tantalidin meinem
+(955) [MEDEA:] exīsset(Plq)(Knj)(Akt) uterō(N)(Abl) bisque(Adv)(Kon) septēnōs(Adj)(A) parēns(N)
+(955) [MEDEA:] hinaus|gegangen|wäre aus|dem|Leib zweimal|und sieben Mutter
+(956) [MEDEA:] nātōs(A) tulissem(Plq)(Knj)(Akt)! sterilis(Adj)(N) in(Prp) poenās(A) fuī(Per)(Akt):
+(956) [MEDEA:] Kinder hätte|geboren! unfruchtbar für Strafen war|ich:
+(957) [MEDEA:] frātrī(D) patrīque(D)(Kon) quod(Pr)(N) sat(Adv) est(Prä)(Akt), peperī(Per)(Akt) duōs(Adj)(A).
+(957) [MEDEA:] dem|Bruder dem|Vater|und was genug ist, ich|gebar zwei.
+(958) [MEDEA:] Quōnam(Adv) ista(Pr)(N) tendit(Prä)(Akt) turba(N) Furiārum(G) impotēns(Adj)(N)?
+(958) [MEDEA:] wohin|denn jene strebt Schar der|Furien ungebändigt?
+(959) [MEDEA:] quem(Pr)(A) quaerit(Prä)(Akt) aut(Kon) quō(Pr)(Abl) flammeōs(Adj)(A) ictūs(A) parat(Prä)(Akt),
+(959) [MEDEA:] wen sucht oder wohin flammende Stöße bereitet,
+(960) [MEDEA:] aut(Kon) cui(Pr)(D) cruentās(Adj)(A) agmen(N) īnfernum(Adj)(N) facēs(A)
+(960) [MEDEA:] oder wem blutige Heer|Zug unterirdisch|höllisch Fackeln
+(961) [MEDEA:] intentat(Prä)(Akt)? ingēns(Adj)(N) anguis(N) excussō(Per)(Pas)(Abl) sonat(Prä)(Akt)
+(961) [MEDEA:] entgegengerichtet? gewaltige Schlange geschüttelten erklingt
+(962) [MEDEA:] tortus(Per)(Pas)(N) flagellō(N)(Abl). quem(Pr)(A) trabe(N)(Abl) īnfēstā(Adj)(Abl) petit(Prä)(Akt)
+(962) [MEDEA:] gedreht mit|der|Geißel. wen mit|dem|Schaft feindlichen zielt|an
+(963) [MEDEA:] Megaera(N)? cujus(Pr)(G) umbra(N) dispersīs(Per)(Pas)(Abl) venit(Prä)(Akt)
+(963) [MEDEA:] Megaera? wessen Schatten zerstreuten kommt
+(964) [MEDEA:] incerta(Adj)(N) membrīs(N)(Abl)? frāter(N) est(Prä)(Akt), poenās(A) petit(Prä)(Akt):
+(964) [MEDEA:] unsicher mit|den|Gliedern? Bruder ist, Strafen fordert:
+(965) [MEDEA:] dabimus(Prä)(Akt), sed(Kon) omnēs(Adj)(A). fīge(Prä)(Imv)(Akt) lūminibus(D) facēs(A),
+(965) [MEDEA:] wir|werden|geben, aber alle. hefte an|die|Augen Fackeln,
+(966) [MEDEA:] laniā(Prä)(Imv)(Akt), perūre(Prä)(Imv)(Akt), pectus(N) ēn(ij) Furiīs(N)(Abl) patet(Prä)(Akt).
+(966) [MEDEA:] zerreiße, brenne|durch, Brust sieh den|Furien steht|offen.
+(967) [MEDEA:] Discēdere(Prä)(Inf)(Akt) ā(Prp) mē(Pr)(Abl), frāter(V), ultrīcēs(Adj)(A) deās(A)
+(967) [MEDEA:] weg|gehen von mir, Bruder, rächende Göttinnen
+(968) [MEDEA:] mānēsque(A)(Kon) ad(Prp) īmōs(Adj)(A) īre(Prä)(Inf)(Akt) sēcūrās(Adj)(A) jubē(Prä)(Imv)(Akt):
+(968) [MEDEA:] Totengeister|und zu tiefsten gehen sichere befiehl:
+(969) [MEDEA:] mihi(Pr)(D) mē(Pr)(A) relinque(Prä)(Imv)(Akt) et(Kon) ūtere(Prä)(Imv)(Pas) hāc(Pr)(Abl), frāter(V), manū(N)(Abl)
+(969) [MEDEA:] mir mich lasse|zurück und gebrauche diese, Bruder, Hand
+(970) [MEDEA:] quae(Pr)(N) strīnxit(Per)(Akt) ēnsem(A); victimā(N)(Abl) mānēs(A) tuōs(Adj)(A)
+(970) [MEDEA:] die zog Schwert; mit|dem|Opfer Totengeister deine
+(971) [MEDEA:] plācāmus(Prä)(Akt) istā(Pr)(Abl). Quid(Pr)(N) repēns(Prä)(Akt)(N) affert(Prä)(Akt) sonus(N)?
+(971) [MEDEA:] besänftigen|wir durch|jene. was plötzlich bringt Laut?
+(972) [MEDEA:] parantur(Prä)(Pas) arma(N) mēque(Pr)(A)(Kon) in(Prp) exitium(A) petunt(Prä)(Akt).
+(972) [MEDEA:] werden|vorbereitet Waffen mich|und auf Verderben zielen.
+(973) [MEDEA:] excelsa(Adj)(A) nostrae(Adj)(G) tēcta(A) cōnscendam(Prä)(Knj)(Akt) domūs(G)
+(973) [MEDEA:] hohe unseres Dächer werde|ich|besteigen des|Hauses
+(974) [MEDEA:] caede(N)(Abl) incohātā(Per)(Pas)(Abl). perge(Prä)(Imv)(Akt) tū(Pr)(N) mēcum(Pr)(Abl)(Prp) comes(V).
+(974) [MEDEA:] mit|der|Tötung begonnenen. fahre|fort du mit|mir Gefährte.
+(975) [MEDEA:] tuum(Adj)(A) quoque(Pt) ipsa(Adj)(N) corpus(A) hinc(Adv) mēcum(Pr)(Abl)(Prp) āveham(Prä)(Knj)(Akt).
+(975) [MEDEA:] deinen auch selbst Körper von|hier mit|mir weg|tragen|werde.
+(976) [MEDEA:] nunc(Adv) hoc(Pr)(A) age(Prä)(Imv)(Akt), anime(V): nōn(Pt) in(Prp) occultō(Adj)(Abl) tibi(Pr)(D) est(Prä)(Akt)
+(976) [MEDEA:] nun dies tue, Geist: nicht im Verborgenem dir ist
+(977) [MEDEA:] perdenda(Fu1)(Pas)(N)(Gdv) virtūs(N); approbā(Prä)(Imv)(Akt) populō(D) manum(A).
+(977) [MEDEA:] zu|verlieren Tugend|Kraft; beweise dem|Volk Hand.
+(978) [IASON:] Quīcumque(Pr)(N) rēgum(G) clādibus(N)(Abl) fīdus(Adj)(N) dolēs(Prä)(Akt),
+(978) [IASON:] wer|auch|immer der|Könige bei|den|Niederlagen treu trauerst|du,
+(979) [IASON:] concurre(Prä)(Imv)(Akt), ut(Kon) ipsam(Adj)(A) sceleris(G) auctōrem(A) horridī(Adj)(G)
+(979) [IASON:] eile|zusammen, damit selbst des|Verbrechens Urheber grausigen
+(980) [IASON:] capiāmus(Prä)(Knj)(Akt). hūc(Adv), hūc(Adv), fortis(Adj)(N) armiferī(Adj)(G) cohors(N),
+(980) [IASON:] mögen|wir|fassen. hierher, hierher, tapfere der|waffentragenden Schar,
+(981) [IASON:] cōnferte(Prä)(Imv)(Akt) tēla(A), vertite(Prä)(Imv)(Akt) ex(Prp) īmō(Adj)(Abl) domum(A).
+(981) [IASON:] tragt|zusammen Waffen, wendet aus tiefsten Haus.
+(982) [MEDEA:] Jam(Adv) jam(Adv) recēpī(Per)(Akt) scēptra(A) germānum(Adj)(A) patrem(A),
+(982) [MEDEA:] schon schon nahm|zurück Zepter leiblichen Vater,
+(983) [MEDEA:] spoliumque(N)(Kon) Colchī(N) pecudis(G) aurātae(Per)(Pas)(G) tenent(Prä)(Akt);
+(983) [MEDEA:] Beute|und Kolcher des|Viehs goldenen halten;
+(984) [MEDEA:] rediēre(Per)(Akt) rēgna(N), rapta(Per)(Pas)(N) virginitās(N) redīt(Prä)(Akt).
+(984) [MEDEA:] sind|zurück|gekehrt Reiche, geraubte Jungfräulichkeit kehrt|zurück.
+(985) [MEDEA:] ō(ij) placida(Adj)(N) tandem(Pt) nūmina(N), ō(ij) fēstum(Adj)(A) diem(A),
+(985) [MEDEA:] o friedliche endlich Gottheiten, o festlichen Tag,
+(986) [MEDEA:] ō(ij) nūptiālem(Adj)(A)! vāde(Prä)(Imv)(Akt), perfectum(Per)(Pas)(N) est(Prä)(Akt) scelus(N),
+(986) [MEDEA:] o Hochzeits|Tag! geh, vollendet ist Verbrechen,
+(987) [MEDEA:] vindicta(N) nōndum(Adv): perage(Prä)(Imv)(Akt), dum(Kon) faciunt(Prä)(Akt) manūs(N).
+(987) [MEDEA:] Rache noch|nicht: vollbringe, solange tun Hände.
+(988) [MEDEA:] quid(Pr)(N) nunc(Adv) morāris(Prä)(Pas), anime(V)? quid(Pr)(N) dubitās(Prä)(Akt)? potēns(Prä)(Akt)(N)
+(988) [MEDEA:] was jetzt säumst|du, Geist? was zweifelst|du? fähig
+(989) [MEDEA:] jam(Adv) cecidit(Per)(Akt) īra(N)? paenitet(Prä)(Akt) factī(G), pudet(Prä)(Akt).
+(989) [MEDEA:] schon ist|gesunken Zorn? es|reut der|Tat, es|schämt.
+(990) [MEDEA:] quid(Pr)(N), misera(Adj)(V), fēcī(Per)(Akt)? misera(Adj)(V)? paeniteat(Prä)(Knj)(Akt) licet(Pt),
+(990) [MEDEA:] was, Elende, tat|ich? Elende? möge|reuen zwar,
+(991) [MEDEA:] fēcī(Per)(Akt). voluptās(N) magna(Adj)(N) mē(Pr)(A) invītam(Adj)(A) subit(Prä)(Akt),
+(991) [MEDEA:] ich|tat. Lust große mich wider|Willen überkommt,
+(992) [MEDEA:] et(Kon) ecce(ij) crēscit(Prä)(Akt). dēerat(Imp)(Akt) hoc(Pr)(N) ūnum(Adj)(N) mihī(Pr)(D),
+(992) [MEDEA:] und siehe wächst. fehlte dies ein|einziges mir,
+(993) [MEDEA:] spectātor(N) iste(Pr)(N). nīl(Pr)(N) adhūc(Adv) factī(G) reor(Prä)(Pas):
+(993) [MEDEA:] Zuschauer dieser. nichts bislang der|Tat meine|ich:
+(994) [MEDEA:] quidquid(Pr)(N) sine(Prp) istō(Pr)(Abl) fēcimus(Per)(Akt) sceleris(G) perīt(Per)(Akt).
+(994) [MEDEA:] was|auch|immer ohne diesen taten|wir des|Verbrechens ist|zugrunde|gegangen.
+(995) [IASON:] Ēn(ij) ipsa(Adj)(N) tēctī(G) parte(N)(Abl) praecipitī(Adj)(Abl) imminet(Prä)(Akt).
+(995) [IASON:] sieh sie|selbst des|Daches an|dem|Teil steilen hängt|über.
+(996) [IASON:] hūc(Adv) rapiat(Prä)(Knj)(Akt) ignēs(A) aliquis(Pr)(N), ut(Kon) flammīs(N)(Abl) cadat(Prä)(Knj)(Akt)
+(996) [IASON:] hierher möge|tragen Feuer irgend|einer, damit durch|die|Flammen möge|fallen
+(997) [IASON:] suīs(Adj)(Abl) perusta(Per)(Pas)(N). Congere(Prä)(Imv)(Akt) extrēmum(Adj)(A) tuīs(Adj)(D)
+(997) [IASON:] ihren|eigenen verbrannt. häufe das|letzte deinen
+(998) [MEDEA:] nātīs(D), Iāsōn(V), fūnus(A) ac(Kon) tumulum(A) strue(Prä)(Imv)(Akt):
+(998) [MEDEA:] Söhnen, Jason, Toten|feier und Grab|hügel baue:
+(999) [MEDEA:] conjūnx(N) socerque(N)(Kon) jūsta(Adj)(A) jam(Adv) fūnctīs(Per)(Pas)(D) habent(Prä)(Akt)
+(999) [MEDEA:] Gattin Schwiegervater|und gerechte schon den|Abgeschiedenen haben
+(1000) [MEDEA:] ā(Prp) mē(Pr)(Abl) sepultī(Per)(Pas)(N); gnātus(N) hic(Pr)(N) fātum(A) tulit(Per)(Akt),
+(1000) [MEDEA:] von mir beerdigt; Sohn dieser Schicksal hat|getragen,
+(1001) [MEDEA:] hic(Pr)(N) tē(Pr)(A) vidente(Prä)(Akt)(Abl) dabitur(Fu1)(Pas) exitiō(D) parī(Adj)(D).
+(1001) [MEDEA:] dieser dich während|du|siehst wird|gegeben|werden dem|Untergang gleicher.
+(1002) [IASON:] Per(Prp) nūmen(A) omne(Adj)(A) perque(Prp)(Kon) commūnēs(Adj)(A) fugās(A)
+(1002) [IASON:] durch Gottheit jede durch|und gemeinsame Fluchten
+(1003) [IASON:] torōsque(A)(Kon), quōs(Pr)(A) nōn(Pt) nostra(Adj)(N) violāvit(Per)(Akt) fidēs(N),
+(1003) [IASON:] Ehe|betten|und, welche nicht unsere verletzte Treue,
+(1004) [IASON:] jam(Adv) parce(Prä)(Imv)(Akt) nātō(D). sī(Kon) quod(Pr)(N) est(Prä)(Akt) crīmen(N), meum(Adj)(N) est(Prä)(Akt):
+(1004) [IASON:] nun verschone dem|Sohn. wenn irgend|ein ist Vergehen, mein ist:
+(1005) [IASON:] mē(Pr)(A) dēdo(Prä)(Akt) mortī(D); noxium(Adj)(A) mactā(Prä)(Imv)(Akt) caput(A).
+(1005) [IASON:] mich ich|liefere|aus dem|Tod; schuldige töte Haupt.
+(1006) [MEDEA:] Hāc(Pr)(Abl) quā(Pr)(Abl) recūsās(Prä)(Akt), quā(Pr)(Abl) dolēs(Prä)(Akt), ferrum(A) exigam(Prä)(Knj)(Akt).
+(1006) [MEDEA:] mit|dieser mit|der|welchen lehnst|du|ab, mit|der|welchen leidest|du, Eisen werde|ich|stoßen.
+(1007) [MEDEA:] ī(Prä)(Imv)(Akt) nunc(Adv), superbe(Adj)(V), virginum(G) thalamōs(A) pete(Prä)(Imv)(Akt),
+(1007) [MEDEA:] geh jetzt, Hochmütiger, der|Jungfrauen Brautgemächer suche|auf,
+(1008) [MEDEA:] relinque(Prä)(Imv)(Akt) mātrēs(A). Unus(Adj)(N) est(Prä)(Akt) poenae(G) satis(N).
+(1008) [MEDEA:] verlasse Mütter. einer ist der|Strafe genug.
+(1009) [MEDEA:] Sī(Kon) posset(Imp)(Knj)(Akt) ūnā(Adj)(Abl) caede(N)(Abl) satiārī(Prä)(Inf)(Pas) manus(N),
+(1009) [MEDEA:] wenn könnte mit|einer Tötung gesättigt|zu|werden die|Hand,
+(1010) [MEDEA:] nūllam(Adj)(A) petīsset(Plq)(Knj)(Akt). ut(Kon) duōs(Adj)(A) perimam(Prä)(Knj)(Akt), tamen(Pt)
+(1010) [MEDEA:] keine hätte|verlangt. dass zwei ich|möge|umbringen, dennoch
+(1011) [MEDEA:] nimium(Adv) est(Prä)(Akt) dolōrī(D) numerus(N) angustus(Adj)(N) meō(Adj)(D).
+(1011) [MEDEA:] zu|viel ist dem|Schmerz Zahl eng meinem.
+(1012) [MEDEA:] in(Prp) mātre(N)(Abl) sī(Kon) quod(Pr)(N) pignus(N) etiamnunc(Adv) latet(Prä)(Akt),
+(1012) [MEDEA:] in der|Mutter wenn irgendein Pfand auch|jetzt verbirgt|sich,
+(1013) [MEDEA:] scrūtābor(Fu1)(Pas) ēnse(N)(Abl) vīscera(A) et(Kon) ferrō(N)(Abl) extraham(Fu1)(Akt).
+(1013) [MEDEA:] werde|ich|untersuchen mit|dem|Schwert Eingeweide und mit|dem|Eisen werde|ich|heraus|ziehen.
+(1014) [IASON:] Jam(Adv) perage(Prä)(Imv)(Akt) coeptum(Per)(Pas)(A) facinus(A), haut(Pt) ultrā(Adv) precor(Prä)(Pas),
+(1014) [IASON:] nun vollbringe begonnen|es Verbrechen, keineswegs weiter ich|bitte,
+(1015) [IASON:] moramque(A)(Kon) saltem(Adv) supplicīs(Adj)(D) dōnā(Prä)(Imv)(Akt) meīs(Adj)(D).
+(1015) [IASON:] Aufschub|und wenigstens den|Flehenden gewähre meinen.
+(1016) [MEDEA:] Perfruere(Prä)(Imv)(Pas) lentō(Adj)(Abl) scelere(N)(Abl), nē(Kon) properā(Prä)(Imv)(Akt), dolor(V):
+(1016) [MEDEA:] genieße langsamen Verbrechen, damit|nicht beeile|dich, Schmerz:
+(1017) [MEDEA:] meus(Adj)(N) diēs(N) est(Prä)(Akt); tempore(N)(Abl) acceptō(Per)(Pas)(Abl) ūtimur(Prä)(Pas).
+(1017) [MEDEA:] mein Tag ist; bei|Zeit günstig|er wir|nutzen.
+(1018) [IASON:] Īnfesta(Adj)(N), mēmet(Pr)(A) perime(Prä)(Imv)(Akt). Miserērī(Prä)(Inf)(Pas) jubēs(Prä)(Akt).
+(1018) [IASON:] Feindselige, mich|selbst vernichte. sich|erbarmen du|befiehlst.
+(1019) [MEDEA:] bene(Adv) est(Prä)(Akt), perāctum(Per)(Pas)(N) est(Prä)(Akt). plūra(Adj)(N) nōn(Pt) habuī(Per)(Akt), dolor(V),
+(1019) [MEDEA:] gut ist, vollendet ist. mehr|es nicht hatte|ich, Schmerz,
+(1020) [MEDEA:] quae(Pr)(N) tibi(Pr)(D) litārem(Imp)(Knj)(Akt). lūmina(A) hūc(Adv) tumida(Adj)(A) allevā(Prä)(Imv)(Akt),
+(1020) [MEDEA:] welches dir ich|würde|weihen. Augen hierher geschwollene hebe|an,
+(1021) [MEDEA:] ingrāte(Adj)(V) Iāsōn(V). conjugem(A) agnōscis(Prä)(Akt) tuam(Adj)(A)?
+(1021) [MEDEA:] Undankbarer Jason. Gattin erkennst|du deine?
+(1022) [MEDEA:] sīc(Adv) fugere(Prä)(Inf)(Akt) soleō(Prä)(Akt). patuit(Per)(Akt) in(Prp) caelum(A) via(N):
+(1022) [MEDEA:] so zu|fliehen pflege|ich. stand|offen in den|Himmel Weg:
+(1023) [MEDEA:] squāmōsa(Adj)(A) geminī(Adj)(N) colla(A) serpentēs(N) jugō(N)(Abl)
+(1023) [MEDEA:] schuppen|tragende doppel|te Hälse Schlangen dem|Joch
+(1024) [MEDEA:] summissa(Per)(Pas)(N) praebent(Prä)(Akt). recipe(Prä)(Imv)(Akt) jam(Adv) gnātōs(A), parēns(V);
+(1024) [MEDEA:] gesenkte reichen|dar. nimm|zurück schon Söhne, Vater;
+(1025) [MEDEA:] ego(Pr)(N) inter(Prp) aurās(A) ālitī(Adj)(Abl) currū(N)(Abl) vehar(Prä)(Pas).
+(1025) [MEDEA:] ich zwischen Lüfte mit|geflügeltem Wagen werde|ich|gefahren.
+(1026) [IASON:] Per(Prp) alta(Adj)(A) vāde(Prä)(Imv)(Akt) spatia(A) sublīme(Adj)(A) aetheris(G),
+(1026) [IASON:] durch weite geh Weiten erhabenen des|Äthers,
+(1027) [IASON:] testāre(Prä)(Imv)(Pas) nūllōs(Adj)(A) esse(Prä)(Inf)(Akt), quā(Pr)(Abl) veheris(Prä)(Pas), deōs(A).
+(1027) [IASON:] bezeuge keine zu|sein, auf|welchem|Wege du|fährst, Götter.

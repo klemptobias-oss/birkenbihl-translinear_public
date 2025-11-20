@@ -2,47 +2,2616 @@
   "Sprachen": {
     "griechisch": {
       "poesie": {
-        "Aristophanes": {
-          "Plutos": {
-            "path": "griechisch/poesie/Aristophanes/Plutos",
-            "versmass": false,
-            "filename_base": "Plutos"
+        "Drama": {
+          "Aischylos": {
+            "Agamemnon": {
+              "path": "griechisch/poesie/Drama/Aischylos/Agamemnon",
+              "versmass": false,
+              "filename_base": "agamemnon_gr_de_en_stil1",
+              "title": "Agamemnon",
+              "author_display": "Aischylos",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Aischylos_Agamemnon",
+              "release_tag": "gr-drama-v1"
+            },
+            "Choreophoren": {
+              "path": "griechisch/poesie/Drama/Aischylos/Choreophoren",
+              "versmass": false,
+              "filename_base": "choreophoren_gr_de_en_stil1",
+              "title": "Choreophoren",
+              "author_display": "Aischylos",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Aischylos_Choreophoren",
+              "release_tag": "gr-drama-v1"
+            },
+            "Der_gefesselte_Prometheus": {
+              "path": "griechisch/poesie/Drama/Aischylos/Der_gefesselte_Prometheus",
+              "versmass": true,
+              "filename_base": "prometheus_gr_de_en_stil1",
+              "title": "Der gefesselte Prometheus",
+              "author_display": "Aischylos",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Aischylos_Der_gefesselte_Prometheus",
+              "release_tag": "gr-drama-v1"
+            },
+            "Eumeniden": {
+              "path": "griechisch/poesie/Drama/Aischylos/Eumeniden",
+              "versmass": false,
+              "filename_base": "eumeniden_gr_de_en_stil1",
+              "title": "Eumeniden",
+              "author_display": "Aischylos",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Aischylos_Eumeniden",
+              "release_tag": "gr-drama-v1"
+            },
+            "Perser": {
+              "path": "griechisch/poesie/Drama/Aischylos/Perser",
+              "versmass": true,
+              "filename_base": "perser_gr_de_en_stil1",
+              "title": "Perser",
+              "author_display": "Aischylos",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Aischylos_Perser",
+              "release_tag": "gr-drama-v1"
+            },
+            "Sieben_gegen_Theben": {
+              "path": "griechisch/poesie/Drama/Aischylos/Sieben_gegen_Theben",
+              "versmass": true,
+              "filename_base": "sieben_gr_de_en_stil1",
+              "title": "Sieben gegen Theben",
+              "author_display": "Aischylos",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Aischylos_Sieben_gegen_Theben",
+              "release_tag": "gr-drama-v1"
+            }
+          },
+          "Aristophanes": {
+            "Lysistrate": {
+              "path": "griechisch/poesie/Drama/Aristophanes/Lysistrate",
+              "versmass": false,
+              "filename_base": "lysistrate_gr_de_en_stil1",
+              "title": "Lysistrate",
+              "author_display": "Aristophanes",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Aristophanes_Lysistrate",
+              "release_tag": "gr-drama-v1"
+            },
+            "Plutos": {
+              "path": "griechisch/poesie/Drama/Aristophanes/Plutos",
+              "versmass": false,
+              "filename_base": "plutos_gr_de_en_stil1",
+              "title": "Plutos",
+              "author_display": "Aristophanes",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Aristophanes_Plutos",
+              "release_tag": "gr-drama-v1"
+            },
+            "Wolken": {
+              "path": "griechisch/poesie/Drama/Aristophanes/Wolken",
+              "versmass": false,
+              "filename_base": "wolken_gr_de_en_stil1",
+              "title": "Wolken",
+              "author_display": "Aristophanes",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Aristophanes_Wolken",
+              "release_tag": "gr-drama-v1"
+            }
+          },
+          "Euripides": {
+            "Bakchen": {
+              "path": "griechisch/poesie/Drama/Euripides/Bakchen",
+              "versmass": false,
+              "filename_base": "bakkchen_gr_de_en_stil1",
+              "title": "Bakchen",
+              "author_display": "Euripides",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Euripides_Bakchen",
+              "release_tag": "gr-drama-v1"
+            },
+            "Kyklops": {
+              "path": "griechisch/poesie/Drama/Euripides/Kyklops",
+              "versmass": false,
+              "filename_base": "kyklops_gr_de_en_stil1",
+              "title": "Kyklops",
+              "author_display": "Euripides",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Euripides_Kyklops",
+              "release_tag": "gr-drama-v1"
+            },
+            "Medea": {
+              "path": "griechisch/poesie/Drama/Euripides/Medea",
+              "versmass": false,
+              "filename_base": "medea_gr_de_en_stil1",
+              "title": "Medea",
+              "author_display": "Euripides",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Euripides_Medea",
+              "release_tag": "gr-drama-v1"
+            }
+          },
+          "Sophokles": {
+            "Aias": {
+              "path": "griechisch/poesie/Drama/Sophokles/Aias",
+              "versmass": false,
+              "filename_base": "aias_gr_de_en_stil1",
+              "title": "Aias",
+              "author_display": "Sophokles",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Sophokles_Aias",
+              "release_tag": "gr-drama-v1"
+            },
+            "Antigone": {
+              "path": "griechisch/poesie/Drama/Sophokles/Antigone",
+              "versmass": false,
+              "filename_base": "antigone_gr_de_en_stil1",
+              "title": "Antigone",
+              "author_display": "Sophokles",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Sophokles_Antigone",
+              "release_tag": "gr-drama-v1"
+            },
+            "Elektra": {
+              "path": "griechisch/poesie/Drama/Sophokles/Elektra",
+              "versmass": false,
+              "filename_base": "elektra_gr_de_en_stil1",
+              "title": "Elektra",
+              "author_display": "Sophokles",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Sophokles_Elektra",
+              "release_tag": "gr-drama-v1"
+            },
+            "Trachiniae": {
+              "path": "griechisch/poesie/Drama/Sophokles/Trachiniae",
+              "versmass": false,
+              "filename_base": "trachiniae_gr_de_en_stil1",
+              "title": "Trachiniae",
+              "author_display": "Sophokles",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Sophokles_Trachiniae",
+              "release_tag": "gr-drama-v1"
+            },
+            "Ödipus_Tyrannos": {
+              "path": "griechisch/poesie/Drama/Sophokles/Ödipus_Tyrannos",
+              "versmass": false,
+              "filename_base": "ödipustyrannos_gr_de_en_stil1",
+              "title": "Ödipus Tyrannos",
+              "author_display": "Sophokles",
+              "bucket": "GR_DRAMA",
+              "meta_prefix": "GR_poesie_Drama_Sophokles_Ödipus_Tyrannos",
+              "release_tag": "gr-drama-v1"
+            }
           }
         },
-        "Aischylos": {
-          "Der_gefesselte_Prometheus": {
-            "path": "griechisch/poesie/Aischylos/Der_gefesselte_Prometheus",
-            "versmass": true,
-            "filename_base": "Der_gefesselte_Prometheus"
+        "Epos": {
+          "Apollonios_von_Rhodos": {
+            "Argonautika_1": {
+              "path": "griechisch/poesie/Epos/Apollonios_von_Rhodos/Argonautika_1",
+              "versmass": true,
+              "filename_base": "argonautika1_gr_de_en_stil1",
+              "title": "Argonautika 1",
+              "author_display": "Apollonios von Rhodos",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Apollonios_von_Rhodos_Argonautika_1",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Argonautika_2": {
+              "path": "griechisch/poesie/Epos/Apollonios_von_Rhodos/Argonautika_2",
+              "versmass": true,
+              "filename_base": "argonautika2_gr_de_en_stil1",
+              "title": "Argonautika 2",
+              "author_display": "Apollonios von Rhodos",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Apollonios_von_Rhodos_Argonautika_2",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Argonautika_3": {
+              "path": "griechisch/poesie/Epos/Apollonios_von_Rhodos/Argonautika_3",
+              "versmass": true,
+              "filename_base": "argonautika3_gr_de_en_stil1",
+              "title": "Argonautika 3",
+              "author_display": "Apollonios von Rhodos",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Apollonios_von_Rhodos_Argonautika_3",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Argonautika_4": {
+              "path": "griechisch/poesie/Epos/Apollonios_von_Rhodos/Argonautika_4",
+              "versmass": true,
+              "filename_base": "argonautika4_gr_de_en_stil1",
+              "title": "Argonautika 4",
+              "author_display": "Apollonios von Rhodos",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Apollonios_von_Rhodos_Argonautika_4",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            }
+          },
+          "Hesiod": {
+            "Theogonie": {
+              "path": "griechisch/poesie/Epos/Hesiod/Theogonie",
+              "versmass": true,
+              "filename_base": "theogonie_gr_de_en_stil1",
+              "title": "Theogonie",
+              "author_display": "Hesiod",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Hesiod_Theogonie",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Werke_und_Tage": {
+              "path": "griechisch/poesie/Epos/Hesiod/Werke_und_Tage",
+              "versmass": true,
+              "filename_base": "werkeundtage_gr_de_en_stil1",
+              "title": "Werke und Tage",
+              "author_display": "Hesiod",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Hesiod_Werke_und_Tage",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            }
+          },
+          "Homer": {
+            "Odyssee_1": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_1",
+              "versmass": true,
+              "filename_base": "odyssee1_gr_de_en_stil1",
+              "title": "Odyssee 1",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_1",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_10": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_10",
+              "versmass": true,
+              "filename_base": "odyssee10_gr_de_en_stil1",
+              "title": "Odyssee 10",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_10",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_11": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_11",
+              "versmass": true,
+              "filename_base": "odyssee11_gr_de_en_stil1",
+              "title": "Odyssee 11",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_11",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_12": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_12",
+              "versmass": true,
+              "filename_base": "odyssee12_gr_de_en_stil1",
+              "title": "Odyssee 12",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_12",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_13": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_13",
+              "versmass": true,
+              "filename_base": "odyssee13_gr_de_en_stil1",
+              "title": "Odyssee 13",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_13",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_14": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_14",
+              "versmass": true,
+              "filename_base": "odyssee14_gr_de_en_stil1",
+              "title": "Odyssee 14",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_14",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_15": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_15",
+              "versmass": true,
+              "filename_base": "odyssee15_gr_de_en_stil1",
+              "title": "Odyssee 15",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_15",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_16": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_16",
+              "versmass": true,
+              "filename_base": "odyssee16_gr_de_en_stil1",
+              "title": "Odyssee 16",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_16",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_17": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_17",
+              "versmass": true,
+              "filename_base": "odyssee17_gr_de_en_stil1",
+              "title": "Odyssee 17",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_17",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_18": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_18",
+              "versmass": true,
+              "filename_base": "odyssee18_gr_de_en_stil1",
+              "title": "Odyssee 18",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_18",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_19": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_19",
+              "versmass": true,
+              "filename_base": "odyssee19_gr_de_en_stil1",
+              "title": "Odyssee 19",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_19",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_2": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_2",
+              "versmass": true,
+              "filename_base": "odyssee2_gr_de_en_stil1",
+              "title": "Odyssee 2",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_2",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_20": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_20",
+              "versmass": true,
+              "filename_base": "odyssee20_gr_de_en_stil1",
+              "title": "Odyssee 20",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_20",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_21": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_21",
+              "versmass": true,
+              "filename_base": "odyssee21_gr_de_en_stil1",
+              "title": "Odyssee 21",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_21",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Odyssee_22": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_22",
+              "versmass": true,
+              "filename_base": "odyssee22_gr_de_en_stil1",
+              "title": "Odyssee 22",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_22",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Odyssee_23": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_23",
+              "versmass": true,
+              "filename_base": "odyssee23_gr_de_en_stil1",
+              "title": "Odyssee 23",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_23",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Odyssee_24": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_24",
+              "versmass": true,
+              "filename_base": "odyssee24_gr_de_en_stil1",
+              "title": "Odyssee 24",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_24",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Odyssee_3": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_3",
+              "versmass": true,
+              "filename_base": "odyssee3_gr_de_en_stil1",
+              "title": "Odyssee 3",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_3",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_4": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_4",
+              "versmass": true,
+              "filename_base": "odyssee4_gr_de_en_stil1",
+              "title": "Odyssee 4",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_4",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_5": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_5",
+              "versmass": true,
+              "filename_base": "odyssee5_gr_de_en_stil1",
+              "title": "Odyssee 5",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_5",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_6": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_6",
+              "versmass": true,
+              "filename_base": "odyssee6_gr_de_en_stil1",
+              "title": "Odyssee 6",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_6",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_7": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_7",
+              "versmass": true,
+              "filename_base": "odyssee7_gr_de_en_stil1",
+              "title": "Odyssee 7",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_7",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_8": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_8",
+              "versmass": true,
+              "filename_base": "odyssee8_gr_de_en_stil1",
+              "title": "Odyssee 8",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_8",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Odyssee_9": {
+              "path": "griechisch/poesie/Epos/Homer/Odyssee_9",
+              "versmass": true,
+              "filename_base": "odyssee9_gr_de_en_stil1",
+              "title": "Odyssee 9",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ODYSSEE_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Odyssee_9",
+              "release_tag": "gr-epos-odyssee-1-20-v1"
+            },
+            "Ilias_1": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_1",
+              "versmass": true,
+              "filename_base": "ilias1_gr_de_en_stil1",
+              "title": "Ilias 1",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_1",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_10": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_10",
+              "versmass": true,
+              "filename_base": "ilias10_gr_de_en_stil1",
+              "title": "Ilias 10",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_10",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_11": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_11",
+              "versmass": true,
+              "filename_base": "ilias11_gr_de_en_stil1",
+              "title": "Ilias 11",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_11",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_12": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_12",
+              "versmass": true,
+              "filename_base": "ilias12_gr_de_en_stil1",
+              "title": "Ilias 12",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_12",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_13": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_13",
+              "versmass": true,
+              "filename_base": "ilias13_gr_de_en_stil1",
+              "title": "Ilias 13",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_13",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_14": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_14",
+              "versmass": true,
+              "filename_base": "ilias14_gr_de_en_stil1",
+              "title": "Ilias 14",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_14",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_15": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_15",
+              "versmass": true,
+              "filename_base": "ilias15_gr_de_en_stil1",
+              "title": "Ilias 15",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_15",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_16": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_16",
+              "versmass": true,
+              "filename_base": "ilias16_gr_de_en_stil1",
+              "title": "Ilias 16",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_16",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_17": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_17",
+              "versmass": true,
+              "filename_base": "ilias17_gr_de_en_stil1",
+              "title": "Ilias 17",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_17",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_18": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_18",
+              "versmass": true,
+              "filename_base": "ilias18_gr_de_en_stil1",
+              "title": "Ilias 18",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_18",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_19": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_19",
+              "versmass": true,
+              "filename_base": "ilias19_gr_de_en_stil1",
+              "title": "Ilias 19",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_19",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_2": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_2",
+              "versmass": true,
+              "filename_base": "ilias2_gr_de_en_stil1",
+              "title": "Ilias 2",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_2",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_20": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_20",
+              "versmass": true,
+              "filename_base": "ilias20_gr_de_en_stil1",
+              "title": "Ilias 20",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_20",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_21": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_21",
+              "versmass": true,
+              "filename_base": "ilias21_gr_de_en_stil1",
+              "title": "Ilias 21",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_21",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Ilias_22": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_22",
+              "versmass": true,
+              "filename_base": "ilias22_gr_de_en_stil1",
+              "title": "Ilias 22",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_22",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Ilias_23": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_23",
+              "versmass": true,
+              "filename_base": "ilias23_gr_de_en_stil1",
+              "title": "Ilias 23",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_23",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Ilias_24": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_24",
+              "versmass": true,
+              "filename_base": "ilias24_gr_de_en_stil1",
+              "title": "Ilias 24",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_ODYSSEE_21_24_REST",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_24",
+              "release_tag": "gr-epos-ilias-odyssee-21-24-rest-v1"
+            },
+            "Ilias_3": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_3",
+              "versmass": true,
+              "filename_base": "ilias3_gr_de_en_stil1",
+              "title": "Ilias 3",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_3",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_4": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_4",
+              "versmass": true,
+              "filename_base": "ilias4_gr_de_en_stil1",
+              "title": "Ilias 4",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_4",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_5": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_5",
+              "versmass": true,
+              "filename_base": "ilias5_gr_de_en_stil1",
+              "title": "Ilias 5",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_5",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_6": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_6",
+              "versmass": true,
+              "filename_base": "ilias6_gr_de_en_stil1",
+              "title": "Ilias 6",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_6",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_7": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_7",
+              "versmass": true,
+              "filename_base": "ilias7_gr_de_en_stil1",
+              "title": "Ilias 7",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_7",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_8": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_8",
+              "versmass": true,
+              "filename_base": "ilias8_gr_de_en_stil1",
+              "title": "Ilias 8",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_8",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            },
+            "Ilias_9": {
+              "path": "griechisch/poesie/Epos/Homer/Ilias_9",
+              "versmass": true,
+              "filename_base": "ilias9_gr_de_en_stil1",
+              "title": "Ilias 9",
+              "author_display": "Homer",
+              "bucket": "GR_EPOS_ILIAS_1_20",
+              "meta_prefix": "GR_poesie_Epos_Homer_Ilias_9",
+              "release_tag": "gr-epos-ilias-1-20-v1"
+            }
+          }
+        },
+        "Lyrik": {
+          "Homer": {
+            "Aphroditehymnos": {
+              "path": "griechisch/poesie/Lyrik/Homer/Aphroditehymnos",
+              "versmass": true,
+              "filename_base": "aphroditehymnos_gr_de_en_stil1",
+              "title": "Aphroditehymnos",
+              "author_display": "Homer",
+              "bucket": "GR_LYRIK",
+              "meta_prefix": "GR_poesie_Lyrik_Homer_Aphroditehymnos",
+              "release_tag": "gr-lyrik-v1"
+            },
+            "Apollonhymnos": {
+              "path": "griechisch/poesie/Lyrik/Homer/Apollonhymnos",
+              "versmass": true,
+              "filename_base": "apollonhymnos_gr_de_en_stil1",
+              "title": "Apollonhymnos",
+              "author_display": "Homer",
+              "bucket": "GR_LYRIK",
+              "meta_prefix": "GR_poesie_Lyrik_Homer_Apollonhymnos",
+              "release_tag": "gr-lyrik-v1"
+            },
+            "Demeterhymnos": {
+              "path": "griechisch/poesie/Lyrik/Homer/Demeterhymnos",
+              "versmass": true,
+              "filename_base": "demeterhymnos_gr_de_en_stil1",
+              "title": "Demeterhymnos",
+              "author_display": "Homer",
+              "bucket": "GR_LYRIK",
+              "meta_prefix": "GR_poesie_Lyrik_Homer_Demeterhymnos",
+              "release_tag": "gr-lyrik-v1"
+            },
+            "Hermeshymnos": {
+              "path": "griechisch/poesie/Lyrik/Homer/Hermeshymnos",
+              "versmass": true,
+              "filename_base": "hermeshymnos_gr_de_en_stil1",
+              "title": "Hermeshymnos",
+              "author_display": "Homer",
+              "bucket": "GR_LYRIK",
+              "meta_prefix": "GR_poesie_Lyrik_Homer_Hermeshymnos",
+              "release_tag": "gr-lyrik-v1"
+            },
+            "Homerische_Hymnen": {
+              "path": "griechisch/poesie/Lyrik/Homer/Homerische_Hymnen",
+              "versmass": true,
+              "filename_base": "homerischehymnen_gr_de_en_stil1",
+              "title": "Homerische Hymnen",
+              "author_display": "Homer",
+              "bucket": "GR_LYRIK",
+              "meta_prefix": "GR_poesie_Lyrik_Homer_Homerische_Hymnen",
+              "release_tag": "gr-lyrik-v1"
+            }
+          },
+          "Kallimachos": {
+            "Hymnen": {
+              "path": "griechisch/poesie/Lyrik/Kallimachos/Hymnen",
+              "versmass": true,
+              "filename_base": "hymnencallimachos_gr_de_en_stil1",
+              "title": "Hymnen",
+              "author_display": "Kallimachos",
+              "bucket": "GR_LYRIK",
+              "meta_prefix": "GR_poesie_Lyrik_Kallimachos_Hymnen",
+              "release_tag": "gr-lyrik-v1"
+            }
+          },
+          "Pindar": {
+            "Olympische_Oden": {
+              "path": "griechisch/poesie/Lyrik/Pindar/Olympische_Oden",
+              "versmass": true,
+              "filename_base": "olympischeoden_gr_de_en_stil1",
+              "title": "Olympische Oden",
+              "author_display": "Pindar",
+              "bucket": "GR_LYRIK",
+              "meta_prefix": "GR_poesie_Lyrik_Pindar_Olympische_Oden",
+              "release_tag": "gr-lyrik-v1"
+            }
+          },
+          "Theokrit": {
+            "Idyllen_1": {
+              "path": "griechisch/poesie/Lyrik/Theokrit/Idyllen_1",
+              "versmass": true,
+              "filename_base": "idyllen1_gr_de_en_stil1",
+              "title": "Idyllen 1",
+              "author_display": "Theokrit",
+              "bucket": "GR_LYRIK",
+              "meta_prefix": "GR_poesie_Lyrik_Theokrit_Idyllen_1",
+              "release_tag": "gr-lyrik-v1"
+            },
+            "Idyllen_2": {
+              "path": "griechisch/poesie/Lyrik/Theokrit/Idyllen_2",
+              "versmass": true,
+              "filename_base": "idyllen2_gr_de_en_stil1",
+              "title": "Idyllen 2",
+              "author_display": "Theokrit",
+              "bucket": "GR_LYRIK",
+              "meta_prefix": "GR_poesie_Lyrik_Theokrit_Idyllen_2",
+              "release_tag": "gr-lyrik-v1"
+            },
+            "Idyllen_3": {
+              "path": "griechisch/poesie/Lyrik/Theokrit/Idyllen_3",
+              "versmass": true,
+              "filename_base": "idyllen3_gr_de_en_stil1",
+              "title": "Idyllen 3",
+              "author_display": "Theokrit",
+              "bucket": "GR_LYRIK",
+              "meta_prefix": "GR_poesie_Lyrik_Theokrit_Idyllen_3",
+              "release_tag": "gr-lyrik-v1"
+            },
+            "Idyllen_4": {
+              "path": "griechisch/poesie/Lyrik/Theokrit/Idyllen_4",
+              "versmass": true,
+              "filename_base": "idyllen4_gr_de_en_stil1",
+              "title": "Idyllen 4",
+              "author_display": "Theokrit",
+              "bucket": "GR_LYRIK",
+              "meta_prefix": "GR_poesie_Lyrik_Theokrit_Idyllen_4",
+              "release_tag": "gr-lyrik-v1"
+            }
           }
         }
       },
       "prosa": {
-        "Platon": {
-          "Menon": {
-            "path": "griechisch/prosa/Platon/Menon",
-            "versmass": false,
-            "filename_base": "Menon"
+        "Historie": {
+          "Herodot": {
+            "Historien_1": {
+              "path": "griechisch/prosa/Historie/Herodot/Historien_1",
+              "versmass": false,
+              "filename_base": "historien1_gr_de_en_stil1",
+              "title": "Historien 1",
+              "author_display": "Herodot",
+              "bucket": "GR_HISTORIE",
+              "meta_prefix": "GR_prosa_Historie_Herodot_Historien_1",
+              "release_tag": "gr-historie-v1"
+            },
+            "Historien_2": {
+              "path": "griechisch/prosa/Historie/Herodot/Historien_2",
+              "versmass": false,
+              "filename_base": "historien2_gr_de_en_stil1",
+              "title": "Historien 2",
+              "author_display": "Herodot",
+              "bucket": "GR_HISTORIE",
+              "meta_prefix": "GR_prosa_Historie_Herodot_Historien_2",
+              "release_tag": "gr-historie-v1"
+            }
+          },
+          "Plutarch": {
+            "Alexander": {
+              "path": "griechisch/prosa/Historie/Plutarch/Alexander",
+              "versmass": false,
+              "filename_base": "alexander_gr_de_en_stil1",
+              "title": "Alexander",
+              "author_display": "Plutarch",
+              "bucket": "GR_HISTORIE",
+              "meta_prefix": "GR_prosa_Historie_Plutarch_Alexander",
+              "release_tag": "gr-historie-v1"
+            },
+            "Caesar": {
+              "path": "griechisch/prosa/Historie/Plutarch/Caesar",
+              "versmass": false,
+              "filename_base": "caesar_gr_de_en_stil1",
+              "title": "Caesar",
+              "author_display": "Plutarch",
+              "bucket": "GR_HISTORIE",
+              "meta_prefix": "GR_prosa_Historie_Plutarch_Caesar",
+              "release_tag": "gr-historie-v1"
+            },
+            "Cicero": {
+              "path": "griechisch/prosa/Historie/Plutarch/Cicero",
+              "versmass": false,
+              "filename_base": "cicero_gr_de_en_stil1",
+              "title": "Cicero",
+              "author_display": "Plutarch",
+              "bucket": "GR_HISTORIE",
+              "meta_prefix": "GR_prosa_Historie_Plutarch_Cicero",
+              "release_tag": "gr-historie-v1"
+            },
+            "Demosthenes": {
+              "path": "griechisch/prosa/Historie/Plutarch/Demosthenes",
+              "versmass": false,
+              "filename_base": "demosthenes_gr_de_en_stil1",
+              "title": "Demosthenes",
+              "author_display": "Plutarch",
+              "bucket": "GR_HISTORIE",
+              "meta_prefix": "GR_prosa_Historie_Plutarch_Demosthenes",
+              "release_tag": "gr-historie-v1"
+            }
+          },
+          "Thukydides": {
+            "Der_peloponnesische_Krieg_1": {
+              "path": "griechisch/prosa/Historie/Thukydides/Der_peloponnesische_Krieg_1",
+              "versmass": false,
+              "filename_base": "thukydides1_gr_de_en_stil1",
+              "title": "Der peloponnesische Krieg 1",
+              "author_display": "Thukydides",
+              "bucket": "GR_HISTORIE",
+              "meta_prefix": "GR_prosa_Historie_Thukydides_Der_peloponnesische_Krieg_1",
+              "release_tag": "gr-historie-v1"
+            },
+            "Der_peloponnesische_Krieg_2": {
+              "path": "griechisch/prosa/Historie/Thukydides/Der_peloponnesische_Krieg_2",
+              "versmass": false,
+              "filename_base": "thukydides2_gr_de_en_stil1",
+              "title": "Der peloponnesische Krieg 2",
+              "author_display": "Thukydides",
+              "bucket": "GR_HISTORIE",
+              "meta_prefix": "GR_prosa_Historie_Thukydides_Der_peloponnesische_Krieg_2",
+              "release_tag": "gr-historie-v1"
+            }
+          },
+          "Xenophon": {
+            "Anabasis_1": {
+              "path": "griechisch/prosa/Historie/Xenophon/Anabasis_1",
+              "versmass": false,
+              "filename_base": "anabasis1_gr_de_en_stil1",
+              "title": "Anabasis 1",
+              "author_display": "Xenophon",
+              "bucket": "GR_HISTORIE",
+              "meta_prefix": "GR_prosa_Historie_Xenophon_Anabasis_1",
+              "release_tag": "gr-historie-v1"
+            },
+            "Anabasis_2": {
+              "path": "griechisch/prosa/Historie/Xenophon/Anabasis_2",
+              "versmass": false,
+              "filename_base": "anabasis2_gr_de_en_stil1",
+              "title": "Anabasis 2",
+              "author_display": "Xenophon",
+              "bucket": "GR_HISTORIE",
+              "meta_prefix": "GR_prosa_Historie_Xenophon_Anabasis_2",
+              "release_tag": "gr-historie-v1"
+            }
+          }
+        },
+        "Philosophie_Rhetorik": {
+          "Aristoteles": {
+            "Nikomachische_Ethik_3": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Nikomachische_Ethik_3",
+              "versmass": false,
+              "filename_base": "nikomanischeethik3_gr_de_en_stil1",
+              "title": "Nikomachische Ethik 3",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Nikomachische_Ethik_3",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Nikomachische_Ethik_4": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Nikomachische_Ethik_4",
+              "versmass": false,
+              "filename_base": "nikomanischeethik4_gr_de_en_stil1",
+              "title": "Nikomachische Ethik 4",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Nikomachische_Ethik_4",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Nikomachische_Ethik_5": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Nikomachische_Ethik_5",
+              "versmass": false,
+              "filename_base": "nikomanischeethik5_gr_de_en_stil1",
+              "title": "Nikomachische Ethik 5",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Nikomachische_Ethik_5",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Nikomachische_Ethik_6": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Nikomachische_Ethik_6",
+              "versmass": false,
+              "filename_base": "nikomanischeethik6_gr_de_en_stil1",
+              "title": "Nikomachische Ethik 6",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Nikomachische_Ethik_6",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Nikomachische_Ethik_7": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Nikomachische_Ethik_7",
+              "versmass": false,
+              "filename_base": "nikomanischeethik7_gr_de_en_stil1",
+              "title": "Nikomachische Ethik 7",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Nikomachische_Ethik_7",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Nikomachische_Ethik_8": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Nikomachische_Ethik_8",
+              "versmass": false,
+              "filename_base": "nikomanischeethik8_gr_de_en_stil1",
+              "title": "Nikomachische Ethik 8",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Nikomachische_Ethik_8",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Nikomachische_Ethik_9": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Nikomachische_Ethik_9",
+              "versmass": false,
+              "filename_base": "nikomanischeethik9_gr_de_en_stil1",
+              "title": "Nikomachische Ethik 9",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Nikomachische_Ethik_9",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Poetik": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Poetik",
+              "versmass": false,
+              "filename_base": "poetik_gr_de_en_stil1",
+              "title": "Poetik",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_REST",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Poetik",
+              "release_tag": "gr-philosophie-aristoteles-rest-v1"
+            },
+            "Politik_1": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Politik_1",
+              "versmass": false,
+              "filename_base": "politik1_gr_de_en_stil1",
+              "title": "Politik 1",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Politik_1",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Politik_2": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Politik_2",
+              "versmass": false,
+              "filename_base": "politik2_gr_de_en_stil1",
+              "title": "Politik 2",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Politik_2",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Politik_3": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Politik_3",
+              "versmass": false,
+              "filename_base": "politik3_gr_de_en_stil1",
+              "title": "Politik 3",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Politik_3",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Politik_4": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Politik_4",
+              "versmass": false,
+              "filename_base": "politik4_gr_de_en_stil1",
+              "title": "Politik 4",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Politik_4",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Politik_5": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Politik_5",
+              "versmass": false,
+              "filename_base": "politik5_gr_de_en_stil1",
+              "title": "Politik 5",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Politik_5",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Politik_6": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Politik_6",
+              "versmass": false,
+              "filename_base": "politik6_gr_de_en_stil1",
+              "title": "Politik 6",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Politik_6",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Politik_7": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Politik_7",
+              "versmass": false,
+              "filename_base": "politik7_gr_de_en_stil1",
+              "title": "Politik 7",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Politik_7",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Politik_8": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Politik_8",
+              "versmass": false,
+              "filename_base": "politik8_gr_de_en_stil1",
+              "title": "Politik 8",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Politik_8",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Rhetorik_1": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Rhetorik_1",
+              "versmass": false,
+              "filename_base": "rhetorik1_gr_de_en_stil1",
+              "title": "Rhetorik 1",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_REST",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Rhetorik_1",
+              "release_tag": "gr-philosophie-aristoteles-rest-v1"
+            },
+            "Rhetorik_2": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Rhetorik_2",
+              "versmass": false,
+              "filename_base": "rhetorik2_gr_de_en_stil1",
+              "title": "Rhetorik 2",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_REST",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Rhetorik_2",
+              "release_tag": "gr-philosophie-aristoteles-rest-v1"
+            },
+            "Rhetorik_3": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Rhetorik_3",
+              "versmass": false,
+              "filename_base": "rhetorik3_gr_de_en_stil1",
+              "title": "Rhetorik 3",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_REST",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Rhetorik_3",
+              "release_tag": "gr-philosophie-aristoteles-rest-v1"
+            },
+            "Metaphysik_1": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_1",
+              "versmass": false,
+              "filename_base": "metaphysik1_gr_de_en_stil1",
+              "title": "Metaphysik 1",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_1",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_10": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_10",
+              "versmass": false,
+              "filename_base": "metaphysik10_gr_de_en_stil1",
+              "title": "Metaphysik 10",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_10",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_11": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_11",
+              "versmass": false,
+              "filename_base": "metaphysik11_gr_de_en_stil1",
+              "title": "Metaphysik 11",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_11",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_12": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_12",
+              "versmass": false,
+              "filename_base": "metaphysik12_gr_de_en_stil1",
+              "title": "Metaphysik 12",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_12",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_13": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_13",
+              "versmass": false,
+              "filename_base": "metaphysik13_gr_de_en_stil1",
+              "title": "Metaphysik 13",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_13",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_14": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_14",
+              "versmass": false,
+              "filename_base": "metaphysik14_gr_de_en_stil1",
+              "title": "Metaphysik 14",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_14",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_2": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_2",
+              "versmass": false,
+              "filename_base": "metaphysik2_gr_de_en_stil1",
+              "title": "Metaphysik 2",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_2",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_3": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_3",
+              "versmass": false,
+              "filename_base": "metaphysik3_gr_de_en_stil1",
+              "title": "Metaphysik 3",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_3",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_4": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_4",
+              "versmass": false,
+              "filename_base": "metaphysik4_gr_de_en_stil1",
+              "title": "Metaphysik 4",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_4",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_5": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_5",
+              "versmass": false,
+              "filename_base": "metaphysik5_gr_de_en_stil1",
+              "title": "Metaphysik 5",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_5",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_6": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_6",
+              "versmass": false,
+              "filename_base": "metaphysik6_gr_de_en_stil1",
+              "title": "Metaphysik 6",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_6",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_7": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_7",
+              "versmass": false,
+              "filename_base": "metaphysik7_gr_de_en_stil1",
+              "title": "Metaphysik 7",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_7",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_8": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_8",
+              "versmass": false,
+              "filename_base": "metaphysik8_gr_de_en_stil1",
+              "title": "Metaphysik 8",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_8",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Metaphysik_9": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Metaphysik_9",
+              "versmass": false,
+              "filename_base": "metaphysik9_gr_de_en_stil1",
+              "title": "Metaphysik 9",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Metaphysik_9",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Nikomachische_Ethik_1": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Nikomachische_Ethik_1",
+              "versmass": false,
+              "filename_base": "nikomanischeethik1_gr_de_en_stil1",
+              "title": "Nikomachische Ethik 1",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Nikomachische_Ethik_1",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Nikomachische_Ethik_10": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Nikomachische_Ethik_10",
+              "versmass": false,
+              "filename_base": "nikomanischeethik10_gr_de_en_stil1",
+              "title": "Nikomachische Ethik 10",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Nikomachische_Ethik_10",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            },
+            "Nikomachische_Ethik_2": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Aristoteles/Nikomachische_Ethik_2",
+              "versmass": false,
+              "filename_base": "nikomanischeethik2_gr_de_en_stil1",
+              "title": "Nikomachische Ethik 2",
+              "author_display": "Aristoteles",
+              "bucket": "GR_PHILOSOPHIE_ARISTOTELES_HAUPTWERKE",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Aristoteles_Nikomachische_Ethik_2",
+              "release_tag": "gr-philosophie-aristoteles-hauptwerke-v1"
+            }
+          },
+          "Demosthenes": {
+            "Über_die_Krone": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Demosthenes/Über_die_Krone",
+              "versmass": false,
+              "filename_base": "überdiekrone_gr_de_en_stil1",
+              "title": "Über die Krone",
+              "author_display": "Demosthenes",
+              "bucket": "GR_PHILOSOPHIE_REST",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Demosthenes_Über_die_Krone",
+              "release_tag": "gr-philosophie-rest-v1"
+            }
+          },
+          "Lukian": {
+            "Vera_Historia_1": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Lukian/Vera_Historia_1",
+              "versmass": false,
+              "filename_base": "verahistoria1_gr_de_en_stil1",
+              "title": "Vera Historia 1",
+              "author_display": "Lukian",
+              "bucket": "GR_PHILOSOPHIE_REST",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Lukian_Vera_Historia_1",
+              "release_tag": "gr-philosophie-rest-v1"
+            },
+            "Vera_Historia_2": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Lukian/Vera_Historia_2",
+              "versmass": false,
+              "filename_base": "verahistoria2_gr_de_en_stil1",
+              "title": "Vera Historia 2",
+              "author_display": "Lukian",
+              "bucket": "GR_PHILOSOPHIE_REST",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Lukian_Vera_Historia_2",
+              "release_tag": "gr-philosophie-rest-v1"
+            }
+          },
+          "Lysias": {
+            "Mord_an_Eratosthenes": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Lysias/Mord_an_Eratosthenes",
+              "versmass": false,
+              "filename_base": "mordaneratosthenes_gr_de_en_stil1",
+              "title": "Mord an Eratosthenes",
+              "author_display": "Lysias",
+              "bucket": "GR_PHILOSOPHIE_REST",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Lysias_Mord_an_Eratosthenes",
+              "release_tag": "gr-philosophie-rest-v1"
+            }
+          },
+          "Platon": {
+            "Apologie_des_Sokrates": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Apologie_des_Sokrates",
+              "versmass": false,
+              "filename_base": "apologie_gr_de_en_stil1",
+              "title": "Apologie des Sokrates",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Apologie_des_Sokrates",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Gorgias": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Gorgias",
+              "versmass": false,
+              "filename_base": "gorgias_gr_de_en_stil1",
+              "title": "Gorgias",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Gorgias",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Menon": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Menon",
+              "versmass": false,
+              "filename_base": "menon_gr_de_en_stil1",
+              "title": "Menon",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Menon",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_1": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_1",
+              "versmass": false,
+              "filename_base": "nomoi1_gr_de_en_stil1",
+              "title": "Nomoi 1",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_1",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_10": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_10",
+              "versmass": false,
+              "filename_base": "nomoi10_gr_de_en_stil1",
+              "title": "Nomoi 10",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_10",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_11": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_11",
+              "versmass": false,
+              "filename_base": "nomoi11_gr_de_en_stil1",
+              "title": "Nomoi 11",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_11",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_12": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_12",
+              "versmass": false,
+              "filename_base": "nomoi12_gr_de_en_stil1",
+              "title": "Nomoi 12",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_12",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_2": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_2",
+              "versmass": false,
+              "filename_base": "nomoi2_gr_de_en_stil1",
+              "title": "Nomoi 2",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_2",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_3": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_3",
+              "versmass": false,
+              "filename_base": "nomoi3_gr_de_en_stil1",
+              "title": "Nomoi 3",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_3",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_4": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_4",
+              "versmass": false,
+              "filename_base": "nomoi4_gr_de_en_stil1",
+              "title": "Nomoi 4",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_4",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_5": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_5",
+              "versmass": false,
+              "filename_base": "nomoi5_gr_de_en_stil1",
+              "title": "Nomoi 5",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_5",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_6": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_6",
+              "versmass": false,
+              "filename_base": "nomoi6_gr_de_en_stil1",
+              "title": "Nomoi 6",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_6",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_7": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_7",
+              "versmass": false,
+              "filename_base": "nomoi7_gr_de_en_stil1",
+              "title": "Nomoi 7",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_7",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_8": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_8",
+              "versmass": false,
+              "filename_base": "nomoi8_gr_de_en_stil1",
+              "title": "Nomoi 8",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_8",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Nomoi_9": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Nomoi_9",
+              "versmass": false,
+              "filename_base": "nomoi9_gr_de_en_stil1",
+              "title": "Nomoi 9",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Nomoi_9",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Phaidon": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Phaidon",
+              "versmass": false,
+              "filename_base": "phaidon_gr_de_en_stil1",
+              "title": "Phaidon",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Phaidon",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Phaidros": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Phaidros",
+              "versmass": false,
+              "filename_base": "phaidros_gr_de_en_stil1",
+              "title": "Phaidros",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Phaidros",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Politeia_1": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Politeia_1",
+              "versmass": false,
+              "filename_base": "politeia1_gr_de_en_stil1",
+              "title": "Politeia 1",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Politeia_1",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Politeia_10": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Politeia_10",
+              "versmass": false,
+              "filename_base": "politeia10_gr_de_en_stil1",
+              "title": "Politeia 10",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Politeia_10",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Politeia_2": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Politeia_2",
+              "versmass": false,
+              "filename_base": "politeia2_gr_de_en_stil1",
+              "title": "Politeia 2",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Politeia_2",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Politeia_3": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Politeia_3",
+              "versmass": false,
+              "filename_base": "politeia3_gr_de_en_stil1",
+              "title": "Politeia 3",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Politeia_3",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Politeia_4": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Politeia_4",
+              "versmass": false,
+              "filename_base": "politeia4_gr_de_en_stil1",
+              "title": "Politeia 4",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Politeia_4",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Politeia_5": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Politeia_5",
+              "versmass": false,
+              "filename_base": "politeia5_gr_de_en_stil1",
+              "title": "Politeia 5",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Politeia_5",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Politeia_6": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Politeia_6",
+              "versmass": false,
+              "filename_base": "politeia6_gr_de_en_stil1",
+              "title": "Politeia 6",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Politeia_6",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Politeia_7": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Politeia_7",
+              "versmass": false,
+              "filename_base": "politeia7_gr_de_en_stil1",
+              "title": "Politeia 7",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Politeia_7",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Politeia_8": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Politeia_8",
+              "versmass": false,
+              "filename_base": "politeia8_gr_de_en_stil1",
+              "title": "Politeia 8",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Politeia_8",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Politeia_9": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Politeia_9",
+              "versmass": false,
+              "filename_base": "politeia9_gr_de_en_stil1",
+              "title": "Politeia 9",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Politeia_9",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Symposion": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Symposion",
+              "versmass": false,
+              "filename_base": "symposion_gr_de_en_stil1",
+              "title": "Symposion",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Symposion",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Theätet": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Theätet",
+              "versmass": false,
+              "filename_base": "theätet_gr_de_en_stil1",
+              "title": "Theätet",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Theätet",
+              "release_tag": "gr-philosophie-platon-v1"
+            },
+            "Timaios": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Platon/Timaios",
+              "versmass": false,
+              "filename_base": "timaios_gr_de_en_stil1",
+              "title": "Timaios",
+              "author_display": "Platon",
+              "bucket": "GR_PHILOSOPHIE_PLATON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Platon_Timaios",
+              "release_tag": "gr-philosophie-platon-v1"
+            }
+          },
+          "Xenophon": {
+            "Apologie_des_Sokrates": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Xenophon/Apologie_des_Sokrates",
+              "versmass": false,
+              "filename_base": "apologiexenophon_gr_de_en_stil1",
+              "title": "Apologie des Sokrates",
+              "author_display": "Xenophon",
+              "bucket": "GR_PHILOSOPHIE_MARKAUREL_XENOPHON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Xenophon_Apologie_des_Sokrates",
+              "release_tag": "gr-philosophie-markaurel-xenophon-v1"
+            },
+            "Kyrupaideia_1": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Xenophon/Kyrupaideia_1",
+              "versmass": false,
+              "filename_base": "kyrupädie1_gr_de_en_stil1",
+              "title": "Kyrupaideia 1",
+              "author_display": "Xenophon",
+              "bucket": "GR_PHILOSOPHIE_MARKAUREL_XENOPHON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Xenophon_Kyrupaideia_1",
+              "release_tag": "gr-philosophie-markaurel-xenophon-v1"
+            },
+            "Kyrupaideia_2": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Xenophon/Kyrupaideia_2",
+              "versmass": false,
+              "filename_base": "kyrupädie2_gr_de_en_stil1",
+              "title": "Kyrupaideia 2",
+              "author_display": "Xenophon",
+              "bucket": "GR_PHILOSOPHIE_MARKAUREL_XENOPHON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Xenophon_Kyrupaideia_2",
+              "release_tag": "gr-philosophie-markaurel-xenophon-v1"
+            },
+            "Memorabilien_1": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Xenophon/Memorabilien_1",
+              "versmass": false,
+              "filename_base": "memorabilien1_gr_de_en_stil1",
+              "title": "Memorabilien 1",
+              "author_display": "Xenophon",
+              "bucket": "GR_PHILOSOPHIE_MARKAUREL_XENOPHON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Xenophon_Memorabilien_1",
+              "release_tag": "gr-philosophie-markaurel-xenophon-v1"
+            },
+            "Memorabilien_2": {
+              "path": "griechisch/prosa/Philosophie_Rhetorik/Xenophon/Memorabilien_2",
+              "versmass": false,
+              "filename_base": "memorabilien2_gr_de_en_stil1",
+              "title": "Memorabilien 2",
+              "author_display": "Xenophon",
+              "bucket": "GR_PHILOSOPHIE_MARKAUREL_XENOPHON",
+              "meta_prefix": "GR_prosa_Philosophie_Rhetorik_Xenophon_Memorabilien_2",
+              "release_tag": "gr-philosophie-markaurel-xenophon-v1"
+            }
           }
         }
       }
     },
     "latein": {
       "poesie": {
-        "Aischylos": {
-          "Der_gefesselte_Prometheus": {
-            "path": "latein/poesie/Aischylos/Der_gefesselte_Prometheus",
-            "versmass": true,
-            "filename_base": "Der_gefesselte_Prometheus"
+        "Drama": {
+          "Plautus": {
+            "Amphitruo": {
+              "path": "latein/poesie/Drama/Plautus/Amphitruo",
+              "versmass": false,
+              "filename_base": "amphitruo_lat_de_en_stil1",
+              "title": "Amphitruo",
+              "author_display": "Plautus",
+              "bucket": "LAT_DRAMA",
+              "meta_prefix": "LAT_poesie_Drama_Plautus_Amphitruo",
+              "release_tag": "lat-drama-v1"
+            },
+            "Aulularia": {
+              "path": "latein/poesie/Drama/Plautus/Aulularia",
+              "versmass": false,
+              "filename_base": "aulularia_lat_de_en_stil1",
+              "title": "Aulularia",
+              "author_display": "Plautus",
+              "bucket": "LAT_DRAMA",
+              "meta_prefix": "LAT_poesie_Drama_Plautus_Aulularia",
+              "release_tag": "lat-drama-v1"
+            },
+            "Menaechmi": {
+              "path": "latein/poesie/Drama/Plautus/Menaechmi",
+              "versmass": false,
+              "filename_base": "menaechmi_lat_de_en_stil1",
+              "title": "Menaechmi",
+              "author_display": "Plautus",
+              "bucket": "LAT_DRAMA",
+              "meta_prefix": "LAT_poesie_Drama_Plautus_Menaechmi",
+              "release_tag": "lat-drama-v1"
+            },
+            "Miles_gloriosus": {
+              "path": "latein/poesie/Drama/Plautus/Miles_gloriosus",
+              "versmass": false,
+              "filename_base": "miles_lat_de_en_stil1",
+              "title": "Miles gloriosus",
+              "author_display": "Plautus",
+              "bucket": "LAT_DRAMA",
+              "meta_prefix": "LAT_poesie_Drama_Plautus_Miles_gloriosus",
+              "release_tag": "lat-drama-v1"
+            }
+          },
+          "Seneca": {
+            "Hercules_furens": {
+              "path": "latein/poesie/Drama/Seneca/Hercules_furens",
+              "versmass": false,
+              "filename_base": "hercfurens_lat_de_en_stil1",
+              "title": "Hercules furens",
+              "author_display": "Seneca",
+              "bucket": "LAT_DRAMA",
+              "meta_prefix": "LAT_poesie_Drama_Seneca_Hercules_furens",
+              "release_tag": "lat-drama-v1"
+            },
+            "Medea": {
+              "path": "latein/poesie/Drama/Seneca/Medea",
+              "versmass": false,
+              "filename_base": "medea_lat_de_en_stil1",
+              "title": "Medea",
+              "author_display": "Seneca",
+              "bucket": "LAT_DRAMA",
+              "meta_prefix": "LAT_poesie_Drama_Seneca_Medea",
+              "release_tag": "lat-drama-v1"
+            },
+            "Phaedra": {
+              "path": "latein/poesie/Drama/Seneca/Phaedra",
+              "versmass": false,
+              "filename_base": "phaedra_lat_de_en_stil1",
+              "title": "Phaedra",
+              "author_display": "Seneca",
+              "bucket": "LAT_DRAMA",
+              "meta_prefix": "LAT_poesie_Drama_Seneca_Phaedra",
+              "release_tag": "lat-drama-v1"
+            },
+            "Thyestes": {
+              "path": "latein/poesie/Drama/Seneca/Thyestes",
+              "versmass": false,
+              "filename_base": "thyestes_lat_de_en_stil1",
+              "title": "Thyestes",
+              "author_display": "Seneca",
+              "bucket": "LAT_DRAMA",
+              "meta_prefix": "LAT_poesie_Drama_Seneca_Thyestes",
+              "release_tag": "lat-drama-v1"
+            }
+          },
+          "Terentius": {
+            "Adelphoe": {
+              "path": "latein/poesie/Drama/Terentius/Adelphoe",
+              "versmass": false,
+              "filename_base": "adelphoe_lat_de_en_stil1",
+              "title": "Adelphoe",
+              "author_display": "Terentius",
+              "bucket": "LAT_DRAMA",
+              "meta_prefix": "LAT_poesie_Drama_Terentius_Adelphoe",
+              "release_tag": "lat-drama-v1"
+            },
+            "Andria": {
+              "path": "latein/poesie/Drama/Terentius/Andria",
+              "versmass": false,
+              "filename_base": "andria_lat_de_en_stil1",
+              "title": "Andria",
+              "author_display": "Terentius",
+              "bucket": "LAT_DRAMA",
+              "meta_prefix": "LAT_poesie_Drama_Terentius_Andria",
+              "release_tag": "lat-drama-v1"
+            },
+            "Heautontimorumenos": {
+              "path": "latein/poesie/Drama/Terentius/Heautontimorumenos",
+              "versmass": false,
+              "filename_base": "heautontimorumenos_lat_de_en_stil1",
+              "title": "Heautontimorumenos",
+              "author_display": "Terentius",
+              "bucket": "LAT_DRAMA",
+              "meta_prefix": "LAT_poesie_Drama_Terentius_Heautontimorumenos",
+              "release_tag": "lat-drama-v1"
+            }
+          }
+        },
+        "Epos": {
+          "Horaz": {
+            "Ars_poetica": {
+              "path": "latein/poesie/Epos/Horaz/Ars_poetica",
+              "versmass": false,
+              "filename_base": "arspoetica_lat_de_en_stil1",
+              "title": "Ars poetica",
+              "author_display": "Horaz",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Horaz_Ars_poetica",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            }
+          },
+          "Juvenal": {
+            "Satiren_1": {
+              "path": "latein/poesie/Epos/Juvenal/Satiren_1",
+              "versmass": false,
+              "filename_base": "juvenal1_lat_de_en_stil1",
+              "title": "Satiren 1",
+              "author_display": "Juvenal",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Juvenal_Satiren_1",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Satiren_10": {
+              "path": "latein/poesie/Epos/Juvenal/Satiren_10",
+              "versmass": false,
+              "filename_base": "juvenal10_lat_de_en_stil1",
+              "title": "Satiren 10",
+              "author_display": "Juvenal",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Juvenal_Satiren_10",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Satiren_3": {
+              "path": "latein/poesie/Epos/Juvenal/Satiren_3",
+              "versmass": false,
+              "filename_base": "juvenal3_lat_de_en_stil1",
+              "title": "Satiren 3",
+              "author_display": "Juvenal",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Juvenal_Satiren_3",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            }
+          },
+          "Lucretius": {
+            "De_rerum_natura_1": {
+              "path": "latein/poesie/Epos/Lucretius/De_rerum_natura_1",
+              "versmass": false,
+              "filename_base": "rerumnatura1_lat_de_en_stil1",
+              "title": "De rerum natura 1",
+              "author_display": "Lucretius",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Lucretius_De_rerum_natura_1",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "De_rerum_natura_2": {
+              "path": "latein/poesie/Epos/Lucretius/De_rerum_natura_2",
+              "versmass": false,
+              "filename_base": "rerumnatura2_lat_de_en_stil1",
+              "title": "De rerum natura 2",
+              "author_display": "Lucretius",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Lucretius_De_rerum_natura_2",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "De_rerum_natura_3": {
+              "path": "latein/poesie/Epos/Lucretius/De_rerum_natura_3",
+              "versmass": false,
+              "filename_base": "rerumnatura3_lat_de_en_stil1",
+              "title": "De rerum natura 3",
+              "author_display": "Lucretius",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Lucretius_De_rerum_natura_3",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "De_rerum_natura_4": {
+              "path": "latein/poesie/Epos/Lucretius/De_rerum_natura_4",
+              "versmass": false,
+              "filename_base": "rerumnatura4_lat_de_en_stil1",
+              "title": "De rerum natura 4",
+              "author_display": "Lucretius",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Lucretius_De_rerum_natura_4",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "De_rerum_natura_5": {
+              "path": "latein/poesie/Epos/Lucretius/De_rerum_natura_5",
+              "versmass": false,
+              "filename_base": "rerumnatura5_lat_de_en_stil1",
+              "title": "De rerum natura 5",
+              "author_display": "Lucretius",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Lucretius_De_rerum_natura_5",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "De_rerum_natura_6": {
+              "path": "latein/poesie/Epos/Lucretius/De_rerum_natura_6",
+              "versmass": false,
+              "filename_base": "rerumnatura6_lat_de_en_stil1",
+              "title": "De rerum natura 6",
+              "author_display": "Lucretius",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Lucretius_De_rerum_natura_6",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            }
+          },
+          "Ovid": {
+            "Metamorphosen_1": {
+              "path": "latein/poesie/Epos/Ovid/Metamorphosen_1",
+              "versmass": false,
+              "filename_base": "metamorphosen1_lat_de_en_stil1",
+              "title": "Metamorphosen 1",
+              "author_display": "Ovid",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Ovid_Metamorphosen_1",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "Metamorphosen_10": {
+              "path": "latein/poesie/Epos/Ovid/Metamorphosen_10",
+              "versmass": false,
+              "filename_base": "metamorphosen10_lat_de_en_stil1",
+              "title": "Metamorphosen 10",
+              "author_display": "Ovid",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Ovid_Metamorphosen_10",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "Metamorphosen_2": {
+              "path": "latein/poesie/Epos/Ovid/Metamorphosen_2",
+              "versmass": false,
+              "filename_base": "metamorphosen2_lat_de_en_stil1",
+              "title": "Metamorphosen 2",
+              "author_display": "Ovid",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Ovid_Metamorphosen_2",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "Metamorphosen_3": {
+              "path": "latein/poesie/Epos/Ovid/Metamorphosen_3",
+              "versmass": false,
+              "filename_base": "metamorphosen3_lat_de_en_stil1",
+              "title": "Metamorphosen 3",
+              "author_display": "Ovid",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Ovid_Metamorphosen_3",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "Metamorphosen_4": {
+              "path": "latein/poesie/Epos/Ovid/Metamorphosen_4",
+              "versmass": false,
+              "filename_base": "metamorphosen4_lat_de_en_stil1",
+              "title": "Metamorphosen 4",
+              "author_display": "Ovid",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Ovid_Metamorphosen_4",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "Metamorphosen_5": {
+              "path": "latein/poesie/Epos/Ovid/Metamorphosen_5",
+              "versmass": false,
+              "filename_base": "metamorphosen5_lat_de_en_stil1",
+              "title": "Metamorphosen 5",
+              "author_display": "Ovid",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Ovid_Metamorphosen_5",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "Metamorphosen_6": {
+              "path": "latein/poesie/Epos/Ovid/Metamorphosen_6",
+              "versmass": false,
+              "filename_base": "metamorphosen6_lat_de_en_stil1",
+              "title": "Metamorphosen 6",
+              "author_display": "Ovid",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Ovid_Metamorphosen_6",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "Metamorphosen_7": {
+              "path": "latein/poesie/Epos/Ovid/Metamorphosen_7",
+              "versmass": false,
+              "filename_base": "metamorphosen7_lat_de_en_stil1",
+              "title": "Metamorphosen 7",
+              "author_display": "Ovid",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Ovid_Metamorphosen_7",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "Metamorphosen_8": {
+              "path": "latein/poesie/Epos/Ovid/Metamorphosen_8",
+              "versmass": false,
+              "filename_base": "metamorphosen8_lat_de_en_stil1",
+              "title": "Metamorphosen 8",
+              "author_display": "Ovid",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Ovid_Metamorphosen_8",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            },
+            "Metamorphosen_9": {
+              "path": "latein/poesie/Epos/Ovid/Metamorphosen_9",
+              "versmass": false,
+              "filename_base": "metamorphosen9_lat_de_en_stil1",
+              "title": "Metamorphosen 9",
+              "author_display": "Ovid",
+              "bucket": "LAT_EPOS_METAMORPHOSEN_RERUMNATURA",
+              "meta_prefix": "LAT_poesie_Epos_Ovid_Metamorphosen_9",
+              "release_tag": "lat-epos-metamorphosen-rerumnatura-v1"
+            }
+          },
+          "Vergil": {
+            "Aeneis_1": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_1",
+              "versmass": false,
+              "filename_base": "aeneid1_lat_de_en_stil1",
+              "title": "Aeneis 1",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_1",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Aeneis_10": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_10",
+              "versmass": false,
+              "filename_base": "aeneid10_lat_de_en_stil1",
+              "title": "Aeneis 10",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_10",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Aeneis_11": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_11",
+              "versmass": false,
+              "filename_base": "aeneid11_lat_de_en_stil1",
+              "title": "Aeneis 11",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_11",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Aeneis_12": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_12",
+              "versmass": false,
+              "filename_base": "aeneid12_lat_de_en_stil1",
+              "title": "Aeneis 12",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_12",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Aeneis_2": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_2",
+              "versmass": false,
+              "filename_base": "aeneid2_lat_de_en_stil1",
+              "title": "Aeneis 2",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_2",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Aeneis_3": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_3",
+              "versmass": false,
+              "filename_base": "aeneid3_lat_de_en_stil1",
+              "title": "Aeneis 3",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_3",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Aeneis_4": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_4",
+              "versmass": false,
+              "filename_base": "aeneid4_lat_de_en_stil1",
+              "title": "Aeneis 4",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_4",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Aeneis_5": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_5",
+              "versmass": false,
+              "filename_base": "aeneid5_lat_de_en_stil1",
+              "title": "Aeneis 5",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_5",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Aeneis_6": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_6",
+              "versmass": false,
+              "filename_base": "aeneid6_lat_de_en_stil1",
+              "title": "Aeneis 6",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_6",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Aeneis_7": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_7",
+              "versmass": false,
+              "filename_base": "aeneid7_lat_de_en_stil1",
+              "title": "Aeneis 7",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_7",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Aeneis_8": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_8",
+              "versmass": false,
+              "filename_base": "aeneid8_lat_de_en_stil1",
+              "title": "Aeneis 8",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_8",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Aeneis_9": {
+              "path": "latein/poesie/Epos/Vergil/Aeneis_9",
+              "versmass": false,
+              "filename_base": "aeneid9_lat_de_en_stil1",
+              "title": "Aeneis 9",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Aeneis_9",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Georgica_1": {
+              "path": "latein/poesie/Epos/Vergil/Georgica_1",
+              "versmass": false,
+              "filename_base": "georgica1_lat_de_en_stil1",
+              "title": "Georgica 1",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Georgica_1",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Georgica_2": {
+              "path": "latein/poesie/Epos/Vergil/Georgica_2",
+              "versmass": false,
+              "filename_base": "georgica2_lat_de_en_stil1",
+              "title": "Georgica 2",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Georgica_2",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Georgica_3": {
+              "path": "latein/poesie/Epos/Vergil/Georgica_3",
+              "versmass": false,
+              "filename_base": "georgica3_lat_de_en_stil1",
+              "title": "Georgica 3",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Georgica_3",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            },
+            "Georgica_4": {
+              "path": "latein/poesie/Epos/Vergil/Georgica_4",
+              "versmass": false,
+              "filename_base": "georgica4_lat_de_en_stil1",
+              "title": "Georgica 4",
+              "author_display": "Vergil",
+              "bucket": "LAT_EPOS_AENEIS_GEORGICA_SATIRE_ARS",
+              "meta_prefix": "LAT_poesie_Epos_Vergil_Georgica_4",
+              "release_tag": "lat-epos-aeneis-georgica-satire-ars-v1"
+            }
+          }
+        },
+        "Lyrik": {
+          "Horaz": {
+            "Carmina": {
+              "path": "latein/poesie/Lyrik/Horaz/Carmina",
+              "versmass": false,
+              "filename_base": "carmina_lat_de_en_stil1",
+              "title": "Carmina",
+              "author_display": "Horaz",
+              "bucket": "LAT_LYRIK",
+              "meta_prefix": "LAT_poesie_Lyrik_Horaz_Carmina",
+              "release_tag": "lat-lyrik-v1"
+            },
+            "Horazoden_1": {
+              "path": "latein/poesie/Lyrik/Horaz/Horazoden_1",
+              "versmass": false,
+              "filename_base": "horazoden1_lat_de_en_stil1",
+              "title": "Horazoden 1",
+              "author_display": "Horaz",
+              "bucket": "LAT_LYRIK",
+              "meta_prefix": "LAT_poesie_Lyrik_Horaz_Horazoden_1",
+              "release_tag": "lat-lyrik-v1"
+            },
+            "Horazoden_2": {
+              "path": "latein/poesie/Lyrik/Horaz/Horazoden_2",
+              "versmass": false,
+              "filename_base": "horazoden2_lat_de_en_stil1",
+              "title": "Horazoden 2",
+              "author_display": "Horaz",
+              "bucket": "LAT_LYRIK",
+              "meta_prefix": "LAT_poesie_Lyrik_Horaz_Horazoden_2",
+              "release_tag": "lat-lyrik-v1"
+            },
+            "Horazoden_3": {
+              "path": "latein/poesie/Lyrik/Horaz/Horazoden_3",
+              "versmass": false,
+              "filename_base": "horazoden3_lat_de_en_stil1",
+              "title": "Horazoden 3",
+              "author_display": "Horaz",
+              "bucket": "LAT_LYRIK",
+              "meta_prefix": "LAT_poesie_Lyrik_Horaz_Horazoden_3",
+              "release_tag": "lat-lyrik-v1"
+            },
+            "Horazoden_4": {
+              "path": "latein/poesie/Lyrik/Horaz/Horazoden_4",
+              "versmass": false,
+              "filename_base": "horazoden4_lat_de_en_stil1",
+              "title": "Horazoden 4",
+              "author_display": "Horaz",
+              "bucket": "LAT_LYRIK",
+              "meta_prefix": "LAT_poesie_Lyrik_Horaz_Horazoden_4",
+              "release_tag": "lat-lyrik-v1"
+            }
+          },
+          "Ovid": {
+            "Amores_1": {
+              "path": "latein/poesie/Lyrik/Ovid/Amores_1",
+              "versmass": false,
+              "filename_base": "amores1_lat_de_en_stil1",
+              "title": "Amores 1",
+              "author_display": "Ovid",
+              "bucket": "LAT_LYRIK",
+              "meta_prefix": "LAT_poesie_Lyrik_Ovid_Amores_1",
+              "release_tag": "lat-lyrik-v1"
+            },
+            "Amores_2": {
+              "path": "latein/poesie/Lyrik/Ovid/Amores_2",
+              "versmass": false,
+              "filename_base": "amores2_lat_de_en_stil1",
+              "title": "Amores 2",
+              "author_display": "Ovid",
+              "bucket": "LAT_LYRIK",
+              "meta_prefix": "LAT_poesie_Lyrik_Ovid_Amores_2",
+              "release_tag": "lat-lyrik-v1"
+            },
+            "Amores_3": {
+              "path": "latein/poesie/Lyrik/Ovid/Amores_3",
+              "versmass": false,
+              "filename_base": "amores3_lat_de_en_stil1",
+              "title": "Amores 3",
+              "author_display": "Ovid",
+              "bucket": "LAT_LYRIK",
+              "meta_prefix": "LAT_poesie_Lyrik_Ovid_Amores_3",
+              "release_tag": "lat-lyrik-v1"
+            }
           }
         }
       },
       "prosa": {
-        "Platon": {
-          "Menon": {
-            "path": "latein/prosa/Platon/Menon",
-            "versmass": false,
-            "filename_base": "Menon"
+        "Historie": {
+          "Caesar": {
+            "Commentarii_de_bello_civil_1": {
+              "path": "latein/prosa/Historie/Caesar/Commentarii_de_bello_civil_1",
+              "versmass": false,
+              "filename_base": "bellocivil1_lat_de_en_stil1",
+              "title": "Commentarii de bello civil 1",
+              "author_display": "Caesar",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Caesar_Commentarii_de_bello_civil_1",
+              "release_tag": "lat-historie-v1"
+            },
+            "Commentarii_de_bello_civil_2": {
+              "path": "latein/prosa/Historie/Caesar/Commentarii_de_bello_civil_2",
+              "versmass": false,
+              "filename_base": "bellocivil2_lat_de_en_stil1",
+              "title": "Commentarii de bello civil 2",
+              "author_display": "Caesar",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Caesar_Commentarii_de_bello_civil_2",
+              "release_tag": "lat-historie-v1"
+            },
+            "Commentarii_de_bello_civil_3": {
+              "path": "latein/prosa/Historie/Caesar/Commentarii_de_bello_civil_3",
+              "versmass": false,
+              "filename_base": "bellocivil3_lat_de_en_stil1",
+              "title": "Commentarii de bello civil 3",
+              "author_display": "Caesar",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Caesar_Commentarii_de_bello_civil_3",
+              "release_tag": "lat-historie-v1"
+            },
+            "Commentarii_de_bello_Gallico_1": {
+              "path": "latein/prosa/Historie/Caesar/Commentarii_de_bello_Gallico_1",
+              "versmass": false,
+              "filename_base": "bellogallico1_lat_de_en_stil1",
+              "title": "Commentarii de bello Gallico 1",
+              "author_display": "Caesar",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Caesar_Commentarii_de_bello_Gallico_1",
+              "release_tag": "lat-historie-v1"
+            },
+            "Commentarii_de_bello_Gallico_2": {
+              "path": "latein/prosa/Historie/Caesar/Commentarii_de_bello_Gallico_2",
+              "versmass": false,
+              "filename_base": "bellogallico2_lat_de_en_stil1",
+              "title": "Commentarii de bello Gallico 2",
+              "author_display": "Caesar",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Caesar_Commentarii_de_bello_Gallico_2",
+              "release_tag": "lat-historie-v1"
+            },
+            "Commentarii_de_bello_Gallico_3": {
+              "path": "latein/prosa/Historie/Caesar/Commentarii_de_bello_Gallico_3",
+              "versmass": false,
+              "filename_base": "bellogallico3_lat_de_en_stil1",
+              "title": "Commentarii de bello Gallico 3",
+              "author_display": "Caesar",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Caesar_Commentarii_de_bello_Gallico_3",
+              "release_tag": "lat-historie-v1"
+            }
+          },
+          "Livius": {
+            "Ab_urbe_condita_1": {
+              "path": "latein/prosa/Historie/Livius/Ab_urbe_condita_1",
+              "versmass": false,
+              "filename_base": "aburbeconditia1bis10buch1_lat_de_en_stil1",
+              "title": "Ab urbe condita 1",
+              "author_display": "Livius",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Livius_Ab_urbe_condita_1",
+              "release_tag": "lat-historie-v1"
+            },
+            "Ab_urbe_condita_21": {
+              "path": "latein/prosa/Historie/Livius/Ab_urbe_condita_21",
+              "versmass": false,
+              "filename_base": "aburbeconditia20bis30buch21_lat_de_en_stil1",
+              "title": "Ab urbe condita 21",
+              "author_display": "Livius",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Livius_Ab_urbe_condita_21",
+              "release_tag": "lat-historie-v1"
+            },
+            "ab_urbe_conditia_1": {
+              "path": "latein/prosa/Historie/Livius/ab_urbe_conditia_1",
+              "versmass": false,
+              "filename_base": "ab_urbe_conditia_1",
+              "title": "ab urbe conditia 1",
+              "author_display": "Livius",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Livius_ab_urbe_conditia_1",
+              "release_tag": "lat-historie-v1"
+            }
+          },
+          "Tacitus": {
+            "Germania": {
+              "path": "latein/prosa/Historie/Tacitus/Germania",
+              "versmass": false,
+              "filename_base": "germania_lat_de_en_stil1",
+              "title": "Germania",
+              "author_display": "Tacitus",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Tacitus_Germania",
+              "release_tag": "lat-historie-v1"
+            },
+            "Historiae_1": {
+              "path": "latein/prosa/Historie/Tacitus/Historiae_1",
+              "versmass": false,
+              "filename_base": "historiae1_lat_de_en_stil1",
+              "title": "Historiae 1",
+              "author_display": "Tacitus",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Tacitus_Historiae_1",
+              "release_tag": "lat-historie-v1"
+            },
+            "Historiae_2": {
+              "path": "latein/prosa/Historie/Tacitus/Historiae_2",
+              "versmass": false,
+              "filename_base": "historiae2_lat_de_en_stil1",
+              "title": "Historiae 2",
+              "author_display": "Tacitus",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Tacitus_Historiae_2",
+              "release_tag": "lat-historie-v1"
+            },
+            "Historiae_3": {
+              "path": "latein/prosa/Historie/Tacitus/Historiae_3",
+              "versmass": false,
+              "filename_base": "historiae3_lat_de_en_stil1",
+              "title": "Historiae 3",
+              "author_display": "Tacitus",
+              "bucket": "LAT_HISTORIE",
+              "meta_prefix": "LAT_prosa_Historie_Tacitus_Historiae_3",
+              "release_tag": "lat-historie-v1"
+            }
+          }
+        },
+        "Philosophie_Rhetorik": {
+          "Boethius": {
+            "De_consolatione_philosophiae_1": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Boethius/De_consolatione_philosophiae_1",
+              "versmass": false,
+              "filename_base": "consolationephilosophiae1_lat_de_en_stil1",
+              "title": "De consolatione philosophiae 1",
+              "author_display": "Boethius",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Boethius_De_consolatione_philosophiae_1",
+              "release_tag": "lat-philosophie-all-v1"
+            }
+          },
+          "Cicero": {
+            "De_officiis_1": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/De_officiis_1",
+              "versmass": false,
+              "filename_base": "offiiciis1_lat_de_en_stil1",
+              "title": "De officiis 1",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_De_officiis_1",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "De_officiis_2": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/De_officiis_2",
+              "versmass": false,
+              "filename_base": "offiiciis2_lat_de_en_stil1",
+              "title": "De officiis 2",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_De_officiis_2",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "De_officiis_3": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/De_officiis_3",
+              "versmass": false,
+              "filename_base": "offiiciis3_lat_de_en_stil1",
+              "title": "De officiis 3",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_De_officiis_3",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "De_oratore_1": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/De_oratore_1",
+              "versmass": false,
+              "filename_base": "oratore1_lat_de_en_stil1",
+              "title": "De oratore 1",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_De_oratore_1",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "De_oratore_2": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/De_oratore_2",
+              "versmass": false,
+              "filename_base": "oratore2_lat_de_en_stil1",
+              "title": "De oratore 2",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_De_oratore_2",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "De_oratore_3": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/De_oratore_3",
+              "versmass": false,
+              "filename_base": "oratore3_lat_de_en_stil1",
+              "title": "De oratore 3",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_De_oratore_3",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "De_re_publica_1": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/De_re_publica_1",
+              "versmass": false,
+              "filename_base": "republica1_lat_de_en_stil1",
+              "title": "De re publica 1",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_De_re_publica_1",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "De_re_publica_2": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/De_re_publica_2",
+              "versmass": false,
+              "filename_base": "republica2_lat_de_en_stil1",
+              "title": "De re publica 2",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_De_re_publica_2",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "De_re_publica_3": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/De_re_publica_3",
+              "versmass": false,
+              "filename_base": "republica3_lat_de_en_stil1",
+              "title": "De re publica 3",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_De_re_publica_3",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "De_re_publica_4": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/De_re_publica_4",
+              "versmass": false,
+              "filename_base": "republica4_lat_de_en_stil1",
+              "title": "De re publica 4",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_De_re_publica_4",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "In_Catilinam": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/In_Catilinam",
+              "versmass": false,
+              "filename_base": "incatilinam_lat_de_en_stil1",
+              "title": "In Catilinam",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_In_Catilinam",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "Pro_Archia_poeta": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Cicero/Pro_Archia_poeta",
+              "versmass": false,
+              "filename_base": "proarchiapoeta_lat_de_en_stil1",
+              "title": "Pro Archia poeta",
+              "author_display": "Cicero",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Cicero_Pro_Archia_poeta",
+              "release_tag": "lat-philosophie-all-v1"
+            }
+          },
+          "Seneca": {
+            "Epistulae_morales_ad_Lucilium_1": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Seneca/Epistulae_morales_ad_Lucilium_1",
+              "versmass": false,
+              "filename_base": "epistulaemorales1_lat_de_en_stil1",
+              "title": "Epistulae morales ad Lucilium 1",
+              "author_display": "Seneca",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Seneca_Epistulae_morales_ad_Lucilium_1",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "Epistulae_morales_ad_Lucilium_2": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Seneca/Epistulae_morales_ad_Lucilium_2",
+              "versmass": false,
+              "filename_base": "epistulaemorales2_lat_de_en_stil1",
+              "title": "Epistulae morales ad Lucilium 2",
+              "author_display": "Seneca",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Seneca_Epistulae_morales_ad_Lucilium_2",
+              "release_tag": "lat-philosophie-all-v1"
+            },
+            "Epistulae_morales_ad_Lucilium_3": {
+              "path": "latein/prosa/Philosophie_Rhetorik/Seneca/Epistulae_morales_ad_Lucilium_3",
+              "versmass": false,
+              "filename_base": "epistulaemorales3_lat_de_en_stil1",
+              "title": "Epistulae morales ad Lucilium 3",
+              "author_display": "Seneca",
+              "bucket": "LAT_PHILOSOPHIE_ALL",
+              "meta_prefix": "LAT_prosa_Philosophie_Rhetorik_Seneca_Epistulae_morales_ad_Lucilium_3",
+              "release_tag": "lat-philosophie-all-v1"
+            }
           }
         }
       }

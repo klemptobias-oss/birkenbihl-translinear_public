@@ -23,10 +23,11 @@
     </header>
 
     <main class="wrap">
-      <!-- ======= 2×2-Grid ======= -->
+      <!-- ======= 2-Fenster-Layout nebeneinander: links Entwurf, rechts PDF ======= -->
       <section class="grid-2x2">
-        <!-- Original-Text (oben links) -->
-        <div class="pane">
+        <!-- DEAKTIVIERT: Original-Text (oben links) -->
+        <!--
+        <div class="pane" style="display: none;">
           <div class="pane-head">
             <div class="pane-title">Original.txt</div>
             <div class="pane-tools">
@@ -43,193 +44,9 @@
           </div>
           <div id="origText" class="pane-body mono scroll"></div>
         </div>
+        -->
 
-        <!-- PDF (oben rechts) -->
-        <div class="pane pdf-pane">
-          <div class="pane-head">
-            <div class="pane-title">PDF-Ansicht</div>
-            <div class="pane-tools">
-              <button class="btn" id="pdfOpenTabBtn">
-                PDF in neuem Tab öffnen
-              </button>
-              <button class="btn primary" id="pdfDownloadBtn">
-                Aktuelles PDF herunterladen
-              </button>
-            </div>
-          </div>
-          <div class="pane-body pdf-body">
-            <!-- PDF-Renderer direkt im PDF-Fenster -->
-            <div class="pdf-renderer-container" id="pdfRendererContainer">
-              <!-- PDF-Toolbar -->
-              <div class="pdf-toolbar" id="pdfToolbar">
-                <!-- Navigation-Zeile: Seite links, Zoom Mitte, Source rechts -->
-                <div class="pdf-toolbar-row pdf-nav-row">
-                  <div class="pdf-nav-left">
-                    <button class="btn" id="pdfPrev">⟨</button>
-                    <div>
-                      <span id="pdfPageLabel">Seite</span>
-                      <strong id="pdfPageNum">–</strong>/<span id="pdfPageCount"
-                        >–</span
-                      >
-                    </div>
-                    <button class="btn" id="pdfNext">⟩</button>
-                  </div>
-                  <div class="pdf-source-controls">
-                    <div class="pdf-options-group">
-                      <button
-                        class="pdf-option-btn active"
-                        data-opt="source"
-                        data-val="original"
-                      >
-                        Original
-                      </button>
-                      <button
-                        class="pdf-option-btn"
-                        data-opt="source"
-                        data-val="draft"
-                      >
-                        Entwurf
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- PDF-Toolbar - Zeile 2: PDF-Optionen -->
-                <div class="pdf-toolbar-row pdf-options-row">
-                  <div class="pdf-options-integrated">
-                    <div class="pdf-options-group">
-                      <button
-                        class="pdf-option-btn active"
-                        data-opt="strength"
-                        data-val="Normal"
-                      >
-                        Normal
-                      </button>
-                      <button
-                        class="pdf-option-btn"
-                        data-opt="strength"
-                        data-val="GR_Fett"
-                      >
-                        Fett
-                      </button>
-                      <button
-                        class="pdf-option-btn"
-                        data-opt="strength"
-                        data-val="DE_Fett"
-                      >
-                        DE-Fett
-                      </button>
-                    </div>
-
-                    <div class="pdf-options-group">
-                      <button
-                        class="pdf-option-btn active"
-                        data-opt="color"
-                        data-val="Colour"
-                      >
-                        Colour
-                      </button>
-                      <button
-                        class="pdf-option-btn"
-                        data-opt="color"
-                        data-val="BlackWhite"
-                      >
-                        BlackWhite
-                      </button>
-                    </div>
-
-                    <div class="pdf-options-group">
-                      <button
-                        class="pdf-option-btn active"
-                        data-opt="tags"
-                        data-val="Tag"
-                      >
-                        Tags
-                      </button>
-                      <button
-                        class="pdf-option-btn"
-                        data-opt="tags"
-                        data-val="NoTags"
-                      >
-                        NoTag
-                      </button>
-                    </div>
-
-                    <div class="pdf-options-group">
-                      <button
-                        class="pdf-option-btn active"
-                        data-opt="meter"
-                        data-val="with"
-                      >
-                        Versmaß
-                      </button>
-                      <button
-                        class="pdf-option-btn"
-                        data-opt="meter"
-                        data-val="without"
-                      >
-                        Ohne Versmaß
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- PDF-Seiten -->
-              <div class="pdf-pages" id="pdfPages">
-                <div class="pdf-loading">
-                  <div class="pdf-spinner"></div>
-                  PDF wird geladen...
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Birkenbihl-Text (unten links) -->
-        <div class="pane">
-          <div class="pane-head">
-            <div class="pane-title">Original-Birkenbihl.txt</div>
-            <div class="pane-tools">
-              <button id="btnBirkenbihlDownload" class="btn primary">
-                Birkenbihl.txt herunterladen
-              </button>
-            </div>
-          </div>
-          <!-- Zweite Header-Zeile -->
-          <div class="pane-head">
-            <div class="pane-title"></div>
-            <div class="pane-tools">
-              <button
-                id="toggleBirkenbihlTags"
-                class="toggle-btn"
-                data-state="on"
-                title="Grammatik-Tags im Editor ein-/ausblenden"
-              >
-                Grammatik-Tags anzeigen
-                <span class="toggle-status green">An</span>
-              </button>
-              <button
-                id="toggleBirkenbihlMetrum"
-                class="toggle-btn"
-                data-state="on"
-                title="Metrum-Marker ein-/ausblenden"
-              >
-                Metrum-Marker anzeigen
-                <span class="toggle-status green">An</span>
-              </button>
-              <button id="btnBirPlus" class="btn" title="Schrift größer">
-                A+
-              </button>
-              <button id="btnBirMinus" class="btn" title="Schrift kleiner">
-                A−
-              </button>
-            </div>
-          </div>
-          <div id="birkenbihlText" class="pane-body mono"></div>
-        </div>
-
-        <!-- Entwurf → PDF (unten rechts) -->
+        <!-- Entwurf → PDF (unten - jetzt volle Breite) -->
         <div class="pane">
           <div class="pane-head">
             <div class="pane-title">Entwurf → PDF</div>
@@ -295,6 +112,175 @@
             contenteditable="true"
           ></div>
         </div>
+        <!-- DEAKTIVIERT: Birkenbihl-Text (unten links) -->
+        <!--
+        <div class="pane" style="display: none;">
+          <div class="pane-head">
+            <div class="pane-title">Original-Birkenbihl.txt</div>
+            <div class="pane-tools">
+              <button id="btnBirkenbihlDownload" class="btn primary">
+                Birkenbihl.txt herunterladen
+              </button>
+            </div>
+          </div>
+          <div class="pane-head">
+            <div class="pane-title"></div>
+            <div class="pane-tools">
+              <button
+                id="toggleBirkenbihlTags"
+                class="toggle-btn"
+                data-state="on"
+                title="Grammatik-Tags im Editor ein-/ausblenden"
+              >
+                Grammatik-Tags anzeigen
+                <span class="toggle-status green">An</span>
+              </button>
+              <button
+                id="toggleBirkenbihlMetrum"
+                class="toggle-btn"
+                data-state="on"
+                title="Metrum-Marker ein-/ausblenden"
+              >
+                Metrum-Marker anzeigen
+                <span class="toggle-status green">An</span>
+              </button>
+              <button id="btnBirPlus" class="btn" title="Schrift größer">
+                A+
+              </button>
+              <button id="btnBirMinus" class="btn" title="Schrift kleiner">
+                A−
+              </button>
+            </div>
+          </div>
+          <div id="birkenbihlText" class="pane-body mono"></div>
+        </div>
+        -->
+
+        <!-- PDF (oben - jetzt volle Breite) -->
+        <div class="pane pdf-pane">
+          <div class="pane-head">
+            <div class="pane-title">PDF-Ansicht</div>
+            <div class="pane-tools">
+              <button class="btn" id="pdfOpenTabBtn">
+                PDF in neuem Tab öffnen
+              </button>
+              <button class="btn primary" id="pdfDownloadBtn">
+                Aktuelles PDF herunterladen
+              </button>
+            </div>
+          </div>
+          <div class="pane-body pdf-body">
+            <!-- PDF-Renderer direkt im PDF-Fenster -->
+            <div class="pdf-renderer-container" id="pdfRendererContainer">
+              <!-- PDF-Toolbar -->
+              <div class="pdf-toolbar" id="pdfToolbar">
+                <!-- PDF-Toolbar: Alle Optionen in einer Zeile -->
+                <div class="pdf-toolbar-row pdf-options-row">
+                  <div class="pdf-options-integrated">
+                    <!-- Original / Entwurf Auswahl -->
+                    <div class="pdf-options-group">
+                      <button
+                        class="pdf-option-btn active"
+                        data-opt="source"
+                        data-val="original"
+                      >
+                        Original
+                      </button>
+                      <button
+                        class="pdf-option-btn"
+                        data-opt="source"
+                        data-val="draft"
+                      >
+                        Entwurf
+                      </button>
+                    </div>
+                    <!-- Strength-Buttons: Fett / Normal -->
+                    <div class="pdf-options-group">
+                      <button
+                        class="pdf-option-btn active"
+                        data-opt="strength"
+                        data-val="Fett"
+                      >
+                        Fett
+                      </button>
+                      <button
+                        class="pdf-option-btn"
+                        data-opt="strength"
+                        data-val="Normal"
+                      >
+                        Normal
+                      </button>
+                    </div>
+
+
+                    <div class="pdf-options-group">
+                      <button
+                        class="pdf-option-btn active"
+                        data-opt="color"
+                        data-val="Colour"
+                      >
+                        Colour
+                      </button>
+                      <button
+                        class="pdf-option-btn"
+                        data-opt="color"
+                        data-val="BlackWhite"
+                      >
+                        BlackWhite
+                      </button>
+                    </div>
+
+                    <div class="pdf-options-group">
+                      <button
+                        class="pdf-option-btn active"
+                        data-opt="tags"
+                        data-val="Tag"
+                      >
+                        Tags
+                      </button>
+                      <button
+                        class="pdf-option-btn"
+                        data-opt="tags"
+                        data-val="NoTags"
+                      >
+                        NoTag
+                      </button>
+                    </div>
+
+                    <!-- DEAKTIVIERT: Versmaß/Ohne Versmaß Buttons (jetzt separate Werkseiten) -->
+                    <!--
+                    <div class="pdf-options-group">
+                      <button
+                        class="pdf-option-btn active"
+                        data-opt="meter"
+                        data-val="with"
+                      >
+                        Versmaß
+                      </button>
+                      <button
+                        class="pdf-option-btn"
+                        data-opt="meter"
+                        data-val="without"
+                      >
+                        Ohne Versmaß
+                      </button>
+                    </div>
+                    -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- PDF-Seiten -->
+              <div class="pdf-pages" id="pdfPages">
+                <div class="pdf-loading">
+                  <div class="pdf-spinner"></div>
+                  PDF wird geladen...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
     </main>
 

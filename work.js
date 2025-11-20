@@ -3,10 +3,21 @@
 import { loadCatalog, getWorkMeta } from "./catalog.js";
 
 // 1) KONFIG
+const GH_OWNER = "klemptobias-oss";
+const GH_REPO = "birkenbihl-translinear_public";
+const GH_BASE = `https://github.com/${GH_OWNER}/${GH_REPO}/releases/download`;
+const GH_RAW_BRANCH = "main";
+const GH_RAW_BASE = `https://raw.githubusercontent.com/${GH_OWNER}/${GH_REPO}/${GH_RAW_BRANCH}`;
+
 const WORKER_BASE = "https://birkenbihl-draft-01.klemp-tobias.workers.dev"; // Externer Worker
+const GH_RELEASE_PROXY = `${WORKER_BASE}/release`;
 const TXT_BASE = "texte"; // texte/<kind>/<author>/<work>/
-const PDF_BASE = "pdf"; // pdf/<kind>/<Sprache>/<author>/<work>/
 const DRAFT_BASE = "pdf_drafts"; // pdf_drafts/<kind>_drafts/<author>/<work>/
+const IS_LOCAL_ENVIRONMENT =
+  typeof window !== "undefined" &&
+  (window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1" ||
+    window.location.protocol === "file:");
 
 // Tag-Definitionen (aus den Python-Codes)
 const SUP_TAGS = [
@@ -16,6 +27,7 @@ const SUP_TAGS = [
   "A",
   "V",
   "Du",
+  "Abl", // NEU: Ablativ für Latein
   "Adj",
   "Pt",
   "Prp",
@@ -34,6 +46,8 @@ const SUB_TAGS = [
   "Per",
   "Plq",
   "Fu",
+  "Fu1", // NEU: Futur 1 für Latein
+  "Fu2", // NEU: Futur 2 für Latein
   "Inf",
   "Imv",
   "Akt",
@@ -44,6 +58,9 @@ const SUB_TAGS = [
   "Pr",
   "AorS",
   "M/P",
+  "Ger", // NEU: Gerundium für Latein
+  "Gdv", // NEU: Gerundivum für Latein
+  "Spn", // NEU: Supinum für Latein
 ];
 // COLOR_POS_WHITELIST entfernt - Farben werden jetzt direkt in tag_colors definiert
 
@@ -113,19 +130,23 @@ const el = {
 const state = {
   lang: getParam("lang", "griechisch"),
   kind: getParam("kind", "poesie"), // poesie | prosa
+  category: getParam("category", ""), // NEU: Kategorie (Epos, Drama, Lyrik, etc.)
   author: getParam("author", "Unsortiert"),
   work: getParam("work", "Unbenannt"),
+  languages: getParam("languages", "2"), // NEU: 2 oder 3 sprachig
+  meterMode: getParam("meter", "false"), // NEU: "true" oder "false" - ob Versmaß-Version geladen werden soll
 
   workMeta: null, // Wird nach dem Laden des Katalogs gefüllt
 
   // UI-Optionen
   source: "original", // original | draft
-  strength: "Normal", // Normal | GR_Fett | DE_Fett
+  strength: "", // Wird dynamisch gesetzt: GR_Fett für Griechisch, LAT_Fett für Latein
   color: "Colour", // Colour | BlackWhite
   tags: "Tag", // Tag | NoTags
-  meter: "without", // with | without  (nur wenn unterstützt)
+  meter: "without", // with | without  (nur für PDF-Rendering, wenn Versmaß-Marker angezeigt werden sollen)
 
   meterSupported: false,
+  meterPageActive: false,
   lastDraftUrl: null, // vom Worker zurückbekommen
   originalBirkenbihlText: "", // Zum Zurücksetzen des Entwurfs
 
@@ -134,7 +155,7 @@ const state = {
     supTags: new Set(SUP_TAGS),
     subTags: new Set(SUB_TAGS),
     placementOverrides: {}, // Tag -> "sup" | "sub" | "off"
-    tagColors: {}, // Tag -> "red" | "orange" | "blue" | "green" | "magenta"
+    tagColors: {}, // Tag -> "red" | "orange" | "blue" | "green" | "violett"
     hiddenTags: new Set(), // Tags die nicht angezeigt werden sollen
   },
 };
@@ -149,7 +170,8 @@ console.log("URL-Parameter:", {
 });
 
 // Neue, strukturierte Definition für die Konfigurationstabelle
-const tagConfigDefinition = [
+// Griechische Tag-Konfiguration
+const tagConfigDefinitionGreek = [
   {
     leader: { id: "nomen", display: "Nomen", tag: "Nomen" },
     members: [
@@ -251,60 +273,288 @@ const tagConfigDefinition = [
   { standalone: { id: "ij", display: "Interjektion (ij)", tag: "ij" } },
 ];
 
+// Lateinische Tag-Konfiguration
+const tagConfigDefinitionLatin = [
+  {
+    leader: { id: "nomen", display: "Nomen", tag: "Nomen" },
+    members: [
+      { id: "nomen_N", display: "Nominativ (N)", tag: "N" },
+      { id: "nomen_G", display: "Genitiv (G)", tag: "G" },
+      { id: "nomen_D", display: "Dativ (D)", tag: "D" },
+      { id: "nomen_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "nomen_Abl", display: "Ablativ (Abl)", tag: "Abl" },
+      { id: "nomen_V", display: "Vokativ (V)", tag: "V" },
+    ],
+  },
+  {
+    leader: { id: "verb", display: "Verben", tag: "Verben" },
+    members: [
+      { id: "verb_Pra", display: "Präsens (Prä)", tag: "Prä" },
+      { id: "verb_Imp", display: "Imperfekt (Imp)", tag: "Imp" },
+      { id: "verb_Per", display: "Perfekt (Per)", tag: "Per" },
+      { id: "verb_Plq", display: "Plusquamperfekt (Plq)", tag: "Plq" },
+      { id: "verb_Fu1", display: "Futur 1 (Fu1)", tag: "Fu1" },
+      { id: "verb_Fu2", display: "Futur 2 (Fu2)", tag: "Fu2" },
+      { id: "verb_Akt", display: "Aktiv (Akt)", tag: "Akt" },
+      { id: "verb_Pas", display: "Passiv (Pas)", tag: "Pas" },
+      { id: "verb_Inf", display: "Infinitiv (Inf)", tag: "Inf" },
+      { id: "verb_Knj", display: "Konjunktiv (Knj)", tag: "Knj" },
+      { id: "verb_Imv", display: "Imperativ (Imv)", tag: "Imv" },
+    ],
+  },
+  {
+    leader: { id: "partizip", display: "Partizipien", tag: "Partizipien" },
+    members: [
+      { id: "partizip_Pra", display: "Präsens (Prä)", tag: "Prä" },
+      { id: "partizip_Per", display: "Perfekt (Per)", tag: "Per" },
+      { id: "partizip_Fu1", display: "Futur 1 (Fu1)", tag: "Fu1" },
+      { id: "partizip_N", display: "Nominativ (N)", tag: "N" },
+      { id: "partizip_G", display: "Genitiv (G)", tag: "G" },
+      { id: "partizip_D", display: "Dativ (D)", tag: "D" },
+      { id: "partizip_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "partizip_Abl", display: "Ablativ (Abl)", tag: "Abl" },
+      { id: "partizip_V", display: "Vokativ (V)", tag: "V" },
+      { id: "partizip_Akt", display: "Aktiv (Akt)", tag: "Akt" },
+      { id: "partizip_Pas", display: "Passiv (Pas)", tag: "Pas" },
+    ],
+  },
+  {
+    leader: { id: "gerundium", display: "Gerundium (Ger)", tag: "Ger" },
+    members: [
+      { id: "gerundium_G", display: "Genitiv (G)", tag: "G" },
+      { id: "gerundium_D", display: "Dativ (D)", tag: "D" },
+      { id: "gerundium_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "gerundium_Abl", display: "Ablativ (Abl)", tag: "Abl" },
+    ],
+  },
+  {
+    leader: { id: "gerundivum", display: "Gerundivum (Gdv)", tag: "Gdv" },
+    members: [
+      { id: "gerundivum_N", display: "Nominativ (N)", tag: "N" },
+      { id: "gerundivum_G", display: "Genitiv (G)", tag: "G" },
+      { id: "gerundivum_D", display: "Dativ (D)", tag: "D" },
+      { id: "gerundivum_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "gerundivum_Abl", display: "Ablativ (Abl)", tag: "Abl" },
+      { id: "gerundivum_V", display: "Vokativ (V)", tag: "V" },
+    ],
+  },
+  {
+    leader: { id: "supinum", display: "Supinum (Spn)", tag: "Spn" },
+    members: [
+      { id: "supinum_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "supinum_Abl", display: "Ablativ (Abl)", tag: "Abl" },
+    ],
+  },
+  {
+    leader: { id: "adjektiv", display: "Adjektiv (Adj)", tag: "Adj" },
+    members: [
+      { id: "adjektiv_N", display: "Nominativ (N)", tag: "N" },
+      { id: "adjektiv_G", display: "Genitiv (G)", tag: "G" },
+      { id: "adjektiv_D", display: "Dativ (D)", tag: "D" },
+      { id: "adjektiv_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "adjektiv_Abl", display: "Ablativ (Abl)", tag: "Abl" },
+      { id: "adjektiv_V", display: "Vokativ (V)", tag: "V" },
+      { id: "adjektiv_Kmp", display: "Komparativ (Kmp)", tag: "Kmp" },
+      { id: "adjektiv_Sup", display: "Superlativ (Sup)", tag: "Sup" },
+    ],
+  },
+  {
+    leader: { id: "adverb", display: "Adverb (Adv)", tag: "Adv" },
+    members: [
+      { id: "adverb_Kmp", display: "Komparativ (Kmp)", tag: "Kmp" },
+      { id: "adverb_Sup", display: "Superlativ (Sup)", tag: "Sup" },
+    ],
+  },
+  {
+    leader: { id: "pronomen", display: "Pronomen (Pr)", tag: "Pr" },
+    members: [
+      { id: "pronomen_N", display: "Nominativ (N)", tag: "N" },
+      { id: "pronomen_G", display: "Genitiv (G)", tag: "G" },
+      { id: "pronomen_D", display: "Dativ (D)", tag: "D" },
+      { id: "pronomen_A", display: "Akkusativ (A)", tag: "A" },
+      { id: "pronomen_Abl", display: "Ablativ (Abl)", tag: "Abl" },
+    ],
+  },
+  // Einzelne Grammatik-Tags als normale Zeilen (nicht als Gruppenleiter)
+  { standalone: { id: "prp", display: "Präposition (Prp)", tag: "Prp" } },
+  { standalone: { id: "kon", display: "Konjunktion (Kon)", tag: "Kon" } },
+  { standalone: { id: "pt", display: "Partikel (Pt)", tag: "Pt" } },
+  { standalone: { id: "ij", display: "Interjektion (ij)", tag: "ij" } },
+];
+
+// Wähle die richtige Konfiguration basierend auf der Sprache
+const tagConfigDefinition =
+  state.lang === "latein" ? tagConfigDefinitionLatin : tagConfigDefinitionGreek;
+
 // 6) Hilfen
 
 // PDF-Dateiname gemäß deiner Konvention:
-// <Work>_birkenbihl_<Strength>_<Colour|BlackWhite>_<Tag|NoTags>[_Versmaß].pdf
-function buildPdfFilename() {
+// <Work>_<lang>_de[_en]_stil1_birkenbihl_<Strength>_<Colour|BlackWhite>_<Tag|NoTags>[_Versmass].pdf
+function buildPdfFilenameBase() {
   if (!state.workMeta || !state.workMeta.filename_base) {
     console.error("Work metadata with filename_base not loaded!");
-    return "error.pdf";
+    return "error";
   }
 
+  // filename_base enthält bereits: <work>_<lang>_de_en_stil1 oder <work>_<lang>_de_stil1
+  // Wir müssen prüfen, ob es 2- oder 3-sprachig ist
   let filename = state.workMeta.filename_base;
+
+  // Wenn der filename_base _de_en_ enthält, ist es 3-sprachig
+  // Wenn er nur _de_ enthält (ohne _en), ist es 2-sprachig
+  const is3Lang = filename.includes("_de_en_");
+
+  // Wenn der User eine andere Sprachversion will, müssen wir den filename_base anpassen
+  if (state.languages === "3" && !is3Lang) {
+    // User will 3-sprachig, aber filename_base ist 2-sprachig
+    // Ersetze _de_stil1 durch _de_en_stil1
+    filename = filename.replace("_de_stil1", "_de_en_stil1");
+  } else if (state.languages === "2" && is3Lang) {
+    // User will 2-sprachig, aber filename_base ist 3-sprachig
+    // Ersetze _de_en_stil1 durch _de_stil1
+    filename = filename.replace("_de_en_stil1", "_de_stil1");
+  }
+
   console.log("Building filename from base:", filename, "with options:", {
     source: state.source,
     strength: state.strength,
     color: state.color,
     tags: state.tags,
     meter: state.meter,
+    languages: state.languages,
+    meterMode: state.meterMode,
   });
+
+  // Wenn Versmaß-Modus aktiv ist, füge "_Versmass" JETZT ein (vor "_birkenbihl")
+  if (state.meter === "with") {
+    filename += "_Versmass";
+    console.log("Versmaß-Modus aktiv, filename wird zu:", filename);
+  }
 
   // Alle Dateien haben "birkenbihl" im Namen
   filename += "_birkenbihl";
-  if (state.strength === "GR_Fett") filename += "_GR_Fett";
-  else if (state.strength === "DE_Fett") filename += "_DE_Fett";
+
+  // Bestimme die Sprache aus dem filename_base (z.B. "_gr_" oder "_lat_")
+  const isGreek = filename.includes("_gr_");
+  const isLatin = filename.includes("_lat_");
+
+  console.log("=== BUILD PDF FILENAME DEBUG ===");
+  console.log("filename_base:", state.workMeta.filename_base);
+  console.log("isGreek:", isGreek, "isLatin:", isLatin);
+  console.log("state.strength:", state.strength);
+  console.log("state.lang:", state.lang);
+
+  // Strength: "Fett" → GR_Fett/LAT_Fett, "Normal" → _Normal
+  if (state.strength === "Normal") {
+    filename += "_Normal";
+    console.log("Using Normal");
+  } else if (state.strength === "Fett") {
+    // Fett: GR_Fett für Griechisch, LAT_Fett für Latein
+    if (isGreek) {
+      filename += "_GR_Fett";
+      console.log("Using GR_Fett for Greek");
+    } else if (isLatin) {
+      filename += "_LAT_Fett";
+      console.log("Using LAT_Fett for Latin");
+    } else {
+      console.warn("WARNING: Could not determine language! Using fallback");
+      // Fallback basierend auf state.lang
+      if (state.lang === "griechisch") {
+        filename += "_GR_Fett";
+      } else if (state.lang === "latein") {
+        filename += "_LAT_Fett";
+      }
+    }
+  } else {
+    console.warn("WARNING: Unknown strength value:", state.strength);
+    // Fallback: Fett
+    if (isGreek) {
+      filename += "_GR_Fett";
+    } else if (isLatin) {
+      filename += "_LAT_Fett";
+    }
+  }
+
+  // Farbe: Colour oder BlackWhite
   if (state.color === "BlackWhite") filename += "_BlackWhite";
   else if (state.color === "Colour") filename += "_Colour";
+
+  // Tags: Tag oder NoTags
   if (state.tags === "NoTags") filename += "_NoTags";
   else if (state.tags === "Tag") filename += "_Tag";
-  if (state.meterSupported && state.meter === "with") filename += "_Versmaß";
 
-  console.log("Generated filename:", filename + ".pdf");
-  return filename + ".pdf";
+  return filename;
+}
+
+function buildDraftPdfFilename() {
+  const base = buildPdfFilenameBase();
+  if (base === "error") return "error.pdf";
+  const draftName = `${base}.pdf`;
+  console.log("Generated draft filename:", draftName);
+  return draftName;
+}
+
+function buildPdfFilename() {
+  const base = buildPdfFilenameBase();
+  if (base === "error") return "error.pdf";
+
+  const metaPrefix = state.workMeta?.meta_prefix || "";
+  const finalName = metaPrefix ? `${metaPrefix}__${base}.pdf` : `${base}.pdf`;
+
+  console.log("Generated filename:", finalName);
+  return finalName;
 }
 
 function basePdfDir() {
-  if (!state.workMeta || !state.workMeta.path) {
-    console.error("Work metadata with path not loaded!");
-    return "pdf/error";
+  if (!state.workMeta || !state.workMeta.release_tag) {
+    console.error("Work metadata with release_tag not loaded!");
+    return GH_BASE;
   }
 
-  // Der Pfad aus catalog.json ist der vollständige relative Pfad mit Sprachebene.
-  // z.B. griechisch/poesie/Aischylos/Der_gefesselte_Prometheus
-  const complete_path = state.workMeta.path;
-
-  console.log("Work Meta Path:", state.workMeta.path);
-  console.log("Building PDF directory path:", complete_path);
-  console.log("PDF Base:", PDF_BASE, "Draft Base:", DRAFT_BASE);
-  console.log("Source:", state.source);
-
-  // Alle Dateien sind Birkenbihl-Versionen, daher verwenden wir den gleichen Pfad
-  return `${PDF_BASE}/${complete_path}`;
+  return `${GH_BASE}/${state.workMeta.release_tag}`;
 }
+
+function buildReleaseProxyUrl(filename, disposition = "inline") {
+  if (!state.workMeta || !state.workMeta.release_tag) {
+    console.warn("No release metadata, falling back to direct GitHub URL");
+    return `${basePdfDir()}/${encodeURIComponent(filename)}`;
+  }
+  const params = new URLSearchParams({
+    tag: state.workMeta.release_tag,
+    file: filename,
+    mode: disposition === "attachment" ? "attachment" : "inline",
+  });
+  return `${GH_RELEASE_PROXY}?${params.toString()}`;
+}
+
+function buildDraftRelativePath(filename) {
+  const segments = [
+    "pdf_drafts",
+    state.lang,
+    state.kind,
+    state.category,
+    state.author,
+    state.work,
+    filename,
+  ];
+  return segments.filter(Boolean).join("/").replace(/\/+/g, "/");
+}
+
+function buildDraftPdfUrl(filename) {
+  const relativePath = buildDraftRelativePath(filename);
+  if (IS_LOCAL_ENVIRONMENT) {
+    return relativePath;
+  }
+  return `${GH_RAW_BASE}/${relativePath}`;
+}
+
 function buildPdfUrlFromSelection() {
+  if (state.source === "draft") {
+    const name = buildDraftPdfFilename();
+    return buildDraftPdfUrl(name);
+  }
   const name = buildPdfFilename();
-  return `${basePdfDir()}/${name}`;
+  return buildReleaseProxyUrl(name, "inline");
 }
 
 function updatePdfView(fromWorker = false) {
@@ -315,7 +565,7 @@ function updatePdfView(fromWorker = false) {
   }
 
   // Sicherstellen, dass pdfOptions mit state synchronisiert sind
-  pdfOptions.strength = state.strength || "Normal";
+  pdfOptions.strength = state.strength; // "Fett" oder "Normal" (wird später zu GR_Fett/LAT_Fett/Normal aufgelöst)
   pdfOptions.color = state.color || "Colour";
   pdfOptions.tags = state.tags || "Tag";
   // Versmaß-Logik: Verwende state.meter (wurde bereits korrekt gesetzt)
@@ -329,6 +579,9 @@ function updatePdfView(fromWorker = false) {
 
   // Neue PDF-URL basierend auf aktuellen Optionen generieren
   const url = buildPdfUrlForRenderer();
+  if (state.source === "draft") {
+    state.lastDraftUrl = url;
+  }
   loadPdfIntoRenderer(url);
 }
 
@@ -337,7 +590,7 @@ function loadPdfIntoRenderer(pdfUrl) {
   initPdfRenderer();
 
   // Sicherstellen, dass pdfOptions mit state synchronisiert sind
-  pdfOptions.strength = state.strength || "Normal";
+  pdfOptions.strength = state.strength; // "Fett" oder "Normal" (wird später zu GR_Fett/LAT_Fett/Normal aufgelöst)
   pdfOptions.color = state.color || "Colour";
   pdfOptions.tags = state.tags || "Tag";
   // Versmaß-Logik: Verwende state.meter (wurde bereits korrekt gesetzt)
@@ -366,62 +619,137 @@ async function loadTexts() {
 
   console.log("Loading texts from:", textBasePath, "filename:", filenameBase);
 
-  // Original
-  try {
-    const r = await fetch(`texte/${textBasePath}/${filenameBase}.txt`, {
-      cache: "no-store",
-    });
-    if (r.ok) {
-      el.origText.textContent = await r.text();
-      console.log("Original text loaded successfully");
-    } else {
-      el.origText.textContent = `Original nicht gefunden: texte/${textBasePath}/${filenameBase}.txt`;
-      console.error(
-        "Original text not found:",
-        `texte/${textBasePath}/${filenameBase}.txt`
-      );
+  // Original (nur laden, wenn der Pane existiert - ist aktuell auskommentiert)
+  if (el.origText) {
+    try {
+      const r = await fetch(`texte/${textBasePath}/${filenameBase}.txt`, {
+        cache: "no-store",
+      });
+      if (r.ok) {
+        el.origText.textContent = await r.text();
+        console.log("Original text loaded successfully");
+      } else {
+        el.origText.textContent = `Original nicht gefunden: texte/${textBasePath}/${filenameBase}.txt`;
+        console.error(
+          "Original text not found:",
+          `texte/${textBasePath}/${filenameBase}.txt`
+        );
+      }
+    } catch (e) {
+      el.origText.textContent = "Fehler beim Laden.";
+      console.error("Error loading original text:", e);
     }
-  } catch (e) {
-    el.origText.textContent = "Fehler beim Laden.";
-    console.error("Error loading original text:", e);
+  } else {
+    console.log("Original text pane is not active, skipping load");
   }
 
   // Birkenbihl
   try {
-    const r = await fetch(
-      `texte/${textBasePath}/${filenameBase}_birkenbihl.txt`,
-      {
-        cache: "no-store",
-      }
-    );
-    if (r.ok) {
-      const text = await r.text();
-      state.originalBirkenbihlText = text; // Original speichern
-      el.birkenbihlText.innerHTML = addSpansToTags(text);
-      console.log("Birkenbihl text loaded successfully");
-    } else {
-      el.birkenbihlText.textContent = `Birkenbihl-Text nicht gefunden: texte/${textBasePath}/${filenameBase}_birkenbihl.txt`;
-      console.error(
-        "Birkenbihl text not found:",
-        `texte/${textBasePath}/${filenameBase}_birkenbihl.txt`
+    // Passe filenameBase an die gewählte Sprachversion an (2- oder 3-sprachig)
+    let birkenbilFilename = filenameBase;
+    const is3Lang = birkenbilFilename.includes("_de_en_");
+
+    if (state.languages === "3" && !is3Lang) {
+      // User will 3-sprachig, aber filename_base ist 2-sprachig
+      birkenbilFilename = birkenbilFilename.replace(
+        "_de_stil1",
+        "_de_en_stil1"
+      );
+    } else if (state.languages === "2" && is3Lang) {
+      // User will 2-sprachig, aber filename_base ist 3-sprachig
+      birkenbilFilename = birkenbilFilename.replace(
+        "_de_en_stil1",
+        "_de_stil1"
       );
     }
+
+    // Wenn Versmaß-Modus aktiv ist, füge "_Versmaß" JETZT ein (vor "_birkenbihl")
+    if (state.meter === "with") {
+      birkenbilFilename += "_Versmaß";
+      console.log(
+        "Versmaß-Modus aktiv (Birkenbihl), filename wird zu:",
+        birkenbilFilename
+      );
+    }
+
+    const birkenbilPath = `texte/${textBasePath}/${birkenbilFilename}_birkenbihl.txt`;
+    console.log("=== BIRKENBIHL LOADING DEBUG ===");
+    console.log("Loading Birkenbihl text from:", birkenbilPath);
+    console.log("el.draftText exists:", !!el.draftText);
+    console.log("el.draftText element:", el.draftText);
+
+    const r = await fetch(birkenbilPath, { cache: "no-store" });
+    console.log("Fetch response status:", r.status, r.ok);
+
+    if (r.ok) {
+      const text = await r.text();
+      console.log(
+        "Text loaded, length:",
+        text.length,
+        "first 100 chars:",
+        text.substring(0, 100)
+      );
+      state.originalBirkenbihlText = text; // Original speichern
+
+      // Fülle den Entwurfs-Editor direkt (birkenbihlText-Pane ist auskommentiert)
+      if (el.draftText) {
+        console.log("Setting draftText innerHTML...");
+        el.draftText.innerHTML = addSpansToTags(text);
+        console.log(
+          "draftText innerHTML set, current length:",
+          el.draftText.innerHTML.length
+        );
+      } else {
+        console.error("el.draftText is null or undefined!");
+      }
+
+      // Falls birkenbihlText-Pane existiert (für Kompatibilität)
+      if (el.birkenbihlText) {
+        el.birkenbihlText.innerHTML = addSpansToTags(text);
+      }
+
+      console.log(
+        "✅ Birkenbihl text loaded successfully and displayed in draft editor"
+      );
+    } else {
+      console.error(
+        "❌ Birkenbihl text not found:",
+        birkenbilPath,
+        "Status:",
+        r.status
+      );
+      if (el.draftText) {
+        el.draftText.textContent = `Birkenbihl-Text nicht gefunden: ${birkenbilPath}`;
+      }
+    }
   } catch (e) {
-    el.birkenbihlText.textContent = "Fehler beim Laden.";
-    console.error("Error loading birkenbihl text:", e);
+    console.error("❌ Error loading birkenbihl text:", e);
+    if (el.draftText) {
+      el.draftText.textContent = "Fehler beim Laden des Birkenbihl-Textes.";
+    }
   }
 }
 
 // 8) Entwurfs-System
 async function initializeDraftText() {
-  // Lade den Birkenbihl-Text als Basis für den Entwurf
-  // (wird jetzt nur noch aus dem State geladen)
+  // Der Birkenbihl-Text wird bereits in loadTexts() in el.draftText geladen
+  // Diese Funktion prüft nur, ob der Text erfolgreich geladen wurde
+  if (
+    el.draftText &&
+    el.draftText.textContent &&
+    el.draftText.textContent.trim()
+  ) {
+    console.log("Draft text already loaded, skipping initialization");
+    return;
+  }
+
+  // Fallback: Lade aus state.originalBirkenbihlText, falls noch nicht geladen
   if (state.originalBirkenbihlText) {
     el.draftText.innerHTML = addSpansToTags(state.originalBirkenbihlText);
-    el.draftStatus.textContent = "Entwurf bereit. Text bearbeitbar.";
+    console.log("Draft text initialized from state");
   } else {
     el.draftText.textContent = "Fehler: Birkenbihl-Text nicht verfügbar.";
-    el.draftStatus.textContent = "Fehler: Birkenbihl-Text nicht verfügbar.";
+    console.error("Birkenbihl text not available in state");
   }
 }
 
@@ -479,7 +807,7 @@ async function performRendering() {
     kind: state.kind, // poesie | prosa
     author: state.author, // Ordnername
     work: state.work, // Werk-ID (nur informativ)
-    strength: state.strength, // Normal | GR_Fett | DE_Fett
+    strength: state.strength, // "Fett" | "Normal" (wird im Worker zu GR_Fett/LAT_Fett/Normal aufgelöst)
     color_mode: state.color, // Colour | BlackWhite
     tag_mode: state.tags === "Tag" ? "TAGS" : "NO_TAGS",
     versmass: state.meterSupported && state.meter === "with" ? "ON" : "OFF",
@@ -549,9 +877,9 @@ async function performRendering() {
       }
     }, 1000);
 
-    // Für PDF-Anzeige verwenden wir ein Fallback (falls PDFs bereits existieren)
-    state.lastDraftUrl = getCurrentPdfUrl();
+    // Für PDF-Anzeige verwenden wir das erwartete Draft-Ziel
     state.source = "draft";
+    state.lastDraftUrl = buildDraftPdfUrl(buildDraftPdfFilename());
     updatePdfView(true);
   } catch (e) {
     console.error(e);
@@ -590,7 +918,7 @@ function createTableRow(item, isGroupLeader = false) {
     { type: "color", value: "orange", label: "orange" },
     { type: "color", value: "blue", label: "blau" },
     { type: "color", value: "green", label: "grün" },
-    { type: "color", value: "magenta", label: "magenta" },
+    { type: "color", value: "violett", label: "violett" },
     { type: "hide", value: "hide", label: "Tag nicht zeigen" },
   ];
 
@@ -635,7 +963,7 @@ function showTagConfigModal() {
           <th>orange</th>
           <th>blau</th>
           <th>grün</th>
-          <th>magenta</th>
+          <th>violett</th>
           <th>Tag nicht<br />zeigen</th>
         </tr>
       `;
@@ -686,7 +1014,7 @@ function showTagConfigModal() {
         <th>orange</th>
         <th>blau</th>
         <th>grün</th>
-        <th>magenta</th>
+        <th>violett</th>
         <th>Tag nicht<br />zeigen</th>
       </tr>
     `;
@@ -750,18 +1078,18 @@ function applyInitialConfig() {
     state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "green" };
   });
 
-  // Partizipien -> blau
+  // Partizipien -> violett
   const partizipGroup = tagConfigDefinition.find(
     (g) => g.leader?.id === "partizip"
   );
   if (partizipGroup?.leader?.tag) {
     state.tagConfig[partizipGroup.leader.id] = {
       ...state.tagConfig[partizipGroup.leader.id],
-      color: "blue",
+      color: "violett",
     };
   }
   partizipGroup?.members.forEach((m) => {
-    state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "blue" };
+    state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "violett" };
   });
 
   // Adjektive -> blau
@@ -777,6 +1105,51 @@ function applyInitialConfig() {
   adjektivGroup?.members.forEach((m) => {
     state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "blue" };
   });
+
+  // Lateinische Verbformen -> violett (nur für Latein)
+  if (state.lang === "latein") {
+    // Gerundium -> violett
+    const gerundiumGroup = tagConfigDefinition.find(
+      (g) => g.leader?.id === "gerundium"
+    );
+    if (gerundiumGroup?.leader?.tag) {
+      state.tagConfig[gerundiumGroup.leader.id] = {
+        ...state.tagConfig[gerundiumGroup.leader.id],
+        color: "violett",
+      };
+    }
+    gerundiumGroup?.members.forEach((m) => {
+      state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "violett" };
+    });
+
+    // Gerundivum -> violett
+    const gerundivumGroup = tagConfigDefinition.find(
+      (g) => g.leader?.id === "gerundivum"
+    );
+    if (gerundivumGroup?.leader?.tag) {
+      state.tagConfig[gerundivumGroup.leader.id] = {
+        ...state.tagConfig[gerundivumGroup.leader.id],
+        color: "violett",
+      };
+    }
+    gerundivumGroup?.members.forEach((m) => {
+      state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "violett" };
+    });
+
+    // Supinum -> violett
+    const supinumGroup = tagConfigDefinition.find(
+      (g) => g.leader?.id === "supinum"
+    );
+    if (supinumGroup?.leader?.tag) {
+      state.tagConfig[supinumGroup.leader.id] = {
+        ...state.tagConfig[supinumGroup.leader.id],
+        color: "violett",
+      };
+    }
+    supinumGroup?.members.forEach((m) => {
+      state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "violett" };
+    });
+  }
 
   // Standardplatzierungen anwenden
   const allItems = tagConfigDefinition.flatMap((g) => {
@@ -846,7 +1219,7 @@ function updateTableFromState() {
         "color-bg-green",
         "color-bg-blue",
         "color-bg-orange",
-        "color-bg-magenta"
+        "color-bg-violett"
       );
     });
   });
@@ -956,7 +1329,7 @@ function updateCellBackgroundColors() {
           orange: "#f97316", // Kräftigeres Orange
           blue: "#3b82f6", // Kräftigeres Blau
           green: "#22c55e", // Kräftigeres Grün
-          magenta: "#c084fc", // Kräftigeres Magenta
+          violett: "#9370DB", // Sanftes Violett (Medium Purple)
         };
         backgroundColor = colorMap[config.color] || "#ffffff";
       } else if (config.placement) {
@@ -1116,12 +1489,54 @@ function toggleOriginalColors() {
     if (partizipGroup?.leader?.tag) {
       state.tagConfig[partizipGroup.leader.id] = {
         ...state.tagConfig[partizipGroup.leader.id],
-        color: "blue",
+        color: "violett",
       };
     }
     partizipGroup?.members.forEach((m) => {
-      state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "blue" };
+      state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "violett" };
     });
+
+    // Lateinische Verbformen -> violett (nur für Latein)
+    if (state.lang === "latein") {
+      const gerundiumGroup = tagConfigDefinition.find(
+        (g) => g.leader?.id === "gerundium"
+      );
+      if (gerundiumGroup?.leader?.tag) {
+        state.tagConfig[gerundiumGroup.leader.id] = {
+          ...state.tagConfig[gerundiumGroup.leader.id],
+          color: "violett",
+        };
+      }
+      gerundiumGroup?.members.forEach((m) => {
+        state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "violett" };
+      });
+
+      const gerundivumGroup = tagConfigDefinition.find(
+        (g) => g.leader?.id === "gerundivum"
+      );
+      if (gerundivumGroup?.leader?.tag) {
+        state.tagConfig[gerundivumGroup.leader.id] = {
+          ...state.tagConfig[gerundivumGroup.leader.id],
+          color: "violett",
+        };
+      }
+      gerundivumGroup?.members.forEach((m) => {
+        state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "violett" };
+      });
+
+      const supinumGroup = tagConfigDefinition.find(
+        (g) => g.leader?.id === "supinum"
+      );
+      if (supinumGroup?.leader?.tag) {
+        state.tagConfig[supinumGroup.leader.id] = {
+          ...state.tagConfig[supinumGroup.leader.id],
+          color: "violett",
+        };
+      }
+      supinumGroup?.members.forEach((m) => {
+        state.tagConfig[m.id] = { ...state.tagConfig[m.id], color: "violett" };
+      });
+    }
 
     const adjektivGroup = tagConfigDefinition.find(
       (g) => g.leader?.id === "adjektiv"
@@ -1330,23 +1745,15 @@ function updateFontSize(elementId, change) {
   }
 }
 
-// 10) Init
-(async function init() {
-  console.log("work.js init started");
-  // Warten, bis DOM geladen ist
-  if (document.readyState === "loading") {
-    await new Promise((resolve) => {
-      document.addEventListener("DOMContentLoaded", resolve);
-    });
-  }
-
-  // Zuerst Katalog laden, um Metadaten zu erhalten
+// Funktion zum Laden der Werk-Metadaten aus dem Katalog
+async function loadWorkMeta() {
   try {
     const cat = await loadCatalog();
     state.workMeta = getWorkMeta(
       cat,
       state.lang,
       state.kind,
+      state.category,
       state.author,
       state.work
     );
@@ -1355,7 +1762,15 @@ function updateFontSize(elementId, change) {
       throw new Error("Werk nicht im Katalog gefunden.");
     }
 
-    state.meterSupported = state.workMeta.versmass; // true/false
+    state.meterSupported = state.workMeta.versmass; // true/false (ob Versmaß-PDFs existieren)
+    state.meterPageActive =
+      state.meterMode === "true" && state.meterSupported === true;
+
+    // Setze strength auf "Fett" als Standard (wird später zu GR_Fett/LAT_Fett aufgelöst)
+    if (!state.strength) {
+      state.strength = "Fett";
+      console.log("Strength automatisch gesetzt auf:", state.strength);
+    }
 
     // Titel setzen
     el.pageTitle.textContent = `${
@@ -1363,22 +1778,25 @@ function updateFontSize(elementId, change) {
     } – ${state.workMeta.title || state.work}`;
 
     // UI-Elemente basierend auf Metadaten aktualisieren
+    // Versmaß-Buttons nur anzeigen, wenn wir auf einer Versmaß-Seite sind (meterMode === "true")
+    const showMeterControls = state.meterPageActive;
+
     if (el.meterRow) {
-      el.meterRow.style.display = state.meterSupported ? "" : "none";
+      el.meterRow.style.display = showMeterControls ? "" : "none";
     }
 
     if (el.grammarTagsBtn) {
-      el.grammarTagsBtn.style.display = state.meterSupported ? "" : "none";
+      el.grammarTagsBtn.style.display = showMeterControls ? "" : "none";
     }
 
-    // Metrum-Marker Buttons ein-/ausblenden
+    // Metrum-Marker Buttons ein-/ausblenden (nur auf Versmaß-Seiten)
     const birkenbihlMetrumBtn = document.getElementById(
       "toggleBirkenbihlMetrum"
     );
     const draftMetrumBtn = document.getElementById("toggleDraftMetrum");
 
     if (birkenbihlMetrumBtn) {
-      if (state.meterSupported) {
+      if (showMeterControls) {
         birkenbihlMetrumBtn.style.removeProperty("display");
       } else {
         birkenbihlMetrumBtn.style.setProperty("display", "none", "important");
@@ -1389,7 +1807,7 @@ function updateFontSize(elementId, change) {
       );
     }
     if (draftMetrumBtn) {
-      if (state.meterSupported) {
+      if (showMeterControls) {
         draftMetrumBtn.style.removeProperty("display");
       } else {
         draftMetrumBtn.style.setProperty("display", "none", "important");
@@ -1418,7 +1836,7 @@ function updateFontSize(elementId, change) {
         : null;
 
     if (meterGroup) {
-      meterGroup.style.display = state.meterSupported ? "" : "none";
+      meterGroup.style.display = showMeterControls ? "" : "none";
       console.log(
         "Versmaß-Button-Gruppe:",
         state.meterSupported ? "angezeigt" : "ausgeblendet"
@@ -1452,16 +1870,16 @@ function updateFontSize(elementId, change) {
     }
 
     // Metrum-Marker Buttons ausblenden (Fallback)
-    const birkenbihlMetrumBtn = document.getElementById(
+    const birkenbihlMetrumBtnFallback = document.getElementById(
       "toggleBirkenbihlMetrum"
     );
-    const draftMetrumBtn = document.getElementById("toggleDraftMetrum");
+    const draftMetrumBtnFallback = document.getElementById("toggleDraftMetrum");
 
-    if (birkenbihlMetrumBtn) {
-      birkenbihlMetrumBtn.style.display = "none";
+    if (birkenbihlMetrumBtnFallback) {
+      birkenbihlMetrumBtnFallback.style.display = "none";
     }
-    if (draftMetrumBtn) {
-      draftMetrumBtn.style.display = "none";
+    if (draftMetrumBtnFallback) {
+      draftMetrumBtnFallback.style.display = "none";
     }
 
     console.log("Metrum-Marker Buttons: ausgeblendet (Fallback)");
@@ -1479,6 +1897,18 @@ function updateFontSize(elementId, change) {
       meterGroup.style.display = "none";
       console.log("Versmaß-Button-Gruppe: ausgeblendet (Fallback)");
     }
+  }
+}
+
+// Hauptinitialisierung
+(async function init() {
+  console.log("work.js init started");
+
+  // Warten, bis DOM geladen ist
+  if (document.readyState === "loading") {
+    await new Promise((resolve) => {
+      document.addEventListener("DOMContentLoaded", resolve);
+    });
   }
 
   // Titel (wird später nochmal mit korrekten Werten überschrieben)
@@ -1579,33 +2009,29 @@ function updateFontSize(elementId, change) {
 
   updateDownloadButtons();
 
-  // Titel setzen (wird bereits oben gesetzt, hier überschreiben wir es mit den korrekten Werten)
+  // WICHTIG: Lade Werk-Metadaten aus dem Katalog (setzt strength, meterSupported, etc.)
+  await loadWorkMeta();
+
+  // Titel setzen (wird bereits in loadWorkMeta() gesetzt, aber sicherheitshalber nochmal)
   el.pageTitle.textContent = `${
     state.workMeta?.author_display || state.author
   } – ${state.workMeta?.title || state.work}`;
 
-  // Inhalte und PDF anzeigen
+  // Inhalte laden
   await loadTexts();
   wireEvents();
 
-  // PDF-Optionen vor dem ersten Laden synchronisieren
-  pdfOptions.strength = state.strength || "Normal";
-  pdfOptions.color = state.color || "Colour";
-  pdfOptions.tags = state.tags || "Tag";
-  // Versmaß-Logik: Wird später in loadWorkMeta() korrekt gesetzt
-  // pdfOptions.meter wird erst nach dem Laden der Metadaten gesetzt
-
-  // updatePdfView() wird später in loadWorkMeta() aufgerufen, nachdem meterSupported gesetzt wurde
-
   // Entwurfs-Text initialisieren
   await initializeDraftText();
+
+  // PDF-Ansicht wird bereits in loadWorkMeta() via updatePdfView() geladen
 })();
 
 // PDF-Renderer direkt im PDF-Fenster
 // PDF-Optionen Status
 let pdfOptions = {
   source: "original",
-  strength: "Normal",
+  strength: "", // Wird dynamisch gesetzt: GR_Fett oder LAT_Fett
   color: "Colour",
   tags: "Tag",
   meter: "without", // Wird basierend auf meterSupported dynamisch gesetzt
@@ -1623,34 +2049,22 @@ let pdfRenderer = {
 
 // PDF-URL basierend auf Optionen erstellen
 function buildPdfUrlForRenderer() {
-  // Verwende pdfOptions für die PDF-URL-Generierung
-  if (!state.workMeta || !state.workMeta.filename_base) {
-    console.error("Work metadata with filename_base not loaded!");
-    return "pdf/error/error.pdf";
+  // Entwurfs-PDF?
+  if (state.source === "draft") {
+    const draftName = buildDraftPdfFilename();
+    const draftUrl = buildDraftPdfUrl(draftName);
+    console.log("Draft PDF URL:", draftUrl);
+    return draftUrl;
   }
 
-  let filename = state.workMeta.filename_base;
+  if (!state.workMeta || !state.workMeta.filename_base) {
+    console.error("Work metadata with filename_base not loaded!");
+    return "";
+  }
 
-  // Alle Dateien haben "birkenbihl" im Namen
-  filename += "_birkenbihl";
+  const finalName = buildPdfFilename();
+  const url = buildReleaseProxyUrl(finalName, "inline");
 
-  // Stärke
-  if (pdfOptions.strength === "GR_Fett") filename += "_GR_Fett";
-  else if (pdfOptions.strength === "DE_Fett") filename += "_DE_Fett";
-  else filename += "_Normal";
-
-  // Farbe
-  if (pdfOptions.color === "BlackWhite") filename += "_BlackWhite";
-  else filename += "_Colour";
-
-  // Tags
-  if (pdfOptions.tags === "NoTags") filename += "_NoTags";
-  else filename += "_Tag";
-
-  // Versmaß (nur wenn aktiviert)
-  if (pdfOptions.meter === "with") filename += "_Versmaß";
-
-  const url = `${PDF_BASE}/${state.workMeta.path}/${filename}.pdf`;
   console.log("Generated PDF URL:", url);
   console.log("PDF Options Debug:", {
     strength: pdfOptions.strength,
@@ -1658,6 +2072,7 @@ function buildPdfUrlForRenderer() {
     tags: pdfOptions.tags,
     meter: pdfOptions.meter,
     meterSupported: state.meterSupported,
+    languages: state.languages,
   });
   return url;
 }
@@ -1677,10 +2092,66 @@ function initPdfRenderer() {
     downloadBtn: document.getElementById("pdfDownloadBtn"),
     openTabBtn: document.getElementById("pdfOpenTabBtn"),
   };
+
+  bindPdfUtilityButtons();
+}
+
+function bindPdfUtilityButtons() {
+  const { openTabBtn, downloadBtn } = pdfRenderer.elements || {};
+
+  if (openTabBtn && !openTabBtn.dataset.boundClick) {
+    openTabBtn.dataset.boundClick = "true";
+    openTabBtn.addEventListener("click", () => {
+      const pdfUrl = getCurrentPdfUrl();
+      if (!pdfUrl) return;
+      const newWindow = window.open(pdfUrl, "_blank");
+      if (newWindow) newWindow.focus();
+    });
+  }
+
+  if (downloadBtn && !downloadBtn.dataset.boundClick) {
+    downloadBtn.dataset.boundClick = "true";
+    downloadBtn.addEventListener("click", () => {
+      const filename =
+        state.source === "draft" ? buildDraftPdfFilename() : buildPdfFilename();
+      const pdfUrl =
+        state.source === "draft"
+          ? buildDraftPdfUrl(filename)
+          : buildReleaseProxyUrl(filename, "attachment");
+      if (!pdfUrl) return;
+      const a = document.createElement("a");
+      a.href = pdfUrl;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    });
+  }
 }
 
 // PDF neu laden
 async function loadPdfIntoRendererDirect(pdfUrl) {
+  // GitHub-Releases lassen keine CORS-Requests für pdf.js zu → Hinweis statt Fehler
+  if (pdfUrl.startsWith("https://github.com/")) {
+    pdfRenderer.pdf = null;
+    pdfRenderer.currentPage = 1;
+    if (pdfRenderer.elements?.pageCount) {
+      pdfRenderer.elements.pageCount.textContent = "–";
+    }
+    if (pdfRenderer.elements?.pageNum) {
+      pdfRenderer.elements.pageNum.textContent = "–";
+    }
+    if (pdfRenderer.elements?.pages) {
+      pdfRenderer.elements.pages.innerHTML = `
+        <div class="pdf-loading">
+          Dieses PDF liegt in einem externen GitHub-Release.<br>
+          Bitte nutze „PDF in neuem Tab öffnen“ oder „Herunterladen“, um es anzusehen.
+        </div>
+      `;
+    }
+    return;
+  }
+
   try {
     // PDF.js Library verfügbar machen
     const pdfjs = window["pdfjs-dist/build/pdf"];
@@ -1792,8 +2263,31 @@ function initPdfOptionControls() {
 
       // Synchronisiere mit state für alte Funktionen
       if (opt === "source") {
-        state.source = val;
-        // pdfOptions.source wird nicht mehr verwendet
+        // Spezialbehandlung für "Entwurf" Button
+        if (val === "draft") {
+          // Prüfe, ob ein Entwurfs-PDF existiert
+          if (!state.lastDraftUrl) {
+            // Kein Entwurfs-PDF vorhanden - Fehlermeldung anzeigen
+            alert(
+              "Es wurde noch kein PDF aus dem Entwurf erstellt.\n\nBitte verwenden Sie den grünen Button 'PDF aus Entwurf erstellen', um ein Entwurfs-PDF zu generieren."
+            );
+            // Button zurücksetzen auf "Original"
+            buttons.forEach((b) => {
+              b.classList.remove("active");
+            });
+            const originalBtn = group.querySelector('[data-val="original"]');
+            if (originalBtn) originalBtn.classList.add("active");
+            state.source = "original";
+            return; // Abbrechen, kein PDF laden
+          }
+          // Entwurfs-PDF existiert - laden
+          state.source = val;
+          loadPdfIntoRendererDirect(state.lastDraftUrl);
+          return; // Frühzeitiger Return, da wir das Entwurfs-PDF laden
+        } else {
+          // "Original" Button geklickt
+          state.source = val;
+        }
       } else if (opt === "strength") {
         state.strength = val;
         pdfOptions.strength = val;
@@ -1808,7 +2302,7 @@ function initPdfOptionControls() {
         pdfOptions.meter = val;
       }
 
-      // PDF neu laden
+      // PDF neu laden (nur für Original-PDFs, Entwurf wurde bereits oben geladen)
       const newPdfUrl = buildPdfUrlForRenderer();
       loadPdfIntoRendererDirect(newPdfUrl);
     });
@@ -1817,6 +2311,9 @@ function initPdfOptionControls() {
   // Standard-Optionen aktivieren (mit CSS-Klasse)
   const originalBtn = document.querySelector(
     '#pdfRendererContainer [data-opt="source"][data-val="original"]'
+  );
+  const fettBtn = document.querySelector(
+    '#pdfRendererContainer [data-opt="strength"][data-val="Fett"]'
   );
   const normalBtn = document.querySelector(
     '#pdfRendererContainer [data-opt="strength"][data-val="Normal"]'
@@ -1834,6 +2331,7 @@ function initPdfOptionControls() {
   // Debug: Prüfe ob Buttons gefunden wurden
   console.log("Button Debug:", {
     originalBtn: !!originalBtn,
+    fettBtn: !!fettBtn,
     normalBtn: !!normalBtn,
     colourBtn: !!colourBtn,
     tagBtn: !!tagBtn,
@@ -1854,12 +2352,12 @@ function initPdfOptionControls() {
   // Standard-Werte für state und pdfOptions setzen
   // Alle Dateien sind Birkenbihl-Versionen, daher ist "source" nicht relevant
   if (!state.source) state.source = "original";
-  if (!state.strength) state.strength = "Normal";
+  // strength wird in loadWorkMeta() basierend auf der Sprache gesetzt
   if (!state.color) state.color = "Colour";
   if (!state.tags) state.tags = "Tag";
 
-  // Versmaß-Logik: Immer basierend auf meterSupported setzen
-  state.meter = state.meterSupported ? "with" : "without";
+  const meterActive = state.meterPageActive;
+  state.meter = meterActive ? "with" : "without";
 
   console.log("=== INIT PDF OPTION CONTROLS DEBUG ===");
   console.log("state.meterSupported:", state.meterSupported);
@@ -1873,7 +2371,8 @@ function initPdfOptionControls() {
   pdfOptions.meter = state.meter;
 
   if (originalBtn) originalBtn.classList.add("active");
-  if (normalBtn) normalBtn.classList.add("active");
+  // Aktiviere "Fett" Button (Standard), nicht "Normal"
+  if (fettBtn) fettBtn.classList.add("active");
   if (colourBtn) colourBtn.classList.add("active");
   if (tagBtn) tagBtn.classList.add("active");
 
@@ -1935,30 +2434,6 @@ function attachPdfEvents() {
     pdfRenderer.elements.next.addEventListener("click", () =>
       scrollToPdfPage(pdfRenderer.currentPage + 1)
     );
-  }
-
-  // Open Tab Button
-  if (pdfRenderer.elements.openTabBtn) {
-    pdfRenderer.elements.openTabBtn.addEventListener("click", () => {
-      const pdfUrl = getCurrentPdfUrl();
-      const newWindow = window.open(pdfUrl, "_blank");
-      if (newWindow) {
-        newWindow.focus();
-      }
-    });
-  }
-
-  // Download Button
-  if (pdfRenderer.elements.downloadBtn) {
-    pdfRenderer.elements.downloadBtn.addEventListener("click", () => {
-      const pdfUrl = getCurrentPdfUrl();
-      const a = document.createElement("a");
-      a.href = pdfUrl;
-      a.download = buildPdfFilename();
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    });
   }
 
   // Bei Fenstergröße neu anpassen

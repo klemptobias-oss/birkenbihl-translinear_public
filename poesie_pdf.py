@@ -8,11 +8,15 @@ Orchestrator für Poesie (Tragödie/Komödie/Epos).
 - Wenn Dateipfade als Argumente übergeben werden (sys.argv[1:]),
   verarbeitet er GENAU diese Dateien (egal wo sie liegen).
 
-Erzeugt 24 Varianten pro Input:
-Strength (NORMAL|GR_FETT|DE_FETT) × Color (COLOR|BLACK_WHITE)
-× Tags (TAGS|NO_TAGS) × Versmaß (AUS|AN).
+Erzeugt 4 Varianten pro Input:
+- Antike Sprache (GR oder LAT) immer FETT
+- Deutsche Übersetzung(en) immer NORMAL
+- Color (COLOR|BLACK_WHITE) × Tags (TAGS|NO_TAGS)
+- Optional: Versmaß-Varianten wenn Versmaß-Marker vorhanden
 
-Versmaß-Darstellung wird über Suffix "_Versmaß" im Dateinamen aktiviert.
+Die Sprache wird automatisch aus dem Dateinamen erkannt:
+- *_gr_* → GR_FETT
+- *_lat_* → LAT_FETT
 """
 
 from __future__ import annotations
@@ -41,12 +45,95 @@ def _add_suffix_before_ext(filename: str, suffix: str) -> str:
     return p.with_name(p.stem + suffix + p.suffix).name
 
 def _input_has_meter_info(blocks: list[dict]) -> bool:
-    """Prüft, ob irgendein gr_tokens-Block in der Datei Versmaß-Marker enthält."""
-    for block in blocks:
-        if block.get('type') == 'pair':
-            if has_meter_markers(block.get('gr_tokens', [])):
-                return True
-    return False
+    """
+    Prüft, ob irgendein gr_tokens-Block in der Datei Versmaß-Marker enthält.
+    
+    ### WICHTIG: VERSMASSPUNKT VORERST EINGEFROREN ###
+    # has_meter_markers gibt immer False zurück (siehe shared/versmass.py)
+    # Daher gibt diese Funktion auch immer False zurück.
+    """
+    return False  # DEAKTIVIERT - keine Versmaß-PDFs erstellen
+    
+    ### ORIGINAL CODE (EINGEFROREN) ###
+    # for block in blocks:
+    #     if block.get('type') == 'pair':
+    #         if has_meter_markers(block.get('gr_tokens', [])):
+    #             return True
+    # return False
+
+def _detect_language_from_filename(filename: str) -> str:
+    """
+    Erkennt die Sprache aus dem Dateinamen.
+    - *_gr_* → GR_FETT
+    - *_lat_* → LAT_FETT
+    """
+    filename_lower = filename.lower()
+    if "_lat_" in filename_lower:
+        return "LAT_FETT"
+    elif "_gr_" in filename_lower:
+        return "GR_FETT"
+    else:
+        # Fallback: Wenn nicht erkennbar, verwende GR_FETT
+        print(f"  ⚠ Sprache nicht erkennbar aus Dateinamen, verwende GR_FETT als Fallback")
+        return "GR_FETT"
+
+def _get_default_tag_config(language: str) -> dict:
+    """
+    Erstellt die Standard-Farbkonfiguration für die angegebene Sprache.
+    
+    Griechisch:
+    - Nomen → rot (#)
+    - Verben → grün (-)
+    - Partizipien → purpur/magenta (§)
+    - Infinitive → purpur/magenta (§)
+    - Adjektive → blau (+)
+    
+    Latein:
+    - Nomen (inkl. nur Abl) → rot (#)
+    - Verben → grün (-)
+    - Partizipien → purpur/magenta (§)
+    - Infinitive (Inf) → purpur/magenta (§)
+    - Gerundium (Ger) → purpur/magenta (§)
+    - Gerundivum (Gdv) → purpur/magenta (§)
+    - Supinum (Spn) → purpur/magenta (§)
+    - Adjektive → blau (+)
+    """
+    config = {}
+    
+    # Nomen → rot
+    config['nomen'] = {'color': 'red'}
+    for kasus in ['N', 'G', 'D', 'A', 'V', 'Abl']:  # Abl für Latein
+        config[f'nomen_{kasus}'] = {'color': 'red'}
+    
+    # Verben → grün
+    config['verb'] = {'color': 'green'}
+    for tag in ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'Fu1', 'Fu2', 'Akt', 'Med', 'Pas', 'M/P', 'Op', 'Knj', 'Imv']:  # NEU: Fu1, Fu2
+        config[f'verb_{tag}'] = {'color': 'green'}
+    
+    # Partizipien → purpur/magenta (§)
+    config['partizip'] = {'color': 'magenta'}
+    for tag in ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'Fu1', 'Fu2', 'N', 'G', 'D', 'A', 'V', 'Akt', 'Med', 'Pas', 'M/P']:  # NEU: Fu1, Fu2
+        config[f'partizip_{tag}'] = {'color': 'magenta'}
+    
+    # Infinitive → grün (-) wie andere Verben
+    config['verb_Inf'] = {'color': 'green'}
+    
+    # Latein-spezifische Formen → purpur/magenta (§)
+    if language == "LAT_FETT":
+        config['verb_Ger'] = {'color': 'magenta'}  # Gerundium
+        config['verb_Gdv'] = {'color': 'magenta'}  # Gerundivum
+        config['verb_Spn'] = {'color': 'magenta'}  # Supinum
+        config['verb_Fu1'] = {'color': 'green'}    # NEU: Futur 1 als Verb → grün
+        config['verb_Fu2'] = {'color': 'green'}    # NEU: Futur 2 als Verb → grün
+        config['partizip_Fu1'] = {'color': 'magenta'}  # NEU: Futur 1 Partizip → magenta
+        config['partizip_Fu2'] = {'color': 'magenta'}  # NEU: Futur 2 Partizip → magenta
+    
+    # Adjektive → blau
+    config['adjektiv'] = {'color': 'blue'}
+    for tag in ['N', 'G', 'D', 'A', 'V', 'Kmp', 'Sup']:
+        config[f'adjektiv_{tag}'] = {'color': 'blue'}
+    
+    return config
 
 def _process_one_input(infile: str, tag_config: dict = None) -> None:
     if not os.path.isfile(infile):
@@ -55,35 +142,32 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
     base = base_from_input_path(Path(infile))
     blocks = Poesie.process_input_file(infile)
 
-    strengths = ("NORMAL", "GR_FETT", "DE_FETT")
+    # Erkenne Sprache aus Dateinamen
+    ancient_lang_strength = _detect_language_from_filename(infile)
+    print(f"  → Erkannte Sprache: {ancient_lang_strength}")
+
+    # NEUE KONFIGURATION: 8 Varianten pro Input
+    # - NORMAL (antike Sprache nicht fett) + FETT (antike Sprache fett)
+    # - COLOR + BLACK_WHITE
+    # - TAGS + NO_TAGS
+    strengths = ("NORMAL", ancient_lang_strength)  # NORMAL + FETT (GR_FETT oder LAT_FETT)
     colors    = ("COLOR", "BLACK_WHITE")
     tags      = ("TAGS", "NO_TAGS")
     
-    # NEU: Prüfe, ob die Input-Datei überhaupt Versmaß-Infos enthält
-    input_contains_meter = _input_has_meter_info(blocks)
-    if input_contains_meter:
-        print("  → Versmaß-Informationen gefunden, _Versmaß-PDFs werden erstellt.")
-        meters = (False, True)
+    # Versmaß-Erkennung: Prüfe, ob die Input-Datei "_Versmaß" oder "_versmass" im Namen trägt
+    # (NICHT auf Content-Marker prüfen, nur auf Dateinamen!)
+    base_lower = base.lower()
+    input_has_versmass_tag = "_versmaß" in base_lower or "_versmass" in base_lower
+    
+    if input_has_versmass_tag:
+        print("  → _Versmaß-Tag im Dateinamen gefunden, erstelle Versmaß-PDFs.")
+        meters = (True,)  # Nur Versmaß-PDFs (meter_on=True)
     else:
-        print("  → Keine Versmaß-Informationen gefunden, _Versmaß-PDFs werden übersprungen.")
-        meters    = (False,) # Nur die Variante OHNE Versmaß-Suffix erstellen
+        print("  → Kein _Versmaß-Tag im Dateinamen, erstelle normale PDFs.")
+        meters = (False,)  # Nur normale PDFs (meter_on=False)
 
-    default_poesie_tag_config = {
-        # Nomen rot
-        "nomen": {"color": "red"},
-        "nomen_N": {"color": "red"}, "nomen_G": {"color": "red"}, "nomen_D": {"color": "red"}, "nomen_A": {"color": "red"}, "nomen_V": {"color": "red"},
-        # Verben grün
-        "verb": {"color": "green"},
-        "verb_Prä": {"color": "green"}, "verb_Imp": {"color": "green"}, "verb_Aor": {"color": "green"}, "verb_AorS": {"color": "green"}, "verb_Per": {"color": "green"}, "verb_Plq": {"color": "green"}, "verb_Fu": {"color": "green"},
-        "verb_Akt": {"color": "green"}, "verb_Med": {"color": "green"}, "verb_Pas": {"color": "green"}, "verb_MP": {"color": "green"}, "verb_Inf": {"color": "green"}, "verb_Op": {"color": "green"}, "verb_Knj": {"color": "green"}, "verb_Imv": {"color": "green"},
-        # Adjektive & Partizipien blau
-        "adjektiv": {"color": "blue"},
-        "adjektiv_N": {"color": "blue"}, "adjektiv_G": {"color": "blue"}, "adjektiv_D": {"color": "blue"}, "adjektiv_A": {"color": "blue"}, "adjektiv_V": {"color": "blue"}, "adjektiv_Kmp": {"color": "blue"}, "adjektiv_Sup": {"color": "blue"},
-        "partizip": {"color": "blue"},
-        "partizip_Pra": {"color": "blue"}, "partizip_Imp": {"color": "blue"}, "partizip_Aor": {"color": "blue"}, "partizip_AorS": {"color": "blue"}, "partizip_Per": {"color": "blue"}, "partizip_Plq": {"color": "blue"}, "partizip_Fu": {"color": "blue"},
-        "partizip_N": {"color": "blue"}, "partizip_G": {"color": "blue"}, "partizip_D": {"color": "blue"}, "partizip_A": {"color": "blue"}, "partizip_V": {"color": "blue"},
-        "partizip_Akt": {"color": "blue"}, "partizip_Med": {"color": "blue"}, "partizip_Pas": {"color": "blue"}, "partizip_MP": {"color": "blue"},
-    }
+    # Verwende die neue Standard-Farbkonfiguration basierend auf der Sprache
+    default_poesie_tag_config = _get_default_tag_config(ancient_lang_strength)
 
     final_tag_config = tag_config if tag_config is not None else default_poesie_tag_config
 
@@ -106,7 +190,15 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
 
         # Schritt 4: PDF rendern
         name_no_meter = output_pdf_name(base, NameOpts(strength=strength, color_mode=color_mode, tag_mode=tag_mode))
-        out_name = _add_suffix_before_ext(name_no_meter, "_Versmaß") if meter_on else name_no_meter
+        
+        # Füge _Versmaß zum Output-Namen hinzu, aber nur wenn:
+        # 1. meter_on ist True (wir erstellen ein Versmaß-PDF)
+        # 2. Der Input-Name NICHT bereits _Versmaß enthält (sonst doppelt)
+        if meter_on and not input_has_versmass_tag:
+            out_name = _add_suffix_before_ext(name_no_meter, "_Versmaß")
+        else:
+            out_name = name_no_meter
+            
         versmass_mode = "KEEP_MARKERS" if meter_on else "REMOVE_MARKERS"
         opts = PdfRenderOptions(strength=strength, color_mode=color_mode, tag_mode=tag_mode, versmass_mode=versmass_mode)
         

@@ -1,6 +1,7 @@
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    const method = request.method.toUpperCase();
 
     // --------- CORS ---------
     const origin = request.headers.get("Origin") || "";
@@ -18,41 +19,130 @@ export default {
     const CORS = {
       "Access-Control-Allow-Origin": allowOrigin,
       Vary: "Origin",
-      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Methods": "GET, HEAD, POST, OPTIONS",
       "Access-Control-Allow-Headers": "content-type",
       "Access-Control-Max-Age": "86400",
     };
 
-    if (request.method === "OPTIONS") {
+    // --------- OPTIONS / Preflight ---------
+    if (method === "OPTIONS") {
       return new Response(null, { status: 204, headers: CORS });
     }
 
-    // --------- Routen ---------
-    const accepted = new Set([
-      "/draft",
-      "/render",
-      "/api/render",
-      "/generate",
-      "/",
-    ]);
-
-    // Healthcheck
-    if (request.method === "GET" && url.pathname === "/") {
+    // --------- Healthcheck ---------
+    if ((method === "GET" || method === "HEAD") && url.pathname === "/") {
       return new Response("OK birkenbihl-draft-01", {
         status: 200,
         headers: CORS,
       });
     }
 
-    if (!accepted.has(url.pathname)) {
+    // --------- Release-Proxy (GET/HEAD) ---------
+    if ((method === "GET" || method === "HEAD") && url.pathname === "/release") {
+      const tag = (url.searchParams.get("tag") || "").trim();
+      const file = (url.searchParams.get("file") || "").trim();
+      const modeRaw = (url.searchParams.get("mode") || "inline").toLowerCase();
+      const mode = modeRaw === "attachment" ? "attachment" : "inline";
+
+      if (!tag || !file) {
+        return resp(
+          {
+            ok: false,
+            error: "missing_params",
+            message: "Query parameters 'tag' and 'file' are required.",
+          },
+          400,
+          CORS
+        );
+      }
+
+      const owner = env.OWNER;
+      const repo = env.REPO;
+      if (!owner || !repo) {
+        return resp(
+          {
+            ok: false,
+            error: "misconfigured",
+            message: "OWNER/REPO missing for release proxy",
+          },
+          500,
+          CORS
+        );
+      }
+
+      const upstreamUrl = `https://github.com/${owner}/${repo}/releases/download/${encodeURIComponent(
+        tag
+      )}/${encodeURIComponent(file)}`;
+
+      const upstream = await fetch(upstreamUrl, {
+        method: method === "HEAD" ? "HEAD" : "GET",
+      });
+
+      if (!upstream.ok) {
+        return resp(
+          {
+            ok: false,
+            error: "upstream_error",
+            status: upstream.status,
+            message: `GitHub responded with ${upstream.status}`,
+          },
+          upstream.status,
+          CORS
+        );
+      }
+
+      // Content-Type sauber setzen:
+      // - GitHub gibt für Release-Assets meist application/octet-stream zurück
+      // - für *.pdf wollen wir explizit application/pdf,
+      //   damit der Browser den eingebauten PDF-Viewer nutzt.
+      let contentType = upstream.headers.get("content-type") || "";
+      const lowerFile = file.toLowerCase();
+
+      if (!contentType || contentType === "application/octet-stream") {
+        if (lowerFile.endsWith(".pdf")) {
+          contentType = "application/pdf";
+        } else if (lowerFile.endsWith(".txt")) {
+          contentType = "text/plain; charset=utf-8";
+        } else {
+          contentType = "application/octet-stream";
+        }
+      }
+
+      const headers = new Headers({
+        ...CORS,
+        "Content-Type": contentType,
+        "Cache-Control": "public, max-age=3600",
+      });
+
+      // Für echten Download explizit attachment setzen.
+      // Für inline lassen wir Content-Disposition weg, damit der Browser rendert.
+      if (mode === "attachment") {
+        headers.set(
+          "Content-Disposition",
+          `attachment; filename="${file}"`
+        );
+      }
+
+      if (method === "HEAD") {
+        return new Response(null, {
+          status: upstream.status,
+          headers,
+        });
+      }
+
+      return new Response(upstream.body, {
+        status: upstream.status,
+        headers,
+      });
+    }
+
+    // --------- Ab hier nur noch POST-basierte Draft-API ---------
+    if (method !== "POST") {
       return resp(
-        { ok: false, error: "not_found", message: "Unknown route" },
-        404,
+        { ok: false, error: "method_not_allowed", message: "Use POST here." },
+        405,
         CORS
       );
-    }
-    if (request.method !== "POST") {
-      return resp({ ok: false, error: "method_not_allowed" }, 405, CORS);
     }
 
     // --------- Payload lesen (JSON | text/plain | multipart/form-data) ---------
@@ -76,21 +166,19 @@ export default {
         tagConfig = data.tag_config || null;
       } else if (ct.includes("text/plain")) {
         text = await request.text();
-        // optional: work/filename können via Queryparam kommen
         work = (url.searchParams.get("work") || "").trim();
         filename = (url.searchParams.get("filename") || "").trim();
         kind = (url.searchParams.get("kind") || "").trim();
         author = (url.searchParams.get("author") || "").trim();
       } else if (ct.includes("multipart/form-data")) {
         const form = await request.formData();
-        // text kann als Textfeld oder als Datei kommen
         if (form.has("text")) {
           text = (form.get("text") || "").toString();
         } else if (form.has("file")) {
-          const file = form.get("file");
-          if (file && typeof file.text === "function") {
-            text = await file.text();
-            filename = file.name || filename;
+          const upFile = form.get("file");
+          if (upFile && typeof upFile.text === "function") {
+            text = await upFile.text();
+            filename = upFile.name || filename;
           }
         }
         work = (form.get("work") || "").toString().trim();
@@ -98,7 +186,6 @@ export default {
         kind = (form.get("kind") || "").toString().trim();
         author = (form.get("author") || "").toString().trim();
 
-        // Tag-Konfiguration aus FormData extrahieren
         const tagConfigStr = form.get("tag_config");
         if (tagConfigStr) {
           try {
@@ -109,7 +196,6 @@ export default {
           }
         }
       } else {
-        // Fallback: versuchen als JSON
         const data = await request.json();
         text = (data.text ?? "").toString();
         work = (data.work ?? "").toString().trim();
@@ -130,7 +216,6 @@ export default {
     }
 
     // --------- Validierung & Normalisierung ---------
-    // Minimaler Schutz gegen zu große Texte (anpassbar)
     const BYTE_LIMIT = 1 * 1024 * 1024; // 1 MiB
     const textBytes = new TextEncoder().encode(text || "");
     if (!text) {
@@ -152,29 +237,21 @@ export default {
       );
     }
 
-    // Dateinamen-Strategie:
-    // 1) bevorzugt 'filename' wenn .txt, sonst
-    // 2) 'work' als Basis, sonst
-    // 3) "Entwurf"
+    // Dateinamen-Strategie
     let baseName =
       filename && filename.endsWith(".txt")
         ? stripUnsafe(filename.replace(/\.txt$/i, ""))
         : "";
     if (!baseName) baseName = stripUnsafe(work) || "Entwurf";
 
-    // Endgültiger Name (zeitgestempelt, Kollisionen vermeiden)
     const stamped = `${baseName}_birkenbihl_DRAFT_${tsStamp()}.txt`;
 
-    // Erstelle den korrekten Pfad basierend auf kind, author und work
-    // Fallback falls Parameter fehlen
-    const kindSafe = kind || "prosa"; // Standard zu prosa falls nicht angegeben
+    const kindSafe = kind || "prosa";
     const authorSafe = stripUnsafe(author) || "Unsortiert";
     const workSafe = stripUnsafe(work) || "Unbenannt";
 
-    // Pfad: texte_drafts/{kind}_drafts/{author}/{work}/{filename}
     const path = `texte_drafts/${kindSafe}_drafts/${authorSafe}/${workSafe}/${stamped}`;
 
-    // Tag-Konfiguration in den Text einbetten (falls vorhanden)
     let textWithConfig = text;
     if (tagConfig) {
       const configHeader = `<!-- TAG_CONFIG:${JSON.stringify(tagConfig)} -->\n`;
@@ -241,8 +318,6 @@ export default {
 
     const res = await gh.json();
 
-    // GitHub Action wird automatisch durch den Push-Event ausgelöst
-    // da die Action auf Push-Events in texte_drafts reagiert
     console.log("Draft gespeichert, GitHub Action wird automatisch ausgelöst");
 
     return resp(
@@ -260,7 +335,7 @@ export default {
       CORS
     );
   },
-}; // <- WICHTIG: export-default Block wird hier geschlossen!
+};
 
 // ---------- Hilfsfunktionen ----------
 function resp(obj, status = 200, headers = {}) {
@@ -277,20 +352,17 @@ function tsStamp(d = new Date()) {
   )}${p(d.getMinutes())}${p(d.getSeconds())}`;
 }
 
-// Entfernt problematische Zeichen aus Dateinamenbasis
 function stripUnsafe(s = "") {
   if (!s) return "";
-  // erlaubt Buchstaben, Ziffern, Leerraum, Unterstrich, Minus, Punkt
   let cleaned = s.replace(/[^A-Za-z0-9 _.\-]/g, " ").trim();
-  // stauche Mehrfach-Leerzeichen und ersetze sie durch Unterstriche
   cleaned = cleaned.replace(/\s+/g, "_");
   return cleaned.slice(0, 64) || "";
 }
 
-// RFC4648-Base64 ohne Zeilenumbrüche, UTF-8-sicher
 function toBase64Utf8(str) {
   const bytes = new TextEncoder().encode(str || "");
   let bin = "";
   bytes.forEach((b) => (bin += String.fromCharCode(b)));
   return btoa(bin);
 }
+

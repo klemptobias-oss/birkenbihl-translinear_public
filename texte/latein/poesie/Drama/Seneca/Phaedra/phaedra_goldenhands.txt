@@ -1,0 +1,1293 @@
+(0x) === Prolog ===
+(0)  Hippolytus: Īte, umbrōsās cingite silvās
+(1)  Hippolytus: summaque montis juga Cecropiī!
+(2)  Hippolytus: celerī plantā lūstrāte vagī
+(3)  Hippolytus: quae saxōsō loca Parnēthō
+(4)  Hippolytus: subjecta jacent,
+(5)  Hippolytus: quae Thrīasiīs vallibus amnis
+(6)  Hippolytus: rapidā currēns verberat undā;
+(7)  Hippolytus: scandite collēs semper cānōs
+(8)  Hippolytus: nive Rīphaeā.
+(9)  Hippolytus: Hāc, hāc aliī quā nemus altā
+(10)  Hippolytus: texitur alnō, quā prāta jacent
+(11)  Hippolytus: quae rōriferā mulcēns aurā
+(12)  Hippolytus: Zephyrus vernās ēvocat herbās,
+(13)  Hippolytus: ubi per gracilēs brevis Īlīsos
+(14)  Hippolytus: lābitur agrōs piger et sterilēs
+(15)  Hippolytus: amne malignō rādit harēnās.
+(16)  Hippolytus: Vōs quā Marathōn trāmite laevō
+(17)  Hippolytus: saltūs aperit,
+(18)  Hippolytus: quā comitātae gregibus parvīs
+(19)  Hippolytus: nocturna petunt pābula fētae;
+(20)  Hippolytus: vōs quā tepidīs subditus austrīs
+(21)  Hippolytus: frīgora mollit dūrus Acharneus.
+(22)  Hippolytus: Alius rūpem dulcis Hymettī,
+(23)  Hippolytus: parvās alius calcet Aphidnās;
+(24)  Hippolytus: pars illa diū vacat immūnis,
+(25)  Hippolytus: quā curvātī lītora pontī
+(26)  Hippolytus: Sūnion urget.
+(27)  Hippolytus: sī quem tangit glōria silvae,
+(28)  Hippolytus: vocat hunc Phȳlē:
+(29)  Hippolytus: hīc versātur, metus agricolīs,
+(30)  Hippolytus: vulnere multō jam nōtus aper.
+(31)  Hippolytus: At vōs laxās canibus tacitīs
+(32)  Hippolytus: mittite habēnās;
+(33)  Hippolytus: teneant ācrēs lōra Molossōs
+(34)  Hippolytus: et pugnācēs tendant Crētēs
+(35)  Hippolytus: fortia trītō vincula collō.
+(35)  Hippolytus: at Spartānōs (genus est audāx
+(36)  Hippolytus: avidumque ferae) nōdō cautus
+(37)  Hippolytus: propiōre ligā:
+(38)  Hippolytus: veniet tempus, cum lātrātū
+(39)  Hippolytus: cava saxa sonent.
+(40)  Hippolytus: nunc dēmissī nāre sagācī
+(40)  Hippolytus: captent aurās lustraque pressō
+(41)  Hippolytus: quaerant rōstrō, dum lūx dubia est,
+(42)  Hippolytus: dum signa pedum rōscida tellūs
+(43)  Hippolytus: impressa tenet.
+(44)  Hippolytus: Alius rārās cervīce gravī
+(45)  Hippolytus: portāre plagās,
+(45)  Hippolytus: alius teretēs properet laqueōs.
+(46)  Hippolytus: picta rubentī līnea pinnā
+(47)  Hippolytus: vānō clūdat terrōre ferās.
+(48)  Hippolytus: Tibi lībrētur missile tēlum,
+(49)  Hippolytus: tū grave dextrā laevāque simul
+(50)  Hippolytus: rōbur lātō dērige ferrō;
+(51)  Hippolytus: tū praecipitēs clāmōre ferās
+(52)  Hippolytus: subsessor agēs;
+(53)  Hippolytus: tū jam victor curvō solvēs
+(54)  Hippolytus: vīscera cultrō.
+(55)  Hippolytus: Ades ēn comitī, dīva virāgō,
+(55)  Hippolytus: cujus rēgnō pars terrārum
+(56)  Hippolytus: sēcrēta vacat,
+(57)  Hippolytus: cujus certīs petitur tēlīs
+(58)  Hippolytus: fera quae gelidum pōtat Araxēn
+(59)  Hippolytus: et quae stantī lūdit in Histrō.
+(60)  Hippolytus: tua Gaetūlōs dextra leōnēs,
+(61)  Hippolytus: tua Crētaeās sequitur cervās;
+(62)  Hippolytus: nunc vēlōcēs fīgis dammās
+(63)  Hippolytus: leviōre manū.
+(64)  Hippolytus: tibi dant variae pectora tigrēs,
+(65)  Hippolytus: tibi villōsī terga bisontēs
+(65)  Hippolytus: lātīsque ferī cornibus ūrī.
+(66)  Hippolytus: quidquid sōlīs pāscitur arvīs,
+(67)  Hippolytus: sīve illud Arabs dīvite silvā,
+(68)  Hippolytus: sīve illud inops nōvit Garamāns
+(71)  Hippolytus: vacuīsve vagus Sarmata campīs,
+(69)  Hippolytus: sīve ferōcis juga Pȳrēnēs
+(70)  Hippolytus: sīve Hyrcānī cēlant saltūs,
+(72)  Hippolytus: arcūs metuit, Dīāna, tuōs.
+(73)  Hippolytus: Tua sī grātus nūmina cultor
+(74)  Hippolytus: tulit in saltūs,
+(75)  Hippolytus: rētia vīnctās tenuēre ferās,
+(76)  Hippolytus: nūllī laqueum rūpēre pedēs:
+(77)  Hippolytus: fertur plaustrō praeda gementī.
+(78)  Hippolytus: tum rōstra canēs sanguine multō
+(79)  Hippolytus: rubicunda gerunt,
+(80)  Hippolytus: repetitque casās rūstica longō
+(80)  Hippolytus: turba triumphō.
+(81)  Hippolytus: Ēn, dīva, favet! signum argūtī
+(82)  Hippolytus: mīsēre canēs: vocor in silvās.
+(83)  Hippolytus: hāc, hāc pergam quā via longum
+(84)  Hippolytus: compēnsat iter.
+(85)  Phaedra: Ō magna vastī Crēta dominātrīx fretī,
+(86)  Phaedra: cujus per omne lītus innumerae ratēs
+(87)  Phaedra: tenuēre pontum, quidquid Assyriā tenus
+(88)  Phaedra: tellūre Nēreus pervium rōstrīs sinit,
+(89)  Phaedra: cūr mē in penātēs obsidem invīsōs datam
+(90)  Phaedra: hostīque nūptam dēgere aetātem in malīs
+(91)  Phaedra: lacrimīsque cōgis? profugus ēn conjūnx abest
+(92)  Phaedra: praestatque nūptae quam solet Thēseus fidem.
+(93)  Phaedra: fortis per altās inviī retrō lacūs
+(94)  Phaedra: vādit tenēbrās mīles audācis procī,
+(95)  Phaedra: soliō ut revulsam rēgis īnfernī abstrahat;
+(96)  Phaedra: pergit furōris socius, haud illum timor
+(97)  Phaedra: pudorve tenuit: stupra et illicitōs torōs
+(98)  Phaedra: Acheronte in īmō quaerit Hippolytī pater.
+(99)  Phaedra: Sed major alius incubat maestae dolor.
+(100)  Phaedra: nōn mē quiēs nocturna, nōn altus sopor
+(101)  Phaedra: solvēre cūrīs: alitur et crēscit malum
+(102)  Phaedra: et ārdet intus quālis Aetnaeō vapor
+(103)  Phaedra: exundat antrō. Palladis tēlae vacant
+(104)  Phaedra: et inter ipsās pēnsa lābuntur manūs;
+(105)  Phaedra: nōn colere dōnīs templa vōtīvīs libet,
+(106)  Phaedra: nōn inter ārās, Atthidum mixtam chorīs,
+(107)  Phaedra: jactāre tacitīs cōnsciās sacrīs facēs,
+(108)  Phaedra: nec adīre castīs precibus aut rītū piō
+(109)  Phaedra: adjūdicātae praesidem terrae deam:
+(110)  Phaedra: juvat excitātās cōnsequī cursū ferās
+(111)  Phaedra: et rigida mollī gaesa jaculārī manū.
+(112)  Phaedra: Quō tendis, anime? quid furēns saltūs amās?
+(113)  Phaedra: fātāle miserae mātris agnōscō malum:
+(114)  Phaedra: peccāre noster nōvit in silvīs amor.
+(115)  Phaedra: genetrīx, tuī mē miseret? īnfandō malō
+(116)  Phaedra: correpta pecoris efferum saevī ducem
+(117)  Phaedra: audāx amāstī; torvus, impatiēns jugī
+(118)  Phaedra: adulter ille, ductor indomitī gregis;
+(119)  Phaedra: sed amābat aliquid. quis meās miserae deus
+(120)  Phaedra: aut quis juvāre Daedalus flammās queat?
+(121)  Phaedra: nōn sī ille remeet, arte Mopsopiā potēns,
+(122)  Phaedra: quī nostra caeca mōnstra conclūsit domō,
+(123)  Phaedra: prōmittat ūllam cāsibus nostrīs opem.
+(124)  Phaedra: stirpem perōsa Sōlis invīsī Venus
+(125)  Phaedra: per nōs catēnās vindicat Mārtis suī
+(126)  Phaedra: suāsque, probrīs omne Phoebēum genus
+(127)  Phaedra: onerat nefandīs: nūlla Mīnōis levī
+(128)  Phaedra: dēfūnctā amōre est, jungitur semper nefās.
+(129)  Nutrix: Thēsēa conjūnx, clāra prōgeniēs Jovis,
+(130)  Nutrix: nefanda castō pectore exturbā ōcius,
+(131)  Nutrix: extingue flammās nēve tē dīrae speī
+(132)  Nutrix: praebē obsequentem: quisquis in prīmō obstitit
+(133)  Nutrix: pepulitque amōrem, tūtus ac victor fuit;
+(134)  Nutrix: quī blandiendō dulce nūtrīvit malum,
+(135)  Nutrix: sērō recūsat ferre quod subiit jugum.
+(136)  Nutrix: nec mē fugit, quam dūrus et vērī īnsolēns
+(137)  Nutrix: ad rēcta flectī rēgius nōlit tumor.
+(138)  Nutrix: quemcumque dederit exitum cāsus feram:
+(139)  Nutrix: fortem facit vīcīna lībertās senem.
+(140)  Nutrix: Honesta prīmum est velle nec lābī via,
+(141)  Nutrix: pudor est secundus nōsse peccandī modum.
+(142)  Nutrix: quō, misera, pergis? quid domum īnfāmem aggravās
+(143)  Nutrix: superāsque mātrem? majus est mōnstrō nefās:
+(144)  Nutrix: nam mōnstra fātō, mōribus scelera imputēs.
+(145)  Nutrix: Sī, quod marītus supera nōn cernit loca,
+(146)  Nutrix: tūtum esse facinus crēdis et vacuum metū,
+(147)  Nutrix: errās; tenērī crēde Lēthaeō abditum
+(148)  Nutrix: Thēsea profundō et ferre perpetuam Styga:
+(149)  Nutrix: quid ille, lātō maria quī rēgnō premit
+(150)  Nutrix: populīsque reddit jūra centēnīs, pater?
+(151)  Nutrix: latēre tantum facinus occultum sinet?
+(152)  Nutrix: sagāx parentum est cūra. Crēdāmus tamen
+(153)  Nutrix: āstū dolōque tegere nōs tantum nefās:
+(154)  Nutrix: quid ille rēbus lūmen īnfundēns suum,
+(155)  Nutrix: mātris parēns? quid ille, quī mundum quatit
+(156)  Nutrix: vibrāns coruscā fulmen Aetnaeum manū,
+(157)  Nutrix: sator deōrum? crēdis hoc posse efficī,
+(158)  Nutrix: inter videntēs omnia ut lateās avōs?
+(159)  Nutrix: Sed ut secundus nūminum abscondat favor
+(160)  Nutrix: coitūs nefandōs utque contingat stuprō
+(161)  Nutrix: negāta magnīs sceleribus semper fidēs:
+(162)  Nutrix: quid poena praesēns, cōnscius mentis pavor
+(163)  Nutrix: animusque culpā plēnus et sēmet timēns?
+(164)  Nutrix: scelus aliqua tūtum, nūlla sēcūrum tulit.
+(165)  Nutrix: Compesce amōris impiī flammās, precor,
+(166)  Nutrix: nefāsque quod nōn ūlla tellūs barbara
+(167)  Nutrix: commīsit umquam, nōn vagī campīs Getae
+(168)  Nutrix: nec inhospitālis Taurus aut sparsus Scythēs;
+(169)  Nutrix: expelle facinus mente castificā horridum
+(170)  Nutrix: memorque mātris metue concubitūs novōs.
+(171)  Nutrix: miscēre thalamōs patris et gnātī apparās
+(172)  Nutrix: uterōque prōlem capere cōnfūsam impiō?
+(173)  Nutrix: perge et nefandīs verte nātūram ignibus.
+(174)  Nutrix: cūr mōnstra cessant? aula cūr frātris vacat?
+(175)  Nutrix: prōdigia totiēns orbis īnsuēta audiet,
+(176)  Nutrix: nātūra totiēns lēgibus cēdet suīs,
+(177)  Nutrix: quotiēns amābit Cressa? Quae memorās sciō
+(178)  Phaedra: vēra esse, nūtrīx; sed furor cōgit sequī
+(179)  Phaedra: pejōra. vādit animus in praeceps sciēns
+(180)  Phaedra: remeatque frūstrā sāna cōnsilia appetēns.
+(181)  Phaedra: sīc, cum gravātam nāvita adversā ratem
+(182)  Phaedra: prōpellit undā, cēdit in vānum labor
+(183)  Phaedra: et vīcta prōnō puppis aufertur vadō.
+(184)  Phaedra: quid ratio possit? vīcit ac rēgnat furor,
+(185)  Phaedra: potēnsque tōtā mente dominātur deus.
+(186)  Phaedra: hic volucer omnī pollet in terrā impotēns
+(187)  Phaedra: ipsumque flammīs torret indomitīs Jovem;
+(188)  Phaedra: Grādīvus istās belliger sēnsit facēs,
+(189)  Phaedra: opifex trisulcī fulminis sēnsit deus,
+(190)  Phaedra: et quī furentīs semper Aetnaeīs jugīs
+(191)  Phaedra: versat camīnōs igne tam parvō calet;
+(192)  Phaedra: ipsumque Phoebum, tēla quī nervō regit,
+(193)  Phaedra: fīgit sagittā certior missā puer
+(194)  Phaedra: volitatque caelō pariter et terrīs gravīs.
+(195)  Nutrix: Deum esse amōrem turpis et vitiō favēns
+(196)  Nutrix: fīnxit libīdō, quōque līberior foret
+(197)  Nutrix: titulum furōrī nūminis falsī addidit.
+(198)  Nutrix: nātum per omnīs scīlicet terrās vagum
+(199)  Nutrix: Erycīna mittit, ille per caelum volāns
+(200)  Nutrix: proterva tenerā tēla mōlītur manū
+(201)  Nutrix: rēgnumque tantum minimus ē superīs habet:
+(202)  Nutrix: vāna ista dēmēns animus ascīvit sibī
+(203)  Nutrix: Venerisque nūmen fīnxit atque arcūs deī.
+(204)  Nutrix: Quisquis secundīs rēbus exsultat nimis
+(205)  Nutrix: fluitque luxū, semper īnsolita appetit.
+(206)  Nutrix: tunc illa magnae dīra fortūnae comes
+(207)  Nutrix: subit libīdō: nōn placent suētae dapēs,
+(208)  Nutrix: nōn texta sānī mōris aut vīlis scyphus.
+(209)  Nutrix: cūr in penātēs rārius tenuēs subit
+(210)  Nutrix: haec dēlicātās ēligēns pestis domōs?
+(211)  Nutrix: cūr sāncta parvīs habitat in tēctīs Venus
+(212)  Nutrix: mediumque sānōs vulgus affectūs tenet
+(213)  Nutrix: et sē coercent modica, contrā dīvitēs
+(214)  Nutrix: rēgnōque fultī plūra quam fās est petunt?
+(215)  Nutrix: quod nōn potest vult posse quī nimium potest.
+(216)  Nutrix: quid deceat altō praeditam soliō vidē:
+(217)  Nutrix: metue ac verēre scēptra remeantis virī.
+(218)  Phaedra: Amōris in mē maximum rēgnum reor
+(219)  Phaedra: reditūsque nūllōs metuo: nōn umquam amplius
+(220)  Phaedra: convexa tetigit supera quī mersus semel
+(221)  Phaedra: adiit silentem nocte perpetuā domum.
+(222)  Nutrix: Nē crēde Dītī. clauserit rēgnum licet,
+(223)  Nutrix: canisque dīrās Stygius observet forēs:
+(224)  Nutrix: sōlus negātās invenit Thēseus viās.
+(225)  Phaedra: Veniam ille amōrī forsitan nostrō dabit.
+(226)  Nutrix: Immītis etiam conjugī castae fuit:
+(227)  Nutrix: experta saevam est barbara Antiopē manum.
+(228)  Nutrix: sed posse flectī conjugem īrātum putā:
+(229)  Nutrix: quis hujus animum flectet intractābilem?
+(230)  Nutrix: exōsus omne fēminae nōmen fugit,
+(231)  Nutrix: immītis annōs caelibī vītae dicat,
+(232)  Nutrix: cōnubia vītat: genus Amāzonium sciās.
+(233)  Phaedra: Hunc in nivōsī collis haerentem jugīs,
+(234)  Phaedra: et aspera agilī saxa calcantem pede
+(235)  Phaedra: sequī per alta nemora, per montēs placet.
+(236)  Nutrix: Resistet ille sēque mulcendum dabit
+(237)  Nutrix: castōsque rītūs Venere nōn castā exuet?
+(238)  Nutrix: tibi pōnet odium, cujus odiō forsitan
+(239)  Nutrix: persequitur omnēs? Precibus at vincī potest?
+(240)  Nutrix: Ferus est. Amōre didicimus vincī ferōs.
+(241)  Nutrix: Fugiet. Per ipsa maria sī fugiat, sequar.
+(242)  Nutrix: Patris mementō. Meminimus mātris simul.
+(243)  Nutrix: Genus omne profugit. Paelicis careō metū.
+(244)  Nutrix: Aderit marītus. Nempe Pīrithoī comes?
+(245)  Nutrix: Aderitque genitor. Mītis Ariadnae pater.
+(246)  Nutrix: Per hās senectā splendidās supplex comās
+(247)  Nutrix: fessumque cūrīs pectus et cāra ūbera
+(248)  Nutrix: precor, furōrem siste tēque ipsa adjuvā:
+(249)  Nutrix: pars sānitātis velle sānārī fuit.
+(250)  Phaedra: Nōn omnis animō cessit ingenuō pudor.
+(251)  Phaedra: pārēmus, altrīx. quī regī nōn vult amor,
+(252)  Phaedra: vincātur. haud tē, fāma, maculārī sinam.
+(253)  Phaedra: haec sōla ratiō est, ūnicum effugium malī:
+(254)  Phaedra: virum sequāmur, morte praevertam nefās.
+(255)  Nutrix: Moderāre, alumna, mentis effrēnae impetūs,
+(256)  Nutrix: animōs coercē. dignam ob hoc vītā reor
+(257)  Nutrix: quod esse tēmet autumās dignam nece.
+(258)  Phaedra: Dēcrēta mors est: quaeritur fātī genus.
+(259)  Phaedra: laqueōne vītam fīniam an ferrō incubem?
+(260)  Phaedra: an missa praeceps arce Palladiā cadam?
+(262)  Nutrix: Sīc tē senectūs nostra praecipitī sinat
+(263)  Nutrix: perīre lētō? siste furibundum impetum.
+(264)  Nutrix: [haud quisquam ad vītam facile revocārī potest]
+(265)  Phaedra: Prohibēre nūlla ratio peritūrum potest,
+(266)  Phaedra: ubi quī morī cōnstituit et dēbet morī.
+(261)  Phaedra: proin castitātis vindicem armēmus manum.
+(267)  Nutrix: Sōlāmen annīs ūnicum fessīs, era,
+(268)  Nutrix: sī tam protervus incubat mentī furor,
+(269)  Nutrix: contemne fāmam: fāma vix vērō favet,
+(270)  Nutrix: pejus merentī melior et pejor bonō.
+(271)  Nutrix: temptēmus animum trīstem et intractābilem.
+(272)  Nutrix: meus iste labor est aggredī juvenem ferum
+(273)  Nutrix: mentemque saevam flectere immītis virī.
+(274)  Chorus: Dīva nōn mītī generāta pontō,
+(275)  Chorus: quam vocat mātrem geminus Cupīdō:
+(276)  Chorus: impotēns flammīs simul et sagittīs
+(277)  Chorus: iste lascīvus puer et renīdēns
+(278)  Chorus: tēla quam certō moderātur arcū!
+(279)  Chorus: [lābitur tōtās furor in medullās
+(280)  Chorus: igne fūrtīvō populante vēnās.]
+(281)  Chorus: nōn habet lātam data plāga frontem,
+(282)  Chorus: sed vorat tēctās penitus medullās.
+(283)  Chorus: nūlla pāx istī puerō: per orbem
+(284)  Chorus: spargit effūsās agilis sagittās;
+(285)  Chorus: quaeque nāscentem videt ōra sōlem,
+(286)  Chorus: quaeque ad Hesperiās jacet ōra mētās,
+(287)  Chorus: sī qua ferventī subjecta cancrō est,
+(288)  Chorus: sī qua Parrhasiae glaciālis ursae
+(289)  Chorus: semper errantēs patitur colōnōs,
+(290)  Chorus: nōvit hōs aestūs: juvenum ferōcēs
+(291)  Chorus: concitat flammās senibusque fessīs
+(292)  Chorus: rūrsus extīnctōs revocat calōrēs,
+(293)  Chorus: virginum ignōtō ferit igne pectus;
+(294)  Chorus: et jubet caelō superōs relictō
+(295)  Chorus: vultibus falsīs habitāre terrās.
+(296)  Chorus: Thessalī Phoebus pecoris magister
+(297)  Chorus: ēgit armentum positōque plēctrō
+(298)  Chorus: imparī taurōs calamō vocāvit.
+(299)  Chorus: Induit fōrmās quotiēns minōrēs
+(300)  Chorus: ipse quī caelum nebulāsque dūcit!
+(301)  Chorus: candidās āles modo mōvit ālās,
+(302)  Chorus: dulcior vōcem moriente cygnō;
+(303)  Chorus: fronte nunc torvā petulāns juvencus
+(304)  Chorus: virginum strāvit sua terga lūdō,
+(305)  Chorus: perque frāternōs, nova rēgna, flūctūs
+(306)  Chorus: ungulā lentōs imitante rēmōs
+(307)  Chorus: pectore adversō domuit profundum,
+(308)  Chorus: prō suā vector timidus rapīnā.
+(309)  Chorus: Ārsit obscūrī dea clāra mundī
+(310)  Chorus: nocte dēsertā nitidōsque frātrī
+(311)  Chorus: trādidit currūs aliter regendōs:
+(312)  Chorus: ille nocturnās agitāre bīgās
+(313)  Chorus: discit et gȳrō breviōre flectī,
+(314)  Chorus: nec suum tempus tenuēre noctēs
+(315)  Chorus: et diēs tardō remeāvit ortū,
+(316)  Chorus: dum tremunt axēs graviōre currū.
+(317)  Chorus: Nātus Alcmēnā posuit pharetrās
+(318)  Chorus: et mināx vastī spolium leōnis,
+(319)  Chorus: passus aptārī digitīs smaragdōs
+(320)  Chorus: et darī lēgem rudibus capillīs;
+(321)  Chorus: crūra distīnctō religāvit aurō,
+(322)  Chorus: lūteō plantās cohibente soccō;
+(323)  Chorus: et manū, clāvam modo quā gerēbat,
+(324)  Chorus: fīla dēdūxit properante fūsō.
+(325)  Chorus: Vīdit Persis dītisque ferāx
+(326)  Chorus: Lȳdia harēnae
+(327)  Chorus: dējecta ferī terga leōnis
+(328)  Chorus: umerīsque, quibus sēderat altī
+(329)  Chorus: rēgia caelī,
+(330)  Chorus: tenuem Tyriō stāmine pallam.
+(330)  Chorus: Sacer est ignis (crēdite laesīs)
+(331)  Chorus: nimiumque potēns:
+(332)  Chorus: quā terra salō cingitur altō
+(333)  Chorus: quāque per ipsum candida mundum
+(334)  Chorus: sīdera currunt,
+(335)  Chorus: hāc rēgna tenet puer immītis,
+(335)  Chorus: spīcula cujus sentit in īmīs
+(336)  Chorus: caerulus undīs grex Nēreidum
+(337)  Chorus: flammamque nequit relevāre marī.
+(338)  Chorus: Ignēs sentit genus āligerum;
+(339)  Chorus: Venere īnstīnctus suscipit audāx
+(340)  Chorus: grege prō tōtō bella juvencus;
+(341)  Chorus: sī conjugiō timuēre suō,
+(342)  Chorus: poscunt timidī proelia cervī
+(343)  Chorus: et mūgītū dant conceptī
+(344)  Chorus: signa furōris;
+(346)  Chorus: tunc vulnificōs acuit dentēs
+(347)  Chorus: aper et tōtō est spūmeus ōre:
+(350)  Chorus: tunc silva gemit murmure saevō.
+(348)  Chorus: Poenī quatiunt colla leōnēs,
+(349)  Chorus: cum mōvit amor;
+(345)  Chorus: tunc virgātās India tigrēs
+(346)  Chorus: dēcolor horret.
+(351)  Chorus: amat īnsānī bēlua pontī
+(352)  Chorus: Lūcaeque bovēs: vindicat omnēs
+(353)  Chorus: nātūra sibī, nihil immūne est,
+(354)  Chorus: odiumque perit, cum jussit amor;
+(355)  Chorus: veterēs cēdunt ignibus īrae.
+(356)  Chorus: quid plūra canam? vincit saevās
+(357)  Chorus: cūra novercās.
+(358)  Chorus: Altrīx, profāre quid ferās; quōnam in locō est
+(359)  Chorus: rēgīna? saevīs ecquis est flammīs modus?
+(360)  Nutrix: Spēs nūlla tantum posse lēnīrī malum,
+(361)  Nutrix: fīnisque flammīs nūllus īnsānīs erit.
+(362)  Nutrix: torrētur aestū tacitō et inclūsus quoque,
+(363)  Nutrix: quamvīs tegātur, prōditur vultū furor;
+(364)  Nutrix: ērumpit oculīs ignis et lassae genae
+(365)  Nutrix: lūcem recūsant; nīl idem dubiae placet,
+(366)  Nutrix: artūsque variē jactat incertus dolor:
+(367)  Nutrix: nunc ut solūtō lābitur marcēns gradū
+(368)  Nutrix: et vix labante sustinet collō caput,
+(369)  Nutrix: nunc sē quiētī reddit et, somnī immemor,
+(370)  Nutrix: noctem querēlīs dūcit; attollī jubet
+(371)  Nutrix: iterumque pōnī corpus et solvī comās
+(372)  Nutrix: rūrsusque fingī: semper impatiēns suī
+(373)  Nutrix: mūtātur habitus. nūlla jam Cereris subit
+(374)  Nutrix: cūra aut salūtis; vādit incertō pede,
+(375)  Nutrix: jam vīribus dēfecta: nōn īdem vigor,
+(376)  Nutrix: nōn ōra tinguēns nitida purpureus rubor;
+(377)  Nutrix: [populātur artūs cūra, jam gressūs tremunt,
+(378)  Nutrix: tenerque nitidī corporis cecidit decor.]
+(379)  Nutrix: et quī ferēbant signa Phoebēae facis
+(380)  Nutrix: oculī nihil gentīle nec patrium micant.
+(381)  Nutrix: lacrimae cadunt per ōra et assiduō genae
+(382)  Nutrix: rōre irrigantur, quāliter Taurī jugīs
+(383)  Nutrix: tepidō madēscunt imbre percussae nivēs.
+(384)  Nutrix: Sed ēn, patēscunt rēgiae fastīgia:
+(385)  Nutrix: reclīnis ipsa sēdis aurātae torō
+(386)  Nutrix: solitōs amictūs mente nōn sānā abnuit.
+(387)  Phaedra: Removēte, famulae, purpurā atque aurō inlitās
+(388)  Phaedra: vestēs, procul sit mūricis Tyriī rubor,
+(389)  Phaedra: quae fīla rāmīs ultimī Sēres legunt:
+(390)  Phaedra: brevis expedītōs zōna cōnstringat sinūs,
+(391)  Phaedra: cervīx monīlī vacua, nec niveus lapis
+(392)  Phaedra: dēdūcat aurīs, Indicī dōnum maris;
+(393)  Phaedra: odōre crīnis sparsus Assyriō vacet.
+(394)  Phaedra: sīc temere jactae colla perfundant comae
+(395)  Phaedra: umerōsque summōs, cursibus mōtae citīs
+(396)  Phaedra: ventōs sequantur. laeva sē pharetrae dabit,
+(397)  Phaedra: hastīle vibret dextra Thēssalicum manus:
+(398)  Phaedra: [tālis sevērī māter Hippolytī fuit.]
+(399)  Phaedra: quālis relictīs frīgidī Pontī plagīs
+(400)  Phaedra: ēgit catervās Atticum pulsāns solum
+(401)  Phaedra: Tanaītis aut Maeōtis et nōdō comās
+(402)  Phaedra: coēgit ēmīsitque, lūnātā latus
+(403)  Phaedra: prōtēcta peltā, tālis in silvās ferar.
+(404)  Chorus: Sēpōne questūs: nōn levat miserōs dolor;
+(405)  Chorus: agreste plācā virginis nūmen deae.
+(406)  Nutrix: Rēgīna nemorum, sōla quae montēs colis
+(407)  Nutrix: et ūna sōlīs montibus coleris dea,
+(408)  Nutrix: converte trīstēs ōminum in melius minās.
+(409)  Nutrix: ō magna silvās inter et lūcōs dea,
+(410)  Nutrix: clārumque caelī sīdus et noctis decus,
+(411)  Nutrix: cujus relūcet mundus alternā face,
+(412)  Nutrix: Hecatē trifōrmis, ēn ades coeptīs favēns.
+(413)  Nutrix: animum rigentem trīstis Hippolytī domā:
+(414)  Nutrix: det facilis aurēs; mītigā pectus ferum:
+(415)  Nutrix: amāre discat, mūtuōs ignēs ferat.
+(416)  Nutrix: īnflecte mentem: torvus āversus ferōx
+(417)  Nutrix: in jūra Veneris redeat. hūc vīrēs tuās
+(418)  Nutrix: intende: sīc tē lūcidī vultūs ferant
+(419)  Nutrix: et nūbe ruptā cornibus pūrīs eās,
+(420)  Nutrix: sīc tē regentem frēna nocturnī aetheris
+(421)  Nutrix: dētrahere numquam Thessalī cantūs queant
+(422)  Nutrix: nūllusque dē tē glōriam pāstor ferat.
+(423)  Nutrix: Ades invocāta, jam favet vōtīs, dea:
+(424)  Nutrix: ipsum intuor sollemne venerantem sacrum
+(425)  Nutrix: nūllō latus comitante: quid dubitās? dedit
+(426)  Nutrix: tempus locumque cāsus: ūtendum artibus.
+(427)  Nutrix: trepidāmus? haud est facile mandātum scelus
+(428)  Nutrix: audēre, vērum jūsta quī rēgēs timet
+(429)  Nutrix: dēpōnat, omne pellat ex animō decus:
+(430)  Nutrix: malus est minister rēgiī imperiī pudor.
+(431)  Hippolytus: Quid hūc senīlēs fessa mōlīris gradūs,
+(432)  Hippolytus: ō fīda nūtrīx, turbidam frontem gerēns
+(433)  Hippolytus: et maesta vultū? sospes est certē parēns
+(434)  Hippolytus: sospesque Phaedra stirpis et geminae jugum?
+(435)  Nutrix: Metūs remitte, prōsperō rēgnum in statū est
+(436)  Nutrix: domusque flōrēns sorte fēlīcī viget.
+(437)  Nutrix: sed tū beātīs mītior rēbus venī:
+(438)  Nutrix: namque ānxiam mē cūra sollicitat tuī,
+(439)  Nutrix: quod tē ipse poenīs gravibus īnfēstus domās.
+(440)  Nutrix: quem fāta cōgunt, ille cum veniā est miser;
+(441)  Nutrix: at sī quis ultrō sē malīs offert volēns
+(442)  Nutrix: sēque ipse torquet, perdere est dignus bona
+(443)  Nutrix: quīs nescit ūtī. potius annōrum memor
+(444)  Nutrix: mentem relaxā: noctibus fēstīs facem
+(445)  Nutrix: attolle, cūrās Bacchus exoneret gravēs;
+(446)  Nutrix: aetāte fruere: mōbilī cursū fugit.
+(447)  Nutrix: nunc facile pectus, grāta nunc juvenī Venus:
+(448)  Nutrix: exsultet animus. cūr torō viduō jacēs?
+(449)  Nutrix: trīstem juventam solve; nunc cursūs rape,
+(450)  Nutrix: effunde habēnās, optimōs vītae diēs
+(451)  Nutrix: effluere prohibē. propria dēscrīpsit deus
+(452)  Nutrix: officia et aevum per suōs dūcit gradūs:
+(453)  Nutrix: laetitia juvenem, frōns decet trīstis senem.
+(454)  Nutrix: Quid tē coercēs et necās rēctam indolem?
+(455)  Nutrix: seges illa magnum fēnus agricolae dabit
+(456)  Nutrix: quaecumque laetīs tenera luxuriat satīs,
+(457)  Nutrix: arborque celsō vertice ēvincet nemus
+(458)  Nutrix: quam nōn maligna caedit aut resecat manus:
+(459)  Nutrix: ingenia melius rēcta sē in laudēs ferunt,
+(460)  Nutrix: sī nōbilem animum vegeta lībertās alit.
+(461)  Nutrix: truculentus et silvester ac vītae inscius
+(462)  Nutrix: trīstem juventam Venere dēsertā colēs?
+(463)  Nutrix: hoc esse mūnus crēdis indictum virīs,
+(464)  Nutrix: ut dūra tolerent, cursibus domitent equōs
+(465)  Nutrix: et saeva bella Mārte sanguineō gerant?
+(466)  Nutrix: Prōvīdit ille maximus mundī parēns,
+(467)  Nutrix: cum tam rapācēs cerneret Fātī manūs,
+(468)  Nutrix: ut damna semper subole reparāret novā.
+(469)  Nutrix: excēdat agedum rēbus hūmānīs Venus,
+(470)  Nutrix: quae supplet ac restituit exhaustum genus:
+(471)  Nutrix: orbis jacēbit squālidō turpis sitū,
+(472)  Nutrix: vacuum sine ūllīs piscibus stābit mare,
+(473)  Nutrix: ālesque caelō dēerit et silvīs fera,
+(474)  Nutrix: sōlīs et āēr pervius ventīs erit.
+(475)  Nutrix: quam varia lētī genera mortālem trahunt
+(476)  Nutrix: carpuntque turbam, pontus et ferrum et dolī!
+(477)  Nutrix: sed fāta crēdās dēesse: sīc ātram Styga
+(478)  Nutrix: jam petimus ultrō. caelibem vītam probet
+(479)  Nutrix: sterilis juventūs: hoc erit, quidquid vidēs,
+(480)  Nutrix: ūnīus aevī turba et in sēmet ruet.
+(481)  Nutrix: prōinde vītae sequere nātūram ducem:
+(482)  Nutrix: urbem frequentā, cīvium coetūs cole.
+(483)  Hippolytus: Nōn alia magis est lībera et vitiō carēns
+(484)  Hippolytus: rītūsque melius vīta quae prīscōs colat,
+(485)  Hippolytus: quam quae relictīs moenibus silvās amat.
+(486)  Hippolytus: nōn illum avārae mentis īnflammat furor
+(487)  Hippolytus: quī sē dicāvit montium īnsontem jugīs,
+(488)  Hippolytus: nōn aura populī et vulgus īnfīdum bonīs,
+(489)  Hippolytus: nōn pestilēns invidia, nōn fragilis favor;
+(490)  Hippolytus: nōn ille rēgnō servit aut rēgnō imminēns
+(491)  Hippolytus: vānōs honōrēs sequitur aut flūxās opēs,
+(492)  Hippolytus: speī metūsque līber, haud illum niger
+(493)  Hippolytus: edāxque līvor dente dēgenerī petit;
+(494)  Hippolytus: nec scelera populōs inter atque urbēs sata
+(495)  Hippolytus: nōvit nec omnēs cōnscius strepitūs pavet
+(496)  Hippolytus: aut verba fingit; mīlle nōn quaerit tegī
+(497)  Hippolytus: dīves columnīs nec trabēs multō īnsolēns
+(498)  Hippolytus: suffīgit aurō; nōn cruor largus piās
+(499)  Hippolytus: inundat ārās, frūge nec sparsī sacra
+(500)  Hippolytus: centēna niveī colla summittunt bovēs:
+(501)  Hippolytus: sed rūre vacuō potitur et apertō aethere
+(502)  Hippolytus: innocuus errat. callidās tantum ferīs
+(503)  Hippolytus: strūxisse fraudēs nōvit et fessus gravī
+(504)  Hippolytus: labōre niveō corpus Īlīsō fovet;
+(505)  Hippolytus: nunc ille rīpam celeris Alphēī legit,
+(506)  Hippolytus: nunc nemoris altī dēnsa mētātur loca,
+(507)  Hippolytus: ubi Lerna pūrō gelida perlūcet vadō,
+(508)  Hippolytus: sōlēsque vītat. hinc avēs querulae fremunt
+(509)  Hippolytus: rāmīque ventīs lēne percussī tremunt
+(510)  Hippolytus: ...
+(511)  Hippolytus: veterēsque fāgī. juvat et aut amnis vagī
+(512)  Hippolytus: pressisse rīpās, caespite aut nūdō levēs
+(513)  Hippolytus: dūxisse somnōs, sīve fōns largus citās
+(514)  Hippolytus: dēfundit undās, sīve per flōrēs novōs
+(515)  Hippolytus: fugiente dulcis murmurat rīvō sonus.
+(515)  Hippolytus: excussa silvīs pōma compescunt famem
+(516)  Hippolytus: et frāga parvīs vulsa dūmētīs cibōs
+(517)  Hippolytus: facilēs ministrant. rēgiōs luxūs procul
+(518)  Hippolytus: est impetus fūgisse: sollicitō bibunt
+(519)  Hippolytus: aurō superbī; quam juvat nūdā manū
+(520)  Hippolytus: captāsse fontem! certior somnus premit
+(521)  Hippolytus: sēcūra dūrō membra versantem torō.
+(522)  Hippolytus: nōn in recessū fūrta et obscūrō improbus
+(523)  Hippolytus: quaerit cubīlī sēque multiplicī timēns
+(524)  Hippolytus: domō recondit: aethera ac lūcem petit
+(525)  Hippolytus: et teste caelō vīvit. Hōc equidem reor
+(526)  Hippolytus: vīxisse rītū prīma quōs mixtōs deīs
+(527)  Hippolytus: profūdit aetās. nūllus hīs aurī fuit
+(528)  Hippolytus: caecus cupīdō, nūllus in campō sacer
+(529)  Hippolytus: dīvīsit āgrōs arbiter populīs lapis;
+(530)  Hippolytus: nōndum secābant crēdulae pontum ratēs:
+(531)  Hippolytus: sua quisque nōrat maria; nōn vastō aggere
+(532)  Hippolytus: crēbrāque turre cīnxerant urbēs latus;
+(533)  Hippolytus: nōn arma saeva mīles aptābat manū
+(534)  Hippolytus: nec torta clausās frēgerat saxō gravī
+(535)  Hippolytus: ballista portās, jussa nec dominum patī
+(536)  Hippolytus: jūnctō ferēbat terra servitium bove:
+(537)  Hippolytus: sed arva per sē fēta poscentēs nihil
+(538)  Hippolytus: pāvēre gentēs, silva nātīvās opēs
+(539)  Hippolytus: et opāca dederant antra nātīvās domōs.
+(540)  Hippolytus: Rūpēre foedus impius lūcrī furor
+(541)  Hippolytus: et īra praeceps quaeque succēnsās agit
+(542)  Hippolytus: libīdo mentēs; vēnit imperiī sitis
+(543)  Hippolytus: cruenta, factus praeda majōrī minor:
+(544)  Hippolytus: prō jūre vīrēs esse. tum prīmum manū
+(545)  Hippolytus: bellāre nūdā saxaque et rāmōs rudēs
+(546)  Hippolytus: vertēre in arma: nōn erat gracilī levis
+(547)  Hippolytus: armāta ferrō cornus aut longō latus
+(548)  Hippolytus: mucrōne cingēns ēnsis aut cristā procul
+(549)  Hippolytus: galeae comantēs: tēla faciēbat dolor.
+(550)  Hippolytus: invēnit artēs bellicus Māvors novās
+(551)  Hippolytus: et mīlle fōrmās mortis. hinc terrās cruor
+(552)  Hippolytus: īnfēcit omnīs fūsus et rubuit mare.
+(553)  Hippolytus: tum scelera dēmptō fīne per cūnctās domōs
+(554)  Hippolytus: īēre, nūllum caruit exemplō nefās:
+(555)  Hippolytus: ā frātre frāter, dexterā gnātī parēns
+(556)  Hippolytus: cecidit, marītus conjugis ferrō jacet
+(557)  Hippolytus: perimuntque fētūs impiae mātrēs suōs;
+(558)  Hippolytus: taceō novercās: mītius nīl est ferīs.
+(559)  Hippolytus: Sed dux malōrum fēmina: haec scelerum artifex
+(560)  Hippolytus: obsēdit animōs, hujus incestae stuprīs
+(561)  Hippolytus: fūmant tot urbēs, bella tot gentēs gerunt
+(562)  Hippolytus: et versa ab īmō rēgna tot populōs premunt.
+(563)  Hippolytus: sileantur aliae: sōla conjūnx Aegeī,
+(564)  Hippolytus: Mēdēa, reddet fēminās dīrum genus.
+(565)  Nutrix: Cūr omnium fit culpa paucārum scelus?
+(566)  Hippolytus: Dētestor omnīs, horreō fugiō exsecror.
+(567)  Hippolytus: sit ratio, sit nātūra, sit dīrus furor:
+(568)  Hippolytus: ōdisse placuit. ignibus jungēs aquās
+(569)  Hippolytus: et amīca ratibus ante prōmittet vada
+(570)  Hippolytus: incerta Syrtis, ante ab extrēmō sinū
+(571)  Hippolytus: Hesperia Tēthȳs lūcidum attollet diem
+(572)  Hippolytus: et ōra dammīs blanda praebēbunt lupī,
+(573)  Hippolytus: quam victus animum fēminae mītem geram.
+(574)  Nutrix: Saepe obstinātīs induit frēnōs Amor
+(575)  Nutrix: et odia mūtat. rēgna māterna aspice:
+(576)  Nutrix: illae ferōcēs sentiunt Veneris jugum;
+(577)  Nutrix: testāris istud ūnicus gentis puer.
+(578)  Hippolytus: Sōlāmen ūnum mātris āmissae ferō,
+(579)  Hippolytus: ōdisse quod jam fēminās omnīs licet.
+(580)  Nutrix: Ut dūra cautēs undique intractābilis
+(581)  Nutrix: resistit undīs et lacessentēs aquās
+(582)  Nutrix: longē remittit, verba sīc spernit mea.
+(583)  Nutrix: Sed Phaedra praeceps graditur, impatiēns morae.
+(584)  Nutrix: quō sē dabit fortūna? quō verget furor?
+(585)  Nutrix: terrae repente corpus exanimum accidit
+(586)  Nutrix: et ōra mortī similis obdūxit color.
+(587)  Nutrix: attolle vultūs, dīmovē vōcis morās:
+(588)  Nutrix: tuus ēn, alumna, tēmet Hippolytus tenet.
+(589)  Phaedra: Quis mē dolōrī reddit atque aestūs gravēs
+(590)  Phaedra: repōnit animō? quam bene excideram mihī!
+(591)  Hippolytus: Cūr dulce mūnus redditae lūcis fugis?
+(592)  Phaedra: Audē, anime, temptā, perage mandātum tuum.
+(593)  Phaedra: intrepida cōnstent verba: quī timidē rogat
+(594)  Phaedra: docet negāre. magna pars sceleris meī
+(595)  Phaedra: ōlim perācta est; sērus est nōbīs pudor:
+(596)  Phaedra: admōvimus nefanda. sī coepta exsequor,
+(597)  Phaedra: forsan jugālī crīmen abscondam face:
+(598)  Phaedra: honesta quaedam scelera successus facit.
+(599)  Phaedra: ēn, incipe, anime! Commodēs paulum, precor,
+(600)  Phaedra: sēcrētus aurēs. sī quis est abeat comes.
+(601)  Hippolytus: Ēn locus ab omnī līber arbitriō vacat.
+(602)  Phaedra: Sed ōra coeptīs trānsitum verbīs negant;
+(603)  Phaedra: vīs magna vōcem mittit et major tenet.
+(604)  Phaedra: vōs testor omnīs, caelitēs, hoc quod volō
+(605)  Phaedra: mē nōlle.
+(606)  Hippolytus: Animusne cupiēns aliquid effārī nequit?
+(607)  Phaedra: Cūrae levēs loquuntur, ingentēs stupent.
+(608)  Hippolytus: Committe cūrās auribus, māter, meīs.
+(609)  Phaedra: Mātris superbum est nōmen et nimium potēns:
+(610)  Phaedra: nostrōs humilius nōmen affectūs decet;
+(611)  Phaedra: mē vel sorōrem, Hippolyte, vel famulam vocā,
+(612)  Phaedra: famulamque potius: omne servitium feram.
+(613)  Phaedra: nōn mē per altās īre sī jubeās nivēs
+(614)  Phaedra: pigeat gelātīs ingredī Pindī jugīs;
+(615)  Phaedra: nōn, sī per ignēs īre et infēsta agmina,
+(616)  Phaedra: cūncter parātīs ēnsibus pectus dare.
+(617)  Phaedra: mandāta recipe scēptra, mē famulam accipe:
+(618)  Phaedra: [tē imperia regere, mē decet jussa exsequī]
+(619)  Phaedra: muliebre nōn est rēgna tūtārī urbium.
+(620)  Phaedra: tū quī juventae flōre prīmaevō vigēs,
+(621)  Phaedra: cīvēs paternō fortis imperiō rege;
+(622)  Phaedra: sinū receptam supplicem ac servam tege:
+(623)  Phaedra: miserēre viduae. Summus hoc ōmen deus
+(624)  Hippolytus: āvertat. aderit sospes āctūtum parēns.
+(625)  Phaedra: Rēgnī tenācis dominus et tacitae Stygis
+(626)  Phaedra: nūllam relictōs fēcit ad superōs viam:
+(627)  Phaedra: thalamī remittet ille raptōrem suī?
+(628)  Phaedra: nisi forte amōrī placidus et Plūtōn sedet.
+(629)  Hippolytus: Illum quidem aequī caelitēs reducem dabunt.
+(630)  Hippolytus: sed dum tenēbit vōta in incertō deus,
+(631)  Hippolytus: pietāte cārōs dēbitā frātrēs colam,
+(632)  Hippolytus: et tē merēbor esse nē viduam putēs
+(633)  Hippolytus: ac tibi parentis ipse supplēbō locum.
+(634)  Phaedra: Ō spēs amantum crēdula, ō fallāx Amor!
+(635)  Phaedra: satisne dīxī? precibus admōtīs agam.
+(636)  Phaedra: Miserēre, tacitae mentis exaudī precēs:
+(637)  Phaedra: libet loquī pigetque. Quodnam istud malum est?
+(638)  Phaedra: Quod in novercam cadere vix crēdās malum.
+(639)  Hippolytus: Ambigua vōce verba perplexā jacis:
+(640)  Hippolytus: effāre apertē. Pectus īnsānum vapor
+(641)  Phaedra: amorque torret. intimīs saevit ferus
+(642)  Phaedra: [penitus medullās atque per vēnās meat]
+(643)  Phaedra: vīsceribus ignis mersus et vēnās latēns
+(644)  Phaedra: ut agilis altās flamma percurrit trabēs.
+(645)  Hippolytus: Amōre nempe Thēseī castō furis?
+(646)  Phaedra: Hippolyte, sīc est: Thēseī vultūs amō
+(647)  Phaedra: illōs priōrēs, quōs tulit quondam puer,
+(648)  Phaedra: cum prīma pūrās barba signārat genās
+(649)  Phaedra: mōnstrīque caecam Gnōsiī vīdit domum
+(650)  Phaedra: et longa curvā fīla collēgit viā.
+(651)  Phaedra: quis tum ille fulsit! presserant vittae comam
+(652)  Phaedra: et ōra flāvus tenera tinguēbat pudor;
+(653)  Phaedra: inerant lacertīs mollibus fortēs torī,
+(654)  Phaedra: tuaeque Phoebēs vultus aut Phoebī meī,
+(655)  Phaedra: tuusve potius; tālis, ēn tālis fuit
+(656)  Phaedra: cum placuit hostī, sīc tulit celsum caput.
+(657)  Phaedra: in tē magis refulget incōmptus decor:
+(658)  Phaedra: est genitor in tē tōtus et torvae tamen
+(659)  Phaedra: pars aliqua mātris miscet ex aequō decus:
+(660)  Phaedra: in ōre Grāiō Scythicus appāret rigor.
+(661)  Phaedra: sī cum parente Crēticum intrāssēs fretum,
+(662)  Phaedra: tibi fīla potius nostra nēvisset soror.
+(663)  Phaedra: Tē tē, soror, quācumque sīdereī polī
+(664)  Phaedra: in parte fulgēs, invocō ad causam parem:
+(665)  Phaedra: domus sorōrēs ūna corripuit duās,
+(666)  Phaedra: tē genitor, at mē gnātus. ēn supplex jacet
+(667)  Phaedra: adlāpsa genibus rēgiae prōlēs domūs.
+(668)  Phaedra: respersa nūllā lābe et intācta, innocēns
+(669)  Phaedra: tibi mūtor ūnī. certa dēscendī ad precēs:
+(670)  Phaedra: fīnem hic dolōrī faciet aut vītae diēs.
+(671)  Phaedra: miserēre amantis. Magne rēgnātor deum,
+(672)  Hippolytus: tam lentus audīs scelera? tam lentus vidēs?
+(673)  Hippolytus: ecquando saevā fulmen ēmittēs manū,
+(674)  Hippolytus: sī nunc serēnum est? omnis impulsus ruat
+(675)  Hippolytus: aethēr et ātrīs nūbibus condat diem,
+(676)  Hippolytus: ac versa retrō sīdera oblīquōs agant
+(677)  Hippolytus: retorta cursūs. tūque, sīdereum caput,
+(678)  Hippolytus: radiāte Tītān, tū nefās stirpis tuae
+(679)  Hippolytus: speculāre? lūcem merge et in tenebrās fuge.
+(680)  Hippolytus: cūr dextra, dīvum rēctor atque hominum, vacat
+(681)  Hippolytus: tua, nec trisulcā mundus ārdēscit face?
+(682)  Hippolytus: in mē tonā, mē fīge, mē vēlōx cremet
+(683)  Hippolytus: trānsāctus ignis: sum nocēns, meruī morī:
+(684)  Hippolytus: placuī novercae. dignus ēn stuprīs egō?
+(685)  Hippolytus: scelerīque tantō vīsus ego sōlus tibī
+(686)  Hippolytus: māteria facilis? hoc meus meruit rigor?
+(687)  Hippolytus: ō scelere vincēns omne fēmineum genus,
+(688)  Hippolytus: ō majus ausa mātre mōnstriferā malum
+(689)  Hippolytus: genetrīce pejor! illa sē tantum stuprō
+(690)  Hippolytus: contāmināvit, et tamen tacitum diū
+(691)  Hippolytus: crīmen bifōrmī partus exhibuit notā,
+(692)  Hippolytus: scelusque mātris arguit vultū trucī
+(693)  Hippolytus: ambiguus infāns: ille tē venter tulit.
+(694)  Hippolytus: ō ter quaterque prōsperō fātō datī
+(695)  Hippolytus: quōs hausit et perēmit et lētō dedit
+(696)  Hippolytus: odium dolusque: genitor, invideō tibī:
+(697)  Hippolytus: Colchide novercā majus hoc, majus malum est.
+(698)  Phaedra: Et ipsa nostrae fāta cognōscō domūs:
+(699)  Phaedra: fugienda petimus; sed meī nōn sum potēns.
+(700)  Phaedra: tē vel per ignēs, per mare īnsānum sequar
+(701)  Phaedra: rūpēsque et amnēs, unda quōs torrēns rapit;
+(702)  Phaedra: quācumque gressūs tuleris hāc āmēns agar;
+(703)  Phaedra: iterum, superbe, genibus advolvor tuīs.
+(704)  Hippolytus: Procul impudīcōs corpore ā castō āmovē
+(705)  Hippolytus: tāctūs: quid hoc est? etiam in amplexūs ruit?
+(706)  Hippolytus: stringātur ēnsis, merita supplicia exigat.
+(707)  Hippolytus: ēn impudīcum crīne contortō caput
+(708)  Hippolytus: laevā reflexī: jūstior numquam focīs
+(709)  Hippolytus: datus tuīs est sanguis, arquitenēns dea.
+(710)  Phaedra: Hippolyte, nunc mē compotem vōtī facis;
+(711)  Phaedra: sānās furentem. majus hoc vōtō meō est,
+(712)  Phaedra: salvō ut pudōre manibus immoriar tuīs.
+(713)  Hippolytus: Abscēde, vīve, nē quid exōrēs, et hic
+(714)  Hippolytus: contāctus ēnsis dēserat castum latus.
+(715)  Hippolytus: quis ēluet mē Tanais aut quae barbarīs
+(716)  Hippolytus: Maeōtis undīs Ponticō incumbēns marī?
+(717)  Hippolytus: nōn ipse tōtō magnus Ōceanō pater
+(718)  Hippolytus: tantum expiārit sceleris. ō silvae, ō ferae!
+(719)  Nutrix: Dēprēnsa culpa est. anime, quid sēgnis stupēs?
+(720)  Nutrix: regerāmus ipsī crīmen atque ultrō impiam
+(721)  Nutrix: Venerem arguāmus: scelere vēlandum est scelus;
+(722)  Nutrix: tūtissimum est inferre, cum timeās, gradum.
+(723)  Nutrix: ausae priōrēs sīmus an passae nefās,
+(724)  Nutrix: sēcrēta cum sit culpa, quis testis sciet?
+(725)  Nutrix: Adeste, Athēnae! fīda famulōrum manus,
+(726)  Nutrix: fer opem! nefandō raptor Hippolytus stuprō
+(727)  Nutrix: īnstat premitque, mortis intentat metum,
+(728)  Nutrix: ferrō pudīcam terret; ēn praeceps abīt
+(729)  Nutrix: ēnsemque trepidā līquit attonitus fugā.
+(730)  Nutrix: pignus tenēmus sceleris. hanc maestam prius
+(731)  Nutrix: recreāte. crīnis tractus et lacerae comae
+(732)  Nutrix: ut sunt remaneant, facinoris tantī notae.
+(733)  Nutrix: perferte in urbem! Recipe jam sēnsūs, era.
+(734)  Nutrix: quid tē ipsa lacerāns omnium aspectūs fugis?
+(735)  Nutrix: mēns impudīcam facere, nōn cāsus, solet.
+(736)  Chorus: Fūgit insānae similis procellae,
+(737)  Chorus: ōcior nūbēs glomerante Cōrō,
+(738)  Chorus: ōcior cursum rapiente flammā,
+(739)  Chorus: stēlla cum ventīs agitāta longōs
+(740)  Chorus: porrigit ignēs.
+(741)  Chorus: Cōnferat tēcum decus omne prīscum
+(742)  Chorus: fāma mīrātrīx seniōris aevī:
+(743)  Chorus: pulchrior tantō tua fōrma lūcet,
+(744)  Chorus: clārior quantō micat orbe plēnō
+(745)  Chorus: cum suōs ignēs coeunte cornū
+(746)  Chorus: jūnxit et currū properante pernox
+(747)  Chorus: exserit vultūs rubicunda Phoebē
+(748)  Chorus: nec tenent stēllae faciem minōrēs;
+(749)  Chorus: tālis est, prīmās referēns tenēbrās,
+(750)  Chorus: nūntius noctis, modo lōtus undīs
+(751)  Chorus: Hesperus, pulsīs iterum tenēbrīs
+(752)  Chorus: Lūcifer īdem.
+(753)  Chorus: Et tū, thyrsigerā Līber ab Indiā,
+(754)  Chorus: intōnsā juvenis perpetuum comā,
+(755)  Chorus: tigrēs pampineā cuspide territāns
+(756)  Chorus: ac mitrā cohibēns cornigerum caput,
+(757)  Chorus: nōn vincēs rigidās Hippolytī comās.
+(758)  Chorus: nē vultūs nimium suspiciās tuōs:
+(759)  Chorus: omnis per populōs fābula distulit,
+(760)  Chorus: Phaedrae quem Bromiō praetulerit soror.
+(761)  Chorus: Anceps fōrma bonum mortālibus,
+(762)  Chorus: exiguī dōnum breve temporis,
+(763)  Chorus: ut vēlōx celerī pede lāberis!
+(764)  Chorus: nōn sīc prāta novō vēre decentia
+(765)  Chorus: aestātis calidae dēspoliat vapor
+(766)  Chorus: (saevit sōlstitiō cum medius diēs
+(767)  Chorus: et noctēs brevibus praecipitant rotīs),
+(768)  Chorus: languēscunt foliō līlia pallidō
+(769)  Chorus: et grātae capitī dēficiunt rosae,
+(770)  Chorus: ut fulgor tenerīs quī radiat genīs
+(771)  Chorus: mōmentō rapitur nūllaque nōn diēs
+(772)  Chorus: fōrmōsī spolium corporis abstulit.
+(773)  Chorus: rēs est fōrma fugāx: quis sapiēns bonō
+(774)  Chorus: cōnfīdat fragilī? dum licet, ūtere.
+(775)  Chorus: tempus tē tacitum subruit, hōraque
+(776)  Chorus: semper praeteritā dēterior subit.
+(777)  Chorus: Quid dēserta petis? tūtior āviīs
+(778)  Chorus: nōn est fōrma locīs: tē nemore abditō,
+(779)  Chorus: cum Tītān medium cōnstituit diem,
+(780)  Chorus: cingent, turba licēns, Nāides improbae,
+(781)  Chorus: fōrmōsōs solitae claudere fontibus,
+(782)  Chorus: et somnīs facient īnsidiās tuīs
+(783)  Chorus: lascīvae nemorum deae
+(784)  Chorus: montivagīve Pānes.
+(785)  Chorus: Aut tē stēlliferō dēspiciēns polō
+(786)  Chorus: sīdus post veterēs Arcadas ēditum
+(787)  Chorus: currūs nōn poterit flectere candidōs.
+(788)  Chorus: ēn nūper rubuit, nūllaque lūcidīs
+(789)  Chorus: nūbēs sordidior vultibus obstitit;
+(790)  Chorus: at nōs sollicitī nūmine turbidō,
+(791)  Chorus: tractam Thessalicīs carminibus ratī,
+(792)  Chorus: tinnītūs dedimus: tū fuerās labor
+(793)  Chorus: et tū causa morae, tē dea noctium
+(794)  Chorus: dum spectat celerēs sustinuit viās.
+(795)  Chorus: Vexent hanc faciem frīgora parcius,
+(796)  Chorus: haec sōlem faciēs rārius appetat:
+(797)  Chorus: lūcēbit Pariō marmore clārius.
+(798)  Chorus: quam grāta est faciēs torva virīliter
+(799)  Chorus: et pondus veteris trīste supercilī!
+(800)  Chorus: Phoebō colla licet splendida comparēs:
+(801)  Chorus: illum caesariēs nescia colligī
+(802)  Chorus: perfundēns umerōs ōrnat et integit;
+(803)  Chorus: tē frōns hirta decet, tē brevior coma
+(804)  Chorus: nūllā lēge jacēns; tū licet asperōs
+(805)  Chorus: pugnācēsque deōs vīribus audeās
+(806)  Chorus: et vastī spatiō vincere corporis:
+(807)  Chorus: aequās Herculeōs nam juvenis torōs,
+(808)  Chorus: Mārtis belligerī pectore lātior.
+(809)  Chorus: sī dorsō libeat cornipedis vehī,
+(810)  Chorus: frēnīs Castoreā mōbilior manū
+(811)  Chorus: Spartānum poteris flectere Cyllaron.
+(812)  Chorus: Ammentum digitīs tende priōribus
+(813)  Chorus: et tōtīs jaculum dērigē vīribus:
+(814)  Chorus: tam longē, docilēs spīcula fīgere,
+(815)  Chorus: nōn mittent gracilem Crētes harundinem.
+(816)  Chorus: aut sī tēla modō spargere Parthicō
+(817)  Chorus: in caelum placeat, nūlla sine ālite
+(818)  Chorus: dēscendent, tepidō viscēre condita
+(819)  Chorus: praedam dē mediīs nūbibus afferent.
+(820)  Chorus: Rārīs fōrma virīs (saecula perspice)
+(821)  Chorus: impūnīta fuit. tē melior deus
+(822)  Chorus: tūtum praetereat fōrmaque nōbilis
+(823)  Chorus: dēfōrmis seniī mōnstret imāginem.
+(824)  Chorus: Quid sinat inausum fēminae praeceps furor?
+(825)  Chorus: nefanda juvenī crīmina īnsontī apparat.
+(826)  Chorus: ēn scelera! quaerit crīne lacerātō fidem,
+(827)  Chorus: decus omne turbat capitis, ūmectat genās:
+(828)  Chorus: īnstruitur omnī fraude fēmineā dolus.
+(829)  Chorus: Sed iste quisnam est rēgium in vultū decus
+(830)  Chorus: gerēns et altō vertice attollēns caput?
+(831)  Chorus: ut ōra juvenī paria Pitthēō gerit,
+(832)  Chorus: nī languidō pallōre candērent genae
+(833)  Chorus: stāretque rēctā squālor incultus comā!
+(834)  Chorus: ēn ipse Thēseus redditus terrīs adest.
+(835)  Theseus: Tandem profūgī noctis aeternae plagam
+(836)  Theseus: vastōque mānēs carcere umbrantem polum,
+(837)  Theseus: et vix cupītum sufferunt oculī diem.
+(838)  Theseus: jam quārta Eleusīn dōna Triptolemī secat
+(839)  Theseus: paremque totiēns lībra composuit diem,
+(840)  Theseus: ambiguus ut mē sortis ignōtae labor
+(841)  Theseus: dētinuit inter mortis et vītae mala.
+(842)  Theseus: pars ūna vītae mānsit extīnctō mihī,
+(843)  Theseus: sēnsus malōrum; fīnis Alcīdēs fuit,
+(844)  Theseus: quī cum revulsum Tartarō abstraheret canem,
+(845)  Theseus: mē quoque supernās pariter ad sēdēs tulit.
+(846)  Theseus: sed fessa virtūs rōbore antīquō caret
+(847)  Theseus: trepidantque gressūs. heu, labor quantus fuit
+(848)  Theseus: Phlegethonte ab īmō petere longinquum aethera
+(849)  Theseus: pariterque mortem fugere et Alcīdēn sequī.
+(850)  Theseus: Quis fremitus aurēs flēbilis pepulit meās?
+(851)  Theseus: exprōmat aliquis. lūctus et lacrimae et dolor,
+(852)  Theseus: in līmine ipsō maesta lāmentātiō?
+(853)  Theseus: hospitia digna prōrsus īnfernō hospite.
+(854)  Nutrix: Tenet obstinātum Phaedra cōnsilium necis
+(855)  Nutrix: flētūsque nostrōs spernit ac mortī imminet.
+(856)  Theseus: Quae causa lētī? reduce cūr moritur virō?
+(857)  Nutrix: Haec ipsa lētum causa mātūrum attulit.
+(858)  Theseus: Perplexa magnum verba nescioquid tegunt.
+(859)  Theseus: effāre apertē, quis gravet mentem dolor.
+(860)  Nutrix: Haut pandit ūllī; maesta sēcrētum occulit
+(861)  Nutrix: statuitque sēcum ferre quō moritur malum.
+(862)  Nutrix: jam perge, quaesō, perge: properātō est opus.
+(863)  Theseus: Reserāte clausōs rēgiī postēs laris.
+(864)  Theseus: Ō socia thalamī, sīcine adventum virī
+(865)  Theseus: et expetītī conjugis vultum excipis?
+(866)  Theseus: quīn ēnse viduās dexteram atque animum mihī
+(867)  Theseus: restituis et tē quidquid ē vītā fugat
+(868)  Theseus: exprōmis? Ēheu, per tuī scēptrum imperī,
+(869)  Phaedra: magnanime Thēseu, perque nātōrum indolem
+(870)  Phaedra: tuōsque reditūs perque jam cinerēs meōs,
+(871)  Phaedra: permitte mortem. Causa quae cōgit morī?
+(872)  Phaedra: Sī causa lētī dīcitur, frūctus perit.
+(873)  Theseus: Nēmō istud alius, mē quidem exceptō, audiet.
+(874)  Phaedra: Aurēs pudīca conjugis sōlās timet.
+(875)  Theseus: Effāre: fīdō pectore arcāna occulam.
+(876)  Phaedra: Alium silēre quod volēs, prīmus silē.
+(877)  Theseus: Lētī facultās nūlla continget tibī.
+(878)  Phaedra: Morī volentī dēesse mors numquam potest.
+(879)  Theseus: Quod sit luendum morte dēlictum indicā.
+(880)  Phaedra: Quod vīvo. Lacrimae nōnne tē nostrae movent?
+(881)  Phaedra: Mors optima est perīre lacrimandum suīs.
+(882)  Theseus: Silēre pergit. verbere ac vinclīs anus
+(883)  Theseus: altrīxque prōdet quidquid haec fārī abnuit.
+(884)  Theseus: Vincīte ferrō. verberum vīs extrahat
+(885)  Theseus: sēcrēta mentis. Ipsa jam fābor, manē.
+(886)  Theseus: Quidnam ōra maesta āvertis et lacrimās genīs
+(887)  Theseus: subitō coortās veste praetentā optegis?
+(888)  Phaedra: Tē tē, creātor caelitum, testem invocō,
+(889)  Phaedra: et tē, coruscum lūcis aetheriae jubar,
+(890)  Phaedra: ex cujus ortū nostra dēpendet domus:
+(891)  Phaedra: temptāta precibus restitī; ferrō ac minīs
+(892)  Phaedra: nōn cessit animus: vim tamen corpus tulit.
+(893)  Phaedra: lābem hanc pudōris ēluet noster cruor.
+(894)  Theseus: Quis, ēde, nostrī decoris ēversor fuit?
+(895)  Phaedra: Quem rēre minimē. Quis sit audīre expetō.
+(896)  Phaedra: Hic dīcet ēnsis, quem tumultū territus
+(897)  Phaedra: līquit stuprātor cīvium accursum timēns.
+(898)  Theseus: Quod facinus, heu mē, cerno? quod mōnstrum intuor?
+(899)  Theseus: rēgāle patriīs asperum signīs ebur
+(900)  Theseus: capulō refulget, gentis Actaeae decus.
+(901)  Theseus: sed ipse quōnam ēvāsit? Hī trepidum fugā
+(902)  Phaedra: vīdēre famulī concitum celerī pede.
+(903)  Theseus: Prō sāncta Pietās, prō gubernātor polī
+(904)  Theseus: et quī secundum flūctibus rēgnum movēs,
+(905)  Theseus: unde ista vēnit generis infandī luēs?
+(906)  Theseus: hunc Grāia tellūs aluit an Taurus Scythēs
+(907)  Theseus: Colchusque Phāsis? redit ad auctōrēs genus
+(908)  Theseus: stirpemque prīmam dēgener sanguis refert.
+(909)  Theseus: est prōrsus iste gentis armiferae furor,
+(910)  Theseus: ōdisse Veneris foedera et castum diū
+(911)  Theseus: vulgāre populīs corpus. ō taetrum genus
+(912)  Theseus: nūllāque victum lēge meliōris solī!
+(913)  Theseus: ferae quoque ipsae Veneris ēvītant nefās,
+(914)  Theseus: generisque lēgēs īnscius servat pudor.
+(915)  Theseus: Ubi vultus ille et ficta majestās virī
+(916)  Theseus: atque habitus horrēns, prīsca et antīqua appetēns,
+(917)  Theseus: mōrumque senium trīste et affectūs gravēs?
+(918)  Theseus: ō vīta fallāx, abditōs sēnsūs geris
+(919)  Theseus: animīsque pulcram turpibus faciem induis:
+(920)  Theseus: pudor impudentem cēlat, audācem quiēs,
+(921)  Theseus: pietās nefandum; vēra fallācēs probant
+(922)  Theseus: simulantque mollēs dūra. silvārum incola
+(923)  Theseus: ille efferātus castus intāctus rudis,
+(924)  Theseus: mihi tē reservās? ā meō prīmum torō
+(925)  Theseus: et scelere tantō placuit ōrdīrī virum?
+(926)  Theseus: jam jam supernō nūminī grātēs agō,
+(927)  Theseus: quod icta nostrā cecidit Antiopē manū,
+(928)  Theseus: quod nōn ad antra Stygia dēscendēns tibī
+(929)  Theseus: mātrem relīquī. Profugus ignōtās procul
+(930)  Theseus: percurre gentēs: tē licet terra ultimō
+(931)  Theseus: summōta mundō dirimat Ōceanī plagīs
+(932)  Theseus: orbemque nostrīs pedibus obversum colās,
+(933)  Theseus: licet in recessū penitus extrēmō abditus
+(934)  Theseus: horrifera celsī rēgna trānsierīs polī
+(935)  Theseus: hiemēsque suprā positus et cānās nivēs
+(936)  Theseus: gelidī frementēs līquerīs Boreae minās
+(937)  Theseus: post tē furentēs, sceleribus poenās dabis.
+(938)  Theseus: profugum per omnīs pertināx latebrās premam:
+(939)  Theseus: longinqua clausa abstrūsa dīversa invia
+(940)  Theseus: ēmētiēmur, nūllus obstābit locus:
+(941)  Theseus: scīs unde redeam. tēla quō mittī haud queunt,
+(942)  Theseus: hūc vōta mittam: genitor aequoreus dedit
+(943)  Theseus: ut vōta prōnō terna concipiam deō,
+(944)  Theseus: et invocātā mūnus hoc sānxit Styge.
+(945)  Theseus: Ēn perage dōnum trīste, rēgnātor fretī!
+(946)  Theseus: nōn cernat ultrā lūcidum Hippolytus diem
+(947)  Theseus: adeatque mānēs juvenis īrātōs patrī.
+(948)  Theseus: fer abōminandam nunc opem gnātō, parēns:
+(949)  Theseus: numquam suprēmum nūminis mūnus tuī
+(950)  Theseus: cōnsūmerēmus, magna nī premerent mala;
+(951)  Theseus: inter profunda Tartara et Dītem horridum
+(952)  Theseus: et imminentēs rēgis īnfernī minās,
+(953)  Theseus: vōtō pepercī: redde nunc pactam fidem.
+(954)  Theseus: genitor, morāris? cūr adhūc undae silent?
+(955)  Theseus: nunc ātra ventīs nūbila impellentibus
+(956)  Theseus: subtexe noctem, sīdera et caelum ēripe,
+(957)  Theseus: effunde pontum, vulgus aequoreum ciē
+(958)  Theseus: flūctūsque ab ipsō tumidus Ōceanō vocā.
+(959)  Chorus: Ō magna parēns, Nātūra, deum
+(960)  Chorus: tūque igniferī rēctor Olympī,
+(961)  Chorus: quī sparsa citō sīdera mundō
+(962)  Chorus: cursūsque vagōs rapis astrōrum
+(963)  Chorus: celerīque polōs cardine versās,
+(964)  Chorus: cūr tanta tibī cūra perennēs
+(965)  Chorus: agitāre vicēs aetheris altī,
+(966)  Chorus: ut nunc cānae frīgora brūmae
+(967)  Chorus: nūdent silvās,
+(968)  Chorus: nunc arbustīs redeant umbrae,
+(969)  Chorus: nunc aestīvī colla leōnis
+(970)  Chorus: Cererem magnō fervōre coquant
+(971)  Chorus: vīrēsque suās temperet annus?
+(972)  Chorus: sed cūr īdem quī tanta regis,
+(973)  Chorus: sub quō vastī pondera mundī
+(974)  Chorus: lībrāta suōs dūcunt orbēs,
+(975)  Chorus: hominum nimium sēcūrus abes,
+(976)  Chorus: nōn sollicitus prōdesse bonīs,
+(977)  Chorus: nocuisse malīs?
+(978)  Chorus: Rēs hūmānās ōrdine nūllō
+(979)  Chorus: Fortūna regit sparsitque manū
+(980)  Chorus: mūnera caecā pejōra fovēns:
+(981)  Chorus: vincit sānctōs dīra libīdō,
+(982)  Chorus: fraus sublīmī rēgnat in aulā;
+(983)  Chorus: trādere turpī fascēs populus
+(984)  Chorus: gaudet, eōsdem colit atque ōdit.
+(985)  Chorus: trīstis virtūs perversa tulit
+(986)  Chorus: praemia rēctī:
+(987)  Chorus: castōs sequitur mala paupertās
+(988)  Chorus: vitiōque potēns rēgnat adulter;
+(989)  Chorus: ō vāne pudor falsumque decus!
+(990)  Chorus: Sed quid citātō nūntius portat gradū
+(990)  Chorus: rigatque maestīs lūgubrem vultum genīs?
+(991)  Nuntius: Ō sors acerba et dūra, famulātus gravis,
+(992)  Nuntius: cūr mē ad nefandī nūntium cāsūs vocās?
+(993)  Theseus: Nē metue clādīs fortiter fārī asperās:
+(994)  Theseus: nōn imparātum pectus aerumnīs gerō.
+(995)  Nuntius: Vōcem dolōrī lingua lūctificam negat.
+(996)  Theseus: Prōloquere, quae sors aggravet quassam domum.
+(997)  Nuntius: Hippolytus, heu mē, flēbilī lētō occubat.
+(998)  Theseus: Gnātum parēns obīsse jam prīdem sciō:
+(999)  Theseus: nunc raptor obiit. mortis effāre ōrdinem.
+(1000)  Nuntius: Ut profugus urbem līquit īnfēstō gradū
+(1001)  Nuntius: celerem citātīs passibus cursum explicāns,
+(1002)  Nuntius: celsō sonipedēs ōcius subigit jugō
+(1003)  Nuntius: et ōra frēnīs domita substrictīs ligat.
+(1004)  Nuntius: tum multa sēcum effātus et patrium solum
+(1005)  Nuntius: abōminātus saepe genitōrem ciet
+(1006)  Nuntius: ācerque habēnīs lōra permissīs quatit:
+(1007)  Nuntius: cum subitō vastum tonuit ex altō mare
+(1008)  Nuntius: crēvitque in astra. nūllus īnspīrat salō
+(1009)  Nuntius: ventus, quiētī nūlla pars caelī strepit
+(1010)  Nuntius: placidumque pelagus propria tempestās agit.
+(1011)  Nuntius: nōn tantus Auster Sicula disturbat freta
+(1012)  Nuntius: nec tam furēns Īonius exsurgit sinus
+(1013)  Nuntius: rēgnante Cōrō, saxa cum flūctū tremunt
+(1014)  Nuntius: et cāna summum spūma Leucātēn ferit.
+(1015)  Nuntius: cōnsurgit ingēns pontus in vastum aggerem,
+(1016)  Nuntius: [tumidumque mōnstrō pelagus in terrās ruit]
+(1017)  Nuntius: nec ista ratibus tanta cōnstruitur luēs:
+(1018)  Nuntius: terrīs minātur; flūctus haud cursū levī
+(1019)  Nuntius: prōvolvitur; nescioquid onerātō sinū
+(1020)  Nuntius: gravis unda portat. quae novum tellūs caput
+(1021)  Nuntius: ostendet astrīs? cyclas exoritur nova?
+(1022)  Nuntius: latuēre rūpēs nūmine Epidaurī deī
+(1023)  Nuntius: et scelere petrae nōbilēs Scīrōnidēs
+(1024)  Nuntius: et quae duōbus terra comprimitur fretīs.
+(1025)  Nuntius: Haec dum stupentēs quaerimus, tōtum ēn mare
+(1026)  Nuntius: immūgit, omnēs undique scopulī adstrepunt;
+(1027)  Nuntius: summum cacūmen rōrat expulsō sale,
+(1028)  Nuntius: spūmat vomitque vicibus alternīs aquās
+(1029)  Nuntius: quālis per alta vehitur Ōceanī freta
+(1030)  Nuntius: flūctum refundēns ōre phȳsētēr capāx.
+(1031)  Nuntius: inhorruit concussus undārum globus
+(1032)  Nuntius: solvitque sēsē et lītorī invēxit malum
+(1033)  Nuntius: majus timōre, pontus in terrās ruit
+(1034)  Nuntius: suumque mōnstrum sequitur: ōs quassat tremor.
+(1035)  Nuntius: Quis habitus ille corporis vastī fuit!
+(1036)  Nuntius: caerulea taurus colla sublīmi¯s gerēns
+(1037)  Nuntius: ērēxit altam fronte viridantī jubam;
+(1038)  Nuntius: stant hispidae aurēs, orbibus varius color,
+(1039)  Nuntius: et quem ferī dominātor habuisset gregis
+(1040)  Nuntius: et quem sub undīs nātus: hinc flammam vomunt
+(1041)  Nuntius: oculī, hinc relūcent caerulā īnsignēs notā;
+(1042)  Nuntius: opīma cervīx arduōs tollit torōs
+(1043)  Nuntius: nārēsque hiulcīs haustibus patulae fremunt;
+(1044)  Nuntius: muscō tenācī pectus ac palear viret,
+(1045)  Nuntius: longum rubentī spargitur fūcō latus;
+(1046)  Nuntius: tum pōne tergus ultima in mōnstrum coit
+(1047)  Nuntius: faciēs et ingēns bēlua immēnsam trahit
+(1048)  Nuntius: squāmōsa partem. tālis extrēmō marī
+(1049)  Nuntius: pistrix citātās sorbet aut frangit ratēs.
+(1050)  Nuntius: Tremuēre terrae, fūgit attonitum pecus
+(1051)  Nuntius: passim per agrōs, nec suōs pāstor sequī
+(1052)  Nuntius: meminit juvencōs; omnis ē saltū fera
+(1053)  Nuntius: diffūgit, omnis frīgidō exsanguis metū
+(1054)  Nuntius: vēnātor horret. sōlus immūnis metū
+(1055)  Nuntius: Hippolytus artīs continet frēnīs equōs
+(1056)  Nuntius: pavidōsque nōtae vōcis hortātū ciet.
+(1057)  Nuntius: Est alta ad Argos collibus ruptīs via,
+(1058)  Nuntius: vīcīna tangēns spatia suppositī maris;
+(1059)  Nuntius: hīc sē illa mōlēs acuit atque īrās parat.
+(1060)  Nuntius: ut cēpit animōs sēque praetemptāns satis
+(1061)  Nuntius: prōlūsit īrae, praepetī cursū ēvolat,
+(1062)  Nuntius: summam citātō vix gradū tangēns humum,
+(1063)  Nuntius: et torva currūs ante trepidantīs stetit.
+(1064)  Nuntius: contrā ferōcī gnātus īnsurgēns mināx
+(1065)  Nuntius: vultū nec ōra mūtat et magnum intonat:
+(1066)  Nuntius: 'haud frangit animum vānus hic terror meum:
+(1067)  Nuntius: nam mihi paternus vincere est taurōs labor.'
+(1068)  Nuntius: Inobsequentēs prōtinus frēnīs equī
+(1069)  Nuntius: rapuēre cursum jamque dēerrantēs viā,
+(1070)  Nuntius: quācumque rabidōs pavidus ēvēxit furor,
+(1071)  Nuntius: hāc īre pergunt sēque per scopulōs agunt.
+(1072)  Nuntius: at ille, quālis turbidō rēctor marī
+(1073)  Nuntius: ratem retentat, nē det oblīquum latus,
+(1074)  Nuntius: et arte flūctum fallit, haud aliter citōs
+(1075)  Nuntius: currūs gubernat: ōra nunc pressīs trahit
+(1076)  Nuntius: cōnstricta frēnīs, terga nunc tortō frequēns
+(1077)  Nuntius: verbere coercet. sequitur adsiduus comes,
+(1078)  Nuntius: nunc aequa carpēns spatia, nunc contrā obvius
+(1079)  Nuntius: oberrat, omnī parte terrōrem movēns.
+(1080)  Nuntius: nōn licuit ultrā fugere: nam tōtō obvius
+(1081)  Nuntius: incurrit ōre corniger pontī horridus.
+(1082)  Nuntius: tum vēro pavidā sonipedēs mente excitī
+(1083)  Nuntius: imperia solvunt sēque luctantur jugō
+(1084)  Nuntius: ēripere rēctīque in pedēs jactant onus.
+(1085)  Nuntius: Praeceps in ōra fūsus implicuit cadēns
+(1086)  Nuntius: laqueō tenācī corpus et quantō magis
+(1087)  Nuntius: pugnat, sequācēs hōc magis nōdōs ligat.
+(1088)  Nuntius: sēnsēre pecudēs facinus; et currū levī,
+(1089)  Nuntius: dominante nūllō, quā timor jussit ruunt.
+(1090)  Nuntius: tālis per aurās nōn suum agnōscēns onus
+(1091)  Nuntius: Sōlīque falsō crēditum indignāns diem
+(1092)  Nuntius: Phaethonta currus dēvium excussit polō.
+(1093)  Nuntius: Lātē cruentat arva et inlīsum caput
+(1094)  Nuntius: scopulīs resultat; auferunt dūmī comās,
+(1095)  Nuntius: et ōra dūrus pulchra populātur lapis
+(1096)  Nuntius: peritque multō vulnere īnfēlīx decor.
+(1097)  Nuntius: moribunda celerēs membra pervolvunt rotae;
+(1098)  Nuntius: tandemque raptum truncus ambustā sude
+(1099)  Nuntius: medium per inguen stīpite ingestō tenet;
+(1100)  Nuntius: [paulumque dominō currus affīxō stetit]
+(1101)  Nuntius: haesēre bijugēs vulnere; et pariter moram
+(1102)  Nuntius: dominumque rumpunt. inde sēmianimem secant
+(1103)  Nuntius: virgulta, acūtīs asperī vēprēs rubīs
+(1104)  Nuntius: omnisque ruscus corporis partem tulit.
+(1105)  Nuntius: Errant per agrōs fūnebris famulī manus,
+(1106)  Nuntius: per illa quā distractus Hippolytus loca
+(1107)  Nuntius: longum cruentā trāmitem signat notā,
+(1108)  Nuntius: maestaeque dominī membra vestīgant canēs.
+(1109)  Nuntius: necdum dolentum sēdulus potuit labor
+(1110)  Nuntius: explēre corpus: hocine est fōrmae decus?
+(1111)  Nuntius: quī modo paternī clārus imperiī comes
+(1112)  Nuntius: et certus hērēs sīderum fulsit modo,
+(1113)  Nuntius: passim ad suprēmōs ille colligitur rogōs
+(1114)  Nuntius: et fūnerī cōnfertur. Ō nimium potēns
+(1115)  Theseus: quantō parentēs sanguinis vinclō tenēs
+(1116)  Theseus: nātūra! quam tē colimus invītī quoque!
+(1117)  Theseus: occidere voluī noxium, āmissum fleō.
+(1118)  Nuntius: Haud flēre honestē quisque quod voluit potest.
+(1119)  Theseus: Equidem malōrum maximum hunc cumulum reor,
+(1120)  Theseus: sī abōminanda cāsus optanda efficit.
+(1121)  Nuntius: Et sī odia servās, cūr madent flētū genae?
+(1122)  Theseus: Quod interēmī, nōn quod āmīsī, fleō.
+(1123)  Chorus: Quantī cāsūs, heu, magna rotant!
+(1124)  Chorus: minor in parvīs Fortūna furit
+(1125)  Chorus: leviusque ferit leviōra deus;
+(1126)  Chorus: servat placidōs obscūra quiēs
+(1127)  Chorus: praebetque senēs casa sēcūrōs.
+(1128)  Chorus: Admōta aetheriīs culmina sēdibus
+(1129)  Chorus: Eurōs excipiunt, excipiunt Notōs,
+(1130)  Chorus: īnsānī Boreae minās
+(1131)  Chorus: imbriferumque Cōrum.
+(1132)  Chorus: Rārōs patitur fulminis ictūs
+(1133)  Chorus: ūmida vallis:
+(1134)  Chorus: tremuit tēlō Jovis altisonī
+(1135)  Chorus: Caucasus ingēns Phrygiumque nemus
+(1136)  Chorus: mātris Cybelēs: metuēns caelō
+(1137)  Chorus: Juppiter altō vīcīna petit;
+(1138)  Chorus: nōn capit umquam magnōs mōtūs
+(1139)  Chorus: humilis tēctī plēbēja domus.
+(1140)  Chorus: circā rēgna tonat
+(1141)  Chorus: Volat ambiguīs mōbilis ālīs
+(1142)  Chorus: hōra, nec ūllī praestat vēlōx
+(1143)  Chorus: Fortūna fidem:
+(1144)  Chorus: hic quī clārī sīdera mundī
+(1145)  Chorus: nitidumque diem morte relictā
+(1146)  Chorus: lūget maestōs trīstis reditūs
+(1147)  Chorus: ipsōque magis flēbile Avernō
+(1148)  Chorus: sēdis patriae videt hospitium.
+(1149)  Chorus: Pallas Actaeae veneranda gentī,
+(1150)  Chorus: quod tuus caelum superōsque Thēseus
+(1151)  Chorus: spectat et fūgit Stygiās palūdēs,
+(1152)  Chorus: casta nīl dēbēs patruō rapācī:
+(1153)  Chorus: cōnstat īnfernō numerus tyrannō.
+(1154)  Chorus: Quae vōx ab altīs flēbilis tēctīs sonat
+(1155)  Chorus: strictōque vēcors Phaedra quid ferrō parat?
+(1156)  Theseus: Quis tē dolōre percitam īnstīgat furor?
+(1157)  Theseus: quid ēnsis iste quidve vōciferātiō
+(1158)  Theseus: plānctūsque suprā corpus invīsum volunt?
+(1159)  Phaedra: Mē mē, profundī saeve dominātor fretī,
+(1160)  Phaedra: invāde et in mē mōnstra caeruleī maris
+(1161)  Phaedra: ēmitte, quidquid intimō Tēthȳs sinū
+(1162)  Phaedra: extrēma gestat, quidquid Ōceanus vagīs
+(1163)  Phaedra: complexus undīs ultimō flūctū tegit.
+(1164)  Phaedra: Ō dūre Thēseū semper, ō numquam tuīs
+(1165)  Phaedra: tūtō reverse: gnātus et genitor nece
+(1166)  Phaedra: reditūs tuōs luēre; pervertis domum
+(1167)  Phaedra: amōre semper conjugum aut odiō nocēns.
+(1168)  Phaedra: Hippolyte, tālēs intuor vultūs tuōs
+(1169)  Phaedra: tālēsque fēcī? membra quis saevus Sinis
+(1170)  Phaedra: aut quis Procrūstēs sparsit aut quis Crēsius,
+(1171)  Phaedra: Daedalea vastō claustra mūgītū replēns,
+(1172)  Phaedra: taurus bifōrmis ōre cornigerō ferōx
+(1173)  Phaedra: divulsit? heu mē, quō tuus fūgit decor
+(1174)  Phaedra: oculīque nostrum sīdus? exanimis jacēs?
+(1175)  Phaedra: ades parumper verbaque exaudī mea.
+(1176)  Phaedra: nīl turpe loquimur: hāc manū poenās tibī
+(1177)  Phaedra: solvam et nefandō pectorī ferrum īnseram,
+(1178)  Phaedra: animāque mēmet pariter ac scelere exuam.
+(1179)  Phaedra: [et tē per undās perque Tartareōs lacūs,
+(1180)  Phaedra: per Styga, per amnēs igneōs āmēns sequar]
+(1181)  Phaedra: plācēmus umbrās: capitis exuviās cape
+(1182)  Phaedra: laceraeque frontis accipe abscīsam comam.
+(1183)  Phaedra: nōn licuit animōs jungere, at certē licet
+(1184)  Phaedra: jūnxisse fāta. morere, sī casta es, virō;
+(1185)  Phaedra: sī incesta, amōrī. conjugis thalamōs petam
+(1186)  Phaedra: tantō impiātōs facinore? hoc dēerat nefās,
+(1187)  Phaedra: ut vindicātō sāncta fruerēris torō.
+(1188)  Phaedra: ō mors amōris ūna sēdāmen malī,
+(1189)  Phaedra: ō mors pudōris maximum laesī decus,
+(1190)  Phaedra: cōnfugimus ad tē: pande plācātōs sinūs.
+(1191)  Phaedra: Audīte, Athēnae, tūque, fūnestā pater
+(1192)  Phaedra: pejor novercā: falsa memorāvī et nefās,
+(1193)  Phaedra: quod ipsa dēmēns pectore īnsānō hauseram,
+(1194)  Phaedra: mentīta fīnxī. vāna pūnīstī pater,
+(1195)  Phaedra: juvenisque castus crīmine incestō jacet,
+(1196)  Phaedra: pudīcus, īnsōns: recipe jam mōrēs tuōs.
+(1197)  Phaedra: mucrōne pectus impium jūstō patet
+(1198)  Phaedra: cruorque sānctō solvit īnferiās virō.
+(1199)  Theseus: Quid facere raptō dēbeās gnātō parēns,
+(1200)  Theseus: disce ā novercā: condere Acherontis plagīs.
+(1201)  Theseus: Pallidī faucēs Avernī vōsque, Taenariī specūs,
+(1202)  Theseus: unda miserīs grāta Lēthēs vōsque, torpentēs lacūs,
+(1203)  Theseus: impium rapite atque mersum premite perpetuīs malīs.
+(1204)  Theseus: nunc adeste, saeva pontī mōnstra, nunc vastum mare,
+(1205)  Theseus: ultimō quodcumque Prōteus aequōrum abscondit sinū,
+(1206)  Theseus: mēque ovantem scelere tantō rapite in altōs gurgitēs.
+(1207)  Theseus: Tūque semper, genitor, īrae facilis assēnsor meae:
+(1208)  Theseus: morte facilī dignus haud sum quī novā nātum nece
+(1209)  Theseus: sēgregem sparsī per agrōs quīque, dum falsum nefās
+(1210)  Theseus: exsequor vindex sevērus, incidī in vērum scelus.
+(1211)  Theseus: sīdera et mānēs et undās scelere complēvī meō:
+(1212)  Theseus: amplius sors nūlla restat; rēgna mē nōrunt tria.
+(1213)  Theseus: In hoc redīmus? patuit ad caelum via,
+(1214)  Theseus: bīna ut vidērem fūnera et geminam necem,
+(1215)  Theseus: caelebs et orbus fūnebrēs ūnā face
+(1216)  Theseus: ut concremārem prōlis ac thalamī rogōs?
+(1217)  Theseus: dōnātor ātrae lūcis, Alcīdē, tuum
+(1218)  Theseus: Dītī remitte mūnus; ēreptōs mihī
+(1219)  Theseus: restitue mānēs. impius frūstrā invocō
+(1220)  Theseus: mortem relictam: crūdus et lētī artifex,
+(1221)  Theseus: exitia māchinātus īnsolita effera,
+(1222)  Theseus: nunc tibimet ipse jūsta supplicia irrogā.
+(1223)  Theseus: pīnus coāctō vertice attingēns humum
+(1224)  Theseus: caelō remissum findat in geminās trabēs,
+(1225)  Theseus: mittarve praeceps saxa per Scīrōnia?
+(1226)  Theseus: graviōra vīdī, quae patī clausōs jubet
+(1227)  Theseus: Phlegethōn nocentēs igneō cingēns vadō.
+(1228)  Theseus: quae poena mēmet maneat et sēdēs, sciō:
+(1229)  Theseus: umbrae nocentēs, cēdite et cervīcibus
+(1230)  Theseus: hīs, hīs repositum dēgravet fessās manūs
+(1231)  Theseus: saxum, senī perennis Aeoliō labor;
+(1232)  Theseus: mē lūdat amnis ōra vīcīna alluēns;
+(1233)  Theseus: vultur relictō trānsvolet Tityō ferus
+(1234)  Theseus: meumque poenae semper accrēscat jecur;
+(1235)  Theseus: et tū meī requiēsce Pīrithoī pater:
+(1236)  Theseus: haec incitātīs membra turbinibus ferat
+(1237)  Theseus: nusquam resistēns orbe revolūtō rota.
+(1238)  Theseus: Dēhīsce tellūs, recipe mē dīrum chaos,
+(1239)  Theseus: recipe, haec ad umbrās jūstior nōbīs via est:
+(1240)  Theseus: gnātum sequor; nē metue quī mānēs regis:
+(1241)  Theseus: castī venīmus; recipe mē aeternā domō
+(1242)  Theseus: nōn exitūrum. nōn movent dīvōs precēs;
+(1243)  Theseus: at, sī rogārem scelera, quam prōnī forent!
+(1244)  Chorus: Thēseu, querēlīs tempus aeternum manet:
+(1245)  Chorus: nunc jūsta nātō solve et absconde ōcius
+(1246)  Chorus: dispersa foedē membra laniātū efferō.
+(1247)  Theseus: Hūc, hūc, reliquiās vehite cārī corporis
+(1248)  Theseus: pondusque et artūs temere congestōs date.
+(1249)  Theseus: Hippolytus hic est? crīmen agnōscō meum:
+(1250)  Theseus: ego tē perēmī; neu nocēns tantum semel
+(1251)  Theseus: sōlusve fierem, facinus ausūrus parēns
+(1252)  Theseus: patrem advocāvī. mūnere ēn patriō fruor.
+(1253)  Theseus: ō trīste frāctīs orbitās annīs malum!
+(1254)  Theseus: complectere artūs, quodque dē nātō est super,
+(1255)  Theseus: miserande, maestō pectore incumbēns, fovē.
+(1256)  Theseus: Disjecta, genitor, membra lacerī corporis
+(1257)  Theseus: in ōrdinem dispōne et errantēs locō
+(1258)  Theseus: restitue partēs: fortis hic dextrae locus,
+(1259)  Theseus: hīc laeva frēnīs docta moderandīs manus
+(1260)  Theseus: pōnenda: laevī lateris agnōscō notās.
+(1261)  Theseus: quam magna lacrimīs pars adhūc nostrīs abest!
+(1262)  Theseus: dūrāte trepidae lūgubrī officiō manūs,
+(1263)  Theseus: flētūsque largōs sistite, ārentēs genae,
+(1264)  Theseus: dum membra nātō genitor adnumerat suō
+(1265)  Theseus: corpusque fingit. hoc quid est fōrmā carēns
+(1266)  Theseus: et turpe, multō vulnere abruptum undique?
+(1267)  Theseus: quae pars tuī sit dubito; sed pars est tuī:
+(1268)  Theseus: hīc, hīc repōne, nōn suō, at vacuō locō.
+(1269)  Theseus: haecne illa faciēs igne sīdereō nitēns,
+(1270)  Theseus: inimīca flectēns pectora? hūc cecidit decor?
+(1271)  Theseus: ō dīra fāta, nūminum ō saevus favor!
+(1272)  Theseus: sīc ad parentem nātus ex vōtō redit?
+(1273)  Theseus: ēn haec suprēma dōna genitōris cape,
+(1274)  Theseus: saepe efferendus; interim haec ignēs ferant.
+(1275)  Theseus: Patefacite acerbam caede fūnestā domum;
+(1276)  Theseus: Mopsopia clārīs tōta lāmentīs sonet.
+(1277)  Theseus: vōs apparāte rēgiī flammam rogī;
+(1278)  Theseus: at vōs per agrōs corporis partēs vagās
+(1279)  Theseus: inquīrite. istam terra dēfossam premat,
+(1280)  Theseus: gravisque tellūs impiō capitī incubet.

@@ -1,0 +1,2143 @@
+==== Sieben gegen Theben ====
+=== Prologos ===
+(1) [Ἐτεοκλής:] Κάδμου(G) πολῖται(V), χρὴ(Prä)(Akt) λέγειν(Prä)(Inf)(Akt) τὰ(Art)(A) καίρια(Adj)(A)
+(1) [Ἐτεοκλής:] des|Kadmos Bürger, ist|nötig zu|sagen die treffenden
+(2) [Ἐτεοκλής:] ὅστις(Pr)(N) φυλάσσει(Prä)(Akt) πρᾶγος(A) ἐν(Prp) πρύμνῃ(D) πόλεως(G)
+(2) [Ἐτεοκλής:] wer bewacht Sache in dem|Heck der|Stadt
+(3) [Ἐτεοκλής:] οἴακα(A) νωμῶν(Prä)(Akt)(N), βλέφαρα(A) μὴ(Pt) κοιμῶν(Prä)(Akt)(N) ὕπνῳ(D).
+(3) [Ἐτεοκλής:] Steuerpinnen lenkend, Augenlider nicht einschläfernd mit|Schlaf.
+(4) [Ἐτεοκλής:] εἰ(Kon) μὲν(Pt) γὰρ(Pt) εὖ(Adv) πράξαιμεν(Aor)(Akt)(Op), αἰτία(N) θεοῦ(G)·
+(4) [Ἐτεοκλής:] wenn zwar denn gut handeln|würden, Ursache des|Gottes·
+(5) [Ἐτεοκλής:] εἰ(Kon) δʼ(Pt) αὖθʼ(Adv), ὃ(Pr)(N) μὴ(Pt) γένοιτο(Aor)(Med)(Op), συμφορὰ(N) τύχοι(Aor)(Akt)(Op),
+(5) [Ἐτεοκλής:] wenn aber wiederum, was nicht würde|geschehen, Unglück träfe,
+(6) [Ἐτεοκλής:] Ἐτεοκλέης(N) ἂν(Pt) εἷς(Adj)(N) πολὺς(Adj)(N) κατὰ(Prp) πτόλιν(A)
+(6) [Ἐτεοκλής:] Eteokles wohl einer viel durch die|Stadt
+(7) [Ἐτεοκλής:] ὑμνοῖθʼ(Prä)(M/P)(Op) ὑπʼ(Prp) ἀστῶν(G) φροιμίοις(D) πολυρρόθοις(Adj)(D)
+(7) [Ἐτεοκλής:] würde|besungen von Bürgern Vorspielen brausenden
+(8) [Ἐτεοκλής:] οἰμώγμασίν(D) θʼ(Pt), ὧν(Pr)(G) Ζεὺς(N) ἀλεξητήριος(Adj)(N)
+(8) [Ἐτεοκλής:] mit|Klagerufen und, deren Zeus Abwehrer
+(9) [Ἐτεοκλής:] ἐπώνυμος(Adj)(N) γένοιτο(Aor)(Med)(Op) Καδμείων(G) πόλει(D).
+(9) [Ἐτεοκλής:] beinahmt würde|werden der|Kadmäer Stadt.
+(10) [Ἐτεοκλής:] ὑμᾶς(Pr)(A) δὲ(Pt) χρὴ(Prä)(Akt) νῦν(Adv), καὶ(Kon) τὸν(Art)(A) ἐλλείποντʼ(Prä)(Akt)(A) ἔτι(Adv)
+(10) [Ἐτεοκλής:] euch aber ist|nötig nun, auch den fehlenden noch
+(11) [Ἐτεοκλής:] ἥβης(G) ἀκμαίας(Adj)(G) καὶ(Kon) τὸν(Art)(A) ἔξηβον(Adj)(A) χρόνῳ(D),
+(11) [Ἐτεοκλής:] der|Jugend blühenden und den ausgereiften durch|Zeit,
+(12) [Ἐτεοκλής:] βλαστημὸν(A) ἀλδαίνοντα(Prä)(Akt)(A) σώματος(G) πολύν(Adj)(A),
+(12) [Ἐτεοκλής:] Wuchs nährend des|Leibes großen,
+(13) [Ἐτεοκλής:] ὥραν(A) τʼ(Pt) ἔχονθʼ(Prä)(Akt)(A) ἕκαστον(Pr)(A) ὥστε(Kon) συμπρεπές(Adj)(A),
+(13) [Ἐτεοκλής:] Blütezeit und habend jeder so|dass Passendes,
+(14) [Ἐτεοκλής:] πόλει(D) τʼ(Pt) ἀρήγειν(Prä)(Inf)(Akt) καὶ(Kon) θεῶν(G) ἐγχωρίων(Adj)(G)
+(14) [Ἐτεοκλής:] der|Stadt und zu|helfen und der|Götter einheimischen
+(15) [Ἐτεοκλής:] βωμοῖσι(D), τιμὰς(A) μὴ(Pt) ʼξαλειφθῆναί(Aor)(Pas)(Inf) ποτε(Adv)·
+(15) [Ἐτεοκλής:] an|Altären, Ehrungen nicht aus|gelöscht|zu|werden jemals·
+(16) [Ἐτεοκλής:] τέκνοις(D) τε(Pt), Γῇ(D) τε(Pt) μητρί(D), φιλτάτῃ(Adj)(D)(Sup) τροφῷ(D)·
+(16) [Ἐτεοκλής:] den|Kindern auch, der|Erde auch Mutter, liebsten Nährerin·
+(17) [Ἐτεοκλής:] ἡ(Pr)(N) γὰρ(Pt) νέους(A) ἕρποντας(Prä)(Akt)(A) εὐμενεῖ(Adj)(D) πέδῳ(D),
+(17) [Ἐτεοκλής:] die denn Jungen kriechende freundlichem Boden,
+(18) [Ἐτεοκλής:] ἅπαντα(A) πανδοκοῦσα(Prä)(Akt)(N) παιδείας(G) ὄτλον(A),
+(18) [Ἐτεοκλής:] alles allaufnehmend der|Erziehung Mühe,
+(19) [Ἐτεοκλής:] ἐθρέψατʼ(Aor)(Akt) οἰκητῆρας(A) ἀσπιδηφόρους(Adj)(A)
+(19) [Ἐτεοκλής:] nährte Bewohner schildtragende
+(20) [Ἐτεοκλής:] πιστοὺς(Adj)(A) ὅπως(Kon) γένοισθε(Aor)(Med)(Op) πρὸς(Prp) χρέος(A) τόδε(Pr)(A).
+(20) [Ἐτεοκλής:] treue damit werden|möget zu Pflicht dieser.
+(21) [Ἐτεοκλής:] καὶ(Kon) νῦν(Adv) μὲν(Pt) ἐς(Prp) τόδʼ(Pr)(A) ἦμαρ(A) εὖ(Adv) ῥέπει(Prä)(Akt) θεός(N)·
+(21) [Ἐτεοκλής:] und nun zwar in dieses Tag gut neigt|sich Gott·
+(22) [Ἐτεοκλής:] χρόνον(A) γὰρ(Pt) ἤδη(Adv) τόνδε(Pr)(A) πυργηρουμένοις(Prä)(M/P)(D)
+(22) [Ἐτεοκλής:] Zeit denn schon diesen Befestigenden
+(23) [Ἐτεοκλής:] καλῶς(Adv) τὰ(Art)(A) πλείω(Adj)(A)(Kmp) πόλεμος(N) ἐκ(Prp) θεῶν(G) κυρεῖ(Prä)(Akt).
+(23) [Ἐτεοκλής:] gut die mehreren Krieg aus Göttern trifft|zu.
+(24) [Ἐτεοκλής:] νῦν(Adv) δʼ(Pt) ὡς(Kon) ὁ(Art)(N) μάντις(N) φησίν(Prä)(Akt), οἰωνῶν(G) βοτήρ(N),
+(24) [Ἐτεοκλής:] nun aber wie der Seher sagt, der|Vögel Hirte,
+(25) [Ἐτεοκλής:] ἐν(Prp) ὠσὶ(D) νωμῶν(Prä)(Akt)(N) καὶ(Kon) φρεσίν(D), πυρὸς(G) δίχα(Prp),
+(25) [Ἐτεοκλής:] in Ohren lenkend und Sinnen, ohne Feuer,
+(26) [Ἐτεοκλής:] χρηστηρίους(Adj)(A) ὄρνιθας(A) ἀψευδεῖ(Adj)(D) τέχνῃ(D)·
+(26) [Ἐτεοκλής:] weissagenden Vögel untrüglicher Kunst·
+(27) [Ἐτεοκλής:] οὗτος(Pr)(N) τοιῶνδε(Pr)(G) δεσπότης(N) μαντευμάτων(G)
+(27) [Ἐτεοκλής:] dieser solcher Herr Weissagungen
+(28) [Ἐτεοκλής:] λέγει(Prä)(Akt) μεγίστην(Adj)(A)(Sup) προσβολὴν(A) Ἀχαιίδα(Adj)(A)
+(28) [Ἐτεοκλής:] sagt größte Angriff achaiische
+(29) [Ἐτεοκλής:] νυκτηγορεῖσθαι(Prä)(M/P)(Inf) κἀπιβουλεύσειν(Fu)(Inf)(Akt) πόλει(D).
+(29) [Ἐτεοκλής:] nachts|ausgerufen|zu|werden und|anschlagen|zu der|Stadt.
+(30) [Ἐτεοκλής:] ἀλλʼ(Kon) ἔς(Prp) τʼ(Pt) ἐπάλξεις(A) καὶ(Kon) πύλας(A) πυργωμάτων(G)
+(30) [Ἐτεοκλής:] aber in und Brustwehren und Tore der|Befestigungen
+(31) [Ἐτεοκλής:] ὁρμᾶσθε(Prä)(M/P)(Imv) πάντες(Adj)(N), σοῦσθε(Prä)(M/P)(Imv) σὺν(Prp) παντευχίᾳ(D),
+(31) [Ἐτεοκλής:] stürmt alle, gürtet|euch mit Vollrüstung,
+(32) [Ἐτεοκλής:] πληροῦτε(Prä)(Akt)(Imv) θωρακεῖα(A), κἀπὶ(Kon)(Prp) σέλμασιν(D)
+(32) [Ἐτεοκλής:] füllt Brustharnische, und|auf Söllern
+(33) [Ἐτεοκλής:] πύργων(G) στάθητε(AorS)(Pas)(Imv), καὶ(Kon) πυλῶν(G) ἐπʼ(Prp) ἐξόδοις(D)
+(33) [Ἐτεοκλής:] der|Türme stellt|euch|auf, und der|Tore auf Ausgängen
+(34) [Ἐτεοκλής:] μίμνοντες(Prä)(Akt)(N) εὖ(Adv) θαρσεῖτε(Prä)(Akt)(Imv), μηδʼ(Pt) ἐπηλύδων(G)
+(34) [Ἐτεοκλής:] verweilend gut seid|mutig, und|nicht der|Zukömmlinge
+(35) [Ἐτεοκλής:] ταρβεῖτʼ(Prä)(Akt)(Imv) ἄγαν(Adv) ὅμιλον(A)· εὖ(Adv) τελεῖ(Prä)(Akt) θεός(N).
+(35) [Ἐτεοκλής:] fürchtet zu|sehr Haufen· gut vollendet Gott.
+(36) [Ἐτεοκλής:] σκοποὺς(A) δὲ(Pt) κἀγὼ(Kon)(Pr)(N) καὶ(Kon) κατοπτῆρας(A) στρατοῦ(G)
+(36) [Ἐτεοκλής:] Aufpasser aber und|ich und Späher des|Heeres
+(37) [Ἐτεοκλής:] ἔπεμψα(Aor)(Akt), τοὺς(Art)(A) πέποιθα(Per)(Akt) μὴ(Pt) ματᾶν(Prä)(Inf)(Akt) ὁδῷ(D)·
+(37) [Ἐτεοκλής:] schickte, die vertraue|ich nicht sich|verzögern|zu auf|dem|Weg·
+(38) [Ἐτεοκλής:] καὶ(Kon) τῶνδʼ(Pr)(G) ἀκούσας(Aor)(Akt)(N) οὔ(Pt) τι(Pt) μὴ(Pt) ληφθῶ(AorS)(Pas)(Knj) δόλῳ(D).
+(38) [Ἐτεοκλής:] und dieser hörend nicht etwas nicht werde|ergriffen durch|List.
+(39) [Ἄγγελος:] Ἐτεόκλεες(V), φέριστε(Adj)(V)(Sup) Καδμείων(G) ἄναξ(V),
+(39) [Ἄγγελος:] Eteokles, bester der|Kadmäer Herr,
+(40) [Ἄγγελος:] ἥκω(Prä)(Akt) σαφῆ(Adj)(A) τἀκεῖθεν(A) ἐκ(Prp) στρατοῦ(G) φέρων(Prä)(Akt)(N),
+(40) [Ἄγγελος:] ich|komme klaren die|von|dort aus Heer bringend,
+(41) [Ἄγγελος:] αὐτὸς(Adj)(N) κατόπτης(N) δʼ(Pt) εἴμʼ(Prä)(Akt) ἐγὼ(Pr)(N) τῶν(Art)(G) πραγμάτων(G)·
+(41) [Ἄγγελος:] selbst Kundschafter aber bin ich der Dinge·
+(42) [Ἄγγελος:] ἄνδρες(N) γὰρ(Pt) ἑπτά(N), θούριοι(Adj)(N) λοχαγέται(N),
+(42) [Ἄγγελος:] Männer denn sieben, sturmeifrige Zugführer,
+(43) [Ἄγγελος:] ταυροσφαγοῦντες(Prä)(Akt)(N) ἐς(Prp) μελάνδετον(Adj)(A) σάκος(A)
+(43) [Ἄγγελος:] Stier|schlachtend in schwarzgerändertes Schild
+(44) [Ἄγγελος:] καὶ(Kon) θιγγάνοντες(Prä)(Akt)(N) χερσὶ(D) ταυρείου(Adj)(G) φόνου(G),
+(44) [Ἄγγελος:] und berührend mit|Händen stierischen Mordes,
+(45) [Ἄγγελος:] Ἄρη(A) τʼ(Pt), Ἐνυώ(V), καὶ(Kon) φιλαίματον(Adj)(A) Φόβον(A)
+(45) [Ἄγγελος:] Ares und, Enyo, und blutliebenden Phobos
+(46) [Ἄγγελος:] ὡρκωμότησαν(Aor)(Akt) ἢ(Kon) πόλει(D) κατασκαφὰς(A)
+(46) [Ἄγγελος:] schwuren oder der|Stadt Nieder|risse
+(47) [Ἄγγελος:] θέντες(Aor)(Akt)(N) λαπάξειν(Aor)(Inf)(Akt) ἄστυ(A) Καδμείων(G) βίᾳ(D),
+(47) [Ἄγγελος:] gesetzt|habend plündern|zu Stadt der|Kadmäer mit|Gewalt,
+(48) [Ἄγγελος:] ἢ(Kon) γῆν(A) θανόντες(AorS)(Akt)(N) τήνδε(Pr)(A) φυράσειν(Fu)(Inf)(Akt) φόνῳ(D)·
+(48) [Ἄγγελος:] oder Erde gestorben|seiend diese mischen|zu mit|Blut·
+(49) [Ἄγγελος:] μνημεῖά(A) θʼ(Pt) αὑτῶν(Pr)(G) τοῖς(Art)(D) τεκοῦσιν(Aor)(Akt)(D) ἐς(Prp) δόμους(A)
+(49) [Ἄγγελος:] Denkmäler und ihrer|selbst den Zeugern in Häuser
+(50) [Ἄγγελος:] πρὸς(Prp) ἅρμʼ(A) Ἀδράστου(G) χερσὶν(D) ἔστεφον(Imp)(Akt), δάκρυ(A)
+(50) [Ἄγγελος:] an Wagen des|Adrastos mit|Händen krönten, Träne
+(51) [Ἄγγελος:] λείβοντες(Prä)(Akt)(N)· οἶκτος(N) δʼ(Pt) οὔτις(Pr)(N) ἦν(Imp)(Akt) διὰ(Prp) στόμα(A).
+(51) [Ἄγγελος:] vergießend· Mitleid aber niemand war durch Mund.
+(52) [Ἄγγελος:] σιδηρόφρων(Adj)(N) γὰρ(Pt) θυμὸς(N) ἀνδρείᾳ(D) φλέγων(Prä)(Akt)(N)
+(52) [Ἄγγελος:] eisenherzig denn Sinn mit|Tapferkeit brennend
+(53) [Ἄγγελος:] ἔπνει(Imp)(Akt), λεόντων(G) ὡς(Kon) Ἄρη(N) δεδορκότων(Per)(Akt)(G).
+(53) [Ἄγγελος:] hauchte, der|Löwen wie Ares geschaut|Habenden.
+(54) [Ἄγγελος:] καὶ(Kon) τῶνδε(Pr)(G) πύστις(N) οὐκ(Pt) ὄκνῳ(D) χρονίζεται(Prä)(M/P)·
+(54) [Ἄγγελος:] und dieser Nachricht nicht durch|Zögern verzögert|sich·
+(55) [Ἄγγελος:] κληρουμένους(Prä)(M/P)(A) δʼ(Pt) ἔλειπον(Imp)(Akt), ὡς(Kon) πάλῳ(D) λαχὼν(AorS)(Akt)(N)
+(55) [Ἄγγελος:] gelost|werdende aber ließ|ich|zurück, wie mit|Los erlangt|Habender
+(56) [Ἄγγελος:] ἕκαστος(Pr)(N) αὐτῶν(Pr)(G) πρὸς(Prp) πύλας(A) ἄγοι(Prä)(Akt)(Knj) λόχον(A).
+(56) [Ἄγγελος:] jeder von|ihnen zu Toren führe Trupp.
+(57) [Ἄγγελος:] πρὸς(Prp) ταῦτʼ(Pr)(A) ἀρίστους(Adj)(A)(Sup) ἄνδρας(A) ἐκκρίτους(Adj)(A) πόλεως(G)
+(57) [Ἄγγελος:] zu diesem beste Männer ausgewählte der|Stadt
+(58) [Ἄγγελος:] πυλῶν(G) ἐπʼ(Prp) ἐξόδοισι(D) τάγευσαι(Aor)(Med)(Imv) τάχος(Adv)·
+(58) [Ἄγγελος:] der|Tore auf Ausgängen bestimme schnell·
+(59) [Ἄγγελος:] ἐγγὺς(Adv) γὰρ(Pt) ἤδη(Adv) πάνοπλος(Adj)(N) Ἀργείων(G) στρατὸς(N)
+(59) [Ἄγγελος:] nahe denn schon vollbewaffnet der|Argiver Heer
+(60) [Ἄγγελος:] χωρεῖ(Prä)(Akt), κονίει(Prä)(Akt), πεδία(N) δʼ(Pt) ἀργηστὴς(Adj)(N) ἀφρὸς(N)
+(60) [Ἄγγελος:] rückt|vor, staubt, Fluren aber weißleuchtender Schaum
+(61) [Ἄγγελος:] χραίνει(Prä)(Akt) σταλαγμοῖς(D) ἱππικῶν(Adj)(G) ἐκ(Prp) πλευμόνων(G).
+(61) [Ἄγγελος:] besudelt mit|Tropfen pferdischer aus Lungen.
+(62) [Ἄγγελος:] σὺ(Pr)(N) δʼ(Pt) ὥστε(Kon) ναὸς(G) κεδνὸς(Adj)(N) οἰακοστρόφος(N)
+(62) [Ἄγγελος:] du aber wie des|Schiffes sorgfältiger Steuermann
+(63) [Ἄγγελος:] φράξαι(Aor)(Akt)(Imv) πόλισμα(A), πρὶν(Kon) καταιγίσαι(Aor)(Akt)(Inf) πνοὰς(A)
+(63) [Ἄγγελος:] verbarrikadiere Stadt, ehe stürmen|zu Stürme
+(64) [Ἄγγελος:] Ἄρεως(G)· βοᾷ(Prä)(Akt) γὰρ(Pt) κῦμα(N) χερσαῖον(Adj)(N) στρατοῦ(G)·
+(64) [Ἄγγελος:] des|Ares· ruft denn Woge länderne des|Heeres·
+(65) [Ἄγγελος:] καὶ(Kon) τῶνδε(Pr)(G) καιρὸν(A) ὅστις(Pr)(N) ὤκιστος(Adj)(N)(Sup) λαβέ(AorS)(Akt)(Imv)·
+(65) [Ἄγγελος:] und dieser rechten|Zeitpunkt wer am|schnellsten nimm·
+(66) [Ἄγγελος:] κἀγὼ(Kon)(Pr)(N) τὰ(Art)(A) λοιπὰ(Adj)(A) πιστὸν(Adj)(A) ἡμεροσκόπον(A)
+(66) [Ἄγγελος:] und|ich die übrigen treuen Tagwächter
+(67) [Ἄγγελος:] ὀφθαλμὸν(A) ἕξω(Fu)(Akt), καὶ(Kon) σαφηνείᾳ(D) λόγου(G)
+(67) [Ἄγγελος:] Auge werde|haben, und Klarheit der|Rede
+(68) [Ἄγγελος:] εἰδὼς(Per)(Akt)(N) τὰ(Art)(A) τῶν(Art)(G) θύραθεν(Adv) ἀβλαβὴς(Adj)(N) ἔσῃ(Fu)(Akt).
+(68) [Ἄγγελος:] wissend die der von|außen unbeschädigt wirst|sein.
+(69) [Ἐτεοκλής:] ὦ(ij) Ζεῦ(V) τε(Pt) καὶ(Kon) Γῆ(V) καὶ(Kon) πολισσοῦχοι(Adj)(N) θεοί(N),
+(69) [Ἐτεοκλής:] o Zeus und auch Erde und Stadtbesitzende Götter,
+(70) [Ἐτεοκλής:] Ἀρά(N) τʼ(Pt) Ἐρινὺς(N) πατρὸς(G) ἡ(Art)(N) μεγασθενής(Adj)(N),
+(70) [Ἐτεοκλής:] Fluch und Erinys des|Vaters die mächtig,
+(71) [Ἐτεοκλής:] μή(Pt) μοι(Pr)(D) πόλιν(A) γε(Pt) πρυμνόθεν(Adv) πανώλεθρον(Adj)(A)
+(71) [Ἐτεοκλής:] nicht mir Stadt doch vom|Heck|her ganz|vernichtet
+(72) [Ἐτεοκλής:] ἐκθαμνίσητε(Aor)(Akt)(Knj) δῃάλωτον(Adj)(A), Ἑλλάδος(G)
+(72) [Ἐτεοκλής:] ausrotten|möget beute|gemacht, des|Griechenlandes
+(73) [Ἐτεοκλής:] φθόγγον(A) χέουσαν(Prä)(Akt)(A), καὶ(Kon) δόμους(A) ἐφεστίους(Adj)(A)·
+(73) [Ἐτεοκλής:] Laut ausgießend, und Häuser herd|ständige·
+(74) [Ἐτεοκλής:] ἐλευθέραν(Adj)(A) δὲ(Pt) γῆν(A) τε(Pt) καὶ(Kon) Κάδμου(G) πόλιν(A)
+(74) [Ἐτεοκλής:] frei aber Erde und auch des|Kadmos Stadt
+(75) [Ἐτεοκλής:] ζυγοῖσι(D) δουλίοισι(Adj)(D) μήποτε(Adv) σχεθεῖν(Aor)(Pas)(Inf)·
+(75) [Ἐτεοκλής:] unter|Jochen knechtischen niemals gehalten|zu|werden·
+(76) [Ἐτεοκλής:] γένεσθε(Aor)(Med)(Imv) δʼ(Pt) ἀλκή(N)· ξυνὰ(Adj)(A) δʼ(Pt) ἐλπίζω(Prä)(Akt) λέγειν(Prä)(Inf)(Akt)·
+(76) [Ἐτεοκλής:] werdet aber Abwehr· gemeinsam aber hoffe|ich zu|sagen·
+(77) [Ἐτεοκλής:] πόλις(N) γὰρ(Pt) εὖ(Adv) πράσσουσα(Prä)(Akt)(N) δαίμονας(A) τίει(Prä)(Akt).
+(77) [Ἐτεοκλής:] Stadt denn gut handelnd die|Daimonen ehrt.
+=== Parodos ===
+(78) [Χορός:] θρέομαι(Prä)(M/P) φοβερὰ(Adj)(A) μεγάλ(Adj)(A) ἄχη(A)
+(78) [Χορός:] schreie|ich- furchtbare große Schmerzen
+(79) [Χορός:] μεθεῖται(Prä)(M/P) στρατός(N)· στρατόπεδον(N) λιπὼν(AorS)(Akt)(N)
+(79) [Χορός:] löst|sich Heer· Heerlager verlassend
+(80) [Χορός:] ῥεῖ(Prä)(Akt) πολὺς(Adj)(N) ὅδε(Pr)(N) λεὼς(N) πρόδρομος(Adj)(N) ἱππότας(A)·
+(80) [Χορός:] fließt viel dieser Volk vor|laufend Reiter·
+(81) [Χορός:] αἰθερία(Adj)(N) κόνις(N) με(Pr)(A) πείθει(Prä)(Akt) φανεῖσʼ(Aor)(Akt)(N),
+(81) [Χορός:] ätherische Staub mich überzeugt erschienen,
+(82) [Χορός:] ἄναυδος(Adj)(N) σαφὴς(Adj)(N) ἔτυμος(Adj)(N) ἄγγελος(N).
+(82) [Χορός:] stumm klar wahr Bote.
+(83) [Χορός:] ἔτι(Adv) δὲ(Pt) γᾶς(G) ἐμᾶς(Adj)(G) πεδίʼ(A) ὁπλόκτυπʼ(Adj)(A) ὠ‖τὶ(D)
+(83) [Χορός:] noch aber der|Erde unserer Fluren waffen|schlagend dem|Ohr
+(84) [Χορός:] χρίμπτει(Prä)(Akt) βοάν(A)· ποτᾶται(Prä)(M/P), βρέμει(Prä)(Akt) δʼ(Pt)
+(84) [Χορός:] nähert Geschrei· fliegt, dröhnt aber
+(85) [Χορός:] ἀμαχέτου(Adj)(G) δίκαν(Adv) ὕδατος(G) ὀροτύπου(Adj)(G).
+(85) [Χορός:] unbezwingbaren gleich des|Wassers sturm|schlagenden.
+(86) [Χορός:] ἰὼ(ij) ἰὼ(ij)
+(86) [Χορός:] io io
+(87) [Χορός:] ἰὼ(ij) θεοὶ(N) θεαί(N) τʼ(Pt) ὀρόμενον(Prä)(M/P)(A) κακὸν(Adj)(A)
+(87) [Χορός:] io Götter Göttinnen und auf|brausend Übel
+(88) [Χορός:] βοᾷ(Prä)(Akt) τειχέων(G) ὕπερ(Prp) ἀλεύσατε(Aor)(Akt)(Imv).
+(88) [Χορός:] ruft der|Mauern über wehrt|ab.
+(89) [Χορός:] ὁ(Art)(N) λεύκασπις(Adj)(N) ὄρνυται(Prä)(M/P) λαὸς(N) εὐ‖τρεπὴς(Adj)(N)
+(89) [Χορός:] der weiß|schildig erhebt|sich Volk gut|gerüstet
+(90) [Χορός:] ἐπὶ(Prp) πόλιν(A) διώκων(Prä)(Akt)(N) πόδα(A).
+(90) [Χορός:] gegen Stadt verfolgend Fuß.
+(91) [Χορός:] τίς(Pr)(N) ἄρα(Pt) ῥύσεται(Fu)(M/P), τίς(Pr)(N) ἄρʼ(Pt) ἐπαρκέσει(Fu)(Akt)
+(91) [Χορός:] wer also wird|retten, wer denn wird|beistehen
+(92) [Χορός:] θεῶν(G) ἢ(Kon) θεᾶν(G);
+(92) [Χορός:] der|Götter oder der|Göttinnen;
+(93) [Χορός:] πότερα(Adv) δῆτʼ(Pt) ἐγὼ(Pr)(N) πάτρια(Adj)(A) ποτιπέσω(Fu)(Akt)
+(93) [Χορός:] ob denn ich väterliche werde|hinfallen
+(95) [Χορός:] βρέτη(N) δαιμόνων(G);
+(95) [Χορός:] Götterbilder der|Dämonen;
+(96) [Χορός:] ἰὼ(ij) μάκαρες(Adj)(V) εὔεδροι(Adj)(V),
+(96) [Χορός:] io Selige wohl|sitzende,
+(97) [Χορός:] ἀκμάζει(Prä)(Akt) βρετέων(G) ἔχεσθαι(Prä)(M/P)(Inf)· τί(Adv) μέλ‖λομεν(Prä)(Akt)
+(97) [Χορός:] blüht der|Bilder sich|zu|halten· was zögern|wir
+(98) [Χορός:] ἀγάστονοι(Adj)(N);
+(98) [Χορός:] staunende;
+(100) [Χορός:] ἀκούετʼ(Prä)(Akt)(Imv) ἢοὐκ(Kon)(Pt) ἀκούετʼ(Prä)(Akt)(Imv) ἀσπίδων(G) κτύπον(A);
+(100) [Χορός:] hört oder|nicht hört der|Schilde Klang;
+(101) [Χορός:] πέπλων(G) καὶ(Kon) στεφέων(G) πότʼ(Adv) εἰ(Kon) μὴ(Pt) νῦν(Adv) ἀμ‖φὶ(Prp)
+(101) [Χορός:] der|Gewänder und der|Kränze wann wenn nicht jetzt um
+(102) [Χορός:] λιτάνʼ(A) ἕξομεν(Fu)(Akt);
+(102) [Χορός:] Bitt|gebet werden|haben;
+(103) [Χορός:] κτύπον(A) δέδορκα(Per)(Akt)· πάταγος(N) οὐχ(Pt) ἑνὸς(Adj)(G) δορός(G).
+(103) [Χορός:] Klang ich|habe|gesehen· Geklapper nicht eines Speeres.
+(104) [Χορός:] τί(Adv) ῥέξεις(Fu)(Akt); προδώσεις(Fu)(Akt), παλαίχθων(Adj)(N)
+(104) [Χορός:] was wirst|tun; wirst|verraten, alt|erdbürtig
+(105) [Χορός:] Ἄρης(N), τὰν(Art)(A) τεάν(Adj)(A);
+(105) [Χορός:] Ares, die deine;
+(106) [Χορός:] ὼ(ij) χρυσοπήληξ(Adj)(V) δαῖμον(V) ἔπιδʼ(Aor)(Akt)(Imv) ἔπιδε(Aor)(Akt)(Imv) πόλιν(A)
+(106) [Χορός:] o Gold|Helm|tragend Daimon hin|blicke hin|blicke Stadt
+(107) [Χορός:] ἅν(Pr)(A) ποτʼ(Adv) εὐφιλήταν(Adj)(A) ἔθου(AorS)(Akt).
+(107) [Χορός:] die einst wohl|geliebt machtest|du.
+== Strophe 1 ==
+(109) [Χορός:] θεοὶ(N) πολιάοχοι(Adj)(N) πάντες(Adj)(N) ἴτε(Prä)(Akt)(Imv) χθονὸς(G)·
+(109) [Χορός:] Götter stadt|haltende alle kommt der|Erde·
+(110) [Χορός:] ἴδετε(Aor)(Akt)(Imv) παρθένων(G)
+(110) [Χορός:] seht der|Jungfrauen
+(111) [Χορός:] ἱκέσιον(Adj)(A) λόχον(A) δουλοσύνας(G) ὕπερ(Prp).
+(111) [Χορός:] flehende Schar der|Knechtschaft für.
+(112) [Χορός:] κῦμα(N) περὶ(Prp) πτόλιν(A) δοχμολόφων(Adj)(G) ἀνδρῶν(G)
+(112) [Χορός:] Woge um Stadt schräg|gipfliger Männer
+(115) [Χορός:] καχλάζει(Prä)(Akt) πνοαῖς(D) Ἄρεος(G) ὀρόμενον(Prä)(M/P)(N).
+(115) [Χορός:] braust mit|Atemzügen des|Ares auf|wogend.
+(116) [Χορός:] ἀλλʼ(Kon), ὦ(ij) Ζεῦ(V) πάτερ(V) παντὸς(Adj)(G) ἔχων(Prä)(Akt)(N) τέλος(A),
+(116) [Χορός:] aber, o Zeus Vater des|Alles habend Ende,
+(117) [Χορός:] πάντως(Adv) ἄρηξον(Aor)(Akt)(Imv) δαΐων(Adj)(G) ἅλωσιν(A).
+(117) [Χορός:] durchaus hilf feindlicher Eroberung.
+(120) [Χορός:] Ἀργέιοι(N) δὲ(Pt) πόλισμα(N) Κάδμου(G)
+(120) [Χορός:] Argiver aber Stadt des|Kadmos
+(121) [Χορός:] κυκλοῦνται(Prä)(M/P)· φόβος(N) δʼ(Pt) ἀρῄων(Adj)(G) ὅπλων(G)
+(121) [Χορός:] um|kreisen|sie· Furcht aber kriegerischer Waffen
+(122) [Χορός:] δονεῖ(Prä)(Akt), διὰ(Prp) δέ(Pt) τοι(Pr)(D) γενύων(G) ἱππίων(G)
+(122) [Χορός:] erschüttert, durch aber dir der|Kinnbacken der|Pferde
+(123) [Χορός:] μινύρονται(Prä)(M/P) φόνον(A) χαλινοί(N).
+(123) [Χορός:] wimmern Mord Zügel.
+(124) [Χορός:] ἑπτὰ(N) δʼ(Pt) ἀγάνορες(Adj)(N) πρέποντες(Prä)(Akt)(N) στρατοῦ(G)
+(124) [Χορός:] sieben doch edel|männische passend des|Heeres
+(125) [Χορός:] δορυσσοῖς(Adj)(D) σαγαῖς(D) πύλαις(D) ἑβδόμαις(Adj)(D)
+(125) [Χορός:] speer|starken Schilden Toren siebenten
+(126) [Χορός:] [Zeile Lost]
+(127) [Χορός:] προσίστανται(Prä)(M/P) πάλῳ(D) λαχόντες(AorS)(Akt)(N).
+(127) [Χορός:] stellen|sich|davor beim|Los gelost|habend.
+== Antistrophe 1 ==
+(128) [Χορός:] σύ(Pr)(N) τʼ(Pt), ὦ(ij) Διογενὲς(Adj)(V) φιλόμαχον(Adj)(N) κράτος(N),
+(128) [Χορός:] du und, o Zeus|geboren kampf|liebend Macht,
+(129) [Χορός:] ῥυσίπολις(Adj)(N) γενοῦ(Aor)(Med)(Imv),
+(129) [Χορός:] Stadt|rettend werde,
+(130) [Χορός:] Παλλάς(V), ὅ(Pr)(N) θʼ(Pt) ἵππιος(Adj)(N) ποντομέδων(N) ἄναξ(N)
+(130) [Χορός:] Pallas, der auch pferdisch Meer|beherrscher Herr
+(131) [Χορός:] ἰχθυβόλῳ(Adj)(D) Ποσειδάων(G) μαχανᾷ(D),
+(131) [Χορός:] mit|fisch|fangender Poseidons Hilfe,
+(132) [Χορός:] ἐπίλυσιν(A) φόβων(G), ἐπίλυσιν(A) δίδου(Prä)(Akt)(Imv).
+(132) [Χορός:] Lösung der|Ängste, Lösung gib.
+(135) [Χορός:] σύ(Pr)(N) τʼ(Pt), Ἄρης(V), φεῦ(ij), φεῦ(ij), πόλιν(A) ἐπώνυμον(Adj)(A)
+(135) [Χορός:] du auch, Ares, wehe, wehe, Stadt bei|namig
+(136) [Χορός:] Κάδμου(G) φύλαξον(Aor)(Akt)(Imv) κήδεσαί(Aor)(Med)(Imv) τʼ(Pt) ἐναργῶς(Adv).
+(136) [Χορός:] des|Kadmos beschütze sorge|dich und deutlich.
+(140) [Χορός:] καὶ(Kon) Κύπρις(V), ἅτε(Pt) γένους(G) προμάτωρ(N),
+(140) [Χορός:] und Kypris, da|ja des|Geschlechts Vor|mutter,
+(141) [Χορός:] ἄλευσον(Aor)(Akt)(Imv)· σέθεν(Pr)(G) γὰρ(Pt) ἐξ(Prp) αἵματος(G)
+(141) [Χορός:] abwehre· deiner denn aus Blutes
+(142) [Χορός:] γεγόναμεν(Per)(Akt)· λιταῖσί(D) σε(Pr)(A) θεοκλύτοις(Adj)(D)
+(142) [Χορός:] sind|geworden· mit|Bitten dich götter|erhört
+(143) [Χορός:] ἀυτοῦσαι(Prä)(Akt)(N) πελαζόμεσθα(Prä)(M/P).
+(143) [Χορός:] schreiend nähern|wir|uns.
+(145) [Χορός:] καὶ(Kon) σύ(Pr)(N), Λύκειʼ(V) ἄναξ(V), Λύκειος(Adj)(N) γενοῦ(Aor)(Med)(Imv)
+(145) [Χορός:] auch du, Lykeie Herr, Lykisch werde
+(146) [Χορός:] στρατῷ(D) δαΐῳ(Adj)(D) στόνων(G) ἀντίτας(N).
+(146) [Χορός:] dem|Heer kriegerischen der|Seufzer Gegen|steher.
+(147) [Χορός:] σύ(Pr)(N) τʼ(Pt), ὦ(ij) Λατογένει‖α(V)
+(147) [Χορός:] du auch, o Leto|geborene
+(148) [Χορός:] κούρα(V), τόξον(A) εὐτυκάζου(Prä)(Akt)(Imv).
+(148) [Χορός:] Mädchen, Bogen triff|glücklich.
+== Strophe 2 ==
+(149) [Χορός:] ἒ(ij) ἒ(ij) ἒ(ij) ἔ(ij),
+(149) [Χορός:] e e e e,
+(150) [Χορός:] ὄτοβον(A) ἁρμάτων(G) ἀμφὶ(Prp) πόλιν(A) κλύω(Prä)(Akt)·
+(150) [Χορός:] Getöse der|Wagen um Stadt höre|ich·
+(151) [Χορός:] ὦ(ij) πότνιʼ(Adj)(V) Ἥρα(V).
+(151) [Χορός:] o Herrin Hera.
+(152) [Χορός:] ἔλακον(Aor)(Akt) ἀξόνων(G) βριθομένων(Prä)(M/P)(G) χνόαι(N).
+(152) [Χορός:] es|krachte der|Achsen schwer|seienden Flaum.
+(153) [Χορός:] Ἄρτεμι(V) φίλα(Adj)(V),
+(153) [Χορός:] Artemis liebe,
+(155) [Χορός:] δοριτίνακτος(Adj)(N) αἰθὴρ(N) δʼ(Pt) ἐπιμαίνεται(Prä)(M/P).
+(155) [Χορός:] speer|klatschend Äther aber rast.
+(156) [Χορός:] τί(Adv) πόλις(N) ἄμμι(Pr)(D) πάσχει(Prä)(Akt), τί(Adv) γενήσεται(Fu)(M/P);
+(156) [Χορός:] was Stadt uns erleidet, was wird|werden;
+(157) [Χορός:] ποῖ(Adv) δʼ(Pt) ἔτι(Adv) τέλος(A) ἐπάγει(Prä)(Akt) θεός(N);
+(157) [Χορός:] wohin aber noch Ende führt|herbei Gott;
+== Antistrophe 2 ==
+(158) [Χορός:] ἒ(ij) ἒ(ij) ἒ(ij) ἔ(ij),
+(158) [Χορός:] e e e e,
+(158b) [Χορός:] ἀκροβόλων(Adj)(G) δʼ(Pt) ἐπάλξεων(G) λιθὰς(A) ἔρχεται(Prä)(M/P)·
+(158b) [Χορός:] fern|schleudernder aber der|Brustwehren Steine kommt·
+(159) [Χορός:] ὦ(ij) φίλʼ(Adj)(V) Ἄπολλον(V)·
+(159) [Χορός:] o lieber Apollon·
+(160) [Χορός:] κόναβος(N) ἐν(Prp) πύλαις(D) χαλκοδέτων(Adj)(G) σακέων(G),
+(160) [Χορός:] Getöse in Toren bronzen|gebundener Schilde,
+(161) [Χορός:] παῖ(V) Διός(G), ὅθεν(Adv)
+(161) [Χορός:] Sohn des|Zeus, woher
+(162) [Χορός:] πολεμόκραντον(Adj)(A) ἁγνὸν(Adj)(A) τέλος(A) ἐν(Prp) μάχᾳ(D).
+(162) [Χορός:] kriegs|entscheidendes heiliges Ende in Schlacht.
+(163) [Χορός:] σύ(Pr)(N) τε(Pt), μάκαιρʼ(Adj)(V) ἄνασσʼ(V) Ὄγκα(V), πρὸ(Prp) πόλεως(G)
+(163) [Χορός:] du auch, selige Herrin Onka, vor Stadt
+(165) [Χορός:] ἑπτάπυλον(Adj)(A) ἕδος(A) ἐπιρρύου(Prä)(M/P)(Imv).
+(165) [Χορός:] sieben|pfortigen Sitz beschirme.
+== Strophe 3 ==
+(166) [Χορός:] ἰὼ(ij) παναρκεῖς(Adj)(V) θεοί(V),
+(166) [Χορός:] io allgenügende Götter,
+(167) [Χορός:] ἰὼ(ij) τέλειοι(Adj)(V) τέλειαί(Adj)(V) τε(Pt) γᾶς(G)
+(167) [Χορός:] io vollendete vollendete und der|Erde
+(168) [Χορός:] τᾶσδε(Pr)(G) πυργοφύλακες(V),
+(168) [Χορός:] dieser Turm|Wächter,
+(169) [Χορός:] πόλιν(A) δορίπονον(Adj)(A) μὴ(Pt) προδῶθʼ(Aor)(Akt)(Knj)
+(169) [Χορός:] Stadt Speer|erkämpfte nicht verratet
+(170) [Χορός:] ἑτεροφώνῳ(Adj)(D) στρατῷ(D).
+(170) [Χορός:] anders|stimmigem Heer.
+(171) [Χορός:] κλύετε(Prä)(Akt)(Imv) παρθένων(G) κλύετε(Prä)(Akt)(Imv) πανδίκως(Adv)
+(171) [Χορός:] hört der|Jungfrauen hört allgerecht
+(172) [Χορός:] χειροτόνους(Adj)(A) λιτάς(A).
+(172) [Χορός:] Hand|erhobene Bitten.
+== Antistrophe 3 ==
+(174) [Χορός:] ἰὼ(ij) φίλοι(Adj)(V) δαίμονες(V),
+(174) [Χορός:] io freundliche Dämonen,
+(175) [Χορός:] λυτήριοί(Adj)(V) τʼ(Pt) ἀμφιβάντες(Prä)(Akt)(N) πόλιν(A),
+(175) [Χορός:] erlösende auch um|herum|gehend Stadt,
+(176) [Χορός:] δείξαθʼ(Aor)(Med)(Imv) ὡς(Kon) φιλοπόλεις(Adj)(V),
+(176) [Χορός:] zeigt wie stadt|liebend,
+(177) [Χορός:] μέλεσθέ(Prä)(M/P)(Imv) θʼ(Pt) ἱερῶν(Adj)(G) δημίων(G),
+(177) [Χορός:] sorget und der|heiligen öffentlichen,
+(178) [Χορός:] μελόμενοις(Prä)(M/P)(D) τʼ(Pt) ἄλξατε(Aor)(Akt)(Imv)·
+(178) [Χορός:] den|Sich|Kümmernden und helft·
+(179) [Χορός:] φιλοθύτων(Adj)(G) δέ(Pt) τοι(Pt) πόλεος(G) ὀργίων(G)
+(179) [Χορός:] opfer|liebender aber ja der|Stadt Riten
+(180) [Χορός:] μνήστορες(N) ἐστέ(Prä)(Akt) μοι(D).
+(180) [Χορός:] Erinnerer seid mir.
+(181) [Ἐτεοκλής:] ὑμᾶς(A) ἐρωτῶ(Prä)(Akt), θρέμματʼ(V) οὐκ(Pt) ἀνασχετά(Adj)(V),
+(181) [Ἐτεοκλής:] euch frage|ich, Zöglinge nicht erträgliche,
+(182) [Ἐτεοκλής:] ἦ(Pt) ταῦτʼ(N) ἄριστα(Adj)(N) καὶ(Kon) πόλει(D) σωτήρια(Adj)(N),
+(182) [Ἐτεοκλής:] ja dies beste und der|Stadt rettende,
+(183) [Ἐτεοκλής:] στρατῷ(D) τε(Pt) θάρσος(A) τῷδε(Pr)(D) πυργηρουμένῳ(Prä)(M/P)(D),
+(183) [Ἐτεοκλής:] dem|Heer und Mut diesem Befestigten,
+(185) [Ἐτεοκλής:] βρέτη(A) πεσούσας(AorS)(Akt)(A) πρὸς(Prp) πολισσούχων(Adj)(G) θεῶν(G)
+(185) [Ἐτεοκλής:] Götterbilder nieder|gestürzt|seiende bei stadt|haltenden der|Götter
+(186) [Ἐτεοκλής:] αὔειν(Prä)(Inf)(Akt), λακάζειν(Prä)(Inf)(Akt), σωφρόνων(Adj)(G) μισήματα(A);
+(186) [Ἐτεοκλής:] schreien, kläffen, der|Besonnenen Hass|Dinge;
+(187) [Ἐτεοκλής:] μήτʼ(Pt) ἐν(Prp) κακοῖσι(D) μήτʼ(Pt) ἐν(Prp) εὐεστοῖ(D) φίλῃ(D)
+(187) [Ἐτεοκλής:] weder in Übeln noch in Wohlergehen freundlich
+(188) [Ἐτεοκλής:] ξύνοικος(N) εἴην(Prä)(Akt)(Op) τῷ(Art)(D) γυναικείῳ(Adj)(D) γένει(D).
+(188) [Ἐτεοκλής:] Haus|genosse möge|ich|sein dem weiblichen Geschlecht.
+(189) [Ἐτεοκλής:] κρατοῦσα(Prä)(Akt)(N) μὲν(Pt) γὰρ(Pt) οὐχ(Pt) ὁμιλητὸν(Adj)(A) θράσος(N),
+(189) [Ἐτεοκλής:] herrschend zwar denn nicht umgangs|fähig Übermut,
+(190) [Ἐτεοκλής:] δείσασα(AorS)(Akt)(N) δʼ(Pt) οἴκῳ(D) καὶ(Kon) πόλει(D) πλέον(Adj)(A) κακόν(A).
+(190) [Ἐτεοκλής:] furchtend aber dem|Haus und der|Stadt mehr Übel.
+(191) [Ἐτεοκλής:] καὶ(Kon) νῦν(Adv) πολίταις(D) τάσδε(Pr)(A) διαδρόμους(Adj)(A) φυγὰς(A)
+(191) [Ἐτεοκλής:] und jetzt den|Bürgern diese herum|laufenden Fluchten
+(192) [Ἐτεοκλής:] θεῖσαι(AorS)(Akt)(N) διερροθήσατʼ(Aor)(Pas) ἄψυχον(Adj)(A) κάκην(A)·
+(192) [Ἐτεοκλής:] gesetzt|habend zerstreut|wurdet seelen|loses Übel·
+(193) [Ἐτεοκλής:] τὰ(Art)(N) τῶν(Art)(G) θύραθεν(Adv) δʼ(Pt) ὡς(Kon) ἄριστʼ(Adj)(N)(Sup) ὀφέλλεται(Prä)(M/P),
+(193) [Ἐτεοκλής:] die der von|außen aber wie besten gedeihen,
+(194) [Ἐτεοκλής:] αὐτοὶ(N) δʼ(Pt) ὑπʼ(Prp) αὐτῶν(G) ἔνδοθεν(Adv) πορθούμεθα(Prä)(M/P).
+(194) [Ἐτεοκλής:] wir|selbst aber von ihnen von|innen werden|verwüstet.
+(195) [Ἐτεοκλής:] τοιαῦτά(Adj)(A) τἂν(Pt) γυναιξὶ(D) συνναίων(Prä)(Akt)(N) ἔχοις(Prä)(Akt)(Op).
+(195) [Ἐτεοκλής:] solches wohl mit|Frauen zusammen|wohnend hättest.
+(196) [Ἐτεοκλής:] κεἰ(Kon) μή(Pt) τις(Pr)(N) ἀρχῆς(G) τῆς(Art)(G) ἐμῆς(Adj)(G) ἀκούσεται(Fu)(M/P),
+(196) [Ἐτεοκλής:] und|wenn nicht jemand der|Herrschaft der meiner wird|gehorchen,
+(197) [Ἐτεοκλής:] ἀνὴρ(N) γυνή(N) τε(Pt) χὤ(Kon)(Art)(N) τι(Pr)(N) τῶν(Art)(G) μεταίχμιον(Adj)(N),
+(197) [Ἐτεοκλής:] Mann Frau und und|der etwas der Zwischen|Grenze,
+(198) [Ἐτεοκλής:] ψῆφος(N) κατʼ(Prp) αὐτῶν(G) ὀλεθρία(Adj)(N) βουλεύσεται(Fu)(M/P),
+(198) [Ἐτεοκλής:] Beschluss gegen sie verderblicher wird|beschließen,
+(199) [Ἐτεοκλής:] λευστῆρα(A) δήμου(G) δʼ(Pt) οὔ(Pt) τι(Pt) μὴ(Pt) φύγῃ(Aor)(Akt)(Knj) μόρον(A).
+(199) [Ἐτεοκλής:] Steinigungs|mann des|Volkes aber nicht etwa ja|nicht entgehst Tod.
+(200) [Ἐτεοκλής:] μέλει(Prä)(Akt) γὰρ(Pt) ἀνδρί(D), μὴ(Pt) γυνὴ(N) βουλευέτω(Prä)(Akt)(Imv),
+(200) [Ἐτεοκλής:] obliegt denn dem|Mann, nicht Frau berate|sie,
+(201) [Ἐτεοκλής:] τἄξωθεν(Art)(N)(Adv)· ἔνδον(Adv) δʼ(Pt) οὖσα(Prä)(Akt)(N) μὴ(Pt) βλάβην(A) τίθει(Prä)(Akt)(Imv).
+(201) [Ἐτεοκλής:] die|von|außen· innen aber seiend nicht Schaden verursache.
+(202) [Ἐτεοκλής:] ἤκουσας(Aor)(Akt) ἢοὐκ(Kon)(Pt) ἤκουσας(Aor)(Akt), ἢ(Kon) κωφῇ(Adj)(D) λέγω(Prä)(Akt);
+(202) [Ἐτεοκλής:] hörtest|du oder|nicht hörtest|du, oder einer|Tauben sage|ich;
+(203) [Χορός:] ὦ(ij) φίλον(Adj)(V) Οἰδίπου(G) τέκος(V), ἔδεισʼ(AorS)(Akt) ἀκού‖σασα(AorS)(Akt)(N)
+(203) [Χορός:] o liebes des|Ödipus Kind, fürchtete|ich gehört|habend
+(204) [Χορός:] τὸν(Art)(A) ἁρματόκτυπον(Adj)(A) ὄτοβον(A) ὄτοβον(A),
+(204) [Χορός:] den Wagen|klirrenden Getöse Getöse,
+(205) [Χορός:] ὅτε(Kon) τε(Pt) σύριγγες(N) ἔκλαγξαν(Aor)(Akt) ἑλίτροχοι(Adj)(N),
+(205) [Χορός:] als und Flöten erklangen spiral|rädige,
+(206) [Χορός:] ἱππικῶν(Adj)(G) τʼ(Pt) ἀπύαν(A) πηδαλίων(G) διὰ(Prp) στόμα(A)
+(206) [Χορός:] pferdischer und Ruf Gebisse durch Mund
+(207) [Χορός:] πυριγενετᾶν(Adj)(G) χαλινῶν(G).
+(207) [Χορός:] feuer|entstandenen Zügel.
+(208) [Ἐτεοκλής:] τί(Adv) οὖν(Pt); ὁ(Art)(N) ναύτης(N) ἆρα(Pt) μὴʼ(Pt) ς(Prp) πρῷραν(A) φυγὼν(AorS)(Akt)(N)
+(208) [Ἐτεοκλής:] was also; der Seemann wohl nicht in Bug geflohen|seiend
+(209) [Ἐτεοκλής:] πρύμνηθεν(Adv) ηὗρε(AorS)(Akt) μηχανὴν(A) σωτηρίας(G),
+(209) [Ἐτεοκλής:] vom|Heck fand Vorrichtung der|Rettung,
+(210) [Ἐτεοκλής:] νεὼς(G) καμούσης(Prä)(Akt)(G) ποντίῳ(Adj)(D) πρὸς(Prp) κύματι(D);
+(210) [Ἐτεοκλής:] des|Schiffes mühende meerischen gegen Woge;
+(211) [Χορός:] ἀλλʼ(Kon) ἐπὶ(Prp) δαιμόνων(G) πρόδρομος(N) ἦλθον(AorS)(Akt) ἀρ‖χαῖα(Adj)(A)
+(211) [Χορός:] aber zu den|Daimonen Vor|läufer kam|ich alte
+(212) [Χορός:] βρέτη(A), θεοῖσι(D) πίσυνος(Adj)(N), νιφάδος(G)
+(212) [Χορός:] Götterbilder, den|Göttern vertrauend, der|Schneeflocke
+(213) [Χορός:] ὅτʼ(Kon) ὀλοᾶς(Adj)(G) νειφομένας(Prä)(M/P)(A) βρόμος(N) ἐν(Prp) πύλαις(D)·
+(213) [Χορός:] als verderblicher schnee|fallende Dröhnen in Toren·
+(214) [Χορός:] δὴ(Pt) τότʼ(Adv) ἤρθην(Aor)(Pas) φόβῳ(D) πρὸς(Prp) μακάρων(Adj)(G) λιτάς(A), πόλεως(G)
+(214) [Χορός:] wahrlich damals erhoben|wurde|ich vor|Furcht zu der|Seligen Bitten, der|Stadt
+(215) [Χορός:] ἵνʼ(Kon) ὑπερέχοιεν(Prä)(Akt)(Op) ἀλκάν(A).
+(215) [Χορός:] damit überlegen|seien Abwehr.
+(216) [Ἐτεοκλής:] πύργον(A) στέγειν(Prä)(Inf)(Akt) εὔχεσθε(Prä)(M/P)(Imv) πολέμιον(Adj)(A) δόρυ(A).
+(216) [Ἐτεοκλής:] Turm bedecken betet feindliches Speer.
+(217) [Ἐτεοκλής:] οὐκοῦν(Pt) τάδʼ(Pr)(N) ἔσται(Fu)(Akt) πρὸς(Prp) θεῶν(G)· ἀλλʼ(Kon) οὖν(Pt) θεοὺς(A)
+(217) [Ἐτεοκλής:] demnach dies wird|sein von Göttern· aber nun Götter
+(218) [Ἐτεοκλής:] τοὺς(Art)(A) τῆς(Art)(G) ἁλούσης(AorS)(M/P)(G) πόλεος(G) ἐκλείπειν(Prä)(Inf)(Akt) λόγος(N).
+(218) [Ἐτεοκλής:] die der eingenommenen Stadt verlassen Rede.
+(219) [Χορός:] μήποτʼ(Adv) ἐμὸν(Adj)(A) κατʼ(Prp) αἰῶνα(A) λίποι(Aor)(Akt)(Op) θεῶν(G)
+(219) [Χορός:] niemals meinen nach Lebens|zeit verlasse der|Götter
+(220) [Χορός:] ἅδε(Pr)(N) πανάγυρις(N), μηδʼ(Pt) ἐπίδοιμι(Aor)(Akt)(Op) τάνδʼ(Pr)(A)
+(220) [Χορός:] diese Gesamt|feier, noch|möge ich|ansehen diese
+(221) [Χορός:] ἀστυδρομουμέναν(Prä)(M/P)(A) πόλιν(A) καὶ(Kon) στράτευμʼ(A)
+(221) [Χορός:] stadt|durchlaufene Stadt und Heer
+(222) [Χορός:] ἁπτόμενον(Prä)(M/P)(A) πυρὶ(D) δαΐῳ(D).
+(222) [Χορός:] sich|entzündendes am|Feuer verderblichen.
+(223) [Ἐτεοκλής:] μή(Pt) μοι(D) θεοὺς(A) καλοῦσα(Prä)(Akt)(N) βουλεύου(Prä)(M/P)(Imv) κακῶς(Adv)·
+(223) [Ἐτεοκλής:] nicht mir Götter rufend berate|dich schlecht·
+(224) [Ἐτεοκλής:] πειθαρχία(N) γάρ(Pt) ἐστι(Prä)(Akt) τῆς(Art)(G) εὐπραξίας(G)
+(224) [Ἐτεοκλής:] Gehorsam denn ist der guten|Tat
+(225) [Ἐτεοκλής:] μήτηρ(N), γυνὴ(N) σωτῆρος(G)· ὧδʼ(Adv) ἔχει(Prä)(Akt) λόγος(N).
+(225) [Ἐτεοκλής:] Mutter, Frau des|Retters· so hält|sich Rede.
+(226) [Χορός:] ἔστι(Prä)(Akt)· θεοῦ(G) δʼ(Pt) ἔτʼ(Adv) ἰσχὺς(N) καθυπερτέρα(Adj)(N)(Kmp)·
+(226) [Χορός:] ist· des|Gottes aber noch Stärke überlegener·
+(227) [Χορός:] πολλάκι(Adv) δʼ(Pt) ἐν(Prp) κακοῖσι(D) τὸν(Art)(A) ἀμάχανον(Adj)(A)
+(227) [Χορός:] oft aber in Übeln den Un|überwindlichen
+(228) [Χορός:] κἀκ(Kon)(Prp) χαλεπᾶς(Adj)(G) δύας(G) ὕπερθʼ(Prp) ὀμμάτων(G)
+(228) [Χορός:] und|aus schwerer Dämmerung über Augen
+(229) [Χορός:] κρημναμενᾶν(Prä)(M/P)(G) νεφελᾶν(G) ὀρθοῖ(Prä)(Akt).
+(229) [Χορός:] abstürzenden Wolken richtet|auf.
+(230) [Ἐτεοκλής:] ἀνδρῶν(G) τάδʼ(Pr)(N) ἐστί(Prä)(Akt), σφάγια(A) καὶ(Kon) χρηστήρια(A)
+(230) [Ἐτεοκλής:] der|Männer dies ist, Schlacht|opfer und Orakel|sachen
+(231) [Ἐτεοκλής:] θεοῖσιν(D) ἕρδειν(Prä)(Inf)(Akt) πολεμίων(G) πειρωμένους(Prä)(M/P)(A)·
+(231) [Ἐτεοκλής:] den|Göttern tun der|Feinde versuchend·
+(232) [Ἐτεοκλής:] σὸν(Adj)(N) δʼ(Pt) αὖ(Pt) τὸ(Art)(N) σιγᾶν(Prä)(Inf)(Akt) καὶ(Kon) μένειν(Prä)(Inf)(Akt) εἴσω(Adv) δόμων(G).
+(232) [Ἐτεοκλής:] dein aber wiederum das schweigen und bleiben drinnen der|Häuser.
+(233) [Χορός:] διὰ(Prp) θεῶν(G) πόλιν(A) νεμόμεθʼ(Prä)(M/P) ἀδάματον(Adj)(A),
+(233) [Χορός:] durch Götter Stadt bewohnen|wir un|bezähmte,
+(234) [Χορός:] δυσμενέων(G) δʼ(Pt) ὄχλον(A) πύργος(N) ἀποστέγει(Prä)(Akt).
+(234) [Χορός:] der|Feindlichen aber Menge Turm hält|ab.
+(235) [Χоρός:] τίς(Pr)(N) τάδε(Pr)(A) νέμεσις(N) στυγεῖ(Prä)(Akt);
+(235) [Χоρός:] wer dieses Rache|Göttin verabscheut;
+(236) [Ἐτεοκλής:] οὔτοι(Pt) φθονῶ(Prä)(Akt) σοι(D) δαιμόνων(G) τιμᾶν(Prä)(Inf)(Akt) γένος(N)·
+(236) [Ἐτεοκλής:] keineswegs beneide|ich dir der|Dämonen ehren Geschlecht·
+(237) [Ἐτεοκλής:] ἀλλʼ(Kon) ὡς(Kon) πολίτας(A) μὴ(Pt) κακοσπλάγχνους(Adj)(A) τιθῇς(Prä)(Akt)(Knj),
+(237) [Ἐτεοκλής:] sondern dass Bürger nicht schlecht|herzigen setzest,
+(238) [Ἐτεοκλής:] εὔκηλος(Adj)(N) ἴσθι(Prä)(Akt)(Imv) μηδʼ(Pt) ἄγαν(Adv) ὑπερφοβοῦ(Prä)(M/P)(Imv).
+(238) [Ἐτεοκλής:] sorglos sei und|nicht allzu über|fürchte|dich.
+(239) [Χορός:] ποτίφατον(Adj)(A) κλύουσα(Prä)(Akt)(N) πάταγον(A) ἀνάμιγα(Adv)
+(239) [Χορός:] genannte hörend Getöse vermischt
+(240) [Χορός:] ταρβοσύνῳ(D) φόβῳ(D) τάνδʼ(Pr)(A) ἐς(Prp) ἀκρόπτολιν(A),
+(240) [Χορός:] schreckhafter Furcht diese in Akro|Stadt,
+(241) [Χορός:] τίμιον(Adj)(A) ἕδος(A), ἱκόμαν(Imp)(M/P).
+(241) [Χορός:] ehrwürdigen Sitz, kam|ich.
+(242) [Ἐτεοκλής:] μή(Pt) νυν(Adv), ἐὰν(Kon) θνῄσκοντας(Prä)(Akt)(A) ἢ(Kon) τετρωμένους(Per)(M/P)(A)
+(242) [Ἐτεοκλής:] nicht nun, wenn sterbend oder verwundet|Gewordene
+(243) [Ἐτεοκλής:] πύθησθε(Aor)(Med)(Imv), κωκυτοῖσιν(D) ἁρπαλίζετε(Prä)(Akt)(Imv).
+(243) [Ἐτεοκλής:] erfahrt, mit|Klagelauten schnappt|gierig.
+(244) [Ἐτεοκλής:] τούτῳ(Pr)(D) γὰρ(Pt) Ἄρης(N) βόσκεται(Prä)(M/P), φόνῳ(D) βροτῶν(G).
+(244) [Ἐτεοκλής:] von|diesem denn Ares nährt|sich, von|Mord der|Sterblichen.
+(245) [Χορός:] καὶ(Kon) μὴν(Pt) ἀκούω(Prä)(Akt) γʼ(Pt) ἱππικῶν(Adj)(G) φρυαγμάτων(G).
+(245) [Χορός:] und in|der|Tat höre doch der|pferdischen Wiehergeräusche.
+(246) [Ἐτεοκλής:] μή(Pt) νυν(Adv) ἀκούουσʼ(Prä)(Akt)(N) ἐμφανῶς(Adv) ἄκουʼ(Prä)(Akt)(Imv) ἄγαν(Adv).
+(246) [Ἐτεοκλής:] nicht nun hörend deutlich höre zu|sehr.
+(247) [Χορός:] στένει(Prä)(Akt) πόλισμα(N) γῆθεν(Adv), ὡς(Kon) κυκλουμένων(Prä)(M/P)(G).
+(247) [Χορός:] stöhnt Stadt vom|Boden, wie um|kreist|werdender.
+(248) [Ἐτεοκλής:] οὐκοῦν(Pt) ἔμʼ(Pr)(A) ἀρκεῖ(Prä)(Akt) τῶνδε(Pr)(G) βουλεύειν(Prä)(Inf)(Akt) πέρι(Prp).
+(248) [Ἐτεοκλής:] also mich genügt dieser zu|beraten darüber.
+(249) [Χορός:] δέδοικʼ(Per)(Akt), ἀραγμὸς(N) δʼ(Pt) ἐν(Prp) πύλαις(D) ὀφέλλεται(Prä)(M/P).
+(249) [Χορός:] ich|fürchte, Krachen doch in den|Toren mehrt|sich.
+(250) [Ἐτεοκλής:] οὐ(Pt) σῖγα(Prä)(Akt)(Imv) μηδὲν(Pr)(A) τῶνδʼ(Pr)(G) ἐρεῖς(Fu)(Akt) κατὰ(Prp) πτόλιν(A);
+(250) [Ἐτεοκλής:] nicht schweige nichts davon wirst|sagen durch die|Stadt;
+(251) [Χορός:] ὦ(ij) ξυντέλεια(V), μὴ(Pt) προδῷς(Aor)(Akt)(Knj) πυργώματα(A).
+(251) [Χορός:] o Gemein|Beistand, nicht verrätst die|Befestigungen.
+(252) [Ἐτεοκλής:] οὐκ(Pt) ἐς(Prp) φθόρον(A) σιγῶσʼ(Prä)(Akt)(N) ἀνασχήσῃ(Fu)(M/P) τάδε(Pr)(A);
+(252) [Ἐτεοκλής:] nicht in den|Untergang schweigend wirst|ertragen dies;
+(253) [Χορός:] θεοὶ(N) πολῖται(N), μή(Pt) με(Pr)(A) δουλείας(G) τυχεῖν(Aor)(Inf)(Akt).
+(253) [Χορός:] Götter der|Stadt, nicht mich der|Knechtschaft zu|erlangen.
+(254) [Ἐτεοκλής:] αὐτὴ(Adj)(N) σὺ(Pr)(N) δουλοῖς(Prä)(Akt) κἀμὲ(Kon)(Pr)(A) καὶ(Kon) πᾶσαν(Adj)(A) πόλιν(A).
+(254) [Ἐτεοκλής:] du|selbst du versklavst und|mich und ganze Stadt.
+(255) [Χορός:] ὦ(ij) παγκρατὲς(Adj)(V) Ζεῦ(V), τρέψον(Aor)(Akt)(Imv) εἰς(Prp) ἐχθροὺς(A) βέλος(A).
+(255) [Χορός:] o all|mächtig Zeus, wende gegen die|Feinde das|Geschoss.
+(256) [Ἐτεοκλής:] ὦ(ij) Ζεῦ(V), γυναικῶν(G) οἷον(Pr)(A) ὤπασας(Aor)(Akt) γένος(A).
+(256) [Ἐτεοκλής:] o Zeus, der|Frauen welch|ein gabst Geschlecht.
+(257) [Χορός:] μοχθηρόν(Adj)(N), ὥσπερ(Kon) ἄνδρας(A) ὧν(Pr)(G) ἁλῷ(Aor)(M/P)(Knj) πόλις(N).
+(257) [Χορός:] schlecht, so|wie Männer deren ergriffen|werde die|Stadt.
+(258) [Ἐτεοκλής:] παλινστομεῖς(Prä)(Akt) αὖ(Pt) θιγγάνουσʼ(Prä)(Akt)(N) ἀγαλμάτων(G);
+(258) [Ἐτεοκλής:] plapperst|wieder wiederum berührend der|Bildwerke;
+(259) [Χορός:] ἀψυχίᾳ(D) γὰρ(Pt) γλῶσσαν(A) ἁρπάζει(Prä)(Akt) φόβος(N).
+(259) [Χορός:] vor|Leblosigkeit denn die|Zunge reißt|fort die|Furcht.
+(260) [Ἐτεοκλής:] αἰτουμένῳ(Prä)(M/P)(D) μοι(Pr)(D) κοῦφον(Adj)(A) εἰ(Kon) δοίης(Aor)(Akt)(Op) τέλος(A).
+(260) [Ἐτεοκλής:] dem|Bittenden mir leichtes wenn gäbest Ende.
+(261) [Χορός:] λέγοις(Prä)(Akt)(Op) ἂν(Pt) ὡς(Kon) τάχιστα(Adv)(Sup), καὶ(Kon) τάχʼ(Adv) εἴσομαι(Fu)(M/P).
+(261) [Χορός:] sprächest wohl so schnellst, und bald werde|wissen.
+(262) [Ἐτεοκλής:] σίγησον(Aor)(Akt)(Imv), ὦ(ij) τάλαινα(V), μὴ(Pt) φίλους(A) φόβει(Prä)(Akt)(Imv).
+(262) [Ἐτεοκλής:] schweige, o Unglückliche, nicht die|Freunde erschrecke.
+(263) [Χορός:] σιγῶ(Prä)(Akt)· σὺν(Prp) ἄλλοις(Adj)(D) πείσομαι(Fu)(M/P) τὸ(Art)(A) μόρσιμον(Adj)(A).
+(263) [Χορός:] ich|schweige· mit anderen werde|erleiden das Bestimmte.
+(264) [Ἐτεοκλής:] τοῦτʼ(Pr)(A) ἀντʼ(Prp) ἐκείνων(Pr)(G) τοὔπος(Art)(N) αἱροῦμαι(Prä)(M/P) σέθεν(Pr)(G).
+(264) [Ἐτεοκλής:] dies an|Stelle|von jenen das|Wort wähle deiner.
+(265) [Ἐτεοκλής:] καὶ(Kon) πρός(Prp) γε(Pt) τούτοις(Pr)(D), ἐκτὸς(Adv) οὖσʼ(Prä)(Akt)(N) ἀγαλμάτων(G),
+(265) [Ἐτεοκλής:] und zu ja diesen, außerhalb seiend der|Bildwerke,
+(266) [Ἐτεοκλής:] εὔχου(Prä)(M/P)(Imv) τὰ(Art)(A) κρείσσω(Adj)(A)(Kmp), ξυμμάχους(Adj)(A) εἶναι(Prä)(Inf)(Akt) θεούς(A)·
+(266) [Ἐτεοκλής:] bete die besseren, Verbündete zu|sein Götter·
+(267) [Ἐτεοκλής:] κἀμῶν(Kon)(Adj)(G) ἀκούσασʼ(Aor)(Akt)(N) εὐγμάτων(G), ἔπειτα(Adv) σὺ(Pr)(N)
+(267) [Ἐτεοκλής:] und|meiner gehört|habend der|Gelübde, danach du
+(268) [Ἐτεοκλής:] ὀλολυγμὸν(A) ἱερὸν(Adj)(A) εὐμενῆ(Adj)(A) παιώνισον(Aor)(Akt)(Imv),
+(268) [Ἐτεοκλής:] Heul|ruf heiligen wohl|gesinnten Paean|singe,
+(269) [Ἐτεοκλής:] Ἑλληνικὸν(Adj)(A) νόμισμα(A) θυστάδος(Adj)(G) βοῆς(G),
+(269) [Ἐτεοκλής:] griechisches Brauch der|Opfernden des|Rufes,
+(270) [Ἐτεοκλής:] θάρσος(A) φίλοις(D), λύουσα(Prä)(Akt)(N) πολέμιον(Adj)(A) φόβον(A).
+(270) [Ἐτεοκλής:] Mut den|Freunden, lösend feindlichen Schrecken.
+(271) [Ἐτεοκλής:] ἐγὼ(Pr)(N) δὲ(Pt) χώρας(G) τοῖς(Art)(D) πολισσούχοις(Adj)(D) θεοῖς(D),
+(271) [Ἐτεοκλής:] ich aber der|Lande den stadt|haltenden Göttern,
+(272) [Ἐτεοκλής:] πεδιονόμοις(Adj)(D) τε(Pt) κἀγορᾶς(Kon)(G) ἐπισκόποις(D),
+(272) [Ἐτεοκλής:] Feld|waltenden und und|des|Marktes Aufsehern,
+(273) [Ἐτεοκλής:] Δίρκης(G) τε(Pt) πηγαῖς(D), ὕδατί(D) τʼ(Pt) Ἰσμηνοῦ(G) λέγω(Prä)(Akt)
+(273) [Ἐτεοκλής:] der|Dirke und den|Quellen, dem|Wasser und des|Ismenos sage
+(274) [Ἐτεοκλής:] εὖ(Adv) ξυντυχόντων(Aor)(Akt)(G) καὶ(Kon) πόλεως(G) σεσωμένης(Per)(M/P)(G),
+(274) [Ἐτεοκλής:] gut zusammen|getroffen|habender und der|Stadt gerettet|gewordener,
+(275) [Ἐτεοκλής:] μήλοισιν(D) αἱμάσσοντας(Prä)(Akt)(A) ἑστίας(G) θεῶν(G),
+(275) [Ἐτεοκλής:] mit|Schafen blutend|machend der|Herdstellen der|Götter,
+(276) [Ἐτεοκλής:] [ταυροκτονοῦντας(Prä)(Akt)(A) θεοῖσιν(D), ὧδʼ(Adv) ἐπεύχομαι(Prä)(M/P)]
+(276) [Ἐτεοκλής:] [Stier|tötend den|Göttern, so bete]
+(277) [Ἐτεοκλής:] θύσειν(Aor)(Inf)(Akt) τροπαῖα(A), δαΐων(Adj)(G) δʼ(Pt) ἐσθήματα(A),
+(277) [Ἐτεοκλής:] zu|opfern Sieges|zeichen, der|Feindlichen doch Gewänder,
+(278) [Ἐτεοκλής:] στέψω(Fu)(Akt) λάφυρα(A) δουρίπληχθʼ(Adj)(A) ἁγνοῖς(Adj)(D) δόμοις(D).
+(278) [Ἐτεοκλής:] werde|bekränzen Beute speer|geschlagene in|heiligen Hallen.
+(279) [Ἐτεοκλής:] στέψω(Fu)(Akt) πρὸ(Prp) ναῶν(G), πολεμίων(Adj)(G) δʼ(Pt) τὰ(Art)(A) ἐσθήματα(A)
+(279) [Ἐτεοκλής:] werde|bekränzen vor den|Tempeln, der|Feindlichen doch die. Gewänder
+(280) [Ἐτεοκλής:] τοιαῦτʼ(Adj)(A) ἐπεύχου(Prä)(M/P)(Imv) μὴ(Pt) φιλοστόνως(Adv) θεοῖς(D),
+(280) [Ἐτεοκλής:] solches bete nicht weh|liebend den|Göttern,
+(281) [Ἐτεοκλής:] μηδʼ(Kon) ἐν(Prp) ματαίοις(Adj)(D) κἀγρίοις(Kon)(Adj)(D) ποιφύγμασιν(D)·
+(281) [Ἐτεοκλής:] und|nicht in eitlen und|wilden Keuch|stößen·
+(282) [Ἐτεοκλής:] οὐ(Pt) γάρ(Pt) τι(Pr)(A) μᾶλλον(Adv)(Kmp) μὴ(Pt) φύγῃς(Aor)(Akt)(Knj) τὸ(Art)(A) μόρσιμον(Adj)(A).
+(282) [Ἐτεοκλής:] nicht denn irgend mehr nicht entgehest dem Bestimmten.
+(283) [Ἐτεοκλής:] ἐγὼ(Pr)(N) δέ(Pt) γʼ(Pt) ἄνδρας(A) ἓξ(Adj) ἐμοὶ(Pr)(D) σὺν(Prp) ἑβδόμῳ(Adj)(D)
+(283) [Ἐτεοκλής:] ich aber doch Männer sechs mir mit dem|Siebten
+(284) [Ἐτεοκλής:] ἀντηρέτας(A) ἐχθροῖσι(D) τὸν(Art)(A) μέγαν(Adj)(A) τρόπον(A)
+(284) [Ἐτεοκλής:] Gegen|wehrer den|Feinden die große Art
+(285) [Ἐτεοκλής:] εἰς(Prp) ἑπτατειχεῖς(Adj)(A) ἐξόδους(A) τάξω(Fu)(Akt) μολών(AorS)(Akt)(N),
+(285) [Ἐτεοκλής:] zu sieben|torigen Aus|gänge werde|aufstellen gekommen|seiend,
+(286) [Ἐτεοκλής:] πρὶν(Kon) ἀγγέλους(A) σπερχνούς(Adj)(A) τε(Pt) καὶ(Kon) ταχυρρόθους(Adj)(A)
+(286) [Ἐτεοκλής:] ehe Boten hastige und und schnell|redende
+(287) [Ἐτεοκλής:] λόγους(A) ἱκέσθαι(Aor)(M/P)(Inf) καὶ(Kon) φλέγειν(Prä)(Inf)(Akt) χρείας(G) ὕπο(Prp).
+(287) [Ἐτεοκλής:] Worte kommen und lodern der|Bedürfnisse unter.
+=== Stasimon ===
+== Strophe 1 ==
+(288) [Χορός:] μέλει(Prä)(Akt), φόβῳ(D) δʼ(Pt) οὐχ(Pt) ὑπνώσσει(Prä)(Akt) κέαρ(N)·
+(288) [Χορός:] kümmert, vor|Furcht doch nicht schläfert|ein das|Herz·
+(289) [Χορός:] γείτονες(N) δὲ(Pt) καρδίας(G)
+(289) [Χορός:] Nachbarn aber des|Herzens
+(290) [Χορός:] μέριμναι(N) ζωπυροῦσι(Prä)(Akt) τάρβος(A)
+(290) [Χορός:] Sorgen fachen|an das|Zagen
+(291) [Χορός:] τὸν(Art)(A) ἀμφιτειχῆ(Adj)(A) λεών(A),
+(291) [Χορός:] den um|mauerten Volks|haufen,
+(292) [Χορός:] δράκοντας(A) ὥς(Kon) τις(Pr)(N) τέκνων(G)
+(292) [Χορός:] Schlangen wie jemand der|Kinder
+(293) [Χορός:] ὑπερδέδοικεν(Per)(Akt) λεχαίων(Adj)(G) δυσευνάτορας(A)
+(293) [Χορός:] hat|über|gefürchtet der|Betten schlecht|schlaf|bare
+(294) [Χορός:] πάντρομος(Adj)(N) πελειάς(N).
+(294) [Χορός:] ganz|zitternd Taube.
+(295) [Χορός:] τοὶ(Pr)(N) μὲν(Pt) γὰρ(Pt) ποτὶ(Prp) πύργους(A)
+(295) [Χορός:] die zwar denn zu den|Türmen
+(296) [Χορός:] πανδαμεὶ(Adv) πανομιλεὶ(Adv)
+(296) [Χορός:] all|zusammen ganz|gedrängt
+(297) [Χορός:] στείχουσιν(Prä)(Akt). τί(Pr)(N) γένωμαι(Aor)(Med)(Knj);
+(297) [Χορός:] schreiten. was werde|ich;
+(298) [Χορός:] τοὶ(Pr)(N) δʼ(Pt) ἐπʼ(Prp) ἀμφιβόλοισιν(Adj)(D)
+(298) [Χορός:] die aber auf Wurf|geräten
+(299) [Χορός:] ἰάπτουσι(Prä)(Akt) πολίταις(D)
+(299) [Χορός:] schleudern den|Bürgern
+(300) [Χορός:] χερμάδʼ(A) ὀκριόεσσαν(Adj)(A).
+(300) [Χορός:] Wurf|stein zackigen.
+(301) [Χορός:] παντὶ(Adj)(D) τρόπῳ(D), Διογενεῖς(Adj)(V)
+(301) [Χορός:] auf|jede Weise, Zeus|geborene
+(302) [Χορός:] θεοί(V), πόλιν(A) καὶ(Kon) στρατὸν(A)
+(302) [Χορός:] Götter, die|Stadt und das|Heer
+(303) [Χορός:] Καδμογενῆ(Adj)(A) ῥύεσθε(Prä)(M/P)(Imv).
+(303) [Χορός:] kadmos|geborenen schützt.
+== Antistrophe 1 ==
+(304) [Χορός:] ποῖον(Adj)(A) δʼ(Pt) ἀμείψεσθε(Fu)(M/P) γαίας(G) πέδον(A)
+(304) [Χορός:] welches denn werdet|vertauschen der|Erde Flur
+(305) [Χορός:] τᾶσδʼ(Pr)(G) ἄρειον(Adj)(A)(Kmp), ἐχθροῖς(D)
+(305) [Χορός:] dieser besseren, den|Feinden
+(306) [Χορός:] ἀφέντες(Aor)(Akt)(N) τὰν(Art)(A) βαθύχθονʼ(Adj)(A) αἶαν(A),
+(306) [Χορός:] los|gelassen|habend die tief|erdige Erde,
+(307) [Χορός:] ὕδωρ(A) τε(Pt) Διρκαῖον(Adj)(A), εὐ‖τραφέστατον(Adj)(A)(Sup)
+(307) [Χορός:] Wasser und dirkäischen, wohl‖genährtestes
+(308) [Χορός:] πωμάτων(G)
+(308) [Χορός:] der|Getränke
+(309) [Χορός:] ὅσων(Pr)(G) ἵησιν(Prä)(Akt) Ποσειδᾶν(N) ὁ(Art)(N) γαιάοχος(Adj)(N)
+(309) [Χορός:] so|vieler sendet Poseidon der Erd|träger
+(311) [Χορός:] Τηθύος(G) τε(Pt) παῖδες(N).
+(311) [Χορός:] der|Tethys und Kinder.
+(312) [Χορός:] πρὸς(Prp) τάδʼ(Pr)(A), ὦ(ij) πολιοῦχοι(Adj)(V)
+(312) [Χορός:] zu diesem, o Stadt|halter
+(313) [Χορός:] θεοί(V), τοῖσι(Art)(D) μὲν(Pt) ἔξω(Adv)
+(313) [Χορός:] Götter, den zwar draußen
+(314) [Χορός:] πύργων(G) ἀνδρολέτειραν(Adj)(A)
+(314) [Χορός:] der|Türme Männer|tötende
+(315) [Χορός:] κῆρα(A), ῥίψοπλον(Adj)(A) ἄταν(A),
+(315) [Χορός:] Verderben, Wurf|waffnige Unheil,
+(316) [Χορός:] ἐμβαλόντες(Aor)(Akt)(N) ἄροισθε(Aor)(Med)(Op)
+(316) [Χορός:] hinein|werfend|habend würdet|auf|nehmen
+(317) [Χορός:] κῦδος(A) τοῖσδε(Pr)(D) πολίταις(D).
+(317) [Χορός:] Ruhm diesen Bürgern.
+(318) [Χορός:] καὶ(Kon) πόλεως(G) ῥύτορες(N) ἔστ
+(318) [Χορός:] und der|Stadt Retter seid
+(319) [Χορός:] εὔεδροί(Adj)(V) τε(Pt) στάθητʼ(Aor)(Pas)(Imv)
+(319) [Χορός:] wohl|sitzende und stellet|euch
+(320) [Χορός:] ὀξυγόοις(Adj)(D) λιταῖσιν(D).
+(320) [Χορός:] scharf|tönenden Gebeten.
+== Strophe 2 ==
+(321) [Χορός:] οἰκτρὸν(Adj)(A) γὰρ(Pt) πόλιν(A) ὧδʼ(Adv) ὠγυγίαν(Adj)(A)
+(321) [Χορός:] beklagenswert denn die|Stadt so ogygische
+(322) [Χορός:] Ἀίδᾳ(D) προϊάψαι(Aor)(Inf)(Akt), δορὸς(G) ἄγραν(A)
+(322) [Χορός:] dem|Hades vor|schicken, der|Lanze Beute
+(323) [Χορός:] δουλίαν(A) ψαφαρᾷ(Adj)(D) σποδῷ(D)
+(323) [Χορός:] Knechtschaft staubiger mit|Asche
+(324) [Χορός:] ὑπʼ(Prp) ἀνδρὸς(G) Ἀχαιοῦ(Adj)(G) θεόθεν(Adv)
+(324) [Χορός:] von eines|Mannes des|Achaiers von|den|Göttern|her
+(325) [Χορός:] περθομέναν(Prä)(M/P)(A) ἀτίμως(Adv),
+(325) [Χορός:] verwüstet|werdende unehrenhaft,
+(326) [Χορός:] τὰς(Art)(A) δὲ(Pt) κεχειρωμένας(Per)(M/P)(A) ἄγεσθαι(Prä)(M/P)(Inf),
+(326) [Χορός:] die aber unterworfen|Gewordenen weggeführt|zu|werden,
+(327) [Χορός:] ἒ(ij) ἔ(ij), νέας(Adj)(A) τε(Pt) καὶ(Kon) παλαιὰς(Adj)(A)
+(327) [Χορός:] e e, neue und auch alte
+(328) [Χορός:] ἱππηδὸν(Adv) πλοκάμων(G), περιρ‖ρηγνυμένων(Prä)(M/P)(G)
+(328) [Χορός:] pferde|weise der|Locken, ringsum|reißenden
+(329) [Χορός:] φαρέων(G). βοᾷ(Prä)(Akt)
+(329) [Χορός:] der|Tücher. schreit
+(330) [Χορός:] δʼ(Pt) ἐκκενουμένα(Prä)(M/P)(N) πόλις(N),
+(330) [Χορός:] aber aus|geleert|werdende Stadt,
+(331) [Χορός:] λαΐδος(G) ὀλλυμένας(Prä)(M/P)(A) μιξοθρόου(Adj)(G)·
+(331) [Χορός:] des|Pöbels zugrunde|gehende gemischt|stimmigen·
+(332) [Χορός:] βαρείας(Adj)(A) τοι(Pt) τύχας(A) προταρβῶ(Prä)(Akt).
+(332) [Χορός:] schwere ja Schicksale voraus|fürchte.
+== Antistrophe 2 ==
+(333) [Χορός:] κλαυτὸν(Adj)(A) δʼ(Pt) ἀρτιτρόποις(Adj)(D) ὠμοδρόποις(Adj)(D)
+(333) [Χορός:] weinen|würdig aber neu|gewandten roh|fressenden
+(334) [Χορός:] νομίμων(Adj)(G) προπάροιθεν(Prp) διαμεῖψαι(Aor)(Akt)(Inf)
+(334) [Χορός:] gesetzmäßiger vor zu|durchschreiten
+(335) [Χορός:] δωμάτων(G) στυγερὰν(Adj)(A) ὁδόν(A)·
+(335) [Χορός:] der|Häuser verhassten Weg·
+(336) [Χορός:] τί(Adv); τὸν(Art)(A) φθίμενον(Per)(M/P)(A) γὰρ(Pt) προλέγω(Prä)(Akt)
+(336) [Χορός:] was; den untergegangenen denn sage|voraus
+(337) [Χορός:] βέλτερα(Adj)(A)(Kmp) τῶνδε(Pr)(G) πράσσειν(Prä)(Akt)(Inf)·
+(337) [Χορός:] Besseres als|diese zu|tun·
+(338) [Χορός:] πολλὰ(Adj)(A) γάρ(Pt), εὖτε(Kon) πτόλις(N) δαμασθῇ(Aor)(Pas)(Knj),
+(338) [Χορός:] vieles denn, wenn Stadt gezähmt|werde,
+(339) [Χορός:] ἒ(ij) ἔ(ij), δυστυχῆ(Adj)(A) τε(Pt) πράσσει(Prä)(Akt).
+(339) [Χορός:] e e, unglückliche|Dinge und vollbringt.
+(340) [Χορός:] ἄλλος(Adj)(N) δʼ(Pt) ἄλλον(Adj)(A) ἄγει(Prä)(Akt), φονεύ‖ει(Prä)(Akt),
+(340) [Χορός:] der|eine aber den|anderen führt, tötet,
+(341) [Χορός:] τὰ(Art)(A) δὲ(Pt) πυρφορεῖ(Prä)(Akt)· καπνῷ(D)
+(341) [Χορός:] die aber feuer|trägt· mit|Rauch
+(342) [Χορός:] χραίνεται(Prä)(M/P) πόλισμʼ(N) ἅπαν(Adj)(N)·
+(342) [Χορός:] befleckt|wird Stadt ganz·
+(343) [Χορός:] μαινόμενος(Prä)(M/P)(N) δʼ(Pt) ἐπιπνεῖ(Prä)(Akt) λαοδάμας(Adj)(N)
+(343) [Χορός:] rasend aber weht|auf volk|beugender
+(344) [Χορός:] μιαίνων(Prä)(Akt)(N) εὐσέβειαν(A) Ἄρης(N).
+(344) [Χορός:] befleckend Frömmigkeit Ares.
+== Strophe 3 ==
+(345) [Χορός:] κορκορυγαὶ(N) δʼ(Pt) ἀνʼ(Prp) ἄστυ(A), προτὶ(Prp) δʼ(Pt) ὁρκάνα(A)
+(345) [Χορός:] Schreie aber durch die|Stadt, hin|zu aber Pfähle
+(346) [Χορός:] πυργῶτις(Adj)(N)· πρὸς(Prp) ἀνδρὸς(G) δʼ(Pt) ἀνὴρ(N)
+(346) [Χορός:] turm|bewachend· gegen des|Mannes aber Mann
+(347) [Χορός:] ἀμφὶ(Prp) δορὶ(D) κλίνεται(Prä)(M/P)·
+(347) [Χορός:] um den|Speer neigt|sich·
+(348) [Χορός:] βλαχαὶ(N) δʼ(Pt) αἱματόεσσαι(Adj)(N)
+(348) [Χορός:] Flecken aber blutige
+(349) [Χορός:] τῶν(Art)(G) ἐπιμαστιδίων(G)
+(349) [Χορός:] der Brust|binden
+(350) [Χορός:] ἀρτιτρεφεῖς(Adj)(N) βρέμονται(Prä)(M/P).
+(350) [Χορός:] frisch|genährte dröhnen.
+(351) [Χορός:] ἁρπαγαὶ(N) δὲ(Pt) διαδρομᾶν(G) ὁμαίμονες(Adj)(N)·
+(351) [Χορός:] Raub|taten aber der|Überfälle gleich|stammige·
+(352) [Χορός:] ξυμβολεῖ(Prä)(Akt) φέρων(Prä)(Akt)(N) φέροντι(Prä)(Akt)(D),
+(352) [Χορός:] stößt|zusammen tragend mit|dem|Tragenden,
+(353) [Χορός:] καὶ(Kon) κενὸς(Adj)(N) κενὸν(Adj)(A) καλεῖ(Prä)(Akt),
+(353) [Χορός:] und leer Leeren ruft,
+(354) [Χορός:] ξύννομον(Adj)(A) θέλων(Prä)(Akt)(N) ἔχειν(Prä)(Akt)(Inf),
+(354) [Χορός:] gemeinsames wollend zu|haben,
+(355) [Χορός:] οὔτε(Kon) μεῖον(Adj)(A) οὔτʼ(Kon) ἴσον(Adj)(A) λελιμμένοι(Per)(Pas)(N).
+(355) [Χορός:] weder weniger noch gleich zurück|gelassen|Gewordene.
+(356) [Χορός:] τὰ(Art)(N) δʼ(Pt) ἐκ(Prp) τῶνδʼ(Pr)(G) εἰκάσαι(Aor)(Akt)(Inf) λόγος(N) πάρα(Adv).
+(356) [Χορός:] die aber aus diesen zu|vermuten Rede bereit.
+== Antistrophe 3 ==
+(357) [Χορός:] παντοδαπὸς(Adj)(N) δὲ(Pt) καρπὸς(N) χαμάδις(Adv) πεσὼν(AorS)(Akt)(N)
+(357) [Χορός:] allerlei aber Frucht zu|Boden gefallen|seiend
+(358) [Χορός:] ἀλγύνει(Prä)(Akt) κυρήσας(Aor)(Akt)(N)· πικρὸν(Adj)(A)
+(358) [Χορός:] schmerzt getroffen|habend· Bitteres
+(359) [Χορός:] δʼ(Pt) ὄμμα(N) θαλαμηπόλων(G)·
+(359) [Χορός:] aber Auge der|Kammer|Leute·
+(360) [Χορός:] πολλὰ(Adj)(N) δʼ(Pt) ἀκριτόφυρτος(Adj)(N)
+(360) [Χορός:] vieles aber wirr|gemischt
+(361) [Χορός:] γᾶς(G) δόσις(N) οὐτιδανοῖς(Adj)(D)
+(361) [Χορός:] der|Erde Gabe Nichtsnutzen
+(362) [Χορός:] ἐν(Prp) ῥοθίοις(D) φορεῖται(Prä)(M/P).
+(362) [Χορός:] in Wirbeln wird|getragen.
+(363) [Χορός:] δμωίδες(N) δὲ(Pt) καινοπήμονες(Adj)(N) νέαι(Adj)(N)·
+(363) [Χορός:] Sklavinnen aber neu|geprüfte junge·
+(364) [Χορός:] τλάμονʼ(Adj)(A) εὐνὰν(A) αἰχμάλωτον(Adj)(A)
+(364) [Χορός:] leid|tragende Lager speergefangene
+(365) [Χορός:] ἀνδρὸς(G) εὐτυχοῦντος(Prä)(Akt)(G) ὣς(Adv)
+(365) [Χορός:] eines|Mannes glücklichen so|wie
+(366) [Χορός:] δυσμενοῦς(Adj)(G) ὑπερτέρου(Adj)(G)
+(366) [Χορός:] feindlichen überlegenen
+(367) [Χορός:] ἐλπίς(N) ἐστι(Prä)(Akt) νύκτερον(Adv) τέλος(A) μολεῖν(AorS)(Akt)(Inf),
+(367) [Χορός:] Hoffnung ist nachts Ende zu|kommen,
+(368) [Χορός:] παγκλαύτων(Adj)(G) ἀλγέων(G) ἐπίρροθον(Adj)(A).
+(368) [Χορός:] all|weinender Schmerzen Zuruf.
+(369) [Ἡμιχόριον Α:] ὅ(Pr)(N) τοι(Pt) κατόπτης(N), ὡς(Kon) ἐμοὶ(Pr)(D) δοκεῖ(Prä)(Akt), στρατοῦ(G)
+(369) [Ἡμιχόριον Α:] siehe ja Kund|schafter, wie mir scheint, des|Heeres
+(370) [Ἡμιχόριον Α:] πευθώ(Prä)(Akt) τινʼ(Pr)(A) ἡμῖν(Pr)(D), ὦ(ij) φίλαι(Adj)(V), νέαν(Adj)(A) φέρει(Prä)(Akt),
+(370) [Ἡμιχόριον Α:] erkundige|ich etwas uns, o Freundinnen, neue bringt,
+(371) [Ἡμιχόριον Α:] σπουδῇ(D) διώκων(Prä)(Akt)(N) πομπίμους(Adj)(A) χνόας(A) ποδῶν(G).
+(371) [Ἡμιχόριον Α:] mit|Eile verfolgend geleit|kundige Staub|flocken der|Füße.
+(372) [Ἡμιχόριον Β:] καὶ(Kon) μὴν(Pt) ἄναξ(N) ὅδʼ(Pr)(N) αὐτὸς(Pr)(N) Οἰδίπου(G) τόκος(N)
+(372) [Ἡμιχόριον Β:] und wahrlich Herr dieser|hier selbst des|Ödipus Spross
+(373) [Ἡμιχόριον Β:] εἰς(Prp) ἀρτίκολλον(Adj)(A) ἀγγέλου(G) λόγον(A) μαθεῖν(AorS)(Akt)(Inf)·
+(373) [Ἡμιχόριον Β:] in frisch|geklebten des|Boten Bericht zu|erfahren·
+(374) [Ἡμιχόριον Β:] σπουδὴ(N) δὲ(Pt) καὶ(Kon) τοῦδʼ(Pr)(G) οὐκ(Pt) ἀπαρτίζει(Prä)(Akt) πόδα(A).
+(374) [Ἡμιχόριον Β:] Eile aber auch dessen nicht vollendet Fuß.
+(375) [Ἄγγελος:] λέγοιμʼ(Prä)(Akt)(Op) ἂν(Pt) εἰδὼς(Per)(Akt)(N) εὖ(Adv) τὰ(Art)(A) τῶν(Art)(G) ἐναντίων(Adj)(G),
+(375) [Ἄγγελος:] würde|sagen wohl wissend gut die der Gegner,
+(376) [Ἄγγελος:] ὥς(Kon) τʼ(Pt) ἐν(Prp) πύλαις(D) ἕκαστος(Pr)(N) εἴληχεν(Per)(Akt) πάλον(A).
+(376) [Ἄγγελος:] wie ja an den|Toren jeder er|erhalten|hat das|Los.
+(377) [Ἄγγελος:] Τυδεὺς(N) μὲν(Pt) ἤδη(Adv) πρὸς(Prp) πύλαισι(D) Προιτίσιν(Adj)(D)
+(377) [Ἄγγελος:] Tydeus zwar schon bei den|Toren der|Proitos|Tore
+(378) [Ἄγγελος:] βρέμει(Prä)(Akt), πόρον(A) δʼ(Pt) Ἰσμηνὸν(Adj)(A) οὐκ(Pt) ἐᾷ(Prä)(Akt) περᾶν(Prä)(Akt)(Inf)
+(378) [Ἄγγελος:] dröhnt, den|Übergang aber ismenischen nicht lässt durch|gehen
+(379) [Ἄγγελος:] ὁ(Art)(N) μάντις(N)· οὐ(Pt) γὰρ(Pt) σφάγια(N) γίγνεται(Prä)(M/P) καλά(Adj)(N).
+(379) [Ἄγγελος:] der Seher· nicht denn Opfer|Zeichen geschehen gut.
+(380) [Ἄγγελος:] Τυδεὺς(N) δὲ(Pt) μαργῶν(Prä)(Akt)(N) καὶ(Kon) μάχης(G) λελιμμένος(Per)(M/P)(N)
+(380) [Ἄγγελος:] Tydeus aber rasend und der|Schlacht beraubt|Gewordener
+(381) [Ἄγγελος:] μεσημβριναῖς(Adj)(D) κλαγγαῖσιν(D) ὡς(Kon) δράκων(N) βοᾷ(Prä)(Akt)·
+(381) [Ἄγγελος:] mittags|artigen Gekreisch|lauten wie Drache schreit·
+(382) [Ἄγγελος:] θείνει(Prä)(Akt) δʼ(Pt) ὀνείδει(D) μάντιν(A) Οἰκλείδην(A) σοφόν(Adj)(A),
+(382) [Ἄγγελος:] schlägt aber mit|Schmähung den|Seher den|Oikleiden weisen,
+(383) [Ἄγγελος:] σαίνειν(Prä)(Akt)(Inf) μόρον(A) τε(Pt) καὶ(Kon) μάχην(A) ἀψυχίᾳ(D).
+(383) [Ἄγγελος:] besänftigen Tod und auch Kampf mit|Seelen|losigkeit.
+(384) [Ἄγγελος:] τοιαῦτʼ(Adj)(A) ἀυτῶν(Pr)(G) τρεῖς(Adj) κατασκίους(Adj)(A) λόφους(A)
+(384) [Ἄγγελος:] solche ihrer drei schatten|reichen Helm|kämme
+(385) [Ἄγγελος:] σείει(Prä)(Akt), κράνους(G) χαίτωμʼ(A), ὑπʼ(Prp) ἀσπίδος(G) δʼ(Pt) ἔσω(Adv)
+(385) [Ἄγγελος:] schüttelt, des|Helmes Haar|busch, unter dem|Schild aber innen
+(386) [Ἄγγελος:] χαλκήλατοι(Adj)(N) κλάζουσι(Prä)(Akt) κώδωνες(N) φόβον(A)·
+(386) [Ἄγγελος:] erz|geschmiedete klirren Glocken Furcht·
+(387) [Ἄγγελος:] ἔχει(Prä)(Akt) δʼ(Pt) ὑπέρφρον(Adj)(A) σῆμʼ(A) ἐπʼ(Prp) ἀσπίδος(G) τόδε(Pr)(A),
+(387) [Ἄγγελος:] hat aber über|stolzes Zeichen auf dem|Schild dieses,
+(388) [Ἄγγελος:] φλέγονθʼ(Prä)(Akt)(A) ὑπʼ(Prp) ἄστροις(D) οὐρανὸν(A) τετυγμένον(Per)(M/P)(A)·
+(388) [Ἄγγελος:] brennenden unter den|Sternen Himmel gefertigten·
+(389) [Ἄγγελος:] λαμπρὰ(Adj)(N) δὲ(Pt) πανσέληνος(N) ἐν(Prp) μέσῳ(D) σάκει(D),
+(389) [Ἄγγελος:] hell aber Vollmond in der|Mitte des|Schildes,
+(390) [Ἄγγελος:] πρέσβιστον(Adj)(A)(Sup) ἄστρων(G), νυκτὸς(G) ὀφθαλμός(N), πρέπει(Prä)(Akt).
+(390) [Ἄγγελος:] ältestes der|Sterne, der|Nacht Auge, erscheint.
+(391) [Ἄγγελος:] τοιαῦτʼ(Adj)(A) ἀλύων(Prä)(Akt)(N) ταῖς(Art)(D) ὑπερκόμποις(Adj)(D) σαγαῖς(D)
+(391) [Ἄγγελος:] solches rasend|umher|irrend mit|den über|prahlerischen Schildern
+(392) [Ἄγγελος:] βοᾷ(Prä)(Akt) παρʼ(Prp) ὄχθαις(D) ποταμίαις(Adj)(D), μάχης(G) ἐρῶν(Prä)(Akt)(N),
+(392) [Ἄγγελος:] ruft an den|Ufern fluss|igen, der|Schlacht liebend,
+(393) [Ἄγγελος:] ἵππος(N) χαλινῶν(G) ὣς(Adv) κατασθμαίνων(Prä)(Akt)(N) μένει(Prä)(Akt),
+(393) [Ἄγγελος:] Pferd der|Zügel wie herab|hechelnd verweilt,
+(394) [Ἄγγελος:] ὅστις(Pr)(N) βοὴν(A) σάλπιγγος(G) ὁρμαίνει(Prä)(Akt) μένων(Prä)(Akt)(N).
+(394) [Ἄγγελος:] wer den|Ruf der|Trompete ersehnt verharrend.
+(395) [Ἄγγελος:] τίνʼ(Pr)(A) ἀντιτάξεις(Fu)(Akt) τῷδε(Pr)(D); τίς(Pr)(N) Προίτου(G) πυλῶν(G)
+(395) [Ἄγγελος:] wen stellst|du|entgegen diesem; wer des|Proitos der|Tore
+(396) [Ἄγγελος:] κλῄθρων(G) λυθέντων(Aor)(Pas)(G) προστατεῖν(Prä)(Akt)(Inf) φερέγγυος(Adj)(N);
+(396) [Ἄγγελος:] der|Riegel gelöst|wordenen vor|zu|stehen verlässlich;
+(397) [Ἐτεοκλής:] κόσμον(A) μὲν(Pt) ἀνδρὸς(G) οὔτινʼ(Pr)(A) ἂν(Pt) τρέσαιμʼ(Aor)(Akt)(Op) ἐγώ(Pr)(N),
+(397) [Ἐτεοκλής:] Schmuck zwar eines|Mannes keinen wohl würde|erschrecken ich,
+(398) [Ἐτεοκλής:] οὐδʼ(Pt) ἑλκοποιὰ(Adj)(N) γίγνεται(Prä)(M/P) τὰ(Art)(N) σήματα(N)·
+(398) [Ἐτεοκλής:] und|nicht Wunden|machende werden die Zeichen·
+(399) [Ἐτεοκλής:] λόφοι(N) δὲ(Pt) κώδων(N) τʼ(Pt) οὐ(Pt) δάκνουσʼ(Prä)(Akt) ἄνευ(Prp) δορός(G).
+(399) [Ἐτεοκλής:] Helm|kämme aber Glocken und nicht beißen ohne des|Speeres.
+(400) [Ἐτεοκλής:] καὶ(Kon) νύκτα(A) ταύτην(Pr)(A) ἣν(Pr)(A) λέγεις(Prä)(Akt) ἐπʼ(Prp) ἀσπίδος(G)
+(400) [Ἐτεοκλής:] auch Nacht diese die du|sagst auf dem|Schild
+(401) [Ἐτεοκλής:] ἄστροισι(D) μαρμαίρουσαν(Prä)(Akt)(A) οὐρανοῦ(G) κυρεῖν(Prä)(Akt)(Inf),
+(401) [Ἐτεοκλής:] mit|Sternen funkelnde des|Himmels zu|treffen,
+(402) [Ἐτεοκλής:] τάχʼ(Adv) ἂν(Pt) γένοιτο(Aor)(Med)(Op) μάντις(N) ἁνοία(N) τινί(Pr)(D).
+(402) [Ἐτεοκλής:] vielleicht wohl würde|werden Seher Torheit für|jemanden.
+(403) [Ἐτεοκλής:] εἰ(Kon) γὰρ(Pt) θανόντι(Aor)(Akt)(D) νὺξ(N) ἐπʼ(Prp) ὀφθαλμοῖς(D) πέσοι(AorS)(Akt)(Op),
+(403) [Ἐτεοκλής:] wenn denn gestorben|seiendem Nacht auf Augen fallen|würde,
+(404) [Ἐτεοκλής:] τῷ(Art)(D) τοι(Pt) φέροντι(Prä)(Akt)(D) σῆμʼ(A) ὑπέρκομπον(Adj)(A) τόδε(Pr)(A)
+(404) [Ἐτεοκλής:] dem ja tragenden Zeichen über|prahlerisches dieses
+(405) [Ἐτεοκλής:] γένοιτʼ(Aor)(Med)(Op) ἂν(Pt) ὀρθῶς(Adv) ἐνδίκως(Adv) τʼ(Pt) ἐπώνυμον(Adj)(N),
+(405) [Ἐτεοκλής:] würde|werden wohl richtig gerecht und beinahmt,
+(406) [Ἐτεοκλής:] καὐτὸς(Kon)(Adj)(N) καθʼ(Prp) αὑτοῦ(Pr)(G) τήνδʼ(Art)(A) ὕβριν(A) μαντεύσεται(Fu)(M/P).
+(406) [Ἐτεοκλής:] und|selbst gegen sich|selbst diese Übermut wird|weissagen.
+(407) [Ἐτεοκλής:] ἐγὼ(Pr)(N) δὲ(Pt) Τυδεῖ(D) κεδνὸν(Adj)(A) Ἀστακοῦ(G) τόκον(A)
+(407) [Ἐτεοκλής:] ich aber dem|Tydeus tüchtigen des|Astakos Spross
+(408) [Ἐτεοκλής:] τῶνδʼ(Pr)(G) ἀντιτάξω(Fu)(Akt) προστάτην(A) πυλωμάτων(G),
+(408) [Ἐτεοκλής:] gegen|diese werde|entgegenstellen Beschützer der|Tor|anlagen,
+(409) [Ἐτεοκλής:] μάλʼ(Adv) εὐγενῆ(Adj)(A) τε(Pt) καὶ(Kon) τὸν(Art)(A) Αἰσχύνης(G) θρόνον(A)
+(409) [Ἐτεοκλής:] gar edel|geborenen und auch den der|Scham Thron
+(410) [Ἐτεοκλής:] τιμῶντα(Prä)(Akt)(A) καὶ(Kon) στυγοῦνθʼ(Prä)(Akt)(A) ὑπέρφρονας(Adj)(A) λόγους(A).
+(410) [Ἐτεοκλής:] ehrend und hassend über|stolze Worte.
+(411) [Ἐτεοκλής:] αἰσχρῶν(Adj)(G) γὰρ(Pt) ἀργός(Adj)(N), μὴ(Pt) κακὸς(Adj)(N) δʼ(Pt) εἶναι(Prä)(Inf)(Akt) φιλεῖ(Prä)(Akt).
+(411) [Ἐτεοκλής:] schändlicher denn abgeneigt, nicht schlecht aber zu|sein pflegt.
+(412) [Ἐτεοκλής:] σπαρτῶν(G) δʼ(Pt) ἀπʼ(Prp) ἀνδρῶν(G), ὧν(Pr)(G) Ἄρης(N) ἐφείσατο(Aor)(Med),
+(412) [Ἐτεοκλής:] der|Gesäten aber von Männern, deren Ares verschonte,
+(413) [Ἐτεοκλής:] ῥίζωμʼ(N) ἀνεῖται(Prä)(M/P), κάρτα(Adv) δʼ(Pt) ἔστʼ(Prä)(Akt) ἐγχώριος(Adj)(N),
+(413) [Ἐτεοκλής:] Wurzel|stock wird|gelassen, sehr aber ist einheimisch,
+(414) [Ἐτεοκλής:] Μελάνιππος(N)· ἔργον(N) δʼ(Pt) ἐν(Prp) κύβοις(D) Ἄρης(N) κρινεῖ(Fu)(Akt)·
+(414) [Ἐτεοκλής:] Melanippos· Werk aber in Würfeln Ares wird|entscheiden·
+(415) [Ἐτεοκλής:] Δίκη(N) δʼ(Pt) ὁμαίμων(Adj)(N) κάρτα(Adv) νιν(Pr)(A) προστέλλεται(Prä)(M/P)
+(415) [Ἐτεοκλής:] Dike aber bluts|verwandte sehr ihn beauftragt
+(416) [Ἐτεοκλής:] εἴργειν(Prä)(Inf)(Akt) τεκούσῃ(AorS)(Akt)(D) μητρὶ(D) πολέμιον(Adj)(A) δόρυ(A).
+(416) [Ἐτεοκλής:] abzuwehren geboren|habenden der|Mutter feindlichen Speer.
+(417) [Χορός:] τὸν(Art)(A) ἁμόν(Adj)(A) νυν(Adv) ἀντίπαλον(Adj)(A) εὐτυχεῖν(Prä)(Inf)(Akt)
+(417) [Χορός:] den unsern nun Gegen|kämpfer zu|glücken
+(418) [Χορός:] θεοὶ(N) δοῖεν(Aor)(Akt)(Op), ὡς(Kon) δικαίως(Adv) πόλεως(G)
+(418) [Χορός:] Götter mögen|geben, dass gerecht der|Stadt
+(419) [Χορός:] πρόμαχος(N) ὄρνυται(Prä)(M/P)· τρέμω(Prä)(Akt) δʼ(Pt) αἱματη‖φόρους(Adj)(A)
+(419) [Χορός:] Vor|kämpfer erhebt|sich· ich|bebe aber blut|tragende
+(420) [Χορός:] μόρους(A) ὑπὲρ(Prp) φίλων(G)
+(420) [Χορός:] Tode um|willen der|Freunde
+(421) [Χορός:] ὀλομένων(Aor)(M/P)(G) ἰδέσθαι(Aor)(M/P)(Inf).
+(421) [Χορός:] zugrunde|gegangenen anzusehen.
+(422) [Ἄγγελος:] τούτῳ(Pr)(D) μὲν(Pt) οὕτως(Adv) εὐτυχεῖν(Prä)(Inf)(Akt) δοῖεν(Aor)(Akt)(Op) θεοί(N)·
+(422) [Ἄγγελος:] diesem zwar so zu|glücken mögen|geben Götter·
+(423) [Ἄγγελος:] Καπανεὺς(N) δʼ(Pt) ἐπʼ(Prp) Ἠλέκτραισιν(D) εἴληχεν(Per)(Akt) πύλαις(D),
+(423) [Ἄγγελος:] Kapaneus aber bei den|Elektraischen hat|erlost Toren,
+(424) [Ἄγγελος:] γίγας(N) ὅδʼ(Pr)(N) ἄλλος(Adj)(N) τοῦ(Art)(G) πάρος(Adv) λελεγμένου(Per)(M/P)(G)
+(424) [Ἄγγελος:] Riese dieser anderer des früheren genannt|Gewesenen
+(425) [Ἄγγελος:] μείζων(Adj)(N)(Kmp), ὁ(Art)(N) κόμπος(N) δʼ(Pt) οὐ(Pt) κατʼ(Prp) ἄνθρωπον(A) φρονεῖ(Prä)(Akt),
+(425) [Ἄγγελος:] größer, der Prahl|rede aber nicht gemäß dem|Menschen denkt,
+(426) [Ἄγγελος:] πύργοις(D) δʼ(Pt) ἀπειλεῖ(Prä)(Akt) δείνʼ(Adj)(A), ἃ(Pr)(A) μὴ(Pt) κραίνοι(Prä)(Akt)(Op) τύχη(N)·
+(426) [Ἄγγελος:] den|Türmen aber droht Schreckliches, was nicht erfülle Schicksal·
+(427) [Ἄγγελος:] θεοῦ(G) τε(Pt) γὰρ(Pt) θέλοντος(Prä)(Akt)(G) ἐκπέρσειν(Aor)(Inf)(Akt) πόλιν(A)
+(427) [Ἄγγελος:] Gottes und denn wollenden zu|verwüsten Stadt
+(428) [Ἄγγελος:] καὶ(Kon) μὴ(Pt) θέλοντός(Prä)(Akt)(G) φησιν(Prä)(Akt), οὐδὲ(Kon) τὴν(Art)(A) Διὸς(G)
+(428) [Ἄγγελος:] und nicht wollenden sagt, auch|nicht die des|Zeus
+(429) [Ἄγγελος:] ἔριν(A) πέδοι(Adv) σκήψασαν(Aor)(Akt)(A) ἐμποδὼν(Adv) σχεθεῖν(Aor)(Akt)(Inf).
+(429) [Ἄγγελος:] Streit zu|Boden herab|geschleudert|habende im|Wege aufzuhalten.
+(430) [Ἄγγελος:] τὰς(Art)(A) δʼ(Pt) ἀστραπάς(A) τε(Pt) καὶ(Kon) κεραυνίους(Adj)(A) βολὰς(A)
+(430) [Ἄγγελος:] die aber Blitze und auch donnerkeil|artigen Würfe
+(431) [Ἄγγελος:] μεσημβρινοῖσι(Adj)(D) θάλπεσιν(D) προσῄκασεν(Aor)(Akt)·
+(431) [Ἄγγελος:] mittags|artigen Hitzen verglich·
+(432) [Ἄγγελος:] ἔχει(Prä)(Akt) δὲ(Pt) σῆμα(A) γυμνὸν(Adj)(A) ἄνδρα(A) πυρφόρον(Adj)(A),
+(432) [Ἄγγελος:] hat aber Zeichen nackten Mann feuer|tragenden,
+(433) [Ἄγγελος:] φλέγει(Prä)(Akt) δὲ(Pt) λαμπὰς(N) διὰ(Prp) χερῶν(G) ὡπλισμένη(Per)(M/P)(N)·
+(433) [Ἄγγελος:] lodert aber Fackel durch Hände ausgerüstet|seiend·
+(434) [Ἄγγελος:] χρυσοῖς(Adj)(D) δὲ(Pt) φωνεῖ(Prä)(Akt) γράμμασιν(D) πρήσω(Fu)(Akt) πόλιν(A).
+(434) [Ἄγγελος:] goldenen aber spricht Buchstaben ich|werde|brennen Stadt.
+(435) [Ἄγγελος:] τοιῷδε(Adj)(D) φωτὶ(D) πέμπε(Prä)(Akt)(Imv)— τίς(Pr)(N) ξυστήσεται(Fu)(M/P),
+(435) [Ἄγγελος:] solchem Manne sende— wer wird|sich|vereinen,
+(436) [Ἄγγελος:] τίς(Pr)(N) ἄνδρα(A) κομπάζοντα(Prä)(Akt)(A) μὴ(Pt) τρέσας(Aor)(Akt)(N) μενεῖ(Fu)(Akt);
+(436) [Ἄγγελος:] wer Mann prahlenden nicht gezittert|habend wird|verweilen;
+(437) [Ἐτεοκλής:] καὶ(Kon) τῷδε(Pr)(D) κέρδει(D) κέρδος(N) ἄλλο(Adj)(N) τίκτεται(Prä)(M/P).
+(437) [Ἐτεοκλής:] auch diesem zum|Vorteil Gewinn anderer entsteht.
+(438) [Ἐτεοκλής:] τῶν(Art)(G) τοι(Pt) ματαίων(Adj)(G) ἀνδράσιν(D) φρονημάτων(G)
+(438) [Ἐτεοκλής:] der ja nichtigen den|Männern Gesinnungen
+(439) [Ἐτεοκλής:] ἡ(Art)(N) γλῶσσʼ(N) ἀληθὴς(Adj)(N) γίγνεται(Prä)(M/P) κατήγορος(N)·
+(439) [Ἐτεοκλής:] die Zunge wahr wird Anklägerin·
+(440) [Ἐτεοκλής:] Καπανεὺς(N) δʼ(Pt) ἀπειλεῖ(Prä)(Akt), δρᾶν(Prä)(Inf)(Akt) παρεσκευασμένος(Per)(M/P)(N),
+(440) [Ἐτεοκλής:] Kapaneus aber droht, zu|tun vorbereitet|Gewordener,
+(441) [Ἐτεοκλής:] θεοὺς(A) ἀτίζων(Prä)(Akt)(N), κἀπογυμνάζων(Kon)(Prä)(Akt)(N) στόμα(A)
+(441) [Ἐτεοκλής:] Götter entehrend, und|ent|blößend Mund
+(442) [Ἐτεοκλής:] χαρᾷ(D) ματαίᾳ(Adj)(D) θνητὸς(Adj)(N) ὢν(Prä)(Akt)(N) εἰς(Prp) οὐρανὸν(A)
+(442) [Ἐτεοκλής:] mit|Freude eitler sterblicher seiend in Himmel
+(443) [Ἐτεοκλής:] πέμπει(Prä)(Akt) γεγωνὰ(Adj)(A) Ζηνὶ(D) κυμαίνοντʼ(Prä)(Akt)(A) ἔπη(A)·
+(443) [Ἐτεοκλής:] sendet laut|tönende dem|Zeus wogende Worte·
+(444) [Ἐτεοκλής:] πέποιθα(Per)(Akt) δʼ(Pt) αὐτῷ(Pr)(D) ξὺν(Prp) δίκῃ(D) τὸν(Art)(A) πυρφόρον(Adj)(A)
+(444) [Ἐτεοκλής:] ich|vertraue aber ihm mit Gerechtigkeit den feuer|tragenden
+(445) [Ἐτεοκλής:] ἥξειν(Fu)(Inf)(Akt) κεραυνόν(A), οὐδὲν(Pr)(A) ἐξῃκασμένον(Per)(M/P)(A)
+(445) [Ἐτεοκλής:] kommen|zu|werden Blitz, nichts ähnlich|gemacht|Gewordenes
+(446) [Ἐτεοκλής:] μεσημβρινοῖσι(Adj)(D) θάλπεσιν(D) τοῖς(Art)(D) ἡλίου(G).
+(446) [Ἐτεοκλής:] mittags|artigen Hitzen den der|Sonne.
+(447) [Ἐτεοκλής:] ἀνὴρ(N) δʼ(Pt) ἐπʼ(Prp) αὐτῷ(Pr)(D), κεἰ(Kon) στόμαργός(Adj)(N) ἐστʼ(Prä)(Akt) ἄγαν(Adv),
+(447) [Ἐτεοκλής:] Mann aber für ihn, und|wenn maul|wütig ist allzu,
+(448) [Ἐτεοκλής:] αἴθων(Adj)(N) τέτακται(Per)(M/P) λῆμα(N), Πολυφόντου(G) βία(N),
+(448) [Ἐτεοκλής:] feurig ist|aufgestellt Entschluss, des|Polyphontes Kraft,
+(449) [Ἐτεοκλής:] φερέγγυον(Adj)(N) φρούρημα(N), προστατηρίας(Adj)(G)
+(449) [Ἐτεοκλής:] verlässlich Wacht, der|Schutz|herrin
+(450) [Ἐτεοκλής:] Ἀρτέμιδος(G) εὐνοίαισι(D) σύν(Prp) τʼ(Pt) ἄλλοις(Adj)(D) θεοῖς(D).
+(450) [Ἐτεοκλής:] der|Artemis Gunst zusammen|mit und anderen Göttern.
+(451) [Ἐτεοκλής:] λέγʼ(Prä)(Akt)(Imv) ἄλλον(Adj)(A) ἄλλαις(Adj)(D) ἐν(Prp) πύλαις(D) εἰληχότα(Per)(Akt)(A).
+(451) [Ἐτεοκλής:] sage einen|anderen anderen in Toren erlost|Habenden.
+(452) [Χορός:] ὄλοιθʼ(Aor)(M/P)(Op) ὃς(Pr)(N) πόλει(D) μεγάλʼ(Adv) ἐπεύχεται(Prä)(M/P),
+(452) [Χορός:] gehe|zugrunde wer der|Stadt große sich|rühmt,
+(453) [Χορός:] κεραυνοῦ(G) δέ(Pt) νιν(Pr)(A) βέλος(N) ἐπισχέθοι(Aor)(Akt)(Op),
+(453) [Χορός:] des|Blitzes aber ihn Geschoss möge|aufhalten,
+(454) [Χορός:] πρὶν(Kon) ἐμὸν(Adj)(A) ἐσθορεῖν(Prä)(Inf)(Akt) δόμον(A), πωλικῶν(Adj)(G)
+(454) [Χορός:] ehe mein hinein|zuspringen Haus, pferde|haften
+(455) [Χορός:] θʼ(Pt) ἑδωλίων(G) ὑπερκόπῳ(Adj)(D)
+(455) [Χορός:] und Sitze über|mütigem
+(456) [Χορός:] δορί(D) ποτʼ(Adv) ἐκλαπάξαι(Aor)(Inf)(Akt).
+(456) [Χορός:] mit|Speer einst weg|schlagen.
+(457) [Ἄγγελος:] καὶ(Kon) μὴν(Pt) τὸν(Art)(A) ἐντεῦθεν(Adv) λαχόντα(AorS)(Akt)(A) πρὸς(Prp) πύλαις(D)
+(457) [Ἄγγελος:] und gewiss den von|hier erlost|Habenden zu Toren
+(458) [Ἄγγελος:] λέξω(Fu)(Akt)· τρίτῳ(Adj)(D) γὰρ(Pt) Ἐτεόκλῳ(D) τρίτος(Adj)(N) πάλος(N)
+(458) [Ἄγγελος:] werde|sagen· dem|dritten denn Eteokles dritter Los|stab
+(459) [Ἄγγελος:] ἐξ(Prp) ὑπτίου(Adj)(G) ʼπήδησεν(Aor)(Akt) εὐχάλκου(Adj)(G) κράνους(G),
+(459) [Ἄγγελος:] aus rück|seitigen sprang|heraus wohl|erznen Helmes,
+(460) [Ἄγγελος:] πύλαισι(D) Νηίστῃσι(D) προσβαλεῖν(Aor)(Inf)(Akt) λόχον(A).
+(460) [Ἄγγελος:] Toren den|Neistischen heran|zu|werfen Trupp.
+(461) [Ἄγγελος:] ἵππους(A) δʼ(Pt) ἐν(Prp) ἀμπυκτῆρσιν(D) ἐμβριμωμένας(Prä)(M/P)(A)
+(461) [Ἄγγελος:] Pferde aber in Trensen schnaufend|seiende
+(462) [Ἄγγελος:] δινεῖ(Prä)(Akt), θελούσας(Prä)(Akt)(A) πρὸς(Prp) πύλαις(D) πεπτωκέναι(Per)(Inf)(Akt).
+(462) [Ἄγγελος:] wirbelt, wollende bei Toren gefallen|zu|sein.
+(463) [Ἄγγελος:] φιμοὶ(N) δὲ(Pt) συρίζουσι(Prä)(Akt) βάρβαρον(Adj)(A) τρόπον(A),
+(463) [Ἄγγελος:] Knebel aber pfeifen barbarische Weise,
+(464) [Ἄγγελος:] μυκτηροκόμποις(Adj)(D) πνεύμασιν(D) πληρούμενοι(Prä)(M/P)(N).
+(464) [Ἄγγελος:] nasen|prahlerischen Atem|zügen erfüllt|werdende.
+(465) [Ἄγγελος:] ἐσχημάτισται(Per)(M/P) δʼ(Pt) ἀσπὶς(N) οὐ(Pt) σμικρὸν(Adj)(A) τρόπον(A)·
+(465) [Ἄγγελος:] ist|gestaltet|worden aber Schild nicht klein Weise·
+(466) [Ἄγγελος:] ἀνὴρ(N) ὁπλίτης(N) κλίμακος(G) προσαμβάσεις(A)
+(466) [Ἄγγελος:] Mann Schwer|bewaffneter Leiter An|auf|stiege
+(467) [Ἄγγελος:] στείχει(Prä)(Akt) πρὸς(Prp) ἐχθρῶν(G) πύργον(A), ἐκπέρσαι(Aor)(Inf)(Akt) θέλων(Prä)(Akt)(N).
+(467) [Ἄγγελος:] schreitet gegen der|Feinde Turm, aus|plündern wollend.
+(468) [Ἄγγελος:] βοᾷ(Prä)(Akt) δὲ(Pt) χοὖτος(Kon)(Pr)(N) γραμμάτων(G) ἐν(Prp) ξυλλαβαῖς(D),
+(468) [Ἄγγελος:] ruft aber und|dieser der|Buchstaben in Silben,
+(469) [Ἄγγελος:] ὡς(Kon) οὐδʼ(Kon) ἂν(Pt) Ἄρης(N) σφʼ(Pr)(A) ἐκβάλοι(Aor)(Akt)(Op) πυργωμάτων(G).
+(469) [Ἄγγελος:] dass auch|nicht wohl Ares sie hinaus|werfen|würde der|Befestigungen.
+(470) [Ἄγγελος:] καὶ(Kon) τῷδε(Pr)(D) φωτὶ(D) πέμπε(Prä)(Akt)(Imv) τὸν(Art)(A) φερέγγυον(Adj)(A)
+(470) [Ἄγγελος:] und diesem Manne sende den verlässlichen
+(471) [Ἄγγελος:] πόλεως(G) ἀπείργειν(Prä)(Inf)(Akt) τῆσδε(Pr)(G) δούλιον(Adj)(A) ζυγόν(A).
+(471) [Ἄγγελος:] der|Stadt abzuwehren dieser knechtisches Joch.
+(472) [Ἐτεοκλής:] πέμποιμʼ(Aor)(Akt)(Op) ἂν(Pt) ἤδη(Adv) τόνδε(Pr)(A), σὺν(Prp) τύχῃ(D) δέ(Pt) τῳ(Pr)(D)·
+(472) [Ἐτεοκλής:] senden|würde|ich wohl schon diesen, mit Glück aber irgendeinem·
+(473) [Ἐτεοκλής:] καὶ(Kon) δὴ(Pt) πέπεμπται(Per)(M/P) κόμπον(A) ἐν(Prp) χεροῖν(Du)(D) ἔχων(Prä)(Akt)(N),
+(473) [Ἐτεοκλής:] und in|der|Tat ist|gesandt|worden Prahl|rede in beiden|Händen haltend,
+(474) [Ἐτεοκλής:] Μεγαρεύς(N), Κρέοντος(G) σπέρμα(N) τοῦ(Art)(G) σπαρτῶν(G) γένους(G),
+(474) [Ἐτεοκλής:] Megareus, des|Kreon Spross des Gesäten Geschlechts,
+(475) [Ἐτεοκλής:] ὃς(Pr)(N) οὔτι(Pt) μάργων(Prä)(Akt)(N) ἱππικῶν(Adj)(G) φρυαγμάτων(G)
+(475) [Ἐτεοκλής:] wer nicht|im|mindesten rasend pferdischen Wiehergeräusche
+(476) [Ἐτεοκλής:] βρόμον(A) φοβηθεὶς(Aor)(Pas)(N) ἐκ(Prp) πυλῶν(G) χωρήσεται(Fu)(M/P),
+(476) [Ἐτεοκλής:] Getöse gefürchtet|habend aus den|Toren wird|hinausgehen,
+(477) [Ἐτεοκλής:] ἀλλʼ(Kon) ἢ(Kon) θανὼν(AorS)(Akt)(N) τροφεῖα(A) πληρώσει(Fu)(Akt) χθονί(D),
+(477) [Ἐτεοκλής:] aber entweder gestorben|seiend Pflege|kosten wird|bezahlen der|Erde,
+(478) [Ἐτεοκλής:] ἢ(Kon) καὶ(Kon) δύʼ(Adj) ἄνδρε(Du)(N) καὶ(Kon) πόλισμʼ(A) ἐπʼ(Prp) ἀσπίδος(G)
+(478) [Ἐτεοκλής:] oder auch zwei Männer und Stadt|bild auf dem|Schild
+(479) [Ἐτεοκλής:] ἑλὼν(AorS)(Akt)(N) λαφύροις(D) δῶμα(A) κοσμήσει(Fu)(Akt) πατρός(G).
+(479) [Ἐτεοκλής:] genommen|habend mit|Beuten das|Haus wird|schmücken des|Vaters.
+(480) [Ἐτεοκλής:] κόμπαζʼ(Prä)(Akt)(Imv) ἐπʼ(Prp) ἄλλῳ(Adj)(D), μηδέ(Kon) μοι(Pr)(D) φθόνει(Prä)(Akt)(Imv) λέγων(Prä)(Akt)(N).
+(480) [Ἐτεοκλής:] prahle auf einen|anderen, auch|nicht mir missgönne sagend.
+(481) [Χορός:] ἐπεύχομαι(Prä)(M/P) τῷδε(Pr)(D) μὲν(Pt) εὐτυχεῖν(Prä)(Inf)(Akt), ἰὼ(ij)
+(481) [Χορός:] ich|bete diesem zwar zu|glücken, io
+(482) [Χορός:] πρόμαχʼ(V) ἐμῶν(Adj)(G) δόμων(G), τοῖσι(Art)(D) δὲ(Pt) δυστυχεῖν(Prä)(Inf)(Akt).
+(482) [Χορός:] Vor|kämpfer meiner Häuser, jenen aber zu|verunglücken.
+(483) [Χορός:] ὡς(Kon) δʼ(Pt) ὑπέραυχα(Adv) βάζουσιν(Prä)(Akt) ἐπὶ(Prp) πτόλει(D)
+(483) [Χορός:] wie aber über|stolz reden gegen der|Stadt
+(484) [Χορός:] μαινομένᾳ(Prä)(M/P)(D) φρενί(D), τώς(Adv) νιν(Pr)(A)
+(484) [Χορός:] rasend im|Geist, so ihn
+(485) [Χορός:] Ζεὺς(N) νεμέτωρ(N) ἐπίδοι(Aor)(Akt)(Op) κοταίνων(Prä)(Akt)(N).
+(485) [Χορός:] Zeus Zuteiler möge|hinblicken zürnend.
+(486) [Ἄγγελος:] τέταρτος(Adj)(N) ἄλλος(Adj)(N), γείτονας(Adj)(A) πύλας(A) ἔχων(Prä)(Akt)(N)
+(486) [Ἄγγελος:] der|vierte ein|anderer, benachbarte Tore habend
+(487) [Ἄγγελος:] Ὄγκας(G) Ἀθάνας(G), ξὺν(Prp) βοῇ(D) παρίσταται(Prä)(M/P),
+(487) [Ἄγγελος:] der|Onka Athene, mit Geschrei stellt|sich|bei,
+(488) [Ἄγγελος:] Ἱππομέδοντος(G) σχῆμα(N) καὶ(Kon) μέγας(Adj)(N) τύπος(N)·
+(488) [Ἄγγελος:] des|Hippomedon Gestalt und groß Typus·
+(489) [Ἄγγελος:] ἅλω(A) δὲ(Pt) πολλήν(Adj)(A), ἀσπίδος(G) κύκλον(A) λέγω(Prä)(Akt),
+(489) [Ἄγγελος:] Reifen aber großen, der|Schild Kreis sage|ich,
+(490) [Ἄγγελος:] ἔφριξα(Aor)(Akt) δινήσαντος(Aor)(Akt)(G)· οὐκ(Pt) ἄλλως(Adv) ἐρῶ(Fu)(Akt).
+(490) [Ἄγγελος:] ich|erschauerte wirbelnd· nicht anders werde|sagen.
+(491) [Ἄγγελος:] ὁ(Art)(N) σηματουργὸς(N) δʼ(Pt) οὔ(Pt) τις(Pr)(N) εὐτελὴς(Adj)(N) ἄρʼ(Pt) ἦν(Imp)(Akt)
+(491) [Ἄγγελος:] der Zeichen|arbeiter aber nicht irgend|einer gering ja war
+(492) [Ἄγγελος:] ὅστις(Pr)(N) τόδʼ(Pr)(A) ἔργον(A) ὤπασεν(Aor)(Akt) πρὸς(Prp) ἀσπίδι(D),
+(492) [Ἄγγελος:] wer dieses Werk verlieh an dem|Schild,
+(493) [Ἄγγελος:] Τυφῶνʼ(A) ἱέντα(Prä)(Akt)(A) πύρπνοον(Adj)(A) διὰ(Prp) στόμα(A)
+(493) [Ἄγγελος:] Typhon sendend feuer|atmend durch den|Mund
+(494) [Ἄγγελος:] λιγνὺν(A) μέλαιναν(Adj)(A), αἰόλην(Adj)(A) πυρὸς(G) κάσιν(A)·
+(494) [Ἄγγελος:] Ruß schwarz, schillernd des|Feuers Schwester·
+(495) [Ἄγγελος:] ὄφεων(G) δὲ(Pt) πλεκτάναισι(D) περίδρομον(Adj)(A) κύτος(A)
+(495) [Ἄγγελος:] der|Schlangen aber mit|Geflechten um|laufendes Bauch|hohlraum
+(496) [Ἄγγελος:] προσηδάφισται(Per)(M/P) κοιλογάστορος(Adj)(G) κύκλου(G).
+(496) [Ἄγγελος:] ist|angesetzt|worden des|hohlbäuchigen Kreises.
+(497) [Ἄγγελος:] αὐτὸς(Adj)(N) δʼ(Pt) ἐπηλάλαξεν(Aor)(Akt), ἔνθεος(Adj)(N) δʼ(Pt) Ἄρει(D)
+(497) [Ἄγγελος:] er|selbst aber schrie|laut, begeistert aber vom|Ares
+(498) [Ἄγγελος:] βακχᾷ(Prä)(M/P) πρὸς(Prp) ἀλκὴν(A) Θυιὰς(N) ὣς(Kon) φόβον(A) βλέπων(Prä)(Akt)(N).
+(498) [Ἄγγελος:] tobt|bacchisch zur Abwehr Thyade wie Furcht blickend.
+(499) [Ἄγγελος:] τοιοῦδε(Adj)(G) φωτὸς(G) πεῖραν(A) εὖ(Adv) φυλακτέον(Adj)(N)·
+(499) [Ἄγγελος:] eines|solchen Mannes Probe gut ist|zu|bewachen·
+(500) [Ἄγγελος:] Φόβος(N) γὰρ(Pt) ἤδη(Adv) πρὸς(Prp) πύλαις(D) κομπάζεται(Prä)(M/P).
+(500) [Ἄγγελος:] Furcht denn schon bei den|Toren prahlt|sich.
+(501) [Ἐτεοκλής:] πρῶτον(Adv)(Sup) μὲν(Pt) Ὄγκα(N) Παλλάς(N), ἥτʼ(Pr)(N) ἀγχίπτολις(Adj)(N),
+(501) [Ἐτεοκλής:] zuerst zwar Onka Pallas, die|auch stadt|nahe,
+(502) [Ἐτεοκλής:] πύλαισι(D) γείτων(N), ἀνδρὸς(G) ἐχθαίρουσʼ(Prä)(Akt)(N) ὕβριν(A),
+(502) [Ἐτεοκλής:] den|Toren Nachbarin, des|Mannes verabscheuend Übermut,
+(503) [Ἐτεοκλής:] εἴρξει(Fu)(Akt) νεοσσῶν(G) ὣς(Kon) δράκοντα(A) δύσχιμον(Adj)(A)·
+(503) [Ἐτεοκλής:] wird|abwehren der|Nestlinge wie Drachen un|heil|voll·
+(504) [Ἐτεοκλής:] Ὑπέρβιος(N) δέ(Pt), κεδνὸς(Adj)(N) Οἴνοπος(G) τόκος(N),
+(504) [Ἐτεοκλής:] Hyperbios aber, tüchtig des|Oinops Spross,
+(505) [Ἐτεοκλής:] ἀνὴρ(N) κατʼ(Prp) ἄνδρα(A) τοῦτον(Pr)(A) ᾑρέθη(Aor)(Pas), θέλων(Prä)(Akt)(N)
+(505) [Ἐτεοκλής:] Mann gegen den|Mann diesen wurde|gewählt, willend
+(506) [Ἐτεοκλής:] ἐξιστορῆσαι(Aor)(Inf)(Akt) μοῖραν(A) ἐν(Prp) χρείᾳ(D) τύχης(G),
+(506) [Ἐτεοκλής:] aus|erzählen Anteil|Schicksal in Not des|Zufalls,
+(507) [Ἐτεοκλής:] οὔτʼ(Pt) εἶδος(A) οὔτε(Pt) θυμὸν(A) οὐδʼ(Pt) ὅπλων(G) σχέσιν(A)
+(507) [Ἐτεοκλής:] weder Gestalt noch Mut noch der|Waffen Handhabung
+(508) [Ἐτεοκλής:] μωμητός(Adj)(N), Ἑρμῆς(N) δʼ(Pt) εὐλόγως(Adv) ξυνήγαγεν(Aor)(Akt).
+(508) [Ἐτεοκλής:] tadelbar, Hermes aber mit|Recht hat|vereinigt.
+(509) [Ἐτεοκλής:] ἐχθρὸς(Adj)(N) γὰρ(Pt) ἁνὴρ(N) ἀνδρὶ(D) τῷ(Art)(D) ξυστήσεται(Fu)(M/P),
+(509) [Ἐτεοκλής:] feindlich denn Mann dem|Mann dem wird|zusammen|treten,
+(510) [Ἐτεοκλής:] ξυνοίσετον(Fu)(Akt)(Du) δὲ(Pt) πολεμίους(Adj)(A) ἐπʼ(Prp) ἀσπίδων(G)
+(510) [Ἐτεοκλής:] werden|beide|bringen aber Feinde auf den|Schildern
+(511) [Ἐτεοκλής:] θεούς(A)· ὁ(Art)(N) μὲν(Pt) γὰρ(Pt) πύρπνοον(Adj)(A) Τυφῶνʼ(A) ἔχει(Prä)(Akt),
+(511) [Ἐτεοκλής:] Götter· der zwar denn feuer|atmenden Typhon hat,
+(512) [Ἐτεοκλής:] Ὑπερβίῳ(D) δὲ(Pt) Ζεὺς(N) πατὴρ(N) ἐπʼ(Prp) ἀσπίδος(G)
+(512) [Ἐτεοκλής:] für|Hyperbios aber Zeus Vater auf dem|Schild
+(513) [Ἐτεοκλής:] σταδαῖος(Adj)(N) ἧσται(Per)(M/P), διὰ(Prp) χερὸς(G) βέλος(A) φλέγων(Prä)(Akt)(N)·
+(513) [Ἐτεοκλής:] stehend ist|gesetzt|worden, durch die|Hand Geschoss flammend·
+(514) [Ἐτεοκλής:] κοὔπω(Kon)(Pt)(Adv) τις(Pr)(N) εἶδε(Aor)(Akt) Ζῆνά(A) που(Adv) νικώμενον(Prä)(M/P)(A).
+(514) [Ἐτεοκλής:] und|noch|nicht jemand sah Zeus irgend|wo besiegt|werdend.
+(515) [Ἐτεοκλής:] τοιάδε(Adj)(N) μέντοι(Pt) προσφίλεια(N) δαιμόνων(G)·
+(515) [Ἐτεοκλής:] derart indes Zuneigung der|Daimonen·
+(516) [Ἐτεοκλής:] πρὸς(Prp) τῶν(Art)(G) κρατούντων(Prä)(Akt)(G) δʼ(Pt) ἐσμέν(Prä)(Akt), οἱ(Art)(N) δʼ(Pt) ἡσσωμένων(Prä)(M/P)(G),
+(516) [Ἐτεοκλής:] bei den Siegreichen aber sind|wir, die aber Unterlegenen,
+(517) [Ἐτεοκλής:] εἰ(Kon) Ζεύς(N) γε(Pt) Τυφῶ(G) καρτερώτερος(Adj)(N)(Kmp) μάχῃ(D)·
+(517) [Ἐτεοκλής:] wenn Zeus ja des|Typhon stärker im|Kampf·
+(518) [Ἐτεοκλής:] Ὑπερβίῳ(D) τε(Pt) πρὸς(Prp) λόγον(A) τοῦ(Art)(G) σήματος(G)
+(518) [Ἐτεοκλής:] für|Hyperbios und in|Bezug|auf Rede des Zeichens
+(519) [Ἐτεοκλής:] εἰκὸς(Adj)(N) δὲ(Pt) πράξειν(Fu)(Inf)(Akt) ἄνδρας(A) ὧδʼ(Adv) ἀντιστάτας(Adj)(A),
+(519) [Ἐτεοκλής:] wahrscheinlich aber zu|handeln Männer so Gegen|Steher,
+(520) [Ἐτεοκλής:] σωτὴρ(N) γένοιτʼ(Aor)(Med)(Op) ἂν(Pt) Ζεὺς(N) ἐπʼ(Prp) ἀσπίδος(G) τυχών(AorS)(Akt)(N).
+(520) [Ἐτεοκλής:] Retter würde|werden wohl Zeus auf dem|Schild zufällig|getroffen|habend.
+(521) [Χορός:] πέποιθα(Per)(Akt) δὴ(Pt) τὸν(Art)(A) Διὸς(G) ἀντίτυπον(Adj)(A) ἔχοντʼ(Prä)(Akt)(A)
+(521) [Χορός:] ich|vertraue wahrlich den des|Zeus Gegen|bild habend
+(522) [Χορός:] ἄφιλον(Adj)(A) ἐν(Prp) σάκει(D) τοῦ(Art)(G) χθονίου(Adj)(G) δέμας(A)
+(522) [Χορός:] feindlich im Schild des unter|irdischen Leib
+(523) [Χορός:] δαίμονος(G), ἐχθρὸν(Adj)(A) εἴκασμα(A) βροτοῖς(D) τε(Pt) καὶ(Kon)
+(523) [Χορός:] des|Daimons, feindliches Ab|bild den|Sterblichen und auch
+(524) [Χορός:] δαροβίοισι(Adj)(D) θεοῖσιν(D),
+(524) [Χορός:] lang|lebigen Göttern,
+(525) [Χορός:] πρόσθε(Adv) πυλᾶν(G) κεφαλὰν(A) ἰάψειν(Fu)(Inf)(Akt).
+(525) [Χορός:] vorne der|Tore Haupt zu|werfen.
+(526) [Ἄγγελος:] οὕτως(Adv) γένοιτο(Aor)(Med)(Op). τὸν(Art)(A) δὲ(Pt) πέμπτον(Adj)(A) αὖ(Adv) λέγω(Prä)(Akt),
+(526) [Ἄγγελος:] so möge|werden. den aber fünften wieder sage|ich,
+(527) [Ἄγγελος:] πέμπταισι(Adj)(D) προσταχθέντα(Aor)(Pas)(A) Βορραίαις(Adj)(D) πύλαις(D),
+(527) [Ἄγγελος:] fünften befohlen|worden nördlichen Toren,
+(528) [Ἄγγελος:] τύμβον(A) κατʼ(Prp) αὐτὸν(Pr)(A) Διογενοῦς(Adj)(G) Ἀμφίονος(G)·
+(528) [Ἄγγελος:] Grab nahe|bei ihm Zeus|geborenen des|Amphion·
+(529) [Ἄγγελος:] ὄμνυσι(Prä)(Akt) δʼ(Pt) αἰχμὴν(A) ἣν(Pr)(A) ἔχει(Prä)(Akt) μᾶλλον(Adv)(Kmp) θεοῦ(G)
+(529) [Ἄγγελος:] er|schwört aber Speer|spitze die er|hat mehr als|des|Gottes
+(530) [Ἄγγελος:] σέβειν(Prä)(Inf)(Akt) πεποιθὼς(Per)(Akt)(N) ὀμμάτων(G) θʼ(Pt) ὑπέρτερον(Adj)(A)(Kmp),
+(530) [Ἄγγελος:] zu|ehren vertrauend|gewesen der|Augen und höher,
+(531) [Ἄγγελος:] ἦ(Pt) μὴν(Pt) λαπάξειν(Aor)(Inf)(Akt) ἄστυ(A) Καδμείων(Adj)(G) βίᾳ(D)
+(531) [Ἄγγελος:] wahrlich gewiß aus|plündern Stadt der|Kadmäer mit|Gewalt
+(532) [Ἄγγελος:] Διός(G)· τόδʼ(Pr)(N) αὐδᾷ(Prä)(Akt) μητρὸς(G) ἐξ(Prp) ὀρεσκόου(Adj)(G)
+(532) [Ἄγγελος:] des|Zeus· dies sagt|er der|Mutter aus berg|wohnenden
+(533) [Ἄγγελος:] βλάστημα(N) καλλίπρῳρον(Adj)(N), ἀνδρόπαις(N) ἀνήρ(N)·
+(533) [Ἄγγελος:] Spross schön|gefrontet, Mann|Knabe Mann·
+(534) [Ἄγγελος:] στείχει(Prä)(Akt) δʼ(Pt) ἴουλος(Adj)(N) ἄρτι(Adv) διὰ(Prp) παρηίδων(G),
+(534) [Ἄγγελος:] geht aber flaumig soeben über die|Wangen,
+(535) [Ἄγγελος:] ὥρας(G) φυούσης(Prä)(M/P)(G), ταρφὺς(Adj)(N) ἀντέλλουσα(Prä)(Akt)(N) θρίξ(N).
+(535) [Ἄγγελος:] der|Reife wachsend, dicht auf|gehend Haar.
+(536) [Ἄγγελος:] ὁ(Art)(N) δʼ(Pt) ὠμόν(Adj)(N), οὔτι(Pt) παρθένων(G) ἐπώνυμον(Adj)(N),
+(536) [Ἄγγελος:] sein aber roh, keineswegs von|Jungfrauen bei|namig,
+(537) [Ἄγγελος:] φρόνημα(N), γοργὸν(Adj)(A) δʼ(Pt) ὄμμʼ(A) ἔχων(Prä)(Akt)(N), προσίσταται(Prä)(M/P).
+(537) [Ἄγγελος:] Sinn, schnelles aber Auge habend, tritt|heran.
+(538) [Ἄγγελος:] οὐ(Pt) μὴν(Pt) ἀκόμπαστός(Adj)(N) γʼ(Pt) ἐφίσταται(Prä)(M/P) πύλαις(D)·
+(538) [Ἄγγελος:] nicht doch ohne|Prahlen ja stellt|sich|zu den|Toren·
+(539) [Ἄγγελος:] τὸ(Art)(N) γὰρ(Pt) πόλεως(G) ὄνειδος(N) ἐν(Prp) χαλκηλάτῳ(Adj)(D)
+(539) [Ἄγγελος:] das denn der|Stadt Schmach in erz|geschmiedeten
+(540) [Ἄγγελος:] σάκει(D), κυκλωτῷ(Adj)(D) σώματος(G) προβλήματι(D),
+(540) [Ἄγγελος:] Schild, kreis|förmigen des|Körpers Vorsprung,
+(541) [Ἄγγελος:] Σφίγγʼ(A) ὠμόσιτον(Adj)(A) προσμεμηχανημένην(Per)(M/P)(A)
+(541) [Ἄγγελος:] Sphinx roh|fleisch|fressend hinzu|ausgedacht|worden
+(542) [Ἄγγελος:] γόμφοις(D) ἐνώμα(Aor)(Akt), λαμπρὸν(Adj)(A) ἔκκρουστον(Adj)(A) δέμας(A),
+(542) [Ἄγγελος:] mit|Zapfen genagelt, glänzenden aus|gehämmerten Leib,
+(543) [Ἄγγελος:] φέρει(Prä)(Akt) δʼ(Pt) ὑφʼ(Prp) αὑτῇ(Pr)(D) φῶτα(A) Καδμείων(Adj)(G) ἕνα(Adj)(A),
+(543) [Ἄγγελος:] trägt aber unter sich|selbst Mann der|Kadmäer einen,
+(544) [Ἄγγελος:] ὡς(Kon) πλεῖστʼ(Adj)(N)(Sup) ἐπʼ(Prp) ἀνδρὶ(D) τῷδʼ(Pr)(D) ἰάπτεσθαι(Prä)(M/P)(Inf) βέλη(N).
+(544) [Ἄγγελος:] damit die|meisten auf Mann diesem geschleudert|werden Wurf|spieße.
+(545) [Ἄγγελος:] ἐλθὼν(AorS)(Akt)(N) δʼ(Pt) ἔοικεν(Per)(Akt) οὐ(Pt) καπηλεύσειν(Fu)(Inf)(Akt) μάχην(A),
+(545) [Ἄγγελος:] gekommen|seiend aber scheint nicht Kampf|zu|feilbieten Schlacht,
+(546) [Ἄγγελος:] μακρᾶς(Adj)(G) κελεύθου(G) δʼ(Pt) οὐ(Pt) καταισχυνεῖν(Prä)(Inf)(Akt) πόρον(A),
+(546) [Ἄγγελος:] langen Weges aber nicht entehren den|Durchgang,
+(547) [Ἄγγελος:] ὁ(Art)(N) Παρθενοπαῖος(N) Ἀρκάς(N)· ὁ(Art)(N) δὲ(Pt) τοιόσδʼ(Adj)(N) ἀνὴρ(N)
+(547) [Ἄγγελος:] der Parthenopaios Arkadier· der aber solcher Mann
+(548) [Ἄγγελος:] μέτοικος(N), Ἄργει(D) δʼ(Pt) ἐκτίνων(Prä)(Akt)(N) καλὰς(Adj)(A) τροφάς(A),
+(548) [Ἄγγελος:] Zugezogener, in|Argos aber abtragend schöne Pflegen,
+(549) [Ἄγγελος:] πύργοις(D) ἀπειλεῖ(Prä)(Akt) τοῖσδʼ(Art)(D) ἃ(Pr)(A) μὴ(Pt) κραίνοι(Prä)(Akt)(Op) θεός(N).
+(549) [Ἄγγελος:] den|Türmen droht diesen was nicht erfülle Gott.
+(550) [Ἐτεοκλής:] εἰ(Kon) γὰρ(Pt) τύχοιεν(Aor)(Akt)(Op) ὧν(Pr)(G) φρονοῦσι(Prä)(Akt) πρὸς(Prp) θεῶν(G),
+(550) [Ἐτεοκλής:] wenn denn erlangten|sie deren denken|sie von den|Göttern,
+(551) [Ἐτεοκλής:] αὐτοῖς(Pr)(D) ἐκείνοις(Pr)(D) ἀνοσίοις(Adj)(D) κομπάσμασιν(D)·
+(551) [Ἐτεοκλής:] mit|jenen selbigen gottlosen Prahlreden·
+(552) [Ἐτεοκλής:] ἦ(Pt) τἂν(Pt) πανώλεις(Adj)(N) παγκάκως(Adv) τʼ(Pt) ὀλοίατο(Aor)(M/P)(Op).
+(552) [Ἐτεοκλής:] wahrlich wohl ganz|vernichtet ganz|schlecht und würden|zugrunde|gehen.
+(553) [Ἐτεοκλής:] ἔστιν(Prä)(Akt) δὲ(Pt) καὶ(Kon) τῷδʼ(Pr)(D), ὃν(Pr)(A) λέγεις(Prä)(Akt) τὸν(Art)(A) Ἀρκάδα(A),
+(553) [Ἐτεοκλής:] ist aber auch diesem, den du|sagst den Arkadier,
+(554) [Ἐτεοκλής:] ἀνὴρ(N) ἄκομπος(Adj)(N), χεὶρ(N) δʼ(Pt) ὁρᾷ(Prä)(Akt) τὸ(Art)(A) δράσιμον(Adj)(A),
+(554) [Ἐτεοκλής:] Mann unprahlerisch, Hand aber sieht das Machbare,
+(555) [Ἐτεοκλής:] Ἄκτωρ(N) ἀδελφὸς(N) τοῦ(Art)(G) πάρος(Adv) λελεγμένου(Per)(M/P)(G)·
+(555) [Ἐτεοκλής:] Aktor Bruder des früher genannt|Gewesenen·
+(556) [Ἐτεοκλής:] ὃς(Pr)(N) οὐκ(Pt) ἐάσει(Fu)(Akt) γλῶσσαν(A) ἐργμάτων(G) ἄτερ(Prp)
+(556) [Ἐτεοκλής:] welcher nicht wird|zulassen Zunge der|Werke ohne
+(557) [Ἐτεοκλής:] ἔσω(Adv) πυλῶν(G) ῥέουσαν(Prä)(Akt)(A) ἀλδαίνειν(Prä)(Inf)(Akt) κακά(A),
+(557) [Ἐτεοκλής:] hinein der|Tore strömend nähren Übel,
+(558) [Ἐτεοκλής:] οὐδʼ(Pt) εἰσαμεῖψαι(Aor)(Inf)(Akt) θηρὸς(G) ἐχθίστου(Adj)(G)(Sup) δάκους(G)
+(558) [Ἐτεοκλής:] noch einlassen des|Tieres feindlichsten Bisses
+(559) [Ἐτεοκλής:] εἰκὼ(A) φέροντα(Prä)(Akt)(A) πολεμίας(Adj)(G) ἐπʼ(Prp) ἀσπίδος(G)·
+(559) [Ἐτεοκλής:] Bild tragend feindlichen auf des|Schildes·
+(560) [Ἐτεοκλής:] ἣ(Pr)(N) ʼξωθεν(Adv) εἴσω(Adv) τῷ(Art)(D) φέροντι(Prä)(Akt)(D) μέμψεται(Fu)(M/P),
+(560) [Ἐτεοκλής:] die von|außen nach|innen dem Tragenden wird|tadeln,
+(561) [Ἐτεοκλής:] πυκνοῦ(Adj)(G) κροτησμοῦ(G) τυγχάνουσʼ(Prä)(Akt)(N) ὑπὸ(Prp) πτόλιν(A).
+(561) [Ἐτεοκλής:] dichten Klapperns erlangend unter Stadt.
+(562) [Ἐτεοκλής:] θεῶν(G) θελόντων(Prä)(Akt)(G) τἂν(Pt) ἀληθεύσαιμʼ(Aor)(Akt)(Op) ἐγώ(Pr)(N).
+(562) [Ἐτεοκλής:] der|Götter wollenden wohl würde|wahr|sagen ich.
+(563) [Χορός:] ἱκνεῖται(Prä)(M/P) λόγος(N) διὰ(Prp) στηθέων(G),
+(563) [Χορός:] gelangt Rede durch der|Brüste,
+(564) [Χορός:] τριχὸς(G) δʼ(Pt) ὀρθίας(Adj)(G) πλόκαμος(N) ἵσταται(Prä)(M/P),
+(564) [Χορός:] des|Haares aber aufrechte Locke stellt|sich|auf,
+(565) [Χορός:] μεγάλα(Adj)(A) μεγαληγόρων(Adj)(G) κλυούσᾳ(Prä)(Akt)(D)
+(565) [Χορός:] große der|Großredenden hörend
+(566) [Χορός:] ἀνοσίων(Adj)(G) ἀνδρῶν(G). εἴθε(Pt) γὰρ(Pt) θεοὶ(N)
+(566) [Χορός:] gottloser Männer. möchten denn Götter
+(567) [Χορός:] τοῦδʼ(Pr)(G) ὀλέσειαν(Aor)(Akt)(Op) ἐν(Prp) γᾷ(D).
+(567) [Χορός:] dieses möchten|vernichten in der|Erde.
+(568) [Ἄγγελος:] ἕκτον(Adj)(A) λέγοιμʼ(Prä)(Akt)(Op) ἂν(Pt) ἄνδρα(A) σωφρονέστατον(Adj)(A)(Sup),
+(568) [Ἄγγελος:] sechsten würde|sagen wohl Mann besonnensten,
+(569) [Ἄγγελος:] ἀλκήν(A) τʼ(Pt) ἄριστον(Adj)(A)(Sup) μάντιν(A), Ἀμφιάρεω(G) βίαν(A)·
+(569) [Ἄγγελος:] Abwehr und besten Seher, des|Amphiaraos Kraft·
+(570) [Ἄγγελος:] Ὁμολωίσιν(Adj)(D) δὲ(Pt) πρὸς(Prp) πύλαις(D) τεταγμένος(Per)(M/P)(N)
+(570) [Ἄγγελος:] bei|den|Homoloischen aber zu Toren eingesetzt|Gewordener
+(571) [Ἄγγελος:] κακοῖσι(Adj)(D) βάζει(Prä)(Akt) πολλὰ(Adj)(A) Τυδέως(G) βίαν(A)·
+(571) [Ἄγγελος:] üblen spricht vieles des|Tydeus Gewalt·
+(572) [Ἄγγελος:] τὸν(Art)(A) ἀνδροφόντην(A), τὸν(Art)(A) πόλεως(G) ταράκτορα(A),
+(572) [Ἄγγελος:] den Männer|Mörder, den der|Stadt Störer,
+(573) [Ἄγγελος:] μέγιστον(Adj)(A)(Sup) Ἄργει(D) τῶν(Art)(G) κακῶν(Adj)(G) διδάσκαλον(A),
+(573) [Ἄγγελος:] größten in|Argos der Übel Lehrer,
+(574) [Ἄγγελος:] Ἐρινύος(G) κλητῆρα(A), πρόσπολον(A) φόνου(G),
+(574) [Ἄγγελος:] der|Erinys Herbeirufer, Begleiter des|Mordes,
+(575) [Ἄγγελος:] κακῶν(Adj)(G) τʼ(Pt) Ἀδράστῳ(D) τῶνδε(Pr)(G) βουλευτήριον(N).
+(575) [Ἄγγελος:] Übel und dem|Adrastos dieser Rat|stätte.
+(576) [Ἄγγελος:] καὶ(Kon) τὸν(Art)(A) σὸν(Adj)(A) αὖθις(Adv) προσθροῶν(Prä)(Akt)(N) ὁμόσπορον(Adj)(A),
+(576) [Ἄγγελος:] und den deinen wieder anrufend gleich|gesäten,
+(577) [Ἄγγελος:] ἐξυπτιάζων(Prä)(Akt)(N) ὄμμα(A), Πολυνείκους(G) βίαν(A),
+(577) [Ἄγγελος:] zurückwerfend Auge, des|Polyneikes Kraft,
+(578) [Ἄγγελος:] δίς(Adv) τʼ(Pt) ἐν(Prp) τελευτῇ(D) τοὔνομʼ(A) ἐνδατούμενος(Prä)(M/P)(N),
+(578) [Ἄγγελος:] zweimal und in Ende das|Name kostend,
+(579) [Ἄγγελος:] καλεῖ(Prä)(Akt). λέγει(Prä)(Akt) δὲ(Pt) τοῦτʼ(Pr)(A) ἔπος(A) διὰ(Prp) στόμα(A)·
+(579) [Ἄγγελος:] ruft. sagt aber dieses Wort durch den|Mund·
+(580) [Ἄγγελος:] ἦ(Pt) τοῖον(Adj)(A) ἔργον(A) καὶ(Kon) θεοῖσι(D) προσφιλές(Adj)(N),
+(580) [Ἄγγελος:] wahrlich solches Werk auch den|Göttern lieb,
+(581) [Ἄγγελος:] καλόν(Adj)(N) τʼ(Pt) ἀκοῦσαι(Aor)(Inf)(Akt) καὶ(Kon) λέγειν(Prä)(Inf)(Akt) μεθυστέροις(Adj)(D)(Kmp),
+(581) [Ἄγγελος:] schön und zu|hören und zu|sagen den|Trunkeneren,
+(582) [Ἄγγελος:] πόλιν(A) πατρῴαν(Adj)(A) καὶ(Kon) θεοὺς(A) τοὺς(Art)(A) ἐγγενεῖς(Adj)(A)
+(582) [Ἄγγελος:] Stadt väterliche und Götter die einheimischen
+(583) [Ἄγγελος:] πορθεῖν(Prä)(Inf)(Akt), στράτευμʼ(A) ἐπακτὸν(Adj)(A) ἐμβεβληκότα(Per)(Akt)(A);
+(583) [Ἄγγελος:] verwüsten, Heer angeheuert eingedrungen|Habendes;
+(584) [Ἄγγελος:] μητρός(G) τε(Pt) πηγὴν(A) τίς(Pr)(N) κατασβέσει(Fu)(Akt) δίκη(N);
+(584) [Ἄγγελος:] der|Mutter und Quelle wer wird|auslöschen Recht;
+(585) [Ἄγγελος:] πατρίς(N) τε(Pt) γαῖα(N) σῆς(Adj)(G) ὑπὸ(Prp) σπουδῆς(G) δορὶ(D)
+(585) [Ἄγγελος:] Vaterland und Erde deiner unter Eifer mit|dem|Speer
+(586) [Ἄγγελος:] ἁλοῦσα(AorS)(M/P)(N) πῶς(Adv) σοι(Pr)(D) ξύμμαχος(Adj)(N) γενήσεται(Fu)(M/P);
+(586) [Ἄγγελος:] eingenommen|seiend wie dir verbündet wird|werden;
+(587) [Ἄγγελος:] ἔγωγε(Pr)(N) μὲν(Pt) δὴ(Pt) τήνδε(Pr)(A) πιανῶ(Fu)(Akt) χθόνα(A),
+(587) [Ἄγγελος:] ich|zumindest zwar wahrlich diese werde|fruchtbar|machen Erde,
+(588) [Ἄγγελος:] μάντις(N) κεκευθὼς(Per)(M/P)(N) πολεμίας(Adj)(G) ὑπὸ(Prp) χθονός(G).
+(588) [Ἄγγελος:] Seher verborgen|seiend feindlichen unter der|Erde.
+(589) [Ἄγγελος:] μαχώμεθʼ(Prä)(M/P), οὐκ(Pt) ἄτιμον(Adj)(A) ἐλπίζω(Prä)(Akt) μόρον(A).
+(589) [Ἄγγελος:] kämpfen|wir, nicht unehrenhaften ich|hoffe Tod.
+(590) [Ἄγγελος:] τοιαῦθʼ(Adj)(A) ὁ(Art)(N) μάντις(N) ἀσπίδʼ(A) εὐκήλως(Adv) ἔχων(Prä)(Akt)(N)
+(590) [Ἄγγελος:] solches der Seher Schild glatt haltend
+(591) [Ἄγγελος:] πάγχαλκον(Adj)(A) ηὔδα(Imp)(Akt)· σῆμα(N) δʼ(Pt) οὐκ(Pt) ἐπῆν(Imp)(Akt) κύκλῳ(D).
+(591) [Ἄγγελος:] ganz|erznen sprach· Zeichen aber nicht war im|Kreis.
+(592) [Ἄγγελος:] οὐ(Pt) γὰρ(Pt) δοκεῖν(Prä)(Inf)(Akt) ἄριστος(Adj)(N)(Sup), ἀλλʼ(Kon) εἶναι(Prä)(Inf)(Akt) θέλει(Prä)(Akt),
+(592) [Ἄγγελος:] nicht denn scheinen der|beste, sondern sein will,
+(593) [Ἄγγελος:] βαθεῖαν(Adj)(A) ἄλοκα(A) διὰ(Prp) φρενὸς(G) καρπούμενος(Prä)(M/P)(N),
+(593) [Ἄγγελος:] tiefe Furche durch des|Verstandes erntend,
+(594) [Ἄγγελος:] ἐξ(Prp) ἧς(Pr)(G) τὰ(Art)(N) κεδνὰ(Adj)(N) βλαστάνει(Prä)(Akt) βουλεύματα(N).
+(594) [Ἄγγελος:] aus der die nützlichen sprießt Beschlüsse.
+(595) [Ἄγγελος:] τούτῳ(Pr)(D) σοφούς(Adj)(A) τε(Pt) κἀγαθοὺς(Kon)(Adj)(A) ἀντηρέτας(A)
+(595) [Ἄγγελος:] diesem weise und und|gute Gegen|wehrer
+(596) [Ἄγγελος:] πέμπειν(Prä)(Inf)(Akt) ἐπαινῶ(Prä)(Akt). δεινὸς(Adj)(N) ὃς(Pr)(N) θεοὺς(A) σέβει(Prä)(Akt).
+(596) [Ἄγγελος:] zu|senden lobe|ich. tüchtig wer Götter ehrt.
+(597) [Ἐτεοκλής:] φεῦ(ij) τοῦ(Art)(G) ξυναλλάσσοντος(Prä)(Akt)(G) ὄρνιθος(G) βροτοῖς(D)
+(597) [Ἐτεοκλής:] weh des vermittelnden Vogels den|Sterblichen
+(598) [Ἐτεοκλής:] δίκαιον(Adj)(A) ἄνδρα(A) τοῖσι(Art)(D) δυσσεβεστέροις(Adj)(D)(Kmp).
+(598) [Ἐτεοκλής:] gerechten Mann den gottloseren.
+(599) [Ἐτεοκλής:] ἐν(Prp) παντὶ(Adj)(D) πράγει(D) δʼ(Pt) ἔσθʼ(Prä)(Akt) ὁμιλίας(G) κακῆς(Adj)(G)
+(599) [Ἐτεοκλής:] in jedem Sache aber ist des|Umgangs schlechten
+(600) [Ἐτεοκλής:] κάκιον(Adj)(N)(Kmp) οὐδέν(Pr)(N), καρπὸς(N) οὐ(Pt) κομιστέος(Adj)(N)·
+(600) [Ἐτεοκλής:] schlechter nichts, Frucht nicht zu|holen·
+(601) [Ἐτεοκλής:] ἄτης(G) ἄρουρα(N) θάνατον(A) ἐκκαρπίζεται(Prä)(M/P).
+(601) [Ἐτεοκλής:] des|Unheils Acker Tod trägt|hervor.
+(602) [Ἐτεοκλής:] ἢ(Kon) γὰρ(Pt) ξυνεισβὰς(AorS)(Akt)(N) πλοῖον(A) εὐσεβὴς(Adj)(N) ἀνὴρ(N)
+(602) [Ἐτεοκλής:] entweder denn mit|hinein|gestiegen Schiff frommer Mann
+(603) [Ἐτεοκλής:] ναύταισι(D) θερμοῖς(Adj)(D) καὶ(Kon) πανουργίᾳ(D) τινὶ(Pr)(D)
+(603) [Ἐτεοκλής:] den|Seeleuten hitzigen und List irgendeiner
+(604) [Ἐτεοκλής:] ὄλωλεν(Per)(Akt) ἀνδρῶν(G) σὺν(Prp) θεοπτύστῳ(Adj)(D) γένει(D),
+(604) [Ἐτεοκλής:] ist|zugrunde|gegangen der|Männer mit götter|verhassten Geschlecht,
+(605) [Ἐτεοκλής:] ἢ(Kon) ξὺν(Prp) πολίταις(D) ἀνδράσιν(D) δίκαιος(Adj)(N) ὢν(Prä)(Akt)(N)
+(605) [Ἐτεοκλής:] oder mit Bürgern Männern gerecht seiend
+(606) [Ἐτεοκλής:] ἐχθροξένοις(Adj)(D) τε(Pt) καὶ(Kon) θεῶν(G) ἀμνήμοσιν(Adj)(D),
+(606) [Ἐτεοκλής:] gast|feindlichen und auch der|Götter vergesslichen,
+(607) [Ἐτεοκλής:] ταὐτοῦ(Pr)(G) κυρήσας(Aor)(Akt)(N) ἐκδίκως(Adv) ἀγρεύματος(G),
+(607) [Ἐτεοκλής:] des|selben getroffen|habend ungerecht Fangs,
+(608) [Ἐτεοκλής:] πληγεὶς(AorS)(Pas)(N) θεοῦ(G) μάστιγι(D) παγκοίνῳ(Adj)(D) ʼδάμη(AorS)(Pas).
+(608) [Ἐτεοκλής:] geschlagen|seiend des|Gottes mit|der|Geißel all|gemeinen wurde|bezähmt.
+(609) [Ἐτεοκλής:] οὕτως(Adv) δʼ(Pt) ὁ(Art)(N) μάντις(N), υἱὸν(A) Οἰκλέους(G) λέγω(Prä)(Akt),
+(609) [Ἐτεοκλής:] so aber der Seher, Sohn des|Oikleus sage|ich,
+(610) [Ἐτεοκλής:] σώφρων(Adj)(N) δίκαιος(Adj)(N) ἀγαθὸς(Adj)(N) εὐσεβὴς(Adj)(N) ἀνήρ(N),
+(610) [Ἐτεοκλής:] besonnen gerecht gut fromm Mann,
+(611) [Ἐτεοκλής:] μέγας(Adj)(N) προφήτης(N), ἀνοσίοισι(Adj)(D) συμμιγεὶς(AorS)(M/P)(N)
+(611) [Ἐτεοκλής:] großer Prophet, gottlosen zusammen|gekommen|seiend
+(612) [Ἐτεοκλής:] θρασυστόμοισιν(Adj)(D) ἀνδράσιν(D) βίᾳ(D) φρενῶν(G),
+(612) [Ἐτεοκλής:] groß|mäuligen Männern mit|Gewalt der|Sinne,
+(613) [Ἐτεοκλής:] τείνουσι(Prä)(Akt) πομπὴν(A) τὴν(Art)(A) μακρὰν(Adj)(A) πάλιν(Adv) μολεῖν(AorS)(Inf)(Akt),
+(613) [Ἐτεοκλής:] spannen Zug den langen wieder zu|kommen,
+(614) [Ἐτεοκλής:] Διὸς(G) θέλοντος(Prä)(Akt)(G) ξυγκαθελκυσθήσεται(Fu)(Pas).
+(614) [Ἐτεοκλής:] des|Zeus wollenden wird|zusammen|zurück|gezogen|werden.
+(615) [Ἐτεοκλής:] δοκῶ(Prä)(Akt) μὲν(Pt) οὖν(Pt) σφε(Pr)(A) μηδὲ(Kon) προσβαλεῖν(Aor)(Inf)(Akt) πύλαις(D)
+(615) [Ἐτεοκλής:] ich|meine zwar nun sie auch|nicht an|zugreifen den|Toren
+(616) [Ἐτεοκλής:] οὐχ(Pt) ὡς(Kon) ἄθυμος(Adj)(N) οὐδὲ(Kon) λήματος(G) κάκῇ(Adj)(D),
+(616) [Ἐτεοκλής:] nicht als|ob mutlos auch|nicht des|Sinnes schlechten,
+(617) [Ἐτεοκλής:] ἀλλʼ(Kon) οἶδεν(Per)(Akt) ὥς(Kon) σφε(Pr)(A) χρὴ(Prä)(Akt) τελευτῆσαι(Aor)(Inf)(Akt) μάχῃ(D),
+(617) [Ἐτεοκλής:] sondern weiß wie sie nötig|ist zu|enden im|Kampf,
+(618) [Ἐτεοκλής:] εἰ(Kon) καρπὸς(N) ἔσται(Fu)(Akt) θεσφάτοισι(D) Λοξίου(G)·
+(618) [Ἐτεοκλής:] wenn Frucht wird|sein den|Orakelsprüchen des|Loxias·
+(619) [Ἐτεοκλής:] φιλεῖ(Prä)(Akt) δὲ(Pt) σιγᾶν(Prä)(Inf)(Akt) ἢ(Kon) λέγειν(Prä)(Inf)(Akt) τὰ(Art)(A) καίρια(Adj)(A).
+(619) [Ἐτεοκλής:] pflegt aber zu|schweigen oder zu|sagen die treffenden.
+(620) [Ἐτεοκλής:] ὅμως(Adv) δʼ(Pt) ἐπʼ(Prp) αὐτῷ(Pr)(D) φῶτα(A), Λασθένους(G) βίαν(A),
+(620) [Ἐτεοκλής:] doch aber bei ihm Mann, des|Lasthenes Gewalt,
+(621) [Ἐτεοκλής:] ἐχθρόξενον(Adj)(A) πυλωρὸν(A) ἀντιτάξομεν(Fu)(Akt),
+(621) [Ἐτεοκλής:] fremden|feindlichen Torwächter werden|wir|entgegenstellen,
+(622) [Ἐτεοκλής:] γέροντα(Adj)(A) τὸν(Art)(A) νοῦν(A), σάρκα(A) δʼ(Pt) ἡβῶσαν(Prä)(Akt)(A) φύει(Prä)(Akt),
+(622) [Ἐτεοκλής:] alt den Sinn, Fleisch aber blühend lässt|wachsen,
+(623) [Ἐτεοκλής:] ποδῶκες(Adj)(A) ὄμμα(A), χεῖρα(A) δʼ(Pt) οὐ(Pt) βραδύνεται(Prä)(M/P)
+(623) [Ἐτεοκλής:] fuß|schnell Auge, Hand aber nicht zögert
+(624) [Ἐτεοκλής:] παρʼ(Prp) ἀσπίδος(G) γυμνωθὲν(Aor)(Pas)(A) ἁρπάσαι(Aor)(Inf)(Akt) δόρυ(A).
+(624) [Ἐτεοκλής:] bei des|Schildes entblößt|worden zu|raffen Speer.
+(625) [Ἐτεοκλής:] θεοῦ(G) δὲ(Pt) δῶρόν(A) ἐστιν(Prä)(Akt) εὐτυχεῖν(Prä)(Inf)(Akt) βροτούς(A).
+(625) [Ἐτεοκλής:] des|Gottes aber Geschenk ist Glück|haben Sterbliche.
+(626) [Χορός:] κλύοντες(Prä)(Akt)(N) θεοὶ(N) δικαίας(Adj)(A) λιτὰς(A)
+(626) [Χορός:] hörend Götter gerechte Bitten
+(627) [Χορός:] ἁμετέρας(Adj)(A) τελεῖθʼ(Prä)(M/P)(Imv), ὡς(Kon) πόλις(N) εὐτυχῇ(Prä)(Akt)(Knj),
+(627) [Χορός:] unsere vollbringt, dass Stadt glücke,
+(628) [Χορός:] δορίπονα(Adj)(A) κάκʼ(A) ἐκτρέποντες(Prä)(Akt)(N) ἐς(Prp) γᾶς(G)
+(628) [Χορός:] Speer|erkämpfte Übel abwendend in der|Erde
+(629) [Χορός:] ἐπιμόλους(Adj)(A)· πύργων(G) δʼ(Pt) ἔκτοθεν(Adv) βαλὼν(AorS)(Akt)(N)
+(629) [Χορός:] an|greifende· der|Türme aber von|außen geworfen|habend
+(630) [Χορός:] Ζεύς(N) σφε(Pr)(A) κάνοι(AorS)(Akt)(Op) κεραυνῷ(D).
+(630) [Χορός:] Zeus sie möge|erschlagen mit|dem|Blitz.
+(631) [Ἄγγελος:] τὸν(Art)(A) ἕβδομον(Adj)(A) δὴ(Pt) τόνδʼ(Pr)(A) ἐφʼ(Prp) ἑβδόμαις(Adj)(D) πύλαις(D)
+(631) [Ἄγγελος:] den siebten wahrlich diesen an den|siebenten Toren
+(632) [Ἄγγελος:] λέξω(Fu)(Akt), τὸν(Art)(A) αὐτοῦ(Pr)(G) σοῦ(Pr)(G) κασίγνητον(A), πόλει(D)
+(632) [Ἄγγελος:] werde|sagen, den eigenen deinen Bruder, der|Stadt
+(633) [Ἄγγελος:] οἵας(Pr)(A) ἀρᾶται(Prä)(M/P) καὶ(Kon) κατεύχεται(Prä)(M/P) τύχας(A)·
+(633) [Ἄγγελος:] welche verflucht und beschwört Schicksale·
+(634) [Ἄγγελος:] πύργοις(D) ἐπεμβὰς(AorS)(Akt)(N) κἀπικηρυχθεὶς(Kon)(Aor)(Pas)(N) χθονί(D),
+(634) [Ἄγγελος:] den|Türmen hinaufgestiegen|seiend und|ausgerufen|worden der|Erde,
+(635) [Ἄγγελος:] ἁλώσιμον(Adj)(A) παιᾶνʼ(A) ἐπεξιακχάσας(Aor)(Akt)(N),
+(635) [Ἄγγελος:] Eroberungs|würdig Paean aus|rufend|seiend,
+(636) [Ἄγγελος:] σοὶ(Pr)(D) ξυμφέρεσθαι(Prä)(M/P)(Inf) καὶ(Kon) κτανὼν(AorS)(Akt)(N) θανεῖν(AorS)(Inf)(Akt) πέλας(Adv),
+(636) [Ἄγγελος:] dir nützlich|sein und getötet|habend zu|sterben nahe,
+(637) [Ἄγγελος:] ἢ(Kon) ζῶντʼ(Prä)(Akt)(A) ἀτιμαστῆρα(A) τὼς(Kon) ἀνδρηλάτην(A)
+(637) [Ἄγγελος:] oder lebend Entehrer wie Männer|Vertreiber
+(638) [Ἄγγελος:] φυγῇ(D) τὸν(Art)(A) αὐτὸν(Pr)(A) τόνδε(Pr)(A) τείσασθαι(Aor)(Med)(Inf) τρόπον(A).
+(638) [Ἄγγελος:] durch|Verbannung den selben diesen zu|büßen Weise.
+(639) [Ἄγγελος:] τοιαῦτʼ(Adj)(A) ἀυτεῖ(Prä)(Akt) καὶ(Kon) θεοὺς(A) γενεθλίους(Adj)(A)
+(639) [Ἄγγελος:] solches ruft und Götter angestammte
+(640) [Ἄγγελος:] καλεῖ(Prä)(Akt) πατρῴας(Adj)(G) γῆς(G) ἐποπτῆρας(A) λιτῶν(G)
+(640) [Ἄγγελος:] ruft väterlichen der|Erde Aufseher der|Bitten
+(641) [Ἄγγελος:] τῶν(Art)(G) ὧν(Pr)(G) γενέσθαι(Aor)(Med)(Inf) πάγχυ(Adv) Πολυνείκους(G) βία(N).
+(641) [Ἄγγελος:] derer deren zu|geschehen ganz|völlig des|Polyneikes Gewalt.
+(642) [Ἄγγελος:] ἔχει(Prä)(Akt) δὲ(Pt) καινοπηγὲς(Adj)(A) εὔκυκλον(Adj)(A) σάκος(A)
+(642) [Ἄγγελος:] hat aber neu|gefertigt wohl|rund Schild
+(643) [Ἄγγελος:] διπλοῦν(Adj)(A) τε(Pt) σῆμα(A) προσμεμηχανημένον(Per)(M/P)(A).
+(643) [Ἄγγελος:] doppelt und Zeichen hinzu|ausgedacht|worden.
+(644) [Ἄγγελος:] χρυσήλατον(Adj)(A) γὰρ(Pt) ἄνδρα(A) τευχηστὴν(A) ἰδεῖν(AorS)(Inf)(Akt)
+(644) [Ἄγγελος:] gold|getrieben denn Mann Gerüsteten zu|sehen
+(645) [Ἄγγελος:] ἄγει(Prä)(Akt) γυνή(N) τις(Pr)(N) σωφρόνως(Adv) ἡγουμένη(Prä)(M/P)(N).
+(645) [Ἄγγελος:] führt Frau eine besonnen führend.
+(646) [Ἄγγελος:] Δίκη(N) δʼ(Pt) ἄρʼ(Pt) εἶναί(Prä)(Inf)(Akt) φησιν(Prä)(Akt), ὡς(Kon) τὰ(Art)(N) γράμματα(N)
+(646) [Ἄγγελος:] Dike aber ja zu|sein sagt, dass die Buchstaben
+(647) [Ἄγγελος:] λέγει(Prä)(Akt) κατάξω(Fu)(Akt) δʼ(Pt) ἄνδρα(A) τόνδε(Pr)(A) καὶ(Kon) πόλιν(A)
+(647) [Ἄγγελος:] sagt ich|werde|herab|führen aber Mann diesen und Stadt
+(648) [Ἄγγελος:] ἕξει(Fu)(Akt) πατρῴων(Adj)(G) δωμάτων(G) τʼ(Pt) ἐπιστροφάς(A).
+(648) [Ἄγγελος:] wird|haben väterlicher Häuser und Rück|kehren.
+(649) [Ἄγγελος:] τοιαῦτʼ(Adj)(N) ἐκείνων(Pr)(G) ἐστὶ(Prä)(Akt) τἀξευρήματα(N).
+(649) [Ἄγγελος:] solches jener ist die|Er|findungen.
+(650) [Ἄγγελος:] σὺ(Pr)(N) δʼ(Pt) αὐτὸς(Adj)(N) ἤδη(Adv) γνῶθι(AorS)(Akt)(Imv) τίνα(Pr)(A) πέμπειν(Prä)(Inf)(Akt) δοκεῖ(Prä)(Akt)·
+(650) [Ἄγγελος:] du aber selbst schon erkenne wen senden scheint·
+(651) [Ἄγγελος:] ὡς(Kon) οὔποτʼ(Adv) ἀνδρὶ(D) τῷδε(Pr)(D) κηρυκευμάτων(G)
+(651) [Ἄγγελος:] dass niemals dem|Mann diesem Herold|kundgaben
+(652) [Ἄγγελος:] μέμψῃ(Aor)(M/P)(Knj), σὺ(Pr)(N) δʼ(Pt) αὐτὸς(Adj)(N) γνῶθι(AorS)(Akt)(Imv) ναυκληρεῖν(Prä)(Inf)(Akt) πόλιν(A).
+(652) [Ἄγγελος:] tadeln|mögest, du aber selbst erkenne Schiffs|führen Stadt.
+(653) [Ἐτεοκλής:] ὦ(ij) θεομανές(Adj)(N) τε(Pt) καὶ(Kon) θεῶν(G) μέγα(Adj)(N) στύγος(N),
+(653) [Ἐτεοκλής:] o Gott|rasend und auch der|Götter großes Greuel,
+(654) [Ἐτεοκλής:] ὦ(ij) πανδάκρυτον(Adj)(N) ἁμὸν(Adj)(N) Οἰδίπου(G) γένος(N)·
+(654) [Ἐτεοκλής:] o all|tränenreich unser des|Ödipus Geschlecht·
+(655) [Ἐτεοκλής:] ὤμοι(ij), πατρὸς(G) δὴ(Pt) νῦν(Adv) ἀραὶ(N) τελεσφόροι(Adj)(N).
+(655) [Ἐτεοκλής:] weh, des|Vaters wahrlich nun Flüche erfüllungs|kräftig.
+(656) [Ἐτεοκλής:] ἀλλʼ(Kon) οὔτε(Kon) κλαίειν(Prä)(Inf)(Akt) οὔτʼ(Kon) ὀδύρεσθαι(Prä)(M/P)(Inf) πρέπει(Prä)(Akt),
+(656) [Ἐτεοκλής:] sondern weder weinen noch klagen ziemt,
+(657) [Ἐτεοκλής:] μὴ(Pt) καὶ(Kon) τεκνωθῇ(Aor)(Pas)(Knj) δυσφορώτερος(Adj)(N)(Kmp) γόος(N).
+(657) [Ἐτεοκλής:] damit|nicht auch gezeugt|werde beschwerlicher Klage.
+(658) [Ἐτεοκλής:] ἐπωνύμῳ(Adj)(D) δὲ(Pt) κάρτα(Adv), Πολυνείκει(D) λέγω(Prä)(Akt),
+(658) [Ἐτεοκλής:] beinahmigen aber sehr, dem|Polyneikes sage|ich,
+(659) [Ἐτεοκλής:] τάχʼ(Adv) εἰσόμεσθα(Fu)(M/P) τοὐπίσημʼ(A) ὅποι(Kon) τελεῖ(Prä)(Akt),
+(659) [Ἐτεοκλής:] bald werden|wir|wissen das|Zeichen wo vollendet,
+(660) [Ἐτεοκλής:] εἴ(Kon) νιν(Pr)(A) κατάξει(Fu)(Akt) χρυσότευκτα(Adj)(A) γράμματα(A)
+(660) [Ἐτεοκλής:] wenn ihn wird|herab|führen gold|gefertigte Buchstaben
+(661) [Ἐτεοκλής:] ἐπʼ(Prp) ἀσπίδος(G) φλύοντα(Prä)(Akt)(A) σὺν(Prp) φοίτῳ(D) φρενῶν(G).
+(661) [Ἐτεοκλής:] auf des|Schildes schäumende mit Um|her|irren der|Sinnen.
+(662) [Ἐτεοκλής:] εἰ(Kon) δʼ(Pt) ἡ(Art)(N) Διὸς(G) παῖς(N) παρθένος(N) Δίκη(N) παρῆν(Imp)(Akt)
+(662) [Ἐτεοκλής:] wenn aber die des|Zeus Tochter Jungfrau Dike anwesend|war
+(663) [Ἐτεοκλής:] ἔργοις(D) ἐκείνου(Pr)(G) καὶ(Kon) φρεσίν(D), τάχʼ(Adv) ἂν(Pt) τόδʼ(Pr)(N) ἦν(Imp)(Akt)·
+(663) [Ἐτεοκλής:] in|den|Werken jenes und Sinnen, bald wohl dieses war·
+(664) [Ἐτεοκλής:] ἀλλʼ(Kon) οὔτε(Kon) νιν(Pr)(A) φυγόντα(AorS)(Akt)(A) μητρόθεν(Adv) σκότον(A),
+(664) [Ἐτεοκλής:] aber weder ihn geflohen|habend von|der|Mutter|her Dunkel,
+(665) [Ἐτεοκλής:] οὔτʼ(Kon) ἐν(Prp) τροφαῖσιν(D), οὔτʼ(Kon) ἐφηβήσαντά(Aor)(Akt)(A) πω(Pt),
+(665) [Ἐτεοκλής:] noch in Auf|zuchten, noch erwachsen|geworden noch,
+(666) [Ἐτεοκλής:] οὔτʼ(Kon) ἐν(Prp) γενείου(G) ξυλλογῇ(D) τριχώματος(G),
+(666) [Ἐτεοκλής:] noch in des|Kinns Samm|lung des|Haars,
+(667) [Ἐτεοκλής:] Δίκη(N) προσεῖδε(AorS)(Akt) καὶ(Kon) κατηξιώσατο(Aor)(M/P)·
+(667) [Ἐτεοκλής:] Dike hin|blickte und würdigte|sich·
+(668) [Ἐτεοκλής:] οὐδʼ(Pt) ἐν(Prp) πατρῴας(Adj)(G) μὴν(Pt) χθονὸς(G) κακουχίᾳ(D)
+(668) [Ἐτεοκλής:] auch|nicht in väterlichen doch Erde Leiden
+(669) [Ἐτεοκλής:] οἶμαί(Prä)(Akt) νιν(Pr)(A) αὐτῷ(Pr)(D) νῦν(Adv) παραστατεῖν(Prä)(Inf)(Akt) πέλας(Adv).
+(669) [Ἐτεοκλής:] meine|ich ihn ihm nun beizu|stehen nah.
+(670) [Ἐτεοκλής:] ἦ(Pt) δῆτʼ(Pt) ἂν(Pt) εἴη(Prä)(Akt)(Op) πανδίκως(Adv) ψευδώνυμος(Adj)(N)
+(670) [Ἐτεοκλής:] gewiss wahrlich wohl wäre ganz|gerecht falsch|benannt
+(671) [Ἐτεοκλής:] Δίκη(N), ξυνοῦσα(Prä)(Akt)(N) φωτὶ(D) παντόλμῳ(Adj)(D) φρένας(A).
+(671) [Ἐτεοκλής:] Dike, zusammen|seiend dem|Mann all|wagemutigen Sinnen.
+(672) [Ἐτεοκλής:] τούτοις(Pr)(D) πεποιθὼς(Per)(Akt)(N) εἶμι(Prä)(Akt) καὶ(Kon) ξυστήσομαι(Fu)(M/P)
+(672) [Ἐτεοκλής:] auf|diese|vertraut vertraut|habend werde|gehen und werde|zusammen|treten
+(673) [Ἐτεοκλής:] αὐτός(Adj)(N)· τίς(Pr)(N) ἄλλος(Adj)(N) μᾶλλον(Adv)(Kmp) ἐνδικώτερος(Adj)(N)(Kmp);
+(673) [Ἐτεοκλής:] selbst· wer anderer mehr gerechter;
+(674) [Ἐτεοκλής:] ἄρχοντί(D) τʼ(Pt) ἄρχων(N) καὶ(Kon) κασιγνήτῳ(D) κάσις(N),
+(674) [Ἐτεοκλής:] dem|Herrscher und Herrscher und dem|Bruder Bruder,
+(675) [Ἐτεοκλής:] ἐχθρὸς(Adj)(N) σὺν(Prp) ἐχθρῷ(Adj)(D) στήσομαι(Fu)(M/P). φέρʼ(Prä)(Akt)(Imv) ὡς(Kon) τάχος(A)
+(675) [Ἐτεοκλής:] Feind mit Feind werde|stehen. auf|auf so schnell
+(676) [Ἐτεοκλής:] κνημῖδας(A), αἰχμῆς(G) καὶ(Kon) πέτρων(G) προβλήματα(A).
+(676) [Ἐτεοκλής:] Bein|schienen, der|Lanze und der|Steine Vor|lagen.
+(677) [Χορός:] μή(Pt), φίλτατʼ(Adj)(V)(Sup) ἀνδρῶν(G), Οἰδίπου(G) τέκος(N), γένῃ(Aor)(M/P)(Knj)
+(677) [Χορός:] nicht, liebster der|Männer, des|Ödipus Kind, werde
+(678) [Χορός:] ὀργὴν(A) ὁμοῖος(Adj)(N) τῷ(Art)(D) κάκιστʼ(Adj)(D)(Sup) αὐδωμένῳ(Per)(M/P)(D)·
+(678) [Χορός:] Zorn gleich dem schlechtesten aus|gesprochen|wordenen·
+(679) [Χορός:] ἀλλʼ(Kon) ἄνδρας(A) Ἀργείοισι(Adj)(D) Καδμείους(Adj)(A) ἅλις(Adv)
+(679) [Χορός:] sondern Männer den|Argivern Kadmäer genug
+(680) [Χορός:] ἐς(Prp) χεῖρας(A) ἐλθεῖν(AorS)(Inf)(Akt)· αἷμα(N) γὰρ(Pt) καθάρσιον(Adj)(N).
+(680) [Χορός:] zu Händen zu|kommen· Blut denn reinigend.
+(681) [Χορός:] ἀνδροῖν(Du)(G) δʼ(Pt) ὁμαίμοιν(Adj)(Du)(G) θάνατος(N) ὧδʼ(Adv) αὐτοκτόνος(Adj)(N),
+(681) [Χορός:] zweier|Männer aber gleich|blütigen Tod so selbst|tötend,
+(682) [Χορός:] οὐκ(Pt) ἔστι(Prä)(Akt) γῆρας(N) τοῦδε(Pr)(G) τοῦ(Art)(G) μιάσματος(G).
+(682) [Χορός:] nicht ist Alter dieses des Makels.
+(683) [Ἐτεοκλής:] εἴπερ(Kon) κακὸν(Adj)(A) φέροι(Prä)(Akt)(Knj) τις(Pr)(N), αἰσχύνης(G) ἄτερ(Prp)
+(683) [Ἐτεοκλής:] wenn|doch Übel trüge jemand, der|Schande ohne
+(684) [Ἐτεοκλής:] ἔστω(Prä)(Akt)(Imv)· μόνον(Adv) γὰρ(Pt) κέρδος(N) ἐν(Prp) τεθνηκόσι(Per)(Akt)(D)·
+(684) [Ἐτεοκλής:] sei· nur denn Gewinn bei den|Verstorbenen·
+(685) [Ἐτεοκλής:] κακῶν(Adj)(G) δὲ(Pt) κᾀσχρῶν(Kon)(Adj)(G) οὔτινʼ(Pr)(A) εὐκλείαν(A) ἐρεῖς(Fu)(Akt).
+(685) [Ἐτεοκλής:] der|Übel aber und|der|Schändlichen keine guten|Ruf wirst|sagen.
+=== Stasimon ===
+(686) [Χορός:] τί(Adv) μέμονας(Per)(Akt), τέκνον(N); μή(Pt) τί(Adv) σε(Pr)(A) θυμοπλη‖θὴς(Adj)(N)
+(686) [Χορός:] was bist|begierig, Kind; nicht etwa dich Zorn|voll
+(687) [Χορός:] δορίμαργος(Adj)(N) ἄτα(N) φερέτω(Prä)(Akt)(Imv)· κακοῦδʼ(Adj)(G)(Pt)
+(687) [Χορός:] Speer|rasend Unheil trage· des|Übels|aber
+(688) [Χορός:] ἔκβαλʼ(AorS)(Akt)(Imv) ἔρωτος(G) ἀρχάν(A).
+(688) [Χορός:] wirf|hinaus des|Eros Anfang.
+(689) [Ἐτεοκλής:] ἐπεὶ(Kon) τὸ(Art)(A) πρᾶγμα(A) κάρτʼ(Adv) ἐπισπέρχει(Prä)(Akt) θεός(N),
+(689) [Ἐτεοκλής:] da das Geschehen stark darauf|antreibt Gott,
+(690) [Ἐτεοκλής:] ἴτω(Prä)(Akt)(Imv) κατʼ(Prp) οὖρον(A) κῦμα(N) Κωκυτοῦ(G) λαχὸν(AorS)(Akt)(N)
+(690) [Ἐτεοκλής:] gehe hinab|auf günstigen|Wind Woge des|Kokytos erlangt|habend
+(691) [Ἐτεοκλής:] Φοίβῳ(D) στυγηθὲν(Aor)(Pas)(N) πᾶν(Adj)(N) τὸ(Art)(N) Λαΐου(G) γένος(N).
+(691) [Ἐτεοκλής:] von|Phoibos verhasst|geworden ganz das des|Laios Geschlecht.
+(692) [Χορός:] ὠμοδακής(Adj)(N) σʼ(Pr)(A) ἄγαν(Adv) ἵμερος(N) ἐξοτρύ‖νει(Prä)(Akt)
+(692) [Χορός:] roh|fressend dich allzu Begierde heraus|anstachelt
+(693) [Χορός:] πικρόκαρπον(Adj)(A) ἀνδροκτασίαν(A) τελεῖν(Prä)(Inf)(Akt)
+(693) [Χορός:] bitter|früchtig Männer|Tötung vollbringen
+(694) [Χορός:] αἵματος(G) οὐ(Pt) θεμιστοῦ(Adj)(G).
+(694) [Χορός:] von|Blut nicht gesetzmäßig.
+(695) [Ἐτεοκλής:] φίλου(Adj)(G) γὰρ(Pt) ἐχθρά(Adj)(N) μοι(Pr)(D) πατρὸς(G) τάλαινʼ(Adj)(N) ἀρὰ(N)
+(695) [Ἐτεοκλής:] des|lieben denn feindlich mir des|Vaters elend Fluch
+(696) [Ἐτεοκλής:] ξηροῖς(Adj)(D) ἀκλαύτοις(Adj)(D) ὄμμασιν(D) προσιζάνει(Prä)(Akt),
+(696) [Ἐτεοκλής:] trockenen ungeweinten Augen setzt|sich|dazu,
+(697) [Ἐτεοκλής:] λέγουσα(Prä)(Akt)(N) κέρδος(A) πρότερον(Adv)(Kmp) ὑστέρου(Adj)(G) μόρου(G).
+(697) [Ἐτεοκλής:] sagend Gewinn früher des|späteren Todes.
+(698) [Χορός:] ἀλλὰ(Kon) σὺ(Pr)(N) μὴ(Pt) ʼποτρύνου(Prä)(M/P)(Imv)· κακὸς(Adj)(N) οὐ(Pt) κεκλή‖σῃ(Per)(M/P)(Knj)
+(698) [Χορός:] aber du nicht treibe|ab· schlecht nicht wirst|genannt|werden
+(699) [Χορός:] βίον(A) εὖ(Adv) κυρήσας(Aor)(Akt)(N)· μελάναιγις(Adj)(N) οὐκ(Pt)
+(699) [Χορός:] Leben gut glück|gehabt|habend· schwarz|Aigis|tragend nicht
+(700) [Χορός:] εἶσι(Prä)(Akt) δόμων(G) Ἐρινύς(N), ὅταν(Kon) ἐκ(Prp) χερῶν(G)
+(700) [Χορός:] geht|hinein der|Häuser Erinys, wenn aus Händen
+(701) [Χορός:] θεοὶ(N) θυσίαν(A) δέχωνται(Prä)(M/P)(Knj);
+(701) [Χορός:] Götter Opfer empfangen;
+(702) [Ἐτεοκλής:] θεοῖς(D) μὲν(Pt) ἤδη(Adv) πως(Adv) παρημελήμεθα(Per)(M/P),
+(702) [Ἐτεοκλής:] von|den|Göttern zwar schon irgendwie sind|vernachlässigt|worden,
+(703) [Ἐτεοκλής:] χάρις(N) δʼ(Pt) ἀφʼ(Prp) ἡμῶν(Pr)(G) ὀλομένων(Aor)(M/P)(G) θαυμάζεται(Prä)(M/P)·
+(703) [Ἐτεοκλής:] Gunst aber von uns zugrunde|gegangener wird|bewundert·
+(704) [Ἐτεοκλής:] τί(Adv) οὖν(Pt) ἔτʼ(Adv) ἂν(Pt) σαίνοιμεν(Prä)(Akt)(Op) ὀλέθριον(Adj)(A) μόρον(A);
+(704) [Ἐτεοκλής:] warum also noch wohl würden|schmeicheln vernichtenden Tod;
+(705) [Χορός:] νῦν(Adv) ὅτε(Kon) σοι(Pr)(D) παρέστακεν(Per)(Akt)· ἐπεὶ(Kon) δαίμων(N)
+(705) [Χορός:] jetzt da dir beigestanden|hat· weil Daimon
+(706) [Χορός:] λήματος(G) ἐν(Prp) τροπαίᾳ(D) χρονίᾳ(Adj)(D) μεταλ‖λακτὸς(Adj)(N)
+(706) [Χορός:] des|Willens in Wendung lang|dauernden ver|änderlich
+(707) [Χορός:] ἴσως(Adv) ἂν(Pt) ἔλθοι(Aor)(Akt)(Op) θελεμωτέρῳ(Adj)(D)(Kmp)
+(707) [Χορός:] vielleicht wohl käme willigerem
+(708) [Χορός:] πνεύματι(D)· νῦν(Adv) δʼ(Pt) ἔτι(Adv) ζεῖ(Prä)(Akt).
+(708) [Χορός:] Geist· jetzt aber noch kocht.
+(709) [Ἐτεοκλής:] ἐξέζεσεν(Aor)(Akt) γὰρ(Pt) Οἰδίπου(G) κατεύγματα(A)·
+(709) [Ἐτεοκλής:] über|gekocht|ist denn des|Ödipus Verwünschungen·
+(710) [Ἐτεοκλής:] ἄγαν(Adv) δʼ(Pt) ἀληθεῖς(Adj)(N) ἐνυπνίων(G) φαντασμάτων(G)
+(710) [Ἐτεοκλής:] allzu aber wahrhaft der|Träume der|Erscheinungen
+(711) [Ἐτεοκλής:] ὄψεις(N), πατρῴων(Adj)(G) χρημάτων(G) δατήριοι(Adj)(N).
+(711) [Ἐτεοκλής:] Gesichte, väterlicher Vermögens Zuteiler.
+(712) [Χορός:] πιθοῦ(Aor)(Med)(Imv) γυναιξί(D), καίπερ(Pt) οὐ(Pt) στέργων(Prä)(Akt)(N) ὅμως(Adv).
+(712) [Χορός:] gehorche den|Frauen, obwohl nicht liebend dennoch.
+(713) [Ἐτεοκλής:] λέγοιτʼ(Prä)(M/P)(Op) ἂν(Pt) ὧν(Pr)(G) ἄνη(Prä)(Akt)(Knj) τις(Pr)(N)· οὐδὲ(Kon) χρὴ(Prä)(Akt) μακράν(Adv).
+(713) [Ἐτεοκλής:] würde|gesagt|werden wohl von|welchen ablassen|möge jemand· und|nicht bedarf lange.
+(714) [Χορός:] μὴ(Pt) ʼλθῃς(Aor)(Akt)(Knj) ὁδοὺς(A) σὺ(Pr)(N) τάσδʼ(Pr)(A) ἐφʼ(Prp) ἑβδόμαις(Adj)(D) πύλαις(D).
+(714) [Χορός:] nicht gehest Wege du diese an siebenten Toren.
+(715) [Ἐτεοκλής:] τεθηγμένον(Per)(M/P)(A) τοί(Pt) μʼ(Pr)(A) οὐκ(Pt) ἀπαμβλυνεῖς(Fu)(Akt) λόγῳ(D).
+(715) [Ἐτεοκλής:] geschärft|Gewordenes ja mich nicht wirst|stumpf|machen durch|Rede.
+(716) [Χορός:] νίκην(A) γε(Pt) μέντοι(Pt) καὶ(Kon) κακὴν(Adj)(A) τιμᾷ(Prä)(Akt) θεός(N).
+(716) [Χορός:] Sieg doch freilich und schlechten ehrt Gott.
+(717) [Ἐτεοκλής:] οὐκ(Pt) ἄνδρʼ(A) ὁπλίτην(A) τοῦτο(Pr)(A) χρὴ(Prä)(Akt) στέργειν(Prä)(Inf)(Akt) ἔπος(A).
+(717) [Ἐτεοκλής:] nicht Mann Schwer|bewaffneten dieses soll lieben Wort.
+(718) [Χορός:] ἀλλʼ(Kon) αὐτάδελφον(Adj)(A) αἷμα(A) δρέψασθαι(Aor)(Med)(Inf) θέλεις(Prä)(Akt);
+(718) [Χορός:] aber eigen|brüderliches Blut zu|pflücken willst;
+(719) [Ἐτεοκλής:] θεῶν(G) διδόντων(Prä)(Akt)(G) οὐκ(Pt) ἂν(Pt) ἐκφύγοις(Aor)(Akt)(Op) κακά(Adj)(A).
+(719) [Ἐτεοκλής:] der|Götter gebenden nicht wohl entflögest Übel.
+== Strophe 1 ==
+(720) [Χορός:] πέφρικα(Per)(Akt) τὰν(Art)(A) ὠλεσίοικον(Adj)(A)
+(720) [Χορός:] ich|erschauere die haus|vernichtende
+(721) [Χορός:] θεόν(A), οὐ(Pt) θεοῖς(D) ὁμοίαν(Adj)(A),
+(721) [Χορός:] Göttin, nicht den|Göttern ähnliche,
+(722) [Χορός:] παναλαθῆ(Adj)(A) κακόμαντιν(Adj)(A)
+(722) [Χορός:] ganz|vergessende übel|weissagende
+(723) [Χορός:] πατρὸς(G) εὐκταίαν(Adj)(A) Ἐρινὺν(A)
+(723) [Χορός:] des|Vaters erbetene Erinys
+(724) [Χορός:] τελέσαι(Aor)(Inf)(Akt) τὰς(Art)(A) περιθύμους(Adj)(A)
+(724) [Χορός:] zu|vollenden die hoch|erregten
+(725) [Χορός:] κατάρας(A) Οἰδιπόδα(G) βλαψίφρονος(Adj)(G)·
+(725) [Χορός:] Flüche des|Ödipus schad|gesinnten·
+(726) [Χορός:] παιδολέτωρ(Adj)(N) δʼ(Pt) ἔρις(N) ἅδʼ(Pr)(N) ὀτρύνει(Prä)(Akt).
+(726) [Χορός:] kinder|tötende aber Streit diese treibt|an.
+== Antistrophe 1 ==
+(727) [Χορός:] ξένος(N) δὲ(Pt) κλήρους(A) ἐπινωμᾷ(Prä)(M/P),
+(727) [Χορός:] Fremder aber Lose teilt|zu,
+(728) [Χορός:] Χάλυβος(N) Σκυθᾶν(G) ἄποικος(N),
+(728) [Χορός:] Chalybischer der|Skythen Ansiedler,
+(729) [Χορός:] κτεάνων(G) χρηματοδαίτας(A)
+(729) [Χορός:] der|Besitzungen Geld|Zerteiler
+(730) [Χορός:] πικρός(Adj)(N), ὠμόφρων(Adj)(N) σίδαρος(N),
+(730) [Χορός:] bitter, roh|sinniger Eisen,
+(731) [Χορός:] χθόνα(A) ναίειν(Prä)(Inf)(Akt) διαπήλας(Aor)(Akt)(N),
+(731) [Χορός:] Erde bewohnen durch|bohrt|habend,
+(732) [Χορός:] ὁπόσαν(Adj)(A) καὶ(Pt) φθιμένοισιν(Per)(M/P)(D) κατέχειν(Prä)(Inf)(Akt),
+(732) [Χορός:] wieviel und Verstorbenen inne|haben,
+(733) [Χορός:] τῶν(Art)(G) μεγάλων(Adj)(G) πεδίων(G) ἀμοίρους(Adj)(A).
+(733) [Χορός:] der großen Fluren Anteil|losen.
+== Strophe 2 ==
+(734) [Χορός:] ἐπεὶ(Kon) δʼ(Pt) ἂν(Pt) αὐτοκτόνως(Adv)
+(734) [Χορός:] weil aber dann selbst|mörderisch
+(735) [Χορός:] αὐτοδάικτοι(Adj)(N) θάνωσι(Aor)(Akt)(Knj),
+(735) [Χορός:] selbst|zerfleischte sterben,
+(735b) [Χορός:] καὶ(Kon) γαΐα(N) κόνις(N)
+(735b) [Χορός:] und Erde Staub
+(737) [Χορός:] πίῃ(Aor)(Akt)(Knj) μελαμπαγὲς(Adj)(A) αἷμα(A) φοίνιον(Adj)(A),
+(737) [Χορός:] trinke schwarz|geflecktes Blut purpur|rotes,
+(738) [Χορός:] τίς(Pr)(N) ἂν(Pt) καθαρμοὺς(A) πόροι(Aor)(Akt)(Op),
+(738) [Χορός:] wer wohl Reinigungen würde|beschaffen,
+(739) [Χορός:] τίς(Pr)(N) ἄν(Pt) σφε(Pr)(A) λούσειεν(Aor)(Akt)(Op); ὦ(ij) πόνοι(N) δόμων(G)
+(739) [Χορός:] wer wohl sie würde|waschen; o Mühen der|Häuser
+(741) [Χορός:] νέοι(Adj)(N) παλαιοῖσι(Adj)(D) συμμιγεῖς(Adj)(N) κακοῖς(Adj)(D).
+(741) [Χορός:] neue mit|alten vermischt Übeln.
+== Antistrophe 2 ==
+(742) [Χορός:] παλαιγενῆ(Adj)(A) γὰρ(Pt) λέγω(Prä)(Akt)
+(742) [Χορός:] alt|geborene denn sage|ich
+(743) [Χορός:] παρβασίαν(A) ὠκύποινον(Adj)(A),
+(743) [Χορός:] Übertretung schnell|vergeltende,
+(743b) [Χορός:] αἰῶνα(A) δʼ(Pt) ἐς(Prp) τρίτον(Adj)(A)
+(743b) [Χορός:] Zeitalter aber bis|zum dritten
+(745) [Χορός:] μένειν(Prä)(Inf)(Akt), Ἀπόλλωνος(G) εὖτε(Kon) Λάιος(N)
+(745) [Χορός:] verweilen, des|Apollon als Laios
+(746) [Χορός:] βίᾳ(D), τρὶς(Adv) εἰπόντος(AorS)(Akt)(G) ἐν(Prp)
+(746) [Χορός:] mit|Gewalt, dreimal gesagt|habenden in
+(747) [Χορός:] μεσομφάλοις(Adj)(D) Πυθικοῖς(Adj)(D) χρηστηρίοις(D)
+(747) [Χορός:] nabel|mittigen pythischen Orakeln
+(749) [Χορός:] θνᾴσκοντα(Prä)(Akt)(A) γέννας(G) ἄτερ(Prp) σῴζειν(Prä)(Inf)(Akt) πόλιν(A),
+(749) [Χορός:] sterbend der|Zeugung ohne retten Stadt,
+== Strophe 3 ==
+(750) [Χορός:] κρατηθεὶς(Aor)(Pas)(N) δʼ(Pt) ἐκ(Prp) φίλων(Adj)(G) ἀβουλιᾶν(G)
+(750) [Χορός:] überwältigt|worden aber durch der|Freunde Rat|losigkeiten
+(751) [Χορός:] ἐγείνατο(Aor)(Med) μὲν(Pt) μόρον(A) αὑτῷ(Pr)(D),
+(751) [Χορός:] zeugte|sich zwar Tod für|sich|selbst,
+(752) [Χορός:] πατροκτόνον(Adj)(A) Οἰδιπόδαν(A),
+(752) [Χορός:] Vater|mörderischen Ödipus,
+(753) [Χορός:] ὅστε(Pr)(N) ματρὸς(G) ἁγνὰν(Adj)(A)
+(753) [Χορός:] der|welche der|Mutter reine
+(754) [Χορός:] σπείρας(Aor)(Akt)(N) ἄρουραν(A), ἵνʼ(Kon) ἐτράφη(Aor)(Pas),
+(754) [Χορός:] gesät|habend Acker|feld, wo genährt|wurde,
+(755) [Χορός:] ῥίζαν(A) αἱματόεσσαν(Adj)(A)
+(755) [Χορός:] Wurzel blut|triefende
+(756) [Χορός:] ἔτλα(Aor)(Akt)· παράνοια(N) συνᾶγε(Imp)(Akt)
+(756) [Χορός:] ertrug· Wahn|sinn vereinte
+(757) [Χορός:] νυμφίους(A) φρενώλεις(Adj)(A).
+(757) [Χορός:] Bräutigame geist|rasende.
+== Antistrophe 3 ==
+(758) [Χορός:] κακῶν(G) δʼ(Pt) ὥσπερ(Kon) θάλασσα(N) κῦμʼ(A) ἄγει(Prä)(Akt)·
+(758) [Χορός:] der|Übel aber gleichwie Meer Woge führt·
+(759) [Χορός:] τὸ(Art)(N) μὲν(Pt) πίτνον(Prä)(Akt)(N), ἄλλο(Adj)(N) δʼ(Pt) ἀείρει(Prä)(Akt)
+(759) [Χορός:] das zwar fallend, anderes aber hebt|empor
+(760) [Χορός:] τρίχαλον(Adj)(A), ὃ(Pr)(N) καὶ(Kon) περὶ(Prp) πρύμ‖ναν(A)
+(760) [Χορός:] dreifach|wellig, welches auch um Heck
+(761) [Χορός:] πόλεως(G) καχλάζει(Prä)(Akt).
+(761) [Χορός:] der|Stadt brodelt.
+(762) [Χορός:] μεταξὺ(Adv) δʼ(Pt) ἀλκὰ(N) διʼ(Prp) ὀλίγου(G)
+(762) [Χορός:] zwischendurch aber Abwehr durch weniges
+(763) [Χορός:] τείνει(Prä)(Akt), πύργος(N) ἐν(Prp) εὔρει(D).
+(763) [Χορός:] spannt|sich, Turm im Breiten.
+(764) [Χορός:] δέδοικα(Per)(Akt) δὲ(Pt) σὺν(Prp) βασιλεῦσι(D)
+(764) [Χορός:] ich|fürchte aber mit den|Herrschern
+(765) [Χορός:] μὴ(Pt) πόλις(N) δαμασθῇ(Aor)(Pas)(Knj).
+(765) [Χορός:] nicht|etwa die|Stadt bezähmt|werde.
+== Strophe 4 ==
+(766) [Χορός:] τελειᾶν(Prä)(Inf)(Akt) γὰρ(Pt) παλαιφάτων(Adj)(G) ἀρᾶν(G)
+(766) [Χορός:] vollenden denn ur|gesagter Flüche
+(767) [Χορός:] βαρεῖαι(Adj)(N) καταλλαγαί(N)·
+(767) [Χορός:] schwere Aus|gleiche·
+(768) [Χορός:] τὰ(Art)(N) δʼ(Pt) ὀλοʼ(Adj)(N) οὐ(Pt) παρέρχεται(Prä)(M/P).
+(768) [Χορός:] die aber verderblichen nicht gehen|vorüber.
+(769) [Χορός:] πρόπρυμνα(Adv) δʼ(Pt) ἐκβολὰν(A) φέρει(Prä)(Akt)
+(769) [Χορός:] vorn|am|Bug aber Aus|wurf trägt
+(770) [Χορός:] ἀνδρῶν(G) ἀλφηστᾶν(G)
+(770) [Χορός:] der|Männer Ernährer
+(771) [Χορός:] ὄλβος(N) ἄγαν(Adv) παχυνθείς(Aor)(Pas)(N).
+(771) [Χορός:] Glück allzu verdickt.
+== Antistrophe 4 ==
+(772) [Χορός:] τίνʼ(Pr)(A) ἀνδρῶν(G) γὰρ(Pt) τοσόνδʼ(Adj) ἐθαύμασαν(Aor)(Akt)
+(772) [Χορός:] welchen der|Männer denn so|sehr bewunderten
+(773) [Χορός:] θεοὶ(N) καὶ(Kon) ξυνέστιοι(Adj)(N)
+(773) [Χορός:] Götter und Mit|Tischgenossen
+(774) [Χορός:] πολύβατός(Adj)(N) τʼ(Pt) ἀγὼν(N) βροτῶν(G),
+(774) [Χορός:] viel|begangen und Wettkampf der|Sterblichen,
+(775) [Χορός:] ὅσον(Adv) τότʼ(Adv) Οἰδίπουν(A) τίον(Imp)(Akt),
+(775) [Χορός:] wie|sehr damals Ödipus ehrten,
+(776) [Χορός:] τὰν(Art)(A) ἁρπαξάνδραν(Adj)(A)
+(776) [Χορός:] die mann|raubende
+(777) [Χορός:] κῆρʼ(A) ἀφελόντα(AorS)(Akt)(A) χώρας(G);
+(777) [Χορός:] Fluch ab|genommen|habenden des|Landes;
+== Strophe 5 ==
+(778) [Χορός:] ἐπεὶ(Kon) δʼ(Pt) ἀρτίφρων(Adj)(N)
+(778) [Χορός:] als aber frisch|besinnt
+(779) [Χορός:] ἐγένετο(Aor)(Med) μέλεος(Adj)(N) ἀθλίων(Adj)(G)
+(779) [Χορός:] wurde elend der|Unglücklichen
+(780) [Χορός:] γάμων(G), ἐπʼ(Prp) ἄλγει(D) δυσφορῶν(Adj)(G)
+(780) [Χορός:] Ehen, auf Schmerz schwer|erträglichen
+(781) [Χορός:] μαινομένᾳ(Prä)(M/P)(D) κραδίᾳ(D)
+(781) [Χορός:] rasend|seiendem dem|Herzen
+(782) [Χορός:] δίδυμα(Adj)(A) κάκʼ(Adj)(A) ἐτέλεσεν(Aor)(Akt)·
+(782) [Χορός:] doppelte Übel vollendete·
+(783) [Χορός:] πατροφόνῳ(Adj)(D) χερὶ(D) τῶν(Art)(G)
+(783) [Χορός:] vater|mörderischer Hand der
+(784) [Χορός:] κρεισσοτέκνων(Adj)(G)(Kmp) ὀμμάτων(G) ἐπλάγχθη(AorS)(Pas)·
+(784) [Χορός:] besser|geborenen Augen wurde|ab|getrieben·
+== Antistrophe 5 ==
+(785) [Χορός:] τέκνοις(D) δʼ(Pt) ἀγρίας(Adj)(G)
+(785) [Χορός:] den|Kindern aber wilde
+(786) [Χορός:] ἐφῆκεν(Aor)(Akt) ἐπικότους(Adj)(A) τροφᾶς(A),
+(786) [Χορός:] ließ|frei feindselige Nahrungen,
+(787) [Χορός:] αἰαῖ(ij), πικρογλώσσους(Adj)(A) ἀράς(A),
+(787) [Χορός:] weh, bitter|züngige Flüche,
+(788) [Χορός:] καί(Kon) σφε(Pr)(A) σιδαρονόμῳ(Adj)(D)
+(788) [Χορός:] und sie eisen|herrschender
+(789) [Χορός:] διὰ(Prp) χερί(D) ποτε(Adv) λαχεῖν(Aor)(Inf)(Akt)
+(789) [Χορός:] durch Hand einst erlangen
+(790) [Χορός:] κτήματα(A)· νῦν(Adv) δὲ(Pt) τρέω(Prä)(Akt)
+(790) [Χορός:] Besitztümer· nun aber fürchte|ich
+(791) [Χορός:] μὴ(Pt) τελέσῃ(Aor)(Akt)(Knj) καμψίπους(Adj)(N) Ἐρινύς(N).
+(791) [Χορός:] nicht vollende krumm|füßige Erinys.
+(792) [Ἄγγελος:] θαρσεῖτε(Prä)(Akt)(Imv), παῖδες(N) μητέρων(G) τεθραμμέναι(Per)(M/P)(N).
+(792) [Ἄγγελος:] seid|getrost, Kinder der|Mütter genährt|Gewordene.
+(793) [Ἄγγελος:] πόλις(N) πέφευγεν(Per)(Akt) ἥδε(Pr)(N) δούλιον(Adj)(A) ζυγόν(A)·
+(793) [Ἄγγελος:] Stadt ist|entflohen diese knechtisches Joch·
+(794) [Ἄγγελος:] πέπτωκεν(Per)(Akt) ἀνδρῶν(G) ὀβρίμων(Adj)(G) κομπάσματα(A)·
+(794) [Ἄγγελος:] ist|gestürzt der|Männer gewaltigen Prahlereien·
+(795) [Ἄγγελος:] πόλις(N) δʼ(Pt) ἐν(Prp) εὐδίᾳ(D) τε(Pt) καὶ(Kon) κλυδωνίου(G)
+(795) [Ἄγγελος:] Stadt aber in Wind|stille und auch der|Woge
+(796) [Ἄγγελος:] πολλαῖσι(Adj)(D) πληγαῖς(D) ἄντλον(A) οὐκ(Pt) ἐδέξατο(Aor)(Med).
+(796) [Ἄγγελος:] vielen Schlägen Bilgen|Wasser nicht empfing.
+(797) [Ἄγγελος:] στέγει(Prä)(Akt) δὲ(Pt) πύργος(N), καὶ(Kon) πύλας(A) φερεγγύοις(Adj)(D)
+(797) [Ἄγγελος:] schützt aber Turm, und Tore verlässlichen
+(798) [Ἄγγελος:] ἐφραξάμεσθα(Aor)(Med) μονομάχοισι(D) προστάταις(D)·
+(798) [Ἄγγελος:] haben|wir|verriegelt Einzel|kämpfern Beschützern·
+(799) [Ἄγγελος:] καλῶς(Adv) ἔχει(Prä)(Akt) τὰ(Art)(A) πλεῖστʼ(Adj)(A), ἐν(Prp) ἓξ(Adj) πυλώμασι(D)·
+(799) [Ἄγγελος:] gut steht die Meisten, in sechs Tor|anlagen·
+(800) [Ἄγγελος:] τὰς(Art)(A) δʼ(Pt) ἑβδόμας(Adj)(A) ὁ(Art)(N) σεμνὸς(Adj)(N) ἑβδομαγέτης(N)
+(800) [Ἄγγελος:] die aber siebenten der erhabene Sieben|führer
+(801) [Ἄγγελος:] ἄναξ(N) Ἀπόλλων(N) εἵλετʼ(AorS)(Med), Οἰδίπου(G) γένει(D)
+(801) [Ἄγγελος:] Herr Apollon wählte|sich, des|Ödipus Geschlecht
+(802) [Ἄγγελος:] κραίνων(Prä)(Akt)(N) παλαιὰς(Adj)(A) Λαΐου(G) δυσβουλίας(A).
+(802) [Ἄγγελος:] vollführend alte des|Laios Miss|ratschläge.
+(803) [Χορός:] τί(Pr)(N) δʼ(Pt) ἔστι(Prä)(Akt) πρᾶγμα(N) νεόκοτον(Adj)(N) πόλει(D) πλέον(Adv)(Kmp);
+(803) [Χορός:] was aber ist Sach|verhalt neu|auf|gekommen der|Stadt mehr;
+(804) [Ἄγγελος:] πόλις(N) σέσωσται(Per)(M/P)· βασιλέες(N) δʼ(Pt) ὁμόσποροι(Adj)(N)—
+(804) [Ἄγγελος:] Stadt ist|gerettet· Könige aber gleich|gesäte—
+(805) [Χορός:] τίνες(Pr)(N); τί(Pr)(N) δʼ(Pt) εἶπας(Aor)(Akt); παραφρονῶ(Prä)(Akt) φόβῳ(D) λόγου(G).
+(805) [Χορός:] wer; was aber sagtest|du; wahn|sinn|ig|bin|ich vor|Furcht der|Rede.
+(806) [Ἄγγελος:] φρονοῦσα(Prä)(Akt)(N) νῦν(Adv) ἄκουσον(Aor)(Akt)(Imv)· Οἰδίπου(G) τόκοι(N)
+(806) [Ἄγγελος:] bei|Sinn|seiend nun höre· des|Ödipus Söhne
+(807) [Χορός:] οἲ(ij) ʼγὼ(Pr)(N) τάλαινα(Adj)(N), μάντις(N) εἰμὶ(Prä)(Akt) τῶν(Art)(G) κακῶν(Adj)(G).
+(807) [Χορός:] o|weh ich Elende, Seherin bin|ich der Übel.
+(808) [Ἄγγελος:] οὐδʼ(Pt) ἀμφιλέκτως(Adv) μὴν(Pt) κατεσποδημένοι(Per)(Pas)(N)—
+(808) [Ἄγγελος:] und|nicht zweideutig wahrlich zu|Staub|gemacht|Gewordene—
+(809) [Χορός:] ἐκεῖθι(Adv) κεῖσθον(Prä)(M/P)(Du); βαρέα(Adj)(A) δʼ(Pt) οὖν(Pt) ὅμως(Adv) φράσον(Aor)(Akt)(Imv).
+(809) [Χορός:] dort liegt|ihr|beide; schwere aber nun dennoch sage.
+(810) [Ἄγγελος:] ἅνδρες(N) τεθνᾶσιν(Per)(Akt) ἐκ(Prp) χερῶν(G) αὐτοκτόνων(Adj)(G).
+(810) [Ἄγγελος:] Männer sind|gestorben aus Händen selbst|tötender.
+(811) [Χορός:] οὕτως(Adv) ἀδελφαῖς(Adj)(D) χερσὶν(D) ἠναίρονθʼ(Aor)(Med) ἅμα(Adv);
+(811) [Χορός:] so geschwisterlichen Händen töteten|sich zugleich;
+(812) [Χορός:] οὕτως(Adv) ὁ(Art)(N) δαίμων(N) κοινὸς(Adj)(N) ἦν(Imp)(Akt) ἀμφοῖν(Pr)(Du)(G) ἄγαν(Adv).
+(812) [Χορός:] so der Daimon gemeinsam war der|Beiden allzu.
+(813) [Χορός:] αὐτὸς(Pr)(N) δʼ(Pt) ἀναλοῖ(Aor)(Akt)(Op) δῆτα(Pt) δύσποτμον(Adj)(A) γένος(A).
+(813) [Χορός:] selbst aber möge|vertilgen gewiss un|glück|liches Geschlecht.
+(814) [Χορός:] τοιαῦτα(Adj)(N) χαίρειν(Prä)(Inf)(Akt) καὶ(Kon) δακρύεσθαι(Prä)(M/P)(Inf) πάρα(Adv)·
+(814) [Χορός:] solches sich|freuen und sich|be|weinen angebracht·
+(815) [Χορός:] πόλιν(A) μὲν(Pt) εὖ(Adv) πράσσουσαν(Prä)(Akt)(A), οἱ(Art)(N) δʼ(Pt) ἐπιστάται(N),
+(815) [Χορός:] Stadt zwar gut gehend|seiende, die aber Vor|steher,
+(816) [Χορός:] δισσὼ(Adj)(Du)(N) στρατηγώ(Du)(N), διέλαχον(Aor)(Akt) σφυρηλάτῳ(Adj)(D)
+(816) [Χορός:] zwei Feld|herren, erlosteten hammer|geschmiedetem
+(817) [Χορός:] Σκύθῃ(D) σιδήρῳ(D) κτημάτων(G) παμπησίαν(A).
+(817) [Χορός:] skythischem Eisen der|Besitztümer All|besitz.
+(818) [Χορός:] ἕξουσι(Fu)(Akt) δʼ(Pt) ἣν(Pr)(A) λάβωσιν(Aor)(Akt)(Knj) ἐν(Prp) ταφῇ(D) χθονός(G),
+(818) [Χορός:] werden|haben aber die nehmen|mögen in Grab der|Erde,
+(819) [Χορός:] πατρὸς(G) κατʼ(Prp) εὐχὰς(A) δυσπότμως(Adv) φορούμενοι(Prä)(M/P)(N).
+(819) [Χορός:] des|Vaters gemäß Flüchen unglücklich getragen|werdende.
+(820) [Χορός:] [πόλις(N) σέσωσται(Per)(M/P)· βασιλέοιν(Du)(D) δʼ(Pt) ὁμοσπόροιν(Adj)(Du)(D)]
+(820) [Χορός:] [Stadt ist|gerettet· der|KönigeBeide aber gleich|gesäten]
+(821) [Χορός:] πέπωκεν(Per)(Akt) αἷμά(A) γαῖʼ(N) ὑπʼ(Prp) ἀλλήλων(Pr)(G) φόνῳ(D).
+(821) [Χορός:] hat|getrunken das|Blut die|Erde unter einander durch|Mord.
+=== Stasimon ===
+(822) [Χορός:] ὦ(ij) μεγάλε(Adj)(V) Ζεῦ(V) καὶ(Kon) πολιοῦχοι(Adj)(N)
+(822) [Χορός:] o großer Zeus und Stadt|halter
+(823) [Χορός:] δαίμονες(N), οἳ(Pr)(N) δὴ(Pt) Κάδμου(G) πύργους(A)
+(823) [Χορός:] Dämonen, die wahrlich des|Kadmos Türme
+(824) [Χορός:] τούσδε(Pr)(A) ῥύεσθε(Prä)(M/P),
+(824) [Χορός:] diese schützt|ihr,
+(825) [Χορός:] πότερον(Pt) χαίρω(Prä)(Akt) κἀπολολύξω(Kon)(Fu)(Akt)
+(825) [Χορός:] ob freue|ich und|werde|auf|heulen
+(826) [Χορός:] πόλεως(G) ἀσινεῖ(Adj)(D) σωτῆρι(D).
+(826) [Χορός:] der|Stadt un|versehrtem Retter.
+(827) [Χορός:] ἢ(Kon) τοὺς(Art)(A) μογεροὺς(Adj)(A) καὶ(Kon) δυσδαίμονας(Adj)(A)
+(827) [Χоρός:] oder die geplagten und un|heil|vollen
+(830) [Χορός:] ἀτέκνους(Adj)(A) κλαύσω(Fu)(Akt) πολεμάρχους(A);
+(830) [Χορός:] kinder|lose werde|ich|be|weinen Kriegs|führer;
+(831) [Χορός:] οἳ(Pr)(N) δῆτʼ(Pt) ὀρθῶς(Adv) κατʼ(Prp) ἐπωνυμίαν(A)
+(831) [Χορός:] die wahrlich recht gemäß Beinamen
+(832) [Χορός:] καὶ(Kon) πολυνεικεῖς(Adj)(A)
+(832) [Χоρός:] und viel|streitige
+(832b) [Χορός:] ὤλοντʼ(Aor)(Med) ἀσεβεῖ(Adj)(D) διανοίᾳ(D).
+(832b) [Χορός:] gingen|zugrunde frevlerischem Sinn.
+== Strophe 1 ==
+(833) [Χορός:] ὦ(ij) μέλαινα(Adj)(V) καὶ(Kon) τελεία(Adj)(V) γένεος(G) Οἰδίπου(G) τʼ(Pt) ἀρά(N),
+(833) [Χορός:] o schwarze und voll|endete des|Geschlechts des|Ödipus und Fluch,
+(834) [Χορός:] κακόν(Adj)(N) με(Pr)(A) καρδίαν(A) τι(Pr)(A) περιπίτνει(Prä)(Akt) κρύος(N).
+(834) [Χορός:] böses mich Herz irgend|eine überkommt Kälte.
+(835) [Χορός:] ἔτευξα(Aor)(Akt) τύμβῳ(D) μέλος(A)
+(835) [Χορός:] bereitete|ich dem|Grab Lied
+(836) [Χορός:] Θυιὰς(N) αἱματοσταγεῖς(Adj)(A)
+(836) [Χορός:] Thyade blut|triefende
+(837) [Χορός:] νεκροὺς(A) κλύουσα(Prä)(Akt)(N) δυσμόρως(Adv)
+(837) [Χορός:] Tote hörend übel|verhängnisvoll
+(838) [Χορός:] θανόντας(Aor)(Akt)(A)· ἦ(Pt) δύσορνις(Adj)(N) ἅ‖δε(Pr)(N)
+(838) [Χορός:] gestorben|Seiende· wahrlich un|heil|vogelhaft diese
+(839) [Χορός:] ξυναυλία(N) δορός(G).
+(839) [Χορός:] Zusammen|klang des|Speeres.
+== Antistrophe 1 ==
+(840) [Χορός:] ἐξέπραξεν(Aor)(Akt), οὐδʼ(Pt) ἀπεῖπεν(Aor)(Akt) πατρόθεν(Adv) εὐκταία(Adj)(N) φάτις(N)·
+(840) [Χορός:] vollbrachte, und|nicht verbot vom|Vater|her erbetene Weis|sage·
+(842) [Χορός:] βουλαὶ(N) δʼ(Pt) ἄπιστοι(Adj)(N) Λαΐου(G) διήρκεσαν(Aor)(Akt).
+(842) [Χορός:] Ratschläge aber ungläubige des|Laios hielten|vor.
+(843) [Χορός:] μέριμνα(N) δʼ(Pt) ἀμφὶ(Prp) πτόλιν(A)·
+(843) [Χορός:] Sorge aber um Stadt·
+(844) [Χορός:] θέσφατʼ(N) οὐκ(Pt) ἀμβλύνεται(Prä)(M/P).
+(844) [Χορός:] Orakel|worte nicht stumpfen|sich|ab.
+(845) [Χορός:] ἰὼ(ij) πολύστονοι(Adj)(V), τόδʼ(Pr)(N) ἠρ‖γάσασθ(Aor)(M/P)
+(845) [Χορός:] io viel|stöhnende, dieses habt|ihr|ver|richtet
+(846) [Χορός:] ʼ ἄπιστον(Adj)(A)· ἦλθε(AorS)(Akt) δʼ(Pt) αἰ‖ακτὰ(Adj)(A)
+(846) [Χορός:] Unglaubliches· kam aber weh|klag|bares
+(847) [Χορός:] πήματʼ(A) οὐ(Pt) λόγῳ(D).
+(847) [Χορός:] Leiden nicht durch|Wort.
+(848) [Χορός:] τάδʼ(Pr)(N) αὐτόδηλα(Adj)(N), προῦπτος(Adj)(N) ἀγγέλου(G) λόγος(N)·
+(848) [Χορός:] dieses offen|kundig, offen|bar des|Boten Rede·
+(849) [Χορός:] διπλαῖν(Adj)(D) μερίμναιν(D) διδύμα(Adj)(A) νῦν(Adv) ὁρῶ(Prä)(Akt) κακά(Adj)(A),
+(849) [Χορός:] doppelten Sorgen zwei|fache nun sehe|ich Übel,
+(850) [Χορός:] αὐτοφόνα(Adj)(A), δίμορα(Adj)(A) τέλεα(Adj)(A) τάδε(Pr)(A) πάθη(A). τί(Pr)(N) φῶ(Prä)(Akt);
+(850) [Χορός:] selbst|mörderische, doppelt|verhängte voll|endete diese Leiden. was sage|ich;
+(852) [Χορός:] τί(Pr)(N) δʼ(Pt) ἄλλο(Adj)(N) γʼ(Pt) ἢ(Kon) πόνοι(N) πόνων(G) ἐφέστιοι(Adj)(N);
+(852) [Χορός:] was aber anderes doch als Mühen der|Mühen häusliche;
+(854) [Χορός:] ἀλλὰ(Kon) γόων(G), ὦ(ij) φίλαι(Adj)(V), κατʼ(Prp) οὖρον(A)
+(854) [Χορός:] sondern der|Klagen, o Freundinnen, nach Wind
+(855) [Χορός:] ἐρέσσετʼ(Fu)(Akt) ἀμφὶ(Prp) κρατὶ(D) πόμπιμον(Adj)(A) χεροῖν(Du)(D)
+(855) [Χορός:] werdet|rudern um Haupt leitendes HändenBeide
+(856) [Χορός:] πίτυλον(A), ὃς(Pr)(N) αἰὲν(Adv) διʼ(Prp) Ἀχέροντʼ(G) ἀμείβεται(Prä)(M/P)
+(856) [Χορός:] Stakstange, der immer durch den|Acheron überquert
+(857) [Χορός:] τὰν(Art)(A) ἄστολον(Adj)(A) μελάγκροκον(Adj)(A) θεωρίδα(A),
+(857) [Χορός:] die ungeruderte schwarz|bugige heilige|Barke,
+(858) [Χορός:] τὰν(Art)(A) ἀστιβῆ(Adj)(A) Παιῶνι(D), τὰν(Art)(A) ἀνάλιον(Adj)(A)
+(858) [Χορός:] die unbetretene dem|Paean, die ohne|Meer
+(860) [Χορός:] πάνδοκον(Adj)(A) εἰς(Prp) ἀφανῆ(Adj)(A) τε(Pt) χέρσον(A).
+(860) [Χορός:] all|aufnehmende in unsichtbare und Trocken|Land.
+(861) [Χορός:] ἀλλὰ(Kon) γὰρ(Pt) ἥκουσʼ(Prä)(Akt) αἵδʼ(Pr)(N) ἐπὶ(Prp) πρᾶγος(A)
+(861) [Χορός:] aber denn sind|gekommen diese auf Sache
+(862) [Χορός:] πικρὸν(Adj)(A) Ἀντιγόνη(N) τʼ(Pt) ἠδʼ(Kon) Ἰσμήνη(N),
+(862) [Χορός:] bitteres Antigone und und Ismene,
+(863) [Χορός:] θρῆνον(A) ἀδελφοῖν(Du)(G)· οὐκ(Pt) ἀμφιβόλως(Adv)
+(863) [Χορός:] Klage der|beiden|Brüder· nicht zweideutig
+(864) [Χορός:] οἶμαί(Prä)(Akt) σφʼ(Pr)(A) ἐρατῶν(Adj)(G) ἐκ(Prp) βαθυκόλπων(Adj)(G)
+(864) [Χορός:] ich|meine sie lieblichen aus tief|busigen
+(865) [Χορός:] στηθέων(G) ἥσειν(Fu)(Inf)(Akt) ἄλγος(A) ἐπάξιον(Adj)(A).
+(865) [Χορός:] der|Brüste zu|senden Schmerz angemessenen.
+(866) [Χορός:] ἡμᾶς(Pr)(A) δὲ(Pt) δίκη(N) πρότερον(Adv) φήμης(G)
+(866) [Χορός:] uns aber Recht früher der|Kunde
+(867) [Χορός:] τὸν(Art)(A) δυσκέλαδόν(Adj)(A) θʼ(Pt) ὕμνον(A) Ἐρινύος(G)
+(867) [Χορός:] den schwer|tönenden und Hymnus der|Erinys
+(868) [Χορός:] ἰαχεῖν(Prä)(Inf)(Akt) Ἀίδατʼ(D)
+(868) [Χορός:] schreien dem|Hades
+(870) [Χορός:] ἐχθρὸν(Adj)(A) παιᾶνʼ(A) ἐπιμέλπειν(Prä)(Inf)(Akt).
+(870) [Χορός:] verhassten Päan darüber|singen.
+(871) [Χορός:] δυσαδελφόταται(Adj)(N)(Sup) πασῶν(Adj)(G) ὁπόσαι(Pr)(N)
+(871) [Χορός:] bruder|unglücklichste aller so|viele
+(872) [Χορός:] στρόφον(A) ἐσθῆσιν(D) περιβάλλονται(Prä)(M/P),
+(872) [Χορός:] Schlingen|Band mit|Gewändern umhüllen|sich,
+(873) [Χορός:] κλαίω(Prä)(Akt), στένομαι(Prä)(M/P), καὶ(Kon) δόλος(N) οὐδεὶς(Adj)(N)
+(873) [Χορός:] weine, stöhne|ich, und List keiner
+(874) [Χορός:] μὴʼ(Pt) κ(Pt) φρενὸς(G) ὀρθῶς(Adv) με(Pr)(A) λιγαίνειν(Prä)(Inf)(Akt).
+(874) [Χορός:] nicht etwa des|Geistes richtig mich erweichen.
+== Strophe 2 ==
+(875) [Χορός:] ἰὼ(ij) ἰὼ(ij) δύσφρονες(Adj)(N),
+(875) [Χορός:] io io un|besonnene,
+(876) [Χορός:] φίλων(G) ἄπιστοι(Adj)(N) καὶ(Kon) κακῶν(Adj)(G) ἀτρύμονες(Adj)(N),
+(876) [Χορός:] der|Freunde treulos und der|Übel unermüdliche,
+(877) [Χορός:] δόμους(A) πατρῴους(Adj)(A) ἑλόν‖τες(AorS)(Akt)(N)
+(877) [Χορός:] Häuser väterliche genommen|habende
+(878) [Χορός:] μέλεοι(Adj)(N) σὺν(Prp) αἰχμᾷ(D).
+(878) [Χορός:] Elende mit Speer|spitze.
+(879) [Χορός:] μέλεοι(Adj)(N) δῆθʼ(Pt) οἳ(Pr)(N) μελέους(Adj)(A) θανάτους(A)
+(879) [Χορός:] Elende wahrlich die elendige Tode
+(880) [Χορός:] εὕροντο(Aor)(M/P) δόμων(G) ἐπὶ(Prp) λύμῃ(D).
+(880) [Χορός:] fanden|sich der|Häuser auf Verderben.
+== Antistrophe 2 ==
+(881) [Χορός:] ἰὼ(ij) ἰὼ(ij) δωμάτων(G)
+(881) [Χορός:] io io der|Häuser
+(882) [Χορός:] ἐρειψίτοιχοι(Adj)(N) καὶ(Kon) πικρὰς(Adj)(A) μοναρχίας(A)
+(882) [Χορός:] mit|eingestürzten|Mauern und bittere Allein|herrschaften
+(883) [Χορός:] ἰδόντες(AorS)(Akt)(N), ἤδη(Adv) διήλ‖λαχθε(Aor)(Pas)
+(883) [Χορός:] gesehen|habend, schon seid|aus|einander|getreten
+(885) [Χορός:] σὺν(Prp) σιδάρῳ(D).
+(885) [Χορός:] mit Eisen.
+(886) [Χορός:] κάρτα(Adv) δʼ(Pt) ἀληθῆ(Adj)(A) πατρὸς(G) Οἰδιπόδα(G)
+(886) [Χορός:] sehr aber wahre des|Vaters Ödipus
+(887) [Χορός:] πότνιʼ(Adj)(N) Ἐρινὺς(N) ἐπέκρανεν(Aor)(Akt).
+(887) [Χορός:] herrliche Erinys vollendete.
+== Strophe 3 ==
+(888) [Χορός:] διʼ(Prp) εὐωνύμων(Adj)(G) τετυμμένοι(Per)(M/P)(N),
+(888) [Χορός:] durch linken getroffen|Gewordene,
+(889) [Χορός:] τετυμμένοι(Per)(M/P)(N) δῆθʼ(Pt), ὁμο‖σπλάγχνων(Adj)(G)
+(889) [Χορός:] getroffen|Gewordene wahrlich, gleich|Eingeweidiger
+(890) [Χορός:] τε(Pt) πλευρωμάτων(G)
+(890) [Χορός:] und der|Flanken
+(891) [Χορός:] [Zeile Lost]
+(892) [Χορός:] αἰαῖ(ij) δαιμόνιοι(Adj)(N),
+(892) [Χορός:] weh gott|haften,
+(893) [Χορός:] αἰαῖ(ij) δʼ(Pt) ἀντιφόνων(Adj)(G) θανάτων(G) ἀραί(N).
+(893) [Χορός:] weh aber gegen|tönender Tode Flüche.
+(895) [Χορός:] διανταίαν(Adj)(A) λέγεις(Prä)(Akt) δόμοισι(D) καὶ(Kon)
+(895) [Χορός:] gegenseitige sagst|du den|Häusern und
+(896) [Χορός:] σώμασιν(D) πεπλαγμένους(Per)(M/P)(A),
+(896) [Χορός:] den|Leibern umher|getrieben|Gewordene,
+(897) [Χορός:] ἀναυδάτῳ(Adj)(D) μένει(Prä)(Akt)
+(897) [Χορός:] unsagbarem verharrt
+(898) [Χορός:] ἀραίῳ(Adj)(D) τʼ(Pt) ἐκ(Prp) πατρὸς(G)
+(898) [Χορός:] Fluch|artig und aus dem|Vater
+(899) [Χορός:] οὐ(Pt) διχόφρονι(Adj)(D) πότμῳ(D).
+(899) [Χορός:] nicht zwiespältigem Schicksal.
+== Antistrophe 3 ==
+(900) [Χορός:] διήκει(Prä)(Akt) δὲ(Pt) καὶ(Kon) πόλιν(A) στόνος(N),
+(900) [Χορός:] durch|dringt aber auch die|Stadt Klage,
+(901) [Χορός:] στένουσι(Prä)(Akt) πύργοι(N), στένει(Prä)(Akt)
+(901) [Χορός:] stöhnen Türme, stöhnt
+(902) [Χορός:] πέδον(N) φίλανδρον(Adj)(N)· μένει(Prä)(Akt)
+(902) [Χορός:] Flur männer|freundliche· verharrt
+(903) [Χορός:] κτέανα(N) δʼ(Pt) ἐπιγόνοις(D),
+(903) [Χορός:] Güter aber den|Nach|geborenen,
+(904) [Χορός:] διʼ(Prp) ὧν(Pr)(G) αἰνομόροις(Adj)(D),
+(904) [Χορός:] durch deren grau|Verhängten,
+(905) [Χορός:] διʼ(Prp) ὧν(Pr)(G) νεῖκος(N) ἔβα(AorS)(Akt) θανάτου(G) τέλος(A).
+(905) [Χορός:] durch welcher Streit ging des|Todes Ende.
+(907) [Χορός:] ἐμοιράσαντο(Aor)(M/P) δʼ(Pt) ὀξυκάρδιοι(Adj)(N)
+(907) [Χορός:] ver|teilten|sich aber scharf|herzigen
+(908) [Χορός:] κτήμαθʼ(A), ὥστʼ(Kon) ἴσον(Adj)(A) λαχεῖν(AorS)(Inf)(Akt).
+(908) [Χορός:] Besitztümer, sodass gleich per|Los|erlangen.
+(909) [Χορός:] διαλλακτῆρι(Adj)(D) δʼ(Pt) οὐκ(Pt)
+(909) [Χορός:] zum|Schlichter aber nicht
+(909b) [Χορός:] ἀμεμφεία(N) φίλοις(Adj)(D),
+(909b) [Χορός:] Tadellosigkeit den|Freunden,
+(910) [Χορός:] οὐδʼ(Pt) ἐπίχαρις(Adj)(N) Ἄρης(N).
+(910) [Χορός:] noch gefälliger Ares.
+== Strophe 4 ==
+(911) [Χορός:] σιδαρόπλακτοι(Adj)(N) μὲν(Pt) ὧδʼ(Adv) ἔχουσιν(Prä)(Akt),
+(911) [Χορός:] eisen|gepanzerte zwar so halten,
+(912) [Χορός:] σιδαρόπλακτοι(Adj)(N) δὲ(Pt) τοὺς(Art)(A) μένουσι(Prä)(Akt),
+(912) [Χορός:] eisen|gepanzerte aber die erwarten,
+(913) [Χορός:] τάχʼ(Adv) ἄν(Pt) τις(Pr)(N) εἴποι(Aor)(Akt)(Op), τίνες(Pr)(N);
+(913) [Χορός:] bald wohl jemand würde|sagen, wer;
+(914) [Χορός:] τάφων(G) πατρῴων(Adj)(G) λαχαί(N).
+(914) [Χορός:] der|Gräber väterlichen Lose.
+(915) [Χορός:] ἀχάεις(Adj)(A) δόμων(G) μάλʼ(Adv) αὐτούς(Pr)(A)
+(915) [Χορός:] laut|tönende der|Häuser sehr sie
+(916) [Χορός:] προπέμπει(Prä)(Akt) δαϊκτὴρ(N)
+(916) [Χορός:] sendet|voran Töter
+(917) [Χορός:] γόος(N) αὐτόστονος(Adj)(N), αὐτοπήμων(Adj)(N),
+(917) [Χορός:] Klage selbst|stöhnend, selbst|leidvoll,
+(918) [Χορός:] δαϊόφρων(Adj)(N), οὐ(Pt) φιλογαθής(Adj)(N),
+(918) [Χορός:] kampf|sinnig, nicht Gutes|liebend,
+(919) [Χορός:] ἐτύμως(Adv) δακρυχέων(Adj)(N) ἐκ(Prp)
+(919) [Χορός:] wahrhaft Tränen|tragend aus
+(920) [Χορός:] φρενός(G), ἃ(Pr)(A) κλαιομένας(Prä)(M/P)(A) μου(Pr)(G)
+(920) [Χορός:] des|Geistes, was be|weinend meiner
+(921) [Χορός:] μινύθει(Prä)(Akt) τοῖνδε(Art)(Du)(G) δυοῖν(Adj)(Du)(G) ἀνάκτοιν(Du)(G).
+(921) [Χορός:] mindert dieser|beiden zwei Fürsten.
+== Antistrophe 4 ==
+(922) [Χορός:] πάρεστι(Prä)(Akt) δʼ(Pt) εἰπεῖν(Aor)(Inf)(Akt) ἐπʼ(Prp) ἀθλίοισιν(Adj)(D)
+(922) [Χορός:] ist|da aber zu|sagen über den|Elenden
+(923) [Χορός:] ὡς(Kon) ἐρξάτην(Aor)(Akt)(Du) πολλὰ(Adj)(A) μὲν(Pt) πολίτας(A),
+(923) [Χορός:] dass taten|beide vieles zwar Bürger,
+(924) [Χορός:] ξένων(G) τε(Pt) πάντων(Adj)(G) στίχας(A)
+(924) [Χορός:] der|Fremden und aller Reihen
+(925) [Χορός:] πολυφθόρους(Adj)(A) ἐν(Prp) δαΐ(D).
+(925) [Χορός:] viel|verderbende in Schlacht.
+(926) [Χορός:] δυσδαίμων(Adj)(N) σφιν(Pr)(D) ἁ(Art)(N) τεκοῦσα(AorS)(Akt)(N)
+(926) [Χορός:] un|heil|voll ihnen die geboren|habende
+(927) [Χορός:] πρὸ(Prp) πασᾶν(Adj)(G) γυναικῶν(G)
+(927) [Χορός:] vor allen Frauen
+(928) [Χορός:] ὁπόσαι(Pr)(N) τεκνογόνοι(Adj)(N) κέκληνται(Per)(M/P).
+(928) [Χоρός:] soviel|wie kinder|gebärend heißen.
+(929) [Χορός:] παῖδα(A) τὸν(Art)(A) αὐτᾶς(Pr)(G) πόσιν(A) αὐτὰ(Pr)(A)
+(929) [Χορός:] Sohn den der|eigenen Gatten selbst
+(930) [Χορός:] θεμένα(AorS)(M/P)(N) τούσδʼ(Pr)(A) ἔτεχʼ(Aor)(Akt), οἱ(Pr)(N) δʼ(Pt) ὧδʼ(Adv)
+(930) [Χορός:] gesetzt|habend diese gebar, die aber so
+(931) [Χορός:] ἐτελεύτασαν(Aor)(Akt) ὑπʼ(Prp) ἀλλα‖λοφόνοις(Adj)(D)
+(931) [Χορός:] starben unter einander|mordenden
+(932) [Χορός:] χερσὶν(D) ὁμοσπόροισιν(Adj)(D).
+(932) [Χορός:] Händen gleich|gesäten.
+== Strophe 5 ==
+(933) [Χορός:] ὁμόσποροι(Adj)(N) δῆτα(Pt) καὶ(Kon) πανώλεθροι(Adj)(N),
+(933) [Χορός:] gleich|gesäte wahrlich und ganz|zugrunde|Gegangene,
+(934) [Χορός:] διατομαῖς(D) οὐ(Pt) φίλαις(Adj)(D),
+(934) [Χορός:] Zer|schnittenheiten nicht freundlichen,
+(935) [Χορός:] ἔριδι(D) μαινομένᾳ(Prä)(M/P)(D),
+(935) [Χορός:] Streit rasend|seiender,
+(936) [Χορός:] νείκεος(G) ἐν(Prp) τελευτᾷ(D).
+(936) [Χορός:] des|Zanks in Ende.
+(937) [Χορός:] πέπαυται(Per)(M/P) δʼ(Pt) ἔχθος(N), ἐν(Prp) δὲ(Pt) γαίᾳ(D)
+(937) [Χορός:] ist|aufgehört aber Feindschaft, in aber Erde
+(938) [Χορός:] ζόα(N) φονορύτῳ(Adj)(D)
+(938) [Χορός:] Lebendiges blut|gepflügter
+(939) [Χορός:] μέμεικται(Per)(M/P)· κάρτα(Adv) δʼ(Pt) εἴσʼ(Prä)(Akt) ὅμαιμοι(Adj)(N).
+(939) [Χορός:] ist|vermischt· sehr aber sind gleich|blütige.
+(940) [Χορός:] πικρὸς(Adj)(N) λυτὴρ(N) νεικέων(G) ὁ(Art)(N) πόντιος(Adj)(N)
+(940) [Χορός:] bitterer Löser der|Zänke der meerische
+(941) [Χορός:] ξεῖνος(N) ἐκ(Prp) πυρὸς(G) συθεὶς(AorS)(Pas)(N)
+(941) [Χορός:] Fremdling aus Feuer zusammen|geschmolzen|worden
+(942) [Χορός:] θακτὸς(Adj)(N) σίδαρος(N)· πικρὸς(Adj)(N) δὲ(Pt) χρημάτων(G)
+(942) [Χορός:] gehärtetes Eisen· bitter aber der|Vermögen
+(943) [Χορός:] κακὸς(Adj)(N) δατητὰς(N) Ἄρης(N) ἀρὰν(A) πατρῴ‖αν(Adj)(A)
+(943) [Χορός:] schlechter Zuteiler Ares Fluch väterlichen
+(944) [Χορός:] τιθεὶς(Prä)(Akt)(N) ἀλαθῆ(Adj)(A).
+(944) [Χορός:] setzend wahr.
+== Antistrophe 5 ==
+(945) [Χορός:] ἔχουσι(Prä)(Akt) μοῖραν(A) λαχόντες(AorS)(Akt)(N) οἱ(Art)(N) μέλεοι(Adj)(N)
+(945) [Χορός:] haben Anteil|Schicksal gelost|habende die Elenden
+(946) [Χορός:] διοδότων(Adj)(G) ἀχθέων(G)·
+(946) [Χορός:] der|durch|getragenen Lasten·
+(947) [Χορός:] ὑπὸ(Prp) δὲ(Pt) σώματι(D) γᾶς(G)
+(947) [Χορός:] unter aber dem|Leib der|Erde
+(948) [Χορός:] πλοῦτος(N) ἄβυσσος(Adj)(N) ἔσται(Fu)(Akt).
+(948) [Χορός:] Reichtum abgrund|tief wird|sein.
+(949) [Χορός:] ἰὼ(ij) πολλοῖς(Adj)(D) ἐπανθίσαντες(Aor)(Akt)(N)
+(949) [Χορός:] io mit|vielem auf|geblüht|habende
+(950) [Χορός:] πόνοισι(D) γενεάν(A)·
+(950) [Χορός:] Mühen Geschlecht·
+(951) [Χορός:] τελευταῖαι(Adj)(N) δʼ(Pt) ἐπηλάλαξαν(Aor)(Akt)
+(951) [Χορός:] die|letzten aber riefen|laut
+(952) [Χορός:] Ἀραὶ(N) τὸν(Art)(A) ὀξὺν(Adj)(A) νόμον(A), τετραμμένου(Per)(M/P)(G)
+(952) [Χορός:] Flüche den scharfen Gesetz, des|gewendeten
+(953) [Χορός:] παντρόπῳ(Adj)(D) φυγᾷ(D) γένους(G).
+(953) [Χορός:] all|wendigen Flucht des|Geschlechts.
+(954) [Χορός:] ἕστακε(Per)(Akt) δʼ(Pt) Ἄτας(G) τροπαῖον(N) ἐν(Prp) πύλαις(D),
+(954) [Χορός:] steht aber der|Ate Sieges|zeichen in den|Toren,
+(955) [Χορός:] ἐν(Prp) αἷς(Pr)(D) ἐθείνοντο(Imp)(M/P), καὶ(Kon) δυοῖν(Adj)(Du)(G) κρατή‖σας(Aor)(Akt)(N)
+(955) [Χορός:] in in|denen wurden|getötet, und zweier gesiegt|habend
+(956) [Χορός:] ἔληξε(Aor)(Akt) δαίμων(N).
+(956) [Χορός:] endete Daimon.
+(957) [Ἰσμήνη:] σὺ(Pr)(N) δʼ(Pt) ἔθανες(Aor)(Akt) κατακτανών(Aor)(Akt)(N).
+(957) [Ἰσμήνη:] du aber starbst getötet|habend.
+(958) [Ἰσμήνη:] δορὶ(D) δʼ(Pt) ἔθανες(Aor)(Akt)
+(958) [Ἰσμήνη:] mit|dem|Speer aber starbst
+(960) [Ἰσμήνη:] μελεοπαθής(Adj)(N).
+(960) [Ἰσμήνη:] elend|leidend.
+(962) [Ἰσμήνη:] ἴτω(Prä)(Akt)(Imv) δάκρυ(N).
+(962) [Ἰσμήνη:] es|gehe Träne.
+(964) [Ἰσμήνη:] κατακτάς(Aor)(Akt)(N).
+(964) [Ἰσμήνη:] getötet|habend.
+== Strophe 6 ==
+(966) [Ἀντιγόνη:] ἠέ(Kon).
+(966) [Ἀντιγόνη:] oder.
+(966b) [Ἰσμήνη:] ἠέ(Kon).
+(966b) [Ἰσμήνη:] oder.
+(967) [Ἀντιγόνη:] μαίνεται(Prä)(M/P) γόοισι(D) φρήν(N).
+(967) [Ἀντιγόνη:] tobt mit|Klagen Sinn.
+(968) [Ἰσμήνη:] ἐντὸς(Adv) δὲ(Pt) καρδία(N) στένει(Prä)(Akt).
+(968) [Ἰσμήνη:] innen aber Herz stöhnt.
+(969) [Ἀντιγόνη:] ἰὼ(ij) ἰὼ(ij) πάνδυρτε(Adj)(V) σύ(Pr)(N).
+(969) [Ἀντιγόνη:] io io all|beklagte du.
+(970) [Ἰσμήνη:] σὺ(Pr)(N) δʼ(Pt) αὖτε(Adv) καὶ(Kon) πανάθλιε(Adj)(V).
+(970) [Ἰσμήνη:] du aber wiederum und all|elend.
+(971) [Ἀντιγόνη:] πρὸς(Prp) φίλου(G) ἔφθισο(Aor)(M/P).
+(971) [Ἀντιγόνη:] von|Seiten des|Freundes gingst|zugrunde.
+(972) [Ἰσμήνη:] καὶ(Kon) φίλον(Adj)(A) ἔκτανες(Aor)(Akt).
+(972) [Ἰσμήνη:] und den|Freund tötetest.
+(973) [Ἰσμήνη:] διπλᾶ(Adj)(A) δʼ(Pt) ὁρᾶν(Prä)(Inf)(Akt)
+(973) [Ἰσμήνη:] doppelte aber zu|sehen
+(975) [Ἀντιγόνη:] ἄχεα(A) τῶνδε(Pr)(G) τάδʼ(Pr)(A) ἐγγύθεν(Adv).
+(975) [Ἀντιγόνη:] Leiden dieser diese von|nahe.
+(976) [Ἰσμήνη:] πέλας(Adv) ἀδελφέʼ(V) ἀδελφεῶν(G).
+(976) [Ἰσμήνη:] nahe Bruder der|Brüder.
+(977) [Χορός:] ἰὼ(ij) Μοῖρα(V) βαρυδότειρα(Adj)(V) μογερά(Adj)(V), πότνιά(Adj)(V) τʼ(Pt) Οἰδίπου(G) σκιά(N),
+(977) [Χορός:] io Moira schwer|zuteilende elend, Herrin und des|Ödipus Schatten,
+(979) [Χορός:] μέλαινʼ(Adj)(V) Ἐρινύς(V), ἦ(Pt) μεγασθενής(Adj)(V) τις(Pr)(N) εἶ(Prä)(Akt).
+(979) [Χορός:] schwarze Erinys, wahrlich groß|stark irgendeine bist.
+== Antistrophe 6 ==
+(980) [Ἀντιγόνη:] ἠέ(Kon).
+(980) [Ἀντιγόνη:] oder.
+(980b) [Ἰσμήνη:] ἠέ(Kon).
+(980b) [Ἰσμήνη:] oder.
+(981) [Ἀντιγόνη:] δυσθέατα(Adj)(A) πήματα(A)
+(981) [Ἀντιγόνη:] schwer|sehbare Leiden
+(982) [Ἰσμήνη:] ἔδειξεν(Aor)(Akt) ἐκ(Prp) φυγᾶς(G) ἐμοί(Pr)(D).
+(982) [Ἰσμήνη:] zeigte aus Flucht mir.
+(983) [Ἀντιγόνη:] οὐδʼ(Pt) ἵκεθʼ(Aor)(M/P) ὡς(Kon) κατέκτανεν(Aor)(Akt).
+(983) [Ἀντιγόνη:] und|nicht kam wie er|tötete.
+(984) [Ἰσμήνη:] σωθεὶς(Aor)(Pas)(N) δὲ(Pt) πνεῦμʼ(A) ἀπώλεσεν(Aor)(Akt).
+(984) [Ἰσμήνη:] gerettet|worden aber Atem verlor.
+(985) [Ἀντιγόνη:] ὤλεσε(Aor)(Akt) δῆτʼ(Pt) ἄγαν(Adv)
+(985) [Ἀντιγόνη:] vernichtete ja allzu.
+(986) [Ἰσμήνη:] καὶ(Kon) τὸν(Art)(A) ἐνόσφισεν(Aor)(Akt).
+(986) [Ἰσμήνη:] und den entwendete.
+(987) [Ἰσμήνη:] τάλαν(ij) πάθος(N).
+(987) [Ἰσμήνη:] wehe Leiden.
+(989) [Ἀντιγόνη:] δύστονα(Adj)(A) κήδεʼ(A) ὁμαίμονα(Adj)(A).
+(989) [Ἀντιγόνη:] unglücks|selige Kümmernisse gleich|blütige.
+(990) [Ἰσμήνη:] δίυγρα(Adj)(A) τριπάλτων(Adj)(G) πημάτων(G).
+(990) [Ἰσμήνη:] doppelt|nasse dreifach|geschüttelter Leiden.
+(991) [Χορός:] ἰὼ(ij) Μοῖρα(V) βαρυδότειρα(Adj)(V) μογερά(Adj)(V), πότνιά(Adj)(V) τʼ(Pt) Οἰδίπου(G) σκιά(N),
+(991) [Χορός:] io Moira schwer|zuteilende elend, Herrin und des|Ödipus Schatten,
+(993) [Χορός:] μέλαινʼ(Adj)(V) Ἐρινύς(V), ἦ(Pt) μεγασθενής(Adj)(V) τις(Pr)(N) εἶ(Prä)(Akt).
+(993) [Χορός:] schwarze Erinys, wahrlich groß|stark irgendeine bist.
+(994) [Ἀντιγόνη:] σὺ(Pr)(N) τοί(Pt) νιν(Pr)(A) οἶσθα(Prä)(Akt) διαπερῶν(Prä)(Akt)(N)—
+(994) [Ἀντιγόνη:] du ja ihn weißt durch|dringend—
+== Epode ==
+(995) [Ἰσμήνη:] σὺ(Pr)(N) δʼ(Pt) οὐδὲν(Pr)(A) ὕστερος(Adj)(N) μαθών(Aor)(Akt)(N)—
+(995) [Ἰσμήνη:] du aber nichts später gelernt|habend—
+(996) [Ἀντιγόνη:] ἐπεὶ(Kon) κατῆλθες(Aor)(Akt) ἐς(Prp) πόλιν(A),
+(996) [Ἀντιγόνη:] als du|herab|kamst in die|Stadt,
+(997) [Ἰσμήνη:] δορός(G) γε(Pt) τῷδʼ(Pr)(D) ἀντηρέτας(A).
+(997) [Ἰσμήνη:] des|Speeres doch diesem Gegen|wehrer.
+(998) [Ἀντιγόνη:] ὀλοὰ(Adj)(A) λέγειν(Prä)(Inf)(Akt).
+(998) [Ἀντιγόνη:] verderbliche zu|sagen.
+(999) [Ἰσμήνη:] ὀλοὰ(Adj)(A) δʼ(Pt) ὁρᾶν(Prä)(Inf)(Akt).
+(999) [Ἰσμήνη:] verderbliche aber zu|sehen.
+(1000) [Ἀντιγόνη:] ἰὼ(ij) πόνος(N)—
+(1000) [Ἀντιγόνη:] io Mühe—
+(1001) [Ἰσμήνη:] ἰὼ(ij) κακά(A)—
+(1001) [Ἰσμήνη:] io Übel—
+(1002) [Ἀντιγόνη:] δώμασι(D) καὶ(Kon) χθονί(D).
+(1002) [Ἀντιγόνη:] den|Häusern und der|Erde.
+(1003) [Ἰσμήνη:] πρὸ(Prp) πάντων(Adj)(G) δʼ(Pt) ἐμοί(Pr)(D).
+(1003) [Ἰσμήνη:] vor allen aber mir.
+(1004) [Ἀντιγόνη:] καὶ(Kon) τὸ(Art)(A) πρόσω(Adv) γʼ(Pt) ἐμοί(Pr)(D).
+(1004) [Ἀντιγόνη:] und das Vorne ja mir.
+(1005) [Ἰσμήνη:] ἰὼ(ij) ἰὼ(ij) δυστόνων(Adj)(G) κακῶν(Adj)(G), ἄναξ(V).
+(1005) [Ἰσμήνη:] io io übel|verhängter Übel, Herr.
+(1006) [Ἀντιγόνη:] ἰὼ(ij) ἰὼ(ij) πάντα(Adj)(N) πολυπονώτατοι(Adj)(N)(Sup).
+(1006) [Ἀντιγόνη:] io io alle viel|mühend|ste.
+(1007) [Ἰσμήνη:] ἰὼ(ij) ἰὼ(ij) δαιμονῶντες(Prä)(Akt)(N) ἄτᾳ(D).
+(1007) [Ἰσμήνη:] io io dämon|rasende durch|Unheil.
+(1008) [Ἀντιγόνη:] ἰὼ(ij) ἰώ(ij), ποῦ(Adv) σφε(Pr)(A) θήσομεν(Fu)(Akt) χθονός(G);
+(1008) [Ἀντιγόνη:] io io, wo sie werden|setzen der|Erde;
+(1009) [Ἰσμήνη:] ἰώ(ij), ὅπου(Adv) σ(Pr)(A) τι(Pr)(A) τιμιώτατον(Adj)(N)(Sup).
+(1009) [Ἰσμήνη:] io, wo|ist für|dich etwas ehrwürdigste.
+(1010) [Ἀντιγόνη:] ἰὼ(ij) ἰώ(ij), πῆμα(N) πατρὶ(D) πάρευνον(Adj)(N).
+(1010) [Ἀντιγόνη:] io io, Verderben dem|Vater Bett|genosse.
+(1011) [Κῆρυξ:] δοκοῦντα(Prä)(Akt)(A) καὶ(Kon) δόξαντʼ(Aor)(Akt)(A) ἀπαγγέλλειν(Prä)(Inf)(Akt) με(Pr)(A) χρὴ(Prä)(Akt)
+(1011) [Κῆρυξ:] scheinende und für|beschlossen|gehaltene zu|verkünden mich ist|nötig
+(1012) [Κῆρυξ:] δήμου(G) προβούλοις(D) τῆσδε(Pr)(G) Καδμείας(Adj)(G) πόλεως(G)·
+(1012) [Κῆρυξ:] des|Volkes Vor|beratern dieser kadmeischen Stadt·
+(1013) [Κῆρυξ:] Ἐτεοκλέα(A) μὲν(Pt) τόνδʼ(Pr)(A) ἐπʼ(Prp) εὐνοίᾳ(D) χθονὸς(G)
+(1013) [Κῆρυξ:] Eteokles zwar diesen in Wohlwollen der|Erde
+(1014) [Κῆρυξ:] θάπτειν(Prä)(Inf)(Akt) ἔδοξε(Aor)(Akt) γῆς(G) φίλαις(Adj)(D) κατασκαφαῖς(D)·
+(1014) [Κῆρυξ:] zu|bestatten man|beschloss der|Erde lieben Grab|senkungen·
+(1015) [Κῆρυξ:] στυγῶν(Prä)(Akt)(N) γὰρ(Pt) ἐχθροὺς(A) θάνατον(A) εἵλετʼ(Aor)(Med) ἐν(Prp) πόλει(D)
+(1015) [Κῆρυξ:] verabscheuend denn Feinde Tod wählte in der|Stadt
+(1016) [Κῆρυξ:] ἱερῶν(Adj)(G) πατρῴων(Adj)(G) δʼ(Pt) ὅσιος(Adj)(N) ὢν(Prä)(Akt)(N) μομφῆς(G) ἄτερ(Prp)
+(1016) [Κῆρυξ:] heiligen väterlichen aber fromm seiend Tadel ohne
+(1017) [Κῆρυξ:] τέθνηκεν(Per)(Akt) οὗπερ(Adv) τοῖς(Art)(D) νέοις(Adj)(D) θνῄσκειν(Prä)(Inf)(Akt) καλόν(Adj)(N).
+(1017) [Κῆρυξ:] ist|gestorben wo den Jungen zu|sterben schön.
+(1018) [Κῆρυξ:] οὕτω(Adv) μὲν(Pt) ἀμφὶ(Prp) τοῦδʼ(Pr)(G) ἐπέσταλται(Per)(M/P) λέγειν(Prä)(Inf)(Akt)·
+(1018) [Κῆρυξ:] so zwar über dieses ist|befohlen zu|sagen·
+(1019) [Κῆρυξ:] τούτου(Pr)(G) δʼ(Pt) ἀδελφὸν(A) τόνδε(Pr)(A) Πολυνείκους(A) νεκρὸν(Adj)(A)
+(1019) [Κῆρυξ:] dieses aber Bruder diesen Polyneikes Toten
+(1020) [Κῆρυξ:] ἔξω(Adv) βαλεῖν(Aor)(Inf)(Akt) ἄθαπτον(Adj)(A), ἁρπαγὴν(A) κυσίν(D),
+(1020) [Κῆρυξ:] hinaus zu|werfen un|bestattet, Raub den|Hunden,
+(1021) [Κῆρυξ:] ὡς(Kon) ὄντʼ(Prä)(Akt)(A) ἀναστατῆρα(A) Καδμείων(Adj)(G) χθονός(G),
+(1021) [Κῆρυξ:] als seiend Um|stürzer der|Kadmäer Erde,
+(1022) [Κῆρυξ:] εἰ(Kon) μὴ(Pt) θεῶν(G) τις(Pr)(N) ἐμποδὼν(Adv) ἔστη(Aor)(Akt) δορὶ(D)
+(1022) [Κῆρυξ:] wenn nicht der|Götter irgendeiner im|Wege stellte|sich mit|dem|Speer
+(1023) [Κῆρυξ:] τῷ(Art)(D) τοῦδʼ(Pr)(G)· . ἄγος(N) δὲ(Pt) καὶ(Kon) θανὼν(Aor)(Akt)(N) κεκτήσεται(Per)(M/P)
+(1023) [Κῆρυξ:] dem dieses· . Frevel aber auch gestorben|seiend wird|besitzen
+(1024) [Κῆρυξ:] θεῶν(G) πατρῴων(Adj)(G), οὓς(Pr)(A) ἀτιμάσας(Aor)(Akt)(N) ὅδε(Pr)(N)
+(1024) [Κῆρυξ:] der|Götter väterlichen, welche entehrt|habend dieser
+(1025) [Κῆρυξ:] στράτευμʼ(A) ἐπακτὸν(Adj)(A) ἐμβαλὼν(Aor)(Akt)(N) ᾕρει(Imp)(Akt) πόλιν(A).
+(1025) [Κῆρυξ:] Heer angeheuert hinein|geworfen|habend nahm die|Stadt.
+(1026) [Κῆρυξ:] οὕτω(Adv) πετηνῶν(Adj)(G) τόνδʼ(Pr)(A) ὑπʼ(Prp) οἰωνῶν(G) δοκεῖ(Prä)(Akt)
+(1026) [Κῆρυξ:] so der|Vögel diesen von den|Vogel|zeichen scheint
+(1027) [Κῆρυξ:] ταφέντʼ(Aor)(Pas)(A) ἀτίμως(Adv) τοὐπιτίμιον(A) λαβεῖν(Aor)(Inf)(Akt),
+(1027) [Κῆρυξ:] bestattet|worden unehrenhaft die|Strafe zu|erhalten,
+(1028) [Κῆρυξ:] καὶ(Kon) μήθʼ(Kon) ὁμαρτεῖν(Aor)(Inf)(Akt) τυμβοχόα(Adj)(A) χειρώματα(A)
+(1028) [Κῆρυξ:] und noch zu|begleiten Grab|trägerische Hand|werke
+(1029) [Κῆρυξ:] μήτʼ(Kon) ὀξυμόλποις(Adj)(D) προσσέβειν(Prä)(Inf)(Akt) οἰμώγμασιν(D),
+(1029) [Κῆρυξ:] noch hell|singenden zu|verehren Klage|rufen,
+(1030) [Κῆρυξ:] ἄτιμον(Adj)(A) εἶναι(Prä)(Inf)(Akt) δʼ(Pt) ἐκφορᾶς(G) φίλων(G) ὕπο(Prp).
+(1030) [Κῆρυξ:] unehrenhaft zu|sein aber der|Aus|tragung der|Freunde unter.
+(1031) [Κῆρυξ:] τοιαῦτʼ(Adj)(N) ἔδοξε(Aor)(Akt) τῷδε(Pr)(D) Καδμείων(Adj)(G) τέλει(D).
+(1031) [Κῆρυξ:] Solches man|beschloss diesem der|Kadmäer Gremium.
+(1032) [Ἀντιγόνη:] ἐγὼ(Pr)(N) δὲ(Pt) Καδμείων(Adj)(G) γε(Pt) προστάταις(D) λέγω(Prä)(Akt)·
+(1032) [Ἀντιγόνη:] ich aber der|Kadmäer doch Vor|stehern sage·
+(1033) [Ἀντιγόνη:] ἢν(Kon) μή(Pt) τις(Pr)(N) ἄλλος(Adj)(N) τόνδε(Pr)(A) συνθάπτειν(Prä)(Inf)(Akt) θέλῃ(Prä)(Akt)(Knj),
+(1033) [Ἀντιγόνη:] wenn nicht irgendjemand anderer diesen mit|begraben möge|wollen,
+(1034) [Ἀντιγόνη:] ἐγώ(Pr)(N) σφε(Pr)(A) θάψω(Fu)(Akt) κἀνὰ(Kon)(Prp) κίνδυνον(A) βαλῶ(Fu)(Akt)
+(1034) [Ἀντιγόνη:] ich ihn werde|begraben und|auf Gefahr werde|werfen
+(1035) [Ἀντιγόνη:] θάψασʼ(Aor)(Akt)(N) ἀδελφὸν(A) τὸν(Art)(A) ἐμόν(Adj)(A), οὐδʼ(Pt) αἰσχύνομαι(Prä)(M/P)
+(1035) [Ἀντιγόνη:] begraben|habend Bruder den meinen, und|nicht schäme|ich|mich
+(1036) [Ἀντιγόνη:] ἔχουσʼ(Prä)(Akt)(N) ἄπιστον(Adj)(A) τήνδʼ(Pr)(A) ἀναρχίαν(A) πόλει(D).
+(1036) [Ἀντιγόνη:] habend ungesetzliche diese Anarchie der|Stadt.
+(1037) [Ἀντιγόνη:] δεινὸν(Adj)(N) τὸ(Art)(N) κοινὸν(Adj)(N) σπλάγχνον(N), οὗ(Pr)(G) πεφύκαμεν(Per)(Akt),
+(1037) [Ἀντιγόνη:] furchtbar das gemeinsame Eingeweide, deren wir|gewachsen|sind,
+(1038) [Ἀντιγόνη:] μητρὸς(G) ταλαίνης(Adj)(G) κἀπὸ(Kon)(Prp) δυστήνου(Adj)(G) πατρός(G).
+(1038) [Ἀντιγόνη:] der|Mutter elend und|von unglücklichen des|Vaters.
+(1039) [Ἀντιγόνη:] τοιγὰρ(Pt) θέλουσʼ(Prä)(Akt)(N) ἄκοντι(Adj)(D) κοινώνει(Prä)(Akt) κακῶν(Adj)(G)
+(1039) [Ἀντιγόνη:] denn|ja wollend dem|Unwilligen teilt an|Übeln
+(1040) [Ἀντιγόνη:] ψυχή(N), θανόντι(AorS)(Akt)(D) ζῶσα(Prä)(Akt)(N) συγγόνῳ(Adj)(D) φρενί(D).
+(1040) [Ἀντιγόνη:] Seele, dem|Gestorbenen lebend verwandtem Sinn.
+(1041) [Ἀντιγόνη:] τούτου(Pr)(G) δὲ(Pt) σάρκας(A) οὐδὲ(Pt) κοιλογάστορες(Adj)(N)
+(1041) [Ἀντιγόνη:] dieses aber Fleische auch|nicht hohl|bauchige
+(1042) [Ἀντιγόνη:] λύκοι(N) σπάσονται(Fu)(M/P)· μὴ(Pt) δοκησάτω(Aor)(Akt)(Imv) τινί(Pr)(D).
+(1042) [Ἀντιγόνη:] Wölfe werden|zerreißen· nicht möge|denken jemandem.
+(1043) [Ἀντιγόνη:] τάφον(A) γὰρ(Pt) αὐτῷ(Pr)(D) καὶ(Kon) κατασκαφὰς(A) ἐγώ(Pr)(N),
+(1043) [Ἀντιγόνη:] Grab denn ihm und Grab|senkungen ich,
+(1044) [Ἀντιγόνη:] γυνή(N) περ(Pt) οὖσα(Prä)(Akt)(N), τῷδε(Pr)(D) μηχανήσομαι(Fu)(M/P),
+(1044) [Ἀντιγόνη:] Frau doch seiend, für|diesen werde|bewerkstelligen,
+(1045) [Ἀντιγόνη:] κόλπῳ(D) φέρουσα(Prä)(Akt)(N) βυσσίνου(Adj)(G) πεπλώματος(G).
+(1045) [Ἀντιγόνη:] im|Schoß tragend des|leinenen Gewandes.
+(1046) [Ἀντιγόνη:] καὐτὴ(Kon)(Adj)(N) καλύψω(Fu)(Akt), μηδέ(Pt) τῳ(Pr)(D) δόξῃ(Aor)(Akt)(Knj) πάλιν(Adv)·
+(1046) [Ἀντιγόνη:] und|ich|selbst werde|ich|bedecken, und|nicht jemandem möge|scheinen wieder·
+(1047) [Ἀντιγόνη:] θάρσει(Aor)(Akt)(Imv), παρέσται(Fu)(M/P) μηχανὴ(N) δραστήριος(Adj)(N).
+(1047) [Ἀντιγόνη:] fasse|Mut, wird|da|sein Mittel tatkräftig.
+(1048) [Κῆρυξ:] αὐδῶ(Prä)(Akt) πόλιν(A) σε(Pr)(A) μὴ(Pt) βιάζεσθαι(Prä)(M/P)(Inf) τάδε(Pr)(A).
+(1048) [Κῆρυξ:] ich|sage die|Stadt dich nicht zu|zwingen dieses.
+(1049) [Ἀντιγόνη:] αὐδῶ(Prä)(Akt) σὲ(Pr)(A) μὴ(Pt) περισσὰ(Adj)(A) κηρύσσειν(Prä)(Akt)(Inf) ἐμοί(Pr)(D).
+(1049) [Ἀντιγόνη:] ich|sage dich nicht Überflüssiges zu|verkünden mir.
+(1050) [Κῆρυξ:] τραχύς(Adj)(N) γε(Pt) μέντοι(Pt) δῆμος(N) ἐκφυγὼν(AorS)(Akt)(N) κακά(Adj)(A).
+(1050) [Κῆρυξ:] rau zwar jedoch Volk entflohen Übel.
+(1051) [Ἀντιγόνη:] τράχυνʼ(Aor)(Akt)(Imv)· ἄθαπτος(Adj)(N) δʼ(Pt) οὗτος(Pr)(N) οὐ(Pt) γενήσεται(Fu)(M/P).
+(1051) [Ἀντιγόνη:] mach|rau· unbestattet aber dieser nicht wird|werden.
+(1052) [Κῆρυξ:] ἀλλʼ(Kon) ὃν(Pr)(A) πόλις(N) στυγεῖ(Prä)(Akt), σὺ(Pr)(N) τιμήσεις(Fu)(Akt) τάφῳ(D), ;
+(1052) [Κῆρυξ:] aber den Stadt verabscheut, du wirst|ehren mit|Grab, ;
+(1053) [Ἀντιγόνη:] ἤδη(Adv) τὰ(Art)(A) τοῦδε(Pr)(G) διατετίμηται(Per)(M/P) θεοῖς(D).
+(1053) [Ἀντιγόνη:] schon die dieses sind|festgesetzt von|den|Göttern.
+(1054) [Κῆρυξ:] οὔ(Pt), πρίν(Kon) γε(Pt) χώραν(A) τήνδε(Pr)(A) κινδύνῳ(D) βαλεῖν(AorS)(Akt)(Inf).
+(1054) [Κῆρυξ:] nein, ehe ja Land dieses in|Gefahr zu|werfen.
+(1055) [Ἀντιγόνη:] παθὼν(AorS)(Akt)(N) κακῶς(Adv) κακοῖσιν(Adj)(D) ἀντημείβετο(Imp)(M/P).
+(1055) [Ἀντιγόνη:] leidend schlecht mit|Übeln vergalt|er.
+(1056) [Κῆρυξ:] ἀλλʼ(Kon) εἰς(Prp) ἅπαντας(Adj)(A) ἀνθʼ(Prp) ἑνὸς(Adj)(G) τόδʼ(Pr)(N) ἔργον(N) ἦν(Imp)(Akt).
+(1056) [Κῆρυξ:] aber auf alle statt eines dies Werk war.
+(1057) [Ἀντιγόνη:] ἔρις(N) περαίνει(Prä)(Akt) μῦθον(A) ὑστάτη(Adj)(N)(Sup) θεῶν(G).
+(1057) [Ἀντιγόνη:] Streit vollendet Rede letzte der|Götter.
+(1058) [Ἀντιγόνη:] ἐγὼ(Pr)(N) δὲ(Pt) θάψω(Fu)(Akt) τόνδε(Pr)(A)· μὴ(Pt) μακρηγόρει(Prä)(Akt)(Imv).
+(1058) [Ἀντιγόνη:] ich aber werde|begraben diesen· nicht rede|lang.
+(1059) [Κῆρυξ:] ἀλλʼ(Kon) αὐτόβουλος(Adj)(N) ἴσθʼ(Prä)(Akt)(Imv), ἀπεννέπω(Prä)(Akt) δʼ(Pt) ἐγώ(Pr)(N).
+(1059) [Κῆρυξ:] aber eigen|willig sei, ich|untersage aber ich.
+(1059b) [Χορός:] φεῦ(ij) φεῦ(ij).
+(1059b) [Χορός:] weh weh.
+(1060) [Χορός:] ὦ(ij) μεγάλαυχοι(Adj)(N) καὶ(Kon) φθερσιγενεῖς(Adj)(N)
+(1060) [Χορός:] o groß|prahlende und Geschlecht|verderbende
+(1061) [Χορός:] Κῆρες(N) Ἐρινύες(N), αἵτʼ(Pr)(N) Οἰδιπόδα(A)
+(1061) [Χορός:] Keren Erinnyen, die Ödipus
+(1062) [Χορός:] γένος(A) ὠλέσατε(Aor)(Akt) πρυμνόθεν(Adv) οὕτως(Adv),
+(1062) [Χορός:] Geschlecht habt|vernichtet von|Grund|auf so,
+(1063) [Χορός:] τί(Pr)(N) πάθω(AorS)(Akt)(Knj); τί(Pr)(N) δὲ(Pt) δρῶ(Prä)(Akt)(Knj); τί(Pr)(N) δὲ(Pt) μήσωμαι(Aor)(Med)(Knj);
+(1063) [Χορός:] was soll|ich|leiden; was aber tue|ich; was aber möge|ich|ersinnen;
+(1064) [Χορός:] πῶς(Adv) τολμήσω(Fu)(Akt) μήτε(Kon) σὲ(Pr)(A) κλαίειν(Prä)(Akt)(Inf)
+(1064) [Χορός:] wie werde|ich|wagen weder dich zu|beweinen
+(1065) [Χορός:] μήτε(Kon) προπέμπειν(Prä)(Akt)(Inf) ἐπὶ(Prp) τύμβον(A)·
+(1065) [Χορός:] noch zu|geleiten zum Grab·
+(1066) [Χορός:] ἀλλὰ(Kon) φοβοῦμαι(Prä)(M/P) κἀποτρέπομαι(Kon)(Prä)(M/P)
+(1066) [Χορός:] sondern fürchte|mich und|wende|mich|ab
+(1067) [Χορός:] δεῖμα(N) πολιτῶν(G).
+(1067) [Χορός:] Furcht der|Bürger.
+(1068) [Χορός:] σύ(Pr)(N) γε(Pt) μὴν(Pt) πολλῶν(Adj)(G) πενθητήρων(G)
+(1068) [Χορός:] du ja doch vieler Trauernder
+(1069) [Χορός:] τεύξει(Fu)(Akt)· κεῖνος(Pr)(N) δʼ(Pt) ὁ(Art)(N) τάλας(Adj)(N) ἄγοος(Adj)(N)
+(1069) [Χορός:] wirst|du|werden· jener aber der Unglückliche ohne|Klaglied
+(1070) [Χορός:] μονόκλαυτον(Adj)(A) ἔχων(Prä)(Akt)(N) θρῆνον(A) ἀδελφῆς(G)
+(1070) [Χορός:] ein|fach|beweinten habend Klaggesang der|Schwester
+(1071) [Χορός:] εἶσιν(Prä)(Akt)· τίς(Pr)(N) ἂν(Pt) οὖν(Pt) τὰ(Art)(A) πίθοιτο(Aor)(Med)(Op);
+(1071) [Χορός:] er|geht· wer wohl nun die würde|glauben;
+(1072) [Ἡμιχόριον Α:] δράτω(Aor)(Akt)(Imv) τι πόλις(N) καὶ(Kon) μὴ(Pt) δράτω(Aor)(Akt)(Imv)
+(1072) [Ἡμιχόριον Α:] möge|tun etwas Stadt und nicht möge|tun
+(1073) [Ἡμιχόριον Α:] τοὺς(Art)(A) κλαίοντας(Prä)(Akt)(A) Πολυνείκη(A).
+(1073) [Ἡμιχόριον Α:] die Weinenden Polyneikes.
+(1074) [Ἡμιχόριον Α:] ἡμεῖς(Pr)(N) μὲν(Pt) ἴμεν(Prä)(Akt) καὶ(Kon) συνθάψομεν(Fu)(Akt)
+(1074) [Ἡμιχόριον Α:] wir zwar gehen und mit|begraben|wir
+(1075) [Ἡμιχόριον Α:] αἵδε(Pr)(N) προπομποί(N). καὶ(Kon) γὰρ(Pt) γενεᾷ(D)
+(1075) [Ἡμιχόριον Α:] diese Voraus|führer. und denn dem|Geschlecht
+(1076) [Ἡμιχόριον Α:] κοινὸν(Adj)(N) τόδʼ(Pr)(N) ἄχος(N), καὶ(Kon) πόλις(N) ἄλλως(Adv)
+(1076) [Ἡμιχόριον Α:] gemeinsam dies Schmerz, und Stadt anders
+(1077) [Ἡμιχόριον Α:] ἄλλοτʼ(Adv) ἐπαινεῖ(Prä)(Akt) τὰ(Art)(A) δίκαια(Adj)(A).
+(1077) [Ἡμιχόριον Α:] zuweilen preist die das|Gerechte.
+(1078) [Ἡμιχόριον Β:] ἡμεῖς(Pr)(N) δʼ(Pt) ἅμα(Adv) τῷδʼ(Pr)(D), ὥσπερ(Kon) τε(Pt) πόλις(N)
+(1078) [Ἡμιχόριον Β:] wir aber zugleich mit|diesem, so|wie auch Stadt
+(1079) [Ἡμιχόριον Β:] καὶ(Kon) τὸ(Art)(A) δίκαιον(Adj)(A) ξυνεπαινεῖ(Prä)(Akt).
+(1079) [Ἡμιχόριον Β:] auch das Gerechte lobt|mit.
+(1080) [Ἡμιχόριον Β:] μετὰ(Prp) γὰρ(Pt) μάκαρας(Adj)(A) καὶ(Kon) Διὸς(G) ἰσχὺν(A)
+(1080) [Ἡμιχόριον Β:] mit denn Seligen und des|Zeus Kraft
+(1081) [Ἡμιχόριον Β:] ὅδε(Pr)(N) Καδμείων(Adj)(G) ἤρυξε(Aor)(Akt) πόλιν(A)
+(1081) [Ἡμιχόριον Β:] dieser der|Kadmäer schützte Stadt
+(1082) [Ἡμιχόριον Β:] μὴ(Pt) ʼνατραπῆναι(Aor)(Pas)(Inf) μηδʼ(Pt) ἀλλοδαπῷ(Adj)(D)
+(1082) [Ἡμιχόριον Β:] nicht um|gestürzt|zu|werden noch fremdem
+(1083) [Ἡμιχόριον Β:] κύματι(D) φωτῶν(G)
+(1083) [Ἡμιχόριον Β:] Woge der|Männer
+(1084) [Ἡμιχόριον Β:] κατακλυσθῆναι(Aor)(Pas)(Inf) τὰ(Art)(A) μάλιστα(Adv)(Sup).
+(1084) [Ἡμιχόριον Β:] über|flutet|zu|werden am meisten.

@@ -35,14 +35,14 @@ RE_PARENS = re.compile(r'\([^)]*\)')
 
 def strip_wrappers(token: str) -> str:
     """
-    Entfernt führende Steuerzeichen (#, +, -) und alle (...)-Tags.
-    WICHTIG: '_' bleibt erhalten. Ebenso bleiben i, L, |, ’ unangetastet.
+    Entfernt führende Steuerzeichen (#, +, -, §, $) und alle (...)-Tags.
+    WICHTIG: '_' bleibt erhalten. Ebenso bleiben i, L, |, ' unangetastet.
     """
     if not token:
         return ''
     s = token
-    # Führendes Steuerzeichen abwerfen
-    if s[0] in '#+-':
+    # Führendes Steuerzeichen abwerfen (inkl. neue Farbmarker § und $)
+    if s and s[0] in '#+-§$':
         s = s[1:]
     # Alle (...)-Tags entfernen
     s = RE_PARENS.sub('', s)

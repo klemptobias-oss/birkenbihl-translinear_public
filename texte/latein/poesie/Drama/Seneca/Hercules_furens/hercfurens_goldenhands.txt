@@ -1,0 +1,1360 @@
+(1x) === Prolog ===
+(1)  Iuno: Soror Tonantis (hoc enim sōlum mihī
+(2)  Iuno: nōmen relictum est) semper aliēnum Jovem
+(3)  Iuno: ac templa summī vidua dēseruī aetheris
+(4)  Iuno: locumque caelō pulsa paelicibus dedī;
+(5)  Iuno: tellūs colenda est: paelicēs caelum tenent,
+(6)  Iuno: hinc Arctos altā parte glaciālis polī
+(7)  Iuno: sublīme classēs sīdus Argolicās agit;
+(8)  Iuno: hinc, quā tepentī vēre lābātur diēs,
+(9)  Iuno: Tyriae per undās vector Eurōpae nitet;
+(10)  Iuno: illinc timendum ratibus ac pontō gregem
+(11)  Iuno: passim vagantēs exserunt Atlantides.
+(12)  Iuno: ferrō mināx hinc terret Ōrīōn deōs
+(13)  Iuno: suāsque Perseus aureus stēllās habet;
+(14)  Iuno: hinc clāra geminī signa Tyndaridae micant
+(15)  Iuno: quibusque nātīs mōbilis tellūs stetit.
+(16)  Iuno: nec ipse tantum Bacchus aut Bacchī parēns
+(17)  Iuno: adiēre superōs: nē qua pars probrō vacet,
+(18)  Iuno: mundus puellae serta Gnōsiacae gerit,
+(19)  Iuno: sed vetera querimur; ūna mē dīra ac fera
+(20)  Iuno: Thēbāna tellūs nuribus ā! sparsa impiīs
+(21)  Iuno: quotiēns novercam fēcit! ēscendat licet
+(22)  Iuno: meumque victrīx teneat Alcmēnē locum,
+(23)  Iuno: pariterque nātus astra prōmissa occupet,
+(24)  Iuno: in cujus ortūs mundus impendit diem
+(25)  Iuno: tardusque Eōō Phoebus effulsit marī
+(26)  Iuno: retinēre mersum jussus Ōceanō jubar.
+(27)  Iuno: nōn sīc abībunt odia; vīvācēs aget
+(28)  Iuno: violentus īrās animus et saevus dolor
+(29)  Iuno: aeterna bella pāce sublātā geret.
+(30)  Iuno: Quae bella? quicquid horridum tellūs creat
+(31)  Iuno: inimīca, quicquid pontus aut āēr tulit
+(32)  Iuno: terribile dīrum pestilēns atrōx ferum,
+(33)  Iuno: frāctum atque domitum est. superat et crēscit malīs
+(34)  Iuno: īrāque nostrā fruitur; in laudēs suās
+(35)  Iuno: mea vertit odia: dum nimis saeva imperō,
+(36)  Iuno: patrem probāvī, glōriae fēcī locum,
+(37)  Iuno: quā Sōl redūcēns quāque dēpōnēns diem
+(38)  Iuno: bīnōs propinquā tinguit Aethiopas face,
+(39)  Iuno: indomita virtūs colitur et tōtō deus
+(40)  Iuno: nārrātur orbe. mōnstra jam dēsunt mihī
+(41)  Iuno: minorque labor est Herculī jussa exsequī,
+(42)  Iuno: quam mihi jubēre: laetus imperia excipit,
+(43)  Iuno: quae fera tyrannī jūra violentō queant
+(44)  Iuno: nocēre juvenī? nempe prō tēlīs gerit
+(45)  Iuno: quae timuit et quae fūdit: armātus venit
+(46)  Iuno: leōne et hydrā, nec satis terrae patent:
+(47)  Iuno: effrēgit ecce līmen īnfernī Jovis
+(48)  Iuno: et opīma victī rēgis ad superōs refert,
+(49)  Iuno: parum est revertī, foedus umbrārum perīt:
+(50)  Iuno: vīdī ipsa, vīdī nocte discussā īnferum
+(51)  Iuno: et Dīte domitō spolia jactantem patrī
+(52)  Iuno: frāterna, cūr nōn vīnctum et oppressum trahit
+(53)  Iuno: ipsum catēnīs paria sortītum Jovī
+(54)  Iuno: Erebōque captō potitur et retegit Styga?
+(55)  Iuno: patefacta ab īmīs mānibus retrō via est
+(56)  Iuno: et sacra dīrae mortis in apertō jacent.
+(57)  Iuno: at ille, ruptō carcere umbrārum ferōx,
+(58)  Iuno: dē mē triumphat et superbificā manū
+(59)  Iuno: ātrum per urbēs dūcit Argolicās canem.
+(60)  Iuno: vīsō labantem Cerberō vīdī diem
+(61)  Iuno: pavidumque Sōlem; mē quoque invāsit tremor,
+(62)  Iuno: et terna mōnstrī colla dēvictī intuēns
+(63)  Iuno: timuī imperāsse. levia sed nimium queror;
+(64)  Iuno: caelō timendum est, rēgna nē summa occupet
+(65)  Iuno: quī vīcit īma: scēptra praeripiet patrī.
+(66)  Iuno: nec in astra lentā veniet ut Bacchus viā:
+(67)  Iuno: iter ruīnā quaeret et vacuō volet
+(68)  Iuno: rēgnāre mundō, rōbore expertō tumet,
+(69)  Iuno: et posse caelum vīribus vincī suīs
+(70)  Iuno: didicit ferendō; subdidit mundō caput
+(71)  Iuno: nec flexit umerōs mōlis immēnsae labor
+(72)  Iuno: meliusque collō sēdit Herculeō polus.
+(73)  Iuno: immōta cervīx sīdera et caelum tulit
+(74)  Iuno: et mē prementem: quaerit ad superōs viam.
+(75)  Iuno: Perge īra, perge et magna meditantem opprime,
+(76)  Iuno: congredere, manibus ipsa dīlacerā tuīs:
+(77)  Iuno: quid tanta mandās odia? discēdant ferae,
+(78)  Iuno: ipse imperandō fessus Eurystheus vacet.
+(79)  Iuno: Tītānas ausōs rumpere imperium Jovis
+(80)  Iuno: ēmitte, Siculī verticis laxā specum,
+(81)  Iuno: tellūs gigante Dōris excussō tremēns
+(82)  Iuno: supposita mōnstrī colla terrificī levet;
+(83)  Iuno: sublīmis aliās Lūna concipiat ferās
+(84)  Iuno: sed vīcit ista. quaeris Alcīdae parem?
+(85)  Iuno: nēmō est nisi ipse: bella jam sēcum gerat.
+(86)  Iuno: adsint ab īmō Tartarī fundō excitae
+(87)  Iuno: Eumenides, ignem flammeae spargant comae,
+(88)  Iuno: vīperea saevae verbera incutiant manūs,
+(89)  Iuno: ī nunc, superbe, caelitum sēdēs pete,
+(90)  Iuno: hūmāna temne. jam Styga et mānēs ferōx
+(91)  Iuno: fūgisse crēdis? hīc tibi ostendam īnferōs,
+(92)  Iuno: revocābō in altā conditam cālīgine,
+(93)  Iuno: ultrā nocentum exilia, discordem deam
+(94)  Iuno: quam mūnit ingēns montis oppositī specus;
+(95)  Iuno: ēdūcam et īmō Dītis ē rēgnō extraham
+(96)  Iuno: quicquid relictum est: veniet invīsum Scelus
+(97)  Iuno: suumque lambēns sanguinem Impietās ferōx
+(98)  Iuno: Errorque et in sē semper armātus Furor;
+(99)  Iuno: hōc hōc ministrō noster ūtātur dolor.
+(100)  Iuno: Incipite, famulae Dītis, ārdentem citae
+(101)  Iuno: concutite pīnum et agmen horrendum anguibus
+(102)  Iuno: Megaera dūcat atque lūctificā manū
+(103)  Iuno: vastam rogō flagrante corripiat trabem,
+(104)  Iuno: hoc agite, poenās petite vitiātae Stygis.
+(105)  Iuno: concutite pectus, ācrior mentem excoquat
+(106)  Iuno: quam quī camīnīs ignis Aetnaeīs furit:
+(107)  Iuno: ut possit animō captus Alcīdēs agī,
+(108)  Iuno: magnō furōre percitus, vōbīs prius
+(109)  Iuno: īnsāniendum est. Jūno, cūr nōndum furis?
+(110)  Iuno: mē mē, sorōrēs, mente dējectam meā
+(111)  Iuno: versāte prīmam, facere sī quicquam apparō
+(112)  Iuno: dignum novercā; vōta mūtentur mea:
+(113)  Iuno: nātōs reversus videat incolumēs precor
+(114)  Iuno: manūque fortis redeat, invēnī diem,
+(115)  Iuno: invīsa quō nōs Herculis virtūs juvet.
+(116)  Iuno: mē vīcit: et sē vincat et cupiat morī
+(117)  Iuno: ab īnferīs reversus, hīc prōsit mihī
+(118)  Iuno: Jove esse genitum, stābō at, ut certō exeant
+(119)  Iuno: ēmissa nervō tēla, lībrābō manū,
+(120)  Iuno: regam furentis arma, pugnantī Herculī
+(121)  Iuno: tandem favēbō; scelere perfectō licet
+(122)  Iuno: admittat illās genitor in caelum manūs.
+(123)  Iuno: Movenda jam sunt bella: clārescīt diēs
+(124)  Iuno: ortūque Tītān lūcidus croceō subit.
+(125x) === Chor (Anapäste) ===
+(125)  Chorus: Jam rāra micant sīdera prōnō
+(126)  Chorus: languida mundō; nox victa vagōs
+(127)  Chorus: contrahit ignēs lūce renātā,
+(128)  Chorus: cōgit nitidum Phosphoros agmen:
+(129)  Chorus: signum celsī glaciāle polī
+(130)  Chorus: septem stēllīs Arcados ursae
+(131)  Chorus: lūcem versō tēmōne vocat.
+(132)  Chorus: Jam caeruleīs ēvectus equīs
+(133)  Chorus: Tītān summā prōspicit Oetā;
+(134)  Chorus: jam Cadmēīs incluta Bacchīs
+(135)  Chorus: aspersa diē dūmēta rubent
+(136)  Chorus: Phoebīque fugit reditūra soror.
+(137)  Chorus: labor exoritur dūrus et omnīs
+(138)  Chorus: agitat cūrās aperitque domōs.
+(139)  Chorus: Pāstor gelidā cāna pruīnā
+(140)  Chorus: grege dīmissō pābula carpit;
+(141)  Chorus: lūdit prātō līber apertō
+(142)  Chorus: nōndum ruptā fronte juvencus,
+(143)  Chorus: vacuae reparant ūbera mātrēs;
+(144)  Chorus: errat cursū levis incertō
+(145)  Chorus: mollī petulāns haedus in herbā.
+(146)  Chorus: Pendet summō strīdula rāmō
+(147)  Chorus: pinnāsque novō trādere sōlī
+(148)  Chorus: gestit querulōs inter nīdōs
+(149)  Chorus: Thrācia paelex,
+(150)  Chorus: turbaque circā cōnfūsa sonat
+(151)  Chorus: murmure mixtō testāta diem.
+(152)  Chorus: Carbasa ventīs crēdit dubius
+(153)  Chorus: nāvita vītae,
+(154)  Chorus: laxōs aurā complente sinūs,
+(155)  Chorus: hic exēsīs pendēns scopulīs
+(156)  Chorus: aut dēceptōs īnstruit hāmōs
+(157)  Chorus: aut suspēnsus spectat pressā
+(158)  Chorus: praemia dextrā:
+(159)  Chorus: sentit tremulum līnea piscem.
+(160)  Chorus: Haec, innocuae quibus est vītae
+(161)  Chorus: tranquilla quiēs
+(162)  Chorus: et laeta suō parvōque domus;
+(163)  Chorus: spēs immānēs
+(164)  Chorus: urbibus errant trepidīque metūs.
+(165)  Chorus: Ille superbōs aditūs rēgum
+(165)  Chorus: dūraeque forēs expers somnī
+(166)  Chorus: colit, hic nūllō fīne beātās
+(167)  Chorus: compōnit opēs gāzīs inhiāns
+(168)  Chorus: et congestō pauper in aurō.
+(169)  Chorus: Illum populī favor attonitum
+(170)  Chorus: flūctūque magis mōbile vulgus
+(171)  Chorus: aurā tumidum tollit inānī;
+(172)  Chorus: hic clāmōsī rabiōsa forī
+(173)  Chorus: jūrgia vēndēns
+(174)  Chorus: improbus īrās et verba locat.
+(175)  Chorus: Nōvit paucōs sēcūra quiēs,
+(176)  Chorus: quī vēlōcis memorēs aevī
+(177)  Chorus: tempora numquam reditūra tenent,
+(178)  Chorus: dum fāta sinunt, vīvite laetī:
+(179)  Chorus: properat cursū vīta citātō
+(180)  Chorus: volucrīque diē
+(180)  Chorus: rota praecipitis vertitur annī;
+(181)  Chorus: dūrae peragunt pēnsa sorōrēs
+(182)  Chorus: nec sua retrō fīla revolvunt.
+(183)  Chorus: At gēns hominum fertur rapidīs
+(184)  Chorus: obvia fātīs incerta suī:
+(185)  Chorus: Stygiās ultrō quaerimus undās.
+(186)  Chorus: nimium, Alcīdē, pectore fortī
+(187)  Chorus: properās maestōs vīsere mānēs:
+(188)  Chorus: certō veniunt tempore Parcae,
+(189)  Chorus: nūllī jussō cessāre licet,
+(190)  Chorus: nūllī scrīptum prōferre diem:
+(191)  Chorus: recipit populōs urna citātōs.
+(192)  Chorus: Alium multīs glōria terrīs
+(193)  Chorus: trādat et omnēs fāma per urbēs
+(194)  Chorus: garrula laudet
+(195)  Chorus: caelōque parem tollat et astrīs;
+(196)  Chorus: alius currū sublīmis eat:
+(197)  Chorus: mē mea tellūs
+(198)  Chorus: lare sēcrētō tūtōque tegat.
+(199)  Chorus: venit ad pigrōs cāna senectūs,
+(200)  Chorus: humilīque locō sed certa sedet
+(200)  Chorus: sordida parvae fortūna domūs:
+(201)  Chorus: altē virtūs animōsa cadit.
+(202)  Chorus: Sed maesta venit crīne solūtō
+(203)  Chorus: Megarā parvum comitāta gregem,
+(204x) === Szene 1 ===
+(204)  Chorus: tardusque seniō graditur Alcīdae parēns.
+(205)  Amphitruon: Ō magne Olympī rēctor et mundī arbiter,
+(206)  Amphitruon: jam statue tandem gravibus aerumnīs modum
+(207)  Amphitruon: fīnemque clādī. nūlla lūx umquam mihī
+(208)  Amphitruon: sēcūra fulsit: fīnis alterius malī
+(209)  Amphitruon: gradus est futūrī, prōtinus reducī novus
+(210)  Amphitruon: parātur hostis; antequam laetam domum
+(211)  Amphitruon: contingat, aliud jussus ad bellum meat;
+(212)  Amphitruon: nec ūlla requiēs tempus aut ūllum vacat,
+(213)  Amphitruon: nisi dum jubētur. sequitur ā prīmō statim
+(214)  Amphitruon: īnfēsta Jūnō: numquid immūnis fuit
+(215)  Amphitruon: īnfantis aetās? mōnstra superāvit prius
+(216)  Amphitruon: quam nōsse posset, gemina cristātī caput
+(217)  Amphitruon: anguēs ferēbant ōra, quōs contrā obvius
+(218)  Amphitruon: reptābat īnfāns igneōs serpentium
+(219)  Amphitruon: oculōs remissō lūmine ac placidō intuēns;
+(220)  Amphitruon: artōs serēnīs vultibus nōdōs tulit,
+(221)  Amphitruon: et tumida tenerā guttura ēlīdēns manū
+(222)  Amphitruon: prōlūsit hydrae. Maenalī pernīx fera,
+(223)  Amphitruon: multō decōrum praeferēns aurō caput,
+(224)  Amphitruon: dēprēnsa cursū; maximus Nemeae timor
+(225)  Amphitruon: pressus lacertīs gemuit Herculeīs leō.
+(226)  Amphitruon: quid stabula memorem dīra Bistoniī gregis
+(227)  Amphitruon: suīsque rēgem pābulum armentīs datum,
+(228)  Amphitruon: solitumque dēnsīs hispidum Erymanthī jugīs
+(229)  Amphitruon: Arcadia quatere nemora Maenalium suem,
+(230)  Amphitruon: taurumque centum nōn levem populīs metum?
+(231)  Amphitruon: inter remōtōs gentis Hesperiae gregēs
+(232)  Amphitruon: pāstor trifōrmis lītoris Tartēsiī
+(233)  Amphitruon: perēmptus, ācta est praeda ab occāsū ultimō;
+(234)  Amphitruon: nōtum Cithaerōn pāvit Ōceanō pecus.
+(235)  Amphitruon: penetrāre jussus sōlis aestīvī plagās
+(236)  Amphitruon: et adusta medius rēgna quae torret diēs
+(237)  Amphitruon: utrimque montēs solvit ac ruptō obice
+(238)  Amphitruon: lātam ruentī fēcit Ōceanō viam.
+(239)  Amphitruon: post haec adortus nemoris opulentī domōs
+(240)  Amphitruon: aurifera vigilis spolia serpentis tulit;
+(241)  Amphitruon: quid? saeva Lernae mōnstra, numerōsum malum,
+(242)  Amphitruon: nōn igne dēmum vīcit et docuit morī,
+(243)  Amphitruon: solitāsque pinnīs condere obductīs diem
+(244)  Amphitruon: petīt ab ipsīs nūbibus Stymphālidas?
+(245)  Amphitruon: nōn vīcit illum caelibis semper torī
+(246)  Amphitruon: rēgīna gentis vidua Thermōdontiae,
+(247)  Amphitruon: nec ad omne clārum facinus audācēs manūs
+(248)  Amphitruon: stabulī fugāvit turpis Augēī labor.
+(249)  Amphitruon: Quid ista prōsunt? orbe dēfēnsō caret,
+(250)  Amphitruon: sēnsēre terrae pācis auctōrem suae
+(251)  Amphitruon: abesse trīstēs: prōsperum ac fēlīx scelus
+(252)  Amphitruon: virtūs vocātur; sontibus pārent bonī.
+(253)  Amphitruon: jūs est in armīs, opprimit lēgēs timor,
+(254)  Amphitruon: ante ōra vīdī nostra truculentā manū
+(255)  Amphitruon: gnātōs paternī cadere rēgnī vindicēs
+(256)  Amphitruon: ipsumque, Cadmī nōbilis stirpem ultimam,
+(257)  Amphitruon: occidere, vīdī rēgium capitis decus
+(258)  Amphitruon: cum capite raptum, quis satis Thēbās fleat?
+(259)  Amphitruon: ferāx deōrum terra, quem dominum tremis?
+(260)  Amphitruon: ē cujus arvīs ēque fēcundō sinū
+(261)  Amphitruon: strictō juventūs orta cum ferrō stetit
+(262)  Amphitruon: cujusque mūrōs nātus Amphīōn Jove
+(263)  Amphitruon: strūxit canōrō saxa modulātū trahēns,
+(264)  Amphitruon: in cujus urbem nōn semel dīvum parēns
+(265)  Amphitruon: caelō relictō vēnit, haec quae caelitēs
+(266)  Amphitruon: recēpit et quae fēcit et (fās sit loquī)
+(267)  Amphitruon: fortasse faciet, sordidō premitur jugō.
+(268)  Amphitruon: Cadmēa prōlēs atque Ophīonium genus,
+(269)  Amphitruon: quō reccidistis? tremitis ignāvum exulem,
+(270)  Amphitruon: suīs carentem fīnibus, nostrīs gravem.
+(271)  Amphitruon: quī scelera terrā quīque persequitur marī
+(272)  Amphitruon: ac saeva jūstā scēptra cōnfringit manū
+(273)  Amphitruon: nunc servit absēns fertque quae fierī vetat,
+(274)  Amphitruon: tenetque Thēbās exul Herculeās Lycus,
+(275)  Amphitruon: sed nōn tenēbit, aderit et poenās petet
+(276)  Amphitruon: subitusque ad astra ēmerget; inveniet viam
+(277)  Amphitruon: aut faciet, adsīs sospes et remeēs precor
+(278)  Amphitruon: tandemque veniās victor ad victam domum.
+(279)  Megara: Ēmerge, conjūnx, atque dispulsās manū
+(280)  Megara: abrumpe tenebrās; nūlla sī retrō via
+(281)  Megara: iterque clūsum est, orbe dīductō redī
+(282)  Megara: et quicquid ātrā nocte possessum latet
+(283)  Megara: ēmitte tēcum, dīrutīs quālis jugīs
+(284)  Megara: praeceps citātō flūminī quaerēns iter
+(285)  Megara: quondam stetistī, scissa cum vastō impetū
+(286)  Megara: patuēre Tempē; pectore impulsus tuō
+(287)  Megara: hūc mōns et illūc cessit et ruptō aggere
+(288)  Megara: novā cucurrit Thessalus torrēns viā:
+(289)  Megara: tālis, parentēs līberōs patriam petēns,
+(290)  Megara: ērumpe rērum terminōs tēcum efferēns,
+(291)  Megara: et quicquid avida tot per annōrum gradūs
+(292)  Megara: abscondit aetās redde et oblītōs suī
+(293)  Megara: lūcisque pavidōs ante tē populōs age.
+(294)  Megara: indigna tē sunt spolia, sī tantum refers
+(295)  Megara: quantum imperātum est. magna sed nimium loquor
+(296)  Megara: ignāra nostrae sortis, unde illum mihī
+(297)  Megara: quō tē tuamque dexteram amplectar diem
+(298)  Megara: reditūsque lentōs nec meī memorēs querar?
+(299)  Megara: tibi, ō deōrum ductor, indomitī ferent
+(300)  Megara: centēna taurī colla; tibi, frūgum potēns,
+(301)  Megara: sēcrēta reddam sacra: tibi mūtā fidē
+(302)  Megara: longās Eleusīn tacita jactābit facēs,
+(303)  Megara: tum restitūtās frātribus rēbor meīs
+(304)  Megara: animās et ipsum rēgna moderantem sua
+(305)  Megara: flōrēre patrem, sī qua tē major tenet
+(306)  Megara: clausum potestās, sequimur: aut omnēs tuō
+(307)  Megara: dēfende reditū sospes aut omnēs trahe.
+(308)  Megara: trahēs nec ūllus ēriget frāctōs deus.
+(309)  Amphitruon: Ō socia nostrī sanguinis, castā fidē
+(310)  Amphitruon: servāns torum nātōsque magnanimī Herculis,
+(311)  Amphitruon: meliōra mente concipe atque animum excitā.
+(312)  Amphitruon: aderit profectō, quālis ex omnī solet
+(313)  Amphitruon: labōre, major. Quod nimis miserī volunt
+(314)  Megara: hoc facile crēdunt. Immo quod metuunt nimis
+(315)  Amphitruon: numquam movērī posse nec tollī putant:
+(316)  Amphitruon: prōna est timōrī semper in pejus fidēs.
+(317)  Megara: Dēmersus ac dēfossus et tōtō īnsuper
+(318)  Megara: oppressus orbe quam viam ad superōs habet?
+(319)  Amphitruon: Quam tunc habēbat, cum per ārentem plagam
+(320)  Amphitruon: et fluctuantēs mōre turbātī maris
+(321)  Amphitruon: adīt harēnās bisque discēdēns fretum
+(322)  Amphitruon: et bis recurrēns, cumque dēsertā rate
+(323)  Amphitruon: dēprēnsus haesit Syrtium brevibus vadīs
+(324)  Amphitruon: et puppe fīxā maria superāvit pedēs.
+(325)  Megara: Inīqua rārō maximīs virtūtibus
+(326)  Megara: fortūna parcit; nēmo sē tūtō diū
+(327)  Megara: perīculīs offerre tam crēbrīs potest:
+(328)  Megara: quem saepe trānsit cāsus, aliquandō invenit.
+(329)  Megara: Sed ecce saevus ac minās vultū gerēns
+(330)  Megara: et quālis animō est, tālis incessū venit
+(331)  Megara: aliēna dextrā scēptra concutiēns Lycus.
+(332)  Lycus: Urbis regēns opulenta Thēbānae loca
+(333)  Lycus: et omne quicquid ūberī cingit solō
+(334)  Lycus: oblīqua Phōcis, quicquid Ismēnos rigat,
+(335)  Lycus: quicquid Cithaerōn vertice excelsō videt,
+(336)  Lycus: et bīna findēns Isthmos exīlis freta
+(337)  Lycus: nōn vetera patriae jūra possideō domūs
+(338)  Lycus: ignāvus hērēs; nōbilēs nōn sunt mihī
+(339)  Lycus: avī nec altīs inclitum titulīs genus.
+(340)  Lycus: sed clāra virtūs: quī genus jactat suum.
+(341)  Lycus: aliēna laudat, rapta sed trepidā manū
+(342)  Lycus: scēptra obtinentur; omnis in ferrō est salūs:
+(343)  Lycus: quod cīvibus tenēre tē invītīs sciās.
+(344)  Lycus: strictus tuētur ēnsis, aliēnō in locō
+(345)  Lycus: haut stabile rēgnum est; ūna sed nostrās potest
+(346)  Lycus: fundāre vīrēs jūncta rēgālī face
+(347)  Lycus: thalamīsque Megarā: dūcet ē genere inclitō
+(348)  Lycus: novitās colōrem nostra, nōn equidem reor
+(349)  Lycus: fore ut recūset ac meōs spernat torōs;
+(350)  Lycus: quod sī impotentī pertināx animō abnuet,
+(351)  Lycus: stat tollere omnem penitus Herculeam domum.
+(352)  Lycus: invidia factum ac sermo populāris premet?
+(353)  Lycus: ars prīma rēgnī est posse in invidiam patī.
+(354)  Lycus: temptēmus igitur, fors dedit nōbīs locum.
+(355)  Lycus: namque ipsa, trīstī vestis obtentū caput
+(356)  Lycus: vēlāta, juxtā praesidēs adstat deōs
+(357)  Lycus: laterīque adhaeret vērus Alcīdae sator.
+(358)  Megara: Quidnam iste, nostrī generis exitium ac luēs,
+(359)  Megara: novī parat? quid temptat? Ō clārum trahēns
+(360)  Lycus: ā stirpe nōmen rēgiā, facilis mea
+(361)  Lycus: parumper aure verba patientī excipe.
+(362)  Lycus: sī aeterna semper odia mortālēs gerant
+(363)  Lycus: nec coeptus umquam cēdat ex animīs furor,
+(364)  Lycus: sed arma fēlīx teneat īnfēlīx paret,
+(365)  Lycus: nihil relinquent bella; tum vastīs ager
+(366)  Lycus: squālēbit arvīs, subditā tēctīs face
+(367)  Lycus: altus sepultās obruet gentēs cinis.
+(368)  Lycus: pācem redūcī velle victōrī expedit,
+(369)  Lycus: victō necesse est. particeps rēgnō venī;
+(370)  Lycus: sociēmur animīs, pignus hoc fideī cape:
+(371)  Lycus: continge dextram, quid trucī vultū silēs?
+(372)  Megara: Egone ut parentis sanguine aspersam manum
+(373)  Megara: frātrumque geminā caede contingam? prius
+(374)  Megara: extinguet ortus, referet occāsus diem,
+(375)  Megara: pāx ante fīda nivibus et flammīs erit
+(376)  Megara: et Scylla Siculum junget Ausoniō latus,
+(377)  Megara: priusque multō vicibus alternīs fugāx
+(378)  Megara: Eurīpus undā stābit Euboicā piger.
+(379)  Megara: patrem abstulistī, rēgna, germānōs, larem
+(380)  Megara: patrium; quid ultrā est? ūna rēs superest mihī
+(381)  Megara: frātre ac parente cārior, rēgnō ac lare:
+(382)  Megara: odium tuī, quod esse cum populō mihī
+(383)  Megara: commūne doleō: pars quota ex illō mea est?
+(384)  Megara: domināre tumidus, spīritūs altōs gere:
+(385)  Megara: sequitur superbōs ultor ā tergō deus.
+(386)  Megara: Thēbāna nōvī rēgna: quid mātrēs loquar
+(387)  Megara: passās et ausās scelera? quid geminum nefās
+(388)  Megara: mixtumque nōmen conjugis nātī patris?
+(389)  Megara: quid bīna frātrum castra? quid totidem rogōs?
+(390)  Megara: riget superba Tantalis lūctū parēns
+(391)  Megara: maestusque Phrygiō mānat in Sipylō lapis.
+(392)  Megara: quīn ipse torvum subrigēns cristā caput
+(393)  Megara: Illyrica Cadmus rēgna permēnsus fugā
+(394)  Megara: longās relīquit corporis tractī notās.
+(395)  Megara: haec tē manent exempla: domināre ut libet,
+(396)  Megara: dum solita rēgnī fāta tē nostrī vocent
+(397)  Lycus: Agedum efferātās rabida vōcēs āmovē
+(398)  Lycus: et disce rēgum imperia ab Alcīdē patī
+(399)  Lycus: ego rapta quamvīs scēptra victrīcī geram
+(400)  Lycus: dextrā regamque cūncta sine lēgum metū
+(401)  Lycus: quās arma vincunt, pauca prō causā loquar
+(402)  Lycus: nostrā, cruentō cecidit in bellō pater?
+(403)  Lycus: cecidēre frātrēs? arma nōn servant modum;
+(404)  Lycus: nec temperārī facile nec reprimī potest
+(405)  Lycus: strictī ēnsis īra, bella dēlectat cruor.
+(406)  Lycus: sed ille rēgnō prō suō, nōs improbā
+(407)  Lycus: cupīdine āctī? quaeritur bellī exitus,
+(408)  Lycus: nōn causa, sed nunc pereat omnis memoria:
+(409)  Lycus: cum victor arma posuit, et victum decet
+(410)  Lycus: dēpōnere odia. nōn ut īnflexō genū
+(411)  Lycus: rēgnantem adōrēs petimus: hoc ipsum placet
+(412)  Lycus: animō ruīnās quod capis magnō tuās;
+(413)  Lycus: es rēge conjūnx digna: sociēmus torōs.
+(414)  Megara: Gelidus per artūs vādit exsanguīs tremor.
+(415)  Megara: quod facinus aurēs pepulit? haut equidem horruī,
+(416)  Megara: cum pāce ruptā bellicus mūrōs fragor
+(417)  Megara: circumsonāret, pertulī intrepidē omnia:
+(418)  Megara: thalamōs tremēscō; capta nunc videor mihī.
+(419)  Megara: gravent catēnae corpus et longā famē
+(420)  Megara: mors prōtrahātur lenta: nōn vincet fidem
+(421)  Megara: vīs ūlla nostram; moriar, Alcīdē, tua.
+(422)  Lycus: Animōsne mersus īnferīs conjūnx facit?
+(423)  Megara: Īnferna tetigit, posset ut supera assequī.
+(424)  Lycus: Tellūris illum pondus immēnsae premit.
+(425)  Megara: Nūllō premētur onere, quī caelum tulit.
+(426)  Lycus: Cōgēre. Cōgī quī potest nescit morī.
+(427)  Lycus: Effāre potius, quod novīs thalamīs parem
+(428)  Lycus: Rēgāle mūnus. Aut tuam mortem aut meam.
+(429)  Lycus: Moriere dēmēns. Conjugī occurram meō.
+(430)  Lycus: Scēptrōne nostrō famulus est potior tibī?
+(431)  Megara: Quot iste famulus trādidit rēgēs necī.
+(432)  Lycus: Cūr ergo rēgī servit et patitur jugum?
+(433)  Megara: Imperia dūra tolle: quid virtūs erit?
+(434)  Lycus: Obicī ferīs mōnstrīsque virtūtem putās?
+(435)  Megara: Virtūtis est domāre quae cūnctī pavent.
+(436)  Lycus: Tenebrae loquentem magna Tartareae premunt.
+(437)  Megara: Nōn est ad astra mollis ē terrīs via.
+(438)  Lycus: Quō patre genitus caelitum spērat domōs?
+(439)  Amphitruon: Miseranda conjūnx Herculis magnī, silē:
+(440)  Amphitruon: partēs meae sunt reddere Alcīdae patrem
+(441)  Amphitruon: genusque vērum, post tot ingentis virī
+(442)  Amphitruon: memoranda facta postque pācātum manū
+(443)  Amphitruon: quodcumque Tītān ortus et lābēns videt,
+(444)  Amphitruon: post mōnstra tot perdomita, post Phlegram impiō
+(445)  Amphitruon: sparsam cruōre postque dēfēnsōs deōs
+(446)  Amphitruon: nōndum liquet dē patre? mentīmur Jovem:
+(447)  Amphitruon: Jūnōnis odiō crēde. Quid violās Jovem?
+(448)  Lycus: mortāle caelō nōn potest jungī genus.
+(449)  Amphitruon: Commūnis ista plūribus causa est deīs.
+(450)  Lycus: Famulīne fuerant ante quam fierent deī?
+(451)  Amphitruon: Pāstor Pheraeōs Dēlius pāvit gregēs.
+(452)  Lycus: Sed nōn per omnēs exul errāvit plagās.
+(453)  Amphitruon: Quem profuga terrā māter errante ēdidit?
+(454)  Lycus: Num mōnstra saeva Phoebus aut timuit ferās?
+(455)  Amphitruon: Prīmus sagittās imbuit Phoebī dracō.
+(456)  Lycus: Quam gravia parvus tulerit ignōrās mala?
+(457)  Amphitruon: Ē mātris uterō fulmine ējectus puer
+(458)  Amphitruon: mox fulminantī proximus patrī stetit.
+(459)  Amphitruon: quid? quī gubernat astra, quī nūbēs quatit,
+(460)  Amphitruon: nōn latuit īnfāns rūpis Īdaeae specū?
+(461)  Amphitruon: sollicita tantī pretia nātālēs habent
+(462)  Amphitruon: semperque magnō cōnstitit nāscī deum.
+(463)  Lycus: Quemcumque miserum vīderīs, hominem sciās.
+(464)  Amphitruon: Quemcumque fortem vīderīs, miserum negēs.
+(465)  Lycus: Fortem vocēmus cujus ex umerīs leō,
+(466)  Lycus: dōnum puellae factus, et clāva excidit
+(467)  Lycus: fulsitque pictum veste Sīdoniā latus?
+(468)  Lycus: fortem vocēmus cujus horrentēs comae
+(469)  Lycus: maduēre nardō, laude quī nōtās manūs
+(470)  Lycus: ad nōn virīlem tympanī mōvit sonum,
+(471)  Lycus: mitrā ferōcem barbarā frontem premēns?
+(472)  Amphitruon: Nōn ērubēscit Bacchus effūsōs tener
+(473)  Amphitruon: sparsisse crīnēs nec manū mollī levem
+(474)  Amphitruon: vibrāre thyrsum, cum parum fortī gradū
+(475)  Amphitruon: aurō decōrum syrma barbaricum trahit:
+(476)  Amphitruon: post multa virtūs opera laxārī solet.
+(477)  Lycus: Hoc Eurytī fatētur ēversī domus
+(478)  Lycus: pecorumque rītū virginum oppressī gregēs:
+(479)  Lycus: hoc nūlla Jūnō, nūllus Eurystheus jubet:
+(480)  Lycus: ipsīus haec sunt opera. Nōn nōstī omnia:
+(481)  Amphitruon: ipsīus opus est caestibus frāctus suīs
+(482)  Amphitruon: Eryx et Erycī jūnctus Antaeus Libys,
+(483)  Amphitruon: et quī hospitālī caede mānantēs focī
+(484)  Amphitruon: bibēre jūstum sanguinem Būsīridis;
+(485)  Amphitruon: ipsīus opus est vulnerī et ferrō obvius
+(486)  Amphitruon: mortem coāctus integer Cycnus patī
+(487)  Amphitruon: nec ūnus ūnā Gēryōn victus manū.
+(488)  Amphitruon: eris inter istōs; quī tamen nūllō stuprō
+(489)  Amphitruon: laesēre thalamōs. Quod Jovī hoc rēgī licet:
+(490)  Lycus: Jovī dedistī conjugem, rēgī dabis;
+(491)  Lycus: et tē magistrō nōn novum hoc discet nurus,
+(492)  Lycus: etiam virō probante meliōrem sequī.
+(493)  Lycus: sīn cōpulārī pertināx taedīs negat,
+(494)  Lycus: vel ex coāctā nōbilem partum feram.
+(495)  Megara: Umbrae Creontis et penātēs Labdacī
+(496)  Megara: et nūptiālēs impiī Oedipodae facēs,
+(497)  Megara: nunc solita nostrō fāta conjugiō date.
+(498)  Megara: nunc, nunc, cruentae rēgis Aegyptī nurūs,
+(499)  Megara: adeste multō sanguine īnfectae manūs.
+(500)  Megara: dēest ūna numerō Danais: explēbō nefās.
+(501)  Lycus: Conjugia quoniam pervicāx nostra abnuis
+(502)  Lycus: rēgemque terrēs, scēptra quid possint sciēs.
+(503)  Lycus: complectere ārās: nūllus ēripiet deus
+(504)  Lycus: tē mihi, nec orbe sī remōlītō queat
+(505)  Lycus: ad supera victor nūmina Alcīdēs vehī.
+(506)  Lycus: congerite silvās: templa supplicibus suīs
+(507)  Lycus: injecta flagrent, conjugem et tōtum gregem
+(508)  Lycus: cōnsūmat ūnus igne subjectō rogus.
+(509)  Amphitruon: Hoc mūnus ā tē genitor Alcīdae petō,
+(510)  Amphitruon: rogāre quod mē deceat, ut prīmus cadam.
+(511)  Lycus: Quī morte cūnctōs luere supplicium jubet
+(512)  Lycus: nescit tyrannus esse: dīversa inrogā;
+(513)  Lycus: miserum vetā perīre, fēlīcem jubē.
+(514)  Lycus: ego, dum cremandīs trabibus accrēscit rogus,
+(515)  Lycus: sacrō regentem maria vōtīvō colam.
+(516)  Amphitruon: Prō nūminum vīs summa, prō caelestium
+(517)  Amphitruon: rēctor parēnsque, cujus excussīs tremunt
+(518)  Amphitruon: hūmāna tēlīs, impiam rēgis ferī
+(519)  Amphitruon: compesce dextram! quid deōs frūstrā precor?
+(520)  Amphitruon: ubicumque es, audī, nāte. cūr subitō labant
+(521)  Amphitruon: agitāta mōtū templa? cūr mūgit solum?
+(522)  Amphitruon: īnfernus īmō sonuit ē fundō fragor
+(523)  Amphitruon: audīmur! est est sonitus Herculeī gradūs.
+(524x) === Chor (1st asclepiadeans) ===
+(524)  Chorus: Ō Fortūna virīs invida fortibus,
+(525)  Chorus: quam nōn aequa bonīs praemia dīvidis.
+(526)  Chorus: Eurystheus facilī rēgnet in ōtiō:
+(527)  Chorus: Alcmēnā genitus bella per omnia
+(528)  Chorus: mōnstrīs exagitet caeliferam manum:
+(529)  Chorus: serpentis resecet colla ferācia,
+(530)  Chorus: dēceptīs referat māla sorōribus,
+(531)  Chorus: cum somnō dederit pervigilēs genū
+(532)  Chorus: pōmīs dīvitibus praepositus dracō.
+(533)  Chorus: Intrāvit Scythiae multivagās domōs
+(534)  Chorus: et gentēs patriīs sēdibus hospitēs,
+(535)  Chorus: calcāvitque fretī terga rigentia
+(536)  Chorus: et mūtīs tacitum lītoribus mare.
+(537)  Chorus: illīc dūra carent aequora flūctibus,
+(538)  Chorus: et quā plēna ratēs carbasa tenderent,
+(539)  Chorus: intōnsīs teritur sēmita Sarmatīs,
+(540)  Chorus: stat pontus, vicibus mōbilis annuīs,
+(541)  Chorus: nāvem nunc facilis nunc equitem patī.
+(542)  Chorus: illīc quae viduīs gentibus imperat,
+(543)  Chorus: aurātō religāns īlia balteō,
+(544)  Chorus: dētrāxit spolium nōbile corporī
+(545)  Chorus: et peltam et niveī vincula pectoris.
+(546)  Chorus: victōrem positō suspiciēns genū.
+(547)  Chorus: Quā spē praecipitēs āctus ad īnferōs,
+(548)  Chorus: audāx īre viās inremeābilēs,
+(549)  Chorus: vīdistī Siculae rēgna Proserpinae?
+(550)  Chorus: illīc nūlla notō nūlla favōniō
+(551)  Chorus: cōnsurgunt tumidīs flūctibus aequora:
+(552)  Chorus: nōn illīc geminum Tyndaridae genus
+(553)  Chorus: succurrunt timidīs sīdera nāvibus:
+(554)  Chorus: stat pigrō pelagus gurgite languidum,
+(555)  Chorus: et cum Mors avidīs pallida dentibus
+(556)  Chorus: gentēs innumerās mānibus intulit,
+(557)  Chorus: ūnō tot populī rēmige trānseunt.
+(558)  Chorus: Ēvincās utinam jūra ferae Stygis
+(559)  Chorus: Parcārumque colōs nōn revocābilēs.
+(560)  Chorus: hīc quī rēx populīs plūribus imperat,
+(561)  Chorus: bellō cum peterēs Nestoream Pylon,
+(562)  Chorus: tēcum cōnseruit pestiferās manūs
+(563)  Chorus: tēlum tergeminā cuspide praeferēns:
+(564)  Chorus: effūgit tenuī vulnere saucius
+(565)  Chorus: et mortis dominus pertimuit morī.
+(566)  Chorus: fātum rumpe manū, trīstibus īnferīs
+(567)  Chorus: prōspectus pateat lūcis et invius
+(568)  Chorus: līmes det facilēs ad superōs viās.
+(569)  Chorus: Immītēs potuit flectere cantibus
+(570)  Chorus: umbrārum dominōs et prece supplicī
+(571)  Chorus: Orpheus, Eurydicēn dum repetit suam.
+(572)  Chorus: quae silvās et avēs saxaque trāxerat
+(573)  Chorus: ars, quae praebuerat flūminibus morās,
+(574)  Chorus: ad cujus sonitum cōnstiterant ferae,
+(575)  Chorus: mulcet nōn solitīs vōcibus īnferōs
+(576)  Chorus: et surdīs resonat clārius in locīs,
+(577)  Chorus: dēflent Eurydicēn Thrēiciae nurūs,
+(578)  Chorus: dēflent et lacrimīs difficilēs deī,
+(579)  Chorus: et quī fronte nimis crīmina tetricā
+(580)  Chorus: quaerunt ac veterēs excutiunt reōs
+(581)  Chorus: flentēs Eurydicēn jūridicī sedent,
+(582)  Chorus: tandem mortis ait ‘vincimur’ arbiter,
+(583)  Chorus: ‘ēvāde ad superōs, lēge tamen datā:
+(584)  Chorus: tū post terga tuī perge virī comes,
+(585)  Chorus: tū nōn ante tuam respice conjugem,
+(586)  Chorus: quam cum clāra deōs obtulerit diēs
+(587)  Chorus: Spartānīque aderit jānua Taenarī.’
+(588)  Chorus: ōdit vērus amor nec patitur morās:
+(589)  Chorus: mūnus dum properat cernere, perdidit.
+(590)  Chorus: Quae vincī potuit rēgia carmine.
+(591)  Chorus: haec vincī poterit rēgia vīribus.
+(592x) === Szene 2 ===
+(592)  Hercules: Ō lūcis almae rēctor et caelī decus,
+(593)  Hercules: quī alterna currū spatia flammiferō ambiēns
+(594)  Hercules: inlūstre lātīs exseris terrīs caput,
+(595)  Hercules: dā, Phoebe, veniam, sī quid inlicitum tuī
+(596)  Hercules: vīdēre vultūs: jussus in lūcem extulī
+(597)  Hercules: arcāna mundī, tūque, caelestum arbiter
+(598)  Hercules: parēnsque, vīsūs fulmine oppositō tege;
+(599)  Hercules: et tū, secundō maria quī scēptrō regis,
+(600)  Hercules: īmās pete undās, quisquis ex altō aspicit
+(601)  Hercules: terrēna, faciē polluī metuēns novā,
+(602)  Hercules: aciem reflectat ōraque in caelum ērigat
+(603)  Hercules: portenta fugiēns: hoc nefās cernant duo,
+(604)  Hercules: quī advēxit et quae jussit, in poenās meās
+(605)  Hercules: atque in labōrēs nōn satis terrae patent
+(606)  Hercules: Jūnōnis odiō: vīdī inaccessa omnibus,
+(607)  Hercules: ignōta Phoebō quaeque dēterior polus
+(608)  Hercules: obscūra dīrō spatia concessit Jovī;
+(609)  Hercules: et, sī placērent tertiae sortis loca,
+(610)  Hercules: rēgnāre potuī: noctis aeternae chaos
+(611)  Hercules: et nocte quiddam gravius et trīstēs deōs
+(612)  Hercules: et fāta vīdī, morte contemptā redī.
+(613)  Hercules: quid restat aliud? vīdī et ostendī īnferōs.
+(614)  Hercules: dā sī quid ultrā est, jam diū pateris manūs
+(615)  Hercules: cessāre nostrās, Jūno; quae vincī jubēs?
+(616)  Hercules: Sed templa quārē mīles īnfēstus tenet
+(617)  Hercules: līmenque, sacrum terror armōrum obsidet?
+(618)  Amphitruon: Utrumne vīsūs vōta dēcipiunt meōs.
+(619)  Amphitruon: an ille domitor orbis et Grāium decus
+(620)  Amphitruon: trīstī silentem nūbilō līquit domum?
+(621)  Amphitruon: estne ille nātus? membra laetitiā stupent.
+(622)  Amphitruon: ō nāte. certa at sēra Thēbārum salūs,
+(623)  Amphitruon: teneōne in aurās ēditum an vānā fruor
+(624)  Amphitruon: dēceptus umbrā? tūne es? agnōscō torōs
+(625)  Amphitruon: umerōsque et altō nōbilem truncō manum.
+(626)  Hercules: Undē iste, genitor, squālor et lūgūbribus
+(627)  Hercules: amicta conjūnx? unde tam foedō obsitī
+(628)  Hercules: paedōre nātī? quae domum clādēs gravat?
+(629)  Amphitruon: Socer est perēmptus, rēgna possēdit Lycus,
+(630)  Amphitruon: nātōs parentem conjugem lētō petit.
+(631)  Hercules: Ingrāta tellūs, nēmō ad Herculeae domūs
+(632)  Hercules: auxilia vēnit? vīdit hoc tantum nefās
+(633)  Hercules: dēfēnsus orbis? cūr diem questū terō?
+(634)  Hercules: mactētur hostia, hanc ferat virtūs notam
+(635)  Hercules: fīatque summus hostis Alcīdae Lycus.
+(636)  Hercules: ad hauriendum sanguinem inimīcum feror:
+(637)  Hercules: Thēseu, resiste, nē qua vīs subita ingruat.
+(638)  Hercules: mē bella poscunt, differ amplexūs, parēns,
+(639)  Hercules: conjūnxque differ, nūntiet Dītī Lycus
+(640)  Hercules: mē jam redīsse. Flēbilem ex oculīs fugā,
+(641)  Theseus: rēgīna, vultum, tūque nātō sospite
+(642)  Theseus: lacrimās cadentēs reprime: sī nōvī Herculem,
+(643)  Theseus: Lycus Creontī dēbitās poenās dabit,
+(644)  Theseus: lentum est dabit: dat; hoc quoque est lentum: dedit.
+(645)  Amphitruon: Vōtum secundet quī potest nostrum deus
+(646)  Amphitruon: rēbusque lassīs adsit. Ō magnī comes
+(647)  Amphitruon: magnanime nātī. pande virtūtum ōrdinem,
+(648)  Amphitruon: quam longa maestōs dūcat ad mānēs via,
+(649)  Amphitruon: ut vincla tulerit dūra Tartareus canis.
+(650)  Theseus: Memorāre cōgis ācta sēcūrae quoque
+(651)  Theseus: horrenda mentī. vix adhūc certa est fidēs
+(652)  Theseus: vītālis aurae, torpet aciēs lūminum
+(653)  Theseus: hebetēsque vīsūs vix diem īnsuētum ferunt.
+(654)  Amphitruon: Pervince, Thēseu, quicquid altō in pectore
+(655)  Amphitruon: remanet pavōris nēve tē frūctū optimō
+(656)  Amphitruon: fraudā labōrum: quae fuit dūrum patī,
+(657)  Amphitruon: meminisse dulce est. fāre cāsūs horridōs.
+(658)  Theseus: Fās omne mundī tēque dominantem precor
+(659)  Theseus: rēgnō capācī tēque quam āmōtam inrita
+(660)  Theseus: quaesīvit Ennā māter, ut jūra abdita
+(661)  Theseus: et operta terrīs liceat impūne ēloquī.
+(662)  Theseus: Spartāna tellūs nōbile attollit jugum,
+(663)  Theseus: dēnsīs ubi aequor Taenarus silvīs premit;
+(664)  Theseus: hīc ōra solvit Dītis invīsī domus
+(665)  Theseus: hiatque rūpēs alta et immēnsō specū
+(666)  Theseus: ingēns vorāgō faucibus vastīs patet
+(667)  Theseus: lātumque pandit omnibus populīs iter.
+(668)  Theseus: nōn caeca tenebrīs incipit prīmō via;
+(669)  Theseus: tenuis relictae lūcis ā tergō nitor
+(670)  Theseus: fulgorque dubius sōlis afflīctī cadit
+(671)  Theseus: et lūdit aciem: nocte sīc mixtā solet
+(672)  Theseus: praebēre lūmen prīmus aut sērus diēs.
+(673)  Theseus: hinc ampla vacuīs spatia laxantur locīs,
+(674)  Theseus: in quae omne mersum penetrat hūmānum genus.
+(675)  Theseus: nec īre labor est; ipsa dēdūcit via:
+(676)  Theseus: ut saepe puppēs aestus invītās rapit,
+(677)  Theseus: sīc prōnus āēr urguet atque avidum chaos,
+(678)  Theseus: gradumque retrō flectere haut umquam sinunt
+(679)  Theseus: umbrae tenācēs. intus immēnsī sinūs
+(680)  Theseus: placidō quiēta lābitur Lēthē vadō
+(681)  Theseus: dēmitque cūrās, nēve remeandī amplius
+(682)  Theseus: pateat facultās, flexibus multīs gravem
+(683)  Theseus: involvit amnem: quālis incertīs vagus
+(684)  Theseus: Maeander undīs lūdit et cēdit sibī
+(685)  Theseus: īnstatque dubius lītus an fontem petat.
+(686)  Theseus: palūs inertis foeda Cōcȳtī jacet;
+(687)  Theseus: hīc vultur, illīc lūctifer būbō gemit
+(688)  Theseus: ōmenque trīste resonat īnfaustae strigis.
+(689)  Theseus: horrent opācā fronde nigrantēs comae,
+(690)  Theseus: taxō imminente quam tenet sēgnis Sopor,
+(691)  Theseus: Famēsque maesta tābidō rictū jacet
+(692)  Theseus: Pudorque sērus cōnsciōs vultūs tegit.
+(693)  Theseus: Metus Pavorque; Fūnus et frendēns Dolor
+(694)  Theseus: āterque Lūctus sequitur et Morbus tremēns
+(695)  Theseus: et cīncta ferrō Bella; in extrēmō abdita
+(696)  Theseus: iners Senectūs adjuvat baculō gradum.
+(697)  Amphitruon: Estne aliqua tellūs Cereris aut Bacchī ferāx?
+(698)  Theseus: Nōn prāta viridī laeta faciē germinant
+(699)  Theseus: nec adulta lēnī fluctuat Zephyrō seges;
+(700)  Theseus: nōn ūlla rāmōs silva pōmiferōs habet:
+(701)  Theseus: sterilis profundī vastitās squālet solī
+(702)  Theseus: et foeda tellūs torpet aeternō sitū.
+(703)  Theseus: rērumque maestus fīnis et mundī ultima
+(704)  Theseus: immōtus āēr haeret et pigrō sedet
+(705)  Theseus: nox ātra mundō: cūncta maerōre horrida
+(706)  Theseus: ipsāque morte pejor est mortis locus.
+(707)  Amphitruon: Quid ille opāca quī regit scēptrō loca,
+(708)  Amphitruon: quā sēde positus temperat populōs levēs?
+(709)  Theseus: Est in recessū Tartarī obscūrō locus,
+(710)  Theseus: quem gravibus umbrīs spissa cālīgō alligat.
+(711)  Theseus: ā fonte discors mānat hinc ūnō latex,
+(712)  Theseus: alter quiētō similis (hunc jūrant deī)
+(713)  Theseus: tacente sacram dēvehēns fluviō Styga;
+(714)  Theseus: at hīc tumultū rapitur ingentī ferōx
+(715)  Theseus: et saxa flūctū volvit Acherōn invius
+(716)  Theseus: renāvigārī. cingitur duplicī vadō
+(717)  Theseus: adversa Dītis rēgia, atque ingēns domus
+(718)  Theseus: umbrante lūcō tegitur, hīc vastō specū
+(719)  Theseus: pendent tyrannī līmina, hoc umbrīs iter,
+(720)  Theseus: haec porta rēgnī, campus hanc circā jacet,
+(721)  Theseus: in quō superbō dīgerit vultū sedēns
+(722)  Theseus: animās recentēs dīra majestās deī.
+(723)  Theseus: frōns torva, frātrum quae tamen speciem gerat
+(724)  Theseus: gentisque tantae, vultus est illī Jovis,
+(725)  Theseus: sed fulminantis: magna pars rēgnī trucis
+(726)  Theseus: est ipse dominus, cujus aspectūs timet
+(727)  Theseus: quicquid timētur. Vērane est fāma īnferīs
+(728)  Amphitruon: tam sēra reddī jūra et oblītōs suī
+(729)  Amphitruon: sceleris nocentēs dēbitās poenās dare?
+(730)  Amphitruon: quis iste vērī rēctor atque aequī arbiter?
+(731)  Theseus: Nōn ūnus altā sēde quaesītor sedēns
+(732)  Theseus: jūdicia trepidīs sēra sortītur reīs.
+(733)  Theseus: adītur illō Gnōsius Mīnōs forō,
+(734)  Theseus: Rhadamanthus illō, Thetidis hōc audit socer.
+(735)  Theseus: quod quisque fēcit, patitur; auctōrem scelus
+(736)  Theseus: repetit suōque premitur exemplō nocēns:
+(737)  Theseus: vīdī cruentōs carcere inclūdī ducēs
+(738)  Theseus: et impotentis terga plēbejā manū
+(739)  Theseus: scindī tyrannī. quisquis est placidē potēns
+(740)  Theseus: dominusque vītae servat innocuās manūs
+(741)  Theseus: et incruentum mītis imperium regit
+(742)  Theseus: animōque parcit, longa permēnsus diū
+(743)  Theseus: fēlīcis aevī spatia vel caelum petit
+(744)  Theseus: vel laeta fēlīx nemoris Ēlysiī loca,
+(745)  Theseus: jūdex futūrus. sanguine hūmānō abstinē
+(746)  Theseus: quīcumque rēgnās: scelera taxantur modō
+(747)  Theseus: majōre vestra. Certus inclūsōs tenet
+(748)  Amphitruon: locus nocentēs? utque fert fāma. impiōs
+(749)  Amphitruon: supplicia vinclīs saeva perpetuīs domant?
+(750)  Theseus: Rapitur volucrī tortus Ixīōn rotā;
+(751)  Theseus: cervīce saxum grande Sīsyphiā sedet;
+(752)  Theseus: in amne mediō faucibus siccīs senex
+(753)  Theseus: sectātur undās, alluit mentum latex,
+(754)  Theseus: fidemque cum jam saepe dēceptō dedit,
+(755)  Theseus: perit unda in ōre; pōma dēstituunt famem.
+(756)  Theseus: praebet volucrī Tityos aeternās dapēs
+(757)  Theseus: urnāsque frūstrā Danaides plēnās gerunt;
+(758)  Theseus: errant furentēs impiae Cadmēides
+(759)  Theseus: terretque mēnsās avida Phīnēās avis.
+(760)  Amphitruon: Nunc ēde nātī nōbilem pugnam meī.
+(761)  Amphitruon: patruī volentis mūnus an spolium refert?
+(762)  Theseus: Fērāle tardīs imminet saxum vadīs.
+(763)  Theseus: stupent ubi undae, sēgne torpēscit fretum.
+(764)  Theseus: hunc servat amnem cultū et aspectū horridus
+(765)  Theseus: pavidōsque mānēs squālidus vectat senex.
+(766)  Theseus: impexa pendet barba, dēfōrmem sinum
+(767)  Theseus: nōdus coercet, concavae lūcent genae;
+(768)  Theseus: regit ipse longō portitor contō ratem.
+(769)  Theseus: hic onere vacuam lītorī puppem applicāns
+(770)  Theseus: repetēbat umbrās; poscit Alcīdēs viam
+(771)  Theseus: cēdente turbā; dīrus exclāmat Charōn:
+(772)  Theseus: ‘quō pergis, audāx? siste properantem gradum.’
+(773)  Theseus: nōn passus ūllās nātus Alcmēnā morās
+(774)  Theseus: ipsō coāctum nāvitam contō domat
+(775)  Theseus: scanditque puppem. cumba populōrum capāx
+(776)  Theseus: succubuit ūnī: sēdit et gravior ratis
+(777)  Theseus: utrimque Lēthēn latere titubantī bibit.
+(778)  Theseus: tum victa trepidant mōnstra, Centaurī trucēs
+(779)  Theseus: Lapithaeque multō in bella succēnsī merō;
+(780)  Theseus: Stygiae palūdis ultimōs quaerēns sinūs
+(781)  Theseus: fēcunda mergit capita Lernaeus labor.
+(782)  Theseus: post haec avārī Dītis appāret domus:
+(783)  Theseus: hīc saevus umbrās territat Stygius canis,
+(784)  Theseus: quī terna vastō capita concutiēns sonō
+(785)  Theseus: rēgnum tuētur, sordidum tābō caput
+(786)  Theseus: lambunt colubrae, vīperīs horrent jubae
+(787)  Theseus: longusque tortā sībilat caudā dracō.
+(788)  Theseus: pār īra fōrmae: sēnsit ut mōtūs pedum,
+(789)  Theseus: attollit hirtās angue vibrātō comās
+(790)  Theseus: missumque captat aure subrēctā sonum,
+(791)  Theseus: sentīre et umbrās solitus, ut propior stetit
+(792)  Theseus: Jove nātus, antrō sēdit incertus canis
+(793)  Theseus: leviterque timuit, ecce lātrātū gravī
+(794)  Theseus: loca mūta terret; sībilat tōtōs mināx
+(795)  Theseus: serpēns per armōs, vōcis horrendae fragor
+(796)  Theseus: per ōra missus terna fēlīcēs quoque
+(797)  Theseus: exterret umbrās, solvit ā laevā ferōs
+(798)  Theseus: tunc ipse rictūs et Cleōnaeum caput
+(799)  Theseus: oppōnit ac sē tegmine ingentī tegit,
+(800)  Theseus: victrīce magnum dexterā rōbur gerēns.
+(801)  Theseus: hūc nunc et illūc verbere assiduō rotat,
+(802)  Theseus: ingeminat ictūs; domitus īnfrēgit minās
+(803)  Theseus: et cūncta lassus capita summīsit canis
+(804)  Theseus: antrōque tōtō cessit; extimuit sedēns
+(805)  Theseus: uterque soliō dominus et dūcī jubet;
+(806)  Theseus: mē quoque petentī mūnus Alcīdae dedit.
+(807)  Theseus: Tum gravia mōnstrī colla permulcēns manū
+(808)  Theseus: adamante textō vincit; oblītus suī
+(809)  Theseus: cūstōs opācī pervigil rēgnī canis
+(810)  Theseus: compōnit aurēs timidus et patiēns trahī
+(811)  Theseus: erumque fassus, ōre summissō obsequēns,
+(812)  Theseus: utrumque caudā pulsat anguiferā latus.
+(813)  Theseus: postquam est ad ōrās Taenarī ventum et nitor
+(814)  Theseus: percussit oculōs lūcis ignōtae novus,
+(815)  Theseus: resūmit animōs victus et vastās furēns
+(816)  Theseus: quassat catēnās; paene victōrem abstulit
+(817)  Theseus: prōnumque retrō vēxit et mōvit gradū.
+(818)  Theseus: tunc et meās respexit Alcīdēs manūs;
+(819)  Theseus: geminīs uterque vīribus tractum canem
+(820)  Theseus: īrā furentem et bella temptantem inrita
+(821)  Theseus: intulimus orbī. vīdit ut clārum diem
+(822)  Theseus: et pūra nitidī spatia cōnspexit polī,
+(823)  Theseus: oborta nox est; lūmina in terram dedit,
+(824)  Theseus: compressit oculōs et diem invīsum expulit
+(825)  Theseus: faciemque retrō flexit atque omnī petīt
+(826)  Theseus: cervīce terram; tum sub Herculeās caput
+(827)  Theseus: abscondit umbrās. dēnsa sed laetō venit
+(828)  Theseus: clāmōre turba frontibus laurum gerēns
+(829)  Theseus: magnīque meritās Herculis laudēs canit.
+(830x) === Chor (sapphics and glyconics) ===
+(830)  Chorus: Nātus Eurystheus properante partū
+(831)  Chorus: jusserat mundī penetrāre fundum:
+(832)  Chorus: dērat hoc sōlum numerō labōrum,
+(833)  Chorus: tertiae rēgem spoliāre sortis.
+(834)  Chorus: ausus es caecōs aditūs inīre,
+(835)  Chorus: dūcit ad mānēs via quā remōtōs
+(836)  Chorus: trīstis et nigrā metuenda silvā,
+(837)  Chorus: sed frequēns magnā comitante turbā.
+(838)  Chorus: Quantus incēdit populus per urbēs
+(839)  Chorus: ad novī lūdōs avidus theātrī,
+(840)  Chorus: quantus Ēlēum ruit ad Tonantem,
+(841)  Chorus: quīnta cum sacrum revocāvit aestās;
+(842)  Chorus: quanta, cum longae redit hōra noctī
+(843)  Chorus: crēscere et somnōs cupiēns quiētōs
+(844)  Chorus: lībra Phoebēōs tenet aequa currūs,
+(845)  Chorus: turba sēcrētam Cererem frequentat
+(846)  Chorus: et citī tēctīs properant relictīs
+(847)  Chorus: Atticī noctem celebrāre mystae:
+(848)  Chorus: tanta per campōs agitur silentēs
+(849)  Chorus: turba; pars tardā graditur senectā,
+(850)  Chorus: trīstis et longā satiāta vītā:
+(851)  Chorus: pars adhūc currit meliōris aevī:
+(852)  Chorus: virginēs nōndum thalamīs jugātae
+(853)  Chorus: et comīs nōndum positīs ephēbī
+(854)  Chorus: mātris et nōmen modo doctus īnfāns,
+(855)  Chorus: hīs datum sōlīs, minus ut timērent,
+(856)  Chorus: igne praelātō relevāre noctem;
+(857)  Chorus: cēterī vādunt per opāca trīstēs.
+(858)  Chorus: quālis est vōbīs animus, remōtā
+(859)  Chorus: lūce cum maestus sibi quisque sēnsit
+(860)  Chorus: obrutum tōtā caput esse terrā?
+(861)  Chorus: stat chaos dēnsum tenebraeque turpēs
+(862)  Chorus: et color noctis malus ac silentis
+(863)  Chorus: ōtium mundī vacuaeque nūbēs.
+(864)  Chorus: Sēra nōs illō referat senectūs!
+(865)  Chorus: nēmō ad id sērō venit, unde numquam,
+(866)  Chorus: cum semel vēnit, potuit revertī;
+(867)  Chorus: quid juvat dūrum properāre fātum?
+(868)  Chorus: omnis haec magnīs vaga turba terrīs
+(869)  Chorus: ībit ad mānēs facietque inertī
+(870)  Chorus: vēla Cōcȳtō: tibi crēscit omne,
+(871)  Chorus: et quod occāsus videt et quod ortus;
+(872)  Chorus: parce ventūrīs; tibi, mors, parāmur.
+(873)  Chorus: sīs licet sēgnis, properāmus ipsī:
+(874)  Chorus: prīma quae vītam dedit hōra, carpit.
+(875)  Chorus: Thēbīs laeta diēs adest.
+(876)  Chorus: ārās tangite supplicēs,
+(877)  Chorus: pinguēs caedite victimās;
+(878)  Chorus: permixtae maribus nurūs
+(879)  Chorus: sollemnēs agitent chorōs;
+(880)  Chorus: cessent dēpositō jugō
+(881)  Chorus: arvī fertilis incolae.
+(882)  Chorus: Pāx est Herculeā manū
+(883)  Chorus: Aurōram inter et Hesperum,
+(884)  Chorus: et quā sōl medium tenēns
+(885)  Chorus: umbrās corporibus negat;
+(886)  Chorus: quodcumque alluitur solum
+(887)  Chorus: longō Tēthyos ambitū,
+(888)  Chorus: Alcīdae domuit labor.
+(889)  Chorus: Trānsvectus vada Tartarī
+(890)  Chorus: pācātīs redit īnferīs.
+(891)  Chorus: jam nūllus superest timor:
+(892)  Chorus: nīl ultrā jacet īnferōs,
+(893)  Chorus: stantēs sacrificus comās
+(894)  Chorus: dīlēctā tege pōpulō.
+(895x) === Szene 3 ===
+(895)  Hercules: Ultrīce dextrā fūsus adversō Lycus
+(896)  Hercules: terram cecīdit ōre; tum quisquis comes
+(897)  Hercules: fuerat tyrannī jacuit et poenae comes,
+(898)  Hercules: nunc sacra patrī victor et superīs feram
+(899)  Hercules: caesīsque meritās victimīs ārās colam.
+(900)  Hercules: Tē tē labōrum socia et adjūtrīx precor.
+(901)  Hercules: belligera Pallas, cujus in laevā ciet
+(902)  Hercules: aegis ferōcēs ōre saxificō minās;
+(903)  Hercules: adsit Lycūrgī domitor et rubrī maris,
+(904)  Hercules: tēctam virente cuspidem thyrsō gerēns,
+(905)  Hercules: geminumque nūmen Phoebus et Phoebī soror:
+(906)  Hercules: soror sagittīs aptior, Phoebus lyrae;
+(907)  Hercules: frāterque quisquis incolit caelum meus
+(908)  Hercules: nōn ex novercā frāter, hūc appellite
+(909)  Hercules: gregēs opīmōs; quicquid Indōrum est seges
+(910)  Hercules: Arabesque odōris quicquid arboribus legunt
+(911)  Hercules: cōnferte in ārās, pinguis exundet vapor,
+(912)  Hercules: pōpulea nostrās arbor exōrnet comās,
+(913)  Hercules: tē rāmus oleae fronde gentīlī tegat,
+(914)  Hercules: Thēseu; Tonantem nostra adōrābit manus,
+(915)  Hercules: tū conditōrēs urbis et silvestria
+(916)  Hercules: trucis antra Zēthī. nōbilis Dircēn aquae
+(917)  Hercules: laremque rēgis advenae Tyrium colēs.
+(918)  Hercules: date tūra flammīs. Nāte, mānantēs prius
+(919)  Amphitruon: manūs cruentā caede et hostīlī expiā.
+(920)  Hercules: Utinam cruōre capitis invīsī deīs
+(921)  Hercules: lībāre possem: grātior nūllus liquor
+(922)  Hercules: tīnxisset ārās; victima haut ūlla amplior
+(923)  Hercules: potest magisque opīma mactārī Jovī,
+(924)  Hercules: quam rēx inīquus. Fīniat genitor tuōs
+(925)  Amphitruon: optā labōrēs, dētur aliquandō ōtium
+(926)  Amphitruon: quiēsque fessīs. Ipse concipiam precēs
+(927)  Hercules: Jove mēque dignās, stet suō caelum locō
+(928)  Hercules: tellūsque et aequor; astra inoffēnsōs agant
+(929)  Hercules: aeterna cursūs, alta pāx gentēs alat:
+(930)  Hercules: ferrum omne teneat rūris innocuī labor
+(931)  Hercules: ēnsēsque lateant, nūlla tempestās fretum
+(932)  Hercules: violenta turbet, nūllus īrātō Jove
+(933)  Hercules: exsiliat ignis, nūllus hībernā nive
+(934)  Hercules: nūtrītus agrōs amnis ēversōs trahat.
+(935)  Hercules: venēna cessent, nūlla nocitūrō gravis
+(936)  Hercules: sūcō tumēscat herba, nōn saevī ac trucēs
+(937)  Hercules: rēgnent tyrannī; sī quod etiamnum est scelus
+(938)  Hercules: lātūra tellūs, properet, et sī quod parat
+(939)  Hercules: mōnstrum, meum sit. sed quid hoc? medium diem
+(940)  Hercules: cīnxēre tenebrae. Phoebus obscūrō meat
+(941)  Hercules: sine nūbe vultū. quis diem retrō fugat
+(942)  Hercules: agitque in ortūs? unde nox ātrum caput
+(943)  Hercules: ignōta prōfert? unde tot stēllae polum
+(944)  Hercules: implent diurnae? prīmus ēn noster labor
+(945)  Hercules: caelī refulget parte nōn minimā leō
+(946)  Hercules: īrāque tōtus fervet et morsūs parat.
+(947)  Hercules: jam rapiet aliquod sīdus: ingentī mināx
+(948)  Hercules: stat ōre et ignēs efflat et rutilā jubam
+(949)  Hercules: cervīce jactāns quicquid autumnus gravis
+(950)  Hercules: hiemsque gelidō frīgida spatiō refert
+(951)  Hercules: ūnō impetū trānsiliet et vernī petet
+(952)  Hercules: frangetque taurī colla. Quod subitum hoc malum est?
+(953)  Amphitruon: quō, nāte, vultūs hūc et hūc ācrēs refers
+(954)  Amphitruon: aciēque falsum turbidā caelum vidēs?
+(955)  Hercules: Perdomita tellūs, tumida cessērunt freta,
+(956)  Hercules: īnferna nostrōs rēgna sēnsēre impetūs:
+(957)  Hercules: immūne caelum est, dignus Alcīdē labor.
+(958)  Hercules: in alta mundī spatia sublīmis ferar,
+(959)  Hercules: petātur aethēr: astra prōmittit pater.
+(960)  Hercules: quid, sī negāret? nōn capit terra Herculem
+(961)  Hercules: tandemque superīs reddit, ēn ultrō vocat
+(962)  Hercules: omnis deōrum coetus et laxat forēs,
+(963)  Hercules: ūnā vetante. recipis et reserās polum?
+(964)  Hercules: an contumācis jānuam mundī trahō?
+(965)  Hercules: dubitātur etiam? vincla Sāturnō exuam
+(966)  Hercules: contrāque patris impiī rēgnum impotēns
+(967)  Hercules: avum resolvam; bella Tītānes parent,
+(968)  Hercules: mē duce furentēs; saxa cum silvīs feram
+(969)  Hercules: rapiamque dextrā plēna Centaurīs juga.
+(970)  Hercules: jam monte geminō līmitem ad superōs agam:
+(971)  Hercules: videat sub Ossā Pēlion Chīrōn suum,
+(972)  Hercules: in caelum Olympus tertiō positus gradū
+(973)  Hercules: perveniet aut mittētur. Īnfandōs procul
+(974)  Amphitruon: āverte sēnsūs; pectoris sānī parum
+(975)  Amphitruon: magnī tamen compesce dēmentem impetum.
+(976)  Hercules: Quid hoc? Gigantes arma pestiferī movent.
+(977)  Hercules: profūgit umbrās Tityos ac lacerum gerēns
+(978)  Hercules: et ināne pectus quam prope ā caelō stetit.
+(979)  Hercules: labat Cithaerōn, alta Pellēnē tremit
+(980)  Hercules: marcentque Tempē. rapuit hic Pindī juga,
+(981)  Hercules: hic rapuit Oetēn, saevit horrendum Mimāns.
+(982)  Hercules: flammifera Erīnȳs verbere excussō sonat
+(983)  Hercules: rogīsque adustās propius ac propius sudēs
+(984)  Hercules: in ōra tendit; saeva Tīsiphonē, caput
+(985)  Hercules: serpentibus vāllāta, post raptum canem
+(986)  Hercules: portam vacantem clausit oppositā face.
+(987)  Hercules: sed ecce prōlēs rēgis inimīcī latet.
+(988)  Hercules: Lycī nefandum sēmen: invīsō patrī
+(989)  Hercules: haec dextra jam vōs reddet, excutiat levis
+(990)  Hercules: nervus sagittās, tēla sīc mittī decet
+(991)  Hercules: Herculea. Quō sē caecus impēgit furor?
+(992)  Amphitruon: vastum coāctīs flexit arcum cornibus
+(993)  Amphitruon: pharetramque solvit, strīdet ēmissa impetū
+(994)  Amphitruon: harundo; mediō spīculum collō fugit
+(995)  Amphitruon: vulnere relictō. Cēteram prōlem ēruam
+(996)  Hercules: omnīsque latebrās, quid moror? majus mihī
+(997)  Hercules: bellum Mycēnīs restat, ut Cyclōpia
+(998)  Hercules: ēversa manibus saxa nostrīs concidant.
+(999)  Hercules: hūc eat et illūc valva dējectō obice
+(1000)  Hercules: rumpatque postēs; culmen impulsum labet.
+(1001)  Hercules: perlūcet omnis rēgia: hīc videō abditum
+(1002)  Hercules: gnātum scelestī patris. Ēn blandās manūs
+(1003)  Amphitruon: ad genua tendēns vōce miserandā rogat:
+(1004)  Amphitruon: scelus nefandum, trīste et aspectū horridum!
+(1005)  Amphitruon: dextrā precantem rapuit et circā furēns
+(1006)  Amphitruon: bis ter rotātum mīsit; ast illī caput
+(1007)  Amphitruon: sonuit, cerebrō tēcta dispersō madent.
+(1008)  Amphitruon: at misera, parvum prōtegēns gnātum sinū,
+(1009)  Amphitruon: Megarā furentī similis ē latebrīs fugit.
+(1010)  Hercules: Licet tonantis profuga condāris sinū,
+(1011)  Hercules: petet undecumque tēmet haec dextra et feret.
+(1012)  Amphitruon: Quō misera pergis? quam fugam aut latebram petis?
+(1013)  Amphitruon: nūllus salūtis Hercule īnfēstō est locus.
+(1014)  Amphitruon: amplectere ipsum potius et blandā prece
+(1015)  Amphitruon: lēnīre temptā. Parce jam, conjūnx, precor,
+(1016)  Megara: agnōsce Megaram. gnātus hic vultūs tuōs
+(1017)  Megara: habitūsque reddit; cernis, ut tendat manūs?
+(1018)  Hercules: Teneō novercam. sequere, dā poenās mihī
+(1019)  Hercules: jugōque pressum līberā turpī Jovem;
+(1020)  Hercules: sed ante mātrem parvulum hoc mōnstrum occidat.
+(1021)  Megara: Quō tendis āmēns? sanguinem fundēs tuum?
+(1022)  Amphitruon: Pavefactus īnfāns igneō vultū patris
+(1023)  Amphitruon: perit ante vulnus, spīritum ēripuit timor.
+(1024)  Amphitruon: in conjugem nunc clāva lībrātur gravis:
+(1025)  Amphitruon: perfrēgit ossa, corporī truncō caput
+(1026)  Amphitruon: abest nec usquam est. cernere hoc audēs, nimis
+(1027)  Amphitruon: vīvāx senectūs? sī piget lūctūs, habēs
+(1028)  Amphitruon: mortem parātam: pectus in tēla indue,
+(1029)  Amphitruon: vel stīpitem istūc caede nostrōrum inlitum
+(1030)  Amphitruon: converte, falsum ac nōminī turpem tuō
+(1031)  Amphitruon: removē parentem, nē tuae laudī obstrepat.
+(1032)  Amphitruon: quō tē ipse, senior, obvium mortī ingeris?
+(1033)  Amphitruon: quō pergis āmēns? profuge et obtēctus latē,
+(1034)  Amphitruon: ūnumque manibus aufer Herculeīs scelus.
+(1035)  Hercules: Bene habet, pudendī rēgis excīsa est domus.
+(1036)  Hercules: tibi hunc dicātum, maximī conjūnx Jovis,
+(1037)  Hercules: gregem cecīdī; vōta persolvī libēns
+(1038)  Hercules: tē digna, et Argos victimās aliās dabit.
+(1039)  Amphitruon: Nōndum litāstī, nāte: cōnsummā sacrum.
+(1040)  Amphitruon: stat ecce ad ārās hostia, expectat manum
+(1041)  Amphitruon: cervīce prōnā; praebeō occurrō īnsequor:
+(1042)  Amphitruon: mactā; quid hoc est? errat aciēs lūminum
+(1043)  Amphitruon: vīsūsque maeror hebetat? an videō Herculis
+(1044)  Amphitruon: manūs trementēs? vultus in somnum cadit
+(1045)  Amphitruon: et fessa cervīx capite summissō labat;
+(1046)  Amphitruon: flexō genū jam tōtus ad terram ruit,
+(1047)  Amphitruon: ut caesa silvīs ornus aut portum marī
+(1048)  Amphitruon: datūra mōlēs, vīvis an lētō dedit
+(1049)  Amphitruon: īdem tuōs quī mīsit ad mortem furor?
+(1050)  Amphitruon: sopor est: reciprocōs spīritus mōtūs agit.
+(1051)  Amphitruon: dētur quiētī tempus, ut somnō gravī
+(1052)  Amphitruon: vīs victa morbī pectus oppressum levet.
+(1053)  Amphitruon: removēte, famulī, tēla, nē repetat furēns.
+(1054x) === Chor (Anapäste) ===
+(1054)  Chorus: Lūgeat aethēr magnusque parēns
+(1055)  Chorus: aetheris altī tellūsque ferāx
+(1056)  Chorus: et vaga pontī mōbilis unda,
+(1057)  Chorus: tūque ante omnīs quī per terrās
+(1058)  Chorus: tractūsque maris fundis radiōs
+(1059)  Chorus: noctemque fugās ōre decōrō,
+(1060)  Chorus: fervide Tītān: obitūs pariter
+(1061)  Chorus: tēcum Alcīdēs vīdit et ortūs
+(1062)  Chorus: nōvitque tuās utrasque domōs.
+(1063)  Chorus: Solvite tantīs animum mōnstrīs,
+(1064)  Chorus: solvite superī,
+(1065)  Chorus: rēctam in melius flectite mentem.
+(1066)  Chorus: tūque, ō domitor Somne malōrum,
+(1067)  Chorus: requiēs animī,
+(1068)  Chorus: pars hūmānae melior vītae,
+(1069)  Chorus: volucre ō mātris genus Astraeae,
+(1070)  Chorus: frāter dūrae languide Mortis,
+(1070)  Chorus: vērīs miscēns falsa, futūrī
+(1071)  Chorus: certus et īdem pessimus auctor,
+(1072)  Chorus: pater ō rērum, portus vītae,
+(1073)  Chorus: lūcis requiēs noctisque comes,
+(1074)  Chorus: quī pār rēgī famulōque venis,
+(1075)  Chorus: pavidum lētī genus hūmānum
+(1076)  Chorus: cōgis longam discere noctem:
+(1077)  Chorus: placidus fessum lēnisque fovē,
+(1078)  Chorus: preme dēvīnctum torpōre gravī;
+(1079)  Chorus: sopor indomitōs alliget artūs
+(1080)  Chorus: nec torva prius pectora linquat,
+(1081)  Chorus: quam mēns repetat prīstina cursum.
+(1082)  Chorus: Ēn fūsus humī saeva ferōcī
+(1083)  Chorus: corde volūtat somnia –nōndum est
+(1084)  Chorus: tantī pestis superāta malī–
+(1085)  Chorus: clāvaeque gravī lassum solitus
+(1086)  Chorus: mandāre caput
+(1087)  Chorus: quaerit vacuā pondera dextrā,
+(1088)  Chorus: mōtū jactāns bracchia vānō.
+(1089)  Chorus: nec adhūc omnīs expulit aestūs,
+(1090)  Chorus: sed ut ingentī vexāta notō
+(1091)  Chorus: servat longōs unda tumultūs
+(1092)  Chorus: et jam ventō cessante tumet.
+(1093)  Chorus: pelle īnsānōs flūctūs animī,
+(1094)  Chorus: redeat pietās virtūsque virō.
+(1095)  Chorus: vel sit potius
+(1095)  Chorus: mēns vēsānō concita mōtū:
+(1096)  Chorus: error caecus quā coepit eat;
+(1097)  Chorus: sōlus tē jam praestāre potest
+(1098)  Chorus: furor īnsontem: proxima pūrīs
+(1099)  Chorus: sors est manibus nescīre nefās.
+(1100)  Chorus: Nunc Herculeīs percussa sonent
+(1101)  Chorus: pectora palmīs,
+(1102)  Chorus: mundum solitōs ferre lacertōs
+(1103)  Chorus: verbera pulsent victrīce manū;
+(1104)  Chorus: gemitūs vastōs audiat aethēr,
+(1105)  Chorus: audiat ātrī rēgīna polī
+(1106)  Chorus: vastīsque ferōx
+(1107)  Chorus: quī colla gerit vīncta catēnīs
+(1108)  Chorus: īmō latitāns Cerberus antrō.
+(1109)  Chorus: Resonet maestō clāmōre chaos
+(1110)  Chorus: lātēque patēns unda profundī:
+(1110)  Chorus: et quī medius tua tēla tamen
+(1111)  Chorus: sēnserat āēr.
+(1112)  Chorus: pectora tantīs obsessa malīs
+(1113)  Chorus: nōn sunt ictū ferienda levī:
+(1114)  Chorus: ūnō plānctū tria rēgna sonent.
+(1115)  Chorus: Et tū collō decus ac tēlum
+(1116)  Chorus: suspēnsa diū,
+(1117)  Chorus: fortis harundō, pharetraeque gravēs,
+(1118)  Chorus: date saeva ferō verbera tergō;
+(1119)  Chorus: caedant umerōs rōbora fortēs
+(1120)  Chorus: stīpesque potēns
+(1120)  Chorus: dūrīs oneret pectora nōdīs:
+(1121)  Chorus: plangant tantōs arma dolōrēs.
+(1135)  Chorus: Īte īnfaustum genus, ō puerī,
+(1136)  Chorus: nōtī per iter trīste labōris,
+(1137)  Chorus: nōn vōs patriae laudis comitēs
+(1138)  Chorus: ultī saevōs vulnere rēgēs,
+(1139)  Chorus: nōn Argīvā membra palaestrā
+(1125)  Chorus: flectere doctī fortēs caestū
+(1126)  Chorus: fortēsque manū, jam tamen ausī
+(1127)  Chorus: tēlum Scythicīs leve cōrȳtīs
+(1128)  Chorus: missum certā lībrāre manū
+(1129)  Chorus: tūtōsque fugā fīgere cervōs:
+(1130)  Chorus: nōndumque ferae terga jubātae
+(1131)  Chorus: īte ad Stygiōs, umbrae, portūs
+(1132)  Chorus: īte, innocuae,
+(1133)  Chorus: quās in prīmō līmine vītae
+(1134)  Chorus: scelus oppressit patriusque furor,
+(1135)  Chorus: īte, īrātōs vīsite rēgēs.
+(1136x) === Szene 4 ===
+(1136)  Hercules: Quis hic locus, quae regio, quae mundī plaga?
+(1137)  Hercules: ubi sum? sub ortū sōlis, an sub cardine
+(1140)  Hercules: glaciālis ursae? numquid Hesperiī maris
+(1141)  Hercules: extrēma tellūs hunc dat Ōceanō modum?
+(1142)  Hercules: quās trahimus aurās? quod solum fessō subest?
+(1143)  Hercules: certē redīmus, unde prōstrāta ad domum
+(1144)  Hercules: videō cruenta corpora? an nōndum exuit
+(1145)  Hercules: simulācra mēns īnferna? post reditūs quoque
+(1146)  Hercules: oberrat oculīs turba fērālis meīs?
+(1147)  Hercules: pudet fatērī: paveō; nescioquod mihī,
+(1148)  Hercules: nescioquod animus grande praesāgit malum,
+(1149)  Hercules: ubi es, parēns? ubi illa nātōrum grege
+(1150)  Hercules: animōsa conjūnx? cūr latus laevum vacat
+(1151)  Hercules: spoliō leōnis? quōnam abīt tegimen meum
+(1152)  Hercules: īdemque somnō mollis Herculeō torus?
+(1153)  Hercules: ubi tēla? ubi arcus? arma quis vīvō mihī
+(1154)  Hercules: dētrahere potuit? spolia quis tanta abstulit
+(1155)  Hercules: ipsumque quis nōn Herculis somnum horruit?
+(1156)  Hercules: libet meum vidēre victōrem, libet
+(1157)  Hercules: (exsurge, virtūs) quem novum caelō pater
+(1158)  Hercules: genuit relictō, cujus in fētū stetit
+(1159)  Hercules: nox longior quam nostra– quod cernō nefās?
+(1160)  Hercules: nātī cruentā caede cōnfectī jacent,
+(1161)  Hercules: perēmpta conjūnx. quis Lycus rēgnum obtinet
+(1162)  Hercules: quis tanta Thēbīs scelera mōlīrī ausus est
+(1163)  Hercules: Hercule reversō? quisquis Ismēnī loca,
+(1164)  Hercules: Actaea quisquis arva, quī geminō marī
+(1165)  Hercules: pulsāta Pelopis rēgna Dardaniī colis,
+(1166)  Hercules: succurre, saevae clādis auctōrem indicā.
+(1167)  Hercules: ruat īra in omnīs: hostis est quisquis mihī
+(1168)  Hercules: nōn mōnstrat hostem. victor Alcīdae, latēs?
+(1169)  Hercules: prōcēde, seu tū vindicās currūs trucēs
+(1170)  Hercules: Thrācis cruentī sīve Gēryonae pecus
+(1171)  Hercules: Libyaeve dominōs, nūlla pugnandī mora est.
+(1172)  Hercules: ēn nūdus astō; vel meīs armīs licet
+(1173)  Hercules: petās inermem, cūr meōs Thēseus fugit
+(1174)  Hercules: paterque vultūs? ōra cūr condunt sua?
+(1175)  Hercules: differte flētūs; quis meōs dederit necī
+(1176)  Hercules: omnīs simul, profāre. quid, genitor, silēs?
+(1177)  Hercules: at tū ēde, Thēseu, sed tuā, Thēseu, fidē.
+(1178)  Hercules: uterque tacitus ōra pudibunda obtegit
+(1179)  Hercules: fūrtimque lacrimās fundit, in tantīs malīs
+(1180)  Hercules: quid est pudendum? numquid Argīvae impotēns
+(1181)  Hercules: dominātor urbis, numquid īnfēstum Lycī
+(1182)  Hercules: pereuntis agmen clāde nōs tantā obruit?
+(1183)  Hercules: per tē meōrum facinorum laudem precor,
+(1184)  Hercules: genitor, tuīque nōminis semper mihī
+(1185)  Hercules: nūmen secundum, fāre, quis fūdit domum?
+(1186)  Hercules: cui praeda jacuī? Tacita sīc abeant mala.
+(1187)  Hercules: Ut inultus ego sim? Saepe vindicta obfuit.
+(1188)  Hercules: Quisquamne sēgnis tanta tolerāvit mala?
+(1189)  Amphitruon: Majōra quisquis timuit. Hīs etiam, pater,
+(1190)  Hercules: quicquam timērī majus aut gravius potest?
+(1191)  Amphitruon: Clādis tuae pars ista quam nōstī quota est?
+(1192)  Hercules: Miserēre, genitor, supplicēs tendō manūs.
+(1193)  Hercules: quid hoc? manūs refūgit, hīc errat scelus.
+(1194)  Hercules: unde hic cruor? quid illa puerīlī madēns
+(1195)  Hercules: harundo lētō? tīncta Lernaeā nece
+(1196)  Hercules: jam tēla videō nostra, nōn quaerō manum.
+(1197)  Hercules: quis potuit arcum flectere aut quae dextera
+(1198)  Hercules: sinuāre nervum rīte cēdentem mihī?
+(1199)  Hercules: ad vōs revertor; genitor, hoc nostrum est scelus?
+(1200)  Hercules: tacuēre? nostrum est. Lūctus est istīc tuus,
+(1201)  Amphitruon: crīmen novercae: cāsus hic culpā caret.
+(1202)  Hercules: Nunc parte ab omnī, genitor, īrātus tonā,
+(1203)  Hercules: oblīte nostrī vindicā sērā manū
+(1204)  Hercules: saltem nepōtēs. stelliger mundus sonet
+(1205)  Hercules: flammāsque et hic et ille jaculētur polus:
+(1206)  Hercules: rūpēs ligātum Caspiae corpus trahant
+(1207)  Hercules: atque āles avida; cūr Promēthēī vacant
+(1208)  Hercules: scopulī? vacat cūr vertice immēnsō ferās
+(1209)  Hercules: volucrēsque pāscēns Caucasī abruptum latus
+(1210)  Hercules: nūdumque silvīs? illa quae pontum Scythēn
+(1211)  Hercules: Symplēgas artat hinc et hinc vīnctās manūs
+(1212)  Hercules: distendat altō, cumque revocātā vice
+(1213)  Hercules: in sē coībunt saxaque in caelum expriment
+(1214)  Hercules: āctīs utrimque rūpibus medium mare,
+(1215)  Hercules: ego inquiētā montium jaceam morā.
+(1216)  Hercules: quīn strūctum acervāns nemore congestō aggerem
+(1217)  Hercules: cruōre corpus impiō sparsum cremō?
+(1218)  Hercules: sīc, sīc agendum est: īnferīs reddam Herculem.
+(1219)  Amphitruon: Nōndum tumultū pectus attonitō carēns
+(1220)  Amphitruon: mūtāvit īrās quodque habet proprium furor,
+(1221)  Amphitruon: in sē ipse saevit. Dīra Furiārum loca
+(1222)  Hercules: et īnferōrum carcer et sontī plaga
+(1223)  Hercules: dēcrēta turbae; sī quod exilium latet
+(1224)  Hercules: ulterius Erebō, Cerberō ignōtum et mihī:
+(1225)  Hercules: hōc mē abde, tellūs; Tartarī ad fīnem ultimum
+(1226)  Hercules: mānsūrus ībō. pectus ō nimium ferum!
+(1227)  Hercules: quis vōs per omnem, līberī, sparsōs domum
+(1228)  Hercules: dēflēre dignē poterit? hic dūrus malīs
+(1229)  Hercules: lacrimāre vultus nescit. hūc arcum date,
+(1230)  Hercules: date hūc sagittās, stīpitem hūc vastum date.
+(1231)  Hercules: tibi tēla frangam nostra, tibi nostrōs, puer,
+(1232)  Hercules: rumpēmus arcūs; at tuīs stīpes gravis
+(1233)  Hercules: ārdēbit umbrīs; ipsa Lernaeīs frequēns
+(1234)  Hercules: pharetra tēlīs in tuōs ībit rogōs:
+(1235)  Hercules: dent arma poenās, vōs quoque īnfaustās meīs
+(1236)  Hercules: cremābo tēlīs, ō novercālēs manūs.
+(1237)  Amphitruon: Quis nōmen usquam sceleris errōrī addidit?
+(1238)  Hercules: Saepe error ingēns sceleris obtinuit locum.
+(1239)  Amphitruon: Nunc Hercule opus est: perfer hanc mōlem malī.
+(1240)  Hercules: Nōn sīc furōre cessit extīnctus pudor,
+(1241)  Hercules: populōs ut omnēs impiō aspectū fugem.
+(1242)  Hercules: arma, arma, Thēseu, flāgitō properē mihī
+(1243)  Hercules: subtracta reddī, sāna sī mēns est mihī,
+(1244)  Hercules: referte manibus tēla; sī remanet furor,
+(1245)  Hercules: pater, recēde: mortis inveniam viam.
+(1246)  Amphitruon: Per sāncta generis sacra, per jūs nōminis
+(1247)  Amphitruon: utrumque nostrī, sīve mē altōrem vocās
+(1248)  Amphitruon: seu tū parentem, perque venerandōs piīs
+(1249)  Amphitruon: cānōs, senectae parce dēsertae, precor,
+(1250)  Amphitruon: annīsque fessīs; ūnicum lāpsae domūs
+(1251)  Amphitruon: firmāmen, ūnum lūmen afflīctō malīs
+(1252)  Amphitruon: tēmet reservā. nūllus ex tē contigit
+(1253)  Amphitruon: frūctus labōrum; semper aut dubium mare
+(1254)  Amphitruon: aut mōnstra timuī; quisquis in tōtō furit
+(1255)  Amphitruon: rēx saevus orbe, manibus aut ārīs nocēns,
+(1256)  Amphitruon: ā mē timētur: semper absentis pater
+(1257)  Amphitruon: frūctum tuī factumque et aspectum petō.
+(1258)  Hercules: Cūr animam in istā lūce dētineam amplius
+(1259)  Hercules: mōrerque nihil est: cūncta jam āmīsī bona,
+(1260)  Hercules: mentem arma fāmam conjugem gnātōs manūs,
+(1261)  Hercules: etiam furōrem, nēmo pollūtō queat
+(1262)  Hercules: animō medērī: morte sānandum est scelus.
+(1263)  Amphitruon: Perimēs parentem. Facere nē possim, occidam.
+(1264)  Amphitruon: Genitōre cōram? Cernere hunc docuī nefās.
+(1265)  Amphitruon: Memoranda potius omnibus facta intuēns
+(1266)  Amphitruon: ūnīus ā tē crīminis veniam pete.
+(1267)  Hercules: Veniam dabit sibi ipse, quī nūllī dedit?
+(1268)  Hercules: laudanda fēcī jussus: hoc ūnum meum est.
+(1269)  Hercules: succurre, genitor; sīve tē pietās movet
+(1270)  Hercules: seu trīste fātum sīve violātum decus
+(1271)  Hercules: virtūtis: effer arma; vincātur meā
+(1272)  Hercules: fortūna dextrā. Sunt quidem patriae precēs
+(1273)  Theseus: satis efficācēs, sed tamen nostrō quoque
+(1274)  Theseus: mōvēre flētū, surge et adversa impetū
+(1275)  Theseus: perfringe solitō, nunc tuum nūllī imparem
+(1276)  Theseus: animum malō resūme, nunc magnā tibī
+(1277)  Theseus: virtūte agendum est: Herculem īrāscī vetā.
+(1278)  Hercules: Sī vīvo, fēcī scelera; sī morior, tulī.
+(1279)  Hercules: pūrgāre terrās propero, jamdūdum mihī
+(1280)  Hercules: mōnstrum impium saevumque et immīte ac ferum
+(1281)  Hercules: oberrat: agedum dextra, cōnāre aggredī
+(1282)  Hercules: ingēns opus, labōre bis sēnō amplius.
+(1283)  Hercules: ignāva cessās, fortis in puerōs modo
+(1284)  Hercules: pavidāsque mātrēs? arma nisi dantur mihī,
+(1285)  Hercules: aut omne Pindī Thrācis excīdam nemus
+(1286)  Hercules: Bacchīque lūcōs et Cithaerōnis juga
+(1287)  Hercules: mēcum cremābō, aut tōta cum domibus suīs
+(1288)  Hercules: dominīsque tēcta, cum deīs templa omnibus
+(1289)  Hercules: Thēbāna suprā corpus excipiam meum
+(1290)  Hercules: atque urbe versā condar, et, sī fortibus
+(1291)  Hercules: leve pondus umerīs moenia immissa incident
+(1292)  Hercules: septemque opertus nōn satis portīs premar,
+(1293)  Hercules: onus omne mediā parte quod mundī sedet
+(1294)  Hercules: dirimitque superōs, in meum vertam caput.
+(1295)  Amphitruon: Reddō arma. Vōx est digna genitōre Herculis.
+(1296)  Hercules: hōc ēn perēmptus spīculō cecidit puer;
+(1297)  Amphitruon: Hoc Jūno tēlum manibus immīsit tuīs.
+(1298)  Hercules: Hōc nunc ego ūtar. Ecce quam miserum metū
+(1299)  Amphitruon: cor palpitat pectusque sollicitum ferit.
+(1300)  Hercules: Aptāta harundō est. Ecce jam faciēs scelus
+(1301)  Amphitruon: volēns sciēnsque. Pande, quid fierī jubēs?
+(1302)  Amphitruon: Nihil rogāmus: noster in tūtō est dolor.
+(1303)  Amphitruon: nātum potes servāre tū sōlus mihī,
+(1304)  Amphitruon: ēripere nec tū; maximum ēvāsī metum:
+(1305)  Amphitruon: miserum haut potes mē facere, fēlīcem potes.
+(1306)  Amphitruon: sīc statue, quicquid statuis, ut causam tuam
+(1307)  Amphitruon: fāmamque in artō stāre et ancipitī sciās:
+(1308)  Amphitruon: aut vīvis aut occīdis, hanc animam levem
+(1309)  Amphitruon: fessamque seniō nec minus fessam malīs
+(1310)  Amphitruon: in ōre prīmō teneo, tam tardē patrī
+(1311)  Amphitruon: vītam dat aliquis? nōn feram ulterius moram,
+(1312)  Amphitruon: laetāre! ferrō pectus impressō induam:
+(1313)  Amphitruon: hīc, hīc jacēbit Herculis sānī scelus.
+(1314)  Hercules: Jam parce, genitor, parce, jam revocā manum.
+(1315)  Hercules: succumbe, virtūs, perfer imperium patris.
+(1316)  Hercules: eat ad labōrēs hic quoque Herculeōs labor:
+(1317)  Hercules: vīvāmus, artūs allevā afflīctōs solō,
+(1318)  Hercules: Thēseu, parentis. dextra contāctūs piōs
+(1319)  Hercules: scelerāta refugit. Hanc manum amplector libēns,
+(1320)  Amphitruon: hāc nīsus ībō, pectorī hanc aegrō admovēns
+(1321)  Amphitruon: pellam dolōrēs. Quem locum profugus petam?
+(1322)  Hercules: ubi mē recondam quāve tellūre obruar?
+(1323)  Hercules: quis Tanais aut quis Nīlus aut quis Persicā
+(1324)  Hercules: violentus undā Tigris aut Rhēnus ferōx
+(1325)  Hercules: Tagusve Hibērā turbidus gāzā fluēns
+(1326)  Hercules: abluere dextram poterit? Arctōum licet
+(1327)  Hercules: Maeōtis in mē gelida trānsfundat mare
+(1328)  Hercules: et tōta Tēthȳs per meās currat manūs,
+(1329)  Hercules: haerēbit altum facinus. in quās impius
+(1330)  Hercules: terrās recēdēs? ortum an occāsum petēs?
+(1331)  Hercules: ubīque nōtus perdidī exiliō locum.
+(1332)  Hercules: mē refugit orbis, astra trānsversōs agunt
+(1333)  Hercules: oblīqua cursūs, ipse Tītān Cerberum
+(1334)  Hercules: meliōre vultū vīdit, ō fīdum caput,
+(1335)  Hercules: Thēseu, latebram quaere longinquam abditam;
+(1336)  Hercules: quoniamque semper sceleris aliēnī arbiter
+(1337)  Hercules: amās nocentēs, grātiam meritīs refer
+(1338)  Hercules: vicemque nostrīs: redde mē īnfernīs precor
+(1339)  Hercules: umbrīs reductum, mēque subjectum tuīs
+(1340)  Hercules: cōnstitue vinclīs: ille mē abscondet locus.
+(1341)  Hercules: sed et ille nōvit. Nostra tē tellūs manet.
+(1342)  Theseus: illīc solūtam caede Grādīvus manum
+(1343)  Theseus: restituit armīs: illa tē, Alcīdē, vocat,
+(1344)  Theseus: facere innocentēs terra quae superōs solet.

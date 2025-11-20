@@ -1,0 +1,1059 @@
+(-17x) === Didascalia ===
+(-17)  INCIPIT TERENTI ADELPHOE
+(-16)  ACTA LUDIS FUNEBRIBUS L. AEMILIO PAULO
+(-15)  QUOS FECERE Q. FABIUS MAXIMUS, P. CORNELIUS AFRICANUS.
+(-14)  EGERE L. AMBIVIUS TURPIO L. HATILIUS PRAENESTINUS
+(-13)  MODOS FECIT FLACCUS CLAUDI TIBIIS SARRANIS TOTA
+(-12)  GRAECA MENANDRU FACTA VI MARCO CORNELIO CETHEGO L. ANICIO GALLO COS.
+(-11x) == C. Sulpici Apollinaris Periocha ==
+(-11)  Duōs cum habēret Dēmea adulēscentulōs,
+(-10)  dat Mīciōnī frātrī adoptandum Aeschinum,
+(-9)  sed Ctēsiphōnem retinet. hunc citharistriae
+(-8)  lepōre captum subdūrō ac trīstī patre
+(-7)  frāter cēlābat Aeschinus; fāmam reī,
+(-6)  amōrem in sēsē trānsferēbat; dēnique
+(-5)  fidicinam lēnōnī ēripit. vitiāverat
+(-4)  īdem Aeschinus cīvem Atticam pauperculam
+(-3)  fidemque dederat hanc sibi uxōrem fore.
+(-2)  Dēmea jūrgāre, graviter ferre; mox tamen,
+(-1)  ut vēritās patefactast, dūcit Aeschinus
+(0)  vitiātam, potitur Ctēsiphō citharistriam.
+(1x) === Prolog ===
+(1)  PROLOGUS: Postquam poēta sēnsit scrīptūram suam
+(2)  PROLOGUS: ab inīquīs observārī, et advorsāriōs
+(3)  PROLOGUS: rapere in pejōrem partem quam āctūrī sumus,
+(4)  PROLOGUS: indiciō dē sē ipse erit, vōs eritis jūdicēs
+(5)  PROLOGUS: laudīn an vitiō dūcī factum oporteat.
+(6)  PROLOGUS: Synapothnescontes Dīphilī cōmoediast:
+(7)  PROLOGUS: eam Commorientīs Plautus fēcit fābulam.
+(8)  PROLOGUS: in Graecā adulēscēns est quī lēnōnī ēripit
+(9)  PROLOGUS: meretrīcem in prīmā fābulā: eum Plautus locum
+(10)  PROLOGUS: relīquit integrum, eum hic locum sūmpsit sibi
+(11)  PROLOGUS: in Adelphōs, verbum dē verbō expressum extulit.
+(12)  PROLOGUS: eam nōs āctūrī sumus novam: pernōscite
+(13)  PROLOGUS: fūrtumne factum exīstimētis an locum
+(14)  PROLOGUS: reprehēnsum quī praeteritus nēglegentiāst.
+(15)  PROLOGUS: nam quod istī dīcunt malevolī, hominēs nōbilīs
+(16)  PROLOGUS: hunc adjūtāre assiduēque ūnā scrībere,
+(17)  PROLOGUS: quod illī maledictum vehemēns esse exīstimant,
+(18)  PROLOGUS: eam laudem hic dūcit maximam cum illīs placet
+(19)  PROLOGUS: quī vōbīs ūnīvorsīs et populō placent,
+(20)  PROLOGUS: quōrum operā in bellō in ōtiō in negōtiō
+(21)  PROLOGUS: suō quisque tempore ūsust sine superbiā.
+(22)  PROLOGUS: dehinc nē exspectētis argūmentum fābulae,
+(23)  PROLOGUS: senēs quī prīmī venient, ī partem aperient,
+(24)  PROLOGUS: in agendō partem ostendent. facite aequanimitās
+(25)  PROLOGUS: poētae a scrībendum augeāt industriam.
+(26y) === Akt I ===
+(26x) == Micio ==
+(26)  MICIO SENEX: Stōrax! nōn rediit hāc nocte ā cēnā Aeschinus
+(27)  MICIO SENEX: neque servulōrum quisquam quī advorsum īerant.
+(28)  MICIO SENEX: profectō hoc vērē dīcunt: sī absīs uspiam
+(29)  MICIO SENEX: aut ibi sī cessēs, ēvenīre ea satius est
+(30)  MICIO SENEX: quae in tē uxor dīcit et quae in animō cōgitat
+(31)  MICIO SENEX: īrāta quam illa quae parentēs propitiī.
+(32)  MICIO SENEX: uxor, sī cessēs, aut tē amāre cōgitat
+(33)  MICIO SENEX: aut tēte amārī aut pōtāre atque animō obsequī
+(34)  MICIO SENEX: et tibi bene esse sōlī, cum sibi sit malē.
+(35)  MICIO SENEX: ego quia nōn rediit fīlius quae cōgitō et
+(36)  MICIO SENEX: quibus nunc sollicitor rēbus! nē aut ille alserit
+(37)  MICIO SENEX: aut uspiam ceciderit aut praefrēgerit
+(38)  MICIO SENEX: aliquid. vāh! quemquamne hominem in animō īnstituere aut
+(39)  MICIO SENEX: parāre quod sit cārius quam ipsest sibi!
+(40)  MICIO SENEX: atque ex mē hic nātus nōn est sed ex frātre. is adeō
+(41)  MICIO SENEX: dissimilī studiōst jam inde ab adulēscentiā:
+(42)  MICIO SENEX: ego hanc clēmentem vītam urbānam atque ōtium
+(43)  MICIO SENEX: secūtus sum et, quod fortūnātum istī putant,
+(44)  MICIO SENEX: uxōrem, numquam habuī. ille contrā haec omnia:
+(45)  MICIO SENEX: rūrī agere vītam; semper parcē ac dūriter
+(46)  MICIO SENEX: sē habēre; uxōrem dūxit; nātī fīliī
+(47)  MICIO SENEX: duō; inde ego hunc majōrem adoptāvī mihi;
+(48)  MICIO SENEX: ēdūxī ā parvulō; habuī amāvī prō meō;
+(49)  MICIO SENEX: in eō mē oblectō, sōlum id est cārum mihi.
+(50)  MICIO SENEX: ille ut item contrā mē habeat faciō sēdulō:
+(51)  MICIO SENEX: dō praetermittō, nōn necesse habeō omnia
+(52)  MICIO SENEX: prō meō jūre agere; postrēmō, aliī clanculum
+(53)  MICIO SENEX: patrēs quae faciunt, quae fert adulēscentia,
+(54)  MICIO SENEX: ea nē mē cēlet cōnsuēfēcī fīlium.
+(55)  MICIO SENEX: nam quī mentīrī aut fallere īnsuerit patrem aut
+(56)  MICIO SENEX: audēbit, tantō magis audēbit cēterōs.
+(57)  MICIO SENEX: pudōre et līberālitāte līberōs
+(58)  MICIO SENEX: retinēre satius esse crēdō quam metū.
+(59)  MICIO SENEX: haec frātrī mēcum nōn conveniunt neque placent.
+(60)  MICIO SENEX: venit ad mē saepe clāmitans ‘quid agis, Mīciō?
+(61)  MICIO SENEX: cūr perdis adulēscentem nōbīs? cūr amat?
+(62)  MICIO SENEX: cūr pōtat? cūr tū hīs rēbus sūmptum suggeris,
+(63)  MICIO SENEX: vestītū nimiō indulgēs? nimium ineptus ēs.’
+(64)  MICIO SENEX: nimium ipse est dūrus praeter aequumque et bonum,
+(65)  MICIO SENEX: et errat longē meā quidem sententiā
+(66)  MICIO SENEX: quī imperium crēdat gravius esse aut stabilius
+(67)  MICIO SENEX: vī quod fit quam illud quod amīcitiā adjungitur.
+(68)  MICIO SENEX: mea sīc est ratiō et sīc animum indūcō meum:
+(69)  MICIO SENEX: malō coāctus quī suum officium facit,
+(70)  MICIO SENEX: dum id rescītum īrī crēdit, tantisper cavet;
+(71)  MICIO SENEX: sī spērat fore clam, rūrsum ad ingenium redit.
+(72)  MICIO SENEX: ille quem beneficiō adjungās ex animō facit,
+(73)  MICIO SENEX: studet pār referre, praesēns absēnsque īdem erit.
+(74)  MICIO SENEX: hoc patriumst, potius cōnsuēfacere fīlium
+(75)  MICIO SENEX: suā sponte rēctē facere quam aliēnō metū:
+(76)  MICIO SENEX: hoc pater ac dominus interest. hoc quī nequit
+(77)  MICIO SENEX: fateātur nescīre imperāre līberīs.
+(78)  MICIO SENEX: sed estne hic ipsus dē quō agēbam? et certē is est.
+(79)  MICIO SENEX: nescioquid trīstem videō: crēdō, jam ut solet
+(80)  MICIO SENEX: jūrgābit. salvum tē advenīre, Dēmeā,
+(81x) == Demea Micio ==
+(81)  MICIO SENEX: gaudēmus. Ehem opportūnē: tē ipsum quaeritō.
+(82)  MICIO SENEX: quid trīstis ēs? rogās mē ubi nōbīs Aeschinus
+(83)  DEMEA SENEX: siet? quid trīstis ego sum? dīxīn hoc fore?
+(84)  MICIO SENEX: quid fēcit? quid ille fēcerit? quem neque pudet
+(85)  DEMEA SENEX: quicquam neque metuit quemquam neque lēgem putat
+(86)  DEMEA SENEX: tenēre sē ūllam. nam illa quae antehāc facta sunt
+(87)  DEMEA SENEX: omittō: modo quid dissignāvit? quidnam id est?
+(88)  DEMEA SENEX: forēs effrēgit atque in aedīs irruit
+(89)  DEMEA SENEX: aliēnās; ipsum dominum atque omnem familiam
+(90)  DEMEA SENEX: mulcāvit usque ad mortem; ēripuit mulierem
+(91)  DEMEA SENEX: quam amābat: clāmant omnēs indignissimē
+(92)  DEMEA SENEX: factum esse. hoc advenientī quot mihi, Mīciō,
+(93)  DEMEA SENEX: dīxēre! in ōrest omnī populō. dēnique,
+(94)  DEMEA SENEX: sī cōnferendum exemplumst, nōn frātrem videt
+(95)  DEMEA SENEX: reī dare operam, rūrī esse parcum ac sōbrium?
+(96)  DEMEA SENEX: nūllum hujus simile factum. haec cum illī, Mīciō,
+(97)  DEMEA SENEX: dīcō, tibi dīcō: tu illum corrumpī sinis.
+(98)  MICIO SENEX: homine imperītō numquam quicquam injūstiust,
+(99)  MICIO SENEX: quī nisi quod ipse fēcit nīl rēctum putat.
+(100)  DEMEA SENEX: quōrsum istūc? quia tū, Dēmea, haec male jūdicās.
+(101)  MICIO SENEX: nōn est flāgitium, mihi crēde, adulēscentulum
+(102)  MICIO SENEX: scortārī neque pōtāre: nōn est; neque forēs
+(103)  MICIO SENEX: effringere. haec sī neque ego neque tū fēcimus,
+(104)  MICIO SENEX: nōn siit egestās facere nōs. tū nunc tibi
+(105)  MICIO SENEX: id laudī dūcis quod tum fēcistī inopiā?
+(106)  MICIO SENEX: injūriumst; nam sī esset unde id fīeret,
+(107)  MICIO SENEX: facerēmus. et tū illum tuum, sī essēs homō,
+(108)  MICIO SENEX: sinerēs nunc facere dum per aetātem licet
+(109)  MICIO SENEX: potius quam, ubi tē exspectātum ējēcisset forās,
+(110)  MICIO SENEX: aliēniōre aetāte post faceret tamen.
+(111)  DEMEA SENEX: prō Juppiter, tū homō adigis me ad īnsāniam!
+(112)  DEMEA SENEX: nōn est flāgitium facere haec adulēscentulum? āh
+(113)  MICIO SENEX: auscultā, nē mē obtundās dē hāc rē saepius:
+(114)  MICIO SENEX: tuum fīlium dedistī adoptandum mihi;
+(115)  MICIO SENEX: is meus est factus: sīquid peccat, Dēmeā,
+(116)  MICIO SENEX: mihi peccat; ego illī maximam partem feram.
+(117)  MICIO SENEX: obsōnat pōtat, olet unguenta: dē meō;
+(118)  MICIO SENEX: amat: dabitur ā mē argentum dum erit commodum;
+(119)  MICIO SENEX: ubi nōn erit fortasse exclūdētur forās.
+(120)  MICIO SENEX: forēs effrēgit: restituentur; discidit
+(121)  MICIO SENEX: vestem: resarciētur; et, dīs grātia,
+(122)  MICIO SENEX: est unde haec fīant, et adhūc nōn molesta sunt.
+(123)  MICIO SENEX: postrēmō aut dēsine aut cedo quemvīs arbitrum:
+(124)  MICIO SENEX: tē plūra in hāc rē peccāre ostendam. ei mihi,
+(125)  DEMEA SENEX: pater esse disce ab illīs quī vērē sciunt.
+(126)  MICIO SENEX: nātūrā tū illī pater ēs, cōnsiliīs ego.
+(127)  DEMEA SENEX: tūn cōnsulis quicquam? āh, sī pergis, abierō.
+(128)  DEMEA SENEX: sīcin agis? an ego totiēns dē eādem rē audiam?
+(129)  DEMEA SENEX: cūraest mihi. et mihi cūraest. vērum, Dēmeā,
+(130)  MICIO SENEX: cūrēmus aequam uterque partem: tū alterum,
+(131)  MICIO SENEX: ego item alterum; nam ambōs cūrāre propemodum
+(132)  MICIO SENEX: reposcere illumst quem dedistī. āh Mīciō!
+(133)  MICIO SENEX: mihi sīc vidētur. quid istīc? sī tibi istūc placet,
+(134)  DEMEA SENEX: profundat perdat pereat; nīl ad mē attinet.
+(135)  DEMEA SENEX: jam sī verbum ūnum posthāc... rūrsum, Dēmeā,
+(136)  MICIO SENEX: īrāscere? an nōn crēdis? repetōn quem dedī?
+(137)  DEMEA SENEX: aegrēst; aliēnus nōn sum; sī obstō... em dēsinō.
+(138)  DEMEA SENEX: ūnum vīs cūrem: cūrō; et est dīs grātia
+(139)  DEMEA SENEX: cum ita ut volō est. iste tuus ipse sentiet
+(140)  DEMEA SENEX: posterius... nōlō in illum gravius dīcere.
+(141x) == Micio ==
+(141)  MICIO SENEX: nec nīl neque omnia haec sunt quae dīcit: tamen
+(142)  MICIO SENEX: nōn nīl molesta haec sunt mihī; sed ostendere
+(143)  MICIO SENEX: mē aegrē patī illī nōluī. nam itast homō:
+(144)  MICIO SENEX: cum plācō, advorsor sēdulō et dēterreō;
+(145)  MICIO SENEX: tamen vix hūmānē patitur; vērum sī augeam
+(146)  MICIO SENEX: aut etiam adjūtor sim ejus īrācundiae,
+(147)  MICIO SENEX: īnsāniam profectō cum illō. etsī Aeschinus
+(148)  MICIO SENEX: nōn nūllam in hāc rē nōbīs facit injūriam.
+(149)  MICIO SENEX: quam hic nōn amāvit meretrīcem? aut cui nōn dedit
+(150)  MICIO SENEX: aliquid? postrēmō nūper (crēdō jam omnium
+(151)  MICIO SENEX: taedēbat) dīxit velle uxōrem dūcere.
+(152)  MICIO SENEX: spērābam jam dēfervisse adulēscentiam:
+(153)  MICIO SENEX: gaudēbam. ecce autem dē integrō! nisi, quidquid est,
+(154)  MICIO SENEX: volo scīre atque hominem convenīre, sī apud forumst.
+(155y) === Akt II ===
+(155x) == Sannio Aeschinus Parmeno (bacchis) ==
+(155)  SANNIO LENO: Obsecrō, populārēs, ferte miserō atque innocentī auxilium,
+(156)  SANNIO LENO: subvenīte inopī. ōtiōsē: nūnciam īlicō hīc cōnsiste.
+(157)  AESCHINUS ADULESCENS: quid respectās? nīl perīclīst: numquam dum ego aderō hic tē tanget.
+(158)  SANNIO LENO: ego istam invītīs omnibus.
+(159)  AESCHINUS ADULESCENS: quamquamst scelestus nōn committet hodiē umquam iterum ut vāpulet.
+(160)  SANNIO LENO: Aeschine, audī nē tē ignārum fuisse dīcās meōrum mōrum:
+(161)  SANNIO LENO: lēnō ego sum. sciō. at ita ut usquam fuit fidē quisquam optimā.
+(162)  SANNIO LENO: tū quod tē posterius pergēs hanc injūriam mī nōlle
+(163)  SANNIO LENO: factam esse, hujus nōn faciam. crēde hoc, ego meum jūs persequar
+(164)  SANNIO LENO: neque tū verbīs solvēs umquam quod mihi rē male fēcerīs.
+(165)  SANNIO LENO: nōvī ego vestra haec: ‘nōllem factum: jūsjūrandum dabitur tē esse
+(166)  SANNIO LENO: indignum injūriā hāc’, indignīs cum egomet sim acceptus modīs.
+(167)  AESCHINUS ADULESCENS: abi prae strēnuē ac fores aperī. cēterum hoc nihilī facis?
+(168)  AESCHINUS ADULESCENS: ī intrō nūnciam. at enim nōn sinam. accēde illūc, Parmenō
+(169)  AESCHINUS ADULESCENS: (nimium istūc abīstī), hīc propter hunc assiste: em sīc volō.
+(170)  AESCHINUS ADULESCENS: cave nūnciam oculōs ā meīs oculīs quōquam dēmoveās tuōs
+(171)  AESCHINUS ADULESCENS: nē mora sit, sī innuerim, quīn pugnus continuō in māla haereat.
+(172)  SANNIO LENO: istūc volō ergō ipsum experīrī. em servā. omitte mulierem.
+(173)  SANNIO LENO: ō facinus indignum! geminābit nisi cavēs. ei, miseriam!
+(174)  AESCHINUS ADULESCENS: nōn innueram; vērum in istam partem potius peccātō tamen.
+(175)  AESCHINUS ADULESCENS: ī nūnciam. quid hoc rēīst? rēgnumne, Aeschine, hīc tū possidēs?
+(176)  AESCHINUS ADULESCENS: sī possidērem, ōrnātus essēs ex tuīs virtūtibus.
+(177)  SANNIO LENO: quid tibi reī mēcumst? nīl. quid? nōstīn quī sim? nōn dēsīderō.
+(178)  SANNIO LENO: tetigīn tuī quicquam? sī attigissēs, ferrēs īnfortūnium.
+(179)  SANNIO LENO: quī tibi magis licet meam habēre prō quā ego argentum dedī?
+(180)  SANNIO LENO: respondē. ante aedīs nōn fēcisse erit melius hīc convīcium;
+(181)  AESCHINUS ADULESCENS: nam sī molestus pergis esse, jam intrō abripiēre atque ibi
+(182)  AESCHINUS ADULESCENS: usque ad necem operiēre lōrīs. lōrīs līber? sīc erit.
+(183)  SANNIO LENO: ō hominem impūrum! hīcin lībertātem ajunt esse aequam omnibus?
+(184)  AESCHINUS ADULESCENS: sī satis jam dēbacchātus ēs, lēnō, audī sī vīs nūnciam.
+(185)  SANNIO LENO: egon dēbacchātus sum autem an tu in mē? mitte ista atque ad rem redī.
+(186)  SANNIO LENO: quam rem? quō redeam? jamne mē vīs dīcere id quod ad tē attinet?
+(187)  SANNIO LENO: cupiō, aequī modo aliquid. vāh lēnō inīqua mē nōn vult loquī.
+(188)  SANNIO LENO: lēnō sum, fateor, perniciēs commūnis adulēscentium,
+(189)  SANNIO LENO: perjūrus, pestis; tamen tibi ā mē nūlla ortast injūria.
+(190)  AESCHINUS ADULESCENS: nam hercle etiam hoc restat. illūc quaesō redi quō coepistī, Aeschine.
+(191)  AESCHINUS ADULESCENS: minīs vīgintī tū illam ēmistī (quae rēs tibi vortat male!):
+(192)  AESCHINUS ADULESCENS: argentī tantum dabitur. quid sī ego tibi illam nōlō vēndere?
+(193)  SANNIO LENO: cōgēs mē? minimē. namque id metuī. neque vēndendam cēnseō
+(194)  AESCHINUS ADULESCENS: quae līberast; nam ego līberālī illam asserō causā manū.
+(195)  AESCHINUS ADULESCENS: nunc vidē utrum vīs, argentum accipere an causam meditārī tuam.
+(196x) == Sannio ==
+(196)  AESCHINUS ADULESCENS: dēlīberā hoc dum ego redeō, lēnō. prō suprēme Juppiter,
+(197)  SANNIO LENO: minimē mīror quī īnsānīre occipiunt ex injūriā.
+(198)  SANNIO LENO: domo mē ēripuit, verberāvit; mē invītō abdūxit meam
+(200)  SANNIO LENO: hominī miserō plūs quīngentōs colaphōs īnfrēgit mihi.
+(199)  SANNIO LENO: ob male facta haec tantidem ēmptam postulat sibi trādier;
+(201)  SANNIO LENO: vērum enim quandō bene prōmeruit, fīat: suum jūs postulat.
+(202)  SANNIO LENO: age, jam cupiō sī modo argentum reddat. sed ego hoc hariolor:
+(203)  SANNIO LENO: ubi mē dīxerō dare tantī, testīs faciet īlicō
+(204)  SANNIO LENO: vēndidisse mē; dē argentō, somnium: ‘mox; crās redī.’
+(205)  SANNIO LENO: id quoque possum ferre sī modo reddat, quamquam injūriumst.
+(206)  SANNIO LENO: vērum cōgitō id quod rēs est: quandō eum quaestum occēperīs,
+(207)  SANNIO LENO: accipienda et mussitanda injūria adulēscentiumst.
+(208)  SANNIO LENO: sed nēmō dabit: frūstrā egomet mēcum hās ratiōnēs putō.
+(209x) == Syrus Sannio ==
+(209)  SYRUS SERVUS: Tacē, egomet conveniam jam ipsum: cupidē accipiat faxō atque etiam
+(210)  SYRUS SERVUS: bene dīcat sēcum esse āctum. quid istūc, Sanniōst quod tē audiō
+(211)  SYRUS SERVUS: nescioquid concertāsse cum erō? numquam vīdī inīquius
+(212)  SANNIO LENO: certātiōnem comparātam quam haec hodiē inter nōs fuit:
+(213)  SANNIO LENO: ego vāpulandō, ille verberandō, usque ambō dēfessī sumus.
+(214)  SYRUS SERVUS: tuā culpā. quid facerem? adulēscentī mōrem gestum oportuit.
+(215)  SANNIO LENO: quī potuī melius qui hodiē usque ōs praebuī? age, scīs quid loquar:
+(216)  SYRUS SERVUS: pecūniam in locō nēglegere maximum interdumst lucrum. hui
+(217)  SYRUS SERVUS: metuistī, sī nunc dē tuō jūre concessissēs paululum atque
+(218)  SYRUS SERVUS: adulēscentī essēs mōrigerātus, hominum homō stultissime,
+(219)  SYRUS SERVUS: nē nōn tibi istūc faenerāret? ego spem pretiō nōn emō.
+(220)  SYRUS SERVUS: numquam rem faciēs: abi, nescīs inescāre hominēs, Sanniō.
+(221)  SANNIO LENO: crēdō istūc melius esse; vērum ego numquam adeō astūtus fuī
+(222)  SANNIO LENO: quīn quidquid possem māllem auferre potius in praesentiā.
+(223)  SYRUS SERVUS: age, nōvī tuum animum: quasi jam usquam tibi sint vīgintī minae
+(224)  SYRUS SERVUS: dum huic ‹nē› obsequāre; praetereā autem tē ajunt proficīscī Cyprum. hem.
+(225)  SYRUS SERVUS: coēmisse hinc quae illūc veherēs multa, nāvem conductam: hōc, sciō,
+(226)  SYRUS SERVUS: animus tibi pendet. ubi illinc, spērō, redieris tamen, hoc agēs.
+(227)  SANNIO LENO: nusquam pedem! periī hercle: hāc illī spē hoc incēpērunt. timet:
+(228)  SYRUS SERVUS: injēcī scrūpulum hominī. ō scelera: illūc vidē
+(229)  SANNIO LENO: ut in ipsō articulō oppressit. ēmptae mulierēs
+(230)  SANNIO LENO: complūrēs et item hinc alia quae portō Cyprum.
+(231)  SANNIO LENO: nisi eō ad mercātum veniō, damnum maximumst.
+(232)  SANNIO LENO: nunc sī hoc omittō– ac tum agam ubi illinc redierō;
+(233)  SANNIO LENO: nīl est; refrīxerit rēs, ‘nunc dēmum venīs?
+(234)  SANNIO LENO: cūr passu's? ubi erās?’ ut sit satius perdere
+(235)  SANNIO LENO: quam aut hīc manēre tam diū aut tum persequī.
+(236)  SYRUS SERVUS: jamne ēnumerāstī quoad tē reditūrum putēs?
+(237)  SANNIO LENO: hoccin illō dignumst? hoccin incipere Aeschinum,
+(238)  SANNIO LENO: per oppressiōnem ut hanc mī ēripere postulet!
+(239)  SYRUS SERVUS: labāscit: ūnum hoc habeō. vide sī satis placet:
+(240)  SYRUS SERVUS: potius quam veniās in perīclum, Sanniō,
+(241)  SYRUS SERVUS: servēsne an perdās tōtum, dīviduum face;
+(242)  SYRUS SERVUS: minās decem corrādet alicunde. ei mihi,
+(243)  SANNIO LENO: etiam dē sorte nunc veniō in dubium miser?
+(244)  SANNIO LENO: pudet nīl? omnīs dentīs labefēcit mihi,
+(245)  SANNIO LENO: praetereā colaphīs tūber est tōtum caput:
+(246)  SANNIO LENO: etiam īnsuper dēfraudet? nusquam abeō. ut libet.
+(247)  SYRUS SERVUS: numquid vīs quīn abeam? immō hercle hoc quaesō, Syre:
+(248)  SANNIO LENO: utut haec sunt ācta, potius quam lītīs sequar,
+(249)  SANNIO LENO: meum mihi reddātur saltem quantī ēmptast, Syre.
+(250)  SANNIO LENO: scio tē nōn ūsum antehāc amīcitiā meā:
+(251)  SANNIO LENO: memorem mē dīcēs esse et grātum. sēdulō
+(252)  SYRUS SERVUS: faciam. sed Ctēsiphōnem videō: laetus est
+(253)  SYRUS SERVUS: dē amīcā. quid quod tē ōrō? paulisper manē.
+(254x) == Ctesipho Sannio Syrus ==
+(254)  CTESIPHO ADULESCENS: Abs quīvīs homine, cum est opus, beneficium accipere gaudeās;
+(255)  CTESIPHO ADULESCENS: vērum enimvērō id dēmum juvat sī quem aequumst facere is bene facit.
+(256)  CTESIPHO ADULESCENS: ō frāter, frāter, quid ego nunc tē laudem? satis certō sciō,
+(257)  CTESIPHO ADULESCENS: numquam ita magnificē quicquam dīcam id virtūs quīn superet tua.
+(258)  CTESIPHO ADULESCENS: itaque ūnam hanc rem mē habēre praeter aliōs praecipuam arbitror,
+(259)  CTESIPHO ADULESCENS: frātrem, hominī nēminī esse prīmārum artium magis prīncipem.
+(260)  SYRUS SERVUS: ō Ctēsiphō. ō Syre, Aeschinus ubist? ellum, tē exspectat domī. hem.
+(261)  SYRUS SERVUS: quid est? quid sit? illius operā, Syre, nunc vīvō. fēstīvum caput;
+(262)  CTESIPHO ADULESCENS: quīn omnia sibi post putārit esse prae meō commodō;
+(263)  CTESIPHO ADULESCENS: maledicta, fāmam, meum labōrem et peccātum in sē trānstulit.
+(264)  CTESIPHO ADULESCENS: nīl pote suprā. quidnam foris crepuit? mane manē: ipse exit forās.
+(265x) == Aeschinus Ctesipho Syrus Sannio ==
+(265)  AESCHINUS ADULESCENS: Ubi est ille sacrilegus? mē quaerit. num quidnam effert? occidī:
+(266)  SANNIO LENO: nīl videō. ehem opportūnē: tē ipsum quaerō: quid fit, Ctēsiphō?
+(267)  AESCHINUS ADULESCENS: in tūtōst omnis rēs: omitte vērō tristitiem tuam.
+(268)  CTESIPHO ADULESCENS: ego illam hercle vērō omittō quiquidem tē habeam frātrem: ō mī Aeschine,
+(269)  CTESIPHO ADULESCENS: ō mī germāne! āh vereor cōram in ōs tē laudāre amplius,
+(270)  CTESIPHO ADULESCENS: nē id assentandī magis quam quō habeam grātum facere exīstimēs.
+(271)  AESCHINUS ADULESCENS: age, inepte, quasi nunc nōn nōrīmus nōs inter nōs, Ctēsiphō.
+(272)  AESCHINUS ADULESCENS: hoc mihi dolet, nōs paene sērō scīsse et paene in eum locum
+(273)  AESCHINUS ADULESCENS: redīsse ut, sī omnēs cuperent, nīl tibi possent auxiliārier.
+(274)  CTESIPHO ADULESCENS: pudēbat. āh stultitiast istaec, nōn pudor. tam ob parvulam
+(275)  AESCHINUS ADULESCENS: rem paene ē patriā! turpe dictū. deōs quaesō ut istaec prohibeant.
+(276)  CTESIPHO ADULESCENS: peccāvī. quid ait tandem nōbīs Sanniō? jam mītis est.
+(277)  AESCHINUS ADULESCENS: ego ad forum ībō ut hunc absolvam; tū intrō ad illam, Ctēsiphō.
+(278)  SANNIO LENO: Syre, īnstā. eāmus; namque hic properat in Cyprum. nē tam quidem
+(279)  SANNIO LENO: quam vīs: etiam maneō ōtiōsus hīc. reddētur; nē timē.
+(280)  SANNIO LENO: at ut omne reddat. omne reddet; tace modo ac sequere hāc. sequor.
+(281)  CTESIPHO ADULESCENS: heus heus Syre. hem quid est? obsecrō hercle tē, hominem istum impūrissimum
+(282)  CTESIPHO ADULESCENS: quam prīmum absolvitōte nē, sī magis irrītātus siet,
+(283)  CTESIPHO ADULESCENS: aliquā ad patrem hoc permānet atque ego tum perpetuō perierim.
+(284)  SYRUS SERVUS: nōn fīet; bonō animō estō; tū cum illā intus tē oblectā interim
+(285)  SYRUS SERVUS: et lectulōs jube sternī nōbīs et parārī cētera.
+(286)  SYRUS SERVUS: ego jam transactā rē convortam mē domum cum obsōniō.
+(287)  CTESIPHO ADULESCENS: ita quaesō. quandō hoc bene successit, hilarē hunc sūmāmus diem.
+(288y) === Akt III ===
+(288x) == Sostrata Canthara ==
+(288)  SOSTRATA MATRONA: Obsecrō, mea nūtrīx, quid nunc fīet? quid fīat, rogās?
+(289)  CANTHARA ANUS: rēctē edepol spērō. modo dolōrēs, mea tū, occipiunt prīmulum:
+(290)  CANTHARA ANUS: jam nunc timēs, quasi numquam affuerīs, numquam tūte pepererīs?
+(291)  SOSTRATA MATRONA: miseram mē, nēminem habeō (sōlae sumus; Geta autem hīc nōn adest)
+(292)  SOSTRATA MATRONA: nec quem ad obstetrīcem mittam, nec quī accersat Aeschinum.
+(293)  CANTHARA ANUS: pol is quidem jam hīc aderit; nam numquam ūnum intermittit diem
+(294)  CANTHARA ANUS: quīn semper veniat. sōlus meārum miseriārumst remedium.
+(295)  CANTHARA ANUS: ē rē nāta melius fierī haud potuit quam factumst, era,
+(296)  CANTHARA ANUS: quandō vitium oblātumst, quod ad illum attinet potissimum,
+(297)  CANTHARA ANUS: tālem, tālī ingeniō atque animō, nātum ex tantā familiā.
+(298)  SOSTRATA MATRONA: ita pol est ut dīcis: salvus nōbīs deōs quaesō ut siet.
+(299x) == Geta Sostrata Canthara ==
+(299)  GETA SERVOS: Nunc illud est cum, sī omnia omnēs sua cōnsilia cōnferant
+(300)  GETA SERVOS: atque huic malō salūtem quaerant, auxilī nīl afferant,
+(301)  GETA SERVOS: quod mihique eraeque fīliaeque erīlīst. vae miserō mihi!
+(302)  GETA SERVOS: tot rēs repente circumvāllant sē unde ēmergī nōn potest:
+(303)  GETA SERVOS: vīs egestās injūstitia sōlitūdō īnfāmia.
+(304)  GETA SERVOS: hoccin saeclum! ō scelera, ō genera sacrilega, ō hominem impium!
+(305)  SOSTRATA MATRONA: mē miseram, quidnamst quod sīc videō timidum et properantem Getam?
+(306)  GETA SERVOS: quem neque fidēs neque jūsjūrandum neque illum misericordia
+(307)  GETA SERVOS: repressit neque reflexit neque quod partus instābat prope
+(308)  GETA SERVOS: cui miserae indignē per vim vitium obtulerat. nōn intellegō
+(309)  SOSTRATA MATRONA: satis quae loquātur. propius obsecrō accēdāmus, Sostrata. āh
+(310)  GETA SERVOS: mē miserum, vix sum compos animī, ita ārdeō īrācundiā.
+(311)  GETA SERVOS: nīl est quod mālim quam illam tōtam familiam dari mī obviam,
+(312)  GETA SERVOS: ut ego īram hanc in eōs ēvomam omnem, dum aegritūdō haec est recēns.
+(313)  GETA SERVOS: satis mihi id habeam supplicī dum illōs ulcīscar meō modo.
+(314)  GETA SERVOS: senī animam prīmum exstinguerem ipsī quī illud prōdūxit scelus;
+(315)  GETA SERVOS: tum autem Syrum impulsōrem, vāh, quibus illum lacerārem modīs!
+(316)  GETA SERVOS: sublīmem medium prīmum arriperem et capite in terrā statuerem,
+(317)  GETA SERVOS: ut cerebrō dispergat viam;
+(318)  GETA SERVOS: adulēscentī ipsī ēriperem oculōs, post haec praecipitem darem;
+(319)  GETA SERVOS: cēterōs, ruerem agerem raperem tunderem et prōsternerem.
+(320)  GETA SERVOS: sed cessō eram hōc malō impertīrī properē? revocēmus: Geta. hem
+(321)  GETA SERVOS: quisquis ēs sine mē. ego sum Sostrata. ubi east? tē ipsam quaeritō.
+(322)  SOSTRATA MATRONA: tē exspectō; oppidō opportūnē tē obtulistī mī obviam.
+(323)  GETA SERVOS: era... quid est? quid trepidās? ei mihi! quid festīnās, mī Geta?
+(324)  CANTHARA ANUS: animam recipe. prōrsus... quid istūc ‘prōrsus’ ergōst? periimus;
+(325)  GETA SERVOS: āctumst. ēloquere obsecrō tē quid sit. jam... quid ‘jam,’ Geta?
+(326)  GETA SERVOS: Aeschinus... quid is ergō? aliēnus est ab nostrā familiā. hem
+(327)  SOSTRATA MATRONA: periī. quārē? amārē occēpit aliam. vae miserae mihi!
+(328)  GETA SERVOS: neque id occultē fert, ab lēnōne ipsus ēripuit palam.
+(329)  SOSTRATA MATRONA: satin hoc certumst? certum; hīsce oculīs egomet vīdī, Sostrata. āh
+(330)  SOSTRATA MATRONA: mē miseram! quid jam crēdās aut cui crēdās? nostrumne Aeschinum,
+(331)  SOSTRATA MATRONA: nostram vītam omnium, in quō nostrae spēs opēsque omnēs sitae
+(332)  SOSTRATA MATRONA: erant? quī sine hāc jūrābat sē ūnum numquam vīctūrum diem?
+(333)  SOSTRATA MATRONA: quī sē in suī gremiō positūrum puerum dīcēbat patris,
+(334)  SOSTRATA MATRONA: ita obsecrātūrum ut licēret hanc sibi uxōrem dūcere?
+(335)  GETA SERVOS: era, lacrimās mitte ac potius quod ad hanc rem opus est porrō prōspice:
+(336)  GETA SERVOS: patiāmurne an nārrēmus cuipiam? au au, mi homo, sānun ēs?
+(337)  CANTHARA ANUS: an hoc prōferendum tibi vidētur usquam? miquidem nōn placet.
+(338)  GETA SERVOS: jam prīmum illum aliēnō animō ā nōbīs esse rēs ipsa indicat.
+(339)  GETA SERVOS: nunc sī hoc palam prōferimus ille īnfitiās ībit, sat sciō:
+(340)  GETA SERVOS: tua fāma et gnātae vīta in dubium veniet. tum sī maximē
+(341)  GETA SERVOS: fateātur, cum amat aliam, nōn est ūtile hanc illī darī.
+(342)  GETA SERVOS: quāpropter quōquō pactō tacitōst opus. āh minimē gentium:
+(343)  SOSTRATA MATRONA: nōn faciam. quid agēs? prōferam. hem, mea Sostratā, vide quam rem agis.
+(344)  SOSTRATA MATRONA: pejōre rēs locō nōn potis est esse quam in quō nunc sitast.
+(345)  SOSTRATA MATRONA: prīmum indōtātast; tum praetereā, quae secunda eī dōs erat,
+(346)  SOSTRATA MATRONA: periit: prō virginī dari nūptum nōn potest. hoc relicuumst:
+(347)  SOSTRATA MATRONA: sī īnfitiās ībit, testis mēcum est ānulus quem mīserat.
+(348)  SOSTRATA MATRONA: postrēmō, quandō ego cōnscia mihi sum ā mē culpam esse hanc procul
+(349)  SOSTRATA MATRONA: neque pretium neque rem ūllam intercessisse illa aut mē indignam, Geta,
+(350)  SOSTRATA MATRONA: experiar. quid istīc? cēdō ut melius dīcās. tū, quantum potest,
+(351)  SOSTRATA MATRONA: abī atque Hēgiōnī cognātō hujus rem ēnārrātō omnem ōrdine;
+(352)  SOSTRATA MATRONA: nam is nostrō Sīmulō fuit summus et nōs coluit maximē.
+(353)  GETA SERVOS: nam hercle alius nēmō respiciet nōs. properā tū, mea Canthara,
+(354)  SOSTRATA MATRONA: curre, obstetrīcem accerse, ut cum opus sit nē in morā nōbīs siet.
+(355x) == Demea Syrus Dromo ==
+(355)  DEMEA SENEX: Disperiī! Ctēsiphōnem audīvī fīlium
+(356)  DEMEA SENEX: ūnā fuisse in raptiōne cum Aeschinō.
+(357)  DEMEA SENEX: id miserō restat mihi malī sī illum potest,
+(358)  DEMEA SENEX: quī alicui reīst, etiam eum ad nēquitiem addūcere.
+(359)  DEMEA SENEX: ubi ego illum quaeram? crēdō abductum in gāneum
+(360)  DEMEA SENEX: aliquō: persuāsit ille impūrus, sat sciō.
+(361)  DEMEA SENEX: sed eccum Syrum īre videō: hinc scībō jam ubi siet.
+(362)  DEMEA SENEX: atque hercle hic dē grege illōst: sī mē sēnserit
+(363)  DEMEA SENEX: eum quaeritāre, numquam dīcet carnufex.
+(364)  DEMEA SENEX: nōn ostendam id mē velle. omnem rem modo senī
+(365)  SYRUS SERVUS: quō pactō habēret ēnārrāmus ōrdine:
+(366)  SYRUS SERVUS: nīl quicquam vīdī laetius. prō Juppiter,
+(367)  DEMEA SENEX: hominis stultitiam! collaudāvit fīlium;
+(368)  SYRUS SERVUS: mihi, quī id dedissem cōnsilium, ēgit grātiās.
+(369)  DEMEA SENEX: dirrumpor! argentum annumerāvit īlicō;
+(370)  SYRUS SERVUS: dedit praetereā in sūmptum dīmidium minae;
+(371)  SYRUS SERVUS: id distribūtum sānē est ex sententiā. em
+(372)  DEMEA SENEX: huic mandēs sīquid rēctē cūrātum velīs!
+(373)  SYRUS SERVUS: ehem Dēmeā, haud aspexeram tē. quid agitur?
+(374)  DEMEA SENEX: quid agātur? vestram nequeō mīrārī satis
+(375)  DEMEA SENEX: ratiōnem. est hercle inepta, nē dīcam dolō, atque
+(376)  SYRUS SERVUS: absurda. piscīs cēterōs pūrgā, Dromō;
+(377)  SYRUS SERVUS: gongrum istum maximum in aquā sinitō lūdere
+(378)  SYRUS SERVUS: tantisper: ubi ego vēnerō, exossābitur;
+(379)  SYRUS SERVUS: prius nōlō. haecin flāgitia! miquidem nōn placent
+(380)  SYRUS SERVUS: et clāmō saepe. salsāmenta haec, Stephaniō,
+(381)  SYRUS SERVUS: fac mācerentur pulchrē. dī vestram fidem,
+(382)  DEMEA SENEX: utrum studiōne id sibi habet an laudī putat
+(383)  DEMEA SENEX: fore sī perdiderit gnātum? vae miserō mihi!
+(384)  DEMEA SENEX: vidēre videor jam diem illum cum hinc egēns
+(385)  DEMEA SENEX: profugiet aliquō mīlitātum. ō Dēmeā,
+(386)  SYRUS SERVUS: istūc est sapere, nōn quod ante pedēs modost
+(387)  SYRUS SERVUS: vidēre sed etiam illa quae futūra sunt
+(388)  SYRUS SERVUS: prōspicere. quid? istaec jam penes vōs psaltriast?
+(389)  SYRUS SERVUS: ellam intus. eho an domīst habitūrus? crēdō, ut est
+(390)  SYRUS SERVUS: dēmentia. haecin fierī! inepta lēnitās
+(391)  SYRUS SERVUS: patris et facultās prāva. frātris mē quidem
+(392)  DEMEA SENEX: pudet pigetque. nimium inter vōs, Dēmea, ac
+(393)  SYRUS SERVUS: (nōn quia adēs praesēns dīcō hoc) pernimium interest.
+(394)  SYRUS SERVUS: tū quantus quantu's nīl nisī sapientia ēs,
+(395)  SYRUS SERVUS: ille somnium. sinerēs vērō illum tū tuum
+(396)  SYRUS SERVUS: facere haec? sinerem illum? aut nōn sex tōtīs mēnsibus
+(397)  DEMEA SENEX: prius olfēcissem quam ille quicquam coeperet?
+(398)  SYRUS SERVUS: vigilantiam tuam tū mihi nārrās? sīc siet
+(399)  DEMEA SENEX: modo ut nunc est quaesō. ut quisque suum vult esse itast.
+(400)  DEMEA SENEX: quid eum? vīdistīn hodiē? tuumne fīlium?
+(401)  SYRUS SERVUS: (abigam hunc rūs.) jamdūdum aliquid rūrī agere arbitror.
+(402)  DEMEA SENEX: satin scīs ibi esse? ōh quī egomet prōdūxī. optimēst:
+(403)  DEMEA SENEX: metuī nē haerēret hīc. atque īrātum admodum.
+(404)  DEMEA SENEX: quid autem? adortust jūrgiō frātrem apud forum
+(405)  SYRUS SERVUS: dē psaltriā istāc. ain vērō? āh nīl reticuit.
+(406)  SYRUS SERVUS: nam ut numerābātur forte argentum, intervenit
+(407)  SYRUS SERVUS: homo dē imprōvīsō: coepit clāmāre ‘Ō Aeschine,
+(408)  SYRUS SERVUS: haecin flāgitia facere tē! haec tē admittere
+(409)  SYRUS SERVUS: indigna genere nostrō!’ ōh lacrimō gaudiō!
+(410)  SYRUS SERVUS: ‘nōn tū hoc argentum perdis sed vītam tuam.’
+(411)  DEMEA SENEX: salvus sit! spērō, est similis majōrum suum. hui!
+(412)  DEMEA SENEX: Syre, praeceptōrum plēnust istōrum ille. phȳ!
+(413)  SYRUS SERVUS: domī habuit unde disceret. fit sēdulō:
+(414)  DEMEA SENEX: nīl praetermittō; cōnsuēfaciō; dēnique
+(415)  DEMEA SENEX: īnspicere, tamquam in speculum, in vītās omnium
+(416)  DEMEA SENEX: jubeō atque ex aliīs sūmere exemplum sibi:
+(417)  DEMEA SENEX: ‘hoc facitō.’ rēctē sānē. ‘hoc fugitō.’ callidē.
+(418)  DEMEA SENEX: ‘hoc laudīst.’ istaec rēs est. ‘hōc vitiō datur.’
+(419)  SYRUS SERVUS: probissimē. porrō autem... nōn hercle ōtiumst
+(420)  SYRUS SERVUS: nunc mī auscultandī. piscīs ex sententiā
+(421)  SYRUS SERVUS: nactus sum: hī mihi nē corrumpantur cautiōst.
+(422)  SYRUS SERVUS: nam id nōbīs tam flāgitiumst quam illa, Dēmeā,
+(423)  SYRUS SERVUS: nōn facere vōbīs quae modo dīxtī; et quod queō
+(424)  SYRUS SERVUS: cōnservīs ad eundem istunc praecipiō modum:
+(425)  SYRUS SERVUS: ‘hoc salsumst, hoc adustumst, hoc lautumst parum;
+(426)  SYRUS SERVUS: illud rēctē: iterum sīc mementō.’ sēdulō
+(427)  SYRUS SERVUS: moneō quae possum prō meā sapientiā:
+(428)  SYRUS SERVUS: postrēmō, tamquam in speculum, in patinās, Dēmeā,
+(429)  SYRUS SERVUS: īnspicere jubeō et moneō quid factō ūsus sit.
+(430)  SYRUS SERVUS: inepta haec esse nōs quae facimus sentiō;
+(431)  SYRUS SERVUS: vērum quid faciās? ut homōst ita mōrem gerās.
+(432)  SYRUS SERVUS: numquid vīs? mentem vōbīs meliōrem darī.
+(433)  SYRUS SERVUS: tū rūs hinc ībis? rēctā. nam quid tū hīc agās,
+(434)  SYRUS SERVUS: ubi sīquid bene praecipiās nēmō obtemperat?
+(435x) == Demea ==
+(435)  DEMEA SENEX: ego vērō hinc abeō, quandō is quam ob rem hūc vēneram
+(436)  DEMEA SENEX: rūs abiit: illum cūrō ūnum, ille ad mē attinet:
+(437)  DEMEA SENEX: quandō ita vult frāter, dē istōc ipse vīderit.
+(438)  DEMEA SENEX: sed quis illic est procul quem videō? estne Hēgiō
+(439)  DEMEA SENEX: tribūlis noster? sī satis cernō is herclest. vaha
+(440)  DEMEA SENEX: homō amīcus nōbīs jam inde ā puerō (ō dī bonī,
+(441)  DEMEA SENEX: nē illius modī jam magna nōbīs cīvium
+(442)  DEMEA SENEX: paenūriast), homō antīquā virtūte ac fidē!
+(443)  DEMEA SENEX: haud cito malī quid ortum ex hōc sit pūblicē.
+(444)  DEMEA SENEX: quam gaudeō! ubi etiam hujus generis reliquiās
+(445)  DEMEA SENEX: restāre videō, āh vīvere etiam nunc libet.
+(446)  DEMEA SENEX: opperiar hominem hīc ut salūtem et colloquar.
+(447x) == Hegio Demea Geta (pamphila) ==
+(447)  HEGIO SENEX: Prō dī immortālēs, facinus indignum, Geta!
+(448)  HEGIO SENEX: quid nārrās! sīc est factum. ex illān familiā
+(449)  HEGIO SENEX: tam illīberāle facinus esse ortum! Ō Aeschine, Aeschine,
+(450)  HEGIO SENEX: pol haud paternum istūc dedistī. videlicet
+(451)  DEMEA SENEX: dē psaltriā hāc audīvit: id illī nunc dolet
+(452)  DEMEA SENEX: aliēnō, pater is nihilī pendit. ei mihi!
+(453)  DEMEA SENEX: utinam hīc prope adesset alicubi atque audīret haec!
+(454)  HEGIO SENEX: nisi facient quae illōs aequumst, haud sīc auferent.
+(455)  GETA SERVOS: in tē spēs omnis, Hēgiō, nōbīs sitast:
+(456)  GETA SERVOS: tē sōlum habēmus, tū ēs patrōnus, tū pater:
+(457)  GETA SERVOS: ille tibi moriēns nōs commendāvit senex:
+(458)  GETA SERVOS: sī dēseris tū periimus. cave dīxerīs:
+(459)  HEGIO SENEX: neque faciam neque mē satis piē posse arbitror.
+(460)  DEMEA SENEX: adībō. salvēre Hēgiōnem plūrimum
+(461)  DEMEA SENEX: jubeō. ōh tē quaerēbam ipsum: salvē, Dēmeā.
+(462)  DEMEA SENEX: quid autem? major fīlius tuus Aeschinus,
+(463)  HEGIO SENEX: quem frātrī adoptandum dedistī, neque bonī
+(464)  HEGIO SENEX: neque līberālis fūnctus officiumst virī.
+(465)  DEMEA SENEX: quid istūc est? nostrum amīcum nōrās Sīmulum atque
+(466)  HEGIO SENEX: aequālem. quidnī? fīliam ejus virginem
+(467)  HEGIO SENEX: vitiāvit. hem. mane: nōndum audīstī, Dēmeā,
+(468)  HEGIO SENEX: quod est gravissimum. an quid est etiam amplius?
+(469)  HEGIO SENEX: vērō amplius; nam hoc quidem ferendum aliquō modōst:
+(470)  HEGIO SENEX: persuāsit nox amor vīnum adulēscentia:
+(471)  HEGIO SENEX: hūmānumst. ubi scit factum, ad mātrem virginis
+(472)  HEGIO SENEX: venit ipsus ultrō lacrimāns ōrāns obsecrāns
+(473)  HEGIO SENEX: fidem dāns, jūrāns sē illam ductūrum domum.
+(474)  HEGIO SENEX: ignōtumst tacitumst crēditumst. virgō ex eō
+(475)  HEGIO SENEX: compressū gravida factast (mēnsis decimus est);
+(476)  HEGIO SENEX: ille bonus vir nōbīs psaltriam, sī dīs placet,
+(477)  HEGIO SENEX: parāvit quīcum vīvat, illam dēserit.
+(478)  DEMEA SENEX: prō certō tu istaec dīcis? māter virginis
+(479)  HEGIO SENEX: in mediōst, ipsa virgō, rēs ipsa, hīc Geta
+(480)  HEGIO SENEX: praetereā, ut captust servulōrum, nōn malus
+(481)  HEGIO SENEX: neque iners: alit illās, sōlus omnem familiam
+(482)  HEGIO SENEX: sustentat: hunc abdūce vincī, quaere rem.
+(483)  GETA SERVOS: immō hercle extorquē, nisi ita factumst, Dēmeā.
+(484)  GETA SERVOS: postrēmō nōn negābit: cōram ipsum cedo.
+(485)  DEMEA SENEX: pudet: nec quid agam nec quid huic respondeam
+(486)  DEMEA SENEX: sciō. miseram mē, differor dolōribus!
+(487)  PARMENO SERVUS: Jūnō Lūcīna, fer opem! servā mē obsecrō! hem
+(488)  HEGIO SENEX: numnam illa quaesō parturit? certē, Hēgio. hem,
+(489)  HEGIO SENEX: illaec fidem nunc vestram implōrat, Dēmeā:
+(490)  HEGIO SENEX: quod vōs vīs cōgit id voluntāte impetret.
+(491)  HEGIO SENEX: haec prīmum ut fīant deōs quaesō ut vōbīs decet.
+(492)  HEGIO SENEX: sīn aliter animus vester est, ego, Dēmeā,
+(493)  HEGIO SENEX: summā vī dēfendam hanc atque illum mortuum.
+(494)  HEGIO SENEX: cognātus mihi erat: ūnā ā puerīs parvulīs
+(495)  HEGIO SENEX: sumus ēductī; ūnā semper mīlitiae et domī
+(496)  HEGIO SENEX: fuimus; paupertātem ūnā pertulimus gravem.
+(497)  HEGIO SENEX: quāpropter nītar faciam experiar, dēnique
+(498)  HEGIO SENEX: animam relinquam potius quam illās dēseram.
+(499)  HEGIO SENEX: quid mihi respondēs? frātrem conveniam, Hēgiō;
+(499a)  DEMEA SENEX: is quod mī dē hāc rē dederit cōnsilium id sequar.
+(500)  HEGIO SENEX: sed, Dēmea, hoc tū facitō cum animō cōgitēs:
+(501)  HEGIO SENEX: quam vōs facillimē agitis, quam estis maximē
+(502)  HEGIO SENEX: potentēs dītēs fortūnātī nōbilēs,
+(503)  HEGIO SENEX: tam maximē vōs aequō animō aequa nōscere
+(504)  HEGIO SENEX: oportet, sī vōs vultis perhibērī probōs.
+(505)  DEMEA SENEX: redītō: fīent quae fierī aequumst omnia.
+(506)  HEGIO SENEX: decet tē facere. Geta, dūc mē intrō ad Sostratam.
+(507)  DEMEA SENEX: nōn mē indīcente haec fīunt: utinam hīc sit modo
+(508)  DEMEA SENEX: dēfūnctum! vērum nimia illaec licentia
+(509)  DEMEA SENEX: profectō ēvādet in aliquod magnum malum.
+(510)  DEMEA SENEX: ībō ac requīram frātrem ut in eum haec ēvomam.
+(511x) == Hegio ==
+(511)  HEGIO SENEX: Bonō animō fac sīs, Sostrata, et istam quod potēs
+(512)  HEGIO SENEX: fac cōnsōlēre. ego Mīciōnem, sī apud forumst,
+(513)  HEGIO SENEX: conveniam atque ut rēs gestast nārrābō ōrdine:
+(514)  HEGIO SENEX: sī ‹is› est factūrus ut sit officium suum,
+(515)  HEGIO SENEX: faciat; sīn aliter dē hāc rēst ejus sententia,
+(516)  HEGIO SENEX: respondeat mī, ut quid agam quam prīmum sciam.
+(517y) === Akt IV ===
+(517x) == Ctesipho Syrus ==
+(517)  CTESIPHO ADULESCENS: Ain patrem hinc abīsse rūs? jamdūdum. dīc sōdēs. apud vīllamst:
+(518)  SYRUS SERVUS: nunc cum maximē operis aliquid facere crēdō. utinam quidem!
+(519)  CTESIPHO ADULESCENS: quod cum salūte ejus fīat, ita sē dēfetīgārit velim
+(520)  CTESIPHO ADULESCENS: ut trīduō hōc perpetuō prōrsum ē lectō nequeat surgere.
+(521)  SYRUS SERVUS: ita fīat, et istōc sīquī potis est rēctius. ita; nam hunc diem
+(522)  CTESIPHO ADULESCENS: miserē nimis cupiō, ut coepī, perpetuum in laetitiā dēgere.
+(523)  CTESIPHO ADULESCENS: et illud rūs nūllā aliā causā tam male ōdī nisi quia propest:
+(524)  CTESIPHO ADULESCENS: quod sī abesset longius,
+(525)  CTESIPHO ADULESCENS: prius nox oppressisset illī quam hūc revortī posset iterum.
+(526)  CTESIPHO ADULESCENS: nunc ubi mē illīc nōn vidēbit, jam hūc recurret, sat sciō:
+(527)  CTESIPHO ADULESCENS: rogitābit me ubi fuerim: ‘quem ego hodiē tōtō nōn vīdī die.’
+(528)  CTESIPHO ADULESCENS: quid dīcam? nīlne in mentemst? nusquam quicquam. tantō nēquior.
+(529)  SYRUS SERVUS: cliēns amīcus hospes nēmōst vōbīs? sunt: quid posteā?
+(530)  SYRUS SERVUS: hīsce opera ut data sit? quae nōn data sit? nōn potest fierī. potest.
+(531)  CTESIPHO ADULESCENS: interdiūs; sed sī hīc pernoctō, causae quid dīcam, Syre?
+(532)  SYRUS SERVUS: vāh quam vellem etiam noctū amīcīs operam mōs esset darī!
+(533)  SYRUS SERVUS: quīn tū ōtiōsus estō: ego illius sēnsum pulchrē calleō.
+(534)  SYRUS SERVUS: cum fervit maximē, tam placidum quam ovem reddō. quōmodō?
+(535)  SYRUS SERVUS: laudārier tē audit libenter: faciō tē apud illum deum;
+(536)  SYRUS SERVUS: virtūtēs nārrō. meās? tuās: hominī īlicō lacrimae cadunt
+(537)  SYRUS SERVUS: quasi puerō gaudiō. em tibi autem! quidnamst? lupus in fābulā.
+(538)  CTESIPHO ADULESCENS: patēr est? ipsust. Syre, quid agimus? fuge modo intrō; ego vīderō.
+(539)  CTESIPHO ADULESCENS: sīquid rogābit, nusquam tū mē: audīstīn? potin ut dēsinās?
+(540x) == Demea Ctesipho Syrus ==
+(540)  DEMEA SENEX: Nē ego homō sum īnfēlīx: prīmum frātrem nusquam inveniō gentium;
+(541)  DEMEA SENEX: praetereā autem, dum illum quaerō, ā villā mercennārium
+(542)  DEMEA SENEX: vīdī: is fīlium negat esse rūre. nec quid agam sciō.
+(543)  CTESIPHO ADULESCENS: Syre. quid est? mēn quaerit? vērum. periī. quīn tū animō bonō ēs.
+(544)  DEMEA SENEX: quid hoc, malum, īnfēlīcitātis? nequeō satis dēcernere;
+(545)  DEMEA SENEX: nisi mē crēdō huic esse nātum reī, ferendīs miseriīs.
+(546)  DEMEA SENEX: prīmus sentiō mala nostra, prīmus rescīscō omnia,
+(547)  DEMEA SENEX: prīmus porrō obnūntiō, aegrē sōlus sīquid fit ferō.
+(548)  SYRUS SERVUS: rīdeō hunc: prīmum ait sē scīre: is sōlus nescit omnia.
+(549)  DEMEA SENEX: nunc redeō, sī forte frāter redierit vīsō. Syre,
+(550)  CTESIPHO ADULESCENS: obsecrō vide nē ille hūc prōrsus sē irruāt. etiam tacēs?
+(551)  SYRUS SERVUS: ego cavēbō. numquam hercle ego hodiē istūc committam tibi;
+(552)  CTESIPHO ADULESCENS: nam mē jam in cellam aliquam cum illā conclūdam: id tūtissimumst.
+(553)  SYRUS SERVUS: age, tamen ego hunc āmovēbō. sed eccum scelerātum Syrum.
+(554)  SYRUS SERVUS: nōn hercle hīc quidem dūrāre quisquam, sī sīc fit, potest.
+(555)  SYRUS SERVUS: scīre equidem volo quot mihī sint dominī: quae haec est miseria?
+(556)  DEMEA SENEX: quid ille gannit? quid vult? quid aīs, bone vir? est frāter domī?
+(557)  SYRUS SERVUS: quid, malum, ‘bone vir’ mihi nārrās? equidem periī. quid tibīst?
+(558)  SYRUS SERVUS: rogitās? Ctēsiphō mē pugnīs miserum et istam psaltriam
+(559)  SYRUS SERVUS: usque occīdit. hem quid narrās? em vidē ut discīdit labrum.
+(560)  DEMEA SENEX: quam ob rem? mē impulsōre hanc ēmptam esse ait. nōn tū eum rūs hinc modo
+(561)  DEMEA SENEX: prōduxe aibās? factum; vērum vēnit post īnsāniēns:
+(562)  SYRUS SERVUS: nīl pepercit. nōn puduisse verberāre hominem senem!
+(563)  SYRUS SERVUS: quem ego modō puerum tantillum in manibus gestāvī meīs.
+(564)  DEMEA SENEX: laudō: Ctēsiphō, patrissās: abi, virum tē jūdicō.
+(565)  SYRUS SERVUS: laudās? nē ille continēbit posthāc, sī sapiet, manūs.
+(566)  DEMEA SENEX: fortiter! perquam, quia miseram mulierem et mē servulum,
+(567)  SYRUS SERVUS: quī referīre nōn audēbam, vīcit: hui perfortiter.
+(568)  DEMEA SENEX: nōn potuit melius. idem quod ego sentit: tē esse huic reī caput.
+(569)  DEMEA SENEX: sed estne frāter intus? nōn est. ubi illum inveniam cōgitō.
+(570)  SYRUS SERVUS: sciō ubi sit, vērum hodiē numquam mōnstrābō. hem quid aīs? ita.
+(571)  DEMEA SENEX: dīminuētur tibi quidem jam cerebrum. at nōmen nesciō
+(572)  SYRUS SERVUS: illius hominis, sed locum nōvī ubi sit. dīc ergō locum.
+(573)  SYRUS SERVUS: nōstīn porticum apud macellum hāc deorsum? quidnī nōverim?
+(574)  SYRUS SERVUS: praeterītō hanc rēctā plateā sūrsum: ubi eō vēneris,
+(575)  SYRUS SERVUS: clīvus deorsum vorsumst: hāc tē praecipitātō. posteā
+(576)  SYRUS SERVUS: est ad hanc manum sacellum: ibi angiportum propter est.
+(577)  DEMEA SENEX: quodnam? illī ubi etiam caprifīcus magnast. nōvī. hāc pergitō.
+(578)  DEMEA SENEX: id quidem angiportum nōn est pervium. vērum hercle. vāh
+(579)  SYRUS SERVUS: cēnsēn hominem mē esse? errāvī: in porticum rūrsum redī:
+(580)  SYRUS SERVUS: sānē hāc multō propius ībis et minor est errātiō.
+(581)  SYRUS SERVUS: scīn Cratīnī hujus dītis aedīs? scio. ubi eās praeterieris,
+(582)  SYRUS SERVUS: ad sinistram hāc rēctā plateā, ubi ad Diānae vēneris,
+(583)  SYRUS SERVUS: ītō ad dextram; prius quam ad portam veniās, apud ipsum lacum
+(584)  SYRUS SERVUS: est pistrilla et exadvorsum fabrica: ibīst. quid ibī facit?
+(585)  SYRUS SERVUS: lectulōs, in sōle, īlignīs pedibus faciendōs dedit.
+(586)  DEMEA SENEX: ubi pōtētis vōs: bene sānē. sed cessō ad eum pergere?
+(587)  SYRUS SERVUS: ī sānē: ego tē exercēbō hodiē, ut dignus ēs, silicernium.
+(588)  SYRUS SERVUS: Aeschinus odiōsē cessat: prandium corrumpitur;
+(589)  SYRUS SERVUS: Ctēsiphō autem in amōrest tōtus. ego jam prōspiciam mihi:
+(590)  SYRUS SERVUS: nam jam abībō atque ūnum quicquid, quod quidem erit bellissimum,
+(591)  SYRUS SERVUS: carpam et cyathōs sorbilāns paulātim hunc prōdūcam diem.
+(592x) == Micio Hegio ==
+(592)  MICIO SENEX: Ego in hāc rē nīl reperiō quam ob rem lauder tantō opere, Hēgiō:
+(593)  MICIO SENEX: meum officium faciō, quod peccātum ā nōbīs ortumst corrigō.
+(594)  MICIO SENEX: nisi sī mē in illō crēdidistī esse hominum numerō quī ita putant,
+(595)  MICIO SENEX: sibi fierī injūriam ultrō sī quam fēcēre ipsī expostulēs,
+(596)  MICIO SENEX: et ultrō accūsant. id quia nōn est ā mē factum agis grātiās?
+(597)  HEGIO SENEX: āh minimē: numquam tē aliter atque ēs in animum indūxī meum.
+(598)  HEGIO SENEX: sed quaesō ut ūnā mēcum ad mātrem virginis eās, Mīciō,
+(599)  HEGIO SENEX: atque istaec eadem quae mihi dīxtī tūte dīcās mulierī:
+(600)  HEGIO SENEX: suspīciōnem hanc propter frātrem ejus esse et illam psaltriam.
+(601)  MICIO SENEX: sī ita aequum cēnsēs aut sī ita opus est factō, eāmus. bene facis:
+(602)  HEGIO SENEX: nam et illī animum jam rellevābis, quae dolōre ac miseriā
+(603)  HEGIO SENEX: tābēscit, et tuō officiō fueris fūnctus. sed sī aliter putās,
+(604)  HEGIO SENEX: egomet nārrābō quae mihi dīxistī. immō ego ībō. bene facis.
+(605)  HEGIO SENEX: omnēs, quibus rēs sunt minus secundae, magis sunt nescioquō modō
+(606)  HEGIO SENEX: suspīciōsī; ad contumēliam omnia accipiunt magis;
+(607)  HEGIO SENEX: propter suam impotentiam sē semper crēdunt claudier.
+(608)  HEGIO SENEX: quāpropter tē ipsum pūrgāre ipsī cōram plācābilius est.
+(609)  MICIO SENEX: et rēctē et vērum dīcis. sequere mē ergō hāc intrō. maximē.
+(610x) == Aeschinus ==
+(610)  AESCHINUS ADULESCENS: Discruciōr animī:
+(610a)  AESCHINUS ADULESCENS: hoccin dē imprōvīsō malī mihi obici tantum
+(611)  AESCHINUS ADULESCENS: ut neque quid mē faciam
+(611a)  AESCHINUS ADULESCENS: nec quid agam certum siet!
+(612)  AESCHINUS ADULESCENS: membra metū dēbilia sunt;
+(612a)  AESCHINUS ADULESCENS: animus timōre obstipuit;
+(613)  AESCHINUS ADULESCENS: pectore cōnsistere nīl cōnsilī quit. vāh!
+(614)  AESCHINUS ADULESCENS: quō modō mē ex hāc expediam turbā?
+(614a)  AESCHINUS ADULESCENS: tanta nunc suspīciō dē
+(615)  AESCHINUS ADULESCENS: mē incidit neque ea immeritō:
+(615a)  AESCHINUS ADULESCENS: Sostrata crēdit mihi mē
+(616)  AESCHINUS ADULESCENS: psaltriam hanc ēmisse; id anus
+(617)  AESCHINUS ADULESCENS: mī indicium fēcit.
+(618)  AESCHINUS ADULESCENS: nam ut hinc forte ad obstetrīcem erat missa, ubi vīdī, īlicō
+(619)  AESCHINUS ADULESCENS: accēdō, rogitō Pamphilā quid agat, jam partus assiet,
+(620)  AESCHINUS ADULESCENS: eōn obstetrīcem accersat. illa exclāmat ‘abī abī jam, Aeschine,
+(621)  AESCHINUS ADULESCENS: satis diū dedistī verba, sat adhūc tua nōs frūstrātast fidēs.’
+(622)  AESCHINUS ADULESCENS: ‘hem quid istūc obsecrō’ inquam ‘est?’ ‘valeās, habeās illam quae placet.’
+(623)  AESCHINUS ADULESCENS: sēnsī īlicō id illās suspicārī, sed mē reprehendī tamen
+(624)  AESCHINUS ADULESCENS: nēquid dē frātre garrulae illī dīcerem ac fieret palam.
+(625)  AESCHINUS ADULESCENS: nunc quid faciam? dīcam frātris esse hanc? quod minimēst opus
+(626)  AESCHINUS ADULESCENS: usquam efferrī. ac mittō: fierī potis est ut nequa exeat:
+(627)  AESCHINUS ADULESCENS: ipsum id metuō ut crēdant. tot concurrunt vērī similia:
+(628)  AESCHINUS ADULESCENS: egomet rapuī ipse, egomet solvī argentum, ad mē abductast domum.
+(629)  AESCHINUS ADULESCENS: haec adeō meā culpā fateor fierī: nōn mē hanc rem patrī,
+(630)  AESCHINUS ADULESCENS: utut erat gesta, indicāsse. exōrāssem ut eam dūcerem.
+(631)  AESCHINUS ADULESCENS: cessātum usque adhūc est: jam porrō, Aeschine, expergīscere!
+(632)  AESCHINUS ADULESCENS: nunc hoc prīmumst: ad illās ībō ut pūrgem mē; accēdam ad forēs.
+(633)  AESCHINUS ADULESCENS: periī! horrēscō semper ubi pultāre hāsce occipiō miser.
+(634)  AESCHINUS ADULESCENS: heus heus Aeschinus ego sum: aperīte aliquis āctūtum ōstium.
+(635x) == Micio Aeschinus ==
+(635)  MICIO SENEX: prōdit nescioquis: concēdam hūc. Ita utī dīxī, Sostrata,
+(636)  MICIO SENEX: facite; ego Aeschinum conveniam, ut quōmodō ācta haec sunt sciat.
+(637)  MICIO SENEX: sed quis ōstium hīc pultāvit? pater herclest: periī. Aeschine,
+(638)  AESCHINUS ADULESCENS: quid huic hīc negōtīst? tūne hās pepulistī forēs?
+(639)  MICIO SENEX: (tacet. cūr nōn lūdō hunc aliquantisper? melius est,
+(640)  MICIO SENEX: quandoquidem hoc numquam mihi ipse voluit crēdere.)
+(641)  MICIO SENEX: nīl mihi respondēs? nōn equidem istās, quod sciam.
+(642)  MICIO SENEX: ita? nam mīrābar quid hic negōtī esset tibi.
+(643)  MICIO SENEX: (ērubuit: salva rēs est.) dīc sōdēs, pater,
+(644)  AESCHINUS ADULESCENS: tibi vērō quid istīc est reī? nīl mihi quidem.
+(645)  MICIO SENEX: amīcus quīdam mē ā forō abdūxit modo
+(646)  MICIO SENEX: hūc, advocātum sibi. quid? ego dīcam tibi:
+(647)  MICIO SENEX: habitant hīc quaedam mulierēs pauperculae;
+(648)  MICIO SENEX: ut opīnor, eās nōn nōsse tē, et certō sciō,
+(649)  MICIO SENEX: neque enim diū hūc migrārunt. quid tum posteā?
+(650)  MICIO SENEX: virgōst cum mātre. perge. haec virgō orbast patre;
+(651)  MICIO SENEX: hic meus amīcus illī genere est proximus:
+(652)  MICIO SENEX: huic lēgēs cōgunt nūbere hanc. periī! quid est?
+(653)  AESCHINUS ADULESCENS: nīl: rēctē: perge. is vēnit ut sēcum āvehat,
+(654)  MICIO SENEX: nam habitat Mīlētī. hem virginem ut sēcum āvehat?
+(655)  MICIO SENEX: sīc est. Mīlētum usque obsecrō? ita. animō malēst.
+(656)  AESCHINUS ADULESCENS: quid ipsae? quid ajunt? quid istās cēnsēs? nīl enim.
+(657)  MICIO SENEX: commenta māter est esse ex aliō virō
+(658)  MICIO SENEX: nescioquō puerum nātum, neque eum nōminat;
+(659)  MICIO SENEX: priōrem esse illum, nōn oportēre huic darī.
+(660)  AESCHINUS ADULESCENS: eho nōnne haec jūsta tibi videntur posteā?
+(661)  MICIO SENEX: nōn. obsecrō nōn? an illam hinc abdūcet, pater?
+(662)  MICIO SENEX: quid illam nī abdūcat? factum ā vōbīs dūriter
+(663)  AESCHINUS ADULESCENS: immisericorditerque atque etiam, sī est, pater,
+(664)  AESCHINUS ADULESCENS: dīcendum magis apertē, illīberāliter.
+(665)  MICIO SENEX: quam ob rem? rogās mē? quid illī tandem crēditis
+(666)  AESCHINUS ADULESCENS: fore animī miserō quī illā cōnsuēvit prior,
+(667)  AESCHINUS ADULESCENS: quī īnfēlīx haud sciō an illam miserē nunc amet,
+(668)  AESCHINUS ADULESCENS: cum hanc sibi vidēbit praesēns praesentī ēripī,
+(669)  AESCHINUS ADULESCENS: abdūcī ab oculīs? facinus indignum, pater!
+(670)  MICIO SENEX: quā ratiōne istūc? quis dēspondit? quis dedit?
+(671)  MICIO SENEX: cui quandō nūpsit? auctor hīs rēbus quis est?
+(672)  MICIO SENEX: cūr dūxit aliēnam? an sedēre oportuit
+(673)  AESCHINUS ADULESCENS: domi virginem tam grandem dum cognātus hūc
+(674)  AESCHINUS ADULESCENS: illinc venīret exspectantem? haec, mī pater,
+(675)  AESCHINUS ADULESCENS: tē dīcere aequum fuit et id dēfendere.
+(676)  MICIO SENEX: rīdiculum! advorsumne illum causam dīcerem
+(677)  MICIO SENEX: cui vēneram advocātus? sed quid ista, Aeschine,
+(678)  MICIO SENEX: nostra? aut quid nōbīs cum illīs? abeāmus. quid est?
+(679)  MICIO SENEX: quid lacrimās? pater, obsecrō, auscultā. Aeschine, audīvī omnia
+(680)  MICIO SENEX: et sciō; nam te amō, quō magis quae agis cūrae sunt mihi.
+(681)  AESCHINUS ADULESCENS: ita velim mē prōmerentem amēs dum vīvās, mī pater,
+(682)  AESCHINUS ADULESCENS: ut mē hoc dēlictum admīsisse in mē, id mihi vehementer dolet
+(683)  AESCHINUS ADULESCENS: et mē tuī pudet. crēdō hercle, nam ingenium nōvī tuum
+(684)  MICIO SENEX: līberāle; sed vereor nē indīligēns nimium siēs.
+(685)  MICIO SENEX: in quā cīvitāte tandem tē arbitrāre vīvere?
+(686)  MICIO SENEX: virginem vitiāstī quam tē nōn jūs fuerat tangere.
+(687)  MICIO SENEX: jam id peccātum prīmum magnum: ‹magnum›, at hūmānum tamen:
+(688)  MICIO SENEX: fēcēre aliī saepe item bonī. at postquam ēvēnit, cedo
+(689)  MICIO SENEX: numquid circumspextī? aut numquid tūte prospextī tibi
+(690)  MICIO SENEX: quid fieret, quā fieret? sī tē mī ipsum puduit prōloquī,
+(691)  MICIO SENEX: quā rescīscerem? haec dum dubitās, mēnsēs abiērunt decem.
+(692)  MICIO SENEX: prōdidistī et tē et illam miseram et gnātum, quod quidem in tē fuit.
+(693)  MICIO SENEX: quid? crēdēbās dormientī haec tibi cōnfectūrōs deōs?
+(694)  MICIO SENEX: et illam sine tuā operā in cubiculum īrī dēductum domum?
+(695)  MICIO SENEX: nōlim cēterārum rērum tē socordem eōdem modō.
+(696)  MICIO SENEX: bonō animō ēs, dūcēs uxōrem. hem. bonō animō ēs inquam. pater,
+(697)  AESCHINUS ADULESCENS: obsecrō, nunc lūdis tū mē? ego tē? quam ob rem? nesciō:
+(698)  AESCHINUS ADULESCENS: quia tam miserē hoc esse cupiō vērum, eō vereor magis.
+(699)  MICIO SENEX: abi domum ac deōs comprecāre ut uxōrem accersās: abī.
+(700)  AESCHINUS ADULESCENS: quid? jam uxōrem? jam. jam? jam quantum potest. dī mē, pater,
+(701)  AESCHINUS ADULESCENS: omnēs ōderint nī magis tē quam oculōs nunc ego amō meōs.
+(702)  MICIO SENEX: quid? quam illam? aequē. perbenignē. quid? ille ubīst Mīlēsius?
+(703)  MICIO SENEX: periit abiit nāvem ēscendit. sed cūr cessās? abi, pater,
+(704)  AESCHINUS ADULESCENS: tū potius deōs comprecāre; nam tibi eōs certō sciō,
+(705)  AESCHINUS ADULESCENS: quō vir melior multō ēs quam ego, obtemperātūrōs magis.
+(706)  MICIO SENEX: ego eō intrō ut quae opus sunt parentur: tū fac ut dīxī, sī sapis.
+(707)  AESCHINUS ADULESCENS: quid hoc est negōtī? hoc est patrem esse aut hoc est fīlium esse?
+(708)  AESCHINUS ADULESCENS: sī frāter aut sodālis esset, quī magis mōrem gereret?
+(709)  AESCHINUS ADULESCENS: hic nōn amandus, hicine nōn gestandus in sinūst? hem.
+(710)  AESCHINUS ADULESCENS: itaque adeō magnam mī inicit suā commoditāte cūram
+(711)  AESCHINUS ADULESCENS: nē imprūdēns forte faciam quod nōlit: sciēns cavēbō.
+(712)  AESCHINUS ADULESCENS: sed cessō īre intrō, nē morae meīs nūptiīs egomet siem?
+(713x) == Demea ==
+(713)  DEMEA SENEX: Dēfessus sum ambulandō: ut, Syre, tē cum tuā
+(714)  DEMEA SENEX: mōnstrātiōne magnus perdat Juppiter!
+(715)  DEMEA SENEX: perreptāvī usque omne oppidum: ad portam, ad lacum,
+(716)  DEMEA SENEX: quō nōn? neque illī fabrica ūlla erat nec frātrem homō
+(717)  DEMEA SENEX: vīdisse sē aibat quisquam. nunc vērō domī
+(718)  DEMEA SENEX: certum obsidēre est usque dōnec redierit.
+(719x) == Micio Demea ==
+(719)  MICIO SENEX: Ībō, illīs dīcam nūllam esse in nōbīs moram.
+(720)  DEMEA SENEX: sed eccum ipsum. tē jamdūdum quaerō, Mīciō.
+(721)  MICIO SENEX: quidnam? ferō alia flāgitia ad tē ingentia
+(722)  DEMEA SENEX: bonī illius adulēscentis. ecce autem! nova,
+(723)  DEMEA SENEX: capitālia. ohe jam. āh nescīs quī vir sit. sciō.
+(724)  DEMEA SENEX: āh stulte, tū dē psaltriā mē somniās
+(725)  DEMEA SENEX: agere: hoc peccātum in virginemst cīvem. sciō.
+(726)  DEMEA SENEX: oho scīs et patere? quidnī patiar? dīc mihi,
+(727)  DEMEA SENEX: nōn clāmās? nōn īnsānīs? nōn: mālim quidem...
+(728)  DEMEA SENEX: puer nātust. dī bene vortant! virgō nīl habet.
+(729)  MICIO SENEX: audīvī. et dūcenda indōtātast. scīlicet.
+(730)  DEMEA SENEX: quid nunc futūrumst? id enim quod rēs ipsa fert:
+(731)  MICIO SENEX: illinc hūc trānsferētur virgō. ō Juppiter,
+(732)  DEMEA SENEX: istōcin pactō oportet? quid faciam amplius?
+(733)  DEMEA SENEX: quid faciās? sī nōn ipsā rē tibi istūc dolet,
+(734)  DEMEA SENEX: simulāre certē est hominis. quīn jam virginem
+(735)  MICIO SENEX: dēspondī; rēs compositast; fīunt nūptiae;
+(736)  MICIO SENEX: dēmpsī metum omnem: haec magis sunt hominis. cēterum
+(737)  DEMEA SENEX: placet tibi factum, Miciō? nōn, sī queam
+(738)  MICIO SENEX: mūtāre. nunc cum nōn queō, animō aequō ferō.
+(739)  MICIO SENEX: ita vītast hominum quasi cum lūdās tesserīs:
+(740)  MICIO SENEX: sī illud quod maximē opus est jactū nōn cadit,
+(741)  MICIO SENEX: illud quod cecidit forte, id arte ut corrigās.
+(742)  DEMEA SENEX: corrēctor! nempe tuā arte vīgintī minae
+(743)  DEMEA SENEX: prō psaltriā periēre: quae quantum potest
+(744)  DEMEA SENEX: aliquō abiciendast, sī nōn pretiō, at grātiīs.
+(745)  MICIO SENEX: neque est neque illam sānē studeō vēndere.
+(746)  DEMEA SENEX: quid igitur faciēs? domī erit. prō dīvum fidem!
+(747)  DEMEA SENEX: meretrīx et māterfamiliās ūnā in domō?
+(748)  MICIO SENEX: cūr nōn? sānum tē crēdis esse? equidem arbitror.
+(749)  DEMEA SENEX: ita mē di ament, ut videō tuam ego ineptiam,
+(750)  DEMEA SENEX: factūrum crēdō ut habeās quīcum cantitēs.
+(751)  MICIO SENEX: cūr nōn? et nova nūpta eadem haec discet? scīlicet.
+(752)  DEMEA SENEX: tū inter eās restim ductāns saltābis? probē.
+(753)  DEMEA SENEX: probē? et tū nōbīscum ūnā, sī opus sit. ei mihi!
+(754)  DEMEA SENEX: nōn tē haec pudent? jam vērō omitte, Dēmeā,
+(755)  MICIO SENEX: tuam istanc īrācundiam atque ita ut decet
+(756)  MICIO SENEX: hilarum ac libentem fac tē gnātī in nūptiīs.
+(757)  MICIO SENEX: ego hōs conveniō, post hūc redeō. ō Juppiter,
+(758)  DEMEA SENEX: hancin vītam! hōscin mōrēs! hanc dēmentiam!
+(759)  DEMEA SENEX: uxor sine dōte veniet; intus psaltriast;
+(760)  DEMEA SENEX: domus sūmptuōsa; adulēscēns luxū perditus;
+(761)  DEMEA SENEX: senex dēlīrāns. ipsa sī cupiat Salūs,
+(762)  DEMEA SENEX: servāre prōrsus nōn potest hanc familiam.
+(763y) === Akt V ===
+(763x) == Syrus Demea ==
+(763)  SYRUS SERVUS: Edepol, Syrisce, tē cūrāstī molliter
+(764)  SYRUS SERVUS: lautēque mūnus administrāstī tuum:
+(765)  SYRUS SERVUS: abi. sed postquam intus sum omnium rērum satur,
+(766)  SYRUS SERVUS: prōdeambulāre hūc libitum est. illud sīs vidē:
+(767)  DEMEA SENEX: exemplum disciplīnae! ecce autem hīc adest
+(768)  SYRUS SERVUS: senex noster. quid fit? quid tū ēs trīstis? ōh scelus!
+(769)  SYRUS SERVUS: ohe jam! tū verba fundis hīc, Sapientia?
+(770)  DEMEA SENEX: tūn sī meus essēs, dīs quidem essēs, Dēmeā,
+(771)  SYRUS SERVUS: ac tuam rem cōnstabilīssēs. exemplō omnibus
+(772)  DEMEA SENEX: cūrārem ut essēs. quam ob rem? quid fēcī? rogās?
+(773)  DEMEA SENEX: in ipsā turbā atque in peccātō maximō,
+(774)  DEMEA SENEX: quod vix sēdātum satis est, pōtastis, scelus,
+(775)  DEMEA SENEX: quasi rē bene gestā. sānē nōllem hūc exitum.
+(776x) == Dromo Syrus Demea ==
+(776)  DROMO PUER.: Heus Syre, rogat tē Ctēsipho ut redeās. abī.
+(777)  DEMEA SENEX: quid Ctēsiphōnem hic nārrat? nīl. eho carnufex,
+(778)  DEMEA SENEX: est Ctēsiphō intus? nōn est. cūr hic nōminat?
+(779)  SYRUS SERVUS: est alius quīdam, parasītaster paululus:
+(780)  SYRUS SERVUS: nōstīn? jam scībō. quid agis? quo abīs? mitte mē.
+(781)  SYRUS SERVUS: nōlī inquam. nōn manum abstinēs, mastīgia?
+(782)  DEMEA SENEX: an tibi jam māvīs cerebrum dispergam hīc? abit
+(783)  SYRUS SERVUS: edepol cōmissātōrem haud sānē commodum,
+(784)  SYRUS SERVUS: praesertim Ctēsiphōnī! quid ego nunc agam?
+(785)  SYRUS SERVUS: nisi, dum hae silēscunt turbae, intereā in angulum
+(786)  SYRUS SERVUS: aliquō abeam atque ēdormīscam hoc villī: sīc agam.
+(787x) == Micio Demea ==
+(787)  MICIO SENEX: Parāta ā nōbīs sunt, ita ut dīxī, Sostratā:
+(788)  MICIO SENEX: ubi vīs... quisnam ā mē pepulit tam graviter forēs?
+(789)  DEMEA SENEX: ei mihi! quid faciam? quid agam? quid clāmem aut querar?
+(790)  DEMEA SENEX: ‘ō caelum, ō terra, ō maria Neptūnī!’ em tibi!
+(791)  MICIO SENEX: rescīvit omnem rem: id nunc clāmat: īlicet;
+(792)  MICIO SENEX: parātae lītēs: succurrendumst. eccum adest
+(793)  DEMEA SENEX: commūnis corruptēla nostrum līberum.
+(794)  MICIO SENEX: tandem reprime īrācundiam atque ad tē redī.
+(795)  DEMEA SENEX: repressī rediī, mittō maledicta omnia:
+(796)  DEMEA SENEX: rem ipsam putēmus. dictum hoc inter nōs fuit
+(797)  DEMEA SENEX: (ex te adeōst ortum) nē tū cūrārēs meum
+(798)  DEMEA SENEX: nēve ego tuum? respondē. factumst, nōn negō.
+(799)  DEMEA SENEX: cūr nunc apud tē pōtat? cūr recipis meum?
+(800)  DEMEA SENEX: cūr emis amīcam, Mīciō? numquī minus
+(801)  DEMEA SENEX: mihi idem jūs aequumst esse quod mēcumst tibi?
+(802)  DEMEA SENEX: quandō ego tuum nōn cūrō, nē cūrā meum.
+(803)  MICIO SENEX: nōn aequum dīcis. nōn? nam vetus verbum hoc quidemst,
+(804)  MICIO SENEX: commūnia esse amīcōrum inter sē omnia.
+(805)  DEMEA SENEX: facētē! nunc dēmum istaec nāta ōrātiōst?
+(806)  MICIO SENEX: auscultā paucīs nisi molestumst, Dēmeā.
+(807)  MICIO SENEX: prīncipiō, sī id tē mordet, sūmptum fīliī
+(808)  MICIO SENEX: quem faciunt, quaesō hoc facitō tēcum cōgitēs:
+(809)  MICIO SENEX: tū illōs duo ōlim prō rē tollēbās tuā,
+(810)  MICIO SENEX: quod satis putābās tua bona ambōbus fore,
+(811)  MICIO SENEX: et mē tum uxōrem crēdidistī scīlicet
+(812)  MICIO SENEX: ductūrum. eandem illam ratiōnem antīquam obtinē:
+(813)  MICIO SENEX: cōnservā quaere parce, fac quam plūrimum
+(814)  MICIO SENEX: illīs relinquās, glōriam tū istam obtinē.
+(815)  MICIO SENEX: mea, quae praeter spem ēvēnēre, ūtantur sine.
+(816)  MICIO SENEX: dē summā nīl dēcēdet: quod hinc accesserit
+(817)  MICIO SENEX: id dē lucrō putātō esse omne. haec sī volēs
+(818)  MICIO SENEX: in animō vērē cōgitāre, Dēmeā,
+(819)  MICIO SENEX: et mihi et tibi et illīs dēmpseris molestiam.
+(820)  DEMEA SENEX: mittō rem: cōnsuētūdinem ambōrum... manē:
+(821)  MICIO SENEX: sciō; istūc ībam. multa in homine, Dēmeā,
+(822)  MICIO SENEX: signa īnsunt ex quibus conjectūra facile fit,
+(823)  MICIO SENEX: duo cum idem faciunt saepe, ut possīs dīcere
+(824)  MICIO SENEX: ‘hoc licet impūne facere huic, illī nōn licet’,
+(825)  MICIO SENEX: nōn quō dissimilis rēs sit sed quō is quī facit.
+(826)  MICIO SENEX: quae ergo in illīs videō, ut cōnfīdam fore
+(827)  MICIO SENEX: ita ut volumus? videō sapere intellegere, in locō
+(828)  MICIO SENEX: verērī, inter sē amāre: scīre est līberum
+(829)  MICIO SENEX: ingenium atque animum: quōvīs illōs tū diē
+(830)  MICIO SENEX: reddūcās. at enim metuās nē ab rē sint tamen
+(831)  MICIO SENEX: omissiōrēs paulō. ō noster Dēmeā,
+(832)  MICIO SENEX: ad omnia alia aetāte sapimus rēctius;
+(833)  MICIO SENEX: sōlum ūnum hoc vitium affert senectūs hominibus:
+(834)  MICIO SENEX: attentiōrēs sumus ad rem omnēs quam sat est:
+(835)  MICIO SENEX: quod illōs sat aetās acuet. nē nimium modo
+(836)  DEMEA SENEX: bonae tuae istae nōs ratiōnēs, Mīciō,
+(837)  DEMEA SENEX: et tuus iste animus aequus subvortat. tacē:
+(838)  MICIO SENEX: nōn fīet. mitte jam istaec; dā tē hodiē mihi:
+(839)  MICIO SENEX: exporge frontem. scīlicēt ita tempus fert:
+(840)  DEMEA SENEX: faciendumst. cēterum ego rūs crās cum fīliō
+(841)  DEMEA SENEX: cum prīmō lūcī ībō hinc. dē nocte cēnseō:
+(842)  MICIO SENEX: hodiē modo hilarum tē face. et istam psaltriam
+(843)  DEMEA SENEX: ūnā illūc mēcum hinc abstraham. pugnāveris:
+(844)  MICIO SENEX: eō pactō prōrsum illī alligārīs fīlium.
+(845)  MICIO SENEX: modo facitō ut illam servēs. ego istūc vīderō,
+(846)  DEMEA SENEX: atque ibi favīllae plēna, fūmī ac pollinis
+(847)  DEMEA SENEX: coquendō sit faxō et molendō; praeter haec
+(848)  DEMEA SENEX: merīdiē ipsō faciam ut stipulam colligat:
+(849)  DEMEA SENEX: tam excoctam reddam atque ātram quam carbōst. placet:
+(850)  MICIO SENEX: nunc mihi vidēre sapere. atque equidem fīlium
+(851)  MICIO SENEX: tum, etiam sī nōlit, cōgam ut cum illā ūnā cubet.
+(852)  DEMEA SENEX: dērīdēs? fortūnātu's quī istō animō siēs.
+(853)  DEMEA SENEX: ego sentiō... āh pergisne? jam jam dēsinō.
+(854)  MICIO SENEX: ī ergō intrō, et cui reīst eī reī hunc sūmāmus diem.
+(855x) == Demea ==
+(855)  DEMEA SENEX: Numquam ita quisquam bene subductā ratiōne ad vītam fuit
+(856)  DEMEA SENEX: quīn rēs aetās ūsus semper aliquid apportet novī,
+(857)  DEMEA SENEX: aliquid moneat: ut illa quae tē scisse crēdās nesciās,
+(858)  DEMEA SENEX: et quae tibi putārīs prīma, in experiendō ut repudiēs.
+(859)  DEMEA SENEX: quod nunc mī ēvēnit; nam ego vītam dūram quam vīxī usque adhūc
+(860)  DEMEA SENEX: prope jam excursō spatiō omittō. id quam ob rem? rē ipsā repperī
+(861)  DEMEA SENEX: facilitāte nīl esse hominī melius neque clēmentiā.
+(862)  DEMEA SENEX: id esse vērum ex mē atque ex frātre cuivīs facilest nōscere.
+(863)  DEMEA SENEX: ille suam semper ēgit vītam in ōtiō, in convīviīs,
+(864)  DEMEA SENEX: clēmēns placidus, nūllī laedere ōs, arrīdēre omnibus;
+(865)  DEMEA SENEX: sibi vīxit, sibi sūmptum fēcit: omnēs bene dīcunt, amant.
+(866)  DEMEA SENEX: ego ille agrestis saevus trīstis parcus truculentus tenāx
+(867)  DEMEA SENEX: dūxī uxōrem: quam ibi miseriam vīdī! nātī fīliī,
+(868)  DEMEA SENEX: alia cūra. heia autem, dum studeō illīs ut quam plūrimum
+(869)  DEMEA SENEX: facerem, contrīvī in quaerendō vītam atque aetātem meam:
+(870)  DEMEA SENEX: nunc exāctā aetāte hoc frūctī prō labōre ab eīs ferō,
+(871)  DEMEA SENEX: odium; ille alter sine labōre patria potitur commoda.
+(872)  DEMEA SENEX: illum amant, mē fugitant; illī crēdunt cōnsilia omnia,
+(873)  DEMEA SENEX: illum dīligunt, apud illum sunt ambō, ego dēsertus sum;
+(874)  DEMEA SENEX: illum ut vīvat optant, meam autem mortem exspectant scīlicet.
+(875)  DEMEA SENEX: ita eōs meō labōre ēductōs maximō hic fēcit suōs
+(876)  DEMEA SENEX: paulō sūmptū: miseriam omnem ego capiō, hic potitur gaudia.
+(877)  DEMEA SENEX: age age, nūnciam experiāmur contrā ecquid ego possiem
+(878)  DEMEA SENEX: blandē dīcere aut benignē facere, quandō hoc prōvocat.
+(879)  DEMEA SENEX: ego quoque ā meīs mē amārī et magnī pendī postulō:
+(880)  DEMEA SENEX: sī id fit dandō atque obsequendō, nōn posteriōrīs feram.
+(881)  DEMEA SENEX: dēerit: id meā minimē rēfert quī sum nātū maximus.
+(882x) == Syrus Demea ==
+(882)  SYRUS SERVUS: Heus Dēmeā, ōrat frāter nē abeās longius.
+(883)  DEMEA SENEX: quis homō? ō Syre noster, salvē: quid fit? quid agitur?
+(884)  SYRUS SERVUS: rēctē. optimēst. (jam nunc haec tria prīmum addidī
+(885)  DEMEA SENEX: praeter nātūram: ‘ō noster, quid fit? quid agitur?’)
+(886)  DEMEA SENEX: servum haud illīberālem praebēs tē et tibi
+(887)  DEMEA SENEX: libēns bene faxim. grātiam habeō. atquī, Syre,
+(888)  DEMEA SENEX: hoc vērumst et ipsā rē experiere propediem.
+(889x) == Geta Demea Syrus ==
+(889)  GETA SERVOS: Era, ego hūc ad hōs prōvīsō quam mox virginem
+(890)  GETA SERVOS: accersant. sed eccum Dēmeam. salvus siēs.
+(891)  DEMEA SENEX: ō quī vocāre? Geta. Geta, hominem maximī
+(892)  DEMEA SENEX: pretī tē esse hodiē jūdicāvī animō meō.
+(893)  DEMEA SENEX: nam is mihi profectōst servus spectātus satis
+(894)  DEMEA SENEX: cui dominus cūraest, ita utī tibi sēnsī, Geta,
+(895)  DEMEA SENEX: et tibi ob eam rem, sīquid ūsus vēnerit,
+(896)  DEMEA SENEX: libēns bene faxim. (meditor esse affābilis,
+(897)  DEMEA SENEX: et bene prōcēdit.) bonus ēs cum haec exīstimās.
+(898)  DEMEA SENEX: paulātim plēbem prīmulum faciō meam.
+(899x) == Aeschinus Demea Syrus Geta ==
+(899)  AESCHINUS ADULESCENS: Occīdunt mequidem dum nimis sānctās nūptiās
+(900)  AESCHINUS ADULESCENS: student facere: in apparandō cōnsūmunt diem.
+(901)  DEMEA SENEX: quid agitur, Aeschine? ehem, pater mī, tū hīc erās?
+(902)  DEMEA SENEX: tuus hercle vērō et animō et nātūrā pater,
+(903)  DEMEA SENEX: quī te amat plūs quam hōsce oculōs. sed cūr nōn domum
+(904)  DEMEA SENEX: uxōrem accersīs? cupiō; vērum hoc mihi moraest,
+(905)  AESCHINUS ADULESCENS: tībīcina et hymenaeum quī cantent. eho
+(906)  DEMEA SENEX: vīn tū huic senī auscultāre? quid? missa haec face,
+(907)  DEMEA SENEX: hymenaeum turbās lampadas tībīcinās,
+(908)  DEMEA SENEX: atque hanc in hortō māceriam jube dīruī
+(909)  DEMEA SENEX: quantum potest: hāc trānsfer: ūnam fac domum;
+(910)  DEMEA SENEX: trānsdūce et mātrem et familiam omnem ad nōs. placet,
+(911)  AESCHINUS ADULESCENS: pater lepidissime. (eugae! jam lepidus vocor.
+(912)  DEMEA SENEX: frātrī aedēs fīent perviae, turbam domum
+(913)  DEMEA SENEX: addūcet, sūmptū āmittet multa: quid meā?
+(914)  DEMEA SENEX: ego lepidus ineō grātiam. jube nūnciam
+(915)  DEMEA SENEX: dīnumeret ille Babylō vīgintī minās.)
+(916)  DEMEA SENEX: Syre, cessās īre ac facere? quid agō? dīrue.
+(917)  DEMEA SENEX: tū illās abī et trānsdūce. dī tibi, Dēmeā,
+(918)  GETA SERVOS: bene faciant, cum tē videō nostrae familiae
+(919)  GETA SERVOS: tam ex animō factum velle. dignōs arbitror.
+(920)  DEMEA SENEX: quid tu aīs? sīc opīnor. multō rēctiust
+(921)  DEMEA SENEX: quam illam puerperam hāc nunc dūcī per viam
+(922)  DEMEA SENEX: aegrōtam. nīl enim melius vīdī, mī pater.
+(923)  DEMEA SENEX: sīc soleō. sed eccum Mīciō ēgreditur forās.
+(924x) == Micio Demea Aeschinus ==
+(924)  MICIO SENEX: Jubet frāter? ubi is est? tū jubēs hoc, Dēmeā?
+(925)  DEMEA SENEX: ego vērō jubeō et hāc rē et aliīs omnibus
+(926)  DEMEA SENEX: quam maximē ūnam facere nōs hanc familiam,
+(927)  DEMEA SENEX: colere adjuvāre adjungere. ita quaesō, pater.
+(928)  MICIO SENEX: haud aliter cēnseō. immō hercle ita nōbīs decet.
+(929)  DEMEA SENEX: prīmum hujus uxōrīst māter. est. quid posteā?
+(930)  DEMEA SENEX: proba et modesta. ita ajunt. nātū grandior.
+(931)  MICIO SENEX: scio. parere jamdiū haec per annōs nōn potest;
+(932)  DEMEA SENEX: nec quī eam respiciat quisquamst: sōlast. quam hic rem agit?
+(933)  DEMEA SENEX: hanc tē aequumst dūcere, et tē operam ut fīat dare.
+(934)  MICIO SENEX: mē dūcere autem? tē. mē? tē inquam. ineptīs. sī tū sīs homō,
+(935)  DEMEA SENEX: hic faciat. mī pater! quid tū autem huic, asine, auscultās? nīl agis:
+(936)  DEMEA SENEX: fierī aliter nōn potest. dēlīrās. sine tē exōrem. mī pater.
+(937)  MICIO SENEX: īnsānīs: aufer. age, dā veniam fīliō. satin sānus ēs?
+(938)  MICIO SENEX: ego novus marītus annō dēmum quīntō et sexagensimō
+(939)  MICIO SENEX: fīam atque anum dēcrepitam dūcam? idne estis auctōrēs mihi?
+(940)  AESCHINUS ADULESCENS: fac: prōmīsī ego illīs. prōmīstī autem? dē tē largītor, puer.
+(941)  DEMEA SENEX: age, quid sīquid tē majus ōret? quasi nōn hoc sit maximum.
+(942)  DEMEA SENEX: dā veniam. nē gravāre. fac, prōmitte. nōn omittitis?
+(943)  AESCHINUS ADULESCENS: nōn, nisi tē exōrem. vīs est haec quidem. age prōlixe, Mīciō.
+(944)  MICIO SENEX: etsī hoc mihi prāvum ineptum absurdum atque aliēnum ā vītā meā
+(945)  MICIO SENEX: vidētur, sī vōs tantō opere istūc vultis, fīat. bene facis.
+(946)  AESCHINUS ADULESCENS: meritō tē amō. vērum... (quid ego dīcam, hoc cum cōnfit quod volō?)
+(947)  MICIO SENEX: quid nunc quod restat? Hēgiō, est hīs cognātus proximus
+(948)  DEMEA SENEX: affīnis nōbīs, pauper: bene nōs aliquid facere illī decet.
+(949)  MICIO SENEX: quid facere? agellīst hīc sub urbe paulum quod locitās forās:
+(950)  DEMEA SENEX: huic dēmus quī fruātur. paulum id autemst? sī multumst, tamen
+(951)  DEMEA SENEX: faciendumst: prō patre huic est, bonus est, noster est; rēctē datur.
+(952)  DEMEA SENEX: postrēmō nōn meum illud verbum faciō quod tū, Mīciō,
+(953)  DEMEA SENEX: bene et sapienter dīxtī dūdum: ‘vitium commūne omniumst
+(954)  DEMEA SENEX: quod nimium ad rem in senectā attentī sumus’? hanc maculam nōs decet
+(955)  DEMEA SENEX: effugere. et dictumst vēre et rē ipsā fierī oportet, mī pater.
+(956)  MICIO SENEX: quid istīc? dabitur quandō quidem hic vult. gaudeō.
+(957)  DEMEA SENEX: nunc tū germānu's pariter animō et corpore.
+(958x) == Syrus Demea Micio Aeschinus ==
+(958)  DEMEA SENEX: (suō sibi gladiō hunc jugulō.) Factumst quod jussistī, Dēmeā.
+(959)  DEMEA SENEX: frūgī homō's. ergō edepol hodiē meā quidem sententiā
+(960)  DEMEA SENEX: jūdicō Syrum fierī esse aequum līberum. istunc līberum?
+(961)  MICIO SENEX: quodnam ob factum? multa. ō noster Dēmeā, edepol vir bonu's.
+(962)  SYRUS SERVUS: ego istōs vōbīs usque ā puerīs cūrāvī ambō sēdulō:
+(963)  SYRUS SERVUS: docuī monuī bene praecēpī semper quae potuī omnia.
+(964)  DEMEA SENEX: rēs appāret. et quidem porrō haec, obsōnāre cum fidē,
+(965)  DEMEA SENEX: scortum addūcere, apparāre dē diē convīvium:
+(966)  DEMEA SENEX: nōn mediōcris hominis haec sunt officia. ō lepidum caput!
+(967)  DEMEA SENEX: postrēmō hodiē in psaltriā hāc ēmundā hic adjūtor fuit,
+(968)  DEMEA SENEX: hic cūrāvit: prōdesse aequumst: aliī meliōrēs erunt.
+(969)  DEMEA SENEX: dēnique hic vult fierī. vīn tū hoc fierī? cupiō. sī quidem hoc
+(970)  MICIO SENEX: tū vīs: Syre, eho accēde hūc ad mē: līber estō. bene facis.
+(971)  SYRUS SERVUS: omnibus grātiam habeō et seorsum tibi praetereā, Dēmeā.
+(972)  DEMEA SENEX: gaudeō. et ego. crēdō. utinam hoc perpetuum fīat gaudium,
+(973)  SYRUS SERVUS: Phrygiam ut uxōrem meam ūnā mēcum videam līberam!
+(974)  DEMEA SENEX: optimam quidem mulierem. et quidem tuō nepōtī hujus fīliō
+(975)  SYRUS SERVUS: hodiē prīma mammam dedit haec. hercle vērō sēriō,
+(976)  DEMEA SENEX: siquidem prīma dedit, haud dubiumst quīn ēmittī aequum siet.
+(977)  MICIO SENEX: ob eam rem? ob eam. postrēmō ā mē argentum quantīst sūmitō.
+(978)  SYRUS SERVUS: dī tibi, Dēmeā, omnēs semper omnia optāta offerant!
+(979)  MICIO SENEX: Syre, prōcessistī hodiē pulchrē. siquidem porrō, Mīciō,
+(980)  DEMEA SENEX: tū tuum officium faciēs atque huic aliquid paulum prae manū
+(981)  DEMEA SENEX: dederis, unde ūtātur, reddet tibi cito. istōc vīlius.
+(982)  DEMEA SENEX: frūgī homōst. reddam hercle; dā modo. age, pater! post cōnsulam.
+(983)  DEMEA SENEX: faciet. ō vir optime! ō pater mī fēstīvissime!
+(984)  MICIO SENEX: quid istūc? quae rēs tam repente mōrēs mūtāvit tuōs?
+(985)  MICIO SENEX: quod prōlibium? quae istaec subitast largitās? dīcam tibi:
+(986)  DEMEA SENEX: ut id ostenderem, quod tē istī facilem et fēstīvum putant,
+(987)  DEMEA SENEX: id nōn fierī ex vērā vītā neque adeō ex aequō et bonō,
+(988)  DEMEA SENEX: sed ex assentandō indulgendō et largiendō, Mīciō.
+(989)  DEMEA SENEX: nunc adeō sī ob eam rem vōbīs mea vīta invīsa, Aeschine, est,
+(990)  DEMEA SENEX: quia nōn jūsta injūsta, prōrsus omnia omnīnō obsequor,
+(991)  DEMEA SENEX: misōs faciō: effundite emite, facite quod vōbīs libet.
+(992)  DEMEA SENEX: sed sī vultis potius, quae vōs propter adulēscentiam
+(993)  DEMEA SENEX: minus vidētis, magis impēnsē cupitis, cōnsulitis parum,
+(994)  DEMEA SENEX: haec reprehendere et corrigere mē et secundāre in locō,
+(995)  DEMEA SENEX: ecce mē quī id faciam vōbīs. tibi, pater, permittimus:
+(996)  AESCHINUS ADULESCENS: plūs scīs quid opus factōst. sed dē frātre quid fīet? sinō:
+(997)  DEMEA SENEX: habeat: in istāc fīnem faciat. istūc rēctē. plaudite!

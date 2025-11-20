@@ -1,0 +1,1463 @@
+==== Aeneis 8 ====
+(1) Ut(Kon) bellī(G) signum(A) Laurentī(Adj)(Abl) Turnus(N) ab(Prp) arce(Abl)
+(1) as of|war signal Laurentine Turnus from the|citadel
+(2) extulit(Per)(Akt) et(Kon) raucō(Adj)(Abl) strepuērunt(Per)(Akt) cornua(N) cantū(Abl),
+(2) raised|he and hoarse clattered|they horns with|the|sound,
+(3) utque(Kon) ācrīs(Adj)(A) concussit(Per)(Akt) equōs(A) utque(Kon) impulit(Per)(Akt) arma(A),
+(3) and|as keen shook|together|he horses and|as drove|in|he arms,
+(4) extemplō(Adv) turbātī(Per)(Pas)(N) animī(N), simul(Adv) omne(Adj)(N) tumultū(Abl)
+(4) straightway disturbed minds, at|the|same|time all with|uproar
+(5) conjūrat(Prä)(Akt) trepidō(Adj)(Abl) Latium(N) saevitque(Prä)(Akt)(Kon) juventūs(N)
+(5) swears|together with|anxious Latium rages|and youth
+(6) effera(Adj)(N). ductōrēs(N) prīmī(Adj)(N) Messāpus(N) et(Kon) Ufēns(N)
+(6) wild. leaders first Messapus and Ufens
+(7) contemptorque(N)(Kon) deum(G) Mēzentius(N) undique(Adv) cōgunt(Prä)(Akt)
+(7) despiser|and of|the|gods Mezentius everywhere gather|they
+(8) auxilia(A) et(Kon) lātōs(Adj)(A) vastant(Prä)(Akt) cultōribus(Abl) agrōs(A).
+(8) reinforcements and broad devastate|they with|tillers fields.
+(9) mittitur(Prä)(Pas) et(Kon) magnī(Adj)(G) Venulus(N) Diomēdis(G) ad(Prp) urbem(A)
+(9) is|sent and of|great Venulus of|Diomedes to the|city
+(10) quī(Pr)(N) petat(Prä)(Knj)(Akt) auxilium(A), et(Kon) Latiō(Abl) cōnsistere(Inf)(Akt) Teucrōs(A),
+(10) who may|seek help, and in|Latium to|settle the|Teucrians,
+(11) advectum(Per)(Pas)(A) Aenēān(A) classī(Abl) victōsque(Per)(Pas)(A)(Kon) penātīs(A)
+(11) borne Aeneas by|fleet conquered|and household|gods
+(12) īnferre(Inf)(Akt) et(Kon) fātīs(D) rēgem(A) sē(Pr)(A) dīcere(Inf)(Akt) poscī(Inf)(Pas)
+(12) to|bring|in and by|the|fates king himself to|say to|be|demanded
+(13) ēdoceat(Prä)(Knj)(Akt), multāsque(Adj)(A)(Kon) virō(D) sē(Pr)(A) adjungere(Inf)(Akt) gentīs(A)
+(13) may|declare, many|and to|the|man himself to|join peoples
+(14) Dardaniō(Adj)(D) et(Kon) lātē(Adv) Latiō(D) incrēbrēscere(Inf)(Akt) nōmen(N):
+(14) Dardanian and widely to|Latium to|grow|frequent the|name:
+(15) quid(Pr) struat(Prä)(Knj)(Akt) hīs(Pr)(Abl) coeptīs(Abl), quem(Pr)(A), sī(Kon) fortūna(N) sequātur(Prä)(Knj)(Akt),
+(15) what he|plots with|these undertakings, whom, if fortune may|follow,
+(16) ēventum(N) pugnae(G) cupiat(Prä)(Knj)(Akt), manifēstius(Adv)(Kmp) ipsī(Pr)(D)
+(16) outcome of|battle he|desires, more|clearly to|himself
+(17) quam(Kon) Turnō(D) rēgī(D) aut(Kon) rēgī(D) appārēre(Inf)(Akt) Latīnō(D).
+(17) than to|Turnus to|king or to|king to|appear to|Latinus.
+(18) Tālia(Adj)(N) per(Prp) Latium(A). quae(Pr)(N) Lāomedontius(Adj)(N) hērōs(N)
+(18) such|things through Latium. which Laomedontean hero
+(19) cūncta(Adj)(A) vidēns(Prä)(Akt)(N) magnō(Adj)(Abl) cūrārum(G) fluctuat(Prä)(Akt) aestū(Abl),
+(19) all seeing he|wavers in|great of|cares surge,
+(20) atque(Kon) animum(A) nunc(Adv) hūc(Adv) celerem(Adj)(A) nunc(Adv) dīvidit(Prä)(Akt) illūc(Adv)
+(20) and mind now hither swift now divides|he thither
+(21) in(Prp) partīsque(Abl)(Kon) rapit(Prä)(Akt) variās(Adj)(Abl) perque(Prp)(Kon) omnia(A) versat(Prä)(Akt),
+(21) in parts|and snatches|he various through|and all turns|he,
+(22) sīcut(Kon) aquae(G) tremulum(Adj)(A) labrīs(Abl) ubi(Kon) lūmen(N) aēnīs(Adj)(Abl)
+(22) just|as of|water trembling on|the|brims where light bronze
+(23) sōle(Abl) repercussum(Per)(Pas)(N) aut(Kon) radiantis(Prä)(Akt)(G) imāgine(G) lūnae(G)
+(23) by|sun reflected or of|shining by|image of|moon
+(24) omnia(Adj)(A) pervolitat(Prä)(Akt) lātē(Adv) loca(A), jamque(Adv) sub(Prp) aurās(A)
+(24) all flits|over widely places, and|now up|to the|breezes
+(25) ērigitur(Prä)(Pas) summīque(G)(Kon) ferit(Prä)(Akt) laqueāria(N) tēctī(G).
+(25) is|raised of|highest|and strikes he|the|panelings of|roof.
+(26) nox(N) erat(Imp)(Akt) et(Kon) terrās(A) animālia(N) fessa(Adj)(N) per(Prp) omnīs(Adj)(A)
+(26) night was and the|lands animals tired through all
+(27) ālituum(G) pecudumque(G)(Kon) genus(N) sopor(N) altus(Adj)(N) habēbat(Imp)(Akt),
+(27) of|winged|creatures and|of|flocks kind sleep deep was|holding,
+(28) cum(Kon) pater(N) in(Prp) rīpā(Abl) gelidīque(Adj)(G)(Kon) sub(Prp) aetheris(G) axe(Abl)
+(28) when father on bank and|of|chill under of|ether axle
+(29) Aenēās(N), trīstī(Adj)(Abl) turbātus(Per)(Pas)(N) pectora(A) bellō(Abl),
+(29) Aeneas, by|sad troubled breast with|war,
+(30) prōcubuit(Per)(Akt) sēramque(Adj)(A)(Kon) dedit(Per)(Akt) per(Prp) membra(A) quiētem(A).
+(30) lay|down late|and gave|he through limbs rest.
+(31) huic(Pr)(D) deus(N) ipse(Pr) locī(G) fluviō(N) Tiberīnus(Adj)(N) amoenō(Adj)(Abl)
+(31) to|this god himself of|place river Tiberine pleasant
+(32) pōpuleās(Adj)(A) inter(Prp) senior(Adj)(N) sē(Pr)(A) attollere(Inf)(Akt) frondēs(A)
+(32) poplar among elder himself to|raise leaves
+(33) vīsus(Per)(Pas)(N) (eum(Pr)(A) tenuis(Adj)(N) glaucō(Adj)(Abl) vēlābat(Imp)(Akt) amictū(Abl)
+(33) seen (him a|slight by|gray was|veiling cloak
+(34) carbasus(N), et(Kon) crīnīs(Abl) umbrōsa(Adj)(N) tegēbat(Imp)(Akt) harundō(N)),
+(34) fine|linen, and with|hair shadowy reed was|covering),
+(35) tum(Adv) sīc(Adv) adfārī(Inf)(Akt) et(Kon) cūrās(A) hīs(Pr)(Abl) dēmere(Inf)(Akt) dictīs(Abl):
+(35) then thus to|address and cares with|these to|take|away words:
+(36) ‘Ō(ij) sate(Per)(Pas)(N) gente(Abl) deum(G), Trōjānam(Adj)(A) ex(Prp) hostibus(Abl) urbem(A)
+(36) ‘O born from|race of|gods, Trojan from enemies city
+(37) quī(Pr)(N) revehis(Prä)(Akt) nōbīs(Pr)(D) aeternaque(Adj)(A)(Kon) Pergama(A) servās(Prä)(Akt),
+(37) who thou|bringest|back for|us eternal|and Pergama thou|guardest,
+(38) exspectāte(Per)(Pas)(V) solō(Abl) Laurentī(Adj)(Abl) arvīsque(Abl)(Kon) Latīnīs(Adj)(Abl),
+(38) long|awaited on|the|soil Laurentine fields|and Latin,
+(39) hīc(Adv) tibi(Pr)(D) certa(Adj)(N) domus(N), certī(Adj)(N) (nē(Pt) absiste(Prä)(Imv)(Akt)) penātēs(N).
+(39) here for|you sure home, sure (do|not stand|off) household|gods.
+(40) neu(Kon) bellī(G) terrēre(Inf)(Akt) minīs(Abl); tumor(N) omnis(Adj)(N) et(Kon) īrae(N)
+(40) nor of|war to|frighten by|threats; swelling all and angers
+(41) concessēre(Per)(Akt) deum(G).
+(41) have|withdrawn of|the|gods.
+(42) jamque(Adv) tibī(Pr)(D), nē(Pt) vāna(Adj)(A) putēs(Prä)(Knj)(Akt) haec(Pr)(A) fingere(Inf)(Akt) somnum(N),
+(42) and|now to|you, lest empty you|think these to|fashion sleep,
+(43) lītoreīs(Adj)(Abl) ingēns(Adj)(N) inventa(Per)(Pas)(N) sub(Prp) īlicibus(Abl) sūs(N)
+(43) shore|side huge found under holm|oaks sow
+(44) trīgintā(Adj) capitum(G) fētūs(N) ēnīxa(Per)(Pas)(N) jacēbit(Prä)(Akt),
+(44) thirty of|heads offspring having|borne will|lie,
+(45) alba(Adj)(N) solō(Abl) recubāns(Prä)(Akt)(N), albī(Adj)(N) circum(Prp) ūbera(A) nātī(N),
+(45) white on|ground reclining, white around teats offspring,
+(46) [hic(Adv) locus(N) urbis(G) erit(Prä)(Akt), requiēs(N) ea(Pr)(N) certa(Adj)(N) labōrum(G), ]
+(46) [here place of|city will|be, rest that sure of|toils, ]
+(47) ex(Prp) quō(Pr)(Abl) ter(Adv) dēnīs(Adj)(Abl) urbem(A) redeuntibus(Prä)(Akt)(Abl) annīs(Abl)
+(47) from which thrice by|tens the|city returning with|years
+(48) Ascanius(N) clārī(Adj)(G) condet(Fu1)(Akt) cognōminis(G) Albam(A).
+(48) Ascanius of|famous will|found of|surname Alba.
+(49) haud(Pt) incerta(Adj)(A) canō(Prä)(Akt). nunc(Adv) quā(Pr) ratiōne(N) quod(Pr)(A) īnstat(Prä)(Akt)
+(49) not uncertain I|sing. now by|what method what is|urgent
+(50) expediās(Prä)(Knj)(Akt) victor(N), paucīs(Adj)(Abl) (adverte(Prä)(Imv)(Akt)) docēbō(Prä)(Akt).
+(50) you|may|unfold victor, with|few (pay|attention) I|will|teach.
+(51) Arcades(N) hīs(Pr)(Abl) ōrīs(Abl), genus(N) ā(Prp) Pallante(G) profectum(Per)(Pas)(N),
+(51) Arcadians on|these shores, race from Pallas sprung,
+(52) quī(Pr)(N) rēgem(A) Euandrum(A) comitēs(N), quī(Pr)(N) signa(A) secūtī(Per)(Akt)(N),
+(52) who king Evander companions, who standards having|followed,
+(53) dēlēgēre(Per)(Akt) locum(A) et(Kon) posuēre(Per)(Akt) in(Prp) montibus(Abl) urbem(A)
+(53) chose place and set on mountains city
+(54) Pallantis(G) proavī(G) dē(Prp) nōmine(Abl) Pallantēum(A).
+(54) of|Pallas of|forefather from by|name Pallanteum.
+(55) hī(Pr)(N) bellum(A) adsiduē(Adv) dūcunt(Prä)(Akt) cum(Prp) gente(Abl) Latīnā(Adj)(Abl);
+(55) these war constantly wage with nation Latin;
+(56) hōs(Pr)(A) castrīs(Abl) adhibē(Prä)(Imv)(Akt) sociōs(N) et(Kon) foedera(A) junge(Prä)(Imv)(Akt).
+(56) these to|camps bring|in allies and treaties yoke.
+(57) ipse(Pr) ego(Pr)(N) tē(Pr)(A) rīpīs(Abl) et(Kon) rēctō(Adj)(Abl) flūmine(N) dūcam(Prä)(Akt),
+(57) myself I thee by|banks and straight by|river I|will|lead,
+(58) adversum(Prp) rēmīs(Abl) superēs(Prä)(Knj)(Akt) subvectus(Per)(Pas)(N) ut(Kon) amnem(A).
+(58) against by|oars you|may|overcome borne|up so|that the|stream.
+(59) surge(Prä)(Imv)(Akt) age(Pt), nāte(V) deā(Abl), prīmīsque(Adj)(Abl)(Kon) cadentibus(Prä)(Akt)(Abl) astrīs(Abl)
+(59) rise come|on, son of|the|goddess, and|with|first falling stars
+(60) Jūnōnī(D) fer(Prä)(Imv)(Akt) rīte(Adv) precēs(A), īramque(A)(Kon) mināsque(A)
+(60) to|Juno offer duly prayers, anger|and threats
+(61) supplicibus(Adj)(Abl) superā(Prä)(Imv)(Akt) vōtīs(Abl). mihi(Pr)(D) victor(N) honōrem(A)
+(61) with|suppliant vows overcome. to|me victor honor
+(62) persolvēs(Prä)(Akt). ego(Pr)(N) sum(Prä)(Akt) plēnō(Adj)(Abl) quem(Pr)(A) flūmine(N) cernis(Prä)(Akt)
+(62) you|shall|pay. I am with|full whom by|river you|see
+(63) stringentem(Prä)(Akt)(A) rīpās(A) et(Kon) pinguia(Adj)(A) culta(N) secantem(Prä)(Akt)(A),
+(63) drawing|tight banks and fat tilled|lands cutting,
+(64) caeruleus(Adj)(N) Thybris(N), caelō(G) grātissimus(Adj)(Sup)(N) amnis(N).
+(64) blue Tiber, to|sky most|pleasing river.
+(65) hīc(Adv) mihi(Pr)(D) magna(Adj)(N) domus(N), celsīs(Adj)(Abl) caput(N) urbibus(Abl) exit(Prä)(Akt).'
+(65) here for|me great home, head to|lofty cities goes|forth.'
+(66) Dīxit(Per)(Akt), deinde(Adv) lacū(Abl) fluvius(N) sē(Pr)(A) condidit(Per)(Akt) altō(Adj)(Abl)
+(66) he|spoke, then in|lake the|river himself hid deep
+(67) īma(Adj)(A) petēns(Prä)(Akt)(N); nox(N) Aenēān(A) somnusque(N) relīquit(Per)(Akt).
+(67) lowest seeking; night Aeneas and|sleep left.
+(68) surgit(Prä)(Akt) et(Kon) aetheriī(Adj)(G) spectāns(Prä)(Akt)(N) orientia(Prä)(Akt)(A) sōlis(G)
+(68) he|rises and of|ethereal looking rising of|sun
+(69) lūmina(N) rīte(Adv) cavīs(Adj)(Abl) undam(A) dē(Prp) flūmine(N) palmīs(Abl)
+(69) lights duly with|hollow wave from river with|palms
+(70) sustinet(Prä)(Akt) ac(Kon) tālīs(Adj)(Abl) effundit(Prä)(Akt) ad(Prp) aethera(A) vōcēs(A):
+(70) he|holds|up and with|such pours|out to sky voices:
+(71) ‘Nymphae(V), Laurentēs(Adj)(V) Nymphae(V), genus(N) amnibus(N)(Abl) unde(Adv) est(Prä)(Akt),
+(71) ‘Nymphs, Laurentian Nymphs, kind|race from|rivers whence is,
+(72) tūque(Pr)(N)(Kon), ō(ij) Thybri(V) tuō(Adj)(Abl) genitor(V) cum(Prp) flūmine(N)(Abl) sānctō(Adj)(Abl),
+(72) you|and, O Tiber your father with river holy,
+(73) accipite(Prä)(Imv)(Akt) Aenēān(A) et(Kon) tandem(Adv) arcēte(Prä)(Imv)(Akt) perīclīs(N)(Abl).
+(73) receive Aeneas and at|last ward|off from|dangers.
+(74) quō(Adv) tē(Pr)(A) cumque(Pt) lacus(N) miserantem(Prä)(Akt)(A) incommoda(A) nostra(Adj)(A)
+(74) to|where you ever lake pitying troubles our
+(75) fonte(N)(Abl) tenet(Prä)(Akt), quōcumque(Adv) solō(N)(Abl) pulcherrimus(Adj)(N) exīs(Prä)(Akt),
+(75) in|the|spring holds, wherever from|the|ground most|beautiful you|emerge,
+(76) semper(Adv) honōre(N)(Abl) meō(Adj)(Abl), semper(Adv) celebrābere(Fu1)(Pas) dōnīs(N)(Abl)
+(76) always with|honor my, always you|will|be|celebrated with|gifts
+(77) corniger(Adj)(N) Hesperidum(Adj)(G) fluvius(N) rēgnātor(N) aquārum(G).
+(77) horn|bearing of|the|Hesperides river ruler of|waters.
+(78) adsīs(Prä)(Knj)(Akt) ō(ij) tantum(Adv) et(Kon) propius(Adv)(Kmp) tua(Adj)(A) nūmina(A) firmēs(Prä)(Knj)(Akt).'
+(78) be|present O only and nearer your divine|powers you|may|strengthen.'
+(79) sīc(Adv) memorat(Prä)(Akt), gemināsque(Adj)(A)(Kon) legit(Prä)(Akt) dē(Prp) classe(N)(Abl) birēmīs(A)
+(79) thus he|speaks, twin|and chooses from the|fleet biremes
+(80) rēmigiōque(N)(Abl)(Kon) aptat(Prä)(Akt), sociōs(A) simul(Adv) īnstruit(Prä)(Akt) armīs(N)(Abl).
+(80) with|oarage|and he|fits, comrades at|the|same|time equips with|arms.
+(81) Ecce(ij) autem(Pt) subitum(Adj)(N) atque(Kon) oculīs(N)(Abl) mīrābile(Adj)(N) mōnstrum(N),
+(81) behold but|now sudden and to|the|eyes wonderful monster,
+(82) candida(Adj)(N) per(Prp) silvam(A) cum(Prp) fētū(N)(Abl) concolor(Adj)(N) albō(Adj)(Abl)
+(82) white through forest with offspring like|colored white
+(83) prōcubuit(Per)(Akt) viridīque(Adj)(Abl)(Kon) in(Prp) lītore(N)(Abl) cōnspicitur(Prä)(Pas) sūs(N);
+(83) has|lain|down green|and on the|shore is|seen sow;
+(84) quam(Pr)(A) pius(Adj)(N) Aenēās(N) tibi(Pr)(D) enim(Pt), tibi(Pr)(D), maxima(Adj)(V) Jūnō(V),
+(84) whom pious Aeneas to|you indeed, to|you, greatest Juno,
+(85) mactat(Prä)(Akt) sacra(A) ferēns(Prä)(Akt)(N) et(Kon) cum(Prp) grege(N)(Abl) sistit(Prä)(Akt) ad(Prp) āram(A).
+(85) sacrifices sacred|rites bearing and with flock he|sets at altar.
+(86) Thybris(N) eā(Pr)(Abl) fluvium(A), quam(Pr) longa(Adj)(N) est(Prä)(Akt), nocte(N)(Abl) tumentem(Prä)(Akt)(A)
+(86) Tiber on|that river, as long is, night swelling
+(87) lēniit(Per)(Akt), et(Kon) tacitā(Adj)(Abl) refluēns(Prä)(Akt)(N) ita(Adv) substitit(Per)(Akt) undā(N)(Abl),
+(87) soothed, and with|silent flowing|back thus stood|still with|wave,
+(88) mītis(Adj)(N) ut(Kon) in(Prp) mōrem(A) stāgnī(G) placidaeque(Adj)(G)(Kon) palūdis(G)
+(88) gentle as in manner of|a|pool of|calm|and of|marsh
+(89) sterneret(Imp)(Knj)(Akt) aequor(A) aquīs(N)(Abl), rēmō(N)(Abl) ut(Kon) luctāmen(N) abesset(Imp)(Knj)(Akt).
+(89) would|spread level|surface with|waters, for|the|oar so|that struggle might|be|absent.
+(90) ergō(Adv) iter(A) inceptum(Per)(Pas)(A) celerant(Prä)(Akt) rūmōre(N)(Abl) secundō(Adj)(Abl):
+(90) therefore journey begun they|hurry with|murmur favorable:
+(91) lābitur(Prä)(Akt) ūncta(Per)(Pas)(N) vadīs(N)(Abl) abiēs(N); mīrantur(Prä)(Akt) et(Kon) undae(N),
+(91) glides anointed|smeared in|the|shallows fir|ship; marvel and waves,
+(92) mīrātur(Prä)(Akt) nemus(N) īnsuētum(Adj)(N) fulgentia(Prä)(Akt)(A) longē(Adv)
+(92) admires grove unaccustomed shining far
+(93) scūta(A) virum(G) fluviō(N)(Abl) pictāsque(Per)(Pas)(A)(Kon) innāre(Inf)(Akt) carīnās(A).
+(93) shields of|men on|the|river painted|and to|float hulls.
+(94) ollī(Pr)(N) rēmigiō(N)(Abl) noctemque(A)(Kon) diemque(A)(Kon) fatīgant(Prä)(Akt)
+(94) those with|rowing night|and day|and they|wear|out
+(95) et(Kon) longōs(Adj)(A) superant(Prä)(Akt) flexūs(A), variīsque(Adj)(Abl)(Kon) teguntur(Prä)(Pas)
+(95) and long they|overcome bends, with|varied|and they|are|covered
+(96) arboribus(N)(Abl), viridīsque(Adj)(A)(Kon) secant(Prä)(Akt) placidō(Adj)(Abl) aequore(N)(Abl) silvās(A).
+(96) with|trees, green|and they|cut with|calm surface woods.
+(97) sōl(N) medium(Adj)(A) caelī(G) cōnscenderat(Plq)(Akt) igneus(Adj)(N) orbem(A)
+(97) sun middle of|the|sky had|climbed fiery circle
+(98) cum(Kon) mūrōs(A) arcemque(A)(Kon) procul(Adv) ac(Kon) rāra(Adj)(A) domōrum(G)
+(98) when walls citadel|and from|afar and scattered of|houses
+(99) tēcta(A) vident(Prä)(Akt), quae(Pr)(N) nunc(Adv) Rōmāna(Adj)(N) potentia(N) caelō(N)(Abl)
+(99) roofs they|see, which now Roman power to|the|sky
+(100) aequāvit(Per)(Akt), tum(Adv) rēs(A) inopēs(Adj)(A) Euandrus(N) habēbat(Imp)(Akt).
+(100) has|made|equal, then resources needy Evander was|holding.
+(101) ōcius(Adv)(Kmp) advertunt(Prä)(Akt) prōrās(A) urbīque(D)(Kon) propinquant(Prä)(Akt).
+(101) more|quickly they|turn|toward prows to|the|city|and they|approach.
+(102) Forte(Adv) diē(N)(Abl) sollemnem(Adj)(A) illō(Adj)(Abl) rēx(N) Arcas(Adj)(N) honōrem(A)
+(102) by|chance on|the|day solemn on|that king Arcadian honor
+(103) Amphitryōniadae(D) magnō(Adj)(Abl) dīvīsque(D)(Kon) ferēbat(Imp)(Akt)
+(103) to|the|Amphitryoniad with|great to|the|gods|and he|was|bringing
+(104) ante(Prp) urbem(A) in(Prp) lūcō(N)(Abl). Pallās(N) huic(Pr)(D) fīlius(N) ūnā(Adv),
+(104) before the|city in the|grove. Pallas to|this son together,
+(105) ūnā(Adv) omnēs(Adj)(N) juvenum(G) prīmī(Adj)(N) pauperque(Adj)(N)(Kon) senātus(N)
+(105) together all of|the|youths first poor|and senate
+(106) tūra(A) dabant(Imp)(Akt), tepidusque(Adj)(N)(Kon) cruor(N) fūmābat(Imp)(Akt) ad(Prp) ārās(A).
+(106) incense they|were|offering, warm|and gore|blood was|smoking at altars.
+(107) ut(Kon) celsās(Adj)(A) vīdēre(Per)(Akt) ratēs(A) atque(Kon) inter(Prp) opācum(Adj)(A)
+(107) as|soon|as high they|saw ships and amid shady
+(108) adlābī(Inf)(Akt) nemus(A) et(Kon) tacitōs(Adj)(A) incumbere(Inf)(Akt) rēmīs(N)(Abl),
+(108) to|glide|to the|grove and silent to|lean|upon on|the|oars,
+(109) terrentur(Prä)(Pas) vīsū(N)(Abl) subitō(Adj)(Abl) cūnctīque(Adj)(N)(Kon) relictīs(Per)(Pas)(Abl)
+(109) are|frightened by|the|sight sudden all|and with|left
+(110) cōnsurgunt(Prä)(Akt) mēnsīs(N)(Abl). audāx(Adj)(N) quōs(Pr)(A) rumpere(Inf)(Akt) Pallās(N)
+(110) rise|up from|the|tables. bold whom to|break Pallas
+(111) sacra(A) vetat(Prä)(Akt) raptōque(Per)(Pas)(Abl)(Kon) volat(Prä)(Akt) tēlō(N)(Abl) obvius(Adj)(N) ipse(Pr)(N),
+(111) rites forbids snatched|and flies with|weapon to|meet himself,
+(112) et(Kon) procul(Adv) ē(Prp) tumulō(N)(Abl): ‘juvenēs(V), quae(Pr)(N) causa(N) subēgit(Per)(Akt)
+(112) and from|afar from mound: ‘young|men, what cause has|driven
+(113) ignōtās(Adj)(A) temptāre(Inf)(Akt) viās(A)? quō(Adv) tenditis(Prä)(Akt)? ’ inquit(Prä)(Akt).
+(113) unknown to|try ways? where|to do|you|aim? he|says.
+(114) ‘quī(Pr)(N) genus(N)? unde(Adv) domō(N)(Abl)? pācemne(A)(Pt) hūc(Adv) fertis(Prä)(Akt) an(Kon) arma(A)? ’
+(114) ‘who kind? whence from|home? peace|? hither do|you|bring or arms?
+(115) tum(Adv) pater(N) Aenēās(N) puppī(N)(Abl) sīc(Adv) fātur(Prä)(Akt) ab(Prp) altā(Adj)(Abl)
+(115) then father Aeneas on|the|stern thus speaks from high
+(116) pāciferaeque(Adj)(G)(Kon) manū(N)(Abl) rāmum(A) praetendit(Prä)(Akt) olīvae(G):
+(116) peace|bearing|and with|hand branch he|holds|forth of|olive:
+(117) ‘Trōjugenās(Adj)(A) ac(Kon) tēla(A) vidēs(Prä)(Akt) inimīca(Adj)(A) Latīnīs(Adj)(D),
+(117) ‘Trojan|born and weapons you|see hostile to|the|Latins,
+(118) quōs(Pr)(A) illī(Pr)(N) bellō(N)(Abl) profugōs(Adj)(A) ēgēre(Per)(Akt) superbō(Adj)(Abl).
+(118) whom they by|war exiled drove haughty.
+(119) Euandrum(A) petimus(Prä)(Akt). ferte(Prä)(Imv)(Akt) haec(Pr)(A) et(Kon) dīcite(Prä)(Imv)(Akt) lectōs(Per)(Pas)(A)
+(119) Evander we|seek. bring these and say chosen
+(120) Dardaniae(Adj)(G) vēnisse(Inf)(Per)(Akt) ducēs(A) socia(Adj)(A) arma(A) rogantīs(Prä)(Akt)(A).'
+(120) of|Dardania to|have|come leaders allied arms asking.'
+(121) obstipuit(Per)(Akt) tantō(Adj)(Abl) percussus(Per)(Pas)(N) nōmine(N)(Abl) Pallās(N):
+(121) was|astonished by|so|great smitten by|name Pallas:
+(122) ‘ēgredere(Prä)(Imv)(Pas) ō(ij) quīcumque(Pr)(N) es’(Prä)(Akt) ait(Prä)(Akt) ‘cōramque(Prp)(Kon) parentem(A)
+(122) ‘come|forth O whoever you|are he|says ‘before|and parent
+(123) adloquere(Prä)(Imv)(Akt) ac(Kon) nostrīs(Adj)(Abl) succēde(Prä)(Imv)(Akt) penātibus(N)(Abl) hospes(V).'
+(123) address and our step|in to|the|household|gods guest.'
+(124) excēpitque(Per)(Akt)(Kon) manū(N)(Abl) dextramque(Adj)(A)(Kon) amplexus(Per)(Akt)(N) inhaesit(Per)(Akt);
+(124) received|and with|hand right|hand|and having|embraced he|clung;
+(125) prōgressī(Per)(Akt)(N) subeunt(Prä)(Akt) lūcō(N)(Abl) fluviumque(A)(Kon) relinquunt(Prä)(Akt).
+(125) having|advanced they|go|under the|grove the|river|and they|leave.
+(126) Tum(Adv) rēgem(A) Aenēās(N) dictīs(N)(Abl) adfātur(Prä)(Akt) amīcīs(Adj)(Abl):
+(126) then the|king Aeneas with|words addresses friendly:
+(127) ‘optime(Adj)(Sup)(V) Grājugenum(Adj)(G), cui(Pr)(D) mē(Pr)(A) Fortūna(N) precārī(Inf)(Pas)
+(127) ‘best of|the|Greeks, to|whom me Fortune to|entreat
+(128) et(Kon) vittā(N)(Abl) cōmptōs(Per)(Pas)(A) voluit(Per)(Akt) praetendere(Inf)(Akt) rāmōs(A),
+(128) and with|fillet adorned has|willed to|hold|forth branches,
+(129) nōn(Pt) equidem(Pt) extimuī(Per)(Akt) Danaum(G) quod(Kon) ductor(N) et(Kon) Arcas(Adj)(N)
+(129) not indeed I|feared of|the|Danaans because leader and Arcadian
+(130) quodque(Kon) ā(Prp) stirpe(N)(Abl) forēs(Imp)(Knj)(Akt) geminīs(Adj)(Abl) conjūnctus(Per)(Pas)(N) Atrīdīs(N)(Abl);
+(130) and|because from stock you|would|be with|twin joined Atreidae;
+(131) sed(Kon) mea(Adj)(N) mē(Pr)(A) virtūs(N) et(Kon) sāncta(Adj)(N) ōrācula(N) dīvum(G)
+(131) but my me valor and sacred oracles of|the|gods
+(132) cognātīque(Adj)(N)(Kon) patrēs(N), tua(Adj)(N) terrīs(N)(Abl) dīdita(Per)(Pas)(N) fāma(N),
+(132) kindred|and fathers, your through|lands spread fame,
+(133) conjūnxēre(Per)(Akt) tibi(Pr)(D) et(Kon) fātīs(N)(Abl) ēgēre(Per)(Akt) volentem(Prä)(Akt)(A).
+(133) have|joined to|you and by|the|fates have|driven willing.
+(134) Dardanus(N), Īliacae(Adj)(G) prīmus(Adj)(N) pater(N) urbis(G) et(Kon) auctor(N),
+(134) Dardanus, of|Ilium first father of|the|city and founder,
+(135) Ēlectrā(N)(Abl), ut(Kon) Grāī(N) perhibent(Prä)(Akt), Atlantide(N)(Abl) crētus(Per)(Pas)(N),
+(135) from|Electra, as Greeks report, from|Atlantis|daughter born,
+(136) advehitur(Prä)(Pas) Teucrōs(A); Ēlectram(A) maximus(Adj)(N) Atlās(N)
+(136) comes to|the|Teucrians; Electra greatest Atlas
+(137) ēdidit(Per)(Akt), aetheriōs(Adj)(A) umerō(N)(Abl) quī(Pr)(N) sustinet(Prä)(Akt) orbīs(A).
+(137) has|produced, ethereal on|shoulder who sustains spheres.
+(138) vōbīs(Pr)(D) Mercurius(N) pater(N) est(Prä)(Akt), quem(Pr)(A) candida(Adj)(N) Maia(N)
+(138) for|you Mercury father is, whom fair Maia
+(139) Cyllēnae(Adj)(G) gelidō(Adj)(Abl) conceptum(Per)(Pas)(A) vertice(N)(Abl) fūdit(Per)(Akt);
+(139) of|Cyllene chilly conceived summit has|brought|forth;
+(140) at(Kon) Maiam(A), audītīs(Per)(Pas)(Abl) sī(Kon) quicquam(Pr)(N) crēdimus(Prä)(Akt), Atlās(N),
+(140) but Maia, to|things|heard if anything we|believe, Atlas,
+(141) īdem(Pr)(N) Atlās(N) generat(Prä)(Akt) caelī(G) quī(Pr)(N) sīdera(A) tollit(Prä)(Akt).
+(141) same Atlas begets of|the|sky who stars lifts.
+(142) sīc(Adv) genus(N) ambōrum(Adj)(G) scindit(Prä)(Akt) sē(Pr)(A) sanguine(Abl) ab(Prp) ūnō(Adj)(Abl).
+(142) thus race of|both splits itself with|blood from one.
+(143) hīs(Pr)(Abl) frētus(Per)(Akt)(N) nōn(Pt) lēgātōs(A) neque(Kon) prīma(Adj)(A) per(Prp) artem(A)
+(143) on|these relying not envoys nor first through skill
+(144) temptāmenta(A) tuī(Pr)(G) pepigī(Per)(Akt); mē(Pr)(A), mē(Pr)(A) ipse(Pr)(N) meumque(Adj)(A)(Kon)
+(144) attempts of|you I|made; me, me myself my|and
+(145) objēcī(Per)(Akt) caput(A) et(Kon) supplex(Adj)(N) ad(Prp) līmina(A) vēnī(Per)(Akt).
+(145) before|threw|I head and suppliant to thresholds I|came.
+(146) gēns(N) eadem(Pr)(N), quae(Pr)(N) tē(Pr)(A), crūdēlī(Adj)(Abl) Daunia(Adj)(Abl) bellō(N)(Abl)
+(146) nation|people the|same, which you, cruel Daunian with|war
+(147) īnsequitur(Prä)(Akt); nōs(Pr)(A) sī(Kon) pellant(Prä)(Knj)(Akt) nihil(N) āfore(Inf)(Akt) crēdunt(Prä)(Akt)
+(147) pursues; us if they|may|drive nothing to|be|away they|believe
+(148) quīn(Kon) omnem(Adj)(A) Hesperiam(A) penitus(Adv) sua(Adj)(A) sub(Prp) juga(A) mittant(Prä)(Knj)(Akt),
+(148) indeed|that all Hesperia deeply their under yokes they|may|send,
+(149) et(Kon) mare(A) quod(Pr)(A) suprā(Adv) teneant(Prä)(Knj)(Akt) quodque(Pr)(A)(Kon) adluit(Prä)(Akt) īnfrā(Adv).
+(149) and sea which above they|may|hold which|and washes below.
+(150) accipe(Prä)(Imv)(Akt) dāque(Prä)(Imv)(Akt)(Kon) fidem(A). sunt(Prä)(Akt) nōbīs(Pr)(D) fortia(Adj)(N) bellō(N)(Abl)
+(150) receive give|and pledge. are to|us strong in|war
+(151) pectora(N), sunt(Prä)(Akt) animī(N) et(Kon) rēbus(N)(Abl) spectāta(Per)(Pas)(N) juventūs(N).'
+(151) hearts, are spirits and in|things having|been|tested youth.'
+(152) Dīxerat(Plq)(Akt) Aenēās(N). ille(Pr)(N) ōs(A) oculōsque(A)(Kon) loquentis(Prä)(Akt)(G)
+(152) had|spoken Aeneas. that|one face eyes|and of|the|speaking
+(153) jamdūdum(Adv) et(Kon) tōtum(Adj)(A) lūstrābat(Imp)(Akt) lūmine(N)(Abl) corpus(A).
+(153) long|since and whole was|surveying with|light body.
+(154) tum(Adv) sīc(Adv) pauca(Adj)(A) refert(Prä)(Akt): ‘ut(Kon) tē(Pr)(A), fortissime(Adj)(Sup)(V) Teucrum(G),
+(154) then thus few he|says: ‘how you, bravest of|Teucrians,
+(155) accipiō(Prä)(Akt) agnōscōque(Prä)(Akt)(Kon) libēns(Adj)(N)! ut(Kon) verba(A) parentis(G)
+(155) I|receive I|recognize|and willing! how words of|the|parent
+(156) et(Kon) vōcem(A) Anchīsae(G) magnī(Adj)(G) vultumque(A)(Kon) recordor(Prä)(Akt)!
+(156) and voice of|Anchises great face|and I|recall!
+(157) nam(Kon) meminī(Per)(Akt) Hēsionae(G) vīsentem(Prä)(Akt)(A) rēgna(A) sorōris(G)
+(157) for I|remember of|Hesione visiting realms of|sister
+(158) Lāomedontiadēn(A) Priamum(A) Salamīna(A) petentem(Prä)(Akt)(A)
+(158) descendant|of|Laomedon Priam Salamis seeking
+(159) prōtinus(Adv) Arcadiae(G) gelidōs(Adj)(A) invīsere(Inf)(Akt) fīnīs(A).
+(159) straightway of|Arcadia chilly to|visit boundaries.
+(160) tum(Adv) mihi(Pr)(D) prīma(Adj)(N) genās(A) vestībat(Imp)(Akt) flōre(N)(Abl) juventās(N),
+(160) then for|me first cheeks was|clothing with|flower youth,
+(161) mīrābarque(Imp)(Akt)(Kon) ducēs(A) Teucrōs(A), mīrābar(Imp)(Akt) et(Kon) ipsum(Pr)(A)
+(161) I|was|admiring|and leaders Teucrians, I|was|admiring and himself
+(162) Lāomedontiadēn(A); sed(Kon) cūnctīs(Adj)(Abl) altior(Adj)(Kmp)(N) ībat(Imp)(Akt)
+(162) descendant|of|Laomedon; but than|all taller was|going
+(163) Anchīsēs(N). mihi(Pr)(D) mēns(N) juvenālī(Adj)(Abl) ārdēbat(Imp)(Akt) amōre(N)(Abl)
+(163) Anchises. for|me mind youthful was|burning with|love
+(164) compellāre(Inf)(Akt) virum(A) et(Kon) dextrae(D) conjungere(Inf)(Akt) dextram(A);
+(164) to|address the|man and to|the|right|hand to|join|together right|hand;
+(165) accessī(Per)(Akt) et(Kon) cupidus(Adj)(N) Pheneī(G) sub(Prp) moenia(A) dūxī(Per)(Akt).
+(165) stepped|I|up and eager of|Pheneus under walls I|led.
+(166) ille(Pr)(N) mihi(Pr)(D) īnsignem(Adj)(A) pharetram(A) Lyciāsque(Adj)(A)(Kon) sagittās(A)
+(166) he to|me distinguished quiver Lycian|and arrows
+(167) discēdēns(Prä)(Akt)(N) chlamydemque(A)(Kon) aurō(N)(Abl) dedit(Per)(Akt) intertextam(Per)(Pas)(A),
+(167) departing cloak|and with|gold he|gave interwoven,
+(168) frēnaque(A)(Kon) bīna(Adj)(A) meus(Pr)(N) quae(Pr)(N) nunc(Adv) habet(Prä)(Akt) aurea(Adj)(A) Pallās(N).
+(168) reins|and two|each my which now has golden Pallas.
+(169) ergō(Adv) et(Kon) quam(Pr)(A) petitis(Prä)(Akt) jūncta(Per)(Pas)(N) est(Prä)(Akt) mihi(Pr)(D) foedere(N)(Abl) dextra(N),
+(169) therefore and which you|seek joined is to|me by|treaty right|hand,
+(170) et(Kon) lūx(N) cum(Kon) prīmum(Adv) terrīs(D) sē(Pr)(A) crāstina(Adj)(N) reddet(Fu1)(Akt),
+(170) and light when first to|the|lands itself tomorrows will|give|back,
+(171) auxiliō(N)(Abl) laetōs(Adj)(A) dīmittam(Fu1)(Akt) opibusque(N)(Abl)(Kon) juvābō(Fu1)(Akt).
+(171) with|help glad I|will|send|away with|resources|and I|will|help.
+(172) intereā(Adv) sacra(A) haec(Pr)(A), quandō(Kon) hūc(Adv) vēnistis(Per)(Akt) amīcī(V),
+(172) meanwhile rites these, since hither you|have|come friends,
+(173) annua(Adj)(A), quae(Pr)(N) differre(Inf)(Akt) nefās(N), celebrāte(Prä)(Imv)(Akt) faventēs(Prä)(Akt)(N)
+(173) yearly, which to|defer wrong, celebrate favoring
+(174) nōbīscum(Pr)(Abl)(Prp), et(Kon) jam(Adv) nunc(Adv) sociōrum(G) adsuēscite(Prä)(Imv)(Akt) mēnsīs(D).'
+(174) with|us, and now now of|allies accustom|yourselves to|the|tables.'
+(175) Haec(Pr)(N) ubi(Kon) dicta(Per)(Pas)(N), dapēs(A) jubet(Prä)(Akt) et(Kon) sublāta(Per)(Pas)(N) repōnī(Inf)(Pas)
+(175) these|things when having|been|said, feasts he|orders and having|been|lifted to|be|set|down|again
+(176) pōcula(A) grāmineōque(Adj)(Abl)(Kon) virōs(A) locat(Prä)(Akt) ipse(Pr)(N) sedīlī(N)(Abl),
+(176) cups grassy|and men places himself on|seat,
+(177) praecipuumque(Adj)(A)(Kon) torō(N)(Abl) et(Kon) villōsī(Adj)(G) pelle(N)(Abl) leōnis(G)
+(177) special|and on|couch and shaggy with|skin of|lion
+(178) accipit(Prä)(Akt) Aenēān(A) soliōque(N)(Abl)(Kon) invītat(Prä)(Akt) acernō(Adj)(Abl).
+(178) receives Aeneas with|throne|and invites of|maple.
+(179) tum(Adv) lēctī(Per)(Pas)(N) juvenēs(N) certātim(Adv) āraeque(G)(Kon) sacerdōs(N)
+(179) then chosen youths in|rivalry of|the|altar|and priest
+(180) vīscera(A) tosta(Per)(Pas)(A) ferunt(Prä)(Akt) taurōrum(G), onerantque(Prä)(Akt)(Kon) canistrīs(N)(Abl)
+(180) entrails roasted they|carry of|bulls, they|load|and with|baskets
+(181) dōna(A) labōrātae(Per)(Pas)(G) Cereris(G), Bacchumque(A)(Kon) ministrant(Prä)(Akt).
+(181) gifts having|been|worked of|Ceres, Bacchus|and they|serve.
+(182) vēscitur(Prä)(Akt) Aenēās(N) simul(Adv) et(Kon) Trōjāna(Adj)(N) juventūs(N)
+(182) feeds Aeneas at|the|same|time and Trojan youth
+(183) perpetuī(Adj)(G) tergō(N)(Abl) bovis(G) et(Kon) lūstrālibus(Adj)(Abl) extīs(N)(Abl).
+(183) continuous with|back of|ox and purificatory entrails.
+(184) Postquam(Kon) exēmpta(Per)(Pas)(N) famēs(N) et(Kon) amor(N) compressus(Per)(Pas)(N) edendī(Ger)(G),
+(184) after having|been|removed hunger and desire compressed of|eating,
+(185) rēx(N) Euandrus(N) ait(Prä)(Akt): ‘nōn(Pt) haec(Pr)(N) sollemnia(Adj)(N) nōbīs(Pr)(D),
+(185) king Evander says: ‘not these festal|rites for|us,
+(186) hās(Pr)(A) ex(Prp) mōre(N)(Abl) dapēs(A), hanc(Pr)(A) tantī(Adj)(G) nūminis(G) āram(A)
+(186) these from custom feasts, this so|great of|divinity altar
+(187) vāna(Adj)(N) superstitiō(N) veterumque(Adj)(G)(Kon) ignāra(Adj)(N) deōrum(G)
+(187) empty superstition of|the|ancients|and ignorant of|gods
+(188) imposuit(Per)(Akt): saevīs(Adj)(Abl), hospes(V) Trōjāne(Adj)(V), perīclīs(N)(Abl)
+(188) has|imposed: with|cruel, guest Trojan, with|dangers
+(189) servātī(Per)(Pas)(N) facimus(Prä)(Akt) meritōsque(Adj)(A)(Kon) novāmus(Prä)(Akt) honōrēs(A).
+(189) saved we|do deserved|and we|renew honors.
+(190) jam(Adv) prīmum(Adv) saxīs(N)(Abl) suspēnsam(Per)(Pas)(A) hanc(Pr)(A) aspice(Prä)(Imv)(Akt) rūpem(A),
+(190) now first on|rocks hung|up this look|at rock,
+(191) disjectae(Per)(Pas)(G) procul(Adv) ut(Kon) mōlēs(N) dēsertaque(Adj)(N)(Kon) montis(G)
+(191) of|scattered far how mass deserted|and of|mountain
+(192) stat(Prä)(Akt) domus(N) et(Kon) scopulī(N) ingentem(Adj)(A) trāxēre(Per)(Akt) ruīnam(A).
+(192) stands house and crags huge drew ruin.
+(193) hīc(Adv) spēlunca(N) fuit(Per)(Akt) vastō(Adj)(Abl) summōta(Per)(Pas)(N) recessū(N)(Abl),
+(193) here cave was vast moved|back with|recess,
+(194) sēmihominis(Adj)(G) Cācī(G) faciēs(N) quam(Pr)(A) dīra(Adj)(N) tenēbat(Imp)(Akt)
+(194) half|human of|Cacus appearance which dreadful was|holding
+(195) sōlis(G) inaccessam(Per)(Pas)(A) radiīs(N)(Abl); semperque(Adv)(Kon) recentī(Adj)(Abl)
+(195) of|sun unapproached by|rays; always|and recent
+(196) caede(N)(Abl) tepēbat(Imp)(Akt) humus(N), foribusque(N)(Abl)(Kon) adfixa(Per)(Pas)(N) superbīs(Adj)(Abl)
+(196) with|slaughter was|warm ground, on|doors|and having|been|fastened proud
+(197) ōra(N) virum(G) trīstī(Adj)(Abl) pendēbant(Imp)(Akt) pallida(Adj)(N) tābō(N)(Abl).
+(197) faces of|men with|sad were|hanging pale with|gore.
+(198) huic(Pr)(D) mōnstrō(D) Volcānus(N) erat(Imp)(Akt) pater(N): illius(Pr)(G) ātrōs(Adj)(A)
+(198) to|this monster Vulcan was father: of|that black
+(199) ōre(N)(Abl) vomēns(Prä)(Akt)(N) ignīs(A) magnā(Adj)(Abl) sē(Pr)(A) mōle(N)(Abl) ferēbat(Imp)(Akt).
+(199) by|mouth spewing fires with|great himself with|bulk was|bearing.
+(200) attulit(Per)(Akt) et(Kon) nōbīs(Pr)(D) aliquandō(Adv) optantibus(Prä)(Akt)(D) aetās(N)
+(200) brought and to|us at|some|time wishing age|time
+(201) auxilium(A) adventumque(A)(Kon) deī(G). nam(Kon) maximus(Adj)(Sup)(N) ultor(N)
+(201) help arrival|and of|a|god. for greatest avenger
+(202) tergeminī(Adj)(G) nece(N)(Abl) Gēryonae(G) spoliīsque(N)(Abl)(Kon) superbus(Adj)(N)
+(202) of|threefold with|slaying of|Geryon with|spoils|and proud
+(203) Alcīdēs(N) aderat(Imp)(Akt) taurōsque(A)(Kon) hāc(Pr)(Abl) victor(N) agēbat(Imp)(Akt)
+(203) Alcides was|present bulls|and by|this victor was|driving
+(204) ingentīs(Adj)(A), vallemque(A)(Kon) bovēs(N) amnemque(A)(Kon) tenēbant(Imp)(Akt).
+(204) huge, valley|and cattle river|and were|holding.
+(205) at(Kon) furiīs(N)(Abl) Cācī(G) mēns(N) effera(Adj)(N), nē(Kon) quid(Pr)(N) inausum(Per)(Pas)(N)
+(205) but by|furies of|Cacus mind wild, lest anything un|attempted
+(206) aut(Kon) intractātum(Per)(Pas)(N) scelerisve(G)(Kon) dolīve(G)(Kon) fuisset(Plq)(Knj)(Akt),
+(206) or not|handled of|crime|or of|deceit|or would|have|been,
+(207) quattuor(Adj)(A) ā(Prp) stabulīs(N)(Abl) praestantī(Adj)(Abl) corpore(N)(Abl) taurōs(A)
+(207) four from stalls excellent with|body bulls
+(208) āvertit(Per)(Akt), totidem(Adj)(A) fōrmā(N)(Abl) superante(Prä)(Akt)(Abl) juvencās(A).
+(208) turned|away, just|so|many in|form surpassing heifers.
+(209) atque(Kon) hōs(Pr)(A), nē(Kon) qua(Pr)(N) forent(Imp)(Knj)(Akt) pedibus(N)(Abl) vestīgia(N) rēctīs(Per)(Pas)(Abl),
+(209) and|also these, lest any they|were with|feet tracks straight,
+(210) caudā(N)(Abl) in(Prp) spēluncam(A) tractōs(Per)(Pas)(A) versīsque(Per)(Pas)(Abl)(Kon) viārum(G)
+(210) by|tail into cave dragged turned|and of|paths
+(211) indiciīs(N)(Abl) raptōs(Per)(Pas)(A) saxō(N)(Abl) occultābat(Imp)(Akt) opācō(Adj)(Abl);
+(211) by|signs stolen with|stone was|hiding dark;
+(212) quaerentī(Prä)(Akt)(D) nūlla(Adj)(N) ad(Prp) spēluncam(A) signa(N) ferēbant(Imp)(Akt).
+(212) to|the|one|seeking no to the|cave signs were|bearing.
+(213) intereā(Adv), cum(Kon) jam(Adv) stabulīs(Abl) saturāta(Per)(Pas)(N) movēret(Imp)(Knj)(Akt)
+(213) meanwhile, when now in|the|stalls having|been|filled was|moving
+(214) Amphitryōniadēs(N) armenta(N) abitumque(A)(Kon) parāret(Imp)(Knj)(Akt),
+(214) Amphitryon|descendant herds and|departure was|preparing,
+(215) discessū(Abl) mūgīre(Inf)(Akt) bovēs(N) atque(Kon) omne(Adj)(N) querēlīs(Abl)
+(215) at|the|departure to|low cattle and the|whole with|complaints
+(216) implērī(Inf)(Pas) nemus(N) et(Kon) collēs(N) clāmōre(Abl) relinquī(Inf)(Pas).
+(216) to|be|filled grove and hills with|shouting to|be|left.
+(217) reddidit(Per)(Akt) ūna(Adj)(N) boum(G) vōcem(A) vastōque(Adj)(Abl)(Kon) sub(Prp) antrō(Abl)
+(217) gave|back one of|the|cattle voice vast|and under the|cave
+(218) mūgiit(Per)(Akt) et(Kon) Cācī(G) spem(A) cūstōdīta(Per)(Pas)(N) fefellit(Per)(Akt).
+(218) lowed and of|Cacus hope the|guarded|one deceived.
+(219) hīc(Adv) vērō(Pt) Alcīdae(D) furiīs(Abl) exārserat(Plq)(Akt) ātrō(Adj)(Abl)
+(219) here indeed to|Alcides with|furies had|blazed with|black
+(220) felle(Abl) dolor(N): rapit(Prä)(Akt) arma(A) manū(Abl) nōdīsque(Abl)(Kon) gravātum(Per)(Pas)(A)
+(220) bile pain: seizes arms with|hand and|with|knots weighed|down
+(221) rōbur(A), et(Kon) āeriī(Adj)(G) cursū(Abl) petit(Prä)(Akt) ardua(Adj)(A) montis(G).
+(221) club, and of|the|airy with|a|run seeks steep|heights of|the|mountain.
+(222) tum(Adv) prīmum(Adv) nostrī(Pr)(N) Cācum(A) vīdēre(Per)(Akt) timentem(Prä)(Akt)(A)
+(222) then first our Cacus saw fearful
+(223) turbātumque(Per)(Pas)(A)(Kon) oculīs(Abl); fugit(Prä)(Akt) īlicet(Adv) ōcior(Adj)(Kmp)(N) Eurō(Abl)
+(223) and|disturbed in|his|eyes; he|flees straightway swifter than|Eurus
+(224) spēluncamque(A)(Kon) petit(Prä)(Akt), pedibus(Abl) timor(N) addidit(Per)(Akt) ālās(A).
+(224) the|cave|and he|seeks, to|the|feet fear added wings.
+(225) ut(Kon) sēsē(Pr)(A) inclūsit(Per)(Akt) ruptīsque(Per)(Pas)(Abl)(Kon) immāne(Adj)(A) catēnīs(Abl)
+(225) as himself shut|in and|with|broken huge chains
+(226) dējēcit(Per)(Akt) saxum(A), ferrō(Abl) quod(Pr)(N) et(Kon) arte(Abl) paternā(Adj)(Abl)
+(226) he|cast|down rock, with|iron which and with|skill paternal
+(227) pendēbat(Imp)(Akt), fultōsque(Per)(Pas)(A)(Kon) ēmūniit(Per)(Akt) obice(Abl) postīs(A),
+(227) was|hanging, and|propped he|fortified with|a|bar the|doorposts,
+(228) ecce(ij) furēns(Prä)(Akt)(N) animīs(Abl) aderat(Imp)(Akt) Tīrynthius(N) omnemque(Adj)(A)(Kon)
+(228) behold raging in|spirit was|present the|Tirynthian and|every
+(229) accessum(A) lūstrāns(Prä)(Akt)(N) hūc(Adv) ōra(A) ferēbat(Imp)(Akt) et(Kon) illūc(Adv),
+(229) approach surveying hither looks he|was|bearing and thither,
+(230) dentibus(Abl) īnfrendēns(Prä)(Akt)(N). ter(Adv) tōtum(Adj)(A) fervidus(Adj)(N) īrā(Abl)
+(230) with|teeth gnashing. thrice whole glowing with|wrath
+(231) lūstrat(Prä)(Akt) Aventīnī(G) montem(A), ter(Adv) saxea(Adj)(A) temptat(Prä)(Akt)
+(231) he|traverses of|Aventine mountain, thrice stony he|tries
+(232) līmina(A) nēquīquam(Adv), ter(Adv) fessus(Adj)(N) valle(Abl) resēdit(Per)(Akt).
+(232) thresholds in|vain, thrice weary in|the|valley settled.
+(233) stābat(Imp)(Akt) acūta(Adj)(N) silex(N) praecīsīs(Per)(Pas)(Abl) undique(Adv) saxīs(Abl)
+(233) was|standing sharp flint with|cut on|all|sides rocks
+(234) spēluncae(G) dorsō(Abl) īnsurgēns(Prä)(Akt)(N), altissima(Adj)(Sup)(N) vīsū(Spn)(Abl),
+(234) of|the|cave on|the|back rising, highest to|see,
+(235) dīrārum(Adj)(G) nīdīs(Abl) domus(N) opportūna(Adj)(N) volucrum(G).
+(235) of|dire for|nests house suitable of|birds.
+(236) hanc(Pr)(A), ut(Kon) prōna(Adj)(N) jugō(Abl) laevum(Adj)(A) incumbēbat(Imp)(Akt) ad(Prp) amnem(A),
+(236) this, as sloping on|the|ridge to|the|left was|leaning toward the|river,
+(237) dexter(Adj)(N) in(Prp) adversum(Adv) nītēns(Prä)(Akt)(N) concussit(Per)(Akt) et(Kon) īmīs(Adj)(Abl)
+(237) right|hand against the|opposite pressing he|shook and from|the|lowest
+(238) āvulsam(Per)(Pas)(A) solvit(Per)(Akt) rādīcibus(Abl), inde(Adv) repente(Adv)
+(238) torn|off he|loosened from|the|roots, from|there suddenly
+(239) impulit(Per)(Akt); impulsū(Abl) quō(Pr)(Abl) maximus(Adj)(Sup)(N) intonat(Prä)(Akt) aethēr(N),
+(239) he|drove; with|a|shock by|which greatest thunders sky,
+(240) dissultant(Prä)(Akt) rīpae(N) refluitque(Prä)(Akt)(Kon) exterritus(Adj)(N) amnis(N).
+(240) leap|apart banks and|flows|back terrified river.
+(241) at(Kon) specus(N) et(Kon) Cācī(G) dētēcta(Per)(Pas)(N) appāruit(Per)(Akt) ingēns(Adj)(N)
+(241) but cave and of|Cacus uncovered appeared huge
+(242) rēgia(N), et(Kon) umbrōsae(Adj)(N) penitus(Adv) patuēre(Per)(Akt) cavernae(N),
+(242) the|palace, and shadowy deep|within stood|open caverns,
+(243) nōn(Pt) secus(Adv) ac(Kon) sī(Kon) quā(Pr)(Abl) penitus(Adv) vī(Abl) terra(N) dehīscēns(Prä)(Akt)(N)
+(243) not otherwise than if by|some deep|within force earth gaping
+(244) īnfernās(Adj)(A) reseret(Prä)(Knj)(Akt) sēdēs(A) et(Kon) rēgna(A) reclūdat(Prä)(Knj)(Akt)
+(244) infernal should|unbar seats and kingdoms should|open
+(245) pallida(Adj)(A), dīs(D) invīsa(Per)(Pas)(A), superque(Adv)(Kon) immāne(Adj)(A) barāthrum(A)
+(245) pale, to|the|gods hated, and|above enormous chasm
+(246) cernātur(Prä)(Knj)(Pas), trepident(Prä)(Knj)(Akt) immissō(Per)(Pas)(Abl) lūmine(Abl) Mānēs(N).
+(246) might|be|seen, might|tremble with|sent|in light Spirits|of|the|Dead.
+(247) ergō(Kon) īnspērātā(Per)(Pas)(Abl) dēprēnsum(Per)(Pas)(A) lūce(Abl) repente(Adv)
+(247) therefore by|unexpected caught in|light suddenly
+(248) inclūsumque(Per)(Pas)(A)(Kon) cavō(Adj)(Abl) saxō(Abl) atque(Kon) īnsuēta(Adj)(A) rudentem(Prä)(Akt)(A)
+(248) and|shut|in in|a|hollow stone and unusual roaring
+(249) dēsuper(Adv) Alcīdēs(N) tēlīs(Abl) premit(Prä)(Akt), omniaque(Adj)(A)(Kon) arma(A)
+(249) from|above Alcides with|weapons presses, all|and arms
+(250) advocat(Prä)(Akt) et(Kon) rāmīs(Abl) vastīsque(Adj)(Abl)(Kon) molāribus(Adj)(Abl) īnstat(Prä)(Akt).
+(250) calls and with|branches and|vast boulders presses|on.
+(251) ille(Pr)(N) autem(Pt), neque(Kon) enim(Pt) fuga(N) jam(Adv) super(Adv) ūlla(Adj)(N) perīclī(G),
+(251) that|one but|now, and|not for flight now remaining any of|danger,
+(252) faucibus(Abl) ingentem(Adj)(A) fūmum(A) (mīrābile(Adj)(N) dictū(Spn)(Abl))
+(252) with|jaws huge smoke (marvelous to|say)
+(253) ēvomit(Prä)(Akt) involvitque(Prä)(Akt)(Kon) domum(A) cālīgine(Abl) caecā(Adj)(Abl)
+(253) spews|out and|wraps house with|gloom blind
+(254) prōspectum(A) ēripiēns(Prä)(Akt)(N) oculīs(Abl), glomeratque(Prä)(Akt)(Kon) sub(Prp) antrō(Abl)
+(254) view snatching from|the|eyes, and|rolls under cave
+(255) fūmiferam(Adj)(A) noctem(A) commixtīs(Per)(Pas)(Abl) igne(Abl) tenebrīs(Abl).
+(255) smoke|bearing night with|mingled by|fire darkness.
+(256) nōn(Pt) tulit(Per)(Akt) Alcīdēs(N) animīs(Abl), sēque(Pr)(A)(Kon) ipse(Pr)(N) per(Prp) ignem(A)
+(256) not he|endured Alcides in|spirit, and|himself himself through fire
+(257) praecipitī(Adj)(Abl) jēcit(Per)(Akt) saltū(Abl), quā(Pr)(Abl) plūrimus(Adj)(Sup)(N) undam(A)
+(257) headlong he|cast with|a|leap, where most billow
+(258) fūmus(N) agit(Prä)(Akt) nebulāque(Abl)(Kon) ingēns(Adj)(N) specus(N) aestuat(Prä)(Akt) ātrā(Adj)(Abl).
+(258) smoke drives and|with|mist huge cave seethes dark.
+(259) hīc(Adv) Cācum(A) in(Prp) tenebrīs(Abl) incendia(A) vāna(Adj)(A) vomentem(Prä)(Akt)(A)
+(259) here Cacus in darkness fires empty spewing
+(260) corripit(Prä)(Akt) in(Prp) nōdum(A) complexus(Per)(Akt)(N), et(Kon) angit(Prä)(Akt) inhaerēns(Prä)(Akt)(N)
+(260) seizes into knot having|embraced, and chokes clinging
+(261) ēlīsōs(Per)(Pas)(A) oculōs(A) et(Kon) siccum(Adj)(A) sanguine(Abl) guttur(A).
+(261) crushed eyes and dry with|blood throat.
+(262) panditur(Prä)(Pas) extemplō(Adv) foribus(Abl) domus(N) ātra(Adj)(N) revulsīs(Per)(Pas)(Abl)
+(262) is|opened straightway at|the|doors house black with|wrenched|off
+(263) abstractaeque(Per)(Pas)(N)(Kon) bovēs(N) abjūrātaeque(Per)(Pas)(N)(Kon) rapīnae(N)
+(263) and|dragged|away cattle and|disowned plunders
+(264) caelō(D) ostenduntur(Prä)(Pas), pedibusque(Abl)(Kon) īnfōrme(Adj)(A) cadāver(A)
+(264) to|the|sky are|shown, and|by|the|feet misshapen corpse
+(265) prōtrahitur(Prä)(Pas). nequeunt(Prä)(Akt) explērī(Inf)(Pas) corda(N) tuendō(Ger)(Abl)
+(265) is|dragged|forth. cannot to|be|sated hearts by|gazing
+(266) terribilīs(Adj)(A) oculōs(A), vultum(A) villōsaque(Adj)(A)(Kon) saetīs(Abl)
+(266) terrible eyes, face shaggy|and with|bristles
+(267) pectora(N) sēmiferī(G) atque(Kon) exstīnctōs(Per)(Pas)(A) faucibus(Abl) ignīs(A).
+(267) chests of|the|half|beast and extinguished in|the|jaws fires.
+(268) ex(Prp) illō(Pr)(Abl) celebrātus(Per)(Pas)(N) honōs(N) laetīque(Adj)(N)(Kon) minōrēs(N)
+(268) from that celebrated honor and|glad descendants
+(269) servāvēre(Per)(Akt) diem(A), prīmusque(Adj)(N)(Kon) Potītius(N) auctor(N)
+(269) have|kept day, and|first Potitius founder
+(270) et(Kon) domus(N) Herculeī(Adj)(G) cūstōs(N) Pīnāria(N) sacrī(G)
+(270) and house of|Herculean guardian Pinaria of|the|rite
+(271) hanc(Pr)(A) āram(A) lūcō(Abl) statuit(Per)(Akt), quae(Pr)(N) maxima(Adj)(Sup)(N) semper(Adv)
+(271) this altar in|the|grove set|up, which greatest always
+(272) dīcētur(Fu1)(Pas) nōbīs(Abl) et(Kon) erit(Fu1)(Akt) quae(Pr)(N) maxima(Adj)(Sup)(N) semper(Adv).
+(272) will|be|called by|us and will|be which greatest always.
+(273) quārē(Adv) agite(Prä)(Imv)(Akt), ō(ij) juvenēs(V), tantārum(Adj)(G) in(Prp) mūnere(Abl) laudum(G)
+(273) wherefore come|on, O youths, of|so|great in duty of|praises
+(274) cingite(Prä)(Imv)(Akt) fronde(Abl) comās(A) et(Kon) pōcula(A) porgite(Prä)(Imv)(Akt) dextrīs(Abl),
+(274) wreathe with|foliage hair and cups offer with|right|hands,
+(275) commūnemque(Adj)(A)(Kon) vocāte(Prä)(Imv)(Akt) deum(A) et(Kon) date(Prä)(Imv)(Akt) vīna(A) volentēs(Prä)(Akt)(N).'
+(275) common|and call god and give wines willing.'
+(276) dīxerat(Plq)(Akt), Herculeā(Adj)(Abl) bicolor(Adj)(N) cum(Kon) pōpulus(N) umbrā(Abl)
+(276) he|had|spoken, with|Herculean two|colored when poplar shade
+(277) vēlāvitque(Per)(Akt)(Kon) comās(A) foliīsque(Abl)(Kon) innexa(Per)(Pas)(N) pependit(Per)(Akt),
+(277) veiled|and hair and|with|leaves entwined hung,
+(278) et(Kon) sacer(Adj)(N) implēvit(Per)(Akt) dextram(A) scyphus(N). ōcius(Adv)(Kmp) omnēs(Adj)(N)
+(278) and sacred filled right|hand cup. faster all
+(279) in(Prp) mēnsam(A) laetī(Adj)(N) lībant(Prä)(Akt) dīvōsque(A)(Kon) precantur(Prä)(Akt).
+(279) onto table glad they|pour and|the|gods they|pray.
+(280) Dēvexō(Adj)(Abl) intereā(Adv) propior(Adj)(Kmp)(N) fit(Prä)(Akt) Vesper(N) Olympō(Abl).
+(280) with|sloping meanwhile nearer becomes Vesper on|Olympus.
+(281) jamque(Adv) sacerdōtēs(N) prīmusque(Adj)(N)(Kon) Potītius(N) ībant(Imp)(Akt)
+(281) and|now priests and|first Potitius were|going
+(282) pellibus(Abl) in(Prp) mōrem(A) cīnctī(Per)(Pas)(N), flammāsque(A)(Kon) ferēbant(Imp)(Akt).
+(282) with|skins in custom girded, and|flames were|bearing.
+(283) īnstaurant(Prä)(Akt) epulās(A) et(Kon) mēnsae(G) grāta(Adj)(A) secundae(Adj)(G)
+(283) they|renew feasts and of|the|table pleasing of|the|second
+(284) dōna(A) ferunt(Prä)(Akt) cumulantque(Prä)(Akt)(Kon) onerātīs(Per)(Pas)(Abl) lancibus(Abl) ārās(A).
+(284) gifts they|bring and|heap with|loaded platters altars.
+(285) tum(Adv) Saliī(N) ad(Prp) cantūs(A) incēnsa(Per)(Pas)(A) altāria(A) circum(Adv)
+(285) then Salii to songs inflamed altars around
+(286) pōpuleīs(Adj)(Abl) adsunt(Prä)(Akt) ēvīnctī(Per)(Pas)(N) tempora(A) rāmīs(Abl),
+(286) with|poplar are|present having|been|bound temples with|branches,
+(287) hic(Pr)(N) juvenum(G) chorus(N), ille(Pr)(N) senum(G), quī(Pr)(N) carmine(N)(Abl) laudēs(A)
+(287) this of|youths choir, that of|old|men, who with|song praises
+(288) Herculeās(Adj)(A) et(Kon) facta(A) ferunt(Prä)(Akt): ut(Kon) prīma(Adj)(A) novercae(G)
+(288) Herculean and deeds they|bear: as first of|stepmother
+(289) mōnstra(A) manū(N)(Abl) geminōsque(Adj)(A)(Kon) premēns(Prä)(Akt)(N) ēlīserit(Per)(Knj)(Akt) anguīs(A),
+(289) monsters with|hand twin|and pressing may|have|crushed snakes,
+(290) ut(Kon) bellō(N)(Abl) ēgregiās(Adj)(A) īdem(Pr)(N) disjēcerit(Per)(Knj)(Akt) urbēs(A),
+(290) as in|war distinguished the|same may|have|scattered cities,
+(291) Trōjamque(A)(Kon) Oechaliamque(A)(Kon), ut(Kon) dūrōs(Adj)(A) mīlle(Adj) labōrēs(A)
+(291) Troy|and Oechalia|and, as hard thousand labors
+(292) rēge(N)(Abl) sub(Prp) Eurystheo(N)(Abl) fātīs(N)(Abl) Jūnōnis(G) inīquae(Adj)(G)
+(292) king under Eurystheus by|the|fates of|Juno unfavorable
+(293) pertulerit(Per)(Knj)(Akt). ‘tū(Pr)(V) nūbigenās(Adj)(A), invicte(Adj)(V), bimembrīs(Adj)(Abl)
+(293) has|endured. ‘you cloud|born, unconquered, with|two|limbs
+(294) Hȳlaeumque(A)(Kon) Pholumque(A)(Kon) manū(N)(Abl), tū(Pr)(V) Crēsia(Adj)(A) mactās(Prä)(Akt)
+(294) Hylaeus|and Pholus|and with|hand, you Cretan you|slay
+(295) prōdigia(A) et(Kon) vastum(Adj)(A) Nemeae(G) sub(Prp) rūpe(N)(Abl) leōnem(A).
+(295) monsters and vast of|Nemea under rock lion.
+(296) tē(Pr)(A) Stygiī(Adj)(G) tremuēre(Per)(Akt) lacūs(N), tē(Pr)(A) jānitor(N) Orcī(G)
+(296) you of|Stygian trembled lakes, you doorkeeper of|Orcus
+(297) ossa(A) super(Prp) recubāns(Prä)(Akt)(N) antrō(N)(Abl) sēmēsa(Per)(Pas)(A) cruentō(Adj)(Abl);
+(297) bones above reclining in|cave half|eaten bloody;
+(298) nec(Kon) tē(Pr)(A) ūllae(Adj)(N) faciēs(N), nōn(Pt) terruit(Per)(Akt) ipse(Pr)(N) Typhōeus(N)
+(298) nor you any appearances, not has|terrified himself Typhoeus
+(299) arduus(Adj)(N) arma(A) tenēns(Prä)(Akt)(N); nōn(Pt) tē(Pr)(A) ratiōnis(G) egentem(Adj)(A)
+(299) tall arms holding; not you of|reason lacking
+(300) Lernaeus(Adj)(N) turbā(N)(Abl) capitum(G) circumstetit(Per)(Akt) anguis(N).
+(300) Lernaean with|throng of|heads has|surrounded serpent.
+(301) salvē(Prä)(Imv)(Akt), vēra(Adj)(N) Jovis(G) prōlēs(N), decus(N) addite(Per)(Pas)(V) dīvīs(D),
+(301) hail, true of|Jove offspring, honor added to|the|gods,
+(302) et(Kon) nōs(Pr)(A) et(Kon) tua(Adj)(A) dexter(Adj)(N) adī(Prä)(Imv)(Akt) pede(Abl) sacra(A) secundō(Adj)(Abl).'
+(302) and us and your propitiously approach with|foot the|rites favorable.'
+(303) tālia(Adj)(A) carminibus(N)(Abl) celebrant(Prä)(Akt); super(Prp) omnia(Adj)(A) Cācī(G)
+(303) such|things with|songs they|celebrate; above all of|Cacus
+(304) spēluncam(A) adiciunt(Prä)(Akt) spīrantemque(Prä)(Akt)(A)(Kon) ignibus(N)(Abl) ipsum(Pr)(A).
+(304) cave they|add breathing|and with|fires himself.
+(305) cōnsonat(Prä)(Akt) omne(Adj)(N) nemus(N) strepitū(N)(Abl) collēsque(N)(Kon) resultant(Prä)(Akt).
+(305) resounds all grove with|noise hills|and echo.
+(306) Exim(Adv) sē(Pr)(A) cūnctī(Adj)(N) dīvīnīs(Adj)(Abl) rēbus(N)(Abl) ad(Prp) urbem(A)
+(306) then themselves all with|divine things to city
+(307) perfectīs(Per)(Pas)(Abl) referunt(Prä)(Akt). ībat(Imp)(Akt) rēx(N) obsitus(Per)(Pas)(N) aevō(N)(Abl),
+(307) completed they|return. was|going king covered with|age,
+(308) et(Kon) comitem(A) Aenēān(A) juxtā(Adv) nātumque(A)(Kon) tenēbat(Imp)(Akt)
+(308) and companion Aeneas near son|and he|was|holding
+(309) ingrediēns(Prä)(Akt)(N) variōque(Adj)(Abl)(Kon) viam(A) sermōne(N)(Abl) levābat(Imp)(Akt).
+(309) going with|varied|and way with|speech was|lightening.
+(310) mīrātur(Prä)(Akt) facilīsque(Adj)(N)(Kon) oculōs(A) fert(Prä)(Akt) omnia(Adj)(A) circum(Adv)
+(310) marvels easy|and eyes he|carries all around
+(311) Aenēās(N), capiturque(Prä)(Pas)(Kon) locīs(N)(Abl) et(Kon) singula(Adj)(A) laetus(Adj)(N)
+(311) Aeneas, is|taken|and by|places and single|things glad
+(312) exquīritque(Prä)(Akt)(Kon) auditque(Prä)(Akt)(Kon) virum(G) monimenta(A) priōrum(Adj)(G).
+(312) and|he|inquires and|he|hears of|men monuments former.
+(313) tum(Adv) rēx(N) Euandrus(N) Rōmānae(Adj)(G) conditor(N) arcis(G):
+(313) then king Evander of|Roman founder of|citadel:
+(314) ‘haec(Pr)(A) nemora(A) indigenae(Adj)(N) Faunī(N) Nymphaeque(N)(Kon) tenēbant(Imp)(Akt)
+(314) ‘these groves native Fauns Nymphs|and were|holding
+(315) gēnsque(N)(Kon) virum(G) truncīs(N)(Abl) et(Kon) dūrō(Adj)(Abl) rōbore(N)(Abl) nāta(Per)(Pas)(N),
+(315) nation|and of|men with|trunks and with|hard oak born,
+(316) quīs(Pr)(D) neque(Kon) mōs(N) neque(Kon) cultus(N) erat(Imp)(Akt), nec(Kon) jungere(Inf)(Akt) taurōs(A)
+(316) to|whom nor custom nor culture was, nor to|yoke bulls
+(317) aut(Kon) compōnere(Inf)(Akt) opēs(A) nōrant(Imp)(Akt) aut(Kon) parcere(Inf)(Akt) partō(Per)(Pas)(D),
+(317) or to|put|together resources they|knew or to|spare to|the|gained,
+(318) sed(Kon) rāmī(N) atque(Kon) asper(Adj)(N) vīctū(N)(Abl) vēnātus(N) alēbat(Imp)(Akt).
+(318) but branches and rough by|living hunting was|sustaining.
+(319) prīmus(Adj)(N) ab(Prp) aetheriō(Adj)(Abl) vēnit(Per)(Akt) Sāturnus(N) Olympō(N)(Abl)
+(319) first from ethereal came Saturn Olympus
+(320) arma(A) Jovis(G) fugiēns(Prä)(Akt)(N) et(Kon) rēgnīs(N)(Abl) exul(N) adēmptīs(Per)(Pas)(Abl).
+(320) arms of|Jove fleeing and from|kingdoms exile having|been|taken|away.
+(321) is(Pr)(N) genus(A) indocile(Adj)(A) ac(Kon) dispersum(Per)(Pas)(A) montibus(N)(Abl) altīs(Adj)(Abl)
+(321) he race unteachable and scattered on|mountains high
+(322) composuit(Per)(Akt) lēgēsque(A)(Kon) dedit(Per)(Akt), Latiumque(A) vocārī(Inf)(Pas)
+(322) has|arranged laws|and gave, Latium|and to|be|called
+(323) māluit(Per)(Akt), hīs(Pr)(Abl) quonjam(Kon) latuisset(Plq)(Knj)(Akt) tūtus(Adj)(N) in(Prp) ōrīs(N)(Abl).
+(323) preferred, by|these since he|had|lain|hidden safe on shores.
+(324) aurea(Adj)(N) quae(Pr)(N) perhibent(Prä)(Akt) illō(Pr)(Abl) sub(Prp) rēge(N)(Abl) fuēre(Per)(Akt)
+(324) golden which they|report that under king were
+(325) saecula(N): sīc(Adv) placidā(Adj)(Abl) populōs(A) in(Prp) pāce(N)(Abl) regēbat(Imp)(Akt),
+(325) ages: thus with|calm peoples in peace he|ruled,
+(326) dēterior(Adj)(Kmp)(N) dōnec(Kon) paulātim(Adv) ac(Kon) dēcolor(Adj)(N) aetās(N)
+(326) worse until gradually and faded age
+(327) et(Kon) bellī(G) rabiēs(N) et(Kon) amor(N) successit(Per)(Akt) habendī(Ger)(G).
+(327) and of|war fury and love has|succeeded of|having.
+(328) tum(Adv) manus(N) Ausonia(Adj)(N) et(Kon) gentēs(N) vēnēre(Per)(Akt) Sicānae(Adj)(N),
+(328) then band Ausonian and peoples came Sicanians,
+(329) saepius(Adv)(Kmp) et(Kon) nōmen(N) posuit(Per)(Akt) Sāturnia(Adj)(N) tellūs(N);
+(329) more|often and name has|set Saturnian earth;
+(330) tum(Adv) rēgēs(N) asperque(Adj)(N)(Kon) immānī(Adj)(Abl) corpore(N)(Abl) Thybris(N),
+(330) then kings harsh|and with|huge body Tiber,
+(331) ā(Prp) quō(Pr)(Abl) post(Adv) Italī(N) fluvium(A) cognōmine(N)(Abl) Thybrim(A)
+(331) from whom afterwards Italians river by|surname Tiber
+(332) dīximus(Per)(Akt); āmīsit(Per)(Akt) vērum(Adj)(A) vetus(Adj)(N) Albula(N) nōmen(A).
+(332) we|have|called; has|lost true old Albula name.
+(333) mē(Pr)(A) pulsum(Per)(Pas)(A) patriā(N)(Abl) pelagīque(G)(Kon) extrēma(Adj)(A) sequentem(Prä)(Akt)(A)
+(333) me driven from|fatherland of|sea|and extreme following
+(334) Fortūna(N) omnipotēns(Adj)(N) et(Kon) inēluctābile(Adj)(N) fātum(N)
+(334) Fortune all|powerful and ineluctable fate
+(335) hīs(Pr)(Abl) posuēre(Per)(Akt) locīs(N)(Abl), mātrisque(G) ēgēre(Per)(Akt) tremenda(Adj)(A)
+(335) in|these have|placed places, and|of|mother have|driven dreadful
+(336) Carmentis(G) nymphae(G) monita(A) et(Kon) deus(N) auctor(N) Apollō(N).'
+(336) of|Carmentis nymph warnings and god author Apollo.'
+(337) Vix(Adv) ea(Pr)(A) dicta(Per)(Pas)(N), dehinc(Adv) prōgressus(Per)(Pas)(N) mōnstrat(Prä)(Akt) et(Kon) āram(A)
+(337) hardly these said, then having|advanced shows and altar
+(338) et(Kon) Carmentālem(Adj)(A) Rōmānī(Adj)(G) nōmine(N)(Abl) portam(A)
+(338) and Carmental of|Roman by|name gate
+(339) quam(Pr)(A) memorant(Prä)(Akt), nymphae(G) prīscum(Adj)(A) Carmentis(G) honōrem(A),
+(339) which they|mention, of|nymph ancient of|Carmentis honor,
+(340) vātis(G) fātidicae(Adj)(G), cecinit(Per)(Akt) quae(Pr)(N) prīma(Adj)(N) futūrōs(Adj)(A)
+(340) of|prophetess fate|speaking, sang who first future
+(341) Aeneadās(A) magnōs(Adj)(A) et(Kon) nōbile(Adj)(A) Pallantēum(A).
+(341) Aeneadas great and noble Pallanteum.
+(342) hinc(Adv) lūcum(A) ingentem(Adj)(A), quem(Pr)(A) Rōmulus(N) ācer(Adj)(N) asȳlum(A)
+(342) hence grove huge, which Romulus keen asylum
+(343) rettulit(Per)(Akt), et(Kon) gelidā(Adj)(Abl) mōnstrat(Prä)(Akt) sub(Prp) rūpe(N)(Abl) Lupercal(A)
+(343) has|declared, and with|chilly shows under rock Lupercal
+(344) Parrhasiō(Adj)(Abl) dictum(Per)(Pas)(N) Pānos(G) dē(Prp) mōre(N)(Abl) Lycaeī(G).
+(344) Parrhasian called of|Pan from custom of|Lycaeus.
+(345) nec(Kon) nōn(Pt) et(Kon) sacrī(Adj)(G) mōnstrat(Prä)(Akt) nemus(A) Argīlētī(G)
+(345) nor indeed and of|sacred shows grove of|Argiletum
+(346) testāturque(Prä)(Akt)(Kon) locum(A) et(Kon) lētum(A) docet(Prä)(Akt) hospitis(G) Argī(G).
+(346) attests|and place and death he|shows of|guest of|Argus.
+(347) hinc(Adv) ad(Prp) Tarpejam(Adj)(A) sēdem(A) et(Kon) Capitōlia(A) dūcit(Prä)(Akt)
+(347) hence to Tarpeian seat and Capitol he|leads
+(348) aurea(Adj)(N) nunc(Adv), ōlim(Adv) silvestribus(Adj)(Abl) horrida(Adj)(N) dūmīs(N)(Abl).
+(348) golden now, once with|woodland rough brambles.
+(349) jam(Adv) tum(Adv) rēligiō(N) pavidōs(Adj)(A) terrēbat(Imp)(Akt) agrestīs(Adj)(A)
+(349) already then religion fearful was|frightening rustics
+(350) dīra(Adj)(N) locī(G), jam(Adv) tum(Adv) silvam(A) saxumque(A)(Kon) tremēbant(Imp)(Akt).
+(350) dreadful of|place, already then wood rock|and were|trembling.
+(351) ‘hoc(Pr)(A) nemus(N), hunc’(Pr)(A) inquit(Prä)(Akt) ‘frondōsō(Adj)(Abl) vertice(N)(Abl) collem(A)
+(351) ‘this grove, this says ‘with|leafy top hill
+(352) (quis(Pr)(N) deus(N) incertum(Adj)(N) est(Prä)(Akt)) habitat(Prä)(Akt) deus(N); Arcades(N) ipsum(Pr)(A)
+(352) (which god uncertain is) dwells god; Arcadians him
+(353) crēdunt(Prä)(Akt) sē(Pr)(A) vīdisse(Inf)(Per)(Akt) Jovem(A), cum(Kon) saepe(Adv) nigrantem(Prä)(Akt)(A)
+(353) they|believe themselves to|have|seen Jove, when often blackening
+(354) aegida(A) concuteret(Imp)(Knj)(Akt) dextrā(N)(Abl) nimbōsque(A)(Kon) ciēret(Imp)(Knj)(Akt).
+(354) aegis would|shake with|right|hand clouds|and would|stir.
+(355) haec(Pr)(N) duo(Adj)(N) praetereā(Adv) disjectīs(Per)(Pas)(Abl) oppida(N) mūrīs(N)(Abl),
+(355) these two besides with|scattered towns walls,
+(356) rēliquiās(A) veterumque(Adj)(G) vidēs(Prä)(Akt) monimenta(A) virōrum(G).
+(356) remains of|the|ancients|and you|see monuments of|men.
+(357) hanc(Pr)(A) Jānus(N) pater(N), hanc(Pr)(A) Sāturnus(N) condidit(Per)(Akt) arcem(A);
+(357) this Janus father, this Saturn founded citadel;
+(358) Jāniculum(N) huic(Pr)(D), illī(Pr)(D) fuerat(Plq)(Akt) Sāturnia(N) nōmen(N).'
+(358) Janiculum to|this, to|that had|been Saturnia name.'
+(359) tālibus(Adj)(Abl) inter(Prp) sē(Pr)(Abl) dictīs(Per)(Pas)(Abl) ad(Prp) tēcta(A) subībant(Imp)(Akt)
+(359) with|such among themselves things|having|been|said to roofs were|going|under
+(360) pauperis(Adj)(G) Euandrī(G), passimque(Adv)(Kon) armenta(A) vidēbant(Imp)(Akt)
+(360) of|the|poor of|Evander, everywhere|and herds they|were|seeing
+(361) Rōmānōque(Adj)(Abl)(Kon) forō(N)(Abl) et(Kon) lautīs(Adj)(Abl) mūgīre(Inf)(Akt) Carīnīs(N)(Abl).
+(361) Roman|and in|the|forum and splendid to|low in|the|Carinae.
+(362) ut(Kon) ventum(Per)(Pas)(N) ad(Prp) sēdēs(A), ‘haec’(Pr)(N) inquit(Prä)(Akt) ‘līmina(A) victor(N)
+(362) when it|was|come to seats, ‘these says ‘thresholds victor
+(363) Alcīdēs(N) subiit(Per)(Akt), haec(Pr)(N) illum(Pr)(A) rēgia(N) cēpit(Per)(Akt).
+(363) Alcides went|under, these him royal|house received.
+(364) audē(Prä)(Imv)(Akt), hospes(V), contemnere(Inf)(Akt) opēs(A) et(Kon) tē(Pr)(A) quoque(Pt) dignum(Adj)(A)
+(364) dare, guest, to|despise wealth and yourself also worthy
+(365) finge(Prä)(Imv)(Akt) deō(D), rēbusque(N)(Abl)(Kon) venī(Prä)(Imv)(Akt) nōn(Pt) asper(Adj)(N) egēnīs(Adj)(Abl).'
+(365) fashion for|a|god, in|the|things|and come not harsh needy.'
+(366) dīxit(Per)(Akt), et(Kon) angustī(Adj)(G) subter(Prp) fastīgia(A) tēctī(G)
+(366) he|said, and of|narrow under gables of|the|roof
+(367) ingentem(Adj)(A) Aenēān(A) dūxit(Per)(Akt) strātīsque(N)(Abl)(Kon) locāvit(Per)(Akt)
+(367) huge Aeneas he|led with|coverlets|and he|placed
+(368) effultum(Per)(Pas)(A) foliīs(N)(Abl) et(Kon) pelle(N)(Abl) Libystidis(Adj)(G) ursae(G):
+(368) propped|up with|leaves and with|hide of|a|Libyan of|she|bear:
+(369) nox(N) ruit(Prä)(Akt) et(Kon) fuscīs(Adj)(Abl) tellūrem(A) amplectitur(Prä)(Pas) ālīs(N)(Abl).
+(369) night rushes and with|dusky earth embraces with|wings.
+(370) At(Kon) Venus(N) haud(Pt) animō(N)(Abl) nēquīquam(Adv) exterrita(Per)(Pas)(N) māter(N)
+(370) but Venus not in|mind in|vain frightened mother
+(371) Laurentumque(G)(Kon) minīs(N)(Abl) et(Kon) dūrō(Adj)(Abl) mōta(Per)(Pas)(N) tumultū(N)(Abl)
+(371) of|the|Laurentians|and by|threats and with|harsh moved by|uproar
+(372) Volcānum(A) adloquitur(Prä)(Pas), thalamōque(N)(Abl)(Kon) haec(Pr)(A) conjugis(G) aureō(Adj)(Abl)
+(372) Vulcan addresses, in|the|bedchamber|and these of|husband golden
+(373) incipit(Prä)(Akt) et(Kon) dictīs(N)(Abl) dīvīnum(Adj)(A) aspīrat(Prä)(Akt) amōrem(A):
+(373) begins and with|words divine breathes love:
+(374) ‘dum(Kon) bellō(N)(Abl) Argolicī(Adj)(N) vastābant(Imp)(Akt) Pergama(A) rēgēs(N)
+(374) ‘while with|war Argive were|devastating Pergama kings
+(375) dēbita(Adj)(A) cāsūrāsque(Fu1)(Akt)(A)(Kon) inimīcīs(Adj)(Abl) ignibus(N)(Abl) arcēs(A),
+(375) owed about|to|fall|and by|hostile fires citadels,
+(376) nōn(Pt) ūllum(Adj)(A) auxilium(A) miserīs(Adj)(D), nōn(Pt) arma(A) rogāvī(Per)(Akt)
+(376) not any help for|the|wretched, not arms I|asked
+(377) artis(G) opisque(G)(Kon) tuae(Adj)(G), nec(Kon) tē(Pr)(A), cārissime(Adj)(Sup)(V) conjūnx(V),
+(377) of|skill of|power|and of|yours, nor you, dearest spouse,
+(378) incassumve(Adv)(Kon) tuōs(Adj)(A) voluī(Per)(Akt) exercēre(Inf)(Akt) labōrēs(A),
+(378) in|vain|or your I|wished to|employ labors,
+(379) quamvīs(Kon) et(Kon) Priamī(G) dēbērem(Imp)(Knj)(Akt) plūrima(Adj)(Sup)(A) nātīs(D),
+(379) although and of|Priam I|might|owe very|many to|sons,
+(380) et(Kon) dūrum(Adj)(A) Aenēae(G) flēvissem(Plq)(Knj)(Akt) saepe(Adv) labōrem(A).
+(380) and hard of|Aeneas I|had|wept often labor.
+(381) nunc(Adv) Jovis(G) imperiīs(N)(Abl) Rutulōrum(G) cōnstitit(Per)(Akt) ōrīs(N)(Abl):
+(381) now of|Jove by|commands of|the|Rutulians has|halted on|shores:
+(382) ergō(Kon) eadem(Adj)(N) supplex(N) veniō(Prä)(Akt) et(Kon) sānctum(Adj)(A) mihi(Pr)(D) nūmen(A)
+(382) therefore the|same suppliant I|come and holy to|me divinity
+(383) arma(A) rogō(Prä)(Akt), genetrīx(N) nātō(D). tē(Pr)(A) fīlia(N) Nēreī(G),
+(383) arms I|ask, mother for|son. you daughter of|Nereus,
+(384) tē(Pr)(A) potuit(Per)(Akt) lacrimīs(N)(Abl) Tīthōnia(Adj)(N) flectere(Inf)(Akt) conjūnx(N).
+(384) you was|able with|tears Tithonian to|sway spouse.
+(385) aspice(Prä)(Imv)(Akt) quī(Pr)(N) coeant(Prä)(Knj)(Akt) populī(N), quae(Pr)(N) moenia(N) clausīs(Per)(Pas)(Abl)
+(385) look who may|gather peoples, what walls with|closed
+(386) ferrum(A) acuant(Prä)(Knj)(Akt) portīs(N)(Abl) in(Prp) mē(Pr)(A) excidiumque(A)(Kon) meōrum(Pr)(G).'
+(386) iron may|whet at|the|gates against me destruction|and of|my|people.'
+(387) dīxerat(Plq)(Akt) et(Kon) niveīs(Adj)(Abl) hinc(Adv) atque(Kon) hinc(Adv) dīva(N) lacertīs(N)(Abl)
+(387) she|had|said and snowy on|this|side and on|that|side goddess with|arms
+(388) cūnctantem(Prä)(Akt)(A) amplexū(N)(Abl) mollī(Adj)(Abl) fovet(Prä)(Akt). ille(Pr)(N) repente(Adv)
+(388) hesitating with|embrace soft cherishes. he suddenly
+(389) accēpit(Per)(Akt) solitam(Adj)(A) flammam(A), nōtusque(Per)(Pas)(N)(Kon) medullās(A)
+(389) received accustomed flame, known|and marrows
+(390) intrāvit(Per)(Akt) calor(N) et(Kon) labefacta(Per)(Pas)(Abl) per(Prp) ossa(A) cucurrit(Per)(Akt),
+(390) entered heat and loosened through bones ran,
+(391) nōn(Pt) secus(Adv) atque(Kon) ōlim(Adv) tonitrū(N)(Abl) cum(Kon) rupta(Per)(Pas)(N) coruscō(Adj)(Abl)
+(391) not otherwise than once with|thunder when broken by|flashing
+(392) ignea(Adj)(N) rīma(N) micāns(Prä)(Akt)(N) percurrit(Prä)(Akt) lūmine(N)(Abl) nimbōs(A);
+(392) fiery crack shining runs|through with|light clouds;
+(393) sēnsit(Per)(Akt) laeta(Adj)(N) dolīs(N)(Abl) et(Kon) fōrmae(G) cōnscia(Adj)(N) conjūnx(N).
+(393) felt glad at|wiles and of|form aware spouse.
+(394) tum(Adv) pater(N) aeternō(Adj)(Abl) fātur(Prä)(Pas) dēvīnctus(Per)(Pas)(N) amōre(N)(Abl):
+(394) then father with|eternal speaks bound by|love:
+(395) ‘quid(Pr) causās(A) petis(Prä)(Akt) ex(Prp) altō(Adj)(Abl)? fīdūcia(N) cessit(Per)(Akt)
+(395) ‘why reasons do|you|seek from the|high? confidence has|gone
+(396) quō(Adv) tibi(Pr)(D), dīva(V), meī(Pr)(G)? similis(Adj)(N) sī(Kon) cūra(N) fuisset(Plq)(Knj)(Akt),
+(396) for|what to|you, goddess, of|me? like if care had|been,
+(397) tum(Adv) quoque(Pt) fās(N) nōbīs(Pr)(D) Teucrōs(A) armāre(Inf)(Akt) fuisset(Plq)(Knj)(Akt);
+(397) then also right for|us Teucrians to|arm it|would|have|been;
+(398) nec(Kon) pater(N) omnipotēns(Adj)(N) Trōjam(A) nec(Kon) fāta(N) vetābant(Imp)(Akt)
+(398) nor father all|powerful Troy nor fates were|forbidding
+(399) stāre(Inf)(Akt) decemque(Adj)(Kon) aliōs(Adj)(A) Priamum(A) superesse(Inf)(Akt) per(Prp) annōs(A).
+(399) to|stand ten|and other Priam to|survive for years.
+(400) et(Kon) nunc(Adv), sī(Kon) bellāre(Inf)(Akt) parās(Prä)(Akt) atque(Kon) haec(Pr)(N) tibi(Pr)(D) mēns(N) est(Prä)(Akt),
+(400) and now, if to|wage|war you|prepare and this to|you mind is,
+(401) quidquid(Pr) in(Prp) arte(N)(Abl) meā(Adj)(Abl) possum(Prä)(Akt) prōmittere(Inf)(Akt) cūrae(D),
+(401) whatever in art my I|can to|promise for|care,
+(402) quod(Pr)(N) fierī(Inf)(Pas) ferrō(N)(Abl) liquidōve(Adj)(Abl)(Kon) potest(Prä)(Akt) ēlectrō(N)(Abl),
+(402) which to|be|made by|iron liquid|or can by|electrum,
+(403) quantum(Pr) ignēs(N) animaeque(N)(Kon) valent(Prä)(Akt), absiste(Prä)(Imv)(Akt) precandō(Ger)(Abl)
+(403) as|much fires souls|and prevail, cease by|praying
+(404) vīribus(N)(Abl) indubitāre(Inf)(Akt) tuīs(Adj)(Abl).' ea(Pr)(A) verba(A) locūtus(Per)(Pas)(N)
+(404) in|powers to|doubt yours.' these words having|spoken
+(405) optātōs(Per)(Pas)(A) dedit(Per)(Akt) amplexūs(A) placidumque(Adj)(A)(Kon) petīvit(Per)(Akt)
+(405) desired he|gave embraces calm|and sought
+(406) conjugis(G) īnfūsus(Per)(Pas)(N) gremiō(N)(Abl) per(Prp) membra(A) sopōrem(A).
+(406) of|wife poured|in in|lap through limbs sleep.
+(407) Inde(Adv) ubi(Kon) prīma(Adj)(N) quiēs(N) mediō(Adj)(Abl) jam(Adv) noctis(G) abāctae(Per)(Pas)(G)
+(407) then when first rest in|the|middle now of|night driven|away
+(408) curriculō(N)(Abl) expulerat(Plq)(Akt) somnum(A), cum(Kon) fēmina(N) prīmum(Adv),
+(408) with|course had|expelled sleep, when woman first,
+(409) cui(Pr)(D) tolerāre(Inf)(Akt) colō(N)(Abl) vītam(A) tenuīque(Adj)(Abl)(Kon) Minervā(N)(Abl)
+(409) to|whom to|endure with|distaff life slender|and with|Minerva
+(410) impositum(Per)(Pas)(N), cinerem(A) et(Kon) sōpītōs(Per)(Pas)(A) suscitat(Prä)(Akt) ignīs(A)
+(410) laid|upon, ashes and sleeping awakens fires
+(411) noctem(A) addēns(Prä)(Akt)(N) operī(D), famulāsque(A)(Kon) ad(Prp) lūmina(A) longō(Adj)(Abl)
+(411) night adding to|work, maids|and to lights long
+(412) exercet(Prä)(Akt) pēnsō(N)(Abl), castum(Adj)(A) ut(Kon) servāre(Inf)(Akt) cubīle(A)
+(412) she|exercises with|weighing, chaste so|that to|keep bed
+(413) conjugis(G) et(Kon) possit(Prä)(Knj)(Akt) parvōs(Adj)(A) ēdūcere(Inf)(Akt) nātōs(A):
+(413) of|husband and she|may|be|able small to|bring|up sons:
+(414) haud(Pt) secus(Adv) ignipotēns(N) nec(Kon) tempore(N)(Abl) sēgnior(Adj)(Kmp)(N) illō(Pr)(Abl)
+(414) not otherwise fire|powerful nor in|time slower than|that
+(415) mollibus(Adj)(Abl) ē(Prp) strātīs(N)(Abl) opera(A) ad(Prp) fabrīlia(Adj)(A) surgit(Prä)(Akt).
+(415) soft from couches work to smithy|tasks rises.
+(416) īnsula(N) Sīcanium(Adj)(A) juxtā(Prp) latus(A) Aeoliamque(Adj)(A)(Kon)
+(416) island Sicilian near side Aeolian|and
+(417) ērigitur(Prä)(Pas) Liparēn(A) fūmantibus(Prä)(Akt)(Abl) ardua(Adj)(N) saxīs(N)(Abl),
+(417) is|raised Lipara smoking steep with|rocks,
+(418) quam(Pr)(A) subter(Prp) specus(N) et(Kon) Cyclōpum(G) exēsa(Per)(Pas)(N) camīnīs(N)(Abl)
+(418) which under cave and of|Cyclopes gnawed|out by|chimneys
+(419) antra(N) Aetnaea(Adj)(N) tonant(Prä)(Akt), validīque(Adj)(N)(Kon) incūdibus(N)(Abl) ictūs(N)
+(419) caves Aetnaean thunder, strong|and on|anvils strokes
+(420) audītī(Per)(Pas)(N) referunt(Prä)(Akt) gemitūs(N), strīduntque(Prä)(Akt)(Kon) cavernīs(N)(Abl)
+(420) heard they|bring|back groanings, shriek|and in|caverns
+(421) strictūrae(N) Chalybum(G) et(Kon) fornācibus(N)(Abl) ignis(N) anhēlat(Prä)(Akt),
+(421) forgings of|Chalybes and in|furnaces fire pants,
+(422) Volcānī(G) domus(N) et(Kon) Volcānia(Adj)(N) nōmine(N)(Abl) tellūs(N).
+(422) of|Vulcan house and Vulcanian by|name land.
+(423) hōc(Pr)(Abl) tunc(Adv) ignipotēns(N) caelō(N)(Abl) dēscendit(Per)(Akt) ab(Prp) altō(Adj)(Abl).
+(423) to|this then fire|powerful from|sky descended from high.
+(424) ferrum(A) exercēbant(Imp)(Akt) vastō(Adj)(Abl) Cyclōpes(N) in(Prp) antrō(N)(Abl),
+(424) iron they|were|working in|a|vast Cyclopes in cave,
+(425) Brontēsque(N)(Kon) Steropēsque(N)(Kon) et(Kon) nūdus(Adj)(N) membra(A) Pyracmōn(N).
+(425) Brontes|and Steropes|and and naked limbs Pyracmon.
+(426) hīs(Pr)(Abl) īnfōrmātum(Per)(Pas)(A) manibus(N)(Abl) jam(Adv) parte(N)(Abl) polītā(Per)(Pas)(Abl)
+(426) by|these fashioned by|hands now in|part polished
+(427) fulmen(N) erat(Imp)(Akt), tōtō(Adj)(Abl) genitor(N) quae(Pr)(A) plūrima(Adj)(A) caelō(N)(Abl)
+(427) thunderbolt was, whole father which very|many in|the|sky
+(428) dēicit(Prä)(Akt) in(Prp) terrās(A), pars(N) imperfecta(Adj)(N) manēbat(Imp)(Akt).
+(428) casts|down into the|lands, part unfinished was|remaining.
+(429) trīs(Adj) imbris(G) tortī(Per)(Pas)(G) radiōs(A), trīs(Adj) nūbis(G) aquōsae(Adj)(G)
+(429) three of|rain twisted rays, three of|cloud watery
+(430) addiderant(Plq)(Akt), rutulī(Adj)(G) trīs(Adj) ignis(G) et(Kon) ālitis(Adj)(G) Austrī(G).
+(430) had|added, of|Rutulian three of|fire and of|winged Auster.
+(431) fulgōrēs(A) nunc(Adv) terrificōs(Adj)(A) sonitumque(A)(Kon) metumque(A)
+(431) flashes now terrifying and|sound and|fear
+(432) miscēbant(Imp)(Akt) operī(D) flammīsque(N)(Abl)(Kon) sequācibus(Adj)(Abl) īrās(A).
+(432) were|mixing for|the|work with|flames|and pursuing angers.
+(433) parte(N)(Abl) aliā(Adj)(Abl) Mārtī(D) currumque(A)(Kon) rotāsque(A)(Kon) volūcrīs(Adj)(A)
+(433) in|another part to|Mars chariot|and wheels|and swift
+(434) īnstābant(Imp)(Akt), quibus(Pr)(Abl) ille(Pr)(N) virōs(A), quibus(Pr)(Abl) excitat(Prä)(Akt) urbīs(A);
+(434) they|pressed|on, with|which that|one men, with|which he|rouses cities;
+(435) aegidaque(A)(Kon) horriferam(Adj)(A), turbātae(Per)(Pas)(G) Palladis(G) arma(A),
+(435) aegis|and dreadful, of|disturbed Pallas arms,
+(436) certātim(Adv) squāmīs(N)(Abl) serpentum(G) aurōque(N)(Abl)(Kon) polībant(Imp)(Akt)
+(436) eagerly with|scales of|serpents and|with|gold they|were|polishing
+(437) cōnexōsque(Per)(Pas)(A)(Kon) anguīs(A) ipsamque(Kon) in(Prp) pectore(N)(Abl) dīvae(G)
+(437) together|bound|and with|snakes and|herself in on|the|breast of|the|goddess
+(438) Gorgona(A) dēsectō(Per)(Pas)(Abl) vertentem(Prä)(Akt)(A) lūmina(A) collō(N)(Abl).
+(438) Gorgon with|severed neck turning eyes.
+(439) ‘tollite(Prä)(Imv)(Akt) cūncta’(Adj)(A) inquit(Prä)(Akt) ‘coeptōsque(Per)(Pas)(A)(Kon) auferte(Prä)(Imv)(Akt) labōrēs(A),
+(439) ‘take|up all he|says ‘begun|and carry|off labors,
+(440) Aetnaeī(Adj)(N) Cyclōpes(N), et(Kon) hūc(Adv) advertite(Prä)(Imv)(Akt) mentem(A):
+(440) Aetnaean Cyclopes, and hither turn mind:
+(441) arma(A) ācrī(Adj)(Abl) facienda(Gdv)(Fu1)(Pas)(N) virō(D). nunc(Adv) vīribus(N)(Abl) ūsus(N),
+(441) arms to|be|made for|keen by|man. now with|strength need|use,
+(442) nunc(Adv) manibus(N)(Abl) rapidīs(Adj)(Abl), omnī(Adj)(Abl) nunc(Adv) arte(N)(Abl) magistrā(Adj)(Abl).
+(442) now with|hands swift, with|every now art teacher.
+(443) praecipitāte(Prä)(Imv)(Akt) morās(A).' nec(Kon) plūra(Adj)(A) effātus(Per)(Pas)(N), at(Kon) illī(Pr)(N)
+(443) hurl|headlong delays.' and|not more having|spoken, but they
+(444) ōcius(Adv)(Kmp) incubuēre(Per)(Akt) omnēs(Adj)(N) pariterque(Kon) labōrem(A)
+(444) more|swiftly have|bent|to all and|together labor
+(445) sortītī(Per)(Pas)(N). fluit(Prä)(Akt) aes(N) rīvīs(Abl) aurīque(G)(Kon) metallum(N)
+(445) having|drawn|lots. flows bronze in|streams and|of|gold ore
+(446) vulnificusque(Adj)(Kon) chalybs(N) vastā(Adj)(Abl) fornāce(N)(Abl) liquēscit(Prä)(Akt).
+(446) wound|making|and steel in|a|vast furnace melts.
+(447) ingentem(Adj)(A) clipeum(A) īnfōrmant(Prä)(Akt), ūnum(Adj)(A) omnia(Adj)(A) contrā(Prp)
+(447) huge shield they|shape, one all against
+(448) tēla(A) Latīnōrum(Adj)(G), septēnōsque(Adj)(A)(Kon) orbibus(N)(Abl) orbīs(A)
+(448) weapons of|the|Latins, seven|each|and with|rings rings
+(449) impediunt(Prä)(Akt). aliī(Pr)(N) ventōsīs(Adj)(Abl) follibus(N)(Abl) aurās(A)
+(449) they|entangle. some with|windy bellows airs
+(450) accipiunt(Prä)(Akt) redduntque(Prä)(Akt), aliī(Pr)(N) strīdentia(Prä)(Akt)(A) tingunt(Prä)(Akt)
+(450) take and|give|back, others hissing dip
+(451) aera(A) lacū(N)(Abl); gemit(Prä)(Akt) impositīs(Per)(Pas)(Abl) incūdibus(N)(Abl) antrum(N);
+(451) bronzes in|the|pool; groans with|laid|on anvils cavern;
+(452) illī(Pr)(N) inter(Prp) sēsē(Pr)(A) multā(Adj)(Abl) vī(N)(Abl) bracchia(A) tollunt(Prä)(Akt)
+(452) they among themselves with|much force arms raise
+(453) in(Prp) numerum(A), versantque(Prä)(Akt)(Kon) tenācī(Adj)(Abl) forcipe(N)(Abl) massam(A).
+(453) in measure, and|turn with|tenacious tongs mass.
+(454) Haec(Pr)(A) pater(N) Aeoliīs(Adj)(Abl) properat(Prä)(Akt) dum(Kon) Lēmnius(Adj)(N) ōrīs(Abl),
+(454) these|things father Aeolian hastens while Lemnian on|the|shores,
+(455) Euandrum(A) ex(Prp) humilī(Adj)(Abl) tēctō(N)(Abl) lūx(N) suscitat(Prä)(Akt) alma(Adj)(N)
+(455) Evander from low roof light kindly awakens
+(456) et(Kon) mātūtīnī(Adj)(N) volucrum(G) sub(Prp) culmine(N)(Abl) cantūs(N).
+(456) and morning of|birds under roof|ridge songs.
+(457) cōnsurgit(Prä)(Akt) senior(Adj)(N) tunicāque(N)(Abl)(Kon) indūcitur(Prä)(Pas) artūs(A)
+(457) rises elder and|with|tunic is|put|on limbs
+(458) et(Kon) Tyrrhēna(Adj) pedum(G) circumdat(Prä)(Akt) vincula(A) plantīs(D).
+(458) and Tyrrhenian of|feet he|girds straps to|the|soles.
+(459) tum(Adv) laterī(D) atque(Kon) umerīs(D) Tegeaeum(Adj)(A) subligat(Prä)(Akt) ēnsem(A)
+(459) then to|his|side and to|shoulders Tegean he|binds sword
+(460) dēmissa(Per)(Pas)(Abl) ab(Prp) laevā(Adj)(Abl) panthērae(G) terga(A) retorquēns(Prä)(Akt)(N).
+(460) let|down from left of|panther hides twisting|back.
+(461) nec(Kon) nōn(Pt) et(Kon) geminī(Adj) cūstōdēs(N) līmine(N)(Abl) ab(Prp) altō(Adj)(Abl)
+(461) nor indeed and twin guardians at|the|threshold from high
+(462) praecēdunt(Prä)(Akt) gressumque(A)(Kon) canēs(N) comitantur(Prä)(Pas) erīlem(Adj)(A).
+(462) go|before and|step dogs are|accompanying of|the|master.
+(463) hospitis(G) Aenēae(G) sēdem(A) et(Kon) sēcrēta(A) petēbat(Imp)(Akt)
+(463) of|guest Aeneas seat and secrets he|was|seeking
+(464) sermōnum(G) memor(Adj)(N) et(Kon) prōmissī(Per)(Pas)(G) mūneris(G) hērōs(N).
+(464) mindful of|talks and of|promised gift hero.
+(465) nec(Kon) minus(Adv) Aenēās(N) sē(Pr)(A) mātūtīnus(Adj)(N) agēbat(Imp)(Akt);
+(465) not less Aeneas himself morning was|doing;
+(466) fīlius(N) huic(Pr)(D) Pallās(N), illī(Pr)(D) comes(N) ībat(Imp)(Akt) Achātēs(N).
+(466) son to|this Pallas, to|that companion was|going Achates.
+(467) congressī(Per)(Pas)(N) jungunt(Prä)(Akt) dextrās(A) mediīsque(Adj)(Abl)(Kon) resīdunt(Prä)(Akt)
+(467) having|met they|join right|hands and|in|the|midst they|sit
+(468) aedibus(N)(Abl) et(Kon) licitō(Adj)(Abl) tandem(Adv) sermōne(N)(Abl) fruuntur(Prä)(Pas).
+(468) in|buildings and with|lawful at|last conversation they|enjoy.
+(469) rēx(N) prior(Adj)(Kmp)(N) haec(Pr)(A):
+(469) king earlier these:
+(470) ‘maxime(Adj)(Sup)(V) Teucrōrum(G) ductor(V), quō(Pr)(Abl) sospite(Per)(Pas)(Abl) numquam(Adv)
+(470) ‘greatest of|the|Teucrians leader, with|whom safe never
+(471) rēs(N) equidem(Pt) Trōjae(G) victās(Per)(Pas)(A) aut(Kon) rēgna(A) fatēbor(Prä)(Knj)(Akt),
+(471) affair indeed of|Troy conquered or kingdoms I|may|confess,
+(472) nōbīs(Pr)(D) ad(Prp) bellī(G) auxilium(A) prō(Prp) nōmine(N)(Abl) tantō(Adj)(Abl)
+(472) for|us for of|war help in|return|for by|name so|great
+(473) exiguae(Adj)(N) vīrēs(N); hinc(Adv) Tuscō(Adj)(Abl) claudimur(Prä)(Pas) amnī(N)(Abl),
+(473) scant forces; hence by|Tuscan we|are|shut|in river,
+(474) hinc(Adv) Rutulus(Adj) premit(Prä)(Akt) et(Kon) mūrum(A) circumsonat(Prä)(Akt) armīs(N)(Abl).
+(474) hence Rutulian presses and wall resounds|around with|arms.
+(475) sed(Kon) tibi(Pr)(D) ego(Pr)(N) ingentīs(Adj)(A) populōs(A) opulentaque(Adj)(A) rēgnīs(N)(Abl)
+(475) but to|you I mighty peoples and|rich with|kingdoms
+(476) jungere(Inf)(Akt) castra(A) parō(Prä)(Akt), quam(Kon) fors(N) inopīna(Adj)(N) salūtem(A)
+(476) to|join camps I|prepare, what chance unexpected safety
+(477) ostentat(Prä)(Akt): fātīs(N)(Abl) hūc(Adv) tē(Pr)(A) poscentibus(Prä)(Akt)(Abl) adfers(Prä)(Akt).
+(477) shows: by|the|fates hither you with|demanding you|bring.
+(478) haud(Pt) procul(Adv) hinc(Adv) saxō(N)(Abl) incolitur(Prä)(Pas) fundāta(Per)(Pas)(N) vetustō(Adj)(Abl)
+(478) not far hence on|rock is|inhabited founded ancient
+(479) urbis(G) Agyllīnae(Adj)(G) sēdēs(N), ubi(Kon) Lȳdia(Adj) quondam(Adv)
+(479) of|city Agylline seat, where Lydian once
+(480) gēns(N), bellō(N)(Abl) praeclāra(Adj)(N), jugīs(N)(Abl) īnsēdit(Per)(Akt) Etrūscīs(Adj)(Abl).
+(480) race, in|war famous, on|ridges has|sat Etruscan.
+(481) hanc(Pr)(A) multōs(Adj) flōrentem(Prä)(Akt)(A) annōs(A) rēx(N) deinde(Adv) superbō(Adj)(Abl)
+(481) this many flourishing years king then with|proud
+(482) imperiō(N)(Abl) et(Kon) saevīs(Adj)(Abl) tenuit(Per)(Akt) Mēzentius(N) armīs(N)(Abl).
+(482) rule and with|cruel has|held Mezentius with|arms.
+(483) quid(Pr) memorem(Prä)(Knj)(Akt) īnfandās(Adj)(A) caedēs(A), quid(Pr) facta(A) tyrannī(G)
+(483) why should|I|recall unspeakable slaughters, why deeds of|the|tyrant
+(484) effera(Adj)(N)? dī(N) capitī(D) ipsīus(Pr)(G) generīque(D)(Kon) reservent(Prä)(Knj)(Akt)!
+(484) savage? gods to|the|head of|himself and|to|his|race may|reserve!
+(485) mortua(Per)(Pas)(A) quīn(Pt) etiam(Adv) jungēbat(Imp)(Akt) corpora(A) vīvīs(Prä)(Akt)(Abl)
+(485) dead indeed also he|was|yoking bodies to|the|living
+(486) compōnēns(Prä)(Akt)(N) manibusque(N)(Abl)(Kon) manūs(A) atque(Kon) ōribus(N)(Abl) ōra(A),
+(486) putting|together with|hands|and hands and with|faces faces,
+(487) tormentī(G) genus(N), et(Kon) saniē(N)(Abl) tābōque(N)(Abl)(Kon) fluentīs(Prä)(Akt)(Abl)
+(487) of|torture kind, and with|filth and|with|gore flowing
+(488) complexū(N)(Abl) in(Prp) miserō(Adj)(Abl) longā(Adj)(Abl) sīc(Adv) morte(N)(Abl) necābat(Imp)(Akt).
+(488) with|embrace in wretched with|long thus death he|was|killing.
+(489) at(Kon) fessī(Per)(Pas)(N) tandem(Adv) cīvēs(N) īnfanda(Adj)(A) furentem(Prä)(Akt)(A)
+(489) but weary at|last citizens unspeakable raging
+(490) armātī(Per)(Pas)(N) circumsistunt(Prä)(Akt) ipsumque(Pr)(A)(Kon) domumque(A)(Kon),
+(490) armed surround him|and and|house,
+(491) obtruncant(Prä)(Akt) sociōs(A), ignem(A) ad(Prp) fastīgia(A) jactant(Prä)(Akt).
+(491) cut|down allies, fire to gables they|hurl.
+(492) ille(Pr)(N) inter(Prp) caedem(A) Rutulōrum(Adj)(G) ēlāpsus(Per)(Pas)(N) in(Prp) agrōs(A)
+(492) he amid slaughter of|Rutulians having|slipped into fields
+(493) cōnfugere(Inf)(Akt) et(Kon) Turnī(G) dēfendier(Inf)(Pas) hospitis(G) armīs(N)(Abl).
+(493) to|flee and to|be|defended of|Turnus of|host by|arms.
+(494) ergō(Adv) omnis(Adj)(N) furiīs(N)(Abl) surrēxit(Per)(Akt) Etrūria(N) jūstīs(Adj)(Abl),
+(494) therefore all with|wraths has|risen Etruria just,
+(495) rēgem(A) ad(Prp) supplicium(A) praesentī(Adj)(Abl) Mārte(N)(Abl) reposcunt(Prä)(Akt).
+(495) king to punishment with|present Mars they|demand|back.
+(496) hīs(Pr)(D) ego(Pr)(N) tē(Pr)(A), Aenēā(V), ductōrem(A) mīlibus(D) addam(Prä)(Akt).
+(496) to|these I you, Aeneas, leader to|thousands I|will|add.
+(497) tōtō(Adj)(Abl) namque(Pt) fremunt(Prä)(Akt) condēnsae(Per)(Pas)(N) lītore(N)(Abl) puppēs(N)
+(497) on|the|whole for resound thronged on|shore ships
+(498) signaque(A) ferre(Inf)(Akt) jubent(Prä)(Akt), retinet(Prä)(Akt) longaevus(Adj)(N) haruspex(N)
+(498) standards to|bear they|bid, holds|back aged seer
+(499) fāta(A) canēns(Prä)(Akt)(N): “ō(ij) Maeoniae(Adj) dēlēcta(Per)(Pas)(N) juventūs(N),
+(499) fates singing: “O of|Maeonia chosen youth,
+(500) flōs(N) veterum(Adj)(G) virtūsque(N)(Kon) virum(G), quōs(Pr)(A) jūstus(Adj)(N) in(Prp) hostem(A)
+(500) flower of|the|ancients valor|and of|men, whom just against enemy
+(501) fert(Prä)(Akt) dolor(N) et(Kon) meritā(Adj)(Abl) accendit(Prä)(Akt) Mēzentius(N) īrā(N)(Abl),
+(501) brings grief and deserved inflames Mezentius with|anger,
+(502) nūllī(Adj)(D) fās(N) Italō(D) tantam(Adj)(A) subjungere(Inf)(Akt) gentem(A):
+(502) to|no right to|the|Italian so|great to|yoke|under nation:
+(503) externōs(Adj)(A) optāte(Prä)(Imv)(Akt) ducēs(A). ” tum(Adv) Ētrūsca(Adj)(N) resēdit(Per)(Akt)
+(503) foreign choose leaders. ” then Etruscan settled
+(504) hōc(Pr)(Abl) aciēs(N) campō(N)(Abl) monitīs(N)(Abl) exterrita(Per)(Pas)(N) dīvum(G).
+(504) with|this battle|line in|the|field by|warnings having|been|terrified of|the|gods.
+(505) ipse(Pr)(N) ōrātōrēs(A) ad(Prp) mē(Pr)(A) rēgnīque(G)(Kon) corōnam(A)
+(505) he|himself envoys to me of|the|kingdom|and crown
+(506) cum(Prp) scēptrō(N)(Abl) mīsit(Per)(Akt) mandatque(Prä)(Akt)(Kon) īnsignia(A) Tarchōn(N),
+(506) with scepter sent|he entrusts|he|and emblems Tarchon,
+(507) succēdam(Prä)(Knj)(Akt) castrīs(D) Tyrrhēnaque(Adj)(A)(Kon) rēgna(A) capessam(Prä)(Knj)(Akt).
+(507) may|I|go|to to|the|camp Tyrrhenian|and realms may|I|take|up.
+(508) sed(Kon) mihi(Pr)(D) tarda(Adj)(N) gelū(N)(Abl) saeclīsque(N)(Abl)(Kon) effēta(Adj)(N) senectūs(N)
+(508) but to|me slow with|frost by|ages|and spent old|age
+(509) invidet(Prä)(Akt) imperium(A) sēraeque(Adj)(N)(Kon) ad(Prp) fortia(Adj)(A) vīrēs(A).
+(509) denies|begrudges command|power late|and for brave|things forces|strength.
+(510) nātum(A) exhortārer(Imp)(Knj)(Pas), nī(Kon) mixtus(Per)(Pas)(N) mātre(N)(Abl) Sabellā(Adj)(Abl)
+(510) son I|might|exhort, if|not having|been|mixed with|mother Sabellian
+(511) hinc(Adv) partem(A) patriae(G) traheret(Imp)(Knj)(Akt). tū(Pr)(V), cujus(Pr)(G) et(Kon) annīs(N)(Abl)
+(511) from|here part of|the|fatherland might|draw. you, whose and by|years
+(512) et(Kon) generī(G) fātum(N) indulget(Prä)(Akt), quem(Pr)(A) nūmina(N) poscunt(Prä)(Akt),
+(512) and of|lineage fate indulges, whom divine|powers demand,
+(513) ingredere(Prä)(Imv)(Pas), ō(ij) Teucrum(G) atque(Kon) Italum(G) fortissime(Adj)(Sup)(V) ductor(V).
+(513) go|forward, O of|the|Teucrians and of|the|Italians bravest leader.
+(514) hunc(Pr)(A) tibi(Pr)(D) praetereā(Adv), spēs(N) et(Kon) sōlācia(N) nostrī(Pr)(G),
+(514) this to|you besides, hope and consolations of|us,
+(515) Pallanta(A) adjungam(Fu1)(Akt); sub(Prp) tē(Pr)(Abl) tolerāre(Inf)(Akt) magistrō(N)(Abl)
+(515) Pallas I|will|add; under you to|endure as|teacher
+(516) mīlitiam(A) et(Kon) grave(Adj)(A) Mārtis(G) opus(A), tua(Adj)(A) cernere(Inf)(Akt) facta(A)
+(516) service and serious of|Mars work, your to|discern deeds
+(517) adsuēscat(Prä)(Knj)(Akt), prīmīs(Adj)(Abl) et(Kon) tē(Pr)(A) mīrētur(Prä)(Knj)(Pas) ab(Prp) annīs(N)(Abl).
+(517) let|him|get|used, first and you let|him|admire from years.
+(518) Arcadas(A) huic(Pr)(D) equitēs(A) bis(Adv) centum(Adj), rōbora(A) pūbis(G)
+(518) Arcadians to|this horsemen twice hundred, strength of|youth
+(519) lēcta(Per)(Pas)(A) dabō(Fu1)(Akt), totidemque(Adj)(A)(Kon) suō(Adj)(Abl) tibi(Pr)(D) nōmine(N)(Abl) Pallās(N).'
+(519) having|been|chosen I|will|give, just|as|many|and by|his|own to|you by|name Pallas.'
+(520) Vix(Adv) ea(Pr)(A) fātus(Per)(Pas)(N) erat(Imp)(Akt), dēfīxīque(Per)(Pas)(N)(Kon) ōra(N) tenēbant(Imp)(Akt)
+(520) hardly these|things having|spoken he|was, having|been|fixed|and faces were|holding
+(521) Aenēās(N) Anchīsiadēs(N) et(Kon) fīdus(Adj)(N) Achātēs(N),
+(521) Aeneas Anchisiades and faithful Achates,
+(522) multaque(Adj)(A)(Kon) dūra(Adj)(A) suō(Adj)(Abl) trīstī(Adj)(Abl) cum(Prp) corde(N)(Abl) putābant(Imp)(Akt),
+(522) many|and hard their|own sad with heart were|thinking,
+(523) nī(Kon) signum(A) caelō(N)(Abl) Cytherēa(N) dedisset(Plq)(Knj)(Akt) apertō(Adj)(Abl).
+(523) if|not sign in|the|sky the|Cytherean had|given open.
+(524) namque(Kon) imprōvīsō(Adj)(Abl) vibrātus(Per)(Pas)(N) ab(Prp) aethere(N)(Abl) fulgor(N)
+(524) for|and unexpected having|been|brandished from sky flash
+(525) cum(Prp) sonitū(N)(Abl) venit(Per)(Akt) et(Kon) ruere(Inf)(Akt) omnia(Adj)(N) vīsa(Per)(Pas)(N) repente(Adv),
+(525) with sound came and to|rush all|things having|seemed suddenly,
+(526) Tyrrhēnusque(Adj)(N)(Kon) tubae(G) mūgīre(Inf)(Akt) per(Prp) aethera(A) clangor(N).
+(526) Tyrrhenian|and of|the|trumpet to|bellow through sky clangor.
+(527) suspiciunt(Prä)(Akt), iterum(Adv) atque(Kon) iterum(Adv) fragor(N) increpat(Prä)(Akt) ingēns(Adj)(N).
+(527) they|look|up, again and again crash resounds huge.
+(528) arma(N) inter(Prp) nūbem(A) caelī(G) in(Prp) regiōne(N)(Abl) serēnā(Adj)(Abl)
+(528) arms among cloud of|the|sky in region clear
+(529) per(Prp) sūdum(A) rutilāre(Inf)(Akt) vident(Prä)(Akt) et(Kon) pulsa(Per)(Pas)(N) tonāre(Inf)(Akt).
+(529) through clear to|redden|glow they|see and having|been|driven to|thunder.
+(530) obstipuēre(Per)(Akt) animīs(N)(Abl) aliī(Pr)(N), sed(Kon) Trōius(Adj)(N) hērōs(N)
+(530) were|astonished in|spirits others, but Trojan hero
+(531) agnōvit(Per)(Akt) sonitum(A) et(Kon) dīvae(G) prōmissa(A) parentis(G).
+(531) recognized sound and of|the|goddess promises of|the|parent.
+(532) tum(Adv) memorat(Prä)(Akt): ‘nē(Pt) vērō(Pt), hospes(V), nē(Pt) quaere(Prä)(Imv)(Akt) profectō(Pt)
+(532) then he|recounts: ‘do|not indeed, guest, do|not ask surely
+(533) quem(Pr)(A) cāsum(A) portenta(N) ferant(Prä)(Knj)(Akt): ego(Pr)(N) poscor(Prä)(Pas) Olympō(N)(Abl).
+(533) what outcome portents may|bring: I I|am|demanded by|Olympus.
+(534) hoc(Pr)(A) signum(A) cecinit(Per)(Akt) missūram(Fu1)(Akt)(A) dīva(N) creātrīx(N),
+(534) this sign sang about|to|send goddess creatress,
+(535) sī(Kon) bellum(N) ingrueret(Imp)(Knj)(Akt), Volcāniaque(Adj)(A)(Kon) arma(A) per(Prp) aurās(A)
+(535) if war might|threaten, Vulcanian|and arms through breezes
+(536) lātūram(Fu1)(Akt)(A) auxiliō(N)(Abl).
+(536) about|to|carry for|help.
+(537) heu(ij) quantae(Adj)(N) miserīs(Adj)(D) caedēs(N) Laurentibus(Adj)(D) īnstant(Prä)(Akt)!
+(537) alas how|great for|the|wretched slaughters for|the|Laurentians press|on!
+(538) quās(Pr)(A) poenās(A) mihi(Pr)(D), Turne(V), dabis(Fu1)(Akt)! quam(Adv) multa(Adj)(A) sub(Prp) undās(A)
+(538) what penalties to|me, Turnus, you|will|give! how many under waves
+(539) scūta(A) virum(G) galeāsque(A)(Kon) et(Kon) fortia(Adj)(A) corpora(A) volvēs(Fu1)(Akt),
+(539) shields of|men helmets|and and brave bodies you|will|roll,
+(540) Thybri(V) pater(V)! poscant(Prä)(Knj)(Akt) aciēs(N) et(Kon) foedera(A) rumpant(Prä)(Knj)(Akt).'
+(540) Tiber father! may|demand battle|lines and treaties may|break.'
+(541) Haec(Pr)(A) ubi(Kon) dicta(Per)(Pas)(A) dedit(Per)(Akt), soliō(N)(Abl) sē(Pr)(A) tollit(Prä)(Akt) ab(Prp) altō(Adj)(Abl)
+(541) these|things when having|been|said he|gave, from|the|throne himself he|raises from high
+(542) et(Kon) prīmum(Adv) Herculeīs(Adj)(Abl) sōpītās(Per)(Pas)(A) ignibus(N)(Abl) ārās(A)
+(542) and first with|Herculean having|been|lulled with|fires altars
+(543) excitat(Prä)(Akt), hesternumque(Adj)(A)(Kon) larem(A) parvōsque(Adj)(A)(Kon) penātīs(A)
+(543) rouses, of|yesterday|and household|god small|and household|gods
+(544) laetus(Adj)(N) adit(Prä)(Akt); mactat(Prä)(Akt) lēctās(Per)(Pas)(A) dē(Prp) mōre(N)(Abl) bidentīs(A)
+(544) glad he|approaches; sacrifices having|been|chosen from custom two|year|old|sheep
+(545) Euandrus(N) pariter(Adv), pariter(Adv) Trōjāna(Adj)(N) juventūs(N).
+(545) Evander equally, equally Trojan youth.
+(546) post(Adv) hinc(Adv) ad(Prp) nāvīs(A) graditur(Prä)(Pas) sociōsque(A)(Kon) revīsit(Prä)(Akt),
+(546) afterwards hence to ships steps allies|and revisits,
+(547) quōrum(Pr)(G) dē(Prp) numerō(N)(Abl) quī(Pr)(N) sēsē(Pr)(A) in(Prp) bella(A) sequantur(Prä)(Knj)(Pas)
+(547) of|whom from number who themselves into wars may|follow
+(548) praestantīs(Adj)(A) virtūte(N)(Abl) legit(Prä)(Akt); pars(N) cētera(Adj)(N) prōnā(Adj)(Abl)
+(548) outstanding in|valor chooses; part the|rest sloping
+(549) fertur(Prä)(Pas) aquā(N)(Abl) sēgnisque(Adj)(N)(Kon) secundō(Adj)(Abl) dēfluit(Prä)(Akt) amnī(N)(Abl),
+(549) is|borne by|water sluggish|and with|following flows|down in|the|river,
+(550) nūntia(N) ventūra(Fu1)(Pas)(N) Ascaniō(D) rērumque(G)(Kon) patrisque(G).
+(550) messenger about|to|come to|Ascanius of|things|and of|father|and.
+(551) dantur(Prä)(Pas) equī(N) Teucrīs(D) Tyrrhēna(Adj)(A) petentibus(Prä)(Akt)(D) arva(A);
+(551) are|given horses to|the|Teucrians Tyrrhenian seeking fields;
+(552) dūcunt(Prä)(Akt) exsortem(Adj)(A) Aenēae(G), quem(Pr)(A) fulva(Adj)(N) leōnis(G)
+(552) they|lead special of|Aeneas, whom tawny of|lion
+(553) pellis(N) obit(Prä)(Akt) tōtum(Adj)(A) praefulgēns(Prä)(Akt)(N) unguibus(N)(Abl) aureīs(Adj)(Abl).
+(553) skin covers whole shining|before with|claws golden.
+(554) Fāma(N) volat(Prä)(Akt) parvam(Adj)(A) subitō(Adv) vulgāta(Per)(Pas)(N) per(Prp) urbem(A)
+(554) Rumor flies small suddenly having|been|spread through city
+(555) ōcius(Adv)(Kmp) īre(Inf)(Akt) equitēs(N) Tyrrhēnī(Adj)(N) ad(Prp) līmina(A) rēgis(G).
+(555) more|swiftly to|go horsemen Tyrrhenian to thresholds of|the|king.
+(556) vōta(A) metū(N)(Abl) duplicant(Prä)(Akt) mātrēs(N), propiusque(Adv)(Kmp)(Kon) perīclō(N)(Abl)
+(556) vows with|fear they|double mothers, nearer|and to|the|danger
+(557) it(Prä)(Akt) timor(N) et(Kon) major(Adj)(Kmp)(N) Mārtis(G) jam(Adv) appāret(Prä)(Akt) imāgō(N).
+(557) goes fear and greater of|Mars now appears image.
+(558) tum(Adv) pater(N) Euandrus(N) dextram(A) complexus(Per)(Akt)(N) euntis(Prä)(Akt)(G)
+(558) then father Evander right|hand having|embraced of|the|going
+(559) haeret(Prä)(Akt) inexplētus(Per)(Pas)(N) lacrimāns(Prä)(Akt)(N) ac(Kon) tālia(Adj)(A) fātur(Prä)(Pas):
+(559) clings unfilled weeping and such he|speaks:
+(560) ‘ō(ij) mihi(Pr)(D) praeteritōs(Adj)(A) referat(Prä)(Knj)(Akt) sī(Kon) Juppiter(N) annōs(A),
+(560) ‘O to|me past may|bring|back if Jupiter years,
+(561) quālis(Adj)(N) eram(Imp)(Akt) cum(Kon) prīmam(Adj)(A) aciem(A) Praeneste(N)(Abl) sub(Prp) ipsā(Adj)(Abl)
+(561) of|what|kind I|was when first battle|line at|Praeneste under itself
+(562) strāvī(Per)(Akt) scūtōrumque(G)(Kon) incendī(Per)(Akt) victor(N) acervōs(A)
+(562) I|strewn|down of|shields|and I|burned victor heaps
+(563) et(Kon) rēgem(A) hāc(Pr)(Abl) Erulum(A) dextrā(N)(Abl) sub(Prp) Tartara(A) mīsī(Per)(Akt),
+(563) and king with|this Erulus with|right|hand down|to Tartarus I|sent,
+(564) nāscentī(Prä)(Akt)(D) cui(Pr)(D) trīs(Adj) animās(A) Fērōnia(N) māter(N)
+(564) to|the|being|born to|whom three souls Feronia mother
+(565) (horrendum(Adj)(N) dictū(Spn)(Abl)) dederat(Plq)(Akt), terna(Adj) arma(A) movenda(Gdv)(Fu1)(Pas)(A),
+(565) (dreadful to|say) she|had|given, three|each arms to|be|moved,
+(566) ter(Adv) lētō(N)(Abl) sternendus(Gdv)(Fu1)(Pas)(N) erat(Imp)(Akt); cui(Pr)(D) tunc(Adv) tamen(Pt) omnīs(Adj)(A)
+(566) thrice by|death to|be|laid|low he|was; to|whom then however all
+(567) abstulit(Per)(Akt) haec(Pr)(N) animās(A) dextra(N) et(Kon) totidem(Adj) exuit(Per)(Akt) armīs(N)(Abl):
+(567) has|taken|away this right|hand souls and just|so|many stripped of|arms:
+(568) nōn(Pt) ego(Pr)(N) nunc(Adv) dulcī(Adj)(Abl) amplexū(N)(Abl) dīvellerer(Imp)(Knj)(Pas) usquam(Adv),
+(568) not I now with|sweet embrace I|might|be|torn|apart anywhere,
+(569) nāte(V), tuō(Adj)(Abl), neque(Kon) fīnitimō(Adj)(D) Mēzentius(N) umquam(Adv)
+(569) son, by|your, nor to|a|neighbor Mezentius ever
+(570) huic(Pr)(D) capitī(D) īnsultāns(Prä)(Akt)(N) tot(Adj) ferrō(N)(Abl) saeva(Adj)(A) dedisset(Plq)(Knj)(Akt)
+(570) to|this head trampling so|many with|iron cruel would|have|given
+(571) fūnera(A), tam(Adv) multīs(Adj)(Abl) viduāsset(Plq)(Knj)(Akt) cīvibus(N)(Abl) urbem(A).
+(571) deaths, so many would|have|widowed of|citizens the|city.
+(572) at(Pt) vōs(Pr)(V), ō(ij) superī(V), et(Kon) dīvum(G) tū(Pr)(V) maxime(Adj)(Sup)(V) rēctor(V)
+(572) but you, O gods, and of|the|gods you most|great ruler
+(573) Juppiter(V), Arcadiī(Adj)(G), quaesō(Prä)(Akt), miserēscite(Prä)(Imv)(Akt) rēgis(G)
+(573) Jupiter, of|the|Arcadian, I|beg, have|pity of|the|king
+(574) et(Kon) patriās(Adj)(A) audīte(Prä)(Imv)(Akt) precēs(A). sī(Kon) nūmina(N) vestra(Adj)(N)
+(574) and fatherly hear prayers. if divinities your
+(575) incolumem(Adj)(A) Pallanta(A) mihī(Pr)(D), sī(Kon) fāta(N) reservant(Prä)(Akt),
+(575) safe Pallas for|me, if the|fates reserve,
+(576) sī(Kon) vīsūrus(Fu1)(Akt)(N) eum(Pr)(A) vīvō(Adj)(Abl) et(Kon) ventūrus(Fu1)(Akt)(N) in(Prp) ūnum(Adj)(A),
+(576) if about|to|see him alive and about|to|come into one,
+(577) vītam(A) ōrō(Prä)(Akt), patior(Prä)(Akt) quemvīs(Pr)(A) dūrāre(Inf)(Akt) labōrem(A).
+(577) life I|pray, I|suffer any to|endure labor.
+(578) sīn(Kon) aliquem(Pr)(A) īnfandum(Adj)(A) cāsum(A), Fortūna(V), mināris(Prä)(Akt),
+(578) but|if some unspeakable misfortune, Fortune, you|threaten,
+(579) nunc(Adv), nunc(Adv) ō(ij) liceat(Prä)(Knj)(Akt) crūdēlem(Adj)(A) abrumpere(Inf)(Akt) vītam(A),
+(579) now, now O let|it|be|permitted cruel to|break|off life,
+(580) dum(Kon) cūrae(N) ambiguae(Adj)(N), dum(Kon) spēs(N) incerta(Adj)(N) futūrī(Adj)(G),
+(580) while cares ambiguous, while hope uncertain of|the|future,
+(581) dum(Kon) tē(Pr)(A), cāre(Adj)(V) puer(V), mea(Adj)(N) sōla(Adj)(N) et(Kon) sēra(Adj)(N) voluptās(N),
+(581) while you, dear boy, my only and late delight,
+(582) complexū(N)(Abl) teneō(Prä)(Akt), gravior(Adj)(Kmp)(N) neu(Kon) nūntius(N) aurīs(A)
+(582) with|embrace I|hold, weightier nor messenger the|ears
+(583) vulneret(Prä)(Knj)(Akt).' haec(Pr)(A) genitor(N) dīgressū(N)(Abl) dicta(Per)(Pas)(A) suprēmō(Adj)(Abl)
+(583) may|wound.' these father at|departure said|things final
+(584) fundēbat(Imp)(Akt); famulī(N) conlāpsum(Per)(Pas)(A) in(Prp) tēcta(A) ferēbant(Imp)(Akt).
+(584) was|pouring|out; servants collapsed into the|house were|carrying.
+(585) Jamque(Adv) adeō(Adv) exierat(Plq)(Akt) portīs(N)(Abl) equitātus(N) apertīs(Per)(Pas)(Abl)
+(585) and|now to|such|a|point had|gone|out through|the|gates cavalry opened
+(586) Aenēās(N) inter(Prp) prīmōs(Adj)(A) et(Kon) fīdus(Adj)(N) Achātēs(N),
+(586) Aeneas among first and faithful Achates,
+(587) inde(Adv) aliī(Pr)(N) Trōjae(G) procerēs(N); ipse(Pr)(N) agmine(N)(Abl) Pallās(N)
+(587) then others of|Troy chiefs; himself in|the|column Pallas
+(588) in(Prp) mediō(Adj)(Abl) chlamyde(N)(Abl) et(Kon) pictīs(Per)(Pas)(Abl) cōnspectus(Per)(Pas)(N) in(Prp) armīs(N)(Abl),
+(588) in middle cloak and embroidered seen in arms,
+(589) quālis(Adj)(N) ubi(Kon) Ōceanī(G) perfūsus(Per)(Pas)(N) Lūcifer(N) undā(N)(Abl),
+(589) such|as when of|Ocean having|been|bathed Lucifer with|wave,
+(590) quem(Pr)(A) Venus(N) ante(Prp) aliōs(Adj)(A) astrōrum(G) dīligit(Prä)(Akt) ignīs(A),
+(590) whom Venus before other of|stars loves fires,
+(591) extulit(Per)(Akt) ōs(A) sacrum(Adj)(A) caelō(N)(Abl) tenebrāsque(A)(Kon) resolvit(Per)(Akt).
+(591) has|raised face sacred in|the|sky darkness|and released.
+(592) stant(Prä)(Akt) pavidae(Adj)(N) in(Prp) mūrīs(N)(Abl) mātrēs(N) oculīsque(N)(Abl)(Kon) sequuntur(Prä)(Akt)
+(592) stand fearful on walls mothers with|eyes|and follow
+(593) pulveream(Adj)(A) nūbem(A) et(Kon) fulgentīs(Prä)(Akt)(A) aere(N)(Abl) catervās(A).
+(593) dusty cloud and shining with|bronze troops.
+(594) ollī(Pr)(N) per(Prp) dūmōs(A), quā(Pr)(Abl) proxima(Adj)(N) mēta(N) viārum(G),
+(594) those through thickets, where nearest turning|post of|roads,
+(595) armātī(Per)(Pas)(N) tendunt(Prä)(Akt); it(Prä)(Akt) clāmor(N), et(Kon) agmine(N)(Abl) factō(Per)(Pas)(Abl)
+(595) armed stretch|out; goes shout, and with|column made
+(596) quadripedante(Adj)(Abl) putrem(Adj)(A) sonitū(N)(Abl) quatit(Prä)(Akt) ungula(N) campum(A).
+(596) four|footed crumbling with|sound shakes hoof field.
+(597) est(Prä)(Akt) ingēns(Adj)(N) gelidum(Adj)(A) lūcus(N) prope(Prp) Caeritis(Adj)(G) amnem(A),
+(597) there|is huge chilly grove near of|Caere river,
+(598) rēligiōne(N)(Abl) patrum(G) lātē(Adv) sacer(Adj)(N); undique(Adv) collēs(N)
+(598) by|religion of|the|fathers widely sacred; on|all|sides hills
+(599) inclūsēre(Per)(Akt) cavī(Adj)(N) et(Kon) nīgrā(Adj)(Abl) nemus(A) abiete(N)(Abl) cingunt(Prä)(Akt).
+(599) have|enclosed hollow and black grove with|fir gird.
+(600) Silvānō(D) fāma(N) est(Prä)(Akt) veterēs(Adj)(N) sacrāsse(Inf)(Akt) Pelasgōs(A),
+(600) to|Silvanus rumor is ancient to|have|consecrated Pelasgians,
+(601) arvōrum(G) pecorisque(G)(Kon) deō(D), lūcumque(A)(Kon) diemque(A)(Kon),
+(601) of|fields of|flock|and to|the|god, grove|and day|and,
+(602) quī(Pr)(N) prīmī(Adj)(N) fīnīs(A) aliquandō(Adv) habuēre(Per)(Akt) Latīnōs(Adj)(A).
+(602) who first boundaries at|some|time have|held Latin.
+(603) haud(Pt) procul(Adv) hinc(Adv) Tarchō(N) et(Kon) Tyrrhēnī(Adj)(N) tūta(Adj)(A) tenēbant(Imp)(Akt)
+(603) not far hence Tarchon and Tyrrhenians safe were|holding
+(604) castra(N) locīs(N)(Abl), celsōque(Adj)(Abl)(Kon) omnis(Adj)(N) dē(Prp) colle(N)(Abl) vidērī(Inf)(Pas)
+(604) camp in|places, lofty|and all from hill to|be|seen
+(605) jam(Adv) poterat(Imp)(Akt) legiō(N) et(Kon) lātīs(Adj)(Abl) tendēbat(Imp)(Akt) in(Prp) arvīs(N)(Abl).
+(605) now could legion and broad was|stretching in fields.
+(606) hūc(Adv) pater(N) Aenēās(N) et(Kon) bellō(N)(Abl) lēcta(Per)(Pas)(N) juventūs(N)
+(606) hither father Aeneas and in|war chosen youth
+(607) succēdunt(Prä)(Akt), fessīque(Per)(Pas)(N)(Kon) et(Kon) equōs(A) et(Kon) corpora(A) cūrant(Prä)(Akt).
+(607) approach, weary|and and horses and bodies care|for.
+(608) At(Pt) Venus(N) aetheriōs(Adj)(A) inter(Prp) dea(N) candida(Adj)(N) nimbōs(A)
+(608) but Venus ethereal among goddess bright clouds
+(609) dōna(A) ferēns(Prä)(Akt)(N) aderat(Imp)(Akt); nātumque(A)(Kon) in(Prp) valle(N)(Abl) reductā(Per)(Pas)(Abl)
+(609) gifts bearing was|present; son|and in valley withdrawn
+(610) ut(Kon) procul(Adv) ēgelidō(Adj)(Abl) sēcrētum(Adj)(A) flūmine(N)(Abl) vīdit(Per)(Akt),
+(610) as|soon|as afar tepid secluded by|river she|saw,
+(611) tālibus(Adj)(Abl) adfāta(Per)(Pas)(N) est(Prä)(Akt) dictīs(N)(Abl) sēque(Pr)(A)(Kon) obtulit(Per)(Akt) ultrō(Adv):
+(611) with|such having|addressed is words herself|and offered spontaneously:
+(612) ‘ēn(ij) perfecta(Per)(Pas)(N) meī(Pr)(G) prōmissā(Per)(Pas)(N) conjugis(G) arte(N)(Abl)
+(612) ‘behold completed of|me promised of|spouse by|skill
+(613) mūnera(N). nē(Pt) mox(Adv) aut(Kon) Laurentīs(Adj)(A), nāte(V), superbōs(Adj)(A)
+(613) gifts. do|not soon or Laurentians, son, proud
+(614) aut(Kon) ācrem(Adj)(A) dubitēs(Prä)(Knj)(Akt) in(Prp) proelia(A) poscere(Inf)(Akt) Turnum(A).'
+(614) or keen you|may|hesitate into battles to|demand Turnus.'
+(615) dīxit(Per)(Akt), et(Kon) amplexūs(A) nātī(G) Cytherēa(Adj)(N) petīvit(Per)(Akt),
+(615) she|said, and embraces of|son Cytherean has|sought,
+(616) arma(A) sub(Prp) adversā(Adj)(Abl) posuit(Per)(Akt) radiantia(Prä)(Akt)(A) quercū(N)(Abl).
+(616) arms under opposite has|placed shining oak.
+(617) ille(Pr)(N) deae(G) dōnīs(N)(Abl) et(Kon) tantō(Adj)(Abl) laetus(Adj)(N) honōre(N)(Abl)
+(617) he of|the|goddess with|gifts and so|great glad with|honor
+(618) explērī(Inf)(Pas) nequit(Prä)(Akt) atque(Kon) oculōs(A) per(Prp) singula(Adj)(A) volvit(Prä)(Akt),
+(618) to|be|filled he|is|unable and eyes through each he|turns,
+(619) mīrāturque(Prä)(Akt)(Kon) interque(Prp)(Kon) manūs(A) et(Kon) bracchia(A) versat(Prä)(Akt)
+(619) admires|and among|and hands and arms he|turns
+(620) terribilem(Adj)(A) cristīs(N)(Abl) galeam(A) flammāsque(A)(Kon) vomentem(Prä)(Akt)(A),
+(620) terrible with|crests helmet flames|and spewing,
+(621) fātiferumque(Adj)(A)(Kon) ēnsem(A), lōrīcam(A) ex(Prp) aere(N)(Abl) rigentem(Prä)(Akt)(A),
+(621) death|bearing|and sword, cuirass out|of bronze stiffening,
+(622) sanguineam(Adj)(A), ingentem(Adj)(A), quālis(Adj)(N) cum(Kon) caerula(Adj)(N) nūbēs(N)
+(622) bloody, huge, such|as when blue|green cloud
+(623) sōlis(G) inārdēscit(Prä)(Akt) radiīs(N)(Abl) longēque(Adv)(Kon) refulget(Prä)(Akt);
+(623) of|the|sun blazes with|rays far|and gleams;
+(624) tum(Adv) lēvīs(Adj)(A) ocreās(A) ēlectrō(N)(Abl) aurōque(N)(Abl)(Kon) recoctō(Per)(Pas)(Abl),
+(624) then light greaves with|electrum with|gold|and re|melted,
+(625) hastamque(A)(Kon) et(Kon) clipeī(G) nōn(Pt) ēnārrābile(Adj)(A) textum(A).
+(625) spear|and and of|the|shield not tellable weave.
+(626) illīc(Adv) rēs(A) Italas(Adj)(A) Rōmānōrumque(G)(Kon) triumphōs(A)
+(626) there things Italian of|the|Romans|and triumphs
+(627) haud(Pt) vātum(G) ignārus(Adj)(N) ventūrīque(Fu1)(Akt)(G)(Kon) īnscius(Adj)(N) aevī(G)
+(627) not of|prophets unknowing of|coming|and unaware of|age
+(628) fēcerat(Plq)(Akt) ignipotēns(N), illīc(Adv) genus(A) omne(Adj)(A) futūrae(Adj)(G)
+(628) had|made fire|powerful, there race all of|future
+(629) stirpis(G) ab(Prp) Ascaniō(N)(Abl) pugnātaque(Per)(Pas)(N)(Kon) in(Prp) ōrdine(N)(Abl) bella(A).
+(629) of|stock from Ascanius fought|and in order wars.
+(630) fēcerat(Plq)(Akt) et(Kon) viridī(Adj)(Abl) fētam(Adj)(A) Māvortis(G) in(Prp) antrō(N)(Abl)
+(630) had|made and green teeming of|Mars in cave
+(631) prōcubuisse(Inf)(Akt) lupam(A), geminōs(Adj)(A) huic(Pr)(D) ūbera(A) circum(Adv)
+(631) to|have|lain|down she|wolf, twin to|this teats around
+(632) lūdere(Inf)(Akt) pendentīs(Prä)(Akt)(A) puerōs(A) et(Kon) lambere(Inf)(Akt) mātrem(A)
+(632) to|play hanging boys and to|lick mother
+(633) impavidōs(Adj)(A), illam(Pr)(A) teretī(Adj)(Abl) cervīce(N)(Abl) reflexā(Per)(Pas)(Abl)
+(633) fearless, her with|rounded neck bent|back
+(634) mulcēre(Inf)(Akt) alternōs(Adj)(A) et(Kon) corpora(A) fingere(Inf)(Akt) linguā(N)(Abl).
+(634) to|soothe alternately and bodies to|form with|tongue.
+(635) nec(Kon) procul(Adv) hinc(Adv) Rōmam(A) et(Kon) raptās(Per)(Pas)(A) sine(Prp) mōre(N)(Abl) Sabīnās(A)
+(635) nor far hence Rome and seized without rite|custom Sabines
+(636) cōnsessū(N)(Abl) caveae(G), magnīs(Adj)(Abl) Circēnsibus(Adj)(Abl) āctīs(Per)(Pas)(Abl),
+(636) by|assembly of|the|tiered|seats, great Circensian having|been|done,
+(637) addiderat(Plq)(Akt), subitōque(Adv)(Kon) novum(Adj)(A) cōnsurgere(Inf)(Akt) bellum(A)
+(637) had|added, suddenly|and new to|together|rise war
+(638) Rōmulidīs(D) Tatiōque(D)(Kon) senī(Adj)(D) Curibusque(D)(Kon) sevērīs(Adj)(D).
+(638) to|the|Romulus|sons to|Tatius|and old to|Cures|and stern.
+(639) post(Prp) īdem(Pr)(N) inter(Prp) sē(Pr)(A) positō(Per)(Pas)(Abl) certāmine(N)(Abl) rēgēs(N)
+(639) after the|same between themselves having|been|placed contest kings
+(640) armātī(Per)(Pas)(N) Jovis(G) ante(Prp) āram(A) paterāsque(A)(Kon) tenentēs(Prä)(Akt)(N)
+(640) armed of|Jove before the|altar bowls|and holding
+(641) stābant(Imp)(Akt) et(Kon) caesā(Per)(Pas)(Abl) jungēbant(Imp)(Akt) foedera(A) porcā(N)(Abl).
+(641) were|standing and slain were|joining treaties with|a|sow.
+(642) haud(Pt) procul(Adv) inde(Adv) citae(Adj)(N) Mettum(A) in(Prp) dīversa(Adj)(A) quadrīgae(N)
+(642) not far from|there swift Mettius into different|directions four|horse|chariots
+(643) distulerant(Plq)(Akt) (at(Pt) tū(Pr)(N) dictīs(N)(Abl), Albāne(V), manērēs(Imp)(Knj)(Akt)! ),
+(643) had|borne|apart (but you by|words, Alban, would|you|remain! ),
+(644) raptābatque(Imp)(Akt)(Kon) virī(G) mendācis(Adj)(G) vīscera(A) Tullus(N)
+(644) was|dragging|and of|the|man lying|deceitful entrails Tullus
+(645) per(Prp) silvam(A), et(Kon) sparsī(Per)(Pas)(N) rōrābant(Imp)(Akt) sanguine(N)(Abl) veprēs(N).
+(645) through the|forest, and scattered were|dripping with|blood brambles.
+(646) nec(Kon) nōn(Pt) Tarquinium(A) ējectum(Per)(Pas)(A) Porsenna(N) jubēbat(Imp)(Akt)
+(646) nor not Tarquin having|been|banished Porsenna was|ordering
+(647) accipere(Inf)(Akt) ingentīque(Adj)(Abl)(Kon) urbem(A) obsidiōne(N)(Abl) premēbat(Imp)(Akt);
+(647) to|receive and|with|huge the|city with|siege he|pressed;
+(648) Aeneadae(N) in(Prp) ferrum(A) prō(Prp) lībertāte(N)(Abl) ruēbant(Imp)(Akt).
+(648) Aeneas|descendants into the|steel for freedom were|rushing.
+(649) illum(Pr)(A) indignantī(Prä)(Akt)(D) similem(Adj)(A) similemque(Adj)(A)(Kon) minantī(Prä)(Akt)(D)
+(649) him to|the|indignant like like|and to|the|threatening
+(650) aspicerēs(Imp)(Knj)(Akt), pontem(A) audēret(Imp)(Knj)(Akt) quia(Kon) vellere(Inf)(Akt) Cōcles(N)
+(650) you|might|look|at, the|bridge would|dare because to|pull|up Cocles
+(651) et(Kon) fluvium(A) vinclīs(N)(Abl) innāret(Imp)(Knj)(Akt) Cloelia(N) ruptīs(Per)(Pas)(Abl).
+(651) and the|river with|fetters might|swim|upon Cloelia having|been|broken.
+(652) in(Prp) summō(Adj)(Abl) cūstōs(N) Tarpejae(Adj)(G) Mānlius(N) arcis(G)
+(652) on the|top guardian of|Tarpeian Manlius of|the|citadel
+(653) stābat(Imp)(Akt) prō(Prp) templō(N)(Abl) et(Kon) Capitōlia(A) celsa(Adj)(A) tenēbat(Imp)(Akt),
+(653) was|standing before the|temple and the|Capitol lofty he|held,
+(654) Rōmuleōque(Adj)(Abl)(Kon) recēns(Adj)(N) horrēbat(Imp)(Akt) rēgia(N) culmō(N)(Abl).
+(654) with|Romulean|and fresh bristled the|royal|house with|thatch.
+(655) atque(Kon) hīc(Adv) aurātīs(Adj)(Abl) volitāns(Prä)(Akt)(N) argenteus(Adj)(N) ānser(N)
+(655) and here with|golden flitting silver goose
+(656) porticibus(N)(Abl) Gallōs(A) in(Prp) līmine(N)(Abl) adesse(Inf)(Akt) canēbat(Imp)(Akt);
+(656) in|the|colonnades the|Gauls at the|threshold to|be|present was|singing|out;
+(657) Gallī(N) per(Prp) dūmōs(A) aderant(Imp)(Akt) arcemque(A)(Kon) tenēbant(Imp)(Akt)
+(657) Gauls through thickets were|present the|citadel|and were|holding
+(658) dēfēnsī(Per)(Pas)(N) tenebrīs(N)(Abl) et(Kon) dōnō(N)(Abl) noctis(G) opācae(Adj)(G).
+(658) defended by|darkness and by|the|gift of|night shady|dark.
+(659) aurea(Adj)(N) caesariēs(N) ollīs(Pr)(D) atque(Kon) aurea(Adj)(N) vestis(N),
+(659) golden hair to|those and golden garment,
+(660) virgātīs(Adj)(Abl) lūcent(Prä)(Akt) sagulīs(N)(Abl), tum(Adv) lactea(Adj)(N) colla(N)
+(660) with|striped they|shine with|cloaks, then milky necks
+(661) aurō(N)(Abl) innectuntur(Prä)(Pas), duo(Adj)(N) quisque(Pr)(N) Alpīna(Adj)(A) coruscant(Prä)(Akt)
+(661) with|gold are|fastened, two each Alpine|things they|brandish
+(662) gaesa(A) manū(N)(Abl), scūtīs(N)(Abl) prōtēctī(Per)(Pas)(N) corpora(A) longīs(Adj)(Abl).
+(662) javelins by|hand, with|shields protected bodies long.
+(663) hīc(Adv) exsultantīs(Prä)(Akt)(A) Saliōs(A) nūdōsque(Adj)(A)(Kon) Lupercōs(A)
+(663) here leaping Salii naked|and Luperci
+(664) lānigerōsque(Adj)(A)(Kon) apicēs(A) et(Kon) lāpsa(Per)(Pas)(A) ancīlia(A) caelō(N)(Abl)
+(664) wool|bearing caps and having|slid|down ancilia|shields from|sky
+(665) extuderat(Plq)(Akt), castae(Adj)(N) dūcēbant(Imp)(Akt) sacra(A) per(Prp) urbem(A)
+(665) had|beaten|out, chaste were|leading sacred|rites through the|city
+(666) pīlentīs(N)(Abl) mātrēs(N) in(Prp) mollibus(Adj)(Abl). hinc(Adv) procul(Adv) addit(Prä)(Akt)
+(666) in|litters matrons on soft. from|here afar he|adds
+(667) Tartareās(Adj)(A) etiam(Adv) sēdēs(A), alta(Adj)(A) ōstia(A) Dītis(G),
+(667) Tartarean also seats, high gates of|Dis,
+(668) et(Kon) scelerum(G) poenās(A), et(Kon) tē(Pr)(A), Catilīna(V), minācī(Adj)(Abl)
+(668) and of|crimes penalties, and you, Catiline, threatening
+(669) pendentem(Prä)(Akt)(A) scopulō(N)(Abl) Furiārumque(G)(Kon) ōra(A) trementem(Prä)(Akt)(A),
+(669) hanging on|a|crag of|the|Furies|and faces trembling,
+(670) sēcrētōsque(Adj)(A)(Kon) piōs(Adj)(A), hīs(Pr)(D) dantem(Prä)(Akt)(A) jūra(A) Catōnem(A).
+(670) set|apart|and pious, to|these giving laws Cato.
+(671) haec(Pr)(A) inter(Prp) tumidī(Adj)(G) lātē(Adv) maris(G) ībat(Imp)(Akt) imāgō(N)
+(671) these|things among of|swollen widely of|the|sea was|going image
+(672) aurea(Adj)(N), sed(Kon) flūctū(N)(Abl) spūmābant(Imp)(Akt) caerula(Adj)(N) cānō(Adj)(Abl),
+(672) golden, but with|wave were|foaming blue|waters with|white,
+(673) et(Kon) circum(Prp) argentō(N)(Abl) clārī(Adj)(N) delphīnes(N) in(Prp) orbem(A)
+(673) and around with|silver bright dolphins into a|circle
+(674) aequora(A) verrēbant(Imp)(Akt) caudīs(N)(Abl) aestumque(A)(Kon) secābant(Imp)(Akt).
+(674) the|seas were|sweeping with|tails the|surge|and were|cleaving.
+(675) in(Prp) mediō(Adj)(Abl) classīs(A) aerātās(Adj)(A), Actia(Adj)(A) bella(A),
+(675) in the|midst fleets bronze|clad, Actian wars,
+(676) cernere(Inf)(Akt) erat(Imp)(Akt), tōtumque(Adj)(A)(Kon) īnstrūctō(Per)(Pas)(Abl) Mārte(N)(Abl) vidērēs(Imp)(Knj)(Akt)
+(676) to|see there|was, all|and with|marshaled Mars|war you|might|see
+(677) fervere(Inf)(Akt) Leucātēn(A) aurōque(N)(Abl)(Kon) effulgere(Inf)(Akt) flūctūs(A).
+(677) to|seethe Leucate with|gold|and to|gleam|forth waves.
+(678) hinc(Adv) Augustus(N) agēns(Prä)(Akt)(N) Italōs(A) in(Prp) proelia(A) Caesar(N)
+(678) from|here Augustus leading Italians into battles Caesar
+(679) cum(Prp) patribus(N)(Abl) populōque(N)(Abl)(Kon), penātibus(N)(Abl) et(Kon) magnīs(Adj)(Abl) dīs(N)(Abl),
+(679) with senators people|and, household|gods and great gods,
+(680) stāns(Prä)(Akt)(N) celsā(Adj)(Abl) in(Prp) puppī(N)(Abl), geminās(Adj)(A) cui(Pr)(D) tempora(A) flammās(A)
+(680) standing on|lofty on stern, twin to|whom temples flames
+(681) laeta(Adj)(N) vomunt(Prä)(Akt) patriumque(Adj)(N)(Kon) aperītur(Prä)(Pas) vertice(N)(Abl) sīdus(N).
+(681) happy they|spew ancestral|and is|opened on|the|crown star.
+(682) parte(N)(Abl) aliā(Adj)(Abl) ventīs(N)(Abl) et(Kon) dīs(N)(Abl) Agrippa(N) secundīs(Adj)(Abl)
+(682) on|the|side other with|winds and with|gods Agrippa favorable
+(683) arduus(Adj)(N) agmen(A) agēns(Prä)(Akt)(N), cui(Pr)(D), bellī(G) īnsigne(N) superbum(Adj)(N),
+(683) towering the|line leading, to|whom, of|war emblem proud,
+(684) tempora(N) nāvālī(Adj)(Abl) fulgent(Prä)(Akt) rōstrāta(Per)(Pas)(Abl) corōnā(N)(Abl).
+(684) temples with|naval shine beaked crown.
+(685) hinc(Adv) ope(N)(Abl) barbaricā(Adj)(Abl) variīsque(Adj)(Abl)(Kon) Antōnius(N) armīs(N)(Abl),
+(685) from|here with|aid barbarian with|various|and Antony arms,
+(686) victor(Adj)(N) ab(Prp) Aurōrae(G) populīs(N)(Abl) et(Kon) lītore(N)(Abl) rubrō(Adj)(Abl),
+(686) victor from of|Dawn peoples and shore red,
+(687) Aegyptum(A) vīrīsque(N)(Abl)(Kon) Orientis(G) et(Kon) ultima(Adj)(A) sēcum(Pr)(Abl)(Prp)
+(687) Egypt with|men of|the|East and farthest with|himself
+(688) Bactra(A) vehit(Prä)(Akt), sequiturque(Prä)(Akt)(Kon) (nefās(N)) Aegyptia(Adj)(N) conjūnx(N).
+(688) Bactra he|carries, follows|and (unspeakable|wrong) Egyptian wife.
+(689) ūnā(Adv) omnēs(Adj)(N) ruere(Inf)(Akt) ac(Kon) tōtum(Adj)(N) spūmāre(Inf)(Akt) reductīs(Per)(Pas)(Abl)
+(689) together all to|rush and the|whole to|foam having|been|drawn|back
+(690) convulsum(Per)(Pas)(A) rēmīs(N)(Abl) rōstrīsque(N)(Abl)(Kon) tridentibus(Adj)(Abl) aequor(A).
+(690) torn|up by|oars by|rams|and three|toothed sea.
+(691) alta(Adj)(A) petunt(Prä)(Akt); pelagō(N)(Abl) crēdās(Prä)(Knj)(Akt) innāre(Inf)(Akt) revulsās(Per)(Pas)(A)
+(691) the|deeps they|seek; on|the|sea you|would|believe to|swim|upon torn|away
+(692) Cycladas(A) aut(Kon) montīs(A) concurrere(Inf)(Akt) montibus(N)(Abl) altōs(Adj)(A),
+(692) the|Cyclades or mountains to|run|together with|mountains high,
+(693) tantā(Adj)(Abl) mōle(N)(Abl) virī(N) turrītīs(Adj)(Abl) puppibus(N)(Abl) īnstant(Prä)(Akt).
+(693) with|so|great mass men turreted sterns|ships press|on.
+(694) stuppea(Adj)(N) flamma(N) manū(N)(Abl) tēlīsque(N)(Abl)(Kon) volātile(Adj)(N) ferrum(N)
+(694) tow|soaked flame by|hand with|missiles|and flying iron
+(695) spargitur(Prä)(Pas), arva(N) novā(Adj)(Abl) Neptūnia(Adj)(Abl) caede(N)(Abl) rubēscunt(Prä)(Akt).
+(695) is|scattered, fields with|new Neptunian slaughter redden.
+(696) rēgīna(N) in(Prp) mediīs(Adj)(Abl) patriō(Adj)(Abl) vocat(Prä)(Akt) agmina(A) sīstrō(N)(Abl),
+(696) the|queen in the|midst with|native calls ranks sistrum,
+(697) necdum(Pt) etiam(Adv) geminōs(Adj)(A) ā(Prp) tergō(N)(Abl) respicit(Prä)(Akt) anguīs(A).
+(697) and|not|yet also twin from back looks|back snakes.
+(698) omnigenumque(Adj)(A)(Kon) deum(G) mōnstra(A) et(Kon) lātrātor(N) Anūbis(N)
+(698) of|every|kind|and of|the|gods monsters and barker Anubis
+(699) contrā(Prp) Neptūnum(A) et(Kon) Venerem(A) contrāque(Prp)(Kon) Minervam(A)
+(699) against Neptune and Venus against|and Minerva
+(700) tēla(A) tenent(Prä)(Akt). saevit(Prä)(Akt) mediō(Adj)(Abl) in(Prp) certāmine(N)(Abl) Māvors(N)
+(700) weapons hold. rages in|the|midst in contest Mars
+(701) caelātus(Per)(Pas)(N) ferrō(N)(Abl), trīstēsque(Adj)(N)(Kon) ex(Prp) aethere(N)(Abl) Dīrae(N),
+(701) carved in|iron, grim|and out|of upper|air Dirae|Furies,
+(702) et(Kon) scissā(Per)(Pas)(Abl) gaudēns(Prä)(Akt)(N) vādit(Prä)(Akt) Discordia(N) pallā(N)(Abl),
+(702) and with|torn rejoicing goes Discord cloak,
+(703) quam(Pr)(A) cum(Prp) sanguineō(Adj)(Abl) sequitur(Prä)(Akt) Bellōna(N) flagellō(N)(Abl).
+(703) whom with blood|red follows Bellona whip.
+(704) Āctius(Adj)(N) haec(Pr)(A) cernēns(Prä)(Akt)(N) arcum(A) intendēbat(Imp)(Akt) Apollō(N)
+(704) Actian these|things seeing bow was|bending Apollo
+(705) dēsuper(Adv); omnis(Adj)(N) eō(Pr)(Abl) terrōre(N)(Abl) Aegyptus(N) et(Kon) Indī(N),
+(705) from|above; all by|that terror Egypt and Indians,
+(706) omnis(Adj)(N) Arabs(N), omnēs(Adj)(N) vertēbant(Imp)(Akt) terga(A) Sabaeī(N).
+(706) all Arab, all were|turning backs Sabaeans.
+(707) ipsa(Pr)(N) vidēbātur(Imp)(Pas) ventīs(N)(Abl) rēgīna(N) vocātīs(Per)(Pas)(Abl)
+(707) she|herself seemed the|winds the|queen having|been|summoned
+(708) vēla(A) dare(Inf)(Akt) et(Kon) laxōs(Adj)(A) jam(Adv) jamque(Adv)(Kon) immittere(Inf)(Akt) fūnīs(A).
+(708) sails to|set and slack now now|and to|let|loose ropes.
+(709) illam(Pr)(A) inter(Prp) caedēs(A) pallentem(Prä)(Akt)(A) morte(N)(Abl) futūrā(Fu1)(Akt)(Abl)
+(709) her among slaughters growing|pale at|death about|to|come
+(710) fēcerat(Plq)(Akt) ignipotēns(N) undīs(N)(Abl) et(Kon) Iāpyge(N)(Abl) ferrī(Inf)(Pas),
+(710) had|made fire|powerful by|waves and by|Iapyx to|be|borne,
+(711) contrā(Prp) autem(Pt) magnō(Adj)(Abl) maerentem(Prä)(Akt)(A) corpore(N)(Abl) Nīlum(A)
+(711) opposite but|now with|great mourning body Nile
+(712) pandentemque(Prä)(Akt)(A)(Kon) sinūs(A) et(Kon) tōtā(Adj)(Abl) veste(N)(Abl) vocantem(Prä)(Akt)(A)
+(712) spreading|and bays and with|whole garment calling
+(713) caeruleum(Adj)(A) in(Prp) gremium(A) latebrōsaque(Adj)(A)(Kon) flūmina(A) victōs(Per)(Pas)(A).
+(713) dark|blue into lap hiding|place|filled|and rivers conquered.
+(714) at(Kon) Caesar(N), triplicī(Adj)(Abl) invectus(Per)(Pas)(N) Rōmāna(Adj)(A) triumphō(N)(Abl)
+(714) but Caesar, threefold having|been|borne|in Roman by|triumph
+(715) moenia(A), dīs(D) Italīs(Adj)(D) vōtum(A) immortāle(Adj)(A) sacrābat(Imp)(Akt),
+(715) walls, to|the|gods Italian vow immortal was|consecrating,
+(716) maxima(Adj)(A) ter(Adv) centum(Adj) tōtam(Adj)(A) dēlūbra(A) per(Prp) urbem(A).
+(716) greatest thrice a|hundred whole temples through the|city.
+(717) laetitiā(N)(Abl) lūdīsque(N)(Abl)(Kon) viae(N) plausūque(N)(Abl)(Kon) fremēbant(Imp)(Akt);
+(717) with|joy with|games|and the|streets with|applause|and were|resounding;
+(718) omnibus(Adj)(Abl) in(Prp) templīs(N)(Abl) mātrum(G) chorus(N), omnibus(Adj)(Abl) ārae(N);
+(718) in|all in the|temples of|mothers chorus, in|all altars;
+(719) ante(Prp) ārās(A) terram(A) caesī(Per)(Pas)(N) strāvēre(Per)(Akt) juvencī(N).
+(719) before the|altars the|ground having|been|slain have|strewn steers.
+(720) ipse(Pr)(N) sedēns(Prä)(Akt)(N) niveō(Adj)(Abl) candentis(Prä)(Akt)(G) līmine(N)(Abl) Phoebī(G)
+(720) he|himself sitting on|snowy of|shining threshold of|Phoebus
+(721) dōna(A) recognōscit(Prä)(Akt) populōrum(G) aptatque(Prä)(Akt)(Kon) superbīs(Adj)(D)
+(721) gifts reviews of|peoples fits|and to|proud
+(722) postibus(D); incēdunt(Prä)(Akt) victae(Per)(Pas)(N) longō(Adj)(Abl) ōrdine(N)(Abl) gentēs(N),
+(722) doorposts; march having|been|conquered in|long order peoples,
+(723) quam(Kon) variae(Adj)(N) linguīs(N)(Abl), habitū(N)(Abl) tam(Adv) vestis(G) et(Kon) armīs(N)(Abl).
+(723) as diverse in|languages, in|appearance so of|dress and in|arms.
+(724) hīc(Adv) Nomadum(G) genus(N) et(Kon) discīnctōs(Per)(Pas)(A) Mulciber(N) Āfrōs(A),
+(724) here of|Nomads race and having|been|ungirded Mulciber Africans,
+(725) hīc(Adv) Lelegās(A) Cārāsque(A)(Kon) sagittiferōsque(Adj)(A)(Kon) Gelōnōs(A)
+(725) here Leleges Carians|and arrow|bearing|and Geloni
+(726) fīnxerat(Plq)(Akt); Euphrātēs(N) ībat(Imp)(Akt) jam(Adv) mollior(Adj)(Kmp)(N) undīs(N)(Abl),
+(726) had|fashioned; Euphrates was|going now softer with|waves,
+(727) extrēmīque(Adj)(Sup)(N)(Kon) hominum(G) Morinī(N), Rhēnusque(N)(Kon) bicornis(Adj)(N),
+(727) farthest|and of|men Morini, Rhine|and two|horned,
+(728) indomitīque(Adj)(N)(Kon) Dahae(N), et(Kon) pontem(A) indignātus(Per)(Pas)(N) Araxēs(N).
+(728) untamed|and Dahae, and bridge having|resented Araxes.
+(729) Tālia(Adj)(A) per(Prp) clipeum(A) Volcānī(G), dōna(A) parentis(G),
+(729) such|things through shield of|Vulcan, gifts of|his|parent,
+(730) mīrātur(Prä)(Pas) rērumque(G)(Kon) ignārus(Adj)(N) imāgine(N)(Abl) gaudet(Prä)(Akt)
+(730) admires of|things|and unknowing at|the|image rejoices
+(731) attollēns(Prä)(Akt)(N) umerō(N)(Abl) fāmamque(A)(Kon) et(Kon) fāta(A) nepōtum(G).
+(731) lifting|up on|the|shoulder fame|and and fates of|descendants.

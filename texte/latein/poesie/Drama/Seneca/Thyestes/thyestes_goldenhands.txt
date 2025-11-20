@@ -1,0 +1,1121 @@
+(1x) === Prolog ===
+(1)  Tantali Umbra: Quis īnferōrum sēde ab īnfaustā extrahit
+(2)  Tantali Umbra: avidō fugācēs ōre captantem cibōs?
+(3)  Tantali Umbra: quis male deōrum Tantalō invīsās domōs
+(4)  Tantali Umbra: ostendit iterum? pejus inventum est sitī
+(5)  Tantali Umbra: ārente in undīs aliquid et pejus famē
+(6)  Tantali Umbra: hiante semper? Sīsyphī numquid lapis
+(7)  Tantali Umbra: gestandus umerīs lūbricus nostrīs venit
+(8)  Tantali Umbra: aut membra celerī differēns cursū rota,
+(9)  Tantali Umbra: aut poena Tityī quī specū vastō patēns
+(10)  Tantali Umbra: vīsceribus ātrās pāscit effossīs avēs
+(11)  Tantali Umbra: et nocte reparāns quidquid āmīsit diē
+(12)  Tantali Umbra: plēnum recentī pābulum mōnstrō jacet?
+(13)  Tantali Umbra: in quod malum trānscrībor? Ō quisquis nova
+(14)  Tantali Umbra: supplicia fūnctīs dūrus umbrārum arbiter
+(15)  Tantali Umbra: dispōnis, addī sī quid ad poenās potest
+(16)  Tantali Umbra: quod ipse cūstōs carceris dīrī horreat,
+(17)  Tantali Umbra: quod maestus Acherōn paveat, ad cujus metum
+(18)  Tantali Umbra: nōs quoque tremāmus, quaere. Jam nostrā subit
+(19)  Tantali Umbra: ē stirpe turba quae suum vincat genus
+(20)  Tantali Umbra: ac mē innocentem faciat et inausa audeat.
+(21)  Tantali Umbra: regiōne quidquid impiā cessat locī
+(22)  Tantali Umbra: complēbo; numquam stante Pelopēā domō
+(23)  Tantali Umbra: Mīnōs vacābit. Perge, dētestābilis
+(24)  Furia: umbra, et penātēs impiōs furiīs age.
+(25)  Furia: certētur omnī scelere et alternā vice
+(26)  Furia: stringātur ēnsis; nec sit īrārum modus
+(27)  Furia: pudorve, mentēs caecus īnstīget furor,
+(28)  Furia: rabiēs parentum dūret et longum nefās
+(29)  Furia: eat in nepōtēs; nec vacet cuiquam vetus
+(30)  Furia: ōdisse crīmen: semper oriātur novum,
+(31)  Furia: nec ūnum in ūnō, dumque pūnītur scelus,
+(32)  Furia: crēscat. Superbīs frātribus rēgna excidant
+(33)  Furia: repetantque profugōs; dubia violentae domūs
+(34)  Furia: fortūna rēgēs inter incertōs labet;
+(35)  Furia: miser ex potente fīat, ex miserō potēns,
+(36)  Furia: flūctūque rēgnum cāsus assiduō ferat.
+(37)  Furia: ob scelera pulsī, cum dabit patriam deus
+(38)  Furia: in scelera redeant, sintque tam invīsī omnibus
+(39)  Furia: quam sibi; nihil sit īra quod vetitum putet:
+(40)  Furia: frātrem expavēscat frāter et nātum parēns
+(41)  Furia: nātusque patrem, līberī pereant male,
+(42)  Furia: pejus tamen nāscantur; immineat virō
+(43)  Furia: īnfēsta conjūnx, bella trāns pontum vehant,
+(44)  Furia: effūsus omnīs irriget terrās cruor,
+(45)  Furia: suprāque magnōs gentium exultet ducēs
+(46)  Furia: Libīdo victrīx. Impiā stuprum in domō
+(47)  Furia: levissimum sit; facinus et fās et fidēs
+(48)  Furia: jūsque omne pereat. Nōn sit ā vestrīs malīs
+(49)  Furia: immūne caelum; cūr micant stēllae polō
+(50)  Furia: flammaeque servant dēbitum mundō decus?
+(51)  Furia: nox alta fīat, excidat caelō diēs.
+(52)  Furia: miscē penātēs, odia caedēs fūnera
+(53)  Furia: accerse et implē Tantalō tōtam domum.
+(54)  Furia: ōrnētur altum columen et laurō forēs
+(55)  Furia: laetae virēscant, dignus adventū tuō
+(56)  Furia: splendescat ignis; Thrācium fīat nefās
+(57)  Furia: majōre numerō. Dextra cūr patruī vacat?
+(58)  Furia: nōndum Thyestēs līberōs dēflet suōs?
+(59)  Furia: ecquando tollet? ignibus jam subditīs
+(60)  Furia: spūment aēna, membra per partēs eant
+(61)  Furia: discerpta, patriōs polluat sanguis focōs,
+(62)  Furia: epulae īnstruantur; nōn novī sceleris tibī
+(63)  Furia: convīva veniēs. Līberum dedimus diem
+(64)  Furia: tuamque ad istās solvimus mēnsās famem;
+(65)  Furia: jējūnia explē, mixtus in Bacchum cruor
+(66)  Furia: spectante tē pōtētur; invēnī dapēs
+(67)  Furia: quās ipse fugerēs; siste, quō praeceps ruis?
+(68)  Tantali Umbra: Ad stāgna et amnēs et recēdentēs aquās
+(69)  Tantali Umbra: labrīsque ab ipsīs arboris plēnae fugās.
+(70)  Tantali Umbra: abīre in ātrum carceris liceat meī
+(71)  Tantali Umbra: cubīle, liceat, sī parum videor miser,
+(72)  Tantali Umbra: mūtāre rīpās: alveō medius tuō,
+(73)  Tantali Umbra: Phlegethōn, relinquar igneō cīnctus fretō.
+(74)  Tantali Umbra: Quīcumque poenās lēge fātōrum datās
+(75)  Tantali Umbra: patī jubēris, quisquis exēsō jacēs
+(76)  Tantali Umbra: pavidus sub antrō jamque ventūrī timēs
+(77)  Tantali Umbra: montis ruīnam, quisquis avidōrum ferōs
+(78)  Tantali Umbra: rictūs leōnum et dīra Furiārum agmina
+(79)  Tantali Umbra: implicitus horrēs, quisquis immissās facēs
+(80)  Tantali Umbra: sēmiustus abigis, Tantalī vōcem excipe
+(81)  Tantali Umbra: properantis ad vōs: crēdite expertō mihī,
+(82)  Tantali Umbra: amāte poenās. Quando continget mihī
+(83)  Tantali Umbra: effugere superōs? Ante perturbā domum
+(84)  Furia: īnferque tēcum proelia et ferrī malum
+(85)  Furia: rēgibus amōrem, concute īnsānō ferum
+(86)  Furia: pectus tumultū. Mē patī poenās decet,
+(87)  Tantali Umbra: nōn esse poenam. Mittor ut dīrus vapor
+(88)  Tantali Umbra: tellūre ruptā vel gravem populīs luem
+(89)  Tantali Umbra: sparsūra pestis? dūcam in horrendum nefās
+(90)  Tantali Umbra: avus nepōtēs? magne dīvōrum parēns
+(91)  Tantali Umbra: nosterque quamvīs pudeat, ingentī licet
+(92)  Tantali Umbra: taxāta poenā lingua cruciētur loquāx,
+(93)  Tantali Umbra: nec hoc tacēbō: moneo, nē sacrā manūs
+(94)  Tantali Umbra: violāte caede nēve furiālī malō
+(95)  Tantali Umbra: aspergite ārās. Stābō et arcēbō scelus.
+(96)  Tantali Umbra: Quid ōra terrēs verbere et tortōs ferōx
+(97)  Tantali Umbra: mināris anguēs? Quid famem īnfīxam intimīs
+(98)  Tantali Umbra: agitās medullīs? flāgrat incēnsum sitī
+(99)  Tantali Umbra: cor et perustīs flamma vīsceribus micat.
+(100)  Furia: Hunc, hunc furōrem dīvide in tōtam domum.
+(101)  Furia: sīc, sīc ferantur et suum īnfēnsī invicem
+(102)  Furia: sitiant cruōrem. Sentit introitūs tuōs
+(103)  Furia: domus et nefandō tōta contāctū horruit.
+(104)  Furia: āctum est abundē! gradere ad īnfernōs specūs
+(105)  Furia: amnemque nōtum; jam tuum maestae pedem
+(106)  Furia: terrae gravantur: cernis ut fontis liquor
+(107)  Furia: intrōrsus āctus linquat, ut rīpae vacent
+(108)  Furia: ventusque rārās igneus nūbēs ferat?
+(110)  Furia: pallēscit omnis arbor ac nūdus stetit
+(111)  Furia: fugiente pōmō rāmus, et quī flūctibus
+(112)  Furia: illinc propinquīs Isthmos atque illinc fremit
+(113)  Furia: vīcīna gracilī dīvidēns terrā vada,
+(114)  Furia: longē remōtōs lātus exaudit sonōs.
+(115)  Furia: jam Lerna retrō cessit et Phorōnidēs
+(116)  Furia: latuēre vēnae nec suās prōfert sacer
+(117)  Furia: Alphēos undās et Cithaerōnis juga
+(118)  Furia: stant parte nūllā cāna dēpositā nive
+(119)  Furia: timentque veterem nōbilēs Argī sitim.
+(120)  Furia: ēn ipse Tītān dubitat an jubeat sequī
+(121)  Furia: cōgatque habēnīs īre peritūrum diem.
+(122x) === Chor (first asclepiadeans) ===
+(122)  Chorus: Argos dē superīs sī quis Achāicum
+(123)  Chorus: Pīsaeāsque domōs curribus inclitās,
+(124)  Chorus: Isthmī sī quis amat rēgna Corinthiī,
+(125)  Chorus: et portūs geminōs et mare dissidēns,
+(126)  Chorus: sī quis Tāygetī cōnspicuās nivēs,
+(127)  Chorus: quās cum Sarmaticus tempore frīgidō
+(128)  Chorus: in summīs Boreās composuit jugīs,
+(129)  Chorus: aestās vēliferīs solvit Etēsiīs,
+(130)  Chorus: quem tangit gelidō flūmine lūcidus
+(131)  Chorus: Alphēos, stadiō nōtus Olympicō,
+(132)  Chorus: advertat placidum nūmen et arceat,
+(133)  Chorus: alternae scelerum nē redeant vicēs
+(134)  Chorus: nec succēdat avō dēterior nepōs
+(135)  Chorus: et major placeat culpa minōribus.
+(136)  Chorus: tandem lassa ferōs exuat impetūs
+(137)  Chorus: siccī prōgeniēs impia Tantalī.
+(138)  Chorus: peccātum satis est; fās valuit nihil
+(139)  Chorus: aut commūne nefās. Prōditus occidit
+(140)  Chorus: dēceptor dominī Myrtilus, et fidē
+(141)  Chorus: vectus quā tulerat nōbile reddidit
+(142)  Chorus: mūtātō pelagus nōmine: nōtior
+(143)  Chorus: nūlla est Īoniīs fābula nāvibus.
+(144)  Chorus: exceptus gladiō parvulus impiō
+(145)  Chorus: dum currit patrium nātus ad ōsculum,
+(146)  Chorus: immātūra focīs victima concidit
+(147)  Chorus: dīvīsusque tuā est, Tantale, dexterā,
+(148)  Chorus: mēnsās ut struerēs hospitibus deīs.
+(149)  Chorus: hōs aeterna famēs persequitur cibōs,
+(150)  Chorus: hōs aeterna sitis; nec dapibus ferīs
+(151)  Chorus: dēcernī potuit poena decentior.
+(152)  Chorus: Stat lassus vacuō gutture Tantalus;
+(153)  Chorus: impendet capitī plūrima noxiō
+(154)  Chorus: Phīnēīs avibus praeda fugācior;
+(155)  Chorus: hinc illinc gravidīs frondibus incubat
+(156)  Chorus: et curvāta suīs fētibus ac tremēns
+(157)  Chorus: allūdit patulīs arbor hiātibus.
+(158)  Chorus: haec, quamvīs avidus nec patiēns morae,
+(159)  Chorus: dēceptus totiēns tangere neglegit
+(160)  Chorus: oblīquatque oculōs ōraque comprimit
+(161)  Chorus: inclūsīsque famem dentibus alligat.
+(162)  Chorus: sed tunc dīvitiās omne nemus suās
+(163)  Chorus: dēmittit propius pōmaque dēsuper
+(164)  Chorus: īnsultant foliīs mītia languidīs
+(165)  Chorus: accenduntque famem, quae jubet irritās
+(166)  Chorus: exercēre manūs. Hās ubi prōtulit
+(167)  Chorus: et fallī libuit, tōtus in arduum
+(168)  Chorus: autumnus rapitur silvaque mōbilis.
+(169)  Chorus: īnstat deinde sitis nōn levior famē;
+(170)  Chorus: quā cum percaluit sanguis et igneīs
+(171)  Chorus: exārsit facibus, stat miser obviōs
+(172)  Chorus: flūctūs ōre petēns, quōs profugus latex
+(173)  Chorus: āvertit sterilī dēficiēns vadō
+(174)  Chorus: cōnantemque sequī dēserit; hic bibit
+(175)  Chorus: altum dē rapidō gurgite pulverem.
+(176x) === Akt 1 ===
+(176)  Atreus, rex Mycenarum: Ignāve, iners, ēnervis et (quod maximum
+(177)  Atreus, rex Mycenarum: probrum tyrannō rēbus in summīs reor)
+(178)  Atreus, rex Mycenarum: inulte, post tot scelera, post frātris dolōs
+(179)  Atreus, rex Mycenarum: fāsque omne ruptum questibus vānīs agis
+(180)  Atreus, rex Mycenarum: īrātus Atreus? fremere jam tōtus tuīs
+(181)  Atreus, rex Mycenarum: dēbēbat armīs orbis et geminum mare
+(182)  Atreus, rex Mycenarum: utrimque classēs agere, jam flammīs agrōs
+(183)  Atreus, rex Mycenarum: lūcēre et urbēs decuit ac strictum undique
+(184)  Atreus, rex Mycenarum: micāre ferrum. Tōta sub nostrō sonet
+(185)  Atreus, rex Mycenarum: Argolica tellūs equite; nōn silvae tegant
+(186)  Atreus, rex Mycenarum: hostem nec altīs montium strūctae jugīs
+(187)  Atreus, rex Mycenarum: arcēs; relictīs bellicum tōtus canat
+(188)  Atreus, rex Mycenarum: populus Mycēnīs, quisquis invīsum caput
+(189)  Atreus, rex Mycenarum: tegit ac tuētur, clāde fūnestā occidat.
+(190)  Atreus, rex Mycenarum: haec ipsa pollēns inclitī Pelopis domus
+(191)  Atreus, rex Mycenarum: ruat vel in mē, dummodo in frātrem ruat.
+(192)  Atreus, rex Mycenarum: Age, anime, fac quod nūlla posteritās probet,
+(193)  Atreus, rex Mycenarum: sed nūlla taceat. Aliquod audendum est nefās
+(194)  Atreus, rex Mycenarum: atrōx, cruentum, tāle quod frāter meus
+(195)  Atreus, rex Mycenarum: suum esse māllet. Scelera nōn ulcīsceris,
+(196)  Atreus, rex Mycenarum: nisi vincis. Et quid esse tam saevum potest
+(197)  Atreus, rex Mycenarum: quod superet illum? numquid abjectus jacet?
+(198)  Atreus, rex Mycenarum: numquid secundīs patitur in rēbus modum,
+(199)  Atreus, rex Mycenarum: fessīs quiētem? nōvī ego ingenium virī
+(200)  Atreus, rex Mycenarum: indocile; flectī nōn potest: frangī potest.
+(201)  Atreus, rex Mycenarum: proinde antequam sē firmat aut vīrēs parat,
+(202)  Atreus, rex Mycenarum: petātur ultrō, nē quiēscentem petat.
+(203)  Atreus, rex Mycenarum: aut perdet aut perībit: in mediō est scelus
+(204)  Atreus, rex Mycenarum: positum occupantī. Fāma tē populī nihil
+(205)  Satelles: adversa terret? Maximum hoc rēgnī bonum est,
+(206)  Atreus, rex Mycenarum: quod facta dominī cōgitur populus suī
+(207)  Atreus, rex Mycenarum: tam ferre quam laudāre. Quōs cōgit metus
+(208)  Satelles: laudāre, eōsdem reddit inimīcōs metus.
+(209)  Satelles: at quī favōris glōriam vērī petit,
+(210)  Satelles: animō magis quam vōce laudārī volet.
+(211)  Atreus, rex Mycenarum: Laus vēra et humilī saepe contingit virō,
+(212)  Atreus, rex Mycenarum: nōn nisi potentī falsa. Quod nōlunt velint.
+(213)  Satelles: Rēx velit honesta: nēmō nōn eadem volet.
+(214)  Atreus, rex Mycenarum: Ubicumque tantum honesta dominantī licent,
+(215)  Atreus, rex Mycenarum: precāriō rēgnātur. Ubi nōn est pudor
+(216)  Satelles: nec cūra jūris sānctitās pietās fidēs,
+(217)  Satelles: īnstabile rēgnum est. Sānctitās pietās fidēs
+(218)  Atreus, rex Mycenarum: prīvāta bona sunt; quā juvat rēgēs eant.
+(219)  Satelles: Nefās nocēre vel malō frātrī putā.
+(220)  Atreus, rex Mycenarum: Fās est in illō quidquid in frātre est nefās.
+(221)  Atreus, rex Mycenarum: quid enim relīquit crīmine intāctum aut ubī
+(222)  Atreus, rex Mycenarum: scelerī pepercit? conjugem stuprō abstulit
+(223)  Atreus, rex Mycenarum: rēgnumque fūrtō: specimen antīquum imperī
+(224)  Atreus, rex Mycenarum: fraude est adeptus, fraude turbāvit domum.
+(225)  Atreus, rex Mycenarum: est Pelopis altīs nōbile in stabulīs pecus,
+(226)  Atreus, rex Mycenarum: arcānus ariēs, ductor opulentī gregis,
+(227)  Atreus, rex Mycenarum: cujus per omne corpus effūsō coma
+(228)  Atreus, rex Mycenarum: dēpendet aurō, cujus ē tergō novī
+(229)  Atreus, rex Mycenarum: aurāta rēgēs scēptra Tantalicī gerunt;
+(230)  Atreus, rex Mycenarum: possessor hujus rēgnat, hunc tantae domūs
+(231)  Atreus, rex Mycenarum: fortūna sequitur. Tūta sēpositā sacer
+(232)  Atreus, rex Mycenarum: in parte carpit prāta, quae clūdit lapis
+(233)  Atreus, rex Mycenarum: fātāle saxeō pāscuum mūrō tegēns.
+(234)  Atreus, rex Mycenarum: hunc facinus ingēns ausus assūmptā in scelus
+(235)  Atreus, rex Mycenarum: cōnsorte nostrī perfidus thalamī āvehit.
+(236)  Atreus, rex Mycenarum: Hinc omne clādis mūtuae flūxit malum:
+(237)  Atreus, rex Mycenarum: per rēgna trepidus exul errāvī mea,
+(238)  Atreus, rex Mycenarum: pars nūlla generis tūta ab īnsidiīs vacat,
+(239)  Atreus, rex Mycenarum: corrupta conjūnx, imperī quassa est fidēs,
+(240)  Atreus, rex Mycenarum: domus aegra, dubius sanguis est certī nihil
+(241)  Atreus, rex Mycenarum: nisi frāter hostis. Quid stupēs? tandem incipe
+(242)  Atreus, rex Mycenarum: animōsque sūme: Tantalum et Pelopem aspice;
+(243)  Atreus, rex Mycenarum: ad haec manūs exempla poscuntur meae.
+(244)  Atreus, rex Mycenarum: profāre, dīrum quā caput mactem viā.
+(245)  Satelles: Ferrō perēmptus spīritum inimīcum expuat.
+(246)  Atreus, rex Mycenarum: Dē fīne poenae loqueris; ego poenam volō.
+(247)  Atreus, rex Mycenarum: perimat tyrannus lēnis: in rēgnō meō
+(248)  Atreus, rex Mycenarum: mors impetrātur. Nūlla tē pietās movet?
+(249)  Atreus, rex Mycenarum: Excēde, Pietās, sī modo in nostrā domō
+(250)  Atreus, rex Mycenarum: umquam fuistī. Dīra Furiārum cohors
+(251)  Atreus, rex Mycenarum: discorsque Erīnȳs veniat et geminās facēs
+(252)  Atreus, rex Mycenarum: Megaera quatiēns. Nōn satis magnō meum
+(253)  Atreus, rex Mycenarum: ārdet furōre pectus, implērī juvat
+(254)  Atreus, rex Mycenarum: majōre mōnstrō. Quid novī rabidus struis?
+(255)  Atreus, rex Mycenarum: Nīl quod dolōris capiat assuētī modum;
+(256)  Atreus, rex Mycenarum: nūllum relinquam facinus et nūllum est satis.
+(257)  Satelles: Ferrum? Parum est. Quid ignis? Etiamnunc parum est.
+(258)  Satelles: Quōnam ergo tēlō tantus ūtētur dolor?
+(259)  Atreus, rex Mycenarum: Ipsō Thyestē. Majus hoc īrā est malum.
+(260)  Atreus, rex Mycenarum: Fateor. Tumultus pectora attonitus quatit
+(261)  Atreus, rex Mycenarum: penitusque volvit; rapior et quō nesciō,
+(262)  Atreus, rex Mycenarum: sed rapior. Īmō mūgit ē fundō solum,
+(263)  Atreus, rex Mycenarum: tonat diēs serēnus ac tōtīs domus
+(264)  Atreus, rex Mycenarum: ut frācta tēctīs crepuit et mōtī larēs
+(265)  Atreus, rex Mycenarum: vertēre vultum: fīat hoc, fīat nefās
+(266)  Atreus, rex Mycenarum: quod, dī, timētis. Facere quid tandem parās?
+(267)  Atreus, rex Mycenarum: Nescio quid animus majus et solitō amplius
+(268)  Atreus, rex Mycenarum: suprāque fīnēs mōris hūmānī tumet
+(269)  Atreus, rex Mycenarum: īnstatque pigrīs manibus; haud quid sit sciō,
+(270)  Atreus, rex Mycenarum: sed grande quiddam est. Ita sit. Hoc, anime, occupā,
+(271)  Atreus, rex Mycenarum: dignum est Thyestē facinus et dignum Atreō,
+(272)  Atreus, rex Mycenarum: quod uterque faciat. Vīdit īnfandās domus
+(273)  Atreus, rex Mycenarum: Odrysīa mēnsās; fateor, immāne est scelus,
+(274)  Atreus, rex Mycenarum: sed occupātum; majus hōc aliquid dolor
+(275)  Atreus, rex Mycenarum: inveniat. Animum Daulis īnspīrā parēns
+(276)  Atreus, rex Mycenarum: sororque; causa est similis; assiste et manum
+(277)  Atreus, rex Mycenarum: impelle nostram. Līberōs avidus pater
+(278)  Atreus, rex Mycenarum: gaudēnsque laceret et suōs artūs edat.
+(279)  Atreus, rex Mycenarum: bene est, abundē est: hic placet poenae modus
+(280)  Atreus, rex Mycenarum: tantīsper. Ubinam est? Tam diū cūr innocēns
+(281)  Atreus, rex Mycenarum: versātur Atreus? tōta jam ante oculōs meōs
+(282)  Atreus, rex Mycenarum: imāgo caedis errat, ingesta orbitās
+(283)  Atreus, rex Mycenarum: in ōra patris; anime, quid rūrsus timēs
+(284)  Atreus, rex Mycenarum: et ante rem subsīdis? Audendum est, age!
+(285)  Atreus, rex Mycenarum: quod est in istō scelere praecipuum nefās,
+(286)  Atreus, rex Mycenarum: hoc ipse faciet. Sed quibus captus dolīs
+(287)  Satelles: nostrōs dabit perductus in laqueōs pedem?
+(288)  Satelles: inimīca crēdit cūncta. Nōn poterat capī,
+(289)  Atreus, rex Mycenarum: nisi capere vellet. Rēgna nunc spērat mea:
+(290)  Atreus, rex Mycenarum: hāc spē minantī fulmen occurret Jovī,
+(291)  Atreus, rex Mycenarum: hāc spē subībit gurgitis tumidī minās
+(292)  Atreus, rex Mycenarum: dubiumque Libycae Syrtis intrābit fretum,
+(293)  Atreus, rex Mycenarum: hāc spē, quod esse maximum rētur malum,
+(294)  Atreus, rex Mycenarum: frātrem vidēbit. Quis fidem pācis dabit?
+(295)  Satelles: cui tanta crēdet? Crēdula est spēs improba.
+(296)  Atreus, rex Mycenarum: nātīs tamen mandāta quae patruō ferant
+(297)  Atreus, rex Mycenarum: dabimus: relictīs exul hospitiīs vagus
+(298)  Atreus, rex Mycenarum: rēgnō ut miseriās mūtet atque Argos regat
+(299)  Atreus, rex Mycenarum: ex parte dominus. Sī nimis dūrus precēs
+(300)  Atreus, rex Mycenarum: spernet Thyestēs, līberōs ejus rudēs
+(301)  Atreus, rex Mycenarum: malīsque fessōs gravibus et facilēs capī
+(302)  Atreus, rex Mycenarum: praecommovēbunt. Hinc vetus rēgnī furor,
+(303)  Atreus, rex Mycenarum: illinc egestās trīstis ac dūrus labor
+(304)  Atreus, rex Mycenarum: quamvīs rigentem tot malīs subigent virum.
+(305)  Satelles: Jam tempus illī fēcit aerumnās levēs.
+(306)  Atreus, rex Mycenarum: Errās: malōrum sēnsus accrēscit diē.
+(307)  Atreus, rex Mycenarum: leve est miseriās ferre, perferre est grave.
+(308)  Satelles: Aliōs ministrōs cōnsilī trīstis lege.
+(309)  Satelles: Pejōra juvenēs facile praecepta audiunt.
+(310)  Satelles: In patre facient quidquid in patruō docēs;
+(311)  Satelles: saepe in magistrum scelera rediērunt sua.
+(312)  Atreus, rex Mycenarum: Ut nēmo doceat fraudis et sceleris viās,
+(313)  Atreus, rex Mycenarum: rēgnum docēbit. Nē malī fīant timēs?
+(314)  Atreus, rex Mycenarum: nāscuntur. Istud quod vocās saevum asperum,
+(315)  Atreus, rex Mycenarum: agīque dūrē crēdis et nimium impiē,
+(316)  Atreus, rex Mycenarum: fortasse et illīc agitur. Hanc fraudem scient
+(317)  Satelles: nātī parārī? Tacita tam rudibus fidēs
+(318)  Atreus, rex Mycenarum: nōn est in annīs. Dētegent forsan dolōs:
+(319)  Atreus, rex Mycenarum: tacēre multīs discitur vītae malīs.
+(320)  Satelles: Ipsōsne, per quōs fallere alium cōgitās,
+(321)  Satelles: fallēs? Ut ipsī crīmine et culpā vacent.
+(322)  Atreus, rex Mycenarum: quid enim necesse est līberōs scelerī meō
+(323)  Atreus, rex Mycenarum: īnserere? per nōs odia sē nostra explicent.
+(324)  Atreus, rex Mycenarum: male agis, recēdis, anime! Sī parcis tuīs,
+(325)  Atreus, rex Mycenarum: parcēs et illīs. Cōnsilī Agamemnōn meī
+(326)  Atreus, rex Mycenarum: sciēns minister fīat et frātrī sciēns
+(327)  Atreus, rex Mycenarum: Menelāus adsit. Prōlis incertae fidēs
+(328)  Atreus, rex Mycenarum: ex hōc petātur scelere: Sī bella abnuunt
+(329)  Atreus, rex Mycenarum: et gerere nōlunt odia, sī patruum vocant,
+(330)  Atreus, rex Mycenarum: pater est. Eātur! Multa sed trepidus solet
+(331)  Atreus, rex Mycenarum: dētegere vultus, magna nōlentem quoque
+(332)  Atreus, rex Mycenarum: cōnsilia prōdunt: nesciant quantae reī
+(333)  Atreus, rex Mycenarum: fīant ministrī. Nostra tū coepta occule.
+(334)  Satelles: Haud sum monendus: ista nostrō in pectore
+(335)  Satelles: fidēs timorque, sed magis claudet fidēs.
+(336x) === Chor (glyconics) ===
+(336)  Chorus: Tandem rēgia nōbilis,
+(337)  Chorus: antīquī genus Īnachī,
+(338)  Chorus: frātrum composuit minās.
+(339)  Chorus: Quis vōs exagitat furor,
+(340)  Chorus: alternīs dare sanguinem
+(341)  Chorus: et scēptrum scelere aggredī?
+(342)  Chorus: Nescītis, cupidī arcium,
+(343)  Chorus: rēgnum quō jaceat locō.
+(344)  Chorus: Rēgem nōn faciunt opēs,
+(345)  Chorus: nōn vestis Tyriae color,
+(346)  Chorus: nōn frontis nota rēgia,
+(347)  Chorus: nōn aurō nitidae trabēs:
+(348)  Chorus: rēx est quī posuit metūs
+(349)  Chorus: et dīrī mala pectoris.
+(350)  Chorus: Quem nōn ambitiō impotēns
+(351)  Chorus: et numquam stabilis favor
+(352)  Chorus: vulgī praecipitis movet,
+(353)  Chorus: nōn quidquid fodit Occidēns
+(354)  Chorus: aut undā Tagus aureā
+(355)  Chorus: clārō dēvehit alveō,
+(356)  Chorus: nōn quidquid Libycīs terit
+(357)  Chorus: fervēns ārea messibus,
+(358)  Chorus: quem nōn concutiet cadēns
+(359)  Chorus: oblīquī via fulminis,
+(360)  Chorus: nōn Eurus rapiēns mare
+(361)  Chorus: aut saevō rabidus fretō
+(362)  Chorus: ventōsī tumor Hadriae,
+(363)  Chorus: quem nōn lancea mīlitis,
+(364)  Chorus: nōn strictus domuit chalybs,
+(365)  Chorus: quī tūtō positus locō
+(366)  Chorus: īnfrā sē videt omnia
+(367)  Chorus: occurritque suō libēns
+(368)  Chorus: fātō nec queritur morī.
+(369)  Chorus: Rēgēs conveniant licet
+(370)  Chorus: quī sparsōs agitant Dahās,
+(371)  Chorus: quī rubrī vada lītoris
+(372)  Chorus: et gemmīs mare lūcidīs
+(373)  Chorus: lātē sanguineum tenent,
+(374)  Chorus: aut quī Caspia fortibus
+(375)  Chorus: reclūdunt juga Sarmatīs,
+(376)  Chorus: certet Dānuviī vadum
+(377)  Chorus: audet quī pedes ingredī
+(378)  Chorus: et (quōcumque locō jacent)
+(379)  Chorus: Sērēs vellere nōbilēs,
+(380)  Chorus: mēns rēgnum bona possidet.
+(381)  Chorus: nīl ūllīs opus est equīs,
+(382)  Chorus: nīl armīs et inertibus
+(383)  Chorus: tēlīs quae procul ingerit
+(384)  Chorus: Parthus, cum simulat fugās,
+(385)  Chorus: admōtīs nihil est opus
+(386)  Chorus: urbēs sternere māchinīs
+(387)  Chorus: longē saxa rotantibus.
+(388)  Chorus: Rēx est quī metuet nihil,
+(389)  Chorus: rēx est quī cupiet nihil:
+(390)  Chorus: hoc rēgnum sibi quisque dat.
+(391)  Chorus: Stet quīcumque volet potēns
+(392)  Chorus: aulae culmine lūbricō:
+(393)  Chorus: mē dulcis saturet quiēs;
+(394)  Chorus: obscūrō positus locō
+(395)  Chorus: lēnī perfruar ōtiō,
+(396)  Chorus: nūllīs nōta Quirītibus
+(397)  Chorus: aetās per tacitum fluat.
+(398)  Chorus: Sīc cum trānsierint meī
+(399)  Chorus: nūllō cum strepitū diēs,
+(400)  Chorus: plēbējus moriar senex.
+(401)  Chorus: illī mors gravis incubat
+(402)  Chorus: quī, nōtus nimis omnibus,
+(403)  Chorus: ignōtus moritur sibī.
+(404x) === Akt 2 ===
+(404)  Thyestes, frater Atrei: Optāta patriae tēcta et Argolicās opēs
+(405)  Thyestes, frater Atrei: miserīsque summum ac maximum exulibus bonum,
+(406)  Thyestes, frater Atrei: trāctum solī nātālis et patriōs deōs
+(407)  Thyestes, frater Atrei: (sī sunt tamen dī) cerno, Cyclōpum sacrās
+(408)  Thyestes, frater Atrei: turrēs, labōre majus hūmānō decus,
+(409)  Thyestes, frater Atrei: celebrāta juvenī stadia, per quae nōbilis
+(410)  Thyestes, frater Atrei: palmam paternō nōn semel currū tulī.
+(411)  Thyestes, frater Atrei: occurret Argos, populus occurret frequēns;
+(412)  Thyestes, frater Atrei: sed nempe et Atreus. Repete silvestrēs fugās
+(413)  Thyestes, frater Atrei: saltūsque dēnsōs potius et mixtam ferīs
+(414)  Thyestes, frater Atrei: similemque vītam; clārus hic rēgnī nitor
+(415)  Thyestes, frater Atrei: fulgōre nōn est quod oculōs falsō auferat;
+(416)  Thyestes, frater Atrei: cum quod datur spectābis, et dantem aspice.
+(417)  Thyestes, frater Atrei: modo inter illa, quae putant cūnctī aspera,
+(418)  Thyestes, frater Atrei: fortis fuī laetusque; nunc contrā in metūs
+(419)  Thyestes, frater Atrei: revolvor; animus haeret ac retrō cupit
+(420)  Thyestes, frater Atrei: corpus referre, moveo nōlentem gradum.
+(421)  Tantali Umbra: Pigrō (quid hoc est?) genitor incessū stupet
+(422)  Tantali Umbra: vultumque versat sēque in incertō tenet.
+(423)  Thyestes, frater Atrei: Quid, anime, pendēs, quidve cōnsilium diū
+(424)  Thyestes, frater Atrei: tam facile torquēs? rēbus incertissimīs,
+(425)  Thyestes, frater Atrei: frātrī atque rēgnō, crēdis ac metuis mala
+(426)  Thyestes, frater Atrei: jam victa, jam mānsuētā et aerumnās fugis
+(427)  Thyestes, frater Atrei: bene collocātās? Esse jam miserum juvat.
+(428)  Thyestes, frater Atrei: reflecte gressum, dum licet, tēque ēripe.
+(429)  Tantali Umbra: Quae causa cōgit, genitor, ā patriā gradum
+(430)  Tantali Umbra: referre vīsā? cūr bonīs tantīs sinum
+(431)  Tantali Umbra: subdūcis? īrā frāter abjectā redit
+(432)  Tantali Umbra: partemque rēgnī reddit et lacerae domūs
+(433)  Tantali Umbra: compōnit artūs tēque restituit tibī.
+(434)  Thyestes, frater Atrei: Causam timōris ipse quam ignōrō exigis.
+(435)  Thyestes, frater Atrei: nihil timendum video, sed timeō tamen.
+(436)  Thyestes, frater Atrei: placet īre, pigrīs membra sed genibus labant,
+(437)  Thyestes, frater Atrei: aliōque quam quō nītor abductus feror.
+(438)  Thyestes, frater Atrei: sīc concitātam rēmige et vēlō ratem
+(439)  Thyestes, frater Atrei: aestus resistēns rēmigī et vēlō refert.
+(440)  Tantali Umbra: Ēvince quidquid obstat et mentem impedit
+(441)  Tantali Umbra: reducemque quanta praemia expectent vidē.
+(442)  Tantali Umbra: pater, potēs rēgnāre. Cum possim morī.
+(443)  Tantali Umbra: Summa est potestās. Nūlla, sī cupiās nihil.
+(444)  Tantali Umbra: Nātīs relinquēs. Nōn capit rēgnum duōs.
+(445)  Tantali Umbra: Miser esse māvult esse quī fēlīx potest?
+(446)  Thyestes, frater Atrei: Mihi crēde, falsīs magna nōminibus placent,
+(447)  Thyestes, frater Atrei: frūstrā timentur dūra. Dum excelsus stetī,
+(448)  Thyestes, frater Atrei: numquam pavēre dēstitī atque ipsum meī
+(449)  Thyestes, frater Atrei: ferrum timēre lateris. Ō quantum bonum est
+(450)  Thyestes, frater Atrei: obstāre nūllī, capere sēcūrās dapēs
+(451)  Thyestes, frater Atrei: humī jacentem! scelera nōn intrant casās,
+(452)  Thyestes, frater Atrei: tūtusque mēnsā capitur angustā scyphus;
+(453)  Thyestes, frater Atrei: venēnum in aurō bibitur; expertus loquor:
+(454)  Thyestes, frater Atrei: malam bonae praeferre fortūnam licet.
+(455)  Thyestes, frater Atrei: Nōn vertice altī montis impositam domum
+(456)  Thyestes, frater Atrei: et imminentem cīvitās humilis tremit
+(457)  Thyestes, frater Atrei: nec fulget altīs splendidum tēctīs ebur
+(458)  Thyestes, frater Atrei: somnōsque nōn dēfendit excubitor meōs;
+(459)  Thyestes, frater Atrei: nōn classibus piscāmur et retrō mare
+(460)  Thyestes, frater Atrei: jactā fugāmus mōle nec ventrem improbum
+(461)  Thyestes, frater Atrei: alimus tribūtō gentium, nūllus mihī
+(462)  Thyestes, frater Atrei: ultrā Getās mētātur et Parthōs ager;
+(463)  Thyestes, frater Atrei: nōn tūre colimur nec meae exclūsō Jove
+(464)  Thyestes, frater Atrei: ōrnantur ārae; nūlla culminibus meīs
+(465)  Thyestes, frater Atrei: imposita nūtat silva, nec fūmant manū
+(466)  Thyestes, frater Atrei: succēnsa multā stāgna, nec somnō diēs
+(467)  Thyestes, frater Atrei: Bacchōque nox jungenda pervigilī datur:
+(468)  Thyestes, frater Atrei: sed nōn timēmur, tūta sine tēlō est domus
+(469)  Thyestes, frater Atrei: rēbusque parvīs magna praestātur quiēs.
+(470)  Thyestes, frater Atrei: immāne rēgnum est posse sine rēgnō patī.
+(471)  Tantali Umbra: Nec abnuendum est, sī dat imperium deus.
+(472)  Tantali Umbra: nec appetendum est: frāter ut rēgnēs rogat.
+(473)  Thyestes, frater Atrei: Rogat? timendum est. Errat hīc aliquis dolus.
+(474)  Tantali Umbra: Redīre pietās unde submōta est solet,
+(475)  Tantali Umbra: reparatque vīrēs jūstus āmissās amor.
+(476)  Thyestes, frater Atrei: Amat Thyestēn frāter? Aetheriās prius
+(477)  Thyestes, frater Atrei: perfundet Arctōs pontus et Siculī rapāx
+(478)  Thyestes, frater Atrei: cōnsistet aestūs unda et Īoniō seges
+(479)  Thyestes, frater Atrei: mātūra pelagō surget et lūcem dabit
+(480)  Thyestes, frater Atrei: nox ātra terrīs, ante cum flammīs aquae,
+(481)  Thyestes, frater Atrei: cum morte vīta, cum marī ventus fidem
+(482)  Thyestes, frater Atrei: foedusque jungent. Quam tamen fraudem timēs?
+(483)  Thyestes, frater Atrei: Omnem: timōrī quem meō statuam modum?
+(484)  Thyestes, frater Atrei: tantum potest quantum ōdit. In tē quid potest?
+(485)  Thyestes, frater Atrei: Prō mē nihil jam metuo: vōs facitis mihī
+(486)  Thyestes, frater Atrei: Atrea timendum. Dēcipī cautus timēs?
+(487)  Thyestes, frater Atrei: Sērum est cavendī tempus in mediīs malīs.
+(488)  Thyestes, frater Atrei: eātur. Ūnum genitor hoc testor tamen:
+(489)  Thyestes, frater Atrei: ego vōs sequor, nōn dūco. Respiciet deus
+(490)  Tantali Umbra: bene cōgitāta. Perge nōn dubiō gradū.
+(491)  Atreus, rex Mycenarum: Plāgīs tenētur clausa dispositīs fera:
+(492)  Atreus, rex Mycenarum: et ipsum et ūnā generis invīsī indolem
+(493)  Atreus, rex Mycenarum: jūnctam parentī cerno. Jam tūtō in locō
+(494)  Atreus, rex Mycenarum: versantur odia. Vēnit in nostrās manūs
+(495)  Atreus, rex Mycenarum: tandem Thyestēs, vēnit, et tōtus quidem.
+(496)  Atreus, rex Mycenarum: Vix temperō animō, vix dolor frēnōs capit.
+(497)  Atreus, rex Mycenarum: sīc, cum ferās vestīgat et longō sagāx
+(498)  Atreus, rex Mycenarum: lōrō tenētur Umber ac pressō viās
+(499)  Atreus, rex Mycenarum: scrūtātur ōre, dum procul lentō suem
+(500)  Atreus, rex Mycenarum: odōre sentit, pāret et tacitō locum
+(501)  Atreus, rex Mycenarum: rōstrō pererrat; praeda cum propior fuit,
+(502)  Atreus, rex Mycenarum: cervīce tōtā pugnat et gemitū vocat
+(503)  Atreus, rex Mycenarum: dominum morantem sēque retinentī ēripit.
+(504)  Atreus, rex Mycenarum: cum spērat īra sanguinem, nescit tegī;
+(505)  Atreus, rex Mycenarum: tamen tegātur. Aspice, ut multō gravis
+(506)  Atreus, rex Mycenarum: squālōre vultūs obruat maestōs coma.
+(507)  Atreus, rex Mycenarum: quam foeda jaceat barba. Praestētur fidēs.
+(508)  Atreus, rex Mycenarum: Frātrem juvat vidēre. Complexūs mihī
+(509)  Atreus, rex Mycenarum: redde expetītōs. Quidquid īrārum fuit
+(510)  Atreus, rex Mycenarum: trānsierit; ex hōc sanguis ac pietās diē
+(511)  Atreus, rex Mycenarum: colantur, animīs odia damnāta excidant.
+(512)  Thyestes, frater Atrei: Dīluere possem cūncta, nisi tālis forēs.
+(513)  Thyestes, frater Atrei: sed fateor, Atreu, fateor, admīsī omnia
+(514)  Thyestes, frater Atrei: quae crēdidistī. Pessimam causam meam
+(515)  Thyestes, frater Atrei: hodierna pietās fēcit. Est prōrsus nocēns
+(516)  Thyestes, frater Atrei: quīcumque vīsus tam bonō frātrī est nocēns.
+(517)  Thyestes, frater Atrei: lacrimīs agendum est; supplicem prīmus vidēs;
+(518)  Thyestes, frater Atrei: hae tē precantur pedibus intāctae manūs:
+(519)  Thyestes, frater Atrei: pōnātur omnis īra et ex animō tumor
+(520)  Thyestes, frater Atrei: ērāsus abeat. Obsidēs fideī accipe
+(521)  Thyestes, frater Atrei: hōs innocentēs, frāter. Ā genibus manum
+(522)  Atreus, rex Mycenarum: aufer meōsque potius amplexūs pete.
+(523)  Atreus, rex Mycenarum: vōs quoque, senum praesidia, tot juvenēs, meō
+(524)  Atreus, rex Mycenarum: pendēte collō. Squālidam vestem exue,
+(525)  Atreus, rex Mycenarum: oculīsque nostrīs parce, et ōrnātūs cape
+(526)  Atreus, rex Mycenarum: parēs meīs, laetusque frāternī imperī
+(527)  Atreus, rex Mycenarum: capesse partem. Major haec laus est mea,
+(528)  Atreus, rex Mycenarum: frātrī paternum reddere incolumī decus:
+(529)  Atreus, rex Mycenarum: habēre rēgnum cāsus est, virtūs dare.
+(530)  Thyestes, frater Atrei: Dī paria, frāter, pretia prō tantīs tibī
+(531)  Thyestes, frater Atrei: meritīs rependant. Rēgiam capitis notam
+(532)  Thyestes, frater Atrei: squālor recūsat noster et scēptrum manus
+(533)  Thyestes, frater Atrei: īnfausta refugit. Liceat in mediā mihī
+(534)  Thyestes, frater Atrei: latēre turbā. Recipit hoc rēgnum duōs.
+(535)  Thyestes, frater Atrei: Meum esse crēdō quidquid est, frāter, tuum.
+(536)  Atreus, rex Mycenarum: Quis īnfluentis dōna fortūnae abnuit?
+(537)  Thyestes, frater Atrei: Expertus est quīcumque quam facile effluant.
+(538)  Atreus, rex Mycenarum: Frātrem potīrī glōriā ingentī vetās?
+(539)  Thyestes, frater Atrei: Tua jam perācta glōria est, restat mea;
+(540)  Thyestes, frater Atrei: respuere certum est rēgna cōnsilium mihī.
+(541)  Atreus, rex Mycenarum: Meam relinquam, nisi tuam partem accipis.
+(542)  Thyestes, frater Atrei: Accipio: rēgnī nōmen impositī feram,
+(543)  Thyestes, frater Atrei: sed jūra et arma servient mēcum tibī.
+(544)  Atreus, rex Mycenarum: Imposita capitī vincla venerandō gere;
+(545)  Atreus, rex Mycenarum: ego dēstinātās victimās superīs dabō.
+(546x) === Chor (hendecasyllables) ===
+(546)  Chorus: Crēdat hoc quisquam? ferus ille et ācer
+(547)  Chorus: nec potēns mentis truculentus Atreus
+(548)  Chorus: frātris aspectū stupefactus haesit.
+(549)  Chorus: nūlla vīs major pietāte vērā est;
+(550)  Chorus: jūrgia externīs inimīca dūrant,
+(551)  Chorus: quōs amor vērus tenuit, tenēbit.
+(552)  Chorus: īra cum magnīs agitāta causīs
+(553)  Chorus: grātiam rūpit cecinitque bellum,
+(554)  Chorus: cum levēs frēnīs sonuēre turmae,
+(555)  Chorus: fulsit hinc illinc agitātus ēnsis,
+(556)  Chorus: quem movet crēbrō furibundus ictū
+(557)  Chorus: sanguinem Māvors cupiēns recentem;
+(558)  Chorus: opprimit ferrum manibusque jūnctīs
+(559)  Chorus: dūcit ad pācem pietās negantēs.
+(560)  Chorus: ōtium tantō subitum ē tumultū
+(561)  Chorus: quis deus fēcit? modo per Mycēnās
+(562)  Chorus: arma cīvīlis crepuēre bellī;
+(563)  Chorus: pallidae nātōs tenuēre mātrēs,
+(564)  Chorus: uxor armātō timuit marītō,
+(565)  Chorus: cum manum invītus sequerētur ēnsis,
+(566)  Chorus: sordidus pācis vitiō quiētae;
+(567)  Chorus: ille lābentēs renovāre mūrōs,
+(568)  Chorus: hic sitū quassās stabilīre turrēs,
+(569)  Chorus: ferreīs portās cohibēre claustrīs
+(570)  Chorus: ille certābat, pavidusque pinnīs
+(571)  Chorus: ānxiae noctis vigil incubābat;
+(572)  Chorus: pejor est bellō timor ipse bellī.
+(573)  Chorus: jam minae saevī cecidēre ferrī,
+(574)  Chorus: jam silet murmur grave classicōrum,
+(575)  Chorus: jam tacet strīdor lituī strepentis;
+(576)  Chorus: alta pāx urbī revocāta laetae est.
+(577)  Chorus: sīc, ubi ex altō tumuēre flūctūs
+(578)  Chorus: Bruttium Cōrō feriente pontum,
+(579)  Chorus: Scylla pulsātīs resonat cavernīs
+(580)  Chorus: ac mare in portū timuēre nautae
+(581)  Chorus: quod rapāx haustum revomit Charybdis,
+(582)  Chorus: et ferus Cyclōps metuit parentem
+(583)  Chorus: rūpe ferventis residēns in Aetnae,
+(584)  Chorus: nē superfūsīs violētur undīs
+(585)  Chorus: ignis aeternīs resonāns camīnīs,
+(586)  Chorus: et putat mergī sua posse pauper
+(587)  Chorus: rēgna Lāertēs Ithacā tremente;
+(588)  Chorus: sī suae ventīs cecidēre vīrēs,
+(589)  Chorus: mītius stāgnō pelagus recumbit;
+(590)  Chorus: alta, quae nāvis timuit secāre,
+(591)  Chorus: hinc et hinc fūsīs speciōsa vēlīs
+(592)  Chorus: strāta lūdentī patuēre cumbae,
+(593)  Chorus: et vacat mersōs numerāre piscēs
+(594)  Chorus: hīc ubi ingentī modo sub procellā
+(595)  Chorus: Cyclades pontum timuēre mōtae.
+(596)  Chorus: nūlla sors longa est; dolor ac voluptās
+(597)  Chorus: invicem cēdunt; brevior voluptās.
+(598)  Chorus: īma permūtat levis hōra summīs.
+(599)  Chorus: ille quī dōnat diadēma frontī,
+(600)  Chorus: quem genū nīxae tremuēre gentēs,
+(601)  Chorus: cujus ad nūtum posuēre bella
+(602)  Chorus: et Dahae Parthīs equitem minātī,
+(603)  Chorus: ānxius scēptrum tenet et moventēs
+(604)  Chorus: cūncta dīvīnat metuitque cāsūs
+(605)  Chorus: mōbilēs rērum dubiumque tempus.
+(606)  Chorus: vōs quibus rēctor maris atque terrae
+(607)  Chorus: jūs dedit magnum necis atque vītae,
+(608)  Chorus: pōnite īnflātōs tumidōsque vultūs:
+(610)  Chorus: quidquid ā vōbīs minor expavēscit,
+(611)  Chorus: major hōc vōbīs dominus minātur;
+(612)  Chorus: omne sub rēgnō graviōre rēgnum est.
+(613)  Chorus: quem diēs vīdit veniēns superbum,
+(614)  Chorus: hunc diēs vīdit fugiēns jacentem.
+(615)  Chorus: nēmo cōnfīdat nimium secundīs,
+(616)  Chorus: nēmo dēspēret meliōra lassīs:
+(617)  Chorus: miscet haec illīs prohibetque Clōthō
+(618)  Chorus: stāre fortūnam, rotat omne fātum.
+(619)  Chorus: nēmo tam dīvōs habuit faventēs,
+(620)  Chorus: crāstinum ut posset sibi pollicērī:
+(621)  Chorus: rēs deus nostrās celerī citātās
+(622)  Chorus: turbine versat.
+(623x) === Akt 3 ===
+(623)  Nuntius: Quis mē per aurās turbo praecipitem vehet
+(624)  Nuntius: ātrāque nūbe involvet, ut tantum nefās
+(625)  Nuntius: ēripiat oculīs? Ō domus Pelopī quoque
+(626)  Nuntius: et Tantalō pudenda! Quid portās novī?
+(627)  Nuntius: Quaenam ista regiō est? Argos et Spartē, piōs
+(628)  Nuntius: sortīta frātrēs, et maris geminī premēns
+(629)  Nuntius: faucēs Corinthos, an ferīs Hister fugam
+(630)  Nuntius: praebēns Alānīs, an sub aeternā nive
+(631)  Nuntius: Hyrcāna tellūs, an vagī passim Scythae?
+(632)  Nuntius: quis hic nefandī est cōnscius mōnstrī locus?
+(633)  Chorus: Effāre, et istud pande, quodcumque est, malum.
+(634)  Nuntius: Sī steterit animus, sī metū corpus rigēns
+(635)  Nuntius: remittet artūs. Haeret in vultū trucis
+(636)  Nuntius: imāgo factī. Ferte mē īnsānae procul,
+(637)  Nuntius: illō, procellae, ferte quō fertur diēs
+(638)  Nuntius: hinc raptus. Animōs gravius incertōs tenēs.
+(639)  Chorus: quid sit quod horrēs ēde et auctōrem indicā.
+(640)  Chorus: nōn quaero quis sit, sed uter. Effāre ōcius.
+(641)  Nuntius: In arce summā Pelopiae pars est domūs
+(642)  Nuntius: conversa ad Austrōs, cujus extrēmum latus
+(643)  Nuntius: aequāle montī crēscit atque urbem premit
+(644)  Nuntius: et contumācem rēgibus populum suīs
+(645)  Nuntius: habet sub ictū; fulget hīc turbae capāx
+(646)  Nuntius: immāne tēctum, cujus aurātās trabēs
+(647)  Nuntius: variīs columnae nōbilēs maculīs ferunt.
+(648)  Nuntius: post ista vulgō nōta, quae populī colunt,
+(649)  Nuntius: in multa dīves spatia discēdit domus;
+(650)  Nuntius: arcāna in īmō regio sēcessū jacet,
+(651)  Nuntius: altā vetustum valle compescēns nemus,
+(652)  Nuntius: penetrāle rēgnī, nūlla quā laetōs solet
+(653)  Nuntius: praebēre rāmōs arbor aut ferrō colī,
+(654)  Nuntius: sed taxus et cupressus et nigrā īlice
+(655)  Nuntius: obscūra nūtat silva, quam suprā ēminēns
+(656)  Nuntius: dēspectat altē quercus et vincit nemus.
+(657)  Nuntius: hinc auspicārī rēgna Tantalidae solent,
+(658)  Nuntius: hinc petere lassīs rēbus ac dubiīs opem.
+(659)  Nuntius: affīxa inhaerent dōna; vōcālēs tubae
+(660)  Nuntius: frāctīque currūs, spolia Myrtōī maris,
+(661)  Nuntius: victaeque falsīs axibus pendent rotae
+(662)  Nuntius: et omne gentis facinus; hōc Phrygius locō
+(663)  Nuntius: fīxus tiārās Pelopis, hīc praeda hostium
+(664)  Nuntius: et dē triumphō picta barbaricō chlamys.
+(665)  Nuntius: fōns stat sub umbrā trīstis et nigrā piger
+(666)  Nuntius: haeret palūde; tālis est dīrae Stygis
+(667)  Nuntius: dēfōrmis unda quae facit caelō fidem.
+(668)  Nuntius: hinc nocte caecā gemere fērālīs deōs
+(669)  Nuntius: fāma est, catēnīs lūcus excussīs sonat
+(670)  Nuntius: ululantque mānēs. Quidquid audīre est metus
+(671)  Nuntius: illīc vidētur: errat antīquīs vetus
+(672)  Nuntius: ēmissa bustīs turba et īnsultant locō
+(673)  Nuntius: majōra nōtīs mōnstra; quīn tōtā solet
+(674)  Nuntius: micāre silvā flamma, et excelsae trabēs
+(675)  Nuntius: ārdent sine igne. Saepe lātrātū nemus
+(676)  Nuntius: trīnō remūgit, saepe simulācrīs domus
+(677)  Nuntius: attonita magnīs. Nec diēs sēdat metum;
+(678)  Nuntius: nox propria lūcō est, et superstitiō īnferum
+(679)  Nuntius: in lūce mediā rēgnat. Hinc ōrantibus
+(680)  Nuntius: respōnsa dantur certa, cum ingentī sonō
+(681)  Nuntius: laxantur adytō fāta et immūgit specus
+(682)  Nuntius: vōcem deō solvente. Quō postquam furēns
+(683)  Nuntius: intrāvit Atreus līberōs frātris trahēns,
+(684)  Nuntius: ōrnantur ārae; quis queat dignē ēloquī?
+(685)  Nuntius: post terga juvenum nōbilēs revocat manūs
+(686)  Nuntius: et maesta vittā capita purpureā ligat;
+(687)  Nuntius: nōn tūra dēsunt, nōn sacer Bacchī liquor
+(688)  Nuntius: tangēnsque salsā victimam culter molā.
+(689)  Nuntius: servātur omnis ōrdo, nē tantum nefās
+(690)  Nuntius: nōn rīte fīat. Quis manum ferrō admovet?
+(691)  Nuntius: Ipse est sacerdōs, ipse fūnestā prece
+(692)  Nuntius: lētāle carmen ōre violentō canit.
+(693)  Nuntius: stat ipse ad ārās, ipse dēvōtōs necī
+(694)  Nuntius: contrectat et compōnit et ferrō parat;
+(695)  Nuntius: attendit ipse; nulla pars sacrī perit.
+(696)  Nuntius: lūcus tremēscit, tōta succussō solō
+(697)  Nuntius: nūtāvit aula, dubia quō pondus daret
+(698)  Nuntius: ac fluctuantī similis; ē laevō aethere
+(699)  Nuntius: ātrum cucurrit līmitem sīdus trahēns.
+(700)  Nuntius: lībāta in ignēs vīna mūtātō fluunt
+(701)  Nuntius: cruenta Bacchō, rēgium capitī decus
+(702)  Nuntius: bis terque lāpsum est, flēvit in templīs ebur.
+(703)  Nuntius: Mōvēre cūnctōs mōnstra, sed sōlus sibī
+(704)  Nuntius: immōtus Atreus cōnstat, atque ultrō deōs
+(705)  Nuntius: terret minantēs. Jamque dīmissā morā
+(706)  Nuntius: adsistit ārīs, torvum et oblīquum intuēns.
+(707)  Nuntius: jējūna silvīs quālis in Gangēticīs
+(708)  Nuntius: inter juvencōs tigris errāvit duōs,
+(709)  Nuntius: utriusque praedae cupida quō prīmum ferat
+(710)  Nuntius: incerta morsūs (flectit hōc rictūs suōs,
+(711)  Nuntius: illō reflectit et famem dubiam tenet),
+(712)  Nuntius: sīc dīrus Atreus capita dēvōta impiae
+(713)  Nuntius: speculātur īrae. Quem prius mactet sibī
+(714)  Nuntius: dubitat, secunda deinde quem caede immolet.
+(715)  Nuntius: nec interest, sed dubitat et saevum scelus
+(716)  Nuntius: juvat ōrdināre. Quem tamen ferrō occupat?
+(717)  Nuntius: Prīmus locus (nē dēesse pietātem putēs)
+(718)  Nuntius: avō dicātur: Tantalus prīma hostia est.
+(719)  Chorus: Quō juvenis animō, quō tulit vultū necem?
+(720)  Nuntius: Stetit suī sēcūrus et nōn est precēs
+(721)  Nuntius: perīre frūstrā passus; ast illī ferus
+(722)  Nuntius: in vulnere ēnsem abscondit et penitus premēns
+(723)  Nuntius: jugulō manum commīsit: ēductō stetit
+(724)  Nuntius: ferrō cadāver, cumque dubitāsset diū
+(725)  Nuntius: hāc parte an illā caderet, in patruum cadit.
+(726)  Nuntius: tunc ille ad ārās Plīsthenem saevus trahit
+(727)  Nuntius: adicitque frātrī; colla percussa amputat;
+(728)  Nuntius: cervīce caesā truncus in prōnum ruit,
+(729)  Nuntius: querulum cucurrit murmure incertō caput.
+(730)  Chorus: Quid deinde geminā caede perfūnctus facit?
+(731)  Chorus: puerōne parcit, an scelus scelerī ingerit?
+(732)  Nuntius: Silvā jubātus quālis Armeniā leō
+(733)  Nuntius: in caede multā victor armentō incubat
+(734)  Nuntius: (cruōre rictūs madidus et pulsā famē
+(735)  Nuntius: nōn pōnit īrās: hinc et hinc taurōs premēns
+(736)  Nuntius: vitulīs minātur dente jam lassō impiger),
+(737)  Nuntius: nōn aliter Atreus saevit atque īrā tumet,
+(738)  Nuntius: ferrumque geminā caede perfūsum tenēns,
+(739)  Nuntius: oblītus in quem fureret, infēstā manū
+(740)  Nuntius: exēgit ultrā corpus, ac puerī statim
+(741)  Nuntius: pectore receptus ēnsis ē tergō exstitit;
+(742)  Nuntius: cadit ille et ārās sanguine extinguēns suō
+(743)  Nuntius: per utrumque vulnus moritur. Ō saevum scelus!
+(744)  Nuntius: Exhorruistis? hāctenus sī stat nefās,
+(745)  Nuntius: pius est. An ultrā majus aut atrōcius
+(746)  Chorus: nātūra recipit? Sceleris hunc fīnem putās?
+(747)  Nuntius: gradus est. Quid ultrā potuit? Objēcit ferīs
+(748)  Chorus: lanianda forsan corpora atque igne arcuit?
+(749)  Nuntius: Utinam arcuisset! nē tegat fūnctōs humus
+(750)  Nuntius: nec solvat ignis! avibus epulandōs licet
+(751)  Nuntius: ferīsque trīste pābulum saevīs trahat;
+(752)  Nuntius: vōtum est sub hōc quod esse supplicium solet;
+(753)  Nuntius: pater īnsepultōs spectet! ō nūllō scelus
+(754)  Nuntius: crēdibile in aevō quodque posteritās neget:
+(755)  Nuntius: ērepta vīvīs exta pectoribus tremunt
+(756)  Nuntius: spīrantque vēnae corque adhūc pavidum salit.
+(757)  Nuntius: at ille fibrās tractat ac fāta īnspicit
+(758)  Nuntius: et adhūc calentēs vīscerum vēnās notat.
+(759)  Nuntius: postquam hostiae placuēre, sēcūrus vacat
+(760)  Nuntius: jam frātris epulīs. Ipse dīvīsum secat
+(761)  Nuntius: in membra corpus, amputat truncō tenus
+(762)  Nuntius: umerōs patentīs et lacertōrum morās,
+(763)  Nuntius: dēnūdat artūs dūrus atque ossa amputat;
+(764)  Nuntius: tantum ōra servat et datās fidei manūs.
+(765)  Nuntius: haec veribus haerent vīscera et lentīs data
+(766)  Nuntius: stillant camīnīs, illa flammātus latex
+(767)  Nuntius: candente aēnō jactat. Impositās dapēs
+(768)  Nuntius: trānsiluit ignis inque trepidantēs focōs
+(769)  Nuntius: bis ter regestus et patī jussus moram
+(770)  Nuntius: invītus ārdet. Strīdet in veribus jecur;
+(771)  Nuntius: nec facile dīcam corpora an flammae magis
+(772)  Nuntius: gemuēre. Piceōs ignis in fūmōs abit;
+(773)  Nuntius: et ipse fūmus, trīstis ac nebulā gravis,
+(774)  Nuntius: nōn rēctus exit, sēque in excelsum levat;
+(775)  Nuntius: ipsōs penātēs nūbe dēfōrmī obsidet.
+(776)  Nuntius: Ō Phoebe patiēns, fūgerīs retrō licet
+(777)  Nuntius: mediōque ruptum merserīs caelō diem,
+(778)  Nuntius: sērō occidistī. Lancinat nātōs pater
+(779)  Nuntius: artūsque mandit ōre fūnestō suōs;
+(780)  Nuntius: nitet fluente madidus unguentō comam
+(781)  Nuntius: gravisque vīnō; saepe praeclūsae cibum
+(782)  Nuntius: tenuēre faucēs; in malīs ūnum hoc tuīs
+(783)  Nuntius: bonum est, Thyestā, quod mala ignōrās tua.
+(784)  Nuntius: sed et hoc perībit. Verterit currūs licet
+(785)  Nuntius: sibi ipse Tītān obvium dūcēns iter
+(786)  Nuntius: tenebrīsque facinus obruat taetrum novīs
+(787)  Nuntius: nox missa ab ortū tempore aliēnō gravis,
+(788)  Nuntius: tamen videndum est. Tōta patefīent mala.
+(789x) === Chor (Anapäste) ===
+(789)  Chorus: Quō terrārum superumque parēns,
+(790)  Chorus: cujus ad ortūs noctis opācae
+(791)  Chorus: decus omne fugit, quō vertis iter
+(792)  Chorus: mediōque diem perdis Olympō?
+(793)  Chorus: cūr, Phoebe, tuōs rapis aspectūs?
+(794)  Chorus: nōndum sērae nūntius hōrae
+(795)  Chorus: nocturna vocat lūmina Vesper;
+(796)  Chorus: nōndum Hesperiae flexūra rotae
+(797)  Chorus: jubet ēmeritōs solvere currūs;
+(798)  Chorus: nōndum in noctem vergente diē
+(799)  Chorus: tertia mīsit būcina signum:
+(800)  Chorus: stupet ad subitae tempora cēnae
+(801)  Chorus: nōndum fessīs būbus arātor.
+(802)  Chorus: Quid tē aetheriō pepulit cursū?
+(803)  Chorus: quae causa tuōs līmite certō
+(804)  Chorus: dējēcit equōs? numquid apertō
+(805)  Chorus: carcere Dītis victī temptant
+(806)  Chorus: bella Gigantes? numquid Tityos
+(807)  Chorus: pectore fessō renovat veterēs
+(808)  Chorus: saucius īrās? num rējectō
+(809)  Chorus: latus explicuit monte Typhoeus?
+(810)  Chorus: numquid struitur via Phlegraeōs
+(811)  Chorus: alta per hostēs et Thessalicum
+(812)  Chorus: Thrēssā premitur Pēlion Ossā?
+(813)  Chorus: Solitae mundī periēre vicēs?
+(814)  Chorus: nihil occāsus, nihil ortus erit?
+(815)  Chorus: Stupet Eōōs assuēta deō
+(816)  Chorus: trādere frēnōs genetrīx prīmae
+(817)  Chorus: rōscida lūcis perversa suī
+(818)  Chorus: līmina rēgnī; nescit fessōs
+(819)  Chorus: tinguere currūs nec fūmantēs
+(820)  Chorus: sūdōre jubās mergere pontō.
+(821)  Chorus: ipse īnsuētō novus hospitiō
+(822)  Chorus: Sōl Aurōram videt occiduus
+(823)  Chorus: tenebrāsque jubet surgere nōndum
+(824)  Chorus: nocte parātā: nōn succēdunt
+(825)  Chorus: astra nec ūllō micat igne polus,
+(826)  Chorus: nōn Lūna gravēs dīgerit umbrās.
+(827)  Chorus: Sed quidquid id est, utinam nox sit!
+(828)  Chorus: trepidant, trepidant pectora magnō
+(829)  Chorus: percussa metū: nē fātālī
+(830)  Chorus: cūncta ruīnā
+(831)  Chorus: quassāta labent iterumque deōs
+(832)  Chorus: hominēsque premat dēfōrme chaos,
+(833)  Chorus: iterum terrās et mare cingēns
+(834)  Chorus: et vaga pictī sīdera mundī
+(835)  Chorus: nātūra tegat. Nōn aeternae
+(836)  Chorus: facis exortū dux astrōrum
+(837)  Chorus: saecula dūcēns dabit aestātis
+(838)  Chorus: brūmaeque notās, nōn Phoebēīs
+(839)  Chorus: obvia flammīs dēmet noctī
+(840)  Chorus: Lūna timōrēs vincetque suī
+(841)  Chorus: frātris habēnās curvō brevius
+(842)  Chorus: līmite currēns. Ībit in ūnum
+(843)  Chorus: congesta sinum turba deōrum.
+(844)  Chorus: hic quī sacrīs pervius astrīs
+(845)  Chorus: secat oblīquō trāmite zōnās,
+(846)  Chorus: flectēns longōs signifer annōs,
+(847)  Chorus: lāpsa vidēbit sīdera lābēns;
+(848)  Chorus: hic quī nōndum vēre benignō
+(849)  Chorus: reddit Zephyrō vela tepentī
+(850)  Chorus: Ariēs praeceps ībit in undās,
+(851)  Chorus: per quās pavidam vēxerat Hellēn;
+(852)  Chorus: hic quī nitidō Taurus cornū
+(853)  Chorus: praefert Hyadas, sēcum Geminōs
+(854)  Chorus: trahet et curvī bracchia Cancrī;
+(855)  Chorus: Leo flammiferīs aestibus ārdēns
+(856)  Chorus: iterum ē caelō cadet Herculeus,
+(857)  Chorus: cadet in terrās Virgo relictās
+(858)  Chorus: jūstaeque cadent pondera Lībrae
+(859)  Chorus: sēcumque trahent Scorpion ācrem.
+(860)  Chorus: et quī nervō tenet Haemoniō
+(861)  Chorus: pinnāta senex spīcula Chīrōn,
+(862)  Chorus: ruptō perdet spīcula nervō;
+(863)  Chorus: pigram referēns hiemem gelidus
+(864)  Chorus: cadet Aegocerōs frangetque tuam,
+(865)  Chorus: quisquis es, urnam; tēcum excēdent
+(866)  Chorus: ultima caelī sīdera Piscēs,
+(867)  Chorus: mōnstraque numquam perfūsa marī
+(868)  Chorus: merget condēns omnia gurges;
+(869)  Chorus: et quī mediās dīvidit Ursās,
+(870)  Chorus: flūminis īnstar lūbricus Anguis
+(871)  Chorus: magnōque minor jūncta Dracōnī
+(872)  Chorus: frīgida dūrō Cynosūra gelū,
+(873)  Chorus: cūstōsque suī tardus plaustrī
+(874)  Chorus: jam nōn stabilis ruet Arctophylax.
+(875)  Chorus: Nōs ē tantō vīsī populō
+(876)  Chorus: dignī, premeret quōs ēversō
+(877)  Chorus: cardine mundus?
+(878)  Chorus: in nōs aetās ultima vēnit?
+(879)  Chorus: ō nōs dūrā sorte creātōs,
+(880)  Chorus: seu perdidimus sōlem miserī,
+(881)  Chorus: sīve expulimus!
+(882)  Chorus: abeant questūs, discēde timor!
+(883)  Chorus: vītae est avidus quisquis nōn vult
+(884)  Chorus: mundō sēcum pereunte morī.
+(885x) === Akt 4 ===
+(885)  Atreus, rex Mycenarum: Aequālis astrīs gradior et cūnctōs super
+(886)  Atreus, rex Mycenarum: altum superbō vertice attingēns polum.
+(887)  Atreus, rex Mycenarum: nunc decora rēgnī teneo, nunc solium patris.
+(888)  Atreus, rex Mycenarum: dīmitto superōs; summa vōtōrum attigī.
+(889)  Atreus, rex Mycenarum: bene est, abundē est, jam sat est etiam mihī.
+(890)  Atreus, rex Mycenarum: sed cūr satis sit? pergam et implēbō patrem
+(891)  Atreus, rex Mycenarum: fūnere suōrum. Nē quid obstāret pudor,
+(892)  Atreus, rex Mycenarum: diēs recessit: perge dum caelum vacat.
+(893)  Atreus, rex Mycenarum: utinam quidem tenēre fugientēs deōs
+(894)  Atreus, rex Mycenarum: possem, et coāctōs trahere, ut ultrīcem dapem
+(895)  Atreus, rex Mycenarum: omnēs vidērent! quod sat est, videat pater.
+(896)  Atreus, rex Mycenarum: etiam diē nōlente discutiam tibī
+(897)  Atreus, rex Mycenarum: tenebrās, miseriae sub quibus latitant tuae.
+(898)  Atreus, rex Mycenarum: nimis diū convīva sēcūrō jacēs
+(899)  Atreus, rex Mycenarum: hilarīque vultū; jam satis mēnsīs datum est
+(900)  Atreus, rex Mycenarum: satisque Bacchō; sōbriō tanta ad mala
+(901)  Atreus, rex Mycenarum: opus est Thyestē. Turba famulāris, forēs
+(902)  Atreus, rex Mycenarum: templī relaxā, fēsta patefīat domus.
+(903)  Atreus, rex Mycenarum: libet vidēre, capita nātōrum intuēns,
+(904)  Atreus, rex Mycenarum: quōs det colōrēs, verba quae prīmus dolor
+(905)  Atreus, rex Mycenarum: effundat aut ut spīritū expulsō stupēns
+(906)  Atreus, rex Mycenarum: corpus rigēscat. Frūctus hic operis meī est.
+(907)  Atreus, rex Mycenarum: miserum vidēre nōlo, sed dum fit miser.
+(908)  Atreus, rex Mycenarum: Aperta multā tēcta conlūcent face.
+(909)  Atreus, rex Mycenarum: resupīnus ipse purpurae atque aurō incubat,
+(910)  Atreus, rex Mycenarum: vīnō gravātum fulciēns laevā caput.
+(911)  Atreus, rex Mycenarum: ēructat. Ō mē caelitum excelsissimum,
+(912)  Atreus, rex Mycenarum: rēgumque rēgem! vōta trānscendī mea.
+(913)  Atreus, rex Mycenarum: satur est; capācī dūcit argentō merum;
+(914)  Atreus, rex Mycenarum: nē parce pōtū; restat etiamnunc cruor
+(915)  Atreus, rex Mycenarum: tot hostiārum; veteris hunc Bacchī color
+(916)  Atreus, rex Mycenarum: abscondet. Hōc, hōc mēnsa clūdātur scyphō.
+(917)  Atreus, rex Mycenarum: mixtum suōrum sanguinem genitor bibat:
+(918)  Atreus, rex Mycenarum: meum bibisset. Ecce, jam cantūs ciet
+(919)  Atreus, rex Mycenarum: fēstāsque vōcēs, nec satis mentī imperat.
+(920x) === Monodie (Anapäste) ===
+(920)  Thyestes, frater Atrei: Pectora longīs hebetāta malīs,
+(921)  Thyestes, frater Atrei: jam sollicitās pōnite cūrās.
+(922)  Thyestes, frater Atrei: fugiat maeror fugiatque pavor,
+(923)  Thyestes, frater Atrei: fugiat trepidī comes exiliī
+(924)  Thyestes, frater Atrei: trīstis egestās rēbusque gravis
+(925)  Thyestes, frater Atrei: pudor afflīctīs; magis unde cadās
+(926)  Thyestes, frater Atrei: quam quō rēfert. Magnum, ex altō
+(927)  Thyestes, frater Atrei: culmine lāpsum stabilem in plānō
+(928)  Thyestes, frater Atrei: fīgere gressum; magnum, ingentī
+(929)  Thyestes, frater Atrei: strāge malōrum pressum frāctī
+(930)  Thyestes, frater Atrei: pondera rēgnī nōn īnflexā
+(931)  Thyestes, frater Atrei: cervīce patī, nec dēgenerem
+(932)  Thyestes, frater Atrei: victumque malīs rēctum impositās
+(933)  Thyestes, frater Atrei: ferre ruīnās. Sed jam saevī
+(934)  Thyestes, frater Atrei: nūbila fātī pelle ac miserī
+(935)  Thyestes, frater Atrei: temporis omnēs dīmitte notās;
+(936)  Thyestes, frater Atrei: redeant vultūs ad laeta bonī,
+(937)  Thyestes, frater Atrei: veterem ex animō mitte Thyestēn.
+(938)  Thyestes, frater Atrei: Proprium hoc miserōs sequitur vitium,
+(939)  Thyestes, frater Atrei: numquam rēbus crēdere laetīs:
+(940)  Thyestes, frater Atrei: redeat fēlīx fortūna licet,
+(941)  Thyestes, frater Atrei: tamen afflīctōs gaudēre piget.
+(942)  Thyestes, frater Atrei: quid mē revocās fēstumque vetās
+(943)  Thyestes, frater Atrei: celebrāre diem, quid flēre jubēs,
+(944)  Thyestes, frater Atrei: nūllā surgēns dolor ex causā?
+(945)  Thyestes, frater Atrei: quis mē prohibet flōre decentī
+(946)  Thyestes, frater Atrei: vincīre comam? prohibet, prohibet
+(947)  Thyestes, frater Atrei: vernae capitī flūxēre rosae,
+(948)  Thyestes, frater Atrei: pinguī madidus crīnis amōmō
+(949)  Thyestes, frater Atrei: inter subitōs stetit horrōrēs,
+(950)  Thyestes, frater Atrei: imber vultū nōlente cadit,
+(951)  Thyestes, frater Atrei: venit in mediās vōcēs gemitus.
+(952)  Thyestes, frater Atrei: maeror lacrimās amat assuētās,
+(953)  Thyestes, frater Atrei: flendī miserīs dīra cupīdō est.
+(954)  Thyestes, frater Atrei: libet īnfaustōs mittere questūs,
+(955)  Thyestes, frater Atrei: libet et Tyriō saturās ostrō
+(956)  Thyestes, frater Atrei: rumpere vestēs, ululāre libet.
+(957)  Thyestes, frater Atrei: Mittit lūctūs signa futūrī
+(958)  Thyestes, frater Atrei: mēns ante suī praesāga malī:
+(959)  Thyestes, frater Atrei: īnstat nautīs fera tempestās,
+(960)  Thyestes, frater Atrei: cum sine ventō tranquilla tument.
+(961)  Thyestes, frater Atrei: quōs tibi lūctūs quōsve tumultūs
+(962)  Thyestes, frater Atrei: fingis, dēmēns? crēdula praestā
+(963)  Thyestes, frater Atrei: pectora frātrī. Jam, quidquid id est,
+(964)  Thyestes, frater Atrei: vel sine causā vel sēro timēs.
+(965)  Thyestes, frater Atrei: nōlō īnfēlīx, sed vagus intrā
+(966)  Thyestes, frater Atrei: terror oberrat, subitōs fundunt
+(967)  Thyestes, frater Atrei: oculī flētūs, nec causa subest.
+(968)  Thyestes, frater Atrei: dolor an metus est? An habet lacrimās
+(969)  Thyestes, frater Atrei: magna voluptās?
+(970x) === Akt 5 ===
+(970)  Atreus, rex Mycenarum: Fēstum diem, germāne, cōnsēnsū parī
+(971)  Atreus, rex Mycenarum: celebrēmus; hic est, scēptra quī firmet mea
+(972)  Atreus, rex Mycenarum: solidamque pācis alliget certae fidem.
+(973)  Thyestes, frater Atrei: Satiās dapis mē nec minus Bacchī tenet.
+(974)  Thyestes, frater Atrei: augēre cumulus hic voluptātem potest,
+(975)  Thyestes, frater Atrei: sī cum meīs gaudēre fēlīcī datur.
+(976)  Atreus, rex Mycenarum: Hīc esse nātōs crēde in amplexū patris;
+(977)  Atreus, rex Mycenarum: hīc sunt eruntque; nūlla pars prōlis tuae
+(978)  Atreus, rex Mycenarum: tibi subtrahētur. Ōra quae exoptās dabō
+(979)  Atreus, rex Mycenarum: tōtumque turbā jam suā implēbō patrem.
+(980)  Atreus, rex Mycenarum: satiāberis, nē metue. Nunc mixtī meīs
+(981)  Atreus, rex Mycenarum: jūcunda mēnsae sacra juvenīlis colunt;
+(982)  Atreus, rex Mycenarum: sed accientur. Pōculum īnfūsō cape
+(983)  Atreus, rex Mycenarum: gentīle Bacchō. Capio frāternae dapis
+(984)  Thyestes, frater Atrei: dōnum. Paternīs vīna lībentur deīs,
+(985)  Thyestes, frater Atrei: tunc hauriantur.; sed quid hoc? nōlunt manūs
+(986)  Thyestes, frater Atrei: pārēre, crēscit pondus et dextram gravat;
+(987)  Thyestes, frater Atrei: admōtus ipsīs Bacchus ā labrīs fugit
+(988)  Thyestes, frater Atrei: circāque rictūs ōre dēceptō fluit,
+(989)  Thyestes, frater Atrei: et ipsa trepidō mēnsa subsiluit solō.
+(990)  Thyestes, frater Atrei: vix lūcet ignis; ipse quīn aethēr gravis
+(991)  Thyestes, frater Atrei: inter diem noctemque dēsertus stupet.
+(992)  Thyestes, frater Atrei: quid hoc? magis magisque concussī labant
+(993)  Thyestes, frater Atrei: convexa caelī; spissior dēnsīs coit
+(994)  Thyestes, frater Atrei: cālīgo tenebrīs noxque sē in noctem abdidit:
+(995)  Thyestes, frater Atrei: fugit omne sīdus. Quidquid est, frātrī precor
+(996)  Thyestes, frater Atrei: nātīsque parcat, omnis in vīle hoc caput
+(997)  Thyestes, frater Atrei: abeat procella. Redde jam nātōs mihī!
+(998)  Atreus, rex Mycenarum: Reddam, et tibi illōs nūllus ēripiet diēs.
+(999)  Thyestes, frater Atrei: Quis hic tumultus vīscera exagitat mea?
+(1000)  Thyestes, frater Atrei: quid tremuit intus? sentiō impatiēns onus
+(1001)  Thyestes, frater Atrei: meumque gemitū nōn meō pectus gemit.
+(1002)  Thyestes, frater Atrei: adeste, nātī, genitor īnfēlīx vocat,
+(1003)  Thyestes, frater Atrei: adeste. Vīsīs fugiet hic vōbīs dolor;
+(1004)  Thyestes, frater Atrei: unde obloquuntur? Expedī amplexūs, pater;
+(1005)  Atreus, rex Mycenarum: vēnēre. nātōs ecquid agnōscis tuōs?
+(1006)  Thyestes, frater Atrei: Agnōsco frātrem. Sustinēs tantum nefās
+(1007)  Thyestes, frater Atrei: gestāre, Tellūs? nōn ad īnfernam Styga
+(1008)  Thyestes, frater Atrei: tenebrāsque mergis ruptā et ingentī viā
+(1009)  Thyestes, frater Atrei: ad chaos ināne rēgna cum rēge abripis?
+(1010)  Thyestes, frater Atrei: nōn tōta ab īmō tēcta convellēns solō
+(1011)  Thyestes, frater Atrei: vertis Mycēnās? stāre circā Tantalum
+(1012)  Thyestes, frater Atrei: uterque jam dēbuimus. Hinc compāgibus
+(1013)  Thyestes, frater Atrei: et hinc revulsīs, sī quid īnfrā Tartara est
+(1014)  Thyestes, frater Atrei: avōsque nostrōs, hōc tuam immānī sinū
+(1015)  Thyestes, frater Atrei: dēmitte vallem nōsque dēfossōs tege
+(1016)  Thyestes, frater Atrei: Acheronte tōtō. Noxiae suprā caput
+(1017)  Thyestes, frater Atrei: animae vagentur nostrum et ārdentī fretō
+(1018)  Thyestes, frater Atrei: Phlegethōn harēnās igneus tostās agēns
+(1019)  Thyestes, frater Atrei: exilia suprā nostra violentus fluat;
+(1020)  Thyestes, frater Atrei: immōta tellūs pondus ignāvum jacēs,
+(1021)  Thyestes, frater Atrei: fūgēre superī. Jam accipe hōs potius libēns
+(1022)  Atreus, rex Mycenarum: diū expetītōs: nūlla per frātrem est mora;
+(1023)  Atreus, rex Mycenarum: fruere, ōsculāre, dīvide amplexūs tribus.
+(1024)  Thyestes, frater Atrei: Hoc foedus? haec est grātia, haec frātris fidēs?
+(1025)  Thyestes, frater Atrei: sīc odia pōnis? nōn petō, incolumīs pater
+(1026)  Thyestes, frater Atrei: nātōs ut habeam; scelere quod salvō darī
+(1027)  Thyestes, frater Atrei: odiōque possit, frāter hoc frātrem rogō:
+(1028)  Thyestes, frater Atrei: sepelīre liceat. Redde quod cernās statim
+(1029)  Thyestes, frater Atrei: ūrī; nihil tē genitor habitūrus rogō,
+(1030)  Thyestes, frater Atrei: sed perditūrus. Quidquid ē nātīs tuīs
+(1031)  Atreus, rex Mycenarum: superest habēs, quodcumque nōn superest habēs.
+(1032)  Thyestes, frater Atrei: Utrumne saevīs pābulum ālitibus jacent,
+(1033)  Thyestes, frater Atrei: an bēluīs scinduntur, an pāscunt ferās?
+(1034)  Atreus, rex Mycenarum: Epulātus ipse es impiā nātōs dape.
+(1035)  Thyestes, frater Atrei: Hoc est deōs quod puduit, hoc ēgit diem
+(1036)  Thyestes, frater Atrei: āversum in ortūs. Quās miser vōcēs dabō
+(1037)  Thyestes, frater Atrei: questūsque quōs? quae verba sufficient mihī?
+(1038)  Thyestes, frater Atrei: abscīsa cernō capita et āvulsās manūs
+(1039)  Thyestes, frater Atrei: et rupta frāctīs crūribus vestīgia;
+(1040)  Thyestes, frater Atrei: hoc est quod avidus capere nōn potuit pater.
+(1041)  Thyestes, frater Atrei: volvuntur intus vīscera et clūsum nefās
+(1042)  Thyestes, frater Atrei: sine exitū luctātur et quaerit fugam.
+(1043)  Thyestes, frater Atrei: dā, frāter, ēnsem (sanguinis multum meī
+(1044)  Thyestes, frater Atrei: habet ille): ferrō līberīs dētur via.
+(1045)  Thyestes, frater Atrei: negātur ēnsis? pectora inlīsō sonent
+(1046)  Thyestes, frater Atrei: contūsa plānctū; sustinē, īnfēlīx, manum,
+(1047)  Thyestes, frater Atrei: parcāmus umbrīs. Tāle quis vīdit nefās?
+(1048)  Thyestes, frater Atrei: quis inhospitālis Caucasī rūpem asperam
+(1049)  Thyestes, frater Atrei: Hēniochus habitāns quisve Cecropiīs metus
+(1050)  Thyestes, frater Atrei: terrīs Procrūstēs? genitor ēn nātōs premō
+(1051)  Thyestes, frater Atrei: premorque nātīs; sceleris est aliquis modus?
+(1052)  Atreus, rex Mycenarum: Scelerī modus dēbētur ubi faciās scelus,
+(1053)  Atreus, rex Mycenarum: nōn ubi repōnās. Hoc quoque exiguum est mihī.
+(1054)  Atreus, rex Mycenarum: ex vulnere ipsō sanguinem calidum in tua
+(1055)  Atreus, rex Mycenarum: dēfundere ōra dēbuī, ut vīventium
+(1056)  Atreus, rex Mycenarum: biberēs cruōrem; verba sunt īrae data
+(1057)  Atreus, rex Mycenarum: dum propero. Ferrō vulnera impressō dedī,
+(1058)  Atreus, rex Mycenarum: cecīdī ad ārās, caede vōtīvā focōs
+(1059)  Atreus, rex Mycenarum: plācāvī, et artūs, corpora exanima amputāns,
+(1060)  Atreus, rex Mycenarum: in parva carpsī frusta et haec ferventibus
+(1061)  Atreus, rex Mycenarum: dēmersī aēnīs; illa lentīs ignibus
+(1062)  Atreus, rex Mycenarum: stillāre jussī. Membra nervōsque abscidī
+(1063)  Atreus, rex Mycenarum: vīventibus, gracilīque trājectās verū
+(1064)  Atreus, rex Mycenarum: mūgīre fibrās vīdī et aggessī manū
+(1065)  Atreus, rex Mycenarum: meā ipse flammās. Omnia haec melius pater
+(1066)  Atreus, rex Mycenarum: fēcisse potuit, cecidit in cassum dolor:
+(1067)  Atreus, rex Mycenarum: scidit ōre nātōs impiō, sed nesciēns,
+(1068)  Atreus, rex Mycenarum: sed nescientēs. Clausa lītoribus vagīs
+(1069)  Thyestes, frater Atrei: audīte maria, vōs quoque audīte hoc scelus,
+(1070)  Thyestes, frater Atrei: quōcumque, dī, fūgistis; audīte īnferī,
+(1071)  Thyestes, frater Atrei: audīte terrae, Noxque Tartareā gravis
+(1072)  Thyestes, frater Atrei: et ātra nūbe, vōcibus nostrīs vacā
+(1073)  Thyestes, frater Atrei: (tibi sum relictus, sōla tū miserum vidēs,
+(1074)  Thyestes, frater Atrei: tū quoque sine astrīs), vōta nōn faciam improba.
+(1075)  Thyestes, frater Atrei: prō mē nihil precābor; et quid jam potest
+(1076)  Thyestes, frater Atrei: prō mē esse? Vōbīs vōta prōspicient mea.
+(1077)  Thyestes, frater Atrei: tū, summe caelī rēctor, aetheriae potēns
+(1078)  Thyestes, frater Atrei: dominātor aulae, nūbibus tōtum horridīs
+(1079)  Thyestes, frater Atrei: convolve mundum, bella ventōrum undique
+(1080)  Thyestes, frater Atrei: committe et omnī parte violentum intonā,
+(1081)  Thyestes, frater Atrei: manūque nōn quā tēcta et immeritās domōs
+(1082)  Thyestes, frater Atrei: tēlō petis minōre, sed quā montium
+(1083)  Thyestes, frater Atrei: tergemina mōlēs cecidit et quī montibus
+(1084)  Thyestes, frater Atrei: stābant parēs Gigantes, hāc arma expedī
+(1085)  Thyestes, frater Atrei: ignēsque torquē. Vindicā āmissum diem,
+(1086)  Thyestes, frater Atrei: jaculāre flammās, lūmen ēreptum polō
+(1087)  Thyestes, frater Atrei: fulminibus explē. Causa, nē dubitēs diū,
+(1088)  Thyestes, frater Atrei: utriusque mala sit; sī minus, mala sit mea:
+(1089)  Thyestes, frater Atrei: mē pete, trisulcō flammeam tēlō facem
+(1090)  Thyestes, frater Atrei: per pectus hoc trānsmitte. Sī nātōs pater
+(1091)  Thyestes, frater Atrei: humāre et ignī trādere extrēmō volō,
+(1092)  Thyestes, frater Atrei: ego sum cremandus. Sī nihil superōs movet
+(1093)  Thyestes, frater Atrei: nūllumque tēlīs impiōs nūmen petit,
+(1094)  Thyestes, frater Atrei: aeterna nox permaneat et tenebrīs tegat
+(1095)  Thyestes, frater Atrei: immēnsa longīs scelera. Nīl, Tītān, queror,
+(1096)  Thyestes, frater Atrei: sī persevērās. Nunc meās laudō manūs,
+(1097)  Atreus, rex Mycenarum: nunc parta vēra est palma. Perdideram scelus,
+(1098)  Atreus, rex Mycenarum: nisi sīc dolērēs. Līberōs nāscī mihī
+(1099)  Atreus, rex Mycenarum: nunc crēdo, castīs nunc fidem reddī torīs.
+(1100)  Thyestes, frater Atrei: Quid līberī meruēre? Quod fuerant tuī.
+(1101)  Thyestes, frater Atrei: Nātōs parentī– Fateor, et, quod mē juvat,
+(1102)  Atreus, rex Mycenarum: certōs. Piōrum praesidēs testor deōs.
+(1103)  Atreus, rex Mycenarum: Quid conjugālēs? Scelere quis pēnsat scelus?
+(1104)  Atreus, rex Mycenarum: Scio quid querāris: scelere praereptō dolēs,
+(1105)  Atreus, rex Mycenarum: nec quod nefandās hauserīs angit dapēs;
+(1106)  Atreus, rex Mycenarum: quod nōn parārīs. Fuerat hic animus tibī
+(1107)  Atreus, rex Mycenarum: īnstruere similēs īnsciō frātrī cibōs
+(1108)  Atreus, rex Mycenarum: et adjuvante līberōs mātre aggredī
+(1109)  Atreus, rex Mycenarum: similīque lētō sternere; hoc ūnum obstitit;
+(1110)  Atreus, rex Mycenarum: tuōs putāstī. Vindicēs aderunt deī;
+(1111)  Thyestes, frater Atrei: hīs pūniendum vōta tē trādunt mea.
+(1112)  Atreus, rex Mycenarum: Tē pūniendum līberīs trādō tuīs.

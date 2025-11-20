@@ -1,0 +1,2232 @@
+==== Thyestes ====
+=== Prolog ===
+(1) [TANTALI UMBRA:] Quis(Pr)(N) īnferōrum(G) sēde(Abl) ab(Prp) īnfaustā(Adj)(Abl) extrahit(Prä)(Akt)
+(1) [TANTALI UMBRA:] wer der|Unterirdischen Sitz von der|unheilvollen heraus|zieht
+(2) [TANTALI UMBRA:] avidō(Adj)(Abl) fugācēs(Adj)(A) ōre(Abl) captantem(Prä)(Akt)(A) cibōs(A)?
+(2) [TANTALI UMBRA:] gierigem flüchtige mit|dem|Mund fangend Speisen?
+(3) [TANTALI UMBRA:] quis(Pr)(N) male(Adv) deōrum(G) Tantalō(D) invīsās(Per)(Pas)(A) domōs(A)
+(3) [TANTALI UMBRA:] wer übel der|Götter dem|Tantalus verhasste Häuser
+(4) [TANTALI UMBRA:] ostendit(Prä)(Akt) iterum(Adv)? pejus(Adv)(Kmp) inventum(Per)(Pas)(N) est(Prä)(Akt) sitī(D)
+(4) [TANTALI UMBRA:] zeigt wieder? schlimmer gefunden ist dem|Durst
+(5) [TANTALI UMBRA:] ārente(Prä)(Akt)(Abl) in(Prp) undīs(Abl) aliquid(Pr)(N) et(Kon) pejus(Adv)(Kmp) famē(Abl)
+(5) [TANTALI UMBRA:] dorrendem in den|Wellen etwas und schlimmer durch|den|Hunger
+(6) [TANTALI UMBRA:] hiante(Prä)(Akt)(Abl) semper(Adv)? Sīsyphī(G) numquid(Pt) lapis(N)
+(6) [TANTALI UMBRA:] gähnendem stets? des|Sisyphus etwa Stein
+(7) [TANTALI UMBRA:] gestandus(Fu1)(Pas)(N)(Gdv) umerīs(Abl) lūbricus(Adj)(N) nostrīs(Adj)(Abl) venit(Prä)(Akt)
+(7) [TANTALI UMBRA:] zu|tragender auf|den|Schultern glitschiger unseren kommt
+(8) [TANTALI UMBRA:] aut(Kon) membra(A) celerī(Adj)(Abl) differēns(Prä)(Akt)(N) cursū(Abl) rota(N),
+(8) [TANTALI UMBRA:] oder Glieder schnellem zerstreuend mit|dem|Lauf Rad,
+(9) [TANTALI UMBRA:] aut(Kon) poena(N) Tityī(G) quī(Pr)(N) specū(Abl) vastō(Adj)(Abl) patēns(Prä)(Akt)(N)
+(9) [TANTALI UMBRA:] oder Strafe des|Tityos der in|der|Höhle weiten offen|stehend
+(10) [TANTALI UMBRA:] vīsceribus(Abl) ātrās(Adj)(A) pāscit(Prä)(Akt) effossīs(Per)(Pas)(Abl) avēs(A)
+(10) [TANTALI UMBRA:] mit|den|Eingeweiden schwarze füttert aus|gegrabenen Vögel
+(11) [TANTALI UMBRA:] et(Kon) nocte(Abl) reparāns(Prä)(Akt)(N) quidquid(Pr)(N) āmīsit(Per)(Akt) diē(Abl)
+(11) [TANTALI UMBRA:] und in|der|Nacht wieder|herstellend was|auch|immer verlor am|Tag
+(12) [TANTALI UMBRA:] plēnum(Adj)(N) recentī(Adj)(Abl) pābulum(N) mōnstrō(D) jacet(Prä)(Akt)?
+(12) [TANTALI UMBRA:] volles frischem Futter für|das|Ungeheuer liegt?
+(13) [TANTALI UMBRA:] in(Prp) quod(Pr)(A) malum(A) trānscrībor(Prä)(Pas)? Ō(ij) quisquis(Pr)(N) nova(Adj)(A)
+(13) [TANTALI UMBRA:] in welches Übel werde|versetzt? o wer|auch|immer neue
+(14) [TANTALI UMBRA:] supplicia(A) fūnctīs(Per)(Akt)(D) dūrus(Adj)(N) umbrārum(G) arbiter(N)
+(14) [TANTALI UMBRA:] Strafen den|Verstorbenen harter der|Schatten Richter
+(15) [TANTALI UMBRA:] dispōnis(Prä)(Akt), addī(Inf)(Pas) sī(Kon) quid(Pr)(N) ad(Prp) poenās(A) potest(Prä)(Akt)
+(15) [TANTALI UMBRA:] ordnest|zu, hinzu|gefügt|werden wenn etwas zu den|Strafen kann
+(16) [TANTALI UMBRA:] quod(Pr)(N) ipse(Pr)(N) cūstōs(N) carceris(G) dīrī(Adj)(G) horreat(Prä)(Knj)(Akt),
+(16) [TANTALI UMBRA:] was selbst Wächter des|Kerker schrecklichen erschaudere,
+(17) [TANTALI UMBRA:] quod(Pr)(N) maestus(Adj)(N) Acherōn(N) paveat(Prä)(Knj)(Akt), ad(Prp) cujus(Pr)(G) metum(A)
+(17) [TANTALI UMBRA:] was trauriger Acheron bebe, zu dessen Furcht
+(18) [TANTALI UMBRA:] nōs(Pr)(N) quoque(Pt) tremāmus(Prä)(Knj)(Akt), quaere(Prä)(Imv)(Akt). Jam(Adv) nostrā(Adj)(Abl) subit(Prä)(Akt)
+(18) [TANTALI UMBRA:] wir auch zittern, suche. nun unserer tritt|heran
+(19) [TANTALI UMBRA:] ē(Prp) stirpe(Abl) turba(N) quae(Pr)(N) suum(Pr)(A) vincat(Prä)(Knj)(Akt) genus(A)
+(19) [TANTALI UMBRA:] aus dem|Stamm Schar die ihr|eigenes übertreffe Geschlecht
+(20) [TANTALI UMBRA:] ac(Kon) mē(Pr)(A) innocentem(Adj)(A) faciat(Prä)(Knj)(Akt) et(Kon) inausa(Adj)(A) audeat(Prä)(Knj)(Akt).
+(20) [TANTALI UMBRA:] und mich unschuldig mache und Unerhörtes wage.
+(21) [TANTALI UMBRA:] regiōne(Abl) quidquid(Pr)(N) impiā(Adj)(Abl) cessat(Prä)(Akt) locī(G)
+(21) [TANTALI UMBRA:] in|der|Gegend was|auch|immer freveligen fehlt des|Ortes
+(22) [TANTALI UMBRA:] complēbo(Fu1)(Akt); numquam(Adv) stante(Prä)(Akt)(Abl) Pelopēā(Adj)(Abl) domō(Abl)
+(22) [TANTALI UMBRA:] werde|auffüllen; niemals stehendem pelopäischen Haus
+(23) [TANTALI UMBRA:] Mīnōs(N) vacābit(Fu1)(Akt). Perge(Prä)(Imv)(Akt), dētestābilis(Adj)(V)
+(23) [TANTALI UMBRA:] Minos wird|müßig|sein. fahre|fort, verabscheuungswürdige
+(24) [FURIA:] umbra(V), et(Kon) penātēs(A) impiōs(Adj)(A) furiīs(Abl) age(Prä)(Imv)(Akt).
+(24) [FURIA:] Schatten, und Hausgötter gottlosen mit|den|Furien treibe.
+(25) [FURIA:] certētur(Prä)(Knj)(Pas) omnī(Adj)(Abl) scelere(Abl) et(Kon) alternā(Adj)(Abl) vice(Abl)
+(25) [FURIA:] es|werde|gestritten mit|jedem Verbrechen und abwechselndem Wechsel
+(26) [FURIA:] stringātur(Prä)(Knj)(Pas) ēnsis(N); nec(Kon) sit(Prä)(Knj)(Akt) īrārum(G) modus(N)
+(26) [FURIA:] werde|gezogen das|Schwert; und|nicht sei der|Zorne Maß
+(27) [FURIA:] pudorve(N)(Kon), mentēs(A) caecus(Adj)(N) īnstīget(Prä)(Knj)(Akt) furor(N),
+(27) [FURIA:] Scham|oder, Gemüter blinder stachle|an Wahnsinn,
+(28) [FURIA:] rabiēs(N) parentum(G) dūret(Prä)(Knj)(Akt) et(Kon) longum(Adj)(N) nefās(N)
+(28) [FURIA:] Raserei der|Eltern dauere und langes Frevel
+(29) [FURIA:] eat(Prä)(Knj)(Akt) in(Prp) nepōtēs(A); nec(Kon) vacet(Prä)(Knj)(Akt) cuiquam(Pr)(D) vetus(Adj)(N)
+(29) [FURIA:] gehe auf Enkel; und|nicht bleibe|frei irgendjemandem altes
+(30) [FURIA:] ōdisse(Inf)(Akt) crīmen(A): semper(Adv) oriātur(Prä)(Knj)(Pas) novum(Adj)(N),
+(30) [FURIA:] zu|hassen Verbrechen: immer entstehe neues,
+(31) [FURIA:] nec(Kon) ūnum(Adj)(A) in(Prp) ūnō(Adj)(Abl), dumque(Kon) pūnītur(Prä)(Pas) scelus(N),
+(31) [FURIA:] und|nicht einziges in einem, während|und wird|bestraft Verbrechen,
+(32) [FURIA:] crēscat(Prä)(Knj)(Akt). Superbīs(Adj)(Abl) frātribus(Abl) rēgna(N) excidant(Prä)(Knj)(Akt)
+(32) [FURIA:] wachse. den|hochmütigen Brüdern Reiche fallen|weg
+(33) [FURIA:] repetantque(Prä)(Knj)(Akt)(Kon) profugōs(A); dubia(Adj)(N) violentae(Adj)(G) domūs(G)
+(33) [FURIA:] wieder|zurück|rufen|und die|Geflohenen; unsichere der|gewalttätigen des|Hauses
+(34) [FURIA:] fortūna(N) rēgēs(A) inter(Prp) incertōs(Adj)(A) labet(Prä)(Knj)(Akt);
+(34) [FURIA:] Fortuna Könige zwischen unsicheren wanke;
+(35) [FURIA:] miser(Adj)(N) ex(Prp) potente(Adj)(Abl) fīat(Prä)(Knj)(Akt), ex(Prp) miserō(Adj)(Abl) potēns(Adj)(N),
+(35) [FURIA:] Elender aus dem|Mächtigen werde, aus dem|Elenden mächtig,
+(36) [FURIA:] flūctūque(Abl)(Kon) rēgnum(A) cāsus(N) assiduō(Adj)(Abl) ferat(Prä)(Knj)(Akt).
+(36) [FURIA:] mit|der|Woge|und das|Reich Zufall anhaltender trage.
+(37) [FURIA:] ob(Prp) scelera(A) pulsī(Per)(Pas)(N), cum(Kon) dabit(Fu1)(Akt) patriam(A) deus(N)
+(37) [FURIA:] wegen der|Verbrechen vertrieben, wenn wird|geben Vaterland Gott
+(38) [FURIA:] in(Prp) scelera(A) redeant(Prä)(Knj)(Akt), sintque(Prä)(Knj)(Akt)(Kon) tam(Adv) invīsī(Per)(Pas)(N) omnibus(Pr)(D)
+(38) [FURIA:] in Verbrechen kehren|zurück, seien|und so verhasst allen
+(39) [FURIA:] quam(Kon) sibi(Pr)(D); nihil(Pr)(N) sit(Prä)(Knj)(Akt) īra(N) quod(Pr)(N) vetitum(Per)(Pas)(N) putet(Prä)(Knj)(Akt):
+(39) [FURIA:] wie sich|selbst; nichts sei Zorn was verboten halte:
+(40) [FURIA:] frātrem(A) expavēscat(Prä)(Knj)(Akt) frāter(N) et(Kon) nātum(A) parēns(N)
+(40) [FURIA:] den|Bruder fürchte|sich der|Bruder und den|Sohn der|Elternteil
+(41) [FURIA:] nātusque(N)(Kon) patrem(A), līberī(N) pereant(Prä)(Knj)(Akt) male(Adv),
+(41) [FURIA:] der|Sohn|und den|Vater, die|Kinder gehen|zugrunde schlimm,
+(42) [FURIA:] pejus(Adv)(Kmp) tamen(Pt) nāscantur(Prä)(Knj)(Pas); immineat(Prä)(Knj)(Akt) virō(D)
+(42) [FURIA:] schlimmer jedoch mögen|geboren|werden; drohe dem|Mann
+(43) [FURIA:] īnfēsta(Adj)(N) conjūnx(N), bella(A) trāns(Prp) pontum(A) vehant(Prä)(Knj)(Akt),
+(43) [FURIA:] feindselige Ehefrau, Kriege über das|Meer tragen,
+(44) [FURIA:] effūsus(Per)(Pas)(N) omnīs(Adj)(N) irriget(Prä)(Knj)(Akt) terrās(A) cruor(N),
+(44) [FURIA:] ausgegossen aller bewässere die|Länder Blut,
+(45) [FURIA:] suprāque(Adv)(Kon) magnōs(Adj)(A) gentium(G) exultet(Prä)(Knj)(Akt) ducēs(A)
+(45) [FURIA:] über|und große der|Völker juble Führer
+(46) [FURIA:] Libīdo(N) victrīx(Adj)(N). Impiā(Adj)(Abl) stuprum(A) in(Prp) domō(Abl)
+(46) [FURIA:] Begierde siegreiche. frevelhaften Schandtat in dem|Haus
+(47) [FURIA:] levissimum(Adj)(N)(Sup) sit(Prä)(Knj)(Akt); facinus(N) et(Kon) fās(N) et(Kon) fidēs(N)
+(47) [FURIA:] allermindestes sei; Verbrechen und göttliches|Recht und Treue
+(48) [FURIA:] jūsque(N)(Kon) omne(Adj)(N) pereat(Prä)(Knj)(Akt). Nōn(Pt) sit(Prä)(Knj)(Akt) ā(Prp) vestrīs(Adj)(Abl) malīs(Abl)
+(48) [FURIA:] Recht|und alles gehe|zugrunde. nicht sei von euren Übeln
+(49) [FURIA:] immūne(Adj)(N) caelum(N); cūr(Adv) micant(Prä)(Akt) stēllae(N) polō(Abl)
+(49) [FURIA:] unberührt Himmel; warum leuchten Sterne am|Himmel
+(50) [FURIA:] flammaeque(N)(Kon) servant(Prä)(Akt) dēbitum(Adj)(A) mundō(D) decus(A)?
+(50) [FURIA:] Flammen|und bewahren geschuldete der|Welt Schmuck?
+(51) [FURIA:] nox(N) alta(Adj)(N) fīat(Prä)(Knj)(Akt), excidat(Prä)(Knj)(Akt) caelō(Abl) diēs(N).
+(51) [FURIA:] Nacht hoch werde, falle|heraus aus|dem|Himmel Tag.
+(52) [FURIA:] miscē(Prä)(Imv)(Akt) penātēs(A), odia(A) caedēs(A) fūnera(A)
+(52) [FURIA:] mische Hausgötter, Feindschaften Tötungen Begräbnisse
+(53) [FURIA:] accerse(Prä)(Imv)(Akt) et(Kon) implē(Prä)(Imv)(Akt) Tantalō(D) tōtam(Adj)(A) domum(A).
+(53) [FURIA:] herbei|rufe und fülle dem|Tantalus ganze Haus.
+(54) [FURIA:] ōrnētur(Prä)(Knj)(Pas) altum(Adj)(N) columen(N) et(Kon) laurō(Abl) forēs(N)
+(54) [FURIA:] werde|geschmückt hoher Pfeiler und mit|Lorbeer Türen
+(55) [FURIA:] laetae(Adj)(N) virēscant(Prä)(Knj)(Akt), dignus(Adj)(N) adventū(Abl) tuō(Pr)(Abl)
+(55) [FURIA:] frohe ergrünen, würdig der|Ankunft deiner
+(56) [FURIA:] splendescat(Prä)(Knj)(Akt) ignis(N); Thrācium(Adj)(A) fīat(Prä)(Knj)(Akt) nefās(N)
+(56) [FURIA:] strahle Feuer; thrakisches werde Frevel
+(57) [FURIA:] majōre(Adj)(Abl)(Kmp) numerō(Abl). Dextra(N) cūr(Adv) patruī(G) vacat(Prä)(Akt)?
+(57) [FURIA:] mit|größerer Zahl. die|rechte|Hand warum des|Onkels ist|frei?
+(58) [FURIA:] nōndum(Adv) Thyestēs(N) līberōs(A) dēflet(Prä)(Akt) suōs(Pr)(A)?
+(58) [FURIA:] noch|nicht Thyestes die|Kinder beweint seine|eigenen?
+(59) [FURIA:] ecquando(Adv) tollet(Fu1)(Akt)? ignibus(Abl) jam(Adv) subditīs(Per)(Pas)(Abl)
+(59) [FURIA:] wann|endlich wird|erheben? mit|den|Feuern schon unter|geschobenen
+(60) [FURIA:] spūment(Prä)(Knj)(Akt) aēna(N), membra(N) per(Prp) partēs(A) eant(Prä)(Knj)(Akt)
+(60) [FURIA:] sprudeln Kessel, Glieder durch Teile gehen
+(61) [FURIA:] discerpta(Per)(Pas)(N), patriōs(Adj)(A) polluat(Prä)(Knj)(Akt) sanguis(N) focōs(A),
+(61) [FURIA:] zerstückelte, väterliche beschmutze Blut Herde,
+(62) [FURIA:] epulae(N) īnstruantur(Prä)(Knj)(Pas); nōn(Pt) novī(Adj)(G) sceleris(G) tibī(Pr)(D)
+(62) [FURIA:] Speisen mögen|angerichtet|werden; nicht neuen Verbrechens für|dich
+(63) [FURIA:] convīva(V) veniēs(Fu1)(Akt). Līberum(Adj)(A) dedimus(Per)(Akt) diem(A)
+(63) [FURIA:] Gast wirst|kommen. freien gaben|wir Tag
+(64) [FURIA:] tuamque(Adj)(A)(Kon) ad(Prp) istās(Adj)(A) solvimus(Prä)(Akt) mēnsās(A) famem(A);
+(64) [FURIA:] deine|und zu jene stillen|wir Tische Hunger;
+(65) [FURIA:] jējūnia(A) explē(Prä)(Imv)(Akt), mixtus(Per)(Pas)(N) in(Prp) Bacchum(A) cruor(N)
+(65) [FURIA:] Fasten beende, gemischt in Bacchus Blut
+(66) [FURIA:] spectante(Prä)(Akt)(Abl) tē(Pr)(Abl) pōtētur(Fu1)(Pas); invēnī(Prä)(Imv)(Akt) dapēs(A)
+(66) [FURIA:] unter|dem|Anschauen von|dir wird|getrunken; finde Speisen
+(67) [FURIA:] quās(Pr)(A) ipse(Pr)(N) fugerēs(Imp)(Knj)(Akt); siste(Prä)(Imv)(Akt), quō(Adv) praeceps(Adj)(N) ruis(Prä)(Akt)?
+(67) [FURIA:] welche selbst würdest|fliehen; halte|an, wohin kopfüber stürzt|du?
+(68) [TANTALI UMBRA:] Ad(Prp) stāgna(A) et(Kon) amnēs(A) et(Kon) recēdentēs(Prä)(Akt)(A) aquās(A)
+(68) [TANTALI UMBRA:] zu Teichen und Flüsse und zurück|weichende Wasser
+(69) [TANTALI UMBRA:] labrīsque(Abl)(Kon) ab(Prp) ipsīs(Pr)(Abl) arboris(G) plēnae(Adj)(G) fugās(A).
+(69) [TANTALI UMBRA:] mit|den|Lippen|und von den|selbst des|Baumes vollen Fluchten.
+(70) [TANTALI UMBRA:] abīre(Inf)(Akt) in(Prp) ātrum(Adj)(A) carceris(G) liceat(Prä)(Knj)(Akt) meī(Pr)(G)
+(70) [TANTALI UMBRA:] weg|gehen in schwarzen des|Gefängnisses sei|erlaubt meines
+(71) [TANTALI UMBRA:] cubīle(A), liceat(Prä)(Knj)(Akt), sī(Kon) parum(Adv) videor(Prä)(Pas) miser(Adj)(N),
+(71) [TANTALI UMBRA:] Lager, sei|erlaubt, wenn zu|wenig scheine|ich elend,
+(72) [TANTALI UMBRA:] mūtāre(Inf)(Akt) rīpās(A): alveō(Abl) medius(Adj)(N) tuō(Adj)(Abl),
+(72) [TANTALI UMBRA:] wechseln Ufer: in|dem|Flussbett mittig deinem,
+(73) [TANTALI UMBRA:] Phlegethōn(V), relinquar(Fu1)(Pas) igneō(Adj)(Abl) cīnctus(Per)(Pas)(N) fretō(Abl).
+(73) [TANTALI UMBRA:] Phlegethon, werde|zurück|gelassen feurigen umgürtet von|dem|Meer|Engpass.
+(74) [TANTALI UMBRA:] Quīcumque(Pr)(N) poenās(A) lēge(Abl) fātōrum(G) datās(Per)(Pas)(A)
+(74) [TANTALI UMBRA:] wer|auch|immer Strafen durch|das|Gesetz der|Schicksale gegebenen
+(75) [TANTALI UMBRA:] patī(Inf)(Akt) jubēris(Prä)(Pas), quisquis(Pr)(N) exēsō(Per)(Pas)(Abl) jacēs(Prä)(Akt)
+(75) [TANTALI UMBRA:] leiden wirst|befohlen, wer|auch|immer aus|genagt liegst|du
+(76) [TANTALI UMBRA:] pavidus(Adj)(N) sub(Prp) antrō(Abl) jamque(Adv)(Kon) ventūrī(Fu1)(Akt)(G) timēs(Prä)(Akt)
+(76) [TANTALI UMBRA:] furchtsam unter der|Höhle schon|und zukünftigen fürchtest|du
+(77) [TANTALI UMBRA:] montis(G) ruīnam(A), quisquis(Pr)(N) avidōrum(Adj)(G) ferōs(Adj)(A)
+(77) [TANTALI UMBRA:] des|Berges Einsturz, wer|auch|immer der|gierigen wilde
+(78) [TANTALI UMBRA:] rictūs(A) leōnum(G) et(Kon) dīra(Adj)(A) Furiārum(G) agmina(A)
+(78) [TANTALI UMBRA:] Rachen der|Löwen und schreckliche der|Furien Heere
+(79) [TANTALI UMBRA:] implicitus(Per)(Pas)(N) horrēs(Prä)(Akt), quisquis(Pr)(N) immissās(Per)(Pas)(A) facēs(A)
+(79) [TANTALI UMBRA:] verstrickt schauderst|du, wer|auch|immer hinein|geschickte Fackeln
+(80) [TANTALI UMBRA:] sēmiustus(Per)(Pas)(N) abigis(Prä)(Akt), Tantalī(G) vōcem(A) excipe(Prä)(Imv)(Akt)
+(80) [TANTALI UMBRA:] halb|verbrannt treibst|du|fort, des|Tantalus Stimme nimm|auf
+(81) [TANTALI UMBRA:] properantis(Prä)(Akt)(G) ad(Prp) vōs(Pr)(A): crēdite(Prä)(Imv)(Akt) expertō(Per)(Pas)(Abl) mihī(Pr)(D),
+(81) [TANTALI UMBRA:] des|Eilenden zu euch: glaubt dem|Erprobten mir,
+(82) [TANTALI UMBRA:] amāte(Prä)(Imv)(Akt) poenās(A). Quando(Adv) continget(Fu1)(Akt) mihī(Pr)(D)
+(82) [TANTALI UMBRA:] liebt Strafen. wann wird|zuteil|werden mir
+(83) [TANTALI UMBRA:] effugere(Inf)(Akt) superōs(A)? Ante(Adv) perturbā(Prä)(Imv)(Akt) domum(A)
+(83) [TANTALI UMBRA:] entkommen den|Oberen? zuvor verwirre Haus
+(84) [FURIA:] īnferque(Prä)(Imv)(Akt)(Kon) tēcum(Pr)(Abl)(Prp) proelia(A) et(Kon) ferrī(G) malum(A)
+(84) [FURIA:] führe|hinein|und mit|dir Kämpfe und des|Eisens Übel
+(85) [FURIA:] rēgibus(D) amōrem(A), concute(Prä)(Imv)(Akt) īnsānō(Adj)(Abl) ferum(Adj)(A)
+(85) [FURIA:] den|Königen Liebe, erschüttere wahnsinnigem wildes
+(86) [FURIA:] pectus(A) tumultū(Abl). Mē(Pr)(A) patī(Inf)(Akt) poenās(A) decet(Prä)(Akt),
+(86) [FURIA:] Brust durch|den|Aufruhr. mich leiden Strafen ziemt,
+(87) [TANTALI UMBRA:] nōn(Pt) esse(Inf)(Akt) poenam(A). Mittor(Prä)(Pas) ut(Kon) dīrus(Adj)(N) vapor(N)
+(87) [TANTALI UMBRA:] nicht zu|sein Strafe. werde|ich|gesandt wie schrecklicher Dampf
+(88) [TANTALI UMBRA:] tellūre(Abl) ruptā(Per)(Pas)(Abl) vel(Kon) gravem(Adj)(A) populīs(D) luem(A)
+(88) [TANTALI UMBRA:] mit|der|Erde gebrochenen oder schwere den|Völkern Seuche
+(89) [TANTALI UMBRA:] sparsūra(Fu1)(Akt)(N) pestis(N)? dūcam(Fu1)(Akt) in(Prp) horrendum(Adj)(A) nefās(N)
+(89) [TANTALI UMBRA:] streuende Seuche? werde|ich|führen in schreckliches Frevel
+(90) [TANTALI UMBRA:] avus(N) nepōtēs(A)? magne(Adj)(V) dīvōrum(G) parēns(V)
+(90) [TANTALI UMBRA:] Großvater Enkel? großer der|Götter Vater
+(91) [TANTALI UMBRA:] nosterque(Pr)(N)(Kon) quamvīs(Kon) pudeat(Prä)(Knj)(Akt), ingentī(Adj)(Abl) licet(Prä)(Akt)
+(91) [TANTALI UMBRA:] unser|und obgleich es|möge|schämen, gewaltigem es|ist|erlaubt
+(92) [TANTALI UMBRA:] taxāta(Per)(Pas)(Abl) poenā(Abl) lingua(N) cruciētur(Prä)(Knj)(Pas) loquāx(Adj)(N),
+(92) [TANTALI UMBRA:] angesetzter Strafe Zunge werde|gequält geschwätzig,
+(93) [TANTALI UMBRA:] nec(Kon) hoc(Pr)(A) tacēbō(Fu1)(Akt): moneo(Prä)(Akt), nē(Kon) sacrā(Adj)(Abl) manūs(A)
+(93) [TANTALI UMBRA:] und|nicht dieses werde|ich|verschweigen: ich|warne, dass|nicht heiligem Hände
+(94) [TANTALI UMBRA:] violāte(Per)(Pas)(Abl) caede(Abl) nēve(Kon) furiālī(Adj)(Abl) malō(Abl)
+(94) [TANTALI UMBRA:] durch|verletzte Tötung und|nicht furienhaften Übel
+(95) [TANTALI UMBRA:] aspergite(Prä)(Imv)(Akt) ārās(A). Stābō(Fu1)(Akt) et(Kon) arcēbō(Fu1)(Akt) scelus(A).
+(95) [TANTALI UMBRA:] besprengt Altäre. werde|ich|stehen und werde|abwehren Verbrechen.
+(96) [TANTALI UMBRA:] Quid(Adv) ōra(A) terrēs(Prä)(Akt) verbere(Abl) et(Kon) tortōs(Per)(Pas)(A) ferōx(Adj)(N)
+(96) [TANTALI UMBRA:] warum Münder erschreckst|du mit|der|Peitsche und gedrehte wild
+(97) [TANTALI UMBRA:] mināris(Prä)(Akt) anguēs(A)? Quid(Adv) famem(A) īnfīxam(Per)(Pas)(A) intimīs(Adj)(Abl)
+(97) [TANTALI UMBRA:] drohst|du Schlangen? warum Hunger eingebohrte den|innersten
+(98) [TANTALI UMBRA:] agitās(Prä)(Akt) medullīs(Abl)? flāgrat(Prä)(Akt) incēnsum(Per)(Pas)(N) sitī(Abl)
+(98) [TANTALI UMBRA:] bewegst|du in|den|Marken? lodert entzündet durch|den|Durst
+(99) [TANTALI UMBRA:] cor(N) et(Kon) perustīs(Per)(Pas)(Abl) flamma(N) vīsceribus(Abl) micat(Prä)(Akt).
+(99) [TANTALI UMBRA:] Herz und verbrannten Flamme Eingeweiden flackert.
+(100) [FURIA:] Hunc(A), hunc(A) furōrem(A) dīvide(Prä)(Imv)(Akt) in(Prp) tōtam(Adj)(A) domum(A).
+(100) [FURIA:] diesen, diesen Zorn teile in ganzes Haus.
+(101) [FURIA:] sīc(Adv), sīc(Adv) ferantur(Prä)(Knj)(Pas) et(Kon) suum(Pr)(A) īnfēnsī(Adj)(N) invicem(Adv)
+(101) [FURIA:] so, so mögen|getragen|werden und ihren|eigenen Feindselige wechselweise
+(102) [FURIA:] sitiant(Prä)(Knj)(Akt) cruōrem(A). Sentit(Prä)(Akt) introitūs(A) tuōs(Pr)(A)
+(102) [FURIA:] dürsten Blut. spürt Eingänge deine
+(103) [FURIA:] domus(N) et(Kon) nefandō(Adj)(Abl) tōta(Adj)(N) contāctū(Abl) horruit(Per)(Akt).
+(103) [FURIA:] das|Haus und unsagbarem ganz Berührung erschauerte.
+(104) [FURIA:] āctum(Per)(Pas)(N) est(Prä)(Akt) abundē(Adv)! gradere(Prä)(Imv)(Akt) ad(Prp) īnfernōs(Adj)(A) specūs(A)
+(104) [FURIA:] getan ist reichlich! schreite zu unterirdischen Höhlen
+(105) [FURIA:] amnemque(A)(Kon) nōtum(Adj)(A); jam(Adv) tuum(Pr)(A) maestae(Adj)(N) pedem(A)
+(105) [FURIA:] Fluss|und bekannten; schon deinen traurige Fuß
+(106) [FURIA:] terrae(N) gravantur(Prä)(Pas): cernis(Prä)(Akt) ut(Kon) fontis(G) liquor(N)
+(106) [FURIA:] Länder werden|beschwert: siehst|du wie des|Quells Flüssigkeit
+(107) [FURIA:] intrōrsus(Adv) āctus(Per)(Pas)(N) linquat(Prä)(Knj)(Akt), ut(Kon) rīpae(N) vacent(Prä)(Knj)(Akt)
+(107) [FURIA:] nach|innen getrieben möge|verlassen, wie Ufer leer|seien
+(108) [FURIA:] ventusque(N)(Kon) rārās(Adj)(A) igneus(Adj)(N) nūbēs(A) ferat(Prä)(Knj)(Akt)?
+(108) [FURIA:] Wind|und dünne feurig Wolken trage?
+(110) [FURIA:] pallēscit(Prä)(Akt) omnis(Adj)(N) arbor(N) ac(Kon) nūdus(Adj)(N) stetit(Per)(Akt)
+(110) [FURIA:] erbleicht jeder Baum und nackt stand
+(111) [FURIA:] fugiente(Prä)(Akt)(Abl) pōmō(Abl) rāmus(N), et(Kon) quī(Pr)(N) flūctibus(Abl)
+(111) [FURIA:] durch|fliehende Frucht Zweig, und der Wogen
+(112) [FURIA:] illinc(Adv) propinquīs(Adj)(Abl) Isthmos(N) atque(Kon) illinc(Adv) fremit(Prä)(Akt)
+(112) [FURIA:] dort|her nahen Isthmus und dort|her tost
+(113) [FURIA:] vīcīna(Adj)(N) gracilī(Adj)(Abl) dīvidēns(Prä)(Akt)(N) terrā(Abl) vada(A),
+(113) [FURIA:] nahe schmaler teilend durch|Land Untiefen,
+(114) [FURIA:] longē(Adv) remōtōs(Per)(Pas)(A) lātus(Adj)(N) exaudit(Prä)(Akt) sonōs(A).
+(114) [FURIA:] weit entfernte breit hört|hinaus Klänge.
+(115) [FURIA:] jam(Adv) Lerna(N) retrō(Adv) cessit(Per)(Akt) et(Kon) Phorōnidēs(N)
+(115) [FURIA:] schon Lerna zurück wich und Phoronide
+(116) [FURIA:] latuēre(Per)(Akt) vēnae(N) nec(Kon) suās(Pr)(A) prōfert(Prä)(Akt) sacer(Adj)(N)
+(116) [FURIA:] verbargen|sich Adern und|nicht seine|eigenen bringt|hervor heilig
+(117) [FURIA:] Alphēos(N) undās(A) et(Kon) Cithaerōnis(G) juga(N)
+(117) [FURIA:] Alpheios Wellen und des|Kithairon Kämme
+(118) [FURIA:] stant(Prä)(Akt) parte(Abl) nūllā(Adj)(Abl) cāna(Adj)(Abl) dēpositā(Per)(Pas)(Abl) nive(Abl)
+(118) [FURIA:] stehen an|Stelle keiner grauen abgelegt Schnee
+(119) [FURIA:] timentque(Prä)(Akt)(Kon) veterem(Adj)(A) nōbilēs(Adj)(N) Argī(N) sitim(A).
+(119) [FURIA:] fürchten|und alt edle Argiver Durst.
+(120) [FURIA:] ēn(ij) ipse(Pr)(N) Tītān(N) dubitat(Prä)(Akt) an(Kon) jubeat(Prä)(Knj)(Akt) sequī(Inf)(Akt)
+(120) [FURIA:] sieh selbst Titan zögert ob er|befehle zu|folgen
+(121) [FURIA:] cōgatque(Prä)(Knj)(Akt)(Kon) habēnīs(Abl) īre(Inf)(Akt) peritūrum(Fu1)(Akt)(A) diem(A).
+(121) [FURIA:] und|möge|zwingen mit|Zügeln zu|gehen unter|gehen|werdenden Tag.
+=== Chor (first asclepiadeans) ===
+(122) [CHORUS:] Argos(N) dē(Prp) superīs(Abl) sī(Kon) quis(Pr)(N) Achāicum(Adj)(A)
+(122) [CHORUS:] Argos von den|Oberen wenn jemand achaiisch
+(123) [CHORUS:] Pīsaeāsque(Adj)(A)(Kon) domōs(A) curribus(Abl) inclitās(Adj)(A),
+(123) [CHORUS:] Pisaische|und Häuser mit|Wagen berühmte,
+(124) [CHORUS:] Isthmī(G) sī(Kon) quis(Pr)(N) amat(Prä)(Akt) rēgna(A) Corinthiī(G),
+(124) [CHORUS:] des|Isthmus wenn jemand liebt Reiche des|Korinthers,
+(125) [CHORUS:] et(Kon) portūs(A) geminōs(Adj)(A) et(Kon) mare(A) dissidēns(Prä)(Akt)(N),
+(125) [CHORUS:] und Häfen zweifache und Meer trennend,
+(126) [CHORUS:] sī(Kon) quis(Pr)(N) Tāygetī(G) cōnspicuās(Adj)(A) nivēs(A),
+(126) [CHORUS:] wenn jemand des|Taygetus auffällige Schnee,
+(127) [CHORUS:] quās(Pr)(A) cum(Kon) Sarmaticus(Adj)(N) tempore(N)(Abl) frīgidō(Adj)(Abl)
+(127) [CHORUS:] die wenn der|Sarmatische zu|der|Zeit kalten
+(128) [CHORUS:] in(Prp) summīs(Adj)(Abl) Boreās(N) composuit(Per)(Akt) jugīs(Abl),
+(128) [CHORUS:] auf höchsten Boreas legte|zusammen auf|den|Kämmen,
+(129) [CHORUS:] aestās(N) vēliferīs(Adj)(Abl) solvit(Prä)(Akt) Etēsiīs(Abl),
+(129) [CHORUS:] Sommer segel|tragenden löst Etesien,
+(130) [CHORUS:] quem(Pr)(A) tangit(Prä)(Akt) gelidō(Adj)(Abl) flūmine(N)(Abl) lūcidus(Adj)(N)
+(130) [CHORUS:] den berührt mit|dem|kalten Fluss klarer
+(131) [CHORUS:] Alphēos(N), stadiō(N)(Abl) nōtus(Per)(Pas)(N) Olympicō(Adj)(Abl),
+(131) [CHORUS:] Alpheios, im|Stadion bekannt olympischen,
+(132) [CHORUS:] advertat(Prä)(Knj)(Akt) placidum(Adj)(A) nūmen(A) et(Kon) arceat(Prä)(Knj)(Akt),
+(132) [CHORUS:] richte|möge milde Gottheit und wehre|ab|möge,
+(133) [CHORUS:] alternae(Adj)(G) scelerum(G) nē(Kon) redeant(Prä)(Knj)(Akt) vicēs(N)
+(133) [CHORUS:] der|wechselnden der|Verbrechen dass|nicht mögen|zurück|kehren Wechsel
+(134) [CHORUS:] nec(Kon) succēdat(Prä)(Knj)(Akt) avō(D) dēterior(Adj)(Kmp)(N) nepōs(N)
+(134) [CHORUS:] und|nicht folge dem|Großvater schlechter Enkel
+(135) [CHORUS:] et(Kon) major(Adj)(Kmp)(N) placeat(Prä)(Knj)(Akt) culpa(N) minōribus(D).
+(135) [CHORUS:] und größer gefalle Schuld den|Jüngeren.
+(136) [CHORUS:] tandem(Adv) lassa(Adj)(N) ferōs(Adj)(A) exuat(Prä)(Knj)(Akt) impetūs(A)
+(136) [CHORUS:] endlich müde wilde lege|ab Antriebe
+(137) [CHORUS:] siccī(Adj)(G) prōgeniēs(N) impia(Adj)(N) Tantalī(G).
+(137) [CHORUS:] des|trockenen Nachkommenschaft gottlose des|Tantalus.
+(138) [CHORUS:] peccātum(N) satis(Adv) est(Prä)(Akt); fās(N) valuit(Per)(Akt) nihil(Pr)(N)
+(138) [CHORUS:] Vergehen genug ist; göttliches|Recht galt nichts
+(139) [CHORUS:] aut(Kon) commūne(Adj)(N) nefās(N). Prōditus(Per)(Pas)(N) occidit(Per)(Akt)
+(139) [CHORUS:] oder gemeinsames Frevel. Verraten getötet|wurde
+(140) [CHORUS:] dēceptor(N) dominī(G) Myrtilus(N), et(Kon) fidē(N)(Abl)
+(140) [CHORUS:] Betrüger des|Herrn Myrtilus, und in|der|Treue
+(141) [CHORUS:] vectus(Per)(Pas)(N) quā(Pr)(Abl) tulerat(Plq)(Akt) nōbile(Adj)(A) reddidit(Per)(Akt)
+(141) [CHORUS:] getragen mit|der er|getragen|hatte edel machte
+(142) [CHORUS:] mūtātō(Per)(Pas)(Abl) pelagus(N) nōmine(N)(Abl): nōtior(Adj)(Kmp)(N)
+(142) [CHORUS:] mit|verändertem Meer Name: bekannter
+(143) [CHORUS:] nūlla(Adj)(N) est(Prä)(Akt) Īoniīs(Adj)(Abl) fābula(N) nāvibus(Abl).
+(143) [CHORUS:] keine ist den|ionischen Sage Schiffen.
+(144) [CHORUS:] exceptus(Per)(Pas)(N) gladiō(N)(Abl) parvulus(Adj)(N) impiō(Adj)(Abl)
+(144) [CHORUS:] aufgefangen vom|Schwert kleiner gottlosen
+(145) [CHORUS:] dum(Kon) currit(Prä)(Akt) patrium(Adj)(A) nātus(N) ad(Prp) ōsculum(A),
+(145) [CHORUS:] während er|läuft väterlichen Sohn zu dem|Kuss,
+(146) [CHORUS:] immātūra(Adj)(N) focīs(Abl) victima(N) concidit(Per)(Akt)
+(146) [CHORUS:] unreife an|den|Herdstellen Opfer stürzte|zusammen
+(147) [CHORUS:] dīvīsusque(Per)(Pas)(N)(Kon) tuā(Pr)(Abl) est(Prä)(Akt), Tantale(V), dexterā(Abl),
+(147) [CHORUS:] geteilt|und durch|deine ist, Tantalus, rechter|Hand,
+(148) [CHORUS:] mēnsās(A) ut(Kon) struerēs(Imp)(Knj)(Akt) hospitibus(D) deīs(D).
+(148) [CHORUS:] die|Tafeln damit du|schichtetest den|Gästen Göttern.
+(149) [CHORUS:] hōs(Pr)(A) aeterna(Adj)(N) famēs(N) persequitur(Prä)(Akt) cibōs(A),
+(149) [CHORUS:] diese ewiger Hunger verfolgt Speisen,
+(150) [CHORUS:] hōs(Pr)(A) aeterna(Adj)(N) sitis(N); nec(Kon) dapibus(Abl) ferīs(Adj)(Abl)
+(150) [CHORUS:] diese ewiger Durst; und|nicht von|den|Mahlen grausamen
+(151) [CHORUS:] dēcernī(Inf)(Pas) potuit(Per)(Akt) poena(N) decentior(Adj)(Kmp)(N).
+(151) [CHORUS:] entschieden|werden konnte Strafe angemessenere.
+(152) [CHORUS:] Stat(Prä)(Akt) lassus(Adj)(N) vacuō(Adj)(Abl) gutture(N)(Abl) Tantalus(N);
+(152) [CHORUS:] steht ermüdet mit|dem|leeren Schlund Tantalus;
+(153) [CHORUS:] impendet(Prä)(Akt) capitī(D) plūrima(Adj)(N) noxiō(Adj)(D)
+(153) [CHORUS:] hängt|drohend dem|Haupt vieles schädlichen
+(154) [CHORUS:] Phīnēīs(Adj)(G) avibus(Abl) praeda(N) fugācior(Adj)(Kmp)(N);
+(154) [CHORUS:] des|Phineus Vögeln Beute flüchtigere;
+(155) [CHORUS:] hinc(Adv) illinc(Adv) gravidīs(Adj)(Abl) frondibus(Abl) incubat(Prä)(Akt)
+(155) [CHORUS:] hier dort auf|schweren Blättern liegt|auf
+(156) [CHORUS:] et(Kon) curvāta(Per)(Pas)(N) suīs(Pr)(Abl) fētibus(Abl) ac(Kon) tremēns(Prä)(Akt)(N)
+(156) [CHORUS:] und gekrümmt von|seinen Bruten und bebend
+(157) [CHORUS:] allūdit(Prä)(Akt) patulīs(Adj)(Abl) arbor(N) hiātibus(Abl).
+(157) [CHORUS:] spielt|an weiten Baum Öffnungen.
+(158) [CHORUS:] haec(Pr)(N), quamvīs(Kon) avidus(Adj)(N) nec(Kon) patiēns(Prä)(Akt)(N) morae(G),
+(158) [CHORUS:] dies, obgleich gierig und|nicht geduldig der|Verzögerung,
+(159) [CHORUS:] dēceptus(Per)(Pas)(N) totiēns(Adv) tangere(Inf)(Akt) neglegit(Prä)(Akt)
+(159) [CHORUS:] getäuscht so|oft zu|berühren vernachlässigt
+(160) [CHORUS:] oblīquatque(Prä)(Akt)(Kon) oculōs(A) ōraque(N)(Kon) comprimit(Prä)(Akt)
+(160) [CHORUS:] schrägt|ab|und Augen und|Münder presst|zusammen
+(161) [CHORUS:] inclūsīsque(Per)(Pas)(Abl)(Kon) famem(A) dentibus(Abl) alligat(Prä)(Akt).
+(161) [CHORUS:] mit|verschlossenen|und Hunger Zähnen bindet|fest.
+(162) [CHORUS:] sed(Kon) tunc(Adv) dīvitiās(A) omne(Adj)(A) nemus(N) suās(Pr)(A)
+(162) [CHORUS:] aber dann Reichtümer ganzen Hain seine
+(163) [CHORUS:] dēmittit(Prä)(Akt) propius(Adv) pōmaque(N)(Kon) dēsuper(Adv)
+(163) [CHORUS:] senkt tiefer Früchte|und von|oben
+(164) [CHORUS:] īnsultant(Prä)(Akt) foliīs(D) mītia(Adj)(N) languidīs(Adj)(D)
+(164) [CHORUS:] hüpfen auf|die|Blätter reife schlaffen
+(165) [CHORUS:] accenduntque(Prä)(Akt)(Kon) famem(A), quae(Pr)(N) jubet(Prä)(Akt) irritās(Adj)(A)
+(165) [CHORUS:] entfachen|und Hunger, die befiehlt vergebliche
+(166) [CHORUS:] exercēre(Inf)(Akt) manūs(A). Hās(Pr)(A) ubi(Kon) prōtulit(Per)(Akt)
+(166) [CHORUS:] auszuüben Hände. Diese sobald er|vor|gebracht|hat
+(167) [CHORUS:] et(Kon) fallī(Inf)(Pas) libuit(Per)(Akt), tōtus(Adj)(N) in(Prp) arduum(A)
+(167) [CHORUS:] und getäuscht|zu|werden gefiel, ganz in steiles
+(168) [CHORUS:] autumnus(N) rapitur(Prä)(Pas) silvaque(N)(Kon) mōbilis(Adj)(N).
+(168) [CHORUS:] Herbst wird|gerissen und|der|Wald beweglich.
+(169) [CHORUS:] īnstat(Prä)(Akt) deinde(Adv) sitis(N) nōn(Pt) levior(Adj)(Kmp)(N) famē(Abl);
+(169) [CHORUS:] drängt dann Durst nicht leichter als|dem|Hunger;
+(170) [CHORUS:] quā(Pr)(Abl) cum(Kon) percaluit(Per)(Akt) sanguis(N) et(Kon) igneīs(Adj)(Abl)
+(170) [CHORUS:] wodurch als das|Blut heiß|geworden|ist und mit|feurigen
+(171) [CHORUS:] exārsit(Per)(Akt) facibus(Abl), stat(Prä)(Akt) miser(Adj)(N) obviōs(Adj)(A)
+(171) [CHORUS:] ist|entbrannt durch|die|Fackeln, steht elend entgegen|kommende
+(172) [CHORUS:] flūctūs(A) ōre(Abl) petēns(Prä)(Akt)(N), quōs(Pr)(A) profugus(Adj)(N) latex(N)
+(172) [CHORUS:] Wogen mit|dem|Mund suchend, die flüchtig Flüssigkeit
+(173) [CHORUS:] āvertit(Prä)(Akt) sterilī(Adj)(Abl) dēficiēns(Prä)(Akt)(N) vadō(Abl)
+(173) [CHORUS:] abwendet im|unfruchtbaren versiegend Gewässer|Grund
+(174) [CHORUS:] cōnantemque(Prä)(Akt)(A)(Kon) sequī(Inf)(Akt) dēserit(Prä)(Akt); hic(Adv) bibit(Prä)(Akt)
+(174) [CHORUS:] den|Versuchenden|und zu|folgen verlässt; hier trinkt
+(175) [CHORUS:] altum(Adj)(A) dē(Prp) rapidō(Adj)(Abl) gurgite(N)(Abl) pulverem(A).
+(175) [CHORUS:] tiefen aus schnell|strömenden Strudel Staub.
+=== Akt 1 ===
+(176) [ATREUS, REX MYCENARUM:] Ignāve(Adj)(V), iners(Adj)(V), ēnervis(Adj)(V) et(Kon) (quod(Pr)(A) maximum(Adj)(Sup)(N)
+(176) [ATREUS, REX MYCENARUM:] Feiger, untätiger, nervenloser und (was größtes
+(177) [ATREUS, REX MYCENARUM:] probrum(N) tyrannō(D) rēbus(Abl) in(Prp) summīs(Adj)(Abl) reor(Prä)(Akt))
+(177) [ATREUS, REX MYCENARUM:] Schimpf dem|Tyrannen den|Dingen in höchsten halte|ich)
+(178) [ATREUS, REX MYCENARUM:] inulte(Adj)(V), post(Prp) tot(Adj)(A) scelera(A), post(Prp) frātris(G) dolōs(A)
+(178) [ATREUS, REX MYCENARUM:] ungerächter, nach so|vielen Verbrechen, nach des|Bruders Listen
+(179) [ATREUS, REX MYCENARUM:] fāsque(N)(Kon) omne(Adj)(A) ruptum(Per)(Pas)(A) questibus(Abl) vānīs(Adj)(Abl) agis(Prä)(Akt)
+(179) [ATREUS, REX MYCENARUM:] Recht|und alles gebrochen mit|Klagen eitlen treibst|du
+(180) [ATREUS, REX MYCENARUM:] īrātus(Per)(Pas)(N) Atreus(N)? fremere(Inf)(Akt) jam(Adv) tōtus(Adj)(N) tuīs(Pr)(Abl)
+(180) [ATREUS, REX MYCENARUM:] erzürnter Atreus? toben schon ganz mit|deinen
+(181) [ATREUS, REX MYCENARUM:] dēbēbat(Imp)(Akt) armīs(Abl) orbis(N) et(Kon) geminum(Adj)(A) mare(N)
+(181) [ATREUS, REX MYCENARUM:] sollte mit|den|Waffen Welt und doppeltes Meer
+(182) [ATREUS, REX MYCENARUM:] utrimque(Adv) classēs(A) agere(Inf)(Akt), jam(Adv) flammīs(Abl) agrōs(A)
+(182) [ATREUS, REX MYCENARUM:] beiderseits Flotten treiben, schon mit|den|Flammen Felder
+(183) [ATREUS, REX MYCENARUM:] lūcēre(Inf)(Akt) et(Kon) urbēs(A) decuit(Per)(Akt) ac(Kon) strictum(Per)(Pas)(A) undique(Adv)
+(183) [ATREUS, REX MYCENARUM:] leuchten und Städte geziemte und gezückt ringsum
+(184) [ATREUS, REX MYCENARUM:] micāre(Inf)(Akt) ferrum(N). Tōta(Adj)(N) sub(Prp) nostrō(Pr)(Abl) sonet(Prä)(Knj)(Akt)
+(184) [ATREUS, REX MYCENARUM:] blitzen Eisen. Ganze unter unserem möge|tönen
+(185) [ATREUS, REX MYCENARUM:] Argolica(Adj)(N) tellūs(N) equite(Abl); nōn(Pt) silvae(N) tegant(Prä)(Knj)(Akt)
+(185) [ATREUS, REX MYCENARUM:] argivische Erde vom|Reiter; nicht Wälder mögen|decken
+(186) [ATREUS, REX MYCENARUM:] hostem(A) nec(Kon) altīs(Adj)(Abl) montium(G) strūctae(Per)(Pas)(N) jugīs(Abl)
+(186) [ATREUS, REX MYCENARUM:] den|Feind und|nicht auf|hohen der|Berge errichtete Kämmen
+(187) [ATREUS, REX MYCENARUM:] arcēs(N); relictīs(Per)(Pas)(Abl) bellicum(N) tōtus(Adj)(N) canat(Prä)(Knj)(Akt)
+(187) [ATREUS, REX MYCENARUM:] Burgen; verlassenen Kriegsruf ganz soll|singen
+(188) [ATREUS, REX MYCENARUM:] populus(N) Mycēnīs(Abl), quisquis(Pr)(N) invīsum(Per)(Pas)(A) caput(N)
+(188) [ATREUS, REX MYCENARUM:] das|Volk in|Mykene, wer|auch|immer verhassten Kopf
+(189) [ATREUS, REX MYCENARUM:] tegit(Prä)(Akt) ac(Kon) tuētur(Prä)(Akt), clāde(N) fūnestā(Adj)(Abl) occidat(Prä)(Knj)(Akt).
+(189) [ATREUS, REX MYCENARUM:] bedeckt und schützt, durch|Unheil verderblichem soll|umkommen.
+(190) [ATREUS, REX MYCENARUM:] haec(Pr)(N) ipsa(Pr)(N) pollēns(Prä)(Akt)(N) inclitī(Adj)(G) Pelopis(G) domus(N)
+(190) [ATREUS, REX MYCENARUM:] dieses selbst mächtiges des|berühmten Pelops Haus
+(191) [ATREUS, REX MYCENARUM:] ruat(Prä)(Knj)(Akt) vel(Kon) in(Prp) mē(Pr)(A), dummodo(Kon) in(Prp) frātrem(A) ruat(Prä)(Knj)(Akt).
+(191) [ATREUS, REX MYCENARUM:] stürze oder auf mich, sofern auf den|Bruder stürze.
+(192) [ATREUS, REX MYCENARUM:] Age(Prä)(Imv)(Akt), anime(N), fac(Prä)(Imv)(Akt) quod(Pr)(A) nūlla(Adj)(N) posteritās(N) probet(Prä)(Knj)(Akt),
+(192) [ATREUS, REX MYCENARUM:] voran, Geist, tu was keine Nachwelt billige,
+(193) [ATREUS, REX MYCENARUM:] sed(Kon) nūlla(Adj)(N) taceat(Prä)(Knj)(Akt). Aliquod(Pr)(N) audendum(Fu1)(Pas)(N)(Gdv) est(Prä)(Akt) nefās(N)
+(193) [ATREUS, REX MYCENARUM:] aber keine schweige. irgendein zu|wagendes ist Frevel
+(194) [ATREUS, REX MYCENARUM:] atrōx(Adj)(N), cruentum(Adj)(N), tāle(Adj)(N) quod(Pr)(N) frāter(N) meus(Pr)(N)
+(194) [ATREUS, REX MYCENARUM:] grausam, blutig, solch welches Bruder mein
+(195) [ATREUS, REX MYCENARUM:] suum(Pr)(N) esse(Inf)(Akt) māllet(Imp)(Knj)(Akt). Scelera(A) nōn(Pt) ulcīsceris(Prä)(Akt),
+(195) [ATREUS, REX MYCENARUM:] sein|Eigenes zu|sein lieber|wollte. Verbrechen nicht rächst|du,
+(196) [ATREUS, REX MYCENARUM:] nisi(Kon) vincis(Prä)(Akt). Et(Kon) quid(Pr)(N) esse(Inf)(Akt) tam(Adv) saevum(Adj)(N) potest(Prä)(Akt)
+(196) [ATREUS, REX MYCENARUM:] wenn|nicht siegst. und was zu|sein so grausam kann
+(197) [ATREUS, REX MYCENARUM:] quod(Pr)(N) superet(Prä)(Knj)(Akt) illum(Pr)(A)? numquid(Pt) abjectus(Per)(Pas)(N) jacet(Prä)(Akt)?
+(197) [ATREUS, REX MYCENARUM:] welches übertreffe jenen? etwa weg|geworfen liegt?
+(198) [ATREUS, REX MYCENARUM:] numquid(Pt) secundīs(Adj)(Abl) patitur(Prä)(Akt) in(Prp) rēbus(Abl) modum(A),
+(198) [ATREUS, REX MYCENARUM:] etwa günstigen duldet in den|Dingen Maß,
+(199) [ATREUS, REX MYCENARUM:] fessīs(Adj)(Abl) quiētem(A)? nōvī(Per)(Akt) ego(Pr)(N) ingenium(N) virī(G)
+(199) [ATREUS, REX MYCENARUM:] den|Müden Ruhe? kenne ich Wesen des|Mannes
+(200) [ATREUS, REX MYCENARUM:] indocile(Adj)(N); flectī(Inf)(Pas) nōn(Pt) potest(Prä)(Akt): frangī(Inf)(Pas) potest(Prä)(Akt).
+(200) [ATREUS, REX MYCENARUM:] unbelehrbar; gebogen|zu|werden nicht kann: gebrochen|zu|werden kann.
+(201) [ATREUS, REX MYCENARUM:] proinde(Adv) antequam(Kon) sē(Pr)(A) firmat(Prä)(Akt) aut(Kon) vīrēs(A) parat(Prä)(Akt),
+(201) [ATREUS, REX MYCENARUM:] folglich bevor sich festigt oder Kräfte bereitet,
+(202) [ATREUS, REX MYCENARUM:] petātur(Prä)(Knj)(Pas) ultrō(Adv), nē(Kon) quiēscentem(Prä)(Akt)(A) petat(Prä)(Knj)(Akt).
+(202) [ATREUS, REX MYCENARUM:] werde|angegriffen von|selbst, damit|nicht Ruhenden angreife.
+(203) [ATREUS, REX MYCENARUM:] aut(Kon) perdet(Fu1)(Akt) aut(Kon) perībit(Fu1)(Akt): in(Prp) mediō(Adj)(Abl) est(Prä)(Akt) scelus(N)
+(203) [ATREUS, REX MYCENARUM:] oder wird|verlieren oder wird|zugrunde|gehen: in der|Mitte ist Verbrechen
+(204) [ATREUS, REX MYCENARUM:] positum(Per)(Pas)(N) occupantī(Prä)(Akt)(D). Fāma(N) tē(Pr)(A) populī(G) nihil(Pr)(N)
+(204) [ATREUS, REX MYCENARUM:] hingelegt dem|Ergreifenden. Ruf dich des|Volkes nichts
+(205) [SATELLES:] adversa(Adj)(N) terret(Prä)(Akt)? Maximum(Adj)(Sup)(N) hoc(Pr)(N) rēgnī(G) bonum(N) est(Prä)(Akt),
+(205) [SATELLES:] feindlicher erschreckt? größtes dieses des|Reiches Gut ist,
+(206) [ATREUS, REX MYCENARUM:] quod(Pr)(N) facta(N) dominī(G) cōgitur(Prä)(Pas) populus(N) suī(Pr)(G)
+(206) [ATREUS, REX MYCENARUM:] dass Taten des|Herrn wird|gezwungen Volk seines
+(207) [ATREUS, REX MYCENARUM:] tam(Adv) ferre(Inf)(Akt) quam(Kon) laudāre(Inf)(Akt). Quōs(Pr)(A) cōgit(Prä)(Akt) metus(N)
+(207) [ATREUS, REX MYCENARUM:] so zu|ertragen wie zu|loben. welche zwingt Furcht
+(208) [SATELLES:] laudāre(Inf)(Akt), eōsdem(Pr)(A) reddit(Prä)(Akt) inimīcōs(Adj)(A) metus(N).
+(208) [SATELLES:] zu|loben, dieselben macht Feinde Furcht.
+(209) [SATELLES:] at(Kon) quī(Pr)(N) favōris(G) glōriam(A) vērī(G) petit(Prä)(Akt),
+(209) [SATELLES:] aber der des|Wohlwollens Ruhm des|Wahren sucht,
+(210) [SATELLES:] animō(Abl) magis(Adv) quam(Kon) vōce(Abl) laudārī(Inf)(Pas) volet(Fu1)(Akt).
+(210) [SATELLES:] im|Geist mehr als mit|der|Stimme gelobt|zu|werden wird|wollen.
+(211) [ATREUS, REX MYCENARUM:] Laus(N) vēra(Adj)(N) et(Kon) humilī(Adj)(D) saepe(Adv) contingit(Prä)(Akt) virō(D),
+(211) [ATREUS, REX MYCENARUM:] Lob wahr und demütigen oft fällt|zu dem|Mann,
+(212) [ATREUS, REX MYCENARUM:] nōn(Pt) nisi(Kon) potentī(Adj)(D) falsa(Adj)(N). Quod(Pr)(N) nōlunt(Prä)(Akt) velint(Prä)(Knj)(Akt).
+(212) [ATREUS, REX MYCENARUM:] nicht außer dem|Mächtigen Falsches. was nicht|wollen mögen|wollen.
+(213) [SATELLES:] Rēx(N) velit(Prä)(Knj)(Akt) honesta(Adj)(A): nēmō(Pr)(N) nōn(Pt) eadem(Pr)(A) volet(Fu1)(Akt).
+(213) [SATELLES:] König möge|wollen Ehrenhafte: niemand nicht dieselben wird|wollen.
+(214) [ATREUS, REX MYCENARUM:] Ubicumque(Adv) tantum(Adv) honesta(Adj)(N) dominantī(Prä)(Akt)(D) licent(Prä)(Akt),
+(214) [ATREUS, REX MYCENARUM:] wo|immer nur Ehrenhafte dem|Herrschenden sind|erlaubt,
+(215) [ATREUS, REX MYCENARUM:] precāriō(Adv) rēgnātur(Prä)(Pas). Ubi(Adv) nōn(Pt) est(Prä)(Akt) pudor(N)
+(215) [ATREUS, REX MYCENARUM:] auf|Widerruf wird|geherrscht. wo nicht ist Scham
+(216) [SATELLES:] nec(Kon) cūra(N) jūris(G) sānctitās(N) pietās(N) fidēs(N),
+(216) [SATELLES:] und|nicht Sorge des|Rechts Heiligkeit Frömmigkeit Treue,
+(217) [SATELLES:] īnstabile(Adj)(N) rēgnum(N) est(Prä)(Akt). Sānctitās(N) pietās(N) fidēs(N)
+(217) [SATELLES:] unstet Reich ist. Heiligkeit Frömmigkeit Treue
+(218) [ATREUS, REX MYCENARUM:] prīvāta(Adj)(N) bona(N) sunt(Prä)(Akt); quā(Adv) juvat(Prä)(Akt) rēgēs(N) eant(Prä)(Knj)(Akt).
+(218) [ATREUS, REX MYCENARUM:] private Güter sind; wohin nützt Könige mögen|gehen.
+(219) [SATELLES:] Nefās(N) nocēre(Inf)(Akt) vel(Kon) malō(Adj)(D) frātrī(D) putā(Prä)(Imv)(Akt).
+(219) [SATELLES:] Frevel zu|schaden oder dem|schlechten Bruder halte.
+(220) [ATREUS, REX MYCENARUM:] Fās(N) est(Prä)(Akt) in(Prp) illō(Pr)(Abl) quidquid(Pr)(N) in(Prp) frātre(Abl) est(Prä)(Akt) nefās(N).
+(220) [ATREUS, REX MYCENARUM:] Recht ist in jenem was|auch|immer in dem|Bruder ist Frevel.
+(221) [ATREUS, REX MYCENARUM:] quid(Pr)(N) enim(Pt) relīquit(Per)(Akt) crīmine(Abl) intāctum(Adj)(N) aut(Kon) ubī(Adv)
+(221) [ATREUS, REX MYCENARUM:] was denn ließ|zurück durch|das|Verbrechen unberührt oder wo
+(222) [ATREUS, REX MYCENARUM:] scelerī(D) pepercit(Per)(Akt)? conjugem(A) stuprō(Abl) abstulit(Per)(Akt)
+(222) [ATREUS, REX MYCENARUM:] dem|Verbrechen verschonte? Ehefrau durch|Unzucht entzog
+(223) [ATREUS, REX MYCENARUM:] rēgnumque(N)(Kon) fūrtō(Abl): specimen(N) antīquum(Adj)(N) imperī(G)
+(223) [ATREUS, REX MYCENARUM:] Reich|und durch|Diebstahl: Muster altes der|Herrschaft
+(224) [ATREUS, REX MYCENARUM:] fraude(Abl) est(Prä)(Akt) adeptus(Per)(Pas)(N), fraude(Abl) turbāvit(Per)(Akt) domum(A).
+(224) [ATREUS, REX MYCENARUM:] durch|List ist erlangt, durch|List erschütterte Haus.
+(225) [ATREUS, REX MYCENARUM:] est(Prä)(Akt) Pelopis(G) altīs(Adj)(Abl) nōbile(Adj)(N) in(Prp) stabulīs(Abl) pecus(N),
+(225) [ATREUS, REX MYCENARUM:] ist des|Pelops hohen edel in Ställen Vieh,
+(226) [ATREUS, REX MYCENARUM:] arcānus(Adj)(N) ariēs(N), ductor(N) opulentī(Adj)(G) gregis(G),
+(226) [ATREUS, REX MYCENARUM:] geheim Widder, Führer des|reichen der|Herde,
+(227) [ATREUS, REX MYCENARUM:] cujus(Pr)(G) per(Prp) omne(Adj)(A) corpus(A) effūsō(Per)(Pas)(Abl) coma(Abl)
+(227) [ATREUS, REX MYCENARUM:] dessen durch das|ganze Körper mit|ausgegossenem Haar
+(228) [ATREUS, REX MYCENARUM:] dēpendet(Prä)(Akt) aurō(Abl), cujus(Pr)(G) ē(Prp) tergō(Abl) novī(Adj)(N)
+(228) [ATREUS, REX MYCENARUM:] hängt|herab mit|Gold, dessen aus Rücken neue
+(229) [ATREUS, REX MYCENARUM:] aurāta(Per)(Pas)(A) rēgēs(N) scēptra(A) Tantalicī(Adj)(N) gerunt(Prä)(Akt);
+(229) [ATREUS, REX MYCENARUM:] vergoldete Könige Zepter Tantalische tragen;
+(230) [ATREUS, REX MYCENARUM:] possessor(N) hujus(Pr)(G) rēgnat(Prä)(Akt), hunc(Pr)(A) tantae(Adj)(G) domūs(G)
+(230) [ATREUS, REX MYCENARUM:] Besitzer dieses herrscht, diesen so|großen des|Hauses
+(231) [ATREUS, REX MYCENARUM:] fortūna(N) sequitur(Prä)(Akt). Tūta(Adj)(N) sēpositā(Per)(Pas)(Abl) sacer(Adj)(N)
+(231) [ATREUS, REX MYCENARUM:] Glück folgt. sicher abgesondert geweiht
+(232) [ATREUS, REX MYCENARUM:] in(Prp) parte(Abl) carpit(Prä)(Akt) prāta(A), quae(Pr)(N) clūdit(Prä)(Akt) lapis(N)
+(232) [ATREUS, REX MYCENARUM:] in einem|Teil weidet|ab Wiesen, welche schließt Stein
+(233) [ATREUS, REX MYCENARUM:] fātāle(Adj)(N) saxeō(Adj)(Abl) pāscuum(N) mūrō(Abl) tegēns(Prä)(Akt)(N).
+(233) [ATREUS, REX MYCENARUM:] schicksalhaft steinernem Weidegrund mit|Mauer bedeckend.
+(234) [ATREUS, REX MYCENARUM:] hunc(Pr)(A) facinus(N) ingēns(Adj)(N) ausus(Per)(Pas)(N) assūmptā(Per)(Pas)(Abl) in(Prp) scelus(A)
+(234) [ATREUS, REX MYCENARUM:] diesen Frevel gewaltig gewagt|habend mit|aufgenommenem in Verbrechen
+(235) [ATREUS, REX MYCENARUM:] cōnsorte(N)(Abl) nostrī(Pr)(G) perfidus(Adj)(N) thalamī(G) āvehit(Prä)(Akt).
+(235) [ATREUS, REX MYCENARUM:] Gefährtin unseres treulos Ehebetts bringt|fort.
+(236) [ATREUS, REX MYCENARUM:] Hinc(Adv) omne(Adj)(N) clādis(G) mūtuae(Adj)(G) flūxit(Per)(Akt) malum(N):
+(236) [ATREUS, REX MYCENARUM:] von|hier alles des|Untergangs gegenseitigen floß Übel:
+(237) [ATREUS, REX MYCENARUM:] per(Prp) rēgna(A) trepidus(Adj)(N) exul(N) errāvī(Per)(Akt) mea(Pr)(A),
+(237) [ATREUS, REX MYCENARUM:] durch Reiche bebend Verbannter irrte|ich meine,
+(238) [ATREUS, REX MYCENARUM:] pars(N) nūlla(Adj)(N) generis(G) tūta(Adj)(N) ab(Prp) īnsidiīs(Abl) vacat(Prä)(Akt),
+(238) [ATREUS, REX MYCENARUM:] Teil kein des|Geschlechts sicher von Nachstellungen ist|frei,
+(239) [ATREUS, REX MYCENARUM:] corrupta(Per)(Pas)(N) conjūnx(N), imperī(G) quassa(Per)(Pas)(N) est(Prä)(Akt) fidēs(N),
+(239) [ATREUS, REX MYCENARUM:] verdorben Ehegattin, der|Herrschaft erschüttert ist Treue,
+(240) [ATREUS, REX MYCENARUM:] domus(N) aegra(Adj)(N), dubius(Adj)(N) sanguis(N) est(Prä)(Akt) certī(Adj)(G) nihil(Pr)(N)
+(240) [ATREUS, REX MYCENARUM:] Haus krank, zweifelhafter Blut ist der|Gewissheit nichts
+(241) [ATREUS, REX MYCENARUM:] nisi(Kon) frāter(N) hostis(N). Quid(Adv) stupēs(Prä)(Akt)? tandem(Adv) incipe(Prä)(Imv)(Akt)
+(241) [ATREUS, REX MYCENARUM:] außer Bruder Feind. warum staunst|du? endlich beginne
+(242) [ATREUS, REX MYCENARUM:] animōsque(A)(Kon) sūme(Prä)(Imv)(Akt): Tantalum(N) et(Kon) Pelopem(N) aspice(Prä)(Imv)(Akt);
+(242) [ATREUS, REX MYCENARUM:] Mut|und nimm: Tantalus und Pelops blicke|an;
+(243) [ATREUS, REX MYCENARUM:] ad(Prp) haec(Pr)(A) manūs(N) exempla(N) poscuntur(Prä)(Pas) meae(Pr)(N).
+(243) [ATREUS, REX MYCENARUM:] zu diesen Hände Beispiele werden|verlangt meine.
+(244) [ATREUS, REX MYCENARUM:] profāre(Prä)(Imv)(Akt), dīrum(Adj)(A) quā(Pr)(Abl) caput(A) mactem(Prä)(Knj)(Akt) viā(N)(Abl).
+(244) [ATREUS, REX MYCENARUM:] verkünde, schreckliches auf|welchem Kopf möge|ich|schlachten Weg.
+(245) [SATELLES:] Ferrō(N)(Abl) perēmptus(Per)(Pas)(N) spīritum(A) inimīcum(Adj)(A) expuat(Prä)(Knj)(Akt).
+(245) [SATELLES:] mit|dem|Eisen getötet Atem feindlichen möge|er|ausspucken.
+(246) [ATREUS, REX MYCENARUM:] Dē(Prp) fīne(N)(Abl) poenae(G) loqueris(Prä)(Akt); ego(Pr)(N) poenam(A) volō(Prä)(Akt).
+(246) [ATREUS, REX MYCENARUM:] über das|Ende der|Strafe sprichst|du; ich Strafe will.
+(247) [ATREUS, REX MYCENARUM:] perimat(Prä)(Knj)(Akt) tyrannus(N) lēnis(Adj)(N): in(Prp) rēgnō(N)(Abl) meō(Adj)(Abl)
+(247) [ATREUS, REX MYCENARUM:] möge|töten Tyrann milder: in dem|Reich meinem
+(248) [ATREUS, REX MYCENARUM:] mors(N) impetrātur(Prä)(Pas). Nūlla(Adj)(N) tē(Pr)(A) pietās(N) movet(Prä)(Akt)?
+(248) [ATREUS, REX MYCENARUM:] Tod wird|erlangt. keine dich Frömmigkeit bewegt|??
+(249) [ATREUS, REX MYCENARUM:] Excēde(Prä)(Imv)(Akt), Pietās(V), sī(Kon) modo(Adv) in(Prp) nostrā(Adj)(Abl) domō(N)(Abl)
+(249) [ATREUS, REX MYCENARUM:] weiche, Pietät, wenn nur in unserem Haus
+(250) [ATREUS, REX MYCENARUM:] umquam(Adv) fuistī(Per)(Akt). Dīra(Adj)(N) Furiārum(G) cohors(N)
+(250) [ATREUS, REX MYCENARUM:] jemals bist|du|gewesen. grimmige der|Furien Schar
+(251) [ATREUS, REX MYCENARUM:] discorsque(Adj)(N)(Kon) Erīnȳs(N) veniat(Prä)(Knj)(Akt) et(Kon) geminās(Adj)(A) facēs(A)
+(251) [ATREUS, REX MYCENARUM:] zwieträchtig|und Erinys möge|kommen und doppelte Fackeln
+(252) [ATREUS, REX MYCENARUM:] Megaera(N) quatiēns(Prä)(Akt)(N). Nōn(Pt) satis(Adv) magnō(Adj)(Abl) meum(Adj)(N)
+(252) [ATREUS, REX MYCENARUM:] Megaera schüttelnd. nicht genug großem mein
+(253) [ATREUS, REX MYCENARUM:] ārdet(Prä)(Akt) furōre(N)(Abl) pectus(N), implērī(Inf)(Pas) juvat(Prä)(Akt)
+(253) [ATREUS, REX MYCENARUM:] brennt durch|Raserei Brust, gefüllt|zu|werden gefällt
+(254) [ATREUS, REX MYCENARUM:] majōre(Adj)(Abl)(Kmp) mōnstrō(N)(Abl). Quid(Pr)(N) novī(Adj)(G) rabidus(Adj)(N) struis(Prä)(Akt)?
+(254) [ATREUS, REX MYCENARUM:] größerem Ungeheuer. was Neues rasend schmiedest|du|??
+(255) [ATREUS, REX MYCENARUM:] Nīl(Pr)(N) quod(Pr)(N) dolōris(G) capiat(Prä)(Knj)(Akt) assuētī(Per)(Pas)(G) modum(A);
+(255) [ATREUS, REX MYCENARUM:] nichts was des|Schmerzes fasse|möge gewohnten Maß;
+(256) [ATREUS, REX MYCENARUM:] nūllum(Adj)(N) relinquam(Fu1)(Akt) facinus(A) et(Kon) nūllum(Adj)(N) est(Prä)(Akt) satis(Adv).
+(256) [ATREUS, REX MYCENARUM:] kein werde|ich|übrig|lassen Verbrechen und kein ist genug.
+(257) [SATELLES:] Ferrum(N)? Parum(Adv) est(Prä)(Akt). Quid(Pr)(N) ignis(N)? Etiamnunc(Adv) parum(Adv) est(Prä)(Akt).
+(257) [SATELLES:] Eisen? zu|wenig ist. was Feuer? noch|jetzt zu|wenig ist.
+(258) [SATELLES:] Quōnam(Pr)(Abl) ergo(Pt) tēlō(N)(Abl) tantus(Adj)(N) ūtētur(Prä)(Knj)(Akt) dolor(N)?
+(258) [SATELLES:] mit|welchem also Waffe so|großer möge|er|gebrauchen Schmerz?
+(259) [ATREUS, REX MYCENARUM:] Ipsō(Adj)(Abl) Thyestē(N)(Abl). Majus(Adj)(N)(Kmp) hoc(Pr)(N) īrā(N)(Abl) est(Prä)(Akt) malum(N).
+(259) [ATREUS, REX MYCENARUM:] durch|den|selbst Thyestes. größeres dieses durch|Zorn ist Übel.
+(260) [ATREUS, REX MYCENARUM:] Fateor(Prä)(Akt). Tumultus(N) pectora(A) attonitus(Per)(Pas)(N) quatit(Prä)(Akt)
+(260) [ATREUS, REX MYCENARUM:] ich|gestehe. Aufruhr Brüste betäubt erschüttert
+(261) [ATREUS, REX MYCENARUM:] penitusque(Adv)(Kon) volvit(Prä)(Akt); rapior(Prä)(Pas) et(Kon) quō(Adv) nesciō(Prä)(Akt),
+(261) [ATREUS, REX MYCENARUM:] tief|und wälzt; werde|ich|fortgerissen und wohin weiß|ich|nicht,
+(262) [ATREUS, REX MYCENARUM:] sed(Kon) rapior(Prä)(Pas). Īmō(Adj)(Abl) mūgit(Prä)(Akt) ē(Prp) fundō(N)(Abl) solum(N),
+(262) [ATREUS, REX MYCENARUM:] aber werde|ich|fortgerissen. tiefsten brüllt aus dem|Grund Boden,
+(263) [ATREUS, REX MYCENARUM:] tonat(Prä)(Akt) diēs(N) serēnus(Adj)(N) ac(Kon) tōtīs(Adj)(Abl) domus(N)
+(263) [ATREUS, REX MYCENARUM:] donnert Tag heiterer und ganzen Haus
+(264) [ATREUS, REX MYCENARUM:] ut(Kon) frācta(Per)(Pas)(N) tēctīs(N)(Abl) crepuit(Per)(Akt) et(Kon) mōtī(Per)(Pas)(N) larēs(N)
+(264) [ATREUS, REX MYCENARUM:] so|dass zerbrochen mit|den|Dächern geknackt|hat und bewegte Hausgötter
+(265) [ATREUS, REX MYCENARUM:] vertēre(Per)(Akt) vultum(A): fīat(Prä)(Knj)(Akt) hoc(Pr)(N), fīat(Prä)(Knj)(Akt) nefās(N)
+(265) [ATREUS, REX MYCENARUM:] wandten das|Antlitz: möge|geschehen dieses, möge|geschehen Frevel
+(266) [ATREUS, REX MYCENARUM:] quod(Pr)(N), dī(V), timētis(Prä)(Akt). Facere(Inf)(Akt) quid(Pr)(N) tandem(Adv) parās(Prä)(Akt)?
+(266) [ATREUS, REX MYCENARUM:] was, ihr|Götter, fürchtet|ihr. zu|tun was denn bereitest|du?
+(267) [ATREUS, REX MYCENARUM:] Nescio(Prä)(Akt) quid(Pr)(N) animus(N) majus(Adj)(N)(Kmp) et(Kon) solitō(Adj)(Abl) amplius(Adv)(Kmp)
+(267) [ATREUS, REX MYCENARUM:] ich|weiß|nicht was Geist größeres und als|gewohnt mehr
+(268) [ATREUS, REX MYCENARUM:] suprāque(Prp)(Kon) fīnēs(A) mōris(G) hūmānī(Adj)(G) tumet(Prä)(Akt)
+(268) [ATREUS, REX MYCENARUM:] über|und Grenzen der|Sitte menschlichen schwillt
+(269) [ATREUS, REX MYCENARUM:] īnstatque(Prä)(Akt)(Kon) pigrīs(Adj)(Abl) manibus(N)(Abl); haud(Adv) quid(Pr)(N) sit(Prä)(Knj)(Akt) sciō(Prä)(Akt),
+(269) [ATREUS, REX MYCENARUM:] drängt|und trägen Händen; keineswegs was sei weiß|ich,
+(270) [ATREUS, REX MYCENARUM:] sed(Kon) grande(Adj)(N) quiddam(Pr)(N) est(Prä)(Akt). Ita(Adv) sit(Prä)(Knj)(Akt). Hoc(Pr)(N), anime(V), occupā(Prä)(Imv)(Akt),
+(270) [ATREUS, REX MYCENARUM:] aber großes etwas ist. so sei. dies, Geist, ergreife,
+(271) [ATREUS, REX MYCENARUM:] dignum(Adj)(N) est(Prä)(Akt) Thyestē(N)(Abl) facinus(N) et(Kon) dignum(Adj)(N) Atreō(N)(Abl),
+(271) [ATREUS, REX MYCENARUM:] würdig ist des|Thyestes Verbrechen und würdig des|Atreus,
+(272) [ATREUS, REX MYCENARUM:] quod(Pr)(N) uterque(Pr)(N) faciat(Prä)(Knj)(Akt). Vīdit(Per)(Akt) īnfandās(Adj)(A) domus(N)
+(272) [ATREUS, REX MYCENARUM:] was jeder möge|tun. sah unsagbare Haus
+(273) [ATREUS, REX MYCENARUM:] Odrysīa(Adj)(A) mēnsās(A); fateor(Prä)(Akt), immāne(Adj)(N) est(Prä)(Akt) scelus(N),
+(273) [ATREUS, REX MYCENARUM:] odrysische Tische; ich|gestehe, ungeheuer ist Verbrechen,
+(274) [ATREUS, REX MYCENARUM:] sed(Kon) occupātum(Per)(Pas)(N); majus(Adj)(N)(Kmp) hōc(Pr)(N) aliquid(Pr)(N) dolor(N)
+(274) [ATREUS, REX MYCENARUM:] doch vorweggenommen; größeres dieses etwas Schmerz
+(275) [ATREUS, REX MYCENARUM:] inveniat(Prä)(Knj)(Akt). Animum(A) Daulis(N) īnspīrā(Prä)(Imv)(Akt) parēns(V)
+(275) [ATREUS, REX MYCENARUM:] möge|finden. Sinn daulische hauche|ein Mutter
+(276) [ATREUS, REX MYCENARUM:] sororque(V)(Kon); causa(N) est(Prä)(Akt) similis(Adj)(N); assiste(Prä)(Imv)(Akt) et(Kon) manum(A)
+(276) [ATREUS, REX MYCENARUM:] Schwester|und; Grund ist ähnlich; steh|bei und Hand
+(277) [ATREUS, REX MYCENARUM:] impelle(Prä)(Imv)(Akt) nostram(Adj)(A). Līberōs(A) avidus(Adj)(N) pater(N)
+(277) [ATREUS, REX MYCENARUM:] stoße|an unsere. Kinder gieriger Vater
+(278) [ATREUS, REX MYCENARUM:] gaudēnsque(Prä)(Akt)(N)(Kon) laceret(Prä)(Knj)(Akt) et(Kon) suōs(Adj)(A) artūs(A) edat(Prä)(Knj)(Akt).
+(278) [ATREUS, REX MYCENARUM:] sich|freuend|und möge|zerreißen und seine Glieder möge|essen.
+(279) [ATREUS, REX MYCENARUM:] bene(Adv) est(Prä)(Akt), abundē(Adv) est(Prä)(Akt): hic(Pr)(N) placet(Prä)(Akt) poenae(D) modus(N)
+(279) [ATREUS, REX MYCENARUM:] gut ist, reichlich ist: dies gefällt der|Strafe Maß
+(280) [ATREUS, REX MYCENARUM:] tantīsper(Adv). Ubinam(Adv) est(Prä)(Akt)? Tam(Adv) diū(Adv) cūr(Adv) innocēns(Adj)(N)
+(280) [ATREUS, REX MYCENARUM:] so|lange. wo|denn ist|?? so lange warum unschuldig
+(281) [ATREUS, REX MYCENARUM:] versātur(Prä)(Pas) Atreus(N)? tōta(Adj)(N) jam(Adv) ante(Prp) oculōs(A) meōs(Adj)(A)
+(281) [ATREUS, REX MYCENARUM:] treibt|sich|um Atreus? ganz schon vor Augen meinen
+(282) [ATREUS, REX MYCENARUM:] imāgo(N) caedis(G) errat(Prä)(Akt), ingesta(Per)(Pas)(N) orbitās(N)
+(282) [ATREUS, REX MYCENARUM:] Bild der|Tötung irrt, eingebracht Kinderlosigkeit
+(283) [ATREUS, REX MYCENARUM:] in(Prp) ōra(A) patris(G); anime(V), quid(Pr)(N) rūrsus(Adv) timēs(Prä)(Akt)
+(283) [ATREUS, REX MYCENARUM:] in Mund des|Vaters; Geist, was wieder fürchtest|du
+(284) [ATREUS, REX MYCENARUM:] et(Kon) ante(Prp) rem(A) subsīdis(Prä)(Akt)? Audendum(Fu1)(Pas)(N)(Gdv) est(Prä)(Akt), age(Prä)(Imv)(Akt)!
+(284) [ATREUS, REX MYCENARUM:] und vor die|Sache weichst|du|zurück? zu|wagen ist, voran!
+(285) [ATREUS, REX MYCENARUM:] quod(Pr)(N) est(Prä)(Akt) in(Prp) istō(Adj)(Abl) scelere(N)(Abl) praecipuum(Adj)(N) nefās(N),
+(285) [ATREUS, REX MYCENARUM:] was ist in diesem Verbrechen das|besonders Frevel,
+(286) [ATREUS, REX MYCENARUM:] hoc(Pr)(N) ipse(Pr)(N) faciet(Fu1)(Akt). Sed(Kon) quibus(Pr)(Abl) captus(Per)(Pas)(N) dolīs(N)(Abl)
+(286) [ATREUS, REX MYCENARUM:] dieses selbst wird|er|tun. aber durch|welche gefangen Ränke
+(287) [SATELLES:] nostrōs(Adj)(A) dabit(Fu1)(Akt) perductus(Per)(Pas)(N) in(Prp) laqueōs(A) pedem(A)?
+(287) [SATELLES:] unsere wird|er|geben hingeführt in Schlingen Fuß|??
+(288) [SATELLES:] inimīca(Adj)(N) crēdit(Prä)(Akt) cūncta(Adj)(N). Nōn(Pt) poterat(Imp)(Akt) capī(Inf)(Pas),
+(288) [SATELLES:] feindlich glaubt|er alles. nicht konnte gefasst|werden,
+(289) [ATREUS, REX MYCENARUM:] nisi(Kon) capere(Inf)(Akt) vellet(Imp)(Knj)(Akt). Rēgna(A) nunc(Adv) spērat(Prä)(Akt) mea(Adj)(A):
+(289) [ATREUS, REX MYCENARUM:] wenn|nicht zu|fassen wollte. Reiche jetzt hofft meine:
+(290) [ATREUS, REX MYCENARUM:] hāc(Pr)(Abl) spē(N)(Abl) minantī(Prä)(Akt)(D) fulmen(N) occurret(Fu1)(Akt) Jovī(D),
+(290) [ATREUS, REX MYCENARUM:] durch|dies Hoffnung drohendem Blitz wird|entgegenlaufen dem|Jupiter,
+(291) [ATREUS, REX MYCENARUM:] hāc(Pr)(Abl) spē(N)(Abl) subībit(Fu1)(Akt) gurgitis(G) tumidī(Adj)(G) minās(A)
+(291) [ATREUS, REX MYCENARUM:] durch|dies Hoffnung wird|er|unterziehen des|Strudels schwellenden Drohungen
+(292) [ATREUS, REX MYCENARUM:] dubiumque(Adj)(N)(Kon) Libycae(Adj)(G) Syrtis(G) intrābit(Fu1)(Akt) fretum(A),
+(292) [ATREUS, REX MYCENARUM:] unsicheren|und der|libyschen Syrte wird|er|betreten Meeresarm,
+(293) [ATREUS, REX MYCENARUM:] hāc(Pr)(Abl) spē(N)(Abl), quod(Pr)(N) esse(Inf)(Akt) maximum(Adj)(N)(Sup) rētur(Prä)(Akt) malum(N),
+(293) [ATREUS, REX MYCENARUM:] durch|dies Hoffnung, was sein größtes gilt Übel,
+(294) [ATREUS, REX MYCENARUM:] frātrem(A) vidēbit(Fu1)(Akt). Quis(Pr)(N) fidem(A) pācis(G) dabit(Fu1)(Akt)?
+(294) [ATREUS, REX MYCENARUM:] den|Bruder wird|sehen. wer Treue des|Friedens wird|geben?
+(295) [SATELLES:] cui(Pr)(D) tanta(Adj)(A) crēdet(Fu1)(Akt)? Crēdula(Adj)(N) est(Prä)(Akt) spēs(N) improba(Adj)(N).
+(295) [SATELLES:] wem so|viel wird|glauben? leichtgläubig ist Hoffnung schlimme.
+(296) [ATREUS, REX MYCENARUM:] nātīs(D) tamen(Pt) mandāta(A) quae(Pr)(N) patruō(D) ferant(Prä)(Knj)(Akt)
+(296) [ATREUS, REX MYCENARUM:] den|Kindern doch Aufträge die dem|Onkel tragen|mögen
+(297) [ATREUS, REX MYCENARUM:] dabimus(Fu1)(Akt): relictīs(Per)(Pas)(Abl) exul(N) hospitiīs(Abl) vagus(Adj)(N)
+(297) [ATREUS, REX MYCENARUM:] werden|geben: verlassenen Verbannter Herbergen umherirrend
+(298) [ATREUS, REX MYCENARUM:] rēgnō(Abl) ut(Kon) miseriās(A) mūtet(Prä)(Knj)(Akt) atque(Kon) Argos(A) regat(Prä)(Knj)(Akt)
+(298) [ATREUS, REX MYCENARUM:] durch|ein|Reich damit Leiden tausche|möge und Argos regiere|möge
+(299) [ATREUS, REX MYCENARUM:] ex(Prp) parte(Abl) dominus(N). Sī(Kon) nimis(Adv) dūrus(Adj)(N) precēs(A)
+(299) [ATREUS, REX MYCENARUM:] aus dem|Teil Herr. wenn zu|sehr hart Bitten
+(300) [ATREUS, REX MYCENARUM:] spernet(Fu1)(Akt) Thyestēs(N), līberōs(A) ejus(Pr)(G) rudēs(Adj)(A)
+(300) [ATREUS, REX MYCENARUM:] wird|verschmähen Thyestes, die|Kinder seiner unerfahren
+(301) [ATREUS, REX MYCENARUM:] malīsque(Abl)(Kon) fessōs(Adj)(A) gravibus(Adj)(Abl) et(Kon) facilēs(Adj)(A) capī(Prä)(Inf)(Pas)
+(301) [ATREUS, REX MYCENARUM:] von|Übeln|und erschöpfte schweren und leicht|zu|fassen gefasst|zu|werden
+(302) [ATREUS, REX MYCENARUM:] praecommovēbunt(Fu1)(Akt). Hinc(Adv) vetus(Adj)(N) rēgnī(G) furor(N),
+(302) [ATREUS, REX MYCENARUM:] vorher|auf|wühlen|werden. von|hier alter des|Reiches Wahnsinn,
+(303) [ATREUS, REX MYCENARUM:] illinc(Adv) egestās(N) trīstis(Adj)(N) ac(Kon) dūrus(Adj)(N) labor(N)
+(303) [ATREUS, REX MYCENARUM:] von|dort Not traurige und harte Mühe
+(304) [ATREUS, REX MYCENARUM:] quamvīs(Kon) rigentem(Prä)(Akt)(A) tot(Adj)(Abl) malīs(Abl) subigent(Fu1)(Akt) virum(A).
+(304) [ATREUS, REX MYCENARUM:] obwohl erstarrenden so|vielen Übeln werden|bezwingen den|Mann.
+(305) [SATELLES:] Jam(Adv) tempus(N) illī(Pr)(D) fēcit(Per)(Akt) aerumnās(A) levēs(Adj)(A).
+(305) [SATELLES:] schon Zeit jenem hat|gemacht Mühsale leicht.
+(306) [ATREUS, REX MYCENARUM:] Errās(Prä)(Akt): malōrum(G) sēnsus(N) accrēscit(Prä)(Akt) diē(Abl).
+(306) [ATREUS, REX MYCENARUM:] du|irrst: der|Übel Empfinden wächst mit|dem|Tag.
+(307) [ATREUS, REX MYCENARUM:] leve(Adj)(N) est(Prä)(Akt) miseriās(A) ferre(Prä)(Inf)(Akt), perferre(Prä)(Inf)(Akt) est(Prä)(Akt) grave(Adj)(N).
+(307) [ATREUS, REX MYCENARUM:] leicht ist Leiden zu|tragen, zu|ertragen ist schwer.
+(308) [SATELLES:] Aliōs(Adj)(A) ministrōs(A) cōnsilī(G) trīstis(Adj)(G) lege(Prä)(Imv)(Akt).
+(308) [SATELLES:] andere Helfer des|Planes traurigen wähle.
+(309) [SATELLES:] Pejōra(Adj)(A)(Kmp) juvenēs(N) facile(Adv) praecepta(A) audiunt(Prä)(Akt).
+(309) [SATELLES:] schlechtere Jünglinge leicht Anweisungen hören.
+(310) [SATELLES:] In(Prp) patre(Abl) facient(Fu1)(Akt) quidquid(Pr)(N) in(Prp) patruō(Abl) docēs(Prä)(Akt);
+(310) [SATELLES:] in dem|Vater werden|tun was|auch|immer in dem|Onkel lehrst;
+(311) [SATELLES:] saepe(Adv) in(Prp) magistrum(A) scelera(N) rediērunt(Per)(Akt) sua(Adj)(N).
+(311) [SATELLES:] oft gegen den|Lehrer Verbrechen kehrten|zurück ihre.
+(312) [ATREUS, REX MYCENARUM:] Ut(Kon) nēmo(Pr)(N) doceat(Prä)(Knj)(Akt) fraudis(G) et(Kon) sceleris(G) viās(A),
+(312) [ATREUS, REX MYCENARUM:] damit niemand lehre|möge des|Betrugs und des|Verbrechens Wege,
+(313) [ATREUS, REX MYCENARUM:] rēgnum(N) docēbit(Fu1)(Akt). Nē(Kon) malī(Adj)(N) fīant(Prä)(Knj)(Akt) timēs(Prä)(Akt)?
+(313) [ATREUS, REX MYCENARUM:] das|Reich wird|lehren. dass böse werden|mögen fürchtest|du?
+(314) [ATREUS, REX MYCENARUM:] nāscuntur(Prä)(Pas). Istud(Pr)(N) quod(Pr)(A) vocās(Prä)(Akt) saevum(Adj)(A) asperum(Adj)(A),
+(314) [ATREUS, REX MYCENARUM:] werden|geboren. jenes was nennst grausam rau,
+(315) [ATREUS, REX MYCENARUM:] agīque(Prä)(Inf)(Pas)(Kon) dūrē(Adv) crēdis(Prä)(Akt) et(Kon) nimium(Adv) impiē(Adv),
+(315) [ATREUS, REX MYCENARUM:] getrieben|zu|werden|und hart glaubst und zu|sehr frevelhaft,
+(316) [ATREUS, REX MYCENARUM:] fortasse(Adv) et(Kon) illīc(Adv) agitur(Prä)(Pas). Hanc(Pr)(A) fraudem(A) scient(Fu1)(Akt)
+(316) [ATREUS, REX MYCENARUM:] vielleicht und dort wird|betrieben. diese List werden|wissen
+(317) [SATELLES:] nātī(N) parārī(Prä)(Inf)(Pas)? Tacita(Adj)(N) tam(Adv) rudibus(Adj)(D) fidēs(N)
+(317) [SATELLES:] die|Kinder vorbereitet|zu|werden? stillschweigende so den|Unerfahrenen Treue
+(318) [ATREUS, REX MYCENARUM:] nōn(Pt) est(Prä)(Akt) in(Prp) annīs(Abl). Dētegent(Fu1)(Akt) forsan(Adv) dolōs(A):
+(318) [ATREUS, REX MYCENARUM:] nicht ist in den|Jahren. werden|aufdecken vielleicht Ränke:
+(319) [ATREUS, REX MYCENARUM:] tacēre(Prä)(Inf)(Akt) multīs(Adj)(Abl) discitur(Prä)(Pas) vītae(G) malīs(Abl).
+(319) [ATREUS, REX MYCENARUM:] schweigen durch|viele wird|gelernt des|Lebens Übeln.
+(320) [SATELLES:] Ipsōsne(Pr)(A)(Pt), per(Prp) quōs(Pr)(A) fallere(Prä)(Inf)(Akt) alium(A) cōgitās(Prä)(Akt),
+(320) [SATELLES:] sie|selbst|?, durch die täuschen einen|anderen denkst,
+(321) [SATELLES:] fallēs(Fu1)(Akt)? Ut(Kon) ipsī(Pr)(N) crīmine(Abl) et(Kon) culpā(Abl) vacent(Prä)(Knj)(Akt).
+(321) [SATELLES:] wirst|täuschen? damit sie|selbst von|dem|Verbrechen und von|der|Schuld frei|seien.
+(322) [ATREUS, REX MYCENARUM:] quid(Pr)(N) enim(Pt) necesse(Adj)(N) est(Prä)(Akt) līberōs(A) scelerī(D) meō(Adj)(D)
+(322) [ATREUS, REX MYCENARUM:] was denn nötig ist die|Kinder dem|Verbrechen meinem
+(323) [ATREUS, REX MYCENARUM:] īnserere(Prä)(Inf)(Akt)? per(Prp) nōs(Pr)(A) odia(N) sē(Pr)(A) nostra(Adj)(N) explicent(Prä)(Knj)(Akt).
+(323) [ATREUS, REX MYCENARUM:] einfügen? durch uns Feindschaften sich unsere entfalten|mögen.
+(324) [ATREUS, REX MYCENARUM:] male(Adv) agis(Prä)(Akt), recēdis(Prä)(Akt), anime(V)! Sī(Kon) parcis(Prä)(Akt) tuīs(Adj)(D),
+(324) [ATREUS, REX MYCENARUM:] schlecht handelst, weichst|zurück, Geist! wenn schonst deinen,
+(325) [ATREUS, REX MYCENARUM:] parcēs(Fu1)(Akt) et(Kon) illīs(Pr)(D). Cōnsilī(G) Agamemnōn(N) meī(Adj)(G)
+(325) [ATREUS, REX MYCENARUM:] wirst|schonen und jenen. des|Planes Agamemnon meines
+(326) [ATREUS, REX MYCENARUM:] sciēns(Prä)(Akt)(N) minister(N) fīat(Prä)(Knj)(Akt) et(Kon) frātrī(D) sciēns(Prä)(Akt)(N)
+(326) [ATREUS, REX MYCENARUM:] wissend Diener werde|möge und dem|Bruder wissend
+(327) [ATREUS, REX MYCENARUM:] Menelāus(N) adsit(Prä)(Knj)(Akt). Prōlis(G) incertae(Adj)(G) fidēs(N)
+(327) [ATREUS, REX MYCENARUM:] Menelaos sei|zugegen|möge. der|Nachkommenschaft unsicheren Treue
+(328) [ATREUS, REX MYCENARUM:] ex(Prp) hōc(Pr)(Abl) petātur(Prä)(Knj)(Pas) scelere(Abl): Sī(Kon) bella(A) abnuunt(Prä)(Akt)
+(328) [ATREUS, REX MYCENARUM:] aus diesem werde|erbeten|möge Verbrechen: wenn Kriege lehnen|ab
+(329) [ATREUS, REX MYCENARUM:] et(Kon) gerere(Prä)(Inf)(Akt) nōlunt(Prä)(Akt) odia(A), sī(Kon) patruum(A) vocant(Prä)(Akt),
+(329) [ATREUS, REX MYCENARUM:] und führen wollen|nicht Feindschaften, wenn den|Onkel nennen,
+(330) [ATREUS, REX MYCENARUM:] pater(N) est(Prä)(Akt). Eātur(Prä)(Knj)(Pas)! Multa(N) sed(Kon) trepidus(Adj)(N) solet(Prä)(Akt)
+(330) [ATREUS, REX MYCENARUM:] Vater ist. es|werde|gegangen|möge! vieles aber zitternd pflegt
+(331) [ATREUS, REX MYCENARUM:] dētegere(Prä)(Inf)(Akt) vultus(A), magna(Adj)(N) nōlentem(Prä)(Akt)(A) quoque(Pt)
+(331) [ATREUS, REX MYCENARUM:] aufzudecken Gesichter, große nicht|Wollenden auch
+(332) [ATREUS, REX MYCENARUM:] cōnsilia(N) prōdunt(Prä)(Akt): nesciant(Prä)(Knj)(Akt) quantae(Adj)(G) reī(G)
+(332) [ATREUS, REX MYCENARUM:] Pläne verraten: sollen|nicht|wissen wie|großer Sache
+(333) [ATREUS, REX MYCENARUM:] fīant(Prä)(Knj)(Akt) ministrī(N). Nostra(Adj)(A) tū(Pr)(N) coepta(A) occule(Prä)(Imv)(Akt).
+(333) [ATREUS, REX MYCENARUM:] mögen|werden Diener. unsere du Vorhaben verberg.
+(334) [SATELLES:] Haud(Pt) sum(Prä)(Akt) monendus(Fu1)(Pas)(N)(Gdv): ista(Pr)(N) nostrō(Adj)(Abl) in(Prp) pectore(Abl)
+(334) [SATELLES:] keineswegs bin zu|warnen: dieses unserem in Brust
+(335) [SATELLES:] fidēs(N) timorque(N)(Kon), sed(Kon) magis(Adv) claudet(Fu1)(Akt) fidēs(N).
+(335) [SATELLES:] Treue Furcht|und, aber mehr wird|verschließen Treue.
+=== Chor (glyconics) ===
+(336) [CHORUS:] Tandem(Adv) rēgia(N) nōbilis(Adj)(N),
+(336) [CHORUS:] endlich königliche|Halle vornehme,
+(337) [CHORUS:] antīquī(Adj)(G) genus(N) Īnachī(G),
+(337) [CHORUS:] des|alten Geschlecht des|Inachos,
+(338) [CHORUS:] frātrum(G) composuit(Per)(Akt) minās(A).
+(338) [CHORUS:] der|Brüder hat|beigelegt Drohungen.
+(339) [CHORUS:] Quis(Pr)(N) vōs(Pr)(A) exagitat(Prä)(Akt) furor(N),
+(339) [CHORUS:] welcher euch treibt|auf Wahnsinn,
+(340) [CHORUS:] alternīs(Adj)(Abl) dare(Prä)(Inf)(Akt) sanguinem(A)
+(340) [CHORUS:] abwechselnden geben Blut
+(341) [CHORUS:] et(Kon) scēptrum(A) scelere(Abl) aggredī(Prä)(Inf)(Pas)?
+(341) [CHORUS:] und das|Zepter durch|Verbrechen angreifen?
+(342) [CHORUS:] Nescītis(Prä)(Akt), cupidī(Adj)(V) arcium(G),
+(342) [CHORUS:] ihr|wisst|nicht, Begierige der|Burgen,
+(343) [CHORUS:] rēgnum(N) quō(Pr)(Abl) jaceat(Prä)(Knj)(Akt) locō(Abl).
+(343) [CHORUS:] das|Reich an|welchem liege|möge Ort.
+(344) [CHORUS:] Rēgem(A) nōn(Pt) faciunt(Prä)(Akt) opēs(N),
+(344) [CHORUS:] zum|König nicht machen Reichtümer,
+(345) [CHORUS:] nōn(Pt) vestis(N) Tyriae(Adj)(G) color(N),
+(345) [CHORUS:] nicht das|Gewand tyrischen Farbe,
+(346) [CHORUS:] nōn(Pt) frontis(G) nota(N) rēgia(Adj)(N),
+(346) [CHORUS:] nicht der|Stirn Zeichen königliches,
+(347) [CHORUS:] nōn(Pt) aurō(Abl) nitidae(Adj)(N) trabēs(N):
+(347) [CHORUS:] nicht mit|Gold glänzende Balken:
+(348) [CHORUS:] rēx(N) est(Prä)(Akt) quī(Pr)(N) posuit(Per)(Akt) metūs(A)
+(348) [CHORUS:] König ist der hat|abgelegt Ängste
+(349) [CHORUS:] et(Kon) dīrī(Adj)(G) mala(N) pectoris(G).
+(349) [CHORUS:] und des|schrecklichen Übel des|Herzens.
+(350) [CHORUS:] Quem(Pr)(A) nōn(Pt) ambitiō(N) impotēns(Adj)(N)
+(350) [CHORUS:] den nicht Ehrgeiz maßloser
+(351) [CHORUS:] et(Kon) numquam(Adv) stabilis(Adj)(N) favor(N)
+(351) [CHORUS:] und nie beständige Gunst
+(352) [CHORUS:] vulgī(G) praecipitis(Adj)(G) movet(Prä)(Akt),
+(352) [CHORUS:] des|Volkes überstürzten bewegt,
+(353) [CHORUS:] nōn(Pt) quidquid(Pr)(N) fodit(Prä)(Akt) Occidēns(N)
+(353) [CHORUS:] nicht was|auch|immer gräbt|aus der|Westen
+(354) [CHORUS:] aut(Kon) undā(Abl) Tagus(N) aureā(Adj)(Abl)
+(354) [CHORUS:] oder mit|der|Woge Tagus goldenen
+(355) [CHORUS:] clārō(Adj)(Abl) dēvehit(Prä)(Akt) alveō(Abl),
+(355) [CHORUS:] mit|hellem führt|hinab Bett,
+(356) [CHORUS:] nōn(Pt) quidquid(Pr)(N) Libycīs(Adj)(Abl) terit(Prä)(Akt)
+(356) [CHORUS:] nicht was|auch|immer mit|libyschen reibt|ab
+(357) [CHORUS:] fervēns(Prä)(Akt)(N) ārea(N) messibus(Abl),
+(357) [CHORUS:] glühend Tenne mit|Ernten,
+(358) [CHORUS:] quem(Pr)(A) nōn(Pt) concutiet(Fu1)(Akt) cadēns(Prä)(Akt)(N)
+(358) [CHORUS:] wen nicht wird|erschüttern fallend
+(359) [CHORUS:] oblīquī(Adj)(G) via(N) fulminis(G),
+(359) [CHORUS:] des|schrägen Weg des|Blitzes,
+(360) [CHORUS:] nōn(Pt) Eurus(N) rapiēns(Prä)(Akt)(N) mare(N)
+(360) [CHORUS:] nicht Eurus reißend Meer
+(361) [CHORUS:] aut(Kon) saevō(Adj)(Abl) rabidus(Adj)(N) fretō(Abl)
+(361) [CHORUS:] oder mit|wildem rasend Meeresarm
+(362) [CHORUS:] ventōsī(Adj)(G) tumor(N) Hadriae(G),
+(362) [CHORUS:] des|windigen Schwellung der|Adria,
+(363) [CHORUS:] quem(Pr)(A) nōn(Pt) lancea(N) mīlitis(G),
+(363) [CHORUS:] wen nicht der|Speer des|Soldaten,
+(364) [CHORUS:] nōn(Pt) strictus(Per)(Pas)(N) domuit(Per)(Akt) chalybs(N),
+(364) [CHORUS:] nicht gezogen hat|bezwungen Stahl,
+(365) [CHORUS:] quī(Pr)(N) tūtō(Adj)(Abl) positus(Per)(Pas)(N) locō(Abl)
+(365) [CHORUS:] der in|sicherem gestellt Ort
+(366) [CHORUS:] īnfrā(Prp) sē(Pr)(A) videt(Prä)(Akt) omnia(Pr)(A)
+(366) [CHORUS:] unter sich sieht alles
+(367) [CHORUS:] occurritque(Prä)(Akt)(Kon) suō(Adj)(D) libēns(Prä)(Akt)(N)
+(367) [CHORUS:] läuft|entgegen|und seinem gern
+(368) [CHORUS:] fātō(D) nec(Kon) queritur(Prä)(Pas) morī(Inf)(Akt).
+(368) [CHORUS:] dem|Schicksal und|nicht beklagt zu|sterben.
+(369) [CHORUS:] Rēgēs(N) conveniant(Prä)(Knj)(Akt) licet(Pt)
+(369) [CHORUS:] Könige mögen|zusammenkommen sei|erlaubt
+(370) [CHORUS:] quī(Pr)(N) sparsōs(Per)(Pas)(A) agitant(Prä)(Akt) Dahās(A),
+(370) [CHORUS:] die zerstreute treiben Dahaer,
+(371) [CHORUS:] quī(Pr)(N) rubrī(Adj)(G) vada(N) lītoris(G)
+(371) [CHORUS:] die des|roten Untiefen der|Küste
+(372) [CHORUS:] et(Kon) gemmīs(N)(Abl) mare(N) lūcidīs(Adj)(Abl)
+(372) [CHORUS:] und mit|Edelsteinen Meer glänzenden
+(373) [CHORUS:] lātē(Adv) sanguineum(Adj)(A) tenent(Prä)(Akt),
+(373) [CHORUS:] weit blutrotes halten,
+(374) [CHORUS:] aut(Kon) quī(Pr)(N) Caspia(Adj)(A) fortibus(Adj)(Abl)
+(374) [CHORUS:] oder die kaspische starken
+(375) [CHORUS:] reclūdunt(Prä)(Akt) juga(N) Sarmatīs(D),
+(375) [CHORUS:] öffnen Pässe den|Sarmaten,
+(376) [CHORUS:] certet(Prä)(Knj)(Akt) Dānuviī(G) vadum(N)
+(376) [CHORUS:] möge|wetteifern der|Donau Furt
+(377) [CHORUS:] audet(Prä)(Akt) quī(Pr)(N) pedes(N) ingredī(Inf)(Akt)
+(377) [CHORUS:] wagt der zu|Fuß einzugehen
+(378) [CHORUS:] et(Kon) (quōcumque(Pr)(Abl) locō(N)(Abl) jacent(Prä)(Akt))
+(378) [CHORUS:] und (wo|auch|immer Ort liegen)
+(379) [CHORUS:] Sērēs(N) vellere(N)(Abl) nōbilēs(Adj)(N),
+(379) [CHORUS:] Serer durch|das|Vlies berühmte,
+(380) [CHORUS:] mēns(N) rēgnum(N) bona(Adj)(A) possidet(Prä)(Akt).
+(380) [CHORUS:] Geist Reich Güter besitzt.
+(381) [CHORUS:] nīl(Pr)(N) ūllīs(Adj)(Abl) opus(N) est(Prä)(Akt) equīs(Abl),
+(381) [CHORUS:] nichts an|irgendwelchen Bedarf ist an|Pferden,
+(382) [CHORUS:] nīl(Pr)(N) armīs(Abl) et(Kon) inertibus(Adj)(Abl)
+(382) [CHORUS:] nichts an|Waffen und trägen
+(383) [CHORUS:] tēlīs(N)(Abl) quae(Pr)(N) procul(Adv) ingerit(Prä)(Akt)
+(383) [CHORUS:] Geschossen die aus|der|Ferne schleudert|hinein
+(384) [CHORUS:] Parthus(N), cum(Kon) simulat(Prä)(Akt) fugās(A),
+(384) [CHORUS:] der|Parther, wenn täuscht|vor Fluchten,
+(385) [CHORUS:] admōtīs(Per)(Pas)(Abl) nihil(Pr)(N) est(Prä)(Akt) opus(N)
+(385) [CHORUS:] mit|herangebrachten nichts ist nötig
+(386) [CHORUS:] urbēs(A) sternere(Inf)(Akt) māchinīs(Abl)
+(386) [CHORUS:] Städte niederzuwerfen mit|Maschinen
+(387) [CHORUS:] longē(Adv) saxa(N) rotantibus(Prä)(Akt)(Abl).
+(387) [CHORUS:] weit Steine von|drehenden.
+(388) [CHORUS:] Rēx(N) est(Prä)(Akt) quī(Pr)(N) metuet(Fu1)(Akt) nihil(Pr)(A),
+(388) [CHORUS:] König ist der wird|fürchten nichts,
+(389) [CHORUS:] rēx(N) est(Prä)(Akt) quī(Pr)(N) cupiet(Fu1)(Akt) nihil(Pr)(A):
+(389) [CHORUS:] König ist der wird|begehren nichts:
+(390) [CHORUS:] hoc(Pr)(N) rēgnum(N) sibi(Pr)(D) quisque(Pr)(N) dat(Prä)(Akt).
+(390) [CHORUS:] dieses Reich sich jeder gibt.
+(391) [CHORUS:] Stet(Prä)(Knj)(Akt) quīcumque(Pr)(N) volet(Fu1)(Akt) potēns(Adj)(N)
+(391) [CHORUS:] stehe werauchimmer wird|wollen mächtig
+(392) [CHORUS:] aulae(G) culmine(N)(Abl) lūbricō(Adj)(Abl):
+(392) [CHORUS:] des|Hofes auf|dem|Gipfel schlüpfrigen:
+(393) [CHORUS:] mē(Pr)(A) dulcis(Adj)(N) saturet(Prä)(Knj)(Akt) quiēs(N);
+(393) [CHORUS:] mich süße sättige Ruhe;
+(394) [CHORUS:] obscūrō(Adj)(Abl) positus(Per)(Pas)(N) locō(Abl)
+(394) [CHORUS:] an|verborgenem gestellt Ort
+(395) [CHORUS:] lēnī(Adj)(Abl) perfruar(Prä)(Pas) ōtiō(N)(Abl),
+(395) [CHORUS:] mit|mildem genieße die|Muße,
+(396) [CHORUS:] nūllīs(Adj)(D) nōta(Per)(Pas)(N) Quirītibus(D)
+(396) [CHORUS:] keinen bekannt den|Quiriten
+(397) [CHORUS:] aetās(N) per(Prp) tacitum(Adj)(A) fluat(Prä)(Knj)(Akt).
+(397) [CHORUS:] Lebenszeit durch das|Schweigen möge|fließen.
+(398) [CHORUS:] Sīc(Adv) cum(Kon) trānsierint(Fu2)(Akt) meī(Pr)(G)
+(398) [CHORUS:] so wenn werden|hinübergegangen|sein meine
+(399) [CHORUS:] nūllō(Adj)(Abl) cum(Prp) strepitū(N)(Abl) diēs(N),
+(399) [CHORUS:] keinem mit Geräusch Tage,
+(400) [CHORUS:] plēbējus(Adj)(N) moriar(Prä)(Knj)(Pas) senex(N).
+(400) [CHORUS:] plebejisch möge|sterben Greis.
+(401) [CHORUS:] illī(Pr)(D) mors(N) gravis(Adj)(N) incubat(Prä)(Akt)
+(401) [CHORUS:] jenem Tod schwer liegt|auf
+(402) [CHORUS:] quī(Pr)(N), nōtus(Per)(Pas)(N) nimis(Adv) omnibus(Pr)(D),
+(402) [CHORUS:] der, bekannt zu|sehr allen,
+(403) [CHORUS:] ignōtus(Adj)(N) moritur(Prä)(Pas) sibī(Pr)(D).
+(403) [CHORUS:] unbekannt stirbt|er sich.
+=== Akt 2 ===
+(404) [THYESTES, FRATER ATREI:] Optāta(Per)(Pas)(A) patriae(G) tēcta(A) et(Kon) Argolicās(Adj)(A) opēs(A)
+(404) [THYESTES, FRATER ATREI:] ersehnte der|Heimat Dächer und argivische Reichtümer
+(405) [THYESTES, FRATER ATREI:] miserīsque(Adj)(D)(Kon) summum(Adj)(Sup)(N) ac(Kon) maximum(Adj)(Sup)(N) exulibus(D) bonum(N),
+(405) [THYESTES, FRATER ATREI:] den|Elenden|und höchstes und größtes den|Verbannten Gut,
+(406) [THYESTES, FRATER ATREI:] trāctum(Per)(Pas)(A) solī(G) nātālis(Adj)(G) et(Kon) patriōs(Adj)(A) deōs(A)
+(406) [THYESTES, FRATER ATREI:] Landstrich des|Bodens des|heimischen und väterliche Götter
+(407) [THYESTES, FRATER ATREI:] (sī(Kon) sunt(Prä)(Akt) tamen(Pt) dī(N)) cerno(Prä)(Akt), Cyclōpum(G) sacrās(Adj)(A)
+(407) [THYESTES, FRATER ATREI:] (wenn sind doch Götter) sehe|ich, der|Kyklopen heilige
+(408) [THYESTES, FRATER ATREI:] turrēs(A), labōre(N)(Abl) majus(Adj)(Kmp)(N) hūmānō(Adj)(Abl) decus(N),
+(408) [THYESTES, FRATER ATREI:] Türme, durch|Arbeit größeres menschlicher Schmuck,
+(409) [THYESTES, FRATER ATREI:] celebrāta(Per)(Pas)(N) juvenī(N)(Abl) stadia(N), per(Prp) quae(Pr)(A) nōbilis(Adj)(N)
+(409) [THYESTES, FRATER ATREI:] gefeierte vom|Jüngling Rennbahnen, durch die berühmter
+(410) [THYESTES, FRATER ATREI:] palmam(A) paternō(Adj)(Abl) nōn(Pt) semel(Adv) currū(Abl) tulī(Per)(Akt).
+(410) [THYESTES, FRATER ATREI:] Siegespalme mit|väterlichem nicht einmal Wagen trug|ich.
+(411) [THYESTES, FRATER ATREI:] occurret(Fu1)(Akt) Argos(N), populus(N) occurret(Fu1)(Akt) frequēns(Adj)(N);
+(411) [THYESTES, FRATER ATREI:] wird|entgegen|eilen Argos, das|Volk wird|entgegen|eilen zahlreich;
+(412) [THYESTES, FRATER ATREI:] sed(Kon) nempe(Pt) et(Kon) Atreus(N). Repete(Prä)(Imv)(Akt) silvestrēs(Adj)(A) fugās(A)
+(412) [THYESTES, FRATER ATREI:] aber nämlich auch Atreus. nimm|wieder|auf waldige Fluchten
+(413) [THYESTES, FRATER ATREI:] saltūsque(A)(Kon) dēnsōs(Adj)(A) potius(Adv) et(Kon) mixtam(Per)(Pas)(A) ferīs(N)(Abl)
+(413) [THYESTES, FRATER ATREI:] Schluchten|und dichte eher und gemischte mit|Tieren
+(414) [THYESTES, FRATER ATREI:] similemque(Adj)(A)(Kon) vītam(A); clārus(Adj)(N) hic(Pr)(N) rēgnī(G) nitor(N)
+(414) [THYESTES, FRATER ATREI:] ähnliche|und das|Leben; glänzend hier des|Reiches Glanz
+(415) [THYESTES, FRATER ATREI:] fulgōre(N)(Abl) nōn(Pt) est(Prä)(Akt) quod(Pr)(N) oculōs(A) falsō(Adj)(Abl) auferat(Prä)(Knj)(Akt);
+(415) [THYESTES, FRATER ATREI:] mit|Glanz nicht ist was die|Augen mit|trügerischem weg|reiße;
+(416) [THYESTES, FRATER ATREI:] cum(Kon) quod(Pr)(N) datur(Prä)(Pas) spectābis(Fu1)(Akt), et(Kon) dantem(Prä)(Akt)(A) aspice(Prä)(Imv)(Akt).
+(416) [THYESTES, FRATER ATREI:] wenn was gegeben|wird wirst|betrachten, und den|Gebenden blicke|an.
+(417) [THYESTES, FRATER ATREI:] modo(Adv) inter(Prp) illa(Pr)(A), quae(Pr)(N) putant(Prä)(Akt) cūnctī(Pr)(N) aspera(Adj)(A),
+(417) [THYESTES, FRATER ATREI:] soeben unter jene, welche halten alle rauh,
+(418) [THYESTES, FRATER ATREI:] fortis(Adj)(N) fuī(Per)(Akt) laetusque(Adj)(N)(Kon); nunc(Adv) contrā(Prp) in(Prp) metūs(A)
+(418) [THYESTES, FRATER ATREI:] tapfer war|ich froh|und; jetzt gegen in Ängste
+(419) [THYESTES, FRATER ATREI:] revolvor(Prä)(Pas); animus(N) haeret(Prä)(Akt) ac(Kon) retrō(Adv) cupit(Prä)(Akt)
+(419) [THYESTES, FRATER ATREI:] werde|zurück|gewälzt; der|Geist haftet und rückwärts begehrt
+(420) [THYESTES, FRATER ATREI:] corpus(A) referre(Inf)(Akt), moveo(Prä)(Akt) nōlentem(Prä)(Akt)(A) gradum(A).
+(420) [THYESTES, FRATER ATREI:] den|Körper zurück|zu|tragen, bewege|ich nicht|willigen Schritt.
+(421) [TANTALI UMBRA:] Pigrō(Adj)(Abl) (quid(Pr)(N) hoc(Pr)(N) est(Prä)(Akt)? ) genitor(N) incessū(N)(Abl) stupet(Prä)(Akt)
+(421) [TANTALI UMBRA:] mit|trägem (was dies ist? ) der|Vater im|Gang erstarrt
+(422) [TANTALI UMBRA:] vultumque(A)(Kon) versat(Prä)(Akt) sēque(Pr)(A)(Kon) in(Prp) incertō(Adj)(Abl) tenet(Prä)(Akt).
+(422) [TANTALI UMBRA:] das|Antlitz|und wendet sich|und in Ungewissem hält.
+(423) [THYESTES, FRATER ATREI:] Quid(Adv), anime(V), pendēs(Prä)(Akt), quidve(Pr)(N)(Kon) cōnsilium(N) diū(Adv)
+(423) [THYESTES, FRATER ATREI:] warum, o|Geist, hängst, was|und Plan lange
+(424) [THYESTES, FRATER ATREI:] tam(Adv) facile(Adv) torquēs(Prä)(Akt)? rēbus(N)(Abl) incertissimīs(Adj)(Sup)(Abl),
+(424) [THYESTES, FRATER ATREI:] so leicht drehst? in|Dingen sehr|unsicheren,
+(425) [THYESTES, FRATER ATREI:] frātrī(D) atque(Kon) rēgnō(D), crēdis(Prä)(Akt) ac(Kon) metuis(Prä)(Akt) mala(A)
+(425) [THYESTES, FRATER ATREI:] dem|Bruder und der|Herrschaft, vertraust und fürchtest Übel
+(426) [THYESTES, FRATER ATREI:] jam(Adv) victa(Per)(Pas)(A), jam(Adv) mānsuētā(Per)(Pas)(Abl) et(Kon) aerumnās(A) fugis(Prä)(Akt)
+(426) [THYESTES, FRATER ATREI:] schon besiegte, schon gezähmtem und Mühsale fliehst
+(427) [THYESTES, FRATER ATREI:] bene(Adv) collocātās(Per)(Pas)(A)? Esse(Inf)(Akt) jam(Adv) miserum(Adj)(A) juvat(Prä)(Akt).
+(427) [THYESTES, FRATER ATREI:] gut angelegt? zu|sein schon elend gefällt.
+(428) [THYESTES, FRATER ATREI:] reflecte(Prä)(Imv)(Akt) gressum(A), dum(Kon) licet(Prä)(Akt), tēque(Pr)(A)(Kon) ēripe(Prä)(Imv)(Akt).
+(428) [THYESTES, FRATER ATREI:] zurück|biege Schritt, solange ist|erlaubt, dich|und heraus|reiß.
+(429) [TANTALI UMBRA:] Quae(Pr)(N) causa(N) cōgit(Prä)(Akt), genitor(V), ā(Prp) patriā(N)(Abl) gradum(A)
+(429) [TANTALI UMBRA:] welche Ursache treibt, Vater, von der|Heimat Schritt
+(430) [TANTALI UMBRA:] referre(Inf)(Akt) vīsā(Per)(Pas)(Abl)? cūr(Adv) bonīs(Adj)(Abl) tantīs(Adj)(Abl) sinum(A)
+(430) [TANTALI UMBRA:] zurück|tragen nach|dem|Gesehenen? warum mit|den|Gütern so|großen Bausch
+(431) [TANTALI UMBRA:] subdūcis(Prä)(Akt)? īrā(N)(Abl) frāter(N) abjectā(Per)(Pas)(Abl) redit(Prä)(Akt)
+(431) [TANTALI UMBRA:] ziehst|du|weg? mit|dem|Zorn der|Bruder weg|geworfenem kehrt|zurück
+(432) [TANTALI UMBRA:] partemque(A)(Kon) rēgnī(G) reddit(Prä)(Akt) et(Kon) lacerae(Adj)(G) domūs(G)
+(432) [TANTALI UMBRA:] Teil|und des|Reiches gibt|zurück und der|zerrissenen des|Hauses
+(433) [TANTALI UMBRA:] compōnit(Prä)(Akt) artūs(A) tēque(Pr)(A)(Kon) restituit(Prä)(Akt) tibī(Pr)(D).
+(433) [TANTALI UMBRA:] fügt|zusammen Glieder dich|und stellt|wieder|her dir.
+(434) [THYESTES, FRATER ATREI:] Causam(A) timōris(G) ipse(Pr)(N) quam(Pr)(A) ignōrō(Prä)(Akt) exigis(Prä)(Akt).
+(434) [THYESTES, FRATER ATREI:] Grund der|Furcht selbst den ich|nicht|kenne forderst|du.
+(435) [THYESTES, FRATER ATREI:] nihil(Pr)(N) timendum(Fu1)(Pas)(A)(Gdv) video(Prä)(Akt), sed(Kon) timeō(Prä)(Akt) tamen(Adv).
+(435) [THYESTES, FRATER ATREI:] nichts zu|fürchtendes sehe|ich, aber fürchte|ich dennoch.
+(436) [THYESTES, FRATER ATREI:] placet(Prä)(Akt) īre(Inf)(Akt), pigrīs(Adj)(Abl) membra(N) sed(Kon) genibus(N)(Abl) labant(Prä)(Akt),
+(436) [THYESTES, FRATER ATREI:] gefällt zu|gehen, den|trägen Glieder aber den|Knien wanken,
+(437) [THYESTES, FRATER ATREI:] aliōque(Adj)(Abl)(Kon) quam(Kon) quō(Pr)(Abl) nītor(Prä)(Akt) abductus(Per)(Pas)(N) feror(Prä)(Pas).
+(437) [THYESTES, FRATER ATREI:] in|ein|anderes|und als wohin ich|strebe weg|geführt werde|getragen.
+(438) [THYESTES, FRATER ATREI:] sīc(Adv) concitātam(Per)(Pas)(A) rēmige(N)(Abl) et(Kon) vēlō(N)(Abl) ratem(A)
+(438) [THYESTES, FRATER ATREI:] so auf|gehetzte durch|den|Ruderer und durch|das|Segel das|Schiff
+(439) [THYESTES, FRATER ATREI:] aestus(N) resistēns(Prä)(Akt)(N) rēmigī(D) et(Kon) vēlō(D) refert(Prä)(Akt).
+(439) [THYESTES, FRATER ATREI:] Brandung widerstehend dem|Ruderer und dem|Segel trägt|zurück.
+(440) [TANTALI UMBRA:] Ēvince(Prä)(Imv)(Akt) quidquid(Pr)(N) obstat(Prä)(Akt) et(Kon) mentem(A) impedit(Prä)(Akt)
+(440) [TANTALI UMBRA:] überwinde was|auch|immer steht|entgegen und den|Sinn hindert
+(441) [TANTALI UMBRA:] reducemque(Adj)(A)(Kon) quanta(Pr)(N) praemia(A) expectent(Prä)(Knj)(Akt) vidē(Prä)(Imv)(Akt).
+(441) [TANTALI UMBRA:] zurück|kehrenden|und wie|große Belohnungen mögen|erwarten sieh.
+(442) [TANTALI UMBRA:] pater(V), potēs(Prä)(Akt) rēgnāre(Inf)(Akt). Cum(Kon) possim(Prä)(Knj)(Akt) morī(Inf)(Akt).
+(442) [TANTALI UMBRA:] Vater, du|kannst herrschen. Da kann|ich sterben.
+(443) [TANTALI UMBRA:] Summa(Adj)(N) est(Prä)(Akt) potestās(N). Nūlla(Adj)(N), sī(Kon) cupiās(Prä)(Knj)(Akt) nihil(Pr)(N).
+(443) [TANTALI UMBRA:] die|höchste ist Macht. keine, wenn du|begehren|mögest nichts.
+(444) [TANTALI UMBRA:] Nātīs(Pr)(D) relinquēs(Fu1)(Akt). Nōn(Pt) capit(Prä)(Akt) rēgnum(N) duōs(Adj)(A).
+(444) [TANTALI UMBRA:] den|Kindern wirst|du|zurücklassen. nicht faßt das|Reich zwei.
+(445) [TANTALI UMBRA:] Miser(Adj)(A) esse(Inf)(Akt) māvult(Prä)(Akt) esse(Inf)(Akt) quī(Pr)(N) fēlīx(Adj)(N) potest(Prä)(Akt)?
+(445) [TANTALI UMBRA:] elend zu|sein bevorzugt zu|sein der glücklich kann?
+(446) [THYESTES, FRATER ATREI:] Mihi(Pr)(D) crēde(Prä)(Imv)(Akt), falsīs(Adj)(Abl) magna(Adj)(N) nōminibus(N)(Abl) placent(Prä)(Akt),
+(446) [THYESTES, FRATER ATREI:] mir glaube, mit|falschen große Namen gefallen|sie,
+(447) [THYESTES, FRATER ATREI:] frūstrā(Adv) timentur(Prä)(Pas) dūra(Adj)(N). Dum(Kon) excelsus(Adj)(N) stetī(Per)(Akt),
+(447) [THYESTES, FRATER ATREI:] vergeblich werden|gefürchtet harte. solange erhaben stand|ich,
+(448) [THYESTES, FRATER ATREI:] numquam(Adv) pavēre(Inf)(Akt) dēstitī(Per)(Akt) atque(Kon) ipsum(Adj)(A) meī(Pr)(G)
+(448) [THYESTES, FRATER ATREI:] niemals zu|fürchten hörte|ich|auf und selbst meines
+(449) [THYESTES, FRATER ATREI:] ferrum(A) timēre(Inf)(Akt) lateris(G). Ō(ij) quantum(Pr)(N) bonum(N) est(Prä)(Akt)
+(449) [THYESTES, FRATER ATREI:] das|Eisen zu|fürchten der|Seite. o wie|großes Gut ist
+(450) [THYESTES, FRATER ATREI:] obstāre(Inf)(Akt) nūllī(Pr)(D), capere(Inf)(Akt) sēcūrās(Adj)(A) dapēs(A)
+(450) [THYESTES, FRATER ATREI:] im|Wege|stehen niemandem, nehmen sichere Speisen
+(451) [THYESTES, FRATER ATREI:] humī(N)(Abl) jacentem(Prä)(Akt)(A)! scelera(N) nōn(Pt) intrant(Prä)(Akt) casās(A),
+(451) [THYESTES, FRATER ATREI:] am|Boden liegend! Verbrechen nicht dringen|ein Hütten,
+(452) [THYESTES, FRATER ATREI:] tūtusque(Adj)(N)(Kon) mēnsā(N)(Abl) capitur(Prä)(Pas) angustā(Adj)(Abl) scyphus(N);
+(452) [THYESTES, FRATER ATREI:] sicher|und mit|dem|Tisch wird|gefasst schmalen Becher;
+(453) [THYESTES, FRATER ATREI:] venēnum(N) in(Prp) aurō(N)(Abl) bibitur(Prä)(Pas); expertus(Per)(Pas)(N) loquor(Prä)(Akt):
+(453) [THYESTES, FRATER ATREI:] Gift in im|Gold wird|getrunken; erfahren spreche|ich:
+(454) [THYESTES, FRATER ATREI:] malam(Adj)(A) bonae(Adj)(G) praeferre(Inf)(Akt) fortūnam(A) licet(Prä)(Akt).
+(454) [THYESTES, FRATER ATREI:] schlechte der|guten vor|ziehen Glück ist|erlaubt.
+(455) [THYESTES, FRATER ATREI:] Nōn(Pt) vertice(N)(Abl) altī(Adj)(G) montis(G) impositam(Per)(Pas)(A) domum(A)
+(455) [THYESTES, FRATER ATREI:] nicht auf|dem|Gipfel hohen des|Berges auf|gesetztes Haus
+(456) [THYESTES, FRATER ATREI:] et(Kon) imminentem(Prä)(Akt)(A) cīvitās(N) humilis(Adj)(N) tremit(Prä)(Akt)
+(456) [THYESTES, FRATER ATREI:] und drohend Stadt demütige zittert
+(457) [THYESTES, FRATER ATREI:] nec(Kon) fulget(Prä)(Akt) altīs(Adj)(Abl) splendidum(Adj)(N) tēctīs(N)(Abl) ebur(N)
+(457) [THYESTES, FRATER ATREI:] und|nicht glänzt hohen glänzendes Dächern Elfenbein
+(458) [THYESTES, FRATER ATREI:] somnōsque(A)(Kon) nōn(Pt) dēfendit(Prä)(Akt) excubitor(N) meōs(Adj)(A);
+(458) [THYESTES, FRATER ATREI:] Schlaf|und nicht verteidigt Wächter meine;
+(459) [THYESTES, FRATER ATREI:] nōn(Pt) classibus(N)(Abl) piscāmur(Prä)(Akt) et(Kon) retrō(Adv) mare(N)
+(459) [THYESTES, FRATER ATREI:] nicht mit|Flotten fischen|wir und rückwärts Meer
+(460) [THYESTES, FRATER ATREI:] jactā(Per)(Pas)(Abl) fugāmus(Prä)(Akt) mōle(N)(Abl) nec(Kon) ventrem(A) improbum(Adj)(A)
+(460) [THYESTES, FRATER ATREI:] mit|geworfener treiben|wir|in|die|Flucht Mole und|nicht den|Bauch unverschämten
+(461) [THYESTES, FRATER ATREI:] alimus(Prä)(Akt) tribūtō(N)(Abl) gentium(G), nūllus(Adj)(N) mihī(Pr)(D)
+(461) [THYESTES, FRATER ATREI:] nähren|wir mit|dem|Tribut der|Völker, kein mir
+(462) [THYESTES, FRATER ATREI:] ultrā(Prp) Getās(A) mētātur(Prä)(Akt) et(Kon) Parthōs(A) ager(N);
+(462) [THYESTES, FRATER ATREI:] jenseits Geten wird|abgemessen und Parther Acker;
+(463) [THYESTES, FRATER ATREI:] nōn(Pt) tūre(N)(Abl) colimur(Prä)(Pas) nec(Kon) meae(Pr)(G) exclūsō(Per)(Pas)(Abl) Jove(N)(Abl)
+(463) [THYESTES, FRATER ATREI:] nicht mit|Weihrauch werden|wir|geehrt und|nicht meiner ausgeschlossenem Jupiter
+(464) [THYESTES, FRATER ATREI:] ōrnantur(Prä)(Pas) ārae(N); nūlla(Adj)(N) culminibus(N)(Abl) meīs(Pr)(Abl)
+(464) [THYESTES, FRATER ATREI:] werden|geschmückt Altäre; keine auf|den|Firsten meinen
+(465) [THYESTES, FRATER ATREI:] imposita(Per)(Pas)(N) nūtat(Prä)(Akt) silva(N), nec(Kon) fūmant(Prä)(Akt) manū(N)(Abl)
+(465) [THYESTES, FRATER ATREI:] auf|gesetzter wankt Wald, und|nicht rauchen durch|Hand
+(466) [THYESTES, FRATER ATREI:] succēnsa(Per)(Pas)(N) multā(Adj)(Abl) stāgna(N), nec(Kon) somnō(N)(Abl) diēs(N)
+(466) [THYESTES, FRATER ATREI:] entzündet vieler Teiche, und|nicht durch|Schlaf Tag
+(467) [THYESTES, FRATER ATREI:] Bacchōque(N)(Abl)(Kon) nox(N) jungenda(Fu1)(Pas)(N)(Gdv) pervigilī(Adj)(Abl) datur(Prä)(Pas):
+(467) [THYESTES, FRATER ATREI:] mit|Bacchus|und Nacht zu|verbindende wachen wird|gegeben:
+(468) [THYESTES, FRATER ATREI:] sed(Kon) nōn(Pt) timēmur(Prä)(Pas), tūta(Adj)(N) sine(Prp) tēlō(N)(Abl) est(Prä)(Akt) domus(N)
+(468) [THYESTES, FRATER ATREI:] aber nicht werden|wir|gefürchtet, sicher ohne Waffe ist Haus
+(469) [THYESTES, FRATER ATREI:] rēbusque(N)(Abl)(Kon) parvīs(Adj)(Abl) magna(Adj)(N) praestātur(Prä)(Pas) quiēs(N).
+(469) [THYESTES, FRATER ATREI:] durch|Dinge|und kleinen große wird|gewährt Ruhe.
+(470) [THYESTES, FRATER ATREI:] immāne(Adj)(N) rēgnum(N) est(Prä)(Akt) posse(Inf)(Akt) sine(Prp) rēgnō(N)(Abl) patī(Inf)(Akt).
+(470) [THYESTES, FRATER ATREI:] ungeheuer Reich ist können ohne Reich ertragen.
+(471) [TANTALI UMBRA:] Nec(Kon) abnuendum(Fu1)(Pas)(N)(Gdv) est(Prä)(Akt), sī(Kon) dat(Prä)(Akt) imperium(A) deus(N).
+(471) [TANTALI UMBRA:] und|nicht abzulehnen ist, wenn gibt Herrschaft Gott.
+(472) [TANTALI UMBRA:] nec(Kon) appetendum(Fu1)(Pas)(N)(Gdv) est(Prä)(Akt): frāter(N) ut(Kon) rēgnēs(Prä)(Knj)(Akt) rogat(Prä)(Akt).
+(472) [TANTALI UMBRA:] und|nicht an|zu|streben ist: Bruder dass mögest|herrschen bittet.
+(473) [THYESTES, FRATER ATREI:] Rogat(Prä)(Akt)? timendum(Fu1)(Pas)(N)(Gdv) est(Prä)(Akt). Errat(Prä)(Akt) hīc(Adv) aliquis(Pr)(N) dolus(N).
+(473) [THYESTES, FRATER ATREI:] bittet|er? zu|fürchten ist. irrt hier irgendeine List.
+(474) [TANTALI UMBRA:] Redīre(Inf)(Akt) pietās(N) unde(Adv) submōta(Per)(Pas)(N) est(Prä)(Akt) solet(Prä)(Akt),
+(474) [TANTALI UMBRA:] zurück|kehren Pietät woher weg|bewegt ist pflegt,
+(475) [TANTALI UMBRA:] reparatque(Prä)(Akt)(Kon) vīrēs(A) jūstus(Adj)(N) āmissās(Per)(Pas)(A) amor(N).
+(475) [TANTALI UMBRA:] stellt|wieder|her|und Kräfte gerechte verlorene Liebe.
+(476) [THYESTES, FRATER ATREI:] Amat(Prä)(Akt) Thyestēn(A) frāter(N)? Aetheriās(Adj)(A) prius(Adv)
+(476) [THYESTES, FRATER ATREI:] liebt Thyesten der|Bruder? ätherische zuvor
+(477) [THYESTES, FRATER ATREI:] perfundet(Fu1)(Akt) Arctōs(A) pontus(N) et(Kon) Siculī(Adj)(G) rapāx(Adj)(N)
+(477) [THYESTES, FRATER ATREI:] wird|durchströmen die|Bären Meer und des|Siziliers raubgierig
+(478) [THYESTES, FRATER ATREI:] cōnsistet(Fu1)(Akt) aestūs(G) unda(N) et(Kon) Īoniō(Adj)(Abl) seges(N)
+(478) [THYESTES, FRATER ATREI:] wird|still|stehen der|Flut Woge und im|Ionischen Saat
+(479) [THYESTES, FRATER ATREI:] mātūra(Adj)(N) pelagō(N)(Abl) surget(Fu1)(Akt) et(Kon) lūcem(A) dabit(Fu1)(Akt)
+(479) [THYESTES, FRATER ATREI:] reife auf|dem|Meer wird|aufsteigen und das|Licht wird|geben
+(480) [THYESTES, FRATER ATREI:] nox(N) ātra(Adj)(N) terrīs(D), ante(Adv) cum(Prp) flammīs(N)(Abl) aquae(G),
+(480) [THYESTES, FRATER ATREI:] Nacht schwarze den|Ländern, zuvor mit Flammen des|Wassers,
+(481) [THYESTES, FRATER ATREI:] cum(Prp) morte(N)(Abl) vīta(N), cum(Prp) marī(N)(Abl) ventus(N) fidem(A)
+(481) [THYESTES, FRATER ATREI:] mit dem|Tod das|Leben, mit dem|Meer der|Wind Treue
+(482) [THYESTES, FRATER ATREI:] foedusque(A)(Kon) jungent(Fu1)(Akt). Quam(Pr)(A) tamen(Adv) fraudem(A) timēs(Prä)(Akt)?
+(482) [THYESTES, FRATER ATREI:] Bündnis|und werden|verbinden. welche jedoch Täuschung fürchtest|du?
+(483) [THYESTES, FRATER ATREI:] Omnem(Adj)(A): timōrī(D) quem(Pr)(A) meō(Adj)(D) statuam(Prä)(Knj)(Akt) modum(A)?
+(483) [THYESTES, FRATER ATREI:] ganzen: der|Furcht welchen meiner soll|ich|festsetzen das|Maß?
+(484) [THYESTES, FRATER ATREI:] tantum(Adv) potest(Prä)(Akt) quantum(Adv) ōdit(Per)(Akt). In(Prp) tē(Pr)(A) quid(Pr)(N) potest(Prä)(Akt)?
+(484) [THYESTES, FRATER ATREI:] so|viel kann wie|viel haßt. gegen dich was kann?
+(485) [THYESTES, FRATER ATREI:] Prō(Prp) mē(Pr)(Abl) nihil(Pr)(N) jam(Adv) metuo(Prä)(Akt): vōs(Pr)(N) facitis(Prä)(Akt) mihī(Pr)(D)
+(485) [THYESTES, FRATER ATREI:] für mich nichts schon fürchte|ich: ihr macht mir
+(486) [THYESTES, FRATER ATREI:] Atrea(A) timendum(Fu1)(Pas)(N)(Gdv). Dēcipī(Prä)(Inf)(Pas) cautus(Adj)(N) timēs(Prä)(Akt)?
+(486) [THYESTES, FRATER ATREI:] den|Atreus zu|fürchten. getäuscht|zu|werden vorsichtiger fürchtest|du?
+(487) [THYESTES, FRATER ATREI:] Sērum(Adj)(N) est(Prä)(Akt) cavendī(Ger)(G) tempus(N) in(Prp) mediīs(Adj)(Abl) malīs(N)(Abl).
+(487) [THYESTES, FRATER ATREI:] spät ist des|Hütens die|Zeit in den|mittleren Übeln.
+(488) [THYESTES, FRATER ATREI:] eātur(Prä)(Knj)(Pas). Ūnum(Adj)(A) genitor(V) hoc(Pr)(A) testor(Prä)(Akt) tamen(Adv):
+(488) [THYESTES, FRATER ATREI:] man|gehe. eins Vater dies bezeuge|ich jedoch:
+(489) [THYESTES, FRATER ATREI:] ego(Pr)(N) vōs(Pr)(A) sequor(Prä)(Akt), nōn(Pt) dūco(Prä)(Akt). Respiciet(Fu1)(Akt) deus(N)
+(489) [THYESTES, FRATER ATREI:] ich euch folge|ich, nicht führe|ich. wird|sich|zuwenden der|Gott
+(490) [TANTALI UMBRA:] bene(Adv) cōgitāta(Per)(Pas)(N). Perge(Prä)(Imv)(Akt) nōn(Pt) dubiō(Adj)(Abl) gradū(N)(Abl).
+(490) [TANTALI UMBRA:] gut Erwogenes. schreite|fort nicht zweifelnden Schritt.
+(491) [ATREUS, REX MYCENARUM:] Plāgīs(N)(Abl) tenētur(Prä)(Pas) clausa(Per)(Pas)(N) dispositīs(Per)(Pas)(Abl) fera(N):
+(491) [ATREUS, REX MYCENARUM:] durch|Netze wird|gehalten geschlossen angeordneten die|Bestie:
+(492) [ATREUS, REX MYCENARUM:] et(Kon) ipsum(Pr)(A) et(Kon) ūnā(Adv) generis(G) invīsī(Per)(Pas)(G) indolem(A)
+(492) [ATREUS, REX MYCENARUM:] und ihn|selbst und zugleich des|Geschlechts verhassten die|Art
+(493) [ATREUS, REX MYCENARUM:] jūnctam(Per)(Pas)(A) parentī(D) cerno(Prä)(Akt). Jam(Adv) tūtō(Adv) in(Prp) locō(N)(Abl)
+(493) [ATREUS, REX MYCENARUM:] verbundene dem|Vater erkenne|ich. nun sicher an dem|Ort
+(494) [ATREUS, REX MYCENARUM:] versantur(Prä)(Pas) odia(N). Vēnit(Per)(Akt) in(Prp) nostrās(Adj)(A) manūs(A)
+(494) [ATREUS, REX MYCENARUM:] sind|im|Umlauf Feindschaften. kam in unsere Hände
+(495) [ATREUS, REX MYCENARUM:] tandem(Adv) Thyestēs(N), vēnit(Per)(Akt), et(Kon) tōtus(Adj)(N) quidem(Pt).
+(495) [ATREUS, REX MYCENARUM:] endlich Thyestes, ist|gekommen, und ganz doch.
+(496) [ATREUS, REX MYCENARUM:] Vix(Adv) temperō(Prä)(Akt) animō(D), vix(Adv) dolor(N) frēnōs(A) capit(Prä)(Akt).
+(496) [ATREUS, REX MYCENARUM:] kaum zähme|ich den|Geist, kaum der|Schmerz die|Zügel faßt.
+(497) [ATREUS, REX MYCENARUM:] sīc(Adv), cum(Kon) ferās(A) vestīgat(Prä)(Akt) et(Kon) longō(Adj)(Abl) sagāx(Adj)(N)
+(497) [ATREUS, REX MYCENARUM:] so, wenn wilde|Tiere spürt|auf und langem schlau
+(498) [ATREUS, REX MYCENARUM:] lōrō(N)(Abl) tenētur(Prä)(Pas) Umber(N) ac(Kon) pressō(Per)(Pas)(Abl) viās(A)
+(498) [ATREUS, REX MYCENARUM:] mit|dem|Riemen wird|gehalten der|Umbrier|Hund und gedrücktem die|Wege
+(499) [ATREUS, REX MYCENARUM:] scrūtātur(Prä)(Akt) ōre(N)(Abl), dum(Kon) procul(Adv) lentō(Adj)(Abl) suem(A)
+(499) [ATREUS, REX MYCENARUM:] spürt|aus mit|dem|Maul, während in|der|Ferne langsamem die|Sau
+(500) [ATREUS, REX MYCENARUM:] odōre(N)(Abl) sentit(Prä)(Akt), pāret(Prä)(Akt) et(Kon) tacitō(Adj)(Abl) locum(A)
+(500) [ATREUS, REX MYCENARUM:] durch|den|Geruch bemerkt|er, gehorcht|er und stillen den|Ort
+(501) [ATREUS, REX MYCENARUM:] rōstrō(N)(Abl) pererrat(Prä)(Akt); praeda(N) cum(Kon) propior(Adj)(Kmp)(N) fuit(Per)(Akt),
+(501) [ATREUS, REX MYCENARUM:] mit|dem|Rüssel durchstreift; die|Beute als näher war,
+(502) [ATREUS, REX MYCENARUM:] cervīce(N)(Abl) tōtā(Adj)(Abl) pugnat(Prä)(Akt) et(Kon) gemitū(N)(Abl) vocat(Prä)(Akt)
+(502) [ATREUS, REX MYCENARUM:] mit|dem|Hals ganzen kämpft|er und mit|dem|Ächzen ruft|er
+(503) [ATREUS, REX MYCENARUM:] dominum(A) morantem(Prä)(Akt)(A) sēque(Pr)(A)(Kon) retinentī(Prä)(Akt)(D) ēripit(Prä)(Akt).
+(503) [ATREUS, REX MYCENARUM:] den|Herrn säumenden sich|und dem|zurückhaltenden reißt|er|los.
+(504) [ATREUS, REX MYCENARUM:] cum(Kon) spērat(Prä)(Akt) īra(N) sanguinem(A), nescit(Prä)(Akt) tegī(Prä)(Inf)(Pas);
+(504) [ATREUS, REX MYCENARUM:] wenn hofft der|Zorn das|Blut, weiß|nicht sich|zu|verbergen;
+(505) [ATREUS, REX MYCENARUM:] tamen(Adv) tegātur(Prä)(Knj)(Pas). Aspice(Prä)(Imv)(Akt), ut(Kon) multō(N)(Abl) gravis(Adj)(N)
+(505) [ATREUS, REX MYCENARUM:] dennoch möge|es|bedeckt|werden. sieh|hin, wie um|viel schwer
+(506) [ATREUS, REX MYCENARUM:] squālōre(N)(Abl) vultūs(A) obruat(Prä)(Knj)(Akt) maestōs(Adj)(A) coma(N).
+(506) [ATREUS, REX MYCENARUM:] durch|den|Schmutz die|Gesichter möge|überhäufen traurige das|Haar.
+(507) [ATREUS, REX MYCENARUM:] quam(Adv) foeda(Adj)(N) jaceat(Prä)(Knj)(Akt) barba(N). Praestētur(Prä)(Knj)(Pas) fidēs(N).
+(507) [ATREUS, REX MYCENARUM:] wie häßlich möge|liegen der|Bart. möge|geleistet|werden Treue.
+(508) [ATREUS, REX MYCENARUM:] Frātrem(A) juvat(Prä)(Akt) vidēre(Prä)(Inf)(Akt). Complexūs(A) mihī(Pr)(D)
+(508) [ATREUS, REX MYCENARUM:] den|Bruder erfreut zu|sehen. Umarmungen mir
+(509) [ATREUS, REX MYCENARUM:] redde(Prä)(Imv)(Akt) expetītōs(Per)(Pas)(A). Quidquid(Pr)(N) īrārum(G) fuit(Per)(Akt)
+(509) [ATREUS, REX MYCENARUM:] gib|zurück Ersehnten. was|auch|immer der|Zorne war
+(510) [ATREUS, REX MYCENARUM:] trānsierit(Per)(Knj)(Akt); ex(Prp) hōc(Pr)(Abl) sanguis(N) ac(Kon) pietās(N) diē(N)(Abl)
+(510) [ATREUS, REX MYCENARUM:] möge|vorübergegangen|sein; aus diesem das|Blut und die|Pflicht|Treue Tag
+(511) [ATREUS, REX MYCENARUM:] colantur(Prä)(Knj)(Pas), animīs(N)(Abl) odia(N) damnāta(Per)(Pas)(N) excidant(Prä)(Knj)(Akt).
+(511) [ATREUS, REX MYCENARUM:] mögen|gepflegt|werden, in|den|Seelen Feindschaften verurteilte mögen|herausfallen.
+(512) [THYESTES, FRATER ATREI:] Dīluere(Prä)(Inf)(Akt) possem(Imp)(Knj)(Akt) cūncta(A), nisi(Kon) tālis(Adj)(N) forēs(Imp)(Knj)(Akt).
+(512) [THYESTES, FRATER ATREI:] tilgen könnte|ich alles, wenn|nicht so|einer wärst|du.
+(513) [THYESTES, FRATER ATREI:] sed(Kon) fateor(Prä)(Akt), Atreu(V), fateor(Prä)(Akt), admīsī(Per)(Akt) omnia(Pr)(A)
+(513) [THYESTES, FRATER ATREI:] aber ich|gestehe, Atreu, ich|gestehe, ich|habe|begangen alles
+(514) [THYESTES, FRATER ATREI:] quae(Pr)(A) crēdidistī(Per)(Akt). Pessimam(Adj)(Sup)(A) causam(A) meam(Adj)(A)
+(514) [THYESTES, FRATER ATREI:] was du|geglaubt|hast. schlechteste Sache meine
+(515) [THYESTES, FRATER ATREI:] hodierna(Adj)(N) pietās(N) fēcit(Per)(Akt). Est(Prä)(Akt) prōrsus(Adv) nocēns(Prä)(Akt)(N)
+(515) [THYESTES, FRATER ATREI:] heutige Pflicht|Treue hat|gemacht. ist völlig schuldig
+(516) [THYESTES, FRATER ATREI:] quīcumque(Pr)(N) vīsus(Per)(Pas)(N) tam(Adv) bonō(Adj)(D) frātrī(D) est(Prä)(Akt) nocēns(Prä)(Akt)(N).
+(516) [THYESTES, FRATER ATREI:] wer|auch|immer erschienen so gutem Bruder ist schuldig.
+(517) [THYESTES, FRATER ATREI:] lacrimīs(N)(Abl) agendum(Fu1)(Pas)(N)(Gdv) est(Prä)(Akt); supplicem(Adj)(A) prīmus(Adj)(N) vidēs(Prä)(Akt);
+(517) [THYESTES, FRATER ATREI:] mit|Tränen zu|tun ist; als|Bittenden als|Erster siehst|du;
+(518) [THYESTES, FRATER ATREI:] hae(Pr)(N) tē(Pr)(A) precantur(Prä)(Akt) pedibus(N)(Abl) intāctae(Per)(Pas)(N) manūs(N):
+(518) [THYESTES, FRATER ATREI:] diese dich bitten|sie an|den|Füßen unberührte Hände:
+(519) [THYESTES, FRATER ATREI:] pōnātur(Prä)(Knj)(Pas) omnis(Adj)(N) īra(N) et(Kon) ex(Prp) animō(N)(Abl) tumor(N)
+(519) [THYESTES, FRATER ATREI:] möge|abgelegt|werden alle Zorn und aus dem|Sinn der|Hochmut
+(520) [THYESTES, FRATER ATREI:] ērāsus(Per)(Pas)(N) abeat(Prä)(Knj)(Akt). Obsidēs(A) fideī(G) accipe(Prä)(Imv)(Akt)
+(520) [THYESTES, FRATER ATREI:] ausgetilgt möge|weggehen. Geiseln des|Glaubens nimm|an
+(521) [THYESTES, FRATER ATREI:] hōs(Pr)(A) innocentēs(Adj)(A), frāter(V). Ā(Prp) genibus(N)(Abl) manum(A)
+(521) [THYESTES, FRATER ATREI:] diese Unschuldigen, Bruder. von den|Knien die|Hand
+(522) [ATREUS, REX MYCENARUM:] aufer(Prä)(Imv)(Akt) meōsque(Adj)(A)(Kon) potius(Adv) amplexūs(A) pete(Prä)(Imv)(Akt).
+(522) [ATREUS, REX MYCENARUM:] nimm|weg meine|und lieber Umarmungen suche.
+(523) [ATREUS, REX MYCENARUM:] vōs(Pr)(N) quoque(Pt), senum(G) praesidia(N), tot(Adj)(N) juvenēs(N), meō(Adj)(Abl)
+(523) [ATREUS, REX MYCENARUM:] ihr auch, der|Alten Stützen, so|viele Jünglinge, meinem
+(524) [ATREUS, REX MYCENARUM:] pendēte(Prä)(Imv)(Akt) collō(N)(Abl). Squālidam(Adj)(A) vestem(A) exue(Prä)(Imv)(Akt),
+(524) [ATREUS, REX MYCENARUM:] hängt am|Hals. schmutziges Gewand lege|ab,
+(525) [ATREUS, REX MYCENARUM:] oculīsque(N)(Abl)(Kon) nostrīs(Adj)(Abl) parce(Prä)(Imv)(Akt), et(Kon) ōrnātūs(A) cape(Prä)(Imv)(Akt)
+(525) [ATREUS, REX MYCENARUM:] den|Augen|und unseren schone, und Schmuckstücke nimm
+(526) [ATREUS, REX MYCENARUM:] parēs(Adj)(A) meīs(Adj)(Abl), laetusque(Adj)(N)(Kon) frāternī(Adj)(G) imperī(G)
+(526) [ATREUS, REX MYCENARUM:] gleich den|meinen, froh|und des|brüderlichen Befehls|Gewalt
+(527) [ATREUS, REX MYCENARUM:] capesse(Prä)(Imv)(Akt) partem(A). Major(Adj)(Kmp)(N) haec(Pr)(N) laus(N) est(Prä)(Akt) mea(Adj)(N),
+(527) [ATREUS, REX MYCENARUM:] ergreife den|Teil. größer dies Lob ist mein,
+(528) [ATREUS, REX MYCENARUM:] frātrī(D) paternum(Adj)(A) reddere(Prä)(Inf)(Akt) incolumī(Adj)(D) decus(A):
+(528) [ATREUS, REX MYCENARUM:] dem|Bruder väterlichen zurück|geben unversehrten Schmuck|Ehre:
+(529) [ATREUS, REX MYCENARUM:] habēre(Prä)(Inf)(Akt) rēgnum(A) cāsus(N) est(Prä)(Akt), virtūs(N) dare(Prä)(Inf)(Akt).
+(529) [ATREUS, REX MYCENARUM:] zu|haben das|Reich Zufall ist, Tugend zu|geben.
+(530) [THYESTES, FRATER ATREI:] Dī(N) paria(Adj)(A), frāter(V), pretia(A) prō(Prp) tantīs(Adj)(Abl) tibī(Pr)(D)
+(530) [THYESTES, FRATER ATREI:] Götter gleiche, Bruder, Belohnungen für so|große dir
+(531) [THYESTES, FRATER ATREI:] meritīs(N)(Abl) rependant(Prä)(Knj)(Akt). Rēgiam(Adj)(A) capitis(G) notam(A)
+(531) [THYESTES, FRATER ATREI:] Verdiensten mögen|vergelten. königliche des|Kopfes Zeichen
+(532) [THYESTES, FRATER ATREI:] squālor(N) recūsat(Prä)(Akt) noster(Pr)(N) et(Kon) scēptrum(A) manus(N)
+(532) [THYESTES, FRATER ATREI:] Schmutz weist|zurück unser und Zepter Hand
+(533) [THYESTES, FRATER ATREI:] īnfausta(Adj)(N) refugit(Prä)(Akt). Liceat(Prä)(Knj)(Akt) in(Prp) mediā(Adj)(Abl) mihī(Pr)(D)
+(533) [THYESTES, FRATER ATREI:] unheilvolle meidet. es|sei|erlaubt in der|Mitte mir
+(534) [THYESTES, FRATER ATREI:] latēre(Prä)(Inf)(Akt) turbā(N)(Abl). Recipit(Prä)(Akt) hoc(Pr)(N) rēgnum(N) duōs(Adj)(A).
+(534) [THYESTES, FRATER ATREI:] zu|verborgen|sein Menge. nimmt|auf dieses Reich zwei.
+(535) [THYESTES, FRATER ATREI:] Meum(Adj)(A) esse(Prä)(Inf)(Akt) crēdō(Prä)(Akt) quidquid(Pr)(N) est(Prä)(Akt), frāter(V), tuum(Adj)(N).
+(535) [THYESTES, FRATER ATREI:] mein|Eigenes zu|sein glaube|ich was|auch|immer ist, Bruder, dein|Eigenes.
+(536) [ATREUS, REX MYCENARUM:] Quis(Pr)(N) īnfluentis(Prä)(Akt)(G) dōna(A) fortūnae(G) abnuit(Prä)(Akt)?
+(536) [ATREUS, REX MYCENARUM:] wer ein|strömender Gaben des|Glücks lehnt|ab?
+(537) [THYESTES, FRATER ATREI:] Expertus(Per)(Pas)(N) est(Prä)(Akt) quīcumque(Pr)(N) quam(Adv) facile(Adv) effluant(Prä)(Knj)(Akt).
+(537) [THYESTES, FRATER ATREI:] erfahren ist wer|auch|immer wie leicht hinaus|fließen|mögen.
+(538) [ATREUS, REX MYCENARUM:] Frātrem(A) potīrī(Prä)(Inf)(Akt) glōriā(N)(Abl) ingentī(Adj)(Abl) vetās(Prä)(Akt)?
+(538) [ATREUS, REX MYCENARUM:] den|Bruder zu|bemächtigen|sich des|Ruhmes gewaltigen verbietest|du?
+(539) [THYESTES, FRATER ATREI:] Tua(Adj)(N) jam(Adv) perācta(Per)(Pas)(N) glōria(N) est(Prä)(Akt), restat(Prä)(Akt) mea(Adj)(N);
+(539) [THYESTES, FRATER ATREI:] deine schon vollbrachte Ruhm ist, bleibt meine;
+(540) [THYESTES, FRATER ATREI:] respuere(Prä)(Inf)(Akt) certum(Adj)(N) est(Prä)(Akt) rēgna(A) cōnsilium(N) mihī(Pr)(D).
+(540) [THYESTES, FRATER ATREI:] zu|verschmähen gewiss ist Reiche Plan mir.
+(541) [ATREUS, REX MYCENARUM:] Meam(Adj)(A) relinquam(Fu1)(Akt), nisi(Kon) tuam(Adj)(A) partem(A) accipis(Prä)(Akt).
+(541) [ATREUS, REX MYCENARUM:] meinen werde|ich|verlassen, wenn|nicht deinen Teil nimmst|du|an.
+(542) [THYESTES, FRATER ATREI:] Accipio(Prä)(Akt): rēgnī(G) nōmen(N) impositī(Per)(Pas)(G) feram(Fu1)(Akt),
+(542) [THYESTES, FRATER ATREI:] ich|nehme|an: der|Herrschaft Namen auferlegten werde|ich|tragen,
+(543) [THYESTES, FRATER ATREI:] sed(Kon) jūra(N) et(Kon) arma(N) servient(Fu1)(Akt) mēcum(Pr)(Abl)(Prp) tibī(Pr)(D).
+(543) [THYESTES, FRATER ATREI:] aber Rechte und Waffen werden|dienen mit|mir dir.
+(544) [ATREUS, REX MYCENARUM:] Imposita(Per)(Pas)(N) capitī(D) vincla(A) venerandō(Fu1)(Pas)(Abl)(Gdv) gere(Prä)(Imv)(Akt);
+(544) [ATREUS, REX MYCENARUM:] aufgelegten dem|Haupt Fesseln verehrungs|würdigem trage;
+(545) [ATREUS, REX MYCENARUM:] ego(Pr)(N) dēstinātās(Per)(Pas)(A) victimās(A) superīs(D) dabō(Fu1)(Akt).
+(545) [ATREUS, REX MYCENARUM:] ich bestimmten Opfer den|Göttern werde|ich|geben.
+=== Chor (hendecasyllables) ===
+(546) [CHORUS:] Crēdat(Prä)(Knj)(Akt) hoc(Pr)(N) quisquam(Pr)(N)? ferus(Adj)(N) ille(Pr)(N) et(Kon) ācer(Adj)(N)
+(546) [CHORUS:] möge|glauben dieses irgend|jemand? wild jener und heftig
+(547) [CHORUS:] nec(Kon) potēns(Adj)(N) mentis(G) truculentus(Adj)(N) Atreus(N)
+(547) [CHORUS:] und|nicht mächtig des|Geistes grausam Atreus
+(548) [CHORUS:] frātris(G) aspectū(N)(Abl) stupefactus(Per)(Pas)(N) haesit(Per)(Akt).
+(548) [CHORUS:] des|Bruders durch|den|Anblick betäubt verharrte.
+(549) [CHORUS:] nūlla(Adj)(N) vīs(N) major(Adj)(Kmp)(N) pietāte(N)(Abl) vērā(Adj)(Abl) est(Prä)(Akt);
+(549) [CHORUS:] keine Kraft größer als|Frömmigkeit wahre ist;
+(550) [CHORUS:] jūrgia(N) externīs(Adj)(Abl) inimīca(Adj)(N) dūrant(Prä)(Akt),
+(550) [CHORUS:] Streitereien mit|Fremden feindliche dauern,
+(551) [CHORUS:] quōs(Pr)(A) amor(N) vērus(Adj)(N) tenuit(Per)(Akt), tenēbit(Fu1)(Akt).
+(551) [CHORUS:] welche Liebe wahre hat|gehalten, wird|halten.
+(552) [CHORUS:] īra(N) cum(Prp) magnīs(Adj)(Abl) agitāta(Per)(Pas)(N) causīs(N)(Abl)
+(552) [CHORUS:] Zorn mit großen aufgehetzte Gründen
+(553) [CHORUS:] grātiam(A) rūpit(Per)(Akt) cecinitque(Per)(Akt)(Kon) bellum(A),
+(553) [CHORUS:] Gunst hat|gebrochen und|verkündete Krieg,
+(554) [CHORUS:] cum(Kon) levēs(Adj)(N) frēnīs(N)(Abl) sonuēre(Per)(Akt) turmae(N),
+(554) [CHORUS:] als leichte mit|Zügeln er|tönten Schwadronen,
+(555) [CHORUS:] fulsit(Per)(Akt) hinc(Adv) illinc(Adv) agitātus(Per)(Pas)(N) ēnsis(N),
+(555) [CHORUS:] leuchtete hier dort geschwungen Schwert,
+(556) [CHORUS:] quem(Pr)(A) movet(Prä)(Akt) crēbrō(Abl) furibundus(Adj)(N) ictū(N)(Abl)
+(556) [CHORUS:] welches bewegt mit|häufigem rasender Stoß
+(557) [CHORUS:] sanguinem(A) Māvors(N) cupiēns(Prä)(Akt)(N) recentem(Adj)(A);
+(557) [CHORUS:] Blut Mars begehrend frischen;
+(558) [CHORUS:] opprimit(Prä)(Akt) ferrum(A) manibusque(N)(Abl)(Kon) jūnctīs(Per)(Pas)(Abl)
+(558) [CHORUS:] unterdrückt Eisen mit|Händen|und verbundenen
+(559) [CHORUS:] dūcit(Prä)(Akt) ad(Prp) pācem(A) pietās(N) negantēs(Prä)(Akt)(A).
+(559) [CHORUS:] führt zu dem|Frieden Pietät Verweigernde.
+(560) [CHORUS:] ōtium(N) tantō(Adj)(Abl) subitum(Adj)(N) ē(Prp) tumultū(N)(Abl)
+(560) [CHORUS:] Muße so|großen plötzliche aus dem|Getümmel
+(561) [CHORUS:] quis(Pr)(N) deus(N) fēcit(Per)(Akt)? modo(Adv) per(Prp) Mycēnās(A)
+(561) [CHORUS:] welcher Gott hat|gemacht? soeben durch Mykene
+(562) [CHORUS:] arma(N) cīvīlis(Adj)(G) crepuēre(Per)(Akt) bellī(G);
+(562) [CHORUS:] Waffen des|bürgerlichen haben|geklirrt Krieges;
+(563) [CHORUS:] pallidae(Adj)(N) nātōs(A) tenuēre(Per)(Akt) mātrēs(N),
+(563) [CHORUS:] bleiche Söhne haben|gehalten Mütter,
+(564) [CHORUS:] uxor(N) armātō(Adj)(D) timuit(Per)(Akt) marītō(D),
+(564) [CHORUS:] Ehefrau dem|bewaffneten fürchtete Ehemann,
+(565) [CHORUS:] cum(Kon) manum(A) invītus(Adj)(N) sequerētur(Imp)(Knj)(Akt) ēnsis(N),
+(565) [CHORUS:] als die|Hand wider|Willen folgte das|Schwert,
+(566) [CHORUS:] sordidus(Adj)(N) pācis(G) vitiō(N)(Abl) quiētae(Adj)(G);
+(566) [CHORUS:] schmutzig des|Friedens durch|den|Fehler ruhigen;
+(567) [CHORUS:] ille(Pr)(N) lābentēs(Prä)(Akt)(A) renovāre(Prä)(Inf)(Akt) mūrōs(A),
+(567) [CHORUS:] jener ein|stürzende zu|erneuern Mauern,
+(568) [CHORUS:] hic(Pr)(N) sitū(N)(Abl) quassās(Per)(Pas)(A) stabilīre(Prä)(Inf)(Akt) turrēs(A),
+(568) [CHORUS:] dieser durch|Moder erschütterten zu|festigen Türme,
+(569) [CHORUS:] ferreīs(Adj)(Abl) portās(A) cohibēre(Prä)(Inf)(Akt) claustrīs(N)(Abl)
+(569) [CHORUS:] mit|eisernen Toren zu|verschließen Riegeln
+(570) [CHORUS:] ille(Pr)(N) certābat(Imp)(Akt), pavidusque(Adj)(N)(Kon) pinnīs(N)(Abl)
+(570) [CHORUS:] jener stritt, und|furchtsam Zinnen
+(571) [CHORUS:] ānxiae(Adj)(G) noctis(G) vigil(N) incubābat(Imp)(Akt);
+(571) [CHORUS:] der|ängstlichen Nacht Wächter lag|auf;
+(572) [CHORUS:] pejor(Adj)(Kmp)(N) est(Prä)(Akt) bellō(N)(Abl) timor(N) ipse(Pr)(N) bellī(G).
+(572) [CHORUS:] schlimmer ist als|Krieg Furcht selbst des|Krieges.
+(573) [CHORUS:] jam(Adv) minae(N) saevī(Adj)(G) cecidēre(Per)(Akt) ferrī(G),
+(573) [CHORUS:] schon Drohungen des|grimmen sind|gefallen Eisens,
+(574) [CHORUS:] jam(Adv) silet(Prä)(Akt) murmur(N) grave(Adj)(N) classicōrum(G),
+(574) [CHORUS:] schon schweigt Murmeln schweres der|Heerhörner,
+(575) [CHORUS:] jam(Adv) tacet(Prä)(Akt) strīdor(N) lituī(G) strepentis(Prä)(Akt)(G);
+(575) [CHORUS:] schon verstummt Gekreisch der|Trompete dröhnenden;
+(576) [CHORUS:] alta(Adj)(N) pāx(N) urbī(D) revocāta(Per)(Pas)(N) laetae(Adj)(D) est(Prä)(Akt).
+(576) [CHORUS:] tiefer Friede der|Stadt zurückgerufen fröhlichen ist.
+(577) [CHORUS:] sīc(Adv), ubi(Kon) ex(Prp) altō(Adj)(Abl) tumuēre(Per)(Akt) flūctūs(N)
+(577) [CHORUS:] so, wenn aus der|Tiefe sind|geschwollen Wogen
+(578) [CHORUS:] Bruttium(Adj)(Abl) Cōrō(N)(Abl) feriente(Prä)(Akt)(Abl) pontum(A),
+(578) [CHORUS:] bruttischen Korus|Wind schlagenden das|Meer,
+(579) [CHORUS:] Scylla(N) pulsātīs(Per)(Pas)(Abl) resonat(Prä)(Akt) cavernīs(N)(Abl)
+(579) [CHORUS:] Skylla geschlagenen hallt in|Höhlen
+(580) [CHORUS:] ac(Kon) mare(N) in(Prp) portū(N)(Abl) timuēre(Per)(Akt) nautae(N)
+(580) [CHORUS:] und Meer im Hafen fürchteten Seeleute
+(581) [CHORUS:] quod(Pr)(A) rapāx(Adj)(N) haustum(Per)(Pas)(A) revomit(Prä)(Akt) Charybdis(N),
+(581) [CHORUS:] was gierige geschluckten spuckt|wieder|aus Charybdis,
+(582) [CHORUS:] et(Kon) ferus(Adj)(N) Cyclōps(N) metuit(Prä)(Akt) parentem(A)
+(582) [CHORUS:] und wilder Kyklop fürchtet den|Vater
+(583) [CHORUS:] rūpe(N)(Abl) ferventis(Prä)(Akt)(G) residēns(Prä)(Akt)(N) in(Prp) Aetnae(N)(Abl),
+(583) [CHORUS:] auf|dem|Felsen glühenden sitzend auf Ätna,
+(584) [CHORUS:] nē(Kon) superfūsīs(Per)(Pas)(Abl) violētur(Prä)(Knj)(Pas) undīs(N)(Abl)
+(584) [CHORUS:] damit|nicht übergegossenen werde|verletzt von|Wellen
+(585) [CHORUS:] ignis(N) aeternīs(Adj)(Abl) resonāns(Prä)(Akt)(N) camīnīs(N)(Abl),
+(585) [CHORUS:] das|Feuer in|ewigen wider|tönend Öfen,
+(586) [CHORUS:] et(Kon) putat(Prä)(Akt) mergī(Prä)(Inf)(Pas) sua(Pr)(A) posse(Prä)(Inf)(Akt) pauper(Adj)(N)
+(586) [CHORUS:] und meint unterzugehen sein|Eigenes zu|können Armer
+(587) [CHORUS:] rēgna(A) Lāertēs(N) Ithacā(N)(Abl) tremente(Prä)(Akt)(Abl);
+(587) [CHORUS:] Reiche Lāertes auf|Ithaka bebendem;
+(588) [CHORUS:] sī(Kon) suae(Adj)(N) ventīs(N)(Abl) cecidēre(Per)(Akt) vīrēs(N),
+(588) [CHORUS:] wenn eigene mit|den|Winden sind|gefallen Kräfte,
+(589) [CHORUS:] mītius(Adv)(Kmp) stāgnō(N)(Abl) pelagus(N) recumbit(Prä)(Akt);
+(589) [CHORUS:] sanfter im|Stillwasser Meer sinkt|zurück;
+(590) [CHORUS:] alta(A), quae(Pr)(A) nāvis(N) timuit(Per)(Akt) secāre(Prä)(Inf)(Akt),
+(590) [CHORUS:] Tiefen, die Schiff hat|gefürchtet zu|schneiden,
+(591) [CHORUS:] hinc(Adv) et(Kon) hinc(Adv) fūsīs(Per)(Pas)(Abl) speciōsa(Adj)(N) vēlīs(N)(Abl)
+(591) [CHORUS:] hier und dort ausgebreiteten schöne Segeln
+(592) [CHORUS:] strāta(Per)(Pas)(N) lūdentī(Prä)(Akt)(Abl) patuēre(Per)(Akt) cumbae(N),
+(592) [CHORUS:] ausgebreitet auf|spielendem lagen|offen Kähne,
+(593) [CHORUS:] et(Kon) vacat(Prä)(Akt) mersōs(Per)(Pas)(A) numerāre(Prä)(Inf)(Akt) piscēs(A)
+(593) [CHORUS:] und es|ist|Muße versunkene zu|zählen Fische
+(594) [CHORUS:] hīc(Adv) ubi(Kon) ingentī(Adj)(Abl) modo(Adv) sub(Prp) procellā(N)(Abl)
+(594) [CHORUS:] hier wo gewaltigen soeben unter dem|Sturm
+(595) [CHORUS:] Cyclades(N) pontum(A) timuēre(Per)(Akt) mōtae(Per)(Pas)(N).
+(595) [CHORUS:] Kykladen das|Meer haben|gefürchtet bewegt.
+(596) [CHORUS:] nūlla(Adj)(N) sors(N) longa(Adj)(N) est(Prä)(Akt); dolor(N) ac(Kon) voluptās(N)
+(596) [CHORUS:] kein Los lang ist; Schmerz und Lust
+(597) [CHORUS:] invicem(Adv) cēdunt(Prä)(Akt); brevior(Adj)(Kmp)(N) voluptās(N).
+(597) [CHORUS:] gegenseitig weichen; kürzere Lust.
+(598) [CHORUS:] īma(Adj)(A) permūtat(Prä)(Akt) levis(Adj)(N) hōra(N) summīs(Adj)(Abl).
+(598) [CHORUS:] unterste tauscht leichte Stunde mit|den|höchsten.
+(599) [CHORUS:] ille(Pr)(N) quī(Pr)(N) dōnat(Prä)(Akt) diadēma(A) frontī(D),
+(599) [CHORUS:] jener der schenkt Diadem der|Stirn,
+(600) [CHORUS:] quem(Pr)(A) genū(N)(Abl) nīxae(Per)(Pas)(N) tremuēre(Per)(Akt) gentēs(N),
+(600) [CHORUS:] den mit|dem|Knie gestützt zitterten Völker,
+(601) [CHORUS:] cujus(Pr)(G) ad(Prp) nūtum(A) posuēre(Per)(Akt) bella(A)
+(601) [CHORUS:] dessen auf|den Wink legten|nieder Kriege
+(602) [CHORUS:] et(Kon) Dahae(N) Parthīs(Pr)(D) equitem(A) minātī(Per)(Pas)(N),
+(602) [CHORUS:] und Dahaer den|Parthern Reiter drohend,
+(603) [CHORUS:] ānxius(Adj)(N) scēptrum(A) tenet(Prä)(Akt) et(Kon) moventēs(Prä)(Akt)(A)
+(603) [CHORUS:] ängstlich Zepter hält und bewegende
+(604) [CHORUS:] cūncta(Pr)(A) dīvīnat(Prä)(Akt) metuitque(Prä)(Akt)(Kon) cāsūs(A)
+(604) [CHORUS:] alles ahnt fürchtet|und Zufälle
+(605) [CHORUS:] mōbilēs(Adj)(A) rērum(G) dubiumque(Adj)(A)(Kon) tempus(A).
+(605) [CHORUS:] bewegliche der|Dinge unsichere|und Zeit.
+(606) [CHORUS:] vōs(Pr)(N) quibus(Pr)(D) rēctor(N) maris(G) atque(Kon) terrae(G)
+(606) [CHORUS:] ihr denen Lenker des|Meeres und der|Erde
+(607) [CHORUS:] jūs(A) dedit(Per)(Akt) magnum(Adj)(A) necis(G) atque(Kon) vītae(G),
+(607) [CHORUS:] Recht gab großes des|Tötens und des|Lebens,
+(608) [CHORUS:] pōnite(Prä)(Imv)(Akt) īnflātōs(Per)(Pas)(A) tumidōsque(Adj)(A)(Kon) vultūs(A):
+(608) [CHORUS:] legt|ab aufgeblasene geschwollenen|und Mienen:
+(610) [CHORUS:] quidquid(Pr)(N) ā(Prp) vōbīs(Pr)(Abl) minor(Adj)(N) expavēscit(Prä)(Akt),
+(610) [CHORUS:] was|auch|immer von euch geringer erschrickt,
+(611) [CHORUS:] major(Adj)(N)(Kmp) hōc(Pr)(Abl) vōbīs(Pr)(D) dominus(N) minātur(Prä)(Pas);
+(611) [CHORUS:] größerer an|diesem euch Herr droht;
+(612) [CHORUS:] omne(Adj)(N) sub(Prp) rēgnō(N)(Abl) graviōre(Adj)(Abl)(Kmp) rēgnum(N) est(Prä)(Akt).
+(612) [CHORUS:] jedes unter dem|Reich schwereren Reich ist.
+(613) [CHORUS:] quem(Pr)(A) diēs(N) vīdit(Per)(Akt) veniēns(Prä)(Akt)(N) superbum(Adj)(A),
+(613) [CHORUS:] den Tag sah kommend hochmütigen,
+(614) [CHORUS:] hunc(Pr)(A) diēs(N) vīdit(Per)(Akt) fugiēns(Prä)(Akt)(N) jacentem(Prä)(Akt)(A).
+(614) [CHORUS:] diesen Tag sah fliehend liegend.
+(615) [CHORUS:] nēmo(Pr)(N) cōnfīdat(Prä)(Knj)(Akt) nimium(Adv) secundīs(Adj)(Abl),
+(615) [CHORUS:] niemand vertraue allzu dem|Günstigen,
+(616) [CHORUS:] nēmo(Pr)(N) dēspēret(Prä)(Knj)(Akt) meliōra(Adj)(A)(Kmp) lassīs(Adj)(Abl):
+(616) [CHORUS:] niemand verzweifle Besseres den|Müden:
+(617) [CHORUS:] miscet(Prä)(Akt) haec(Pr)(A) illīs(Pr)(D) prohibetque(Prä)(Akt)(Kon) Clōthō(N)
+(617) [CHORUS:] mischt dieses jenen hindert|und Clotho
+(618) [CHORUS:] stāre(Inf)(Akt) fortūnam(A), rotat(Prä)(Akt) omne(Adj)(A) fātum(A).
+(618) [CHORUS:] zu|stehen das|Glück, dreht alles Schicksal.
+(619) [CHORUS:] nēmo(Pr)(N) tam(Adv) dīvōs(A) habuit(Per)(Akt) faventēs(Prä)(Akt)(A),
+(619) [CHORUS:] niemand so Götter hatte wohlgesonnene,
+(620) [CHORUS:] crāstinum(A) ut(Kon) posset(Imp)(Knj)(Akt) sibi(Pr)(D) pollicērī(Inf)(Pas):
+(620) [CHORUS:] den|Morgen dass könnte sich versprechen:
+(621) [CHORUS:] rēs(A) deus(N) nostrās(Adj)(A) celerī(Adj)(Abl) citātās(Per)(Pas)(A)
+(621) [CHORUS:] Dinge Gott unsere schnellem angetriebene
+(622) [CHORUS:] turbine(N)(Abl) versat(Prä)(Akt).
+(622) [CHORUS:] mit|dem|Wirbel wälzt.
+=== Akt 3 ===
+(623) [NUNTIUS:] Quis(Pr)(N) mē(Pr)(A) per(Prp) aurās(A) turbo(N) praecipitem(Adj)(A) vehet(Fu1)(Akt)
+(623) [NUNTIUS:] wer mich durch Lüfte Wirbel kopfüber wird|tragen
+(624) [NUNTIUS:] ātrāque(Adj)(Abl)(Kon) nūbe(N)(Abl) involvet(Fu1)(Akt), ut(Kon) tantum(Adv) nefās(N)
+(624) [NUNTIUS:] schwarzer|und Wolke wird|umhüllen, damit so|großes Frevel
+(625) [NUNTIUS:] ēripiat(Prä)(Knj)(Akt) oculīs(N)(Abl)? Ō(ij) domus(N) Pelopī(Pr)(D) quoque(Pt)
+(625) [NUNTIUS:] entreiße den|Augen? o Haus dem|Pelops auch
+(626) [NUNTIUS:] et(Kon) Tantalō(Pr)(D) pudenda(Adj)(A)! Quid(Pr)(N) portās(Prä)(Akt) novī(Adj)(G)?
+(626) [NUNTIUS:] und dem|Tantalus Schändliches! was trägst Neues?
+(627) [NUNTIUS:] Quaenam(Pr)(N) ista(Pr)(N) regiō(N) est(Prä)(Akt)? Argos(N) et(Kon) Spartē(N), piōs(Adj)(A)
+(627) [NUNTIUS:] welche|denn jene Gegend ist? Argos und Sparta, fromme
+(628) [NUNTIUS:] sortīta(Per)(Pas)(N) frātrēs(A), et(Kon) maris(G) geminī(Adj)(G) premēns(Prä)(Akt)(N)
+(628) [NUNTIUS:] erwählt|habend Brüder, und des|Meeres zwiefachen drückend
+(629) [NUNTIUS:] faucēs(A) Corinthos(N), an(Kon) ferīs(Adj)(Abl) Hister(N) fugam(A)
+(629) [NUNTIUS:] Pässe Korinth, oder den|Wilden Ister Flucht
+(630) [NUNTIUS:] praebēns(Prä)(Akt)(N) Alānīs(Pr)(D), an(Kon) sub(Prp) aeternā(Adj)(Abl) nive(N)(Abl)
+(630) [NUNTIUS:] gewährend den|Alanen, oder unter ewigem Schnee
+(631) [NUNTIUS:] Hyrcāna(Adj)(N) tellūs(N), an(Kon) vagī(Adj)(N) passim(Adv) Scythae(N)?
+(631) [NUNTIUS:] hyrkanische Erde, oder umherstreifende allenthalben Skythen?
+(632) [NUNTIUS:] quis(Pr)(N) hic(Pr)(N) nefandī(Adj)(G) est(Prä)(Akt) cōnscius(Adj)(N) mōnstrī(G) locus(N)?
+(632) [NUNTIUS:] welcher dieser unsagbaren ist kundig des|Ungeheuers Ort?
+(633) [CHORUS:] Effāre(Prä)(Imv)(Akt), et(Kon) istud(Pr)(N) pande(Prä)(Imv)(Akt), quodcumque(Pr)(N) est(Prä)(Akt), malum(N).
+(633) [CHORUS:] sprich|aus, und jenes enthülle, was|auch|immer ist, Übel.
+(634) [NUNTIUS:] Sī(Kon) steterit(Fu2)(Akt) animus(N), sī(Kon) metū(N)(Abl) corpus(N) rigēns(Prä)(Akt)(N)
+(634) [NUNTIUS:] wenn wird|gestanden|haben Geist, wenn durch|Furcht Körper erstarrend
+(635) [NUNTIUS:] remittet(Fu1)(Akt) artūs(A). Haeret(Prä)(Akt) in(Prp) vultū(N)(Abl) trucis(Adj)(G)
+(635) [NUNTIUS:] wird|lösen Glieder. haftet an dem|Antlitz grausamen
+(636) [NUNTIUS:] imāgo(N) factī(G). Ferte(Prä)(Imv)(Akt) mē(Pr)(A) īnsānae(Adj)(V) procul(Adv),
+(636) [NUNTIUS:] Bild der|Tat. tragt mich Wahnsinnige fort,
+(637) [NUNTIUS:] illō(Pr)(Abl), procellae(V), ferte(Prä)(Imv)(Akt) quō(Pr)(Abl) fertur(Prä)(Pas) diēs(N)
+(637) [NUNTIUS:] dorthin, Stürme, tragt wohin wird|getragen Tag
+(638) [NUNTIUS:] hinc(Adv) raptus(Per)(Pas)(N). Animōs(A) gravius(Adv)(Kmp) incertōs(Adj)(A) tenēs(Prä)(Akt).
+(638) [NUNTIUS:] von|hier fortgerissen. Seelen schwerer unsichere hältst.
+(639) [CHORUS:] quid(Pr)(N) sit(Prä)(Knj)(Akt) quod(Pr)(N) horrēs(Prä)(Akt) ēde(Prä)(Imv)(Akt) et(Kon) auctōrem(A) indicā(Prä)(Imv)(Akt).
+(639) [CHORUS:] was sei was erschauerst|du sage|heraus und Urheber zeige|an.
+(640) [CHORUS:] nōn(Pt) quaero(Prä)(Akt) quis(Pr)(N) sit(Prä)(Knj)(Akt), sed(Kon) uter(Pr)(N). Effāre(Prä)(Imv)(Akt) ōcius(Adv).
+(640) [CHORUS:] nicht frage|ich wer sei, sondern welcher|von|beiden. sprich|aus schneller.
+(641) [NUNTIUS:] In(Prp) arce(N)(Abl) summā(Adj)(Abl) Pelopiae(Adj)(G) pars(N) est(Prä)(Akt) domūs(G)
+(641) [NUNTIUS:] auf der|Burg höchsten pelopäischen Teil ist des|Hauses
+(642) [NUNTIUS:] conversa(Per)(Pas)(N) ad(Prp) Austrōs(A), cujus(Pr)(G) extrēmum(Adj)(N) latus(N)
+(642) [NUNTIUS:] zugewandt zu den|Südwinden, dessen äußerste Seite
+(643) [NUNTIUS:] aequāle(Adj)(N) montī(D) crēscit(Prä)(Akt) atque(Kon) urbem(A) premit(Prä)(Akt)
+(643) [NUNTIUS:] gleich dem|Berg wächst und Stadt drückt
+(644) [NUNTIUS:] et(Kon) contumācem(Adj)(A) rēgibus(D) populum(A) suīs(Pr)(D)
+(644) [NUNTIUS:] und trotzigen den|Königen Volk seinen
+(645) [NUNTIUS:] habet(Prä)(Akt) sub(Prp) ictū(N)(Abl); fulget(Prä)(Akt) hīc(Adv) turbae(G) capāx(Adj)(N)
+(645) [NUNTIUS:] hat unter dem|Schlag; strahlt hier der|Menge geräumig
+(646) [NUNTIUS:] immāne(Adj)(N) tēctum(N), cujus(Pr)(G) aurātās(Per)(Pas)(A) trabēs(A)
+(646) [NUNTIUS:] ungeheures Gebäude, dessen vergoldete Balken
+(647) [NUNTIUS:] variīs(Adj)(Abl) columnae(N) nōbilēs(Adj)(N) maculīs(N)(Abl) ferunt(Prä)(Akt).
+(647) [NUNTIUS:] mit|verschiedenen Säulen edle Flecken tragen.
+(648) [NUNTIUS:] post(Prp) ista(Pr)(A) vulgō(Adv) nōta(Per)(Pas)(N), quae(Pr)(N) populī(G) colunt(Prä)(Akt),
+(648) [NUNTIUS:] nach jenes allgemein bekannte, welche des|Volkes verehren,
+(649) [NUNTIUS:] in(Prp) multa(Adj)(A) dīves(Adj)(N) spatia(A) discēdit(Prä)(Akt) domus(N);
+(649) [NUNTIUS:] in viele reiche Räume verbreitet|sich Haus;
+(650) [NUNTIUS:] arcāna(Adj)(N) in(Prp) īmō(Adj)(Abl) regio(N) sēcessū(N)(Abl) jacet(Prä)(Akt),
+(650) [NUNTIUS:] geheime in tiefem Bereich Rückzug liegt,
+(651) [NUNTIUS:] altā(Adj)(Abl) vetustum(Adj)(N) valle(N)(Abl) compescēns(Prä)(Akt)(N) nemus(N),
+(651) [NUNTIUS:] tiefem altes Tal bändigend Hain,
+(652) [NUNTIUS:] penetrāle(Adj)(N) rēgnī(G), nūlla(Adj)(N) quā(Pr)(Abl) laetōs(Adj)(A) solet(Prä)(Akt)
+(652) [NUNTIUS:] innerstes des|Reiches, keine durch|die frohen pflegt
+(653) [NUNTIUS:] praebēre(Inf)(Akt) rāmōs(A) arbor(N) aut(Kon) ferrō(N)(Abl) colī(Inf)(Pas),
+(653) [NUNTIUS:] zu|bieten Zweige Baum oder mit|dem|Eisen bebaut|zu|werden,
+(654) [NUNTIUS:] sed(Kon) taxus(N) et(Kon) cupressus(N) et(Kon) nigrā(Adj)(Abl) īlice(N)(Abl)
+(654) [NUNTIUS:] aber Eibe und Zypresse und schwarzer Steineiche
+(655) [NUNTIUS:] obscūra(Adj)(N) nūtat(Prä)(Akt) silva(N), quam(Pr)(A) suprā(Adv) ēminēns(Prä)(Akt)(N)
+(655) [NUNTIUS:] dunkler wankt Wald, die oben emporragend
+(656) [NUNTIUS:] dēspectat(Prä)(Akt) altē(Adv) quercus(N) et(Kon) vincit(Prä)(Akt) nemus(A).
+(656) [NUNTIUS:] überblickt hoch Eiche und übertrifft Hain.
+(657) [NUNTIUS:] hinc(Adv) auspicārī(Inf)(Pas) rēgna(A) Tantalidae(N) solent(Prä)(Akt),
+(657) [NUNTIUS:] von|hier Vogel|schauen Reiche Tantaliden pflegen,
+(658) [NUNTIUS:] hinc(Adv) petere(Inf)(Akt) lassīs(Adj)(Abl) rēbus(N)(Abl) ac(Kon) dubiīs(Adj)(Abl) opem(A).
+(658) [NUNTIUS:] von|hier zu|suchen erschöpften Lagen und unsicheren Hilfe.
+(659) [NUNTIUS:] affīxa(Per)(Pas)(N) inhaerent(Prä)(Akt) dōna(N); vōcālēs(Adj)(N) tubae(N)
+(659) [NUNTIUS:] angeheftete haften Gaben; klingende Trompeten
+(660) [NUNTIUS:] frāctīque(Per)(Pas)(N)(Kon) currūs(N), spolia(N) Myrtōī(Adj)(G) maris(G),
+(660) [NUNTIUS:] zerbrochene|und Wagen, Beute myrtoischen des|Meeres,
+(661) [NUNTIUS:] victaeque(Per)(Pas)(N)(Kon) falsīs(Adj)(Abl) axibus(N)(Abl) pendent(Prä)(Akt) rotae(N)
+(661) [NUNTIUS:] überwundene|und falschen Achsen hängen Räder
+(662) [NUNTIUS:] et(Kon) omne(Adj)(N) gentis(G) facinus(N); hōc(Pr)(Abl) Phrygius(Adj)(N) locō(N)(Abl)
+(662) [NUNTIUS:] und jede des|Geschlechts Tat; an|diesem phrygischer Ort
+(663) [NUNTIUS:] fīxus(Per)(Pas)(N) tiārās(A) Pelopis(G), hīc(Adv) praeda(N) hostium(G)
+(663) [NUNTIUS:] befestigt Tiaren des|Pelops, hier Beute der|Feinde
+(664) [NUNTIUS:] et(Kon) dē(Prp) triumphō(N)(Abl) picta(Per)(Pas)(N) barbaricō(Adj)(Abl) chlamys(N).
+(664) [NUNTIUS:] und von dem|Triumph bemalte barbarischem Mantel.
+(665) [NUNTIUS:] fōns(N) stat(Prä)(Akt) sub(Prp) umbrā(Abl) trīstis(Adj)(Abl) et(Kon) nigrā(Adj)(Abl) piger(Adj)(N)
+(665) [NUNTIUS:] Quelle steht unter dem|Schatten traurig und schwarz träge
+(666) [NUNTIUS:] haeret(Prä)(Akt) palūde(Abl); tālis(Adj)(N) est(Prä)(Akt) dīrae(Adj)(G) Stygis(G)
+(666) [NUNTIUS:] haftet im|Sumpf; solcher ist der|schrecklichen des|Styx
+(667) [NUNTIUS:] dēfōrmis(Adj)(N) unda(N) quae(Pr)(N) facit(Prä)(Akt) caelō(D) fidem(A).
+(667) [NUNTIUS:] hässliche Woge die macht dem|Himmel Glauben.
+(668) [NUNTIUS:] hinc(Adv) nocte(Abl) caecā(Adj)(Abl) gemere(Prä)(Inf)(Akt) fērālīs(Adj)(A) deōs(A)
+(668) [NUNTIUS:] von|hier in|der|Nacht blinden zu|stöhnen unheilverkündende Götter
+(669) [NUNTIUS:] fāma(N) est(Prä)(Akt), catēnīs(Abl) lūcus(N) excussīs(Per)(Pas)(Abl) sonat(Prä)(Akt)
+(669) [NUNTIUS:] Gerücht ist, mit|Ketten Hain ausgeschüttelten tönt
+(670) [NUNTIUS:] ululantque(Prä)(Akt)(Kon) mānēs(N). Quidquid(Pr)(N) audīre(Prä)(Inf)(Akt) est(Prä)(Akt) metus(N)
+(670) [NUNTIUS:] heulen|und Totengeister. was|auch|immer zu|hören ist Furcht
+(671) [NUNTIUS:] illīc(Adv) vidētur(Prä)(Pas): errat(Prä)(Akt) antīquīs(Adj)(Abl) vetus(Adj)(N)
+(671) [NUNTIUS:] dort scheint: irrt in|alten alt
+(672) [NUNTIUS:] ēmissa(Per)(Pas)(N) bustīs(Abl) turba(N) et(Kon) īnsultant(Prä)(Akt) locō(D)
+(672) [NUNTIUS:] aus|geschickte von|Scheiterhaufen Schar und verhöhnen dem|Ort
+(673) [NUNTIUS:] majōra(Adj)(Kmp)(N) nōtīs(Adj)(Abl) mōnstra(N); quīn(Kon) tōtā(Adj)(Abl) solet(Prä)(Akt)
+(673) [NUNTIUS:] größere den|bekannten Ungeheuer; ja|sogar im|ganzen pflegt
+(674) [NUNTIUS:] micāre(Prä)(Inf)(Akt) silvā(Abl) flamma(N), et(Kon) excelsae(Adj)(G) trabēs(N)
+(674) [NUNTIUS:] zu|leuchten Wald Flamme, und der|hohen Balken
+(675) [NUNTIUS:] ārdent(Prä)(Akt) sine(Prp) igne(Abl). Saepe(Adv) lātrātū(Abl) nemus(N)
+(675) [NUNTIUS:] brennen ohne Feuer. oft durch|Bellen Hain
+(676) [NUNTIUS:] trīnō(Adj)(Abl) remūgit(Prä)(Akt), saepe(Adv) simulācrīs(Abl) domus(N)
+(676) [NUNTIUS:] dreifache brüllt|zurück, oft durch|Bildwerke Haus
+(677) [NUNTIUS:] attonita(Per)(Pas)(N) magnīs(Adj)(Abl). Nec(Kon) diēs(N) sēdat(Prä)(Knj)(Akt) metum(A);
+(677) [NUNTIUS:] betäubt großen. und|nicht Tag möge|stillen Furcht;
+(678) [NUNTIUS:] nox(N) propria(Adj)(N) lūcō(D) est(Prä)(Akt), et(Kon) superstitiō(N) īnferum(Adj)(G)
+(678) [NUNTIUS:] Nacht eigene dem|Hain ist, und Aberglaube der|Unterirdischen
+(679) [NUNTIUS:] in(Prp) lūce(Abl) mediā(Adj)(Abl) rēgnat(Prä)(Akt). Hinc(Adv) ōrantibus(Prä)(Akt)(Abl)
+(679) [NUNTIUS:] in im|Licht mittleren herrscht. von|hier den|Bittenden
+(680) [NUNTIUS:] respōnsa(N) dantur(Prä)(Pas) certa(Adj)(N), cum(Kon) ingentī(Adj)(Abl) sonō(Abl)
+(680) [NUNTIUS:] Antworten werden|gegeben sichere, wenn mit|gewaltigem Klang
+(681) [NUNTIUS:] laxantur(Prä)(Pas) adytō(Abl) fāta(N) et(Kon) immūgit(Prä)(Akt) specus(N)
+(681) [NUNTIUS:] werden|geöffnet aus|dem|Heiligtum Schicksale und brüllt Höhle
+(682) [NUNTIUS:] vōcem(A) deō(D) solvente(Prä)(Akt)(Abl). Quō(Adv) postquam(Kon) furēns(Prä)(Akt)(N)
+(682) [NUNTIUS:] Stimme dem|Gott lösenden. wohin nachdem rasend
+(683) [NUNTIUS:] intrāvit(Per)(Akt) Atreus(N) līberōs(A) frātris(G) trahēns(Prä)(Akt)(N),
+(683) [NUNTIUS:] trat|ein Atreus Kinder des|Bruders ziehend,
+(684) [NUNTIUS:] ōrnantur(Prä)(Pas) ārae(N); quis(Pr)(N) queat(Prä)(Knj)(Akt) dignē(Adv) ēloquī(Inf)(Akt)?
+(684) [NUNTIUS:] werden|geschmückt Altäre; wer könnte würdig aus|sprechen?
+(685) [NUNTIUS:] post(Prp) terga(A) juvenum(G) nōbilēs(Adj)(N) revocat(Prä)(Akt) manūs(A)
+(685) [NUNTIUS:] hinter die|Rücken der|Jünglinge vornehme ruft|zurück Hände
+(686) [NUNTIUS:] et(Kon) maesta(Adj)(A) vittā(Abl) capita(A) purpureā(Adj)(Abl) ligat(Prä)(Akt);
+(686) [NUNTIUS:] und traurige mit|dem|Binde Häupter purpurnen bindet;
+(687) [NUNTIUS:] nōn(Pt) tūra(N) dēsunt(Prä)(Akt), nōn(Pt) sacer(Adj)(N) Bacchī(G) liquor(N)
+(687) [NUNTIUS:] nicht Weihrauch fehlen, nicht heiliger des|Bacchus Trank
+(688) [NUNTIUS:] tangēnsque(Prä)(Akt)(Kon)(N) salsā(Adj)(Abl) victimam(A) culter(N) molā(Abl).
+(688) [NUNTIUS:] berührend|und mit|gesalzenem Opfer Messer mit|dem|Mehl.
+(689) [NUNTIUS:] servātur(Prä)(Pas) omnis(Adj)(N) ōrdo(N), nē(Kon) tantum(Adj)(A) nefās(N)
+(689) [NUNTIUS:] wird|beachtet jede Ordnung, damit|nicht so|groß Frevel
+(690) [NUNTIUS:] nōn(Pt) rīte(Adv) fīat(Prä)(Knj)(Akt). Quis(Pr)(N) manum(A) ferrō(Abl) admovet(Prä)(Akt)?
+(690) [NUNTIUS:] nicht nach|Ritus geschehe. wer Hand mit|dem|Eisen legt|an?
+(691) [NUNTIUS:] Ipse(Pr)(N) est(Prä)(Akt) sacerdōs(N), ipse(Pr)(N) fūnestā(Adj)(Abl) prece(Abl)
+(691) [NUNTIUS:] derselbe ist Priester, derselbe mit|tödlichem Gebet
+(692) [NUNTIUS:] lētāle(Adj)(N) carmen(N) ōre(Abl) violentō(Adj)(Abl) canit(Prä)(Akt).
+(692) [NUNTIUS:] tödliches Lied mit|dem|Mund gewaltsamen singt.
+(693) [NUNTIUS:] stat(Prä)(Akt) ipse(Pr)(N) ad(Prp) ārās(A), ipse(Pr)(N) dēvōtōs(Per)(Pas)(A) necī(D)
+(693) [NUNTIUS:] steht er|selbst an|die Altäre, er|selbst den|geweihten dem|Tod
+(694) [NUNTIUS:] contrectat(Prä)(Akt) et(Kon) compōnit(Prä)(Akt) et(Kon) ferrō(Abl) parat(Prä)(Akt);
+(694) [NUNTIUS:] betastet und ordnet und mit|dem|Eisen bereitet;
+(695) [NUNTIUS:] attendit(Prä)(Akt) ipse(Pr)(N); nulla(Adj)(N) pars(N) sacrī(G) perit(Prä)(Akt).
+(695) [NUNTIUS:] achtet er|selbst; kein Teil des|Ritus geht|zugrunde.
+(696) [NUNTIUS:] lūcus(N) tremēscit(Prä)(Akt), tōta(Adj)(N) succussō(Per)(Pas)(Abl) solō(Abl)
+(696) [NUNTIUS:] Hain zittert, ganze mit|geschütteltem Boden
+(697) [NUNTIUS:] nūtāvit(Per)(Akt) aula(N), dubia(Adj)(N) quō(Adv) pondus(N) daret(Imp)(Knj)(Akt)
+(697) [NUNTIUS:] schwankte Halle, unsicher wohin Gewicht gäbe
+(698) [NUNTIUS:] ac(Kon) fluctuantī(Prä)(Akt)(D) similis(Adj)(N); ē(Prp) laevō(Adj)(Abl) aethere(Abl)
+(698) [NUNTIUS:] und dem|Schwankenden ähnlich; aus linkem Himmel
+(699) [NUNTIUS:] ātrum(Adj)(N) cucurrit(Per)(Akt) līmitem(A) sīdus(N) trahēns(Prä)(Akt)(N).
+(699) [NUNTIUS:] dunkler lief Bahn Stern ziehend.
+(700) [NUNTIUS:] lībāta(Per)(Pas)(N) in(Prp) ignēs(A) vīna(N) mūtātō(Per)(Pas)(Abl) fluunt(Prä)(Akt)
+(700) [NUNTIUS:] geopferte in die|Feuer Weine mit|verändertem fließen
+(701) [NUNTIUS:] cruenta(Adj)(N) Bacchō(Abl), rēgium(Adj)(N) capitī(D) decus(N)
+(701) [NUNTIUS:] blutige zu|Bacchus, königlicher dem|Haupt Schmuck
+(702) [NUNTIUS:] bis(Adv) terque(Adv)(Kon) lāpsum(Per)(Pas)(N) est(Prä)(Akt), flēvit(Per)(Akt) in(Prp) templīs(Abl) ebur(N).
+(702) [NUNTIUS:] zweimal dreimal|und gefallen ist, weinte in Tempeln Elfenbein.
+(703) [NUNTIUS:] Mōvēre(Per)(Akt) cūnctōs(Adj)(A) mōnstra(N), sed(Kon) sōlus(Adj)(N) sibī(Pr)(D)
+(703) [NUNTIUS:] bewegten alle Ungeheuer, aber allein sich|selbst
+(704) [NUNTIUS:] immōtus(Adj)(N) Atreus(N) cōnstat(Prä)(Akt), atque(Kon) ultrō(Adv) deōs(A)
+(704) [NUNTIUS:] unbewegt Atreus bleibt|standhaft, und von|selbst Götter
+(705) [NUNTIUS:] terret(Prä)(Akt) minantēs(Prä)(Akt)(A). Jamque(Adv) dīmissā(Per)(Pas)(Abl) morā(Abl)
+(705) [NUNTIUS:] schreckt drohende. und|schon mit|abgelegter Verzögerung
+(706) [NUNTIUS:] adsistit(Prä)(Akt) ārīs(Abl), torvum(Adj)(N) et(Kon) oblīquum(Adj)(N) intuēns(Prä)(Akt)(N).
+(706) [NUNTIUS:] tritt|hinzu zu|den|Altären, finster und schief blickend.
+(707) [NUNTIUS:] jējūna(Adj)(N) silvīs(Abl) quālis(Pr)(N) in(Prp) Gangēticīs(Adj)(Abl)
+(707) [NUNTIUS:] hungrig in|den|Wäldern wie in gangetischen
+(708) [NUNTIUS:] inter(Prp) juvencōs(A) tigris(N) errāvit(Per)(Akt) duōs(Adj)(A),
+(708) [NUNTIUS:] zwischen jungen|Rindern Tiger ist|umhergeirrt zwei,
+(709) [NUNTIUS:] utriusque(Pr)(G) praedae(G) cupida(Adj)(N) quō(Adv) prīmum(Adv) ferat(Prä)(Knj)(Akt)
+(709) [NUNTIUS:] beider Beute begierig wohin zuerst trage
+(710) [NUNTIUS:] incerta(Adj)(N) morsūs(A) (flectit(Prä)(Akt) hōc(Pr)(Abl) rictūs(A) suōs(Pr)(A),
+(710) [NUNTIUS:] unentschlossen Bisse (biegt hier die|Rachen ihre,
+(711) [NUNTIUS:] illō(Pr)(Abl) reflectit(Prä)(Akt) et(Kon) famem(A) dubiam(Adj)(A) tenet(Prä)(Akt)),
+(711) [NUNTIUS:] dorthin biegt|zurück und Hunger zweifelhaften hält),
+(712) [NUNTIUS:] sīc(Adv) dīrus(Adj)(N) Atreus(N) capita(A) dēvōta(Per)(Pas)(A) impiae(Adj)(G)
+(712) [NUNTIUS:] so grimmiger Atreus Häupter geweihte der|gottlosen
+(713) [NUNTIUS:] speculātur(Prä)(Akt) īrae(G). Quem(Pr)(A) prius(Adv) mactet(Prä)(Knj)(Akt) sibī(Pr)(D)
+(713) [NUNTIUS:] späht des|Zorns. welchen zuerst schlachte für|sich
+(714) [NUNTIUS:] dubitat(Prä)(Akt), secunda(Adj)(A) deinde(Adv) quem(Pr)(A) caede(Abl) immolet(Prä)(Knj)(Akt).
+(714) [NUNTIUS:] zögert, zweite dann welchen mit|der|Schlachtung opfere.
+(715) [NUNTIUS:] nec(Kon) interest(Prä)(Akt), sed(Kon) dubitat(Prä)(Akt) et(Kon) saevum(Adj)(A) scelus(N)
+(715) [NUNTIUS:] und|nicht macht|Unterschied, aber zögert und grimmiges Verbrechen
+(716) [NUNTIUS:] juvat(Prä)(Akt) ōrdināre(Prä)(Inf)(Akt). Quem(Pr)(A) tamen(Adv) ferrō(Abl) occupat(Prä)(Akt)?
+(716) [NUNTIUS:] erfreut zu|ordnen. welchen jedoch mit|dem|Eisen ergreift?
+(717) [NUNTIUS:] Prīmus(Adj)(N) locus(N) (nē(Kon) dēesse(Prä)(Inf)(Akt) pietātem(A) putēs(Prä)(Knj)(Akt))
+(717) [NUNTIUS:] erster Platz (damit|nicht fehlen Pflicht|Treue du|meinst|)
+(718) [NUNTIUS:] avō(D) dicātur(Prä)(Knj)(Pas): Tantalus(N) prīma(Adj)(N) hostia(N) est(Prä)(Akt).
+(718) [NUNTIUS:] dem|Großvater möge|geweiht|werden: Tantalus erstes Opfer ist.
+(719) [CHORUS:] Quō(Adv) juvenis(N) animō(Abl), quō(Adv) tulit(Per)(Akt) vultū(Abl) necem(A)?
+(719) [CHORUS:] mit|welchem der|Jüngling Gemüt, mit|welchem trug Miene Tod?
+(720) [NUNTIUS:] Stetit(Per)(Akt) suī(Pr)(G) sēcūrus(Adj)(N) et(Kon) nōn(Pt) est(Prä)(Akt) precēs(A)
+(720) [NUNTIUS:] stand seines sicher und nicht ist Bitten
+(721) [NUNTIUS:] perīre(Prä)(Inf)(Akt) frūstrā(Adv) passus(Per)(Pas)(N); ast(Pt) illī(Pr)(D) ferus(Adj)(N)
+(721) [NUNTIUS:] untergehen vergeblich zugelassen; doch jenem wild
+(722) [NUNTIUS:] in(Prp) vulnere(Abl) ēnsem(A) abscondit(Prä)(Akt) et(Kon) penitus(Adv) premēns(Prä)(Akt)(N)
+(722) [NUNTIUS:] in der|Wunde Schwert verbirgt und tief drückend
+(723) [NUNTIUS:] jugulō(D) manum(A) commīsit(Per)(Akt): ēductō(Per)(Pas)(Abl) stetit(Per)(Akt)
+(723) [NUNTIUS:] an|den|Hals Hand legte|an: heraus|gezogenen stand
+(724) [NUNTIUS:] ferrō(Abl) cadāver(N), cumque(Pr)(Kon) dubitāsset(Plq)(Knj)(Akt) diū(Adv)
+(724) [NUNTIUS:] dem|Eisen Leichnam, und|als gezögert|hätte lange
+(725) [NUNTIUS:] hāc(Pr)(Abl) parte(Abl) an(Kon) illā(Pr)(Abl) caderet(Imp)(Knj)(Akt), in(Prp) patruum(A) cadit(Prä)(Akt).
+(725) [NUNTIUS:] auf|dieser Seite oder jener fiele, auf den|Onkel fällt.
+(726) [NUNTIUS:] tunc(Adv) ille(Pr)(N) ad(Prp) ārās(A) Plīsthenem(N) saevus(Adj)(N) trahit(Prä)(Akt)
+(726) [NUNTIUS:] dann jener zu den|Altären Plisthenes grausam zieht
+(727) [NUNTIUS:] adicitque(Prä)(Akt)(Kon) frātrī(D); colla(A) percussa(Per)(Pas)(A) amputat(Prä)(Akt);
+(727) [NUNTIUS:] fügt|hinzu|und dem|Bruder; Hälse geschlagene haut|ab;
+(728) [NUNTIUS:] cervīce(Abl) caesā(Per)(Pas)(Abl) truncus(N) in(Prp) prōnum(A) ruit(Prä)(Akt),
+(728) [NUNTIUS:] mit|dem|Nacken gefällt Rumpf auf den|Vorderkörper stürzt,
+(729) [NUNTIUS:] querulum(Adj)(N) cucurrit(Per)(Akt) murmure(Abl) incertō(Adj)(Abl) caput(N).
+(729) [NUNTIUS:] klagendes lief mit|Gemurmel unsicherem Kopf.
+(730) [CHORUS:] Quid(Adv) deinde(Adv) geminā(Adj)(Abl) caede(N)(Abl) perfūnctus(Per)(Pas)(N) facit(Prä)(Akt)?
+(730) [CHORUS:] was dann doppelte mit|der|Tötung erledigt|habend macht?
+(731) [CHORUS:] puerōne(D)(Pt) parcit(Prä)(Akt), an(Kon) scelus(A) scelerī(D) ingerit(Prä)(Akt)?
+(731) [CHORUS:] dem|Knaben|? schont, oder Verbrechen dem|Verbrechen fügt|hinzu?
+(732) [NUNTIUS:] Silvā(N)(Abl) jubātus(Adj)(N) quālis(Pr)(N) Armeniā(N)(Abl) leō(N)
+(732) [NUNTIUS:] im|Wald bemähnter wie in|Armenien Löwe
+(733) [NUNTIUS:] in(Prp) caede(N)(Abl) multā(Adj)(Abl) victor(N) armentō(D) incubat(Prä)(Akt)
+(733) [NUNTIUS:] in der|Tötung großen Sieger auf|der|Herde lagert
+(734) [NUNTIUS:] (cruōre(N)(Abl) rictūs(N) madidus(Adj)(N) et(Kon) pulsā(Per)(Pas)(Abl) famē(N)(Abl)
+(734) [NUNTIUS:] (von|Blut die|Schnauze triefend und weg|getrieben|wordener Hunger
+(735) [NUNTIUS:] nōn(Pt) pōnit(Prä)(Akt) īrās(A): hinc(Adv) et(Kon) hinc(Adv) taurōs(A) premēns(Prä)(Akt)(N)
+(735) [NUNTIUS:] nicht legt|ab den|Zorn: hier und dort die|Stiere drückend
+(736) [NUNTIUS:] vitulīs(D) minātur(Prä)(Akt) dente(N)(Abl) jam(Adv) lassō(Adj)(Abl) impiger(Adj)(N)),
+(736) [NUNTIUS:] den|Kälbern droht mit|dem|Zahn schon müden unermüdlicher),
+(737) [NUNTIUS:] nōn(Pt) aliter(Adv) Atreus(N) saevit(Prä)(Akt) atque(Kon) īrā(N)(Abl) tumet(Prä)(Akt),
+(737) [NUNTIUS:] nicht anders Atreus wütet und vor|Zorn schwillt,
+(738) [NUNTIUS:] ferrumque(A)(Kon) geminā(Adj)(Abl) caede(N)(Abl) perfūsum(Per)(Pas)(A) tenēns(Prä)(Akt)(N),
+(738) [NUNTIUS:] das|Schwert|und doppelter mit|der|Tötung übergossen haltend,
+(739) [NUNTIUS:] oblītus(Per)(Pas)(N) in(Prp) quem(Pr)(A) fureret(Imp)(Knj)(Akt), infēstā(Adj)(Abl) manū(N)(Abl)
+(739) [NUNTIUS:] vergessen|habend gegen den|welchen tobte, mit|der|feindlicher Hand
+(740) [NUNTIUS:] exēgit(Per)(Akt) ultrā(Adv) corpus(A), ac(Kon) puerī(G) statim(Adv)
+(740) [NUNTIUS:] trieb|hinaus über|hinaus den|Körper, und des|Knaben sofort
+(741) [NUNTIUS:] pectore(N)(Abl) receptus(Per)(Pas)(N) ēnsis(N) ē(Prp) tergō(N)(Abl) exstitit(Per)(Akt);
+(741) [NUNTIUS:] in|der|Brust aufgenommen|worden das|Schwert aus dem|Rücken ragte|hervor;
+(742) [NUNTIUS:] cadit(Prä)(Akt) ille(Pr)(N) et(Kon) ārās(A) sanguine(N)(Abl) extinguēns(Prä)(Akt)(N) suō(Pr)(Abl)
+(742) [NUNTIUS:] fällt jener und die|Altäre mit|dem|Blut löschend seinem|eigenen
+(743) [NUNTIUS:] per(Prp) utrumque(Pr)(A) vulnus(A) moritur(Prä)(Pas). Ō(ij) saevum(Adj)(N) scelus(N)!
+(743) [NUNTIUS:] durch jedes|von|beiden die|Wunde stirbt. o grausames Verbrechen!
+(744) [NUNTIUS:] Exhorruistis(Per)(Akt)? hāctenus(Adv) sī(Kon) stat(Prä)(Akt) nefās(N),
+(744) [NUNTIUS:] habt|ihr|erschauert? bis|hierhin wenn steht Frevel,
+(745) [NUNTIUS:] pius(Adj)(N) est(Prä)(Akt). An(Kon) ultrā(Adv) majus(Adj)(Kmp)(N) aut(Kon) atrōcius(Adj)(Kmp)(N)
+(745) [NUNTIUS:] fromm ist. oder|etwa darüber|hinaus Größeres oder Schlimmeres
+(746) [CHORUS:] nātūra(N) recipit(Prä)(Akt)? Sceleris(G) hunc(Pr)(A) fīnem(A) putās(Prä)(Akt)?
+(746) [CHORUS:] die|Natur nimmt|auf? des|Verbrechens diesen Ende hältst|du?
+(747) [NUNTIUS:] gradus(N) est(Prä)(Akt). Quid(Adv) ultrā(Adv) potuit(Per)(Akt)? Objēcit(Per)(Akt) ferīs(D)
+(747) [NUNTIUS:] ein|Schritt ist. was darüber|hinaus konnte? warf|vor den|wilden|Tieren
+(748) [CHORUS:] lanianda(Fu1)(Pas)(A)(Gdv) forsan(Adv) corpora(A) atque(Kon) igne(N)(Abl) arcuit(Per)(Akt)?
+(748) [CHORUS:] zu|zerreißen|seiende vielleicht Körper und mit|dem|Feuer wehrte|ab?
+(749) [NUNTIUS:] Utinam(ij) arcuisset(Plq)(Knj)(Akt)! nē(Kon) tegat(Prä)(Knj)(Akt) fūnctōs(Per)(Pas)(A) humus(N)
+(749) [NUNTIUS:] wenn|doch hätte|abgewehrt! dass|nicht bedecke|es die|Toten Erde
+(750) [NUNTIUS:] nec(Kon) solvat(Prä)(Knj)(Akt) ignis(N)! avibus(D) epulandōs(Fu1)(Pas)(A)(Gdv) licet(Prä)(Akt)
+(750) [NUNTIUS:] und|nicht löse|es das|Feuer! den|Vögeln zum|Verspeisen|zu|gebende ist|erlaubt
+(751) [NUNTIUS:] ferīsque(D)(Kon) trīste(Adj)(N) pābulum(N) saevīs(Adj)(D) trahat(Prä)(Knj)(Akt);
+(751) [NUNTIUS:] den|Bestien|und traurige Futter grimmigen ziehe;
+(752) [NUNTIUS:] vōtum(N) est(Prä)(Akt) sub(Prp) hōc(Pr)(Abl) quod(Pr)(N) esse(Inf)(Akt) supplicium(N) solet(Prä)(Akt);
+(752) [NUNTIUS:] der|Wunsch ist unter diesem was zu|sein Strafe pflegt;
+(753) [NUNTIUS:] pater(N) īnsepultōs(Per)(Pas)(A) spectet(Prä)(Knj)(Akt)! ō(ij) nūllō(Adj)(Abl) scelus(N)
+(753) [NUNTIUS:] der|Vater un|bestattete schaue! o keinem Verbrechen
+(754) [NUNTIUS:] crēdibile(Adj)(N) in(Prp) aevō(N)(Abl) quodque(Pr)(N)(Kon) posteritās(N) neget(Prä)(Knj)(Akt):
+(754) [NUNTIUS:] glaubwürdig in dem|Zeitalter und|welches die|Nachwelt verneine:
+(755) [NUNTIUS:] ērepta(Per)(Pas)(N) vīvīs(Adj)(Abl) exta(N) pectoribus(N)(Abl) tremunt(Prä)(Akt)
+(755) [NUNTIUS:] heraus|gerissene den|Lebenden Eingeweide aus|den|Brüsten zittern
+(756) [NUNTIUS:] spīrantque(Prä)(Akt)(Kon) vēnae(N) corque(N)(Kon) adhūc(Adv) pavidum(Adj)(N) salit(Prä)(Akt).
+(756) [NUNTIUS:] atmen|und die|Adern und|das|Herz noch zagendes springt.
+(757) [NUNTIUS:] at(Kon) ille(Pr)(N) fibrās(A) tractat(Prä)(Akt) ac(Kon) fāta(A) īnspicit(Prä)(Akt)
+(757) [NUNTIUS:] aber jener die|Fasern betastet und die|Schicksale betrachtet
+(758) [NUNTIUS:] et(Kon) adhūc(Adv) calentēs(Prä)(Akt)(A) vīscerum(G) vēnās(A) notat(Prä)(Akt).
+(758) [NUNTIUS:] und noch warm|seiende der|Eingeweide Adern zeichnet|an.
+(759) [NUNTIUS:] postquam(Kon) hostiae(N) placuēre(Per)(Akt), sēcūrus(Adj)(N) vacat(Prä)(Akt)
+(759) [NUNTIUS:] nachdem die|Opfer gefallen|haben, sorglos widmet|sich
+(760) [NUNTIUS:] jam(Adv) frātris(G) epulīs(N)(Abl). Ipse(Pr)(N) dīvīsum(Per)(Pas)(A) secat(Prä)(Akt)
+(760) [NUNTIUS:] schon des|Bruders dem|Festmahl. er|selbst geteilt zerlegt
+(761) [NUNTIUS:] in(Prp) membra(A) corpus(A), amputat(Prä)(Akt) truncō(N)(Abl) tenus(Prp)
+(761) [NUNTIUS:] in Glieder den|Körper, schneidet|ab bis|zum|Rumpf hin
+(762) [NUNTIUS:] umerōs(A) patentīs(Prä)(Akt)(A) et(Kon) lacertōrum(G) morās(A),
+(762) [NUNTIUS:] die|Schultern offen|stehende und der|Oberarme Hemmungen,
+(763) [NUNTIUS:] dēnūdat(Prä)(Akt) artūs(A) dūrus(Adj)(N) atque(Kon) ossa(A) amputat(Prä)(Akt);
+(763) [NUNTIUS:] legt|bloß Glieder harte und Knochen trennt|ab;
+(764) [NUNTIUS:] tantum(Adv) ōra(A) servat(Prä)(Akt) et(Kon) datās(Per)(Pas)(A) fidei(G) manūs(A).
+(764) [NUNTIUS:] nur Gesichter bewahrt und übergeben|wordene der|Treue Hände.
+(765) [NUNTIUS:] haec(Pr)(N) veribus(N)(Abl) haerent(Prä)(Akt) vīscera(N) et(Kon) lentīs(Adj)(Abl) data(Per)(Pas)(N)
+(765) [NUNTIUS:] dies an|den|Spießen haften Eingeweide und trägen gegeben|wordene
+(766) [NUNTIUS:] stillant(Prä)(Akt) camīnīs(N)(Abl), illa(Pr)(N) flammātus(Per)(Pas)(N) latex(N)
+(766) [NUNTIUS:] tröpfeln aus|den|Öfen, jene entzündet|wordener Flüssigkeit
+(767) [NUNTIUS:] candente(Prä)(Akt)(Abl) aēnō(N)(Abl) jactat(Prä)(Akt). Impositās(Per)(Pas)(A) dapēs(A)
+(767) [NUNTIUS:] glühend|seiendem im|Kessel schleudert. aufgelegte Speisen
+(768) [NUNTIUS:] trānsiluit(Per)(Akt) ignis(N) inque(Prp)(Kon) trepidantēs(Prä)(Akt)(A) focōs(A)
+(768) [NUNTIUS:] sprang|hinüber das|Feuer in|und zitternde Herde
+(769) [NUNTIUS:] bis(Adv) ter(Adv) regestus(Per)(Pas)(N) et(Kon) patī(Inf)(Akt) jussus(Per)(Pas)(N) moram(A)
+(769) [NUNTIUS:] zweimal dreimal zurück|getrieben|worden und zu|erleiden geheißen|worden Verzögerung
+(770) [NUNTIUS:] invītus(Adj)(N) ārdet(Prä)(Akt). Strīdet(Prä)(Akt) in(Prp) veribus(N)(Abl) jecur(N);
+(770) [NUNTIUS:] ungern brennt. zischt auf den|Spießen die|Leber;
+(771) [NUNTIUS:] nec(Kon) facile(Adv) dīcam(Fu1)(Akt) corpora(A) an(Kon) flammae(N) magis(Adv)
+(771) [NUNTIUS:] und|nicht leicht werde|ich|sagen die|Körper oder die|Flammen mehr
+(772) [NUNTIUS:] gemuēre(Per)(Akt). Piceōs(Adj)(A) ignis(N) in(Prp) fūmōs(A) abit(Prä)(Akt);
+(772) [NUNTIUS:] haben|gestöhnt. pechige das|Feuer in Rauch geht|über;
+(773) [NUNTIUS:] et(Kon) ipse(Pr)(N) fūmus(N), trīstis(Adj)(N) ac(Kon) nebulā(N)(Abl) gravis(Adj)(N),
+(773) [NUNTIUS:] und selbst der|Rauch, traurig und von|Nebel schwer,
+(774) [NUNTIUS:] nōn(Pt) rēctus(Adj)(N) exit(Prä)(Akt), sēque(Pr)(A)(Kon) in(Prp) excelsum(Adj)(A) levat(Prä)(Akt);
+(774) [NUNTIUS:] nicht gerade steigt|auf, sich|und in die|Höhe hebt;
+(775) [NUNTIUS:] ipsōs(Pr)(A) penātēs(A) nūbe(N)(Abl) dēfōrmī(Adj)(Abl) obsidet(Prä)(Akt).
+(775) [NUNTIUS:] selbst|die Hausgötter mit|der|häßlichen Wolke belagert.
+(776) [NUNTIUS:] Ō(ij) Phoebe(V) patiēns(Prä)(Akt)(N), fūgerīs(Fu2)(Akt) retrō(Adv) licet(Pt)
+(776) [NUNTIUS:] o Phoebus leidend|seiender, magst|du|geflohen|sein zurück magst|auch
+(777) [NUNTIUS:] mediōque(Adj)(Abl)(Kon) ruptum(Per)(Pas)(A) merserīs(Fu2)(Akt) caelō(N)(Abl) diem(A),
+(777) [NUNTIUS:] in|der|Mitte|und zerbrochenen magst|du|versenkt|haben im|Himmel den|Tag,
+(778) [NUNTIUS:] sērō(Adv) occidistī(Per)(Akt). Lancinat(Prä)(Akt) nātōs(A) pater(N)
+(778) [NUNTIUS:] zu|spät bist|untergegangen. zerfleischt Söhne der|Vater
+(779) [NUNTIUS:] artūsque(A)(Kon) mandit(Prä)(Akt) ōre(N)(Abl) fūnestō(Adj)(Abl) suōs(Pr)(A);
+(779) [NUNTIUS:] Glieder|und kaut mit|dem|unheilvollen Mund seine|eigenen;
+(780) [NUNTIUS:] nitet(Prä)(Akt) fluente(Prä)(Akt)(Abl) madidus(Adj)(N) unguentō(N)(Abl) comam(A)
+(780) [NUNTIUS:] glänzt fließend|seiendem triefender von|Salböl das|Haar
+(781) [NUNTIUS:] gravisque(Adj)(N)(Kon) vīnō(N)(Abl); saepe(Adv) praeclūsae(Per)(Pas)(N) cibum(A)
+(781) [NUNTIUS:] und|beschwert durch|Wein; oft verschlossene Speise
+(782) [NUNTIUS:] tenuēre(Per)(Akt) faucēs(N); in(Prp) malīs(N)(Abl) ūnum(Adj)(N) hoc(Pr)(N) tuīs(Pr)(Abl)
+(782) [NUNTIUS:] hielten die|Kehlen; in deinen|Übeln eines dies deinen
+(783) [NUNTIUS:] bonum(N) est(Prä)(Akt), Thyestā(V), quod(Pr)(N) mala(N) ignōrās(Prä)(Akt) tua(Pr)(A).
+(783) [NUNTIUS:] Gutes ist, Thyestes, dass Übel du|nicht|kennst deine.
+(784) [NUNTIUS:] sed(Kon) et(Kon) hoc(Pr)(N) perībit(Fu1)(Akt). Verterit(Fu2)(Akt) currūs(A) licet(Pt)
+(784) [NUNTIUS:] aber auch dies wird|zugrunde|gehen. mag|er|gewendet|haben den|Wagen mag|auch
+(785) [NUNTIUS:] sibi(Pr)(D) ipse(Pr)(N) Tītān(N) obvium(Adj)(A) dūcēns(Prä)(Akt)(N) iter(A)
+(785) [NUNTIUS:] sich selbst Titan entgegen führend den|Weg
+(786) [NUNTIUS:] tenebrīsque(N)(Abl)(Kon) facinus(N) obruat(Prä)(Knj)(Akt) taetrum(Adj)(N) novīs(Adj)(Abl)
+(786) [NUNTIUS:] mit|Finsternis|und die|Tat bedecke widerliche neuen
+(787) [NUNTIUS:] nox(N) missa(Per)(Pas)(N) ab(Prp) ortū(N)(Abl) tempore(N)(Abl) aliēnō(Adj)(Abl) gravis(Adj)(N),
+(787) [NUNTIUS:] die|Nacht gesandt|wordene vom Aufgang zu|einer|Zeit fremden schwer,
+(788) [NUNTIUS:] tamen(Pt) videndum(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt). Tōta(Adj)(N) patefīent(Fu1)(Pas) mala(N).
+(788) [NUNTIUS:] dennoch ist|zu|sehen ist. alle werden|geöffnet|werden Übel.
+=== Chor (Anapäste) ===
+(789) [CHORUS:] Quō(Adv) terrārum(G) superumque(Adj)(G)(Kon) parēns(N),
+(789) [CHORUS:] wohin der|Länder der|Götter|oben|und Vater,
+(790) [CHORUS:] cujus(Pr)(G) ad(Prp) ortūs(A) noctis(G) opācae(Adj)(G)
+(790) [CHORUS:] dessen zu den|Aufgängen der|Nacht dunklen
+(791) [CHORUS:] decus(N) omne(Adj)(N) fugit(Prä)(Akt), quō(Adv) vertis(Prä)(Akt) iter(A)
+(791) [CHORUS:] Glanz jeder flieht, wohin wendest|du den|Weg
+(792) [CHORUS:] mediōque(Adj)(Abl)(Kon) diem(A) perdis(Prä)(Akt) Olympō(N)(Abl)?
+(792) [CHORUS:] in|der|Mitte|und den|Tag verlierst|du auf|dem|Olymp?
+(793) [CHORUS:] cūr(Adv), Phoebe(V), tuōs(Pr)(A) rapis(Prä)(Akt) aspectūs(A)?
+(793) [CHORUS:] warum, Phoebus, deine raubst|du Blicke?
+(794) [CHORUS:] nōndum(Adv) sērae(Adj)(G) nūntius(N) hōrae(G)
+(794) [CHORUS:] noch|nicht späten Bote der|Stunde
+(795) [CHORUS:] nocturna(Adj)(A) vocat(Prä)(Akt) lūmina(A) Vesper(N);
+(795) [CHORUS:] nächtliche ruft Lichter Vesper;
+(796) [CHORUS:] nōndum(Adv) Hesperiae(Adj)(G) flexūra(N) rotae(G)
+(796) [CHORUS:] noch|nicht des|westlichen Biegung des|Rades
+(797) [CHORUS:] jubet(Prä)(Akt) ēmeritōs(Per)(Pas)(A) solvere(Inf)(Akt) currūs(A);
+(797) [CHORUS:] befiehlt entlassen zu|lösen Wagen;
+(798) [CHORUS:] nōndum(Adv) in(Prp) noctem(A) vergente(Prä)(Akt)(Abl) diē(N)(Abl)
+(798) [CHORUS:] noch|nicht in die|Nacht sich|wendend am|Tag
+(799) [CHORUS:] tertia(Adj)(N) mīsit(Per)(Akt) būcina(N) signum(A):
+(799) [CHORUS:] dritte sandte Trompete Zeichen:
+(800) [CHORUS:] stupet(Prä)(Akt) ad(Prp) subitae(Adj)(G) tempora(A) cēnae(G)
+(800) [CHORUS:] staunt bei der|plötzlichen Zeiten des|Mahls
+(801) [CHORUS:] nōndum(Adv) fessīs(Adj)(Abl) būbus(N)(Abl) arātor(N).
+(801) [CHORUS:] noch|nicht müden mit|den|Rindern Pflüger.
+(802) [CHORUS:] Quid(Adv) tē(Pr)(A) aetheriō(Adj)(Abl) pepulit(Per)(Akt) cursū(N)(Abl)?
+(802) [CHORUS:] was dich ätherischen stieß|fort mit|dem|Lauf?
+(803) [CHORUS:] quae(Pr)(N) causa(N) tuōs(Adj)(A) līmite(N)(Abl) certō(Adj)(Abl)
+(803) [CHORUS:] welche Ursache deine mit|dem|Pfad festen
+(804) [CHORUS:] dējēcit(Per)(Akt) equōs(A)? numquid(Pt) apertō(Per)(Pas)(Abl)
+(804) [CHORUS:] warf|hinab Pferde? etwa geöffnetem
+(805) [CHORUS:] carcere(N)(Abl) Dītis(G) victī(Per)(Pas)(N) temptant(Prä)(Akt)
+(805) [CHORUS:] mit|dem|Kerker des|Dis Besiegte versuchen
+(806) [CHORUS:] bella(A) Gigantes(N)? numquid(Pt) Tityos(N)
+(806) [CHORUS:] Kriege Giganten? etwa Tityos
+(807) [CHORUS:] pectore(N)(Abl) fessō(Adj)(Abl) renovat(Prä)(Akt) veterēs(Adj)(A)
+(807) [CHORUS:] mit|der|Brust müden erneuert alte
+(808) [CHORUS:] saucius(Adj)(N) īrās(A)? num(Pt) rējectō(Per)(Pas)(Abl)
+(808) [CHORUS:] verwundet Zorne? ob zurück|geworfenem
+(809) [CHORUS:] latus(A) explicuit(Per)(Akt) monte(N)(Abl) Typhoeus(N)?
+(809) [CHORUS:] die|Seite entfaltete mit|dem|Berg Typhoeus?
+(810) [CHORUS:] numquid(Pt) struitur(Prä)(Pas) via(N) Phlegraeōs(Adj)(A)
+(810) [CHORUS:] etwa wird|gebaut Weg phlegräische
+(811) [CHORUS:] alta(Adj)(A) per(Prp) hostēs(A) et(Kon) Thessalicum(Adj)(A)
+(811) [CHORUS:] hohen durch Feinde und thessalischen
+(812) [CHORUS:] Thrēssā(Adj)(Abl) premitur(Prä)(Pas) Pēlion(N) Ossā(N)(Abl)?
+(812) [CHORUS:] thrakischer wird|gedrückt Pelion von|Ossa?
+(813) [CHORUS:] Solitae(Per)(Pas)(N) mundī(G) periēre(Per)(Akt) vicēs(N)?
+(813) [CHORUS:] gewöhnte der|Welt sind|zugrunde|gegangen Wechselfälle?
+(814) [CHORUS:] nihil(Pr)(N) occāsus(N), nihil(Pr)(N) ortus(N) erit(Fu1)(Akt)?
+(814) [CHORUS:] nichts Untergang, nichts Aufgang wird|sein?
+(815) [CHORUS:] Stupet(Prä)(Akt) Eōōs(Adj)(A) assuēta(Per)(Pas)(N) deō(D)
+(815) [CHORUS:] staunt morgenländischen gewöhnt dem|Gott
+(816) [CHORUS:] trādere(Inf)(Akt) frēnōs(A) genetrīx(N) prīmae(Adj)(G)
+(816) [CHORUS:] zu|übergeben Zügel Gebärerin ersten
+(817) [CHORUS:] rōscida(Adj)(N) lūcis(G) perversa(Per)(Pas)(N) suī(Pr)(G)
+(817) [CHORUS:] tauige des|Lichts verkehrt ihrer
+(818) [CHORUS:] līmina(A) rēgnī(G); nescit(Prä)(Akt) fessōs(Adj)(A)
+(818) [CHORUS:] Schwellen des|Reiches; kennt|nicht müde
+(819) [CHORUS:] tinguere(Inf)(Akt) currūs(A) nec(Kon) fūmantēs(Prä)(Akt)(A)
+(819) [CHORUS:] zu|benetzen Wagen und|nicht rauchende
+(820) [CHORUS:] sūdōre(N)(Abl) jubās(A) mergere(Inf)(Akt) pontō(N)(Abl).
+(820) [CHORUS:] mit|Schweiß Mähnen zu|tauchen im|Meer.
+(821) [CHORUS:] ipse(Pr)(N) īnsuētō(Per)(Pas)(Abl) novus(Adj)(N) hospitiō(N)(Abl)
+(821) [CHORUS:] er|selbst mit|ungewohnter neuer Gastfreundschaft
+(822) [CHORUS:] Sōl(N) Aurōram(A) videt(Prä)(Akt) occiduus(Adj)(N)
+(822) [CHORUS:] Sonne Aurora sieht westlich
+(823) [CHORUS:] tenebrāsque(A)(Kon) jubet(Prä)(Akt) surgere(Inf)(Akt) nōndum(Adv)
+(823) [CHORUS:] Finsternis|und befiehlt zu|aufsteigen noch|nicht
+(824) [CHORUS:] nocte(N)(Abl) parātā(Per)(Pas)(Abl): nōn(Pt) succēdunt(Prä)(Akt)
+(824) [CHORUS:] bei|der|Nacht bereiteten: nicht folgen
+(825) [CHORUS:] astra(N) nec(Kon) ūllō(Adj)(Abl) micat(Prä)(Akt) igne(N)(Abl) polus(N),
+(825) [CHORUS:] Sterne und|nicht irgendeinem glänzt Feuer Himmel,
+(826) [CHORUS:] nōn(Pt) Lūna(N) gravēs(Adj)(A) dīgerit(Prä)(Akt) umbrās(A).
+(826) [CHORUS:] nicht Mond schwere ordnet Schatten.
+(827) [CHORUS:] Sed(Kon) quidquid(Pr)(N) id(Pr)(N) est(Prä)(Akt), utinam(ij) nox(N) sit(Prä)(Knj)(Akt)!
+(827) [CHORUS:] aber was|auch|immer dies ist, ach Nacht sei!
+(828) [CHORUS:] trepidant(Prä)(Akt), trepidant(Prä)(Akt) pectora(N) magnō(Adj)(Abl)
+(828) [CHORUS:] beben, beben Herzen mit|großem
+(829) [CHORUS:] percussa(Per)(Pas)(N) metū(N)(Abl): nē(Kon) fātālī(Adj)(Abl)
+(829) [CHORUS:] erschlagene durch|Furcht: damit schicksalhaftem
+(830) [CHORUS:] cūncta(Adj)(A) ruīnā(N)(Abl)
+(830) [CHORUS:] alles durch|den|Sturz
+(831) [CHORUS:] quassāta(Per)(Pas)(N) labent(Prä)(Akt) iterumque(Adv)(Kon) deōs(A)
+(831) [CHORUS:] erschütterte fallen und|wieder Götter
+(832) [CHORUS:] hominēsque(A)(Kon) premat(Prä)(Knj)(Akt) dēfōrme(Adj)(N) chaos(N),
+(832) [CHORUS:] Menschen|und drücke gestaltlos Chaos,
+(833) [CHORUS:] iterum(Adv) terrās(A) et(Kon) mare(A) cingēns(Prä)(Akt)(N)
+(833) [CHORUS:] wieder Länder und Meer umgürtend
+(834) [CHORUS:] et(Kon) vaga(Adj)(A) pictī(Per)(Pas)(G) sīdera(A) mundī(G)
+(834) [CHORUS:] und schweifende des|gemalten Sterne der|Welt
+(835) [CHORUS:] nātūra(N) tegat(Prä)(Knj)(Akt). Nōn(Pt) aeternae(Adj)(G)
+(835) [CHORUS:] Natur bedecke. nicht ewigen
+(836) [CHORUS:] facis(G) exortū(N)(Abl) dux(N) astrōrum(G)
+(836) [CHORUS:] der|Fackel durch|den|Aufgang Führer der|Sterne
+(837) [CHORUS:] saecula(A) dūcēns(Prä)(Akt)(N) dabit(Fu1)(Akt) aestātis(G)
+(837) [CHORUS:] Zeitalter führend wird|geben des|Sommers
+(838) [CHORUS:] brūmaeque(G)(Kon) notās(A), nōn(Pt) Phoebēīs(Adj)(Abl)
+(838) [CHORUS:] des|Winters|und Zeichen, nicht phöbäischen
+(839) [CHORUS:] obvia(Adj)(A) flammīs(N)(Abl) dēmet(Prä)(Akt) noctī(D)
+(839) [CHORUS:] entgegen|gehende mit|den|Flammen nehme|weg der|Nacht
+(840) [CHORUS:] Lūna(N) timōrēs(A) vincetque(Fu1)(Akt)(Kon) suī(Pr)(G)
+(840) [CHORUS:] Mond Ängste wird|besiegen|und ihrer
+(841) [CHORUS:] frātris(G) habēnās(A) curvō(Adj)(Abl) brevius(Adv)(Kmp)
+(841) [CHORUS:] des|Bruders Zügel im|Gekrümmten kürzer
+(842) [CHORUS:] līmite(N)(Abl) currēns(Prä)(Akt)(N). Ībit(Fu1)(Akt) in(Prp) ūnum(Adj)(A)
+(842) [CHORUS:] auf|dem|Pfad laufend. wird|gehen in eines
+(843) [CHORUS:] congesta(Per)(Pas)(N) sinum(A) turba(N) deōrum(G).
+(843) [CHORUS:] angehäufte Schoß Menge der|Götter.
+(844) [CHORUS:] hic(Pr)(N) quī(Pr)(N) sacrīs(Adj)(Abl) pervius(Adj)(N) astrīs(N)(Abl)
+(844) [CHORUS:] dieser der heiligen durchgängig bei|den|Sternen
+(845) [CHORUS:] secat(Prä)(Akt) oblīquō(Adj)(Abl) trāmite(N)(Abl) zōnās(A),
+(845) [CHORUS:] schneidet schrägem mit|dem|Pfad Zonen,
+(846) [CHORUS:] flectēns(Prä)(Akt)(N) longōs(Adj)(A) signifer(Adj)(N) annōs(A),
+(846) [CHORUS:] biegend lange zeichen|tragende Jahre,
+(847) [CHORUS:] lāpsa(Per)(Pas)(N) vidēbit(Fu1)(Akt) sīdera(A) lābēns(Prä)(Akt)(N);
+(847) [CHORUS:] geglittene wird|sehen Sterne gleitend;
+(848) [CHORUS:] hic(Pr)(N) quī(Pr)(N) nōndum(Adv) vēre(N)(Abl) benignō(Adj)(Abl)
+(848) [CHORUS:] dieser der noch|nicht im|Frühling gnädigen
+(849) [CHORUS:] reddit(Prä)(Akt) Zephyrō(D) vela(A) tepentī(Prä)(Akt)(D)
+(849) [CHORUS:] gibt dem|Zephyr Segel wärmenden
+(850) [CHORUS:] Ariēs(N) praeceps(Adj)(N) ībit(Fu1)(Akt) in(Prp) undās(A),
+(850) [CHORUS:] Widder kopfüber wird|gehen in Wogen,
+(851) [CHORUS:] per(Prp) quās(Pr)(A) pavidam(Adj)(A) vēxerat(Per)(Akt) Hellēn(A);
+(851) [CHORUS:] durch welche furchtsame hatte|getrieben Helle;
+(852) [CHORUS:] hic(Pr)(N) quī(Pr)(N) nitidō(Adj)(Abl) Taurus(N) cornū(N)(Abl)
+(852) [CHORUS:] dieser der glänzenden Stier mit|dem|Horn
+(853) [CHORUS:] praefert(Prä)(Akt) Hyadas(A), sēcum(Pr)(Abl)(Prp) Geminōs(A)
+(853) [CHORUS:] trägt|vor Hyaden, mit|sich Zwillinge
+(854) [CHORUS:] trahet(Fu1)(Akt) et(Kon) curvī(Adj)(G) bracchia(A) Cancrī(G);
+(854) [CHORUS:] wird|ziehen und des|gekrümmten Arme des|Krebses;
+(855) [CHORUS:] Leo(N) flammiferīs(Adj)(Abl) aestibus(N)(Abl) ārdēns(Prä)(Akt)(N)
+(855) [CHORUS:] Löwe flammen|tragenden mit|Glut|Hitzen brennend
+(856) [CHORUS:] iterum(Adv) ē(Prp) caelō(N)(Abl) cadet(Fu1)(Akt) Herculeus(Adj)(N),
+(856) [CHORUS:] wieder aus dem|Himmel wird|fallen herkulisch,
+(857) [CHORUS:] cadet(Fu1)(Akt) in(Prp) terrās(A) Virgo(N) relictās(Per)(Pas)(A)
+(857) [CHORUS:] wird|fallen in Länder Jungfrau verlassenen
+(858) [CHORUS:] jūstaeque(Adj)(N)(Kon) cadent(Fu1)(Akt) pondera(N) Lībrae(G)
+(858) [CHORUS:] gerechte|und werden|fallen Gewichte der|Waage
+(859) [CHORUS:] sēcumque(Pr)(Abl)(Prp)(Kon) trahent(Fu1)(Akt) Scorpion(A) ācrem(Adj)(A).
+(859) [CHORUS:] mit|sich|und werden|ziehen Skorpion scharfen.
+(860) [CHORUS:] et(Kon) quī(Pr)(N) nervō(N)(Abl) tenet(Prä)(Akt) Haemoniō(Adj)(Abl)
+(860) [CHORUS:] und der mit|der|Sehne hält hämonischer
+(861) [CHORUS:] pinnāta(Per)(Pas)(A) senex(N) spīcula(A) Chīrōn(N),
+(861) [CHORUS:] beflügelte Greis Geschosse Chiron,
+(862) [CHORUS:] ruptō(Per)(Pas)(Abl) perdet(Fu1)(Akt) spīcula(A) nervō(N)(Abl);
+(862) [CHORUS:] mit|gebrochener wird|verlieren Geschosse Sehne;
+(863) [CHORUS:] pigram(Adj)(A) referēns(Prä)(Akt)(N) hiemem(A) gelidus(Adj)(N)
+(863) [CHORUS:] träge zurück|bringend Winter kalter
+(864) [CHORUS:] cadet(Fu1)(Akt) Aegocerōs(N) frangetque(Fu1)(Akt)(Kon) tuam(Pr)(A),
+(864) [CHORUS:] wird|fallen Steinbock wird|brechen|und deine,
+(865) [CHORUS:] quisquis(Pr)(N) es(Prä)(Akt), urnam(A); tēcum(Pr)(Abl)(Prp) excēdent(Fu1)(Akt)
+(865) [CHORUS:] wer|auch|immer bist, Urne; mit|dir werden|hinausgehen
+(866) [CHORUS:] ultima(Adj)(N) caelī(G) sīdera(N) Piscēs(N),
+(866) [CHORUS:] letzten des|Himmels Sterne Fische,
+(867) [CHORUS:] mōnstraque(N)(Kon) numquam(Adv) perfūsa(Per)(Pas)(N) marī(N)(Abl)
+(867) [CHORUS:] Ungeheuer|und niemals durch|das|Meer durchtränkte
+(868) [CHORUS:] merget(Fu1)(Akt) condēns(Prä)(Akt)(N) omnia(Pr)(A) gurges(N);
+(868) [CHORUS:] wird|untertauchen verdichtend alles Strudel;
+(869) [CHORUS:] et(Kon) quī(Pr)(N) mediās(Adj)(A) dīvidit(Per)(Akt) Ursās(A),
+(869) [CHORUS:] und der mittleren teilte Bären,
+(870) [CHORUS:] flūminis(G) īnstar(N) lūbricus(Adj)(N) Anguis(N)
+(870) [CHORUS:] des|Flusses gleich glitschiger Schlange
+(871) [CHORUS:] magnōque(Adj)(D)(Kon) minor(Adj)(N) jūncta(Per)(Pas)(N) Dracōnī(D)
+(871) [CHORUS:] dem|großen|und kleinere verbunden dem|Drachen
+(872) [CHORUS:] frīgida(Adj)(N) dūrō(Adj)(Abl) Cynosūra(N) gelū(N)(Abl),
+(872) [CHORUS:] kalte mit|hartem Kynosura mit|Frost,
+(873) [CHORUS:] cūstōsque(N)(Kon) suī(Pr)(G) tardus(Adj)(N) plaustrī(G)
+(873) [CHORUS:] Hüter|und seines langsamer Wagens
+(874) [CHORUS:] jam(Adv) nōn(Pt) stabilis(Adj)(N) ruet(Fu1)(Akt) Arctophylax(N).
+(874) [CHORUS:] schon nicht standfest wird|stürzen Arctophylax.
+(875) [CHORUS:] Nōs(Pr)(N) ē(Prp) tantō(Adj)(Abl) vīsī(Per)(Pas)(N) populō(N)(Abl)
+(875) [CHORUS:] wir aus so|großem gesehen Volk
+(876) [CHORUS:] dignī(Adj)(N), premeret(Prä)(Knj)(Akt) quōs(Pr)(A) ēversō(Per)(Pas)(Abl)
+(876) [CHORUS:] würdige, drücke welchen umgestürzten
+(877) [CHORUS:] cardine(N)(Abl) mundus(N)?
+(877) [CHORUS:] mit|dem|Angelpunkt Welt?
+(878) [CHORUS:] in(Prp) nōs(Pr)(A) aetās(N) ultima(Adj)(N) vēnit(Per)(Akt)?
+(878) [CHORUS:] auf uns Zeitalter letztes ist|gekommen?
+(879) [CHORUS:] ō(ij) nōs(Pr)(A) dūrā(Adj)(Abl) sorte(N)(Abl) creātōs(Per)(Pas)(A),
+(879) [CHORUS:] o uns hartem mit|dem|Los erschaffen,
+(880) [CHORUS:] seu(Kon) perdidimus(Per)(Akt) sōlem(A) miserī(Adj)(N),
+(880) [CHORUS:] sei|es|dass haben|wir|verloren die|Sonne Elenden,
+(881) [CHORUS:] sīve(Kon) expulimus(Per)(Akt)!
+(881) [CHORUS:] sei|es|dass haben|wir|verjagt!
+(882) [CHORUS:] abeant(Prä)(Knj)(Akt) questūs(N), discēde(Prä)(Imv)(Akt) timor(N)!
+(882) [CHORUS:] sollen|weichen die|Klagen, weiche Furcht!
+(883) [CHORUS:] vītae(G) est(Prä)(Akt) avidus(Adj)(N) quisquis(Pr)(N) nōn(Pt) vult(Prä)(Akt)
+(883) [CHORUS:] des|Lebens ist begierig wer|auch|immer nicht will
+(884) [CHORUS:] mundō(N)(Abl) sēcum(Pr)(Abl)(Prp) pereunte(Prä)(Akt)(Abl) morī(Inf)(Akt).
+(884) [CHORUS:] mit|der|Welt mit|sich untergehendem sterben.
+=== Akt 4 ===
+(885) [ATREUS, REX MYCENARUM:] Aequālis(Adj)(N) astrīs(N)(Abl) gradior(Prä)(Akt) et(Kon) cūnctōs(Adj)(A) super(Prp)
+(885) [ATREUS, REX MYCENARUM:] gleich den|Sternen schreite|ich und alle über
+(886) [ATREUS, REX MYCENARUM:] altum(Adj)(A) superbō(Adj)(Abl) vertice(N)(Abl) attingēns(Prä)(Akt)(N) polum(A).
+(886) [ATREUS, REX MYCENARUM:] den|hohen stolzen Scheitel berührend Himmel.
+(887) [ATREUS, REX MYCENARUM:] nunc(Adv) decora(A) rēgnī(G) teneo(Prä)(Akt), nunc(Adv) solium(A) patris(G).
+(887) [ATREUS, REX MYCENARUM:] nun Zierden des|Reiches halte|ich, nun den|Thron des|Vaters.
+(888) [ATREUS, REX MYCENARUM:] dīmitto(Prä)(Akt) superōs(Adj)(A); summa(Adj)(N) vōtōrum(G) attigī(Per)(Akt).
+(888) [ATREUS, REX MYCENARUM:] entlasse|ich die|Götter; das|Höchste der|Wünsche habe|ich|erreicht.
+(889) [ATREUS, REX MYCENARUM:] bene(Adv) est(Prä)(Akt), abundē(Adv) est(Prä)(Akt), jam(Adv) sat(Adj)(N) est(Prä)(Akt) etiam(Adv) mihī(Pr)(D).
+(889) [ATREUS, REX MYCENARUM:] gut ist, reichlich ist, schon genug ist auch mir.
+(890) [ATREUS, REX MYCENARUM:] sed(Kon) cūr(Adv) satis(Adj)(N) sit(Prä)(Knj)(Akt)? pergam(Prä)(Knj)(Akt) et(Kon) implēbō(Fu1)(Akt) patrem(A)
+(890) [ATREUS, REX MYCENARUM:] aber warum genug sei? werde|ich|weitergehen und werde|ich|erfüllen den|Vater
+(891) [ATREUS, REX MYCENARUM:] fūnere(N)(Abl) suōrum(Pr)(G). Nē(Kon) quid(Pr)(N) obstāret(Imp)(Knj)(Akt) pudor(N),
+(891) [ATREUS, REX MYCENARUM:] mit|dem|Tod der|Seinen. damit|nicht etwas hindere Scham,
+(892) [ATREUS, REX MYCENARUM:] diēs(N) recessit(Per)(Akt): perge(Prä)(Imv)(Akt) dum(Kon) caelum(N) vacat(Prä)(Akt).
+(892) [ATREUS, REX MYCENARUM:] der|Tag ist|gewichen: fahre|fort solange der|Himmel frei|ist.
+(893) [ATREUS, REX MYCENARUM:] utinam(ij) quidem(Pt) tenēre(Inf)(Akt) fugientēs(Prä)(Akt)(A) deōs(A)
+(893) [ATREUS, REX MYCENARUM:] ach doch festzuhalten Fliehende Götter
+(894) [ATREUS, REX MYCENARUM:] possem(Imp)(Knj)(Akt), et(Kon) coāctōs(Per)(Pas)(A) trahere(Inf)(Akt), ut(Kon) ultrīcem(Adj)(A) dapem(A)
+(894) [ATREUS, REX MYCENARUM:] könnte|ich, und Gezwungene zu|ziehen, damit rächende Mahlzeit
+(895) [ATREUS, REX MYCENARUM:] omnēs(Adj)(N) vidērent(Imp)(Knj)(Akt)! quod(Pr)(N) sat(Adj)(N) est(Prä)(Akt), videat(Prä)(Knj)(Akt) pater(N).
+(895) [ATREUS, REX MYCENARUM:] alle würden|sehen! was genug ist, möge|sehen der|Vater.
+(896) [ATREUS, REX MYCENARUM:] etiam(Adv) diē(N)(Abl) nōlente(Prä)(Akt)(Abl) discutiam(Prä)(Akt) tibī(Pr)(D)
+(896) [ATREUS, REX MYCENARUM:] auch bei|dem|Tag nicht|wollenden werde|ich|zerstreuen dir
+(897) [ATREUS, REX MYCENARUM:] tenebrās(A), miseriae(N) sub(Prp) quibus(Pr)(Abl) latitant(Prä)(Akt) tuae(Pr)(N).
+(897) [ATREUS, REX MYCENARUM:] die|Finsternisse, die|Nöte unter welchen verbergen|sich deine.
+(898) [ATREUS, REX MYCENARUM:] nimis(Adv) diū(Adv) convīva(N) sēcūrō(Adj)(Abl) jacēs(Prä)(Akt)
+(898) [ATREUS, REX MYCENARUM:] zu|sehr lange Gast sorglosen liegst|du
+(899) [ATREUS, REX MYCENARUM:] hilarīque(Adj)(Abl)(Kon) vultū(N)(Abl); jam(Adv) satis(Adj)(N) mēnsīs(N)(Abl) datum(Per)(Pas)(N) est(Prä)(Akt)
+(899) [ATREUS, REX MYCENARUM:] heiterem|und Antlitz; schon genug an|den|Tafeln gegeben ist
+(900) [ATREUS, REX MYCENARUM:] satisque(Adj)(N)(Kon) Bacchō(D); sōbriō(Adj)(D) tanta(Adj)(A) ad(Prp) mala(A)
+(900) [ATREUS, REX MYCENARUM:] genug|und dem|Bacchus; dem|Nüchternen so|große zu Übel
+(901) [ATREUS, REX MYCENARUM:] opus(N) est(Prä)(Akt) Thyestē(N)(Abl). Turba(N) famulāris(Adj)(N), forēs(A)
+(901) [ATREUS, REX MYCENARUM:] Bedarf ist an|Thyestes. Schar dienstbarer, Türen
+(902) [ATREUS, REX MYCENARUM:] templī(G) relaxā(Prä)(Imv)(Akt), fēsta(Adj)(N) patefīat(Prä)(Knj)(Pas) domus(N).
+(902) [ATREUS, REX MYCENARUM:] des|Tempels öffne|weit, festliche möge|geöffnet|werden das|Haus.
+(903) [ATREUS, REX MYCENARUM:] libet(Prä)(Akt) vidēre(Inf)(Akt), capita(A) nātōrum(G) intuēns(Prä)(Akt)(N),
+(903) [ATREUS, REX MYCENARUM:] es|gefällt zu|sehen, die|Köpfe der|Söhne betrachtend,
+(904) [ATREUS, REX MYCENARUM:] quōs(Pr)(A) det(Prä)(Knj)(Akt) colōrēs(A), verba(A) quae(Pr)(N) prīmus(Adj)(N) dolor(N)
+(904) [ATREUS, REX MYCENARUM:] welche gebe Farben, Worte welche der|erste Schmerz
+(905) [ATREUS, REX MYCENARUM:] effundat(Prä)(Knj)(Akt) aut(Kon) ut(Kon) spīritū(N)(Abl) expulsō(Per)(Pas)(Abl) stupēns(Prä)(Akt)(N)
+(905) [ATREUS, REX MYCENARUM:] möge|ausgießen oder wie vom|Atem ausgestoßenen staunend
+(906) [ATREUS, REX MYCENARUM:] corpus(N) rigēscat(Prä)(Knj)(Akt). Frūctus(N) hic(Pr)(N) operis(G) meī(Pr)(G) est(Prä)(Akt).
+(906) [ATREUS, REX MYCENARUM:] der|Körper möge|erstarren. Frucht dies des|Werkes meines ist.
+(907) [ATREUS, REX MYCENARUM:] miserum(Adj)(A) vidēre(Inf)(Akt) nōlo(Prä)(Akt), sed(Kon) dum(Kon) fit(Prä)(Akt) miser(Adj)(N).
+(907) [ATREUS, REX MYCENARUM:] den|Elenden zu|sehen will|ich|nicht, sondern während wird elend.
+(908) [ATREUS, REX MYCENARUM:] Aperta(Per)(Pas)(N) multā(Adj)(Abl) tēcta(N) conlūcent(Prä)(Akt) face(N)(Abl).
+(908) [ATREUS, REX MYCENARUM:] geöffnete mit|vieler Dächer leuchten mit|der|Fackel.
+(909) [ATREUS, REX MYCENARUM:] resupīnus(Adj)(N) ipse(Pr)(N) purpurae(D) atque(Kon) aurō(N)(Abl) incubat(Prä)(Akt),
+(909) [ATREUS, REX MYCENARUM:] zurückgelehnt selbst auf|dem|Purpur und auf|dem|Gold liegt|er|auf,
+(910) [ATREUS, REX MYCENARUM:] vīnō(N)(Abl) gravātum(Per)(Pas)(A) fulciēns(Prä)(Akt)(N) laevā(Adj)(Abl) caput(A).
+(910) [ATREUS, REX MYCENARUM:] durch|den|Wein beschwertes stützend mit|der|linken Kopf.
+(911) [ATREUS, REX MYCENARUM:] ēructat(Prä)(Akt). Ō(ij) mē(Pr)(A) caelitum(G) excelsissimum(Adj)(Sup)(A),
+(911) [ATREUS, REX MYCENARUM:] rülpst|er. o mich der|Himmelsbewohner all|höchsten,
+(912) [ATREUS, REX MYCENARUM:] rēgumque(G)(Kon) rēgem(A)! vōta(N) trānscendī(Per)(Akt) mea(Pr)(N).
+(912) [ATREUS, REX MYCENARUM:] der|Könige|und den|König! Wünsche habe|ich|überschritten meine.
+(913) [ATREUS, REX MYCENARUM:] satur(Adj)(N) est(Prä)(Akt); capācī(Adj)(Abl) dūcit(Prä)(Akt) argentō(N)(Abl) merum(A);
+(913) [ATREUS, REX MYCENARUM:] satt ist; im|geräumigen gießt|er aus|Silber reinen|Wein;
+(914) [ATREUS, REX MYCENARUM:] nē(Kon) parce(Prä)(Imv)(Akt) pōtū(N)(Abl); restat(Prä)(Akt) etiamnunc(Adv) cruor(N)
+(914) [ATREUS, REX MYCENARUM:] nicht schone beim|Trank; bleibt noch|jetzt Blut
+(915) [ATREUS, REX MYCENARUM:] tot(Adj)(G) hostiārum(G); veteris(Adj)(G) hunc(Pr)(A) Bacchī(G) color(N)
+(915) [ATREUS, REX MYCENARUM:] so|vieler Opfer; alten diesen des|Bacchus Farbe
+(916) [ATREUS, REX MYCENARUM:] abscondet(Fu1)(Akt). Hōc(Pr)(Abl), hōc(Pr)(Abl) mēnsa(N) clūdātur(Prä)(Knj)(Pas) scyphō(N)(Abl).
+(916) [ATREUS, REX MYCENARUM:] wird|verbergen. mit|diesem, mit|diesem die|Tafel möge|geschlossen|werden mit|dem|Becher.
+(917) [ATREUS, REX MYCENARUM:] mixtum(Per)(Pas)(A) suōrum(Pr)(G) sanguinem(A) genitor(N) bibat(Prä)(Knj)(Akt):
+(917) [ATREUS, REX MYCENARUM:] gemischten der|Seinen Blut Vater möge|trinken:
+(918) [ATREUS, REX MYCENARUM:] meum(Pr)(A) bibisset(Plq)(Knj)(Akt). Ecce(ij), jam(Adv) cantūs(A) ciet(Prä)(Akt)
+(918) [ATREUS, REX MYCENARUM:] meines hätte|getrunken. siehe, schon Gesänge ruft|er|herbei
+(919) [ATREUS, REX MYCENARUM:] fēstāsque(Adj)(A)(Kon) vōcēs(A), nec(Kon) satis(Adj)(N) mentī(D) imperat(Prä)(Akt).
+(919) [ATREUS, REX MYCENARUM:] festliche|und Stimmen, und|nicht genug dem|Geist gebietet|er.
+=== Monodie (Anapäste) ===
+(920) [THYESTES, FRATER ATREI:] Pectora(N) longīs(Adj)(Abl) hebetāta(Per)(Pas)(N) malīs(N)(Abl),
+(920) [THYESTES, FRATER ATREI:] Herzen von|langen stumpf|gemachte Übeln,
+(921) [THYESTES, FRATER ATREI:] jam(Adv) sollicitās(Adj)(A) pōnite(Prä)(Imv)(Akt) cūrās(A).
+(921) [THYESTES, FRATER ATREI:] schon beunruhigten legt|ab Sorgen.
+(922) [THYESTES, FRATER ATREI:] fugiat(Prä)(Knj)(Akt) maeror(N) fugiatque(Prä)(Knj)(Akt)(Kon) pavor(N),
+(922) [THYESTES, FRATER ATREI:] möge|fliehen Gram möge|fliehen|und Schrecken,
+(923) [THYESTES, FRATER ATREI:] fugiat(Prä)(Knj)(Akt) trepidī(Adj)(G) comes(N) exiliī(G)
+(923) [THYESTES, FRATER ATREI:] möge|fliehen des|Zagenden Begleiter des|Exils
+(924) [THYESTES, FRATER ATREI:] trīstis(Adj)(N) egestās(N) rēbusque(N)(Abl)(Kon) gravis(Adj)(N)
+(924) [THYESTES, FRATER ATREI:] traurige Not den|Dingen|und schwere
+(925) [THYESTES, FRATER ATREI:] pudor(N) afflīctīs(Per)(Pas)(Abl); magis(Adv) unde(Adv) cadās(Prä)(Knj)(Akt)
+(925) [THYESTES, FRATER ATREI:] Scham den|Zerschlagenen; mehr woher mögest|fallen
+(926) [THYESTES, FRATER ATREI:] quam(Kon) quō(Adv) rēfert(Prä)(Akt). Magnum(Adj)(N), ex(Prp) altō(Adj)(Abl)
+(926) [THYESTES, FRATER ATREI:] als wohin es|bringt|zurück. groß, aus hohem
+(927) [THYESTES, FRATER ATREI:] culmine(N)(Abl) lāpsum(Per)(Pas)(A) stabilem(Adj)(A) in(Prp) plānō(Adj)(Abl)
+(927) [THYESTES, FRATER ATREI:] Gipfel Gefallenen festen im Ebnen
+(928) [THYESTES, FRATER ATREI:] fīgere(Inf)(Akt) gressum(A); magnum(Adj)(N), ingentī(Adj)(Abl)
+(928) [THYESTES, FRATER ATREI:] zu|befestigen Schritt; groß, gewaltigem
+(929) [THYESTES, FRATER ATREI:] strāge(N)(Abl) malōrum(G) pressum(Per)(Pas)(A) frāctī(Per)(Pas)(G)
+(929) [THYESTES, FRATER ATREI:] durch|das|Getrümmer der|Übel gedrückten des|Gebrochenen
+(930) [THYESTES, FRATER ATREI:] pondera(A) rēgnī(G) nōn(Pt) īnflexā(Per)(Pas)(Abl)
+(930) [THYESTES, FRATER ATREI:] Gewichte der|Herrschaft nicht gebeugtem
+(931) [THYESTES, FRATER ATREI:] cervīce(N)(Abl) patī(Inf)(Akt), nec(Kon) dēgenerem(Adj)(A)
+(931) [THYESTES, FRATER ATREI:] Nacken zu|erdulden, und|nicht entarteten
+(932) [THYESTES, FRATER ATREI:] victumque(Per)(Pas)(A)(Kon) malīs(N)(Abl) rēctum(Adj)(A) impositās(Per)(Pas)(A)
+(932) [THYESTES, FRATER ATREI:] besiegten|und von|Übeln geraden auferlegte
+(933) [THYESTES, FRATER ATREI:] ferre(Prä)(Inf)(Akt) ruīnās(A). Sed(Kon) jam(Adv) saevī(Adj)(G)
+(933) [THYESTES, FRATER ATREI:] tragen Stürze. aber schon des|grimmen
+(934) [THYESTES, FRATER ATREI:] nūbila(A) fātī(G) pelle(Prä)(Imv)(Akt) ac(Kon) miserī(Adj)(G)
+(934) [THYESTES, FRATER ATREI:] Wolken des|Schicksals vertreibe und des|elenden
+(935) [THYESTES, FRATER ATREI:] temporis(G) omnēs(Adj)(A) dīmitte(Prä)(Imv)(Akt) notās(A);
+(935) [THYESTES, FRATER ATREI:] der|Zeit alle verwirf Zeichen;
+(936) [THYESTES, FRATER ATREI:] redeant(Prä)(Knj)(Akt) vultūs(N) ad(Prp) laeta(Adj)(A) bonī(Adj)(G),
+(936) [THYESTES, FRATER ATREI:] mögen|zurück|kehren Gesichter zu freudige des|Guten,
+(937) [THYESTES, FRATER ATREI:] veterem(Adj)(A) ex(Prp) animō(Abl) mitte(Prä)(Imv)(Akt) Thyestēn(A).
+(937) [THYESTES, FRATER ATREI:] alten aus dem|Geist entlass Thyestes.
+(938) [THYESTES, FRATER ATREI:] Proprium(Adj)(N) hoc(Pr)(N) miserōs(Adj)(A) sequitur(Prä)(Akt) vitium(N),
+(938) [THYESTES, FRATER ATREI:] eigenes dies die|Elenden folgt Fehler,
+(939) [THYESTES, FRATER ATREI:] numquam(Adv) rēbus(D) crēdere(Prä)(Inf)(Akt) laetīs(D):
+(939) [THYESTES, FRATER ATREI:] niemals den|Dingen glauben freudigen:
+(940) [THYESTES, FRATER ATREI:] redeat(Prä)(Knj)(Akt) fēlīx(Adj)(N) fortūna(N) licet(Pt),
+(940) [THYESTES, FRATER ATREI:] möge|zurückkehren glückliche Glück auch|wenn,
+(941) [THYESTES, FRATER ATREI:] tamen(Adv) afflīctōs(Per)(Pas)(A) gaudēre(Prä)(Inf)(Akt) piget(Prä)(Akt).
+(941) [THYESTES, FRATER ATREI:] dennoch die|Niedergeschlagenen sich|freuen verdrießt.
+(942) [THYESTES, FRATER ATREI:] quid(Adv) mē(Pr)(A) revocās(Prä)(Akt) fēstumque(Adj)(A)(Kon) vetās(Prä)(Akt)
+(942) [THYESTES, FRATER ATREI:] warum mich zurückrufst festlichen|und verbietest
+(943) [THYESTES, FRATER ATREI:] celebrāre(Prä)(Inf)(Akt) diem(A), quid(Adv) flēre(Prä)(Inf)(Akt) jubēs(Prä)(Akt),
+(943) [THYESTES, FRATER ATREI:] feiern den|Tag, warum weinen befiehlst,
+(944) [THYESTES, FRATER ATREI:] nūllā(Adj)(Abl) surgēns(Prä)(Akt)(N) dolor(N) ex(Prp) causā(Abl)?
+(944) [THYESTES, FRATER ATREI:] keiner auf|steigend Schmerz aus Ursache?
+(945) [THYESTES, FRATER ATREI:] quis(Pr)(N) mē(Pr)(A) prohibet(Prä)(Akt) flōre(N)(Abl) decentī(Prä)(Akt)(Abl)
+(945) [THYESTES, FRATER ATREI:] wer mich hindert mit|Blüte passender
+(946) [THYESTES, FRATER ATREI:] vincīre(Prä)(Inf)(Akt) comam(A)? prohibet(Prä)(Akt), prohibet(Prä)(Akt)
+(946) [THYESTES, FRATER ATREI:] umwinden das|Haar? hindert, hindert
+(947) [THYESTES, FRATER ATREI:] vernae(Adj)(N) capitī(D) flūxēre(Per)(Akt) rosae(N),
+(947) [THYESTES, FRATER ATREI:] frühlingshafte dem|Haupte sind|geflossen Rosen,
+(948) [THYESTES, FRATER ATREI:] pinguī(Adj)(Abl) madidus(Adj)(N) crīnis(N) amōmō(N)(Abl)
+(948) [THYESTES, FRATER ATREI:] fettigem triefender Haupthaar mit|Amomum
+(949) [THYESTES, FRATER ATREI:] inter(Prp) subitōs(Adj)(A) stetit(Per)(Akt) horrōrēs(A),
+(949) [THYESTES, FRATER ATREI:] zwischen plötzlichen stand Schrecken,
+(950) [THYESTES, FRATER ATREI:] imber(N) vultū(N)(Abl) nōlente(Prä)(Akt)(Abl) cadit(Prä)(Akt),
+(950) [THYESTES, FRATER ATREI:] Regen mit|Gesicht nicht|willigem fällt,
+(951) [THYESTES, FRATER ATREI:] venit(Prä)(Akt) in(Prp) mediās(Adj)(A) vōcēs(A) gemitus(N).
+(951) [THYESTES, FRATER ATREI:] kommt in mittlere Stimmen das|Stöhnen.
+(952) [THYESTES, FRATER ATREI:] maeror(N) lacrimās(A) amat(Prä)(Akt) assuētās(Per)(Pas)(A),
+(952) [THYESTES, FRATER ATREI:] Kummer Tränen liebt gewohnte,
+(953) [THYESTES, FRATER ATREI:] flendī(Ger)(G) miserīs(Adj)(D) dīra(Adj)(N) cupīdō(N) est(Prä)(Akt).
+(953) [THYESTES, FRATER ATREI:] des|Weinens für|die|Elenden schreckliche Begierde ist.
+(954) [THYESTES, FRATER ATREI:] libet(Prä)(Akt) īnfaustōs(Adj)(A) mittere(Prä)(Inf)(Akt) questūs(A),
+(954) [THYESTES, FRATER ATREI:] gefällt unheilvolle aus|zusenden Klagen,
+(955) [THYESTES, FRATER ATREI:] libet(Prä)(Akt) et(Kon) Tyriō(Adj)(Abl) saturās(Adj)(A) ostrō(N)(Abl)
+(955) [THYESTES, FRATER ATREI:] gefällt und mit|tyrischem gesättigte mit|Purpur
+(956) [THYESTES, FRATER ATREI:] rumpere(Prä)(Inf)(Akt) vestēs(A), ululāre(Prä)(Inf)(Akt) libet(Prä)(Akt).
+(956) [THYESTES, FRATER ATREI:] zu|zerreißen Kleider, zu|heulen gefällt.
+(957) [THYESTES, FRATER ATREI:] Mittit(Prä)(Akt) lūctūs(G) signa(A) futūrī(Fu1)(Akt)(G)
+(957) [THYESTES, FRATER ATREI:] sendet des|Kummers Zeichen zukünftigen
+(958) [THYESTES, FRATER ATREI:] mēns(N) ante(Adv) suī(Pr)(G) praesāga(Adj)(N) malī(G):
+(958) [THYESTES, FRATER ATREI:] Geist vorher seines|eigenen voraussehender Übels:
+(959) [THYESTES, FRATER ATREI:] īnstat(Prä)(Akt) nautīs(Pr)(D) fera(Adj)(N) tempestās(N),
+(959) [THYESTES, FRATER ATREI:] drängt|nahe den|Seeleuten wilde Sturm,
+(960) [THYESTES, FRATER ATREI:] cum(Kon) sine(Prp) ventō(Abl) tranquilla(Adj)(N) tument(Prä)(Akt).
+(960) [THYESTES, FRATER ATREI:] wenn ohne Wind die|Stillen schwellen.
+(961) [THYESTES, FRATER ATREI:] quōs(Pr)(A) tibi(Pr)(D) lūctūs(A) quōsve(Pr)(A)(Kon) tumultūs(A)
+(961) [THYESTES, FRATER ATREI:] welche dir Trauern welche|oder Aufruhre
+(962) [THYESTES, FRATER ATREI:] fingis(Prä)(Akt), dēmēns(Adj)(V)? crēdula(Adj)(N) praestā(Prä)(Imv)(Akt)
+(962) [THYESTES, FRATER ATREI:] erdichtest, Wahnsinniger? vertrauende gewähre
+(963) [THYESTES, FRATER ATREI:] pectora(A) frātrī(D). Jam(Adv), quidquid(Pr)(N) id(Pr)(N) est(Prä)(Akt),
+(963) [THYESTES, FRATER ATREI:] Herzen dem|Bruder. nun, was|auch|immer dies ist,
+(964) [THYESTES, FRATER ATREI:] vel(Kon) sine(Prp) causā(Abl) vel(Kon) sēro(Adv) timēs(Prä)(Akt).
+(964) [THYESTES, FRATER ATREI:] oder ohne Grund oder spät fürchtest.
+(965) [THYESTES, FRATER ATREI:] nōlō(Prä)(Akt) īnfēlīx(Adj)(N), sed(Kon) vagus(Adj)(N) intrā(Prp)
+(965) [THYESTES, FRATER ATREI:] ich|will|nicht unglücklich, aber umherschweifend innerhalb
+(966) [THYESTES, FRATER ATREI:] terror(N) oberrat(Prä)(Akt), subitōs(Adj)(A) fundunt(Prä)(Akt)
+(966) [THYESTES, FRATER ATREI:] Schrecken streift|umher, plötzliche ergießen
+(967) [THYESTES, FRATER ATREI:] oculī(N) flētūs(A), nec(Kon) causa(N) subest(Prä)(Akt).
+(967) [THYESTES, FRATER ATREI:] Augen Tränen, und|nicht Grund liegt|vor.
+(968) [THYESTES, FRATER ATREI:] dolor(N) an(Kon) metus(N) est(Prä)(Akt)? An(Kon) habet(Prä)(Akt) lacrimās(A)
+(968) [THYESTES, FRATER ATREI:] Schmerz oder Furcht ist? oder|etwa hat Tränen
+(969) [THYESTES, FRATER ATREI:] magna(Adj)(N) voluptās(N)?
+(969) [THYESTES, FRATER ATREI:] große Lust?
+=== Akt 5 ===
+(970) [ATREUS, REX MYCENARUM:] Fēstum(Adj)(A) diem(A), germāne(V), cōnsēnsū(N)(Abl) parī(Adj)(Abl)
+(970) [ATREUS, REX MYCENARUM:] festlichen Tag, Bruder, mit|Übereinstimmung gleicher
+(971) [ATREUS, REX MYCENARUM:] celebrēmus(Prä)(Knj)(Akt); hic(Pr)(N) est(Prä)(Akt), scēptra(A) quī(Pr)(N) firmet(Prä)(Knj)(Akt) mea(Adj)(A)
+(971) [ATREUS, REX MYCENARUM:] mögen|feiern; dies ist, Zepter der möge|festigen meine
+(972) [ATREUS, REX MYCENARUM:] solidamque(Adj)(A)(Kon) pācis(G) alliget(Prä)(Knj)(Akt) certae(Adj)(G) fidem(A).
+(972) [ATREUS, REX MYCENARUM:] feste|und des|Friedens möge|binden sicheren Treue.
+(973) [THYESTES, FRATER ATREI:] Satiās(N) dapis(G) mē(Pr)(A) nec(Kon) minus(Adv) Bacchī(G) tenet(Prä)(Akt).
+(973) [THYESTES, FRATER ATREI:] Sättigung des|Mahls mich und|nicht weniger des|Bacchus hält.
+(974) [THYESTES, FRATER ATREI:] augēre(Prä)(Inf)(Akt) cumulus(N) hic(Pr)(N) voluptātem(A) potest(Prä)(Akt),
+(974) [THYESTES, FRATER ATREI:] vergrößern Zuwachs dieser Freude kann,
+(975) [THYESTES, FRATER ATREI:] sī(Kon) cum(Prp) meīs(Pr)(Abl) gaudēre(Prä)(Inf)(Akt) fēlīcī(Adj)(Abl) datur(Prä)(Pas).
+(975) [THYESTES, FRATER ATREI:] wenn mit den|Meinen sich|freuen glücklichen wird|gewährt.
+(976) [ATREUS, REX MYCENARUM:] Hīc(Adv) esse(Prä)(Inf)(Akt) nātōs(A) crēde(Prä)(Imv)(Akt) in(Prp) amplexū(N)(Abl) patris(G);
+(976) [ATREUS, REX MYCENARUM:] hier zu|sein die|Söhne glaube in der|Umarmung des|Vaters;
+(977) [ATREUS, REX MYCENARUM:] hīc(Adv) sunt(Prä)(Akt) eruntque(Fu1)(Akt)(Kon); nūlla(Adj)(N) pars(N) prōlis(G) tuae(Adj)(G)
+(977) [ATREUS, REX MYCENARUM:] hier sind werden|sein|und; kein Teil der|Nachkommenschaft deiner
+(978) [ATREUS, REX MYCENARUM:] tibi(Pr)(D) subtrahētur(Fu1)(Pas). Ōra(A) quae(Pr)(N) exoptās(Prä)(Akt) dabō(Fu1)(Akt)
+(978) [ATREUS, REX MYCENARUM:] dir wird|entzogen|werden. Gesichter die|welche ersehnst werde|geben
+(979) [ATREUS, REX MYCENARUM:] tōtumque(Adj)(A)(Kon) turbā(N)(Abl) jam(Adv) suā(Adj)(Abl) implēbō(Fu1)(Akt) patrem(A).
+(979) [ATREUS, REX MYCENARUM:] ganz|unden mit|Schar schon seiner|eigenen werde|füllen den|Vater.
+(980) [ATREUS, REX MYCENARUM:] satiāberis(Fu1)(Pas), nē(Kon) metue(Prä)(Imv)(Akt). Nunc(Adv) mixtī(Per)(Pas)(N) meīs(Pr)(Abl)
+(980) [ATREUS, REX MYCENARUM:] wirst|gesättigt|werden, nicht fürchte. nun gemischt mit|den|Meinen
+(981) [ATREUS, REX MYCENARUM:] jūcunda(Adj)(A) mēnsae(G) sacra(A) juvenīlis(Adj)(N) colunt(Prä)(Akt);
+(981) [ATREUS, REX MYCENARUM:] erfreuliche der|Tafel Riten jugendliche verehren;
+(982) [ATREUS, REX MYCENARUM:] sed(Kon) accientur(Fu1)(Pas). Pōculum(A) īnfūsō(Per)(Pas)(Abl) cape(Prä)(Imv)(Akt)
+(982) [ATREUS, REX MYCENARUM:] aber werden|herbeigerufen. Becher eingegossenem nimm
+(983) [ATREUS, REX MYCENARUM:] gentīle(Adj)(Abl) Bacchō(N)(Abl). Capio(Prä)(Akt) frāternae(Adj)(G) dapis(G)
+(983) [ATREUS, REX MYCENARUM:] heimischen Bacchus|Wein. ich|nehme brüderlicher Mahlzeit
+(984) [THYESTES, FRATER ATREI:] dōnum(A). Paternīs(Adj)(Abl) vīna(N) lībentur(Prä)(Pas) deīs(D),
+(984) [THYESTES, FRATER ATREI:] Geschenk. väterlichen Weine werden|geopfert den|Göttern,
+(985) [THYESTES, FRATER ATREI:] tunc(Adv) hauriantur(Prä)(Knj)(Pas). ; sed(Kon) quid(Adv) hoc(Pr)(N)? nōlunt(Prä)(Akt) manūs(N)
+(985) [THYESTES, FRATER ATREI:] dann mögen|geschöpft|werden. ; aber was ist|dies? wollen|nicht Hände
+(986) [THYESTES, FRATER ATREI:] pārēre(Prä)(Inf)(Akt), crēscit(Prä)(Akt) pondus(N) et(Kon) dextram(A) gravat(Prä)(Akt);
+(986) [THYESTES, FRATER ATREI:] gehorchen, wächst Gewicht und die|Rechte beschwert;
+(987) [THYESTES, FRATER ATREI:] admōtus(Per)(Pas)(N) ipsīs(Pr)(Abl) Bacchus(N) ā(Prp) labrīs(N)(Abl) fugit(Prä)(Akt)
+(987) [THYESTES, FRATER ATREI:] angewandt den|eigenen Bacchus von den|Lippen flieht
+(988) [THYESTES, FRATER ATREI:] circāque(Prp)(Kon) rictūs(A) ōre(N)(Abl) dēceptō(Per)(Pas)(Abl) fluit(Prä)(Akt),
+(988) [THYESTES, FRATER ATREI:] um|und Münder vom|Mund getäuschten fließt,
+(989) [THYESTES, FRATER ATREI:] et(Kon) ipsa(Pr)(N) trepidō(Adj)(Abl) mēnsa(N) subsiluit(Per)(Akt) solō(N)(Abl).
+(989) [THYESTES, FRATER ATREI:] und selbst zitterndem der|Tisch sprang|auf Boden.
+(990) [THYESTES, FRATER ATREI:] vix(Adv) lūcet(Prä)(Akt) ignis(N); ipse(Pr)(N) quīn(Pt) aethēr(N) gravis(Adj)(N)
+(990) [THYESTES, FRATER ATREI:] kaum leuchtet das|Feuer; selbst ja|sogar Äther schwer
+(991) [THYESTES, FRATER ATREI:] inter(Prp) diem(A) noctemque(A)(Kon) dēsertus(Per)(Pas)(N) stupet(Prä)(Akt).
+(991) [THYESTES, FRATER ATREI:] zwischen Tag Nacht|und verlassen starrt.
+(992) [THYESTES, FRATER ATREI:] quid(Adv) hoc(Pr)(N)? magis(Adv) magisque(Adv)(Kon) concussī(Per)(Pas)(N) labant(Prä)(Akt)
+(992) [THYESTES, FRATER ATREI:] was dies? mehr mehr|und erschütterte wanken
+(993) [THYESTES, FRATER ATREI:] convexa(Adj)(N) caelī(G); spissior(Adj)(Kmp)(N) dēnsīs(Adj)(Abl) coit(Prä)(Akt)
+(993) [THYESTES, FRATER ATREI:] Wölbungen des|Himmels; dichter mit|dichten vereinigt|sich
+(994) [THYESTES, FRATER ATREI:] cālīgo(N) tenebrīs(N)(Abl) noxque(N)(Kon) sē(Pr)(A) in(Prp) noctem(A) abdidit(Per)(Akt):
+(994) [THYESTES, FRATER ATREI:] Finsternis mit|den|Dunkeln Nacht|und sich in die|Nacht hat|verborgen:
+(995) [THYESTES, FRATER ATREI:] fugit(Prä)(Akt) omne(Adj)(A) sīdus(A). Quidquid(Pr)(N) est(Prä)(Akt), frātrī(D) precor(Prä)(Akt)
+(995) [THYESTES, FRATER ATREI:] flieht jeder Stern. was|auch|immer ist, dem|Bruder ich|bitte
+(996) [THYESTES, FRATER ATREI:] nātīsque(D)(Kon) parcat(Prä)(Knj)(Akt), omnis(Adj)(N) in(Prp) vīle(Adj)(A) hoc(Pr)(A) caput(A)
+(996) [THYESTES, FRATER ATREI:] den|Söhnen|und möge|schonen, jede auf niedres dieses Haupt
+(997) [THYESTES, FRATER ATREI:] abeat(Prä)(Knj)(Akt) procella(N). Redde(Prä)(Imv)(Akt) jam(Adv) nātōs(A) mihī(Pr)(D)!
+(997) [THYESTES, FRATER ATREI:] möge|weichen der|Sturm. gib|zurück nun die|Söhne mir!
+(998) [ATREUS, REX MYCENARUM:] Reddam(Fu1)(Akt), et(Kon) tibi(Pr)(D) illōs(Pr)(A) nūllus(Adj)(N) ēripiet(Fu1)(Akt) diēs(N).
+(998) [ATREUS, REX MYCENARUM:] ich|werde|zurückgeben, und dir jene kein wird|entreißen Tag.
+(999) [THYESTES, FRATER ATREI:] Quis(Pr)(N) hic(Pr)(N) tumultus(N) vīscera(A) exagitat(Prä)(Akt) mea(Adj)(A)?
+(999) [THYESTES, FRATER ATREI:] welcher dieser Aufruhr Eingeweide wühlt|auf meine?
+(1000) [THYESTES, FRATER ATREI:] quid(Adv) tremuit(Per)(Akt) intus(Adv)? sentiō(Prä)(Akt) impatiēns(Prä)(Akt)(N) onus(N)
+(1000) [THYESTES, FRATER ATREI:] was zitterte innen? ich|spüre ungeduldig Last
+(1001) [THYESTES, FRATER ATREI:] meumque(Adj)(A)(Kon) gemitū(N)(Abl) nōn(Pt) meō(Adj)(Abl) pectus(N) gemit(Prä)(Akt).
+(1001) [THYESTES, FRATER ATREI:] mein|und mit|dem|Stöhnen nicht meinem die|Brust stöhnt.
+(1002) [THYESTES, FRATER ATREI:] adeste(Prä)(Imv)(Akt), nātī(V), genitor(N) īnfēlīx(Adj)(N) vocat(Prä)(Akt),
+(1002) [THYESTES, FRATER ATREI:] seid|da, Söhne, der|Vater unglückliche ruft,
+(1003) [THYESTES, FRATER ATREI:] adeste(Prä)(Imv)(Akt). Vīsīs(N)(Abl) fugiet(Fu1)(Akt) hic(Pr)(N) vōbīs(Pr)(D) dolor(N);
+(1003) [THYESTES, FRATER ATREI:] seid|da. bei|dem|Anblick wird|fliehen dieser euch Schmerz;
+(1004) [THYESTES, FRATER ATREI:] unde(Adv) obloquuntur(Prä)(Pas)? Expedī(Prä)(Imv)(Akt) amplexūs(A), pater(V);
+(1004) [THYESTES, FRATER ATREI:] woher reden|dazwischen? löse|frei die|Umarmungen, Vater;
+(1005) [ATREUS, REX MYCENARUM:] vēnēre(Per)(Akt). nātōs(A) ecquid(Pt) agnōscis(Prä)(Akt) tuōs(Adj)(A)?
+(1005) [ATREUS, REX MYCENARUM:] sind|gekommen. die|Söhne ob|etwas erkennst|du deine?
+(1006) [THYESTES, FRATER ATREI:] Agnōsco(Prä)(Akt) frātrem(A). Sustinēs(Prä)(Akt) tantum(Adv) nefās(N)
+(1006) [THYESTES, FRATER ATREI:] ich|erkenne den|Bruder. erträgst|du so|groß Frevel
+(1007) [THYESTES, FRATER ATREI:] gestāre(Prä)(Inf)(Akt), Tellūs(V)? nōn(Pt) ad(Prp) īnfernam(Adj)(A) Styga(A)
+(1007) [THYESTES, FRATER ATREI:] zu|tragen, Erde? nicht zu unterirdische den|Styx
+(1008) [THYESTES, FRATER ATREI:] tenebrāsque(A)(Kon) mergis(Prä)(Akt) ruptā(Per)(Pas)(Abl) et(Kon) ingentī(Adj)(Abl) viā(N)(Abl)
+(1008) [THYESTES, FRATER ATREI:] die|Dunkelheiten|und untertauchst mit|gebrochener und gewaltigem Weg
+(1009) [THYESTES, FRATER ATREI:] ad(Prp) chaos(A) ināne(Adj)(A) rēgna(A) cum(Prp) rēge(N)(Abl) abripis(Prä)(Akt)?
+(1009) [THYESTES, FRATER ATREI:] zu Chaos leerem Reiche mit dem|König reißt|du|fort?
+(1010) [THYESTES, FRATER ATREI:] nōn(Pt) tōta(Adj)(N) ab(Prp) īmō(Adj)(Abl) tēcta(A) convellēns(Prä)(Akt)(N) solō(N)(Abl)
+(1010) [THYESTES, FRATER ATREI:] nicht ganze von unterstem Häuser aus|reißend aus|dem|Boden
+(1011) [THYESTES, FRATER ATREI:] vertis(Prä)(Akt) Mycēnās(A)? stāre(Prä)(Inf)(Akt) circā(Prp) Tantalum(A)
+(1011) [THYESTES, FRATER ATREI:] wendest|du Mykene? zu|stehen um Tantalus
+(1012) [THYESTES, FRATER ATREI:] uterque(Pr)(N) jam(Adv) dēbuimus(Per)(Akt). Hinc(Adv) compāgibus(N)(Abl)
+(1012) [THYESTES, FRATER ATREI:] jeder|von|beiden schon haben|wir|gesollt. von|hier mit|den|Fugen
+(1013) [THYESTES, FRATER ATREI:] et(Kon) hinc(Adv) revulsīs(Per)(Pas)(Abl), sī(Kon) quid(Pr)(N) īnfrā(Adv) Tartara(A) est(Prä)(Akt)
+(1013) [THYESTES, FRATER ATREI:] und von|hier mit|abgerissenen, wenn etwas unterhalb die|Tartara ist
+(1014) [THYESTES, FRATER ATREI:] avōsque(A)(Kon) nostrōs(Adj)(A), hōc(Pr)(Abl) tuam(Adj)(A) immānī(Adj)(Abl) sinū(N)(Abl)
+(1014) [THYESTES, FRATER ATREI:] die|Ahnen|und unsere, diesem deine gewaltigen Schoß
+(1015) [THYESTES, FRATER ATREI:] dēmitte(Prä)(Imv)(Akt) vallem(A) nōsque(Pr)(A)(Kon) dēfossōs(Per)(Pas)(A) tege(Prä)(Imv)(Akt)
+(1015) [THYESTES, FRATER ATREI:] lasse|hinab das|Tal uns|und eingegrabene bedecke
+(1016) [THYESTES, FRATER ATREI:] Acheronte(N)(Abl) tōtō(Adj)(Abl). Noxiae(Adj)(N) suprā(Prp) caput(A)
+(1016) [THYESTES, FRATER ATREI:] mit|dem|Acheron ganzen. schuldige über dem|Haupt
+(1017) [THYESTES, FRATER ATREI:] animae(N) vagentur(Prä)(Knj)(Pas) nostrum(Pr)(G) et(Kon) ārdentī(Adj)(Abl) fretō(N)(Abl)
+(1017) [THYESTES, FRATER ATREI:] Seelen mögen|umherschweifen unseres und flammendem Meeresarm
+(1018) [THYESTES, FRATER ATREI:] Phlegethōn(N) harēnās(A) igneus(Adj)(N) tostās(Per)(Pas)(A) agēns(Prä)(Akt)(N)
+(1018) [THYESTES, FRATER ATREI:] Phlegethon Sande feurig geröstete treibend
+(1019) [THYESTES, FRATER ATREI:] exilia(A) suprā(Prp) nostra(Adj)(A) violentus(Adj)(N) fluat(Prä)(Knj)(Akt);
+(1019) [THYESTES, FRATER ATREI:] Verbannungen über unsere gewalttätig möge|fließen;
+(1020) [THYESTES, FRATER ATREI:] immōta(Adj)(N) tellūs(V) pondus(A) ignāvum(Adj)(A) jacēs(Prä)(Akt),
+(1020) [THYESTES, FRATER ATREI:] unbewegte Erde Last träge liegst,
+(1021) [THYESTES, FRATER ATREI:] fūgēre(Per)(Akt) superī(N). Jam(Adv) accipe(Prä)(Imv)(Akt) hōs(Pr)(A) potius(Adv) libēns(Adj)(N)
+(1021) [THYESTES, FRATER ATREI:] sind|geflohen die|Oberen. nun nimm|auf diese lieber bereitwillig
+(1022) [ATREUS, REX MYCENARUM:] diū(Adv) expetītōs(Per)(Pas)(A): nūlla(Adj)(N) per(Prp) frātrem(A) est(Prä)(Akt) mora(N);
+(1022) [ATREUS, REX MYCENARUM:] lange Ersehnte: kein durch den|Bruder ist Verzug;
+(1023) [ATREUS, REX MYCENARUM:] fruere(Prä)(Imv)(Pas), ōsculāre(Prä)(Imv)(Pas), dīvide(Prä)(Imv)(Akt) amplexūs(A) tribus(D).
+(1023) [ATREUS, REX MYCENARUM:] genieße, küsse, teile die|Umarmungen den|Dreien.
+(1024) [THYESTES, FRATER ATREI:] Hoc(Pr)(N) foedus(N)? haec(Pr)(N) est(Prä)(Akt) grātia(N), haec(Pr)(N) frātris(G) fidēs(N)?
+(1024) [THYESTES, FRATER ATREI:] dies Bund? diese ist Gunst, diese des|Bruders Treue?
+(1025) [THYESTES, FRATER ATREI:] sīc(Adv) odia(A) pōnis(Prä)(Akt)? nōn(Pt) petō(Prä)(Akt), incolumīs(Adj)(N) pater(N)
+(1025) [THYESTES, FRATER ATREI:] so Feindschaften legst|du|nieder? nicht fordere|ich, unversehrt Vater
+(1026) [THYESTES, FRATER ATREI:] nātōs(A) ut(Kon) habeam(Prä)(Knj)(Akt); scelere(N)(Abl) quod(Pr)(N) salvō(Adj)(Abl) darī(Prä)(Inf)(Pas)
+(1026) [THYESTES, FRATER ATREI:] Söhne damit|dass ich|habe; durch|das|Verbrechen was heil gegeben|zu|werden
+(1027) [THYESTES, FRATER ATREI:] odiōque(N)(Abl)(Kon) possit(Prä)(Knj)(Akt), frāter(N) hoc(Pr)(A) frātrem(A) rogō(Prä)(Akt):
+(1027) [THYESTES, FRATER ATREI:] mit|dem|Hass|und möge|können, Bruder dies den|Bruder bitte|ich:
+(1028) [THYESTES, FRATER ATREI:] sepelīre(Prä)(Inf)(Akt) liceat(Prä)(Knj)(Akt). Redde(Prä)(Imv)(Akt) quod(Pr)(A) cernās(Prä)(Knj)(Akt) statim(Adv)
+(1028) [THYESTES, FRATER ATREI:] zu|begraben es|sei|erlaubt. gib|zurück was du|erblickst sofort
+(1029) [THYESTES, FRATER ATREI:] ūrī(Prä)(Inf)(Pas); nihil(Pr)(N) tē(Pr)(A) genitor(N) habitūrus(Fu1)(Akt)(N) rogō(Prä)(Akt),
+(1029) [THYESTES, FRATER ATREI:] zu|brennen; nichts dich Vater haben|werdender bitte|ich,
+(1030) [THYESTES, FRATER ATREI:] sed(Kon) perditūrus(Fu1)(Akt)(N). Quidquid(Pr)(N) ē(Prp) nātīs(N)(Abl) tuīs(Adj)(Abl)
+(1030) [THYESTES, FRATER ATREI:] sondern verlieren|werdender. was|auch|immer von Söhnen deinen
+(1031) [ATREUS, REX MYCENARUM:] superest(Prä)(Akt) habēs(Prä)(Akt), quodcumque(Pr)(N) nōn(Pt) superest(Prä)(Akt) habēs(Prä)(Akt).
+(1031) [ATREUS, REX MYCENARUM:] übrig|ist hast|du, was|auch|immer nicht übrig|ist hast|du.
+(1032) [THYESTES, FRATER ATREI:] Utrumne(Pt) saevīs(Adj)(Abl) pābulum(N) ālitibus(N)(Abl) jacent(Prä)(Akt),
+(1032) [THYESTES, FRATER ATREI:] ob|etwa grimmigen Futter Vögeln liegen,
+(1033) [THYESTES, FRATER ATREI:] an(Kon) bēluīs(N)(Abl) scinduntur(Prä)(Pas), an(Kon) pāscunt(Prä)(Akt) ferās(A)?
+(1033) [THYESTES, FRATER ATREI:] oder Bestien werden|zerrissen, oder weiden|sie wilde|Tiere?
+(1034) [ATREUS, REX MYCENARUM:] Epulātus(Per)(Pas)(N) ipse(Pr)(N) es(Prä)(Akt) impiā(Adj)(Abl) nātōs(A) dape(N)(Abl).
+(1034) [ATREUS, REX MYCENARUM:] geschmaust|habend selbst bist mit|gottlosem die|Söhne Mahl.
+(1035) [THYESTES, FRATER ATREI:] Hoc(Pr)(N) est(Prä)(Akt) deōs(A) quod(Pr)(N) puduit(Per)(Akt), hoc(Pr)(N) ēgit(Per)(Akt) diem(A)
+(1035) [THYESTES, FRATER ATREI:] dies ist die|Götter was beschämte, dies trieb den|Tag
+(1036) [THYESTES, FRATER ATREI:] āversum(Adj)(A) in(Prp) ortūs(A). Quās(Pr)(A) miser(Adj)(V) vōcēs(A) dabō(Fu1)(Akt)
+(1036) [THYESTES, FRATER ATREI:] abgewendet zu Aufgänge. welche Elender Stimmen werde|ich|geben
+(1037) [THYESTES, FRATER ATREI:] questūsque(A)(Kon) quōs(Pr)(A)? quae(Pr)(A) verba(A) sufficient(Fu1)(Akt) mihī(Pr)(D)?
+(1037) [THYESTES, FRATER ATREI:] Klagen|und welche? welche Wörter werden|reichen mir?
+(1038) [THYESTES, FRATER ATREI:] abscīsa(Per)(Pas)(A) cernō(Prä)(Akt) capita(A) et(Kon) āvulsās(Per)(Pas)(A) manūs(A)
+(1038) [THYESTES, FRATER ATREI:] abgeschnittene ich|sehe Köpfe und abgerissene Hände
+(1039) [THYESTES, FRATER ATREI:] et(Kon) rupta(Per)(Pas)(N) frāctīs(Per)(Pas)(Abl) crūribus(N)(Abl) vestīgia(A);
+(1039) [THYESTES, FRATER ATREI:] und zerbrochene mit|gebrochenen Schenkeln Spuren;
+(1040) [THYESTES, FRATER ATREI:] hoc(Pr)(N) est(Prä)(Akt) quod(Pr)(N) avidus(Adj)(N) capere(Inf)(Akt) nōn(Pt) potuit(Per)(Akt) pater(N).
+(1040) [THYESTES, FRATER ATREI:] dieses ist was gieriger ergreifen nicht konnte Vater.
+(1041) [THYESTES, FRATER ATREI:] volvuntur(Prä)(Pas) intus(Adv) vīscera(N) et(Kon) clūsum(Per)(Pas)(N) nefās(N)
+(1041) [THYESTES, FRATER ATREI:] werden|gewälzt innen Eingeweide und eingeschlossenes Frevel
+(1042) [THYESTES, FRATER ATREI:] sine(Prp) exitū(N)(Abl) luctātur(Prä)(Pas) et(Kon) quaerit(Prä)(Akt) fugam(A).
+(1042) [THYESTES, FRATER ATREI:] ohne Ausgang ringt und sucht Flucht.
+(1043) [THYESTES, FRATER ATREI:] dā(Prä)(Imv)(Akt), frāter(V), ēnsem(A) (sanguinis(G) multum(Adj)(N) meī(Pr)(G)
+(1043) [THYESTES, FRATER ATREI:] gib, Bruder, Schwert (des|Blutes viel meines
+(1044) [THYESTES, FRATER ATREI:] habet(Prä)(Akt) ille(Pr)(N)): ferrō(N)(Abl) līberīs(D) dētur(Prä)(Pas)(Knj) via(N).
+(1044) [THYESTES, FRATER ATREI:] hat jener): mit|dem|Eisen den|Kindern möge|gegeben|werden Weg.
+(1045) [THYESTES, FRATER ATREI:] negātur(Prä)(Pas) ēnsis(N)? pectora(N) inlīsō(Per)(Pas)(Abl) sonent(Prä)(Knj)(Akt)
+(1045) [THYESTES, FRATER ATREI:] wird|verweigert Schwert? Brüste mit|dem|Schlagen mögen|tönen
+(1046) [THYESTES, FRATER ATREI:] contūsa(Per)(Pas)(N) plānctū(N)(Abl); sustinē(Prä)(Imv)(Akt), īnfēlīx(Adj)(V), manum(A),
+(1046) [THYESTES, FRATER ATREI:] zerschlagene durch|Klagen; halte|zurück, Unglücklicher, Hand,
+(1047) [THYESTES, FRATER ATREI:] parcāmus(Prä)(Knj)(Akt) umbrīs(D). Tāle(Adj)(N) quis(Pr)(N) vīdit(Per)(Akt) nefās(N)?
+(1047) [THYESTES, FRATER ATREI:] mögen|wir|schonen den|Schatten. ein|solches wer sah Frevel?
+(1048) [THYESTES, FRATER ATREI:] quis(Pr)(N) inhospitālis(Adj)(N) Caucasī(G) rūpem(A) asperam(Adj)(A)
+(1048) [THYESTES, FRATER ATREI:] wer ungastlicher des|Kaukasus Felsen rauen
+(1049) [THYESTES, FRATER ATREI:] Hēniochus(N) habitāns(Prä)(Akt)(N) quisve(Pr)(N)(Kon) Cecropiīs(Adj)(Abl) metus(N)
+(1049) [THYESTES, FRATER ATREI:] Heniocher bewohnend wer|oder bei|den|Cecropischen Furcht
+(1050) [THYESTES, FRATER ATREI:] terrīs(N)(Abl) Procrūstēs(N)? genitor(N) ēn(ij) nātōs(A) premō(Prä)(Akt)
+(1050) [THYESTES, FRATER ATREI:] den|Ländern Prokrustes? Vater sieh Söhne drücke
+(1051) [THYESTES, FRATER ATREI:] premorque(Prä)(Akt)(Kon) nātīs(N)(Abl); sceleris(G) est(Prä)(Akt) aliquis(Pr)(N) modus(N)?
+(1051) [THYESTES, FRATER ATREI:] drücke|und von|den|Söhnen; des|Verbrechens ist irgendein Maß?
+(1052) [ATREUS, REX MYCENARUM:] Scelerī(D) modus(N) dēbētur(Prä)(Pas) ubi(Kon) faciās(Prä)(Knj)(Akt) scelus(A),
+(1052) [ATREUS, REX MYCENARUM:] dem|Verbrechen Maß wird|geschuldet wo du|machest Verbrechen,
+(1053) [ATREUS, REX MYCENARUM:] nōn(Pt) ubi(Kon) repōnās(Prä)(Knj)(Akt). Hoc(Pr)(N) quoque(Pt) exiguum(Adj)(N) est(Prä)(Akt) mihī(Pr)(D).
+(1053) [ATREUS, REX MYCENARUM:] nicht wo zurück|legest. dieses auch geringes ist mir.
+(1054) [ATREUS, REX MYCENARUM:] ex(Prp) vulnere(N)(Abl) ipsō(Pr)(Abl) sanguinem(A) calidum(Adj)(A) in(Prp) tua(Pr)(A)
+(1054) [ATREUS, REX MYCENARUM:] aus der|Wunde selbst Blut heißes in deine
+(1055) [ATREUS, REX MYCENARUM:] dēfundere(Inf)(Akt) ōra(A) dēbuī(Per)(Akt), ut(Kon) vīventium(Prä)(Akt)(G)
+(1055) [ATREUS, REX MYCENARUM:] aus|gießen Münder habe|gesollt, damit der|Lebenden
+(1056) [ATREUS, REX MYCENARUM:] biberēs(Imp)(Knj)(Akt) cruōrem(A); verba(N) sunt(Prä)(Akt) īrae(D) data(Per)(Pas)(N)
+(1056) [ATREUS, REX MYCENARUM:] tränkest Blut; Worte sind dem|Zorn gegeben
+(1057) [ATREUS, REX MYCENARUM:] dum(Kon) propero(Prä)(Akt). Ferrō(N)(Abl) vulnera(A) impressō(Per)(Pas)(Abl) dedī(Per)(Akt),
+(1057) [ATREUS, REX MYCENARUM:] während ich|eile. mit|dem|Eisen Wunden mit|eingedrücktem gab|ich,
+(1058) [ATREUS, REX MYCENARUM:] cecīdī(Per)(Akt) ad(Prp) ārās(A), caede(N)(Abl) vōtīvā(Adj)(Abl) focōs(A)
+(1058) [ATREUS, REX MYCENARUM:] ich|tötete zu Altären, mit|der|Tötung geweihten Herde
+(1059) [ATREUS, REX MYCENARUM:] plācāvī(Per)(Akt), et(Kon) artūs(A), corpora(A) exanima(Adj)(A) amputāns(Prä)(Akt)(N),
+(1059) [ATREUS, REX MYCENARUM:] ich|besänftigte, und Glieder, Körper seelenlose abschneidend,
+(1060) [ATREUS, REX MYCENARUM:] in(Prp) parva(Adj)(A) carpsī(Per)(Akt) frusta(A) et(Kon) haec(Pr)(A) ferventibus(Prä)(Akt)(Abl)
+(1060) [ATREUS, REX MYCENARUM:] in kleine ich|zerteilte Stücke und diese kochenden
+(1061) [ATREUS, REX MYCENARUM:] dēmersī(Per)(Akt) aēnīs(N)(Abl); illa(Pr)(N) lentīs(Adj)(Abl) ignibus(N)(Abl)
+(1061) [ATREUS, REX MYCENARUM:] ich|untertauchte in|bronzenen|Kesseln; jene langsamen Feuern
+(1062) [ATREUS, REX MYCENARUM:] stillāre(Inf)(Akt) jussī(Per)(Akt). Membra(A) nervōsque(A)(Kon) abscidī(Per)(Akt)
+(1062) [ATREUS, REX MYCENARUM:] tröpfeln ich|befahl. Glieder Sehnen|und ich|schnitt|ab
+(1063) [ATREUS, REX MYCENARUM:] vīventibus(Prä)(Akt)(Abl), gracilīque(Adj)(Abl)(Kon) trājectās(Per)(Pas)(A) verū(N)(Abl)
+(1063) [ATREUS, REX MYCENARUM:] bei|den|Lebenden, dünnen|und durchstochenen mit|dem|Spieß
+(1064) [ATREUS, REX MYCENARUM:] mūgīre(Inf)(Akt) fibrās(A) vīdī(Per)(Akt) et(Kon) aggessī(Per)(Akt) manū(N)(Abl)
+(1064) [ATREUS, REX MYCENARUM:] brüllen Fasern ich|sah und ich|trug|herbei mit|der|Hand
+(1065) [ATREUS, REX MYCENARUM:] meā(Pr)(Abl) ipse(Pr)(N) flammās(A). Omnia(Pr)(N) haec(Pr)(N) melius(Adv)(Kmp) pater(N)
+(1065) [ATREUS, REX MYCENARUM:] meiner selbst Flammen. alles dies besser Vater
+(1066) [ATREUS, REX MYCENARUM:] fēcisse(Inf)(Akt)(Per) potuit(Per)(Akt), cecidit(Per)(Akt) in(Prp) cassum(Adj)(A) dolor(N):
+(1066) [ATREUS, REX MYCENARUM:] gemacht|zu|haben konnte, fiel in das|Leere Schmerz:
+(1067) [ATREUS, REX MYCENARUM:] scidit(Per)(Akt) ōre(N)(Abl) nātōs(A) impiō(Adj)(Abl), sed(Kon) nesciēns(Prä)(Akt)(N),
+(1067) [ATREUS, REX MYCENARUM:] zerriss mit|dem|Mund Söhne gottlosen, aber nicht|wissend,
+(1068) [ATREUS, REX MYCENARUM:] sed(Kon) nescientēs(Prä)(Akt)(N). Clausa(Per)(Pas)(N) lītoribus(N)(Abl) vagīs(Adj)(Abl)
+(1068) [ATREUS, REX MYCENARUM:] aber nicht|wissende. geschlossen durch|die|Ufer wandelnden
+(1069) [THYESTES, FRATER ATREI:] audīte(Prä)(Imv)(Akt) maria(N), vōs(Pr)(N) quoque(Pt) audīte(Prä)(Imv)(Akt) hoc(Pr)(A) scelus(N),
+(1069) [THYESTES, FRATER ATREI:] hört Meere, ihr auch hört dieses Verbrechen,
+(1070) [THYESTES, FRATER ATREI:] quōcumque(Adv), dī(V), fūgistis(Per)(Akt); audīte(Prä)(Imv)(Akt) īnferī(Adj)(N),
+(1070) [THYESTES, FRATER ATREI:] wohin|auch|immer, Götter, seid|geflohen; hört Unterirdische,
+(1071) [THYESTES, FRATER ATREI:] audīte(Prä)(Imv)(Akt) terrae(V), Noxque(N)(Kon) Tartareā(Adj)(Abl) gravis(Adj)(N)
+(1071) [THYESTES, FRATER ATREI:] hört Erde, Nacht|und tartarischer schwere
+(1072) [THYESTES, FRATER ATREI:] et(Kon) ātra(Adj)(Abl) nūbe(N)(Abl), vōcibus(N)(Abl) nostrīs(Pr)(Abl) vacā(Prä)(Imv)(Akt)
+(1072) [THYESTES, FRATER ATREI:] und schwarzer Wolke, für|die|Stimmen unsrigen sei|frei
+(1073) [THYESTES, FRATER ATREI:] (tibi(Pr)(D) sum(Prä)(Akt) relictus(Per)(Pas)(N), sōla(Adj)(N) tū(Pr)(N) miserum(Adj)(A) vidēs(Prä)(Akt),
+(1073) [THYESTES, FRATER ATREI:] (dir bin zurückgelassen, allein du den|Elenden siehst,
+(1074) [THYESTES, FRATER ATREI:] tū(Pr)(N) quoque(Pt) sine(Prp) astrīs(N)(Abl)), vōta(A) nōn(Pt) faciam(Prä)(Knj)(Akt) improba(Adj)(A).
+(1074) [THYESTES, FRATER ATREI:] du auch ohne Sternen), Gelübde nicht werde|machen frevlerische.
+(1075) [THYESTES, FRATER ATREI:] prō(Prp) mē(Pr)(Abl) nihil(Pr)(N) precābor(Fu1)(Pas); et(Kon) quid(Pr)(N) jam(Adv) potest(Prä)(Akt)
+(1075) [THYESTES, FRATER ATREI:] für mich nichts werde|ich|bitten; und was schon kann
+(1076) [THYESTES, FRATER ATREI:] prō(Prp) mē(Pr)(Abl) esse(Inf)(Akt)? Vōbīs(Pr)(D) vōta(N) prōspicient(Fu1)(Akt) mea(Pr)(N).
+(1076) [THYESTES, FRATER ATREI:] für mich sein? euch Gelübde werden|vorsorgen meine.
+(1077) [THYESTES, FRATER ATREI:] tū(Pr)(N), summe(Adj)(V) caelī(G) rēctor(V), aetheriae(Adj)(G) potēns(Adj)(N)
+(1077) [THYESTES, FRATER ATREI:] du, höchster des|Himmels Lenker, ätherischen mächtiger
+(1078) [THYESTES, FRATER ATREI:] dominātor(V) aulae(G), nūbibus(N)(Abl) tōtum(Adj)(A) horridīs(Adj)(Abl)
+(1078) [THYESTES, FRATER ATREI:] Herrscher des|Hofes, mit|Wolken ganzes schrecklichen
+(1079) [THYESTES, FRATER ATREI:] convolve(Prä)(Akt) mundum(A), bella(A) ventōrum(G) undique(Adv)
+(1079) [THYESTES, FRATER ATREI:] zusammen|wälze Welt, Kriege der|Winde überallher
+(1080) [THYESTES, FRATER ATREI:] committe(Prä)(Imv)(Akt) et(Kon) omnī(Adj)(Abl) parte(N)(Abl) violentum(Adj)(A) intonā(Prä)(Imv)(Akt),
+(1080) [THYESTES, FRATER ATREI:] entfache und an|jeder Seite gewaltigen donnere,
+(1081) [THYESTES, FRATER ATREI:] manūque(N)(Abl)(Kon) nōn(Pt) quā(Pr)(Abl) tēcta(A) et(Kon) immeritās(Adj)(A) domōs(A)
+(1081) [THYESTES, FRATER ATREI:] mit|der|Hand|und nicht mit|welcher Häuser und unschuldige Häuser
+(1082) [THYESTES, FRATER ATREI:] tēlō(N)(Abl) petis(Prä)(Akt) minōre(Adj)(Abl), sed(Kon) quā(Pr)(Abl) montium(G)
+(1082) [THYESTES, FRATER ATREI:] mit|dem|Geschoss angreifst|du geringerem, sondern mit|welcher der|Berge
+(1083) [THYESTES, FRATER ATREI:] tergemina(Adj)(N) mōlēs(N) cecidit(Per)(Akt) et(Kon) quī(Pr)(N) montibus(N)(Abl)
+(1083) [THYESTES, FRATER ATREI:] dreifache Masse ist|gefallen und welche auf|den|Bergen
+(1084) [THYESTES, FRATER ATREI:] stābant(Imp)(Akt) parēs(Adj)(N) Gigantes(N), hāc(Pr)(Abl) arma(A) expedī(Prä)(Imv)(Akt)
+(1084) [THYESTES, FRATER ATREI:] standen gleiche Giganten, mit|dieser Waffen rüste
+(1085) [THYESTES, FRATER ATREI:] ignēsque(A)(Kon) torquē(Prä)(Imv)(Akt). Vindicā(Prä)(Imv)(Akt) āmissum(Per)(Pas)(A) diem(A),
+(1085) [THYESTES, FRATER ATREI:] Feuer|und schleudere. ahnde verlorenen Tag,
+(1086) [THYESTES, FRATER ATREI:] jaculāre(Prä)(Imv)(Akt) flammās(A), lūmen(A) ēreptum(Per)(Pas)(A) polō(N)(Abl)
+(1086) [THYESTES, FRATER ATREI:] wirf|mit Flammen, Licht entrissenes dem|Himmel
+(1087) [THYESTES, FRATER ATREI:] fulminibus(N)(Abl) explē(Prä)(Imv)(Akt). Causa(N), nē(Kon) dubitēs(Prä)(Knj)(Akt) diū(Adv),
+(1087) [THYESTES, FRATER ATREI:] mit|den|Blitzen fülle. Grund, damit|nicht zweifelst lange,
+(1088) [THYESTES, FRATER ATREI:] utriusque(Pr)(G) mala(Adj)(N) sit(Prä)(Knj)(Akt); sī(Kon) minus(Adv), mala(Adj)(N) sit(Prä)(Knj)(Akt) mea(Pr)(N):
+(1088) [THYESTES, FRATER ATREI:] beider Übel sei; wenn nicht, Übel sei mein:
+(1089) [THYESTES, FRATER ATREI:] mē(Pr)(A) pete(Prä)(Imv)(Akt), trisulcō(Adj)(Abl) flammeam(Adj)(A) tēlō(N)(Abl) facem(A)
+(1089) [THYESTES, FRATER ATREI:] mich triff, dreizackigen flammende mit|der|Waffe Fackel
+(1090) [THYESTES, FRATER ATREI:] per(Prp) pectus(A) hoc(Pr)(A) trānsmitte(Prä)(Imv)(Akt). Sī(Kon) nātōs(A) pater(N)
+(1090) [THYESTES, FRATER ATREI:] durch die|Brust dieses schicke|hindurch. wenn die|Söhne der|Vater
+(1091) [THYESTES, FRATER ATREI:] humāre(Inf)(Akt) et(Kon) ignī(D) trādere(Inf)(Akt) extrēmō(Adj)(D) volō(Prä)(Akt),
+(1091) [THYESTES, FRATER ATREI:] begraben und dem|Feuer übergeben letzten will,
+(1092) [THYESTES, FRATER ATREI:] ego(Pr)(N) sum(Prä)(Akt) cremandus(Fu1)(Pas)(N)(Gdv). Sī(Kon) nihil(Pr)(N) superōs(Adj)(A) movet(Prä)(Akt)
+(1092) [THYESTES, FRATER ATREI:] ich bin zu|verbrennender. wenn nichts die|Götter bewegt
+(1093) [THYESTES, FRATER ATREI:] nūllumque(Adj)(N)(Kon) tēlīs(N)(Abl) impiōs(Adj)(A) nūmen(N) petit(Prä)(Akt),
+(1093) [THYESTES, FRATER ATREI:] kein|und mit|den|Waffen Gottlosen göttliche|Macht greift|an,
+(1094) [THYESTES, FRATER ATREI:] aeterna(Adj)(N) nox(N) permaneat(Prä)(Knj)(Akt) et(Kon) tenebrīs(N)(Abl) tegat(Prä)(Knj)(Akt)
+(1094) [THYESTES, FRATER ATREI:] ewige Nacht währe|fort und mit|der|Finsternis bedecke
+(1095) [THYESTES, FRATER ATREI:] immēnsa(Adj)(A) longīs(Adj)(Abl) scelera(A). Nīl(Pr)(N), Tītān(V), queror(Prä)(Akt),
+(1095) [THYESTES, FRATER ATREI:] ungeheure langen Verbrechen. nichts, Titan, beklage,
+(1096) [THYESTES, FRATER ATREI:] sī(Kon) persevērās(Prä)(Akt). Nunc(Adv) meās(Adj)(A) laudō(Prä)(Akt) manūs(A),
+(1096) [THYESTES, FRATER ATREI:] wenn du|beharrst. Nun meine lobe|ich Hände,
+(1097) [ATREUS, REX MYCENARUM:] nunc(Adv) parta(Per)(Pas)(N) vēra(Adj)(N) est(Prä)(Akt) palma(N). Perdideram(Plq)(Akt) scelus(A),
+(1097) [ATREUS, REX MYCENARUM:] jetzt errungene wahre ist Siegespalme. ich|hatte|verloren Verbrechen,
+(1098) [ATREUS, REX MYCENARUM:] nisi(Kon) sīc(Adv) dolērēs(Imp)(Knj)(Akt). Līberōs(A) nāscī(Inf)(Pas) mihī(Pr)(D)
+(1098) [ATREUS, REX MYCENARUM:] wenn|nicht so würdest|schmerzen. Kinder geboren|werden mir
+(1099) [ATREUS, REX MYCENARUM:] nunc(Adv) crēdo(Prä)(Akt), castīs(Adj)(D) nunc(Adv) fidem(A) reddī(Inf)(Pas) torīs(D).
+(1099) [ATREUS, REX MYCENARUM:] nun glaube|ich, den|keuschen nun Treue zurück|gegeben|werden Betten.
+(1100) [THYESTES, FRATER ATREI:] Quid(Adv) līberī(N) meruēre(Per)(Akt)? Quod(Kon) fuerant(Plq)(Akt) tuī(Pr)(G).
+(1100) [THYESTES, FRATER ATREI:] Was die|Kinder haben|verdient|?? weil gewesen|waren deine.
+(1101) [THYESTES, FRATER ATREI:] Nātōs(A) parentī(D)– Fateor(Prä)(Akt), et(Kon), quod(Kon) mē(Pr)(A) juvat(Prä)(Akt),
+(1101) [THYESTES, FRATER ATREI:] die|Söhne dem|Vater– ich|gestehe, und, was mich erfreut,
+(1102) [ATREUS, REX MYCENARUM:] certōs(Adj)(A). Piōrum(Adj)(G) praesidēs(A) testor(Prä)(Akt) deōs(A).
+(1102) [ATREUS, REX MYCENARUM:] rechtmäßige. der|Frommen Beschützer rufe|zu|Zeugen die|Götter.
+(1103) [ATREUS, REX MYCENARUM:] Quid(Adv) conjugālēs(Adj)(A)? Scelere(N)(Abl) quis(Pr)(N) pēnsat(Prä)(Akt) scelus(A)?
+(1103) [ATREUS, REX MYCENARUM:] Was das|Eheliche? durch|das|Verbrechen wer verrechnet Verbrechen?
+(1104) [ATREUS, REX MYCENARUM:] Scio(Prä)(Akt) quid(Pr)(N) querāris(Prä)(Knj)(Akt): scelere(N)(Abl) praereptō(Per)(Pas)(Abl) dolēs(Prä)(Akt),
+(1104) [ATREUS, REX MYCENARUM:] ich|weiß was du|klagest: durch|das|Verbrechen vorweg|geraubten trauerst,
+(1105) [ATREUS, REX MYCENARUM:] nec(Kon) quod(Kon) nefandās(Adj)(A) hauserīs(Fu2)(Akt) angit(Prä)(Akt) dapēs(A);
+(1105) [ATREUS, REX MYCENARUM:] und|nicht dass unsäglichen du|geschlürft|haben|wirst bedrückt die|Speisen;
+(1106) [ATREUS, REX MYCENARUM:] quod(Kon) nōn(Pt) parārīs(Plq)(Akt). Fuerat(Plq)(Akt) hic(Pr)(N) animus(N) tibī(Pr)(D)
+(1106) [ATREUS, REX MYCENARUM:] weil nicht du|vorbereitet|hattest. gewesen|war dieser Vorsatz dir
+(1107) [ATREUS, REX MYCENARUM:] īnstruere(Inf)(Akt) similēs(Adj)(A) īnsciō(Adj)(D) frātrī(D) cibōs(A)
+(1107) [ATREUS, REX MYCENARUM:] zurecht|machen ähnliche dem|ahnungslosen Bruder Speisen
+(1108) [ATREUS, REX MYCENARUM:] et(Kon) adjuvante(Prä)(Akt)(Abl) līberōs(A) mātre(N)(Abl) aggredī(Inf)(Pas)
+(1108) [ATREUS, REX MYCENARUM:] und mit|helfender Kinder Mutter angreifen
+(1109) [ATREUS, REX MYCENARUM:] similīque(Adj)(Abl)(Kon) lētō(N)(Abl) sternere(Inf)(Akt); hoc(Pr)(N) ūnum(Adj)(N) obstitit(Per)(Akt);
+(1109) [ATREUS, REX MYCENARUM:] mit|ähnlichem|und Tod nieder|strecken; dies einziges hat|entgegen|gestanden;
+(1110) [ATREUS, REX MYCENARUM:] tuōs(Adj)(A) putāstī(Per)(Akt). Vindicēs(N) aderunt(Fu1)(Akt) deī(N);
+(1110) [ATREUS, REX MYCENARUM:] die|Deinen du|dachtest. Rächer werden|da|sein Götter;
+(1111) [THYESTES, FRATER ATREI:] hīs(Pr)(D) pūniendum(Fu1)(Pas)(N)(Gdv) vōta(N) tē(Pr)(A) trādunt(Prä)(Akt) mea(Adj)(N).
+(1111) [THYESTES, FRATER ATREI:] diesen zu|bestrafenden Gelübde dich übergeben meine.
+(1112) [ATREUS, REX MYCENARUM:] Tē(Pr)(A) pūniendum(Fu1)(Pas)(N)(Gdv) līberīs(D) trādō(Prä)(Akt) tuīs(Pr)(D).
+(1112) [ATREUS, REX MYCENARUM:] dich zu|bestrafenden den|Kindern übergebe|ich deinen.

@@ -1,0 +1,1924 @@
+==== Politeia 2 ====
+== St. 357a ==
+(3) [Σωκράτης:] ἐγὼ(Pr)(N) μὲν(Pt) οὖν(Pt) ταῦτα(Pr)(A) εἰπὼν(AorS)(Akt)(N) ᾤμην(Imp)(M/P) λόγου(G) ἀπηλλάχθαι(Per)(M/P)(Inf)· τὸ(Art)(N)
+(3) [Σωκράτης:] I indeed then these|things having|said I|thought of|speech to|have|been|released· the
+(4) δʼ(Kon) ἦν(Imp)(Akt) ἄρα(Pt), ὡς(Kon) ἔοικε(Per)(Akt), προοίμιον(N). ὁ(Art)(N) γὰρ(Pt) Γλαύκων(N) ἀεί(Adv)
+(4) but|now was then, as it|seems, a|prelude. the for Glaucon always
+(5) τε(Pt) δὴ(Pt) ἀνδρειότατος(Adj)(Sup)(N) ὢν(Prä)(Akt)(N) τυγχάνει(Prä)(Akt) πρὸς(Prp) ἅπαντα(Pr)(A), καὶ(Kon) δὴ(Pt) καὶ(Kon)
+(5) and indeed bravest being happens towards all|things, and indeed also
+(6) τότε(Adv) τοῦ(Art)(G) Θρασυμάχου(G) τὴν(Art)(A) ἀπόρρησιν(A) οὐκ(Pt) ἀπεδέξατο(Aor)(Med), ἀλλʼ(Kon) ἔφη(Imp)(Akt)· ὦ(ij)
+(6) then of|the Thrasymachus the refusal not accepted, but he|said· O
+(7) Σώκρατες(V), πότερον(Kon) ἡμᾶς(Pr)(A) βούλει(Prä)(Med) δοκεῖν(Prä)(Inf)(Akt) πεπεικέναι(Per)(Inf)(Akt) ἢ(Kon) ὡς(Kon) ἀληθῶς(Adv) [357b]
+(7) Socrates, whether us do|you|wish to|seem to|have|persuaded or as truly [357b]
+(8) πεῖσαι(Aor)(Inf)(Akt) ὅτι(Kon) παντὶ(Adj)(D) τρόπῳ(D) ἄμεινόν(Adv)(Kmp) ἐστιν(Prä)(Akt) δίκαιον(Adj)(A) εἶναι(Prä)(Inf)(Akt) ἢ(Kon) ἄδικον(Adj)(A);
+(8) to|persuade that in|every way better it|is just to|be than unjust;
+(9) ὡς(Kon) ἀληθῶς(Adv), εἶπον(Aor)(Akt), ἔγωγʼ(Pr)(N) ἂν(Pt) ἑλοίμην(Aor)(Med)(Op), εἰ(Kon) ἐπʼ(Prp) ἐμοὶ(Pr)(D) εἴη(Prä)(Akt)(Op).
+(9) indeed truly, I|said, I|at|least would choose, if upon me it|might|be.
+(10) οὐ(Pt) τοίνυν(Pt), ἔφη(Imp)(Akt), ποιεῖς(Prä)(Akt) ὃ(Pr)(A) βούλει(Prä)(Med). λέγε(Prä)(Akt)(Imv) γάρ(Pt) μοι(Pr)(D)· ἆρά(Pt)
+(10) not therefore, he|said, you|do what you|wish. speak for to|me· then
+(11) σοι(Pr)(D) δοκεῖ(Prä)(Akt) τοιόνδε(Adj)(A) τι(Pr)(A) εἶναι(Prä)(Inf)(Akt) ἀγαθόν(Adj)(N), ὃ(Pr)(A) δεξαίμεθʼ(Aor)(Med)(Op) ἂν(Pt) ἔχειν(Prä)(Inf)(Akt)
+(11) to|you does|it|seem such some|thing to|be good, which we|would|accept indeed to|have
+(12) οὐ(Pt) τῶν(Art)(G) ἀποβαινόντων(Prä)(Akt)(G) ἐφιέμενοι(Prä)(Med)(N), ἀλλʼ(Kon) αὐτὸ(Pr)(A) αὑτοῦ(Pr)(G) ἕνεκα(Prp) ἀσπαζόμενοι(Prä)(Med)(N), οἷον(Kon)
+(12) not of|the resulting desiring, but itself of|itself for|sake welcoming, such|as
+(13) τὸ(Art)(A) χαίρειν(Prä)(Inf)(Akt) καὶ(Kon) αἱ(Art)(N) ἡδοναὶ(N) ὅσαι(Pr)(N) ἀβλαβεῖς(Adj)(N) καὶ(Kon) μηδὲν(Pr)(A) εἰς(Prp)
+(13) the to|rejoice and the pleasures as|many|as harmless and nothing into
+(14) τὸν(Art)(A) ἔπειτα(Adv) χρόνον(A) διὰ(Prp) ταύτας(Pr)(A) γίγνεται(Prä)(M/P) ἄλλο(Adj)(A) ἢ(Kon) χαίρειν(Prä)(Inf)(Akt) ἔχοντα(Prä)(Akt)(A);
+(14) the later time because|of these happens other than to|rejoice having;
+(15) ἔμοιγε(Pr)(D), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), δοκεῖ(Prä)(Akt) τι(Pr)(N) εἶναι(Prä)(Inf)(Akt) τοιοῦτον(Adj)(N). τί(Pr)(N) [357c]
+(15) to|me|at|least, it|was but I, it|seems something to|be such. what [357c]
+(16) δέ(Kon); ὃ(Pr)(N) αὐτό(Pr)(A) τε(Pt) αὑτοῦ(Pr)(G) χάριν(A) ἀγαπῶμεν(Prä)(Akt) καὶ(Kon) τῶν(Art)(G) ἀπʼ(Prp)
+(16) but; which itself and of|itself for|sake we|love and of|the from
+(17) αὐτοῦ(Pr)(G) γιγνομένων(Prä)(M/P)(G), οἷον(Kon) αὖ(Pt) τὸ(Art)(A) φρονεῖν(Prä)(Inf)(Akt) καὶ(Kon) τὸ(Art)(A) ὁρᾶν(Prä)(Inf)(Akt) καὶ(Kon)
+(17) it coming|to|be, such|as again the to|think and the to|see and
+(18) τὸ(Art)(A) ὑγιαίνειν(Prä)(Inf)(Akt); τὰ(Art)(N) γὰρ(Pt) τοιαῦτά(Adj)(N) που(Pt) διʼ(Prp) ἀμφότερα(Adj)(A) ἀσπαζόμεθα(Prä)(Med). ναί(Pt),
+(18) the to|be|healthy; the for such|things I|suppose because|of both we|welcome. yes,
+(19) εἶπον(Aor)(Akt). τρίτον(Adj) δὲ(Kon) ὁρᾷς(Prä)(Akt) τι(Pr)(A), ἔφη(Imp)(Akt), εἶδος(A) ἀγαθοῦ(Adj)(G), ἐν(Prp) ᾧ(Pr)(D)
+(19) I|said. third but do|you|see something, he|said, kind of|good, in which
+(20) τὸ(Art)(A) γυμνάζεσθαι(Prä)(M/P)(Inf) καὶ(Kon) τὸ(Art)(A) κάμνοντα(Prä)(Akt)(A) ἰατρεύεσθαι(Prä)(M/P)(Inf) καὶ(Kon) ἰάτρευσίς(N) τε(Pt) καὶ(Kon)
+(20) the to|exercise|oneself and the being|ill to|be|treated and treatment and also
+(21) ὁ(Art)(N) ἄλλος(Adj)(N) χρηματισμός(N); ταῦτα(Pr)(N) γὰρ(Pt) ἐπίπονα(Adj)(N) φαῖμεν(Prä)(Akt)(Op) ἄν(Pt), ὠφελεῖν(Prä)(Inf)(Akt) δὲ(Kon)
+(21) the other business; these|things for painful we|would|say indeed, to|benefit but
+(22) ἡμᾶς(Pr)(A), καὶ(Kon) αὐτὰ(Pr)(A) μὲν(Pt) ἑαυτῶν(Pr)(G) ἕνεκα(Prp) οὐκ(Pt) ἂν(Pt) δεξαίμεθα(Aor)(Med)(Op) ἔχειν(Prä)(Inf)(Akt),
+(22) us, and themselves indeed of|themselves for|sake not indeed we|would|accept to|have,
+(23) τῶν(Art)(G) [357d] δὲ(Kon) μισθῶν(G) τε(Pt) χάριν(A) καὶ(Kon) τῶν(Art)(G) ἄλλων(Adj)(G) ὅσα(Pr)(N)
+(23) of|the [357d] but rewards and for|sake and of|the other as|many|as
+(24) γίγνεται(Prä)(M/P) ἀπʼ(Prp) αὐτῶν(Pr)(G). ἔστιν(Prä)(Akt) γὰρ(Pt) οὖν(Pt), ἔφην(Imp)(Akt), καὶ(Kon) τοῦτο(Pr)(N) τρίτον(Adj)(N).
+(24) comes|to|be from them. it|is for then, I|said, also this third.
+(25) ἀλλὰ(Kon) τί(Pr)(N) δή(Pt); ἐν(Prp) ποίῳ(Adj)(D), ἔφη(Imp)(Akt), τούτων(Pr)(G) τὴν(Art)(A) δικαιοσύνην(A) τιθεῖς(Prä)(Akt);
+(25) but what then; in which, he|said, of|these the justice do|you|place;
+== St. 358a ==
+(27) [Σωκράτης:] ἐγὼ(Pr)(N) μὲν(Pt) οἶμαι(Prä)(Med), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ἐν(Prp) τῷ(Art)(D) καλλίστῳ(Adj)(Sup)(D),
+(27) [Σωκράτης:] I indeed think, was but I, in the most|beautiful,
+(28) ὃ(Pr)(N) καὶ(Kon) διʼ(Prp) αὑτὸ(Pr)(A) καὶ(Kon) διὰ(Prp) τὰ(Art)(A) γιγνόμενα(Prä)(M/P)(A) ἀπʼ(Prp) αὐτοῦ(Pr)(G)
+(28) which and because|of itself and because|of the things|coming|to|be from it
+(29) ἀγαπητέον(Adj)(N) τῷ(Art)(D) μέλλοντι(Prä)(Akt)(D) μακαρίῳ(Adj)(D) ἔσεσθαι(Fu)(Inf)(Akt). οὐ(Pt) τοίνυν(Pt) δοκεῖ(Prä)(Akt), ἔφη(Imp)(Akt), τοῖς(Art)(D)
+(29) to|be|loved to|the going|to|be blessed to|be. not therefore seems, he|said, to|the
+(30) πολλοῖς(Adj)(D), ἀλλὰ(Kon) τοῦ(Art)(G) ἐπιπόνου(Adj)(G) εἴδους(G), ὃ(Pr)(N) μισθῶν(G) θʼ(Pt) ἕνεκα(Prp) καὶ(Kon)
+(30) many, but of|the toilsome kind, which of|rewards and for|sake and
+(31) εὐδοκιμήσεων(G) διὰ(Prp) δόξαν(A) ἐπιτηδευτέον(Adj)(N), αὐτὸ(Pr)(N) δὲ(Kon) διʼ(Prp) αὑτὸ(Pr)(A) φευκτέον(Adj)(N) ὡς(Kon)
+(31) of|distinctions because|of reputation to|be|pursued, itself but because|of itself to|be|shunned as
+(32) ὂν(Prä)(Akt)(N) χαλεπόν(Adj)(N). οἶδα(Per)(Akt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ὅτι(Kon) δοκεῖ(Prä)(Akt) οὕτω(Adv) καὶ(Kon)
+(32) being difficult. I|know, was but I, that it|seems thus also
+(33) πάλαι(Adv) ὑπὸ(Prp) Θρασυμάχου(G) ὡς(Kon) τοιοῦτον(Adj)(A) ὂν(Prä)(Akt)(A) ψέγεται(Prä)(M/P), ἀδικία(N) δʼ(Kon) ἐπαινεῖται(Prä)(M/P)·
+(33) long|ago by Thrasymachus as such being is|blamed, injustice but is|praised·
+(34) ἀλλʼ(Kon) ἐγώ(Pr)(N) τις(Pr)(N), ὡς(Kon) ἔοικε(Per)(Akt), δυσμαθής(Adj)(N). ἴθι(Prä)(Akt)(Imv) [358b] δή(Pt), ἔφη(Imp)(Akt),
+(34) but I somewhat, as it|seems, slow|to|learn. go [358b] indeed, he|said,
+(35) ἄκουσον(Aor)(Akt)(Imv) καὶ(Kon) ἐμοῦ(Pr)(G), ἐάν(Kon) σοι(Pr)(D) ἔτι(Adv) ταὐτὰ(Adj)(A) δοκῇ(Prä)(Akt)(Knj). Θρασύμαχος(N) γάρ(Pt)
+(35) listen and of|me, if to|you still the|same|things may|seem. Thrasymachus for
+(36) μοι(Pr)(D) φαίνεται(Prä)(M/P) πρῳαίτερον(Adv)(Kmp) τοῦ(Art)(G) δέοντος(Prä)(M/P)(G) ὑπὸ(Prp) σοῦ(Pr)(G) ὥσπερ(Kon) ὄφις(N) κηληθῆναι(Aor)(Pas)(Inf),
+(36) to|me appears earlier|than the due by you just|as a|snake to|be|charmed,
+(37) ἐμοὶ(Pr)(D) δὲ(Kon) οὔπω(Adv) κατὰ(Prp) νοῦν(A) ἡ(Art)(N) ἀπόδειξις(N) γέγονεν(Per)(Akt) περὶ(Prp) ἑκατέρου(Adj)(G)·
+(37) to|me but not|yet according|to mind the demonstration has|come|to|be about each|of|the|two·
+(38) ἐπιθυμῶ(Prä)(Akt) γὰρ(Pt) ἀκοῦσαι(Aor)(Akt)(Inf) τί(Pr)(N) τʼ(Pt) ἔστιν(Prä)(Akt) ἑκάτερον(Adj)(N) καὶ(Kon) τίνα(Pr)(A) ἔχει(Prä)(Akt)
+(38) I|desire for to|hear what and is each|of|the|two and what|kind|of has
+(39) δύναμιν(A) αὐτὸ(Pr)(A) καθʼ(Prp) αὑτὸ(Pr)(A) ἐνὸν(Prä)(Akt)(N) ἐν(Prp) τῇ(Art)(D) ψυχῇ(D), τοὺς(Art)(A) δὲ(Kon)
+(39) power itself in|itself itself being in the soul, the but
+(40) μισθοὺς(A) καὶ(Kon) τὰ(Art)(A) γιγνόμενα(Prä)(M/P)(A) ἀπʼ(Prp) αὐτῶν(Pr)(G) ἐᾶσαι(Aor)(Akt)(Inf) χαίρειν(Prä)(Inf)(Akt). οὑτωσὶ(Adv) οὖν(Pt)
+(40) rewards and the things|coming|to|be from them to|allow to|rejoice. thus then
+(41) ποιήσω(Aor)(Akt)(Knj), ἐὰν(Kon) καὶ(Kon) σοὶ(Pr)(D) δοκῇ(Prä)(Akt)(Knj)· ἐπανανεώσομαι(Fu)(Med) τὸν(Art)(A) [358c] Θρασυμάχου(G) λόγον(A),
+(41) I|will|do, if also to|you may|seem· I|will|renew the [358c] of|Thrasymachus speech,
+(42) καὶ(Kon) πρῶτον(Adv) μὲν(Pt) ἐρῶ(Fu)(Akt) δικαιοσύνην(A) οἷον(Kon) εἶναί(Prä)(Inf)(Akt) φασιν(Prä)(Akt) καὶ(Kon) ὅθεν(Kon)
+(42) and first indeed I|will|say justice such|as to|be they|say and whence
+(43) γεγονέναι(Per)(Inf)(Akt), δεύτερον(Adv) δὲ(Kon) ὅτι(Kon) πάντες(Adj)(N) αὐτὸ(Pr)(A) οἱ(Art)(N) ἐπιτηδεύοντες(Prä)(Akt)(N) ἄκοντες(Prä)(Akt)(N) ἐπιτηδεύουσιν(Prä)(Akt)
+(43) to|have|become, secondly but that all it the practising unwilling practise
+(44) ὡς(Kon) ἀναγκαῖον(Adj)(N) ἀλλʼ(Kon) οὐχ(Pt) ὡς(Kon) ἀγαθόν(Adj)(N), τρίτον(Adv) δὲ(Kon) ὅτι(Kon) εἰκότως(Adv)
+(44) as necessary but not as good, thirdly but that reasonably
+(45) αὐτὸ(Pr)(A) δρῶσι(Prä)(Akt)· πολὺ(Adv) γὰρ(Pt) ἀμείνων(Adj)(Kmp)(N) ἄρα(Pt) ὁ(Art)(N) τοῦ(Art)(G) ἀδίκου(Adj)(G) ἢ(Kon)
+(45) it they|do· much for better then the of|the unjust than
+(46) ὁ(Art)(N) τοῦ(Art)(G) δικαίου(Adj)(G) βίος(N), ὡς(Kon) λέγουσιν(Prä)(Akt). ἐπεὶ(Kon) ἔμοιγε(Pr)(D), ὦ(ij) Σώκρατες(V),
+(46) the of|the just life, as they|say. since to|me|at|least, O Socrates,
+(47) οὔ(Pt) τι(Pr)(A) δοκεῖ(Prä)(Akt) οὕτως(Adv)· ἀπορῶ(Prä)(Akt) μέντοι(Pt) διατεθρυλημένος(Per)(M/P)(N) τὰ(Art)(A) ὦτα(A) ἀκούων(Prä)(Akt)(N)
+(47) not at|all it|seems thus· I|am|at|a|loss however having|been|dinned the ears hearing
+(48) Θρασυμάχου(G) καὶ(Kon) μυρίων(Adj)(G) ἄλλων(Adj)(G), τὸν(Art)(A) δὲ(Kon) ὑπὲρ(Prp) τῆς(Art)(G) δικαιοσύνης(G) λόγον(A),
+(48) of|Thrasymachus and of|countless others, the but on|behalf|of the justice speech,
+(49) ὡς(Kon) ἄμεινον(Adj)(N) [358d] ἀδικίας(G), οὐδενός(Pr)(G) πω(Pt) ἀκήκοα(Per)(Akt) ὡς(Kon) βούλομαι(Prä)(Med)— βούλομαι(Prä)(Med) δὲ(Kon)
+(49) as better [358d] of|injustice, of|no|one yet I|have|heard as I|wish— I|wish but
+(50) αὐτὸ(Pr)(A) καθʼ(Prp) αὑτὸ(Pr)(A) ἐγκωμιαζόμενον(Prä)(M/P)(A) ἀκοῦσαι(Aor)(Akt)(Inf)— μάλιστα(Adv) δʼ(Kon) οἶμαι(Prä)(Med) ἂν(Pt) σοῦ(Pr)(G) πυθέσθαι(Aor)(Med)(Inf).
+(50) it in|itself itself being|praised to|hear— most|of|all but I|think would of|you to|learn.
+(51) διὸ(Kon) κατατείνας(Aor)(Akt)(N) ἐρῶ(Fu)(Akt) τὸν(Art)(A) ἄδικον(Adj)(A) βίον(A) ἐπαινῶν(Prä)(Akt)(N), εἰπὼν(Aor)(Akt)(N) δὲ(Kon) ἐνδείξομαί(Fu)(Med)
+(51) therefore having|stretched|out I|will|say the unjust life praising, having|said but I|will|show
+(52) σοι(Pr)(D) ὃν(Pr)(A) τρόπον(A) αὖ(Pt) βούλομαι(Prä)(Med) καὶ(Kon) σοῦ(Pr)(G) ἀκούειν(Prä)(Inf)(Akt) ἀδικίαν(A) μὲν(Pt)
+(52) to|you which manner again I|wish and of|you to|hear injustice indeed
+(53) ψέγοντος(Prä)(Akt)(G), δικαιοσύνην(A) δὲ(Kon) ἐπαινοῦντος(Prä)(Akt)(G). ἀλλʼ(Kon) ὅρα(Prä)(Akt)(Imv) εἴ(Kon) σοι(Pr)(D) βουλομένῳ(Prä)(Med)(D) ἃ(Pr)(A)
+(53) of|blaming, justice but of|praising. but see if to|you willing the|things|which
+(54) λέγω(Prä)(Akt). πάντων(Adj)(G) μάλιστα(Adv), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N)· περὶ(Prp) γὰρ(Pt) τίνος(Pr)(G) ἂν(Pt)
+(54) I|say. of|all most, was but I· about for of|what would
+(55) μᾶλλον(Adv) πολλάκις(Adv) τις(Pr)(N) νοῦν(A) ἔχων(Prä)(Akt)(N) χαίροι(Prä)(Akt)(Knj) λέγων(Prä)(Akt)(N) καὶ(Kon) ἀκούων(Prä)(Akt)(N); [358e]
+(55) rather often someone mind having would|rejoice speaking and hearing; [358e]
+(56) κάλλιστα(Adv), ἔφη(Imp)(Akt), λέγεις(Prä)(Akt)· καὶ(Kon) ὃ(Pr)(A) πρῶτον(Adv) ἔφην(Imp)(Akt) ἐρεῖν(Fu)(Inf)(Akt), περὶ(Prp) τούτου(Pr)(G)
+(56) most|finely, he|said, you|say· and which first I|said to|say, about this
+(57) ἄκουε(Prä)(Akt)(Imv), τί(Pr)(N) ὄν(Prä)(Akt)(N) τε(Pt) καὶ(Kon) ὅθεν(Kon) γέγονε(Per)(Akt) δικαιοσύνη(N).
+(57) listen, what being and and whence has|come|to|be justice.
+== St. 359a ==
+(59) [Σωκράτης:] πεφυκέναι(Per)(Inf)(Akt) γὰρ(Pt) δή(Pt) φασιν(Prä)(Akt) τὸ(Art)(N) μὲν(Pt) ἀδικεῖν(Prä)(Inf)(Akt) ἀγαθόν(Adj)(N), τὸ(Art)(N)
+(59) [Σωκράτης:] to|be|by|nature for indeed they|say the indeed to|do|wrong good, the
+(60) δὲ(Kon) ἀδικεῖσθαι(Prä)(M/P)(Inf) κακόν(Adj)(N), πλέονι(Adj)(Kmp)(D) δὲ(Kon) κακῷ(Adj)(D) ὑπερβάλλειν(Prä)(Inf)(Akt) τὸ(Art)(N) ἀδικεῖσθαι(Prä)(M/P)(Inf) ἢ(Kon)
+(60) but to|suffer|wrong bad, by|greater but evil to|exceed the to|suffer|wrong than
+(61) ἀγαθῷ(Adj)(D) τὸ(Art)(N) ἀδικεῖν(Prä)(Inf)(Akt), ὥστʼ(Kon) ἐπειδὰν(Kon) ἀλλήλους(Pr)(A) ἀδικῶσί(Prä)(Akt)(Knj) τε(Pt) καὶ(Kon) ἀδικῶνται(Prä)(M/P)(Knj)
+(61) by|good the to|do|wrong, so|that whenever one|another they|do|wrong and and they|are|wronged
+(62) καὶ(Kon) ἀμφοτέρων(Adj)(G) γεύωνται(Prä)(M/P)(Knj), τοῖς(Art)(D) μὴ(Pt) δυναμένοις(Prä)(M/P)(D) τὸ(Art)(N) μὲν(Pt) ἐκφεύγειν(Prä)(Inf)(Akt) τὸ(Art)(N)
+(62) and of|both they|taste, to|the not being|able the indeed to|escape the
+(63) δὲ(Kon) αἱρεῖν(Prä)(Inf)(Akt) δοκεῖ(Prä)(Akt) λυσιτελεῖν(Prä)(Inf)(Akt) συνθέσθαι(Aor)(Med)(Inf) ἀλλήλοις(Pr)(D) μήτʼ(Kon) ἀδικεῖν(Prä)(Inf)(Akt) μήτʼ(Kon) ἀδικεῖσθαι(Prä)(M/P)(Inf)·
+(63) but to|choose it|seems to|be|profitable to|agree with|one|another neither to|do|wrong nor to|be|wronged·
+(64) καὶ(Kon) ἐντεῦθεν(Adv) δὴ(Pt) ἄρξασθαι(Aor)(Med)(Inf) νόμους(A) τίθεσθαι(Prä)(M/P)(Inf) καὶ(Kon) συνθήκας(A) αὑτῶν(Pr)(G), καὶ(Kon)
+(64) and from|there indeed to|begin laws to|set|up and agreements of|themselves, and
+(65) ὀνομάσαι(Aor)(Akt)(Inf) τὸ(Art)(A) ὑπὸ(Prp) τοῦ(Art)(G) νόμου(G) ἐπίταγμα(A) νόμιμόν(Adj)(A) τε(Pt) καὶ(Kon) δίκαιον(Adj)(A)·
+(65) to|name the under of the|law command lawful and also just·
+(66) καὶ(Kon) εἶναι(Prä)(Inf)(Akt) δὴ(Pt) ταύτην(Pr)(A) γένεσίν(A) τε(Pt) καὶ(Kon) οὐσίαν(A) δικαιοσύνης(G), μεταξὺ(Adv)
+(66) and to|be indeed this generation and also essence of|justice, between
+(67) οὖσαν(Prä)(Akt)(A) τοῦ(Art)(G) μὲν(Pt) ἀρίστου(Adj)(Sup)(G) ὄντος(Prä)(Akt)(G), ἐὰν(Kon) ἀδικῶν(Prä)(Akt)(N) μὴ(Pt) διδῷ(Prä)(Akt)(Knj) δίκην(A),
+(67) being of|the indeed best being, if doing|wrong not may|pay penalty,
+(68) τοῦ(Art)(G) δὲ(Kon) κακίστου(Adj)(Sup)(G), ἐὰν(Kon) ἀδικούμενος(Prä)(M/P)(N) τιμωρεῖσθαι(Prä)(M/P)(Inf) ἀδύνατος(Adj)(N) ᾖ(Prä)(Akt)(Knj)· τὸ(Art)(N) δὲ(Kon)
+(68) of|the but worst, if being|wronged to|take|vengeance unable may|be· the but
+(69) δίκαιον(Adj)(N) ἐν(Prp) μέσῳ(D) ὂν(Prä)(Akt)(N) τούτων(Pr)(G) ἀμφοτέρων(Adj)(G) ἀγαπᾶσθαι(Prä)(M/P)(Inf) οὐχ(Pt) ὡς(Kon) [359b]
+(69) just in midst being of|these of|both to|be|loved not as [359b]
+(70) ἀγαθόν(Adj)(N), ἀλλʼ(Kon) ὡς(Kon) ἀρρωστίᾳ(D) τοῦ(Art)(G) ἀδικεῖν(Prä)(Inf)(Akt) τιμώμενον(Prä)(M/P)(N)· ἐπεὶ(Kon) τὸν(Art)(A) δυνάμενον(Prä)(M/P)(A)
+(70) good, but as by|sickness of the|doing|wrong being|honoured· since the being|able
+(71) αὐτὸ(Pr)(A) ποιεῖν(Prä)(Inf)(Akt) καὶ(Kon) ὡς(Kon) ἀληθῶς(Adv) ἄνδρα(A) οὐδʼ(Kon) ἂν(Pt) ἑνί(Pr)(D) ποτε(Adv)
+(71) it to|do and as truly man not|even indeed to|one ever
+(72) συνθέσθαι(Aor)(Med)(Inf) τὸ(Art)(A) μήτε(Kon) ἀδικεῖν(Prä)(Inf)(Akt) μήτε(Kon) ἀδικεῖσθαι(Prä)(M/P)(Inf)· μαίνεσθαι(Prä)(M/P)(Inf) γὰρ(Pt) ἄν(Pt). ἡ(Art)(N)
+(72) to|make|a|pact the neither to|do|wrong nor to|be|wronged· to|be|mad for indeed. the
+(73) μὲν(Pt) οὖν(Pt) δὴ(Pt) φύσις(N) δικαιοσύνης(G), ὦ(ij) Σώκρατες(V), αὕτη(Pr)(N) τε(Pt) καὶ(Kon)
+(73) indeed then indeed nature of|justice, O Socrates, this and also
+(74) τοιαύτη(Adj)(N), καὶ(Kon) ἐξ(Prp) ὧν(Pr)(G) πέφυκε(Per)(Akt) τοιαῦτα(Adj)(N), ὡς(Kon) ὁ(Art)(N) λόγος(N). ὡς(Kon)
+(74) such, and from of|which it|is|by|nature such, as the speech. as
+(75) δὲ(Kon) καὶ(Kon) οἱ(Art)(N) ἐπιτηδεύοντες(Prä)(Akt)(N) ἀδυναμίᾳ(D) τοῦ(Art)(G) ἀδικεῖν(Prä)(Inf)(Akt) ἄκοντες(Prä)(Akt)(N) αὐτὸ(Pr)(A) ἐπιτηδεύουσι(Prä)(Akt),
+(75) but also the practising by|weakness of the|doing|wrong unwilling it practise,
+(76) μάλιστʼ(Adv) ἂν(Pt) αἰσθοίμεθα(Aor)(Med)(Op), εἰ(Kon) τοιόνδε(Adj)(A) ποιήσαιμεν(Aor)(Akt)(Op) τῇ(Art)(D) [359c] διανοίᾳ(D)· δόντες(Aor)(Akt)(N)
+(76) most indeed we|might|perceive, if such we|might|make to|the [359c] mind· having|given
+(77) ἐξουσίαν(A) ἑκατέρῳ(Adj)(D) ποιεῖν(Prä)(Inf)(Akt) ὅτι(Pr)(A) ἂν(Pt) βούληται(Prä)(Med)(Knj), τῷ(Art)(D) τε(Pt) δικαίῳ(Adj)(D) καὶ(Kon)
+(77) permission to|each|of|two to|do whatever indeed may|wish, to|the and just and
+(78) τῷ(Art)(D) ἀδίκῳ(Adj)(D), εἶτʼ(Adv) ἐπακολουθήσαιμεν(Aor)(Akt)(Op) θεώμενοι(Prä)(M/P)(N) ποῖ(Adv) ἡ(Art)(N) ἐπιθυμία(N) ἑκάτερον(Adj)(A) ἄξει(Fu)(Akt).
+(78) to|the unjust, then we|would|follow observing whither the desire each|of|the|two will|lead.
+(79) ἐπʼ(Prp) αὐτοφώρῳ(D) οὖν(Pt) λάβοιμεν(Aor)(Akt)(Op) ἂν(Pt) τὸν(Art)(A) δίκαιον(Adj)(A) τῷ(Art)(D) ἀδίκῳ(Adj)(D) εἰς(Prp)
+(79) upon in|the|act then we|would|catch indeed the just|man with|the unjust|man into
+(80) ταὐτὸν(Adj)(A) ἰόντα(Prä)(Akt)(A) διὰ(Prp) τὴν(Art)(A) πλεονεξίαν(A), ὃ(Pr)(N) πᾶσα(Adj)(N) φύσις(N) διώκειν(Prä)(Inf)(Akt) πέφυκεν(Per)(Akt)
+(80) the|same going because|of the greed, which every nature to|pursue is|by|nature
+(81) ὡς(Kon) ἀγαθόν(Adj)(N), νόμῳ(D) δὲ(Kon) βίᾳ(D) παράγεται(Prä)(M/P) ἐπὶ(Prp) τὴν(Art)(A) τοῦ(Art)(G) ἴσου(Adj)(G)
+(81) as good, by|law but by|force is|brought toward the of|the equal
+(82) τιμήν(A). εἴη(Prä)(Akt)(Op) δʼ(Kon) ἂν(Pt) ἡ(Art)(N) ἐξουσία(N) ἣν(Pr)(A) λέγω(Prä)(Akt) τοιάδε(Adj)(N) μάλιστα(Adv),
+(82) honor. might|be but indeed the permission which I|say such most,
+(83) εἰ(Kon) αὐτοῖς(Pr)(D) γένοιτο(Aor)(Med)(Op) οἵαν(Adj)(A) ποτέ(Adv) [359d] φασιν(Prä)(Akt) δύναμιν(A) τῷ(Art)(D) Γύγου(G)
+(83) if to|them might|befall such once [359d] they|say power to|the of|Gyges
+(84) τοῦ(Art)(G) Λυδοῦ(Adj)(G) προγόνῳ(D) γενέσθαι(Aor)(Med)(Inf). εἶναι(Prä)(Inf)(Akt) μὲν(Pt) γὰρ(Pt) αὐτὸν(Pr)(A) ποιμένα(A) θητεύοντα(Prä)(Akt)(A)
+(84) of the|Lydian ancestor to|have|become. to|be indeed for him shepherd serving
+(85) παρὰ(Prp) τῷ(Art)(D) τότε(Adv) Λυδίας(Adj)(G) ἄρχοντι(D), ὄμβρου(G) δὲ(Kon) πολλοῦ(Adj)(G) γενομένου(Aor)(Med)(G) καὶ(Kon)
+(85) at the then of|Lydia ruler, of|rain but much having|come|to|be and
+(86) σεισμοῦ(G) ῥαγῆναί(Aor)(Pas)(Inf) τι(Pr)(N) τῆς(Art)(G) γῆς(G) καὶ(Kon) γενέσθαι(Aor)(Med)(Inf) χάσμα(A) κατὰ(Prp) τὸν(Art)(A)
+(86) of|earthquake to|be|rent something of|the earth and to|become chasm along the
+(87) τόπον(A) ᾗ(Pr)(D) ἔνεμεν(Imp)(Akt). ἰδόντα(Aor)(Akt)(A) δὲ(Kon) καὶ(Kon) θαυμάσαντα(Aor)(Akt)(A) καταβῆναι(Aor)(Akt)(Inf) καὶ(Kon) ἰδεῖν(Aor)(Akt)(Inf)
+(87) place where he|was|pasturing. having|seen but and having|wondered to|go|down and to|see
+(88) ἄλλα(Adj)(A) τε(Pt) δὴ(Pt) ἃ(Pr)(A) μυθολογοῦσιν(Prä)(Akt) θαυμαστὰ(Adj)(A) καὶ(Kon) ἵππον(A) χαλκοῦν(Adj)(A), κοῖλον(Adj)(A),
+(88) other and indeed which they|tell|in|myth wondrous and horse brazen, hollow,
+(89) θυρίδας(A) ἔχοντα(Prä)(Akt)(A), καθʼ(Prp) ἃς(Pr)(A) ἐγκύψαντα(Aor)(Akt)(A) ἰδεῖν(Aor)(Akt)(Inf) ἐνόντα(Prä)(Akt)(A) νεκρόν(A), ὡς(Kon) φαίνεσθαι(Prä)(M/P)(Inf)
+(89) little|doors having, through which having|stooped to|see being|inside corpse, as to|appear
+(90) μείζω(Adj)(Kmp)(A) ἢ(Kon) κατʼ(Prp) ἄνθρωπον(A), τοῦτον(Pr)(A) δὲ(Kon) ἄλλο(Adj)(A) μὲν(Pt) οὐδέν(Pr)(A), περὶ(Prp)
+(90) greater than according|to man, this|one but other indeed nothing, about
+(91) δὲ(Kon) τῇ(Art)(D) [359e] χειρὶ(D) χρυσοῦν(Adj)(A) δακτύλιον(A) ὄντα(Prä)(Akt)(A) περιελόμενον(Aor)(Med)(A) ἐκβῆναι(Aor)(Akt)(Inf). συλλόγου(G)
+(91) but at|the [359e] hand golden ring being having|taken|off to|go|out. of|meeting
+(92) δὲ(Kon) γενομένου(Aor)(Med)(G) τοῖς(Art)(D) ποιμέσιν(D) εἰωθότος(Per)(Akt)(G), ἵνʼ(Kon) ἐξαγγέλλοιεν(Prä)(Akt)(Op) κατὰ(Prp) μῆνα(A) τῷ(Art)(D)
+(92) but having|come|to|be to|the shepherds being|accustomed, in|order|that they|might|report by month to|the
+(93) βασιλεῖ(D) τὰ(Art)(A) περὶ(Prp) τὰ(Art)(A) ποίμνια(A), ἀφικέσθαι(Aor)(Med)(Inf) καὶ(Kon) ἐκεῖνον(Pr)(A) ἔχοντα(Prä)(Akt)(A) τὸν(Art)(A)
+(93) to|the|king the about the flocks, to|arrive and that|man having the
+(94) δακτύλιον(A)·
+(94) ring·
+== St. 360a ==
+(96) [Σωκράτης:] καθήμενον(Prä)(M/P)(A) οὖν(Pt) μετὰ(Prp) τῶν(Art)(G) ἄλλων(Adj)(G) τυχεῖν(Aor)(Akt)(Inf) τὴν(Art)(A) σφενδόνην(A) τοῦ(Art)(G)
+(96) [Σωκράτης:] sitting then with of|the others to|happen the bezel of|the
+(97) δακτυλίου(G) περιαγαγόντα(Aor)(Akt)(A) πρὸς(Prp) ἑαυτὸν(Pr)(A) εἰς(Prp) τὸ(Art)(A) εἴσω(Adv) τῆς(Art)(G) χειρός(G), τούτου(Pr)(G)
+(97) ring having|turned toward himself into the inside of|the hand, of|this
+(98) δὲ(Kon) γενομένου(Aor)(Med)(G) ἀφανῆ(Adj)(A) αὐτὸν(Pr)(A) γενέσθαι(Aor)(Med)(Inf) τοῖς(Art)(D) παρακαθημένοις(Prä)(M/P)(D), καὶ(Kon) διαλέγεσθαι(Prä)(M/P)(Inf) ὡς(Kon)
+(98) but having|come|to|be invisible him to|become to|the sitting|beside, and to|converse as
+(99) περὶ(Prp) οἰχομένου(Prä)(M/P)(G). καὶ(Kon) τὸν(Art)(A) θαυμάζειν(Prä)(Inf)(Akt) τε(Pt) καὶ(Kon) πάλιν(Adv) ἐπιψηλαφῶντα(Prä)(Akt)(A) τὸν(Art)(A)
+(99) about of|one|gone. and the to|wonder and also again feeling|about the
+(100) δακτύλιον(A) στρέψαι(Aor)(Akt)(Inf) ἔξω(Adv) τὴν(Art)(A) σφενδόνην(A), καὶ(Kon) στρέψαντα(Aor)(Akt)(A) φανερὸν(Adj)(A) γενέσθαι(Aor)(Med)(Inf). καὶ(Kon)
+(100) ring to|turn outward the bezel, and having|turned manifest to|become. and
+(101) τοῦτο(Pr)(A) ἐννοήσαντα(Aor)(Akt)(A) ἀποπειρᾶσθαι(Prä)(M/P)(Inf) τοῦ(Art)(G) δακτυλίου(G) εἰ(Kon) ταύτην(Pr)(A) ἔχοι(Prä)(Akt)(Op) τὴν(Art)(A) δύναμιν(A),
+(101) this having|considered to|attempt of the|ring if this might|have the power,
+(102) καὶ(Kon) αὐτῷ(Pr)(D) οὕτω(Adv) συμβαίνειν(Prä)(Akt)(Inf), στρέφοντι(Prä)(Akt)(D) μὲν(Pt) εἴσω(Adv) τὴν(Art)(A) σφενδόνην(A) ἀδήλῳ(Adj)(D)
+(102) and to|him thus to|happen, turning indeed inside the bezel unseen
+(103) γίγνεσθαι(Prä)(M/P)(Inf), ἔξω(Adv) δὲ(Kon) δήλῳ(Adj)(D)· αἰσθόμενον(Aor)(Med)(A) δὲ(Kon) εὐθὺς(Adv) διαπράξασθαι(Aor)(Med)(Inf) τῶν(Art)(G) ἀγγέλων(G)
+(103) to|become, outside but manifest· perceiving but at|once to|accomplish of the|messengers
+(104) γενέσθαι(Aor)(Med)(Inf) τῶν(Art)(G) παρὰ(Prp) τὸν(Art)(A) βασιλέα(A), ἐλθόντα(AorS)(Akt)(A) δὲ(Kon) [360b] καὶ(Kon) τὴν(Art)(A)
+(104) to|become of beside the king, having|come but [360b] and the
+(105) γυναῖκα(A) αὐτοῦ(Pr)(G) μοιχεύσαντα(Aor)(Akt)(A), μετʼ(Prp) ἐκείνης(Pr)(G) ἐπιθέμενον(Aor)(Med)(A) τῷ(Art)(D) βασιλεῖ(D) ἀποκτεῖναι(Aor)(Akt)(Inf) καὶ(Kon)
+(105) wife of|him having|committed|adultery, with that|woman setting|upon to the|king to|kill and
+(106) τὴν(Art)(A) ἀρχὴν(A) οὕτω(Adv) κατασχεῖν(Aor)(Akt)(Inf). εἰ(Kon) οὖν(Pt) δύο(Adj)(Du)(N) τοιούτω(Adj)(Du)(D) δακτυλίω(Du)(D) γενοίσθην(Aor)(Med)(Op)(Du),
+(106) the rule thus to|seize. if then two such rings might|come|to|be,
+(107) καὶ(Kon) τὸν(Art)(A) μὲν(Pt) ὁ(Art)(N) δίκαιος(Adj)(N) περιθεῖτο(Aor)(Med)(Op), τὸν(Art)(A) δὲ(Kon) ὁ(Art)(N) ἄδικος(Adj)(N),
+(107) and the indeed the just would|put|on, the but the unjust,
+(108) οὐδεὶς(Pr)(N) ἂν(Pt) γένοιτο(Aor)(Med)(Op), ὡς(Kon) δόξειεν(Aor)(Akt)(Op), οὕτως(Adv) ἀδαμάντινος(Adj)(N), ὃς(Pr)(N) ἂν(Pt) μείνειεν(Aor)(Akt)(Op)
+(108) no|one indeed might|become, as might|seem, thus adamant, who indeed would|remain
+(109) ἐν(Prp) τῇ(Art)(D) δικαιοσύνῃ(D) καὶ(Kon) τολμήσειεν(Aor)(Akt)(Op) ἀπέχεσθαι(Prä)(M/P)(Inf) τῶν(Art)(G) ἀλλοτρίων(Adj)(G) καὶ(Kon) μὴ(Pt)
+(109) in the justice and might|dare to|abstain of the|others|things and not
+(110) ἅπτεσθαι(Prä)(M/P)(Inf), ἐξὸν(Prä)(Akt)(N) αὐτῷ(Pr)(D) καὶ(Kon) ἐκ(Prp) τῆς(Art)(G) ἀγορᾶς(G) ἀδεῶς(Adv) ὅτι(Kon) βούλοιτο(Prä)(Med)(Op)
+(110) to|touch, being|permitted to|him and from the market fearlessly whatever he|might|want
+(111) λαμβάνειν(Prä)(Akt)(Inf), καὶ(Kon) [360c] εἰσιόντι(Prä)(Akt)(D) εἰς(Prp) τὰς(Art)(A) οἰκίας(A) συγγίγνεσθαι(Prä)(M/P)(Inf) ὅτῳ(Pr)(D) βούλοιτο(Prä)(Med)(Op),
+(111) to|take, and [360c] entering into the houses to|be|with with|whom he|might|want,
+(112) καὶ(Kon) ἀποκτεινύναι(Prä)(Akt)(Inf) καὶ(Kon) ἐκ(Prp) δεσμῶν(G) λύειν(Prä)(Akt)(Inf) οὕστινας(Pr)(A) βούλοιτο(Prä)(Med)(Op), καὶ(Kon) τἆλλα(Art)(Adj)(A)
+(112) and to|kill and from bonds to|loose whomever he|might|want, and the|others
+(113) πράττειν(Prä)(Akt)(Inf) ἐν(Prp) τοῖς(Art)(D) ἀνθρώποις(D) ἰσόθεον(Adj)(A) ὄντα(Prä)(Akt)(A). οὕτω(Adv) δὲ(Kon) δρῶν(Prä)(Akt)(N) οὐδὲν(Pr)(A)
+(113) to|do in the men equal|to|a|god being. thus but doing nothing
+(114) ἂν(Pt) διάφορον(Adj)(A) τοῦ(Art)(G) ἑτέρου(Adj)(G) ποιοῖ(Prä)(Akt)(Op), ἀλλʼ(Kon) ἐπὶ(Prp) ταὔτʼ(Art)(Adj)(A) ἂν(Pt) ἴοιεν(Aor)(Akt)(Op)
+(114) indeed different of the|other would|do, but toward the|same|things indeed they|would|go
+(115) ἀμφότεροι(Adj)(N). καίτοι(Pt) μέγα(Adj)(A) τοῦτο(Pr)(A) τεκμήριον(N) ἂν(Pt) φαίη(Aor)(Akt)(Op) τις(Pr)(N) ὅτι(Kon) οὐδεὶς(Pr)(N)
+(115) both. and|yet great this evidence indeed might|say someone that no|one
+(116) ἑκὼν(Adj)(N) δίκαιος(Adj)(N) ἀλλʼ(Kon) ἀναγκαζόμενος(Prä)(M/P)(N), ὡς(Kon) οὐκ(Pt) ἀγαθοῦ(Adj)(G) ἰδίᾳ(Adv) ὄντος(Prä)(Akt)(G), ἐπεὶ(Kon)
+(116) willing just but being|compelled, as not of|good privately being, since
+(117) ὅπου(Adv) γʼ(Pt) ἂν(Pt) οἴηται(Prä)(Med)(Knj) ἕκαστος(Pr)(N) οἷός(Adj)(N) τε(Pt) ἔσεσθαι(Fu)(Med)(Inf) ἀδικεῖν(Prä)(Akt)(Inf), ἀδικεῖν(Prä)(Akt)(Inf).
+(117) where at|least indeed thinks each able indeed to|be to|do|wrong, to|do|wrong.
+(118) λυσιτελεῖν(Prä)(Akt)(Inf) γὰρ(Pt) δὴ(Pt) οἴεται(Prä)(Med) πᾶς(Adj)(N) ἀνὴρ(N) πολὺ(Adv) μᾶλλον(Adv)(Kmp) [360d] ἰδίᾳ(Adv)
+(118) to|profit for indeed thinks every man much more [360d] privately
+(119) τὴν(Art)(A) ἀδικίαν(A) τῆς(Art)(G) δικαιοσύνης(G), ἀληθῆ(Adj)(A) οἰόμενος(Prä)(Med)(N), ὡς(Kon) φήσει(Fu)(Akt) ὁ(Art)(N) περὶ(Prp)
+(119) the injustice of justice, true thinking, as will|say the about
+(120) τοῦ(Art)(G) τοιούτου(Adj)(G) λόγου(G) λέγων(Prä)(Akt)(N)· ἐπεὶ(Kon) εἴ(Kon) τις(Pr)(N) τοιαύτης(Adj)(G) ἐξουσίας(G) ἐπιλαβόμενος(Aor)(Med)(N)
+(120) of such speech saying· since if someone of|such power having|taken|hold
+(121) μηδέν(Pr)(A) ποτε(Adv) ἐθέλοι(Prä)(Akt)(Op) ἀδικῆσαι(Aor)(Akt)(Inf) μηδὲ(Kon) ἅψαιτο(Aor)(Med)(Op) τῶν(Art)(G) ἀλλοτρίων(Adj)(G), ἀθλιώτατος(Adj)(Sup)(N) μὲν(Pt)
+(121) nothing ever would|wish to|do|wrong nor would|touch of the|others|things, most|wretched indeed
+(122) ἂν(Pt) δόξειεν(Aor)(Akt)(Op) εἶναι(Prä)(Inf)(Akt) τοῖς(Art)(D) αἰσθανομένοις(Prä)(Med)(D) καὶ(Kon) ἀνοητότατος(Adj)(Sup)(N), ἐπαινοῖεν(Prä)(Akt)(Op) δʼ(Kon) ἂν(Pt)
+(122) indeed might|seem to|be to|the perceiving and most|foolish, they|would|praise but indeed
+(123) αὐτὸν(Pr)(A) ἀλλήλων(Pr)(G) ἐναντίον(Adv) ἐξαπατῶντες(Prä)(Akt)(N) ἀλλήλους(Pr)(A) διὰ(Prp) τὸν(Art)(A) τοῦ(Art)(G) ἀδικεῖσθαι(Prä)(M/P)(Inf) φόβον(A).
+(123) him of|each|other opposite deceiving each|other because|of the of to|be|wronged fear.
+(124) ταῦτα(Pr)(A) μὲν(Pt) οὖν(Pt) δὴ(Pt) οὕτω(Adv). τὴν(Art)(A) [360e] δὲ(Kon) κρίσιν(A) αὐτὴν(Pr)(A)
+(124) these|things indeed therefore indeed thus. the [360e] but judgment itself
+(125) τοῦ(Art)(G) βίου(G) πέρι(Prp) ὧν(Pr)(G) λέγομεν(Prä)(Akt), ἐὰν(Kon) διαστησώμεθα(Aor)(M/P)(Knj) τόν(Art)(A) τε(Pt) δικαιότατον(Adj)(Sup)(A)
+(125) of life about of|which we|speak, if we|should|set|apart the and most|just
+(126) καὶ(Kon) τὸν(Art)(A) ἀδικώτατον(Adj)(Sup)(A), οἷοί(Adj)(N) τʼ(Pt) ἐσόμεθα(Fu)(Akt) κρῖναι(Aor)(Akt)(Inf) ὀρθῶς(Adv)· εἰ(Kon) δὲ(Kon)
+(126) and the most|unjust, able and we|shall|be to|judge rightly· if but
+(127) μή(Pt), οὔ(Pt). τίς(Pr)(N) οὖν(Pt) δὴ(Pt) ἡ(Art)(N) διάστασις(N); ἥδε(Pr)(N)· μηδὲν(Pr)(A) ἀφαιρῶμεν(Prä)(Akt)(Knj)
+(127) not, no. what then indeed the difference; this· nothing let|us|take|away
+(128) μήτε(Kon) τοῦ(Art)(G) ἀδίκου(Adj)(G) ἀπὸ(Prp) τῆς(Art)(G) ἀδικίας(G), μήτε(Kon) τοῦ(Art)(G) δικαίου(Adj)(G) ἀπὸ(Prp)
+(128) neither of the|unjust from the injustice, nor of the|just from
+(129) τῆς(Art)(G) δικαιοσύνης(G), ἀλλὰ(Kon) τέλεον(Adj)(A) ἑκάτερον(Adj)(A) εἰς(Prp) τὸ(Art)(A) ἑαυτοῦ(Pr)(G) ἐπιτήδευμα(A) τιθῶμεν(Prä)(Akt)(Knj).
+(129) the justice, but completely each|of|the|two into the of|itself pursuit|practice let|us|place.
+== St. 361a ==
+(131) [Σωκράτης:] πρῶτον(Adv) μὲν(Pt) οὖν(Pt) ὁ(Art)(N) ἄδικος(Adj)(N) ὥσπερ(Kon) οἱ(Art)(N) δεινοὶ(Adj)(N) δημιουργοὶ(N)
+(131) [Σωκράτης:] first indeed then the unjust just|as the skilled craftsmen
+(132) ποιείτω(Prä)(Akt)(Imv)— οἷον(Kon) κυβερνήτης(N) ἄκρος(Adj)(N) ἢ(Kon) ἰατρὸς(N) τά(Art)(A) τε(Pt) ἀδύνατα(Adj)(A) ἐν(Prp) τῇ(Art)(D)
+(132) let|him|do— such|as helmsman excellent or physician the and impossible in the
+(133) τέχνῃ(D) καὶ(Kon) τὰ(Art)(A) δυνατὰ(Adj)(A) διαισθάνεται(Prä)(M/P), καὶ(Kon) τοῖς(Art)(D) μὲν(Pt) ἐπιχειρεῖ(Prä)(Akt), τὰ(Art)(A)
+(133) craft and the possible he|perceives, and the indeed he|attempts, the
+(134) δὲ(Kon) ἐᾷ(Prä)(Akt)· ἔτι(Adv) δὲ(Kon) ἐὰν(Kon) ἄρα(Pt) πῃ(Adv) σφαλῇ(Aor)(M/P)(Knj), ἱκανὸς(Adj)(N) ἐπανορθοῦσθαι(Prä)(M/P)(Inf)— οὕτω(Adv)
+(134) but he|lets|go· further but if then somehow he|may|err, able to|set|right|again— thus
+(135) καὶ(Kon) ὁ(Art)(N) ἄδικος(Adj)(N) ἐπιχειρῶν(Prä)(Akt)(N) ὀρθῶς(Adv) τοῖς(Art)(D) ἀδικήμασιν(D) λανθανέτω(Prä)(Akt)(Imv), εἰ(Kon) μέλλει(Prä)(Akt)
+(135) and the unjust attempting rightly the wrongs let|him|escape|notice, if he|is|about|to
+(136) σφόδρα(Adv) ἄδικος(Adj)(N) εἶναι(Prä)(Inf)(Akt). τὸν(Art)(A) ἁλισκόμενον(Prä)(M/P)(A) δὲ(Kon) φαῦλον(Adj)(A) ἡγητέον(Adj)(N)· ἐσχάτη(Adj)(N) γὰρ(Pt)
+(136) very unjust to|be. the being|caught but worthless to|be|considered· extreme for
+(137) ἀδικία(N) δοκεῖν(Prä)(Akt)(Inf) δίκαιον(Adj)(N) εἶναι(Prä)(Inf)(Akt) μὴ(Pt) ὄντα(Prä)(Akt)(A). δοτέον(Adj)(N) οὖν(Pt) τῷ(Art)(D) τελέως(Adv)
+(137) injustice to|seem just to|be not being. must|be|given then to|the completely
+(138) ἀδίκῳ(Adj)(D) τὴν(Art)(A) τελεωτάτην(Adj)(Sup)(A) ἀδικίαν(A), καὶ(Kon) οὐκ(Pt) ἀφαιρετέον(Adj)(N) ἀλλʼ(Kon) ἐατέον(Adj)(N) τὰ(Art)(A)
+(138) unjust the most|complete injustice, and not to|be|taken|away but to|be|allowed the
+(139) μέγιστα(Adj)(Sup)(A) ἀδικοῦντα(Prä)(Akt)(A) τὴν(Art)(A) μεγίστην(Adj)(Sup)(A) δόξαν(A) αὑτῷ(Pr)(D) παρεσκευακέναι(Per)(Akt)(Inf) [361b] εἰς(Prp) δικαιοσύνην(A),
+(139) greatest doing|injustice the greatest reputation to|him|self to|have|prepared [361b] into justice,
+(140) καὶ(Kon) ἐὰν(Kon) ἄρα(Pt) σφάλληταί(Aor)(M/P)(Knj) τι(Pr)(N), ἐπανορθοῦσθαι(Prä)(M/P)(Inf) δυνατῷ(Adj)(D) εἶναι(Prä)(Inf)(Akt), λέγειν(Prä)(Akt)(Inf) τε(Pt)
+(140) and if then he|may|be|tripped something, to|set|right|again able to|be, to|speak and
+(141) ἱκανῷ(Adj)(D) ὄντι(Prä)(Akt)(D) πρὸς(Prp) τὸ(Art)(A) πείθειν(Prä)(Akt)(Inf), ἐάν(Kon) τι(Pr)(N) μηνύηται(Prä)(M/P)(Knj) τῶν(Art)(G) ἀδικημάτων(G),
+(141) competent being toward the persuading, if something may|be|disclosed of the|injustices,
+(142) καὶ(Kon) βιάσασθαι(Aor)(Med)(Inf) ὅσα(Pr)(N) ἂν(Pt) βίας(G) δέηται(Prä)(M/P)(Knj), διά(Prp) τε(Pt) ἀνδρείαν(A) καὶ(Kon)
+(142) and to|use|force as|many|things|as ever of|force he|may|need, through and courage and
+(143) ῥώμην(A) καὶ(Kon) διὰ(Prp) παρασκευὴν(A) φίλων(G) καὶ(Kon) οὐσίας(G). τοῦτον(Pr)(A) δὲ(Kon) τοιοῦτον(Adj)(A)
+(143) strength and through preparation of|friends and of|property. this but such
+(144) θέντες(Aor)(Akt)(N) τὸν(Art)(A) δίκαιον(Adj)(A) αὖ(Pt) παρʼ(Prp) αὐτὸν(Pr)(A) ἱστῶμεν(Prä)(Akt)(Knj) τῷ(Art)(D) λόγῳ(D), ἄνδρα(A)
+(144) having|set the just again beside him let|us|set to|the account, man
+(145) ἁπλοῦν(Adj)(A) καὶ(Kon) γενναῖον(Adj)(A), κατʼ(Prp) Αἰσχύλον(A) οὐ(Pt) δοκεῖν(Prä)(Akt)(Inf) ἀλλʼ(Kon) εἶναι(Prä)(Inf)(Akt) ἀγαθὸν(Adj)(A)
+(145) simple and noble, according|to Aeschylus not to|seem but to|be good
+(146) ἐθέλοντα(Prä)(Akt)(A). ἀφαιρετέον(Adj)(N) δὴ(Pt) τὸ(Art)(N) δοκεῖν(Prä)(Akt)(Inf). εἰ(Kon) γὰρ(Pt) δόξει(Fu)(Akt) δίκαιος(Adj)(N) [361c]
+(146) willing. to|be|taken|away indeed the seeming. if for it|will|seem just [361c]
+(147) εἶναι(Prä)(Inf)(Akt), ἔσονται(Fu)(Akt) αὐτῷ(Pr)(D) τιμαὶ(N) καὶ(Kon) δωρεαὶ(N) δοκοῦντι(Prä)(Akt)(D) τοιούτῳ(Adj)(D) εἶναι(Prä)(Inf)(Akt)· ἄδηλον(Adj)(N)
+(147) to|be, there|will|be to|him honors and gifts to|the|one|seeming such to|be· unclear
+(148) οὖν(Pt) εἴτε(Kon) τοῦ(Art)(G) δικαίου(Adj)(G) εἴτε(Kon) τῶν(Art)(G) δωρεῶν(G) τε(Pt) καὶ(Kon) τιμῶν(G)
+(148) then whether of|the just whether of|the gifts both and honors
+(149) ἕνεκα(Prp) τοιοῦτος(Adj)(N) εἴη(Prä)(Akt)(Op). γυμνωτέος(Adj)(N) δὴ(Pt) πάντων(Pr)(G) πλὴν(Prp) δικαιοσύνης(G) καὶ(Kon) ποιητέος(Adj)(N)
+(149) for|the|sake|of such may|be. to|be|stripped indeed of|all except justice and to|be|made
+(150) ἐναντίως(Adv) διακείμενος(Prä)(M/P)(N) τῷ(Art)(D) προτέρῳ(Adj)(D)· μηδὲν(Pr)(A) γὰρ(Pt) ἀδικῶν(Prä)(Akt)(N) δόξαν(A) ἐχέτω(Prä)(Akt)(Imv) τὴν(Art)(A)
+(150) oppositely being|disposed to|the former· nothing for doing|wrong reputation let|him|have the
+(151) μεγίστην(Adj)(Sup)(A) ἀδικίας(G), ἵνα(Kon) ᾖ(Prä)(Akt)(Knj) βεβασανισμένος(Per)(M/P)(N) εἰς(Prp) δικαιοσύνην(A) τῷ(Art)(D) μὴ(Pt) τέγγεσθαι(Prä)(M/P)(Inf)
+(151) greatest of|injustice, in|order|that he|may|be having|been|tested into justice by|the not to|be|stained
+(152) ὑπὸ(Prp) κακοδοξίας(G) καὶ(Kon) τῶν(Art)(G) ὑπʼ(Prp) αὐτῆς(Pr)(G) γιγνομένων(Prä)(M/P)(G), ἀλλὰ(Kon) ἴτω(Prä)(Akt)(Imv) ἀμετάστατος(Adj)(N)
+(152) by bad|repute and of|the by her becoming|things, but let|him|go unchanging
+(153) μέχρι(Prp) θανάτου(G), [361d] δοκῶν(Prä)(Akt)(N) μὲν(Pt) εἶναι(Prä)(Inf)(Akt) ἄδικος(Adj)(N) διὰ(Prp) βίου(G), ὢν(Prä)(Akt)(N)
+(153) until of|death, [361d] seeming indeed to|be unjust through life, being
+(154) δὲ(Kon) δίκαιος(Adj)(N), ἵνα(Kon) ἀμφότεροι(Adj)(N) εἰς(Prp) τὸ(Art)(A) ἔσχατον(Adj)(Sup)(A) ἐληλυθότες(Per)(Akt)(N), ὁ(Art)(N) μὲν(Pt)
+(154) but just, in|order|that both into the farthest having|come, the indeed
+(155) δικαιοσύνης(G), ὁ(Art)(N) δὲ(Kon) ἀδικίας(G), κρίνωνται(Prä)(M/P)(Knj) ὁπότερος(Pr)(N) αὐτοῖν(Pr)(Du)(G) εὐδαιμονέστερος(Adj)(Kmp)(N). βαβαῖ(ij), ἦν(Imp)(Akt)
+(155) of|justice, the but of|injustice, let|them|be|judged which|of|two of|the|two more|fortunate. ah, was
+(156) δʼ(Kon) ἐγώ(Pr)(N), ὦ(ij) φίλε(Adj)(V) Γλαύκων(V), ὡς(Kon) ἐρρωμένως(Adv) ἑκάτερον(Adj)(A) ὥσπερ(Kon) ἀνδριάντα(A)
+(156) but I, O dear Glaucon, how vigorously each|of|the|two just|as statue
+(157) εἰς(Prp) τὴν(Art)(A) κρίσιν(A) ἐκκαθαίρεις(Prä)(Akt) τοῖν(Art)(Du)(G) ἀνδροῖν(Du)(G). ὡς(Kon) μάλιστʼ(Adv)(Sup), ἔφη(Imp)(Akt), δύναμαι(Prä)(M/P).
+(157) into the judgment you|cleanse|out of|the|two of|men. as most, he|said, I|am|able.
+(158) ὄντοιν(Prä)(Akt)(Du)(G) δὲ(Kon) τοιούτοιν(Adj)(Du)(G), οὐδὲν(Pr)(A) ἔτι(Adv), ὡς(Kon) ἐγᾦμαι(Prä)(Med), χαλεπὸν(Adj)(A) ἐπεξελθεῖν(Aor)(Akt)(Inf) τῷ(Art)(D)
+(158) being|of|two but such|of|two, nothing yet, as I|think, difficult to|proceed to|the
+(159) λόγῳ(D) οἷος(Adj)(N) ἑκάτερον(Adj)(N) βίος(N) [361e] ἐπιμένει(Prä)(Akt). λεκτέον(Adj)(N) οὖν(Pt)· καὶ(Kon) δὴ(Pt)
+(159) account of|what|sort each|of|the|two life [361e] remains. to|be|said then· and indeed
+(160) κἂν(Kon) ἀγροικοτέρως(Adv)(Kmp) λέγηται(Prä)(M/P)(Knj), μὴ(Pt) ἐμὲ(Pr)(A) οἴου(Prä)(Med)(Imv) λέγειν(Prä)(Akt)(Inf), ὦ(ij) Σώκρατες(V), ἀλλὰ(Kon)
+(160) and|if more|rustically it|may|be|said, not me think|you to|speak, O Socrates, but
+(161) τοὺς(Art)(A) ἐπαινοῦντας(Prä)(Akt)(A) πρὸ(Prp) δικαιοσύνης(G) ἀδικίαν(A).
+(161) the praising before justice injustice.
+== St. 362a ==
+(163) [Σωκράτης:] ἐροῦσι(Fu)(Akt) δὲ(Kon) τάδε(Pr)(A), ὅτι(Kon) οὕτω(Adv) διακείμενος(Prä)(M/P)(N) ὁ(Art)(N) δίκαιος(Adj)(N) μαστιγώσεται(Fu)(M/P),
+(163) [Σωκράτης:] they|will|say but these|things, that thus being|disposed the just he|will|be|whipped,
+(164) στρεβλώσεται(Fu)(M/P), δεδήσεται(Per)(M/P), ἐκκαυθήσεται(Fu)(M/P) τὠφθαλμώ(D), τελευτῶν(Prä)(Akt)(N) πάντα(Adj)(A) κακὰ(Adj)(A) παθὼν(AorS)(Akt)(N) ἀνασχινδυλευθήσεται(Fu)(Pas) καὶ(Kon)
+(164) he|will|be|racked, he|will|have|been|bound, he|will|be|burned|out at|the|eye, ending all evils having|suffered he|will|be|impaled and
+(165) γνώσεται(Fu)(M/P) ὅτι(Kon) οὐκ(Pt) εἶναι(Prä)(Inf)(Akt) δίκαιον(Adj)(N) ἀλλὰ(Kon) δοκεῖν(Prä)(Akt)(Inf) δεῖ(Prä)(Akt) ἐθέλειν(Prä)(Akt)(Inf). τὸ(Art)(N)
+(165) he|will|know that not to|be just but to|seem it|is|necessary to|wish. the
+(166) δὲ(Kon) τοῦ(Art)(G) Αἰσχύλου(G) πολὺ(Adj)(A) ἦν(Imp)(Akt) ἄρα(Pt) ὀρθότερον(Adj)(Kmp)(A) λέγειν(Prä)(Akt)(Inf) κατὰ(Prp) τοῦ(Art)(G)
+(166) but of Aeschylus much was then more|correct to|say against of
+(167) ἀδίκου(Adj)(G). τῷ(Art)(D) ὄντι(Prä)(Akt)(D) γὰρ(Pt) φήσουσι(Fu)(Akt) τὸν(Art)(A) ἄδικον(Adj)(A), ἅτε(Kon) ἐπιτηδεύοντα(Prä)(Akt)(A) πρᾶγμα(A)
+(167) unjust. in truth for they|will|say the unjust, as practising matter
+(168) ἀληθείας(G) ἐχόμενον(Prä)(M/P)(A) καὶ(Kon) οὐ(Pt) πρὸς(Prp) δόξαν(A) ζῶντα(Prä)(Akt)(A), οὐ(Pt) δοκεῖν(Prä)(Akt)(Inf) ἄδικον(Adj)(A)
+(168) of|truth holding|to and not toward repute living, not to|seem unjust
+(169) ἀλλʼ(Kon) εἶναι(Prä)(Inf)(Akt) ἐθέλειν(Prä)(Akt)(Inf),
+(169) but to|be to|wish,
+(170) [Zitat Anfang]
+(171) βαθεῖαν(Adj)(A) ἄλοκα(A) διὰ(Prp) φρενὸς(G) καρπούμενον(Prä)(M/P)(A),
+(171) deep furrow through of|mind reaping|fruit,
+(172) [Zitat Ende]
+(173) [362b]
+(173) [362b]
+(174) [Zitat Anfang]
+(175) ἐξ(Prp) ἧς(Pr)(G) τὰ(Art)(N) κεδνὰ(Adj)(N) βλαστάνει(Prä)(Akt) βουλεύματα(N),
+(175) out|of of|which the profitable sprouts plans,
+(176) [Zitat Ende]
+(177) [Quelle Anfang] Aesch. Seven 592-594 [Quelle Ende]
+(178) πρῶτον(Adv) μὲν(Pt) ἄρχειν(Prä)(Akt)(Inf) ἐν(Prp) τῇ(Art)(D) πόλει(D) δοκοῦντι(Prä)(Akt)(D) δικαίῳ(Adj)(D) εἶναι(Prä)(Inf)(Akt), ἔπειτα(Adv)
+(178) first indeed to|rule in the city seeming just to|be, then
+(179) γαμεῖν(Prä)(Akt)(Inf) ὁπόθεν(Adv) ἂν(Pt) βούληται(Prä)(Med)(Knj), ἐκδιδόναι(Prä)(Akt)(Inf) εἰς(Prp) οὓς(Pr)(A) ἂν(Pt) βούληται(Prä)(Med)(Knj), συμβάλλειν(Prä)(Akt)(Inf),
+(179) to|marry from|wherever ever he|may|wish, to|give|in|marriage into whom ever he|may|wish, to|contribute,
+(180) κοινωνεῖν(Prä)(Akt)(Inf) οἷς(Pr)(D) ἂν(Pt) ἐθέλῃ(Prä)(Med)(Knj), καὶ(Kon) παρὰ(Prp) ταῦτα(Pr)(A) πάντα(Adj)(A) ὠφελεῖσθαι(Prä)(M/P)(Inf) κερδαίνοντα(Prä)(Akt)(A)
+(180) to|share with|which ever he|may|wish, and contrary|to these all to|benefit|oneself gaining|profit
+(181) τῷ(Art)(D) μὴ(Pt) δυσχεραίνειν(Prä)(Akt)(Inf) τὸ(Art)(A) ἀδικεῖν(Prä)(Akt)(Inf)· εἰς(Prp) ἀγῶνας(A) τοίνυν(Pt) ἰόντα(Prä)(Akt)(A) καὶ(Kon)
+(181) by|the not to|be|averse the doing|wrong· into contests then going and
+(182) ἰδίᾳ(Adv) καὶ(Kon) δημοσίᾳ(Adv) περιγίγνεσθαι(Prä)(M/P)(Inf) καὶ(Kon) πλεονεκτεῖν(Prä)(Akt)(Inf) τῶν(Art)(G) ἐχθρῶν(G), πλεονεκτοῦντα(Prä)(Akt)(A) δὲ(Kon)
+(182) privately and publicly to|prevail and to|have|the|advantage of the|enemies, having|the|advantage but
+(183) πλουτεῖν(Prä)(Akt)(Inf) καὶ(Kon) τούς(Art)(A) [362c] τε(Pt) φίλους(A) εὖ(Adv) ποιεῖν(Prä)(Akt)(Inf) καὶ(Kon) τοὺς(Art)(A)
+(183) to|become|rich and the [362c] and friends well to|do and the
+(184) ἐχθροὺς(A) βλάπτειν(Prä)(Akt)(Inf), καὶ(Kon) θεοῖς(D) θυσίας(A) καὶ(Kon) ἀναθήματα(A) ἱκανῶς(Adv) καὶ(Kon) μεγαλοπρεπῶς(Adv)
+(184) enemies to|harm, and to|gods sacrifices and votive|offerings sufficiently and magnificently
+(185) θύειν(Prä)(Akt)(Inf) τε(Pt) καὶ(Kon) ἀνατιθέναι(Prä)(Akt)(Inf), καὶ(Kon) θεραπεύειν(Prä)(Akt)(Inf) τοῦ(Art)(G) δικαίου(Adj)(G) πολὺ(Adv) ἄμεινον(Adj)(Kmp)(A)
+(185) to|sacrifice and also to|dedicate, and to|serve of the|just much better
+(186) τοὺς(Art)(A) θεοὺς(A) καὶ(Kon) τῶν(Art)(G) ἀνθρώπων(G) οὓς(Pr)(A) ἂν(Pt) βούληται(Prä)(Med)(Knj), ὥστε(Kon) καὶ(Kon)
+(186) the gods and of the|men whom ever he|may|wish, so|that also
+(187) θεοφιλέστερον(Adj)(Sup)(A) αὐτὸν(Pr)(A) εἶναι(Prä)(Akt)(Inf) μᾶλλον(Adv)(Kmp) προσήκειν(Prä)(Akt)(Inf) ἐκ(Prp) τῶν(Art)(G) εἰκότων(Prä)(Akt)(G) ἢ(Kon) τὸν(Art)(A)
+(187) most|beloved|to|the|gods him to|be rather to|befit from the likely|things than the
+(188) δίκαιον(Adj)(A). οὕτω(Adv) φασίν(Prä)(Akt), ὦ(ij) Σώκρατες(V), παρὰ(Prp) θεῶν(G) καὶ(Kon) παρʼ(Prp) ἀνθρώπων(G)
+(188) just. thus they|say, O Socrates, from gods and from men
+(189) τῷ(Art)(D) ἀδίκῳ(Adj)(D) παρεσκευάσθαι(Per)(M/P)(Inf) τὸν(Art)(A) βίον(A) ἄμεινον(Adj)(Kmp)(A) ἢ(Kon) τῷ(Art)(D) δικαίῳ(Adj)(D). [362d]
+(189) to|the unjust to|have|been|prepared the life better than to|the just. [362d]
+(190) ταῦτʼ(Pr)(A) εἰπόντος(AorS)(Akt)(G) τοῦ(Art)(G) Γλαύκωνος(G) ἐγὼ(Pr)(N) μὲν(Pt) αὖ(Pt) ἐν(Prp) νῷ(D) εἶχόν(Imp)(Akt)
+(190) these|things having|said of Glaucon I indeed again in mind I|was|having
+(191) τι(Pr)(A) λέγειν(Prä)(Akt)(Inf) πρὸς(Prp) ταῦτα(Pr)(A), ὁ(Art)(N) δὲ(Kon) ἀδελφὸς(N) αὐτοῦ(Pr)(G) Ἀδείμαντος(N), οὔ(Pt)
+(191) something to|say toward these, the but brother of|him Adeimantus, not
+(192) τί(Pr)(A) που(Pt) οἴει(Prä)(Akt), ἔφη(Imp)(Akt), ὦ(ij) Σώκρατες(V), ἱκανῶς(Adv) εἰρῆσθαι(Per)(M/P)(Inf) περὶ(Prp) τοῦ(Art)(G)
+(192) what I|suppose you|think, he|said, O Socrates, sufficiently to|have|been|said about of
+(193) λόγου(G); ἀλλὰ(Kon) τί(Pr)(A) μήν(Pt); εἶπον(Aor)(Akt). αὐτό(Pr)(A), ἦ(Imp)(Akt) δʼ(Kon) ὅς(Pr)(N), οὐκ(Pt)
+(193) argument; but what indeed; I|said. itself, was but he, not
+(194) εἴρηται(Per)(M/P) ὃ(Pr)(A) μάλιστα(Adv)(Sup) ἔδει(Imp)(Akt) ῥηθῆναι(Aor)(Pas)(Inf). οὐκοῦν(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), τὸ(Art)(A)
+(194) has|been|said what most it|was|necessary to|be|said. well|then, was but I, the
+(195) λεγόμενον(Prä)(M/P)(A), ἀδελφὸς(N) ἀνδρὶ(D) παρείη(Prä)(Akt)(Op)· ὥστε(Kon) καὶ(Kon) σύ(Pr)(N), εἴ(Kon) τι(Pr)(A) ὅδε(Pr)(N)
+(195) being|said, a|brother to|a|man would|be|present· so|that and you, if anything this|one
+(196) ἐλλείπει(Prä)(Akt), ἐπάμυνε(Prä)(Akt)(Imv). καίτοι(Pt) ἐμέ(Pr)(A) γε(Pt) ἱκανὰ(Adj)(A) καὶ(Kon) τὰ(Art)(A) ὑπὸ(Prp) τούτου(Pr)(G)
+(196) is|lacking, come|to|aid. and|yet me indeed sufficient and the by this|one
+(197) ῥηθέντα(Aor)(Pas)(A) καταπαλαῖσαι(Aor)(Akt)(Inf) καὶ(Kon) ἀδύνατον(Adj)(A) ποιῆσαι(Aor)(Akt)(Inf) βοηθεῖν(Prä)(Akt)(Inf) δικαιοσύνῃ(D). καὶ(Kon) [362e] ὅς(Pr)(N),
+(197) having|been|said to|throw|down and impossible to|make to|help to|justice. and [362e] he,
+(198) οὐδέν(Pr)(A), ἔφη(Imp)(Akt), λέγεις(Prä)(Akt)· ἀλλʼ(Kon) ἔτι(Adv) καὶ(Kon) τάδε(Pr)(A) ἄκουε(Prä)(Akt)(Imv). δεῖ(Prä)(Akt) γὰρ(Pt)
+(198) nothing, he|said, you|say· but still also these|things listen. it|is|necessary for
+(199) διελθεῖν(AorS)(Akt)(Inf) ἡμᾶς(Pr)(A) καὶ(Kon) τοὺς(Art)(A) ἐναντίους(Adj)(A) λόγους(A) ὧν(Pr)(G) ὅδε(Pr)(N) εἶπεν(AorS)(Akt), οἳ(Pr)(N)
+(199) to|go|through us and the opposite speeches of|which this|one said, who
+(200) δικαιοσύνην(A) μὲν(Pt) ἐπαινοῦσιν(Prä)(Akt), ἀδικίαν(A) δὲ(Kon) ψέγουσιν(Prä)(Akt), ἵνʼ(Kon) ᾖ(Prä)(Akt)(Knj) σαφέστερον(Adj)(Kmp)(A) ὅ(Pr)(N)
+(200) justice indeed they|praise, injustice but they|blame, in|order|that it|may|be more|clear what
+(201) μοι(Pr)(D) δοκεῖ(Prä)(Akt) βούλεσθαι(Prä)(Med)(Inf) Γλαύκων(N).
+(201) to|me it|seems to|wish Glaucon.
+== St. 363a ==
+(203) [Σωκράτης:] λέγουσι(Prä)(Akt) δέ(Kon) που(Pt) καὶ(Kon) παρακελεύονται(Prä)(M/P) πατέρες(N) τε(Pt) ὑέσιν(D), καὶ(Kon)
+(203) [Σωκράτης:] they|say but I|suppose and encourage fathers and|also to|sons, and
+(204) πάντες(Adj)(N) οἱ(Art)(N) τινῶν(Pr)(G) κηδόμενοι(Prä)(M/P)(N), ὡς(Kon) χρὴ(Prä)(Akt) δίκαιον(Adj)(A) εἶναι(Prä)(Inf)(Akt), οὐκ(Pt) αὐτὸ(Pr)(A)
+(204) all the of|some caring, that it|is|necessary just to|be, not it|self
+(205) δικαιοσύνην(A) ἐπαινοῦντες(Prä)(Akt)(N) ἀλλὰ(Kon) τὰς(Art)(A) ἀπʼ(Prp) αὐτῆς(Pr)(G) εὐδοκιμήσεις(A), ἵνα(Kon) δοκοῦντι(Prä)(Akt)(D) δικαίῳ(Adj)(D)
+(205) justice praising but the from her|self distinctions, in|order|that to|the|one|seeming just
+(206) εἶναι(Prä)(Inf)(Akt) γίγνηται(Prä)(M/P)(Knj) ἀπὸ(Prp) τῆς(Art)(G) δόξης(G) ἀρχαί(N) τε(Pt) καὶ(Kon) γάμοι(N) καὶ(Kon)
+(206) to|be may|arise from the repute offices and|also and marriages and
+(207) ὅσαπερ(Pr)(N) Γλαύκων(N) διῆλθεν(AorS)(Akt) ἄρτι(Adv), ἀπὸ(Prp) τοῦ(Art)(G) εὐδοκιμεῖν(Prä)(Akt)(Inf) ὄντα(Prä)(Akt)(A) τῷ(Art)(D) δικαίῳ(Adj)(D).
+(207) as|many|as Glaucon went|through just|now, from the to|be|in|repute being to|the just.
+(208) ἐπὶ(Prp) πλέον(Adv)(Kmp) δὲ(Kon) οὗτοι(Pr)(N) τὰ(Art)(A) τῶν(Art)(G) δοξῶν(G) λέγουσιν(Prä)(Akt). τὰς(Art)(A) γὰρ(Pt)
+(208) to more but these the of|the opinions they|say. the for
+(209) παρὰ(Prp) θεῶν(G) εὐδοκιμήσεις(A) ἐμβάλλοντες(Prä)(Akt)(N) ἄφθονα(Adj)(A) ἔχουσι(Prä)(Akt) λέγειν(Prä)(Akt)(Inf) ἀγαθά(Adj)(A), τοῖς(Art)(D) ὁσίοις(Adj)(D)
+(209) from of|gods distinctions throwing|in abundant they|have to|say good|things, to|the pious
+(210) ἅ(Pr)(A) φασι(Prä)(Akt) θεοὺς(A) διδόναι(Prä)(Akt)(Inf)· ὥσπερ(Kon) ὁ(Art)(N) γενναῖος(Adj)(N) Ἡσίοδός(N) τε(Pt) καὶ(Kon)
+(210) which they|say gods to|give· just|as the noble Hesiod and|also and
+(211) Ὅμηρός(N) φασιν(Prä)(Akt), ὁ(Art)(N) μὲν(Pt) τὰς(Art)(A) δρῦς(A) τοῖς(Art)(D) [363b] δικαίοις(Adj)(D) τοὺς(Art)(A)
+(211) Homer they|say, the indeed the oaks to|the [363b] just the
+(212) θεοὺς(A) ποιεῖν(Prä)(Akt)(Inf)
+(212) gods to|make
+(213) [Zitat Anfang]
+(214) ἄκρας(Adj)(A) μέν(Pt) τε(Pt) φέρειν(Prä)(Akt)(Inf) βαλάνους(A), μέσσας(Adj)(A) δὲ(Kon) μελίσσας(A)· εἰροπόκοι(Adj)(N) δʼ(Kon) ὄιες(N), φησίν(Prä)(Akt), μαλλοῖς(D) καταβεβρίθασι(Per)(Akt)
+(214) tops indeed and|also to|bear acorns, middles but bees· wool|fleeced but sheep, he|says, with|fleeces have|been|weighed|down
+(215) [Zitat Ende]
+(216) [Quelle Anfang] Hes. WD 232 [Quelle Ende]
+(217) , καὶ(Kon) ἄλλα(Adj)(A) δὴ(Pt) πολλὰ(Adj)(A) ἀγαθὰ(Adj)(A) τούτων(Pr)(G) ἐχόμενα(Prä)(M/P)(A). παραπλήσια(Adj)(A) δὲ(Kon)
+(217) , and other indeed many good|things of|these following. similar but
+(218) καὶ(Kon) ὁ(Art)(N) ἕτερος(Adj)(N)·
+(218) and the other·
+(219) [Zitat Anfang]
+(220) ὥς(Kon) τέ(Pt) τευ(Pr)(G)
+(220) as and|also of|someone
+(221) [Zitat Ende]
+(222) γάρ(Pt) φησιν(Prä)(Akt)
+(222) for he|says
+(223) [Zitat Anfang]
+(224) ἢ(Kon) βασιλῆος(G) ἀμύμονος(Adj)(G) ὅς(Pr)(N) τε(Pt) θεουδὴς(Adj)(N)
+(224) or of|a|king blameless who and|also god|fearing
+(225) εὐδικίας(G) ἀνέχῃσι(Prä)(Akt)(Knj), φέρῃσι(Prä)(Akt)(Knj) δὲ(Kon) γαῖα(N) μέλαινα(Adj)(N)
+(225) of|good|justice may|uphold, may|bear but earth black
+(226) [Zitat Ende]
+(227) [363c]
+(227) [363c]
+(228) [Zitat Anfang]
+(229) πυροὺς(A) καὶ(Kon) κριθάς(A), βρίθῃσι(Prä)(Akt)(Knj) δὲ(Kon) δένδρεα(N) καρπῷ(D),
+(229) wheat and barley, may|be|heavy but trees with|fruit,
+(230) τίκτῃ(Prä)(Akt)(Knj) δʼ(Kon) ἔμπεδα(Adj)(A) μῆλα(A), θάλασσα(N) δὲ(Kon) παρέχῃ(Prä)(Akt)(Knj) ἰχθῦς(A).
+(230) may|bring|forth but steadfast flocks, sea but may|provide fish.
+(231) [Zitat Ende]
+(232) [Quelle Anfang] Hom. Od. 19.109 [Quelle Ende]
+(233) Μουσαῖος(N) δὲ(Kon) τούτων(Pr)(G) νεανικώτερα(Adj)(Kmp)(A) τἀγαθὰ(Art)(Adj)(A) καὶ(Kon) ὁ(Art)(N) ὑὸς(N) αὐτοῦ(Pr)(G) παρὰ(Prp)
+(233) Musaeus but of|these more|youthful the|good|things and the son of|him from
+(234) θεῶν(G) διδόασιν(Prä)(Akt) τοῖς(Art)(D) δικαίοις(Adj)(D)· εἰς(Prp) Ἅιδου(G) γὰρ(Pt) ἀγαγόντες(AorS)(Akt)(N) τῷ(Art)(D) λόγῳ(D)
+(234) gods they|give to|the just· into Hades for having|led in|the account
+(235) καὶ(Kon) κατακλίναντες(Aor)(Akt)(N) καὶ(Kon) συμπόσιον(A) τῶν(Art)(G) ὁσίων(Adj)(G) κατασκευάσαντες(Aor)(Akt)(N) ἐστεφανωμένους(Per)(M/P)(A) ποιοῦσιν(Prä)(Akt) τὸν(Art)(A)
+(235) and having|laid|down and banquet of|the pious having|prepared having|been|crowned they|make the
+(236) ἅπαντα(Adj)(A) χρόνον(A) ἤδη(Adv) [363d] διάγειν(Prä)(Akt)(Inf) μεθύοντας(Prä)(Akt)(A), ἡγησάμενοι(Aor)(Med)(N) κάλλιστον(Adj)(Sup)(A) ἀρετῆς(G) μισθὸν(A)
+(236) whole time already [363d] to|spend being|drunk, having|supposed finest of|virtue reward
+(237) μέθην(A) αἰώνιον(Adj)(A). οἱ(Art)(N) δʼ(Kon) ἔτι(Adv) τούτων(Pr)(G) μακροτέρους(Adj)(Kmp)(A) ἀποτείνουσιν(Prä)(Akt) μισθοὺς(A) παρὰ(Prp)
+(237) drunkenness eternal. the but still of|these longer stretch|out rewards from
+(238) θεῶν(G)· παῖδας(A) γὰρ(Pt) παίδων(G) φασὶ(Prä)(Akt) καὶ(Kon) γένος(A) κατόπισθεν(Adv) λείπεσθαι(Prä)(M/P)(Inf) τοῦ(Art)(G)
+(238) gods· children for of|children they|say and race afterwards to|be|left of|the
+(239) ὁσίου(Adj)(G) καὶ(Kon) εὐόρκου(Adj)(G). ταῦτα(Pr)(A) δὴ(Pt) καὶ(Kon) ἄλλα(Adj)(A) τοιαῦτα(Adj)(A) ἐγκωμιάζουσιν(Prä)(Akt) δικαιοσύνην(A)·
+(239) pious and good|oath|keeping. these|things indeed and other such they|praise justice·
+(240) τοὺς(Art)(A) δὲ(Kon) ἀνοσίους(Adj)(A) αὖ(Pt) καὶ(Kon) ἀδίκους(Adj)(A) εἰς(Prp) πηλόν(A) τινα(Pr)(A) κατορύττουσιν(Prä)(Akt)
+(240) the but unholy again and unjust into mud some they|bury|down
+(241) ἐν(Prp) Ἅιδου(G) καὶ(Kon) κοσκίνῳ(D) ὕδωρ(A) ἀναγκάζουσι(Prä)(Akt) φέρειν(Prä)(Akt)(Inf), ἔτι(Adv) τε(Pt) ζῶντας(Prä)(Akt)(A)
+(241) in Hades and with|a|sieve water they|compel to|carry, still and|also living
+(242) εἰς(Prp) [363e] κακὰς(Adj)(A) δόξας(A) ἄγοντες(Prä)(Akt)(N), ἅπερ(Pr)(A) Γλαύκων(N) περὶ(Prp) τῶν(Art)(G) δικαίων(Adj)(G)
+(242) into [363e] bad reputations leading, the|very|things Glaucon about the just
+(243) δοξαζομένων(Prä)(M/P)(G) δὲ(Kon) ἀδίκων(Adj)(G) διῆλθε(AorS)(Akt) τιμωρήματα(A), ταῦτα(Pr)(A) περὶ(Prp) τῶν(Art)(G) ἀδίκων(Adj)(G) λέγουσιν(Prä)(Akt),
+(243) being|thought but of|the|unjust went|through punishments, these|things about the unjust they|say,
+(244) ἄλλα(Adj)(A) δὲ(Kon) οὐκ(Pt) ἔχουσιν(Prä)(Akt). ὁ(Art)(N) μὲν(Pt) οὖν(Pt) ἔπαινος(N) καὶ(Kon) ὁ(Art)(N)
+(244) other|things but not they|have. the indeed then praise and the
+(245) ψόγος(N) οὗτος(Pr)(N) ἑκατέρων(Pr)(G).
+(245) blame this of|both.
+== St. 364a ==
+(247) [Σωκράτης:] πρὸς(Prp) δὲ(Kon) τούτοις(Pr)(D) σκέψαι(Aor)(Med)(Imv), ὦ(ij) Σώκρατες(V), ἄλλο(Adj)(A) αὖ(Pt) εἶδος(A)
+(247) [Σωκράτης:] toward but these consider, O Socrates, another again kind
+(248) λόγων(G) περὶ(Prp) δικαιοσύνης(G) τε(Pt) καὶ(Kon) ἀδικίας(G) ἰδίᾳ(Adv) τε(Pt) λεγόμενον(Prä)(M/P)(A) καὶ(Kon)
+(248) of|speeches about of|justice and|also and of|injustice privately and|also being|said and
+(249) ὑπὸ(Prp) ποιητῶν(G). πάντες(Adj)(N) γὰρ(Pt) ἐξ(Prp) ἑνὸς(Adj)(G) στόματος(G) ὑμνοῦσιν(Prä)(Akt) ὡς(Kon) καλὸν(Adj)(A)
+(249) by of|poets. all for out|of of|one mouth they|hymn that fine
+(250) μὲν(Pt) ἡ(Art)(N) σωφροσύνη(N) τε(Pt) καὶ(Kon) δικαιοσύνη(N), χαλεπὸν(Adj)(A) μέντοι(Pt) καὶ(Kon) ἐπίπονον(Adj)(A),
+(250) indeed the temperance and|also and justice, hard however and toilsome,
+(251) ἀκολασία(N) δὲ(Kon) καὶ(Kon) ἀδικία(N) ἡδὺ(Adj)(N) μὲν(Pt) καὶ(Kon) εὐπετὲς(Adj)(N) κτήσασθαι(Aor)(Med)(Inf), δόξῃ(D)
+(251) licentiousness but and injustice sweet indeed and easy to|acquire, in|repute
+(252) δὲ(Kon) μόνον(Adv) καὶ(Kon) νόμῳ(D) αἰσχρόν(Adj)(N)· λυσιτελέστερα(Adj)(Kmp)(A) δὲ(Kon) τῶν(Art)(G) δικαίων(Adj)(G) τὰ(Art)(A)
+(252) but only and by|law shameful· more|profitable but of|the just|things the
+(253) ἄδικα(Adj)(A) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πλῆθος(A) λέγουσι(Prä)(Akt), καὶ(Kon) πονηροὺς(Adj)(A) πλουσίους(Adj)(A) καὶ(Kon)
+(253) unjust|things as upon the multitude they|say, and wicked rich and
+(254) ἄλλας(Adj)(A) δυνάμεις(A) ἔχοντας(Prä)(Akt)(A) εὐδαιμονίζειν(Prä)(Akt)(Inf) καὶ(Kon) τιμᾶν(Prä)(Akt)(Inf) εὐχερῶς(Adv) ἐθέλουσιν(Prä)(Akt) δημοσίᾳ(Adv) τε(Pt)
+(254) other powers having to|call|happy and to|honor easily they|are|willing publicly and|also
+(255) καὶ(Kon) ἰδίᾳ(Adv), τοὺς(Art)(A) δὲ(Kon) ἀτιμάζειν(Prä)(Akt)(Inf) καὶ(Kon) ὑπερορᾶν(Prä)(Akt)(Inf), οἳ(Pr)(N) ἄν(Pt) πῃ(Adv)
+(255) and privately, the but to|dishonor and to|overlook, who indeed somewhere
+(256) ἀσθενεῖς(Adj)(N) τε(Pt) καὶ(Kon) [364b] πένητες(N) ὦσιν(Prä)(Akt)(Knj), ὁμολογοῦντες(Prä)(Akt)(N) αὐτοὺς(Pr)(A) ἀμείνους(Adj)(Kmp)(A) εἶναι(Prä)(Inf)(Akt)
+(256) weak and|also and [364b] poor may|be, agreeing them better to|be
+(257) τῶν(Art)(G) ἑτέρων(Adj)(G). τούτων(Pr)(G) δὲ(Kon) πάντων(Adj)(G) οἱ(Art)(N) περὶ(Prp) θεῶν(G) τε(Pt) λόγοι(N)
+(257) than|the others. of|these but of|all the about gods and|also accounts
+(258) καὶ(Kon) ἀρετῆς(G) θαυμασιώτατοι(Adj)(Sup)(N) λέγονται(Prä)(M/P), ὡς(Kon) ἄρα(Pt) καὶ(Kon) θεοὶ(N) πολλοῖς(Adj)(D) μὲν(Pt)
+(258) and of|virtue most|wonderful are|said, that then also gods to|many indeed
+(259) ἀγαθοῖς(Adj)(D) δυστυχίας(A) τε(Pt) καὶ(Kon) βίον(A) κακὸν(Adj)(A) ἔνειμαν(Aor)(Akt), τοῖς(Art)(D) δʼ(Kon) ἐναντίοις(Adj)(D)
+(259) good|men misfortunes and|also and life bad they|assigned, to|the but opposite
+(260) ἐναντίαν(Adj)(A) μοῖραν(A). ἀγύρται(N) δὲ(Kon) καὶ(Kon) μάντεις(N) ἐπὶ(Prp) πλουσίων(Adj)(G) θύρας(A) ἰόντες(Prä)(Akt)(N)
+(260) opposite share|fate. collectors but and seers to|the of|rich doors going
+(261) πείθουσιν(Prä)(Akt) ὡς(Kon) ἔστι(Prä)(Akt) παρὰ(Prp) σφίσι(Pr)(D) δύναμις(N) ἐκ(Prp) θεῶν(G) ποριζομένη(Prä)(M/P)(N) θυσίαις(D)
+(261) they|persuade that there|is from|beside with|them power from gods being|provided by|sacrifices
+(262) τε(Pt) καὶ(Kon) ἐπῳδαῖς(D), εἴτε(Kon) τι(Pr)(A) ἀδίκημά(A) [364c] του(Pr)(G) γέγονεν(Per)(Akt) αὐτοῦ(Pr)(G)
+(262) and|also and incantations, whether something wrongdoing [364c] of|someone has|happened of|himself
+(263) ἢ(Kon) προγόνων(G), ἀκεῖσθαι(Prä)(M/P)(Inf) μεθʼ(Prp) ἡδονῶν(G) τε(Pt) καὶ(Kon) ἑορτῶν(G), ἐάν(Kon) τέ(Pt)
+(263) or of|ancestors, to|be|healed with pleasures and|also and festivals, if|ever and|also
+(264) τινα(Pr)(A) ἐχθρὸν(Adj)(A) πημῆναι(Aor)(Akt)(Inf) ἐθέλῃ(Prä)(Akt)(Knj), μετὰ(Prp) σμικρῶν(Adj)(G) δαπανῶν(G) ὁμοίως(Adv) δίκαιον(Adj)(A) ἀδίκῳ(Adj)(D)
+(264) someone enemy to|harm he|may|wish, with small expenses alike a|just|man to|an|unjust|man
+(265) βλάψει(Fu)(Akt) ἐπαγωγαῖς(D) τισιν(Pr)(D) καὶ(Kon) καταδέσμοις(D), τοὺς(Art)(A) θεούς(A), ὥς(Kon) φασιν(Prä)(Akt), πείθοντές(Prä)(Akt)(N)
+(265) he|will|harm by|charms some and by|bindings, the gods, as they|say, persuading
+(266) σφισιν(Pr)(D) ὑπηρετεῖν(Prä)(Akt)(Inf). τούτοις(Pr)(D) δὲ(Kon) πᾶσιν(Adj)(D) τοῖς(Art)(D) λόγοις(D) μάρτυρας(A) ποιητὰς(A) ἐπάγονται(Prä)(M/P)
+(266) to|them to|serve. to|these but all the accounts witnesses poets they|bring|in
+(267) οἱ(Art)(N) μὲν(Pt) κακίας(G) πέρι(Prp), εὐπετείας(G) διδόντες(Prä)(Akt)(N), ὡς(Kon)
+(267) the indeed of|wickedness about, of|ease giving, that
+(268) [Zitat Anfang]
+(269) τὴν(Art)(A) μὲν(Pt) κακότητα(A) καὶ(Kon) ἰλαδὸν(Adv) ἔστιν(Prä)(Akt) ἑλέσθαι(AorS)(Med)(Inf)
+(269) the indeed badness and by|heaps it|is to|choose
+(270) [Zitat Ende]
+(271) [364d]
+(271) [364d]
+(272) [Zitat Anfang]
+(273) ῥηϊδίως(Adv)· λείη(Adj)(N) μὲν(Pt) ὁδός(N), μάλα(Adv) δʼ(Pt) ἐγγύθι(Adv) ναίει(Prä)(Akt)·
+(273) easily· smooth road indeed, very but nearby dwells·
+(274) τῆς(Art)(G) δʼ(Pt) ἀρετῆς(G) ἱδρῶτα(A) θεοὶ(N) προπάροιθεν(Adv) ἔθηκαν(AorS)(Akt)
+(274) of the|virtue but sweat gods beforehand they|placed
+(275) [Zitat Ende]
+(276) [Quelle Anfang] Hes. WD 287-289 [Quelle Ende]
+(277) καί(Kon) τινα(Pr)(A) ὁδὸν(A) μακράν(Adj)(A) τε(Pt) καὶ(Kon) τραχεῖαν(Adj)(A) καὶ(Kon) ἀνάντη(Adv)· οἱ(Art)(N)
+(277) and some road long both and rough and uphill· the
+(278) δὲ(Pt) τῆς(Art)(G) τῶν(Art)(G) θεῶν(G) ὑπʼ(Prp) ἀνθρώπων(G) παραγωγῆς(G) τὸν(Art)(A) Ὅμηρον(A) μαρτύρονται(Prä)(M/P),
+(278) but of the gods by men leading|aside the Homer they|cite|as|witness,
+(279) ὅτι(Kon) καὶ(Kon) ἐκεῖνος(Pr)(N) εἶπεν(AorS)(Akt)—
+(279) that and that|man he|said—
+(280) [Zitat Anfang]
+(281) λιστοὶ(Adj)(N) δέ(Pt) τε(Pt) καὶ(Kon) θεοὶ(N) αὐτοί(Pr)(N),
+(281) propitiable but both and gods themselves,
+(282) καὶ(Kon) τοὺς(Art)(A) μὲν(Pt) θυσίαισι(D) καὶ(Kon) εὐχωλαῖς(D) ἀγαναῖσιν(Adj)(D)
+(282) and the indeed with|sacrifices and with|prayers gentle
+(283) [Zitat Ende]
+(284) [364e]
+(284) [364e]
+(285) [Zitat Anfang]
+(286) λοιβῇ(D) τε(Pt) κνίσῃ(D) τε(Pt) παρατρωπῶσʼ(Prä)(Akt)(A) ἄνθρωποι(N)
+(286) with|libation and with|fume and turning|aside men
+(287) λισσόμενοι(Prä)(M/P)(N), ὅτε(Kon) κέν(Pt) τις(Pr)(N) ὑπερβήῃ(Aor)(Akt)(Knj) καὶ(Kon) ἁμάρτῃ(Aor)(Akt)(Knj).
+(287) supplicating, whenever at|any|time someone may|overstep and may|err.
+(288) [Zitat Ende]
+(289) [Quelle Anfang] Hom. Il. 9.497 [Quelle Ende]
+== St. 365a ==
+(291) [Σωκράτης:] βίβλων(G) δὲ(Pt) ὅμαδον(A) παρέχονται(Prä)(M/P) Μουσαίου(G) καὶ(Kon) Ὀρφέως(G), Σελήνης(G) τε(Pt)
+(291) [Σωκράτης:] of|books but din they|provide of|Musaeus and of|Orpheus, of|Selene and|also
+(292) καὶ(Kon) Μουσῶν(G) ἐκγόνων(G), ὥς(Kon) φασι(Prä)(Akt), καθʼ(Prp) ἃς(Pr)(A) θυηπολοῦσιν(Prä)(Akt), πείθοντες(Prä)(Akt)(N) οὐ(Pt)
+(292) and of|Muses descendants, as they|say, according|to which they|burn|sacrifice, persuading not
+(293) μόνον(Adv) ἰδιώτας(A) ἀλλὰ(Kon) καὶ(Kon) πόλεις(A), ὡς(Kon) ἄρα(Pt) λύσεις(A) τε(Pt) καὶ(Kon)
+(293) only private|men but also cities, that then releases and also
+(294) καθαρμοὶ(N) ἀδικημάτων(G) διὰ(Prp) θυσιῶν(G) καὶ(Kon) παιδιᾶς(G) ἡδονῶν(G) εἰσι(Prä)(Akt) μὲν(Pt) ἔτι(Adv)
+(294) purifications of|wrongs through sacrifices and sport of|pleasures are indeed still
+(295) ζῶσιν(Prä)(Akt), εἰσὶ(Prä)(Akt) δὲ(Pt) καὶ(Kon) τελευτήσασιν(Aor)(Akt)(D), ἃς(Pr)(A) δὴ(Pt) τελετὰς(A) καλοῦσιν(Prä)(Akt), αἳ(Pr)(N)
+(295) to|the|living, are but also to|the|dead, which indeed rites they|call, which
+(296) τῶν(Art)(G) ἐκεῖ(Adv) κακῶν(G) ἀπολύουσιν(Prä)(Akt) ἡμᾶς(Pr)(A), μὴ(Pt) θύσαντας(Aor)(Akt)(A) δὲ(Pt) δεινὰ(Adj)(A) περιμένει(Prä)(Akt).
+(296) of the|there evils they|release us, not having|sacrificed but terrible|things awaits.
+(297) ταῦτα(Pr)(A) πάντα(Adj)(A), ἔφη(Imp)(Akt), ὦ(ij) φίλε(Adj)(V) Σώκρατες(V), τοιαῦτα(Adj)(A) καὶ(Kon) τοσαῦτα(Adj)(A) λεγόμενα(Prä)(M/P)(A)
+(297) these all, he|said, O dear Socrates, such and so|many being|said
+(298) ἀρετῆς(G) πέρι(Prp) καὶ(Kon) κακίας(G), ὡς(Kon) ἄνθρωποι(N) καὶ(Kon) θεοὶ(N) περὶ(Prp) αὐτὰ(Pr)(A)
+(298) of|virtue about and of|vice, how men and gods about them
+(299) ἔχουσι(Prä)(Akt) τιμῆς(G), τί(Pr)(A) οἰόμεθα(Prä)(Med) ἀκουούσας(Prä)(Akt)(A) νέων(Adj)(G) ψυχὰς(A) ποιεῖν(Prä)(Akt)(Inf), ὅσοι(Pr)(N) εὐφυεῖς(Adj)(N)
+(299) have of|honor, what do|we|think hearing of|young souls to|make, as|many|as well|endowed
+(300) καὶ(Kon) ἱκανοὶ(Adj)(N) ἐπὶ(Prp) πάντα(Adj)(A) τὰ(Art)(A) λεγόμενα(Prä)(M/P)(A) ὥσπερ(Kon) ἐπιπτόμενοι(Prä)(M/P)(N) συλλογίσασθαι(Aor)(Med)(Inf) ἐξ(Prp)
+(300) and capable toward all the being|said just|as flying|at to|reason|out from
+(301) αὐτῶν(Pr)(G) ποῖός(Pr)(N) τις(Pr)(N) ἂν(Pt) ὢν(Prä)(Akt)(N) [365b] καὶ(Kon) πῇ(Adv) πορευθεὶς(Aor)(Pas)(N) τὸν(Art)(A)
+(301) them what|sort someone would being [365b] and whither having|gone the
+(302) βίον(A) ὡς(Kon) ἄριστα(Adv)(Sup) διέλθοι(Aor)(Akt)(Op); λέγοι(Prä)(Akt)(Op) γὰρ(Pt) ἂν(Pt) ἐκ(Prp) τῶν(Art)(G) εἰκότων(Prä)(Akt)(G)
+(302) life as best might|pass|through; he|would|say for indeed from the likely|things
+(303) πρὸς(Prp) αὑτὸν(Pr)(A) κατὰ(Prp) Πίνδαρον(A) ἐκεῖνο(Pr)(A) τὸ(Art)(A)
+(303) to himself according|to Pindar that the
+(304) [Zitat Anfang]
+(305) πότερον(Pr)(A) δίκᾳ(D) τεῖχος(A) ὕψιον(Adj)(A) ἢ(Kon) σκολιαῖς(Adj)(D) ἀπάταις(D) ἀναβὰς(Aor)(Akt)(N)
+(305) whether by|justice wall higher or by|crooked deceits having|gone|up
+(306) [Zitat Ende]
+(307) [Quelle Anfang] Pindar, Fr. [Quelle Ende]
+(308) καὶ(Kon) ἐμαυτὸν(Pr)(A) οὕτω(Adv) περιφράξας(Aor)(Akt)(N) διαβιῶ(Fu)(Akt); τὰ(Art)(A) μὲν(Pt) γὰρ(Pt) λεγόμενα(Prä)(M/P)(A) δικαίῳ(Adj)(D)
+(308) and myself thus having|fenced|around shall|I|live|through; the indeed for being|said to|a|just|man
+(309) μὲν(Pt) ὄντι(Prä)(Akt)(D) μοι(Pr)(D), ἐὰν(Kon) μὴ(Pt) καὶ(Kon) δοκῶ(Prä)(Akt) ὄφελος(N) οὐδέν(Pr)(N) φασιν(Prä)(Akt)
+(309) indeed being to|me, if not also I|seem benefit nothing they|say
+(310) εἶναι(Prä)(Akt)(Inf), πόνους(A) δὲ(Pt) καὶ(Kon) ζημίας(A) φανεράς(Adj)(A)· ἀδίκῳ(Adj)(D) δὲ(Pt) δόξαν(A) δικαιοσύνης(G)
+(310) to|be, toils but and penalties manifest· to|an|unjust|man but reputation of|justice
+(311) παρεσκευασμένῳ(Per)(M/P)(D) θεσπέσιος(Adj)(N) βίος(N) λέγεται(Prä)(M/P). οὐκοῦν(Pt), [365c] ἐπειδὴ(Kon) τὸ(Art)(N) δοκεῖν(Prä)(Akt)(Inf) ,
+(311) having|been|prepared divine life is|said. well|then, [365c] since the to|seem ,
+(312) ὡς(Kon) δηλοῦσί(Prä)(Akt) μοι(Pr)(D) οἱ(Art)(N) σοφοί(Adj)(N),
+(312) as they|make|clear to|me the wise,
+(313) [Zitat Anfang]
+(314) καὶ(Kon) τὰν(Art)(A) ἀλάθειαν(A) βιᾶται(Prä)(M/P)
+(314) and the truth forces
+(315) [Zitat Ende]
+(316) [Quelle Anfang] Simonides, Fr. 76 Bergk, and Eur. Orest. 236. [Quelle Ende]
+(317) καὶ(Kon) κύριον(Adj)(N) εὐδαιμονίας(G), ἐπὶ(Prp) τοῦτο(Pr)(A) δὴ(Pt) τρεπτέον(Adj)(N) ὅλως(Adv)· πρόθυρα(A) μὲν(Pt)
+(317) and lord of|happiness, toward this indeed to|be|turned wholly· doorways indeed
+(318) καὶ(Kon) σχῆμα(A) κύκλῳ(Adv) περὶ(Prp) ἐμαυτὸν(Pr)(A) σκιαγραφίαν(A) ἀρετῆς(G) περιγραπτέον(Adj)(N), τὴν(Art)(A) δὲ(Pt)
+(318) and form in|a|circle around myself shadow|drawing of|virtue to|be|drawn|around, the but
+(319) τοῦ(Art)(G) σοφωτάτου(Adj)(Sup)(G) Ἀρχιλόχου(G) ἀλώπεκα(A) ἑλκτέον(Adj)(N) ἐξόπισθεν(Adv) κερδαλέαν(Adj)(A) καὶ(Kon) ποικίλην(Adj)(A). ἀλλὰ(Kon)
+(319) of the|wisest Archilochus fox to|be|dragged behind gainful and variegated. but
+(320) γάρ(Pt), φησί(Prä)(Akt) τις(Pr)(N), οὐ(Pt) ῥᾴδιον(Adj)(N) ἀεὶ(Adv) λανθάνειν(Prä)(Akt)(Inf) κακὸν(Adj)(A) ὄντα(Prä)(Akt)(A). οὐδὲ(Kon)
+(320) for, says someone, not easy always to|escape|notice bad being. nor
+(321) γὰρ(Pt) ἄλλο(Adj)(N) οὐδὲν(Pr)(N) εὐπετές(Adj)(N), φήσομεν(Fu)(Akt), [365d] τῶν(Art)(G) μεγάλων(Adj)(G)· ἀλλʼ(Kon) ὅμως(Adv),
+(321) for other nothing easy, we|shall|say, [365d] of the|great· but nevertheless,
+(322) εἰ(Kon) μέλλομεν(Prä)(Akt) εὐδαιμονήσειν(Fu)(Akt)(Inf), ταύτῃ(Pr)(D) ἰτέον(Adj)(N), ὡς(Kon) τὰ(Art)(N) ἴχνη(N) τῶν(Art)(G) λόγων(G)
+(322) if we|are|about to|be|happy, this|way to|go, as the tracks of the|arguments
+(323) φέρει(Prä)(Akt). ἐπὶ(Prp) γὰρ(Pt) τὸ(Art)(A) λανθάνειν(Prä)(Akt)(Inf) συνωμοσίας(A) τε(Pt) καὶ(Kon) ἑταιρίας(A) συνάξομεν(Fu)(Akt),
+(323) it|leads. toward for the to|escape|notice conspiracies and also associations we|shall|gather,
+(324) εἰσίν(Prä)(Akt) τε(Pt) πειθοῦς(G) διδάσκαλοι(N) σοφίαν(A) δημηγορικήν(Adj)(A) τε(Pt) καὶ(Kon) δικανικὴν(Adj)(A) διδόντες(Prä)(Akt)(N),
+(324) there|are also of|persuasion teachers wisdom public|speaking and also forensic giving,
+(325) ἐξ(Prp) ὧν(Pr)(G) τὰ(Art)(A) μὲν(Pt) πείσομεν(Fu)(Akt), τὰ(Art)(A) δὲ(Kon) βιασόμεθα(Fu)(Med), ὡς(Kon) πλεονεκτοῦντες(Prä)(Akt)(N)
+(325) from which the indeed we|shall|persuade, the but we|shall|use|force, as having|the|advantage
+(326) δίκην(A) μὴ(Pt) διδόναι(Prä)(Akt)(Inf). ἀλλὰ(Kon) δὴ(Pt) θεοὺς(A) οὔτε(Kon) λανθάνειν(Prä)(Akt)(Inf) οὔτε(Kon) βιάσασθαι(Aor)(Med)(Inf)
+(326) penalty not to|pay. but indeed gods neither to|escape|notice nor to|force
+(327) δυνατόν(Adj)(N). οὐκοῦν(Pt), εἰ(Kon) μὲν(Pt) μὴ(Pt) εἰσὶν(Prä)(Akt) ἢ(Kon) μηδὲν(Pr)(A) αὐτοῖς(Pr)(D) τῶν(Art)(G)
+(327) possible. well|then, if indeed not they|are or nothing to|them of|the
+(328) ἀνθρωπίνων(Adj)(G) μέλει(Prä)(Akt), τί(Pr)(A) καὶ(Kon) ἡμῖν(Pr)(D) μελητέον(Adj)(N) [365e] τοῦ(Art)(G) λανθάνειν(Prä)(Akt)(Inf); εἰ(Kon)
+(328) human|things it|is|a|care, what also to|us to|be|cared [365e] the to|escape|notice; if
+(329) δὲ(Kon) εἰσί(Prä)(Akt) τε(Pt) καὶ(Kon) ἐπιμελοῦνται(Prä)(M/P), οὐκ(Pt) ἄλλοθέν(Adv) τοι(Pt) αὐτοὺς(Pr)(A) ἴσμεν(Prä)(Akt)
+(329) but they|are and also they|take|care, not from|elsewhere indeed them we|know
+(330) ἢ(Kon) ἀκηκόαμεν(Per)(Akt) ἢ(Kon) ἔκ(Prp) τε(Pt) τῶν(Art)(G) νόμων(G) καὶ(Kon) τῶν(Art)(G) γενεαλογησάντων(Aor)(Akt)(G)
+(330) or we|have|heard or from and the laws and the having|traced|genealogies
+(331) ποιητῶν(G), οἱ(Art)(N) δὲ(Pt) αὐτοὶ(Pr)(N) οὗτοι(Pr)(N) λέγουσιν(Prä)(Akt) ὡς(Kon) εἰσὶν(Prä)(Akt) οἷοι(Adj)(N) θυσίαις(D)
+(331) of|poets, who but themselves these say that they|are such with|sacrifices
+(332) τε(Pt) καὶ(Kon)
+(332) and also
+(333) [Zitat Anfang]
+(334) εὐχωλαῖς(D) ἀγανῇσιν(Adj)(D)
+(334) with|prayers gentle
+(335) [Zitat Ende]
+(336) καὶ(Kon) ἀναθήμασιν(D) παράγεσθαι(Prä)(M/P)(Inf) ἀναπειθόμενοι(Prä)(M/P)(N), οἷς(Pr)(D) ἢ(Kon) ἀμφότερα(Adj)(A) ἢ(Kon) οὐδέτερα(Adj)(A) πειστέον(Adj)(N).
+(336) and with|dedications to|be|brought|over being|won|over, by|which either both or neither to|be|believed.
+== St. 366a ==
+(338) [Σωκράτης:] εἰ(Kon) δʼ(Pt) οὖν(Pt) πειστέον(Adj)(N), ἀδικητέον(Adj)(N) καὶ(Kon) θυτέον(Adj)(N) ἀπὸ(Prp) τῶν(Art)(G)
+(338) [Σωκράτης:] if but now to|be|believed, to|be|unjust and to|be|sacrificing from the
+(339) ἀδικημάτων(G). δίκαιοι(Adj)(N) μὲν(Pt) γὰρ(Pt) ὄντες(Prä)(Akt)(N) ἀζήμιοι(Adj)(N) μόνον(Adv) ὑπὸ(Prp) θεῶν(G) ἐσόμεθα(Fu)(Akt),
+(339) wrongdoings. just|men indeed for being without|penalty only by gods we|shall|be,
+(340) τὰ(Art)(A) δʼ(Pt) ἐξ(Prp) ἀδικίας(G) κέρδη(A) ἀπωσόμεθα(Fu)(Med)· ἄδικοι(Adj)(N) δὲ(Pt) κερδανοῦμέν(Fu)(Akt) τε(Pt)
+(340) the but from injustice gains we|shall|push|away· unjust|men but we|shall|profit and|also
+(341) καὶ(Kon) λισσόμενοι(Prä)(M/P)(N) ὑπερβαίνοντες(Prä)(Akt)(N) καὶ(Kon) ἁμαρτάνοντες(Prä)(Akt)(N), πείθοντες(Prä)(Akt)(N) αὐτοὺς(Pr)(A) ἀζήμιοι(Adj)(N) ἀπαλλάξομεν(Fu)(Akt). ἀλλὰ(Kon)
+(341) and supplicating overstepping and erring, persuading them without|penalty we|shall|release. but
+(342) γὰρ(Pt) ἐν(Prp) Ἅιδου(G) δίκην(A) δώσομεν(Fu)(Akt) ὧν(Pr)(G) ἂν(Pt) ἐνθάδε(Adv) ἀδικήσωμεν(Aor)(Akt)(Knj), ἢ(Kon)
+(342) for in Hades penalty we|shall|pay of|what ever here we|may|do|wrong, either
+(343) αὐτοὶ(Pr)(N) ἢ(Kon) παῖδες(N) παίδων(G). ἀλλʼ(Kon), ὦ(ij) φίλε(Adj)(V), φήσει(Fu)(Akt) λογιζόμενος(Prä)(M/P)(N), αἱ(Art)(N)
+(343) ourselves or children of|children. but, O dear, he|will|say calculating, the
+(344) τελεταὶ(N) αὖ(Pt) μέγα(Adj)(A) δύνανται(Prä)(M/P) καὶ(Kon) οἱ(Art)(N) λύσιοι(Adj)(N) θεοί(N), ὡς(Kon) αἱ(Art)(N)
+(344) rites again greatly are|able and the releasing gods, as the
+(345) μέγισται(Adj)(Sup)(N) [366b] πόλεις(N) λέγουσι(Prä)(Akt) καὶ(Kon) οἱ(Art)(N) θεῶν(G) παῖδες(N) ποιηταὶ(N) καὶ(Kon)
+(345) greatest [366b] cities say and the of|gods children poets and
+(346) προφῆται(N) τῶν(Art)(G) θεῶν(G) γενόμενοι(Aor)(Med)(N), οἳ(Pr)(N) ταῦτα(Pr)(A) οὕτως(Adv) ἔχειν(Prä)(Akt)(Inf) μηνύουσιν(Prä)(Akt). κατὰ(Prp)
+(346) prophets of the|gods having|become, who these|things thus to|be reveal. according|to
+(347) τίνα(Pr)(A) οὖν(Pt) ἔτι(Adv) λόγον(A) δικαιοσύνην(A) ἂν(Pt) πρὸ(Prp) μεγίστης(Adj)(Sup)(G) ἀδικίας(G) αἱροίμεθʼ(Prä)(Med)(Op)
+(347) what then yet account justice would before greatest injustice we|choose
+(348) ἄν(Pt), ἣν(Pr)(A) ἐὰν(Kon) μετʼ(Prp) εὐσχημοσύνης(G) κιβδήλου(Adj)(G) κτησώμεθα(Aor)(Med)(Knj), καὶ(Kon) παρὰ(Prp) θεοῖς(D)
+(348) indeed, which if with seemliness counterfeit we|may|acquire, both with gods
+(349) καὶ(Kon) παρʼ(Prp) ἀνθρώποις(D) πράξομεν(Fu)(Akt) κατὰ(Prp) νοῦν(A) ζῶντές(Prä)(Akt)(N) τε(Pt) καὶ(Kon) τελευτήσαντες(Aor)(Akt)(N),
+(349) and with men we|shall|fare according|to mind living and also having|ended,
+(350) ὡς(Kon) ὁ(Art)(N) τῶν(Art)(G) πολλῶν(Adj)(G) τε(Pt) καὶ(Kon) ἄκρων(Adj)(G) λεγόμενος(Prä)(M/P)(N) λόγος(N); ἐκ(Prp)
+(350) as the of|the many and also eminent being|said account; from
+(351) δὴ(Pt) πάντων(Adj)(G) τῶν(Art)(G) εἰρημένων(Per)(M/P)(G) τίς(Pr)(N) [366c] μηχανή(N), ὦ(ij) Σώκρατες(V), δικαιοσύνην(A)
+(351) indeed of|all the things|said what [366c] device, O Socrates, justice
+(352) τιμᾶν(Prä)(Akt)(Inf) ἐθέλειν(Prä)(Akt)(Inf) ᾧ(Pr)(D) τις(Pr)(N) δύναμις(N) ὑπάρχει(Prä)(Akt) ψυχῆς(G) ἢ(Kon) χρημάτων(G) ἢ(Kon)
+(352) to|honor to|be|willing to|whom someone power exists of|the|soul or of|the|money or
+(353) σώματος(G) ἢ(Kon) γένους(G), ἀλλὰ(Kon) μὴ(Pt) γελᾶν(Prä)(Akt)(Inf) ἐπαινουμένης(Prä)(M/P)(G) ἀκούοντα(Prä)(Akt)(A); ὡς(Kon) δή(Pt)
+(353) of|the|body or of|the|lineage, but not to|laugh of|the|being|praised hearing; as indeed
+(354) τοι(Pt) εἴ(Kon) τις(Pr)(N) ἔχει(Prä)(Akt) ψευδῆ(Adj)(A) μὲν(Pt) ἀποφῆναι(Aor)(Akt)(Inf) ἃ(Pr)(A) εἰρήκαμεν(Per)(Akt), ἱκανῶς(Adv)
+(354) indeed if someone has false|things indeed to|declare which we|have|said, sufficiently
+(355) δὲ(Kon) ἔγνωκεν(Per)(Akt) ὅτι(Kon) ἄριστον(Adj)(N) δικαιοσύνη(N), πολλήν(Adj)(A) που(Pt) συγγνώμην(A) ἔχει(Prä)(Akt) καὶ(Kon)
+(355) but has|come|to|know that best justice, much I|suppose forgiveness has and
+(356) οὐκ(Pt) ὀργίζεται(Prä)(M/P) τοῖς(Art)(D) ἀδίκοις(Adj)(D), ἀλλʼ(Kon) οἶδεν(Per)(Akt) ὅτι(Kon) πλὴν(Prp) εἴ(Kon) τις(Pr)(N)
+(356) not is|angry to the|unjust, but knows that except if someone
+(357) θείᾳ(Adj)(D) φύσει(D) δυσχεραίνων(Prä)(Akt)(N) τὸ(Art)(A) ἀδικεῖν(Prä)(Akt)(Inf) ἢ(Kon) ἐπιστήμην(A) λαβὼν(AorS)(Akt)(N) ἀπέχεται(Prä)(M/P) [366d]
+(357) by|divine nature being|displeased the doing|wrong or knowledge having|taken abstains [366d]
+(358) αὐτοῦ(Pr)(G), τῶν(Art)(G) γε(Pt) ἄλλων(Adj)(G) οὐδεὶς(Pr)(N) ἑκὼν(Adj)(N) δίκαιος(Adj)(N), ἀλλʼ(Kon) ὑπὸ(Prp) ἀνανδρίας(G)
+(358) of|it, of at|least others no|one willing just, but by unmanliness
+(359) ἢ(Kon) γήρως(G) ἤ(Kon) τινος(Pr)(G) ἄλλης(Adj)(G) ἀσθενείας(G) ψέγει(Prä)(Akt) τὸ(Art)(A) ἀδικεῖν(Prä)(Akt)(Inf), ἀδυνατῶν(Prä)(Akt)(N)
+(359) or of|old|age or of|some other weakness blames the doing|wrong, being|unable
+(360) αὐτὸ(Pr)(A) δρᾶν(Prä)(Akt)(Inf). ὡς(Kon) δέ(Kon), δῆλον(Adj)(N)· ὁ(Art)(N) γὰρ(Pt) πρῶτος(Adj)(N) τῶν(Art)(G) τοιούτων(Adj)(G)
+(360) it to|do. as but, clear· the for first of such
+(361) εἰς(Prp) δύναμιν(A) ἐλθὼν(AorS)(Akt)(N) πρῶτος(Adj)(N) ἀδικεῖ(Prä)(Akt), καθʼ(Prp) ὅσον(Pr)(A) ἂν(Pt) οἷός(Adj)(N) τʼ(Pt)
+(361) into power having|come first does|wrong, insofar|as as|much|as ever able and
+(362) ᾖ(Prä)(Akt)(Knj). καὶ(Kon) τούτων(Pr)(G) ἁπάντων(Adj)(G) οὐδὲν(Pr)(N) ἄλλο(Adj)(N) αἴτιον(Adj)(N) ἢ(Kon) ἐκεῖνο(Pr)(N), ὅθενπερ(Adv)
+(362) may|be. and of|these all nothing other cause than that, whence|indeed
+(363) ἅπας(Adj)(N) ὁ(Art)(N) λόγος(N) οὗτος(Pr)(N) ὥρμησεν(AorS)(Akt) καὶ(Kon) τῷδε(Pr)(D) καὶ(Kon) ἐμοὶ(Pr)(D) πρὸς(Prp)
+(363) whole the argument this started and to|this and to|me toward
+(364) σέ(Pr)(A), ὦ(ij) Σώκρατες(V), εἰπεῖν(Aor)(Akt)(Inf), ὅτι(Kon) ὦ(ij) θαυμάσιε(Adj)(V), πάντων(Adj)(G) ὑμῶν(Pr)(G), [366e]
+(364) you, O Socrates, to|say, that O marvellous|one, of|all of|you, [366e]
+(365) ὅσοι(Pr)(N) ἐπαινέται(N) φατὲ(Prä)(Akt) δικαιοσύνης(G) εἶναι(Prä)(Inf)(Akt), ἀπὸ(Prp) τῶν(Art)(G) ἐξ(Prp) ἀρχῆς(G) ἡρώων(G)
+(365) whoever praisers you|say of|justice to|be, from the from the|beginning of|heroes
+(366) ἀρξάμενοι(Aor)(Med)(N), ὅσων(Pr)(G) λόγοι(N) λελειμμένοι(Per)(M/P)(N), μέχρι(Prp) τῶν(Art)(G) νῦν(Adv) ἀνθρώπων(G) οὐδεὶς(Pr)(N) πώποτε(Adv)
+(366) having|begun, of|as|many|as accounts left|behind, up|to the now of|men no|one ever
+(367) ἔψεξεν(Aor)(Akt) ἀδικίαν(A) οὐδʼ(Kon) ἐπῄνεσεν(Aor)(Akt) δικαιοσύνην(A) ἄλλως(Adv) ἢ(Kon) δόξας(A) τε(Pt) καὶ(Kon)
+(367) blamed injustice nor praised justice otherwise than reputations and also
+(368) τιμὰς(A) καὶ(Kon) δωρεὰς(A) τὰς(Art)(A) ἀπʼ(Prp) αὐτῶν(Pr)(G) γιγνομένας(Prä)(M/P)(A)· αὐτὸ(Pr)(A) δʼ(Kon) ἑκάτερον(Adj)(A)
+(368) honors and gifts the from them becoming· itself but each|of|the|two
+(369) τῇ(Art)(D) αὑτοῦ(Pr)(G) δυνάμει(D) τί(Pr)(N) δρᾷ(Prä)(Akt), τῇ(Art)(D) τοῦ(Art)(G) ἔχοντος(Prä)(Akt)(G) ψυχῇ(D) ἐνόν(Prä)(Akt)(N),
+(369) by|the of|him|self power what does, by|the of the|having soul being,
+(370) καὶ(Kon) λανθάνον(Prä)(Akt)(N) θεούς(A) τε(Pt) καὶ(Kon) ἀνθρώπους(A), οὐδεὶς(Pr)(N) πώποτε(Adv) οὔτʼ(Kon) ἐν(Prp)
+(370) and escaping|notice gods and also men, no|one ever nor in
+(371) ποιήσει(D) οὔτʼ(Kon) ἐν(Prp) ἰδίοις(Adj)(D) λόγοις(D) ἐπεξῆλθεν(AorS)(Akt) ἱκανῶς(Adv) τῷ(Art)(D) λόγῳ(D) ὡς(Kon)
+(371) poetry nor in private speeches set|forth sufficiently by|the argument that
+(372) τὸ(Art)(N) μὲν(Pt) μέγιστον(Adj)(N) κακῶν(G) ὅσα(Pr)(N) ἴσχει(Prä)(Akt) ψυχὴ(N) ἐν(Prp) αὑτῇ(Pr)(D), δικαιοσύνη(N)
+(372) the indeed greatest of|evils as|many|as it|holds soul in her|self, justice
+(373) δὲ(Kon) μέγιστον(Adj)(N) ἀγαθόν(Adj)(N).
+(373) but greatest good.
+== St. 367a ==
+(375) [Σωκράτης:] εἰ(Kon) γὰρ(Pt) οὕτως(Adv) ἐλέγετο(Imp)(M/P) ἐξ(Prp) ἀρχῆς(G) ὑπὸ(Prp) πάντων(Adj)(G) ὑμῶν(Pr)(G)
+(375) [Σωκράτης:] if for thus was|being|said out|of the|beginning by all of|you
+(376) καὶ(Kon) ἐκ(Prp) νέων(Adj)(G) ἡμᾶς(Pr)(A) ἐπείθετε(Imp)(Akt), οὐκ(Pt) ἂν(Pt) ἀλλήλους(Pr)(A) ἐφυλάττομεν(Imp)(Akt) μὴ(Pt)
+(376) and from youth us you|were|persuading, not would each|other we|were|guarding not
+(377) ἀδικεῖν(Prä)(Akt)(Inf), ἀλλʼ(Kon) αὐτὸς(Pr)(N) αὑτοῦ(Pr)(G) ἦν(Imp)(Akt) ἕκαστος(Pr)(N) ἄριστος(Adj)(N) φύλαξ(N), δεδιὼς(Per)(Akt)(N) μὴ(Pt)
+(377) to|do|wrong, but him|self of|him|self was each best guardian, having|feared lest
+(378) ἀδικῶν(Prä)(Akt)(N) τῷ(Art)(D) μεγίστῳ(Adj)(Sup)(D) κακῷ(D) σύνοικος(Adj)(N) ᾖ(Prä)(Akt)(Knj). ταῦτα(Pr)(A), ὦ(ij) Σώκρατες(V), ἴσως(Adv) δὲ(Kon)
+(378) doing|wrong with|the greatest evil house|mate may|be. these, O Socrates, perhaps but
+(379) καὶ(Kon) ἔτι(Adv) τούτων(Pr)(G) πλείω(Adj)(Kmp)(A) Θρασύμαχός(N) τε(Pt) καὶ(Kon) ἄλλος(Adj)(N) πού(Pt) τις(Pr)(N)
+(379) and yet of|these more Thrasymachus and also another I|suppose someone
+(380) ὑπὲρ(Prp) δικαιοσύνης(G) τε(Pt) καὶ(Kon) ἀδικίας(G) λέγοιεν(Prä)(Akt)(Op) ἄν(Pt), μεταστρέφοντες(Prä)(Akt)(N) αὐτοῖν(Pr)(Du)(G) τὴν(Art)(A)
+(380) on|behalf|of justice and also of|injustice would|say indeed, turning of|both the
+(381) δύναμιν(A) φορτικῶς(Adv), ὥς(Kon) γέ(Pt) μοι(Pr)(D) δοκεῖ(Prä)(Akt). ἀλλʼ(Kon) ἐγώ(Pr)(N), οὐδὲν(Pr)(A) γάρ(Pt)
+(381) power coarsely, as indeed to|me it|seems. but I, nothing for
+(382) σε(Pr)(A) δέομαι(Prä)(M/P) [367b] ἀποκρύπτεσθαι(Prä)(M/P)(Inf), σοῦ(Pr)(G) ἐπιθυμῶν(Prä)(Akt)(N) ἀκοῦσαι(Aor)(Akt)(Inf) τἀναντία(A), ὡς(Kon) δύναμαι(Prä)(M/P)
+(382) you I|beg [367b] to|hide|yourself, of|you desiring to|hear the|opposite|things, as I|am|able
+(383) μάλιστα(Adv)(Sup) κατατείνας(Aor)(Akt)(N) λέγω(Prä)(Akt). μὴ(Pt) οὖν(Pt) ἡμῖν(Pr)(D) μόνον(Adv) ἐνδείξῃ(Aor)(Akt)(Knj) τῷ(Art)(D) λόγῳ(D)
+(383) most having|stretched|out I|say. not then to|us only you|may|show by|the argument
+(384) ὅτι(Kon) δικαιοσύνη(N) ἀδικίας(G) κρεῖττον(Adj)(N), ἀλλὰ(Kon) τί(Pr)(N) ποιοῦσα(Prä)(Akt)(N) ἑκατέρα(Adj)(N) τὸν(Art)(A) ἔχοντα(Prä)(Akt)(A)
+(384) that justice of|injustice stronger, but what doing each|of|the|two the having
+(385) αὐτὴ(Pr)(N) διʼ(Prp) αὑτὴν(Pr)(A) ἡ(Art)(N) μὲν(Pt) κακόν(N), ἡ(Art)(N) δὲ(Kon) ἀγαθόν(Adj)(N) ἐστιν(Prä)(Akt)·
+(385) herself by her|self the indeed evil, the but good is·
+(386) τὰς(Art)(A) δὲ(Kon) δόξας(A) ἀφαίρει(Prä)(Akt), ὥσπερ(Kon) Γλαύκων(N) διεκελεύσατο(Aor)(Med). εἰ(Kon) γὰρ(Pt) μὴ(Pt)
+(386) the but reputations remove, just|as Glaucon ordered. if for not
+(387) ἀφαιρήσεις(Fu)(Akt) ἑκατέρωθεν(Adv) τὰς(Art)(A) ἀληθεῖς(Adj)(A), τὰς(Art)(A) δὲ(Kon) ψευδεῖς(Adj)(A) προσθήσεις(Fu)(Akt), οὐ(Pt) τὸ(Art)(N)
+(387) you|will|remove from|both|sides the true, the but false you|will|add, not the
+(388) δίκαιον(Adj)(A) φήσομεν(Fu)(Akt) ἐπαινεῖν(Prä)(Akt)(Inf) σε(Pr)(A) ἀλλὰ(Kon) τὸ(Art)(N) δοκεῖν(Prä)(Akt)(Inf), οὐδὲ(Kon) τὸ(Art)(N) ἄδικον(Adj)(N)
+(388) just we|shall|say to|praise you but the to|seem, nor the unjust
+(389) εἶναι(Prä)(Inf)(Akt) ψέγειν(Prä)(Akt)(Inf) [367c] ἀλλὰ(Kon) τὸ(Art)(N) δοκεῖν(Prä)(Akt)(Inf), καὶ(Kon) παρακελεύεσθαι(Prä)(M/P)(Inf) ἄδικον(Adj)(A) ὄντα(Prä)(Akt)(A)
+(389) to|be to|blame [367c] but the to|seem, and to|exhort unjust being
+(390) λανθάνειν(Prä)(Akt)(Inf), καὶ(Kon) ὁμολογεῖν(Prä)(Akt)(Inf) Θρασυμάχῳ(D) ὅτι(Kon) τὸ(Art)(N) μὲν(Pt) δίκαιον(Adj)(N) ἀλλότριον(Adj)(N) ἀγαθόν(Adj)(N),
+(390) to|escape|notice, and to|agree to|Thrasymachus that the indeed just anothers good,
+(391) συμφέρον(Adj)(N) τοῦ(Art)(G) κρείττονος(Adj)(G)(Kmp), τὸ(Art)(N) δὲ(Kon) ἄδικον(Adj)(N) αὑτῷ(Pr)(D) μὲν(Pt) συμφέρον(Adj)(N) καὶ(Kon)
+(391) advantage of the|stronger, the but unjust to|him|self indeed advantage and
+(392) λυσιτελοῦν(Adj)(N), τῷ(Art)(D) δὲ(Kon) ἥττονι(Adj)(D)(Kmp) ἀσύμφορον(Adj)(N). ἐπειδὴ(Kon) οὖν(Pt) ὡμολόγησας(Aor)(Akt) τῶν(Art)(G) μεγίστων(Adj)(G)(Sup)
+(392) profitable, to|the but weaker unprofitable. since then you|agreed of|the greatest
+(393) ἀγαθῶν(Adj)(G) εἶναι(Prä)(Inf)(Akt) δικαιοσύνην(A), ἃ(Pr)(A) τῶν(Art)(G) τε(Pt) ἀποβαινόντων(Prä)(Akt)(G) ἀπʼ(Prp) αὐτῶν(Pr)(G) ἕνεκα(Prp)
+(393) of|good|things to|be justice, which of and resulting from them for|the|sake|of
+(394) ἄξια(Adj)(A) κεκτῆσθαι(Per)(Med)(Inf), πολὺ(Adv) δὲ(Kon) μᾶλλον(Adv)(Kmp) αὐτὰ(Pr)(A) αὑτῶν(Pr)(G), οἷον(Kon) ὁρᾶν(Prä)(Akt)(Inf), [367d]
+(394) worthy|things to|have|acquired, much but more themselves of|themselves, such|as to|see, [367d]
+(395) ἀκούειν(Prä)(Akt)(Inf), φρονεῖν(Prä)(Akt)(Inf), καὶ(Kon) ὑγιαίνειν(Prä)(Akt)(Inf) δή(Pt), καὶ(Kon) ὅσʼ(Pr)(A) ἄλλα(Adj)(A) ἀγαθὰ(Adj)(A) γόνιμα(Adj)(A)
+(395) to|hear, to|think, and to|be|healthy indeed, and as|many|as other good|things fruitful
+(396) τῇ(Art)(D) αὑτῶν(Pr)(G) φύσει(D) ἀλλʼ(Kon) οὐ(Pt) δόξῃ(D) ἐστίν(Prä)(Akt), τοῦτʼ(Pr)(N) οὖν(Pt) αὐτὸ(Pr)(A)
+(396) by|the of|themselves nature but not opinion is, this then itself
+(397) ἐπαίνεσον(Aor)(Akt)(Imv) δικαιοσύνης(G), ὃ(Pr)(N) αὐτὴ(Pr)(N) διʼ(Prp) αὑτὴν(Pr)(A) τὸν(Art)(A) ἔχοντα(Prä)(Akt)(A) ὀνίνησιν(Prä)(Akt) καὶ(Kon)
+(397) praise of|justice, which she|herself by her|self the having benefits and
+(398) ἀδικία(N) βλάπτει(Prä)(Akt), μισθοὺς(A) δὲ(Kon) καὶ(Kon) δόξας(A) πάρες(Aor)(Akt)(Imv) ἄλλοις(Adj)(D) ἐπαινεῖν(Prä)(Akt)(Inf)· ὡς(Kon)
+(398) injustice harms, rewards but and reputations hand|over to|others to|praise· as
+(399) ἐγὼ(Pr)(N) τῶν(Art)(G) μὲν(Pt) ἄλλων(Adj)(G) ἀποδεχοίμην(Prä)(Med)(Op) ἂν(Pt) οὕτως(Adv) ἐπαινούντων(Prä)(Akt)(G) δικαιοσύνην(A) καὶ(Kon)
+(399) I of indeed others I|would|accept indeed thus praising justice and
+(400) ψεγόντων(Prä)(Akt)(G) ἀδικίαν(A), δόξας(A) τε(Pt) περὶ(Prp) αὐτῶν(Pr)(G) καὶ(Kon) μισθοὺς(A) ἐγκωμιαζόντων(Prä)(Akt)(G) καὶ(Kon)
+(400) blaming injustice, reputations and about them and rewards extolling and
+(401) λοιδορούντων(Prä)(Akt)(G), σοῦ(Pr)(G) δὲ(Kon) οὐκ(Pt) ἄν(Pt), εἰ(Kon) μὴ(Pt) σὺ(Pr)(N) κελεύοις(Prä)(Akt)(Knj), διότι(Kon)
+(401) reviling, of|you but not indeed, if not you may|order, because
+(402) πάντα(Adj)(A) τὸν(Art)(A) βίον(A) οὐδὲν(Pr)(A) [367e] ἄλλο(Adj)(A) σκοπῶν(Prä)(Akt)(N) διελήλυθας(Per)(Akt) ἢ(Kon) τοῦτο(Pr)(N).
+(402) whole the life nothing [367e] else considering you|have|passed|through than this.
+(403) μὴ(Pt) οὖν(Pt) ἡμῖν(Pr)(D) ἐνδείξῃ(Aor)(Akt)(Knj) μόνον(Adv) τῷ(Art)(D) λόγῳ(D) ὅτι(Kon) δικαιοσύνη(N) ἀδικίας(G)
+(403) not then to|us you|may|show only by|the argument that justice of|injustice
+(404) κρεῖττον(Adj)(N), ἀλλὰ(Kon) καὶ(Kon) τί(Pr)(N) ποιοῦσα(Prä)(Akt)(N) ἑκατέρα(Adj)(N) τὸν(Art)(A) ἔχοντα(Prä)(Akt)(A) αὐτὴ(Pr)(N) διʼ(Prp)
+(404) stronger, but also what doing each|of|the|two the having she|herself by
+(405) αὑτήν(Pr)(A), ἐάντε(Kon) λανθάνῃ(Prä)(Akt)(Knj) ἐάντε(Kon) μὴ(Pt) θεούς(A) τε(Pt) καὶ(Kon) ἀνθρώπους(A), ἡ(Art)(N)
+(405) her|self, whether may|escape|notice whether not gods and also men, the
+(406) μὲν(Pt) ἀγαθόν(Adj)(N), ἡ(Art)(N) δὲ(Kon) κακόν(Adj)(N) ἐστι(Prä)(Akt).
+(406) indeed good, the but bad is.
+== St. 368a ==
+(408) [Σωκράτης:] καὶ(Kon) ἐγὼ(Pr)(N) ἀκούσας(AorS)(Akt)(N), ἀεὶ(Adv) μὲν(Pt) δὴ(Pt) τὴν(Art)(A) φύσιν(A) τοῦ(Art)(G)
+(408) [Σωκράτης:] and I having|heard, always indeed indeed the nature of
+(409) τε(Pt) Γλαύκωνος(G) καὶ(Kon) τοῦ(Art)(G) Ἀδειμάντου(G) ἠγάμην(Imp)(M/P), ἀτὰρ(Kon) οὖν(Pt) καὶ(Kon) τότε(Adv)
+(409) and of|Glaucon and of Adeimantus I|admired, but then and then
+(410) πάνυ(Adv) γε(Pt) ἥσθην(Aor)(M/P) καὶ(Kon) εἶπον(Aor)(Akt)· οὐ(Pt) κακῶς(Adv) εἰς(Prp) ὑμᾶς(Pr)(A), ὦ(ij)
+(410) very indeed I|was|pleased and I|said· not badly into you, O
+(411) παῖδες(N) ἐκείνου(Pr)(G) τοῦ(Art)(G) ἀνδρός(G), τὴν(Art)(A) ἀρχὴν(A) τῶν(Art)(G) ἐλεγείων(G) ἐποίησεν(Aor)(Akt) ὁ(Art)(N)
+(411) children of|that of man, the beginning of elegies made the
+(412) Γλαύκωνος(G) ἐραστής(N), εὐδοκιμήσαντας(Aor)(Akt)(A) περὶ(Prp) τὴν(Art)(A) Μεγαροῖ(Adj)(D) μάχην(A), εἰπών(Aor)(Akt)—
+(412) of|Glaucon lover, having|won|distinction about the at|Megara battle, having|said—
+(413) [Zitat Anfang]
+(414) παῖδες(N) Ἀρίστωνος(G), κλεινοῦ(Adj)(G) θεῖον(Adj)(N) γένος(N) ἀνδρός(G)·
+(414) children of|Ariston, famous divine lineage of|man·
+(415) [Zitat Ende]
+(416) τοῦτό(Pr)(N) μοι(Pr)(D), ὦ(ij) φίλοι(Adj)(V), εὖ(Adv) δοκεῖ(Prä)(Akt) ἔχειν(Prä)(Inf)(Akt)· πάνυ(Adv) γὰρ(Pt) θεῖον(Adj)(N)
+(416) this to|me, O friends, well seems to|have· very for divine
+(417) πεπόνθατε(Per)(Akt), εἰ(Kon) μὴ(Pt) πέπεισθε(Per)(M/P) ἀδικίαν(A) δικαιοσύνης(G) ἄμεινον(Adj)(Kmp)(N) εἶναι(Prä)(Inf)(Akt), οὕτω(Adv) δυνάμενοι(Prä)(M/P)(N)
+(417) you|have|suffered, if not you|are|convinced injustice of|justice better to|be, thus being|able
+(418) εἰπεῖν(Aor)(Inf)(Akt) ὑπὲρ(Prp) αὐτοῦ(Pr)(G). δοκεῖτε(Prä)(Akt) δή(Pt) μοι(Pr)(D) ὡς(Kon) ἀληθῶς(Adv) [368b] οὐ(Pt)
+(418) to|speak on|behalf|of of|him. you|seem indeed to|me as truly [368b] not
+(419) πεπεῖσθαι(Per)(M/P)(Inf)— τεκμαίρομαι(Prä)(M/P) δὲ(Kon) ἐκ(Prp) τοῦ(Art)(G) ἄλλου(Adj)(G) τοῦ(Art)(G) ὑμετέρου(Adj)(G) τρόπου(G), ἐπεὶ(Kon) κατά(Prp)
+(419) to|be|convinced— I|infer but from the other the your manner, since according|to
+(420) γε(Pt) αὐτοὺς(Pr)(A) τοὺς(Art)(A) λόγους(A) ἠπίστουν(Imp)(Akt) ἂν(Pt) ὑμῖν(Pr)(D)— ὅσῳ(Pr)(D) δὲ(Kon) μᾶλλον(Adv)(Kmp) πιστεύω(Prä)(Akt),
+(420) indeed themselves the arguments I|was|distrusting would you|pl— by|how|much but more I|trust,
+(421) τοσούτῳ(Pr)(D) μᾶλλον(Adv)(Kmp) ἀπορῶ(Prä)(Akt) ὅτι(Kon) χρήσωμαι(Aor)(Med)(Knj). οὔτε(Kon) γὰρ(Pt) ὅπως(Kon) βοηθῶ(Prä)(Akt) ἔχω(Prä)(Akt)·
+(421) by|so|much more I|am|at|a|loss what I|should|use. neither for how I|help I|have·
+(422) δοκῶ(Prä)(Akt) γάρ(Pt) μοι(Pr)(D) ἀδύνατος(Adj)(N) εἶναι(Prä)(Inf)(Akt)— σημεῖον(N) δέ(Kon) μοι(Pr)(D), ὅτι(Kon) ἃ(Pr)(A) πρὸς(Prp)
+(422) I|seem for to|me unable to|be— sign but to|me, that the|things|which toward
+(423) Θρασύμαχον(A) λέγων(Prä)(Akt)(N) ᾤμην(Imp)(M/P) ἀποφαίνειν(Prä)(Akt)(Inf) ὡς(Kon) ἄμεινον(Adj)(Kmp)(N) δικαιοσύνη(N) ἀδικίας(G), οὐκ(Pt) ἀπεδέξασθέ(Aor)(Med)
+(423) Thrasymachus speaking I|thought to|show that better justice of|injustice, not you|accepted
+(424) μου(Pr)(G)— οὔτʼ(Kon) αὖ(Pt) ὅπως(Kon) μὴ(Pt) βοηθήσω(Aor)(Akt)(Knj) ἔχω(Prä)(Akt)· δέδοικα(Per)(Akt) γὰρ(Pt) μὴ(Pt) οὐδʼ(Kon)
+(424) of|me— nor again how not I|should|help I|have· I|fear for not nor|even
+(425) ὅσιον(Adj)(N) ᾖ(Prä)(Akt)(Knj) παραγενόμενον(Aor)(Med)(A) δικαιοσύνῃ(D) κακηγορουμένῃ(Prä)(M/P)(D) ἀπαγορεύειν(Prä)(Akt)(Inf) [368c] καὶ(Kon) μὴ(Pt) βοηθεῖν(Prä)(Akt)(Inf)
+(425) holy it|may|be having|come|near to|justice being|spoken|ill|of to|give|up [368c] and not to|help
+(426) ἔτι(Adv) ἐμπνέοντα(Prä)(Akt)(A) καὶ(Kon) δυνάμενον(Prä)(M/P)(A) φθέγγεσθαι(Prä)(M/P)(Inf). κράτιστον(Adj)(Sup)(N) οὖν(Pt) οὕτως(Adv) ὅπως(Kon) δύναμαι(Prä)(M/P)
+(426) still breathing and being|able to|utter. best then thus how I|am|able
+(427) ἐπικουρεῖν(Prä)(Akt)(Inf) αὐτῇ(Pr)(D). ὅ(Pr)(N) τε(Pt) οὖν(Pt) Γλαύκων(N) καὶ(Kon) οἱ(Art)(N) ἄλλοι(Adj)(N) ἐδέοντο(Imp)(M/P)
+(427) to|assist to|her. the|fact and then Glaucon and the others were|requesting
+(428) παντὶ(Adj)(D) τρόπῳ(D) βοηθῆσαι(Aor)(Akt)(Inf) καὶ(Kon) μὴ(Pt) ἀνεῖναι(Aor)(Akt)(Inf) τὸν(Art)(A) λόγον(A), ἀλλὰ(Kon) διερευνήσασθαι(Aor)(Med)(Inf)
+(428) in|every way to|help and not to|let|go the argument, but to|search|thoroughly
+(429) τί(Pr)(N) τέ(Pt) ἐστιν(Prä)(Akt) ἑκάτερον(Adj)(N) καὶ(Kon) περὶ(Prp) τῆς(Art)(G) ὠφελίας(G) αὐτοῖν(Pr)(Du)(G) τἀληθὲς(Adj)(N)
+(429) what and is each|of|the|two and about the benefit of|the|two the|true
+(430) ποτέρως(Adv) ἔχει(Prä)(Akt). εἶπον(Aor)(Akt) οὖν(Pt) ὅπερ(Pr)(N) ἐμοὶ(Pr)(D) ἔδοξεν(Aor)(Akt), ὅτι(Kon) τὸ(Art)(N) ζήτημα(N)
+(430) in|which|of|the|two|ways it|holds. I|said then that|very|thing|which to|me seemed, that the inquiry
+(431) ᾧ(Pr)(D) ἐπιχειροῦμεν(Prä)(Akt) οὐ(Pt) φαῦλον(Adj)(N) ἀλλʼ(Kon) ὀξὺ(Adj)(N) βλέποντος(Prä)(Akt)(G), ὡς(Kon) ἐμοὶ(Pr)(D) [368d]
+(431) with|which we|attempt not trivial but sharp of|one|seeing, as to|me [368d]
+(432) φαίνεται(Prä)(M/P). ἐπειδὴ(Kon) οὖν(Pt) ἡμεῖς(Pr)(N) οὐ(Pt) δεινοί(Adj)(N), δοκῶ(Prä)(Akt) μοι(Pr)(D), ἦν(Imp)(Akt) δʼ(Kon)
+(432) it|appears. since then we not clever, I|seem to|me, was but
+(433) ἐγώ(Pr)(N), τοιαύτην(Adj)(A) ποιήσασθαι(Aor)(Med)(Inf) ζήτησιν(A) αὐτοῦ(Pr)(G), οἵανπερ(Pr)(A) ἂν(Pt) εἰ(Kon) προσέταξέ(Aor)(Akt) τις(Pr)(N)
+(433) I, such to|make inquiry of|it, such|as|indeed would if ordered someone
+(434) γράμματα(A) σμικρὰ(Adj)(A) πόρρωθεν(Adv) ἀναγνῶναι(Aor)(Akt)(Inf) μὴ(Pt) πάνυ(Adv) ὀξὺ(Adj)(A) βλέπουσιν(Prä)(Akt)(D), ἔπειτά(Adv) τις(Pr)(N)
+(434) letters small from|afar to|read not very sharp seeing|ones, then someone
+(435) ἐνενόησεν(Aor)(Akt), ὅτι(Kon) τὰ(Art)(N) αὐτὰ(Pr)(N) γράμματα(N) ἔστι(Prä)(Akt) που(Pt) καὶ(Kon) ἄλλοθι(Adv) μείζω(Adj)(Kmp)(A)
+(435) perceived, that the same letters is somewhere and elsewhere larger
+(436) τε(Pt) καὶ(Kon) ἐν(Prp) μείζονι(Adj)(Kmp)(D), ἕρμαιον(Adj)(N) ἂν(Pt) ἐφάνη(Aor)(Pas) οἶμαι(Prä)(Med) ἐκεῖνα(Pr)(A) πρῶτον(Adj)(Sup)(A)
+(436) and also in bigger, windfall would appeared I|think those first
+(437) ἀναγνόντας(AorS)(Akt)(A) οὕτως(Adv) ἐπισκοπεῖν(Prä)(Akt)(Inf) τὰ(Art)(A) ἐλάττω(Adj)(Kmp)(A), εἰ(Kon) τὰ(Art)(N) αὐτὰ(Pr)(N) ὄντα(Prä)(Akt)(N) τυγχάνει(Prä)(Akt).
+(437) having|read thus to|examine the smaller, if the same being happens.
+(438) πάνυ(Adv) μὲν(Pt) οὖν(Pt), ἔφη(Imp)(Akt) ὁ(Art)(N) Ἀδείμαντος(N)· ἀλλὰ(Kon) τί(Pr)(N) τοιοῦτον(Adj)(N), ὦ(ij)
+(438) very indeed then, he|said the Adeimantus· but what such, O
+(439) Σώκρατες(V), [368e] ἐν(Prp) τῇ(Art)(D) περὶ(Prp) τὸ(Art)(A) δίκαιον(Adj)(A) ζητήσει(D) καθορᾷς(Prä)(Akt); ἐγώ(Pr)(N)
+(439) Socrates, [368e] in the about the just inquiry you|see|clearly; I
+(440) σοι(Pr)(D), ἔφην(Imp)(Akt), ἐρῶ(Fu)(Akt). δικαιοσύνη(N), φαμέν(Prä)(Akt), ἔστι(Prä)(Akt) μὲν(Pt) ἀνδρὸς(G) ἑνός(Adj)(G), ἔστι(Prä)(Akt)
+(440) to|you, I|said, I|will|say. justice, we|say, is indeed of|a|man of|one, is
+(441) δέ(Kon) που(Pt) καὶ(Kon) ὅλης(Adj)(G) πόλεως(G); πάνυ(Adv) γε(Pt), ἦ(Imp)(Akt) δʼ(Kon) ὅς(Pr)(N).
+(441) but I|suppose also of|whole of|city; very indeed, said but he.
+(442) οὐκοῦν(Pt) μεῖζον(Adj)(Kmp)(N) πόλις(N) ἑνὸς(Adj)(G) ἀνδρός(G); μεῖζον(Adj)(Kmp)(N), ἔφη(Imp)(Akt).
+(442) well|then greater city of|one of|man; greater, he|said.
+== St. 369a ==
+(444) [Σωκράτης:] ἴσως(Adv) τοίνυν(Pt) πλείων(Adj)(Kmp)(N) ἂν(Pt) δικαιοσύνη(N) ἐν(Prp) τῷ(Art)(D) μείζονι(Adj)(Kmp)(D) ἐνείη(Prä)(Akt)(Op)
+(444) [Σωκράτης:] perhaps then more would justice in the greater would|be
+(445) καὶ(Kon) ῥᾴων(Adj)(Kmp)(N) καταμαθεῖν(Aor)(Akt)(Inf). εἰ(Kon) οὖν(Pt) βούλεσθε(Prä)(M/P), πρῶτον(Adv) ἐν(Prp) ταῖς(Art)(D) πόλεσι(D)
+(445) and easier to|learn|thoroughly. if then you|wish, first in the cities
+(446) ζητήσωμεν(Aor)(Akt)(Knj) ποῖόν(Adj)(A) τί(Pr)(A) ἐστιν(Prä)(Akt)· ἔπειτα(Adv) οὕτως(Adv) ἐπισκεψώμεθα(Aor)(M/P)(Knj) καὶ(Kon) ἐν(Prp) ἑνὶ(Adj)(D)
+(446) let|us|seek what|kind something it|is· then thus let|us|examine also in one
+(447) ἑκάστῳ(Adj)(D), τὴν(Art)(A) τοῦ(Art)(G) μείζονος(Adj)(Kmp)(G) ὁμοιότητα(A) ἐν(Prp) τῇ(Art)(D) τοῦ(Art)(G) ἐλάττονος(Adj)(Kmp)(G) ἰδέᾳ(D)
+(447) each, the of|the greater likeness in the of|the lesser form
+(448) ἐπισκοποῦντες(Prä)(Akt)(N). ἀλλά(Kon) μοι(Pr)(D) δοκεῖς(Prä)(Akt), ἔφη(Imp)(Akt), καλῶς(Adv) λέγειν(Prä)(Akt)(Inf). ἆρʼ(Pt) οὖν(Pt), ἦν(Imp)(Akt)
+(448) examining. but to|me you|seem, he|said, well to|speak. then then, was
+(449) δʼ(Kon) ἐγώ(Pr)(N), εἰ(Kon) γιγνομένην(Prä)(M/P)(A) πόλιν(A) θεασαίμεθα(Aor)(Med)(Op) λόγῳ(D), καὶ(Kon) τὴν(Art)(A) δικαιοσύνην(A)
+(449) but I, if coming|to|be city we|might|observe by|account, and the justice
+(450) αὐτῆς(Pr)(G) ἴδοιμεν(Aor)(Akt)(Op) ἂν(Pt) γιγνομένην(Prä)(M/P)(A) καὶ(Kon) τὴν(Art)(A) ἀδικίαν(A); τάχʼ(Adv) ἄν(Pt), ἦ(Imp)(Akt)
+(450) of|her we|might|see would being|born and the injustice; perhaps would, said
+(451) δʼ(Kon) ὅς(Pr)(N). οὐκοῦν(Pt) γενομένου(Aor)(Med)(G) αὐτοῦ(Pr)(G) ἐλπὶς(N) εὐπετέστερον(Adj)(Kmp)(N) ἰδεῖν(Aor)(Akt)(Inf) ὃ(Pr)(A) ζητοῦμεν(Prä)(Akt);
+(451) but he. well|then of|it|having|come|to|be of|it hope easier to|see which we|seek;
+(452) πολύ(Adv) [369b] γε(Pt). δοκεῖ(Prä)(Akt) οὖν(Pt) χρῆναι(Prä)(Inf)(Akt) ἐπιχειρῆσαι(Aor)(Akt)(Inf) περαίνειν(Prä)(Akt)(Inf); οἶμαι(Prä)(Med) μὲν(Pt)
+(452) much [369b] indeed. it|seems then to|be|necessary to|attempt to|complete; I|think indeed
+(453) γὰρ(Pt) οὐκ(Pt) ὀλίγον(Adj)(A) ἔργον(A) αὐτὸ(Pr)(A) εἶναι(Prä)(Inf)(Akt)· σκοπεῖτε(Prä)(Akt)(Imv) οὖν(Pt). ἔσκεπται(Per)(M/P), ἔφη(Imp)(Akt)
+(453) for not small task it to|be· consider then. it|has|been|considered, he|said
+(454) ὁ(Art)(N) Ἀδείμαντος(N)· ἀλλὰ(Kon) μὴ(Pt) ἄλλως(Adv) ποίει(Prä)(Akt)(Imv). γίγνεται(Prä)(M/P) τοίνυν(Pt), ἦν(Imp)(Akt) δʼ(Kon)
+(454) the Adeimantus· but not otherwise do. it|becomes then, was but
+(455) ἐγώ(Pr)(N), πόλις(N), ὡς(Kon) ἐγᾦμαι(Prä)(Med), ἐπειδὴ(Kon) τυγχάνει(Prä)(Akt) ἡμῶν(Pr)(G) ἕκαστος(Pr)(N) οὐκ(Pt) αὐτάρκης(Adj)(N),
+(455) I, city, as I|think, since happens of|us each not self|sufficient,
+(456) ἀλλὰ(Kon) πολλῶν(Adj)(G) ὢν(Prä)(Akt)(N) ἐνδεής(Adj)(N)· ἢ(Kon) τίνʼ(Pr)(A) οἴει(Prä)(Akt) ἀρχὴν(A) ἄλλην(Adj)(A) πόλιν(A)
+(456) but of|many being in|need· or what do|you|think beginning other city
+(457) οἰκίζειν(Prä)(Akt)(Inf); οὐδεμίαν(Adj)(A), ἦ(Imp)(Akt) δʼ(Kon) ὅς(Pr)(N). οὕτω(Adv) [369c] δὴ(Pt) ἄρα(Pt) παραλαμβάνων(Prä)(Akt)(N)
+(457) to|settle; none, said but he. thus [369c] indeed then taking|along
+(458) ἄλλος(Adj)(N) ἄλλον(Adj)(A), ἐπʼ(Prp) ἄλλου(Adj)(G), τὸν(Art)(A) δʼ(Kon) ἐπʼ(Prp) ἄλλου(Adj)(G) χρείᾳ(D), πολλῶν(Adj)(G)
+(458) another another, upon another, the but upon another by|need, of|many
+(459) δεόμενοι(Prä)(M/P)(N), πολλοὺς(Adj)(A) εἰς(Prp) μίαν(Adj)(A) οἴκησιν(A) ἀγείραντες(AorS)(Akt)(N) κοινωνούς(A) τε(Pt) καὶ(Kon) βοηθούς(A),
+(459) needing, many into one dwelling having|gathered partners and also helpers,
+(460) ταύτῃ(Pr)(D) τῇ(Art)(D) συνοικίᾳ(D) ἐθέμεθα(Aor)(Med) πόλιν(A) ὄνομα(A)· ἦ(Imp)(Akt) γάρ(Pt); πάνυ(Adv) μὲν(Pt)
+(460) in|this the cohabitation we|set city name· is for; very indeed
+(461) οὖν(Pt). μεταδίδωσι(Prä)(Akt) δὴ(Pt) ἄλλος(Adj)(N) ἄλλῳ(Adj)(D), εἴ(Kon) τι(Pr)(A) μεταδίδωσιν(Prä)(Akt), ἢ(Kon) μεταλαμβάνει(Prä)(Akt),
+(461) then. he|shares indeed another to|another, if something he|shares, or he|partakes,
+(462) οἰόμενος(Prä)(Med)(N) αὑτῷ(Pr)(D) ἄμεινον(Adj)(Kmp)(N) εἶναι(Prä)(Inf)(Akt); πάνυ(Adv) γε(Pt). ἴθι(Prä)(Akt)(Imv) δή(Pt), ἦν(Imp)(Akt) δʼ(Kon)
+(462) thinking to|him|self better to|be; very indeed. go then, was but
+(463) ἐγώ(Pr)(N), τῷ(Art)(D) λόγῳ(D) ἐξ(Prp) ἀρχῆς(G) ποιῶμεν(Prä)(Akt)(Knj) πόλιν(A)· ποιήσει(Fu)(Akt) δὲ(Kon) αὐτήν(Pr)(A),
+(463) I, by|the account from beginning let|us|make city· it|will|make but it|her,
+(464) ὡς(Kon) ἔοικεν(Per)(Akt), ἡ(Art)(N) ἡμετέρα(Adj)(N) χρεία(N). πῶς(Adv) δʼ(Kon) οὔ(Pt); ἀλλὰ(Kon) [369d]
+(464) as it|seems, the our need. how but not; but [369d]
+(465) μὴν(Pt) πρώτη(Adj)(N) γε(Pt) καὶ(Kon) μεγίστη(Adj)(Sup)(N) τῶν(Art)(G) χρειῶν(G) ἡ(Art)(N) τῆς(Art)(G) τροφῆς(G)
+(465) indeed first indeed and greatest of|the needs the of|the nourishment
+(466) παρασκευὴ(N) τοῦ(Art)(G) εἶναί(Prä)(Inf)(Akt) τε(Pt) καὶ(Kon) ζῆν(Prä)(Inf)(Akt) ἕνεκα(Prp). παντάπασί(Adv) γε(Pt). δευτέρα(Adj)(N)
+(466) provision of|the to|be and also to|live for|the|sake. wholly indeed. second
+(467) δὴ(Pt) οἰκήσεως(G), τρίτη(Adj)(N) δὲ(Kon) ἐσθῆτος(G) καὶ(Kon) τῶν(Art)(G) τοιούτων(Adj)(G). ἔστι(Prä)(Akt) ταῦτα(Pr)(N).
+(467) indeed of|housing, third but of|clothing and of|the such. it|is these.
+(468) φέρε(Prä)(Akt)(Imv) δή(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), πῶς(Adv) ἡ(Art)(N) πόλις(N) ἀρκέσει(Fu)(Akt) ἐπὶ(Prp)
+(468) bring then, was but I, how the city will|suffice for
+(469) τοσαύτην(Adj)(A) παρασκευήν(A); ἄλλο(Adj)(N) τι(Pr)(N) γεωργὸς(N) μὲν(Pt) εἷς(Adj)(N), ὁ(Art)(N) δὲ(Kon) οἰκοδόμος(N),
+(469) so|great preparation; other thing farmer indeed one, the but builder,
+(470) ἄλλος(Adj)(N) δέ(Kon) τις(Pr)(N) ὑφάντης(N); ἢ(Kon) καὶ(Kon) σκυτοτόμον(A) αὐτόσε(Adv) προσθήσομεν(Fu)(Akt) ἤ(Kon)
+(470) another but someone weaver; or also shoemaker here we|will|add or
+(471) τινʼ(Pr)(A) ἄλλον(Adj)(A) τῶν(Art)(G) περὶ(Prp) τὸ(Art)(A) σῶμα(A) θεραπευτήν(A); πάνυ(Adv) γε(Pt). εἴη(Prä)(Akt)(Op)
+(471) some other of|the about the body attendant; very indeed. it|might|be
+(472) δʼ(Kon) ἂν(Pt) ἥ(Pr)(N) γε(Pt) ἀναγκαιοτάτη(Adj)(Sup)(N) πόλις(N) ἐκ(Prp) τεττάρων(Adj)(G) ἢ(Kon) πέντε(Adj)(N)
+(472) but would which indeed most|necessary city from four or five
+(473) ἀνδρῶν(G). φαίνεται(Prä)(M/P). [369e]
+(473) of|men. it|appears. [369e]
+== St. 370a ==
+(475) [Σωκράτης:] τί(Pr)(N) δὴ(Pt) οὖν(Pt); ἕνα(Adj)(A) ἕκαστον(Adj)(A) τούτων(Pr)(G) δεῖ(Prä)(Akt) τὸ(Art)(A) αὑτοῦ(Pr)(G)
+(475) [Σωκράτης:] what indeed then; one each of|these it|is|necessary the of|him|self
+(476) ἔργον(A) ἅπασι(Adj)(D) κοινὸν(Adj)(A) κατατιθέναι(Prä)(Akt)(Inf), οἷον(Kon) τὸν(Art)(A) γεωργὸν(A) ἕνα(Adj)(A) ὄντα(Prä)(Akt)(A) παρασκευάζειν(Prä)(Akt)(Inf)
+(476) work to|all common to|set|down, such|as the farmer one being to|prepare
+(477) σιτία(A) τέτταρσιν(Adj)(D) καὶ(Kon) τετραπλάσιον(Adj)(A) χρόνον(A) τε(Pt) καὶ(Kon) πόνον(A) ἀναλίσκειν(Prä)(Akt)(Inf) ἐπὶ(Prp)
+(477) provisions for|four and fourfold time and also toil to|spend on
+(478) σίτου(G) παρασκευῇ(D) καὶ(Kon) ἄλλοις(Adj)(D) κοινωνεῖν(Prä)(Akt)(Inf), ἢ(Kon) ἀμελήσαντα(Aor)(Akt)(A) ἑαυτῷ(Pr)(D) μόνον(Adj)(A) τέταρτον(Adj)(A)
+(478) of|grain for|preparation and to|others to|share, or having|neglected for|him|self only fourth
+(479) μέρος(A) ποιεῖν(Prä)(Akt)(Inf) τούτου(Pr)(G) τοῦ(Art)(G) σίτου(G) ἐν(Prp) τετάρτῳ(Adj)(D) μέρει(D) τοῦ(Art)(G) χρόνου(G),
+(479) part to|make of|this of|the the|grain in fourth part of the|time,
+(480) τὰ(Art)(A) δὲ(Pt) τρία(Adj)(A), τὸ(Art)(A) μὲν(Pt) ἐπὶ(Prp) τῇ(Art)(D) τῆς(Art)(G) οἰκίας(G) παρασκευῇ(D)
+(480) the but three, the indeed upon the of|the the|house preparation
+(481) διατρίβειν(Prä)(Akt)(Inf), τὸ(Art)(A) δὲ(Pt) ἱματίου(G), τὸ(Art)(A) δὲ(Pt) ὑποδημάτων(G), καὶ(Kon) μὴ(Pt) ἄλλοις(Adj)(D)
+(481) to|spend, the but of|clothing, the but of|shoes, and not with|others
+(482) κοινωνοῦντα(Prä)(Akt)(A) πράγματα(A) ἔχειν(Prä)(Akt)(Inf), ἀλλʼ(Kon) αὐτὸν(Pr)(A) διʼ(Prp) αὑτὸν(Pr)(A) τὰ(Art)(A) αὑτοῦ(Pr)(G) πράττειν(Prä)(Akt)(Inf);
+(482) sharing affairs to|have, but him for to|him|self the of|him|self to|do;
+(483) καὶ(Kon) ὁ(Art)(N) Ἀδείμαντος(N) ἔφη(Imp)(Akt)· ἀλλʼ(Kon) ἴσως(Adv), ὦ(ij) Σώκρατες(V), οὕτω(Adv) ῥᾷον(Adv)(Kmp)
+(483) and the Adeimantus said· but perhaps, O Socrates, thus more|easily
+(484) ἢ(Kon) ʼκείνως(Adv). οὐδέν(Pr)(A), ἦν(Imp)(Akt) δʼ(Pt) ἐγώ(Pr)(N), μὰ(Prp) Δία(A) ἄτοπον(Adj)(A). ἐννοῶ(Prä)(Akt)
+(484) or in|that|way. nothing, was but I, by Zeus strange. I|consider
+(485) γὰρ(Pt) καὶ(Kon) αὐτὸς(Pr)(N) εἰπόντος(AorS)(Akt)(G) σοῦ(Pr)(G), ὅτι(Kon) πρῶτον(Adv)(Sup) μὲν(Pt) ἡμῶν(Pr)(G) φύεται(Prä)(M/P)
+(485) for and myself of|having|said of|you, that first indeed of|us is|born
+(486) ἕκαστος(Pr)(N) οὐ(Pt) πάνυ(Adv) ὅμοιος(Adj)(N) [370b] ἑκάστῳ(Pr)(D), ἀλλὰ(Kon) διαφέρων(Prä)(Akt)(N) τὴν(Art)(A) φύσιν(A),
+(486) each not very similar [370b] to|each, but differing the nature,
+(487) ἄλλος(Adj)(N) ἐπʼ(Prp) ἄλλου(Adj)(G) ἔργου(G) πράξει(Fu)(Akt). ἢ(Kon) οὐ(Pt) δοκεῖ(Prä)(Akt) σοι(Pr)(D); ἔμοιγε(Pr)(D).
+(487) another on another of|work will|do. or not does|it|seem to|you; to|me|at|least.
+(488) τί(Pr)(N) δέ(Kon); πότερον(Kon) κάλλιον(Adj)(Kmp)(N) πράττοι(Prä)(Akt)(Op) ἄν(Pt) τις(Pr)(N) εἷς(Adj)(N) ὢν(Prä)(Akt)(N) πολλὰς(Adj)(A)
+(488) what but; whether better would|do indeed someone one being many
+(489) τέχνας(A) ἐργαζόμενος(Prä)(M/P)(N), ἢ(Kon) ὅταν(Kon) μίαν(Adj)(A) εἷς(Adj)(N); ὅταν(Kon), ἦ(Imp)(Akt) δʼ(Pt) ὅς(Pr)(N),
+(489) arts working, or whenever one one; whenever, said but he,
+(490) εἷς(Adj)(N) μίαν(Adj)(A). ἀλλὰ(Kon) μὴν(Pt) οἶμαι(Prä)(Med) καὶ(Kon) τόδε(Pr)(N) δῆλον(Adj)(N), ὡς(Kon), ἐάν(Kon)
+(490) one one. but indeed I|think also this clear, that, if
+(491) τίς(Pr)(N) τινος(Pr)(G) παρῇ(Prä)(Akt)(Knj) ἔργου(G) καιρόν(A), διόλλυται(Prä)(M/P). δῆλον(Adj)(N) γάρ(Pt). οὐ(Pt) γὰρ(Pt)
+(491) someone of|something may|be|present of|work right|time, is|destroyed. clear for. not indeed
+(492) οἶμαι(Prä)(Med) ἐθέλει(Prä)(Akt) τὸ(Art)(N) πραττόμενον(Prä)(M/P)(N) τὴν(Art)(A) τοῦ(Art)(G) πράττοντος(Prä)(Akt)(G) σχολὴν(A) περιμένειν(Prä)(Akt)(Inf), ἀλλʼ(Kon)
+(492) I|think is|willing the being|done the of|the the|doing|one leisure to|wait, but
+(493) ἀνάγκη(N) τὸν(Art)(A) πράττοντα(Prä)(Akt)(A) τῷ(Art)(D) πραττομένῳ(Prä)(M/P)(D) ἐπακολουθεῖν(Prä)(Akt)(Inf) [370c] μὴ(Pt) ἐν(Prp) παρέργου(G)
+(493) necessity the doing to|the being|done to|follow [370c] not in of|side|work
+(494) μέρει(D). ἀνάγκη(N). ἐκ(Prp) δὴ(Pt) τούτων(Pr)(G) πλείω(Adj)(Kmp)(N) τε(Pt) ἕκαστα(Pr)(N) γίγνεται(Prä)(M/P) καὶ(Kon)
+(494) part. necessity. out|of indeed of|these more and each|things becomes and
+(495) κάλλιον(Adj)(Kmp)(N) καὶ(Kon) ῥᾷον(Adv)(Kmp), ὅταν(Kon) εἷς(Adj)(N) ἓν(Adj)(A) κατὰ(Prp) φύσιν(A) καὶ(Kon) ἐν(Prp)
+(495) better and more|easily, whenever one one|thing according|to nature and in
+(496) καιρῷ(D), σχολὴν(A) τῶν(Art)(G) ἄλλων(Adj)(G) ἄγων(Prä)(Akt)(N), πράττῃ(Prä)(Akt)(Knj). παντάπασι(Adv) μὲν(Pt) οὖν(Pt). πλειόνων(Adj)(Kmp)(G)
+(496) at|the|right|time, leisure of|the others leading, may|do. altogether indeed then. of|more
+(497) δή(Pt), ὦ(ij) Ἀδείμαντε(V), δεῖ(Prä)(Akt) πολιτῶν(G) ἢ(Kon) τεττάρων(Adj)(G) ἐπὶ(Prp) τὰς(Art)(A) παρασκευὰς(A)
+(497) indeed, O Adeimantus, it|is|necessary of|citizens than four for the preparations
+(498) ὧν(Pr)(G) ἐλέγομεν(Imp)(M/P). ὁ(Art)(N) γὰρ(Pt) γεωργός(N), ὡς(Kon) ἔοικεν(Per)(Akt), οὐκ(Pt) αὐτὸς(Pr)(N) ποιήσεται(Fu)(M/P)
+(498) of|which we|were|saying. the for farmer, as it|seems, not himself will|make
+(499) ἑαυτῷ(Pr)(D) τὸ(Art)(A) ἄροτρον(A), εἰ(Kon) μέλλει(Prä)(Akt) καλὸν(Adj)(A) εἶναι(Prä)(Inf)(Akt), οὐδὲ(Kon) [370d] σμινύην(A),
+(499) for|him|self the plough, if is|about good to|be, nor [370d] mattock,
+(500) οὐδὲ(Kon) τἆλλα(Art)(Adj)(A) ὄργανα(A) ὅσα(Pr)(N) περὶ(Prp) γεωργίαν(A). οὐδʼ(Kon) αὖ(Pt) ὁ(Art)(N) οἰκοδόμος(N)·
+(500) nor the|others tools as|many|as concerning farming. nor again the builder·
+(501) πολλῶν(Adj)(G) δὲ(Pt) καὶ(Kon) τούτῳ(Pr)(D) δεῖ(Prä)(Akt). ὡσαύτως(Adv) δʼ(Pt) ὁ(Art)(N) ὑφάντης(N) τε(Pt)
+(501) of|many but and to|this it|is|necessary. likewise but the weaver and
+(502) καὶ(Kon) ὁ(Art)(N) σκυτοτόμος(N)· ἢ(Kon) οὔ(Pt); ἀληθῆ(Adj)(N). τέκτονες(N) δὴ(Pt) καὶ(Kon) χαλκῆς(N)
+(502) and the shoemaker· or not; true. carpenters indeed and smiths
+(503) καὶ(Kon) τοιοῦτοί(Adj)(N) τινες(Pr)(N) πολλοὶ(Adj)(N) δημιουργοί(N), κοινωνοὶ(N) ἡμῖν(Pr)(D) τοῦ(Art)(G) πολιχνίου(G) γιγνόμενοι(Prä)(M/P)(N),
+(503) and such some many craftsmen, partners to|us of|the small|town becoming,
+(504) συχνὸν(Adj)(A) αὐτὸ(Pr)(A) ποιοῦσιν(Prä)(Akt). πάνυ(Adv) μὲν(Pt) οὖν(Pt). ἀλλʼ(Kon) οὐκ(Pt) ἄν(Pt) πω(Adv)
+(504) numerous it they|make. very indeed then. but not indeed yet
+(505) πάνυ(Adv) γε(Pt) μέγα(Adj)(A) τι(Pr)(A) εἴη(Prä)(Akt)(Op), εἰ(Kon) αὐτοῖς(Pr)(D) βουκόλους(A) τε(Pt) καὶ(Kon)
+(505) very at|least great something might|be, if to|them herdsmen and also
+(506) ποιμένας(A) τούς(Art)(A) τε(Pt) ἄλλους(Adj)(A) νομέας(A) προσθεῖμεν(Aor)(Akt)(Op), ἵνα(Kon) οἵ(Pr)(N) τε(Pt) [370e]
+(506) shepherds the and other herdsmen we|might|add, in|order|that who and [370e]
+(507) γεωργοὶ(N) ἐπὶ(Prp) τὸ(Art)(A) ἀροῦν(Prä)(Akt)(Inf) ἔχοιεν(Prä)(Akt)(Op) βοῦς(A), οἵ(Pr)(N) τε(Pt) οἰκοδόμοι(N) πρὸς(Prp)
+(507) farmers for the to|plough might|have oxen, who and builders for
+(508) τὰς(Art)(A) ἀγωγὰς(A) μετὰ(Prp) τῶν(Art)(G) γεωργῶν(G) χρῆσθαι(Prä)(M/P)(Inf) ὑποζυγίοις(D), ὑφάνται(N) δὲ(Pt) καὶ(Kon)
+(508) the carriages with the farmers to|use pack|animals, weavers but and
+(509) σκυτοτόμοι(N) δέρμασίν(D) τε(Pt) καὶ(Kon) ἐρίοις(D). οὐδέ(Kon) γε(Pt), ἦ(Imp)(Akt) δʼ(Pt) ὅς(Pr)(N),
+(509) shoemakers with|skins and and with|wools. nor at|least, said but he,
+(510) σμικρὰ(Adj)(N) πόλις(N) ἂν(Pt) εἴη(Prä)(Akt)(Op) ἔχουσα(Prä)(Akt)(N) πάντα(Adj)(A) ταῦτα(Pr)(A). ἀλλὰ(Kon) μήν(Pt), ἦν(Imp)(Akt)
+(510) small city would be having all these. but indeed, was
+(511) δʼ(Pt) ἐγώ(Pr)(N), κατοικίσαι(Aor)(Akt)(Inf) γε(Pt) αὐτὴν(Pr)(A) τὴν(Art)(A) πόλιν(A) εἰς(Prp) τοιοῦτον(Adj)(A) τόπον(A)
+(511) but I, to|settle at|least her the city into such place
+(512) οὗ(Pr)(G) ἐπεισαγωγίμων(Adj)(G) μὴ(Pt) δεήσεται(Fu)(M/P), σχεδόν(Adv) τι(Pr)(A) ἀδύνατον(Adj)(N). ἀδύνατον(Adj)(N) γάρ(Pt). προσδεήσει(Fu)(Akt)
+(512) where of|imports not will|need, almost somewhat impossible. impossible for. it|will|need|besides
+(513) ἄρα(Pt) ἔτι(Adv) καὶ(Kon) ἄλλων(Adj)(G), οἳ(Pr)(N) ἐξ(Prp) ἄλλης(Adj)(G) πόλεως(G) αὐτῇ(Pr)(D) κομιοῦσιν(Fu)(Akt)
+(513) then still also of|others, who from another city to|her they|will|bring
+(514) ὧν(Pr)(G) δεῖται(Prä)(M/P). δεήσει(Fu)(Akt).
+(514) of|which it|needs. it|will|need.
+== St. 371a ==
+(516) [Σωκράτης:] καὶ(Kon) μὴν(Pt) κενὸς(Adj)(N) ἂν(Pt) ἴῃ(Prä)(Akt)(Knj) ὁ(Art)(N) διάκονος(N), μηδὲν(Pr)(A) ἄγων(Prä)(Akt)(N)
+(516) [Σωκράτης:] and indeed empty would go the attendant, nothing carrying
+(517) ὧν(Pr)(G) ἐκεῖνοι(Pr)(N) δέονται(Prä)(M/P) παρʼ(Prp) ὧν(Pr)(G) ἂν(Pt) κομίζωνται(Prä)(M/P)(Knj) ὧν(Pr)(G) ἂν(Pt) αὐτοῖς(Pr)(D)
+(517) of|which those need from those|who ever they|may|get|brought of|which ever to|them
+(518) χρεία(N), κενὸς(Adj)(N) ἄπεισιν(Prä)(Akt). ἦ(Imp)(Akt) γάρ(Pt); δοκεῖ(Prä)(Akt) μοι(Pr)(D). δεῖ(Prä)(Akt) δὴ(Pt) τὰ(Art)(N)
+(518) need, empty goes|away. is|it|so for; it|seems to|me. it|is|necessary indeed the
+(519) οἴκοι(Adv) μὴ(Pt) μόνον(Adv) ἑαυτοῖς(Pr)(D) ποιεῖν(Prä)(Akt)(Inf) ἱκανά(Adj)(A), ἀλλὰ(Kon) καὶ(Kon) οἷα(Pr)(A) καὶ(Kon)
+(519) at|home not only for|them|selves to|make sufficient, but also such|things|as and
+(520) ὅσα(Pr)(N) ἐκείνοις(Pr)(D) ὧν(Pr)(G) ἂν(Pt) δέωνται(Prä)(M/P). δεῖ(Prä)(Akt) γάρ(Pt). πλειόνων(Adj)(Kmp)(G) δὴ(Pt) γεωργῶν(G)
+(520) as|many|as for|those of|which ever they|need. it|is|necessary for. of|more indeed farmers
+(521) τε(Pt) καὶ(Kon) τῶν(Art)(G) ἄλλων(Adj)(G) δημιουργῶν(G) δεῖ(Prä)(Akt) ἡμῖν(Pr)(D) τῇ(Art)(D) πόλει(D). πλειόνων(Adj)(Kmp)(G)
+(521) and also of|the others craftsmen it|is|necessary to|us to|the city. of|more
+(522) γάρ(Pt). καὶ(Kon) δὴ(Pt) καὶ(Kon) τῶν(Art)(G) ἄλλων(Adj)(G) διακόνων(G) που(Pt) τῶν(Art)(G) τε(Pt)
+(522) for. and indeed and of|the others attendants I|suppose of|the and
+(523) εἰσαξόντων(Fu)(Akt)(G) καὶ(Kon) ἐξαξόντων(Fu)(Akt)(G) ἕκαστα(Pr)(A). οὗτοι(Pr)(N) δέ(Kon) εἰσιν(Prä)(Akt) ἔμποροι(N)· ἦ(Imp)(Akt) γάρ(Pt);
+(523) of|bringing|in|men and of|taking|out|men each|items. these but are merchants· is|it|so for;
+(524) ναί(ij). καὶ(Kon) ἐμπόρων(G) δὴ(Pt) δεησόμεθα(Fu)(M/P). πάνυ(Adv) γε(Pt). καὶ(Kon) ἐὰν(Kon) μέν(Pt)
+(524) yes. and of|merchants indeed we|shall|need. very indeed. and if indeed
+(525) γε(Pt) κατὰ(Prp) θάλατταν(A) ἡ(Art)(N) ἐμπορία(N) γίγνηται(Prä)(M/P)(Knj), συχνῶν(Adj)(Kmp)(G) καὶ(Kon) [371b] ἄλλων(Adj)(G)
+(525) at|least along the|sea the trade may|arise, of|many and [371b] others
+(526) προσδεήσεται(Fu)(M/P) τῶν(Art)(G) ἐπιστημόνων(G) τῆς(Art)(G) περὶ(Prp) τὴν(Art)(A) θάλατταν(A) ἐργασίας(G). συχνῶν(Adj)(Kmp)(G) μέντοι(Pt).
+(526) will|need|besides of|the skilled|men of|the concerning the sea work. many however.
+(527) τί(Pr)(N) δὲ(Kon) δή(Pt); ἐν(Prp) αὐτῇ(Pr)(D) τῇ(Art)(D) πόλει(D) πῶς(Adv) ἀλλήλοις(Pr)(D) μεταδώσουσιν(Fu)(Akt)
+(527) what but indeed; in in|it|self the city how to|each|other will|give|a|share
+(528) ὧν(Pr)(G) ἂν(Pt) ἕκαστοι(Pr)(N) ἐργάζωνται(Prä)(M/P)(Knj); ὧν(Pr)(G) δὴ(Pt) ἕνεκα(Prp) καὶ(Kon) κοινωνίαν(A) ποιησάμενοι(Aor)(Med)(N)
+(528) of|which ever each they|work; of|which indeed for|the|sake|of also partnership having|made
+(529) πόλιν(A) ᾠκίσαμεν(Aor)(Akt). δῆλον(Adj)(N) δή(Pt), ἦ(Imp)(Akt) δʼ(Pt) ὅς(Pr)(N), ὅτι(Kon) πωλοῦντες(Prä)(Akt)(N) καὶ(Kon)
+(529) city we|founded. clear indeed, said but he, that selling and
+(530) ὠνούμενοι(Prä)(M/P)(N). ἀγορὰ(N) δὴ(Pt) ἡμῖν(Pr)(D) καὶ(Kon) νόμισμα(N) σύμβολον(N) τῆς(Art)(G) ἀλλαγῆς(G) ἕνεκα(Prp)
+(530) buying. marketplace indeed for|us and coin token of|the exchange for|the|sake|of
+(531) γενήσεται(Fu)(M/P) ἐκ(Prp) τούτου(Pr)(G). πάνυ(Adv) μὲν(Pt) οὖν(Pt). ἂν(Pt) [371c] οὖν(Pt) κομίσας(Aor)(Akt)(N)
+(531) will|come|to|be out|of this. very indeed then. indeed [371c] then having|brought
+(532) ὁ(Art)(N) γεωργὸς(N) εἰς(Prp) τὴν(Art)(A) ἀγοράν(A) τι(Pr)(A) ὧν(Pr)(G) ποιεῖ(Prä)(Akt), ἤ(Kon) τις(Pr)(N)
+(532) the farmer into the market something of|which he|makes, or someone
+(533) ἄλλος(Adj)(N) τῶν(Art)(G) δημιουργῶν(G), μὴ(Pt) εἰς(Prp) τὸν(Art)(A) αὐτὸν(Adj)(A) χρόνον(A) ἥκῃ(Prä)(Akt)(Knj) τοῖς(Art)(D)
+(533) another of|the craftsmen, not into the same time may|come to|the
+(534) δεομένοις(Prä)(M/P)(D) τὰ(Art)(A) παρʼ(Prp) αὐτοῦ(Pr)(G) ἀλλάξασθαι(Aor)(M/P)(Inf), ἀργήσει(Fu)(Akt) τῆς(Art)(G) αὑτοῦ(Pr)(G) δημιουργίας(G) καθήμενος(Prä)(M/P)(N)
+(534) needing the from him to|exchange, he|will|be|idle of|the of|him|self craft sitting
+(535) ἐν(Prp) ἀγορᾷ(D); οὐδαμῶς(Adv), ἦ(Imp)(Akt) δʼ(Pt) ὅς(Pr)(N), ἀλλὰ(Kon) εἰσὶν(Prä)(Akt) οἳ(Pr)(N) τοῦτο(Pr)(N)
+(535) in market; by|no|means, said but he, but there|are who this
+(536) ὁρῶντες(Prä)(Akt)(N) ἑαυτοὺς(Pr)(A) ἐπὶ(Prp) τὴν(Art)(A) διακονίαν(A) τάττουσιν(Prä)(Akt) ταύτην(Pr)(A), ἐν(Prp) μὲν(Pt) ταῖς(Art)(D)
+(536) seeing them|selves toward the service they|assign this, in indeed the
+(537) ὀρθῶς(Adv) οἰκουμέναις(Prä)(M/P)(D) πόλεσι(D) σχεδόν(Adv) τι(Pr)(A) οἱ(Art)(N) ἀσθενέστατοι(Adj)(Sup)(N) τὰ(Art)(A) σώματα(A) καὶ(Kon)
+(537) rightly being|managed cities almost somewhat the weakest the bodies and
+(538) ἀχρεῖοί(Adj)(N) τι(Pr)(N) ἄλλο(Adj)(A) ἔργον(A) πράττειν(Prä)(Akt)(Inf). αὐτοῦ(Pr)(G) γὰρ(Pt) δεῖ(Prä)(Akt) μένοντας(Prä)(Akt)(A) [371d]
+(538) useless somewhat other work to|do. there for it|is|necessary staying [371d]
+(539) αὐτοὺς(Pr)(A) περὶ(Prp) τὴν(Art)(A) ἀγορὰν(A) τὰ(Art)(A) μὲν(Pt) ἀντʼ(Prp) ἀργυρίου(G) ἀλλάξασθαι(Aor)(Med)(Inf) τοῖς(Art)(D)
+(539) them around the market the|things indeed in|exchange|for silver|money to|exchange|for|oneself to|the
+(540) τι(Pr)(A) δεομένοις(Prä)(M/P)(D) ἀποδόσθαι(Aor)(Med)(Inf), τοῖς(Art)(D) δὲ(Kon) ἀντὶ(Prp) αὖ(Pt) ἀργυρίου(G) διαλλάττειν(Prä)(Akt)(Inf) ὅσοι(Pr)(N)
+(540) something needing to|hand|over, to|the but in|return|for again silver|money to|exchange as|many|as
+(541) τι(Pr)(A) δέονται(Prä)(M/P) πρίασθαι(Aor)(Med)(Inf). αὕτη(Pr)(N) ἄρα(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ἡ(Art)(N) χρεία(N)
+(541) something they|need to|buy. this then, was but I, the need
+(542) καπήλων(G) ἡμῖν(Pr)(D) γένεσιν(A) ἐμποιεῖ(Prä)(Akt) τῇ(Art)(D) πόλει(D). ἢ(Kon) οὐ(Pt) καπήλους(A) καλοῦμεν(Prä)(Akt)
+(542) of|shopkeepers to|us birth|coming|to|be puts|in to|the city. or not shopkeepers we|call
+(543) τοὺς(Art)(A) πρὸς(Prp) ὠνήν(A) τε(Pt) καὶ(Kon) πρᾶσιν(A) διακονοῦντας(Prä)(Akt)(A) ἱδρυμένους(Per)(M/P)(A) ἐν(Prp) ἀγορᾷ(D),
+(543) those for|the buying and also selling serving having|been|set|up in the|market,
+(544) τοὺς(Art)(A) δὲ(Pt) πλανήτας(A) ἐπὶ(Prp) τὰς(Art)(A) πόλεις(A) ἐμπόρους(A); πάνυ(Adv) μὲν(Pt) οὖν(Pt).
+(544) those but wanderers to the cities merchants; very indeed then.
+(545) ἔτι(Adv) [371e] δή(Pt) τινες(Pr)(N), ὡς(Kon) ἐγᾦμαι(Prä)(Med), εἰσὶ(Prä)(Akt) καὶ(Kon) ἄλλοι(Adj)(N) διάκονοι(N),
+(545) still [371e] indeed some, as I|think, are and other servants,
+(546) οἳ(Pr)(N) ἂν(Pt) τὰ(Art)(A) μὲν(Pt) τῆς(Art)(G) διανοίας(G) μὴ(Pt) πάνυ(Adv) ἀξιοκοινώνητοι(Adj)(N) ὦσιν(Prä)(Akt)(Knj),
+(546) who ever the|things indeed of|the mind not very fit|for|sharing may|be,
+(547) τὴν(Art)(A) δὲ(Kon) τοῦ(Art)(G) σώματος(G) ἰσχὺν(A) ἱκανὴν(Adj)(A) ἐπὶ(Prp) τοὺς(Art)(A) πόνους(A) ἔχωσιν(Prä)(Akt)(Knj)·
+(547) the but of|the body strength sufficient for the labors may|have·
+(548) οἳ(Pr)(N) δὴ(Pt) πωλοῦντες(Prä)(Akt)(N) τὴν(Art)(A) τῆς(Art)(G) ἰσχύος(G) χρείαν(A), τὴν(Art)(A) τιμὴν(A) ταύτην(Pr)(A)
+(548) who indeed selling the of|the strength service, the price this
+(549) μισθὸν(A) καλοῦντες(Prä)(Akt)(N), κέκληνται(Per)(M/P), ὡς(Kon) ἐγᾦμαι(Prä)(Med), μισθωτοί(N)· ἦ(Pt) γάρ(Pt); πάνυ(Adv) μὲν(Pt)
+(549) wage calling, have|been|called, as I|think, hirelings· indeed for; very indeed
+(550) οὖν(Pt). πλήρωμα(N) δὴ(Pt) πόλεώς(G) εἰσιν(Prä)(Akt), ὡς(Kon) ἔοικε(Per)(Akt), καὶ(Kon) μισθωτοί(N). δοκεῖ(Prä)(Akt)
+(550) then. complement indeed of|city are, as it|seems, also hirelings. it|seems
+(551) μοι(Pr)(D). ἆρʼ(Pt) οὖν(Pt), ὦ(ij) Ἀδείμαντε(V), ἤδη(Adv) ἡμῖν(Pr)(D) ηὔξηται(Per)(M/P) ἡ(Art)(N) πόλις(N),
+(551) to|me. then then, O Adeimantus, already to|us has|grown the city,
+(552) ὥστʼ(Kon) εἶναι(Prä)(Inf)(Akt) τελέα(Adj)(A); ἴσως(Adv). ποῦ(Adv) οὖν(Pt) ἄν(Pt) ποτε(Adv) ἐν(Prp) αὐτῇ(Pr)(D)
+(552) so|that to|be complete; perhaps. where then ever at|any|time in in|her
+(553) εἴη(Prä)(Akt)(Op) ἥ(Art)(N) τε(Pt) δικαιοσύνη(N) καὶ(Kon) ἡ(Art)(N) ἀδικία(N); καὶ(Kon) τίνι(Pr)(D) ἅμα(Adv)
+(553) might|be the and justice and the injustice; and with|what together
+(554) ἐγγενομένη(Aor)(Med)(N) ὧν(Pr)(G) ἐσκέμμεθα(Per)(M/P);
+(554) having|arisen|in of|which we|have|considered;
+== St. 372a ==
+(556) [Σωκράτης:] ἐγὼ(Pr)(N) μέν(Pt), ἔφη(Imp)(Akt), οὐκ(Pt) ἐννοῶ(Prä)(Akt), ὦ(ij) Σώκρατες(V), εἰ(Kon) μή(Pt)
+(556) [Σωκράτης:] I indeed, he|said, not I|perceive, O Socrates, if not
+(557) που(Pt) ἐν(Prp) αὐτῶν(Pr)(G) τούτων(Pr)(G) χρείᾳ(D) τινὶ(Pr)(D) τῇ(Art)(D) πρὸς(Prp) ἀλλήλους(Pr)(A). ἀλλʼ(Kon)
+(557) somewhere in of|them of|these need|use of|some|kind the toward one|another. but
+(558) ἴσως(Adv), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), καλῶς(Adv) λέγεις(Prä)(Akt)· καὶ(Kon) σκεπτέον(Adj)(N) γε(Pt) καὶ(Kon)
+(558) perhaps, was but I, well you|say· and to|be|examined indeed and
+(559) οὐκ(Pt) ἀποκνητέον(Adj)(N). πρῶτον(Adv) οὖν(Pt) σκεψώμεθα(Aor)(Med)(Knj) τίνα(Pr)(A) τρόπον(A) διαιτήσονται(Fu)(Med) οἱ(Art)(N) οὕτω(Adv)
+(559) not to|be|shrunk|from. first then let|us|consider what|kind way they|will|live those thus
+(560) παρεσκευασμένοι(Per)(M/P)(N). ἄλλο(Adj)(A) τι(Pr)(A) ἢ(Kon) σῖτόν(A) τε(Pt) ποιοῦντες(Prä)(Akt)(N) καὶ(Kon) οἶνον(A) καὶ(Kon)
+(560) having|been|prepared. other thing than grain and making and wine and
+(561) ἱμάτια(A) καὶ(Kon) ὑποδήματα(A); καὶ(Kon) οἰκοδομησάμενοι(Aor)(Med)(N) οἰκίας(A), θέρους(G) μὲν(Pt) τὰ(Art)(A) πολλὰ(Adj)(A)
+(561) garments and shoes; and having|built houses, of|summer indeed the many
+(562) γυμνοί(Adj)(N) τε(Pt) καὶ(Kon) ἀνυπόδητοι(Adj)(N) ἐργάσονται(Fu)(Med), τοῦ(Art)(G) δὲ(Kon) χειμῶνος(G) [372b] ἠμφιεσμένοι(Per)(M/P)(N)
+(562) naked and also unshod they|will|work, of|the but winter [372b] having|been|clothed
+(563) τε(Pt) καὶ(Kon) ὑποδεδεμένοι(Per)(M/P)(N) ἱκανῶς(Adv)· θρέψονται(Fu)(Med) δὲ(Kon) ἐκ(Prp) μὲν(Pt) τῶν(Art)(G) κριθῶν(G)
+(563) and also having|been|shod sufficiently· they|will|nourish|themselves but from indeed the barleys
+(564) ἄλφιτα(A) σκευαζόμενοι(Prä)(M/P)(N), ἐκ(Prp) δὲ(Kon) τῶν(Art)(G) πυρῶν(G) ἄλευρα(A), τὰ(Art)(A) μὲν(Pt) πέψαντες(Aor)(Akt)(N),
+(564) groats preparing|for|themselves, from but the wheats flours, the|things indeed having|cooked,
+(565) τὰ(Art)(A) δὲ(Kon) μάξαντες(Aor)(Akt)(N), μάζας(A) γενναίας(Adj)(A) καὶ(Kon) ἄρτους(A) ἐπὶ(Prp) κάλαμόν(A) τινα(Pr)(A)
+(565) the|things but having|kneaded, barley|cakes noble and loaves upon reed some
+(566) παραβαλλόμενοι(Prä)(M/P)(N) ἢ(Kon) φύλλα(A) καθαρά(Adj)(A), κατακλινέντες(Aor)(Akt)(N) ἐπὶ(Prp) στιβάδων(G) ἐστρωμένων(Per)(M/P)(G) μίλακί(D) τε(Pt)
+(566) placing|beside|themselves or leaves pure, having|reclined upon beddings having|been|strewn with|mallow and
+(567) καὶ(Kon) μυρρίναις(D), εὐωχήσονται(Fu)(M/P) αὐτοί(Pr)(N) τε(Pt) καὶ(Kon) τὰ(Art)(A) παιδία(A), ἐπιπίνοντες(Prä)(Akt)(N) τοῦ(Art)(G)
+(567) and with|myrtles, they|will|feast themselves and also the children, drinking|besides of|the
+(568) οἴνου(G), ἐστεφανωμένοι(Per)(M/P)(N) καὶ(Kon) ὑμνοῦντες(Prä)(Akt)(N) τοὺς(Art)(A) θεούς(A), ἡδέως(Adv) συνόντες(Prä)(Akt)(N) ἀλλήλοις(Pr)(D), οὐχ(Pt)
+(568) wine, having|been|crowned and hymning the gods, sweetly being|together with|one|another, not
+(569) ὑπὲρ(Prp) τὴν(Art)(A) οὐσίαν(A) ποιούμενοι(Prä)(M/P)(N) τοὺς(Art)(A) [372c] παῖδας(A), εὐλαβούμενοι(Prä)(M/P)(N) πενίαν(A) ἢ(Kon)
+(569) beyond the means making|for|themselves the [372c] children, being|cautious of|poverty or
+(570) πόλεμον(A). καὶ(Kon) ὁ(Art)(N) Γλαύκων(N) ὑπολαβών(AorS)(Akt)(N), Ἄνευ(Prp) ὄψου(G), ἔφη(Imp)(Akt), ὡς(Kon) ἔοικας(Per)(Akt),
+(570) war. and the Glaucon having|taken|up, without relish, he|said, as you|seem,
+(571) ποιεῖς(Prä)(Akt) τοὺς(Art)(A) ἄνδρας(A) ἑστιωμένους(Per)(M/P)(A). ἀληθῆ(Adj)(A), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), λέγεις(Prä)(Akt). ἐπελαθόμην(Aor)(Med)
+(571) you|make the men having|been|feasted. true, was but I, you|say. I|forgot
+(572) ὅτι(Kon) καὶ(Kon) ὄψον(A) ἕξουσιν(Fu)(Akt), ἅλας(A) τε(Pt) δῆλον(Adj)(N) ὅτι(Kon) καὶ(Kon) ἐλάας(A)
+(572) that also relish they|will|have, salt and clear that also olives
+(573) καὶ(Kon) τυρόν(A), καὶ(Kon) βολβοὺς(A) καὶ(Kon) λάχανά(A) γε(Pt), οἷα(Pr)(A) δὴ(Pt) ἐν(Prp)
+(573) and cheese, and bulbs|onions and vegetables at|least, such|as indeed in
+(574) ἀγροῖς(D) ἑψήματα(A), ἑψήσονται(Fu)(Med). καὶ(Kon) τραγήματά(A) που(Pt) παραθήσομεν(Fu)(Akt) αὐτοῖς(Pr)(D) τῶν(Art)(G) τε(Pt)
+(574) fields boiled|dishes, they|will|cook. and desserts perhaps we|will|set|before to|them of|the and
+(575) σύκων(G) καὶ(Kon) ἐρεβίνθων(G) καὶ(Kon) κυάμων(G), καὶ(Kon) μύρτα(A) καὶ(Kon) φηγοὺς(A) σποδιοῦσιν(Fu)(Akt)
+(575) of|figs and of|chickpeas and of|beans, and myrtle|berries and beechnuts they|will|roast|to|ashes
+(576) πρὸς(Prp) [372d] τὸ(Art)(A) πῦρ(A), μετρίως(Adv) ὑποπίνοντες(Prä)(Akt)(N)· καὶ(Kon) οὕτω(Adv) διάγοντες(Prä)(Akt)(N) τὸν(Art)(A)
+(576) at|toward [372d] the fire, moderately sipping|a|little· and thus spending the
+(577) βίον(A) ἐν(Prp) εἰρήνῃ(D) μετὰ(Prp) ὑγιείας(G), ὡς(Kon) εἰκός(Per)(Akt)(N), γηραιοὶ(Adj)(N) τελευτῶντες(Prä)(Akt)(N) ἄλλον(Adj)(A)
+(577) life in peace with health, as likely, old finishing another
+(578) τοιοῦτον(Adj)(A) βίον(A) τοῖς(Art)(D) ἐκγόνοις(D) παραδώσουσιν(Fu)(Akt). καὶ(Kon) ὅς(Pr)(N), εἰ(Kon) δὲ(Kon) ὑῶν(G)
+(578) such life to|the offspring they|will|hand|over. and he, if but of|sows
+(579) πόλιν(A), ὦ(ij) Σώκρατες(V), ἔφη(Imp)(Akt), κατεσκεύαζες(Imp)(Akt), τί(Pr)(N) ἂν(Pt) αὐτὰς(Pr)(A) ἄλλο(Adj)(A) ἢ(Kon)
+(579) city, O Socrates, he|said, you|were|building, what ever them else than
+(580) ταῦτα(Pr)(A) ἐχόρταζες(Imp)(Akt); ἀλλὰ(Kon) πῶς(Adv) χρή(Prä)(Akt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ὦ(ij) Γλαύκων(V);
+(580) these|things you|were|feeding; but how it|is|necessary, was but I, O Glaucon;
+(581) ἅπερ(Pr)(A) νομίζεται(Prä)(M/P), ἔφη(Imp)(Akt)· ἐπί(Prp) τε(Pt) κλινῶν(G) κατακεῖσθαι(Prä)(M/P)(Inf) οἶμαι(Prä)(Med) τοὺς(Art)(A) μέλλοντας(Prä)(Akt)(A)
+(581) the|very|things are|customary, he|said· upon and couches to|recline I|think those being|about|to
+(582) μὴ(Pt) ταλαιπωρεῖσθαι(Prä)(M/P)(Inf), καὶ(Kon) ἀπὸ(Prp) τραπεζῶν(G) δειπνεῖν(Prä)(Akt)(Inf), [372e] καὶ(Kon) ὄψα(A) ἅπερ(Pr)(A)
+(582) not to|be|wearied, and from tables to|dine, [372e] and relishes the|very|things
+(583) καὶ(Kon) οἱ(Art)(N) νῦν(Adv) ἔχουσι(Prä)(Akt) καὶ(Kon) τραγήματα(A). εἶεν(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N)·
+(583) and those now have and desserts. so|be|it, was but I·
+(584) μανθάνω(Prä)(Akt). οὐ(Pt) πόλιν(A), ὡς(Kon) ἔοικε(Per)(Akt), σκοποῦμεν(Prä)(Akt) μόνον(Adv) ὅπως(Kon) γίγνεται(Prä)(M/P), ἀλλὰ(Kon)
+(584) I|learn. not a|city, as it|seems, we|consider only how comes|to|be, but
+(585) καὶ(Kon) τρυφῶσαν(Prä)(Akt)(A) πόλιν(A). ἴσως(Adv) οὖν(Pt) οὐδὲ(Kon) κακῶς(Adv) ἔχει(Prä)(Akt)· σκοποῦντες(Prä)(Akt)(N) γὰρ(Pt)
+(585) also luxuriating city. perhaps then not|even badly it|is|situated· considering for
+(586) καὶ(Kon) τοιαύτην(Adj)(A) τάχʼ(Adv) ἂν(Pt) κατίδοιμεν(Aor)(Akt)(Op) τήν(Art)(A) τε(Pt) δικαιοσύνην(A) καὶ(Kon) ἀδικίαν(A)
+(586) also such quickly perhaps we|might|observe the and justice and injustice
+(587) ὅπῃ(Adv) ποτὲ(Adv) ταῖς(Art)(D) πόλεσιν(D) ἐμφύονται(Prä)(M/P). ἡ(Art)(N) μὲν(Pt) οὖν(Pt) ἀληθινὴ(Adj)(N) πόλις(N)
+(587) in|what|way ever to|the cities are|implanted. the indeed then true city
+(588) δοκεῖ(Prä)(Akt) μοι(Pr)(D) εἶναι(Prä)(Inf)(Akt) ἣν(Pr)(A) διεληλύθαμεν(Per)(Akt), ὥσπερ(Kon) ὑγιής(Adj)(N) τις(Pr)(N)· εἰ(Kon) δʼ(Kon)
+(588) it|seems to|me to|be which we|have|gone|through, just|as healthy someone· if but
+(589) αὖ(Pt) βούλεσθε(Prä)(M/P), καὶ(Kon) φλεγμαίνουσαν(Prä)(Akt)(A) πόλιν(A) θεωρήσωμεν(Aor)(Akt)(Knj)· οὐδὲν(Pr)(A) ἀποκωλύει(Prä)(Akt).
+(589) again you|wish, also feverish city let|us|contemplate· nothing hinders.
+== St. 373a ==
+(591) [Σωκράτης:] ταῦτα(Pr)(N) γὰρ(Pt) δή(Pt) τισιν(Pr)(D), ὡς(Kon) δοκεῖ(Prä)(Akt), οὐκ(Pt) ἐξαρκέσει(Fu)(Akt), οὐδὲ(Kon)
+(591) [Σωκράτης:] these|things for indeed to|some, as it|seems, not will|suffice, nor
+(592) αὕτη(Pr)(N) ἡ(Art)(N) δίαιτα(N), ἀλλὰ(Kon) κλῖναί(N) τε(Pt) προσέσονται(Fu)(M/P) καὶ(Kon) τράπεζαι(N) καὶ(Kon)
+(592) this the diet, but couches and will|be|added and tables and
+(593) τἆλλα(Art)(Adj)(N) σκεύη(N), καὶ(Kon) ὄψα(N) δὴ(Pt) καὶ(Kon) μύρα(N) καὶ(Kon) θυμιάματα(N) καὶ(Kon)
+(593) the|other vessels, and relishes indeed and ointments and incenses and
+(594) ἑταῖραι(N) καὶ(Kon) πέμματα(N), καὶ(Kon) ἕκαστα(Pr)(N) τούτων(Pr)(G) παντοδαπά(Adj)(N). καὶ(Kon) δὴ(Pt) καὶ(Kon)
+(594) courtesans and cakes, and each|things of|these of|every|kind. and indeed also
+(595) ἃ(Pr)(N) τὸ(Art)(A) πρῶτον(Adj)(A) ἐλέγομεν(Imp)(Akt) οὐκέτι(Adv) τἀναγκαῖα(Art)(Adj)(N) θετέον(Adj)(N), οἰκίας(A) τε(Pt) καὶ(Kon)
+(595) the|things|which the first we|were|saying no|longer the|necessary to|be|set, houses and also
+(596) ἱμάτια(A) καὶ(Kon) ὑποδήματα(A), ἀλλὰ(Kon) τήν(Art)(A) τε(Pt) ζωγραφίαν(A) κινητέον(Adj)(N) καὶ(Kon) τὴν(Art)(A)
+(596) garments and shoes, but the and painting to|be|pursued and the
+(597) ποικιλίαν(A), καὶ(Kon) χρυσὸν(A) καὶ(Kon) ἐλέφαντα(A) καὶ(Kon) πάντα(Adj)(A) τὰ(Art)(A) τοιαῦτα(Adj)(A) κτητέον(Adj)(N).
+(597) embellishment, and gold and ivory and all the such|things to|be|acquired.
+(598) ἦ(Pt) γάρ(Pt); ναί(Pt), [373b] ἔφη(Imp)(Akt). οὐκοῦν(Pt) μείζονά(Adj)(A)(Kmp) τε(Pt) αὖ(Pt) τὴν(Art)(A)
+(598) indeed for; yes, [373b] he|said. therefore greater and again the
+(599) πόλιν(A) δεῖ(Prä)(Akt) ποιεῖν(Prä)(Akt)(Inf)· ἐκείνη(Pr)(N) γὰρ(Pt) ἡ(Art)(N) ὑγιεινὴ(Adj)(N) οὐκέτι(Adv) ἱκανή(Adj)(N), ἀλλʼ(Kon)
+(599) city it|is|necessary to|make· that|one for the healthy no|longer sufficient, but
+(600) ἤδη(Adv) ὄγκου(G) ἐμπληστέα(Adj)(N) καὶ(Kon) πλήθους(G), ἃ(Pr)(A) οὐκέτι(Adv) τοῦ(Art)(G) ἀναγκαίου(Adj)(G) ἕνεκά(Prp)
+(600) already of|bulk to|be|filled and of|multitude, which|things no|longer of|the necessary for|the|sake|of
+(601) ἐστιν(Prä)(Akt) ἐν(Prp) ταῖς(Art)(D) πόλεσιν(D), οἷον(Kon) οἵ(Art)(N) τε(Pt) θηρευταὶ(N) πάντες(Adj)(N) οἵ(Art)(N)
+(601) is in the cities, such|as the and hunters all the
+(602) τε(Pt) μιμηταί(N), πολλοὶ(Adj)(N) μὲν(Pt) οἱ(Art)(N) περὶ(Prp) τὰ(Art)(A) σχήματά(A) τε(Pt) καὶ(Kon)
+(602) and imitators, many indeed the about the figures and also
+(603) χρώματα(A), πολλοὶ(Adj)(N) δὲ(Pt) οἱ(Art)(N) περὶ(Prp) μουσικήν(A), ποιηταί(N) τε(Pt) καὶ(Kon) τούτων(Pr)(G)
+(603) colors, many but the about music, poets and also of|these
+(604) ὑπηρέται(N), ῥαψῳδοί(N), ὑποκριταί(N), χορευταί(N), ἐργολάβοι(N), σκευῶν(G) τε(Pt) παντοδαπῶν(Adj)(G) δημιουργοί(N), τῶν(Art)(G)
+(604) attendants, rhapsodes, actors, dancers, contractors, of|equipment and of|all|kinds craftsmen, of|the
+(605) τε(Pt) ἄλλων(Adj)(G) καὶ(Kon) [373c] τῶν(Art)(G) περὶ(Prp) τὸν(Art)(A) γυναικεῖον(Adj)(A) κόσμον(A). καὶ(Kon)
+(605) and of|others and [373c] of|the concerning the womens adornment. and
+(606) δὴ(Pt) καὶ(Kon) διακόνων(G) πλειόνων(Adj)(Kmp)(G) δεησόμεθα(Fu)(M/P)· ἢ(Kon) οὐ(Pt) δοκεῖ(Prä)(Akt) δεήσειν(Fu)(Inf)(Akt) παιδαγωγῶν(G),
+(606) indeed also of|servants more we|shall|need· or not seems there|will|be|need of|tutors,
+(607) τιτθῶν(G), τροφῶν(G), κομμωτριῶν(G), κουρέων(G), καὶ(Kon) αὖ(Pt) ὀψοποιῶν(G) τε(Pt) καὶ(Kon) μαγείρων(G);
+(607) of|wet|nurses, of|nurses, of|hairdressers, of|barbers, and again of|cooks|of|relishes and also of|chefs;
+(608) ἔτι(Adv) δὲ(Pt) καὶ(Kon) συβωτῶν(G) προσδεησόμεθα(Fu)(M/P)· τοῦτο(Pr)(N) γὰρ(Pt) ἡμῖν(Pr)(D) ἐν(Prp) τῇ(Art)(D)
+(608) still but also of|swineherds we|shall|need· this for to|us in the
+(609) προτέρᾳ(Adj)(D) πόλει(D) οὐκ(Pt) ἐνῆν(Imp)(Akt)— ἔδει(Imp)(Akt) γὰρ(Pt) οὐδέν(Pr)(N)— ἐν(Prp) δὲ(Pt) ταύτῃ(Pr)(D) καὶ(Kon) τούτου(Pr)(G)
+(609) earlier city not was|present— there|was|need for nothing— in but this and of|this
+(610) προσδεήσει(Fu)(Akt). δεήσει(Fu)(Akt) δὲ(Pt) καὶ(Kon) τῶν(Art)(G) ἄλλων(Adj)(G) βοσκημάτων(G) παμπόλλων(Adj)(G), εἴ(Kon) τις(Pr)(N)
+(610) there|will|be|need. there|will|be|need but also of|the other of|grazing|animals very|many, if someone
+(611) αὐτὰ(Pr)(A) ἔδεται(Fu)(M/P)· ἦ(Pt) γάρ(Pt); πῶς(Adv) γὰρ(Pt) οὔ(Pt); οὐκοῦν(Pt) [373d] καὶ(Kon)
+(611) them will|eat· indeed for; how for not; well|then [373d] also
+(612) ἰατρῶν(G) ἐν(Prp) χρείαις(D) ἐσόμεθα(Fu)(M/P) πολὺ(Adj)(A) μᾶλλον(Adv)(Kmp) οὕτω(Adv) διαιτώμενοι(Prä)(M/P)(N) ἢ(Kon) ὡς(Kon)
+(612) of|physicians in needs we|shall|be much more thus living than as
+(613) τὸ(Art)(N) πρότερον(Adj)(N); πολύ(Adv) γε(Pt). καὶ(Kon) ἡ(Art)(N) χώρα(N) γέ(Pt) που(Pt), ἡ(Art)(N)
+(613) the earlier; much indeed. and the land indeed I|suppose, the
+(614) τότε(Adv) ἱκανὴ(Adj)(N) τρέφειν(Prä)(Akt)(Inf) τοὺς(Art)(A) τότε(Adv), σμικρὰ(Adj)(N) δὴ(Pt) ἐξ(Prp) ἱκανῆς(Adj)(G) ἔσται(Fu)(Akt).
+(614) then sufficient to|nourish the then, smaller indeed out|of sufficient will|be.
+(615) ἢ(Kon) πῶς(Adv) λέγομεν(Prä)(Akt); οὕτως(Adv), ἔφη(Imp)(Akt). οὐκοῦν(Pt) τῆς(Art)(G) τῶν(Art)(G) πλησίον(Adj)(G) χώρας(G)
+(615) or how do|we|say; thus, he|said. well|then of|the of|the near land
+(616) ἡμῖν(Pr)(D) ἀποτμητέον(Adj)(N), εἰ(Kon) μέλλομεν(Prä)(Akt) ἱκανὴν(Adj)(A) ἕξειν(Fu)(Inf)(Akt) νέμειν(Prä)(Akt)(Inf) τε(Pt) καὶ(Kon) ἀροῦν(Fu)(Inf)(Akt),
+(616) to|us to|be|cut|off, if we|are|about sufficient to|have to|pasture and also to|plough,
+(617) καὶ(Kon) ἐκείνοις(Pr)(D) αὖ(Pt) τῆς(Art)(G) ἡμετέρας(Adj)(G), ἐὰν(Kon) καὶ(Kon) ἐκεῖνοι(Pr)(N) ἀφῶσιν(AorS)(Akt)(Knj) αὑτοὺς(Pr)(A)
+(617) and to|those again of|the ours, if|ever also they may|let|go themselves
+(618) ἐπὶ(Prp) χρημάτων(G) κτῆσιν(A) ἄπειρον(Adj)(A), ὑπερβάντες(AorS)(Akt)(N) τὸν(Art)(A) τῶν(Art)(G) ἀναγκαίων(Adj)(G) ὅρον(A); [373e]
+(618) upon of|money acquisition unlimited, having|overstepped the of|the necessary boundary; [373e]
+(619) πολλὴ(Adj)(N) ἀνάγκη(N), ἔφη(Imp)(Akt), ὦ(ij) Σώκρατες(V). πολεμήσομεν(Fu)(Akt) δὴ(Pt) τὸ(Art)(A) μετὰ(Prp) τοῦτο(Pr)(A),
+(619) great necessity, he|said, O Socrates. we|shall|make|war indeed the after this,
+(620) ὦ(ij) Γλαύκων(V); ἢ(Kon) πῶς(Adv) ἔσται(Fu)(Akt); οὕτως(Adv), ἔφη(Imp)(Akt). καὶ(Kon) μηδέν(Pr)(A) γέ(Pt)
+(620) O Glaucon; or how will|it|be; thus, he|said. and nothing indeed
+(621) πω(Adv) λέγωμεν(Prä)(Akt)(Knj), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), μήτʼ(Kon) εἴ(Kon) τι(Pr)(N) κακὸν(Adj)(N) μήτʼ(Kon)
+(621) yet let|us|say, was but I, neither if something bad nor
+(622) εἰ(Kon) ἀγαθὸν(Adj)(N) ὁ(Art)(N) πόλεμος(N) ἐργάζεται(Prä)(M/P), ἀλλὰ(Kon) τοσοῦτον(Adj)(N) μόνον(Adv), ὅτι(Kon) πολέμου(G)
+(622) if good the war works, but so|much only, that of|war
+(623) αὖ(Pt) γένεσιν(A) ηὑρήκαμεν(Per)(Akt), ἐξ(Prp) ὧν(Pr)(G) μάλιστα(Adv)(Sup) ταῖς(Art)(D) πόλεσιν(D) καὶ(Kon) ἰδίᾳ(Adv)
+(623) again origin we|have|found, out|of which most to|the cities and privately
+(624) καὶ(Kon) δημοσίᾳ(Adv) κακὰ(Adj)(N) γίγνεται(Prä)(M/P), ὅταν(Kon) γίγνηται(Prä)(M/P)(Knj). πάνυ(Adv) μὲν(Pt) οὖν(Pt).
+(624) and publicly evils come|to|be, whenever may|come|to|be. very indeed then.
+== St. 374a ==
+(626) [Σωκράτης:] ἔτι(Adv) δή(Pt), ὦ(ij) φίλε(Adj)(V), μείζονος(Adj)(G)(Kmp) τῆς(Art)(G) πόλεως(G) δεῖ(Prä)(Akt) οὔ(Pt)
+(626) [Σωκράτης:] still indeed, O friend, of|greater of|the city there|is|need not
+(627) τι(Pr)(N) σμικρῷ(Adj)(D), ἀλλʼ(Kon) ὅλῳ(Adj)(D) στρατοπέδῳ(D), ὃ(Pr)(N) ἐξελθὸν(AorS)(Akt)(N) ὑπὲρ(Prp) τῆς(Art)(G) οὐσίας(G)
+(627) something small, but whole army, which having|gone|out on|behalf|of of|the property
+(628) ἁπάσης(Adj)(G) καὶ(Kon) ὑπὲρ(Prp) ὧν(Pr)(G) νυνδὴ(Adv) ἐλέγομεν(Imp)(Akt) διαμαχεῖται(Prä)(M/P) τοῖς(Art)(D) ἐπιοῦσιν(Prä)(Akt)(D). τί(Pr)(N)
+(628) of|all and on|behalf|of which just|now we|were|saying fights|it|out with|the coming|on. what
+(629) δέ(Kon); ἦ(Imp)(Akt) δʼ(Kon) ὅς(Pr)(N)· αὐτοὶ(Pr)(N) οὐχ(Pt) ἱκανοί(Adj)(N); οὔκ(Pt), εἰ(Kon) σύ(Pr)(N)
+(629) but; he|said but he· themselves not sufficient; not, if you
+(630) γε(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), καὶ(Kon) ἡμεῖς(Pr)(N) ἅπαντες(Adj)(N) ὡμολογήσαμεν(Aor)(Akt) καλῶς(Adv), ἡνίκα(Kon)
+(630) indeed, was but I, and we all agreed well, when
+(631) ἐπλάττομεν(Imp)(Akt) τὴν(Art)(A) πόλιν(A)· ὡμολογοῦμεν(Imp)(Akt) δέ(Kon) που(Pt), εἰ(Kon) μέμνησαι(Per)(M/P), ἀδύνατον(Adj)(N) ἕνα(Adj)(A)
+(631) we|were|fashioning the city· we|were|agreeing but I|suppose, if you|remember, impossible one
+(632) πολλὰς(Adj)(A) καλῶς(Adv) ἐργάζεσθαι(Prä)(M/P)(Inf) τέχνας(A). ἀληθῆ(Adj)(A) λέγεις(Prä)(Akt), ἔφη(Imp)(Akt). τί(Pr)(N) [374b] οὖν(Pt);
+(632) many well to|work crafts. true you|say, he|said. what [374b] then;
+(633) ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N)· ἡ(Art)(N) περὶ(Prp) τὸν(Art)(A) πόλεμον(A) ἀγωνία(N) οὐ(Pt) τεχνικὴ(Adj)(N)
+(633) was but I· the concerning the war contest not technical
+(634) δοκεῖ(Prä)(Akt) εἶναι(Prä)(Inf)(Akt); καὶ(Kon) μάλα(Adv), ἔφη(Imp)(Akt). ἦ(Pt) οὖν(Pt) τι(Pr)(A) σκυτικῆς(Adj)(G) δεῖ(Prä)(Akt)
+(634) seems to|be; and very, he|said. then then anything of|shoemaking there|is|need
+(635) μᾶλλον(Adv)(Kmp) κήδεσθαι(Prä)(M/P)(Inf) ἢ(Kon) πολεμικῆς(Adj)(G); οὐδαμῶς(Adv). ἀλλʼ(Kon) ἄρα(Pt) τὸν(Art)(A) μὲν(Pt) σκυτοτόμον(A)
+(635) more to|care than of|warfare; in|no|way. but then the indeed shoemaker
+(636) διεκωλύομεν(Prä)(Akt) μήτε(Kon) γεωργὸν(A) ἐπιχειρεῖν(Prä)(Akt)(Inf) εἶναι(Prä)(Inf)(Akt) ἅμα(Adv) μήτε(Kon) ὑφάντην(A) μήτε(Kon) οἰκοδόμον(A)
+(636) we|hinder neither farmer to|attempt to|be at|once nor weaver nor builder
+(637) ἀλλὰ(Kon) σκυτοτόμον(A), ἵνα(Kon) δὴ(Pt) ἡμῖν(Pr)(D) τὸ(Art)(N) τῆς(Art)(G) σκυτικῆς(Adj)(G) ἔργον(N) καλῶς(Adv)
+(637) but shoemaker, in|order|that indeed to|us the of|the shoemaking work well
+(638) γίγνοιτο(Prä)(M/P)(Knj), καὶ(Kon) τῶν(Art)(G) ἄλλων(Adj)(G) ἑνὶ(Adj)(D) ἑκάστῳ(Adj)(D) ὡσαύτως(Adv) ἓν(Adj)(A) ἀπεδίδομεν(Imp)(Akt), πρὸς(Prp)
+(638) may|come|to|be, and of|the others to|one each likewise one we|assigned, towards
+(639) ὃ(Pr)(A) ἐπεφύκει(Plq)(Akt) ἕκαστος(Pr)(N) καὶ(Kon) ἐφʼ(Prp) ᾧ(Pr)(D) ἔμελλε(Imp)(Akt) τῶν(Art)(G) ἄλλων(Adj)(G) [374c]
+(639) which had|grown|to each and upon which was|about of|the others [374c]
+(640) σχολὴν(A) ἄγων(Prä)(Akt)(N) διὰ(Prp) βίου(G) αὐτὸ(Pr)(A) ἐργαζόμενος(Prä)(M/P)(N) οὐ(Pt) παριεὶς(AorS)(Akt)(N) τοὺς(Art)(A) καιροὺς(A)
+(640) leisure leading through life it working not letting|pass the occasions
+(641) καλῶς(Adv) ἀπεργάσεσθαι(Fu)(Med)(Inf)· τὰ(Art)(N) δὲ(Kon) δὴ(Pt) περὶ(Prp) τὸν(Art)(A) πόλεμον(A) πότερον(Kon) οὐ(Pt)
+(641) well to|complete· the but indeed about the war whether not
+(642) περὶ(Prp) πλείστου(Adj)(G)(Sup) ἐστὶν(Prä)(Akt) εὖ(Adv) ἀπεργασθέντα(Aor)(Pas)(A); ἢ(Kon) οὕτω(Adv) ῥᾴδιον(Adj)(N), ὥστε(Kon) καὶ(Kon)
+(642) about the|most it|is well having|been|accomplished; or so easy, so|that also
+(643) γεωργῶν(Prä)(Akt)(N) τις(Pr)(N) ἅμα(Adv) πολεμικὸς(Adj)(N) ἔσται(Fu)(Akt) καὶ(Kon) σκυτοτομῶν(Prä)(Akt)(N) καὶ(Kon) ἄλλην(Adj)(A) τέχνην(A)
+(643) farming someone at|once warlike will|be and shoemaking and another craft
+(644) ἡντινοῦν(Pr)(A) ἐργαζόμενος(Prä)(M/P)(N), πεττευτικὸς(Adj)(N) δὲ(Kon) ἢ(Kon) κυβευτικὸς(Adj)(N) ἱκανῶς(Adv) οὐδʼ(Kon) ἂν(Pt) εἷς(Adj)(N)
+(644) whatever working, board|game|skilled but or dice|play|skilled sufficiently nor would one
+(645) γένοιτο(Aor)(Med)(Op) μὴ(Pt) αὐτὸ(Pr)(A) τοῦτο(Pr)(A) ἐκ(Prp) παιδὸς(G) ἐπιτηδεύων(Prä)(Akt)(N), ἀλλὰ(Kon) παρέργῳ(D) χρώμενος(Prä)(M/P)(N);
+(645) would|become not this very|thing from childhood practicing, but as|a|side|work using;
+(646) καὶ(Kon) [374d] ἀσπίδα(A) μὲν(Pt) λαβὼν(AorS)(Akt)(N) ἤ(Kon) τι(Pr)(A) ἄλλο(Adj)(A) τῶν(Art)(G) πολεμικῶν(Adj)(G)
+(646) and [374d] shield indeed having|taken or something else of|the warlike
+(647) ὅπλων(G) τε(Pt) καὶ(Kon) ὀργάνων(G) αὐθημερὸν(Adv) ὁπλιτικῆς(Adj)(G) ἤ(Kon) τινος(Pr)(G) ἄλλης(Adj)(G) μάχης(G)
+(647) arms and also tools same|day of|hoplite|warfare or of|some other battle
+(648) τῶν(Art)(G) κατὰ(Prp) πόλεμον(A) ἱκανὸς(Adj)(N) ἔσται(Fu)(Akt) ἀγωνιστής(N), τῶν(Art)(G) δὲ(Kon) ἄλλων(Adj)(G) ὀργάνων(G)
+(648) of|the according|to war capable he|will|be combatant, of|the but other tools
+(649) οὐδὲν(Pr)(A) οὐδένα(Pr)(A) δημιουργὸν(A) οὐδὲ(Kon) ἀθλητὴν(A) ληφθὲν(Aor)(Pas)(N) ποιήσει(Fu)(Akt), οὐδʼ(Kon) ἔσται(Fu)(Akt) χρήσιμον(Adj)(N)
+(649) nothing no|one craftsman nor athlete having|been|taken will|make, nor will|be useful
+(650) τῷ(Art)(D) μήτε(Kon) τὴν(Art)(A) ἐπιστήμην(A) ἑκάστου(Pr)(G) λαβόντι(AorS)(Akt)(D) μήτε(Kon) τὴν(Art)(A) μελέτην(A) ἱκανὴν(Adj)(A)
+(650) to|the neither the knowledge of|each having|taken nor the practice sufficient
+(651) παρασχομένῳ(Aor)(Akt)(D); πολλοῦ(Adj)(G) γὰρ(Pt) ἄν(Pt), ἦ(Imp)(Akt) δʼ(Kon) ὅς(Pr)(N), τὰ(Art)(N) ὄργανα(N) ἦν(Imp)(Akt)
+(651) having|provided; of|much for indeed, he|said but he, the tools were
+(652) ἄξια(Adj)(N). οὐκοῦν(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ὅσῳ(Pr)(D) μέγιστον(Adj)(N)(Sup) τὸ(Art)(N) τῶν(Art)(G) φυλάκων(G)
+(652) worthy. well|then, was but I, by|how|much greatest the of|the guards
+(653) ἔργον(N), τοσούτῳ(Pr)(D) [374e] σχολῆς(G) τε(Pt) τῶν(Art)(G) ἄλλων(Adj)(G) πλείστης(Adj)(G)(Sup) ἂν(Pt) εἴη(Prä)(Akt)(Op)
+(653) task, by|so|much [374e] of|leisure and of|the others most would be
+(654) καὶ(Kon) αὖ(Pt) τέχνης(G) τε(Pt) καὶ(Kon) ἐπιμελείας(G) μεγίστης(Adj)(G)(Sup) δεόμενον(Prä)(M/P)(N). οἶμαι(Prä)(Med) ἔγωγε(Pr)(N),
+(654) and again of|art and also of|care greatest needing. I|think I|at|least,
+(655) ἦ(Imp)(Akt) δʼ(Kon) ὅς(Pr)(N). ἆρʼ(Pt) οὖν(Pt) οὐ(Pt) καὶ(Kon) φύσεως(G) ἐπιτηδείας(Adj)(G) εἰς(Prp)
+(655) he|said but he. then then not also of|nature suitable for
+(656) αὐτὸ(Pr)(A) τὸ(Art)(N) ἐπιτήδευμα(N); πῶς(Adv) δʼ(Kon) οὔ(Pt); ἡμέτερον(Adj)(N) δὴ(Pt) ἔργον(N) ἂν(Pt)
+(656) itself the pursuit; how but not; our indeed task would
+(657) εἴη(Prä)(Akt)(Op), ὡς(Kon) ἔοικεν(Per)(Akt), εἴπερ(Kon) οἷοί(Adj)(N) τʼ(Pt) ἐσμέν(Prä)(Akt), ἐκλέξασθαι(Aor)(Med)(Inf) τίνες(Pr)(N) τε(Pt)
+(657) be, as it|seems, if|indeed such|as and we|are, to|choose who and
+(658) καὶ(Kon) ποῖαι(Pr)(N) φύσεις(N) ἐπιτήδειαι(Adj)(N) εἰς(Prp) πόλεως(G) φυλακήν(A). ἡμέτερον(Adj)(N) μέντοι(Pt). μὰ(Prp)
+(658) also what|kind natures suitable for of|city guarding. ours however. by
+(659) Δία(A), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), οὐκ(Pt) ἄρα(Pt) φαῦλον(Adj)(N) πρᾶγμα(N) ἠράμεθα(Aor)(Med)· ὅμως(Adv)
+(659) Zeus, was but I, not then trivial matter we|have|taken|up· nevertheless
+(660) δὲ(Kon) οὐκ(Pt) ἀποδειλιατέον(Adj)(N), ὅσον(Pr)(A) γʼ(Pt) ἂν(Pt) δύναμις(N) παρείκῃ(Prä)(Akt)(Knj).
+(660) but not to|be|cowardly, as|much|as at|least may power may|allow.
+== St. 375a ==
+(662) [Σωκράτης:] οὐ(Pt) γὰρ(Pt) οὖν(Pt), ἔφη(Imp)(Akt). οἴει(Prä)(Akt) οὖν(Pt) τι(Pr)(A), ἦν(Imp)(Akt) δʼ(Kon)
+(662) [Σωκράτης:] not for then, he|said. do|you|think then anything, was but
+(663) ἐγώ(Pr)(N), διαφέρειν(Prä)(Akt)(Inf) φύσιν(A) γενναίου(Adj)(G) σκύλακος(G) εἰς(Prp) φυλακὴν(A) νεανίσκου(G) εὐγενοῦς(Adj)(G); τὸ(Art)(A)
+(663) I, to|differ nature of|noble of|whelp into guarding of|youth well|born; the
+(664) ποῖον(Adj)(A) λέγεις(Prä)(Akt); οἷον(Kon) ὀξύν(Adj)(A) τέ(Pt) που(Pt) δεῖ(Prä)(Akt) αὐτοῖν(Pr)(Du)(D) ἑκάτερον(Adj)(A) εἶναι(Prä)(Akt)(Inf)
+(664) what|kind do|you|say; such|as keen and I|suppose it|is|necessary to|both each|of|the|two to|be
+(665) πρὸς(Prp) αἴσθησιν(A) καὶ(Kon) ἐλαφρὸν(Adj)(A) πρὸς(Prp) τὸ(Art)(A) αἰσθανόμενον(Prä)(M/P)(A) διωκάθειν(Prä)(Akt)(Inf), καὶ(Kon) ἰσχυρὸν(Adj)(A)
+(665) toward perception and light toward the being|perceived to|pursue, and strong
+(666) αὖ(Adv), ἐὰν(Kon) δέῃ(Prä)(Akt)(Knj) ἑλόντα(AorS)(Akt)(A) διαμάχεσθαι(Aor)(Med)(Inf). δεῖ(Prä)(Akt) γὰρ(Pt) οὖν(Pt), ἔφη(Imp)(Akt), πάντων(Adj)(G)
+(666) again, if there|be|need having|taken to|fight|it|out. it|is|necessary for then, he|said, of|all
+(667) τούτων(Pr)(G). καὶ(Kon) μὴν(Pt) ἀνδρεῖόν(Adj)(N) γε(Pt), εἴπερ(Kon) εὖ(Adv) μαχεῖται(Fu)(Med). πῶς(Adv) δʼ(Kon)
+(667) these|things. and indeed brave at|least, if|indeed well he|will|fight. how but
+(668) οὔ(Pt); ἀνδρεῖος(Adj)(N) δὲ(Kon) εἶναι(Prä)(Akt)(Inf) ἆρα(Pt) ἐθελήσει(Fu)(Akt) ὁ(Art)(N) μὴ(Pt) θυμοειδὴς(Adj)(N) εἴτε(Kon)
+(668) not; brave but to|be then will|be|willing the not spirited whether
+(669) ἵππος(N) εἴτε(Kon) κύων(N) ἢ(Kon) ἄλλο(Adj)(N) ὁτιοῦν(Pr)(N) ζῷον(N); ἢ(Kon) οὐκ(Pt) ἐννενόηκας(Per)(Akt)
+(669) horse whether dog or other anything|whatsoever animal; or not you|have|considered
+(670) ὡς(Kon) ἄμαχόν(Adj)(N) [375b] τε(Pt) καὶ(Kon) ἀνίκητον(Adj)(N) θυμός(N), οὗ(Pr)(G) παρόντος(Prä)(Akt)(G) ψυχὴ(N)
+(670) that not|to|be|fought [375b] and also unconquerable spirit, of|which being|present soul
+(671) πᾶσα(Adj)(N) πρὸς(Prp) πάντα(Adj)(A) ἄφοβός(Adj)(N) τέ(Pt) ἐστι(Prä)(Akt) καὶ(Kon) ἀήττητος(Adj)(N); ἐννενόηκα(Per)(Akt). τὰ(Art)(N)
+(671) all toward all|things fearless and is and unconquered; I|have|considered. the
+(672) μὲν(Pt) τοίνυν(Pt) τοῦ(Art)(G) σώματος(G) οἷον(Kon) δεῖ(Prä)(Akt) τὸν(Art)(A) φύλακα(A) εἶναι(Prä)(Akt)(Inf), δῆλα(Adj)(N).
+(672) indeed then of|the body what|sort it|is|necessary the guardian to|be, clear.
+(673) ναί(Pt). καὶ(Kon) μὴν(Pt) καὶ(Kon) τὰ(Art)(N) τῆς(Art)(G) ψυχῆς(G), ὅτι(Kon) γε(Pt) θυμοειδῆ(Adj)(N).
+(673) yes. and indeed and the of|the soul, that at|least spirited.
+(674) καὶ(Kon) τοῦτο(Pr)(N). πῶς(Adv) οὖν(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ὦ(ij) Γλαύκων(V), οὐκ(Pt)
+(674) and this. how then, said but I, O Glaucon, not
+(675) ἄγριοι(Adj)(N) ἀλλήλοις(Pr)(D) τε(Pt) ἔσονται(Fu)(Akt) καὶ(Kon) τοῖς(Art)(D) ἄλλοις(Adj)(D) πολίταις(D), ὄντες(Prä)(Akt)(N) τοιοῦτοι(Adj)(N)
+(675) wild to|one|another and they|will|be and to|the other citizens, being such
+(676) τὰς(Art)(A) φύσεις(A); μὰ(Prp) Δία(A), ἦ(Imp)(Akt) δʼ(Kon) ὅς(Pr)(N), οὐ(Pt) ῥᾳδίως(Adv). [375c]
+(676) the natures; by Zeus, said but he, not easily. [375c]
+(677) ἀλλὰ(Kon) μέντοι(Pt) δεῖ(Prä)(Akt) γε(Pt) πρὸς(Prp) μὲν(Pt) τοὺς(Art)(A) οἰκείους(Adj)(A) πρᾴους(Adj)(A) αὐτοὺς(Pr)(A)
+(677) but however it|is|necessary at|least toward indeed the ones|own gentle themselves
+(678) εἶναι(Prä)(Akt)(Inf), πρὸς(Prp) δὲ(Kon) τοὺς(Art)(A) πολεμίους(A) χαλεπούς(Adj)(A)· εἰ(Kon) δὲ(Kon) μή(Pt), οὐ(Pt)
+(678) to|be, toward but the enemies harsh· if but not, not
+(679) περιμενοῦσιν(Fu)(Akt) ἄλλους(Adj)(A) σφᾶς(Pr)(A) διολέσαι(Aor)(Akt)(Inf), ἀλλʼ(Kon) αὐτοὶ(Pr)(N) φθήσονται(Fu)(Med) αὐτὸ(Pr)(A) δράσαντες(Aor)(Akt)(N). ἀληθῆ(Adj)(N),
+(679) they|will|wait|for others them|selves to|destroy|utterly, but themselves they|will|be|first it having|done. true,
+(680) ἔφη(Imp)(Akt). τί(Pr)(N) οὖν(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ποιήσομεν(Fu)(Akt); πόθεν(Adv) ἅμα(Adv) πρᾷον(Adj)(A)
+(680) he|said. what then, said but I, shall|we|do; whence at|once gentle
+(681) καὶ(Kon) μεγαλόθυμον(Adj)(A) ἦθος(A) εὑρήσομεν(Fu)(Akt); ἐναντία(Adj)(N) γάρ(Pt) που(Pt) θυμοειδεῖ(Adj)(D) πρᾳεῖα(Adj)(N) φύσις(N).
+(681) and great|souled character we|shall|find; opposite for I|suppose to|a|spirited gentle nature.
+(682) φαίνεται(Prä)(M/P). ἀλλὰ(Kon) μέντοι(Pt) τούτων(Pr)(G) γε(Pt) ὁποτέρου(Pr)(G) ἂν(Pt) στέρηται(Prä)(M/P)(Knj), φύλαξ(N) ἀγαθὸς(Adj)(N)
+(682) it|appears. but however of|these at|least of|whichever|of|the|two ever be|deprived, guardian good
+(683) οὐ(Pt) μὴ(Pt) γένηται(Aor)(Med)(Knj)· ταῦτα(Pr)(N) δὲ(Kon) ἀδυνάτοις(Adj)(D) ἔοικεν(Per)(Akt), καὶ(Kon) οὕτω(Adv) [375d]
+(683) not at|all may|become· these|things but to|impossible it|seems, and thus [375d]
+(684) δὴ(Pt) συμβαίνει(Prä)(Akt) ἀγαθὸν(Adj)(A) φύλακα(A) ἀδύνατον(Adj)(A) γενέσθαι(Aor)(Med)(Inf). κινδυνεύει(Prä)(Akt), ἔφη(Imp)(Akt). καὶ(Kon) ἐγὼ(Pr)(N)
+(684) indeed it|happens good guardian impossible to|become. it|is|likely, he|said. and I
+(685) ἀπορήσας(Aor)(Akt)(N) τε(Pt) καὶ(Kon) ἐπισκεψάμενος(Aor)(Med)(N) τὰ(Art)(A) ἔμπροσθεν(Adv), δικαίως(Adv) γε(Pt), ἦν(Imp)(Akt) δʼ(Kon)
+(685) having|been|perplexed and and|also having|considered the earlier, justly at|least, said but
+(686) ἐγώ(Pr)(N), ὦ(ij) φίλε(Adj)(V), ἀποροῦμεν(Prä)(Akt)· ἧς(Pr)(G) γὰρ(Pt) προυθέμεθα(Aor)(Med) εἰκόνος(G) ἀπελείφθημεν(Aor)(Pas). πῶς(Adv)
+(686) I, O friend, we|are|at|a|loss· of|which for we|set|forth of|image we|were|left. how
+(687) λέγεις(Prä)(Akt); οὐκ(Pt) ἐννενοήκαμεν(Per)(Akt) ὅτι(Kon) εἰσὶν(Prä)(Akt) ἄρα(Pt) φύσεις(N) οἵας(Pr)(A) ἡμεῖς(Pr)(N) οὐκ(Pt)
+(687) do|you|say; not we|have|realized that there|are then natures such|as we not
+(688) ᾠήθημεν(Aor)(M/P), ἔχουσαι(Prä)(Akt)(N) τἀναντία(Art)(Adj)(A) ταῦτα(Pr)(A). ποῦ(Adv) δή(Pt); ἴδοι(Aor)(Akt)(Op) μὲν(Pt) ἄν(Pt) τις(Pr)(N)
+(688) we|supposed, having the|opposite|things these|things. where indeed; might|see indeed ever someone
+(689) καὶ(Kon) ἐν(Prp) ἄλλοις(Adj)(D) ζῴοις(D), οὐ(Pt) μεντἂν(Pt) ἥκιστα(Adv)(Sup) ἐν(Prp) [375e] ᾧ(Pr)(D)
+(689) and in other animals, not at|least least in [375e] which
+(690) ἡμεῖς(Pr)(N) παρεβάλλομεν(Imp)(Akt) τῷ(Art)(D) φύλακι(D). οἶσθα(Per)(Akt) γάρ(Pt) που(Pt) τῶν(Art)(G) γενναίων(Adj)(G) κυνῶν(G),
+(690) we we|were|comparing to|the guardian. you|know for I|suppose of|the noble dogs,
+(691) ὅτι(Kon) τοῦτο(Pr)(N) φύσει(D) αὐτῶν(Pr)(G) τὸ(Art)(N) ἦθος(N), πρὸς(Prp) μὲν(Pt) τοὺς(Art)(A) συνήθεις(Adj)(A)
+(691) that this by|nature of|them the character, toward indeed the familiar
+(692) τε(Pt) καὶ(Kon) γνωρίμους(Adj)(A) ὡς(Kon) οἷόν(Adj)(A) τε(Pt) πρᾳοτάτους(Adj)(Sup)(A) εἶναι(Prä)(Akt)(Inf), πρὸς(Prp) δὲ(Kon)
+(692) and also well|known as as|far|as|possible and most|gentle to|be, toward but
+(693) τοὺς(Art)(A) ἀγνῶτας(Adj)(A) τοὐναντίον(Art)(Adj)(N). οἶδα(Per)(Akt) μέντοι(Pt). τοῦτο(Pr)(N) μὲν(Pt) ἄρα(Pt), ἦν(Imp)(Akt) δʼ(Kon)
+(693) the strangers the|opposite. I|know however. this indeed then, said but
+(694) ἐγώ(Pr)(N), δυνατόν(Adj)(N), καὶ(Kon) οὐ(Pt) παρὰ(Prp) φύσιν(A) ζητοῦμεν(Prä)(Akt) τοιοῦτον(Adj)(A) εἶναι(Prä)(Akt)(Inf) τὸν(Art)(A)
+(694) I, possible, and not contrary|to nature we|seek such to|be the
+(695) φύλακα(A). οὐκ(Pt) ἔοικεν(Per)(Akt). ἆρʼ(Pt) οὖν(Pt) σοι(Pr)(D) δοκεῖ(Prä)(Akt) ἔτι(Adv) τοῦδε(Pr)(G) προσδεῖσθαι(Prä)(M/P)(Inf)
+(695) guardian. not it|seems. then then to|you seems still of|this to|need|besides
+(696) ὁ(Art)(N) φυλακικὸς(Adj)(N) ἐσόμενος(Fu)(Med)(N), πρὸς(Prp) τῷ(Art)(D) θυμοειδεῖ(Adj)(D) ἔτι(Adv) προσγενέσθαι(Aor)(Med)(Inf) φιλόσοφος(Adj)(N) τὴν(Art)(A)
+(696) the guardian|like being|about|to|be, in|addition|to the spirited still to|be|added philosopher|like the
+(697) φύσιν(A);
+(697) nature;
+== St. 376a ==
+(699) [Σωκράτης:] πῶς(Adv) δή(Pt); ἔφη(Imp)(Akt)· οὐ(Pt) γὰρ(Pt) ἐννοῶ(Prä)(Akt). καὶ(Kon) τοῦτο(Pr)(A), ἦν(Imp)(Akt)
+(699) [Σωκράτης:] how indeed; he|said· not for I|perceive. and this, said
+(700) δʼ(Kon) ἐγώ(Pr)(N), ἐν(Prp) τοῖς(Art)(D) κυσὶν(D) κατόψει(Fu)(Akt), ὃ(Pr)(A) καὶ(Kon) ἄξιον(Adj)(N) θαυμάσαι(Aor)(Akt)(Inf)
+(700) but I, in the dogs you|will|see, which and|also worthy to|marvel
+(701) τοῦ(Art)(G) θηρίου(G). τὸ(Art)(N) ποῖον(Adj)(N); ὅτι(Kon) ὃν(Pr)(A) μὲν(Pt) ἂν(Pt) ἴδῃ(Aor)(Akt)(Knj) ἀγνῶτα(Adj)(A),
+(701) of|the beast. the what|kind; that whom indeed ever he|see unknown,
+(702) χαλεπαίνει(Prä)(Akt), οὐδὲ(Kon) ἓν(Adj)(A) κακὸν(Adj)(A) προπεπονθώς(Per)(Akt)(N)· ὃν(Pr)(A) δʼ(Kon) ἂν(Pt) γνώριμον(Adj)(A), ἀσπάζεται(Prä)(M/P),
+(702) he|is|angry, nor|even one bad|thing having|previously|suffered· whom but ever well|known, he|welcomes,
+(703) κἂν(Kon)(Pt) μηδὲν(Pr)(A) πώποτε(Adv) ὑπʼ(Prp) αὐτοῦ(Pr)(G) ἀγαθὸν(Adj)(A) πεπόνθῃ(Per)(Akt)(Knj). ἢ(Kon) οὔπω(Adv) τοῦτο(Pr)(N)
+(703) and|if nothing ever by him good he|have|suffered. or not|yet this
+(704) ἐθαύμασας(Aor)(Akt); οὐ(Pt) πάνυ(Adv), ἔφη(Imp)(Akt), μέχρι(Prp) τούτου(Pr)(G) προσέσχον(Aor)(Akt) τὸν(Art)(A) νοῦν(A)· ὅτι(Kon)
+(704) did|you|marvel; not much, he|said, up|to this I|paid|attention the mind· that
+(705) δέ(Kon) που(Pt) δρᾷ(Prä)(Akt) ταῦτα(Pr)(A), δῆλον(Adj)(N). ἀλλὰ(Kon) μὴν(Pt) κομψόν(Adj)(N) γε(Pt) φαίνεται(Prä)(M/P)
+(705) but I|suppose he|does these|things, clear. but indeed subtle at|least it|appears
+(706) τὸ(Art)(N) πάθος(N) αὐτοῦ(Pr)(G) τῆς(Art)(G) φύσεως(G) [376b] καὶ(Kon) ὡς(Kon) ἀληθῶς(Adv) φιλόσοφον(Adj)(N).
+(706) the disposition of|him of|the nature [376b] and as truly philosophical.
+(707) πῇ(Adv) δή(Pt); ἧι(Pr), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ὄψιν(A) οὐδενὶ(Pr)(D) ἄλλῳ(Adj)(D) φίλην(Adj)(A)
+(707) in|what|way indeed; in|that, said but I, sight to|no|one other friendly
+(708) καὶ(Kon) ἐχθρὰν(Adj)(A) διακρίνει(Prä)(Akt) ἢ(Kon) τῷ(Art)(D) τὴν(Art)(A) μὲν(Pt) καταμαθεῖν(Aor)(Akt)(Inf), τὴν(Art)(A) δὲ(Kon)
+(708) and hostile he|distinguishes by the the indeed to|learn|thoroughly, the but
+(709) ἀγνοῆσαι(Aor)(Akt)(Inf). καίτοι(Pt) πῶς(Adv) οὐκ(Pt) ἂν(Pt) φιλομαθὲς(Adj)(N) εἴη(Prä)(Akt)(Op) συνέσει(D) τε(Pt) καὶ(Kon)
+(709) to|be|ignorant. and|yet how not ever fond|of|learning might|be with|understanding and also
+(710) ἀγνοίᾳ(D) ὁριζόμενον(Prä)(M/P)(A) τό(Art)(N) τε(Pt) οἰκεῖον(Adj)(A) καὶ(Kon) τὸ(Art)(A) ἀλλότριον(Adj)(A); οὐδαμῶς(Adv), ἦ(Imp)(Akt)
+(710) with|ignorance being|defined the and ones|own and the alien; in|no|way, said
+(711) δʼ(Kon) ὅς(Pr)(N), ὅπως(Adv) οὔ(Pt). ἀλλὰ(Kon) μέντοι(Pt), εἶπον(Aor)(Akt) ἐγώ(Pr)(N), τό(Art)(N) γε(Pt)
+(711) but he, how not. but however, I|said I, the at|least
+(712) φιλομαθὲς(Adj)(N) καὶ(Kon) φιλόσοφον(Adj)(N) ταὐτόν(Art)(Adj)(N); ταὐτὸν(Art)(Adj)(N) γάρ(Pt), ἔφη(Imp)(Akt). οὐκοῦν(Pt) θαρροῦντες(Prä)(Akt)(N) τιθῶμεν(Prä)(Akt)(Knj)
+(712) love|learning and philosophic the|same; the|same for, he|said. therefore being|bold let|us|place
+(713) καὶ(Kon) ἐν(Prp) ἀνθρώπῳ(D), εἰ(Kon) μέλλει(Prä)(Akt) πρὸς(Prp) [376c] τοὺς(Art)(A) οἰκείους(Adj)(A) καὶ(Kon)
+(713) also in a|man, if is|about|to toward [376c] the ones|own and
+(714) γνωρίμους(Adj)(A) πρᾷός(Adj)(N) τις(Pr)(N) ἔσεσθαι(Fu)(Med)(Inf), φύσει(D) φιλόσοφον(Adj)(A) καὶ(Kon) φιλομαθῆ(Adj)(A) αὐτὸν(Pr)(A) δεῖν(Prä)(Akt)(Inf)
+(714) well|known gentle someone to|be|going|to|be, by|nature philosophical and fond|of|learning him to|be|necessary
+(715) εἶναι(Prä)(Akt)(Inf); τιθῶμεν(Prä)(Akt)(Knj), ἔφη(Imp)(Akt). φιλόσοφος(Adj)(N) δὴ(Pt) καὶ(Kon) θυμοειδὴς(Adj)(N) καὶ(Kon) ταχὺς(Adj)(N) καὶ(Kon)
+(715) to|be; let|us|place, he|said. philosophical indeed and spirited and swift and
+(716) ἰσχυρὸς(Adj)(N) ἡμῖν(Pr)(D) τὴν(Art)(A) φύσιν(A) ἔσται(Fu)(Akt) ὁ(Art)(N) μέλλων(Prä)(Akt)(N) καλὸς(Adj)(N) κἀγαθὸς(Kon)(Adj)(N) ἔσεσθαι(Fu)(Med)(Inf)
+(716) strong to|us the nature will|be the being|about|to beautiful and|good to|be|going|to|be
+(717) φύλαξ(N) πόλεως(G). παντάπασι(Adv) μὲν(Pt) οὖν(Pt), ἔφη(Imp)(Akt). οὗτος(Pr)(N) μὲν(Pt) δὴ(Pt) ἂν(Pt)
+(717) guardian of|city. altogether indeed then, he|said. this indeed surely would
+(718) οὕτως(Adv) ὑπάρχοι(Prä)(Akt)(Op). θρέψονται(Fu)(Med) δὲ(Kon) δὴ(Pt) ἡμῖν(Pr)(D) οὗτοι(Pr)(N) καὶ(Kon) παιδευθήσονται(Fu)(Pas) τίνα(Adj)(A)
+(718) thus would|be. they|will|be|reared but indeed for|us these and will|be|educated what|kind
+(719) τρόπον(A); καὶ(Kon) ἆρά(Pt) τι(Pr)(A) προὔργου(Adv) ἡμῖν(Pr)(D) ἐστιν(Prä)(Akt) αὐτὸ(Pr)(A) σκοποῦσι(Prä)(Akt)(D) πρὸς(Prp)
+(719) way; and then anything to|advantage for|us is this to|those|considering toward
+(720) τὸ(Art)(A) κατιδεῖν(Aor)(Akt)(Inf) οὗπερ(Pr)(G) ἕνεκα(Prp) πάντα(Adj)(A) [376d] σκοποῦμεν(Prä)(Akt), δικαιοσύνην(A) τε(Pt) καὶ(Kon)
+(720) the to|behold of|which|precisely for|the|sake|of all|things [376d] we|consider, justice and also
+(721) ἀδικίαν(A) τίνα(Adj)(A) τρόπον(A) ἐν(Prp) πόλει(D) γίγνεται(Prä)(M/P); ἵνα(Kon) μὴ(Pt) ἐῶμεν(Prä)(Akt)(Knj) ἱκανὸν(Adj)(A)
+(721) injustice what|kind way in city comes|to|be; in|order|that not we|allow sufficient
+(722) λόγον(A) ἢ(Kon) συχνὸν(Adj)(A) διεξίωμεν(Prä)(Akt)(Knj). καὶ(Kon) ὁ(Art)(N) τοῦ(Art)(G) Γλαύκωνος(G) ἀδελφός(N), πάνυ(Adv)
+(722) account or long we|go|through. and the of|the Glaucon brother, very
+(723) μὲν(Pt) οὖν(Pt), ἔφη(Imp)(Akt), ἔγωγε(Pr)(N) προσδοκῶ(Prä)(Akt) προὔργου(Adv) εἶναι(Prä)(Akt)(Inf) εἰς(Prp) τοῦτο(Pr)(A) ταύτην(Pr)(A)
+(723) indeed then, he|said, I|at|least I|expect to|advantage to|be into this this
+(724) τὴν(Art)(A) σκέψιν(A). μὰ(Prp) Δία(A), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ὦ(ij) φίλε(Adj)(V) Ἀδείμαντε(V),
+(724) the inquiry. by Zeus, said but I, O friend Adeimantus,
+(725) οὐκ(Pt) ἄρα(Pt) ἀφετέον(Adj)(N), οὐδʼ(Kon) εἰ(Kon) μακροτέρα(Adj)(Kmp)(N) τυγχάνει(Prä)(Akt) οὖσα(Prä)(Akt)(N). οὐ(Pt) γὰρ(Pt)
+(725) not then to|be|let|go, and|not if longer happens being. not for
+(726) οὖν(Pt). ἴθι(Prä)(Akt)(Imv) οὖν(Pt), ὥσπερ(Kon) ἐν(Prp) μύθῳ(D) μυθολογοῦντές(Prä)(Akt)(N) τε(Pt) καὶ(Kon) σχολὴν(A)
+(726) then. go then, just|as in myth myth|telling and also leisure
+(727) ἄγοντες(Prä)(Akt)(N) λόγῳ(D) παιδεύωμεν(Prä)(Akt)(Knj) τοὺς(Art)(A) ἄνδρας(A). ἀλλὰ(Kon) [376e] χρή(Prä)(Akt). τίς(Pr)(N) οὖν(Pt)
+(727) leading by|account let|us|educate the men. but [376e] it|is|necessary. who then
+(728) ἡ(Art)(N) παιδεία(N); ἢ(Kon) χαλεπὸν(Adj)(N) εὑρεῖν(Aor)(Akt)(Inf) βελτίω(Adj)(Kmp)(A) τῆς(Art)(G) ὑπὸ(Prp) τοῦ(Art)(G) πολλοῦ(Adj)(G)
+(728) the education; or difficult to|find better than|the under the many
+(729) χρόνου(G) ηὑρημένης(Per)(Pas)(G); ἔστιν(Prä)(Akt) δέ(Kon) που(Pt) ἡ(Art)(N) μὲν(Pt) ἐπὶ(Prp) σώμασι(D) γυμναστική(N),
+(729) time having|been|found; there|is but I|suppose the indeed upon bodies gymnastic,
+(730) ἡ(Art)(N) δʼ(Kon) ἐπὶ(Prp) ψυχῇ(D) μουσική(N). ἔστιν(Prä)(Akt) γάρ(Pt). ἆρʼ(Pt) οὖν(Pt) οὐ(Pt)
+(730) the but upon soul music. there|is for. then now not
+(731) μουσικῇ(D) πρότερον(Adv)(Kmp) ἀρξόμεθα(Fu)(Med) παιδεύοντες(Prä)(Akt)(N) ἢ(Kon) γυμναστικῇ(D); πῶς(Adv) δʼ(Kon) οὔ(Pt); μουσικῆς(G)
+(731) with|music earlier we|shall|begin educating or with|gymnastic; how but not; of|music
+(732) δʼ(Kon), εἶπον(Aor)(Akt), τιθεῖς(Prä)(Akt) λόγους(A), ἢ(Kon) οὔ(Pt); ἔγωγε(Pr)(N). λόγων(G) δὲ(Kon) διττὸν(Adj)(N)
+(732) but, I|said, do|you|set speeches, or not; I|at|least. of|speeches but twofold
+(733) εἶδος(N), τὸ(Art)(N) μὲν(Pt) ἀληθές(Adj)(N), ψεῦδος(N) δʼ(Kon) ἕτερον(Adj)(N); ναί(Pt).
+(733) kind, the indeed true, falsehood but other; yes.
+== St. 377a ==
+(735) [Σωκράτης:] παιδευτέον(Adj)(N) δʼ(Kon) ἐν(Prp) ἀμφοτέροις(Adj)(D), πρότερον(Adv)(Kmp) δʼ(Kon) ἐν(Prp) τοῖς(Art)(D) ψευδέσιν(Adj)(D);
+(735) [Σωκράτης:] to|be|educated but in both, earlier but in the false|things;
+(736) οὐ(Pt) μανθάνω(Prä)(Akt), ἔφη(Imp)(Akt), πῶς(Adv) λέγεις(Prä)(Akt). οὐ(Pt) μανθάνεις(Prä)(Akt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N),
+(736) not I|learn, he|said, how you|say. not you|learn, was but I,
+(737) ὅτι(Kon) πρῶτον(Adv)(Sup) τοῖς(Art)(D) παιδίοις(D) μύθους(A) λέγομεν(Prä)(Akt); τοῦτο(Pr)(N) δέ(Kon) που(Pt) ὡς(Kon)
+(737) that first to|the little|children myths we|say; this but I|suppose as
+(738) τὸ(Art)(N) ὅλον(Adj)(N) εἰπεῖν(Aor)(Akt)(Inf) ψεῦδος(N), ἔνι(Adv) δὲ(Kon) καὶ(Kon) ἀληθῆ(Adj)(A). πρότερον(Adv)(Kmp) δὲ(Kon)
+(738) the whole to|say falsehood, there|is|in but and true|things. earlier but
+(739) μύθοις(D) πρὸς(Prp) τὰ(Art)(A) παιδία(A) ἢ(Kon) γυμνασίοις(D) χρώμεθα(Prä)(M/P). ἔστι(Prä)(Akt) ταῦτα(Pr)(N). τοῦτο(Pr)(N)
+(739) with|myths toward the children or with|exercises we|use. there|is these|things. this
+(740) δὴ(Pt) ἔλεγον(Imp)(Akt), ὅτι(Kon) μουσικῆς(G) πρότερον(Adv)(Kmp) ἁπτέον(Adj)(N) ἢ(Kon) γυμναστικῆς(G). ὀρθῶς(Adv), ἔφη(Imp)(Akt).
+(740) indeed I|was|saying, that of|music earlier to|be|taken|hold|of than of|gymnastic. rightly, he|said.
+(741) οὐκοῦν(Pt) οἶσθʼ(Per)(Akt) ὅτι(Kon) ἀρχὴ(N) παντὸς(Adj)(G) ἔργου(G) μέγιστον(Adj)(Sup)(N), ἄλλως(Adv) τε(Pt) [377b]
+(741) well|then you|know that beginning of|every work greatest, otherwise and [377b]
+(742) δὴ(Pt) καὶ(Kon) νέῳ(Adj)(D) καὶ(Kon) ἁπαλῷ(Adj)(D) ὁτῳοῦν(Pr)(D); μάλιστα(Adv)(Sup) γὰρ(Pt) δὴ(Pt) τότε(Adv)
+(742) indeed and to|a|young and to|a|tender to|anyone|at|all; most for indeed then
+(743) πλάττεται(Prä)(M/P), καὶ(Kon) ἐνδύεται(Prä)(M/P) τύπος(N) ὃν(Pr)(A) ἄν(Pt) τις(Pr)(N) βούληται(Prä)(Med)(Knj) ἐνσημήνασθαι(Aor)(Med)(Inf) ἑκάστῳ(Pr)(D).
+(743) is|moulded, and puts|on form which ever someone may|wish to|mark|in to|each.
+(744) κομιδῇ(Adv) μὲν(Pt) οὖν(Pt). ἆρʼ(Pt) οὖν(Pt) ῥᾳδίως(Adv) οὕτω(Adv) παρήσομεν(Fu)(Akt) τοὺς(Art)(A) ἐπιτυχόντας(AorS)(Akt)(A)
+(744) altogether indeed then. then now easily thus we|shall|let|pass the having|happened|upon
+(745) ὑπὸ(Prp) τῶν(Art)(G) ἐπιτυχόντων(AorS)(Akt)(G) μύθους(A) πλασθέντας(Aor)(Pas)(A) ἀκούειν(Prä)(Akt)(Inf) τοὺς(Art)(A) παῖδας(A) καὶ(Kon) λαμβάνειν(Prä)(Akt)(Inf)
+(745) by of|the having|happened|upon myths having|been|formed to|hear the children and to|receive
+(746) ἐν(Prp) ταῖς(Art)(D) ψυχαῖς(D) ὡς(Kon) ἐπὶ(Prp) τὸ(Art)(A) πολὺ(Adj)(A) ἐναντίας(Adj)(A) δόξας(A) ἐκείναις(Pr)(D)
+(746) in the souls as upon the much opposite opinions to|those
+(747) ἅς(Pr)(A), ἐπειδὰν(Kon) τελεωθῶσιν(Aor)(Pas)(Knj), ἔχειν(Prä)(Akt)(Inf) οἰησόμεθα(Fu)(Med) δεῖν(Prä)(Akt)(Inf) αὐτούς(Pr)(A); οὐδʼ(Kon) ὁπωστιοῦν(Adv) παρήσομεν(Fu)(Akt).
+(747) which, whenever may|be|perfected, to|have we|shall|think to|be|necessary them; nor in|any|way we|shall|allow.
+(748) πρῶτον(Adv)(Sup) δὴ(Pt) ἡμῖν(Pr)(D), ὡς(Kon) ἔοικεν(Per)(Akt), ἐπιστατητέον(Adj)(N) τοῖς(Art)(D) μυθοποιοῖς(D), καὶ(Kon) [377c]
+(748) first indeed to|us, as it|seems, to|be|superintended to|the myth|makers, and [377c]
+(749) ὃν(Pr)(A) μὲν(Pt) ἂν(Pt) καλὸν(Adj)(A) μῦθον(A) ποιήσωσιν(Aor)(Akt)(Knj), ἐγκριτέον(Adj)(N), ὃν(Pr)(A) δʼ(Kon) ἂν(Pt)
+(749) which indeed ever fine myth they|may|make, to|be|approved, which but ever
+(750) μή(Pt), ἀποκριτέον(Adj)(N). τοὺς(Art)(A) δʼ(Kon) ἐγκριθέντας(Aor)(Pas)(A) πείσομεν(Fu)(Akt) τὰς(Art)(A) τροφούς(A) τε(Pt) καὶ(Kon)
+(750) not, to|be|rejected. the but having|been|approved we|shall|persuade the nurses and also
+(751) μητέρας(A) λέγειν(Prä)(Akt)(Inf) τοῖς(Art)(D) παισίν(D), καὶ(Kon) πλάττειν(Prä)(Akt)(Inf) τὰς(Art)(A) ψυχὰς(A) αὐτῶν(Pr)(G) τοῖς(Art)(D)
+(751) mothers to|speak to|the children, and to|mould the souls of|them with|the
+(752) μύθοις(D) πολὺ(Adj)(A) μᾶλλον(Adv)(Kmp) ἢ(Kon) τὰ(Art)(A) σώματα(A) ταῖς(Art)(D) χερσίν(D)· ὧν(Pr)(G) δὲ(Kon)
+(752) myths much more than the bodies with|the hands· of|which but
+(753) νῦν(Adv) λέγουσι(Prä)(Akt) τοὺς(Art)(A) πολλοὺς(Adj)(A) ἐκβλητέον(Adj)(N). ποίους(Adj)(A) δή(Pt); ἔφη(Imp)(Akt). ἐν(Prp) τοῖς(Art)(D)
+(753) now they|say the many to|be|cast|out. which indeed; he|said. in the
+(754) μείζοσιν(Adj)(Kmp)(D), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), μύθοις(D) ὀψόμεθα(Fu)(Med) καὶ(Kon) τοὺς(Art)(A) ἐλάττους(Adj)(Kmp)(A). δεῖ(Prä)(Akt)
+(754) greater, was but I, myths we|shall|see and the lesser. it|is|necessary
+(755) γὰρ(Pt) δὴ(Pt) τὸν(Art)(A) αὐτὸν(Pr)(A) τύπον(A) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) ταὐτὸν(Pr)(A) δύνασθαι(Prä)(M/P)(Inf) [377d]
+(755) for indeed the same pattern to|be and the|same to|be|able [377d]
+(756) τούς(Art)(A) τε(Pt) μείζους(Adj)(Kmp)(A) καὶ(Kon) τοὺς(Art)(A) ἐλάττους(Adj)(Kmp)(A). ἢ(Kon) οὐκ(Pt) οἴει(Prä)(Akt); ἔγωγʼ(Pr)(N),
+(756) the and greater and the lesser. or not do|you|think; I|for|my|part,
+(757) ἔφη(Imp)(Akt)· ἀλλʼ(Kon) οὐκ(Pt) ἐννοῶ(Prä)(Akt) οὐδὲ(Kon) τοὺς(Art)(A) μείζους(Adj)(Kmp)(A) τίνας(Pr)(A) λέγεις(Prä)(Akt). οὓς(Pr)(A)
+(757) he|said· but not I|perceive nor the greater which you|say. whom
+(758) Ἡσίοδός(N) τε(Pt), εἶπον(Aor)(Akt), καὶ(Kon) Ὅμηρος(N) ἡμῖν(Pr)(D) ἐλεγέτην(Imp)(Akt)(Du) καὶ(Kon) οἱ(Art)(N) ἄλλοι(Adj)(N)
+(758) Hesiod and, I|said, and Homer to|us they|two|were|saying and the other
+(759) ποιηταί(N). οὗτοι(Pr)(N) γάρ(Pt) που(Pt) μύθους(A) τοῖς(Art)(D) ἀνθρώποις(D) ψευδεῖς(Adj)(A) συντιθέντες(Prä)(Akt)(N) ἔλεγόν(Imp)(Akt)
+(759) poets. these for I|suppose myths to|the humans false putting|together they|were|saying
+(760) τε(Pt) καὶ(Kon) λέγουσι(Prä)(Akt). ποίους(Adj)(A) δή(Pt), ἦ(Imp)(Akt) δʼ(Kon) ὅς(Pr)(N), καὶ(Kon) τί(Pr)(N)
+(760) and also they|say. which indeed, said but he, and what
+(761) αὐτῶν(Pr)(G) μεμφόμενος(Prä)(M/P)(N) λέγεις(Prä)(Akt); ὅπερ(Pr)(N), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), χρὴ(Prä)(Akt) καὶ(Kon) πρῶτον(Adv)(Sup)
+(761) of|them blaming do|you|say; that|very|thing, was but I, it|is|necessary and first
+(762) καὶ(Kon) μάλιστα(Adv)(Sup) μέμφεσθαι(Prä)(M/P)(Inf), ἄλλως(Adv) τε(Pt) καὶ(Kon) ἐάν(Kon) τις(Pr)(N) μὴ(Pt) καλῶς(Adv)
+(762) and most to|blame, otherwise and also if someone not well
+(763) ψεύδηται(Prä)(M/P)(Knj). τί(Pr)(N) τοῦτο(Pr)(N); ὅταν(Kon) [377e] εἰκάζῃ(Prä)(Akt)(Knj) τις(Pr)(N) κακῶς(Adv) οὐσίαν(A) τῷ(Art)(D)
+(763) he|may|lie. what this; whenever [377e] he|may|liken someone badly essence by|the
+(764) λόγῳ(D), περὶ(Prp) θεῶν(G) τε(Pt) καὶ(Kon) ἡρώων(G) οἷοί(Pr)(N) εἰσιν(Prä)(Akt), ὥσπερ(Kon) γραφεὺς(N)
+(764) word, about of|gods and also of|heroes of|what|sort they|are, just|as painter
+(765) μηδὲν(Pr)(A) ἐοικότα(Per)(Akt)(A) γράφων(Prä)(Akt)(N) οἷς(Pr)(D) ἂν(Pt) ὅμοια(Adj)(A) βουληθῇ(Aor)(Med)(Knj) γράψαι(Aor)(Akt)(Inf). καὶ(Kon) γάρ(Pt),
+(765) nothing having|been|like drawing to|which ever similar he|may|wish to|write. and for,
+(766) ἔφη(Imp)(Akt), ὀρθῶς(Adv) ἔχει(Prä)(Akt) τά(Art)(N) γε(Pt) τοιαῦτα(Adj)(N) μέμφεσθαι(Prä)(M/P)(Inf). ἀλλὰ(Kon) πῶς(Adv) δὴ(Pt)
+(766) he|said, rightly it|holds the at|least such|things to|blame. but how indeed
+(767) λέγομεν(Prä)(Akt) καὶ(Kon) ποῖα(Adj)(N);
+(767) do|we|say and what|kinds;
+== St. 378a ==
+(769) [Σωκράτης:] πρῶτον(Adv)(Sup) μέν(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), τὸ(Art)(N) μέγιστον(Adj)(Sup)(N) καὶ(Kon) περὶ(Prp)
+(769) [Σωκράτης:] first indeed, was but I, the greatest and about
+(770) τῶν(Art)(G) μεγίστων(Adj)(Sup)(G) ψεῦδος(N) ὁ(Art)(N) εἰπὼν(AorS)(Akt)(N) οὐ(Pt) καλῶς(Adv) ἐψεύσατο(Aor)(Med) ὡς(Kon) Οὐρανός(N)
+(770) of|the greatest falsehood the having|said not well lied how Ouranos
+(771) τε(Pt) ἠργάσατο(Aor)(Med) ἅ(Pr)(A) φησι(Prä)(Akt) δρᾶσαι(Aor)(Akt)(Inf) αὐτὸν(Pr)(A) Ἡσίοδος(N), ὅ(Pr)(N) τε(Pt) αὖ(Pt)
+(771) and worked the|things he|says to|have|done him Hesiod, who and again
+(772) Κρόνος(N) ὡς(Kon) ἐτιμωρήσατο(Aor)(Med) αὐτόν(Pr)(A). τὰ(Art)(N) δὲ(Pt) δὴ(Pt) τοῦ(Art)(G) Κρόνου(G) ἔργα(N)
+(772) Kronos how he|took|vengeance him. the but indeed of|the Kronos deeds
+(773) καὶ(Kon) πάθη(N) ὑπὸ(Prp) τοῦ(Art)(G) ὑέος(G), οὐδʼ(Kon) ἂν(Pt) εἰ(Kon) ἦν(Imp)(Akt) ἀληθῆ(Adj)(A)
+(773) and sufferings by the son, nor ever if it|was true|things
+(774) ᾤμην(Imp)(Med) δεῖν(Prä)(Akt)(Inf) ῥᾳδίως(Adv) οὕτως(Adv) λέγεσθαι(Prä)(M/P)(Inf) πρὸς(Prp) ἄφρονάς(Adj)(A) τε(Pt) καὶ(Kon) νέους(Adj)(A),
+(774) I|was|thinking to|be|necessary easily thus to|be|said toward senseless and also young,
+(775) ἀλλὰ(Kon) μάλιστα(Adv)(Sup) μὲν(Pt) σιγᾶσθαι(Prä)(M/P)(Inf), εἰ(Kon) δὲ(Kon) ἀνάγκη(N) τις(Pr)(N) ἦν(Imp)(Akt) λέγειν(Prä)(Akt)(Inf),
+(775) but most indeed to|be|silent, if but necessity someone was to|speak,
+(776) διʼ(Prp) ἀπορρήτων(Adj)(G) ἀκούειν(Prä)(Akt)(Inf) ὡς(Kon) ὀλιγίστους(Adj)(Sup)(A), θυσαμένους(Aor)(Med)(A) οὐ(Pt) χοῖρον(A) ἀλλά(Kon) τι(Pr)(A)
+(776) by secrets to|hear as very|few, having|sacrificed not pig but some
+(777) μέγα(Adj)(A) καὶ(Kon) ἄπορον(Adj)(A) θῦμα(A), ὅπως(Kon) ὅτι(Kon) ἐλαχίστοις(Adj)(Sup)(D) συνέβη(AorS)(Akt) ἀκοῦσαι(Aor)(Akt)(Inf). καὶ(Kon)
+(777) great and hard|to|get offering, in|order|that that to|the|fewest it|befell to|hear. and
+(778) γάρ(Pt), ἦ(Imp)(Akt) δʼ(Kon) ὅς(Pr)(N), οὗτοί(Pr)(N) γε(Pt) οἱ(Art)(N) λόγοι(N) χαλεποί(Adj)(N). [378b]
+(778) for, said but he, these at|least the words hard. [378b]
+(779) καὶ(Kon) οὐ(Pt) λεκτέοι(Adj)(N) γʼ(Pt), ἔφην(Imp)(Akt), ὦ(ij) Ἀδείμαντε(V), ἐν(Prp) τῇ(Art)(D) ἡμετέρᾳ(Adj)(D)
+(779) and not to|be|spoken at|least, I|said, O Adeimantus, in the our
+(780) πόλει(D). οὐδὲ(Kon) λεκτέον(Adj)(N) νέῳ(Adj)(D) ἀκούοντι(Prä)(Akt)(D) ὡς(Kon) ἀδικῶν(Prä)(Akt)(N) τὰ(Art)(A) ἔσχατα(Adj)(A) οὐδὲν(Pr)(A)
+(780) city. nor to|be|said to|a|young listening that doing|wrong the utmost nothing
+(781) ἂν(Pt) θαυμαστὸν(Adj)(A) ποιοῖ(Prä)(Akt)(Knj), οὐδʼ(Kon) αὖ(Pt) ἀδικοῦντα(Prä)(Akt)(A) πατέρα(A) κολάζων(Prä)(Akt)(N) παντὶ(Adj)(D) τρόπῳ(D),
+(781) ever remarkable he|may|make, nor again doing|wrong father punishing in|every way,
+(782) ἀλλὰ(Kon) δρῴη(Prä)(Akt)(Op) ἂν(Pt) ὅπερ(Pr)(N) θεῶν(G) οἱ(Art)(N) πρῶτοί(Adj)(Sup)(N) τε(Pt) καὶ(Kon) μέγιστοι(Adj)(Sup)(N).
+(782) but he|would|do ever the|very|thing of|gods the first and also greatest.
+(783) οὐ(Pt) μὰ(Prp) τὸν(Art)(A) Δία(A), ἦ(Imp)(Akt) δʼ(Kon) ὅς(Pr)(N), οὐδὲ(Kon) αὐτῷ(Pr)(D) μοι(Pr)(D)
+(783) not by the Zeus, said but he, nor to|him to|me
+(784) δοκεῖ(Prä)(Akt) ἐπιτήδεια(Adj)(N) εἶναι(Prä)(Inf)(Akt) λέγειν(Prä)(Akt)(Inf). οὐδέ(Kon) γε(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), τὸ(Art)(N)
+(784) it|seems fitting to|be to|say. nor at|least, was but I, the
+(785) παράπαν(Adv) ὡς(Kon) θεοὶ(N) θεοῖς(D) πολεμοῦσί(Prä)(Akt) τε(Pt) [378c] καὶ(Kon) ἐπιβουλεύουσι(Prä)(Akt) καὶ(Kon)
+(785) altogether that gods to|gods they|wage|war and [378c] also they|plot and
+(786) μάχονται(Prä)(M/P)— οὐδὲ(Kon) γὰρ(Pt) ἀληθῆ(Adj)(A)— εἴ(Kon) γε(Pt) δεῖ(Prä)(Akt) ἡμῖν(Pr)(D) τοὺς(Art)(A) μέλλοντας(Prä)(Akt)(A) τὴν(Art)(A) πόλιν(A)
+(786) they|fight— nor for true|things— if indeed it|is|necessary to|us the being|about the city
+(787) φυλάξειν(Fu)(Akt)(Inf) αἴσχιστον(Adj)(Sup)(A) νομίζειν(Prä)(Akt)(Inf) τὸ(Art)(A) ῥᾳδίως(Adv) ἀλλήλοις(Pr)(D) ἀπεχθάνεσθαι(Prä)(M/P)(Inf)— πολλοῦ(Adj)(G) δεῖ(Prä)(Akt) γιγαντομαχίας(G) τε(Pt)
+(787) to|guard most|shameful to|consider the easily to|each|other to|become|hateful— of|much it|lacks giant|battle and
+(788) μυθολογητέον(Adj)(N) αὐτοῖς(Pr)(D) καὶ(Kon) ποικιλτέον(Adj)(N), καὶ(Kon) ἄλλας(Adj)(A) ἔχθρας(A) πολλὰς(Adj)(A) καὶ(Kon) παντοδαπὰς(Adj)(A)
+(788) to|myth|tell to|them also to|variegate, and other enmities many and of|every|kind
+(789) θεῶν(G) τε(Pt) καὶ(Kon) ἡρώων(G) πρὸς(Prp) συγγενεῖς(Adj)(A) τε(Pt) καὶ(Kon) οἰκείους(Adj)(A) αὐτῶν(Pr)(G)— ἀλλʼ(Kon)
+(789) of|gods and also of|heroes toward relatives and also house|mates of|them— but
+(790) εἴ(Kon) πως(Adv) μέλλομεν(Prä)(Akt) πείσειν(Aor)(Akt)(Inf) ὡς(Kon) οὐδεὶς(Pr)(N) πώποτε(Adv) πολίτης(N) ἕτερος(Adj)(N) ἑτέρῳ(Adj)(D)
+(790) if somehow we|are|about to|persuade that no ever citizen other to|other
+(791) ἀπήχθετο(Aor)(Med) οὐδʼ(Pt) ἔστιν(Prä)(Akt) τοῦτο(Pr)(N) ὅσιον(Adj)(N), τοιαῦτα(Adj)(A) λεκτέα(Adj)(A) μᾶλλον(Adv)(Kmp) πρὸς(Prp) [378d]
+(791) became|hated nor it|is this pious, such|things to|be|said rather toward [378d]
+(792) τὰ(Art)(A) παιδία(A) εὐθὺς(Adv) καὶ(Kon) γέρουσι(D) καὶ(Kon) γραυσί(D), καὶ(Kon) πρεσβυτέροις(Adj)(D)(Kmp) γιγνομένοις(Prä)(M/P)(D)
+(792) the children immediately and to|old|men and to|old|women, and to|elder becoming
+(793) καὶ(Kon) τοὺς(Art)(A) ποιητὰς(A) ἐγγὺς(Adv) τούτων(Pr)(G) ἀναγκαστέον(Adj)(N) λογοποιεῖν(Prä)(Akt)(Inf). Ἥρας(G) δὲ(Kon) δεσμοὺς(A)
+(793) and the poets near of|these to|be|compelled word|make. of|Hera but bonds
+(794) ὑπὸ(Prp) ὑέος(G) καὶ(Kon) Ἡφαίστου(G) ῥίψεις(A) ὑπὸ(Prp) πατρός(G), μέλλοντος(Prä)(Akt)(G) τῇ(Art)(D) μητρὶ(D)
+(794) by son and of|Hephaestus throws by father, being|about|to to|the mother
+(795) τυπτομένῃ(Prä)(M/P)(D) ἀμυνεῖν(Fu)(Akt)(Inf), καὶ(Kon) θεομαχίας(A) ὅσας(Pr)(A) Ὅμηρος(N) πεποίηκεν(Per)(Akt) οὐ(Pt) παραδεκτέον(Adj)(N) εἰς(Prp)
+(795) to|one|being|beaten to|defend, and god|battles as|many|as Homer has|made not to|be|admitted into
+(796) τὴν(Art)(A) πόλιν(A), οὔτʼ(Kon) ἐν(Prp) ὑπονοίαις(D) πεποιημένας(Per)(M/P)(A) οὔτε(Kon) ἄνευ(Prp) ὑπονοιῶν(G). ὁ(Art)(N)
+(796) the city, neither in hints having|been|made nor without hints. the
+(797) γὰρ(Pt) νέος(Adj)(N) οὐχ(Pt) οἷός(Adj)(N) τε(Pt) κρίνειν(Prä)(Akt)(Inf) ὅτι(Pr)(N) τε(Pt) ὑπόνοια(N) καὶ(Kon)
+(797) for young not such|as and to|judge what and hint and
+(798) ὃ(Pr)(N) μή(Pt), ἀλλʼ(Kon) ἃ(Pr)(A) ἂν(Pt) τηλικοῦτος(Adj)(N) ὢν(Prä)(Akt)(N) λάβῃ(Aor)(Akt)(Knj) ἐν(Prp) ταῖς(Art)(D)
+(798) what not, but the|things whatever such|in|age being he|may|receive in the
+(799) δόξαις(D) δυσέκνιπτά(Adj)(A) τε(Pt) [378e] καὶ(Kon) ἀμετάστατα(Adj)(A) φιλεῖ(Prä)(Akt) γίγνεσθαι(Prä)(M/P)(Inf)· ὧν(Pr)(G) δὴ(Pt)
+(799) opinions hard|to|wash|out and [378e] also unchangeable it|is|wont to|become· of|which indeed
+(800) ἴσως(Adv) ἕνεκα(Prp) περὶ(Prp) παντὸς(Adj)(G) ποιητέον(Adj)(N) ἃ(Pr)(A) πρῶτα(Adj)(Sup)(A) ἀκούουσιν(Prä)(Akt) ὅτι(Kon) κάλλιστα(Adv)(Sup)
+(800) perhaps because about of|every to|be|done the|things first they|hear that most|finely
+(801) μεμυθολογημένα(Per)(M/P)(A) πρὸς(Prp) ἀρετὴν(A) ἀκούειν(Prä)(Akt)(Inf). ἔχει(Prä)(Akt) γάρ(Pt), ἔφη(Imp)(Akt), λόγον(A). ἀλλʼ(Kon) εἴ(Kon)
+(801) having|been|myth|told toward virtue to|hear. it|has for, he|said, reason. but if
+(802) τις(Pr)(N) αὖ(Pt) καὶ(Kon) ταῦτα(Pr)(A) ἐρωτῴη(Prä)(Akt)(Knj) ἡμᾶς(Pr)(A), ταῦτα(Pr)(A) ἅττα(Pr)(A) τʼ(Pt) ἐστὶν(Prä)(Akt)
+(802) someone again and these would|ask us, these whatever and it|is
+(803) καὶ(Kon) τίνες(Pr)(N) οἱ(Art)(N) μῦθοι(N), τίνας(Pr)(A) ἂν(Pt) φαῖμεν(Prä)(Akt)(Op);
+(803) and which the myths, which|ones would we|say;
+== St. 379a ==
+(805) [Σωκράτης:] καὶ(Kon) ἐγὼ(Pr)(N) εἶπον(AorS)(Akt)· ὦ(ij) Ἀδείμαντε(V), οὐκ(Pt) ἐσμὲν(Prä)(Akt) ποιηταὶ(N) ἐγώ(Pr)(N)
+(805) [Σωκράτης:] and I said· O Adeimantus, not we|are poets I
+(806) τε(Pt) καὶ(Kon) σὺ(Pr)(N) ἐν(Prp) τῷ(Art)(D) παρόντι(Prä)(M/P)(D), ἀλλʼ(Kon) οἰκισταὶ(N) πόλεως(G)· οἰκισταῖς(D)
+(806) and also you in the present, but founders of|city· to|founders
+(807) δὲ(Kon) τοὺς(Art)(A) μὲν(Pt) τύπους(A) προσήκει(Prä)(Akt) εἰδέναι(Per)(Akt)(Inf) ἐν(Prp) οἷς(Pr)(D) δεῖ(Prä)(Akt) μυθολογεῖν(Prä)(Akt)(Inf)
+(807) but the indeed patterns it|is|fitting to|know in which it|is|necessary to|myth|tell
+(808) τοὺς(Art)(A) ποιητάς(A), παρʼ(Prp) οὓς(Pr)(A) ἐὰν(Kon) ποιῶσιν(Prä)(Akt)(Knj) οὐκ(Pt) ἐπιτρεπτέον(Adj)(N), οὐ(Pt) μὴν(Pt)
+(808) the poets, beside whom if they|do not to|be|permitted, not indeed
+(809) αὐτοῖς(Pr)(D) γε(Pt) ποιητέον(Adj)(N) μύθους(A). ὀρθῶς(Adv), ἔφη(Imp)(Akt)· ἀλλʼ(Kon) αὐτὸ(Pr)(A) δὴ(Pt) τοῦτο(Pr)(N),
+(809) to|them at|least to|be|made myths. rightly, he|said· but this indeed this,
+(810) οἱ(Art)(N) τύποι(N) περὶ(Prp) θεολογίας(G) τίνες(Pr)(N) ἂν(Pt) εἶεν(Prä)(Akt)(Op); τοιοίδε(Adj)(N) πού(Pt) τινες(Pr)(N),
+(810) the patterns about theology who ever might|be; such|as I|suppose some,
+(811) ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N)· οἷος(Adj)(N) τυγχάνει(Prä)(Akt) ὁ(Art)(N) θεὸς(N) ὤν(Prä)(Akt)(N), ἀεὶ(Adv) δήπου(Pt)
+(811) was but I· of|what|sort happens the god being, always I|suppose
+(812) ἀποδοτέον(Adj)(N), ἐάντέ(Kon) τις(Pr)(N) αὐτὸν(Pr)(A) ἐν(Prp) ἔπεσιν(D) ποιῇ(Prä)(Akt)(Knj) ἐάντε(Kon) ἐν(Prp) μέλεσιν(D)
+(812) to|be|rendered, whether someone him in verses may|make or in songs
+(813) ἐάντε(Kon) ἐν(Prp) τραγῳδίᾳ(D). δεῖ(Prä)(Akt) γάρ(Pt). οὐκοῦν(Pt) [379b] ἀγαθὸς(Adj)(N) ὅ(Pr)(N) γε(Pt)
+(813) or in tragedy. it|is|necessary for. well|then [379b] good that at|least
+(814) θεὸς(N) τῷ(Art)(D) ὄντι(Prä)(Akt)(D) τε(Pt) καὶ(Kon) λεκτέον(Adj)(N) οὕτω(Adv); τί(Pr)(N) μήν(Pt); ἀλλὰ(Kon)
+(814) god in|the being and also to|be|said thus; what indeed; but
+(815) μὴν(Pt) οὐδέν(Pr)(N) γε(Pt) τῶν(Art)(G) ἀγαθῶν(Adj)(G) βλαβερόν(Adj)(N)· ἦ(Pt) γάρ(Pt); οὔ(Pt) μοι(Pr)(D)
+(815) indeed nothing at|least of|the good|things harmful· is|it for; no to|me
+(816) δοκεῖ(Prä)(Akt). ἆρʼ(Pt) οὖν(Pt) ὃ(Pr)(N) μὴ(Pt) βλαβερὸν(Adj)(N) βλάπτει(Prä)(Akt); οὐδαμῶς(Adv). ὃ(Pr)(N) δὲ(Kon)
+(816) it|seems. then then what not harmful harms; in|no|way. what but
+(817) μὴ(Pt) βλάπτει(Prä)(Akt) κακόν(Adj)(N) τι(Pr)(N) ποιεῖ(Prä)(Akt); οὐδὲ(Kon) τοῦτο(Pr)(N). ὃ(Pr)(N) δέ(Kon) γε(Pt)
+(817) not harms bad something does; not|even this. what but at|least
+(818) μηδὲν(Pr)(N) κακὸν(Adj)(N) ποιεῖ(Prä)(Akt) οὐδʼ(Kon) ἄν(Pt) τινος(Pr)(G) εἴη(Prä)(Akt)(Op) κακοῦ(Adj)(G) αἴτιον(Adj)(N); πῶς(Adv)
+(818) nothing bad does nor ever of|any would|be of|bad cause; how
+(819) γάρ(Pt); τί(Pr)(N) δέ(Kon); ὠφέλιμον(Adj)(N) τὸ(Art)(N) ἀγαθόν(Adj)(N); ναί(Pt). αἴτιον(Adj)(N) ἄρα(Pt) εὐπραγίας(G);
+(819) for; what but; helpful the good; yes. cause then of|prosperity;
+(820) ναί(Pt). οὐκ(Pt) ἄρα(Pt) πάντων(Adj)(G) γε(Pt) αἴτιον(Adj)(N) τὸ(Art)(N) ἀγαθόν(Adj)(N), ἀλλὰ(Kon) τῶν(Art)(G)
+(820) yes. not then of|all at|least cause the good, but of|the
+(821) μὲν(Pt) εὖ(Adv) ἐχόντων(Prä)(Akt)(G) αἴτιον(Adj)(N), τῶν(Art)(G) δὲ(Kon) κακῶν(Adj)(G) ἀναίτιον(Adj)(N). παντελῶς(Adv) [379c]
+(821) indeed of|the well|situated cause, of|the but bad|things not|cause. entirely [379c]
+(822) γʼ(Pt), ἔφη(Imp)(Akt). οὐδʼ(Kon) ἄρα(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ὁ(Art)(N) θεός(N), ἐπειδὴ(Kon)
+(822) at|least, he|said. nor then, was but I, the god, since
+(823) ἀγαθός(Adj)(N), πάντων(Adj)(G) ἂν(Pt) εἴη(Prä)(Akt)(Op) αἴτιος(Adj)(N), ὡς(Kon) οἱ(Art)(N) πολλοὶ(Adj)(N) λέγουσιν(Prä)(Akt), ἀλλὰ(Kon)
+(823) good, of|all ever might|be cause, as the many say, but
+(824) ὀλίγων(Adj)(G) μὲν(Pt) τοῖς(Art)(D) ἀνθρώποις(D) αἴτιος(Adj)(N), πολλῶν(Adj)(G) δὲ(Kon) ἀναίτιος(Adj)(N)· πολὺ(Adj)(A) γὰρ(Pt)
+(824) of|few indeed to|the humans cause, of|many but not|cause· much for
+(825) ἐλάττω(Adj)(Kmp)(A) τἀγαθὰ(Art)(Adj)(A) τῶν(Art)(G) κακῶν(Adj)(G) ἡμῖν(Pr)(D), καὶ(Kon) τῶν(Art)(G) μὲν(Pt) ἀγαθῶν(Adj)(G) οὐδένα(Pr)(A)
+(825) fewer the|good|things of|the bad|things to|us, and of|the indeed good|things no|one
+(826) ἄλλον(Adj)(A) αἰτιατέον(Adj)(N), τῶν(Art)(G) δὲ(Kon) κακῶν(Adj)(G) ἄλλʼ(Kon) ἄττα(Pr)(A) δεῖ(Prä)(Akt) ζητεῖν(Prä)(Akt)(Inf) τὰ(Art)(A)
+(826) other to|be|blamed, of|the but bad|things other some it|is|necessary to|seek the
+(827) αἴτια(A), ἀλλʼ(Kon) οὐ(Pt) τὸν(Art)(A) θεόν(A). ἀληθέστατα(Adv)(Sup), ἔφη(Imp)(Akt), δοκεῖς(Prä)(Akt) μοι(Pr)(D) λέγειν(Prä)(Akt)(Inf).
+(827) causes, but not the god. most|truly, he|said, you|seem to|me to|speak.
+(828) οὐκ(Pt) ἄρα(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ἀποδεκτέον(Adj)(N) οὔτε(Kon) Ὁμήρου(G) οὔτʼ(Kon) ἄλλου(Adj)(G)
+(828) not then, was but I, to|be|accepted neither of|Homer nor of|another
+(829) ποιητοῦ(G) [379d] ταύτην(Pr)(A) τὴν(Art)(A) ἁμαρτίαν(A) περὶ(Prp) τοὺς(Art)(A) θεοὺς(A) ἀνοήτως(Adv) ἁμαρτάνοντος(Prä)(Akt)(G)
+(829) of|poet [379d] this the error about the gods foolishly sinning
+(830) καὶ(Kon) λέγοντος(Prä)(Akt)(G)—
+(830) and saying—
+(831) [Zitat Anfang]
+(832) ὡς(Kon) δοιοί(Adj)(N) τε(Pt) πίθοι(N) κατακείαται(Prä)(M/P) ἐν(Prp) Διὸς(G) οὔδει(D)
+(832) as two and jars are|laid in of|Zeus floor
+(833) κηρῶν(G) ἔμπλειοι(Adj)(N), ὁ(Art)(N) μὲν(Pt) ἐσθλῶν(Adj)(G), αὐτὰρ(Kon) ὃ(Pr)(N) δειλῶν(Adj)(G)·
+(833) of|dooms full, the indeed of|good, but which of|wretched·
+(834) [Zitat Ende]
+(835) [Quelle Anfang] Hom. Il. 24.527-8 [Quelle Ende]
+(836) καὶ(Kon) ᾧ(Pr)(D) μὲν(Pt) ἂν(Pt) μείξας(Aor)(Akt)(N) ὁ(Art)(N) Ζεὺς(N) δῷ(AorS)(Akt)(Knj) ἀμφοτέρων(Adj)(G),
+(836) and to|whom indeed ever having|mixed the Zeus may|give of|both,
+(837) [Zitat Anfang]
+(838) ἄλλοτε(Adv) μέν(Pt) τε(Pt) κακῷ(Adj)(D) ὅ(Pr)(N) γε(Pt) κύρεται(Prä)(M/P), ἄλλοτε(Adv) δʼ(Kon) ἐσθλῷ(Adj)(D)·
+(838) at|another|time indeed and with|bad the at|least meets, at|another|time but with|good·
+(839) [Zitat Ende]
+(840) [Quelle Anfang] Hom. Il. 24.530 [Quelle Ende]
+(841) ᾧ(Pr)(D) δʼ(Kon) ἂν(Pt) μή(Pt), ἀλλʼ(Kon) ἄκρατα(Adj)(N) τὰ(Art)(N) ἕτερα(Adj)(N),
+(841) to|whom but ever not, but unmixed the others,
+(842) [Zitat Anfang]
+(843) τὸν(Art)(A) δὲ(Kon) κακὴ(Adj)(N) βούβρωστις(N) ἐπὶ(Prp) χθόνα(A) δῖαν(Adj)(A) ἐλαύνει(Prä)(Akt)·
+(843) him but evil ox|eating|hunger upon earth bright drives·
+(844) [Zitat Ende]
+(845) [Quelle Anfang] Hom. Il. 24.532 [Quelle Ende]
+(846) οὐδʼ(Kon) [379e] ὡς(Kon) ταμίας(N) ἡμῖν(Pr)(D) Ζεὺς(N)—
+(846) not|even [379e] as steward to|us Zeus—
+(847) [Zitat Anfang]
+(848) ἀγαθῶν(Adj)(G) τε(Pt) κακῶν(Adj)(G) τε(Pt) τέτυκται(Per)(M/P).
+(848) of|good|things and of|bad|things and has|been|made.
+(849) [Zitat Ende]
+(850) [Quelle Anfang] unknown [Quelle Ende]
+== St. 380a ==
+(852) [Σωκράτης:] τὴν(Art)(A) δὲ(Kon) τῶν(Art)(G) ὅρκων(G) καὶ(Kon) σπονδῶν(G) σύγχυσιν(A), ἣν(Pr)(A) ὁ(Art)(N)
+(852) [Σωκράτης:] the but of|the oaths and of|libations confusion, which the
+(853) Πάνδαρος(N) συνέχεεν(Aor)(Akt), ἐάν(Kon) τις(Pr)(N) φῇ(Prä)(Akt)(Knj) διʼ(Prp) Ἀθηνᾶς(G) τε(Pt) καὶ(Kon) Διὸς(G)
+(853) Pandarus confused, if someone may|say through Athena and also of|Zeus
+(854) γεγονέναι(Per)(Akt)(Inf), οὐκ(Pt) ἐπαινεσόμεθα(Fu)(M/P), οὐδὲ(Kon) θεῶν(G) ἔριν(A) τε(Pt) καὶ(Kon) κρίσιν(A) διὰ(Prp)
+(854) to|have|happened, not we|shall|praise, nor of|gods strife and also judgment through
+(855) Θέμιτός(G) τε(Pt) καὶ(Kon) Διός(G), οὐδʼ(Kon) αὖ(Pt), ὡς(Kon) Αἰσχύλος(N) λέγει(Prä)(Akt), ἐατέον(Adj)(N)
+(855) Themis and also of|Zeus, not|even again, as Aeschylus says, to|be|allowed
+(856) ἀκούειν(Prä)(Akt)(Inf) τοὺς(Art)(A) νέους(Adj)(A), ὅτι(Kon)—
+(856) to|hear the young, that—
+(857) [Zitat Anfang]
+(858) θεὸς(N) μὲν(Pt) αἰτίαν(A) φύει(Prä)(Akt) βροτοῖς(D),
+(858) god indeed cause brings|forth to|mortals,
+(859) ὅταν(Kon) κακῶσαι(Aor)(Akt)(Inf) δῶμα(A) παμπήδην(Adv) θέλῃ(Prä)(Akt)(Knj).
+(859) whenever to|ruin house wholly he|may|wish.
+(860) [Zitat Ende]
+(861) [Quelle Anfang] Aesch. Fr. [Quelle Ende]
+(862) ἀλλʼ(Kon) ἐάν(Kon) τις(Pr)(N) ποιῇ(Prä)(Akt)(Knj) ἐν(Prp) οἷς(Pr)(D) ταῦτα(Pr)(N) τὰ(Art)(N) ἰαμβεῖα(Adj)(N) ἔνεστιν(Prä)(Akt),
+(862) but if someone may|compose in which these the iambic|verses are|in,
+(863) τὰ(Art)(A) τῆς(Art)(G) Νιόβης(G) πάθη(A), ἢ(Kon) τὰ(Art)(A) Πελοπιδῶν(G) ἢ(Kon) τὰ(Art)(A) Τρωικὰ(Adj)(A)
+(863) the of|the Niobe sufferings, or the of|Pelopids or the Trojan|things
+(864) ἤ(Kon) τι(Pr)(A) ἄλλο(Adj)(A) τῶν(Art)(G) τοιούτων(Adj)(G), ἢ(Kon) οὐ(Pt) θεοῦ(G) ἔργα(A) ἐατέον(Adj)(N)
+(864) or something else of|the such, or not of|god works to|be|allowed
+(865) αὐτὰ(Pr)(A) λέγειν(Prä)(Akt)(Inf), ἢ(Kon) εἰ(Kon) θεοῦ(G), ἐξευρετέον(Adj)(N) αὐτοῖς(Pr)(D) σχεδὸν(Adv) ὃν(Pr)(A) νῦν(Adv)
+(865) them to|speak, or if of|god, to|be|found|out to|them nearly which now
+(866) ἡμεῖς(Pr)(N) λόγον(A) ζητοῦμεν(Prä)(Akt), καὶ(Kon) λεκτέον(Adj)(N) [380b] ὡς(Kon) ὁ(Art)(N) μὲν(Pt) θεὸς(N)
+(866) we account seek, and to|be|said [380b] that the indeed god
+(867) δίκαιά(Adj)(A) τε(Pt) καὶ(Kon) ἀγαθὰ(Adj)(A) ἠργάζετο(Imp)(M/P), οἱ(Art)(N) δὲ(Kon) ὠνίναντο(Imp)(M/P) κολαζόμενοι(Prä)(M/P)(N)· ὡς(Kon)
+(867) just|things and also good|things he|was|working, the but were|benefited being|punished· as
+(868) δὲ(Kon) ἄθλιοι(Adj)(N) μὲν(Pt) οἱ(Art)(N) δίκην(A) διδόντες(Prä)(Akt)(N), ἦν(Imp)(Akt) δὲ(Kon) δὴ(Pt) ὁ(Art)(N)
+(868) but wretched indeed the penalty giving, was but indeed the
+(869) δρῶν(Prä)(Akt)(N) ταῦτα(Pr)(A) θεός(N), οὐκ(Pt) ἐατέον(Adj)(N) λέγειν(Prä)(Akt)(Inf) τὸν(Art)(A) ποιητήν(A). ἀλλʼ(Kon) εἰ(Kon)
+(869) doing these|things god, not to|be|allowed to|say the poet. but if
+(870) μὲν(Pt) ὅτι(Kon) ἐδεήθησαν(Aor)(M/P) κολάσεως(G) λέγοιεν(Prä)(Akt)(Op) ὡς(Kon) ἄθλιοι(Adj)(N) οἱ(Art)(N) κακοί(Adj)(N), διδόντες(Prä)(Akt)(N)
+(870) indeed that they|had|need of|punishment they|would|say that wretched the bad, giving
+(871) δὲ(Kon) δίκην(A) ὠφελοῦντο(Imp)(M/P) ὑπὸ(Prp) τοῦ(Art)(G) θεοῦ(G), ἐατέον(Adj)(N)· κακῶν(Adj)(G) δὲ(Kon) αἴτιον(Adj)(A)
+(871) but penalty were|benefited by the|god to|be|allowed, of· bad|things but cause
+(872) φάναι(Prä)(Akt)(Inf) θεόν(A) τινι(Pr)(D) γίγνεσθαι(Prä)(M/P)(Inf) ἀγαθὸν(Adj)(A) ὄντα(Prä)(Akt)(A), διαμαχετέον(Adj)(N) παντὶ(Adj)(D) τρόπῳ(D) μήτε(Kon)
+(872) to|say god to|someone to|become good being, to|be|opposed in|every way neither
+(873) τινὰ(Pr)(A) λέγειν(Prä)(Akt)(Inf) ταῦτα(Pr)(A) ἐν(Prp) τῇ(Art)(D) αὑτοῦ(Pr)(G) πόλει(D), εἰ(Kon) μέλλει(Prä)(Akt) εὐνομήσεσθαι(Fu)(Med)(Inf),
+(873) anyone to|say these|things in the his|own city, if is|about to|be|well|ordered,
+(874) μήτε(Kon) τινὰ(Pr)(A) ἀκούειν(Prä)(Akt)(Inf), μήτε(Kon) [380c] νεώτερον(Adj)(Kmp)(A) μήτε(Kon) πρεσβύτερον(Adj)(Kmp)(A), μήτʼ(Kon) ἐν(Prp)
+(874) nor anyone to|hear, nor [380c] younger nor older, nor in
+(875) μέτρῳ(D) μήτε(Kon) ἄνευ(Prp) μέτρου(G) μυθολογοῦντα(Prä)(Akt)(A), ὡς(Kon) οὔτε(Kon) ὅσια(Adj)(N) ἂν(Pt) λεγόμενα(Prä)(M/P)(N)
+(875) metre nor without of|metre myth|telling, that neither holy would being|said
+(876) εἰ(Kon) λέγοιτο(Prä)(M/P)(Op), οὔτε(Kon) σύμφορα(Adj)(N) ἡμῖν(Pr)(D) οὔτε(Kon) σύμφωνα(Adj)(N) αὐτὰ(Pr)(N) αὑτοῖς(Pr)(D). σύμψηφός(Adj)(N)
+(876) if might|be|said, neither beneficial to|us nor agreeing they to|themselves. voting|with
+(877) σοί(Pr)(D) εἰμι(Prä)(Akt), ἔφη(Imp)(Akt), τούτου(Pr)(G) τοῦ(Art)(G) νόμου(G), καί(Kon) μοι(Pr)(D) ἀρέσκει(Prä)(Akt). οὗτος(Pr)(N)
+(877) you I|am, he|said, of|this of|the law, and to|me it|pleases. this
+(878) μὲν(Pt) τοίνυν(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), εἷς(Adj)(N) ἂν(Pt) εἴη(Prä)(Akt)(Op) τῶν(Art)(G) περὶ(Prp)
+(878) indeed then, was but I, one would might|be of|the about
+(879) θεοὺς(A) νόμων(G) τε(Pt) καὶ(Kon) τύπων(G), ἐν(Prp) ᾧ(Pr)(D) δεήσει(Fu)(Akt) τούς(Art)(A) τε(Pt)
+(879) gods of|laws and also of|patterns, in which it|will|be|necessary the and
+(880) λέγοντας(Prä)(Akt)(A) λέγειν(Prä)(Akt)(Inf) καὶ(Kon) τοὺς(Art)(A) ποιοῦντας(Prä)(Akt)(A) ποιεῖν(Prä)(Akt)(Inf), μὴ(Pt) πάντων(Adj)(G) αἴτιον(Adj)(A) τὸν(Art)(A)
+(880) speaking to|speak and the doing to|do, not of|all cause the
+(881) θεὸν(A) ἀλλὰ(Kon) τῶν(Art)(G) ἀγαθῶν(Adj)(G). καὶ(Kon) μάλʼ(Adv), ἔφη(Imp)(Akt), ἀπόχρη(Prä)(Akt). τί(Pr)(N) [380d]
+(881) god but of|the good|things. and very, he|said, it|suffices. what [380d]
+(882) δὲ(Kon) δὴ(Pt) ὁ(Art)(N) δεύτερος(Adj)(N) ὅδε(Pr)(N); ἆρα(Pt) γόητα(A) τὸν(Art)(A) θεὸν(A) οἴει(Prä)(Akt)
+(882) but indeed the second this; then sorcerer the god do|you|think
+(883) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) οἷον(Pr)(A) ἐξ(Prp) ἐπιβουλῆς(G) φαντάζεσθαι(Prä)(M/P)(Inf) ἄλλοτε(Adv) ἐν(Prp) ἄλλαις(Adj)(D) ἰδέαις(D)
+(883) to|be and as from of|plot to|appear at|another|time in other forms
+(884) τοτὲ(Adv) μὲν(Pt) αὐτὸν(Pr)(A) γιγνόμενον(Prä)(M/P)(A), καὶ(Kon) ἀλλάττοντα(Prä)(Akt)(A) τὸ(Art)(A) αὑτοῦ(Pr)(G) εἶδος(A) εἰς(Prp)
+(884) at|one|time indeed himself becoming, and changing the of|himself form into
+(885) πολλὰς(Adj)(A) μορφάς(A), τοτὲ(Adv) δὲ(Kon) ἡμᾶς(Pr)(A) ἀπατῶντα(Prä)(Akt)(A) καὶ(Kon) ποιοῦντα(Prä)(Akt)(A) περὶ(Prp) αὑτοῦ(Pr)(G)
+(885) many forms, at|another|time but us deceiving and making about himself
+(886) τοιαῦτα(Adj)(A) δοκεῖν(Prä)(Akt)(Inf), ἢ(Kon) ἁπλοῦν(Adj)(A) τε(Pt) εἶναι(Prä)(Akt)(Inf) καὶ(Kon) πάντων(Adj)(G) ἥκιστα(Adv)(Sup) τῆς(Art)(G)
+(886) such|things to|seem, or simple and to|be and of|all least of|the
+(887) ἑαυτοῦ(Pr)(G) ἰδέας(G) ἐκβαίνειν(Prä)(Akt)(Inf); οὐκ(Pt) ἔχω(Prä)(Akt), ἔφη(Imp)(Akt), νῦν(Adv) γε(Pt) οὕτως(Adv) εἰπεῖν(Aor)(Akt)(Inf).
+(887) his|own of|form to|step|out; not I|have, he|said, now at|least thus to|say.
+(888) τί(Pr)(N) δὲ(Kon) τόδε(Pr)(N); οὐκ(Pt) ἀνάγκη(N), εἴπερ(Kon) τι(Pr)(N) ἐξίσταιτο(Aor)(M/P)(Op) τῆς(Art)(G) αὑτοῦ(Pr)(G)
+(888) what but this; not necessity, if|indeed something might|depart of|the his|own
+(889) ἰδέας(G), [380e] ἢ(Kon) αὐτὸ(Pr)(N) ὑφʼ(Prp) ἑαυτοῦ(Pr)(G) μεθίστασθαι(Prä)(M/P)(Inf) ἢ(Kon) ὑπʼ(Prp) ἄλλου(Adj)(G);
+(889) of|form, [380e] either itself by of|itself to|be|changed or by another;
+(890) ἀνάγκη(N). οὐκοῦν(Pt) ὑπὸ(Prp) μὲν(Pt) ἄλλου(Adj)(G) τὰ(Art)(N) ἄριστα(Adj)(N)(Sup) ἔχοντα(Prä)(Akt)(N) ἥκιστα(Adv)(Sup) ἀλλοιοῦταί(Prä)(M/P)
+(890) necessity. well|then by indeed another the best having least is|altered
+(891) τε(Pt) καὶ(Kon) κινεῖται(Prä)(M/P);
+(891) and also is|moved;
+== St. 381a ==
+(893) [Σωκράτης:] οἷον(Pr)(A) σῶμα(N) ὑπὸ(Prp) σιτίων(G) τε(Pt) καὶ(Kon) ποτῶν(G) καὶ(Kon) πόνων(G),
+(893) [Σωκράτης:] such|as body by of|foods and also of|drinks and of|toils,
+(894) καὶ(Kon) πᾶν(Adj)(N) φυτὸν(N) ὑπὸ(Prp) εἱλήσεών(G) τε(Pt) καὶ(Kon) ἀνέμων(G) καὶ(Kon) τῶν(Art)(G)
+(894) and every plant by encirclings and also of|winds and of|the
+(895) τοιούτων(Adj)(G) παθημάτων(G), οὐ(Pt) τὸ(Art)(N) ὑγιέστατον(Adj)(N)(Sup) καὶ(Kon) ἰσχυρότατον(Adj)(N)(Sup) ἥκιστα(Adv)(Sup) ἀλλοιοῦται(Prä)(M/P); πῶς(Adv)
+(895) such of|sufferings, not the healthiest and strongest least is|altered; how
+(896) δʼ(Kon) οὔ(Pt); ψυχὴν(A) δὲ(Kon) οὐ(Pt) τὴν(Art)(A) ἀνδρειοτάτην(Adj)(A)(Sup) καὶ(Kon) φρονιμωτάτην(Adj)(A)(Sup) ἥκιστʼ(Adv)(Sup)
+(896) but not; soul but not the most|brave and most|sensible least
+(897) ἄν(Pt) τι(Pr)(N) ἔξωθεν(Adv) πάθος(N) ταράξειέν(Aor)(Akt)(Op) τε(Pt) καὶ(Kon) ἀλλοιώσειεν(Aor)(Akt)(Op); ναί(Pt). καὶ(Kon)
+(897) ever anything from|outside experience would|disturb and also would|alter; yes. and
+(898) μήν(Pt) που(Pt) καὶ(Kon) τά(Art)(N) γε(Pt) σύνθετα(Adj)(N) πάντα(Adj)(N) σκεύη(N) τε(Pt) καὶ(Kon)
+(898) indeed I|suppose also the at|least composite all instruments and also
+(899) οἰκοδομήματα(N) καὶ(Kon) ἀμφιέσματα(N) κατὰ(Prp) τὸν(Art)(A) αὐτὸν(Pr)(A) λόγον(A) τὰ(Art)(N) εὖ(Adv) εἰργασμένα(Per)(M/P)(N)
+(899) buildings and garments according|to the same account the well having|been|made
+(900) καὶ(Kon) εὖ(Adv) ἔχοντα(Prä)(Akt)(N) ὑπὸ(Prp) χρόνου(G) τε(Pt) καὶ(Kon) τῶν(Art)(G) ἄλλων(Adj)(G) παθημάτων(G)
+(900) and well holding by time and also of|the other of|sufferings
+(901) ἥκιστα(Adv)(Sup) ἀλλοιοῦται(Prä)(M/P). ἔστι(Prä)(Akt) δὴ(Pt) ταῦτα(Pr)(N). πᾶν(Adj)(N) [381b] δὴ(Pt) τὸ(Art)(N) καλῶς(Adv)
+(901) least is|altered. it|is indeed these. every [381b] indeed the well
+(902) ἔχον(Prä)(Akt)(N) ἢ(Kon) φύσει(D) ἢ(Kon) τέχνῃ(D) ἢ(Kon) ἀμφοτέροις(Adj)(D) ἐλαχίστην(Adj)(A)(Sup) μεταβολὴν(A) ὑπʼ(Prp)
+(902) having either by|nature or by|art or by|both least change by
+(903) ἄλλου(Adj)(G) ἐνδέχεται(Prä)(M/P). ἔοικεν(Per)(Akt). ἀλλὰ(Kon) μὴν(Pt) ὁ(Art)(N) θεός(N) γε(Pt) καὶ(Kon) τὰ(Art)(N)
+(903) another is|possible. it|seems. but indeed the god at|least and the
+(904) τοῦ(Art)(G) θεοῦ(G) πάντῃ(Adv) ἄριστα(Adv)(Sup) ἔχει(Prä)(Akt). πῶς(Adv) δʼ(Kon) οὔ(Pt); ταύτῃ(Adv) μὲν(Pt)
+(904) of|the god in|every|way best has. how but not; in|this|way indeed
+(905) δὴ(Pt) ἥκιστα(Adv)(Sup) ἂν(Pt) πολλὰς(Adj)(A) μορφὰς(A) ἴσχοι(Prä)(Akt)(Op) ὁ(Art)(N) θεός(N). ἥκιστα(Adv)(Sup) δῆτα(Pt).
+(905) indeed least would many forms he|hold the god. least indeed.
+(906) ἀλλʼ(Kon) ἆρα(Pt) αὐτὸς(Pr)(N) αὑτὸν(Pr)(A) μεταβάλλοι(Prä)(Akt)(Op) ἂν(Pt) καὶ(Kon) ἀλλοιοῖ(Prä)(Akt)(Op); δῆλον(Adj)(N), ἔφη(Imp)(Akt),
+(906) but then himself himself would|change would|indeed and would|alter; clear, he|said,
+(907) ὅτι(Kon), εἴπερ(Kon) ἀλλοιοῦται(Prä)(M/P). πότερον(Pr)(N) οὖν(Pt) ἐπὶ(Prp) τὸ(Art)(A) βέλτιόν(Adj)(A)(Kmp) τε(Pt) καὶ(Kon)
+(907) that, if|indeed is|altered. whether then toward the better and also
+(908) κάλλιον(Adj)(A)(Kmp) μεταβάλλει(Prä)(Akt) ἑαυτὸν(Pr)(A) ἢ(Kon) ἐπὶ(Prp) τὸ(Art)(A) χεῖρον(Adj)(A)(Kmp) καὶ(Kon) τὸ(Art)(A) αἴσχιον(Adj)(A)(Kmp)
+(908) more|beautiful changes himself or toward the worse and the more|shameful
+(909) ἑαυτοῦ(Pr)(G); ἀνάγκη(N), [381c] ἔφη(Imp)(Akt), ἐπὶ(Prp) τὸ(Art)(A) χεῖρον(Adj)(A)(Kmp), εἴπερ(Kon) ἀλλοιοῦται(Prä)(M/P)· οὐ(Pt)
+(909) of|himself; necessity, [381c] he|said, toward the worse, if|indeed is|altered· not
+(910) γάρ(Pt) που(Pt) ἐνδεᾶ(Adj)(A) γε(Pt) φήσομεν(Fu)(Akt) τὸν(Art)(A) θεὸν(A) κάλλους(G) ἢ(Kon) ἀρετῆς(G)
+(910) for I|suppose lacking at|least we|shall|say the god of|beauty or of|virtue
+(911) εἶναι(Prä)(Inf)(Akt). ὀρθότατα(Adv)(Sup), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), λέγεις(Prä)(Akt). καὶ(Kon) οὕτως(Adv) ἔχοντος(Prä)(Akt)(G) δοκεῖ(Prä)(Akt)
+(911) to|be. most|rightly, was but I, you|say. and thus being it|seems
+(912) ἄν(Pt) τίς(Pr)(N) σοι(Pr)(D), ὦ(ij) Ἀδείμαντε(V), ἑκὼν(Adj)(N) αὑτὸν(Pr)(A) χείρω(Adj)(A)(Kmp) ποιεῖν(Prä)(Akt)(Inf) ὁπῃοῦν(Adv)
+(912) would anyone to|you, O Adeimantus, willing himself worse to|make in|any|way
+(913) ἢ(Kon) θεῶν(G) ἢ(Kon) ἀνθρώπων(G); ἀδύνατον(Adj)(N), ἔφη(Imp)(Akt). ἀδύνατον(Adj)(N) ἄρα(Pt), ἔφην(Imp)(Akt), καὶ(Kon)
+(913) or of|gods or of|men; impossible, he|said. impossible then, I|said, and
+(914) θεῷ(D) ἐθέλειν(Prä)(Akt)(Inf) αὑτὸν(Pr)(A) ἀλλοιοῦν(Prä)(Akt)(Inf), ἀλλʼ(Kon) ὡς(Kon) ἔοικε(Per)(Akt), κάλλιστος(Adj)(N)(Sup) καὶ(Kon) ἄριστος(Adj)(N)(Sup)
+(914) for|a|god to|be|willing himself to|alter, but as it|seems, most|beautiful and best
+(915) ὢν(Prä)(Akt)(N) εἰς(Prp) τὸ(Art)(A) δυνατὸν(Adj)(A) ἕκαστος(Pr)(N) αὐτῶν(Pr)(G) μένει(Prä)(Akt) ἀεὶ(Adv) ἁπλῶς(Adv) ἐν(Prp)
+(915) being into the possible each of|them remains always simply in
+(916) τῇ(Art)(D) αὑτοῦ(Pr)(G) μορφῇ(D). ἅπασα(Adj)(N), ἔφη(Imp)(Akt), ἀνάγκη(N) ἔμοιγε(Pr)(D) δοκεῖ(Prä)(Akt). μηδεὶς(Pr)(N) [381d]
+(916) the his|own form. whole, he|said, necessity to|me|at|least it|seems. let|no|one [381d]
+(917) ἄρα(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ὦ(ij) ἄριστε(Adj)(V), λεγέτω(Prä)(Akt)(Imv) ἡμῖν(Pr)(D) τῶν(Art)(G) ποιητῶν(G),
+(917) then, was but I, O best, let|him|say to|us of|the poets,
+(918) ὡς(Kon)—
+(918) that—
+(919) [Zitat Anfang]
+(920) θεοὶ(N) ξείνοισιν(D) ἐοικότες(Per)(Akt)(N) ἀλλοδαποῖσι(Adj)(D),
+(920) gods to|strangers having|been|like to|foreigners,
+(921) παντοῖοι(Adj)(N) τελέθοντες(Prä)(Akt)(N), ἐπιστρωφῶσι(Prä)(Akt) πόληας(A)·
+(921) all|sorts being, they|go|round cities·
+(922) [Zitat Ende]
+(923) [Quelle Anfang] Hom. Od. 17.485-486 [Quelle Ende]
+(924) μηδὲ(Kon) Πρωτέως(G) καὶ(Kon) Θέτιδος(G) καταψευδέσθω(Prä)(M/P)(Imv) μηδείς(Pr)(N), μηδʼ(Kon) ἐν(Prp) τραγῳδίαις(D) μηδʼ(Kon)
+(924) nor of|Proteus and of|Thetis let|no|one lie|against, nor in tragedies nor
+(925) ἐν(Prp) τοῖς(Art)(D) ἄλλοις(Adj)(D) ποιήμασιν(D) εἰσαγέτω(Prä)(Akt)(Imv) Ἥραν(A) ἠλλοιωμένην(Per)(M/P)(A), ὡς(Kon) ἱέρειαν(A) ἀγείρουσαν(Prä)(Akt)(A)—
+(925) in the other poems let|him|lead|in Hera having|been|changed, as priestess gathering—
+(926) [Zitat Anfang]
+(927) Ἰνάχου(G) Ἀργείου(Adj)(G) ποταμοῦ(G) παισὶν(D) βιοδώροις(Adj)(D)·
+(927) of|Inachus of|Argive river to|children life|giving·
+(928) [Zitat Ende]
+(929) [Quelle Anfang] Aesch. [Quelle Ende]
+(930) καὶ(Kon) [381e] ἄλλα(Adj)(A) τοιαῦτα(Adj)(A) πολλὰ(Adj)(A) μὴ(Pt) ἡμῖν(Pr)(D) ψευδέσθων(Prä)(M/P)(Imv). μηδʼ(Kon) αὖ(Pt)
+(930) and [381e] other such many not to|us let|them|lie. nor again
+(931) ὑπὸ(Prp) τούτων(Pr)(G) ἀναπειθόμεναι(Prä)(M/P)(N) αἱ(Art)(N) μητέρες(N) τὰ(Art)(A) παιδία(A) ἐκδειματούντων(Prä)(Akt)(G), λέγουσαι(Prä)(Akt)(N) τοὺς(Art)(A)
+(931) by these being|persuaded the mothers the children out|frightening, saying the
+(932) μύθους(A) κακῶς(Adv), ὡς(Kon) ἄρα(Pt) θεοί(N) τινες(Pr)(N) περιέρχονται(Prä)(M/P) νύκτωρ(Adv) πολλοῖς(Adj)(D) ξένοις(D)
+(932) myths badly, that then gods some go|around by|night to|many strangers
+(933) καὶ(Kon) παντοδαποῖς(Adj)(D) ἰνδαλλόμενοι(Prä)(M/P)(N), ἵνα(Kon) μὴ(Pt) ἅμα(Adv) μὲν(Pt) εἰς(Prp) θεοὺς(A) βλασφημῶσιν(Prä)(Akt)(Knj),
+(933) and of|every|kind appearing|like, in|order|that not at|once indeed into gods they|blaspheme,
+(934) ἅμα(Adv) δὲ(Kon) τοὺς(Art)(A) παῖδας(A) ἀπεργάζωνται(Prä)(M/P)(Knj) δειλοτέρους(Adj)(A)(Kmp). μὴ(Pt) γάρ(Pt), ἔφη(Imp)(Akt). ἀλλʼ(Kon)
+(934) at|once but the children they|make more|cowardly. not for, he|said. but
+(935) ἆρα(Pt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), αὐτοὶ(Pr)(N) μὲν(Pt) οἱ(Art)(N) θεοί(N) εἰσιν(Prä)(Akt) οἷοι(Adj)(N)
+(935) then, was but I, themselves indeed the gods are such|as
+(936) μὴ(Pt) μεταβάλλειν(Prä)(Akt)(Inf), ἡμῖν(Pr)(D) δὲ(Kon) ποιοῦσιν(Prä)(Akt) δοκεῖν(Prä)(Akt)(Inf) σφᾶς(Pr)(A) παντοδαποὺς(Adj)(A) φαίνεσθαι(Prä)(M/P)(Inf), ἐξαπατῶντες(Prä)(Akt)(N)
+(936) not to|change, to|us but they|make to|seem themselves of|every|kind to|appear, deceiving
+(937) καὶ(Kon) γοητεύοντες(Prä)(Akt)(N); ἴσως(Adv), ἔφη(Imp)(Akt).
+(937) and bewitching; perhaps, he|said.
+== St. 382a ==
+(939) [Σωκράτης:] τί(Pr)(N) δέ(Kon); ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N)· ψεύδεσθαι(Prä)(M/P)(Inf) θεὸς(N) ἐθέλοι(Prä)(Akt)(Op) ἂν(Pt)
+(939) [Σωκράτης:] what but; was but I· to|lie a|god would|wish indeed
+(940) ἢ(Kon) λόγῳ(D) ἢ(Kon) ἔργῳ(D) φάντασμα(A) προτείνων(Prä)(Akt)(N); οὐκ(Pt) οἶδα(Per)(Akt), ἦ(Imp)(Akt) δʼ(Kon)
+(940) or in|word or in|deed phantasm putting|forth; not I|know, was but
+(941) ὅς(Pr)(N). οὐκ(Pt) οἶσθα(Prä)(Akt), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N), ὅτι(Kon) τό(Art)(N) γε(Pt) ὡς(Kon)
+(941) he. not you|know, was but I, that the at|least as
+(942) ἀληθῶς(Adv) ψεῦδος(N), εἰ(Kon) οἷόν(Adj)(N) τε(Pt) τοῦτο(Pr)(N) εἰπεῖν(Aor)(Akt)(Inf), πάντες(Adj)(N) θεοί(N) τε(Pt)
+(942) truly falsehood, if possible and this to|say, all gods and
+(943) καὶ(Kon) ἄνθρωποι(N) μισοῦσιν(Prä)(Akt); πῶς(Adv), ἔφη(Imp)(Akt), λέγεις(Prä)(Akt); οὕτως(Adv), ἦν(Imp)(Akt) δʼ(Kon) ἐγώ(Pr)(N),
+(943) also men hate; how, he|said, you|say; thus, was but I,
+(944) ὅτι(Kon) τῷ(Art)(D) κυριωτάτῳ(Adj)(D)(Sup) που(Pt) ἑαυτῶν(Pr)(G) ψεύδεσθαι(Prä)(M/P)(Inf) καὶ(Kon) περὶ(Prp) τὰ(Art)(A) κυριώτατα(Adj)(A)(Sup)
+(944) that to|the most|authoritative I|suppose of|themselves to|lie and about the most|authoritative
+(945) οὐδεὶς(Pr)(N) ἑκὼν(Adj)(N) ἐθέλει(Prä)(Akt), ἀλλὰ(Kon) πάντων(Adj)(G) μάλιστα(Adv)(Sup) φοβεῖται(Prä)(M/P) ἐκεῖ(Adv) αὐτὸ(Pr)(A) κεκτῆσθαι(Per)(M/P)(Inf).
+(945) no|one willing is|willing, but of|all most he|fears there it to|have|acquired.
+(946) οὐδὲ(Kon) νῦν(Adv) πω(Pt), ἦ(Imp)(Akt) δʼ(Kon) ὅς(Pr)(N), μανθάνω(Prä)(Akt). οἴει(Prä)(Akt) [382b] γάρ(Pt)
+(946) not|even now yet, was but he, I|learn. do|you|think [382b] for
+(947) τί(Pr)(A) με(Pr)(A), ἔφην(Imp)(Akt), σεμνὸν(Adj)(A) λέγειν(Prä)(Akt)(Inf)· ἐγὼ(Pr)(N) δὲ(Kon) λέγω(Prä)(Akt) ὅτι(Kon) τῇ(Art)(D)
+(947) anything me, I|was|saying, solemn to|say· I but I|say that to|the
+(948) ψυχῇ(D) περὶ(Prp) τὰ(Art)(A) ὄντα(Prä)(Akt)(A) ψεύδεσθαί(Prä)(M/P)(Inf) τε(Pt) καὶ(Kon) ἐψεῦσθαι(Aor)(M/P)(Inf) καὶ(Kon) ἀμαθῆ(Adj)(A)
+(948) soul about the being|things to|lie and also to|have|lied and ignorant
+(949) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) ἐνταῦθα(Adv) ἔχειν(Prä)(Akt)(Inf) τε(Pt) καὶ(Kon) κεκτῆσθαι(Per)(M/P)(Inf) τὸ(Art)(N) ψεῦδος(N) πάντες(Adj)(N)
+(949) to|be and here to|have and also to|have|acquired the falsehood all
+(950) ἥκιστα(Adv)(Sup) ἂν(Pt) δέξαιντο(Aor)(Med)(Op), καὶ(Kon) μισοῦσι(Prä)(Akt) μάλιστα(Adv)(Sup) αὐτὸ(Pr)(A) ἐν(Prp) τῷ(Art)(D) τοιούτῳ(Adj)(D).
+(950) least indeed would|accept, and they|hate most it in the such|a|case.
+(951) πολύ(Adj)(A) γε(Pt), ἔφη(Imp)(Akt). ἀλλὰ(Kon) μὴν(Pt) ὀρθότατά(Adv)(Sup) γʼ(Pt) ἄν(Pt), ὃ(Pr)(N) νυνδὴ(Adv)
+(951) much at|least, he|said. but indeed most|rightly at|least indeed, which just|now
+(952) ἔλεγον(Imp)(Akt), τοῦτο(Pr)(N) ὡς(Kon) ἀληθῶς(Adv) ψεῦδος(N) καλοῖτο(Prä)(M/P)(Knj), ἡ(Art)(N) ἐν(Prp) τῇ(Art)(D) ψυχῇ(D)
+(952) I|was|saying, this that truly falsehood may|be|called, the in the soul
+(953) ἄγνοια(N) ἡ(Art)(N) τοῦ(Art)(G) ἐψευσμένου(Per)(M/P)(G)· ἐπεὶ(Kon) τό(Art)(N) γε(Pt) ἐν(Prp) τοῖς(Art)(D) λόγοις(D)
+(953) ignorance the of|the one|having|lied· since the at|least in the words
+(954) μίμημά(N) τι(Pr)(N) τοῦ(Art)(G) ἐν(Prp) τῇ(Art)(D) ψυχῇ(D) ἐστὶν(Prä)(Akt) παθήματος(G) καὶ(Kon) ὕστερον(Adv)
+(954) imitation some|thing of|the in the soul is affection|experience and later
+(955) γεγονὸς(Per)(Akt)(N) εἴδωλον(N), οὐ(Pt) πάνυ(Adv) ἄκρατον(Adj)(N) [382c] ψεῦδος(N). ἢ(Kon) οὐχ(Pt) οὕτω(Adv);
+(955) having|become image, not very unmixed [382c] falsehood. or not so;
+(956) πάνυ(Adv) μὲν(Pt) οὖν(Pt). τὸ(Art)(N) μὲν(Pt) δὴ(Pt) τῷ(Art)(D) ὄντι(Prä)(Akt)(D) ψεῦδος(N) οὐ(Pt)
+(956) very indeed then. the indeed surely to|the being falsehood not
+(957) μόνον(Adv) ὑπὸ(Prp) θεῶν(G) ἀλλὰ(Kon) καὶ(Kon) ὑπʼ(Prp) ἀνθρώπων(G) μισεῖται(Prä)(M/P). δοκεῖ(Prä)(Akt) μοι(Pr)(D).
+(957) only by gods but also by men is|hated. it|seems to|me.
+(958) τί(Pr)(N) δὲ(Kon) δὴ(Pt) τὸ(Art)(N) ἐν(Prp) τοῖς(Art)(D) λόγοις(D) ψεῦδος(N); πότε(Adv) καὶ(Kon)
+(958) what but indeed the in the words falsehood; when and
+(959) τῷ(Art)(D) χρήσιμον(Adj)(N), ὥστε(Kon) μὴ(Pt) ἄξιον(Adj)(N) εἶναι(Prä)(Inf)(Akt) μίσους(G); ἆρʼ(Pt) οὐ(Pt) πρός(Prp)
+(959) to|the useful, so|that not worthy to|be of|hatred; then not toward
+(960) τε(Pt) τοὺς(Art)(A) πολεμίους(Adj)(A) καὶ(Kon) τῶν(Art)(G) καλουμένων(Prä)(M/P)(G) φίλων(G), ὅταν(Kon) διὰ(Prp) μανίαν(A)
+(960) and the enemies and of|the being|called friends, whenever through madness
+(961) ἤ(Kon) τινα(Pr)(A) ἄνοιαν(A) κακόν(Adj)(A) τι(Pr)(A) ἐπιχειρῶσιν(Prä)(Akt)(Knj) πράττειν(Prä)(Akt)(Inf), τότε(Adv) ἀποτροπῆς(G) ἕνεκα(Prp)
+(961) or some folly bad|thing something they|attempt to|do, then of|turning|away for|the|sake|of
+(962) ὡς(Kon) φάρμακον(N) χρήσιμον(Adj)(N) γίγνεται(Prä)(M/P); καὶ(Kon) ἐν(Prp) αἷς(Pr)(D) νυνδὴ(Adv) ἐλέγομεν(Imp)(Akt) [382d]
+(962) as drug|remedy useful becomes; and in which just|now we|were|saying [382d]
+(963) ταῖς(Art)(D) μυθολογίαις(D), διὰ(Prp) τὸ(Art)(N) μὴ(Pt) εἰδέναι(Per)(Akt)(Inf) ὅπῃ(Adv) τἀληθὲς(Art)(Adj)(N) ἔχει(Prä)(Akt) περὶ(Prp)
+(963) the myth|tellings, because|of the not to|have|known in|what|way the|true|thing holds about
+(964) τῶν(Art)(G) παλαιῶν(Adj)(G), ἀφομοιοῦντες(Prä)(Akt)(N) τῷ(Art)(D) ἀληθεῖ(Adj)(D) τὸ(Art)(A) ψεῦδος(A) ὅτι(Kon) μάλιστα(Adv)(Sup), οὕτω(Adv)
+(964) of|the ancient|things, making|like to|the true the falsehood as much|as|possible, thus
+(965) χρήσιμον(Adj)(A) ποιοῦμεν(Prä)(Akt); καὶ(Kon) μάλα(Adv), ἦ(Pt) δʼ(Kon) ὅς(Pr)(N), οὕτως(Adv) ἔχει(Prä)(Akt). κατὰ(Prp)
+(965) useful we|make; and very, said but he, thus it|holds. according|to
+(966) τί(Pr)(A) δὴ(Pt) οὖν(Pt) τούτων(Pr)(G) τῷ(Art)(D) θεῷ(D) τὸ(Art)(N) ψεῦδος(N) χρήσιμον(Adj)(N); πότερον(Pr)(A)
+(966) what indeed then of|these to|the god the falsehood useful; whether
+(967) διὰ(Prp) τὸ(Art)(N) μὴ(Pt) εἰδέναι(Per)(Akt)(Inf) τὰ(Art)(A) παλαιὰ(Adj)(A) ἀφομοιῶν(Prä)(Akt)(N) ἂν(Pt) ψεύδοιτο(Prä)(M/P)(Knj); γελοῖον(Adj)(N)
+(967) through the not to|have|known the ancient|things making|like indeed he|may|lie; ridiculous
+(968) μεντἂν(Pt) εἴη(Prä)(Akt)(Knj), ἔφη(Imp)(Akt). ποιητὴς(N) μὲν(Pt) ἄρα(Pt) ψευδὴς(Adj)(N) ἐν(Prp) θεῷ(D) οὐκ(Pt)
+(968) indeed might|be, he|said. poet indeed then false in god not
+(969) ἔνι(Prä)(Akt). οὔ(Pt) μοι(Pr)(D) δοκεῖ(Prä)(Akt). ἀλλὰ(Kon) δεδιὼς(Per)(Akt)(N) τοὺς(Art)(A) ἐχθροὺς(A) ψεύδοιτο(Prä)(M/P)(Knj); [382e]
+(969) is|in. not to|me it|seems. but having|feared the enemies he|may|lie; [382e]
+(970) πολλοῦ(Adj)(G) γε(Pt) δεῖ(Prä)(Akt). ἀλλὰ(Kon) διʼ(Prp) οἰκείων(Adj)(G) ἄνοιαν(A) ἢ(Kon) μανίαν(A); ἀλλʼ(Kon)
+(970) of|much at|least it|lacks. but because|of of|ones|own folly or madness; but
+(971) οὐδείς(Pr)(N), ἔφη(Imp)(Akt), τῶν(Art)(G) ἀνοήτων(Adj)(G) καὶ(Kon) μαινομένων(Prä)(M/P)(G) θεοφιλής(Adj)(N). οὐκ(Pt) ἄρα(Pt) ἔστιν(Prä)(Akt)
+(971) no|one, he|said, of|the senseless and being|mad dear|to|god. not then there|is
+(972) οὗ(Pr)(G) ἕνεκα(Prp) ἂν(Pt) θεὸς(N) ψεύδοιτο(Prä)(M/P)(Knj). οὐκ(Pt) ἔστιν(Prä)(Akt). πάντῃ(Adv) ἄρα(Pt) ἀψευδὲς(Adj)(N)
+(972) of|which for|the|sake indeed god may|lie. not there|is. in|every|way then without|falsehood
+(973) τὸ(Art)(N) δαιμόνιόν(Adj)(N) τε(Pt) καὶ(Kon) τὸ(Art)(N) θεῖον(Adj)(N). παντάπασι(Adv) μὲν(Pt) οὖν(Pt), ἔφη(Imp)(Akt).
+(973) the divine|thing and also the divine. altogether indeed then, he|said.
+== St. 383a ==
+(975) [Σωκράτης:] κομιδῇ(Adv) ἄρα(Pt) ὁ(Art)(N) θεὸς(N) ἁπλοῦν(Adj)(N) καὶ(Kon) ἀληθὲς(Adj)(N) ἔν(Prp) τε(Pt)
+(975) [Σωκράτης:] altogether then the god simple and true in and
+(976) ἔργῳ(D) καὶ(Kon) λόγῳ(D), καὶ(Kon) οὔτε(Kon) αὐτὸς(Pr)(N) μεθίσταται(Prä)(M/P) οὔτε(Kon) ἄλλους(Adj)(A) ἐξαπατᾷ(Prä)(Akt),
+(976) deed and word, and neither himself is|changed nor others he|deceives,
+(977) οὔτε(Kon) κατὰ(Prp) φαντασίας(A) οὔτε(Kon) κατὰ(Prp) λόγους(A) οὔτε(Kon) κατὰ(Prp) σημείων(G) πομπάς(A),
+(977) nor according|to appearances nor according|to words nor according|to of|signs processions,
+(978) οὔθʼ(Kon) ὕπαρ(A) οὐδʼ(Kon) ὄναρ(A). οὕτως(Adv), ἔφη(Imp)(Akt), ἔμοιγε(Pr)(D) καὶ(Kon) αὐτῷ(Pr)(D) φαίνεται(Prä)(M/P)
+(978) nor waking|vision nor dream. thus, he|said, to|me|at|least and to|him it|appears
+(979) σοῦ(Pr)(G) λέγοντος(Prä)(Akt)(G). συγχωρεῖς(Prä)(Akt) ἄρα(Pt), ἔφην(Imp)(Akt), τοῦτον(Pr)(A) δεύτερον(Adj)(A) τύπον(A) εἶναι(Prä)(Inf)(Akt) ἐν(Prp)
+(979) of|you speaking. do|you|agree then, I|said, this second pattern to|be in
+(980) ᾧ(Pr)(D) δεῖ(Prä)(Akt) περὶ(Prp) θεῶν(G) καὶ(Kon) λέγειν(Prä)(Akt)(Inf) καὶ(Kon) ποιεῖν(Prä)(Akt)(Inf), ὡς(Kon) μήτε(Kon)
+(980) which it|is|necessary about gods and to|speak and to|do, that neither
+(981) αὐτοὺς(Pr)(A) γόητας(A) ὄντας(Prä)(Akt)(A) τῷ(Art)(D) μεταβάλλειν(Prä)(Akt)(Inf) ἑαυτοὺς(Pr)(A) μήτε(Kon) ἡμᾶς(Pr)(A) ψεύδεσι(D) παράγειν(Prä)(Akt)(Inf)
+(981) themselves sorcerers being by|the to|change themselves nor us with|lies to|lead|aside
+(982) ἐν(Prp) λόγῳ(D) ἢ(Kon) ἐν(Prp) ἔργῳ(D); συγχωρῶ(Prä)(Akt). πολλὰ(Adj)(A) ἄρα(Pt) Ὁμήρου(G) ἐπαινοῦντες(Prä)(Akt)(N),
+(982) in word or in deed; I|agree. many then of|Homer praising,
+(983) ἀλλὰ(Kon) τοῦτο(Pr)(N) οὐκ(Pt) ἐπαινεσόμεθα(Fu)(M/P), τὴν(Art)(A) τοῦ(Art)(G) ἐνυπνίου(G) πομπὴν(A) ὑπὸ(Prp) Διὸς(G)
+(983) but this not we|shall|praise, the of|the dream sending|forth by Zeus
+(984) τῷ(Art)(D) Ἀγαμέμνονι(D)· οὐδὲ(Kon) Αἰσχύλου(G), ὅταν(Kon) φῇ(Prä)(Akt)(Knj) ἡ(Art)(N) Θέτις(N) τὸν(Art)(A) Ἀπόλλω(A)
+(984) to|the Agamemnon· nor|even of|Aeschylus, whenever he|may|say the Thetis the Apollo
+(985) ἐν(Prp) τοῖς(Art)(D) αὑτῆς(Pr)(G) γάμοις(D) [383b] ᾄδοντα(Prä)(Akt)(A)
+(985) in the her|own wedding|rites [383b] singing
+(986) [Zitat Anfang]
+(987) ἐνδατεῖσθαι(Prä)(M/P)(Inf) τὰς(Art)(A) ἑὰς(Pr)(A) εὐπαιδίας(A)
+(987) to|enjoy the her|own good|offspring
+(988) [Zitat Ende]
+(989) [Quelle Anfang] Hom. Il. 2.1 [Quelle Ende]
+(990) —
+(990) —
+(991) [Zitat Anfang]
+(992) νόσων(G) τʼ(Pt) ἀπείρους(Adj)(A) καὶ(Kon) μακραίωνας(Adj)(A) βίους(A),
+(992) of|diseases and without|limit and long|aged lives,
+(993) ξύμπαντά(Adj)(A) τʼ(Pt) εἰπὼν(AorS)(Akt)(N) θεοφιλεῖς(Adj)(A) ἐμὰς(Pr)(A) τύχας(A)
+(993) all|together and having|said god|beloved my fortunes
+(994) παιᾶνʼ(A) ἐπηυφήμησεν(Aor)(Akt), εὐθυμῶν(Prä)(Akt)(N) ἐμέ(Pr)(A).
+(994) paean he|cried|aloud, cheering me.
+(995) κἀγὼ(Kon)(Pr)(N) τὸ(Art)(A) Φοίβου(G) θεῖον(Adj)(A) ἀψευδὲς(Adj)(A) στόμα(A)
+(995) and|I the of|Phoebus divine without|falsehood mouth
+(996) ἤλπιζον(Imp)(Akt) εἶναι(Prä)(Inf)(Akt), μαντικῇ(Adj)(D) βρύον(Prä)(Akt)(N) τέχνῃ(D)·
+(996) I|was|hoping to|be, prophetic swelling art·
+(997) ὁ(Art)(N) δʼ(Kon), αὐτὸς(Pr)(N) ὑμνῶν(Prä)(Akt)(N), αὐτὸς(Pr)(N) ἐν(Prp) θοίνῃ(D) παρών(Prä)(Akt)(N),
+(997) he but, himself singing, himself in feast being|present,
+(998) αὐτὸς(Pr)(N) τάδʼ(Pr)(A) εἰπών(AorS)(Akt)(N), αὐτός(Pr)(N) ἐστιν(Prä)(Akt) ὁ(Art)(N) κτανὼν(AorS)(Akt)(N)
+(998) himself these having|said, himself is the having|killed
+(999) τὸν(Art)(A) παῖδα(A) τὸν(Art)(A) ἐμόν(Adj)(A)—
+(999) the child the my—
+(1000) [Zitat Ende]
+(1001) [Quelle Anfang] Aesch. Frag. 350 [Quelle Ende]
+(1002) ὅταν(Kon) [383c] τις(Pr)(N) τοιαῦτα(Adj)(A) λέγῃ(Prä)(Akt)(Knj) περὶ(Prp) θεῶν(G), χαλεπανοῦμέν(Prä)(Akt) τε(Pt) καὶ(Kon)
+(1002) whenever [383c] someone such|things may|say about gods, we|are|vexed and also
+(1003) χορὸν(A) οὐ(Pt) δώσομεν(Fu)(Akt), οὐδὲ(Kon) τοὺς(Art)(A) διδασκάλους(A) ἐάσομεν(Fu)(Akt) ἐπὶ(Prp) παιδείᾳ(D) χρῆσθαι(Prä)(Med)(Inf)
+(1003) a|chorus not we|will|give, nor the teachers we|will|allow for education to|use
+(1004) τῶν(Art)(G) νέων(Adj)(G), εἰ(Kon) μέλλουσιν(Prä)(Akt) ἡμῖν(Pr)(D) οἱ(Art)(N) φύλακες(N) θεοσεβεῖς(Adj)(N) τε(Pt) καὶ(Kon)
+(1004) of the|young, if they|are|about to|us the guardians god|revering and also
+(1005) θεῖοι(Adj)(N) γίγνεσθαι(Prä)(M/P)(Inf), καθʼ(Prp) ὅσον(Pr)(A) ἀνθρώπῳ(D) ἐπὶ(Prp) πλεῖστον(Adj)(Sup)(A) οἷόν(Adj)(A) τε(Pt). παντάπασιν(Adv),
+(1005) divine to|become, insofar as for|a|man to the|most possible and. altogether,
+(1006) ἔφη(Imp)(Akt), ἔγωγε(Pr)(N) τοὺς(Art)(A) τύπους(A) τούτους(Pr)(A) συγχωρῶ(Prä)(Akt), καὶ(Kon) ὡς(Kon) νόμοις(D) ἂν(Pt)
+(1006) he|said, I|at|least the patterns these I|agree, and as as|laws would
+(1007) χρῴμην(Prä)(Med)(Op).
+(1007) I|would|use.

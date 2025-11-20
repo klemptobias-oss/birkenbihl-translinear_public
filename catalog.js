@@ -24,19 +24,34 @@ export function listKindsByLanguage(cat, language) {
   return Object.keys(langNode);
 }
 
-// Gibt die Autoren für eine gegebene Sprache und Gattung zurück.
-// Rückgabe-Element: { author: "Aischylos", display: "Aischylos" }
-export function listAuthors(cat, language, kind) {
+// NEU: Gibt die Kategorien für eine gegebene Sprache und Gattung zurück.
+// z.B. ["Epos", "Drama", "Lyrik"] für Poesie oder ["Philosophie_Rhetorik", "Historie"] für Prosa
+export function listCategoriesByKind(cat, language, kind) {
   const kindNode = cat?.Sprachen?.[language]?.[kind] || {};
-  return Object.keys(kindNode)
-    .map((a) => ({ author: a, display: kindNode[a].display || a })) // Annahme: display-Name ist optional
+  return Object.keys(kindNode).sort((a, b) => a.localeCompare(b, "de"));
+}
+
+export async function getWorkEntry(language, kind, category, author, work) {
+  const catalog = await loadCatalog();
+  return (
+    catalog.Sprachen?.[language]?.[kind]?.[category]?.[author]?.[work] || null
+  );
+}
+
+// Gibt die Autoren für eine gegebene Sprache, Gattung und Kategorie zurück.
+// Rückgabe-Element: { author: "Aischylos", display: "Aischylos" }
+export function listAuthors(cat, language, kind, category) {
+  const categoryNode = cat?.Sprachen?.[language]?.[kind]?.[category] || {};
+  return Object.keys(categoryNode)
+    .map((a) => ({ author: a, display: categoryNode[a].display || a })) // Annahme: display-Name ist optional
     .sort((x, y) => x.display.localeCompare(y.display, "de"));
 }
 
-// Gibt die Werke für einen gegebenen Pfad (Sprache, Gattung, Autor) zurück.
+// Gibt die Werke für einen gegebenen Pfad (Sprache, Gattung, Kategorie, Autor) zurück.
 // Rückgabe-Element: { id: "Der_gefesselte_Prometheus", title: "Der gefesselte Prometheus", versmass: true, path: "..." }
-export function listWorks(cat, language, kind, author) {
-  const authorNode = cat?.Sprachen?.[language]?.[kind]?.[author] || {};
+export function listWorks(cat, language, kind, category, author) {
+  const authorNode =
+    cat?.Sprachen?.[language]?.[kind]?.[category]?.[author] || {};
   return Object.keys(authorNode)
     .map((workId) => {
       const workData = authorNode[workId];
@@ -50,18 +65,20 @@ export function listWorks(cat, language, kind, author) {
 }
 
 // Ruft die vollständigen Metadaten eines Werks ab.
-export function getWorkMeta(cat, language, kind, author, workId) {
-  const works = listWorks(cat, language, kind, author);
+export function getWorkMeta(cat, language, kind, category, author, workId) {
+  const works = listWorks(cat, language, kind, category, author);
   const w = works.find((x) => x.id === workId);
   if (!w) return null;
 
   // Bestimme den Anzeigenamen des Autors (falls vorhanden, sonst Fallback)
-  const authorNode = cat?.Sprachen?.[language]?.[kind]?.[author] || {};
+  const authorNode =
+    cat?.Sprachen?.[language]?.[kind]?.[category]?.[author] || {};
   const author_display = authorNode.display || author;
 
   return {
     language,
     kind,
+    category,
     author,
     author_display,
     ...w,

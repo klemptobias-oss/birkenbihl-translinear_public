@@ -1,0 +1,836 @@
+==== Mord an Eratosthenes ====
+= § 1 =
+(2) περὶ(Prp) πολλοῦ(Adj)(G) ἂν(Pt) ποιησαίμην(Aor)(Med)(Op), ὦ(ij) ἄνδρες(V), τὸ(Art)(A) τοιούτους(Adj)(A) ὑμᾶς(Pr)(A) ἐμοὶ(Pr)(D)
+(2) um viel wohl ich|würde|machen, o Männer, das solche euch mir
+(2) about of|much would I|value, O men, the such you to|me
+(3) δικαστὰς(A) περὶ(Prp) τούτου(Pr)(G) τοῦ(Art)(G) πράγματος(G) γενέσθαι(Aor)(Med)(Inf), οἷοίπερ(Pr)(N) ἂν(Pt) ὑμῖν(Pr)(D) αὐτοῖς(Pr)(D)
+(3) Richter über dieses des Angelegenheit zu|werden, wie|solche wohl euch selbst
+(3) jurors about of|this the matter to|become, such|as|indeed would to|you yourselves
+(4) εἴητε(Prä)(Op) τοιαῦτα(Adj)(A) πεπονθότες(Per)(Akt)(N)· εὖ(Adv) γὰρ(Pt) οἶδʼ(Per)(Akt) ὅτι(Kon), εἰ(Kon) τὴν(Art)(A) αὐτὴν(Adj)(A)
+(4) wäret solche erlebt|habend· gut denn ich|weiß dass, wenn die dieselbe
+(4) you|would|be such|things having|suffered· well for I|know that, if the same
+(5) γνώμην(A) περὶ(Prp) τῶν(Art)(G) ἄλλων(Adj)(G) ἔχοιτε(Prä)(Akt)(Op), ἥνπερ(Pr)(A) περὶ(Prp) ὑμῶν(Pr)(G) αὐτῶν(Pr)(G), οὐκ(Pt)
+(5) Meinung über der anderen hättet, die|eben über eurer selbst, nicht
+(5) opinion about the of|others you|might|have, which|indeed about of|you yourselves, not
+(6) ἂν(Pt) εἴη(Prä)(Op) ὅστις(Pr)(N) οὐκ(Pt) ἐπὶ(Prp) τοῖς(Art)(D) γεγενημένοις(Per)(M/P)(D) ἀγανακτοίη(Prä)(Akt)(Op), ἀλλὰ(Kon) πάντες(Adj)(N)
+(6) wohl wäre wer nicht über den geschehen|seienden sich|empörte, sondern alle
+(6) would be whoever not at the things|having|happened would|be|indignant, but all
+(7) ἂν(Pt) περὶ(Prp) τῶν(Art)(G) τὰ(Art)(A) τοιαῦτα(Adj)(A) ἐπιτηδευόντων(Prä)(Akt)(G) τὰς(Art)(A) ζημίας(A) μικρὰς(Adj)(A) ἡγοῖσθε(Prä)(Med)(Op).
+(7) wohl über der die solchen betreibenden die Strafen kleinen würdet|halten.
+(7) would about the the such|things practicing the penalties small you|would|consider.
+= § 2 =
+(9) καὶ(Kon) ταῦτα(Pr)(A) οὐκ(Pt) ἂν(Pt) εἴη(Prä)(Op) μόνον(Adv) παρʼ(Prp) ὑμῖν(Pr)(D) οὕτως(Adv) ἐγνωσμένα(Per)(Pas)(N),
+(9) und dieses nicht wohl wäre allein bei euch so erkannt|geworden,
+(9) and these|things not would be only with you thus judged|as,
+(10) ἀλλʼ(Kon) ἐν(Prp) ἁπάσῃ(Adj)(D) τῇ(Art)(D) Ἑλλάδι(D)· περὶ(Prp) τούτου(Pr)(G) γὰρ(Pt) μόνου(Adj)(G) τοῦ(Art)(G)
+(10) sondern in ganzen der Hellas· über dieses denn alleinigen des
+(10) but in whole the Hellas· about of|this for only the
+(11) ἀδικήματος(G) καὶ(Kon) ἐν(Prp) δημοκρατίᾳ(D) καὶ(Kon) ὀλιγαρχίᾳ(D) ἡ(Art)(N) αὐτὴ(Adj)(N) τιμωρία(N) τοῖς(Art)(D)
+(11) Unrechts und in Demokratie und Oligarchie die dieselbe Strafe den
+(11) wrongdoing and in democracy and oligarchy the same punishment to|the
+(12) ἀσθενεστάτοις(Adj)(Sup)(D) πρὸς(Prp) τοὺς(Art)(A) τὰ(Art)(A) μέγιστα(Adj)(Sup)(A) δυναμένους(Prä)(M/P)(A) ἀποδέδοται(Per)(M/P), ὥστε(Kon) τὸν(Art)(A) χείριστον(Adj)(Sup)(A)
+(12) schwächsten gegen die die größten vermögenden ist|zugeteilt|worden, so|dass den schlechtesten
+(12) weakest toward the the greatest being|able has|been|given, so|that the worst
+(13) τῶν(Art)(G) αὐτῶν(Pr)(G) τυγχάνειν(Prä)(Inf)(Akt) τῷ(Art)(D) βελτίστῳ(Adj)(Sup)(D)· οὕτως(Adv), ὦ(ij) ἄνδρες(V), ταύτην(Pr)(A) τὴν(Art)(A)
+(13) der gleichen zu|zukommen dem besten· so, o Männer, diese die
+(13) of|the same to|happen|to the best· thus, O men, this the
+(14) ὕβριν(A) ἅπαντες(Adj)(N) ἄνθρωποι(N) δεινοτάτην(Adj)(Sup)(A) ἡγοῦνται(Prä)(Med).
+(14) Frevel alle Menschen furchtbarste halten.
+(14) outrage all men most|terrible consider.
+= § 3 =
+(16) περὶ(Prp) μὲν(Pt) οὖν(Pt) τοῦ(Art)(G) μεγέθους(G) τῆς(Art)(G) ζημίας(G) ἅπαντας(Adj)(A) ὑμᾶς(Pr)(A) νομίζω(Prä)(Akt)
+(16) über zwar nun des Ausmaßes der Strafe alle euch halte|dafür
+(16) about indeed then of|the size of|the penalty all you I|think
+(17) τὴν(Art)(A) αὐτὴν(Adj)(A) διάνοιαν(A) ἔχειν(Prä)(Inf)(Akt), καὶ(Kon) οὐδένα(Pr)(A) οὕτως(Adv) ὀλιγώρως(Adv) διακεῖσθαι(Prä)(M/P)(Inf), ὅστις(Pr)(N)
+(17) die gleiche Gesinnung zu|haben, und keinen so nachlässig gesinnt|zu|sein, wer
+(17) the same mind to|have, and no|one so carelessly to|be|disposed, whoever
+(18) οἴεται(Prä)(M/P) δεῖν(Prä)(Inf)(Akt) συγγνώμης(G) τυγχάνειν(Prä)(Inf)(Akt) ἢ(Kon) μικρᾶς(Adj)(G) ζημίας(G) ἀξίους(Adj)(A) ἡγεῖται(Prä)(Med) τοὺς(Art)(A)
+(18) meint nötig|zu|sein Nachsicht zu|erlangen oder kleiner Strafe würdig hält die
+(18) thinks it|necessary of|pardon to|obtain or of|little penalty worthy he|considers the
+(19) τῶν(Art)(G) τοιούτων(Adj)(G) ἔργων(G) αἰτίους(Adj)(A)· ἡγοῦμαι(Prä)(Med) δέ(Pt),
+(19) der solchen Taten verantwortlich· halte|ich aber,
+(19) of|the such deeds responsible· I|consider but,
+= § 4 =
+(21) ὦ(ij) ἄνδρες(V), τοῦτό(Pr)(A) με(Pr)(A) δεῖν(Prä)(Inf)(Akt) ἐπιδεῖξαι(Aor)(Inf)(Akt), ὡς(Kon) ἐμοίχευεν(Imp)(Akt) Ἐρατοσθένης(N) τὴν(Art)(A)
+(21) o Männer, dies mich nötig|zu|sein zu|zeigen, dass die|Ehe|brach Eratosthenes die
+(21) O men, this me need to|show|forth, that he|was|committing|adultery Eratosthenes the
+(22) γυναῖκα(A) τὴν(Art)(A) ἐμὴν(Adj)(A) καὶ(Kon) ἐκείνην(Pr)(A) τε(Pt) διέφθειρε(Aor)(Akt) καὶ(Kon) τοὺς(Art)(A) παῖδας(A)
+(22) Frau die meine und jene und verdarb und die Kinder
+(22) wife the my and that|woman and ruined and the children
+(23) τοὺς(Art)(A) ἐμοὺς(Adj)(A) ᾔσχυνε(Imp)(Akt) καὶ(Kon) ἐμὲ(Pr)(A) αὐτὸν(Pr)(A) ὕβρισεν(Aor)(Akt) εἰς(Prp) τὴν(Art)(A) οἰκίαν(A)
+(23) die meinen schändete und mich selbst frevelte in die Haus
+(23) the my he|shamed and me myself he|outraged into the house
+(24) τὴν(Art)(A) ἐμὴν(Adj)(A) εἰσιών(Prä)(Akt)(N), καὶ(Kon) οὔτε(Kon) ἔχθρα(N) ἐμοὶ(Pr)(D) καὶ(Kon) ἐκείνῳ(Pr)(D) οὐδεμία(Adj)(N)
+(24) das meine hinein|gehend, und weder Feindschaft mir und jenem keine
+(24) the my going|in, and neither enmity to|me and to|that|man none
+(25) ἦν(Imp)(Akt) πλὴν(Prp) ταύτης(Pr)(G), οὔτε(Kon) χρημάτων(G) ἕνεκα(Prp) ἔπραξα(Aor)(Akt) ταῦτα(Pr)(A), ἵνα(Kon) πλούσιος(Adj)(N)
+(25) war außer dieser, weder Geldes wegen tat|ich dieses, damit reich
+(25) was except of|this, nor of|money for|the|sake|of I|did these|things, so|that rich
+(26) ἐκ(Prp) πένητος(G) γένωμαι(Aor)(Med)(Knj), οὔτε(Kon) ἄλλου(Adj)(G) κέρδους(G) οὐδενὸς(Pr)(G) πλὴν(Prp) τῆς(Art)(G) κατὰ(Prp)
+(26) aus eines|Armen werde, noch anderen Gewinns keines außer der gemäß
+(26) from of|a|poor|man I|may|become, nor of|other gain of|none except the according|to
+(27) τοὺς(Art)(A) νόμους(A) τιμωρίας(G).
+(27) die Gesetze Strafe.
+(27) the laws of|punishment.
+= § 5 =
+(29) ἐγὼ(Pr)(N) τοίνυν(Pt) ἐξ(Prp) ἀρχῆς(G) ὑμῖν(Pr)(D) ἅπαντα(Adj)(A) ἐπιδείξω(Fu)(Akt) τὰ(Art)(A) ἐμαυτοῦ(Pr)(G) πράγματα(A),
+(29) ich nun|also von Anfang euch alles werde|zeigen die meiner|selbst Dinge,
+(29) I then from beginning to|you all I|will|show the of|myself affairs,
+(30) οὐδὲν(Pr)(A) παραλείπων(Prä)(Akt)(N), ἀλλὰ(Kon) λέγων(Prä)(Akt)(N) τἀληθῆ(Art)(A)(Adj)(A)· ταύτην(Pr)(A) γὰρ(Pt) ἐμαυτῷ(Pr)(D) μόνην(Adj)(A) ἡγοῦμαι(Prä)(Med)
+(30) nichts auslassend, sondern sagend die|Wahren· diese denn mir|selbst einzige halte|ich
+(30) nothing leaving|out, but speaking the|truths· this for to|myself only I|consider
+(31) σωτηρίαν(A), ἐὰν(Kon) ὑμῖν(Pr)(D) εἰπεῖν(Aor)(Inf)(Akt) ἅπαντα(Adj)(A) δυνηθῶ(Aor)(M/P)(Knj) τὰ(Art)(A) πεπραγμένα(Per)(M/P)(A).
+(31) Rettung, wenn|falls euch zu|sagen alles vermöge die Getanen.
+(31) salvation, if to|you to|say all I|may|be|able the things|done.
+[Milestone: part=Narr]
+= § 6 =
+(34) ἐγὼ(Pr)(N) γάρ(Pt), ὦ(ij) Ἀθηναῖοι(V), ἐπειδὴ(Kon) ἔδοξέ(Aor)(Akt) μοι(Pr)(D) γῆμαι(Aor)(Med)(Inf) καὶ(Kon) γυναῖκα(A)
+(34) ich denn, o Athener, als beschloss mir zu|heiraten und eine|Frau
+(34) I for, O Athenians, since it|seemed to|me to|marry and a|wife
+(35) ἠγαγόμην(AorS)(Med) εἰς(Prp) τὴν(Art)(A) οἰκίαν(A), τὸν(Art)(A) μὲν(Pt) ἄλλον(Adj)(A) χρόνον(A) οὕτω(Adv) διεκείμην(Imp)(M/P)
+(35) brachte|ich in die Haus, den zwar anderen Zeit so war|gesinnt
+(35) I|brought|her into the house, the indeed other time thus I|was|disposed
+(36) ὥστε(Kon) μήτε(Kon) λυπεῖν(Prä)(Inf)(Akt) μήτε(Kon) λίαν(Adv) ἐπʼ(Prp) ἐκείνῃ(Pr)(D) εἶναι(Prä)(Inf)(Akt) ὅ(Pr)(A) τι(Pr)(A)
+(36) so|dass weder zu|kränken noch allzu gegenüber jener zu|sein was etwas
+(36) so|that neither to|grieve nor too on that|woman to|be whatever anything
+(37) ἂν(Pt) ἐθέλῃ(Prä)(Akt)(Knj) ποιεῖν(Prä)(Inf)(Akt), ἐφύλαττόν(Imp)(Akt) τε(Pt) ὡς(Kon) οἷόν(Adj)(A) τε(Pt) ἦν(Imp)(Akt), καὶ(Kon)
+(37) wohl wolle zu|tun, bewachte|ich und so|wie so|weit und war, und
+(37) would she|might|wish to|do, I|kept|guard and as as|possible and it|was, and
+(38) προσεῖχον(Imp)(Akt) τὸν(Art)(A) νοῦν(A) ὥσπερ(Kon) εἰκὸς(Per)(Akt)(N) ἦν(Imp)(Akt). ἐπειδὴ(Kon) δέ(Pt) μοι(Pr)(D) παιδίον(N)
+(38) achtete|ich den Sinn wie|gerade angemessen|seiend war. als aber mir Kind
+(38) I|applied the mind just|as likely it|was. since but to|me a|child
+(39) γίγνεται(Prä)(M/P), ἐπίστευον(Imp)(Akt) ἤδη(Adv) καὶ(Kon) πάντα(Adj)(A) τὰ(Art)(A) ἐμαυτοῦ(Pr)(G) ἐκείνῃ(Pr)(D) παρέδωκα(Aor)(Akt), ἡγούμενος(Prä)(Med)(N)
+(39) wird|geboren, vertraute|ich schon und alles die meiner|selbst jener übergab|ich, meinend|seiend
+(39) is|born, I|trusted already and all the of|myself to|her I|handed|over, considering
+(40) ταύτην(Pr)(A) οἰκειότητα(A) μεγίστην(Adj)(Sup)(A) εἶναι(Prä)(Inf)(Akt)· ἐν(Prp) μὲν(Pt) οὖν(Pt) τῷ(Art)(D) πρώτῳ(Adj)(Sup)(D) χρόνῳ(D),
+(40) dies Vertrautheit größte zu|sein· in zwar nun der ersten Zeit,
+(40) this intimacy greatest to|be· in indeed then the first time,
+= § 7 =
+(42) ὦ(ij) Ἀθηναῖοι(V), πασῶν(Adj)(G) ἦν(Imp)(Akt) βελτίστη(Adj)(Sup)(N)· καὶ(Kon) γὰρ(Pt) οἰκονόμος(N) δεινὴ(Adj)(N) καὶ(Kon)
+(42) o Athener, aller war beste· und ja Haushälterin tüchtige und
+(42) O Athenians, of|all she|was best· and for housekeeper skilled and
+(43) φειδωλὸς(Adj)(N) ἀγαθὴ(Adj)(N) καὶ(Kon) ἀκριβῶς(Adv) πάντα(Adj)(A) διοικοῦσα(Prä)(Akt)(N)· ἐπειδὴ(Kon) δέ(Pt) μοι(Pr)(D) ἡ(Art)(N)
+(43) sparsame gute und genau alles verwaltend· als aber mir die
+(43) frugal good and precisely all managing· since but to|me the
+(44) μήτηρ(N) ἐτελεύτησε(Aor)(Akt), πάντων(Adj)(G) τῶν(Art)(G) κακῶν(Adj)(G) ἀποθανοῦσα(AorS)(Akt)(N) αἰτία(N) μοι(Pr)(D) γεγένηται(Per)(Med).
+(44) Mutter starb, aller der Übel gestorben|seiend Ursache mir ist|geworden.
+(44) mother died, of|all the evils having|died cause to|me has|become.
+= § 8 =
+(46) ἐπʼ(Prp) ἐκφορὰν(A) γὰρ(Pt) αὐτῇ(Pr)(D) ἀκολουθήσασα(Aor)(Akt)(N) ἡ(Art)(N) ἐμὴ(Adj)(N) γυνὴ(N) ὑπὸ(Prp) τούτου(Pr)(G)
+(46) zu Begräbnis|Zug denn ihr gefolgt|seiend die meine Frau unter dieses
+(46) to|the funeral|procession for to|her having|followed the my wife by this
+(47) τοῦ(Art)(G) ἀνθρώπου(G) ὀφθεῖσα(Aor)(Pas)(N), χρόνῳ(D) διαφθείρεται(Prä)(M/P)· ἐπιτηρῶν(Prä)(Akt)(N) γὰρ(Pt) τὴν(Art)(A) θεράπαιναν(A) τὴν(Art)(A)
+(47) des Mannes gesehen|worden|seiend, mit|der|Zeit wird|verderbt· beobachtend denn die Dienerin die
+(47) of|the man having|been|seen, with|time is|corrupted· watching for the maidservant the
+(48) εἰς(Prp) τὴν(Art)(A) ἀγορὰν(A) βαδίζουσαν(Prä)(Akt)(A) καὶ(Kon) λόγους(A) προσφέρων(Prä)(Akt)(N) ἀπώλεσεν(Aor)(Akt) αὐτήν(Pr)(A).
+(48) in die Markt gehend und Worte heran|tragend verderbte sie.
+(48) into the market going and words offering he|destroyed her.
+= § 9 =
+(50) πρῶτον(Adv)(Sup) μὲν(Pt) οὖν(Pt), ὦ(ij) ἄνδρες(V), (δεῖ(Prä)(Akt) γὰρ(Pt) καὶ(Kon) ταῦθʼ(Pr)(A) ὑμῖν(Pr)(D) διηγήσασθαι(Aor)(Med)(Inf))
+(50) zuerst zwar nun, o Männer, (es|ist|nötig denn auch dieses euch zu|erzählen)
+(50) first indeed then, O men, (it|is|necessary for and these|things to|you to|relate)
+(51) οἰκίδιον(N) ἔστι(Prä)(Akt) μοι(Pr)(D) διπλοῦν(Adj)(N), ἴσα(Adj)(A) ἔχον(Prä)(Akt)(N) τὰ(Art)(A) ἄνω(Adv) τοῖς(Art)(D) κάτω(Adv)
+(51) Häuschen ist mir doppelt, gleiche habend die oben den unten
+(51) a|little|house is to|me double, equal having the above to|the below
+(52) κατὰ(Prp) τὴν(Art)(A) γυναικωνῖτιν(A) καὶ(Kon) κατὰ(Prp) τὴν(Art)(A) ἀνδρωνῖτιν(A). ἐπειδὴ(Kon) δὲ(Pt) τὸ(Art)(N)
+(52) nach die Frauen|Gemach und nach die Männer|Gemach. als aber das
+(52) according|to the womens|quarters and according|to the mens|quarters. since but the
+(53) παιδίον(N) ἐγένετο(Aor)(Med) ἡμῖν(Pr)(D), ἡ(Art)(N) μήτηρ(N) αὐτὸ(Pr)(A) ἐθήλαζεν(Imp)(Akt)· ἵνα(Kon) δὲ(Pt) μή(Pt),
+(53) Kind wurde uns, die Mutter es stillte· damit aber nicht,
+(53) child came|to|be to|us, the mother it was|suckling· in|order|that but not,
+(54) ὁπότε(Kon) λοῦσθαι(Prä)(Med)(Inf) δέοι(Prä)(Akt)(Op), κινδυνεύῃ(Prä)(Akt)(Knj) κατὰ(Prp) τῆς(Art)(G) κλίμακος(G) καταβαίνουσα(Prä)(Akt)(N), ἐγὼ(Pr)(N) μὲν(Pt)
+(54) sooft|wann zu|baden nötig|wäre, Gefahr|laufe auf|der der Treppe hinab|steigend, ich zwar
+(54) whenever to|wash should|be|need, she|may|be|in|danger down the stair|way going|down, I indeed
+(55) ἄνω(Adv) διῃτώμην(Imp)(M/P), αἱ(Art)(N) δὲ(Pt) γυναῖκες(N) κάτω(Adv).
+(55) oben wohnte|ich, die aber Frauen unten.
+(55) above I|dwelt, the but women below.
+= § 10 =
+(57) καὶ(Kon) οὕτως(Adv) ἤδη(Adv) συνειθισμένον(Per)(M/P)(N) ἦν(Imp)(Akt), ὥστε(Kon) πολλάκις(Adv) ἡ(Art)(N) γυνὴ(N) ἀπῄει(Imp)(Akt)
+(57) und so schon gewohnt|worden war, so|dass oft die Frau ging|weg
+(57) and thus already customary it|was, so|that often the woman went|off
+(58) κάτω(Adv) καθευδήσουσα(Fu)(Akt)(N) ὡς(Kon) τὸ(Art)(A) παιδίον(A), ἵνα(Kon) τὸν(Art)(A) τιτθὸν(A) αὐτῷ(Pr)(D) διδῷ(Prä)(Akt)(Knj)
+(58) hinab schlafen|werdend zu das Kind, damit den Busen ihm gebe
+(58) down going|to|sleep as the child, in|order|that the breast to|him she|may|give
+(59) καὶ(Kon) μὴ(Pt) βοᾷ(Prä)(Akt)(Knj). καὶ(Kon) ταῦτα(Pr)(A) πολὺν(Adj)(A) χρόνον(A) οὕτως(Adv) ἐγίγνετο(Imp)(M/P), καὶ(Kon)
+(59) und nicht schreie. und dieses lange Zeit so geschah, und
+(59) and not he|cry. and these|things much time thus were|happening, and
+(60) ἐγὼ(Pr)(N) οὐδέποτε(Adv) ὑπώπτευσα(Aor)(Akt), ἀλλʼ(Kon) οὕτως(Adv) ἠλιθίως(Adv) διεκείμην(Imp)(M/P), ὥστε(Kon) ᾤμην(Imp)(M/P) τὴν(Art)(A)
+(60) ich niemals argwöhnte|ich, sondern so töricht war|gesinnt, so|dass meinte|ich die
+(60) I never I|suspected, but thus foolishly I|was|disposed, so|that I|supposed the
+(61) ἐμαυτοῦ(Pr)(G) γυναῖκα(A) πασῶν(Adj)(G) σωφρονεστάτην(Adj)(Sup)(A) εἶναι(Prä)(Inf)(Akt) τῶν(Art)(G) ἐν(Prp) τῇ(Art)(D) πόλει(D).
+(61) meiner|selbst Frau aller sittsamste zu|sein der in der Stadt.
+(61) of|myself wife of|all most|self|controlled to|be of|those in the city.
+= § 11 =
+(63) προϊόντος(Prä)(Akt)(G) δὲ(Pt) τοῦ(Art)(G) χρόνου(G), ὦ(ij) ἄνδρες(V), ἧκον(Imp)(Akt) μὲν(Pt) ἀπροσδοκήτως(Adv) ἐξ(Prp)
+(63) voranschreitenden aber der Zeit, o Männer, kam|ich zwar unerwartet aus
+(63) as|time|was|advancing but the time, O men, I|came indeed unexpectedly from
+(64) ἀγροῦ(G), μετὰ(Prp) δὲ(Pt) τὸ(Art)(A) δεῖπνον(A) τὸ(Art)(N) παιδίον(N) ἐβόα(Imp)(Akt) καὶ(Kon) ἐδυσκόλαινεν(Imp)(Akt)
+(64) Feldes, nach aber das Mahl das Kind schrie und quengelte
+(64) country, after but the dinner the child was|crying and was|peevish
+(65) ὑπὸ(Prp) τῆς(Art)(G) θεραπαίνης(G) ἐπίτηδες(Adv) λυπούμενον(Prä)(M/P)(A), ἵνα(Kon) ταῦτα(Pr)(A) ποιῇ(Prä)(Akt)(Knj)· ὁ(Art)(N) γὰρ(Pt)
+(65) von der Dienerin absichtlich betrübt|werdend, damit dieses mache· der denn
+(65) by of|the maidservant deliberately being|distressed, in|order|that these|things he|may|do· the for
+(66) ἄνθρωπος(N) ἔνδον(Adv) ἦν(Imp)(Akt)·
+(66) Mann drinnen war·
+(66) the|man inside was·
+= § 12 =
+(68) ὕστερον(Adv) γὰρ(Pt) ἅπαντα(Adj)(A) ἐπυθόμην(Aor)(Med). καὶ(Kon) ἐγὼ(Pr)(N) τὴν(Art)(A) γυναῖκα(A) ἀπιέναι(Prä)(Akt)(Inf) ἐκέλευον(Imp)(Akt)
+(68) später denn alles ich|erfuhr. und ich die Frau weg|zu|gehen befahl
+(68) later for all|things I|learned. and I the woman to|go|away I|was|ordering
+(69) καὶ(Kon) δοῦναι(Aor)(Akt)(Inf) τῷ(Art)(D) παιδίῳ(D) τὸν(Art)(A) τιτθόν(A), ἵνα(Kon) παύσηται(Aor)(M/P)(Knj) κλᾶον(Prä)(Akt)(A). ἡ(Art)(N)
+(69) und zu|geben dem Kind den Busen, damit aufhöre weinend. die
+(69) and to|give to|the child the breast, in|order|that it|may|stop crying. the
+(70) δὲ(Kon) τὸ(Art)(A) μὲν(Pt) πρῶτον(Adv)(Sup) οὐκ(Pt) ἤθελεν(Imp)(Akt), ὡς(Kon) ἂν(Pt) ἀσμένη(Adj)(N) με(Pr)(A)
+(70) aber das zwar zuerst nicht wollte, wie wohl froh mich
+(70) but the indeed first not she|was|willing, as at|least being|glad me
+(71) ἑωρακυῖα(Per)(Akt)(N) ἥκοντα(Prä)(Akt)(A) διὰ(Prp) χρόνου(G)· ἐπειδὴ(Kon) δὲ(Kon) ἐγὼ(Pr)(N) ὠργιζόμην(Imp)(M/P) καὶ(Kon) ἐκέλευον(Imp)(Akt)
+(71) gesehen|habend ankommend durch Zeit· als aber ich zürnte|ich und befahl
+(71) having|seen coming through time· since but I was|angry and I|was|ordering
+(72) αὐτὴν(Pr)(A) ἀπιέναι(Prä)(Akt)(Inf), ἵνα(Kon) σύ(Pr)(N) γε(Pt) ἔφη(Imp)(Akt) πειρᾷς(Prä)(Akt)(Knj) ἐνταῦθα(Adv) τὴν(Art)(A) παιδίσκην(A)·
+(72) sie weg|zu|gehen, damit du wenigstens sagte versuchest hier die Magd·
+(72) her to|go|away, in|order|that you at|least he|said you|may|try here the maidservant·
+(73) καὶ(Kon) πρότερον(Adv) δὲ(Pt) μεθύων(Prä)(Akt)(N) εἷλκες(Imp)(Akt) αὐτήν(Pr)(A). κἀγὼ(Kon)(Pr)(N) μὲν(Pt) ἐγέλων(Imp)(Akt),
+(73) und früher aber trunken|seiend zogst sie. und|ich zwar lachte,
+(73) and earlier but being|drunk you|dragged her. and|I indeed I|was|laughing,
+= § 13 =
+(75) ἐκείνη(Pr)(N) δὲ(Kon) ἀναστᾶσα(AorS)(Akt)(N) καὶ(Kon) ἀπιοῦσα(Prä)(Akt)(N) προστίθησι(Prä)(Akt) τὴν(Art)(A) θύραν(A), προσποιουμένη(Prä)(M/P)(N) παίζειν(Prä)(Akt)(Inf),
+(75) jene aber aufgestanden|seiend und weg|gehend|seiend schiebt|zu die Tür, vorgebend zu|spielen,
+(75) that|woman but having|risen and going|away she|closes the door, pretending to|play,
+(76) καὶ(Kon) τὴν(Art)(A) κλεῖν(A) ἐφέλκεται(Prä)(M/P). κἀγὼ(Kon)(Pr)(N) τούτων(Pr)(G) οὐδὲν(Pr)(A) ἐνθυμούμενος(Prä)(M/P)(N) οὐδʼ(Kon) ὑπονοῶν(Prä)(Akt)(N)
+(76) und den Riegel zieht|heran. und|ich dieser|Dinge nichts bedenkend auch|nicht ahnend
+(76) and the bolt he|pulls|to. and|I of|these|things nothing pondering nor suspecting
+(77) ἐκάθευδον(Imp)(Akt) ἄσμενος(Adj)(N), ἥκων(Prä)(Akt)(N) ἐξ(Prp) ἀγροῦ(G).
+(77) schlief|ich froh, gekommen|seiend aus Feldes.
+(77) I|was|sleeping glad, coming out|of the|field.
+= § 14 =
+(79) ἐπειδὴ(Kon) δὲ(Kon) ἦν(Imp)(Akt) πρὸς(Prp) ἡμέραν(A), ἧκεν(AorS)(Akt) ἐκείνη(Pr)(N) καὶ(Kon) τὴν(Art)(A) θύραν(A)
+(79) als aber war gegen Tag, kam jene und die Tür
+(79) when but it|was toward day, she|came that|woman and the door
+(80) ἀνέῳξεν(Aor)(Akt). ἐρομένου(Prä)(M/P)(G) δέ(Kon) μου(Pr)(G) τί(Pr)(A) αἱ(Art)(N) θύραι(N) νύκτωρ(Adv) ψοφοῖεν(Prä)(Akt)(Op), ἔφασκε(Imp)(Akt)
+(80) öffnete. fragend|seienden aber mir was die Türen bei|Nacht lärmten|würden, behauptete
+(80) she|opened. of|me|asking but of|me why the doors by|night would|rattle, she|said
+(81) τὸν(Art)(A) λύχνον(A) ἀποσβεσθῆναι(Aor)(M/P)(Inf) τὸν(Art)(A) παρὰ(Prp) τῷ(Art)(D) παιδίῳ(D), εἶτα(Adv) ἐκ(Prp) τῶν(Art)(G)
+(81) den Lampe ausgelöscht|worden|zu|sein den bei dem Kind, dann aus der
+(81) the lamp to|be|extinguished the beside the child, then out|of the
+(82) γειτόνων(G) ἐνάψασθαι(Aor)(M/P)(Inf). ἐσιώπων(Imp)(Akt) ἐγὼ(Pr)(N) καὶ(Kon) ταῦτα(Pr)(A) οὕτως(Adv) ἔχειν(Prä)(Inf)(Akt) ἡγούμην(Imp)(M/P). ἔδοξε(Aor)(Akt)
+(82) Nachbarn an|zu|zünden. schwieg|ich ich und dieses so zu|stehen meinte|ich. schien
+(82) neighbors to|get|a|light. I|was|silent I and these|things thus to|be I|supposed. it|seemed
+(83) δέ(Kon) μοι(Pr)(D), ὦ(ij) ἄνδρες(V), τὸ(Art)(N) πρόσωπον(N) ἐψιμυθιῶσθαι(Per)(M/P)(Inf), τοῦ(Art)(G) ἀδελφοῦ(G) τεθνεῶτος(Per)(Akt)(G)
+(83) aber mir, o Männer, das Gesicht gekalkt|zu|sein, des Bruders gestorben|seienden
+(83) but to|me, O men, the face to|have|been|painted, of|the brother being|dead
+(84) οὔπω(Adv) τριάκονθʼ(Adj)(A) ἡμέρας(A)· ὅμως(Adv) δʼ(Kon) οὐδʼ(Kon) οὕτως(Adv) οὐδὲν(Pr)(A) εἰπὼν(Aor)(Akt)(N) περὶ(Prp)
+(84) noch|nicht dreißig Tage· dennoch aber auch|nicht so nichts gesagt|habend über
+(84) not|yet thirty days· nevertheless but nor thus nothing having|said about
+(85) τοῦ(Art)(G) πράγματος(G) ἐξελθὼν(Aor)(Akt)(N) ᾠχόμην(Imp)(M/P) ἔξω(Adv) σιωπῇ(D).
+(85) der Sache hinaus|gegangen|seiend ging|ich|fort hinaus mit|Schweigen.
+(85) of|the matter having|gone|out I|went|off outside in|silence.
+= § 15 =
+(87) μετὰ(Prp) δὲ(Kon) ταῦτα(Pr)(A), ὦ(ij) ἄνδρες(V), χρόνου(G) μεταξὺ(Adv) διαγενομένου(Aor)(M/P)(G) καὶ(Kon) ἐμοῦ(Pr)(G)
+(87) nach aber dieses, o Männer, Zeit inzwischen vergangen|seienden und meiner
+(87) after but these|things, O men, of|time between having|elapsed and of|me
+(88) πολὺ(Adv) ἀπολελειμμένου(Per)(M/P)(G) τῶν(Art)(G) ἐμαυτοῦ(Pr)(G) κακῶν(Adj)(G), προσέρχεταί(Prä)(M/P) μοί(Pr)(D) τις(Pr)(N) πρεσβῦτις(N) ἄνθρωπος(N),
+(88) sehr zurück|gelassen|seienden der meiner|selbst Übel, tritt|heran mir eine Greisin Mensch,
+(88) much having|been|left of|the of|myself evils, comes to|me someone old|woman person,
+(89) ὑπὸ(Prp) γυναικὸς(G) ὑποπεμφθεῖσα(Aor)(Pas)(N) ἣν(Pr)(A) ἐκεῖνος(Pr)(N) ἐμοίχευεν(Imp)(Akt), ὡς(Kon) ἐγὼ(Pr)(N) ὕστερον(Adv) ἤκουον(Imp)(Akt)·
+(89) von einer|Frau unter|gesandt|seiend welche jener Ehe|brach, wie ich später hörte|ich·
+(89) by of|a|woman having|been|secretly|sent whom that|man was|committing|adultery, as I later I|was|hearing·
+(90) αὕτη(Pr)(N) δὲ(Kon) ὀργιζομένη(Prä)(M/P)(N) καὶ(Kon) ἀδικεῖσθαι(Prä)(M/P)(Inf) νομίζουσα(Prä)(Akt)(N), ὅτι(Kon) οὐκέτι(Adv) ὁμοίως(Adv) ἐφοίτα(Imp)(Akt)
+(90) diese aber zürnend und Unrecht|getan|zu|werden meinend, dass nicht|mehr gleichermaßen besuchte
+(90) this|woman but being|angry and to|be|wronged thinking, because no|longer in|the|same|way he|used|to|visit
+(91) παρʼ(Prp) αὐτήν(Pr)(A), ἐφύλαττεν(Imp)(Akt) ἕως(Kon) ἐξηῦρεν(AorS)(Akt) ὅ(Pr)(A) τι(Pr)(N) εἴη(Prä)(Op) τὸ(Art)(N) αἴτιον(Adj)(N).
+(91) bei ihr, bewachte bis fand|heraus was auch sei die Ursache.
+(91) at her, she|was|watching until she|found|out what thing would|be the cause.
+(92) προσελθοῦσα(AorS)(Akt)(N) οὖν(Pt) μοι(Pr)(D) ἐγγὺς(Adv) ἡ(Art)(N) ἄνθρωπος(N) τῆς(Art)(G) οἰκίας(G) τῆς(Art)(G) ἐμῆς(Adj)(G)
+(92) heran|getreten|seiend nun mir nahe die Person der Haus der meinen
+(92) having|approached then to|me near the person of|the house of mine
+(93) ἐπιτηροῦσα(Prä)(Akt)(N), εὐφίλητε(Adj)(V) ἔφη(Imp)(Akt) μηδεμιᾷ(Adj)(D) πολυπραγμοσύνῃ(D) προσεληλυθέναι(Per)(Akt)(Inf) με(Pr)(A) νόμιζε(Prä)(Akt)(Imv) πρὸς(Prp) σέ(Pr)(A)·
+(93) beobachtend, Günstiger sagte|sie keiner Neugier heran|getreten|zu|sein mich glaube zu dir·
+(93) watching, good|friend she|said by|no meddlesomeness to|have|come me suppose toward you·
+= § 16 =
+(95) ὁ(Art)(N) γὰρ(Pt) ἀνὴρ(N) ὁ(Art)(N) ὑβρίζων(Prä)(Akt)(N) εἰς(Prp) σὲ(Pr)(A) καὶ(Kon) τὴν(Art)(A) σὴν(Adj)(A)
+(95) der denn Mann der frevelnd gegen dich und die deine
+(95) the for man the committing|outrage against|into you and the your
+(96) γυναῖκα(A) ἐχθρὸς(Adj)(N) ὢν(Prä)(Akt)(N) ἡμῖν(Pr)(D) τυγχάνει(Prä)(Akt). ἐὰν(Kon) οὖν(Pt) λάβῃς(Aor)(Akt)(Knj) τὴν(Art)(A) θεράπαιναν(A)
+(96) der|Frau|bezüglich Feind seiend uns erweist|sich. wenn nun nimmst die Dienerin
+(96) wife enemy being to|us happens. if then you|take the maidservant
+(97) τὴν(Art)(A) εἰς(Prp) ἀγορὰν(A) βαδίζουσαν(Prä)(Akt)(A) καὶ(Kon) διακονοῦσαν(Prä)(Akt)(A) ὑμῖν(Pr)(D) καὶ(Kon) βασανίσῃς(Aor)(Akt)(Knj), ἅπαντα(Adj)(A)
+(97) die in Markt gehend und dienend euch und folterst, alles
+(97) the into market going and serving to|you and you|examine, all|things
+(98) πεύσῃ(Aor)(M/P)(Knj). ἔστι(Prä)(Akt) δʼ(Kon) ἔφη(Imp)(Akt) Ἐρατοσθένης(N) Ὀῆθεν(Adv) ὁ(Art)(N) ταῦτα(Pr)(A) πράττων(Prä)(Akt)(N), ὃς(Pr)(N)
+(98) erfährst. ist aber sagte|sie Eratosthenes aus|Oe der dieses tuend, der|welcher
+(98) you|will|learn. he|is but she|said Eratosthenes from|Oe the these|things doing, who
+(99) οὐ(Pt) μόνον(Adv) τὴν(Art)(A) σὴν(Adj)(A) γυναῖκα(A) διέφθαρκεν(Per)(Akt) ἀλλὰ(Kon) καὶ(Kon) ἄλλας(Adj)(A) πολλάς(Adj)(A)·
+(99) nicht allein die deine Frau hat|verderbt sondern auch andere viele·
+(99) not only the your wife has|corrupted but also others many·
+(100) ταύτην(Pr)(A) γὰρ(Pt) τὴν(Art)(A) τέχνην(A) ἔχει(Prä)(Akt).
+(100) diese denn die Kunst hat.
+(100) this for the craft he|has.
+= § 17 =
+(102) ταῦτα(Pr)(A) εἰποῦσα(Aor)(Akt)(N), ὦ(ij) ἄνδρες(V), ἐκείνη(Pr)(N) μὲν(Pt) ἀπηλλάγη(Aor)(M/P), ἐγὼ(Pr)(N) δʼ(Kon) εὐθέως(Adv)
+(102) dieses gesagt|habend, o Männer, jene zwar ging|fort, ich aber sofort
+(102) these|things having|said, O men, that|woman indeed departed, I but immediately
+(103) ἐταραττόμην(Imp)(M/P), καὶ(Kon) πάντα(Adj)(A) μου(Pr)(G) εἰς(Prp) τὴν(Art)(A) γνώμην(A) εἰσῄει(Imp)(Akt), καὶ(Kon) μεστὸς(Adj)(N)
+(103) geriet|ich|in|Aufruhr, und alles meiner in den Sinn kam|auf, und voll
+(103) I|was|disturbed, and all|things of|me into the mind were|coming|in, and full
+(104) ἦ(Imp)(Akt) ὑποψίας(G), ἐνθυμούμενος(Prä)(M/P)(N) μὲν(Pt) ὡς(Kon) ἀπεκλῄσθην(Aor)(Pas) ἐν(Prp) τῷ(Art)(D) δωματίῳ(D), ἀναμιμνῃσκόμενος(Prä)(M/P)(N)
+(104) war des|Verdachts, bedenkend zwar wie eingeschlossen|wurde|ich in dem Kämmerchen, mich|erinnernd
+(104) I|was of|suspicion, pondering indeed that I|was|shut in the room, recalling
+(105) δὲ(Kon) ὅτι(Kon) ἐν(Prp) ἐκείνῃ(Pr)(D) τῇ(Art)(D) νυκτὶ(D) ἐψόφει(Imp)(Akt) ἡ(Art)(N) μέταυλος(Adj)(N) θύρα(N)
+(105) aber dass in jener der Nacht lärmte die innen|hof|seitig Tür
+(105) but that in that the night was|making|noise the inner|court door
+(106) καὶ(Kon) ἡ(Art)(N) αὔλειος(Adj)(N), ὃ(Pr)(N) οὐδέποτε(Adv) ἐγένετο(Aor)(Med), ἔδοξέ(Aor)(Akt) τέ(Pt) μοι(Pr)(D) ἡ(Art)(N)
+(106) und die hofseitige, was niemals geschah, schien auch mir die
+(106) and the outer|court, which never happened, it|seemed and to|me the
+(107) γυνὴ(N) ἐψιμυθιῶσθαι(Per)(M/P)(Inf). ταῦτά(Pr)(A) μου(Pr)(G) πάντα(Adj)(N) εἰς(Prp) τὴν(Art)(A) γνώμην(A) εἰσῄει(Imp)(Akt), καὶ(Kon)
+(107) Frau gekalkt|zu|sein. dieses meiner alles in den Sinn kam|auf, und
+(107) woman to|have|been|made|up. these|things of|me all into the mind were|coming|in, and
+(108) μεστὸς(Adj)(N) ἦ(Imp)(Akt) ὑποψίας(G).
+(108) voll war des|Verdachts.
+(108) full I|was of|suspicion.
+= § 18 =
+(110) ἐλθὼν(Aor)(Akt)(N) δὲ(Kon) οἴκαδε(Adv) ἐκέλευον(Imp)(Akt) ἀκολουθεῖν(Prä)(Inf)(Akt) μοι(Pr)(D) τὴν(Art)(A) θεράπαιναν(A) εἰς(Prp) τὴν(Art)(A)
+(110) gekommen|seiend aber nach|Hause befahl|ich zu|folgen mir die Dienerin in den
+(110) having|come but homeward I|was|ordering to|follow to|me the maidservant into the
+(111) ἀγοράν(A), ἀγαγὼν(Aor)(Akt)(N) δʼ(Kon) αὐτὴν(Pr)(A) ὡς(Kon) τῶν(Art)(G) ἐπιτηδείων(Adj)(G) τινὰ(Pr)(A) ἔλεγον(Imp)(Akt) ὅτι(Kon)
+(111) Markt, geführt|habend aber sie zu der Vertrauten einen sagte|ich dass
+(111) market, having|led but her to|as of|the intimates someone I|was|saying that
+(112) ἐγὼ(Pr)(N) πάντα(Adj)(A) εἴην(Prä)(Op) πεπυσμένος(Per)(M/P)(N) τὰ(Art)(A) γιγνόμενα(Prä)(M/P)(A) ἐν(Prp) τῇ(Art)(D) οἰκίᾳ(D)· σοὶ(Pr)(D)
+(112) ich alles sei kundig|geworden|seiend die geschehen|seienden in der Haus· dir
+(112) I all|things I|would|be informed the things|happening in the house· to|you
+(113) οὖν(Pt) ἔφην(Imp)(Akt) ἔξεστι(Prä)(Akt) δυοῖν(Adj)(Du)(D) ὁπότερον(Pr)(A) βούλει(Prä)(Akt) ἑλέσθαι(Aor)(Med)(Inf), ἢ(Kon) μαστιγωθεῖσαν(Aor)(Pas)(A) εἰς(Prp)
+(113) nun sagte|ich es|steht|frei von|zweien welches|von|beiden willst|du zu|wählen, oder gegeißelt|worden|seiend in
+(113) therefore I|said it|is|allowed of|two whichever you|wish to|choose, either having|been|flogged into
+(114) μύλωνα(A) ἐμπεσεῖν(Aor)(Akt)(Inf) καὶ(Kon) μηδέποτε(Adv) παύσασθαι(Aor)(M/P)(Inf) κακοῖς(Adj)(D) τοιούτοις(Adj)(D) συνεχομένην(Prä)(M/P)(A), ἢ(Kon) κατειποῦσαν(Aor)(Akt)(A)
+(114) Mühle hinein|zu|fallen und niemals auf|zuhören Übeln solchen zusammen|gehalten|werdend, oder angezeigt|habend
+(114) the|mill to|fall|into and never to|cease from|evils such being|held|fast, or having|told|against
+(115) ἅπαντα(Adj)(A) τἀληθῆ(Art)(A)(Adj)(A) μηδὲν(Pr)(A) παθεῖν(Aor)(Akt)(Inf) κακόν(Adj)(A), ἀλλὰ(Kon) συγγνώμης(G) παρʼ(Prp) ἐμοῦ(Pr)(G) τυχεῖν(Aor)(Akt)(Inf)
+(115) alles die|Wahren nichts zu|erleiden Schlechtes, sondern Nachsicht von mir zu|erlangen
+(115) all|things the|true|things nothing to|suffer bad, but of|pardon from me to|obtain
+(116) τῶν(Art)(G) ἡμαρτημένων(Per)(M/P)(G). ψεύσῃ(Aor)(M/P)(Knj) δὲ(Kon) μηδέν(Pr)(A), ἀλλὰ(Kon) πάντα(Adj)(A) τἀληθῆ(Art)(A)(Adj)(A) λέγε(Prä)(Akt)(Imv).
+(116) der Verfehlten. lügest aber nichts, sondern alles die|Wahren sage.
+(116) of|the things|done|wrong. you|may|lie but nothing, but all|things the|true|things speak.
+= § 19 =
+(118) κἀκείνη(Kon)(Pr)(N) τὸ(Art)(A) μὲν(Pt) πρῶτον(Adv)(Sup) ἔξαρνος(Adj)(N) ἦν(Imp)(Akt), καὶ(Kon) ποιεῖν(Prä)(Inf)(Akt) ἐκέλευεν(Imp)(Akt) ὅ(Pr)(A)
+(118) und|jene das zwar zuerst leugnend war, und zu|tun befahl|sie was
+(118) and|that|woman the indeed first in|denial was, and to|do she|was|ordering whatever
+(119) τι(Pr)(N) βούλομαι(Prä)(M/P)· οὐδὲν(Pr)(A) γὰρ(Pt) εἰδέναι(Per)(Inf)(Akt)· ἐπειδὴ(Kon) δὲ(Kon) ἐγὼ(Pr)(N) ἐμνήσθην(Aor)(M/P) Ἐρατοσθένους(G)
+(119) etwas ich|will· nichts denn gewusst|zu|haben· als aber ich erinnerte|ich|mich des|Eratosthenes
+(119) anything I|wish· nothing for to|know· since but I remembered of|Eratosthenes
+(120) πρὸς(Prp) αὐτήν(Pr)(A), καὶ(Kon) εἶπον(Aor)(Akt) ὅτι(Kon) οὗτος(Pr)(N) ὁ(Art)(N) φοιτῶν(Prä)(Akt)(N) εἴη(Prä)(Op) πρὸς(Prp)
+(120) gegen sie, und sagte|ich dass dieser der frequentierend|seiend sei zu
+(120) to her, and I|said that this|man the frequenting would|be to
+(121) τὴν(Art)(A) γυναῖκα(A), ἐξεπλάγη(Aor)(M/P) ἡγησαμένη(Aor)(Med)(N) με(Pr)(A) πάντα(Adj)(A) ἀκριβῶς(Adv) ἐγνωκέναι(Per)(Akt)(Inf). καὶ(Kon) τότε(Adv)
+(121) die Frau, erschrak|sie geglaubt|habend mich alles genau erkannt|zu|haben. und dann
+(121) the woman, she|was|astonished having|considered me all|things exactly to|have|known. and then
+(122) ἤδη(Adv) πρὸς(Prp) τὰ(Art)(A) γόνατά(A) μου(Pr)(G) πεσοῦσα(Aor)(Akt)(N),
+(122) schon zu die Knie meiner gefallen|seiend,
+(122) already toward the knees of|me having|fallen,
+= § 20 =
+(124) καὶ(Kon) πίστιν(A) παρʼ(Prp) ἐμοῦ(Pr)(G) λαβοῦσα(Aor)(Akt)(N) μηδὲν(Pr)(A) πείσεσθαι(Fu)(M/P)(Inf) κακόν(Adj)(A), κατηγόρει(Imp)(Akt) πρῶτον(Adv)(Sup)
+(124) und Gewähr von mir genommen|habend nichts erleiden|zu|werden Schlechtes, klagte|sie|an zuerst
+(124) and assurance from me having|taken nothing to|suffer bad, she|was|accusing first
+(125) μὲν(Pt) ὡς(Kon) μετὰ(Prp) τὴν(Art)(A) ἐκφορὰν(A) αὐτῇ(Pr)(D) προσίοι(Prä)(Akt)(Op), ἔπειτα(Adv) ὡς(Kon) αὐτὴ(Pr)(N)
+(125) zwar dass nach dem Leichen|Zug ihr näher|käme, dann dass sie|selbst
+(125) indeed that after the funeral|procession to|her he|would|come, then that she
+(126) τελευτῶσα(Prä)(Akt)(N) εἰσαγγείλειε(Aor)(Akt)(Op) καὶ(Kon) ὡς(Kon) ἐκείνη(Pr)(N) τῷ(Art)(D) χρόνῳ(D) πεισθείη(Aor)(Pas)(Op), καὶ(Kon) τὰς(Art)(A)
+(126) zuletzt|seiend anzeigen|würde und dass jene mit|dem Zeit überredet|würde, und die
+(126) ending she|would|inform and that that|woman with|the time would|be|persuaded, and the
+(127) εἰσόδους(A) οἷς(Pr)(D) τρόποις(D) προσίοιτο(Prä)(Akt)(Op), καὶ(Kon) ὡς(Kon) Θεσμοφορίοις(D) ἐμοῦ(Pr)(G) ἐν(Prp) ἀγρῷ(D)
+(127) Eingänge mit|welchen Weisen näher|käme, und dass bei|den|Thesmophorien meiner in Felde
+(127) entrances by|which ways he|would|come, and that at|the|Thesmophoria of|me in the|field
+(128) ὄντος(Prä)(Akt)(G) ᾤχετο(Imp)(M/P) εἰς(Prp) τὸ(Art)(A) ἱερὸν(A) μετὰ(Prp) τῆς(Art)(G) μητρὸς(G) τῆς(Art)(G) ἐκείνου(Pr)(G)·
+(128) seiend ging|fort in das Heiligtum mit der Mutter der jenes·
+(128) being was|going|off into the sanctuary with the mother of that|man·
+(129) καὶ(Kon) τἆλλα(Art)(A)(Adj)(A) τὰ(Art)(A) γενόμενα(Aor)(Med)(A) πάντα(Adj)(A) ἀκριβῶς(Adv) διηγήσατο(Aor)(Med). ἐπειδὴ(Kon) δὲ(Pt) πάντα(Adj)(A)
+(129) und die|anderen die geschehen|seienden alle genau erzählte. als aber alle
+(129) and the|other|things the having|happened all exactly he|related. since but all
+(130) εἴρητο(Plq)(M/P) αὐτῇ(Pr)(D),
+(130) gesagt|worden|war ihr,
+(130) had|been|said to|her,
+= § 21 =
+(132) εἶπον(Aor)(Akt) ἐγώ(Pr)(N), ὅπως(Kon) τοίνυν(Pt) ταῦτα(Pr)(A) μηδεὶς(Pr)(N) ἀνθρώπων(G) πεύσεται(Fu)(M/P)· εἰ(Kon) δέ(Pt)
+(132) sagte ich, wie nun|also dieses keiner Menschen wird|erfahren· wenn aber
+(132) I|said I, that then|now these|things no|one of|men will|learn· if but
+(133) μή(Pt), οὐδέν(Pr)(N) σοι(Pr)(D) κύριον(Adj)(N) ἔσται(Fu)(Akt) τῶν(Art)(G) πρὸς(Prp) ἔμʼ(Pr)(A) ὡμολογημένων(Per)(M/P)(G). ἀξιῶ(Prä)(Akt)
+(133) nicht, nichts dir gültig wird|sein der zu mich verabredet|seienden. fordere|ich
+(133) not, nothing to|you authoritative will|be of toward me having|been|agreed. I|demand
+(134) δέ(Pt) σε(Pr)(A) ἐπʼ(Prp) αὐτοφώρῳ(D) ταῦτά(Pr)(A) μοι(Pr)(D) ἐπιδεῖξαι(Aor)(Inf)(Akt)· ἐγὼ(Pr)(N) γὰρ(Pt) οὐδὲν(Pr)(A)
+(134) aber dich auf frischer|Tat dieses mir zu|zeigen· ich denn nichts
+(134) but you in the|act these|things to|me to|show· I for nothing
+(135) δέομαι(Prä)(M/P) λόγων(G), ἀλλὰ(Kon) τὸ(Art)(A) ἔργον(A) φανερὸν(Adj)(A) γενέσθαι(Aor)(Med)(Inf), εἴπερ(Kon) οὕτως(Adv) ἔχει(Prä)(Akt).
+(135) bedarf|ich Worten, sondern das Werk offenbar werden, wenn|wirklich so verhält|es|sich.
+(135) I|need of|words, but the deed manifest to|become, if|indeed thus it|holds.
+= § 22 =
+(137) ὡμολόγει(Imp)(Akt) ταῦτα(Pr)(A) ποιήσειν(Fu)(Inf)(Akt). καὶ(Kon) μετὰ(Prp) ταῦτα(Pr)(A) διεγένοντο(Aor)(Med) ἡμέραι(N) τέσσαρες(Adj)(N) ἢ(Kon)
+(137) gestand dieses tun|zu|werden. und nach diesem vergingen Tage vier oder
+(137) he|was|agreeing these|things to|do. and after these|things went|by days four or
+(138) πέντε(Adj)(N), ὡς(Kon) ἐγὼ(Pr)(N) μεγάλοις(Adj)(D) ὑμῖν(Pr)(D) τεκμηρίοις(D) ἐπιδείξω(Fu)(Akt) πρῶτον(Adv)(Sup) δὲ(Pt) διηγήσασθαι(Aor)(Med)(Inf)
+(138) fünf, [[wie ich großen euch Beweisen werde|zeigen zuerst. aber zu|erzählen
+(138) five, [[as I great to|you proofs I|will|show first. but to|narrate
+(139) βούλομαι(Prä)(M/P) τὰ(Art)(A) πραχθέντα(Aor)(Pas)(A) τῇ(Art)(D) τελευταίᾳ(Adj)(D) ἡμέρᾳ(D). Σώστρατος(N) ἦν(Imp)(Akt) μοι(Pr)(D) ἐπιτήδειος(Adj)(N)
+(139) will|ich die getan|wordenen der letzten Tag. Sostratos war mir vertrauter
+(139) I|wish the things|done on|the last day. Sostratos was to|me intimate
+(140) καὶ(Kon) φίλος(N). τούτῳ(Pr)(D) ἡλίου(G) δεδυκότος(Per)(Akt)(G) ἰόντι(Prä)(Akt)(D) ἐξ(Prp) ἀγροῦ(G) ἀπήντησα(Aor)(Akt).
+(140) und Freund. diesem der|Sonne untergegangen|seienden gehend|seienden aus Feldes begegnete|ich.
+(140) and friend. to|this|man of|the|sun having|set going out|of the|field I|met.
+= § 23 =
+(142) εἰδὼς(Per)(Akt)(N) δʼ(Pt) ἐγὼ(Pr)(N) ὅτι(Kon) τηνικαῦτα(Adv) ἀφιγμένος(Aor)(Med)(N) οὐδένα(Pr)(A) καταλήψοιτο(Aor)(Med)(Op) οἴκοι(Adv) τῶν(Art)(G)
+(142) wissend aber ich dass damals angekommen|seiender keinen würde|antreffen daheim der
+(142) knowing but I that at|that|time having|arrived no|one he|would|find at|home of
+(143) ἐπιτηδείων(Adj)(G), ἐκέλευον(Imp)(Akt), συνδειπνεῖν(Prä)(Inf)(Akt)· καὶ(Kon) ἐλθόντες(AorS)(Akt)(N) οἴκαδε(Adv) ὡς(Kon) ἐμέ(Pr)(A), ἀναβάντες(AorS)(Akt)(N) εἰς(Prp)
+(143) Vertrauten, befahl|ich, mit|zu|essen· und gekommen|seiend nach|Hause zu mir, hinauf|gestiegen|seiend in
+(143) of|intimates, I|was|bidding, to|dine|together· and having|come homeward to me, having|gone|up into
+(144) τὸ(Art)(A) ὑπερῷον(A) ἐδειπνοῦμεν(Imp)(Akt). ἐπειδὴ(Kon) δὲ(Pt) καλῶς(Adv) αὐτῷ(Pr)(D) εἶχεν(Imp)(Akt), ἐκεῖνος(Pr)(N) μὲν(Pt)
+(144) das Obergemach speisten|wir. als aber gut ihm stand|es, jener zwar
+(144) the upper|room we|were|dining. since but well to|him it|fared, that|man indeed
+(145) ἀπιὼν(Prä)(Akt)(N) ᾤχετο(Imp)(M/P), ἐγὼ(Pr)(N) δʼ(Pt) ἐκάθευδον(Imp)(Akt). ὁ(Art)(N) δʼ(Pt) Ἐρατοσθένης(N), ὦ(ij) ἄνδρες(V),
+(145) weg|gehend ging|fort, ich aber schlief|ich. der aber Eratosthenes, o Männer,
+(145) departing he|was|going|off, I but I|was|sleeping. the but Eratosthenes, O men,
+(146) εἰσέρχεται(Prä)(M/P), καὶ(Kon) ἡ(Art)(N) θεράπαινα(N) ἐπεγείρασά(Aor)(Akt)(N) με(Pr)(A) εὐθὺς(Adv) φράζει(Prä)(Akt) ὅτι(Kon) ἔνδον(Adv)
+(146) geht|hinein, und die Dienerin auf|geweckt|habend mich sofort sagt|sie dass drinnen
+(146) comes|in, and the maidservant having|roused me at|once tells that inside
+(147) ἐστί(Prä)(Akt). κἀγὼ(Kon)(Pr)(N) εἰπὼν(Aor)(Akt)(N) ἐκείνῃ(Pr)(D) ἐπιμελεῖσθαι(Prä)(M/P)(Inf) τῆς(Art)(G) θύρας(G), καταβὰς(AorS)(Akt)(N) σιωπῇ(D) ἐξέρχομαι(Prä)(M/P),
+(147) ist. und|ich gesagt|habend jener sich|zu|kümmern der Tür, hinab|gestiegen|seiend in|Schweigen gehe|hinaus,
+(147) is. and|I having|said to|that|woman to|take|care of|the door, having|gone|down in|silence I|go|out,
+(148) καὶ(Kon) ἀφικνοῦμαι(Prä)(M/P) ὡς(Kon) τὸν(Art)(A) καὶ(Kon) τόν(Art)(A), καὶ(Kon) τοὺς(Art)(A) μὲν(Pt) ἔνδον(Adv)
+(148) und gelange|ich zu den und den, und die zwar drinnen
+(148) and I|arrive to the and the, and the indeed inside
+(149) κατέλαβον(Aor)(Akt), τοὺς(Art)(A) δὲ(Pt) οὐκ(Pt) ἐπιδημοῦντας(Prä)(Akt)(A) ηὗρον(AorS)(Akt).
+(149) ergriff|ich, die aber nicht anwesend|seienden fand|ich.
+(149) I|found, the but not being|in|town I|found.
+= § 24 =
+(151) παραλαβὼν(AorS)(Akt)(N) δʼ(Pt) ὡς(Kon) οἷόν(Adj)(N) τε(Pt) ἦν(Imp)(Akt) πλείστους(Adj)(A)(Sup) ἐκ(Prp) τῶν(Art)(G) παρόντων(Prä)(Akt)(G)
+(151) mitgenommen|habend aber so wie möglich war die|meisten aus den Anwesenden
+(151) having|taken|along but as as|possible and was very|many out|of of|the present
+(152) ἐβάδιζον(Imp)(Akt). καὶ(Kon) δᾷδας(A) λαβόντες(AorS)(Akt)(N) ἐκ(Prp) τοῦ(Art)(G) ἐγγύτατα(Adv)(Sup) καπηλείου(G) εἰσερχόμεθα(Prä)(M/P), ἀνεῳγμένης(Per)(M/P)(G)
+(152) ging|ich. und Fackeln genommen|habend aus des nächsten Wirtshaus treten|wir|ein, geöffnet|seienden
+(152) I|was|walking. and torches having|taken out|of the nearest tavern we|enter, having|been|opened
+(153) τῆς(Art)(G) θύρας(G) καὶ(Kon) ὑπὸ(Prp) τῆς(Art)(G) ἀνθρώπου(G) παρεσκευασμένης(Per)(M/P)(G). ὤσαντες(AorS)(Akt)(N) δὲ(Pt) τὴν(Art)(A)
+(153) der Tür und unter der Person bereitet|seienden. gestoßen|habend aber die
+(153) of|the door and by the woman having|been|prepared. having|pushed but the
+(154) θύραν(A) τοῦ(Art)(G) δωματίου(G) οἱ(Art)(N) μὲν(Pt) πρῶτοι(Adj)(N)(Sup) εἰσιόντες(Prä)(Akt)(N) ἔτι(Adv) εἴδομεν(AorS)(Akt) αὐτὸν(Pr)(A)
+(154) Tür des Kämmerchens die zwar ersten eintretend|seiende noch sahen|wir ihn
+(154) door of|the room the indeed first entering still we|saw him
+(155) κατακείμενον(Prä)(M/P)(A) παρὰ(Prp) τῇ(Art)(D) γυναικί(D), οἱ(Art)(N) δʼ(Pt) ὕστερον(Adv) ἐν(Prp) τῇ(Art)(D) κλίνῃ(D)
+(155) liegend|seienden bei der Frau, die aber später in der Liege
+(155) lying|down beside the woman, the but later in the bed
+(156) γυμνὸν(Adj)(A) ἑστηκότα(Per)(Akt)(A).
+(156) nackt stehend|seienden.
+(156) naked standing.
+= § 25 =
+(158) ἐγὼ(Pr)(N) δʼ(Pt), ὦ(ij) ἄνδρες(V), πατάξας(AorS)(Akt)(N) καταβάλλω(Prä)(Akt) αὐτόν(Pr)(A), καὶ(Kon) τὼ(Art)(Du) χεῖρε(Du)(A)
+(158) ich aber, o Männer, geschlagen|habend werfe|ich|nieder ihn, und die|beiden Hände
+(158) I but, O men, having|struck I|throw|down him, and the|two hands
+(159) περιαγαγὼν(AorS)(Akt)(N) εἰς(Prp) τοὔπισθεν(Art)(A)(Adv) καὶ(Kon) δήσας(Aor)(Akt)(N) ἠρώτων(Imp)(Akt) διὰ(Prp) τί(Pr)(N) ὑβρίζει(Prä)(Akt) εἰς(Prp)
+(159) herum|geführt|habend in das|Hinten und gebunden|habend fragte|ich wegen was frevelt gegen
+(159) having|brought|around into the|back and having|bound I|was|asking through what he|outrages into
+(160) τὴν(Art)(A) οἰκίαν(A) τὴν(Art)(A) ἐμὴν(Adj)(A) εἰσιών(Prä)(Akt)(N). κἀκεῖνος(Kon)(Pr)(N) ἀδικεῖν(Prä)(Inf)(Akt) μὲν(Pt) ὡμολόγει(Imp)(Akt), ἠντεβόλει(Imp)(Akt)
+(160) die Haus die meine eintretend|seiend. und|jener Unrecht|tun zwar gestand, bat|inständig
+(160) the house the my entering. and|that|man to|do|wrong indeed he|was|admitting, he|was|entreating
+(161) δὲ(Pt) καὶ(Kon) ἱκέτευε(Imp)(Akt) μὴ(Pt) ἀποκτεῖναι(AorS)(Inf)(Akt) ἀλλʼ(Kon) ἀργύριον(A) πράξασθαι(Aor)(Med)(Inf). ἐγὼ(Pr)(N) δʼ(Pt)
+(161) aber auch flehte nicht zu|töten sondern Geld zu|erlangen. ich aber
+(161) but also he|was|begging not to|kill but money to|exact. I but
+(162) εἶπον(Aor)(Akt) ὅτι(Kon) οὐκ(Pt) ἐγώ(Pr)(N) σε(Pr)(A) ἀποκτενῶ(Fu)(Akt),
+(162) sagte dass nicht ich dich töten|werde,
+(162) I|said that not I you I|will|kill,
+= § 26 =
+(164) ἀλλʼ(Kon) ὁ(Art)(N) τῆς(Art)(G) πόλεως(G) νόμος(N), ὃν(Pr)(A) σὺ(Pr)(N) παραβαίνων(Prä)(Akt)(N) περὶ(Prp) ἐλάττονος(Adj)(G)(Kmp)
+(164) sondern der der Stadt Gesetz, welchen du überschreitend|seiend um geringeres
+(164) but the of|the city law, which you transgressing about less
+(165) τῶν(Art)(G) ἡδονῶν(G) ἐποιήσω(Aor)(Med), καὶ(Kon) μᾶλλον(Adv)(Kmp) εἵλου(AorS)(Med) τοιοῦτον(Adj)(A) ἁμάρτημα(A) ἐξαμαρτάνειν(Prä)(Inf)(Akt) εἰς(Prp)
+(165) der Genüsse machtest|du, und mehr wähltest|du solchen Fehltritt zu|verfehlen gegen
+(165) of|the pleasures you|made, and rather you|chose such offense to|commit|completely against
+(166) τὴν(Art)(A) γυναῖκα(A) τὴν(Art)(A) ἐμὴν(Adj)(A) καὶ(Kon) εἰς(Prp) τοὺς(Art)(A) παῖδας(A) τοὺς(Art)(A) ἐμοὺς(Adj)(A)
+(166) die Frau die meine und gegen die Kinder die meinen
+(166) the wife the my and against the children the my
+(167) ἢ(Kon) τοῖς(Art)(D) νόμοις(D) πείθεσθαι(Prä)(M/P)(Inf) καὶ(Kon) κόσμιος(Adj)(N) εἶναι(Prä)(Inf)(Akt).
+(167) oder den Gesetzen zu|gehorchen und geordnet zu|sein.
+(167) or to|the laws to|obey and orderly to|be.
+[Milestone: part=Proof]
+= § 27 =
+(170) οὕτως(Adv), ὦ(ij) ἄνδρες(V), ἐκεῖνος(Pr)(N) τούτων(Pr)(G) ἔτυχεν(AorS)(Akt) ὧνπερ(Pr)(G) οἱ(Art)(N) νόμοι(N) κελεύουσι(Prä)(Akt)
+(170) so, o Männer, jener dieser traf|er deren|ja die Gesetze befehlen
+(170) thus, O men, that|man of|these he|met|with of|which|indeed the laws order
+(171) τοὺς(Art)(A) τὰ(Art)(A) τοιαῦτα(Adj)(A) πράττοντας(Prä)(Akt)(A), οὐκ(Pt) εἰσαρπασθεὶς(Aor)(Pas)(N) ἐκ(Prp) τῆς(Art)(G) ὁδοῦ(G), οὐδʼ(Pt)
+(171) die die solchen tuend|seienden, nicht hinein|gerissen|worden|seiend aus der Straße, auch|nicht
+(171) those the such doing, not having|been|dragged|in out|of the road, nor
+(172) ἐπὶ(Prp) τὴν(Art)(A) ἑστίαν(A) καταφυγών(AorS)(Akt)(N), ὥσπερ(Kon) οὗτοι(Pr)(N) λέγουσι(Prä)(Akt)· πῶς(Adv) γὰρ(Pt) ἄν(Pt),
+(172) auf die Herdstatt geflohen|seiend, so|wie diese sagen· wie denn wohl,
+(172) upon the hearth having|fled, just|as these|men say· how for would,
+(173) ὅστις(Pr)(N) ἐν(Prp) τῷ(Art)(D) δωματίῳ(D) πληγεὶς(Aor)(Pas)(N) κατέπεσεν(AorS)(Akt) εὐθύς(Adv), περιέστρεψα(Aor)(Akt) δʼ(Pt) αὐτοῦ(Pr)(G)
+(173) wer in dem Kämmerchen geschlagen|worden|seiend stürzte sofort, wandte|ich|um aber seiner
+(173) whoever in the room having|been|struck fell|down immediately, I|twisted but his
+(174) τὼ(Art)(Du) χεῖρε(Du)(A), ἔνδον(Adv) δὲ(Pt) ἦσαν(Imp)(Akt) ἄνθρωποι(N) τοσοῦτοι(Adj)(N), οὓς(Pr)(A) διαφυγεῖν(AorS)(Inf)(Akt) οὐκ(Pt)
+(174) die|beiden Hände, drinnen aber waren Menschen so|viele, welche zu|entfliehen nicht
+(174) the|two hands, inside but were men so|many, whom to|escape not
+(175) ἐδύνατο(Imp)(M/P), οὔτε(Kon) σίδηρον(A) οὔτε(Kon) ξύλον(A) οὔτε(Kon) ἄλλο(Adj)(A) οὐδὲν(Pr)(A) ἔχων(Prä)(Akt)(N), ᾧ(Pr)(D)
+(175) vermochte, weder Eisen noch Holz noch anderes nichts habend, womit
+(175) he|was|able, neither iron nor wood nor other nothing having, with|which
+(176) τοὺς(Art)(A) εἰσελθόντας(AorS)(Akt)(A) ἂν(Pt) ἠμύνατο(Aor)(Med).
+(176) die eingetreten|seienden wohl hätte|abwehren|können.
+(176) the having|entered would have|warded|off.
+= § 28 =
+(178) ἀλλʼ(Kon), ὦ(ij) ἄνδρες(V), οἶμαι(Prä)(M/P) καὶ(Kon) ὑμᾶς(Pr)(A) εἰδέναι(Per)(Inf)(Akt) ὅτι(Kon) οἱ(Art)(N) μὴ(Pt)
+(178) sondern, o Männer, meine|ich auch euch gewusst|zu|haben dass die nicht
+(178) but, O men, I|think also you to|know that the not
+(179) τὰ(Art)(A) δίκαια(Adj)(A) πράττοντες(Prä)(Akt)(N) οὐχ(Pt) ὁμολογοῦσι(Prä)(Akt) τοὺς(Art)(A) ἐχθροὺς(A) λέγειν(Prä)(Inf)(Akt) ἀληθῆ(Adj)(A), ἀλλʼ(Kon)
+(179) die gerechten|Dinge tuend|seienden nicht stimmen|zu die Feinde zu|sagen Wahres, sondern
+(179) the just|things doing not they|agree the enemies to|speak true|things, but
+(180) αὐτοὶ(Pr)(N) ψευδόμενοι(Prä)(M/P)(N) καὶ(Kon) τὰ(Art)(A) τοιαῦτα(Adj)(A) μηχανώμενοι(Prä)(M/P)(N) ὀργὰς(A) τοῖς(Art)(D) ἀκούουσι(Prä)(Akt)(D) κατὰ(Prp)
+(180) sie|selbst lügend|seiende und die solchen ausdenk|end|seiende Zorn den Hörenden gegen
+(180) themselves lying and the such contriving angers to|the hearing against
+(181) τῶν(Art)(G) τὰ(Art)(A) δίκαια(Adj)(A) πραττόντων(Prä)(Akt)(G) παρασκευάζουσι(Prä)(Akt). πρῶτον(Adv)(Sup) μὲν(Pt) οὖν(Pt) ἀνάγνωθι(Aor)(Akt)(Imv) τὸν(Art)(A)
+(181) der die gerechten|Dinge tuenden bereiten. zuerst zwar nun lies den
+(181) of|the the just|things doing they|prepare. first indeed then read the
+(182) νόμον(A).
+(182) Gesetz.
+(182) law.
+= § 29 =
+(184) Νόμος(N) οὐκ(Pt) ἠμφεσβήτει(Imp)(Akt), ὦ(ij) ἄνδρες(V), ἀλλʼ(Kon) ὡμολόγει(Imp)(Akt) ἀδικεῖν(Prä)(Inf)(Akt), καὶ(Kon) ὅπως(Kon)
+(184) Gesetz nicht bestritt, o Männer, sondern gestand Unrecht|tun, und wie
+(184) law not he|was|disputing, O men, but he|was|agreeing to|do|wrong, and that
+(185) μὲν(Pt) μὴ(Pt) ἀποθάνῃ(AorS)(Akt)(Knj) ἠντεβόλει(Imp)(Akt) καὶ(Kon) ἱκέτευεν(Imp)(Akt), ἀποτίνειν(Prä)(Inf)(Akt) δʼ(Pt) ἕτοιμος(Adj)(N) ἦν(Imp)(Akt)
+(185) zwar nicht sterbe bat|inständig und flehte, zu|bezahlen aber bereit war
+(185) indeed not he|may|die he|was|supplicating and he|was|begging, to|pay but ready he|was
+(186) χρήματα(A). ἐγὼ(Pr)(N) δὲ(Pt) τῷ(Art)(D) μὲν(Pt) ἐκείνου(Pr)(G) τιμήματι(D) οὐ(Pt) συνεχώρουν(Imp)(Akt), τὸν(Art)(A)
+(186) Geld. ich aber dem zwar jenes Preis nicht stimmte|zu, den
+(186) money. I but to|the indeed of|that|man price not I|was|agreeing, the
+(187) δὲ(Pt) τῆς(Art)(G) πόλεως(G) νόμον(A) ἠξίουν(Imp)(Akt) εἶναι(Prä)(Inf)(Akt) κυριώτερον(Adj)(A)(Kmp), καὶ(Kon) ταύτην(Pr)(A) ἔλαβον(AorS)(Akt)
+(187) aber der Stadt Gesetz hielt|ich|für|würdig zu|sein maßgeblicher, und diese nahm|ich
+(187) but of|the city law I|was|deeming|worthy to|be more|authoritative, and this I|took
+(188) τὴν(Art)(A) δίκην(A), ἣν(Pr)(A) ὑμεῖς(Pr)(N) δικαιοτάτην(Adj)(A)(Sup) εἶναι(Prä)(Inf)(Akt) ἡγησάμενοι(Aor)(Med)(N) τοῖς(Art)(D) τὰ(Art)(A) τοιαῦτα(Adj)(A)
+(188) die Strafe, welche ihr gerechteste zu|sein erachtet|habend den die solchen
+(188) the penalty, which you most|just to|be having|considered to|the the such
+(189) ἐπιτηδεύουσιν(Prä)(Akt)(D) ἐτάξατε(Aor)(Akt). καί(Kon) μοι(Pr)(D) ἀνάβητε(AorS)(Akt)(Imv) τούτων(Pr)(G) μάρτυρες(N).
+(189) betreibend|seienden habt|ihr|festgesetzt. und mir steigt|herauf dieser Zeugen.
+(189) practicing you|ordained. and to|me come|up of|these|things witnesses.
+= § 30 =
+(191) Μάρτυρες(N) ἀνάγνωθι(Aor)(Akt)(Imv) δέ(Pt) μοι(Pr)(D) καὶ(Kon) τοῦτον(Pr)(A) τὸν(Art)(A) νόμον(A) ⟦τὸν⟧(Art)(A) ἐκ(Prp)
+(191) Zeugen lies aber mir auch diesen den Gesetz ⟦den⟧ aus
+(191) Witnesses read but to|me also this the law the out|of
+(192) τῆς(Art)(G) στήλης(G) τῆς(Art)(G) ἐξ(Prp) Ἀρείου(G) πάγου(G). Νόμος(N) ἀκούετε(Prä)(Akt)(Imv), ὦ(ij) ἄνδρες(V),
+(192) der Stele der von Areios Hügel. Gesetz hört, o Männer,
+(192) of|the stele the from of|Areios hill. Law listen, O men,
+(193) ὅτι(Kon) αὐτῷ(Pr)(D) τῷ(Art)(D) δικαστηρίῳ(D) τῷ(Art)(D) ἐξ(Prp) Ἀρείου(G) πάγου(G), ᾧ(Pr)(D) καὶ(Kon)
+(193) dass dem dem Gericht dem von Areios Hügel, welchem auch
+(193) that to|it the court the from Areios hill, to|which and
+(194) πάτριόν(Adj)(N) ἐστι(Prä)(Akt) καὶ(Kon) ἐφʼ(Prp) ἡμῶν(Pr)(G) ἀποδέδοται(Per)(M/P) τοῦ(Art)(G) φόνου(G) τὰς(Art)(A) δίκας(A)
+(194) väterlich ist und auf von|uns ist|zugesprochen|worden des Mordes die Klagen
+(194) ancestral|custom it|is and upon us|of has|been|assigned of the|murder the suits
+(195) δικάζειν(Prä)(Inf)(Akt), διαρρήδην(Adv) εἴρηται(Per)(M/P) τούτου(Pr)(G) μὴ(Pt) καταγιγνώσκειν(Prä)(Inf)(Akt) φόνον(A), ὃς(Pr)(N) ἂν(Pt) ἐπὶ(Prp)
+(195) zu|richten, ausdrücklich ist|gesagt|worden dieses nicht verurteilen Mord, wer wohl bei
+(195) to|judge, expressly it|has|been|said of|this not to|condemn murder, who ever against
+(196) δάμαρτι(D) τῇ(Art)(D) ἑαυτοῦ(Pr)(G) μοιχὸν(A) λαβὼν(AorS)(Akt)(N) ταύτην(Pr)(A) τὴν(Art)(A) τιμωρίαν(A) ποιήσηται(Aor)(Med)(Knj).
+(196) der|Gattin der seiner|selbst Ehebrecher ergriffen|habend diese die Strafe machen|möge.
+(196) wife the of|him|self adulterer having|taken this the punishment he|may|make.
+= § 31 =
+(198) καὶ(Kon) οὕτω(Adv) σφόδρα(Adv) ὁ(Art)(N) νομοθέτης(N) ἐπὶ(Prp) ταῖς(Art)(D) γαμεταῖς(Adj)(D) γυναιξὶ(D) δίκαια(Adj)(A)
+(198) und so sehr der Gesetzgeber bei den verheirateten Frauen gerechte|Dinge
+(198) and thus very the lawgiver upon the wedded women just
+(199) ταῦτα(Pr)(A) ἡγήσατο(Aor)(Med) εἶναι(Prä)(Inf)(Akt), ὥστε(Kon) καὶ(Kon) ἐπὶ(Prp) ταῖς(Art)(D) παλλακαῖς(D) ταῖς(Art)(D) ἐλάττονος(Adj)(G)(Kmp)
+(199) dieses hielt|er|für zu|sein, so|dass auch bei den Konkubinen den geringerer
+(199) these|things he|considered to|be, so|that also upon the concubines the of|lesser
+(200) ἀξίαις(D) τὴν(Art)(A) αὐτὴν(Adj)(A) δίκην(A) ἐπέθηκε(Aor)(Akt). καίτοι(Kon) δῆλον(Adj)(N) ὅτι(Kon), εἴ(Kon) τινα(Pr)(A)
+(200) Werten die gleiche Strafe legte|er|auf. obwohl offenkundig dass, wenn jemanden
+(200) worths the same penalty he|imposed. and|yet clear that, if someone
+(201) εἶχε(Imp)(Akt) ταύτης(Pr)(G) μείζω(Adj)(A)(Kmp) τιμωρίαν(A) ἐπὶ(Prp) ταῖς(Art)(D) γαμεταῖς(Adj)(D), ἐποίησεν(Aor)(Akt) ἄν(Pt). νῦν(Adv)
+(201) hatte dieser größere Strafe bei den Ehefrauen, hätte|er|gemacht wohl. nun
+(201) had of|this greater punishment upon the wedded, he|would|have|done at|least. now
+(202) δὲ(Pt) οὐχ(Pt) οἷός(Adj)(N) τε(Pt) ὢν(Prä)(Akt)(N) ταύτης(Pr)(G) ἰσχυροτέραν(Adj)(A)(Kmp) ἐπʼ(Prp) ἐκείναις(Pr)(D) ἐξευρεῖν(Aor)(Inf)(Akt),
+(202) aber nicht fähig dazu seiend dieser stärkere bei jenen zu|erfinden,
+(202) but not of|such|a|sort at|least being of|this stronger upon those to|find|out,
+(203) τὴν(Art)(A) αὐτὴν(Adj)(A) καὶ(Kon) ἐπὶ(Prp) ταῖς(Art)(D) παλλακαῖς(D) ἠξίωσε(Aor)(Akt) γίγνεσθαι(Prä)(M/P)(Inf). ἀνάγνωθι(Aor)(Akt)(Imv) δέ(Pt)
+(203) die gleiche auch bei den Konkubinen hielt|er|für|würdig zu|werden. lies aber
+(203) the same also upon the concubines he|deemed|worthy to|become. read but
+(204) μοι(Pr)(D) καὶ(Kon) τοῦτον(Pr)(A) τὸν(Art)(A) νόμον(A).
+(204) mir auch diesen den Gesetz.
+(204) to|me and this the law.
+= § 32 =
+(206) Νόμος(N) ἀκούετε(Prä)(Akt)(Imv), ἄνδρες(V), ὅτι(Kon) κελεύει(Prä)(Akt), ἐάν(Kon) τις(Pr)(N) ἄνθρωπον(A) ἐλεύθερον(Adj)(A) ἢ(Kon)
+(206) Gesetz hört, Männer, dass befiehlt, wenn jemand einen|Menschen freien oder
+(206) Law hear, men, that it|orders, if someone man free or
+(207) παῖδα(A) αἰσχύνῃ(Prä)(Akt)(Knj) βίᾳ(D), διπλῆν(Adj)(A) τὴν(Art)(A) βλάβην(A) ὀφείλειν(Prä)(Inf)(Akt)· ἐὰν(Kon) δὲ(Pt) γυναῖκα(A),
+(207) ein|Kind entehre mit|Gewalt, doppelte den Schaden zu|schulden· wenn aber eine|Frau,
+(207) child he|shame by|force, double the damage to|owe· if but woman,
+(208) ἐφʼ(Prp) αἷσπερ(Pr)(D) ἀποκτείνειν(Aor)(Inf)(Akt) ἔξεστιν(Prä)(Akt), ἐν(Prp) τοῖς(Art)(D) αὐτοῖς(Adj)(D) ἐνέχεσθαι(Prä)(M/P)(Inf)· οὕτως(Adv), ὦ(ij)
+(208) für welchen zu|töten ist|erlaubt, in den gleichen haftbar|zu|sein· so, o
+(208) on|which indeed to|kill it|is|permitted, in the same to|be|liable· thus, O
+(209) ἄνδρες(V), τοὺς(Art)(A) βιαζομένους(Prä)(M/P)(A) ἐλάττονος(Adj)(G)(Kmp) ζημίας(G) ἀξίους(Adj)(A) ἡγήσατο(Aor)(Med) εἶναι(Prä)(Inf)(Akt) ἢ(Kon) τοὺς(Art)(A)
+(209) Männer, die Gewalt|brauchenden geringerer Strafe würdig hielt|er|für zu|sein als die
+(209) men, the forcing|themselves of|less penalty worthy he|considered to|be than the
+(210) πείθοντας(Prä)(Akt)(A)· τῶν(Art)(G) μὲν(Pt) γὰρ(Pt) θάνατον(A) κατέγνω(Aor)(Akt), τοῖς(Art)(D) δὲ(Pt) διπλῆν(Adj)(A) ἐποίησε(Aor)(Akt)
+(210) Verführenden· der zwar denn den|Tod erkannte|er, den aber doppelten machte|er
+(210) persuading· of|the indeed for death he|condemned, to|the but double he|made
+(211) τὴν(Art)(A) βλάβην(A), ἡγούμενος(Prä)(Med)(N) τοὺς(Art)(A) μὲν(Pt) διαπραττομένους(Prä)(M/P)(A) βίᾳ(D) ὑπὸ(Prp) τῶν(Art)(G) βιασθέντων(Aor)(Pas)(G)
+(211) den Schaden, meinend|seiend die zwar vollbringenden mit|Gewalt von den Gewalt|Erlittenen
+(211) the damage, considering the indeed accomplishing by|force by the having|been|forced
+(212) μισεῖσθαι(Prä)(M/P)(Inf),
+(212) gehasst|zu|werden,
+(212) to|be|hated,
+= § 33 =
+(214) τοὺς(Art)(A) δὲ(Pt) πείσαντας(Aor)(Akt)(A) οὕτως(Adv) αὐτῶν(Pr)(G) τὰς(Art)(A) ψυχὰς(A) διαφθείρειν(Prä)(Inf)(Akt), ὥστʼ(Kon) οἰκειοτέρας(Adj)(A)(Kmp)
+(214) die aber überredet|Habenden so ihrer die Seelen zugrunde|zu|richten, so|dass vertrautere
+(214) the but having|persuaded thus of|them the souls to|corrupt, so|that more|their|own
+(215) αὑτοῖς(Pr)(D) ποιεῖν(Prä)(Inf)(Akt) τὰς(Art)(A) ἀλλοτρίας(Adj)(A) γυναῖκας(A) ἢ(Kon) τοῖς(Art)(D) ἀνδράσι(D), καὶ(Kon) πᾶσαν(Adj)(A)
+(215) sich|selbst zu|machen die fremden Frauen als den Männern, und ganz
+(215) to|them|selves to|make the alien women than to|the husbands, and all
+(216) ἐπʼ(Prp) ἐκείνοις(Pr)(D) τὴν(Art)(A) οἰκίαν(A) γεγονέναι(Per)(Akt)(Inf), καὶ(Kon) τοὺς(Art)(A) παῖδας(A) ἀδήλους(Adj)(A) εἶναι(Prä)(Inf)(Akt)
+(216) auf jenen das Haus geworden|zu|sein, und die Kinder unklar zu|sein
+(216) upon those the household to|have|become, and the children uncertain to|be
+(217) ὁποτέρων(Pr)(G) τυγχάνουσιν(Prä)(Akt) ὄντες(Prä)(Akt)(N), τῶν(Art)(G) ἀνδρῶν(G) ἢ(Kon) τῶν(Art)(G) μοιχῶν(G). ἀνθʼ(Prp) ὧν(Pr)(G)
+(217) welcher|von|beiden sich|ergeben seiend, der Männer oder der Ehebrecher. statt|derer welcher
+(217) of|which they|happen being, of|the men or of|the adulterers. in|return|for which
+(218) ὁ(Art)(N) τὸν(Art)(A) νόμον(A) τιθεὶς(Prä)(Akt)(N) θάνατον(A) αὐτοῖς(Pr)(D) ἐποίησε(Aor)(Akt) τὴν(Art)(A) ζημίαν(A).
+(218) der den Gesetz setzend Tod ihnen machte|er die Strafe.
+(218) the the law setting death to|them made the penalty.
+= § 34 =
+(220) ἐμοῦ(Pr)(G) τοίνυν(Pt), ὦ(ij) ἄνδρες(V), οἱ(Art)(N) μὲν(Pt) νόμοι(N) οὐ(Pt) μόνον(Adv) ἀπεγνωκότες(Per)(Akt)(N)
+(220) meiner also, o Männer, die zwar Gesetze nicht nur freigesprochen|Habende
+(220) of|me then, O men, the indeed laws not only having|acquitted
+(221) εἰσὶ(Prä)(Akt) μὴ(Pt) ἀδικεῖν(Prä)(Inf)(Akt), ἀλλὰ(Kon) καὶ(Kon) κεκελευκότες(Per)(Akt)(N) ταύτην(Pr)(A) τὴν(Art)(A) δίκην(A) λαμβάνειν(Prä)(Inf)(Akt)·
+(221) sind nicht Unrecht|zu|tun, sondern auch befohlen|Habende diese die Strafe zu|nehmen·
+(221) are not to|do|wrong, but also having|ordered this the penalty to|take·
+(222) ἐν(Prp) ὑμῖν(Pr)(D) δʼ(Pt) ἐστὶ(Prä)(Akt) πότερον(Kon) χρὴ(Prä)(Akt) τούτους(Pr)(A) ἰσχυροὺς(Adj)(A) ἢ(Kon) μηδενὸς(Pr)(G)
+(222) in euch aber liegt ob man|soll diese kräftig oder keines
+(222) in you but it|is whether it|is|necessary these strong or of|no|one
+(223) ἀξίους(Adj)(A) εἶναι(Prä)(Inf)(Akt).
+(223) Wertes zu|sein.
+(223) worthy to|be.
+= § 35 =
+(225) ἐγὼ(Pr)(N) μὲν(Pt) γὰρ(Pt) οἶμαι(Prä)(M/P) πάσας(Adj)(A) τὰς(Art)(A) πόλεις(A) διὰ(Prp) τοῦτο(Pr)(A) τοὺς(Art)(A)
+(225) ich zwar denn meine alle die Städte wegen dieses die
+(225) I indeed for I|think all the cities because|of this the
+(226) νόμους(A) τίθεσθαι(Prä)(M/P)(Inf), ἵνα(Kon) περὶ(Prp) ὧν(Pr)(G) ἂν(Pt) πραγμάτων(G) ἀπορῶμεν(Prä)(Akt)(Knj), παρὰ(Prp) τούτους(Pr)(A)
+(226) Gesetze fest|setzen, damit über derer auch|immer Dinge wir|ratlos|sind, nach diesen
+(226) laws to|set|up, in|order|that about of|which at|least of|matters we|may|be|at|a|loss, beside these
+(227) ἐλθόντες(AorS)(Akt)(N) σκεψώμεθα(Aor)(Med)(Knj) ὅ(Pr)(A) τι(Pr)(A) ἡμῖν(Pr)(D) ποιητέον(Adj)(N) ἐστίν(Prä)(Akt). οὗτοι(Pr)(N) τοίνυν(Pt) περὶ(Prp)
+(227) gekommen|seiend wollen|wir|prüfen was etwas uns zu|tun|ist ist. diese also über
+(227) having|come let|us|examine what thing to|us to|be|done it|is. these then about
+(228) τῶν(Art)(G) τοιούτων(Adj)(G) τοῖς(Art)(D) ἀδικουμένοις(Prä)(M/P)(D) τοιαύτην(Adj)(A) δίκην(A) λαμβάνειν(Prä)(Inf)(Akt) παρακελεύονται(Prä)(M/P).
+(228) der solchen den Unrecht|Erlittenen solche Strafe zu|nehmen empfehlen|sie.
+(228) the such to|the being|wronged such penalty to|take they|exhort.
+= § 36 =
+(230) οἷς(Pr)(D) ὑμᾶς(Pr)(A) ἀξιῶ(Prä)(Akt) τὴν(Art)(A) αὐτὴν(Adj)(A) γνώμην(A) ἔχειν(Prä)(Inf)(Akt)· εἰ(Kon) δὲ(Pt) μή(Pt),
+(230) denen euch halte|ich|für|würdig die gleiche Meinung zu|haben· wenn aber nicht,
+(230) to|which you I|urge the same opinion to|have· if but not,
+(231) τοιαύτην(Adj)(A) ἄδειαν(A) τοῖς(Art)(D) μοιχοῖς(D) ποιήσετε(Fu)(Akt), ὥστε(Kon) καὶ(Kon) τοὺς(Art)(A) κλέπτας(A) ἐπαρεῖτε(Fu)(Akt)
+(231) solche Freiheit den Ehebrechern werdet|ihr|machen, so|dass auch die Diebe werdet|ihr|ermutigen
+(231) such impunity to|the adulterers you|will|make, so|that also the thieves you|will|incite
+(232) φάσκειν(Prä)(Inf)(Akt) μοιχοὺς(A) εἶναι(Prä)(Inf)(Akt), εὖ(Adv) εἰδότας(Per)(Akt)(A) ὅτι(Kon), ἐὰν(Kon) ταύτην(Pr)(A) τὴν(Art)(A) αἰτίαν(A)
+(232) zu|behaupten Ehebrecher zu|sein, gut wissend dass, wenn diese die Ursache
+(232) to|assert adulterers to|be, well having|known that, if this the charge
+(233) περὶ(Prp) ἑαυτῶν(Pr)(G) λέγωσι(Prä)(Akt)(Knj) καὶ(Kon) ἐπὶ(Prp) τούτῳ(Pr)(D) φάσκωσιν(Prä)(Akt)(Knj) εἰς(Prp) τὰς(Art)(A) ἀλλοτρίας(Adj)(A)
+(233) über sich|selbst sagen und zu diesem behaupten in die fremden
+(233) about of|them|selves they|may|say and upon this they|may|claim into the alien
+(234) οἰκίας(A) εἰσιέναι(Prä)(Inf)(Akt), οὐδεὶς(Pr)(N) αὐτῶν(Pr)(G) ἅψεται(Fu)(M/P). πάντες(Adj)(N) γὰρ(Pt) εἴσονται(Fu)(M/P) ὅτι(Kon) τοὺς(Art)(A)
+(234) Häuser hinein|zu|gehen, niemand von|ihnen wird|anrühren. alle denn werden|wissen dass die
+(234) houses to|go|in, no|one of|them will|touch. all for will|know that the
+(235) μὲν(Pt) νόμους(A) τῆς(Art)(G) μοιχείας(G) χαίρειν(Prä)(Inf)(Akt) ἐᾶν(Prä)(Inf)(Akt) δεῖ(Prä)(Akt), τὴν(Art)(A) δὲ(Pt) ψῆφον(A)
+(235) zwar Gesetze des Ehebruchs sich|freuen lassen muss, die aber Stimme
+(235) indeed laws of the|adultery to|fare|well to|let is|necessary, the but vote
+(236) τὴν(Art)(A) ὑμετέραν(Adj)(A) δεδιέναι(Per)(Akt)(Inf)· αὕτη(Pr)(N) γάρ(Pt) ἐστι(Prä)(Akt) πάντων(Adj)(G) τῶν(Art)(G) ἐν(Prp) τῇ(Art)(D)
+(236) die eure zu|fürchten· diese denn ist aller der in der
+(236) the your to|fear· this for is of|all the in the
+(237) πόλει(D) κυριωτάτη(Adj)(N)(Sup).
+(237) Stadt maßgeblichste.
+(237) city most|authoritative.
+= § 37 =
+(239) σκέψασθε(Aor)(Med)(Imv) δέ(Pt), ὦ(ij) ἄνδρες(V)· κατηγοροῦσι(Prä)(Akt) γάρ(Pt) μου(Pr)(G) ὡς(Kon) ἐγὼ(Pr)(N) τὴν(Art)(A)
+(239) prüft aber, o Männer· klagen|an denn meiner dass ich die
+(239) consider but, O men· they|accuse for of|me that I the
+(240) θεράπαιναν(A) ἐν(Prp) ἐκείνῃ(Pr)(D) τῇ(Art)(D) ἡμέρᾳ(D) μετελθεῖν(Aor)(Inf)(Akt) ἐκέλευσα(Aor)(Akt) τὸν(Art)(A) νεανίσκον(A). ἐγὼ(Pr)(N)
+(240) Dienerin in jener der Tag nach|zugehen befahl|ich den Jüngling. ich
+(240) maidservant in that the day to|pursue I|ordered the young|man. I
+(241) δέ(Pt), ὦ(ij) ἄνδρες(V), δίκαιον(Adj)(A) μὲν(Pt) ἂν(Pt) ποιεῖν(Prä)(Inf)(Akt) ἡγούμην(Imp)(M/P) ᾡτινιοῦν(Pr)(D) τρόπῳ(D)
+(241) aber, o Männer, gerecht zwar wohl zu|tun meinte|ich in|welcher|auch|immer Weise
+(241) but, O men, just indeed at|least to|do I|was|thinking in|whatever way
+(242) τὸν(Art)(A) τὴν(Art)(A) γυναῖκα(A) τὴν(Art)(A) ἐμὴν(Adj)(A) διαφθείραντα(Aor)(Akt)(A)
+(242) den die Frau die meine verderbt|Habenden
+(242) the the woman the my having|corrupted
+= § 38 =
+(244) λαμβάνων(Prä)(Akt)(N)· εἰ(Kon) μὲν(Pt) γὰρ(Pt) λόγων(G) εἰρημένων(Per)(M/P)(G) ἔργου(G) δὲ(Pt) μηδενὸς(Pr)(G) γεγενημένου(Per)(M/P)(G)
+(244) nehmend· wenn zwar denn der|Worte gesagt|wordenen der|Tat aber keines geschehen|wordenen
+(244) taking· if indeed for of|words having|been|said of|deed but of|none having|happened
+(246) καὶ(Kon) πολλάκις(Adv) εἰσεληλυθότος(Per)(Akt)(G) εἰς(Prp) τὴν(Art)(A) οἰκίαν(A) τὴν(Art)(A) ἐμὴν(Adj)(A) ᾡτινιοῦν(Pr)(D) τρόπῳ(D)
+(246) und oft eingetreten|seienden in das Haus das meine welcher|auch|immer Weise
+(246) and often having|entered into the house the my in|whatever way
+(247) ἐλάμβανον(Imp)(Akt) αὐτόν(Pr)(A), σωφρονεῖν(Prä)(Inf)(Akt) ⟦ἂν⟧(Pt) ἐμαυτὸν(Pr)(A) ἡγούμην(Imp)(M/P)·
+(247) nahm|ich ihn, besonnen|zu|sein wohl mich|selbst hielt|ich·
+(247) I|was|taking him, to|be|temperate at|least myself I|was|thinking·
+= § 39 =
+(249) σκέψασθε(Aor)(Med)(Imv) δὲ(Pt) ὅτι(Kon) καὶ(Kon) ταῦτα(Pr)(A) ψεύδονται(Prä)(M/P)· ῥᾳδίως(Adv) δὲ(Pt) ἐκ(Prp) τῶνδε(Pr)(G)
+(249) prüft aber dass auch dieses lügen· leicht aber aus dieser
+(249) consider but that also these|things they|lie· easily but from these|here
+(250) γνώσεσθε(Fu)(M/P). ἐμοὶ(Pr)(D) γάρ(Pt), ὦ(ij) ἄνδρες(V), ὅπερ(Pr)(A) καὶ(Kon) πρότερον(Adv) εἶπον(Aor)(Akt), φίλος(Adj)(N)
+(250) werdet|erkennen. mir denn, o Männer, was auch früher sagte|ich, Freund
+(250) you|will|learn. to|me for, O men, the|very|thing also earlier I|said, friend
+(251) ὢν(Prä)(Akt)(N) Σώστρατος(N) καὶ(Kon) οἰκείως(Adv) διακείμενος(Prä)(M/P)(N) ἀπαντήσας(AorS)(Akt)(N) ἐξ(Prp) ἀγροῦ(G) περὶ(Prp) ἡλίου(G)
+(251) seiend Sostratos und vertraut liegend getroffen|habend aus Feldes um der|Sonne
+(251) being Sostratos and familiarly being|disposed having|met from field about of|sun
+(252) δυσμὰς(A) συνεδείπνει(Imp)(Akt), καὶ(Kon) ἐπειδὴ(Kon) καλῶς(Adv) εἶχεν(Imp)(Akt) αὐτῷ(Pr)(D), ἀπιὼν(Prä)(Akt)(N) ᾤχετο(Imp)(M/P).
+(252) Untergang speiste|mit, und als gut stand ihm, weg|gehend ging|fort.
+(252) settings was|dining|together, and since well it|was to|him, departing was|going|off.
+= § 40 =
+(254) καίτοι(Kon) πρῶτον(Adv)(Sup) μέν(Pt), ὦ(ij) ἄνδρες(V), ἐνθυμήθητε(Aor)(M/P)(Imv)· ὅτι(Kon) εἰ(Kon) ἐν(Prp) ἐκείνῃ(Pr)(D)
+(254) obwohl zuerst zwar, o Männer, bedenkt· dass wenn in jener
+(254) and|yet first indeed, O men, consider· that if in that
+(255) τῇ(Art)(D) νυκτὶ(D) ἐγὼ(Pr)(N) ἐπεβούλευον(Imp)(Akt) Ἐρατοσθένει(D), πότερον(Kon) ἦν(Imp)(Akt) μοι(Pr)(D) κρεῖττον(Adj)(N)(Kmp) αὐτῷ(Pr)(D)
+(255) der Nacht ich stellte|ich|nach Eratosthenes, ob war mir besser ihm
+(255) the night I was|plotting against|Eratosthenes, whether it|was to|me better for|him
+(256) ἑτέρωθι(Adv) δειπνεῖν(Prä)(Inf)(Akt) ἢ(Kon) τὸν(Art)(A) συνδειπνήσοντά(Fu)(Akt)(A) μοι(Pr)(D) εἰσαγαγεῖν(AorS)(Akt)(Inf); οὕτω(Adv) γὰρ(Pt) ἂν(Pt)
+(256) anderswo zu|speisen oder den mit|speisenden mir hinein|zuführen; so denn wohl
+(256) elsewhere to|dine or the going|to|dine|with me to|bring|in; thus for at|least
+(257) ἧττον(Adv)(Kmp) ἐτόλμησεν(Aor)(Akt) ἐκεῖνος(Pr)(N) εἰσελθεῖν(AorS)(Inf)(Akt) εἰς(Prp) τὴν(Art)(A) οἰκίαν(A). εἶτα(Adv) δοκῶ(Prä)(Akt) ἂν(Pt)
+(257) weniger wagte jener einzugehen in die Haus. dann dünke|ich wohl
+(257) less he|dared that|one to|enter into the house. then I|seem at|least
+(258) ὑμῖν(Pr)(D) τὸν(Art)(A) συνδειπνοῦντα(Prä)(Akt)(A) ἀφεὶς(AorS)(Akt)(N) μόνος(Adj)(N) καταλειφθῆναι(Aor)(Pas)(Inf) καὶ(Kon) ἔρημος(Adj)(N) γενέσθαι(Aor)(Med)(Inf), ἢ(Kon)
+(258) euch den mit|speisenden entlassen|habend allein zurückgelassen|zu|werden und verlassen zu|werden, oder
+(258) to|you the dining|with having|let|go alone to|be|left and deserted to|become, or
+(259) κελεύειν(Prä)(Inf)(Akt) ἐκεῖνον(Pr)(A) μεῖναι(Aor)(Inf)(Akt), ἵνα(Kon) μετʼ(Prp) ἐμοῦ(Pr)(G) τὸν(Art)(A) μοιχὸν(A) ἐτιμωρεῖτο(Imp)(M/P);
+(259) befehlen jenen zu|bleiben, damit mit mir den Ehebrecher bestrafte;
+(259) to|order that|man to|remain, in|order|that with me the adulterer he|was|punishing;
+= § 41 =
+(261) ἔπειτα(Adv), ὦ(ij) ἄνδρες(V), οὐκ(Pt) ἂν(Pt) δοκῶ(Prä)(Akt) ὑμῖν(Pr)(D) τοῖς(Art)(D) ἐπιτηδείοις(Adj)(D) μεθʼ(Prp)
+(261) dann, o Männer, nicht wohl dünke|ich euch den Vertrauten nach
+(261) then, O men, not would I|seem to|you to|the intimates after
+(262) ἡμέραν(A) παραγγεῖλαι(Aor)(Inf)(Akt), καὶ(Kon) κελεῦσαι(Aor)(Inf)(Akt) αὐτοὺς(Pr)(A) συλλεγῆναι(Aor)(Pas)(Inf) εἰς(Prp) οἰκίαν(A) ⟦του⟧(Art)(G) τῶν(Art)(G)
+(262) Tag an|zu|sagen, und zu|befehlen sie zu|versammelt|werden in ein|Haus des der
+(262) day to|give|notice, and to|order them to|be|gathered into house of|the of|the
+(263) φίλων(G) ἐγγυτάτω(Adv)(Sup), μᾶλλον(Adv)(Kmp) ἢ(Kon) ἐπειδὴ(Kon) τάχιστα(Adv)(Sup) ᾐσθόμην(Aor)(Med) τῆς(Art)(G) νυκτὸς(G) περιτρέχειν(Prä)(Inf)(Akt),
+(263) Freunde nächstgelegen, eher als als am|schnellsten merkte|ich der Nacht umher|zu|laufen,
+(263) friends nearest, rather than when|since very|swiftly I|perceived of|the night to|run|around,
+(264) οὐκ(Pt) εἰδὼς(Per)(Akt)(N) ὅντινα(Pr)(A) οἴκοι(Adv) καταλήψομαι(Fu)(M/P) καὶ(Kon) ὅντινα(Pr)(A) ἔξω(Adv); καὶ(Kon) ὡς(Kon)
+(264) nicht wissend welchen zu|Hause werde|antreffen und welchen draußen; und wie
+(264) not knowing whom at|home I|will|find and whom outside; and how|that
+(265) Ἁρμόδιον(A) μὲν(Pt) καὶ(Kon) τὸν(Art)(A) δεῖνα(Pr)(A) ἦλθον(AorS)(Akt) οὐκ(Pt) ἐπιδημοῦντας(Prä)(Akt)(A) (οὐ(Pt) γὰρ(Pt)
+(265) Harmodios zwar und den Soundso kam|ich nicht in|der|Stadt|seiend (nicht denn
+(265) Harmodios indeed and the so|and|so I|came not being|in|town (not for
+(266) ᾔδη(Plq)(Akt)), ἑτέρους(Adj)(A) δὲ(Kon) οὐκ(Pt) ἔνδον(Adv) ὄντας(Prä)(Akt)(A) κατέλαβον(AorS)(Akt), οὓς(Pr)(A) δʼ(Kon) οἷός(Adj)(N)
+(266) wusste|ich), andere aber nicht drinnen seiend traf|ich, die aber fähig
+(266) I|knew), others but|now not inside being I|found, whom but|now as|able
+(267) τε(Pt) ἦ(Imp)(Akt) λαβὼν(AorS)(Akt)(N) ἐβάδιζον(Imp)(Akt).
+(267) auch war|ich genommen|habend ging|ich.
+(267) and|also I|was having|taken I|was|walking.
+= § 42 =
+(269) καίτοιγε(Kon) εἰ(Kon) προῄδη(Plq)(Akt), οὐκ(Pt) ἂν(Pt) δοκῶ(Prä)(Akt) ὑμῖν(Pr)(D) καὶ(Kon) θεράποντας(A) παρασκευάσασθαι(Aor)(Med)(Inf)
+(269) und|doch wenn vorher|gewusst|hatte, nicht wohl dünke|ich euch auch Diener bereit|zu|machen
+(269) and|yet|indeed if I|had|known, not would I|seem to|you even attendants to|prepare
+(270) καὶ(Kon) τοῖς(Art)(D) φίλοις(D) παραγγεῖλαι(Aor)(Inf)(Akt), ἵνʼ(Kon) ὡς(Kon) ἀσφαλέστατα(Adv)(Sup) μὲν(Pt) αὐτὸς(Pr)(N) εἰσῄα(Imp)(Akt)
+(270) und den Freunden an|zu|sagen, damit möglichst sicher zwar selbst ging|ich|hinein
+(270) and to|the friends to|give|notice, in|order|that as safest|possible at|least myself I|was|going|in
+(271) (τί(Pr)(A) γὰρ(Pt) ᾔδη(Plq)(Akt) εἴ(Kon) τι(Pr)(N) κἀκεῖνος(Kon)(Pr)(N) εἶχε(Imp)(Akt) σιδήριον(A); ), ὡς(Kon) μετὰ(Prp)
+(271) (was denn wusste|ich ob etwas und|jener hatte Eisen; ), so|dass mit
+(271) (what for I|knew if anything and|that|man was|having iron; ), so|that with
+(272) πλείστων(Adj)(G)(Sup) δὲ(Kon) μαρτύρων(G) τὴν(Art)(A) τιμωρίαν(A) ἐποιούμην(Imp)(M/P); νῦν(Adv) δʼ(Kon) οὐδὲν(Pr)(A) εἰδὼς(Per)(Akt)(N)
+(272) der|meisten aber Zeugen die Vergeltung vollzog|ich; nun aber nichts wissend
+(272) of|very|many but|now witnesses the punishment I|was|making; now but|now nothing knowing
+(273) τῶν(Art)(G) ἐσομένων(Fu)(M/P)(G) ἐκείνῃ(Pr)(D) τῇ(Art)(D) νυκτί(D), οὓς(Pr)(A) οἷός(Adj)(N) τε(Pt) ἦ(Imp)(Akt) παρέλαβον(AorS)(Akt).
+(273) der sein|werdenden jener der Nacht, die fähig auch war|ich nahm|ich|mit.
+(273) of|the going|to|be in|that the night, whom as|able and|also I|was I|took|along.
+(274) καί(Kon) μοι(Pr)(D) ἀνάβητε(Aor)(Akt)(Imv) τούτων(Pr)(G) μάρτυρες(N).
+(274) und mir steigt|herauf dieser Zeugen.
+(274) and to|me come|up of|these witnesses.
+= § 43 =
+(276) Μάρτυρες(N) τῶν(Art)(G) μὲν(Pt) μαρτύρων(G) ἀκηκόατε(Per)(Akt), ὦ(ij) ἄνδρες(V)· σκέψασθε(Aor)(Med)(Imv) δὲ(Kon) παρʼ(Prp)
+(276) Zeugen der zwar Zeugen habt|ihr|gehört, o Männer· prüft aber bei
+(276) Witnesses of|the at|least witnesses you|have|heard, O men· consider but from|by
+(277) ὑμῖν(Pr)(D) αὐτοῖς(Pr)(D) οὕτως(Adv) περὶ(Prp) τούτου(Pr)(G) τοῦ(Art)(G) πράγματος(G), ζητοῦντες(Prä)(Akt)(N) εἴ(Kon) τις(Pr)(N)
+(277) euch selbst so über dieser der Sache, suchend ob jemand
+(277) by|you yourselves thus about of|this of|the matter, seeking whether anyone
+(278) ἐμοὶ(Pr)(D) καὶ(Kon) Ἐρατοσθένει(D) ἔχθρα(N) πώποτε(Adv) γεγένηται(Per)(M/P) πλὴν(Prp) ταύτης(Pr)(G). οὐδεμίαν(Adj)(A) γὰρ(Pt)
+(278) mir und Eratosthenes Feindschaft jemals ist|geworden außer dieser. keine denn
+(278) to|me and to|Eratosthenes enmity ever has|arisen except of|this. none for
+(279) εὑρήσετε(Fu)(Akt).
+(279) werdet|finden.
+(279) you|will|find.
+= § 44 =
+(281) οὔτε(Kon) γὰρ(Pt) συκοφαντῶν(Prä)(Akt)(G) γραφάς(A) με(Pr)(A) ἐγράψατο(Aor)(Med), οὔτε(Kon) ἐκβάλλειν(Prä)(Inf)(Akt) ἐκ(Prp) τῆς(Art)(G)
+(281) weder denn verleumdend|er Anklagen mich brachte|er|ein, noch hinaus|zu|werfen aus der
+(281) neither for slandering indictments me he|indicted, nor to|expel out|of the
+(282) πόλεως(G) ἐπεχείρησεν(Aor)(Akt), οὕτε(Kon) ἰδίας(Adj)(A) δίκας(A) ἐδικάζετο(Imp)(M/P), οὔτε(Kon) συνῄδει(Plq)(Akt) κακὸν(Adj)(A) οὐδὲν(Pr)(A)
+(282) Stadt versuchte|er, noch eigene Klagen verhandelte|er, noch wusste|er Schlechtes nichts
+(282) city he|attempted, nor private suits he|was|litigating, nor he|had|known bad|thing nothing
+(283) ὃ(Pr)(A) ἐγὼ(Pr)(N) δεδιὼς(Per)(Akt)(N) μή(Kon) τις(Pr)(N) πύθηται(Aor)(M/P)(Knj) ἐπεθύμουν(Imp)(Akt) αὐτὸν(Pr)(A) ἀπολέσαι(Aor)(Inf)(Akt), οὔτε(Kon)
+(283) was ich fürchtend dass|nicht jemand erfahre begehrte|ich ihn zu|vernichten, noch
+(283) which I having|feared lest someone may|learn I|was|desiring him to|destroy, nor
+(284) εἰ(Kon) ταῦτα(Pr)(A) διαπραξαίμην(Aor)(Med)(Op), ἤλπιζόν(Imp)(Akt) ποθεν(Adv) χρήματα(A) λήψεσθαι(Fu)(M/P)(Inf)· ἔνιοι(Pr)(N) γὰρ(Pt) τοιούτων(Adj)(G)
+(284) wenn dieses ausführen|würde, hoffte|ich irgendwoher Gelder zu|erhalten· einige denn solcher
+(284) if these|things I|might|accomplish, I|was|hoping from|somewhere money to|receive· some for of|such
+(285) πραγμάτων(G) ἕνεκα(Prp) θάνατον(A) ἀλλήλοις(Pr)(D) ἐπιβουλεύουσι(Prä)(Akt).
+(285) Dinge wegen Tod einander stellen|nach.
+(285) affairs for|the|sake|of death to|one|another they|plot|against.
+= § 45 =
+(287) τοσούτου(Adj)(G) τοίνυν(Pt) δεῖ(Prä)(Akt) ἢ(Kon) λοιδορία(N) ἢ(Kon) παροινία(N) ἢ(Kon) ἄλλη(Adj)(N) τις(Pr)(N)
+(287) so|viel nun|also bedarf|es oder Schmähung oder Trunkenheits|Frevel oder andere irgendeine
+(287) of|so|much then|indeed there|is|need or abuse or drunken|violence or other some
+(288) διαφορὰ(N) ἡμῖν(Pr)(D) γεγονέναι(Per)(Inf)(Akt), ὥστε(Kon) οὐδὲ(Kon) ἑωρακὼς(Per)(Akt)(N) ἦ(Imp)(Akt) τὸν(Art)(A) ἄνθρωπον(A) πώποτε(Adv)
+(288) Streitigkeit uns geschehen|zu|sein, so|dass auch|nicht gesehen|habend war|ich den Mann jemals
+(288) difference|quarrel for|us to|have|happened, so|that nor|even having|seen I|was the man ever
+(289) πλὴν(Prp) ἐν(Prp) ἐκείνῃ(Pr)(D) τῇ(Art)(D) νυκτί(D). τί(Pr)(A) ἄν(Pt) οὖν(Pt) βουλόμενος(Prä)(M/P)(N) ἐγὼ(Pr)(N)
+(289) außer in jener der Nacht. was wohl nun wollend ich
+(289) except in that the night. what would then wishing I
+(290) τοιοῦτον(Adj)(A) κίνδυνον(A) ἐκινδύνευον(Imp)(Akt), εἰ(Kon) μὴ(Pt) τὸ(Art)(A) μέγιστον(Adj)(A)(Sup) τῶν(Art)(G) ἀδικημάτων(G) ἦ(Imp)(Akt)
+(290) solchen Gefahr wagte|ich, wenn nicht das größte der Unrechte war
+(290) such danger I|was|risking, if not the greatest of|the wrongs it|was
+(291) ὑπʼ(Prp) αὐτοῦ(Pr)(G) ἠδικημένος(Per)(M/P)(N);
+(291) von ihm Unrecht|getan|worden;
+(291) by him having|been|wronged;
+= § 46 =
+(293) ἔπειτα(Adv) παρακαλέσας(Aor)(Akt)(N) αὐτὸς(Pr)(N) μάρτυρας(A) ἠσέβουν(Imp)(Akt), ἐξόν(Prä)(Akt)(N) μοι(Pr)(D), εἴπερ(Kon) ἀδίκως(Adv) ἐπεθύμουν(Imp)(Akt)
+(293) dann herbei|gerufen|habend selbst Zeugen frevelte|ich, möglich|seiend mir, wenn|wirklich ungerecht begehrte|ich
+(293) then having|summoned myself witnesses I|was|acting|impiously, being|permitted to|me, if|indeed unjustly I|was|desiring
+(294) αὐτὸν(Pr)(A) ἀπολέσαι(Aor)(Inf)(Akt), μηδένα(Pr)(A) μοι(Pr)(D) τούτων(Pr)(G) συνειδέναι(Per)(Inf)(Akt);
+(294) ihn zu|vernichten, keinen mir dieser Mit|wisser|zu|sein;
+(294) him to|destroy, no|one to|me of|these to|have|known;
+= § 47 =
+(296) ἐγὼ(Pr)(N) μὲν(Pt) οὖν(Pt), ὦ(ij) ἄνδρες(V), οὐκ(Pt) ἰδίαν(Adj)(A) ὑπὲρ(Prp) ἐμαυτοῦ(Pr)(G) νομίζω(Prä)(Akt)
+(296) ich zwar nun, o Männer, nicht privat für meiner|selbst halte|ich
+(296) I indeed then, O men, not private on|behalf|of my|self I|think
+(297) ταύτην(Pr)(A) γενέσθαι(Aor)(Med)(Inf) τὴν(Art)(A) τιμωρίαν(A), ἀλλʼ(Kon) ὑπὲρ(Prp) τῆς(Art)(G) πόλεως(G) ἁπάσης(Adj)(G)· οἱ(Art)(N)
+(297) dies zu|werden die Vergeltung, sondern für der Stadt ganzen· die
+(297) this to|become the punishment, but on|behalf|of the city whole· those
+(298) γὰρ(Pt) τοιαῦτα(Adj)(A) πράττοντες(Prä)(Akt)(N), ὁρῶντες(Prä)(Akt)(N) οἷα(Adj)(A) τὰ(Art)(A) ἆθλα(A) πρόκειται(Prä)(M/P) τῶν(Art)(G) τοιούτων(Adj)(G)
+(298) denn solche tuend, sehend welcher|Art die Preise vor|liegen der solcher
+(298) for such|things doing, seeing of|what|sort the prizes|penalties are|set|forth of|the such
+(299) ἁμαρτημάτων(G), ἧττον(Adv)(Kmp) εἰς(Prp) τοὺς(Art)(A) ἄλλους(Adj)(A) ἐξαμαρτήσονται(Fu)(M/P), ἐὰν(Kon) καὶ(Kon) ὑμᾶς(Pr)(A) ὁρῶσι(Prä)(Akt)(Knj)
+(299) Verfehlungen, weniger gegen die anderen sich|verfehlen|werden, wenn auch euch sehen
+(299) offenses, less toward the others they|will|commit|offense, if also you they|may|see
+(300) τὴν(Art)(A) αὐτὴν(Adj)(A) γνώμην(A) ἔχοντας(Prä)(Akt)(A).
+(300) die gleiche Gesinnung habend.
+(300) the same opinion having.
+= § 48 =
+(302) εἰ(Kon) δὲ(Kon) μή(Pt), πολὺ(Adv) κάλλιον(Adv)(Kmp) τοὺς(Art)(A) μὲν(Pt) κειμένους(Prä)(M/P)(A) νόμους(A) ἐξαλεῖψαι(Aor)(Inf)(Akt),
+(302) wenn aber nicht, viel besser die zwar bestehend|seienden Gesetze aus|zu|tilgen,
+(302) if but|now not, much better the at|least lying|set laws to|wipe|out,
+(303) ἑτέρους(Adj)(A) δὲ(Kon) θεῖναι(AorS)(Inf)(Akt), οἵτινες(Pr)(N) τοὺς(Art)(A) μὲν(Pt) φυλάττοντας(Prä)(Akt)(A) τὰς(Art)(A) ἑαυτῶν(Pr)(G) γυναῖκας(A)
+(303) andere aber zu|setzen, welche die zwar bewachend|Habenden die ihrer|selbst Frauen
+(303) other but|now to|set, who|indeed the at|least guarding the of|their|own wives
+(304) ταῖς(Art)(D) ζημίαις(D) ζημιώσουσι(Fu)(Akt), τοῖς(Art)(D) δὲ(Kon) βουλομένοις(Prä)(M/P)(D) εἰς(Prp) αὐτὰς(Pr)(A) ἁμαρτάνειν(Prä)(Inf)(Akt) πολλὴν(Adj)(A)
+(304) mit|den Strafen werden|schädigen, den aber willig|seienden in sie zu|verfehlen viel
+(304) by|the penalties they|will|penalize, to|the but|now wishing against them to|commit|wrong great
+(305) ἄδειαν(A) ποιήσουσι(Fu)(Akt).
+(305) Freiheit werden|machen.
+(305) impunity they|will|make.
+= § 49 =
+(307) πολὺ(Adv) γὰρ(Pt) οὕτω(Adv) δικαιότερον(Adj)(A)(Kmp) ἢ(Kon) ὑπὸ(Prp) τῶν(Art)(G) νόμων(G) τοὺς(Art)(A) πολίτας(A)
+(307) viel denn so gerechter als unter den Gesetzen die Bürger
+(307) much for so more|justly than under|by the laws the citizens
+(308) ἐνεδρεύεσθαι(Prä)(M/P)(Inf), οἳ(Pr)(N) κελεύουσι(Prä)(Akt) μέν(Pt), ἐάν(Kon) τις(Pr)(N) μοιχὸν(A) λάβῃ(Aor)(Akt)(Knj), ὅ(Pr)(A) τι(Pr)(N)
+(308) in|den|Hinterhalt|zu|geraten, die befehlen zwar, wenn jemand Ehebrecher ergreife, was auch|immer
+(308) to|be|ambushed, who they|order at|least, if someone adulterer he|may|take, whatever anything
+(309) ἂν(Pt) οὖν(Pt) βούληται(Prä)(M/P)(Knj) χρῆσθαι(Prä)(M/P)(Inf), οἱ(Art)(N) δʼ(Kon) ἀγῶνες(N) δεινότεροι(Adj)(N)(Kmp) τοῖς(Art)(D) ἀδικουμένοις(Prä)(M/P)(D)
+(309) wohl nun wollen|sollte zu|verfahren, die aber Prozesse bedrohlicher für|die Unrecht|Erlittenen
+(309) at|least then he|may|wish to|use, the but|now contests more|terrible to|the being|wronged
+(310) καθεστήκασιν(Per)(Akt) ἢ(Kon) τοῖς(Art)(D) παρὰ(Prp) τοὺς(Art)(A) νόμους(A) τὰς(Art)(A) ἀλλοτρίας(Adj)(A) καταισχύνουσι(Prä)(Akt) γυναῖκας(A).
+(310) geworden|sind als für|die gegen die Gesetze die fremden entehren Frauen.
+(310) have|been|set than to|the contrary|to the laws the others they|shame women.
+= § 50 =
+(312) ἐγὼ(Pr)(N) γὰρ(Pt) νῦν(Adv) καὶ(Kon) περὶ(Prp) τοῦ(Art)(G) σώματος(G) καὶ(Kon) περὶ(Prp) τῶν(Art)(G)
+(312) ich denn nun sowohl um des Körpers als|auch um der
+(312) I for now both about of|the body and about of|the
+(313) χρημάτων(G) καὶ(Kon) περὶ(Prp) τῶν(Art)(G) ἄλλων(Adj)(G) ἁπάντων(Adj)(G) κινδυνεύω(Prä)(Akt), ὅτι(Kon) τοῖς(Art)(D) τῆς(Art)(G)
+(313) Gelder sowie um der anderen aller riskiere|ich, weil den der
+(313) money and about of|the other all I|am|at|risk, because to|the of|the
+(314) πόλεως(G) νόμοις(D) ἐπειθόμην(Imp)(M/P).
+(314) Stadt Gesetzen gehorchte|ich.
+(314) city laws I|was|obeying.

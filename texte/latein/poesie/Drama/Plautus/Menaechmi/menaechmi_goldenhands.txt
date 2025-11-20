@@ -1,0 +1,1204 @@
+(-9x) == Argumentum ==
+(-9)  PROLOGUS: Mercātor Siculus, cui erant geminī fīliī,
+(-8)  PROLOGUS: Eī surruptō alterō mors optigit.
+(-7)  PROLOGUS: Nōmen surrepticiī illī indit quī domīst
+(-6)  PROLOGUS: Avus paternus, facit Menaechmum ē Sosiclē.
+(-5)  PROLOGUS: Et is germānum, postquam adolēvit, quaeritat
+(-4)  PROLOGUS: Circum omnīs ōrās. post Epidamnum dēvenit:
+(-3)  PROLOGUS: Hīc fuerat alitus ille surreptīcius.
+(-2)  PROLOGUS: Menaechmum omnēs cīvem crēdunt advenam
+(-1)  PROLOGUS: Eumque appellant meretrīx, uxor et socer.
+(0)  PROLOGUS: Ī sē cognōscunt frātrēs postrēmō invicem.
+(1x) === Prolog ===
+(1)  PROLOGUS: Salūtem prīmum jam ā prīncipiō propitiam
+(2)  PROLOGUS: mihi atque vōbīs, spectātōrēs, nūntiō.
+(3)  PROLOGUS: apportō vōbīs Plautum, linguā nōn manū,
+(4)  PROLOGUS: quaesō ut benignīs accipiātis auribus.
+(5)  PROLOGUS: nunc argūmentum accipite atque animum advertite;
+(6)  PROLOGUS: quam poterō in verba cōnferam paucissima.
+(7)  PROLOGUS: Atque hoc poētae faciunt in cōmoediīs:
+(8)  PROLOGUS: omnīs rēs gestās esse Athēnīs autumant,
+(9)  PROLOGUS: quo illud vōbīs graecum videātur magis;
+(10)  PROLOGUS: ego nusquam dīcam nisi ubi factum dīcitur.
+(11)  PROLOGUS: atque adeō hoc argūmentum graecissat, tamen
+(12)  PROLOGUS: nōn atticissat, vērum sicilicissitat.
+(13)  PROLOGUS: huic argūmentō antelogium hoc fuit;
+(14)  PROLOGUS: nunc argūmentum vōbīs dēmēnsum dabō,
+(15)  PROLOGUS: nōn modiō, neque trimodiō, vērum ipsō horreō:
+(16)  PROLOGUS: tantum ad nārrandum argūmentum adest benignitās.
+(17)  PROLOGUS: Mercātor quīdam fuit Syrācūsīs senex,
+(18)  PROLOGUS: eī sunt nātī fīliī geminī duō,
+(19)  PROLOGUS: ita fōrmā similī puerī, ut māter sua
+(20)  PROLOGUS: nōn internōsse posset quae mammam dabat,
+(21)  PROLOGUS: neque adeō māter ipsa quae illōs pepererat,
+(22)  PROLOGUS: ut quidem ille dīxit mihi, quī puerōs vīderat:
+(23)  PROLOGUS: ego illōs nōn vīdī, nē quis vestrum cēnseat.
+(24)  PROLOGUS: postquam jam puerī septuennēs sunt, pater
+(25)  PROLOGUS: onerāvit nāvem magnam multīs mercibus;
+(26)  PROLOGUS: impōnit geminum alterum in nāvem pater,
+(27)  PROLOGUS: Tarentum āvēxit sēcum ad mercātum simul,
+(28)  PROLOGUS: illum relīquit alterum apud mātrem domī.
+(29)  PROLOGUS: Tarentī lūdī forte erant, cum illūc venit.
+(30)  PROLOGUS: mortālēs multī, ut ad lūdōs, convēnerant:
+(31)  PROLOGUS: puer aberrāvit inter hominēs ā patre.
+(32)  PROLOGUS: Epidamniēnsis quīdam ibi mercātor fuit,
+(33)  PROLOGUS: is puerum tollit āvehitque Epidamnium.
+(34)  PROLOGUS: pater ejus autem postquam puerum perdidit,
+(35)  PROLOGUS: animum dēspondit, eāque is aegritūdine
+(36)  PROLOGUS: paucīs diēbus post Tarentī ēmortuust.
+(37)  PROLOGUS: Postquam Syracūsās dē eā rē rediit nūntius
+(38)  PROLOGUS: ad avum puerōrum, puerum surruptum alterum
+(39)  PROLOGUS: patremque puerī Tarentī esse ēmortuum,
+(40)  PROLOGUS: immūtat nōmen avus huic geminō alterī;
+(41)  PROLOGUS: ita illum dīlēxit, quī surruptust, alterum:
+(42)  PROLOGUS: illīus nōmen indit illī quī domī est,
+(43)  PROLOGUS: Menaechmō, idem quod alterī nōmen fuit;
+(44)  PROLOGUS: et ipsus eōdem est avus vocātus nōmine
+(45)  PROLOGUS: (proptereā illīus nōmen meminī facilius,
+(46)  PROLOGUS: quia illum clāmōre vīdī flāgitārier).
+(47)  PROLOGUS: nē mox errētis, jam nunc praedīcō prius:
+(48)  PROLOGUS: idem est ambōbus nōmen geminīs frātribus.
+(49)  PROLOGUS: Nunc in Epidamnum pedibus redeundum est mihi,
+(50)  PROLOGUS: ut hanc rem vōbīs examussim disputem.
+(51)  PROLOGUS: sī quis quid vestrum Epidamnum cūrārī sibi
+(52)  PROLOGUS: velīt, audācter imperātō et dīcitō,
+(53)  PROLOGUS: sed ita ut det unde cūrārī id possit sibi.
+(54)  PROLOGUS: nam nisi quī argentum dederit, nūgās ēgerit;
+(55)  PROLOGUS: quī dederit, magis majōrēs nūgās ēgerit.
+(56)  PROLOGUS: vērum illūc redeō unde abiī, atque ūnō astō in locō.
+(57)  PROLOGUS: Epidamniēnsis ille, quem dūdum dīxeram,
+(58)  PROLOGUS: geminum illum puerum quī surrupuit alterum,
+(59)  PROLOGUS: eī līberōrum, nisi dīvitiae, nīl erat:
+(60)  PROLOGUS: adoptat illum puerum surruptīcium
+(61)  PROLOGUS: sibi fīlium eīque uxōrem dōtātam dedit,
+(62)  PROLOGUS: eumque hērēdem fēcit, cum ipse obiit diem.
+(63)  PROLOGUS: nam rūs ut ībat forte, ut multum plūerat,
+(64)  PROLOGUS: ingressus fluvium rapidum ab urbe hau longulē,
+(65)  PROLOGUS: rapidus raptōrī puerī subdūxit pedēs
+(66)  PROLOGUS: abstrāxitque hominem in maximam malam crucem.
+(67)  PROLOGUS: illī dīvitiae ēvēnērunt maximae.
+(68)  PROLOGUS: is illīc habitat geminus surruptīcius.
+(69)  PROLOGUS: Nunc ille geminus, quī Syrācūsīs habet,
+(70)  PROLOGUS: hodiē in Epidamnum veniet cum servō suō
+(71)  PROLOGUS: hunc quaeritātum geminum germānum suum.
+(72)  PROLOGUS: haec urbs Epidamnus est, dum haec agitur fābula:
+(73)  PROLOGUS: quandō alia agētur, aliud fīet oppidum;
+(74)  PROLOGUS: sīcut familiae quoque solent mūtārier:
+(75)  PROLOGUS: modo hic habitat lēnō, modo adulēscēns, modo senex,
+(76)  PROLOGUS: pauper, mendīcus, rēx, parasītus, hariolus
+(76a)  PROLOGUS: ...
+(77y) === Akt I ===
+(77x) == Szene I.i ==
+(77)  PENICULUS PARASITUS: Juventūs nōmen fēcit Pēniculō mihi,
+(78)  PENICULUS PARASITUS: ideō quia mēnsam, quandō edō, dētergeō.
+(79)  PENICULUS PARASITUS: hominēs captīvōs quī catēnīs vinciunt
+(80)  PENICULUS PARASITUS: et quī fugitīvīs servīs indunt compedēs,
+(81)  PENICULUS PARASITUS: nimis stultē faciunt meā quidem sententiā.
+(82)  PENICULUS PARASITUS: nam hominī miserō sī ad malum accēdit malum,
+(83)  PENICULUS PARASITUS: major libīdō est fugere et facere nēquiter
+(84)  PENICULUS PARASITUS: nam sē ex catēnīs eximunt aliquō modō.
+(85)  PENICULUS PARASITUS: tum compedītī ānum līmā praeterunt
+(86)  PENICULUS PARASITUS: aut lapide excutiunt clāvum. nūgae sunt eae.
+(87)  PENICULUS PARASITUS: quem tū asservāre rēctē, nē aufugiat, volēs,
+(88)  PENICULUS PARASITUS: ēscā atque pōtiōne vincīrī decet.
+(89)  PENICULUS PARASITUS: apud mēnsam plēnam hominī rōstrum dēligēs;
+(90)  PENICULUS PARASITUS: dum tū illī quod edit et quod pōtet praebeās,
+(91)  PENICULUS PARASITUS: suō arbitrātū affatim cottīdiē,
+(92)  PENICULUS PARASITUS: numquam edepol fugiet, tametsī capital fēcerit,
+(93)  PENICULUS PARASITUS: facile asservābis, dum eō vinclō vinciēs.
+(94)  PENICULUS PARASITUS: ita istaec nimis lenta vincla sunt ēscāria:
+(95)  PENICULUS PARASITUS: quam magis extendās, tantō astringunt artius.
+(96)  PENICULUS PARASITUS: nam ego ad Menaechmum hunc eō, quō jam diū
+(97)  PENICULUS PARASITUS: sum jūdicātus; ultrō eō ut mē vinciat.
+(98)  PENICULUS PARASITUS: nam illic homo hominēs nōn alit, vērum ēducat,
+(99)  PENICULUS PARASITUS: recreatque: nūllus melius medicīnam facit.
+(100)  PENICULUS PARASITUS: ita est adulēscēns; ipsus ēscae maximae
+(101)  PENICULUS PARASITUS: ceriālīs cēnās dāt, ita mēnsās exstruit,
+(102)  PENICULUS PARASITUS: tantās struīcēs concinnat patināriās:
+(103)  PENICULUS PARASITUS: standumst in lectō, sī quid dē summō petās.
+(104)  PENICULUS PARASITUS: sed mī intervāllum jam hōs diēs multōs fuit:
+(105)  PENICULUS PARASITUS: domī domītus sum usque cum cārīs meīs.
+(106)  PENICULUS PARASITUS: nam neque edō neque emō nisi quod est cārissimum.
+(107)  PENICULUS PARASITUS: id quoque jam, cārī quī īnstruuntur dēserunt.
+(108)  PENICULUS PARASITUS: nunc ad eum invīsō. sed aperītur ōstium.
+(109)  PENICULUS PARASITUS: Menaechmum eccum ipsum videō, prōgreditur forās.
+(110x) == Szene I.ii ==
+(110)  MENAECHMUS: Nī mala, nī stulta siēs,
+(110a)  MENAECHMUS: nī indomita imposque animī,
+(111)  MENAECHMUS: quod virō esse odiō videās,
+(111a)  MENAECHMUS: tūte tibi odiō habeās.
+(112)  MENAECHMUS: praeterhāc sī mihī tāle post hunc diem
+(113)  MENAECHMUS: faxis, faxō forīs vidua vīsās patrem.
+(114)  MENAECHMUS: nam quotiēns foras īre volō,
+(114a)  MENAECHMUS: mē retinēs, revocās, rogitās,
+(115)  MENAECHMUS: quo ego eam, quam rem agam, quid negōtī geram,
+(116)  MENAECHMUS: quid petam, quid feram, quid forīs ēgerim.
+(117)  MENAECHMUS: portitōrem domum dūxī, ita omnem mihī
+(118)  MENAECHMUS: rem necesse ēloquī est, quidquid ēgī atque agō.
+(119)  MENAECHMUS: nimium ego tē habuī dēlicātam; nunc adeō ut factūrus dīcam.
+(120)  MENAECHMUS: quandō ego tibi ancillās, penum,
+(121)  MENAECHMUS: lānam, aurum, vestem, purpuram
+(121a)  MENAECHMUS: bene praebeō nec quicquam egēs,
+(122)  MENAECHMUS: malō cavēbis sī sapis,
+(122a)  MENAECHMUS: virum observāre dēsinēs.
+(123)  MENAECHMUS: atque adeō, nē mē nēquīquam servēs, ob eam industriam
+(124)  MENAECHMUS: hodiē dūcam scortum ad cēnam atque aliquō condīcam forās.
+(125)  PENICULUS PARASITUS: Illic homō sē uxōrī simulat male loquī, loquitur mihi;
+(126)  PENICULUS PARASITUS: nam sī foris cēnat, profectō mē, haud uxōrem, ulcīscitur.
+(127)  MENAECHMUS: Euax, jūrgiō hercle tandem uxōrem abēgī ab jānuā.
+(128)  MENAECHMUS: ubi sunt amātōrēs marītī? dōna quid cessant mihi
+(129)  MENAECHMUS: cōnferre omnēs congrātulantēs, quia pugnāvī fortiter?
+(130)  MENAECHMUS: hanc modo uxōrī intus pallam surrupuī, ad scortum ferō.
+(131)  MENAECHMUS: sīc hoc decet, darī facētē verba cūstōdī catae.
+(132)  MENAECHMUS: hoc facinus pulchrumst, hoc probumst, hoc lepidumst, hoc factumst fabrē:
+(133)  MENAECHMUS: meō malō ā malā abstulī hoc, ad damnum dēferētur.
+(134)  MENAECHMUS: āvertī praedam ab hostibus nostrum salūte socium.
+(135)  PENICULUS PARASITUS: Heus adulēscēns, ecqua in istāc pars inest praedā mihi?
+(136)  MENAECHMUS: Periī, in īnsidiās dēvēnī. Immō in praesidium, nē timē.
+(137)  MENAECHMUS: Quis homō est? Ego sum. Ō mea Commoditās, ō mea Opportūnitās,
+(138)  MENAECHMUS: salvē. Salvē. Quid agis? Teneō dexterā genium meum.
+(139)  MENAECHMUS: Nōn potuistī magis per tempus mī advenīre quam advenīs.
+(140)  PENICULUS PARASITUS: Ita ego soleō: commoditātis omnīs articulōs sciō.
+(141)  MENAECHMUS: Vīn tū facinus lūculentum īnspicere? Quis id coxit coquus?
+(142)  PENICULUS PARASITUS: jam sciam, sī quid titubātumst, ubi reliquiās vīderō.
+(143)  MENAECHMUS: Dīc mī, enumquam tū vīdistī tabulam pictam in pariete,
+(144)  MENAECHMUS: ubi aquila Catameitum raperet aut ubi Venus Adōneum?
+(145)  PENICULUS PARASITUS: Saepe. sed quid istae pictūrae ad mē attinent? Age mē aspice.
+(146)  MENAECHMUS: ecquid assimulō similiter? Qui isshort ōrnātust tuus?
+(147)  MENAECHMUS: Dīc hominem lepidissumum esse mē. Ubi essūrī sumus?
+(148)  MENAECHMUS: Dīc modo hoc quod ego tē jubeō. Dīcō: homō lepidissime.
+(149)  MENAECHMUS: Ecquid audēs dē tuō istūc addere? Atque hilarissime.
+(150)  MENAECHMUS: Perge perge. Nōn pergō hercle, nisi sciō quā grātiā.
+(151)  PENICULUS PARASITUS: lītigium tibi est cum uxōre, eō mī abs tē caveō cautius.
+(152)  MENAECHMUS: Clam uxōremst ubi pulchrē habeāmus, hunc combūrāmus diem.
+(153)  PENICULUS PARASITUS: Age sānē igitur, quandō aequum ōrās, quam mox incendō rogum?
+(154)  PENICULUS PARASITUS: diēs quidem jam ad umbilīcum est dīmidiātus mortuus.
+(156)  MENAECHMUS: Tē morāre, mihi cum obloquere. Oculum effoditō per solum
+(157)  PENICULUS PARASITUS: mihi, Menaechme, sī ūllum verbum faxō nisi quod jusseris.
+(158)  MENAECHMUS: Concēde hūc ā foribus. Fīat. Etiam concēde hūc. Licet.
+(159)  MENAECHMUS: Etiam nunc concēde audācter ab leōnīnō cavō.
+(160)  PENICULUS PARASITUS: Eu edepol nē tū, ut ego opīnor, essēs agitātor probus.
+(161)  MENAECHMUS: Quīdum? Nē tē uxor sequātur, respectās identidem.
+(162)  MENAECHMUS: Sed quid aīs? Egone? id enim quod tū vīs, id ajō atque id negō.
+(163)  MENAECHMUS: Ecquid tū dē odōre possīs, sī quid forte olfēceris,
+(164)  MENAECHMUS: facere conjectūram? cu...
+(165)  PENICULUS PARASITUS: ... captum sit collēgium.
+(166)  MENAECHMUS: Agedum odōrāre hanc quam ego habeō pallam. quid olet? apstinēs?
+(167)  PENICULUS PARASITUS: Summum oportet olfactāre vestīmentum muliebre,
+(168)  PENICULUS PARASITUS: nam ex istōc locō spurcātur nāsum odōre illūtilī.
+(169)  MENAECHMUS: Olfactā igitur hinc, Pēnicule. lepidē ut fastīdīs. Decet.
+(170)  MENAECHMUS: Quid igitur? quid olet? respondē. Fūrtum, scortum, prandium.
+(171)  MENAECHMUS: tibi fua...
+(172)  MENAECHMUS: ēlocūtus, nam...
+(173)  MENAECHMUS: nunc ad amīcam dēferētur hanc meretrīcem Erōtium.
+(174)  MENAECHMUS: mihi, tibi atque illī jubēbō jam apparārī prandium. Eu.
+(175)  MENAECHMUS: Inde usque ad diurnam stēllam crāstinam pōtābimus. Eu,
+(176)  PENICULUS PARASITUS: expedītē fābulātu's. jam forēs feriō? Ferī.
+(177)  MENAECHMUS: vel manē etiam. Mīlle passum commorātu's cantharum.
+(178)  MENAECHMUS: Placidē pultā. Metuis, crēdō, nē forēs Samiae sient.
+(179)  MENAECHMUS: Mane, manē obsecrō hercle: eapse eccam exit. ōh, sōlem vidēs
+(181)  MENAECHMUS: satin ut occaecātust prae hujus corporis candōribus?
+(182x) == Szene I.iii ==
+(182)  EROTIUM MERETRIX: Anime mī, Menaechme, salvē. Quid ego? Extrā numerum ēs mihi.
+(183)  PENICULUS PARASITUS: Idem istūc aliīs ascrīptīvīs fierī ad legiōnem solet.
+(184)  MENAECHMUS: Ego istīc mihi hodiē apparārī jussī apud tē proelium.
+(186)  EROTIUM MERETRIX: Hodiē id fīet. In eō uterque proeliō pōtābimus;
+(187)  MENAECHMUS: uter ibī melior bellātor erit inventus cantharō,
+(188)  MENAECHMUS: tu sēligitō, adjūdicātō, cum utrō hanc noctem siēs.
+(189)  MENAECHMUS: ut ego uxōrem, mea voluptās, ubi tē aspiciō, ōdī male.
+(190)  EROTIUM MERETRIX: Interim nequīs quīn ejus aliquid indūtus siēs.
+(191)  EROTIUM MERETRIX: quid hoc est? Induviae tuae atque uxōris exuviae, rosa.
+(192)  EROTIUM MERETRIX: Superās facile, ut superior sīs mihi quam quisquam quī imperant.
+(193)  PENICULUS PARASITUS: Meretrīx tantisper blandītur, dum illud quod rapiat videt;
+(194)  PENICULUS PARASITUS: nam sī amābās, jam oportēbat nāsum abreptum mordicus.
+(196)  MENAECHMUS: Sustinē hoc, Pēnicule: exuviās facere quās vōvī volō.
+(197)  PENICULUS PARASITUS: Cedo; sed obsecrō hercle, saltā sīc cum pallā posteā.
+(198)  MENAECHMUS: Ego saltābō? sānus hercle nōn ēs. Egone an tū magis?
+(199)  PENICULUS PARASITUS: sī nōn saltās, exue igitur. Nimiō ego hanc perīculō
+(200)  MENAECHMUS: surrupuī hodiē. meō quidem animō ab Hippolytā succingulum
+(201)  MENAECHMUS: Herculēs haud aequē magnō umquam abstulit perīculō.
+(202)  MENAECHMUS: cape tibi hanc, quandō ūnā vīvis meīs mōrigera mōribus.
+(203)  EROTIUM MERETRIX: Hōc animō decēt animātōs esse amātōrēs probōs.
+(204)  PENICULUS PARASITUS: Quī quidem ad mendīcitātem properent sē dētrūdere.
+(205)  MENAECHMUS: Quattuor minīs ego ēmī istanc annō uxōrī meae.
+(206)  PENICULUS PARASITUS: Quattuor minae periērunt plānē, ut ratiō redditur.
+(207)  MENAECHMUS: Scīn quid volō ego tē accūrāre? Scio, cūrābō quae volēs.
+(208)  MENAECHMUS: Jubē igitur tribus nōbīs apud tē prandium accūrārier
+(209)  MENAECHMUS: atque aliquid scītāmentōrum dē forō obsōnārier,
+(210)  MENAECHMUS: glandiōnidam suillam, lāridum pernōnidam,
+(211)  MENAECHMUS: aut sincipitāmenta porcīna aut aliquid ad eum modum,
+(212)  MENAECHMUS: madidā quae mī apposita in mēnsam mīluīnam suggerant;
+(213)  MENAECHMUS: atque āctūtum. Licet ēcastor. Nōs prōdīmus ad forum.
+(214)  MENAECHMUS: jam hic nōs erimus: dum coquētur, interim pōtābimus.
+(215)  EROTIUM MERETRIX: Quandō vīs venī, parāta rēs erit. Properā modo.
+(216)  MENAECHMUS: sequere tū. Ego hercle vērō tē et servābō et tē sequar,
+(217)  PENICULUS PARASITUS: neque hodiē ut tē perdam, meream deōrum dīvitiās mihī.
+(218)  EROTIUM MERETRIX: Ēvocāte intus Cylindrum mihi coquum āctūtum forās.
+(219x) == Szene I.iv ==
+(219)  EROTIUM MERETRIX: sportulam cape atque argentum. ecquōs trīs nummōs habēs?
+(220)  CYLINDRUS COCUS: Habeō. Abī atque obsōnium affer; tribus vidē quod sit satis:
+(221)  EROTIUM MERETRIX: neque dēfīat neque supersit. Cujus modī hīc hominēs erunt?
+(222)  EROTIUM MERETRIX: Ego et Menaechmus et parasītus ejus. Jam istī sunt decem;
+(223)  CYLINDRUS COCUS: nam parasītus octōnum hominum mūnus facile fungitur.
+(224)  EROTIUM MERETRIX: Ēlocūta sum convīvās, cēterum cūrā. Licet.
+(225)  CYLINDRUS COCUS: cocta sunt, jubē īre accubitum. Redi citō. Jam ego hīc erō.
+(226y) === Akt II ===
+(226x) == Szene Ii.i ==
+(226)  MENAECHMUS: Voluptās nūllast nāvitīs, Messēniō,
+(227)  MENAECHMUS: major meō animō, quam cum ex altō procul
+(228)  MENAECHMUS: terram cōnspiciunt. Major, nōn dīcam dolō,
+(229)  MESSENIO SERVUS: quasī adveniēns terram videās quae fuerit tua.
+(230)  MESSENIO SERVUS: sed quaesō, quam ob rem nunc Epidamnum vēnimus?
+(231)  MESSENIO SERVUS: an quasi mare omnīs circumīmus īnsulās?
+(232)  MENAECHMUS: Frātrem quaesītum geminum germānum meum.
+(233)  MESSENIO SERVUS: Nam quid modī futūrum est illum quaerere?
+(234)  MESSENIO SERVUS: hic annus sextust postquam eī reī operam damus.
+(235)  MESSENIO SERVUS: Histrōs, Hispānōs, Massiliēnsīs, Hiluriōs,
+(236)  MESSENIO SERVUS: mare superum omne Graeciamque exōticam
+(237)  MESSENIO SERVUS: ōrāsque Italicās omnīs, quā aggreditur mare,
+(238)  MESSENIO SERVUS: sumus circumvectī. si acum, crēdō, quaererēs,
+(239)  MESSENIO SERVUS: acum invēnissēs, sī appārēret, jam diū.
+(240)  MESSENIO SERVUS: hominem inter vīvōs quaeritāmus mortuum;
+(241)  MESSENIO SERVUS: nam invēnissēmus jam diū, sī vīveret.
+(242)  MENAECHMUS: Ergō istūc quaerō certum quī faciat mihi,
+(243)  MENAECHMUS: quī sēsē dīcat scīre eum esse ēmortuum:
+(244)  MENAECHMUS: operam praetereā numquam sūmam quaerere.
+(245)  MENAECHMUS: vērum aliter vīvus numquam dēsistam exsequī.
+(246)  MENAECHMUS: ego illum sciō quam cārus sit cordī meō.
+(247)  MESSENIO SERVUS: In scirpō nōdum quaeris. quīn nōs hinc domum
+(248)  MESSENIO SERVUS: redīmus, nisi sī historiam scrīptūrī sumus?
+(249)  MENAECHMUS: Dictum facessās, datum edīs, caveās malō.
+(250)  MENAECHMUS: molestus nē sīs, nōn tuō hoc fīet modō. Em
+(251)  MESSENIO SERVUS: illōc enim verbō esse mē servum sciō.
+(252)  MESSENIO SERVUS: nōn potuit paucīs plūra plānē prōloquī.
+(253)  MESSENIO SERVUS: vērum tamen nequeō continērī quīn loquar.
+(254)  MESSENIO SERVUS: audīn, Menaechme? cum īnspiciō marsuppium,
+(255)  MESSENIO SERVUS: viāticātī hercle admodum aestīvē sumus.
+(256)  MESSENIO SERVUS: nē tū hercle, opīnor, nisi domum reverteris,
+(257)  MESSENIO SERVUS: ubi nihil habēbis, geminum dum quaerēs, gemēs.
+(258)  MESSENIO SERVUS: nam ita est haec hominum nātiō: in Epidamniīs
+(259)  MESSENIO SERVUS: voluptāriī atque pōtātōrēs maximī;
+(260)  MESSENIO SERVUS: tum sȳcophantae et palpātōrēs plūrimī
+(261)  MESSENIO SERVUS: in urbe hāc habitant; tum meretrīcēs mulierēs
+(262)  MESSENIO SERVUS: nusquam perhibentur blandiōrēs gentium.
+(263)  MESSENIO SERVUS: proptereā huic urbī nōmen Epidamnō inditumst,
+(264)  MESSENIO SERVUS: quia nēmō fermē hūc sine damnō dēvertitur.
+(265)  MENAECHMUS: Ego istūc cavēbō. cedodum hūc mihi marsuppium.
+(266)  MESSENIO SERVUS: Quid eō vīs? Jam aps tē metuō dē verbīs tuīs.
+(267)  MESSENIO SERVUS: Quid metuis? Nē mihi damnum in Epidamnō duīs.
+(268)  MENAECHMUS: tu amātor magnus mulierum ēs, Messēniō,
+(269)  MENAECHMUS: ego autem homō īrācundus, animī percitī;
+(270)  MENAECHMUS: id utrumque, argentum quandō habēbō, cāverō,
+(271)  MENAECHMUS: nē tū dēlinquās nēve ego īrāscar tibī.
+(272)  MESSENIO SERVUS: Cape atque servā. mē libente fēceris.
+(273x) == Szene Ii.ii ==
+(273)  CYLINDRUS COCUS: Bene obsōnāvī atque ex meā sententiā,
+(274)  CYLINDRUS COCUS: bonum antepōnam prandium prānsōribus.
+(275)  CYLINDRUS COCUS: sed eccum Menaechmum videō. vae tergō meō,
+(276)  CYLINDRUS COCUS: prius jam convīvae ambulant ante ōstium,
+(277)  CYLINDRUS COCUS: quam ego obsōnātū redeō. adībō atque alloquar.
+(278)  CYLINDRUS COCUS: Menaechme, salvē. Dī tē amābunt quisquis ēs.
+(279)  CYLINDRUS COCUS: Quisquis ‹quis› ego sim?
+(280)  MENAECHMUS: Nōn hercle vērō. Ubi convīvae cēterī?
+(281)  MENAECHMUS: Quōs tū convīvās quaeris? Parasītum tuum.
+(282)  MENAECHMUS: Meum parasītum? certē hic īnsānust homō.
+(283)  MESSENIO SERVUS: Dīxīn tibi esse hīc sȳcophantās plūrimōs?
+(284)  MESSENIO SERVUS: ...
+(285)  MENAECHMUS: Quem tū parasītum quaeris, adulēscēns, meum?
+(286)  CYLINDRUS COCUS: Pēniculum Eccum in vīdulō salvum ferō.
+(287)  CYLINDRUS COCUS: Menaechme, numerō hūc advenīs ad prandium.
+(288)  CYLINDRUS COCUS: nunc obsōnātū redeō. Respondē mihī,
+(289)  MENAECHMUS: adulēscēns: quibus hīc pretiīs porcī vēneunt
+(290)  MENAECHMUS: sacrēs sincērī? Nummīs. Nummum ā mē accipe:
+(291)  MENAECHMUS: jube tē piārī dē meā pecūniā.
+(292)  MENAECHMUS: nam equidem īnsānum esse tē certō sciō,
+(293)  MENAECHMUS: quī mihi molestu's hominī ignōtō, quisquis ēs.
+(294)  CYLINDRUS COCUS: Cylindrus ego sum: nōn nōstī nōmen meum?
+(295)  MENAECHMUS: Sī tū Cylindrus seu Coriendru's, perierīs.
+(296)  MENAECHMUS: ego tē nōn nōvī, neque nōvisse adeō volō.
+(297)  CYLINDRUS COCUS: Est tibi Menaechmō nōmen, tantum quod sciam.
+(298)  MENAECHMUS: Prō sānō loqueris cum mē appellās nōmine.
+(299)  MENAECHMUS: sed ubi nōvistī mē? Ubi ego tē nōverim,
+(300)  CYLINDRUS COCUS: quī amīcam habēs eram meam hanc Erōtium?
+(301)  MENAECHMUS: Neque hercle ego habeō, neque tē quis homo sīs sciō.
+(302)  CYLINDRUS COCUS: Nōn scīs quis ego sim, quī tibi saepissimē
+(303)  CYLINDRUS COCUS: cyathissō apud nōs, quandō pōtās? Ei mihī,
+(304)  MESSENIO SERVUS: cum nihil est quī illī hominī dimminuam caput.
+(305)  MENAECHMUS: Tūn cyathissāre mihi solēs, quī ante hunc diem
+(306)  MENAECHMUS: Epidamnum numquam vīdī neque vēnī? Negās?
+(307)  MENAECHMUS: Negō hercle vērō. Nōn tū in illīsce aedibus
+(308)  CYLINDRUS COCUS: habitās Dī illōs hominēs, quī illī habitant, perduint.
+(309)  CYLINDRUS COCUS: Īnsānit hic quidem, quī ipse male dīcit sibi.
+(310)  CYLINDRUS COCUS: audīn, Menaechme? Quid vīs? Sī mē cōnsulās,
+(311)  CYLINDRUS COCUS: nummum illum quem mihi dūdum pollicitu's dare;
+(312)  CYLINDRUS COCUS: nam tū quidem hercle certō nōn sānu's satis,
+(313)  CYLINDRUS COCUS: Menaechme, quī nunc ipsus male dīcās tibi;
+(314)  CYLINDRUS COCUS: jubeās, sī sapiās, porculum afferrī tibi.
+(316)  MESSENIO SERVUS: Eu hercle hominem multum, et odiōsum mihi.
+(317)  CYLINDRUS COCUS: Solet jocārī saepe mēcum illōc modō.
+(318)  CYLINDRUS COCUS: quamvīs rīdiculus est, ubi uxor nōn adest.
+(319)  CYLINDRUS COCUS: quid aīs tū? quid aīs, inquam. Satin hoc quod vidēs
+(320)  CYLINDRUS COCUS: tribus vōbīs obsōnātumst, an obsōnō amplius,
+(321)  CYLINDRUS COCUS: tibi et parasītō et mulierī? Quās mulierēs,
+(322)  MENAECHMUS: quōs tū parasītōs loquere? Quod tē urget scelus,
+(323)  MESSENIO SERVUS: quī huic sīs molestus? Quid tibī mēcum est reī?
+(324)  CYLINDRUS COCUS: ego tē nōn nōvī: cum hōc quem nōvī fābulor.
+(325)  MESSENIO SERVUS: Nōn edepol tu homo sānus ēs, certō sciō.
+(326)  CYLINDRUS COCUS: Jam ergō haec madēbunt faxō, nīl morābitur.
+(327)  CYLINDRUS COCUS: proin tū nē quō abeās longius ab aedibus.
+(328)  CYLINDRUS COCUS: numquid vīs? Ut eās maximam malam crucem.
+(329)  CYLINDRUS COCUS: Īre hercle meliust tē interim atque accumbere,
+(330)  CYLINDRUS COCUS: dum ego haec appōnō ad Vulcānī violentiam.
+(331)  CYLINDRUS COCUS: ībō intrō et dīcam tē hīc astāre Erōtiō,
+(332)  CYLINDRUS COCUS: ut tē hinc abdūcat potius quam hīc astēs foris.
+(333)  MENAECHMUS: Jamne abiit? ‹abiit›. edepol hau mendācia
+(334)  MENAECHMUS: tua verba experior esse. Observātō modo:
+(335)  MESSENIO SERVUS: nam istīc meretrīcem crēdō habitāre mulierem,
+(336)  MESSENIO SERVUS: ut quidem ille īnsānus dīxit, quī hinc abiit modo.
+(337)  MENAECHMUS: Sed mīror quī ille nōverit nōmen meum.
+(338)  MESSENIO SERVUS: Minimē hercle mīrum. mōrem hunc meretrīcēs habent:
+(339)  MESSENIO SERVUS: ad portum mittunt servolōs, ancillulās;
+(340)  MESSENIO SERVUS: sī qua peregrīna nāvis in portum advenit,
+(341)  MESSENIO SERVUS: rogitant cujātis sit, quid eī nōmen siet,
+(342)  MESSENIO SERVUS: postilla extemplō sē applicant, agglūtinant:
+(343)  MESSENIO SERVUS: sī pellexērunt, perditum āmittunt domum.
+(344)  MESSENIO SERVUS: nunc in istōc portūst nāvis praedātōria,
+(345)  MESSENIO SERVUS: aps quā cavendum nōbīs sānē cēnseō.
+(346)  MENAECHMUS: Monēs quidem hercle rēctē. Tum dēmum sciam
+(347)  MESSENIO SERVUS: rēctē monuisse, sī tū rēctē cāveris.
+(348)  MENAECHMUS: Tace dum parumper, nam concrepuit ōstium:
+(349)  MENAECHMUS: videāmus quī hinc ēgreditur. Hoc pōnam interim.
+(350)  MESSENIO SERVUS: asservātōte haec sultis, nāvālēs pedēs.
+(351x) == Szene Ii.iii ==
+(351)  EROTIUM MERETRIX: Sine forēs sīc, abī, nōlō operīrī.
+(352)  EROTIUM MERETRIX: intus parā, cūrā, vidē, quod opust fīat:
+(353)  EROTIUM MERETRIX: sternite lectōs, incendite odōrēs; munditia
+(354)  EROTIUM MERETRIX: illecebra animōst amantium.
+(356)  EROTIUM MERETRIX: amantī amoenitās malōst, nōbīs lucrōst.
+(357)  EROTIUM MERETRIX: sed ubi ille est, quem coquus ante aedīs esse ait? atque eccum videō,
+(358)  EROTIUM MERETRIX: quī mi est ūsuī et plūrimum prōdest.
+(359)  EROTIUM MERETRIX: item hinc ultrō fit, ut meret, potissimus
+(359a)  EROTIUM MERETRIX: nostrae domī ut sit;
+(360)  EROTIUM MERETRIX: nunc eum adībō, alloquār ultrō.
+(361)  EROTIUM MERETRIX: animule mī, mihi mīra videntur,
+(362)  EROTIUM MERETRIX: tē hīc stāre forīs, fores cui pateant,
+(363)  EROTIUM MERETRIX: magis quam domus tua domus cum haec tua sit.
+(364)  EROTIUM MERETRIX: omne parātumst, ut jussistī
+(365)  EROTIUM MERETRIX: atque ut voluistī, neque tibi
+(366)  EROTIUM MERETRIX: ūlla mora intus.
+(367)  EROTIUM MERETRIX: prandium, ut jussistī, hīc cūrātumst:
+(368)  EROTIUM MERETRIX: ubi libet, īre licēt accubitum.
+(369)  MENAECHMUS: Quīcum haec mulier loquitur? Equidem tēcum. Quid mēcum tibi
+(370)  MENAECHMUS: fuit umquam aut nunc est negōtī? Quia pol tē ūnum ex omnibus
+(371)  EROTIUM MERETRIX: Venus mē voluit magnificāre, neque id haud immeritō tuō.
+(372)  EROTIUM MERETRIX: nam ēcastor sōlus benefactīs tuīs mē flōrentem facis.
+(373)  MENAECHMUS: Certō haec mulier aut īnsāna aut ēbria est, Messēniō,
+(374)  MENAECHMUS: quae hominem ignōtum compellet mē tam familiāriter.
+(375)  MESSENIO SERVUS: Dīxīn ego istaec hīc solēre fierī? folia nunc cadunt,
+(376)  MESSENIO SERVUS: praeut sī trīduum hoc hīc erimus: tum arborēs in tē cadent.
+(377)  MESSENIO SERVUS: nam ita sunt hīc meretrīcēs: omnēs ēlecebrae argentāriae.
+(378)  MESSENIO SERVUS: sed sine mē dum hanc compellāre. heus mulier, tibi dīcō. Quid est?
+(379)  MESSENIO SERVUS: Ubi tu hunc hominem nōvistī? Ibidem ubi hic mē jam diū,
+(380)  EROTIUM MERETRIX: in Epidamnō. In Epidamnō? quī hūc in hanc urbem pedem,
+(381)  MESSENIO SERVUS: nisi hodiē, numquam intrō tetulit? Heia, dēliciās facis.
+(382)  EROTIUM MERETRIX: mī Menaechme, quīn, amābō, īs intrō? hīc tibi erit rēctius.
+(383)  MENAECHMUS: Haec quidem edepol rēctē appellat meō mē mulier nōmine.
+(384)  MENAECHMUS: nimis mīror, quid hoc sit negōtī. Oboluit marsuppium
+(385)  MESSENIO SERVUS: huic istūc quod habēs. Atque edepol tū mē monuistī probē.
+(386)  MENAECHMUS: accipe dum hoc. jam scībō, utrum haec mē mage amet an marsuppium.
+(387)  EROTIUM MERETRIX: Eāmus intrō, ut prandeāmus. Bene vocās: tam grātiast.
+(388)  EROTIUM MERETRIX: Cūr igitur mē tibi jussistī coquere dūdum prandium?
+(389)  MENAECHMUS: Egon tē jussī coquere? Certō, tibi et parasītō tuō.
+(390)  MENAECHMUS: Cui, malum, parasītō? certō haec mulier nōn sānast satis.
+(391)  EROTIUM MERETRIX: Pēniculō. Quis iste est Pēniculus? quī extergentur baxeae?
+(392)  EROTIUM MERETRIX: Scīlicet quī dūdum tēcum vēnit, cum pallam mihi
+(393)  EROTIUM MERETRIX: dētulistī, quam ab uxōre tuā surrupuistī. Quid est?
+(394)  MENAECHMUS: tibi pallam dedī, quam uxōrī meae surrupuī? sānan ēs?
+(395)  MENAECHMUS: certē haec mulier cantherīnō rītū astāns somniat.
+(396)  EROTIUM MERETRIX: Quī libet lūdibriō habēre mē atque īre īnfitiās mihi
+(397)  EROTIUM MERETRIX: facta quae sunt? Dīc quid est id quod negem quod fēcerim?
+(398)  EROTIUM MERETRIX: Pallam tē hodiē mihi dedisse uxōris. Etiam nunc negō.
+(399)  MENAECHMUS: ego quidem neque umquam uxōrem habuī neque habeō, neque hūc
+(400)  MENAECHMUS: umquam, postquam nātus sum, intrā portam penetrāvī pedem.
+(401)  MENAECHMUS: prandī in nāvī, inde hūc sum ēgressus, tē convēnī. Eccerē,
+(402)  EROTIUM MERETRIX: periī misera, quam tū mihi nunc nāvem nārrās? Ligneam,
+(403)  MENAECHMUS: saepe trītam, saepe fīxam, saepe excussam malleō;
+(404)  MENAECHMUS: quasi supellēx pelliōnis, pālus pālō proximust.
+(405)  EROTIUM MERETRIX: Jam, amābō, dēsiste lūdōs facere atque ī hāc mēcum simul.
+(406)  MENAECHMUS: Nescioquem ‹tū›, mulier, alium hominem, nōn mē quaeritās.
+(407)  EROTIUM MERETRIX: Nōn ego tē nōvī Menaechmum, Moschō prōgnātum patre,
+(408)  EROTIUM MERETRIX: quī Syrācūsīs perhibēre nātus esse in Siciliā,
+(409)  EROTIUM MERETRIX: ubi rēx Agathoclēs rēgnātor fuit et iterum Phintia,
+(411)  EROTIUM MERETRIX: tertium Liparō, quī in morte rēgnum Hierōnī trādidit,
+(412)  EROTIUM MERETRIX: nunc Hierō est? hau falsa, mulier, praedicās. Prō Juppiter,
+(413)  MESSENIO SERVUS: num istaec mulier illinc vēnit, quae tē nōvit tam catē?
+(414)  MENAECHMUS: Hercle opīnor, pernegārī nōn potest. Nē fēcerīs.
+(416)  MESSENIO SERVUS: periistī, sī intrāssis intrā līmen. Quīn tū tace modo.
+(417)  MESSENIO SERVUS: bene rēs geritur. assentābor quidquid dīcet mulierī,
+(418)  MESSENIO SERVUS: sī possum hospitium nancīscī. jam dūdum, mulier, tibi
+(419)  MESSENIO SERVUS: nōn imprūdēns adversābar: hunc metuēbam, nē meae
+(421)  MESSENIO SERVUS: uxōrī renūntiāret dē pallā et dē prandiō.
+(422)  MESSENIO SERVUS: nunc, quandō vīs, eāmus intrō. Etiam parasītum manēs?
+(423)  MENAECHMUS: Neque ego illum maneō, neque floccī faciō, neque, sī vēnerit,
+(424)  MENAECHMUS: eum volō intrōmittī. Ēcastōr haud invīta fēcerō.
+(425)  EROTIUM MERETRIX: sed scīn quid tē amābō ut faciās? Imperā quid vīs modo.
+(426)  EROTIUM MERETRIX: Pallam illam, quam dūdum dederās, ad phrygiōnem ut dēferās,
+(427)  EROTIUM MERETRIX: ut reconcinnētur atque ūnā operā addantur quae volō.
+(428)  MENAECHMUS: Hercle quī tū rēctē dīcis: eādem ‹ea› ignōrābitur,
+(429)  MENAECHMUS: nē uxor cognōscat tē habēre, sī in viā cōnspexerit.
+(430)  EROTIUM MERETRIX: Ergō mox aufertō tēcum, quandō abībis. Maximē.
+(431)  EROTIUM MERETRIX: Eāmus intrō. Jam sequar tē. hunc volō etiam colloquī.
+(432)  MENAECHMUS: eho Messēniō, accēde hūc. Quid negōtī est? scīscitur.
+(433)  MENAECHMUS: Quid eō opust? Opus est. sciō, ut mendīcēs: tantō nēquior.
+(434)  MENAECHMUS: Habeō praedam: tantum incēpī operis. ī quantum potēs,
+(436)  MENAECHMUS: abdūc istōs in tabernam āctūtum dēversōriam.
+(437)  MENAECHMUS: tum facitō ante sōlem occāsum ut veniās adversum mihi.
+(438)  MESSENIO SERVUS: Nōn tū istās meretrīcēs nōvistī, ere. Tacē, inquam
+(439)  MENAECHMUS: mihi dolēbit, nōn tibi, sī quid ego stultē fēcerō.
+(440)  MENAECHMUS: mulier haec stulta atque īnscīta est; quantum perspexī modo,
+(441)  MENAECHMUS: est hīc praeda nōbīs. Periī, jamne abīs? periit probē:
+(442)  MESSENIO SERVUS: dūcit lembum dīērectum nāvis praedātōria.
+(443)  MESSENIO SERVUS: sed ego īnscītus quī dominō mē postulem moderārier:
+(444)  MESSENIO SERVUS: dictō mē ēmit audientem, haud imperātōrem sibi.
+(445)  MESSENIO SERVUS: sequiminī, ut, quod imperātum est, veniam adversum temperī.
+(446y) === Akt III ===
+(446x) == Szene Iii.i ==
+(446)  PENICULUS PARASITUS: Plūs trīgintā annōs nātus sum, cum intereā locī,
+(447)  PENICULUS PARASITUS: numquam quicquam facinus fēcī pejus neque scelestius,
+(448)  PENICULUS PARASITUS: quam hodiē, cum in contiōnem mediam mē immersī miser
+(449)  PENICULUS PARASITUS: ubi ego dum hietō, Menaechmus sē subterdūxit mihi
+(450)  PENICULUS PARASITUS: atque abīt ad amīcam, crēdō, neque mē voluit dūcere.
+(451)  PENICULUS PARASITUS: quī illum dī omnēs perduint, quī prīmus commentust
+(452)  PENICULUS PARASITUS: contiōnem habēre, quī hominēs occupātōs occupat.
+(453)  PENICULUS PARASITUS: nōn ad eam rem ōtiōsōs hominēs decuit dēligī,
+(454)  PENICULUS PARASITUS: quī nisi assint cum citentur, Cōnsus capiat īlicō?
+(455)  PENICULUS PARASITUS: ...
+(457)  PENICULUS PARASITUS: affatim est hominum, in diēs quī singulās ēscās edint,
+(458)  PENICULUS PARASITUS: quibus negōtī nihil est, quī essum neque vocantur neque vocant:
+(459)  PENICULUS PARASITUS: eōs oportet contiōnī dare operam atque comitiīs.
+(460)  PENICULUS PARASITUS: si id ita esset, nōn ego hodiē perdidissem prandium,
+(461)  PENICULUS PARASITUS: cui tam crēdō datum voluisse quam mē videō vīvere.
+(462)  PENICULUS PARASITUS: ībō: etiamnum reliquiārum spēs animum oblectat meum.
+(463)  PENICULUS PARASITUS: sed quid ego videō? Menaechmus cum corōna exit forās.
+(464)  PENICULUS PARASITUS: sublātum est convīvium, edepol veniō adversum temperī.
+(465)  PENICULUS PARASITUS: observābō, quid agat, hominem. post adībō atque alloquar.
+(466x) == Szene Iii.ii ==
+(466)  MENAECHMUS: Potin ut quiescās? ego tibi hanc hodiē probē
+(467)  MENAECHMUS: lepidēque concinnātam referam temperī.
+(468)  MENAECHMUS: nōn faxō eam esse dīcēs: ita ignōrābitur.
+(469)  PENICULUS PARASITUS: Pallam ad phrygiōnem fert cōnfectō prandiō
+(470)  PENICULUS PARASITUS: vīnōque expōtō, parasītō exclūsō forās.
+(471)  PENICULUS PARASITUS: nōn hercle ego is sum quī sum, nī hanc injūriam
+(472)  PENICULUS PARASITUS: mēque ultus pulchrē fuerō. observā quid dabō.
+(473)  MENAECHMUS: Prō dī immortālēs, cui hominī umquam ūnō diē
+(474)  MENAECHMUS: bonī dedistis plūs, quī minus spērāverit?
+(475)  MENAECHMUS: prandī, pōtāvī, scortum accubuī, apstulī
+(476)  MENAECHMUS: hanc, cujus hērēs numquam erit post hunc diem.
+(477)  PENICULUS PARASITUS: Nequeō quae loquitur exaudīre clanculum;
+(478)  PENICULUS PARASITUS: satur nunc loquitur dē mē et dē partī meā.
+(479)  MENAECHMUS: Ait hanc dedisse mē sibī, atque eam meae
+(481)  MENAECHMUS: uxōrī surrupuisse. quoniam sentiō
+(482)  MENAECHMUS: errāre, extemplō, quasi rēs cum eā esset mihi,
+(483)  MENAECHMUS: coepī assentārī: mulier quidquid dīxerat,
+(484)  MENAECHMUS: idem ego dīcēbam. quid multīs verbīs opust?
+(485)  MENAECHMUS: minōre nusquam bene fuī dispendiō.
+(486)  PENICULUS PARASITUS: Adībō ad hominem, nam turbāre gestiō.
+(487)  MENAECHMUS: Quis hic est, quī adversus it mihī? Quid aīs, homō
+(488)  PENICULUS PARASITUS: levior quam plūma, pessume et nēquissime,
+(489)  PENICULUS PARASITUS: flāgitium hominis, subdole ac minimī pretī?
+(490)  PENICULUS PARASITUS: quid dē tē meruī, quā mē causā perderēs?
+(491)  PENICULUS PARASITUS: ut surrupuistī tē mihi dūdum dē forō!
+(492)  PENICULUS PARASITUS: fēcistī fūnus mēd absente prandiō.
+(493)  PENICULUS PARASITUS: cūr ausu's facere, cui ego aequē hērēs eram?
+(494)  MENAECHMUS: Adulēscēns, quaesō, quid tibī mēcum est reī,
+(495)  MENAECHMUS: quī mihi male dīcās hominī hīc ignōtō īnsciēns?
+(496)  MENAECHMUS: an tibi malam rem vīs prō male dictīs darī?
+(497)  PENICULUS PARASITUS: Pol eam quidem edepol tē dedisse intellegō.
+(498)  MENAECHMUS: Respondē, adulēscēns, quaesō, quid nōmen tibīst?
+(499)  PENICULUS PARASITUS: Etiam dērīdēs, quasi nōmen nōn nōverīs?
+(500)  MENAECHMUS: Nōn edepol ego tē, quod sciam, umquam ante hunc diem
+(501)  MENAECHMUS: vīdī neque nōvī; vērum certō, quisquis ēs,
+(502)  MENAECHMUS: si aequum faciās, mihi odiōsus nē siēs.
+(503)  PENICULUS PARASITUS: Menaechme, vigilā. Vigilō hercle equidem, quod sciam.
+(504)  PENICULUS PARASITUS: Nōn mē nōvistī? Nōn negem, sī nōverim.
+(505)  PENICULUS PARASITUS: Tuum parasītum nōn nōvistī? Nōn tibi
+(506)  MENAECHMUS: sānum est, adulēscēns, sinciput, intellegō.
+(507)  PENICULUS PARASITUS: Respondē, surrupuistīn uxōrī tuae
+(508)  PENICULUS PARASITUS: pallam istanc hodiē ac dedistī Erotiō?
+(509)  MENAECHMUS: Neque hercle ego uxōrem habeō neque ego Erōtiō
+(510)  MENAECHMUS: dedī nec pallam surrupuī. Satin sānus ēs?
+(511)  PENICULUS PARASITUS: occīsast haec rēs. nōn ego tē indūtum forās
+(512)  PENICULUS PARASITUS: exīre vīdī pallam? Vae capitī tuō.
+(513)  MENAECHMUS: omnīs cinaedōs esse cēnsēs, tū quia ēs?
+(514)  MENAECHMUS: tūn mēd indūtum fuisse pallam praedicās?
+(516)  PENICULUS PARASITUS: Ego hercle vērō. Nōn tū abīs quō dignus ēs?
+(517)  MENAECHMUS: aut tē piārī jube, homō īnsānissime.
+(518)  PENICULUS PARASITUS: Numquam edepol quisquam mē exōrābit, quīn tuae
+(519)  PENICULUS PARASITUS: uxōrī rem omnem jam utī sit gesta, ēloquar;
+(520)  PENICULUS PARASITUS: omnēs in tē istaec recident contumēliae:
+(521)  PENICULUS PARASITUS: faxō haud inultus prandium comēderīs.
+(522)  MENAECHMUS: Quid hoc est negōtī? satine, ut quemque cōnspicor,
+(523)  MENAECHMUS: ita mē lūdificant? sed concrepuit ōstium.
+(524x) == Szene Iii.iii ==
+(524)  ANCILLA: Menaechme, amāre ait tē multum Erōtium,
+(525)  ANCILLA: ut hoc ūnā operā sibi ad aurificem dēferās,
+(526)  ANCILLA: atque hūc ut addās aurī pondō unciam
+(527)  ANCILLA: jubeāsque spinter novum reconcinnārier.
+(528)  MENAECHMUS: Et istūc et aliud, sī quid cūrārī volet,
+(529)  MENAECHMUS: mē cūrātūrum dīcitō, quidquid volet.
+(530)  ANCILLA: Scīn quid hoc sit spinter? Nesciō, nisi aureum.
+(531)  ANCILLA: Hoc est quod ōlim clanculum ex armāriō
+(532)  ANCILLA: tē surrupuisse ajēbās uxōrī tuae.
+(533)  MENAECHMUS: Numquam hercle factum est. Nōn meministī, obsecrō?
+(534)  ANCILLA: redde igitur spinter, sī nōn meministī. Manē.
+(535)  MENAECHMUS: immō equidem meminī. nempe hoc est, quod illī dedī.
+(536)  ANCILLA: Istūc. Ubi illae armillae sunt, quās ūnā dedī?
+(537)  ANCILLA: Numquam dedistī. Nam pol hoc ūnum dedī.
+(538)  ANCILLA: Dīcam cūrāre? Dīcitō: cūrābitur.
+(539)  MENAECHMUS: et palla et spinter faxō referantur simul.
+(541)  ANCILLA: Amābō, mī Menaechme, inaurīs dā mihi
+(542)  ANCILLA: faciendās pondō duum nummum, stalagmia,
+(543)  ANCILLA: ut tē libenter videam, cum ad nōs vēneris.
+(544)  MENAECHMUS: Fīat. cedo aurum, ego manupretium dabō.
+(545)  ANCILLA: Dā sōdēs abs tē: postē reddiderō tibi.
+(546)  MENAECHMUS: Immō cedo abs tē: ego post tibī reddam duplex.
+(547)  ANCILLA: Nōn habeō. At tū, quandō habēbis, tum datō.
+(548)  ANCILLA: Numquid vīs? Haec mē cūrātūrum dīcitō;
+(549)  MENAECHMUS: ut quantum possint quīque liceant vēneant.
+(550)  MENAECHMUS: jamne abiit intrō? abiit, operuit forēs.
+(551)  MENAECHMUS: dī mē quidem omnēs adjuvant, augent, amant.
+(552)  MENAECHMUS: sed quid ego cessō, dum datur mī occāsiō
+(553)  MENAECHMUS: tempusque, abīre ab hīs locīs lēnōniīs?
+(554)  MENAECHMUS: properā, Menaechme, fer pedem, cōnfer gradum.
+(555)  MENAECHMUS: dēmam hanc corōnam atque abiciam ad laevam manum,
+(556)  MENAECHMUS: ut, si sequantur, hāc mē abiisse cēnseant.
+(557)  MENAECHMUS: ībō et conveniam servum, sī poterō, meum,
+(558)  MENAECHMUS: ut haec, quae bona dant dī mihī, ex mē sciat.
+(559y) === Akt IV ===
+(559x) == Szene Iv.i ==
+(559)  MATRONA: Egone hīc mē patiar frūstrā in mātrimōniō,
+(560)  MATRONA: ubi vir compīlet clanculum quidquid domīst
+(561)  MATRONA: atque ea ad amīcam dēferat? Quīn tū tacēs?
+(562)  PENICULUS PARASITUS: manufēstō faxō jam opprimēs: sequere hāc modō.
+(563)  PENICULUS PARASITUS: pallam ad phrygiōnem cum corōnā ēbrius
+(564)  PENICULUS PARASITUS: ferēbat, hodiē tibi quam surrupuit domō.
+(565)  PENICULUS PARASITUS: sed eccam corōnam quam habuit. num mentior?
+(566)  PENICULUS PARASITUS: em hāc abiit, sī vīs persequī vestīgiīs.
+(567)  PENICULUS PARASITUS: atque edepol eccum optimē revertitur;
+(568)  PENICULUS PARASITUS: sed pallam nōn fert. Quid ego nunc cum illōc agam?
+(569)  PENICULUS PARASITUS: Idem quod semper: male habeās; sīc cēnseō.
+(570)  PENICULUS PARASITUS: hūc concēdāmus: ex īnsidiīs aucupā.
+(571x) == Szene Iv.ii ==
+(571)  MENAECHMUS: Ut hōc ūtimur maximē mōre mōrō
+(572)  MENAECHMUS: molestōque multum, atque utī quīque sunt
+(573)  MENAECHMUS: optimī, maximē mōrem habent hunc:
+(574)  MENAECHMUS: clientēs sibi omnēs volunt esse multōs:
+(575)  MENAECHMUS: bonīne an malī sint, id hau quaeritant;
+(576)  MENAECHMUS: rēs magis quaeritur quam clientum fidēs
+(577)  MENAECHMUS: cujus modī clueat.
+(578)  MENAECHMUS: si est pauper atque hau malus, nēquam habētur,
+(579)  MENAECHMUS: sīn dīves malust, is cliēns frūgī habētur.
+(580)  MENAECHMUS: quī neque lēgēs neque aequum bonum usquam colunt,
+(581)  MENAECHMUS: sollicitōs patrōnōs habent.
+(582)  MENAECHMUS: datum dēnegant quod datum est, lītium
+(582a)  MENAECHMUS: plēnī, rapācēs virī, fraudulentī,
+(583)  MENAECHMUS: quī aut faenore aut perjūriīs
+(584)  MENAECHMUS: habent rem parātam, mēnsae †inquoīre†
+(585)  MENAECHMUS: eīs ubi dīcitur diēs,
+(585a)  MENAECHMUS: simul patrōnīs dīcitur.
+(586)  MENAECHMUS: quippe quī pro illīs loquimur quae male fēcerunt
+(587)  MENAECHMUS: aut ad populum aut in jūre aut apud aedīlem rēs est.
+(588)  MENAECHMUS: sīcut mē hodiē nimis sollicitum cliens quīdam habuit, neque quod voluī
+(589)  MENAECHMUS: agere aut quīcum licitumst, ita mē attinuīt, ita dētinuit.
+(590)  MENAECHMUS: apud aedīlīs prō ejus factīs plūrimīsque pessimīsque
+(591)  MENAECHMUS: dīxī causam, condiciōnēs tetulī tortās, cōnfragōsās:
+(592)  MENAECHMUS: aut plūs aut minus quam opus fuerat dictō dīxeram †contrōversiam†,
+(593)  MENAECHMUS: ut spōnsiō fieret. quid ille? quī praedem dedit.
+(594)  MENAECHMUS: nec magis manufēstum ego hominem umquam ūllum tenērī vīdī:
+(595)  MENAECHMUS: omnibus male factīs testēs trēs aderant ācerrimī.
+(596)  MENAECHMUS: dī illum omnēs perdant, ita mihi
+(596a)  MENAECHMUS: hunc hodiē corrūpit diem,
+(597)  MENAECHMUS: mēque adeō, qui hodiē forum
+(597a)  MENAECHMUS: umquam oculīs īnspexī meīs.
+(598)  MENAECHMUS: diem corrūpī optimum:
+(598a)  MENAECHMUS: jussī apparārī prandium,
+(599)  MENAECHMUS: amīca exspectat mē, sciō.
+(599a)  MENAECHMUS: ubi prīmum est licitum, īlicō
+(600)  MENAECHMUS: properāvī abīre dē forō.
+(600a)  MENAECHMUS: īrātast, crēdō, nunc mihi;
+(601)  MENAECHMUS: plācābit palla quam dedī,
+(601a)  MENAECHMUS: quam hodiē uxōrī abstulī atque huic dētulī Erōtiō.
+(602)  PENICULUS PARASITUS: Quid aīs? Viro mē malo male nūptam. Satin audīs quae illīc loquitur?
+(603)  MATRONA: Satis. Sī sapiam, hinc intrō abeam, ubi mī bene sit. Mane; male erit potius.
+(604)  MATRONA: Ne illam ēcastōr faenerātō abstulistī. Sīc datur.
+(605)  MATRONA: Clanculum tē istaec flāgitia facere cēnsēbās pote?
+(606)  MENAECHMUS: Quid illūc est, uxor, negōtī? Mēn rogās? Vīn hunc rogem?
+(607)  MATRONA: Aufer hinc palpātiōnēs. Perge tū. Quid tū mihi
+(608)  MENAECHMUS: trīstis ēs? Tē scīre oportet. Scit, sed dissimulat malus.
+(609)  MENAECHMUS: Quid negōtīst? Pallam; Pallam? Quīdam pallam; Quid pavēs?
+(610)  MENAECHMUS: Nīl equidem paveō. Nisi ūnum: palla pallōrem incutit.
+(611)  PENICULUS PARASITUS: at tū nē clam mē comēssēs prandium. perge in virum.
+(612)  MENAECHMUS: Nōn tacēs? Nōn hercle vērō taceō. nūtat, nē loquar.
+(613)  MENAECHMUS: Nōn hercle ego quidem usquam quicquam nūtō neque nīctō tibi.
+(614)  MATRONA: Ne ego ēcastōr mulier misera. Quī tū misera ēs? mī expedī.
+(615)  PENICULUS PARASITUS: Nihil hōc cōnfīdentius: quīn quae vidēs ea pernegat.
+(616)  MENAECHMUS: Per Jovem deōsque omnīs adjūrō, uxor, (satin hoc est tibi?)
+(617)  MENAECHMUS: mē istī nōn nūtāsse. Crēdit jam tibi dē istō: illūc redī.
+(618)  MENAECHMUS: Quo ego redeam? Equidem ad phrygiōnem cēnseō. ī, pallam refer.
+(619)  MENAECHMUS: Quae istaec palla est? Taceō jam, quandō haec rem nōn meminit suam.
+(619a)  PENICULUS PARASITUS: ...
+(620)  MENAECHMUS: Numquis servōrum dēlīquit? num ancillae aut servī tibi
+(621)  MENAECHMUS: respōnsant? ēloquere. impūne nōn erit. Nūgās agis.
+(622)  MENAECHMUS: Trīstis admodum ēs. nōn mī istūc satis placet. Nūgās agis.
+(623)  MENAECHMUS: Certē familiārium alicui īrāta ēs. Nūgās agis.
+(624)  MENAECHMUS: Num mihi ēs īrāta saltem? Nunc tū nōn nūgās agis.
+(625)  MENAECHMUS: Nōn edepol dēlīquī quicquam. Em rūrsum nunc nūgās agis.
+(626)  MENAECHMUS: Dīc, mea uxor, quid tibi aegrē est? Bellus blandītur tibi.
+(627)  MENAECHMUS: Potin ut mihi molestus nē sīs? num tē appellō? Aufer manum.
+(628)  PENICULUS PARASITUS: Sīc datur. properātō absente mē comēsse prandium,
+(629)  PENICULUS PARASITUS: post ante aedīs cum corōnā mē dērīdētō ēbrius.
+(630)  MENAECHMUS: Neque edepol ego prandī neque hodiē hūc intrō tetulī pedem.
+(631)  PENICULUS PARASITUS: Tūn negās? Negō hercle vērō. Nihil hōc homine audācius.
+(632)  PENICULUS PARASITUS: nōn ego tē modo hīc ante aedīs cum corōnā flōreā
+(633)  PENICULUS PARASITUS: vīdī astāre? cum negābās mī esse sānum sinciput,
+(634)  PENICULUS PARASITUS: et negābās mē nōvisse, peregrīnum aibās esse tē?
+(635)  MENAECHMUS: Quīn ut dūdum dīvertī abs tē, redeō nunc dēmum domum.
+(636)  PENICULUS PARASITUS: Nōvī ego tē. nōn mihi cēnsēbās esse, quī tē ulcīscerer.
+(637)  PENICULUS PARASITUS: omnia hercle uxōrī dīxī. Quid dīxistī? Nesciō,
+(638)  PENICULUS PARASITUS: eam ipsus ī, roga. Quid hoc est, uxor? quidnam hic nārrāvit tibi?
+(639)  MENAECHMUS: quid id est? quid tacēs? quīn dīcis quid sit? Quasi tū nesciās.
+(639a)  MATRONA: [palla mī est domō surrēpta. Palla surrēpta est tibi?]
+(640)  MATRONA: Mē rogās? Pol hau rogem tē, sī sciam. Ō hominem malum,
+(641)  PENICULUS PARASITUS: ut dissimulat. nōn potēs cēlāre: rem nōvit probē.
+(642)  PENICULUS PARASITUS: omnia hercle ego ēdictāvī. Quid id est? Quandō nīl pudet
+(643)  MATRONA: neque vīs tuā voluntāte ipse prōfitērī, audī atque adēs.
+(644)  MATRONA: et quid trīstis sim et quid hic mihi dīxerit, faxō sciās.
+(645)  MATRONA: palla mī est domō surrupta. Palla surruptast mihi?
+(646)  PENICULUS PARASITUS: Viden ut tē scelestus captat? huic surruptast, nōn tibi.
+(647)  PENICULUS PARASITUS: nam profectō tibi surrupta sī esset; salva nōn foret.
+(648)  MENAECHMUS: Nīl mihi tēcum est. sed tū quid aīs? Palla, inquam, periit domō.
+(649)  MENAECHMUS: Quis eam surrupuit? Pol istūc ille scit quī illam abstulit.
+(650)  MENAECHMUS: Quis is homō est? Menaechmus quīdam. Edepol factum nēquiter
+(651)  MENAECHMUS: quis is Menaechmust? Tū istic, inquam. Egone? Tū. Quis arguit?
+(652)  MATRONA: Egomet. Et ego. atque huic amīcae dētulistī Erotiō.
+(653)  MENAECHMUS: Egon dedī? Tū, tū istic, inquam. vīn afferrī noctuam,
+(654)  MATRONA: quae ‘tū tū’ usque dīcat tibi? nam nōs jam dēfessī sumus.
+(655)  MENAECHMUS: [Per Jovem deōsque omnīs adjūrō, uxor (satin hoc est tibi?)
+(656)  MENAECHMUS: nōn dedisse. Immō hercle vērō, nōs nōn falsum dīcere.]
+(657)  MENAECHMUS: Sed ego illam nōn condōnāvī, sed sīc ūtendam dedī.
+(658)  MATRONA: Equidem ēcastōr tuam nec chlamydem dō forās nec pallium
+(659)  MATRONA: cuiquam ūtendum. mulierem aequum est vestīmentum muliebre
+(660)  MATRONA: dare forās, virum virīle. quīn refers pallam domum?
+(661)  MENAECHMUS: Ego faxō referētur. Ex rē tuā, ut opīnor, fēceris;
+(662)  MATRONA: nam domum numquam introībis, nisi ferēs pallam simul.
+(663)  MATRONA: eō domum. Quid mihi futūrum est, quī tibi hanc operam dedī?
+(664)  MATRONA: Opera reddētur, quandō quid tibi erit surruptum domō.
+(665)  PENICULUS PARASITUS: Id quidem edepol numquam erit, nam nihil est quod perdam domī.
+(666)  PENICULUS PARASITUS: cum virō cum uxōre dī vōs perdant. properābō ad forum,
+(667)  PENICULUS PARASITUS: nam ex hāc familiā mē plānē excidisse intellegō.
+(668)  MENAECHMUS: Male mī uxor sēsē fēcisse cēnset, cum exclūsit forās;
+(669)  MENAECHMUS: quasi nōn habeam, quō intrōmittar, alium meliōrem locum.
+(670)  MENAECHMUS: sī tibi displiceō, patiundum: at placuerō huic Erotiō,
+(671)  MENAECHMUS: quae mē nōn exclūdet ab sē, sed apud sē occlūdet domī.
+(672)  MENAECHMUS: nunc ībō, ōrābō ut mihi pallam reddat, quam dūdum dedī;
+(673)  MENAECHMUS: aliam illī redimam meliōrem. heus, ecquis hīc est jānitor?
+(674)  MENAECHMUS: aperīte atque Erōtium aliquis ēvocāte ante ōstium.
+(675x) == Szene Iv.iii ==
+(675)  EROTIUM MERETRIX: Quis hic mē quaerit? Sibi inimīcus magis quam aetātī tuae.
+(676)  EROTIUM MERETRIX: Mī Menaechme, cūr ante aedīs āstās? sequere intrō. Manē.
+(677)  MENAECHMUS: scīn quid est quod ego ad tē veniō? Sciō, ut tibi ex mē sit volup.
+(678)  MENAECHMUS: Immō edepol pallam illam, amābō tē, quam tibi dūdum dedī,
+(679)  MENAECHMUS: mihi eam redde. uxor rescīvit rem omnem, ut factum est, ōrdine.
+(680)  MENAECHMUS: ego tibī redimam bis tantā plūris pallam, quam volēs.
+(681)  EROTIUM MERETRIX: Tibi dedī equidem illam, ad phrygiōnem ut ferrēs, paulō prius,
+(682)  EROTIUM MERETRIX: et illud spinter, ut ad aurificem ferrēs, ut fieret novum.
+(683)  MENAECHMUS: Mihi tū ut dederīs pallam et spinter? numquam factum reperiēs.
+(684)  MENAECHMUS: nam ego quidem postquam illam dūdum tibi dedī atque abiī ad forum,
+(685)  MENAECHMUS: nunc redeō, nunc tē postillāc videō. Videō quam rem agis.
+(686)  EROTIUM MERETRIX: quia commīsī, ut mē dēfrūdēs, ad eam rem affectās viam.
+(687)  MENAECHMUS: Neque edepol tē dēfrūdandī causā poscō (quīn tibi
+(688)  MENAECHMUS: dīcō uxōrem rēscīvisse); Nec tē ultrō ōrāvī ut darēs:
+(689)  EROTIUM MERETRIX: tūtē ultrō ad mē dētulistī, dedistī eam dōnō mihi;
+(690)  EROTIUM MERETRIX: eandem nunc reposcis: patiar. tibi habē, aufer, ūtere
+(691)  EROTIUM MERETRIX: vel tū vel tua uxor, vel etiam in loculōs compingite.
+(692)  EROTIUM MERETRIX: tū hūc post hunc diem pedem intrō nōn ferēs, nē frūstra sīs;
+(693)  EROTIUM MERETRIX: quandō tū mē bene merentem tibi habēs dēspicātuī,
+(694)  EROTIUM MERETRIX: nisi ferēs argentum, frūstrā mē ductāre nōn potēs.
+(695)  EROTIUM MERETRIX: aliam posthāc invenītō quam habeās frūstrātuī.
+(696)  MENAECHMUS: Nimis īrācundē hercle tandem. heus tū, tibi dīcō, manē,
+(697)  MENAECHMUS: redī. etiamne astās? etiam audēs meā revertī grātiā?
+(698)  MENAECHMUS: abiit intrō, occlūsit aedīs. nunc ego sum exclūsissimus:
+(699)  MENAECHMUS: neque domī neque apud amīcam mihi jam quicquam crēditur.
+(700)  MENAECHMUS: ībō et cōnsulam hanc rem amīcōs, quid faciendum cēnseant.
+(701y) === Akt V ===
+(701x) == Szene V.i ==
+(701)  MENAECHMUS: Nimis stultē dūdum fēcī, cum marsuppium
+(702)  MENAECHMUS: Messēniōnī cum argentō concrēdidī.
+(703)  MENAECHMUS: immersit aliquō sēsē, crēdō, in gāneum.
+(704)  MATRONA: Prōvīsam quam mox vir meus redeat domum.
+(705)  MATRONA: sed eccum videō. salva sum, pallam refert.
+(706)  MENAECHMUS: Dēmīror ubi nunc ambulet Messēniō.
+(707)  MATRONA: Adībō atque hominem accipiam quibus dictīs meret.
+(708)  MATRONA: nōn tē pudet prōdīre in cōnspectum meum,
+(709)  MATRONA: flāgitium hominis, cum istōc ōrnātū? Quid est?
+(710)  MENAECHMUS: quae tē rēs agitat, mulier? Etiamne, impudēns,
+(711)  MATRONA: muttīre verbum ūnum audēs aut mēcum loquī?
+(712)  MENAECHMUS: Quid tandem admīsī in mē, ut loquī nōn audeam?
+(713)  MATRONA: Rogās mē? ō hominis impudentem audāciam!
+(714)  MENAECHMUS: Nōn tū scīs, mulier, Hecubam quāpropter canem
+(715)  MENAECHMUS: Grāiī esse praedicābant? Nōn equidem sciō.
+(716)  MENAECHMUS: Quia idem faciēbat Hecuba quod tū nunc facis:
+(717)  MENAECHMUS: omnia mala ingerēbat, quemquem aspexerat.
+(718)  MENAECHMUS: itaque adeō jūre coepta appellārī est ‘Canēs’.
+(719)  MATRONA: Nōn ego istaec tua flāgitia possum perpetī.
+(720)  MATRONA: nam mēd aetātem viduam esse māvelim,
+(721)  MATRONA: quam istaec flāgitia tua patī quae tū facis.
+(722)  MENAECHMUS: Quid id ad mē, tū tē nūptam possīs perpetī
+(723)  MENAECHMUS: an sīs abitūra ā tuō virō? an mōs hīc ita est,
+(724)  MENAECHMUS: peregrīnō ut advenientī nārrent fābulās?
+(725)  MATRONA: Quās fābulās? nōn, inquam, patiar praeterhāc,
+(726)  MATRONA: quīn vidua vīvam quam tuōs mōrēs perferam.
+(727)  MENAECHMUS: Meā quidem hercle causā vidua vīvitō,
+(728)  MENAECHMUS: vel usque dum rēgnum optinēbit Juppiter.
+(729)  MATRONA: At mihi negābās dūdum surrupuisse tē,
+(730)  MATRONA: nunc eandem ante oculōs attinēs: nōn tē pudet?
+(731)  MENAECHMUS: Eu hercle, mulier, multum et audāx et mala ēs.
+(732)  MENAECHMUS: tūn tibi hanc surrēptam dīcere audēs, quam mihi
+(733)  MENAECHMUS: dedit alia mulier ut concinnandam darem?
+(734)  MATRONA: Ne istōc mēcastor; jam patrem accersam meum
+(735)  MATRONA: atque ei nārrābō tua flāgitia quae facis.
+(736)  MATRONA: ī, Deceō, quaere meum patrem, tēcum simul
+(737)  MATRONA: ut veniat ad mē: subitam rem esse dīcitō.
+(738)  MATRONA: jam ego aperiam istaec tua flāgitia. Sānan ēs?
+(739)  MENAECHMUS: quae mea flāgitia? Pallās atque aurum meum
+(740)  MATRONA: domō suppīlās tuā tuae uxōrī et tuae
+(741)  MATRONA: dēgeris amīcae. satin haec rēctē fābulor?
+(742)  MENAECHMUS: Quaesō hercle, mulier, sī scīs, mōnstrā quod bibam,
+(743)  MENAECHMUS: tuam quī possim perpetī petulantiam.
+(744)  MENAECHMUS: quem tu hominem mē esse arbitrēre, nesciō;
+(745)  MENAECHMUS: ego tē simītū nōvī cum Porthāone.
+(746)  MATRONA: Sī mē dērīdēs, at pol illum nōn potēs,
+(747)  MATRONA: patrem meum, quī hūc advenit. quīn respicis?
+(748)  MATRONA: nōvistīn tū illum? Nōvī cum Calchā simul:
+(749)  MENAECHMUS: eōdem diē illum vīdī quō tē ante hunc diem.
+(750)  MATRONA: Negās nōvisse mē? negās patrem meum?
+(751)  MENAECHMUS: Idem hercle dicam, si avum vīs addūcere.
+(752)  MATRONA: Ēcastōr pariter hoc atque aliās rēs solēs.
+(753x) == Szene V.ii ==
+(753)  SENEX: Ut aetās mea est atque ut hōc ūsus factōst
+(754)  SENEX: gradum prōferam, prōgredī properābō.
+(755)  SENEX: sed id quam mihī facile sīt, hau sum falsus.
+(756)  SENEX: nam pernīcitās dēserit: cōnsitus sum
+(757)  SENEX: senectūte, onustum gerō corpus, vīrēs
+(758)  SENEX: relīquēre: ut aetās mala est; mers mala ergōst.
+(759)  SENEX: nam rēs plūrimās pessimās, cum advenit, fert:
+(760)  SENEX: quās sī autumem omnīs, nimis longus sermōst.
+(761)  SENEX: sed haec rēs mihi in pectore et corde cūraest,
+(762)  SENEX: quidnam hoc sit negōtī, quod fīlia sīc
+(763)  SENEX: repente expetit mē, ut ad sēsē īrem.
+(763a)  SENEX: nec, quid id sit, mihī certius facit, quid
+(764)  SENEX: velit, quid mē accersat.
+(764a)  SENEX: vērum propemodum jam sciō, quid siet reī.
+(765)  SENEX: crēdō cum virō lītigium nātum esse aliquod.
+(766)  SENEX: ita istaec solent, quae virōs subservīre
+(767)  SENEX: sibī postulant, dōte frētae, ferōcēs.
+(768)  SENEX: et illī quoque haud abstinent saepe culpā.
+(769)  SENEX: vērum est modus tamen, quoad patī uxōrem oportet;
+(770)  SENEX: nec pol fīlia umquam patrem accersit ad sē,
+(771)  SENEX: nisi aut quid commissī aut jurgī est causa.
+(772)  SENEX: sed id quidquid est, jam sciam. atque eccam eampse
+(773)  SENEX: ante aedīs et ejus virum trīstem videō.
+(774)  SENEX: id est quod suspicābar.
+(775)  SENEX: appellābō hanc. Ībō adversum. salvē multum, mī pater.
+(776)  SENEX: Salva sīs. salvēn adveniō? salvēn accersī jubēs?
+(777)  SENEX: quid tū trīstis ēs? quid ille autem abs tē īrātus dēstitit?
+(778)  SENEX: nescioquid vōs vēlitātī estis inter vōs duōs.
+(779)  SENEX: loquere, uter meruistis culpam? paucīs, nōn longōs logōs.
+(780)  MATRONA: Nusquam equidem quicquam dēlīquī: hoc prīmum tē absolvō, pater.
+(781)  MATRONA: vērum vīvere hīc nōn possum neque dūrāre ūllō modō.
+(782)  MATRONA: proin tū mē hinc abdūcās. Quid istūc autem est? Lūdibriō, pater,
+(783)  MATRONA: habeor. Unde? Ab illō, cui mē mandāvistī, meō virō.
+(784)  SENEX: Ecce autem lītigium. quotiēns tandem ēdīxī tibi,
+(785)  SENEX: ut cavērēs, neuter ad mē īrētis cum querimōniā?
+(786)  MATRONA: Qui ego istūc, mī pater, cavēre possum? Mēn interrogās?
+(787)  MATRONA: Nisi nōn vīs. Quotiēns mōnstrāvī tibi, virō ut mōrem gerās,
+(789)  SENEX: quid ille faciat, ne id observēs, quo eat, quid rērum gerat.
+(790)  MATRONA: At enim ille hinc amat meretrīcem ex proximō. Sānē sapit,
+(791)  SENEX: atque ob istanc industriam etiam faxō amābit amplius.
+(792)  MATRONA: Atque ibi pōtat. Tuā quidem ille causā pōtābit minus,
+(793)  SENEX: sī illīc sīve alibī libēbit? quae haec, malum, impudentiast?
+(794)  SENEX: ūnā operā prohibēre, ad cēnam nē prōmittat, postulēs,
+(795)  SENEX: neu quemquam accipiāt aliēnum apud sē. servīrīn tibi
+(796)  SENEX: postulās virōs? dare ūnā operā pēnsum postulēs,
+(797)  SENEX: inter ancillās sedēre jubeās, lānam cārere.
+(798)  MATRONA: Nōn equidem mihi tē advocātum, pater, addūxī, sed virō.
+(799)  MATRONA: hinc stās, illim causam dīcis. Sī ille quid dēlīquerit,
+(800)  SENEX: multō tantā illum accūsābō, quam tē accūsāvī, amplius.
+(801)  SENEX: quandō tē aurātam et vestītam bene habet, ancillās penum
+(802)  SENEX: rēctē praehibet, melius sānam est, mulier, mentem sūmere.
+(803)  MATRONA: At ille suppīlat mihi aurum et pallās ex arcīs domō,
+(804)  MATRONA: mē dēspoliat, mea ōrnāmenta clam ad meretrīcēs dēgerit.
+(805)  SENEX: Male facit, sī istūc facit; sī nōn facit, tū male facis,
+(806)  SENEX: quae īnsontem īnsimulēs. Quīn etiam nunc habet pallam, pater,
+(807)  MATRONA: et spinter, quod ad hanc dētulerat, nunc, quia rescīvī, refert.
+(808)  SENEX: Jam ego ex hōc, ut factumst, scībō. ībō ad hominem atque alloquar.
+(809)  SENEX: dīc mi istūc, Menaechme, quod vōs dissertātis, ut sciam.
+(810)  SENEX: quid tū trīstis ēs? quid illa autem īrāta abs tē dēstitit?
+(811)  MENAECHMUS: Quisquis ēs, quidquid tibi nōmen est, senex, summum Jovem
+(812)  MENAECHMUS: deōsque dō testīs; Quā dē rē aut cujus reī rērum omnium?
+(813)  MENAECHMUS: Mē neque istī male fēcisse mulierī, quae mē arguit
+(814)  MENAECHMUS: hanc domō ab sē surrupuisse atque abstulisse– pejerat.
+(815)  MENAECHMUS: si ego intrā aedīs hujus umquam, ubi habitat, penetrāvī pedem,
+(817)  MENAECHMUS: omnium hominum exoptō ut fīam miserōrum miserrimus.
+(818)  SENEX: Sānun ēs, quī istūc exoptēs aut negēs tē umquam pedem
+(819)  SENEX: in eās aedīs intulisse ubi habitās, īnsānissime?
+(820)  MENAECHMUS: Tūn, senex, aīs habitāre mēd in illīsce aedibus?
+(821)  SENEX: Tūn negās? Negō hercle vērō. Immō hercle invērō negās;
+(822)  SENEX: nisi quō nocte hāc ēmigrāstis. concēde hūc, mia fīlia.
+(823)  SENEX: quid tu aīs? num hinc ēmigrāstis? Quem in locum aut quam ob rem, obsecrō?
+(824)  SENEX: Nōn edepol sciō. Profectō lūdit tē hic. nōn tū tenēs?
+(825)  SENEX: Jam vērō, Menaechme, satis jocātu's. nunc hanc rem gere.
+(826)  MENAECHMUS: Quaesō, quid mihi tēcum est? unde aut quis tū homō ēs?...
+(827)  MENAECHMUS: ...
+(828)  MENAECHMUS: tibi aut adeō istī, quae mihi molestiae est quōquō modō?
+(829)  MATRONA: Viden tu illīc oculōs virere ut viridis exoritur colōs
+(830)  MATRONA: ex temporibus atque fronte, ut oculī scintillant, vidē.
+(831)  MENAECHMUS: Quid mihi meliust, quam quandō illī mē īnsānīre praedicant,
+(832)  MENAECHMUS: ego mēd assimulem īnsānīre, ut illōs ā mē absterream?
+(833)  MATRONA: Ut pandiculāns ōscitātur. quid nunc faciam, mī pater?
+(834)  SENEX: Concēde hūc, mea nāta, ab istōc quam potest longissimē.
+(835)  MENAECHMUS: Euhoe Bacche, Bromie, quō mē in silvam vēnātum vocās?
+(836)  MENAECHMUS: audiō, sed nōn abīre possum ab hīs regiōnibus,
+(837)  MENAECHMUS: ita illa mē ab laevā rabiōsa fēmina asservat canēs,
+(838)  MENAECHMUS: poste autem ille Cercops alius, quī saepe aetāte in suā
+(839)  MENAECHMUS: perdidit cīvem innocentem falsō testimōniō.
+(840)  SENEX: Vae capitī tuō. Ecce, Apollō mī ex ōrāculō imperat,
+(841)  MENAECHMUS: ut ego illīc oculōs exūram lampadibus ārdentibus.
+(842)  MATRONA: Periī, mī pater, minātur mihi oculōs exūrere.
+(843)  MENAECHMUS: ei mihi, īnsānīre mē ajunt, ultrō cum ipsī īnsāniunt.
+(844)  SENEX: Fīlia, heus. Quid est? quid agimus? Quid sī ego hūc servōs citō?
+(845)  SENEX: ībō, addūcam quī hunc hinc tollant et domī dēvinciant,
+(846)  SENEX: prius quam turbārum quid faciat amplius. Enim haereō;
+(847)  MENAECHMUS: nī occupō aliquid mihi cōnsilium, hī domum mē ad sē auferent.
+(848)  MENAECHMUS: pugnīs mē votās in hujus ōre quicquam parcere,
+(849)  MENAECHMUS: nī ā meīs oculīs abscēdat in malam magnam crucem.
+(850)  MENAECHMUS: faciam quod jubēs, Apollō. Fuge domum, quantum potest,
+(851)  SENEX: nē hic tē obtundat. Fugiō. amābō, asservā istunc, mī pater,
+(852)  MATRONA: nē quō hinc abeat. sumne ego mulier misera, quae illaec audiō?
+(853)  MENAECHMUS: hau male, illanc āmōvī; ‹āmoveam› nunc hunc impūrissimum,
+(854)  MENAECHMUS: barbātum, tremulum Tītānum, quī cluet Cynos pater,
+(855)  MENAECHMUS: ita mihi imperās ut ego hujus membra atque ossa atque artua
+(856)  MENAECHMUS: comminuam illō scīpiōne quem ipse habet. Dabitur malum,
+(857)  SENEX: mē quidem sī attigeris aut sī propius ad mē accesseris.
+(858)  MENAECHMUS: Faciam quod jubēs; secūrim capiam ancipitem, atque hunc senem
+(859)  MENAECHMUS: osse fīnī dēdolābō assulātim vīscera.
+(860)  SENEX: Enim vērō illud praecavendum, atque accūrandumst mihi;
+(861)  SENEX: sānē ego illum metuō, ut minātur, nē quid male faxit mihi.
+(862)  MENAECHMUS: Multa mī imperās, Apollō: nunc equōs jūnctōs jubēs
+(863)  MENAECHMUS: capere mē indomitōs, ferōcīs, atque in currum īnscendere,
+(864)  MENAECHMUS: ut ego hunc prōteram leōnem vetulum, olentem, ēdentulum.
+(865)  MENAECHMUS: jam astitī in currum, jam lōra teneō, jam stimulum in manūst.
+(866)  MENAECHMUS: agite equī, facitōte sonitus ungulārum appāreat,
+(867)  MENAECHMUS: cursū celerī facite in flexū sit pedum pernīcitās.
+(868)  SENEX: Mihin equīs jūnctīs mināre? Ecce, Apollō, dēnuō
+(869)  MENAECHMUS: mē jubēs facere impetum in eum quī ‹ob›stat atque occīdere.
+(870)  MENAECHMUS: sed quis hic est quī mē capillō hinc dē currū dēripit?
+(871)  MENAECHMUS: imperium tuum dēmūtat atque ēdictum Apollinis.
+(872)  SENEX: Eu hercle morbum ācrem ac dūrum
+(872a)  SENEX: dī vestram fidem!
+(873)  SENEX: vel hic quī īnsānit, quam valuit paulō prius;
+(874)  SENEX: eī dērepente tantus morbus incidit.
+(875)  SENEX: ībō atque accersam medicum jam quantum potest.
+(876x) == Szene V.iii ==
+(876)  MENAECHMUS: Jamne istī abiērunt, quaesō, ex cōnspectū meō,
+(877)  MENAECHMUS: quī mē vī cōgunt, ut validus īnsāniam?
+(878)  MENAECHMUS: quid cessō abīre ad nāvem, dum salvō licet?
+(879)  MENAECHMUS: vōsque omnīs quaesō, sī senex revēnerit,
+(881)  MENAECHMUS: nī mē indicētis quā plateā hinc aufūgerim.
+(882)  SENEX: Lumbī sedendō, oculī spectandō dolent,
+(883)  SENEX: manendō medicum, dum sē ex opere recipiat.
+(884)  SENEX: odiōsus tandem vix ab aegrōtīs venit.
+(885)  SENEX: ait sē obligāsse crūs frāctum Aesculāpiō,
+(886)  SENEX: Apollinī autem bracchium. nunc cōgitō,
+(887)  SENEX: utrum mē dīcam dūcere medicum an fabrum.
+(888)  SENEX: atque eccum incēdit. move formīcīnum gradum.
+(889x) == Szene V.iv ==
+(889)  MEDICUS: quid esse illī morbī, dīxerās? nārrā, senex.
+(890)  MEDICUS: num lāruātust aut cerrītus? fac sciam.
+(891)  MEDICUS: num eum veternus aut aqua intercus tenet?
+(892)  SENEX: Quīn eā tē causā dūcō, ut id dīcās mihi
+(893)  SENEX: atque illum ut sānum faciās. Perfacile id quidemst.
+(894)  MEDICUS: sānum futūrum, meā ego id prōmittō fidē.
+(895)  SENEX: Magnā cum cūrā ego illum cūrārī volō.
+(896)  MEDICUS: Quīn suspīrābō plūs sēscenta in diē:
+(897)  MEDICUS: ita ego eum cum cūrā magnā cūrābō tibi.
+(898)  SENEX: Atque eccum ipsum hominem. observēmus, quam rem agat.
+(899x) == Szene V.v ==
+(899)  MENAECHMUS: Edepol nē hic diēs perversus atque adversus mī optigit.
+(900)  MENAECHMUS: quae mē clam ratus sum facere, ea omnia fēcit palam
+(901)  MENAECHMUS: parasītus, quī mē complēvit flāgitī et formīdinis,
+(902)  MENAECHMUS: meus Ulixēs, suō quī rēgī tantum concīvit malī.
+(903)  MENAECHMUS: quem ego hominem, siquidem vīvō, ēvolvam vītā suā
+(904)  MENAECHMUS: sed ego stultus sum, quī illīus esse dīcō, quae meast:
+(905)  MENAECHMUS: meō cibō et sūmptū ēducātust. animā prīvābō virum.
+(906)  MENAECHMUS: condignē autem haec meretrīx fēcit, ut mōs est meretrīcius:
+(907)  MENAECHMUS: quia rogō, palla ut referātur rūrsum ad uxōrem meam,
+(908)  MENAECHMUS: mihi sē ait dedisse. eu edepol ne ego homō vīvō miser
+(909)  SENEX: Audīn quae loquitur? Sē miserum praedicāt. Adeās velim.
+(910)  MEDICUS: Salvus sīs, Menaechme. quaesō, cūr apertās bracchium?
+(911)  MEDICUS: nōn tū scīs, quantum istī morbō nunc tuō faciās malī?
+(912)  MENAECHMUS: Quīn tū tē suspendis? Ecquid sentīs? Quidnī sentiam?
+(913)  MEDICUS: nōn potest haec rēs elleborī jungere optinērier
+(914)  MEDICUS: sed quid aīs, Menaechme? Quid vīs? Dīc mihi hoc quod tē rogō:
+(915)  MEDICUS: album an ātrum vīnum pōtās? Quīn tū īs in malam crucem?
+(916)  MEDICUS: Jam hercle occeptat īnsānīre prīmulum. Quīn tū rogās,
+(917)  MENAECHMUS: purpureum pānem an pūniceum soleam ego esse an lūteum?
+(918)  MENAECHMUS: soleamne esse avīs squāmōsās, piscīs pennātōs? Papae,
+(919)  SENEX: audīn tū ut dēlīrāmenta loquitur? quid cessās dare
+(921)  SENEX: pōtiōnis aliquid prius quam percipit īnsānia?
+(922)  MEDICUS: Mane modo, etiam percontābor alia. Occīdis fābulāns.
+(923)  MEDICUS: Dīc mihi hoc: solent tibi umquam oculī dūrī fīerī?
+(924)  MENAECHMUS: Quid? tū mē locustam cēnsēs esse, homō ignāvissime?
+(925)  MEDICUS: Dīc mihi: ēnumquam intestīna tibi crepant, quod sentiās?
+(926)  MENAECHMUS: Ubi satur sum, nūlla crepitant; quandō ēsuriō, tum crepant.
+(927)  MEDICUS: Hoc quidem edepol hau prō īnsānō verbum respondit mihi.
+(928)  MEDICUS: perdormīscīn usque ad lūcem? facilīn tū dormīs cubāns?
+(929)  MENAECHMUS: Perdormīscō, sī resolvī argentum cui dēbeō;
+(930)  MENAECHMUS: quī tē Juppiter dīque omnēs, percontātor, perduint.
+(931)  MEDICUS: Nunc homō īnsānīre occeptat: dē illīs verbīs cave tibi.
+(932)  SENEX: Immō Nestor nunc quidem est dē verbīs, praeut dūdum fuit;
+(933)  SENEX: nam dūdum uxōrem suam esse ajēbat rabiōsam canem.
+(934)  MENAECHMUS: Quid ego dīxī? Īnsānu's, inquam. Egone? Tū istic, quī mihi
+(935)  SENEX: etiam mē jūnctīs quadrīgīs minitātu's prōsternere.
+(936)  SENEX: egomet haec tē vīdī facere, egomet haec tēd arguō.
+(941)  MENAECHMUS: At ego tē sacram corōnam surrupuisse ajō Jovis
+(942)  MENAECHMUS: et ob eam rem in carcerem tēd esse compāctum sciō,
+(943)  MENAECHMUS: et postquam ēs ēmissus, caesum virgīs sub furcā sciō;
+(944)  MENAECHMUS: tum patrem occīdisse et mātrem vēndidisse etiam sciō.
+(945)  MENAECHMUS: satin haec prō sānō male dicta male dictīs respondeō?
+(946)  SENEX: Obsecrō hercle, medice, properē, quidquid factūru's, face.
+(947)  SENEX: nōn vidēs hominem īnsānīre? Scīn quid faciās optimum est?
+(948)  MEDICUS: ad mē face utī dēferātur. Itane cēnsēs? Quippinī?
+(949)  MEDICUS: ibi meō arbitrātū poterō cūrāre hominem. Age ut libet.
+(950)  MEDICUS: Elleborum pōtābis faxō aliquōs vīgintī diēs.
+(951)  MENAECHMUS: At ego tē pendentem fodiam stimulīs trīgintā diēs.
+(952)  MEDICUS: Ī, arcesse hominēs, quī illunc ad mē dēferant. Quot sunt satis?
+(953)  MEDICUS: Proinde ut īnsānīre videō, quattuor, nihilō minus.
+(954)  SENEX: Jam hīc erunt. asservā tū istunc, medice. Immō ībō domum,
+(955)  MEDICUS: ut pārentur quibus parātīs opus est. tū servōs jubē
+(956)  MEDICUS: hunc ad mē ferant. Jam ego illīc faxō erit. Abeō. Valē.
+(957)  MENAECHMUS: Abiit socerus, abiit medicus. sōlus sum. prō Juppiter,
+(958)  MENAECHMUS: quid illūc est quod mēd hīsce hominēs īnsānīre praedicant?
+(959)  MENAECHMUS: nam equidem, postquam gnātus sum, numquam aegrōtāvī ūnum diem,
+(960)  MENAECHMUS: neque ego īnsāniō neque pugnās neque ego lītīs coepiō.
+(961)  MENAECHMUS: salvus salvōs aliōs videō, novī ego hominēs, alloquor.
+(962)  MENAECHMUS: an illī perperam īnsānīre mē ajunt, ipsī īnsāniunt?
+(963)  MENAECHMUS: quid ego nunc faciam? domum īre coepiō: uxor nōn sinit;
+(964)  MENAECHMUS: hūc autem nēmō intrōmittit. nimis prōventum est nēquiter.
+(965)  MENAECHMUS: hīc erō usque: ad noctem saltem, crēdō, intrōmittar domum.
+(966x) == Szene V.vi ==
+(966)  MESSENIO SERVUS: Spectāmen bonō servō id est, quī rem erīlem
+(967)  MESSENIO SERVUS: prōcūrat, videt, collocat cōgitatque,
+(968)  MESSENIO SERVUS: ut absente erō tam rem erī dīligenter
+(969)  MESSENIO SERVUS: tūtētur, quam sī ipse assit aut rēctius.
+(970)  MESSENIO SERVUS: tergum quam gulam, crūra quam ventrem oportet
+(971)  MESSENIO SERVUS: potiōra esse, cui cor modestē situmst.
+(972)  MESSENIO SERVUS: recordētur id,
+(972a)  MESSENIO SERVUS: quī nihilī sunt, quid eīs pretī
+(973)  MESSENIO SERVUS: dētur ab suīs erīs, ignāvīs, improbīs virīs:
+(974)  MESSENIO SERVUS: verbera compedēs
+(975)  MESSENIO SERVUS: molae, lassitūdō famēs frīgus dūrum,
+(976)  MESSENIO SERVUS: haec pretia sunt ignāviae.
+(977)  MESSENIO SERVUS: id ego malum male metuō:
+(977a)  MESSENIO SERVUS: proptereā bonum esse certumst potius quam malum;
+(978)  MESSENIO SERVUS: nam magis multō patior facilius verba: verbera ego ōdī
+(979)  MESSENIO SERVUS: nimiōque edō libentius molitum, quam molitum praehibeō.
+(980)  MESSENIO SERVUS: proptereā erī imperium exsequor, bene et sēdātē servō id;
+(981)  MESSENIO SERVUS: atque mihi id prōdest.
+(982)  MESSENIO SERVUS: aliī ita ut in rem esse dūcunt, sint: ego ita erō ut mē esse oportet;
+(983)  MESSENIO SERVUS: id mihi adhibeam, culpam abstineam, erō ut omnibus in locis sim praestō:
+(983a)  MESSENIO SERVUS: [servī, quī cum culpā cārent metuunt, solent esse eris ūtibilēs.
+(983b)  MESSENIO SERVUS: nam illī, quī nīl metuunt, postquam mala prōmeritī, tunc eī metuunt.]
+(984)  MESSENIO SERVUS: metuam hau multum. prope est quandō erus ob facta pretium exsolvet.
+(985)  MESSENIO SERVUS: eō ego exemplō serviō,
+(985a)  MESSENIO SERVUS: tergī ut in rem esse arbitror.
+(986)  MESSENIO SERVUS: postquam in tabernam vāsa et servōs collocāvī, ut jusserat,
+(987)  MESSENIO SERVUS: ita veniō adversum. nunc forīs pultābō, adesse ut mē sciat,
+(988)  MESSENIO SERVUS: meumque erum ex hōc saltū damnī salvum ut ēdūcam forās.
+(989)  MESSENIO SERVUS: sed metuō, nē sērō veniam dēpugnātō proeliō.
+(990x) == Szene V.vii ==
+(990)  SENEX: Per ego vōbīs deōs atque hominēs dīcō, ut imperium meum
+(991)  SENEX: sapienter habeātis cūrae, quae imperāvī atque imperō:
+(992)  SENEX: facite illic homo jam in medicīnam ablātus sublīmem siet,
+(993)  SENEX: nisi quidem vōs vestra crūra aut latera nihilī penditis.
+(994)  SENEX: cave quisquam, quod illīc minitētur, vestrum floccī fēcerit.
+(995)  SENEX: quid stātis? quid dubitātis? jam sublīmem raptum oportuit.
+(996)  SENEX: ego ībō ad medicum: praestō erō illī, cum veniētis. Occidī,
+(997)  MENAECHMUS: quid hoc est negōtī? quid illīsce hominēs ad mē currunt, obsecrō?
+(998)  MENAECHMUS: quid vultis vōs? quid quaeritātis? quid mē circumsistitis?
+(999)  MENAECHMUS: quō rapitis mē? quō fertis mē? periī, obsecrō vestram fidem,
+(1000)  MENAECHMUS: Epidamniēnsēs, subvenīte, cīvēs. quīn mē mittitis?
+(1001)  MESSENIO SERVUS: Prō dī immortālēs, obsecrō, quid ego oculīs aspiciō meīs?
+(1002)  MESSENIO SERVUS: erum meum indignissimē Nescioquī sublīmem ferunt.
+(1003)  MENAECHMUS: Ecquis suppetiās mi audet ferre? Ego, ere, audācissimē.
+(1004)  MESSENIO SERVUS: ō facinus indignum et malum,
+(1004a)  MESSENIO SERVUS: Epidamniī cīvēs, erum
+(1005)  MESSENIO SERVUS: meum hīc in pācātō oppidō
+(1005a)  MESSENIO SERVUS: lūcī deripier in viā,
+(1006)  MESSENIO SERVUS: quī līber ad vōs vēnerit.
+(1007)  MESSENIO SERVUS: mittite istunc. Obsecrō tē, quisquis ēs, operam mihi ut dēs,
+(1008)  MENAECHMUS: neu sinās in mē īnsignītē fierī tantam injūriam.
+(1009)  MESSENIO SERVUS: Immō et operam dabō et dēfendam et subvenībō sēdulō.
+(1010)  MESSENIO SERVUS: numquam tē patiar perīre, mē perīrest aequius.
+(1011)  MESSENIO SERVUS: ēripe oculum istīc, ab umerō quī tenēt, ere, tē obsecrō.
+(1012)  MESSENIO SERVUS: hīsce ego jam sēmentem in ōre faciam pugnōsque obseram.
+(1013)  MESSENIO SERVUS: maximō hercle hodiē malō vestrō istunc fertis. mittite.
+(1014)  MENAECHMUS: Teneō ego huic oculum. Face ut oculī locus in capite appāreat.
+(1015)  MESSENIO SERVUS: vōs scelestī, vōs rapācēs, vōs praedōnēs. Periimus.
+(1016)  MESSENIO SERVUS: obsecrō hercle. Mittite ergō. Quid mē vōbīs tāctiōst?
+(1017)  MENAECHMUS: pecte pugnīs. Agite ābīte, fugite hinc in malam crucem.
+(1018)  MESSENIO SERVUS: em tibi etiam: quia postrēmus cēdis, hoc praemī ferēs.
+(1019)  MESSENIO SERVUS: nimis bene ōra commētāvī atque ex meā sententiā.
+(1020)  MESSENIO SERVUS: edepol, ere, nē tibi suppetiās temperī advēnī modo.
+(1021)  MENAECHMUS: At tibi dī semper, adulēscēns, quisquis ēs, faciant bene.
+(1022)  MENAECHMUS: nam absque tē esset, hodiē numquam ad sōlem occāsum vīverem.
+(1023)  MESSENIO SERVUS: Ergō edepol, sī rēctē faciās, ere, mēd ēmittās manū.
+(1024)  MENAECHMUS: Līberem ego tē? Vērum, quandoquidem, ere, tē servāvī. Quid est?
+(1025)  MENAECHMUS: adulēscēns, errās. Quid, errō? Per Jovem adjūrō patrem,
+(1026)  MENAECHMUS: mēd erum tuum nōn esse. Nōn tacēs? Nōn mentior;
+(1027)  MENAECHMUS: nec meus servus umquam tāle fēcit quāle tū mihi.
+(1028)  MESSENIO SERVUS: Sīc sine igitur, sī negās tuum mē esse abīre līberum.
+(1029)  MENAECHMUS: Meā quidem hercle causā līber estō atque ītō quō volēs.
+(1030)  MESSENIO SERVUS: Nempe jubēs? Jubeō hercle, sī quid imperī est in tē mihi.
+(1031)  MESSENIO SERVUS: Salvē, mī patrōne. cum tū līber ēs, Messēniō,
+(1032)  MESSENIO SERVUS: gaudeō. crēdō hercle vōbīs. sed, patrōne, tē obsecrō,
+(1033)  MESSENIO SERVUS: nē minus imperēs mihī quam cum tuus servus fuī.
+(1034)  MESSENIO SERVUS: apud tēd habitābō et quandō ībis, ūnā tēcum ībō domum.
+(1035)  MENAECHMUS: Minimē. Nunc ībō in tabernam, vāsa atque argentum tibi
+(1036)  MESSENIO SERVUS: referam. rēctē est obsignātum in vīdulō marsuppium
+(1037)  MESSENIO SERVUS: cum viāticō: id tibī jam hūc afferam. Affer strēnuē.
+(1038)  MESSENIO SERVUS: Salvum tibi ita ut mihi dedistī reddībō. hīc mē manē.
+(1039)  MENAECHMUS: Nimia mīra mihi quidem hodiē exorta sunt mīrīs modīs:
+(1040)  MENAECHMUS: aliī mē negant eum esse quī sum, atque exclūdunt forās
+(1040a)  MENAECHMUS: ...
+(1041)  MENAECHMUS: vel ille quī sē petere argentum modo, quī servum sē meum
+(1042)  MENAECHMUS: esse ajēbat, ‹mēd erum suum,› quem ego modo ēmīsī manū;
+(1043)  MENAECHMUS: is ait sē mihi allātūrum cum argentō marsuppium:
+(1044)  MENAECHMUS: id sī attulerit, dicam ut ā mē abeat līber quō volet,
+(1045)  MENAECHMUS: nē tum, quandō sānus factus sīt, ā mē argentum petat.
+(1046)  MENAECHMUS: socer et medicus mē īnsānīre ajēbant. quid sit, mīra sunt.
+(1047)  MENAECHMUS: haec nihilō esse mihi videntur sētius quam somnia.
+(1048)  MENAECHMUS: nunc ībō intrō ad hanc meretrīcem, quamquam suscēnset mihi,
+(1049)  MENAECHMUS: sī possum exōrāre ut pallam reddat, quam referam domum.
+(1050x) == Szene V.viii ==
+(1050)  MENAECHMUS (SOSICLES): Mēn hodiē usquam convēnisse tē, audāx, audēs dīcere
+(1051)  MENAECHMUS (SOSICLES): postquam adversum mī imperāvī ut hūc venīrēs? Quīn modo
+(1052)  MESSENIO SERVUS: ēripuī, hominēs quī ferēbant tē sublīmem quattuor,
+(1053)  MESSENIO SERVUS: apud hāsce aedīs. tū clāmābās deum fidem atque hominum omnium,
+(1054)  MESSENIO SERVUS: cum ego accurrō tēque ēripiō vī pugnandō ingrātiīs.
+(1055)  MESSENIO SERVUS: ob eam rem, quia tē servāvī, mē āmīsistī līberum.
+(1056)  MESSENIO SERVUS: cum argentum dīxī mē petere et vāsa, tū quantum potest
+(1057)  MESSENIO SERVUS: praecucurristī obviam, ut quae fēcistī īnfitiās eās.
+(1058)  MENAECHMUS (SOSICLES): Līberum ego tē jussī abīre? Certō. Quīn certissimumst,
+(1059)  MENAECHMUS (SOSICLES): mēpte potius fierī servum, quam tē umquam ēmittam manū.
+(1060x) == Szene V.ix ==
+(1060)  MENAECHMUS: Sī vultis per oculōs jūrāre, nihilō hercle eā causā magis
+(1061)  MENAECHMUS: faciētis. ut ego ‹hinc› hodie abstulerīm pallam et spinter, pessimae
+(1062)  MESSENIO SERVUS: Prō dī immortālēs, quid ego videō? Quid vidēs? Speculum tuum
+(1063)  MENAECHMUS (SOSICLES): Quid negōtī est? Tuast imāgō. tam cōnsimilest quam potest.
+(1064)  MENAECHMUS (SOSICLES): Pol profectō haud est dissimilis, meam cum fōrmam nōscitō.
+(1065)  MENAECHMUS: O adulēscēns, salvē, quī mē servāvistī, quisquis ēs.
+(1066)  MESSENIO SERVUS: Adulēscēns, quaesō hercle ēloquere tuum mihi nōmen, nisi piget.
+(1067)  MENAECHMUS: Nōn edepol ita prōmeruistī dē mē, ut pigeat, quae velīs
+(1068)  MENAECHMUS: obsequī. mihi est Menaechmō nōmen. Immō edepol mihi.
+(1069)  MENAECHMUS: Siculus sum Syrācūsānus. Ea dous et patria est mihi.
+(1070)  MENAECHMUS: Quid ego ex tē audiō? Hoc quod rēs est. Nōvī equidem hunc: erus est meus.
+(1071)  MESSENIO SERVUS: ego quidem hujus servus sum, sed mēd esse hujus crēdidī.
+(1072)  MESSENIO SERVUS: ego hunc cēnsēbam tē esse, hūīc etiam exhibuī negōtium.
+(1073)  MESSENIO SERVUS: quaesō ignōscās, sī quid stultē dīxī atque imprūdēns tibi.
+(1074)  MENAECHMUS (SOSICLES): Dēlīrāre mihi vidēre: nōn commeministī, simul
+(1075)  MENAECHMUS (SOSICLES): tē hodiē mēcum exīre ex nāvī? Enim vērō aequum postulās.
+(1076)  MESSENIO SERVUS: tu erus ēs: tū servum quaere. tū salvētō: tū valē.
+(1077)  MESSENIO SERVUS: hunc ego esse ajō Menaechmum. At ego mē. Quae haec fābulast?
+(1078)  MENAECHMUS (SOSICLES): tū ēs Menaechmus? Mē esse dīcō, Moschō prōgnātum patre.
+(1079)  MENAECHMUS (SOSICLES): Tūn meō patre ēs prōgnātus? Immō equidem, adulēscēns, meō;
+(1080)  MENAECHMUS: tuum tibī neque occupāre neque praeripere postulō.
+(1081)  MESSENIO SERVUS: Dī immortālēs, spem īnspērātam date mihī quam suspicō.
+(1082)  MESSENIO SERVUS: nam nisi mē animus fallit, hī sunt geminī germānī duo.
+(1083)  MESSENIO SERVUS: nam et patriam et patrem commemorant pariter quae fuerint sibi.
+(1084)  MESSENIO SERVUS: sēvocābō erum. Menaechme. Quid vīs? Nōn ambōs volō,
+(1085)  MESSENIO SERVUS: sed uter vestrōrum est advectus mēcum nāvī. Nōn ego.
+(1086)  MENAECHMUS (SOSICLES): At ego. Tē volō igitur. hūc concēde. Concessī. quid est?
+(1087)  MESSENIO SERVUS: Illic homō aut sȳcophanta aut geminus est frāter tuus.
+(1088)  MESSENIO SERVUS: nam ego hominem hominis similiōrem numquam vīdī alterum.
+(1089)  MESSENIO SERVUS: neque aqua aquae nec lacte est lactis, crēde mī, usquam similius,
+(1090)  MESSENIO SERVUS: quam hic tuī est, tūque hujus autem; postē eandem patriam ac patrem
+(1091)  MESSENIO SERVUS: memorat. meliust nōs adīre atque hunc percontārier.
+(1092)  MENAECHMUS (SOSICLES): Hercle quī tū mē admonuistī rēctē, et habeō grātiam.
+(1093)  MENAECHMUS (SOSICLES): perge operam dare, obsecrō hercle; līber estō, sī invenīs
+(1094)  MENAECHMUS (SOSICLES): hunc meum frātrem esse. Spērō. Et ego item spērō fore.
+(1095)  MESSENIO SERVUS: Quid aīs tū? Menaechmum, opīnor, tē vocārī dīxerās.
+(1096)  MENAECHMUS: Ita vērō. Huic item Menaechmō nōmen est. in Siciliā
+(1097)  MESSENIO SERVUS: tē Syrācūsīs nātum esse dīxtī: et hic nātust ibi.
+(1098)  MESSENIO SERVUS: Moschum tibi patrem fuisse dīxtī: hūīc itidem fuit.
+(1099)  MESSENIO SERVUS: nunc operam potestis ambō mihi dare et vōbīs simul.
+(1100)  MENAECHMUS: Prōmeruistī ut nē quid ōrēs quod velīs, quīn impetrēs.
+(1101)  MENAECHMUS: tam quasi mē ēmerīs argentō, līber servībō tibi.
+(1102)  MESSENIO SERVUS: Spēs mihi est, vōs inventūrum frātrēs germānōs duōs
+(1103)  MESSENIO SERVUS: geminōs, ūnā mātre nātōs et patre ūnō ūnō diē.
+(1104)  MENAECHMUS: Mīra memorās. utinam efficere quod pollicitu's possiēs.
+(1105)  MESSENIO SERVUS: Possum. sed nunc agite uterque id quod rogābō dīcite.
+(1106)  MENAECHMUS: Ubi libet, roga: respondēbō. nīl reticēbō quod sciam.
+(1107)  MESSENIO SERVUS: Est tibi nōmen Menaechmō? Fateor. Est itidem tibi?
+(1108)  MENAECHMUS (SOSICLES): Est. Patrem fuisse Moschum tibi aīs? Ita vērō. Et mihi.
+(1109)  MESSENIO SERVUS: Ēsne tū Syrācūsānus? Certō. Quid tū? Quippinī?
+(1110)  MESSENIO SERVUS: Optimē usque adhūc conveniunt signa. porrō operam date.
+(1111)  MESSENIO SERVUS: quid longissimē meministī, dīc mihi, in patriā tuā?
+(1112)  MENAECHMUS: Cum patre ut abiī Tarentum ad mercātum, posteā
+(1113)  MENAECHMUS: inter hominēs mē dēerrāre ā patre atque inde āvehī.
+(1114)  MENAECHMUS (SOSICLES): Juppiter suprēme, servā mē. Quid clāmās? quīn tacēs?
+(1115)  MESSENIO SERVUS: quot erās annōs gnātus, cum tē pater ā patriā āvehit?
+(1116)  MENAECHMUS: Septuennis: nam tunc dentēs mihi cadēbant prīmulum.
+(1117)  MENAECHMUS: neque patrem postillāc umquam vīdī. Quid? vōs tum patrī
+(1118)  MESSENIO SERVUS: fīliī quot erātis? Ut nunc maximē meminī, duo.
+(1119)  MESSENIO SERVUS: Uter erātis, tūn an ille, major? Aequē ambō parēs.
+(1120)  MESSENIO SERVUS: Quī id potest? Geminī ambō erāmus. Dī mē servātum volunt.
+(1121)  MESSENIO SERVUS: Sī interpellās, ego tacēbō potius. Taceō. Dīc mihi:
+(1122)  MESSENIO SERVUS: ūnō nōmine ambō erātis? Minimē. nam mihi hoc erat,
+(1123)  MENAECHMUS: quod nunc est, Menaechmō: illum tum vocābant Sōsiclem.
+(1124)  MENAECHMUS (SOSICLES): Signa agnōvī, continērī quīn complectar nōn queō.
+(1125)  MENAECHMUS (SOSICLES): mī germāne gemine frāter, salvē. ego sum Sosiclēs.
+(1126)  MENAECHMUS: Quō modo igitur post Menaechmō nōmen est factum tibi?
+(1127)  MENAECHMUS (SOSICLES): Postquam ad nōs renūntiātum est tē et patrem esse mortuum,
+(1128)  MENAECHMUS (SOSICLES): avus noster mūtāvit: quod tibi nōmen est, fēcit mihi.
+(1129)  MENAECHMUS: Crēdō ita esse factum ut dīcis. sed mī hoc respondē. Rogā.
+(1131)  MENAECHMUS: Quid erat nōmēn nostrae mātrī? Teuximarchae. Convenit.
+(1132)  MENAECHMUS: ō salvē, īnspērāte multīs annīs post quem cōnspicor.
+(1133)  MENAECHMUS (SOSICLES): Frāter, et tū, quem ego multīs miseriīs labōribus
+(1134)  MENAECHMUS (SOSICLES): usque adhūc quaesīvī quemque ego esse inventum gaudeō.
+(1135)  MESSENIO SERVUS: Hoc erat, quod haec tē meretrīx hujus vocābat nōmine:
+(1136)  MESSENIO SERVUS: hunc cēnsēbat tē esse, crēdō, cum vocat tē ad prandium.
+(1137)  MENAECHMUS: Namque edepōl hīc mi hodiē jussī prandium apparārier,
+(1138)  MENAECHMUS: clam meam uxōrem, cui pallam surrupuī dūdum domō,
+(1139)  MENAECHMUS: eam dedī huic. Hanc, dīcis, frāter, pallam, quam ego habeō? ‹Haec east.›
+(1140)  MENAECHMUS: quō modō haec ad tē pervēnit? Meretrīx hūc ad prandium
+(1141)  MENAECHMUS (SOSICLES): mē abdūxit, mē sibi dedisse ajēbat. prandī perbene,
+(1142)  MENAECHMUS (SOSICLES): pōtāvī atque accubuī scortum, pallam et aurum hoc abstulī.
+(1143)  MENAECHMUS: Gaudeō edepol, sī quid propter mē tibi ēvēnit bonī.
+(1144)  MENAECHMUS: nam illa cum tē ad sē vocābat, mēmet esse crēdidit.
+(1146)  MESSENIO SERVUS: Numquid mē morāre quīn ego līber, ut jūstī, siem?
+(1147)  MENAECHMUS: Optimum atque aequissimum ōrat, frāter: fac causā meā.
+(1148)  MENAECHMUS (SOSICLES): Līber estō. Cum tū ēs līber, gaudeō, Messēniō.
+(1149)  MESSENIO SERVUS: Sed meliōrest opus auspiciō, ut līber perpetuō siem.
+(1151)  MENAECHMUS (SOSICLES): Quoniam haec ēvēnēre, frāter, nōbīs ex sententiā,
+(1152)  MENAECHMUS (SOSICLES): in patriam redeāmus ambō. Frāter, faciam, ut tū volēs.
+(1153)  MENAECHMUS: auctiōnem hīc faciam et vēndam quidquid est. nunc interim
+(1154)  MENAECHMUS: eāmus intrō, frāter. Fīat. Scītin quid ego vōs rogō?
+(1155)  MENAECHMUS: Quid? Praecōnium mī ut dētis. Dabitur. Ergō nūnciam
+(1156)  MESSENIO SERVUS: vīs conclāmārī auctiōnem Fore quidem diē septimī.
+(1157)  MESSENIO SERVUS: Auctiō fīet Menaechmī māne sānē septimī.
+(1158)  MESSENIO SERVUS: vēnībunt servī, supellēx, fundī, aedēs, omnia.
+(1159)  MESSENIO SERVUS: vēnībunt quīquī licēbunt, praesentī pecūniā.
+(1160)  MESSENIO SERVUS: vēnībit– uxor quoque etiam, sī quis ēmptor vēnerit.
+(1161)  MESSENIO SERVUS: vix crēdō tōtā auctiōne capiet quinquāgēsiēs.
+(1162)  MESSENIO SERVUS: nunc, spectātōrēs, valēte et nōbīs clārē plaudite.

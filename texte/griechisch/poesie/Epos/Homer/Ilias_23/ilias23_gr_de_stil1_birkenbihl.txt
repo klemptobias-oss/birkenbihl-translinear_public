@@ -1,0 +1,1795 @@
+==== Ilias 23 ====
+(1) ὣς(Adv) οἳ(Pr)(N) μὲν(Pt) στενάχοντο(Imp)(M/P) κατὰ(Prp) πτόλιν(A)· αὐτὰρ(Kon) Ἀχαιοὶ(N)
+(1) so sie aber seufzten hinab|durch Stadt· aber Achäer
+(2) ἦ(Pt) ἐ(Pt) πεὶ(Kon) δὴ(Pt) νῆας(A) τε(Pt) καὶ(Kon) Ἑλλήσποντον(A) ἵκοντο(AorS)(M/P),
+(2) ja dann als eben Schiffe auch und Hellespont kamen|sie,
+(3) οἳ(Pr)(N) μὲν(Pt) ἄρʼ(Pt) ἐσκίδναντο(Imp)(M/P) ἑὴν(Adj)(A) ἐπὶ(Prp) νῆα(A) ἕκαστος(N),
+(3) sie aber nun zerstreuten|sich seine|eigene zu Schiff jeder,
+(4) Μυρμιδόνας(A) δʼ(Pt) οὐκ(Pt) εἴα(Imp)(Akt) ἀποσκίδνασθαι(Prä)(M/P)(Inf) Ἀχιλλεύς(N),
+(4) Myrmidonen aber nicht ließ weg|zerstreuen Achilleus,
+(5) ἀλλʼ(Kon) ὅ(Pr)(N) γε(Pt) οἷς(Pr)(D) ἑτάροισι(D) φιλοπτολέμοισι(Adj)(D) μετηύδα(Aor)(Akt)·
+(5) sondern er|aber ja zu|denen Gefährten kampf|liebenden sprach|er·
+(6) Μυρμιδόνες(V) ταχύπωλοι(Adj)(V) ἐμοὶ(Pr)(D) ἐρίηρες(Adj)(V) ἑταῖροι(V)
+(6) Myrmidonen schnell|rossige mir treue Gefährten
+(7) μὴ(Pt) δή(Pt) πω(Pt) ὑπʼ(Prp) ὄχεσφι(D) λυώμεθα(Prä)(M/P)(Knj) μώνυχας(Adj)(A) ἵππους(A),
+(7) nicht ja noch von|unter Wagen lösen|wir ein|huf|ige Pferde,
+(8) ἀλλʼ(Kon) αὐτοῖς(Pr)(D) ἵπποισι(D) καὶ(Kon) ἅρμασιν(D) ἆσσον(Adv) ἰόντες(Prä)(Akt)(N)
+(8) sondern mit|den|selben Pferden und Wagen näher gehend
+(9) Πάτροκλον(A) κλαίωμεν(Prä)(Akt)(Knj)· ὃ(Pr)(N) γὰρ(Pt) γέρας(N) ἐστὶ(Prä)(Akt) θανόντων(AorS)(Akt)(G).
+(9) Patroklos beweinen|wir· dies denn Ehrengabe ist der|Gestorbenen.
+(10) αὐτὰρ(Kon) ἐπεί(Kon) κʼ(Pt) ὀλοοῖο(Adj)(G) τεταρπώμεσθα(Per)(M/P)(Knj) γόοιο(G),
+(10) aber wenn wohl verderblichen uns|gesättigt|haben des|Klagens,
+(11) ἵππους(A) λυσάμενοι(Aor)(Med)(N) δορπήσομεν(Fu)(Akt) ἐνθάδε(Adv) πάντες(N).
+(11) Pferde gelöst|habend werden|schmausen hier alle.
+(12) ὣς(Adv) ἔφαθʼ(Imp)(M/P), οἳ(Pr)(N) δʼ(Pt) ᾤμωξαν(Aor)(Akt) ἀολλέες(Adj)(N), ἦρχε(Imp)(Akt) δʼ(Pt) Ἀχιλλεύς(N).
+(12) so sprach|er, sie aber heulten zusammen|gedrängt, führte|an aber Achilleus.
+(13) οἳ(Pr)(N) δὲ(Pt) τρὶς(Adv) περὶ(Prp) νεκρὸν(A) ἐΰτριχας(Adj)(A) ἤλασαν(Aor)(Akt) ἵππους(A)
+(13) sie aber dreimal um Leichnam wohl|mähnige trieben Pferde
+(14) μυρόμενοι(Prä)(M/P)(N)· μετὰ(Prp) δέ(Pt) σφι(Pr)(D) Θέτις(N) γόου(G) ἵμερον(A) ὦρσε(Aor)(Akt).
+(14) weinend· unter aber ihnen Thetis des|Klagens Sehnsucht erregte.
+(15) δεύοντο(Imp)(M/P) ψάμαθοι(N), δεύοντο(Imp)(M/P) δὲ(Pt) τεύχεα(N) φωτῶν(G)
+(15) benetzten|sich Sande, benetzten|sich aber Waffen|rüstungen der|Männer
+(16) δάκρυσι(D)· τοῖον(Adj)(A) γὰρ(Pt) πόθεον(Imp)(Akt) μήστωρα(A) φόβοιο(G).
+(16) mit|Tränen· solch|einen denn verlangten Lenker des|Schreckens.
+(17) τοῖσι(Pr)(D) δὲ(Pt) Πηλεΐδης(N) ἁδινοῦ(Adj)(G) ἐξῆρχε(Imp)(Akt) γόοιο(G)
+(17) ihnen aber Pelei|des|Sohn dichten hob|an des|Klagens
+(18) χεῖρας(A) ἐπʼ(Prp) ἀνδροφόνους(Adj)(A) θέμενος(Aor)(Med)(N) στήθεσσιν(D) ἑταίρου(G)·
+(18) Hände auf männer|tötende gelegt|habend Brüsten des|Gefährten·
+(19) χαῖρέ(Prä)(Akt)(Imv) μοι(Pr)(D) ὦ(ij) Πάτροκλε(V) καὶ(Kon) εἰν(Prp) Ἀΐδαο(G) δόμοισι(D)·
+(19) sei|gegrüßt mir o Patroklos und in des|Hades Hallen·
+(20) πάντα(A) γὰρ(Pt) ἤδη(Adv) τοι(Pr)(D) τελέω(Prä)(Akt) τὰ(Art)(A) πάροιθεν(Adv) ὑπέστην(AorS)(Akt)
+(20) alles denn schon dir vollende die vorher versprach|ich
+(21) Ἕκτορα(A) δεῦρʼ(Adv) ἐρύσας(Aor)(Akt)(N) δώσειν(Fu)(Akt)(Inf) κυσὶν(D) ὠμὰ(A) δάσασθαι(Aor)(Med)(Inf),
+(21) Hektor hierher geschleift|habend geben|zu Hunden rohes zu|verteilen|sich,
+(22) δώδεκα(Adj) δὲ(Pt) προπάροιθε(Adv) πυρῆς(G) ἀποδειροτομήσειν(Fu)(Akt)(Inf)
+(22) zwölf aber vor|weg des|Scheiterhaufens ab|Hals|schneiden|werden
+(23) Τρώων(G) ἀγλαὰ(Adj)(A) τέκνα(A) σέθεν(Pr)(G) κταμένοιο(Aor)(Med)(G) χολωθείς(Aor)(Pas)(N).
+(23) der|Troer glänzende Kinder deiner des|von|dir|Erschlagenen erzürnt|worden.
+(24) ἦ(Pt) ῥα(Pt) καὶ(Kon) Ἕκτορα(A) δῖον(Adj)(A) ἀεικέα(Adj)(A) μήδετο(Imp)(Med) ἔργα(A)
+(24) ja doch auch Hektor göttlichen schändliche sann Taten
+(25) πρηνέα(Adj)(A) πὰρ(Prp) λεχέεσσι(D) Μενοιτιάδαο(G) τανύσσας(Aor)(Akt)(N)
+(25) bäuchlings neben Lager|stätten des|Menoitiaden ausgestreckt|habend
+(26) ἐν(Prp) κονίῃς(D)· οἳ(Pr)(N) δʼ(Pt) ἔντεʼ(A) ἀφωπλίζοντο(Imp)(M/P) ἕκαστος(Adj)(N)
+(26) in Staub· sie aber Waffen ent|waffneten|sich jeder
+(27) χάλκεα(Adj)(A) μαρμαίροντα(Prä)(Akt)(A), λύον(Imp)(Akt) δʼ(Pt) ὑψηχέας(Adj)(A) ἵππους(A),
+(27) bronzene schimmernde, lösten aber hoch|tönende Pferde,
+(28) κὰδ(Adv) δʼ(Pt) ἷζον(Imp)(Akt) παρὰ(Prp) νηῒ(D) ποδώκεος(Adj)(G) Αἰακίδαο(G)
+(28) hin|nieder aber setzten|sich neben dem|Schiff schnell|füßigen des|Aïakiden
+(29) μυρίοι(N)· αὐτὰρ(Kon) ὃ(Pr)(N) τοῖσι(Pr)(D) τάφον(A) μενοεικέα(Adj)(A) δαίνυ(Imp)(Akt).
+(29) zahllose· aber er ihnen Leichen|mahl genehmen bereitete.
+(30) πολλοὶ(Adj)(N) μὲν(Pt) βόες(N) ἀργοὶ(Adj)(N) ὀρέχθεον(Imp)(M/P) ἀμφὶ(Prp) σιδήρῳ(D)
+(30) viele zwar Rinder glänzende wurden|ausgestreckt um Eisen
+(31) σφαζόμενοι(Prä)(M/P)(N), πολλοὶ(Adj)(N) δʼ(Pt) ὄϊες(N) καὶ(Kon) μηκάδες(Adj)(N) αἶγες(N)·
+(31) schlachtend|seiend, viele aber Schafe und meckernde Ziegen·
+(32) πολλοὶ(Adj)(N) δʼ(Pt) ἀργιόδοντες(Adj)(N) ὕες(N) θαλέθοντες(Prä)(Akt)(N) ἀλοιφῇ(D)
+(32) viele aber weiß|zähnige Eber strotzend von|Fett
+(33) εὑόμενοι(Prä)(M/P)(N) τανύοντο(Imp)(M/P) διὰ(Prp) φλογὸς(G) Ἡφαίστοιο(G)·
+(33) sich|einfettend streckten|sich durch der|Flamme des|Hephaistos·
+(34) πάντῃ(Adv) δʼ(Pt) ἀμφὶ(Prp) νέκυν(A) κοτυλήρυτον(Adj)(A) ἔρρεεν(Imp)(Akt) αἷμα(N).
+(34) überall aber um Leichnam becher|gegossenes floß Blut.
+(35) αὐτὰρ(Kon) τόν(Pr)(A) γε(Pt) ἄνακτα(A) ποδώκεα(Adj)(A) Πηλεΐωνα(A)
+(35) aber den ja Fürsten schnell|füßigen Peleion
+(36) εἰς(Prp) Ἀγαμέμνονα(A) δῖον(Adj)(A) ἄγον(Imp)(Akt) βασιλῆες(N) Ἀχαιῶν(G)
+(36) zu Agamemnon göttlichen führten Könige der|Achaier
+(37) σπουδῇ(D) παρπεπιθόντες(Aor)(Akt)(N) ἑταίρου(G) χωόμενον(Prä)(M/P)(A) κῆρ(A).
+(37) mit|Eifer überredet|habend des|Gefährten zürnend Herz.
+(38) οἳ(Pr)(N) δʼ(Pt) ὅτε(Kon) δὴ(Pt) κλισίην(A) Ἀγαμέμνονος(G) ἷξον(AorS)(Akt) ἰόντες(Prä)(Akt)(N),
+(38) sie aber als ja Zelt des|Agamemnons kamen gehend,
+(39) αὐτίκα(Adv) κηρύκεσσι(D) λιγυφθόγγοισι(Adj)(D) κέλευσαν(Aor)(Akt)
+(39) sogleich den|Herolden hell|stimmigen befahlen
+(40) ἀμφὶ(Prp) πυρὶ(D) στῆσαι(AorS)(Akt)(Inf) τρίποδα(A) μέγαν(Adj)(A), εἰ(Kon) πεπίθοιεν(Per)(Akt)(Op)
+(40) um das|Feuer aufzustellen Dreifuß großen, wenn überzeugt|haben|würden
+(41) Πηλεΐδην(A) λούσασθαι(Aor)(Med)(Inf) ἄπο(Prp) βρότον(A) αἱματόεντα(Adj)(A).
+(41) Pelei|den zu|baden|sich ab|von Blutfleisch blut|triefendes.
+(42) αὐτὰρ(Kon) ὅ(Pr)(N) γʼ(Pt) ἠρνεῖτο(Imp)(M/P) στερεῶς(Adv), ἐπὶ(Prp) δʼ(Pt) ὅρκον(A) ὄμοσσεν(Aor)(Akt)·
+(42) aber er ja weigerte|sich fest, auf aber Eid schwor·
+(43) οὐ(Pt) μὰ(Pt) Ζῆνʼ(A), ὅς(Pr)(N) τίς(Pr)(N) τε(Pt) θεῶν(G) ὕπατος(Adj)(N) καὶ(Kon) ἄριστος(Adj)(N),
+(43) nicht bei Zeus, der wer auch der|Götter oberster und bester,
+(44) οὐ(Pt) θέμις(N) ἐστὶ(Prä)(Akt) λοετρὰ(A) καρήατος(G) ἆσσον(Adv) ἱκέσθαι(AorS)(M/P)(Inf)
+(44) nicht rechtens ist Waschungen des|Hauptes näher zu|kommen
+(45) πρίν(Kon) γʼ(Pt) ἐνὶ(Prp) Πάτροκλον(A) θέμεναι(Aor)(Med)(Inf) πυρὶ(D) σῆμά(A) τε(Pt) χεῦαι(Aor)(Akt)(Inf)
+(45) bevor ja in Patroklos zu|legen aufs|Feuer Grab|zeichen auch zu|schütten
+(46) κείρασθαί(Aor)(Med)(Inf) τε(Pt) κόμην(A), ἐπεὶ(Kon) οὔ(Pt) μʼ(Pr)(A) ἔτι(Adv) δεύτερον(Adv) ὧδε(Adv)
+(46) zu|scheren|sich auch Haar, da nicht mich mehr zum|zweiten|Mal so
+(47) ἵξετʼ(Fu)(M/P) ἄχος(N) κραδίην(A) ὄφρα(Kon) ζωοῖσι(D) μετείω(Prä)(Akt).
+(47) wird|kommen Schmerz das|Herz solange bei|den|Lebenden ich|weile.
+(48) ἀλλʼ(Kon) ἤτοι(Pt) νῦν(Adv) μὲν(Pt) στυγερῇ(Adj)(D) πειθώμεθα(Prä)(M/P)(Knj) δαιτί(D)·
+(48) sondern freilich jetzt zwar verhassten gehorchen|wir dem|Mahl·
+(49) ἠῶθεν(Adv) δʼ(Pt) ὄτρυνον(Prä)(Akt) ἄναξ(N) ἀνδρῶν(G) Ἀγάμεμνον(N)
+(49) am|Morgen aber treibe|an Fürst der|Männer Agamemnon
+(50) ὕλην(A) τʼ(Pt) ἀξέμεναι(Fu)(Akt)(Inf) παρά(Prp) τε(Pt) σχεῖν(AorS)(Akt)(Inf) ὅσσʼ(Pr)(A) ἐπιεικὲς(Adj)(N)
+(50) Holz auch zu|holen bei|her auch zu|haben so|viel geziemend
+(51) νεκρὸν(A) ἔχοντα(Prä)(Akt)(A) νέεσθαι(Prä)(M/P)(Inf) ὑπὸ(Prp) ζόφον(A) ἠερόεντα(Adj)(A),
+(51) den|Toten haltend zu|gehen unter Dunst nebeligen,
+(52) ὄφρʼ(Kon) ἤτοι(Pt) τοῦτον(Pr)(A) μὲν(Pt) ἐπιφλέγῃ(Prä)(Akt)(Knj) ἀκάματον(Adj)(A) πῦρ(N)
+(52) damit freilich diesen zwar über|brenne unermüdliches Feuer
+(53) θᾶσσον(Adv) ἀπʼ(Prp) ὀφθαλμῶν(G), λαοὶ(N) δʼ(Pt) ἐπὶ(Prp) ἔργα(A) τράπωνται(Aor)(Med)(Knj).
+(53) schneller von den|Augen, Leute aber zu Arbeiten mögen|sich|wenden.
+(54) ὣς(Adv) ἔφαθʼ(Imp)(M/P), οἳ(Pr)(N) δʼ(Pt) ἄρα(Pt) τοῦ(Pr)(G) μάλα(Adv) μὲν(Pt) κλύον(Imp)(Akt) ἠδὲ(Kon) πίθοντο(Aor)(Med).
+(54) so sprach|er, sie aber doch dessen sehr zwar hörten und gehorchten.
+(55) ἐσσυμένως(Adv) δʼ(Pt) ἄρα(Pt) δόρπον(A) ἐφοπλίσσαντες(Aor)(Akt)(N) ἕκαστοι(N)
+(55) eilends aber doch Abend|mahl aus|gerüstet|habend je|ein|jeder
+(56) δαίνυντʼ(Imp)(M/P), οὐδέ(Pt) τι(Pr)(A) θυμὸς(N) ἐδεύετο(Imp)(M/P) δαιτὸς(G) ἐΐσης(Adj)(G).
+(56) schmausten|sie, und|nicht|einmal irgend|etwas der|Sinn entbehrte des|Mahles gleichen.
+(57) αὐτὰρ(Kon) ἐπεὶ(Kon) πόσιος(G) καὶ(Kon) ἐδητύος(G) ἐξ(Prp) ἔρον(A) ἕντο(Aor)(Med),
+(57) aber als des|Tranks und der|Speise aus Verlangen legten|sie|ab,
+(58) οἳ(Pr)(N) μὲν(Pt) κακκείοντες(Prä)(Akt)(N) ἔβαν(AorS)(Akt) κλισίην(A) δὲ(Pt) ἕκαστος(N),
+(58) sie zwar hin|nieder|liegend gingen zur|Hütte aber jeder,
+(59) Πηλεΐδης(N) δʼ(Pt) ἐπὶ(Prp) θινὶ(D) πολυφλοίσβοιο(G) θαλάσσης(G)
+(59) der|Peleide aber auf der|Düne der|viel|rauschenden des|Meeres
+(60) κεῖτο(Imp)(M/P) βαρὺ(Adv) στενάχων(Prä)(Akt)(N) πολέσιν(D) μετὰ(Prp) Μυρμιδόνεσσιν(D)
+(60) lag schwer seufzend mit|vielen mit Myrmidonen
+(61) ἐν(Prp) καθαρῷ(D), ὅθι(Kon) κύματʼ(N) ἐπʼ(Prp) ἠϊόνος(G) κλύζεσκον(Imp)(Akt)·
+(61) an offenem|Ort, wo Wellen an des|Strandes spülten·
+(62) εὖτε(Kon) τὸν(Pr)(A) ὕπνος(N) ἔμαρπτε(Imp)(Akt) λύων(Prä)(Akt)(N) μελεδήματα(A) θυμοῦ(G)
+(62) sobald ihn Schlaf ergriff lösende Sorgen des|Mutes
+(63) νήδυμος(Adj)(N) ἀμφιχυθείς(Aor)(Pas)(N)· μάλα(Adv) γὰρ(Pt) κάμε(Aor)(Akt) φαίδιμα(Adj)(A) γυῖα(A)
+(63) süßer um|gegossen|worden· sehr denn ermüdete glänzende Glieder
+(64) Ἕκτορʼ(A) ἐπαΐσσων(Prä)(Akt)(N) προτὶ(Prp) Ἴλιον(A) ἠνεμόεσσαν(Adj)(A)·
+(64) Hektor anspringend hin|zu Ilion wind|durchwehte·
+(65) ἦλθε(AorS)(Akt) δʼ(Pt) ἐπὶ(Prp) ψυχὴ(N) Πατροκλῆος(G) δειλοῖο(Adj)(G)
+(65) kam aber zu die|Seele des|Patroklos unglücklichen
+(66) πάντʼ(A) αὐτῷ(Pr)(D) μέγεθός(N) τε(Pt) καὶ(Kon) ὄμματα(A) κάλʼ(Adj)(A) ἐϊκυῖα(Per)(Akt)(A)
+(66) alles ihm Größe auch und Augen schöne gleichend
+(67) καὶ(Kon) φωνήν(A), καὶ(Kon) τοῖα(Adj)(A) περὶ(Prp) χροῒ(D) εἵματα(N) ἕστο(Per)(M/P)·
+(67) auch Stimme, und solche um die|Haut Kleider hatte|an·
+(68) στῆ(AorS)(Akt) δʼ(Pt) ἄρʼ(Pt) ὑπὲρ(Prp) κεφαλῆς(G) καί(Kon) μιν(Pr)(A) πρὸς(Prp) μῦθον(A) ἔειπεν(AorS)(Akt)·
+(68) stand aber ja über des|Hauptes und ihn zu Wort sprach·
+(69) εὕδεις(Prä)(Akt), αὐτὰρ(Kon) ἐμεῖο(Pr)(G) λελασμένος(Per)(M/P)(N) ἔπλευ(Aor)(Akt) Ἀχιλλεῦ(V).
+(69) schläfst, aber meiner vergessen|habend bist|geworden Achilleus.
+(70) οὐ(Pt) μέν(Pt) μευ(Pr)(G) ζώοντος(Prä)(Akt)(G) ἀκήδεις(Prä)(Akt), ἀλλὰ(Kon) θανόντος(AorS)(Akt)(G)·
+(70) nicht zwar meiner lebend|seienden kümmerst|dich|nicht, aber des|Gestorbenen·
+(71) θάπτέ(Aor)(Akt)(Imv) με(Pr)(A) ὅττι(Kon) τάχιστα(Adv)(Sup) πύλας(A) Ἀΐδαο(G) περήσω(Aor)(Akt)(Knj).
+(71) bestatte mich damit so|rasch|wie|möglich Tore des|Hades durch|schreite.
+(72) τῆλέ(Adv) με(Pr)(A) εἴργουσι(Prä)(Akt) ψυχαὶ(N) εἴδωλα(N) καμόντων(AorS)(Akt)(G),
+(72) fern mich halten|ab Seelen Bilder der|Gestorbenen,
+(73) οὐδέ(Pt) μέ(Pr)(A) πω(Pt) μίσγεσθαι(Prä)(M/P)(Inf) ὑπὲρ(Prp) ποταμοῖο(G) ἐῶσιν(Prä)(Akt),
+(73) und|nicht mich noch mich|zu|mischen über des|Flusses lassen|sie,
+(74) ἀλλʼ(Kon) αὔτως(Adv) ἀλάλημαι(Per)(M/P) ἀνʼ(Prp) εὐρυπυλὲς(Adj)(A) Ἄϊδος(G) δῶ(A).
+(74) sondern so|einfach ich|bin|umher|geirrt durch weit|toriges des|Hades Haus.
+(75) καί(Kon) μοι(Pr)(D) δὸς(Aor)(Akt)(Imv) τὴν(Art)(A) χεῖρʼ(A)· ὀλοφύρομαι(Prä)(M/P), οὐ(Pt) γὰρ(Pt) ἔτʼ(Adv) αὖτις(Adv)
+(75) und mir gib die Hand· ich|beklage|mich, nicht denn mehr wiederum
+(76) νίσομαι(Prä)(Med) ἐξ(Prp) Ἀΐδαο(G), ἐπήν(Kon) με(Pr)(A) πυρὸς(G) λελάχητε(Per)(Akt)(Knj).
+(76) ich|gehe aus dem|Hades, wenn mich des|Feuers ihr|zugeteilt|habt.
+(77) οὐ(Pt) μὲν(Pt) γὰρ(Pt) ζωοί(Adj)(N) γε(Pt) φίλων(G) ἀπάνευθεν(Adv) ἑταίρων(G)
+(77) nicht zwar denn Lebende wenigstens der|Freunde fern der|Gefährten
+(78) βουλὰς(A) ἑζόμενοι(Prä)(Med)(N) βουλεύσομεν(Fu)(Akt), ἀλλʼ(Kon) ἐμὲ(Pr)(A) μὲν(Pt) κὴρ(N)
+(78) Ratschlüsse sitzend werden|wir|beraten, aber mich zwar Tod
+(79) ἀμφέχανε(Aor)(Akt) στυγερή(Adj)(N), ἥ(Pr)(N) περ(Pt) λάχε(AorS)(Akt) γιγνόμενόν(Prä)(Med)(A) περ(Pt)·
+(79) umhüllte verhasste, die gerade los|fiel geboren|werdenden eben·
+(80) καὶ(Kon) δὲ(Pt) σοὶ(Pr)(D) αὐτῷ(Pr)(D) μοῖρα(N), θεοῖς(D) ἐπιείκελʼ(Adj)(V) Ἀχιλλεῦ(V),
+(80) und aber dir selbst Anteil|Schicksal, den|Göttern gleich|seiender Achilleus,
+(81) τείχει(D) ὕπο(Prp) Τρώων(G) εὐηφενέων(Adj)(G) ἀπολέσθαι(Aor)(Med)(Inf).
+(81) am|Mauerwerk unter der|Troer laut|rufenden zugrunde|zu|gehen.
+(82) ἄλλο(Adj)(A) δέ(Pt) τοι(Pr)(D) ἐρέω(Fu)(Akt) καὶ(Kon) ἐφήσομαι(Fu)(Med) αἴ(Kon) κε(Pt) πίθηαι(Aor)(Med)(Knj)·
+(82) anderes aber dir werde|ich|sagen und werde|ich|kund|tun wenn etwa du|gehorchest·
+(83) μὴ(Pt) ἐμὰ(Adj)(A) σῶν(Adj)(G) ἀπάνευθε(Adv) τιθήμεναι(Prä)(Med)(Inf) ὀστέʼ(A) Ἀχιλλεῦ(V),
+(83) nicht meine deiner fern zu|setzen Gebeine Achilleus,
+(84) ἀλλʼ(Kon) ὁμοῦ(Adv) ὡς(Kon) ἐτράφημεν(AorS)(Pas) ἐν(Prp) ὑμετέροισι(Adj)(D) δόμοισιν(D),
+(84) sondern zusammen wie wir|aufgezogen|wurden in euren Häusern,
+(85) εὖτέ(Kon) με(Pr)(A) τυτθὸν(Adj)(A) ἐόντα(Prä)(Akt)(A) Μενοίτιος(N) ἐξ(Prp) Ὀπόεντος(G)
+(85) als mich klein seienden Menoitios aus Opoeis
+(86) ἤγαγεν(AorS)(Akt) ὑμέτερόνδʼ(Adv) ἀνδροκτασίης(G) ὕπο(Prp) λυγρῆς(Adj)(G),
+(86) führte zu|euch|hin wegen|Männer|Tötung unter unheilvoller,
+(87) ἤματι(D) τῷ(Art)(D) ὅτε(Kon) παῖδα(A) κατέκτανον(AorS)(Akt) Ἀμφιδάμαντος(G)
+(87) am|Tage dem als Knaben tötete|ich des|Amphidamas
+(88) νήπιος(Adj)(N) οὐκ(Pt) ἐθέλων(Prä)(Akt)(N) ἀμφʼ(Prp) ἀστραγάλοισι(D) χολωθείς(Aor)(Pas)(N)·
+(88) töricht nicht willend um an|Würfel|knochen erzürnt|worden·
+(89) ἔνθά(Adv) με(Pr)(A) δεξάμενος(Aor)(Med)(N) ἐν(Prp) δώμασιν(D) ἱππότα(N) Πηλεὺς(N)
+(89) dort mich aufgenommen|habend in den|Hallen Roß|herr Peleus
+(90) ἔτραφέ(Aor)(Akt) τʼ(Pt) ἐνδυκέως(Adv) καὶ(Kon) σὸν(Adj)(A) θεράποντʼ(A) ὀνόμηνεν(Aor)(Akt)·
+(90) zog|er|mich|auf und liebevoll und deinen Diener benannte|er·
+(91) ὣς(Adv) δὲ(Pt) καὶ(Kon) ὀστέα(A) νῶϊν(Pr)(Du)(G) ὁμὴ(Adj)(N) σορὸς(N) ἀμφικαλύπτοι(Prä)(Akt)(Op)
+(91) so aber auch Gebeine unser|beider dieselbe Urne möge|umhüllen
+(92) χρύσεος(Adj)(N) ἀμφιφορεύς(N), τόν(Pr)(A) τοι(Pr)(D) πόρε(Aor)(Akt) πότνια(Adj)(N) μήτηρ(N).
+(92) golden Zwei|henkel|Krug, den dir gab erhabene Mutter.
+(93) τὸν(Pr)(A) δʼ(Pt) ἀπαμειβόμενος(Prä)(Med)(N) προσέφη(Aor)(Akt) πόδας(A) ὠκὺς(Adj)(N) Ἀχιλλεύς(N)·
+(93) den aber erwidernd sprach an|Füßen schneller Achilleus·
+(94) τίπτέ(Pr) μοι(Pr)(D) ἠθείη(Adj)(N) κεφαλὴ(N) δεῦρʼ(Adv) εἰλήλουθας(Per)(Akt)
+(94) warum|denn mir liebe Haupt hierher bist|gekommen
+(95) καί(Kon) μοι(Pr)(D) ταῦτα(Pr)(A) ἕκαστʼ(Adj)(A) ἐπιτέλλεαι(Prä)(Med) αὐτὰρ(Kon) ἐγώ(Pr)(N) τοι(Pr)(D)
+(95) und mir dieses jedes befiehlst|du aber ich dir
+(96) πάντα(A) μάλʼ(Adv) ἐκτελέω(Prä)(Akt) καὶ(Kon) πείσομαι(Fu)(Med) ὡς(Kon) σὺ(Pr)(N) κελεύεις(Prä)(Akt).
+(96) alles sehr vollende|ich und werde|ich|gehorchen wie du befiehlst.
+(97) ἀλλά(Kon) μοι(Pr)(D) ἆσσον(Adv)(Kmp) στῆθι(AorS)(Akt)(Imv)· μίνυνθά(Adv) περ(Pt) ἀμφιβαλόντε(AorS)(Akt)(Du)(N)
+(97) doch mir näher steh· kurz doch uns|umfassend
+(98) ἀλλήλους(Pr)(A) ὀλοοῖο(Adj)(G) τεταρπώμεσθα(Per)(M/P)(Knj) γόοιο(G).
+(98) einander des|verderblichen mögen|wir|uns|satt|machen des|Klagens.
+(99) ὣς(Adv) ἄρα(Pt) φωνήσας(Aor)(Akt)(N) ὠρέξατο(Aor)(Med) χερσὶ(D) φίλῃσιν(Adj)(D)
+(99) so denn gesprochen|habend streckte|er|aus mit|Händen lieben
+(100) οὐδʼ(Pt) ἔλαβε(Aor)(Akt)· ψυχὴ(N) δὲ(Pt) κατὰ(Prp) χθονὸς(G) ἠΰτε(Kon) καπνὸς(N)
+(100) und|nicht ergriff|er· die|Seele aber hinab der|Erde wie Rauch
+(101) ᾤχετο(Imp)(Med) τετριγυῖα(Per)(Akt)(N)· ταφὼν(Aor)(Akt)(N) δʼ(Pt) ἀνόρουσεν(Aor)(Akt) Ἀχιλλεὺς(N)
+(101) hinweg|ging gellend|geschrien|habend· bestürzt aber sprang|auf Achilleus
+(102) χερσί(D) τε(Pt) συμπλατάγησεν(Aor)(Akt), ἔπος(A) δʼ(Pt) ὀλοφυδνὸν(Adj)(A) ἔειπεν(Aor)(Akt)·
+(102) mit|den|Händen und zusammenschlug|er, Wort aber wehklagendes sprach|er·
+(103) ὢ(ij) πόποι(ij) ἦ(Pt) ῥά(Pt) τίς(Pr)(N) ἐστι(Prä)(Akt) καὶ(Kon) εἰν(Prp) Ἀΐδαο(G) δόμοισι(D)
+(103) weh ach ja doch jemand ist auch in des|Hades Hallen
+(104) ψυχὴ(N) καὶ(Kon) εἴδωλον(N), ἀτὰρ(Kon) φρένες(N) οὐκ(Pt) ἔνι(Prä)(Akt) πάμπαν(Adv)·
+(104) Seele und Bild, aber Verstand nicht ist|darin ganz|und|gar·
+(105) παννυχίη(N) γάρ(Pt) μοι(Pr)(D) Πατροκλῆος(G) δειλοῖο(Adj)(G)
+(105) die|ganze|Nacht denn mir des|Patroklos unglücklichen
+(106) ψυχὴ(N) ἐφεστήκει(Plq)(Akt) γοόωσά(Prä)(Akt)(N) τε(Pt) μυρομένη(Prä)(M/P)(N) τε(Pt),
+(106) die|Seele hatte|dabeigestanden klagend und weinend und,
+(107) καί(Kon) μοι(Pr)(D) ἕκαστʼ(Adj)(A) ἐπέτελλεν(Imp)(Akt), ἔϊκτο(Imp)(M/P) δὲ(Pt) θέσκελον(Adj)(A) αὐτῷ(Pr)(D).
+(107) und mir jedes befahl|sie, schien aber wundersam ihm.
+(108) ὣς(Adv) φάτο(Imp)(M/P), τοῖσι(Pr)(D) δὲ(Pt) πᾶσιν(Adj)(D) ὑφʼ(Prp) ἵμερον(A) ὦρσε(Aor)(Akt) γόοιο(G)·
+(108) so sprach|er, ihnen aber allen unter Sehnsucht erregte des|Klagens·
+(109) μυρομένοισι(Prä)(M/P)(D) δὲ(Pt) τοῖσι(Pr)(D) φάνη(Aor)(Pas) ῥοδοδάκτυλος(Adj)(N) Ἠὼς(N)
+(109) den|weinenden aber ihnen erschien rosen|fingrige Eos
+(110) ἀμφὶ(Prp) νέκυν(A) ἐλεεινόν(Adj)(A). ἀτὰρ(Kon) κρείων(Adj)(N) Ἀγαμέμνων(N)
+(110) um den|Leichnam erbarmungswürdigen. aber herrlicher Agamemnon
+(111) οὐρῆάς(A) τʼ(Pt) ὄτρυνε(Imp)(Akt) καὶ(Kon) ἀνέρας(A) ἀξέμεν(AorS)(Akt)(Inf) ὕλην(A)
+(111) Maultiere und trieb|an und Männer zu|holen Holz
+(112) πάντοθεν(Adv) ἐκ(Prp) κλισιῶν(G)· ἐπὶ(Prp) δʼ(Pt) ἀνὴρ(N) ἐσθλὸς(Adj)(N) ὀρώρει(Plq)(Akt)
+(112) von|allen|Seiten aus den|Hütten· dazu aber ein|Mann tüchtiger war|aufgestanden
+(113) Μηριόνης(N) θεράπων(N) ἀγαπήνορος(Adj)(G) Ἰδομενῆος(G).
+(113) Meriones Gefährte des|hoch|mütigen Idomeneus.
+(114) οἳ(Pr)(N) δʼ(Pt) ἴσαν(Imp)(Akt) ὑλοτόμους(Adj)(A) πελέκεας(A) ἐν(Prp) χερσὶν(D) ἔχοντες(Prä)(Akt)(N)
+(114) sie aber gingen holz|schlagende Äxte in den|Händen haltend
+(115) σειράς(A) τʼ(Pt) εὐπλέκτους(Adj)(A)· πρὸ(Prp) δʼ(Pt) ἄρʼ(Pt) οὐρῆες(N) κίον(Imp)(Akt) αὐτῶν(Pr)(G).
+(115) Seile und wohl|geflochtene· voran aber doch die|Maultiere gingen von|ihnen.
+(116) πολλὰ(Adj)(A) δʼ(Pt) ἄναντα(Adv) κάταντα(Adv) πάραντά(Adv) τε(Pt) δόχμιά(Adv) τʼ(Pt) ἦλθον(AorS)(Akt)·
+(116) vieles aber berg|auf berg|ab quer und schräg und kamen|sie·
+(117) ἀλλʼ(Kon) ὅτε(Kon) δὴ(Pt) κνημοὺς(A) προσέβαν(AorS)(Akt) πολυπίδακος(Adj)(G) Ἴδης(G),
+(117) aber als ja Berg|hänge betraten|sie der|viel|Quellen|reichen Ida,
+(118) αὐτίκʼ(Adv) ἄρα(Pt) δρῦς(A) ὑψικόμους(Adj)(A) ταναήκεϊ(Adj)(D) χαλκῷ(D)
+(118) sogleich doch Eichen hoch|belaubte lang|schneidigem Erz
+(119) τάμνον(Imp)(Akt) ἐπειγόμενοι(Prä)(Med)(N)· ταὶ(Art)(N) δὲ(Pt) μεγάλα(Adv) κτυπέουσαι(Prä)(Akt)(N)
+(119) fällten|sie sich|beeilend· die aber gewaltig dröhnend
+(120) πῖπτον(Imp)(Akt)· τὰς(Art)(A) μὲν(Pt) ἔπειτα(Adv) διαπλήσσοντες(Prä)(Akt)(N) Ἀχαιοὶ(N)
+(120) stürzten· sie zwar hernach zerteilend die|Achaier
+(121) ἔκδεον(Imp)(Akt) ἡμιόνων(G)· ταὶ(Art)(N) δὲ(Pt) χθόνα(A) ποσσὶ(D) δατεῦντο(Imp)(M/P)
+(121) banden|sie|an die|Maultiere· diese aber die|Erde mit|den|Füßen verteilten|sie
+(122) ἐλδόμεναι(Prä)(Med)(N) πεδίοιο(G) διὰ(Prp) ῥωπήϊα(A) πυκνά(Adj)(A).
+(122) begehrend der|Ebene durch Gebüsche dichte.
+(123) πάντες(Adj)(N) δʼ(Pt) ὑλοτόμοι(N) φιτροὺς(A) φέρον(Imp)(Akt)· ὡς(Kon) γὰρ(Pt) ἀνώγει(Per)(Akt)
+(123) alle aber Holzhauer Stämme trugen· wie ja hat|befohlen
+(124) Μηριόνης(N) θεράπων(N) ἀγαπήνορος(Adj)(G) Ἰδομενῆος(G).
+(124) Meriones Gefährte des|hoch|mütigen Idomeneus.
+(125) κὰδ(Adv) δʼ(Pt) ἄρʼ(Pt) ἐπʼ(Prp) ἀκτῆς(G) βάλλον(Imp)(Akt) ἐπισχερώ(Adv), ἔνθʼ(Adv) ἄρʼ(Pt) Ἀχιλλεὺς(N)
+(125) hinab aber doch an das|Ufer warfen|sie dicht|geschichtet, dort doch Achilleus
+(126) φράσσατο(Aor)(Med) Πατρόκλῳ(D) μέγα(Adj)(A) ἠρίον(A) ἠδὲ(Kon) οἷ(Pr)(D) αὐτῷ(Pr)(D).
+(126) entwarf|er für|Patroklos großes Grab|mal und für|sich selbst.
+(127) αὐτὰρ(Kon) ἐπεὶ(Kon) πάντῃ(Adv) παρακάββαλον(Aor)(Akt) ἄσπετον(Adj)(A) ὕλην(A)
+(127) aber als ringsum warfen|sie|daran ungeheures Holz
+(128) ἥατʼ(Imp)(M/P) ἄρʼ(Pt) αὖθι(Adv) μένοντες(Prä)(Akt)(N) ἀολλέες(Adj)(N). αὐτὰρ(Kon) Ἀχιλλεὺς(N)
+(128) setzten|sie|sich doch dort wartend geschlossen. aber Achilleus
+(129) αὐτίκα(Adv) Μυρμιδόνεσσι(D) φιλοπτολέμοισι(Adj)(D) κέλευσε(Aor)(Akt)
+(129) sogleich den|Myrmidonen kampf|liebenden befahl|er
+(130) χαλκὸν(A) ζώννυσθαι(Prä)(Med)(Inf), ζεῦξαι(Aor)(Akt)(Inf) δʼ(Pt) ὑπʼ(Prp) ὄχεσφιν(D) ἕκαστον(Adj)(A)
+(130) Erz|rüstung anzulegen, anzuspannen aber unter die|Wagen jeden
+(131) ἵππους(A)· οἳ(Pr)(N) δʼ(Pt) ὄρνυντο(Imp)(M/P) καὶ(Kon) ἐν(Prp) τεύχεσσιν(D) ἔδυνον(Imp)(Akt),
+(131) Pferde· sie aber rüsteten|sich und in die|Rüstungen schlüpften|sie,
+(132) ἂν(Prp) δʼ(Pt) ἔβαν(AorS)(Akt) ἐν(Prp) δίφροισι(D) παραιβάται(N) ἡνίοχοί(N) τε(Pt),
+(132) hinauf aber stiegen|sie in die|Wagen|sitze Beisteher Lenker und,
+(133) πρόσθε(Adv) μὲν(Pt) ἱππῆες(N), μετὰ(Prp) δὲ(Pt) νέφος(N) εἵπετο(Imp)(Med) πεζῶν(G)
+(133) vorne zwar Reiter, danach aber Wolke folgte der|Fuß|soldaten
+(134) μυρίοι(Adj)(N)· ἐν(Prp) δὲ(Pt) μέσοισι(D) φέρον(Imp)(Akt) Πάτροκλον(A) ἑταῖροι(N).
+(134) zahllose· in aber der|Mitte trugen|sie Patroklos Gefährten.
+(135) θριξὶ(D) δὲ(Pt) πάντα(Adj)(A) νέκυν(A) καταείνυσαν(Aor)(Akt), ἃς(Pr)(A) ἐπέβαλλον(Imp)(Akt)
+(135) mit|den|Haaren aber ganzen Leichnam benetzten|sie, die sie|darauf|legten
+(136) κειρόμενοι(Prä)(M/P)(N)· ὄπιθεν(Adv) δὲ(Pt) κάρη(A) ἔχε(Imp)(Akt) δῖος(Adj)(N) Ἀχιλλεὺς(N)
+(136) sich|scherend· von|hinten aber Haupt hielt göttlich Achilleus
+(137) ἀχνύμενος(Prä)(M/P)(N)· ἕταρον(A) γὰρ(Pt) ἀμύμονα(Adj)(A) πέμπʼ(Imp)(Akt) Ἄϊδος(G) δέ(Pt).
+(137) leidend· Gefährten denn tadellosen sandte zu|Hades aber.
+(138) οἳ(Pr)(N) δʼ(Pt) ὅτε(Kon) χῶρον(A) ἵκανον(Imp)(Akt) ὅθί(Kon) σφισι(Pr)(D) πέφραδʼ(Per)(Akt) Ἀχιλλεὺς(N)
+(138) sie aber als Ort erreichten wo ihnen hat|gezeigt Achilleus
+(139) κάτθεσαν(Aor)(Akt), αἶψα(Adv) δέ(Pt) οἱ(Pr)(D) μενοεικέα(Adj)(A) νήεον(Imp)(Akt) ὕλην(A).
+(139) legten|sie|nieder, sogleich aber ihm angenehme häuften|sie Holz.
+(140) ἔνθʼ(Adv) αὖτʼ(Adv) ἄλλʼ(Adj)(A) ἐνόησε(Aor)(Akt) ποδάρκης(Adj)(N) δῖος(Adj)(N) Ἀχιλλεύς(N)·
+(140) dort wieder anderes erwog schnellfußig göttlich Achilleus·
+(141) στὰς(AorS)(Akt)(N) ἀπάνευθε(Adv) πυρῆς(G) ξανθὴν(Adj)(A) ἀπεκείρατο(Aor)(Med) χαίτην(A),
+(141) hingestellt|habend abseits des|Scheiterhaufens blonde schnitt|er|ab Locke,
+(142) τήν(Art)(A) ῥα(Pt) Σπερχειῷ(D) ποταμῷ(D) τρέφε(Imp)(Akt) τηλεθόωσαν(Prä)(Akt)(A)·
+(142) die ja dem|Spercheios Fluss nährte gedeihend·
+(143) ὀχθήσας(Aor)(Akt)(N) δʼ(Pt) ἄρα(Pt) εἶπεν(Aor)(Akt) ἰδὼν(AorS)(Akt)(N) ἐπὶ(Prp) οἴνοπα(Adj)(A) πόντον(A)·
+(143) gegrämt|habend aber doch sprach gesehen|habend auf wein|farbigen Meer·
+(144) Σπερχείʼ(V) ἄλλως(Adv) σοί(Pr)(D) γε(Pt) πατὴρ(N) ἠρήσατο(Aor)(Med) Πηλεὺς(N)
+(144) Spercheios vergeblich dir ja Vater betete Peleus
+(145) κεῖσέ(Adv) με(Pr)(A) νοστήσαντα(Aor)(Akt)(A) φίλην(Adj)(A) ἐς(Prp) πατρίδα(Adj)(A) γαῖαν(A)
+(145) dorthin mich heimgekehrt|habend liebe in väterliche Erde
+(146) σοί(Pr)(D) τε(Pt) κόμην(A) κερέειν(Prä)(Akt)(Inf) ῥέξειν(Fu)(Akt)(Inf) θʼ(Pt) ἱερὴν(Adj)(A) ἑκατόμβην(A),
+(146) dir und Haar zu|scheren zu|vollziehen und heilige Hekatombe,
+(147) πεντήκοντα(Adj) δʼ(Pt) ἔνορχα(Adj)(A) παρʼ(Prp) αὐτόθι(Adv) μῆλʼ(A) ἱερεύσειν(Fu)(Akt)(Inf)
+(147) fünfzig aber männliche an gleich|dort Kleinvieh zu|opfern
+(148) ἐς(Prp) πηγάς(A), ὅθι(Kon) τοι(Pr)(D) τέμενος(N) βωμός(N) τε(Pt) θυήεις(Adj)(N).
+(148) in Quellen, wo dir Heil|bezirk Altar und opfer|duftend.
+(149) ὣς(Adv) ἠρᾶθʼ(Aor)(Med) ὃ(Pr)(N) γέρων(N), σὺ(Pr)(N) δέ(Pt) οἱ(Pr)(D) νόον(A) οὐκ(Pt) ἐτέλεσσας(Aor)(Akt).
+(149) so betete er Greis, du aber ihm Vorsatz nicht vollendetest.
+(150) νῦν(Adv) δʼ(Pt) ἐπεὶ(Kon) οὐ(Pt) νέομαί(Prä)(M/P) γε(Pt) φίλην(Adj)(A) ἐς(Prp) πατρίδα(Adj)(A) γαῖαν(A)
+(150) nun aber da nicht heim|kehre ja liebe in väterliche Erde
+(151) Πατρόκλῳ(D) ἥρωϊ(D) κόμην(A) ὀπάσαιμι(Aor)(Akt)(Op) φέρεσθαι(Prä)(M/P)(Inf).
+(151) Patroklos dem|Helden Haar möchte|ich|geben getragen|zu|werden.
+(152) ὣς(Adv) εἰπὼν(AorS)(Akt)(N) ἐν(Prp) χερσὶ(D) κόμην(A) ἑτάροιο(G) φίλοιο(Adj)(G)
+(152) so gesagt|habend in Händen Haar des|Gefährten lieben
+(153) θῆκεν(Aor)(Akt), τοῖσι(Pr)(D) δὲ(Pt) πᾶσιν(Adj)(D) ὑφʼ(Prp) ἵμερον(A) ὦρσε(Aor)(Akt) γόοιο(G).
+(153) legte|er, denen aber allen unter Sehnsucht erregte des|Klagens.
+(154) καί(Kon) νύ(Pt) κʼ(Pt) ὀδυρομένοισιν(Prä)(M/P)(D) ἔδυ(Aor)(Akt) φάος(N) ἠελίοιο(G)
+(154) und nun wohl den|Klagenden wäre|untergetaucht Licht der|Sonne
+(155) εἰ(Kon) μὴ(Kon) Ἀχιλλεὺς(N) αἶψʼ(Adv) Ἀγαμέμνονι(D) εἶπε(Aor)(Akt) παραστάς(AorS)(Akt)(N)·
+(155) wenn nicht Achilleus sogleich Agamemnon sagte beigestanden|habend·
+(156) Ἀτρεΐδη(V), σοὶ(Pr)(D) γάρ(Pt) τε(Pt) μάλιστά(Adv)(Sup) γε(Pt) λαὸς(N) Ἀχαιῶν(G)
+(156) Atride, dir denn und am|meisten ja Volk der|Achaier
+(157) πείσονται(Fu)(M/P) μύθοισι(D), γόοιο(G) μὲν(Pt) ἔστι(Prä)(Akt) καὶ(Kon) ἆσαι(Aor)(Akt)(Inf),
+(157) werden|gehorchen Worten, des|Klagens zwar ist auch satt|werden,
+(158) νῦν(Adv) δʼ(Pt) ἀπὸ(Prp) πυρκαϊῆς(G) σκέδασον(Aor)(Akt)(Imv) καὶ(Kon) δεῖπνον(A) ἄνωχθι(Prä)(Akt)(Imv)
+(158) nun aber von des|Scheiterhaufens entlasse und Mahl befehle
+(159) ὅπλεσθαι(Prä)(M/P)(Inf)· τάδε(Pr)(A) δʼ(Pt) ἀμφὶ(Prp) πονησόμεθʼ(Fu)(M/P) οἷσι(Pr)(D) μάλιστα(Adv)(Sup)
+(159) sich|zurüsten· dieses aber um werden|wir|arbeiten denen am|meisten
+(160) κήδεός(G) ἐστι(Prä)(Akt) νέκυς(N)· παρὰ(Prp) δʼ(Pt) οἵ(Pr)(N) τʼ(Pt) ἀγοὶ(N) ἄμμι(Pr)(D) μενόντων(Prä)(Akt)(G).
+(160) der|Sorge ist Leichnam· bei aber die auch Führer uns bleibend.
+(161) αὐτὰρ(Kon) ἐπεὶ(Kon) τό(Pr)(A) γʼ(Pt) ἄκουσεν(Aor)(Akt) ἄναξ(N) ἀνδρῶν(G) Ἀγαμέμνων(N),
+(161) aber als dies ja hörte Herr der|Männer Agamemnon,
+(162) αὐτίκα(Adv) λαὸν(A) μὲν(Pt) σκέδασεν(Aor)(Akt) κατὰ(Prp) νῆας(A) ἐΐσας(Adj)(A),
+(162) sogleich Volk zwar zerstreute|er entlang Schiffe wohl|gebaute,
+(163) κηδεμόνες(N) δὲ(Pt) παρʼ(Prp) αὖθι(Adv) μένον(Imp)(Akt) καὶ(Kon) νήεον(Imp)(Akt) ὕλην(A),
+(163) Kümmerer aber an dort blieben und häuften Holz,
+(164) ποίησαν(Aor)(Akt) δὲ(Pt) πυρὴν(A) ἑκατόμπεδον(Adj)(A) ἔνθα(Adv) καὶ(Kon) ἔνθα(Adv),
+(164) machten aber Scheiterhaufen hundert|füßigen hier und da,
+(165) ἐν(Prp) δὲ(Pt) πυρῇ(D) ὑπάτῃ(Adj)(D) νεκρὸν(A) θέσαν(Aor)(Akt) ἀχνύμενοι(Prä)(M/P)(N) κῆρ(A).
+(165) in aber dem|Scheiterhaufen obersten Toten setzten|sie trauernd Herz.
+(166) πολλὰ(Adj)(A) δὲ(Pt) ἴφια(Adj)(A) μῆλα(A) καὶ(Kon) εἰλίποδας(Adj)(A) ἕλικας(Adj)(A) βοῦς(A)
+(166) viele aber kräftige Kleinvieh und rollend|füßige gewunden|gehörnte Rinder
+(167) πρόσθε(Adv) πυρῆς(G) ἔδερόν(Imp)(Akt) τε(Pt) καὶ(Kon) ἄμφεπον(Imp)(Akt)· ἐκ(Prp) δʼ(Pt) ἄρα(Pt) πάντων(Adj)(G)
+(167) vor des|Scheiterhaufens häuteten und auch bearbeiteten· aus aber doch aller
+(168) δημὸν(A) ἑλὼν(AorS)(Akt)(N) ἐκάλυψε(Aor)(Akt) νέκυν(A) μεγάθυμος(Adj)(N) Ἀχιλλεὺς(N)
+(168) Fett genommen|habend bedeckte Leichnam groß|herzig Achilleus
+(169) ἐς(Prp) πόδας(A) ἐκ(Prp) κεφαλῆς(G), περὶ(Prp) δὲ(Pt) δρατὰ(Adj)(A) σώματα(A) νήει(Prä)(Akt).
+(169) zu Füße aus des|Hauptes, rings aber ess|bare Leiber häuft|er.
+(170) ἐν(Prp) δʼ(Pt) ἐτίθει(Imp)(Akt) μέλιτος(G) καὶ(Kon) ἀλείφατος(G) ἀμφιφορῆας(A)
+(170) in aber stellte|er des|Honigs und des|Salböls Zwei|henkel|gefäße
+(171) πρὸς(Prp) λέχεα(A) κλίνων(Prä)(Akt)(N)· πίσυρας(Adj)(A) δʼ(Pt) ἐριαύχενας(Adj)(A) ἵππους(A)
+(171) an Lager neigend· vier aber woll|halsige Pferde
+(172) ἐσσυμένως(Adv) ἐνέβαλλε(Imp)(Akt) πυρῇ(D) μεγάλα(Adv) στεναχίζων(Prä)(Akt)(N).
+(172) eilends warf|er in|Scheiterhaufen sehr seufzend.
+(173) ἐννέα(Adj) τῷ(Pr)(D) γε(Pt) ἄνακτι(D) τραπεζῆες(Adj)(N) κύνες(N) ἦσαν(Imp)(Akt),
+(173) neun ihm ja dem|Fürsten tisch|gewohnte Hunde waren,
+(174) καὶ(Kon) μὲν(Pt) τῶν(Art)(G) ἐνέβαλλε(Imp)(Akt) πυρῇ(D) δύο(Adj) δειροτομήσας(Aor)(Akt)(N),
+(174) und zwar deren warf|er in|Scheiterhaufen zwei Hals|abschneidend|habend,
+(175) δώδεκα(Adj) δὲ(Pt) Τρώων(G) μεγαθύμων(Adj)(G) υἱέας(A) ἐσθλοὺς(Adj)(A)
+(175) zwölf aber der|Troer groß|mütigen Söhne edle
+(176) χαλκῷ(D) δηϊόων(Prä)(Akt)(N)· κακὰ(Adj)(A) δὲ(Pt) φρεσὶ(D) μήδετο(Imp)(Med) ἔργα(A)·
+(176) mit|Erz tötend· schlimme aber im|Sinn sann|er Taten·
+(177) ἐν(Prp) δὲ(Pt) πυρὸς(G) μένος(A) ἧκε(Aor)(Akt) σιδήρεον(Adj)(A) ὄφρα(Kon) νέμοιτο(Prä)(M/P)(Op).
+(177) in aber des|Feuers Kraft sandte|er eiserne damit wüte.
+(178) ᾤμωξέν(Aor)(Akt) τʼ(Pt) ἄρʼ(Pt) ἔπειτα(Adv), φίλον(Adj)(A) δʼ(Pt) ὀνόμηνεν(Aor)(Akt) ἑταῖρον(A)·
+(178) jammerte|er und doch danach, lieben aber nannte Gefährten·
+(179) χαῖρέ(Prä)(Akt)(Imv) μοι(Pr)(D) ὦ(ij) Πάτροκλε(V) καὶ(Kon) εἰν(Prp) Ἀΐδαο(G) δόμοισι(D)·
+(179) sei|gegrüßt mir o Patroklos und in des|Hades Hallen·
+(180) πάντα(Adj)(A) γὰρ(Pt) ἤδη(Adv) τοι(Pr)(D) τελέω(Prä)(Akt) τὰ(Art)(A) πάροιθεν(Adv) ὑπέστην(AorS)(Akt),
+(180) alles denn schon dir vollende die vorher versprach|ich,
+(181) δώδεκα(Adj) μὲν(Pt) Τρώων(G) μεγαθύμων(Adj)(G) υἱέας(A) ἐσθλοὺς(Adj)(A)
+(181) zwölf zwar der|Troer groß|mütigen Söhne edle
+(182) τοὺς(Art)(A) ἅμα(Adv) σοὶ(Pr)(D) πάντας(Adj)(A) πῦρ(N) ἐσθίει(Prä)(Akt)· Ἕκτορα(A) δʼ(Pt) οὔ(Pt) τι(Pt)
+(182) die zusammen dir alle Feuer verzehrt· Hektor aber nicht im|Geringsten
+(183) δώσω(Fu)(Akt) Πριαμίδην(A) πυρὶ(D) δαπτέμεν(Prä)(Akt)(Inf), ἀλλὰ(Kon) κύνεσσιν(D).
+(183) werde|ich|geben Priamos|Sohn dem|Feuer zu|verzehren, sondern Hunden.
+(184) ὣς(Adv) φάτʼ(Aor)(Akt) ἀπειλήσας(Aor)(Akt)(N)· τὸν(Pr)(A) δʼ(Pt) οὐ(Pt) κύνες(N) ἀμφεπένοντο(Imp)(M/P),
+(184) so sprach drohend|habend· ihn aber nicht Hunde um|beschäftigten|sich,
+(185) ἀλλὰ(Kon) κύνας(A) μὲν(Pt) ἄλαλκε(Aor)(Akt) Διὸς(G) θυγάτηρ(N) Ἀφροδίτη(N)
+(185) sondern Hunde zwar wehrte|ab des|Zeus Tochter Aphrodite
+(186) ἤματα(A) καὶ(Kon) νύκτας(A), ῥοδόεντι(Adj)(D) δὲ(Pt) χρῖεν(Imp)(Akt) ἐλαίῳ(D)
+(186) Tage und Nächte, rosen|duftendem aber bestrich mit|Öl
+(187) ἀμβροσίῳ(Adj)(D), ἵνα(Kon) μή(Pt) μιν(Pr)(A) ἀποδρύφοι(Aor)(Akt)(Op) ἑλκυστάζων(Prä)(Akt)(N).
+(187) ambrosischem, damit nicht ihn ab|reiße schleifend.
+(188) τῷ(Pr)(D) δʼ(Pt) ἐπὶ(Prp) κυάνεον(Adj)(A) νέφος(A) ἤγαγε(Aor)(Akt) Φοῖβος(N) Ἀπόλλων(N)
+(188) über|ihn aber auf dunkles Gewölk brachte Phoibos Apollon
+(189) οὐρανόθεν(Adv) πεδίον(A) δέ(Pt), κάλυψε(Aor)(Akt) δὲ(Pt) χῶρον(A) ἅπαντα(Adj)(A)
+(189) vom|Himmel zur|Ebene aber, bedeckte aber Raum ganzen
+(190) ὅσσον(Pr)(A) ἐπεῖχε(Imp)(Akt) νέκυς(N), μὴ(Pt) πρὶν(Adv) μένος(A) ἠελίοιο(G)
+(190) so|viel über|deckte der|Leichnam, nicht zuvor Kraft der|Sonne
+(191) σκήλειʼ(Aor)(Akt)(Knj) ἀμφὶ(Prp) περὶ(Prp) χρόα(A) ἴνεσιν(D) ἠδὲ(Kon) μέλεσσιν(D).
+(191) austrockne um rings Haut an|Sehnen und Gliedern.
+(192) οὐδὲ(Kon) πυρὴ(N) Πατρόκλου(G) ἐκαίετο(Imp)(M/P) τεθνηῶτος(Per)(Akt)(G)·
+(192) auch|nicht Scheiterhaufen des|Patroklos brannte des|Verstorbenen·
+(193) ἔνθʼ(Adv) αὖτʼ(Adv) ἀλλʼ(Kon) ἐνόησε(Aor)(Akt) ποδάρκης(Adj)(N) δῖος(Adj)(N) Ἀχιλλεύς(N)·
+(193) da wieder anderes ersann schnellfußig göttlich Achilleus·
+(194) στὰς(AorS)(Akt)(N) ἀπάνευθε(Adv) πυρῆς(G) δοιοῖς(Adj)(Du)(D) ἠρᾶτʼ(Aor)(Med) ἀνέμοισι(D)
+(194) hingestellt|habend abseits des|Scheiterhaufens zwei betete|er Winden
+(195) Βορέῃ(D) καὶ(Kon) Ζεφύρῳ(D), καὶ(Kon) ὑπίσχετο(Aor)(Med) ἱερὰ(A) καλά(Adj)(A)·
+(195) Boreas und Zephyr, und gelobte Opfer schöne·
+(196) πολλὰ(Adj)(A) δὲ(Pt) καὶ(Kon) σπένδων(Prä)(Akt)(N) χρυσέῳ(Adj)(D) δέπαϊ(D) λιτάνευεν(Imp)(Akt)
+(196) vieles aber auch libierend mit|goldenem Becher flehte|er
+(197) ἐλθέμεν(Aor)(Akt)(Inf), ὄφρα(Kon) τάχιστα(Adv)(Sup) πυρὶ(D) φλεγεθοίατο(Prä)(M/P)(Op) νεκροί(N),
+(197) zu|kommen, damit am|schnellsten vom|Feuer loderten die|Toten,
+(198) ὕλη(N) τε(Pt) σεύαιτο(Prä)(M/P)(Op) καήμεναι(Aor)(Pas)(N). ὦκα(Adv) δὲ(Pt) Ἶρις(N)
+(198) Holz und sich|antreibe verbrannt|seiend. schnell aber Iris
+(199) ἀράων(G) ἀΐουσα(Prä)(Akt)(N) μετάγγελος(N) ἦλθʼ(AorS)(Akt) ἀνέμοισιν(D).
+(199) der|Gebete hörend Botin kam zu|den|Winden.
+(200) οἳ(Pr)(N) μὲν(Pt) ἄρα(Pt) Ζεφύροιο(G) δυσαέος(Adj)(G) ἀθρόοι(Adj)(N) ἔνδον(Adv)
+(200) sie zwar doch des|Zephyrs übel|wehend zusammen drinnen
+(201) εἰλαπίνην(A) δαίνυντο(Imp)(M/P)· θέουσα(Prä)(Akt)(N) δὲ(Pt) Ἶρις(N) ἐπέστη(AorS)(Akt)
+(201) Fest|mahl schmausten|sie· laufend aber Iris trat|herzu
+(202) βηλῷ(D) ἔπι(Prp) λιθέῳ(Adj)(D)· τοὶ(Pr)(N) δʼ(Pt) ὡς(Kon) ἴδον(AorS)(Akt) ὀφθαλμοῖσι(D)
+(202) Schwelle auf stein|ern|er· sie aber als sahen|sie mit|Augen
+(203) πάντες(Adj)(N) ἀνήϊξαν(Aor)(Akt), κάλεόν(Imp)(Akt) τέ(Pt) μιν(Pr)(A) εἰς(Prp) ἓ(Pr)(A) ἕκαστος(Adj)(N)·
+(203) alle sprangen|auf, riefen und sie zu sich je|ein|jeder·
+(204) ἣ(Pr)(N) δʼ(Pt) αὖθʼ(Adv) ἕζεσθαι(Prä)(M/P)(Inf) μὲν(Pt) ἀνήνατο(Aor)(Med), εἶπε(AorS)(Akt) δὲ(Pt) μῦθον(A)·
+(204) sie aber wieder sich|setzen zwar verweigerte|sie, sprach aber Wort·
+(205) οὐχ(Pt) ἕδος(N)· εἶμι(Prä)(Akt) γὰρ(Pt) αὖτις(Adv) ἐπʼ(Prp) Ὠκεανοῖο(G) ῥέεθρα(A)
+(205) nicht Sitz· ich|gehe denn wieder zu des|Okeanos Ströme
+(206) Αἰθιόπων(G) ἐς(Prp) γαῖαν(A), ὅθι(Kon) ῥέζουσʼ(Prä)(Akt) ἑκατόμβας(A)
+(206) der|Äthiopen in Erde, wo vollziehen|sie Hekatom|ben
+(207) ἀθανάτοις(D), ἵνα(Kon) δὴ(Pt) καὶ(Kon) ἐγὼ(Pr)(N) μεταδαίσομαι(Fu)(Med) ἱρῶν(G).
+(207) den|Unsterblichen, damit ja auch ich mit|essen|werde|ich der|Opfer.
+(208) ἀλλʼ(Kon) Ἀχιλεὺς(N) Βορέην(A) ἠδὲ(Kon) Ζέφυρον(A) κελαδεινὸν(Adj)(A)
+(208) doch Achilleus Boreas und Zephyros laut|tönenden
+(209) ἐλθεῖν(AorS)(Akt)(Inf) ἀρᾶται(Prä)(Med), καὶ(Kon) ὑπίσχεται(Prä)(Med) ἱερὰ(A) καλά(Adj)(A),
+(209) zu|kommen erfleht|er, und gelobt|er Opfer|gaben schöne,
+(210) ὄφρα(Kon) πυρὴν(A) ὄρσητε(Aor)(Akt)(Knj) καήμεναι(Aor)(M/P)(Inf), ᾗ(Pr)(D) ἔνι(Prp) κεῖται(Prä)(M/P)
+(210) damit Scheiter|haufen auf|regt|ihr zu|brennen, worin drin|ist liegt
+(211) Πάτροκλος(N), τὸν(Art)(A) πάντες(Adj)(N) ἀναστενάχουσιν(Prä)(Akt) Ἀχαιοί(N).
+(211) Patroklos, den alle beklagen|sie Achaier.
+(212) ἣ(Pr)(N) μὲν(Pt) ἄρʼ(Pt) ὣς(Adv) εἰποῦσʼ(AorS)(Akt)(N) ἀπεβήσετο(AorS)(Med), τοὶ(Pr)(N) δʼ(Pt) ὀρέοντο(Imp)(M/P)
+(212) sie zwar doch so gesagt|habend ging|fort, sie aber rüsteten|sich
+(213) ἠχῇ(D) θεσπεσίῃ(Adj)(D) νέφεα(A) κλονέοντε(Prä)(Akt)(Du) πάροιθεν(Adv).
+(213) mit|Klang götter|würdigem Wolken schüttelnd voraus.
+(214) αἶψα(Adv) δὲ(Pt) πόντον(A) ἵκανον(Imp)(Akt) ἀήμεναι(Prä)(M/P)(Inf), ὦρτο(AorS)(Med) δὲ(Pt) κῦμα(N)
+(214) sogleich aber Meer erreichten|sie zu|wehen, hob|sich aber Woge
+(215) πνοιῇ(D) ὕπο(Prp) λιγυρῇ(Adj)(D)· Τροίην(A) δʼ(Pt) ἐρίβωλον(Adj)(A) ἱκέσθην(AorS)(Med)(Du),
+(215) von|Wehen unter hell|klingendem· Troja aber gut|geackert|es erreichten|beide,
+(216) ἐν(Prp) δὲ(Pt) πυρῇ(D) πεσέτην(AorS)(Akt)(Du), μέγα(Adv) δʼ(Pt) ἴαχε(Imp)(Akt) θεσπιδαὲς(Adj)(N) πῦρ(N).
+(216) in aber den|Scheiter|haufen stürzten|beide, laut aber dröhnte götter|verkündend|es Feuer.
+(217) παννύχιοι(Adj)(N) δʼ(Pt) ἄρα(Pt) τοί(Pt) γε(Pt) πυρῆς(G) ἄμυδις(Adv) φλόγʼ(A) ἔβαλλον(Imp)(Akt)
+(217) die|ganze|Nacht aber doch jene ja der|Scheiter|haufen zugleich Flamme warfen|sie
+(218) φυσῶντες(Prä)(Akt)(N) λιγέως(Adv)· ὃ(Pr)(N) δὲ(Pt) πάννυχος(Adv) ὠκὺς(Adj)(N) Ἀχιλλεὺς(N)
+(218) blasend hell|tönend· er aber die|ganze|Nacht schnell|füßig Achilleus
+(219) χρυσέου(Adj)(G) ἐκ(Prp) κρητῆρος(G) ἑλὼν(AorS)(Akt)(N) δέπας(A) ἀμφικύπελλον(Adj)(A)
+(219) des|goldenen aus Krater genommen|habend Becher zwei|henkeligen
+(220) οἶνον(A) ἀφυσσόμενος(Prä)(M/P)(N) χαμάδις(Adv) χέε(Imp)(Akt), δεῦε(Imp)(Akt) δὲ(Pt) γαῖαν(A)
+(220) Wein abschöpfend zu|Boden goß|er, benetzte|er aber Erde
+(221) ψυχὴν(A) κικλήσκων(Prä)(Akt)(N) Πατροκλῆος(G) δειλοῖο(Adj)(G).
+(221) die|Seele an|rufend des|Patroklos unglücklichen.
+(222) ὡς(Kon) δὲ(Pt) πατὴρ(N) οὗ(Pr)(G) παιδὸς(G) ὀδύρεται(Prä)(M/P) ὀστέα(A) καίων(Prä)(Akt)(N)
+(222) wie aber ein|Vater seines Kindes klagt|er Knochen brennend
+(223) νυμφίου(G), ὅς(Pr)(N) τε(Pt) θανὼν(AorS)(Akt)(N) δειλοὺς(Adj)(A) ἀκάχησε(Aor)(Akt) τοκῆας(A),
+(223) des|Bräutigams, der und gestorben|seiend unglückliche bekümmerte Eltern,
+(224) ὣς(Adv) Ἀχιλεὺς(N) ἑτάροιο(G) ὀδύρετο(Imp)(M/P) ὀστέα(A) καίων(Prä)(Akt)(N),
+(224) so Achilleus des|Gefährten beklagte|er Knochen brennend,
+(225) ἑρπύζων(Prä)(Akt)(N) παρὰ(Prp) πυρκαϊὴν(A) ἁδινὰ(Adj)(A) στεναχίζων(Prä)(Akt)(N).
+(225) kriechend neben den|Scheiter|haufen dicht seufzend.
+(226) ἦμος(Kon) δʼ(Pt) ἑωσφόρος(N) εἶσι(Prä)(Akt) φόως(A) ἐρέων(Prä)(Akt)(N) ἐπὶ(Prp) γαῖαν(A),
+(226) wenn aber Morgenstern geht Licht bringend auf die|Erde,
+(227) ὅν(Pr)(A) τε(Pt) μέτα(Prp) κροκόπεπλος(Adj)(N) ὑπεὶρ(Prp) ἅλα(A) κίδναται(Prä)(M/P) ἠώς(N),
+(227) welchen und nach safran|gewandte über das|Meer breitet|sich Eos,
+(228) τῆμος(Adv) πυρκαϊὴ(N) ἐμαραίνετο(Imp)(M/P), παύσατο(Aor)(Med) δὲ(Pt) φλόξ(N).
+(228) dann Scheiter|haufen verlosch|sich, hörte|auf aber Flamme.
+(229) οἳ(Pr)(N) δʼ(Pt) ἄνεμοι(N) πάλιν(Adv) αὖτις(Adv) ἔβαν(AorS)(Akt) οἶκον(A) δὲ(Pt) νέεσθαι(Prä)(M/P)(Inf)
+(229) sie aber Winde wieder abermals gingen Heim aber zurück|zukehren
+(230) Θρηΐκιον(Adj)(A) κατὰ(Prp) πόντον(A)· ὃ(Pr)(N) δʼ(Pt) ἔστενεν(Imp)(Akt) οἴδματι(D) θύων(Prä)(Akt)(N).
+(230) thrakischen entlang des|Meeres· er aber stöhnte im|Schwall brausend.
+(231) Πηλεΐδης(N) δʼ(Pt) ἀπὸ(Prp) πυρκαϊῆς(G) ἑτέρωσε(Adv) λιασθεὶς(Aor)(Pas)(N)
+(231) der|Peleide aber von der|Scheiter|haufen zur|Seite|hin ab|gewichen
+(232) κλίνθη(Aor)(Pas) κεκμηώς(Per)(Akt)(N), ἐπὶ(Prp) δὲ(Pt) γλυκὺς(Adj)(N) ὕπνος(N) ὄρουσεν(AorS)(Akt)·
+(232) legte|sich ermüdet|seiend, auf aber süßer Schlaf sprang|herzu·
+(233) οἳ(Pr)(N) δʼ(Pt) ἀμφʼ(Prp) Ἀτρεΐωνα(A) ἀολλέες(Adj)(N) ἠγερέθοντο(Imp)(M/P)·
+(233) sie aber um den|Atreiden gedrängt sammelten|sich·
+(234) τῶν(Pr)(G) μιν(Pr)(A) ἐπερχομένων(Prä)(M/P)(G) ὅμαδος(N) καὶ(Kon) δοῦπος(N) ἔγειρεν(Imp)(Akt),
+(234) deren ihn heran|kommend|er Lärm und Getöse weckte,
+(235) ἕζετο(Imp)(M/P) δʼ(Pt) ὀρθωθεὶς(Aor)(Pas)(N) καί(Kon) σφεας(Pr)(A) πρὸς(Prp) μῦθον(A) ἔειπεν(AorS)(Akt)·
+(235) setzte|sich aber auf|gerichtet und sie zu Rede sprach·
+(236) Ἀτρεΐδη(V) τε(Pt) καὶ(Kon) ἄλλοι(Adj)(N) ἀριστῆες(N) Παναχαιῶν(G),
+(236) Atride und auch andere Beste der|All|Achaier,
+(237) πρῶτον(Adv) μὲν(Pt) κατὰ(Prp) πυρκαϊὴν(A) σβέσατʼ(Aor)(Akt)(Imv) αἴθοπι(Adj)(D) οἴνῳ(D)
+(237) zuerst zwar an den|Scheiter|haufen löschet dunkel|schimmerndem Wein
+(238) πᾶσαν(Adj)(A), ὁπόσσον(Pr)(A) ἐπέσχε(Aor)(Akt) πυρὸς(G) μένος(N)· αὐτὰρ(Kon) ἔπειτα(Adv)
+(238) ganz|und|gar, so|weit|als anhielt des|Feuers Kraft· aber darnach
+(239) ὀστέα(A) Πατρόκλοιο(G) Μενοιτιάδαο(G) λέγωμεν(Prä)(Akt)(Knj)
+(239) die|Knochen des|Patroklos des|Menoitiaden lesen|wir|aus
+(240) εὖ(Adv) διαγιγνώσκοντες(Prä)(Akt)(N)· ἀριφραδέα(Adj)(N) δὲ(Pt) τέτυκται(Per)(M/P)·
+(240) gut unterscheidend· sehr|deutlich aber ist|geworden·
+(241) ἐν(Prp) μέσσῃ(Adj)(D) γὰρ(Pt) ἔκειτο(Imp)(M/P) πυρῇ(D), τοὶ(Pr)(N) δʼ(Pt) ἄλλοι(Adj)(N) ἄνευθεν(Adv)
+(241) in der|mittleren denn lag Scheiter|haufen, die aber anderen abseits
+(242) ἐσχατιῇ(D) καίοντʼ(Prä)(Akt)(N) ἐπιμὶξ(Adv) ἵπποι(N) τε(Pt) καὶ(Kon) ἄνδρες(N).
+(242) am|Rande brennend durch|einander Pferde und auch Männer.
+(243) καὶ(Kon) τὰ(Art)(A) μὲν(Pt) ἐν(Prp) χρυσέῃ(Adj)(D) φιάλῃ(D) καὶ(Kon) δίπλακι(Adj)(D) δημῷ(D)
+(243) und dieses zwar in golden|er Schale und doppelt|gefalteter Fett|schicht
+(244) θείομεν(Prä)(Akt), εἰς(Prp) ὅ(Pr)(A) κεν(Pt) αὐτὸς(Pr)(N) ἐγὼν(Pr)(N) Ἄϊδι(D) κεύθωμαι(Prä)(Med)(Knj).
+(244) setzen|wir, bis|zu dem|Zeitpunkt wo|dann selbst ich dem|Hades ver|birge|mich.
+(245) τύμβον(A) δʼ(Pt) οὐ(Pt) μάλα(Adv) πολλὸν(Adj)(A) ἐγὼ(Pr)(N) πονέεσθαι(Prä)(M/P)(Inf) ἄνωγα(Per)(Akt),
+(245) Grabhügel aber nicht sehr groß ich zu|arbeiten befohlen|habe,
+(246) ἀλλʼ(Kon) ἐπιεικέα(Adj)(A) τοῖον(Adj)(A)· ἔπειτα(Adv) δὲ(Pt) καὶ(Kon) τὸν(Art)(A) Ἀχαιοὶ(N)
+(246) sondern angemessenen solchen· danach aber auch ihn die|Achaier
+(247) εὐρύν(Adj)(A) θʼ(Pt) ὑψηλόν(Adj)(A) τε(Pt) τιθήμεναι(Prä)(M/P)(Inf), οἵ(Pr)(N) κεν(Pt) ἐμεῖο(Pr)(G)
+(247) breiten und hochen und zu|setzen, die wohl meiner
+(248) δεύτεροι(Adj)(N) ἐν(Prp) νήεσσι(D) πολυκλήϊσι(Adj)(D) λίπησθε(AorS)(Med).
+(248) als|Zweite in Schiffen viel|bankigen zurück|bleibet.
+(249) ὣς(Adv) ἔφαθʼ(Imp)(M/P), οἳ(Pr)(N) δʼ(Pt) ἐπίθοντο(AorS)(Med) ποδώκεϊ(Adj)(D) Πηλεΐωνι(D).
+(249) so sprach|er, sie aber gehorchten dem|schnell|füßigen Peleion.
+(250) πρῶτον(Adv) μὲν(Pt) κατὰ(Prp) πυρκαϊὴν(A) σβέσαν(Aor)(Akt) αἴθοπι(Adj)(D) οἴνῳ(D)
+(250) zuerst zwar an den|Scheiter|haufen löschten|sie dunkel|schimmerndem Wein
+(251) ὅσσον(Pr)(A) ἐπὶ(Prp) φλὸξ(N) ἦλθε(AorS)(Akt), βαθεῖα(Adj)(N) δὲ(Pt) κάππεσε(Aor)(Akt) τέφρη(N)·
+(251) so|weit wie|weit Flamme ging, tiefe aber bedeckte Asche·
+(252) κλαίοντες(Prä)(Akt)(N) δʼ(Pt) ἑτάροιο(G) ἐνηέος(Adj)(G) ὀστέα(A) λευκὰ(Adj)(A)
+(252) weinend aber des|Gefährten freundlichen Knochen weiße
+(253) ἄλλεγον(Imp)(Akt) ἐς(Prp) χρυσέην(Adj)(A) φιάλην(A) καὶ(Kon) δίπλακα(A) δημόν(A),
+(253) lasen|sie|aus in goldene Schale und doppel|gefaltetes Fett,
+(254) ἐν(Prp) κλισίῃσι(D) δὲ(Pt) θέντες(AorS)(Akt)(N) ἑανῷ(Adj)(D) λιτὶ(Adj)(D) κάλυψαν(Aor)(Akt)·
+(254) in den|Hütten aber gesetzt|habend feinem schlichtem bedeckten|sie·
+(255) τορνώσαντο(Aor)(Med) δὲ(Pt) σῆμα(A) θεμείλιά(A) τε(Pt) προβάλοντο(Aor)(Med)
+(255) drehten|sie|an aber Grab|zeichen Fundamente und legten|vor
+(256) ἀμφὶ(Prp) πυρήν(A)· εἶθαρ(Adv) δὲ(Pt) χυτὴν(Adj)(A) ἐπὶ(Prp) γαῖαν(A) ἔχευαν(Imp)(Akt),
+(256) um den|Scheiter|haufen· sogleich aber geschüttete auf Erde schütteten|sie,
+(257) χεύαντες(Prä)(Akt)(N) δὲ(Pt) τὸ(Art)(A) σῆμα(A) πάλιν(Adv) κίον(AorS)(Akt). αὐτὰρ(Kon) Ἀχιλλεὺς(N)
+(257) schüttend aber das Grab|zeichen wieder gingen|sie. doch Achilleus
+(258) αὐτοῦ(Adv) λαὸν(A) ἔρυκε(Imp)(Akt) καὶ(Kon) ἵζανεν(Imp)(Akt) εὐρὺν(Adj)(A) ἀγῶνα(A),
+(258) dort das|Volk hielt|zurück und ließ|setzen weiten Wett|kampf,
+(259) νηῶν(G) δʼ(Pt) ἔκφερʼ(Imp)(Akt) ἄεθλα(A) λέβητάς(A) τε(Pt) τρίποδάς(A) τε(Pt)
+(259) der|Schiffe aber trug|er|hinaus Preise Kessel und Drei|füße und
+(260) ἵππους(A) θʼ(Pt) ἡμιόνους(A) τε(Pt) βοῶν(G) τʼ(Pt) ἴφθιμα(Adj)(A) κάρηνα(A),
+(260) Pferde und Maul|tiere und der|Rinder und mächtige Hörner,
+(261) ἠδὲ(Kon) γυναῖκας(A) ἐϋζώνους(Adj)(A) πολιόν(Adj)(A) τε(Pt) σίδηρον(A).
+(261) und Frauen wohl|gegürtete grauen und Eisen.
+(262) ἱππεῦσιν(D) μὲν(Pt) πρῶτα(Adv) ποδώκεσιν(Adj)(D) ἀγλάʼ(Adj)(A) ἄεθλα(A)
+(262) den|Reitern zwar zuerst schnell|füßigen prächtige Preise
+(263) θῆκε(AorS)(Akt) γυναῖκα(A) ἄγεσθαι(Prä)(M/P)(Inf) ἀμύμονα(Adj)(A) ἔργα(A) ἰδυῖαν(Per)(Akt)(A)
+(263) setzte|er eine|Frau weg|zuführen tadellose Werke kundige
+(264) καὶ(Kon) τρίποδʼ(A) ὠτώεντα(Adj)(A) δυωκαιεικοσίμετρον(Adj)(A)
+(264) und Drei|fuß mit|Henkeln zwei|und|zwanzig|maßig
+(265) τῷ(Pr)(D) πρώτῳ(Adj)(D)· ἀτὰρ(Kon) αὖ(Adv) τῷ(Pr)(D) δευτέρῳ(Adj)(D) ἵππον(A) ἔθηκεν(AorS)(Akt)
+(265) dem Ersten· aber wieder dem Zweiten Stute setzte|er
+(266) ἑξέτεʼ(Adj)(A) ἀδμήτην(Adj)(A) βρέφος(A) ἡμίονον(A) κυέουσαν(Prä)(Akt)(A)·
+(266) sechs|jährig un|gezähmte Junges Maultier tragend·
+(267) αὐτὰρ(Kon) τῷ(Pr)(D) τριτάτῳ(Adj)(D) ἄπυρον(Adj)(A) κατέθηκε(AorS)(Akt) λέβητα(A)
+(267) aber dem Dritten ungefeuerten stellte|er|hin Kessel
+(268) καλὸν(Adj)(A) τέσσαρα(Adj)(A) μέτρα(A) κεχανδότα(Per)(Akt)(A) λευκὸν(Adj)(A) ἔτʼ(Pt) αὔτως(Adv)·
+(268) schönen vier Maße weit|ge|öffneten glänzend|weißen noch so|selbst·
+(269) τῷ(Art)(D) δὲ(Pt) τετάρτῳ(Adj)(D) θῆκε(Aor)(Akt) δύω(Adj) χρυσοῖο(G) τάλαντα(A),
+(269) dem aber vierten setzte|er zwei des|Goldes Talente,
+(270) πέμπτῳ(Adj)(D) δʼ(Pt) ἀμφίθετον(Adj)(A) φιάλην(A) ἀπύρωτον(Adj)(A) ἔθηκε(Aor)(Akt).
+(270) dem|fünften aber zwei|henkelig Schale ungefeuert setzte|er|hin.
+(271) στῆ(AorS)(Akt) δʼ(Pt) ὀρθὸς(Adj)(N) καὶ(Kon) μῦθον(A) ἐν(Prp) Ἀργείοισιν(D) ἔειπεν(AorS)(Akt)·
+(271) trat|hin aber aufrecht und Wort in den|Argivern sprach|er·
+(272) Ἀτρεΐδη(V) τε(Pt) καὶ(Kon) ἄλλοι(Adj)(N) ἐϋκνήμιδες(Adj)(N) Ἀχαιοὶ(N)
+(272) Atride und auch andere wohl|schien|beinige Achaier
+(273) ἱππῆας(A) τάδʼ(Pr)(A) ἄεθλα(A) δεδεγμένα(Per)(M/P)(N) κεῖτʼ(Prä)(M/P) ἐν(Prp) ἀγῶνι(D).
+(273) Reiter diese Preise empfangen|seiend liegen in Wettkampf.
+(274) εἰ(Kon) μὲν(Pt) νῦν(Adv) ἐπὶ(Prp) ἄλλῳ(Adj)(D) ἀεθλεύοιμεν(Prä)(Akt)(Op) Ἀχαιοὶ(N)
+(274) wenn zwar jetzt bei anderem wetteiferten|wir Achaier
+(275) ἦ(Pt) τʼ(Pt) ἂν(Pt) ἐγὼ(Pr)(N) τὰ(Art)(A) πρῶτα(Adj)(A)(Sup) λαβὼν(AorS)(Akt)(N) κλισίην(A) δὲ(Pt) φεροίμην(Prä)(Med)(Op).
+(275) ja und wohl ich die ersten genommen|habend Hütte aber trüge|ich.
+(276) ἴστε(Per)(Akt)(Imv) γὰρ(Pt) ὅσσον(Pr)(A) ἐμοὶ(Pr)(D) ἀρετῇ(D) περιβάλλετον(Prä)(Akt)(Du) ἵπποι(N)·
+(276) wisset denn wie|sehr mir an|Tüchtigkeit umgeben|sie Pferde·
+(277) ἀθάνατοί(Adj)(N) τε(Pt) γάρ(Pt) εἰσι(Prä)(Akt), Ποσειδάων(N) δὲ(Pt) πόρʼ(Aor)(Akt) αὐτοὺς(Pr)(A)
+(277) un|sterblich und denn sind, Poseidon aber gab sie
+(278) πατρὶ(D) ἐμῷ(Adj)(D) Πηλῆϊ(D), ὃ(Pr)(N) δʼ(Pt) αὖτʼ(Adv) ἐμοὶ(Pr)(D) ἐγγυάλιξεν(Aor)(Akt).
+(278) dem|Vater meinem Peleus, der aber wiederum mir übergab.
+(279) ἀλλʼ(Kon) ἤτοι(Pt) μὲν(Pt) ἐγὼ(Pr)(N) μενέω(Prä)(Akt) καὶ(Kon) μώνυχες(Adj)(N) ἵπποι(N)·
+(279) sondern freilich zwar ich bleibe und ein|huf|ige Pferde·
+(280) τοίου(Adj)(G) γὰρ(Pt) κλέος(A) ἐσθλὸν(Adj)(A) ἀπώλεσαν(Aor)(Akt) ἡνιόχοιο(G)
+(280) solchen denn Ruhm edlen verloren des|Lenkers
+(281) ἠπίου(Adj)(G), ὅς(Pr)(N) σφωϊν(Pr)(Du)(G) μάλα(Adv) πολλάκις(Adv) ὑγρὸν(Adj)(A) ἔλαιον(A)
+(281) des|freundlichen, der ihrer|beider sehr oftmals feuchtes Öl
+(282) χαιτάων(G) κατέχευε(Imp)(Akt) λοέσσας(AorS)(Akt)(A) ὕδατι(D) λευκῷ(Adj)(D).
+(282) der|Mähnen goss|hinüber gewaschen|habend mit|Wasser weißem.
+(283) τὸν(Art)(A) τώ(Pr)(Du)(N) γʼ(Pt) ἑσταότες(Per)(Akt)(N) πενθείετον(Prä)(Akt)(Du), οὔδεϊ(D) δέ(Pt) σφι(Pr)(D)
+(283) den jene|beiden ja gestanden|seiend trauern|sie, auf|Boden aber ihnen
+(284) χαῖται(N) ἐρηρέδαται(Per)(M/P), τὼ(Pr)(Du)(N) δʼ(Pt) ἕστατον(Per)(Akt)(Du) ἀχνυμένω(Prä)(M/P)(D) κῆρ(D).
+(284) die|Haare sind|angeschmiegt, jene|beiden aber standen|sie betrübt|seiend am|Herzen.
+(285) ἄλλοι(Adj)(N) δὲ(Pt) στέλλεσθε(Prä)(M/P)(Imv) κατὰ(Prp) στρατόν(A), ὅς(Pr)(N) τις(Pr)(N) Ἀχαιῶν(G)
+(285) andere aber rüstet|euch durch das|Heer, wer irgend der|Achaier
+(286) ἵπποισίν(D) τε(Pt) πέποιθε(Per)(Akt) καὶ(Kon) ἅρμασι(D) κολλητοῖσιν(Adj)(D).
+(286) den|Pferden und vertraut und den|Wagen zusammen|gefügten.
+(287) ὣς(Adv) φάτο(Imp)(M/P) Πηλεΐδης(N), ταχέες(Adj)(N) δʼ(Pt) ἱππῆες(N) ἄγερθεν(Aor)(Pas).
+(287) so sprach|er der|Peleide, schnelle aber Reiter wurden|versammelt.
+(288) ὦρτο(Aor)(Med) πολὺ(Adv) πρῶτος(Adj)(N)(Sup) μὲν(Pt) ἄναξ(N) ἀνδρῶν(G) Εὔμηλος(N)
+(288) erhob|sich sehr zuerst zwar Fürst der|Männer Eumelos
+(289) Ἀδμήτου(G) φίλος(Adj)(N) υἱός(N), ὃς(Pr)(N) ἱπποσύνῃ(D) ἐκέκαστο(Per)(M/P)·
+(289) des|Admetos lieber Sohn, der an|Pferde|kunst ragte|hervor·
+(290) τῷ(Pr)(D) δʼ(Pt) ἐπὶ(Prp) Τυδεΐδης(N) ὦρτο(Aor)(Med) κρατερὸς(Adj)(N) Διομήδης(N),
+(290) ihm aber darauf Tydeides erhob|sich stark Diomedes,
+(291) ἵππους(A) δὲ(Pt) Τρῳοὺς(Adj)(A) ὕπαγε(Imp)(Akt) ζυγόν(A), οὕς(Pr)(A) ποτʼ(Pt) ἀπηύρα(Aor)(Akt)
+(291) Pferde aber troische führte|unter das|Joch, welche einst beraubte
+(292) Αἰνείαν(A), ἀτὰρ(Kon) αὐτὸν(Pr)(A) ὑπεξεσάωσεν(Aor)(Akt) Ἀπόλλων(N).
+(292) Aineias, aber ihn heraus|rettete Apollon.
+(293) τῷ(Pr)(D) δʼ(Pt) ἄρʼ(Pt) ἐπʼ(Prp) Ἀτρεΐδης(N) ὦρτο(Aor)(Med) ξανθὸς(Adj)(N) Μενέλαος(N)
+(293) ihm aber doch darauf der|Atride erhob|sich blond|haariger Menelaos
+(294) διογενής(Adj)(N), ὑπὸ(Prp) δὲ(Pt) ζυγὸν(A) ἤγαγεν(Aor)(Akt) ὠκέας(Adj)(A) ἵππους(A)
+(294) gott|geboren, unter aber das|Joch führte schnelle Pferde
+(295) Αἴθην(A) τὴν(Art)(A) Ἀγαμεμνονέην(Adj)(A) τὸν(Art)(A) ἑόν(Adj)(A) τε(Pt) Πόδαργον(A)·
+(295) Aithen die agamemnonische den eigenen und Podargon·
+(296) τὴν(Art)(A) Ἀγαμέμνονι(D) δῶκʼ(Aor)(Akt) Ἀγχισιάδης(N) Ἐχέπωλος(N)
+(296) die dem|Agamemnon gab Anchisiade Echepolos
+(297) δῶρʼ(A), ἵνα(Kon) μή(Pt) οἱ(Pr)(D) ἕποιθʼ(Prä)(Med)(Op) ὑπὸ(Prp) Ἴλιον(A) ἠνεμόεσσαν(Adj)(A),
+(297) Gaben, damit nicht ihm folge|er unter Ilion wind|durchwehte,
+(298) ἀλλʼ(Kon) αὐτοῦ(Adv) τέρποιτο(Prä)(Med)(Op) μένων(Prä)(Akt)(N)· μέγα(Adv) γάρ(Pt) οἱ(Pr)(D) ἔδωκε(Aor)(Akt)
+(298) sondern dort ergötze|er|sich verweilend· sehr denn ihm gab
+(299) Ζεὺς(N) ἄφενος(A), ναῖεν(Imp)(Akt) δʼ(Pt) ὅ(Pr)(N) γʼ(Pt) ἐν(Prp) εὐρυχόρῳ(Adj)(D) Σικυῶνι(D)·
+(299) Zeus Reichtum, wohnte aber dieser ja in weit|räumigen Sikyon·
+(300) τὴν(Art)(A) ὅ(Pr)(N) γʼ(Pt) ὑπὸ(Prp) ζυγὸν(A) ἦγε(Imp)(Akt) μέγα(Adv) δρόμου(G) ἰσχανόωσαν(Prä)(Akt)(A).
+(300) die dieser ja unter das|Joch führte sehr vom|Lauf hemmend.
+(301) Ἀντίλοχος(N) δὲ(Pt) τέταρτος(Adj)(N) ἐΰτριχας(Adj)(A) ὁπλίσαθʼ(Aor)(Med) ἵππους(A),
+(301) Antilochos aber vierter wohl|mähnige rüstete|er Pferde,
+(302) Νέστορος(G) ἀγλαὸς(Adj)(N) υἱὸς(N) ὑπερθύμοιο(Adj)(G) ἄνακτος(G)
+(302) des|Nestors strahlender Sohn hoch|mütigen Fürsten
+(303) τοῦ(Art)(G) Νηληϊάδαο(G)· Πυλοιγενέες(Adj)(N) δέ(Pt) οἱ(Pr)(D) ἵπποι(N)
+(303) des Neleiden· pylos|geborene aber ihm Pferde
+(304) ὠκύποδες(Adj)(N) φέρον(Imp)(Akt)(N) ἅρμα(A)· πατὴρ(N) δέ(Pt) οἱ(Pr)(D) ἄγχι(Adv) παραστὰς(AorS)(Akt)(N)
+(304) schnell|füßige trugen Wagen· Vater aber ihm nahe beigestanden|habend
+(305) μυθεῖτʼ(Imp)(M/P) εἰς(Prp) ἀγαθὰ(Adj)(A) φρονέων(Prä)(Akt)(N) νοέοντι(Prä)(Akt)(D) καὶ(Kon) αὐτῷ(Pr)(D)·
+(305) redete auf Gutes denkend bedenkendem und ihm|selbst·
+(306) Ἀντίλοχʼ(V) ἤτοι(Pt) μέν(Pt) σε(Pr)(A) νέον(Adj)(A) περ(Pt) ἐόντʼ(Prä)(Akt)(A) ἐφίλησαν(Aor)(Akt)
+(306) Antilochos freilich zwar dich jung sogar seiend liebten
+(307) Ζεύς(N) τε(Pt) Ποσειδάων(N) τε(Pt), καὶ(Kon) ἱπποσύνας(A) ἐδίδαξαν(Aor)(Akt)
+(307) Zeus und Poseidon und, auch Pferde|künste lehrten
+(308) παντοίας(Adj)(A)· τὼ(Pr)(Du)(N) καί(Kon) σε(Pr)(A) διδασκέμεν(Prä)(Akt)(Inf) οὔ(Pt) τι(Pr)(A) μάλα(Adv) χρεώ(N)·
+(308) mannig|fache· jene|beiden auch dich zu|unterrichten nicht etwas sehr Bedarf·
+(309) οἶσθα(Per)(Akt) γὰρ(Pt) εὖ(Adv) περὶ(Prp) τέρμαθʼ(A) ἑλισσέμεν(Prä)(Akt)(Inf)· ἀλλά(Kon) τοι(Pr)(D) ἵπποι(N)
+(309) weißt|du denn gut um Wendemale zu|kreisen· doch dir Pferde
+(310) βάρδιστοι(Adj)(N)(Sup) θείειν(Prä)(Akt)(Inf)· τώ(Pr)(Du)(N) τʼ(Pt) οἴω(Prä)(Akt) λοίγιʼ(A) ἔσεσθαι(Fu)(Med)(Inf).
+(310) träg|lichste zu|laufen· jene|beiden und meine|ich Un|heil werden|zu|sein.
+(311) τῶν(Pr)(G) δʼ(Pt) ἵπποι(N) μὲν(Pt) ἔασιν(Prä)(Akt) ἀφάρτεροι(Adj)(N), οὐδὲ(Pt) μὲν(Pt) αὐτοὶ(Pr)(N)
+(311) deren aber Pferde zwar sind zurück|liegend, und|nicht zwar sie|selbst
+(312) πλείονα(Adj)(A) ἴσασιν(Prä)(Akt) σέθεν(Pr)(G) αὐτοῦ(Adv) μητίσασθαι(Aor)(Med)(Inf).
+(312) mehr wissen als|du hier auszuklügeln.
+(313) ἀλλʼ(Kon) ἄγε(Prä)(Akt)(Imv) δὴ(Pt) σὺ(Pr)(N) φίλος(Adj)(N) μῆτιν(A) ἐμβάλλεο(Prä)(M/P)(Imv) θυμῷ(D)
+(313) sondern auf|denn ja du Freund Plan wirf|hinein in|den|Sinn
+(314) παντοίην(Adj)(A), ἵνα(Kon) μή(Pt) σε(Pr)(A) παρεκπροφύγῃσιν(Aor)(Akt)(Knj) ἄεθλα(N).
+(314) mannig|fache, damit nicht dich vorbei|hinaus|ent|fliehen|mögen Preise.
+(315) μήτι(Pt) τοι(Pr)(D) δρυτόμος(N) μέγʼ(Adv) ἀμείνων(Adj)(N)(Kmp) ἠὲ(Kon) βίηφι(D)·
+(315) keineswegs dir Holz|fäller sehr besser oder an|Kraft·
+(316) μήτι(Pt) δʼ(Pt) αὖτε(Adv) κυβερνήτης(N) ἐνὶ(Prp) οἴνοπι(Adj)(D) πόντῳ(D)
+(316) keineswegs aber wiederum Steuermann in wein|farbigem Meer
+(317) νῆα(A) θοὴν(Adj)(A) ἰθύνει(Prä)(Akt) ἐρεχθομένην(Prä)(M/P)(A) ἀνέμοισι(D)·
+(317) Schiff schnell|es lenkt erschüttert|werdend von|Winden·
+(318) μήτι(Pt) δʼ(Pt) ἡνίοχος(N) περιγίγνεται(Prä)(M/P) ἡνιόχοιο(G).
+(318) keineswegs aber Lenker übertrifft des|Lenkers.
+(319) ἀλλʼ(Kon) ὃς(Pr)(N) μέν(Pt) θʼ(Pt) ἵπποισι(D) καὶ(Kon) ἅρμασιν(D) οἷσι(Pr)(D) πεποιθὼς(Per)(Akt)(N)
+(319) sondern wer zwar und den|Pferden und den|Wagen seinen vertraut|habend
+(320) ἀφραδέως(Adv) ἐπὶ(Prp) πολλὸν(Adj)(A) ἑλίσσεται(Prä)(M/P) ἔνθα(Adv) καὶ(Kon) ἔνθα(Adv),
+(320) un|verständig über viel wendet|sich hier und dort,
+(321) ἵπποι(N) δὲ(Pt) πλανόωνται(Prä)(M/P)(N) ἀνὰ(Prp) δρόμον(A), οὐδὲ(Pt) κατίσχει(Prä)(Akt)·
+(321) Pferde aber irren|umher entlang die|Bahn, und|nicht hält|an·
+(322) ὃς(Pr)(N) δέ(Pt) κε(Pt) κέρδεα(A) εἰδῇ(Prä)(Akt)(Knj) ἐλαύνων(Prä)(Akt)(N) ἥσσονας(Adj)(A)(Kmp) ἵππους(A),
+(322) wer aber wohl Listen kenne treibend geringere Pferde,
+(323) αἰεὶ(Adv) τέρμʼ(A) ὁρόων(Prä)(Akt)(N) στρέφει(Prä)(Akt) ἐγγύθεν(Adv), οὐδέ(Pt) ἑ(Pr)(A) λήθει(Prä)(Akt)
+(323) immer Wende|mal schauend wendet nahe, und|nicht ihn entgeht
+(324) ὅππως(Kon) τὸ(Art)(A) πρῶτον(Adj)(A)(Sup) τανύσῃ(Aor)(Akt)(Knj) βοέοισιν(Adj)(D) ἱμᾶσιν(D),
+(324) wie das erste spannen|möge Rinder|haut|igen Riemen,
+(325) ἀλλʼ(Kon) ἔχει(Prä)(Akt) ἀσφαλέως(Adv) καὶ(Kon) τὸν(Art)(A) προὔχοντα(Prä)(Akt)(A) δοκεύει(Prä)(Akt).
+(325) sondern hält sicher und den voraus|ragenden beobachtet.
+(326) σῆμα(A) δέ(Pt) τοι(Pr)(D) ἐρέω(Fu)(Akt) μάλʼ(Adv) ἀριφραδές(Adj)(A), οὐδέ(Pt) σε(Pr)(A) λήσει(Fu)(Akt).
+(326) Zeichen aber dir werde|ich|sagen sehr deutlich, und|nicht dich wird|entgehen.
+(327) ἕστηκε(Per)(Akt) ξύλον(N) αὖον(Adj)(N) ὅσον(Pr)(A) τʼ(Pt) ὄργυιʼ(A) ὑπὲρ(Prp) αἴης(G)
+(327) steht Holz|stamm trocken so|viel|wie und eine|Klafter über der|Erde
+(328) ἢ(Kon) δρυὸς(G) ἢ(Kon) πεύκης(G)· τὸ(Pr)(N) μὲν(Pt) οὐ(Pt) καταπύθεται(Prä)(M/P) ὄμβρῳ(D),
+(328) entweder der|Eiche oder der|Föhre· dies zwar nicht vermodert vom|Regen,
+(329) λᾶε(Du)(N) δὲ(Pt) τοῦ(Pr)(G) ἑκάτερθεν(Adv) ἐρηρέδαται(Per)(M/P) δύο(Adj) λευκὼ(Adj)(Du)(A)
+(329) Steine aber davon beiderseits sind|angestellt zwei weiße
+(330) ἐν(Prp) ξυνοχῇσιν(D) ὁδοῦ(G), λεῖος(Adj)(N) δʼ(Pt) ἱππόδρομος(N) ἀμφὶς(Adv)
+(330) an Zusammen|stößen der|Straße, glatt aber Pferde|bahn ringsum
+(331) ἤ(Kon) τευ(Pr)(G) σῆμα(N) βροτοῖο(G) πάλαι(Adv) κατατεθνηῶτος(Per)(Akt)(G),
+(331) oder eines Zeichen Sterblichen einst verstorben|seienden,
+(332) ἢ(Kon) τό(Pr)(N) γε(Pt) νύσσα(N) τέτυκτο(Plq)(M/P) ἐπὶ(Prp) προτέρων(Adj)(G)(Kmp) ἀνθρώπων(G),
+(332) oder dies ja Wende|pfahl war|bereitet bei früheren Menschen,
+(333) καὶ(Kon) νῦν(Adv) τέρματʼ(A) ἔθηκε(AorS)(Akt) ποδάρκης(Adj)(N) δῖος(Adj)(N) Ἀχιλλεύς(N).
+(333) und jetzt Wende|male setzte schnell|füßiger göttlicher Achilleus.
+(334) τῷ(Pr)(D) σὺ(Pr)(N) μάλʼ(Adv) ἐγχρίμψας(AorS)(Akt)(N) ἐλάαν(Prä)(Akt)(Inf) σχεδὸν(Adv) ἅρμα(A) καὶ(Kon) ἵππους(A),
+(334) diesem du sehr sich|anschmiegend|habend zu|treiben nahe Wagen und Pferde,
+(335) αὐτὸς(Pr)(N) δὲ(Pt) κλινθῆναι(Aor)(Pas)(Inf) ἐϋπλέκτῳ(Adj)(D) ἐνὶ(Prp) δίφρῳ(D)
+(335) selbst aber geneigt|werden wohl|geflochtenen in Wagen|sitz
+(336) ἦκʼ(Aor)(Akt)(Imv) ἐπʼ(Prp) ἀριστερὰ(Adj)(A) τοῖιν(Pr)(Du)(D)· ἀτὰρ(Kon) τὸν(Art)(A) δεξιὸν(Adj)(A) ἵππον(A)
+(336) führe|hin zu linke|Seite der|beiden· aber den rechten Pferd
+(337) κένσαι(Aor)(Akt)(Inf) ὁμοκλήσας(AorS)(Akt)(N), εἶξαί(Aor)(Akt)(Inf) τέ(Pt) οἱ(Pr)(D) ἡνία(A) χερσίν(D).
+(337) zu|an|stacheln zugerufen|habend, nachgeben|zu|lassen und ihm Zügel Händen.
+(338) ἐν(Prp) νύσσῃ(D) δέ(Pt) τοι(Pr)(D) ἵππος(N) ἀριστερὸς(Adj)(N) ἐγχριμφθήτω(Aor)(Pas)(Imv),
+(338) an Wende|pfahl aber dir Pferd linkes möge|sich|anschmiegen,
+(339) ὡς(Kon) ἄν(Pt) τοι(Pr)(D) πλήμνη(N) γε(Pt) δοάσσεται(Prä)(M/P) ἄκρον(Adj)(A) ἱκέσθαι(AorS)(M/P)(Inf)
+(339) damit wohl dir Nabe ja scheint Spitze zu|erreichen
+(340) κύκλου(G) ποιητοῖο(Adj)(G)· λίθου(G) δʼ(Pt) ἀλέασθαι(Aor)(M/P)(Inf) ἐπαυρεῖν(Aor)(Akt)(Inf),
+(340) des|Rades kunst|vollen· des|Steins aber sich|hüten zu|berühren,
+(341) μή(Pt) πως(Adv) ἵππους(A) τε(Pt) τρώσῃς(Aor)(Akt)(Knj) κατά(Prp) θʼ(Pt) ἅρματα(A) ἄξῃς(Aor)(Akt)(Knj)·
+(341) nicht etwa Pferde und verwundest herab und Wagen mit|ziehest·
+(342) χάρμα(N) δὲ(Pt) τοῖς(Pr)(D) ἄλλοισιν(Adj)(D), ἐλεγχείη(N) δὲ(Pt) σοὶ(Pr)(D) αὐτῷ(Adj)(D)
+(342) Freude aber den anderen, Schmach aber dir selbst
+(343) ἔσσεται(Fu)(M/P)· ἀλλὰ(Kon) φίλος(Adj)(N) φρονέων(Prä)(Akt)(N) πεφυλαγμένος(Per)(M/P)(N) εἶναι(Prä)(Akt)(Inf).
+(343) wird|sein· sondern freundlich denkend behütet zu|sein.
+(344) εἰ(Kon) γάρ(Pt) κʼ(Pt) ἐν(Prp) νύσσῃ(D) γε(Pt) παρεξελάσῃσθα(Aor)(M/P)(Knj) διώκων(Prä)(Akt)(N),
+(344) wenn denn wohl an Wende|pfahl ja vorbei|überholest verfolgend,
+(345) οὐκ(Pt) ἔσθʼ(Prä)(Akt) ὅς(Pr)(N) κέ(Pt) σʼ(Pr)(A) ἕλῃσι(Aor)(Akt)(Knj) μετάλμενος(AorS)(M/P)(N) οὐδὲ(Pt) παρέλθῃ(Aor)(Akt)(Knj),
+(345) nicht ist jemand wohl dich erfasse zugesprungen|seiend und|nicht überhole,
+(346) οὐδʼ(Kon) εἴ(Kon) κεν(Pt) μετόπισθεν(Adv) Ἀρίονα(A) δῖον(Adj)(A) ἐλαύνοι(Prä)(Akt)(Op)
+(346) auch|nicht wenn wohl von|hinten Arion göttlichen triebe
+(347) Ἀδρήστου(G) ταχὺν(Adj)(A) ἵππον(A), ὃς(Pr)(N) ἐκ(Prp) θεόφιν(D) γένος(N) ἦεν(Imp)(Akt),
+(347) des|Adrestos schnellen Pferd, der aus Göttern Geschlecht war,
+(348) ἢ(Kon) τοὺς(Pr)(A) Λαομέδοντος(G), οἳ(Pr)(N) ἐνθάδε(Adv) γʼ(Pt) ἔτραφεν(AorS)(Pas) ἐσθλοί(Adj)(N).
+(348) oder die des|Laomedon, die hier doch wurden|aufgezogen edle.
+(349) ὣς(Adv) εἰπὼν(AorS)(Akt)(N) Νέστωρ(N) Νηλήϊος(Adj)(N) ἂψ(Adv) ἐνὶ(Prp) χώρῃ(D)
+(349) so gesagt|habend Nestor Neleïer wieder in Ort
+(350) ἕζετʼ(Imp)(M/P), ἐπεὶ(Kon) ᾧ(Pr)(D) παιδὶ(D) ἑκάστου(Adj)(G) πείρατʼ(A) ἔειπε(AorS)(Akt).
+(350) setzte|sich, als seinem Sohn jedes Grenzen sagte.
+(351) Μηριόνης(N) δʼ(Pt) ἄρα(Pt) πέμπτος(Adj)(N) ἐΰτριχας(Adj)(A) ὁπλίσαθʼ(Aor)(Med) ἵππους(A).
+(351) Meriones aber doch fünfter wohl|mähnige rüstete|sich Pferde.
+(352) ἂν(Pt) δʼ(Pt) ἔβαν(AorS)(Akt) ἐς(Prp) δίφρους(A), ἐν(Prp) δὲ(Pt) κλήρους(A) ἐβάλοντο(Aor)(M/P)·
+(352) wohl aber gingen in Wagen|sitze, in aber Lose warfen|sie|sich·
+(353) πάλλʼ(Imp)(Akt) Ἀχιλεύς(N), ἐκ(Prp) δὲ(Pt) κλῆρος(N) θόρε(AorS)(Akt) Νεστορίδαο(G)
+(353) schwang Achilleus, aus aber Los sprang des|Nestoriden
+(354) Ἀντιλόχου(G)· μετὰ(Prp) τὸν(Pr)(A) δʼ(Pt) ἔλαχε(AorS)(Akt) κρείων(N) Εὔμηλος(N)·
+(354) des|Antilochos· nach dem aber fiel|zu Herr Eumelos·
+(355) τῷ(Pr)(D) δʼ(Pt) ἄρʼ(Pt) ἐπʼ(Prp) Ἀτρεΐδης(N) δουρὶ(D) κλειτὸς(Adj)(N) Μενέλαος(N),
+(355) dem aber doch darauf Atreide mit|Speer berühmt Menelaos,
+(356) τῷ(Pr)(D) δʼ(Pt) ἐπὶ(Prp) Μηριόνης(N) λάχʼ(AorS)(Akt) ἐλαυνέμεν(Prä)(Akt)(Inf)· ὕστατος(Adj)(N)(Sup) αὖτε(Adv)
+(356) dem aber darauf Meriones fiel|zu zu|fahren· aller|letzter wiederum
+(357) Τυδεΐδης(N) ὄχʼ(Adv) ἄριστος(Adj)(N)(Sup) ἐὼν(Prä)(Akt)(N) λάχʼ(AorS)(Akt) ἐλαυνέμεν(Prä)(Akt)(Inf) ἵππους(A).
+(357) Tydeide bei|weitem bester seiend fiel|zu zu|fahren Pferde.
+(358) στὰν(AorS)(Akt)(Du) δὲ(Pt) μεταστοιχί(Adv), σήμηνε(AorS)(Akt) δὲ(Pt) τέρματʼ(A) Ἀχιλλεὺς(N)
+(358) standen aber in|Reihe, zeigte aber Wende|male Achilleus
+(359) τηλόθεν(Adv) ἐν(Prp) λείῳ(Adj)(D) πεδίῳ(D)· παρὰ(Prp) δὲ(Pt) σκοπὸν(A) εἷσεν(AorS)(Akt)
+(359) von|ferne in glatt|er Ebene· neben aber Wacht|posten setzte
+(360) ἀντίθεον(Adj)(A) Φοίνικα(A) ὀπάονα(A) πατρὸς(G) ἑοῖο(Adj)(G),
+(360) gott|gleichen Phoenix Gefährten des|Vaters seines,
+(361) ὡς(Kon) μεμνέῳτο(Per)(M/P)(Op) δρόμους(A) καὶ(Kon) ἀληθείην(A) ἀποείποι(Aor)(Akt)(Op).
+(361) damit erinnerte|sei Läufe und Wahrheit wieder|sagen|möge.
+(362) οἳ(Pr)(N) δʼ(Pt) ἅμα(Adv) πάντες(Adj)(N) ἐφʼ(Prp) ἵπποιιν(Du)(D) μάστιγας(A) ἄειραν(Aor)(Akt),
+(362) sie aber zusammen alle auf den|beiden|Pferden Peitschen hoben,
+(363) πέπληγόν(Aor)(Akt) θʼ(Pt) ἱμᾶσιν(D), ὁμόκλησάν(Aor)(Akt) τʼ(Pt) ἐπέεσσιν(D)
+(363) schlugen und mit|Riemen, riefen|zu und mit|Worten
+(364) ἐσσυμένως(Adv)· οἳ(Pr)(N) δʼ(Pt) ὦκα(Adv) διέπρησσον(Imp)(Akt) πεδίοιο(G)
+(364) eilends· jene aber schnell durch|maßen der|Ebene
+(365) νόσφι(Adv) νεῶν(G) ταχέως(Adv)· ὑπὸ(Prp) δὲ(Pt) στέρνοισι(D) κονίη(N)
+(365) fern der|Schiffe schnell· unter aber den|Brüsten Staub
+(366) ἵστατʼ(Imp)(M/P) ἀειρομένη(Prä)(M/P)(N) ὥς(Kon) τε(Pt) νέφος(N) ἠὲ(Kon) θύελλα(N),
+(366) stellte|sich auf|gehoben|werdend wie auch Wolke oder Sturm,
+(367) χαῖται(N) δʼ(Pt) ἐρρώοντο(Imp)(M/P) μετὰ(Prp) πνοιῇς(D) ἀνέμοιο(G).
+(367) Mähnen aber flossen|hin mit Wehen des|Windes.
+(368) ἅρματα(N) δʼ(Pt) ἄλλοτε(Adv) μὲν(Pt) χθονὶ(D) πίλνατο(Imp)(M/P) πουλυβοτείρῃ(Adj)(D),
+(368) Wagen aber einmal zwar Erde der|viel|nährenden näherten|sich,
+(369) ἄλλοτε(Adv) δʼ(Pt) ἀΐξασκε(Imp)(Akt) μετήορα(Adj)(A)· τοὶ(Pr)(N) δʼ(Pt) ἐλατῆρες(N)
+(369) einmal aber sprang|auf in|die|Höhe· die aber Lenker
+(370) ἕστασαν(Plq)(Akt) ἐν(Prp) δίφροισι(D), πάτασσε(Imp)(Akt) δὲ(Pt) θυμὸς(N) ἑκάστου(Adj)(G)
+(370) standen in Wagen|sitzen, schlug aber Sinn jedes
+(371) νίκης(G) ἱεμένων(Prä)(M/P)(G)· κέκλοντο(Imp)(M/P) δὲ(Pt) οἷσιν(Pr)(D) ἕκαστος(Adj)(N)
+(371) des|Sieges begehrend|seienden· riefen aber den|eigenen jeder
+(372) ἵπποις(D), οἳ(Pr)(N) δʼ(Pt) ἐπέτοντο(Imp)(M/P) κονίοντες(Prä)(Akt)(N) πεδίοιο(G).
+(372) den|Pferden, sie aber flogen Staub|aufwirbelnd der|Ebene.
+(373) ἀλλʼ(Kon) ὅτε(Kon) δὴ(Pt) πύματον(Adj)(A) τέλεον(Adj)(A) δρόμον(A) ὠκέες(Adj)(N) ἵπποι(N)
+(373) aber als ja letzten vollendet Lauf schnelle Pferde
+(374) ἂψ(Adv) ἐφʼ(Prp) ἁλὸς(G) πολιῆς(Adj)(G), τότε(Adv) δὴ(Pt) ἀρετή(N) γε(Pt) ἑκάστου(Adj)(G)
+(374) wieder auf des|Meeres grau|schimmernden, dann ja Tüchtigkeit ja jedes
+(375) φαίνετʼ(Prä)(M/P), ἄφαρ(Adv) δʼ(Pt) ἵπποισι(D) τάθη(AorS)(Pas) δρόμος(N)· ὦκα(Adv) δʼ(Pt) ἔπειτα(Adv)
+(375) zeigt|sich, sogleich aber den|Pferden wurde|gestreckt Lauf· schnell aber danach
+(376) αἳ(Pr)(N) Φηρητιάδαο(G) ποδώκεες(Adj)(N) ἔκφερον(Imp)(Akt) ἵπποι(N).
+(376) die des|Pheretiaden schnell|füßigen trugen|hinaus Pferde.
+(377) τὰς(Art)(A) δὲ(Pt) μετʼ(Prp) ἐξέφερον(Imp)(Akt) Διομήδεος(G) ἄρσενες(Adj)(N) ἵπποι(N)
+(377) jene aber nach trugen|hinaus des|Diomedes männliche Pferde
+(378) Τρώϊοι(Adj)(N), οὐδέ(Pt) τι(Pr)(A) πολλὸν(Adj)(A) ἄνευθʼ(Adv) ἔσαν(Imp)(Akt), ἀλλὰ(Kon) μάλʼ(Adv) ἐγγύς(Adv)·
+(378) troische, und|nicht irgend|etwas viel entfernt waren, sondern sehr nah·
+(379) αἰεὶ(Adv) γὰρ(Pt) δίφρου(G) ἐπιβησομένοισιν(Fu)(M/P)(D) ἐΐκτην(Imp)(Akt)(Du),
+(379) immer denn des|Wagens auf|steigen|werdenden schienen,
+(380) πνοιῇ(D) δʼ(Pt) Εὐμήλοιο(G) μετάφρενον(A) εὐρέε(Adj)(Du)(A) τʼ(Pt) ὤμω(Du)(A)
+(380) mit|dem|Atem aber des|Eumelos Rücken breite und Schultern
+(381) θέρμετʼ(Imp)(M/P)· ἐπʼ(Prp) αὐτῷ(Pr)(D) γὰρ(Pt) κεφαλὰς(A) καταθέντε(AorS)(Akt)(Du)(N) πετέσθην(Aor)(M/P)(Du).
+(381) wurden|gewärmt· auf ihm denn Köpfe nieder|gelegt|habend flogen.
+(382) καί(Kon) νύ(Pt) κεν(Pt) ἢ(Kon) παρέλασσʼ(Aor)(Akt) ἢ(Kon) ἀμφήριστον(Adj)(A) ἔθηκεν(Aor)(Akt),
+(382) und nun wohl entweder überholte oder un|entschieden machte,
+(383) εἰ(Kon) μὴ(Kon) Τυδέος(G) υἷϊ(D) κοτέσσατο(Aor)(Med) Φοῖβος(N) Ἀπόλλων(N),
+(383) wenn nicht des|Tydeus dem|Sohn erzürnte|sich Phoibos Apollon,
+(384) ὅς(Pr)(N) ῥά(Pt) οἱ(Pr)(D) ἐκ(Prp) χειρῶν(G) ἔβαλεν(Aor)(Akt) μάστιγα(A) φαεινήν(Adj)(A).
+(384) der ja ihm aus Händen warf Peitsche helle.
+(385) τοῖο(Pr)(G) δʼ(Pt) ἀπʼ(Prp) ὀφθαλμῶν(G) χύτο(Aor)(M/P) δάκρυα(N) χωομένοιο(Prä)(M/P)(G),
+(385) dessen aber von Augen floß Tränen des|Zürnenden,
+(386) οὕνεκα(Kon) τὰς(Art)(A) μὲν(Pt) ὅρα(Imp)(Akt) ἔτι(Adv) καὶ(Kon) πολὺ(Adj)(A) μᾶλλον(Adv)(Kmp) ἰούσας(Prä)(Akt)(A),
+(386) weil die zwar sah noch und viel mehr gehend,
+(387) οἳ(Pr)(N) δέ(Pt) οἱ(Pr)(D) ἐβλάφθησαν(Aor)(Pas) ἄνευ(Prp) κέντροιο(G) θέοντες(Prä)(Akt)(N).
+(387) sie aber ihm wurden|beschädigt ohne Stachel laufend.
+(388) οὐδʼ(Pt) ἄρʼ(Pt) Ἀθηναίην(A) ἐλεφηράμενος(Aor)(Med)(N) λάθʼ(AorS)(Akt) Ἀπόλλων(N)
+(388) und|nicht doch Athene betrogen|habend entging Apollon
+(389) Τυδεΐδην(A), μάλα(Adv) δʼ(Pt) ὦκα(Adv) μετέσσυτο(Aor)(Med) ποιμένα(A) λαῶν(G),
+(389) den|Tydeiden, sehr aber schnell eilte|nach Hirten des|Volkes,
+(390) δῶκε(Aor)(Akt) δέ(Pt) οἱ(Pr)(D) μάστιγα(A), μένος(A) δʼ(Pt) ἵπποισιν(D) ἐνῆκεν(Aor)(Akt)·
+(390) gab aber ihm Peitsche, Kraft aber den|Pferden sandte|hinein·
+(391) ἣ(Pr)(N) δὲ(Pt) μετʼ(Prp) Ἀδμήτου(G) υἱὸν(A) κοτέουσʼ(Prä)(M/P)(N) ἐβεβήκει(Plq)(Akt),
+(391) sie aber nach des|Admetos Sohn zürnend war|gegangen,
+(392) ἵππειον(Adj)(A) δέ(Pt) οἱ(Pr)(D) ἦξε(Aor)(Akt) θεὰ(N) ζυγόν(A)· αἳ(Pr)(N) δέ(Pt) οἱ(Pr)(D) ἵπποι(N)
+(392) Pferde aber ihm sandte Göttin Joch· die aber ihm Pferde
+(393) ἀμφὶς(Adv) ὁδοῦ(G) δραμέτην(Aor)(Akt)(Du), ῥυμὸς(N) δʼ(Pt) ἐπὶ(Prp) γαῖαν(A) ἐλύσθη(Aor)(Pas).
+(393) abseits der|Straße rannten, Deichsel aber auf die|Erde wurde|gelöst.
+(394) αὐτὸς(Pr)(N) δʼ(Pt) ἐκ(Prp) δίφροιο(G) παρὰ(Prp) τροχὸν(A) ἐξεκυλίσθη(Aor)(Pas),
+(394) selbst aber aus des|Wagens neben Rad wurde|hinaus|gerollt,
+(395) ἀγκῶνάς(A) τε(Pt) περιδρύφθη(Aor)(Pas) στόμα(A) τε(Pt) ῥῖνάς(A) τε(Pt),
+(395) Ellenbogen und wurde|ringsum|aufgerissen Mund und Nasen|löcher und,
+(396) θρυλίχθη(Aor)(Pas) δὲ(Pt) μέτωπον(N) ἐπʼ(Prp) ὀφρύσι(D)· τὼ(Pr)(Du)(N) δέ(Pt) οἱ(Pr)(D) ὄσσε(Du)(N)
+(396) wurde|zerschlagen aber Stirn auf den|Brauen· die|beiden aber ihm Augen
+(397) δακρυόφι(Adj)(D) πλῆσθεν(Aor)(Pas)(Du), θαλερὴ(Adj)(N) δέ(Pt) οἱ(Pr)(D) ἔσχετο(Aor)(M/P) φωνή(N).
+(397) von|Tränen füllten|sich, stark aber ihm hielt|sich Stimme.
+(398) Τυδεΐδης(N) δὲ(Pt) παρατρέψας(Aor)(Akt)(N) ἔχε(Imp)(Akt) μώνυχας(Adj)(A) ἵππους(A),
+(398) Tydeide aber ab|gewendet|habend hielt ein|huf|ige Pferde,
+(399) πολλὸν(Adj)(A) τῶν(Art)(G) ἄλλων(Adj)(G) ἐξάλμενος(Aor)(Med)(N)· ἐν(Prp) γὰρ(Pt) Ἀθήνη(N)
+(399) viel der anderen heraus|gesprungen|habend· in denn Athene
+(400) ἵπποις(D) ἧκε(Aor)(Akt) μένος(A) καὶ(Kon) ἐπʼ(Prp) αὐτῷ(Pr)(D) κῦδος(A) ἔθηκε(Aor)(Akt).
+(400) den|Pferden sandte Kraft und auf ihm Ruhm setzte.
+(401) τῷ(Pr)(D) δʼ(Pt) ἄρʼ(Pt) ἐπʼ(Prp) Ἀτρεΐδης(N) εἶχε(Imp)(Akt) ξανθὸς(Adj)(N) Μενέλαος(N).
+(401) dem aber doch darauf Atreide hielt blond Menelaos.
+(402) Ἀντίλοχος(N) δʼ(Pt) ἵπποισιν(D) ἐκέκλετο(Imp)(M/P) πατρὸς(G) ἑοῖο(Adj)(G)·
+(402) Antilochos aber den|Pferden rief|er|zu des|Vaters seines|eigenen·
+(403) ἔμβητον(AorS)(Akt)(Imv)(Du) καὶ(Kon) σφῶϊ(Pr)(Du)(D)· τιταίνετον(Prä)(Akt)(Imv)(Du) ὅττι(Kon) τάχιστα(Adv)(Sup).
+(403) steigt|ein und ihr|beide· spannt damit so|rasch|wie|möglich.
+(404) ἤτοι(Pt) μὲν(Pt) κείνοισιν(Pr)(D) ἐριζέμεν(Prä)(Akt)(Inf) οὔ(Pt) τι(Pr)(A) κελεύω(Prä)(Akt)
+(404) freilich zwar jenen zu|wetteifern und|nicht irgend befehle|ich
+(405) Τυδεΐδεω(G) ἵπποισι(D) δαΐφρονος(Adj)(G), οἷσιν(Pr)(D) Ἀθήνη(N)
+(405) des|Tydeiden den|Pferden kampf|sinnigen, denen Athene
+(406) νῦν(Adv) ὤρεξε(Aor)(Akt) τάχος(A) καὶ(Kon) ἐπʼ(Prp) αὐτῷ(Pr)(D) κῦδος(A) ἔθηκεν(Aor)(Akt)·
+(406) jetzt gab Schnelligkeit und auf ihm Ruhm setzte·
+(407) ἵππους(A) δʼ(Pt) Ἀτρεΐδαο(G) κιχάνετε(Prä)(Akt)(Imv), μὴ(Pt) δὲ(Pt) λίπησθον(Prä)(M/P)(Imv)(Du),
+(407) die|Pferde aber des|Atreiden erreicht, nicht aber bleibet|zurück,
+(408) καρπαλίμως(Adv), μὴ(Pt) σφῶϊν(Pr)(Du)(G) ἐλεγχείην(A) καταχεύῃ(Prä)(Akt)(Knj)
+(408) schnell, nicht eurer|beider Schmach übergieße
+(409) Αἴθη(N) θῆλυς(Adj)(N) ἐοῦσα(Prä)(M/P)(N)· τί(Pr) ἢ(Kon) λείπεσθε(Prä)(M/P) φέριστοι(Adj)(V)
+(409) Aithe weiblich seiend· warum oder bleibt|ihr|zurück die|Besten
+(410) ὧδε(Adv) γὰρ(Pt) ἐξερέω(Fu)(Akt), καὶ(Pt) μὴν(Pt) τετελεσμένον(Per)(M/P)(A) ἔσται(Fu)(Akt)·
+(410) so denn werde|ich|aus|sagen, und ja vollendet|seiend wird|sein·
+(411) οὐ(Pt) σφῶϊν(Pr)(Du)(D) κομιδὴ(N) παρὰ(Prp) Νέστορι(D) ποιμένι(D) λαῶν(G)
+(411) nicht euch|beiden Heim|führung bei Nestor Hirten des|Volkes
+(412) ἔσσεται(Fu)(M/P), αὐτίκα(Adv) δʼ(Pt) ὔμμε(Pr)(A) κατακτενεῖ(Fu)(Akt) ὀξέϊ(Adj)(D) χαλκῷ(D),
+(412) wird|sein, sofort aber euch wird|töten scharfem Erz,
+(413) αἴ(Kon) κʼ(Pt) ἀποκηδήσαντε(Aor)(Akt)(Du)(N) φερώμεθα(Prä)(M/P) χεῖρον(Adj)(A)(Kmp) ἄεθλον(A).
+(413) wenn wohl vernachlässigt|habend bringen|wir schlechteren Preis.
+(414) ἀλλʼ(Kon) ἐφομαρτεῖτον(Prä)(Akt)(Imv)(Du) καὶ(Kon) σπεύδετον(Prä)(Akt)(Imv)(Du) ὅττι(Kon) τάχιστα(Adv)(Sup)·
+(414) sondern folget|ihr|nach und eilt damit so|rasch|wie|möglich·
+(415) ταῦτα(Pr)(A) δʼ(Pt) ἐγὼν(Pr)(N) αὐτὸς(Pr)(N) τεχνήσομαι(Fu)(Med) ἠδὲ(Kon) νοήσω(Fu)(Akt)
+(415) dieses aber ich selbst werde|ich|aus|denken und werde|ich|bedenken
+(416) στεινωπῷ(Adj)(D) ἐν(Prp) ὁδῷ(D) παραδύμεναι(Prä)(M/P)(Inf), οὐδέ(Kon) με(Pr)(A) λήσει(Fu)(Akt).
+(416) engem in Weg durch|schlüpfen, und|nicht mich wird|entgehen.
+(417) ὣς(Adv) ἔφαθʼ(Imp)(M/P), οἳ(Pr)(N) δὲ(Pt) ἄνακτος(G) ὑποδείσαντες(Aor)(Akt)(N) ὁμοκλὴν(A)
+(417) so sprach|er, sie aber des|Herrn erschrocken|habend Zuruf
+(418) μᾶλλον(Adv)(Kmp) ἐπιδραμέτην(AorS)(Akt)(Du) ὀλίγον(Adj)(A) χρόνον(A)· αἶψα(Adv) δʼ(Pt) ἔπειτα(Adv)
+(418) mehr liefen|beide|heran kurzen Zeitraum· sogleich aber dann
+(419) στεῖνος(A) ὁδοῦ(G) κοίλης(Adj)(G) ἴδεν(AorS)(Akt) Ἀντίλοχος(N) μενεχάρμης(Adj)(N).
+(419) Enge der|Straße hohlen sah Antilochos kampf|standhaft.
+(420) ῥωχμὸς(N) ἔην(Imp)(M/P) γαίης(G), ᾗ(Pr)(D) χειμέριον(Adj)(A) ἀλὲν(AorS)(Akt)(A) ὕδωρ(N)
+(420) Erosions|riss war der|Erde, wo winterlich getrieben|habend Wasser
+(421) ἐξέρρηξεν(Aor)(Akt) ὁδοῖο(G), βάθυνε(Aor)(Akt) δὲ(Pt) χῶρον(A) ἅπαντα(Adj)(A)·
+(421) brach|heraus der|Straße, vertiefte aber Ort ganzen·
+(422) τῇ(Pr)(D) ῥʼ(Pt) εἶχεν(Imp)(Akt) Μενέλαος(N) ἁματροχιὰς(A) ἀλεείνων(Prä)(Akt)(N).
+(422) dort ja hielt Menelaos gleich|spuren meidend.
+(423) Ἀντίλοχος(N) δὲ(Pt) παρατρέψας(Aor)(Akt)(N) ἔχε(Imp)(Akt) μώνυχας(Adj)(A) ἵππους(A)
+(423) Antilochos aber ab|gewendet|habend hielt ein|huf|ige Pferde
+(424) ἐκτὸς(Adv) ὁδοῦ(G), ὀλίγον(Adj)(A) δὲ(Pt) παρακλίνας(Aor)(Akt)(N) ἐδίωκεν(Imp)(Akt).
+(424) außerhalb der|Straße, ein|wenig aber zur|Seite|gebeugt|habend verfolgte.
+(425) Ἀτρεΐδης(N) δʼ(Pt) ἔδεισε(Aor)(Akt) καὶ(Kon) Ἀντιλόχῳ(D) ἐγεγώνει(Plq)(Akt)·
+(425) Atreide aber fürchtete|sich und dem|Antilochos rief|er·
+(426) Ἀντίλοχʼ(V) ἀφραδέως(Adv) ἱππάζεαι(Prä)(M/P), ἀλλʼ(Kon) ἄνεχʼ(Prä)(Akt)(Imv) ἵππους(A)·
+(426) Antilochos un|verständig reitest|du, sondern halte|an Pferde·
+(427) στεινωπὸς(Adj)(N) γὰρ(Pt) ὁδός(N), τάχα(Adv) δʼ(Pt) εὐρυτέρη(Adj)(N)(Kmp) παρελάσσαι(Aor)(Akt)(Knj)·
+(427) eng denn Weg, bald aber breiter vorbei|lassen|möge·
+(428) μή(Pt) πως(Pt) ἀμφοτέρους(Adj)(A) δηλήσεαι(Fu)(M/P) ἅρματι(D) κύρσας(Aor)(Akt)(N).
+(428) nicht etwa beide wirst|schädigen mit|Wagen zusammen|gestoßen|habend.
+(429) ὣς(Adv) ἔφατʼ(Imp)(M/P), Ἀντίλοχος(N) δʼ(Pt) ἔτι(Adv) καὶ(Pt) πολὺ(Adv) μᾶλλον(Adv)(Kmp) ἔλαυνε(Imp)(Akt)
+(429) so sprach|er, Antilochos aber noch und viel mehr trieb
+(430) κέντρῳ(D) ἐπισπέρχων(Prä)(Akt)(N) ὡς(Kon) οὐκ(Pt) ἀΐοντι(Prä)(Akt)(D) ἐοικώς(Per)(Akt)(N).
+(430) mit|Stachel antreibend wie nicht hörend|seiendem gleichend.
+(431) ὅσσα(Pr)(A) δὲ(Pt) δίσκου(G) οὖρα(N) κατωμαδίοιο(Adj)(G) πέλονται(Prä)(M/P),
+(431) so|viel aber des|Diskus Ränder glatt|geschliffenen sind,
+(432) ὅν(Pr)(A) τʼ(Pt) αἰζηὸς(N) ἀφῆκεν(Aor)(Akt) ἀνὴρ(N) πειρώμενος(Prä)(M/P)(N) ἥβης(G),
+(432) den und Jüngling ließ|fahren Mann versuchend|seiend der|Jugend,
+(433) τόσσον(Adj)(A) ἐπιδραμέτην(AorS)(Akt)(Du)· αἳ(Pr)(N) δʼ(Pt) ἠρώησαν(Aor)(Akt) ὀπίσσω(Adv)
+(433) so|weit liefen|beide|heran· sie aber eilten zurück
+(434) Ἀτρεΐδεω(G)· αὐτὸς(Pr)(N) γὰρ(Pt) ἑκὼν(Adj)(N) μεθέηκεν(Aor)(Akt) ἐλαύνειν(Prä)(Akt)(Inf)
+(434) des|Atreiden· selbst denn willig ließ|nach zu|treiben
+(435) μή(Pt) πως(Pt) συγκύρσειαν(Aor)(Akt)(Knj) ὁδῷ(D) ἔνι(Prp) μώνυχες(Adj)(N) ἵπποι(N),
+(435) nicht etwa zusammen|stoßen|mögen auf|Weg in ein|huf|ige Pferde,
+(436) δίφρους(A) τʼ(Pt) ἀνστρέψειαν(Aor)(Akt)(Knj) ἐϋπλεκέας(Adj)(A), κατὰ(Prp) δʼ(Pt) αὐτοὶ(Pr)(N)
+(436) Wagen|sitze und um|wenden|mögen wohl|geflochtene, hinab aber sie|selbst
+(437) ἐν(Prp) κονίῃσι(D) πέσοιεν(Aor)(Akt)(Knj) ἐπειγόμενοι(Prä)(M/P)(N) περὶ(Prp) νίκης(G).
+(437) in Staube mögen|fallen sich|beeilend um Sieg.
+(438) τὸν(Pr)(A) καὶ(Pt) νεικείων(Prä)(Akt)(N) προσέφη(Aor)(Akt) ξανθὸς(Adj)(N) Μενέλαος(N)·
+(438) den auch scheltend sprach|an blond Menelaos·
+(439) Ἀντίλοχʼ(V) οὔ(Pt) τις(Pr)(N) σεῖο(Pr)(G) βροτῶν(G) ὀλοώτερος(Adj)(N)(Kmp) ἄλλος(Adj)(N)·
+(439) Antilochos nicht jemand von|dir der|Sterblichen verderblicher anderer·
+(440) ἔρρʼ(AorS)(Akt)(Imv), ἐπεὶ(Kon) οὔ(Pt) σʼ(Pr)(A) ἔτυμόν(Adj)(A) γε(Pt) φάμεν(Imp)(Akt) πεπνῦσθαι(Per)(M/P)(Inf) Ἀχαιοί(N).
+(440) geh|weg, da nicht dich wahr doch sagen|wir verständig|zu|sein Achaier.
+(441) ἀλλʼ(Kon) οὐ(Pt) μὰν(Pt) οὐδʼ(Kon) ὧς(Adv) ἄτερ(Prp) ὅρκου(G) οἴσῃ(Fu)(Akt) ἄεθλον(A).
+(441) aber nicht wahrlich auch|nicht so ohne Eid wirst|fort|tragen Preis.
+(442) ὣς(Adv) εἰπὼν(AorS)(Akt)(N) ἵπποισιν(D) ἐκέκλετο(Imp)(M/P) φώνησέν(Aor)(Akt) τε(Pt)·
+(442) so gesagt|habend den|Pferden rief|er|zu rief|er und·
+(443) μή(Pt) μοι(Pr)(D) ἐρύκεσθον(Prä)(M/P)(Imv)(Du) μὴ(Pt) δʼ(Pt) ἕστατον(Per)(Akt)(Du) ἀχνυμένω(Prä)(M/P)(D) κῆρ(D).
+(443) nicht mir haltet|ihr|zurück nicht aber steht|ihr betrübten Herzen.
+(444) φθήσονται(Fu)(M/P) τούτοισι(Pr)(D) πόδες(N) καὶ(Kon) γοῦνα(N) καμόντα(Aor)(Akt)(A)
+(444) werden|zuvorkommen diesen Füße und Knie ermüdet|habend
+(445) ἢ(Kon) ὑμῖν(Pr)(D)· ἄμφω(Adj)(Du)(N) γὰρ(Pt) ἀτέμβονται(Prä)(M/P) νεότητος(G).
+(445) als euch· beide denn werden|beraubt der|Jugend.
+(446) ὣς(Adv) ἔφαθʼ(Imp)(M/P), οἳ(Pr)(N) δὲ(Pt) ἄνακτος(G) ὑποδείσαντες(Aor)(Akt)(N) ὁμοκλὴν(A)
+(446) so sprach|er, sie aber des|Herrn erschrocken|habend Zuruf
+(447) μᾶλλον(Adv)(Kmp) ἐπιδραμέτην(AorS)(Akt)(Du), τάχα(Adv) δέ(Pt) σφισιν(Pr)(D) ἄγχι(Adv) γένοντο(AorS)(M/P)(Du).
+(447) mehr liefen|beide|heran, bald aber ihnen nahe wurden.
+(448) Ἀργεῖοι(N) δʼ(Pt) ἐν(Prp) ἀγῶνι(D) καθήμενοι(Prä)(M/P)(N) εἰσορόωντο(Imp)(M/P)
+(448) Argiver aber im Wett|kampf sitzend schauten|zu
+(449) ἵππους(A)· τοὶ(Pr)(N) δὲ(Pt) πέτοντο(Imp)(M/P) κονίοντες(Prä)(Akt)(N) πεδίοιο(G).
+(449) Pferde· jene aber flogen Staub|aufwirbelnd der|Ebene.
+(450) πρῶτος(Adj)(N)(Sup) δʼ(Pt) Ἰδομενεὺς(N) Κρητῶν(G) ἀγὸς(N) ἐφράσαθʼ(Aor)(Med) ἵππους(A)·
+(450) zuerst aber Idomeneus der|Krēter Anführer bemerkte|er Pferde·
+(451) ἧστο(Plq)(M/P) γὰρ(Pt) ἐκτὸς(Adv) ἀγῶνος(G) ὑπέρτατος(Adj)(N)(Sup) ἐν(Prp) περιωπῇ(D)·
+(451) hatte|gesessen denn außerhalb des|Wettkampfs höchster in Aussichts|platz·
+(452) τοῖο(Pr)(G) δʼ(Pt) ἄνευθεν(Adv) ἐόντος(Prä)(M/P)(G) ὁμοκλητῆρος(G) ἀκούσας(Aor)(Akt)(N)
+(452) dessen aber fern seienden Zurufers gehört|habend
+(453) ἔγνω(Aor)(Akt), φράσσατο(Aor)(Med) δʼ(Pt) ἵππον(A) ἀριπρεπέα(Adj)(A) προὔχοντα(Prä)(Akt)(A),
+(453) erkannte, merkte|er|sich aber Pferd sehr|auffällig vor|ragend,
+(454) ὃς(Pr)(N) τὸ(Art)(A) μὲν(Pt) ἄλλο(Adj)(A) τόσον(Adj)(A) φοῖνιξ(N) ἦν(Imp)(M/P), ἐν(Prp) δὲ(Pt) μετώπῳ(D)
+(454) welcher das zwar andere so|sehr rot|braun war, auf aber Stirn
+(455) λευκὸν(Adj)(A) σῆμα(A) τέτυκτο(Plq)(M/P) περίτροχον(Adj)(A) ἠΰτε(Kon) μήνη(N).
+(455) weißes Zeichen war|gemacht|worden rings|umlaufend gleich|wie Mond.
+(456) στῆ(AorS)(Akt) δʼ(Pt) ὀρθὸς(Adj)(N) καὶ(Kon) μῦθον(A) ἐν(Prp) Ἀργείοισιν(D) ἔειπεν(AorS)(Akt)·
+(456) trat|hin aber aufrecht und Wort unter den|Argivern sprach|er·
+(457) ὦ(ij) φίλοι(Adj)(V) Ἀργείων(G) ἡγήτορες(N) ἠδὲ(Kon) μέδοντες(Prä)(Akt)(N)
+(457) o Freunde der|Argiver Anführer und Herrschende
+(458) οἶος(Adj)(N) ἐγὼν(Pr)(N) ἵππους(A) αὐγάζομαι(Prä)(M/P) ἦε(Kon) καὶ(Kon) ὑμεῖς(Pr)(N)
+(458) allein ich Pferde sehe|ich oder auch ihr
+(459) ἄλλοι(Adj)(N) μοι(Pr)(D) δοκέουσι(Prä)(M/P) παροίτεροι(Adj)(N) ἔμμεναι(Prä)(M/P)(Inf) ἵπποι(N),
+(459) andere mir scheinen|sie vor|aus|seiend zu|sein Pferde,
+(460) ἄλλος(Adj)(N) δʼ(Pt) ἡνίοχος(N) ἰνδάλλεται(Prä)(M/P)· αἳ(Pr)(N) δέ(Pt) που(Adv) αὐτοῦ(Adv)
+(460) ein|anderer aber Lenker erscheint· jene aber irgend|wo selbst|dort
+(461) ἔβλαβεν(Aor)(Akt) ἐν(Prp) πεδίῳ(D), αἳ(Pr)(N) κεῖσέ(Adv) γε(Pt) φέρτεραι(Adj)(N)(Kmp) ἦσαν(Imp)(Akt)·
+(461) wurden|beeinträchtigt in der|Ebene, jene dort doch besser waren·
+(462) ἤτοι(Pt) γὰρ(Pt) τὰς(Art)(A) πρῶτα(Adv) ἴδον(AorS)(Akt) περὶ(Prp) τέρμα(A) βαλούσας(Aor)(Akt)(A),
+(462) freilich denn jene zuerst sah|ich um Wend|mal werfend|habend,
+(463) νῦν(Adv) δʼ(Pt) οὔ(Pt) πῃ(Adv) δύναμαι(Prä)(M/P) ἰδέειν(Prä)(Akt)(Inf)· πάντῃ(Adv) δέ(Pt) μοι(Pr)(D) ὄσσε(N)
+(463) jetzt aber nicht irgend|wo kann|ich zu|sehen· überall aber mir Augen
+(464) Τρωϊκὸν(Adj)(A) ἂμ(Prp) πεδίον(A) παπταίνετον(Prä)(Akt)(Du) εἰσορόωντι(Prä)(Akt)(D)·
+(464) trojanisches über Ebene spähen|beide hinein|schauendem·
+(465) ἦε(Kon) τὸν(Pr)(A) ἡνίοχον(A) φύγον(Aor)(Akt) ἡνία(A), οὐδὲ(Pt) δυνάσθη(Aor)(M/P)
+(465) oder den Lenker entflohen|habend Zügel, und|nicht vermochte|er
+(466) εὖ(Adv) σχεθέειν(Prä)(Akt)(Inf) περὶ(Prp) τέρμα(A) καὶ(Kon) οὐκ(Pt) ἐτύχησεν(Aor)(Akt) ἑλίξας(Aor)(Akt)(N)·
+(466) gut fest|halten um Wend|mal und nicht traf|er gedreht|habend·
+(467) ἔνθά(Adv) μιν(Pr)(A) ἐκπεσέειν(Aor)(Akt)(Inf) ὀΐω(Prä)(Akt) σύν(Prp) θʼ(Pt) ἅρματα(A) ἆξαι(Aor)(Akt)(Inf),
+(467) dort ihn hinaus|zu|fallen meine|ich mit und Wagen mitnehmen|zu,
+(468) αἳ(Pr)(N) δʼ(Pt) ἐξηρώησαν(Aor)(Akt), ἐπεὶ(Kon) μένος(A) ἔλλαβε(Aor)(Akt) θυμόν(A).
+(468) jene aber stürmten|hinaus, als Kraft ergriff Sinn.
+(469) ἀλλὰ(Kon) ἴδεσθε(Prä)(M/P)(Imv) καὶ(Kon) ὔμμες(Pr)(N) ἀνασταδόν(Adv)· οὐ(Pt) γὰρ(Pt) ἔγωγε(Pr)(N)
+(469) sondern seht|ihr auch ihr auf|stehend· nicht denn ich|selbst
+(470) εὖ(Adv) διαγιγνώσκω(Prä)(Akt)· δοκέει(Prä)(M/P) δέ(Pt) μοι(Pr)(D) ἔμμεναι(Prä)(M/P)(Inf) ἀνὴρ(N)
+(470) gut unterscheide|ich· scheint|es aber mir zu|sein Mann
+(471) Αἰτωλὸς(Adj)(N) γενεήν(A), μετὰ(Prp) δʼ(Pt) Ἀργείοισιν(Adj)(D) ἀνάσσει(Prä)(Akt)
+(471) Ätolisch durch|Abstammung, unter aber den|Argivern herrscht
+(472) Τυδέος(G) ἱπποδάμου(Adj)(G) υἱὸς(N) κρατερὸς(Adj)(N) Διομήδης(N).
+(472) des|Tydeus Pferde|zähmend Sohn stark Diomedes.
+(473) τὸν(Pr)(A) δʼ(Pt) αἰσχρῶς(Adv) ἐνένιπεν(Aor)(Akt) Ὀϊλῆος(G) ταχὺς(Adj)(N) Αἴας(N)·
+(473) ihn aber schändlich schalt des|Oïleus schnell Aias·
+(474) Ἰδομενεῦ(V) τί(Pr) πάρος(Adv) λαβρεύεαι(Prä)(M/P) αἳ(Pr)(N) δέ(Pt) τʼ(Pt) ἄνευθεν(Adv)
+(474) Idomeneus warum früher prahlst die aber auch von|weitem
+(475) ἵπποι(N) ἀερσίποδες(Adj)(N) πολέος(Adj)(G) πεδίοιο(G) δίενται(Prä)(M/P).
+(475) Pferde luft|füßige des|weiten der|Ebene durch|laufen.
+(476) οὔτε(Pt) νεώτατός(Adj)(N)(Sup) ἐσσι(Prä)(Akt) μετʼ(Prp) Ἀργείοισι(Adj)(D) τοσοῦτον(Adv),
+(476) weder am|jüngsten bist unter den|Argivern so|sehr,
+(477) οὔτέ(Pt) τοι(Pr)(D) ὀξύτατον(Adj)(N)(Sup) κεφαλῆς(G) ἐκδέρκεται(Prä)(M/P) ὄσσε(Du)(N)·
+(477) noch dir schärfstes des|Hauptes schaut|heraus Augen·
+(478) ἀλλʼ(Kon) αἰεὶ(Adv) μύθοις(D) λαβρεύεαι(Prä)(M/P)· οὐδέ(Pt) τί(Pr)(A) σε(Pr)(A) χρὴ(Prä)(Akt)
+(478) sondern immer mit|Worten prahlst· auch|nicht irgend|etwas dich ist|nötig
+(479) λαβραγόρην(Adj)(A) ἔμεναι(Prä)(Akt)(Inf)· πάρα(Adv) γὰρ(Pt) καὶ(Kon) ἀμείνονες(Adj)(N)(Kmp) ἄλλοι(Adj)(N).
+(479) Schwätzer zu|sein· zur|Hand denn auch bessere andere.
+(480) ἵπποι(N) δʼ(Pt) αὐταὶ(Pr)(N) ἔασι(Prä)(Akt) παροίτεραι(Adj)(N)(Kmp), αἳ(Pr)(N) τὸ(Art)(A) πάρος(Adv) περ(Pt),
+(480) Pferde aber selbst sind voraus, die das früher gerade,
+(481) Εὐμήλου(G), ἐν(Prp) δʼ(Pt) αὐτὸς(Pr)(N) ἔχων(Prä)(Akt)(N) εὔληρα(A) βέβηκε(Per)(Akt).
+(481) des|Eumelos, in aber er|selbst haltend gute|Zügel ist|gegangen.
+(482) τὸν(Pr)(A) δὲ(Pt) χολωσάμενος(Aor)(Med)(N) Κρητῶν(G) ἀγὸς(N) ἀντίον(Adv) ηὔδα(Aor)(Akt)·
+(482) den aber erzürnt|worden der|Krēter Anführer entgegen sprach·
+(483) Αἶαν(V) νεῖκος(N) ἄριστε(Adj)(V) κακοφραδὲς(Adj)(N) ἄλλά(Kon) τε(Pt) πάντα(Adj)(A)
+(483) Aias im|Streit Bester schlecht|bedacht aber und alles
+(484) δεύεαι(Prä)(M/P) Ἀργείων(G), ὅτι(Kon) τοι(Pr)(D) νόος(N) ἐστὶν(Prä)(Akt) ἀπηνής(Adj)(N).
+(484) bist|minder der|Argiver, weil dir Sinn ist rau.
+(485) δεῦρό(Adv) νυν(Adv) ἢ(Kon) τρίποδος(G) περιδώμεθον(Aor)(Med)(Knj)(Du) ἠὲ(Kon) λέβητος(G),
+(485) hierher nun entweder um|einen|Dreifuß wetteifern|wir|beide oder um|einen|Kessel,
+(486) ἴστορα(A) δʼ(Pt) Ἀτρεΐδην(A) Ἀγαμέμνονα(A) θείομεν(Prä)(Akt)(Knj) ἄμφω(Pr)(Du)(N),
+(486) Richter aber den|Atreiden Agamemnon setzen|wir wir|beide,
+(487) ὁππότεραι(Pr)(N) πρόσθʼ(Adv) ἵπποι(N), ἵνα(Kon) γνώῃς(Aor)(Akt)(Knj) ἀποτίνων(Prä)(Akt)(N).
+(487) welche|von|beiden vorn Pferde, damit erkennest Strafe|bezahlend.
+(488) ὣς(Adv) ἔφατʼ(Imp)(M/P), ὄρνυτο(Imp)(M/P) δʼ(Pt) αὐτίκʼ(Adv) Ὀϊλῆος(G) ταχὺς(Adj)(N) Αἴας(N)
+(488) so sprach, erhob|sich aber sogleich des|Oïleus schnell Aias
+(489) χωόμενος(Prä)(M/P)(N) χαλεποῖσιν(Adj)(D) ἀμείψασθαι(Aor)(Med)(Inf) ἐπέεσσι(D)·
+(489) zürnend mit|harten zu|erwidern Worten·
+(490) καί(Kon) νύ(Pt) κε(Pt) δὴ(Pt) προτέρω(Adv)(Kmp) ἔτʼ(Pt) ἔρις(N) γένετʼ(Aor)(Med) ἀμφοτέροισιν(Pr)(Du)(D),
+(490) und nun wohl ja weiter noch Zank wäre|geworden den|beiden,
+(491) εἰ(Kon) μὴ(Pt) Ἀχιλλεὺς(N) αὐτὸς(Pr)(N) ἀνίστατο(Imp)(M/P) καὶ(Kon) φάτο(Imp)(M/P) μῦθον(A)·
+(491) wenn nicht Achilleus selbst stand|auf und sprach Wort·
+(492) μηκέτι(Adv) νῦν(Adv) χαλεποῖσιν(Adj)(D) ἀμείβεσθον(Prä)(M/P)(Imv)(Du) ἐπέεσσιν(D)
+(492) nicht|mehr jetzt mit|harten antwortet|ihr|beide Worten
+(493) Αἶαν(V) Ἰδομενεῦ(V) τε(Pt) κακοῖς(Adj)(D), ἐπεὶ(Kon) οὐδὲ(Kon) ἔοικε(Per)(Akt).
+(493) Aias Idomeneus und mit|Schlimmem, da|ja auch|nicht geziemt.
+(494) καὶ(Kon) δʼ(Pt) ἄλλῳ(Pr)(D) νεμεσᾶτον(Prä)(Akt)(Imv)(Du) ὅτις(Pr)(N) τοιαῦτά(Adj)(A) γε(Pt) ῥέζοι(Prä)(Akt)(Op).
+(494) auch doch einem|anderen entrüstet|euch|beide wer solches ja täte.
+(495) ἀλλʼ(Kon) ὑμεῖς(Pr)(N) ἐν(Prp) ἀγῶνι(D) καθήμενοι(Prä)(M/P)(N) εἰσοράασθε(Prä)(M/P)(Imv)
+(495) sondern ihr im Wettkampf sitzend schauet
+(496) ἵππους(A)· οἳ(Pr)(N) δὲ(Pt) τάχʼ(Adv) αὐτοὶ(Pr)(N) ἐπειγόμενοι(Prä)(M/P)(N) περὶ(Prp) νίκης(G)
+(496) Pferde· die aber bald selbst sich|beeilend um den|Sieg
+(497) ἐνθάδʼ(Adv) ἐλεύσονται(Fu)(M/P)· τότε(Adv) δὲ(Pt) γνώσεσθε(Fu)(M/P) ἕκαστος(Adj)(N)
+(497) hierher werden|kommen· dann aber werdet|erkennen jeder
+(498) ἵππους(A) Ἀργείων(G), οἳ(Pr)(N) δεύτεροι(Adj)(N) οἵ(Pr)(N) τε(Pt) πάροιθεν(Adv).
+(498) Pferde der|Argiver, die zweiten die auch vorn.
+(499) ὣς(Adv) φάτο(Imp)(M/P), Τυδεΐδης(N) δὲ(Pt) μάλα(Adv) σχεδὸν(Adv) ἦλθε(AorS)(Akt) διώκων(Prä)(Akt)(N),
+(499) so sprach, Tydeide aber sehr nah kam verfolgend,
+(500) μάστι(D) δʼ(Pt) αἰὲν(Adv) ἔλαυνε(Imp)(Akt) κατωμαδόν(Adv)· οἳ(Pr)(N) δέ(Pt) οἱ(Pr)(D) ἵπποι(N)
+(500) mit|der|Peitsche aber immer trieb dicht|geschlossen· die aber ihm Pferde
+(501) ὑψόσʼ(Adv) ἀειρέσθην(Aor)(Pas)(Du) ῥίμφα(Adv) πρήσσοντε(Prä)(Akt)(Du)(N) κέλευθον(A).
+(501) hoch wurden|erhoben rasch den|Weg|machend die|Bahn.
+(502) αἰεὶ(Adv) δʼ(Pt) ἡνίοχον(A) κονίης(G) ῥαθάμιγγες(N) ἔβαλλον(Imp)(Akt),
+(502) immer aber den|Lenker des|Staubes Tröpfchen trafen,
+(503) ἅρματα(A) δὲ(Pt) χρυσῷ(D) πεπυκασμένα(Per)(M/P)(A) κασσιτέρῳ(D) τε(Pt)
+(503) Wagen aber mit|Gold beschlagen mit|Zinn und
+(504) ἵπποις(D) ὠκυπόδεσσιν(Adj)(D) ἐπέτρεχον(Imp)(Akt)· οὐδέ(Pt) τι(Pr)(A) πολλὴ(Adj)(N)
+(504) mit|Pferden schnell|füßigen liefen· auch|nicht irgend|eine große
+(505) γίγνετʼ(Prä)(M/P) ἐπισσώτρων(G) ἁρματροχιὴ(N) κατόπισθεν(Adv)
+(505) entsteht der|Verfolger Wagenspur hinten
+(506) ἐν(Prp) λεπτῇ(Adj)(D) κονίῃ(D)· τὼ(Pr)(Du)(N) δὲ(Pt) σπεύδοντε(Prä)(Akt)(Du)(N) πετέσθην(Aor)(M/P)(Du).
+(506) in feinem Staub· jene|beiden aber eilend flogen.
+(507) στῆ(AorS)(Akt) δὲ(Pt) μέσῳ(Adj)(D) ἐν(Prp) ἀγῶνι(D), πολὺς(Adj)(N) δʼ(Pt) ἀνεκήκιεν(Per)(Akt) ἱδρὼς(N)
+(507) stellte|sich aber Mitte in Wettkampf, viel aber quoll Schweiß
+(508) ἵππων(G) ἔκ(Prp) τε(Pt) λόφων(G) καὶ(Kon) ἀπὸ(Prp) στέρνοιο(G) χαμᾶζε(Adv).
+(508) der|Pferde aus und Mähnen und von Brust zur|Erde.
+(509) αὐτὸς(Pr)(N) δʼ(Pt) ἐκ(Prp) δίφροιο(G) χαμαὶ(Adv) θόρε(AorS)(Akt) παμφανόωντος(Prä)(Akt)(G),
+(509) selbst aber aus des|Wagens zu|Boden sprang all|leuchtenden,
+(510) κλῖνε(Aor)(Akt) δʼ(Pt) ἄρα(Pt) μάστιγα(A) ποτὶ(Prp) ζυγόν(A)· οὐδὲ(Kon) μάτησεν(Aor)(Akt)
+(510) lehnte aber doch Peitsche gegen Joch· auch|nicht verfehlte
+(511) ἴφθιμος(Adj)(N) Σθένελος(N), ἀλλʼ(Kon) ἐσσυμένως(Adv) λάβʼ(AorS)(Akt) ἄεθλον(A),
+(511) kräftiger Sthenelos, sondern eilends nahm Preis,
+(512) δῶκε(Aor)(Akt) δʼ(Pt) ἄγειν(Prä)(Akt)(Inf) ἑτάροισιν(D) ὑπερθύμοισι(Adj)(D) γυναῖκα(A)
+(512) gab aber zu|führen den|Gefährten über|mütigen Frau
+(513) καὶ(Kon) τρίποδʼ(A) ὠτώεντα(Adj)(A) φέρειν(Prä)(Akt)(Inf)· ὃ(Pr)(N) δʼ(Pt) ἔλυεν(Imp)(Akt) ὑφʼ(Prp) ἵππους(A).
+(513) und Dreifuß mit|Henkeln zu|tragen· der aber löste unter den|Pferden.
+(514) τῷ(Pr)(D) δʼ(Pt) ἄρʼ(Pt) ἐπʼ(Prp) Ἀντίλοχος(N) Νηλήϊος(Adj)(N) ἤλασεν(Aor)(Akt) ἵππους(A)
+(514) dem aber doch darauf Antilochos Neleïer trieb Pferde
+(515) κέρδεσιν(D), οὔ(Pt) τι(Pr)(A) τάχει(D) γε(Pt), παραφθάμενος(AorS)(Med)(N) Μενέλαον(A)·
+(515) mit|Listen, nicht irgend|etwas an|Schnelligkeit doch, zuvorgekommen|seiend Menelaos·
+(516) ἀλλὰ(Kon) καὶ(Kon) ὧς(Adv) Μενέλαος(N) ἔχʼ(Imp)(Akt) ἐγγύθεν(Adv) ὠκέας(Adj)(A) ἵππους(A).
+(516) sondern auch so Menelaos hielt nahe schnelle Pferde.
+(517) ὅσσον(Pr)(A) δὲ(Pt) τροχοῦ(G) ἵππος(N) ἀφίσταται(Prä)(M/P), ὅς(Pr)(N) ῥα(Pt) ἄνακτα(A)
+(517) so|weit|wie aber des|Rades Pferd entfernt|sich, welches ja den|Fürsten
+(518) ἕλκῃσιν(Prä)(Akt) πεδίοιο(G) τιταινόμενος(Prä)(M/P)(N) σὺν(Prp) ὄχεσφι(D)·
+(518) zieht der|Ebene sich|streckend mit den|Wagen·
+(519) τοῦ(Pr)(G) μέν(Pt) τε(Pt) ψαύουσιν(Prä)(Akt) ἐπισσώτρου(G) τρίχες(N) ἄκραι(Adj)(N)
+(519) dessen zwar und berühren des|Verfolgers Haare Spitzen
+(520) οὐραῖαι(Adj)(N)· ὃ(Pr)(N) δέ(Pt) τʼ(Pt) ἄγχι(Adv) μάλα(Adv) τρέχει(Prä)(Akt), οὐδέ(Kon) τι(Pr)(A) πολλὴ(Adj)(N)
+(520) Schweif|haare· dieser aber auch nahe sehr läuft, und|nicht irgend|etwas große
+(521) χώρη(N) μεσσηγὺς(Adv) πολέος(Adj)(G) πεδίοιο(G) θέοντος(Prä)(Akt)(G)·
+(521) Zwischen|raum dazwischen weiten der|Ebene laufenden·
+(522) τόσσον(Adj)(A) δὴ(Pt) Μενέλαος(N) ἀμύμονος(Adj)(G) Ἀντιλόχοιο(G)
+(522) so|weit ja Menelaos des|tadellosen Antilochos
+(523) λείπετʼ(Imp)(M/P)· ἀτὰρ(Kon) τὰ(Art)(A) πρῶτα(Adj)(A) καὶ(Kon) ἐς(Prp) δίσκουρα(A) λέλειπτο(Plq)(M/P),
+(523) blieb|zurück· doch die ersten auch bis|zu Wende|pfahl war|zurückgeblieben,
+(524) ἀλλά(Kon) μιν(Pr)(A) αἶψα(Adv) κίχανεν(Aor)(Akt)· ὀφέλλετο(Imp)(M/P) γὰρ(Pt) μένος(N) ἠῢ(Adj)(N)
+(524) aber ihn sogleich erreichte· wuchs denn Kraft gute
+(525) ἵππου(G) τῆς(Art)(G) Ἀγαμεμνονέης(Adj)(G) καλλίτριχος(Adj)(N) Αἴθης(N)·
+(525) des|Pferdes der agamemnonischen schön|mähnig Aithe·
+(526) εἰ(Kon) δέ(Kon) κʼ(Pt) ἔτι(Adv) προτέρω(Adv)(Kmp) γένετο(AorS)(M/P) δρόμος(N) ἀμφοτέροισι(Adj)(Du)(D),
+(526) wenn aber wohl noch weiter geworden|wäre Lauf für|beide,
+(527) τώ(Pr)(Du)(N) κέν(Pt) μιν(Pr)(A) παρέλασσʼ(AorS)(Akt) οὐδʼ(Kon) ἀμφήριστον(Adj)(A) ἔθηκεν(Aor)(Akt).
+(527) dann|jene|beiden wohl ihn überholt|hätten und|nicht un|entschieden machte.
+(528) αὐτὰρ(Kon) Μηριόνης(N) θεράπων(N) ἐῢς(Adj)(N) Ἰδομενῆος(G)
+(528) aber Meriones Diener tüchtiger des|Idomeneus
+(529) λείπετʼ(Imp)(M/P) ἀγακλῆος(Adj)(G) Μενελάου(G) δουρὸς(G) ἐρωήν(A)·
+(529) blieb|zurück ruhmreichen des|Menelaos des|Speeres Drang·
+(530) βάρδιστοι(Adj)(N)(Sup) μὲν(Pt) γάρ(Pt) οἱ(Pr)(D) ἔσαν(Imp)(Akt) καλλίτριχες(Adj)(N) ἵπποι(N),
+(530) sehr|träge zwar denn ihm waren schön|mähnige Pferde,
+(531) ἤκιστος(Adj)(N)(Sup) δʼ(Pt) ἦν(Imp)(Akt) αὐτὸς(Pr)(N) ἐλαυνέμεν(Prä)(Akt)(Inf) ἅρμʼ(A) ἐν(Prp) ἀγῶνι(D).
+(531) am|wenigsten aber war selbst zu|lenken Wagen im Wettkampf.
+(532) υἱὸς(N) δʼ(Pt) Ἀδμήτοιο(G) πανύστατος(Adj)(N)(Sup) ἤλυθεν(AorS)(Akt) ἄλλων(Adj)(G)
+(532) Sohn aber des|Admetos aller|letzter kam der|anderen
+(533) ἕλκων(Prä)(Akt)(N) ἅρματα(A) καλὰ(Adj)(A) ἐλαύνων(Prä)(Akt)(N) πρόσσοθεν(Adv) ἵππους(A).
+(533) ziehend Wagen schöne lenkend vorwärts Pferde.
+(534) τὸν(Pr)(A) δὲ(Pt) ἰδὼν(AorS)(Akt)(N) ᾤκτειρε(Aor)(Akt) ποδάρκης(Adj)(N) δῖος(Adj)(N) Ἀχιλλεύς(N),
+(534) den aber gesehen|habend erbarmte|sich schnell|füßiger göttlicher Achilleus,
+(535) στὰς(AorS)(Akt)(N) δʼ(Pt) ἄρʼ(Pt) ἐν(Prp) Ἀργείοις(Adj)(D) ἔπεα(A) πτερόεντʼ(Adj)(A) ἀγόρευε(Imp)(Akt)·
+(535) hingestellt|habend aber doch unter den|Argivern Worte geflügelte sprach·
+(536) λοῖσθος(Adj)(N) ἀνὴρ(N) ὤριστος(Adj)(N)(Sup) ἐλαύνει(Prä)(Akt) μώνυχας(Adj)(A) ἵππους(A)·
+(536) letzter Mann bester treibt ein|huf|ige Pferde·
+(537) ἀλλʼ(Kon) ἄγε(Prä)(Akt)(Imv) δή(Pt) οἱ(Pr)(D) δῶμεν(AorS)(Akt)(Knj) ἀέθλιον(A) ὡς(Kon) ἐπιεικὲς(Adj)(N)
+(537) aber komm ja ihm geben|wir Preis|gabe wie angemessen
+(538) δεύτερʼ(Adj)(A)· ἀτὰρ(Kon) τὰ(Art)(A) πρῶτα(Adj)(A) φερέσθω(Prä)(M/P)(Imv) Τυδέος(G) υἱός(N).
+(538) zweitens· doch das Erste soll|getragen|werden des|Tydeus Sohn.
+(539) ὣς(Adv) ἔφαθʼ(Imp)(M/P), οἳ(Pr)(N) δʼ(Pt) ἄρα(Pt) πάντες(Adj)(N) ἐπῄνεον(Imp)(Akt) ὡς(Kon) ἐκέλευε(Imp)(Akt).
+(539) so sprach|er, sie aber doch alle billigten wie befahl.
+(540) καί(Kon) νύ(Pt) κέ(Pt) οἱ(Pr)(D) πόρεν(Aor)(Akt) ἵππον(A), ἐπῄνησαν(Aor)(Akt) γὰρ(Pt) Ἀχαιοί(N),
+(540) und nun wohl ihm gäbe Pferd, billigten denn Achaier,
+(541) εἰ(Kon) μὴ(Pt) ἄρʼ(Pt) Ἀντίλοχος(N) μεγαθύμου(Adj)(G) Νέστορος(G) υἱὸς(N)
+(541) wenn nicht doch Antilochos groß|mütigen Nestors Sohn
+(542) Πηλεΐδην(A) Ἀχιλῆα(A) δίκῃ(D) ἠμείψατʼ(Aor)(Med) ἀναστάς(AorS)(Akt)(N)·
+(542) den|Peleiden Achilleus mit|Recht erwiderte aufgestanden|seiend·
+(543) ὦ(ij) Ἀχιλεῦ(V) μάλα(Adv) τοι(Pr)(D) κεχολώσομαι(Fu)(M/P) αἴ(Kon) κε(Pt) τελέσσῃς(Aor)(Akt)(Knj)
+(543) o Achilleus sehr dir werde|ich|zürnen wenn wohl vollendest
+(544) τοῦτο(Pr)(N) ἔπος(N)· μέλλεις(Prä)(Akt) γὰρ(Pt) ἀφαιρήσεσθαι(Fu)(M/P)(Inf) ἄεθλον(A)
+(544) dieses Wort· beabsichtigst denn weg|zunehmen Preis
+(545) τὰ(Art)(A) φρονέων(Prä)(Akt)(N) ὅτι(Kon) οἱ(Pr)(D) βλάβεν(Aor)(Akt) ἅρματα(N) καὶ(Kon) ταχέʼ(Adj)(A) ἵππω(Du)(D)
+(545) das bedenkend dass ihm beschädigten Wagen und schnelle den|beiden|Pferden
+(546) αὐτός(Pr)(N) τʼ(Pt) ἐσθλὸς(Adj)(N) ἐών(Prä)(Akt)(N)· ἀλλʼ(Kon) ὤφελεν(Imp)(Akt) ἀθανάτοισιν(Adj)(D)
+(546) er|selbst auch edel seiend· sondern hätte|sollen den|Unsterblichen
+(547) εὔχεσθαι(Prä)(M/P)(Inf)· τό(Pr)(N) κεν(Pt) οὔ(Pt) τι(Pr)(A) πανύστατος(Adj)(N)(Sup) ἦλθε(AorS)(Akt) διώκων(Prä)(Akt)(N).
+(547) beten· dies wohl nicht etwas aller|letzter kam verfolgend.
+(548) εἰ(Kon) δέ(Kon) μιν(Pr)(A) οἰκτίρεις(Prä)(Akt) καί(Kon) τοι(Pr)(D) φίλος(Adj)(N) ἔπλετο(Imp)(M/P) θυμῷ(D)
+(548) wenn aber ihn bemitleidest und dir lieb war dem|Sinn
+(549) ἔστί(Prä)(Akt) τοι(Pr)(D) ἐν(Prp) κλισίῃ(D) χρυσὸς(N) πολύς(Adj)(N), ἔστι(Prä)(Akt) δὲ(Pt) χαλκὸς(N)
+(549) ist dir in Hütte Gold viel, ist aber Bronze
+(550) καὶ(Kon) πρόβατʼ(N), εἰσὶ(Prä)(Akt) δέ(Pt) τοι(Pr)(D) δμῳαὶ(N) καὶ(Kon) μώνυχες(Adj)(N) ἵπποι(N)·
+(550) und Klein|vieh, sind aber dir Sklavinnen und ein|huf|ige Pferde·
+(551) τῶν(Pr)(G) οἱ(Pr)(D) ἔπειτʼ(Adv) ἀνελὼν(AorS)(Akt)(N) δόμεναι(Aor)(Akt)(Inf) καὶ(Kon) μεῖζον(Adj)(A)(Kmp) ἄεθλον(A)
+(551) davon ihm hernach aufgenommen|habend zu|geben auch größeren Preis
+(552) ἠὲ(Kon) καὶ(Kon) αὐτίκα(Adv) νῦν(Adv), ἵνα(Kon) σʼ(Pr)(A) αἰνήσωσιν(Aor)(Akt)(Knj) Ἀχαιοί(N).
+(552) oder auch sogleich jetzt, damit dich preisen Achaier.
+(553) τὴν(Pr)(A) δʼ(Pt) ἐγὼ(Pr)(N) οὐ(Pt) δώσω(Fu)(Akt)· περὶ(Prp) δʼ(Pt) αὐτῆς(Pr)(G) πειρηθήτω(Aor)(Pas)(Imv)
+(553) die aber ich nicht werde|geben· um aber sie|selbst möge|er|sich|versuchen
+(554) ἀνδρῶν(G) ὅς(Pr)(N) κʼ(Pt) ἐθέλῃσιν(Prä)(Akt)(Knj) ἐμοὶ(Pr)(D) χείρεσσι(D) μάχεσθαι(Prä)(M/P)(Inf).
+(554) der|Männer wer wohl möchte mir mit|Händen zu|kämpfen.
+(555) ὣς(Adv) φάτο(Imp)(M/P), μείδησεν(Aor)(Akt) δὲ(Pt) ποδάρκης(Adj)(N) δῖος(Adj)(N) Ἀχιλλεὺς(N)
+(555) so sprach|er, lächelte aber schnell|füßiger göttlicher Achilleus
+(556) χαίρων(Prä)(Akt)(N) Ἀντιλόχῳ(D), ὅτι(Kon) οἱ(Pr)(D) φίλος(Adj)(N) ἦεν(Imp)(Akt) ἑταῖρος(N)·
+(556) sich|freuend dem|Antilochos, weil ihm lieber war Gefährte·
+(557) καί(Kon) μιν(Pr)(A) ἀμειβόμενος(Prä)(M/P)(N) ἔπεα(A) πτερόεντα(Adj)(A) προσηύδα(Imp)(Akt)·
+(557) und ihn antwortend Worte geflügelte redete|an·
+(558) Ἀντίλοχʼ(V), εἰ(Kon) μὲν(Pt) δή(Pt) με(Pr)(A) κελεύεις(Prä)(Akt) οἴκοθεν(Adv) ἄλλο(Adj)(A)
+(558) Antilochos, wenn zwar ja mich befiehlst von|Haus|aus anderes
+(559) Εὐμήλῳ(D) ἐπιδοῦναι(Aor)(Akt)(Inf), ἐγὼ(Pr)(N) δέ(Pt) κε(Pt) καὶ(Kon) τὸ(Pr)(A) τελέσσω(Fu)(Akt).
+(559) dem|Eumelos zu|übergeben, ich aber wohl auch dies werde|vollenden.
+(560) δώσω(Fu)(Akt) οἱ(Pr)(D) θώρηκα(A), τὸν(Pr)(A) Ἀστεροπαῖον(A) ἀπηύρων(Aor)(Akt)
+(560) werde|geben ihm Harnisch, den Asteropaios beraubte|ich
+(561) χάλκεον(Adj)(A), ᾧ(Pr)(D) πέρι(Pt) χεῦμα(N) φαεινοῦ(Adj)(G) κασσιτέροιο(G)
+(561) erzen, um|den her Guss glänzenden Zinns
+(562) ἀμφιδεδίνηται(Per)(M/P)· πολέος(Adj)(G) δέ(Pt) οἱ(Pr)(D) ἄξιος(Adj)(N) ἔσται(Fu)(M/P).
+(562) ist|rings|um|geschwungen· vielen aber ihm wert wird|sein.
+(563) ἦ(Pt) ῥα(Pt), καὶ(Kon) Αὐτομέδοντι(D) φίλῳ(Adj)(D) ἐκέλευσεν(Aor)(Akt) ἑταίρῳ(D)
+(563) ja doch, und Automedon lieben befahl Gefährten
+(564) οἰσέμεναι(Aor)(Akt)(Inf) κλισίηθεν(Adv)· ὃ(Pr)(N) δʼ(Pt) ᾤχετο(Imp)(M/P) καί(Kon) οἱ(Pr)(D) ἔνεικεν(Aor)(Akt),
+(564) zu|bringen aus|der|Hütte· der aber ging|fort und ihm brachte,
+(565) Εὐμήλῳ(D) δʼ(Pt) ἐν(Prp) χερσὶ(D) τίθει(Imp)(Akt)· ὃ(Pr)(N) δὲ(Pt) δέξατο(Aor)(Med) χαίρων(Prä)(Akt)(N).
+(565) dem|Eumelos aber in Händen setzte· der aber nahm|entgegen sich|freuend.
+(566) τοῖσι(Pr)(D) δὲ(Pt) καὶ(Kon) Μενέλαος(N) ἀνίστατο(Imp)(M/P) θυμὸν(A) ἀχεύων(Prä)(Akt)(N)
+(566) denen aber auch Menelaos stand|auf Sinn beklagend
+(567) Ἀντιλόχῳ(Pr)(D) ἄμοτον(Adv) κεχολωμένος(Per)(M/P)(N)· ἐν(Prp) δʼ(Pt) ἄρα(Pt) κῆρυξ(N)
+(567) dem|Antilochos maßlos erzürnt|worden· in aber doch Herold
+(568) χειρὶ(D) σκῆπτρον(A) ἔθηκε(Aor)(Akt), σιωπῆσαί(Aor)(Akt)(Inf) τε(Pt) κέλευσεν(Aor)(Akt)
+(568) mit|der|Hand Zepter setzte, zu|schweigen und befahl
+(569) Ἀργείους(A)· ὃ(Pr)(N) δʼ(Pt) ἔπειτα(Adv) μετηύδα(Aor)(Akt) ἰσόθεος(Adj)(N) φώς(N)·
+(569) die|Argiver· der aber dann sprach Göttern|gleich Mann·
+(570) Ἀντίλοχε(V) πρόσθεν(Adv) πεπνυμένε(Per)(M/P)(V) ποῖον(Adj)(A) ἔρεξας(Aor)(Akt).
+(570) Antilochos vorher verständig|gewordener was|für hast|du|getan.
+(571) ᾔσχυνας(Aor)(Akt) μὲν(Pt) ἐμὴν(Adj)(A) ἀρετήν(A), βλάψας(Aor)(Akt)(N) δέ(Pt) μοι(Pr)(D) ἵππους(A)
+(571) schändetest zwar meine Tüchtigkeit, schadend aber mir Pferde
+(572) τοὺς(Art)(A) σοὺς(Adj)(A) πρόσθε(Adv) βαλών(AorS)(Akt)(N), οἵ(Pr)(N) τοι(Pr)(D) πολὺ(Adv) χείρονες(Adj)(N)(Kmp) ἦσαν(Imp)(Akt).
+(572) die deinen vorn geworfen|habend, die dir viel schlechter waren.
+(573) ἀλλʼ(Kon) ἄγετʼ(Prä)(Akt)(Imv) Ἀργείων(G) ἡγήτορες(N) ἠδὲ(Kon) μέδοντες(Prä)(Akt)(N)
+(573) sondern kommet der|Argiver Anführer und Herrschende
+(574) ἐς(Prp) μέσον(A) ἀμφοτέροισι(Adj)(D) δικάσσατε(Prä)(Akt)(Imv), μὴ(Pt) δʼ(Pt) ἐπʼ(Prp) ἀρωγῇ(D),
+(574) in Mitte den|beiden richtet, nicht aber auf Hilfe,
+(575) μή(Pt) ποτέ(Adv) τις(Pr)(N) εἴπῃσιν(Aor)(Akt)(Knj) Ἀχαιῶν(G) χαλκοχιτώνων(Adj)(G)·
+(575) nicht jemals jemand sage der|Achaier Erz|gewandeten·
+(576) Ἀντίλοχον(A) ψεύδεσσι(D) βιησάμενος(Aor)(Med)(N) Μενέλαος(N)
+(576) Antilochos mit|Lügen gezwungen|habend Menelaos
+(577) οἴχεται(Prä)(M/P) ἵππον(A) ἄγων(Prä)(Akt)(N), ὅτι(Kon) οἱ(Pr)(D) πολὺ(Adv) χείρονες(Adj)(N)(Kmp) ἦσαν(Imp)(Akt)
+(577) geht|davon Pferd führend, weil ihm viel schlechter waren
+(578) ἵπποι(N), αὐτὸς(Pr)(N) δὲ(Pt) κρείσσων(Adj)(N)(Kmp) ἀρετῇ(D) τε(Pt) βίῃ(D) τε(Pt).
+(578) Pferde, er|selbst aber besser an|Tüchtigkeit und an|Kraft und.
+(579) εἰ(Kon) δʼ(Pt) ἄγʼ(Pt) ἐγὼν(Pr)(N) αὐτὸς(Pr)(N) δικάσω(Fu)(Akt), καί(Kon) μʼ(Pr)(A) οὔ(Pt) τινά(Pr)(A) φημι(Prä)(Akt)
+(579) wenn aber wohl ich|selbst selbst werde|richten, und mich nicht irgendeinen sage|ich
+(580) ἄλλον(Adj)(A) ἐπιπλήξειν(Fu)(Akt)(Inf) Δαναῶν(G)· ἰθεῖα(Adj)(N) γὰρ(Pt) ἔσται(Fu)(M/P).
+(580) einen|anderen zu|tadeln der|Danaer· gerade denn wird|sein.
+(581) Ἀντίλοχʼ(V) εἰ(Kon) δʼ(Pt) ἄγε(Prä)(Akt)(Imv) δεῦρο(Adv) διοτρεφές(Adj)(V), ἣ(Pr)(N) θέμις(N) ἐστί(Prä)(Akt),
+(581) Antilochos wenn aber komm hierher Zeus|genährt|er, welche Recht ist,
+(582) στὰς(AorS)(Akt)(N) ἵππων(G) προπάροιθε(Adv) καὶ(Kon) ἅρματος(G), αὐτὰρ(Kon) ἱμάσθλην(A)
+(582) hingestellt|habend der|Pferde davor und des|Wagens, aber Peitsche
+(583) χερσὶν(D) ἔχε(Prä)(Akt)(Imv) ῥαδινήν(Adj)(A), ᾗ(Pr)(D) περ(Pt) τὸ(Art)(A) πρόσθεν(Adv) ἔλαυνες(Imp)(Akt),
+(583) mit|Händen halte schlanke, mit|der ja das vorher trieb|st,
+(584) ἵππων(G) ἁψάμενος(Aor)(Med)(N) γαιήοχον(Adj)(A) ἐννοσίγαιον(Adj)(A)
+(584) der|Pferde angefasst|habend Erde|haltend Erd|erschütterer
+(585) ὄμνυθι(Prä)(Akt)(Imv) μὴ(Pt) μὲν(Pt) ἑκὼν(Adj)(N) τὸ(Art)(A) ἐμὸν(Adj)(A) δόλῳ(D) ἅρμα(A) πεδῆσαι(Aor)(Akt)(Inf).
+(585) schwöre nicht doch willig das meine durch|List Wagen zu|fesseln.
+(586) τὸν(Pr)(A) δʼ(Pt) αὖτʼ(Adv) Ἀντίλοχος(N) πεπνυμένος(Per)(M/P)(N) ἀντίον(Adv) ηὔδα(Aor)(Akt)·
+(586) ihn aber wiederum Antilochos verständig|geworden entgegen sprach·
+(587) ἄνσχεο(Prä)(M/P)(Imv) νῦν(Adv)· πολλὸν(Adv) γὰρ(Pt) ἔγωγε(Pr)(N) νεώτερός(Adj)(N)(Kmp) εἰμι(Prä)(Akt)
+(587) halte|aus jetzt· viel denn ich|selbst jünger bin
+(588) σεῖο(Pr)(G) ἄναξ(V) Μενέλαε(V), σὺ(Pr)(N) δὲ(Pt) πρότερος(Adj)(N)(Kmp) καὶ(Kon) ἀρείων(Adj)(N)(Kmp).
+(588) deiner Herr Menelaos, du aber früher und besser.
+(589) οἶσθʼ(Per)(Akt) οἷαι(Pr)(N) νέου(Adj)(G) ἀνδρὸς(G) ὑπερβασίαι(N) τελέθουσι(Prä)(Akt)·
+(589) weißt welche des|jungen Mannes Übertritte entstehen·
+(590) κραιπνότερος(Adj)(N)(Kmp) μὲν(Pt) γάρ(Pt) τε(Pt) νόος(N), λεπτὴ(Adj)(N) δέ(Pt) τε(Pt) μῆτις(N).
+(590) schneller zwar denn auch Sinn, fein aber auch List.
+(591) τώ(Pt) τοι(Pr)(D) ἐπιτλήτω(Aor)(Akt)(Imv) κραδίη(N)· ἵππον(A) δέ(Pt) τοι(Pr)(D) αὐτὸς(Pr)(N)
+(591) darum dir ertrage|möge Herz· Pferd aber dir selbst
+(592) δώσω(Fu)(Akt), τὴν(Art)(A) ἀρόμην(Aor)(Med). εἰ(Kon) καί(Kon) νύ(Pt) κεν(Pt) οἴκοθεν(Adv) ἄλλο(Adj)(A)
+(592) werde|geben, die erwarb|ich. wenn auch nun wohl von|Haus anderes
+(593) μεῖζον(Adj)(A)(Kmp) ἐπαιτήσειας(Aor)(Akt)(Knj), ἄφαρ(Adv) κέ(Pt) τοι(Pr)(D) αὐτίκα(Adv) δοῦναι(Aor)(Akt)(Inf)
+(593) größeres fordern|würdest, sogleich wohl dir sofort zu|geben
+(594) βουλοίμην(Prä)(Med)(Op) ἢ(Kon) σοί(Pr)(D) γε(Pt) διοτρεφὲς(Adj)(V) ἤματα(A) πάντα(Adj)(A)
+(594) möchte|ich eher dir ja Zeus|genährt|er Tage alle
+(595) ἐκ(Prp) θυμοῦ(G) πεσέειν(Fu)(Akt)(Inf) καὶ(Kon) δαίμοσιν(D) εἶναι(Prä)(Akt)(Inf) ἀλιτρός(Adj)(N).
+(595) aus Sinn zu|fallen und Göttern zu|sein schuldig.
+(596) ἦ(Pt) ῥα(Pt) καὶ(Kon) ἵππον(A) ἄγων(Prä)(Akt)(N) μεγαθύμου(Adj)(G) Νέστορος(G) υἱὸς(N)
+(596) ja doch und Pferd führend groß|herzigen Nestors Sohn
+(597) ἐν(Prp) χείρεσσι(D) τίθει(Imp)(Akt) Μενελάου(G)· τοῖο(Pr)(G) δὲ(Pt) θυμὸς(N)
+(597) in Händen setzte des|Menelaos· dessen aber Sinn
+(598) ἰάνθη(Aor)(Pas) ὡς(Kon) εἴ(Kon) τε(Pt) περὶ(Prp) σταχύεσσιν(D) ἐέρση(N)
+(598) er|blühte wie wenn auch um Ähren Tau
+(599) ληΐου(Adj)(G) ἀλδήσκοντος(Prä)(Akt)(G), ὅτε(Kon) φρίσσουσιν(Prä)(Akt) ἄρουραι(N)·
+(599) der|Ernte reifend|seienden, wenn schaudern Felder·
+(600) ὣς(Adv) ἄρα(Pt) σοὶ(Pr)(D) Μενέλαε(V) μετὰ(Prp) φρεσὶ(D) θυμὸς(N) ἰάνθη(Aor)(Pas).
+(600) so doch dir Menelaos in Sinnen Sinn er|blühte.
+(601) καί(Kon) μιν(Pr)(A) φωνήσας(Aor)(Akt)(N) ἔπεα(A) πτερόεντα(Adj)(A) προσηύδα(Aor)(Akt)·
+(601) und ihn angesprochen|habend Worte geflügelte redete|an·
+(602) Ἀντίλοχε(V) νῦν(Adv) μέν(Pt) τοι(Pr)(D) ἐγὼν(Pr)(N) ὑποείξομαι(Fu)(Med) αὐτὸς(Pr)(N)
+(602) Antilochos jetzt zwar dir ich|selbst werde|nachgeben selbst
+(603) χωόμενος(Prä)(M/P)(N), ἐπεὶ(Kon) οὔ(Pt) τι(Pr)(A) παρήορος(Adj)(N) οὐδʼ(Kon) ἀεσίφρων(Adj)(N)
+(603) zürnend, da nicht irgend leichtsinnig noch un|verständlich
+(604) ἦσθα(Imp)(Akt) πάρος(Adv)· νῦν(Adv) αὖτε(Adv) νόον(A) νίκησε(Aor)(Akt) νεοίη(Adj)(N).
+(604) du|warst früher· jetzt wiederum den|Sinn besiegte die|Jugend.
+(605) δεύτερον(Adv) αὖτʼ(Adv) ἀλέασθαι(Aor)(Med)(Inf) ἀμείνονας(Adj)(A)(Kmp) ἠπεροπεύειν(Prä)(Akt)(Inf).
+(605) zweitens wiederum sich|hüten die|Besseren zu|betrügen.
+(606) οὐ(Pt) γάρ(Pt) κέν(Pt) με(Pr)(A) τάχʼ(Adv) ἄλλος(Adj)(N) ἀνὴρ(N) παρέπεισεν(Aor)(Akt) Ἀχαιῶν(G).
+(606) nicht denn wohl mich leicht ein|anderer Mann überredete der|Achaier.
+(607) ἀλλὰ(Kon) σὺ(Pr)(N) γὰρ(Pt) δὴ(Pt) πολλὰ(Adj)(A) πάθες(Aor)(Akt) καὶ(Kon) πολλὰ(Adj)(A) μόγησας(Aor)(Akt)
+(607) sondern du denn ja vieles erlittest und vieles gemüht|hast
+(608) σός(Adj)(N) τε(Pt) πατὴρ(N) ἀγαθὸς(Adj)(N) καὶ(Kon) ἀδελφεὸς(N) εἵνεκʼ(Prp) ἐμεῖο(Pr)(G)·
+(608) dein auch Vater guter und Bruder wegen meiner·
+(609) τώ(Pt) τοι(Pr)(D) λισσομένῳ(Prä)(M/P)(D) ἐπιπείσομαι(Fu)(Med), ἠδὲ(Kon) καὶ(Kon) ἵππον(A)
+(609) darum dir flehend|seienden werde|ich|gehorchen, und auch Pferd
+(610) δώσω(Fu)(Akt) ἐμήν(Adj)(A) περ(Pt) ἐοῦσαν(Prä)(Akt)(A), ἵνα(Kon) γνώωσι(Aor)(Akt)(Knj) καὶ(Kon) οἵδε(Pr)(N)
+(610) werde|ich|geben meine zwar seiende, damit erkennen und diese
+(611) ὡς(Kon) ἐμὸς(Adj)(N) οὔ(Pt) ποτε(Adv) θυμὸς(N) ὑπερφίαλος(Adj)(N) καὶ(Kon) ἀπηνής(Adj)(N).
+(611) dass mein nicht jemals Sinn übermütig und rau.
+(612) ἦ(Pt) ῥα(Pt), καὶ(Kon) Ἀντιλόχοιο(G) Νοήμονι(D) δῶκεν(Aor)(Akt) ἑταίρῳ(D)
+(612) ja doch, und des|Antilochos dem|Noemon gab dem|Gefährten
+(613) ἵππον(A) ἄγειν(Prä)(Akt)(Inf)· ὃ(Pr)(N) δʼ(Pt) ἔπειτα(Adv) λέβηθʼ(A) ἕλε(AorS)(Akt) παμφανόωντα(Prä)(Akt)(A).
+(613) Pferd zu|führen· der aber hernach Kessel nahm all|leuchtenden.
+(614) Μηριόνης(N) δʼ(Pt) ἀνάειρε(Aor)(Akt) δύω(Adj)(A) χρυσοῖο(G) τάλαντα(A)
+(614) Meriones aber hob|auf zwei des|Goldes Talente
+(615) τέτρατος(Adj)(N), ὡς(Kon) ἔλασεν(Aor)(Akt). πέμπτον(Adj)(A) δʼ(Pt) ὑπελείπετʼ(Imp)(M/P) ἄεθλον(N),
+(615) vierter, wie fuhr. fünftes aber blieb|zurück Preis,
+(616) ἀμφίθετος(Adj)(N) φιάλη(A)· τὴν(Art)(A) Νέστορι(D) δῶκεν(Aor)(Akt) Ἀχιλλεὺς(N)
+(616) zwei|henkelig Schale· die dem|Nestor gab Achilleus
+(617) Ἀργείων(G) ἀνʼ(Prp) ἀγῶνα(A) φέρων(Prä)(Akt)(N), καὶ(Kon) ἔειπε(AorS)(Akt) παραστάς(AorS)(Akt)(N)·
+(617) der|Argiver durch|den Wettkampf tragend, und sprach beigestanden|habend·
+(618) τῆ(Pt) νῦν(Adv), καὶ(Kon) σοὶ(Pr)(D) τοῦτο(Pr)(N) γέρον(V) κειμήλιον(N) ἔστω(Prä)(Akt)(Imv)
+(618) nun denn, und dir dieses Greis Schatz sei
+(619) Πατρόκλοιο(G) τάφου(G) μνῆμʼ(A) ἔμμεναι(Prä)(Akt)(Inf)· οὐ(Pt) γὰρ(Pt) ἔτʼ(Adv) αὐτὸν(Pr)(A)
+(619) des|Patroklos Grabes Erinnerung zu|sein· nicht denn noch ihn
+(620) ὄψῃ(Fu)(M/P) ἐν(Prp) Ἀργείοισι(Adj)(D)· δίδωμι(Prä)(Akt) δέ(Pt) τοι(Pr)(D) τόδʼ(Pr)(A) ἄεθλον(A)
+(620) wirst|sehen in den|Argivern· gebe aber dir dieses Preis
+(621) αὔτως(Adv)· οὐ(Pt) γὰρ(Pt) πύξ(Adv) γε(Pt) μαχήσεαι(Fu)(M/P), οὐδὲ(Kon) παλαίσεις(Fu)(Akt),
+(621) so· nicht denn mit|Fäusten ja wirst|du|kämpfen, und|nicht wirst|ringen,
+(622) οὐδʼ(Kon) ἔτʼ(Adv) ἀκοντιστὺν(A) ἐσδύσεαι(Fu)(M/P), οὐδὲ(Kon) πόδεσσι(D)
+(622) und|nicht noch Speerwurf wirst|du|betreten, und|nicht mit|Füßen
+(623) θεύσεαι(Fu)(M/P)· ἤδη(Adv) γὰρ(Pt) χαλεπὸν(Adj)(N) κατὰ(Prp) γῆρας(A) ἐπείγει(Prä)(Akt).
+(623) wirst|laufen· schon denn beschwerlich durch das|Alter drängt.
+(624) ὣς(Adv) εἰπὼν(AorS)(Akt)(N) ἐν(Prp) χερσὶ(D) τίθει(Imp)(Akt)· ὃ(Pr)(N) δʼ(Pt) ἐδέξατο(Aor)(Med) χαίρων(Prä)(Akt)(N),
+(624) so gesagt|habend in Händen legte· der aber nahm|entgegen sich|freuend,
+(625) καί(Kon) μιν(Pr)(A) φωνήσας(AorS)(Akt)(N) ἔπεα(A) πτερόεντα(Adj)(A) προσηύδα(Imp)(Akt)·
+(625) und ihn angesprochen|habend Worte geflügelte sprach|an·
+(626) ναὶ(ij) δὴ(Pt) ταῦτά(Pr)(A) γε(Pt) πάντα(Adj)(A) τέκος(V) κατὰ(Prp) μοῖραν(A) ἔειπες(AorS)(Akt)·
+(626) ja denn dieses ja alles Kind nach Anteil|Schicksal sagtest|du·
+(627) οὐ(Pt) γὰρ(Pt) ἔτʼ(Adv) ἔμπεδα(Adj)(N) γυῖα(N) φίλος(Adj)(N) πόδες(N), οὐδέ(Kon) τι(Pr)(A) χεῖρες(N)
+(627) nicht denn noch fest Glieder liebe Füße, und|nicht irgend Hände
+(628) ὤμων(G) ἀμφοτέρωθεν(Adv) ἐπαΐσσονται(Prä)(M/P) ἐλαφραί(Adj)(N).
+(628) der|Schultern von|beiden|Seiten springen leicht.
+(629) εἴθʼ(ij) ὣς(Adv) ἡβώοιμι(Prä)(Akt)(Op) βίη(N) τέ(Pt) μοι(Pr)(D) ἔμπεδος(Adj)(N) εἴη(Op)
+(629) ach|wenn so ich|möchte|jugendlich|sein Kraft und mir fest wäre
+(630) ὡς(Kon) ὁπότε(Kon) κρείοντʼ(Prä)(Akt)(A) Ἀμαρυγκέα(A) θάπτον(Imp)(Akt) Ἐπειοὶ(N)
+(630) wie als den|Herrscher Amarynkeus bestatteten Epeier
+(631) Βουπρασίῳ(D), παῖδες(N) δʼ(Pt) ἔθεσαν(Aor)(Akt) βασιλῆος(G) ἄεθλα(A)·
+(631) in|Bouprasion, Söhne aber setzten des|Königs Preise·
+(632) ἔνθʼ(Adv) οὔ(Pt) τίς(Pr)(N) μοι(Pr)(D) ὁμοῖος(Adj)(N) ἀνὴρ(N) γένετʼ(AorS)(M/P), οὔτʼ(Kon) ἄρʼ(Pt) Ἐπειῶν(G)
+(632) dort nicht irgend mir gleich Mann wurde, noch ja der|Epeier
+(633) οὔτʼ(Kon) αὐτῶν(Pr)(G) Πυλίων(G) οὔτʼ(Kon) Αἰτωλῶν(G) μεγαθύμων(Adj)(G).
+(633) noch derer|selbst der|Pyler noch der|Ätoler groß|mütigen.
+(634) πὺξ(Adv) μὲν(Pt) ἐνίκησα(Aor)(Akt) Κλυτομήδεα(A) Ἤνοπος(G) υἱόν(A),
+(634) mit|Fäusten zwar besiegte|ich Klytomedes des|Enopos Sohn,
+(635) Ἀγκαῖον(A) δὲ(Pt) πάλῃ(D) Πλευρώνιον(Adj)(A), ὅς(Pr)(N) μοι(Pr)(D) ἀνέστη(AorS)(Akt)·
+(635) Ankaios aber im|Ringen den|Pleuronier, der mir entgegentrat·
+(636) Ἴφικλον(A) δὲ(Pt) πόδεσσι(D) παρέδραμον(AorS)(Akt) ἐσθλὸν(Adj)(A) ἐόντα(Prä)(Akt)(A),
+(636) Iphiklos aber mit|Füßen lief|ich|vorbei edel seienden,
+(637) δουρὶ(D) δʼ(Pt) ὑπειρέβαλον(Aor)(Akt) Φυλῆά(A) τε(Pt) καὶ(Kon) Πολύδωρον(A).
+(637) mit|dem|Speer aber übertraf|ich Phylea und auch Polydoros.
+(638) οἴοισίν(Adj)(D) μʼ(Pr)(A) ἵπποισι(D) παρήλασαν(Aor)(Akt) Ἀκτορίωνε(N)
+(638) alleinen mich mit|Pferden fuhren|vorbei Aktor|Söhne
+(639) πλήθει(D) πρόσθε(Adv) βαλόντες(AorS)(Akt)(N) ἀγασσάμενοι(Aor)(Med)(N) περὶ(Prp) νίκης(G),
+(639) mit|Menge vorn geworfen|habend sich|bewundernd um Sieg,
+(640) οὕνεκα(Kon) δὴ(Pt) τὰ(Art)(A) μέγιστα(Adj)(A)(Sup) παρʼ(Prp) αὐτόθι(Adv) λείπετʼ(Imp)(M/P) ἄεθλα(N).
+(640) weil ja die größten bei eben|dort blieben|zurück Preise.
+(641) οἳ(Pr)(N) δʼ(Pt) ἄρʼ(Pt) ἔσαν(Imp)(Akt) δίδυμοι(Adj)(N)· ὃ(Pr)(N) μὲν(Pt) ἔμπεδον(Adv) ἡνιόχευεν(Imp)(Akt),
+(641) sie aber doch waren Zwillinge· der zwar fest lenkte,
+(642) ἔμπεδον(Adv) ἡνιόχευʼ(Imp)(Akt), ὃ(Pr)(N) δʼ(Pt) ἄρα(Pt) μάστιγι(D) κέλευεν(Imp)(Akt).
+(642) fest lenkte, der aber doch mit|der|Peitsche trieb|an.
+(643) ὥς(Kon) ποτʼ(Pt) ἔον(Imp)(M/P)(N)· νῦν(Adv) αὖτε(Adv) νεώτεροι(Adj)(N)(Kmp) ἀντιοώντων(Prä)(Akt)(G)
+(643) so einst seiend· jetzt wiederum jüngere der|Antretenden
+(644) ἔργων(G) τοιούτων(Adj)(G)· ἐμὲ(Pr)(A) δὲ(Pt) χρὴ(Prä)(Akt) γήραϊ(D) λυγρῷ(Adj)(D)
+(644) Taten solcher· mich aber ist|nötig dem|Alter elenden
+(645) πείθεσθαι(Prä)(M/P)(Inf), τότε(Adv) δʼ(Pt) αὖτε(Adv) μετέπρεπον(Imp)(Akt) ἡρώεσσιν(D).
+(645) zu|gehorchen, damals aber wiederum ragte|hervor unter|den|Helden.
+(646) ἀλλʼ(Kon) ἴθι(Prä)(Akt)(Imv) καὶ(Kon) σὸν(Adj)(A) ἑταῖρον(A) ἀέθλοισι(D) κτερέϊζε(Prä)(Akt)(Imv).
+(646) sondern geh und deinen Gefährten mit|Preisen ehre.
+(647) τοῦτο(Pr)(A) δʼ(Pt) ἐγὼ(Pr)(N) πρόφρων(Adj)(N) δέχομαι(Prä)(M/P), χαίρει(Prä)(Akt) δέ(Pt) μοι(Pr)(D) ἦτορ(N),
+(647) dieses aber ich willig nehme|an, freut aber mir Herz,
+(648) ὥς(Kon) μευ(Pr)(G) ἀεὶ(Adv) μέμνησαι(Per)(M/P) ἐνηέος(Adj)(G), οὐδέ(Kon) σε(Pr)(A) λήθω(Prä)(Akt),
+(648) weil meiner immer erinnerst|du freundlichen, und|nicht dich entgehe|ich,
+(649) τιμῆς(G) ἧς(Pr)(G) τέ(Pt) μʼ(Pr)(A) ἔοικε(Per)(Akt) τετιμῆσθαι(Per)(M/P)(Inf) μετʼ(Prp) Ἀχαιοῖς(D).
+(649) der|Ehre deren ja mich ziemt geehrt|zu|sein mit den|Achaiern.
+(650) σοὶ(Pr)(D) δὲ(Pt) θεοὶ(N) τῶνδʼ(Pr)(G) ἀντὶ(Prp) χάριν(A) μενοεικέα(Adj)(A) δοῖεν(Aor)(Akt)(Op).
+(650) dir aber Götter dieser zum|Ausgleich Dank genehmen geben|mögen.
+(651) ὣς(Adv) φάτο(Imp)(M/P), Πηλεΐδης(N) δὲ(Pt) πολὺν(Adj)(A) καθʼ(Prp) ὅμιλον(A) Ἀχαιῶν(G)
+(651) so sprach, Peleide aber großen durch Haufen der|Achaier
+(652) ᾤχετʼ(Imp)(M/P), ἐπεὶ(Kon) πάντʼ(Adj)(A) αἶνον(A) ἐπέκλυε(Imp)(Akt) Νηλεΐδαο(G).
+(652) ging|fort, als alle Lob hörte des|Neleiden.
+(653) αὐτὰρ(Kon) ὃ(Pr)(N) πυγμαχίης(G) ἀλεγεινῆς(Adj)(G) θῆκεν(Aor)(Akt) ἄεθλα(A)·
+(653) aber er des|Faustkampfs schmerzlichen setzte Preise·
+(654) ἡμίονον(A) ταλαεργὸν(Adj)(A) ἄγων(Prä)(Akt)(N) κατέδησʼ(Aor)(Akt) ἐν(Prp) ἀγῶνι(D)
+(654) Maultier müh|arbeitend führend band|fest im Wettkampf
+(655) ἑξέτεʼ(Adj)(A) ἀδμήτην(Adj)(A), ἥ(Pr)(N) τʼ(Pt) ἀλγίστη(Adj)(N)(Sup) δαμάσασθαι(Aor)(Med)(Inf)·
+(655) sechs|jährig un|gezähmt, die ja schmerzlichste zu|bezähmen·
+(656) τῷ(Pr)(D) δʼ(Pt) ἄρα(Pt) νικηθέντι(Aor)(Pas)(D) τίθει(Imp)(Akt) δέπας(A) ἀμφικύπελλον(Adj)(A).
+(656) dem aber doch besiegt|worden|seienden setzte Becher zwei|henkeligen.
+(657) στῆ(AorS)(Akt) δʼ(Pt) ὀρθὸς(Adj)(N) καὶ(Kon) μῦθον(A) ἐν(Prp) Ἀργείοισιν(Adj)(D) ἔειπεν(AorS)(Akt)·
+(657) trat|hin aber aufrecht und Wort bei den|Argivern sprach·
+(658) Ἀτρεΐδη(V) τε(Pt) καὶ(Kon) ἄλλοι(Adj)(N) ἐϋκνήμιδες(Adj)(N) Ἀχαιοὶ(N)
+(658) Atride und auch andere wohl|schien|beinige Achaier
+(659) ἄνδρε(V) δύω(Adj)(A) περὶ(Prp) τῶνδε(Pr)(G) κελεύομεν(Prä)(Akt), ὥ(Kon) περ(Pt) ἀρίστω(Adj)(D)(Sup),
+(659) Männer zwei um dieser befehlen|wir, wie ja den|Besten,
+(660) πὺξ(Adv) μάλʼ(Adv) ἀνασχομένω(AorS)(Med)(D) πεπληγέμεν(Per)(Akt)(Inf)· ᾧ(Pr)(D) δέ(Pt) κʼ(Pt) Ἀπόλλων(N)
+(660) mit|Fäusten sehr standgehalten|habt zu|schlagen· dem aber wohl Apollon
+(661) δώῃ(Aor)(Akt)(Knj) καμμονίην(A), γνώωσι(Aor)(Akt)(Knj) δὲ(Pt) πάντες(Adj)(N) Ἀχαιοί(N),
+(661) gebe Stand|festigkeit, mögen|erkennen aber alle Achaier,
+(662) ἡμίονον(A) ταλαεργὸν(Adj)(A) ἄγων(Prä)(Akt)(N) κλισίην(A) δὲ(Pt) νεέσθω(Prä)(M/P)(Imv)·
+(662) Maultier müh|arbeitend führend Hütte aber kehre|zurück·
+(663) αὐτὰρ(Kon) ὃ(Pr)(N) νικηθεὶς(Aor)(Pas)(N) δέπας(A) οἴσεται(Fu)(M/P) ἀμφικύπελλον(Adj)(A).
+(663) aber er besiegt|worden Becher wird|tragen zwei|henkeligen.
+(664) ὣς(Adv) ἔφατʼ(Imp)(M/P), ὄρνυτο(Imp)(M/P) δʼ(Pt) αὐτίκʼ(Adv) ἀνὴρ(N) ἠΰς(Adj)(N) τε(Pt) μέγας(Adj)(N) τε(Pt)
+(664) so sprach, erhob|sich aber sogleich Mann tüchtig und groß und
+(665) εἰδὼς(Per)(Akt)(N) πυγμαχίης(G) υἱὸς(N) Πανοπῆος(G) Ἐπειός(N),
+(665) kundig|seiend des|Faustkampfs Sohn des|Panopeus Epeios,
+(666) ἅψατο(Aor)(Med) δʼ(Pt) ἡμιόνου(G) ταλαεργοῦ(Adj)(G) φώνησέν(Aor)(Akt) τε(Pt)·
+(666) fasste|an aber des|Maultiers müh|arbeitenden redete|er und·
+(667) ἆσσον(Adv) ἴτω(Prä)(Akt)(Imv) ὅς(Pr)(N) τις(Pr)(N) δέπας(A) οἴσεται(Fu)(M/P) ἀμφικύπελλον(Adj)(A)·
+(667) näher gehe wer irgend Becher wird|tragen zwei|henkeligen·
+(668) ἡμίονον(A) δʼ(Pt) οὔ(Pt) φημί(Prä)(Akt) τινʼ(Pr)(A) ἀξέμεν(Prä)(Akt)(Inf) ἄλλον(Adj)(A) Ἀχαιῶν(G)
+(668) Maultier aber nicht behaupte|ich irgendeinen weg|zu|tragen anderen der|Achaier
+(669) πυγμῇ(D) νικήσαντʼ(Aor)(Akt)(N), ἐπεὶ(Kon) εὔχομαι(Prä)(M/P) εἶναι(Prä)(Akt)(Inf) ἄριστος(Adj)(N)(Sup).
+(669) mit|der|Faust gesiegt|habend, da ich|rühme|mich zu|sein der|Beste.
+(670) ἦ(Pt) οὐχ(Pt) ἅλις(Adv) ὅττι(Kon) μάχης(G) ἐπιδεύομαι(Prä)(M/P) οὐδʼ(Pt) ἄρα(Pt) πως(Adv) ἦν(Imp)(Akt)
+(670) ja nicht genug dass des|Kampfes entbehre|ich und|nicht doch irgendwie war
+(671) ἐν(Prp) πάντεσσʼ(Adj)(D) ἔργοισι(D) δαήμονα(Adj)(A) φῶτα(A) γενέσθαι(Aor)(Med)(Inf).
+(671) in allen Arbeiten kundigen Mann zu|werden.
+(672) ὧδε(Adv) γὰρ(Pt) ἐξερέω(Fu)(Akt), τὸ(Art)(N) δὲ(Pt) καὶ(Kon) τετελεσμένον(Per)(M/P)(N) ἔσται(Fu)(M/P)·
+(672) so denn werde|ich|aus|sagen, dies aber auch vollendet|worden|seiend wird|sein·
+(673) ἀντικρὺ(Adv) χρόα(A) τε(Pt) ῥήξω(Fu)(Akt) σύν(Prp) τʼ(Pt) ὀστέʼ(A) ἀράξω(Fu)(Akt).
+(673) geradewegs Haut und werde|zerreißen mit und Knochen werde|zerschmettern.
+(674) κηδεμόνες(N) δέ(Pt) οἱ(Pr)(D) ἐνθάδʼ(Adv) ἀολλέες(Adj)(N) αὖθι(Adv) μενόντων(Prä)(Akt)(Imv),
+(674) Kümmerer aber ihm hier zusammen|gedrängt hier sollen|bleiben,
+(675) οἵ(Pr)(N) κέ(Pt) μιν(Pr)(A) ἐξοίσουσιν(Fu)(Akt) ἐμῇς(Adj)(D) ὑπὸ(Prp) χερσὶ(D) δαμέντα(Aor)(Pas)(A).
+(675) die wohl ihn werden|hinaus|tragen meinen unter Händen bezwungen|worden.
+(676) ὣς(Adv) ἔφαθʼ(Imp)(M/P), οἳ(Pr)(N) δʼ(Pt) ἄρα(Pt) πάντες(Adj)(N) ἀκὴν(Adv) ἐγένοντο(AorS)(Med) σιωπῇ(D).
+(676) so sprach|er, sie aber doch alle still wurden im|Schweigen.
+(677) Εὐρύαλος(N) δέ(Pt) οἱ(Pr)(D) οἶος(Adj)(N) ἀνίστατο(Imp)(M/P) ἰσόθεος(Adj)(N) φὼς(N)
+(677) Euryalos aber ihm allein stand|auf götter|gleich Mann
+(678) Μηκιστῆος(G) υἱὸς(N) Ταλαϊονίδαο(G) ἄνακτος(G),
+(678) des|Mekisteus Sohn des|Talaioniden des|Fürsten,
+(679) ὅς(Pr)(N) ποτε(Pt) Θήβας(A) δʼ(Pt) ἦλθε(AorS)(Akt) δεδουπότος(Per)(Akt)(G) Οἰδιπόδαο(G)
+(679) der einst nach|Theben aber kam gestürzt|seienden des|Oidipus
+(680) ἐς(Prp) τάφον(A)· ἔνθα(Adv) δὲ(Pt) πάντας(Adj)(A) ἐνίκα(Imp)(Akt) Καδμείωνας(A).
+(680) in Grab· dort aber alle besiegte die|Kadmeier.
+(681) τὸν(Art)(A) μὲν(Pt) Τυδεΐδης(N) δουρὶ(D) κλυτὸς(Adj)(N) ἀμφεπονεῖτο(Imp)(M/P)
+(681) den zwar Tydeides mit|Speer berühmt beschäftigte|sich|um
+(682) θαρσύνων(Prä)(Akt)(N) ἔπεσιν(D), μέγα(Adv) δʼ(Pt) αὐτῷ(Pr)(D) βούλετο(Imp)(Med) νίκην(A).
+(682) ermutigend mit|Worten, sehr aber ihm wünschte|er Sieg.
+(683) ζῶμα(A) δέ(Pt) οἱ(Pr)(D) πρῶτον(Adv) παρακάββαλεν(Aor)(Akt), αὐτὰρ(Kon) ἔπειτα(Adv)
+(683) Gurt aber ihm zuerst warf|darüber|hin, aber hernach
+(684) δῶκεν(Aor)(Akt) ἱμάντας(A) ἐϋτμήτους(Adj)(A) βοὸς(G) ἀγραύλοιο(Adj)(G).
+(684) gab Riemen wohl|geschnittene des|Rindes feld|weidenden.
+(685) τὼ(Pr)(Du)(N) δὲ(Pt) ζωσαμένω(Aor)(Med)(Du)(N) βήτην(Aor)(Akt)(Du) ἐς(Prp) μέσσον(Adj)(A) ἀγῶνα(A),
+(685) jene|beiden aber gegürtet|seiend gingen in mittleren Wettkampf,
+(686) ἄντα(Adv) δʼ(Pt) ἀνασχομένω(Aor)(Med)(Du)(N) χερσὶ(D) στιβαρῇσιν(Adj)(D) ἅμʼ(Adv) ἄμφω(Pr)(Du)(N)
+(686) entgegen aber stand|haltend mit|Händen kräftigen zusammen beide
+(687) σύν(Prp) ῥʼ(Pt) ἔπεσον(Aor)(Akt), σὺν(Prp) δέ(Pt) σφι(Pr)(D) βαρεῖαι(Adj)(N) χεῖρες(N) ἔμιχθεν(Aor)(Pas).
+(687) zusammen doch fielen, zusammen aber ihnen schwere Hände mischten|sich.
+(688) δεινὸς(Adj)(N) δὲ(Pt) χρόμαδος(N) γενύων(G) γένετʼ(Aor)(M/P), ἔρρεε(Imp)(Akt) δʼ(Pt) ἱδρὼς(N)
+(688) schrecklicher aber Knirschen der|Kiefer wurde, floß aber Schweiß
+(689) πάντοθεν(Adv) ἐκ(Prp) μελέων(G)· ἐπὶ(Prp) δʼ(Pt) ὄρνυτο(Imp)(M/P) δῖος(Adj)(N) Ἐπειός(N),
+(689) überallher aus den|Gliedern· darauf aber erhob|sich göttlicher Epeios,
+(690) κόψε(Aor)(Akt) δὲ(Pt) παπτήναντα(AorS)(Akt)(A) παρήϊον(A)· οὐδʼ(Pt) ἄρʼ(Pt) ἔτι(Adv) δὴν(Adv)
+(690) schlug aber umher|blickend|seienden Wange· und|nicht doch noch lange
+(691) ἑστήκειν(Plq)(Akt)· αὐτοῦ(Adv) γὰρ(Pt) ὑπήριπε(Aor)(Akt) φαίδιμα(Adj)(A) γυῖα(A).
+(691) hatte|gestanden· an|Ort|und|Stelle denn gab|unter|sich|nach glänzende Glieder.
+(692) ὡς(Kon) δʼ(Pt) ὅθʼ(Kon) ὑπὸ(Prp) φρικὸς(G) Βορέω(G) ἀναπάλλεται(Prä)(M/P) ἰχθὺς(N)
+(692) wie doch wenn unter der|Kälte des|Boreas schnellt|auf Fisch
+(693) θίνʼ(A) ἐν(Prp) φυκιόεντι(Adj)(D), μέλαν(Adj)(N) δέ(Pt) ἑ(Pr)(A) κῦμα(N) κάλυψεν(Aor)(Akt),
+(693) Strand in tang|reichen, schwarze aber ihn Welle bedeckte,
+(694) ὣς(Adv) πληγεὶς(Aor)(Pas)(N) ἀνέπαλτʼ(Aor)(M/P)· αὐτὰρ(Kon) μεγάθυμος(Adj)(N) Ἐπειὸς(N)
+(694) so geschlagen|worden schnellte|zurück· aber groß|herziger Epeios
+(695) χερσὶ(D) λαβὼν(AorS)(Akt)(N) ὤρθωσε(Aor)(Akt)· φίλοι(Adj)(N) δʼ(Pt) ἀμφέσταν(Plq)(Akt) ἑταῖροι(N),
+(695) mit|den|Händen ergriffen|habend richtete|auf· freundliche aber hatten|um|gestanden Gefährten,
+(696) οἵ(Pr)(N) μιν(Pr)(A) ἄγον(Imp)(Akt) διʼ(Prp) ἀγῶνος(G) ἐφελκομένοισι(Prä)(M/P)(D) πόδεσσιν(D)
+(696) die ihn führten durch des|Wettkampfs nach|schleppend mit|den|Füßen
+(697) αἷμα(A) παχὺ(Adj)(A) πτύοντα(Prä)(Akt)(A) κάρη(A) βάλλονθʼ(Prä)(Akt)(N) ἑτέρωσε(Adv)·
+(697) Blut dickes speiend Kopf werfend zur|anderen|Seite·
+(698) κὰδ(Adv) δʼ(Pt) ἀλλοφρονέοντα(Prä)(Akt)(A) μετὰ(Prp) σφίσιν(Pr)(D) εἷσαν(Aor)(Akt) ἄγοντες(Prä)(Akt)(N),
+(698) hinab aber irren|sinnes|seienden bei ihnen setzten führend,
+(699) αὐτοὶ(Pr)(N) δʼ(Pt) οἰχόμενοι(Prä)(M/P)(N) κόμισαν(Aor)(Akt) δέπας(A) ἀμφικύπελλον(Adj)(A).
+(699) sie|selbst aber weg|gehend brachten Becher zwei|henkeligen.
+(700) Πηλεΐδης(N) δʼ(Pt) αἶψʼ(Adv) ἄλλα(Adj)(A) κατὰ(Prp) τρίτα(Adj)(A) θῆκεν(Aor)(Akt) ἄεθλα(A)
+(700) Peleide aber sogleich andere als dritte setzte Preise
+(701) δεικνύμενος(Prä)(M/P)(N) Δαναοῖσι(D) παλαισμοσύνης(G) ἀλεγεινῆς(Adj)(G),
+(701) zeigend den|Danaern des|Ringens schmerzlichen,
+(702) τῷ(Art)(D) μὲν(Pt) νικήσαντι(Aor)(Akt)(D) μέγαν(Adj)(A) τρίποδʼ(A) ἐμπυριβήτην(Adj)(A),
+(702) dem zwar gesiegt|habenden großen Dreifuß auf|Feuer|stellbaren,
+(703) τὸν(Art)(A) δὲ(Pt) δυωδεκάβοιον(Adj)(A) ἐνὶ(Prp) σφίσι(Pr)(D) τῖον(Imp)(Akt) Ἀχαιοί(N)·
+(703) den aber zwölf|Rinder|werten bei ihnen schätzten die|Achaier·
+(704) ἀνδρὶ(D) δὲ(Pt) νικηθέντι(Aor)(Pas)(D) γυναῖκʼ(A) ἐς(Prp) μέσσον(Adj)(A) ἔθηκε(Aor)(Akt),
+(704) dem|Mann aber besiegt|wordenen Frau in die|Mitte stellte,
+(705) πολλὰ(Adj)(A) δʼ(Pt) ἐπίστατο(Imp)(M/P) ἔργα(A), τίον(Imp)(Akt) δέ(Pt) ἑ(Pr)(A) τεσσαράβοιον(Adj)(A).
+(705) viele aber verstand|er Arbeiten, schätzten aber ihn vier|Rinder|werten.
+(706) στῆ(AorS)(Akt) δʼ(Pt) ὀρθὸς(Adj)(N) καὶ(Kon) μῦθον(A) ἐν(Prp) Ἀργείοισιν(Adj)(D) ἔειπεν(AorS)(Akt)·
+(706) trat|hin aber aufrecht und Wort bei den|Argivern sprach·
+(707) ὄρνυσθʼ(Prä)(M/P)(Imv) οἳ(Pr)(N) καὶ(Kon) τούτου(Pr)(G) ἀέθλου(G) πειρήσεσθον(Fu)(Med)(Du).
+(707) steht|auf die auch dieses Wett|kampfs werdet|erproben.
+(708) ὣς(Adv) ἔφατʼ(Imp)(M/P), ὦρτο(Imp)(M/P) δʼ(Pt) ἔπειτα(Adv) μέγας(Adj)(N) Τελαμώνιος(Adj)(N) Αἴας(N),
+(708) so sprach|er, erhob|sich aber danach großer Telamonier Aias,
+(709) ἂν(Pt) δʼ(Pt) Ὀδυσεὺς(N) πολύμητις(Adj)(N) ἀνίστατο(Imp)(M/P) κέρδεα(A) εἰδώς(Per)(Akt)(N).
+(709) wohl aber Odysseus viel|ratend stand|auf Listen wissend.
+(710) ζωσαμένω(Aor)(Med)(Du)(N) δʼ(Pt) ἄρα(Pt) τώ(Pr)(Du)(N) γε(Pt) βάτην(Aor)(Akt)(Du) ἐς(Prp) μέσσον(Adj)(A) ἀγῶνα(A),
+(710) gegürtet|seiend aber doch jene|beiden wenigstens gingen in mittleren Wettkampf,
+(711) ἀγκὰς(Adv) δʼ(Pt) ἀλλήλων(Pr)(G) λαβέτην(Aor)(Akt)(Du) χερσὶ(D) στιβαρῇσιν(Adj)(D)
+(711) eng|umschlungen aber einander ergriffen mit|den|Händen kräftigen
+(712) ὡς(Kon) ὅτʼ(Kon) ἀμείβοντες(Prä)(Akt)(N), τούς(Pr)(A) τε(Pt) κλυτὸς(Adj)(N) ἤραρε(Per)(Akt) τέκτων(N)
+(712) wie wenn wechselnd, jene und berühmter hat|gefügt Zimmermann
+(713) δώματος(G) ὑψηλοῖο(Adj)(G) βίας(G) ἀνέμων(G) ἀλεείνων(Prä)(Akt)(G).
+(713) des|Hauses hohen der|Gewalt der|Winde vermeidend.
+(714) τετρίγει(Per)(Akt) δʼ(Pt) ἄρα(Pt) νῶτα(A) θρασειάων(Adj)(G) ἀπὸ(Prp) χειρῶν(G)
+(714) knirschte aber doch Rücken der|wagemutigen von Händen
+(715) ἑλκόμενα(Prä)(M/P)(N) στερεῶς(Adv)· κατὰ(Prp) δὲ(Pt) νότιος(Adj)(N) ῥέεν(Imp)(Akt) ἱδρώς(N),
+(715) gezogen|werdend fest· herab aber feuchte floß Schweiß,
+(716) πυκναὶ(Adj)(N) δὲ(Pt) σμώδιγγες(N) ἀνὰ(Prp) πλευράς(A) τε(Pt) καὶ(Kon) ὤμους(A)
+(716) dichte aber Striemen über die|Seiten und auch die|Schultern
+(717) αἵματι(D) φοινικόεσσαι(Adj)(N) ἀνέδραμον(AorS)(Akt)· οἳ(Pr)(N) δὲ(Pt) μάλʼ(Adv) αἰεὶ(Adv)
+(717) mit|Blut blut|rote liefen|auf· sie aber sehr immer
+(718) νίκης(G) ἱέσθην(Imp)(M/P)(Du) τρίποδος(G) πέρι(Prp) ποιητοῖο(Adj)(G)·
+(718) des|Sieges verlangten des|Dreifußes um kunst|vollen·
+(719) οὔτʼ(Kon) Ὀδυσεὺς(N) δύνατο(Imp)(M/P) σφῆλαι(Aor)(Akt)(Inf) οὔδει(D) τε(Pt) πελάσσαι(Aor)(Akt)(Inf),
+(719) weder Odysseus vermochte zu|stürzen der|Erde und zu|nähern,
+(720) οὔτʼ(Kon) Αἴας(N) δύνατο(Imp)(M/P), κρατερὴ(Adj)(N) δʼ(Pt) ἔχεν(Imp)(Akt) ἲς(N) Ὀδυσῆος(G).
+(720) noch Aias vermochte, starke aber hielt Kraft des|Odysseus.
+(721) ἀλλʼ(Kon) ὅτε(Kon) δή(Pt) ῥʼ(Pt) ἀνίαζον(Imp)(Akt) ἐϋκνήμιδας(Adj)(A) Ἀχαιούς(A),
+(721) aber als ja doch quälten wohl|schien|beinige Achaier,
+(722) δὴ(Pt) τότε(Adv) μιν(Pr)(A) προσέειπε(AorS)(Akt) μέγας(Adj)(N) Τελαμώνιος(Adj)(N) Αἴας(N)·
+(722) wahrlich dann ihn redete|an großer Telamonier Aias·
+(723) διογενὲς(Adj)(V) Λαερτιάδη(V) πολυμήχανʼ(Adj)(V) Ὀδυσσεῦ(V)
+(723) götter|geborener Laertiade viel|künste|reicher Odysseus
+(724) ἤ(Kon) μʼ(Pr)(A) ἀνάειρʼ(Aor)(Akt)(Imv), ἢ(Kon) ἐγὼ(Pr)(N) σέ(Pr)(A)· τὰ(Art)(N) δʼ(Pt) αὖ(Adv) Διὶ(D) πάντα(Adj)(N) μελήσει(Fu)(Akt).
+(724) entweder mich hebe|auf, oder ich dich· dies aber wiederum dem|Zeus alles wird|angehen.
+(725) ὣς(Adv) εἰπὼν(AorS)(Akt)(N) ἀνάειρε(Aor)(Akt)(Imv)· δόλου(G) δʼ(Pt) οὐ(Pt) λήθετʼ(Aor)(Akt) Ὀδυσσεύς(N)·
+(725) so gesagt|habend hebe|auf· der|List aber nicht vergaß Odysseus·
+(726) κόψʼ(Aor)(Akt) ὄπιθεν(Adv) κώληπα(A) τυχών(AorS)(Akt)(N), ὑπέλυσε(Aor)(Akt) δὲ(Pt) γυῖα(A),
+(726) schlug von|hinten Schenkel|muskel getroffen|habend, lockerte|unter aber Glieder,
+(727) κὰδ(Adv) δʼ(Pt) ἔβαλʼ(Aor)(Akt) ἐξοπίσω(Adv)· ἐπὶ(Prp) δὲ(Pt) στήθεσσιν(D) Ὀδυσσεὺς(N)
+(727) hinab aber warf rückwärts· auf aber die|Brüste Odysseus
+(728) κάππεσε(AorS)(Akt)· λαοὶ(N) δʼ(Pt) αὖ(Adv) θηεῦντό(Imp)(M/P) τε(Pt) θάμβησάν(Aor)(Akt) τε(Pt).
+(728) fiel|auf· Leute aber wiederum schauten|staunend und erstaunten und.
+(729) δεύτερος(Adj)(N) αὖτʼ(Adv) ἀνάειρε(Aor)(Akt) πολύτλας(Adj)(N) δῖος(Adj)(N) Ὀδυσσεύς(N),
+(729) als|Zweiter wiederum hob|auf viel|leidender göttlicher Odysseus,
+(730) κίνησεν(Aor)(Akt) δʼ(Pt) ἄρα(Pt) τυτθὸν(Adj)(A) ἀπὸ(Prp) χθονός(G), οὐδʼ(Pt) ἔτʼ(Adv) ἄειρεν(Imp)(Akt),
+(730) bewegte aber doch ein|wenig von der|Erde, und|nicht mehr hob,
+(731) ἐν(Prp) δὲ(Pt) γόνυ(A) γνάμψεν(Aor)(Akt)· ἐπὶ(Prp) δὲ(Pt) χθονὶ(D) κάππεσον(AorS)(Akt)(Du) ἄμφω(Pr)(Du)(N)
+(731) an aber das|Knie bog· auf aber die|Erde fielen beide
+(732) πλησίοι(Adj)(N) ἀλλήλοισι(Pr)(D), μιάνθησαν(Aor)(Pas) δὲ(Pt) κονίῃ(D).
+(732) nahe einander, wurden|befleckt aber vom|Staub.
+(733) καί(Kon) νύ(Pt) κε(Pt) τὸ(Art)(N) τρίτον(Adj)(A) αὖτις(Adv) ἀναΐξαντʼ(AorS)(Akt)(N) ἐπάλαιον(Aor)(Akt)(Du),
+(733) und nun wohl das dritte wiederum aufgesprungen|seiend hätten|gerungen,
+(734) εἰ(Kon) μὴ(Pt) Ἀχιλλεὺς(N) αὐτὸς(Pr)(N) ἀνίστατο(Imp)(M/P) καὶ(Kon) κατέρυκε(Imp)(Akt)·
+(734) wenn nicht Achilleus selbst stand|auf und hielt|zurück·
+(735) μηκέτʼ(Pt) ἐρείδεσθον(Prä)(M/P)(Imv), μὴ(Pt) δὲ(Pt) τρίβεσθε(Prä)(M/P)(Imv) κακοῖσι(Adj)(D)·
+(735) nicht|mehr stützt|euch, nicht aber reibt|euch in|Übeln·
+(736) νίκη(N) δʼ(Pt) ἀμφοτέροισιν(Adj)(Du)(D)· ἀέθλια(A) δʼ(Pt) ἶσʼ(Adj)(A) ἀνελόντες(AorS)(Akt)(N)
+(736) Sieg aber den|beiden· Preise aber gleiche auf|nehmend
+(737) ἔρχεσθʼ(Prä)(M/P)(Imv), ὄφρα(Kon) καὶ(Kon) ἄλλοι(Adj)(N) ἀεθλεύωσιν(Prä)(Akt)(Knj) Ἀχαιοί(N).
+(737) geht, damit auch andere wetteifern die|Achaier.
+(738) ὣς(Adv) ἔφαθʼ(Imp)(M/P), οἳ(Pr)(N) δʼ(Pt) ἄρα(Pt) τοῦ(Pr)(G) μάλα(Adv) μὲν(Pt) κλύον(Imp)(Akt) ἠδὲ(Kon) πίθοντο(Aor)(Med),
+(738) so sprach|er, sie aber doch des sehr zwar hörten und gehorchten,
+(739) καί(Kon) ῥʼ(Pt) ἀπομορξαμένω(Aor)(Med)(Du)(N) κονίην(A) δύσαντο(Aor)(Med) χιτῶνας(A).
+(739) und doch ab|wischend|habend den|Staub zogen|sie|an Tuniken.
+(740) Πηλεΐδης(N) δʼ(Pt) αἶψʼ(Adv) ἄλλα(Adj)(A) τίθει(Imp)(Akt) ταχυτῆτος(G) ἄεθλα(A)
+(740) Peleide aber sogleich andere setzte der|Schnelligkeit Preise
+(741) ἀργύρεον(Adj)(A) κρητῆρα(A) τετυγμένον(Per)(M/P)(A)· ἓξ(Adj) δʼ(Pt) ἄρα(Pt) μέτρα(A)
+(741) silbern Krater gefertigt|worden· sechs aber doch Maße
+(742) χάνδανεν(Imp)(Akt), αὐτὰρ(Kon) κάλλει(D) ἐνίκα(Imp)(Akt) πᾶσαν(Adj)(A) ἐπʼ(Prp) αἶαν(A)
+(742) faßte, aber an|Schönheit übertraf ganze auf Erde
+(743) πολλόν(Adj)(A), ἐπεὶ(Kon) Σιδόνες(N) πολυδαίδαλοι(Adj)(N) εὖ(Adv) ἤσκησαν(Aor)(Akt),
+(743) viel, da Sidonier kunst|reich gut schmückten,
+(744) Φοίνικες(N) δʼ(Pt) ἄγον(Imp)(Akt) ἄνδρες(N) ἐπʼ(Prp) ἠεροειδέα(Adj)(A) πόντον(A),
+(744) Phönizier aber führten Männer über nebel|artigen Meer,
+(745) στῆσαν(Aor)(Akt) δʼ(Pt) ἐν(Prp) λιμένεσσι(D), Θόαντι(D) δὲ(Pt) δῶρον(A) ἔδωκαν(Aor)(Akt)·
+(745) stellten aber in Häfen, Thoas|dem aber Geschenk gaben·
+(746) υἷος(N) δὲ(Pt) Πριάμοιο(G) Λυκάονος(G) ὦνον(A) ἔδωκε(AorS)(Akt)
+(746) Sohn aber des|Priamos Lykaons Preis gab
+(747) Πατρόκλῳ(D) ἥρωϊ(Adj)(D) Ἰησονίδης(N) Εὔνηος(N).
+(747) Patroklos|dem Helden Jason|Sohn Euneos.
+(748) καὶ(Kon) τὸν(Pr)(A) Ἀχιλλεὺς(N) θῆκεν(AorS)(Akt) ἄεθλον(A) οὗ(Pr)(G) ἑτάροιο(G),
+(748) und den Achilleus setzte Preis seines Gefährten,
+(749) ὅς(Pr)(N) τις(Pr)(N) ἐλαφρότατος(Adj)(N)(Sup) ποσσὶ(D) κραιπνοῖσι(Adj)(D) πέλοιτο(Prä)(M/P)(Knj)·
+(749) wer jemand leichtest mit|Füßen schnellen wäre·
+(750) δευτέρῳ(Adj)(D) αὖ(Adv) βοῦν(A) θῆκε(AorS)(Akt) μέγαν(Adj)(A) καὶ(Kon) πίονα(Adj)(A) δημῷ(D),
+(750) dem|zweiten wieder Stier setzte großen und fetten dem|Volk,
+(751) ἡμιτάλαντον(A) δὲ(Pt) χρυσοῦ(G) λοισθήϊʼ(Adj)(A) ἔθηκε(AorS)(Akt).
+(751) Halb|talent aber des|Goldes letztes setzte.
+(752) στῆ(AorS)(Akt) δʼ(Pt) ὀρθὸς(Adj)(N) καὶ(Kon) μῦθον(A) ἐν(Prp) Ἀργείοισιν(Adj)(D) ἔειπεν(AorS)(Akt)·
+(752) trat|hin aber aufrecht und Wort in Argivern sagte·
+(753) ὄρνυσθʼ(Prä)(M/P)(Imv) οἳ(Pr)(N) καὶ(Kon) τούτου(Pr)(G) ἀέθλου(G) πειρήσεσθε(Fu)(M/P).
+(753) auf|steht die und dieses Wett|kampfs werdet|ihr|erproben.
+(754) ὣς(Adv) ἔφατʼ(Imp)(M/P), ὄρνυτο(Imp)(M/P) δʼ(Pt) αὐτίκʼ(Adv) Ὀϊλῆος(G) ταχὺς(Adj)(N) Αἴας(N),
+(754) so sprach|er, rüstete|sich aber sogleich des|Oileus schnell Aias,
+(755) ἂν(Pt) δʼ(Pt) Ὀδυσεὺς(N) πολύμητις(Adj)(N), ἔπειτα(Adv) δὲ(Pt) Νέστορος(G) υἱὸς(N)
+(755) dann aber Odysseus viel|ratend, danach aber des|Nestors Sohn
+(756) Ἀντίλοχος(N)· ὃ(Pr)(N) γὰρ(Pt) αὖτε(Adv) νέους(A) ποσὶ(D) πάντας(Adj)(A) ἐνίκα(Imp)(Akt).
+(756) Antilochos· der denn wiederum Jünglinge mit|Füßen alle besiegte.
+(757) στὰν(AorS)(Akt)(Du) δὲ(Pt) μεταστοιχί(Adv)· σήμηνε(AorS)(Akt) δὲ(Pt) τέρματʼ(A) Ἀχιλλεύς(N).
+(757) standen aber in|Reihe· zeigte aber Wende|male Achilleus.
+(758) τοῖσι(Pr)(D) δʼ(Pt) ἀπὸ(Prp) νύσσης(G) τέτατο(Plq)(M/P) δρόμος(N)· ὦκα(Adv) δʼ(Pt) ἔπειτα(Adv)
+(758) ihnen aber von Wende Strecke war|gespannt· schnell aber danach
+(759) ἔκφερʼ(Imp)(Akt) Ὀϊλιάδης(N)· ἐπὶ(Prp) δʼ(Pt) ὄρνυτο(Imp)(M/P) δῖος(Adj)(N) Ὀδυσσεὺς(N)
+(759) führte|vor Oileus|Sohn· auf aber rüstete|sich göttlich Odysseus
+(760) ἄγχι(Adv) μάλʼ(Adv), ὡς(Kon) ὅτε(Kon) τίς(Pr)(N) τε(Pt) γυναικὸς(G) ἐϋζώνοιο(Adj)(G)
+(760) nahe sehr, wie wenn jemand auch der|Frau wohl|gegürteten
+(761) στήθεός(G) ἐστι(Prä)(Akt) κανών(N), ὅν(Pr)(A) τʼ(Pt) εὖ(Adv) μάλα(Adv) χερσὶ(D) τανύσσῃ(Prä)(Akt)(Knj)
+(761) der|Brust ist Stab, den und gut sehr mit|Händen strecke|sie
+(762) πηνίον(A) ἐξέλκουσα(Prä)(Akt)(N) παρὲκ(Prp) μίτον(A), ἀγχόθι(Adv) δʼ(Pt) ἴσχει(Prä)(Akt)
+(762) Web|spule heraus|ziehend neben Faden, nahe aber hält
+(763) στήθεος(G)· ὣς(Adv) Ὀδυσεὺς(N) θέεν(Imp)(Akt) ἐγγύθεν(Adv), αὐτὰρ(Kon) ὄπισθεν(Adv)
+(763) an|der|Brust· so Odysseus lief nahe, aber hinten
+(764) ἴχνια(A) τύπτε(Imp)(Akt) πόδεσσι(D) πάρος(Adv) κόνιν(A) ἀμφιχυθῆναι(Aor)(Pas)(Inf)·
+(764) Spuren stampfte mit|Füßen zuvor Staub umgegossen|zu|werden·
+(765) κὰδ(Adv) δʼ(Pt) ἄρα(Pt) οἱ(Pr)(D) κεφαλῆς(G) χέʼ(Imp)(Akt) ἀϋτμένα(Adj)(A) δῖος(Adj)(N) Ὀδυσσεὺς(N)
+(765) hinab aber doch ihm des|Hauptes goß keuchend göttlich Odysseus
+(766) αἰεὶ(Adv) ῥίμφα(Adv) θέων(Prä)(Akt)(N)· ἴαχον(Imp)(Akt) δʼ(Pt) ἐπὶ(Prp) πάντες(Adj)(N) Ἀχαιοὶ(N)
+(766) immer rasch laufend· riefen aber darauf alle Achaier
+(767) νίκης(G) ἱεμένῳ(Prä)(M/P)(D), μάλα(Adv) δὲ(Pt) σπεύδοντι(Prä)(Akt)(D) κέλευον(Imp)(Akt).
+(767) des|Sieges begehrenden, sehr aber eilenden befahlen|sie.
+(768) ἀλλʼ(Kon) ὅτε(Kon) δὴ(Pt) πύματον(Adj)(A) τέλεον(Adj)(A) δρόμον(A), αὐτίκʼ(Adv) Ὀδυσσεὺς(N)
+(768) sondern als ja letzten vollendeten Lauf, sogleich Odysseus
+(769) εὔχετʼ(Imp)(M/P) Ἀθηναίῃ(D) γλαυκώπιδι(Adj)(D) ὃν(Pr)(A) κατὰ(Prp) θυμόν(A)·
+(769) betete Athene|der eulen|äugigen seinen nach Sinn·
+(770) κλῦθι(Aor)(Akt)(Imv) θεά(V), ἀγαθή(Adj)(N) μοι(Pr)(D) ἐπίρροθος(Adj)(N) ἐλθὲ(AorS)(Akt)(Imv) ποδοῖιν(Du)(D).
+(770) höre Göttin, gute mir beiständ|ig komm den|Füßen.
+(771) ὣς(Adv) ἔφατʼ(Imp)(M/P) εὐχόμενος(Prä)(M/P)(N)· τοῦ(Pr)(G) δʼ(Pt) ἔκλυε(Imp)(Akt) Παλλὰς(N) Ἀθήνη(N),
+(771) so sprach|er betend· ihn aber hörte Pallas Athene,
+(772) γυῖα(A) δʼ(Pt) ἔθηκεν(Aor)(Akt) ἐλαφρά(Adj)(A), πόδας(A) καὶ(Kon) χεῖρας(A) ὕπερθεν(Adv).
+(772) Glieder aber machte leicht, Füße und Hände darüber|hinaus.
+(773) ἀλλʼ(Kon) ὅτε(Kon) δὴ(Pt) τάχʼ(Adv) ἔμελλον(Imp)(M/P) ἐπαΐξασθαι(Aor)(M/P)(Inf) ἄεθλον(A),
+(773) sondern als ja bald im|Begriff|waren los|zu|stürmen Preis,
+(774) ἔνθʼ(Adv) Αἴας(N) μὲν(Pt) ὄλισθε(AorS)(Akt) θέων(Prä)(Akt)(N), βλάψεν(AorS)(Akt) γὰρ(Pt) Ἀθήνη(N),
+(774) dort Aias zwar glitt|aus laufend, schadete denn Athene,
+(775) τῇ(Pr)(D) ῥα(Pt) βοῶν(G) κέχυτʼ(Plq)(M/P) ὄνθος(N) ἀποκταμένων(Aor)(M/P)(G) ἐριμύκων(Adj)(G),
+(775) dort|auf ja der|Rinder war|gegossen Mist der|erschlagenen laut|brüllenden,
+(776) οὓς(Pr)(A) ἐπὶ(Prp) Πατρόκλῳ(D) πέφνεν(AorS)(Akt) πόδας(A) ὠκὺς(Adj)(N) Ἀχιλλεύς(N)·
+(776) welche bei Patroklos erschlug Füße schnell Achilleus·
+(777) ἐν(Prp) δʼ(Pt) ὄνθου(G) βοέου(Adj)(G) πλῆτο(Imp)(M/P) στόμα(N) τε(Pt) ῥῖνάς(A) τε(Pt)·
+(777) in aber des|Mistes des|Rindes füllte|sich Mund und Nasen|löcher und·
+(778) κρητῆρʼ(A) αὖτʼ(Adv) ἀνάειρε(Aor)(Akt) πολύτλας(Adj)(N) δῖος(Adj)(N) Ὀδυσσεύς(N),
+(778) Krater wiederum hob|auf viel|leidend göttlich Odysseus,
+(779) ὡς(Adv) ἦλθε(AorS)(Akt) φθάμενος(AorS)(M/P)(N)· ὃ(Pr)(N) δὲ(Pt) βοῦν(A) ἕλε(AorS)(Akt) φαίδιμος(Adj)(N) Αἴας(N).
+(779) wie kam vor|weg|gekommen· der aber Stier nahm strahlend Aias.
+(780) στῆ(AorS)(Akt) δὲ(Pt) κέρας(A) μετὰ(Prp) χερσὶν(D) ἔχων(Prä)(Akt)(N) βοὸς(G) ἀγραύλοιο(Adj)(G)
+(780) trat|hin aber Horn zwischen Händen haltend des|Rindes feld|weidenden
+(781) ὄνθον(A) ἀποπτύων(Prä)(Akt)(N), μετὰ(Prp) δʼ(Pt) Ἀργείοισιν(Adj)(D) ἔειπεν(AorS)(Akt)·
+(781) Mist aus|spuckend, unter aber Argivern sagte·
+(782) ὢ(ij) πόποι(ij) ἦ(Pt) μʼ(Pr)(A) ἔβλαψε(AorS)(Akt) θεὰ(N) πόδας(A), ἣ(Pr)(N) τὸ(Art)(A) πάρος(Adv) περ(Pt)
+(782) o ach ja mich schädigte Göttin Füße, die das ehemals doch
+(783) μήτηρ(N) ὣς(Adv) Ὀδυσῆϊ(D) παρίσταται(Prä)(M/P) ἠδʼ(Kon) ἐπαρήγει(Imp)(Akt).
+(783) Mutter so Odysseus|dem steht|bei und half.
+(784) ὣς(Adv) ἔφαθʼ(Imp)(M/P), οἳ(Pr)(N) δʼ(Pt) ἄρα(Pt) πάντες(Adj)(N) ἐπʼ(Prp) αὐτῷ(Pr)(D) ἡδὺ(Adv) γέλασσαν(Aor)(Akt).
+(784) so sprach|er, sie aber doch alle über ihn lieblich lachten.
+(785) Ἀντίλοχος(N) δʼ(Pt) ἄρα(Pt) δὴ(Pt) λοισθήϊον(Adj)(A) ἔκφερʼ(Imp)(Akt) ἄεθλον(A)
+(785) Antilochos aber doch ja letztes trug|davon Preis
+(786) μειδιόων(Prä)(Akt)(N), καὶ(Kon) μῦθον(A) ἐν(Prp) Ἀργείοισιν(Adj)(D) ἔειπεν(AorS)(Akt)·
+(786) lächelnd, und Wort in Argivern sagte·
+(787) εἰδόσιν(Per)(Akt)(D) ὔμμʼ(Pr)(D) ἐρέω(Fu)(Akt) πᾶσιν(Adj)(D) φίλοι(V), ὡς(Kon) ἔτι(Adv) καὶ(Kon) νῦν(Adv)
+(787) Wissenden euch werde|ich|sagen allen Freunde, dass noch auch jetzt
+(788) ἀθάνατοι(Adj)(N) τιμῶσι(Prä)(Akt) παλαιοτέρους(Adj)(A)(Kmp) ἀνθρώπους(A).
+(788) Unsterbliche ehren älteren Menschen.
+(789) Αἴας(N) μὲν(Pt) γὰρ(Pt) ἐμεῖʼ(Pr)(G) ὀλίγον(Adv) προγενέστερός(Adj)(N)(Kmp) ἐστιν(Prä)(Akt),
+(789) Aias zwar denn meiner wenig früher|geboren ist,
+(790) οὗτος(Pr)(N) δὲ(Pt) προτέρης(Adj)(G)(Kmp) γενεῆς(G) προτέρων(Adj)(G)(Kmp) τʼ(Pt) ἀνθρώπων(G)·
+(790) dieser aber früherer Generation früherer und Menschen·
+(791) ὠμογέροντα(Adj)(A) δέ(Pt) μίν(Pr)(A) φασʼ(Prä)(Akt) ἔμμεναι(Prä)(Akt)(Inf)· ἀργαλέον(Adj)(A) δὲ(Pt)
+(791) rau|greis aber ihn sagen|sie zu|sein· schwierig aber
+(792) ποσσὶν(D) ἐριδήσασθαι(Aor)(M/P)(Inf) Ἀχαιοῖς(D), εἰ(Kon) μὴ(Pt) Ἀχιλλεῖ(D).
+(792) mit|Füßen zu|wetteifern den|Achaiern, wenn nicht Achilleus.
+(793) ὣς(Adv) φάτο(Imp)(M/P), κύδηνεν(Imp)(Akt) δὲ(Pt) ποδώκεα(Adj)(A) Πηλεΐωνα(A).
+(793) so sprach|er, ehrte aber schnell|füßigen Peleion.
+(794) τὸν(Pr)(A) δʼ(Pt) Ἀχιλεὺς(N) μύθοισιν(D) ἀμειβόμενος(Prä)(M/P)(N) προσέειπεν(AorS)(Akt)·
+(794) den aber Achilleus mit|Worten antwortend redete|an·
+(795) Ἀντίλοχʼ(V) οὐ(Pt) μέν(Pt) τοι(Pr)(D) μέλεος(Adj)(N) εἰρήσεται(Fu)(M/P) αἶνος(N),
+(795) Antilochos nicht zwar dir vergeblich wird|gesagt Lob,
+(796) ἀλλά(Kon) τοι(Pr)(D) ἡμιτάλαντον(A) ἐγὼ(Pr)(N) χρυσοῦ(G) ἐπιθήσω(Fu)(Akt).
+(796) sondern dir Halb|talent ich des|Goldes werde|hinlegen.
+(797) ὣς(Adv) εἰπὼν(AorS)(Akt)(N) ἐν(Prp) χερσὶ(D) τίθει(Imp)(Akt), ὃ(Pr)(N) δʼ(Pt) ἐδέξατο(Aor)(Med) χαίρων(Prä)(Akt)(N).
+(797) so gesagt|habend in Händen setzte|er, er aber nahm|entgegen sich|freuend.
+(798) αὐτὰρ(Kon) Πηλεΐδης(N) κατὰ(Prp) μὲν(Pt) δολιχόσκιον(Adj)(A) ἔγχος(A)
+(798) aber Peleide her|ab zwar lang|schattig Speer
+(799) θῆκʼ(AorS)(Akt) ἐς(Prp) ἀγῶνα(A) φέρων(Prä)(Akt)(N), κατὰ(Prp) δʼ(Pt) ἀσπίδα(A) καὶ(Kon) τρυφάλειαν(A)
+(799) setzte in Wett|kampf tragend, her|ab aber Schild und Helm
+(800) τεύχεα(A) Σαρπήδοντος(G), ἅ(Pr)(A) μιν(Pr)(A) Πάτροκλος(N) ἀπηύρα(AorS)(Akt).
+(800) Rüstungen des|Sarpedon, die ihn Patroklos raubte.
+(801) στῆ(AorS)(Akt) δʼ(Pt) ὀρθὸς(Adj)(N) καὶ(Kon) μῦθον(A) ἐν(Prp) Ἀργείοισιν(Adj)(D) ἔειπεν(AorS)(Akt)·
+(801) trat|hin aber aufrecht und Wort in Argivern sagte·
+(802) ἄνδρε(V) δύω(Adj) περὶ(Prp) τῶνδε(Pr)(G) κελεύομεν(Prä)(Akt), ὥ(Kon) περ(Pt) ἀρίστω(Adj)(D)(Sup)(Du),
+(802) Männer zwei um dieser befehlen|wir, wie doch den|Besten,
+(803) τεύχεα(A) ἑσσαμένω(Aor)(M/P)(Du)(N) ταμεσίχροα(Adj)(A) χαλκὸν(A) ἑλόντε(AorS)(Akt)(Du)(N)
+(803) Rüstungen angelegt|habend fleisch|schneidenden Bronze genommen|habend
+(804) ἀλλήλων(Pr)(G) προπάροιθεν(Adv) ὁμίλου(G) πειρηθῆναι(Aor)(Pas)(Inf).
+(804) einander vor Haufen erprobt|zu|werden.
+(805) ὁππότερός(Pr)(N) κε(Pt) φθῇσιν(Aor)(Akt)(Knj) ὀρεξάμενος(Aor)(Med)(N) χρόα(A) καλόν(Adj)(A),
+(805) welcher|von|beiden wohl zuvorkomme aus|streckend Haut schöne,
+(806) ψαύσῃ(Aor)(Akt)(Knj) δʼ(Pt) ἐνδίνων(Prä)(Akt)(N) διά(Prp) τʼ(Pt) ἔντεα(A) καὶ(Kon) μέλαν(Adj)(A) αἷμα(A),
+(806) berühre aber ein|wirbelnd durch und Ausrüstung und schwarzes Blut,
+(807) τῷ(Pr)(D) μὲν(Pt) ἐγὼ(Pr)(N) δώσω(Fu)(Akt) τόδε(Pr)(A) φάσγανον(A) ἀργυρόηλον(Adj)(A)
+(807) dem zwar ich werde|geben dieses Schwert silbergenietetes
+(808) καλὸν(Adj)(A) Θρηΐκιον(Adj)(A), τὸ(Pr)(A) μὲν(Pt) Ἀστεροπαῖον(A) ἀπηύρων(Aor)(Akt)·
+(808) schönes thrakisch|es, das zwar Asteropaios beraubte|ich·
+(809) τεύχεα(A) δʼ(Pt) ἀμφότεροι(Adj)(N) ξυνήϊα(Adj)(A) ταῦτα(Pr)(A) φερέσθων(Prä)(M/P)(Imv)·
+(809) Waffen|rüstungen aber beide gemeinsam dieses sollen|tragen·
+(810) καί(Kon) σφιν(Pr)(D) δαῖτʼ(A) ἀγαθὴν(Adj)(A) παραθήσομεν(Fu)(Akt) ἐν(Prp) κλισίῃσιν(D).
+(810) und ihnen Mahl gutes werden|bereiten in Hütten.
+(811) ὣς(Adv) ἔφατʼ(Imp)(M/P), ὦρτο(Imp)(M/P) δʼ(Pt) ἔπειτα(Adv) μέγας(Adj)(N) Τελαμώνιος(Adj)(N) Αἴας(N),
+(811) so sprach|er, stand|auf aber danach großer Telamonier Aias,
+(812) ἂν(Pt) δʼ(Pt) ἄρα(Pt) Τυδεΐδης(N) ὦρτο(Imp)(M/P), κρατερὸς(Adj)(N) Διομήδης(N).
+(812) wohl aber doch Tydeide stand|auf, starker Diomedes.
+(813) οἳ(Pr)(N) δʼ(Pt) ἐπεὶ(Kon) οὖν(Pt) ἑκάτερθεν(Adv) ὁμίλου(G) θωρήχθησαν(Aor)(Pas),
+(813) sie aber als nun von|beiden|Seiten des|Haufens gerüsteten|sich,
+(814) ἐς(Prp) μέσον(Adj)(A) ἀμφοτέρω(Adj)(Du)(N) συνίτην(AorS)(Akt)(Du) μεμαῶτε(Per)(Akt)(Du)(N) μάχεσθαι(Prä)(M/P)(Inf)
+(814) in die|Mitte beide kamen|zusammen begierig zu|kämpfen
+(815) δεινὸν(Adj)(A) δερκομένω(Prä)(M/P)(Du)(D)· θάμβος(N) δʼ(Pt) ἔχε(Imp)(Akt) πάντας(Adj)(A) Ἀχαιούς(A).
+(815) furchtbar blickend· Staunen aber ergriff alle Achaier.
+(816) ἀλλʼ(Kon) ὅτε(Kon) δὴ(Pt) σχεδὸν(Adv) ἦσαν(Imp)(Akt) ἐπʼ(Prp) ἀλλήλοισιν(D) ἰόντες(Prä)(Akt)(N),
+(816) sondern als ja nahe waren auf einander gehend,
+(817) τρὶς(Adv) μὲν(Pt) ἐπήϊξαν(AorS)(Akt), τρὶς(Adv) δὲ(Pt) σχεδὸν(Adv) ὁρμήθησαν(Aor)(Pas).
+(817) dreimal zwar sprangen|an, dreimal aber nahe stürzten|los.
+(818) ἔνθʼ(Adv) Αἴας(N) μὲν(Pt) ἔπειτα(Adv) κατʼ(Prp) ἀσπίδα(A) πάντοσʼ(Adv) ἐΐσην(Adj)(A)
+(818) da Aias zwar danach gegen Schild überall gleich|mäßige
+(819) νύξʼ(Aor)(Akt), οὐδὲ(Kon) χρόʼ(A) ἵκανεν(Imp)(Akt)· ἔρυτο(Imp)(M/P) γὰρ(Pt) ἔνδοθι(Adv) θώρηξ(N)·
+(819) stach, und|nicht Haut erreichte· wehrte|ab denn innen Panzer·
+(820) Τυδεΐδης(N) δʼ(Pt) ἄρʼ(Pt) ἔπειτα(Adv) ὑπὲρ(Prp) σάκεος(G) μεγάλοιο(Adj)(G)
+(820) Tydeide aber doch danach über des|Schildes großen
+(821) αἰὲν(Adv) ἐπʼ(Prp) αὐχένι(D) κῦρε(Aor)(Akt) φαεινοῦ(Adj)(G) δουρὸς(G) ἀκωκῇ(D).
+(821) immer auf Nacken traf glänzenden des|Speeres mit|Spitze.
+(822) καὶ(Kon) τότε(Adv) δή(Pt) ῥʼ(Pt) Αἴαντι(D) περιδείσαντες(Aor)(Akt)(N) Ἀχαιοὶ(N)
+(822) und dann ja doch dem|Aias erschrocken|seiend Achaier
+(823) παυσαμένους(Aor)(Med)(A) ἐκέλευσαν(Aor)(Akt) ἀέθλια(A) ἶσʼ(Adj)(A) ἀνελέσθαι(Aor)(Med)(Inf).
+(823) aufgehört|habend befahlen Preise gleiche anzunehmen.
+(824) αὐτὰρ(Kon) Τυδεΐδῃ(D) δῶκεν(Aor)(Akt) μέγα(Adj)(A) φάσγανον(A) ἥρως(N)
+(824) aber dem|Tydeiden gab großes Schwert Held
+(825) σὺν(Prp) κολεῷ(D) τε(Pt) φέρων(Prä)(Akt)(N) καὶ(Kon) ἐϋτμήτῳ(Adj)(D) τελαμῶνι(D).
+(825) mit Scheide und tragend und wohl|geschnittenem Riemen|gurt.
+(826) αὐτὰρ(Kon) Πηλεΐδης(N) θῆκεν(AorS)(Akt) σόλον(A) αὐτοχόωνον(Adj)(A)
+(826) aber Peleide setzte|hin Eisen|klotz selbst|gegossenen
+(827) ὃν(Pr)(A) πρὶν(Adv) μὲν(Pt) ῥίπτασκε(Imp)(Akt) μέγα(Adj)(A) σθένος(A) Ἠετίωνος(G)·
+(827) den früher zwar pflegte|zu|werfen große Kraft des|Eëtion·
+(828) ἀλλʼ(Kon) ἤτοι(Pt) τὸν(Pr)(A) ἔπεφνε(Aor)(Akt) ποδάρκης(Adj)(N) δῖος(Adj)(N) Ἀχιλλεύς(N),
+(828) aber freilich den erschlug schnell|füßig|er göttlicher Achilleus,
+(829) τὸν(Pr)(A) δʼ(Pt) ἄγετʼ(Imp)(Akt) ἐν(Prp) νήεσσι(D) σὺν(Prp) ἄλλοισι(Adj)(D) κτεάτεσσι(D).
+(829) den aber führte|er in den|Schiffen mit anderen Besitz|stücken.
+(830) στῆ(AorS)(Akt) δʼ(Pt) ὀρθὸς(Adj)(N) καὶ(Kon) μῦθον(A) ἐν(Prp) Ἀργείοισιν(D) ἔειπεν(AorS)(Akt)·
+(830) trat|hin aber aufrecht und Wort in den|Argivern sprach·
+(831) ὄρνυσθʼ(Prä)(M/P)(Imv) οἳ(Pr)(N) καὶ(Kon) τούτου(Pr)(G) ἀέθλου(G) πειρήσεσθε(Fu)(M/P).
+(831) steht|auf die auch dieses Wett|kampfs werdet|erproben.
+(832) εἴ(Kon) οἱ(Pr)(D) καὶ(Pt) μάλα(Adv) πολλὸν(Adj)(A) ἀπόπροθι(Adv) πίονες(Adj)(N) ἀγροί(N),
+(832) wenn ihm auch sehr viel weit|weg fruchtbare Felder,
+(833) ἕξει(Fu)(Akt) μιν(Pr)(A) καὶ(Kon) πέντε(Adj) περιπλομένους(Prä)(M/P)(A) ἐνιαυτοὺς(A)
+(833) wird|halten ihn auch fünf um|umlaufene Jahre
+(834) χρεώμενος(Prä)(M/P)(N)· οὐ(Pt) μὲν(Pt) γάρ(Pt) οἱ(Pr)(D) ἀτεμβόμενός(Prä)(M/P)(N) γε(Pt) σιδήρου(G)
+(834) benötigend· nicht zwar denn ihm entbehrend doch des|Eisens
+(835) ποιμὴν(N) οὐδʼ(Kon) ἀροτὴρ(N) εἶσʼ(Prä)(Akt) ἐς(Prp) πόλιν(A), ἀλλὰ(Kon) παρέξει(Fu)(Akt).
+(835) Hirte und|nicht Pflüger geht|hinein in Stadt, sondern wird|verschaffen.
+(836) ὣς(Adv) ἔφατʼ(Imp)(M/P), ὦρτο(Imp)(M/P) δʼ(Pt) ἔπειτα(Adv) μενεπτόλεμος(Adj)(N) Πολυποίτης(N),
+(836) so sprach|er, stand|auf aber danach kampf|standfest|er Polypoites,
+(837) ἂν(Pt) δὲ(Pt) Λεοντῆος(G) κρατερὸν(Adj)(A) μένος(A) ἀντιθέοιο(Adj)(G),
+(837) wohl aber des|Leonteus starke Kraft gott|ähnlichen,
+(838) ἂν(Pt) δʼ(Pt) Αἴας(N) Τελαμωνιάδης(N) καὶ(Kon) δῖος(Adj)(N) Ἐπειός(N).
+(838) wohl aber Aias Telamon|sohn und göttlicher Epeios.
+(839) ἑξείης(Adv) δʼ(Pt) ἵσταντο(Imp)(M/P), σόλον(A) δʼ(Pt) ἕλε(AorS)(Akt) δῖος(Adj)(N) Ἐπειός(N),
+(839) der|Reihe|nach aber stellten|sich, Eisen|klotz aber nahm göttlicher Epeios,
+(840) ἧκε(AorS)(Akt) δὲ(Pt) δινήσας(Aor)(Akt)(N)· γέλασαν(Aor)(Akt) δʼ(Pt) ἐπὶ(Prp) πάντες(Adj)(N) Ἀχαιοί(N).
+(840) schleuderte aber wirbelnd· lachten aber darüber alle Achaier.
+(841) δεύτερος(Adj)(N) αὖτʼ(Adv) ἀφέηκε(AorS)(Akt) Λεοντεὺς(N) ὄζος(N) Ἄρηος(G)·
+(841) zweiter wieder ließ|fahren Leonteus Spross des|Ares·
+(842) τὸ(Art)(A) τρίτον(Adj)(A) αὖτʼ(Adv) ἔρριψε(Aor)(Akt) μέγας(Adj)(N) Τελαμώνιος(Adj)(N) Αἴας(N)
+(842) das dritte wieder warf großer Telamonier Aias
+(843) χειρὸς(G) ἄπο(Prp) στιβαρῆς(Adj)(G), καὶ(Kon) ὑπέρβαλε(Aor)(Akt) σήματα(A) πάντων(G).
+(843) von|der|Hand weg|von kräftigen, und übertraf Zeichen aller.
+(844) ἀλλʼ(Kon) ὅτε(Kon) δὴ(Pt) σόλον(A) εἷλε(AorS)(Akt) μενεπτόλεμος(Adj)(N) Πολυποίτης(N),
+(844) aber als ja Eisen|klotz nahm kampf|standfest|er Polypoites,
+(845) ὅσσόν(Pr)(A) τίς(Pr)(N) τʼ(Pt) ἔρριψε(Aor)(Akt) καλαύροπα(Adj)(A) βουκόλος(N) ἀνήρ(N),
+(845) so|weit irgend|ein und geworfen|hat knorren|stab|igen Rinder|hirte Mann,
+(846) ἣ(Pr)(N) δέ(Pt) θʼ(Pt) ἑλισσομένη(Prä)(M/P)(N) πέτεται(Prä)(M/P) διὰ(Prp) βοῦς(A) ἀγελαίας(Adj)(A),
+(846) welche aber auch sich|drehend fliegt durch Rinder herden|hafte,
+(847) τόσσον(Adj)(A) παντὸς(Adj)(G) ἀγῶνος(G) ὑπέρβαλε(Aor)(Akt)· τοὶ(Pr)(N) δὲ(Pt) βόησαν(Aor)(Akt).
+(847) so|viel des|ganzen Wett|kampfs übertraf· jene aber riefen.
+(848) ἀνστάντες(Aor)(Akt)(N) δʼ(Pt) ἕταροι(N) Πολυποίταο(G) κρατεροῖο(Adj)(G)
+(848) aufgestanden|seiend aber Gefährten des|Polypoites starken
+(849) νῆας(A) ἔπι(Prp) γλαφυρὰς(Adj)(A) ἔφερον(Imp)(Akt) βασιλῆος(G) ἄεθλον(A).
+(849) Schiffe zu hohl|bauchigen trugen des|Fürsten Preis.
+(850) αὐτὰρ(Kon) ὃ(Pr)(N) τοξευτῇσι(D) τίθει(Imp)(Akt) ἰόεντα(Adj)(A) σίδηρον(A),
+(850) aber er den|Bognern setzte pfeil|tragend|es Eisen,
+(851) κὰδ(Adv) δʼ(Pt) ἐτίθει(Imp)(Akt) δέκα(Adj) μὲν(Pt) πελέκεας(A), δέκα(Adj) δʼ(Pt) ἡμιπέλεκκα(A),
+(851) hinab aber stellte zehn zwar Äxte, zehn aber Halb|äxte,
+(852) ἱστὸν(A) δʼ(Pt) ἔστησεν(AorS)(Akt) νηὸς(G) κυανοπρῴροιο(Adj)(G)
+(852) Pfahl aber stellte|auf des|Schiffes dunkel|bugigen
+(853) τηλοῦ(Adv) ἐπὶ(Prp) ψαμάθοις(D), ἐκ(Prp) δὲ(Pt) τρήρωνα(Adj)(A) πέλειαν(A)
+(853) fern auf Sand, aus aber scheue Taube
+(854) λεπτῇ(Adj)(D) μηρίνθῳ(D) δῆσεν(AorS)(Akt) ποδός(G), ἧς(Pr)(G) ἄρʼ(Pt) ἀνώγει(Imp)(Akt)
+(854) dünner Schnur band am|Fuß, deren doch befahl
+(855) τοξεύειν(Prä)(Akt)(Inf)· ὃς(Pr)(N) μέν(Pt) κε(Pt) βάλῃ(Aor)(Akt)(Knj) τρήρωνα(Adj)(A) πέλειαν(A),
+(855) zu|schießen· wer zwar wohl treffe scheue Taube,
+(856) πάντας(Adj)(A) ἀειράμενος(Aor)(Med)(N) πελέκεας(A) οἶκον(A) δὲ(Pt) φερέσθω(Prä)(M/P)(Imv)·
+(856) alle aufgehoben|habend Äxte Haus aber soll|tragen·
+(857) ὃς(Pr)(N) δέ(Kon) κε(Pt) μηρίνθοιο(G) τύχῃ(Aor)(Akt)(Knj) ὄρνιθος(G) ἁμαρτών(Aor)(Akt)(N),
+(857) wer aber wohl der|Schnur treffe des|Vogels verfehlt|habend,
+(858) ἥσσων(Adj)(N)(Kmp) γὰρ(Pt) δὴ(Pt) κεῖνος(Pr)(N), ὃ(Pr)(N) δʼ(Pt) οἴσεται(Fu)(M/P) ἡμιπέλεκκα(A).
+(858) geringer denn ja jener, der aber wird|tragen Halb|äxte.
+(859) ὣς(Adv) ἔφατʼ(Imp)(M/P), ὦρτο(Imp)(M/P) δʼ(Pt) ἔπειτα(Adv) βίη(N) Τεύκροιο(G) ἄνακτος(G),
+(859) so sprach|er, stand|auf aber danach Kraft des|Teukros Herrn,
+(860) ἂν(Pt) δʼ(Pt) ἄρα(Pt) Μηριόνης(N) θεράπων(N) ἐῢς(Adj)(N) Ἰδομενῆος(G).
+(860) wohl aber doch Meriones Diener tüchtig|er des|Idomeneus.
+(861) κλήρους(A) δʼ(Pt) ἐν(Prp) κυνέῃ(D) χαλκήρεϊ(Adj)(D) πάλλον(Imp)(Akt) ἑλόντες(AorS)(Akt)(N),
+(861) Lose aber in Helm bronze|beschlagenen schwangen genommen|habend,
+(862) Τεῦκρος(N) δὲ(Pt) πρῶτος(Adj)(N) κλήρῳ(D) λάχεν(AorS)(Akt)· αὐτίκα(Adv) δʼ(Pt) ἰὸν(A)
+(862) Teukros aber zuerst durch|Los erhielt· sogleich aber Pfeil
+(863) ἧκεν(AorS)(Akt) ἐπικρατέως(Adv), οὐδʼ(Kon) ἠπείλησεν(Aor)(Akt) ἄνακτι(D)
+(863) sandte mit|ganzer|Kraft, und|nicht gelobte dem|Herrn
+(864) ἀρνῶν(G) πρωτογόνων(Adj)(G) ῥέξειν(Fu)(Akt)(Inf) κλειτὴν(Adj)(A) ἑκατόμβην(A).
+(864) der|Lämmer erst|geborenen zu|vollziehen berühmte Hekatombe.
+(865) ὄρνιθος(G) μὲν(Pt) ἅμαρτε(Aor)(Akt)· μέγηρε(Aor)(Akt) γάρ(Pt) οἱ(Pr)(D) τό(Pr)(N) γʼ(Pt) Ἀπόλλων(N)·
+(865) des|Vogels zwar verfehlte· missgönnte denn ihm dies ja Apollon·
+(866) αὐτὰρ(Kon) ὃ(Pr)(N) μήρινθον(A) βάλε(AorS)(Akt) πὰρ(Prp) πόδα(A), τῇ(Pr)(D) δέδετʼ(Per)(M/P) ὄρνις(N)·
+(866) aber er Schnur traf neben Fuß, an|der war|gebunden Vogel·
+(867) ἀντικρὺ(Adv) δʼ(Pt) ἀπὸ(Prp) μήρινθον(A) τάμε(AorS)(Akt) πικρὸς(Adj)(N) ὀϊστός(N).
+(867) geradewegs aber von Schnur schnitt scharf|er Pfeil.
+(868) ἣ(Pr)(N) μὲν(Pt) ἔπειτʼ(Adv) ἤϊξε(AorS)(Akt) πρὸς(Prp) οὐρανόν(A), ἣ(Pr)(N) δὲ(Pt) παρείθη(Aor)(Akt)
+(868) sie zwar danach schoß|hin zum Himmel, die aber ließ|hin
+(869) μήρινθος(N) ποτὶ(Prp) γαῖαν(A)· ἀτὰρ(Kon) κελάδησαν(Aor)(Akt) Ἀχαιοί(N).
+(869) Schnur zu Erde· aber jauchzten Achaier.
+(870) σπερχόμενος(Prä)(M/P)(N) δʼ(Pt) ἄρα(Pt) Μηριόνης(N) ἐξείρυσε(AorS)(Akt) χειρὸς(G)
+(870) eilend aber doch Meriones zog|heraus aus|der|Hand
+(871) τόξον(A)· ἀτὰρ(Kon) δὴ(Pt) ὀϊστὸν(A) ἔχεν(Imp)(Akt) πάλαι(Adv), ὡς(Kon) ἴθυνεν(Imp)(Akt).
+(871) Bogen· aber ja Pfeil hielt schon|lange, wie er|zielte.
+(872) αὐτίκα(Adv) δʼ(Pt) ἠπείλησεν(Aor)(Akt) ἑκηβόλῳ(Adj)(D) Ἀπόλλωνι(D)
+(872) sogleich aber gelobte fern|treffendem Apollon
+(873) ἀρνῶν(G) πρωτογόνων(Adj)(G) ῥέξειν(Fu)(Akt)(Inf) κλειτὴν(Adj)(A) ἑκατόμβην(A).
+(873) der|Lämmer erst|geborenen zu|vollziehen berühmte Hekatombe.
+(874) ὕψι(Adv) δʼ(Pt) ὑπὸ(Prp) νεφέων(G) εἶδε(AorS)(Akt) τρήρωνα(Adj)(A) πέλειαν(A)·
+(874) hoch aber unter den|Wolken sah scheue Taube·
+(875) τῇ(Pr)(D) ῥʼ(Pt) ὅ(Pr)(N) γε(Pt) δινεύουσαν(Prä)(Akt)(A) ὑπὸ(Prp) πτέρυγος(G) βάλε(Aor)(Akt) μέσσην(Adj)(A),
+(875) mit|diesem doch der ja kreisend unter des|Flügels traf mittlere,
+(876) ἀντικρὺ(Adv) δὲ(Pt) διῆλθε(AorS)(Akt) βέλος(N)· τὸ(Art)(N) μὲν(Pt) ἂψ(Adv) ἐπὶ(Prp) γαίῃ(D)
+(876) geradewegs aber durch|ging Geschoss· dieses zwar zurück auf der|Erde
+(877) πρόσθεν(Adv) Μηριόναο(G) πάγη(Aor)(Pas) ποδός(G)· αὐτὰρ(Kon) ἣ(Pr)(N) ὄρνις(N)
+(877) vorne des|Meriones ward|fest des|Fußes· aber sie Vogel
+(878) ἱστῷ(D) ἐφεζομένη(Prä)(M/P)(N) νηὸς(G) κυανοπρῴροιο(Adj)(G)
+(878) auf|dem|Mast aufsitzend des|Schiffes dunkel|bugigen
+(879) αὐχένʼ(A) ἀπεκρέμασεν(Aor)(Akt), σὺν(Prp) δὲ(Pt) πτερὰ(N) πυκνὰ(Adj)(N) λίασθεν(Aor)(Pas).
+(879) den|Hals ließ|herab|hängen, mit aber Flügel dichte weiteten|sich.
+(880) ὠκὺς(Adj)(N) δʼ(Pt) ἐκ(Prp) μελέων(G) θυμὸς(N) πτάτο(Imp)(M/P), τῆλε(Adv) δʼ(Pt) ἀπʼ(Prp) αὐτοῦ(Pr)(G)
+(880) schnell aber aus der|Glieder Geist flatterte, weit aber von ihm
+(881) κάππεσε(AorS)(Akt)· λαοὶ(N) δʼ(Pt) αὖ(Adv) θηεῦντό(Imp)(M/P) τε(Pt) θάμβησάν(Aor)(Akt) τε(Pt).
+(881) stürzte|nieder· Leute aber wieder schauten|staunend und erstaunten und.
+(882) ἂν(Pt) δʼ(Pt) ἄρα(Pt) Μηριόνης(N) πελέκεας(A) δέκα(Adj) πάντας(Adj)(A) ἄειρε(Aor)(Akt),
+(882) wohl aber doch Meriones Äxte zehn alle hob,
+(883) Τεῦκρος(N) δʼ(Pt) ἡμιπέλεκκα(A) φέρεν(Imp)(Akt) κοίλας(Adj)(A) ἐπὶ(Prp) νῆας(A).
+(883) Teukros aber Halb|äxte trug hohl|bauchige zu den|Schiffen.
+(884) αὐτὰρ(Kon) Πηλεΐδης(N) κατὰ(Prp) μὲν(Pt) δολιχόσκιον(Adj)(A) ἔγχος(A),
+(884) aber Pelei|des herab zwar lang|schattig|es Speer,
+(885) κὰδ(Adv) δὲ(Pt) λέβητʼ(A) ἄπυρον(Adj)(A) βοὸς(G) ἄξιον(Adj)(A) ἀνθεμόεντα(Adj)(A)
+(885) hinab aber Kessel ungefeuerten des|Rindes werten blüten|gemusterten
+(886) θῆκʼ(AorS)(Akt) ἐς(Prp) ἀγῶνα(A) φέρων(Prä)(Akt)(N)· καί(Kon) ῥʼ(Pt) ἥμονες(N) ἄνδρες(N) ἀνέσταν(AorS)(Akt)(Du)·
+(886) setzte in den|Wettkampf tragend· und doch Schiedsrichter Männer standen|auf·
+(887) ἂν(Pt) μὲν(Pt) ἄρʼ(Pt) Ἀτρεΐδης(N) εὐρὺ(Adj)(A) κρείων(N) Ἀγαμέμνων(N),
+(887) wohl zwar doch Atreide weit herrschend Agamemnon,
+(888) ἂν(Pt) δʼ(Pt) ἄρα(Pt) Μηριόνης(N), θεράπων(N) ἐῢς(Adj)(N) Ἰδομενῆος(G).
+(888) wohl aber doch Meriones, Diener tüchtig|er des|Idomeneus.
+(889) τοῖσι(Pr)(D) δὲ(Pt) καὶ(Kon) μετέειπε(Aor)(Akt) ποδάρκης(Adj)(N) δῖος(Adj)(N) Ἀχιλλεύς(N)·
+(889) zu|ihnen aber auch sprach|mitten|unter schnell|füßiger göttlich|er Achilleus·
+(890) Ἀτρεΐδη(V)· ἴδμεν(Per)(Akt) γὰρ(Pt) ὅσον(Pr)(A) προβέβηκας(Per)(Akt) ἁπάντων(Adj)(G)
+(890) Atreide· wir|wissen denn wie|weit vorge|schritten|bist aller
+(891) ἠδʼ(Kon) ὅσσον(Pr)(A) δυνάμει(D) τε(Pt) καὶ(Kon) ἥμασιν(D) ἔπλευ(Aor)(Akt) ἄριστος(Adj)(N)·
+(891) und wie|sehr an|Kraft und auch an|Tagen gewesen|bist der|Beste·
+(892) ἀλλὰ(Kon) σὺ(Pr)(N) μὲν(Pt) τόδʼ(Pr)(A) ἄεθλον(A) ἔχων(Prä)(Akt)(N) κοίλας(Adj)(A) ἐπὶ(Prp) νῆας(A)
+(892) doch du zwar diesen Preis haltend hohl|bauchige zu den|Schiffen
+(893) ἔρχευ(Prä)(Akt)(Imv), ἀτὰρ(Kon) δόρυ(A) Μηριόνῃ(D) ἥρωϊ(D) πόρωμεν(Aor)(Akt)(Knj),
+(893) geh, aber den|Speer dem|Meriones dem|Helden geben|wir,
+(894) εἰ(Kon) σύ(Pr)(N) γε(Pt) σῷ(Adj)(D) θυμῷ(D) ἐθέλοις(Prä)(Akt)(Op)· κέλομαι(Prä)(M/P) γὰρ(Pt) ἔγωγε(Pr)(N).
+(894) wenn du ja deinem Sinn wolltest· fordere denn ich|ja.
+(895) ὣς(Adv) ἔφατʼ(Imp)(M/P), οὐδʼ(Pt) ἀπίθησεν(Aor)(Akt) ἄναξ(N) ἀνδρῶν(G) Ἀγαμέμνων(N)·
+(895) so sprach, und|nicht widersetzte|sich Fürst der|Männer Agamemnon·
+(896) δῶκε(AorS)(Akt) δὲ(Pt) Μηριόνῃ(D) δόρυ(A) χάλκεον(Adj)(A)· αὐτὰρ(Kon) ὅ(Pr)(N) γʼ(Pt) ἥρως(N)
+(896) gab aber dem|Meriones den|Speer erzen· aber er ja Held
+(897) Ταλθυβίῳ(D) κήρυκι(D) δίδου(Imp)(Akt) περικαλλὲς(Adj)(A) ἄεθλον(A).
+(897) Talthybios Herold gab über|schönen Preis.

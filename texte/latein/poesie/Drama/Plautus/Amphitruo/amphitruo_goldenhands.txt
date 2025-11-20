@@ -1,0 +1,1225 @@
+(-18x) == Argumentum I ==
+(-18)  PROLOGUS: In faciem versus Amphitruōnis Juppiter,
+(-17)  PROLOGUS: dum bellum gereret cum Tēloboīs hostibus,
+(-16)  PROLOGUS: Alcmēnam uxōrem cēpit ūsūrāriam.
+(-15)  PROLOGUS: Mercurius fōrmam Sōsiae servī gerit
+(-14)  PROLOGUS: absentis: hīs Alcmēna dēcipitur dolīs.
+(-13)  PROLOGUS: postquam rediēre vērī Amphitruō et Sōsia,
+(-12)  PROLOGUS: uterque dēlūduntur in mīrum modum.
+(-11)  PROLOGUS: hinc jūrgium, tumultus uxōrī et virō,
+(-10)  PROLOGUS: dōnec cum tonitrū vōce missā ex aethere
+(-9)  PROLOGUS: adulterum sē Juppiter cōnfessus est.
+(-8x) == Argumentum Ii ==
+(-8)  PROLOGUS: Amōre captus Alcumēnās Juppiter
+(-7)  PROLOGUS: Mūtāvit sēsē in fōrmam ejus conjugis,
+(-6)  PROLOGUS: Prō patriā Amphitruō dum dēcernit cum hostibus.
+(-5)  PROLOGUS: Habitū Mercurius eī subservit Sōsiae.
+(-4)  PROLOGUS: Is advenientīs servum ac dominum frūstrā habet.
+(-3)  PROLOGUS: Turbās uxōrī ciet Amphitruō, atque invicem
+(-2)  PROLOGUS: Raptant prō moechīs. Blepharō captus arbiter
+(-1)  PROLOGUS: Uter sit nōn quit Amphitruō dēcernere.
+(0)  PROLOGUS: Omnem rem nōscunt. geminōs illa ēnītitur.
+(1x) === Prolog ===
+(1)  MERCURIUS DEUS: Ut vōs in vestrīs vultis mercimōniīs
+(2)  MERCURIUS DEUS: emundīs vēndundīsque mē laetum lucrīs
+(3)  MERCURIUS DEUS: afficere atque adjuvāre in rēbus omnibus
+(4)  MERCURIUS DEUS: et ut rēs ratiōnēsque vestrōrum omnium
+(5)  MERCURIUS DEUS: bene expedīre vultis peregrīque et domī
+(6)  MERCURIUS DEUS: bonōque atque amplō auctāre perpetuō lucrō
+(7)  MERCURIUS DEUS: quāsque incēpistis rēs quāsque inceptābitis,
+(8)  MERCURIUS DEUS: et utī bonīs vōs vestrōsque omnīs nūntiīs
+(9)  MERCURIUS DEUS: mē afficere vultis, ea afferam, ea ut nūntiem
+(10)  MERCURIUS DEUS: quae maximē in rem vestram commūnem sient,
+(11)  MERCURIUS DEUS: nam vōs quidem id jam scītis concessum et datum
+(12)  MERCURIUS DEUS: mī esse ab dīs aliīs, nūntiīs praesim et lucrō:
+(13)  MERCURIUS DEUS: haec ut mē vultis approbāre annītier,
+(14)  MERCURIUS DEUS: lucrum ut perenne vōbīs semper suppetat
+(15)  MERCURIUS DEUS: ita huic faciētis fābulae silentium
+(16)  MERCURIUS DEUS: itaque aequī et jūstī hīc eritis omnēs arbitrī.
+(17)  MERCURIUS DEUS: Nunc cujus jussū veniō et quam ob rem vēnerim
+(18)  MERCURIUS DEUS: dīcam simulque ipse ēloquar nōmen meum.
+(19)  MERCURIUS DEUS: Jovis jussū veniō, nōmen Mercuriōst mihi.
+(20)  MERCURIUS DEUS: pater hūc mē mīsit ad vōs ōrātum meus,
+(21)  MERCURIUS DEUS: tam etsī, prō imperiō vōbīs quod dictum foret,
+(22)  MERCURIUS DEUS: scībat factūrōs, quippe quī intellēxerat
+(23)  MERCURIUS DEUS: verērī vōs sē et metuere, ita ut aequum est Jovem;
+(24)  MERCURIUS DEUS: vērum profectō hoc petere mē precāriō
+(25)  MERCURIUS DEUS: ā vōbīs jussit, lēniter, dictīs bonīs.
+(26)  MERCURIUS DEUS: etenim ille, cujus hūc jussū veniō, Juppiter
+(27)  MERCURIUS DEUS: nōn minus quam vestrum quīvīs formīdat malum:
+(28)  MERCURIUS DEUS: hūmānā mātre nātus, hūmānō patre,
+(29)  MERCURIUS DEUS: mīrārī nōn est aequum, sibi sī praetimet;
+(30)  MERCURIUS DEUS: atque ego quoque etiam, quī Jovis sum fīlius,
+(31)  MERCURIUS DEUS: contāgiōne meī patris metuō malum.
+(32)  MERCURIUS DEUS: proptereā pāce adveniō et pācem ad vōs ferō:
+(33)  MERCURIUS DEUS: jūstam rem et facilem esse ōrātam ā vōbīs volō,
+(34)  MERCURIUS DEUS: nam jūstae ab jūstīs jūstus sum ōrātor datus.
+(35)  MERCURIUS DEUS: nam injūsta ab jūstīs impetrārī nōn decet,
+(36)  MERCURIUS DEUS: jūsta autem ab injūstīs petere īnsipientia est;
+(37)  MERCURIUS DEUS: quippe illī inīquī jūs ignōrant neque tenent.
+(38)  MERCURIUS DEUS: nunc jam hūc animum omnēs quae loquār advertite.
+(39)  MERCURIUS DEUS: dēbētis velle quae velīmus: meruimus
+(40)  MERCURIUS DEUS: et ego et pater dē vōbīs et rē pūblicā;
+(41)  MERCURIUS DEUS: nam quid ego memorem, ut aliōs in tragoediīs
+(42)  MERCURIUS DEUS: vīdī, Neptūnum Virtūtem Victōriam
+(43)  MERCURIUS DEUS: Mārtem Bellōnam, commemorāre quae bona
+(44)  MERCURIUS DEUS: vōbīs fēcissent, quīs benefactīs meus pater,
+(45)  MERCURIUS DEUS: deōrum rēgnātor, architectust omnibus?
+(46)  MERCURIUS DEUS: sed mōs numquam ille illī fuit patrī meō,
+(47)  MERCURIUS DEUS: ut exprobrāret quod bonīs faceret bonī;
+(48)  MERCURIUS DEUS: grātum arbitrātur esse id ā vōbīs sibi
+(49)  MERCURIUS DEUS: meritōque vōbīs bona sē facere quae facit.
+(50)  MERCURIUS DEUS: Nunc quam rem ōrātum hūc vēnī prīmum prōloquar,
+(51)  MERCURIUS DEUS: post argūmentum hujus ēloquar tragoediae.
+(52)  MERCURIUS DEUS: quid? contrāxistis frontem, quia tragoediam
+(53)  MERCURIUS DEUS: dīxī futūram hanc? deus sum, commūtāverō.
+(54)  MERCURIUS DEUS: eandem hanc, sī vultis, faciam ex tragoediā
+(55)  MERCURIUS DEUS: cōmoedia ut sit omnibus īsdem versibus.
+(56)  MERCURIUS DEUS: utrum sit an nōn? vultis? sed ego stultior,
+(57)  MERCURIUS DEUS: quasi nesciam vōs velle, quī dīvus siem
+(58)  MERCURIUS DEUS: teneō quid animī vestrī super hāc rē siet:
+(59)  MERCURIUS DEUS: faciam ut commixta sit: sit tragicōmoedia.
+(60)  MERCURIUS DEUS: nam mē perpetuō facere ut sit cōmoedia,
+(61)  MERCURIUS DEUS: rēgēs quō veniant et dī, nōn pār arbitror.
+(62)  MERCURIUS DEUS: quid igitur? quoniam hīc servus quoque partīs habet,
+(63)  MERCURIUS DEUS: faciam sit, proinde ut dīxī, tragicōmoedia.
+(64)  MERCURIUS DEUS: nunc hoc mē ōrāre ā vōbīs jussit Juppiter,
+(65)  MERCURIUS DEUS: ut conquīstōrēs singula in subsellia
+(66)  MERCURIUS DEUS: eant per tōtam caveam spectātōribus,
+(67)  MERCURIUS DEUS: sī cui favitōrēs dēlēgātōs vīderint,
+(68)  MERCURIUS DEUS: ut īs in caveā pignus capiantur togae;
+(69)  MERCURIUS DEUS: sīve qui ambīssent palmam hīs histriōnibus
+(70)  MERCURIUS DEUS: seu cuiquam artificī, seu per scrīptās litterās
+(71)  MERCURIUS DEUS: seu qui ipse ambīsset seu per internūntium,
+(72)  MERCURIUS DEUS: sīve adeō aedīlēs perfidiōsē cui duint,
+(73)  MERCURIUS DEUS: sirempse lēgem jussit esse Juppiter,
+(74)  MERCURIUS DEUS: quasi magistrātum sibi alterīve ambīverit.
+(75)  MERCURIUS DEUS: virtūte dīxit vōs victōrēs vīvere,
+(76)  MERCURIUS DEUS: nōn ambitiōne neque perfidiā: quī minus
+(77)  MERCURIUS DEUS: eadem histriōnī sit lēx quae summō virō?
+(78)  MERCURIUS DEUS: virtūte ambīre oportet, nōn favitōribus.
+(79)  MERCURIUS DEUS: sat habet favitōrum semper quī rēctē facit,
+(80)  MERCURIUS DEUS: sī illīs fidēs est quibus est ea rēs in manū.
+(81)  MERCURIUS DEUS: hoc quoque etiam mihi in mandātīs is dedit,
+(82)  MERCURIUS DEUS: ut conquīstōrēs fierent histriōnibus:
+(83)  MERCURIUS DEUS: quī sibi mandāsset dēlēgātī ut plauderent
+(84)  MERCURIUS DEUS: quīve quō placēret alter fēcisset minus,
+(85)  MERCURIUS DEUS: ejus ōrnāmenta et corium utī concīderent.
+(86)  MERCURIUS DEUS: mīrārī nōlim vōs, quāpropter Juppiter
+(87)  MERCURIUS DEUS: nunc histriōnēs cūret; nē mīrēminī:
+(88)  MERCURIUS DEUS: ipse hanc āctūrust Juppiter cōmoediam.
+(89)  MERCURIUS DEUS: quid? admīrātī estis? quasi vērō novum
+(90)  MERCURIUS DEUS: nunc prōferātur, Jovem facere histriōniam;
+(91)  MERCURIUS DEUS: etiam, histriōnēs annō cum in prōscaeniō hīc
+(92)  MERCURIUS DEUS: Jovem invocārunt, vēnit, auxiliō is fuit.
+(93)  MERCURIUS DEUS: [praetereā certō prōdit in tragoediā.]
+(94)  MERCURIUS DEUS: hanc fābulam, inquam, hīc Juppitēr hodiē ipse aget,
+(95)  MERCURIUS DEUS: et ego ūnā cum illō. nunc vōs animum advertite,
+(96)  MERCURIUS DEUS: dum hujus argūmentum ēloquar cōmoediae.
+(97)  MERCURIUS DEUS: Haec urbs est Thēbae. in illīsce habitat aedibus
+(98)  MERCURIUS DEUS: Amphitruō, nātus Argīs ex Argō patre,
+(99)  MERCURIUS DEUS: quīcum Alcumēna est nūpta, Ēlectrī fīlia.
+(100)  MERCURIUS DEUS: is nunc Amphitruō praefectust legiōnibus,
+(101)  MERCURIUS DEUS: nam cum Tēloboīs bellum est Thēbānō poplō.
+(102)  MERCURIUS DEUS: is prius quam hinc abiit ipsemet in exercitum,
+(103)  MERCURIUS DEUS: gravidam Alcumēnam fēcit uxōrem suam.
+(104)  MERCURIUS DEUS: nam ego vōs nōvisse crēdō jam ut sit pater meus,
+(105)  MERCURIUS DEUS: quam līber hārum rērum multārum siet
+(106)  MERCURIUS DEUS: quantusque amātor sit quod complacitum est semel.
+(107)  MERCURIUS DEUS: is amārē occēpit Alcumēnam clam virum
+(108)  MERCURIUS DEUS: ūsūramque ejus corporis cēpit sibi,
+(109)  MERCURIUS DEUS: et gravidam fēcit is eam compressū suō.
+(110)  MERCURIUS DEUS: nunc dē Alcumēnā ut rem teneātis rēctius,
+(111)  MERCURIUS DEUS: utrimque est gravida, et ex virō et ex summō Jove.
+(112)  MERCURIUS DEUS: et meus pater nunc intus hīc cum illā cubat,
+(113)  MERCURIUS DEUS: et haec ob eam rem nox est facta longior,
+(114)  MERCURIUS DEUS: dum cum illā quācum vult voluptātem capit;
+(115)  MERCURIUS DEUS: sed ita assimulāvit sē, quasi Amphitruō siet.
+(116)  MERCURIUS DEUS: nunc nē hunc ōrnātum vōs meum admīrēminī,
+(117)  MERCURIUS DEUS: quod ego hūc prōcessī sīc cum servīlī schemā:
+(118)  MERCURIUS DEUS: veterem atque antīquam rem novam ad vōs prōferam,
+(119)  MERCURIUS DEUS: proptereā ōrnātūs in novum incessī modum.
+(120)  MERCURIUS DEUS: nam meus pater intus nunc est eccum Juppiter;
+(121)  MERCURIUS DEUS: in Amphitruōnis vertit sēsē imāginem
+(122)  MERCURIUS DEUS: omnēsque eum esse cēnsent servī quī vident:
+(123)  MERCURIUS DEUS: ita versipellem sē facit quandō libet.
+(124)  MERCURIUS DEUS: ego servī sūmpsī Sōsiae mī imāginem,
+(125)  MERCURIUS DEUS: quī cum Amphitruōne abīvit hinc in exercitum,
+(126)  MERCURIUS DEUS: ut praeservīre amantī meō possem patrī
+(127)  MERCURIUS DEUS: atque ut nē, quī essem, familiārēs quaererent,
+(128)  MERCURIUS DEUS: versārī crēbrō hīc cum vidērent mē domī;
+(129)  MERCURIUS DEUS: nunc, cum esse crēdent servum et cōnservum suum,
+(130)  MERCURIUS DEUS: hau quisquam quaeret quī siem aut quid vēnerim.
+(131)  MERCURIUS DEUS: Pater nunc intus suō animō mōrem gerit:
+(132)  MERCURIUS DEUS: cubat complexus cujus cupiēns maximē est;
+(133)  MERCURIUS DEUS: quae illī ad legiōnem facta sunt memorat pater
+(134)  MERCURIUS DEUS: meus Alcumēnae: illa illum cēnset virum
+(135)  MERCURIUS DEUS: suum esse, quae cum moechō est. ibi nunc meus pater
+(136)  MERCURIUS DEUS: memorat, legiōnēs hostium ut fugāverit,
+(137)  MERCURIUS DEUS: quō pactō sit dōnīs dōnātus plūrimīs.
+(138)  MERCURIUS DEUS: ea dōna, quae illīc Amphitruōnī sunt data,
+(139)  MERCURIUS DEUS: abstulimus: facile meus pater quod vult facit.
+(140)  MERCURIUS DEUS: nunc hodiē Amphitruō veniet hūc ab exercitū
+(141)  MERCURIUS DEUS: et servus, cujus ego hanc ferō imāginem.
+(142)  MERCURIUS DEUS: nunc internōsse ut nōs possītis facilius,
+(143)  MERCURIUS DEUS: ego hās habēbō usque hīc in petasō pinnulās;
+(144)  MERCURIUS DEUS: tum meō patrī autem torulus inerit aureus
+(145)  MERCURIUS DEUS: sub petasō: id signum Amphitruōnī nōn erit.
+(146)  MERCURIUS DEUS: ea signa nēmo hōrum familiārium
+(147)  MERCURIUS DEUS: vidēre poterit: vērum vōs vidēbitis.
+(148)  MERCURIUS DEUS: sed Amphitruōnis illī est servus Sōsia
+(149)  MERCURIUS DEUS: ā portū illic nunc hūc cum lanternā advenit.
+(150)  MERCURIUS DEUS: abigam jam ego illum advenientem ab aedibus.
+(151)  MERCURIUS DEUS: adeste: erit operae pretium hīc spectantibus
+(152)  MERCURIUS DEUS: Jovem et Mercurium facere hīc histriōniam.
+(153y) === Akt I ===
+(153x) == I.i. ==
+(153)  SOSIA SERVUS: Quī mē alter est audāciōr homō aut quī cōnfīdentior,
+(154)  SOSIA SERVUS: juventūtis mōrēs quī sciam, quī hoc noctis sōlus ambulem?
+(155)  SOSIA SERVUS: quid faciam nunc, sī trēsvirī mē in carcerem compēgerint?
+(156)  SOSIA SERVUS: inde crās quasi ē prōmptāriā cellā dēprōmar ad flagrum,
+(157)  SOSIA SERVUS: nec causam liceat dīcere mihi, neque in erō quicquam auxilī
+(158)  SOSIA SERVUS: siet, nec quisquam sit quīn mē omnēs esse dignum dēputent.
+(159)  SOSIA SERVUS: ita quasi incūdem mē miserum hominēs octō validī caedant:
+(160)  SOSIA SERVUS: ita peregrē adveniēns
+(161)  SOSIA SERVUS: hospitiō pūblicitus accipiar.
+(162)  SOSIA SERVUS: haec erī immodestia coēgit, mē
+(163)  SOSIA SERVUS: quī hoc noctis ā portū
+(164)  SOSIA SERVUS: ingrātiīs excitāvit.
+(165)  SOSIA SERVUS: nōnne idem hūc lūcī mē mittere potuit?
+(166)  SOSIA SERVUS: opulentō hominī hōc servitus dūra est,
+(167)  SOSIA SERVUS: hōc magis miser est dīvitis servus:
+(168)  SOSIA SERVUS: noctēsque diēsque assiduō satis superque est
+(169)  SOSIA SERVUS: quod factō aut dictō adest opus, quiētus nē sīs.
+(170)  SOSIA SERVUS: ipse dominus dīves, operis et labōris expers,
+(171)  SOSIA SERVUS: quodcumque hominī accidit libēre, posse rētur:
+(172)  SOSIA SERVUS: aequum esse putat, nōn reputat labōris quid sit.
+(173)  SOSIA SERVUS: nec aequum anne inīquum imperet cōgitābit.
+(174)  SOSIA SERVUS: ergō in servitūte expetunt multa inīqua:
+(175)  SOSIA SERVUS: habendum et ferundum hoc onust cum labōre.
+(176)  MERCURIUS DEUS: Satiust mē querī illō modō servitūtem:
+(177)  MERCURIUS DEUS: hodiē quī fuerim līber,
+(178)  MERCURIUS DEUS: eum nunc potīvit pater servitūtis,
+(179)  MERCURIUS DEUS: hic quī verna nātust queritur.
+(180)  SOSIA SERVUS: Sum vērō verna numerō mihi in mentem fuit,
+(181)  SOSIA SERVUS: dīs advenientem grātiās prō meritīs agere atque alloquī?
+(182)  SOSIA SERVUS: nē illī edepol sī meritō meō referre studeant grātiam,
+(183)  SOSIA SERVUS: aliquem hominem allēgent quī mihi advenientī ōs occillet probē,
+(184)  SOSIA SERVUS: quoniam bene quae in mē fēcērunt ingrāta ea habuī atque irrita.
+(185)  MERCURIUS DEUS: Facit ille quod vulgō hau solent, ut quid sē sit dignum sciat.
+(186)  SOSIA SERVUS: Quod numquam opīnātus fuī neque alius quisquam cīvium
+(187)  SOSIA SERVUS: sibi ēventūrum, id contigīt, ut salvī poterēmur domī.
+(188)  SOSIA SERVUS: victōrēs victīs hostibus legiōnēs reveniunt domum,
+(189)  SOSIA SERVUS: duellō exstīnctō maximō atque internecātīs hostibus.
+(190)  SOSIA SERVUS: quod multa Thēbānō poplō acerba objēcit fūnera,
+(191)  SOSIA SERVUS: id vi et virtūte mīlitum victum atque expugnātum oppidum est
+(192)  SOSIA SERVUS: imperiō atque auspiciō meī erī Amphitruōnis maximē.
+(193)  SOSIA SERVUS: praedāque agrōque adōriāque affēcit populārīs suōs
+(194)  SOSIA SERVUS: rēgīque Thēbānō Creōnī rēgnum stabilīvit suum.
+(195)  SOSIA SERVUS: mē ā portū praemīsit domum, ut haec nūntiem uxōrī suae,
+(196)  SOSIA SERVUS: ut gesserit rem pūblicam ductū imperiō auspiciō suō.
+(197)  SOSIA SERVUS: ea nunc meditābor quō modo illī dīcam, cum illō advēnerō.
+(198)  SOSIA SERVUS: sī dīxerō mendācium, solēns meō mōre fēcerō.
+(199)  SOSIA SERVUS: nam cum pugnābant maxumē, ego tum fugiēbam maximē;
+(200)  SOSIA SERVUS: vērum quasi affuerim tamen simulābō atque audīta ēloquar.
+(201)  SOSIA SERVUS: sed quō modō et verbīs quibus mē deceat fābulārier,
+(202)  SOSIA SERVUS: prius ipse mēcum etiam volō hīc meditārī. sīc hoc prōloquar.
+(203)  SOSIA SERVUS: Prīncipiō ut illō advēnimus, ubi prīmum terram tetigimus,
+(204)  SOSIA SERVUS: continuō Amphitruō dēlēgit virōs prīmōrum prīncipēs;
+(205)  SOSIA SERVUS: eōs lēgat, Tēloboīs jubet sententiam ut dīcant suam:
+(206)  SOSIA SERVUS: sī sine vī et sine bellō velint rapta et raptōrēs trādere,
+(207)  SOSIA SERVUS: sī quae asportāssent reddere, sē exercitum extemplō domum
+(208)  SOSIA SERVUS: redductūrum, abitūrōs agrō Argīvōs, pācem atque ōtium
+(209)  SOSIA SERVUS: dare illīs; sīn aliter sient animātī neque dent quae petat,
+(210)  SOSIA SERVUS: sēsē igitur summā vī virīsque eōrum oppidum oppugnāssere.
+(211)  SOSIA SERVUS: haec ubi Tēloboīs ōrdine iterārunt quōs praefēcerat
+(212)  SOSIA SERVUS: Amphitruō, magnanimī virī frētī virtūte et vīribus
+(213)  SOSIA SERVUS: superbē nimis ferōciter lēgātōs nostrōs increpant,
+(214)  SOSIA SERVUS: respondent bellō sē et suōs tūtārī posse, proinde utī
+(215)  SOSIA SERVUS: properē suīs dē fīnibus exercitūs dēdūcerent.
+(216)  SOSIA SERVUS: haec ubi lēgātī pertulēre, Amphitruō castrīs īlicō
+(217)  SOSIA SERVUS: prōdūcit omnem exercitum. contrā Tēloboae ex oppidō
+(218)  SOSIA SERVUS: legiōnēs ēdūcunt suās nimis pulchrīs armīs praeditās.
+(219)  SOSIA SERVUS: postquam utrimque exitum est maximā cōpiā,
+(220)  SOSIA SERVUS: dispertītī virī, dispertītī ōrdinēs,
+(221)  SOSIA SERVUS: nōs nostrās mōre nostrō et modō īnstrūximus
+(222)  SOSIA SERVUS: legiōnēs, item hostēs contrā legiōnēs suās īnstruunt.
+(223)  SOSIA SERVUS: deinde utrīque imperātōrēs in medium exeunt,
+(224)  SOSIA SERVUS: extrā turbam ōrdinum colloquuntur simul.
+(225)  SOSIA SERVUS: convenit, victī utrī sint eō proeliō,
+(226)  SOSIA SERVUS: urbem agrum ārās focōs sēque utī dēderent.
+(227)  SOSIA SERVUS: postquam id āctum est, tubae contrā utrimque occanunt,
+(228)  SOSIA SERVUS: cōnsonat terra, clāmōrem utrimque efferunt.
+(229)  SOSIA SERVUS: imperātōr utrimque, hinc et illinc, Jovī
+(230)  SOSIA SERVUS: vōta suscipere, ‹utrimque› hortārī exercitum.
+(231)  SOSIA SERVUS: prō sē quisque id quod quisque et potest et valet
+(232)  SOSIA SERVUS: ēdit, ferrō ferit, tēla frangunt, boat
+(233)  SOSIA SERVUS: caelum fremitū virum, ex spīritū atque anhēlitū
+(234)  SOSIA SERVUS: nebula cōnstat, cadunt vulnerum vī virī.
+(235)  SOSIA SERVUS: dēnique, ut voluimus, nostra superat manus:
+(236)  SOSIA SERVUS: hostēs crēbrī cadunt, nostrī contrā ingruunt,
+(237)  SOSIA SERVUS: vincimus vī ferōcēs.
+(238)  SOSIA SERVUS: sed fugam in sē tamen nēmo convertitur
+(239)  SOSIA SERVUS: nec recēdit locō quīn statim rem gerat;
+(240)  SOSIA SERVUS: animam āmittunt prius quam locō dēmigrent:
+(241)  SOSIA SERVUS: quisque ut steterat jacēt optinetque ōrdinem.
+(242)  SOSIA SERVUS: hoc ubi Amphitruō erus cōnspicātus est,
+(243)  SOSIA SERVUS: īlicō equitēs jubet dexterā indūcere.
+(244)  SOSIA SERVUS: equitēs pārent citī: ab dexterā maximō
+(245)  SOSIA SERVUS: cum clāmōre involant impetū alacrī,
+(246)  SOSIA SERVUS: foedant et prōterunt hostium cōpiās
+(247)  SOSIA SERVUS: jūre injūstās.
+(248)  MERCURIUS DEUS: Numquam etiam quicquam adhūc verbōrum est prōlocūtus perperam:
+(249)  MERCURIUS DEUS: namque ego fuī illī in rē praesentī et meus, cum pugnātum est, pater.
+(250)  SOSIA SERVUS: Perduellēs penetrant sē in fugām; ibi nostrīs animus additust:
+(251)  SOSIA SERVUS: vertentibus Tēloboīs tēlīs complēbantur corpora,
+(252)  SOSIA SERVUS: ipsusque Amphitruō rēgem Pterelam sua obtruncāvit manū.
+(253)  SOSIA SERVUS: haec illī est pugnāta pugna usque ā māni ad vesperum,
+(254)  SOSIA SERVUS: hoc adeō hoc commeminī magis, quia illō diē imprānsus fuī,
+(255)  SOSIA SERVUS: sed proelium id tandem dirēmit nox interventū suō.
+(256)  SOSIA SERVUS: postrīdiē in castra ex urbe ad nōs veniunt flentēs prīncipēs:
+(257)  SOSIA SERVUS: vēlātīs manibus ōrant ignōscāmus peccātum suum,
+(258)  SOSIA SERVUS: dēduntque sē, dīvīna hūmānaque omnia, urbem et līberōs
+(259)  SOSIA SERVUS: in diciōnem atque in arbitrātum cūnctī Thēbānō poplō.
+(260)  SOSIA SERVUS: post ob virtūtem erō Amphitruōnī patera dōnāta aurea est,
+(261)  SOSIA SERVUS: quī Pterela pōtitāre rēx est solitus. haec sīc dīcam erae.
+(262)  SOSIA SERVUS: nunc pergam erī imperium exsequī et mē domum capessere.
+(263)  MERCURIUS DEUS: Attāt, illic hūc itūrust. ībō ego illīc obviam,
+(264)  MERCURIUS DEUS: neque ego hunc hominem hodiē ad aedīs hās sinam umquam accēdere;
+(265)  MERCURIUS DEUS: quandō imāgō est hujus in mē, certum est hominem ēlūdere.
+(266)  MERCURIUS DEUS: et enim vērō quoniam fōrmam cēpī hujus in mēd et statum,
+(267)  MERCURIUS DEUS: decet et facta mōrēsque hujus habēre mē similīs item.
+(268)  MERCURIUS DEUS: itaque mē malum esse oportet, callidum, astūtum admodum
+(269)  MERCURIUS DEUS: atque hunc, tēlō suō sibī, malitiā ā foribus pellere.
+(270)  MERCURIUS DEUS: sed quid illūc est? caelum aspectat. observābō quam rem agat.
+(271)  SOSIA SERVUS: Certē edepol, sī quicquamst aliud quod crēdam aut certō sciam,
+(272)  SOSIA SERVUS: crēdō ego hāc noctū Nocturnum obdormīvisse ēbrium.
+(273)  SOSIA SERVUS: nam neque sē Septentriōnēs quōquam in caelō commovent,
+(274)  SOSIA SERVUS: neque sē Lūna quōquam mūtat atque utī exorta est semel,
+(275)  SOSIA SERVUS: nec Jugulae neque Vesperūgō neque Vergiliae occidunt.
+(276)  SOSIA SERVUS: ita statim stant signa, neque nox quōquam concēdit diē.
+(277)  MERCURIUS DEUS: Perge, Nox, ut occēpistī, gere patrī mōrem meō:
+(278)  MERCURIUS DEUS: optumō optumē optumam operam dās, datam pulchrē locās.
+(279)  SOSIA SERVUS: Neque ego hāc nocte longiōrem mē vīdisse cēnseō,
+(280)  SOSIA SERVUS: nisi item ūnam, verberātus quam pependī perpetem;
+(281)  SOSIA SERVUS: eam quoque edepol etiam multō haec vīcit longitūdine.
+(282)  SOSIA SERVUS: crēdō edepol equidem dormīre Sōlem, atque appōtum probē;
+(283)  SOSIA SERVUS: mīra sunt nisi invītāvit sēsē in cēnā plūsculum.
+(284)  MERCURIUS DEUS: Āīn vērō, verberō? deōs esse tuī similīs putās?
+(285)  MERCURIUS DEUS: ego pol tē istīs tuīs prō dictīs et male factīs, furcifer,
+(286)  MERCURIUS DEUS: accipiam; modo sīs venī hūc: inveniēs īnfortūnium.
+(287)  SOSIA SERVUS: Ubi sunt istī scortātōrēs, quī sōlī invītī cubant?
+(288)  SOSIA SERVUS: haec nox scīta est exercendō scortō conductō male.
+(289)  MERCURIUS DEUS: Meus pater nunc prō hujus verbīs rēctē et sapienter facit,
+(290)  MERCURIUS DEUS: quī complexus cum Alcumēnā cubat amāns animō obsequēns.
+(291)  SOSIA SERVUS: Ībō ut erus quod imperāvit Alcumēnae nūntiem.
+(292)  SOSIA SERVUS: sed quis hic est homō, quem ante aedīs videō hoc noctis? nōn placet.
+(293)  MERCURIUS DEUS: Nūllust hōc metūculōsus aequē. Mī in mentem venit,
+(294)  SOSIA SERVUS: illic homō hodiē hoc dēnuō vult pallium dētexere.
+(295)  MERCURIUS DEUS: Timet homō: dēlūdam ego illum. Periī, dentēs prūriunt;
+(296)  SOSIA SERVUS: certē advenientem hic mē hospitiō pugneō acceptūrus est.
+(297)  SOSIA SERVUS: crēdō misericors est: nunc proptereā quod mē meus erus
+(298)  SOSIA SERVUS: fēcit ut vigilārem, hic pugnīs faciet hodiē ut dormiam.
+(299)  SOSIA SERVUS: oppidō interiī. obsecrō hercle, quantus et quam validus est.
+(300)  MERCURIUS DEUS: Clārē adversum fābulābor, ut hic auscultet quae loquar;
+(301)  MERCURIUS DEUS: igitur magis modum in majōrem in sēsē concipiet metum.
+(302)  MERCURIUS DEUS: agite, pugnī, jam diū est quod ventrī vīctum nōn datis:
+(303)  MERCURIUS DEUS: jam prīdem vidētur factum, heri quod hominēs quattuor
+(304)  MERCURIUS DEUS: in sopōrem collocāstis nūdōs. Formīdō male,
+(305)  SOSIA SERVUS: ne ego hīc nōmen meum commūtem et Quīntus fīam ē Sōsiā;
+(306)  SOSIA SERVUS: quattuor virōs sopōrī sē dedisse hic autumat:
+(307)  SOSIA SERVUS: metuō nē numerum augeam illum. em, nūnciam ergō: sīc volō.
+(308)  SOSIA SERVUS: Cingitur: certē expedit sē. Nōn feret quīn vāpulet.
+(309)  SOSIA SERVUS: Quis homo? Quisquis homō hūc profectō vēnerit, pugnōs edet.
+(310)  SOSIA SERVUS: Apage, nōn placet mē hoc noctis ēsse: cēnāvī modo;
+(311)  SOSIA SERVUS: proin tū istam cēnam largīre, sī sapis, ēsurientibus.
+(312)  MERCURIUS DEUS: Hau malum huic est pondus pugnō. Periī, pugnōs ponderat.
+(313)  MERCURIUS DEUS: Quid sī ego illum tractim tangam, ut dormiat? Servāverīs,
+(314)  SOSIA SERVUS: nam continuās hās trīs noctēs pervigilāvī. Pessimēst,
+(315)  MERCURIUS DEUS: facimus nēquiter, ferīre mālam male discit manus;
+(316)  MERCURIUS DEUS: aliā fōrmā eum esse oportet quem tū pugnō lēgerīs.
+(317)  SOSIA SERVUS: Illic homō mē interpolābit meumque ōs finget dēnuō.
+(318)  MERCURIUS DEUS: Exossātum ōs esse oportet quem probē percusserīs.
+(319)  SOSIA SERVUS: Mīrum nī hic mē quasi mūrēnam exossāre cōgitat.
+(320)  SOSIA SERVUS: ultrō istunc quī exossat hominēs. periī, sī mē aspexerit.
+(321)  MERCURIUS DEUS: Olet homō quīdam malō suō. ei, numnam ego oboluī?
+(322)  MERCURIUS DEUS: Atque hau longē abesse oportet, vērum longē hinc āfuit.
+(323)  SOSIA SERVUS: Illic homō superstitiōsust. Gestiunt pugnī mihi.
+(324)  SOSIA SERVUS: Sī in mē exercitūru's, quaesō in parietem ut prīmum domēs.
+(325)  MERCURIUS DEUS: Vōx mī ad aurīs advolāvit. Nē ego homō īnfēlīx fuī,
+(326)  SOSIA SERVUS: quī nōn ālās intervellī: volucrem vōcem gestitō.
+(327)  MERCURIUS DEUS: Illic homō ā mē sibi malam rem arcessit jūmentō suō.
+(328)  SOSIA SERVUS: Nōn equidem ūllum habeō jūmentum. Onerandus est pugnīs probē.
+(329)  SOSIA SERVUS: Lassus sum hercle, nāvī ut vectus hūc sum: etiam nunc nauseō;
+(330)  SOSIA SERVUS: vix incēdō inānis, nē īre posse cum onere exīstimēs.
+(331)  MERCURIUS DEUS: Certē enim hic nescio quis loquitur. Salvus sum nōn mē videt:
+(332)  SOSIA SERVUS: nescioquem loquī autumat; mihi certō nōmen Sōsiaest.
+(333)  MERCURIUS DEUS: Hinc enim mihi dextrā vōx aurīs, ut vidētur, verberat.
+(334)  SOSIA SERVUS: Metuō, vōcis nē vicem hodiē hīc vāpulem, quae hunc verberat.
+(335)  MERCURIUS DEUS: Optumē eccum incēdit ad mē. Timeō, tōtus torpeō.
+(336)  SOSIA SERVUS: nōn edepol nunc ubi terrārum sim sciō, sī quis roget,
+(337)  SOSIA SERVUS: neque miser mē commovēre possum prae formīdine.
+(338)  SOSIA SERVUS: īlicet, mandāta erī periērunt ūnā et Sōsia.
+(339)  SOSIA SERVUS: vērum certum est cōnfīdenter hominem contrā colloquī,
+(340)  SOSIA SERVUS: quī possim vidērī huic fortis, ā mē ut abstineat manum.
+(341)  MERCURIUS DEUS: Quō ambulās tū, quī Vulcānum in cornū conclūsum geris?
+(342)  SOSIA SERVUS: Quid id exquīris tū, quī pugnīs ōs exossās hominibus?
+(343)  MERCURIUS DEUS: Servusne ēs an līber? Utcumque animō collibitum est meō.
+(344)  MERCURIUS DEUS: Āin vērō? Ajō enim vērō. Verberō. Mentīre nunc.
+(345)  MERCURIUS DEUS: At jam faciam ut vērum dīcās dīcere. Quid eō est opus?
+(346)  MERCURIUS DEUS: Possum scīre, quō profectus, cujus sīs aut quid vēnerīs?
+(347)  SOSIA SERVUS: Hūc eō, erī sum servus. numquid nunc ēs certior?
+(348)  MERCURIUS DEUS: Ego tibi istam hodiē, sceleste, comprimam linguam. Hau potēs:
+(349)  SOSIA SERVUS: bene pudīcēque asservātur. Pergin argūtārier?
+(350)  MERCURIUS DEUS: quid apud hāsce aedīs negōtī est tibi? Immō quid tibi est?
+(351)  MERCURIUS DEUS: Rēx Creō vigilēs nocturnōs singulōs semper locat.
+(352)  SOSIA SERVUS: Bene facit: quia nōs erāmus peregrī, tūtātust domī;
+(353)  SOSIA SERVUS: at nunc abi sānē, advēnisse familiārēs dīcitō.
+(354)  MERCURIUS DEUS: Nescio quam tū familiārīs sīs: nisi āctūtum hinc abīs,
+(355)  MERCURIUS DEUS: familiāris, accipiēre faxo hau familiāriter.
+(356)  SOSIA SERVUS: Hīc inquam habitō ego atque hōrunc servus sum. At scīn quō modō?
+(357)  MERCURIUS DEUS: faciam ego hodiē tē superbum, nisi hinc abīs. Quōnam modo?
+(358)  MERCURIUS DEUS: Auferēre, nōn abībis, si ego fustem sūmpserō.
+(359)  SOSIA SERVUS: Quīn mē esse hujus familiāī familiārem praedicō.
+(360)  MERCURIUS DEUS: Vide sīs quam mox vāpulāre vīs, nisi āctūtum hinc abīs.
+(361)  SOSIA SERVUS: Tūn domō prohibēre peregrē mē advenientem postulās?
+(362)  MERCURIUS DEUS: Haecin tua domust? Ita inquam. Quis erus est igitur tibi?
+(363)  SOSIA SERVUS: Amphitruō, quī nunc praefectust Thēbānīs legiōnibus,
+(364)  SOSIA SERVUS: quīcum nūpta est Alcumēna. Quid ais? quid nōmen tibi est?
+(365)  SOSIA SERVUS: Sōsiam vocant Thēbānī, Dāvō prōgnātum patre.
+(366)  MERCURIUS DEUS: Nē tū istīc hodiē malō tuō compositīs mendāciīs
+(367)  MERCURIUS DEUS: advēnistī, audāciāī columen, cōnsūtīs dolīs.
+(368)  SOSIA SERVUS: Immō equidem tunicīs cōnsūtīs hūc adveniō, nōn dolīs.
+(369)  MERCURIUS DEUS: At mentīris etiam: certō pedibus, nōn tunicīs venīs.
+(370)  SOSIA SERVUS: Ita profectō. Nunc profectō vāpulā ob mendācium.
+(371)  SOSIA SERVUS: Nōn edepol volō profectō. At pol profectō ingrātiīs.
+(372)  MERCURIUS DEUS: hoc quidem profectō certum est, nōn est arbitrārium.
+(373)  SOSIA SERVUS: Tuam fidem obsecrō. Tūn tē audēs Sōsiam esse dīcere,
+(374)  MERCURIUS DEUS: qui ego sum? Periī. Parum etiam, praeut futūrum est, praedicās.
+(375)  MERCURIUS DEUS: cujus nunc ēs? Tuus, nam pugnīs ūsū fēcistī tuum.
+(376)  SOSIA SERVUS: prō fidem, Thēbānī cīvēs. Etiam clāmās, carnifex?
+(377)  MERCURIUS DEUS: loquere, quid vēnistī? Ut esset quem tū pugnīs caederēs.
+(378)  MERCURIUS DEUS: Cujus ēs? Amphitruōnis, inquam, Sōsia. Ergō istōc magis,
+(379)  MERCURIUS DEUS: quia vāniloquu's, vāpulābis: ego sum, nōn tū, Sōsia.
+(380)  SOSIA SERVUS: Ita dī faciant, ut tū potius sīs atque ego tē ut verberem.
+(381)  MERCURIUS DEUS: Etiam muttīs? Jam tacēbō. Quis tibi erust? Quem tū volēs.
+(382)  MERCURIUS DEUS: Quid igitur? quī nunc vocāre? Nēmō nisi quem jusserīs.
+(383)  MERCURIUS DEUS: Amphitruōnis tē esse ajēbās Sōsiam. Peccāveram,
+(384)  SOSIA SERVUS: nam Amphitruōnis socium nē mē esse voluī dīcere.
+(385)  MERCURIUS DEUS: Scībam equidem nūllum esse nōbīs nisi mē servum Sōsiam.
+(386)  MERCURIUS DEUS: fūgit tē ratiō. Utinam istūc pugnī fēcissent tuī.
+(387)  MERCURIUS DEUS: Ego sum Sōsia ille quem tū dūdum esse ajēbās mihi.
+(388)  SOSIA SERVUS: Obsecrō ut per pācem liceat tē alloquī, ut nē vāpulem.
+(389)  MERCURIUS DEUS: Immō indūtiae parumper fīant, sī quid vīs loquī.
+(390)  SOSIA SERVUS: Nōn loquar nisi pāce factā, quandō pugnīs plūs valēs.
+(391)  MERCURIUS DEUS: Dīc sī quid vīs, nōn nocēbō. Tuae fidē crēdō? Meae.
+(392)  SOSIA SERVUS: Quid sī fallēs? Tum Mercurius Sōsiae īrātus siet.
+(393)  SOSIA SERVUS: Animum adverte. nunc licet mihi līberē quidvīs loquī.
+(394)  SOSIA SERVUS: Amphitruōnis ego sum servus Sōsia Etiam dēnuō?
+(395)  SOSIA SERVUS: Pācem fēcī, foedus fēcī. vēra dīcō. Vāpulā.
+(396)  SOSIA SERVUS: Ut libet quid tibi libet fac, quoniam pugnīs plūs valēs;
+(397)  SOSIA SERVUS: vērum, utut ēs factūrus, hoc quidem hercle hau reticēbō tamen.
+(398)  MERCURIUS DEUS: Tū mē vivus hodiē numquam faciēs quīn sim Sōsia.
+(399)  SOSIA SERVUS: Certē edepol tū mē aliēnābis numquam quīn noster siem;
+(400)  SOSIA SERVUS: nec nōbīs praeter mēd alius quisquam est servus Sōsia.
+(402)  MERCURIUS DEUS: Hic homo sānus nōn est. Quod mihi praedicās vitium, id tibi est.
+(403)  SOSIA SERVUS: quid, malum, nōn sum ego servus Amphitruōnis Sōsia?
+(404)  SOSIA SERVUS: nonne hāc noctū nostra nāvis hūc ex portū Persicō
+(405)  SOSIA SERVUS: vēnit, quae mē advēxit? nōnne mē hūc erus mīsit meus?
+(406)  SOSIA SERVUS: nōnne ego nunc stō ante aedīs nostrās? nōn mī est lanterna in manū?
+(407)  SOSIA SERVUS: nōn loquor, nōn vigilō? nōnne hic homo modo mē pugnīs contudit?
+(408)  SOSIA SERVUS: fēcit hercle, nam etiam miserō nunc mihī mālae dolent.
+(409)  SOSIA SERVUS: quid igitur ego dubitō, aut cūr nōn intrō eō in nostram domum?
+(410)  MERCURIUS DEUS: Quid, domum vestram? Ita enim vērō. Quīn quae dīxistī modo
+(411)  MERCURIUS DEUS: omnia ēmentītu's: equidem Sōsia Amphitruōnis sum.
+(412)  MERCURIUS DEUS: nam noctū hāc solūta est nāvis nostra ē portū Persicō,
+(413)  MERCURIUS DEUS: et ubi Pterela rēx rēgnāvit oppidum expugnāvimus,
+(414)  MERCURIUS DEUS: et legiōnēs Tēloboārum vī pugnandō cēpimus,
+(415)  MERCURIUS DEUS: et ipsus Amphitruō optruncāvit rēgem Pterelam in proeliō.
+(416)  SOSIA SERVUS: Egomet mihi nōn crēdō, cum illaec autumāre illum audiō;
+(417)  SOSIA SERVUS: hic quidem certē quae illīc sunt rēs gestae memorat memoriter.
+(418)  SOSIA SERVUS: sed quid ais? quid Amphitruōnī ā Tēloboīs est datum?
+(419)  MERCURIUS DEUS: Pterela rēx quī pōtitāre solitus est paterā aureā.
+(420)  SOSIA SERVUS: Ēlocūtus est. ubi patera nunc est? Est in cistulā;
+(421)  MERCURIUS DEUS: Amphitruōnis obsignāta signō est. Signī dīc quid est?
+(422)  MERCURIUS DEUS: Cum quadrīgīs Sōl exoriēns. quid? mē captās, carnufex?
+(423)  SOSIA SERVUS: Argūmentīs vīcit, aliud nōmen quaerundum est mihi.
+(424)  SOSIA SERVUS: nesciō unde haec hic spectāvit. jam ego hunc dēcipiam probē;
+(425)  SOSIA SERVUS: nam quod egomet sōlus fēcī, nec quisquam alius affuit,
+(426)  SOSIA SERVUS: in tabernāclō, id quidem hodiē numquam poterit dīcere.
+(427)  SOSIA SERVUS: sī tū Sōsia ēs, legiōnēs cum pugnābant maximē,
+(428)  SOSIA SERVUS: quid in tabernāclō fēcistī? victus sum, sī dīxerīs.
+(429)  MERCURIUS DEUS: Cadus erat vīnī, inde implēvī hirneam. Ingressust viam.
+(430)  MERCURIUS DEUS: Eam ego, ut mātre fuerat nātum, tum vīnī ēdūxī merī.
+(431)  SOSIA SERVUS: Factum est illud, ut ego illīc vīnī hirneam ēbiberim merī.
+(432)  SOSIA SERVUS: mīra sunt nisi latuit intus illīc in illāc hirneā.
+(433)  MERCURIUS DEUS: Quid nunc? vincōn argūmentīs, tē nōn esse Sōsiam?
+(434)  SOSIA SERVUS: Tū negās mēd esse? Quid ego nī negem, quī egomet siem?
+(435)  SOSIA SERVUS: Per Jovem jūrō mēd esse neque mē falsum dīcere.
+(436)  MERCURIUS DEUS: At ego per Mercurium jūrō, tibi Jovem nōn crēdere;
+(437)  MERCURIUS DEUS: nam injūrātō sciō plūs crēdet mihi quam jūrātō tibi.
+(438)  SOSIA SERVUS: Quis ego sum saltem, sī nōn sum Sōsia? tē interrogō.
+(439)  MERCURIUS DEUS: Ubi ego nōlim Sōsia esse, tū estō sānē Sōsia;
+(440)  MERCURIUS DEUS: nunc, quandō ego sum, vāpulābis, nī hinc abīs, ignōbilis.
+(441)  SOSIA SERVUS: Certē edepol, cum illum contemplō et fōrmam cognōscō meam,
+(442)  SOSIA SERVUS: quem ad modum ego sum, saepe in speculum īnspexī, nimis similest meī;
+(443)  SOSIA SERVUS: itidem habet petasum ac vestītum: tam cōnsimilest atque ego;
+(444)  SOSIA SERVUS: sūra, pēs, statūra, tōnsus, oculī, nāsum vel labra,
+(445)  SOSIA SERVUS: mālae, mentum, barba, collus: tōtus. quid verbīs opust?
+(446)  SOSIA SERVUS: sī tergum cicātrīcōsum, nihil hōc similīst similius.
+(447)  SOSIA SERVUS: sed cum cōgitō, equidem certō īdem sum quī semper fuī.
+(448)  SOSIA SERVUS: nōvī erum, nōvī aedīs nostrās; sānē sapiō et sentiō.
+(449)  SOSIA SERVUS: nōn ego illī obtemperō quod loquitur. pultābō forīs.
+(450)  MERCURIUS DEUS: Quo agis tē? Domum. Quadrīgās sī nunc īnscendās Jovis
+(451)  MERCURIUS DEUS: atque hinc fugiās, ita vix poteris effugere īnfortūnium.
+(452)  SOSIA SERVUS: Nōnne erae meae nūntiāre quod erus meus jussit licet?
+(453)  MERCURIUS DEUS: Tuae sī quid vīs nūntiāre: hanc nostram adīre nōn sinam.
+(454)  MERCURIUS DEUS: nam sī mē irrītāssis, hodiē lumbifragium hinc auferēs.
+(455)  SOSIA SERVUS: Abeō potius. dī immortālēs, obsecrō vestram fidem,
+(456)  SOSIA SERVUS: ubi ego periī? ubi immūtātus sum? ubi ego fōrmam perdidī?
+(457)  SOSIA SERVUS: an egomet mē illīc relīquī, sī forte oblītus fuī?
+(458)  SOSIA SERVUS: nam hic quidem omnem imāginem meam, quae antehāc fuerat, possidet.
+(459)  SOSIA SERVUS: vīvō fit quod numquam quisquam mortuō faciet mihi.
+(460)  SOSIA SERVUS: ībō ap portum atque haec utī sunt facta erō dīcam meō;
+(461)  SOSIA SERVUS: nisi etiam is quoque mē ignōrābit: quod ille faxit Juppiter,
+(462)  SOSIA SERVUS: ut ego hodiē rāsō capite calvus capiam pilleum.
+(463x) == Szene I.ii ==
+(463)  MERCURIUS DEUS: Bene prōsperē hoc hodiē operis prōcessit mihi:
+(464)  MERCURIUS DEUS: āmōvī ā foribus maximam molestiam,
+(465)  MERCURIUS DEUS: patrī ut licēret tūtō illam amplexārier.
+(466)  MERCURIUS DEUS: jam ille illūc ad erum cum Amphitruōnem advēnerit,
+(467)  MERCURIUS DEUS: nārrābit servum hinc sēsē ā foribus Sōsiam
+(468)  MERCURIUS DEUS: āmōvisse; ille adeō illum mentīrī sibi
+(469)  MERCURIUS DEUS: crēdet, neque crēdet hūc prōfectum, ut jusserat.
+(470)  MERCURIUS DEUS: errōris ambō ego illōs et dēmentiae
+(471)  MERCURIUS DEUS: complēbō atque omnem Amphitruōnis familiam,
+(472)  MERCURIUS DEUS: adeō usque, satietātem dum capiet pater
+(473)  MERCURIUS DEUS: illīus quam amat. igitur dēmum omnēs scient
+(474)  MERCURIUS DEUS: quae facta. dēnique Alcumēnam Juppiter
+(475)  MERCURIUS DEUS: redigēt antīquam conjugī in concordiam.
+(476)  MERCURIUS DEUS: nam Amphitruō āctūtum uxōrī turbās conciet
+(477)  MERCURIUS DEUS: atque īnsimulābit eam probrī; tum meus pater
+(478)  MERCURIUS DEUS: eam sēditiōnem illī in tranquillum cōnferet.
+(479)  MERCURIUS DEUS: nunc dē Alcumēnā dūdum quod dīxī minus,
+(480)  MERCURIUS DEUS: hodiē illa pariet fīliōs geminōs duōs
+(481)  MERCURIUS DEUS: alter decumō post mēnse nāscētur puer
+(482)  MERCURIUS DEUS: quam sēminātust, alter mēnse septumō;
+(483)  MERCURIUS DEUS: eōrum Amphitruōnis alter est, alter Jovis:
+(484)  MERCURIUS DEUS: vērum minōrī puerō major est pater,
+(485)  MERCURIUS DEUS: minor majōrī. jamne hoc scītis quid siet?
+(486)  MERCURIUS DEUS: sed Alcumēnae hujus honōris grātiā
+(487)  MERCURIUS DEUS: pater cūrāvit ūnō ut fētū fīeret,
+(488)  MERCURIUS DEUS: ūnō ut labōre absolvat aerumnās duās.
+(489)  MERCURIUS DEUS: [et nē in suspīciōne pōnātur stuprī
+(490)  MERCURIUS DEUS: et clandestīna ut cēlētur cōnsuētiō.]
+(491)  MERCURIUS DEUS: quamquam, ut jam dūdum dīxī, rescīscet tamen
+(492)  MERCURIUS DEUS: Amphitruō rem omnem. quid igitur? nēmō id probrō
+(493)  MERCURIUS DEUS: profectō dūcet Alcumēnae; nam deum
+(494)  MERCURIUS DEUS: nōn pār vidētur facere, dēlictum suum
+(495)  MERCURIUS DEUS: suamque ut culpam expetere in mortālem ut sinat.
+(496)  MERCURIUS DEUS: ōrātiōnem comprimam: crepuit forīs.
+(497)  MERCURIUS DEUS: Amphitruō subditīvus eccum exit forās
+(498)  MERCURIUS DEUS: cum Alcumēnā uxōre ūsūrāriā.
+(499x) == Szene I.iii ==
+(499)  IUPPITER DEUS: Bene valē, Alcumēna, cūrā rem commūnem, quod facis;
+(500)  IUPPITER DEUS: atque imperce quaesō: mēnsēs jam tibi esse āctōs vidēs.
+(501)  IUPPITER DEUS: mihi necesse est īre hinc; vērum quod erit nātum tollitō.
+(502)  ALCUMENA MATRONA: Quid istūc est, mī vir, negōtī, quod tū tam subitō domō
+(503)  ALCUMENA MATRONA: abeās? Edepol hau quod tuī mē neque domī distaedeat;
+(504)  IUPPITER DEUS: sed ubi summus imperātor nōn adest ad exercitum,
+(505)  IUPPITER DEUS: citius quod nōn factō est ūsus fit quam quod factō est opus.
+(506)  MERCURIUS DEUS: Nimis hic scītust sȳcophanta, quī quidem meus sit pater.
+(507)  MERCURIUS DEUS: observātōte eum, quam blandē mulierī palpābitur.
+(508)  ALCUMENA MATRONA: Ēcastor tē experior quantī faciās uxōrem tuam.
+(509)  IUPPITER DEUS: Satin habēs, sī fēminārum nūlla est quam aequē dīligam?
+(510)  MERCURIUS DEUS: Edepol nē illa sī istīs rēbus tē sciāt operam dare,
+(511)  MERCURIUS DEUS: ego faxim tēd Amphitruōnem esse mālīs, quam Jovem.
+(512)  ALCUMENA MATRONA: Experīrī istūc māvellem mē quam mī memorārier.
+(513)  ALCUMENA MATRONA: prius abīs quam lectūs ubi cubuistī concaluit locus.
+(514)  ALCUMENA MATRONA: heri vēnistī mediā nocte, nunc abīs. hoccin placet?
+(515)  MERCURIUS DEUS: Accēdam atque hanc appellābō et supparasītābor patrī.
+(516)  MERCURIUS DEUS: numquam edepol quemquam mortālem crēdō ego uxōrem suam
+(517)  MERCURIUS DEUS: sīc efflictim amāre, proinde ut hic tē efflictim dēperit.
+(518)  IUPPITER DEUS: Carnufex, nōn ego tē nōvī? abīn ē cōnspectū meō?
+(519)  IUPPITER DEUS: quid tibi hanc cūrātiō est rem, verberō, aut muttītiō?
+(520)  IUPPITER DEUS: quoii egō jam hōc scīpiōne... Āh nōlī. Muttītō modo.
+(521)  MERCURIUS DEUS: Nēquiter paene expedīvit prīma parasītātiō.
+(522)  IUPPITER DEUS: Vērum quod tū dīcis, mea uxor, nōn tē mī īrāscī decet.
+(523)  IUPPITER DEUS: clanculum abiī: ā legiōne operam hanc surrupuī tibi,
+(524)  IUPPITER DEUS: ex mē prīmō prīma ut scīrēs, rem ut gessissem pūblicam.
+(525)  IUPPITER DEUS: ea tibi omnia ēnārrāvī. nisi tē amārem plūrimum,
+(526)  IUPPITER DEUS: nōn facerem. Facitne ut dīxī? timidam palpō percutit.
+(527)  IUPPITER DEUS: Nunc, nē legiō persentīscat, clam illūc redeundum est mihi,
+(528)  IUPPITER DEUS: nē mē uxōrem praevertisse dīcant prae rē pūblicā.
+(529)  ALCUMENA MATRONA: Lacrimantem ex abitū concinnās tū tuam uxōrem. Tacē,
+(530)  IUPPITER DEUS: nē corrumpe oculōs, redībō āctūtum. Id āctūtum diū est.
+(531)  IUPPITER DEUS: Nōn ego tē hīc libēns relinquō neque abeō abs tē. Sentiō,
+(532)  ALCUMENA MATRONA: nam quā nocte ad mē vēnistī, eādem abīs. Cūr mē tenēs?
+(533)  IUPPITER DEUS: tempus est: exīre ex urbe prius quam lūcēscat volō.
+(534)  IUPPITER DEUS: nunc tibi hanc pateram, quae dōnō mī illī ob virtūtem data est,
+(535)  IUPPITER DEUS: Pterela rēx quī pōtitāvit, quem ego meā occīdī manū,
+(536)  IUPPITER DEUS: Alcumēna, tibi condōnō. Facis ut aliās rēs solēs.
+(537)  ALCUMENA MATRONA: ēcastor condignum dōnum, quālest quī dōnum dedit.
+(538)  MERCURIUS DEUS: Immō sīc: condignum dōnum, quālest cui dōnō datumst.
+(539)  IUPPITER DEUS: Pergīn autem? nōnne ego possum, furcifer, tē perdere?
+(540)  ALCUMENA MATRONA: Nōlī amābō, Amphitruō, īrāscī Sōsiae causā meā.
+(541)  IUPPITER DEUS: Faciam ita ut vīs. Ex amōre hic admodum quam saevus est.
+(542)  IUPPITER DEUS: Numquid vīs? Ut cum absim me amēs, mē tuam tē absentem tamen.
+(543)  MERCURIUS DEUS: Eāmus, Amphitruō. lūcēscit hoc jam. Abī prae, Sōsia,
+(544)  IUPPITER DEUS: jam ego sequar. numquid vīs? Etiam: ut āctūtum adveniās. Licet,
+(545)  IUPPITER DEUS: prius tuā opīniōne hīc aderō: bonum animum habē.
+(546)  IUPPITER DEUS: nunc tē, nox, quae mē mānsistī, mittō ut concēdās diē,
+(547)  IUPPITER DEUS: ut mortālīs illūcēscat lūce clārā et candidā.
+(548)  IUPPITER DEUS: atque quantō, nox, fuistī longiōr hāc proximā,
+(549)  IUPPITER DEUS: tantō brevior diēs ut fīat faciam, ut aequē disparet,
+(550)  IUPPITER DEUS: et diēs ē nocte accēdāt. ībō et Mercurium subsequar.
+(551y) === Akt II ===
+(551x) == Szene Ii.i ==
+(551)  AMPHITRUO DUX: Age ī tū secundum. Sequor, subsequor tē.
+(552)  AMPHITRUO DUX: Scelestissimum tē arbitror. Nam quam ob rem?
+(553)  AMPHITRUO DUX: Quia id quod neque est neque fuit neque futūrum est
+(554)  AMPHITRUO DUX: mihī praedicās. Eccerē, jam tuātim
+(555)  SOSIA SERVUS: facīs, ut tuīs nūlla apud tē fidēs sit.
+(556)  AMPHITRUO DUX: Quid est? quō modō? jam quidem hercle ego tibi istam
+(557)  AMPHITRUO DUX: scelestam, scelus, linguam abscīdam. Tuus sum,
+(558)  SOSIA SERVUS: proinde ut commodumst et libet quidque faciās;
+(559)  SOSIA SERVUS: tamen quīn loquār haec utī facta sunt hīc,
+(560)  SOSIA SERVUS: numquam ūllō modō mē potēs dēterrēre.
+(561)  AMPHITRUO DUX: Scelestissume, audēs mihī praedicāre id,
+(562)  AMPHITRUO DUX: domī tē esse nunc, quī hīc adēs? Vēra dīcō.
+(563)  AMPHITRUO DUX: Malum quod tibī dī dabunt, atque ego hodiē
+(564)  AMPHITRUO DUX: dabō. Istūc tibist in manū, nam tuus sum.
+(565)  AMPHITRUO DUX: Tūn mē, verberō, audēs erum lūdificārī?
+(566)  AMPHITRUO DUX: tūne id dīcere audēs, quod nēmō umquam homō antehāc
+(567)  AMPHITRUO DUX: vīdit nec potest fīerī, tempore ūnō
+(568)  AMPHITRUO DUX: homō īdem duōbus locīs ut simul sit?
+(569)  SOSIA SERVUS: Profectō ut loquor rēs ita est. Juppiter tē
+(570)  AMPHITRUO DUX: perdat. Quid malī sum, ere, tuā ex rē prōmeritus?
+(571)  AMPHITRUO DUX: Rogāsne, improbe, etiam, quī lūdōs facis mē?
+(572)  SOSIA SERVUS: Meritō maledīcās mihi, sī nōn id ita factum est.
+(573)  SOSIA SERVUS: vērum hau mentior, rēsque utī facta dīcō.
+(574)  AMPHITRUO DUX: Homō hic ēbrius est, ut opīnor.
+(575)  SOSIA SERVUS: Utinam ita essem. Optās quae facta.
+(575a)  SOSIA SERVUS: Egone? Tū istic. ubi bibistī?
+(576)  SOSIA SERVUS: Nusquam equidem bibī. Quid hoc sit
+(576a)  AMPHITRUO DUX: hominis? equidem deciēns dīxī:
+(577)  SOSIA SERVUS: domī ego sum, inquam, ecquid audīs?
+(578)  SOSIA SERVUS: et apud tē assum Sōsia īdem.
+(579)  SOSIA SERVUS: satin hoc plānē, satin disertē,
+(579a)  SOSIA SERVUS: ere, nunc videor
+(579b)  SOSIA SERVUS: tibi locūtus esse? Vah,
+(580)  AMPHITRUO DUX: apage tē ā mē. Quid est negōtī?
+(581)  AMPHITRUO DUX: Pestis tē tenet. Nam cūr istūc
+(582)  SOSIA SERVUS: dīcis? equidem valeō et salvus
+(583)  SOSIA SERVUS: sum rēctē, Amphitruō. At tē ego faciam
+(583a)  AMPHITRUO DUX: hodiē proinde ac meritus ēs,
+(584)  AMPHITRUO DUX: ut minus valeās et miser sīs,
+(584a)  AMPHITRUO DUX: salvus domum sī redierō: jam
+(585)  AMPHITRUO DUX: sequere sīs, erum quī lūdificās
+(585a)  AMPHITRUO DUX: dictīs dēlīrantibus,
+(586)  AMPHITRUO DUX: quī quoniam erus quod imperāvit nēglēxistī persequī,
+(587)  AMPHITRUO DUX: nunc venīs etiam ultrō irrīsum dominum: quae neque fīerī
+(588)  AMPHITRUO DUX: possunt neque fandō umquam accēpit quisquam prōfers, carnifex;
+(589)  AMPHITRUO DUX: cujus ego hodiē in tergum faxo ista expetant mendācia.
+(590)  SOSIA SERVUS: Amphitruō, miserrima istaec miseria est servō bonō,
+(591)  SOSIA SERVUS: apud erum quī vēra loquitur, sī id vī vērum vincitur.
+(592)  AMPHITRUO DUX: Quō id, malum, pactō potest nam, mēcum argūmentīs putā,
+(593)  AMPHITRUO DUX: fierī, nunc utī tū et hīc sīs et domī? id dīcī volō.
+(594)  SOSIA SERVUS: Sum profectō et hīc et illīc. hoc cuivīs mīrārī licet,
+(595)  SOSIA SERVUS: neque tibi istūc mīrum mīrum magis vidētur quam mihi.
+(596)  AMPHITRUO DUX: Quō modō? Nihilō, inquam, mīrum magis tibi istūc quam mihi;
+(597)  SOSIA SERVUS: neque, ita mē di ament, crēdēbam prīmō mihimet Sōsiae,
+(598)  SOSIA SERVUS: dōnec Sōsia illic egomet fēcit sibi utī crēderem.
+(599)  SOSIA SERVUS: ōrdine omne, utī quicque āctum est, dum apud hostīs sēdimus,
+(600)  SOSIA SERVUS: ēdissertāvit. tum fōrmam ūnā abstulit cum nōmine.
+(601)  SOSIA SERVUS: neque lac lactis magis est simile quam ille egō similest meī.
+(602)  SOSIA SERVUS: nam ut dūdum ante lūcem ā portū mē praemīsistī domum–
+(603)  AMPHITRUO DUX: Quid igitur? Prius multō ante aedīs stābam quam illō advēneram.
+(604)  AMPHITRUO DUX: Quās, malum, nūgās? satin tū sānus ēs? Sīc sum ut vidēs.
+(605)  AMPHITRUO DUX: Huic hominī nescio quid est malī mala objectum manū,
+(606)  AMPHITRUO DUX: postquam ā mē abiit. Fateor, nam sum obtūsus pugnīs pessimē.
+(607)  AMPHITRUO DUX: Quis tē verberāvit? Egomet mēmet, quī nunc sum domī.
+(608)  AMPHITRUO DUX: Cave quicquam, nisi quod rogābō tē, mihī responderīs.
+(609)  AMPHITRUO DUX: omnium prīmum iste quī sit Sōsia, hoc dīcī volō.
+(610)  SOSIA SERVUS: Tuus est servus. Mihi quidem ūnō tē plūs etiam est quam volō,
+(611)  AMPHITRUO DUX: neque postquam sum nātus habuī nisi tē servum Sōsiam.
+(612)  SOSIA SERVUS: At ego nunc, Amphitruō, dīcō: Sōsiam servum tuum
+(613)  SOSIA SERVUS: praeter mē alterum, inquam, adveniēns faciam ut offendās domī,
+(614)  SOSIA SERVUS: Dāvō prōgnātum patre eōdem quō ego sum, fōrmā, aetāte item
+(615)  SOSIA SERVUS: quā ego sum. quid opust verbīs? geminus Sōsia hīc factust tibi.
+(616)  AMPHITRUO DUX: Nimia memorās mīra. sed vīdistīn uxōrem meam?
+(617)  SOSIA SERVUS: Quīn intrō īre in aedīs numquam licitum est. Quis tē prohibuit?
+(618)  SOSIA SERVUS: Sōsia ille, quem jam dūdum dīcō, is quī mē contudit.
+(619)  AMPHITRUO DUX: Quis istic Sōsia est? Ego, inquam. quotiēns dīcendum est tibi?
+(620)  AMPHITRUO DUX: Sed quid ais? num obdormīvistī dūdum? Nusquam gentium.
+(621)  AMPHITRUO DUX: Ibi forte istum sī vīdissēs quendam in somnīs Sōsiam–
+(622)  SOSIA SERVUS: Nōn soleō ego somnīculōsē eri imperia persequī.
+(623)  SOSIA SERVUS: vigilāns vīdī, vigilāns nunc tē videō, vigilāns fābulor,
+(624)  SOSIA SERVUS: vigilantem ille mē jam dūdum vigilāns pugnīs contudit.
+(625)  AMPHITRUO DUX: Quis homō? Sōsia, inquam, ego ille. quaesō, nōnne intellegis?
+(626)  AMPHITRUO DUX: Quī, malum, intellegere quisquam potis est? ita nūgās blatis.
+(627)  SOSIA SERVUS: Vērum āctūtum nōscēs, cum illum nōscēs servum Sōsiam.
+(628)  AMPHITRUO DUX: Sequere hāc igitur mē, nam mī istūc prīmum exquīsītō est opus.
+(629)  AMPHITRUO DUX: [sed vidē ex nāvī efferantur quae imperāvī jam omnia.
+(630)  SOSIA SERVUS: Et memor sum et dīligēns, ut quae imperēs compāreant;
+(631)  SOSIA SERVUS: nōn ego cum vīnō simītū ēbibī imperium tuum.
+(632)  AMPHITRUO DUX: Utinam dī faxint, īnfecta dicta rē ēveniant tua.]
+(633x) == Szene Ii.ii ==
+(633)  ALCUMENA MATRONA: Satin parva rēs est voluptātum in vītā atque in aetāte agunda
+(634)  ALCUMENA MATRONA: praequam quod molestum est? ita cuique comparātum est
+(634a)  ALCUMENA MATRONA: in aetāte hominum;
+(635)  ALCUMENA MATRONA: ita dīs est placitum,
+(635a)  ALCUMENA MATRONA: voluptātem ut maeror comes cōnsequātur:
+(636)  ALCUMENA MATRONA: quīn incommodī plūs malīque īlicō assit, bonī sī optigit quid.
+(637)  ALCUMENA MATRONA: nam ego id nunc experior domō atque ipsa dē mē sciō, cui voluptās
+(638)  ALCUMENA MATRONA: parumper datast, dum virī mihi potestās
+(638a)  ALCUMENA MATRONA: videndī fuit
+(639)  ALCUMENA MATRONA: noctem ūnam modo; atque is repente abiit ā mē
+(639a)  ALCUMENA MATRONA: hinc ante lūcem.
+(640)  ALCUMENA MATRONA: sōla hīc mihi nunc videor, quia ille hinc abest quem ego amō praeter omnīs.
+(641)  ALCUMENA MATRONA: plūs aegrī ex abitū
+(641a)  ALCUMENA MATRONA: virī, quam ex adventū voluptātis cēpī.
+(641b)  ALCUMENA MATRONA: sed hoc mē beat
+(642)  ALCUMENA MATRONA: saltem, cum perduellis vīcīt et domum laudis compos revēnit:
+(643)  ALCUMENA MATRONA: id sōlāciō est.
+(644)  ALCUMENA MATRONA: absit, dum modō laude partā
+(645)  ALCUMENA MATRONA: domum recipiat sē; feram et perferam usque
+(645a)  ALCUMENA MATRONA: abitum ejus animō
+(646)  ALCUMENA MATRONA: fortī atque offirmātō, id modō sī mercēdis
+(647)  ALCUMENA MATRONA: datur mī, ut meus victor vir bellī clueat.
+(647a)  ALCUMENA MATRONA: satis mī esse dūcam.
+(648)  ALCUMENA MATRONA: virtūs praemium est optimum;
+(649)  ALCUMENA MATRONA: virtūs omnibus rēbus anteit profectō:
+(650)  ALCUMENA MATRONA: lībertās salūs vīta rēs et parentēs,
+(650a)  ALCUMENA MATRONA: patria et prōgnātī
+(651)  ALCUMENA MATRONA: tūtantur, servantur:
+(652)  ALCUMENA MATRONA: virtūs omnia in sēsē habēt, omnia assunt
+(653)  ALCUMENA MATRONA: bona quem penest virtūs.
+(654)  AMPHITRUO DUX: Edepol mē uxōrī exoptātum crēdō adventūrum domum,
+(655)  AMPHITRUO DUX: quae mē amat, quam contrā amō, praesertim rē gestā bene,
+(656)  AMPHITRUO DUX: victīs hostibus: quōs nēmō posse superārī ratust,
+(657)  AMPHITRUO DUX: eōs auspiciō meō atque ductū prīmō coetū vīcimus.
+(658)  AMPHITRUO DUX: certē enim mēd illī exspectātum optātō ventūrum sciō.
+(659)  SOSIA SERVUS: Quid? mē nōn rēre exspectātum amīcae ventūrum meae?
+(660)  ALCUMENA MATRONA: Meus vir hic quidem est. Sequere hāc tū mē. Nam quid ille revertitur
+(661)  ALCUMENA MATRONA: quī dūdum properāre sē aibat? an ille mē temptat sciēns
+(662)  ALCUMENA MATRONA: atque id sē vult experīrī, suum abitum ut dēsīderem?
+(663)  ALCUMENA MATRONA: ēcastor mēd haud invītā sē domum recipit suam.
+(664)  SOSIA SERVUS: Amphitruō, redīre ad nāvem meliust nōs. Quā grātiā?
+(665)  SOSIA SERVUS: Quia domī datūrus nēmō est prandium advenientibus.
+(666)  AMPHITRUO DUX: Quī tibi nunc istūc in mentemst? Quia enim sērō advēnimus.
+(667)  AMPHITRUO DUX: Quī? Quia Alcumēnam ante aedīs stāre saturam intellegō.
+(668)  AMPHITRUO DUX: Gravidam ego illanc hīc relīquī cum abeō. Ei periī miser.
+(669)  AMPHITRUO DUX: Quid tibi est? Ad aquam praebendam commodum advēnī domum,
+(670)  SOSIA SERVUS: decumō post mēnse, ut ratiōnem tē ductāre intellegō.
+(671)  AMPHITRUO DUX: Bonō animō ēs. Scīn quam bonō animō sim? sī situlam cēperō,
+(672)  SOSIA SERVUS: numquam edepol tū mihi dīvīnī crēduis post hunc diem,
+(673)  SOSIA SERVUS: ni ego illī puteō, sī occepsō, animam omnem intertrāxerō.
+(674)  AMPHITRUO DUX: Sequere hāc mē modo; alium ego istī reī allēgābō, nē timē.
+(675)  ALCUMENA MATRONA: Magis nunc mē meum officium facere, sī huic eam adversum, arbitror.
+(676)  AMPHITRUO DUX: Amphitruō uxōrem salūtat laetus spērātam suam,
+(677)  AMPHITRUO DUX: quam omnium Thēbīs vir ūnam esse optimam dījūdicat,
+(678)  AMPHITRUO DUX: quamque adeō cīvēs Thēbānī vērō rūmiferant probam.
+(679)  AMPHITRUO DUX: valuistīn usque? exspectātun adveniō? Hau vīdī magis.
+(680)  SOSIA SERVUS: exspectātum eum salūtat magis hau quicquam quam canem.
+(681)  AMPHITRUO DUX: Et cum gravidam et cum tē pulchrē plēnam aspiciō, gaudeō.
+(682)  ALCUMENA MATRONA: Obsecrō ēcastor, quid tū mē dērīdiculī grātiā
+(683)  ALCUMENA MATRONA: sīc salūtās atque appellās, quasi dūdum nōn vīderīs
+(684)  ALCUMENA MATRONA: quasi quī nunc prīmum recipiās tē domum hūc ex hostibus?
+(685)  ALCUMENA MATRONA: [atque mē nunc proinde appellās quasi multō post vīderīs?]
+(686)  AMPHITRUO DUX: Immō equidem tē nisi nunc hodiē nusquam vīdī gentium.
+(687)  ALCUMENA MATRONA: Cūr negās? Quia vēra didicī dīcere. Haud aequum facit
+(688)  ALCUMENA MATRONA: quī quod didicit id dēdiscit. an perīclitāminī
+(689)  ALCUMENA MATRONA: quid animī habeam? sed quid hūc vōs rēvertiminī tam cito?
+(690)  ALCUMENA MATRONA: an tē auspicium commorātum est an tempestās continet
+(691)  ALCUMENA MATRONA: quī nōn abiistī ad legiōnēs, ita utī dūdum dīxerās?
+(692)  AMPHITRUO DUX: Dūdum? quam dūdum istūc factum est? Temptās. jam dūdum, modo.
+(693)  AMPHITRUO DUX: Quī istūc potis est fierī, quaesō, ut dīcis: jam dūdum, modo?
+(694)  ALCUMENA MATRONA: Quid enim cēnsēs? te ut dēlūdam contrā lūsōrem meum,
+(695)  ALCUMENA MATRONA: quī nunc prīmum tē advēnisse dīcās, modo quī hinc abierīs.
+(696)  AMPHITRUO DUX: Haec quidem dēlīrāmenta loquitur. Paulisper manē,
+(697)  SOSIA SERVUS: dum ēdormīscat ūnum somnum. Quaene vigilāns somniat?
+(698)  ALCUMENA MATRONA: Equidem ēcastor vigilō, et vigilāns id quod factum est fābulor.
+(699)  ALCUMENA MATRONA: nam dūdum ante lūcem et istunc et tē vīdī. Quō in locō?
+(700)  ALCUMENA MATRONA: Hīc in aedibus ubi tū habitās. Numquam factum est. Nōn tacēs?
+(701)  SOSIA SERVUS: quid sī ē portū nāvis hūc nōs dormientīs dētulit?
+(702)  AMPHITRUO DUX: Etiam tū quoque assentāris hūic? Quid vīs fīerī?
+(703)  SOSIA SERVUS: nōn tū scīs? Bacchae bacchantī sī velis adversārier,
+(704)  SOSIA SERVUS: ex īnsānā īnsāniōrem faciēs, feriet saepius;
+(705)  SOSIA SERVUS: sī obsequāre, ūnā resolvās plāgā. At pol quī certa rēs
+(706)  AMPHITRUO DUX: hanc est objūrgāre, quae mē hodiē advenientem domum
+(707)  AMPHITRUO DUX: nōluerit salūtāre. Irrītābis crābrōnēs. Tacē.
+(708)  AMPHITRUO DUX: Alcumēna, ūnum rogāre tē volō. Quidvīs rogā.
+(709)  AMPHITRUO DUX: Num tibi aut stultitia accessit aut superat superbia?
+(710)  ALCUMENA MATRONA: Qui istūc in mentemst tibi ex mē, mī vir, percontārier?
+(711)  AMPHITRUO DUX: Quia salūtāre advenientem mē solēbās antidhāc,
+(712)  AMPHITRUO DUX: appellāre, itidem ut pudīcae suōs virōs quae sunt solent.
+(713)  AMPHITRUO DUX: eō mōre expertem tē factam adveniēns offendī domī.
+(714)  ALCUMENA MATRONA: Ēcastor equidem tē certō heri advenientem īlicō,
+(715)  ALCUMENA MATRONA: et salūtāvī et valuissēsne usque exquīsīvī simul,
+(716)  ALCUMENA MATRONA: mī vir, et manum prehendī et ōsculum tetulī tibi.
+(717)  SOSIA SERVUS: Tūn heri hunc salūtāvistī? Et tē quoque etiam, Sōsia.
+(718)  SOSIA SERVUS: Amphitruō, spērāvī ego istam tibi paritūram fīlium;
+(719)  SOSIA SERVUS: vērum nōn est puerō gravida. Quid igitur? Īnsāniā.
+(720)  ALCUMENA MATRONA: Equidem sāna sum et deōs quaesō, ut salva pariam fīlium.
+(721)  ALCUMENA MATRONA: vērum tū malum magnum habēbis, sī hic suum officium facit:
+(722)  ALCUMENA MATRONA: ob istūc ōmen, ōminātor, capiēs quod tē condecet.
+(723)  SOSIA SERVUS: Enim vērō praegnātī oportet et malum et mālum darī,
+(724)  SOSIA SERVUS: ut quod obrōdat sit, animō sī male esse occēperit.
+(725)  AMPHITRUO DUX: Tū mē heri hīc vīdistī? Ego, inquam, sī vīs deciēns dīcere.
+(726)  AMPHITRUO DUX: In somnīs fortasse? Immō vigilāns vigilantem. Vae mihi.
+(727)  SOSIA SERVUS: Quid tibi est? Dēlīrat uxor. Ātrā bīlī percita est.
+(728)  SOSIA SERVUS: nūlla rēs tam dēlīrantīs hominēs concinnat cito.
+(729)  AMPHITRUO DUX: Ubi prīmum tibī sēnsistī, mulier, implicīscier?
+(730)  ALCUMENA MATRONA: Equidem ēcastor sāna et salva sum. Cūr igitur praedicās,
+(731)  AMPHITRUO DUX: te herī mē vīdisse, quī hāc noctū in portum advectī sumus?
+(732)  AMPHITRUO DUX: ibi cēnāvī atque ibi quiēvī in nāvī noctem perpetem,
+(733)  AMPHITRUO DUX: neque meum pedem hūc tetulī etiam in aedīs, ut cum exercitū
+(734)  AMPHITRUO DUX: hinc profectus sum ad Tēloboās hostīs eōsque ut vīcimus.
+(735)  ALCUMENA MATRONA: Immo mēcum cēnāvistī et mēcum cubuistī. Quid est?
+(736)  ALCUMENA MATRONA: Vēra dīcō. Nōn quidem hercle dē hāc rē; de aliīs nesciō.
+(737)  ALCUMENA MATRONA: Prīmulō dīlūculō abiistī ad legiōnēs. Quō modō?
+(738)  SOSIA SERVUS: Rēctē dīcit, ut commeminit: somnium nārrat tibi.
+(739)  SOSIA SERVUS: sed, mulier, postquam experrēcta ēs, tē prōdigiālī Jovī
+(740)  SOSIA SERVUS: aut molā salsā hodiē aut tūre comprecātam oportuit.
+(741)  ALCUMENA MATRONA: Vae capitī tuō. Tuā istūc rēfert, sī cūrāverīs.
+(742)  ALCUMENA MATRONA: Iterum jam hic in mē inclēmenter dīcit, atque id sine malō.
+(743)  AMPHITRUO DUX: Tace tū. tū dīc: egone abs tē abiī hinc hodiē cum dīlūculō?
+(744)  ALCUMENA MATRONA: Quis igitur nisi vōs nārrāvit mī, illī ut fuerit proelium?
+(745)  AMPHITRUO DUX: An etiam id tū scīs? Quippe quī ex tē audīvī, ut urbem maximam
+(746)  ALCUMENA MATRONA: expugnāvissēs rēgemque Pterelam tūtē occīderīs.
+(747)  AMPHITRUO DUX: Egone istūc dīxī? Tūtē istic, etiam astante hōc Sōsiā.
+(748)  AMPHITRUO DUX: Audīvistīn tū mē nārrāre haec hodiē? Ubi ego audīverim?
+(749)  AMPHITRUO DUX: Hanc rogā. Mē quidem praesente numquam factum est, quod sciam.
+(750)  ALCUMENA MATRONA: Mīrum quīn tē adversus dīcat. Sōsia, age mē hūc aspice.
+(751)  SOSIA SERVUS: Spectō. Vēra volo loquī tē, nōlō assentārī mihi.
+(752)  AMPHITRUO DUX: audīvistīn tū hodiē mē illī dīcere ea quae illa autumat?
+(753)  SOSIA SERVUS: Quaesō edepol, num tū quoque etiam īnsānīs, cum id mē interrogās,
+(754)  SOSIA SERVUS: quī ipsus equidem nunc prīmum istanc tēcum cōnspiciō simul?
+(755)  AMPHITRUO DUX: Quid nunc, mulier? audīn illum? Ego vērō, ac falsum dīcere.
+(756)  AMPHITRUO DUX: Neque tū illī neque mihi virō ipsī crēdis? Eō fit quia mihi
+(757)  ALCUMENA MATRONA: plūrimum crēdō et sciō istaec facta proinde ut prōloquor.
+(758)  AMPHITRUO DUX: Tūn mē heri advēnisse dīcis? Tūn tē abiisse hodiē hinc negās?
+(759)  AMPHITRUO DUX: Negō enim vērō, et mē advenīre nunc prīmum ajō ad tē domum.
+(760)  ALCUMENA MATRONA: Obsecrō, etiamne hoc negābis, tē auream pateram mihi
+(761)  ALCUMENA MATRONA: dedisse dōnō hodiē, quā tē illī dōnātum esse dīxerās?
+(762)  AMPHITRUO DUX: Neque edepol dedī neque dīxī; vērum ita animātus fuī
+(763)  AMPHITRUO DUX: itaque nunc sum, ut eā tē paterā dōnem. sed quis istūc tibi
+(764)  AMPHITRUO DUX: dīxit? Ego equidem ex tē audīvī et ex tuā accēpī manū
+(765)  ALCUMENA MATRONA: pateram. Mane, mane, obsecrō tē. nimis dēmīror, Sōsia,
+(766)  AMPHITRUO DUX: qui illaec illīc mē dōnātum esse aureā paterā sciat,
+(767)  AMPHITRUO DUX: nisi tū dūdum hanc convēnistī et nārrāvistī haec omnia.
+(768)  SOSIA SERVUS: Neque edepol ego dīxī neque istam vīdī nisi tēcum simul.
+(769)  AMPHITRUO DUX: Quid hoc sit hominis? Vīn prōferrī pateram? Prōferrī volō.
+(770)  ALCUMENA MATRONA: Fīat. Ī tū, Thessala, intus pateram prōfertō forās,
+(771)  ALCUMENA MATRONA: quā hodiē meus vir dōnāvit mē. Sēcēde hūc tū, Sōsia,
+(772)  AMPHITRUO DUX: enim vērō illud praeter alia mīra mīror maximē,
+(773)  AMPHITRUO DUX: sī haec habet illam. An etiam crēdis id, quae in hāc cistellulā
+(774)  SOSIA SERVUS: tuō signō obsignāta fertur? Salvum signum est? Īnspice.
+(775)  AMPHITRUO DUX: Rēctē, ita est ut obsignāvī. Quaesō, quīn tū istanc jubēs
+(776)  SOSIA SERVUS: prō cerrītā circumferrī? Edepol quī factō est opus;
+(777)  AMPHITRUO DUX: nam haec quidem edepol lāruārum plēnast. Quid verbīs opust?
+(778)  ALCUMENA MATRONA: em tibi pateram, eccam. Cedo mī. Age aspice hūc sīs nūnciam
+(779)  ALCUMENA MATRONA: tū quī quae facta īnfitiāre; quem ego jam hīc convincam palam.
+(780)  ALCUMENA MATRONA: estne haec patera, quā dōnātu's illī? Summe Juppiter,
+(781)  AMPHITRUO DUX: quid ego videō? haec east profectō patera. periī, Sōsia.
+(782)  SOSIA SERVUS: Aut pol haec praestīgiātrīx multō mulier maxima est
+(783)  SOSIA SERVUS: aut pateram hīc inesse oportet. Agedum, exsolve cistulam.
+(784)  SOSIA SERVUS: Quid ego istam exsolvam? obsignātast rēctē, rēs gesta est bene:
+(785)  SOSIA SERVUS: tū peperistī Amphitruōnem alium, alium ego peperī Sōsiam;
+(786)  SOSIA SERVUS: nunc sī patera pateram peperit, omnēs congemināvimus.
+(787)  AMPHITRUO DUX: Certum est aperīre atque īnspicere. Vide sīs signī quid siet,
+(788)  SOSIA SERVUS: nē posterius in mē culpam cōnferās. Aperī modo;
+(789)  AMPHITRUO DUX: nam haec quidem nōs dēlīrantīs facere dictīs postulat.
+(790)  ALCUMENA MATRONA: Unde haec igitur est nisi abs tē quae mihī dōnō data est?
+(791)  AMPHITRUO DUX: Opus mī est istūc exquīsītō. Juppiter, prō Juppiter.
+(792)  AMPHITRUO DUX: Quid tibi est? Hīc patera nūlla in cistulāst. Quid ego audiō?
+(793)  SOSIA SERVUS: Id quod vērumst. At cum cruciātū jam, nisi appāret, tuō.
+(794)  ALCUMENA MATRONA: Haec quidem appāret. Quis igitur tibi dedit? Quī mē rogat.
+(795)  SOSIA SERVUS: Mē captās, quia tūtē ab nāvī clanculum hūc aliā viā
+(796)  SOSIA SERVUS: praecucurristī, atque hinc pateram tūtē exēmistī atque eam
+(797)  SOSIA SERVUS: huic dedistī, post hanc rūrsum obsignāstī clanculum.
+(798)  AMPHITRUO DUX: Ei mihī, jam tū quoque hujus adjuvās īnsāniam?
+(799)  AMPHITRUO DUX: āīn heri nōs advēnisse hūc? Ājō, adveniēnsque īlicō
+(800)  ALCUMENA MATRONA: mē salūtāvistī, et ego tē, et ōsculum tetulī tibi.
+(801)  SOSIA SERVUS: Jam illud nōn placet prīncipium dē ōsculō. Perge exsequī.
+(802)  ALCUMENA MATRONA: Lāvistī. Quid postquam lāvī? Accubuistī. Eugae optimē.
+(803)  SOSIA SERVUS: nunc exquīre. Nē interpellā. perge porrō dīcere.
+(804)  ALCUMENA MATRONA: Cēna apposita est; cēnāvistī mēcum, ego accubuī simul.
+(805)  AMPHITRUO DUX: In eōdem lectō? In eōdem. Ei, nōn placet convīvium.
+(806)  AMPHITRUO DUX: Sine modo argūmenta dīcat. quid postquam cēnāvimus?
+(807)  ALCUMENA MATRONA: Tē dormītāre aibās; mēnsa ablāta est, cubitum hinc abiimus.
+(808)  AMPHITRUO DUX: Ubi tū cubuistī? In eōdem lectō tēcum ūnā in cubiculō.
+(809)  AMPHITRUO DUX: Perdidistī. Quid tibi est? Haec mē modo ad mortem dedit.
+(810)  ALCUMENA MATRONA: Quid jam, amābō? Nē mē appellā. Quid tibi est? Periī miser,
+(811)  AMPHITRUO DUX: quia pudīcitiae hujus vitium mē hinc absente est additum.
+(812)  ALCUMENA MATRONA: Obsecrō ēcastor, cūr istūc, mī vir, ex tēd audiō?
+(813)  AMPHITRUO DUX: Vir ego tuus sim? nē mē appellā, falsa, falsō nōmine.
+(814)  SOSIA SERVUS: Haeret haec rēs, sī quidem haec jam mulier facta est ex virō.
+(815)  ALCUMENA MATRONA: Quid ego fēcī, quā istaec propter dicta dīcantur mihi?
+(816)  AMPHITRUO DUX: Tūtē ēdictās facta tua, ex mē quaeris quid dēlīquerīs.
+(817)  ALCUMENA MATRONA: Quid ego tibi dēlīquī, sī, cui nūpta sum, tēcum fuī?
+(818)  AMPHITRUO DUX: Tūn mēcum fuerīs? quid illāc impudente audācius?
+(819)  AMPHITRUO DUX: saltem, tūte sī pudōris egeās, sūmās mūtuum.
+(820)  ALCUMENA MATRONA: Istūc facinus, quod tū īnsimulās, nostrō generī nōn decet.
+(821)  ALCUMENA MATRONA: tū sī mē impudīcitiāī captās, capere nōn potēs.
+(822)  AMPHITRUO DUX: Prō dī immortālēs, cognōscin tū mē saltem, Sōsia?
+(823)  SOSIA SERVUS: Propemodum. Cēnāvīn ego heri in nāvī in portū Persicō?
+(824)  ALCUMENA MATRONA: Mihi quoque assunt testēs, qui illud quod ego dīcam assentiant.
+(825)  SOSIA SERVUS: Nesciō quid istūc negōtī dīcam, nisi sī quispiam est
+(826)  SOSIA SERVUS: Amphitruō alius, quī forte tēd hinc absentī tamen
+(827)  SOSIA SERVUS: tuam rem cūret tēque absente hīc mūnus fungātur tuum.
+(828)  SOSIA SERVUS: nam cum dē illō subditīvō Sōsiā mīrum nimist,
+(829)  SOSIA SERVUS: certē de istōc Amphitruōne jam alterum mīrum est magis.
+(830)  AMPHITRUO DUX: Nescioquis praestrīgiātor hanc frūstrātur mulierem.
+(831)  ALCUMENA MATRONA: Per suprēmī rēgis rēgnum jūrō et mātrem familiās
+(832)  ALCUMENA MATRONA: Jūnōnem, quam mē verērī et metuere est pār maximē,
+(833)  ALCUMENA MATRONA: ut mī extrā ūnum tē mortālis nēmō corpus corpore
+(834)  ALCUMENA MATRONA: contigit, quō mē impudīcam faceret. Vēra istaec velim.
+(835)  ALCUMENA MATRONA: Vēra dīcō, sed nēquīquam, quoniam nōn vīs crēdere.
+(836)  AMPHITRUO DUX: Mulier ēs, audācter jūrās. Quae nōn dēlīquit, decet
+(837)  ALCUMENA MATRONA: audācem esse, cōnfīdenter prō sē et prōtervē loquī.
+(838)  AMPHITRUO DUX: Satis audācter. Ut pudīcam decet. Enim verbīs probās.
+(839)  ALCUMENA MATRONA: Nōn ego illam mihi dōtem dūcō esse, quae dōs dīcitur,
+(840)  ALCUMENA MATRONA: sed pudīcitiam et pudōrem et sēdātum cupīdinem,
+(841)  ALCUMENA MATRONA: deum metum, parentum amōrem et cognātum concordiam,
+(842)  ALCUMENA MATRONA: tibi mōrigera atque ut mūnifica sim bonīs, prōsim probīs.
+(843)  SOSIA SERVUS: Ne ista edepol, sī haec vēra loquitur, examussim est optima.
+(844)  AMPHITRUO DUX: Dēlēnītus sum profectō ita, ut mē quī sim nesciam.
+(845)  SOSIA SERVUS: Amphitruō ēs profectō, cave sīs nē tū tē ūsū perduīs:
+(846)  SOSIA SERVUS: ita nunc hominēs immūtantur, postquam peregrē advēnimus.
+(847)  AMPHITRUO DUX: Mulier, istam rem inquīsītam certum est nōn āmittere.
+(848)  ALCUMENA MATRONA: Edepol mē libente faciēs. Quid ais? respondē mihi,
+(849)  AMPHITRUO DUX: quid sī addūcō tuum cognātum hūc ā nāvī Naucratem,
+(850)  AMPHITRUO DUX: quī mēcum ūnā vectust ūnā nāvī, atque is sī dēnegat
+(851)  AMPHITRUO DUX: facta quae tū facta dīcis, quid tibi aequum est fīerī?
+(852)  AMPHITRUO DUX: numquid causam dīcis, quīn tē hōc multem mātrimōniō?
+(853)  ALCUMENA MATRONA: Sī dēlīquī, nūlla causa est. Convenit. tū, Sōsia,
+(854)  AMPHITRUO DUX: dūc hōs intrō. ego hūc ab nāvī mēcum addūcam Naucratem.
+(855)  SOSIA SERVUS: Nunc quidem praeter nōs nēmō est. dīc mihi vērum sēriō:
+(856)  SOSIA SERVUS: ecquis alius Sōsia intust, quī meī similis siet?
+(857)  ALCUMENA MATRONA: Abin hinc ā mē dignus dominō servus? Abeō, sī jubēs.
+(858)  ALCUMENA MATRONA: Nimis ēcastor facinus mīrum est, quī illī collibitum siet
+(859)  ALCUMENA MATRONA: meō virō sīc mē īnsimulāre falsō facinus tam malum.
+(860)  ALCUMENA MATRONA: quidquid est, jam ex Naucratē cognātō id cognōscam meō.
+(861y) === Akt III ===
+(861x) == Szene Iii.i ==
+(861)  IUPPITER DEUS: Egō sum ille Amphitruō, cui est servus Sōsia
+(862)  IUPPITER DEUS: īdem Mercurius quī fit, quandō commodumst,
+(863)  IUPPITER DEUS: in superiōre qui habitō cēnāculō,
+(864)  IUPPITER DEUS: quī interdum fīō Juppiter, quandō libet;
+(865)  IUPPITER DEUS: hūc autem cum extemplō adventum apportō, īlicō
+(866)  IUPPITER DEUS: Amphitruō fīō et vestītum immūtō meum.
+(867)  IUPPITER DEUS: nunc hūc honōris vestrī veniō grātiā,
+(868)  IUPPITER DEUS: nē hanc incohātam trānsigam cōmoediam;
+(869)  IUPPITER DEUS: simul Alcumēnae, quam vir īnsontem probrī
+(870)  IUPPITER DEUS: Amphitruō accūsat, vēnī ut auxilium feram:
+(871)  IUPPITER DEUS: nam mea sit culpa, quod egomet contrāxerim,
+(872)  IUPPITER DEUS: sī id Alcumēnae innocentī expetat.
+(873)  IUPPITER DEUS: nunc Amphitruōnem mēmet, ut occēpī semel,
+(874)  IUPPITER DEUS: esse assimulābō, atque in hōrum familiam
+(875)  IUPPITER DEUS: frūstrātiōnem hodiē iniciam maximam;
+(876)  IUPPITER DEUS: post igitur dēmum faciam rēs fīat palam
+(877)  IUPPITER DEUS: atque Alcumēnae in tempore auxilium feram
+(878)  IUPPITER DEUS: faciamque ut ūnō fētū et quod gravida est virō
+(879)  IUPPITER DEUS: et mē quod gravidast pariat sine dolōribus.
+(880)  IUPPITER DEUS: Mercurium jussī mē continuō cōnsequī,
+(881)  IUPPITER DEUS: sī quid vellem imperāre. nunc hanc alloquar.
+(882x) == Szene Iii.ii ==
+(882)  ALCUMENA MATRONA: Dūrāre nequeō in aedibus. ita mē probrī,
+(883)  ALCUMENA MATRONA: stuprī, dēdecoris ā virō argūtam meō!
+(884)  ALCUMENA MATRONA: ea quae sunt facta īnfecta rē esse clāmitat,
+(885)  ALCUMENA MATRONA: quae neque sunt facta neque ego in mē admīsī arguit;
+(886)  ALCUMENA MATRONA: atque id mē sūsque dēque esse habitūram putat.
+(887)  ALCUMENA MATRONA: nōn edepol faciam, neque mē perpetiar probrī
+(888)  ALCUMENA MATRONA: falsō īnsimulātam, quīn ego illum aut dēseram
+(889)  ALCUMENA MATRONA: aut satis faciat mī ille atque adjūret īnsuper,
+(890)  ALCUMENA MATRONA: nōlle esse dicta quae in mē īnsontem prōtulit.
+(891)  IUPPITER DEUS: Faciundum est mī illud, fierī quod illaec postulat,
+(892)  IUPPITER DEUS: sī mē illam amantem ad sēsē studeam recipere,
+(893)  IUPPITER DEUS: quandō ego quod fēcī, id factum Amphitruōnī offuit
+(894)  IUPPITER DEUS: atque illī dūdum meus amor negōtium
+(895)  IUPPITER DEUS: īnsontī exhibuit, nunc autem īnsontī mihi
+(896)  IUPPITER DEUS: illīus īra in hanc et male dicta expetent.
+(897)  ALCUMENA MATRONA: Sed eccum videō quī mē miseram arguit
+(898)  ALCUMENA MATRONA: stuprī, dēdecoris. Tē volō, uxor, colloquī.
+(899)  IUPPITER DEUS: quō tē āvertistī? Ita ingenī ingenium meumst:
+(900)  ALCUMENA MATRONA: inimīcōs semper ōsa sum optuērier.
+(901)  IUPPITER DEUS: Heia autem inimīcōs? Sīc est, vēra praedicō;
+(902)  ALCUMENA MATRONA: nisi etiam hoc falsō dīcī īnsimulātūrus ēs.
+(903)  IUPPITER DEUS: Nimis īrācunda ēs. Potin ut abstineās manum?
+(904)  ALCUMENA MATRONA: nam certō, sī sīs sānus aut sapiās satis,
+(905)  ALCUMENA MATRONA: quam tū impudīcam esse arbitrēre et praedicēs,
+(906)  ALCUMENA MATRONA: cum eā tū sermōnem nec jocō nec sēriō
+(907)  ALCUMENA MATRONA: tibi habeās, nisi sīs stultior stultissimō.
+(908)  IUPPITER DEUS: Sī dīxī, nihilō magis ēs, neque ego esse arbitror,
+(909)  IUPPITER DEUS: et id hūc rēvertī utī mē pūrgārem tibi.
+(910)  IUPPITER DEUS: nam numquam quicquam meō animō fuit aegrius,
+(911)  IUPPITER DEUS: quam postquam audīvī tēd esse īrātam mihi.
+(912)  IUPPITER DEUS: cūr dīxistī? inquiēs. ego expediam tibi.
+(913)  IUPPITER DEUS: nōn edepol quō tē esse impudīcam crēderem;
+(914)  IUPPITER DEUS: vērum perīclitātus sum animum tuum,
+(915)  IUPPITER DEUS: quid facerēs et quō pactō id ferre indūcerēs.
+(916)  IUPPITER DEUS: equidem jocō illa dīxeram dūdum tibi,
+(917)  IUPPITER DEUS: rīdiculī causā. vel hunc rogātō Sōsiam.
+(918)  ALCUMENA MATRONA: Quīn hūc addūcis meum cognātum Naucratem,
+(919)  ALCUMENA MATRONA: testem quem dūdum tē adductūrum dīxerās,
+(920)  ALCUMENA MATRONA: tē hūc nōn vēnisse? Sī quid dictum est per jocum,
+(921)  IUPPITER DEUS: nōn aequum est id tē sēriō praevertier.
+(922)  ALCUMENA MATRONA: Ego illum sciō quam doluerit cordī meō.
+(923)  IUPPITER DEUS: Per dexteram tuam tē, Alcumēna, ōrō obsecrō,
+(924)  IUPPITER DEUS: dā mihi hanc veniam, ignōsce, īrāta nē siēs.
+(925)  ALCUMENA MATRONA: Ego istaec fēcī verba virtūte irrita;
+(926)  ALCUMENA MATRONA: nunc, quandō factīs mē impudīcīs abstinī,
+(927)  ALCUMENA MATRONA: ab impudīcīs dictīs āvertī volō.
+(928)  ALCUMENA MATRONA: valeās, tibi habeās rēs tuās, reddās meās.
+(929)  ALCUMENA MATRONA: juben mī īre comitēs? Sānan ēs? Sī nōn jubēs,
+(930)  ALCUMENA MATRONA: ībō egomet; comitem mihi Pudicitiam dūxerō.
+(931)  IUPPITER DEUS: Manē. arbitrātū tuō jūs jūrandum dabō,
+(932)  IUPPITER DEUS: mē meam pudīcam esse uxōrem arbitrārier.
+(933)  IUPPITER DEUS: id ego sī fallō, tum tē, summe Juppiter,
+(934)  IUPPITER DEUS: quaesō, Amphitruōnī ut semper īrātus siēs.
+(935)  ALCUMENA MATRONA: Ā, propitius sit potius. Cōnfīdō fore;
+(936)  IUPPITER DEUS: nam jūs jūrandum vērum tē adversum dedī.
+(937)  IUPPITER DEUS: jam nunc īrāta nōn ēs? Nōn sum. Bene facis.
+(938)  IUPPITER DEUS: nam in hominum aetāte multa ēveniunt hujus modī:
+(939)  IUPPITER DEUS: capiunt voluptātēs, capiunt rūrsum miseriās;
+(940)  IUPPITER DEUS: īrae interveniunt, redeunt rūrsum in grātiam.
+(941)  IUPPITER DEUS: vērum īrae sī quae forte ēveniunt hujus modī
+(942)  IUPPITER DEUS: inter eōs, rūrsum sī reventum in grātiam est,
+(943)  IUPPITER DEUS: bis tantō amīcī sunt inter sē quam prius.
+(944)  ALCUMENA MATRONA: Prīmum cāvisse oportuit nē dīcerēs,
+(945)  ALCUMENA MATRONA: vērum eadem sī īdem pūrgās mī, patiunda sunt.
+(946)  IUPPITER DEUS: Jube vērō vāsa pūra adōrnārī mihi,
+(947)  IUPPITER DEUS: ut quae apud legiōnem vōta vōvī, sī domum
+(948)  IUPPITER DEUS: rediissem salvus, ea egō exsolvam omnia.
+(949)  ALCUMENA MATRONA: Ego istūc cūrābō. Ēvocāte hūc Sōsiam;
+(950)  IUPPITER DEUS: gubernātōrem quī in meā nāvī fuit
+(951)  IUPPITER DEUS: Blepharōnem arcessat, quī nōbīscum prandeat.
+(952)  IUPPITER DEUS: is adeō imprānsus lautē lūdificābitur,
+(953)  IUPPITER DEUS: cum ego Amphitruōnem collō hinc obstrictō traham.
+(954)  ALCUMENA MATRONA: Mīrum quid sōlus sēcum sēcrētō ille agat.
+(955)  ALCUMENA MATRONA: atque aperiuntur aedēs. exit Sōsia.
+(956x) == Szene Iii.iii ==
+(956)  SOSIA SERVUS: Amphitruō, assum. sī quid opus est, imperā, imperium exsequar.
+(957)  IUPPITER DEUS: Sōsia, optumē advenīs. Jam pāx est inter vōs duōs?
+(958)  SOSIA SERVUS: nam quia vōs tranquillōs videō, gaudeō et volup est mihi.
+(959)  SOSIA SERVUS: atque ita servum pār vidētur frūgī sēsē īnstituere:
+(960)  SOSIA SERVUS: proinde erī ut sint, ipse item sit; vultum ē vultū comparet:
+(961)  SOSIA SERVUS: trīstis sit, sī erī sint trīstēs; hilarus sit, sī gaudeant.
+(962)  SOSIA SERVUS: sed age respondē: jam vōs rediistis in concordiam?
+(963)  IUPPITER DEUS: Dērīdēs, quī scīs haec dūdum mē dīxisse per jocum.
+(964)  SOSIA SERVUS: An id jocō dīxistī? equidem sēriō ac vērō ratus.
+(965)  IUPPITER DEUS: Habuī expūrigātiōnem; facta pāx est. Optumē est.
+(966)  IUPPITER DEUS: Ego rem dīvīnam intus faciam, vōta quae sunt. Cēnseō.
+(967)  IUPPITER DEUS: Tū gubernātōrem ā nāvī hūc ēvocā verbīs meīs
+(968)  IUPPITER DEUS: Blepharōnem, utī rē dīvīnā factā mēcum prandeat.
+(969)  SOSIA SERVUS: Jam hīc erō, cum illīc cēnsēbis esse mē. Āctūtum hūc redī.
+(970)  ALCUMENA MATRONA: Numquid vīs, quīn abeam jam intrō, ut appārentur quibus opust?
+(971)  IUPPITER DEUS: Ī sānē, et quantum potest parāta fac sint omnia.
+(972)  ALCUMENA MATRONA: Quīn venīs quandō vīs intrō? faxo hau quicquam sit morae.
+(973)  IUPPITER DEUS: Rēctē loquere et proinde dīligentem ut uxōrem decet.
+(974)  IUPPITER DEUS: jam hīsce ambō, et servus et era, frūstrā sunt duo,
+(975)  IUPPITER DEUS: quī mē Amphitruōnem rentur esse: errant probē.
+(976)  IUPPITER DEUS: nunc tū dīvīne hūc fac assīs Sōsia,
+(977)  IUPPITER DEUS: audīs quae dīcō, tametsī praesēns nōn adēs,
+(978)  IUPPITER DEUS: fac Amphitruōnem advenientem ab aedibus
+(979)  IUPPITER DEUS: ut abigās; quōvīs pactō fac commentus sīs.
+(980)  IUPPITER DEUS: volo dēlūdī illunc, dum cum hāc ūsūrāriā
+(981)  IUPPITER DEUS: uxōre nunc mihi mōrigerō. haec cūrāta sint
+(982)  IUPPITER DEUS: fac sīs, proinde adeō ut velle mēd intellegis,
+(983)  IUPPITER DEUS: atque ut ministrēs mihi, mihī cum sacruficem.
+(984x) == Szene Iii.iv ==
+(984)  MERCURIUS DEUS: Concēdite atque abscēdite omnēs, dē viā dēcēdite,
+(985)  MERCURIUS DEUS: nec quisquam jam tam audāx fuāt homo, quī obviam obsistat mihi.
+(986)  MERCURIUS DEUS: nam mihi quidem hercle quī minus liceat deō minitārier
+(987)  MERCURIUS DEUS: populō, nī dēcēdat mihī, quam servolō in cōmoediīs?
+(988)  MERCURIUS DEUS: ille nāvem salvam nūntiāt aut īrātī adventum senis:
+(989)  MERCURIUS DEUS: ego sum Jovī dictō audiēns, ejus jussū nunc hūc mē afferō.
+(990)  MERCURIUS DEUS: quam ob rem mihi magis pār est viā dēcēdere et concēdere.
+(991)  MERCURIUS DEUS: pater vocat mē, eum sequor, ejus dictō imperiō sum audiēns;
+(992)  MERCURIUS DEUS: ut fīlium bonum patrī esse oportet, itidem ego sum patrī.
+(993)  MERCURIUS DEUS: amantī supparasītor, hortor, astō, admoneō, gaudeō.
+(994)  MERCURIUS DEUS: sī quid patrī volup est, voluptās ea mī multō maximast.
+(995)  MERCURIUS DEUS: amat: sapit; rēctē facit, animō quandō obsequitur suō,
+(996)  MERCURIUS DEUS: quod omnīs hominēs facere oportet, dum id modō fīat bonō.
+(997)  MERCURIUS DEUS: nunc Amphitruōnem vult dēlūdī meus pater: faxō probē
+(998)  MERCURIUS DEUS: jam hic dēlūdētur, spectātōrēs, vōbīs īnspectantibus.
+(999)  MERCURIUS DEUS: capiam corōnam mī in caput, assimulābō mē esse ēbrium;
+(1000)  MERCURIUS DEUS: atque illūc sūrsum ēscenderō: inde optumē aspellam virum
+(1001)  MERCURIUS DEUS: dē superō, cum hūc accesserit; faciam ut sit madidus sōbrius.
+(1002)  MERCURIUS DEUS: deinde illī āctūtum sufferet suus servus poenās Sōsia:
+(1003)  MERCURIUS DEUS: eum fēcisse ille hodiē arguet quae ego fēcerō hīc. quid meā?
+(1004)  MERCURIUS DEUS: meō mē aequumst mōrigerum patrī, ejus studiō servīre addecet.
+(1005)  MERCURIUS DEUS: sed eccum Amphitruōnem, advenit; jam ille hīc dēlūdētur probē,
+(1006)  MERCURIUS DEUS: siquidem vōs vultis auscultandō operam dare.
+(1007)  MERCURIUS DEUS: ībō intrō, ōrnātum capiam quī pōtīs decet;
+(1008)  MERCURIUS DEUS: dein sursum ascendam in tēctum, ut illum hinc prohibeam.
+(1009y) === Akt IV ===
+(1009x) == Szene Iv.i ==
+(1009)  AMPHITRUO DUX: Naucratem quem convenīre voluī, in nāvī nōn erat,
+(1010)  AMPHITRUO DUX: neque domī neque in urbe inveniō quemquam quī illum vīderit.
+(1011)  AMPHITRUO DUX: nam omnīs plateās perreptāvī, gymnasia et myropōlia;
+(1012)  AMPHITRUO DUX: apud emporium atque in macellō, in palaestrā atque in forō,
+(1013)  AMPHITRUO DUX: in medicīnīs, in tōnstrīnīs, apud omnīs aedīs sacrās
+(1014)  AMPHITRUO DUX: sum dēfessus quaeritandō: nusquam inveniō Naucratem.
+(1015)  AMPHITRUO DUX: nunc domum ībō atque ex uxōre hanc rem pergam exquīrere,
+(1016)  AMPHITRUO DUX: quis fuerit quem propter corpus suum stuprī complēverit.
+(1017)  AMPHITRUO DUX: nam mē, quam illam quaestiōnem inquīsītam hodiē āmittere,
+(1018)  AMPHITRUO DUX: mortuum satiust. sed aedīs occlūsērunt. eugepae,
+(1019)  AMPHITRUO DUX: pariter hoc fit atque ut alia facta sunt. feriam forīs.
+(1020)  AMPHITRUO DUX: aperīte hoc. heus, ecquis hīc est? ecquis hoc aperit ōstium?
+(1021x) == Szene Iv.ii ==
+(1021)  MERCURIUS DEUS: Quis ad forēs est? Ego sum. Quid ‘ego sum’? Ita loquor. Tibi Juppiter
+(1022)  MERCURIUS DEUS: dīque omnēs īrātī certō sunt, quī sīc frangās forēs.
+(1023)  AMPHITRUO DUX: Quō modō? Eō modō, ut profectō vīvās aetātem miser.
+(1024)  AMPHITRUO DUX: Sōsia. Ita, sum Sōsia, nisi mē esse oblītum exīstimās.
+(1025)  MERCURIUS DEUS: quid nunc vīs? Sceleste, at etiam quid velim, id tū mē rogās?
+(1026)  MERCURIUS DEUS: Ita, rogō. paene effrēgistī, fatue, foribus cardinēs.
+(1027)  MERCURIUS DEUS: an forīs cēnsēbās nōbīs pūblicitus praebērier?
+(1028)  MERCURIUS DEUS: quid mē aspectās, stolide? quid nunc vīs tibi? aut quis tū ēs homō?
+(1029)  AMPHITRUO DUX: Verberō, etiam quis ego sim mē rogitās, ulmōrum Ācherūns?
+(1030)  AMPHITRUO DUX: quem pol ego hodiē ob istaec dicta faciam ferventem flagrīs.
+(1031)  MERCURIUS DEUS: Prōdigum tē fuisse oportet ōlim in adulēscentiā.
+(1032)  AMPHITRUO DUX: Quīdum? Quia senectā aetāte ā mē mendīcās malum.
+(1033)  AMPHITRUO DUX: Cum cruciātū tuō istaec hodiē, verna, verba funditās.
+(1034)  MERCURIUS DEUS: Sacruficō egō tibī. Quī? Quia enim tē mactō īnfortūniō.
+(1034a)  AMPHITRUO DUX: At ego tē cruce et cruciātū mactābō, mastīgia.
+(1034b)  MERCURIUS DEUS: Erus Amphitruōst occupātus.
+(1034c)  MERCURIUS DEUS: abiendī nunc tibi etiam occāsiōst.
+(1034d)  MERCURIUS DEUS: Optimō jūre īnfringātur aula cineris in caput.
+(1034e)  MERCURIUS DEUS: Nē tū postulēs matulam ūnam tibi aquāī īnfundī in caput.
+(1034f)  MERCURIUS DEUS: Laruatu's. edepol hominem miserum. medicum quaeritā.
+(1034g)  ALCUMENA MATRONA: Exjūrāvistī tē mihi dīxe per jocum.
+(1035)  ALCUMENA MATRONA: Quaesō advenientī morbō medicārī jubē:
+(1036)  ALCUMENA MATRONA: tū certē aut lāruātus aut cerrītus ēs.
+(1037)  ALCUMENA MATRONA: Nisi hoc ita factum est, proinde ut factum esse autumō,
+(1038)  ALCUMENA MATRONA: nōn causam dīcō quīn vērō īnsimulēs probrī
+(1039)  AMPHITRUO DUX: Cujus? quae mē absente corpus vulgāvit suum.
+(1040)  AMPHITRUO DUX: Quid minitābās tē factūrum, sī istās pepulissem forēs?
+(1041)  AMPHITRUO DUX: Ibi scrobēs effoditō tū plūs sexāgēnōs in diēs.
+(1042)  AMPHITRUO DUX: Nōlī pessimae precārī.
+(1043)  BLEPHARO GUBERNATOR: animam comprime
+(1044)  IUPPITER DEUS: Manifēstum hunc optortō collō teneō fūrem flāgitī.
+(1045)  AMPHITRUO DUX: Immō ego hunc, Thēbānī cīvēs, quī domī uxōrem meam
+(1046)  AMPHITRUO DUX: impudīcitiā impedīvit, teneō, thēnsaurum stuprī.
+(1047)  AMPHITRUO DUX: Nīlne tē pudet, sceleste, populī in cōnspectum ingredī?
+(1048)  AMPHITRUO DUX: clandestīnō
+(1049)  AMPHITRUO DUX: Quī nequeās nostrōrum uter sit Amphitruō dēcernere.
+(1035x) == Szene Iv.iii ==
+(1035)  BLEPHARO GUBERNATOR: Vōs inter vōs partīte; ego abeō, mihī negōtium est;
+(1036)  BLEPHARO GUBERNATOR: neque ego umquam usquam tanta mīra mē vīdisse cēnseō.
+(1037)  AMPHITRUO DUX: Blepharō, quaesō ut advocātus mī assīs nēve abeās. Valē.
+(1038)  BLEPHARO GUBERNATOR: quid opust mē advocātō, qui utrī sim advocātus nesciō?
+(1039)  IUPPITER DEUS: Intrō ego hinc eō. Alcumēna parturit. Periī miser.
+(1040)  AMPHITRUO DUX: quid ego faciam, quem advocātī jam atque amīcī dēserunt?
+(1041)  AMPHITRUO DUX: numquam edepol mē inultus istic lūdificābit, quisquis est;
+(1042)  AMPHITRUO DUX: jam ad rēgem rēctā mē dūcam rēsque ut facta est ēloquar.
+(1043)  AMPHITRUO DUX: ego pol illum ulcīscar hodiē Thessalum venēficum,
+(1044)  AMPHITRUO DUX: quī perversē perturbāvit familiae mentem meae.
+(1045)  AMPHITRUO DUX: sed ubi illest? intrō edepol abiit, crēdō ad uxōrem meam.
+(1046)  AMPHITRUO DUX: quī mē Thēbīs alter vīvit miserior? quid nunc agam,
+(1047)  AMPHITRUO DUX: quem omnēs mortālēs ignōrant et lūdificant ut libet.
+(1048)  AMPHITRUO DUX: certumst, intrō rumpam in aedīs: ubi quemque hominem aspexerō,
+(1049)  AMPHITRUO DUX: sī ancillam seu servum sīve uxōrem sīve adulterum
+(1050)  AMPHITRUO DUX: seu patrem sīve avum vidēbō, obtruncābō in aedibus.
+(1051)  AMPHITRUO DUX: neque mē Juppiter neque dī omnēs id prohibēbunt, sī volent,
+(1052)  AMPHITRUO DUX: quīn sīc faciam utī cōnstituī. pergam in aedīs nūnciam.
+(1053y) === Akt V ===
+(1053x) == Szene V.i ==
+(1053)  BROMIA ANCILLA: Spēs atque opēs vītae meae jacent sepultae in pectore,
+(1054)  BROMIA ANCILLA: neque ūllast cōnfīdentia jam in corde, quīn āmīserim;
+(1055)  BROMIA ANCILLA: ita mihi videntur omnia, mare terrā caelum, cōnsequī,
+(1056)  BROMIA ANCILLA: jam ut opprimar, ut ēnicer. mē miseram, quid agam nesciō.
+(1057)  BROMIA ANCILLA: ita tanta mīra in aedibus sunt facta. vae miserae mihi,
+(1058)  BROMIA ANCILLA: animō malēst, aquam velim. corrupta sum atque absūmpta sum.
+(1059)  BROMIA ANCILLA: caput dolet, neque audiō, nec oculīs prōspiciō satis,
+(1060)  BROMIA ANCILLA: nec mē miserior fēmina est neque ūlla videātur magis.
+(1061)  BROMIA ANCILLA: ita erae meae hodiē contigit. nam ubi parturit, deōs invocat,
+(1062)  BROMIA ANCILLA: strepitus, crepitus, sonitus, tonitrus: ut subitō, ut prope, ut validē tonuit!
+(1063)  BROMIA ANCILLA: ubi quisque īnstiterat, concidit crepitū. ibi nescioquis maxima
+(1064)  BROMIA ANCILLA: vōce exclāmat: ‘Alcumēna, adest auxilium, nē timē:
+(1065)  BROMIA ANCILLA: et tibi et tuīs propitius caelī cultor advenit.
+(1066)  BROMIA ANCILLA: exsurgite’ inquit ‘quī terrōre meō occīdistis prae metū.’
+(1067)  BROMIA ANCILLA: ut jacuī, exsurgō. ārdēre cēnsuī aedīs, ita tum cōnfulgēbant.
+(1068)  BROMIA ANCILLA: ibi mē inclāmat Alcumēna; jam ea rēs mē horrōre afficit,
+(1069)  BROMIA ANCILLA: erilis praevertit metus: accurrō, ut scīscam quid velit.
+(1070)  BROMIA ANCILLA: atque illam geminōs fīliōs puerōs peperisse cōnspicor;
+(1071)  BROMIA ANCILLA: neque nostrum quisquam sēnsimus, cum peperit, neque prōvīdimus.
+(1072)  BROMIA ANCILLA: sed quid hoc? quis hic est senex, quī ante aedīs nostrās sīc jacet?
+(1073)  BROMIA ANCILLA: numnam hunc percussit Juppiter?
+(1074)  BROMIA ANCILLA: crēdō edepol, nam, prō Juppiter, sepultust quasi sit mortuus.
+(1075)  BROMIA ANCILLA: ībō et cognōscam, quisquis est. Amphitruō hic quidem est erus meus.
+(1076)  BROMIA ANCILLA: Amphitruō. Periī. Surge. Interiī. Cedo manum. Quis mē tenet?
+(1077)  BROMIA ANCILLA: Tua Bromia ancilla. Totus timeō, ita mēd increpuit Juppiter.
+(1078)  AMPHITRUO DUX: nec secus est, quasi sī ab Ācherunte veniam. sed quid tū forās
+(1079)  AMPHITRUO DUX: ēgressa ēs? Eadem nōs formīdō timidās terrōre impulit
+(1080)  BROMIA ANCILLA: in aedibus, tū ubi habitās. nimia mīra vīdī. vae mihi,
+(1081)  BROMIA ANCILLA: Amphitruō, ita mihi animus etiam nunc abest. Agedum expedī:
+(1082)  AMPHITRUO DUX: scīn mē tuum esse erum Amphitruōnem? Sciō. Vidē etiam nunc. Sciō.
+(1083)  AMPHITRUO DUX: Haec sōla sānam mentem gestat meōrum familiārium.
+(1084)  BROMIA ANCILLA: Immō omnēs sānī sunt profectō. At mē uxor īnsānum facit
+(1085)  AMPHITRUO DUX: suīs foedīs factīs. At ego faciam, tū idem ut aliter praedicēs,
+(1086)  BROMIA ANCILLA: Amphitruō, piam et pudīcam esse tuam uxōrem ut sciās.
+(1087)  BROMIA ANCILLA: dē eā rē signa atque argūmenta paucīs verbīs ēloquar.
+(1088)  BROMIA ANCILLA: omnium prīmum: Alcumēna geminōs peperit fīliōs.
+(1089)  AMPHITRUO DUX: Ain tū, geminōs? Geminōs. Dī mē servant. Sine mē dīcere,
+(1090)  BROMIA ANCILLA: ut sciās tibi tuaeque uxōrī deōs esse omnīs propitiōs.
+(1091)  AMPHITRUO DUX: Loquere. Postquam parturīre hodiē uxor occēpit tua,
+(1092)  BROMIA ANCILLA: ubi uterō exortī dolōrēs, ut solent puerperae
+(1093)  BROMIA ANCILLA: invocat deōs immortālīs, ut sibi auxilium ferant,
+(1094)  BROMIA ANCILLA: manibus pūrīs, capite opertō. ibi continuō contonat
+(1095)  BROMIA ANCILLA: sonitū maxumō; aedīs prīmō ruere rēbāmur tuās.
+(1096)  BROMIA ANCILLA: aedēs tōtae cōnfulgēbant tuae, quasi essent aureae.
+(1097)  AMPHITRUO DUX: Quaesō absolvitō hinc mē extemplō, quandō satis dēlūserīs.
+(1098)  AMPHITRUO DUX: quid fit deinde? Dum haec aguntur, intereā uxōrem tuam
+(1099)  BROMIA ANCILLA: neque gementem neque plōrantem nostrum quisquam audīvimus;
+(1100)  BROMIA ANCILLA: ita profectō sine dolōre peperit. Jam istūc gaudeō,
+(1101)  AMPHITRUO DUX: utut mē ergā merita est. Mitte istaec atque haec quae dīcam accipe.
+(1102)  BROMIA ANCILLA: postquam peperit, puerōs lavere jussit nōs. occēpimus.
+(1103)  BROMIA ANCILLA: sed puer ille quem ego lāvī, ut magnust et multum valet!
+(1104)  BROMIA ANCILLA: neque eum quisquam colligāre quīvit incūnābulīs.
+(1105)  AMPHITRUO DUX: Nimia mīra memorās; sī istaec vēra sunt, dīvīnitus
+(1106)  AMPHITRUO DUX: nōn metuō quīn meae uxōrī lātae suppetiae sient.
+(1107)  BROMIA ANCILLA: Magis jam faxō mīra dīcēs. postquam in cūnās conditust,
+(1108)  BROMIA ANCILLA: dēvolant anguēs jubātae deorsum in impluvium duo
+(1109)  BROMIA ANCILLA: maximae: continuō extollunt ambō capita. Ei mihi.
+(1110)  BROMIA ANCILLA: Nē pavē. sed anguēs oculīs omnīs circumvīsere.
+(1111)  BROMIA ANCILLA: postquam puerōs cōnspicātae, pergunt ad cūnās citae.
+(1112)  BROMIA ANCILLA: ego cūnās recessim rūrsum versum trahere et dūcere,
+(1113)  BROMIA ANCILLA: metuēns puerīs, mihi formīdāns; tantōque anguēs ācrius
+(1114)  BROMIA ANCILLA: persequī. postquam cōnspexit anguīs ille alter puer,
+(1115)  BROMIA ANCILLA: citus ē cūnīs exsilit, facit rēctā in anguīs impetum:
+(1116)  BROMIA ANCILLA: alteram alterā prehendit eās manū pernīciter.
+(1117)  AMPHITRUO DUX: Mīra memorās, nimis formīdolōsum facinus praedicās;
+(1118)  AMPHITRUO DUX: nam mihi horror membra miserō percipit dictīs tuīs.
+(1119)  AMPHITRUO DUX: quid fit deinde? porrō loquere. Puer ambō anguīs ēnicat.
+(1120)  BROMIA ANCILLA: dum haec aguntur, vōce clārā exclāmat uxōrem tuam...
+(1121)  AMPHITRUO DUX: Quis homo? Summus imperātor dīvum atque hominum Juppiter.
+(1122)  BROMIA ANCILLA: is sē dīxit cum Alcumēnā clam cōnsuētum cubitibus,
+(1123)  BROMIA ANCILLA: eumque fīlium suum esse quī illās anguīs vīcerit;
+(1124)  BROMIA ANCILLA: alterum tuum esse dīxit puerum. Pol mē hau paenitet,
+(1125)  AMPHITRUO DUX: sī licet bonī dīmidium mihi dīvidere cum Jove.
+(1126)  AMPHITRUO DUX: abi domum, jube vāsa pūra āctūtum adōrnārī mihi,
+(1127)  AMPHITRUO DUX: ut Jovis suprēmī multīs hostiīs pācem expetam.
+(1128)  AMPHITRUO DUX: ego Tēresiam conjectōrem advocābō et cōnsulam
+(1129)  AMPHITRUO DUX: quid faciendum cēnseat; simul hanc rem ut facta est ēloquar.
+(1130)  AMPHITRUO DUX: sed quid hoc? quam validē tonuit. dī, obsecrō vestram fidem.
+(1131x) == Szene V.ii ==
+(1131)  IUPPITER DEUS: Bonō animō ēs, assum auxiliō, Amphitruō, tibi et tuīs:
+(1132)  IUPPITER DEUS: nihil est quod timeās. hariolōs, haruspicēs
+(1133)  IUPPITER DEUS: mitte omnīs; quae futūra et quae facta ēloquar,
+(1134)  IUPPITER DEUS: multō adeō melius quam illī, cum sum Juppiter.
+(1135)  IUPPITER DEUS: prīmum omnium Alcumēnae ūsūram corporis
+(1136)  IUPPITER DEUS: cēpī, et concubitū gravidam fēcī fīliō.
+(1137)  IUPPITER DEUS: tū gravidam item fēcistī, cum in exercitum
+(1138)  IUPPITER DEUS: prōfectu's: ūnō partū duōs peperit simul.
+(1139)  IUPPITER DEUS: eōrum alter, nostrō quī est susceptus sēmine,
+(1140)  IUPPITER DEUS: suīs factīs tē immortālī afficiet glōriā.
+(1141)  IUPPITER DEUS: tū cum Alcumēnā uxōre antīquam in grātiam
+(1142)  IUPPITER DEUS: redī: hau prōmeruit quam ob rem vitiō verterēs;
+(1143)  IUPPITER DEUS: meā vī subāctast facere. ego in caelum migrō.
+(1144x) == Szene V.iii ==
+(1144)  AMPHITRUO DUX: Faciam ita ut jubēs et tē ōrō, prōmissa ut servēs tua.
+(1145)  AMPHITRUO DUX: ībō ad uxōrem intrō, missum faciō Tēresiam senem.
+(1146)  AMPHITRUO DUX: nunc spectātōrēs Jovis summī causā clārē Plaudite

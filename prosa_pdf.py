@@ -8,8 +8,14 @@ Orchestrator für Prosa (Platon/Aristoteles/Thukydides/…).
 - Wenn Dateipfade als Argumente übergeben werden (sys.argv[1:]),
   verarbeitet er GENAU diese Dateien (egal wo sie liegen).
 
-Erzeugt 12 Varianten pro Input (ohne Versmaß):
-Strength (NORMAL|GR_FETT|DE_FETT) × Color (COLOR|BLACK_WHITE) × Tags (TAGS|NO_TAGS).
+Erzeugt 4 Varianten pro Input:
+- Antike Sprache (GR oder LAT) immer FETT
+- Deutsche Übersetzung(en) immer NORMAL
+- Color (COLOR|BLACK_WHITE) × Tags (TAGS|NO_TAGS)
+
+Die Sprache wird automatisch aus dem Dateinamen erkannt:
+- *_gr_* → GR_FETT
+- *_lat_* → LAT_FETT
 """
 
 from __future__ import annotations
@@ -30,6 +36,80 @@ def _args_or_default() -> list[str]:
         return [str(Path(a)) for a in sys.argv[1:]]
     return _discover_inputs_default()
 
+def _detect_language_from_filename(filename: str) -> str:
+    """
+    Erkennt die Sprache aus dem Dateinamen.
+    - *_gr_* → GR_FETT
+    - *_lat_* → LAT_FETT
+    """
+    filename_lower = filename.lower()
+    if "_lat_" in filename_lower:
+        return "LAT_FETT"
+    elif "_gr_" in filename_lower:
+        return "GR_FETT"
+    else:
+        # Fallback: Wenn nicht erkennbar, verwende GR_FETT
+        print(f"  ⚠ Sprache nicht erkennbar aus Dateinamen, verwende GR_FETT als Fallback")
+        return "GR_FETT"
+
+def _get_default_tag_config(language: str) -> dict:
+    """
+    Erstellt die Standard-Farbkonfiguration für die angegebene Sprache.
+    
+    Griechisch:
+    - Nomen → rot (#)
+    - Verben → grün (-)
+    - Partizipien → purpur/magenta (§)
+    - Infinitive → purpur/magenta (§)
+    - Adjektive → blau (+)
+    
+    Latein:
+    - Nomen (inkl. nur Abl) → rot (#)
+    - Verben → grün (-)
+    - Partizipien → purpur/magenta (§)
+    - Infinitive (Inf) → purpur/magenta (§)
+    - Gerundium (Ger) → purpur/magenta (§)
+    - Gerundivum (Gdv) → purpur/magenta (§)
+    - Supinum (Spn) → purpur/magenta (§)
+    - Adjektive → blau (+)
+    """
+    config = {}
+    
+    # Nomen → rot
+    config['nomen'] = {'color': 'red'}
+    for kasus in ['N', 'G', 'D', 'A', 'V', 'Abl']:  # Abl für Latein
+        config[f'nomen_{kasus}'] = {'color': 'red'}
+    
+    # Verben → grün
+    config['verb'] = {'color': 'green'}
+    for tag in ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'Fu1', 'Fu2', 'Akt', 'Med', 'Pas', 'M/P', 'Op', 'Knj', 'Imv']:  # NEU: Fu1, Fu2
+        config[f'verb_{tag}'] = {'color': 'green'}
+    
+    # Partizipien → purpur/magenta (§)
+    config['partizip'] = {'color': 'magenta'}
+    for tag in ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'Fu1', 'Fu2', 'N', 'G', 'D', 'A', 'V', 'Akt', 'Med', 'Pas', 'M/P']:  # NEU: Fu1, Fu2
+        config[f'partizip_{tag}'] = {'color': 'magenta'}
+    
+    # Infinitive → grün (-) wie andere Verben
+    config['verb_Inf'] = {'color': 'green'}
+    
+    # Latein-spezifische Formen → purpur/magenta (§)
+    if language == "LAT_FETT":
+        config['verb_Ger'] = {'color': 'magenta'}  # Gerundium
+        config['verb_Gdv'] = {'color': 'magenta'}  # Gerundivum
+        config['verb_Spn'] = {'color': 'magenta'}  # Supinum
+        config['verb_Fu1'] = {'color': 'green'}    # NEU: Futur 1 als Verb → grün
+        config['verb_Fu2'] = {'color': 'green'}    # NEU: Futur 2 als Verb → grün
+        config['partizip_Fu1'] = {'color': 'magenta'}  # NEU: Futur 1 Partizip → magenta
+        config['partizip_Fu2'] = {'color': 'magenta'}  # NEU: Futur 2 Partizip → magenta
+    
+    # Adjektive → blau
+    config['adjektiv'] = {'color': 'blue'}
+    for tag in ['N', 'G', 'D', 'A', 'V', 'Kmp', 'Sup']:
+        config[f'adjektiv_{tag}'] = {'color': 'blue'}
+    
+    return config
+
 def _process_one_input(infile: str, tag_config: dict = None) -> None:
     if not os.path.isfile(infile):
         print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
@@ -39,28 +119,19 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
     # Tokenisierung direkt hier durchführen, um die Pipeline an Poesie anzugleichen
     blocks = Prosa.group_pairs_into_flows(blocks_raw)
 
-    strengths = ("NORMAL", "GR_FETT", "DE_FETT")
+    # Erkenne Sprache aus Dateinamen
+    ancient_lang_strength = _detect_language_from_filename(infile)
+    print(f"  → Erkannte Sprache: {ancient_lang_strength}")
+
+    # NEUE KONFIGURATION: 8 Varianten pro Input-Datei
+    # - NORMAL: Nichts fett (weder antike Sprache noch Überschriften)
+    # - GR_FETT/LAT_FETT: Antike Sprache fett, Überschriften normal (um Tinte zu sparen)
+    strengths = ("NORMAL", ancient_lang_strength)
     colors    = ("COLOR", "BLACK_WHITE")
     tags      = ("TAGS", "NO_TAGS")
 
-    # Standard-Farbkonfiguration für den Prosa-Adapter
-    # Diese wird verwendet, wenn keine spezifische Konfiguration (z.B. aus einem Draft) kommt.
-    default_prosa_tag_config = {
-        # Nomen rot
-        "nomen": {"color": "red"},
-        "nomen_N": {"color": "red"}, "nomen_G": {"color": "red"}, "nomen_D": {"color": "red"}, "nomen_A": {"color": "red"}, "nomen_V": {"color": "red"},
-        # Verben grün
-        "verb": {"color": "green"},
-        "verb_Prä": {"color": "green"}, "verb_Imp": {"color": "green"}, "verb_Aor": {"color": "green"}, "verb_AorS": {"color": "green"}, "verb_Per": {"color": "green"}, "verb_Plq": {"color": "green"}, "verb_Fu": {"color": "green"},
-        "verb_Akt": {"color": "green"}, "verb_Med": {"color": "green"}, "verb_Pas": {"color": "green"}, "verb_MP": {"color": "green"}, "verb_Inf": {"color": "green"}, "verb_Op": {"color": "green"}, "verb_Knj": {"color": "green"}, "verb_Imv": {"color": "green"},
-        # Adjektive & Partizipien blau
-        "adjektiv": {"color": "blue"},
-        "adjektiv_N": {"color": "blue"}, "adjektiv_G": {"color": "blue"}, "adjektiv_D": {"color": "blue"}, "adjektiv_A": {"color": "blue"}, "adjektiv_V": {"color": "blue"}, "adjektiv_Kmp": {"color": "blue"}, "adjektiv_Sup": {"color": "blue"},
-        "partizip": {"color": "blue"},
-        "partizip_Pra": {"color": "blue"}, "partizip_Imp": {"color": "blue"}, "partizip_Aor": {"color": "blue"}, "partizip_AorS": {"color": "blue"}, "partizip_Per": {"color": "blue"}, "partizip_Plq": {"color": "blue"}, "partizip_Fu": {"color": "blue"},
-        "partizip_N": {"color": "blue"}, "partizip_G": {"color": "blue"}, "partizip_D": {"color": "blue"}, "partizip_A": {"color": "blue"}, "partizip_V": {"color": "blue"},
-        "partizip_Akt": {"color": "blue"}, "partizip_Med": {"color": "blue"}, "partizip_Pas": {"color": "blue"}, "partizip_MP": {"color": "blue"},
-    }
+    # Verwende die neue Standard-Farbkonfiguration basierend auf der Sprache
+    default_prosa_tag_config = _get_default_tag_config(ancient_lang_strength)
     
     # Wenn keine spezifische tag_config übergeben wird (Standardfall für build_prosa_adapter),
     # verwende die Standard-Farbkonfiguration.
