@@ -2,6 +2,7 @@
 // Nutzung: import { loadCatalog, ... } from './catalog.js';
 
 let _cache = null;
+const naturalCollator = new Intl.Collator('de', { numeric: true, sensitivity: 'base' });
 
 export async function loadCatalog() {
   if (_cache) return _cache;
@@ -61,7 +62,7 @@ export function listWorks(cat, language, kind, category, author) {
         ...workData, // Enthält "path" und "versmass"
       };
     })
-    .sort((x, y) => x.title.localeCompare(y.title, "de"));
+    .sort((x, y) => naturalCollator.compare(x.title, y.title));
 }
 
 // Ruft die vollständigen Metadaten eines Werks ab.

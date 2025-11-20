@@ -136,6 +136,7 @@ const state = {
   work: getParam("work", "Unbenannt"),
   languages: getParam("languages", "2"), // NEU: 2 oder 3 sprachig
   meterMode: getParam("meter", "false"), // NEU: "true" oder "false" - ob Versmaß-Version geladen werden soll
+  translationTarget: getParam("target", "de"),
 
   workMeta: null, // Wird nach dem Laden des Katalogs gefüllt
 
@@ -150,6 +151,7 @@ const state = {
   meterPageActive: false,
   lastDraftUrl: null, // vom Worker zurückbekommen
   pendingDraftFilename: null, // merkt sich den zuletzt gestarteten Build
+  draftBase: null,
   manualDraftBuildRequired: false,
   manualDraftCommand: null,
   draftBuildActive: false,
@@ -176,6 +178,119 @@ function getDraftWorkPath() {
     state.work,
   ].filter(Boolean);
   return segments.join("/");
+}
+
+function getDraftStorageKey() {
+  return `draftBase::${getDraftWorkPath()}`;
+}
+
+function persistDraftBase() {
+  if (!state.draftBase) return;
+  if (typeof window === 'undefined' || !window.localStorage) return;
+  try {
+    window.localStorage.setItem(getDraftStorageKey(), state.draftBase);
+  } catch (e) {
+    console.warn('Persisting draft base failed', e);
+  }
+}
+
+function restoreDraftBase() {
+  if (typeof window === 'undefined' || !window.localStorage) return;
+  try {
+    const stored = window.localStorage.getItem(getDraftStorageKey());
+    if (stored) {
+      state.draftBase = stored;
+      state.draftHasResult = false;
+      state.draftBuildActive = false;
+      state.manualDraftBuildRequired = false;
+    }
+  } catch (e) {
+    console.warn('Restoring draft base failed', e);
+  }
+}
+
+let draftProbeInFlight = false;
+async function probeDraftAvailability() {
+  if (draftProbeInFlight) return;
+  if (!state.draftBase) return;
+  const draftName = buildDraftPdfFilename();
+  if (!draftName || draftName === 'error.pdf') return;
+  const url = buildDraftPdfUrl(draftName);
+  draftProbeInFlight = true;
+  try {
+    const probeUrl = url + (url.includes('?') ? '&' : '?') + 'probe=' + Date.now();
+    const res = await fetch(probeUrl, { method: 'HEAD', cache: 'no-store' });
+    if (res && res.ok) {
+      state.draftBuildActive = false;
+      state.draftHasResult = true;
+      state.manualDraftBuildRequired = false;
+      state.lastDraftUrl = url;
+      updatePdfView(true);
+    }
+  } catch (e) {
+    console.warn('Draft probe failed', e);
+  } finally {
+    draftProbeInFlight = false;
+  }
+}
+
+
+function buildBirkenbihlBaseCandidates(base) {
+  if (!base) return [];
+  const match = base.match(/_(gr|lat)_([a-z_]+)_stil1/);
+  if (!match) return [base];
+  const langCode = match[1];
+  const translationSegment = match[2];
+  const prefix = base.slice(0, match.index);
+  const suffix = base.slice(match.index + match[0].length);
+  const candidates = [];
+  const seen = new Set();
+
+  const addCandidate = (segment) => {
+    if (!segment) return;
+    const candidate = `${prefix}_${langCode}_${segment}_stil1${suffix}`;
+    if (!seen.has(candidate)) {
+      seen.add(candidate);
+      candidates.push(candidate);
+    }
+  };
+
+  if (state.languages === "3") addCandidate("de_en");
+  if (state.translationTarget === "en") {
+    addCandidate("en");
+    addCandidate("de_en");
+  } else {
+    addCandidate("de");
+  }
+
+  addCandidate(translationSegment);
+  addCandidate("de_en");
+  addCandidate("de");
+  addCandidate("en");
+
+  return candidates.length ? candidates : [base];
+}
+
+async function fetchBirkenbihlText(textBasePath, baseCandidates) {
+  if (!baseCandidates || !baseCandidates.length) return null;
+  const meterSuffixes = state.meter === "with" ? ["_Versmaß", ""] : [""];
+
+  for (const candidate of baseCandidates) {
+    for (const suffix of meterSuffixes) {
+      const fileBase = `${candidate}${suffix}`;
+      const candidatePath = `texte/${textBasePath}/${fileBase}_birkenbihl.txt`;
+      try {
+        const resp = await fetch(candidatePath, { cache: "no-store" });
+        if (resp.ok) {
+          const text = await resp.text();
+          return { text, path: candidatePath, base: fileBase };
+        }
+      } catch (err) {
+        console.warn("Fetch Birkenbihl candidate failed", candidatePath, err);
+      }
+    }
+  }
+  return null;
 }
 
 function getDraftTextAbsolutePath(filename = "") {
@@ -510,11 +625,44 @@ function buildPdfFilenameBase() {
   return filename;
 }
 
+function buildDraftFilenameFromStem(stem) {
+  if (!stem) return null;
+  let filename = stem;
+  const isGreek = filename.includes("_gr_");
+  const isLatin = filename.includes("_lat_");
+
+  if (state.strength === "Normal") {
+    filename += "_Normal";
+  } else if (state.strength === "Fett") {
+    if (isGreek) filename += "_GR_Fett";
+    else if (isLatin) filename += "_LAT_Fett";
+    else filename += state.lang === "latein" ? "_LAT_Fett" : "_GR_Fett";
+  } else {
+    if (isGreek) filename += "_GR_Fett";
+    else if (isLatin) filename += "_LAT_Fett";
+  }
+
+  if (state.color === "BlackWhite") filename += "_BlackWhite";
+  else filename += "_Colour";
+
+  if (state.tags === "NoTags") filename += "_NoTags";
+  else filename += "_Tag";
+
+  return filename;
+}
+
 function buildDraftPdfFilename() {
+  if (state.draftBase) {
+    const draftStem = buildDraftFilenameFromStem(state.draftBase);
+    if (!draftStem) return "error.pdf";
+    const draftName = `${draftStem}.pdf`;
+    console.log("Generated draft filename (draft base):", draftName);
+    return draftName;
+  }
   const base = buildPdfFilenameBase();
   if (base === "error") return "error.pdf";
   const draftName = `${base}.pdf`;
-  console.log("Generated draft filename:", draftName);
+  console.log("Generated draft filename (fallback):", draftName);
   return draftName;
 }
 
@@ -578,20 +726,26 @@ function updatePdfView(fromWorker = false) {
   if (state.source === "draft") {
     if (state.draftBuildActive) {
       showDraftWaitingPlaceholder({});
+      probeDraftAvailability();
       return;
     }
     if (state.manualDraftBuildRequired && !state.draftHasResult) {
       showDraftManualPlaceholder({});
       return;
     }
-    if (!state.lastDraftUrl || !state.draftHasResult) {
+    if (!state.draftBase) {
       showDraftEmptyPlaceholder();
       return;
     }
-    if (state.lastDraftUrl && fromWorker) {
-      loadPdfIntoRenderer(state.lastDraftUrl);
+    const draftFilename = buildDraftPdfFilename();
+    if (!draftFilename || draftFilename === "error.pdf") {
+      showDraftEmptyPlaceholder();
       return;
     }
+    const draftUrl = buildDraftPdfUrl(draftFilename);
+    state.lastDraftUrl = draftUrl;
+    loadPdfIntoRenderer(draftUrl);
+    return;
   }
 
   // Sicherstellen, dass pdfOptions mit state synchronisiert sind
@@ -609,9 +763,6 @@ function updatePdfView(fromWorker = false) {
 
   // Neue PDF-URL basierend auf aktuellen Optionen generieren
   const url = buildPdfUrlForRenderer();
-  if (state.source === "draft") {
-    state.lastDraftUrl = url;
-  }
   loadPdfIntoRenderer(url);
 }
 
@@ -784,89 +935,33 @@ async function loadTexts() {
     console.log("Original text pane is not active, skipping load");
   }
 
-  // Birkenbihl
   try {
-    // Passe filenameBase an die gewählte Sprachversion an (2- oder 3-sprachig)
-    let birkenbilFilename = filenameBase;
-    const is3Lang = birkenbilFilename.includes("_de_en_");
+    const birkenbihlCandidates = buildBirkenbihlBaseCandidates(filenameBase);
+    const result = await fetchBirkenbihlText(textBasePath, birkenbihlCandidates);
 
-    if (state.languages === "3" && !is3Lang) {
-      // User will 3-sprachig, aber filename_base ist 2-sprachig
-      birkenbilFilename = birkenbilFilename.replace(
-        "_de_stil1",
-        "_de_en_stil1"
-      );
-    } else if (state.languages === "2" && is3Lang) {
-      // User will 2-sprachig, aber filename_base ist 3-sprachig
-      birkenbilFilename = birkenbilFilename.replace(
-        "_de_en_stil1",
-        "_de_stil1"
-      );
-    }
+    if (result && result.text) {
+      const text = result.text;
+      state.originalBirkenbihlText = text;
+      console.log('✅ Birkenbihl text loaded from', result.path);
 
-    // Wenn Versmaß-Modus aktiv ist, füge "_Versmaß" JETZT ein (vor "_birkenbihl")
-    if (state.meter === "with") {
-      birkenbilFilename += "_Versmaß";
-      console.log(
-        "Versmaß-Modus aktiv (Birkenbihl), filename wird zu:",
-        birkenbilFilename
-      );
-    }
-
-    const birkenbilPath = `texte/${textBasePath}/${birkenbilFilename}_birkenbihl.txt`;
-    console.log("=== BIRKENBIHL LOADING DEBUG ===");
-    console.log("Loading Birkenbihl text from:", birkenbilPath);
-    console.log("el.draftText exists:", !!el.draftText);
-    console.log("el.draftText element:", el.draftText);
-
-    const r = await fetch(birkenbilPath, { cache: "no-store" });
-    console.log("Fetch response status:", r.status, r.ok);
-
-    if (r.ok) {
-      const text = await r.text();
-      console.log(
-        "Text loaded, length:",
-        text.length,
-        "first 100 chars:",
-        text.substring(0, 100)
-      );
-      state.originalBirkenbihlText = text; // Original speichern
-
-      // Fülle den Entwurfs-Editor direkt (birkenbihlText-Pane ist auskommentiert)
       if (el.draftText) {
-        console.log("Setting draftText innerHTML...");
         el.draftText.innerHTML = addSpansToTags(text);
-        console.log(
-          "draftText innerHTML set, current length:",
-          el.draftText.innerHTML.length
-        );
-      } else {
-        console.error("el.draftText is null or undefined!");
       }
-
-      // Falls birkenbihlText-Pane existiert (für Kompatibilität)
       if (el.birkenbihlText) {
         el.birkenbihlText.innerHTML = addSpansToTags(text);
       }
-
-      console.log(
-        "✅ Birkenbihl text loaded successfully and displayed in draft editor"
-      );
     } else {
-      console.error(
-        "❌ Birkenbihl text not found:",
-        birkenbilPath,
-        "Status:",
-        r.status
-      );
+      const attempted = birkenbihlCandidates.join(', ');
+      const errMsg = `Birkenbihl-Text nicht gefunden (Versuch: ${attempted})`;
+      console.error('❌', errMsg);
       if (el.draftText) {
-        el.draftText.textContent = `Birkenbihl-Text nicht gefunden: ${birkenbilPath}`;
+        el.draftText.textContent = errMsg;
       }
     }
   } catch (e) {
-    console.error("❌ Error loading birkenbihl text:", e);
+    console.error('❌ Error loading birkenbihl text:', e);
     if (el.draftText) {
-      el.draftText.textContent = "Fehler beim Laden des Birkenbihl-Textes.";
+      el.draftText.textContent = 'Fehler beim Laden des Birkenbihl-Textes.';
     }
   }
 }
@@ -991,28 +1086,35 @@ async function performRendering() {
     const data = await res.json();
     if (!data?.ok) throw new Error("Worker-Antwort unvollständig.");
 
-    // Der Worker speichert den Text in texte_drafts/
-    el.draftStatus.textContent = `✓ Text gespeichert: ${data.filename}`;
+    const draftBaseFromWorker = (data.filename || "").replace(/\.txt$/, "");
+    if (draftBaseFromWorker) {
+      state.draftBase = draftBaseFromWorker;
+      state.draftHasResult = false;
+      persistDraftBase();
+    }
 
     const draftFilePath = getDraftTextAbsolutePath(data.filename);
     const manualCommand = `python build_${state.kind}_drafts_adapter.py ${draftFilePath}`;
     const buildActive = !!data.workflow_triggered;
     const manualRequired = !buildActive;
+    const draftPdfName = buildDraftPdfFilename();
+    const draftPdfUrl = buildDraftPdfUrl(draftPdfName);
 
-    // Für PDF-Anzeige verwenden wir das erwartete Draft-Ziel
     state.source = "draft";
-    state.lastDraftUrl = buildDraftPdfUrl(buildDraftPdfFilename());
-    state.pendingDraftFilename = buildActive ? data.filename : null;
+    state.lastDraftUrl = draftPdfUrl;
+    state.pendingDraftFilename = data.filename;
     state.draftBuildActive = buildActive;
     state.draftHasResult = false;
     state.manualDraftBuildRequired = manualRequired;
     state.manualDraftCommand = manualRequired ? manualCommand : null;
 
+    el.draftStatus.textContent = `✓ Text gespeichert: ${data.filename}`;
+
     if (buildActive) {
       el.draftStatus.textContent = `✓ Text gespeichert: ${data.filename} – PDFs werden gleich angezeigt.`;
       showDraftWaitingPlaceholder({
         filename: data.filename,
-        url: state.lastDraftUrl,
+        url: draftPdfUrl,
       });
     } else {
       el.draftStatus.innerHTML = `
@@ -2059,6 +2161,8 @@ async function loadWorkMeta() {
 // Hauptinitialisierung
 (async function init() {
   console.log("work.js init started");
+
+  restoreDraftBase();
 
   // Warten, bis DOM geladen ist
   if (document.readyState === "loading") {

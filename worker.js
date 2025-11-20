@@ -70,23 +70,36 @@ export default {
         );
       }
 
-      const upstreamUrl = `https://github.com/${owner}/${repo}/releases/download/${encodeURIComponent(
-        tag
-      )}/${encodeURIComponent(file)}`;
+      const filenameVariants = buildReleaseFilenameVariants(file);
+      let upstream = null;
+      let finalFileName = file;
+      let lastStatus = 404;
 
-      const upstream = await fetch(upstreamUrl, {
-        method: method === "HEAD" ? "HEAD" : "GET",
-      });
+      for (const candidate of filenameVariants) {
+        const upstreamUrl = `https://github.com/${owner}/${repo}/releases/download/${encodeURIComponent(
+          tag
+        )}/${encodeURIComponent(candidate)}`;
+        const attempt = await fetch(upstreamUrl, {
+          method: method === "HEAD" ? "HEAD" : "GET",
+        });
+        if (attempt && attempt.ok) {
+          upstream = attempt;
+          finalFileName = candidate;
+          break;
+        }
+        lastStatus = attempt?.status || 404;
+      }
 
-      if (!upstream.ok) {
+      if (!upstream || !upstream.ok) {
         return resp(
           {
             ok: false,
             error: "upstream_error",
-            status: upstream.status,
-            message: `GitHub responded with ${upstream.status}`,
+            status: lastStatus,
+            message: `GitHub responded with ${lastStatus}`,
+            attempted: filenameVariants,
           },
-          upstream.status,
+          lastStatus,
           CORS
         );
       }
@@ -96,7 +109,7 @@ export default {
       // - für *.pdf wollen wir explizit application/pdf,
       //   damit der Browser den eingebauten PDF-Viewer nutzt.
       let contentType = upstream.headers.get("content-type") || "";
-      const lowerFile = file.toLowerCase();
+      const lowerFile = finalFileName.toLowerCase();
 
       if (!contentType || contentType === "application/octet-stream") {
         if (lowerFile.endsWith(".pdf")) {
@@ -119,7 +132,7 @@ export default {
       if (mode === "attachment") {
         headers.set(
           "Content-Disposition",
-          `attachment; filename="${file}"`
+          `attachment; filename="${finalFileName}"`
         );
       }
 
@@ -372,6 +385,31 @@ function resp(obj, status = 200, headers = {}) {
     status,
     headers: { "Content-Type": "application/json; charset=utf-8", ...headers },
   });
+}
+
+function buildReleaseFilenameVariants(file) {
+  const variants = [file];
+  const umlautVariant = replaceGermanUmlauts(file);
+  if (umlautVariant && umlautVariant !== file) variants.push(umlautVariant);
+  const plainVariant = stripDiacritics(file);
+  if (plainVariant && !variants.includes(plainVariant)) variants.push(plainVariant);
+  return [...new Set(variants)];
+}
+
+function replaceGermanUmlauts(str = "") {
+  return str
+    .replace(/Ä/g, "Ae")
+    .replace(/ä/g, "ae")
+    .replace(/Ö/g, "Oe")
+    .replace(/ö/g, "oe")
+    .replace(/Ü/g, "Ue")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss");
+}
+
+function stripDiacritics(str = "") {
+  if (typeof str.normalize !== "function") return str;
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 }
 
 function sanitizePathSegment(segment = "") {

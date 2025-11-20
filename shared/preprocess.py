@@ -94,6 +94,7 @@ COLOR_MAP = {
     'green': '-',
     'magenta': '§',
     'purple': '§',  # purple = magenta (sanftes Violett)
+    'violett': '§',
     'orange': '$',
 }
 
