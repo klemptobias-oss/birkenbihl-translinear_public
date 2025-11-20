@@ -1,0 +1,2141 @@
+<!-- TAG_CONFIG:{"nomen":{"color":"violett","hide":"hide"},"nomen_N":{"color":"violett","hide":"hide"},"nomen_G":{"color":"violett","hide":"hide"},"nomen_D":{"color":"violett","hide":"hide"},"nomen_A":{"color":"violett","hide":"hide"},"nomen_V":{"color":"violett","hide":"hide"},"nomen_Du":{"color":"violett","hide":"hide"},"verb":{"color":"violett","hide":"hide"},"verb_Pra":{"color":"violett","hide":"hide"},"verb_Imp":{"color":"violett","hide":"hide"},"verb_Aor":{"color":"violett","hide":"hide"},"verb_AorS":{"color":"violett","hide":"hide"},"verb_Per":{"color":"violett","hide":"hide"},"verb_Plq":{"color":"violett","hide":"hide"},"verb_Fu":{"color":"violett","hide":"hide"},"verb_Du":{"color":"violett","hide":"hide"},"verb_Akt":{"color":"violett","hide":"hide"},"verb_Med":{"color":"violett","hide":"hide"},"verb_Pas":{"color":"violett","hide":"hide"},"verb_MP":{"color":"violett","hide":"hide"},"verb_Inf":{"color":"violett","hide":"hide"},"verb_Op":{"color":"violett","hide":"hide"},"verb_Knj":{"color":"violett","hide":"hide"},"verb_Imv":{"color":"violett","hide":"hide"},"partizip":{"color":"violett"},"partizip_Pra":{"color":"violett","placement":"sub"},"partizip_Imp":{"color":"violett","placement":"sub"},"partizip_Aor":{"color":"violett","placement":"sub"},"partizip_AorS":{"color":"violett","placement":"sub"},"partizip_Per":{"color":"violett","placement":"sub"},"partizip_Plq":{"color":"violett","placement":"sub"},"partizip_Fu":{"color":"violett","placement":"sub"},"partizip_N":{"color":"violett","placement":"sup"},"partizip_G":{"color":"violett","placement":"sup"},"partizip_D":{"color":"violett","placement":"sup"},"partizip_A":{"color":"violett","placement":"sup"},"partizip_V":{"color":"violett","placement":"sup"},"partizip_Du":{"color":"violett","placement":"sup"},"partizip_Akt":{"color":"violett","placement":"sub"},"partizip_Med":{"color":"violett","placement":"sub"},"partizip_Pas":{"color":"violett","placement":"sub"},"partizip_MP":{"color":"violett","placement":"sub"},"adjektiv":{"color":"blue","placement":"sup"},"adjektiv_N":{"color":"blue","placement":"sup"},"adjektiv_G":{"color":"blue","placement":"sup"},"adjektiv_D":{"color":"blue","placement":"sup"},"adjektiv_A":{"color":"blue","placement":"sup"},"adjektiv_V":{"color":"blue","placement":"sup"},"adjektiv_Du":{"color":"blue","placement":"sup"},"adjektiv_Kmp":{"color":"blue","placement":"sup"},"adjektiv_Sup":{"color":"blue","placement":"sup"},"adverb":{"placement":"sup"},"adverb_Kmp":{"placement":"sup"},"adverb_Sup":{"placement":"sup"},"pronomen":{"placement":"sub"},"pronomen_N":{"placement":"sup"},"pronomen_G":{"placement":"sup"},"pronomen_D":{"placement":"sup"},"pronomen_A":{"placement":"sup"},"pronomen_Du":{"placement":"sup"},"artikel":{"placement":"sup"},"artikel_N":{"placement":"sup"},"artikel_G":{"placement":"sup"},"artikel_D":{"placement":"sup"},"artikel_A":{"placement":"sup"},"artikel_Du":{"placement":"sup"},"prp":{"placement":"sup"},"kon":{"placement":"sup"},"pt":{"placement":"sup"},"ij":{"placement":"sup"}} -->
+==== Perser ====
+=== Parodos ===
+(1) [Χορός:] Τάiδεi(Pr)(N) μὲνL(Pt) |ΠερLσῶνL(G) |τῶνL(Art)(G) οἰL|χοiμέiνωνL(Prä)(M/P)(G)|
+(1) [Χορός:] dies zwar der|Perser der fort|gegangenen|
+(2) [Χορός:] ἙλLλάδiʼ(A) ἐςi(Prp) |αἶLανL(A) |πιLστὰi(Adj)(N) καi|λεῖLταιL(Prä)(M/P),|
+(2) [Χορός:] Hellas in die|Erde zuverlässig wird|genannt,|
+(3) [Χορός:] καὶL(Kon) τῶνL(Art)(G) |ἀφiνεiῶνL(Adj)(G) |καὶL(Kon) ποiλυi|χρύLσωνL(Adj)(G)|
+(3) [Χορός:] und der reichen und viel|goldenen|
+(4) [Χορός:] ἑiδράiνωνL(G) |φύiλαiκεςL(N), |καiτὰi(Prp) πρεL|σβείLανL(A)|
+(4) [Χορός:] Sitze|Stätten Wächter, gemäß Gesandtschaft|
+(5) [Χορός:] οὓςL(Pr)(A) αὐL|τὸςi(Pr)(N) ἄiναξL(N) |ΞέρLξηςL(N) |βαiσιiλεὺςL(N)|
+(5) [Χορός:] welche selbst Herrscher Xerxes König|
+(6) [Χορός:] ΔαLρειL|οiγεiνὴςL(Adj)(N)|
+(6) [Χορός:] darius|geboren|
+(7) [Χορός:] εἵLλεiτοi(AorS)(Akt) |χώLραςL(G) |ἐiφοiρεύL|εινL(Prä)(Inf)(Akt).|
+(7) [Χορός:] wählte der|Lande zu|aufsehen.|
+(8) [Χορός:] ἀμLφὶi(Prp) δὲi(Pt) |νόLστῳL(D) |τῷL(Art)(D) βαiσιi|λείLῳL(Adj)(D)|
+(8) [Χορός:] um aber der|Heimkehr dem königlichen|
+(9) [Χορός:] καὶL(Kon) ποiλυi|χρύLσουL(Adj)(G) |στραiτιiᾶςL(G) |ἤLδηL(Adv)|
+(9) [Χορός:] und viel|goldenen Heeres schon|
+(10) [Χορός:] καiκόiμανL|τιςi(Adj)(N) ἄiγανL(Adv) |ὀρLσοiλοi|πεῖLταιL(Prä)(M/P)|
+(10) [Χορός:] übel|prophetisch gar|sehr bäumt|sich|auf|
+(11) [Χορός:] θυLμὸςi(N) ἔi|σωLθενL(Adv).|
+(11) [Χορός:] Mut|Sinn innen|drin.|
+(12) [Χορός:] πᾶLσαi(Adj)(N) γὰρi(Pt) |ἰLσχὺςL(N) |ἈiσιiαL|τοiγεiνὴςL(Adj)(N)|
+(12) [Χορός:] ganze denn Kraft asiaten|geboren|
+(13) [Χορός:] ᾤLχωL|κεi(Per)(Akt), νέiονL(Adj)(A) |δʼ(Pt) ἄνLδραi(A) βαi|ΰLζειL(Prä)(Akt),|
+(13) [Χορός:] ist|fort, neuen aber Mann bellt,|
+(14) [Χορός:] κοὔLτεi(Kon) τιςi(Pr)(N) |ἄγLγεiλοςi(N) |οὔLτεi(Kon) τιςi(Pr)(N) |ἱπLπεὺςL(N)|
+(14) [Χορός:] und|weder irgendein Bote noch irgendein Reiter|
+(15) [Χορός:] ἄLστυi(N) τὸi(Art)(N) |ΠερLσῶνL(G) |ἀiφιiκνεῖL|ταιL(Prä)(M/P)·|
+(15) [Χορός:] Stadt die der|Perser trifft|ein·|
+(16) [Χορός:] οἵLτεi(Pr)(N) τὸi(Art)(A) |ΣούLσωνL(G) |ἠδLʼ(Kon) ἈγL|βαiτάiνωνL(G)|
+(16) [Χορός:] die|da das der|Susa und der|Agbatana|
+(17) [Χορός:] καὶL(Kon) τὸi(Art)(A) παi|λαιLὸνL(Adj)(A) |ΚίσLσιiονi(Adj)(A) |ἕρLκοςL(A)|
+(17) [Χορός:] und die alte kissische Burg|
+(18) [Χορός:] προiλιiπόνL|τεςi(AorS)(Akt)(N) ἔiβανL(AorS)(Akt), |τοὶL(Art)(N) μὲνi(Pt) ἐφiʼ(Prp) |ἵπLπωνL(G).|
+(18) [Χορός:] vor|verlassend gingen, die zwar auf Pferden.|
+(19) [Χορός:] τοὶL(Art)(N) δʼ(Pt) ἐiπὶi(Prp) |ναLῶνL(G), |πεLζοίL(N) |τεi(Pt) βάiδηνL(Adv)|
+(19) [Χορός:] die aber auf Schiffen, zu|Fuß und schreitend|
+(20) [Χορός:] ποiλέiμουL(G) |στῖLφοςL(N) |παiρέiχονL|τεςL(Prä)(Akt)(N)·|
+(20) [Χορός:] des|Krieges Masse dar|bietend·|
+(21) [Χορός:] οἷLοςi(Pr)(N) Ἀi|μίLστρηςL(N) |ἠδLʼ(Kon) ἈρL|ταiφρέiνηςL(N)|
+(21) [Χορός:] solcher Amistrēs und Artaphrēnēs|
+(22) [Χορός:] καὶL(Kon) Μεiγαi|βάLτηςL(N) |ἠδLʼ(Kon) ἈL|στάLσπηςL(N),|
+(22) [Χορός:] und Megabatēs und Astaspēs,|
+(23) [Χορός:] ταLγοὶL(N) |ΠερLσῶνL(G),|
+(23) [Χορός:] Anführer der|Perser,|
+(24) [Χορός:] βαiσιiλῆςL(G) |βαiσιiλέωςL(G) |ὕiποiχοιL(N) |μεiγάiλουL(Adj)(G),|
+(24) [Χορός:] des|Königs des|Königs Untertanen des|großen,|
+(25) [Χορός:] σοῦνLταιL(Prä)(M/P), |στραiτιiᾶςL(G) |πολLλῆςL(Adj)(G) |ἔiφοiροιL(N),|
+(25) [Χορός:] prahlen, des|Heeres großen Aufseher,|
+(26) [Χορός:] τοLξοiδάi|μανLτέςL(N) |τʼ(Pt) ἠδLʼ(Kon) ἱπL|ποiβάiταιL(N),|
+(26) [Χορός:] Bogen|bändigende und und Pferde|reiter,|
+(27) [Χορός:] φοiβεiροὶL(Adj)(N) |μὲνi(Pt) ἰiδεῖνL(Prä)(Inf)(Akt), |δειLνοὶL(Adj)(N) |δὲi(Pt) μάiχηνL(A)|
+(27) [Χορός:] furchtbar zwar zu|sehen, gewaltig aber Kampf|
+(28) [Χορός:] ψυLχῆςL(G) |εὐτLλήL|μοiνιi(Adj)(D) δόL|ξῃL(D)·|
+(28) [Χορός:] der|Seele leidens|tapferer Meinung·|
+(29) [Χορός:] ἈρLτεμL|βάLρηςL(N) |θʼ(Pt) ἱπLπιiοi|χάρLμηςL(N)|
+(29) [Χορός:] Artembárēs auch Ross|kämpfer|
+(30) [Χορός:] καὶL(Kon) ΜαL|σίLστρηςL(N), |ὅi(Pr)(N) τεi(Pt) τοL|ξοiδάiμαςL(N)|
+(30) [Χορός:] und Masistrēs, der auch Bogen|bändiger|
+(31) [Χορός:] ἐLσθλὸςi(Adj)(N) Ἰi|μαῖLοςL(N), |ΦαLρανL|δάLκηςθLʼ(N)(Pt),|
+(31) [Χορός:] tüchtig Himaíos, Pharandákēs|auch,|
+(32) [Χορός:] ἵπLπωνL(G) |τʼ(Pt) ἐiλαiτὴρL(N) |ΣοLσθάL|νηςL(N).|
+(32) [Χορός:] der|Pferde auch Lenker Sosthanēs.|
+(33) [Χορός:] ἄλLλουςL(Pr)(A) |δʼ(Pt) ὁi(Art)(N) μέiγαςL(Adj)(N) |καὶL(Kon) ποiλυi|θρέμLμωνL(Adj)(N)|
+(33) [Χορός:] andere aber der große und viel|nährende|
+(34) [Χορός:] ΝεῖLλοςi(N) ἔi|πεμLψενL(AorS)(Akt)· |ΣουLσιL|σκάLνηςL(N),|
+(34) [Χορός:] Nil schickte· Sousiskánēs,|
+(35) [Χορός:] ΠηLγαL|σταLγὼνL(N) |ΑἰLγυL|πτοiγεiνήςL(Adj)(N),|
+(35) [Χορός:] Pegastagōn ägypten|geboren,|
+(36) [Χορός:] ὅi(Pr)(N) τεi(Pt) τῆςL(Art)(G) |ἱiεiρᾶςL(Adj)(G) |ΜέμLφιiδοςi(G) |ἄρLχωνL(N)|
+(36) [Χορός:] der auch der heiligen Memphis Herrscher|
+(37) [Χορός:] μέiγαςi(Adj)(N) ἈρL|σάLμηςL(N), |τάςL(Art)(A) τʼ(Pt) ὠL|γυiγίiουςL(Adj)(A)|
+(37) [Χορός:] großer Arsámēs, die auch ur|alten|
+(38) [Χορός:] ΘήLβαςL(A) |ἐiφέiπωνL(Prä)(Akt)(N) |ἈLριiόi|μαρLδοςL(N),|
+(38) [Χορός:] Theben befehlend Ariomardos,|
+(39) [Χορός:] καὶi(Kon) ἑiλειL|οiβάiταιL(N) |ναLῶνL(G) |ἐiρέiταιL(N)|
+(39) [Χορός:] und Sumpf|fahrende der|Schiffe Ruderer|
+(40) [Χορός:] δειLνοὶL(Adj)(N) |πλῆLθόςL(N) |τʼ(Pt) ἀiνάiριθL|μοιL(Adj)(N).|
+(40) [Χορός:] gewaltig Menge auch un|gezählt.|
+(41) [Χορός:] ἁLβροiδιi|αίLτωνL(Adj)(G) |δʼ(Pt) ἕiπεiταιL(Prä)(M/P) |ΛυLδῶνL(G)|
+(41) [Χορός:] weich|lebender aber folgt der|Lydier|
+(42) [Χορός:] ὄiχλοςi(N), οἵL(Pr)(N) |τʼ(Pt) ἐiπίiπανL(Adv) |ἠLπειL|ροiγεiνὲςL(Adj)(A)|
+(42) [Χορός:] Haufen, die auch ins|Ganze land|geborenes|
+(43) [Χορός:] καiτέiχουL|σινi(Prä)(Akt) ἔiθνοςL(N), |τοὺςL(Art)(A) ΜηL|τροiγαiθὴςL(N)|
+(43) [Χορός:] besitzen Volk, die Metrogathēs|
+(44) [Χορός:] ἈρLκτεύςL(N) |τʼ(Pt) ἀiγαiθόςL(Adj)(N), |βαiσιiλῆςL(N) |δίiοiποιL(Adj)(N),|
+(44) [Χορός:] Arkteus auch gut, König götter|gleiche,|
+(45) [Χορός:] καὶL(Kon) ποiλύi|χρυLσοιL(Adj)(N) |ΣάρLδειςL(N) |ἐiπόiχουςL(N)|
+(45) [Χορός:] und viel|goldene Sardeis Träger|
+(46) [Χορός:] πολLλοῖςL(Adj)(D) |ἅρLμαiσινi(D) |ἐLξορL|μῶLσινL(Prä)(Akt),|
+(46) [Χορός:] mit|vielen Wagen brechen|auf,|
+(47) [Χορός:] δίρLρυL|μάi(N) τεi(Pt) καὶL(Kon) |τρίρLρυL|μαi(N) τέiληL(N),|
+(47) [Χορός:] zwei|zügige und und drei|zügige Abgaben,|
+(48) [Χορός:] φοiβεiρὰνL(Adj)(A) |ὄLψινL(A) |προiσιiδέL|σθαιL(Prä)(Inf)(M/P).|
+(48) [Χορός:] furchtbare Erscheinung an|zu|blicken.|
+(49) [Χορός:] στεῦLταιL(Prä)(M/P) |δʼ(Pt) ἱiεiροῦL(Adj)(G) |ΤμώLλουL(G) |πεiλάiταιL(N)|
+(49) [Χορός:] geloben aber des|heiligen Tmolos Anwohner|
+(50) [Χορός:] ζυiγὸνi(A) ἀμL|φιiβαiλεῖνL(AorS)(Akt) |δούLλιiονi(Adj)(A) |ἙλLλάiδιi(D),|
+(50) [Χορός:] Joch an|zu|legen sklavisch der|Hellas,|
+(51) [Χορός:] ΜάρLδωνL(N), |ΘάiρυiβιςL(N), |λόγLχηςL(G) |ἄκiμοiνεςL(N),|
+(51) [Χορός:] Mardon, Tharybis, der|Lanze Amboße,|
+(52) [Χορός:] καὶi(Kon) ἀiκονL|τιLσταὶL(N) |ΜυLσοίL(N)· |ΒαiβυiλὼνδLʼ(N)(Pt)|
+(52) [Χορός:] und Speer|werfer Mysier· Babylon|aber|
+(53) [Χορός:] ἡL(Art)(N) ποiλύi|χρυLσοςL(Adj)(N) |πάμLμιL|κτονi(Adj)(A) ὄiχλονL(A)|
+(53) [Χορός:] die viel|goldene ganz|gemischten Haufen|
+(54) [Χορός:] πέμLπειL(Prä)(Akt) |σύρLδηνL(Adv), |ναLῶνL(G) |τʼ(Pt) ἐiπόiχουςL(N)|
+(54) [Χορός:] sendet zusammen, der|Schiffe auch Träger|
+(55) [Χορός:] καὶL(Kon) τοL|ξουλLκῷL(Adj)(D) |λήLμαiτιi(D) |πιLστούςL(Adj)(A)·|
+(55) [Χορός:] und bogen|ziehendem Sinn treue·|
+(56) [Χορός:] τὸi(Art)(N) μαiχαιL|ροiφόiρονL(Adj)(N) |τʼ(Pt) ἔiθνοςi(N) ἐκL(Prp) |πάLσηςL(G)|
+(56) [Χορός:] das Messer|tragende auch Volk aus ganz|er|
+(57) [Χορός:] ἈiσίiαςL(G) |ἕiπεiταιL(Prä)(M/P)|
+(57) [Χορός:] Asiens folgt|
+(58) [Χορός:] δειLναῖςL(Adj)(D) |βαiσιiλέωςL(G) |ὑiπὸi(Prp) πομL|παῖςL(D).|
+(58) [Χορός:] schrecklichen des|Königs unter Aufzügen.|
+(59) [Χορός:] τοιLόνδLʼ(Pr)(N) |ἄνLθοςL(N) |ΠερLσίiδοςi(G) |αἴLαςL(G)|
+(59) [Χορός:] solch Blüte der|persischen Erde|
+(60) [Χορός:] οἴLχεiταιi(Prä)(M/P) |ἀνLδρῶνL(G),|
+(60) [Χορός:] ist|fort der|Männer,|
+(61) [Χορός:] οὓςL(Pr)(A) πέiριi(Prp) |πᾶLσαL(Adj)(N) |χθὼνL(N) Ἀiσιi|ῆLτιςL(Adj)(N)|
+(61) [Χορός:] um|die herum ganze Erde asiatisch|
+(62) [Χορός:] θρέLψαL|σαi(AorS)(Akt)(N) πόiθῳL(D) |στέiνεiταιL(Prä)(M/P) |μαiλεiρῷL(Adj)(D),|
+(62) [Χορός:] genährt|habend mit|Sehnsucht seufzt heftigem,|
+(63) [Χορός:] τοiκέiεςL(N) |τʼ(Pt) ἄiλοiχοίL(N) |θʼ(Pt) ἡLμεiροi|λεγLδὸνL(Adv)|
+(63) [Χορός:] Eltern und Gattinnen auch tage|zählt|weise|
+(64) [Χορός:] τείLνονL|ταi(Prä)(Akt)(A) χρόiνονL(A) |τροiμέiονL|ταιL(Prä)(M/P).|
+(64) [Χορός:] sich|streckende Zeit fürchten|sie.|
+== Strophe 1 ==
+(65) [Χορός:] πεiπέiραLκενL(Per)(Akt) μὲνi(Pt) ὁi(Art)(N) περLσέLπτοiλιςi(Adj)(N) ἤLδηL(Adv)|
+(65) [Χορός:] hat|beendet zwar der stadt|verwüstende|Perser schon|
+(66) [Χορός:] βαiσίiλειLοςL(Adj)(N) στραiτὸςi(N) εἰςL(Prp) ἀν‖τίπορονL(Adj)(A)|
+(66) [Χορός:] königliches Heer in gegen|uferige|
+(67) [Χορός:] γείLτοiναi(Adj)(A) χώLρανL(A),|
+(67) [Χορός:] benachbarte Gegend,|
+(68) [Χορός:] λιiνοiδέLσμῳL(Adj)(D) σχεiδίiᾳL(D) πορθL‖μὸν(A)|
+(68) [Χορός:] leinen|gebundenem Floß Furt|
+(69) [Χορός:] ἀiμείLψαςL(AorS)(Akt)(N)|
+(69) [Χορός:] gewechselt|habend|
+(70) [Χορός:] ἈiθαiμανLτίiδοςi(Adj)(G) ἝλLλαςL(N),|
+(70) [Χορός:] Athamanen|ländisch Hellas,|
+(71) [Χορός:] ποiλύiγομLφονi(Adj)(A) ὅiδιLσμαL(A)|
+(71) [Χορός:] viel|genietetes Weg|werk|
+(72) [Χορός:] ζυiγὸνi(A) ἀμLφιiβαiλὼνL(AorS)(Akt)(N) αὐLχέiνιi(D) πόνLτουL(G).|
+(72) [Χορός:] Joch an|legend der|Hals des|Meeres.|
+== Antistrophe 1 ==
+(73) [Χορός:] ποiλυiάνLδρουL(Adj)(G) δʼ(Pt) ἈiσίiαςL(G) θούLριiοςi(Adj)(N) ἄρLχωνL(N)|
+(73) [Χορός:] viel|männerigen aber Asiens kriegs|toll Herrscher|
+(74) [Χορός:] ἐiπὶi(Prp) πᾶLσανL(Adj)(A) χθόiναi(A) ποιLμαL‖νόριον(Adj)(A)|
+(74) [Χορός:] über ganze Erde herden|lenkerische|
+(75) [Χορός:] θεῖLονi(Adj)(A) ἐiλαύLνειL(Prä)(Akt)|
+(75) [Χορός:] göttlichen treibt|
+(76) [Χορός:] διiχόiθενL(Adv), πεLζοiνόiμονL(Adj)(A) τʼ(Pt) ἔκL(Prp)|
+(76) [Χορός:] von|zwei|Seiten, fuß|geordneten auch aus|
+(77) [Χορός:] τεi(Pt) θαiλάσLσαςL(G),|
+(77) [Χορός:] und der|See,|
+(78) [Χορός:] ἐiχυiροῖLσιi(Adj)(D) πεiποιLθὼςL(Per)(Akt)(N)|
+(78) [Χορός:] festen vertrauend|
+(79) [Χορός:] στυiφεiλοῖςL(Adj)(D) ἐiφέiταιςL(D), χρυ‖σογόνουL(Adj)(G)|
+(79) [Χορός:] harten Führern, gold|gebärender|
+(80) [Χορός:] γεiνεiᾶςL(G) ἰLσόiθεiοςL(Adj)(N) φώςL(N).|
+(80) [Χορός:] Geschlechts gott|gleicher Mann.|
+== Strophe 2 ==
+(81) [Χορός:] κυiάiνεονL(Adj)(A) δʼ(Pt) ὄμLμαiσιi(D) λεύσLσωνL(Prä)(Akt)(N)|
+(81) [Χορός:] dunkel|blau aber mit|Augen blickend|
+(82) [Χορός:] φοiνίiουL(Adj)(G) δέργLμαi(N) δράiκονLτοςL(G),|
+(82) [Χορός:] mörderischen Blick des|Drachen,|
+(83) [Χορός:] ποiλύiχειρL(Adj)(N) καὶL(Kon) ποiλυiναύLταςL(Adj)(A),|
+(83) [Χορός:] viel|händig und viel|schiffige,|
+(84) [Χορός:] ΣύiριiόνL(Adj)(A) θʼ(Pt) ἅρLμαi(A) διiώLκωνL(Prä)(Akt)(N),|
+(84) [Χορός:] syrisches auch Gespann verfolgend,|
+(85) [Χορός:] ἐiπάiγειL(Prä)(Akt) δουLριiκλύiτοιςL(Adj)(D) ἀνL‖δράσι(D)|
+(85) [Χορός:] führt|heran speer|gerühmten Männern|
+(86) [Χορός:] τοLξόiδαLμνονi(Adj)(A) ἌLρηL(A).|
+(86) [Χορός:] bogen|bändigenden Ares.|
+== Antistrophe 2 ==
+(87) [Χορός:] δόiκιiμοςL(Adj)(N) δʼ(Pt) οὔLτιςi(Pr)(N) ὑiποLστὰςL(AorS)(Akt)(N)|
+(87) [Χορός:] erprobt aber keiner stand|haltend|
+(88) [Χορός:] μεiγάiλῳL(Adj)(D) ῥεύLμαiτιi(D) φωLτῶνL(G)|
+(88) [Χορός:] großem Strom der|Männer|
+(89) [Χορός:] ἐiχυiροῖςL(Adj)(D) ἕρLκεiσινi(D) εἴρLγεινL(Prä)(Inf)(Akt)|
+(89) [Χορός:] mit|festen Zäunen ab|zu|sperren|
+(90) [Χορός:] ἄiμαiχονL(Adj)(A) κῦLμαi(A) θαiλάσLσαςL(G)·|
+(90) [Χορός:] un|kämpfbare Woge der|See·|
+(91) [Χορός:] ἀiπρόiσοιLστοςL(Adj)(N) γὰρi(Pt) ὁi(Art)(N) ΠερLσᾶνL(G)|
+(91) [Χορός:] unzugänglich denn der der|Perser|
+(92) [Χορός:] στραiτὸςi(N) ἀλLκίiφρωνL(Adj)(N) τεi(Pt) λαLόςL(N).|
+(92) [Χορός:] Heer tapfer|gesinnt und Volk.|
+== Strophe 3 ==
+(93) [Χορός:] θεiόiθενL(Adv) γὰρL(Pt) καiτὰi(Prp) ΜοῖρLʼ(A) ἐiκράiτηLσενL(Aor)(Akt)|
+(93) [Χορός:] von|den|Göttern denn gemäß der|Moira ob|siegte|
+(94) [Χορός:] τὸi(Art)(A) παiλαιLόνi(Adj)(A), ἐiπέLσκηLψεi(Aor)(Akt) δὲi(Pt) ΠέρLσαιςL(D)|
+(94) [Χορός:] das Alte, verhängte aber den|Persern|
+(96) [Χορός:] ποiλέiμουςL(A) πυρLγοiδαiΐLκτουςL(Adj)(A)|
+(96) [Χορός:] Kriege turm|zerstörend|
+(97) [Χορός:] διiέiπεινL(Prä)(Inf)(Akt) ἱπLπιiοiχάρLμαςL(A) τεi(Pt) κλόiνουςL(A)|
+(97) [Χορός:] zu|leiten Ross|gespann|Kämpfe und Getümmel|
+(99) [Χορός:] πόiλεiώνL(G) τʼ(Pt) ἀiναLστάiσειςL(A).|
+(99) [Χορός:] der|Städte und Auf|stände.|
+== Antistrophe 3 ==
+(100) [Χορός:] ἔiμαiθονL(Aor)(Akt) δʼ(Pt) εὐLρυiπόiροιLοi(Adj)(G) θαiλάσLσαςL(G)|
+(100) [Χορός:] lernte aber der|weit|fahrenden des|Meeres|
+(101) [Χορός:] ποiλιiαιLνοiμέiναςL(Prä)(M/P)(A) πνεύLμαiτιi(D) λάLβρῳL(Adj)(D)|
+(101) [Χορός:] grau|werdend vom|Hauch heftigem|
+(103) [Χορός:] ἐiσοiρᾶνL(Prä)(Inf)(Akt) πόνLτιiονi(Adj)(A) ἄλLσοςL(A),|
+(103) [Χορός:] an|zu|schauen meer|isch Hain,|
+(104) [Χορός:] πίiσυiνοιL(Adj)(N) λεLπτοiδόiμοιςL(Adj)(D) πείLσμαiσιi(D) λαL‖οπόροις(Adj)(D)|
+(104) [Χορός:] vertrauend fein|gebauten Tauen volks|befahrbaren|
+(106) [Χορός:] τεi(Pt) μαLχαiναῖςL(D).|
+(106) [Χορός:] und Vorrichtungen.|
+== Strophe 4 ==
+(107) [Χορός:] δοiλόiμηLτινL(Adj)(A) δʼ(Pt) ἀiπάiτανL(A) θεοῦL(G)|
+(107) [Χορός:] trug|sinnige aber List des|Gottes|
+(108) [Χορός:] τίςi(Pr)(N) ἀiνὴρL(N) θναLτὸςi(Adj)(N) ἀiλύLξειL(Aor)(Akt)(Knj);|
+(108) [Χορός:] welcher Mann sterblich ent|geht;|
+(109) [Χορός:] τίςi(Pr)(N) ὁi(Art)(N) κραιLπνῷL(Adj)(D) ποiδὶi(D) πήLδηL‖μα(A)|
+(109) [Χορός:] wer der mit|schnellem Fuß Sprung|
+(110) [Χορός:] τόδiʼ(Pr)(A) εὐLπεiτῶςL(Adv) ἀiνᾴσLσωνL(Prä)(Akt)(N);|
+(110) [Χορός:] dieses leicht herrschend;|
+== Antistrophe 4 ==
+(111) [Χορός:] φιiλόiφρωνL(Adj)(N) γὰρL(Pt) παiραiσαίLνειL(Prä)(Akt)|
+(111) [Χορός:] freundlich|gesinnt denn schmeichelt|
+(112) [Χορός:] βροiτὸνi(A) εἰςL(Prp) ἄρLκυiαςi(A) ἌLταL(N),|
+(112) [Χορός:] den|Sterblichen in Netze Áta,|
+(113) [Χορός:] τόiθενi(Adv) οὐκL(Pt) ἔLστινi(Prä)(Akt) ὕiπερLθένL(Adv)|
+(113) [Χορός:] von|dort nicht ist nach|oben|
+(114) [Χορός:] νινi(Pr)(A) ἄiναLτονi(Adj)(A) ἐLξαiλύLξαιL(Aor)(Akt)(Inf).|
+(114) [Χορός:] ihn un|getötet hin|aus|zu|entkommen.|
+== Strophe 5 ==
+(115) [Χορός:] ταῦLτάi(Pr)(A) μοιL(Pr)(D) μεiλαγLχίiτωνL(Adj)(N)|
+(115) [Χορός:] dieses mir schwarz|gewandet|
+(116) [Χορός:] φρὴνL(N) ἀiμύσLσεiταιL(Prä)(M/P) φόiβῳL(D),|
+(116) [Χορός:] Sinn zer|reißt|sich vor|Furcht,|
+(116a) [Χορός:] ὀiᾶL(ij),|
+(116a) [Χορός:] o|weh,|
+(117) [Χορός:] ΠερLσιiκοῦL(Adj)(G) στραiτεύLμαiτοςL(G)|
+(117) [Χορός:] des|persischen Heeres|
+(118) [Χορός:] τοῦLδεi(Pr)(G), μὴL(Pt) πόiλιςL(N) πύiθηL‖ται(AorS)(M/P)|
+(118) [Χορός:] dieses, nicht die|Stadt erfahre|
+(119) [Χορός:] κέiνανLδρονL(Adj)(A) μέγiʼ(Adv) ἄLστυi(A) ΣουLσίiδοςL(Adj)(G),|
+(119) [Χορός:] mann|leer sehr Stadt der|Susa|er,|
+== Antistrophe 5 ==
+(120) [Χορός:] καὶL(Kon) τὸi(Art)(N) ΚισLσίiωνL(Adj)(G) πόiλισμLʼ(N)|
+(120) [Χορός:] und die Stadt|anlage der|Kissier|
+(121) [Χορός:] ἀνLτίiδουLπονi(Adj)(N) ᾄLσεiταιL(Prä)(M/P),|
+(121) [Χορός:] wider|hallend wird|singen,|
+(121a) [Χορός:] ὀiᾶL(ij),|
+(121a) [Χορός:] o|weh,|
+(122) [Χορός:] τοῦτLʼ(Pr)(A) ἔiποςL(A) γυiναιLκοiπλη‖θὴLς(Adj)(N)|
+(122) [Χορός:] dieses Wort frauen|gefüllt|
+(123) [Χορός:] ὅiμιLλοςi(N) ἀLπύiωνL(Prä)(Akt)(N),|
+(123) [Χορός:] Haufe aus|rufend,|
+(125) [Χορός:] βυσLσίiνοιςL(Adj)(D) δʼ(Pt) ἐνL(Prp) πέiπλοιςL(D) πέiσῃL(AorS)(Akt)(Knj) λαiκίςL(N).|
+(125) [Χορός:] purpurnen aber in Gewändern möge|fallen Riß.|
+== Strophe 6 ==
+(126) [Χορός:] πᾶςL(Adj)(N) γὰρi(Pt) ἱπLπηLλάiταςL(N)|
+(126) [Χορός:] ganz denn Wagenlenker|
+(127) [Χορός:] καὶL(Kon) πεiδοLστιiβὴςL(Adj)(N) λεiὼςL(N)|
+(127) [Χορός:] und Boden|tretend Volk|
+(128) [Χορός:] σμῆLνοςi(N) ὣςL(Adv) ἐLκλέiλοιLπενL(Per)(Akt) μεiλισ‖σLᾶν(G)|
+(128) [Χορός:] Schwarm wie hat|verlassen der|Bienen|
+(129) [Χορός:] σὺνi(Prp) ὀρLχάiμῳL(D) στραiτοῦL(G),|
+(129) [Χορός:] mit Führer des|Heeres,|
+(130) [Χορός:] τὸνi(Art)(A) ἀμLφίLζευLκτονi(Adj)(A) ἐLξαiμείLψαςL(Aor)(Akt)(N)|
+(130) [Χορός:] den doppelt|gejochten gewechselt|habend|
+(131) [Χορός:] ἀμLφοiτέiραςL(Adj)(A) ἅiλιiονL(Adj)(A)|
+(131) [Χορός:] beider meer|ig|
+(132) [Χορός:] πρῶLναi(A) κοιLνὸνi(Adj)(A) αἴLαςL(G).|
+(132) [Χορός:] Vorgebirge gemeinsames der|Lande.|
+== Antistrophe 6 ==
+(133) [Χορός:] λέLκτραi(N) δʼ(Pt) ἀνLδρῶνL(G) πόiθῳL(D)|
+(133) [Χορός:] Lager aber der|Männer vor|Sehnsucht|
+(134) [Χορός:] πίμLπλαiταιL(Prä)(M/P) δαiκρύLμαiσινL(D)·|
+(134) [Χορός:] füllt|sich mit|Tränen·|
+(135) [Χορός:] ΠερLσίiδεςL(N) δʼ(Pt) ἁLβροiπενLθεῖςL(Adj)(N) ἑiκά‖σταL(Adv)|
+(135) [Χορός:] Perserinnen aber weich|trauernd jeweils|
+(136) [Χορός:] πόiθῳL(D) φιiλάLνοiριL(Adj)(D)|
+(136) [Χορός:] vor|Sehnsucht mann|liebend|
+(137) [Χορός:] τὸνi(Art)(A) αἰχLμάLενLταi(Adj)(A) θοῦLρονi(Adj)(A) εὐLναL‖τῆρ(A)|
+(137) [Χορός:] den speer|tragenden raschen Bett|hüter|
+(138) [Χορός:] ʼ ἀiποiπεμLψαiμέiναL(Aor)(M/P)(N)|
+(138) [Χορός:] hinweg|gesandt|habend|
+(139) [Χορός:] λείLπεiταιL(Prä)(M/P) μοiνόLζυξL(Adj)(N).|
+(139) [Χορός:] bleibt allein|gejocht.|
+(140) [Χορός:] ἀλλLʼ(Kon) ἄiγεi(Prä)(Imv)(Akt), |ΠέρLσαιL(V), |τόδiʼ(Pr)(A) ἐiνεL|ζόiμεiνοιL(Prä)(M/P)(N)|
+(140) [Χορός:] aber auf, Perser, dies nieder|sitzend|
+(141) [Χορός:] στέiγοςi(A) ἀρL|χαῖLονL(Adj)(A),|
+(141) [Χορός:] Dach alt|,|
+(142) [Χορός:] φρονLτίiδαi(A) |κεδLνὴνL(Adj)(A) |καὶL(Kon) βαiθύi|βουLλονL(Adj)(A)|
+(142) [Χορός:] Sorge tüchtig und tief|ratend|
+(143) [Χορός:] θώLμεiθαi(Prä)(M/P)(Knj), |χρείLαL(N) |δὲi(Pt) προiσήL|κειL(Prä)(Akt).|
+(143) [Χορός:] setzen|wir, Bedarf aber ist|angemessen.|
+(144) [Χορός:] πῶςL(Adv) ἄiραi(Pt) |πράσLσειL(Prä)(Akt) |ΞέρLξηςL(N) |βαiσιiλεὺςL(N)|
+(144) [Χορός:] wie also macht|es Xerxes König|
+(145) [Χορός:] ΔαLρειL|οiγεiνήςL(Adj)(N),|
+(145) [Χορός:] darius|geboren,|
+(146) [Χορός:] τὸi(Art)(N) παiτρωL|νύiμιiονL(Adj)(N) |γέiνοςi(N) ἡL|μέiτεiρονL(Adj)(N)·|
+(146) [Χορός:] das Vater|namige Geschlecht unser·|
+(147) [Χορός:] πόiτεiρονL(Kon) |τόLξουL(G) |ῥῦLμαi(N) τὸi(Art)(N) |νιLκῶνL(Prä)(Akt)(N),|
+(147) [Χορός:] ob des|Bogens Schwung das siegend,|
+(148) [Χορός:] ἢL(Kon) δοiριi|κράLνουL(Adj)(G)|
+(148) [Χορός:] oder speers|gekrönten|
+(149) [Χορός:] λόγLχηςL(G) |ἰLσχὺςL(N) |κεiκράiτηL|κενL(Per)(Akt).|
+(149) [Χορός:] der|Lanze Kraft hat|gesiegt.|
+(150) [Χορός:] ἀλλLʼ(Kon) ἥL|δεi(Pr)(N) θεiῶνL(G) |ἴiσονi(Adj)(N) ὀL|φθαλLμοῖςL(D)|
+(150) [Χορός:] aber diese der|Götter gleich den|Augen|
+(151) [Χορός:] φάiοςi(N) ὁρL|μᾶLταιL(Prä)(M/P) |μήLτηρL(N) |βαiσιiλέωςL(G),|
+(151) [Χορός:] Licht stürzt|sich Mutter des|Königs,|
+(152) [Χορός:] βαiσίiλειL|αi(Adj)(N) δʼ(Pt) ἐiμήL(Adj)(N)· |προLσπίτL|νωL(Prä)(Akt)·|
+(152) [Χορός:] königliche aber meine· falle|zu·|
+(153) [Χορός:] καὶL(Kon) προL|σφθόγLγοιςL(Adj)(D) |δὲi(Pt) χρεiὼνL(N) |αὐLτὴνL(Pr)(A)|
+(153) [Χορός:] und mit|Anreden aber Not sie|
+(154) [Χορός:] πάνLταςL(Adj)(A) |μύLθοιL|σιi(D) προiσαυL|δᾶνL(Prä)(Inf)(Akt).|
+(154) [Χορός:] alle mit|Worten zu|ansprechen.|
+(155) [Χορός:] ὦL(ij) βαi|θυLζώL|νωνL(Adj)(G) ἄi|νασLσαi(N) |ΠερLσίi|δωνL(G) ὑi|περLτάiτηL(Adj)(Sup)(N),|
+(155) [Χορός:] o der|tief|gegürteten Herrin der|Perserinnen höchste,|
+(156) [Χορός:] μῆLτερi(V) |ἡL(Art)(N) ΞέρL|ξουL(G) γεi|ραιLάi(Adj)(N), |χαῖLρεi(Prä)(Imv)(Akt), |ΔαLρείL|ουL(G) γύiναιL(V)·|
+(156) [Χορός:] Mutter die des|Xerxes alt, sei|gegrüßt, des|Darius Frau·|
+(157) [Χορός:] θεοῦL(G) μὲνi(Pt) |εὐLνάL|τειLραi(N) |ΠερLσῶνL(G), |θεiοῦL(G) δὲi(Pt) |καὶL(Kon) μήL|τηρL(N) ἔiφυςL(AorS)(Akt),|
+(157) [Χορός:] des|Gottes zwar Bett|gefährtin der|Perser, des|Gottes aber auch Mutter wurdest,|
+(158) [Χορός:] εἴL(Kon) τιi(Pr)(N) |μὴL(Pt) δαίL|μωνL(N) παi|λαιLὸςL(Adj)(N) |νῦνL(Adv) μεi|θέLστηL|κεL(Per)(Akt) στραiτῷL(D).|
+(158) [Χορός:] wenn etwas nicht Gott alt jetzt abgelassen|hat dem|Heer.|
+(159) [Ἄτοσσα:] ταῦLταi(Pr)(A) |δὴL(Pt) λιi|ποῦσLʼ(AorS)(Akt)(N) ἱi|κάLνωL(Prä)(Akt) |χρυLσεi|οLστόλL|μουςL(Adj)(A) δόiμουςL(A)|
+(159) [Ἄτοσσα:] dies also verlassen|habend erreiche gold|gerüstete Häuser|
+(160) [Ἄτοσσα:] καὶL(Kon) τὸi(Art)(N) |ΔαLρείL|ουL(G) τεi(Pt) |κἀLμὸνL(Kon)(Adj)(A) |κοιLνὸνi(Adj)(A) |εὐLναL|τήLριiονL(A).|
+(160) [Ἄτοσσα:] und das des|Darius und und|mein gemeinsames Bett|lager.|
+(161) [Ἄτοσσα:] κἀLμὲi(Kon)(Pr)(A) |καρLδίi|ανL(A) ἀi|μύσLσειL(Prä)(Akt) |φρονLτίςi(N)· |ἐςL(Prp) δʼ(Pt) ὑL|μᾶςL(Pr)(A) ἐiρῶL(Fu)(Akt)|
+(161) [Ἄτοσσα:] und|mich Herz zerreißt Sorge· zu aber euch werde|sagen|
+(162) [Ἄτοσσα:] μῦLθονi(A) |οὐLδαi|μῶςL(Adv) ἐi|μαυLτῆςL(Pr)(G) |οὖσLʼ(Prä)(Akt)(N) ἀi|δείLμανL|τοςL(Adj)(G), φίiλοιL(V),|
+(162) [Ἄτοσσα:] Wort keineswegs meiner|selbst seiend un|ängstlich, Freunde,|
+(163) [Ἄτοσσα:] μὴL(Pt) μέi|γαςL(Adj)(N) πλοῦL|τοςL(N) κοi|νίLσαςi(AorS)(Akt)(N) |οὖLδαςi(A) |ἀνLτρέL|ψῃL(Aor)(Akt)(Knj) ποiδὶL(D)|
+(163) [Ἄτοσσα:] nicht großer Reichtum staubig|gemacht|habend Boden um|stülpe mit|Fuß|
+(164) [Ἄτοσσα:] ὄλLβονi(A), |ὃνL(Pr)(A) ΔαL|ρεῖLοςi(N) |ἦLρενi(AorS)(Akt) |οὐκL(Pt) ἄi|νευL(Prp) θεi|ῶνL(G) τιiνοςL(Pr)(G).|
+(164) [Ἄτοσσα:] Glück, den Dareios erhob nicht ohne der|Götter irgendeines.|
+(165) [Ἄτοσσα:] ταῦLτάi(Pr)(N) |μοιL(Pr)(D) διi|πλῆL(Adj)(N) μέi|ριLμναi(N) |φραLστόςi(Adj)(N) |ἐLστινi(Prä)(Akt) |ἐνL(Prp) φρεiσίνL(D),|
+(165) [Ἄτοσσα:] dies mir doppelt Sorge faßbar ist in Sinnen,|
+(166) [Ἄτοσσα:] μήLτεi(Kon) |χρηLμάi|τωνL(G) ἀi|νάνLδρωνL(Adj)(G) |πλῆLθοςi(N) |ἐνL(Prp) τιL|μῇL(D) σέiβεινL(Prä)(Inf)(Akt)|
+(166) [Ἄτοσσα:] weder der|Güter mann|los Menge in Ehre zu|verehren|
+(167) [Ἄτοσσα:] μήτLʼ(Kon) ἀi|χρηLμάi|τοιLσιi(Adj)(D) |λάμLπεινL(Prä)(Inf)(Akt) |φῶςL(N) ὅi|σονL(Pr)(A) σθέi|νοςL(N) πάiραL(Adv).|
+(167) [Ἄτοσσα:] noch ohne|Güter zu|leuchten Licht so|viel Kraft bereit.|
+(168) [Ἄτοσσα:] ἔLστιi(Prä)(Akt) |γὰρL(Pt) πλοῦL|τόςL(N) γʼ(Pt) ἀi|μεμLφήςL(Adj)(N), |ἀμLφὶi(Prp) |δʼ(Pt) ὀLφθαλL|μῷL(D) φόiβοςL(N)·|
+(168) [Ἄτοσσα:] ist denn Reichtum doch tadellos, um aber dem|Auge Furcht·|
+(169) [Ἄτοσσα:] ὄμLμαi(N) |γὰρL(Pt) δόi|μωνL(G) νοi|μίLζωL(Prä)(Akt) |δεLσπόi|τουL(G) παi|ρουLσίiανL(A).|
+(169) [Ἄτοσσα:] Auge denn der|Häuser ich|halte des|Herrn Anwesenheit.|
+(170) [Ἄτοσσα:] πρὸςL(Prp) τάδiʼ(Pr)(A) |ὡςL(Kon) οὕL|τωςL(Adv) ἐi|χόνLτωνL(Prä)(Akt)(G) |τῶνLδεi(Pr)(G), |σύμLβουL|λοιL(N) λόiγουL(G)|
+(170) [Ἄτοσσα:] zu dieses wie so habend der|diesen, Ratgeber des|Wortes|
+(171) [Ἄτοσσα:] τοῦLδέi(Pr)(G) |μοιL(Pr)(D) γέi|νεLσθεi(Aor)(M/P)(Imv), |ΠέρLσαιL(V), |γηLραi|λέαL(Adj)(N) πιL|στώLμαiταL(N)·|
+(171) [Ἄτοσσα:] dieses mir werdet, Perser, greisen|hafte Stützen·|
+(172) [Ἄτοσσα:] πάνLταi(Adj)(N) |γὰρL(Pt) τὰi(Art)(N) |κέδνLʼ(Adj)(N) ἐνi(Prp) |ὑLμῖνL(Pr)(D) |ἐLστίi(Prä)(Akt) |μοιL(Pr)(D) βουL|λεύLμαiταL(N).|
+(172) [Ἄτοσσα:] alle denn die nützlichen in euch sind mir Ratschläge.|
+(173) [Χορός:] εὖL(Adv) τόδiʼ(Pr)(N) |ἴLσθιi(Prä)(Imv)(Akt), |γῆςL(G) ἄi|νασLσαi(N) |τῆσLδεi(Pr)(G), |μήL(Pt) σεi(Pr)(A) |δὶςL(Adv) φράiσαιL(Aor)(Inf)(Akt)|
+(173) [Χορός:] gut dies wisse, der|Erde Herrin dieser, nicht dich zweimal zu|sagen|
+(174) [Χορός:] μήτLʼ(Kon) ἔi|ποςL(N) μήτLʼ(Kon) |ἔρLγονi(N) |ὧνL(Pr)(G) ἂνL(Pt) |δύrναrμιςi(N) |ἡLγεῖL|σθαιL(Prä)(Inf)(M/P) θέiλῃL(Prä)(Akt)(Knj)·|
+(174) [Χορός:] noch Wort noch Tat deren wohl Vermögen zu|führen wolle·|
+(175) [Χορός:] εὐLμεi|νεῖςL(Adj)(A) γὰρi(Pt) |ὄνLταςi(Prä)(Akt)(A) |ἡLμᾶςL(Pr)(A) |τῶνLδεi(Pr)(G) |συμLβούL|λουςL(A) καiλεῖςL(Prä)(Akt).|
+(175) [Χορός:] wohlwollende denn seiend uns dieser Ratgeber nennst.|
+(176) [Ἄτοσσα:] πολLλοῖςL(Adj)(D) |μὲνi(Pt) αἰL|εὶL(Adv) νυL|κτέiροιςL(Adj)(D) |ὀiνείL|ραiσινL(D)|
+(176) [Ἄτοσσα:] vielen zwar immer nächtlichen Träumen|
+(177) [Ἄτοσσα:] ξύiνειμLʼ(Prä)(Akt), |ἀφiʼ(Prp) οὗL|περL(Pr)(G) παῖςL(N) |ἐiμὸςL(Adj)(N) |στείLλαςL(AorS)(Akt)(N) |στραiτὸνL(A)|
+(177) [Ἄτοσσα:] vertraut|bin, seit|von dem|genau Sohn mein ausgesandt|habend Heer|
+(178) [Ἄτοσσα:] ἸiαL|όiνωνL(G) |γῆνL(A) οἴL|χεiταιL(Prä)(M/P) |πέρLσαιL(Aor)(Inf)(Akt) |θέiλωνL(Prä)(Akt)(N)·|
+(178) [Ἄτοσσα:] der|Ionier Land ist|fort zu|verwüsten wollend·|
+(179) [Ἄτοσσα:] ἀλλLʼ(Kon) οὔL|τιi(Pt) πωL(Adv) |τοιLόνδLʼ(Adj)(A) |ἐiναρL|γὲςi(Adj)(A) εἰL|δόiμηνL(AorS)(Med)|
+(179) [Ἄτοσσα:] aber keineswegs bislang so|ein deutliches sah|ich|
+(180) [Ἄτοσσα:] ὡςL(Kon) τῆςL(Art)(G) |πάiροιL|θενi(Adv) εὐL|φρόiνηςL(G)· |λέLξωL(Fu)(Akt) |δέi(Pt) σοιL(Pr)(D).|
+(180) [Ἄτοσσα:] wie der vorherigen Nacht· sagen|werde aber dir.|
+(181) [Ἄτοσσα:] ἐiδοL|ξάiτηνL(Aor)(Akt)(Du) |μοιL(Pr)(D) δύrοr(Adj) |γυiναῖκLʼ(Du)(N) |εὐLείL|μοiνεL(Adj)(Du)(N),|
+(181) [Ἄτοσσα:] schienen mir zwei Frauen gut|gekleidet,|
+(182) [Ἄτοσσα:] ἡL(Art)(N) μὲνL(Pt) |πέiπλοιL|σιi(D) ΠερL|σιiκοῖςL(Adj)(D) |ἠLσκηL|μέiνηL(Per)(M/P)(N),|
+(182) [Ἄτοσσα:] die zwar Gewändern persischen geschmückt|seiend,|
+(183) [Ἄτοσσα:] ἡL(Art)(N) δʼ(Pt) αὖL|τεi(Adv) ΔωL|ριiκοῖL|σινi(Adj)(D), εἰςL(Prp) |ὄLψινL(A) |μοiλεῖνL(AorS)(Inf)(Akt),|
+(183) [Ἄτοσσα:] die aber wiederum dorischen, in Anblick zu|kommen,|
+(184) [Ἄτοσσα:] μεrγέrθειL(D) |τεi(Pt) τῶνL(Art)(G) |νῦνL(Adv) ἐκL|πρεiπεL|στάiταL(Adv)(Sup) |ποiλύL(Adv),|
+(184) [Ἄτοσσα:] an|Größe und der jetzt am|auffälligsten sehr,|
+(185) [Ἄτοσσα:] κάλLλειL(D) |τʼ(Pt) ἀiμώL|μωL(Adj)(D), καὶL(Kon) |καiσιL|γνήLταL(Du)(N) |γέiνουςL(G)|
+(185) [Ἄτοσσα:] an|Schönheit und tadellos, und Schwestern des|Geschlechts|
+(186) [Ἄτοσσα:] ταὐLτοῦL(Adj)(G)· |πάiτρανL(A) |δʼ(Pt) ἔiναιL|ονi(Imp)(Akt) ἡL(Art)(N) |μὲνi(Pt) ἙλL|λάiδαL(A)|
+(186) [Ἄτοσσα:] des|selben· Vaterland aber bewohnten die zwar Hellas|
+(187) [Ἄτοσσα:] κλήLρῳL(D) |λαiχοῦL|σαi(AorS)(Akt)(N) γαῖL|ανi(A), ἡL(Art)(N) |δὲi(Pt) βάρL|βαiρονL(Adj)(A).|
+(187) [Ἄτοσσα:] durch|Los erlangt|habend Land, die aber barbarisches.|
+(188) [Ἄτοσσα:] τούLτωL(Pr)(Du)(D) |στάiσινL(A) |τινiʼ(Pr)(A), ὡςL(Kon) |ἐiγὼL(Pr)(N) |ʼδόiκουνL(Imp)(Akt) |ὁiρᾶνL(Prä)(Inf)(Akt),|
+(188) [Ἄτοσσα:] diesen Streit irgendeinen, wie ich meinte zu|sehen,|
+(189) [Ἄτοσσα:] τεύLχεινL(Prä)(Inf)(Akt) |ἐνi(Prp) ἀλL|λήLλαιL|σιi(Pr)(D)· παῖςL(N) |δʼ(Pt) ἐiμὸςL(Adj)(N) |μαiθὼνL(AorS)(Akt)(N)|
+(189) [Ἄτοσσα:] zu|verursachen in einander· Sohn aber mein erfahren|habend|
+(190) [Ἄτοσσα:] καiτεῖL|χεi(Imp)(Akt) κἀL|πράiυL|νενi(Imp)(Akt), ἅρL|μαiσινL(D) |δʼ(Pt) ὕiποL(Prp)|
+(190) [Ἄτοσσα:] hielt|nieder und|beruhigte, mit|Wagen aber unter|
+(191) [Ἄτοσσα:] ζεύLγνυL|σινi(Prä)(Akt) αὐL|τὼL(Pr)(Du)(A) καὶL(Kon) |λέiπαδνLʼ(A) |ἐπiʼ(Prp) αὐL|χέiνωνL(G)|
+(191) [Ἄτοσσα:] spannt beide|sie und Joch|bänder auf der|Hälse|
+(192) [Ἄτοσσα:] τίiθηL|σιi(Prä)(Akt). χἠL(Kon)(Art)(N) |μὲνL(Pt) τῇδLʼ(Pr)(D) |ἐiπυρL|γοῦLτοL(Imp)(M/P) |στοiλῇL(D)|
+(192) [Ἄτοσσα:] legt. und|die zwar dieser|hier türmte|sich im|Gewand|
+(193) [Ἄτοσσα:] ἐνi(Prp) ἡL|νίiαιL|σίi(D) τʼ(Pt) εἶL|χενi(Imp)(Akt) εὔL|αρLκτονL(Adj)(A) |στόiμαL(A),|
+(193) [Ἄτοσσα:] in den|Zügeln und hatte willfähriges Maul,|
+(194) [Ἄτοσσα:] ἡL(Art)(N) δʼ(Pt) ἐL|σφάiδαL|ζεi(Imp)(Akt), καὶL(Kon) |χεiροῖνL(Du)(D) |ἔνLτηL(Adv) |δίiφρουL(G)|
+(194) [Ἄτοσσα:] die aber krampfte, und mit|beiden|Händen entgegen des|Wagenkorbs|
+(195) [Ἄτοσσα:] διiαL|σπαiράσL|σειL(Prä)(Akt) καὶL(Kon) |ξυiναρL|πάLζειL(Prä)(Akt) |βίiᾳL(D)|
+(195) [Ἄτοσσα:] zerreißt und zusammen|rafft mit|Gewalt|
+(196) [Ἄτοσσα:] ἄiνευL(Prp) |χαiλιL|νῶνL(G) καὶL(Kon) |ζυiγὸνL(A) |θραύLειL(Prä)(Akt) |μέiσονL(Adj)(A).|
+(196) [Ἄτοσσα:] ohne der|Zügel und Joch bricht mittig.|
+(197) [Ἄτοσσα:] πίLπτειL(Prä)(Akt) |δʼ(Pt) ἐiμὸςL(Adj)(N) |παῖςL(N), καὶL(Kon) |παiτὴρL(N) |παiρίL|σταiταιL(Prä)(M/P)|
+(197) [Ἄτοσσα:] fällt aber mein Sohn, und Vater tritt|hinzu|
+(198) [Ἄτοσσα:] ΔαLρεῖL|οςi(N) οἰL|κτείLρωνL(Prä)(Akt)(N) |σφεi(Pr)(A)· τὸνL(Art)(A) |δʼ(Pt) ὅiπωςL(Kon) |ὁiρᾷL(Prä)(Akt)|
+(198) [Ἄτοσσα:] Dareios bemitleidend sie· den aber als er|sieht|
+(199) [Ἄτοσσα:] ΞέρLξηςL(N), |πέiπλουςL(A) |ῥήLγνυL|σινi(Prä)(Akt) ἀμL|φὶi(Prp) σώL|μαiτιL(D).|
+(199) [Ἄτοσσα:] Xerxes, Gewänder zerreißt um dem|Körper.|
+(200) [Ἄτοσσα:] καὶL(Kon) ταῦL|ταi(Pr)(A) μὲνL(Pt) |δὴL(Pt) νυL|κτὸςi(G) εἰL|σιiδεῖνL(AorS)(Inf)(Akt) |λέiγωL(Prä)(Akt).|
+(200) [Ἄτοσσα:] und dieses zwar wirklich der|Nacht zu|erblicken sage|ich.|
+(201) [Ἄτοσσα:] ἐiπεὶL(Kon) |δʼ(Pt) ἀiνέL|στηνL(AorS)(Akt) καὶL(Kon) |χεiροῖνL(Du)(D) |καλLλιρL|ρόiουL(Adj)(G)|
+(201) [Ἄτοσσα:] als aber stand|ich|auf und mit|beiden|Händen der|schön|fließenden|
+(202) [Ἄτοσσα:] ἔLψαυL|σαi(Aor)(Akt) πηL|γῆςL(G), σὺνL(Prp) |θυiηL|πόiλῳL(Adj)(D) |χεiρὶL(D)|
+(202) [Ἄτοσσα:] berührte der|Quelle, mit opfernden Hand|
+(203) [Ἄτοσσα:] βωLμὸνL(A) |προiσέL|στηνL(AorS)(Akt), ἀrποr|τρόiποιL|σιi(Adj)(D) δαίL|μοiσινL(D)|
+(203) [Ἄτοσσα:] Altar trat|ich|nahe, abwendenden Dämonen|
+(204) [Ἄτοσσα:] θέiλουL|σαi(Prä)(Akt)(N) θῦL|σαιL(Aor)(Inf)(Akt) πέrλαr|νονi(A), ὧνL(Pr)(G) |τέiληL(N) |τάiδεL(Pr)(N).|
+(204) [Ἄτοσσα:] wollend zu|opfern Opferkuchen, deren Ziele diese.|
+(205) [Ἄτοσσα:] ὁiρῶL(Prä)(Akt) |δὲi(Pt) φεύL|γοντLʼ(Prä)(Akt)(A) αἰL|εiτὸνL(A) |πρὸςi(Prp) ἐL|σχάiρανL(A)|
+(205) [Ἄτοσσα:] sehe aber fliehend Adler auf Feuerstelle|
+(206) [Ἄτοσσα:] ΦοίLβουL(G)· |φόiβῳL(D) |δʼ(Pt) ἄLφθογL|γοςi(Adj)(N) ἐL|στάiθηνL(AorS)(Pas), |φίiλοιL(V)·|
+(206) [Ἄτοσσα:] des|Phoibos· aus|Furcht aber stumm stand|ich, Freunde·|
+(207) [Ἄτοσσα:] μεiθύL|στεiρονL(Adv)(Kmp) |δὲi(Pt) κίρL|κονi(A) εἰL|σοiρῶL(Prä)(Akt) |δρόiμῳL(D)|
+(207) [Ἄτοσσα:] später aber Würgfalken ich|sehe im|Lauf|
+(208) [Ἄτοσσα:] πτεiροῖςL(D) |ἐiφορL|μαίLνονL|ταi(Prä)(Akt)(A) καὶL(Kon) |χηLλαῖςL(D) |κάiραL(A)|
+(208) [Ἄτοσσα:] mit|Flügeln angreifend und mit|Krallen Kopf|
+(209) [Ἄτοσσα:] τίλLλονθLʼ(Prä)(Akt)(A)· |ὁi(Art)(N) δʼ(Pt) οὐL|δὲνi(Pr)(A) ἄλL|λοi(Adj)(A) γʼ(Pt) ἢL(Kon) |πτήLξαςL(AorS)(Akt)(N) |δέiμαςL(A)|
+(209) [Ἄτοσσα:] rupfend· der aber nichts anderes doch als geduckt|habend Leib|
+(210) [Ἄτοσσα:] παiρεῖL|χεi(Imp)(Akt). ταῦτLʼ(Pr)(A) |ἔiμοιL|γεi(Pr)(D) δείL|ματiʼ(A) εἰL|σιiδεῖνL(AorS)(Inf)(Akt),|
+(210) [Ἄτοσσα:] bot|dar. dieses mir|doch Schrecken zu|erblicken,|
+(211) [Ἄτοσσα:] ὑLμῖνL(Pr)(D) |δʼ(Pt) ἀiκούL|εινL(Prä)(Inf)(Akt). εὖL(Adv) |γὰρi(Pt) ἴL|στεi(Prä)(Imv)(Akt), παῖςL(N) |ἐiμὸςL(Adj)(N)|
+(211) [Ἄτοσσα:] euch aber zu|hören. gut denn wißt, Sohn mein|
+(212) [Ἄτοσσα:] πράLξαςL(Aor)(Akt)(N) |μὲνi(Pt) εὖL(Adv) |θαυLμαL|στὸςi(Adj)(N) ἂνL(Pt) |γέiνοιτLʼ(Aor)(Med)(Op) |ἀiνήρL(N),|
+(212) [Ἄτοσσα:] getan|habend zwar gut bewundernswert wohl würde|werden Mann,|
+(213) [Ἄτοσσα:] καiκῶςL(Adv) |δὲi(Pt) πράL|ξαςi(Aor)(Akt)(N), οὐχL(Pt) |ὑiπεύL|θυLνοςL(Adj)(N) |πόiλειL(D),|
+(213) [Ἄτοσσα:] schlecht aber getan|habend, nicht rechenschaftspflichtig der|Stadt,|
+(214) [Ἄτοσσα:] σωLθεὶςL(Aor)(Pas)(N) |δʼ(Pt) ὁiμοίL|ωςL(Adv) τῆσL|δεi(Pr)(G) κοιL|ραiνεῖL(Prä)(Akt) |χθοiνόςL(G).|
+(214) [Ἄτοσσα:] gerettet|worden aber gleich|weise dieser herrscht Erde.|
+(215) [Χορός:] οὔL(Pt) σεi(Pr)(A) |βουLλόi|μεLσθαi(Prä)(M/P), |μῆLτερi(V), |οὔτLʼ(Kon) ἄi|γανL(Adv) φοi|βεῖνL(Prä)(Inf)(Akt) λόiγοιςL(D)|
+(215) [Χορός:] nicht dich wollen|wir, Mutter, weder allzu zu|erschrecken mit|Worten|
+(216) [Χορός:] οὔLτεi(Kon) |θαρLσύi|νεινL(Prä)(Inf)(Akt). θεi|οὺςL(A) δὲi(Pt) |προLστροi|παῖςL(D) ἱi|κνουLμέiνηL(Prä)(M/P)(N),|
+(216) [Χορός:] noch zu|ermuntern. Götter aber mit|Bittefluchten flehend|kommend,|
+(217) [Χορός:] εἴL(Kon) τιi(Pr)(N) |φλαῦLρονi(Adj)(A) |εἶLδεςi(Aor)(Akt), |αἰLτοῦL(Prä)(M/P)(Imv) |τῶνδLʼ(Pr)(G) ἀi|ποLτροi|πὴνL(A) τεiλεῖνL(Prä)(Inf)(Akt),|
+(217) [Χορός:] wenn etwas schlechtes du|sahst, fordere|du dieser Abwendung zu|vollziehen,|
+(218) [Χορός:] τὰr(Art)(A) δʼ(Pt) ἀrγάθiʼ(Adj)(A) |ἐLκτεi|λῆL(Adj)(A) γεi|νέLσθαιL(Aor)(Med)(Inf) |σοίL(Pr)(D) τεi(Pt) |καὶL(Kon) τέi|κνοιςL(D) σέiθενL(Pr)(G)|
+(218) [Χορός:] die aber guten vollendet zu|werden dir und auch Kindern deiner|
+(219) [Χορός:] καὶL(Kon) πόi|λειL(D) φίi|λοιςL(D) τεi(Pt) |πᾶLσιi(Adj)(D). |δεύLτεi|ρονL(Adv) δὲi(Pt) |χρὴL(Prä)(Akt) χοiὰςL(A)|
+(219) [Χορός:] und der|Stadt Freunden auch allen. zweitens aber ist|nötig Gießopfer|
+(220) [Χορός:] ΓῇL(D) τεi(Pt) |καὶL(Kon) φθιi|τοῖςL(Adj)(D) χέi|αLσθαιL(Aor)(Med)(Inf)· |πρευLμεi|νῶςL(Adv) δʼ(Pt) αἰL|τοῦL(Prä)(M/P)(Imv) τάiδεL(Pr)(A),|
+(220) [Χορός:] der|Erde und auch den|Sterblichen zu|gießen· gütig|gesinnt aber fordere|du dieses,|
+(221) [Χορός:] σὸνL(Adj)(A) πόi|σινL(A) ΔαL|ρεῖLονi(A), |ὅνLπερL(Pr)(A) |φὴςL(Prä)(Akt) ἰi|δεῖνL(AorS)(Inf)(Akt) κατiʼ(Prp) |εὐLφρόiνηνL(A),|
+(221) [Χορός:] deinen Gatten Dareios, den|gerade sagst|du zu|sehen gemäß der|Nacht,|
+(222) [Χορός:] ἐLσθλάi(Adj)(A) |σοιL(Pr)(D) πέμL|πεινL(Prä)(Inf)(Akt) τέi|κνῳL(D) τεi(Pt) |γῆςL(G) ἔi|νερLθενi(Adv) |ἐςL(Prp) φάiοςL(A),|
+(222) [Χορός:] Gutes dir zu|senden dem|Kind auch der|Erde von|unten in Licht,|
+(223) [Χορός:] τἄμLπαi|λινL(Adv) δὲi(Pt) |τῶνLδεi(Pr)(G) |γαίLᾳL(D) |κάrτοrχαi(Adj)(A) |μαυLροῦL|σθαιL(Prä)(M/P)(Inf) σκόiτῳL(D).|
+(223) [Χορός:] umgekehrt aber dieser der|Erde fest|gehaltene im|Dunkel|sein Dunkel.|
+(224) [Χορός:] ταῦLταi(Pr)(A) |θυLμόi|μανLτιςi(N) |ὤνL(Prä)(Akt)(N) σοιL(Pr)(D) |πρευLμεi|νῶςL(Adv) παi|ρῄLνεiσαL(Aor)(Akt).|
+(224) [Χορός:] dieses Seelen|Seher seiend dir gütig riet|ich.|
+(225) [Χορός:] εὖL(Adv) δὲi(Pt) |πανLταi|χῇL(Adv) τεi|λεῖνL(Prä)(Inf)(Akt) σοιL(Pr)(D) |τῶνLδεi(Pr)(G) |κρίLνοi|μενL(Prä)(Akt) πέiριL(Prp).|
+(225) [Χορός:] gut aber all|seitig zu|vollziehen dir dieser urteilen|wir darüber.|
+(226) [Ἄτοσσα:] ἀλLλὰi(Kon) |μὴνL(Pt) εὔL|νουςL(Adj)(N) γʼ(Pt) ὁi(Art)(N) |πρῶLτοςL(Adj)(N)(Sup) |τῶνδLʼ(Pr)(G) ἐi|νυLπνίi|ωνL(G) κριiτὴςL(N)|
+(226) [Ἄτοσσα:] aber wahrlich wohlwollend doch der erste dieser Träume Richter|
+(227) [Ἄτοσσα:] παιLδὶi(D) |καὶL(Kon) δόi|μοιςL(D) ἐi|μοῖLσιi(Adj)(D) |τήνδLʼ(Art)(A) ἐi|κύLρωL|σαςL(Aor)(Akt) φάiτινL(A).|
+(227) [Ἄτοσσα:] dem|Sohn und Häusern meinen diese hast|bestätigt Weissagung.|
+(228) [Ἄτοσσα:] ἐLκτεi|λοῖLτοi(Prä)(M/P)(Op) |δὴL(Pt) τὰi(Art)(A) |χρηLστάi(Adj)(A)· |ταῦLταi(Pr)(N) |δʼ(Pt), ὡςL(Kon) ἐi|φίLεiσαιL(Prä)(M/P),|
+(228) [Ἄτοσσα:] möge|erfüllt|werden eben die guten· dieses aber, wie du|begehrst,|
+(229) [Ἄτοσσα:] πάνLταi(Adj)(A) |θήLσοi|μενL(Fu)(Akt) θεi|οῖLσιi(D) |τοῖςL(Art)(D) τʼ(Pt) ἔi|νερLθεi(Adv) |γῆςL(G) φίiλοιςL(D),|
+(229) [Ἄτοσσα:] alles werden|wir|darbringen Göttern den und unten der|Erde Freunden,|
+(230) [Ἄτοσσα:] εὖτLʼ(Kon) ἂνi(Pt) |εἰςL(Prp) οἴL|κουςL(A) μόi|λωLμενL(AorS)(Akt)(Knj). |κεῖLναi(Pr)(A) |δʼ(Pt) ἐκLμαi|θεῖνL(Aor)(Inf)(Akt) θέiλωL(Prä)(Akt),|
+(230) [Ἄτοσσα:] sobald wohl in Häuser kommen|wir. jenes aber auswendig|zu|lernen will|ich,|
+(231) [Ἄτοσσα:] ὦL(ij) φίi|λοιL(V), ποῦL(Adv) |τὰςL(Art)(A) Ἀi|θήLναςL(A) |φαLσὶνi(Prä)(Akt) |ἱLδρῦL|σθαιL(Per)(M/P)(Inf) χθοiνόςL(G).|
+(231) [Ἄτοσσα:] o Freunde, wo die Athen sagen|sie angesiedelt|zu|sein des|Landes.|
+(232) [Χορός:] τῆLλεi(Adv) |πρὸςL(Prp) δυL|σμαῖςL(D) ἄi|ναLκτοςi(G) |ἩLλίi|ουL(G) φθιL|ναLσμάiτωνL(G).|
+(232) [Χορός:] fern gegen den|Westen des|Herrn der|Sonne des|Untergangs.|
+(233) [Ἄτοσσα:] ἀλLλὰi(Kon) |μὴνL(Pt) ἵi|μειρLʼ(Prä)(Akt) ἐi|μὸςL(Adj)(N) παῖςL(N) |τήνLδεi(Pr)(A) |θηLρᾶL|σαιL(Aor)(Inf)(Akt) πόiλινL(A);|
+(233) [Ἄτοσσα:] aber wahrlich verlangte mein Sohn diese|hier zu|jagen Stadt;|
+(234) [Χορός:] πᾶLσαi(Adj)(N) |γὰρL(Pt) γέi|νοιτLʼ(Aor)(Med)(Op) ἂνi(Pt) |ἙλLλὰςL(N) |βαrσιrλέi|ωςL(G) ὑi|πήLκοiοςL(Adj)(N).|
+(234) [Χορός:] ganz denn würde|werden wohl Hellas des|Königs untertan.|
+(235) [Ἄτοσσα:] ὧLδέi(Adv) |τιςL(Pr)(N) πάi|ρεLστινi(Prä)(Akt) |αὐLτοῖςL(Pr)(D) |ἀνLδροi|πλήLθειL|αL(N) στραiτοῦL(G);|
+(235) [Ἄτοσσα:] so jemand ist|anwesend ihnen Männer|Fülle des|Heeres;|
+(236) [Χορός:] καὶL(Kon) στραi|τὸςL(N) τοιL|οῦLτοςi(Adj)(N), |ἔρLξαςL(Aor)(Akt)(N) |πολLλὰi(Adj)(A) |δὴL(Pt) ΜήL|δουςL(A) καiκάL(Adj)(A).|
+(236) [Χορός:] und Heer so|beschaffen, getan|habend vieles wirklich Meder Übles.|
+(237) [Ἄτοσσα:] καὶL(Kon) τίi(Pr)(A) |πρὸςL(Prp) τούL|τοιLσινi(Pr)(D) |ἄλLλοi(Adj)(A); |πλοῦLτοςi(N) |ἐLξαρL|κὴςL(Adj)(N) δόiμοιςL(D);|
+(237) [Ἄτοσσα:] und was zu diesen|hier anderes; Reichtum ausreichend den|Häusern;|
+(238) [Χορός:] ἀρLγύi|ρουL(G) πηL|γήL(N) τιςi(Pr)(N) |αὐLτοῖςL(Pr)(D) |ἐLστιi(Prä)(Akt), |θηLσαυL|ρὸςL(N) χθοiνόςL(G).|
+(238) [Χορός:] von|Silber Quelle irgendeine ihnen ist, Schatz der|Erde.|
+(239) [Ἄτοσσα:] πόrτεrραi(Kon) |γὰρL(Pt) τοL|ξουλLκὸςi(Adj)(N) |αἰχLμὴL(N) |διrὰr(Prp) χεi|ροῖνL(Du)(D) αὐL|τοῖςL(Pr)(D) πρέiπειL(Prä)(Akt);|
+(239) [Ἄτοσσα:] ob denn bogen|ziehend Spitze durch Händen ihnen ziemt;|
+(240) [Χορός:] οὐLδαi|μῶςL(Adv)· ἔγL|χηL(N) σταi|δαῖLαi(Adj)(N) |καὶL(Kon) φεi|ράLσπιi|δεςL(Adj)(N) σαiγαίL(N).|
+(240) [Χορός:] keineswegs· Speere stehende und schild|tragende Lanzen.|
+(241) [Ἄτοσσα:] τίςL(Pr)(N) δὲi(Pt) |ποιLμάL|νωρL(N) ἔi|πεLστιi(Prä)(Akt) |κἀLπιi|δεLσπόL|ζειL(Kon)(Prä)(Akt) στραiτῷL(D);|
+(241) [Ἄτοσσα:] wer aber Hirten|Herr ist|darüber und|über|herrscht dem|Heer;|
+(242) [Χορός:] οὔLτιi|νοςL(Pr)(G) δοῦL|λοιL(N) κέi|κληνLταιL(Per)(M/P) |φωLτὸςi(G) |οὐδLʼ(Kon) ὑi|πήLκοiοιL(Adj)(N).|
+(242) [Χορός:] keines|Mannes Sklaven sind|genannt Mannes und|nicht untertan.|
+(243) [Ἄτοσσα:] πῶςL(Adv) ἂνi(Pt) |οὖνL(Pt) μέi|νοιLενi(Prä)(Akt)(Op) |ἄνLδραςL(A) |ποrλεrμίi|ουςL(Adj)(A) ἐi|πήLλυiδαςL(Adj)(A);|
+(243) [Ἄτοσσα:] wie wohl nun würden|verweilen Männer feindliche Eindringlinge;|
+(244) [Χορός:] ὥLστεi(Kon) |ΔαLρείL|ουL(G) ποi|λύνL(Adj)(A) τεi(Pt) |καὶL(Kon) καi|λὸνL(Adj)(A) φθεῖL|ραιL(Aor)(Inf)(Akt) στραiτόνL(A).|
+(244) [Χορός:] sodass des|Dareios großen und auch schönen zu|verderben Heer.|
+(245) [Ἄτοσσα:] δειLνάi(Adj)(A) |τοιL(Pt) λέi|γειςL(Prä)(Akt) ἰi|όνLτωνL(Prä)(Akt)(G) |τοῖςL(Art)(D) τεi|κοῦLσιi(AorS)(Akt)(D) |φρονLτίiσαιL(Aor)(Inf)(Akt).|
+(245) [Ἄτοσσα:] schreckliche ja sagst|du der|Gehenden den Erzeugern zu|sorgen.|
+(246) [Χορός:] ἀλλLʼ(Kon) ἐi|μοὶL(Pr)(D) δοi|κεῖνL(Prä)(Inf)(Akt) τάχiʼ(Adv) |εἴLσῃL(Fu)(Akt) |πάνLταi(Adj)(A) |νηLμερL|τῆL(Adj)(A) λόiγονL(A).|
+(246) [Χορός:] aber mir zu|scheinen bald wirst|wissen alle un|trügliche Bericht.|
+(247) [Χορός:] τοῦLδεi(Pr)(G) |γὰρL(Pt) δράi|μηLμαi(N) |φωLτὸςL(G) |ΠερLσιi|κὸνL(Adj)(N) πρέi|πειL(Prä)(Akt) μαiθεῖνL(Aor)(Inf)(Akt),|
+(247) [Χορός:] dieses denn Tat des|Mannes persisch ziemt zu|erfahren,|
+(248) [Χορός:] καὶL(Kon) φέi|ρειL(Prä)(Akt) σαi|φέςL(Adj)(A) τιi(Pr)(A) |πρᾶLγοςi(A) |ἐLσθλὸνi(Adj)(A) |ἢL(Kon) καi|κὸνL(Adj)(A) κλύiεινL(Prä)(Inf)(Akt).|
+(248) [Χορός:] und bringt klar irgend|ein Ding gut oder schlecht zu|hören.|
+(249) [Ἄγγελος:] ὦL(ij) γῆςL(G) |ἁiπάL|σηςL(Adj)(G) Ἀrσιr|άiδοςL(Adj)(G) |ποiλίL|σμαiταL(N),|
+(249) [Ἄγγελος:] o der|Erde ganzen asiatischen Städte|anlagen,|
+(250) [Ἄγγελος:] ὦL(ij) ΠερL|σὶςi(Adj)(N) αἶL|αi(N) καὶL(Kon) |ποiλὺςL(Adj)(N) |πλούLτουL(G) |λιiμήνL(N),|
+(250) [Ἄγγελος:] o persisch Land und großer des|Reichtums Hafen,|
+(251) [Ἄγγελος:] ὡςL(Adv) ἐνL(Prp) |μιiᾷL(Adj)(D) |πληLγῇL(D) |καiτέL|φθαρLταιL(Per)(M/P) |ποiλὺςL(Adj)(N)|
+(251) [Ἄγγελος:] wie in einem Schlag vernichtet|ist viel|
+(252) [Ἄγγελος:] ὄλLβοςL(N), |τὸi(Art)(N) ΠερL|σῶνL(G) δʼ(Pt) ἄνL|θοςi(N) οἴL|χεiταιL(Prä)(M/P) |πεiσόνL(AorS)(Akt)(N).|
+(252) [Ἄγγελος:] Glück, das der|Perser aber Blüte ist|fort gefallen|seiend.|
+(253) [Ἄγγελος:] ὤLμοιL(ij), |καiκὸνL(Adj)(A) |μὲνL(Pt) πρῶL|τονi(Adj)(A)(Sup) ἀγL|γέλLλεινL(Prä)(Inf)(Akt) |καiκάL(Adj)(A)·|
+(253) [Ἄγγελος:] weh, schlecht zwar zuerst zu|melden Übel·|
+(254) [Ἄγγελος:] ὅLμωςL(Adv) |δʼ(Pt) ἀiνάγL|κηL(N) πᾶνL(Adj)(A) |ἀiναL|πτύLξαιL(Aor)(Inf)(Akt) |πάiθοςL(A),|
+(254) [Ἄγγελος:] dennoch aber Notwendigkeit alles auf|zu|rollen Leiden,|
+(255) [Ἄγγελος:] ΠέρLσαιL(V)· |στραiτὸςL(N) |γὰρL(Pt) πᾶςL(Adj)(N) |ὄiλωL|λεi(Per)(Akt) βαρL|βάiρωνL(Adj)(G).|
+(255) [Ἄγγελος:] Perser· Heer denn ganz ist|zugrunde|gegangen der|Barbaren.|
+=== Stasimon ===
+== Strophe 1 ==
+(256) [Χορός:] ἄiνιrαr(N) |ἄiνιrαr(N) |νεiόrκοr|ταi(Adj)(N) καὶL(Kon)|
+(256) [Χορός:] Kümmernisse Kümmernisse neu|gekommene und|
+(257) [Χορός:] δάLιiʼ(N)· αἰLαῖL(ij), διiαίLνεLσθεi(Prä)(M/P)(Imv), ΠέρL‖σαι(V),|
+(257) [Χορός:] Leid· ai|ai, haltet|aus, Perser,|
+(259) [Χορός:] τόδiʼ(Pr)(A) ἄiχοςL(A) κλύiονLτεςL(Prä)(Akt)(N).|
+(259) [Χορός:] dieses Leid hörend.|
+(260) [Ἄγγελος:] ὡςL(Adv) πάνL|ταi(Adj)(N) γʼ(Pt) ἔστLʼ(Prä)(Akt) |ἐiκεῖL|ναi(Pr)(N) διrαr|πεiπραγL|μέiναL(Per)(M/P)(N)·|
+(260) [Ἄγγελος:] wie alle doch ist jene durch|vollbracht·|
+(261) [Ἄγγελος:] αὐLτὸςL(Pr)(N) |δʼ(Pt) ἀiέλL|πτωςL(Adv) νόL|στιiμονL(Adj)(A) |βλέiπωL(Prä)(Akt) |φάiοςL(A).|
+(261) [Ἄγγελος:] selbst aber unerwartet heimkehr|lich sehe Licht.|
+== Antistrophe 1 ==
+(262) [Χορός:] ἦL(Pt) μαrκροr|βίiοrτοςr(Adj)(N) |ὅiδεr(Pr)(N) γέr(Pt) |τιςi(Pr)(N) αἰL‖ὼν(N)|
+(262) [Χορός:] wahrlich lang|lebig dieser doch irgendein Lebens|zeit|
+(263) [Χορός:] ἐiφάνLθηL(Aor)(Pas) γεiραιLοῖςL(Adj)(D), ἀiκούL‖ειν(Prä)(Inf)(Akt)|
+(263) [Χορός:] erschien den|Greisen, zu|hören|
+(265) [Χορός:] τόiδεi(Pr)(A) πῆμLʼ(A) ἄiελLπτονL(Adj)(A).|
+(265) [Χορός:] dies Leid unerwartet.|
+(266) [Ἄγγελος:] καὶL(Kon) μὴνL(Pt) |παiρώνL(Prä)(Akt)(N) |γεi(Pt) κοὐL(Kon)(Pt) |λόiγουςL(A) |ἄλLλωνL(Adj)(G) |κλύiωνL(Prä)(Akt)(N),|
+(266) [Ἄγγελος:] und wahrlich anwesend doch und|nicht Worte anderer hörend,|
+(267) [Ἄγγελος:] ΠέρLσαιL(V), |φράiσαιμLʼ(Aor)(Akt)(Op) |ἂνi(Pt) οἷLʼ(Pr)(A) |ἐiπορL|σύνLθηL(Aor)(Pas) |καiκάL(Adj)(N).|
+(267) [Ἄγγελος:] Perser, würde|sagen wohl welcher|lei bereitet|wurde Übel.|
+== Strophe 2 ==
+(268) [Χορός:] ὀiτοrτοrτοῖL(ij), μάiτανL(Adv)|
+(268) [Χορός:] otototoi, vergeblich|
+(269) [Χορός:] τὰi(Art)(A) πολL|λὰi(Adj)(A) βέrλεr|αi(A) παμL|μιiγῆL(Adj)(A)|
+(269) [Χορός:] die vielen Geschosse all|gemischt|
+(270) [Χορός:] γᾶςL(G) ἀπiʼ(Prp) ἈLσίiδοςi(Adj)(G) ἦλθLʼ(AorS)(Akt) ἐπiʼ(Prp) αἶLανL(A)|
+(270) [Χορός:] der|Erde von aus|Asiens kam auf Erde|
+(271) [Χορός:] ΔίLανL(Adj)(A) ἙλLλάiδαi(A) χώLρανL(A).|
+(271) [Χορός:] göttlich Hellas Land.|
+(272) [Ἄγγελος:] πλήLθουL|σιi(D) νεL|κρῶνL(G) δυL|σπότiμωςL(Adv) |ἐLφθαρL|μέiνωνL(Per)(M/P)(G)|
+(272) [Ἄγγελος:] mit|Mengen der|Toten un|glücklich verdorben|seiender|
+(273) [Ἄγγελος:] ΣαrλαrμῖL|νοςi(G) ἀL|κταὶL(N) πᾶςL(Adj)(N) |τεi(Pt) πρόL|σχωLροςL(Adj)(N) |τόiποςL(N).|
+(273) [Ἄγγελος:] von|Salamis Küsten jeder und vor|land Ort.|
+== Antistrophe 2 ==
+(274) [Χορός:] ὀiτοrτοrτοῖL(ij), φίiλωνL(Adj)(G)|
+(274) [Χορός:] otototoi, der|Freunde|
+(275) [Χορός:] ἁiλίrδοr|ναi(Adj)(A) μέrλεr|αi(A) ποrλυr|βαiφῆL(Adj)(A)|
+(275) [Χορός:] meer|tränkte Glieder viel|gefärbte|
+(276) [Χορός:] κατLθαiνόνLταi(AorS)(Akt)(A) λέiγειςL(Prä)(Akt) φέiρεLσθαιL(Prä)(Inf)(M/P)|
+(276) [Χορός:] gestorben|seiend sagst|du getragen|zu|werden|
+(277) [Χορός:] πλαγLκτοῖςL(Adj)(D) ἐνL(Prp) διiπλάiκεσLσινL(D).|
+(277) [Χορός:] wogenden in Doppel|gefalten.|
+(278) [Ἄγγελος:] οὐLδὲνL(Pr)(N) |γὰρi(Pt) ἤρL|κειL(Imp)(Akt) τόL|ξαi(N), πᾶςL(Adj)(N) |δʼ(Pt) ἀiπώλL|λυiτοL(Imp)(M/P)|
+(278) [Ἄγγελος:] nichts denn genügte Bogen, alles aber ging|zugrunde|
+(279) [Ἄγγελος:] στραiτὸςL(N) |δαiμαL|σθεὶςL(Aor)(Pas)(N) ναL|ΐiοιL|σινi(Adj)(D) ἐμL|βοiλαῖςL(D)|
+(279) [Ἄγγελος:] Heer bezwungen|worden von|schifflichen Ramm|stößen|
+== Strophe 3 ==
+(280) [Χορός:] ἴiυζLʼ(ij) ἄiποτLμονL(Adj)(A) βοiὰνL(A)|
+(280) [Χορός:] iyz un|glücklichen Ruf|
+(281) [Χορός:] δυLσαιLαLνῆL(Adj)(A) ΠέρLσαιςL(D),|
+(281) [Χορός:] übel|tönenden den|Persern,|
+(282) [Χορός:] ὡςL(Adv) πάνLταιL(Adv) παγLκάiκωςL(Adv)|
+(282) [Χορός:] wie all|seitig ganz|schlecht|
+(283) [Χορός:] θεοὶL(N) θέiσανi(AorS)(Akt)· αἰLαῖL(ij) στραiτοῦL(G) φθαiρένLτοςL(Aor)(Pas)(G).|
+(283) [Χορός:] Götter setzten· ai|ai des|Heeres vernichtet|worden.|
+(284) [Ἄγγελος:] ὦL(ij) πλεῖL|στονi(Adj)(A)(Sup) ἔχL|θοςi(A) ὄrνοr|μαi(A) Σαrλαr|μῖLνοςL(G) |κλύiεινL(Prä)(Inf)(Akt).|
+(284) [Ἄγγελος:] o größtes Feind|schaft Name von|Salamis zu|hören.|
+(285) [Ἄγγελος:] φεῦL(ij), τῶνL(Art)(G) |ἈiθηL|νῶνL(G) ὡςL(Adv) |στέiνωL(Prä)(Akt) |μεLμνηL|μέiνοςL(Per)(M/P)(N).|
+(285) [Ἄγγελος:] weh, der|Athen wie stöhne ich erinnert|seiend.|
+== Antistrophe 3 ==
+(286) [Χορός:] στυLγναίL(Adj)(N) γεi(Pt) δὴL(Pt) δάLιiοιςL(Adj)(D)·|
+(286) [Χορός:] finster doch wahrlich den|Kriegen·|
+(287) [Χορός:] μεLμνῆLσθαίL(Per)(M/P)(Inf) τοιL(Pt) πάiραL(Prp)|
+(287) [Χορός:] zu|erinnern ja ist|zur|Hand|
+(288) [Χορός:] ὡςL(Adv) πολLλοὺςL(Adj)(A) σπερLμάiτωνL(G)|
+(288) [Χορός:] wie viele der|Samen|
+(289) [Χορός:] εὔLνιiδαςi(Adj)(A) ἔLκτισLσανi(Aor)(Akt) ἠδLʼ(Kon) ἀiνάνLδρουςL(Adj)(A).|
+(289) [Χορός:] Witwen gründeten und mann|lose.|
+(290) [Ἄτοσσα:] σιiγῶL(Prä)(Akt) |πάiλαιL(Adv) |δύLστηL|νοςi(Adj)(N) ἐκL|πεiπληγL|μέiνηL(Per)(M/P)(N)|
+(290) [Ἄτοσσα:] schweige lange un|selige erschrocken|seiend|
+(291) [Ἄτοσσα:] καiκοῖςL(D)· |ὑiπερL|βάλLλειL(Prä)(Akt) |γὰρi(Pt) ἥL|δεi(Pr)(N) συμL|φοiρὰL(N)|
+(291) [Ἄτοσσα:] durch|Übel· übertrifft denn diese Unglück|
+(292) [Ἄτοσσα:] τὸi(Art)(N) μήL|τεi(Kon) λέL|ξαιL(Aor)(Inf)(Akt) μήτLʼ(Kon) |ἐiρωL|τῆLσαιL(Aor)(Inf)(Akt) |πάiθηL(A).|
+(292) [Ἄτοσσα:] das weder zu|sagen noch zu|fragen Leiden.|
+(293) [Ἄτοσσα:] ὅiμωςL(Adv) |δʼ(Pt) ἀiνάγL|κηL(N) πηL|μοiνὰςL(A) |βροiτοῖςL(D) |φέiρεινL(Prä)(Inf)(Akt)|
+(293) [Ἄτοσσα:] dennoch aber Notwendigkeit Leiden den|Sterblichen zu|tragen|
+(294) [Ἄτοσσα:] θεiῶνL(G) |διiδόνL|τωνL(Prä)(Akt)(G)· πᾶνL(Adj)(A) |δʼ(Pt) ἀiναL|πτύLξαςL(Aor)(Akt)(N) |πάiθοςL(A)|
+(294) [Ἄτοσσα:] der|Götter gebend· alles aber auf|gerollt|habend Leiden|
+(295) [Ἄτοσσα:] λέLξονL(Aor)(Imv)(Akt) |καiταL|στάςL(AorS)(Akt)(N), κεἰL(Kon) |στέiνειςL(Prä)(Akt) |καiκοῖςL(D) |ὅiμωςL(Adv).|
+(295) [Ἄτοσσα:] sage hin|gestellt, und|wenn stöhnst bei|Übeln dennoch.|
+(296) [Ἄτοσσα:] τίςi(Pr)(N) οὐL(Pt) |τέiθνηL|κεi(Per)(Akt), τίrναr(Pr)(A) |δὲi(Pt) καὶL(Kon) |πενLθήL|σοiμενL(Fu)(Akt)|
+(296) [Ἄτοσσα:] wer nicht ist|gestorben, wen aber auch werden|betrauern|
+(297) [Ἄτοσσα:] τῶνL(Art)(G) ἀρL|χεiλείL|ωνL(Adj)(G), ὅστLʼ(Pr)(N) |ἐiπὶL(Prp) |σκηLπτουL|χίiᾳL(D)|
+(297) [Ἄτοσσα:] der Ober|befehlshaber, welcher auf Szepter|herrschaft|
+(298) [Ἄτοσσα:] ταχLθεὶςL(Aor)(Pas)(N) |ἄiνανL|δρονL(Adj)(A) τάL|ξινi(A) ἠL|ρήLμουL(Adj)(G) |θαiνώνL(AorS)(Akt)(N);|
+(298) [Ἄτοσσα:] eingesetzt|worden mann|lose Schlacht|ordnung verödeten gestorben;|
+(299) [Ἄγγελος:] ΞέρLξηςL(N) |μὲνi(Pt) αὐL|τὸςL(Pr)(N) ζῇL(Prä)(Akt) |τεi(Pt) καὶL(Kon) |βλέiπειL(Prä)(Akt) |φάiοςL(A).|
+(299) [Ἄγγελος:] Xerxes zwar selbst lebt und auch sieht Licht.|
+(300) [Ἄτοσσα:] ἐiμοῖςL(Adj)(D) |μὲνi(Pt) εἶL|παςL(Aor)(Akt) δώL|μαiσινL(D) |φάiοςL(A) |μέiγαL(Adj)(A)|
+(300) [Ἄτοσσα:] meinen zwar sagtest Häusern Licht groß|
+(301) [Ἄτοσσα:] καὶL(Kon) λευL|κὸνi(Adj)(A) ἦL|μαρL(A) νυL|κτὸςi(G) ἐκL(Prp) |μεiλαγL|χίiμουL(Adj)(G).|
+(301) [Ἄτοσσα:] und weißen Tag der|Nacht aus schwarz|gewandeter.|
+(302) [Ἄγγελος:] ἈρLτεμL|βάiρηςL(N) |δὲi(Pt) μυL|ρίiαςL(Adj)(G) |ἵπLπουL(G) |βραiβεὺςL(N)|
+(302) [Ἄγγελος:] Artembares aber zehn|tausend|facher der|Pferde Führer|
+(303) [Ἄγγελος:] στύiφλουςL(Adj)(A) |παρiʼ(Prp) ἀL|κτὰςL(A) θείL|νεiταιL(Prä)(M/P) |ΣιLληL|νιiῶνL(Adj)(G).|
+(303) [Ἄγγελος:] rauhe an Küsten wird|geschlagen der|Silenier.|
+(304) [Ἄγγελος:] χὠL(Kon)(Art)(N) χιL|λίiαρL|χοςL(N) ΔαL|δάiκηςL(N) |πληLγῇL(D) |δοiρὸςL(G)|
+(304) [Ἄγγελος:] und|der Tausend|führer Dadakes mit|Schlag des|Speeres|
+(305) [Ἄγγελος:] πήLδηL|μαi(A) κοῦL|φονi(Adj)(A) ἐκL(Prp) |νεiὼςL(G) |ἀiφήL|λαiτοL(Aor)(Med)·|
+(305) [Ἄγγελος:] Sprung leichten aus des|Schiffes stieß|sich|ab·|
+(306) [Ἄγγελος:] ΤεrνάrγωνL(N) |τʼ(Pt) ἀiριL|στεὺςL(N) ΒαL|κτρίiωνL(G) |ἰiθαιL|γεiνὴςL(Adj)(N)|
+(306) [Ἄγγελος:] Tenagon auch Vorkämpfer der|Baktrer echt|geboren|
+(307) [Ἄγγελος:] θαiλασL|σόiπληL|κτονL(Adj)(A) νῆL|σονi(A) ΑἴL|ανLτοςL(G) |ποiλεῖL(Prä)(Akt).|
+(307) [Ἄγγελος:] meer|geschlagen Insel des|Aias bewohnt.|
+(308) [Ἄγγελος:] ΛίiλαιL|οςi(N), ἈρL|σάiμηςL(N) |τεi(Pt) κ'(Kon) ἈρL|γήLστηςL(N) |τρίiτοςL(Adj)(N),|
+(308) [Ἄγγελος:] Lilaios, Arsames und und|auch Argestes dritter,|
+(309) [Ἄγγελος:] οἵδLʼ(Pr)(N) ἀμL|φὶi(Prp) νῆL|σονL(A) τὴνL(Art)(A) |πεiλειL|οiθρέμL|μοiναL(Adj)(A)|
+(309) [Ἄγγελος:] diese um Insel die tauben|nährende|
+(310) [Ἄγγελος:] διLνούL|μεiνοιL(Prä)(M/P)(N) |ʼκύiρισL|σονi(Aor)(Akt) ἰL|σχυiρὰνL(Adj)(A) |χθόiναL(A)·|
+(310) [Ἄγγελος:] sich|drehend bestimmten starke Erde·|
+(311) [Ἄγγελος:] πηLγαῖςL(D) |τεi(Pt) ΝείL|λουL(G) γειL|τοiνῶνL(Prä)(Akt)(N) |ΑἰLγυL|πτίiουL(Adj)(G)|
+(311) [Ἄγγελος:] Quellen und des|Nil Nachbar|seiend ägyptischen|
+(312) [Ἄγγελος:] ἈρLκτεύςL(N), |ἈiδεύL|ηςL(N), καὶL(Kon) |φεiρεσL|σάiκηςL(Adj)(N) |τρίiτοςL(Adj)(N)|
+(312) [Ἄγγελος:] Arkteus, Adeues, und last|schildtragend dritter|
+(313) [Ἄγγελος:] ΦαρLνοῦL|χοςi(N), οἵL|δεi(Pr)(N) ναL|ὸςi(G) ἐκL(Prp) |μιiᾶςL(Adj)(G) |πέiσονL(AorS)(Akt).|
+(313) [Ἄγγελος:] Pharnuchus, diese des|Schiffes aus eines fielen.|
+(314) [Ἄγγελος:] ΧρυLσεὺςL(N) |ΜάiταλL|λοςL(N) μυL|ριiόνL|ταρLχοςL(N) |θαiνώνL(AorS)(Akt)(N),|
+(314) [Ἄγγελος:] Chryseus Matallos Zehntausend|führer gestorben,|
+(315) [Ἄγγελος:] ἵπLπουL(G) |μεiλαίL|νηςL(Adj)(G) ἡL|γεiμὼνL(N) |τριLσμυL|ρίiαςL(Adj)(G),|
+(315) [Ἄγγελος:] des|Pferdes schwarzen Führer drei|mal|zehntausend,|
+(316) [Ἄγγελος:] πυρLρὰνL(Adj)(A) |ζαiπληL|θῆL(Adj)(A) δάL|σκιiονL(Adj)(A) |γεiνειL|άiδαL(A)|
+(316) [Ἄγγελος:] rötlich dicht|gefüllt schattig Bart|
+(317) [Ἄγγελος:] ἔiτεγγLʼ(Aor)(Akt), |ἀiμείL|βωνL(Prä)(Akt)(N) χρῶL|ταi(A) πορL|φυrρέrᾳL(Adj)(D) |βαiφῇL(D).|
+(317) [Ἄγγελος:] befeuchtete, wechselnd Haut mit|purpurner Färbung.|
+(318) [Ἄγγελος:] καὶL(Kon) ΜᾶL|γοςi(N) Ἄrραr|βοςi(Adj)(N), ἈρL|τάiβηςL(N) |τεi(Pt) ΒάL|κτριiοςL(Adj)(N),|
+(318) [Ἄγγελος:] und Magos Araber, Artabes auch baktrisch,|
+(319) [Ἄγγελος:] σκληLρᾶςL(Adj)(G) |μέiτοιL|κοςL(N) γῆςL(G), |ἐiκεῖL(Adv) |καiτέL|φθιiτοL(Imp)(M/P).|
+(319) [Ἄγγελος:] harten der|Erde Beisasse, dort war|zugrunde|gegangen.|
+(320) [Ἄγγελος:] ἌiμιL|στριςi(N) ἈμL|φιLστρεύςL(N) |τεi(Pt) ποrλύr|ποiνονL(Adj)(A) |δόiρυL(A)|
+(320) [Ἄγγελος:] Amistris Amphistreus und viel|mühseligen Speer|
+(321) [Ἄγγελος:] νωLμῶνL(Prä)(Akt)(N), |ὅi(Pr)(N) τʼ(Pt) ἐL|σθλὸςi(Adj)(N) Ἀrριr|όiμαρL|δοςL(N) ΣάρL|δεiσιL(D)|
+(321) [Ἄγγελος:] schwingend, der auch edle Ariomardos in|Sardeis|
+(322) [Ἄγγελος:] πένLθοςL(A) |παiραL|σχώνL(AorS)(Akt)(N), ΣειL|σάiμηςL(N) |θʼ(Pt) ὁi(Art)(N) ΜύL|σιiοςL(Adj)(N),|
+(322) [Ἄγγελος:] Trauer verschaffend, Seisames auch der Mysier,|
+(323) [Ἄγγελος:] ΘάrρυrβίςL(N) |τεi(Pt) πενL|τήLκονL|ταi(Adj)(A) πενL|τάiκιςL(Adv) |νεiῶνL(G)|
+(323) [Ἄγγελος:] Tharybis auch fünfzig fünf|mal der|Schiffe|
+(324) [Ἄγγελος:] ταLγόςL(N), |γέiνοςL(N) |ΛυρLναῖL|οςi(Adj)(N), εὐL|ειLδὴςL(Adj)(N) |ἀiνήρL(N),|
+(324) [Ἄγγελος:] Anführer, Geschlecht Lyrnäer, wohlgestalt Mann,|
+(325) [Ἄγγελος:] κεῖLταιL(Prä)(M/P) |θαiνὼνL(AorS)(Akt)(N) |δείLλαιL|οςi(Adj)(N) οὐL(Adv) |μάλiʼ(Adv) εὐL|τυiχῶςL(Adv)·|
+(325) [Ἄγγελος:] liegt gestorben elend nicht gar glücklich·|
+(326) [Ἄγγελος:] ΣυiένL|νεiσίςL(N) |τεi(Pt) πρῶL|τοςi(Adj)(N) εἰςL(Prp) |εὐLψυL|χίiανL(A),|
+(326) [Ἄγγελος:] Syennesis auch erster in Tapferkeit,|
+(327) [Ἄγγελος:] ΚιrλίrκωνL(Adj)(G) |ἄiπαρL|χοςi(N), εἷςL(Adj)(N) |ἀiνὴρL(N) |πλεῖLστονL(Adj)(A)(Sup) |πόiνονL(A)|
+(327) [Ἄγγελος:] der|Kilikier Anführer, ein Mann größten Mühen|
+(328) [Ἄγγελος:] ἐχLθροῖςL(D) |παiραL|σχώνL(AorS)(Akt)(N) εὐL|κλεiῶςL(Adv) |ἀiπώL|λεiτοL(Aor)(M/P).|
+(328) [Ἄγγελος:] den|Feinden verschaffend ruhmvoll ging|zugrunde.|
+(329) [Ἄγγελος:] τοiσόνL|δεi(Adv) ταL|γῶνL(G) νῦνL(Adv) |ὑiπεL|μνήLσθηνL(Aor)(Pas) |πέiριL(Prp).|
+(329) [Ἄγγελος:] so|viel der|Führer nun wurde|ich|erinnert über.|
+(330) [Ἄγγελος:] πολLλῶνL(Adj)(G) |παiρόνL|τωνL(Prä)(Akt)(G) δʼ(Pt) ὀrλίγrʼ(Adj)(A) |ἀiπαγL|γέλLλωL(Prä)(Akt) |καiκάL(Adj)(A).|
+(330) [Ἄγγελος:] vieler Anwesenden aber weniges melde|ich Übles.|
+(331) [Ἄτοσσα:] αἰLαῖL(ij), |καiκῶνL(Adj)(G) |ὕLψιL|σταi(Adj)(A)(Sup) δὴL(Pt) |κλύiωL(Prä)(Akt) |τάiδεL(Pr)(A),|
+(331) [Ἄτοσσα:] ai|ai, der|Übel höchstes wahrlich höre|ich dieses,|
+(332) [Ἄτοεσσα:] αἴLσχηL(A) |τεi(Pt) ΠέρL|σαιςL(D) καὶL(Kon) |λιiγέrαr(Adj)(A) |κωLκύL|μαiταL(A).|
+(332) [Ἄτοεσσα:] Schanden auch den|Persern und gellende Klagen.|
+(333) [Ἄτοεσσα:] ἀiτὰρL(Kon) |φράiσονL(Aor)(Imv)(Akt) |μοιL(Pr)(D) τοῦτLʼ(Pr)(A) |ἀiναL|στρέLψαςL(AorS)(Akt)(N) |πάiλινL(Adv)·|
+(333) [Ἄτοεσσα:] aber sage mir dieses um|wendend wieder·|
+(334) [Ἄτοεσσα:] πόiσονL(Adj)(A) |δὲi(Pt) πλῆL|θοςi(N) ἦνL(Imp)(Akt) |νεiῶνL(G) |ἙλLληL|νίiδωνL(Adj)(G),|
+(334) [Ἄτοεσσα:] wie|groß aber Menge war der|Schiffe griechisch|er,|
+(335) [Ἄτοεσσα:] ὥστLʼ(Kon) ἀL|ξιiῶL|σαιL(AorS)(Inf)(Akt) ΠερL|σιiκῷL(Adj)(D) |στραiτεύL|μαiτιL(D)|
+(335) [Ἄτοεσσα:] sodass zu|würdigen dem|persischen Heere|
+(336) [Ἄτοεσσα:] μάiχηνL(A) |συiνάL|ψαιL(Aor)(Inf)(Akt) ναL|ΐiοιL|σινi(Adj)(D) ἐμL|βοiλαῖςL(D);|
+(336) [Ἄτοεσσα:] Kampf zu|knüpfen mit|schifflichen Rammstößen;|
+(337) [Ἄγγελος:] πλήLθουςL(G) |μὲνi(Pt) ἂνL(Pt) |σάφiʼ(Adv) ἴσθLʼ(Prä)(Imv)(Akt) |ἕiκαL|τιi(Prp) βάρL|βαiρονL(Adj)(A)|
+(337) [Ἄγγελος:] der|Menge zwar wohl sicher wisse wegen barbarisches|
+(338) [Ἄγγελος:] ναυLσὶνL(D) |κραiτῆL|σαιL(Aor)(Inf)(Akt). καὶL(Kon) |γὰρi(Pt) ἝλL|ληLσινL(D) |μὲνi(Pt) ἦνL(Imp)(Akt)|
+(338) [Ἄγγελος:] mit|Schiffen zu|siegen. und denn den|Griechen zwar war|
+(339) [Ἄγγελος:] ὁi(Art)(N) πᾶςL(Adj)(N) |ἀiριθL|μὸςi(N) ἐςL(Prp) |τριiαL|κάiδαςL(A) |δέiκαL(Adj)(A)|
+(339) [Ἄγγελος:] die ganze Zahl bis dreißiger zehn|
+(340) [Ἄγγελος:] ναLῶνL(G), |δεiκὰςL(N) |δʼ(Pt) ἦνL(Imp)(Akt) τῶνL|δεi(Pr)(G) χωL|ρὶςi(Prp) ἔκL|κριiτοςL(Adj)(N)·|
+(340) [Ἄγγελος:] der|Schiffe, Zehnheit aber war von|diesen getrennt ausgesondert·|
+(341) [Ἄγγελος:] ΞέρLξῃL(D) |δέi(Kon), καὶL(Kon) |γὰρi(Pt) οἶL|δαi(Per)(Akt), χιL|λιiὰςL(N) |μὲνi(Pt) ἦνL(Imp)(Akt)|
+(341) [Ἄγγελος:] dem|Xerxes aber, auch denn ich|weiß, tausend zwar war|
+(342) [Ἄγγελος:] ὧνL(Pr)(G) ἦL|γεi(Imp)(Akt) πλῆL|θοςi(N), αἱL(Art)(N) |δʼ(Pt) ὑiπέρL|κοiποιL(Adj)(N) |τάiχειL(D)|
+(342) [Ἄγγελος:] deren führte Menge, die aber über|schnellen an|Schnelligkeit|
+(343) [Ἄγγελος:] ἑrκαrτὸνL(Adj)(A) |δὶςi(Adv) ἦL|σανi(Imp)(Akt) ἑL|πτάθiʼ(Adj)(A)· ὧδLʼ(Adv) |ἔiχειL(Prä)(Akt) |λόiγοςL(N).|
+(343) [Ἄγγελος:] hundert zweimal waren sieben|und|siebzig· so hält Bericht.|
+(344) [Ἄγγελος:] μήL(Pt) σοιL(Pr)(D) |δοiκοῦL|μενL(Prä)(M/P) τῇL|δεi(Pr)(D) λειL|φθῆLναιL(Aor)(Pas)(Inf) |μάiχῃL(D);|
+(344) [Ἄγγελος:] nicht dir scheinen|wir in|dieser zurück|gelassen|zu|sein Schlacht;|
+(345) [Ἄγγελος:] ἀλλLʼ(Kon) ὧL|δεi(Adv) δαίL|μωνL(N) τιςL(Pr)(N) |καiτέL|φθειLρεL(Aor)(Akt) |στραiτόνL(A),|
+(345) [Ἄγγελος:] sondern so Daimon irgendein vernichtete Heer,|
+(346) [Ἄγγελος:] τάiλανL|ταi(A) βρίL|σαςi(Aor)(Akt)(N) οὐκL(Pt) |ἰiσορL|ρόiπῳL(Adj)(D) |τύiχῃL(D).|
+(346) [Ἄγγελος:] Waagschalen beschwerend|habend nicht gleich|wiegendem Glück.|
+(347) [Ἄγγελος:] θεiοὶL(N) |πόiλινL(A) |σῴLζουL|σιi(Prä)(Akt) ΠαλL|λάiδοςL(G) |θεiᾶςL(G).|
+(347) [Ἄγγελος:] Götter Stadt retten der|Pallade Göttin.|
+(348) [Ἄτοεσσα:] ἔτiʼ(Adv) ἆρLʼ(Pt) |ἈiθηL|νῶνL(G) ἔστLʼ(Prä)(Akt) |ἀiπόρL|θηLτοςL(Adj)(N) |πόiλιςL(N);|
+(348) [Ἄτοεσσα:] noch denn der|Athen ist un|erobert Stadt;|
+(349) [Ἄγγελος:] ἀνLδρῶνL(G) |γὰρi(Pt) ὄνL|τωνL(Prä)(Akt)(G) ἕρL|κοςi(N) ἐL|στὶνi(Prä)(Akt) ἀL|σφαiλέςL(Adj)(N).|
+(349) [Ἄγγελος:] der|Männer denn seiend Bollwerk ist sicher.|
+(350) [Ἄτοεσσα:] ἀρLχὴL(N) |δὲi(Pt) ναυL|σὶi(D) συμL|βοiλῆςL(G) |τίςi(Pr)(N) ἦνL(Imp)(Akt), |φράiσονL(Aor)(Imv)(Akt)·|
+(350) [Ἄτοεσσα:] Anfang aber den|Schiffen des|Zusammenstoßes wer war, sage·|
+(351) [Ἄτοεσσα:] τίiνεςL(Pr)(N) |καiτῆρL|ξανL(Aor)(Akt), πόrτεr|ρονi(Kon) ἝλL|ληLνεςL(N), |μάiχηςL(G),|
+(351) [Ἄτοεσσα:] wer begannen, ob Griechen, des|Kampfes,|
+(352) [Ἄτοσσα:] ἢL(Kon) παῖςL(N) |ἐiμόςL(Adj)(N), |πλήLθειL(D) |καiταυL|χήLσαςL(Aor)(Akt)(N) |νεiῶνL(G);|
+(352) [Ἄτοσσα:] oder Sohn mein, mit|Menge prahlend|habend der|Schiffe;|
+(353) [Ἄγγελος:] ἦρLξενL(Aor)(Akt) |μένi(Pt), ὦL(ij) |δέLσποιL|ναi(V), τοῦL(Art)(G) |πανLτὸςL(Adj)(G) |καiκοῦL(G)|
+(353) [Ἄγγελος:] begann zwar, o Herrin, des ganzen Übels|
+(354) [Ἄγγελος:] φαiνεὶςL(Aor)(Pas)(N) |ἀiλάL|στωρL(N) ἢL(Kon) |καiκὸςL(Adj)(N) |δαίLμωνL(N) |ποiθένL(Adv).|
+(354) [Ἄγγελος:] erschienen|seiend Frevler oder böser Daimon von|irgendwo.|
+(355) [Ἄγγελος:] ἀiνὴρL(N) |γὰρi(Pt) ἝλL|ληνL(N) ἐξL(Prp) |ἈiθηL|ναίLωνL(Adj)(G) |στραiτοῦL(G)|
+(355) [Ἄγγελος:] Mann denn Grieche aus der|Athener Heeres|
+(356) [Ἄγγελος:] ἐλLθὼνL(AorS)(Akt)(N) |ἔiλεL|ξεi(AorS)(Akt) παιL|δὶi(D) σῷL(Adj)(D) |ΞέρLξῃL(D) |τάiδεL(Pr)(A),|
+(356) [Ἄγγελος:] gekommen sagte dem|Kind deinem Xerxes dieses,|
+(357) [Ἄγγελος:] ὡςL(Kon) εἰL(Kon) |μεiλαίL|νηςL(Adj)(G) νυL|κτὸςi(G) ἵL|ξεiταιL(Fu)(Med) |κνέiφαςL(N),|
+(357) [Ἄγγελος:] dass wenn der|schwarzen Nacht erreichen|wird Dunkel,|
+(358) [Ἄγγελος:] ἝλLληL|νεςi(N) οὐL(Pt) |μεiνοῖL|ενi(Fu)(Akt)(Op), ἀλL|λὰi(Kon) σέλL|μαiσινL(D)|
+(358) [Ἄγγελος:] Griechen nicht würden|verweilen, sondern auf|Bänken|
+(359) [Ἄγγελος:] ναLῶνL(G) |ἐiπανL|θοiρόνL|τεςi(Aor)(Akt)(N) ἄλL|λοςi(Adj)(N) ἄλL|λοiσεL(Adv)|
+(359) [Ἄγγελος:] der|Schiffe hinauf|gesprungen jeweils anderswohin|
+(360) [Ἄγγελος:] δραLσμῷL(D) |κρυiφαίL|ῳL(Adj)(D) βίrοr|τονi(A) ἐκL|σωLσοίL|αiτοL(Aor)(Med)(Op).|
+(360) [Ἄγγελος:] durch|Flucht heimlich Leben heraus|retten|würden.|
+(361) [Ἄγγελος:] ὁi(Art)(N) δʼ(Pt) εὐL|θὺςi(Adv) ὡςL(Kon) |ἤLκουL|σενi(Aor)(Akt), οὐL(Pt) |ξυiνεὶςL(Prä)(Akt)(N) |δόiλονL(A)|
+(361) [Ἄγγελος:] der aber sofort als hörte, nicht verstehend List|
+(362) [Ἄγγελος:] ἝλLληL|νοςi(Adj)(G) ἀνL|δρὸςi(G) οὐL|δὲi(Kon) τὸνL(Art)(A) |θεiῶνL(G) |φθόiνονL(A),|
+(362) [Ἄγγελος:] des|griechischen Mannes noch den der|Götter Neid,|
+(363) [Ἄγγελος:] πᾶLσινL(Adj)(D) |προiφωL|νεῖL(Prä)(Akt) τόνL|δεi(Pr)(A) ναυL|άρLχοιςL(D) |λόiγονL(A),|
+(363) [Ἄγγελος:] allen ruft|vorher diesen den|Flottenführern Spruch,|
+(364) [Ἄγγελος:] εὖτLʼ(Adv) ἂνL(Pt) |φλέiγωνL(Prä)(Akt)(N) |ἀLκτῖL|σινi(D) ἥL|λιiοςL(N) |χθόiναL(A)|
+(364) [Ἄγγελος:] sobald wohl brennend mit|Strahlen Sonne Erde|
+(365) [Ἄγγελος:] λήLξῃL(Aor)(Akt)(Knj), |κνέiφαςL(N) |δὲi(Pt) τέrμεr|νοςi(A) αἰL|θέiροςL(G) |λάiβῃL(Aor)(Akt)(Knj),|
+(365) [Ἄγγελος:] ablasse|möge, Dunkel aber Bezirk des|Äthers nehme|möge,|
+(366) [Ἄγγελος:] τάLξαιL(Aor)(Inf)(Akt) |νεiῶνL(G) |στῖLφοςL(A) |μὲνi(Pt) ἐνL(Prp) |στοίLχοιςL(D) |τριiσὶνL(Adj)(D)|
+(366) [Ἄγγελος:] zu|ordnen der|Schiffe Masse zwar in Reihen drei|
+(367) [Ἄγγελος:] ἔκLπλουςL(A) |φυiλάσL|σεινL(Prä)(Inf)(Akt) καὶL(Kon) |πόiρουςL(A) |ἁiλιρL|ρόiθουςL(Adj)(A),|
+(367) [Ἄγγελος:] Ausfahrt zu|bewachen und Durchgänge meer|strömende,|
+(368) [Ἄγγελος:] ἄλLλαςL(Adj)(A) |δὲi(Pt) κύL|κλῳL(Adv) νῆL|σονi(A) ΑἴL|ανLτοςL(G) |πέiριξL(Adv)·|
+(368) [Ἄγγελος:] andere aber im|Kreis Insel des|Aias ringsum·|
+(369) [Ἄγγελος:] ὡςL(Kon) εἰL(Kon) |μόiρονL(A) |φευLξοίL|αθiʼ(Aor)(Med)(Op) ἝλL|ληLνεςL(N) |καiκόνL(Adj)(A),|
+(369) [Ἄγγελος:] damit wenn Schicksal fliehen|möchten Griechen übel,|
+(370) [Ἄγγελος:] ναυLσὶνL(D) |κρυiφαίL|ωςL(Adv) δραL|σμὸνi(A) εὑL|ρόνLτεςL(Aor)(Akt)(N) |τιiνάL(Pr)(A),|
+(370) [Ἄγγελος:] mit|Schiffen heimlich Flucht gefunden|habend irgendeinen,|
+(371) [Ἄγγελος:] πᾶLσινL(Adj)(D) |στέiρεL|σθαιL(Prä)(M/P)(Inf) κραL|τὸςi(G) ἦνL(Imp)(Akt) |προiκείL|μεiνονL(Prä)(M/P)(N).|
+(371) [Ἄγγελος:] allen beraubt|zu|werden der|Macht war vor|liegend.|
+(372) [Ἄγγελος:] τοiσαῦτLʼ(Adj)(A) |ἔiλεL|ξεi(AorS)(Akt) κάρθLʼ(Adv) |ὑπiʼ(Prp) εὐL|θύLμουL(Adj)(G) |φρεiνόςL(G)·|
+(372) [Ἄγγελος:] so|viel sagte sehr unter heiterem Sinnes·|
+(373) [Ἄγγελος:] οὐL(Pt) γὰρL(Pt) |τὸi(Art)(A) μέλL|λονi(Prä)(Akt)(A) ἐκL(Prp) |θεiῶνL(G) |ἠLπίL|σταiτοL(Imp)(M/P).|
+(373) [Ἄγγελος:] nicht denn das Zukünftige von den|Göttern verstand|er.|
+(374) [Ἄγγελος:] οἱL(Pr)(N) δʼ(Pt) οὐκL(Pt) |ἀiκόL|σμωςL(Adv), ἀλL|λὰi(Kon) πειL|θάρLχῳL(Adj)(D) |φρεiνὶL(D)|
+(374) [Ἄγγελος:] die aber nicht ungeordnet, sondern gehorsam|herrschter Gesinnung|
+(375) [Ἄγγελος:] δεῖLπνόνL(A) |τʼ(Pt) ἐiπορL|σύiνονL|τοi(Imp)(M/P), ναυL|βάiτηςL(N) |τʼ(Pt) ἀiνὴρL(N)|
+(375) [Ἄγγελος:] Mahl auch bereiteten|sich, Schiffs|fahrer auch Mann|
+(376) [Ἄγγελος:] τροiποῦL|τοi(Imp)(M/P) κώL|πηνL(A) σκαλL|μὸνi(A) ἀμφLʼ(Prp) |εὐLήL|ρετiμονL(Adj)(A).|
+(376) [Ἄγγελος:] drehte Ruder Dornloch um gut|gerippt.|
+(377) [Ἄγγελος:] ἐiπεὶL(Kon) |δὲi(Pt) φέγL|γοςi(N) ἡL|λίiουL(G) |καiτέL|φθιiτοL(Plq)(M/P)|
+(377) [Ἄγγελος:] als aber Licht der|Sonne war|ver|schwunden|
+(378) [Ἄγγελος:] καὶL(Kon) νὺξL(N) |ἐiπῄL|ειL(Imp)(Akt), πᾶςL(Adj)(N) |ἀiνὴρL(N) |κώLπηςL(G) |ἄiναξL(N)|
+(378) [Ἄγγελος:] und Nacht kam|heran, jeder Mann des|Ruders Herr|
+(379) [Ἄγγελος:] ἐςL(Prp) ναῦνL(A) |ἐiχώL|ρειL(Imp)(Akt) πᾶςL(Adj)(N) |θʼ(Pt) ὅiπλωνL(G) |ἐiπιL|στάiτηςL(N)·|
+(379) [Ἄγγελος:] in Schiff ging|hinein jeder und der|Waffen Meister·|
+(380) [Ἄγγελος:] τάLξιςL(N) |δὲi(Pt) τάL|ξινL(A) παrρεr|κάiλειL(Imp)(Akt) |νεiὼςL(G) |μαiκρᾶςL(Adj)(G)·|
+(380) [Ἄγγελος:] Ordnung aber Ordnung rief|herbei des|Schiffes langen·|
+(381) [Ἄγγελος:] πλέiουL|σιi(Prä)(Akt) δʼ(Pt) ὡςL(Kon) |ἕiκαL|στοςi(Pr)(N) ἦνL(Imp)(Akt) |τεiταγL|μέiνοςL(Per)(M/P)(N),|
+(381) [Ἄγγελος:] sie|fahren aber wie jeder war geordnet,|
+(382) [Ἄγγελος:] καὶL(Kon) πάνL|νυiχοιL(Adj)(N) |δὴL(Pt) διrάr|πλοiονL(A) |καiθίL|σταiσανL(Imp)(Akt)|
+(382) [Ἄγγελος:] und ganz|nächtige wirklich Durch|fahrt stellten|her|
+(383) [Ἄγγελος:] ναLῶνL(G) |ἄiναL|κτεςL(N) πάνL|ταi(Adj)(A) ναυL|τιiκὸνL(Adj)(A) |λεiώνL(N).|
+(383) [Ἄγγελος:] der|Schiffe Herren gesamten see|fahrenden Volk.|
+(384) [Ἄγγελος:] καὶL(Kon) νὺξL(N) |ἐiχώL|ρειL(Imp)(Akt), κοὐL(Kon)(Pt) |μάλiʼ(Adv) ἙλL|λήLνωνL(G) |στραiτὸςL(N)|
+(384) [Ἄγγελος:] und Nacht ging|voran, und|nicht sehr der|Griechen Heer|
+(385) [Ἄγγελος:] κρυiφαῖL|ονi(Adj)(A) ἔκL|πλουνL(A) οὐL|δαiμῇL(Adv) |καiθίL|σταiτοL(Imp)(M/P)·|
+(385) [Ἄγγελος:] heimlichen Aus|fahrt nirgends stellte|sich|ein·|
+(386) [Ἄγγελος:] ἐiπείL(Kon) |γεi(Pt) μένL|τοιL(Pt) λευL|κόiπωL|λοςi(Adj)(N) ἡL|μέiραL(N)|
+(386) [Ἄγγελος:] als ja jedoch weiß|rossige Tag|
+(387) [Ἄγγελος:] πᾶLσανL(Adj)(A) |καiτέL|σχεi(AorS)(Akt) γαῖL|ανi(A) εὐL|φεγLγὴςL(Adj)(N) |ἰiδεῖνL(AorS)(Inf)(Akt),|
+(387) [Ἄγγελος:] ganze er|fasste Erde hell|scheinend zu|sehen,|
+(388) [Ἄγγελος:] πρῶLτονL(Adv) |μὲνi(Pt) ἠL|χῇL(D) κέrλαr|δοςi(N) ἙλL|λήLνωνL(G) |πάiραL(Prp)|
+(388) [Ἄγγελος:] zuerst zwar mit|Klang Getöse der|Griechen neben|
+(389) [Ἄγγελος:] μολLπηL|δὸνi(Adv) ηὐL|φήLμηL|σενi(Aor)(Akt), ὄρL|θιiονL(Adj)(A) |δʼ(Pt) ἅiμαL(Adv)|
+(389) [Ἄγγελος:] im|Gesang rief|Heil|ruf, hoch|tönend aber zugleich|
+(390) [Ἄγγελος:] ἀνLτηL|λάiλαL|ξεi(AorS)(Akt) νηL|σιiώL|τιiδοςL(Adj)(G) |πέiτραςL(G)|
+(390) [Ἄγγελος:] wider|hallte der|insulären Fels|
+(391) [Ἄγγελος:] ἠLχώL(N)· |φόiβοςL(N) |δὲi(Pt) πᾶL|σιi(Adj)(D) βαρL|βάiροιςL(Adj)(D) |παiρῆνL(Imp)(Akt)|
+(391) [Ἄγγελος:] Echo· Furcht aber allen barbarischen war|zugegen|
+(392) [Ἄγγελος:] γνώLμηςL(G) |ἀiποL|σφαiλεῖL|σινi(Aor)(Pas)(D)· οὐL(Pt) |γὰρi(Pt) ὡςL(Kon) |φυiγῇL(D)|
+(392) [Ἄγγελος:] der|Einsicht ab|gestürzt|seienden· nicht denn wie zur|Flucht|
+(393) [Ἄγγελος:] παιLᾶνLʼ(A) |ἐiφύL|μνουνL(Imp)(Akt) σεL|μνὸνi(Adj)(A) ἝλL|ληLνεςL(N) |τόiτεL(Adv),|
+(393) [Ἄγγελος:] Paean sangen|Antwort|lied ehrwürdigen die|Griechen damals,|
+(394) [Ἄγγελος:] ἀλλLʼ(Kon) ἐςL(Prp) |μάiχηνL(A) |ὁρLμῶνL|τεςi(Prä)(Akt)(N) εὐL|ψύLχῳL(Adj)(D) |θράiσειL(D)·|
+(394) [Ἄγγελος:] sondern in Kampf stürmend mit|tapferer Kühnheit·|
+(395) [Ἄγγελος:] σάλLπιγξL(N) |δʼ(Pt) ἀiϋL|τῇL(D) πάντLʼ(Adj)(A) |ἐiκεῖνLʼ(Pr)(A) |ἐiπέL|φλεiγενL(Imp)(Akt).|
+(395) [Ἄγγελος:] Trompete aber mit|Schrei alles jenes ent|flammte.|
+(396) [Ἄγγελος:] εὐLθὺςL(Adv) |δὲi(Pt) κώL|πηςL(G) ῥοrθιr|άiδοςL(Adj)(G) |ξυiνεμL|βοiλῇL(D)|
+(396) [Ἄγγελος:] sogleich aber der|Ruder spritzenden zusammen|Stoß|
+(397) [Ἄγγελος:] ἔiπαιL|σανi(AorS)(Akt) ἅλL|μηνL(A) βρύrχιr|ονi(Adj)(A) ἐκL(Prp) |κεiλεύL|μαiτοςL(G),|
+(397) [Ἄγγελος:] schlugen Salz|brühe brüllende aus Befehl|rufes,|
+(398) [Ἄγγελος:] θοiῶςL(Adv) |δὲi(Pt) πάνL|τεςi(Adj)(N) ἦL|σανi(Imp)(Akt) ἐκL|φαiνεῖςL(Adj)(N) |ἰiδεῖνL(AorS)(Inf)(Akt).|
+(398) [Ἄγγελος:] schnell aber alle waren deutlich zu|sehen.|
+(399) [Ἄγγελος:] τὸi(Art)(N) δεL|ξιiὸνL(Adj)(N) |μὲνL(Pt) πρῶL|τονi(Adv) εὐL|τάLκτωςL(Adv) |κέiραςL(N)|
+(399) [Ἄγγελος:] das rechte zwar zuerst wohl|geordnet Flügel|
+(400) [Ἄγγελος:] ἡLγεῖL|τοi(Imp)(M/P) κόL|σμῳL(D), δεύL|τεiρονL(Adv) |δʼ(Pt) ὁi(Art)(N) πᾶςL(Adj)(N) |στόiλοςL(N)|
+(400) [Ἄγγελος:] führte|sich|an in|Ordnung, zweitens aber der ganze Flotte|
+(401) [Ἄγγελος:] ἐiπεL|ξεiχώL|ρειL(Imp)(Akt), καὶL(Kon) |παiρῆνL(Imp)(Akt) |ὁiμοῦL(Adv) |κλύiεινL(Prä)(Inf)(Akt)|
+(401) [Ἄγγελος:] rückte|vor, und war|da zugleich zu|hören|
+(402) [Ἄγγελος:] πολLλὴνL(Adj)(A) |βοiήνL(A), |ὦL(ij) παῖL|δεςi(V) ἙλL|λήLνωνL(G) |ἴiτεL(Prä)(Imv)(Akt),|
+(402) [Ἄγγελος:] großen Ruf, o Söhne der|Griechen geht,|
+(403) [Ἄγγελος:] ἐiλευL|θεiροῦL|τεi(Prä)(Imv)(Akt) παrτρίδrʼ(A), |ἐiλευL|θεiροῦL|τεi(Prä)(Imv)(Akt) δὲL(Pt)|
+(403) [Ἄγγελος:] befreit Vaterland, befreit aber|
+(404) [Ἄγγελος:] παῖLδαςL(A), |γυiναῖL|καςL(A), θεῶνL(G) |τέi(Pt) παL|τρῴLωνL(Adj)(G) |ἕiδηL(A),|
+(404) [Ἄγγελος:] Kinder, Frauen, der|Götter und väterlichen Sitze,|
+(405) [Ἄγγελος:] θήLκαςL(A) |τεi(Pt) προrγόr|νωνL(G)· νῦνL(Adv) |ὑiπὲρL(Prp) |πάνLτωνL(Adj)(G) |ἀiγώνL(N).|
+(405) [Ἄγγελος:] Gräber und der|Vorfahren· jetzt über alles Wett|kampf.|
+(406) [Ἄγγελος:] καὶL(Kon) μὴνL(Pt) |παρiʼ(Prp) ἡL|μῶνL(Pr)(G) ΠερL|σίiδοςL(Adj)(G) |γλώσLσηςL(G) |ῥόiθοςL(N)|
+(406) [Ἄγγελος:] und wahrlich von uns persischen Zunge Getöse|
+(407) [Ἄγγελος:] ὑiπηνL|τίiαL|ζεi(Imp)(Akt), κοὐL|κέτiʼ(Kon)(Pt)(Adv) ἦνL(Imp)(Akt) |μέλLλεινL(Prä)(Inf)(Akt) |ἀκiμήL(N).|
+(407) [Ἄγγελος:] begegnete, und|nicht|mehr war zu|zögern Höhe|punkt.|
+(408) [Ἄγγελος:] εὐLθὺςL(Adv) |δὲi(Pt) ναῦςL(N) |ἐνL(Prp) νηL|ὶi(D) χαλL|κήLρηL(Adj)(D) |στόiλονL(A)|
+(408) [Ἄγγελος:] sogleich aber Schiff in Schiff erz|gerüsteten Flotte|
+(409) [Ἄγγελος:] ἔiπαιL|σενi(AorS)(Akt)· ἦρL|ξεi(AorS)(Akt) δʼ(Pt) ἐμL|βοiλῆςL(G) |ἙλLληL|νιiκὴL(Adj)(N)|
+(409) [Ἄγγελος:] schlug· begann aber des|Ramm|stoßes griechische|
+(410) [Ἄγγελος:] ναῦςL(N), κἀL|ποiθραύL|ειL(Kon)(Prä)(Akt) πάνL|ταi(Adj)(A) ΦοιL|νίσLσηςL(Adj)(G) |νεiὼςL(G)|
+(410) [Ἄγγελος:] Schiff, und|ab|bricht alle der|Phönizischen Schiffes|
+(411) [Ἄγγελος:] κόiρυμβLʼ(A), |ἐπiʼ(Prp) ἄλL|ληνL(Adj)(A) δʼ(Pt) ἄλL|λοςi(Pr)(N) ηὔL|θυLνενL(Aor)(Akt) |δόiρυL(A).|
+(411) [Ἄγγελος:] Bug|Krone, gegen andere aber ein|anderer richtete Ramm|sporn.|
+(412) [Ἄγγελος:] τὰi(Art)(A) πρῶL|ταi(Adj)(A) μένL(Pt) |νυνL(Pt) ῥεῦL|μαi(N) ΠερL|σιiκοῦL(Adj)(G) |στραiτοῦL(G)|
+(412) [Ἄγγελος:] die ersten zwar nun Strom des|Persischen Heeres|
+(413) [Ἄγγελος:] ἀνLτεῖL|χενi(Imp)(Akt)· ὡςL(Kon) |δὲi(Pt) πλῆL|θοςi(N) ἐνL(Prp) |στεiνῷL(Adj)(D) |νεiῶνL(G)|
+(413) [Ἄγγελος:] hielt|stand· als aber Menge in engen der|Schiffe|
+(414) [Ἄγγελος:] ἤLθροιστLʼ(Imp)(M/P) |ἀiρωL|γὴL(N) δʼ(Pt) οὔL|τιςi(Pr)(N) ἀλL|λήLλοιςL(Pr)(D) |παiρῆνL(Imp)(Akt),|
+(414) [Ἄγγελος:] war|gesammelt Hilfe aber keiner einander war|zugegen,|
+(415) [Ἄγγελος:] αὐLτοὶL(Pr)(N) |δʼ(Pt) ὑφiʼ(Prp) αὑL|τῶνL(Pr)(G) ἐμL|βόiλοιςL(D) |χαλLκοL|στόiμοιςL(Adj)(D)|
+(415) [Ἄγγελος:] sie|selbst aber von ihnen|selbst mit|Rammen erz|mündigen|
+(416) [Ἄγγελος:] παίLοντLʼ(Prä)(Akt)(N), |ἔiθραυL|ονL(Imp)(Akt) πάνL|ταi(Adj)(A) κωL|πήLρηL(Adj)(A) |στόiλονL(A),|
+(416) [Ἄγγελος:] schlagend, zerbrachen ganzen ruder|beseelten Flotte,|
+(417) [Ἄγγελος:] ἙλLληL|νιiκαίL(Adj)(N) |τεi(Pt) νῆL|εςi(N) οὐκL(Pt) |ἀiφραL|σμόiνωςL(Adv)|
+(417) [Ἄγγελος:] griechische und Schiffe nicht un|bedacht|
+(418) [Ἄγγελος:] κύiκλῳL(D) |πέiριξL(Adv) |ἔiθειL|νονi(Imp)(Akt), ὑL|πτιiοῦL|τοi(Imp)(M/P) δὲL(Pt)|
+(418) [Ἄγγελος:] im|Kreis ringsum schlugen|sie, wurde|umgestürzt aber|
+(419) [Ἄγγελος:] σκάiφηL(N) |νεiῶνL(G), |θάiλασL|σαi(N) δʼ(Pt) οὐL|κέτiʼ(Adv) ἦνL(Imp)(Akt) |ἰiδεῖνL(AorS)(Inf)(Akt),|
+(419) [Ἄγγελος:] Rümpfe der|Schiffe, Meer aber nicht|mehr war zu|sehen,|
+(420) [Ἄγγελος:] ναυLαL|γίiωνL(G) |πλήLθουL|σαi(Prä)(Akt)(N) καὶL(Kon) |φόiνουL(G) |βροiτῶνL(G).|
+(420) [Ἄγγελος:] der|Schiffsbrüche voll|seiend und des|Mordes der|Sterblichen.|
+(421) [Ἄγγελος:] ἀLκταὶL(N) |δὲi(Pt) νεL|κρῶνL(G) χοιL|ράiδεςL(N) |τʼ(Pt) ἐiπλήL|θυiονL(Imp)(Akt),|
+(421) [Ἄγγελος:] Küsten aber der|Toten Sand|bänke und füllten|sich,|
+(422) [Ἄγγελος:] φυiγῇL(D) |δʼ(Pt) ἀiκόL|σμῳL(Adj)(D) πᾶL|σαi(Adj)(N) ναῦςL(N) |ἠLρέσL|σεiτοL(Imp)(M/P),|
+(422) [Ἄγγελος:] mit|Flucht aber un|geordnet jede Schiff wurde|gerudert,|
+(423) [Ἄγγελος:] ὅiσαιL|περi(Pr)(N) ἦL|σανL(Imp)(Akt) βαρL|βάiρουL(Adj)(G) |στραiτεύL|μαiτοςL(G).|
+(423) [Ἄγγελος:] so|viele waren des|barbarischen Heeres.|
+(424) [Ἄγγελος:] τοὶL(Art)(N) δʼ(Pt) ὥL|στεi(Kon) θύνL|νουςL(A) ἤL(Kon) |τινiʼ(Pr)(A) ἰχL|θύiωνL(G) |βόiλονL(A)|
+(424) [Ἄγγελος:] die aber wie Thun|fische oder irgendeinen der|Fische Fang|
+(425) [Ἄγγελος:] ἀiγαῖL|σιi(Adj)(D) κωL|πῶνL(G) θραύL|μαiσίνL(D) |τʼ(Pt) ἐiρειL|πίiωνL(G)|
+(425) [Ἄγγελος:] mit|spitzen der|Ruder Bruch|stücken und der|Trümmer|
+(426) [Ἄγγελος:] ἔiπαιL|ονi(Imp)(Akt), ἐρL|ράiχιL|ζονi(Imp)(Akt)· οἰL|μωLγὴL(N) |δʼ(Pt) ὁiμοῦL(Adv)|
+(426) [Ἄγγελος:] schlugen, rücken|spalteten· Weh|geschrei aber zugleich|
+(427) [Ἄγγελος:] κωLκύL|μαiσινL(D) |καiτεῖL|χεi(Imp)(Akt) πεrλαr|γίiανL(Adj)(A) |ἅiλαL(A),|
+(427) [Ἄγγελος:] mit|Klagen hielt|nieder meer|ische Salz|flut,|
+(428) [Ἄγγελος:] ἕiωςL(Kon) |κεiλαιL|νῆςL(Adj)(G) νυL|κτὸςi(G) ὄμμLʼ(A) |ἀiφείL|λεiτοL(Aor)(M/P).|
+(428) [Ἄγγελος:] bis der|schwarzen Nacht Auge nahm|weg.|
+(429) [Ἄγγελος:] καiκῶνL(G) |δὲi(Pt) πλῆL|θοςi(N), οὐδLʼ(Pt) |ἂνi(Pt) εἰL(Kon) |δέκiʼ(Adj) ἤL|μαiταL(A)|
+(429) [Ἄγγελος:] der|Übel aber Menge, nicht|einmal wohl wenn zehn Tage|
+(430) [Ἄγγελος:] στοιLχηL|γοiροίL|ηνL(Prä)(Akt)(Op), οὐκL(Pt) |ἂνi(Pt) ἐκL|πλήLσαιL|μίi(Aor)(Akt)(Op) σοιL(Pr)(D).|
+(430) [Ἄγγελος:] würde|in|Reihen|führen, nicht wohl würde|voll|erzählen dir.|
+(431) [Ἄγγελος:] εὖL(Adv) γὰρL(Pt) |τόδiʼ(Pr)(A) ἴL|σθιi(Prä)(Imv)(Akt), μηL|δάμiʼ(Adv) ἡL|μέiρᾳL(D) |μιiᾷL(Adj)(D)|
+(431) [Ἄγγελος:] gut denn dies wisse, bei|keiner Tag einem|
+(432) [Ἄγγελος:] πλῆLθοςL(N) |τοiσουL|τάiριθL|μονi(Adj)(N) ἀνL|θρώLπωνL(G) |θαiνεῖνL(AorS)(Inf)(Akt).|
+(432) [Ἄγγελεος:] Menge so|zahlen|starke der|Menschen zu|sterben.|
+(433) [Ἄτοσσα:] αἰLαῖL(ij), |καiκῶνL(G) |δὴL(Pt) πέrλαr|γοςi(N) ἔρL|ρωLγενL(Per)(Akt) |μέiγαL(Adj)(N)|
+(433) [Ἄτοσσα:] ai|ai, der|Übel wahrlich Meer ist|zerbrochen groß|
+(434) [Ἄτοσσα:] ΠέρLσαιςL(D) |τεi(Pt) καὶL(Kon) |πρόiπανL|τιi(Adj)(D) βαρL|βάiρωνL(Adj)(G) |γέiνειL(D).|
+(434) [Ἄτοսσα:] den|Persern und auch dem|ganzen der|Barbaren Geschlecht.|
+(435) [Ἄγγελος:] εὖL(Adv) νυνL(Pt) |τόδiʼ(Pr)(A) ἴL|σθιi(Prä)(Imv)(Akt), μηL|δέiπωL(Adv) |μεiσοῦνL(Prä)(Akt)(N) |καiκόνL(N)·|
+(435) [Ἄγγελος:] gut nun dies wisse, noch|nicht mitten|seiendes Übel·|
+(436) [Ἄγγελος:] τοιLάδLʼ(Adj)(N) |ἐπiʼ(Prp) αὐL|τοῖςL(Pr)(D) ἦλL|θεi(AorS)(Akt) συμL|φοiρὰL(N) |πάiθουςL(G)|
+(436) [Ἄγγελος:] solche auf ihnen kam Unglück des|Leidens|
+(437) [Ἄγγελος:] ὡςL(Kon) τοῖσL|δεi(Pr)(D) καὶL(Kon) |δὶςi(Adv) ἀνL|τιiσηL|κῶLσαιL(Aor)(Inf)(Akt) |ῥοiπῇL(D).|
+(437) [Ἄγγελος:] so|dass diesen auch zweimal gegen|auf|wiegen mit|Waage|schale.|
+(438) [Ἄτοσσα:] καὶL(Kon) τίςL(Pr)(N) |γέiνοιτLʼ(Aor)(Med)(Op) |ἂνL(Pt) τῆσδLʼ(Pr)(G) |ἔτiʼ(Adv) ἐχL|θίiωνL(Adj)(Kmp)(N) |τύiχηL(N);|
+(438) [Ἄτοσσα:] und wer würde|werden wohl dieser noch feindlichere Schicksal;|
+(439) [Ἄτοσσα:] λέLξονL(Aor)(Imv)(Akt) |τίνiʼ(Pr)(A) αὖL(Adv) |φὴςL(Prä)(Akt) τήνL|δεi(Pr)(A) συμL|φοiρὰνL(A) |στραiτῷL(D)|
+(439) [Ἄτοσσα:] sage wen wiederum sagst|du dieses Unglück dem|Heer|
+(440) [Ἄτοσσα:] ἐλLθεῖνL(AorS)(Inf)(Akt) |καiκῶνL(G) |ῥέiπουL|σανi(Prä)(Akt)(A) ἐςL(Prp) |τὰi(Art)(A) μάσL|σοiναL(Adj)(Kmp)(A).|
+(440) [Ἄτοσσα:] zu|kommen der|Übel sich|neigende in die größeren.|
+(441) [Ἄγγελος:] ΠερLσῶνL(G) |ὅiσοιL|περi(Pr)(N) ἦL|σανi(Imp)(Akt) ἀκL|μαῖLοιL(Adj)(N) |φύiσινL(A),|
+(441) [Ἄγγελος:] der|Perser so|viele|gerade waren blühend Natur|nach,|
+(442) [Ἄγγελος:] ψυLχήνL(A) |τʼ(Pt) ἄiριL|στοιL(Adj)(N) κεὐL|γέiνειL|ανi(Kon)(A) ἐκL|πρεiπεῖςL(Adj)(N),|
+(442) [Ἄγγελος:] Seele und die|Besten und|Adel hervor|ragend,|
+(443) [Ἄγγελος:] αὐLτῷL(Pr)(D) |τʼ(Pt) ἄiναL|κτιi(D) πίL|στινi(A) ἐνL(Prp) |πρώLτοιςL(Adj)(D) |ἀiείL(Adv),|
+(443) [Ἄγγελος:] ihm und dem|Herrscher Treue in den|Ersten immer,|
+(444) [Ἄγγελος:] τεiθνᾶL|σινi(Per)(Akt) αἰL|σχρῶςL(Adv) δυL|σκλεiεL|στάiτῳL(Adj)(Sup)(D) |μόiρῳL(D).|
+(444) [Ἄγγελος:] sind|gestorben schändlich im|übel|berüchtigtsten Tod.|
+(445) [Ἄτοσσα:] οἲL(ij) ʼγὼL(Pr)(N) |τάiλαιL|ναi(Adj)(N) συμL|φοiρᾶςL(G) |καiκῆςL(Adj)(G), |φίiλοιL(V).|
+(445) [Ἄτοσσα:] o|weh ich elend des|Unglücks schlechten, Freunde.|
+(446) [Ἄτοσσα:] ποίLῳL(Adj)(D) |μόiρῳL(D) |δὲi(Pt) τούσL|δεi(Pr)(A) φὴςL(Prä)(Akt) |ὀiλωL|λέiναιL(Per)(Inf)(Akt);|
+(446) [Ἄτοσσα:] durch|welchen Tod aber diese sagst|du zugrunde|gegangen|sein;|
+(447) [Ἄγγελος:] νῆLσόςL(N) |τιςi(Pr)(N) ἔL|στιi(Prä)(Akt) πρόL|σθεi(Adv) Σαrλαr|μῖLνοςL(G) |τόiπωνL(G),|
+(447) [Ἄγγελος:] Insel irgendeine ist vor von|Salamis der|Orte,|
+(448) [Ἄγγελος:] βαιLάL(Adj)(N), |δύiσορL|μοςL(Adj)(N) ναυL|σίνi(D), ἣνL(Pr)(A) |ὁi(Art)(N) φιrλόr|χοiροςL(Adj)(N)|
+(448) [Ἄγγελος:] klein, schwer|zu|ankern der|Schiffe, welche der tanz|liebende|
+(449) [Ἄγγελος:] ΠὰνL(N) ἐμL|βαiτεύL|ειL(Prä)(Akt), πονL|τίiαςL(Adj)(G) |ἀLκτῆςL(G) |ἔiπιL(Prp).|
+(449) [Ἄγγελος:] Pan betritt, der|meerischen Küste auf.|
+(450) [Ἄγγελος:] ἐνLταῦL|θαi(Adv) πέμL|πειL(Prä)(Akt) τούσδLʼ(Pr)(A), |ὅiπωςL(Kon), |ὅiτανL(Kon) |νεiῶνL(G)|
+(450) [Ἄγγελος:] dorthin sendet diese|hier, damit, wenn der|Schiffe|
+(451) [Ἄγγελος:] φθαiρένL|τεςi(Aor)(Pas)(N) ἐχL|θροὶL(N) νῆL|σονi(A) ἐκL|σῳLζοίL|αiτοL(Prä)(M/P)(Op),|
+(451) [Ἄγγελος:] verdorben|worden Feinde Insel heraus|retten|würden,|
+(452) [Ἄγγελος:] κτείLνοιL|ενi(Aor)(Akt)(Op) εὐL|χείLρωL|τονi(Adj)(A) ἙλL|λήLνωνL(Adj)(G) |στραiτόνL(A),|
+(452) [Ἄγγελος:] würden|töten leicht|zu|bändigenden der|Griechen Heer,|
+(453) [Ἄγγελος:] φίiλουςL(A) |δʼ(Pt) ὑiπεκL|σῴLζοιL|ενi(Prä)(Akt)(Op) ἐrναr|λίiωνL(Adj)(G) |πόiρωνL(G),|
+(453) [Ἄγγελος:] Freunde aber würden|heraus|retten der|meerischen Wege,|
+(454) [Ἄγγελος:] καiκῶςL(Adv) |τὸi(Art)(A) μέλL|λονi(Prä)(Akt)(A) ἱL|στοiρῶνL(Prä)(Akt)(N). |ὡςL(Kon) γὰρL(Pt) |θεiὸςL(N)|
+(454) [Ἄγγελος:] schlecht das Kommende er|forschend. wie denn Gott|
+(455) [Ἄγγελος:] ναLῶνL(G) |ἔiδωL|κεi(AorS)(Akt) κῦL|δοςi(A) ἝλL|ληLσινL(Adj)(D) |μάiχηςL(G),|
+(455) [Ἄγγελος:] der|Schiffe gab Ruhm den|Griechen des|Kampfes,|
+(456) [Ἄγγελος:] αὐLθηL|μεiρὸνL(Adv) |φράLξανL|τεςi(Aor)(Akt)(N) εὐL|χάλLκοιςL(Adj)(D) |δέiμαςL(A)|
+(456) [Ἄγγελος:] am|selben|Tag umwehrt|habend wohl|erznen Leib|
+(457) [Ἄγγελος:] ὅiπλοιL|σιi(D) ναL|ῶνL(G) ἐL|ξέiθρῳL|σκονi(Imp)(Akt)· ἀμL|φὶi(Prp) δὲL(Pt)|
+(457) [Ἄγγελος:] mit|Waffen der|Schiffe sprangen|heraus· um aber|
+(458) [Ἄγγελος:] κυiκλοῦνL|τοi(Imp)(M/P) πᾶL|σανL(Adj)(A) νῆL|σονi(A), ὥστLʼ(Kon) |ἀiμηL|χαiνεῖνL(Prä)(Inf)(Akt)|
+(458) [Ἄγγελος:] um|kreisten ganze Insel, sodass ratlos|sein|
+(459) [Ἄγγελος:] ὅiποιL(Adv) |τράiποινL|τοi(Aor)(Med)(Op). πολL|λὰi(Adj)(A) μὲνL(Pt) |γὰρi(Pt) ἐκL(Prp) |χεiρῶνL(G)|
+(459) [Ἄγγελος:] wohin würden|sich|wenden. viele zwar denn aus Händen|
+(460) [Ἄγγελος:] πέiτροιL|σινi(D) ἠL|ράσLσονL|τοi(Imp)(M/P), τοL|ξιiκῆςL(Adj)(G) |τʼ(Pt) ἄiποL(Prp)|
+(460) [Ἄγγελος:] mit|Steinen wurden|getroffen, der|Bogen|kunst und von|
+(461) [Ἄγγελος:] θώLμιγL|γοςi(G) ἰL|οὶL(N) προL|σπίτiνονL|τέςi(Prä)(Akt)(N) ὤλL|λυiσανL(AorS)(Akt)·|
+(461) [Ἄγγελος:] des|Köchers Pfeile hin|fallend vernichteten·|
+(462) [Ἄγγελος:] τέiλοςL(Adv) |δʼ(Pt) ἐiφορL|μηLθένL|τεςi(Aor)(Pas)(N) ἐξL(Prp) |ἑiνὸςL(Adj)(G) |ῥόiθουL(G)|
+(462) [Ἄγγελος:] schließlich aber zum|An|sturm|getrieben|worden aus eines Getöses|
+(463) [Ἄγγελος:] παίLουL|σιi(Prä)(Akt), κρεrοr|κοiποῦL|σιi(Prä)(Akt) δυL|στήLνωνL(Adj)(G) |μέiληL(A),|
+(463) [Ἄγγελος:] schlagen|sie, Fleisch|schneiden|sie der|Unglücklichen Glieder,|
+(464) [Ἄγγελος:] ἕiωςL(Kon) |ἁiπάνL|τωνL(Adj)(G) ἐL|ξαiπέL|φθειLρανL(AorS)(Akt) |βίiονL(A).|
+(464) [Ἄγγελος:] bis aller vollends|vernichteten Leben.|
+(465) [Ἄγγελος:] ΞέρLξηςL(N) |δʼ(Pt) ἀiνῴL|μωLξενL(AorS)(Akt) |καiκῶνL(Adj)(G) |ὁiρῶνL(Prä)(Akt)(N) |βάiθοςL(A)·|
+(465) [Ἄγγελος:] Xerxes aber schrie|auf der|Übel sehend Tiefe·|
+(466) [Ἄγγελος:] ἕiδρανL(A) |γὰρi(Pt) εἶL|χεi(Imp)(Akt) πανL|τὸςi(Adj)(G) εὐL|αLγῆL(Adj)(A) |στραiτοῦL(G),|
+(466) [Ἄγγελος:] Sitz denn hatte des|ganzen frei|blickend Heeres,|
+(467) [Ἄγγελος:] ὑLψηL|λὸνi(Adj)(A) ὄχL|θονi(A) ἄγL|χιi(Adv) πεrλαr|γίiαςL(Adj)(G) |ἁiλόςL(G)·|
+(467) [Ἄγγελος:] hochen Hügel nahe der|meerischen des|Meeres·|
+(468) [Ἄγγελος:] ῥήLξαςL(AorS)(Akt)(N) |δὲi(Pt) πέL|πλουςL(A) κἀL|ναiκωL|κύLσαςL(Kon)(AorS)(Akt)(N) |λιiγύL(Adj)(A),|
+(468) [Ἄγγελος:] zer|rissen|habend aber Gewänder und|auf|ge|schrien|habend hell|klingend,|
+(469) [Ἄγγελος:] πεLζῷL(Adj)(D) |παiραγL|γείLλαςL(AorS)(Akt)(N) |ἄiφαρL(Adv) |στραiτεύL|μαiτιL(D),|
+(469) [Ἄγγελος:] dem|Fuß|Heer befohlen|habend sofort dem|Heer,|
+(470) [Ἄγγελος:] ἵiησLʼ(Prä)(Akt) |ἀiκόL|σμῳL(Adj)(D) ξὺνL(Prp) |φυiγῇL(D). |τοιLάνL|δεi(Adj)(A) σοιL(Pr)(D)|
+(470) [Ἄγγελος:] lässt|los un|geordnet|er mit Flucht. solchee dir|
+(471) [Ἄγγελος:] πρὸςL(Prp) τῇL(Art)(D) |πάiροιL|θεi(Adv) συμL|φοiρὰνL(A) |πάiραL(Adv) |στέiνεινL(Prä)(Inf)(Akt).|
+(471) [Ἄγγελος:] zu der vor|her Unglück darüber|hinaus stöhnen.|
+(472) [Ἄτοσσα:] ὦL(ij) στυL|γνὲi(Adj)(V) δαῖL|μονi(V), ὡςL(Pt) |ἄρiʼ(Pt) ἔL|ψευLσαςL(Aor)(Akt) |φρεiνῶνL(G)|
+(472) [Ἄτοσσα:] o finster|er Dämon, wie doch täuschtest der|Sinne|
+(473) [Ἄτοσσα:] ΠέρLσαςL(A)· |πιiκρὰνL(Adj)(A) |δὲi(Pt) παῖςL(N) |ἐiμὸςL(Adj)(N) |τιLμωL|ρίiανL(A)|
+(473) [Ἄτοσσα:] Perser· bittere aber Sohn mein Strafe|
+(474) [Ἄτοσσα:] κλειLνῶνL(Adj)(G) |ἈiθηL|νῶνL(G) ηὗL|ρεi(AorS)(Akt), κοὐκL(Kon)(Pt) |ἀiπήρL|κεiσανL(Aor)(Akt)|
+(474) [Ἄτοσσα:] der|ruhmreichen Athen fand, und|nicht genügten|
+(475) [Ἄτοσσα:] οὓςL(Pr)(A) πρόL|σθεi(Adv) Μαrραr|θὼνL(N) βαρL|βάiρωνL(Adj)(G) |ἀiπώL|λεiσενL(AorS)(Akt)·|
+(475) [Ἄτοσσα:] welche zuvor Marathon der|Barbaren verderbte·|
+(476) [Ἄτοσσα:] ὧνL(Pr)(G) ἀνL|τίiποιL|ναi(A) παῖςL(N) |ἐiμὸςL(Adj)(N) |πράLξεινL(Fu)(Akt)(Inf) |δοiκῶνL(Prä)(Akt)(N)|
+(476) [Ἄτοσσα:] deren Gegen|strafen Sohn mein zu|vollziehen meinend|
+(477) [Ἄτοσσα:] τοiσόνL|δεi(Adj)(A) πλῆL|θοςL(A) πηL|μάiτωνL(G) |ἐiπέL|σπαiσενL(Aor)(Akt).|
+(477) [Ἄτοσσα:] so|große Menge von|Leiden zog|herbei.|
+(478) [Ἄτοσσα:] σὺi(Pr)(N) δʼ(Pt) εἰL|πέi(Aor)(Akt)(Imv), ναL|ῶνL(G) αἳL(Pr)(N) |πεiφεύL|γαiσινL(Per)(Akt) |μόiρονL(A),|
+(478) [Ἄτοσσα:] du aber sage, der|Schiffe die sind|entflohen Tod,|
+(479) [Ἄτοσσα:] ποῦL(Adv) τάσδLʼ(Pr)(A) |ἔiλειL|πεςi(Imp)(Akt)· οἶL|σθαi(Prä)(Akt) σηL|μῆLναιL(Aor)(Akt)(Inf) |τοiρῶςL(Adv);|
+(479) [Ἄτοσσα:] wo diese|hier ließest|du· weißt|du zu|zeigen klar;|
+(480) [Ἄγγελος:] ναLῶνL(G) |γεi(Pt) ταL|γοὶL(N) τῶνL(Art)(G) |λεiλειμL|μέiνωνL(Per)(M/P)(G) |σύiδηνL(Adv)|
+(480) [Ἄγγελος:] der|Schiffe doch Führer der zurück|gelassenen zusammen|
+(481) [Ἄγγελος:] κατiʼ(Prp) οὖL|ρονi(A) οὐκL(Pt) |εὔLκοL|σμονi(Adj)(A) αἴL|ρονLταιL(Prä)(M/P) |φυiγήνL(A)·|
+(481) [Ἄγγελος:] mit dem|Wind nicht geordnete nehmen|sie|auf Flucht·|
+(482) [Ἄγγελος:] στραiτὸςL(N) |δʼ(Pt) ὁi(Art)(N) λοιL|πὸςi(Adj)(N) ἔνL(Prp) |τεi(Pt) ΒοιL|ωLτῶνL(Adj)(G) |χθοiνὶL(D)|
+(482) [Ἄγγελος:] Heer aber das übrige in und der|Boioter Erde|
+(483) [Ἄγγελος:] διiώλL|λυθiʼ(Imp)(M/P), οἱL(Art)(N) |μὲνi(Pt) ἀμL|φὶi(Prp) κρηL|ναῖLονL(Adj)(A) |γάiνοςL(A)|
+(483) [Ἄγγελος:] ging|zugrunde, die zwar um quell|klaren Glanz|
+(484) [Ἄγγελος:] δίLψῃL(D) |ποiνοῦνL|τεςi(Prä)(Akt)(N), οἱL(Art)(N) |δʼ(Pt) ὑπiʼ(Prp) ἄσθL|μαiτοςL(G) |κεiνοὶL(Adj)(N)|
+(484) [Ἄγγελος:] vor|Durst leidend, die aber unter Atem|not leer|
+(485) [Ἄγγελος:] διiεκL|πεiρῶL|μενi(Aor)(Akt) ἔςL(Prp) |τεi(Pt) ΦωL|κέiωνL(Adj)(G) |χθόiναL(A)|
+(485) [Ἄγγελος:] durch|zogen|wir in und der|Phoker Erde|
+(486) [Ἄγγελος:] καὶL(Kon) ΔωL|ρίδiʼ(Adj)(A) αἶL|ανL(A), ΜηL|λιiᾶL(Adj)(G) |τεi(Pt) κόλL|πονi(A), οὗL(Pr)(G)|
+(486) [Ἄγγελος:] und dorische Land, der|Malier auch Meer|busen, dessen|
+(487) [Ἄγγελος:] ΣπερLχειL|ὸςi(N) ἄρL|δειL(Prä)(Akt) πεrδίr|ονi(A) εὐL|μεiνεῖL(Adj)(D) |ποiτῷL(D)·|
+(487) [Ἄγγελος:] Spercheios bewässert Ebene mit|gütigem Trank·|
+(488) [Ἄγγελος:] κἀνLτεῦL|θενi(Kon)(Adv) ἡL|μᾶςL(Pr)(A) γῆςL(G) |ἈiχαιL|ίiδοςL(Adj)(G) |πέiδονL(N)|
+(488) [Ἄγγελος:] und|von|dort uns der|Erde der|achai|ischen Fläche|
+(489) [Ἄγγελος:] καὶL(Kon) ΘεσL|σαiλῶνL(Adj)(G) |πόiλειςL(N) |ὑiπεL|σπαiνιL|σμέiνουςL(Per)(M/P)(A)|
+(489) [Ἄγγελος:] und der|Thessaler Städte unter|versorgt|seiend|
+(490) [Ἄγγελος:] βοiρᾶςL(G) |ἐiδέL|ξαντLʼ(AorS)(Med)· ἔνL|θαi(Adv) δὴL(Pt) |πλεῖLστοιL(Adj)(N)(Sup) |ʼθάiνονL(AorS)(Akt)|
+(490) [Ἄγγελος:] an|Speise nahmen|auf· dort wahrlich die|meisten starben|
+(491) [Ἄγγελος:] δίLψῃL(D) |τεi(Pt) λιL|μῷL(D) τʼ(Pt)· ἀμL|φόiτεrραr(Adj)(N) |γὰρi(Pt) ἦνL(Imp)(Akt) |τάiδεL(Pr)(N).|
+(491) [Ἄγγελος:] aus|Durst und aus|Hunger und· beides denn war diese.|
+(492) [Ἄγγελος:] ΜαLγνηL|τιiκὴνL(Adj)(A) |δὲi(Pt) γαῖL|ανi(A) ἔςL(Prp) |τεi(Pt) Μαrκεr|δόiνωνL(Adj)(G)|
+(492) [Ἄγγελος:] magnetische aber Erde in und der|Makedonen|
+(493) [Ἄγγελος:] χώLρανL(A) |ἀiφιL|κόiμεσθLʼ(AorS)(Med), |ἐπiʼ(Prp) ἈL|ξίiουL(G) |πόiρονL(A),|
+(493) [Ἄγγελος:] Gegend kamen|wir|an, auf des|Axios Übergang,|
+(494) [Ἄγγελος:] ΒόλLβηςL(G) |θʼ(Pt) ἕiλειL|ονL(Adj)(A) δόrναr|καi(A), ΠάγL|γαιLόνL(A) |τʼ(Pt) ὄiροςL(A),|
+(494) [Ἄγγελος:] der|Bolbe und sumpfigen Schilf, Pangaion und Berg,|
+(495) [Ἄγγελος:] ἨLδωL|νίδiʼ(Adj)(A) αἶL|ανL(A)· νυL|κτὶi(D) δʼ(Pt) ἐνL(Prp) |ταύLτῃL(Pr)(D) |θεiὸςL(N)|
+(495) [Ἄγγελος:] edonisch|es Land· bei|Nacht aber in dieser Gott|
+(496) [Ἄγγελος:] χειLμῶνLʼ(A) |ἄiωL|ρονi(Adj)(A) ὦρL|σεi(AorS)(Akt), πήL|γνυLσινL(Prä)(Akt) |δὲi(Pt) πᾶνL(Adj)(A)|
+(496) [Ἄγγελος:] Sturm un|zeitigen er|regte, friert aber alles|
+(497) [Ἄγγελος:] ῥέiεL|θρονi(A) ἁL|γνοῦL(Adj)(G) ΣτρυL|μόiνοςL(G). |θεiοὺςL(A) |δέi(Pt) τιςL(Pr)(N)|
+(497) [Ἄγγελος:] Strom des|reinen Strymon. Götter aber irgend|wer|
+(498) [Ἄγγελος:] τὸi(Art)(A) πρὶνL(Adv) |νοiμίL|ζωνL(Prä)(Akt)(N) οὐL|δαiμοῦL(Adv) |τότiʼ(Adv) ηὔL|χεiτοL(Imp)(M/P)|
+(498) [Ἄγγελος:] das vorher meinend nirgends damals betete|
+(499) [Ἄγγελος:] λιiταῖL|σιi(D), γαῖL|ανi(A) οὐL|ραiνόνL(A) |τεi(Pt) προL|σκυiνῶνL(Prä)(Akt)(N).|
+(499) [Ἄγγελος:] mit|Bitten, Erde Himmel und anbetend.|
+(500) [Ἄγγελος:] ἐiπεὶL(Kon) |δὲi(Pt) πολL|λὰi(Adj)(A) θεrοr|κλυiτῶνL(Adj)(G) |ἐiπαύL|σαiτοL(Aor)(M/P)|
+(500) [Ἄγγελος:] als aber viel|es gott|berühmter hörte|auf|
+(501) [Ἄγγελος:] στραiτόςL(N), |πεiρᾷL(Prä)(Akt) |κρυLσταλL|λοiπῆL|γαi(Adj)(A) διrὰr(Prp) |πόiρονL(A)·|
+(501) [Ἄγγελος:] Heer, durch|quert kristall|gefrorenen durch Furt·|
+(502) [Ἄγγελος:] χὤLστιςL(Kon)(Pr)(N) |μὲνi(Pt) ἡL|μῶνL(Pr)(G) πρὶνL(Prp) |σκεiδαL|σθῆLναιL(Aor)(M/P)(Inf) |θεiοῦL(G)|
+(502) [Ἄγγελος:] und|wer zwar von|uns bevor zer|streut|zu|werden des|Gottes|
+(503) [Ἄγγελος:] ἀLκτῖL|ναςi(A) ὡρL|μήLθηL(Aor)(M/P), |σεiσωL|σμέiνοςL(Per)(M/P)(N) |κυiρεῖL(Prä)(Akt).|
+(503) [Ἄγγελος:] die|Strahlen stürzte|los, gerettet|seiend trifft|zu.|
+(504) [Ἄγγελος:] φλέiγωνL(Prä)(Akt)(N) |γὰρi(Pt) αὐL|γαῖςL(D) λαμL|πρὸςi(Adj)(N) ἡL|λίiουL(G) |κύiκλοςL(N)|
+(504) [Ἄγγελος:] brennend denn mit|Strahlen leuchtend der|Sonne Kreis|
+(505) [Ἄγγελος:] μέiσονL(Adj)(A) |πόiρονL(A) |διiῆL|κεi(Imp)(Akt), θερL|μαίLνωνL(Prä)(Akt)(N) |φλοiγίL(D).|
+(505) [Ἄγγελος:] mittleren Übergang durchzog, wärmend mit|Flamme.|
+(506) [Ἄγγελος:] πῖLπτονL(Imp)(Akt) |δʼ(Pt) ἐπiʼ(Prp) ἀλL|λήLλοιL|σινi(Pr)(D)· ηὐL|τύiχειL(Imp)(Akt) |δέi(Pt) τοιL(Pt)|
+(506) [Ἄγγελος:] fielen aber auf einander· war|begünstigt aber wohl|
+(507) [Ἄγγελος:] ὅLστιςL(Pr)(N) |τάiχιL|σταi(Adv)(Sup) πνεῦμLʼ(A) |ἀiπέρL|ρηLξενL(AorS)(Akt) |βίiουL(G).|
+(507) [Ἄγγελος:] wer am|schnellsten Atem ab|riss des|Lebens.|
+(508) [Ἄγγελος:] ὅiσοιL(Pr)(N) |δὲi(Pt) λοιL|ποὶL(Adj)(N) κἄL|τυiχονL(Kon)(Adv) |σωLτηL|ρίiαςL(G),|
+(508) [Ἄγγελος:] die|so|vielen|wie aber übrigen und|verfehlten der|Rettung,|
+(509) [Ἄγγελος:] ΘρῄLκηνL(A) |πεiράL|σανLτεςL(Aor)(Akt)(N) |μόiγιςL(Adv) |πολLλῷL(Adj)(D) |πόiνῳL(D),|
+(509) [Ἄγγελος:] Thrakien durch|gegangen|habend mühsam mit|viel Mühe,|
+(510) [Ἄγγελος:] ἥLκουL|σινi(Prä)(Akt) ἐκL|φυiγόνL|τεςi(AorS)(Akt)(N), οὐL(Pt) |πολLλοίL(Adj)(N) |τιiνεςL(Pr)(N),|
+(510) [Ἄγγελος:] kommen ent|flohen|habend, nicht viele einige,|
+(511) [Ἄγγελος:] ἐφiʼ(Prp) ἑL|στιiοῦL|χονL(Adj)(A) γαῖL|ανi(A)· ὡςL(Kon) |στέiνεινL(Prä)(Inf)(Akt) |πόiλινL(A)|
+(511) [Ἄγγελος:] zu herd|bewohnte Erde· wie stöhnen Stadt|
+(512) [Ἄγγελος:] ΠερLσῶνL(Adj)(G), |ποiθοῦL|σανL(Prä)(Akt)(A) φιλL|τάiτηνL(Adj)(A)(Sup) |ἥLβηνL(A) |χθοiνόςL(G).|
+(512) [Ἄγγελος:] der|Perser, begehrend lieb|ste Jugend des|Landes.|
+(513) [Ἄγγελος:] ταῦτLʼ(Pr)(N) ἔστLʼ(Prä)(Akt) |ἀiληL|θῆL(Adj)(N)· πολL|λὰi(Adj)(A) δʼ(Pt) ἐL|κλείLπωL(Prä)(Akt) |λέiγωνL(Prä)(Akt)(N)|
+(513) [Ἄγγελος:] diese sind wahr· viel|es aber lasse|ich|aus sagend|
+(514) [Ἄγγελος:] καiκῶνL(Adj)(G) |ἃi(Pr)(A) ΠέρL|σαιςL(Adj)(D) ἐγL|καiτέL|σκηLψενL(AorS)(Akt) |θεiόςL(N).|
+(514) [Ἄγγελος:] der|Übel welche den|Persern hat|nieder|geschickt Gott.|
+(515) [Χορός:] ὦL(ij) δυL|σπόiνηL|τεi(Adj)(V) δαῖL|μονi(V), ὡςL(Pt) |ἄiγανL(Adv) |βαiρὺςL(Adj)(N)|
+(515) [Χορός:] o schwer|arbeitender Dämon, wie gar schwer|
+(516) [Χορός:] ποiδοῖνL(Du)(G) |ἐiνήL|λουL(Adj)(G) πανL|τὶi(Adj)(D) ΠερL|σιiκῷL(Adj)(D) |γέiνειL(D).|
+(516) [Χορός:] der|zwei|Füße meer|igen dem|ganzen persischen Geschlecht.|
+(517) [Ἄτοσσα:] οἲL(ij) ʼγὼL(Pr)(N) |τάiλαιL|ναL(Adj)(N) διrαr|πεiπραγL|μέiνουL(Per)(M/P)(G) |στραiτοῦL(G)·|
+(517) [Ἄτοσσα:] weh ich elende ganz|und|gar|zugrunde|ge|gangenen Heeres·|
+(518) [Ἄτοσσα:] ὦL(ij) νυL|κτὸςi(G) ὄL|ψιςi(N) ἐμL|φαiνὴςL(Adj)(N) |ἐiνυL|πνίiωνL(G),|
+(518) [Ἄτοσσα:] o der|Nacht Anblick offenbar der|Träume,|
+(519) [Ἄτοσσα:] ὡςL(Kon) κάρL|ταi(Adv) μοιL(Pr)(D) |σαiφῶςL(Adv) |ἐiδήL|λωLσαςL(Aor)(Akt) |καiκάL(Adj)(A).|
+(519) [Ἄτοσσα:] wie sehr mir klar du|hast|gezeigt Übel.|
+(520) [Ἄτοσσα:] ὑLμεῖςL(Pr)(N) |δὲi(Pt) φαύL|λωςL(Adv) αὔτLʼ(Adv) |ἄiγανL(Adv) |ἐiκρίL|ναiτεL(Aor)(Akt).|
+(520) [Ἄτοσσα:] ihr aber schlecht wiederum gar|sehr habt|beurteilt.|
+(521) [Ἄτοσσα:] ὅiμωςL(Adv) |δʼ(Pt), ἐiπειL|δὴL(Kon) τῇδLʼ(Pr)(D) |ἐiκύL|ρωLσενL(Aor)(Akt) |φάiτιςL(N)|
+(521) [Ἄτοσσα:] dennoch aber, da dieser hat|bestätigt Weissagung|
+(522) [Ἄτοσσα:] ὑLμῶνL(Pr)(G), |θεiοῖςL(D) |μὲνL(Pt) πρῶL|τονi(Adv) εὔL|ξαLσθαιL(Aor)(Med)(Inf) |θέiλωL(Prä)(Akt)·|
+(522) [Ἄτοσσα:] von|euch, den|Göttern zwar zuerst zu|beten will|ich·|
+(523) [Ἄτοσσα:] ἔiπειL|ταi(Adv) ΓῇL(D) |τεi(Pt) καὶL(Kon) |φθιiτοῖςL(Adj)(D) |δωLρήL|μαiταL(A)|
+(523) [Ἄτοσσα:] dann der|Erde und auch den|Verstorbenen Gaben|
+(524) [Ἄτοσσα:] ἥLξωL(Fu)(Akt) |λαiβοῦL|σαi(Aor)(Akt)(N) πέrλαr|νονi(A) ἐξL(Prp) |οἴLκωνL(G) |ἐiμῶνL(Adj)(G), —|
+(524) [Ἄτοσσα:] ich|werde|kommen genommen|habend Opferkuchen aus der|Häuser meiner, —|
+(525) [Ἄτοσσα:] ἐiπίL|σταiμαιL(Prä)(M/P) |μὲνi(Pt) ὡςL(Kon) |ἐπiʼ(Prp) ἐL|ξειρLγαL|σμέiνοιςL(Per)(M/P)(D),|
+(525) [Ἄτοσσα:] ich|weiß zwar dass auf vollendet|wordenen|Sachen,|
+(526) [Ἄτοσσα:] ἀλλLʼ(Kon) ἐςL(Prp) |τὸi(Art)(A) λοιL|πὸνi(Adj)(A) εἴL(Kon) |τιi(Pr)(N) δὴL(Pt) |λῷLονL(Adj)(N) |πέiλοιL(Prä)(M/P)(Op).|
+(526) [Ἄτοσσα:] aber in das Übrige wenn etwas doch besser würde|sein.|
+(527) [Ἄτοσσα:] ὑLμᾶςL(Pr)(A) |δὲi(Pt) χρὴL(Prä)(Akt) |ʼπὶi(Prp) τοῖσL|δεi(Pr)(D) τοῖςL(Art)(D) |πεiπραγL|μέiνοιςL(Per)(M/P)(D)|
+(527) [Ἄτοσσα:] euch aber ist|nötig bei diesen den vollbrachten|Dingen|
+(528) [Ἄτοσσα:] πιLστοῖL|σιi(Adj)(D) πιL|στὰL(Adj)(A) ξυμL|φέiρεινL(Prä)(Inf)(Akt) |βουLλεύL|μαiταL(A)·|
+(528) [Ἄτοσσα:] den|Treuen treue zusammen|bringen Ratschläge·|
+(529) [Ἄτοσσα:] καὶL(Kon) παῖδLʼ(A), |ἐiάνL(Kon) |περL(Pt) δεῦρLʼ(Adv) |ἐiμοῦL(Pr)(G) |πρόLσθενL(Adv) |μόiλῃL(AorS)(Akt)(Knj),|
+(529) [Ἄτοσσα:] und Sohn, wenn ja hierher meiner vor kommen|möge,|
+(530) [Ἄτοσσα:] παiρηL|γοiρεῖL|τεi(Prä)(Akt)(Imv), καὶL(Kon) |προiπέμL|πετiʼ(Prä)(Akt)(Imv) ἐςL(Prp) |δόiμουςL(A),|
+(530) [Ἄτοσσα:] tröstet, und begleitet in die|Häuser,|
+(531) [Ἄτοσσα:] μὴL(Pt) καίL(Kon) |τιi(Pr)(N) πρὸςL(Prp) |καiκοῖL|σιi(Adj)(D) προL|σθῆLταιL(AorS)(Med)(Knj) |καiκόνL(Adj)(A).|
+(531) [Ἄτοσσα:] nicht auch irgend|etwas zu den|Übeln hinzu|gefügt|werde Übel.|
+=== Stasimon ===
+(532) [Χορός:] ὦL(ij) ΖεῦL(V) |βαiσιiλεῦL(V), |νῦνL(Adv) γὰρL(Pt) |ΠερLσῶνL(G)|
+(532) [Χορός:] o Zeus König, nun denn der|Perser|
+(533) [Χορός:] τῶνL(Art)(G) μεiγαi|λαύLχωνL(Adj)(G) |καὶL(Kon) ποiλυi|άνLδρωνL(Adj)(G)|
+(533) [Χορός:] der hoch|stolzen und viel|männerigen|
+(534) [Χορός:] στραiτιiὰνL(A) |ὀiλέiσαςL(AorS)(Akt)(N)|
+(534) [Χορός:] Heer vernichtet|habend|
+(535) [Χορός:] ἄLστυi(A) τὸi(Art)(A) |ΣούLσωνL(G) |ἠδLʼ(Kon) ἈγL|βαiτάiνωνL(G)|
+(535) [Χορός:] Stadt die der|Susa und der|Agbatana|
+(536) [Χορός:] πένLθειL(D) |δνοiφεiρῷL(Adj)(D) |καiτέiκρυL|ψαςL(Aor)(Akt)·|
+(536) [Χορός:] in|Kummer düsterem du|hast|verhüllt·|
+(537) [Χορός:] πολLλαὶL(Adj)(N) |δʼ(Pt) ἀiταiλαῖςL(Adj)(D) |χερLσὶi(D) καi|λύLπτραςL(A)|
+(537) [Χορός:] viele aber zarten Händen Schleier|
+(538) [Χορός:] καiτεiρειL|κόiμεiναιL(Prä)(M/P)(N)|
+(538) [Χορός:] nieder|drückend|
+(539) [Χορός:] διiαiμυL|δαiλέiοιςL(Adj)(D) |δάLκρυiσιi(D) |κόλLπουςL(A)|
+(539) [Χορός:] triefenden mit|Tränen Busen|
+(540) [Χορός:] τέγLγουσLʼ(Prä)(Akt)(N), |ἄλLγουςL(G) |μεiτέiχουL|σαιL(Prä)(Akt)(N).|
+(540) [Χορός:] nässend, des|Schmerzes teil|habend.|
+(541) [Χορός:] αἱL(Art)(N) δʼ(Pt) ἁL|βρόiγοiοιL(Adj)(N) |ΠερLσίiδεςi(N) |ἀνLδρῶνL(G)|
+(541) [Χορός:] die aber weich|stimmigen Perserinnen der|Männer|
+(542) [Χορός:] ποiθέiουL|σαιi(Prä)(Akt)(N) ἰiδεῖνL(Aor)(Inf)(Akt) |ἀρLτιL|ζυiγίiανL(A),|
+(542) [Χορός:] begehrend zu|sehen Neu|vermählung,|
+(543) [Χορός:] λέLκτρωνL(G) |εὐLνὰςL(A) |ἁLβροiχίi|τωLναςL(Adj)(A),|
+(543) [Χορός:] der|Betten Lager weich|gewandete,|
+(544) [Χορός:] χλιiδαiνῆςL(Adj)(G) |ἥLβηςL(G) |τέρLψινi(A), ἀi|φεῖLσαιL(AorS)(Akt)(N),|
+(544) [Χορός:] des|üppigen Jugend Wonne, los|gelassen|habend,|
+(545) [Χορός:] πενLθοῦL|σιi(Prä)(Akt) γόiοιςL(D) |ἀiκοiρεL|στοiτάiτοιςL(Adj)(Sup)(D).|
+(545) [Χορός:] trauern mit|Klagen un|sättlich|sten.|
+(546) [Χορός:] κἀLγὼL(Kon)(Pr)(N) |δὲi(Pt) μόiρονL(A) |τῶνL(Art)(G) οἰL|χοiμέiνωνL(Prä)(M/P)(G)|
+(546) [Χορός:] und|ich aber Tod der davon|gegangenen|
+(547) [Χορός:] αἴLρωL(Prä)(Akt) |δοiκίiμωςL(Adv) |ποiλυiπενL|θῆL(Adj)(A).|
+(547) [Χορός:] hebe|ich würdig viel|betrauerten.|
+== Strophe 1 ==
+(548) [Χορός:] νῦνL(Adv) γὰρL(Pt) δὴL(Pt) πρόiπαLσαi(Adj)(N) μὲνL(Pt) στέiνειL(Prä)(Akt)|
+(548) [Χορός:] nun denn ja ganz|gesamte zwar stöhnt|
+(549) [Χορός:] γαῖLʼ(N) ἈL|σὶςi(N) ἐκL|κεiνουL|μέiναL(Prä)(M/P)(N).|
+(549) [Χορός:] Erde Asien leer|gemacht|werdend.|
+(550) [Χορός:] ΞέρLξηςL(N) |μὲνi(Pt) ἄL|γαiγενL(AorS)(Akt), |ποiποῖL(ij),|
+(550) [Χορός:] Xerxes zwar führte|her, ach,|
+(551) [Χορός:] ΞέρLξηςL(N) |δʼ(Pt) ἀiπώL|λεiσενL(Aor)(Akt), |τοiτοῖL(ij),|
+(551) [Χορός:] Xerxes aber vernichtete, to|toi,|
+(552) [Χορός:] ΞέρLξηςL(N) δὲi(Pt) πάντLʼ(Pr)(A) ἐiπέLσπεi(Aor)(Akt) δυLσφρόiνωςL(Adv)|
+(552) [Χορός:] Xerxes aber alles vollbrachte un|besonnen|
+(553) [Χορός:] βαLρίiδεσLσιi(D) πονLτίiαιςL(Adj)(D).|
+(553) [Χορός:] mit|Gewichten meerischen.|
+(554) [Χορός:] τίLπτεi(Adv) ΔαLρεῖLοςL(N) μὲνi(Pt) οὕL‖τω(Adv)|
+(554) [Χορός:] warum|denn Dareios zwar so|
+(555) [Χορός:] τότiʼ(Adv) ἀLβλαiβὴςL(Adj)(N) ἐiπῆνL(Imp)(Akt)|
+(555) [Χορός:] damals un|versehrt war|
+(556) [Χορός:] τόLξαρLχοςL(N) ποiλιiήLταιςL(D),|
+(556) [Χορός:] Bogen|führer den|Bürgern,|
+(557) [Χορός:] ΣουLσίiδαιςL(D) φίiλοςi(Adj)(N) ἄLκτωρL(N);|
+(557) [Χορός:] den|Susa|ern Freund Lenker;|
+== Antistrophe 1 ==
+(558) [Χορός:] πεLζούςL(Adj)(A) γάρL(Pt) σφεi(Pr)(A) καὶL(Kon) θαiλασLσίiουςL(Adj)(A)|
+(558) [Χορός:] Fuß|kämpfer denn sie und See|soldaten|
+(559) [Χορός:] λιiνόL|πτεiροιL(Adj)(N) |κυrαrνώL|πιiδεςL(Adj)(N)|
+(559) [Χορός:] lein|beflügelte dunkel|äugige|
+(560) [Χορός:] νᾶLεςL(N) |μὲνi(Pt) ἄL|γαiγονL(AorS)(Akt), |ποiποῖL(ij),|
+(560) [Χορός:] Schiffe zwar brachten|her, ach,|
+(561) [Χορός:] νᾶLεςL(N) |δʼ(Pt) ἀiπώL|λεiσανL(Aor)(Akt), |τοiτοῖL(ij),|
+(561) [Χορός:] Schiffe aber vernichteten, to|toi,|
+(562) [Χορός:] νᾶLεςL(N) παiνωLλέiθροιLσινi(Adj)(D) ἐμLβοiλαῖςL(D),|
+(562) [Χορός:] Schiffe mit|vernichtend|sten Ramm|stößen,|
+(563) [Χορός:] διrὰr(Prp) δʼ(Pt) ἸiαLόiνωνL(G) χέiραςL(A).|
+(563) [Χορός:] durch aber der|Ionier Hände.|
+(564) [Χορός:] τυτLθὰi(Adv) δʼ(Pt) ἐκLφυiγεῖνL(Aor)(Inf)(Akt) ἄiνακτLʼ(A)|
+(564) [Χορός:] wenig aber ent|fliehen Herrn|
+(565) [Χορός:] αὐLτὸνi(Pr)(A) εἰLσαiκούLοiμενL(Prä)(Akt)|
+(565) [Χορός:] ihn wir|hören|
+(566) [Χορός:] ΘρῄLκηςL(G) ἂμL(Adv) πεiδιiήLρειςL(Adj)(A)|
+(566) [Χορός:] Thraziens entlang ebenen|querende|
+(567) [Χορός:] δυLσχίiμουςL(Adj)(A) τεi(Pt) κεiλεύLθουςL(A).|
+(567) [Χορός:] schwer|gangbaren und Wege.|
+== Strophe 2 ==
+(568) [Χορός:] τοὶL(Art)(N) δʼ(Pt) ἄiραi(Pt) πρωLτόiμοiροιLοL(Adj)(G), φεῦL(ij),|
+(568) [Χορός:] die aber doch des|erst|Bestimmten|zum|Tod, weh,|
+(569) [Χορός:] ληLφθένLτεςL(Aor)(Pas)(N) πρὸςi(Prp) ἀiνάγLκαςL(A), ἠέL(Kon),|
+(569) [Χορός:] ergriffen|worden zu Zwänge, oder,|
+(570) [Χορός:] ἀLκτὰςL(A) ἀμLφὶi(Prp) ΚυiχρείLαςL(G), ὀᾶL(ij),|
+(570) [Χορός:] Küsten um der|Kychreia, o|weh,|
+(571) [Χορός:] ἔρLρανLταιL(Per)(M/P) στέiνεi(Prä)(Akt)(Imv) καὶL(Kon) δαiκνάL‖ζου(Prä)(Akt)(Imv),|
+(571) [Χορός:] sind|besprengt· stöhne und knirsche,|
+(572) [Χορός:] βαiρὺi(Adj)(A) δʼ(Pt) ἀμLβόiαLσονL(Aor)(Akt)(Imv)|
+(572) [Χορός:] schwer aber ruf|laut|aus|
+(573) [Χορός:] οὐLράrνιrʼ(Adj)(A) ἄiχηL(A), ὀiᾶL(ij)·|
+(573) [Χορός:] himmlische Schmerzen, o|weh·|
+(574) [Χορός:] τεῖLνεi(Prä)(Akt)(Imv) δὲi(Pt) δυLσβάiυLκτονL(Adj)(A)|
+(574) [Χορός:] spanne|aus aber schwer|heulenden|
+(575) [Χορός:] βοiᾶLτινL(A) τάiλαιLνανi(Adj)(A) αὐLδάνL(A).|
+(575) [Χορός:] Schrei|stimme elende Stimme.|
+== Antistrophe 2 ==
+(576) [Χορός:] γναLπτόiμεiνοιL(Prä)(M/P)(N) δʼ(Pt) ἁiλὶi(D) δειLνᾶιL(Adj)(D) φεῦL(ij),|
+(576) [Χορός:] gewalkt|werdend aber im|Meer schrecklichen weh,|
+(577) [Χορός:] σκύλLλονLταιL(Prä)(M/P) πρὸςi(Prp) ἀiναύLδωνL(Adj)(G), ἠέL(Kon),|
+(577) [Χορός:] werden|gequält durch der|Stummen, oder,|
+(578) [Χορός:] παίLδωνL(G) τᾶςL(Art)(G) ἀiμιiάνLτουL(Adj)(G), ὀᾶL(ij).|
+(578) [Χορός:] der|Kinder der Un|befleckten, o|weh.|
+(579) [Χορός:] πενLθεῖL(Prä)(Akt) δʼ(Pt) ἄνLδραi(A) δόiμοςL(N) στεiρηL‖θείς(Aor)(Pas)(N)|
+(579) [Χορός:] trauert aber den|Mann das|Haus beraubt|worden|
+(580) [Χορός:] τοiκέiεςL(N) τʼ(Pt) ἄiπαιLδεςL(Adj)(N)|
+(580) [Χορός:] Eltern und kinder|los|
+(581) [Χορός:] δαιLμόrνιrʼ(Adj)(A) ἄiχηL(A), ὀᾶL(ij),|
+(581) [Χορός:] un|heil|volle Schmerzen, o|weh,|
+(582) [Χορός:] δυLρόiμεiνοιL(Prä)(M/P)(N) γέiρονLτεςL(N)|
+(582) [Χορός:] weh|klagend Greise|
+(583) [Χορός:] τὸi(Art)(A) πᾶνL(Adj)(A) δὴL(Pt) κλύiουLσινi(Prä)(Akt) ἄλLγοςL(A).|
+(583) [Χορός:] das Ganze ja vernehmen Schmerz.|
+== Strophe 3 ==
+(584) [Χορός:] τοὶL(Art)(N) δʼ(Pt) ἀiνὰi(Prp) γᾶνL(A) ἈiσίiανL(A) δὴνL(Adv)|
+(584) [Χορός:] die aber durch|hin Erde Asien lange|
+(585) [Χορός:] οὐLκέiτιi(Adv) περLσοiνοiμοῦνLταιL(Prä)(M/P),|
+(585) [Χορός:] nicht|mehr werden|Perser|genannt,|
+(586) [Χορός:] οὐδLʼ(Pt) ἔiτιi(Adv) δαLσμοiφοiροῦLσινL(Prä)(Akt)|
+(586) [Χορός:] noch mehr Tribut|tragen|
+(587) [Χορός:] δεLσποiσύiνοιLσινi(Adj)(D) ἀiνάγLκαιςL(D),|
+(587) [Χορός:] despotischen unter|Zwängen,|
+(588) [Χορός:] οὐδLʼ(Pt) ἐςL(Prp) γᾶνL(A) προiπίτiνονLτεςL(Prä)(Akt)(N)|
+(588) [Χορός:] noch auf Erde vor|nieder|fallend|
+(589) [Χορός:] ἅLζονLταιL(Prä)(M/P)· βαiσιiλείLαL(N)|
+(589) [Χορός:] scheuen· Königtum|
+(590) [Χορός:] γὰρL(Pt) διiόiλωLλενi(Per)(Akt) ἰLσχύςL(N).|
+(590) [Χορός:] denn ist|ganz|zugrunde|gegangen Kraft.|
+== Antistrophe 3 ==
+(591) [Χορός:] οὐδLʼ(Pt) ἔiτιi(Adv) γλῶσLσαi(N) βροiτοῖLσινL(D)|
+(591) [Χορός:] noch mehr Zunge den|Sterblichen|
+(592) [Χορός:] ἐνL(Prp) φυiλαiκαῖςL(D)· λέiλυiταιL(Per)(M/P) γὰρL(Pt)|
+(592) [Χορός:] in Fesseln· ist|gelöst denn|
+(593) [Χορός:] λαLὸςi(N) ἐiλεύLθεiραi(Adv) βάLζεινL(Prä)(Inf)(Akt),|
+(593) [Χορός:] Volk frei zu|reden,|
+(594) [Χορός:] ὡςL(Kon) ἐiλύiθηL(Aor)(Pas) ζυiγὸνi(N) ἀλLκᾶςL(G).|
+(594) [Χορός:] da wurde|gelöst Joch der|Gewalt.|
+(595) [Χορός:] αἱLμαχLθεῖLσαi(Aor)(Pas)(N) δʼ(Pt) ἄiρουLρανL(A)|
+(595) [Χορός:] blut|befleckt|worden aber Acker|land|
+(596) [Χορός:] ΑἴLανLτοςL(G) πεiριiκλύLσταL(Adj)(N)|
+(596) [Χορός:] des|Aias ringsum|gewaschene|
+(597) [Χορός:] νᾶLσοςi(N) ἔiχειL(Prä)(Akt) τὰi(Art)(A) ΠερLσᾶνL(G).|
+(597) [Χορός:] Insel hält die der|Perser.|
+(598) [Ἄτοσσα:] φίiλοιL(V), |καiκῶνL(Adj)(G) |μὲνi(Pt) ὅL|στιςi(Pr)(N) ἔμL|πειLροςL(Adj)(N) |κυiρεῖL(Prä)(Akt),|
+(598) [Ἄτοσσα:] Freunde, der|Übel zwar wer erfahren|ist trifft|zu,|
+(599) [Ἄτοσσα:] ἐiπίL|σταiταιL(Prä)(M/P) |βροiτοῖL|σινi(D) ὡςL(Kon) |ὅiτανL(Kon) |κλύiδωνL(N)|
+(599) [Ἄτοσσα:] weiß den|Sterblichen dass wenn Woge|
+(600) [Ἄτοσσα:] καiκῶνL(Adj)(G) |ἐiπέλL|θῃL(AorS)(Akt)(Knj) πάνL|ταi(Adj)(A) δειL|μαίLνεινL(Prä)(Inf)(Akt) |φιiλεῖL(Prä)(Akt)·|
+(600) [Ἄτοσσα:] der|Übel über|komme alles zu|fürchten pflegt·|
+(601) [Ἄτοσσα:] ὅiτανL(Kon) |δʼ(Pt) ὁi(Art)(N) δαίL|μωνL(N) εὐL|ροiῇL(Prä)(Akt)(Knj), |πεiποιL|θέiναιL(Per)(Akt)(Inf)|
+(601) [Ἄτοσσα:] wenn aber der Daimon günstig|sei, vertraut|zu|haben|
+(602) [Ἄτοσσα:] τὸνi(Art)(A) αὐL|τὸνi(Adj)(A) αἰL|εὶL(Adv) δαίL|μονiʼ(A) οὐL|ριiεῖνL(Prä)(Inf)(Akt) |τύiχηνL(A).|
+(602) [Ἄτοσσα:] den selben immer Daimon günstig|wehen|zu|lassen Glück.|
+(603) [Ἄτοσσα:] ἐiμοὶL(Pr)(D) |γὰρi(Pt) ἤL|δηL(Adv) πάνL|ταi(Adj)(N) μὲνL(Pt) |φόiβουL(G) |πλέiαL(Adj)(N)|
+(603) [Ἄτοσσα:] mir denn schon alle zwar von|Furcht voll|
+(604) [Ἄτοσσα:] ἐνi(Prp) ὄμL|μαiσινL(D) |τἀνLταῖL|αi(Art)(Adj)(N) φαίL|νεiταιL(Prä)(M/P) |θεiῶνL(G),|
+(604) [Ἄτοσσα:] in den|Augen die|entgegengesetzten erscheint der|Götter,|
+(605) [Ἄτοσσα:] βοiᾷL(Prä)(Akt) |δʼ(Pt) ἐνi(Prp) ὠL|σὶi(D) κέrλαr|δοςi(N) οὐL(Pt) |παιLώL|νιiοςL(Adj)(N)·|
+(605) [Ἄτοσσα:] schreit aber in den|Ohren Getöse nicht paianisch·|
+(606) [Ἄτοσσα:] τοίLαL(Adj)(N) |καiκῶνL(G) |ἔκLπληL|ξιςi(N) ἐκL|φοiβεῖL(Prä)(Akt) |φρέiναςL(A).|
+(606) [Ἄτοσσα:] solche der|Übel Bestürzung erschreckt Gemüter.|
+(607) [Ἄτοσσα:] τοιLγὰρL(Pt) |κέiλευL|θονL(A) τήνδLʼ(Art)(A) |ἄiνευL(Prp) |τʼ(Pt) ὀiχηL|μάiτωνL(G)|
+(607) [Ἄτοσσα:] darum Weg diesen ohne und der|Fahrzeuge|
+(608) [Ἄτοσσα:] χλιiδῆςL(G) |τεi(Pt) τῆςL(Art)(G) |πάiροιL|θενi(Adv) ἐκL(Prp) |δόiμωνL(G) |πάiλινL(Adv)|
+(608) [Ἄτοσσα:] des|Prunks und der zuvor aus der|Häuser wieder|
+(609) [Ἄτοσσα:] ἔLστειL|λαi(Aor)(Akt), παιL|δὸςL(G) παL|τρὶi(D) πρευL|μεiνεῖςL(Adj)(A) |χοiὰςL(A)|
+(609) [Ἄτοσσα:] sandte, des|Sohnes dem|Vater gütige Gießopfer|
+(610) [Ἄτοσσα:] φέiρουσLʼ(Prä)(Akt)(N), |ἅiπερL(Pr)(A) |νεiκροῖL|σιi(D) μειL|λιLκτήL|ριiαL(N),|
+(610) [Ἄτοσσα:] tragend, die|gerade den|Toten Versöhnungen,|
+(611) [Ἄτοσσα:] βοiόςL(G) |τʼ(Pt) ἀφiʼ(Prp) ἁL|γνῆςL(Adj)(G) λευL|κὸνi(Adj)(A) εὔL|ποiτονL(Adj)(A) |γάiλαL(A),|
+(611) [Ἄτοσσα:] der|Kuh und von reinen weißes leicht|trinkbares Milch,|
+(612) [Ἄτοσσα:] τῆςL(Art)(G) τʼ(Pt) ἀνL|θεiμουρL|γοῦL(Adj)(G) στάγL|μαi(A), παμL|φαiὲςL(Adj)(A) |μέiλιL(A),|
+(612) [Ἄτοσσα:] der und Blüten|wirkenden Tropfen, all|leuchtendes Honig,|
+(613) [Ἄτοσσα:] λιiβάrσινr(D) |ὑiδρηL|λαῖςL(Adj)(D) παρL|θέiνουL(G) |πηLγῆςL(G) |μέiταL(Prp),|
+(613) [Ἄτοσσα:] mit|Tropfen wasser|getragenen der|Jungfrau Quelle mit,|
+(614) [Ἄτοσσα:] ἀiκήL|ραiτόνL(Adj)(A) |τεi(Pt) μηL|τρὸςi(G) ἀL|γρίiαςL(Adj)(G) |ἄiποL(Prp)|
+(614) [Ἄτοσσα:] unbefleckt und der|Mutter wilden von|
+(615) [Ἄτοσσα:] ποiτὸνL(A) |παiλαιL|ᾶςL(Adj)(G) ἀμL|πέiλουL(G) |γάiνοςL(N) |τόiδεL(Pr)(N)·|
+(615) [Ἄτοσσα:] Trank alten Rebe Glanz dieses·|
+(616) [Ἄτοσσα:] τῆςL(Art)(G) τʼ(Pt) αἰL|ὲνi(Adv) ἐνL(Prp) |φύλLλοιL|σιi(D) θαλL|λούLσηςL(Prä)(Akt)(G) |βίiονL(A)|
+(616) [Ἄτοσσα:] der und immer in Blättern blühenden Nahrung|
+(617) [Ἄτοσσα:] ξανLθῆςL(Adj)(G) |ἐiλαίL|αςL(G) καρL|πὸςi(N) εὐL|ώLδηςL(Adj)(N) |πάiραL(Adv),|
+(617) [Ἄτοσσα:] blonden Olive Frucht wohl|duftend zur|Hand,|
+(618) [Ἄτοσσα:] ἄνLθηL(N) |τεi(Pt) πλεL|κτάi(Adj)(N), παμL|φόiρουL(Adj)(G) |γαίLαςL(G) |τέiκναL(N),|
+(618) [Ἄτοσσα:] Blüten und geflochtene, all|fruchtbaren der|Erde Kinder,|
+(619) [Ἄτοσσα:] ἀλλLʼ(Kon), ὦL(ij) |φίiλοιL(V), |χοiαῖL|σιi(D) ταῖσL|δεi(Art)(D) νερL|τέiρωνL(Adj)(G)|
+(619) [Ἄτοσσα:] aber, o Freunde, Gießopfern diesen der|Unterirdischen|
+(620) [Ἄτοσσα:] ὕLμνουςL(A) |ἐiπευL|φηLμεῖL|τεi(Prä)(Akt)(Imv), τόνL(Art)(A) |τεi(Pt) δαίL|μοiναL(A)|
+(620) [Ἄτοσσα:] Hymnen ruft|Beifall, den und Daimon|
+(621) [Ἄτοσσα:] ΔαLρεῖL|ονi(A) ἀrναr|καiλεῖL|σθεi(Prä)(M/P)(Imv), γαL|πόiτουςL(Adj)(A) |δʼ(Pt) ἐiγὼL(Pr)(N)|
+(621) [Ἄτοσσα:] Dareios ruft|herauf, trink|bare aber ich|
+(622) [Ἄτοσσα:] τιLμὰςL(A) |προiπέμL|ψωL(Fu)(Akt) τάσL|δεi(Art)(A) νερL|τέiροιςL(Adj)(D) |θεiοῖςL(D).|
+(622) [Ἄτοσσα:] Ehren werde|voraus|senden diese den|unteren Göttern.|
+=== Stasimon ===
+(623) [Χορός:] βαiσίiλειL|αi(Adj)(V) γύiναιL(V), |πρέLσβοςL(N) |ΠέρLσαιςL(D),|
+(623) [Χορός:] königliche Frau, Würde den|Persern,|
+(624) [Χορός:] σύi(Pr)(N) τεi(Pt) πέμL|πεi(Prä)(Akt)(Imv) χοiὰςL(A) |θαiλάiμουςL(A) |ὑiπὸi(Prp) γῆςL(G),|
+(624) [Χορός:] du und sende Gießopfer Kammern unter der|Erde,|
+(625) [Χορός:] ἡLμεῖςL(Pr)(N) |θʼ(Pt) ὕLμνοιςL(D) |αἰLτηL|σόiμεiθαL(Fu)(Med)|
+(625) [Χορός:] wir auch mit|Hymnen werden|erbitten|
+(626) [Χορός:] φθιiμέiνωνL(Per)(M/P)(G) |πομLποὺςL(A)|
+(626) [Χορός:] der|Verstorbenen Boten|
+(627) [Χορός:] εὔLφροiναςi(Adj)(A) |εἶLναιL(Prä)(Akt)(Inf) |καiτὰi(Prp) γαίL|αςL(A).|
+(627) [Χορός:] gütige zu|sein über Lande.|
+(628) [Χορός:] ἀλLλάL(Kon), |χθόiνιiοιL(Adj)(V) |δαίLμοiνεςi(V) |ἁLγνοίL(Adj)(V),|
+(628) [Χορός:] aber, unter|irdische Daimonen reine,|
+(629) [Χορός:] ΓῆL(V) τεi(Pt) καὶi(Kon) |ἙρLμῆL(V), |βαiσιiλεῦL(V) |τʼ(Pt) ἐiνέiρωνL(Adj)(G),|
+(629) [Χορός:] Erde und auch Hermes, König und der|Unterirdischen,|
+(630) [Χορός:] πέμLψατiʼ(Aor)(Akt)(Imv) ἔi|νερLθενL(Adv) |ψυLχὴνL(A) |ἐςL(Prp) φῶςL(A)·|
+(630) [Χορός:] sendet von|unten Seele in Licht·|
+(631) [Χορός:] εἰL(Kon) γάρL(Pt) |τιi(Pr)(N) καiκῶνL(G) |ἄiκοςi(N) οἶL|δεi(Per)(Akt) πλέiονL(Adv)(Kmp),|
+(631) [Χορός:] wenn denn etwas der|Übel Heil|mittel weiß mehr,|
+(632) [Χορός:] μόiνοςi(Adj)(N) ἂνL(Pt) |θνηLτῶνL(Adj)(G) |πέiραςi(N) εἴL|ποιL(Aor)(Akt)(Op).|
+(632) [Χορός:] allein wohl der|Sterblichen Ende würde|sagen.|
+== Strophe 1 ==
+(633) [Χορός:] ἦL(Pt) ῥʼ(Pt) ἀiίiειL(Prä)(Akt) μουL(Pr)(G) μαiκαiρίLταςL(A) ἰiσοiδαίLμωνL(Adj)(N) βαiσιiλεὺςL(N)|
+(633) [Χορός:] wahrlich doch hört meiner Selig|preisungen gott|gleichen König|
+(635) [Χορός:] βάρLβαρrʼ(Adj)(A) ἀrσαiφηLνῆL(Adj)(A)|
+(635) [Χορός:] barbarische un|klare|
+(636) [Χορός:] ἱiένLτοςL(Prä)(Akt)(G) τὰi(Art)(A) παiναίLολiʼ(Adj)(A) αἰL‖ανῆ(Adj)(A)|
+(636) [Χορός:] aus|stoßenden die ganz|elend klag|vollen|
+(637) [Χορός:] δύLσθροiαi(Adj)(A) βάγLματiʼ(A), ἢL(Kon)|
+(637) [Χορός:] schwer|tönende Laute, oder|
+(638) [Χορός:] πανLτάrλανrʼ(Adj)(A) ἄiχηL(A) διrαrβοiάLσωL(Fu)(Akt);|
+(638) [Χορός:] ganz|elend Schmerzen werde|hinaus|schreien;|
+(639) [Χορός:] νέρLθενi(Adv) ἆLραi(Pt) κλύiειL(Prä)(Akt) μουL(Pr)(G);|
+(639) [Χορός:] von|unten also hört meiner;|
+== Antistrophe 1 ==
+(640) [Χορός:] ἀλLλὰi(Kon) σύi(Pr)(N) μοιL(Pr)(D) ΓᾶL(V) τεi(Pt) καὶi(Kon) ἄλLλοιL(Adj)(N) χθοiνίiωνL(Adj)(G) ἁLγεiμόiνεςL(N)|
+(640) [Χορός:] aber du mir Erde und auch andere der|unter|irdischen Führer|
+(642) [Χορός:] δαίLμοrναr(A) μεiγαυLχῆL(Adj)(A)|
+(642) [Χορός:] Daimon groß|stolzen|
+(643) [Χορός:] ἰiόντLʼ(Prä)(Akt)(A) αἰLνέiσατiʼ(Aor)(Akt)(Imv) ἐκL(Prp) δόiμωνL(G),|
+(643) [Χορός:] gehend preiset aus der|Häuser,|
+(644) [Χορός:] ΠερLσᾶνL(Adj)(G) ΣουLσιiγεiνῆL(Adj)(A) θεiόνL(A)·|
+(644) [Χορός:] der|Perser Susa|geborenen Gott·|
+(645) [Χορός:] πέμLπεrτεr(Prä)(Akt)(Imv) δʼ(Pt) ἄiνωL(Adv) οἷLονi(Pr)(A) οὔLπωL(Adv)|
+(645) [Χορός:] sendet aber hinauf solche noch|nicht|
+(646) [Χορός:] ΠερLσὶςi(N) αἶLʼ(N) ἐiκάiλυLψενi(Aor)(Akt).|
+(646) [Χορός:] Persis Land hat|bedeckt.|
+== Strophe 2 ==
+(647) [Χορός:] ἦL(Pt) φίiλοςi(Adj)(N) ἁLνήρL(N), φίiλοςi(Adj)(N) ὄχLθοςL(N)·|
+(647) [Χορός:] wahrlich lieb Mann, lieb Hügel·|
+(648) [Χορός:] φίiλαi(Adj)(A) γὰρL(Pt) κέiκευLθενi(Per)(Akt) ἤLθηL(A).|
+(648) [Χορός:] Liebes denn hat|verborgen Sitten.|
+(649) [Χορός:] ἈiιiδωLνεὺςL(N) δʼ(Pt) ἀiναiπομL‖πὸς(Adj)(N)|
+(649) [Χορός:] Aidoneus aber zurück|sendend|
+(650) [Χορός:] ἀiνείLηςL(Aor)(Akt)(Op), ἈiιiδωLνεύςL(V),|
+(650) [Χορός:] mögest|entsenden, Aidoneus,|
+(651) [Χορός:] θεῖLονi(Adj)(A) ἀiνάLκτοiραi(A) ΔαLριiᾶLναi(Adj)(A). ἠέL(Kon).|
+(651) [Χορός:] göttlichen Herrscher Dareios|haften. oder.|
+== Antistrophe 2 ==
+(652) [Χορός:] οὐLδὲi(Kon) γὰρi(Pt) ἄνLδραςL(A) ποτiʼ(Adv) ἀiπώλLλυL(Imp)(Akt)|
+(652) [Χορός:] auch|nicht denn Männer je vernichtete|
+(653) [Χορός:] ποiλεiμοLφθόiροιLσινi(Adj)(D) ἄLταιςL(D),|
+(653) [Χορός:] kriegs|verderblichen Unheilen,|
+(654) [Χορός:] θεiοiμήLστωρL(Adj)(N) δʼ(Pt) ἐiκιiκλήL‖σκετο(Imp)(M/P)|
+(654) [Χορός:] gott|beraten aber wurde|genannt|
+(655) [Χορός:] ΠέρLσαιςL(D), θεiοiμήLστωρL(Adj)(N)|
+(655) [Χορός:] den|Persern, gott|beraten|
+(656) [Χορός:] δʼ(Pt) ἔLσκενi(Imp)(Akt), ἐiπεὶL(Kon) στραiτὸνi(A) εὖL(Adv) ποiδούLχειL(Prä)(Akt). ἠέL(Kon).|
+(656) [Χορός:] aber war, da Heer gut führt|zu|Fuß. oder.|
+== Strophe 3 ==
+(657) [Χορός:] βαiλήνL(ij), ἀρLχαῖLοςL(Adj)(N) βαiλήνL(ij), ἴrθιr(Prä)(Akt)(Imv), ἱiκοῦL(Aor)(M/P)(Imv)·|
+(657) [Χορός:] Heil|ruf, alter Heil|ruf, geh, komm·|
+(659) [Χορός:] ἔλθLʼ(AorS)(Akt)(Imv) ἐπiʼ(Prp) ἄiκρονL(Adj)(A) κόiρυμLβονi(A) ὄχLθουL(G),|
+(659) [Χορός:] komm auf höchsten Gipfel des|Hügels,|
+(660) [Χορός:] κροiκόiβαLπτονL(Adj)(A) ποiδὸςi(G) εὔLμαLρινi(Adj)(A) ἀiείLρωνL(Prä)(Akt)(N),|
+(660) [Χορός:] safran|getränkt des|Fußes leicht|gängig hebend,|
+(661) [Χορός:] βαiσιiλείLουL(Adj)(G) τιiάLραςL(G)|
+(661) [Χορός:] des|königlichen Tiara|
+(662) [Χορός:] φάiλαiρονL(A) πιiφαύLσκωνL(Prä)(Akt)(N).|
+(662) [Χορός:] Zier|platte offen|zeigend.|
+(663) [Χορός:] βάLσκεi(Prä)(Akt)(Imv) πάrτερr(V) ἄiκαrκεr(Adj)(V) ΔαLριiάνL(Adj)(V), οἶL(ij).|
+(663) [Χορός:] eile Vater gut|herzig Dareian, oi.|
+== Antistrophe 3 ==
+(664) [Χορός:] ὅiπωςL(Kon) αἰLαiνῆL(Adj)(A) κλύiῃςL(Prä)(Akt)(Knj) νέrαr(Adj)(A) τʼ(Pt) ἄiχηL(A),|
+(664) [Χορός:] damit trauer|volle du|hörst neue und Schmerzen,|
+(666) [Χορός:] δέLσποiταi(V) δεLσπόiτουL(G) φάiνηLθιL(Aor)(M/P)(Imv).|
+(666) [Χορός:] Herr des|Herrn erscheine.|
+(667) [Χορός:] ΣτυiγίiαL(Adj)(N) γάρL(Pt) τιςi(Pr)(N) ἐπiʼ(Prp) ἀLχλὺςL(N) πεiπόiταLταιL(Per)(M/P)·|
+(667) [Χορός:] stygische denn irgendeine auf Nebel ist|ge|flogen·|
+(668) [Χορός:] νεiοiλαίLαL(N) γὰρi(Pt) ἤLδηL(Adv)|
+(668) [Χορός:] Jugend denn schon|
+(670) [Χορός:] καiτὰi(Prp) πᾶσLʼ(Adj)(A) ὄiλωLλενL(Per)(Akt).|
+(670) [Χορός:] über ganz ist|zugrunde|gegangen.|
+(671) [Χορός:] βάLσκεi(Prä)(Akt)(Imv) πάrτερr(V) ἄiκαrκεr(Adj)(V) ΔαLριiάνL(Adj)(V), οἶL(ij).|
+(671) [Χορός:] eile Vater gut|herzig Dareian, oi.|
+== Epode 1 ==
+(673) [Χορός:] αἰLαῖi(ij) αἰLαῖL(ij)·|
+(673) [Χορός:] ai|ai ai|ai·|
+(674) [Χορός:] ὦL(ij) ποiλύiκλαυLτεi(Adj)(V) φίiλοιLσιi(Adj)(D) θαiνώνL(Aor)(Akt)(V),|
+(674) [Χορός:] o viel|beklagter den|Freunden gestorben,|
+(675) [Χορός:] τίi(Pr)(N) τάrδεr(Pr)(N) |τίi(Pr)(N) τάrδεr(Pr)(N) |δυiνάrταr(Adj)(N) |δυiνάrταr(Adj)(N)|
+(675) [Χορός:] was dies was dies mögliche mögliche|
+(676) [Χορός:] πεiρὶi(Prp) τᾷL(Art)(D) σᾷL(Adj)(D) δίrδυrμαr(Adj)(A) †διrαiγόrενr(Adj)(A)† ἁiμάρLτιiαL(A);|
+(676) [Χορός:] über der deinen doppelten †durch|gehend† Fehltritte;|
+(677) [Χορός:] πᾶLσαιL(Adj)(N) |γᾷL(D) τᾷδLʼ(Art)(D)|
+(677) [Χορός:] alle der|Erde dieser|
+(678) [Χορός:] ἐLξέL|φθινLταιL(Per)(M/P) |τρίLσκαλL|μοιL(Adj)(N)|
+(678) [Χορός:] sind|zugrunde|gegangen drei|bänkigen|
+(680) [Χορός:] νᾶLεςi(N) ἄiναLεςi(Adj)(N) ἄiναLεςL(Adj)(N).|
+(680) [Χορός:] Schiffe mann|lose mann|lose.|
+(681) [Εἴδωλον Δαρείου:] ὦL(ij) πιL|στὰi(Adj)(V) πιL|στῶνL(Adj)(G) ἥL|λιiκέςL(V) |θʼ(Pt) ἥLβηςL(G) |ἐiμῆςL(Adj)(G)|
+(681) [Εἴδωλον Δαρείου:] o treuen der|Treuen Alters|gleiche auch der|Jugend meiner|
+(682) [Εἴδωλον Δαρείου:] ΠέρLσαιL(V) |γεiραιL|οίL(Adj)(V), τίrναr(Adj)(A) |πόiλιςL(N) |ποiνεῖL(Prä)(Akt) |πόiνονL(A);|
+(682) [Εἴδωλον Δαρείου:] Perser Greise, welchen Stadt leidet Mühe;|
+(683) [Εἴδωλον Δαρείου:] στέiνειL(Prä)(Akt), |κέiκοL|πταιL(Per)(M/P), καὶL(Kon) |χαiράσL|σεiταιL(Prä)(M/P) |πέiδονL(N).|
+(683) [Εἴδωλον Δαρείου:] stöhnt, ist|ge|schlagen, und wird|ge|ritzt Boden.|
+(684) [Εἴδωλον Δαρείου:] λεύσLσωνL(Prä)(Akt)(N) |δʼ(Pt) ἄiκοιL|τινL(A) τὴνL(Art)(A) |ἐiμὴνL(Adj)(A) |τάiφουL(G) |πέiλαςL(Adv)|
+(684) [Εἴδωλον Δαρείου:] schauend aber Gattin die meine des|Grabes nahe|
+(685) [Εἴδωλον Δαρείου:] ταρLβῶL(Prä)(Akt), |χοiὰςL(A) |δὲi(Pt) πρευL|μεiνὴςL(Adj)(N) |ἐiδεL|ξάiμηνL(Aor)(Med).|
+(685) [Εἴδωλον Δαρείου:] ich|fürchte, Gießopfer aber gütig|gesinnt nahm|an.|
+(686) [Εἴδωλον Δαρείου:] ὑLμεῖςL(Pr)(N) |δὲi(Pt) θρηL|νεῖτLʼ(Prä)(Akt) ἐγL|γὺςi(Adv) ἑL|στῶLτεςL(Per)(Akt)(N) |τάiφουL(G)|
+(686) [Εἴδωλον Δαρείου:] ihr aber klagt nahe stehend des|Grabes|
+(687) [Εἴδωλον Δαρείου:] καὶL(Kon) ψυL|χαiγωL|γοῖςL(Adj)(D) ὀρL|θιiάL|ζονLτεςL(Prä)(Akt)(N) |γόiοιςL(D)|
+(687) [Εἴδωλον Δαρείου:] und seelen|führenden hoch|aufschreiend mit|Klagen|
+(688) [Εἴδωλον Δαρείου:] οἰLκτρῶςL(Adv) |καiλεῖL|σθέi(Prä)(M/P) μʼ(Pr)(A)· ἐL|στὶi(Prä)(Akt) δʼ(Pt) οὐκL(Pt) |εὐLέL|ξοiδονL(Adj)(N),|
+(688) [Εἴδωλον Δαρείου:] erbärmlich ruft|ihr mich· ist aber nicht leicht|aus|gangbar,|
+(689) [Εἴδωλον Δαρείου:] ἄλLλωςL(Adv) |τεi(Pt) πάνL|τωςL(Adv) χοἰL(Kon)(Art)(N) |καiτὰL(Prp) |χθοiνὸςL(G) |θεiοὶL(N)|
+(689) [Εἴδωλον Δαρείου:] sonst und ohnehin und|die unter der|Erde Götter|
+(690) [Εἴδωλον Δαρείου:] λαiβεῖνL(Aor)(Inf)(Akt) |ἀiμείL|νουςL(Adj)(A)(Kmp) εἰL|σὶνi(Prä)(Akt) ἢL(Kon) |μεiθιL|έiναιL(Prä)(Inf)(Akt).|
+(690) [Εἴδωλον Δαρείου:] zu|nehmen bessere sind oder los|zu|lassen.|
+(691) [Εἴδωλον Δαρείου:] ὅiμωςL(Adv) |δʼ(Pt) ἐiκείL|νοιςL(Pr)(D) ἐνL|δυiναL|στεύLσαςL(Aor)(Akt)(N) |ἐiγὼL(Pr)(N)|
+(691) [Εἴδωλον Δαρείου:] dennoch aber jenen mit|Macht|gewaltet|habend ich|
+(692) [Εἴδωλον Δαρείου:] ἥLκωL(Prä)(Akt). |τάiχυL|νεi(Prä)(Imv)(Akt) δʼ(Pt) ὡςL(Kon) |ἄiμεμL|πτοςi(Adj)(N) ὦL(ij) |χρόiνουL(G).|
+(692) [Εἴδωλον Δαρείου:] ich|bin|gekommen. beeile|dich aber damit un|tadelig o der|Zeit.|
+(693) [Εἴδωλον Δαρείου:] τίi(Pr)(N) ἐL|στιi(Prä)(Akt) ΠέρL|σαιςL(D) νεοχL|μὸνi(Adj)(N) ἐμL|βριiθὲςL(Adj)(N) |καiκόνL(N)·|
+(693) [Εἴδωλον Δαρείου:] was ist den|Persern neu|frisch gewichtig Übel·|
+== Strophe 1 ==
+(694) [Χορός:] σέiβοiμαιL(Prä)(M/P) μὲνL(Pt) προiσιiδέLσθαιL(Prä)(M/P)(Inf),|
+(694) [Χορός:] ich|scheue|mich zwar an|zu|blicken,|
+(695) [Χορός:] σέiβοiμαιL(Prä)(M/P) δʼ(Pt) ἀνLτίiαi(Adv) λέLξαιL(Aor)(Inf)(Akt)|
+(695) [Χορός:] ich|scheue|mich aber entgegen zu|sagen|
+(696) [Χορός:] σέiθενi(Pr)(G) ἀρLχαίLῳL(Adj)(D) πεiρὶi(Prp) τάρLβειL(D).|
+(696) [Χορός:] deiner alten wegen Furcht.|
+(697) [Δαρείος:] ἀλλLʼ(Kon) ἐi|πεὶL(Kon) κάi|τωLθενi(Adv) |ἦλLθονL(AorS)(Akt) |σοῖςL(Adj)(D) γόi|οιςL(D) πεi|πειLσμέiνοςL(Per)(M/P)(N),|
+(697) [Δαρείος:] aber als von|unten kam|ich deinen Klagen überzeugt|worden|seiend,|
+(698) [Δαρείος:] μήL(Pt) τιi(Pr)(A) |μαLκιL|στῆLραi(Adj)(A)(Kmp) |μῦLθονi(A), |ἀλLλὰi(Kon) |σύνLτοi|μονL(Adj)(A) λέiγωνL(Prä)(Akt)(N)|
+(698) [Δαρείος:] nicht irgend längeren Wort, sondern kurzen sagend|
+(699) [Δαρείος:] εἰLπὲi(AorS)(Imv)(Akt) |καὶL(Kon) πέi|ραιLνεi(Prä)(Imv)(Akt) |πάνLταi(A), |τὴνL(Art)(A) ἐi|μὴνL(Adj)(A) αἰL|δῶL(A) μεiθείςL(AorS)(Akt)(N).|
+(699) [Δαρείος:] sage und vollende alles, die meinen Scheu los|gelassen|habend.|
+== Antistrophe 1 ==
+(700) [Χορός:] δίiεiμαιL(Prä)(M/P) μὲνL(Pt) χαiρίiσαLσθαιL(Aor)(Med)(Inf),|
+(700) [Χορός:] ich|fürchte|mich zwar Gefallen|zu|erweisen,|
+(701) [Χορός:] δίiεiμαιL(Prä)(M/P) δʼ(Pt) ἀνLτίiαi(Adv) φάLσθαιL(Aor)(M/P)(Inf),|
+(701) [Χορός:] ich|fürchte|mich aber entgegen zu|sagen,|
+(702) [Χορός:] λέLξαςL(Aor)(Akt)(N) δύσLλεLκταi(Adj)(A) φίiλοιLσινL(D).|
+(702) [Χορός:] gesagt|habend schwer|zu|sagendes den|Freunden.|
+(703) [Δαρείος:] ἀλλLʼ(Kon) ἐi|πεὶL(Kon) δέi|οςL(N) παi|λαιLὸνL(Adj)(N) |σοὶL(Pr)(D) φρεi|νῶνL(G) ἀνL|θίLσταiταιL(Prä)(M/P),|
+(703) [Δαρείος:] sondern da Furcht alte dir der|Sinne widersteht,|
+(704) [Δαρείος:] τῶνL(Art)(G) ἐi|μῶνL(Adj)(G) λέL|κτρωνL(G) γεi|ραιLὰL(Adj)(V) |ξύνLνομiʼ(Adj)(V) |εὐLγεi|νὲςL(Adj)(V) γύiναιL(V),|
+(704) [Δαρείος:] der meinen Lager|stätten greise Mit|gefährtin edel|geborene Frau,|
+(705) [Δαρείος:] κλαυLμάi|τωνL(G) λήL|ξαLσαi(Aor)(Akt)(N) |τῶνLδεi(Pr)(G) |καὶL(Kon) γόi|ωνL(G) σαi|φέςL(Adj)(A) τίi(Pr)(A) μοιL(Pr)(D)|
+(705) [Δαρείος:] der|Weinen aufgehört|habend dieser und Klagen klar etwas mir|
+(706) [Δαρείος:] λέLξονi(Aor)(Imv)(Akt)· |ἀνLθρώL|πειLαi(Adj)(A) |δʼ(Pt) ἄνL(Pt) τοιL(Pt) |πήLματiʼ(A) |ἂνL(Pt) τύi|χοιL(Aor)(Akt)(Op) βροiτοῖςL(D).|
+(706) [Δαρείος:] sage· menschliche aber wohl ja Leiden wohl möchte|geschehen den|Sterblichen.|
+(707) [Δαρείος:] πολLλὰi(Adj)(A) |μὲνL(Pt) γὰρi(Pt) |ἐκL(Prp) θαi|λάσLσηςL(G), |πολLλὰi(Adj)(A) |δʼ(Pt) ἐκL(Prp) χέρL|σουL(G) καiκὰL(Adj)(A)|
+(707) [Δαρείος:] viele zwar denn aus der|See, viele aber aus des|Landes Übel|
+(708) [Δαρείος:] γίLγνεi|ταιL(Prä)(M/P) θνηL|τοῖςL(D), ὁi(Art)(N) |μάσLσωνL(Adj)(N)(Kmp) |βίrοrτοςi(N) |ἢνL(Kon) ταi|θῇL(Aor)(Pas)(Knj), πρόiσωL(Adv).|
+(708) [Δαρείος:] wird den|Sterblichen, der längere Lebens|zeit wenn aus|gespannt|werde, vor|wärts.|
+(709) [Ἄτοσσα:] ὦL(ij) βροi|τῶνL(G) πάνL|τωνL(Adj)(G) ὑi|περLσχὼνL(AorS)(Akt)(N) |ὄλLβονi(A) |εὐLτυi|χεῖL(Adj)(D) πότiμῳL(D)|
+(709) [Ἄτοσσα:] o der|Sterblichen aller über|ragend|habend Glück|sgüter glücklich im|Los|
+(710) [Ἄτοσσα:] ὡςL(Kon) ἕi|ωςL(Kon) τʼ(Pt) ἔi|λευσLσεςi(Imp)(Akt) |αὐLγὰςi(A) |ἡLλίi|ουL(G) ζηL|λωLτὸςi(Adj)(N) ὢνL(Prä)(Akt)(N)|
+(710) [Ἄτοσσα:] wie solange auch blicktest|du Strahlen der|Sonne bewundern|swert seiend|
+(711) [Ἄτοσσα:] βίrοrτονi(A) |εὐLαίL|ωLναi(Adj)(A) |ΠέρLσαιςL(D) |ὡςL(Kon) θεi|ὸςL(N) διi|ήLγαiγεςL(AorS)(Akt),|
+(711) [Ἄτοσσα:] Leben wohl|dauerndes den|Persern als Gott durch|führt|est,|
+(712) [Ἄτοσσα:] νῦνL(Adv) τέi(Pt) |σεL(Pr)(A) ζηL|λῶL(Prä)(Akt) θαi|νόνLταi(AorS)(Akt)(A), |πρὶνL(Prp) καi|κῶνL(Adj)(G) ἰi|δεῖνL(AorS)(Inf)(Akt) βάiθοςL(A).|
+(712) [Ἄτοσσα:] nun auch dich preise|ich gestorben|seiend, vor der|Übel zu|sehen Tiefe.|
+(713) [Ἄτοσσα:] πάνLταi(A) |γάρL(Pt), ΔαL|ρεῖLʼ(V) ἀi|κούLσῃL(AorS)(Akt)(Knj) |μῦLθονi(A) |ἐνL(Prp) βραi|χεῖL(Adj)(D) χρόiνῳL(D).|
+(713) [Ἄτοσσα:] alles denn, Dareios du|mögest|hören Wort in kurzer Zeit.|
+(714) [Ἄτοσσα:] διrαrπεi|πόρLθηL|ταιL(Per)(M/P) τὰi(Art)(A) |ΠερLσῶνL(G) |πράγLμαθiʼ(A), |ὡςL(Kon) εἰL|πεῖνL(AorS)(Inf)(Akt) ἔiποςL(A).|
+(714) [Ἄτοσσα:] ist|ganz|verwüstet die der|Perser Dinge, so|dass zu|sagen Wort.|
+(715) [Δαρείος:] τίrνιr(Pr)(D) τρόi|πῳL(D); λοιL|μοῦL(G) τιςi(Pr)(N) |ἦλLθεL(AorS)(Akt) |σκηLπτὸςi(Adj)(N) |ἢL(Kon) στάi|σιςL(N) πόiλειL(D);|
+(715) [Δαρείος:] auf|welche|Weise Art; Pest irgend|einer kam vom|Gott|gesandt oder Aufruhr der|Stadt;|
+(716) [Ἄτοσσα:] οὐLδαi|μῶςL(Adv)· ἀλλLʼ(Kon) |ἀμφLʼ(Prp) Ἀi|θήLναςL(A) |πᾶςL(Adj)(N) καi|τέLφθαρL|ταιL(Per)(M/P) στραiτόςL(N).|
+(716) [Ἄτοσσα:] keines|wegs· sondern um Athen ganz ist|vernichtet Heer.|
+(717) [Δαρείος:] τίςL(Pr)(N) δʼ(Pt) ἐi|μῶνL(Adj)(G) ἐi|κεῖLσεi(Adv) |παίLδωνL(G) |ἐLστραi|τηLλάi|τειL(Imp)(Akt); φράiσονL(Aor)(Imv)(Akt).|
+(717) [Δαρείος:] wer aber meiner dort Söhne war|Heerführer; sage.|
+(718) [Ἄτοσσα:] θούLριi|οςL(Adj)(N) ΞέρL|ξηςL(N), κεi|νώLσαςL(Aor)(Akt)(N) |πᾶLσανi(Adj)(A) |ἠLπείL|ρουL(G) πλάiκαL(A).|
+(718) [Ἄτοσσα:] kampf|toll Xerxes, leer|gemacht|habend ganze des|Festlandes Fläche.|
+(719) [Δαρείος:] πεLζὸςi(Adj)(N) |ἢL(Kon) ναύL|τηςL(N) δὲi(Pt) |πεῖLρανL(A) |τήνδLʼ(Pr)(A) ἐi|μώLραL|νενL(Aor)(Akt) τάiλαςL(Adj)(N);|
+(719) [Δαρείος:] zu|Fuß oder Seemann aber Probe|Versuch diese|hier ver|närrte Unglück|licher;|
+(720) [Ἄτοσσα:] ἀμLφόi|τεrραr(Adj)(N)· διi|πλοῦνL(Adj)(N) μέi|τωLπονi(N) |ἦνL(Imp)(Akt) δυi|οῖνL(Du) στραi|τευLμάiτοινL(Du)(G).|
+(720) [Ἄτοσσα:] beid|es· doppelte Front war der|zwei zweier|Heere.|
+(721) [Δαρείος:] πῶςL(Adv) δὲi(Pt) |καὶL(Kon) στραi|τὸςL(N) τοi|σόσLδεi(Adj)(N) |πεLζὸςi(Adj)(N) |ἤLνυi|σενL(Aor)(Akt) πεiρᾶνL(Prä)(Inf)(Akt);|
+(721) [Δαρείος:] wie aber auch Heer so|groß zu|Fuß vollbrachte zu|durch|gehen;|
+(722) [Ἄτοσσα:] μηLχαi|ναῖςL(D) ἔL|ζευLξενi(Aor)(Akt) |ἝλLληςL(G) |πορθLμόνi(A), |ὥστLʼ(Kon) ἔi|χεινL(Prä)(Inf)(Akt) πόiρονL(A).|
+(722) [Ἄτοσσα:] mit|Vorrichtungen schirrte der|Helle Furt, so|dass zu|haben Durch|gang.|
+(723) [Δαρείος:] καὶL(Kon) τόδiʼ(Pr)(A) |ἐLξέi|πραLξενi(Aor)(Akt), |ὥLστεi(Kon) |ΒόLσποi|ρονL(A) κλῇL|σαιL(Aor)(Inf)(Akt) μέiγανL(Adj)(A)·|
+(723) [Δαρείος:] und dies|es vollbrachte, so|dass Bosporus zu|schließen großen·|
+(724) [Ἄτοσσα:] ὧδLʼ(Adv) ἔi|χειL(Prä)(Akt)· γνώL|μηςL(G) δέi(Pt) |πούL(Adv) τιςL(Pr)(N) |δαιLμόi|νωνL(G) ξυi|νήLψαiτοL(Aor)(Med).|
+(724) [Ἄτοσσα:] so ist|es· des|Beschlusses aber wohl irgend|einer der|Götter hat|sich|angeschlossen.|
+(725) [Δαρείος:] φεῦL(ij), μέi|γαςL(Adj)(N) τιςi(Pr)(N) |ἦλLθεi(AorS)(Akt) |δαίLμωνL(N), |ὥLστεi(Kon) |μὴL(Pt) φροi|νεῖνL(Prä)(Inf)(Akt) καiλῶςL(Adv).|
+(725) [Δαρείος:] weh, groß|er irgend|einer kam Dämon, so|dass nicht zu|denken gut.|
+(726) [Ἄτοσσα:] ὡςL(Kon) ἰi|δεῖνL(AorS)(Inf)(Akt) τέi|λοςL(A) πάi|ρεLστινi(Prä)(Akt) |οἷLονi(Adj)(A) |ἤLνυi|σενL(Aor)(Akt) καiκόνL(A).|
+(726) [Ἄτοσσα:] wie zu|sehen Ende ist|zur|Hand welch|es vollbrachte Übel.|
+(727) [Δαρείος:] καὶL(Kon) τίi(Pr)(N) |δὴL(Pt) πράL|ξαLσινi(Aor)(Akt)(D) |αὐLτοῖςL(Pr)(D) |ὧδLʼ(Adv) ἐi|πιLστεi|νάLζεiτεL(Prä)(Akt);|
+(727) [Δαρείος:] und was denn getan|habenden ihnen so beklagt|ihr;|
+(728) [Ἄτοσσα:] ναυLτιi|κὸςL(Adj)(N) στραi|τὸςL(N) καi|κωLθεὶςL(Aor)(Pas)(N) |πεLζὸνi(Adj)(A) |ὤLλεi|σεL(AorS)(Akt) στραiτόνL(A).|
+(728) [Ἄτοσσα:] schiff|liche Heer übel|zugerichtet|worden|seiend Fuß|Heer vernichtete Heer.|
+(729) [Δαρείος:] ὧLδεi(Adv) |παμLπήL|δηνL(Adv) δὲi(Pt) |λαLὸςL(N) |πᾶςL(Adj)(N) καi|τέLφθαρL|ταιL(Per)(M/P) δοiρίL(D);|
+(729) [Δαρείος:] so ganz|und|gar aber Volk ganz ist|vernichtet durch|Speer;|
+(730) [Ἄτοσσα:] πρὸςL(Prp) τάδiʼ(Pr)(A) |ὡςL(Kon) ΣούL|σωνL(G) μὲνi(Pt) |ἄLστυi(N) |πᾶνL(Adj)(N) κεi|νανLδρίi|ανL(A) στέiνειL(Prä)(Akt).|
+(730) [Ἄτοσσα:] zu|dem diesen wie der|Susa zwar Stadt ganze Männer|leere stöhnt.|
+(731) [Δαρείος:] ὦL(ij) πόi|ποιL(ij) κεδL|νῆςL(Adj)(G) ἀi|ρωLγῆςL(G) |κἀLπιi|κουLρίi|αςL(Kon)(G) στραiτοῦL(G).|
+(731) [Δαρείος:] o weh tüchtig|er Hilfe und|Beistandes des|Heeres.|
+(732) [Ἄτοσσα:] ΒαLκτρίi|ωνL(G) δʼ(Pt) ἔρL|ρειL(Per)(Akt) παi|νώLληςL(Adj)(N) |δῆLμοςi(N), |οὐLδέi(Kon) |τιςL(Pr)(N) γέiρωνL(N).|
+(732) [Ἄτοσσα:] der|Baktrer aber ist|zugrunde|gegangen ganz|vernichtet Volk, auch|nicht irgend|ein Greis.|
+(733) [Δαρείος:] ὦL(ij) μέi|λεrοςr(Adj)(V), οἵL|ανL(Adj)(A) ἄρiʼ(Pt) |ἥLβηνL(A) |ξυμLμάi|χωνL(G) ἀi|πώLλεiσενL(AorS)(Akt).|
+(733) [Δαρείος:] o elender, welche doch Jugend der|Verbündeten verlor.|
+(734) [Ἄτοσσα:] μοrνάrδαi(Adj)(A) |δὲL(Pt) ΞέρL|ξηνL(A) ἔi|ρηLμόνL(Adj)(A) |φαLσινi(Prä)(Akt) |οὐL(Pt) πολL|λῶνL(Adj)(G) μέiταL(Prp)—|
+(734) [Ἄτοσσα:] alleinen aber Xerxes verlassen sagen|sie nicht der|vielen unter—|
+(735) [Δαρείος:] πῶςL(Adv) τεi(Pt) |δὴL(Pt) καὶL(Kon) |ποῖL(Adv) τεi|λευLτᾶνL(Prä)(Inf)(Akt); |ἔLστιi(Prä)(Akt) |τιςL(Pr)(N) σωL|τηLρίiαL(N);|
+(735) [Δαρείος:] wie und nun auch wohin zu|Ende|gehen; ist irgend|eine Rettung;|
+(736) [Ἄτοσσα:] ἄLσμεi|νονL(Adj)(A) μοi|λεῖνL(AorS)(Inf)(Akt) γέi|φυLρανL(A) |γαῖνL(Du)(G) δυi|οῖνL(Du) ζευL|κτηLρίiανL(A).|
+(736) [Ἄτοσσα:] froh|sein zu|kommen Brücke der|Lande zwei Verbindung.|
+(737) [Δαρείος:] καὶL(Kon) πρὸςi(Prp) |ἤLπειL|ρονL(A) σεi|σῶLσθαιL(Per)(M/P)(Inf) |τήνLδεi(Pr)(A), |τοῦτLʼ(Pr)(N) ἐi|τήLτυiμονL(Adj)(N);|
+(737) [Δαρείος:] und nach Festland gerettet|sein diese, dies wahr;|
+(738) [Ἄτοσσα:] ναίL(ij)· λόi|γοςL(N) κραi|τεῖL(Prä)(Akt) σαi|φηLνὴςL(Adj)(N) |τοῦLτόi(Pr)(N) |γʼ(Pt), οὐδLʼ(Kon)(Pt) ἔi|νιL(Prä)(Akt) στάiσιςL(N).|
+(738) [Ἄτοσσα:] ja· Bericht herrscht klar dies wohl, und|nicht ist Streit.|
+(739) [Δαρείος:] φεῦL(ij), ταi|χεῖLάi(Adj)(N) |γʼ(Pt) ἦλLθεi(AorS)(Akt) |χρηLσμῶνL(G) |πρᾶLξιςi(N), |ἐςL(Prp) δὲi(Pt) |παῖδLʼ(A) ἐiμὸνL(Adj)(A)|
+(739) [Δαρείος:] weh, schnelle doch kam der|Orakel Vollzug, in aber Sohn meinen|
+(740) [Δαρείος:] ΖεὺςL(N) ἀi|πέLσκηL|ψενL(Aor)(Akt) τεi|λευLτὴνL(A) |θεLσφάi|τωνL(G)· ἐi|γὼL(Pr)(N) δέi(Pt) πουL(Adv)|
+(740) [Δαρείος:] Zeus hat|hernieder|gesandt Ende der|Götter|sprüche· ich aber wohl|
+(741) [Δαρείος:] διrὰr(Prp) μαi|κροῦL(Adj)(G) χρόi|νουL(G) τάδiʼ(Pr)(A) |ηὔLχουνL(Imp)(Akt) |ἐLκτεi|λευLτήL|σεινL(Fu)(Inf)(Akt) θεiούςL(A)·|
+(741) [Δαρείος:] durch langen Zeit diese bat|ich zu|vollenden Götter·|
+(742) [Δαρείος:] ἀλλLʼ(Kon) ὅi|τανL(Kon) σπεύL|δῃL(Prä)(Akt)(Knj) τιςi(Pr)(N) |αὐLτόςL(Pr)(N), |χὠL(Kon)(Art)(N) θεi|ὸςL(N) συi|νάLπτεiταιL(Prä)(M/P).|
+(742) [Δαρείος:] aber wenn eilt jemand selbst, und|der Gott verbindet|sich.|
+(743) [Δαρείος:] νῦνL(Adv) καi|κῶνL(Adj)(G) ἔi|οιLκεi(Per)(Akt) |πηLγὴL(N) |πᾶLσινi(Adj)(D) |ηὑLρῆL|σθαιL(Aor)(Med)(Inf) φίiλοιςL(Adj)(D).|
+(743) [Δαρείος:] nun der|Übel scheint Quelle allen gefunden|zu|sein Freunden.|
+(744) [Δαρείος:] παῖςL(N) δʼ(Pt) ἐi|μὸςL(Adj)(N) τάδiʼ(Pr)(A) |οὐL(Pt) καi|τειLδὼςL(Per)(Akt)(N) |ἤLνυi|σενL(Aor)(Akt) νέi|ῳL(Adj)(D) θράiσειL(D)·|
+(744) [Δαρείος:] der|Sohn aber mein dieses|hier nicht erkannt|habend vollbrachte jugendlichem Mut·|
+(745) [Δαρείος:] ὅLστιςi(Pr)(N) |ἙλLλήL|σπονLτονi(A) |ἱLρὸνL(Adj)(A) |δοῦLλονi(A) |ὣςL(Kon) δεL|σμώLμαiσινL(D)|
+(745) [Δαρείος:] wer Hellespont heilig Sklaven als mit|Fesseln|
+(746) [Δαρείος:] ἤλLπιi|σεL(Aor)(Akt) σχήL|σεινL(Fu)(Akt)(Inf) ῥέi|ονLταi(Prä)(Akt)(A), |ΒόLσποi|ρονL(A) ῥόi|ονL(A) θεiοῦL(G)·|
+(746) [Δαρείος:] hoffte zu|halten strömend, Bosporus Strom des|Gottes·|
+(747) [Δαρείος:] καὶL(Kon) πόi|ρονL(A) μεi|τερLρύθL|μιLζεi(Imp)(Akt), |καὶL(Kon) πέi|δαιςL(D) σφυL|ρηLλάiτοιςL(Adj)(D)|
+(747) [Δαρείος:] und Durchgang um|ordnete, und Fesseln hammer|geschmiedeten|
+(748) [Δαρείος:] πεrριrβαi|λὼνL(AorS)(Akt)(N) πολL|λὴνL(Adj)(A) κέi|λευLθονi(A) |ἤLνυi|σενL(Aor)(Akt) πολL|λῷL(Adj)(D) στραiτῷL(D),|
+(748) [Δαρείος:] umgelegt|habend großen Weg vollbrachte mit|viel Heer,|
+(749) [Δαρείος:] θνηLτὸςi(Adj)(N) |ὢνL(Prä)(Akt)(N) θεi|ῶνL(G) τεi(Pt) |πάνLτωνL(Adj)(G) |ᾤLετiʼ(Imp)(M/P), |οὐκL(Pt) εὐL|βουLλίiᾳL(D),|
+(749) [Δαρείος:] sterblich seiend der|Götter und aller meinte, nicht durch|guten|Rat,|
+(750) [Δαρείος:] καὶL(Kon) Ποi|σειLδῶL|νοςL(G) κραi|τήLσεινL(Fu)(Akt)(Inf). |πῶςL(Adv) τάδiʼ(Pr)(A) |οὐL(Pt) νόi|σοςL(N) φρεiνῶνL(G)|
+(750) [Δαρείος:] und des|Poseidon zu|beherrschen. wie dieses|hier nicht Krankheit der|Sinne|
+(751) [Δαρείος:] εἶLχεi(Imp)(Akt) |παῖδLʼ(A) ἐi|μόνL(Adj)(A); δέi|δοιLκαi(Per)(Akt) |μὴL(Pt) ποi|λὺςL(Adj)(N) πλούL|τουL(G) πόiνοςL(N)|
+(751) [Δαρείος:] besaß Sohn meinen; ich|fürchte nicht viel des|Reichtums Mühe|
+(752) [Δαρείος:] οὑLμὸςi(Art)(Adj)(N) |ἀνLθρώL|ποιςL(D) γέi|νηLταιL(Aor)(Med)(Knj) |τοῦL(Art)(G) φθάi|σανLτοςi(AorS)(Akt)(G) |ἁρLπαiγήL(N).|
+(752) [Δαρείος:] der|meine den|Menschen werde des zuvor|gekommen|seienden Raub.|
+(753) [Ἄτοσσα:] ταῦLτάi(Pr)(A) |τοιL(Pt) καi|κοῖςL(Adj)(D) ὁi|μιLλῶνL(Prä)(Akt)(N) |ἀνLδράi|σινL(D) διi|δάLσκεiταιL(Prä)(M/P)|
+(753) [Ἄτοσσα:] dieses|hier ja den|Schlechten umgehend mit|Männern wird|gelehrt|
+(754) [Ἄτοσσα:] θούLριi|οςL(Adj)(N) ΞέρL|ξηςL(N)· λέi|γουLσιi(Prä)(Akt) |δʼ(Pt) ὡςL(Kon) σὺi(Pr)(N) |μὲνL(Pt) μέi|γανL(Adj)(A) τέiκνοιςL(D)|
+(754) [Ἄτοσσα:] kampftoller Xerxes· sagen aber dass du zwar großen den|Kindern|
+(755) [Ἄτοσσα:] πλοῦLτονi(A) |ἐLκτήL|σωL(Aor)(Med) ξὺνi(Prp) |αἰχLμῇL(D), |τὸνL(Art)(A) δʼ(Pt) ἀi|νανLδρίi|αςL(G) ὕiποL(Prp)|
+(755) [Ἄτοσσα:] Reichtum erwarbst mit Speer, den aber Un|Männlichkeit wegen|
+(756) [Ἄτοσσα:] ἔνLδονi(Adv) |αἰχLμάL|ζεινL(Prä)(Akt)(Inf), παi|τρῷLονL(Adj)(A) |δʼ(Pt) ὄλLβονi(A) |οὐLδὲνi(Pr)(A) |αὐLξάiνεινL(Prä)(Akt)(Inf).|
+(756) [Ἄτοσσα:] im|Inneren gefangen|zu|halten, väterlichen aber Glück nichts zu|mehren.|
+(757) [Ἄτοσσα:] τοιLάδiʼ(Adj)(A) |ἐξL(Prp) ἀνL|δρῶνL(G) ὀi|νείLδηL(A) |πολLλάi|κιςL(Adv) κλύi|ωνL(Prä)(Akt)(N) καiκῶνL(Adj)(G)|
+(757) [Ἄτοσσα:] solches aus der|Männer Schmähungen oft hörend schlechten|
+(758) [Ἄτοσσα:] τήνδLʼ(Pr)(A) ἐi|βούLλευL|σενL(Aor)(Akt) κέi|λευLθονL(A) |καὶL(Kon) στράi|τευμLʼ(A) ἐφiʼ(Prp) |ἙλLλάiδαL(A).|
+(758) [Ἄτοσσα:] diesen|hier beschloss Weg und Heerzug gegen Hellas.|
+(759) [Δαρείος:] τοιLγάρL(Pt) |σφινi(Pr)(D) ἔρL|γονi(N) ἐL|στὶνi(Prä)(Akt) ἐL|ξειρLγαL|σμέiνονL(Per)(M/P)(N)|
+(759) [Δαρείος:] demnach ihnen Werk ist vollbracht|
+(760) [Δαρείος:] μέiγιL|στονi(Adj)(N), ἀL|είLμνηL|στονi(Adj)(N), οἷL|ονi(Pr)(N) οὐL|δέiπωL(Adv)|
+(760) [Δαρείος:] größtes, immer|gedenkenswertes, solches noch|nicht|
+(761) [Δαρείος:] τόδiʼ(Pr)(N) ἄL|στυi(N) ΣούL|σωνL(G) ἐL|ξεiκείL|νωLσενL(Aor)(Akt) |πεiσόνL(AorS)(Akt)(N),|
+(761) [Δαρείος:] dieses|hier Stadt der|Susa hat|ausgeleert gefallen|seiend,|
+(762) [Δαρείος:] ἐξL(Prp) οὗL|τεi(Pr)(G) τιL|μὴνL(A) ΖεὺςL(N) |ἄiναξL(N) |τήνδLʼ(Pr)(A) ὤL|παiσενL(Aor)(Akt),|
+(762) [Δαρείος:] seit der|Zeit Ehre Zeus Herr diese|hier verlieh,|
+(763) [Δαρείος:] ἕνiʼ(Adj)(A) ἄνδρLʼ(A) |ἁiπάL|σηςL(Adj)(G) ἈL|σίiδοςL(G) |μηLλοL|τρόiφουL(Adj)(G)|
+(763) [Δαρείος:] einen Mann der|ganzen Asien vieh|nährenden|
+(764) [Δαρείος:] ταLγεῖνL(AorS)(Akt)(Inf), |ἔiχονL|ταL(Prä)(Akt)(A) σκῆL|πτρονi(A) εὐL|θυνLτήL|ριiονL(Adj)(A).|
+(764) [Δαρείος:] zum|Anführen, haltend Zepter lenkend|es.|
+(765) [Δαρείος:] ΜῆLδοςL(N) |γὰρi(Pt) ἦνL(Imp)(Akt) |ὁi(Art)(N) πρῶL|τοςi(Adj)(N) ἡL|γεiμὼνL(N) |στραiτοῦL(G)·|
+(765) [Δαρείος:] Meder denn war der erste Führer des|Heeres·|
+(766) [Δαρείος:] ἄλLλοςL(Adj)(N) |δʼ(Pt) ἐiκείL|νουL(Pr)(G) παῖςL(N) |τόδiʼ(Pr)(A) ἔρL|γονi(A) ἤL|νυiσενL(Aor)(Akt)·|
+(766) [Δαρείος:] ein|anderer aber jenes|Mannes Sohn dieses|hier Werk vollbrachte·|
+(767) [Δαρείος:] φρέiνεςL(N) |γὰρi(Pt) αὐL|τοῦL(Pr)(G) θυL|μὸνi(A) ᾠL|αLκοL|στρόiφουνL(Imp)(Akt).|
+(767) [Δαρείος:] Sinnen denn seines Mutes steuerten.|
+(768) [Δαρείος:] τρίiτοςL(Adj)(N) |δʼ(Pt) ἀπiʼ(Prp) αὐL|τοῦL(Pr)(G) ΚῦL|ροςi(N), εὐL|δαίLμωνL(Adj)(N) |ἀiνήρL(N),|
+(768) [Δαρείος:] dritter aber von ihm Kyros, glücklich Mann,|
+(769) [Δαρείος:] ἄρLξαςL(AorS)(Akt)(N) |ἔiθηL|κεi(AorS)(Akt) πᾶL|σινi(Adj)(D) εἰL|ρήLνηνL(A) |φίiλοιςL(D)·|
+(769) [Δαρείος:] angefangen|habend setzte allen Frieden Freunden·|
+(770) [Δαρείος:] ΛυLδῶνL(G) |δὲi(Pt) λαL|ὸνL(A) καὶL(Kon) |ΦρυiγῶνL(G) |ἐLκτήL|σαiτοL(Aor)(Med),|
+(770) [Δαρείος:] der|Lydier aber Volk und der|Phrygier erwarb|sich,|
+(771) [Δαρείος:] ἸiωL|νίiανL(A) |τεi(Pt) πᾶL|σανi(Adj)(A) ἤL|λαiσενL(AorS)(Akt) |βίiᾳL(D).|
+(771) [Δαρείος:] Ionien und ganz trieb|er mit|Gewalt.|
+(772) [Δαρείος:] θεiὸςL(N) |γὰρi(Pt) οὐκL(Pt) |ἤχLθηL|ρενi(Aor)(Akt), ὡςL(Kon) |εὔLφρωνL(Adj)(N) |ἔiφυL(Aor)(Akt).|
+(772) [Δαρείος:] Gott denn nicht zürnte, da wohl|gesinnt er|war.|
+(773) [Δαρείος:] ΚύiρουL(G) |δὲi(Pt) παῖςL(N) |τέiταρL|τοςi(Adj)(N) ηὔL|θυLνεL(Aor)(Akt) |στραiτόνL(A).|
+(773) [Δαρείος:] des|Kyros aber Sohn vierter richtete Heer.|
+(774) [Δαρείος:] πέμLπτοςL(Adj)(N) |δὲi(Pt) ΜάρL|δοςi(N) ἦρL|ξενi(AorS)(Akt), αἰL|σχύLνηL(N) |πάiτρᾳL(D)|
+(774) [Δαρείος:] fünfter aber Mardos herrschte, Schmach der|Heimat|
+(775) [Δαρείος:] θρόiνοιL|σίi(D) τʼ(Pt) ἀρL|χαίLοιL|σιi(Adj)(D)· τὸνL(Art)(A) |δὲi(Pt) σὺνL(Prp) |δόiλῳL(D)|
+(775) [Δαρείος:] auf|Thronen und alten· den aber mit List|
+(776) [Δαρείος:] ἈρLταL|φρέiνηςL(N) |ἔLκτειL|νενi(AorS)(Akt) ἐL|σθλὸςi(Adj)(N) ἐνL(Prp) |δόiμοιςL(D),|
+(776) [Δαρείος:] Artaphrenes tötete tüchtig in Häusern,|
+(777) [Δαρείος:] ξὺνi(Prp) ἀνL|δράiσινL(D) |φίiλοιL|σινi(Adj)(D), οἷςL(Pr)(D) |τόδiʼ(Pr)(N) ἦνL(Imp)(Akt) |χρέiοςL(N).|
+(777) [Δαρείος:] mit Männern freundlichen, denen dieses|hier war Pflicht.|
+(778) [Δαρείος:] [ἕLκτοςL(Adj)(N) |δὲi(Pt) Μάrραr|φιςi(N), ἕL|βδοiμοςL(Adj)(N) |δʼ(Pt) ἈρLταL|φρέiνηςL(N). ]|
+(778) [Δαρείος:] [sechster aber Maraphis, siebenter aber Artaphrēnēs. ]|
+(779) [Δαρείος:] κἀLγὼL(Kon)(Pr)(N) |πάiλουL(G) |τʼ(Pt) ἔiκυρL|σαi(Aor)(Akt) τοῦL|περi(Pr)(G) ἤL|θεiλονL(Imp)(Akt),|
+(779) [Δαρείος:] und|ich des|Losstabes und traf|ich dessen wollte|ich,|
+(780) [Δαρείος:] κἀLπεL|στράiτευL|σαi(Kon)(Aor)(Akt) πολL|λὰi(Adj)(A) σὺνL(Prp) |πολLλῷL(Adj)(D) |στραiτῷL(D)·|
+(780) [Δαρείος:] und|ich|zog|aus vieles mit großem Heer·|
+(781) [Δαρείος:] ἀλλLʼ(Kon) οὐL(Pt) |καiκὸνL(Adj)(A) |τοiσόνL|δεi(Adj)(A) προrσέr|βαiλονL(Aor)(Akt) |πόiλειL(D).|
+(781) [Δαρείος:] aber nicht Übel so|groß brachte|ich|an der|Stadt.|
+(782) [Δαρείος:] ΞέρLξηςL(N) |δʼ(Pt) ἐiμὸςL(Adj)(N) |παῖςL(N) ὢνL(Prä)(Akt)(N) |νέiοςL(Adj)(N) |νέiαL(Adj)(A) |φροiνεῖL(Prä)(Akt),|
+(782) [Δαρείος:] Xerxes aber mein Sohn seiend jung Neues denkt,|
+(783) [Δαρείος:] κοὐL(Kon)(Pt) μνηL|μοiνεύL|ειL(Prä)(Akt) τὰςL(Art)(A) |ἐiμὰςL(Adj)(A) |ἐiπιL|στοiλάςL(A)·|
+(783) [Δαρείος:] und|nicht erinnert|sich die meinen Weisungen·|
+(784) [Δαρείος:] εὖL(Adv) γὰρL(Pt) |σαiφῶςL(Adv) |τόδiʼ(Pr)(A) ἴστLʼ(Per)(Akt)(Imv), |ἐiμοὶL(Pr)(D) |ξυiνήL|λιiκεςL(N),|
+(784) [Δαρείος:] gut denn klar dieses|hier wisset, mir Alters|genossen,|
+(785) [Δαρείος:] ἅiπανL|τεςi(Adj)(N) ἡL|μεῖςL(Pr)(N), οἳL(Pr)(N) |κράiτηL(A) |τάδiʼ(Pr)(A) ἔL|σχοiμενL(AorS)(Akt),|
+(785) [Δαρείος:] all wir, die Macht|bereiche diese|hier hielten,|
+(786) [Δαρείος:] οὐκL(Pt) ἂνL(Pt) |φαiνεῖL|μενL(Aor)(Akt)(Op) πήL|ματiʼ(A) ἔρL|ξανLτεςL(AorS)(Akt)(N) |τόiσαL(Adj)(A).|
+(786) [Δαρείος:] nicht wohl würden|erscheinen Übel getan|habend so|viele.|
+(787) [Χορός:] τίi(Pr)(N) οὖνL(Pt), |ἄiναξL(V) |ΔαLρεῖL|εi(V), ποῖL(Adv) |καiταL|στρέiφειςL(Prä)(Akt)|
+(787) [Χορός:] was nun, Herr Dareios, wohin wendest|du|
+(788) [Χορός:] λόiγωνL(G) |τεiλευL|τήνL(A); πῶςL(Adv) |ἂνi(Pt) ἐκL(Prp) |τούLτωνL(Pr)(G) |ἔiτιL(Adv)|
+(788) [Χορός:] der|Worte Ende; wie wohl aus diesen noch|
+(789) [Χορός:] πράσLσοιL|μενi(Prä)(Akt)(Op) ὡςL(Kon) |ἄiριL|σταi(Adv)(Sup) ΠερL|σιiκὸςL(Adj)(N) |λεiώςL(N);|
+(789) [Χορός:] würden|wir|handeln wie bestens persisches Volk;|
+(790) [Δαρείος:] εἰL(Kon) μὴL(Pt) |στραiτεύL|οισθLʼ(Prä)(M/P)(Op) ἐςL(Prp) |τὸνi(Art)(A) ἙλL|λήLνωνL(G) |τόiπονL(A),|
+(790) [Δαρείος:] wenn nicht würdet|ihr|ziehen in den der|Griechen Ort,|
+(791) [Δαρείος:] μηδLʼ(Kon)(Pt) εἰL(Kon) |στράiτευL|μαi(N) πλεῖL|ονi(Adj)(N)(Kmp) ἦιL(Prä)(Akt)(Knj) |τὸi(Art)(N) ΜηL|διiκόνL(Adj)(N).|
+(791) [Δαρείος:] noch|wenn falls Heer größer sei das Medische.|
+(792) [Δαρείος:] αὐLτὴL(Pr)(N) |γὰρi(Pt) ἡL(Art)(N) |γῆL(N) ξύμL|μαiχοςL(Adj)(N) |κείLνοιςL(Pr)(D) |πέiλειL(Prä)(Akt).|
+(792) [Δαρείος:] selbst denn die Erde Mit|kämpferin jenen ist.|
+(793) [Χορός:] πῶςL(Adv) τοῦτLʼ(Pr)(A) |ἔiλεL|ξαςL(AorS)(Akt), τίrνιr(Pr)(D) |τρόiπῳL(D) |δὲi(Pt) συμL|μαiχεῖL(Prä)(Akt);|
+(793) [Χορός:] wie dieses|hier sagtest|du, mit|welchem Weise aber verbündet|ist;|
+(794) [Δαρείος:] κτείLνουL|σαi(Prä)(Akt)(N) λιL|μῷL(D) τοὺςL(Art)(A) |ὑiπερL|πόλLλουςL(Adj)(A) |ἄiγανL(Adv).|
+(794) [Δαρείος:] tötend durch|Hunger die über|vielen zu|sehr.|
+(795) [Χορός:] ἀλλLʼ(Kon) εὐL|σταiλῆL(Adj)(A) |τοιL(Pt) λεL|κτὸνi(Adj)(A) ἀL|ροῦLμενL(Fu)(Akt) |στόiλονL(A).|
+(795) [Χορός:] aber wohl|gerüsteten ja ausgelesenen werden|wir|heben Flotte.|
+(796) [Δαρείος:] ἀλλLʼ(Kon) οὐδLʼ(Kon)(Pt) |ὁi(Art)(N) μείL|ναςL(AorS)(Akt)(N) νῦνL(Adv) |ἐνi(Prp) ἙλL|λάiδοςL(G) |τόiποιςL(D)|
+(796) [Δαρείος:] aber auch|nicht der geblieben|seiend jetzt in Hellas Orten|
+(797) [Δαρείος:] στραiτὸςL(N) |κυiρήL|σειL(Fu)(Akt) νοL|στίiμουL(Adj)(G) |σωLτηL|ρίiαςL(G).|
+(797) [Δαρείος:] Heer wird|erlangen der|Heimkehr Rettung.|
+(798) [Χορός:] πῶςL(Adv) εἶL|παςi(AorS)(Akt); οὐL(Pt) |γὰρL(Pt) πᾶνL(Adj)(N) |στράiτευL|μαi(N) βαρL|βάiρωνL(Adj)(G)|
+(798) [Χορός:] wie sagtest|du; nicht denn ganz Heer der|Barbaren|
+(799) [Χορός:] πεiρᾷL(Prä)(Akt) |τὸνi(Art)(A) ἝλL|ληςL(G) πορθL|μὸνi(A) ΕὐL|ρώLπηςL(G) |ἄiποL(Adv);|
+(799) [Χορός:] geht|hinüber den der|Helle Furt Europas von;|
+(800) [Δαρείος:] παῦLροιL(Adj)(N) |γεi(Pt) πολL|λῶνL(Adj)(G), εἴL(Kon) |τιi(Pr)(N) πιL|στεῦLσαιL(Aor)(Akt)(Inf) |θεiῶνL(G)|
+(800) [Δαρείος:] wenige doch der|vielen, wenn etwas zu|glauben der|Götter|
+(801) [Δαρείος:] χρὴL(Prä)(Akt) θεL|σφάiτοιL|σινi(D), ἐςL(Prp) |τὰi(Art)(A) νῦνL(Adv) |πεiπραγL|μέiναL(Per)(M/P)(A)|
+(801) [Δαρείος:] muss Weissprüchen, in die jetzt Geschehenen|
+(802) [Δαρείος:] βλέLψανL|ταi(AorS)(Akt)(A)· συμL|βαίLνειL(Prä)(Akt) |γὰρi(Pt) οὐL(Pt) |τὰi(Art)(N) μένL(Pt), |τὰi(Art)(N) δʼ(Pt) οὔL(Pt).|
+(802) [Δαρείος:] angeschaut|habend· trifft|zu denn nicht die zwar, die aber nicht.|
+(803) [Δαρείος:] κεἴLπερL(Kon) |τάδiʼ(Pr)(N) ἐL|στίi(Prä)(Akt), πλῆL|θοςi(N) ἔκL|κριiτονL(Adj)(N) |στραiτοῦL(G)|
+(803) [Δαρείος:] auch|wenn dieses|hier ist, Menge ausgesonderte des|Heeres|
+(804) [Δαρείος:] λείLπειL(Prä)(Akt) |κεiναῖL|σινi(Adj)(D) ἐλL|πίiσινL(D) |πεiπειL|σμέiνοςL(Per)(M/P)(N).|
+(804) [Δαρείος:] bleibt|zurück leeren Hoffnungen überzeugt|seiend.|
+(805) [Δαρείος:] μίLμνουL|σιi(Prä)(Akt) δʼ(Pt) ἔνL|θαi(Adv) πεrδίr|ονi(A) ἈL|σωLπὸςL(N) |ῥοiαῖςL(D)|
+(805) [Δαρείος:] bleiben aber wo Ebene Asopos mit|Strömen|
+(806) [Δαρείος:] ἄρLδειL(Prä)(Akt), |φίiλονL(Adj)(A) |πίiαL|σμαi(A) ΒοιL|ωLτῶνL(G) |χθοiνίL(D)·|
+(806) [Δαρείος:] bewässert|er, lieb|es Tränkung der|Boioter der|Erde·|
+(807) [Δαρείος:] οὗL(Adv) σφινL(Pr)(D) |καiκῶνL(Adj)(G) |ὕLψιστLʼ(Adj)(Sup)(A) |ἐiπαμL|μέiνειL(Prä)(Akt) |παiθεῖνL(Aor)(Inf)(Akt),|
+(807) [Δαρείος:] wo ihnen der|Übel höchst|es bleibt|übrig zu|leiden,|
+(808) [Δαρείος:] ὕiβρεωςL(G) |ἄiποιL|ναi(A) κἀL|θέiωνL(Kon)(Adj)(G) |φροiνηL|μάiτωνL(G)·|
+(808) [Δαρείος:] der|Hybris Sühne und|gottlos|er Gesinnungen·|
+(809) [Δαρείος:] οἳL(Pr)(N) γῆνL(A) |μοiλόνL|τεςi(AorS)(Akt)(N) ἙλL|λάδiʼ(A) οὐL(Pt) |θεiῶνL(G) |βρέiτηL(A)|
+(809) [Δαρείος:] die Erde gekommen|seiend Hellas nicht der|Götter Bilder|
+(810) [Δαρείος:] ᾐLδοῦνL|τοi(Imp)(M/P) συL|λᾶνL(Prä)(Inf)(Akt) οὐL|δὲi(Kon)(Pt) πιμL|πράiναιL(Prä)(Inf)(Akt) |νεiώςL(G)·|
+(810) [Δαρείος:] schämten|sich zu|rauben auch|nicht zu|brennen der|Tempel·|
+(811) [Δαρείος:] βωLμοὶL(N) |δʼ(Pt) ἄiιL|στοιL(Adj)(N), δαιL|μόiνωνL(G) |θʼ(Pt) ἱiδρύL|μαiταL(N)|
+(811) [Δαρείος:] Altäre aber unsichtbar, der|Dämonen auch Heiligtümer|
+(812) [Δαρείος:] πρόρLριL|ζαi(Adv) φύρL|δηνL(Adv) ἐL|ξαiνέL|στραLπταιL(Per)(M/P) |βάiθρωνL(G).|
+(812) [Δαρείος:] mit|Wurzel durch|einander sind|umge|stürzt der|Fundamente.|
+(813) [Δαρείος:] τοιLγὰρL(Pt) |καiκῶςL(Adv) |δράLσανL|τεςi(AorS)(Akt)(N) οὐκL(Pt) |ἐiλάσL|σοiναL(Adj)(Kmp)(A)|
+(813) [Δαρείος:] demnach schlecht getan|habend nicht geringere|
+(814) [Δαρείος:] πάLσχουL|σιi(Prä)(Akt), τὰr(Art)(A) δὲr(Pt) |μέλLλουL|σιi(Prä)(Akt), κοὐL|δέiπωL(Kon)(Pt)(Adv) |καiκῶνL(Adj)(G)|
+(814) [Δαρείος:] leiden, die aber werden|kommen, und|noch|nicht der|Übel|
+(815) [Δαρείος:] κρηLνὶςL(N) |ἀiπέL|σβηκLʼ(Per)(Akt) ἀλλLʼ(Kon) |ἔτiʼ(Adv) ἐκL|πιLδύL|εiταιL(Prä)(M/P).|
+(815) [Δαρείος:] Quelle ist|erloschen aber noch tritt|heraus.|
+(816) [Δαρείος:] τόiσοςL(Adj)(N) |γὰρi(Pt) ἔL|σταιL(Fu)(M/P) πέrλαr|νοςi(N) αἱL|μαiτοL|σφαiγὴςL(G)|
+(816) [Δαρείος:] so|groß denn wird|sein Opfer|kuchen der|Blut|schlacht|
+(817) [Δαρείος:] πρὸςL(Prp) γῇL(D) |ΠλαiταιL|ῶνL(G) ΔωL|ρίiδοςL(Adj)(G) |λόγLχηςL(G) |ὕiποL(Prp)·|
+(817) [Δαρείος:] auf der|Erde der|Plataier dorisch|er Lanze unter·|
+(818) [Δαρείος:] θῖLνεςL(N) |νεiκρῶνL(G) |δὲi(Pt) καὶL(Kon) |τριiτοL|σπόiρῳL(Adj)(D) |γοiνῇL(D)|
+(818) [Δαρείος:] Haufen der|Toten aber und dritt|gesäten Nach|kommenschaft|
+(819) [Δαρείος:] ἄiφωL|ναi(Adj)(N) σηL|μαiνοῦL|σινi(Fu)(Akt) ὄμL|μαiσινL(D) |βροiτῶνL(G)|
+(819) [Δαρείος:] sprach|loses werden|anzeigen den|Augen der|Sterblichen|
+(820) [Δαρείος:] ὡςL(Kon) οὐχL(Pt) |ὑiπέρL|φευL(Adv) θνηL|τὸνi(Adj)(A) ὄνL|ταi(Prä)(Akt)(A) χρὴL(Prä)(Akt) |φροiνεῖνL(Prä)(Inf)(Akt).|
+(820) [Δαρείος:] dass nicht über|mäßig sterblichen seiend ist|nötig zu|denken.|
+(821) [Δαρείος:] ὕiβριςL(N) |γὰρi(Pt) ἐL|ξανLθοῦσLʼ(AorS)(Akt)(N) |ἐiκάρL|πωLσενL(AorS)(Akt) |στάiχυνL(A)|
+(821) [Δαρείος:] Hybris denn auf|ge|blüht|habend brachte|als|Frucht Ähre|
+(822) [Δαρείος:] ἄLτηςL(G), |ὅiθενL(Adv) |πάγLκλαυL|τονi(Adj)(A) ἐL|ξαiμᾷL(Prä)(Akt) |θέiροςL(A).|
+(822) [Δαρείος:] des|Verderbens, wovon ganz|klag|voll mäht|er Ernte.|
+(823) [Δαρείος:] τοιLαῦθLʼ(Adj)(A) |ὁiρῶνL|τεςL(Prä)(Akt)(N) τῶνL|δεi(Pr)(G) τἀL|πιiτίL|μιiαL(A)|
+(823) [Δαρείος:] solche schauend dies|er die|Sühne|strafen|
+(824) [Δαρείος:] μέLμνησθLʼ(Per)(M/P)(Imv) |ἈiθηL|νῶνL(G) ἙλL|λάiδοςL(G) |τεi(Pt), μηL|δέi(Kon)(Pt) τιςL(Pr)(N)|
+(824) [Δαρείος:] gedenkt Athens Hellas und, und|nicht irgend|einer|
+(825) [Δαρείος:] ὑiπερL|φροiνήL|σαςL(AorS)(Akt)(N) τὸνL(Art)(A) |παiρόνL|ταi(Prä)(Akt)(A) δαίL|μοiναL(A)|
+(825) [Δαρείος:] über|heblich|gedacht|habend den gegen|wärtigen Daimon|
+(826) [Δαρείος:] ἄλLλωνL(Adj)(G) |ἐiραL|σθεὶςL(Aor)(M/P)(N) ὄλL|βονi(A) ἐκL|χέiῃL(Aor)(Akt)(Knj) |μέiγανL(Adj)(A).|
+(826) [Δαρείος:] ander|er verliebt|seiend Glück|sgut aus|gieße groß|es.|
+(827) [Δαρείος:] ΖεύςL(N) τοιL(Pt) |κοiλαL|στὴςL(N) τῶνL(Art)(G) |ὑiπερL|κόμLπωνL(Adj)(G) |ἄiγανL(Adv)|
+(827) [Δαρείος:] Zeus ja Züchtiger der über|prahlerischen gar|sehr|
+(828) [Δαρείος:] φροiνηL|μάiτωνL(G) |ἔiπεL|στινi(Prä)(Akt), εὔL|θυLνοςL(N) |βαiρύςL(Adj)(N).|
+(828) [Δαρείος:] Gesinnungen ist|darüber, Zurecht|richter schwer|er.|
+(829) [Δαρείος:] πρὸςL(Prp) ταῦτLʼ(Pr)(A) |ἐiκεῖL|νονL(Pr)(A), σωL|φροiνεῖνL(Prä)(Inf)(Akt) |κεiχρηL|μέiνονL(Per)(M/P)(A),|
+(829) [Δαρείος:] zu dies|es jenen, besonnen|sein gebrauchend|habend,|
+(830) [Δαρείος:] πιiνύL|σκετiʼ(Prä)(Akt)(Imv) εὐL|λόiγοιL|σιi(Adj)(D) νουL|θεiτήL|μαiσινL(D),|
+(830) [Δαρείος:] belehret gut|begründeten Er|mahnungen,|
+(831) [Δαρείος:] λῆLξαιL(Aor)(Inf)(Akt) |θεiοL|βλαiβοῦνθLʼ(Prä)(Inf)(Akt) |ὑiπερL|κόμLπῳL(Adj)(D) |θράiσειL(D).|
+(831) [Δαρείος:] auf|hören Gott|beschädigen über|prahlerisch|er Kühn|heit.|
+(832) [Δαρείος:] σὺi(Pr)(N) δʼ(Pt), ὦL(ij) |γεiραιL|ὰi(Adj)(N) μῆL|τερi(V) ἡL(Art)(N) |ΞέρLξουL(G) |φίiληL(Adj)(N),|
+(832) [Δαρείος:] du aber, o greise Mutter die des|Xerxes liebe,|
+(833) [Δαρείος:] ἐλLθοῦσLʼ(AorS)(Akt)(N) |ἐςi(Prp) οἴL|κουςL(A) κόL|σμονi(A) ὅL|στιςi(Pr)(N) εὐL|πρεiπὴςL(Adj)(N)|
+(833) [Δαρείος:] gekommen|seiend in die|Häuser Schmuck welcher an|ständig|er|
+(834) [Δαρείος:] λαiβοῦσLʼ(AorS)(Akt)(N) |ὑiπανL|τίiαL|ζεi(Prä)(Akt)(Imv) παιL|δίi(D). πάνL|ταi(Adj)(A) γὰρL(Pt)|
+(834) [Δαρείος:] genommen|habend begeg­ne dem|Kind. alles denn|
+(835) [Δαρείος:] καiκῶνL(Adj)(G) |ὑπiʼ(Prp) ἄλL|γουςL(G) λαrκίr|δεςi(N) ἀμL|φὶi(Prp) σώL|μαiτιL(D)|
+(835) [Δαρείος:] der|Übel unter Schmerz|es Risse um den|Leib|
+(836) [Δαρείος:] στηLμορL|ραiγοῦL|σιi(Prä)(Akt) ποιL|κίiλωνL(Adj)(G) |ἐLσθηL|μάiτωνL(G).|
+(836) [Δαρείος:] triefen|herab bunt|er Kleid|er.|
+(837) [Δαρείος:] ἀλλLʼ(Kon) αὐL|τὸνi(Pr)(A) εὐL|φρόiνωςL(Adv) |σὺi(Pr)(N) πράL|υLνονL(Prä)(Akt)(Imv) |λόiγοιςL(D)·|
+(837) [Δαρείος:] aber ihn gütig du besänftige mit|Worten·|
+(838) [Δαρείος:] μόiνηςL(Adj)(G) |γάρi(Pt), οἶL|δαi(Per)(Akt), σοῦL(Pr)(G) |κλύiωνL(Prä)(Akt)(N) |ἀiνέL|ξεiταιL(Fu)(M/P).|
+(838) [Δαρείος:] allein|deiner denn, ich|weiß, deiner hörend wird|ertragen.|
+(839) [Δαρείος:] ἐiγὼL(Pr)(N) |δʼ(Pt) ἄiπειL|μιi(Prä)(Akt) γῆςL(G) |ὑiπὸL(Prp) |ζόiφονL(A) |κάiτωL(Adv).|
+(839) [Δαρείος:] ich aber gehe|fort der|Erde unter Dunkel hinab.|
+(840) [Δαρείος:] ὑLμεῖςL(Pr)(N) |δέi(Pt), πρέL|σβειςL(V), χαίL|ρετiʼ(Prä)(Akt)(Imv), ἐνL(Prp) |καiκοῖςL(Adj)(D) |ὅiμωςL(Adv)|
+(840) [Δαρείος:] ihr aber, Greise, seid|gegrüßt, in Übeln dennoch|
+(841) [Δαρείος:] ψυLχῇL(D) |διiδόνL|τεςi(Prä)(Akt)(N) ἡL|δοiνὴνL(A) |καθiʼ(Prp) ἡL|μέiρανL(A),|
+(841) [Δαρείος:] der|Seele gebend Lust je Tag,|
+(842) [Δαρείος:] ὡςL(Kon) τοῖςL(Art)(D) |θαiνοῦL|σιi(AorS)(Akt)(D) πλοῦL|τοςi(N) οὐL|δὲνi(Pr)(A) ὠL|φεiλεῖL(Prä)(Akt).|
+(842) [Δαρείος:] denn den gestorbenen Reichtum nichts nützt.|
+(843) [Χορός:] ἦL(Pt) πολL|λὰi(Adj)(A) καὶL(Kon) |παiρόνL|ταi(Prä)(Akt)(A) καὶL(Kon) |μέλLλοντLʼ(Prä)(Akt)(A) |ἔiτιL(Adv)|
+(843) [Χορός:] wahrlich viel|es und gegen|wärtig|es und zukünftig|es noch|
+(844) [Χορός:] ἤλLγησLʼ(AorS)(Akt) |ἀiκούL|σαςL(AorS)(Akt)(N) βαρL|βάiροιL|σιi(Adj)(D) πήL|μαiταL(A).|
+(844) [Χορός:] schmerzte|ich gehört|habend barbarischen Leiden.|
+(845) [Ἄτοσσα:] ὦL(ij) δαῖL|μονi(V), ὥςL(Adv) |μεi(Pr)(A) πόλλLʼ(Adj)(A) |ἐiσέρL|χεiταιL(Prä)(M/P) |καiκὰL(Adj)(A)|
+(845) [Ἄτοσσα:] o Dämon, wie mich viele kommen|heran Übel|
+(846) [Ἄτοσσα:] ἄλLγηL(N), |μάiλιL|σταi(Adv)(Sup) δʼ(Pt) ἥL|δεi(Pr)(N) συμL|φοiρὰL(N) |δάiκνειL(Prä)(Akt),|
+(846) [Ἄτοσσα:] Schmerzen, am|meisten aber diese Unglück beißt,|
+(847) [Ἄτοσσα:] ἀiτιL|μίiανL(A) |γεi(Pt) παιL|δὸςi(G) ἀμL|φὶi(Prp) σώL|μαiτιL(D)|
+(847) [Ἄτοσσα:] Entehrung doch des|Kindes um den|Leib|
+(848) [Ἄτοσσα:] ἐLσθηL|μάiτωνL(G) |κλύiουL|σανi(Prä)(Akt)(A), ἥL(Pr)(N) |νινi(Pr)(A) ἀμL|πέiχειL(Prä)(Akt).|
+(848) [Ἄτοσσα:] der|Kleider hörend, welche ihn umhüllt.|
+(849) [Ἄτοσσα:] ἀλλLʼ(Kon) εἶL|μιi(Prä)(Akt), καὶL(Kon) |λαiβοῦL|σαi(AorS)(Akt)(N) κόL|σμονi(A) ἐκL(Prp) |δόiμωνL(G)|
+(849) [Ἄτοσσα:] aber ich|gehe, und genommen|habend Schmuck aus den|Häusern|
+(850) [Ἄτοσσα:] ὑiπανL|τιiάL|ζεινL(Prä)(Inf)(Akt) παιL|δίi(D) μουL(Pr)(G) |πειLράL|σοiμαιL(Fu)(M/P).|
+(850) [Ἄτοσσα:] zu|begegnen dem|Kind mein|es werde|ich|versuchen.|
+(851) [Ἄτοσσα:] οὐL(Pt) γὰρL(Pt) |τὰi(Art)(A) φίλL|τατiʼ(Adj)(Sup)(A) ἐνL(Prp) |καiκοῖςL(Adj)(D) |προiδώL|σοiμενL(Fu)(Akt).|
+(851) [Ἄτοσσα:] nicht denn die aller|liebsten in Übeln werden|wir|verraten.|
+=== Stasimon ===
+== Strophe 1 ==
+(852) [Χορός:] ὦL(ij) πόiποιi(ij) ἦL(Pt) μεiγάiλαςL(Adj)(A) ἀiγαiθᾶςL(Adj)(G) τεi(Pt) πο‖λισσονόμοiυ(Adj)(G)|
+(852) [Χορός:] o weh wahrlich groß|er gut|er und stadt|gesetzlich|er|
+(853) [Χορός:] βιiοiτᾶςL(G) ἐiπεiκύρLσαiμενi(AorS)(Akt),|
+(853) [Χορός:] des|Lebens erlangten|wir,|
+(854) [Χορός:] εὖθLʼ(Kon) ὁi(Art)(N) γεiραιLὸςL(Adj)(N)|
+(854) [Χορός:] als der greise|
+(855) [Χορός:] πανLταρLκὴςL(Adj)(N) ἀiκάiκαςL(Adj)(N) ἄiμαiχοςL(Adj)(N) βαiσιiλεὺςL(N)|
+(855) [Χορός:] all|genügend unschuldig un|bekämpft König|
+(857) [Χορός:] ἰLσόiθεiοςL(Adj)(N) ΔαLρεῖLοςi(N) ἆρLχεi(Imp)(Akt) χώLραςL(G).|
+(857) [Χορός:] gott|gleich Dareios herrschte der|Lande.|
+== Antistrophe 1 ==
+(858) [Χορός:] πρῶLταi(Adv) μὲνi(Pt) εὐLδοiκίiμουςL(Adj)(A) στραiτιiὰςL(A) ἀiπε‖φαινόμεiθ(Imp)(M/P)|
+(858) [Χορός:] zuerst zwar berühmte Heere zeigten|wir|auf|
+(859) [Χορός:] ʼ, ἠLδὲi(Kon) νοiμίLσμαiταi(A) πύρLγιiναi(Adj)(A)|
+(859) [Χορός:] ʼ, und Münzen turm|artige|
+(860) [Χορός:] πάντLʼ(Adj)(A) ἐiπέiθυLνονL(Imp)(Akt),|
+(860) [Χορός:] alles machten|sie|blühend,|
+(861) [Χορός:] νόLστοιL(N) δʼ(Pt) ἐκL(Prp) ποiλέiμωνL(G) ἀiπόiνουςL(Adj)(N) ἀiπαiθεῖςL(Adj)(N)|
+(861) [Χορός:] Heim|kehren aber aus den|Kriegen mühelose leid|lose|
+(863) [Χορός:] ἀLνέiραςi εὖL(Adv) πράσLσονLταςi(Prä)(Akt)(A) ἆLγονi(Imp)(Akt) οἴLκουςL(A).|
+(863) [Χορός:] Männer gut handelnd führten|sie Häuser.|
+== Strophe 2 ==
+(864) [Χορός:] ὅσLσαςL(Pr)(A) δʼ(Pt) εἷLλεi(AorS)(Akt) πόiλειςL(A) πόiρονi(A)|
+(864) [Χορός:] so|viele aber nahm Städte Durch|gang|
+(865) [Χορός:] οὐL(Pt) διiαiβὰςL(AorS)(Akt)(N) ἍiλυiοςL(G) ποiταiμοῖLοL(G),|
+(865) [Χορός:] nicht über|schritten|habend des|Halys des|Flusses,|
+(866) [Χορός:] οὐδLʼ(Kon)(Pt) ἀφiʼ(Prp) ἑLστίiαςL(G) συiθείςL(AorS)(Pas)(N),|
+(866) [Χορός:] noch|nicht von des|Herd|es auf|ge|scheucht|worden,|
+(867) [Χορός:] οἷLαιL(Pr)(N) ΣτρυLμοiνίiουL(Adj)(G) πεiλάi‖γους(G)|
+(867) [Χορός:] welche des|Strymon|ischen Meeres|
+(868) [Χορός:] ἈiχεiλωLίiδεςi(N) εἰLσὶi(Prä)(Akt) πάiροιLκοιL(Adj)(N)|
+(868) [Χορός:] Achelo|iden sind Nach|barn|
+(870) [Χορός:] ΘρῃLκίiωνL(Adj)(G) ἐiπαύLλωνL(G),|
+(870) [Χορός:] der|Thrakischen Gehöfte,|
+== Antistrophe 2 ==
+(871) [Χορός:] λίLμναςL(A) τʼ(Pt) ἔLκτοiθενi(Adv) αἳL(Pr)(N) καiτὰi(Prp)|
+(871) [Χορός:] Seen auch von|außen die entlang|
+(872) [Χορός:] χέρLσονi(A) ἐiληLλαiμέiναιL(Per)(M/P)(N) πέiριi(Prp) πύρLγονL(A)|
+(872) [Χορός:] Land getrieben|worden um Turm|
+(873) [Χορός:] τοῦδLʼ(Pr)(G) ἄiναLκτοςi(G) ἄLιiονL(Imp)(Akt),|
+(873) [Χορός:] dies|es Herrn gingen,|
+(875) [Χορός:] ἝλLλαςL(N) τʼ(Pt) ἀμLφὶi(Prp) πόiρονL(A) πλαiτὺνi(Adj)(A)|
+(875) [Χορός:] Hellas auch um Durch|gang breiten|
+(876) [Χορός:] εὐLχόiμεiναιL(Prä)(M/P)(N), μυiχίiαL(Adj)(N) τεi(Pt) ΠροiπονLτίςL(N),|
+(876) [Χορός:] betend, innen|winke|lig und Propontis,|
+(877) [Χορός:] καὶL(Kon) στόiμωLμαi(N) ΠόνLτουL(G)·|
+(877) [Χορός:] und Mündung des|Pontos·|
+== Strophe 3 ==
+(879) [Χορός:] νᾶLσοίL(N) θʼ(Pt) αἳL(Pr)(N) καiτὰi(Prp) πρῶνLʼ(A) ἅiλιiονL(Adj)(A) πεiρίiκλυLστοιL(Adj)(N)|
+(879) [Χορός:] Inseln auch welche entlang Vorgebirge meer|ig um|spülte|
+(881) [Χορός:] τᾷLδεi(Pr)(D) γᾷL(D) προiσήLμεiναιL(Prä)(M/P)(N)|
+(881) [Χορός:] dies|er Erde bei|liegend|
+(882) [Χορός:] οἵLαL(Pr)(N) ΛέLσβοςi(N) ἐiλαιLόiφυiτόςL(Adj)(N) τεi(Pt) ΣάiμοςL(N), Χίiοςi(N)|
+(882) [Χορός:] wie Lesbos öl|baum|gepflanzt und Samos, Chios|
+(884) [Χορός:] ἠLδὲi(Kon) ΠάiροςL(N), ΝάLξοςL(N), Μύiκο‖νοiς(N),|
+(884) [Χορός:] und Paros, Naxos, Mykonos,|
+(885) [Χορός:] ΤήLνῳL(D) τεi(Pt) συiνάLπτουσLʼ(Prä)(Akt)(N)|
+(885) [Χορός:] mit|Tēnos und verbindend|
+(886) [Χορός:] ἈνLδροςi(G) ἀγLχιiγείLτωνL(Adj)(N),|
+(886) [Χορός:] von|Andros nah|wohnend,|
+== Antistrophe 3 ==
+(888) [Χορός:] καὶL(Kon) τὰςL(Art)(A) ἀγLχιiάiλουςL(Adj)(A) ἐiκράiτυLνεi(Aor)(Akt) μεiσάLκτουςL(Adj)(A),|
+(888) [Χορός:] und die nah|Meer|igen machte|stark zwischen|liegende,|
+(890) [Χορός:] ΛῆLμνονi(A), ἸLκάiρουL(G) θʼ(Pt) ἕiδοςL(A),|
+(890) [Χορός:] Lemnos, des|Ikaros auch Sitz,|
+(891) [Χορός:] καὶL(Kon) Ῥόiδονi(A) ἠLδὲi(Kon) ΚνίiδονL(A) ΚυiπρίiαςL(Adj)(G) τεi(Pt) πόiλειςL(A), Πάiφονi(A),|
+(891) [Χορός:] und Rhodos und Knidos der|Kypris auch Städte, Paphos,|
+(893) [Χορός:] ἠLδὲi(Kon) ΣόiλουςL(A), ΣαiλαiμῖLνάi(A) τεi(Pt),|
+(893) [Χορός:] und Soloi, Salamis auch,|
+(895) [Χορός:] τᾶςL(Art)(G) νῦνL(Adv) μαLτρόiποiλιςL(N) τῶνδLʼ(Pr)(G)|
+(895) [Χορός:] deren jetzt Mutter|stadt dieser|
+(896) [Χορός:] αἰLτίiαL(N) στεiναγLμῶνL(G).|
+(896) [Χορός:] Grund der|Seufzer.|
+== Epode 1 ==
+(898) [Χορός:] καὶL(Kon) τὰςi(Art)(A) εὐLκτεiάiνουςL(Adj)(A) καiτὰi(Prp)|
+(898) [Χορός:] und die wohl|gebauten gemäß|
+(899) [Χορός:] κλῆLρονi(A) ἸiαLόiνιiονL(Adj)(A) ποiλυiάνLδρουςL(Adj)(A)|
+(899) [Χορός:] Los ionischen viel|männerigen|
+(900) [Χορός:] ἙλLλάLνωνL(G) ἐiκράiτειL(Imp)(Akt) σφεiτέiραιςL(Adj)(D) φρεiσίνi(D).|
+(900) [Χορός:] der|Hellenen beherrschte mit|eigenen Sinnen.|
+(901) [Χορός:] ἀLκάiμαiτονL(Adj)(N) δὲi(Pt) παiρῆνL(Imp)(Akt) σθέiνοςi(N)|
+(901) [Χορός:] unermüdliche aber war|da Stärke|
+(902) [Χορός:] ἀνLδρῶνL(G) τευLχηLστήLρωνL(G)|
+(902) [Χορός:] der|Männer Rüstungs|meister|
+(903) [Χορός:] παμLμίLκτωνL(Adj)(G) τʼ(Pt) ἐiπιiκούLρωνL(G).|
+(903) [Χορός:] ganz|gemischter auch Helfer.|
+(904) [Χορός:] νῦνL(Adv) δʼ(Pt) οὐκL(Pt) ἀμLφιiλόiγωςL(Adv) θεiόiτρεLπταi(Adj)(A) τάδiʼ(Pr)(A) αὖL(Adv) φέiροiμενL(Prä)(Akt) ποiλέiμοιLσιL(D)|
+(904) [Χορός:] nun aber nicht streitig gott|gewendete dieses wiederum tragen|wir mit|Kriegen|
+(907) [Χορός:] δμαLθένLτεςL(Aor)(Pas)(N) μεiγάiλωςL(Adv) πλαLγαῖLσιi(D) πονLτίiαιLσινL(Adj)(D).|
+(907) [Χορός:] gezähmt|worden sehr durch|Schläge meer|ischen.|
+(909) [Ξέρξης:] ἰiώL(ij),|
+(909) [Ξέρξης:] io,|
+(909b) [Ξέρξης:] δύLστηL|νοςi(Adj)(N) ἐiγὼL(Pr)(N) |στυiγεiρᾶςL(Adj)(G) |μοίLραςL(G)|
+(909b) [Ξέρξης:] elend ich verhassten Schicksals|
+(910) [Ξέρξης:] τῆσLδεi(Pr)(G) κυi|ρήLσαςi(AorS)(Akt)(N) ἀi|τεκLμαρL|τοiτάiτηςL(Adj)(G)(Sup),|
+(910) [Ξέρξης:] dieses erlangt|habend äußerst|un|bestimmten,|
+(911) [Ξέρξης:] ὡςL(Kon) ὠL|μοiφρόiνωςL(Adv) |δαίLμωνL(N) |ἐiνέiβηL(AorS)(Akt)|
+(911) [Ξέρξης:] wie wild|gesinnt Daimon trat|ein|
+(912) [Ξέρξης:] ΠερLσῶνL(G) |γεiνεiᾷL(D)· |τίi(Pr)(A) πάiθωL(Aor)(Akt)(Knj) |τλήLμωνL(Adj)(N);|
+(912) [Ξέρξης:] der|Perser Geschlecht· was erleide|ich elender;|
+(913) [Ξέρξης:] λέiλυiταιL(Per)(M/P) |γὰρi(Pt) ἐiμοὶL(Pr)(D) |γυίLωνL(G) |ῥώLμηL(N)|
+(913) [Ξέρξης:] ist|gelöst denn mir der|Glieder Kraft|
+(914) [Ξέρξης:] τήνδLʼ(Art)(A) ἡL|λιiκίiανL(A) |ἐiσιiδόντLʼ(AorS)(Akt)(N) |ἀLστῶνL(G).|
+(914) [Ξέρξης:] diese Alter angesehen|habend der|Bürger.|
+(915) [Ξέρξης:] εἴθLʼ(ij) ὄiφεi|λενL(Imp)(Akt), ΖεῦL(V), |κἀLμὲi(Kon)(Pr)(A) μετiʼ(Prp) |ἀνLδρῶνL(G)|
+(915) [Ξέρξης:] ach|wenn hätte|gesollt, Zeus, und|mich mit Männern|
+(916) [Ξέρξης:] τῶνL(Art)(G) οἰL|χοiμέiνωνL(Prä)(M/P)(G)|
+(916) [Ξέρξης:] der fort|gegangenen|
+(917) [Ξέρξης:] θαiνάiτουL(G) |καiτὰi(Prp) μοῖL|ραi(A) καiλύL|ψαιL(Aor)(Akt)(Inf).|
+(917) [Ξέρξης:] des|Todes gemäß Anteil|Schicksal zu|bedecken.|
+(918) [Χορός:] ὀiτοiτοῖL(ij), |βαiσιiλεῦL(V), |στραiτιiᾶςL(G) |ἀiγαiθῆςL(Adj)(G)|
+(918) [Χορός:] otototoi, o|König, des|Heeres guten|
+(919) [Χορός:] καὶL(Kon) περL|σοiνόiμουL(Adj)(G) |τιLμῆςL(G) |μεiγάiληςL(Adj)(G),|
+(919) [Χορός:] und der|Perser|gesetzlichen Ehre großen,|
+(920) [Χορός:] κόLσμουL(G) |τʼ(Pt) ἀνLδρῶνL(G),|
+(920) [Χορός:] des|Schmucks auch der|Männer,|
+(921) [Χορός:] οὓςL(Pr)(A) νῦνL(Adv) |δαίLμωνL(N) |ἐiπέiκειL|ρενL(Aor)(Akt).|
+(921) [Χορός:] die nun Daimon hat|heimgesucht.|
+(922) [Χορός:] γᾶL(N) δʼ(Pt) αἰL|άLζειL(Prä)(Akt) |τὰνL(Art)(A) ἐγL|γαίLανL(Adj)(A)|
+(922) [Χορός:] Erde aber klagt die im|Lande|eingeborene|
+(923) [Χορός:] ἥLβανL(A) |ΞέρLξᾳL(D) |κταiμέiνανL(Aor)(M/P)(A) |ἍιLδουL(G)|
+(923) [Χορός:] Jugend dem|Xerxes erschlagen|wordene des|Hades|
+(924) [Χορός:] σάLκτοiριi(D) |ΠερLσᾶνL(G). |ᾁLδοiβάi|ταιL(N) γὰρL(Pt)|
+(924) [Χορός:] dem|Herrn der|Perser. Sing|führer denn|
+(925) [Χορός:] πολLλοὶL(Adj)(N) |φῶLτεςL(N), |χώLραςL(G) |ἄνLθοςL(N),|
+(925) [Χορός:] viele Männer, der|Landschaft Blüte,|
+(926) [Χορός:] τοLξοiδάi|μανLτεςL(N), |πάiνυi(Adv) ταρL|φύςL(Adj)(N) τιςL(Pr)(N)|
+(926) [Χορός:] Bogen|bändiger, gar häufig irgendein|
+(927) [Χορός:] μυLριiὰςi(Adj)(N) |ἀνLδρῶνL(G), |ἐLξέL|φθινLταιL(Per)(M/P).|
+(927) [Χορός:] Myriaden der|Männer, sind|zugrunde|gegangen.|
+(928) [Χορός:] αἰLαῖL(ij) |αἰLαῖL(ij) |κεδLνᾶςL(Adj)(G) |ἀλLκᾶςL(G).|
+(928) [Χορός:] ai|ai ai|ai tüchtiger Kraft.|
+(929) [Χορός:] ἈLσίiαi(N) |δὲL(Pt) χθώνL(N), |βαiσιiλεῦL(V) |γαίLαςL(G),|
+(929) [Χορός:] Asien aber Erde, o|König der|Erde,|
+(930) [Χορός:] αἰLνῶςL(Adv) |αἰLνῶςL(Adv)|
+(930) [Χορός:] schrecklich schrecklich|
+(931) [Χορός:] ἐiπὶi(Prp) γόiνυi(A) κέiκλιiταιL(Per)(M/P).|
+(931) [Χορός:] auf Knie hat|sich|gebeugt.|
+== Strophe 1 ==
+(932) [Ξέρξης:] ὅδiʼ(Pr)(N) ἐiγώL(Pr)(N), |οἰLοῖL(ij), |αἰLαL|κτὸςL(Adj)(N)|
+(932) [Ξέρξης:] dieser ich, oi|oi, beklagenswert|
+(933) [Ξέρξης:] μέiλεiοςL(Adj)(N) |γένLνᾳL(D) |γᾷL(D) τεi(Pt) παi|τρῴLᾳL(Adj)(D)|
+(933) [Ξέρξης:] elend dem|Geschlecht der|Erde und väterlichen|
+(934) [Ξέρξης:] καiκὸνi(Adj)(N) ἄρiʼ(Pt) ἐiγεiνόiμανL(Aor)(Med).|
+(934) [Ξέρξης:] Übel also wurde|ich.|
+(935) [Χορός:] πρόLσφθογL|γόνL(Adj)(A) σοιL(Pr)(D) |νόLστουL(G) |τὰνL(Art)(A)|
+(935) [Χορός:] vorsingende dir der|Heimkehr die|
+(936) [Χορός:] καiκοiφάiτιiδαi(Adj)(A) βοiάνL(A),|
+(936) [Χορός:] unheil|kundige Stimme,|
+(937) [Χορός:] καiκοiμέiλεiτονi(Adj)(A) ἰiὰνL(A)|
+(937) [Χορός:] schlecht|melodierten Ruf|
+(938) [Χορός:] ΜαiριiανL|δυLνοῦL(Adj)(G) |θρηLνηL|τῆLροςL(G)|
+(938) [Χορός:] des|Mariandyners des|Klage|sängers|
+(939) [Χορός:] πέμLψωL(Fu)(Akt) |πέμLψωL(Fu)(Akt),|
+(939) [Χορός:] senden|werde|ich senden|werde|ich,|
+(940) [Χορός:] ποiλύiδαLκρυνL(Adj)(A).|
+(940) [Χορός:] viel|tränen|reichen.|
+== Antistrophe 1 ==
+(941) [Ξέρξης:] ἵiετiʼ(Prä)(Akt)(Imv) αἰL|αLνῆL(Adj)(A) |πάνLδυρL|τονL(Adj)(A)|
+(941) [Ξέρξης:] sendet klage|volle ganz|trauernde|
+(942) [Ξέρξης:] δύLσθροiονi(Adj)(A) |αὐLδάνL(A). |δαίLμωνL(N) |γὰρi(Pt) ὅδiʼ(Pr)(N) αὖL(Adv)|
+(942) [Ξέρξης:] schwer|tönende Stimme. Daimon denn dieser wiederum|
+(943) [Ξέρξης:] μεiτάiτροiποςi(Adj)(N) ἐπiʼ(Prp) ἐiμοίL(Pr)(D).|
+(943) [Ξέρξης:] wechsel|sinnig gegen mich.|
+(944) [Χορός:] ἥLσωL(Fu)(Akt) |τοιL(Pt) τὰνL(Art)(A) |πάνLδυρL|τονL(Adj)(A),|
+(944) [Χορός:] ich|werde|senden gewiss die ganz|trauernde,|
+(945) [Χορός:] σὰi(Adj)(A) πάiθηL(A) |τεi(Pt) σέiβωνL(Prä)(Akt)(N)|
+(945) [Χορός:] deine Leiden auch ehrend|
+(946) [Χορός:] ἁiλίiτυiπάi(A) τεi(Pt) βάiρηL(A),|
+(946) [Χορός:] meer|ge|schlagene auch Lasten,|
+(947) [Χορός:] πόiλεiωςL(G) |γένLναςL(A) |πενLθηL|τῆLροςL(Adj)(G)·|
+(947) [Χορός:] der|Stadt Spross trauer|nden·|
+(948) [Χορός:] κλάγLξωL(Fu)(Akt) |δʼ(Pt) αὖL(Adv) γόiονi(A)|
+(948) [Χορός:] ich|werde|erheben aber wiederum Klage|
+(949) [Χορός:] ἀiρίiδαLκρυνL(Adj)(A).|
+(949) [Χορός:] sehr|tränen|reiche.|
+== Strophe 2 ==
+(950) [Ξέρξης:] ἸiάiνωνL(G) γὰρi(Pt) ἀiπηύLραL(Aor)(Akt),|
+(950) [Ξέρξης:] der|Ionier denn beraubte|ich,|
+(951) [Ξέρξης:] ἸiάiνωνL(G) ναύLφραLκτοςi(Adj)(N) ἌLρηςL(N) ἑiτεiραλLκὴςL(Adj)(N)|
+(951) [Ξέρξης:] der|Ionier schiff|ge|panzert|er Ares gegen|stark|er|
+(953) [Ξέρξης:] νυiχίiανL(Adj)(A) πλάiκαi(A) κερLσάiμεiνοςL(AorS)(Med)(N)|
+(953) [Ξέρξης:] nächtliche Fläche durch|quert|habend|
+(954) [Ξέρξης:] δυσLδαίLμοiνάi(Adj)(A) τʼ(Pt) ἀLκτάνL(A).|
+(954) [Ξέρξης:] un|glück|liche auch Küste.|
+(955) [Χορός:] οἰLοιiοῖL(ij) βόiαL(Prä)(Akt)(Imv) καὶL(Kon) πάντLʼ(Pr)(A) ἐκLπεύLθουL(Prä)(M/P)(Imv). —|
+(955) [Χορός:] oi|oi rufe und alles erforsche. —|
+(956) [Χορός:] ποῦL(Adv) δὲi(Pt) φίiλωνL(Adj)(G) ἄλLλοςi(Adj)(N) ὄiχλοςL(N),|
+(956) [Χορός:] wo aber der|Freunde anderer Haufe,|
+(957) [Χορός:] ποῦL(Adv) δέi(Pt) σοιL(Pr)(D) παiραLστάiταιL(Prä)(M/P),|
+(957) [Χορός:] wo aber dir Beisteher,|
+(958) [Χορός:] οἷLοςi(Pr)(N) ἦνL(Imp)(Akt) ΦαiρανLδάiκηςL(N),|
+(958) [Χορός:] welcher war Pharandakes,|
+(959) [Χορός:] ΣούLσαςL(N), |ΠεiλάiγωνL(N), |καὶL(Kon) ΔαL|τάLμαςL(N),|
+(959) [Χορός:] Susa, Pelagon, und Datamas,|
+(960) [Χορός:] ἠLδὲL(Kon) |ΨάμLμιςL(N), |ΣουLσιL|σκάLνης(N) τLʼ(Pt)|
+(960) [Χορός:] und Psammis, Sousiskanes auch|
+(961) [Χορός:] ἈγLβάiταi|ναi(A) λιiπώνL(AorS)(Akt)(N);|
+(961) [Χορός:] Agbatana verlassend;|
+== Antistrophe 2 ==
+(962) [Ξέρξης:] ὀiλοiοὺςL(Adj)(A) ἀiπέiλειLπονL(Imp)(Akt)|
+(962) [Ξέρξης:] verderbliche ließ|ich|zurück|
+(963) [Ξέρξης:] ΤυiρίiαςL(Adj)(A) ἐκL(Prp) ναLὸςi(G) ἔρLρονLταςi(Prä)(Akt)(A) ἐπiʼ(Prp) ἀLκταῖςL(D)|
+(963) [Ξέρξης:] tyri|ische aus des|Schiffes eilend auf Küsten|
+(965) [Ξέρξης:] ΣαiλαiμιLνιiάiσιL(Adj)(D) στυiφεiλοῦL(Adj)(G)|
+(965) [Ξέρξης:] salaminischen rauen|
+(966) [Ξέρξης:] θείLνονLταςi(Prä)(Akt)(A) ἐπiʼ(Prp) ἀLκτᾶςL(A).|
+(966) [Ξέρξης:] schlagend auf Küsten.|
+(967) [Χορός:] οἰLοιLοῖL(ij), βόiαL ποῦL(Adv) σοιL(Pr)(D) ΦαρLνοῦLχοςL(N)|
+(967) [Χορός:] oi|oi, rufe· wo dir Pharnuchos|
+(968) [Χορός:] ἈLριiόiμαρLδόςL(N) τʼ(Pt) ἀiγαiθόςL(Adj)(N),|
+(968) [Χορός:] Ariomardos auch edel,|
+(969) [Χορός:] ποῦL(Adv) δὲi(Pt) ΣευLάλLκηςL(N) ἄiναξL(N),|
+(969) [Χορός:] wo aber Seualkes Herr,|
+(970) [Χορός:] ἢL(Kon) ΛίiλαιLοςi(N) εὐLπάiτωρL(Adj)(N),|
+(970) [Χορός:] oder Lilaios edel|geboren,|
+(971) [Χορός:] ΜέμLφιςL(N), |ΘάiρυiβιςL(N), |καὶL(Kon) ΜαL|σίLστραςL(N),|
+(971) [Χορός:] Memphis, Tharybis, und Masistras,|
+(972) [Χορός:] ἈρLτεμL|βάLρηςL(N) |τʼ(Pt) ἠδLʼ(Kon) ὙL|σταίχLμαςL(N);|
+(972) [Χορός:] Artembares auch und Hystaichmas;|
+(973) [Χορός:] τάiδεi(Pr)(N) σʼ(Pr)(A) ἐiπαiνεiρόiμανL(Prä)(Akt).|
+(973) [Χορός:] dieses dich frage|ich|wieder.|
+== Strophe 3 ==
+(974) [Ξέρξης:] ἰiὼL(ij) ἰiώL(ij) μοιL(Pr)(D)|
+(974) [Ξέρξης:] io io mir|
+(975) [Ξέρξης:] τὰςL(Art)(A) ὠL|γυiγίiουςL(Adj)(A) |καiτιiδόνL|τεςL(AorS)(Akt)(N)|
+(975) [Ξέρξης:] die ur|alten angeschaut|habend|
+(976) [Ξέρξης:] στυLγνὰςL(Adj)(A) ἈiθάLναςL(A) πάνLτεςr(Adj)(N) ἑrνὶr(Adj)(D) πιrτύiλῳL(D),|
+(976) [Ξέρξης:] finstere Athens alle in|einem Fichten|baum,|
+(977) [Ξέρξης:] ἐiὴL(ij) ἐiήL(ij), τλάLμοiνεςi(Adj)(N) ἀLσπαίLρουLσιi(Prä)(Akt) χέρLσῳL(D).|
+(977) [Ξέρξης:] e|ē e|ē, Erleidende zucken auf|dem|Lande.|
+(978) [Χορός:] ἦL(Pt) καὶL(Kon) |ΠερLσᾶνL(G) |τὸνi(Art)(A) ἄiωL|τονL(A)|
+(978) [Χορός:] wahrlich auch der|Perser den edelsten|
+(979) [Χορός:] τὸνL(Art)(A) σὸνL(Adj)(A) |πιLστὸνL(Adj)(A) |πάντLʼ(Adj)(A) ὀL|φθαλLμὸνL(A)|
+(979) [Χορός:] den deinen treuen ganzen Blick|
+(980) [Χορός:] μυLρίiαi(Adj)(N) |μυLρίiαi(Adj)(N) |πεμLπαL|στὰνL(Adj)(A)|
+(980) [Χορός:] un|zählige un|zählige bestreuten|
+(981) [Χορός:] ΒαiταiνώL|χουL(G) παῖδLʼ(A) |ἌλLπιL|στονL(N)|
+(981) [Χορός:] des|Batanuchos Sohn Alpistos|
+(981b) Χορός: [Zeile Lost]
+(982) [Χορός:] τοῦL(Art)(G) ΣηL|σάiμαi(G) τοῦL(Art)(G) |ΜεiγαiβάL|ταL(G),|
+(982) [Χορός:] des Sesamas des Megabata,|
+(983) [Χορός:] ΠάρLθονL(A) |τεi(Pt) μέiγανL(Adj)(A) |τʼ(Pt) ΟἰLβάL|ρηνL(A)|
+(983) [Χορός:] Parthon auch großen auch Oibares|
+(984) [Χορός:] ἔiλιrπεςr(Aor)(Akt) ἔiλιrπεςr(Aor)(Akt); ὢL(ij) ὢL(ij) δαLίiωνL(Adj)(N).|
+(984) [Χορός:] ließest|du|zurück ließest|du|zurück; o o brennend.|
+(986) [Χορός:] ΠέρLσαιςL(D) ἀiγαυLοῖςL(Adj)(D) καiκὰr(Adj)(A) πρόrκαrκαr(Adj)(A) λέiγειςL(Prä)(Akt).|
+(986) [Χορός:] den|Persern stolzen Übel vor|Übel sagst|du.|
+== Antistrophe 3 ==
+(988) [Ξέρξης:] ἴiυγLγὰi(A) μοιL(Pr)(D) δῆτLʼ(Pt)|
+(988) [Ξέρξης:] Zauber|kreisel mir ja|
+(989) [Ξέρξης:] ἀiγαiθῶνL(Adj)(G) |ἑiτάiρωνL(G) |ἀiναiκιL|νεῖςL(Prä)(Akt)|
+(989) [Ξέρξης:] der|guten Gefährten wieder|auf|rührst|du|
+(990) [Ξέρξης:] ἄiλαστL(Adj)(A) ἄiλαLσταL(Adj)(A) στυLγνὰr(Adj)(A) πρόrκαrκαr(Adj)(A) λέiγωνL(Prä)(Akt)(N).|
+(990) [Ξέρξης:] un|vergessliche un|vergessliche grimmige vor|Übel sagend.|
+(991) [Ξέρξης:] βοiᾷL(Prä)(Akt) βοiᾷL(Prä)(Akt) μοιL(Pr)(D) μεiλέiωνL(G) ἔνLτοLσθενi(Adv) ἦLτορL(N).|
+(991) [Ξέρξης:] schreit schreit mir der|Glieder innen Herz.|
+(992) [Χορός:] καὶL(Kon) μὴνL(Pt) |ἄλLλουςL(Adj)(A) |γεi(Pt) ποiθοῦL|μενL(Prä)(Akt),|
+(992) [Χορός:] und wahrlich andere doch sehnen|wir|uns,|
+(993) [Χορός:] ΜάρLδωνL(A) |ἀνLδρῶνL(G) |μυLριiοi|ταLγὸνL(Adj)(A)|
+(993) [Χορός:] Mardon der|Männer zehn|tausend|führer|
+(994) [Χορός:] ΞάνLθινi(A) ἄi|ρειLόνL(Adj)(A)(Kmp) |τʼ(Pt) ἈγLχάL|ρηνL(A),|
+(994) [Χορός:] Xanthin tapferer und Ancharen,|
+(995) [Χορός:] ΔίLαιL|ξίνL(A) τʼ(Pt) ἠδLʼ(Kon) |ἈρLσάL|κηνL(A)|
+(995) [Χορός:] Diaxin und und Arsaken|
+(996) [Χορός:] ἱπLπιiάi|ναLκταςL(A),|
+(996) [Χορός:] Pferde|herrscher,|
+(997) [Χορός:] ΚηγLδαiδάi|τανL(A) καὶL(Kon) |ΛυLθίL|μνανL(A)|
+(997) [Χορός:] Kegdadata und Lythimna|
+(998) [Χορός:] ΤόλLμονL(A) |τʼ(Pt) αἰχLμᾶςL(G) |ἀiκόiρεL|στονL(Adj)(A).|
+(998) [Χορός:] Kühnheit und der|Lanze unersättliche.|
+(999) [Χορός:] ἔiταrφονr(Aor)(Pas) ἔiταrφονr(Aor)(Pas), οὐκL(Pt) ἀμLφὶL(Prp) σκηLναῖςL(D)|
+(999) [Χορός:] begraben begraben, nicht um Zelten|
+(1001) [Χορός:] τροiχηLλάiτοιLσινi(Adj)(D) ὄiπιrθενr(Adv) ἑrποrμέiνουςL(Prä)(M/P)(A).|
+(1001) [Χορός:] rad|gezogenen hinten folgend|seiend.|
+== Strophe 4 ==
+(1002) [Ξέρξης:] βεiβᾶLσιi(Per)(Akt) γὰρL(Pt) τοίLπερi(Pt) ἀLγρέiταιL(N) στραiτοῦL(G).|
+(1002) [Ξέρξης:] sind|gegangen denn eben Jäger des|Heeres.|
+(1003) [Χορός:] βεiβᾶLσινi(Per)(Akt), οἴL(ij), νώLνυiμοιL(Adj)(N).|
+(1003) [Χορός:] sind|gegangen, o|weh, namenlos.|
+(1004) [Ξέρξης:] ἰiὴL(ij) |ἰiήL(ij), |ἰiὼL(ij) |ἰiώL(ij).|
+(1004) [Ξέρξης:] ie ie, io io.|
+(1005) [Χορός:] ἰiὼL(ij) ἰiώL(ij), δαίLμοiνεςL(V),|
+(1005) [Χορός:] io io, Dämonen,|
+(1006) [Χορός:] ἔiθεντLʼ(Aor)(Akt) ἄiελLπτονL(Adj)(A) καiκὸνL(Adj)(A)|
+(1006) [Χορός:] setzten unerwartetes Übel|
+(1007) [Χορός:] διαLπρέiπονi(Prä)(Akt)(N), οἷLονL(Pr)(A) δέiδορLκενi(Per)(Akt) ἌLταL(N).|
+(1007) [Χορός:] heraus|ragend, welches hat|gesehen Áta.|
+== Antistrophe 4 ==
+(1008) [Ξέρξης:] πεiπλήγLμεθiʼ(Per)(M/P) οἵLᾳL(Pr)(D) διiʼ(Prp) αἰLῶLνοςL(G) τύiχᾳL(D)·|
+(1008) [Ξέρξης:] sind|geschlagen|wir welcher durch Lebens|zeit Schicksal·|
+(1009) [Χορός:] πεiπλήγLμεθiʼ(Per)(M/P)· εὔLδηLλαi(Adj)(N) γάρL(Pt)·|
+(1009) [Χορός:] sind|geschlagen|wir· klar denn·|
+(1010) [Ξέρξης:] νέiᾳL(Adj)(D) |νέiᾳL(Adj)(D) |δύiᾳL(D) |δύiᾳL(D).|
+(1010) [Ξέρξης:] neuem neuem Leid Leid.|
+(1011) [Χορός:] ἸiαLόiνωνL(G) ναυLβαiτᾶνL(G)|
+(1011) [Χορός:] der|Ionier der|Schiffsfahrer|
+(1012) [Χορός:] κύρLσανLτεςi(AorS)(Akt)(N) οὐκL(Pt) εὐLτυiχῶςL(Adv)|
+(1012) [Χορός:] getroffen|habend nicht glücklich|weise|
+(1013) [Χορός:] δυLσπόiλεiμονL(Adj)(A) δὴL(Pt) γέiνοςL(A) τὸi(Art)(N) ΠερLσᾶνL(Adj)(G).|
+(1013) [Χορός:] schwer|kriegerisches ja Geschlecht das der|Perser.|
+== Strophe 5 ==
+(1014) [Ξέρξης:] πῶςL(Adv) δʼ(Pt) οὔL(Pt); στραiτὸνL(A) μὲνL(Pt) τοiσοῦLτονL(Adj)(A) τάiλαςL(Adj)(N) πέiπληγLμαιL(Per)(M/P).|
+(1014) [Ξέρξης:] wie aber nicht; Heer zwar so|groß elender bin|geschlagen|ich.|
+(1016) [Χορός:] τίi(Pr)(N) δʼ(Pt) οὔκL(Pt); ὄiλωLλενL(Per)(Akt) μεiγάiλωςL(Adv) τὰi(Art)(N) ΠερLσᾶνL(Adj)(G).|
+(1016) [Χορός:] was aber nicht; ist|zugrunde|gegangen sehr die der|Perser.|
+(1017) [Ξέρξης:] ὁiρᾷςL(Prä)(Akt) τὸi(Art)(N) λοιLπὸνL(Adj)(N) τόiδεi(Pr)(N) τᾶςL(Art)(G) ἐiμᾶςL(Adj)(G) στοiλᾶςL(G);|
+(1017) [Ξέρξης:] siehst|du das übrig dieses der meiner Kleidung;|
+(1018) [Χορός:] ὁiρῶL(Prä)(Akt) ὁiρῶL(Prä)(Akt).|
+(1018) [Χορός:] ich|sehe ich|sehe.|
+(1020) [Ξέρξης:] τόνLδεi(Art)(A) τʼ(Pt) ὀiιLστοiδέγLμοiναL(A)—|
+(1020) [Ξέρξης:] diesen und Pfeil|behälter—|
+(1021) [Χορός:] τίi(Pr)(N) τόrδεr(Pr)(N) |λέiγειςL(Prä)(Akt) |σεiσωL|σμέiνονL(Per)(M/P)(A);|
+(1021) [Χορός:] was dieses sagst|du gerettet;|
+(1022) [Ξέρξης:] θηLσαυLρὸνL(A) βεiλέiεσLσινL(D);|
+(1022) [Ξέρξης:] Schatz den|Geschossen;|
+(1023) [Χορός:] βαιLάi(Adv) γʼ(Pt) ὡςL(Kon) ἀiπὸi(Prp) πολLλῶνL(Adj)(G).|
+(1023) [Χορός:] wenig doch wie von vielen.|
+(1024) [Ξέρξης:] ἐLσπαiνίLσμεθiʼ(Per)(M/P) ἀiρωLγῶνL(G).|
+(1024) [Ξέρξης:] sind|entbehrend|wir der|Hilfen.|
+(1025) [Χορός:] ἸiάLνωνL(G) λαLὸςi(N) οὐL(Pt) φυiγαίχLμαςL(Adj)(N).|
+(1025) [Χορός:] der|Ionier Volk nicht speer|flüchtig.|
+== Antistrophe 5 ==
+(1026) [Ξέρξης:] ἀiγαLνόiρειLοςL(Adj)(N)· καiτεῖLδονL(AorS)(Akt) δὲi(Pt) πῆμLʼ(A) ἄiελLπτονL(Adj)(A).|
+(1026) [Ξέρξης:] edel|mütig· ich|sah aber Leid unerwartetes.|
+(1028) [Χορός:] τραiπένLταi(AorS)(Pas)(A) ναύLφραLκτονi(Adj)(A) ἐiρεῖςL(Fu)(Akt) ὅiμιLλονi(A);|
+(1028) [Χορός:] gewendet|worden|seiend schiff|gepanzerten wirst|sagen|du Haufen;|
+(1030) [Ξέρξης:] πέiπλονL(A) δʼ(Pt) ἐiπέρLρηξLʼ(AorS)(Akt) ἐiπὶi(Prp) συμLφοiρᾷL(D) καiκοῦL(Adj)(G).|
+(1030) [Ξέρξης:] Gewand aber zer|riss|ich wegen Unglück des|Übels.|
+(1031) [Χορός:] παiπαῖL(ij) παiπαῖL(ij).|
+(1031) [Χορός:] papai papai.|
+(1032) [Ξέρξης:] καὶL(Kon) πλέiονi(Adv)(Kmp) ἢL(Kon) παiπαῖL(ij) μὲνi(Pt) οὖνL(Pt).|
+(1032) [Ξέρξης:] und mehr als papai zwar nun.|
+(1033) [Χορός:] δίiδυrμαr(Adj)(N) |γάρi(Pt) ἐL|στιi(Prä)(Akt) καὶL(Kon) |τριiπλᾶL(Adj)(N)—|
+(1033) [Χορός:] zweifach denn ist und dreifach—|
+(1034) [Ξέρξης:] λυLπράi(Adj)(N), χάρLμαiταi(N) δʼ(Pt) ἐχLθροῖςL(Adj)(D).|
+(1034) [Ξέρξης:] trauer|volle, Freuden aber den|Feinden.|
+(1035) [Χορός:] καὶL(Kon) σθέiνοςL(N) γʼ(Pt) ἐiκοiλούLσθηL(Aor)(Pas)—|
+(1035) [Χορός:] und Kraft doch folgte—|
+(1036) [Ξέρξης:] γυLμνόςi(Adj)(N) εἰLμιi(Prä)(Akt) προiπομLπῶνL(G).|
+(1036) [Ξέρξης:] nackt bin der|Begleiter.|
+(1037) [Χορός:] φίiλωνL(Adj)(G) ἄLταιLσιi(D) πονLτίiαιLσινi(Adj)(D)·|
+(1037) [Χορός:] der|Freunde Unheilen meerischen·|
+== Strophe 6 ==
+(1038) [Ξέρξης:] δίiαιL|νεr(Prä)(Imv)(Akt) δίrαιL|νεi(Prä)(Imv)(Akt) πῆL|μαi(A)· πρὸςL(Prp) |δόiμουςL(A) |δʼ(Pt) ἴiθιL(Prä)(Imv)(Akt).|
+(1038) [Ξέρξης:] tröste tröste Leid· zu Häusern aber gehe.|
+(1039) [Χορός:] αἰLαῖi(ij) αἰL|αῖL(ij), δύiαL(N) |δύiαL(N).|
+(1039) [Χορός:] ai|ai ai|ai, Not Not.|
+(1040) [Ξέρξης:] βόiαL(Prä)(Imv)(Akt) |νυνi(Adv) ἀνL|τίiδουL|πάi(Adj)(A) μοιL(Pr)(D).|
+(1040) [Ξέρξης:] rufe nun gegen|rufende mir.|
+(1041) [Χορός:] δόiσινL(A) |καiκὰνL(Adj)(A) |καiκῶνL(Adj)(G) |καiκοῖςL(Adj)(D).|
+(1041) [Χορός:] Gabe schlechte der|Übel den|Schlechten.|
+(1042) [Ξέρξης:] ἴiυL|ζεi(Prä)(Imv)(Akt) μέrλοςr(A) |ὁiμοῦL(Adv) |τιiθείςL(Prä)(Akt)(N).|
+(1042) [Ξέρξης:] jauchze Lied zugleich setzend.|
+(1043) [Χορός:] ὀiτοrτοrτοiτοῖL(ij).|
+(1043) [Χορός:] ototototoi.|
+(1044) [Χορός:] βαiρεῖL|άi(Adj)(N) γʼ(Pt) ἅL|δεi(Pr)(N) συμL|φοiράL(N).|
+(1044) [Χορός:] schwere doch diese Unglück.|
+(1045) [Χορός:] οἲL(ij) μάiλαi(Adv) καὶL(Kon) τόδiʼ(Pr)(A) ἀλLγῶL(Prä)(Akt).|
+(1045) [Χορός:] oi sehr und dieses schmerze|ich.|
+== Antistrophe 6 ==
+(1046) [Ξέρξης:] ἔiρεσσLʼ(Prä)(Imv)(Akt) |ἔiρεσL|σεi(Prä)(Imv)(Akt) καὶL(Kon) |στέiναζLʼ(Prä)(Imv)(Akt) |ἐiμὴνL(Adj)(A) |χάiρινL(A).|
+(1046) [Ξέρξης:] rudere rudere und stöhne meinen Gefallen|zuliebe.|
+(1047) [Χορός:] διiαίL|νοiμαιL(Prä)(M/P) |γοiεδL|νὸςi(Adj)(N) ὤνL(Prä)(Akt)(N).|
+(1047) [Χορός:] ich|tröste|mich klagend seiend.|
+(1048) [Ξέρξης:] βόiαL(Prä)(Imv)(Akt) |νυνi(Adv) ἀνL|τίiδουL|πάi(Adj)(A) μοιL(Pr)(D).|
+(1048) [Ξέρξης:] rufe nun gegen|rufende mir.|
+(1049) [Χορός:] μέiλεινL(Prä)(Inf)(Akt) |πάiρεL|στιi(Prä)(Akt), δέL|σποiταL(V).|
+(1049) [Χορός:] sich|kümmern ist|da, Herr.|
+(1050) [Ξέρξης:] ἐiπορL|θίiαL|ζέi(Prä)(Imv)(Akt) νυνL(Adv) |γόiοιςL(D).|
+(1050) [Ξέρξης:] treib|auf nun mit|Klagen.|
+(1051) [Χορός:] ὀiτοrτοrτοiτοῖL(ij).|
+(1051) [Χορός:] ototototoi.|
+(1052) [Χορός:] μέiλαιL|ναi(Adj)(N) δʼ(Pt) ἀμL|μεiμείL|ξεiταιL(Fu)(M/P),|
+(1052) [Χορός:] schwarze aber wird|sich|mischen,|
+(1053) [Χορός:] οἴL(ij), στοiνόiεσLσαi(Adj)(N) πλαLγάL(N).|
+(1053) [Χορός:] oi, stöhnende Schlag.|
+== Strophe 7 ==
+(1054) [Ξέρξης:] καὶL(Kon) στέρνLʼ(A) |ἄiρασL|σεi(Prä)(Imv)(Akt) κἀL|πιrβόrαL(Kon)(Prä)(Imv)(Akt) |τὸi(Art)(A) ΜύL|σιiονL(Adj)(A).|
+(1054) [Ξέρξης:] und Brust schlage und|rufe das Mysische.|
+(1055) [Χορός:] ἄiνιrʼ(N) ἄrνιiαL(N).|
+(1055) [Χορός:] Kümmernisse Kümmernisse.|
+(1056) [Ξέρξης:] καίL(Kon) μοιL(Pr)(D) |γεiνείL|ουL(G) πέρL|θεi(Prä)(Imv)(Akt) λευL|κήLρηL(Adj)(A) |τρίiχαL(A).|
+(1056) [Ξέρξης:] und mir des|Bartes reiße weiß|haarige Haar.|
+(1057) [Χορός:] ἄiπριγδLʼ(Adv) ἄLπριγLδαi(Adv) μάrλαr(Adv) γοiεδLνάL(Adj)(N).|
+(1057) [Χορός:] laut laut sehr jämmerliche.|
+(1058) [Χορός:] καὶL(Kon) τάδiʼ(Pr)(A) ἔρLξωL(Fu)(Akt).|
+(1058) [Χορός:] und dies werde|ich|tun.|
+== Antistrophe 7 ==
+(1060) [Ξέρξης:] πέiπλονL(A) |δʼ(Pt) ἔiρειL|κεi(AorS)(Akt) κολL|πίiανL(Adj)(A) |ἀκLμῇL(D) |χεiρῶνL(G).|
+(1060) [Ξέρξης:] Gewand aber zerriss busen|seitig mit|Spitze der|Hände.|
+(1061) [Χορός:] ἄiνιrʼ(N) ἄrνιiαL(N).|
+(1061) [Χορός:] Kümmernisse Kümmernisse.|
+(1062) [Ξέρξης:] καὶL(Kon) ψάλλLʼ(Prä)(Imv)(Akt) |ἔiθειL|ρανL(A) καὶL(Kon) |καiτοίL|κτιiσαιL(Aor)(M/P)(Imv) |στραiτόνL(A).|
+(1062) [Ξέρξης:] und zupfe Haar und beklage Heer.|
+(1063) [Χορός:] ἄiπριγδLʼ(Adv) ἄLπριγLδαi(Adv) μάrλαr(Adv) γοiεδLνάL(Adj)(N).|
+(1063) [Χορός:] laut laut sehr jämmerliche.|
+(1064) [Χορός:] τέγLγοiμαίL(Prä)(M/P) τοιL(Pt).|
+(1064) [Χορός:] ich|benetze|mich ja.|
+== Epode 1 ==
+(1066) [Ξέρξης:] βόiαL(Prä)(Imv)(Akt) |νυνi(Adv) ἀνL|τίiδουL|πάi(Adj)(A) μοιL(Pr)(D).|
+(1066) [Ξέρξης:] rufe nun gegen|rufende mir.|
+(1067) [Χορός:] οἰLοῖL(ij) οἰLοῖL(ij).|
+(1067) [Χορός:] oioi oioi.|
+(1068) [Ξέρξης:] αἰLαL|κτὸςi(Adj)(N) ἐςL(Prp) |δόiμουςL(A) |κίiεL(Prä)(Imv)(Akt).|
+(1068) [Ξέρξης:] klagend in Häuser geh.|
+(1070) [Χορός:] ἰiὼL(ij) ἰiώL(ij).|
+(1070) [Χορός:] io io.|
+(1071) [Ξέρξης:] ἰiωLὰi(ij) δὴL(Pt) κατiʼ(Prp) ἄLστυL(A).|
+(1071) [Ξέρξης:] ioa ja durch Stadt.|
+(1072) [Χορός:] ἰiωLὰi(ij) δῆLταi(Pt), ναὶL(ij) ναίL(ij).|
+(1072) [Χορός:] ioa eben, ja ja.|
+(1073) [Ξέρξης:] γοiᾶσθLʼ(Prä)(M/P) ἁrβροrβάiταιL(N).|
+(1073) [Ξέρξης:] klagt weich|schreitende.|
+(1074) [Χορός:] ἰiὼL(ij) ἰiώL(ij), ΠερLσὶςi(Adj)(N) αἶLαi(N) δύLσβαiτοςL(Adj)(N).|
+(1074) [Χορός:] io io, persisch Land schwer|gangbar.|
+(1074b) [Ξέρξης:] ἠLὴL(ij) |ἠLὴL(ij) |τριLσκάλL|μοιLσινL(Adj)(D),|
+(1074b) [Ξέρξης:] ēē ēē mit|dreiruderigen,|
+(1075) [Ξέρξης:] ἠLὴL(ij) ἠLήL(ij), βάLριrσινr(D) ὀrλόrμεiνοιL(Aor)(M/P)(N).|
+(1075) [Ξέρξης:] ēē ēē, mit|Báris|Schiffen zugrunde|gehend|seiend.|
+(1076) [Χορός:] πέμLψωL(Fu)(Akt) τοίL(Pt) σεi(Pr)(A) δυLσθρόiοιςL(Adj)(D) γόiοιςL(D).|
+(1076) [Χορός:] ich|werde|senden ja dich miss|tönenden Klagen.|
