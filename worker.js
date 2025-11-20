@@ -426,7 +426,11 @@ function stripDiacritics(str = "") {
 
 function sanitizeReleaseBase(value) {
   if (!value) return "";
-  return value.toString().replace(/[\r\n]/g, "").trim();
+  let cleaned = value.toString().replace(/[\r\n]/g, "").trim();
+  if (cleaned && !cleaned.includes("_birkenbihl")) {
+    cleaned += "_birkenbihl";
+  }
+  return cleaned;
 }
 
 function sanitizePathSegment(segment = "") {

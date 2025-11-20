@@ -691,9 +691,12 @@ html body .pane-head:first-child .btn.primary {
 .tag-group-table th,
 .tag-group-table td {
   border: 1px solid #e5e7eb; /* Ursprüngliche dünne Borders für alle Zellen */
-  padding: 6px 12px;
+  padding: 6px 10px;
   text-align: center; /* Zentriert für alle Zellen */
   background: #ffffff; /* Weiße Hintergrundfarbe */
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.2;
 }
 
 /* Erste Spalte (Modifikation) breiter machen und linksbündig für kleine Tabellen */

@@ -199,7 +199,7 @@ function restoreDraftBase() {
   try {
     const stored = window.localStorage.getItem(getDraftStorageKey());
     if (stored) {
-      state.draftBase = stored;
+      state.draftBase = normalizeReleaseBase(stored);
       state.draftHasResult = false;
       state.draftBuildActive = false;
       state.manualDraftBuildRequired = false;
@@ -559,7 +559,16 @@ function getLocalizedFilenameBase() {
     filename += "_Versmass";
   }
 
+  if (!filename.includes("_birkenbihl")) {
+    filename += "_birkenbihl";
+  }
+
   return filename;
+}
+
+function normalizeReleaseBase(base) {
+  if (!base) return null;
+  return base.includes("_birkenbihl") ? base : `${base}_birkenbihl`;
 }
 
 function buildVariantSuffix(localizedBase) {
@@ -610,7 +619,8 @@ function buildFullReleaseName() {
 }
 
 function buildDraftPdfFilename() {
-  const releaseBase = state.draftBase || buildReleaseBase();
+  const releaseBase =
+    normalizeReleaseBase(state.draftBase) || buildReleaseBase();
   if (!releaseBase) return "error.pdf";
   const name = `${releaseBase}${buildVariantSuffix()}.pdf`;
   console.log("Generated draft filename:", name);
@@ -1046,9 +1056,16 @@ async function performRendering() {
     const data = await res.json();
     if (!data?.ok) throw new Error("Worker-Antwort unvollständig.");
 
+    const releaseBaseFromWorker = normalizeReleaseBase(
+      data.release_base || null
+    );
     const draftBaseFromWorker = (data.filename || "").replace(/\.txt$/, "");
-    if (draftBaseFromWorker) {
-      state.draftBase = draftBaseFromWorker;
+    if (releaseBaseFromWorker) {
+      state.draftBase = releaseBaseFromWorker;
+      state.draftHasResult = false;
+      persistDraftBase();
+    } else if (draftBaseFromWorker) {
+      state.draftBase = normalizeReleaseBase(draftBaseFromWorker);
       state.draftHasResult = false;
       persistDraftBase();
     }
@@ -1993,9 +2010,11 @@ async function loadWorkMeta() {
     if (!state.draftBase) {
       const inferredBase = buildReleaseBase();
       if (inferredBase) {
-        state.draftBase = inferredBase;
+        state.draftBase = normalizeReleaseBase(inferredBase);
         persistDraftBase();
       }
+    } else {
+      state.draftBase = normalizeReleaseBase(state.draftBase);
     }
 
     state.meterSupported = state.workMeta.versmass; // true/false (ob Versmaß-PDFs existieren)
