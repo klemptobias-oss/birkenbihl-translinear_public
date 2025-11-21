@@ -8,38 +8,33 @@ DST_BASE = ROOT / "pdf_drafts" / "poesie_drafts"         # Ausgaben (spiegelbild
 
 RUNNER = ROOT / "poesie_pdf.py"                          # 24 Varianten (Poesie)
 
-def extract_tag_config_from_file(file_path: Path) -> dict:
-    """
-    Extrahiert die TAG_CONFIG aus den ersten Kilobytes der Datei.
-    """
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            snippet = f.read(8192)
-        match = re.search(r'<!-- TAG_CONFIG:(.*?) -->', snippet)
-        if match:
-            json_str = match.group(1)
-            return json.loads(json_str)
-        return {}
-    except Exception as e:
-        print(f"⚠ Fehler beim Extrahieren der Tag-Konfiguration aus {file_path}: {e}")
-        return {}
+META_HEADER_RE = re.compile(
+    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|VERSMASS|METER_MODE):(.*?)\s*-->',
+    re.DOTALL | re.IGNORECASE
+)
 
-def extract_release_base(text: str) -> str:
-    match = re.search(r'<!-- RELEASE_BASE:(.+?) -->', text)
-    if match:
-        return match.group(1).strip()
-    return ""
+def extract_metadata_sections(text: str) -> dict:
+    meta = {}
+    for key, value in META_HEADER_RE.findall(text):
+        meta[key.strip().upper()] = value.strip()
+    return meta
+
+def strip_metadata_comments(text: str) -> str:
+    return META_HEADER_RE.sub('', text)
+
+def normalize_release_base(base: str) -> str:
+    if not base:
+        return ""
+    cleaned = base.strip()
+    if "_birkenbihl" not in cleaned:
+        cleaned += "_birkenbihl"
+    return cleaned
 
 def run_one(input_path: Path) -> None:
     if not input_path.is_file():
         print(f"⚠ Datei fehlt: {input_path} — übersprungen"); return
 
-    # Extrahiere Tag-Konfiguration aus der Datei
-    tag_config = extract_tag_config_from_file(input_path)
-    if tag_config:
-        print(f"✓ Tag-Konfiguration aus Datei extrahiert: {len(tag_config)} Regeln")
-    else:
-        print("⚠ Keine Tag-Konfiguration gefunden, verwende Standard-Konfiguration des Runners")
+    tag_config = None
 
     # Ableitung des relativen Pfads unterhalb von texte_drafts
     try:
@@ -65,8 +60,24 @@ def run_one(input_path: Path) -> None:
     
     # Lese den Text und entferne die Konfigurationszeilen
     text_content = input_path.read_text(encoding="utf-8")
-    release_base = extract_release_base(text_content)
-    clean_text = re.sub(r'<!-- (TAG_CONFIG|RELEASE_BASE):.+? -->\n?', '', text_content)
+    metadata = extract_metadata_sections(text_content)
+    release_base = normalize_release_base(metadata.get("RELEASE_BASE", ""))
+    force_meter = False
+    if metadata.get("VERSMASS", "").lower() == "true":
+        force_meter = True
+    if metadata.get("METER_MODE", "").lower() == "with":
+        force_meter = True
+
+    config_blob = metadata.get("TAG_CONFIG")
+    if config_blob:
+        try:
+            tag_config = json.loads(config_blob)
+            print(f"✓ Tag-Konfiguration gefunden: {len(tag_config.get('tag_colors', {}))} Farben, {len(tag_config.get('hidden_tags', []))} versteckte Tags")
+        except Exception as e:
+            print(f"⚠ Fehler beim Parsen der Tag-Konfiguration: {e}")
+            tag_config = None
+
+    clean_text = strip_metadata_comments(text_content)
     
     # Schreibe bereinigten Text in temporäre Datei
     temp_input = ROOT / f"temp_{input_path.name}"
@@ -85,6 +96,8 @@ def run_one(input_path: Path) -> None:
     try:
         # Führe den Runner mit optionaler Konfiguration aus
         cmd = [sys.executable, str(RUNNER), str(temp_input)]
+        if force_meter:
+            cmd.append("--force-meter")
         if config_file:
             cmd.extend(["--tag-config", str(config_file)])
         

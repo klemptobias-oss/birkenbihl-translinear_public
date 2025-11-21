@@ -168,6 +168,10 @@ const state = {
   },
 };
 
+function needsVersmassRendering() {
+  return Boolean(state.workMeta?.versmass) || state.meter === "with";
+}
+
 function getDraftWorkPath() {
   if (state.workMeta?.path) return state.workMeta.path;
   const segments = [
@@ -178,6 +182,14 @@ function getDraftWorkPath() {
     state.work,
   ].filter(Boolean);
   return segments.join("/");
+}
+
+function buildDraftUploadFilename() {
+  let base = state.workMeta?.filename_base || state.work;
+  if (needsVersmassRendering() && !/_versmaß|_versmass/i.test(base)) {
+    base += "_Versmaß";
+  }
+  return `${base}_birkenbihl_draft.txt`;
 }
 
 function getDraftStorageKey() {
@@ -1000,7 +1012,8 @@ async function performRendering() {
 
   // Erstelle eine Blob-Datei aus dem Editor-Inhalt
   const blob = new Blob([draftText], { type: "text/plain" });
-  const file = new File([blob], `${state.work}_birkenbihl_draft.txt`, {
+  const uploadFilename = buildDraftUploadFilename();
+  const file = new File([blob], uploadFilename, {
     type: "text/plain",
   });
 
@@ -1037,6 +1050,8 @@ async function performRendering() {
   }
   form.append("release_base", releaseBase);
   form.append("translation_target", state.translationTarget);
+  form.append("versmass", needsVersmassRendering() ? "true" : "false");
+  form.append("meter_mode", state.meter === "with" ? "with" : "without");
 
   // Tag-Konfiguration als JSON hinzufügen
   form.append("tag_config", JSON.stringify(payload.tag_config));
@@ -2220,7 +2235,7 @@ async function loadWorkMeta() {
         e.preventDefault();
         const a = document.createElement("a");
         a.href = birkenbihlUrl;
-        a.download = `${filenameBase}_birkenbihl.txt`;
+        a.download = "translinear.txt";
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -2241,7 +2256,7 @@ async function loadWorkMeta() {
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = `${state.work}_birkenbihl_entwurf.txt`;
+        a.download = "translinear_entwurf.txt";
         a.style.display = "none";
         document.body.appendChild(a);
         a.click();
@@ -2256,7 +2271,7 @@ async function loadWorkMeta() {
         const pdfUrl = getCurrentPdfUrl();
         const a = document.createElement("a");
         a.href = pdfUrl;
-        a.download = buildPdfFilename();
+        a.download = "translinear.pdf";
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);

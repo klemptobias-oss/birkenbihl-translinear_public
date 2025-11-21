@@ -21,6 +21,7 @@ Die Sprache wird automatisch aus dem Dateinamen erkannt:
 
 from __future__ import annotations
 from pathlib import Path
+from typing import Optional
 import os, re, itertools, sys
 
 import Poesie_Code as Poesie
@@ -135,7 +136,9 @@ def _get_default_tag_config(language: str) -> dict:
     
     return config
 
-def _process_one_input(infile: str, tag_config: dict = None) -> None:
+def _process_one_input(infile: str,
+                       tag_config: dict = None,
+                       force_meter: Optional[bool] = None) -> None:
     if not os.path.isfile(infile):
         print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
 
@@ -159,7 +162,13 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
     base_lower = base.lower()
     input_has_versmass_tag = "_versmaß" in base_lower or "_versmass" in base_lower
     
-    if input_has_versmass_tag:
+    if force_meter is True:
+        print("  → Versmaß durch Parameter erzwungen.")
+        meters = (True,)
+    elif force_meter is False:
+        print("  → Kein Versmaß (Parameter).")
+        meters = (False,)
+    elif input_has_versmass_tag:
         print("  → _Versmaß-Tag im Dateinamen gefunden, erstelle Versmaß-PDFs.")
         meters = (True,)  # Nur Versmaß-PDFs (meter_on=True)
     else:
@@ -211,7 +220,20 @@ def main():
     parser = argparse.ArgumentParser(description='Poesie PDF Generator')
     parser.add_argument('input_files', nargs='*', help='Input files to process')
     parser.add_argument('--tag-config', help='JSON file with tag configuration')
+    parser.add_argument('--force-meter', action='store_true', help='Versmaß-Ausgabe erzwingen')
+    parser.add_argument('--force-no-meter', action='store_true', help='Versmaß deaktivieren')
     args = parser.parse_args()
+    
+    if args.force_meter and args.force_no_meter:
+        print("⚠ --force-meter und --force-no-meter können nicht gemeinsam verwendet werden.")
+        sys.exit(1)
+
+    if args.force_meter:
+        force_meter_flag: Optional[bool] = True
+    elif args.force_no_meter:
+        force_meter_flag = False
+    else:
+        force_meter_flag = None
     
     # Use input files from arguments, or fallback to default discovery
     inputs = args.input_files if args.input_files else _args_or_default()
@@ -232,7 +254,7 @@ def main():
     for infile in inputs:
         print(f"→ Verarbeite: {infile}")
         try:
-            _process_one_input(infile, tag_config)
+            _process_one_input(infile, tag_config, force_meter=force_meter_flag)
         except Exception as e:
             print(f"✗ Fehler bei {infile}: {e}")
 

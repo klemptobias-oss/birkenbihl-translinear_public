@@ -127,12 +127,20 @@ export default {
         "Cache-Control": "public, max-age=3600",
       });
 
-      // Für echten Download explizit attachment setzen.
-      // Für inline lassen wir Content-Disposition weg, damit der Browser rendert.
-      if (mode === "attachment") {
+      let desiredName = "";
+      if (lowerFile.endsWith(".pdf")) {
+        desiredName = "translinear.pdf";
+      } else if (lowerFile.endsWith(".txt")) {
+        desiredName = "translinear.txt";
+      } else {
+        desiredName = finalFileName;
+      }
+
+      if (desiredName) {
+        const dispositionType = mode === "attachment" ? "attachment" : "inline";
         headers.set(
           "Content-Disposition",
-          `attachment; filename="${finalFileName}"`
+          `${dispositionType}; filename="${desiredName}"`
         );
       }
 
@@ -169,6 +177,8 @@ export default {
     let workPath = "";
     let tagConfig = null;
     let releaseBase = "";
+    let versmassFlag = "";
+    let meterMode = "";
 
     try {
       const ct = (request.headers.get("content-type") || "").toLowerCase();
@@ -185,6 +195,8 @@ export default {
         category = (data.category ?? "").toString().trim();
         workPath = (data.work_path ?? "").toString().trim();
         releaseBase = sanitizeReleaseBase(data.release_base);
+        versmassFlag = (data.versmass ?? "").toString().trim();
+        meterMode = (data.meter_mode ?? "").toString().trim();
       } else if (ct.includes("text/plain")) {
         text = await request.text();
         work = (url.searchParams.get("work") || "").trim();
@@ -195,6 +207,8 @@ export default {
         category = (url.searchParams.get("category") || "").trim();
         workPath = (url.searchParams.get("work_path") || "").trim();
         releaseBase = sanitizeReleaseBase(url.searchParams.get("release_base"));
+        versmassFlag = (url.searchParams.get("versmass") || "").trim();
+        meterMode = (url.searchParams.get("meter_mode") || "").trim();
       } else if (ct.includes("multipart/form-data")) {
         const form = await request.formData();
         if (form.has("text")) {
@@ -214,6 +228,8 @@ export default {
         category = (form.get("category") || "").toString().trim();
         workPath = (form.get("work_path") || "").toString().trim();
         releaseBase = sanitizeReleaseBase(form.get("release_base"));
+        versmassFlag = (form.get("versmass") || "").toString().trim();
+        meterMode = (form.get("meter_mode") || "").toString().trim();
 
         const tagConfigStr = form.get("tag_config");
         if (tagConfigStr) {
@@ -235,6 +251,8 @@ export default {
         category = (data.category ?? "").toString().trim();
         workPath = (data.work_path ?? "").toString().trim();
         releaseBase = sanitizeReleaseBase(data.release_base);
+        versmassFlag = (data.versmass ?? "").toString().trim();
+        meterMode = (data.meter_mode ?? "").toString().trim();
       }
     } catch (e) {
       return resp(
@@ -307,6 +325,12 @@ export default {
     if (tagConfig) {
       metadataHeaders.push(`<!-- TAG_CONFIG:${JSON.stringify(tagConfig)} -->`);
       console.log("Tag-Konfiguration eingebettet:", Object.keys(tagConfig));
+    }
+    if (versmassFlag) {
+      metadataHeaders.push(`<!-- VERSMASS:${versmassFlag} -->`);
+    }
+    if (meterMode) {
+      metadataHeaders.push(`<!-- METER_MODE:${meterMode} -->`);
     }
     if (metadataHeaders.length) {
       textWithConfig = metadataHeaders.join("\n") + "\n" + text;

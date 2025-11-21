@@ -8,39 +8,31 @@ DST_BASE = ROOT / "pdf_drafts" / "prosa_drafts"          # Ausgaben (spiegelbild
 
 RUNNER = ROOT / "prosa_pdf.py"                           # 12 Varianten (Prosa)
 
-def extract_tag_config_from_file(file_path: Path) -> dict:
-    """
-    Extrahiert die TAG_CONFIG aus den ersten Kilobytes der Datei.
-    """
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            snippet = f.read(8192)
-        match = re.search(r'<!-- TAG_CONFIG:(.*?) -->', snippet)
-        if match:
-            json_str = match.group(1)
-            return json.loads(json_str)
-        return {}
-    except Exception as e:
-        print(f"⚠ Fehler beim Extrahieren der Tag-Konfiguration aus {file_path}: {e}")
-        return {}
+META_HEADER_RE = re.compile(
+    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|VERSMASS|METER_MODE):(.*?)\s*-->',
+    re.DOTALL | re.IGNORECASE
+)
 
-def extract_release_base(text: str) -> str:
-    match = re.search(r'<!-- RELEASE_BASE:(.+?) -->', text)
-    if match:
-        return match.group(1).strip()
-    return ""
+def extract_metadata_sections(text: str) -> dict:
+    meta = {}
+    for key, value in META_HEADER_RE.findall(text):
+        meta[key.strip().upper()] = value.strip()
+    return meta
+
+def strip_metadata_comments(text: str) -> str:
+    return META_HEADER_RE.sub('', text)
+
+def normalize_release_base(base: str) -> str:
+    if not base:
+        return ""
+    cleaned = base.strip()
+    if "_birkenbihl" not in cleaned:
+        cleaned += "_birkenbihl"
+    return cleaned
 
 def run_one(input_path: Path, tag_config: dict = None) -> None:
     if not input_path.is_file():
         print(f"⚠ Datei fehlt: {input_path} — übersprungen"); return
-
-    # Extrahiere Tag-Konfiguration aus der Datei, falls keine externe übergeben wurde
-    if tag_config is None:
-        tag_config = extract_tag_config_from_file(input_path)
-        if tag_config:
-            print(f"✓ Tag-Konfiguration aus Datei extrahiert: {len(tag_config)} Regeln")
-        else:
-            print("⚠ Keine Tag-Konfiguration gefunden, verwende Standard-Konfiguration")
 
     # Ermittele den relativen Pfad unterhalb von texte_drafts (inkl. Sprache/Kategorie)
     try:
@@ -64,22 +56,23 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     # Extrahiere den Basisnamen der Eingabedatei (ohne .txt)
     input_stem = input_path.stem
     
-    # Lese den Text und extrahiere Tag-Konfiguration
+    # Lese den Text und extrahiere Metadaten
     text_content = input_path.read_text(encoding="utf-8")
-    tag_config = None
-    release_base = extract_release_base(text_content)
-    
-    # Suche nach Tag-Konfiguration im Text
-    config_match = re.search(r'<!-- TAG_CONFIG:(.+?) -->', text_content)
-    if config_match:
-        try:
-            tag_config = json.loads(config_match.group(1))
-            print(f"✓ Tag-Konfiguration gefunden: {len(tag_config.get('tag_colors', {}))} Farben, {len(tag_config.get('hidden_tags', []))} versteckte Tags")
-        except Exception as e:
-            print(f"⚠ Fehler beim Parsen der Tag-Konfiguration: {e}")
-    
+    metadata = extract_metadata_sections(text_content)
+    release_base = normalize_release_base(metadata.get("RELEASE_BASE", ""))
+
+    if tag_config is None:
+        config_blob = metadata.get("TAG_CONFIG")
+        if config_blob:
+            try:
+                tag_config = json.loads(config_blob)
+                print(f"✓ Tag-Konfiguration gefunden: {len(tag_config.get('tag_colors', {}))} Farben, {len(tag_config.get('hidden_tags', []))} versteckte Tags")
+            except Exception as e:
+                print(f"⚠ Fehler beim Parsen der Tag-Konfiguration: {e}")
+                tag_config = None
+
     # Entferne Metadaten-Kommentare aus dem Text für die Verarbeitung
-    clean_text = re.sub(r'<!-- (TAG_CONFIG|RELEASE_BASE):.+? -->\n?', '', text_content)
+    clean_text = strip_metadata_comments(text_content)
     
     # Schreibe bereinigten Text in temporäre Datei
     temp_input = ROOT / f"temp_{input_path.name}"
@@ -125,8 +118,11 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
 
     # Filtere nur die PDFs, die zu dieser Eingabedatei gehören
     # Berücksichtige sowohl den ursprünglichen Namen als auch den temp_ Namen
-    temp_stem = f"temp_{input_path.name.replace('.txt', '')}"
-    relevant_pdfs = [name for name in new_pdfs if name.startswith(input_stem) or name.startswith(temp_stem)]
+    temp_prefix = f"temp_{input_stem}"
+    relevant_pdfs = [
+        name for name in new_pdfs
+        if name.startswith(input_stem) or name.startswith(temp_prefix)
+    ]
     
     if not relevant_pdfs:
         print(f"⚠ Keine passenden PDFs für {input_stem} gefunden."); return
