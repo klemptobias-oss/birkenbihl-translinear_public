@@ -296,7 +296,7 @@ export default {
     if (!baseName) baseName = stripUnsafe(work) || "Entwurf";
     
     // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
-    baseName = baseName.replace(/_[Vv]ersm[a-zßA-Z_]*/g, "_Versmass");
+    baseName = baseName.replace(/_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g, "_Versmass");
     
     // Entferne "translinear" aus dem baseName, falls vorhanden (wird später wieder hinzugefügt)
     baseName = baseName.replace(/^translinear_?/i, "").replace(/_translinear_?/gi, "_");
@@ -459,7 +459,7 @@ function sanitizeReleaseBase(value) {
   if (!value) return "";
   let cleaned = value.toString().replace(/[\r\n]/g, "").trim();
   // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
-  cleaned = cleaned.replace(/_[Vv]ersm[a-zßA-Z_]*/g, "_Versmass");
+  cleaned = cleaned.replace(/_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g, "_Versmass");
   if (cleaned && !cleaned.includes("_birkenbihl")) {
     cleaned += "_birkenbihl";
   }

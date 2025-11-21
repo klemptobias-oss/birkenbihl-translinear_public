@@ -9,7 +9,7 @@ on:
       - 'build_tragoedie_adapter_drafts.py'
 
 concurrency:
-  group: pages-deploy-${{ github.ref }}
+  group: draft-pdf-build
   cancel-in-progress: false
 
 jobs:
@@ -43,8 +43,50 @@ jobs:
         run: |
           python build_tragoedie_adapter_drafts.py
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+
       - name: Commit DRAFT PDFs
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: 'pdf_drafts/*.pdf'
-          message: 'CI: Tragödie DRAFT PDFs neu gebaut'
+        run: |
+          echo "Comitte PDF-Änderungen..."
+          git add pdf_drafts/
+
+          if git diff --cached --quiet; then
+            echo "Keine PDF-Änderungen zu committen"
+          else
+            git commit -m "CI: Tragödie DRAFT PDFs neu gebaut - $(date '+%Y-%m-%d %H:%M:%S')"
+            echo "PDFs erfolgreich committed"
+            
+            # Push mit Retry-Logik (bis zu 5 Versuche)
+            MAX_RETRIES=5
+            RETRY_COUNT=0
+            PUSH_SUCCESS=false
+            
+            while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+              echo "Push-Versuch $((RETRY_COUNT + 1)) von $MAX_RETRIES..."
+              
+              if git pull --rebase origin main; then
+                if git push origin main; then
+                  echo "✓ PDFs erfolgreich gepusht"
+                  PUSH_SUCCESS=true
+                  break
+                else
+                  echo "⚠ Push fehlgeschlagen, versuche erneut..."
+                  RETRY_COUNT=$((RETRY_COUNT + 1))
+                  sleep 2
+                fi
+              else
+                echo "⚠ Rebase fehlgeschlagen, versuche erneut..."
+                git rebase --abort 2>/dev/null || true
+                RETRY_COUNT=$((RETRY_COUNT + 1))
+                sleep 2
+              fi
+            done
+            
+            if [ "$PUSH_SUCCESS" = false ]; then
+              echo "✗ Push nach $MAX_RETRIES Versuchen fehlgeschlagen"
+              exit 1
+            fi
+          fi

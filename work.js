@@ -568,7 +568,8 @@ function getLocalizedFilenameBase() {
   }
 
   // Normalisiere alle Versmaß-Varianten zu "Versmass" (URL-sicher)
-  filename = filename.replace(/_[Vv]ersm[a-zßA-Z_]*/g, "_Versmass");
+  // Regex: _Versm + (a|ä) + (s|ß){1,2} + optional weitere Buchstaben bis zum nächsten Unterstrich
+  filename = filename.replace(/_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g, "_Versmass");
   
   if (state.meter === "with" && !filename.includes("_Versmass")) {
     filename += "_Versmass";
@@ -584,7 +585,7 @@ function getLocalizedFilenameBase() {
 function normalizeReleaseBase(base) {
   if (!base) return null;
   // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
-  let normalized = base.replace(/_[Vv]ersm[a-zßA-Z_]*/g, "_Versmass");
+  let normalized = base.replace(/_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g, "_Versmass");
   return normalized.includes("_birkenbihl") ? normalized : `${normalized}_birkenbihl`;
 }
 

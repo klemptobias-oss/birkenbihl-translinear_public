@@ -169,11 +169,12 @@ def _process_one_input(infile: str,
     # (z. B. _Versmaß, _Versmass, _Versma__, etc.)
     # WICHTIG: Wir normalisieren immer zu "Versmass" (mit ss) für URL-Sicherheit
     base_lower = base.lower()
-    input_has_versmass_tag = bool(re.search(r"_versm[a-zß_]*", base_lower))
+    input_has_versmass_tag = bool(re.search(r"_versm[aä][sß]{1,2}", base_lower))
     
     # Normalisiere den base-Namen: ersetze alle Versmaß-Varianten durch "Versmass"
+    # Regex: _Versm + (a|ä) + (s|ß){1,2} + optional weitere Buchstaben bis zum nächsten Unterstrich
     if input_has_versmass_tag:
-        base = re.sub(r"_[Vv]ersm[a-zßA-Z_]*", "_Versmass", base, count=1)
+        base = re.sub(r"_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*(?=_|$)", "_Versmass", base)
         print(f"  → Normalisierter Base-Name: {base}")
     
     if force_meter is True:

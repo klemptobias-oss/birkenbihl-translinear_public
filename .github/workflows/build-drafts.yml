@@ -29,7 +29,7 @@ on:
       - "poesie_pdf.py"
 
 concurrency:
-  group: pages-deploy-${{ github.ref }}
+  group: draft-pdf-build
   cancel-in-progress: false
 
 jobs:
@@ -156,7 +156,37 @@ jobs:
             git commit -m "CI: Draft PDFs neu gebaut - $(date '+%Y-%m-%d %H:%M:%S')"
             echo "PDFs erfolgreich committed"
             
-            # Push die Änderungen
-            git push
-            echo "PDFs erfolgreich gepusht"
+            # Push mit Retry-Logik (bis zu 5 Versuche)
+            MAX_RETRIES=5
+            RETRY_COUNT=0
+            PUSH_SUCCESS=false
+            
+            while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+              echo "Push-Versuch $((RETRY_COUNT + 1)) von $MAX_RETRIES..."
+              
+              # Hole neueste Änderungen und rebase
+              if git pull --rebase origin main; then
+                # Versuche zu pushen
+                if git push origin main; then
+                  echo "✓ PDFs erfolgreich gepusht"
+                  PUSH_SUCCESS=true
+                  break
+                else
+                  echo "⚠ Push fehlgeschlagen, versuche erneut..."
+                  RETRY_COUNT=$((RETRY_COUNT + 1))
+                  sleep 2
+                fi
+              else
+                echo "⚠ Rebase fehlgeschlagen, versuche erneut..."
+                # Bei Rebase-Konflikt: abbrechen und neu versuchen
+                git rebase --abort 2>/dev/null || true
+                RETRY_COUNT=$((RETRY_COUNT + 1))
+                sleep 2
+              fi
+            done
+            
+            if [ "$PUSH_SUCCESS" = false ]; then
+              echo "✗ Push nach $MAX_RETRIES Versuchen fehlgeschlagen"
+              exit 1
+            fi
           fi

@@ -679,8 +679,22 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         sup_keep = SUP_TAGS.copy()
         sub_keep = SUB_TAGS.copy()
         
-        # Entferne Tags, die explizit als "hide" markiert sind
+        # Sortiere Regeln: Gruppen-Regeln zuerst, dann spezifische Regeln
+        # Damit spezifische Regeln die Gruppen-Regeln überschreiben können
+        group_rules = []
+        specific_rules = []
+        
         for rule_id, conf in tag_config.items():
+            normalized_rule_id = _normalize_rule_id(rule_id)
+            # Gruppen-Regel = keine Unterstriche nach dem Hauptteil (z.B. "verb", "nomen")
+            # Spezifische Regel = mit Unterstrich (z.B. "verb_Pra", "nomen_N")
+            if '_' in normalized_rule_id and normalized_rule_id.split('_', 1)[1]:
+                specific_rules.append((rule_id, conf))
+            else:
+                group_rules.append((rule_id, conf))
+        
+        # Verarbeite zuerst Gruppen-Regeln, dann spezifische Regeln
+        for rule_id, conf in group_rules + specific_rules:
             normalized_rule_id = _normalize_rule_id(rule_id)
             tags_for_rule = _resolve_tags_for_rule(normalized_rule_id)
 
