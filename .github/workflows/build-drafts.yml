@@ -148,6 +148,9 @@ jobs:
 
           # Füge alle PDF-Änderungen hinzu (neue und gelöschte)
           git add pdf_drafts/
+          
+          # Füge auch alle anderen Änderungen hinzu (z.B. .gitkeep, temp-Dateien)
+          git add -A
 
           # Prüfe ob es Änderungen gibt
           if git diff --cached --quiet; then
@@ -163,6 +166,16 @@ jobs:
             
             while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
               echo "Push-Versuch $((RETRY_COUNT + 1)) von $MAX_RETRIES..."
+              
+              # Stelle sicher, dass keine unstaged changes vorhanden sind
+              if ! git diff --quiet || ! git diff --cached --quiet; then
+                echo "→ Unstaged changes gefunden, füge sie hinzu..."
+                git add -A
+                if ! git diff --cached --quiet; then
+                  git commit --amend --no-edit
+                  echo "→ Änderungen zum vorherigen Commit hinzugefügt"
+                fi
+              fi
               
               # Hole neueste Änderungen und rebase
               if git pull --rebase origin main; then

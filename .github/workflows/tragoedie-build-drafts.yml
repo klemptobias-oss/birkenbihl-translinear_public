@@ -52,6 +52,7 @@ jobs:
         run: |
           echo "Comitte PDF-Änderungen..."
           git add pdf_drafts/
+          git add -A
 
           if git diff --cached --quiet; then
             echo "Keine PDF-Änderungen zu committen"
@@ -66,6 +67,16 @@ jobs:
             
             while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
               echo "Push-Versuch $((RETRY_COUNT + 1)) von $MAX_RETRIES..."
+              
+              # Stelle sicher, dass keine unstaged changes vorhanden sind
+              if ! git diff --quiet || ! git diff --cached --quiet; then
+                echo "→ Unstaged changes gefunden, füge sie hinzu..."
+                git add -A
+                if ! git diff --cached --quiet; then
+                  git commit --amend --no-edit
+                  echo "→ Änderungen zum vorherigen Commit hinzugefügt"
+                fi
+              fi
               
               if git pull --rebase origin main; then
                 if git push origin main; then
