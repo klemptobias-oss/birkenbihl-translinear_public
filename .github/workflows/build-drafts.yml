@@ -28,6 +28,10 @@ on:
       - "prosa_pdf.py"
       - "poesie_pdf.py"
 
+concurrency:
+  group: pages-deploy-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest

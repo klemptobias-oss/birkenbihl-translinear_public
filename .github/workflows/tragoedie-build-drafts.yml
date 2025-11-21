@@ -8,6 +8,10 @@ on:
       - 'tragoedie_pdf.py'
       - 'build_tragoedie_adapter_drafts.py'
 
+concurrency:
+  group: pages-deploy-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -157,10 +157,10 @@ def _process_one_input(infile: str,
     colors    = ("COLOR", "BLACK_WHITE")
     tags      = ("TAGS", "NO_TAGS")
     
-    # Versmaß-Erkennung: Prüfe, ob die Input-Datei "_Versmaß" oder "_versmass" im Namen trägt
-    # (NICHT auf Content-Marker prüfen, nur auf Dateinamen!)
+    # Versmaß-Erkennung: tolerant gegenüber unterschiedlichen Schreibweisen
+    # (z. B. _Versmaß, _Versmass, _Versma__, etc.)
     base_lower = base.lower()
-    input_has_versmass_tag = "_versmaß" in base_lower or "_versmass" in base_lower
+    input_has_versmass_tag = bool(re.search(r"_versm[a-zß_]*", base_lower))
     
     if force_meter is True:
         print("  → Versmaß durch Parameter erzwungen.")

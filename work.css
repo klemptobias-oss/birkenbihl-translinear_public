@@ -702,8 +702,8 @@ html body .pane-head:first-child .btn.primary {
 /* Erste Spalte (Modifikation) breiter machen und linksbündig für kleine Tabellen */
 .tag-group-table th:first-child,
 .tag-group-table td:first-child {
-  width: 20%;
-  min-width: 130px;
+  width: 18%;
+  min-width: 120px;
   white-space: nowrap;
   text-align: left;
 }
@@ -712,12 +712,13 @@ html body .pane-head:first-child .btn.primary {
 .tag-group-table td:nth-child(2),
 .tag-group-table th:nth-child(3),
 .tag-group-table td:nth-child(3) {
-  width: 90px;
+  width: 120px;
+  min-width: 120px;
 }
 
 .tag-group-table th:nth-child(10),
 .tag-group-table td:nth-child(10) {
-  width: 150px;
+  width: 170px;
   white-space: normal;
 }
 

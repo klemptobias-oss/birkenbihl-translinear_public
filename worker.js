@@ -493,7 +493,8 @@ function tsStamp(d = new Date()) {
 
 function stripUnsafe(s = "") {
   if (!s) return "";
-  let cleaned = s.replace(/[^A-Za-z0-9 _.\-]/g, " ").trim();
+  const normalized = typeof s.normalize === "function" ? s.normalize("NFC") : s;
+  let cleaned = normalized.replace(/[^\p{L}\p{N} _.\-]/gu, " ").trim();
   cleaned = cleaned.replace(/\s+/g, "_");
   return cleaned.slice(0, 64) || "";
 }
