@@ -794,8 +794,8 @@ function showPdfPlaceholder(kind, opts = {}) {
 function showDraftWaitingPlaceholder(extra = {}) {
   const filename = extra.filename || state.pendingDraftFilename;
   const url = extra.url || state.lastDraftUrl;
-  // Zeige "translinear.txt" statt des internen Dateinamens
-  const displayFilename = "translinear.txt";
+  // Ersetze "birkenbihl" durch "translinear" im Dateinamen
+  const displayFilename = filename ? filename.replace(/_birkenbihl_/g, "_translinear_").replace(/birkenbihl/g, "translinear") : "translinear.txt";
   const safeFilename = `<code>${escapeHtml(displayFilename)}</code>`;
   const safeUrl = url ? `<code>${escapeHtml(url)}</code>` : "";
   const extraInfo = `
@@ -1107,8 +1107,8 @@ async function performRendering() {
     state.manualDraftBuildRequired = manualRequired;
     state.manualDraftCommand = manualRequired ? manualCommand : null;
 
-    // Zeige "translinear.txt" statt des internen Dateinamens
-    const displayName = "translinear.txt";
+    // Ersetze "birkenbihl" durch "translinear" im Dateinamen
+    const displayName = data.filename.replace(/_birkenbihl_/g, "_translinear_").replace(/birkenbihl/g, "translinear");
     el.draftStatus.textContent = `✓ Text gespeichert: ${displayName}`;
 
     if (buildActive) {

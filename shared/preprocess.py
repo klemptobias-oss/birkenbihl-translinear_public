@@ -83,9 +83,6 @@ RULE_TAG_MAP = {
     'verb': HIERARCHIE['verb'],
     'partizip': HIERARCHIE['partizip'],
     'adjektiv': ['Adj', *HIERARCHIE['adjektiv']],
-TRANSLATION_HIDE_TAG = "HideTrans"
-TRANSLATION_HIDE_GLOBAL = "_global"
-
     'adverb': ['Adv', *HIERARCHIE['adverb']],
     'pronomen': ['Pr', *HIERARCHIE['pronomen']],
     'artikel': ['Art', *HIERARCHIE['artikel']],
@@ -97,6 +94,10 @@ TRANSLATION_HIDE_GLOBAL = "_global"
     'pt': ['Pt'],
     'ij': ['ij'],
 }
+
+# Tag für manuelle Übersetzungs-Ausblendung
+TRANSLATION_HIDE_TAG = "HideTrans"
+TRANSLATION_HIDE_GLOBAL = "_global"
 
 # ======= Konstanten (müssen mit dem Renderer-Stand zusammenpassen) =======
 SUP_TAGS = {'N','D','G','A','V','Du','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','Sup','ij','Abl'}  # NEU: Abl für Latein
