@@ -61,12 +61,18 @@ def run_one(input_path: Path) -> None:
     # Lese den Text und entferne die Konfigurationszeilen
     text_content = input_path.read_text(encoding="utf-8")
     metadata = extract_metadata_sections(text_content)
+    print(f"→ Extrahierte Metadaten: {list(metadata.keys())}")
+    
     release_base = normalize_release_base(metadata.get("RELEASE_BASE", ""))
+    print(f"→ Release Base: {release_base}")
+    
     force_meter = False
     if metadata.get("VERSMASS", "").lower() == "true":
         force_meter = True
+        print(f"→ Versmaß aktiviert (VERSMASS=true)")
     if metadata.get("METER_MODE", "").lower() == "with":
         force_meter = True
+        print(f"→ Versmaß aktiviert (METER_MODE=with)")
 
     config_blob = metadata.get("TAG_CONFIG")
     if config_blob:
@@ -98,16 +104,24 @@ def run_one(input_path: Path) -> None:
         cmd = [sys.executable, str(RUNNER), str(temp_input)]
         if force_meter:
             cmd.append("--force-meter")
+            print(f"→ Kommando enthält --force-meter Flag")
         if config_file:
             cmd.extend(["--tag-config", str(config_file)])
+            print(f"→ Kommando enthält --tag-config: {config_file}")
+        
+        print(f"→ Führe aus: {' '.join(str(c) for c in cmd)}")
         
         # Führe den Runner aus
         result = subprocess.run(cmd, cwd=str(ROOT), check=True, capture_output=True, text=True)
         print(result.stdout)
+        if result.stderr:
+            print(f"→ Stderr: {result.stderr}")
 
     except subprocess.CalledProcessError as e:
-        print(f"Fehler beim Ausführen des Runners für {input_path.name}:")
-        print(e.stderr)
+        print(f"✗ Fehler beim Ausführen des Runners für {input_path.name}:")
+        print(f"✗ Return code: {e.returncode}")
+        print(f"✗ Stdout: {e.stdout}")
+        print(f"✗ Stderr: {e.stderr}")
         return
     finally:
         # Lösche temporäre Dateien

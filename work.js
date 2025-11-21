@@ -794,10 +794,12 @@ function showPdfPlaceholder(kind, opts = {}) {
 function showDraftWaitingPlaceholder(extra = {}) {
   const filename = extra.filename || state.pendingDraftFilename;
   const url = extra.url || state.lastDraftUrl;
-  const safeFilename = filename ? `<code>${escapeHtml(filename)}</code>` : "";
+  // Zeige "translinear.txt" statt des internen Dateinamens
+  const displayFilename = "translinear.txt";
+  const safeFilename = `<code>${escapeHtml(displayFilename)}</code>`;
   const safeUrl = url ? `<code>${escapeHtml(url)}</code>` : "";
   const extraInfo = `
-    ${safeFilename ? `<p>Datei: ${safeFilename}</p>` : ""}
+    <p>Datei: ${safeFilename}</p>
     ${safeUrl ? `<p>Zielpfad: ${safeUrl}</p>` : ""}
     <p>
       <a href="${GH_ACTIONS_URL}" target="_blank" rel="noopener">
@@ -1105,10 +1107,12 @@ async function performRendering() {
     state.manualDraftBuildRequired = manualRequired;
     state.manualDraftCommand = manualRequired ? manualCommand : null;
 
-    el.draftStatus.textContent = `✓ Text gespeichert: ${data.filename}`;
+    // Zeige "translinear.txt" statt des internen Dateinamens
+    const displayName = "translinear.txt";
+    el.draftStatus.textContent = `✓ Text gespeichert: ${displayName}`;
 
     if (buildActive) {
-      el.draftStatus.textContent = `✓ Text gespeichert: ${data.filename} – PDFs werden gleich angezeigt.`;
+      el.draftStatus.textContent = `✓ Text gespeichert: ${displayName} – PDFs werden gleich angezeigt.`;
       showDraftWaitingPlaceholder({
         filename: data.filename,
         url: draftPdfUrl,
@@ -1116,7 +1120,7 @@ async function performRendering() {
     } else {
       el.draftStatus.innerHTML = `
         <div style="color: #059669; font-weight: bold;">
-          ✓ Text gespeichert: ${data.filename}
+          ✓ Text gespeichert: ${displayName}
         </div>
         <div style="color: #dc2626; margin-top: 6px;">
           Bitte lokal ausführen:<br>

@@ -59,7 +59,10 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     # Lese den Text und extrahiere Metadaten
     text_content = input_path.read_text(encoding="utf-8")
     metadata = extract_metadata_sections(text_content)
+    print(f"→ Extrahierte Metadaten: {list(metadata.keys())}")
+    
     release_base = normalize_release_base(metadata.get("RELEASE_BASE", ""))
+    print(f"→ Release Base: {release_base}")
 
     if tag_config is None:
         config_blob = metadata.get("TAG_CONFIG")

@@ -142,8 +142,16 @@ def _process_one_input(infile: str,
     if not os.path.isfile(infile):
         print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
 
+    print(f"\n{'='*60}")
+    print(f"Verarbeite: {infile}")
+    print(f"force_meter: {force_meter}")
+    print(f"{'='*60}\n")
+
     base = base_from_input_path(Path(infile))
+    print(f"→ Base-Name aus Datei: {base}")
+    
     blocks = Poesie.process_input_file(infile)
+    print(f"→ Anzahl Blöcke: {len(blocks)}")
 
     # Erkenne Sprache aus Dateinamen
     ancient_lang_strength = _detect_language_from_filename(infile)

@@ -297,8 +297,12 @@ export default {
     
     // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
     baseName = baseName.replace(/_[Vv]ersm[a-zßA-Z_]*/g, "_Versmass");
+    
+    // Entferne "translinear" aus dem baseName, falls vorhanden (wird später wieder hinzugefügt)
+    baseName = baseName.replace(/^translinear_?/i, "").replace(/_translinear_?/gi, "_");
+    if (!baseName) baseName = stripUnsafe(work) || "Entwurf";
 
-    const stamped = `${baseName}_birkenbihl_DRAFT_${tsStamp()}.txt`;
+    const stamped = `${baseName}_translinear_DRAFT_${tsStamp()}.txt`;
 
     const kindSafe = sanitizePathSegment(kind) || "prosa";
     const authorSafe = sanitizePathSegment(author) || "Unsortiert";
