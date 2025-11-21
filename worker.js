@@ -294,6 +294,9 @@ export default {
         ? stripUnsafe(filename.replace(/\.txt$/i, ""))
         : "";
     if (!baseName) baseName = stripUnsafe(work) || "Entwurf";
+    
+    // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
+    baseName = baseName.replace(/_[Vv]ersm[a-zßA-Z_]*/g, "_Versmass");
 
     const stamped = `${baseName}_birkenbihl_DRAFT_${tsStamp()}.txt`;
 
@@ -451,6 +454,8 @@ function stripDiacritics(str = "") {
 function sanitizeReleaseBase(value) {
   if (!value) return "";
   let cleaned = value.toString().replace(/[\r\n]/g, "").trim();
+  // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
+  cleaned = cleaned.replace(/_[Vv]ersm[a-zßA-Z_]*/g, "_Versmass");
   if (cleaned && !cleaned.includes("_birkenbihl")) {
     cleaned += "_birkenbihl";
   }

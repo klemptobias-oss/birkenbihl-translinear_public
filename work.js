@@ -567,7 +567,10 @@ function getLocalizedFilenameBase() {
     }
   }
 
-  if (state.meter === "with" && !filename.endsWith("_Versmass")) {
+  // Normalisiere alle Versmaß-Varianten zu "Versmass" (URL-sicher)
+  filename = filename.replace(/_[Vv]ersm[a-zßA-Z_]*/g, "_Versmass");
+  
+  if (state.meter === "with" && !filename.includes("_Versmass")) {
     filename += "_Versmass";
   }
 
@@ -580,7 +583,9 @@ function getLocalizedFilenameBase() {
 
 function normalizeReleaseBase(base) {
   if (!base) return null;
-  return base.includes("_birkenbihl") ? base : `${base}_birkenbihl`;
+  // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
+  let normalized = base.replace(/_[Vv]ersm[a-zßA-Z_]*/g, "_Versmass");
+  return normalized.includes("_birkenbihl") ? normalized : `${normalized}_birkenbihl`;
 }
 
 function buildVariantSuffix(localizedBase) {
