@@ -83,6 +83,9 @@ RULE_TAG_MAP = {
     'verb': HIERARCHIE['verb'],
     'partizip': HIERARCHIE['partizip'],
     'adjektiv': ['Adj', *HIERARCHIE['adjektiv']],
+TRANSLATION_HIDE_TAG = "HideTrans"
+TRANSLATION_HIDE_GLOBAL = "_global"
+
     'adverb': ['Adv', *HIERARCHIE['adverb']],
     'pronomen': ['Pr', *HIERARCHIE['pronomen']],
     'artikel': ['Art', *HIERARCHIE['artikel']],
@@ -249,6 +252,9 @@ def _remove_selected_tags(token: str,
         # ZUERST: Prüfe ob das gesamte Tag direkt in den Listen enthalten ist
         is_sup_direct = tag_normalized in SUP_TAGS
         is_sub_direct = tag_normalized in SUB_TAGS
+        
+        if tag_normalized == TRANSLATION_HIDE_TAG:
+            return ''
         
         if is_sup_direct or is_sub_direct:
             # Direktes Match gefunden
@@ -560,15 +566,35 @@ def _resolve_tags_for_rule(normalized_rule_id: str) -> List[str]:
         return [tag]
     return RULE_TAG_MAP.get(normalized_rule_id, [normalized_rule_id])
 
-def _token_should_hide_translation(token: str, translation_hide: Set[str]) -> bool:
-    if not token or not translation_hide:
+def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[str, Dict[str, Any]]]) -> bool:
+    if not token or not translation_rules:
         return False
+
     tags = _extract_tags(token)
+    normalized_tags: Set[str] = set()
     for tag in tags:
+        if tag == TRANSLATION_HIDE_TAG:
+            return True
         parts = [p for p in tag.split('/') if p]
         for part in parts:
-            if part in translation_hide:
+            normalized_tags.add(_normalize_tag_name(part))
+
+    wortart, _ = _get_wortart_and_relevant_tags(normalized_tags)
+    if wortart:
+        entry = translation_rules.get(wortart.lower())
+        if entry:
+            if entry.get("all"):
                 return True
+            if entry.get("tags") and any(tag in entry["tags"] for tag in normalized_tags):
+                return True
+
+    global_entry = translation_rules.get(TRANSLATION_HIDE_GLOBAL)
+    if global_entry:
+        if global_entry.get("all"):
+            return True
+        if global_entry.get("tags") and any(tag in global_entry["tags"] for tag in normalized_tags):
+            return True
+
     return False
 
 def _normalize_rule_id(rule_id: str) -> str:
@@ -595,6 +621,36 @@ def _normalize_rule_id(rule_id: str) -> str:
     
     return rule_id
 
+def _register_translation_rule(rules: Dict[str, Dict[str, Any]], normalized_rule_id: str) -> None:
+    if not normalized_rule_id:
+        return
+    if '_' in normalized_rule_id:
+        wordart, tag = normalized_rule_id.split('_', 1)
+    else:
+        wordart, tag = normalized_rule_id, None
+
+    normalized_wordart = wordart.lower()
+
+    if normalized_wordart not in RULE_TAG_MAP:
+        normalized_tag = _normalize_tag_name(normalized_rule_id)
+        entry = rules.setdefault(TRANSLATION_HIDE_GLOBAL, {"all": False, "tags": set()})
+        if normalized_tag:
+            entry["tags"].add(normalized_tag)
+        return
+
+    entry = rules.setdefault(normalized_wordart, {"all": False, "tags": set()})
+    if tag:
+        entry["tags"].add(_normalize_tag_name(tag))
+    else:
+        entry["all"] = True
+
+def _should_hide_translation(conf: Dict[str, Any]) -> bool:
+    return bool(conf.get('hideTranslation'))
+
+def _maybe_register_translation_rule(rules: Dict[str, Dict[str, Any]], normalized_rule_id: str, conf: Dict[str, Any]) -> None:
+    if _should_hide_translation(conf):
+        _register_translation_rule(rules, normalized_rule_id)
+
 # ======= Öffentliche, granulare API =======
 
 def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -616,7 +672,7 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
     blocks_copy = copy.deepcopy(blocks)
     
     sup_keep, sub_keep = set(), set()
-    translation_hide: Set[str] = set()
+    translation_rules: Dict[str, Dict[str, Any]] = {}
     if tag_config:
         # Starte mit allen bekannten Tags
         sup_keep = SUP_TAGS.copy()
@@ -629,6 +685,8 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
 
             if not tags_for_rule:
                 continue
+
+            _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
 
             if conf.get('hide'):
                 for tag in tags_for_rule:
@@ -647,8 +705,6 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         if tag in SUB_TAGS:
                             sub_keep.add(tag)
 
-            if conf.get('hideTranslation'):
-                translation_hide.update(tags_for_rule)
     else:
         # Wenn keine Config da ist, alle bekannten Tags behalten
         sup_keep = SUP_TAGS
@@ -662,13 +718,14 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                 sup_keep=sup_keep,
                 sub_keep=sub_keep,
                 remove_all=False,
-                translation_hide=translation_hide if translation_hide else None,
+                translation_rules=translation_rules if translation_rules else None,
             ))
         else:
             processed_blocks.append(b)
     return processed_blocks
 
-def remove_all_tags(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def remove_all_tags(blocks: List[Dict[str, Any]],
+                    tag_config: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
     """
     Entfernt ALLE bekannten Grammatik-Tags (SUP und SUB).
     Gibt eine NEUE, tief kopierte Blockliste zurück.
@@ -676,6 +733,12 @@ def remove_all_tags(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     import copy
     blocks_copy = copy.deepcopy(blocks)
     processed_blocks = []
+    translation_rules: Dict[str, Dict[str, Any]] = {}
+    if tag_config:
+        for rule_id, conf in tag_config.items():
+            normalized_rule_id = _normalize_rule_id(rule_id)
+            _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
+
     for b in blocks_copy:
         if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
             processed_blocks.append(_process_pair_block_for_tags(
@@ -683,7 +746,7 @@ def remove_all_tags(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                 sup_keep=set(),
                 sub_keep=set(),
                 remove_all=True,
-                translation_hide=None,
+                translation_rules=translation_rules if translation_rules else None,
             ))
         else:
             processed_blocks.append(b)
@@ -743,13 +806,17 @@ def apply(blocks: List[Dict[str, Any]],
     # 2. Tags filtern/entfernen (je nach tag_mode)
     # Dieser Schritt wird NACH dem Hinzufügen der Farben ausgeführt.
     sup_keep, sub_keep = None, None
-    translation_hide = None
-    remove_all_tags = (tag_mode == "NO_TAGS")
+    remove_all_tags_flag = (tag_mode == "NO_TAGS")
+    translation_rules: Dict[str, Dict[str, Any]] = {}
+
+    if tag_config:
+        for rule_id, conf in tag_config.items():
+            normalized_rule_id = _normalize_rule_id(rule_id)
+            _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
 
     if tag_mode == "TAGS" and tag_config:
         sup_keep = set()
         sub_keep = set()
-        translation_hide = set()
         for rule_id, conf in tag_config.items():
             normalized_rule_id = _normalize_rule_id(rule_id)
             tags_for_rule = _resolve_tags_for_rule(normalized_rule_id)
@@ -783,9 +850,7 @@ def apply(blocks: List[Dict[str, Any]],
                         if tag in SUB_TAGS:
                             sub_keep.add(tag)
 
-            if conf.get('hideTranslation'):
-                translation_hide.update(tags_for_rule)
-    
+    translation_rules_arg = translation_rules if translation_rules else None
     out: List[Dict[str, Any]] = []
     for b in blocks_with_colors:
         if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
@@ -793,8 +858,8 @@ def apply(blocks: List[Dict[str, Any]],
                 b,
                 sup_keep=sup_keep,
                 sub_keep=sub_keep,
-                remove_all=remove_all_tags,
-                translation_hide=translation_hide if translation_hide else None,
+                remove_all=remove_all_tags_flag,
+                translation_rules=translation_rules_arg,
             ))
         else:
             out.append(b)
@@ -818,13 +883,14 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
                                  sup_keep: Optional[set[str]],
                                  sub_keep: Optional[set[str]],
                                  remove_all: bool,
-                                 translation_hide: Optional[set[str]] = None) -> Dict[str, Any]:
+                                 translation_rules: Optional[Dict[str, Dict[str, Any]]] = None) -> Dict[str, Any]:
     source_tokens = block.get('gr_tokens', [])
 
-    hide_translation_flags: List[bool] = []
-    if translation_hide:
-        for token in source_tokens:
-            hide_translation_flags.append(_token_should_hide_translation(token, translation_hide))
+    if translation_rules:
+        hide_translation_flags = [
+            _token_should_hide_translation(token, translation_rules)
+            for token in source_tokens
+        ]
     else:
         hide_translation_flags = [False] * len(source_tokens)
     def proc_tokens(seq: Iterable[str]) -> List[str]:
@@ -842,7 +908,7 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
         if 'en_tokens' in block:
             result['en_tokens'] = proc_tokens(block.get('en_tokens', []))
 
-        if translation_hide:
+        if translation_rules:
             for idx, should_hide in enumerate(hide_translation_flags):
                 if not should_hide:
                     continue

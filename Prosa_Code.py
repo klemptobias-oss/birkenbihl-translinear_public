@@ -1555,7 +1555,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # KRITISCH: Bei NoTag PDFs MÜSSEN die Tags aus Zitaten entfernt werden!
             if tag_mode == "NO_TAGS":
-                temp_quote_blocks = preprocess.remove_all_tags(temp_quote_blocks)
+                temp_quote_blocks = preprocess.remove_all_tags(temp_quote_blocks, tag_config)
             
             # Bei BLACK_WHITE Mode: Entferne Farbsymbole (§, $) aus Zitaten
             if color_mode == "BLACK_WHITE":

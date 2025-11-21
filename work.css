@@ -702,10 +702,23 @@ html body .pane-head:first-child .btn.primary {
 /* Erste Spalte (Modifikation) breiter machen und linksbündig für kleine Tabellen */
 .tag-group-table th:first-child,
 .tag-group-table td:first-child {
-  width: 25%; /* Mehr Platz für die Modifikationsnamen */
-  min-width: 150px; /* Mindestbreite */
-  white-space: nowrap; /* Verhindert Zeilenumbrüche */
-  text-align: left; /* Linksbündig für Modifikationsnamen */
+  width: 20%;
+  min-width: 130px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.tag-group-table th:nth-child(2),
+.tag-group-table td:nth-child(2),
+.tag-group-table th:nth-child(3),
+.tag-group-table td:nth-child(3) {
+  width: 90px;
+}
+
+.tag-group-table th:nth-child(10),
+.tag-group-table td:nth-child(10) {
+  width: 150px;
+  white-space: normal;
 }
 
 /* Tbody für kleine Tabellen */

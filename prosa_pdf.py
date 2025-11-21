@@ -151,7 +151,7 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
             # bei standard die default config (die implizit alle Tags anzeigt).
             blocks_with_tags = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config)
         else: # NO_TAGS
-            blocks_with_tags = preprocess.remove_all_tags(blocks_with_colors)
+            blocks_with_tags = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
 
         # Schritt 3: Farbsymbole entfernen (für _BlackWhite-Versionen).
         if color_mode == "BLACK_WHITE":
