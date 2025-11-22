@@ -798,15 +798,14 @@ function showDraftWaitingPlaceholder(extra = {}) {
   const url = extra.url || state.lastDraftUrl;
   // Ersetze "birkenbihl" durch "translinear" im Dateinamen
   const displayFilename = filename ? filename.replace(/_birkenbihl_/g, "_translinear_").replace(/birkenbihl/g, "translinear") : "translinear.txt";
+  const safeFilename = `<code>${escapeHtml(displayFilename)}</code>`;
+  const safeUrl = url ? `<code>${escapeHtml(url)}</code>` : "";
   const extraInfo = `
-    <p style="margin: 10px 0;">
-      <strong>Datei:</strong> <code style="font-size: 0.9em;">${escapeHtml(displayFilename)}</code>
-    </p>
-    <p style="margin: 15px 0;">
-      <a href="${GH_ACTIONS_URL}" target="_blank" rel="noopener" 
-         style="display: inline-block; padding: 8px 16px; background: #2563eb; color: white; 
-                text-decoration: none; border-radius: 6px; font-weight: 500;">
-        📊 Build-Status live verfolgen
+    <p>Datei: ${safeFilename}</p>
+    ${safeUrl ? `<p>Zielpfad: ${safeUrl}</p>` : ""}
+    <p>
+      <a href="${GH_ACTIONS_URL}" target="_blank" rel="noopener">
+        GitHub Actions Status ansehen →
       </a>
     </p>
   `;
@@ -815,7 +814,7 @@ function showDraftWaitingPlaceholder(extra = {}) {
     icon: "🚀",
     title: "PDF-Generierung läuft …",
     message:
-      "Der Entwurf wurde gespeichert. GitHub erstellt nun alle 8 PDF-Varianten – das dauert meist 1-2 Minuten.",
+      "Der Worker hat den Entwurf gespeichert. GitHub baut nun alle PDF-Varianten – das dauert meistens weniger als eine Minute.",
     details: extraInfo,
   });
 }
@@ -843,33 +842,31 @@ function showDraftManualPlaceholder(extra = {}) {
 
 function showDraftErrorPlaceholder(extra = {}) {
   const safeMessage = extra.message ? escapeHtml(extra.message) : "";
+  const safeUrl = extra.url ? `<code>${escapeHtml(extra.url)}</code>` : "";
   showPdfPlaceholder("draft-error", {
     icon: "⚠️",
-    title: "Entwurfs-PDF nicht verfügbar",
+    title: "PDF konnte nicht geladen werden",
     message:
-      "Das PDF konnte nicht geladen werden. Bitte warten Sie einen Moment und versuchen Sie es erneut, oder wechseln Sie auf „Original".",
-    details: safeMessage ? `
-      <details style="margin-top: 10px;">
-        <summary style="cursor: pointer; color: #6b7280;">Technische Details anzeigen</summary>
-        <p style="margin-top: 8px; font-size: 0.85em; color: #9ca3af;">${safeMessage}</p>
-      </details>
-    ` : "",
+      "Beim Laden des Entwurfs ist ein Fehler aufgetreten. Bitte nach kurzer Zeit noch einmal versuchen oder auf „Original" wechseln.",
+    details: `
+      ${safeMessage ? `<p>Technische Info: ${safeMessage}</p>` : ""}
+      ${safeUrl ? `<p>Ziel: ${safeUrl}</p>` : ""}
+    `,
   });
 }
 
 function showOriginalPdfErrorPlaceholder(extra = {}) {
   const safeMessage = extra.message ? escapeHtml(extra.message) : "";
+  const safeUrl = extra.url ? `<code>${escapeHtml(extra.url)}</code>` : "";
   showPdfPlaceholder("pdf-error", {
     icon: "⚠️",
-    title: "Original-PDF nicht verfügbar",
+    title: "PDF konnte nicht geladen werden",
     message:
-      "Das PDF konnte nicht geladen werden. Bitte nutzen Sie „PDF in neuem Tab öffnen" oder laden Sie die Seite neu.",
-    details: safeMessage ? `
-      <details style="margin-top: 10px;">
-        <summary style="cursor: pointer; color: #6b7280;">Technische Details anzeigen</summary>
-        <p style="margin-top: 8px; font-size: 0.85em; color: #9ca3af;">${safeMessage}</p>
-      </details>
-    ` : "",
+      "Bitte nutzen Sie „PDF in neuem Tab öffnen" oder laden Sie die Seite neu. Der Link könnte vorübergehend nicht verfügbar sein.",
+    details: `
+      ${safeMessage ? `<p>Technische Info: ${safeMessage}</p>` : ""}
+      ${safeUrl ? `<p>Ziel: ${safeUrl}</p>` : ""}
+    `,
   });
 }
 
@@ -1364,8 +1361,10 @@ function showTagConfigModal() {
   el.toggleHiddenBtn.removeEventListener("click", toggleAllTagsHidden);
   el.toggleHiddenBtn.addEventListener("click", toggleAllTagsHidden);
   
-  el.toggleTranslationsHiddenBtn.removeEventListener("click", toggleAllTranslationsHidden);
-  el.toggleTranslationsHiddenBtn.addEventListener("click", toggleAllTranslationsHidden);
+  if (el.toggleTranslationsHiddenBtn) {
+    el.toggleTranslationsHiddenBtn.removeEventListener("click", toggleAllTranslationsHidden);
+    el.toggleTranslationsHiddenBtn.addEventListener("click", toggleAllTranslationsHidden);
+  }
 
   // 6. Modal anzeigen
   el.modal.style.display = "flex";
