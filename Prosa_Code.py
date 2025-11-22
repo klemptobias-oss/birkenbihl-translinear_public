@@ -1012,8 +1012,11 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
 
     def col_width(k:int) -> float:
         w_gr = visible_measure_token(gr[k], font=token_gr_style.fontName, size=token_gr_style.fontSize, is_greek_row=True, reverse_mode=False) if (k < len(gr) and gr[k]) else 0.0
-        w_de = visible_measure_token(de[k], font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if (k < len(de) and de[k]) else 0.0
-        w_en = visible_measure_token(en[k], font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if (k < len(en) and en[k]) else 0.0
+        # Für DE und EN: Ersetze | durch Leerzeichen für korrekte Breitenberechnung
+        de_text = de[k].replace('|', ' ') if (k < len(de) and de[k]) else ''
+        en_text = en[k].replace('|', ' ') if (k < len(en) and en[k]) else ''
+        w_de = visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if de_text else 0.0
+        w_en = visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if en_text else 0.0
         return max(w_gr, w_de, w_en)
 
     widths = [col_width(k) for k in range(cols)]
@@ -1105,10 +1108,17 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             mk = format_token_markup(t, reverse_mode=False, is_greek_row=is_gr,
                                      base_font_size=(token_gr_style.fontSize if is_gr else token_de_style.fontSize))
             return f'<i>{mk}</i>' if italic and mk else mk
+        
+        def replace_pipes_with_spaces(text):
+            """Ersetzt | durch Leerzeichen in Übersetzungen für bessere Lesbarkeit"""
+            if not text:
+                return text
+            return text.replace('|', ' ')
 
         gr_cells = [Paragraph(cell_markup(t, True),  token_gr_style) if t else Paragraph('', token_gr_style) for t in slice_gr]
-        de_cells = [Paragraph(cell_markup(t, False), token_de_style) if t else Paragraph('', token_de_style) for t in slice_de]
-        en_cells = [Paragraph(cell_markup(t, False), token_de_style) if t else Paragraph('', token_de_style) for t in slice_en]  # NEU: Englische Zellen
+        # Für DE und EN: Ersetze | durch Leerzeichen für bessere Lesbarkeit
+        de_cells = [Paragraph(cell_markup(replace_pipes_with_spaces(t), False), token_de_style) if t else Paragraph('', token_de_style) for t in slice_de]
+        en_cells = [Paragraph(cell_markup(replace_pipes_with_spaces(t), False), token_de_style) if t else Paragraph('', token_de_style) for t in slice_en]  # NEU: Englische Zellen
 
         row_gr, row_de, row_en, colWidths = [], [], [], []  # NEU: row_en
         if speaker_width_pt > 0:
