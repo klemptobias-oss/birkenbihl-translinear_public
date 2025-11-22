@@ -1,0 +1,15 @@
+# Jekyll Configuration
+# Exclude these directories and files from Jekyll processing
+exclude:
+  - shared/
+  - pdf_drafts/
+  - texte_drafts/
+  - texte/
+  - scripts/
+  - "*.py"
+  - "*.pyc"
+  - __pycache__/
+  - .github/
+  - README.md
+  - .gitignore
+

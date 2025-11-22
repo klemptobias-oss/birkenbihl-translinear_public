@@ -574,7 +574,9 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
     tags = _extract_tags(token)
     normalized_tags: Set[str] = set()
     for tag in tags:
+        # Debug: Prüfe ob HideTrans erkannt wird
         if tag == TRANSLATION_HIDE_TAG:
+            # print(f"DEBUG: HideTrans gefunden in Token: {token}")
             return True
         parts = [p for p in tag.split('/') if p]
         for part in parts:
