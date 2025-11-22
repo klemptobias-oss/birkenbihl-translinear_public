@@ -599,9 +599,6 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
         entry = translation_rules.get(wortart.lower())
         if entry:
             if entry.get("all"):
-                # Debug: Zeige welche Wortart erkannt wurde
-                if wortart.lower() in ('kon', 'pt', 'prp', 'ij'):
-                    print(f"DEBUG: Wortart '{wortart}' erkannt für Token mit Tags {normalized_tags}, Übersetzung wird ausgeblendet")
                 return True
             if entry.get("tags") and any(tag in entry["tags"] for tag in normalized_tags):
                 return True
@@ -982,8 +979,6 @@ def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
         tags = _extract_tags(token)
         # Prüfe auf HideTrans (case-insensitive, da Nutzer verschiedene Schreibweisen verwenden könnten)
         should_hide = any(tag.lower() == TRANSLATION_HIDE_TAG.lower() for tag in tags)
-        if should_hide:
-            print(f"DEBUG: (HideTrans) gefunden in Token: {token}, Tags: {tags}")
         hide_flags.append(should_hide)
     
     result = {**block}
@@ -993,10 +988,8 @@ def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
         if not should_hide:
             continue
         if 'de_tokens' in result and idx < len(result['de_tokens']):
-            print(f"DEBUG: Verstecke deutsche Übersetzung für Token {idx}: {result['de_tokens'][idx]}")
             result['de_tokens'][idx] = ''
         if 'en_tokens' in result and idx < len(result['en_tokens']):
-            print(f"DEBUG: Verstecke englische Übersetzung für Token {idx}: {result['en_tokens'][idx]}")
             result['en_tokens'][idx] = ''
     
     return result
@@ -1028,17 +1021,23 @@ def remove_empty_translation_lines(blocks: List[Dict[str, Any]]) -> List[Dict[st
     Dies verhindert leere Zeilen im PDF, wenn der Nutzer alle Übersetzungen ausblendet.
     
     WICHTIG: Dies funktioniert nur für 'pair' und 'flow' Blöcke mit Tokens.
+    WICHTIG: Wir setzen de_tokens/en_tokens auf leere Listen, statt sie zu entfernen,
+             damit der Rendering-Code nicht abstürzt.
     """
     result = []
     for block in blocks:
         if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
             if _all_translations_hidden(block):
-                # Entferne die Übersetzungszeilen komplett
+                # Setze Übersetzungszeilen auf leere Listen (nicht entfernen!)
                 new_block = {**block}
-                new_block.pop('de_tokens', None)
-                new_block.pop('en_tokens', None)
-                new_block.pop('de', None)
-                new_block.pop('en', None)
+                if 'de_tokens' in new_block:
+                    new_block['de_tokens'] = []
+                if 'en_tokens' in new_block:
+                    new_block['en_tokens'] = []
+                if 'de' in new_block:
+                    new_block['de'] = ''
+                if 'en' in new_block:
+                    new_block['en'] = ''
                 result.append(new_block)
             else:
                 result.append(block)
