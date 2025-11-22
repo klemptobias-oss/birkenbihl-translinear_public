@@ -2377,7 +2377,13 @@ async function loadWorkMeta() {
   updateDownloadButtons();
 
   // WICHTIG: Lade Werk-Metadaten aus dem Katalog (setzt strength, meterSupported, etc.)
-  await loadWorkMeta();
+  try {
+    await loadWorkMeta();
+  } catch (error) {
+    console.error("❌ FEHLER beim Laden der Werk-Metadaten:", error);
+    el.pageTitle.textContent = "Fehler beim Laden";
+    return;
+  }
 
   // Titel setzen (wird bereits in loadWorkMeta() gesetzt, aber sicherheitshalber nochmal)
   el.pageTitle.textContent = `${
@@ -2385,11 +2391,20 @@ async function loadWorkMeta() {
   } – ${state.workMeta?.title || state.work}`;
 
   // Inhalte laden
-  await loadTexts();
+  try {
+    await loadTexts();
+  } catch (error) {
+    console.error("❌ FEHLER beim Laden der Texte:", error);
+  }
+  
   wireEvents();
 
   // Entwurfs-Text initialisieren
-  await initializeDraftText();
+  try {
+    await initializeDraftText();
+  } catch (error) {
+    console.error("❌ FEHLER beim Initialisieren des Draft-Textes:", error);
+  }
 
   // PDF-Ansicht wird bereits in loadWorkMeta() via updatePdfView() geladen
 })();
