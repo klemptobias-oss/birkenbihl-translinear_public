@@ -846,7 +846,7 @@ function showDraftErrorPlaceholder(extra = {}) {
     icon: "⚠️",
     title: "PDF konnte nicht geladen werden",
     message:
-      "Beim Laden des Entwurfs ist ein Fehler aufgetreten. Bitte nach kurzer Zeit noch einmal versuchen oder auf „Original" wechseln.",
+      "Beim Laden des Entwurfs ist ein Fehler aufgetreten. Bitte nach kurzer Zeit noch einmal versuchen oder auf \"Original\" wechseln.",
     details: `
       ${safeMessage ? `<p>Technische Info: ${safeMessage}</p>` : ""}
       ${safeUrl ? `<p>Ziel: ${safeUrl}</p>` : ""}
@@ -861,7 +861,7 @@ function showOriginalPdfErrorPlaceholder(extra = {}) {
     icon: "⚠️",
     title: "PDF konnte nicht geladen werden",
     message:
-      "Bitte nutzen Sie „PDF in neuem Tab öffnen" oder laden Sie die Seite neu. Der Link könnte vorübergehend nicht verfügbar sein.",
+      "Bitte nutzen Sie \"PDF in neuem Tab öffnen\" oder laden Sie die Seite neu. Der Link könnte vorübergehend nicht verfügbar sein.",
     details: `
       ${safeMessage ? `<p>Technische Info: ${safeMessage}</p>` : ""}
       ${safeUrl ? `<p>Ziel: ${safeUrl}</p>` : ""}
