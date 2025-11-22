@@ -1432,8 +1432,10 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 ('VALIGN',        (0,0), (-1,-1), 'BOTTOM'),
                 ('ALIGN',         (0,0), (0,-1), 'RIGHT'),  # Nummern rechts
                 ('ALIGN',         (1,0), (-1,-1), 'LEFT'),  # Rest links (wie im Epos)
-                ('RIGHTPADDING',  (2,0), (2,-1), 2.0),      # Sprecher-Spalte darf etwas Luft haben
             ]
+            # Nur Padding für Sprecher-Spalte hinzufügen, wenn sie existiert (sp_w > 0)
+            if sp_w > 0:
+                style_list.append(('RIGHTPADDING',  (2,0), (2,-1), 2.0))
             # Nur Padding zwischen Zeilen hinzufügen, wenn Übersetzungen vorhanden sind
             if has_de or has_en:
                 style_list.append(('BOTTOMPADDING', (0,0), (-1,0), gap_ancient_to_modern/2.0))
@@ -1455,8 +1457,10 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 ('VALIGN',        (0,0), (-1,-1), 'BOTTOM'),
                 ('ALIGN',         (0,0), (0,-1), 'RIGHT'),
                 ('ALIGN',         (1,0), (-1,-1), 'LEFT'),
-                ('RIGHTPADDING',  (2,0), (2,-1), 2.0),
             ]
+            # Nur Padding für Sprecher-Spalte hinzufügen, wenn sie existiert (sp_w > 0)
+            if sp_w > 0:
+                style_list.append(('RIGHTPADDING',  (2,0), (2,-1), 2.0))
             # Nur Padding zwischen Zeilen hinzufügen, wenn Übersetzungen vorhanden sind
             if has_de or has_en:
                 style_list.append(('BOTTOMPADDING', (0,0), (-1,0), gap_ancient_to_modern/2.0))

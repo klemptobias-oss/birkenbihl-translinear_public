@@ -155,6 +155,9 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
 
         # Schritt 3: Entferne leere Übersetzungszeilen (wenn alle Übersetzungen ausgeblendet)
         blocks_no_empty_trans = preprocess.remove_empty_translation_lines(blocks_with_tags)
+        
+        # Prüfe, ob alle Übersetzungen ausgeblendet sind (für _NoTrans Tag)
+        has_no_translations = preprocess.all_blocks_have_no_translations(blocks_no_empty_trans)
 
         # Schritt 4: Farbsymbole entfernen (für _BlackWhite-Versionen).
         if color_mode == "BLACK_WHITE":
@@ -162,8 +165,15 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
         else: # COLOR
             final_blocks = blocks_no_empty_trans
 
-        # Schritt 4: PDF rendern mit dem final prozessierten Block-Set.
+        # Schritt 5: PDF rendern mit dem final prozessierten Block-Set.
         out_name = output_pdf_name(base, NameOpts(strength=strength, color_mode=color_mode, tag_mode=tag_mode))
+        
+        # Füge _NoTrans hinzu, wenn alle Übersetzungen ausgeblendet sind
+        if has_no_translations:
+            # Verwende die gleiche Helper-Funktion wie in poesie_pdf.py
+            from pathlib import Path
+            p = Path(out_name)
+            out_name = p.with_name(p.stem + "_NoTrans" + p.suffix).name
         opts = PdfRenderOptions(strength=strength, color_mode=color_mode, tag_mode=tag_mode, versmass_mode="REMOVE_MARKERS")
         
         # WICHTIG: Die unified_api wird jetzt nur noch für das Rendering aufgerufen.

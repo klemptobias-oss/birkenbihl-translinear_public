@@ -1046,6 +1046,27 @@ def remove_empty_translation_lines(blocks: List[Dict[str, Any]]) -> List[Dict[st
     
     return result
 
+def all_blocks_have_no_translations(blocks: List[Dict[str, Any]]) -> bool:
+    """
+    Prüft, ob ALLE Blöcke keine Übersetzungen haben.
+    Gibt True zurück, wenn alle pair/flow Blöcke leere de_tokens/en_tokens haben.
+    Dies wird verwendet, um den _NoTrans Tag zum Dateinamen hinzuzufügen.
+    """
+    for block in blocks:
+        if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
+            # Prüfe, ob dieser Block Übersetzungen hat
+            de_tokens = block.get('de_tokens', [])
+            en_tokens = block.get('en_tokens', [])
+            
+            # Wenn irgendein Token nicht leer ist, haben wir Übersetzungen
+            if any(tok and tok.strip() for tok in de_tokens):
+                return False
+            if any(tok and tok.strip() for tok in en_tokens):
+                return False
+    
+    # Alle Blöcke haben keine Übersetzungen
+    return True
+
 # Hilfsfunktion zum Entfernen von Farben in einem Block
 def _strip_colors_from_block(block: Dict[str, Any]) -> Dict[str, Any]:
     def proc_tokens(seq: Iterable[str]) -> List[str]:

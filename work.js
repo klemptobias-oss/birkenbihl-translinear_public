@@ -798,14 +798,15 @@ function showDraftWaitingPlaceholder(extra = {}) {
   const url = extra.url || state.lastDraftUrl;
   // Ersetze "birkenbihl" durch "translinear" im Dateinamen
   const displayFilename = filename ? filename.replace(/_birkenbihl_/g, "_translinear_").replace(/birkenbihl/g, "translinear") : "translinear.txt";
-  const safeFilename = `<code>${escapeHtml(displayFilename)}</code>`;
-  const safeUrl = url ? `<code>${escapeHtml(url)}</code>` : "";
   const extraInfo = `
-    <p>Datei: ${safeFilename}</p>
-    ${safeUrl ? `<p>Zielpfad: ${safeUrl}</p>` : ""}
-    <p>
-      <a href="${GH_ACTIONS_URL}" target="_blank" rel="noopener">
-        GitHub Actions Status ansehen →
+    <p style="margin: 10px 0;">
+      <strong>Datei:</strong> <code style="font-size: 0.9em;">${escapeHtml(displayFilename)}</code>
+    </p>
+    <p style="margin: 15px 0;">
+      <a href="${GH_ACTIONS_URL}" target="_blank" rel="noopener" 
+         style="display: inline-block; padding: 8px 16px; background: #2563eb; color: white; 
+                text-decoration: none; border-radius: 6px; font-weight: 500;">
+        📊 Build-Status live verfolgen
       </a>
     </p>
   `;
@@ -814,7 +815,7 @@ function showDraftWaitingPlaceholder(extra = {}) {
     icon: "🚀",
     title: "PDF-Generierung läuft …",
     message:
-      "Der Worker hat den Entwurf gespeichert. GitHub baut nun alle PDF-Varianten – das dauert meistens weniger als eine Minute.",
+      "Der Entwurf wurde gespeichert. GitHub erstellt nun alle 8 PDF-Varianten – das dauert meist 1-2 Minuten.",
     details: extraInfo,
   });
 }

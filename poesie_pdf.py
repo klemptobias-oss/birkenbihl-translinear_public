@@ -208,6 +208,9 @@ def _process_one_input(infile: str,
 
         # Schritt 3: Entferne leere Übersetzungszeilen (wenn alle Übersetzungen ausgeblendet)
         blocks_no_empty_trans = preprocess.remove_empty_translation_lines(blocks_with_tags)
+        
+        # Prüfe, ob alle Übersetzungen ausgeblendet sind (für _NoTrans Tag)
+        has_no_translations = preprocess.all_blocks_have_no_translations(blocks_no_empty_trans)
 
         # Schritt 4: Farbsymbole entfernen (für _BlackWhite-Versionen)
         if color_mode == "BLACK_WHITE":
@@ -215,8 +218,12 @@ def _process_one_input(infile: str,
         else: # COLOR
             final_blocks = blocks_no_empty_trans
 
-        # Schritt 4: PDF rendern
+        # Schritt 5: PDF rendern
         name_no_meter = output_pdf_name(base, NameOpts(strength=strength, color_mode=color_mode, tag_mode=tag_mode))
+        
+        # Füge _NoTrans hinzu, wenn alle Übersetzungen ausgeblendet sind
+        if has_no_translations:
+            name_no_meter = _add_suffix_before_ext(name_no_meter, "_NoTrans")
         
         # Füge _Versmass zum Output-Namen hinzu, aber nur wenn:
         # 1. meter_on ist True (wir erstellen ein Versmaß-PDF)
