@@ -9,7 +9,7 @@ DST_BASE = ROOT / "pdf_drafts" / "poesie_drafts"         # Ausgaben (spiegelbild
 RUNNER = ROOT / "poesie_pdf.py"                          # 24 Varianten (Poesie)
 
 META_HEADER_RE = re.compile(
-    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|VERSMASS|METER_MODE):(.*?)\s*-->',
+    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|VERSMASS|METER_MODE|HIDE_PIPES):(.*?)\s*-->',
     re.DOTALL | re.IGNORECASE
 )
 
@@ -73,6 +73,9 @@ def run_one(input_path: Path) -> None:
     if metadata.get("METER_MODE", "").lower() == "with":
         force_meter = True
         print(f"→ Versmaß aktiviert (METER_MODE=with)")
+    
+    # Extrahiere HIDE_PIPES aus Metadaten
+    hide_pipes = metadata.get("HIDE_PIPES", "false").lower() == "true"
 
     config_blob = metadata.get("TAG_CONFIG")
     if config_blob:
@@ -108,6 +111,9 @@ def run_one(input_path: Path) -> None:
         if config_file:
             cmd.extend(["--tag-config", str(config_file)])
             print(f"→ Kommando enthält --tag-config: {config_file}")
+        if hide_pipes:
+            cmd.extend(["--hide-pipes"])
+            print(f"→ Kommando enthält --hide-pipes Flag")
         
         print(f"→ Führe aus: {' '.join(str(c) for c in cmd)}")
         

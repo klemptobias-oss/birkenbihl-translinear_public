@@ -1031,15 +1031,51 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
 
     def col_width(k:int) -> float:
         w_gr = visible_measure_token(gr[k], font=token_gr_style.fontName, size=token_gr_style.fontSize, is_greek_row=True, reverse_mode=False) if (k < len(gr) and gr[k]) else 0.0
-        # Für DE und EN: Ersetze | durch Leerzeichen für korrekte Breitenberechnung, wenn hide_pipes aktiviert ist
+        
+        # Für DE und EN: Berechne Breite SO, als wären Pipes bereits durch Leerzeichen ersetzt (wenn hide_pipes aktiviert ist)
         if hide_pipes:
             de_text = de[k].replace('|', ' ') if (k < len(de) and de[k]) else ''
             en_text = en[k].replace('|', ' ') if (k < len(en) and en[k]) else ''
+            # Berechne die Anzahl der Pipes, die ersetzt werden (für zusätzlichen Platz)
+            de_pipe_count = (de[k].count('|') if (k < len(de) and de[k]) else 0)
+            en_pipe_count = (en[k].count('|') if (k < len(en) and en[k]) else 0)
+            # Leerzeichen sind breiter als Pipes - füge zusätzlichen Platz hinzu
+            # Ein Leerzeichen ist etwa 0.3x der Font-Size breit, ein Pipe ist etwa 0.1x
+            # Differenz pro Pipe: ~0.2x Font-Size
+            space_vs_pipe_diff = token_de_style.fontSize * 0.2
+            de_pipe_extra = de_pipe_count * space_vs_pipe_diff
+            en_pipe_extra = en_pipe_count * space_vs_pipe_diff
         else:
             de_text = de[k] if (k < len(de) and de[k]) else ''
             en_text = en[k] if (k < len(en) and en[k]) else ''
+            de_pipe_extra = 0.0
+            en_pipe_extra = 0.0
+        
         w_de = visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if de_text else 0.0
         w_en = visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if en_text else 0.0
+        
+        # Addiere zusätzlichen Platz für ersetzte Pipes
+        w_de += de_pipe_extra
+        w_en += en_pipe_extra
+        
+        # WICHTIG: Wenn Tags versteckt werden können, füge einen zusätzlichen Abstand hinzu,
+        # um Überlappungen zu vermeiden. Dies ist notwendig, weil die Breite MIT Tags berechnet wird,
+        # aber wenn Tags versteckt werden, ist das Token schmaler.
+        # Lösung: Berechne auch die Breite OHNE Tags und verwende das Maximum
+        # (Dies ist eine vereinfachte Lösung - eine vollständige Lösung würde die Tag-Konfiguration benötigen)
+        if de_text:
+            # Versuche, die Breite ohne Tags zu schätzen (entferne alle Tag-Patterns)
+            de_text_no_tags = RE_TAG_NAKED.sub('', de_text).strip()
+            if de_text_no_tags:
+                w_de_no_tags = visible_measure_token(de_text_no_tags, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False)
+                w_de = max(w_de, w_de_no_tags + token_de_style.fontSize * 0.3)  # 30% Font-Size als Sicherheitsabstand
+        
+        if en_text:
+            en_text_no_tags = RE_TAG_NAKED.sub('', en_text).strip()
+            if en_text_no_tags:
+                w_en_no_tags = visible_measure_token(en_text_no_tags, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False)
+                w_en = max(w_en, w_en_no_tags + token_de_style.fontSize * 0.3)  # 30% Font-Size als Sicherheitsabstand
+        
         return max(w_gr, w_de, w_en)
 
     widths = [col_width(k) for k in range(cols)]
