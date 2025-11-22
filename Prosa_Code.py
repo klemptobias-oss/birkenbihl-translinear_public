@@ -1030,17 +1030,19 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
 
         # Hilfen: prüfe, ob in de[i:j] irgendein sichtbarer Inhalt steckt
         def _has_de_content(i_start: int, i_end_excl: int) -> bool:
-            if i_start >= i_end_excl:
+            if i_start >= i_end_excl or not de:
                 return False
             for k in range(i_start, i_end_excl):
-                if (de[k] or '').strip():
+                if k < len(de) and (de[k] or '').strip():
                     return True
             return False
 
         # finde nächstes Index >= cur, das DE-Inhalt hat
         def _next_de_index(from_idx: int) -> int:
+            if not de:
+                return cols  # Keine DE-Inhalte vorhanden
             p = from_idx
-            while p < cols and not (de[p] or '').strip():
+            while p < cols and p < len(de) and not (de[p] or '').strip():
                 p += 1
             return p  # kann == cols sein
 
@@ -1053,7 +1055,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             j += 1
 
         # --- SPEZIALFALL: erstes Slice eines Sprecher-Blocks ohne DE-Inhalt
-        if first_slice and not _has_de_content(i, j):
+        # Nur ausführen, wenn DE-Übersetzungen vorhanden sind
+        if first_slice and de and not _has_de_content(i, j):
             k = _next_de_index(j)  # erster Index mit DE-Inhalt rechts vom Slice
             if k < cols:
                 # (1) Versuche, alle Spalten bis inkl. k zusätzlich unterzubringen

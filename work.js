@@ -2539,9 +2539,14 @@ function bindPdfUtilityButtons() {
       // Für Draft-PDFs: Verwende Worker-Proxy, um Content-Disposition zu überschreiben
       if (state.source === "draft" && pdfUrl.includes("raw.githubusercontent.com")) {
         // Extrahiere den Dateipfad aus der GitHub RAW URL
+        // Der Pfad ist bereits vollständig (inkl. pdf_drafts/), also nur den Teil nach main/ nehmen
         const match = pdfUrl.match(/raw\.githubusercontent\.com\/[^\/]+\/[^\/]+\/[^\/]+\/(.+)$/);
         if (match) {
-          const filePath = match[1];
+          let filePath = match[1];
+          // Entferne "pdf_drafts/" am Anfang, da der Worker es automatisch hinzufügt
+          if (filePath.startsWith("pdf_drafts/")) {
+            filePath = filePath.substring("pdf_drafts/".length);
+          }
           pdfUrl = `${WORKER_BASE}/release?file=${encodeURIComponent(filePath)}&mode=inline&draft=true`;
         }
       }
