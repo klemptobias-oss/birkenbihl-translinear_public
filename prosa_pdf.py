@@ -111,7 +111,7 @@ def _get_default_tag_config(language: str) -> dict:
     
     return config
 
-def _process_one_input(infile: str, tag_config: dict = None) -> None:
+def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = False) -> None:
     if not os.path.isfile(infile):
         print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
 
@@ -178,7 +178,7 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
         # WICHTIG: Die unified_api wird jetzt nur noch für das Rendering aufgerufen.
         # Die Vorverarbeitung ist hier abgeschlossen. `tag_config` wird trotzdem durchgereicht,
         # falls der Renderer selbst noch Konfigurationsdetails benötigt (z.B. für Platzierung).
-        create_pdf_unified("prosa", Prosa, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config)
+        create_pdf_unified("prosa", Prosa, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
         print(f"✓ PDF erstellt → {out_name}")
 
 def main():
@@ -187,6 +187,7 @@ def main():
     parser = argparse.ArgumentParser(description='Prosa PDF Generator')
     parser.add_argument('input_files', nargs='*', help='Input files to process')
     parser.add_argument('--tag-config', help='JSON file with tag configuration')
+    parser.add_argument('--hide-pipes', action='store_true', help='Hide pipes (|) in translations')
     args = parser.parse_args()
     
     # Use input files from arguments, or fallback to default discovery
@@ -212,7 +213,7 @@ def main():
     for infile in inputs:
         print(f"→ Verarbeite: {infile}")
         try:
-            _process_one_input(infile, tag_config)
+            _process_one_input(infile, tag_config, hide_pipes=args.hide_pipes)
         except Exception as e:
             print(f"✗ Fehler bei {infile}: {e}")
 

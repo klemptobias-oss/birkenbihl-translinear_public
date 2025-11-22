@@ -9,7 +9,7 @@ DST_BASE = ROOT / "pdf_drafts" / "prosa_drafts"          # Ausgaben (spiegelbild
 RUNNER = ROOT / "prosa_pdf.py"                           # 12 Varianten (Prosa)
 
 META_HEADER_RE = re.compile(
-    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|VERSMASS|METER_MODE):(.*?)\s*-->',
+    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|VERSMASS|METER_MODE|HIDE_PIPES):(.*?)\s*-->',
     re.DOTALL | re.IGNORECASE
 )
 
@@ -63,6 +63,9 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     
     release_base = normalize_release_base(metadata.get("RELEASE_BASE", ""))
     print(f"→ Release Base: {release_base}")
+    
+    # Extrahiere HIDE_PIPES aus Metadaten
+    hide_pipes = metadata.get("HIDE_PIPES", "false").lower() == "true"
 
     if tag_config is None:
         config_blob = metadata.get("TAG_CONFIG")
@@ -96,6 +99,8 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
         cmd = [sys.executable, str(RUNNER), str(temp_input)]
         if config_file:
             cmd.extend(["--tag-config", str(config_file)])
+        if hide_pipes:
+            cmd.extend(["--hide-pipes"])
         
         # Führe den Runner aus und übertrage Tag-Konfiguration
         result = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True)

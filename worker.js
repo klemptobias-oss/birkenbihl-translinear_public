@@ -258,6 +258,7 @@ export default {
     let releaseBase = "";
     let versmassFlag = "";
     let meterMode = "";
+    let hidePipes = false;
 
     try {
       const ct = (request.headers.get("content-type") || "").toLowerCase();
@@ -276,6 +277,7 @@ export default {
         releaseBase = sanitizeReleaseBase(data.release_base);
         versmassFlag = (data.versmass ?? "").toString().trim();
         meterMode = (data.meter_mode ?? "").toString().trim();
+        hidePipes = data.hide_pipes === true || data.hide_pipes === "true";
       } else if (ct.includes("text/plain")) {
         text = await request.text();
         work = (url.searchParams.get("work") || "").trim();
@@ -288,6 +290,7 @@ export default {
         releaseBase = sanitizeReleaseBase(url.searchParams.get("release_base"));
         versmassFlag = (url.searchParams.get("versmass") || "").trim();
         meterMode = (url.searchParams.get("meter_mode") || "").trim();
+        hidePipes = url.searchParams.get("hide_pipes") === "true";
       } else if (ct.includes("multipart/form-data")) {
         const form = await request.formData();
         if (form.has("text")) {
@@ -309,6 +312,7 @@ export default {
         releaseBase = sanitizeReleaseBase(form.get("release_base"));
         versmassFlag = (form.get("versmass") || "").toString().trim();
         meterMode = (form.get("meter_mode") || "").toString().trim();
+        hidePipes = form.get("hide_pipes") === "true";
 
         const tagConfigStr = form.get("tag_config");
         if (tagConfigStr) {
@@ -332,6 +336,7 @@ export default {
         releaseBase = sanitizeReleaseBase(data.release_base);
         versmassFlag = (data.versmass ?? "").toString().trim();
         meterMode = (data.meter_mode ?? "").toString().trim();
+        hidePipes = data.hide_pipes === true || data.hide_pipes === "true";
       }
     } catch (e) {
       return resp(
@@ -417,6 +422,9 @@ export default {
     }
     if (meterMode) {
       metadataHeaders.push(`<!-- METER_MODE:${meterMode} -->`);
+    }
+    if (hidePipes) {
+      metadataHeaders.push(`<!-- HIDE_PIPES:true -->`);
     }
     if (metadataHeaders.length) {
       textWithConfig = metadataHeaders.join("\n") + "\n" + text;

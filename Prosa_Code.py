@@ -1239,7 +1239,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
 def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                color_mode:str="COLOR", tag_mode:str="TAGS",
                placement_overrides: dict | None = None,
-               tag_config: dict | None = None):
+               tag_config: dict | None = None,
+               hide_pipes:bool=False):  # NEU: Pipes (|) in Übersetzungen verstecken
 
     # Leite gr_size und de_size aus strength ab, wie in der alten Logik
     if strength == "NORMAL":
@@ -1371,7 +1372,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             para_display=pdisp, para_width_pt=pwidth, style_para=style_para,
             speaker_display=(f'[{sdisp}]:' if sdisp else ''), speaker_width_pt=swidth, style_speaker=style_speaker,
             table_halign='LEFT', italic=False,
-            en_tokens=en_tokens  # NEU: Englische Tokens übergeben
+            en_tokens=en_tokens,  # NEU: Englische Tokens übergeben
+            hide_pipes=hide_pipes  # NEU: Pipes (|) in Übersetzungen verstecken
         )
         for idx, t in enumerate(tables):
             if idx > 0: t.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
@@ -1677,7 +1679,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         para_display='', para_width_pt=0.0, style_para=style_para,
                         speaker_display='', speaker_width_pt=0.0, style_speaker=style_speaker,
                         table_halign='CENTER', italic=True,  # Zentriert für Einrückung von beiden Seiten
-                        en_tokens=q_en  # NEU: Englische Tokens übergeben
+                        en_tokens=q_en,  # NEU: Englische Tokens übergeben
+                        hide_pipes=hide_pipes  # NEU: Pipes (|) in Übersetzungen verstecken
                     )
                     q_tables.extend(line_tables)
             for k, tquote in enumerate(q_tables):
