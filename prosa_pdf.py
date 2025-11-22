@@ -21,6 +21,7 @@ Die Sprache wird automatisch aus dem Dateinamen erkannt:
 from __future__ import annotations
 from pathlib import Path
 import os, itertools, sys
+from pathlib import Path
 
 import Prosa_Code as Prosa
 from shared.unified_api import create_pdf_unified, PdfRenderOptions
@@ -170,8 +171,6 @@ def _process_one_input(infile: str, tag_config: dict = None) -> None:
         
         # Füge _NoTrans hinzu, wenn alle Übersetzungen ausgeblendet sind
         if has_no_translations:
-            # Verwende die gleiche Helper-Funktion wie in poesie_pdf.py
-            from pathlib import Path
             p = Path(out_name)
             out_name = p.with_name(p.stem + "_NoTrans" + p.suffix).name
         opts = PdfRenderOptions(strength=strength, color_mode=color_mode, tag_mode=tag_mode, versmass_mode="REMOVE_MARKERS")

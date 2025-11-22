@@ -843,31 +843,33 @@ function showDraftManualPlaceholder(extra = {}) {
 
 function showDraftErrorPlaceholder(extra = {}) {
   const safeMessage = extra.message ? escapeHtml(extra.message) : "";
-  const safeUrl = extra.url ? `<code>${escapeHtml(extra.url)}</code>` : "";
   showPdfPlaceholder("draft-error", {
     icon: "⚠️",
-    title: "PDF konnte nicht geladen werden",
+    title: "Entwurfs-PDF nicht verfügbar",
     message:
-      "Beim Laden des Entwurfs ist ein Fehler aufgetreten. Bitte nach kurzer Zeit noch einmal versuchen oder auf „Original“ wechseln.",
-    details: `
-      ${safeMessage ? `<p>Technische Info: ${safeMessage}</p>` : ""}
-      ${safeUrl ? `<p>Ziel: ${safeUrl}</p>` : ""}
-    `,
+      "Das PDF konnte nicht geladen werden. Bitte warten Sie einen Moment und versuchen Sie es erneut, oder wechseln Sie auf „Original".",
+    details: safeMessage ? `
+      <details style="margin-top: 10px;">
+        <summary style="cursor: pointer; color: #6b7280;">Technische Details anzeigen</summary>
+        <p style="margin-top: 8px; font-size: 0.85em; color: #9ca3af;">${safeMessage}</p>
+      </details>
+    ` : "",
   });
 }
 
 function showOriginalPdfErrorPlaceholder(extra = {}) {
   const safeMessage = extra.message ? escapeHtml(extra.message) : "";
-  const safeUrl = extra.url ? `<code>${escapeHtml(extra.url)}</code>` : "";
   showPdfPlaceholder("pdf-error", {
     icon: "⚠️",
-    title: "PDF konnte nicht geladen werden",
+    title: "Original-PDF nicht verfügbar",
     message:
-      "Bitte nutzen Sie „PDF in neuem Tab öffnen“ oder laden Sie die Seite neu. Der Link könnte vorübergehend nicht verfügbar sein.",
-    details: `
-      ${safeMessage ? `<p>Technische Info: ${safeMessage}</p>` : ""}
-      ${safeUrl ? `<p>Ziel: ${safeUrl}</p>` : ""}
-    `,
+      "Das PDF konnte nicht geladen werden. Bitte nutzen Sie „PDF in neuem Tab öffnen" oder laden Sie die Seite neu.",
+    details: safeMessage ? `
+      <details style="margin-top: 10px;">
+        <summary style="cursor: pointer; color: #6b7280;">Technische Details anzeigen</summary>
+        <p style="margin-top: 8px; font-size: 0.85em; color: #9ca3af;">${safeMessage}</p>
+      </details>
+    ` : "",
   });
 }
 
@@ -2503,11 +2505,13 @@ function bindPdfUtilityButtons() {
       const pdfUrl = getCurrentPdfUrl();
       if (!pdfUrl) return;
       
-      // Für Draft-PDFs: Öffne direkt von GitHub Pages (wie früher im pdf/ Ordner)
+      // Für Draft-PDFs: Verwende Worker-Proxy mit draft=true Parameter
       // Für Original-PDFs: Verwende Worker-Proxy
       if (state.source === "draft") {
-        // Draft-PDFs liegen auf GitHub Pages, können direkt geöffnet werden
-        const newWindow = window.open(pdfUrl, "_blank");
+        // Draft-PDFs: Verwende Worker, um Content-Disposition Header zu ändern
+        const filename = buildDraftPdfFilename();
+        const workerUrl = `${WORKER_BASE}/release?file=${encodeURIComponent(filename)}&mode=inline&draft=true`;
+        const newWindow = window.open(workerUrl, "_blank");
         if (newWindow) newWindow.focus();
       } else {
         // Für Original-PDFs: Verwende Worker-Proxy
