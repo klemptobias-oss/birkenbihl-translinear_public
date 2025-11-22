@@ -2472,12 +2472,11 @@ function bindPdfUtilityButtons() {
       const pdfUrl = getCurrentPdfUrl();
       if (!pdfUrl) return;
       
-      // Für Draft-PDFs: Verwende Worker-Proxy mit draft=true Parameter
+      // Für Draft-PDFs: Öffne direkt von GitHub Pages (wie früher im pdf/ Ordner)
+      // Für Original-PDFs: Verwende Worker-Proxy
       if (state.source === "draft") {
-        const filename = buildDraftPdfFilename();
-        // Worker-URL für Draft-PDFs: /release?file=...&mode=inline&draft=true
-        const workerUrl = `${WORKER_BASE}/release?file=${encodeURIComponent(filename)}&mode=inline&draft=true`;
-        const newWindow = window.open(workerUrl, "_blank");
+        // Draft-PDFs liegen auf GitHub Pages, können direkt geöffnet werden
+        const newWindow = window.open(pdfUrl, "_blank");
         if (newWindow) newWindow.focus();
       } else {
         // Für Original-PDFs: Verwende Worker-Proxy

@@ -29,7 +29,7 @@ on:
       - "poesie_pdf.py"
 
 concurrency:
-  group: draft-pdf-build-${{ github.sha }}
+  group: draft-pdf-build
   cancel-in-progress: false
 
 jobs:
@@ -184,6 +184,9 @@ jobs:
               if git push origin main; then
                 echo "✓ PDFs erfolgreich gepusht"
                 PUSH_SUCCESS=true
+                # Warte 5 Sekunden, damit GitHub Pages Zeit hat, den Build zu starten
+                echo "⏳ Warte 5 Sekunden für GitHub Pages..."
+                sleep 5
                 break
               else
                 echo "⚠ Push fehlgeschlagen (nicht fast-forward), merge mit 'ours' Strategie..."
@@ -195,6 +198,9 @@ jobs:
                   if git push origin main; then
                     echo "✓ PDFs erfolgreich gepusht nach Merge"
                     PUSH_SUCCESS=true
+                    # Warte 5 Sekunden, damit GitHub Pages Zeit hat, den Build zu starten
+                    echo "⏳ Warte 5 Sekunden für GitHub Pages..."
+                    sleep 5
                     break
                   fi
                 else
