@@ -29,7 +29,7 @@ on:
       - "poesie_pdf.py"
 
 concurrency:
-  group: draft-pdf-build
+  group: draft-pdf-build-${{ github.sha }}
   cancel-in-progress: false
 
 jobs:
@@ -177,24 +177,32 @@ jobs:
                 fi
               fi
               
-              # Hole neueste Änderungen und rebase
-              if git pull --rebase origin main; then
-                # Versuche zu pushen
-                if git push origin main; then
-                  echo "✓ PDFs erfolgreich gepusht"
-                  PUSH_SUCCESS=true
-                  break
-                else
-                  echo "⚠ Push fehlgeschlagen, versuche erneut..."
-                  RETRY_COUNT=$((RETRY_COUNT + 1))
-                  sleep 2
-                fi
+              # Hole neueste Änderungen mit Merge-Strategie "ours" für Binärdateien
+              git fetch origin main
+              
+              # Versuche zu pushen
+              if git push origin main; then
+                echo "✓ PDFs erfolgreich gepusht"
+                PUSH_SUCCESS=true
+                break
               else
-                echo "⚠ Rebase fehlgeschlagen, versuche erneut..."
-                # Bei Rebase-Konflikt: abbrechen und neu versuchen
-                git rebase --abort 2>/dev/null || true
+                echo "⚠ Push fehlgeschlagen (nicht fast-forward), merge mit 'ours' Strategie..."
+                
+                # Merge mit "ours" Strategie für PDF-Konflikte
+                if git merge origin/main -X ours --no-edit; then
+                  echo "→ Merge erfolgreich mit 'ours' Strategie"
+                  # Versuche erneut zu pushen
+                  if git push origin main; then
+                    echo "✓ PDFs erfolgreich gepusht nach Merge"
+                    PUSH_SUCCESS=true
+                    break
+                  fi
+                else
+                  echo "⚠ Merge fehlgeschlagen, versuche erneut..."
+                fi
+                
                 RETRY_COUNT=$((RETRY_COUNT + 1))
-                sleep 2
+                sleep 3
               fi
             done
             
