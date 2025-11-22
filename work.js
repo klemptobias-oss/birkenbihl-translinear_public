@@ -113,6 +113,7 @@ const el = {
   confirmBtn: document.getElementById("confirmRendering"),
   toggleColorsBtn: document.getElementById("toggleAllColors"),
   toggleHiddenBtn: document.getElementById("toggleAllTagsHidden"),
+  toggleTranslationsHiddenBtn: document.getElementById("toggleAllTranslationsHidden"),
 
   // Neue Elemente
   toggleBirkenbihlTagsBtn: document.getElementById("toggleBirkenbihlTags"),
@@ -1359,6 +1360,9 @@ function showTagConfigModal() {
   el.toggleColorsBtn.addEventListener("click", toggleOriginalColors);
   el.toggleHiddenBtn.removeEventListener("click", toggleAllTagsHidden);
   el.toggleHiddenBtn.addEventListener("click", toggleAllTagsHidden);
+  
+  el.toggleTranslationsHiddenBtn.removeEventListener("click", toggleAllTranslationsHidden);
+  el.toggleTranslationsHiddenBtn.addEventListener("click", toggleAllTranslationsHidden);
 
   // 6. Modal anzeigen
   el.modal.style.display = "flex";
@@ -1927,6 +1931,32 @@ function toggleAllTagsHidden() {
       state.tagConfig[id].hide = true;
     } else {
       delete state.tagConfig[id].hide;
+    }
+  });
+  updateTableFromState();
+}
+
+function toggleAllTranslationsHidden() {
+  const turnOn = toggleButton(el.toggleTranslationsHiddenBtn);
+  const tablesContainer = document.getElementById("tag-config-tables");
+  if (!tablesContainer) return;
+
+  const tables = tablesContainer.querySelectorAll(".tag-group-table");
+  const allIds = [];
+
+  tables.forEach((table) => {
+    const tableIds = Array.from(table.querySelectorAll("tr[data-id]")).map(
+      (tr) => tr.dataset.id
+    );
+    allIds.push(...tableIds);
+  });
+
+  allIds.forEach((id) => {
+    state.tagConfig[id] = state.tagConfig[id] || {};
+    if (turnOn) {
+      state.tagConfig[id].hideTranslation = true;
+    } else {
+      delete state.tagConfig[id].hideTranslation;
     }
   });
   updateTableFromState();
