@@ -1204,6 +1204,80 @@ def process_input_file(fname:str):
     return blocks
 
 # ========= Tabellenbau – NUM → Sprecher → Einrückung → Tokens =========
+
+def get_visible_tags_poesie(token: str, tag_config: dict = None) -> list:
+    """Gibt die Liste der sichtbaren Tags für ein Token zurück (basierend auf tag_config) - Poesie-Version."""
+    if not tag_config or not token:
+        tags = RE_TAG_FINDALL.findall(token)
+        return tags
+    
+    tags = RE_TAG_FINDALL.findall(token)
+    if not tags:
+        return []
+    
+    visible_tags = []
+    from shared.preprocess import RULE_TAG_MAP
+    
+    for tag in tags:
+        tag_lower = tag.lower()
+        is_hidden = False
+        
+        # Prüfe, ob der Tag direkt versteckt ist (z.B. "nomen_N")
+        if tag_config.get(tag_lower, {}).get('hide', False):
+            is_hidden = True
+        else:
+            # Prüfe, ob die Gruppe versteckt ist (z.B. "nomen")
+            for group_id, group_tags in RULE_TAG_MAP.items():
+                if tag in group_tags:
+                    if tag_config.get(group_id, {}).get('hide', False):
+                        is_hidden = True
+                    break
+        
+        if not is_hidden:
+            visible_tags.append(tag)
+    
+    return visible_tags
+
+def measure_token_width_with_visibility_poesie(token: str, font: str, size: float, cfg: dict,
+                                               is_greek_row: bool = False, 
+                                               tag_config: dict = None) -> float:
+    """Berechnet die Breite eines Tokens, wobei versteckte Tags ignoriert werden - Poesie-Version."""
+    if not token:
+        return 0.0
+    
+    # Berechne Breite MIT allen Tags (Standard)
+    w_with_tags = visible_measure_token(token, font=font, size=size, cfg=cfg, is_greek_row=is_greek_row)
+    
+    # Wenn keine Tag-Konfiguration vorhanden, verwende Standard-Breite
+    if not tag_config:
+        return w_with_tags
+    
+    # Berechne Breite OHNE versteckte Tags
+    visible_tags = get_visible_tags_poesie(token, tag_config)
+    tags = RE_TAG_FINDALL.findall(token)
+    if len(visible_tags) == len(tags):
+        # Alle Tags sind sichtbar, verwende Standard-Breite
+        return w_with_tags
+    
+    # Einige Tags sind versteckt - berechne Breite OHNE versteckte Tags
+    hidden_tags = [t for t in tags if t not in visible_tags]
+    
+    # Entferne versteckte Tags aus dem Token-String
+    token_without_hidden = token
+    for hidden_tag in hidden_tags:
+        # Entferne nur dieses spezifische Tag (mit möglichen Leerzeichen)
+        tag_pattern = re.compile(r'\(\s*' + re.escape(hidden_tag) + r'\s*\)', re.IGNORECASE)
+        token_without_hidden = tag_pattern.sub('', token_without_hidden)
+    
+    # Berechne Breite OHNE versteckte Tags
+    w_without_hidden = visible_measure_token(token_without_hidden, font=font, size=size, cfg=cfg,
+                                              is_greek_row=is_greek_row)
+    
+    # Verwende das Maximum, um Überlappungen zu vermeiden
+    # Füge einen kleinen Sicherheitsabstand hinzu
+    safety_margin = size * 0.2  # 20% der Font-Size als Sicherheitsabstand
+    return max(w_with_tags, w_without_hidden + safety_margin)
+
 def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None, 
                           indent_pt: float = 0.0,
                           global_speaker_width_pt: float = None,
@@ -1218,7 +1292,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                           num_style = None,
                           style_speaker = None,
                           gr_bold: bool = False,
-                          en_tokens: list[str] = None):
+                          en_tokens: list[str] = None,
+                          tag_config: dict = None):  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
     # Standardwerte setzen falls nicht übergeben
     if doc_width_pt is None:
         doc_width_pt = A4[0] - 40*MM  # A4-Breite minus Ränder
@@ -1289,9 +1364,19 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL_NOTAG
 
     # Breiten: Berücksichtige auch englische Zeile
+    # Verwende die neue Funktion, die Tag-Sichtbarkeit berücksichtigt
     widths = []
     for k in range(cols):
-        w_gr = visible_measure_token(gr[k], font=token_gr_style.fontName, size=token_gr_style.fontSize, cfg=eff_cfg, is_greek_row=True) if (k < len(gr) and gr[k]) else 0.0
+        # Verwende die neue Funktion, die Tag-Sichtbarkeit berücksichtigt (nur für griechische Tokens)
+        w_gr = measure_token_width_with_visibility_poesie(
+            gr[k] if (k < len(gr) and gr[k]) else '', 
+            font=token_gr_style.fontName, 
+            size=token_gr_style.fontSize, 
+            cfg=eff_cfg,
+            is_greek_row=True,
+            tag_config=tag_config
+        ) if (k < len(gr) and gr[k]) else 0.0
+        # DE- und EN-Tokens haben normalerweise keine Tags, daher verwenden wir die Standard-Breitenberechnung
         w_de = visible_measure_token(de[k], font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if (k < len(de) and de[k]) else 0.0
         w_en = visible_measure_token(en[k], font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if (k < len(en) and en[k]) else 0.0
         widths.append(max(w_gr, w_de, w_en))
@@ -1757,7 +1842,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         indent_pt=next_indent_pt,
                         global_speaker_width_pt=next_current_speaker_width_pt,
                         meter_on=versmass_display and next_has_versmass,
-                        en_tokens=next_en_tokens
+                        en_tokens=next_en_tokens,
+                        tag_config=tag_config  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                     )
 
                     # Sammle die Zeilen
@@ -1852,7 +1938,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 indent_pt=indent_pt,
                 global_speaker_width_pt=current_speaker_width_pt,  # Verwende aktuelle Breite!
                 meter_on=versmass_display and has_versmass,
-                en_tokens=en_tokens
+                en_tokens=en_tokens,
+                tag_config=tag_config  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
             )
             # WICHTIG: Alle Tabellen eines Paares/Triplikats zusammenhalten
             # (verhindert, dass GR/DE/EN über Seitenumbrüche getrennt werden)

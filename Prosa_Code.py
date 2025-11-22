@@ -1009,7 +1009,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             speaker_display:str, speaker_width_pt:float, style_speaker,
                             table_halign='LEFT', italic=False,
                             en_tokens=None,  # NEU: Englische Tokens
-                            hide_pipes:bool=False):  # NEU: Pipes (|) in Übersetzungen verstecken
+                            hide_pipes:bool=False,  # NEU: Pipes (|) in Übersetzungen verstecken
+                            tag_config:dict=None):  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
     if en_tokens is None:
         en_tokens = []
     if de_tokens is None:
@@ -1029,8 +1030,88 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         de = ['' if RE_INLINE_MARK.match(t or '') else (t or '') for t in de]
         en = ['' if RE_INLINE_MARK.match(t or '') else (t or '') for t in en]
 
+    def get_visible_tags(token: str, tag_config: dict = None) -> list:
+        """Gibt die Liste der sichtbaren Tags für ein Token zurück (basierend auf tag_config)."""
+        if not tag_config or not token:
+            tags = RE_TAG.findall(token)
+            return tags
+        
+        tags = RE_TAG.findall(token)
+        if not tags:
+            return []
+        
+        visible_tags = []
+        from shared.preprocess import RULE_TAG_MAP
+        
+        for tag in tags:
+            tag_lower = tag.lower()
+            is_hidden = False
+            
+            # Prüfe, ob der Tag direkt versteckt ist (z.B. "nomen_N")
+            if tag_config.get(tag_lower, {}).get('hide', False):
+                is_hidden = True
+            else:
+                # Prüfe, ob die Gruppe versteckt ist (z.B. "nomen")
+                for group_id, group_tags in RULE_TAG_MAP.items():
+                    if tag in group_tags:
+                        if tag_config.get(group_id, {}).get('hide', False):
+                            is_hidden = True
+                        break
+            
+            if not is_hidden:
+                visible_tags.append(tag)
+        
+        return visible_tags
+    
+    def measure_token_width_with_visibility(token: str, font: str, size: float, 
+                                            is_greek_row: bool = False, 
+                                            tag_config: dict = None) -> float:
+        """Berechnet die Breite eines Tokens, wobei versteckte Tags ignoriert werden."""
+        if not token:
+            return 0.0
+        
+        # Berechne Breite MIT allen Tags (Standard)
+        w_with_tags = visible_measure_token(token, font=font, size=size, 
+                                           is_greek_row=is_greek_row, reverse_mode=False)
+        
+        # Wenn keine Tag-Konfiguration vorhanden, verwende Standard-Breite
+        if not tag_config:
+            return w_with_tags
+        
+        # Berechne Breite OHNE versteckte Tags
+        visible_tags = get_visible_tags(token, tag_config)
+        if len(visible_tags) == len(RE_TAG.findall(token)):
+            # Alle Tags sind sichtbar, verwende Standard-Breite
+            return w_with_tags
+        
+        # Einige Tags sind versteckt - berechne Breite OHNE versteckte Tags
+        # Entferne versteckte Tags aus dem Token
+        tags = RE_TAG.findall(token)
+        hidden_tags = [t for t in tags if t not in visible_tags]
+        
+        # Entferne versteckte Tags aus dem Token-String
+        token_without_hidden = token
+        for hidden_tag in hidden_tags:
+            token_without_hidden = token_without_hidden.replace(f'({hidden_tag})', '')
+        
+        # Berechne Breite OHNE versteckte Tags
+        w_without_hidden = visible_measure_token(token_without_hidden, font=font, size=size,
+                                                 is_greek_row=is_greek_row, reverse_mode=False)
+        
+        # Verwende das Maximum, um Überlappungen zu vermeiden
+        # Füge einen kleinen Sicherheitsabstand hinzu
+        safety_margin = size * 0.2  # 20% der Font-Size als Sicherheitsabstand
+        return max(w_with_tags, w_without_hidden + safety_margin)
+    
     def col_width(k:int) -> float:
-        w_gr = visible_measure_token(gr[k], font=token_gr_style.fontName, size=token_gr_style.fontSize, is_greek_row=True, reverse_mode=False) if (k < len(gr) and gr[k]) else 0.0
+        # Verwende die neue Funktion, die Tag-Sichtbarkeit berücksichtigt
+        w_gr = measure_token_width_with_visibility(
+            gr[k] if (k < len(gr) and gr[k]) else '', 
+            font=token_gr_style.fontName, 
+            size=token_gr_style.fontSize, 
+            is_greek_row=True,
+            tag_config=tag_config
+        ) if (k < len(gr) and gr[k]) else 0.0
         
         # Für DE und EN: Berechne Breite SO, als wären Pipes bereits durch Leerzeichen ersetzt (wenn hide_pipes aktiviert ist)
         if hide_pipes:
@@ -1051,30 +1132,14 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             de_pipe_extra = 0.0
             en_pipe_extra = 0.0
         
+        # DE- und EN-Tokens haben normalerweise keine Tags, daher verwenden wir die Standard-Breitenberechnung
+        # Aber berücksichtigen wir den Pipe-Split für korrekte Breitenberechnung
         w_de = visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if de_text else 0.0
         w_en = visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if en_text else 0.0
         
         # Addiere zusätzlichen Platz für ersetzte Pipes
         w_de += de_pipe_extra
         w_en += en_pipe_extra
-        
-        # WICHTIG: Wenn Tags versteckt werden können, füge einen zusätzlichen Abstand hinzu,
-        # um Überlappungen zu vermeiden. Dies ist notwendig, weil die Breite MIT Tags berechnet wird,
-        # aber wenn Tags versteckt werden, ist das Token schmaler.
-        # Lösung: Berechne auch die Breite OHNE Tags und verwende das Maximum
-        # (Dies ist eine vereinfachte Lösung - eine vollständige Lösung würde die Tag-Konfiguration benötigen)
-        if de_text:
-            # Versuche, die Breite ohne Tags zu schätzen (entferne alle Tag-Patterns)
-            de_text_no_tags = RE_TAG_NAKED.sub('', de_text).strip()
-            if de_text_no_tags:
-                w_de_no_tags = visible_measure_token(de_text_no_tags, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False)
-                w_de = max(w_de, w_de_no_tags + token_de_style.fontSize * 0.3)  # 30% Font-Size als Sicherheitsabstand
-        
-        if en_text:
-            en_text_no_tags = RE_TAG_NAKED.sub('', en_text).strip()
-            if en_text_no_tags:
-                w_en_no_tags = visible_measure_token(en_text_no_tags, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False)
-                w_en = max(w_en, w_en_no_tags + token_de_style.fontSize * 0.3)  # 30% Font-Size als Sicherheitsabstand
         
         return max(w_gr, w_de, w_en)
 
@@ -1409,7 +1474,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             speaker_display=(f'[{sdisp}]:' if sdisp else ''), speaker_width_pt=swidth, style_speaker=style_speaker,
             table_halign='LEFT', italic=False,
             en_tokens=en_tokens,  # NEU: Englische Tokens übergeben
-            hide_pipes=hide_pipes  # NEU: Pipes (|) in Übersetzungen verstecken
+            hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
+            tag_config=tag_config  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
         )
         for idx, t in enumerate(tables):
             if idx > 0: t.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
@@ -1716,7 +1782,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         speaker_display='', speaker_width_pt=0.0, style_speaker=style_speaker,
                         table_halign='CENTER', italic=True,  # Zentriert für Einrückung von beiden Seiten
                         en_tokens=q_en,  # NEU: Englische Tokens übergeben
-                        hide_pipes=hide_pipes  # NEU: Pipes (|) in Übersetzungen verstecken
+                        hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
+                        tag_config=tag_config  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                     )
                     q_tables.extend(line_tables)
             for k, tquote in enumerate(q_tables):
