@@ -881,6 +881,11 @@ async function loadTexts() {
     el.birkenbihlText.textContent = "Fehler: Werk-Metadaten unvollständig.";
     return;
   }
+  
+  // Setze den Browser-Tab-Titel auf den Werknamen
+  if (state.work) {
+    document.title = state.work;
+  }
 
   // Der Pfad aus dem Katalog ist der vollständige relative Pfad mit Sprachebene.
   // z.B. "griechisch/poesie/Aischylos/Der_gefesselte_Prometheus"
@@ -1231,6 +1236,19 @@ function createTableRow(item, isGroupLeader = false) {
 }
 
 function showTagConfigModal() {
+  // 0. Lade gespeicherte Tag-Konfiguration aus localStorage (falls vorhanden)
+  const langKey = state.lang; // "griechisch" oder "latein"
+  const savedConfig = localStorage.getItem(`tagConfig_${langKey}`);
+  if (savedConfig) {
+    try {
+      state.tagConfig = JSON.parse(savedConfig);
+      console.log(`✅ Tag-Konfiguration für ${langKey} aus localStorage geladen`);
+    } catch (e) {
+      console.error('❌ Fehler beim Laden der Tag-Konfiguration:', e);
+      state.tagConfig = {};
+    }
+  }
+  
   // 1. Container für kleine Tabellen leeren
   const tablesContainer = document.getElementById("tag-config-tables");
   if (!tablesContainer) return;
@@ -1598,6 +1616,11 @@ function handleTableChange(event) {
 
   // Hintergrundfarben der Zellen aktualisieren
   updateCellBackgroundColors();
+  
+  // Speichere Tag-Konfiguration in localStorage (pro Sprache)
+  const langKey = state.lang; // "griechisch" oder "latein"
+  localStorage.setItem(`tagConfig_${langKey}`, JSON.stringify(state.tagConfig));
+  console.log(`💾 Tag-Konfiguration für ${langKey} gespeichert`);
 }
 
 function updateCellBackgroundColors() {
@@ -2008,7 +2031,18 @@ function wireEvents() {
   });
 
   el.confirmResetBtn?.addEventListener("click", () => {
-    initializeDraftText(); // Stellt den originalen, mit Spans versehenen Text wieder her
+    // Lösche gespeicherten Draft aus localStorage
+    const workKey = `${state.lang}_${state.kind}_${state.category}_${state.author}_${state.work}`;
+    localStorage.removeItem(`draft_${workKey}`);
+    console.log('✅ Gespeicherter Draft gelöscht');
+    
+    // Lade Original-Text
+    if (state.originalBirkenbihlText && el.draftText) {
+      el.draftText.innerHTML = addSpansToTags(state.originalBirkenbihlText);
+      el.draftStatus.textContent = "Entwurf zurückgesetzt.";
+      console.log('✅ Original-Text wiederhergestellt');
+    }
+    
     el.resetDraftModal.style.display = "none";
   });
 
@@ -2298,11 +2332,26 @@ async function loadWorkMeta() {
           alert("Kein Entwurfs-Text vorhanden zum Herunterladen.");
           return;
         }
+        
+        // Baue einen aussagekräftigen Dateinamen:
+        // z.B. "Aischylos_Agamemnon_gr_de_en_Entwurf_translinear.txt"
+        const author = state.author || "";
+        const work = state.work || "";
+        const lang = state.lang === "griechisch" ? "gr" : (state.lang === "latein" ? "lat" : state.lang);
+        
+        // Sprachen: de ist immer dabei, en nur wenn languages=3
+        let langs = `${lang}_de`;
+        if (state.languages === 3) {
+          langs += "_en";
+        }
+        
+        const filename = `${author}_${work}_${langs}_Entwurf_translinear.txt`;
+        
         const blob = new Blob([draftText], { type: "text/plain" });
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = "translinear_entwurf.txt";
+        a.download = filename;
         a.style.display = "none";
         document.body.appendChild(a);
         a.click();
@@ -2422,8 +2471,21 @@ function bindPdfUtilityButtons() {
     openTabBtn.addEventListener("click", () => {
       const pdfUrl = getCurrentPdfUrl();
       if (!pdfUrl) return;
-      const newWindow = window.open(pdfUrl, "_blank");
-      if (newWindow) newWindow.focus();
+      
+      // Für Draft-PDFs: Verwende Worker-Proxy mit draft=true Parameter
+      if (state.source === "draft") {
+        const filename = buildDraftPdfFilename();
+        // Worker-URL für Draft-PDFs: /release?file=...&mode=inline&draft=true
+        const workerUrl = `${WORKER_BASE}/release?file=${encodeURIComponent(filename)}&mode=inline&draft=true`;
+        const newWindow = window.open(workerUrl, "_blank");
+        if (newWindow) newWindow.focus();
+      } else {
+        // Für Original-PDFs: Verwende Worker-Proxy
+        const filename = buildPdfFilename();
+        const workerUrl = buildReleaseProxyUrl(filename, "inline");
+        const newWindow = window.open(workerUrl, "_blank");
+        if (newWindow) newWindow.focus();
+      }
     });
   }
 

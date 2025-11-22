@@ -43,7 +43,86 @@ export default {
       const file = (url.searchParams.get("file") || "").trim();
       const modeRaw = (url.searchParams.get("mode") || "inline").toLowerCase();
       const mode = modeRaw === "attachment" ? "attachment" : "inline";
+      const isDraft = url.searchParams.get("draft") === "true";
 
+      // Für Draft-PDFs: Verwende raw.githubusercontent.com statt GitHub Releases
+      if (isDraft) {
+        if (!file) {
+          return resp(
+            {
+              ok: false,
+              error: "missing_params",
+              message: "Query parameter 'file' is required for draft PDFs.",
+            },
+            400,
+            CORS
+          );
+        }
+        
+        const owner = env.OWNER;
+        const repo = env.REPO;
+        if (!owner || !repo) {
+          return resp(
+            {
+              ok: false,
+              error: "misconfigured",
+              message: "OWNER/REPO missing for draft proxy",
+            },
+            500,
+            CORS
+          );
+        }
+        
+        // Draft-PDFs sind auf raw.githubusercontent.com/OWNER/REPO/main/pdf_drafts/...
+        const draftUrl = `https://raw.githubusercontent.com/${owner}/${repo}/main/pdf_drafts/${file}`;
+        const upstream = await fetch(draftUrl, {
+          method: method === "HEAD" ? "HEAD" : "GET",
+        });
+        
+        if (!upstream || !upstream.ok) {
+          return resp(
+            {
+              ok: false,
+              error: "upstream_error",
+              status: upstream?.status || 404,
+              message: `GitHub raw responded with ${upstream?.status || 404}`,
+              url: draftUrl,
+            },
+            upstream?.status || 404,
+            CORS
+          );
+        }
+        
+        // Content-Type für PDFs setzen
+        let contentType = upstream.headers.get("content-type") || "";
+        if (!contentType || contentType === "application/octet-stream") {
+          if (file.toLowerCase().endsWith(".pdf")) {
+            contentType = "application/pdf";
+          } else if (file.toLowerCase().endsWith(".txt")) {
+            contentType = "text/plain; charset=utf-8";
+          }
+        }
+        
+        // Content-Disposition Header für Download-Namen
+        const baseName = file.split("/").pop() || "translinear.pdf";
+        const disposition = mode === "attachment"
+          ? `attachment; filename="${baseName}"`
+          : `inline; filename="${baseName}"`;
+        
+        const headers = {
+          ...CORS,
+          "Content-Type": contentType,
+          "Content-Disposition": disposition,
+        };
+        
+        if (method === "HEAD") {
+          return new Response(null, { status: 200, headers });
+        }
+        
+        return new Response(upstream.body, { status: 200, headers });
+      }
+      
+      // Original Release-Proxy-Logik (für nicht-Draft PDFs)
       if (!tag || !file) {
         return resp(
           {
