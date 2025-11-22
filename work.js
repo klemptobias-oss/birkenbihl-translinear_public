@@ -922,8 +922,17 @@ async function loadTexts() {
       state.originalBirkenbihlText = text;
       console.log('✅ Birkenbihl text loaded from', result.path);
 
+      // Versuche, gespeicherten Draft-Text aus localStorage zu laden
+      const workKey = `${state.lang}_${state.kind}_${state.category}_${state.author}_${state.work}`;
+      const savedDraft = localStorage.getItem(`draft_${workKey}`);
+
       if (el.draftText) {
-        el.draftText.innerHTML = addSpansToTags(text);
+        if (savedDraft) {
+          console.log('✅ Gespeicherter Draft-Text wiederhergestellt');
+          el.draftText.innerHTML = addSpansToTags(savedDraft);
+        } else {
+          el.draftText.innerHTML = addSpansToTags(text);
+        }
       }
       if (el.birkenbihlText) {
         el.birkenbihlText.innerHTML = addSpansToTags(text);
@@ -954,6 +963,9 @@ async function initializeDraftText() {
     el.draftText.textContent.trim()
   ) {
     console.log("Draft text already loaded, skipping initialization");
+    
+    // Event-Listener für Auto-Save hinzufügen
+    setupDraftAutoSave();
     return;
   }
 
@@ -965,6 +977,30 @@ async function initializeDraftText() {
     el.draftText.textContent = "Fehler: Birkenbihl-Text nicht verfügbar.";
     console.error("Birkenbihl text not available in state");
   }
+  
+  // Event-Listener für Auto-Save hinzufügen
+  setupDraftAutoSave();
+}
+
+function setupDraftAutoSave() {
+  if (!el.draftText || el.draftText.dataset.autoSaveSetup) return;
+  
+  // Markiere, dass Auto-Save bereits eingerichtet ist
+  el.draftText.dataset.autoSaveSetup = "true";
+  
+  let saveTimeout;
+  el.draftText.addEventListener('input', () => {
+    // Debounce: Speichere erst nach 1 Sekunde Inaktivität
+    clearTimeout(saveTimeout);
+    saveTimeout = setTimeout(() => {
+      const workKey = `${state.lang}_${state.kind}_${state.category}_${state.author}_${state.work}`;
+      const draftContent = el.draftText.textContent || '';
+      localStorage.setItem(`draft_${workKey}`, draftContent);
+      console.log('💾 Draft auto-saved');
+    }, 1000);
+  });
+  
+  console.log('✅ Draft auto-save eingerichtet');
 }
 
 function addSpansToTags(text) {

@@ -212,6 +212,18 @@ def _get_wortart_and_relevant_tags(token_tags: Set[str]) -> (Optional[str], Set[
         if tags_ohne_ignorable and all(t in KASUS_TAGS for t in tags_ohne_ignorable):
              return 'nomen', token_tags
 
+    # 3. Standalone-Wortarten: Kon, Pt, Prp, ij
+    # WICHTIG: Diese werden erkannt, wenn keine andere Wortart gefunden wurde
+    # Auch wenn sie mit anderen Tags kombiniert sind (z.B. καί(Kon) oder δέ(Pt))
+    if 'Kon' in token_tags:
+        return 'kon', token_tags
+    if 'Pt' in token_tags:
+        return 'pt', token_tags
+    if 'Prp' in token_tags:
+        return 'prp', token_tags
+    if 'ij' in token_tags:
+        return 'ij', token_tags
+
     return None, set()
 
 def _is_known_sup(tag: str) -> bool:
@@ -587,6 +599,9 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
         entry = translation_rules.get(wortart.lower())
         if entry:
             if entry.get("all"):
+                # Debug: Zeige welche Wortart erkannt wurde
+                if wortart.lower() in ('kon', 'pt', 'prp', 'ij'):
+                    print(f"DEBUG: Wortart '{wortart}' erkannt für Token mit Tags {normalized_tags}, Übersetzung wird ausgeblendet")
                 return True
             if entry.get("tags") and any(tag in entry["tags"] for tag in normalized_tags):
                 return True
@@ -661,9 +676,22 @@ def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any]) -> Li
     Fügt Farbsymbole (#, +, §, $) basierend auf der tag_config hinzu.
     Gibt eine NEUE, tief kopierte Blockliste zurück.
     Die Original-Tags bleiben vollständig erhalten.
+    
+    WICHTIG: Versteckt auch Übersetzungen für (HideTrans) Tags BEVOR die Tags entfernt werden.
     """
     import copy
-    return _apply_colors_and_placements(copy.deepcopy(blocks), tag_config)
+    blocks_copy = copy.deepcopy(blocks)
+    
+    # Schritt 1: Verstecke Übersetzungen für (HideTrans) Tags
+    blocks_with_hidden_trans = []
+    for block in blocks_copy:
+        if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
+            blocks_with_hidden_trans.append(_hide_manual_translations_in_block(block))
+        else:
+            blocks_with_hidden_trans.append(block)
+    
+    # Schritt 2: Füge Farben hinzu
+    return _apply_colors_and_placements(blocks_with_hidden_trans, tag_config)
 
 def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
@@ -935,6 +963,87 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
                     result['en_tokens'][idx] = ''
         return result
     return block
+
+# Hilfsfunktion zum Verstecken von Übersetzungen basierend auf (HideTrans) Tag
+def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Versteckt Übersetzungen für Tokens, die den (HideTrans) Tag haben.
+    Dies ist unabhängig von der tag_config und funktioniert für manuelle Tags im Text.
+    """
+    if 'gr_tokens' not in block:
+        return block
+    
+    source_tokens = block.get('gr_tokens', [])
+    hide_flags = []
+    
+    for token in source_tokens:
+        tags = _extract_tags(token)
+        # Prüfe auf HideTrans (case-insensitive, da Nutzer verschiedene Schreibweisen verwenden könnten)
+        should_hide = any(tag.lower() == TRANSLATION_HIDE_TAG.lower() for tag in tags)
+        if should_hide:
+            print(f"DEBUG: (HideTrans) gefunden in Token: {token}, Tags: {tags}")
+        hide_flags.append(should_hide)
+    
+    result = {**block}
+    
+    # Verstecke Übersetzungen für markierte Tokens
+    for idx, should_hide in enumerate(hide_flags):
+        if not should_hide:
+            continue
+        if 'de_tokens' in result and idx < len(result['de_tokens']):
+            print(f"DEBUG: Verstecke deutsche Übersetzung für Token {idx}: {result['de_tokens'][idx]}")
+            result['de_tokens'][idx] = ''
+        if 'en_tokens' in result and idx < len(result['en_tokens']):
+            print(f"DEBUG: Verstecke englische Übersetzung für Token {idx}: {result['en_tokens'][idx]}")
+            result['en_tokens'][idx] = ''
+    
+    return result
+
+def _all_translations_hidden(block: Dict[str, Any]) -> bool:
+    """
+    Prüft, ob ALLE Übersetzungen in einem Block leer/versteckt sind.
+    Gibt True zurück, wenn alle de_tokens (und en_tokens, falls vorhanden) leer sind.
+    """
+    if 'de_tokens' not in block:
+        return False
+    
+    de_tokens = block.get('de_tokens', [])
+    en_tokens = block.get('en_tokens', [])
+    
+    # Prüfe, ob alle deutschen Übersetzungen leer sind
+    de_all_empty = all(not tok or tok.strip() == '' for tok in de_tokens)
+    
+    # Wenn en_tokens vorhanden, müssen auch diese leer sein
+    if en_tokens:
+        en_all_empty = all(not tok or tok.strip() == '' for tok in en_tokens)
+        return de_all_empty and en_all_empty
+    
+    return de_all_empty
+
+def remove_empty_translation_lines(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Entfernt die Übersetzungszeilen aus Blöcken, wo ALLE Übersetzungen versteckt sind.
+    Dies verhindert leere Zeilen im PDF, wenn der Nutzer alle Übersetzungen ausblendet.
+    
+    WICHTIG: Dies funktioniert nur für 'pair' und 'flow' Blöcke mit Tokens.
+    """
+    result = []
+    for block in blocks:
+        if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
+            if _all_translations_hidden(block):
+                # Entferne die Übersetzungszeilen komplett
+                new_block = {**block}
+                new_block.pop('de_tokens', None)
+                new_block.pop('en_tokens', None)
+                new_block.pop('de', None)
+                new_block.pop('en', None)
+                result.append(new_block)
+            else:
+                result.append(block)
+        else:
+            result.append(block)
+    
+    return result
 
 # Hilfsfunktion zum Entfernen von Farben in einem Block
 def _strip_colors_from_block(block: Dict[str, Any]) -> Dict[str, Any]:

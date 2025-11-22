@@ -983,7 +983,7 @@ def group_pairs_into_flows(blocks):
     return flows
 
 # ----------------------- Tabellenbau -----------------------
-def build_tables_for_stream(gr_tokens, de_tokens, *,
+def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             doc_width_pt,
                             reverse_mode:bool=False,  # Deprecated, kept for compatibility
                             token_gr_style, token_de_style,
@@ -993,12 +993,22 @@ def build_tables_for_stream(gr_tokens, de_tokens, *,
                             en_tokens=None):  # NEU: Englische Tokens
     if en_tokens is None:
         en_tokens = []
-    cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
-    gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
-    de = de_tokens[:] + [''] * (cols - len(de_tokens))
-    en = en_tokens[:] + [''] * (cols - len(en_tokens))
-    de = ['' if RE_INLINE_MARK.match(t or '') else (t or '') for t in de]
-    en = ['' if RE_INLINE_MARK.match(t or '') else (t or '') for t in en]
+    if de_tokens is None:
+        de_tokens = []
+    
+    # Wenn KEINE Übersetzungen vorhanden sind (alle ausgeblendet), zeige nur die griechische Zeile
+    if not de_tokens and not en_tokens:
+        cols = len(gr_tokens)
+        gr = gr_tokens[:]
+        de = []
+        en = []
+    else:
+        cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
+        gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
+        de = de_tokens[:] + [''] * (cols - len(de_tokens))
+        en = en_tokens[:] + [''] * (cols - len(en_tokens))
+        de = ['' if RE_INLINE_MARK.match(t or '') else (t or '') for t in de]
+        en = ['' if RE_INLINE_MARK.match(t or '') else (t or '') for t in en]
 
     def col_width(k:int) -> float:
         w_gr = visible_measure_token(gr[k], font=token_gr_style.fontName, size=token_gr_style.fontSize, is_greek_row=True, reverse_mode=False) if gr[k] else 0.0
@@ -1123,10 +1133,20 @@ def build_tables_for_stream(gr_tokens, de_tokens, *,
 
         # NEU: Prüfe, ob englische Zeile vorhanden ist
         has_en = any(slice_en)
+        has_de = any(de)  # Prüfe, ob überhaupt deutsche Übersetzungen vorhanden sind
+        
         if has_en:
-            tbl = Table([row_gr, row_de, row_en], colWidths=colWidths, hAlign=table_halign)
-        else:
+            if has_de:
+                tbl = Table([row_gr, row_de, row_en], colWidths=colWidths, hAlign=table_halign)
+            else:
+                # Keine deutschen Übersetzungen, nur griechisch und englisch
+                tbl = Table([row_gr, row_en], colWidths=colWidths, hAlign=table_halign)
+        elif has_de:
+            # Nur griechisch und deutsch (Standard 2-sprachig)
             tbl = Table([row_gr, row_de], colWidths=colWidths, hAlign=table_halign)
+        else:
+            # Keine Übersetzungen, nur griechische Zeile
+            tbl = Table([row_gr], colWidths=colWidths, hAlign=table_halign)
         
         gap_pts = INTRA_PAIR_GAP_MM * mm
         style_list = [
@@ -1134,14 +1154,23 @@ def build_tables_for_stream(gr_tokens, de_tokens, *,
             ('RIGHTPADDING',  (0,0), (-1,-1), CELL_PAD_LR_PT),
             ('TOPPADDING',    (0,0), (-1,-1), 0.0),
             ('BOTTOMPADDING', (0,0), (-1,-1), 0.0),
-            ('BOTTOMPADDING', (0,0), (-1,0),  gap_pts),
             ('VALIGN',        (0,0), (-1,-1), 'BOTTOM'),
             ('ALIGN',         (0,0), (-1,-1), 'CENTER'),
         ]
+        
+        # Padding nur hinzufügen, wenn Übersetzungen vorhanden sind
+        if has_de or has_en:
+            style_list.append(('BOTTOMPADDING', (0,0), (-1,0), gap_pts))
+        
         # NEU: Für 3-sprachige Texte: Padding zwischen Zeilen - MINIMAL (fast kein Abstand)
-        if has_en:
+        if has_en and has_de:
             style_list.append(('BOTTOMPADDING', (0,1), (-1,1), -1.5))  # Leicht negativ = nah aber nicht überlappend
             style_list.append(('TOPPADDING',    (0,2), (-1,2), -1.5))  # Leicht negativ = nah aber nicht überlappend
+        elif has_en and not has_de:
+            # Nur griechisch und englisch (keine deutsche Zeile)
+            style_list.append(('BOTTOMPADDING', (0,0), (-1,0), -1.5))  # Leicht negativ = nah aber nicht überlappend
+            style_list.append(('TOPPADDING',    (0,1), (-1,1), -1.5))  # Leicht negativ = nah aber nicht überlappend
+        
         tbl.setStyle(TableStyle(style_list))
         tables.append(tbl)
         first_slice, i = False, j

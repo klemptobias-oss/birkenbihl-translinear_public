@@ -206,11 +206,14 @@ def _process_one_input(infile: str,
         else: # NO_TAGS
             blocks_with_tags = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
 
-        # Schritt 3: Farbsymbole entfernen (für _BlackWhite-Versionen)
+        # Schritt 3: Entferne leere Übersetzungszeilen (wenn alle Übersetzungen ausgeblendet)
+        blocks_no_empty_trans = preprocess.remove_empty_translation_lines(blocks_with_tags)
+
+        # Schritt 4: Farbsymbole entfernen (für _BlackWhite-Versionen)
         if color_mode == "BLACK_WHITE":
-            final_blocks = preprocess.remove_all_color_symbols(blocks_with_tags)
+            final_blocks = preprocess.remove_all_color_symbols(blocks_no_empty_trans)
         else: # COLOR
-            final_blocks = blocks_with_tags
+            final_blocks = blocks_no_empty_trans
 
         # Schritt 4: PDF rendern
         name_no_meter = output_pdf_name(base, NameOpts(strength=strength, color_mode=color_mode, tag_mode=tag_mode))

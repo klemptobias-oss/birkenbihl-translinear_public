@@ -1188,7 +1188,7 @@ def process_input_file(fname:str):
     return blocks
 
 # ========= Tabellenbau – NUM → Sprecher → Einrückung → Tokens =========
-def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str], 
+def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None, 
                           indent_pt: float = 0.0,
                           global_speaker_width_pt: float = None,
                           meter_on: bool = False,
@@ -1237,10 +1237,20 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str],
     # Für 3-sprachige Texte: englische Zeile einbeziehen
     if en_tokens is None:
         en_tokens = []
-    cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
-    gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
-    de = de_tokens[:] + [''] * (cols - len(de_tokens))
-    en = en_tokens[:] + [''] * (cols - len(en_tokens))
+    if de_tokens is None:
+        de_tokens = []
+    
+    # Wenn KEINE Übersetzungen vorhanden sind (alle ausgeblendet), zeige nur die griechische Zeile
+    if not de_tokens and not en_tokens:
+        cols = len(gr_tokens)
+        gr = gr_tokens[:]
+        de = []
+        en = []
+    else:
+        cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
+        gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
+        de = de_tokens[:] + [''] * (cols - len(de_tokens))
+        en = en_tokens[:] + [''] * (cols - len(en_tokens))
 
     # Effektive cfg abhängig von meter_on (Versmaß an/aus) und tag_mode
     eff_cfg = dict(CFG)
@@ -1394,12 +1404,23 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str],
         row_de = [num_para_de, num_gap_de, sp_para_de, sp_gap_de, indent_de] + de_cells
         col_w  = [num_w, num_gap, sp_w,        sp_gap,   indent_w] + slice_w
 
+        # Prüfe, ob Übersetzungen vorhanden sind
+        has_de = any(de)
+        
         # Für 3-sprachige Texte: englische Zeile hinzufügen
         if has_en:
             row_en = [num_para_en, num_gap_en, sp_para_en, sp_gap_en, indent_en] + en_cells
-            tbl = Table([row_gr, row_de, row_en], colWidths=col_w, hAlign='LEFT')
-        else:
+            if has_de:
+                tbl = Table([row_gr, row_de, row_en], colWidths=col_w, hAlign='LEFT')
+            else:
+                # Keine deutschen Übersetzungen, nur griechisch und englisch
+                tbl = Table([row_gr, row_en], colWidths=col_w, hAlign='LEFT')
+        elif has_de:
+            # Nur griechisch und deutsch (Standard 2-sprachig)
             tbl = Table([row_gr, row_de], colWidths=col_w, hAlign='LEFT')
+        else:
+            # Keine Übersetzungen, nur griechische Zeile
+            tbl = Table([row_gr], colWidths=col_w, hAlign='LEFT')
 
         if meter_on:
             # Versmaß: KEIN Innenabstand, sonst entstehen Lücken zwischen Flowables
