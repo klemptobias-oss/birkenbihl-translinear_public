@@ -2505,21 +2505,11 @@ function bindPdfUtilityButtons() {
       const pdfUrl = getCurrentPdfUrl();
       if (!pdfUrl) return;
       
-      // Für Draft-PDFs: Verwende Worker-Proxy mit draft=true Parameter
-      // Für Original-PDFs: Verwende Worker-Proxy
-      if (state.source === "draft") {
-        // Draft-PDFs: Verwende Worker, um Content-Disposition Header zu ändern
-        const filename = buildDraftPdfFilename();
-        const workerUrl = `${WORKER_BASE}/release?file=${encodeURIComponent(filename)}&mode=inline&draft=true`;
-        const newWindow = window.open(workerUrl, "_blank");
-        if (newWindow) newWindow.focus();
-      } else {
-        // Für Original-PDFs: Verwende Worker-Proxy
-        const filename = buildPdfFilename();
-        const workerUrl = buildReleaseProxyUrl(filename, "inline");
-        const newWindow = window.open(workerUrl, "_blank");
-        if (newWindow) newWindow.focus();
-      }
+      // Öffne PDF in neuem Tab
+      // HINWEIS: Draft-PDFs werden möglicherweise heruntergeladen statt angezeigt
+      // (GitHub raw.githubusercontent.com setzt Content-Disposition: attachment)
+      const newWindow = window.open(pdfUrl, "_blank");
+      if (newWindow) newWindow.focus();
     });
   }
 
