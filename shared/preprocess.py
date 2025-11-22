@@ -677,21 +677,23 @@ def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any]) -> Li
     Gibt eine NEUE, tief kopierte Blockliste zurück.
     Die Original-Tags bleiben vollständig erhalten.
     
-    WICHTIG: Versteckt auch Übersetzungen für (HideTrans) Tags BEVOR die Tags entfernt werden.
+    WICHTIG: Versteckt auch Übersetzungen für (HideTrans) Tags NACH dem Hinzufügen der Farben.
     """
     import copy
     blocks_copy = copy.deepcopy(blocks)
     
-    # Schritt 1: Verstecke Übersetzungen für (HideTrans) Tags
+    # Schritt 1: Füge Farben hinzu (ZUERST, damit Farben nicht verloren gehen)
+    blocks_with_colors = _apply_colors_and_placements(blocks_copy, tag_config)
+    
+    # Schritt 2: Verstecke Übersetzungen für (HideTrans) Tags (DANACH)
     blocks_with_hidden_trans = []
-    for block in blocks_copy:
+    for block in blocks_with_colors:
         if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
             blocks_with_hidden_trans.append(_hide_manual_translations_in_block(block))
         else:
             blocks_with_hidden_trans.append(block)
     
-    # Schritt 2: Füge Farben hinzu
-    return _apply_colors_and_placements(blocks_with_hidden_trans, tag_config)
+    return blocks_with_hidden_trans
 
 def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """

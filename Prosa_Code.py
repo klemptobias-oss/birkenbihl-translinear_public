@@ -1011,9 +1011,9 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         en = ['' if RE_INLINE_MARK.match(t or '') else (t or '') for t in en]
 
     def col_width(k:int) -> float:
-        w_gr = visible_measure_token(gr[k], font=token_gr_style.fontName, size=token_gr_style.fontSize, is_greek_row=True, reverse_mode=False) if gr[k] else 0.0
-        w_de = visible_measure_token(de[k], font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if de[k] else 0.0
-        w_en = visible_measure_token(en[k], font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if en[k] else 0.0
+        w_gr = visible_measure_token(gr[k], font=token_gr_style.fontName, size=token_gr_style.fontSize, is_greek_row=True, reverse_mode=False) if (k < len(gr) and gr[k]) else 0.0
+        w_de = visible_measure_token(de[k], font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if (k < len(de) and de[k]) else 0.0
+        w_en = visible_measure_token(en[k], font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if (k < len(en) and en[k]) else 0.0
         return max(w_gr, w_de, w_en)
 
     widths = [col_width(k) for k in range(cols)]

@@ -1275,9 +1275,9 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     # Breiten: Berücksichtige auch englische Zeile
     widths = []
     for k in range(cols):
-        w_gr = visible_measure_token(gr[k], font=token_gr_style.fontName, size=token_gr_style.fontSize, cfg=eff_cfg, is_greek_row=True)  if gr[k] else 0.0
-        w_de = visible_measure_token(de[k], font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if de[k] else 0.0
-        w_en = visible_measure_token(en[k], font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if en[k] else 0.0
+        w_gr = visible_measure_token(gr[k], font=token_gr_style.fontName, size=token_gr_style.fontSize, cfg=eff_cfg, is_greek_row=True) if (k < len(gr) and gr[k]) else 0.0
+        w_de = visible_measure_token(de[k], font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if (k < len(de) and de[k]) else 0.0
+        w_en = visible_measure_token(en[k], font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if (k < len(en) and en[k]) else 0.0
         widths.append(max(w_gr, w_de, w_en))
 
     tables, i, first_slice = [], 0, True
