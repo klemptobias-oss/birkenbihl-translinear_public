@@ -113,6 +113,7 @@ const el = {
   confirmBtn: document.getElementById("confirmRendering"),
   toggleColorsBtn: document.getElementById("toggleAllColors"),
   toggleHiddenBtn: document.getElementById("toggleAllTagsHidden"),
+  toggleTranslationsHiddenBtn: document.getElementById("toggleAllTranslationsHidden"),
 
   // Neue Elemente
   toggleBirkenbihlTagsBtn: document.getElementById("toggleBirkenbihlTags"),
@@ -797,14 +798,15 @@ function showDraftWaitingPlaceholder(extra = {}) {
   const url = extra.url || state.lastDraftUrl;
   // Ersetze "birkenbihl" durch "translinear" im Dateinamen
   const displayFilename = filename ? filename.replace(/_birkenbihl_/g, "_translinear_").replace(/birkenbihl/g, "translinear") : "translinear.txt";
-  const safeFilename = `<code>${escapeHtml(displayFilename)}</code>`;
-  const safeUrl = url ? `<code>${escapeHtml(url)}</code>` : "";
   const extraInfo = `
-    <p>Datei: ${safeFilename}</p>
-    ${safeUrl ? `<p>Zielpfad: ${safeUrl}</p>` : ""}
-    <p>
-      <a href="${GH_ACTIONS_URL}" target="_blank" rel="noopener">
-        GitHub Actions Status ansehen →
+    <p style="margin: 10px 0;">
+      <strong>Datei:</strong> <code style="font-size: 0.9em;">${escapeHtml(displayFilename)}</code>
+    </p>
+    <p style="margin: 15px 0;">
+      <a href="${GH_ACTIONS_URL}" target="_blank" rel="noopener" 
+         style="display: inline-block; padding: 8px 16px; background: #2563eb; color: white; 
+                text-decoration: none; border-radius: 6px; font-weight: 500;">
+        📊 Build-Status live verfolgen
       </a>
     </p>
   `;
@@ -813,7 +815,7 @@ function showDraftWaitingPlaceholder(extra = {}) {
     icon: "🚀",
     title: "PDF-Generierung läuft …",
     message:
-      "Der Worker hat den Entwurf gespeichert. GitHub baut nun alle PDF-Varianten – das dauert meistens weniger als eine Minute.",
+      "Der Entwurf wurde gespeichert. GitHub erstellt nun alle 8 PDF-Varianten – das dauert meist 1-2 Minuten.",
     details: extraInfo,
   });
 }
@@ -841,31 +843,47 @@ function showDraftManualPlaceholder(extra = {}) {
 
 function showDraftErrorPlaceholder(extra = {}) {
   const safeMessage = extra.message ? escapeHtml(extra.message) : "";
-  const safeUrl = extra.url ? `<code>${escapeHtml(extra.url)}</code>` : "";
+  const safeUrl = extra.url ? escapeHtml(extra.url) : "";
+  
+  const detailsHtml = (safeMessage || safeUrl) ? `
+    <details style="margin-top: 10px;">
+      <summary style="cursor: pointer; color: #6b7280; user-select: none;">Technische Details anzeigen</summary>
+      <div style="margin-top: 8px; font-size: 0.85em; color: #9ca3af;">
+        ${safeMessage ? `<p><strong>Fehler:</strong> ${safeMessage}</p>` : ""}
+        ${safeUrl ? `<p><strong>URL:</strong> <code style="word-break: break-all;">${safeUrl}</code></p>` : ""}
+      </div>
+    </details>
+  ` : "";
+  
   showPdfPlaceholder("draft-error", {
     icon: "⚠️",
-    title: "PDF konnte nicht geladen werden",
+    title: "Entwurfs-PDF nicht verfügbar",
     message:
-      "Beim Laden des Entwurfs ist ein Fehler aufgetreten. Bitte nach kurzer Zeit noch einmal versuchen oder auf \"Original\" wechseln.",
-    details: `
-      ${safeMessage ? `<p>Technische Info: ${safeMessage}</p>` : ""}
-      ${safeUrl ? `<p>Ziel: ${safeUrl}</p>` : ""}
-    `,
+      "Das PDF konnte nicht geladen werden. Bitte warten Sie einen Moment und versuchen Sie es erneut, oder wechseln Sie auf \"Original\".",
+    details: detailsHtml,
   });
 }
 
 function showOriginalPdfErrorPlaceholder(extra = {}) {
   const safeMessage = extra.message ? escapeHtml(extra.message) : "";
-  const safeUrl = extra.url ? `<code>${escapeHtml(extra.url)}</code>` : "";
+  const safeUrl = extra.url ? escapeHtml(extra.url) : "";
+  
+  const detailsHtml = (safeMessage || safeUrl) ? `
+    <details style="margin-top: 10px;">
+      <summary style="cursor: pointer; color: #6b7280; user-select: none;">Technische Details anzeigen</summary>
+      <div style="margin-top: 8px; font-size: 0.85em; color: #9ca3af;">
+        ${safeMessage ? `<p><strong>Fehler:</strong> ${safeMessage}</p>` : ""}
+        ${safeUrl ? `<p><strong>URL:</strong> <code style="word-break: break-all;">${safeUrl}</code></p>` : ""}
+      </div>
+    </details>
+  ` : "";
+  
   showPdfPlaceholder("pdf-error", {
     icon: "⚠️",
-    title: "PDF konnte nicht geladen werden",
+    title: "Original-PDF nicht verfügbar",
     message:
-      "Bitte nutzen Sie \"PDF in neuem Tab öffnen\" oder laden Sie die Seite neu. Der Link könnte vorübergehend nicht verfügbar sein.",
-    details: `
-      ${safeMessage ? `<p>Technische Info: ${safeMessage}</p>` : ""}
-      ${safeUrl ? `<p>Ziel: ${safeUrl}</p>` : ""}
-    `,
+      "Das PDF konnte nicht geladen werden. Bitte nutzen Sie \"PDF in neuem Tab öffnen\" oder laden Sie die Seite neu.",
+    details: detailsHtml,
   });
 }
 
@@ -1359,6 +1377,11 @@ function showTagConfigModal() {
   el.toggleColorsBtn.addEventListener("click", toggleOriginalColors);
   el.toggleHiddenBtn.removeEventListener("click", toggleAllTagsHidden);
   el.toggleHiddenBtn.addEventListener("click", toggleAllTagsHidden);
+  
+  if (el.toggleTranslationsHiddenBtn) {
+    el.toggleTranslationsHiddenBtn.removeEventListener("click", toggleAllTranslationsHidden);
+    el.toggleTranslationsHiddenBtn.addEventListener("click", toggleAllTranslationsHidden);
+  }
 
   // 6. Modal anzeigen
   el.modal.style.display = "flex";
@@ -1932,6 +1955,32 @@ function toggleAllTagsHidden() {
   updateTableFromState();
 }
 
+function toggleAllTranslationsHidden() {
+  const turnOn = toggleButton(el.toggleTranslationsHiddenBtn);
+  const tablesContainer = document.getElementById("tag-config-tables");
+  if (!tablesContainer) return;
+
+  const tables = tablesContainer.querySelectorAll(".tag-group-table");
+  const allIds = [];
+
+  tables.forEach((table) => {
+    const tableIds = Array.from(table.querySelectorAll("tr[data-id]")).map(
+      (tr) => tr.dataset.id
+    );
+    allIds.push(...tableIds);
+  });
+
+  allIds.forEach((id) => {
+    state.tagConfig[id] = state.tagConfig[id] || {};
+    if (turnOn) {
+      state.tagConfig[id].hideTranslation = true;
+    } else {
+      delete state.tagConfig[id].hideTranslation;
+    }
+  });
+  updateTableFromState();
+}
+
 function hideTagConfigModal() {
   if (el.modal) el.modal.style.display = "none";
 }
@@ -2484,12 +2533,19 @@ function bindPdfUtilityButtons() {
   if (openTabBtn && !openTabBtn.dataset.boundClick) {
     openTabBtn.dataset.boundClick = "true";
     openTabBtn.addEventListener("click", () => {
-      const pdfUrl = getCurrentPdfUrl();
+      let pdfUrl = getCurrentPdfUrl();
       if (!pdfUrl) return;
       
-      // Öffne PDF in neuem Tab
-      // HINWEIS: Draft-PDFs werden möglicherweise heruntergeladen statt angezeigt
-      // (GitHub raw.githubusercontent.com setzt Content-Disposition: attachment)
+      // Für Draft-PDFs: Verwende Worker-Proxy, um Content-Disposition zu überschreiben
+      if (state.source === "draft" && pdfUrl.includes("raw.githubusercontent.com")) {
+        // Extrahiere den Dateipfad aus der GitHub RAW URL
+        const match = pdfUrl.match(/raw\.githubusercontent\.com\/[^\/]+\/[^\/]+\/[^\/]+\/(.+)$/);
+        if (match) {
+          const filePath = match[1];
+          pdfUrl = `${WORKER_BASE}/release?file=${encodeURIComponent(filePath)}&mode=inline&draft=true`;
+        }
+      }
+      
       const newWindow = window.open(pdfUrl, "_blank");
       if (newWindow) newWindow.focus();
     });

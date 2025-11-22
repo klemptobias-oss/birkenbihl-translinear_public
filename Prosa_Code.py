@@ -1073,8 +1073,12 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             j = j  # gleicher Endindex, aber wir merken uns später die Spaltenrange i..j und tauschen die Inhalte
                             # Wir vertauschen die Breitenliste nicht; der Table nimmt die Zelleninhalte.
                             # Um die Spalte k in das Slice zu bekommen, schieben wir einen "Swap" in die Slicedaten:
-                            gr[i:j][-1], gr[k] = gr[k], gr[i:j][-1]
-                            de[i:j][-1], de[k] = de[k], de[i:j][-1]
+                            if len(gr[i:j]) > 0 and k < len(gr):
+                                gr[i:j][-1], gr[k] = gr[k], gr[i:j][-1]
+                            if len(de[i:j]) > 0 and k < len(de):
+                                de[i:j][-1], de[k] = de[k], de[i:j][-1]
+                            if len(en[i:j]) > 0 and k < len(en):
+                                en[i:j][-1], en[k] = en[k], en[i:j][-1]
                         # Wenn auch das nicht passt, lassen wir es beim bisherigen Slice (optisch wie vorher),
                         # damit das Layout nicht überläuft.
 
