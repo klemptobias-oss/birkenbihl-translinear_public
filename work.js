@@ -113,7 +113,10 @@ const el = {
   confirmBtn: document.getElementById("confirmRendering"),
   toggleColorsBtn: document.getElementById("toggleAllColors"),
   toggleHiddenBtn: document.getElementById("toggleAllTagsHidden"),
-  toggleTranslationsHiddenBtn: document.getElementById("toggleAllTranslationsHidden"),
+  toggleTranslationsHiddenBtn: document.getElementById(
+    "toggleAllTranslationsHidden"
+  ),
+  togglePipesHiddenBtn: document.getElementById("togglePipesHidden"),
 
   // Neue Elemente
   toggleBirkenbihlTagsBtn: document.getElementById("toggleBirkenbihlTags"),
@@ -199,16 +202,16 @@ function getDraftStorageKey() {
 
 function persistDraftBase() {
   if (!state.draftBase) return;
-  if (typeof window === 'undefined' || !window.localStorage) return;
+  if (typeof window === "undefined" || !window.localStorage) return;
   try {
     window.localStorage.setItem(getDraftStorageKey(), state.draftBase);
   } catch (e) {
-    console.warn('Persisting draft base failed', e);
+    console.warn("Persisting draft base failed", e);
   }
 }
 
 function restoreDraftBase() {
-  if (typeof window === 'undefined' || !window.localStorage) return;
+  if (typeof window === "undefined" || !window.localStorage) return;
   try {
     const stored = window.localStorage.getItem(getDraftStorageKey());
     if (stored) {
@@ -218,7 +221,7 @@ function restoreDraftBase() {
       state.manualDraftBuildRequired = false;
     }
   } catch (e) {
-    console.warn('Restoring draft base failed', e);
+    console.warn("Restoring draft base failed", e);
   }
 }
 
@@ -227,12 +230,13 @@ async function probeDraftAvailability() {
   if (draftProbeInFlight) return;
   if (!state.draftBase) return;
   const draftName = buildDraftPdfFilename();
-  if (!draftName || draftName === 'error.pdf') return;
+  if (!draftName || draftName === "error.pdf") return;
   const url = buildDraftPdfUrl(draftName);
   draftProbeInFlight = true;
   try {
-    const probeUrl = url + (url.includes('?') ? '&' : '?') + 'probe=' + Date.now();
-    const res = await fetch(probeUrl, { method: 'HEAD', cache: 'no-store' });
+    const probeUrl =
+      url + (url.includes("?") ? "&" : "?") + "probe=" + Date.now();
+    const res = await fetch(probeUrl, { method: "HEAD", cache: "no-store" });
     if (res && res.ok) {
       state.draftBuildActive = false;
       state.draftHasResult = true;
@@ -241,12 +245,11 @@ async function probeDraftAvailability() {
       updatePdfView(true);
     }
   } catch (e) {
-    console.warn('Draft probe failed', e);
+    console.warn("Draft probe failed", e);
   } finally {
     draftProbeInFlight = false;
   }
 }
-
 
 function buildBirkenbihlBaseCandidates(base) {
   if (!base) return [];
@@ -571,7 +574,7 @@ function getLocalizedFilenameBase() {
   // Normalisiere alle Versmaß-Varianten zu "Versmass" (URL-sicher)
   // Regex: _Versm + (a|ä) + (s|ß){1,2} + optional weitere Buchstaben bis zum nächsten Unterstrich
   filename = filename.replace(/_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g, "_Versmass");
-  
+
   if (state.meter === "with" && !filename.includes("_Versmass")) {
     filename += "_Versmass";
   }
@@ -586,8 +589,13 @@ function getLocalizedFilenameBase() {
 function normalizeReleaseBase(base) {
   if (!base) return null;
   // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
-  let normalized = base.replace(/_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g, "_Versmass");
-  return normalized.includes("_birkenbihl") ? normalized : `${normalized}_birkenbihl`;
+  let normalized = base.replace(
+    /_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g,
+    "_Versmass"
+  );
+  return normalized.includes("_birkenbihl")
+    ? normalized
+    : `${normalized}_birkenbihl`;
 }
 
 function buildVariantSuffix(localizedBase) {
@@ -670,7 +678,7 @@ function buildReleaseProxyUrl(filename, disposition = "inline") {
   }
   const params = new URLSearchParams({
     tag: state.workMeta.release_tag,
-    file: filename,  // Filename wird vom Worker automatisch URL-encoded
+    file: filename, // Filename wird vom Worker automatisch URL-encoded
     mode: disposition === "attachment" ? "attachment" : "inline",
   });
   return `${GH_RELEASE_PROXY}?${params.toString()}`;
@@ -771,15 +779,21 @@ function showPdfPlaceholder(kind, opts = {}) {
   const pages = pdfRenderer.elements?.pages;
   pdfRenderer.pdf = null;
   pdfRenderer.currentPage = 1;
-  if (pdfRenderer.elements?.pageCount) pdfRenderer.elements.pageCount.textContent = "–";
-  if (pdfRenderer.elements?.pageNum) pdfRenderer.elements.pageNum.textContent = "–";
+  if (pdfRenderer.elements?.pageCount)
+    pdfRenderer.elements.pageCount.textContent = "–";
+  if (pdfRenderer.elements?.pageNum)
+    pdfRenderer.elements.pageNum.textContent = "–";
 
   if (!pages) return;
 
-  const iconHtml = opts.icon ? `<div class="pdf-placeholder-icon">${opts.icon}</div>` : "";
+  const iconHtml = opts.icon
+    ? `<div class="pdf-placeholder-icon">${opts.icon}</div>`
+    : "";
   const titleHtml = opts.title ? `<h3>${opts.title}</h3>` : "";
   const messageHtml = opts.message ? `<p>${opts.message}</p>` : "";
-  const detailsHtml = opts.details ? `<div class="pdf-placeholder-details">${opts.details}</div>` : "";
+  const detailsHtml = opts.details
+    ? `<div class="pdf-placeholder-details">${opts.details}</div>`
+    : "";
 
   pages.innerHTML = `
     <div class="pdf-placeholder ${escapeHtml(kind)}">
@@ -797,10 +811,16 @@ function showDraftWaitingPlaceholder(extra = {}) {
   const filename = extra.filename || state.pendingDraftFilename;
   const url = extra.url || state.lastDraftUrl;
   // Ersetze "birkenbihl" durch "translinear" im Dateinamen
-  const displayFilename = filename ? filename.replace(/_birkenbihl_/g, "_translinear_").replace(/birkenbihl/g, "translinear") : "translinear.txt";
+  const displayFilename = filename
+    ? filename
+        .replace(/_birkenbihl_/g, "_translinear_")
+        .replace(/birkenbihl/g, "translinear")
+    : "translinear.txt";
   const extraInfo = `
     <p style="margin: 10px 0;">
-      <strong>Datei:</strong> <code style="font-size: 0.9em;">${escapeHtml(displayFilename)}</code>
+      <strong>Datei:</strong> <code style="font-size: 0.9em;">${escapeHtml(
+        displayFilename
+      )}</code>
     </p>
     <p style="margin: 15px 0;">
       <a href="${GH_ACTIONS_URL}" target="_blank" rel="noopener" 
@@ -831,7 +851,9 @@ function showDraftEmptyPlaceholder() {
 
 function showDraftManualPlaceholder(extra = {}) {
   const commandValue = extra.command || state.manualDraftCommand || "";
-  const command = commandValue ? `<code>${escapeHtml(commandValue)}</code>` : "";
+  const command = commandValue
+    ? `<code>${escapeHtml(commandValue)}</code>`
+    : "";
   showPdfPlaceholder("draft-manual", {
     icon: "🛠️",
     title: "Manuelle PDF-Erstellung erforderlich",
@@ -844,22 +866,29 @@ function showDraftManualPlaceholder(extra = {}) {
 function showDraftErrorPlaceholder(extra = {}) {
   const safeMessage = extra.message ? escapeHtml(extra.message) : "";
   const safeUrl = extra.url ? escapeHtml(extra.url) : "";
-  
-  const detailsHtml = (safeMessage || safeUrl) ? `
+
+  const detailsHtml =
+    safeMessage || safeUrl
+      ? `
     <details style="margin-top: 10px;">
       <summary style="cursor: pointer; color: #6b7280; user-select: none;">Technische Details anzeigen</summary>
       <div style="margin-top: 8px; font-size: 0.85em; color: #9ca3af;">
         ${safeMessage ? `<p><strong>Fehler:</strong> ${safeMessage}</p>` : ""}
-        ${safeUrl ? `<p><strong>URL:</strong> <code style="word-break: break-all;">${safeUrl}</code></p>` : ""}
+        ${
+          safeUrl
+            ? `<p><strong>URL:</strong> <code style="word-break: break-all;">${safeUrl}</code></p>`
+            : ""
+        }
       </div>
     </details>
-  ` : "";
-  
+  `
+      : "";
+
   showPdfPlaceholder("draft-error", {
     icon: "⚠️",
     title: "Entwurfs-PDF nicht verfügbar",
     message:
-      "Das PDF konnte nicht geladen werden. Bitte warten Sie einen Moment und versuchen Sie es erneut, oder wechseln Sie auf \"Original\".",
+      'Das PDF konnte nicht geladen werden. Bitte warten Sie einen Moment und versuchen Sie es erneut, oder wechseln Sie auf "Original".',
     details: detailsHtml,
   });
 }
@@ -867,22 +896,29 @@ function showDraftErrorPlaceholder(extra = {}) {
 function showOriginalPdfErrorPlaceholder(extra = {}) {
   const safeMessage = extra.message ? escapeHtml(extra.message) : "";
   const safeUrl = extra.url ? escapeHtml(extra.url) : "";
-  
-  const detailsHtml = (safeMessage || safeUrl) ? `
+
+  const detailsHtml =
+    safeMessage || safeUrl
+      ? `
     <details style="margin-top: 10px;">
       <summary style="cursor: pointer; color: #6b7280; user-select: none;">Technische Details anzeigen</summary>
       <div style="margin-top: 8px; font-size: 0.85em; color: #9ca3af;">
         ${safeMessage ? `<p><strong>Fehler:</strong> ${safeMessage}</p>` : ""}
-        ${safeUrl ? `<p><strong>URL:</strong> <code style="word-break: break-all;">${safeUrl}</code></p>` : ""}
+        ${
+          safeUrl
+            ? `<p><strong>URL:</strong> <code style="word-break: break-all;">${safeUrl}</code></p>`
+            : ""
+        }
       </div>
     </details>
-  ` : "";
-  
+  `
+      : "";
+
   showPdfPlaceholder("pdf-error", {
     icon: "⚠️",
     title: "Original-PDF nicht verfügbar",
     message:
-      "Das PDF konnte nicht geladen werden. Bitte nutzen Sie \"PDF in neuem Tab öffnen\" oder laden Sie die Seite neu.",
+      'Das PDF konnte nicht geladen werden. Bitte nutzen Sie "PDF in neuem Tab öffnen" oder laden Sie die Seite neu.',
     details: detailsHtml,
   });
 }
@@ -899,7 +935,7 @@ async function loadTexts() {
     el.birkenbihlText.textContent = "Fehler: Werk-Metadaten unvollständig.";
     return;
   }
-  
+
   // Setze den Browser-Tab-Titel auf den Werknamen
   if (state.work) {
     document.title = state.work;
@@ -938,12 +974,15 @@ async function loadTexts() {
 
   try {
     const birkenbihlCandidates = buildBirkenbihlBaseCandidates(filenameBase);
-    const result = await fetchBirkenbihlText(textBasePath, birkenbihlCandidates);
+    const result = await fetchBirkenbihlText(
+      textBasePath,
+      birkenbihlCandidates
+    );
 
     if (result && result.text) {
       const text = result.text;
       state.originalBirkenbihlText = text;
-      console.log('✅ Birkenbihl text loaded from', result.path);
+      console.log("✅ Birkenbihl text loaded from", result.path);
 
       // Versuche, gespeicherten Draft-Text aus localStorage zu laden
       const workKey = `${state.lang}_${state.kind}_${state.category}_${state.author}_${state.work}`;
@@ -951,7 +990,7 @@ async function loadTexts() {
 
       if (el.draftText) {
         if (savedDraft) {
-          console.log('✅ Gespeicherter Draft-Text wiederhergestellt');
+          console.log("✅ Gespeicherter Draft-Text wiederhergestellt");
           el.draftText.innerHTML = addSpansToTags(savedDraft);
         } else {
           el.draftText.innerHTML = addSpansToTags(text);
@@ -961,17 +1000,17 @@ async function loadTexts() {
         el.birkenbihlText.innerHTML = addSpansToTags(text);
       }
     } else {
-      const attempted = birkenbihlCandidates.join(', ');
+      const attempted = birkenbihlCandidates.join(", ");
       const errMsg = `Birkenbihl-Text nicht gefunden (Versuch: ${attempted})`;
-      console.error('❌', errMsg);
+      console.error("❌", errMsg);
       if (el.draftText) {
         el.draftText.textContent = errMsg;
       }
     }
   } catch (e) {
-    console.error('❌ Error loading birkenbihl text:', e);
+    console.error("❌ Error loading birkenbihl text:", e);
     if (el.draftText) {
-      el.draftText.textContent = 'Fehler beim Laden des Birkenbihl-Textes.';
+      el.draftText.textContent = "Fehler beim Laden des Birkenbihl-Textes.";
     }
   }
 }
@@ -986,7 +1025,7 @@ async function initializeDraftText() {
     el.draftText.textContent.trim()
   ) {
     console.log("Draft text already loaded, skipping initialization");
-    
+
     // Event-Listener für Auto-Save hinzufügen
     setupDraftAutoSave();
     return;
@@ -1000,30 +1039,30 @@ async function initializeDraftText() {
     el.draftText.textContent = "Fehler: Birkenbihl-Text nicht verfügbar.";
     console.error("Birkenbihl text not available in state");
   }
-  
+
   // Event-Listener für Auto-Save hinzufügen
   setupDraftAutoSave();
 }
 
 function setupDraftAutoSave() {
   if (!el.draftText || el.draftText.dataset.autoSaveSetup) return;
-  
+
   // Markiere, dass Auto-Save bereits eingerichtet ist
   el.draftText.dataset.autoSaveSetup = "true";
-  
+
   let saveTimeout;
-  el.draftText.addEventListener('input', () => {
+  el.draftText.addEventListener("input", () => {
     // Debounce: Speichere erst nach 1 Sekunde Inaktivität
     clearTimeout(saveTimeout);
     saveTimeout = setTimeout(() => {
       const workKey = `${state.lang}_${state.kind}_${state.category}_${state.author}_${state.work}`;
-      const draftContent = el.draftText.textContent || '';
+      const draftContent = el.draftText.textContent || "";
       localStorage.setItem(`draft_${workKey}`, draftContent);
-      console.log('💾 Draft auto-saved');
+      console.log("💾 Draft auto-saved");
     }, 1000);
   });
-  
-  console.log('✅ Draft auto-save eingerichtet');
+
+  console.log("✅ Draft auto-save eingerichtet");
 }
 
 function addSpansToTags(text) {
@@ -1099,6 +1138,7 @@ async function performRendering() {
     color_mode: state.color, // Colour | BlackWhite
     tag_mode: state.tags === "Tag" ? "TAGS" : "NO_TAGS",
     versmass: state.meterSupported && state.meter === "with" ? "ON" : "OFF",
+    hide_pipes: pdfOptions.hidePipes, // Pipes (|) in Übersetzungen verstecken
 
     // Die gesamte, neue Tag-Konfiguration wird gesendet
     tag_config: state.tagConfig,
@@ -1119,6 +1159,7 @@ async function performRendering() {
   form.append("translation_target", state.translationTarget);
   form.append("versmass", needsVersmassRendering() ? "true" : "false");
   form.append("meter_mode", state.meter === "with" ? "with" : "without");
+  form.append("hide_pipes", pdfOptions.hidePipes ? "true" : "false");
 
   // Tag-Konfiguration als JSON hinzufügen
   form.append("tag_config", JSON.stringify(payload.tag_config));
@@ -1168,7 +1209,9 @@ async function performRendering() {
     state.manualDraftCommand = manualRequired ? manualCommand : null;
 
     // Ersetze "birkenbihl" durch "translinear" im Dateinamen
-    const displayName = data.filename.replace(/_birkenbihl_/g, "_translinear_").replace(/birkenbihl/g, "translinear");
+    const displayName = data.filename
+      .replace(/_birkenbihl_/g, "_translinear_")
+      .replace(/birkenbihl/g, "translinear");
     el.draftStatus.textContent = `✓ Text gespeichert: ${displayName}`;
 
     if (buildActive) {
@@ -1237,7 +1280,11 @@ function createTableRow(item, isGroupLeader = false) {
     { type: "color", value: "green", label: "grün" },
     { type: "color", value: "violett", label: "violett" },
     { type: "hide", value: "hide", label: "Tag nicht zeigen" },
-    { type: "translation", value: "translation", label: "Übersetzung ausblenden" },
+    {
+      type: "translation",
+      value: "translation",
+      label: "Übersetzung ausblenden",
+    },
   ];
 
   actions.forEach((action) => {
@@ -1260,13 +1307,15 @@ function showTagConfigModal() {
   if (savedConfig) {
     try {
       state.tagConfig = JSON.parse(savedConfig);
-      console.log(`✅ Tag-Konfiguration für ${langKey} aus localStorage geladen`);
+      console.log(
+        `✅ Tag-Konfiguration für ${langKey} aus localStorage geladen`
+      );
     } catch (e) {
-      console.error('❌ Fehler beim Laden der Tag-Konfiguration:', e);
+      console.error("❌ Fehler beim Laden der Tag-Konfiguration:", e);
       state.tagConfig = {};
     }
   }
-  
+
   // 1. Container für kleine Tabellen leeren
   const tablesContainer = document.getElementById("tag-config-tables");
   if (!tablesContainer) return;
@@ -1377,10 +1426,46 @@ function showTagConfigModal() {
   el.toggleColorsBtn.addEventListener("click", toggleOriginalColors);
   el.toggleHiddenBtn.removeEventListener("click", toggleAllTagsHidden);
   el.toggleHiddenBtn.addEventListener("click", toggleAllTagsHidden);
-  
+
   if (el.toggleTranslationsHiddenBtn) {
-    el.toggleTranslationsHiddenBtn.removeEventListener("click", toggleAllTranslationsHidden);
-    el.toggleTranslationsHiddenBtn.addEventListener("click", toggleAllTranslationsHidden);
+    el.toggleTranslationsHiddenBtn.removeEventListener(
+      "click",
+      toggleAllTranslationsHidden
+    );
+    el.toggleTranslationsHiddenBtn.addEventListener(
+      "click",
+      toggleAllTranslationsHidden
+    );
+  }
+
+  if (el.togglePipesHiddenBtn) {
+    el.togglePipesHiddenBtn.removeEventListener("click", togglePipesHidden);
+    el.togglePipesHiddenBtn.addEventListener("click", togglePipesHidden);
+
+    // Lade gespeicherten State aus localStorage
+    const workKey = `${state.lang}_${state.kind}_${state.category}_${state.author}_${state.work}`;
+    const savedHidePipes = localStorage.getItem(`hidePipes_${workKey}`);
+    if (savedHidePipes !== null) {
+      pdfOptions.hidePipes = JSON.parse(savedHidePipes);
+      // Aktualisiere Button-State
+      if (pdfOptions.hidePipes) {
+        el.togglePipesHiddenBtn.dataset.state = "on";
+        const status = el.togglePipesHiddenBtn.querySelector(".toggle-status");
+        if (status) {
+          status.textContent = "An";
+          status.classList.remove("red");
+          status.classList.add("green");
+        }
+      } else {
+        el.togglePipesHiddenBtn.dataset.state = "off";
+        const status = el.togglePipesHiddenBtn.querySelector(".toggle-status");
+        if (status) {
+          status.textContent = "Aus";
+          status.classList.remove("green");
+          status.classList.add("red");
+        }
+      }
+    }
   }
 
   // 6. Modal anzeigen
@@ -1639,7 +1724,7 @@ function handleTableChange(event) {
 
   // Hintergrundfarben der Zellen aktualisieren
   updateCellBackgroundColors();
-  
+
   // Speichere Tag-Konfiguration in localStorage (pro Sprache)
   const langKey = state.lang; // "griechisch" oder "latein"
   localStorage.setItem(`tagConfig_${langKey}`, JSON.stringify(state.tagConfig));
@@ -1981,6 +2066,14 @@ function toggleAllTranslationsHidden() {
   updateTableFromState();
 }
 
+function togglePipesHidden() {
+  const turnOn = toggleButton(el.togglePipesHiddenBtn);
+  pdfOptions.hidePipes = turnOn;
+  // Speichere in localStorage für Persistenz
+  const workKey = `${state.lang}_${state.kind}_${state.category}_${state.author}_${state.work}`;
+  localStorage.setItem(`hidePipes_${workKey}`, JSON.stringify(turnOn));
+}
+
 function hideTagConfigModal() {
   if (el.modal) el.modal.style.display = "none";
 }
@@ -2083,15 +2176,15 @@ function wireEvents() {
     // Lösche gespeicherten Draft aus localStorage
     const workKey = `${state.lang}_${state.kind}_${state.category}_${state.author}_${state.work}`;
     localStorage.removeItem(`draft_${workKey}`);
-    console.log('✅ Gespeicherter Draft gelöscht');
-    
+    console.log("✅ Gespeicherter Draft gelöscht");
+
     // Lade Original-Text
     if (state.originalBirkenbihlText && el.draftText) {
       el.draftText.innerHTML = addSpansToTags(state.originalBirkenbihlText);
       el.draftStatus.textContent = "Entwurf zurückgesetzt.";
-      console.log('✅ Original-Text wiederhergestellt');
+      console.log("✅ Original-Text wiederhergestellt");
     }
-    
+
     el.resetDraftModal.style.display = "none";
   });
 
@@ -2381,21 +2474,26 @@ async function loadWorkMeta() {
           alert("Kein Entwurfs-Text vorhanden zum Herunterladen.");
           return;
         }
-        
+
         // Baue einen aussagekräftigen Dateinamen:
         // z.B. "Aischylos_Agamemnon_gr_de_en_Entwurf_translinear.txt"
         const author = state.author || "";
         const work = state.work || "";
-        const lang = state.lang === "griechisch" ? "gr" : (state.lang === "latein" ? "lat" : state.lang);
-        
+        const lang =
+          state.lang === "griechisch"
+            ? "gr"
+            : state.lang === "latein"
+            ? "lat"
+            : state.lang;
+
         // Sprachen: de ist immer dabei, en nur wenn languages=3
         let langs = `${lang}_de`;
         if (state.languages === 3) {
           langs += "_en";
         }
-        
+
         const filename = `${author}_${work}_${langs}_Entwurf_translinear.txt`;
-        
+
         const blob = new Blob([draftText], { type: "text/plain" });
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
@@ -2445,7 +2543,7 @@ async function loadWorkMeta() {
   } catch (error) {
     console.error("❌ FEHLER beim Laden der Texte:", error);
   }
-  
+
   wireEvents();
 
   // Entwurfs-Text initialisieren
@@ -2466,6 +2564,7 @@ let pdfOptions = {
   color: "Colour",
   tags: "Tag",
   meter: "without", // Wird basierend auf meterSupported dynamisch gesetzt
+  hidePipes: false, // Pipes (|) in Übersetzungen verstecken
 };
 
 // PDF-Renderer Status
@@ -2535,22 +2634,29 @@ function bindPdfUtilityButtons() {
     openTabBtn.addEventListener("click", () => {
       let pdfUrl = getCurrentPdfUrl();
       if (!pdfUrl) return;
-      
+
       // Für Draft-PDFs: Verwende Worker-Proxy, um Content-Disposition zu überschreiben
-      if (state.source === "draft" && pdfUrl.includes("raw.githubusercontent.com")) {
+      if (
+        state.source === "draft" &&
+        pdfUrl.includes("raw.githubusercontent.com")
+      ) {
         // Extrahiere den Dateipfad aus der GitHub RAW URL
         // Der Pfad ist bereits vollständig (inkl. pdf_drafts/), also nur den Teil nach main/ nehmen
-        const match = pdfUrl.match(/raw\.githubusercontent\.com\/[^\/]+\/[^\/]+\/[^\/]+\/(.+)$/);
+        const match = pdfUrl.match(
+          /raw\.githubusercontent\.com\/[^\/]+\/[^\/]+\/[^\/]+\/(.+)$/
+        );
         if (match) {
           let filePath = match[1];
           // Entferne "pdf_drafts/" am Anfang, da der Worker es automatisch hinzufügt
           if (filePath.startsWith("pdf_drafts/")) {
             filePath = filePath.substring("pdf_drafts/".length);
           }
-          pdfUrl = `${WORKER_BASE}/release?file=${encodeURIComponent(filePath)}&mode=inline&draft=true`;
+          pdfUrl = `${WORKER_BASE}/release?file=${encodeURIComponent(
+            filePath
+          )}&mode=inline&draft=true`;
         }
       }
-      
+
       const newWindow = window.open(pdfUrl, "_blank");
       if (newWindow) newWindow.focus();
     });
@@ -2641,7 +2747,10 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
           filename: state.pendingDraftFilename,
           url: pdfUrl,
         });
-      } else if (/Missing PDF/i.test(message) || /Unexpected server response/i.test(message)) {
+      } else if (
+        /Missing PDF/i.test(message) ||
+        /Unexpected server response/i.test(message)
+      ) {
         state.draftHasResult = false;
         showDraftEmptyPlaceholder();
       } else {

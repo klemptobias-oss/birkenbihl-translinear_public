@@ -297,6 +297,7 @@ def extract_line_number(s: str) -> tuple[str | None, str]:
     """
     Extrahiert die Zeilennummer am Anfang einer Zeile.
     Format: (123) oder (123a) oder (123b) etc.
+    NEU: Auch (123k) für Kommentare und (123i) für Insertionszeilen.
     
     Returns:
         (line_number, rest_of_line) oder (None, original_line)
@@ -304,14 +305,29 @@ def extract_line_number(s: str) -> tuple[str | None, str]:
     Beispiele:
         "(1) Text hier" → ("1", "Text hier")
         "(100a) Text" → ("100a", "Text")
+        "(50k) Kommentar hier" → ("50k", "Kommentar hier")
+        "(300i) Insertion hier" → ("300i", "Insertion hier")
         "Text ohne Nummer" → (None, "Text ohne Nummer")
     """
     s = (s or '').strip()
-    # Regex für Zeilennummer: (Zahl[optionaler Buchstabe]) - auch negative Zahlen!
-    m = re.match(r'^\((-?\d+[a-z]*)\)\s*(.*)$', s, re.IGNORECASE)
+    # Regex für Zeilennummer: (Zahl[optionaler Buchstabe oder k/i]) - auch negative Zahlen!
+    # k = Kommentar, i = Insertion
+    m = re.match(r'^\((-?\d+[a-z]?)\)\s*(.*)$', s, re.IGNORECASE)
     if m:
         return (m.group(1), m.group(2))
     return (None, s)
+
+def is_comment_line(line_num: str | None) -> bool:
+    """Prüft, ob eine Zeilennummer ein Kommentar ist (endet mit 'k')."""
+    if not line_num:
+        return False
+    return line_num.lower().endswith('k')
+
+def is_insertion_line(line_num: str | None) -> bool:
+    """Prüft, ob eine Zeilennummer eine Insertion ist (endet mit 'i')."""
+    if not line_num:
+        return False
+    return line_num.lower().endswith('i')
 
 def is_greek_line(line: str) -> bool:
     """

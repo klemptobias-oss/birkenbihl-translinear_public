@@ -400,6 +400,7 @@ def extract_line_number(s: str) -> tuple[str | None, str]:
     """
     Extrahiert die Zeilennummer am Anfang einer Zeile.
     Format: (123) oder (123a) oder (123b) etc.
+    NEU: Auch (123k) für Kommentare und (123i) für Insertionszeilen.
     
     Returns:
         (line_number, rest_of_line) oder (None, original_line)
@@ -407,14 +408,31 @@ def extract_line_number(s: str) -> tuple[str | None, str]:
     Beispiele:
         "(1) Text hier" → ("1", "Text hier")
         "(100a) Text" → ("100a", "Text")
+        "(50k) Kommentar hier" → ("50k", "Kommentar hier")
+        "(300i) Insertion hier" → ("300i", "Insertion hier")
         "Text ohne Nummer" → (None, "Text ohne Nummer")
     """
     s = (s or '').strip()
-    # Regex für Zeilennummer: (Zahl[optionaler Buchstabe])
-    m = re.match(r'^\((\d+[a-z]*)\)\s*(.*)$', s, re.IGNORECASE)
+    # Regex für Zeilennummer: (Zahl[optionaler Buchstabe oder k/i])
+    # k = Kommentar, i = Insertion
+    # Beispiele: (123), (123a), (123k), (123i), (50k), (300i)
+    m = re.match(r'^\((\d+[a-z]?)\)\s*(.*)$', s, re.IGNORECASE)
     if m:
-        return (m.group(1), m.group(2))
+        line_num = m.group(1)
+        return (line_num, m.group(2))
     return (None, s)
+
+def is_comment_line(line_num: str | None) -> bool:
+    """Prüft, ob eine Zeilennummer ein Kommentar ist (endet mit 'k')."""
+    if not line_num:
+        return False
+    return line_num.lower().endswith('k')
+
+def is_insertion_line(line_num: str | None) -> bool:
+    """Prüft, ob eine Zeilennummer eine Insertion ist (endet mit 'i')."""
+    if not line_num:
+        return False
+    return line_num.lower().endswith('i')
 
 def _remove_line_number_from_line(line: str) -> str:
     """
@@ -990,7 +1008,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             para_display:str, para_width_pt:float, style_para,
                             speaker_display:str, speaker_width_pt:float, style_speaker,
                             table_halign='LEFT', italic=False,
-                            en_tokens=None):  # NEU: Englische Tokens
+                            en_tokens=None,  # NEU: Englische Tokens
+                            hide_pipes:bool=False):  # NEU: Pipes (|) in Übersetzungen verstecken
     if en_tokens is None:
         en_tokens = []
     if de_tokens is None:
@@ -1012,9 +1031,13 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
 
     def col_width(k:int) -> float:
         w_gr = visible_measure_token(gr[k], font=token_gr_style.fontName, size=token_gr_style.fontSize, is_greek_row=True, reverse_mode=False) if (k < len(gr) and gr[k]) else 0.0
-        # Für DE und EN: Ersetze | durch Leerzeichen für korrekte Breitenberechnung
-        de_text = de[k].replace('|', ' ') if (k < len(de) and de[k]) else ''
-        en_text = en[k].replace('|', ' ') if (k < len(en) and en[k]) else ''
+        # Für DE und EN: Ersetze | durch Leerzeichen für korrekte Breitenberechnung, wenn hide_pipes aktiviert ist
+        if hide_pipes:
+            de_text = de[k].replace('|', ' ') if (k < len(de) and de[k]) else ''
+            en_text = en[k].replace('|', ' ') if (k < len(en) and en[k]) else ''
+        else:
+            de_text = de[k] if (k < len(de) and de[k]) else ''
+            en_text = en[k] if (k < len(en) and en[k]) else ''
         w_de = visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if de_text else 0.0
         w_en = visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if en_text else 0.0
         return max(w_gr, w_de, w_en)
@@ -1114,11 +1137,17 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             if not text:
                 return text
             return text.replace('|', ' ')
+        
+        def process_translation_token(t):
+            """Verarbeitet Übersetzungstoken: Ersetzt | durch Leerzeichen, wenn hide_pipes aktiviert ist"""
+            if not t:
+                return t
+            return replace_pipes_with_spaces(t) if hide_pipes else t
 
         gr_cells = [Paragraph(cell_markup(t, True),  token_gr_style) if t else Paragraph('', token_gr_style) for t in slice_gr]
-        # Für DE und EN: Ersetze | durch Leerzeichen für bessere Lesbarkeit
-        de_cells = [Paragraph(cell_markup(replace_pipes_with_spaces(t), False), token_de_style) if t else Paragraph('', token_de_style) for t in slice_de]
-        en_cells = [Paragraph(cell_markup(replace_pipes_with_spaces(t), False), token_de_style) if t else Paragraph('', token_de_style) for t in slice_en]  # NEU: Englische Zellen
+        # Für DE und EN: Ersetze | durch Leerzeichen, wenn hide_pipes aktiviert ist
+        de_cells = [Paragraph(cell_markup(process_translation_token(t), False), token_de_style) if t else Paragraph('', token_de_style) for t in slice_de]
+        en_cells = [Paragraph(cell_markup(process_translation_token(t), False), token_de_style) if t else Paragraph('', token_de_style) for t in slice_en]  # NEU: Englische Zellen
 
         row_gr, row_de, row_en, colWidths = [], [], [], []  # NEU: row_en
         if speaker_width_pt > 0:
@@ -1147,6 +1176,19 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         token_slice_w = slice_w  # Immer Originalbreiten verwenden
 
         colWidths += token_slice_w
+
+        # SICHERHEIT: Prüfe, ob die Table-Breite größer ist als die verfügbare Breite
+        # Wenn ja, skaliere die colWidths, um negative Breiten zu vermeiden
+        total_table_width = sum(colWidths)
+        # Berücksichtige Padding: 2 * CELL_PAD_LR_PT pro Spalte
+        padding_overhead = len(colWidths) * 2 * CELL_PAD_LR_PT
+        max_available_width = avail_w - padding_overhead
+        
+        if total_table_width > max_available_width and max_available_width > 0:
+            # Skaliere alle colWidths proportional
+            scale_factor = max_available_width / total_table_width
+            colWidths = [w * scale_factor for w in colWidths]
+            print(f"⚠️ Table-Breite zu groß ({total_table_width:.1f} > {max_available_width:.1f}), skaliert um Faktor {scale_factor:.3f}")
 
         # NEU: Prüfe, ob englische Zeile vorhanden ist
         has_en = any(slice_en)
