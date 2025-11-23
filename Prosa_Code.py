@@ -1194,8 +1194,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                                                  is_greek_row=is_greek_row, reverse_mode=False)
                 # Größerer Puffer für NoTag-Versionen, um Abstände zwischen Wörtern zu garantieren
                 # Wichtig: Dieser Puffer muss groß genug sein, damit Wörter nicht zusammenhängen
-                # Erhöht für Texte mit Sprechern/§ - verhindert Überlappungen
-                return w_no_tags + max(size * 0.12, 2.0)  # Erhöht von 8% auf 12%, von 1.2pt auf 2.0pt
+                # Erhöht für Texte mit Sprechern/§ - verhindert Überlappungen und sorgt für bessere Abstände
+                return w_no_tags + max(size * 0.15, 2.5)  # Erhöht auf 15% oder mindestens 2.5pt für bessere Abstände bei NoTag NoTrans
             else:
                 # Keine Tags vorhanden → verwende Standard-Breite
                 return w_with_tags
@@ -1325,12 +1325,26 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         if not translations_visible:
             # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
-            # Der Puffer wird bereits in measure_token_width_with_visibility erhöht für NoTag
-            # Hier fügen wir einen zusätzlichen kleinen Puffer hinzu für bessere Abstände
+            is_notag = False
+            if tag_config is None:
+                # Wenn tag_config None ist, wurden alle Tags entfernt (NoTag)
+                tags_in_token = RE_TAG.findall(gr_token) if gr_token else []
+                is_notag = len(tags_in_token) > 0
+            else:
+                # Prüfe, ob alle Tags versteckt sind
+                visible_tags = get_visible_tags(gr_token, tag_config) if gr_token else []
+                all_tags = RE_TAG.findall(gr_token) if gr_token else []
+                is_notag = len(all_tags) > 0 and len(visible_tags) == 0
+            
             if w_gr > 0:
-                # Leicht reduzierter Puffer für bessere Abstände bei ausgeblendeten Übersetzungen
-                extra_buffer = max(token_gr_style.fontSize * 0.025, 0.7)  # 2.5% oder mindestens 0.7pt (leicht reduziert)
-                return w_gr + base_safety + extra_buffer
+                if is_notag:
+                    # NoTag NoTrans: Größerer Puffer für bessere Abstände (besonders bei Sprechern/§)
+                    extra_buffer = max(token_gr_style.fontSize * 0.04, 1.2)  # 4% oder mindestens 1.2pt (erhöht für NoTag NoTrans)
+                    return w_gr + base_safety + extra_buffer
+                else:
+                    # Tag NoTrans: Normaler Puffer
+                    extra_buffer = max(token_gr_style.fontSize * 0.025, 0.7)  # 2.5% oder mindestens 0.7pt
+                    return w_gr + base_safety + extra_buffer
             else:
                 return base_safety
         
@@ -1353,6 +1367,9 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         acc, j = 0.0, i
 
         # verfügbare Breite abzüglich optionaler Spalten
+        # WICHTIG: IMMER reduzieren, damit alle Zeilen am gleichen Ort beginnen
+        # Para/Speaker-Spalten werden nur beim ersten Slice angezeigt, aber der Platz wird immer reserviert
+        # für konsistente Ausrichtung aller Zeilen im gleichen Block
         avail_w = doc_width_pt
         if speaker_width_pt > 0:
             avail_w -= (speaker_width_pt + SPEAKER_GAP_MM*mm)
@@ -1461,6 +1478,9 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         en_cells = [Paragraph(cell_markup(process_translation_token(t), False), token_de_style) if t else Paragraph('', token_de_style) for t in slice_en]  # NEU: Englische Zellen
 
         row_gr, row_de, row_en, colWidths = [], [], [], []  # NEU: row_en
+        # WICHTIG: Para/Speaker-Spalten IMMER hinzufügen (auch wenn leer), damit alle Zeilen am gleichen Ort beginnen
+        # Die Inhalte werden nur beim ersten Slice angezeigt, aber die Spalten werden immer hinzugefügt
+        # für konsistente Ausrichtung aller Zeilen im gleichen Block
         if speaker_width_pt > 0:
             row_gr += [sp_cell_gr, sp_gap_gr]; row_de += [sp_cell_de, sp_gap_de]; row_en += [sp_cell_en, sp_gap_en]
             colWidths += [speaker_width_pt, SPEAKER_GAP_MM*mm]
@@ -1812,9 +1832,17 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # Zeilennummer in Kommentar-Farbe, DEUTLICH gefärbt für bessere Sichtbarkeit
             # (WICHTIG: xml_escape auf line_num anwenden, um "-" zu schützen)
             comment_num_size = de_size * 0.9  # Etwas größer (90% statt 85%)
-            # Verwende die originalen, bereits satteren Farben direkt (nicht dunkler machen)
-            color_hex = f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
-            formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
+            
+            # Zeilennummer hinzufügen, auch wenn sie leer ist (als Fallback)
+            if line_num:
+                formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
+            else:
+                # Fallback: Extrahiere line_num aus original_line
+                if original_line:
+                    extracted_num, _ = extract_line_number(original_line)
+                    if extracted_num:
+                        line_num = extracted_num
+                        formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
             # Kommentar-Text mit kleinerem Font, aber SCHWARZ (nicht farbig)
             comment_size = de_size * 0.85  # Etwas größer (85% statt 80%)
             
@@ -1856,19 +1884,25 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # Kommentar-Paragraph IMMER hinzufügen, auch wenn formatted_text leer ist
             if not formatted_text.strip():
-                # Fallback: Erstelle zumindest die Zeilennummer
+                # Fallback 1: Erstelle zumindest die Zeilennummer
                 if line_num:
                     formatted_text = f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>'
+                # Fallback 2: Verwende original_line komplett
                 elif original_line:
-                    # Verwende original_line komplett
                     formatted_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>{xml_escape(original_line)}</i></font>'
+                # Fallback 3: Erstelle einen Platzhalter-Text
+                else:
+                    formatted_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>[Kommentar]</i></font>'
             
-            # Kommentar-Paragraph hinzufügen
+            # Kommentar-Paragraph IMMER hinzufügen (auch wenn formatted_text immer noch leer ist)
             if formatted_text.strip():
                 elements.append(Paragraph(formatted_text, comment_style))
-                print(f"  ✓✓✓ Kommentar-Paragraph HINZUGEFÜGT: {formatted_text[:100]}...")
+                print(f"  ✓✓✓ Kommentar-Paragraph HINZUGEFÜGT: line_num={line_num}, {formatted_text[:80]}...")
             else:
-                print(f"  ⚠️⚠️⚠️ Kommentar-Paragraph NICHT HINZUGEFÜGT - formatted_text ist leer!")
+                # Auch wenn formatted_text leer ist, erstelle einen minimalen Paragraph
+                minimal_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>[Kommentar]</i></font>'
+                elements.append(Paragraph(minimal_text, comment_style))
+                print(f"  ⚠️⚠️⚠️ Kommentar-Paragraph mit Platzhalter HINZUGEFÜGT - formatted_text war leer!")
             
             elements.append(Spacer(1, CONT_PAIR_GAP_MM * 1.2 * mm))  # Größerer Abstand nach Kommentar für bessere Trennung
             last_block_type = t

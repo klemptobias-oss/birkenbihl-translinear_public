@@ -989,6 +989,22 @@ def _remove_stephanus_from_token(token: str) -> str:
     # Entferne Stephanus-Paginierungen: [543b], [546b] etc.
     return RE_STEPHANUS.sub('', token).strip()
 
+# Regex für Satzzeichen-Token (nur Satzzeichen, keine Wörter)
+RE_PUNCTUATION_ONLY = re.compile(r'^[.,;:!?·…\s]+$')
+
+def _is_punctuation_only_token(token: str) -> bool:
+    """
+    Prüft, ob ein Token nur aus Satzzeichen besteht (mit optionalen Leerzeichen).
+    Beispiele: ".", "?", "!", "...", ". . .", "·", etc.
+    """
+    if not token:
+        return False
+    token_stripped = token.strip()
+    # Entferne Leerzeichen und prüfe, ob nur Satzzeichen übrig bleiben
+    no_spaces = token_stripped.replace(' ', '')
+    # Prüfe, ob nur Satzzeichen vorhanden sind
+    return bool(no_spaces) and all(c in '.,;:!?·…' for c in no_spaces)
+
 # Hilfsfunktion zum Verstecken von Übersetzungen basierend auf (HideTrans) Tag
 def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
     """
@@ -1053,8 +1069,15 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
             if translation_rules and idx < len(source_tokens):
                 should_hide_translation = _token_should_hide_translation(source_tokens[idx], translation_rules)
             
-            # Prüfe, ob Token eine Stephanus-Paginierung enthält
+            # Prüfe, ob Token eine Stephanus-Paginierung enthält ODER nur Satzzeichen ist
             token_stripped = token.strip()
+            
+            # Entferne Tokens, die nur aus Satzzeichen bestehen (wenn Übersetzungen ausgeblendet sind)
+            if (should_hide_translation or has_any_hidden_translations) and _is_punctuation_only_token(token_stripped):
+                result['de_tokens'][idx] = ''
+                continue
+            
+            # Entferne Stephanus-Paginierungen
             if RE_STEPHANUS.search(token_stripped):
                 # Wenn die Übersetzung ausgeblendet ist ODER wenn irgendwelche Übersetzungen ausgeblendet sind, entferne Stephanus-Paginierungen
                 if should_hide_translation or has_any_hidden_translations:
@@ -1082,8 +1105,15 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
             if translation_rules and idx < len(source_tokens):
                 should_hide_translation = _token_should_hide_translation(source_tokens[idx], translation_rules)
             
-            # Prüfe, ob Token eine Stephanus-Paginierung enthält
+            # Prüfe, ob Token eine Stephanus-Paginierung enthält ODER nur Satzzeichen ist
             token_stripped = token.strip()
+            
+            # Entferne Tokens, die nur aus Satzzeichen bestehen (wenn Übersetzungen ausgeblendet sind)
+            if (should_hide_translation or has_any_hidden_translations) and _is_punctuation_only_token(token_stripped):
+                result['en_tokens'][idx] = ''
+                continue
+            
+            # Entferne Stephanus-Paginierungen
             if RE_STEPHANUS.search(token_stripped):
                 # Wenn die Übersetzung ausgeblendet ist ODER wenn irgendwelche Übersetzungen ausgeblendet sind, entferne Stephanus-Paginierungen
                 if should_hide_translation or has_any_hidden_translations:
