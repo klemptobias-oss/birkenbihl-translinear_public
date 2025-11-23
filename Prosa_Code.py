@@ -70,8 +70,8 @@ PARA_GAP_MM = 1.5          # Abstand neben Paragraphen-Spalte (stark reduziert f
 SPEAKER_COL_MIN_MM = 3.0   # Mindestbreite für Sprecher-Spalte (reduziert)
 SPEAKER_GAP_MM = 1.0       # Abstand neben Sprecher-Spalte (minimal)
 
-CELL_PAD_LR_PT = 1.1       # Innenabstand links/rechts in Zellen (minimal)
-SAFE_EPS_PT = 0.5          # Sicherheitsabstand für Messungen (minimal)
+CELL_PAD_LR_PT = 0.6       # Innenabstand links/rechts in Zellen (stark reduziert für kompaktere TAG-PDFs)
+SAFE_EPS_PT = 0.3          # Sicherheitsabstand für Messungen (reduziert für kompaktere Darstellung)
 
 # ----------------------- TAG-KONFIGURATION -----------------------
 # Einstellungen für Tag-Darstellung
@@ -729,12 +729,11 @@ def visible_measure_token(token:str, *, font:str, size:float, is_greek_row:bool=
         max_tag_width = min(tag_width, TAG_MAX_WIDTH_PT)
         w += max_tag_width
 
-    # NEU: Größerer Sicherheitspuffer für Tags (wie in Poesie)
-    # Poesie verwendet effektiv ~3.0pt, Prosa nur 0.5pt
-    # Erhöhe den Puffer für bessere Kompatibilität und um Überlappungen zu vermeiden
-    tag_safety = 2.0  # Zusätzlicher Puffer für Tags (wenn Tags vorhanden sind)
+    # Reduzierter Sicherheitspuffer für Tags (für kompaktere TAG-PDFs)
+    # Stark reduziert für dichteren Text ohne Überlappungen
+    tag_safety = 0.8  # Zusätzlicher Puffer für Tags (stark reduziert)
     if kept:
-        tag_safety += 1.0  # Noch mehr Puffer, wenn Tags sichtbar sind
+        tag_safety += 0.4  # Weniger zusätzlicher Puffer, wenn Tags sichtbar sind
     safe_eps = max(SAFE_EPS_PT, tag_safety)
     return w + safe_eps + 2*CELL_PAD_LR_PT
     
@@ -1319,15 +1318,15 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Basis-Sicherheitspuffer: Konsistent für alle Wörter (verhindert Überlappungen)
         # Dieser Puffer ist minimal und berücksichtigt nur Rundungsfehler und Rendering-Ungenauigkeiten
-        base_safety = max(token_gr_style.fontSize * 0.02, 0.4)  # 2% der Font-Size oder mindestens 0.4pt (reduziert)
+        base_safety = max(token_gr_style.fontSize * 0.01, 0.25)  # 1% der Font-Size oder mindestens 0.25pt (stark reduziert für kompaktere TAG-PDFs)
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
             # Nur griechische Zeile sichtbar
             # Verwende GR-Breite mit minimalem Puffer für dichteren Text (Tag-Versionen)
             if w_gr > 0:
-                # Reduzierter Puffer für dichteren Text in Tag-Versionen
-                extra_buffer = max(token_gr_style.fontSize * 0.04, 0.8)  # 4% oder mindestens 0.8pt (reduziert)
+                # Stark reduzierter Puffer für dichteren Text in Tag-Versionen
+                extra_buffer = max(token_gr_style.fontSize * 0.02, 0.5)  # 2% oder mindestens 0.5pt (stark reduziert)
                 return w_gr + base_safety + extra_buffer
             else:
                 return base_safety
@@ -1338,8 +1337,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         if max_width > 0:
             # Füge Basis-Sicherheitspuffer hinzu
-            # Reduzierter natürlicher Abstand für dichteren Text
-            natural_spacing = max_width * 0.03  # 3% statt 5% (reduziert)
+            # Stark reduzierter natürlicher Abstand für dichteren Text
+            natural_spacing = max_width * 0.015  # 1.5% statt 3% (stark reduziert für kompaktere TAG-PDFs)
             return max_width + base_safety + natural_spacing
         else:
             # Fallback: Minimaler Puffer
@@ -1642,7 +1641,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     # print(f"DEBUG: tag_mode={tag_mode}, CONT_PAIR_GAP_MM={CONT_PAIR_GAP_MM}, INTRA_PAIR_GAP_MM={INTRA_PAIR_GAP_MM}")
 
     doc = SimpleDocTemplate(pdf_name, pagesize=A4,
-                            leftMargin=10*mm, rightMargin=10*mm,  # Weiter reduzierter rechter Rand für mehr Textbreite
+                            leftMargin=10*mm, rightMargin=6*mm,  # Minimaler rechter Rand für maximale Textbreite (wie Apologie)
                             topMargin=14*mm,  bottomMargin=14*mm)
     frame_w = A4[0] - doc.leftMargin - doc.rightMargin
     base = getSampleStyleSheet()
@@ -1679,7 +1678,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     # §-Label / Quelle / Sprecher
     style_para = ParagraphStyle('ParaLabel', parent=base['Normal'],
         fontName='DejaVu', fontSize=max(de_size, 9.0), leading=_leading_for(max(de_size, 9.0)),
-        alignment=TA_JUSTIFY, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)
+        alignment=TA_LEFT, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)
     style_quote_line = ParagraphStyle('QuoteLine', parent=base['Normal'],
         fontName='DejaVu-Bold' if gr_bold else 'DejaVu', fontSize=gr_size, leading=_leading_for(gr_size),
         alignment=TA_JUSTIFY, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)
@@ -1710,11 +1709,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         if not text: return 0.0
         # Prüfe ob es ein Paragraphen-Marker ist (enthält §)
         if '§' in text:
-            # Dynamische Berechnung: Verwende die tatsächliche Breite + kleiner Puffer
-            # WICHTIG: Kein großes Minimum mehr - verwende nur die tatsächlich benötigte Breite
-            w = pdfmetrics.stringWidth(text, style_para.fontName, style_para.fontSize) + 1.5  # Sehr kleiner Puffer
-            # Verwende nur ein sehr kleines Minimum für sehr kurze Nummern wie "§ 1"
-            return max(2.0, w)  # Minimal 2.0pt statt großem Minimum in mm
+            # Dynamische Berechnung: Verwende die tatsächliche Breite + ausreichender Puffer
+            # WICHTIG: Puffer muss groß genug sein, damit "§ 1" nicht umbricht
+            w = pdfmetrics.stringWidth(text, style_para.fontName, style_para.fontSize) + 4.0  # Ausreichender Puffer gegen Umbruch
+            # Verwende ein angemessenes Minimum, damit auch "§ 1" nicht umbricht
+            return max(20.0, w)  # Minimal 20pt um sicherzustellen, dass "§ 1" nicht umbricht
         # Zeilennummern werden nicht angezeigt
         return 0.0
 
@@ -1833,7 +1832,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # DEBUG: Prüfe, ob formatted_text leer ist
             if not formatted_text.strip():
-                print(f"  ⚠️ Kommentar formatted_text ist leer: line_num={line_num}, content={content[:50] if content else '(leer)'}")
+                print(f"  ⚠️ Kommentar formatted_text ist leer: line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:50] if original_line else '(leer)'}")
+                # Selbst wenn formatted_text leer ist, erstelle einen Paragraph mit zumindest der Zeilennummer
+                if line_num:
+                    formatted_text = f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>'
             
             # Style für Kommentar (kompakt, kleiner, dichter)
             # WICHTIG: Keine Hinterlegung für den Kommentartext selbst - die Hinterlegung betrifft die Originaltext-Zeilen
@@ -1844,7 +1846,12 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 spaceBefore=0, spaceAfter=0,  # Keine zusätzlichen Abstände
                 textColor=colors.black)  # Kommentartext ist schwarz
             
-            elements.append(Paragraph(formatted_text, comment_style))
+            # Kommentar-Paragraph immer hinzufügen, auch wenn formatted_text leer ist (als Fallback)
+            if formatted_text.strip():
+                elements.append(Paragraph(formatted_text, comment_style))
+                print(f"  ✓ Kommentar-Paragraph erstellt: {formatted_text[:100]}...")
+            else:
+                print(f"  ⚠️ Kommentar-Paragraph NICHT erstellt - formatted_text ist leer!")
             elements.append(Spacer(1, CONT_PAIR_GAP_MM * 1.2 * mm))  # Größerer Abstand nach Kommentar für bessere Trennung
             last_block_type = t
             idx += 1; continue
