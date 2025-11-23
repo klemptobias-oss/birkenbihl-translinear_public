@@ -138,7 +138,8 @@ def _get_default_tag_config(language: str) -> dict:
 
 def _process_one_input(infile: str,
                        tag_config: dict = None,
-                       force_meter: Optional[bool] = None) -> None:
+                       force_meter: Optional[bool] = None,
+                       hide_pipes: bool = False) -> None:
     if not os.path.isfile(infile):
         print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
 
@@ -237,7 +238,7 @@ def _process_one_input(infile: str,
         versmass_mode = "KEEP_MARKERS" if meter_on else "REMOVE_MARKERS"
         opts = PdfRenderOptions(strength=strength, color_mode=color_mode, tag_mode=tag_mode, versmass_mode=versmass_mode)
         
-        create_pdf_unified("poesie", Poesie, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config)
+        create_pdf_unified("poesie", Poesie, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
         print(f"✓ PDF erstellt → {out_name}")
 
 def main():
@@ -248,6 +249,7 @@ def main():
     parser.add_argument('--tag-config', help='JSON file with tag configuration')
     parser.add_argument('--force-meter', action='store_true', help='Versmaß-Ausgabe erzwingen')
     parser.add_argument('--force-no-meter', action='store_true', help='Versmaß deaktivieren')
+    parser.add_argument('--hide-pipes', action='store_true', help='Hide pipe characters in translations')
     args = parser.parse_args()
     
     if args.force_meter and args.force_no_meter:
@@ -280,7 +282,7 @@ def main():
     for infile in inputs:
         print(f"→ Verarbeite: {infile}")
         try:
-            _process_one_input(infile, tag_config, force_meter=force_meter_flag)
+            _process_one_input(infile, tag_config, force_meter=force_meter_flag, hide_pipes=args.hide_pipes)
         except Exception as e:
             print(f"✗ Fehler bei {infile}: {e}")
 

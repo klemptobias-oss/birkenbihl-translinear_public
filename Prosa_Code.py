@@ -401,6 +401,7 @@ def extract_line_number(s: str) -> tuple[str | None, str]:
     Extrahiert die Zeilennummer am Anfang einer Zeile.
     Format: (123) oder (123a) oder (123b) etc.
     NEU: Auch (123k) für Kommentare und (123i) für Insertionszeilen.
+    NEU: Auch (220-222k) für Bereichs-Kommentare.
     
     Returns:
         (line_number, rest_of_line) oder (None, original_line)
@@ -410,9 +411,19 @@ def extract_line_number(s: str) -> tuple[str | None, str]:
         "(100a) Text" → ("100a", "Text")
         "(50k) Kommentar hier" → ("50k", "Kommentar hier")
         "(300i) Insertion hier" → ("300i", "Insertion hier")
+        "(220-222k) Kommentar zu Zeilen 220-222" → ("220-222k", "Kommentar zu Zeilen 220-222")
         "Text ohne Nummer" → (None, "Text ohne Nummer")
     """
     s = (s or '').strip()
+    # NEU: Regex für Bereichs-Kommentare: (zahl-zahl+k/i)
+    m_range = re.match(r'^\((\d+)-(\d+)([a-z]?)\)\s*(.*)$', s, re.IGNORECASE)
+    if m_range:
+        start = m_range.group(1)
+        end = m_range.group(2)
+        suffix = m_range.group(3)
+        rest = m_range.group(4)
+        return (f"{start}-{end}{suffix}", rest)
+    
     # Regex für Zeilennummer: (Zahl[optionaler Buchstabe oder k/i])
     # k = Kommentar, i = Insertion
     # Beispiele: (123), (123a), (123k), (123i), (50k), (300i)
@@ -433,6 +444,55 @@ def is_insertion_line(line_num: str | None) -> bool:
     if not line_num:
         return False
     return line_num.lower().endswith('i')
+
+def extract_line_range(line_num: str | None) -> tuple[int | None, int | None]:
+    """
+    Extrahiert den Zeilenbereich aus einer Zeilennummer wie "220-222k".
+    
+    Returns:
+        (start_line, end_line) oder (None, None) wenn kein Bereich
+        Bei einzelnen Zeilen: (line_num, line_num)
+    
+    Beispiele:
+        "220-222k" → (220, 222)
+        "50k" → (50, 50)
+        "100" → (100, 100)
+        None → (None, None)
+    """
+    if not line_num:
+        return (None, None)
+    
+    # Prüfe auf Bereichs-Format: "220-222k"
+    range_match = re.match(r'^(-?\d+)-(-?\d+)', line_num)
+    if range_match:
+        try:
+            start = int(range_match.group(1))
+            end = int(range_match.group(2))
+            return (start, end)
+        except ValueError:
+            return (None, None)
+    
+    # Einzelne Zeile: Extrahiere die Zahl
+    num_match = re.match(r'^(-?\d+)', line_num)
+    if num_match:
+        try:
+            num = int(num_match.group(1))
+            return (num, num)
+        except ValueError:
+            return (None, None)
+    
+    return (None, None)
+
+# Farben für Kommentare (Rotation: rot → blau → grün → rot)
+COMMENT_COLORS = [
+    (0.95, 0.9, 0.9),   # Sanft rot (RGB)
+    (0.9, 0.95, 1.0),   # Sanft blau
+    (0.9, 1.0, 0.9),    # Sanft grün
+]
+
+def get_comment_color(comment_index: int) -> tuple[float, float, float]:
+    """Gibt die Farbe für einen Kommentar basierend auf dem Index zurück (Rotation: rot → blau → grün)."""
+    return COMMENT_COLORS[comment_index % len(COMMENT_COLORS)]
 
 def _remove_line_number_from_line(line: str) -> str:
     """
@@ -754,6 +814,21 @@ def process_input_file(fname:str):
         # NEUE LOGIK: Zeilennummern-basierte Paarbildung
         # Extrahiere Zeilennummer der aktuellen Zeile
         line_num, line_content = extract_line_number(line)
+        
+        # NEU: Kommentarzeilen erkennen (k) und als Kommentar-Blocks speichern
+        if line_num is not None and is_comment_line(line_num):
+            # Kommentar-Zeile: Extrahiere Zeilenbereich und speichere als Kommentar-Block
+            start_line, end_line = extract_line_range(line_num)
+            blocks.append({
+                'type': 'comment',
+                'line_num': line_num,
+                'content': line_content,
+                'start_line': start_line,
+                'end_line': end_line,
+                'original_line': line
+            })
+            i += 1
+            continue
         
         # WICHTIG: Prüfe ob der Inhalt (nach Entfernen der Zeilennummer) ein Marker ist
         # Wenn ja, behandle ihn als Marker, nicht als normale Zeile
@@ -1123,9 +1198,15 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             # Leerzeichen sind breiter als Pipes - füge zusätzlichen Platz hinzu
             # Ein Leerzeichen ist etwa 0.3x der Font-Size breit, ein Pipe ist etwa 0.1x
             # Differenz pro Pipe: ~0.2x Font-Size
-            space_vs_pipe_diff = token_de_style.fontSize * 0.2
+            # WICHTIG: Zusätzlicher Sicherheitspuffer, um Umbrüche zu verhindern
+            space_vs_pipe_diff = token_de_style.fontSize * 0.25  # Erhöht von 0.2 auf 0.25
             de_pipe_extra = de_pipe_count * space_vs_pipe_diff
             en_pipe_extra = en_pipe_count * space_vs_pipe_diff
+            # Zusätzlicher Sicherheitspuffer (10% der gemessenen Breite) um Umbrüche zu verhindern
+            if de_text:
+                de_pipe_extra += visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) * 0.1
+            if en_text:
+                en_pipe_extra += visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) * 0.1
         else:
             de_text = de[k] if (k < len(de) and de[k]) else ''
             en_text = en[k] if (k < len(en) and en[k]) else ''
@@ -1337,11 +1418,53 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
     return tables
 
 # ----------------------- PDF-Erstellung -----------------------
+def process_comments_for_coloring(blocks):
+    """
+    Verarbeitet Kommentare in den Blöcken und weist ihnen Farben zu.
+    Gibt ein Dictionary zurück: {comment_index: {'color': (r, g, b), 'start_line': int, 'end_line': int, 'block_index': int}}
+    """
+    comments = []
+    comment_index = 0
+    
+    # Sammle alle Kommentar-Blocks
+    for i, block in enumerate(blocks):
+        if block.get('type') == 'comment':
+            start_line = block.get('start_line')
+            end_line = block.get('end_line')
+            if start_line is not None and end_line is not None:
+                color = get_comment_color(comment_index)
+                comments.append({
+                    'comment_index': comment_index,
+                    'color': color,
+                    'start_line': start_line,
+                    'end_line': end_line,
+                    'block_index': i
+                })
+                # Speichere die Farbe direkt im Block für späteres Rendering
+                block['comment_color'] = color
+                block['comment_index'] = comment_index
+                comment_index += 1
+    
+    return comments
+
 def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                color_mode:str="COLOR", tag_mode:str="TAGS",
                placement_overrides: dict | None = None,
                tag_config: dict | None = None,
                hide_pipes:bool=False):  # NEU: Pipes (|) in Übersetzungen verstecken
+
+    # Verarbeite Kommentare und weise Farben zu
+    comments = process_comments_for_coloring(blocks)
+    
+    # Erstelle eine Map: Zeilennummer → Kommentar-Farbe (für Hinterlegung)
+    line_comment_colors = {}  # {line_num: (r, g, b)}
+    for comment in comments:
+        color = comment['color']
+        for line_num in range(comment['start_line'], comment['end_line'] + 1):
+            line_comment_colors[line_num] = color
+    
+    # Speichere line_comment_colors für späteres Rendering
+    # (wird in build_tables_for_stream und beim Rendering verwendet)
 
     # Leite gr_size und de_size aus strength ab, wie in der alten Logik
     if strength == "NORMAL":
@@ -1491,6 +1614,41 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm)); idx += 1; continue
         if t == 'title_brace':
             elements.append(Paragraph(xml_escape(b['text']), style_title))
+            last_block_type = t
+            idx += 1; continue
+
+        # NEU: Kommentar-Zeilen (zahlk oder zahl-zahlk)
+        if t == 'comment':
+            line_num = b.get('line_num', '')
+            content = b.get('content', '')
+            comment_color = b.get('comment_color', COMMENT_COLORS[0])  # Fallback zu rot
+            comment_index = b.get('comment_index', 0)
+            
+            # Formatiere Zeilennummer in der Kommentar-Farbe (rot/blau/grün)
+            # Konvertiere RGB-Tupel zu Hex für HTML
+            r, g, b = comment_color
+            color_hex = f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
+            
+            # Kommentar-Text mit kleinerem Font und etwas kursiv/leicht hervorgehoben
+            formatted_parts = []
+            # Zeilennummer in Kommentar-Farbe (WICHTIG: xml_escape auf line_num anwenden, um "-" zu schützen)
+            comment_num_size = de_size * 0.85  # Etwas kleiner
+            formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
+            # Kommentar-Text mit kleinerem Font und Farbe
+            comment_size = de_size * 0.8  # Deutlich kleiner (80% statt 90%)
+            formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="{color_hex}"><i> {xml_escape(content)}</i></font>')
+            formatted_text = ''.join(formatted_parts)
+            
+            # Style für Kommentar (kompakt, kleiner, dichter)
+            comment_style = ParagraphStyle('Comment', parent=base['Normal'],
+                fontName='DejaVu', fontSize=comment_size, 
+                leading=comment_size * 1.2,  # Dichterer Zeilenabstand (1.2 statt normal)
+                alignment=TA_LEFT, leftIndent=5*MM,  # Leicht eingerückt
+                spaceBefore=0, spaceAfter=0,  # Keine zusätzlichen Abstände
+                backColor=colors.Color(comment_color[0], comment_color[1], comment_color[2], alpha=0.1))  # Sehr leichte Hinterlegung
+            
+            elements.append(Paragraph(formatted_text, comment_style))
+            elements.append(Spacer(1, CONT_PAIR_GAP_MM * 0.5 * mm))  # Kleinerer Abstand
             last_block_type = t
             idx += 1; continue
 
