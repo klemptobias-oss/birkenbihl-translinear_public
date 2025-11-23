@@ -1653,6 +1653,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     # Die Blöcke kommen jetzt vorverarbeitet und tokenisiert an.
     flow_blocks = blocks
 
+    # DEBUG: Prüfe, ob Kommentare in flow_blocks vorhanden sind
+    comment_count = sum(1 for b in flow_blocks if isinstance(b, dict) and b.get('type') == 'comment')
+    if comment_count > 0:
+        print(f"  → {comment_count} Kommentar(e) in flow_blocks gefunden")
+
     # Meta-Flag: ob irgendwo Sprecher auftraten
     any_speaker = False
     if flow_blocks and flow_blocks[-1].get('type') == '_meta':
@@ -1719,8 +1724,29 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         if t == 'comment':
             line_num = b.get('line_num', '')
             content = b.get('content', '')
+            # Fallback: Wenn content leer ist, versuche original_line zu verwenden
+            if not content:
+                original_line = b.get('original_line', '')
+                if original_line:
+                    # Extrahiere content aus original_line
+                    _, content = extract_line_number(original_line)
+            
             comment_color = b.get('comment_color', COMMENT_COLORS[0])  # Fallback zu rot
             comment_index = b.get('comment_index', 0)
+            
+            # DEBUG: Prüfe, ob Kommentar-Daten vorhanden sind
+            # Wenn content leer ist, versuche original_line zu verwenden
+            if not content:
+                original_line = b.get('original_line', '')
+                if original_line:
+                    # Extrahiere content aus original_line
+                    _, content = extract_line_number(original_line)
+            
+            # Wenn immer noch keine Daten vorhanden sind, überspringe
+            if not line_num and not content:
+                print(f"  ⚠️ Kommentar ohne Daten übersprungen: {b}")
+                idx += 1
+                continue
             
             # Formatiere Zeilennummer in der Kommentar-Farbe (rot/blau/grün)
             # Konvertiere RGB-Tupel zu Hex für HTML
@@ -1737,7 +1763,17 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
             # Kommentar-Text mit kleinerem Font, aber SCHWARZ (nicht farbig)
             comment_size = de_size * 0.85  # Etwas größer (85% statt 80%)
-            formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#000000"><i> {xml_escape(content)}</i></font>')
+            # Sicherstellen, dass content vorhanden ist
+            if content:
+                formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#000000"><i> {xml_escape(content)}</i></font>')
+            else:
+                # Fallback: Verwende original_line wenn content leer ist
+                original_line = b.get('original_line', '')
+                if original_line:
+                    # Entferne Zeilennummer aus original_line für content
+                    _, fallback_content = extract_line_number(original_line)
+                    if fallback_content:
+                        formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#000000"><i> {xml_escape(fallback_content)}</i></font>')
             formatted_text = ''.join(formatted_parts)
             
             # Style für Kommentar (kompakt, kleiner, dichter)

@@ -1979,8 +1979,22 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
         if t == 'comment':
             line_num = b.get('line_num', '')
             content = b.get('content', '')
+            # Fallback: Wenn content leer ist, versuche original_line zu verwenden
+            if not content:
+                original_line = b.get('original_line', '')
+                if original_line:
+                    # Extrahiere content aus original_line
+                    from Poesie_Code import extract_line_number
+                    _, content = extract_line_number(original_line)
+            
             comment_color = b.get('comment_color', COMMENT_COLORS[0])  # Fallback zu rot
             comment_index = b.get('comment_index', 0)
+            
+            # DEBUG: Prüfe, ob Kommentar-Daten vorhanden sind
+            if not line_num and not content:
+                # Kommentar ohne Daten - überspringe
+                i += 1
+                continue
             
             # Formatiere Zeilennummer in der Kommentar-Farbe (rot/blau/grün)
             # Konvertiere RGB-Tupel zu Hex für HTML
@@ -1994,7 +2008,17 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
             # Kommentar-Text mit kleinerem Font und Farbe
             comment_size = DE_SIZE * 0.8  # Deutlich kleiner (80% statt 90%)
-            formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="{color_hex}"><i> {xml_escape(content)}</i></font>')
+            # Sicherstellen, dass content vorhanden ist
+            if content:
+                formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="{color_hex}"><i> {xml_escape(content)}</i></font>')
+            else:
+                # Fallback: Verwende original_line wenn content leer ist
+                original_line = b.get('original_line', '')
+                if original_line:
+                    # Entferne Zeilennummer aus original_line für content
+                    _, fallback_content = extract_line_number(original_line)
+                    if fallback_content:
+                        formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="{color_hex}"><i> {xml_escape(fallback_content)}</i></font>')
             formatted_text = ''.join(formatted_parts)
             
             # Style für Kommentar (kompakt, kleiner, dichter)
