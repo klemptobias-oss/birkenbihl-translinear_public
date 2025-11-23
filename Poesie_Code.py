@@ -1178,6 +1178,14 @@ def process_input_file(fname:str):
                     break
             
             # Jetzt haben wir alle Zeilen mit derselber Nummer
+            # WICHTIG: Prüfe, ob die ERSTE Zeile selbst ein Kommentar ist (sollte nicht passieren, aber sicherheitshalber)
+            first_line_num, _ = extract_line_number(lines_with_same_num[0])
+            if first_line_num is not None and is_comment_line(first_line_num):
+                # Die erste Zeile ist ein Kommentar - das sollte bereits oben erkannt worden sein!
+                # Aber sicherheitshalber überspringen wir sie hier auch
+                i = j
+                continue
+            
             num_lines = len(lines_with_same_num)
             
             if num_lines >= 2:

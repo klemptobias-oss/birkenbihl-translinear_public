@@ -1441,9 +1441,13 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             # Hinterlegung für die gesamte Tabelle (alle Zeilen und Spalten)
             # "Augiebig" - also der gesamte Bereich wird markiert
             r, g, b = comment_color
-            # Etwas stärkere Hinterlegung (0.15 statt 0.1) für bessere Sichtbarkeit
-            bg_color = colors.Color(r, g, b, alpha=0.15)
+            # Stärkere Hinterlegung (0.25) für bessere Sichtbarkeit
+            bg_color = colors.Color(r, g, b, alpha=0.25)
             style_list.append(('BACKGROUND', (0, 0), (-1, -1), bg_color))
+        elif base_num is not None and line_comment_colors:
+            # DEBUG: Prüfe, ob base_num in line_comment_colors enthalten ist
+            # (Für Debugging - kann später entfernt werden)
+            pass
         
         # Padding nur hinzufügen, wenn Übersetzungen vorhanden sind
         if has_de or has_en:
@@ -1680,9 +1684,15 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # Kommentar-Text mit kleinerem Font und etwas kursiv/leicht hervorgehoben
             formatted_parts = []
-            # Zeilennummer in Kommentar-Farbe (WICHTIG: xml_escape auf line_num anwenden, um "-" zu schützen)
-            comment_num_size = de_size * 0.85  # Etwas kleiner
-            formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
+            # Zeilennummer in Kommentar-Farbe, aber DUNKLER für bessere Lesbarkeit
+            # (WICHTIG: xml_escape auf line_num anwenden, um "-" zu schützen)
+            comment_num_size = de_size * 0.9  # Etwas größer (90% statt 85%)
+            # Mache die Farbe dunkler (50% dunkler) für bessere Lesbarkeit
+            r_dark = min(1.0, r * 0.5)  # Dunkler machen
+            g_dark = min(1.0, g * 0.5)
+            b_dark = min(1.0, b * 0.5)
+            color_hex_dark = f"#{int(r_dark*255):02x}{int(g_dark*255):02x}{int(b_dark*255):02x}"
+            formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex_dark}"><b>[{xml_escape(line_num)}]</b></font>')
             # Kommentar-Text mit kleinerem Font, aber SCHWARZ (nicht farbig)
             comment_size = de_size * 0.85  # Etwas größer (85% statt 80%)
             formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#000000"><i> {xml_escape(content)}</i></font>')
