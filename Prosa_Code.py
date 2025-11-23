@@ -1194,7 +1194,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                                                  is_greek_row=is_greek_row, reverse_mode=False)
                 # Größerer Puffer für NoTag-Versionen, um Abstände zwischen Wörtern zu garantieren
                 # Wichtig: Dieser Puffer muss groß genug sein, damit Wörter nicht zusammenhängen
-                return w_no_tags + max(size * 0.08, 1.2)  # Erhöht von 5% auf 8%, von 0.5pt auf 1.2pt
+                # Erhöht für Texte mit Sprechern/§ - verhindert Überlappungen
+                return w_no_tags + max(size * 0.12, 2.0)  # Erhöht von 8% auf 12%, von 1.2pt auf 2.0pt
             else:
                 # Keine Tags vorhanden → verwende Standard-Breite
                 return w_with_tags
@@ -1318,15 +1319,17 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Basis-Sicherheitspuffer: Konsistent für alle Wörter (verhindert Überlappungen)
         # Dieser Puffer ist minimal und berücksichtigt nur Rundungsfehler und Rendering-Ungenauigkeiten
-        base_safety = max(token_gr_style.fontSize * 0.01, 0.25)  # 1% der Font-Size oder mindestens 0.25pt (stark reduziert für kompaktere TAG-PDFs)
+        base_safety = max(token_gr_style.fontSize * 0.015, 0.35)  # 1.5% der Font-Size oder mindestens 0.35pt (leicht erhöht)
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
             # Nur griechische Zeile sichtbar
-            # Verwende GR-Breite mit minimalem Puffer für dichteren Text (Tag-Versionen)
+            # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
+            # Der Puffer wird bereits in measure_token_width_with_visibility erhöht für NoTag
+            # Hier fügen wir einen zusätzlichen kleinen Puffer hinzu für bessere Abstände
             if w_gr > 0:
-                # Stark reduzierter Puffer für dichteren Text in Tag-Versionen
-                extra_buffer = max(token_gr_style.fontSize * 0.02, 0.5)  # 2% oder mindestens 0.5pt (stark reduziert)
+                # Leicht erhöhter Puffer für bessere Abstände bei ausgeblendeten Übersetzungen
+                extra_buffer = max(token_gr_style.fontSize * 0.03, 0.8)  # 3% oder mindestens 0.8pt
                 return w_gr + base_safety + extra_buffer
             else:
                 return base_safety
@@ -1337,8 +1340,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         if max_width > 0:
             # Füge Basis-Sicherheitspuffer hinzu
-            # Stark reduzierter natürlicher Abstand für dichteren Text
-            natural_spacing = max_width * 0.015  # 1.5% statt 3% (stark reduziert für kompaktere TAG-PDFs)
+            # Leicht erhöhter natürlicher Abstand für bessere Lesbarkeit
+            natural_spacing = max_width * 0.02  # 2% statt 1.5% (leicht erhöht für bessere Lesbarkeit)
             return max_width + base_safety + natural_spacing
         else:
             # Fallback: Minimaler Puffer
