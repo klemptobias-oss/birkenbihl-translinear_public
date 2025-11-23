@@ -729,7 +729,14 @@ def visible_measure_token(token:str, *, font:str, size:float, is_greek_row:bool=
         max_tag_width = min(tag_width, TAG_MAX_WIDTH_PT)
         w += max_tag_width
 
-    return w + SAFE_EPS_PT + 2*CELL_PAD_LR_PT
+    # NEU: Größerer Sicherheitspuffer für Tags (wie in Poesie)
+    # Poesie verwendet effektiv ~3.0pt, Prosa nur 0.5pt
+    # Erhöhe den Puffer für bessere Kompatibilität und um Überlappungen zu vermeiden
+    tag_safety = 2.0  # Zusätzlicher Puffer für Tags (wenn Tags vorhanden sind)
+    if kept:
+        tag_safety += 1.0  # Noch mehr Puffer, wenn Tags sichtbar sind
+    safe_eps = max(SAFE_EPS_PT, tag_safety)
+    return w + safe_eps + 2*CELL_PAD_LR_PT
     
 # ----------------------- Parsing (Prosa + Dialog) -----------------------
 def detect_eq_heading(line:str):
@@ -989,13 +996,16 @@ def group_pairs_into_flows(blocks):
     active_speaker = ''
     any_speaker_seen = False
     in_lyric_mode = False  # NEU: Lyrik-Modus für Boethius
+    current_base_num = None  # NEU: Zeilennummer für Hinterlegung
 
     def flush():
-        nonlocal buf_gr, buf_de, buf_en, active_speaker
+        nonlocal buf_gr, buf_de, buf_en, active_speaker, current_base_num
         if buf_gr or buf_de or buf_en:
             flows.append({'type':'flow','gr_tokens':buf_gr,'de_tokens':buf_de,'en_tokens':buf_en,
-                          'para_label': current_para_label, 'speaker': active_speaker})
+                          'para_label': current_para_label, 'speaker': active_speaker,
+                          'base': current_base_num})  # NEU: Zeilennummer für Hinterlegung
             buf_gr, buf_de, buf_en = [], [], []
+            current_base_num = None  # Reset für nächsten Block
 
     for b in blocks:
         t = b['type']
@@ -1028,6 +1038,10 @@ def group_pairs_into_flows(blocks):
             gt = tokenize(b['gr']) if b['gr'] else []
             dt = tokenize(b['de']) if b['de'] else []
             et = tokenize(b['en']) if b.get('en') else []  # NEU: Englische Zeile
+            
+            # NEU: base_num für Hinterlegung speichern (erstes base_num wird verwendet)
+            if current_base_num is None:
+                current_base_num = b.get('base')
 
             # DE: Inline-Marken unsichtbar machen
             dt = ['' if RE_INLINE_MARK.match(x or '') else (x or '') for x in dt]
@@ -1054,13 +1068,16 @@ def group_pairs_into_flows(blocks):
                 flush()  # Vorherige Flows abschließen
                 # Jede Zeile als separates Paar ausgeben (Zeilenstruktur erhalten)
                 # WICHTIG: Keine para_label im Lyrik-Modus (verhindert § vor jeder Zeile)
+                # NEU: base_num für Hinterlegung speichern
+                base_num = b.get('base')  # Zeilennummer aus dem Block
                 flows.append({
                     'type': 'pair',
                     'gr_tokens': gt,
                     'de_tokens': dt,
                     'en_tokens': et,
                     'para_label': '',  # Kein § Marker im Lyrik-Modus
-                    'speaker': active_speaker
+                    'speaker': active_speaker,
+                    'base': base_num  # NEU: Zeilennummer für Hinterlegung
                 })
                 continue
 
@@ -1213,14 +1230,18 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             # Ein Leerzeichen ist etwa 0.3x der Font-Size breit, ein Pipe ist etwa 0.1x
             # Differenz pro Pipe: ~0.2x Font-Size
             # WICHTIG: Zusätzlicher Sicherheitspuffer, um Umbrüche zu verhindern
-            space_vs_pipe_diff = token_de_style.fontSize * 0.25  # Erhöht von 0.2 auf 0.25
+            # Erhöht von 0.25 auf 0.3 für mehr Sicherheit
+            space_vs_pipe_diff = token_de_style.fontSize * 0.3
             de_pipe_extra = de_pipe_count * space_vs_pipe_diff
             en_pipe_extra = en_pipe_count * space_vs_pipe_diff
-            # Zusätzlicher Sicherheitspuffer (10% der gemessenen Breite) um Umbrüche zu verhindern
+            # Zusätzlicher Sicherheitspuffer (15% der gemessenen Breite) um Umbrüche zu verhindern
+            # Erhöht von 10% auf 15% für mehr Sicherheit
             if de_text:
-                de_pipe_extra += visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) * 0.1
+                measured_width = visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False)
+                de_pipe_extra += measured_width * 0.15  # Erhöht von 0.1 auf 0.15
             if en_text:
-                en_pipe_extra += visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) * 0.1
+                measured_width = visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False)
+                en_pipe_extra += measured_width * 0.15  # Erhöht von 0.1 auf 0.15
         else:
             de_text = de[k] if (k < len(de) and de[k]) else ''
             en_text = en[k] if (k < len(en) and en[k]) else ''
