@@ -1318,16 +1318,15 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Basis-Sicherheitspuffer: Konsistent für alle Wörter (verhindert Überlappungen)
         # Dieser Puffer ist minimal und berücksichtigt nur Rundungsfehler und Rendering-Ungenauigkeiten
-        base_safety = max(token_gr_style.fontSize * 0.03, 0.5)  # 3% der Font-Size oder mindestens 0.5pt
+        base_safety = max(token_gr_style.fontSize * 0.02, 0.4)  # 2% der Font-Size oder mindestens 0.4pt (reduziert)
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
             # Nur griechische Zeile sichtbar
-            # Verwende GR-Breite mit zusätzlichem Puffer, um Überlappungen zu vermeiden
-            # Der Puffer ist größer, da keine Übersetzungszeile als "Füllmaterial" dient
+            # Verwende GR-Breite mit minimalem Puffer für dichteren Text (Tag-Versionen)
             if w_gr > 0:
-                # Puffer basierend auf Font-Size: größer für größere Fonts
-                extra_buffer = max(token_gr_style.fontSize * 0.08, 1.2)  # 8% oder mindestens 1.2pt
+                # Reduzierter Puffer für dichteren Text in Tag-Versionen
+                extra_buffer = max(token_gr_style.fontSize * 0.04, 0.8)  # 4% oder mindestens 0.8pt (reduziert)
                 return w_gr + base_safety + extra_buffer
             else:
                 return base_safety
@@ -1338,8 +1337,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         if max_width > 0:
             # Füge Basis-Sicherheitspuffer hinzu
-            # Zusätzlich: Kleiner Puffer (5% der maximalen Breite) für natürliche Abstände
-            natural_spacing = max_width * 0.05
+            # Reduzierter natürlicher Abstand für dichteren Text
+            natural_spacing = max_width * 0.03  # 3% statt 5% (reduziert)
             return max_width + base_safety + natural_spacing
         else:
             # Fallback: Minimaler Puffer

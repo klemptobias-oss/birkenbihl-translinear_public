@@ -1021,50 +1021,67 @@ def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
 def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Optional[Dict[str, Dict[str, Any]]] = None) -> Dict[str, Any]:
     """
     Entfernt Stephanus-Paginierungen aus Übersetzungszeilen (DE, EN), wenn Übersetzungen ausgeblendet sind.
-    Prüft auch, ob alle Übersetzungen ausgeblendet sind, und entfernt dann auch Stephanus aus GR-Tokens.
+    Entfernt ALLE Stephanus-Paginierungen aus Übersetzungszeilen, wenn die entsprechenden Übersetzungen ausgeblendet sind.
     """
     if 'gr_tokens' not in block:
         return block
     
     source_tokens = block.get('gr_tokens', [])
-    
-    # Prüfe, ob alle Übersetzungen ausgeblendet sind
-    all_translations_hidden = False
-    if translation_rules:
-        hide_flags = [
-            _token_should_hide_translation(token, translation_rules)
-            for token in source_tokens
-        ]
-        # Prüfe, ob ALLE Tokens ihre Übersetzungen versteckt haben
-        all_translations_hidden = all(hide_flags) if hide_flags else False
-    
     result = {**block}
     
     # Entferne Stephanus-Paginierungen aus DE-Tokens
     if 'de_tokens' in result:
         de_tokens = result['de_tokens']
         for idx, token in enumerate(de_tokens):
-            if token and RE_STEPHANUS.search(token):
-                # Prüfe, ob die Übersetzung für dieses Token ausgeblendet ist
-                should_hide = False
-                if translation_rules and idx < len(source_tokens):
-                    should_hide = _token_should_hide_translation(source_tokens[idx], translation_rules)
-                if should_hide or all_translations_hidden:
-                    # Entferne Stephanus-Paginierung
-                    result['de_tokens'][idx] = _remove_stephanus_from_token(token)
+            if not token:
+                continue
+            
+            # Prüfe, ob die Übersetzung für dieses Token ausgeblendet ist
+            should_hide_translation = False
+            if translation_rules and idx < len(source_tokens):
+                should_hide_translation = _token_should_hide_translation(source_tokens[idx], translation_rules)
+            
+            # Wenn die Übersetzung ausgeblendet ist, entferne Stephanus-Paginierungen
+            if should_hide_translation:
+                # Prüfe, ob Token nur eine Stephanus-Paginierung enthält
+                token_stripped = token.strip()
+                if RE_STEPHANUS.fullmatch(token_stripped):
+                    # Token ist nur eine Stephanus-Paginierung → komplett entfernen
+                    result['de_tokens'][idx] = ''
+                elif RE_STEPHANUS.search(token):
+                    # Token enthält Stephanus-Paginierung + anderen Text → nur Paginierung entfernen
+                    cleaned = _remove_stephanus_from_token(token)
+                    result['de_tokens'][idx] = cleaned
+                    # Wenn nach dem Entfernen nur noch Whitespace übrig ist, setze auf leer
+                    if not cleaned.strip():
+                        result['de_tokens'][idx] = ''
     
     # Entferne Stephanus-Paginierungen aus EN-Tokens
     if 'en_tokens' in result:
         en_tokens = result['en_tokens']
         for idx, token in enumerate(en_tokens):
-            if token and RE_STEPHANUS.search(token):
-                # Prüfe, ob die Übersetzung für dieses Token ausgeblendet ist
-                should_hide = False
-                if translation_rules and idx < len(source_tokens):
-                    should_hide = _token_should_hide_translation(source_tokens[idx], translation_rules)
-                if should_hide or all_translations_hidden:
-                    # Entferne Stephanus-Paginierung
-                    result['en_tokens'][idx] = _remove_stephanus_from_token(token)
+            if not token:
+                continue
+            
+            # Prüfe, ob die Übersetzung für dieses Token ausgeblendet ist
+            should_hide_translation = False
+            if translation_rules and idx < len(source_tokens):
+                should_hide_translation = _token_should_hide_translation(source_tokens[idx], translation_rules)
+            
+            # Wenn die Übersetzung ausgeblendet ist, entferne Stephanus-Paginierungen
+            if should_hide_translation:
+                # Prüfe, ob Token nur eine Stephanus-Paginierung enthält
+                token_stripped = token.strip()
+                if RE_STEPHANUS.fullmatch(token_stripped):
+                    # Token ist nur eine Stephanus-Paginierung → komplett entfernen
+                    result['en_tokens'][idx] = ''
+                elif RE_STEPHANUS.search(token):
+                    # Token enthält Stephanus-Paginierung + anderen Text → nur Paginierung entfernen
+                    cleaned = _remove_stephanus_from_token(token)
+                    result['en_tokens'][idx] = cleaned
+                    # Wenn nach dem Entfernen nur noch Whitespace übrig ist, setze auf leer
+                    if not cleaned.strip():
+                        result['en_tokens'][idx] = ''
     
     return result
 

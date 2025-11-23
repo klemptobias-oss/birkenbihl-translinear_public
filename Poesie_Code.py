@@ -770,6 +770,18 @@ def tokenize(line:str):
 def _is_label_token(t: str):
     return bool(RE_LABEL_TOKEN.match(t or ''))
 
+def _is_staggered_label(label: str) -> bool:
+    """
+    Prüft, ob ein Label ein gültiges Suffix für gestaffelte Zeilen hat.
+    Nur Suffixe a-g sind erlaubt (h, i, j, etc. sind für andere Zwecke wie Insertions).
+    """
+    if not label:
+        return False
+    # Extrahiere Suffix (letzter Buchstabe)
+    suffix = label[-1].lower() if label[-1].isalpha() else ''
+    # Nur a-g sind gültig für gestaffelte Zeilen
+    return suffix in 'abcdefg'
+
 def _pop_label(toks):
     if toks and _is_label_token(toks[0]):
         m = RE_LABEL_TOKEN.match(toks[0])
@@ -1738,7 +1750,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             ]
             # NEU: Hinterlegung für Kommentar-referenzierte Zeilen
             if comment_color:
-                bg_color = colors.Color(comment_color[0], comment_color[1], comment_color[2], alpha=0.15)  # Sanfte Hinterlegung
+                bg_color = colors.Color(comment_color[0], comment_color[1], comment_color[2], alpha=0.35)  # Flächige Hinterlegung (wie Prosa)
                 style_list.append(('BACKGROUND', (0,0), (-1,-1), bg_color))
             # Nur Padding für Sprecher-Spalte hinzufügen, wenn sie existiert (sp_w > 0)
             if sp_w > 0:
@@ -1767,7 +1779,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             ]
             # NEU: Hinterlegung für Kommentar-referenzierte Zeilen
             if comment_color:
-                bg_color = colors.Color(comment_color[0], comment_color[1], comment_color[2], alpha=0.15)  # Sanfte Hinterlegung
+                bg_color = colors.Color(comment_color[0], comment_color[1], comment_color[2], alpha=0.35)  # Flächige Hinterlegung (wie Prosa)
                 style_list.append(('BACKGROUND', (0,0), (-1,-1), bg_color))
             # Nur Padding für Sprecher-Spalte hinzufügen, wenn sie existiert (sp_w > 0)
             if sp_w > 0:
@@ -1979,22 +1991,34 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
         if t == 'comment':
             line_num = b.get('line_num', '')
             content = b.get('content', '')
+            original_line = b.get('original_line', '')
+            
             # Fallback: Wenn content leer ist, versuche original_line zu verwenden
-            if not content:
-                original_line = b.get('original_line', '')
-                if original_line:
-                    # Extrahiere content aus original_line
-                    from Poesie_Code import extract_line_number
-                    _, content = extract_line_number(original_line)
+            if not content and original_line:
+                # Extrahiere content aus original_line
+                from Poesie_Code import extract_line_number
+                _, content = extract_line_number(original_line)
+            
+            # Wenn immer noch kein content, verwende original_line direkt (ohne Zeilennummer)
+            if not content and original_line:
+                # Entferne Zeilennummer am Anfang (z.B. "(3-7k) " oder "(24k) ")
+                import re
+                content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
+                content = re.sub(r'^\(\d+k\)\s*', '', content)
+                content = content.strip()
             
             comment_color = b.get('comment_color', COMMENT_COLORS[0])  # Fallback zu rot
             comment_index = b.get('comment_index', 0)
             
             # DEBUG: Prüfe, ob Kommentar-Daten vorhanden sind
             if not line_num and not content:
-                # Kommentar ohne Daten - überspringe
+                print(f"  ⚠️ Kommentar ohne Daten übersprungen (Poesie): line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:50] if original_line else '(leer)'}")
                 i += 1
                 continue
+            
+            # DEBUG: Kommentar wird gerendert
+            if content:
+                print(f"  ✓ Kommentar wird gerendert (Poesie): line_num={line_num}, content={content[:50]}...")
             
             # Formatiere Zeilennummer in der Kommentar-Farbe (rot/blau/grün)
             # Konvertiere RGB-Tupel zu Hex für HTML
@@ -2120,8 +2144,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
 
                     next_gr_tokens = propagate_elision_markers(next_gr_tokens)
                     
+                    # Einrückung: NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
                     next_indent_pt = 0.0
-                    if next_base_num is not None:
+                    if next_base_num is not None and next_line_label and _is_staggered_label(next_line_label):
                         next_indent_pt = max(0.0, cum_width_by_base.get(next_base_num, 0.0))
 
                     next_has_versmass = has_meter_markers(next_gr_tokens)
@@ -2163,8 +2188,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     # Sammle die Zeilen
                     rendered_lines.append(KeepTogether(next_tables))
 
-                    # Breite gutschreiben
-                    if next_base_num is not None:
+                    # Breite gutschreiben - NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
+                    if next_base_num is not None and next_line_label and _is_staggered_label(next_line_label):
                         next_w = measure_rendered_line_width(
                             next_gr_tokens, next_de_tokens,
                             gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
@@ -2215,8 +2240,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             # <<<
 
             # Einrückung: kumulative Breite aller bisherigen Teilverse dieses Basisverses
+            # NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
             indent_pt = 0.0
-            if base_num is not None:
+            if base_num is not None and line_label and _is_staggered_label(line_label):
                 indent_pt = max(0.0, cum_width_by_base.get(base_num, 0.0))
 
             # Prüfe auf Versmaß-Marker
@@ -2283,7 +2309,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 elements.append(Spacer(1, INTER_PAIR_GAP_MM * MM))
 
             # Nach dem Rendern: Nur die Token-Breite dem Basisvers gutschreiben
-            if base_num is not None:
+            # NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
+            if base_num is not None and line_label and _is_staggered_label(line_label):
                 # Nur die eigentliche Textbreite zählt für die Einrückung,
                 # Layout-Elemente (Nummern, Sprecher) stehen links und beeinflussen nicht den Textfluss
                 this_w = measure_rendered_line_width(
