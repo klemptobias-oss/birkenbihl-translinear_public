@@ -1091,7 +1091,9 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             table_halign='LEFT', italic=False,
                             en_tokens=None,  # NEU: Englische Tokens
                             hide_pipes:bool=False,  # NEU: Pipes (|) in Übersetzungen verstecken
-                            tag_config:dict=None):  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
+                            tag_config:dict=None,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
+                            base_num:int=None,  # NEU: Zeilennummer für Hinterlegung
+                            line_comment_colors:dict=None):  # NEU: Map von Zeilennummern zu Kommentar-Farben
     if en_tokens is None:
         en_tokens = []
     if de_tokens is None:
@@ -1411,6 +1413,17 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             ('ALIGN',         (0,0), (-1,-1), 'CENTER'),
         ]
         
+        # NEU: Hinterlegung für Kommentar-Referenzen
+        # Prüfe, ob base_num in line_comment_colors enthalten ist
+        if base_num is not None and line_comment_colors and base_num in line_comment_colors:
+            comment_color = line_comment_colors[base_num]
+            # Hinterlegung für die gesamte Tabelle (alle Zeilen und Spalten)
+            # "Augiebig" - also der gesamte Bereich wird markiert
+            r, g, b = comment_color
+            # Etwas stärkere Hinterlegung (0.15 statt 0.1) für bessere Sichtbarkeit
+            bg_color = colors.Color(r, g, b, alpha=0.15)
+            style_list.append(('BACKGROUND', (0, 0), (-1, -1), bg_color))
+        
         # Padding nur hinzufügen, wenn Übersetzungen vorhanden sind
         if has_de or has_en:
             style_list.append(('BOTTOMPADDING', (0,0), (-1,0), gap_pts))
@@ -1598,6 +1611,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         sdisp = flow_block.get('speaker') or ''
         pwidth = para_width_pt(pdisp)
         swidth = speaker_width_pt(sdisp) if any_speaker else 0.0
+        base_num = flow_block.get('base')  # NEU: Zeilennummer für Hinterlegung
 
         en_tokens = flow_block.get('en_tokens', [])  # NEU: Englische Tokens
         tables = build_tables_for_stream(
@@ -1610,7 +1624,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             table_halign='LEFT', italic=False,
             en_tokens=en_tokens,  # NEU: Englische Tokens übergeben
             hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
-            tag_config=tag_config  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
+            tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
+            base_num=base_num,  # NEU: Zeilennummer für Hinterlegung
+            line_comment_colors=line_comment_colors  # NEU: Map von Zeilennummern zu Kommentar-Farben
         )
         for idx, t in enumerate(tables):
             if idx > 0: t.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))

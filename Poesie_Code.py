@@ -1181,16 +1181,34 @@ def process_input_file(fname:str):
             num_lines = len(lines_with_same_num)
             
             if num_lines >= 2:
-                # Zweisprachig (2) oder Dreisprachig (3+): gr/lat_de oder gr/lat_de_en
-                # WICHTIG: Erste Zeile = IMMER antike Sprache, zweite = IMMER Übersetzung
-                # UNABHÄNGIG von Sprechern oder Buchstaben!
-                gr_line = lines_with_same_num[0]
-                de_line = lines_with_same_num[1]
-                en_line = lines_with_same_num[2] if num_lines >= 3 else None
-                
-                # Tokenisieren & führende Label/Sprecher abwerfen
-                gr_tokens = tokenize(gr_line)
-                de_tokens = tokenize(de_line)
+                # WICHTIG: Prüfe nochmal, ob eine der Zeilen ein Kommentar ist - sollte nicht passieren, aber sicherheitshalber
+                # Kommentare sollten bereits vorher erkannt und übersprungen worden sein
+                for idx, test_line in enumerate(lines_with_same_num):
+                    test_num, _ = extract_line_number(test_line)
+                    if test_num is not None and is_comment_line(test_num):
+                        # Kommentar in lines_with_same_num gefunden - das sollte nicht passieren!
+                        # Überspringe diese Zeilen und gehe zur nächsten
+                        i = j
+                        break
+                else:
+                    # Zweisprachig (2) oder Dreisprachig (3+): gr/lat_de oder gr/lat_de_en
+                    # WICHTIG: Erste Zeile = IMMER antike Sprache, zweite = IMMER Übersetzung
+                    # UNABHÄNGIG von Sprechern oder Buchstaben!
+                    gr_line = lines_with_same_num[0]
+                    de_line = lines_with_same_num[1]
+                    en_line = lines_with_same_num[2] if num_lines >= 3 else None
+                    
+                    # WICHTIG: Prüfe nochmal, ob eine der Zeilen ein Kommentar ist, BEVOR wir tokenisieren
+                    gr_num, _ = extract_line_number(gr_line)
+                    de_num, _ = extract_line_number(de_line)
+                    if (gr_num and is_comment_line(gr_num)) or (de_num and is_comment_line(de_num)):
+                        # Kommentar gefunden - überspringe diese Zeilen
+                        i = j
+                        continue
+                    
+                    # Tokenisieren & führende Label/Sprecher abwerfen
+                    gr_tokens = tokenize(gr_line)
+                    de_tokens = tokenize(de_line)
 
                 lbl_gr, base_gr, sp_gr, gr_tokens = split_leading_label_and_speaker(gr_tokens)
                 lbl_de, base_de, sp_de, de_tokens = split_leading_label_and_speaker(de_tokens)
