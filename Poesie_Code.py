@@ -2002,7 +2002,6 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             # Wenn immer noch kein content, verwende original_line direkt (ohne Zeilennummer)
             if not content and original_line:
                 # Entferne Zeilennummer am Anfang (z.B. "(3-7k) " oder "(24k) ")
-                import re
                 content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
                 content = re.sub(r'^\(\d+k\)\s*', '', content)
                 content = content.strip()

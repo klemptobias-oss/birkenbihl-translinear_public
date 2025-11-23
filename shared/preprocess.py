@@ -911,13 +911,16 @@ def apply(blocks: List[Dict[str, Any]],
     out: List[Dict[str, Any]] = []
     for b in blocks_with_colors:
         if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
-            out.append(_process_pair_block_for_tags(
+            processed_block = _process_pair_block_for_tags(
                 b,
                 sup_keep=sup_keep,
                 sub_keep=sub_keep,
                 remove_all=remove_all_tags_flag,
                 translation_rules=translation_rules_arg,
-            ))
+            )
+            # NEU: Entferne Stephanus-Paginierungen aus Übersetzungszeilen, wenn Übersetzungen ausgeblendet sind
+            processed_block = _hide_stephanus_in_translations(processed_block, translation_rules_arg)
+            out.append(processed_block)
         else:
             out.append(b)
 
@@ -1029,7 +1032,16 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
     source_tokens = block.get('gr_tokens', [])
     result = {**block}
     
+    # Prüfe, ob irgendwelche Übersetzungen in diesem Block ausgeblendet sind
+    has_any_hidden_translations = False
+    if translation_rules:
+        for idx, gr_token in enumerate(source_tokens):
+            if _token_should_hide_translation(gr_token, translation_rules):
+                has_any_hidden_translations = True
+                break
+    
     # Entferne Stephanus-Paginierungen aus DE-Tokens
+    # ROBUST: Entferne ALLE Stephanus-Paginierungen aus Übersetzungszeilen, wenn irgendwelche Übersetzungen ausgeblendet sind
     if 'de_tokens' in result:
         de_tokens = result['de_tokens']
         for idx, token in enumerate(de_tokens):
@@ -1041,22 +1053,24 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
             if translation_rules and idx < len(source_tokens):
                 should_hide_translation = _token_should_hide_translation(source_tokens[idx], translation_rules)
             
-            # Wenn die Übersetzung ausgeblendet ist, entferne Stephanus-Paginierungen
-            if should_hide_translation:
-                # Prüfe, ob Token nur eine Stephanus-Paginierung enthält
-                token_stripped = token.strip()
-                if RE_STEPHANUS.fullmatch(token_stripped):
-                    # Token ist nur eine Stephanus-Paginierung → komplett entfernen
-                    result['de_tokens'][idx] = ''
-                elif RE_STEPHANUS.search(token):
-                    # Token enthält Stephanus-Paginierung + anderen Text → nur Paginierung entfernen
-                    cleaned = _remove_stephanus_from_token(token)
-                    result['de_tokens'][idx] = cleaned
-                    # Wenn nach dem Entfernen nur noch Whitespace übrig ist, setze auf leer
-                    if not cleaned.strip():
+            # Prüfe, ob Token eine Stephanus-Paginierung enthält
+            token_stripped = token.strip()
+            if RE_STEPHANUS.search(token_stripped):
+                # Wenn die Übersetzung ausgeblendet ist ODER wenn irgendwelche Übersetzungen ausgeblendet sind, entferne Stephanus-Paginierungen
+                if should_hide_translation or has_any_hidden_translations:
+                    if RE_STEPHANUS.fullmatch(token_stripped):
+                        # Token ist nur eine Stephanus-Paginierung → komplett entfernen
                         result['de_tokens'][idx] = ''
+                    else:
+                        # Token enthält Stephanus-Paginierung + anderen Text → nur Paginierung entfernen
+                        cleaned = _remove_stephanus_from_token(token)
+                        if not cleaned.strip():
+                            result['de_tokens'][idx] = ''
+                        else:
+                            result['de_tokens'][idx] = cleaned
     
     # Entferne Stephanus-Paginierungen aus EN-Tokens
+    # ROBUST: Entferne ALLE Stephanus-Paginierungen aus Übersetzungszeilen, wenn irgendwelche Übersetzungen ausgeblendet sind
     if 'en_tokens' in result:
         en_tokens = result['en_tokens']
         for idx, token in enumerate(en_tokens):
@@ -1068,20 +1082,21 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
             if translation_rules and idx < len(source_tokens):
                 should_hide_translation = _token_should_hide_translation(source_tokens[idx], translation_rules)
             
-            # Wenn die Übersetzung ausgeblendet ist, entferne Stephanus-Paginierungen
-            if should_hide_translation:
-                # Prüfe, ob Token nur eine Stephanus-Paginierung enthält
-                token_stripped = token.strip()
-                if RE_STEPHANUS.fullmatch(token_stripped):
-                    # Token ist nur eine Stephanus-Paginierung → komplett entfernen
-                    result['en_tokens'][idx] = ''
-                elif RE_STEPHANUS.search(token):
-                    # Token enthält Stephanus-Paginierung + anderen Text → nur Paginierung entfernen
-                    cleaned = _remove_stephanus_from_token(token)
-                    result['en_tokens'][idx] = cleaned
-                    # Wenn nach dem Entfernen nur noch Whitespace übrig ist, setze auf leer
-                    if not cleaned.strip():
+            # Prüfe, ob Token eine Stephanus-Paginierung enthält
+            token_stripped = token.strip()
+            if RE_STEPHANUS.search(token_stripped):
+                # Wenn die Übersetzung ausgeblendet ist ODER wenn irgendwelche Übersetzungen ausgeblendet sind, entferne Stephanus-Paginierungen
+                if should_hide_translation or has_any_hidden_translations:
+                    if RE_STEPHANUS.fullmatch(token_stripped):
+                        # Token ist nur eine Stephanus-Paginierung → komplett entfernen
                         result['en_tokens'][idx] = ''
+                    else:
+                        # Token enthält Stephanus-Paginierung + anderen Text → nur Paginierung entfernen
+                        cleaned = _remove_stephanus_from_token(token)
+                        if not cleaned.strip():
+                            result['en_tokens'][idx] = ''
+                        else:
+                            result['en_tokens'][idx] = cleaned
     
     return result
 

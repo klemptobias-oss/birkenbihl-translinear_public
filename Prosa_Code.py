@@ -1193,8 +1193,9 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                     token_no_tags = token_no_tags.replace(f'({tag})', '')
                 w_no_tags = visible_measure_token(token_no_tags, font=font, size=size,
                                                  is_greek_row=is_greek_row, reverse_mode=False)
-                # Füge einen kleinen Sicherheitspuffer hinzu
-                return w_no_tags + max(size * 0.05, 0.5)
+                # Größerer Puffer für NoTag-Versionen, um Abstände zwischen Wörtern zu garantieren
+                # Wichtig: Dieser Puffer muss groß genug sein, damit Wörter nicht zusammenhängen
+                return w_no_tags + max(size * 0.08, 1.2)  # Erhöht von 5% auf 8%, von 0.5pt auf 1.2pt
             else:
                 # Keine Tags vorhanden → verwende Standard-Breite
                 return w_with_tags
@@ -1774,7 +1775,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # Wenn immer noch kein content, verwende original_line direkt (ohne Zeilennummer)
             if not content and original_line:
                 # Entferne Zeilennummer am Anfang (z.B. "(3-7k) " oder "(24k) ")
-                import re
                 content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
                 content = re.sub(r'^\(\d+k\)\s*', '', content)
                 content = content.strip()
@@ -1807,18 +1807,30 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
             # Kommentar-Text mit kleinerem Font, aber SCHWARZ (nicht farbig)
             comment_size = de_size * 0.85  # Etwas größer (85% statt 80%)
-            # Sicherstellen, dass content vorhanden ist
-            if content:
-                formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#000000"><i> {xml_escape(content)}</i></font>')
-            else:
-                # Fallback: Verwende original_line wenn content leer ist
-                original_line = b.get('original_line', '')
+            
+            # Sicherstellen, dass content vorhanden ist - robuste Fallback-Logik
+            if not content:
+                # Fallback 1: Versuche original_line zu verwenden
                 if original_line:
                     # Entferne Zeilennummer aus original_line für content
                     _, fallback_content = extract_line_number(original_line)
                     if fallback_content:
-                        formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#000000"><i> {xml_escape(fallback_content)}</i></font>')
+                        content = fallback_content
+                    else:
+                        # Fallback 2: Verwende original_line direkt (ohne Zeilennummer)
+                        content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
+                        content = re.sub(r'^\(\d+k\)\s*', '', content)
+                        content = content.strip()
+            
+            # Kommentar-Text hinzufügen, wenn vorhanden
+            if content:
+                formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#000000"><i> {xml_escape(content)}</i></font>')
+            
             formatted_text = ''.join(formatted_parts)
+            
+            # DEBUG: Prüfe, ob formatted_text leer ist
+            if not formatted_text.strip():
+                print(f"  ⚠️ Kommentar formatted_text ist leer: line_num={line_num}, content={content[:50] if content else '(leer)'}")
             
             # Style für Kommentar (kompakt, kleiner, dichter)
             # WICHTIG: Keine Hinterlegung für den Kommentartext selbst - die Hinterlegung betrifft die Originaltext-Zeilen
