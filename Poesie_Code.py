@@ -1134,6 +1134,22 @@ def process_input_file(fname:str):
             continue
         
         if line_num is not None:
+            # WICHTIG: Prüfe nochmal, ob die aktuelle Zeile ein Kommentar ist
+            # (kann passieren, wenn extract_line_number() die Zeilennummer extrahiert hat, aber is_comment_line() noch nicht geprüft wurde)
+            if is_comment_line(line_num):
+                # Kommentar-Zeile: Extrahiere Zeilenbereich und speichere als Kommentar-Block
+                start_line, end_line = extract_line_range(line_num)
+                blocks.append({
+                    'type': 'comment',
+                    'line_num': line_num,
+                    'content': line_content,
+                    'start_line': start_line,
+                    'end_line': end_line,
+                    'original_line': line
+                })
+                i += 1
+                continue
+            
             # Wir haben eine Zeilennummer gefunden
             # Schaue voraus, um zu prüfen, ob die nächste(n) Zeile(n) dieselbe Nummer haben
             lines_with_same_num = [line]
@@ -1238,6 +1254,22 @@ def process_input_file(fname:str):
                 continue
         else:
             # Keine Zeilennummer gefunden - Fallback auf alte Logik
+            # NEU: Prüfe auch hier, ob es ein Kommentar ist (für den Fall, dass extract_line_number None zurückgibt, aber die Zeile trotzdem (zahl-zahlk) enthält)
+            line_num_fallback, _ = extract_line_number(line)
+            if line_num_fallback is not None and is_comment_line(line_num_fallback):
+                # Kommentar-Zeile: Extrahiere Zeilenbereich und speichere als Kommentar-Block
+                start_line, end_line = extract_line_range(line_num_fallback)
+                blocks.append({
+                    'type': 'comment',
+                    'line_num': line_num_fallback,
+                    'content': line_content if 'line_content' in locals() else line,
+                    'start_line': start_line,
+                    'end_line': end_line,
+                    'original_line': line
+                })
+                i += 1
+                continue
+            
             line_cls = _strip_speaker_prefix_for_classify(line)
             if is_greek_line(line_cls) or is_latin_line(line_cls):
                 gr_line = line
@@ -1247,6 +1279,20 @@ def process_input_file(fname:str):
                 de_line = ''
                 if i < len(raw):
                     cand = (raw[i] or '').strip()
+                    # NEU: Prüfe, ob die Kandidaten-Zeile ein Kommentar ist - überspringe sie dann
+                    cand_num, _ = extract_line_number(cand)
+                    if cand_num is not None and is_comment_line(cand_num):
+                        # Kommentar-Zeile überspringen
+                        i += 1
+                        while i < len(raw) and is_empty_or_sep(raw[i]): i += 1
+                        if i < len(raw):
+                            cand = (raw[i] or '').strip()
+                            cand_num, _ = extract_line_number(cand)
+                            if cand_num is not None and is_comment_line(cand_num):
+                                # Noch ein Kommentar - überspringe auch diesen
+                                i += 1
+                                continue
+                    
                     cand_cls = _strip_speaker_prefix_for_classify(cand)
                     if not (is_greek_line(cand_cls) or is_latin_line(cand_cls)):
                         de_line = cand

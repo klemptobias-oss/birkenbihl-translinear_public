@@ -891,7 +891,9 @@ def process_input_file(fname:str):
                 # NEU: Zeilennummern aus allen Zeilen entfernen (nur für Prosa)
                 gr_line = _remove_line_number_from_line(lines_with_same_num[0])
                 de_line = _remove_line_number_from_line(_remove_speaker_from_line(lines_with_same_num[1]))
-                blocks.append({'type':'pair', 'gr': gr_line, 'de': de_line, 'en': ''})
+                # NEU: Speichere die ursprüngliche Zeilennummer für Hinterlegung (ohne sie im PDF anzuzeigen)
+                base_num = int(re.match(r'^(\d+)', line_num).group(1)) if re.match(r'^(\d+)', line_num) else None
+                blocks.append({'type':'pair', 'gr': gr_line, 'de': de_line, 'en': '', 'base': base_num})
                 i = j
                 continue
             elif num_lines >= 3:
@@ -902,19 +904,23 @@ def process_input_file(fname:str):
                 gr_line = _remove_line_number_from_line(lines_with_same_num[0])
                 de_line = _remove_line_number_from_line(_remove_speaker_from_line(lines_with_same_num[1]))
                 en_line = _remove_line_number_from_line(_remove_speaker_from_line(lines_with_same_num[2]))
-                blocks.append({'type':'pair', 'gr': gr_line, 'de': de_line, 'en': en_line})
+                # NEU: Speichere die ursprüngliche Zeilennummer für Hinterlegung (ohne sie im PDF anzuzeigen)
+                base_num = int(re.match(r'^(\d+)', line_num).group(1)) if re.match(r'^(\d+)', line_num) else None
+                blocks.append({'type':'pair', 'gr': gr_line, 'de': de_line, 'en': en_line, 'base': base_num})
                 i = j
                 continue
             elif num_lines == 1:
                 # Nur eine Zeile mit dieser Nummer - könnte Strukturzeile oder Fehler sein
                 # Als Fallback: Prüfe Sprachinhalt (OHNE Sprecher zu berücksichtigen!)
                 line_without_speaker = _strip_speaker_prefix_for_classify(line_content)
+                # NEU: Speichere die ursprüngliche Zeilennummer für Hinterlegung
+                base_num = int(re.match(r'^(\d+)', line_num).group(1)) if re.match(r'^(\d+)', line_num) else None
                 if is_greek_line(line_without_speaker) or is_latin_line(line_without_speaker):
                     # Antike Sprache ohne Übersetzung
-                    blocks.append({'type':'pair', 'gr': line, 'de': '', 'en': ''})
+                    blocks.append({'type':'pair', 'gr': line, 'de': '', 'en': '', 'base': base_num})
                 else:
                     # Deutsche Zeile ohne antike Sprache (ungewöhnlich)
-                    blocks.append({'type':'pair', 'gr': '', 'de': line, 'en': ''})
+                    blocks.append({'type':'pair', 'gr': '', 'de': line, 'en': '', 'base': base_num})
                 i = j
                 continue
         else:
@@ -1174,8 +1180,14 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                                                  is_greek_row=is_greek_row, reverse_mode=False)
         
         # Verwende das Maximum, um Überlappungen zu vermeiden
-        # Füge einen kleinen Sicherheitsabstand hinzu
-        safety_margin = size * 0.2  # 20% der Font-Size als Sicherheitsabstand
+        # Füge einen größeren Sicherheitsabstand hinzu (wie in Poesie)
+        # Poesie verwendet effektiv ~3.0pt als SAFE_EPS_PT, Prosa nur 0.5pt
+        # Erhöhe den Puffer für bessere Kompatibilität mit Poesie
+        safety_margin = max(size * 0.3, 2.0)  # 30% der Font-Size oder mindestens 2.0pt
+        # Zusätzlicher Puffer für Tags (wenn Tags vorhanden sind)
+        if tags:
+            tag_safety = size * 0.15  # Zusätzlicher Puffer für Tags
+            safety_margin += tag_safety
         return max(w_with_tags, w_without_hidden + safety_margin)
     
     def col_width(k:int) -> float:
@@ -1634,18 +1646,19 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # Zeilennummer in Kommentar-Farbe (WICHTIG: xml_escape auf line_num anwenden, um "-" zu schützen)
             comment_num_size = de_size * 0.85  # Etwas kleiner
             formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
-            # Kommentar-Text mit kleinerem Font und Farbe
-            comment_size = de_size * 0.8  # Deutlich kleiner (80% statt 90%)
-            formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="{color_hex}"><i> {xml_escape(content)}</i></font>')
+            # Kommentar-Text mit kleinerem Font, aber SCHWARZ (nicht farbig)
+            comment_size = de_size * 0.85  # Etwas größer (85% statt 80%)
+            formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#000000"><i> {xml_escape(content)}</i></font>')
             formatted_text = ''.join(formatted_parts)
             
             # Style für Kommentar (kompakt, kleiner, dichter)
+            # WICHTIG: Keine Hinterlegung für den Kommentartext selbst - die Hinterlegung betrifft die Originaltext-Zeilen
             comment_style = ParagraphStyle('Comment', parent=base['Normal'],
                 fontName='DejaVu', fontSize=comment_size, 
                 leading=comment_size * 1.2,  # Dichterer Zeilenabstand (1.2 statt normal)
                 alignment=TA_LEFT, leftIndent=5*mm,  # Leicht eingerückt
                 spaceBefore=0, spaceAfter=0,  # Keine zusätzlichen Abstände
-                backColor=colors.Color(comment_color[0], comment_color[1], comment_color[2], alpha=0.1))  # Sehr leichte Hinterlegung
+                textColor=colors.black)  # Kommentartext ist schwarz
             
             elements.append(Paragraph(formatted_text, comment_style))
             elements.append(Spacer(1, CONT_PAIR_GAP_MM * 0.5 * mm))  # Kleinerer Abstand
