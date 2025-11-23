@@ -66,9 +66,9 @@ BLANK_MARKER_GAP_MM = 4.0         # Abstand bei Leerzeilen-Marker
 # Einstellungen für Tabellen-Layout
 
 PARA_COL_MIN_MM = 5.0      # Mindestbreite für Paragraphen-Spalte (stark reduziert)
-PARA_GAP_MM = 1.5          # Abstand neben Paragraphen-Spalte (stark reduziert für kompaktere Darstellung)
+PARA_GAP_MM = 1.2          # Abstand neben Paragraphen-Spalte (weiter reduziert für maximale Textbreite)
 SPEAKER_COL_MIN_MM = 3.0   # Mindestbreite für Sprecher-Spalte (reduziert)
-SPEAKER_GAP_MM = 1.0       # Abstand neben Sprecher-Spalte (minimal)
+SPEAKER_GAP_MM = 0.8       # Abstand neben Sprecher-Spalte (reduziert für maximale Textbreite)
 
 CELL_PAD_LR_PT = 0.6       # Innenabstand links/rechts in Zellen (stark reduziert für kompaktere TAG-PDFs)
 SAFE_EPS_PT = 0.3          # Sicherheitsabstand für Messungen (reduziert für kompaktere Darstellung)
@@ -1319,7 +1319,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Basis-Sicherheitspuffer: Konsistent für alle Wörter (verhindert Überlappungen)
         # Dieser Puffer ist minimal und berücksichtigt nur Rundungsfehler und Rendering-Ungenauigkeiten
-        base_safety = max(token_gr_style.fontSize * 0.015, 0.35)  # 1.5% der Font-Size oder mindestens 0.35pt (leicht erhöht)
+        base_safety = max(token_gr_style.fontSize * 0.012, 0.3)  # 1.2% der Font-Size oder mindestens 0.3pt (leicht reduziert für Apologie TAG-PDFs)
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
@@ -1328,8 +1328,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             # Der Puffer wird bereits in measure_token_width_with_visibility erhöht für NoTag
             # Hier fügen wir einen zusätzlichen kleinen Puffer hinzu für bessere Abstände
             if w_gr > 0:
-                # Leicht erhöhter Puffer für bessere Abstände bei ausgeblendeten Übersetzungen
-                extra_buffer = max(token_gr_style.fontSize * 0.03, 0.8)  # 3% oder mindestens 0.8pt
+                # Leicht reduzierter Puffer für bessere Abstände bei ausgeblendeten Übersetzungen
+                extra_buffer = max(token_gr_style.fontSize * 0.025, 0.7)  # 2.5% oder mindestens 0.7pt (leicht reduziert)
                 return w_gr + base_safety + extra_buffer
             else:
                 return base_safety
@@ -1340,8 +1340,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         if max_width > 0:
             # Füge Basis-Sicherheitspuffer hinzu
-            # Leicht erhöhter natürlicher Abstand für bessere Lesbarkeit
-            natural_spacing = max_width * 0.02  # 2% statt 1.5% (leicht erhöht für bessere Lesbarkeit)
+            # Leicht reduzierter natürlicher Abstand für kompaktere TAG-PDFs
+            natural_spacing = max_width * 0.017  # 1.7% statt 2% (leicht reduziert für kompaktere Darstellung)
             return max_width + base_safety + natural_spacing
         else:
             # Fallback: Minimaler Puffer
@@ -1398,21 +1398,27 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                     acc += extra
                     j = k + 1
                 else:
-                    # (2) Notfalls tausche letzte Spalte des Slices gegen Spalte k aus,
-                    #     damit wenigstens ein DE-Token im ersten Slice auftaucht.
-                    if j > i:
-                        last_w = widths[j-1]
-                        if acc - last_w + widths[k] <= avail_w:
-                            acc = acc - last_w + widths[k]
-                            j = j  # gleicher Endindex, aber wir merken uns später die Spaltenrange i..j und tauschen die Inhalte
-                            # Wir vertauschen die Breitenliste nicht; der Table nimmt die Zelleninhalte.
-                            # Um die Spalte k in das Slice zu bekommen, schieben wir einen "Swap" in die Slicedaten:
-                            if len(gr[i:j]) > 0 and k < len(gr):
-                                gr[i:j][-1], gr[k] = gr[k], gr[i:j][-1]
-                            if len(de[i:j]) > 0 and k < len(de):
-                                de[i:j][-1], de[k] = de[k], de[i:j][-1]
-                            if len(en[i:j]) > 0 and k < len(en):
-                                en[i:j][-1], en[k] = en[k], en[i:j][-1]
+                        # (2) Notfalls tausche letzte Spalte des Slices gegen Spalte k aus,
+                        #     damit wenigstens ein DE-Token im ersten Slice auftaucht.
+                        # WICHTIG: Verhindere Swap von wichtigen Tokens wie Fragezeichen, Kommas, etc.
+                        if j > i:
+                            last_w = widths[j-1]
+                            if acc - last_w + widths[k] <= avail_w:
+                                # Prüfe, ob das letzte Token im Slice ein wichtiges Satzzeichen ist
+                                last_token = gr[j-1] if j-1 < len(gr) else ''
+                                is_punctuation = last_token and last_token.strip() in ['.', ',', ';', ':', '?', '!', '·']
+                                
+                                if not is_punctuation:  # Nur tauschen, wenn es kein Satzzeichen ist
+                                    acc = acc - last_w + widths[k]
+                                    j = j  # gleicher Endindex, aber wir merken uns später die Spaltenrange i..j und tauschen die Inhalte
+                                    # Wir vertauschen die Breitenliste nicht; der Table nimmt die Zelleninhalte.
+                                    # Um die Spalte k in das Slice zu bekommen, schieben wir einen "Swap" in die Slicedaten:
+                                    if len(gr[i:j]) > 0 and k < len(gr):
+                                        gr[i:j][-1], gr[k] = gr[k], gr[i:j][-1]
+                                    if len(de[i:j]) > 0 and k < len(de):
+                                        de[i:j][-1], de[k] = de[k], de[i:j][-1]
+                                    if len(en[i:j]) > 0 and k < len(en):
+                                        en[i:j][-1], en[k] = en[k], en[i:j][-1]
                         # Wenn auch das nicht passt, lassen wir es beim bisherigen Slice (optisch wie vorher),
                         # damit das Layout nicht überläuft.
 
@@ -1787,15 +1793,14 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             comment_color = b.get('comment_color', COMMENT_COLORS[0])  # Fallback zu rot
             comment_index = b.get('comment_index', 0)
             
-            # DEBUG: Prüfe, ob Kommentar-Daten vorhanden sind
-            if not line_num and not content:
-                print(f"  ⚠️ Kommentar ohne Daten übersprungen: line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:50] if original_line else '(leer)'}")
+            # ROBUST: Prüfe, ob überhaupt Daten vorhanden sind (line_num, content oder original_line)
+            if not line_num and not content and not original_line:
+                print(f"  ⚠️ Kommentar komplett leer übersprungen")
                 idx += 1
                 continue
             
-            # DEBUG: Kommentar wird gerendert
-            if content:
-                print(f"  ✓ Kommentar wird gerendert: line_num={line_num}, content={content[:50]}...")
+            # DEBUG: Kommentar wird verarbeitet
+            print(f"  → Kommentar verarbeiten: line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:80] if original_line else '(leer)'}")
             
             # Formatiere Zeilennummer in der Kommentar-Farbe (rot/blau/grün)
             # Konvertiere RGB-Tupel zu Hex für HTML
@@ -1849,12 +1854,22 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 spaceBefore=0, spaceAfter=0,  # Keine zusätzlichen Abstände
                 textColor=colors.black)  # Kommentartext ist schwarz
             
-            # Kommentar-Paragraph immer hinzufügen, auch wenn formatted_text leer ist (als Fallback)
+            # Kommentar-Paragraph IMMER hinzufügen, auch wenn formatted_text leer ist
+            if not formatted_text.strip():
+                # Fallback: Erstelle zumindest die Zeilennummer
+                if line_num:
+                    formatted_text = f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>'
+                elif original_line:
+                    # Verwende original_line komplett
+                    formatted_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>{xml_escape(original_line)}</i></font>'
+            
+            # Kommentar-Paragraph hinzufügen
             if formatted_text.strip():
                 elements.append(Paragraph(formatted_text, comment_style))
-                print(f"  ✓ Kommentar-Paragraph erstellt: {formatted_text[:100]}...")
+                print(f"  ✓✓✓ Kommentar-Paragraph HINZUGEFÜGT: {formatted_text[:100]}...")
             else:
-                print(f"  ⚠️ Kommentar-Paragraph NICHT erstellt - formatted_text ist leer!")
+                print(f"  ⚠️⚠️⚠️ Kommentar-Paragraph NICHT HINZUGEFÜGT - formatted_text ist leer!")
+            
             elements.append(Spacer(1, CONT_PAIR_GAP_MM * 1.2 * mm))  # Größerer Abstand nach Kommentar für bessere Trennung
             last_block_type = t
             idx += 1; continue
