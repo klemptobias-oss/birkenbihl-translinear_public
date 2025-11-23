@@ -66,7 +66,7 @@ BLANK_MARKER_GAP_MM = 4.0         # Abstand bei Leerzeilen-Marker
 # Einstellungen für Tabellen-Layout
 
 PARA_COL_MIN_MM = 5.0      # Mindestbreite für Paragraphen-Spalte (stark reduziert)
-PARA_GAP_MM = 2.5          # Abstand neben Paragraphen-Spalte (minimal)
+PARA_GAP_MM = 1.5          # Abstand neben Paragraphen-Spalte (stark reduziert für kompaktere Darstellung)
 SPEAKER_COL_MIN_MM = 3.0   # Mindestbreite für Sprecher-Spalte (reduziert)
 SPEAKER_GAP_MM = 1.0       # Abstand neben Sprecher-Spalte (minimal)
 
@@ -180,8 +180,8 @@ def get_prosa_cfg_for_tag_mode(tag_mode: str = "TAGS"):
 # Globale Konstanten - werden in create_pdf basierend auf tag_mode gesetzt
 
 # Basis-Konstanten (werden von allen Modi verwendet)
-PARA_COL_MIN_MM = 12.0  # Erhöht für große Paragraphen-Nummern wie § 161
-SPEAKER_COL_MIN_MM = 5.0
+PARA_COL_MIN_MM = 3.0   # Dynamische Berechnung basierend auf tatsächlicher Breite (reduziert für kompaktere Darstellung)
+SPEAKER_COL_MIN_MM = 3.0
 SOURCE_RIGHT_INDENT_MM = 10.0
 # Diese Parameter werden oben definiert (keine doppelten Definitionen)
 # CELL_PAD_LR_PT = 5.0 (oben definiert)
@@ -1710,8 +1710,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         if not text: return 0.0
         # Prüfe ob es ein Paragraphen-Marker ist (enthält §)
         if '§' in text:
-            w = pdfmetrics.stringWidth(text, style_para.fontName, style_para.fontSize) + 1.0
-            return max(PARA_COL_MIN_MM * mm, w)
+            # Dynamische Berechnung: Verwende die tatsächliche Breite + kleiner Puffer
+            # WICHTIG: Kein großes Minimum mehr - verwende nur die tatsächlich benötigte Breite
+            w = pdfmetrics.stringWidth(text, style_para.fontName, style_para.fontSize) + 1.5  # Sehr kleiner Puffer
+            # Verwende nur ein sehr kleines Minimum für sehr kurze Nummern wie "§ 1"
+            return max(2.0, w)  # Minimal 2.0pt statt großem Minimum in mm
         # Zeilennummern werden nicht angezeigt
         return 0.0
 
