@@ -485,9 +485,9 @@ def extract_line_range(line_num: str | None) -> tuple[int | None, int | None]:
 
 # Farben für Kommentare (Rotation: rot → blau → grün → rot)
 COMMENT_COLORS = [
-    (0.95, 0.9, 0.9),   # Sanft rot (RGB)
-    (0.9, 0.95, 1.0),   # Sanft blau
-    (0.9, 1.0, 0.9),    # Sanft grün
+    (0.85, 0.35, 0.35),   # Deutlich rot (RGB) - röter gemacht
+    (0.35, 0.55, 0.85),   # Mittleres blau - mittelmäßig verbläuert
+    (0.5, 0.85, 0.5),     # Leicht grün - sehr wenig vergrünt (war schon ok)
 ]
 
 def get_comment_color(comment_index: int) -> tuple[float, float, float]:
@@ -1090,6 +1090,13 @@ def group_pairs_into_flows(blocks):
             current_para_label = b['label']
             continue
 
+        # NEU: Kommentare → NICHT flushen, Fließtext beibehalten
+        if t == 'comment':
+            # Kommentare werden direkt zu flows hinzugefügt, OHNE flush() aufzurufen
+            # Das beendet den Fließtext nicht - nach dem Kommentar wird der Text fortgesetzt
+            flows.append(b)
+            continue
+
         # Strukturelle Blöcke → vorher flushen
         flush(); flows.append(b)
 
@@ -1184,30 +1191,28 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             # Alle Tags sind sichtbar, verwende Standard-Breite
             return w_with_tags
         
-        # Einige Tags sind versteckt - berechne Breite OHNE versteckte Tags
+        # Einige Tags sind versteckt - berechne Breite EXAKT basierend auf sichtbaren Tags
         # Entferne versteckte Tags aus dem Token
         tags = RE_TAG.findall(token)
         hidden_tags = [t for t in tags if t not in visible_tags]
+        
+        if not hidden_tags:
+            # Alle Tags sind sichtbar - verwende Standard-Breite
+            return w_with_tags
         
         # Entferne versteckte Tags aus dem Token-String
         token_without_hidden = token
         for hidden_tag in hidden_tags:
             token_without_hidden = token_without_hidden.replace(f'({hidden_tag})', '')
         
-        # Berechne Breite OHNE versteckte Tags
-        w_without_hidden = visible_measure_token(token_without_hidden, font=font, size=size,
-                                                 is_greek_row=is_greek_row, reverse_mode=False)
+        # Berechne Breite EXAKT für Token mit nur sichtbaren Tags
+        w_with_visible_tags = visible_measure_token(token_without_hidden, font=font, size=size,
+                                                    is_greek_row=is_greek_row, reverse_mode=False)
         
-        # Verwende das Maximum, um Überlappungen zu vermeiden
-        # Füge einen größeren Sicherheitsabstand hinzu (wie in Poesie)
-        # Poesie verwendet effektiv ~3.0pt als SAFE_EPS_PT, Prosa nur 0.5pt
-        # Erhöhe den Puffer für bessere Kompatibilität mit Poesie
-        safety_margin = max(size * 0.3, 2.0)  # 30% der Font-Size oder mindestens 2.0pt
-        # Zusätzlicher Puffer für Tags (wenn Tags vorhanden sind)
-        if tags:
-            tag_safety = size * 0.15  # Zusätzlicher Puffer für Tags
-            safety_margin += tag_safety
-        return max(w_with_tags, w_without_hidden + safety_margin)
+        # NEU: Exakte Breitenberechnung - verwende die gemessene Breite direkt
+        # Füge einen minimalen Sicherheitspuffer hinzu (nur für Rundungsfehler)
+        safety_margin = max(size * 0.05, 0.5)  # Sehr kleiner Puffer: 5% der Font-Size oder 0.5pt
+        return w_with_visible_tags + safety_margin
     
     def col_width(k:int) -> float:
         # Verwende die neue Funktion, die Tag-Sichtbarkeit berücksichtigt
@@ -1441,8 +1446,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             # Hinterlegung für die gesamte Tabelle (alle Zeilen und Spalten)
             # "Augiebig" - also der gesamte Bereich wird markiert
             r, g, b = comment_color
-            # Stärkere Hinterlegung (0.25) für bessere Sichtbarkeit
-            bg_color = colors.Color(r, g, b, alpha=0.25)
+            # Stärkere Hinterlegung (0.35) für bessere Sichtbarkeit
+            bg_color = colors.Color(r, g, b, alpha=0.35)
             style_list.append(('BACKGROUND', (0, 0), (-1, -1), bg_color))
         elif base_num is not None and line_comment_colors:
             # DEBUG: Prüfe, ob base_num in line_comment_colors enthalten ist
@@ -1556,7 +1561,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     # print(f"DEBUG: tag_mode={tag_mode}, CONT_PAIR_GAP_MM={CONT_PAIR_GAP_MM}, INTRA_PAIR_GAP_MM={INTRA_PAIR_GAP_MM}")
 
     doc = SimpleDocTemplate(pdf_name, pagesize=A4,
-                            leftMargin=10*mm, rightMargin=25*mm,  # Mehr Platz rechts (1.5cm statt 1cm)
+                            leftMargin=10*mm, rightMargin=15*mm,  # Reduzierter rechter Rand für mehr Textbreite
                             topMargin=14*mm,  bottomMargin=14*mm)
     frame_w = A4[0] - doc.leftMargin - doc.rightMargin
     base = getSampleStyleSheet()
@@ -1684,15 +1689,12 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # Kommentar-Text mit kleinerem Font und etwas kursiv/leicht hervorgehoben
             formatted_parts = []
-            # Zeilennummer in Kommentar-Farbe, aber DUNKLER für bessere Lesbarkeit
+            # Zeilennummer in Kommentar-Farbe, DEUTLICH gefärbt für bessere Sichtbarkeit
             # (WICHTIG: xml_escape auf line_num anwenden, um "-" zu schützen)
             comment_num_size = de_size * 0.9  # Etwas größer (90% statt 85%)
-            # Mache die Farbe dunkler (50% dunkler) für bessere Lesbarkeit
-            r_dark = min(1.0, r * 0.5)  # Dunkler machen
-            g_dark = min(1.0, g * 0.5)
-            b_dark = min(1.0, b * 0.5)
-            color_hex_dark = f"#{int(r_dark*255):02x}{int(g_dark*255):02x}{int(b_dark*255):02x}"
-            formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex_dark}"><b>[{xml_escape(line_num)}]</b></font>')
+            # Verwende die originalen, bereits satteren Farben direkt (nicht dunkler machen)
+            color_hex = f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
+            formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
             # Kommentar-Text mit kleinerem Font, aber SCHWARZ (nicht farbig)
             comment_size = de_size * 0.85  # Etwas größer (85% statt 80%)
             formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#000000"><i> {xml_escape(content)}</i></font>')
@@ -1708,7 +1710,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 textColor=colors.black)  # Kommentartext ist schwarz
             
             elements.append(Paragraph(formatted_text, comment_style))
-            elements.append(Spacer(1, CONT_PAIR_GAP_MM * 0.5 * mm))  # Kleinerer Abstand
+            elements.append(Spacer(1, CONT_PAIR_GAP_MM * 1.2 * mm))  # Größerer Abstand nach Kommentar für bessere Trennung
             last_block_type = t
             idx += 1; continue
 
