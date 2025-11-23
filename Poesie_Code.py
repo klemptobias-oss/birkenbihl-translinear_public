@@ -1141,11 +1141,18 @@ def process_input_file(fname:str):
             
             # Sammle alle aufeinanderfolgenden Zeilen mit derselben Nummer
             # (überspringe leere Zeilen dazwischen)
+            # NEU: Überspringe auch Kommentar-Zeilen, damit sie nicht als Teil eines Paares behandelt werden
             while j < len(raw):
                 next_line = (raw[j] or '').strip()
                 if is_empty_or_sep(next_line):
                     j += 1
                     continue
+                
+                # Prüfe, ob die nächste Zeile ein Kommentar ist - überspringe sie dann
+                next_num_temp, _ = extract_line_number(next_line)
+                if next_num_temp is not None and is_comment_line(next_num_temp):
+                    j += 1
+                    continue  # Überspringe Kommentar-Zeilen
                 
                 next_num, _ = extract_line_number(next_line)
                 if next_num == line_num:
@@ -1370,7 +1377,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                           en_tokens: list[str] = None,
                           tag_config: dict = None,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                           base_line_num: int = None,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
-                          line_comment_colors: dict = None):  # NEU: Map von Zeilennummern zu Kommentar-Farben
+                          line_comment_colors: dict = None,  # NEU: Map von Zeilennummern zu Kommentar-Farben
+                          hide_pipes: bool = False):  # NEU: Pipes (|) in Übersetzungen verstecken
     # Standardwerte setzen falls nicht übergeben
     if doc_width_pt is None:
         doc_width_pt = A4[0] - 40*MM  # A4-Breite minus Ränder
@@ -1454,8 +1462,30 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             tag_config=tag_config
         ) if (k < len(gr) and gr[k]) else 0.0
         # DE- und EN-Tokens haben normalerweise keine Tags, daher verwenden wir die Standard-Breitenberechnung
-        w_de = visible_measure_token(de[k], font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if (k < len(de) and de[k]) else 0.0
-        w_en = visible_measure_token(en[k], font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if (k < len(en) and en[k]) else 0.0
+        # NEU: Berücksichtige Pipe-Ersetzung bei der Breitenberechnung
+        if hide_pipes:
+            de_text = de[k].replace('|', ' ') if (k < len(de) and de[k]) else ''
+            en_text = en[k].replace('|', ' ') if (k < len(en) and en[k]) else ''
+            # Berechne die Anzahl der Pipes, die ersetzt werden (für zusätzlichen Platz)
+            de_pipe_count = (de[k].count('|') if (k < len(de) and de[k]) else 0)
+            en_pipe_count = (en[k].count('|') if (k < len(en) and en[k]) else 0)
+            # Leerzeichen sind breiter als Pipes - füge zusätzlichen Platz hinzu
+            space_vs_pipe_diff = token_de_style.fontSize * 0.25
+            de_pipe_extra = de_pipe_count * space_vs_pipe_diff
+            en_pipe_extra = en_pipe_count * space_vs_pipe_diff
+        else:
+            de_text = de[k] if (k < len(de) and de[k]) else ''
+            en_text = en[k] if (k < len(en) and en[k]) else ''
+            de_pipe_extra = 0.0
+            en_pipe_extra = 0.0
+        
+        w_de = visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if de_text else 0.0
+        w_en = visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if en_text else 0.0
+        
+        # Addiere zusätzlichen Platz für ersetzte Pipes
+        w_de += de_pipe_extra
+        w_en += en_pipe_extra
+        
         widths.append(max(w_gr, w_de, w_en))
 
     tables, i, first_slice = [], 0, True
@@ -1531,14 +1561,24 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         gr_cells = [cell(True,  t, k) for k, t in enumerate(slice_gr)]
 
         # DE-Zellen mit gleicher Zentrierung wie im Epos
+        # NEU: Pipe-Ersetzung für hide_pipes
+        def process_translation_token_poesie(token: str) -> str:
+            """Ersetzt | durch Leerzeichen in Übersetzungen, wenn hide_pipes aktiviert ist"""
+            if not token or not hide_pipes:
+                return token
+            return token.replace('|', ' ')
+        
         de_cells = []
         for idx, t in enumerate(slice_de):
             if not t:
                 de_cells.append(Paragraph('', token_de_style))
                 continue
-            de_html = format_token_markup(t, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
+            # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
+            t_processed = process_translation_token_poesie(t)
+            de_html = format_token_markup(t_processed, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
+            # WICHTIG: Breite mit verarbeitetem Token messen (Pipes bereits ersetzt)
+            de_meas  = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
             de_width = slice_w[idx]
-            de_meas  = visible_measure_token(t, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
             de_html_centered = center_word_in_width(de_html, de_meas, de_width, token_de_style.fontName, token_de_style.fontSize)
             de_cells.append(Paragraph(de_html_centered, token_de_style))
 
@@ -1550,9 +1590,12 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 if not t:
                     en_cells.append(Paragraph('', token_de_style))
                     continue
-                en_html = format_token_markup(t, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
+                # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
+                t_processed = process_translation_token_poesie(t)
+                en_html = format_token_markup(t_processed, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
+                # WICHTIG: Breite mit verarbeitetem Token messen (Pipes bereits ersetzt)
+                en_meas  = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
                 en_width = slice_w[idx]
-                en_meas  = visible_measure_token(t, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
                 en_html_centered = center_word_in_width(en_html, en_meas, en_width, token_de_style.fontName, token_de_style.fontSize)
                 en_cells.append(Paragraph(en_html_centered, token_de_style))
 
@@ -1703,7 +1746,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                versmass_display: bool = False,
                tag_mode: str = "TAGS",
                placement_overrides: dict[str, str] | None = None,
-               tag_config: dict | None = None):
+               tag_config: dict | None = None,
+               hide_pipes:bool=False):  # NEU: Pipes (|) in Übersetzungen verstecken
 
     # Verarbeite Kommentare und weise Farben zu
     comments = process_comments_for_coloring(blocks)
@@ -2011,7 +2055,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         en_tokens=next_en_tokens,
                         tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                         base_line_num=next_base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
-                        line_comment_colors=line_comment_colors  # NEU: Map von Zeilennummern zu Kommentar-Farben
+                        line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
+                        hide_pipes=hide_pipes  # NEU: Pipes (|) in Übersetzungen verstecken
                     )
 
                     # Sammle die Zeilen
@@ -2109,7 +2154,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 en_tokens=en_tokens,
                 tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                 base_line_num=base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
-                line_comment_colors=line_comment_colors  # NEU: Map von Zeilennummern zu Kommentar-Farben
+                line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
+                hide_pipes=hide_pipes  # NEU: Pipes (|) in Übersetzungen verstecken
             )
             # WICHTIG: Alle Tabellen eines Paares/Triplikats zusammenhalten
             # (verhindert, dass GR/DE/EN über Seitenumbrüche getrennt werden)

@@ -1643,7 +1643,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             comment_style = ParagraphStyle('Comment', parent=base['Normal'],
                 fontName='DejaVu', fontSize=comment_size, 
                 leading=comment_size * 1.2,  # Dichterer Zeilenabstand (1.2 statt normal)
-                alignment=TA_LEFT, leftIndent=5*MM,  # Leicht eingerückt
+                alignment=TA_LEFT, leftIndent=5*mm,  # Leicht eingerückt
                 spaceBefore=0, spaceAfter=0,  # Keine zusätzlichen Abstände
                 backColor=colors.Color(comment_color[0], comment_color[1], comment_color[2], alpha=0.1))  # Sehr leichte Hinterlegung
             

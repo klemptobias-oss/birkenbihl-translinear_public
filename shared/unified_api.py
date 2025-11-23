@@ -50,7 +50,8 @@ class PdfRenderOptions:
 
 def _poesie_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
                  placement_overrides: Optional[dict] = None,
-                 tag_config: Optional[dict] = None):
+                 tag_config: Optional[dict] = None,
+                 hide_pipes: bool = False):  # NEU: Pipes (|) in Übersetzungen verstecken
     """
     Poesie (Drama/Komödie/Epos-Layout):
     - Versmaß-Darstellung: aktiv, wenn versmass_mode="KEEP_MARKERS"
@@ -66,7 +67,8 @@ def _poesie_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
             versmass_display=versmass_display,
             tag_mode=opts.tag_mode,
             placement_overrides=placement_overrides,
-            tag_config=tag_config
+            tag_config=tag_config,
+            hide_pipes=hide_pipes
         )
 
     if opts.strength == "NORMAL":
@@ -76,7 +78,8 @@ def _poesie_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
             versmass_display=versmass_display,
             tag_mode=opts.tag_mode,
             placement_overrides=placement_overrides,
-            tag_config=tag_config
+            tag_config=tag_config,
+            hide_pipes=hide_pipes
         )
 
     if opts.strength == "DE_FETT":
@@ -86,7 +89,8 @@ def _poesie_call(mod: Any, blocks, out_pdf: str, opts: PdfRenderOptions,
             versmass_display=versmass_display,
             tag_mode=opts.tag_mode,
             placement_overrides=placement_overrides,
-            tag_config=tag_config
+            tag_config=tag_config,
+            hide_pipes=hide_pipes
         )
 
     raise ValueError(f"Poesie: Unbekannte strength={opts.strength!r}")
@@ -183,7 +187,8 @@ def create_pdf_unified(kind: Literal["poesie", "prosa"],
     if k == "poesie":
         return _poesie_call(mod, pre_blocks, out_pdf, options,
                             placement_overrides=placement_overrides,
-                            tag_config=tag_config)
+                            tag_config=tag_config,
+                            hide_pipes=hide_pipes)
     if k == "prosa":
         return _prosa_call(mod, pre_blocks, out_pdf, options,
                            placement_overrides=placement_overrides,
