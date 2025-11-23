@@ -485,7 +485,7 @@ def extract_line_range(line_num: str | None) -> tuple[int | None, int | None]:
 
 # Farben für Kommentare (Rotation: rot → blau → grün → rot)
 COMMENT_COLORS = [
-    (0.85, 0.35, 0.35),   # Deutlich rot (RGB) - röter gemacht
+    (0.95, 0.75, 0.8),    # Sanftes, liebliches helles Erdbeerrot (RGB)
     (0.35, 0.55, 0.85),   # Mittleres blau - mittelmäßig verbläuert
     (0.5, 0.85, 0.5),     # Leicht grün - sehr wenig vergrünt (war schon ok)
 ]
@@ -1181,15 +1181,41 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         w_with_tags = visible_measure_token(token, font=font, size=size, 
                                            is_greek_row=is_greek_row, reverse_mode=False)
         
-        # Wenn keine Tag-Konfiguration vorhanden, verwende Standard-Breite
+        # Wenn keine Tag-Konfiguration vorhanden, prüfe ob Tags im Token vorhanden sind
+        # Wenn Tags vorhanden sind, entferne sie für die Breitenberechnung (NoTag-PDFs)
         if not tag_config:
-            return w_with_tags
+            # Prüfe, ob Tags im Token vorhanden sind
+            tags_in_token = RE_TAG.findall(token)
+            if tags_in_token:
+                # Tags vorhanden, aber keine Konfiguration → entferne alle Tags (NoTag-PDF)
+                token_no_tags = token
+                for tag in tags_in_token:
+                    token_no_tags = token_no_tags.replace(f'({tag})', '')
+                w_no_tags = visible_measure_token(token_no_tags, font=font, size=size,
+                                                 is_greek_row=is_greek_row, reverse_mode=False)
+                # Füge einen kleinen Sicherheitspuffer hinzu
+                return w_no_tags + max(size * 0.05, 0.5)
+            else:
+                # Keine Tags vorhanden → verwende Standard-Breite
+                return w_with_tags
         
         # Berechne Breite OHNE versteckte Tags
         visible_tags = get_visible_tags(token, tag_config)
-        if len(visible_tags) == len(RE_TAG.findall(token)):
+        tags = RE_TAG.findall(token)
+        
+        if len(visible_tags) == len(tags) and len(tags) > 0:
             # Alle Tags sind sichtbar, verwende Standard-Breite
             return w_with_tags
+        
+        if len(visible_tags) == 0 and len(tags) > 0:
+            # Alle Tags sind versteckt → berechne Breite ohne Tags
+            token_no_tags = token
+            for tag in tags:
+                token_no_tags = token_no_tags.replace(f'({tag})', '')
+            w_no_tags = visible_measure_token(token_no_tags, font=font, size=size,
+                                             is_greek_row=is_greek_row, reverse_mode=False)
+            # Füge einen kleinen Sicherheitspuffer hinzu
+            return w_no_tags + max(size * 0.05, 0.5)
         
         # Einige Tags sind versteckt - berechne Breite EXAKT basierend auf sichtbaren Tags
         # Entferne versteckte Tags aus dem Token
@@ -1261,6 +1287,20 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # Addiere zusätzlichen Platz für ersetzte Pipes
         w_de += de_pipe_extra
         w_en += en_pipe_extra
+        
+        # NEU: Konsistenter minimaler Abstand zwischen allen Wörtern
+        # Der Abstand wird durch CELL_PAD_LR_PT bestimmt, aber wir müssen sicherstellen,
+        # dass die Breitenberechnung korrekt ist, damit keine Überlappungen oder zu große Lücken entstehen
+        # Füge einen kleinen Sicherheitspuffer hinzu, der konsistent ist
+        min_safety = max(token_gr_style.fontSize * 0.05, 0.8)  # 5% der Font-Size oder mindestens 0.8pt
+        
+        # Wende den Sicherheitspuffer auf alle Breiten an (nur wenn > 0)
+        if w_gr > 0:
+            w_gr += min_safety
+        if w_de > 0:
+            w_de += min_safety
+        if w_en > 0:
+            w_en += min_safety
         
         return max(w_gr, w_de, w_en)
 
@@ -1561,7 +1601,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     # print(f"DEBUG: tag_mode={tag_mode}, CONT_PAIR_GAP_MM={CONT_PAIR_GAP_MM}, INTRA_PAIR_GAP_MM={INTRA_PAIR_GAP_MM}")
 
     doc = SimpleDocTemplate(pdf_name, pagesize=A4,
-                            leftMargin=10*mm, rightMargin=15*mm,  # Reduzierter rechter Rand für mehr Textbreite
+                            leftMargin=10*mm, rightMargin=10*mm,  # Weiter reduzierter rechter Rand für mehr Textbreite
                             topMargin=14*mm,  bottomMargin=14*mm)
     frame_w = A4[0] - doc.leftMargin - doc.rightMargin
     base = getSampleStyleSheet()
