@@ -107,6 +107,7 @@ SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','K
 RE_PAREN_TAG     = re.compile(r'\(([A-Za-z0-9/≈äöüßÄÖÜ]+)\)')
 RE_LEAD_BAR_COLOR= re.compile(r'^\|\s*([+\-#§$])')  # |+ |# |- |§ |$ (Farbcode NACH leitender '|')
 RE_WORD_START = re.compile(r'([(\[|]*)([\w\u0370-\u03FF\u1F00-\u1FFF\u1F00-\u1FFF]+)') # Findet den Anfang eines Wortes, auch mit Präfixen wie (, [ oder |
+RE_STEPHANUS = re.compile(r'\[(\d+[a-e])\]')  # Stephanus-Paginierungen: [543b], [546b] etc.
 
 COLOR_SYMBOLS = {'#', '+', '-', '§', '$'}
 COLOR_MAP = {
@@ -675,6 +676,7 @@ def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any]) -> Li
     Die Original-Tags bleiben vollständig erhalten.
     
     WICHTIG: Versteckt auch Übersetzungen für (HideTrans) Tags NACH dem Hinzufügen der Farben.
+    NEU: Entfernt auch Stephanus-Paginierungen aus Übersetzungszeilen, wenn Übersetzungen ausgeblendet sind.
     """
     import copy
     blocks_copy = copy.deepcopy(blocks)
@@ -682,11 +684,22 @@ def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any]) -> Li
     # Schritt 1: Füge Farben hinzu (ZUERST, damit Farben nicht verloren gehen)
     blocks_with_colors = _apply_colors_and_placements(blocks_copy, tag_config)
     
-    # Schritt 2: Verstecke Übersetzungen für (HideTrans) Tags (DANACH)
+    # Schritt 2: Erstelle translation_rules aus tag_config
+    translation_rules: Dict[str, Dict[str, Any]] = {}
+    if tag_config:
+        for rule_id, conf in tag_config.items():
+            normalized_rule_id = _normalize_rule_id(rule_id)
+            _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
+    
+    # Schritt 3: Verstecke Übersetzungen für (HideTrans) Tags und entferne Stephanus-Paginierungen (DANACH)
     blocks_with_hidden_trans = []
     for block in blocks_with_colors:
         if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
-            blocks_with_hidden_trans.append(_hide_manual_translations_in_block(block))
+            # Verstecke manuelle Übersetzungen (HideTrans)
+            block = _hide_manual_translations_in_block(block)
+            # Entferne Stephanus-Paginierungen aus Übersetzungszeilen
+            block = _hide_stephanus_in_translations(block, translation_rules if translation_rules else None)
+            blocks_with_hidden_trans.append(block)
         else:
             blocks_with_hidden_trans.append(block)
     
@@ -963,6 +976,16 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
         return result
     return block
 
+# Hilfsfunktion zum Entfernen von Stephanus-Paginierungen aus Tokens
+def _remove_stephanus_from_token(token: str) -> str:
+    """
+    Entfernt Stephanus-Paginierungen (z.B. [543b], [546b]) aus einem Token.
+    """
+    if not token:
+        return token
+    # Entferne Stephanus-Paginierungen: [543b], [546b] etc.
+    return RE_STEPHANUS.sub('', token).strip()
+
 # Hilfsfunktion zum Verstecken von Übersetzungen basierend auf (HideTrans) Tag
 def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
     """
@@ -991,6 +1014,57 @@ def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
             result['de_tokens'][idx] = ''
         if 'en_tokens' in result and idx < len(result['en_tokens']):
             result['en_tokens'][idx] = ''
+    
+    return result
+
+# NEU: Funktion zum Entfernen von Stephanus-Paginierungen aus Übersetzungszeilen
+def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Optional[Dict[str, Dict[str, Any]]] = None) -> Dict[str, Any]:
+    """
+    Entfernt Stephanus-Paginierungen aus Übersetzungszeilen (DE, EN), wenn Übersetzungen ausgeblendet sind.
+    Prüft auch, ob alle Übersetzungen ausgeblendet sind, und entfernt dann auch Stephanus aus GR-Tokens.
+    """
+    if 'gr_tokens' not in block:
+        return block
+    
+    source_tokens = block.get('gr_tokens', [])
+    
+    # Prüfe, ob alle Übersetzungen ausgeblendet sind
+    all_translations_hidden = False
+    if translation_rules:
+        hide_flags = [
+            _token_should_hide_translation(token, translation_rules)
+            for token in source_tokens
+        ]
+        # Prüfe, ob ALLE Tokens ihre Übersetzungen versteckt haben
+        all_translations_hidden = all(hide_flags) if hide_flags else False
+    
+    result = {**block}
+    
+    # Entferne Stephanus-Paginierungen aus DE-Tokens
+    if 'de_tokens' in result:
+        de_tokens = result['de_tokens']
+        for idx, token in enumerate(de_tokens):
+            if token and RE_STEPHANUS.search(token):
+                # Prüfe, ob die Übersetzung für dieses Token ausgeblendet ist
+                should_hide = False
+                if translation_rules and idx < len(source_tokens):
+                    should_hide = _token_should_hide_translation(source_tokens[idx], translation_rules)
+                if should_hide or all_translations_hidden:
+                    # Entferne Stephanus-Paginierung
+                    result['de_tokens'][idx] = _remove_stephanus_from_token(token)
+    
+    # Entferne Stephanus-Paginierungen aus EN-Tokens
+    if 'en_tokens' in result:
+        en_tokens = result['en_tokens']
+        for idx, token in enumerate(en_tokens):
+            if token and RE_STEPHANUS.search(token):
+                # Prüfe, ob die Übersetzung für dieses Token ausgeblendet ist
+                should_hide = False
+                if translation_rules and idx < len(source_tokens):
+                    should_hide = _token_should_hide_translation(source_tokens[idx], translation_rules)
+                if should_hide or all_translations_hidden:
+                    # Entferne Stephanus-Paginierung
+                    result['en_tokens'][idx] = _remove_stephanus_from_token(token)
     
     return result
 

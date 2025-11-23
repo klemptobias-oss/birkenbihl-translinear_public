@@ -1241,68 +1241,109 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         return w_with_visible_tags + safety_margin
     
     def col_width(k:int) -> float:
-        # Verwende die neue Funktion, die Tag-Sichtbarkeit berücksichtigt
+        """
+        Berechnet die optimale Spaltenbreite für Spalte k.
+        
+        Die Breitenberechnung berücksichtigt:
+        1. Tag-Sichtbarkeit (basierend auf tag_config)
+        2. Übersetzungs-Sichtbarkeit (ob DE/EN ausgeblendet sind)
+        3. Pipe-Ersetzung (wenn hide_pipes aktiviert ist)
+        4. Konsistente Sicherheitspuffer zur Vermeidung von Überlappungen
+        
+        Returns:
+            Die optimale Spaltenbreite in Punkten (pt)
+        """
+        # Basis-Breite für griechisches Wort (berücksichtigt Tag-Sichtbarkeit)
+        gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
         w_gr = measure_token_width_with_visibility(
-            gr[k] if (k < len(gr) and gr[k]) else '', 
+            gr_token, 
             font=token_gr_style.fontName, 
             size=token_gr_style.fontSize, 
             is_greek_row=True,
             tag_config=tag_config
-        ) if (k < len(gr) and gr[k]) else 0.0
+        ) if gr_token else 0.0
         
-        # Für DE und EN: Berechne Breite SO, als wären Pipes bereits durch Leerzeichen ersetzt (wenn hide_pipes aktiviert ist)
+        # Berechne DE- und EN-Text (mit/ohne Pipe-Ersetzung)
+        de_token_raw = de[k] if (k < len(de) and de[k]) else ''
+        en_token_raw = en[k] if (k < len(en) and en[k]) else ''
+        
+        # Prüfe, ob Übersetzungen tatsächlich sichtbar sind (nicht leer und nicht nur Whitespace)
+        de_visible = bool(de_token_raw and de_token_raw.strip())
+        en_visible = bool(en_token_raw and en_token_raw.strip())
+        translations_visible = de_visible or en_visible
+        
+        # Bereite DE/EN-Text für Breitenberechnung vor
         if hide_pipes:
-            de_text = de[k].replace('|', ' ') if (k < len(de) and de[k]) else ''
-            en_text = en[k].replace('|', ' ') if (k < len(en) and en[k]) else ''
-            # Berechne die Anzahl der Pipes, die ersetzt werden (für zusätzlichen Platz)
-            de_pipe_count = (de[k].count('|') if (k < len(de) and de[k]) else 0)
-            en_pipe_count = (en[k].count('|') if (k < len(en) and en[k]) else 0)
-            # Leerzeichen sind breiter als Pipes - füge zusätzlichen Platz hinzu
-            # Ein Leerzeichen ist etwa 0.3x der Font-Size breit, ein Pipe ist etwa 0.1x
-            # Differenz pro Pipe: ~0.2x Font-Size
-            # WICHTIG: Zusätzlicher Sicherheitspuffer, um Umbrüche zu verhindern
-            # Erhöht von 0.25 auf 0.3 für mehr Sicherheit
-            space_vs_pipe_diff = token_de_style.fontSize * 0.3
-            de_pipe_extra = de_pipe_count * space_vs_pipe_diff
-            en_pipe_extra = en_pipe_count * space_vs_pipe_diff
-            # Zusätzlicher Sicherheitspuffer (15% der gemessenen Breite) um Umbrüche zu verhindern
-            # Erhöht von 10% auf 15% für mehr Sicherheit
-            if de_text:
-                measured_width = visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False)
-                de_pipe_extra += measured_width * 0.15  # Erhöht von 0.1 auf 0.15
-            if en_text:
-                measured_width = visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False)
-                en_pipe_extra += measured_width * 0.15  # Erhöht von 0.1 auf 0.15
+            de_text = de_token_raw.replace('|', ' ') if de_token_raw else ''
+            en_text = en_token_raw.replace('|', ' ') if en_token_raw else ''
         else:
-            de_text = de[k] if (k < len(de) and de[k]) else ''
-            en_text = en[k] if (k < len(en) and en[k]) else ''
-            de_pipe_extra = 0.0
-            en_pipe_extra = 0.0
+            de_text = de_token_raw
+            en_text = en_token_raw
         
-        # DE- und EN-Tokens haben normalerweise keine Tags, daher verwenden wir die Standard-Breitenberechnung
-        # Aber berücksichtigen wir den Pipe-Split für korrekte Breitenberechnung
-        w_de = visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if de_text else 0.0
-        w_en = visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, is_greek_row=False, reverse_mode=False) if en_text else 0.0
+        # Berechne DE- und EN-Breiten
+        w_de = 0.0
+        w_en = 0.0
         
-        # Addiere zusätzlichen Platz für ersetzte Pipes
-        w_de += de_pipe_extra
-        w_en += en_pipe_extra
+        if de_visible and de_text:
+            w_de = visible_measure_token(de_text, font=token_de_style.fontName, 
+                                        size=token_de_style.fontSize, 
+                                        is_greek_row=False, reverse_mode=False)
+            
+            # Zusätzlicher Puffer für Pipe-Ersetzung (wenn hide_pipes aktiviert)
+            if hide_pipes and de_token_raw:
+                pipe_count = de_token_raw.count('|')
+                if pipe_count > 0:
+                    # Leerzeichen sind breiter als Pipes: ~0.3x Font-Size Differenz pro Pipe
+                    space_vs_pipe_diff = token_de_style.fontSize * 0.3
+                    w_de += pipe_count * space_vs_pipe_diff
+                    # Zusätzlicher Sicherheitspuffer (10% der Breite) für Pipe-Split-Umbrüche
+                    w_de += w_de * 0.10
         
-        # NEU: Konsistenter minimaler Abstand zwischen allen Wörtern
-        # Der Abstand wird durch CELL_PAD_LR_PT bestimmt, aber wir müssen sicherstellen,
-        # dass die Breitenberechnung korrekt ist, damit keine Überlappungen oder zu große Lücken entstehen
-        # Füge einen kleinen Sicherheitspuffer hinzu, der konsistent ist
-        min_safety = max(token_gr_style.fontSize * 0.05, 0.8)  # 5% der Font-Size oder mindestens 0.8pt
+        if en_visible and en_text:
+            w_en = visible_measure_token(en_text, font=token_de_style.fontName, 
+                                        size=token_de_style.fontSize, 
+                                        is_greek_row=False, reverse_mode=False)
+            
+            # Zusätzlicher Puffer für Pipe-Ersetzung (wenn hide_pipes aktiviert)
+            if hide_pipes and en_token_raw:
+                pipe_count = en_token_raw.count('|')
+                if pipe_count > 0:
+                    # Leerzeichen sind breiter als Pipes: ~0.3x Font-Size Differenz pro Pipe
+                    space_vs_pipe_diff = token_de_style.fontSize * 0.3
+                    w_en += pipe_count * space_vs_pipe_diff
+                    # Zusätzlicher Sicherheitspuffer (10% der Breite) für Pipe-Split-Umbrüche
+                    w_en += w_en * 0.10
         
-        # Wende den Sicherheitspuffer auf alle Breiten an (nur wenn > 0)
-        if w_gr > 0:
-            w_gr += min_safety
-        if w_de > 0:
-            w_de += min_safety
-        if w_en > 0:
-            w_en += min_safety
+        # ROBUSTE BREITENBERECHNUNG BASIEREND AUF SICHTBARKEIT
         
-        return max(w_gr, w_de, w_en)
+        # Basis-Sicherheitspuffer: Konsistent für alle Wörter (verhindert Überlappungen)
+        # Dieser Puffer ist minimal und berücksichtigt nur Rundungsfehler und Rendering-Ungenauigkeiten
+        base_safety = max(token_gr_style.fontSize * 0.03, 0.5)  # 3% der Font-Size oder mindestens 0.5pt
+        
+        # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
+        if not translations_visible:
+            # Nur griechische Zeile sichtbar
+            # Verwende GR-Breite mit zusätzlichem Puffer, um Überlappungen zu vermeiden
+            # Der Puffer ist größer, da keine Übersetzungszeile als "Füllmaterial" dient
+            if w_gr > 0:
+                # Puffer basierend auf Font-Size: größer für größere Fonts
+                extra_buffer = max(token_gr_style.fontSize * 0.08, 1.2)  # 8% oder mindestens 1.2pt
+                return w_gr + base_safety + extra_buffer
+            else:
+                return base_safety
+        
+        # Wenn Übersetzungen sichtbar sind: Maximum von GR, DE, EN
+        # Die Spaltenbreite muss alle sichtbaren Zeilen aufnehmen
+        max_width = max(w_gr, w_de, w_en)
+        
+        if max_width > 0:
+            # Füge Basis-Sicherheitspuffer hinzu
+            # Zusätzlich: Kleiner Puffer (5% der maximalen Breite) für natürliche Abstände
+            natural_spacing = max_width * 0.05
+            return max_width + base_safety + natural_spacing
+        else:
+            # Fallback: Minimaler Puffer
+            return base_safety
 
     widths = [col_width(k) for k in range(cols)]
     tables, i, first_slice = [], 0, True
@@ -1724,29 +1765,33 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         if t == 'comment':
             line_num = b.get('line_num', '')
             content = b.get('content', '')
+            original_line = b.get('original_line', '')
+            
             # Fallback: Wenn content leer ist, versuche original_line zu verwenden
-            if not content:
-                original_line = b.get('original_line', '')
-                if original_line:
-                    # Extrahiere content aus original_line
-                    _, content = extract_line_number(original_line)
+            if not content and original_line:
+                # Extrahiere content aus original_line
+                _, content = extract_line_number(original_line)
+            
+            # Wenn immer noch kein content, verwende original_line direkt (ohne Zeilennummer)
+            if not content and original_line:
+                # Entferne Zeilennummer am Anfang (z.B. "(3-7k) " oder "(24k) ")
+                import re
+                content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
+                content = re.sub(r'^\(\d+k\)\s*', '', content)
+                content = content.strip()
             
             comment_color = b.get('comment_color', COMMENT_COLORS[0])  # Fallback zu rot
             comment_index = b.get('comment_index', 0)
             
             # DEBUG: Prüfe, ob Kommentar-Daten vorhanden sind
-            # Wenn content leer ist, versuche original_line zu verwenden
-            if not content:
-                original_line = b.get('original_line', '')
-                if original_line:
-                    # Extrahiere content aus original_line
-                    _, content = extract_line_number(original_line)
-            
-            # Wenn immer noch keine Daten vorhanden sind, überspringe
             if not line_num and not content:
-                print(f"  ⚠️ Kommentar ohne Daten übersprungen: {b}")
+                print(f"  ⚠️ Kommentar ohne Daten übersprungen: line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:50] if original_line else '(leer)'}")
                 idx += 1
                 continue
+            
+            # DEBUG: Kommentar wird gerendert
+            if content:
+                print(f"  ✓ Kommentar wird gerendert: line_num={line_num}, content={content[:50]}...")
             
             # Formatiere Zeilennummer in der Kommentar-Farbe (rot/blau/grün)
             # Konvertiere RGB-Tupel zu Hex für HTML
