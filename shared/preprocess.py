@@ -126,104 +126,41 @@ TagMode     = str  # "TAGS"  | "NO_TAGS"
 VersmassMode= str  # "NORMAL" | "REMOVE_MARKERS" | "KEEP_MARKERS"
 
 # ======= Hilfen: Kommentar-Masken =======
-def create_comment_token_mask_for_block(block: Dict[str, Any], all_blocks: List[Dict[str, Any]]) -> List[bool]:
+def create_comment_token_mask_for_block(block: Dict[str, Any], all_blocks: Optional[List[Dict[str,Any]]] = None) -> List[bool]:
     """
-    Liefert eine bool-Liste der Länge len(block['gr_tokens']) mit True
-    für Tokens, die zu einem Kommentarbereich gehören.
-    
-    Erwartet Kommentar-Objekte mit Feldern 'start_line' und 'end_line' (Zeilennummern),
-    die dann in Token-Indizes umgerechnet werden.
+    Erzeugt eine Maskenliste (len == len(block['gr_tokens'])) mit True für Tokens,
+    die zu Kommentarbereichen gehören. Erwartet kommentare mit token_start/token_end
+    oder flow_blocks mit type=='comment' und token ranges.
     """
     tokens = block.get('gr_tokens', []) or []
     mask = [False] * len(tokens)
     
-    if not tokens:
-        return mask
-    
-    # Hole base_num (Zeilennummer) des aktuellen Blocks
-    base_num = block.get('base', None)
-    if base_num is None:
-        # Versuche base_num aus anderen Feldern zu extrahieren
-        # z.B. aus 'base_num' oder aus der ersten Zeile
-        base_num = block.get('base_num')
-    
-    # 1) Direkter Fall: block['comments'] mit start_line/end_line
-    comments = block.get('comments') or []
-    for c in comments:
-        start_line = c.get('start_line')
-        end_line = c.get('end_line')
-        if start_line is None or end_line is None:
+    # 1) direkte comments
+    for c in block.get('comments', []) if isinstance(block.get('comments', []), list) else []:
+        s = c.get('token_start')
+        e = c.get('token_end')
+        if s is None or e is None:
             continue
-        
-        # Wenn start_line und end_line Zeilennummern sind, müssen wir sie mit base_num vergleichen
-        # Wenn base_num im Bereich liegt, markiere alle Tokens
-        if base_num is not None:
-            try:
-                start_num = int(re.match(r'^(\d+)', str(start_line)).group(1)) if re.match(r'^(\d+)', str(start_line)) else None
-                end_num = int(re.match(r'^(\d+)', str(end_line)).group(1)) if re.match(r'^(\d+)', str(end_line)) else None
-                if start_num is not None and end_num is not None:
-                    if start_num <= base_num <= end_num:
-                        # Alle Tokens dieses Blocks gehören zum Kommentar
-                        mask = [True] * len(tokens)
-            except:
-                pass
+        s = max(0, int(s))
+        e = min(len(mask)-1, int(e))
+        for i in range(s, e+1):
+            mask[i] = True
     
-    # 2) Alternative: Kommentare in separaten Blocks mit start_line/end_line
-    # Durchsuche alle Blöcke nach Kommentaren, die diesen Block betreffen
-    for other_block in all_blocks:
-        if not isinstance(other_block, dict):
-            continue
-        if other_block.get('type') != 'comment':
-            continue
-        
-        start_line = other_block.get('start_line')
-        end_line = other_block.get('end_line')
-        if start_line is None or end_line is None:
-            continue
-        
-        # Prüfe, ob base_num im Bereich liegt
-        if base_num is not None:
-            try:
-                # Extrahiere Zahlen aus start_line/end_line (z.B. "105-112k" -> 105, 112)
-                start_match = re.match(r'^(\d+)', str(start_line))
-                end_match = re.match(r'^(\d+)', str(end_line))
-                if start_match and end_match:
-                    start_num = int(start_match.group(1))
-                    end_num = int(end_match.group(1))
-                    if start_num <= base_num <= end_num:
-                        # Alle Tokens dieses Blocks gehören zum Kommentar
-                        mask = [True] * len(tokens)
-            except:
-                pass
-    
-    # 3) Alternative Struktur: flow_blocks enthalten comment-items
+    # 2) flow_blocks
     for fb in block.get('flow_blocks', []) if isinstance(block.get('flow_blocks', []), list) else []:
         if not isinstance(fb, dict):
             continue
-        if fb.get('type') in ('comment',):
-            # akzeptiere auch direkte token_start/token_end in flow-block
-            start = fb.get('token_start')
-            end = fb.get('token_end')
-            if start is not None and end is not None:
-                start = max(0, int(start))
-                end = min(int(end), len(mask)-1)
-                for i in range(start, end + 1):
-                    if i < len(mask):
-                        mask[i] = True
-            else:
-                # Fallback: verwende start_line/end_line
-                start_line = fb.get('start_line')
-                end_line = fb.get('end_line')
-                if start_line is not None and end_line is not None and base_num is not None:
-                    try:
-                        start_num = int(re.match(r'^(\d+)', str(start_line)).group(1)) if re.match(r'^(\d+)', str(start_line)) else None
-                        end_num = int(re.match(r'^(\d+)', str(end_line)).group(1)) if re.match(r'^(\d+)', str(end_line)) else None
-                        if start_num is not None and end_num is not None:
-                            if start_num <= base_num <= end_num:
-                                mask = [True] * len(tokens)
-                    except:
-                        pass
+        if fb.get('type') == 'comment':
+            s = fb.get('token_start')
+            e = fb.get('token_end')
+            if s is None or e is None:
+                continue
+            s = max(0, int(s))
+            e = min(len(mask)-1, int(e))
+            for i in range(s, e+1):
+                mask[i] = True
     
+    # fallback: if no structured ranges present, leave mask all False
     return mask
 
 # ======= Hilfen: Token-Verarbeitung =======
@@ -800,7 +737,7 @@ def _maybe_register_translation_rule(rules: Dict[str, Dict[str, Any]], normalize
 
 # ======= Öffentliche, granulare API =======
 
-def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any]) -> List[Dict[str, Any]]:
+def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any], disable_comment_bg: bool = False) -> List[Dict[str, Any]]:
     """
     Fügt Farbsymbole (#, +, §, $) basierend auf der tag_config hinzu.
     Gibt eine NEUE, tief kopierte Blockliste zurück.
@@ -808,6 +745,8 @@ def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any]) -> Li
     
     WICHTIG: Versteckt auch Übersetzungen für (HideTrans) Tags NACH dem Hinzufügen der Farben.
     NEU: Entfernt auch Stephanus-Paginierungen aus Übersetzungszeilen, wenn Übersetzungen ausgeblendet sind.
+    
+    disable_comment_bg: Wenn True, werden Hintergrundfarben in Kommentarbereichen unterdrückt.
     """
     import copy
     blocks_copy = copy.deepcopy(blocks)
@@ -838,182 +777,105 @@ def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any]) -> Li
 
 def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
-    Filtert Tags basierend auf den 'hide' und 'placement' Regeln in tag_config.
-    Wenn tag_config=None ist, bleiben alle Tags erhalten.
-    Gibt eine NEUE, tief kopierte Blockliste zurück.
-    
-    WICHTIG: Tags, die durch hide=true entfernt wurden, dürfen nicht wieder hinzugefügt werden,
-    es sei denn, eine spezifische Regel überschreibt dies explizit.
+    Robust: expandiert Gruppen-Regeln in konkrete hidden_tags, berechnet sup_keep/sub_keep,
+    entfernt die nicht gewünschten Tags aus ALLEN token-Feldern und schreibt gr/de strings zurück.
     """
     import copy
     blocks_copy = copy.deepcopy(blocks)
     
-    sup_keep, sub_keep = set(), set()
-    # WICHTIG: Set von Tags, die durch hide=true entfernt wurden und nicht wieder hinzugefügt werden dürfen
-    # (außer durch spezifische Regeln, die Gruppen-Regeln überschreiben)
-    forbidden_tags_sup = set()
-    forbidden_tags_sub = set()
+    # Build hidden_tags set from tag_config rules (support group rules like 'nomen')
+    hidden_tags: Set[str] = set()
     translation_rules: Dict[str, Dict[str, Any]] = {}
     
     if tag_config:
-        # Starte mit allen bekannten Tags
-        sup_keep = SUP_TAGS.copy()
-        sub_keep = SUB_TAGS.copy()
+        # If adapter already provided hidden_tags array, use it
+        if isinstance(tag_config.get('hidden_tags'), (list, tuple, set)):
+            for t in tag_config.get('hidden_tags', []):
+                if isinstance(t, str) and t:
+                    hidden_tags.add(t)
         
-        # Sortiere Regeln: Gruppen-Regeln zuerst, dann spezifische Regeln
-        # Damit spezifische Regeln die Gruppen-Regeln überschreiben können
-        group_rules = []
-        specific_rules = []
-        
-        for rule_id, conf in tag_config.items():
-            normalized_rule_id = _normalize_rule_id(rule_id)
-            # Gruppen-Regel = keine Unterstriche nach dem Hauptteil (z.B. "verb", "nomen")
-            # Spezifische Regel = mit Unterstrich (z.B. "verb_Pra", "nomen_N")
-            if '_' in normalized_rule_id and normalized_rule_id.split('_', 1)[1]:
-                specific_rules.append((rule_id, conf, normalized_rule_id))
-            else:
-                group_rules.append((rule_id, conf, normalized_rule_id))
-        
-        # Verarbeite zuerst Gruppen-Regeln, dann spezifische Regeln
-        for rule_id, conf, normalized_rule_id in group_rules + specific_rules:
-            tags_for_rule = _resolve_tags_for_rule(normalized_rule_id)
-
-            if not tags_for_rule:
+        # Otherwise: collect from rules with hide=true
+        for rule_id, conf in (tag_config.items() if isinstance(tag_config, dict) else []):
+            if not isinstance(conf, dict):
                 continue
-
-            _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
-
-            # Prüfe, ob es eine Gruppen-Regel oder spezifische Regel ist
-            is_specific_rule = (rule_id, conf, normalized_rule_id) in specific_rules
-
-            # ROBUST: Prüfe hide (akzeptiere sowohl True als auch String "hide" für Kompatibilität)
-            hide_value = conf.get('hide')
-            should_hide = hide_value == True or hide_value == "hide" or hide_value == "true"
             
-            if should_hide:
-                # DEBUG: Zeige, welche Tags entfernt werden
-                print(f"DEBUG apply_tag_visibility: Regel '{rule_id}' (normalisiert: '{normalized_rule_id}') hat hide=true, entferne Tags: {tags_for_rule}")
-                removed_from_sup = []
-                removed_from_sub = []
-                for tag in tags_for_rule:
-                    # Normalisiere Tag-Namen für robusten Vergleich
-                    normalized_tag = _normalize_tag_name(tag)
-                    # Entferne sowohl original als auch normalisiert
-                    if tag in sup_keep:
-                        sup_keep.discard(tag)
-                        removed_from_sup.append(tag)
-                        # Markiere als verboten (nur wenn es eine Gruppen-Regel ist)
-                        if not is_specific_rule:
-                            forbidden_tags_sup.add(tag)
-                            forbidden_tags_sup.add(normalized_tag)
-                    if normalized_tag in sup_keep:
-                        sup_keep.discard(normalized_tag)
-                        if normalized_tag != tag:
-                            removed_from_sup.append(normalized_tag)
-                            if not is_specific_rule:
-                                forbidden_tags_sup.add(normalized_tag)
-                    if tag in sub_keep:
-                        sub_keep.discard(tag)
-                        removed_from_sub.append(tag)
-                        # Markiere als verboten (nur wenn es eine Gruppen-Regel ist)
-                        if not is_specific_rule:
-                            forbidden_tags_sub.add(tag)
-                            forbidden_tags_sub.add(normalized_tag)
-                    if normalized_tag in sub_keep:
-                        sub_keep.discard(normalized_tag)
-                        if normalized_tag != tag:
-                            removed_from_sub.append(normalized_tag)
-                            if not is_specific_rule:
-                                forbidden_tags_sub.add(normalized_tag)
-                print(f"DEBUG: Nach Entfernung - sup_keep hat noch {len(sup_keep)} Tags (entfernt: {removed_from_sup}), sub_keep hat noch {len(sub_keep)} Tags (entfernt: {removed_from_sub})")
-            else:
-                # Tags hinzufügen, wenn hide=false (d.h. in diesem else-Zweig)
-                # ABER: Nur wenn sie nicht durch eine Gruppen-Regel verboten wurden
-                # (spezifische Regeln können Gruppen-Regeln überschreiben)
-                placement = conf.get('placement')
-                
-                if placement == 'sup':
-                    for tag in tags_for_rule:
-                        normalized_tag = _normalize_tag_name(tag)
-                        # Erlaube Hinzufügen nur wenn:
-                        # 1. Es eine spezifische Regel ist (überschreibt Gruppen-Regeln), ODER
-                        # 2. Der Tag nicht verboten ist
-                        if is_specific_rule or (tag not in forbidden_tags_sup and normalized_tag not in forbidden_tags_sup):
-                            sub_keep.discard(tag)
-                            if tag in SUP_TAGS:
-                                sup_keep.add(tag)
-                                # Entferne aus verboten, wenn es eine spezifische Regel ist
-                                if is_specific_rule:
-                                    forbidden_tags_sup.discard(tag)
-                                    forbidden_tags_sup.discard(normalized_tag)
-                elif placement == 'sub':
-                    for tag in tags_for_rule:
-                        normalized_tag = _normalize_tag_name(tag)
-                        # Erlaube Hinzufügen nur wenn:
-                        # 1. Es eine spezifische Regel ist (überschreibt Gruppen-Regeln), ODER
-                        # 2. Der Tag nicht verboten ist
-                        if is_specific_rule or (tag not in forbidden_tags_sub and normalized_tag not in forbidden_tags_sub):
-                            sup_keep.discard(tag)
-                            if tag in SUB_TAGS:
-                                sub_keep.add(tag)
-                                # Entferne aus verboten, wenn es eine spezifische Regel ist
-                                if is_specific_rule:
-                                    forbidden_tags_sub.discard(tag)
-                                    forbidden_tags_sub.discard(normalized_tag)
+            # Register translation rules
+            normalized_rule_id = _normalize_rule_id(rule_id)
+            _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
+            
+            hide_val = conf.get('hide')
+            if hide_val in (True, 'true', 'True', 'hide', 'Hide'):
+                rid = rule_id.strip()
+                if '_' in rid:
+                    # e.g. 'nomen_N' -> add 'N' if it's a known tag
+                    last = rid.split('_')[-1]
+                    if last in SUP_TAGS or last in SUB_TAGS:
+                        hidden_tags.add(last)
+                    else:
+                        # try mapping rule->tags if present
+                        mapped = RULE_TAG_MAP.get(rid) or HIERARCHIE.get(rid) or []
+                        for t in mapped:
+                            hidden_tags.add(t)
                 else:
-                    # Wenn placement=None, füge Tags hinzu (wenn nicht verboten)
-                    for tag in tags_for_rule:
-                        normalized_tag = _normalize_tag_name(tag)
-                        if is_specific_rule or (tag not in forbidden_tags_sup and normalized_tag not in forbidden_tags_sup):
-                            if tag in SUP_TAGS:
-                                sup_keep.add(tag)
-                                if is_specific_rule:
-                                    forbidden_tags_sup.discard(tag)
-                                    forbidden_tags_sup.discard(normalized_tag)
-                        if is_specific_rule or (tag not in forbidden_tags_sub and normalized_tag not in forbidden_tags_sub):
-                            if tag in SUB_TAGS:
-                                sub_keep.add(tag)
-                                if is_specific_rule:
-                                    forbidden_tags_sub.discard(tag)
-                                    forbidden_tags_sub.discard(normalized_tag)
-
-    else:
-        # Wenn keine Config da ist, alle bekannten Tags behalten
-        sup_keep = SUP_TAGS.copy()
-        sub_keep = SUB_TAGS.copy()
-
-    # DEBUG: Zeige, welche Tags behalten werden sollen
-    print(f"DEBUG apply_tag_visibility: Finale sup_keep={sorted(list(sup_keep))}, sub_keep={sorted(list(sub_keep))}")
+                    key = rid.lower()
+                    mapped = RULE_TAG_MAP.get(key) or HIERARCHIE.get(key)
+                    if mapped:
+                        for t in mapped:
+                            hidden_tags.add(t)
+                    else:
+                        # maybe it's a concrete tag already
+                        if rid in SUP_TAGS or rid in SUB_TAGS:
+                            hidden_tags.add(rid)
     
-    processed_blocks = []
-    tokens_changed_count = 0
-    for b in blocks_copy:
-        if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
-            processed_block = _process_pair_block_for_tags(
-                b,
-                sup_keep=sup_keep,
-                sub_keep=sub_keep,
-                remove_all=False,
-                translation_rules=translation_rules if translation_rules else None,
-            )
-            # DEBUG: Prüfe, ob Tags entfernt wurden
-            if 'gr_tokens' in b and 'gr_tokens' in processed_block:
-                original_tokens = b.get('gr_tokens', [])
-                processed_tokens = processed_block.get('gr_tokens', [])
-                if original_tokens and processed_tokens:
-                    # Prüfe alle Tokens, nicht nur den ersten
-                    for i, (orig, proc) in enumerate(zip(original_tokens[:5], processed_tokens[:5])):
-                        if orig != proc:
-                            tokens_changed_count += 1
-                            if tokens_changed_count <= 3:  # Zeige nur erste 3 Änderungen
-                                print(f"DEBUG apply_tag_visibility: Token {i} geändert: '{orig[:60]}...' → '{proc[:60]}...'")
-            processed_blocks.append(processed_block)
-        else:
-            # Kommentare und andere Block-Typen durchreichen
-            processed_blocks.append(b)
+    # Build keep sets: Start with ALL tags, then remove hidden ones
+    sup_keep = set(SUP_TAGS) - (hidden_tags & set(SUP_TAGS))
+    sub_keep = set(SUB_TAGS) - (hidden_tags & set(SUB_TAGS))
     
-    print(f"DEBUG apply_tag_visibility: {tokens_changed_count} Token(s) wurden geändert (von ersten 5 pro Block)")
-    return processed_blocks
+    print(f"DEBUG apply_tag_visibility: computed hidden_tags sample: {sorted(list(hidden_tags))[:40]}")
+    print(f"DEBUG apply_tag_visibility: initial sup_keep_len={len(sup_keep)}, sub_keep_len={len(sub_keep)}")
+    
+    # Apply removal on tokens for each pair/flow block
+    for bi, block in enumerate(blocks_copy):
+        if not isinstance(block, dict) or block.get('type') not in ('pair','flow'):
+            continue
+        
+        for tok_field in ('gr_tokens','de_tokens','en_tokens'):
+            toks = block.get(tok_field)
+            if not isinstance(toks, list):
+                continue
+            
+            new_toks = []
+            changed = 0
+            for tok in toks:
+                cleaned = _remove_selected_tags(tok, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=False)
+                if cleaned != tok:
+                    changed += 1
+                new_toks.append(cleaned)
+            
+            block[tok_field] = new_toks
+            if changed:
+                print(f"DEBUG apply_tag_visibility: Block {bi} field {tok_field}: {changed} token(s) changed")
+        
+        # Rebuild string fields if renderer may use them
+        if 'gr_tokens' in block:
+            block['gr'] = _join_tokens_to_line(block.get('gr_tokens', []))
+        if 'de_tokens' in block:
+            block['de'] = _join_tokens_to_line(block.get('de_tokens', []))
+        if 'en_tokens' in block:
+            block['en'] = _join_tokens_to_line(block.get('en_tokens', []))
+        
+        # Apply translation hiding
+        if translation_rules:
+            gr_tokens = block.get('gr_tokens', [])
+            for idx, gr_token in enumerate(gr_tokens):
+                if _token_should_hide_translation(gr_token, translation_rules):
+                    if idx < len(block.get('de_tokens', [])):
+                        block['de_tokens'][idx] = ''
+                    if idx < len(block.get('en_tokens', [])):
+                        block['en_tokens'][idx] = ''
+    
+    print(f"DEBUG apply_tag_visibility: Finale sup_keep sample: {sorted(list(sup_keep))[:30]}")
+    return blocks_copy
 
 def remove_all_tags(blocks: List[Dict[str, Any]],
                     tag_config: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:

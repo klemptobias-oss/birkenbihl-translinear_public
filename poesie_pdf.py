@@ -196,36 +196,40 @@ def _process_one_input(infile: str,
 
     final_tag_config = tag_config if tag_config is not None else default_poesie_tag_config
 
-    # Schritt 1: Farben basierend auf der finalen Konfiguration hinzufügen.
-    blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config)
-    
     # DEBUG: Zeige tag_config-Struktur
     if final_tag_config:
         print(f"DEBUG poesie_pdf: tag_config keys: {list(final_tag_config.keys())[:10]}")
-        hide_count = sum(1 for conf in final_tag_config.values() if conf.get('hide') == True or conf.get('hide') == 'hide' or conf.get('hide') == 'true')
+        hide_count = sum(1 for conf in final_tag_config.values() if isinstance(conf, dict) and (conf.get('hide') == True or conf.get('hide') == 'hide' or conf.get('hide') == 'true'))
         print(f"DEBUG poesie_pdf: {hide_count} Regeln mit hide=true gefunden")
         # Zeige erste Regel mit hide=true
         for rule_id, conf in list(final_tag_config.items())[:5]:
-            hide_val = conf.get('hide')
-            if hide_val == True or hide_val == 'hide' or hide_val == 'true':
-                print(f"DEBUG poesie_pdf: Regel '{rule_id}' hat hide={hide_val}")
+            if isinstance(conf, dict):
+                hide_val = conf.get('hide')
+                if hide_val == True or hide_val == 'hide' or hide_val == 'true':
+                    print(f"DEBUG poesie_pdf: Regel '{rule_id}' hat hide={hide_val}")
 
+    # WICHTIG: Reihenfolge ändern - apply_tag_visibility VOR apply_colors
+    # Damit Layout/Farbzuweisung auf den finalen sichtbaren Tags basiert
+    
     for strength, color_mode, tag_mode, meter_on in itertools.product(strengths, colors, tags, meters):
         
-        # Schritt 2: Tag-Sichtbarkeit anwenden
+        # Schritt 1: Tag-Sichtbarkeit zuerst anwenden (damit Layout/Farbzuweisung auf den finalen sichtbaren Tags basiert)
         if tag_mode == "TAGS":
-            blocks_with_tags = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config)
+            blocks_after_visibility = preprocess.apply_tag_visibility(blocks, final_tag_config)
             # DEBUG: Prüfe, ob Tags wirklich entfernt wurden
-            if blocks_with_tags:
-                sample_block = next((b for b in blocks_with_tags if isinstance(b, dict) and b.get('type') in ('pair', 'flow')), None)
+            if blocks_after_visibility:
+                sample_block = next((b for b in blocks_after_visibility if isinstance(b, dict) and b.get('type') in ('pair', 'flow')), None)
                 if sample_block:
                     sample_tokens = sample_block.get('gr_tokens', [])[:3]
                     print(f"DEBUG poesie_pdf: Nach apply_tag_visibility - erste 3 gr_tokens: {sample_tokens}")
         else: # NO_TAGS
-            blocks_with_tags = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
+            blocks_after_visibility = preprocess.remove_all_tags(blocks, final_tag_config)
+        
+        # Schritt 2: Jetzt erst die Farbzuweisung (Hintergrund/Marker) auf Basis der tatsächlich sichtbaren Tags
+        blocks_with_colors = preprocess.apply_colors(blocks_after_visibility, final_tag_config, disable_comment_bg=False)
 
         # Schritt 3: Entferne leere Übersetzungszeilen (wenn alle Übersetzungen ausgeblendet)
-        blocks_no_empty_trans = preprocess.remove_empty_translation_lines(blocks_with_tags)
+        blocks_no_empty_trans = preprocess.remove_empty_translation_lines(blocks_with_colors)
         
         # Prüfe, ob alle Übersetzungen ausgeblendet sind (für _NoTrans Tag)
         has_no_translations = preprocess.all_blocks_have_no_translations(blocks_no_empty_trans)
