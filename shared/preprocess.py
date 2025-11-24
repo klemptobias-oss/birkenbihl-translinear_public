@@ -986,6 +986,7 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
     print(f"DEBUG apply_tag_visibility: Finale sup_keep={sorted(list(sup_keep))}, sub_keep={sorted(list(sub_keep))}")
     
     processed_blocks = []
+    tokens_changed_count = 0
     for b in blocks_copy:
         if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
             processed_block = _process_pair_block_for_tags(
@@ -1000,16 +1001,18 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                 original_tokens = b.get('gr_tokens', [])
                 processed_tokens = processed_block.get('gr_tokens', [])
                 if original_tokens and processed_tokens:
-                    # Prüfe ersten Token
-                    if len(original_tokens) > 0 and len(processed_tokens) > 0:
-                        orig = original_tokens[0]
-                        proc = processed_tokens[0]
+                    # Prüfe alle Tokens, nicht nur den ersten
+                    for i, (orig, proc) in enumerate(zip(original_tokens[:5], processed_tokens[:5])):
                         if orig != proc:
-                            print(f"DEBUG: Token geändert: '{orig[:50]}...' → '{proc[:50]}...'")
+                            tokens_changed_count += 1
+                            if tokens_changed_count <= 3:  # Zeige nur erste 3 Änderungen
+                                print(f"DEBUG apply_tag_visibility: Token {i} geändert: '{orig[:60]}...' → '{proc[:60]}...'")
             processed_blocks.append(processed_block)
         else:
             # Kommentare und andere Block-Typen durchreichen
             processed_blocks.append(b)
+    
+    print(f"DEBUG apply_tag_visibility: {tokens_changed_count} Token(s) wurden geändert (von ersten 5 pro Block)")
     return processed_blocks
 
 def remove_all_tags(blocks: List[Dict[str, Any]],
@@ -1113,44 +1116,92 @@ def apply(blocks: List[Dict[str, Any]],
             _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
 
     if tag_mode == "TAGS" and tag_config:
-        sup_keep = set()
-        sub_keep = set()
+        # WICHTIG: Starte mit ALLEN Tags, dann entferne die, die hide=true haben
+        sup_keep = SUP_TAGS.copy()
+        sub_keep = SUB_TAGS.copy()
+        
+        # Sortiere Regeln: Gruppen-Regeln zuerst, dann spezifische Regeln
+        group_rules = []
+        specific_rules = []
+        
         for rule_id, conf in tag_config.items():
             normalized_rule_id = _normalize_rule_id(rule_id)
+            if '_' in normalized_rule_id and normalized_rule_id.split('_', 1)[1]:
+                specific_rules.append((rule_id, conf, normalized_rule_id))
+            else:
+                group_rules.append((rule_id, conf, normalized_rule_id))
+        
+        # Verarbeite zuerst Gruppen-Regeln, dann spezifische Regeln
+        forbidden_tags_sup = set()
+        forbidden_tags_sub = set()
+        
+        for rule_id, conf, normalized_rule_id in group_rules + specific_rules:
             tags_for_rule = _resolve_tags_for_rule(normalized_rule_id)
             if not tags_for_rule:
                 continue
-
+            
+            is_specific_rule = (rule_id, conf, normalized_rule_id) in specific_rules
+            
             # ROBUST: Prüfe hide (akzeptiere sowohl True als auch String "hide" für Kompatibilität)
             hide_value = conf.get('hide')
             should_hide = hide_value == True or hide_value == "hide" or hide_value == "true"
             
             if should_hide:
+                # Entferne Tags aus sup_keep/sub_keep
                 for tag in tags_for_rule:
-                    if tag in SUP_TAGS:
+                    normalized_tag = _normalize_tag_name(tag)
+                    if tag in sup_keep:
                         sup_keep.discard(tag)
-                    if tag in SUB_TAGS:
+                        if not is_specific_rule:
+                            forbidden_tags_sup.add(tag)
+                            forbidden_tags_sup.add(normalized_tag)
+                    if normalized_tag in sup_keep and normalized_tag != tag:
+                        sup_keep.discard(normalized_tag)
+                        if not is_specific_rule:
+                            forbidden_tags_sup.add(normalized_tag)
+                    if tag in sub_keep:
                         sub_keep.discard(tag)
+                        if not is_specific_rule:
+                            forbidden_tags_sub.add(tag)
+                            forbidden_tags_sub.add(normalized_tag)
+                    if normalized_tag in sub_keep and normalized_tag != tag:
+                        sub_keep.discard(normalized_tag)
+                        if not is_specific_rule:
+                            forbidden_tags_sub.add(normalized_tag)
             else:
+                # Tags hinzufügen, wenn hide=false (nur wenn nicht verboten)
                 placement = conf.get('placement')
                 if placement == 'sup':
                     for tag in tags_for_rule:
-                        if tag in SUP_TAGS:
-                            sup_keep.add(tag)
-                        if tag in SUB_TAGS:
-                            sub_keep.discard(tag)
+                        normalized_tag = _normalize_tag_name(tag)
+                        if is_specific_rule or (tag not in forbidden_tags_sup and normalized_tag not in forbidden_tags_sup):
+                            if tag in SUP_TAGS:
+                                sup_keep.add(tag)
+                            if tag in SUB_TAGS:
+                                sub_keep.discard(tag)
                 elif placement == 'sub':
                     for tag in tags_for_rule:
-                        if tag in SUB_TAGS:
-                            sub_keep.add(tag)
-                        if tag in SUP_TAGS:
-                            sup_keep.discard(tag)
+                        normalized_tag = _normalize_tag_name(tag)
+                        if is_specific_rule or (tag not in forbidden_tags_sub and normalized_tag not in forbidden_tags_sub):
+                            if tag in SUB_TAGS:
+                                sub_keep.add(tag)
+                            if tag in SUP_TAGS:
+                                sup_keep.discard(tag)
                 else:
                     for tag in tags_for_rule:
-                        if tag in SUP_TAGS:
-                            sup_keep.add(tag)
-                        if tag in SUB_TAGS:
-                            sub_keep.add(tag)
+                        normalized_tag = _normalize_tag_name(tag)
+                        if is_specific_rule or (tag not in forbidden_tags_sup and normalized_tag not in forbidden_tags_sup):
+                            if tag in SUP_TAGS:
+                                sup_keep.add(tag)
+                        if is_specific_rule or (tag not in forbidden_tags_sub and normalized_tag not in forbidden_tags_sub):
+                            if tag in SUB_TAGS:
+                                sub_keep.add(tag)
+        
+        print(f"DEBUG apply (in apply()): Finale sup_keep={sorted(list(sup_keep))}, sub_keep={sorted(list(sub_keep))}")
+    else:
+        # Wenn tag_mode == "NO_TAGS" oder keine tag_config, alle Tags entfernen
+        sup_keep = set()
+        sub_keep = set()
 
     translation_rules_arg = translation_rules if translation_rules else None
     out: List[Dict[str, Any]] = []
