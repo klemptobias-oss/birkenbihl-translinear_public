@@ -220,13 +220,21 @@ def _process_one_input(infile: str,
     
     for strength, color_mode, tag_mode, meter_on in itertools.product(strengths, colors, tags, meters):
         
+        # NEW pipeline: discover comments → colors (store orig tags, respect comment mask) → tag visibility → remove_all_tags for NO_TAGS
         # Schritt 1: Farbzuweisung BASIEREND AUF DEN ORIGINALEN TAGS (damit Wortarten korrekt erkannt werden)
-        blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=False)
+        # If user requested comment bg disabled (only for poesie), pass flag
+        disable_comment_bg_flag = final_tag_config.get('disable_comment_bg', False) if final_tag_config else False
+        blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
         
         # Schritt 2: Jetzt erst Tag-Sichtbarkeit anwenden (Tags entfernen, aber Farben bleiben erhalten)
         # WICHTIG: apply_tag_visibility macht auch Übersetzungs-Ausblendung!
+        # Use hidden_tags_by_wortart from tag_config if present
+        hidden_by_wortart = None
+        if final_tag_config and 'hidden_tags_by_wortart' in final_tag_config:
+            hidden_by_wortart = final_tag_config['hidden_tags_by_wortart']
+        
         if tag_mode == "TAGS":
-            blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config)
+            blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
             # DEBUG: Prüfe, ob Tags wirklich entfernt wurden
             if blocks_after_visibility:
                 sample_block = next((b for b in blocks_after_visibility if isinstance(b, dict) and b.get('type') in ('pair', 'flow')), None)
@@ -235,6 +243,15 @@ def _process_one_input(infile: str,
                     print(f"DEBUG poesie_pdf: Nach apply_tag_visibility - erste 3 gr_tokens: {sample_tokens}")
         else: # NO_TAGS
             blocks_after_visibility = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
+            # Finally: if NO_TAGS variant requested, strip all tags now (but keep token_meta color decisions)
+            for b in blocks_after_visibility:
+                if b.get("type") not in ("pair", "flow"):
+                    continue
+                toks = b.get("gr_tokens", [])
+                for ti, t in enumerate(toks):
+                    if not t:
+                        continue
+                    b['gr_tokens'][ti] = preprocess.remove_all_tags_from_token(t)
 
         # Schritt 3: Entferne leere Übersetzungszeilen (wenn alle Übersetzungen ausgeblendet)
         # WICHTIG: Verwende blocks_after_visibility, nicht blocks_with_colors!

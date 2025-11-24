@@ -572,6 +572,10 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
     
     WICHTIG: Wenn disable_comment_bg=True, werden Hintergrundfarben in Kommentarbereichen unterdrückt.
     Die Wort-/Tag-Farben (Symbole) bleiben jedoch erhalten.
+    
+    IMPORTANT: Store original tags per token into block['token_meta'][i]['orig_tags'] so later stages
+    can use the original tags (for deciding which tags to remove) while colors remain
+    computed from original tags.
     """
     if not config:
         return blocks
@@ -590,14 +594,28 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
 
             # Initialize token_meta for storing original tags
             token_meta = new_block.setdefault("token_meta", [{} for _ in gr_tokens])
+            # Create comment mask default (may be set elsewhere)
+            if "comment_token_mask" not in new_block:
+                new_block["comment_token_mask"] = [False] * len(gr_tokens)
             
             for i, token in enumerate(gr_tokens):
-                if not token or any(c in token for c in COLOR_SYMBOLS):
+                if not token:
+                    continue
+                
+                # Extract original tags and store them so later removal uses original tag set
+                orig_tags = set(_extract_tags(token))
+                token_meta[i].setdefault('orig_tags', list(orig_tags))
+                
+                # If disable_comment_bg and this token belongs to comment → skip bg coloring
+                if disable_comment_bg and new_block.get("comment_token_mask", [False])[i]:
+                    # Still keep other color metadata (e.g. token color), but skip background fill
+                    # We still may set token_meta[i]['color'] etc. if needed
+                    continue
+                
+                if any(c in token for c in COLOR_SYMBOLS):
                     continue
 
-                token_tags = set(_extract_tags(token))
-                # Store original tags before any modifications
-                token_meta[i].setdefault('orig_tags', list(token_tags))
+                token_tags = orig_tags
                 
                 if not token_tags:
                     continue
@@ -1094,43 +1112,50 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                 
                 # Für gr_tokens: Bestimme Wortart und entferne nur tags dieser Wortart
                 if tok_field == 'gr_tokens' and hidden_tags_by_wortart:
-                    # Extrahiere Tags aus dem Token
-                    token_tags = set(_extract_tags(tok))
-                    if not token_tags:
+                    # Use original tags from token_meta if available (set by apply_colors)
+                    token_meta_dict = block.get('token_meta', [])
+                    original_tags = set(token_meta_dict[tok_idx].get('orig_tags', _extract_tags(tok))) if tok_idx < len(token_meta_dict) else set(_extract_tags(tok))
+                    
+                    if not original_tags:
                         new_toks.append(tok)
                         continue
                     
-                    # Bestimme Wortart (verwende ORIGINAL-Tags vor Entfernung)
-                    wortart, _ = _get_wortart_and_relevant_tags(token_tags)
-                    
-                    # Prüfe, ob Tags für diese Wortart entfernt werden sollen
-                    tags_to_hide = set()
-                    if wortart:
-                        wortart_key = wortart.lower()  # Normalisiere zu lowercase
-                        if wortart_key in hidden_tags_by_wortart:
-                            tags_to_hide = hidden_tags_by_wortart[wortart_key]
-                    
-                    # Use original tags from token_meta if available (set by apply_colors)
-                    token_meta_dict = block.get('token_meta', [])
-                    original_tags = token_meta_dict[tok_idx].get('orig_tags', list(token_tags)) if tok_idx < len(token_meta_dict) else list(token_tags)
-                    
-                    # Only remove tags that actually exist on this token (intersection)
-                    to_remove = set(original_tags).intersection(tags_to_hide) if tags_to_hide else set()
-                    
-                    # DEBUG: Nur erste Tokens der ersten 3 Blöcke
-                    if bi < 3 and tok_idx < 5:
-                        print(f"DEBUG apply_tag_visibility: Block {bi}, Token {tok_idx}: wortart='{wortart}', tags_to_hide={sorted(list(tags_to_hide))[:5] if tags_to_hide else []}, to_remove={sorted(list(to_remove))[:5] if to_remove else []}, original_tags={sorted(list(original_tags))[:5]}")
-                    
-                    if to_remove:
-                        # Remove only the tags that are actually present on this token
-                        cleaned = remove_tags_from_token(tok, to_remove)
-                        if cleaned != tok:
-                            changed += 1
-                            if bi < 3 and tok_idx < 5:
-                                print(f"DEBUG apply_tag_visibility: Token geändert! Vorher: {tok[:60]}..., Nachher: {cleaned[:60]}..., Entfernt: {sorted(list(to_remove))}")
-                        new_toks.append(cleaned)
+                    # Determine wortart for this token. Use earlier helper or compute from orig_tags.
+                    # Some logic in repo sets 'wortart' via helper: try to reuse it if present
+                    wortart = None
+                    if tok_idx < len(token_meta_dict) and 'wortart' in token_meta_dict[tok_idx]:
+                        wortart = token_meta_dict[tok_idx]['wortart']
                     else:
-                        # Keine Tags für diese Wortart versteckt oder keine Tags vorhanden → Token unverändert
+                        # Fallback: use helper function
+                        wortart, _ = _get_wortart_and_relevant_tags(original_tags)
+                    
+                    if not wortart:
+                        new_toks.append(tok)
+                        continue
+                    
+                    wk = wortart.lower()
+                    if wk not in hidden_tags_by_wortart:
+                        new_toks.append(tok)
+                        continue
+                    
+                    tags_to_hide = set(hidden_tags_by_wortart[wk])
+                    # Only remove tags that actually exist on token (intersection)
+                    actually_present_to_remove = tags_to_hide & original_tags
+                    
+                    if not actually_present_to_remove:
+                        new_toks.append(tok)
+                        continue
+                    
+                    # Debug small: only print for first blocks / tokens
+                    if bi < 2 and tok_idx < 5:
+                        print(f"DEBUG apply_tag_visibility: Block {bi}, Tok {tok_idx}: wortart='{wortart}', tags_to_hide={sorted(list(tags_to_hide))[:10]}, orig_tags={sorted(list(original_tags))[:10]}, to_remove={sorted(list(actually_present_to_remove))}")
+                    
+                    # Remove only the tags that actually exist (defensive)
+                    new_tok = remove_tags_from_token(tok, actually_present_to_remove)
+                    if new_tok != tok:
+                        new_toks.append(new_tok)
+                        changed += 1
+                    else:
                         new_toks.append(tok)
                 else:
                     # Für de_tokens/en_tokens: Keine Tag-Entfernung (haben keine Tags)

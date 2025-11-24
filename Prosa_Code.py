@@ -68,7 +68,7 @@ BLANK_MARKER_GAP_MM = 4.0         # Abstand bei Leerzeilen-Marker
 PARA_COL_MIN_MM = 5.0      # Mindestbreite für Paragraphen-Spalte (stark reduziert)
 PARA_GAP_MM = 1.2          # Abstand neben Paragraphen-Spalte (weiter reduziert für maximale Textbreite)
 SPEAKER_COL_MIN_MM = 3.0   # Mindestbreite für Sprecher-Spalte (reduziert)
-SPEAKER_GAP_MM = 0.8       # Abstand neben Sprecher-Spalte (reduziert für maximale Textbreite)
+SPEAKER_GAP_MM = 1.2       # Abstand neben Sprecher-Spalte (gleich wie PARA_GAP_MM für konsistente Formatierung)
 
 CELL_PAD_LR_PT = 0.6       # Innenabstand links/rechts in Zellen (stark reduziert für kompaktere TAG-PDFs)
 SAFE_EPS_PT = 0.3          # Sicherheitsabstand für Messungen (reduziert für kompaktere Darstellung)
@@ -1314,18 +1314,13 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             
             if w_gr > 0:
                 if is_notag:
-                    # NoTag NoTrans: Größerer Puffer für bessere Abstände (besonders bei Sprechern/§)
-                    # Prüfe, ob Sprechern oder § vorhanden sind (mehr Platz benötigt)
-                    has_speaker_or_para = (speaker_width_pt > 0) or (para_width_pt > 0)
-                    if has_speaker_or_para:
-                        # NoTag NoTrans mit Sprechern/§: Noch größerer Puffer
-                        extra_buffer = max(token_gr_style.fontSize * 0.06, 1.8)  # 6% oder mindestens 1.8pt
-                    else:
-                        # NoTag NoTrans ohne Sprechern/§: Normaler größerer Puffer
-                        extra_buffer = max(token_gr_style.fontSize * 0.04, 1.2)  # 4% oder mindestens 1.2pt
+                    # NoTag NoTrans: Größerer Puffer für bessere Abstände
+                    # WICHTIG: Sprechern und §-Texte sollen gleich formatiert werden wie normale Texte
+                    # Daher verwenden wir für alle den gleichen Puffer
+                    extra_buffer = max(token_gr_style.fontSize * 0.05, 1.5)  # 5% oder mindestens 1.5pt (konsistent für alle)
                     return w_gr + base_safety + extra_buffer
                 else:
-                    # Tag NoTrans: Normaler Puffer
+                    # Tag NoTrans: Normaler Puffer (konsistent für alle)
                     extra_buffer = max(token_gr_style.fontSize * 0.025, 0.7)  # 2.5% oder mindestens 0.7pt
                     return w_gr + base_safety + extra_buffer
             else:
@@ -1353,6 +1348,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # WICHTIG: IMMER reduzieren, damit alle Zeilen am gleichen Ort beginnen
         # Para/Speaker-Spalten werden nur beim ersten Slice angezeigt, aber der Platz wird immer reserviert
         # für konsistente Ausrichtung aller Zeilen im gleichen Block
+        # WICHTIG: SPEAKER_GAP_MM ist jetzt gleich PARA_GAP_MM (1.2mm) für konsistente Formatierung
         avail_w = doc_width_pt
         if speaker_width_pt > 0:
             avail_w -= (speaker_width_pt + SPEAKER_GAP_MM*mm)
@@ -1650,11 +1646,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     if tag_mode == "TAGS":
         INTRA_PAIR_GAP_MM = INTRA_PAIR_GAP_MM_TAGS  # 1.5mm
         CONT_PAIR_GAP_MM = CONT_PAIR_GAP_MM_TAGS   # 3.0mm (minimal für Stabilität)
-        SPEAKER_GAP_MM = 1.0  # 1.0mm (minimal)
+        SPEAKER_GAP_MM = 1.2  # Gleich wie PARA_GAP_MM für konsistente Formatierung
     else:  # NO_TAGS
         INTRA_PAIR_GAP_MM = INTRA_PAIR_GAP_MM_NO_TAGS  # 1.0mm
         CONT_PAIR_GAP_MM = CONT_PAIR_GAP_MM_NO_TAGS    # 6.0mm (minimal)
-        SPEAKER_GAP_MM = 1.0  # 1.0mm (minimal)
+        SPEAKER_GAP_MM = 1.2  # Gleich wie PARA_GAP_MM für konsistente Formatierung
 
     # Debug-Ausgabe für Testzwecke
     # print(f"DEBUG: tag_mode={tag_mode}, CONT_PAIR_GAP_MM={CONT_PAIR_GAP_MM}, INTRA_PAIR_GAP_MM={INTRA_PAIR_GAP_MM}")

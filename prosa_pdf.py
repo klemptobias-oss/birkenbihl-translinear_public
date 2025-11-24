@@ -169,32 +169,13 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         
         # Schritt 2: Jetzt erst Tag-Sichtbarkeit anwenden (Tags entfernen, aber Farben bleiben erhalten)
         # WICHTIG: apply_tag_visibility macht auch Übersetzungs-Ausblendung!
+        # Use hidden_tags_by_wortart from tag_config if present
+        hidden_by_wortart = None
+        if final_tag_config and 'hidden_tags_by_wortart' in final_tag_config:
+            hidden_by_wortart = final_tag_config['hidden_tags_by_wortart']
+        
         if tag_mode == "TAGS":
-            # Extract hidden_tags_by_wortart from tag_config
-            hidden_tags_by_wortart = {}
-            if final_tag_config:
-                for rule_id, conf in final_tag_config.items():
-                    if isinstance(conf, dict) and conf.get('hide') in (True, 'true', 'True', 'hide', 'Hide'):
-                        # Build hidden_tags_by_wortart structure
-                        if '_' in rule_id:
-                            parts = rule_id.split('_', 1)
-                            wortart_key = parts[0].lower()
-                            tag = parts[1]
-                            if wortart_key not in hidden_tags_by_wortart:
-                                hidden_tags_by_wortart[wortart_key] = set()
-                            hidden_tags_by_wortart[wortart_key].add(tag)
-                        else:
-                            # Gruppen-Regel
-                            from shared.preprocess import RULE_TAG_MAP, HIERARCHIE
-                            key = rule_id.lower()
-                            mapped = RULE_TAG_MAP.get(key) or HIERARCHIE.get(key)
-                            if mapped:
-                                if key not in hidden_tags_by_wortart:
-                                    hidden_tags_by_wortart[key] = set()
-                                for t in mapped:
-                                    hidden_tags_by_wortart[key].add(t)
-            
-            blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_tags_by_wortart if hidden_tags_by_wortart else None)
+            blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
             # DEBUG: Prüfe, ob Tags wirklich entfernt wurden
             if blocks_after_visibility:
                 sample_block = next((b for b in blocks_after_visibility[:3] if isinstance(b, dict) and b.get('type') in ('pair', 'flow')), None)
