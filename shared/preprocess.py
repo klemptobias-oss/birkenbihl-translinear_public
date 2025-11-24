@@ -1061,8 +1061,8 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                             tags_to_hide = hidden_tags_by_wortart[wortart_key]
                     
                     # DEBUG: Nur erste 3 Tokens der ersten 2 Blöcke
-                    if tags_to_hide and bi < 2 and len(new_toks) < 3:
-                        print(f"DEBUG apply_tag_visibility: Block {bi}, Token {len(new_toks)}: wortart='{wortart}', tags_to_hide={sorted(list(tags_to_hide))[:5]}, original_tags={sorted(list(token_tags))[:5]}")
+                    if bi < 2 and len(new_toks) < 3:
+                        print(f"DEBUG apply_tag_visibility: Block {bi}, Token {len(new_toks)}: wortart='{wortart}', hidden_tags_by_wortart keys={sorted(list(hidden_tags_by_wortart.keys()))}, tags_to_hide={sorted(list(tags_to_hide))[:5] if tags_to_hide else []}, original_tags={sorted(list(token_tags))[:5]}")
                     
                     if tags_to_hide:
                         # Entferne nur die Tags, die für diese Wortart versteckt werden sollen
@@ -1073,6 +1073,10 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         cleaned = _remove_selected_tags(tok, sup_keep=sup_keep_for_token, sub_keep=sub_keep_for_token, remove_all=False)
                         if cleaned != tok:
                             changed += 1
+                            # DEBUG: Zeige was entfernt wurde
+                            if bi < 2 and len(new_toks) < 3:
+                                removed_tags = tags_to_hide & token_tags
+                                print(f"DEBUG apply_tag_visibility: Token geändert! Vorher: {tok[:60]}..., Nachher: {cleaned[:60]}..., Entfernt: {sorted(list(removed_tags))}")
                         new_toks.append(cleaned)
                     else:
                         # Keine Tags für diese Wortart versteckt → Token unverändert
