@@ -1412,42 +1412,30 @@ def get_visible_tags_poesie(token: str, tag_config: dict = None) -> list:
 def measure_token_width_with_visibility_poesie(token: str, font: str, size: float, cfg: dict,
                                                is_greek_row: bool = False, 
                                                tag_config: dict = None) -> float:
-    """Berechnet die Breite eines Tokens, wobei versteckte Tags ignoriert werden - Poesie-Version."""
+    """
+    Berechnet die Breite eines Tokens - Poesie-Version.
+    WICHTIG: Diese Funktion erhält das Token NACH der Vorverarbeitung (apply_tag_visibility).
+    Die Tags, die im Token noch vorhanden sind, sind bereits die sichtbaren Tags!
+    Wir müssen nicht mehr prüfen, welche Tags versteckt sind - sie sind bereits entfernt.
+    """
     if not token:
         return 0.0
     
-    # Berechne Breite MIT allen Tags (Standard)
-    w_with_tags = visible_measure_token(token, font=font, size=size, cfg=cfg, is_greek_row=is_greek_row)
+    # Berechne Breite direkt mit dem Token, wie es ist (Tags wurden bereits entfernt)
+    # Das Token enthält bereits nur noch die sichtbaren Tags!
+    w_with_remaining_tags = visible_measure_token(token, font=font, size=size, cfg=cfg, is_greek_row=is_greek_row)
     
-    # Wenn keine Tag-Konfiguration vorhanden, verwende Standard-Breite
-    if not tag_config:
-        return w_with_tags
+    # WICHTIG: Das Token wurde bereits in apply_tag_visibility verarbeitet.
+    # Die Tags, die noch im Token vorhanden sind, sind die sichtbaren Tags!
+    # Wir müssen einfach nur die Breite des aktuellen Tokens messen.
     
-    # Berechne Breite OHNE versteckte Tags
-    visible_tags = get_visible_tags_poesie(token, tag_config)
-    tags = RE_TAG_FINDALL.findall(token)
-    if len(visible_tags) == len(tags):
-        # Alle Tags sind sichtbar, verwende Standard-Breite
-        return w_with_tags
-    
-    # Einige Tags sind versteckt - berechne Breite OHNE versteckte Tags
-    hidden_tags = [t for t in tags if t not in visible_tags]
-    
-    # Entferne versteckte Tags aus dem Token-String
-    token_without_hidden = token
-    for hidden_tag in hidden_tags:
-        # Entferne nur dieses spezifische Tag (mit möglichen Leerzeichen)
-        tag_pattern = re.compile(r'\(\s*' + re.escape(hidden_tag) + r'\s*\)', re.IGNORECASE)
-        token_without_hidden = tag_pattern.sub('', token_without_hidden)
-    
-    # Berechne Breite OHNE versteckte Tags
-    w_without_hidden = visible_measure_token(token_without_hidden, font=font, size=size, cfg=cfg,
-                                              is_greek_row=is_greek_row)
-    
-    # Verwende das Maximum, um Überlappungen zu vermeiden
-    # Füge einen kleinen Sicherheitsabstand hinzu
-    safety_margin = size * 0.2  # 20% der Font-Size als Sicherheitsabstand
-    return max(w_with_tags, w_without_hidden + safety_margin)
+    tags_in_token = RE_TAG_FINDALL.findall(token)
+    if tags_in_token:
+        # Tags vorhanden → Tag-PDF, verwende gemessene Breite mit angemessenem Puffer
+        return w_with_remaining_tags + max(size * 0.03, 0.8)  # Puffer für Tag-PDFs
+    else:
+        # Keine Tags vorhanden → NoTag-PDF, verwende gemessene Breite mit größerem Puffer
+        return w_with_remaining_tags + max(size * 0.15, 2.5)  # Größerer Puffer für NoTag NoTrans
 
 def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None, 
                           indent_pt: float = 0.0,

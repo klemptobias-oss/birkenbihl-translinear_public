@@ -1172,74 +1172,31 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
     def measure_token_width_with_visibility(token: str, font: str, size: float, 
                                             is_greek_row: bool = False, 
                                             tag_config: dict = None) -> float:
-        """Berechnet die Breite eines Tokens, wobei versteckte Tags ignoriert werden."""
+        """
+        Berechnet die Breite eines Tokens.
+        WICHTIG: Diese Funktion erhält das Token NACH der Vorverarbeitung (apply_tag_visibility).
+        Die Tags, die im Token noch vorhanden sind, sind bereits die sichtbaren Tags!
+        Wir müssen nicht mehr prüfen, welche Tags versteckt sind - sie sind bereits entfernt.
+        """
         if not token:
             return 0.0
         
-        # Berechne Breite MIT allen Tags (Standard)
-        w_with_tags = visible_measure_token(token, font=font, size=size, 
-                                           is_greek_row=is_greek_row, reverse_mode=False)
+        # Berechne Breite direkt mit dem Token, wie es ist (Tags wurden bereits entfernt)
+        # Das Token enthält bereits nur noch die sichtbaren Tags!
+        w_with_remaining_tags = visible_measure_token(token, font=font, size=size, 
+                                                      is_greek_row=is_greek_row, reverse_mode=False)
         
-        # Wenn keine Tag-Konfiguration vorhanden, prüfe ob Tags im Token vorhanden sind
-        # Wenn Tags vorhanden sind, entferne sie für die Breitenberechnung (NoTag-PDFs)
-        if not tag_config:
-            # Prüfe, ob Tags im Token vorhanden sind
-            tags_in_token = RE_TAG.findall(token)
-            if tags_in_token:
-                # Tags vorhanden, aber keine Konfiguration → entferne alle Tags (NoTag-PDF)
-                token_no_tags = token
-                for tag in tags_in_token:
-                    token_no_tags = token_no_tags.replace(f'({tag})', '')
-                w_no_tags = visible_measure_token(token_no_tags, font=font, size=size,
-                                                 is_greek_row=is_greek_row, reverse_mode=False)
-                # Größerer Puffer für NoTag-Versionen, um Abstände zwischen Wörtern zu garantieren
-                # Wichtig: Dieser Puffer muss groß genug sein, damit Wörter nicht zusammenhängen
-                # Erhöht für Texte mit Sprechern/§ - verhindert Überlappungen und sorgt für bessere Abstände
-                return w_no_tags + max(size * 0.15, 2.5)  # Erhöht auf 15% oder mindestens 2.5pt für bessere Abstände bei NoTag NoTrans
-            else:
-                # Keine Tags vorhanden → verwende Standard-Breite
-                return w_with_tags
+        # WICHTIG: Das Token wurde bereits in apply_tag_visibility verarbeitet.
+        # Die Tags, die noch im Token vorhanden sind, sind die sichtbaren Tags!
+        # Wir müssen einfach nur die Breite des aktuellen Tokens messen.
         
-        # Berechne Breite OHNE versteckte Tags
-        visible_tags = get_visible_tags(token, tag_config)
-        tags = RE_TAG.findall(token)
-        
-        if len(visible_tags) == len(tags) and len(tags) > 0:
-            # Alle Tags sind sichtbar, verwende Standard-Breite
-            return w_with_tags
-        
-        if len(visible_tags) == 0 and len(tags) > 0:
-            # Alle Tags sind versteckt → berechne Breite ohne Tags
-            token_no_tags = token
-            for tag in tags:
-                token_no_tags = token_no_tags.replace(f'({tag})', '')
-            w_no_tags = visible_measure_token(token_no_tags, font=font, size=size,
-                                             is_greek_row=is_greek_row, reverse_mode=False)
-            # Füge einen kleinen Sicherheitspuffer hinzu
-            return w_no_tags + max(size * 0.05, 0.5)
-        
-        # Einige Tags sind versteckt - berechne Breite EXAKT basierend auf sichtbaren Tags
-        # Entferne versteckte Tags aus dem Token
-        tags = RE_TAG.findall(token)
-        hidden_tags = [t for t in tags if t not in visible_tags]
-        
-        if not hidden_tags:
-            # Alle Tags sind sichtbar - verwende Standard-Breite
-            return w_with_tags
-        
-        # Entferne versteckte Tags aus dem Token-String
-        token_without_hidden = token
-        for hidden_tag in hidden_tags:
-            token_without_hidden = token_without_hidden.replace(f'({hidden_tag})', '')
-        
-        # Berechne Breite EXAKT für Token mit nur sichtbaren Tags
-        w_with_visible_tags = visible_measure_token(token_without_hidden, font=font, size=size,
-                                                    is_greek_row=is_greek_row, reverse_mode=False)
-        
-        # NEU: Exakte Breitenberechnung - verwende die gemessene Breite direkt
-        # Füge einen minimalen Sicherheitspuffer hinzu (nur für Rundungsfehler)
-        safety_margin = max(size * 0.05, 0.5)  # Sehr kleiner Puffer: 5% der Font-Size oder 0.5pt
-        return w_with_visible_tags + safety_margin
+        tags_in_token = RE_TAG.findall(token)
+        if tags_in_token:
+            # Tags vorhanden → Tag-PDF, verwende gemessene Breite mit angemessenem Puffer
+            return w_with_remaining_tags + max(size * 0.03, 0.8)  # Puffer für Tag-PDFs
+        else:
+            # Keine Tags vorhanden → NoTag-PDF, verwende gemessene Breite mit größerem Puffer
+            return w_with_remaining_tags + max(size * 0.15, 2.5)  # Größerer Puffer für NoTag NoTrans
     
     def col_width(k:int) -> float:
         """
@@ -1339,7 +1296,14 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             if w_gr > 0:
                 if is_notag:
                     # NoTag NoTrans: Größerer Puffer für bessere Abstände (besonders bei Sprechern/§)
-                    extra_buffer = max(token_gr_style.fontSize * 0.04, 1.2)  # 4% oder mindestens 1.2pt (erhöht für NoTag NoTrans)
+                    # Prüfe, ob Sprechern oder § vorhanden sind (mehr Platz benötigt)
+                    has_speaker_or_para = (speaker_width_pt > 0) or (para_width_pt > 0)
+                    if has_speaker_or_para:
+                        # NoTag NoTrans mit Sprechern/§: Noch größerer Puffer
+                        extra_buffer = max(token_gr_style.fontSize * 0.06, 1.8)  # 6% oder mindestens 1.8pt
+                    else:
+                        # NoTag NoTrans ohne Sprechern/§: Normaler größerer Puffer
+                        extra_buffer = max(token_gr_style.fontSize * 0.04, 1.2)  # 4% oder mindestens 1.2pt
                     return w_gr + base_safety + extra_buffer
                 else:
                     # Tag NoTrans: Normaler Puffer
