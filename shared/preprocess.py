@@ -776,6 +776,7 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                             removed_from_sub.append(normalized_tag)
                 print(f"DEBUG: Nach Entfernung - sup_keep hat noch {len(sup_keep)} Tags (entfernt: {removed_from_sup}), sub_keep hat noch {len(sub_keep)} Tags (entfernt: {removed_from_sub})")
             else:
+                # Tags hinzufügen, wenn hide=false (d.h. in diesem else-Zweig)
                 placement = conf.get('placement')
                 if placement == 'sup':
                     for tag in tags_for_rule:
