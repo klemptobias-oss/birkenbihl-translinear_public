@@ -172,12 +172,14 @@ def extract_inline_comments_from_blocks(blocks: List[Dict[str,Any]]) -> List[Dic
     Scans blocks for inline comment lines of the form "(2-4k) text..." or "(5121k) text..."
     Returns a list of dicts: {'start_pair': int, 'end_pair': int, 'text': str, 'origin_block_index': i}
     Also removes the comment-line text from the block's 'gr' (so it doesn't render as normal text).
+    Prüft auch in gr_tokens (erster Token) und in separaten comment-Blocks.
     """
     comments = []
     for i, block in enumerate(blocks):
         if not isinstance(block, dict):
             continue
-        # look for inline comment in block['gr'] (string) or first token
+        
+        # 1. Prüfe block['gr'] (string)
         gr = block.get('gr') or ""
         m = _RE_INLINE_COMMENT.match(gr.strip())
         if m:
@@ -185,13 +187,32 @@ def extract_inline_comments_from_blocks(blocks: List[Dict[str,Any]]) -> List[Dic
             e = int(m.group(2) or m.group(1))
             text = m.group(3).strip()
             comments.append({'start_pair': s, 'end_pair': e, 'text': text, 'origin_block_index': i})
-            # remove the comment line from the block's gr so it won't render as normal text
+            # remove the comment line from the block's gr
             remainder = _RE_INLINE_COMMENT.sub('', gr, count=1).strip()
             block['gr'] = remainder
-            # also clear gr_tokens if they correspond to the comment line (best effort)
+            # also clear gr_tokens if they correspond to the comment line
             if block.get('gr_tokens') and len(block.get('gr_tokens')) <= 3:
-                # probably the whole block was comment; empty tokens
                 block['gr_tokens'] = []
+            continue
+        
+        # 2. Prüfe ersten gr_token (falls vorhanden)
+        gr_tokens = block.get('gr_tokens', [])
+        if gr_tokens and len(gr_tokens) > 0:
+            first_token = gr_tokens[0] if isinstance(gr_tokens[0], str) else str(gr_tokens[0])
+            m = _RE_INLINE_COMMENT.match(first_token.strip())
+            if m:
+                s = int(m.group(1))
+                e = int(m.group(2) or m.group(1))
+                text = m.group(3).strip()
+                comments.append({'start_pair': s, 'end_pair': e, 'text': text, 'origin_block_index': i})
+                # Entferne den Kommentar-Token
+                block['gr_tokens'] = gr_tokens[1:] if len(gr_tokens) > 1 else []
+                continue
+        
+        # 3. Prüfe ob Block selbst ein comment-Block ist
+        if block.get('type') == 'comment':
+            # Kommentar-Block bereits vorhanden - nicht nochmal extrahieren
+            pass
     return comments
 
 def assign_comment_ranges_to_blocks(blocks: List[Dict[str,Any]], inline_comments: List[Dict[str,Any]]) -> None:
@@ -200,24 +221,25 @@ def assign_comment_ranges_to_blocks(blocks: List[Dict[str,Any]], inline_comments
     For each comment, we attach it to the *last* block in the covered range (so it appears after the range).
     Also we set/merge comment_token_mask for every block in the range.
     """
-    # First assign pair_index to each pair block (1-based sequential)
+    # First assign pair_index to each pair/flow block (1-based sequential)
     pair_index = 1
     for b in blocks:
         if not isinstance(b, dict):
             continue
-        if b.get('type') == 'pair':
+        if b.get('type') in ('pair', 'flow'):
             b['_pair_index'] = pair_index
             pair_index += 1
     
-    # Ensure blocks have gr_tokens lists
+    # Ensure blocks have gr_tokens lists (auch für flow-Blöcke!)
     for b in blocks:
         if not isinstance(b, dict):
             continue
-        if 'gr_tokens' not in b:
-            b['gr_tokens'] = []
-        # init mask if absent
-        if 'comment_token_mask' not in b:
-            b['comment_token_mask'] = [False] * max(1, len(b.get('gr_tokens', [])))
+        if b.get('type') in ('pair', 'flow'):
+            if 'gr_tokens' not in b:
+                b['gr_tokens'] = []
+            # init mask if absent
+            if 'comment_token_mask' not in b:
+                b['comment_token_mask'] = [False] * max(1, len(b.get('gr_tokens', [])))
     
     # For each extracted inline comment, attach to appropriate block
     for cm in inline_comments:
@@ -770,31 +792,46 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
         return False
 
     tags = _extract_tags(token)
-    normalized_tags: Set[str] = set()
-    for tag in tags:
-        # Debug: Prüfe ob HideTrans erkannt wird
-        if tag == TRANSLATION_HIDE_TAG:
-            # print(f"DEBUG: HideTrans gefunden in Token: {token}")
-            return True
-        parts = [p for p in tag.split('/') if p]
-        for part in parts:
-            normalized_tags.add(_normalize_tag_name(part))
-
-    wortart, _ = _get_wortart_and_relevant_tags(normalized_tags)
+    # Prüfe zuerst auf HideTrans-Tag
+    if TRANSLATION_HIDE_TAG in tags:
+        return True
+    
+    # WICHTIG: Verwende ORIGINALE Tags (nicht normalisiert) für Wortart-Erkennung
+    original_tags = set(tags)
+    wortart, _ = _get_wortart_and_relevant_tags(original_tags)
+    
     if wortart:
-        entry = translation_rules.get(wortart.lower())
+        wortart_key = wortart.lower()
+        entry = translation_rules.get(wortart_key)
         if entry:
             if entry.get("all"):
                 return True
-            if entry.get("tags") and any(tag in entry["tags"] for tag in normalized_tags):
-                return True
+            # Prüfe auf Tags in entry["tags"]
+            entry_tags = entry.get("tags", set())
+            if entry_tags:
+                # Normalisiere beide Sets für Vergleich
+                normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
+                # Für jedes originale Tag: normalisiere es und prüfe
+                for orig_tag in original_tags:
+                    parts = [p for p in orig_tag.split('/') if p]
+                    for part in parts:
+                        normalized_part = _normalize_tag_name(part)
+                        if normalized_part in normalized_entry_tags:
+                            return True
 
     global_entry = translation_rules.get(TRANSLATION_HIDE_GLOBAL)
     if global_entry:
         if global_entry.get("all"):
             return True
-        if global_entry.get("tags") and any(tag in global_entry["tags"] for tag in normalized_tags):
-            return True
+        entry_tags = global_entry.get("tags", set())
+        if entry_tags:
+            normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
+            for orig_tag in original_tags:
+                parts = [p for p in orig_tag.split('/') if p]
+                for part in parts:
+                    normalized_part = _normalize_tag_name(part)
+                    if normalized_part in normalized_entry_tags:
+                        return True
 
     return False
 
@@ -967,6 +1004,9 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                 hidden_tags_by_wortart[wortart].update(global_hidden_tags)
     
     if hidden_tags_by_wortart:
+        # Normalisiere alle Keys zu lowercase für konsistente Lookups
+        hidden_tags_by_wortart_normalized = {k.lower(): v for k, v in hidden_tags_by_wortart.items()}
+        hidden_tags_by_wortart = hidden_tags_by_wortart_normalized
         print(f"DEBUG apply_tag_visibility: hidden_tags_by_wortart: {dict((k, sorted(list(v))[:10]) for k, v in hidden_tags_by_wortart.items())}")
     
     # Apply removal on tokens for each pair/flow block
@@ -1012,8 +1052,10 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                     
                     # Prüfe, ob Tags für diese Wortart entfernt werden sollen
                     tags_to_hide = set()
-                    if wortart and wortart in hidden_tags_by_wortart:
-                        tags_to_hide = hidden_tags_by_wortart[wortart]
+                    if wortart:
+                        wortart_key = wortart.lower()  # Normalisiere zu lowercase
+                        if wortart_key in hidden_tags_by_wortart:
+                            tags_to_hide = hidden_tags_by_wortart[wortart_key]
                     
                     if tags_to_hide:
                         # Entferne nur die Tags, die für diese Wortart versteckt werden sollen
