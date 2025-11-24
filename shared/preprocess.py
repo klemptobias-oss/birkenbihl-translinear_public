@@ -746,9 +746,16 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
 
             if conf.get('hide'):
+                # DEBUG: Zeige, welche Tags entfernt werden
+                print(f"DEBUG apply_tag_visibility: Regel '{rule_id}' (normalisiert: '{normalized_rule_id}') hat hide=true, entferne Tags: {tags_for_rule}")
                 for tag in tags_for_rule:
+                    # Normalisiere Tag-Namen für robusten Vergleich
+                    normalized_tag = _normalize_tag_name(tag)
                     sup_keep.discard(tag)
+                    sup_keep.discard(normalized_tag)
                     sub_keep.discard(tag)
+                    sub_keep.discard(normalized_tag)
+                print(f"DEBUG: Nach Entfernung - sup_keep hat noch {len(sup_keep)} Tags, sub_keep hat noch {len(sub_keep)} Tags")
             else:
                 placement = conf.get('placement')
                 if placement == 'sup':
@@ -778,6 +785,7 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                 translation_rules=translation_rules if translation_rules else None,
             ))
         else:
+            # Kommentare und andere Block-Typen durchreichen
             processed_blocks.append(b)
     return processed_blocks
 
@@ -806,6 +814,7 @@ def remove_all_tags(blocks: List[Dict[str, Any]],
                 translation_rules=translation_rules if translation_rules else None,
             ))
         else:
+            # Kommentare und andere Block-Typen durchreichen
             processed_blocks.append(b)
     return processed_blocks
 
@@ -1048,13 +1057,16 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
     source_tokens = block.get('gr_tokens', [])
     result = {**block}
     
-    # Prüfe, ob irgendwelche Übersetzungen in diesem Block ausgeblendet sind
-    has_any_hidden_translations = False
-    if translation_rules:
+    # Prüfe, ob ALLE Übersetzungen in diesem Block ausgeblendet sind (NoTrans PDF)
+    # Nur dann sollen Stephanus-Paginierungen entfernt werden
+    has_all_translations_hidden = True
+    if translation_rules and source_tokens:
         for idx, gr_token in enumerate(source_tokens):
-            if _token_should_hide_translation(gr_token, translation_rules):
-                has_any_hidden_translations = True
+            if not _token_should_hide_translation(gr_token, translation_rules):
+                has_all_translations_hidden = False
                 break
+    else:
+        has_all_translations_hidden = False
     
     # Entferne Stephanus-Paginierungen aus DE-Tokens
     # ROBUST: Entferne ALLE Stephanus-Paginierungen aus Übersetzungszeilen, wenn irgendwelche Übersetzungen ausgeblendet sind
@@ -1072,15 +1084,14 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
             # Prüfe, ob Token eine Stephanus-Paginierung enthält ODER nur Satzzeichen ist
             token_stripped = token.strip()
             
-            # Entferne Tokens, die nur aus Satzzeichen bestehen (wenn Übersetzungen ausgeblendet sind)
-            if (should_hide_translation or has_any_hidden_translations) and _is_punctuation_only_token(token_stripped):
+            # Entferne Tokens, die nur aus Satzzeichen bestehen (nur wenn ALLE Übersetzungen ausgeblendet sind = NoTrans PDF)
+            if has_all_translations_hidden and _is_punctuation_only_token(token_stripped):
                 result['de_tokens'][idx] = ''
                 continue
             
-            # Entferne Stephanus-Paginierungen
+            # Entferne Stephanus-Paginierungen NUR wenn ALLE Übersetzungen ausgeblendet sind (NoTrans PDF)
             if RE_STEPHANUS.search(token_stripped):
-                # Wenn die Übersetzung ausgeblendet ist ODER wenn irgendwelche Übersetzungen ausgeblendet sind, entferne Stephanus-Paginierungen
-                if should_hide_translation or has_any_hidden_translations:
+                if has_all_translations_hidden:
                     if RE_STEPHANUS.fullmatch(token_stripped):
                         # Token ist nur eine Stephanus-Paginierung → komplett entfernen
                         result['de_tokens'][idx] = ''
@@ -1108,15 +1119,14 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
             # Prüfe, ob Token eine Stephanus-Paginierung enthält ODER nur Satzzeichen ist
             token_stripped = token.strip()
             
-            # Entferne Tokens, die nur aus Satzzeichen bestehen (wenn Übersetzungen ausgeblendet sind)
-            if (should_hide_translation or has_any_hidden_translations) and _is_punctuation_only_token(token_stripped):
+            # Entferne Tokens, die nur aus Satzzeichen bestehen (nur wenn ALLE Übersetzungen ausgeblendet sind = NoTrans PDF)
+            if has_all_translations_hidden and _is_punctuation_only_token(token_stripped):
                 result['en_tokens'][idx] = ''
                 continue
             
-            # Entferne Stephanus-Paginierungen
+            # Entferne Stephanus-Paginierungen NUR wenn ALLE Übersetzungen ausgeblendet sind (NoTrans PDF)
             if RE_STEPHANUS.search(token_stripped):
-                # Wenn die Übersetzung ausgeblendet ist ODER wenn irgendwelche Übersetzungen ausgeblendet sind, entferne Stephanus-Paginierungen
-                if should_hide_translation or has_any_hidden_translations:
+                if has_all_translations_hidden:
                     if RE_STEPHANUS.fullmatch(token_stripped):
                         # Token ist nur eine Stephanus-Paginierung → komplett entfernen
                         result['en_tokens'][idx] = ''
