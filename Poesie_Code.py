@@ -1455,7 +1455,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                           tag_config: dict = None,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                           base_line_num: int = None,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
                           line_comment_colors: dict = None,  # NEU: Map von Zeilennummern zu Kommentar-Farben
-                          hide_pipes: bool = False):  # NEU: Pipes (|) in Übersetzungen verstecken
+                          hide_pipes: bool = False,  # NEU: Pipes (|) in Übersetzungen verstecken
+                          block: dict = None):  # NEU: Block-Objekt für comment_token_mask
     # Standardwerte setzen falls nicht übergeben
     if doc_width_pt is None:
         doc_width_pt = A4[0] - 40*MM  # A4-Breite minus Ränder
@@ -1721,8 +1722,12 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             tbl = Table([row_gr], colWidths=col_w, hAlign='LEFT')
 
         # NEU: Prüfe, ob diese Zeile von einem Kommentar referenziert wird
+        # WICHTIG: Wenn comment_token_mask vorhanden ist und nicht leer, unterdrücke Hintergrundfarbe
         comment_color = None
-        if base_line_num is not None and line_comment_colors and base_line_num in line_comment_colors:
+        comment_token_mask = block.get('comment_token_mask', []) if block else []
+        has_comment_mask = comment_token_mask and any(comment_token_mask)
+        
+        if base_line_num is not None and line_comment_colors and base_line_num in line_comment_colors and not has_comment_mask:
             comment_color = line_comment_colors[base_line_num]
         
         if meter_on:
@@ -2173,7 +2178,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                         base_line_num=next_base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
                         line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
-                        hide_pipes=hide_pipes  # NEU: Pipes (|) in Übersetzungen verstecken
+                        hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
+                        block=pair_b  # NEU: Block-Objekt für comment_token_mask
                     )
 
                     # Sammle die Zeilen
@@ -2273,7 +2279,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                 base_line_num=base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
                 line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
-                hide_pipes=hide_pipes  # NEU: Pipes (|) in Übersetzungen verstecken
+                hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
+                block=b  # NEU: Block-Objekt für comment_token_mask
             )
             # WICHTIG: Alle Tabellen eines Paares/Triplikats zusammenhalten
             # (verhindert, dass GR/DE/EN über Seitenumbrüche getrennt werden)

@@ -1116,7 +1116,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             hide_pipes:bool=False,  # NEU: Pipes (|) in Übersetzungen verstecken
                             tag_config:dict=None,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                             base_num:int=None,  # NEU: Zeilennummer für Hinterlegung
-                            line_comment_colors:dict=None):  # NEU: Map von Zeilennummern zu Kommentar-Farben
+                            line_comment_colors:dict=None,  # NEU: Map von Zeilennummern zu Kommentar-Farben
+                            block:dict=None):  # NEU: Block-Objekt für comment_token_mask
     if en_tokens is None:
         en_tokens = []
     if de_tokens is None:
@@ -1514,7 +1515,12 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # NEU: Hinterlegung für Kommentar-Referenzen
         # Prüfe, ob base_num in line_comment_colors enthalten ist
-        if base_num is not None and line_comment_colors and base_num in line_comment_colors:
+        # WICHTIG: Wenn comment_token_mask vorhanden ist und nicht leer, unterdrücke Hintergrundfarbe
+        # (wird in der Vorverarbeitung gesetzt, wenn disable_comment_bg=True)
+        comment_token_mask = block.get('comment_token_mask', []) if block else []
+        has_comment_mask = comment_token_mask and any(comment_token_mask)
+        
+        if base_num is not None and line_comment_colors and base_num in line_comment_colors and not has_comment_mask:
             comment_color = line_comment_colors[base_num]
             # Hinterlegung für die gesamte Tabelle (alle Zeilen und Spalten)
             # "Augiebig" - also der gesamte Bereich wird markiert
@@ -1741,7 +1747,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
             tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
             base_num=base_num,  # NEU: Zeilennummer für Hinterlegung
-            line_comment_colors=line_comment_colors  # NEU: Map von Zeilennummern zu Kommentar-Farben
+            line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
+            block=flow_block  # NEU: Block-Objekt für comment_token_mask
         )
         for idx, t in enumerate(tables):
             if idx > 0: t.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))

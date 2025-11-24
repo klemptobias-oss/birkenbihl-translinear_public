@@ -125,6 +125,128 @@ ColorMode   = str  # "COLOR" | "BLACK_WHITE"
 TagMode     = str  # "TAGS"  | "NO_TAGS"
 VersmassMode= str  # "NORMAL" | "REMOVE_MARKERS" | "KEEP_MARKERS"
 
+# ======= Hilfen: Kommentar-Masken =======
+def create_comment_token_mask_for_block(block: Dict[str, Any], all_blocks: List[Dict[str, Any]]) -> List[bool]:
+    """
+    Liefert eine bool-Liste der Länge len(block['gr_tokens']) mit True
+    für Tokens, die zu einem Kommentarbereich gehören.
+    
+    Erwartet Kommentar-Objekte mit Feldern 'start_line' und 'end_line' (Zeilennummern),
+    die dann in Token-Indizes umgerechnet werden.
+    """
+    tokens = block.get('gr_tokens', []) or []
+    mask = [False] * len(tokens)
+    
+    if not tokens:
+        return mask
+    
+    # Hole base_num (Zeilennummer) des aktuellen Blocks
+    base_num = block.get('base', None)
+    if base_num is None:
+        # Versuche base_num aus anderen Feldern zu extrahieren
+        # z.B. aus 'base_num' oder aus der ersten Zeile
+        base_num = block.get('base_num')
+    
+    # 1) Direkter Fall: block['comments'] mit start_line/end_line
+    comments = block.get('comments') or []
+    for c in comments:
+        start_line = c.get('start_line')
+        end_line = c.get('end_line')
+        if start_line is None or end_line is None:
+            continue
+        
+        # Wenn start_line und end_line Zeilennummern sind, müssen wir sie mit base_num vergleichen
+        # Wenn base_num im Bereich liegt, markiere alle Tokens
+        if base_num is not None:
+            try:
+                start_num = int(re.match(r'^(\d+)', str(start_line)).group(1)) if re.match(r'^(\d+)', str(start_line)) else None
+                end_num = int(re.match(r'^(\d+)', str(end_line)).group(1)) if re.match(r'^(\d+)', str(end_line)) else None
+                if start_num is not None and end_num is not None:
+                    if start_num <= base_num <= end_num:
+                        # Alle Tokens dieses Blocks gehören zum Kommentar
+                        mask = [True] * len(tokens)
+            except:
+                pass
+    
+    # 2) Alternative: Kommentare in separaten Blocks mit start_line/end_line
+    # Durchsuche alle Blöcke nach Kommentaren, die diesen Block betreffen
+    for other_block in all_blocks:
+        if not isinstance(other_block, dict):
+            continue
+        if other_block.get('type') != 'comment':
+            continue
+        
+        start_line = other_block.get('start_line')
+        end_line = other_block.get('end_line')
+        if start_line is None or end_line is None:
+            continue
+        
+        # Prüfe, ob base_num im Bereich liegt
+        if base_num is not None:
+            try:
+                # Extrahiere Zahlen aus start_line/end_line (z.B. "105-112k" -> 105, 112)
+                start_match = re.match(r'^(\d+)', str(start_line))
+                end_match = re.match(r'^(\d+)', str(end_line))
+                if start_match and end_match:
+                    start_num = int(start_match.group(1))
+                    end_num = int(end_match.group(1))
+                    if start_num <= base_num <= end_num:
+                        # Alle Tokens dieses Blocks gehören zum Kommentar
+                        mask = [True] * len(tokens)
+            except:
+                pass
+    
+    # 3) Alternative Struktur: flow_blocks enthalten comment-items
+    for fb in block.get('flow_blocks', []) if isinstance(block.get('flow_blocks', []), list) else []:
+        if not isinstance(fb, dict):
+            continue
+        if fb.get('type') in ('comment',):
+            # akzeptiere auch direkte token_start/token_end in flow-block
+            start = fb.get('token_start')
+            end = fb.get('token_end')
+            if start is not None and end is not None:
+                start = max(0, int(start))
+                end = min(int(end), len(mask)-1)
+                for i in range(start, end + 1):
+                    if i < len(mask):
+                        mask[i] = True
+            else:
+                # Fallback: verwende start_line/end_line
+                start_line = fb.get('start_line')
+                end_line = fb.get('end_line')
+                if start_line is not None and end_line is not None and base_num is not None:
+                    try:
+                        start_num = int(re.match(r'^(\d+)', str(start_line)).group(1)) if re.match(r'^(\d+)', str(start_line)) else None
+                        end_num = int(re.match(r'^(\d+)', str(end_line)).group(1)) if re.match(r'^(\d+)', str(end_line)) else None
+                        if start_num is not None and end_num is not None:
+                            if start_num <= base_num <= end_num:
+                                mask = [True] * len(tokens)
+                    except:
+                        pass
+    
+    return mask
+
+# ======= Hilfen: Token-Verarbeitung =======
+def _join_tokens_to_line(tokens: list[str]) -> str:
+    """
+    Einfacher Zusammenbau: Tokens werden durch ein Leerzeichen verbunden.
+    Wir vermeiden komplexe Heuristiken; Renderer erwartet i.d.R. Token-Listen
+    oder Strings mit Leerzeichen.
+    """
+    if not tokens:
+        return ""
+    return " ".join(tokens)
+
+def _remove_tags_from_token(token: str,
+                           sup_keep: Optional[set[str]],
+                           sub_keep: Optional[set[str]],
+                           remove_all: bool) -> str:
+    """
+    Wrapper, benutzt die bereits vorhandene _remove_selected_tags-Funktion
+    und stellt sicher, dass bei zusammengesetzten Tags (A/B) die Normalisierung sauber läuft.
+    """
+    return _remove_selected_tags(token, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=remove_all)
+
 # ======= Hilfen: Farbentfernung (ohne '|' zu zerstören) =======
 def _strip_leading_bar_color_only(token: str) -> str:
     """
@@ -337,9 +459,12 @@ def _has_any_pos(token: str, pos_whitelist: set[str]) -> bool:
     return False
 
 
-def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict[str, Any]]:
+def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str, Any], disable_comment_bg: bool = False) -> List[Dict[str, Any]]:
     """
     Fügt Farbsymbole und (zukünftig) Platzierungen basierend auf der vollen Konfiguration hinzu.
+    
+    WICHTIG: Wenn disable_comment_bg=True, werden Hintergrundfarben in Kommentarbereichen unterdrückt.
+    Die Wort-/Tag-Farben (Symbole) bleiben jedoch erhalten.
     """
     if not config:
         return blocks
@@ -950,18 +1075,27 @@ def apply(blocks: List[Dict[str, Any]],
           tag_mode: TagMode,
           versmass_mode: VersmassMode = "NORMAL",
           # NEU (optional):
-          tag_config: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
+          tag_config: Optional[Dict[str, Any]] = None,
+          disable_comment_bg: bool = False) -> List[Dict[str, Any]]:
     """
     Vorverarbeitung der Blockliste. Gibt eine NEUE Liste zurück.
     - tag_config: Das neue, detaillierte Konfigurationsobjekt vom Frontend.
+    - disable_comment_bg: Wenn True, werden Hintergrundfarben in Kommentarbereichen unterdrückt.
     """
+    
+    # 0. Erstelle Kommentar-Masken für alle pair-Blöcke (VOR dem Hinzufügen der Farben)
+    if disable_comment_bg:
+        for block in blocks:
+            if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
+                mask = create_comment_token_mask_for_block(block, blocks)
+                block['comment_token_mask'] = mask
     
     # 1. Farben anwenden (wenn color_mode="COLOR")
     # Dieser Schritt fügt die Farbsymbole (#, +, §, $) basierend auf der tag_config hinzu.
     # Die Original-Tags bleiben für den nächsten Schritt erhalten.
     blocks_with_colors = blocks
     if color_mode == "COLOR" and tag_config:
-        blocks_with_colors = _apply_colors_and_placements(blocks, tag_config)
+        blocks_with_colors = _apply_colors_and_placements(blocks, tag_config, disable_comment_bg=disable_comment_bg)
 
     # 2. Tags filtern/entfernen (je nach tag_mode)
     # Dieser Schritt wird NACH dem Hinzufügen der Farben ausgeführt.
@@ -1071,10 +1205,13 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
         return result
     
     if 'gr_tokens' in block or 'de_tokens' in block:
+        new_gr_tokens = proc_tokens(block.get('gr_tokens', []))
+        new_de_tokens = proc_tokens(block.get('de_tokens', []))
+        
         result = {
             **block,
-            'gr_tokens': proc_tokens(block.get('gr_tokens', [])),
-            'de_tokens': proc_tokens(block.get('de_tokens', [])),
+            'gr_tokens': new_gr_tokens,
+            'de_tokens': new_de_tokens,
         }
         if 'en_tokens' in block:
             result['en_tokens'] = proc_tokens(block.get('en_tokens', []))
@@ -1087,6 +1224,14 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
                     result['de_tokens'][idx] = ''
                 if 'en_tokens' in result and idx < len(result['en_tokens']):
                     result['en_tokens'][idx] = ''
+        
+        # WICHTIG: Aktualisiere auch block['gr'] und block['de'], damit Renderer die bereinigten Strings verwenden
+        # Rekonstruiere die Linerpräsentation, die Renderer ggf. benutzen:
+        result['gr'] = _join_tokens_to_line(new_gr_tokens)
+        result['de'] = _join_tokens_to_line(new_de_tokens)
+        if 'en_tokens' in result:
+            result['en'] = _join_tokens_to_line(result.get('en_tokens', []))
+        
         return result
     return block
 
