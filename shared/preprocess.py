@@ -359,6 +359,37 @@ def _extract_tags(token: str) -> List[str]:
         return []
     return RE_PAREN_TAG.findall(token)
 
+# ======= Helper: Token-Tag-Parsing =======
+def parse_token_tags(token: str):
+    """
+    Return (base_token, tags_list).
+    Example: '+ἐτείας(Adj)(G)...' -> ('+ἐτείας...', ['Adj','G'])
+    """
+    if not token:
+        return '', []
+    tags = RE_PAREN_TAG.findall(token)
+    base = RE_PAREN_TAG.sub('', token)
+    return base, tags
+
+def remove_tags_from_token(token: str, tags_to_remove: set):
+    """
+    Remove only the (...) occurrences whose tag is in tags_to_remove.
+    """
+    if not token or not tags_to_remove:
+        return token
+    
+    def repl(m):
+        tag = m.group(1)
+        return '' if tag in tags_to_remove else m.group(0)
+    
+    return RE_PAREN_TAG.sub(repl, token)
+
+def remove_all_tags_from_token(token: str):
+    """Strip all parenthesized tags from token."""
+    if not token:
+        return token
+    return RE_PAREN_TAG.sub('', token)
+
 def _get_wortart_and_relevant_tags(token_tags: Set[str]) -> (Optional[str], Set[str]):
     """
     Analysiert die Tags eines Tokens und bestimmt die Wortart und die für die
@@ -557,11 +588,17 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
             new_de_tokens = list(de_tokens)
             new_en_tokens = list(en_tokens) if en_tokens else []  # NEU: Englische Tokens kopieren
 
+            # Initialize token_meta for storing original tags
+            token_meta = new_block.setdefault("token_meta", [{} for _ in gr_tokens])
+            
             for i, token in enumerate(gr_tokens):
                 if not token or any(c in token for c in COLOR_SYMBOLS):
                     continue
 
                 token_tags = set(_extract_tags(token))
+                # Store original tags before any modifications
+                token_meta[i].setdefault('orig_tags', list(token_tags))
+                
                 if not token_tags:
                     continue
                 
@@ -929,7 +966,7 @@ def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any], disab
     
     return blocks_with_hidden_trans
 
-def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict[str, Any]], hidden_tags_by_wortart: Optional[Dict[str, Set[str]]] = None) -> List[Dict[str, Any]]:
     """
     WICHTIG: Tags werden nur bei der entsprechenden Wortart entfernt!
     Wenn "nomen" ausgeblendet wird, werden Kasus-Tags nur bei Nomen entfernt, nicht bei Partizipien.
@@ -941,10 +978,16 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
     blocks_copy = copy.deepcopy(blocks)
     
     # Struktur: {wortart: {tags_to_hide}} - Tags werden nur bei der richtigen Wortart entfernt
-    hidden_tags_by_wortart: Dict[str, Set[str]] = {}
+    # Wenn hidden_tags_by_wortart bereits übergeben wurde, verwende es, sonst baue es aus tag_config
+    if hidden_tags_by_wortart is None:
+        hidden_tags_by_wortart = {}
+    else:
+        # Kopiere die übergebene Struktur (normalisiert)
+        hidden_tags_by_wortart = {k.lower(): set(v) for k, v in hidden_tags_by_wortart.items()}
+    
     translation_rules: Dict[str, Dict[str, Any]] = {}
     
-    if tag_config:
+    if tag_config and not hidden_tags_by_wortart:
         # If adapter already provided hidden_tags array, use it (globale hidden tags)
         global_hidden_tags = set()
         if isinstance(tag_config.get('hidden_tags'), (list, tuple, set)):
@@ -1004,6 +1047,13 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             for wortart in hidden_tags_by_wortart:
                 hidden_tags_by_wortart[wortart].update(global_hidden_tags)
     
+    # Normalisiere alle Keys zu lowercase für konsistente Lookups (falls noch nicht normalisiert)
+    if hidden_tags_by_wortart and not any(k != k.lower() for k in hidden_tags_by_wortart.keys()):
+        # Bereits normalisiert, nichts zu tun
+        pass
+    elif hidden_tags_by_wortart:
+        hidden_tags_by_wortart = {k.lower(): v for k, v in hidden_tags_by_wortart.items()}
+    
     if hidden_tags_by_wortart:
         # Normalisiere alle Keys zu lowercase für konsistente Lookups
         hidden_tags_by_wortart_normalized = {k.lower(): v for k, v in hidden_tags_by_wortart.items()}
@@ -1037,7 +1087,7 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             new_toks = []
             changed = 0
             
-            for tok in toks:
+            for tok_idx, tok in enumerate(toks):
                 if not tok:
                     new_toks.append(tok)
                     continue
@@ -1060,26 +1110,27 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         if wortart_key in hidden_tags_by_wortart:
                             tags_to_hide = hidden_tags_by_wortart[wortart_key]
                     
-                    # DEBUG: Nur erste 3 Tokens der ersten 2 Blöcke
-                    if bi < 2 and len(new_toks) < 3:
-                        print(f"DEBUG apply_tag_visibility: Block {bi}, Token {len(new_toks)}: wortart='{wortart}', hidden_tags_by_wortart keys={sorted(list(hidden_tags_by_wortart.keys()))}, tags_to_hide={sorted(list(tags_to_hide))[:5] if tags_to_hide else []}, original_tags={sorted(list(token_tags))[:5]}")
+                    # Use original tags from token_meta if available (set by apply_colors)
+                    token_meta_dict = block.get('token_meta', [])
+                    original_tags = token_meta_dict[tok_idx].get('orig_tags', list(token_tags)) if tok_idx < len(token_meta_dict) else list(token_tags)
                     
-                    if tags_to_hide:
-                        # Entferne nur die Tags, die für diese Wortart versteckt werden sollen
-                        # Verwende sup_keep/sub_keep basierend auf den zu versteckenden Tags
-                        sup_keep_for_token = set(SUP_TAGS) - (tags_to_hide & set(SUP_TAGS))
-                        sub_keep_for_token = set(SUB_TAGS) - (tags_to_hide & set(SUB_TAGS))
-                        
-                        cleaned = _remove_selected_tags(tok, sup_keep=sup_keep_for_token, sub_keep=sub_keep_for_token, remove_all=False)
+                    # Only remove tags that actually exist on this token (intersection)
+                    to_remove = set(original_tags).intersection(tags_to_hide) if tags_to_hide else set()
+                    
+                    # DEBUG: Nur erste Tokens der ersten 3 Blöcke
+                    if bi < 3 and tok_idx < 5:
+                        print(f"DEBUG apply_tag_visibility: Block {bi}, Token {tok_idx}: wortart='{wortart}', tags_to_hide={sorted(list(tags_to_hide))[:5] if tags_to_hide else []}, to_remove={sorted(list(to_remove))[:5] if to_remove else []}, original_tags={sorted(list(original_tags))[:5]}")
+                    
+                    if to_remove:
+                        # Remove only the tags that are actually present on this token
+                        cleaned = remove_tags_from_token(tok, to_remove)
                         if cleaned != tok:
                             changed += 1
-                            # DEBUG: Zeige was entfernt wurde
-                            if bi < 2 and len(new_toks) < 3:
-                                removed_tags = tags_to_hide & token_tags
-                                print(f"DEBUG apply_tag_visibility: Token geändert! Vorher: {tok[:60]}..., Nachher: {cleaned[:60]}..., Entfernt: {sorted(list(removed_tags))}")
+                            if bi < 3 and tok_idx < 5:
+                                print(f"DEBUG apply_tag_visibility: Token geändert! Vorher: {tok[:60]}..., Nachher: {cleaned[:60]}..., Entfernt: {sorted(list(to_remove))}")
                         new_toks.append(cleaned)
                     else:
-                        # Keine Tags für diese Wortart versteckt → Token unverändert
+                        # Keine Tags für diese Wortart versteckt oder keine Tags vorhanden → Token unverändert
                         new_toks.append(tok)
                 else:
                     # Für de_tokens/en_tokens: Keine Tag-Entfernung (haben keine Tags)
