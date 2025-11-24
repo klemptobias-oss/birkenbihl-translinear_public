@@ -1770,9 +1770,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
             block=flow_block  # NEU: Block-Objekt für comment_token_mask
         )
-                for idx, t in enumerate(tables):
-                    if idx > 0: t.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
-                return tables
+        for idx, t in enumerate(tables):
+            if idx > 0: t.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
+        return tables
 
     # NEU: Hilfsfunktion zum Rendern von Kommentaren aus block['comments']
     def render_block_comments(block, elements_list):

@@ -1009,6 +1009,8 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         hidden_tags_by_wortart_normalized = {k.lower(): v for k, v in hidden_tags_by_wortart.items()}
         hidden_tags_by_wortart = hidden_tags_by_wortart_normalized
         print(f"DEBUG apply_tag_visibility: hidden_tags_by_wortart: {dict((k, sorted(list(v))[:10]) for k, v in hidden_tags_by_wortart.items())}")
+    else:
+        print("DEBUG apply_tag_visibility: hidden_tags_by_wortart ist leer - keine Tags werden entfernt")
     
     # Apply removal on tokens for each pair/flow block
     for bi, block in enumerate(blocks_copy):
@@ -1057,6 +1059,10 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         wortart_key = wortart.lower()  # Normalisiere zu lowercase
                         if wortart_key in hidden_tags_by_wortart:
                             tags_to_hide = hidden_tags_by_wortart[wortart_key]
+                    
+                    # DEBUG: Nur erste 3 Tokens der ersten 2 Blöcke
+                    if tags_to_hide and bi < 2 and len(new_toks) < 3:
+                        print(f"DEBUG apply_tag_visibility: Block {bi}, Token {len(new_toks)}: wortart='{wortart}', tags_to_hide={sorted(list(tags_to_hide))[:5]}, original_tags={sorted(list(token_tags))[:5]}")
                     
                     if tags_to_hide:
                         # Entferne nur die Tags, die für diese Wortart versteckt werden sollen
