@@ -793,16 +793,31 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         sup_keep = SUP_TAGS
         sub_keep = SUB_TAGS
 
+    # DEBUG: Zeige, welche Tags behalten werden sollen
+    print(f"DEBUG apply_tag_visibility: Finale sup_keep={sorted(list(sup_keep))}, sub_keep={sorted(list(sub_keep))}")
+    
     processed_blocks = []
     for b in blocks_copy:
         if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
-            processed_blocks.append(_process_pair_block_for_tags(
+            processed_block = _process_pair_block_for_tags(
                 b,
                 sup_keep=sup_keep,
                 sub_keep=sub_keep,
                 remove_all=False,
                 translation_rules=translation_rules if translation_rules else None,
-            ))
+            )
+            # DEBUG: Prüfe, ob Tags entfernt wurden
+            if 'gr_tokens' in b and 'gr_tokens' in processed_block:
+                original_tokens = b.get('gr_tokens', [])
+                processed_tokens = processed_block.get('gr_tokens', [])
+                if original_tokens and processed_tokens:
+                    # Prüfe ersten Token
+                    if len(original_tokens) > 0 and len(processed_tokens) > 0:
+                        orig = original_tokens[0]
+                        proc = processed_tokens[0]
+                        if orig != proc:
+                            print(f"DEBUG: Token geändert: '{orig[:50]}...' → '{proc[:50]}...'")
+            processed_blocks.append(processed_block)
         else:
             # Kommentare und andere Block-Typen durchreichen
             processed_blocks.append(b)
@@ -982,10 +997,18 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
     else:
         hide_translation_flags = [False] * len(source_tokens)
     def proc_tokens(seq: Iterable[str]) -> List[str]:
-        return [
-            _remove_selected_tags(tok, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=remove_all)
-            for tok in (seq or [])
-        ]
+        result = []
+        for tok in (seq or []):
+            if tok:
+                original = tok
+                processed = _remove_selected_tags(tok, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=remove_all)
+                # DEBUG: Zeige, wenn ein Tag entfernt wurde
+                if original != processed and ('(' in original or ')' in original):
+                    print(f"DEBUG _process_pair_block_for_tags: Tag entfernt aus Token: '{original[:60]}...' → '{processed[:60]}...'")
+                result.append(processed)
+            else:
+                result.append(tok)
+        return result
     
     if 'gr_tokens' in block or 'de_tokens' in block:
         result = {
