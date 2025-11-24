@@ -262,6 +262,8 @@ def _remove_selected_tags(token: str,
         
         # NEU: Normalisiere Umlaute für den Vergleich
         tag_normalized = tag.replace('Prä', 'Prä')
+        # Zusätzliche Normalisierung für konsistenten Vergleich
+        tag_normalized = _normalize_tag_name(tag_normalized)
 
         # ZUERST: Prüfe ob das gesamte Tag direkt in den Listen enthalten ist
         is_sup_direct = tag_normalized in SUP_TAGS
@@ -290,24 +292,28 @@ def _remove_selected_tags(token: str,
         # Filtermodus: nur die gewünschten behalten
         if is_sup and sup_keep is not None:
             if is_sup_direct:
-                # Direktes Match: prüfe ob Tag in sup_keep
-                if tag_normalized in sup_keep:
+                # Direktes Match: prüfe ob Tag in sup_keep (auch normalisiert prüfen)
+                if tag_normalized in sup_keep or tag in sup_keep:
                     return m.group(0)  # behalten
+                # DEBUG: Tag wird entfernt
+                # print(f"DEBUG _remove_selected_tags: Entferne SUP-Tag '{tag}' (normalisiert: '{tag_normalized}') aus Token")
                 return ''  # raus
             else:
                 # Zusammengesetztes Tag: prüfe alle Teile
-                if all(p in sup_keep for p in parts):
+                if all((p in sup_keep or _normalize_tag_name(p) in sup_keep) for p in parts):
                     return m.group(0)  # behalten
                 return ''  # raus
         if is_sub and sub_keep is not None:
             if is_sub_direct:
-                # Direktes Match: prüfe ob Tag in sub_keep
-                if tag_normalized in sub_keep:
+                # Direktes Match: prüfe ob Tag in sub_keep (auch normalisiert prüfen)
+                if tag_normalized in sub_keep or tag in sub_keep:
                     return m.group(0)
+                # DEBUG: Tag wird entfernt
+                # print(f"DEBUG _remove_selected_tags: Entferne SUB-Tag '{tag}' (normalisiert: '{tag_normalized}') aus Token")
                 return ''
             else:
                 # Zusammengesetztes Tag: prüfe alle Teile
-                if all(p in sub_keep for p in parts):
+                if all((p in sub_keep or _normalize_tag_name(p) in sub_keep) for p in parts):
                     return m.group(0)
                 return ''
         # Falls keine Keep-Liste für die Kategorie übergeben wurde:
@@ -748,14 +754,27 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             if conf.get('hide'):
                 # DEBUG: Zeige, welche Tags entfernt werden
                 print(f"DEBUG apply_tag_visibility: Regel '{rule_id}' (normalisiert: '{normalized_rule_id}') hat hide=true, entferne Tags: {tags_for_rule}")
+                removed_from_sup = []
+                removed_from_sub = []
                 for tag in tags_for_rule:
                     # Normalisiere Tag-Namen für robusten Vergleich
                     normalized_tag = _normalize_tag_name(tag)
-                    sup_keep.discard(tag)
-                    sup_keep.discard(normalized_tag)
-                    sub_keep.discard(tag)
-                    sub_keep.discard(normalized_tag)
-                print(f"DEBUG: Nach Entfernung - sup_keep hat noch {len(sup_keep)} Tags, sub_keep hat noch {len(sub_keep)} Tags")
+                    # Entferne sowohl original als auch normalisiert
+                    if tag in sup_keep:
+                        sup_keep.discard(tag)
+                        removed_from_sup.append(tag)
+                    if normalized_tag in sup_keep:
+                        sup_keep.discard(normalized_tag)
+                        if normalized_tag != tag:
+                            removed_from_sup.append(normalized_tag)
+                    if tag in sub_keep:
+                        sub_keep.discard(tag)
+                        removed_from_sub.append(tag)
+                    if normalized_tag in sub_keep:
+                        sub_keep.discard(normalized_tag)
+                        if normalized_tag != tag:
+                            removed_from_sub.append(normalized_tag)
+                print(f"DEBUG: Nach Entfernung - sup_keep hat noch {len(sup_keep)} Tags (entfernt: {removed_from_sup}), sub_keep hat noch {len(sub_keep)} Tags (entfernt: {removed_from_sub})")
             else:
                 placement = conf.get('placement')
                 if placement == 'sup':
