@@ -266,6 +266,19 @@ def main():
         try:
             with open(args.tag_config, 'r', encoding='utf-8') as f:
                 tag_config = json.load(f)
+            # DEBUG: Zeige tag_config-Struktur
+            print("DEBUG prosa_pdf: geladene tag_config keys:", list(tag_config.keys())[:10])
+            print("DEBUG prosa_pdf: tag_colors count:", len(tag_config.get("tag_colors", {})))
+            print("DEBUG prosa_pdf: hidden_tags:", tag_config.get("hidden_tags"))
+            # Prüfe hide-Regeln
+            hide_count = sum(1 for conf in tag_config.values() if isinstance(conf, dict) and (conf.get('hide') == True or conf.get('hide') == 'hide' or conf.get('hide') == 'true'))
+            print(f"DEBUG prosa_pdf: {hide_count} Regeln mit hide=true gefunden")
+            # Zeige erste Regel mit hide=true
+            for rule_id, conf in list(tag_config.items())[:5]:
+                if isinstance(conf, dict):
+                    hide_val = conf.get('hide')
+                    if hide_val == True or hide_val == 'hide' or hide_val == 'true':
+                        print(f"DEBUG prosa_pdf: Regel '{rule_id}' hat hide={hide_val}")
             # Debug-Ausgabe nur für externe JSON-Dateien (nicht für Draft-Konfigurationen)
             if 'sup_tags' in tag_config and 'sub_tags' in tag_config:
                 print(f"Tag-Konfiguration geladen: {len(tag_config.get('sup_tags', []))} SUP, {len(tag_config.get('sub_tags', []))} SUB")

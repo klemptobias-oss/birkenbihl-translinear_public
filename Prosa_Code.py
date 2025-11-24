@@ -223,6 +223,24 @@ SUB_TAGS = DEFAULT_SUB_TAGS.copy()
 
 RE_TAG       = re.compile(r'\(([A-Za-z0-9/≈äöüßÄÖÜ]+)\)')
 RE_TAG_NAKED = re.compile(r'\([A-Za-z0-9/≈äöüßÄÖÜ]+\)')
+RE_TAG_STRIP = re.compile(r'\(\s*[A-Za-z0-9/≈äöüßÄÖÜ]+\s*\)')
+
+# ----------------------- Defensive token-helpers -----------------------
+def _strip_tags_from_token(tok: str) -> str:
+    """Entfernt alle '(TAG)'-Stücke aus einem Token (defensiv)."""
+    if not tok:
+        return tok
+    return RE_TAG_STRIP.sub('', tok)
+
+def _token_display_text_from_token(tok: str) -> str:
+    """
+    Baut die endgültige Textdarstellung für ein Token (ohne Tags).
+    Falls Token Farbmarker enthält (|+ oder führende #), belassen wir sie oder entfernen sie je Policy.
+    Für defensive Entfernung: entferne Tags und gebe HTML-escaped Text zurück.
+    """
+    cleaned = _strip_tags_from_token(tok)
+    # HTML-escape für sichere Darstellung
+    return html.escape(cleaned)
 
 # ----------------------- Tag-Placement Overrides (hoch/tief/aus) -----------------------
 # Globale Laufzeit-Overrides, z. B. {"Pt":"off","Aor":"sub","≈":"sup"}
@@ -1421,7 +1439,9 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         para_gap_en  = Paragraph('', token_de_style)  # NEU: Englische Zeile
 
         def cell_markup(t, is_gr):
-            mk = format_token_markup(t, reverse_mode=False, is_greek_row=is_gr,
+            # DEFENSIV: Entferne Tags aus Token, falls sie noch vorhanden sind
+            t_cleaned = _strip_tags_from_token(t) if t else t
+            mk = format_token_markup(t_cleaned, reverse_mode=False, is_greek_row=is_gr,
                                      base_font_size=(token_gr_style.fontSize if is_gr else token_de_style.fontSize))
             return f'<i>{mk}</i>' if italic and mk else mk
         

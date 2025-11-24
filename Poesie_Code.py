@@ -233,6 +233,23 @@ RE_TAG_FINDALL = re.compile(r'\(\s*([A-Za-z0-9/≈äöüßÄÖÜ]+)\s*\)')  # NE
 RE_TAG_STRIP   = re.compile(r'\(\s*[A-Za-z0-9/≈äöüßÄÖÜ]+\s*\)')  # NEU: 0-9 für Fu1, Fu2
 RE_LEADING_BAR_COLOR = re.compile(r'^\|\s*([+\-#§$])')  # |+ |# |- am Tokenanfang
 
+# ----------------------- Defensive token-helpers -----------------------
+def _strip_tags_from_token(tok: str) -> str:
+    """Entfernt alle '(TAG)'-Stücke aus einem Token (defensiv)."""
+    if not tok:
+        return tok
+    return RE_TAG_STRIP.sub('', tok)
+
+def _token_display_text_from_token(tok: str) -> str:
+    """
+    Baut die endgültige Textdarstellung für ein Token (ohne Tags).
+    Falls Token Farbmarker enthält (|+ oder führende #), belassen wir sie oder entfernen sie je Policy.
+    Für defensive Entfernung: entferne Tags und gebe HTML-escaped Text zurück.
+    """
+    cleaned = _strip_tags_from_token(tok)
+    # HTML-escape für sichere Darstellung
+    return html.escape(cleaned)
+
 # Sprecher-Tokens: [Χορ:] bzw. Λυσ:
 RE_SPK_BRACKET = re.compile(r'^\[[^\]]*:\]$')                         # [Χορ:]
 RE_SPEAKER_GR  = re.compile(r'^[\u0370-\u03FF\u1F00-\u1FFF]+:$')      # Λυσ:
@@ -1624,11 +1641,14 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 )
 
             # NICHT-Versmaß: Bars entfernen + pro Spaltenbreite weich zentrieren (Epos-Logik)
-            html_ = format_token_markup(tok, is_greek_row=is_gr, gr_bold=(gr_bold if is_gr else False), remove_bars_instead=True)
+            # DEFENSIV: Entferne Tags aus Token, falls sie noch vorhanden sind
+            tok_cleaned = _strip_tags_from_token(tok)
+            html_ = format_token_markup(tok_cleaned, is_greek_row=is_gr, gr_bold=(gr_bold if is_gr else False), remove_bars_instead=True)
             # Spaltenbreite dieser Zelle
             if is_gr and idx_in_slice is not None:
                 this_w = slice_w[idx_in_slice]
-                measured = visible_measure_token(tok, font=token_gr_style.fontName, size=token_gr_style.fontSize, cfg=eff_cfg, is_greek_row=True)
+                # Verwende bereinigten Token für Breitenmessung
+                measured = visible_measure_token(tok_cleaned, font=token_gr_style.fontName, size=token_gr_style.fontSize, cfg=eff_cfg, is_greek_row=True)
                 html_centered = center_word_in_width(html_, measured, this_w, token_gr_style.fontName, token_gr_style.fontSize)
                 return Paragraph(html_centered, token_gr_style)
             else:
