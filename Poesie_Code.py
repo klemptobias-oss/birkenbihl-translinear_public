@@ -1981,12 +1981,15 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             content = b.get('content', '')
             original_line = b.get('original_line', '')
             
+            # DEBUG: Kommentar wird verarbeitet (IMMER, auch wenn leer)
+            print(f"  → Kommentar verarbeiten (Poesie): type={t}, line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:80] if original_line else '(leer)'}")
+            
             # Fallback: Wenn content leer ist, versuche original_line zu verwenden
             if not content and original_line:
                 # Extrahiere content aus original_line
                 from Poesie_Code import extract_line_number
                 _, content = extract_line_number(original_line)
-            
+
             # Wenn immer noch kein content, verwende original_line direkt (ohne Zeilennummer)
             if not content and original_line:
                 # Entferne Zeilennummer am Anfang (z.B. "(3-7k) " oder "(24k) ")
@@ -1994,18 +1997,19 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 content = re.sub(r'^\(\d+k\)\s*', '', content)
                 content = content.strip()
             
+            # Fallback: Wenn line_num leer ist, extrahiere sie aus original_line
+            if not line_num and original_line:
+                from Poesie_Code import extract_line_number
+                line_num, _ = extract_line_number(original_line)
+            
             comment_color = b.get('comment_color', COMMENT_COLORS[0])  # Fallback zu rot
             comment_index = b.get('comment_index', 0)
             
-            # DEBUG: Prüfe, ob Kommentar-Daten vorhanden sind
-            if not line_num and not content:
-                print(f"  ⚠️ Kommentar ohne Daten übersprungen (Poesie): line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:50] if original_line else '(leer)'}")
+            # ROBUST: Prüfe, ob überhaupt Daten vorhanden sind (line_num, content oder original_line)
+            if not line_num and not content and not original_line:
+                print(f"  ⚠️ Kommentar komplett leer übersprungen (Poesie)")
                 i += 1
                 continue
-            
-            # DEBUG: Kommentar wird gerendert
-            if content:
-                print(f"  ✓ Kommentar wird gerendert (Poesie): line_num={line_num}, content={content[:50]}...")
             
             # Formatiere Zeilennummer in der Kommentar-Farbe (rot/blau/grün)
             # Konvertiere RGB-Tupel zu Hex für HTML

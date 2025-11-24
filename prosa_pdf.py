@@ -175,6 +175,53 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             out_name = p.with_name(p.stem + "_NoTrans" + p.suffix).name
         opts = PdfRenderOptions(strength=strength, color_mode=color_mode, tag_mode=tag_mode, versmass_mode="REMOVE_MARKERS")
         
+        # --- DEBUG-HILFSFUNKTIONEN ---
+        import re
+        RE_TAG_INLINE = re.compile(r'\([A-Za-z0-9/≈äöüßÄÖÜ]+\)')
+        
+        def _sample_tokens_with_tags(blocks, limit=20):
+            found = []
+            for b in blocks:
+                if not isinstance(b, dict):
+                    continue
+                for seqk in ('gr_tokens','de_tokens','en_tokens'):
+                    seq = b.get(seqk, [])
+                    for tok in (seq or []):
+                        if tok and RE_TAG_INLINE.search(tok):
+                            found.append(tok)
+                            if len(found) >= limit:
+                                return found
+            return found
+        
+        def _count_flow_comments(blocks):
+            total = 0
+            examples = []
+            for b in blocks:
+                if isinstance(b, dict):
+                    # Prüfe direkt auf type='comment'
+                    if b.get('type') == 'comment':
+                        total += 1
+                        if len(examples) < 3:
+                            examples.append(b.get('content') or b.get('text') or b.get('original_line') or '')
+                    # Prüfe auf flow-Blöcke mit Kommentaren
+                    if b.get('type') == 'flow':
+                        if 'flow_blocks' in b and isinstance(b['flow_blocks'], list):
+                            for fb in b['flow_blocks']:
+                                if isinstance(fb, dict) and fb.get('type') == 'comment':
+                                    total += 1
+                                    if len(examples) < 3:
+                                        examples.append(fb.get('content') or fb.get('text') or fb.get('original_line') or '')
+            return total, examples[:3]
+        
+        # Drucke kurze Zusammenfassung
+        sample = _sample_tokens_with_tags(final_blocks, limit=20)
+        print(f"DEBUG: verbleibende Tokens mit '(...)' (sollte LEER sein bei Tag-Entfernung): {len(sample)} gefunden")
+        if sample:
+            print(f"DEBUG: Beispiele: {sample[:5]}")
+        num_comments, comment_examples = _count_flow_comments(final_blocks)
+        print(f"DEBUG: Anzahl gefundener Kommentare in final_blocks = {num_comments}. Beispiele: {comment_examples}")
+        # --- Ende DEBUG ---
+        
         # WICHTIG: Die unified_api wird jetzt nur noch für das Rendering aufgerufen.
         # Die Vorverarbeitung ist hier abgeschlossen. `tag_config` wird trotzdem durchgereicht,
         # falls der Renderer selbst noch Konfigurationsdetails benötigt (z.B. für Platzierung).

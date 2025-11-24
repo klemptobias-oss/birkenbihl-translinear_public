@@ -1690,6 +1690,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     comment_count = sum(1 for b in flow_blocks if isinstance(b, dict) and b.get('type') == 'comment')
     if comment_count > 0:
         print(f"  → {comment_count} Kommentar(e) in flow_blocks gefunden")
+        # DEBUG: Zeige Details der ersten Kommentare
+        for i, b in enumerate(flow_blocks):
+            if isinstance(b, dict) and b.get('type') == 'comment' and i < 3:
+                print(f"  → Kommentar {i+1}: type={b.get('type')}, line_num={b.get('line_num')}, content={b.get('content', '')[:50] if b.get('content') else '(leer)'}, original_line={b.get('original_line', '')[:50] if b.get('original_line') else '(leer)'}")
 
     # Meta-Flag: ob irgendwo Sprecher auftraten
     any_speaker = False
@@ -1762,6 +1766,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             content = b.get('content', '')
             original_line = b.get('original_line', '')
             
+            # DEBUG: Kommentar wird verarbeitet (IMMER, auch wenn leer)
+            print(f"  → Kommentar verarbeiten: type={t}, line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:80] if original_line else '(leer)'}")
+            
             # Fallback: Wenn content leer ist, versuche original_line zu verwenden
             if not content and original_line:
                 # Extrahiere content aus original_line
@@ -1774,6 +1781,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 content = re.sub(r'^\(\d+k\)\s*', '', content)
                 content = content.strip()
             
+            # Fallback: Wenn line_num leer ist, extrahiere sie aus original_line
+            if not line_num and original_line:
+                line_num, _ = extract_line_number(original_line)
+            
             comment_color = b.get('comment_color', COMMENT_COLORS[0])  # Fallback zu rot
             comment_index = b.get('comment_index', 0)
             
@@ -1782,9 +1793,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 print(f"  ⚠️ Kommentar komplett leer übersprungen")
                 idx += 1
                 continue
-            
-            # DEBUG: Kommentar wird verarbeitet
-            print(f"  → Kommentar verarbeiten: line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:80] if original_line else '(leer)'}")
             
             # Formatiere Zeilennummer in der Kommentar-Farbe (rot/blau/grün)
             # Konvertiere RGB-Tupel zu Hex für HTML

@@ -716,12 +716,20 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
     Filtert Tags basierend auf den 'hide' und 'placement' Regeln in tag_config.
     Wenn tag_config=None ist, bleiben alle Tags erhalten.
     Gibt eine NEUE, tief kopierte Blockliste zurück.
+    
+    WICHTIG: Tags, die durch hide=true entfernt wurden, dürfen nicht wieder hinzugefügt werden,
+    es sei denn, eine spezifische Regel überschreibt dies explizit.
     """
     import copy
     blocks_copy = copy.deepcopy(blocks)
     
     sup_keep, sub_keep = set(), set()
+    # WICHTIG: Set von Tags, die durch hide=true entfernt wurden und nicht wieder hinzugefügt werden dürfen
+    # (außer durch spezifische Regeln, die Gruppen-Regeln überschreiben)
+    forbidden_tags_sup = set()
+    forbidden_tags_sub = set()
     translation_rules: Dict[str, Dict[str, Any]] = {}
+    
     if tag_config:
         # Starte mit allen bekannten Tags
         sup_keep = SUP_TAGS.copy()
@@ -737,19 +745,21 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             # Gruppen-Regel = keine Unterstriche nach dem Hauptteil (z.B. "verb", "nomen")
             # Spezifische Regel = mit Unterstrich (z.B. "verb_Pra", "nomen_N")
             if '_' in normalized_rule_id and normalized_rule_id.split('_', 1)[1]:
-                specific_rules.append((rule_id, conf))
+                specific_rules.append((rule_id, conf, normalized_rule_id))
             else:
-                group_rules.append((rule_id, conf))
+                group_rules.append((rule_id, conf, normalized_rule_id))
         
         # Verarbeite zuerst Gruppen-Regeln, dann spezifische Regeln
-        for rule_id, conf in group_rules + specific_rules:
-            normalized_rule_id = _normalize_rule_id(rule_id)
+        for rule_id, conf, normalized_rule_id in group_rules + specific_rules:
             tags_for_rule = _resolve_tags_for_rule(normalized_rule_id)
 
             if not tags_for_rule:
                 continue
 
             _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
+
+            # Prüfe, ob es eine Gruppen-Regel oder spezifische Regel ist
+            is_specific_rule = (rule_id, conf, normalized_rule_id) in specific_rules
 
             if conf.get('hide'):
                 # DEBUG: Zeige, welche Tags entfernt werden
@@ -763,36 +773,85 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                     if tag in sup_keep:
                         sup_keep.discard(tag)
                         removed_from_sup.append(tag)
+                        # Markiere als verboten (nur wenn es eine Gruppen-Regel ist)
+                        if not is_specific_rule:
+                            forbidden_tags_sup.add(tag)
+                            forbidden_tags_sup.add(normalized_tag)
                     if normalized_tag in sup_keep:
                         sup_keep.discard(normalized_tag)
                         if normalized_tag != tag:
                             removed_from_sup.append(normalized_tag)
+                            if not is_specific_rule:
+                                forbidden_tags_sup.add(normalized_tag)
                     if tag in sub_keep:
                         sub_keep.discard(tag)
                         removed_from_sub.append(tag)
+                        # Markiere als verboten (nur wenn es eine Gruppen-Regel ist)
+                        if not is_specific_rule:
+                            forbidden_tags_sub.add(tag)
+                            forbidden_tags_sub.add(normalized_tag)
                     if normalized_tag in sub_keep:
                         sub_keep.discard(normalized_tag)
                         if normalized_tag != tag:
                             removed_from_sub.append(normalized_tag)
+                            if not is_specific_rule:
+                                forbidden_tags_sub.add(normalized_tag)
                 print(f"DEBUG: Nach Entfernung - sup_keep hat noch {len(sup_keep)} Tags (entfernt: {removed_from_sup}), sub_keep hat noch {len(sub_keep)} Tags (entfernt: {removed_from_sub})")
             else:
                 # Tags hinzufügen, wenn hide=false (d.h. in diesem else-Zweig)
+                # ABER: Nur wenn sie nicht durch eine Gruppen-Regel verboten wurden
+                # (spezifische Regeln können Gruppen-Regeln überschreiben)
                 placement = conf.get('placement')
+                
                 if placement == 'sup':
                     for tag in tags_for_rule:
-                        sub_keep.discard(tag)
-                        if tag in SUP_TAGS:
-                            sup_keep.add(tag)
+                        normalized_tag = _normalize_tag_name(tag)
+                        # Erlaube Hinzufügen nur wenn:
+                        # 1. Es eine spezifische Regel ist (überschreibt Gruppen-Regeln), ODER
+                        # 2. Der Tag nicht verboten ist
+                        if is_specific_rule or (tag not in forbidden_tags_sup and normalized_tag not in forbidden_tags_sup):
+                            sub_keep.discard(tag)
+                            if tag in SUP_TAGS:
+                                sup_keep.add(tag)
+                                # Entferne aus verboten, wenn es eine spezifische Regel ist
+                                if is_specific_rule:
+                                    forbidden_tags_sup.discard(tag)
+                                    forbidden_tags_sup.discard(normalized_tag)
                 elif placement == 'sub':
                     for tag in tags_for_rule:
-                        sup_keep.discard(tag)
-                        if tag in SUB_TAGS:
-                            sub_keep.add(tag)
+                        normalized_tag = _normalize_tag_name(tag)
+                        # Erlaube Hinzufügen nur wenn:
+                        # 1. Es eine spezifische Regel ist (überschreibt Gruppen-Regeln), ODER
+                        # 2. Der Tag nicht verboten ist
+                        if is_specific_rule or (tag not in forbidden_tags_sub and normalized_tag not in forbidden_tags_sub):
+                            sup_keep.discard(tag)
+                            if tag in SUB_TAGS:
+                                sub_keep.add(tag)
+                                # Entferne aus verboten, wenn es eine spezifische Regel ist
+                                if is_specific_rule:
+                                    forbidden_tags_sub.discard(tag)
+                                    forbidden_tags_sub.discard(normalized_tag)
+                else:
+                    # Wenn placement=None, füge Tags hinzu (wenn nicht verboten)
+                    for tag in tags_for_rule:
+                        normalized_tag = _normalize_tag_name(tag)
+                        if is_specific_rule or (tag not in forbidden_tags_sup and normalized_tag not in forbidden_tags_sup):
+                            if tag in SUP_TAGS:
+                                sup_keep.add(tag)
+                                if is_specific_rule:
+                                    forbidden_tags_sup.discard(tag)
+                                    forbidden_tags_sup.discard(normalized_tag)
+                        if is_specific_rule or (tag not in forbidden_tags_sub and normalized_tag not in forbidden_tags_sub):
+                            if tag in SUB_TAGS:
+                                sub_keep.add(tag)
+                                if is_specific_rule:
+                                    forbidden_tags_sub.discard(tag)
+                                    forbidden_tags_sub.discard(normalized_tag)
 
     else:
         # Wenn keine Config da ist, alle bekannten Tags behalten
-        sup_keep = SUP_TAGS
-        sub_keep = SUB_TAGS
+        sup_keep = SUP_TAGS.copy()
+        sub_keep = SUB_TAGS.copy()
 
     # DEBUG: Zeige, welche Tags behalten werden sollen
     print(f"DEBUG apply_tag_visibility: Finale sup_keep={sorted(list(sup_keep))}, sub_keep={sorted(list(sub_keep))}")
