@@ -1858,15 +1858,21 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 else:
                     formatted_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>[Kommentar]</i></font>'
             
-            # Kommentar-Paragraph IMMER hinzufügen (auch wenn formatted_text immer noch leer ist)
+            # Kommentar-Paragraph IMMER hinzufügen
+            # ROBUST: Wenn formatted_text leer ist, verwende original_line komplett
+            if not formatted_text.strip() and original_line:
+                # Verwende original_line komplett als Fallback
+                formatted_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>{xml_escape(original_line)}</i></font>'
+                print(f"  ⚠️ Fallback: Verwende original_line komplett: {original_line[:80]}...")
+            
             if formatted_text.strip():
                 elements.append(Paragraph(formatted_text, comment_style))
-                print(f"  ✓✓✓ Kommentar-Paragraph HINZUGEFÜGT: line_num={line_num}, {formatted_text[:80]}...")
+                print(f"  ✓✓✓ Kommentar-Paragraph HINZUGEFÜGT: line_num={line_num}, content_length={len(content) if content else 0}, {formatted_text[:80]}...")
             else:
-                # Auch wenn formatted_text leer ist, erstelle einen minimalen Paragraph
-                minimal_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>[Kommentar]</i></font>'
+                # Letzter Fallback: Erstelle einen minimalen Paragraph
+                minimal_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>[Kommentar {line_num if line_num else "?"}]</i></font>'
                 elements.append(Paragraph(minimal_text, comment_style))
-                print(f"  ⚠️⚠️⚠️ Kommentar-Paragraph mit Platzhalter HINZUGEFÜGT - formatted_text war leer!")
+                print(f"  ⚠️⚠️⚠️ Kommentar-Paragraph mit Platzhalter HINZUGEFÜGT - formatted_text war leer! line_num={line_num}, original_line={original_line[:50] if original_line else 'leer'}")
             
             elements.append(Spacer(1, CONT_PAIR_GAP_MM * 1.2 * mm))  # Größerer Abstand nach Kommentar für bessere Trennung
             last_block_type = t

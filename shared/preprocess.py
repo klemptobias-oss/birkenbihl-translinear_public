@@ -296,7 +296,7 @@ def _remove_selected_tags(token: str,
                 if tag_normalized in sup_keep or tag in sup_keep:
                     return m.group(0)  # behalten
                 # DEBUG: Tag wird entfernt
-                # print(f"DEBUG _remove_selected_tags: Entferne SUP-Tag '{tag}' (normalisiert: '{tag_normalized}') aus Token")
+                print(f"DEBUG _remove_selected_tags: Entferne SUP-Tag '{tag}' (normalisiert: '{tag_normalized}') - tag in sup_keep: {tag in sup_keep}, normalized in sup_keep: {tag_normalized in sup_keep}, sup_keep={sorted(list(sup_keep))[:10]}...")
                 return ''  # raus
             else:
                 # Zusammengesetztes Tag: prüfe alle Teile
@@ -309,7 +309,7 @@ def _remove_selected_tags(token: str,
                 if tag_normalized in sub_keep or tag in sub_keep:
                     return m.group(0)
                 # DEBUG: Tag wird entfernt
-                # print(f"DEBUG _remove_selected_tags: Entferne SUB-Tag '{tag}' (normalisiert: '{tag_normalized}') aus Token")
+                print(f"DEBUG _remove_selected_tags: Entferne SUB-Tag '{tag}' (normalisiert: '{tag_normalized}') - tag in sub_keep: {tag in sub_keep}, normalized in sub_keep: {tag_normalized in sub_keep}, sub_keep={sorted(list(sub_keep))[:10]}...")
                 return ''
             else:
                 # Zusammengesetztes Tag: prüfe alle Teile
