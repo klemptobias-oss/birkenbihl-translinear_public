@@ -201,21 +201,31 @@ def _process_one_input(infile: str,
         print(f"DEBUG poesie_pdf: tag_config keys: {list(final_tag_config.keys())[:10]}")
         hide_count = sum(1 for conf in final_tag_config.values() if isinstance(conf, dict) and (conf.get('hide') == True or conf.get('hide') == 'hide' or conf.get('hide') == 'true'))
         print(f"DEBUG poesie_pdf: {hide_count} Regeln mit hide=true gefunden")
-        # Zeige erste Regel mit hide=true
-        for rule_id, conf in list(final_tag_config.items())[:5]:
-            if isinstance(conf, dict):
-                hide_val = conf.get('hide')
-                if hide_val == True or hide_val == 'hide' or hide_val == 'true':
-                    print(f"DEBUG poesie_pdf: Regel '{rule_id}' hat hide={hide_val}")
 
-    # WICHTIG: Reihenfolge ändern - apply_tag_visibility VOR apply_colors
-    # Damit Layout/Farbzuweisung auf den finalen sichtbaren Tags basiert
+    # 0) DISCOVER inline/flow comments and attach them to blocks (VOR apply_colors)
+    try:
+        preprocess.discover_and_attach_comments(blocks)
+    except Exception as e:
+        print(f"DEBUG: discover_and_attach_comments error: {e}")
+    
+    # Ensure every block has comment_token_mask
+    for b in blocks:
+        if not isinstance(b, dict):
+            continue
+        if b.get('type') == 'pair':
+            if 'comment_token_mask' not in b:
+                b['comment_token_mask'] = [False] * len(b.get('gr_tokens', []))
+
+    # WICHTIG: Reihenfolge - Farben ZUERST (basierend auf ORIGINALEN Tags), dann Tags entfernen
     
     for strength, color_mode, tag_mode, meter_on in itertools.product(strengths, colors, tags, meters):
         
-        # Schritt 1: Tag-Sichtbarkeit zuerst anwenden (damit Layout/Farbzuweisung auf den finalen sichtbaren Tags basiert)
+        # Schritt 1: Farbzuweisung BASIEREND AUF DEN ORIGINALEN TAGS (damit Wortarten korrekt erkannt werden)
+        blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=False)
+        
+        # Schritt 2: Jetzt erst Tag-Sichtbarkeit anwenden (Tags entfernen, aber Farben bleiben erhalten)
         if tag_mode == "TAGS":
-            blocks_after_visibility = preprocess.apply_tag_visibility(blocks, final_tag_config)
+            blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config)
             # DEBUG: Prüfe, ob Tags wirklich entfernt wurden
             if blocks_after_visibility:
                 sample_block = next((b for b in blocks_after_visibility if isinstance(b, dict) and b.get('type') in ('pair', 'flow')), None)
@@ -223,10 +233,7 @@ def _process_one_input(infile: str,
                     sample_tokens = sample_block.get('gr_tokens', [])[:3]
                     print(f"DEBUG poesie_pdf: Nach apply_tag_visibility - erste 3 gr_tokens: {sample_tokens}")
         else: # NO_TAGS
-            blocks_after_visibility = preprocess.remove_all_tags(blocks, final_tag_config)
-        
-        # Schritt 2: Jetzt erst die Farbzuweisung (Hintergrund/Marker) auf Basis der tatsächlich sichtbaren Tags
-        blocks_with_colors = preprocess.apply_colors(blocks_after_visibility, final_tag_config, disable_comment_bg=False)
+            blocks_after_visibility = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
 
         # Schritt 3: Entferne leere Übersetzungszeilen (wenn alle Übersetzungen ausgeblendet)
         blocks_no_empty_trans = preprocess.remove_empty_translation_lines(blocks_with_colors)

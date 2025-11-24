@@ -2305,6 +2305,27 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             # WICHTIG: Alle Tabellen eines Paares/Triplikats zusammenhalten
             # (verhindert, dass GR/DE/EN über Seitenumbrüche getrennt werden)
             elements.append(KeepTogether(tables))
+            
+            # NEU: Kommentare aus block['comments'] rendern (nach dem pair-Block)
+            if b.get('comments'):
+                for cm in b.get('comments', []):
+                    txt = cm.get('text') or cm.get('comment') or cm.get('body') or ""
+                    if txt:
+                        # Optional: Zeige den Bereich (z.B. (2-4))
+                        rng = cm.get('pair_range')
+                        if rng:
+                            display = f"({rng[0]}-{rng[1]}k) {txt}"
+                        else:
+                            display = txt
+                        print(f"✓✓✓ Kommentar verarbeiten (Poesie): {display[:80]}...")
+                        # Kommentar-Style: klein, grau, kursiv
+                        comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
+                            fontName='DejaVu', fontSize=7,
+                            leading=7 * 1.3,
+                            alignment=TA_LEFT, leftIndent=5*MM,
+                            spaceBefore=1, spaceAfter=2,
+                            textColor=colors.grey, italic=True)
+                        elements.append(Paragraph(html.escape(display), comment_style_simple))
 
             # Abstand nach jedem Textblock hinzufügen
             # Finde den nächsten relevanten Block (überspringe 'blank' und 'title_brace')

@@ -1770,9 +1770,33 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
             block=flow_block  # NEU: Block-Objekt für comment_token_mask
         )
-        for idx, t in enumerate(tables):
-            if idx > 0: t.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
-        return tables
+                for idx, t in enumerate(tables):
+                    if idx > 0: t.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
+                return tables
+
+    # NEU: Hilfsfunktion zum Rendern von Kommentaren aus block['comments']
+    def render_block_comments(block, elements_list):
+        """Rendert Kommentare aus block['comments'] als Paragraphen"""
+        cms = block.get('comments') or []
+        for cm in cms:
+            txt = cm.get('text') or cm.get('comment') or cm.get('body') or ""
+            if not txt:
+                continue
+            # Optional: Zeige den Bereich (z.B. (2-4))
+            rng = cm.get('pair_range')
+            if rng:
+                display = f"({rng[0]}-{rng[1]}k) {txt}"
+            else:
+                display = txt
+            print(f"✓✓✓ Kommentar verarbeiten (Prosa): {display[:80]}...")
+            # Kommentar-Style: klein, grau, kursiv
+            comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
+                fontName='DejaVu', fontSize=7,
+                leading=7 * 1.3,
+                alignment=TA_LEFT, leftIndent=5*mm,
+                spaceBefore=1, spaceAfter=2,
+                textColor=colors.grey, italic=True)
+            elements_list.append(Paragraph(html.escape(display), comment_style_simple))
 
     elements, idx = [], 0
     last_block_type = None  # Speichert den Typ des letzten verarbeiteten Blocks
@@ -2260,6 +2284,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             pair_tables = build_flow_tables(pseudo_flow)
             if pair_tables:
                 elements.append(KeepTogether(pair_tables))
+            
+            # NEU: Kommentare aus block['comments'] rendern (nach dem pair-Block)
+            render_block_comments(b, elements)
             
             idx += 1; continue
         

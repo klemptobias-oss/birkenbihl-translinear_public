@@ -163,6 +163,124 @@ def create_comment_token_mask_for_block(block: Dict[str, Any], all_blocks: Optio
     # fallback: if no structured ranges present, leave mask all False
     return mask
 
+# ======= COMMENT EXTRACTION & MASKING HELPERS =======
+# Regex für Inline-Kommentare: "(2-4k) text..." oder "(5121k) text..."
+_RE_INLINE_COMMENT = re.compile(r'^\s*\(?\s*(\d+)(?:-(\d+))?\s*k\)\s*(.*)', flags=re.I)
+
+def extract_inline_comments_from_blocks(blocks: List[Dict[str,Any]]) -> List[Dict[str,Any]]:
+    """
+    Scans blocks for inline comment lines of the form "(2-4k) text..." or "(5121k) text..."
+    Returns a list of dicts: {'start_pair': int, 'end_pair': int, 'text': str, 'origin_block_index': i}
+    Also removes the comment-line text from the block's 'gr' (so it doesn't render as normal text).
+    """
+    comments = []
+    for i, block in enumerate(blocks):
+        if not isinstance(block, dict):
+            continue
+        # look for inline comment in block['gr'] (string) or first token
+        gr = block.get('gr') or ""
+        m = _RE_INLINE_COMMENT.match(gr.strip())
+        if m:
+            s = int(m.group(1))
+            e = int(m.group(2) or m.group(1))
+            text = m.group(3).strip()
+            comments.append({'start_pair': s, 'end_pair': e, 'text': text, 'origin_block_index': i})
+            # remove the comment line from the block's gr so it won't render as normal text
+            remainder = _RE_INLINE_COMMENT.sub('', gr, count=1).strip()
+            block['gr'] = remainder
+            # also clear gr_tokens if they correspond to the comment line (best effort)
+            if block.get('gr_tokens') and len(block.get('gr_tokens')) <= 3:
+                # probably the whole block was comment; empty tokens
+                block['gr_tokens'] = []
+    return comments
+
+def assign_comment_ranges_to_blocks(blocks: List[Dict[str,Any]], inline_comments: List[Dict[str,Any]]) -> None:
+    """
+    Given inline_comments with pair numbers, map them to the actual pair blocks.
+    For each comment, we attach it to the *last* block in the covered range (so it appears after the range).
+    Also we set/merge comment_token_mask for every block in the range.
+    """
+    # First assign pair_index to each pair block (1-based sequential)
+    pair_index = 1
+    for b in blocks:
+        if not isinstance(b, dict):
+            continue
+        if b.get('type') == 'pair':
+            b['_pair_index'] = pair_index
+            pair_index += 1
+    
+    # Ensure blocks have gr_tokens lists
+    for b in blocks:
+        if not isinstance(b, dict):
+            continue
+        if 'gr_tokens' not in b:
+            b['gr_tokens'] = []
+        # init mask if absent
+        if 'comment_token_mask' not in b:
+            b['comment_token_mask'] = [False] * max(1, len(b.get('gr_tokens', [])))
+    
+    # For each extracted inline comment, attach to appropriate block
+    for cm in inline_comments:
+        s = cm['start_pair']
+        e = cm['end_pair']
+        txt = cm['text']
+        # find block with pair_index == e (last block in range). fallback: nearest lower index
+        target = None
+        for b in blocks:
+            if isinstance(b, dict) and b.get('_pair_index') == e:
+                target = b
+                break
+        if target is None:
+            # fallback: find last block with pair_index <= e
+            for b in reversed(blocks):
+                if isinstance(b, dict) and isinstance(b.get('_pair_index'), int) and b.get('_pair_index') <= e:
+                    target = b
+                    break
+        if target is None:
+            # give up for this comment
+            continue
+        
+        comment_obj = {
+            'text': txt,
+            'pair_range': (s, e),
+            # we will later set token_start/token_end for the target block; default mark whole block
+            'token_start': 0,
+            'token_end': max(0, len(target.get('gr_tokens', [])) - 1)
+        }
+        target.setdefault('comments', []).append(comment_obj)
+        
+        # Now set mask for all blocks in s..e
+        for b in blocks:
+            pi = b.get('_pair_index')
+            if isinstance(pi, int) and s <= pi <= e:
+                # ensure mask length equals token count
+                toklen = len(b.get('gr_tokens', []))
+                if toklen == 0:
+                    b['comment_token_mask'] = []
+                    continue
+                old = b.get('comment_token_mask') or [False] * toklen
+                if len(old) != toklen:
+                    # resize preserving old flags
+                    new_mask = [False] * toklen
+                    for i in range(min(len(old), toklen)):
+                        new_mask[i] = old[i]
+                    old = new_mask
+                # mark entire token range as True (comment)
+                for i in range(toklen):
+                    old[i] = True
+                b['comment_token_mask'] = old
+
+def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
+    """
+    Convenience: extract inline comment lines and attach them to pair blocks,
+    also ensure comment_token_mask is set for affected blocks.
+    Should be run early in the pipeline (before apply_colors).
+    """
+    inline_comments = extract_inline_comments_from_blocks(blocks)
+    assign_comment_ranges_to_blocks(blocks, inline_comments)
+    if inline_comments:
+        print(f"DEBUG discover_and_attach_comments: {len(inline_comments)} Kommentar(e) gefunden und zugeordnet")
+
 # ======= Hilfen: Token-Verarbeitung =======
 def _join_tokens_to_line(tokens: list[str]) -> str:
     """
@@ -354,8 +472,7 @@ def _remove_selected_tags(token: str,
                 # Direktes Match: prüfe ob Tag in sup_keep (auch normalisiert prüfen)
                 if tag_normalized in sup_keep or tag in sup_keep:
                     return m.group(0)  # behalten
-                # DEBUG: Tag wird entfernt
-                print(f"DEBUG _remove_selected_tags: Entferne SUP-Tag '{tag}' (normalisiert: '{tag_normalized}') - tag in sup_keep: {tag in sup_keep}, normalized in sup_keep: {tag_normalized in sup_keep}, sup_keep={sorted(list(sup_keep))[:10]}...")
+                # DEBUG: Nur noch zusammenfassend, nicht pro Tag
                 return ''  # raus
             else:
                 # Zusammengesetztes Tag: prüfe alle Teile
@@ -777,24 +894,28 @@ def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any], disab
 
 def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
-    Robust: expandiert Gruppen-Regeln in konkrete hidden_tags, berechnet sup_keep/sub_keep,
+    WICHTIG: Tags werden nur bei der entsprechenden Wortart entfernt!
+    Wenn "nomen" ausgeblendet wird, werden Kasus-Tags nur bei Nomen entfernt, nicht bei Partizipien.
+    
+    Robust: expandiert Gruppen-Regeln in konkrete hidden_tags pro Wortart, berechnet sup_keep/sub_keep pro Token,
     entfernt die nicht gewünschten Tags aus ALLEN token-Feldern und schreibt gr/de strings zurück.
     """
     import copy
     blocks_copy = copy.deepcopy(blocks)
     
-    # Build hidden_tags set from tag_config rules (support group rules like 'nomen')
-    hidden_tags: Set[str] = set()
+    # Struktur: {wortart: {tags_to_hide}} - Tags werden nur bei der richtigen Wortart entfernt
+    hidden_tags_by_wortart: Dict[str, Set[str]] = {}
     translation_rules: Dict[str, Dict[str, Any]] = {}
     
     if tag_config:
-        # If adapter already provided hidden_tags array, use it
+        # If adapter already provided hidden_tags array, use it (globale hidden tags)
+        global_hidden_tags = set()
         if isinstance(tag_config.get('hidden_tags'), (list, tuple, set)):
             for t in tag_config.get('hidden_tags', []):
                 if isinstance(t, str) and t:
-                    hidden_tags.add(t)
+                    global_hidden_tags.add(t)
         
-        # Otherwise: collect from rules with hide=true
+        # Collect from rules with hide=true
         for rule_id, conf in (tag_config.items() if isinstance(tag_config, dict) else []):
             if not isinstance(conf, dict):
                 continue
@@ -806,39 +927,65 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             hide_val = conf.get('hide')
             if hide_val in (True, 'true', 'True', 'hide', 'Hide'):
                 rid = rule_id.strip()
+                
+                # Bestimme Wortart und Tags
                 if '_' in rid:
-                    # e.g. 'nomen_N' -> add 'N' if it's a known tag
-                    last = rid.split('_')[-1]
-                    if last in SUP_TAGS or last in SUB_TAGS:
-                        hidden_tags.add(last)
+                    # Spezifische Regel: z.B. 'nomen_N' -> wortart='nomen', tag='N'
+                    parts = rid.split('_', 1)
+                    wortart_key = parts[0].lower()
+                    tag = parts[1]
+                    
+                    # Normalisiere wortart_key
+                    if wortart_key in RULE_TAG_MAP:
+                        wortart = wortart_key
+                    elif wortart_key in HIERARCHIE:
+                        wortart = wortart_key
                     else:
-                        # try mapping rule->tags if present
-                        mapped = RULE_TAG_MAP.get(rid) or HIERARCHIE.get(rid) or []
-                        for t in mapped:
-                            hidden_tags.add(t)
+                        continue
+                    
+                    if tag in SUP_TAGS or tag in SUB_TAGS:
+                        if wortart not in hidden_tags_by_wortart:
+                            hidden_tags_by_wortart[wortart] = set()
+                        hidden_tags_by_wortart[wortart].add(tag)
                 else:
+                    # Gruppen-Regel: z.B. 'nomen' -> alle Kasus-Tags für Nomen
                     key = rid.lower()
                     mapped = RULE_TAG_MAP.get(key) or HIERARCHIE.get(key)
                     if mapped:
+                        if key not in hidden_tags_by_wortart:
+                            hidden_tags_by_wortart[key] = set()
                         for t in mapped:
-                            hidden_tags.add(t)
+                            hidden_tags_by_wortart[key].add(t)
                     else:
-                        # maybe it's a concrete tag already
+                        # Vielleicht ein konkretes Tag direkt
                         if rid in SUP_TAGS or rid in SUB_TAGS:
-                            hidden_tags.add(rid)
+                            global_hidden_tags.add(rid)
+        
+        # Füge globale hidden tags zu allen Wortarten hinzu (falls nötig)
+        if global_hidden_tags:
+            for wortart in hidden_tags_by_wortart:
+                hidden_tags_by_wortart[wortart].update(global_hidden_tags)
     
-    # Build keep sets: Start with ALL tags, then remove hidden ones
-    sup_keep = set(SUP_TAGS) - (hidden_tags & set(SUP_TAGS))
-    sub_keep = set(SUB_TAGS) - (hidden_tags & set(SUB_TAGS))
-    
-    print(f"DEBUG apply_tag_visibility: computed hidden_tags sample: {sorted(list(hidden_tags))[:40]}")
-    print(f"DEBUG apply_tag_visibility: initial sup_keep_len={len(sup_keep)}, sub_keep_len={len(sub_keep)}")
+    if hidden_tags_by_wortart:
+        print(f"DEBUG apply_tag_visibility: hidden_tags_by_wortart: {dict((k, sorted(list(v))[:10]) for k, v in hidden_tags_by_wortart.items())}")
     
     # Apply removal on tokens for each pair/flow block
     for bi, block in enumerate(blocks_copy):
         if not isinstance(block, dict) or block.get('type') not in ('pair','flow'):
             continue
         
+        # WICHTIG: Übersetzungs-Ausblendung ZUERST (bevor Tags entfernt werden)
+        # Verwende ORIGINAL-Tokens (mit allen Tags) für die Erkennung
+        if translation_rules:
+            gr_tokens_original = block.get('gr_tokens', [])
+            for idx, gr_token in enumerate(gr_tokens_original):
+                if _token_should_hide_translation(gr_token, translation_rules):
+                    if idx < len(block.get('de_tokens', [])):
+                        block['de_tokens'][idx] = ''
+                    if idx < len(block.get('en_tokens', [])):
+                        block['en_tokens'][idx] = ''
+        
+        # DANACH: Tag-Entfernung (wortart-spezifisch)
         for tok_field in ('gr_tokens','de_tokens','en_tokens'):
             toks = block.get(tok_field)
             if not isinstance(toks, list):
@@ -846,14 +993,47 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             
             new_toks = []
             changed = 0
+            
             for tok in toks:
-                cleaned = _remove_selected_tags(tok, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=False)
-                if cleaned != tok:
-                    changed += 1
-                new_toks.append(cleaned)
+                if not tok:
+                    new_toks.append(tok)
+                    continue
+                
+                # Für gr_tokens: Bestimme Wortart und entferne nur tags dieser Wortart
+                if tok_field == 'gr_tokens' and hidden_tags_by_wortart:
+                    # Extrahiere Tags aus dem Token
+                    token_tags = set(_extract_tags(tok))
+                    if not token_tags:
+                        new_toks.append(tok)
+                        continue
+                    
+                    # Bestimme Wortart (verwende ORIGINAL-Tags vor Entfernung)
+                    wortart, _ = _get_wortart_and_relevant_tags(token_tags)
+                    
+                    # Prüfe, ob Tags für diese Wortart entfernt werden sollen
+                    tags_to_hide = set()
+                    if wortart and wortart in hidden_tags_by_wortart:
+                        tags_to_hide = hidden_tags_by_wortart[wortart]
+                    
+                    if tags_to_hide:
+                        # Entferne nur die Tags, die für diese Wortart versteckt werden sollen
+                        # Verwende sup_keep/sub_keep basierend auf den zu versteckenden Tags
+                        sup_keep_for_token = set(SUP_TAGS) - (tags_to_hide & set(SUP_TAGS))
+                        sub_keep_for_token = set(SUB_TAGS) - (tags_to_hide & set(SUB_TAGS))
+                        
+                        cleaned = _remove_selected_tags(tok, sup_keep=sup_keep_for_token, sub_keep=sub_keep_for_token, remove_all=False)
+                        if cleaned != tok:
+                            changed += 1
+                        new_toks.append(cleaned)
+                    else:
+                        # Keine Tags für diese Wortart versteckt → Token unverändert
+                        new_toks.append(tok)
+                else:
+                    # Für de_tokens/en_tokens: Keine Tag-Entfernung (haben keine Tags)
+                    new_toks.append(tok)
             
             block[tok_field] = new_toks
-            if changed:
+            if changed > 0 and bi < 3:  # Nur erste 3 Blöcke zeigen, um Logs kürzer zu halten
                 print(f"DEBUG apply_tag_visibility: Block {bi} field {tok_field}: {changed} token(s) changed")
         
         # Rebuild string fields if renderer may use them
@@ -863,18 +1043,9 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             block['de'] = _join_tokens_to_line(block.get('de_tokens', []))
         if 'en_tokens' in block:
             block['en'] = _join_tokens_to_line(block.get('en_tokens', []))
-        
-        # Apply translation hiding
-        if translation_rules:
-            gr_tokens = block.get('gr_tokens', [])
-            for idx, gr_token in enumerate(gr_tokens):
-                if _token_should_hide_translation(gr_token, translation_rules):
-                    if idx < len(block.get('de_tokens', [])):
-                        block['de_tokens'][idx] = ''
-                    if idx < len(block.get('en_tokens', [])):
-                        block['en_tokens'][idx] = ''
     
-    print(f"DEBUG apply_tag_visibility: Finale sup_keep sample: {sorted(list(sup_keep))[:30]}")
+    if hidden_tags_by_wortart:
+        print(f"DEBUG apply_tag_visibility: Tag-Entfernung abgeschlossen (hidden_tags_by_wortart: {len(hidden_tags_by_wortart)} Wortart(en))")
     return blocks_copy
 
 def remove_all_tags(blocks: List[Dict[str, Any]],
