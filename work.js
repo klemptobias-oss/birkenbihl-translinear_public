@@ -1672,6 +1672,16 @@ function handleTableChange(event) {
       return;
     }
 
+    // WICHTIG: Für "hide" immer true/false setzen, nicht den String-Wert
+    if (updateType === "hide") {
+      if (isChecked) {
+        currentConfig.hide = true;  // Immer true, nicht "hide"
+      } else {
+        delete currentConfig.hide;
+      }
+      return;
+    }
+
     if (isChecked) {
       currentConfig[updateType] = updateValue;
     } else {

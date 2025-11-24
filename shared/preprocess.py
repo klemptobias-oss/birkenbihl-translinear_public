@@ -886,7 +886,11 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             # Prüfe, ob es eine Gruppen-Regel oder spezifische Regel ist
             is_specific_rule = (rule_id, conf, normalized_rule_id) in specific_rules
 
-            if conf.get('hide'):
+            # ROBUST: Prüfe hide (akzeptiere sowohl True als auch String "hide" für Kompatibilität)
+            hide_value = conf.get('hide')
+            should_hide = hide_value == True or hide_value == "hide" or hide_value == "true"
+            
+            if should_hide:
                 # DEBUG: Zeige, welche Tags entfernt werden
                 print(f"DEBUG apply_tag_visibility: Regel '{rule_id}' (normalisiert: '{normalized_rule_id}') hat hide=true, entferne Tags: {tags_for_rule}")
                 removed_from_sup = []
@@ -1117,7 +1121,11 @@ def apply(blocks: List[Dict[str, Any]],
             if not tags_for_rule:
                 continue
 
-            if conf.get('hide'):
+            # ROBUST: Prüfe hide (akzeptiere sowohl True als auch String "hide" für Kompatibilität)
+            hide_value = conf.get('hide')
+            should_hide = hide_value == True or hide_value == "hide" or hide_value == "true"
+            
+            if should_hide:
                 for tag in tags_for_rule:
                     if tag in SUP_TAGS:
                         sup_keep.discard(tag)
@@ -1492,8 +1500,16 @@ def apply_from_payload(blocks: List[Dict[str, Any]], payload: Dict[str, Any], *,
     # Wenn alle Tags auf "hide" stehen, ist es NO_TAGS, ansonsten TAGS
     # Die Detail-Logik, welche Tags gezeigt werden, steckt jetzt in `apply`
     all_hidden = True
-    if not tag_config or not all(conf.get('hide', False) for conf in tag_config.values()):
+    if not tag_config:
         all_hidden = False
+    else:
+        # ROBUST: Prüfe hide (akzeptiere sowohl True als auch String "hide" für Kompatibilität)
+        for conf in tag_config.values():
+            hide_value = conf.get('hide')
+            should_hide = hide_value == True or hide_value == "hide" or hide_value == "true"
+            if not should_hide:
+                all_hidden = False
+                break
         
     tag_mode = "NO_TAGS" if all_hidden else "TAGS"
     
