@@ -981,9 +981,10 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         continue
                     
                     if tag in SUP_TAGS or tag in SUB_TAGS:
-                        if wortart not in hidden_tags_by_wortart:
-                            hidden_tags_by_wortart[wortart] = set()
-                        hidden_tags_by_wortart[wortart].add(tag)
+                        # Verwende wortart_key (lowercase) für konsistente Keys
+                        if wortart_key not in hidden_tags_by_wortart:
+                            hidden_tags_by_wortart[wortart_key] = set()
+                        hidden_tags_by_wortart[wortart_key].add(tag)
                 else:
                     # Gruppen-Regel: z.B. 'nomen' -> alle Kasus-Tags für Nomen
                     key = rid.lower()

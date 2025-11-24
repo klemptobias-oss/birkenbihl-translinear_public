@@ -224,6 +224,7 @@ def _process_one_input(infile: str,
         blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=False)
         
         # Schritt 2: Jetzt erst Tag-Sichtbarkeit anwenden (Tags entfernen, aber Farben bleiben erhalten)
+        # WICHTIG: apply_tag_visibility macht auch Übersetzungs-Ausblendung!
         if tag_mode == "TAGS":
             blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config)
             # DEBUG: Prüfe, ob Tags wirklich entfernt wurden
@@ -236,7 +237,8 @@ def _process_one_input(infile: str,
             blocks_after_visibility = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
 
         # Schritt 3: Entferne leere Übersetzungszeilen (wenn alle Übersetzungen ausgeblendet)
-        blocks_no_empty_trans = preprocess.remove_empty_translation_lines(blocks_with_colors)
+        # WICHTIG: Verwende blocks_after_visibility, nicht blocks_with_colors!
+        blocks_no_empty_trans = preprocess.remove_empty_translation_lines(blocks_after_visibility)
         
         # Prüfe, ob alle Übersetzungen ausgeblendet sind (für _NoTrans Tag)
         has_no_translations = preprocess.all_blocks_have_no_translations(blocks_no_empty_trans)
