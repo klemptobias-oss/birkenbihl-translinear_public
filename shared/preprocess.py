@@ -1163,8 +1163,21 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                 if cleaned != tok:
                     changed += 1
                 new_tokens_for_block.append(cleaned)
+                # SICHERN: welche Tags wir für dieses token tatsächlich entfernt haben
+                actually_removed = list((set(orig_tags) & set(tags_to_remove)))
+                # Stelle sicher, dass token_meta existiert
+                if i < len(token_meta):
+                    token_meta[i]['removed_tags'] = actually_removed
+                else:
+                    # fallback - erweitern
+                    while len(token_meta) <= i:
+                        token_meta.append({})
+                    token_meta[i]['removed_tags'] = actually_removed
             else:
                 new_tokens_for_block.append(tok)
+                # kein Entfernen — entfernte Tags leer setzen
+                if i < len(token_meta) and 'removed_tags' not in token_meta[i]:
+                    token_meta[i].setdefault('removed_tags', [])
         
         # End for tokens in block
         block['gr_tokens'] = new_tokens_for_block

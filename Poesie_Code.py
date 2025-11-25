@@ -20,11 +20,13 @@ import re, os, html, unicodedata, json, argparse
 # Import für Preprocessing
 try:
     from shared import preprocess
+    from shared.preprocess import remove_tags_from_token, remove_all_tags_from_token
 except ImportError:
     # Fallback für direkten Aufruf
     import sys
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
     from shared import preprocess
+    from shared.preprocess import remove_tags_from_token, remove_all_tags_from_token
 
 # ========= Optik / Einheiten =========
 MM = RL_MM
@@ -234,11 +236,35 @@ RE_TAG_STRIP   = re.compile(r'\(\s*[A-Za-z0-9/≈äöüßÄÖÜ]+\s*\)')  # NEU:
 RE_LEADING_BAR_COLOR = re.compile(r'^\|\s*([+\-#§$])')  # |+ |# |- am Tokenanfang
 
 # ----------------------- Defensive token-helpers -----------------------
-def _strip_tags_from_token(tok: str) -> str:
-    """Entfernt alle '(TAG)'-Stücke aus einem Token (defensiv)."""
+def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, tag_mode: str = "TAGS") -> str:
+    """
+    Entfernt Tags aus einem Token basierend auf tag_mode und token_meta.
+    - Wenn tag_mode == "NO_TAGS": entferne alle Tags
+    - Sonst: entferne nur Tags, die in token_meta[i]['removed_tags'] markiert sind
+    """
     if not tok:
         return tok
-    return RE_TAG_STRIP.sub('', tok)
+    
+    # If NO_TAGS - remove everything
+    if tag_mode == "NO_TAGS":
+        cleaned = remove_all_tags_from_token(tok)
+        if cleaned != tok:
+            print(f"DEBUG _strip_tags_from_token: (NO_TAGS) Tag entfernt aus Token: '{tok}' → '{cleaned}'")
+        return cleaned
+    
+    # Otherwise remove only tags that were recorded as removed by apply_tag_visibility
+    if block is not None and tok_idx is not None:
+        token_meta = block.get('token_meta', [])
+        meta = token_meta[tok_idx] if tok_idx < len(token_meta) else {}
+        removed_tags = set(meta.get('removed_tags', []))
+        if removed_tags:
+            cleaned = remove_tags_from_token(tok, removed_tags)
+            if cleaned != tok:
+                print(f"DEBUG _strip_tags_from_token: Tag entfernt aus Token: '{tok}' → '{cleaned}' (removed_tags={sorted(list(removed_tags))})")
+            return cleaned
+    
+    # nothing to remove for this token, keep as-is
+    return tok
 
 def _token_display_text_from_token(tok: str) -> str:
     """
