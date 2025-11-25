@@ -1081,6 +1081,7 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         print("DEBUG apply_tag_visibility: hidden_tags_by_wortart ist leer - keine Tags werden entfernt")
     
     # Apply removal on tokens for each pair/flow block
+    changed_total = 0
     for bi, block in enumerate(blocks_copy):
         if not isinstance(block, dict) or block.get('type') not in ('pair','flow'):
             continue
@@ -1103,7 +1104,7 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                 continue
             
             new_toks = []
-            changed = 0
+            changed_this_field = 0
             
             for tok_idx, tok in enumerate(toks):
                 if not tok:
@@ -1146,15 +1147,15 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         new_toks.append(tok)
                         continue
                     
-                    # Debug small: only print for first blocks / tokens
+                    # Debug: only print for first blocks / tokens (limit output)
                     if bi < 2 and tok_idx < 5:
-                        print(f"DEBUG apply_tag_visibility: Block {bi}, Tok {tok_idx}: wortart='{wortart}', tags_to_hide={sorted(list(tags_to_hide))[:10]}, orig_tags={sorted(list(original_tags))[:10]}, to_remove={sorted(list(actually_present_to_remove))}")
+                        print(f"DEBUG apply_tag_visibility: Block {bi} Token {tok_idx}: wortart='{wortart}', tags_removed={sorted(list(actually_present_to_remove))}, orig_tags={sorted(list(original_tags))[:8]}")
                     
                     # Remove only the tags that actually exist (defensive)
                     new_tok = remove_tags_from_token(tok, actually_present_to_remove)
                     if new_tok != tok:
                         new_toks.append(new_tok)
-                        changed += 1
+                        changed_this_field += 1
                     else:
                         new_toks.append(tok)
                 else:
@@ -1162,8 +1163,7 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                     new_toks.append(tok)
             
             block[tok_field] = new_toks
-            if changed > 0 and bi < 3:  # Nur erste 3 Blöcke zeigen, um Logs kürzer zu halten
-                print(f"DEBUG apply_tag_visibility: Block {bi} field {tok_field}: {changed} token(s) changed")
+            changed_total += changed_this_field
         
         # Rebuild string fields if renderer may use them
         if 'gr_tokens' in block:
@@ -1173,8 +1173,12 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         if 'en_tokens' in block:
             block['en'] = _join_tokens_to_line(block.get('en_tokens', []))
     
-    if hidden_tags_by_wortart:
-        print(f"DEBUG apply_tag_visibility: Tag-Entfernung abgeschlossen (hidden_tags_by_wortart: {len(hidden_tags_by_wortart)} Wortart(en))")
+    # Final debug output after processing all blocks
+    if changed_total > 0:
+        print(f"DEBUG apply_tag_visibility: {changed_total} token(s) changed total")
+    elif hidden_tags_by_wortart:
+        print(f"DEBUG apply_tag_visibility: Tag-Entfernung abgeschlossen (hidden_tags_by_wortart: {list(hidden_tags_by_wortart.keys()) if hidden_tags_by_wortart else '{}'})")
+    
     return blocks_copy
 
 def remove_all_tags(blocks: List[Dict[str, Any]],
