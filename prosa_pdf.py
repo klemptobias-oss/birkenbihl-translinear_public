@@ -165,14 +165,18 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         
         # NEW ordering: discover comments -> apply colors -> apply tag visibility -> optional remove_all_tags
         # Schritt 1: Farbzuweisung BASIEREND AUF DEN ORIGINALEN TAGS (damit Wortarten korrekt erkannt werden)
-        blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=False)
+        # Respect disable_comment_bg in final_tag_config
+        disable_comment_bg_flag = False
+        if final_tag_config and isinstance(final_tag_config, dict):
+            disable_comment_bg_flag = bool(final_tag_config.get('disable_comment_bg', False))
+        blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
         
         # Schritt 2: Jetzt erst Tag-Sichtbarkeit anwenden (Tags entfernen, aber Farben bleiben erhalten)
         # WICHTIG: apply_tag_visibility macht auch Übersetzungs-Ausblendung!
         # Use hidden_tags_by_wortart from tag_config if present
         hidden_by_wortart = None
-        if final_tag_config and 'hidden_tags_by_wortart' in final_tag_config:
-            hidden_by_wortart = final_tag_config['hidden_tags_by_wortart']
+        if final_tag_config and isinstance(final_tag_config, dict):
+            hidden_by_wortart = final_tag_config.get('hidden_tags_by_wortart')
         
         if tag_mode == "TAGS":
             blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)

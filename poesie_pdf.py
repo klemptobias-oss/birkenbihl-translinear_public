@@ -230,8 +230,8 @@ def _process_one_input(infile: str,
         # WICHTIG: apply_tag_visibility macht auch Übersetzungs-Ausblendung!
         # Use hidden_tags_by_wortart from tag_config if present
         hidden_by_wortart = None
-        if final_tag_config and 'hidden_tags_by_wortart' in final_tag_config:
-            hidden_by_wortart = final_tag_config['hidden_tags_by_wortart']
+        if final_tag_config and isinstance(final_tag_config, dict):
+            hidden_by_wortart = final_tag_config.get('hidden_tags_by_wortart')
         
         if tag_mode == "TAGS":
             blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
