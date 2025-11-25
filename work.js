@@ -1470,6 +1470,11 @@ function showTagConfigModal() {
 
   // 6. Modal anzeigen
   el.modal.style.display = "flex";
+  
+  // Register modal for ESC key handler
+  if (el.modal && typeof window.setTagConfigOpen === 'function') {
+    window.setTagConfigOpen(el.modal);
+  }
 }
 
 function applyInitialConfig() {
@@ -2086,6 +2091,10 @@ function togglePipesHidden() {
 
 function hideTagConfigModal() {
   if (el.modal) el.modal.style.display = "none";
+  // Clear ESC key handler registration
+  if (typeof window.clearTagConfigOpen === 'function') {
+    window.clearTagConfigOpen();
+  }
 }
 
 function updateStateFromTable() {
@@ -3042,4 +3051,180 @@ function debouncePdf(fn, ms) {
     clearTimeout(t);
     t = setTimeout(() => fn(...args), ms);
   };
+}
+
+/* -----------------------------------------------------------------------------
+   Close tag/config panels on ESC
+   Adds a robust Escape-key handler that attempts to close the tag/config
+   UI. It is defensive: it looks for common modal/panel selectors and for a
+   close-button inside them (and clicks it). If no button is found it will
+   hide the panel by setting style.display='none' and adding a 'hidden' class.
+   This avoids errors if the exact DOM shape varies between builds.
+   -------------------------------------------------------------------------- */
+(function(){
+  function tryCloseElement(el){
+    if(!el) return false;
+    try {
+      // If an explicit close button exists, click it (this will run the existing close logic)
+      const closeBtn = el.querySelector('.close, .btn-close, .tag-config-close, .close-button, .modal-close');
+      if(closeBtn){
+        // prefer built-in click behaviour
+        closeBtn.click();
+        return true;
+      }
+
+      // If element is visible, hide it gracefully
+      const style = window.getComputedStyle(el);
+      if(style && style.display !== 'none' && el.offsetParent !== null){
+        // mark hidden for potential CSS
+        el.classList.add('hidden');
+        el.style.display = 'none';
+        // If there is an ARIA attribute, keep it consistent
+        try { el.setAttribute('aria-hidden','true'); } catch(e){}
+        return true;
+      }
+    } catch(e) {
+      // swallow errors - we don't want ESC to break anything
+      console.error('tryCloseElement error', e);
+    }
+    return false;
+  }
+
+  function closeTagConfigOnEsc(ev){
+    // only handle plain Escape (not when user focuses an input while pressing Esc for other reasons)
+    if(!ev || (ev.key !== 'Escape' && ev.key !== 'Esc')) return;
+
+    // Candidate selectors for your tag/config UI. This list is intentionally broad.
+    const selectors = [
+      '#tag-config-modal',
+      '#tag-config',
+      '#renderingModal',
+      '.tag-config-modal',
+      '.tag-config',
+      '.tag-config-panel',
+      '.config-table',
+      '.tag-config-drawer',
+      '.panel-tag-config',
+      '[data-tag-config]',
+      '[data-tag-config-panel]',
+      '.tag-configuration'
+    ];
+
+    // Try each selector and attempt to close the first visible one
+    for(const sel of selectors){
+      const el = document.querySelector(sel);
+      if(el && tryCloseElement(el)){
+        ev.preventDefault();
+        ev.stopPropagation();
+        return;
+      }
+    }
+
+    // If nothing found above: try to find elements that are visible and likely settings panels
+    const fallbackCandidates = Array.from(document.querySelectorAll('.modal, .drawer, .panel, .overlay'));
+    for(const el of fallbackCandidates){
+      // Heuristic: look for nodes that contain words like "tag" or "config"
+      const txt = (el.textContent || '').toLowerCase();
+      if(txt.includes('tag') || txt.includes('konfig') || txt.includes('config') || txt.includes('configuration')){
+        if(tryCloseElement(el)){
+          ev.preventDefault();
+          ev.stopPropagation();
+          return;
+        }
+      }
+    }
+
+    // Last resort: if a dedicated global close element exists, click it.
+    const globalClose = document.querySelector('.tag-config-global-close, #tag-config-close, .close-tag-config');
+    if(globalClose){
+      try { globalClose.click(); ev.preventDefault(); ev.stopPropagation(); } catch(e){}
+    }
+  }
+
+  // Attach on DOMContentLoaded so we won't run too early
+  document.addEventListener('DOMContentLoaded', function(){
+    // Listen on keydown globally to allow ESC from anywhere
+    window.addEventListener('keydown', closeTagConfigOnEsc, {capture: false});
+  });
+
+  // Also attach immediately in case work.js is loaded after DOMContentLoaded
+  if(document.readyState === 'interactive' || document.readyState === 'complete'){
+    window.addEventListener('keydown', closeTagConfigOnEsc, {capture: false});
+  }
+})();
+
+/* -----------------------------------------------------------------------------
+   Tag-config hook helpers
+   Provide a precise way for other code to register the currently-open
+   tag/config panel: call window.setTagConfigOpen(panelElement)
+   Then ESC will close that element quickly via window.closeTagConfig()
+   This is more robust than selector heuristics.
+ ----------------------------------------------------------------------------- */
+if (typeof window !== 'undefined') {
+  // only add once
+  if (!window.setTagConfigOpen) {
+    window._tagConfigOpen = null;
+
+    // Register the currently open panel (call from your "open panel" logic)
+    window.setTagConfigOpen = function (panelElement) {
+      try { window._tagConfigOpen = panelElement || null; } catch (e) { window._tagConfigOpen = null; }
+    };
+
+    // Clear registration (call from your "close panel" logic)
+    window.clearTagConfigOpen = function () {
+      window._tagConfigOpen = null;
+    };
+
+    // Close the registered panel (returns true when it actually closed something)
+    window.closeTagConfig = function () {
+      var el = window._tagConfigOpen;
+      if (!el) return false;
+      try {
+        // prefer an explicit close button if present
+        var closeBtn = null;
+        if (el.querySelector) {
+          closeBtn = el.querySelector('.close, .btn-close, .tag-config-close, .close-button, .modal-close, [data-close]');
+        }
+        if (closeBtn) {
+          try { closeBtn.click(); } catch (e) { /* fall through to hide fallback */ }
+          // assume click closed it; clear the handle
+          window._tagConfigOpen = null;
+          return true;
+        }
+
+        // fallback: hide gracefully
+        try {
+          el.classList.add('hidden');
+          el.style.display = 'none';
+          el.setAttribute && el.setAttribute('aria-hidden', 'true');
+        } catch (e) { /* ignore */ }
+        window._tagConfigOpen = null;
+        return true;
+      } catch (e) {
+        console.error('window.closeTagConfig error', e);
+        window._tagConfigOpen = null;
+        return false;
+      }
+    };
+  }
+}
+
+/* Quick ESC hook for the explicit hook-based close.
+   If a panel has been registered via setTagConfigOpen, prefer closing that
+   element before running other heuristics. This listener is lightweight
+   and only prevents event propagation when it actually closed something. */
+if (typeof window !== 'undefined') {
+  window.addEventListener && window.addEventListener('keydown', function (ev) {
+    if (ev.key !== 'Escape' && ev.key !== 'Esc') return;
+    try {
+      if (typeof window.closeTagConfig === 'function') {
+        var closed = false;
+        try { closed = window.closeTagConfig(); } catch (e) { closed = false; }
+        if (closed) {
+          ev.preventDefault();
+          ev.stopPropagation();
+        }
+      }
+    } catch (e) { /* swallow */ }
+  }, { capture: false });
 }
