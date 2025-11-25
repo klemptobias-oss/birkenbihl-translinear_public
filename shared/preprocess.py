@@ -308,12 +308,23 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
     comment_inline_re = re.compile(r'\((\d+(?:-\d+)?)k\)\s*([^()]+)', re.UNICODE)
 
     # 1) build pair_index -> block index mapping for pair/flow blocks
+    # Build pair_index for pair/flow blocks if not present
     pair_to_block = {}
     pair_index = 1
     for bi, b in enumerate(blocks):
         if b.get('type') in ('pair', 'flow'):
-            b['_pair_index'] = pair_index
-            pair_to_block[pair_index] = bi
+            # preserve existing if present
+            if not b.get('pair_index') and not b.get('_pair_index'):
+                b['pair_index'] = pair_index
+                b['_pair_index'] = pair_index
+            elif b.get('pair_index'):
+                b['_pair_index'] = b['pair_index']
+            elif b.get('_pair_index'):
+                b['pair_index'] = b['_pair_index']
+            pair_index_val = b.get('pair_index') or b.get('_pair_index') or pair_index
+            pair_to_block[pair_index_val] = bi
+            if not b.get('pair_index'):
+                b['pair_index'] = pair_index_val
             pair_index += 1
 
     comments_found = 0
@@ -340,14 +351,23 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
                     start, end = int(s), int(e)
                 else:
                     start = end = int(range_str)
-                # attach comment to start block if possible
-                target_bi = pair_to_block.get(start, None)
-                if target_bi is None:
-                    # fallback: attach to previous pair-looking block
-                    target_bi = max(0, bi - 1)
-                blocks[target_bi].setdefault('comments', []).append({
-                    'start': start, 'end': end, 'text': text, 'kind': 'range'
-                })
+                # attach comment to blocks whose pair_index is in [start..end]
+                # Helper function to attach comment to range
+                for target_idx, target_block in enumerate(blocks):
+                    if target_block.get('type') in ('pair', 'flow'):
+                        target_pi = target_block.get('pair_index') or target_block.get('_pair_index')
+                        if target_pi is not None and start <= target_pi <= end:
+                            # ensure comments list exists
+                            c = target_block.setdefault('comments', [])
+                            # token_start/ token_end set to whole block by default
+                            token_start = 0
+                            token_end = max(0, len(target_block.get('gr_tokens', [])) - 1)
+                            c.append({
+                                'start': start, 'end': end, 'text': text, 'kind': 'range',
+                                'pair_range': (start, end),
+                                'token_start': token_start,
+                                'token_end': token_end
+                            })
                 comments_found += 1
                 # do not keep this line in the original block -> remove
                 continue
@@ -364,10 +384,20 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
                         start, end = int(s), int(e)
                     else:
                         start = end = int(range_str)
-                    target_bi = pair_to_block.get(start, bi)
-                    blocks[target_bi].setdefault('comments', []).append({
-                        'start': start, 'end': end, 'text': text, 'kind': 'inline', 'pair_range': (start, end)
-                    })
+                    # attach to blocks whose pair_index is in [start..end]
+                    for target_idx, target_block in enumerate(blocks):
+                        if target_block.get('type') in ('pair', 'flow'):
+                            target_pi = target_block.get('pair_index') or target_block.get('_pair_index')
+                            if target_pi is not None and start <= target_pi <= end:
+                                c = target_block.setdefault('comments', [])
+                                token_start = 0
+                                token_end = max(0, len(target_block.get('gr_tokens', [])) - 1)
+                                c.append({
+                                    'start': start, 'end': end, 'text': text, 'kind': 'inline',
+                                    'pair_range': (start, end),
+                                    'token_start': token_start,
+                                    'token_end': token_end
+                                })
                     comments_found += 1
                     # remove the inline comment chunk from the line
                     cleaned_line = cleaned_line.replace(im.group(0), '')
@@ -402,14 +432,25 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
                 filtered_tokens.append(tok)
             b['gr_tokens'] = filtered_tokens
 
-    # 3) ensure each block has comment_token_mask (same length as gr_tokens)
+    # 3) Build per-block comment_token_mask (True for tokens that are inside a comment range)
     for b in blocks:
+        if b.get("type") not in ("pair", "flow"):
+            continue
         toks = b.get('gr_tokens') or []
         mask = [False] * len(toks) if toks else []
-        # if block itself has comments, mark first token as comment-anchor
-        if b.get('comments'):
-            if len(mask) > 0:
-                mask[0] = True
+        # For each comment attached to this block, mark tokens in the range
+        for c in b.get("comments", []):
+            start = c.get("token_start", 0)
+            end = c.get("token_end", -1)
+            # If token_end is -1, mark all tokens in the block
+            if end < 0:
+                end = len(toks) - 1
+            # Ensure end is within bounds
+            end = min(end, len(toks) - 1) if toks else -1
+            # Mark all tokens in the range
+            for i in range(max(0, start), max(end + 1, start)):
+                if 0 <= i < len(mask):
+                    mask[i] = True
         b['comment_token_mask'] = mask
 
     # debug summary
