@@ -161,19 +161,25 @@ def _process_one_input(infile: str,
     
     blocks = Poesie.process_input_file(infile)
     
-    # Safe call to comment discovery (fall back on original blocks)
-    final_blocks = list(blocks)
-    try:
-        cb = preprocess.discover_and_attach_comments(blocks)
-        if cb:
-            final_blocks = cb
-    except Exception:
-        logging.getLogger().exception("discover_and_attach_comments failed in poesie_pdf; proceeding without comments")
+    # Use the safe helper to avoid pipeline aborts and to normalize return values
+    import shared.comment_utils as comment_utils  # local import
+    final_blocks = comment_utils.safe_discover_and_attach_comments(
+        blocks,
+        preprocess,
+        comment_regexes=None,
+        strip_comment_lines=True,
+        pipeline_name='poesie_pdf'
+    )
     
-    # ensure comment fields exist
-    for b in final_blocks:
-        b.setdefault('comments', [])
-        b.setdefault('comment_token_mask', [False] * len(b.get('gr_tokens', []) or []))
+    # Compact debug summary for CI: small, single-line info about first block comments+mask
+    try:
+        c0 = final_blocks[0].get('comments') if isinstance(final_blocks, list) and final_blocks else None
+        mask0 = final_blocks[0].get('comment_token_mask') if isinstance(final_blocks, list) and final_blocks else None
+        logger.info("DEBUG poesie_pdf: final_blocks[0].comments=%s mask_sample=%s",
+                    (c0 if c0 else []),
+                    (mask0[:40] if mask0 is not None else None))
+    except Exception:
+        logger.debug("poesie_pdf: failed to print final_blocks[0] debug info", exc_info=True)
     
     print(f"→ Anzahl Blöcke: {len(blocks)}")
 

@@ -127,24 +127,25 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # Tokenisierung direkt hier durchführen, um die Pipeline an Poesie anzugleichen
     blocks = Prosa.group_pairs_into_flows(blocks_raw)
     
-    # Defensive: ensure final_blocks is always set even if comment discovery fails
-    final_blocks = list(blocks)
-    try:
-        cb = preprocess.discover_and_attach_comments(blocks)
-        if cb:
-            final_blocks = cb
-        else:
-            # protective fallback
-            logging.getLogger().warning("discover_and_attach_comments returned empty/None for prosa, using original blocks")
-    except Exception:
-        logging.getLogger().exception("discover_and_attach_comments failed in prosa_pdf; continuing without comments")
+    # Use a safe helper so we never abort the prosa pipeline with a NoneType/error.
+    import shared.comment_utils as comment_utils  # local import so patch is conservative
+    final_blocks = comment_utils.safe_discover_and_attach_comments(
+        blocks,
+        preprocess,
+        comment_regexes=None,
+        strip_comment_lines=True,
+        pipeline_name='prosa_pdf'
+    )
     
-    # guarantee structure for later stages
-    for b in final_blocks:
-        b.setdefault('comments', [])
-        if 'comment_token_mask' not in b or b['comment_token_mask'] is None:
-            gtokens = b.get('gr_tokens') or []
-            b['comment_token_mask'] = [False] * len(gtokens)
+    # Compact debug summary for CI logs: print only first block's comments and a short mask sample.
+    try:
+        c0 = final_blocks[0].get('comments') if isinstance(final_blocks, list) and final_blocks else None
+        mask0 = final_blocks[0].get('comment_token_mask') if isinstance(final_blocks, list) and final_blocks else None
+        logging.getLogger(__name__).info("DEBUG prosa_pdf: final_blocks[0].comments=%s mask_sample=%s",
+                    (c0 if c0 else []),
+                    (mask0[:40] if mask0 is not None else None))
+    except Exception:
+        logging.getLogger(__name__).debug("prosa_pdf: failed to print final_blocks[0] debug info", exc_info=True)
 
     # Erkenne Sprache aus Dateinamen
     ancient_lang_strength = _detect_language_from_filename(infile)
