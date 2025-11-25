@@ -1,9 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from __future__ import annotations
 """
 shared/preprocess.py
 --------------------
 Vorverarbeitung der Blockstruktur vor dem Rendern.
+"""
+import re
+import logging
+from typing import List, Dict, Any, Iterable, Optional, Set, Tuple
+
+# Reduce noisy DEBUG output from lower-level modules by default
+logging.getLogger().setLevel(logging.INFO)
+
+"""
 
 Kompatibilität:
 - Bestehende Aufrufe bleiben gültig: apply(blocks, color_mode=..., tag_mode=..., versmass_mode=...)
@@ -42,10 +52,6 @@ Effekte:
     * "REMOVE_MARKERS": 'i', 'L', '|' werden entfernt (nur griechische Zeile).
 
 """
-
-from __future__ import annotations
-import re
-from typing import List, Dict, Any, Iterable, Optional, Set
 
 # ======= Tag-Definitionen für die Erkennungslogik =======
 KASUS_TAGS = {'N', 'G', 'D', 'A', 'V', 'Abl'}  # NEU: Abl für Latein
@@ -490,17 +496,6 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,A
         # WICHTIG: Stelle sicher, dass mask niemals None ist (verhindert 'NoneType' object is not iterable')
         b['comment_token_mask'] = mask if mask else []
 
-    # debug summary (nur bei kleineren Dateien, um Performance zu schonen)
-    if len(blocks) < 50:
-        sample_comments = blocks[0].get('comments') if blocks else None
-        sample_mask = blocks[0].get('comment_token_mask') if blocks else None
-        print(f"DEBUG discover_and_attach_comments: comments found={comments_found} sample: {sample_comments[:3] if sample_comments else []} mask-sample: {sample_mask[:40] if sample_mask else None}")
-        
-        # WICHTIG: Stelle sicher, dass Kommentare auch wirklich an Block angehängt wurden
-        total_comments_attached = sum(len(b.get('comments', [])) for b in blocks)
-        if total_comments_attached > 0:
-            print(f"DEBUG discover_and_attach_comments: total comments attached to blocks: {total_comments_attached}")
-    
     # WICHTIG: Stelle sicher, dass IMMER blocks zurückgegeben wird (nie None) - verhindert 'NoneType' object is not iterable
     # Stelle sicher, dass alle Blöcke comment_token_mask haben (auch wenn leer)
     for b in blocks:
@@ -511,7 +506,10 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,A
         if 'comments' not in b:
             b['comments'] = []
     
-    print(f"DEBUG discover_and_attach_comments: returning {len(blocks)} blocks with comments found={comments_found}")
+    # Log summary (always log - concise, no size limit)
+    total_comments_attached = sum(len(b.get('comments', [])) for b in blocks)
+    logging.getLogger(__name__).info(f"discover_and_attach_comments: returning {len(blocks)} blocks with comments found={comments_found}, attached={total_comments_attached}")
+    
     return blocks
 
 # ======= Hilfen: Token-Verarbeitung =======
@@ -1854,9 +1852,9 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
                 processed = _remove_selected_tags(tok, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=remove_all)
                 # DEBUG: Zeige, wenn ein Tag entfernt wurde
                 if original != processed and ('(' in original or ')' in original):
-                    # DEBUG: Reduziert - nur bei ersten 10 Tokens ausgeben (verhindert 70k+ Zeilen)
-                    if len(result) < 10:
-                        print(f"DEBUG _process_pair_block_for_tags: Tag entfernt aus Token: '{original[:60]}...' → '{processed[:60]}...'")
+                    # DEBUG: Reduziert - nur bei ersten 5 Tokens ausgeben (verhindert 70k+ Zeilen)
+                    if len(result) < 5:
+                        logging.getLogger(__name__).debug(f"_process_pair_block_for_tags: Tag entfernt aus Token: '{original[:60]}...' → '{processed[:60]}...'")
                 result.append(processed)
             else:
                 result.append(tok)

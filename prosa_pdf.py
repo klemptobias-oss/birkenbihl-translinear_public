@@ -22,8 +22,15 @@ from __future__ import annotations
 from pathlib import Path
 import os, itertools, sys
 from pathlib import Path
+import logging
+
+# Reduce noisy DEBUG output - set root logger to INFO
+logging.getLogger().setLevel(logging.INFO)
 
 import Prosa_Code as Prosa
+
+# Ensure final_blocks always exists to avoid NameError in except blocks
+final_blocks = None
 from shared.unified_api import create_pdf_unified, PdfRenderOptions
 from shared.naming import base_from_input_path, output_pdf_name, PdfRenderOptions as NameOpts
 from shared import preprocess
@@ -119,6 +126,7 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     blocks_raw = Prosa.process_input_file(infile)
     # Tokenisierung direkt hier durchführen, um die Pipeline an Poesie anzugleichen
     blocks = Prosa.group_pairs_into_flows(blocks_raw)
+    final_blocks = blocks  # Initialize final_blocks to avoid NameError
 
     # Erkenne Sprache aus Dateinamen
     ancient_lang_strength = _detect_language_from_filename(infile)
@@ -153,36 +161,21 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     import traceback
     try:
         # Robust: verwende final_blocks falls vorhanden, sonst blocks
-        fb = final_blocks if 'final_blocks' in locals() else locals().get('blocks', None)
+        fb = None
+        if 'final_blocks' in locals() and final_blocks is not None:
+            fb = final_blocks
+        elif 'blocks' in locals():
+            fb = blocks
+        else:
+            fb = None
+        
         if fb is None:
-            # Fallback: versuche blocks-Variable
-            fb = blocks if 'blocks' in locals() else []
-        if not fb:
             comments, comment_mask = [], None
         else:
-            comments, comment_mask = preprocess.discover_and_attach_comments_safe(fb)
-            if not isinstance(comment_mask, list) or len(comment_mask) != len(fb):
-                comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in fb]
-            if not isinstance(comments, list) or len(comments) != len(fb):
-                comments = [[] for _ in fb]
-    except NameError as e:
-        # final_blocks nicht definiert - verwende blocks
-        try:
-            fb = blocks if 'blocks' in locals() else []
-            if fb:
-                comments, comment_mask = preprocess.discover_and_attach_comments_safe(fb)
-                if not isinstance(comment_mask, list) or len(comment_mask) != len(fb):
-                    comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in fb]
-                if not isinstance(comments, list) or len(comments) != len(fb):
-                    comments = [[] for _ in fb]
-            else:
-                comments, comment_mask = [], None
-        except Exception as e2:
-            print(f"ERROR prosa_pdf: discover/attach comments failed (fallback): {e2}")
-            traceback.print_exc()
-            comments, comment_mask = [], None
+            comments, comment_mask = preprocess.discover_and_attach_comments(fb)
     except Exception as e:
-        print(f"ERROR prosa_pdf: discover/attach comments failed: {e}")
+        logging.getLogger(__name__).error(f"discover/attach comments failed in prosa_pdf: {e}")
+        import traceback
         traceback.print_exc()
         comments, comment_mask = [], None
     

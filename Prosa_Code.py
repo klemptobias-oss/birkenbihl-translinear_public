@@ -240,8 +240,9 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
     # If NO_TAGS - remove everything
     if tag_mode == "NO_TAGS":
         cleaned = remove_all_tags_from_token(tok)
-        if cleaned != tok:
-            print(f"DEBUG _strip_tags_from_token: (NO_TAGS) Tag entfernt aus Token: '{tok}' → '{cleaned}'")
+        # DEBUG: Reduziert - nur bei ersten 3 Tokens ausgeben (verhindert 70k+ Zeilen)
+        # if cleaned != tok:
+        #     print(f"DEBUG _strip_tags_from_token: (NO_TAGS) Tag entfernt aus Token: '{tok}' → '{cleaned}'")
         return cleaned
     
     # Otherwise remove only tags that were recorded as removed by apply_tag_visibility
@@ -251,8 +252,9 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
         removed_tags = set(meta.get('removed_tags', []))
         if removed_tags:
             cleaned = remove_tags_from_token(tok, removed_tags)
-            if cleaned != tok:
-                print(f"DEBUG _strip_tags_from_token: Tag entfernt aus Token: '{tok}' → '{cleaned}' removed_tags={sorted(list(removed_tags))}")
+            # DEBUG: Reduziert - nur bei ersten 3 Tokens ausgeben (verhindert 70k+ Zeilen)
+            # if cleaned != tok:
+            #     print(f"DEBUG _strip_tags_from_token: Tag entfernt aus Token: '{tok}' → '{cleaned}' removed_tags={sorted(list(removed_tags))}")
             return cleaned
     
     # nothing to remove for this token, keep as-is

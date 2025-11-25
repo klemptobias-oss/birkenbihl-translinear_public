@@ -25,9 +25,12 @@ from typing import Optional
 import os, re, itertools, sys
 import logging
 
-# Reduziere Debug-Lärm: Setze Logger-Level auf INFO (verhindert 70k+ Debug-Zeilen)
+# Reduce noisy DEBUG output - set root logger to INFO
+logging.getLogger().setLevel(logging.INFO)
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+
+# Ensure final_blocks always exists to avoid NameError in except blocks
+final_blocks = None
 
 import Poesie_Code as Poesie
 from shared.unified_api import create_pdf_unified, PdfRenderOptions
@@ -211,25 +214,23 @@ def _process_one_input(infile: str,
     # discover_and_attach_comments füllt block['comments'] und block['comment_token_mask']
     import traceback
     try:
-        # Robust: verwende blocks
-        fb = blocks if 'blocks' in locals() else []
-        if not fb:
+        fb = None
+        if 'final_blocks' in locals() and final_blocks is not None:
+            fb = final_blocks
+        elif 'blocks' in locals():
+            fb = blocks
+        else:
+            fb = None
+        
+        if fb is None:
             comments, comment_mask = [], None
         else:
-            # discover comments (safe). Returns per-block lists.
-            comments, comment_mask = preprocess.discover_and_attach_comments_safe(fb)
-            # normalize comment_mask to list-of-lists matching blocks
-            if not isinstance(comment_mask, list) or len(comment_mask) != len(fb):
-                comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in fb]
-            # ensure comments is list per block
-            if not isinstance(comments, list) or len(comments) != len(fb):
-                comments = [[] for _ in fb]
+            comments, comment_mask = preprocess.discover_and_attach_comments(fb)
     except Exception as e:
-        logger.error(f"discover/attach comments failed: {e}")
+        logger.error(f"discover/attach comments failed in poesie_pdf: {e}")
+        import traceback
         traceback.print_exc()
-        # fallback safe structures
-        comments = [[] for _ in blocks] if 'blocks' in locals() else []
-        comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in blocks] if 'blocks' in locals() else []
+        comments, comment_mask = [], None
     
     # WICHTIG: Reihenfolge - Farben ZUERST (basierend auf ORIGINALEN Tags), dann Tags entfernen
     # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal in der Loop!
