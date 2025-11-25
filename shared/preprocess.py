@@ -802,13 +802,26 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                 
                 # Extract original tags and store them so later removal uses original tag set
                 orig_tags = set(_extract_tags(token))
-                # Speichere die Original-Tags, falls noch nicht vorhanden (wichtig für apply_tag_visibility)
+                
+                # WICHTIG: Erkenne HideTags/HideTrans Flags, aber lass sie NICHT die Farbberechnung beeinflussen
+                hide_tags_flag = TAG_HIDE_TAGS in orig_tags or 'hidetags' in (t.lower() for t in orig_tags)
+                hide_trans_flag = TRANSLATION_HIDE_TAG in orig_tags or 'hidetrans' in (t.lower() for t in orig_tags)
+                
+                # Speichere die Original-Tags und Flags in token_meta
                 if i < len(token_meta):
-                    if 'orig_tags' not in token_meta[i] or not token_meta[i].get('orig_tags'):
-                        token_meta[i]['orig_tags'] = list(orig_tags)
+                    token_meta[i]['orig_tags'] = list(orig_tags)
+                    token_meta[i].setdefault('flags', {})
+                    token_meta[i]['flags']['hide_tags'] = hide_tags_flag
+                    token_meta[i]['flags']['hide_trans'] = hide_trans_flag
                 else:
                     # sollte nicht passieren, aber sicherstellen
-                    token_meta.append({'orig_tags': list(orig_tags)})
+                    token_meta.append({
+                        'orig_tags': list(orig_tags),
+                        'flags': {
+                            'hide_tags': hide_tags_flag,
+                            'hide_trans': hide_trans_flag
+                        }
+                    })
                 
                 # If disable_comment_bg and this token belongs to comment → skip bg coloring
                 if disable_comment_bg and new_block.get("comment_token_mask", [False])[i]:
@@ -819,15 +832,22 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                 if any(c in token for c in COLOR_SYMBOLS):
                     continue
 
-                token_tags = orig_tags
+                # WICHTIG: Für Farbberechnung HideTags/HideTrans entfernen, damit sie die Farbzuordnung nicht beeinflussen
+                tags_for_color = orig_tags - {TAG_HIDE_TAGS, TRANSLATION_HIDE_TAG}
+                tags_for_color = tags_for_color - {t for t in orig_tags if t.lower() in ('hidetags', 'hidetrans')}
+                token_tags = tags_for_color
                 
                 if not token_tags:
                     continue
                 
-                # Bestimme Wortart und relevante Tags
+                # Bestimme Wortart und relevante Tags BASIEREND AUF TAGS OHNE HideTags/HideTrans
                 wortart, relevant_tags = _get_wortart_and_relevant_tags(token_tags)
                 if not wortart:
                     continue
+                
+                # Speichere Wortart in token_meta für spätere Verwendung
+                if i < len(token_meta):
+                    token_meta[i]['wortart'] = wortart
                 
                 # Finde die relevanteste Regel basierend auf der Prioritäts-Hierarchie
                 best_rule_config = None
@@ -862,10 +882,14 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                             best_rule_config = rule_config
                 
                 # Regel anwenden (aktuell nur Farbe)
+                computed_color = None
+                computed_symbol = None
                 if best_rule_config and 'color' in best_rule_config:
                     color = best_rule_config['color']
+                    computed_color = color  # Speichere die berechnete Farbe
                     if color in COLOR_MAP:
                         symbol = COLOR_MAP[color]
+                        computed_symbol = symbol
                         
                         # Symbol im griechischen Token einfügen
                         match = RE_WORD_START.search(token)
@@ -891,6 +915,21 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                                         new_en_tokens[i] = en_tok[:en_match.start(2)] + symbol + en_tok[en_match.start(2):]
                                     else:
                                         new_en_tokens[i] = symbol + en_tok
+                
+                # WICHTIG: Speichere computed_color und computed_symbol in token_meta, damit Renderer sie auch nach Tag-Entfernung verwenden kann
+                if i < len(token_meta):
+                    if computed_color:
+                        token_meta[i]['computed_color'] = computed_color
+                    if computed_symbol:
+                        token_meta[i]['color_symbol'] = computed_symbol
+                else:
+                    # fallback - erweitern
+                    while len(token_meta) <= i:
+                        token_meta.append({})
+                    if computed_color:
+                        token_meta[i]['computed_color'] = computed_color
+                    if computed_symbol:
+                        token_meta[i]['color_symbol'] = computed_symbol
             
             new_block['gr_tokens'] = new_gr_tokens
             new_block['de_tokens'] = new_de_tokens
@@ -1362,7 +1401,13 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             en_tokens = block.get('en_tokens', [])
             
             for idx, gr_token in enumerate(gr_tokens_original):
-                if _token_should_hide_translation(gr_token, translation_rules):
+                # WICHTIG: Prüfe zuerst per-token HideTrans Flag in token_meta (für einzelne Tokens ohne Gruppenanführer)
+                hide_trans_from_flag = False
+                if idx < len(token_meta):
+                    hide_trans_from_flag = bool(token_meta[idx].get('flags', {}).get('hide_trans'))
+                
+                # Prüfe auch die token_should_hide_translation Funktion (für Gruppenanführer-Regeln)
+                if hide_trans_from_flag or _token_should_hide_translation(gr_token, translation_rules):
                     # Entferne Übersetzung, aber prüfe auch ob sie trivial ist (nur Interpunktion/Stephanus)
                     # WICHTIG: Wenn Übersetzung trivial ist, entferne sie auch wenn hide_translation nicht aktiv ist
                     if idx < len(de_tokens):
@@ -1410,12 +1455,24 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             
             # If token contains the HideTags flag, remove all tags from its printable form
             # WICHTIG: Farben bleiben erhalten, weil sie bereits von apply_colors gesetzt wurden!
-            if TAG_HIDE_TAGS.lower() in original_tags_normalized:
-                # Remove all tag groups like '(Adj)(G)' etc. but keep punctuation and color
-                cleaned = remove_tags_from_token_local(tok, remove_all=True)
+            # Prüfe auch Flags in token_meta
+            hide_tags_flag = False
+            if i < len(token_meta):
+                hide_tags_flag = bool(token_meta[i].get('flags', {}).get('hide_tags'))
+            
+            if TAG_HIDE_TAGS.lower() in original_tags_normalized or hide_tags_flag:
+                # Remove all tag groups like '(Adj)(G)' etc. but keep punctuation and COLOR SYMBOLS
+                # WICHTIG: COLOR_SYMBOLS (#, +, -, §, $) müssen erhalten bleiben!
+                cleaned = tok
+                # Entferne alle Tag-Klammern (Parenthesen-Gruppen), aber behalte Farbcodes
+                cleaned = RE_PAREN_TAG.sub('', cleaned)
+                # Entferne auch HideTags/HideTrans selbst aus dem Token
+                cleaned = cleaned.replace(f'({TAG_HIDE_TAGS})', '').replace(f'({TRANSLATION_HIDE_TAG})', '')
+                cleaned = re.sub(r'\([Hh]ide[Tt]ags\)', '', cleaned)
+                cleaned = re.sub(r'\([Hh]ide[Tt]rans\)', '', cleaned)
                 # Debug output
                 if bi < 2 and i < 5:
-                    print(f"DEBUG apply_tag_visibility: Block {bi} Token {i}: HideTags detected, removed all tags, orig_tags={sorted(list(orig_tags))[:8]}")
+                    print(f"DEBUG apply_tag_visibility: Block {bi} Token {i}: HideTags detected, removed all tags, orig_tags={sorted(list(orig_tags))[:8]}, computed_color={token_meta[i].get('computed_color') if i < len(token_meta) else None}")
                 new_tokens_for_block.append(cleaned)
                 if cleaned != tok:
                     changed += 1
