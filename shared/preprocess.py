@@ -98,6 +98,8 @@ RULE_TAG_MAP = {
 # Tag für manuelle Übersetzungs-Ausblendung
 TRANSLATION_HIDE_TAG = "HideTrans"
 TRANSLATION_HIDE_GLOBAL = "_global"
+# Tag für manuelle Tag-Ausblendung (Tags werden entfernt, aber Farben bleiben erhalten)
+TAG_HIDE_TAGS = "HideTags"
 
 # ======= Konstanten (müssen mit dem Renderer-Stand zusammenpassen) =======
 SUP_TAGS = {'N','D','G','A','V','Du','Adj','Pt','Prp','Adv','Kon','Art','≈','Kmp','Sup','ij','Abl'}  # NEU: Abl für Latein
@@ -1300,11 +1302,16 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         hidden_tags_by_wortart = {k.lower(): v for k, v in hidden_tags_by_wortart.items()}
     
     # ---- Helper: Entferne nur die angegebenen Tags aus einem Token-String ----
-    def remove_tags_from_token_local(tok: str, tags_to_remove: Set[str]) -> str:
+    def remove_tags_from_token_local(tok: str, tags_to_remove: Set[str] = None, remove_all: bool = False) -> str:
         """
         Entferne nur die Parenthesen-Tags (z.B. '(N)', '(G)') aus tok, die in tags_to_remove stehen.
         Bewahrt Prefixe wie '$', '+', '-', '§' und alle anderen Teile des Tokens.
+        Wenn remove_all=True, entfernt ALLE Tag-Gruppen (alle (...) Klammern), behält aber andere Zeichen.
         """
+        if remove_all:
+            # Remove all parenthesis tag-groups (keeps punctuation / leading markers)
+            cleaned = RE_PAREN_TAG.sub('', tok)
+            return cleaned
         if not tags_to_remove:
             return tok
         # callback für jede Klammergruppe
@@ -1394,6 +1401,32 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             if not original_tags:
                 original_tags = set(_extract_tags(tok))
             orig_tags = original_tags
+            
+            # normalize for detection (case-insensitive)
+            original_tags_normalized = set(t.lower() for t in orig_tags)
+            
+            # If token contains the HideTags flag, remove all tags from its printable form
+            # WICHTIG: Farben bleiben erhalten, weil sie bereits von apply_colors gesetzt wurden!
+            if TAG_HIDE_TAGS.lower() in original_tags_normalized:
+                # Remove all tag groups like '(Adj)(G)' etc. but keep punctuation and color
+                cleaned = remove_tags_from_token_local(tok, remove_all=True)
+                # Debug output
+                if bi < 2 and i < 5:
+                    print(f"DEBUG apply_tag_visibility: Block {bi} Token {i}: HideTags detected, removed all tags, orig_tags={sorted(list(orig_tags))[:8]}")
+                new_tokens_for_block.append(cleaned)
+                if cleaned != tok:
+                    changed += 1
+                # Mark that we removed all tags due to HideTags
+                if i < len(token_meta):
+                    token_meta[i]['removed_tags'] = list(orig_tags)  # All tags were removed
+                    token_meta[i]['hide_tags_flag'] = True
+                else:
+                    # fallback - erweitern
+                    while len(token_meta) <= i:
+                        token_meta.append({})
+                    token_meta[i]['removed_tags'] = list(orig_tags)
+                    token_meta[i]['hide_tags_flag'] = True
+                continue
             
             # Bestimme Wortart für dieses Token anhand der ORIGINAL-Tags (hilfsfunktion wird verwendet)
             try:

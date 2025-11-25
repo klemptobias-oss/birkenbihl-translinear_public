@@ -1341,9 +1341,15 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             if w_gr > 0:
                 if is_notag:
                     # NoTag NoTrans: Größerer Puffer für bessere Abstände
-                    # WICHTIG: Sprechern und §-Texte sollen gleich formatiert werden wie normale Texte
-                    # Daher verwenden wir für alle den gleichen Puffer
-                    extra_buffer = max(token_gr_style.fontSize * 0.05, 1.5)  # 5% oder mindestens 1.5pt (konsistent für alle)
+                    # WICHTIG: Bei Sprechern (Politeia) müssen wir einen noch größeren Puffer verwenden
+                    # um Überlappungen zu vermeiden, besonders bei orange gefärbten Wörtern
+                    has_speaker = bool(speaker_display) or (block and block.get('speaker'))
+                    if has_speaker:
+                        # Größerer Puffer für Sprecher-Texte (wie Platon)
+                        extra_buffer = max(token_gr_style.fontSize * 0.08, 2.2)  # 8% oder mindestens 2.2pt für Sprecher
+                    else:
+                        # Normaler Puffer für §-Texte und normale Texte (Apologie)
+                        extra_buffer = max(token_gr_style.fontSize * 0.05, 1.5)  # 5% oder mindestens 1.5pt
                     return w_gr + base_safety + extra_buffer
                 else:
                     # Tag NoTrans: Normaler Puffer (konsistent für alle)
@@ -2244,12 +2250,24 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # 3) Translation-Hiding anwenden (wenn konfiguriert)
             # WICHTIG: Zitate müssen die gleiche Translation-Hiding-Logik wie normale Blöcke erhalten
+            # KRITISCH: Erstelle translation_rules aus tag_config (wie in apply_tag_visibility)
+            translation_rules = {}
             if tag_config and isinstance(tag_config, dict):
-                # Verwende die gleiche Logik wie in apply_tag_visibility
-                # (apply_tag_visibility wird bereits oben aufgerufen, aber wir müssen sicherstellen,
-                # dass auch trivial translations entfernt werden)
-                translation_rules = tag_config.get('translation_rules') or tag_config.get('hide_translations')
-                if translation_rules:
+                # Erstelle translation_rules aus tag_config (wie in apply_colors und apply_tag_visibility)
+                for rule_id, conf in tag_config.items():
+                    if not isinstance(conf, dict):
+                        continue
+                    # Normalisiere rule_id
+                    normalized_rule_id = preprocess._normalize_rule_id(rule_id) if hasattr(preprocess, '_normalize_rule_id') else rule_id.lower()
+                    # Registriere Translation-Rule, wenn hideTranslation aktiviert ist
+                    if hasattr(preprocess, '_maybe_register_translation_rule'):
+                        preprocess._maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
+                
+                # Fallback: Prüfe, ob translation_rules bereits in tag_config vorhanden sind
+                if not translation_rules:
+                    translation_rules = tag_config.get('translation_rules') or tag_config.get('hide_translations') or {}
+            
+            if translation_rules:
                     # Wende Translation-Hiding auf jeden Block im Zitat an
                     processed_quote_blocks = []
                     for qb in temp_quote_blocks:
@@ -2395,6 +2413,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             idx += 1; continue
         
         if t == 'flow':
+            # NEU: Kommentare aus block['comments'] rendern (VOR den Tabellen)
+            render_block_comments(b, elements)
+            
             # WICHTIG: Nur EINZELNE Zeilen zusammenhalten (2 oder 3 Tabellen für GR/DE oder GR/DE/EN)
             # NICHT den gesamten Flow-Block, um große weiße Flächen zu vermeiden
             flow_tables = build_flow_tables(b)
