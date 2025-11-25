@@ -69,7 +69,7 @@ BLANK_MARKER_GAP_MM = 4.0         # Abstand bei Leerzeilen-Marker
 
 PARA_COL_MIN_MM = 5.0      # Mindestbreite für Paragraphen-Spalte (stark reduziert)
 PARA_GAP_MM = 1.2          # Abstand neben Paragraphen-Spalte (weiter reduziert für maximale Textbreite)
-SPEAKER_COL_MIN_MM = 3.0   # Mindestbreite für Sprecher-Spalte (reduziert)
+SPEAKER_COL_MIN_MM = 2.0   # Mindestbreite für Sprecher-Spalte (weiter reduziert für mehr Textraum)
 SPEAKER_GAP_MM = 1.2       # Abstand neben Sprecher-Spalte (gleich wie PARA_GAP_MM für konsistente Formatierung)
 
 CELL_PAD_LR_PT = 0.6       # Innenabstand links/rechts in Zellen (stark reduziert für kompaktere TAG-PDFs)
@@ -1375,8 +1375,15 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # Para/Speaker-Spalten werden nur beim ersten Slice angezeigt, aber der Platz wird immer reserviert
         # für konsistente Ausrichtung aller Zeilen im gleichen Block
         # WICHTIG: SPEAKER_GAP_MM ist jetzt gleich PARA_GAP_MM (1.2mm) für konsistente Formatierung
+        # If block looks like a speaker line, reduce speaker column and use full content area for text
         avail_w = doc_width_pt
-        if speaker_width_pt > 0:
+        has_speaker = bool(speaker_display) or (block and block.get('speaker'))
+        if has_speaker and speaker_width_pt > 0:
+            # ensure speaker column is as small as reasonable, gap equals paragraph gap
+            effective_speaker_width = min(speaker_width_pt, SPEAKER_COL_MIN_MM*mm)
+            effective_speaker_gap = SPEAKER_GAP_MM*mm
+            avail_w -= (effective_speaker_width + effective_speaker_gap)
+        elif speaker_width_pt > 0:
             avail_w -= (speaker_width_pt + SPEAKER_GAP_MM*mm)
         if para_width_pt > 0:
             avail_w -= (para_width_pt + PARA_GAP_MM*mm)

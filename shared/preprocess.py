@@ -294,14 +294,128 @@ def assign_comment_ranges_to_blocks(blocks: List[Dict[str,Any]], inline_comments
 
 def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
     """
-    Convenience: extract inline comment lines and attach them to pair blocks,
-    also ensure comment_token_mask is set for affected blocks.
-    Should be run early in the pipeline (before apply_colors).
+    Robustere Kommentar-Erkennung und -Zuordnung.
+    - erkennt Zeilen wie "(2-4k) Kommentartext ..." (Range-kommentare)
+    - erkennt "(5121k) Kommentar..." (Einzelkommentar)
+    - erkennt inline "(2-4k) Kommentar" innerhalb einer gr-Zeile
+    - hängt Kommentare an block['comments'] an (Liste von dicts: {'start','end','text'})
+    - entfernt Kommentartext aus block['gr'] (damit er nicht als normaler Text weiter gerendert bzw. als comment bg markiert wird)
+    - legt für jeden Block block['comment_token_mask'] an (bool list mit len(gr_tokens))
     """
-    inline_comments = extract_inline_comments_from_blocks(blocks)
-    assign_comment_ranges_to_blocks(blocks, inline_comments)
-    if inline_comments:
-        print(f"DEBUG discover_and_attach_comments: {len(inline_comments)} Kommentar(e) gefunden und zugeordnet")
+    import re
+
+    comment_full_re = re.compile(r'^\s*\((\d+(?:-\d+)?)k\)\s*(.+)$', re.UNICODE)
+    comment_inline_re = re.compile(r'\((\d+(?:-\d+)?)k\)\s*([^()]+)', re.UNICODE)
+
+    # 1) build pair_index -> block index mapping for pair/flow blocks
+    pair_to_block = {}
+    pair_index = 1
+    for bi, b in enumerate(blocks):
+        if b.get('type') in ('pair', 'flow'):
+            b['_pair_index'] = pair_index
+            pair_to_block[pair_index] = bi
+            pair_index += 1
+
+    comments_found = 0
+
+    # 2) scan each block for full-line or inline comment markers
+    for bi, b in enumerate(blocks):
+        gr = b.get('gr')
+        if not gr or not isinstance(gr, str):
+            continue
+
+        lines = gr.splitlines()
+        new_lines = []
+        block_comments = b.setdefault('comments', [])
+
+        for line in lines:
+            line_strip = line.strip()
+            m = comment_full_re.match(line_strip)
+            if m:
+                # full-line comment "(2-4k) text..."
+                range_str = m.group(1)
+                text = m.group(2).strip()
+                if '-' in range_str:
+                    s, e = range_str.split('-', 1)
+                    start, end = int(s), int(e)
+                else:
+                    start = end = int(range_str)
+                # attach comment to start block if possible
+                target_bi = pair_to_block.get(start, None)
+                if target_bi is None:
+                    # fallback: attach to previous pair-looking block
+                    target_bi = max(0, bi - 1)
+                blocks[target_bi].setdefault('comments', []).append({
+                    'start': start, 'end': end, 'text': text, 'kind': 'range'
+                })
+                comments_found += 1
+                # do not keep this line in the original block -> remove
+                continue
+
+            # inline comment(s) in this line?
+            inline_matches = list(comment_inline_re.finditer(line))
+            if inline_matches:
+                cleaned_line = line
+                for im in inline_matches:
+                    range_str = im.group(1)
+                    text = im.group(2).strip()
+                    if '-' in range_str:
+                        s, e = range_str.split('-', 1)
+                        start, end = int(s), int(e)
+                    else:
+                        start = end = int(range_str)
+                    target_bi = pair_to_block.get(start, bi)
+                    blocks[target_bi].setdefault('comments', []).append({
+                        'start': start, 'end': end, 'text': text, 'kind': 'inline'
+                    })
+                    comments_found += 1
+                    # remove the inline comment chunk from the line
+                    cleaned_line = cleaned_line.replace(im.group(0), '')
+                cleaned_line = cleaned_line.strip()
+                if cleaned_line:
+                    new_lines.append(cleaned_line)
+                # if cleaned_line is empty we drop the line
+                continue
+
+            # no comment detected: keep original line
+            new_lines.append(line)
+
+        # write back the cleaned block text (without detected comment lines)
+        if new_lines:
+            b['gr'] = '\n'.join(new_lines)
+        else:
+            b['gr'] = ''
+        
+        # Also remove comment tokens from gr_tokens if they exist
+        gr_tokens = b.get('gr_tokens', [])
+        if gr_tokens:
+            # Filter out tokens that look like comment markers
+            filtered_tokens = []
+            for tok in gr_tokens:
+                if not isinstance(tok, str):
+                    filtered_tokens.append(tok)
+                    continue
+                tok_strip = tok.strip()
+                # Skip tokens that are just comment markers like "(2-4k)" or "(123k)"
+                if comment_full_re.match(tok_strip) or comment_inline_re.search(tok):
+                    continue
+                filtered_tokens.append(tok)
+            b['gr_tokens'] = filtered_tokens
+
+    # 3) ensure each block has comment_token_mask (same length as gr_tokens)
+    for b in blocks:
+        toks = b.get('gr_tokens') or []
+        mask = [False] * len(toks) if toks else []
+        # if block itself has comments, mark first token as comment-anchor
+        if b.get('comments'):
+            if len(mask) > 0:
+                mask[0] = True
+        b['comment_token_mask'] = mask
+
+    # debug summary
+    sample_comments = blocks[0].get('comments') if blocks else None
+    sample_mask = blocks[0].get('comment_token_mask') if blocks else None
+    print(f"DEBUG discover_and_attach_comments: comments found={comments_found} sample: {sample_comments[:3] if sample_comments else []} mask-sample: {sample_mask[:40] if sample_mask else None}")
 
 # ======= Hilfen: Token-Verarbeitung =======
 def _join_tokens_to_line(tokens: list[str]) -> str:
