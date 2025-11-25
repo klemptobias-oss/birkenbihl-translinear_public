@@ -160,6 +160,21 @@ def _process_one_input(infile: str,
     print(f"→ Base-Name aus Datei: {base}")
     
     blocks = Poesie.process_input_file(infile)
+    
+    # Safe call to comment discovery (fall back on original blocks)
+    final_blocks = list(blocks)
+    try:
+        cb = preprocess.discover_and_attach_comments(blocks)
+        if cb:
+            final_blocks = cb
+    except Exception:
+        logging.getLogger().exception("discover_and_attach_comments failed in poesie_pdf; proceeding without comments")
+    
+    # ensure comment fields exist
+    for b in final_blocks:
+        b.setdefault('comments', [])
+        b.setdefault('comment_token_mask', [False] * len(b.get('gr_tokens', []) or []))
+    
     print(f"→ Anzahl Blöcke: {len(blocks)}")
 
     # Erkenne Sprache aus Dateinamen
@@ -211,26 +226,8 @@ def _process_one_input(infile: str,
         print(f"DEBUG poesie_pdf: {hide_count} Regeln mit hide=true gefunden")
 
     # ---- Stelle sicher, dass Kommentare erkannt und zugeordnet sind ----
-    # discover_and_attach_comments füllt block['comments'] und block['comment_token_mask']
-    import traceback
-    try:
-        fb = None
-        if 'final_blocks' in locals() and final_blocks is not None:
-            fb = final_blocks
-        elif 'blocks' in locals():
-            fb = blocks
-        else:
-            fb = None
-        
-        if fb is None:
-            comments, comment_mask = [], None
-        else:
-            comments, comment_mask = preprocess.discover_and_attach_comments(fb)
-    except Exception as e:
-        logger.error(f"discover/attach comments failed in poesie_pdf: {e}")
-        import traceback
-        traceback.print_exc()
-        comments, comment_mask = [], None
+    # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen
+    # Kommentare sind bereits in final_blocks['comments'] vorhanden
     
     # WICHTIG: Reihenfolge - Farben ZUERST (basierend auf ORIGINALEN Tags), dann Tags entfernen
     # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal in der Loop!

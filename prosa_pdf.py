@@ -126,7 +126,25 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     blocks_raw = Prosa.process_input_file(infile)
     # Tokenisierung direkt hier durchführen, um die Pipeline an Poesie anzugleichen
     blocks = Prosa.group_pairs_into_flows(blocks_raw)
-    final_blocks = blocks  # Initialize final_blocks to avoid NameError
+    
+    # Defensive: ensure final_blocks is always set even if comment discovery fails
+    final_blocks = list(blocks)
+    try:
+        cb = preprocess.discover_and_attach_comments(blocks)
+        if cb:
+            final_blocks = cb
+        else:
+            # protective fallback
+            logging.getLogger().warning("discover_and_attach_comments returned empty/None for prosa, using original blocks")
+    except Exception:
+        logging.getLogger().exception("discover_and_attach_comments failed in prosa_pdf; continuing without comments")
+    
+    # guarantee structure for later stages
+    for b in final_blocks:
+        b.setdefault('comments', [])
+        if 'comment_token_mask' not in b or b['comment_token_mask'] is None:
+            gtokens = b.get('gr_tokens') or []
+            b['comment_token_mask'] = [False] * len(gtokens)
 
     # Erkenne Sprache aus Dateinamen
     ancient_lang_strength = _detect_language_from_filename(infile)
@@ -156,28 +174,8 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         print(f"DEBUG prosa_pdf: {hide_count} Regeln mit hide=true gefunden")
     
     # ---- Stelle sicher, dass Kommentare erkannt und zugeordnet sind ----
-    # WICHTIG: discover_and_attach_comments NUR EINMAL aufrufen (vor der Loop)
-    # discover_and_attach_comments füllt block['comments'] und block['comment_token_mask']
-    import traceback
-    try:
-        # Robust: verwende final_blocks falls vorhanden, sonst blocks
-        fb = None
-        if 'final_blocks' in locals() and final_blocks is not None:
-            fb = final_blocks
-        elif 'blocks' in locals():
-            fb = blocks
-        else:
-            fb = None
-        
-        if fb is None:
-            comments, comment_mask = [], None
-        else:
-            comments, comment_mask = preprocess.discover_and_attach_comments(fb)
-    except Exception as e:
-        logging.getLogger(__name__).error(f"discover/attach comments failed in prosa_pdf: {e}")
-        import traceback
-        traceback.print_exc()
-        comments, comment_mask = [], None
+    # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen (vor der Loop)
+    # Kommentare sind bereits in final_blocks['comments'] vorhanden
     
     for strength, color_mode, tag_mode in itertools.product(strengths, colors, tags):
         

@@ -13,6 +13,9 @@ from typing import List, Dict, Any, Iterable, Optional, Set, Tuple
 # Reduce noisy DEBUG output from lower-level modules by default
 logging.getLogger().setLevel(logging.INFO)
 
+# Limit very noisy per-token debug lines
+_TOKEN_DEBUG_LIMIT = 5
+
 """
 
 Kompatibilität:
@@ -512,6 +515,32 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,A
     
     return blocks
 
+# === Defensive wrapper for discover_and_attach_comments ===
+# Ensure the function always returns a list of blocks with 'comments'
+# and 'comment_token_mask' set (never None). Wrap the existing function defensively.
+_orig_discover_and_attach_comments = discover_and_attach_comments
+
+def discover_and_attach_comments(blocks):
+    """Defensive wrapper that guarantees non-None return and required fields."""
+    try:
+        final = _orig_discover_and_attach_comments(blocks)
+        if final is None:
+            logging.warning("discover_and_attach_comments returned None -> fallback to input blocks")
+            final = list(blocks)
+    except Exception:
+        logging.exception("discover_and_attach_comments threw; falling back to no-comments")
+        final = list(blocks)
+    
+    # Guarantee fields
+    for b in final:
+        if 'comments' not in b or b.get('comments') is None:
+            b['comments'] = []
+        if 'comment_token_mask' not in b or b.get('comment_token_mask') is None:
+            # default: no tokens are comment-masked
+            gtokens = b.get('gr_tokens') or []
+            b['comment_token_mask'] = [False] * len(gtokens)
+    return final
+
 # ======= Hilfen: Token-Verarbeitung =======
 def _join_tokens_to_line(tokens: list[str]) -> str:
     """
@@ -949,9 +978,11 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                                         new_en_tokens[i] = symbol + en_tok
                 
                 # WICHTIG: Speichere computed_color und computed_symbol in token_meta, damit Renderer sie auch nach Tag-Entfernung verwenden kann
+                # preserve color chosen by apply_colors so later tag removal does not wipe it
                 if i < len(token_meta):
                     if computed_color:
                         token_meta[i]['computed_color'] = computed_color
+                        token_meta[i]['color'] = computed_color  # Also store as 'color' for compatibility
                     if computed_symbol:
                         token_meta[i]['color_symbol'] = computed_symbol
                 else:
@@ -960,6 +991,7 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                         token_meta.append({})
                     if computed_color:
                         token_meta[i]['computed_color'] = computed_color
+                        token_meta[i]['color'] = computed_color  # Also store as 'color' for compatibility
                     if computed_symbol:
                         token_meta[i]['color_symbol'] = computed_symbol
             
