@@ -1343,13 +1343,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                     # NoTag NoTrans: Größerer Puffer für bessere Abstände
                     # WICHTIG: Bei Sprechern (Politeia) müssen wir einen noch größeren Puffer verwenden
                     # um Überlappungen zu vermeiden, besonders bei orange gefärbten Wörtern
-                    has_speaker = bool(speaker_display) or (block and block.get('speaker'))
-                    if has_speaker:
-                        # Größerer Puffer für Sprecher-Texte (wie Platon)
-                        extra_buffer = max(token_gr_style.fontSize * 0.08, 2.2)  # 8% oder mindestens 2.2pt für Sprecher
-                    else:
-                        # Normaler Puffer für §-Texte und normale Texte (Apologie)
-                        extra_buffer = max(token_gr_style.fontSize * 0.05, 1.5)  # 5% oder mindestens 1.5pt
+                    # Unified extra buffer: ensure speaker lines (Platon) get at least same spacing
+                    extra_buffer = max(token_gr_style.fontSize * 0.06, 1.6)
                     return w_gr + base_safety + extra_buffer
                 else:
                     # Tag NoTrans: Normaler Puffer (konsistent für alle)
@@ -1819,25 +1814,48 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     def render_block_comments(block, elements_list):
         """Rendert Kommentare aus block['comments'] als Paragraphen"""
         cms = block.get('comments') or []
+        if not cms:
+            return
+        
+        # Prüfe disable_comment_bg Flag (falls verfügbar)
+        disable_comment_bg = False
+        try:
+            disable_comment_bg = tag_config.get('disable_comment_bg', False) if tag_config else False
+        except Exception:
+            disable_comment_bg = block.get('disable_comment_bg', False)
+        
         for cm in cms:
-            txt = cm.get('text') or cm.get('comment') or cm.get('body') or ""
-            if not txt:
+            # Unterstütze verschiedene Formate: dict mit 'text', 'comment', 'body' oder direkt String
+            if isinstance(cm, dict):
+                txt = cm.get('text') or cm.get('comment') or cm.get('body') or ""
+            elif isinstance(cm, str):
+                txt = cm
+            else:
+                txt = str(cm) if cm else ""
+            
+            if not txt or not txt.strip():
                 continue
-            # Optional: Zeige den Bereich (z.B. (2-4))
-            rng = cm.get('pair_range')
+            
+            # Optional: Zeige den Bereich (z.B. (2-4k))
+            rng = cm.get('pair_range') if isinstance(cm, dict) else None
             if rng:
                 display = f"({rng[0]}-{rng[1]}k) {txt}"
+            elif isinstance(cm, dict) and cm.get('start') and cm.get('end'):
+                display = f"({cm.get('start')}-{cm.get('end')}k) {txt}"
             else:
-                display = txt
+                display = txt.strip()
+            
             print(f"✓✓✓ Kommentar verarbeiten (Prosa): {display[:80]}...")
             # Kommentar-Style: klein, grau, kursiv
             comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                fontName='DejaVu', fontSize=7,
-                leading=7 * 1.3,
+                fontName='DejaVu', fontSize=8,
+                leading=9,
                 alignment=TA_LEFT, leftIndent=5*mm,
-                spaceBefore=1, spaceAfter=2,
-                textColor=colors.grey, italic=True)
+                spaceBefore=2, spaceAfter=2,
+                textColor=colors.Color(0.36, 0.36, 0.36), italic=True)
+            elements_list.append(Spacer(1, 2*mm))
             elements_list.append(Paragraph(html.escape(display), comment_style_simple))
+            elements_list.append(Spacer(1, 2*mm))
 
     elements, idx = [], 0
     last_block_type = None  # Speichert den Typ des letzten verarbeiteten Blocks

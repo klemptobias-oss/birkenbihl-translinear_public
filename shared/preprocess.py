@@ -2105,3 +2105,43 @@ def apply_from_payload(blocks: List[Dict[str, Any]], payload: Dict[str, Any], *,
         tag_config=tag_config,
     )
 
+
+# WICHTIG: Safe-Wrapper für discover_and_attach_comments
+def discover_and_attach_comments_safe(blocks: List[Dict[str, Any]]) -> tuple:
+    """
+    Robust wrapper around discover_and_attach_comments().
+    Guarantees a tuple (comments_list, comment_token_mask) where neither element is None,
+    and ensures each block has 'comments' and 'comment_token_mask' keys (empty if none).
+    """
+    try:
+        # call existing function (modifies blocks in-place, returns None)
+        discover_and_attach_comments(blocks)
+        
+        # collect comments from blocks
+        comments = []
+        for b in blocks:
+            cms = b.get('comments', [])
+            if cms:
+                comments.extend(cms if isinstance(cms, list) else [cms])
+        
+        # ensure every block has comments / mask placeholders
+        for b in blocks:
+            if 'comments' not in b:
+                b['comments'] = []
+            if 'comment_token_mask' not in b or b.get('comment_token_mask') is None:
+                # default: empty list of same length as gr_tokens if available
+                grt = b.get('gr_tokens')
+                b['comment_token_mask'] = [] if grt is None else [False] * len(grt)
+        
+        # return comments list and empty mask (mask is per-block in blocks)
+        return comments, []
+    except Exception as e:
+        print(f"DEBUG discover_and_attach_comments_safe: exception caught: {e}")
+        import traceback
+        traceback.print_exc()
+        # ensure blocks have safe placeholders
+        for b in blocks:
+            b.setdefault('comments', [])
+            b.setdefault('comment_token_mask', [])
+        return [], []
+

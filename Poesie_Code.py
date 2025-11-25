@@ -2333,25 +2333,47 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             elements.append(KeepTogether(tables))
             
             # NEU: Kommentare aus block['comments'] rendern (nach dem pair-Block)
-            if b.get('comments'):
-                for cm in b.get('comments', []):
-                    txt = cm.get('text') or cm.get('comment') or cm.get('body') or ""
-                    if txt:
-                        # Optional: Zeige den Bereich (z.B. (2-4))
-                        rng = cm.get('pair_range')
-                        if rng:
-                            display = f"({rng[0]}-{rng[1]}k) {txt}"
-                        else:
-                            display = txt
-                        print(f"✓✓✓ Kommentar verarbeiten (Poesie): {display[:80]}...")
-                        # Kommentar-Style: klein, grau, kursiv
-                        comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                            fontName='DejaVu', fontSize=7,
-                            leading=7 * 1.3,
-                            alignment=TA_LEFT, leftIndent=5*MM,
-                            spaceBefore=1, spaceAfter=2,
-                            textColor=colors.grey, italic=True)
-                        elements.append(Paragraph(html.escape(display), comment_style_simple))
+            comments = b.get('comments') or []
+            if comments:
+                # Prüfe disable_comment_bg Flag (falls verfügbar)
+                disable_comment_bg = False
+                try:
+                    disable_comment_bg = tag_config.get('disable_comment_bg', False) if tag_config else False
+                except Exception:
+                    pass
+                
+                for cm in comments:
+                    # Unterstütze verschiedene Formate: dict mit 'text', 'comment', 'body' oder direkt String
+                    if isinstance(cm, dict):
+                        txt = cm.get('text') or cm.get('comment') or cm.get('body') or ""
+                    elif isinstance(cm, str):
+                        txt = cm
+                    else:
+                        txt = str(cm) if cm else ""
+                    
+                    if not txt or not txt.strip():
+                        continue
+                    
+                    # Optional: Zeige den Bereich (z.B. (2-4k))
+                    rng = cm.get('pair_range') if isinstance(cm, dict) else None
+                    if rng:
+                        display = f"({rng[0]}-{rng[1]}k) {txt}"
+                    elif isinstance(cm, dict) and cm.get('start') and cm.get('end'):
+                        display = f"({cm.get('start')}-{cm.get('end')}k) {txt}"
+                    else:
+                        display = txt.strip()
+                    
+                    print(f"✓✓✓ Kommentar verarbeiten (Poesie): {display[:80]}...")
+                    # Kommentar-Style: klein, grau, kursiv
+                    comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
+                        fontName='DejaVu', fontSize=8,
+                        leading=9,
+                        alignment=TA_LEFT, leftIndent=5*MM,
+                        spaceBefore=2, spaceAfter=2,
+                        textColor=colors.Color(0.36, 0.36, 0.36), italic=True)
+                    elements.append(Spacer(1, 2*MM))
+                    elements.append(Paragraph(html.escape(display), comment_style_simple))
+                    elements.append(Spacer(1, 2*MM))
 
             # Abstand nach jedem Textblock hinzufügen
             # Finde den nächsten relevanten Block (überspringe 'blank' und 'title_brace')

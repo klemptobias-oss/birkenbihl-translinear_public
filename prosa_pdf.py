@@ -150,7 +150,12 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # ---- Stelle sicher, dass Kommentare erkannt und zugeordnet sind ----
     # WICHTIG: discover_and_attach_comments NUR EINMAL aufrufen (vor der Loop)
     # discover_and_attach_comments füllt block['comments'] und block['comment_token_mask']
-    if hasattr(preprocess, "discover_and_attach_comments"):
+    # WICHTIG: Verwende Safe-Wrapper, der niemals None zurückgibt
+    if hasattr(preprocess, "discover_and_attach_comments_safe"):
+        comments, comment_mask = preprocess.discover_and_attach_comments_safe(blocks)
+        if comment_mask is None:
+            comment_mask = []
+    elif hasattr(preprocess, "discover_and_attach_comments"):
         preprocess.discover_and_attach_comments(blocks)
         # Zusätzlich: extract_inline_comments_from_blocks und assign_comment_ranges_to_blocks aufrufen
         if hasattr(preprocess, "extract_inline_comments_from_blocks") and hasattr(preprocess, "assign_comment_ranges_to_blocks"):
