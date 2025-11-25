@@ -2110,38 +2110,78 @@ def apply_from_payload(blocks: List[Dict[str, Any]], payload: Dict[str, Any], *,
 def discover_and_attach_comments_safe(blocks: List[Dict[str, Any]]) -> tuple:
     """
     Robust wrapper around discover_and_attach_comments().
-    Guarantees a tuple (comments_list, comment_token_mask) where neither element is None,
-    and ensures each block has 'comments' and 'comment_token_mask' keys (empty if none).
+    Returns a tuple (comments_per_block, comment_token_mask_per_block)
+    where:
+      - comments_per_block is a list with len(blocks), each element a list of comment strings
+      - comment_token_mask_per_block is a list with len(blocks), each element a list-of-bools
+    This avoids any 'NoneType' iterability errors downstream.
     """
+    import traceback
     try:
-        # call existing function (modifies blocks in-place, returns None)
-        discover_and_attach_comments(blocks)
-        
-        # collect comments from blocks
-        comments = []
-        for b in blocks:
-            cms = b.get('comments', [])
-            if cms:
-                comments.extend(cms if isinstance(cms, list) else [cms])
-        
-        # ensure every block has comments / mask placeholders
-        for b in blocks:
-            if 'comments' not in b:
-                b['comments'] = []
-            if 'comment_token_mask' not in b or b.get('comment_token_mask') is None:
-                # default: empty list of same length as gr_tokens if available
+        # prefer existing discover_and_attach_comments if defined
+        if 'discover_and_attach_comments' in globals():
+            res = discover_and_attach_comments(blocks)
+        else:
+            res = ([], [])
+
+        # Normalize result
+        if not isinstance(res, tuple) or len(res) != 2:
+            comments, mask = [], []
+        else:
+            comments, mask = res
+            comments = comments or []
+            mask = mask or []
+
+        # Ensure comments is a per-block list
+        if isinstance(comments, list) and len(comments) == len(blocks):
+            comments_per_block = []
+            for c in comments:
+                # each c might be a list or a single string; normalize to list
+                if c is None:
+                    comments_per_block.append([])
+                elif isinstance(c, list):
+                    comments_per_block.append([str(x) for x in c if x is not None])
+                else:
+                    # single comment string -> wrap
+                    comments_per_block.append([str(c)])
+        else:
+            # fallback: no comments - create empty lists per block
+            comments_per_block = [[] for _ in blocks]
+
+        # Ensure mask is a per-block list-of-lists of booleans
+        if isinstance(mask, list) and len(mask) == len(blocks):
+            mask_per_block = []
+            for i, m in enumerate(mask):
+                if m is None:
+                    # use block.gr_tokens length if available
+                    grt = blocks[i].get('gr_tokens')
+                    mask_per_block.append([False] * len(grt) if isinstance(grt, list) else [])
+                elif isinstance(m, list):
+                    # coerce truthy/falsey to bool
+                    mask_per_block.append([bool(x) for x in m])
+                else:
+                    # unexpected -> empty
+                    grt = blocks[i].get('gr_tokens')
+                    mask_per_block.append([False] * len(grt) if isinstance(grt, list) else [])
+        else:
+            # fallback: create empty masks per block sized to gr_tokens where possible
+            mask_per_block = []
+            for b in blocks:
                 grt = b.get('gr_tokens')
-                b['comment_token_mask'] = [] if grt is None else [False] * len(grt)
-        
-        # return comments list and empty mask (mask is per-block in blocks)
-        return comments, []
-    except Exception as e:
-        print(f"DEBUG discover_and_attach_comments_safe: exception caught: {e}")
-        import traceback
+                mask_per_block.append([False] * len(grt) if isinstance(grt, list) else [])
+
+        # Attach safe placeholders to each block so renderers can rely on them
+        for i, b in enumerate(blocks):
+            b['comments'] = comments_per_block[i] if i < len(comments_per_block) else []
+            b['comment_token_mask'] = mask_per_block[i] if i < len(mask_per_block) else []
+
+        return comments_per_block, mask_per_block
+    except Exception:
+        print("DEBUG discover_and_attach_comments_safe: unexpected exception")
         traceback.print_exc()
-        # ensure blocks have safe placeholders
+        # guarantee safe placeholders on exception
         for b in blocks:
             b.setdefault('comments', [])
             b.setdefault('comment_token_mask', [])
-        return [], []
+        return [[] for _ in blocks], [[False] * len(b.get('gr_tokens', [])) for b in blocks]
 

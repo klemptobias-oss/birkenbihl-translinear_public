@@ -118,10 +118,17 @@ def run_one(input_path: Path) -> None:
         print(f"→ Führe aus: {' '.join(str(c) for c in cmd)}")
         
         # Führe den Runner aus
-        result = subprocess.run(cmd, cwd=str(ROOT), check=True, capture_output=True, text=True)
-        print(result.stdout)
-        if result.stderr:
-            print(f"→ Stderr: {result.stderr}")
+        import traceback
+        try:
+            result = subprocess.run(cmd, cwd=str(ROOT), check=True, capture_output=True, text=True)
+            print(result.stdout)
+            if result.stderr:
+                print(f"→ Stderr: {result.stderr}")
+        except Exception as e:
+            print(f"ERROR: processing draft {input_path} failed with exception:")
+            traceback.print_exc()
+            # continue so CI can try other drafts
+            return
 
     except subprocess.CalledProcessError as e:
         print(f"✗ Fehler beim Ausführen des Runners für {input_path.name}:")

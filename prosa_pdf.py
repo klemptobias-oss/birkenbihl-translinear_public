@@ -150,55 +150,35 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # ---- Stelle sicher, dass Kommentare erkannt und zugeordnet sind ----
     # WICHTIG: discover_and_attach_comments NUR EINMAL aufrufen (vor der Loop)
     # discover_and_attach_comments füllt block['comments'] und block['comment_token_mask']
-    # WICHTIG: Verwende Safe-Wrapper, der niemals None zurückgibt
-    if hasattr(preprocess, "discover_and_attach_comments_safe"):
-        comments, comment_mask = preprocess.discover_and_attach_comments_safe(blocks)
-        if comment_mask is None:
-            comment_mask = []
-    elif hasattr(preprocess, "discover_and_attach_comments"):
-        preprocess.discover_and_attach_comments(blocks)
-        # Zusätzlich: extract_inline_comments_from_blocks und assign_comment_ranges_to_blocks aufrufen
-        if hasattr(preprocess, "extract_inline_comments_from_blocks") and hasattr(preprocess, "assign_comment_ranges_to_blocks"):
-            inline_comments = preprocess.extract_inline_comments_from_blocks(blocks)
-            preprocess.assign_comment_ranges_to_blocks(blocks, inline_comments)
-        # DEBUG: erste block comments + mask (falls vorhanden)
-        if blocks and isinstance(blocks, list):
-            b0 = blocks[0] if blocks else None
-            if b0:
-                print("DEBUG discover_and_attach_comments: comments example:", (b0.get('comments')[:3] if b0.get('comments') else []), "mask-sample:", (b0.get('comment_token_mask')[:40] if b0.get('comment_token_mask') else None))
-    else:
-        print("DEBUG discover_and_attach_comments: function not found in preprocess")
-    
-    # Ensure every block has comment_token_mask (verhindert None-Werte)
-    for b in blocks:
-        if not isinstance(b, dict):
-            continue
-        if b.get('type') in ('pair', 'flow'):
-            if 'comment_token_mask' not in b or b.get('comment_token_mask') is None:
-                b['comment_token_mask'] = [False] * len(b.get('gr_tokens', []))
+    import traceback
+    try:
+        comments, comment_mask = preprocess.discover_and_attach_comments_safe(final_blocks)
+        if not isinstance(comment_mask, list) or len(comment_mask) != len(final_blocks):
+            comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in final_blocks]
+        if not isinstance(comments, list) or len(comments) != len(final_blocks):
+            comments = [[] for _ in final_blocks]
+    except Exception:
+        print("ERROR prosa_pdf: discover/attach comments failed:")
+        traceback.print_exc()
+        comments = [[] for _ in final_blocks]
+        comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in final_blocks]
     
     for strength, color_mode, tag_mode in itertools.product(strengths, colors, tags):
         
         # Pipeline: apply_colors -> apply_tag_visibility -> optional remove_all_tags (NO_TAGS)
         # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal!
-        # 2) apply colors (must save orig tags in token_meta)
-        disable_comment_bg_flag = final_tag_config.get('disable_comment_bg', False) if final_tag_config else False
-        blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
-        
-        # extract hidden_tags_by_wortart straight from tag_config if present
-        hidden_by_wortart = None
-        if final_tag_config and 'hidden_tags_by_wortart' in final_tag_config:
-            hidden_by_wortart = final_tag_config['hidden_tags_by_wortart']
-        # 3) apply tag visibility
-        if tag_mode == "TAGS":
+        try:
+            disable_comment_bg_flag = (final_tag_config.get('disable_comment_bg', False) if isinstance(final_tag_config, dict) else False)
+            blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
+            hidden_by_wortart = (final_tag_config.get('hidden_tags_by_wortart') if isinstance(final_tag_config, dict) else None)
             blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
-            # DEBUG: Prüfe, ob Tags wirklich entfernt wurden
-            if blocks_after_visibility:
-                sample_block = next((b for b in blocks_after_visibility[:3] if isinstance(b, dict) and b.get('type') in ('pair', 'flow')), None)
-                if sample_block:
-                    sample_tokens = sample_block.get('gr_tokens', [])[:3]
-                    print(f"DEBUG prosa_pdf: Nach apply_tag_visibility - erste 3 gr_tokens: {sample_tokens}")
-        else: # NO_TAGS
+        except Exception:
+            print("ERROR prosa_pdf: apply_colors/apply_tag_visibility failed:")
+            traceback.print_exc()
+            blocks_after_visibility = blocks
+        
+        # 3) apply tag visibility (bereits im try-Block gesetzt, nur NO_TAGS weiter verarbeiten)
+        if tag_mode != "TAGS": # NO_TAGS
             blocks_after_visibility = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
             # NO_TAG variant: strip any remaining tags from tokens
             for b in blocks_after_visibility:

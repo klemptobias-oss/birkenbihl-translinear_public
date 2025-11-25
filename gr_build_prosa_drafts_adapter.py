@@ -103,11 +103,18 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
             cmd.extend(["--hide-pipes"])
         
         # Führe den Runner aus und übertrage Tag-Konfiguration
-        result = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True)
-        if result.returncode != 0:
-            print(f"Fehler beim Ausführen des Runners: {result.stderr}")
+        import traceback
+        try:
+            result = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True)
+            if result.returncode != 0:
+                print(f"Fehler beim Ausführen des Runners: {result.stderr}")
+                return
+            print(result.stdout)
+        except Exception as e:
+            print(f"ERROR: processing draft {input_path} failed with exception:")
+            traceback.print_exc()
+            # continue so CI can try other drafts
             return
-        print(result.stdout)
     except Exception as e:
         print(f"Fehler beim Ausführen des Runners: {e}")
         return
