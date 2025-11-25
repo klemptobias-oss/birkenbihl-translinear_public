@@ -327,7 +327,7 @@ def assign_comment_ranges_to_blocks(blocks: List[Dict[str,Any]], inline_comments
                     old[i] = True
                 b['comment_token_mask'] = old
 
-def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
+def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,Any]]:
     """
     Robustere Kommentar-Erkennung und -Zuordnung.
     - erkennt Zeilen wie "(2-4k) Kommentartext ..." (Range-kommentare)
@@ -500,6 +500,19 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
         total_comments_attached = sum(len(b.get('comments', [])) for b in blocks)
         if total_comments_attached > 0:
             print(f"DEBUG discover_and_attach_comments: total comments attached to blocks: {total_comments_attached}")
+    
+    # WICHTIG: Stelle sicher, dass IMMER blocks zurückgegeben wird (nie None) - verhindert 'NoneType' object is not iterable
+    # Stelle sicher, dass alle Blöcke comment_token_mask haben (auch wenn leer)
+    for b in blocks:
+        if b.get("type") in ("pair", "flow"):
+            if 'comment_token_mask' not in b:
+                toks = b.get('gr_tokens') or []
+                b['comment_token_mask'] = [False] * len(toks) if toks else []
+        if 'comments' not in b:
+            b['comments'] = []
+    
+    print(f"DEBUG discover_and_attach_comments: returning {len(blocks)} blocks with comments found={comments_found}")
+    return blocks
 
 # ======= Hilfen: Token-Verarbeitung =======
 def _join_tokens_to_line(tokens: list[str]) -> str:
@@ -2175,62 +2188,60 @@ def discover_and_attach_comments_safe(blocks: List[Dict[str, Any]]) -> tuple:
     """
     import traceback
     try:
-        # prefer existing discover_and_attach_comments if defined
-        if 'discover_and_attach_comments' in globals():
-            res = discover_and_attach_comments(blocks)
-        else:
-            res = ([], [])
+        # call discover_and_attach_comments - it now returns blocks (never None)
+        blocks_result = discover_and_attach_comments(blocks)
+        # ensure blocks_result is not None
+        if blocks_result is None:
+            blocks_result = blocks
+            print("WARNING discover_and_attach_comments_safe: discover_and_attach_comments returned None, using original blocks")
 
-        # Normalize result
-        if not isinstance(res, tuple) or len(res) != 2:
-            comments, mask = [], []
-        else:
-            comments, mask = res
-            comments = comments or []
-            mask = mask or []
-
-        # Ensure comments is a per-block list
-        if isinstance(comments, list) and len(comments) == len(blocks):
-            comments_per_block = []
-            for c in comments:
-                # each c might be a list or a single string; normalize to list
-                if c is None:
-                    comments_per_block.append([])
-                elif isinstance(c, list):
-                    comments_per_block.append([str(x) for x in c if x is not None])
-                else:
-                    # single comment string -> wrap
-                    comments_per_block.append([str(c)])
-        else:
-            # fallback: no comments - create empty lists per block
-            comments_per_block = [[] for _ in blocks]
-
-        # Ensure mask is a per-block list-of-lists of booleans
-        if isinstance(mask, list) and len(mask) == len(blocks):
-            mask_per_block = []
-            for i, m in enumerate(mask):
-                if m is None:
-                    # use block.gr_tokens length if available
-                    grt = blocks[i].get('gr_tokens')
-                    mask_per_block.append([False] * len(grt) if isinstance(grt, list) else [])
-                elif isinstance(m, list):
-                    # coerce truthy/falsey to bool
-                    mask_per_block.append([bool(x) for x in m])
-                else:
-                    # unexpected -> empty
-                    grt = blocks[i].get('gr_tokens')
-                    mask_per_block.append([False] * len(grt) if isinstance(grt, list) else [])
-        else:
-            # fallback: create empty masks per block sized to gr_tokens where possible
-            mask_per_block = []
-            for b in blocks:
-                grt = b.get('gr_tokens')
-                mask_per_block.append([False] * len(grt) if isinstance(grt, list) else [])
+        # Extract comments and masks from blocks_result
+        comments_per_block = []
+        mask_per_block = []
+        for b in blocks_result:
+            comments_per_block.append(b.get('comments', []))
+            mask_per_block.append(b.get('comment_token_mask', []))
+        
+        # Normalize comments_per_block and mask_per_block
+        normalized_comments = []
+        normalized_masks = []
+        for i, b in enumerate(blocks_result):
+            # Normalize comments
+            c_list = comments_per_block[i] if i < len(comments_per_block) else []
+            if not isinstance(c_list, list):
+                c_list = [c_list] if c_list else []
+            # Handle comment dicts - extract text field
+            normalized_c = []
+            for c in c_list:
+                if isinstance(c, dict):
+                    txt = c.get('text') or c.get('comment') or c.get('body') or ""
+                    if txt:
+                        normalized_c.append(str(txt))
+                elif c is not None:
+                    normalized_c.append(str(c))
+            normalized_comments.append(normalized_c)
+            
+            # Normalize mask
+            m_list = mask_per_block[i] if i < len(mask_per_block) else []
+            if not isinstance(m_list, list):
+                grt = b.get('gr_tokens', [])
+                m_list = [False] * len(grt) if grt else []
+            normalized_masks.append([bool(x) for x in m_list])
+        
+        comments_per_block = normalized_comments
+        mask_per_block = normalized_masks
 
         # Attach safe placeholders to each block so renderers can rely on them
-        for i, b in enumerate(blocks):
-            b['comments'] = comments_per_block[i] if i < len(comments_per_block) else []
-            b['comment_token_mask'] = mask_per_block[i] if i < len(mask_per_block) else []
+        for i, b in enumerate(blocks_result):
+            if i < len(comments_per_block):
+                b['comments'] = comments_per_block[i]
+            else:
+                b.setdefault('comments', [])
+            if i < len(mask_per_block):
+                b['comment_token_mask'] = mask_per_block[i]
+            else:
+                grt = b.get('gr_tokens', [])
+                b['comment_token_mask'] = [False] * len(grt) if grt else []
 
         return comments_per_block, mask_per_block
     except Exception:

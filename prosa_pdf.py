@@ -169,13 +169,13 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal!
         try:
             disable_comment_bg_flag = (final_tag_config.get('disable_comment_bg', False) if isinstance(final_tag_config, dict) else False)
-            blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
+            blocks_with_colors = preprocess.apply_colors(final_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
             hidden_by_wortart = (final_tag_config.get('hidden_tags_by_wortart') if isinstance(final_tag_config, dict) else None)
             blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
         except Exception:
             print("ERROR prosa_pdf: apply_colors/apply_tag_visibility failed:")
             traceback.print_exc()
-            blocks_after_visibility = blocks
+            blocks_after_visibility = final_blocks
         
         # 3) apply tag visibility (bereits im try-Block gesetzt, nur NO_TAGS weiter verarbeiten)
         if tag_mode != "TAGS": # NO_TAGS
