@@ -202,11 +202,17 @@ def _process_one_input(infile: str,
         hide_count = sum(1 for conf in final_tag_config.values() if isinstance(conf, dict) and (conf.get('hide') == True or conf.get('hide') == 'hide' or conf.get('hide') == 'true'))
         print(f"DEBUG poesie_pdf: {hide_count} Regeln mit hide=true gefunden")
 
-    # 0) DISCOVER inline/flow comments and attach them to blocks (VOR apply_colors)
-    try:
+    # ---- Stelle sicher, dass Kommentare erkannt und zugeordnet sind ----
+    # discover_and_attach_comments füllt block['comments'] und block['comment_token_mask']
+    if hasattr(preprocess, "discover_and_attach_comments"):
         preprocess.discover_and_attach_comments(blocks)
-    except Exception as e:
-        print(f"DEBUG: discover_and_attach_comments error: {e}")
+        # DEBUG: erste block comments + mask (falls vorhanden)
+        if blocks and isinstance(blocks, list):
+            b0 = blocks[0] if blocks else None
+            if b0:
+                print("DEBUG discover_and_attach_comments: comments example:", (b0.get('comments')[:3] if b0.get('comments') else []), "mask-sample:", (b0.get('comment_token_mask')[:40] if b0.get('comment_token_mask') else None))
+    else:
+        print("DEBUG discover_and_attach_comments: function not found in preprocess")
     
     # Ensure every block has comment_token_mask
     for b in blocks:
@@ -222,16 +228,22 @@ def _process_one_input(infile: str,
         
         # NEW pipeline: discover comments → colors (store orig tags, respect comment mask) → tag visibility → remove_all_tags for NO_TAGS
         # Schritt 1: Farbzuweisung BASIEREND AUF DEN ORIGINALEN TAGS (damit Wortarten korrekt erkannt werden)
-        # If user requested comment bg disabled (only for poesie), pass flag
-        disable_comment_bg_flag = final_tag_config.get('disable_comment_bg', False) if final_tag_config else False
+        # Wenn disable_comment_bg in tag_config gesetzt ist, übergebe es an apply_colors
+        disable_comment_bg_flag = False
+        if final_tag_config and isinstance(final_tag_config, dict):
+            disable_comment_bg_flag = bool(final_tag_config.get('disable_comment_bg', False))
         blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
         
         # Schritt 2: Jetzt erst Tag-Sichtbarkeit anwenden (Tags entfernen, aber Farben bleiben erhalten)
         # WICHTIG: apply_tag_visibility macht auch Übersetzungs-Ausblendung!
-        # Use hidden_tags_by_wortart from tag_config if present
+        # Aus tag_config bauen wir hidden_tags_by_wortart (falls vorhanden)
         hidden_by_wortart = None
         if final_tag_config and isinstance(final_tag_config, dict):
-            hidden_by_wortart = final_tag_config.get('hidden_tags_by_wortart')
+            raw = final_tag_config.get('hidden_tags_by_wortart') or final_tag_config.get('hidden_tags_by_wordart') or None
+            if raw:
+                # Normalisiere Keys lower-case und Werte als set
+                hidden_by_wortart = {k.lower(): set(v) for k, v in raw.items()}
+                print("DEBUG poesie_pdf: derived hidden_tags_by_wortart keys:", list(hidden_by_wortart.keys()))
         
         if tag_mode == "TAGS":
             blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)

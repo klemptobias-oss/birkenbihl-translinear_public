@@ -604,7 +604,13 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                 
                 # Extract original tags and store them so later removal uses original tag set
                 orig_tags = set(_extract_tags(token))
-                token_meta[i].setdefault('orig_tags', list(orig_tags))
+                # Speichere die Original-Tags, falls noch nicht vorhanden (wichtig für apply_tag_visibility)
+                if i < len(token_meta):
+                    if 'orig_tags' not in token_meta[i] or not token_meta[i].get('orig_tags'):
+                        token_meta[i]['orig_tags'] = list(orig_tags)
+                else:
+                    # sollte nicht passieren, aber sicherstellen
+                    token_meta.append({'orig_tags': list(orig_tags)})
                 
                 # If disable_comment_bg and this token belongs to comment → skip bg coloring
                 if disable_comment_bg and new_block.get("comment_token_mask", [False])[i]:
@@ -1072,6 +1078,27 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
     elif hidden_tags_by_wortart:
         hidden_tags_by_wortart = {k.lower(): v for k, v in hidden_tags_by_wortart.items()}
     
+    # ---- Helper: Entferne nur die angegebenen Tags aus einem Token-String ----
+    def remove_tags_from_token_local(tok: str, tags_to_remove: Set[str]) -> str:
+        """
+        Entferne nur die Parenthesen-Tags (z.B. '(N)', '(G)') aus tok, die in tags_to_remove stehen.
+        Bewahrt Prefixe wie '$', '+', '-', '§' und alle anderen Teile des Tokens.
+        """
+        if not tags_to_remove:
+            return tok
+        # callback für jede Klammergruppe
+        def repl(m):
+            tag = m.group(1).strip()
+            # falls Gruppe aus mehreren Subtags besteht (sollte selten sein), check jedes Einzelne:
+            # Wir behandeln einzelne rohe Tags (z.B. 'N', 'G', 'Adj'), remove wenn eines matcht.
+            if tag in tags_to_remove:
+                return ''
+            return '(' + tag + ')'
+        # ersetze jede (TAG) Gruppe einzeln
+        result = RE_PAREN_TAG.sub(repl, tok)
+        # Trim überflüssige Doppelpunkte/Kommas etc. nicht verändern — wir geben result zurück
+        return result
+    
     if hidden_tags_by_wortart:
         # Normalisiere alle Keys zu lowercase für konsistente Lookups
         hidden_tags_by_wortart_normalized = {k.lower(): v for k, v in hidden_tags_by_wortart.items()}
@@ -1086,6 +1113,10 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         if not isinstance(block, dict) or block.get('type') not in ('pair','flow'):
             continue
         
+        gr_tokens = block.get('gr_tokens', [])
+        # token_meta sollte von apply_colors gesetzt worden sein; wenn nicht, erzeuge Platzhalter
+        token_meta = block.setdefault("token_meta", [{} for _ in gr_tokens])
+        
         # WICHTIG: Übersetzungs-Ausblendung ZUERST (bevor Tags entfernt werden)
         # Verwende ORIGINAL-Tokens (mit allen Tags) für die Erkennung
         if translation_rules:
@@ -1098,72 +1129,47 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         block['en_tokens'][idx] = ''
         
         # DANACH: Tag-Entfernung (wortart-spezifisch)
-        for tok_field in ('gr_tokens','de_tokens','en_tokens'):
-            toks = block.get(tok_field)
-            if not isinstance(toks, list):
+        # neue, sichere Logik: benutze orig_tags (falls vorhanden), bestimme wortart davon,
+        # entferne nur die Tags, die in hidden_tags_by_wortart[w] stehen UND tatsächlich auf dem Token vorhanden sind.
+        new_tokens_for_block: List[str] = []
+        changed = 0
+        
+        for i, tok in enumerate(gr_tokens):
+            if not tok:
+                new_tokens_for_block.append(tok)
                 continue
             
-            new_toks = []
-            changed_this_field = 0
+            # Ursprungstags: falls apply_colors token_meta['orig_tags'] gesetzt hat -> benutzen,
+            # sonst aus dem Token extrahieren
+            orig_tags = set(token_meta[i].get('orig_tags', _extract_tags(tok)))
             
-            for tok_idx, tok in enumerate(toks):
-                if not tok:
-                    new_toks.append(tok)
-                    continue
-                
-                # Für gr_tokens: Bestimme Wortart und entferne nur tags dieser Wortart
-                if tok_field == 'gr_tokens' and hidden_tags_by_wortart:
-                    # Use original tags from token_meta if available (set by apply_colors)
-                    token_meta_dict = block.get('token_meta', [])
-                    original_tags = set(token_meta_dict[tok_idx].get('orig_tags', _extract_tags(tok))) if tok_idx < len(token_meta_dict) else set(_extract_tags(tok))
-                    
-                    if not original_tags:
-                        new_toks.append(tok)
-                        continue
-                    
-                    # Determine wortart for this token. Use earlier helper or compute from orig_tags.
-                    # Some logic in repo sets 'wortart' via helper: try to reuse it if present
-                    wortart = None
-                    if tok_idx < len(token_meta_dict) and 'wortart' in token_meta_dict[tok_idx]:
-                        wortart = token_meta_dict[tok_idx]['wortart']
-                    else:
-                        # Fallback: use helper function
-                        wortart, _ = _get_wortart_and_relevant_tags(original_tags)
-                    
-                    if not wortart:
-                        new_toks.append(tok)
-                        continue
-                    
-                    wk = wortart.lower()
-                    if wk not in hidden_tags_by_wortart:
-                        new_toks.append(tok)
-                        continue
-                    
-                    tags_to_hide = set(hidden_tags_by_wortart[wk])
-                    # Only remove tags that actually exist on token (intersection)
-                    actually_present_to_remove = tags_to_hide & original_tags
-                    
-                    if not actually_present_to_remove:
-                        new_toks.append(tok)
-                        continue
-                    
-                    # Debug: only print for first blocks / tokens (limit output)
-                    if bi < 2 and tok_idx < 5:
-                        print(f"DEBUG apply_tag_visibility: Block {bi} Token {tok_idx}: wortart='{wortart}', tags_removed={sorted(list(actually_present_to_remove))}, orig_tags={sorted(list(original_tags))[:8]}")
-                    
-                    # Remove only the tags that actually exist (defensive)
-                    new_tok = remove_tags_from_token(tok, actually_present_to_remove)
-                    if new_tok != tok:
-                        new_toks.append(new_tok)
-                        changed_this_field += 1
-                    else:
-                        new_toks.append(tok)
-                else:
-                    # Für de_tokens/en_tokens: Keine Tag-Entfernung (haben keine Tags)
-                    new_toks.append(tok)
+            # Bestimme Wortart für dieses Token anhand der ORIGINAL-Tags (hilfsfunktion wird verwendet)
+            try:
+                wortart, _ = _get_wortart_and_relevant_tags(orig_tags)
+            except Exception:
+                wortart = None
             
-            block[tok_field] = new_toks
-            changed_total += changed_this_field
+            tags_to_hide = set()
+            if hidden_tags_by_wortart and wortart:
+                tags_to_hide = set(hidden_tags_by_wortart.get(wortart.lower(), []))
+            
+            # Entferne nur die Tags, die sowohl in tags_to_hide stehen als auch tatsächlich im Token vorhanden sind
+            tags_to_remove = tags_to_hide & set(orig_tags)
+            if tags_to_remove:
+                # Debug: only print for first blocks / tokens (limit output)
+                if bi < 2 and i < 5:
+                    print(f"DEBUG apply_tag_visibility: Block {bi} Token {i}: wortart='{wortart}', tags_removed={sorted(list(tags_to_remove))}, orig_tags={sorted(list(orig_tags))[:8]}")
+                cleaned = remove_tags_from_token_local(tok, tags_to_remove)
+                if cleaned != tok:
+                    changed += 1
+                new_tokens_for_block.append(cleaned)
+            else:
+                new_tokens_for_block.append(tok)
+        
+        # End for tokens in block
+        block['gr_tokens'] = new_tokens_for_block
+        if changed:
+            changed_total += changed
         
         # Rebuild string fields if renderer may use them
         if 'gr_tokens' in block:
