@@ -109,6 +109,39 @@ RE_LEAD_BAR_COLOR= re.compile(r'^\|\s*([+\-#§$])')  # |+ |# |- |§ |$ (Farbcode
 RE_WORD_START = re.compile(r'([(\[|]*)([\w\u0370-\u03FF\u1F00-\u1FFF\u1F00-\u1FFF]+)') # Findet den Anfang eines Wortes, auch mit Präfixen wie (, [ oder |
 RE_STEPHANUS = re.compile(r'\[(\d+[a-e])\]')  # Stephanus-Paginierungen: [543b], [546b] etc.
 
+def is_trivial_translation(text: str) -> bool:
+    """
+    True, wenn text nur aus Interpunktionszeichen oder Stephanus-Paginierungen besteht.
+    - z.B. ".", "?", "]", "[", ":" oder "[543b]" oder Kombinationen wie ". . ."
+    Used to *drop* such translation lines when hide-translation is requested.
+    WICHTIG: Sprecher zählen NICHT als "Wort" - sie werden ignoriert.
+    """
+    if not text:
+        return True
+    t = text.strip()
+    
+    # Entferne Sprecher-Marker (z.B. "[Sokrates:]", "[Φύλαξ:]") - diese zählen nicht als "Wort"
+    # Sprecher-Marker sind typischerweise am Anfang: [Name:] oder [Name]
+    t_no_speaker = re.sub(r'^\s*\[[^\]]+:\]\s*', '', t)  # [Name:]
+    t_no_speaker = re.sub(r'^\s*\[[^\]]+\]\s*', '', t_no_speaker)  # [Name] (ohne Doppelpunkt)
+    
+    # Wenn nach Entfernen des Sprechers nichts mehr übrig ist -> trivial
+    if not t_no_speaker.strip():
+        return True
+    
+    # Prüfe auf Stephanus-Paginierungen: [123a] pattern
+    if RE_STEPHANUS.search(t_no_speaker):
+        # Entferne alle Stephanus-Marker und prüfe, ob noch Text übrig ist
+        without_steps = RE_STEPHANUS.sub('', t_no_speaker).strip()
+        if not without_steps:
+            return True
+    
+    # Wenn nur Interpunktion und Leerzeichen übrig bleiben
+    if re.fullmatch(r'^[\s\.\,\;\:\?\!\-\(\)\[\]\"\'\/\\\|…·•]+$', t_no_speaker):
+        return True
+    
+    return False
+
 COLOR_SYMBOLS = {'#', '+', '-', '§', '$'}
 COLOR_MAP = {
     'red': '#',
@@ -1267,10 +1300,11 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
     else:
         print("DEBUG apply_tag_visibility: hidden_tags_by_wortart ist leer - keine Tags werden entfernt")
     
-    # Apply removal on tokens for each pair/flow block
+    # Apply removal on tokens for each pair/flow/quote block
+    # APPLY to pair, flow, and quote blocks (quotes/special regions must behave like pairs)
     changed_total = 0
     for bi, block in enumerate(blocks_copy):
-        if not isinstance(block, dict) or block.get('type') not in ('pair','flow'):
+        if not isinstance(block, dict) or block.get('type') not in ('pair','flow','quote'):
             continue
         
         gr_tokens = block.get('gr_tokens', [])
@@ -1281,12 +1315,32 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         # Verwende ORIGINAL-Tokens (mit allen Tags) für die Erkennung
         if translation_rules:
             gr_tokens_original = block.get('gr_tokens', [])
+            de_tokens = block.get('de_tokens', [])
+            en_tokens = block.get('en_tokens', [])
+            
             for idx, gr_token in enumerate(gr_tokens_original):
                 if _token_should_hide_translation(gr_token, translation_rules):
-                    if idx < len(block.get('de_tokens', [])):
-                        block['de_tokens'][idx] = ''
-                    if idx < len(block.get('en_tokens', [])):
-                        block['en_tokens'][idx] = ''
+                    # Entferne Übersetzung, aber prüfe auch ob sie trivial ist (nur Interpunktion/Stephanus)
+                    # WICHTIG: Wenn Übersetzung trivial ist, entferne sie auch wenn hide_translation nicht aktiv ist
+                    if idx < len(de_tokens):
+                        de_text = de_tokens[idx].strip() if isinstance(de_tokens[idx], str) else ''
+                        # Wenn Übersetzung trivial ist (nur Interpunktion/Stephanus), entferne sie komplett
+                        if is_trivial_translation(de_text):
+                            de_tokens[idx] = ''
+                        # Ansonsten: entferne nur wenn hide_translation aktiv ist (was hier der Fall ist, da wir in diesem if-Block sind)
+                        else:
+                            de_tokens[idx] = ''
+                    
+                    if idx < len(en_tokens):
+                        en_text = en_tokens[idx].strip() if isinstance(en_tokens[idx], str) else ''
+                        if is_trivial_translation(en_text):
+                            en_tokens[idx] = ''
+                        else:
+                            en_tokens[idx] = ''
+            
+            # Aktualisiere die Token-Listen im Block
+            block['de_tokens'] = de_tokens
+            block['en_tokens'] = en_tokens
         
         # DANACH: Tag-Entfernung (wortart-spezifisch)
         # neue, sichere Logik: benutze orig_tags (falls vorhanden), bestimme wortart davon,
@@ -1301,7 +1355,12 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             
             # Ursprungstags: falls apply_colors token_meta['orig_tags'] gesetzt hat -> benutzen,
             # sonst aus dem Token extrahieren
-            orig_tags = set(token_meta[i].get('orig_tags', _extract_tags(tok)))
+            original_tags = set()
+            if i < len(token_meta):
+                original_tags = set(token_meta[i].get('orig_tags', []))
+            if not original_tags:
+                original_tags = set(_extract_tags(tok))
+            orig_tags = original_tags
             
             # Bestimme Wortart für dieses Token anhand der ORIGINAL-Tags (hilfsfunktion wird verwendet)
             try:
@@ -1743,7 +1802,13 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
             
             # WICHTIG: Entferne Interpunktion/Stephanus auch wenn nur EINE Übersetzung ausgeblendet ist
             # (nicht nur wenn ALLE ausgeblendet sind)
+            # AUCH: Entferne trivial translations (nur Interpunktion/Stephanus) IMMER, auch wenn hide_translation nicht aktiv ist
             if should_hide_translation or has_all_translations_hidden:
+                # Prüfe ob Übersetzung trivial ist (nur Interpunktion/Stephanus) - das ist die robusteste Methode
+                if is_trivial_translation(token_stripped):
+                    result['de_tokens'][idx] = ''
+                    continue
+                
                 # Entferne Tokens, die nur aus Satzzeichen bestehen
                 if _is_punctuation_only_token(token_stripped):
                     result['de_tokens'][idx] = ''
@@ -1757,10 +1822,14 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
                     else:
                         # Token enthält Stephanus-Paginierung + anderen Text → nur Paginierung entfernen
                         cleaned = _remove_stephanus_from_token(token)
-                        if not cleaned.strip() or _is_punctuation_only_token(cleaned.strip()):
+                        if not cleaned.strip() or is_trivial_translation(cleaned.strip()):
                             result['de_tokens'][idx] = ''
                         else:
                             result['de_tokens'][idx] = cleaned
+            # AUCH wenn hide_translation NICHT aktiv ist: entferne trivial translations
+            elif is_trivial_translation(token_stripped):
+                result['de_tokens'][idx] = ''
+                continue
     
     # Entferne Stephanus-Paginierungen aus EN-Tokens
     # ROBUST: Entferne ALLE Stephanus-Paginierungen aus Übersetzungszeilen, wenn irgendwelche Übersetzungen ausgeblendet sind
@@ -1780,7 +1849,13 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
             
             # WICHTIG: Entferne Interpunktion/Stephanus auch wenn nur EINE Übersetzung ausgeblendet ist
             # (nicht nur wenn ALLE ausgeblendet sind)
+            # AUCH: Entferne trivial translations (nur Interpunktion/Stephanus) IMMER, auch wenn hide_translation nicht aktiv ist
             if should_hide_translation or has_all_translations_hidden:
+                # Prüfe ob Übersetzung trivial ist (nur Interpunktion/Stephanus)
+                if is_trivial_translation(token_stripped):
+                    result['en_tokens'][idx] = ''
+                    continue
+                
                 # Entferne Tokens, die nur aus Satzzeichen bestehen
                 if _is_punctuation_only_token(token_stripped):
                     result['en_tokens'][idx] = ''
@@ -1798,6 +1873,10 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
                             result['en_tokens'][idx] = ''
                         else:
                             result['en_tokens'][idx] = cleaned
+            # AUCH wenn hide_translation NICHT aktiv ist: entferne trivial translations
+            elif is_trivial_translation(token_stripped):
+                result['en_tokens'][idx] = ''
+                continue
     
     return result
 

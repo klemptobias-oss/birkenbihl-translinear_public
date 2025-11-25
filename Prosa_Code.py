@@ -2243,13 +2243,50 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 temp_quote_blocks = preprocess.remove_all_tags(temp_quote_blocks, tag_config)
             
             # 3) Translation-Hiding anwenden (wenn konfiguriert)
+            # WICHTIG: Zitate müssen die gleiche Translation-Hiding-Logik wie normale Blöcke erhalten
             if tag_config and isinstance(tag_config, dict):
+                # Verwende die gleiche Logik wie in apply_tag_visibility
+                # (apply_tag_visibility wird bereits oben aufgerufen, aber wir müssen sicherstellen,
+                # dass auch trivial translations entfernt werden)
                 translation_rules = tag_config.get('translation_rules') or tag_config.get('hide_translations')
                 if translation_rules:
                     # Wende Translation-Hiding auf jeden Block im Zitat an
                     processed_quote_blocks = []
                     for qb in temp_quote_blocks:
                         if qb.get('type') == 'pair':
+                            # Wende die gleiche Logik wie in apply_tag_visibility an
+                            gr_tokens_orig = qb.get('gr_tokens', [])
+                            de_tokens = list(qb.get('de_tokens', []))
+                            en_tokens = list(qb.get('en_tokens', []))
+                            
+                            for idx, gr_token in enumerate(gr_tokens_orig):
+                                if hasattr(preprocess, '_token_should_hide_translation'):
+                                    if preprocess._token_should_hide_translation(gr_token, translation_rules):
+                                        # Prüfe ob Übersetzung trivial ist (nur Interpunktion/Stephanus)
+                                        if idx < len(de_tokens):
+                                            de_text = de_tokens[idx].strip() if isinstance(de_tokens[idx], str) else ''
+                                            if hasattr(preprocess, 'is_trivial_translation'):
+                                                if preprocess.is_trivial_translation(de_text):
+                                                    de_tokens[idx] = ''
+                                                else:
+                                                    de_tokens[idx] = ''
+                                            else:
+                                                de_tokens[idx] = ''
+                                        
+                                        if idx < len(en_tokens):
+                                            en_text = en_tokens[idx].strip() if isinstance(en_tokens[idx], str) else ''
+                                            if hasattr(preprocess, 'is_trivial_translation'):
+                                                if preprocess.is_trivial_translation(en_text):
+                                                    en_tokens[idx] = ''
+                                                else:
+                                                    en_tokens[idx] = ''
+                                            else:
+                                                en_tokens[idx] = ''
+                            
+                            qb['de_tokens'] = de_tokens
+                            qb['en_tokens'] = en_tokens
+                            
+                            # Wende auch _hide_stephanus_in_translations an
                             processed_qb = preprocess._hide_stephanus_in_translations(qb, translation_rules)
                             # Wende auch _hide_manual_translations_in_block an, falls vorhanden
                             if hasattr(preprocess, '_hide_manual_translations_in_block'):

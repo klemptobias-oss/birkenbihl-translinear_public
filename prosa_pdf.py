@@ -151,6 +151,10 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # discover_and_attach_comments füllt block['comments'] und block['comment_token_mask']
     if hasattr(preprocess, "discover_and_attach_comments"):
         preprocess.discover_and_attach_comments(blocks)
+        # Zusätzlich: extract_inline_comments_from_blocks und assign_comment_ranges_to_blocks aufrufen
+        if hasattr(preprocess, "extract_inline_comments_from_blocks") and hasattr(preprocess, "assign_comment_ranges_to_blocks"):
+            inline_comments = preprocess.extract_inline_comments_from_blocks(blocks)
+            preprocess.assign_comment_ranges_to_blocks(blocks, inline_comments)
         # DEBUG: erste block comments + mask (falls vorhanden)
         if blocks and isinstance(blocks, list):
             b0 = blocks[0] if blocks else None
