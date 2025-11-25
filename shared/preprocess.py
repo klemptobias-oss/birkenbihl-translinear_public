@@ -366,7 +366,7 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
                         start = end = int(range_str)
                     target_bi = pair_to_block.get(start, bi)
                     blocks[target_bi].setdefault('comments', []).append({
-                        'start': start, 'end': end, 'text': text, 'kind': 'inline'
+                        'start': start, 'end': end, 'text': text, 'kind': 'inline', 'pair_range': (start, end)
                     })
                     comments_found += 1
                     # remove the inline comment chunk from the line
@@ -416,6 +416,11 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
     sample_comments = blocks[0].get('comments') if blocks else None
     sample_mask = blocks[0].get('comment_token_mask') if blocks else None
     print(f"DEBUG discover_and_attach_comments: comments found={comments_found} sample: {sample_comments[:3] if sample_comments else []} mask-sample: {sample_mask[:40] if sample_mask else None}")
+    
+    # WICHTIG: Stelle sicher, dass Kommentare auch wirklich an Block angehängt wurden
+    total_comments_attached = sum(len(b.get('comments', [])) for b in blocks)
+    if total_comments_attached > 0:
+        print(f"DEBUG discover_and_attach_comments: total comments attached to blocks: {total_comments_attached}")
 
 # ======= Hilfen: Token-Verarbeitung =======
 def _join_tokens_to_line(tokens: list[str]) -> str:
@@ -1608,16 +1613,22 @@ RE_PUNCTUATION_ONLY = re.compile(r'^[.,;:!?·…\s]+$')
 
 def _is_punctuation_only_token(token: str) -> bool:
     """
-    Prüft, ob ein Token nur aus Satzzeichen besteht (mit optionalen Leerzeichen).
-    Beispiele: ".", "?", "!", "...", ". . .", "·", etc.
+    Prüft, ob ein Token nur aus Satzzeichen oder Stephanus-Paginierungen besteht.
+    Beispiele: ".", "?", "!", "...", ". . .", "·", "[581b]", "[1251a]", "[5c]", "[25e]", etc.
     """
     if not token:
         return False
     token_stripped = token.strip()
+    
+    # Prüfe auf Stephanus-Paginierung wie [581b], [1251a], [5c], [25e]
+    if RE_STEPHANUS.fullmatch(token_stripped):
+        return True
+    
     # Entferne Leerzeichen und prüfe, ob nur Satzzeichen übrig bleiben
-    no_spaces = token_stripped.replace(' ', '')
-    # Prüfe, ob nur Satzzeichen vorhanden sind
-    return bool(no_spaces) and all(c in '.,;:!?·…' for c in no_spaces)
+    no_spaces = token_stripped.replace(' ', '').replace('\t', '').replace('\n', '').replace('\r', '')
+    # Prüfe, ob nur Satzzeichen vorhanden sind (inkl. Ellipsis, Gedankenstrich, etc.)
+    punct_chars = '.,;:!?·…–—()[]{}"\'"„«»‚''‹›'
+    return bool(no_spaces) and all(c in punct_chars for c in no_spaces)
 
 # Hilfsfunktion zum Verstecken von Übersetzungen basierend auf (HideTrans) Tag
 def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
@@ -1689,21 +1700,23 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
             # Prüfe, ob Token eine Stephanus-Paginierung enthält ODER nur Satzzeichen ist
             token_stripped = token.strip()
             
-            # Entferne Tokens, die nur aus Satzzeichen bestehen (nur wenn ALLE Übersetzungen ausgeblendet sind = NoTrans PDF)
-            if has_all_translations_hidden and _is_punctuation_only_token(token_stripped):
-                result['de_tokens'][idx] = ''
-                continue
-            
-            # Entferne Stephanus-Paginierungen NUR wenn ALLE Übersetzungen ausgeblendet sind (NoTrans PDF)
-            if RE_STEPHANUS.search(token_stripped):
-                if has_all_translations_hidden:
+            # WICHTIG: Entferne Interpunktion/Stephanus auch wenn nur EINE Übersetzung ausgeblendet ist
+            # (nicht nur wenn ALLE ausgeblendet sind)
+            if should_hide_translation or has_all_translations_hidden:
+                # Entferne Tokens, die nur aus Satzzeichen bestehen
+                if _is_punctuation_only_token(token_stripped):
+                    result['de_tokens'][idx] = ''
+                    continue
+                
+                # Entferne Stephanus-Paginierungen
+                if RE_STEPHANUS.search(token_stripped):
                     if RE_STEPHANUS.fullmatch(token_stripped):
                         # Token ist nur eine Stephanus-Paginierung → komplett entfernen
                         result['de_tokens'][idx] = ''
                     else:
                         # Token enthält Stephanus-Paginierung + anderen Text → nur Paginierung entfernen
                         cleaned = _remove_stephanus_from_token(token)
-                        if not cleaned.strip():
+                        if not cleaned.strip() or _is_punctuation_only_token(cleaned.strip()):
                             result['de_tokens'][idx] = ''
                         else:
                             result['de_tokens'][idx] = cleaned
@@ -1724,21 +1737,23 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
             # Prüfe, ob Token eine Stephanus-Paginierung enthält ODER nur Satzzeichen ist
             token_stripped = token.strip()
             
-            # Entferne Tokens, die nur aus Satzzeichen bestehen (nur wenn ALLE Übersetzungen ausgeblendet sind = NoTrans PDF)
-            if has_all_translations_hidden and _is_punctuation_only_token(token_stripped):
-                result['en_tokens'][idx] = ''
-                continue
-            
-            # Entferne Stephanus-Paginierungen NUR wenn ALLE Übersetzungen ausgeblendet sind (NoTrans PDF)
-            if RE_STEPHANUS.search(token_stripped):
-                if has_all_translations_hidden:
+            # WICHTIG: Entferne Interpunktion/Stephanus auch wenn nur EINE Übersetzung ausgeblendet ist
+            # (nicht nur wenn ALLE ausgeblendet sind)
+            if should_hide_translation or has_all_translations_hidden:
+                # Entferne Tokens, die nur aus Satzzeichen bestehen
+                if _is_punctuation_only_token(token_stripped):
+                    result['en_tokens'][idx] = ''
+                    continue
+                
+                # Entferne Stephanus-Paginierungen
+                if RE_STEPHANUS.search(token_stripped):
                     if RE_STEPHANUS.fullmatch(token_stripped):
                         # Token ist nur eine Stephanus-Paginierung → komplett entfernen
                         result['en_tokens'][idx] = ''
                     else:
                         # Token enthält Stephanus-Paginierung + anderen Text → nur Paginierung entfernen
                         cleaned = _remove_stephanus_from_token(token)
-                        if not cleaned.strip():
+                        if not cleaned.strip() or _is_punctuation_only_token(cleaned.strip()):
                             result['en_tokens'][idx] = ''
                         else:
                             result['en_tokens'][idx] = cleaned

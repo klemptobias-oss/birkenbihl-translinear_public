@@ -1569,7 +1569,13 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         comment_token_mask = block.get('comment_token_mask', []) if block else []
         has_comment_mask = comment_token_mask and any(comment_token_mask)
         
-        if base_num is not None and line_comment_colors and base_num in line_comment_colors and not has_comment_mask:
+        # Prüfe auch, ob disable_comment_bg in tag_config gesetzt ist
+        disable_comment_bg_flag = False
+        if tag_config and isinstance(tag_config, dict):
+            disable_comment_bg_flag = bool(tag_config.get('disable_comment_bg', False))
+        
+        # Nur Hintergrund setzen, wenn nicht deaktiviert UND keine comment_mask vorhanden
+        if not disable_comment_bg_flag and base_num is not None and line_comment_colors and base_num in line_comment_colors and not has_comment_mask:
             comment_color = line_comment_colors[base_num]
             # Hinterlegung für die gesamte Tabelle (alle Zeilen und Spalten)
             # "Augiebig" - also der gesamte Bereich wird markiert
@@ -2213,15 +2219,47 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # WICHTIG: Wende Farben und Tag-Verarbeitung auf Zitate an (wie bei normalem Text)
             # Verwende die gleiche Tag-Config wie für den Rest des Dokuments
+            # KRITISCH: Zitate müssen ALLE Tag/Translation-Einstellungen erben!
             import shared.preprocess as preprocess
-            if tag_config and color_mode == "COLOR":
-                temp_quote_blocks = preprocess.apply_colors(temp_quote_blocks, tag_config)
             
-            # KRITISCH: Bei NoTag PDFs MÜSSEN die Tags aus Zitaten entfernt werden!
-            if tag_mode == "NO_TAGS":
+            # 1) Farben anwenden (mit disable_comment_bg Flag)
+            disable_comment_bg_flag = False
+            if tag_config and isinstance(tag_config, dict):
+                disable_comment_bg_flag = bool(tag_config.get('disable_comment_bg', False))
+            
+            if tag_config and color_mode == "COLOR":
+                temp_quote_blocks = preprocess.apply_colors(temp_quote_blocks, tag_config, disable_comment_bg=disable_comment_bg_flag)
+            
+            # 2) Tag-Sichtbarkeit anwenden (wie beim normalen Text)
+            hidden_by_wortart = None
+            if tag_config and isinstance(tag_config, dict):
+                raw = tag_config.get('hidden_tags_by_wortart') or tag_config.get('hidden_tags_by_wordart') or None
+                if raw:
+                    hidden_by_wortart = {k.lower(): set(v) for k, v in raw.items()}
+            
+            if tag_mode == "TAGS" and hidden_by_wortart:
+                temp_quote_blocks = preprocess.apply_tag_visibility(temp_quote_blocks, tag_config, hidden_tags_by_wortart=hidden_by_wortart)
+            elif tag_mode == "NO_TAGS":
                 temp_quote_blocks = preprocess.remove_all_tags(temp_quote_blocks, tag_config)
             
-            # Bei BLACK_WHITE Mode: Entferne Farbsymbole (§, $) aus Zitaten
+            # 3) Translation-Hiding anwenden (wenn konfiguriert)
+            if tag_config and isinstance(tag_config, dict):
+                translation_rules = tag_config.get('translation_rules') or tag_config.get('hide_translations')
+                if translation_rules:
+                    # Wende Translation-Hiding auf jeden Block im Zitat an
+                    processed_quote_blocks = []
+                    for qb in temp_quote_blocks:
+                        if qb.get('type') == 'pair':
+                            processed_qb = preprocess._hide_stephanus_in_translations(qb, translation_rules)
+                            # Wende auch _hide_manual_translations_in_block an, falls vorhanden
+                            if hasattr(preprocess, '_hide_manual_translations_in_block'):
+                                processed_qb = preprocess._hide_manual_translations_in_block(processed_qb)
+                            processed_quote_blocks.append(processed_qb)
+                        else:
+                            processed_quote_blocks.append(qb)
+                    temp_quote_blocks = processed_quote_blocks
+            
+            # 4) Bei BLACK_WHITE Mode: Entferne Farbsymbole (§, $) aus Zitaten
             if color_mode == "BLACK_WHITE":
                 temp_quote_blocks = preprocess.remove_all_color_symbols(temp_quote_blocks)
 
