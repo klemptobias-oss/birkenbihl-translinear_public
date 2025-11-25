@@ -468,6 +468,7 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
             b['gr_tokens'] = filtered_tokens
 
     # 3) Build per-block comment_token_mask (True for tokens that are inside a comment range)
+    # WICHTIG: Stelle sicher, dass comment_token_mask IMMER initialisiert ist (nie None)
     for b in blocks:
         if b.get("type") not in ("pair", "flow"):
             continue
@@ -486,17 +487,19 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> None:
             for i in range(max(0, start), max(end + 1, start)):
                 if 0 <= i < len(mask):
                     mask[i] = True
-        b['comment_token_mask'] = mask
+        # WICHTIG: Stelle sicher, dass mask niemals None ist (verhindert 'NoneType' object is not iterable')
+        b['comment_token_mask'] = mask if mask else []
 
-    # debug summary
-    sample_comments = blocks[0].get('comments') if blocks else None
-    sample_mask = blocks[0].get('comment_token_mask') if blocks else None
-    print(f"DEBUG discover_and_attach_comments: comments found={comments_found} sample: {sample_comments[:3] if sample_comments else []} mask-sample: {sample_mask[:40] if sample_mask else None}")
-    
-    # WICHTIG: Stelle sicher, dass Kommentare auch wirklich an Block angehängt wurden
-    total_comments_attached = sum(len(b.get('comments', [])) for b in blocks)
-    if total_comments_attached > 0:
-        print(f"DEBUG discover_and_attach_comments: total comments attached to blocks: {total_comments_attached}")
+    # debug summary (nur bei kleineren Dateien, um Performance zu schonen)
+    if len(blocks) < 50:
+        sample_comments = blocks[0].get('comments') if blocks else None
+        sample_mask = blocks[0].get('comment_token_mask') if blocks else None
+        print(f"DEBUG discover_and_attach_comments: comments found={comments_found} sample: {sample_comments[:3] if sample_comments else []} mask-sample: {sample_mask[:40] if sample_mask else None}")
+        
+        # WICHTIG: Stelle sicher, dass Kommentare auch wirklich an Block angehängt wurden
+        total_comments_attached = sum(len(b.get('comments', [])) for b in blocks)
+        if total_comments_attached > 0:
+            print(f"DEBUG discover_and_attach_comments: total comments attached to blocks: {total_comments_attached}")
 
 # ======= Hilfen: Token-Verarbeitung =======
 def _join_tokens_to_line(tokens: list[str]) -> str:

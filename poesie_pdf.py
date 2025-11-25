@@ -218,21 +218,21 @@ def _process_one_input(infile: str,
     else:
         print("DEBUG discover_and_attach_comments: function not found in preprocess")
     
-    # Ensure every block has comment_token_mask
+    # Ensure every block has comment_token_mask (verhindert None-Werte)
     for b in blocks:
         if not isinstance(b, dict):
             continue
-        if b.get('type') == 'pair':
-            if 'comment_token_mask' not in b:
+        if b.get('type') in ('pair', 'flow'):
+            if 'comment_token_mask' not in b or b.get('comment_token_mask') is None:
                 b['comment_token_mask'] = [False] * len(b.get('gr_tokens', []))
-
+    
     # WICHTIG: Reihenfolge - Farben ZUERST (basierend auf ORIGINALEN Tags), dann Tags entfernen
+    # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal in der Loop!
     
     for strength, color_mode, tag_mode, meter_on in itertools.product(strengths, colors, tags, meters):
         
-        # Pipeline: discover comments -> apply_colors -> apply_tag_visibility -> optional remove_all_tags (NO_TAGS)
-        # 1) discover + attach comments (modifies blocks in-place, returns None)
-        preprocess.discover_and_attach_comments(blocks)
+        # Pipeline: apply_colors -> apply_tag_visibility -> optional remove_all_tags (NO_TAGS)
+        # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal!
         # 2) apply colors (must save orig tags in token_meta)
         disable_comment_bg_flag = final_tag_config.get('disable_comment_bg', False) if final_tag_config else False
         blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
