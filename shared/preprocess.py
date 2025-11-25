@@ -816,25 +816,46 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                 # Extract original tags and store them so later removal uses original tag set
                 orig_tags = set(_extract_tags(token))
                 
-                # WICHTIG: Erkenne HideTags/HideTrans Flags, aber lass sie NICHT die Farbberechnung beeinflussen
-                hide_tags_flag = TAG_HIDE_TAGS in orig_tags or 'hidetags' in (t.lower() for t in orig_tags)
-                hide_trans_flag = TRANSLATION_HIDE_TAG in orig_tags or 'hidetrans' in (t.lower() for t in orig_tags)
+                # WICHTIG: Erkenne HideTags/HideTrans Flags direkt im Token-String (vor Tag-Extraktion)
+                # Prüfe sowohl im Token-String als auch in extrahierten Tags
+                hide_tags_flag = (TAG_HIDE_TAGS in token or '(HideTags)' in token or '(hidetags)' in token) or (TAG_HIDE_TAGS in orig_tags or 'hidetags' in (t.lower() for t in orig_tags))
+                hide_trans_flag = (TRANSLATION_HIDE_TAG in token or '(HideTrans)' in token or '(hidetrans)' in token) or (TRANSLATION_HIDE_TAG in orig_tags or 'hidetrans' in (t.lower() for t in orig_tags))
                 
-                # Speichere die Original-Tags und Flags in token_meta
+                # Entferne HideTags/HideTrans Marker aus dem Token-String, damit sie nicht im PDF erscheinen
+                cleaned_token = token
+                if hide_tags_flag:
+                    cleaned_token = cleaned_token.replace(f'({TAG_HIDE_TAGS})', '')
+                    cleaned_token = cleaned_token.replace('(HideTags)', '')
+                    cleaned_token = cleaned_token.replace('(hidetags)', '')
+                if hide_trans_flag:
+                    cleaned_token = cleaned_token.replace(f'({TRANSLATION_HIDE_TAG})', '')
+                    cleaned_token = cleaned_token.replace('(HideTrans)', '')
+                    cleaned_token = cleaned_token.replace('(hidetrans)', '')
+                # Aktualisiere token in der Liste
+                new_gr_tokens[i] = cleaned_token
+                
+                # Aktualisiere orig_tags nach Entfernung der Hide-Marker
+                orig_tags_clean = orig_tags - {TAG_HIDE_TAGS, TRANSLATION_HIDE_TAG}
+                orig_tags_clean = orig_tags_clean - {t for t in orig_tags if t.lower() in ('hidetags', 'hidetrans')}
+                
+                # Speichere die Original-Tags (ohne Hide-Marker) und Flags in token_meta
                 if i < len(token_meta):
-                    token_meta[i]['orig_tags'] = list(orig_tags)
+                    token_meta[i]['orig_tags'] = list(orig_tags_clean)
                     token_meta[i].setdefault('flags', {})
                     token_meta[i]['flags']['hide_tags'] = hide_tags_flag
                     token_meta[i]['flags']['hide_trans'] = hide_trans_flag
                 else:
                     # sollte nicht passieren, aber sicherstellen
                     token_meta.append({
-                        'orig_tags': list(orig_tags),
+                        'orig_tags': list(orig_tags_clean),
                         'flags': {
                             'hide_tags': hide_tags_flag,
                             'hide_trans': hide_trans_flag
                         }
                     })
+                
+                # Verwende cleaned_token für weitere Verarbeitung
+                token = cleaned_token
                 
                 # If disable_comment_bg and this token belongs to comment → skip bg coloring
                 if disable_comment_bg and new_block.get("comment_token_mask", [False])[i]:
@@ -1414,13 +1435,17 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             en_tokens = block.get('en_tokens', [])
             
             for idx, gr_token in enumerate(gr_tokens_original):
-                # WICHTIG: Prüfe zuerst per-token HideTrans Flag in token_meta (für einzelne Tokens ohne Gruppenanführer)
+                # WICHTIG: Prüfe per-token HideTrans Flag in token_meta (für einzelne Tokens ohne Gruppenanführer)
                 hide_trans_from_flag = False
                 if idx < len(token_meta):
                     hide_trans_from_flag = bool(token_meta[idx].get('flags', {}).get('hide_trans'))
                 
-                # Prüfe auch die token_should_hide_translation Funktion (für Gruppenanführer-Regeln)
-                if hide_trans_from_flag or _token_should_hide_translation(gr_token, translation_rules):
+                # WICHTIG: ERGÄNZENDE Logik - beide Bedingungen werden geprüft (OR)
+                # Wenn EINE der beiden Bedingungen erfüllt ist, wird die Übersetzung ausgeblendet
+                hide_trans_from_table = _token_should_hide_translation(gr_token, translation_rules)
+                
+                # Entweder Flag ODER Tabellen-Regel -> beide wirksam
+                if hide_trans_from_flag or hide_trans_from_table:
                     # Entferne Übersetzung, aber prüfe auch ob sie trivial ist (nur Interpunktion/Stephanus)
                     # WICHTIG: Wenn Übersetzung trivial ist, entferne sie auch wenn hide_translation nicht aktiv ist
                     if idx < len(de_tokens):
@@ -1507,14 +1532,16 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             except Exception:
                 wortart = None
             
-            tags_to_hide = set()
+            # WICHTIG: ERGÄNZENDE Logik - Tabellen-Einstellungen werden mit HideTags-Flag kombiniert
+            # Wenn HideTags Flag gesetzt ist, werden alle Tags entfernt (schon oben behandelt)
+            # Hier behandeln wir nur die wortart-spezifischen Tag-Einstellungen aus der Tabelle
+            tags_to_hide_from_table = set()
             if hidden_tags_by_wortart and wortart:
-                tags_to_hide = set(hidden_tags_by_wortart.get(wortart.lower(), []))
+                tags_to_hide_from_table = set(hidden_tags_by_wortart.get(wortart.lower(), []))
             
             # compute intersection: remove only tags actually present on token (orig tags)
-            # If block is a quote and we shouldn't treat it specially, still apply rules (user expects same behaviour)
-            # Remove only the tags that both are in tags_to_hide and present in original_tags
-            tags_to_remove = tags_to_hide & orig_tags if tags_to_hide else set()
+            # WICHTIG: Nur Tags entfernen, die tatsächlich auf dem Token vorhanden sind
+            tags_to_remove = tags_to_hide_from_table & orig_tags if tags_to_hide_from_table else set()
             if tags_to_remove:
                 sup_keep_for_token = set(SUP_TAGS) - (tags_to_remove & set(SUP_TAGS))
                 sub_keep_for_token = set(SUB_TAGS) - (tags_to_remove & set(SUB_TAGS))
