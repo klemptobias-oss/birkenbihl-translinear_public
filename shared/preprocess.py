@@ -1191,6 +1191,21 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
     Robust: expandiert Gruppen-Regeln in konkrete hidden_tags pro Wortart, berechnet sup_keep/sub_keep pro Token,
     entfernt die nicht gewünschten Tags aus ALLEN token-Feldern und schreibt gr/de strings zurück.
     """
+    # helper: is this translation-only (punctuation / Stephanus) so it can be deduped?
+    import re
+    _re_only_punct = re.compile(r'^[\s\.\,\:\;\?\!\-\–\—\"\'\[\]\(\)\/\\]+$')
+    _re_stephanus = re.compile(r'^\s*\[\s*\d+\s*[a-z]?\s*\]\s*$', re.I)
+    
+    def is_translation_empty_or_punct(txt: str) -> bool:
+        if not txt or not txt.strip():
+            return True
+        s = txt.strip()
+        if _re_only_punct.match(s):
+            return True
+        if _re_stephanus.match(s):
+            return True
+        return False
+    
     import copy
     blocks_copy = copy.deepcopy(blocks)
     
@@ -1199,8 +1214,21 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
     if hidden_tags_by_wortart is None:
         hidden_tags_by_wortart = {}
     else:
-        # Kopiere die übergebene Struktur (normalisiert)
         hidden_tags_by_wortart = {k.lower(): set(v) for k, v in hidden_tags_by_wortart.items()}
+    
+    # -- ensure we detect "quote" blocks indicated by markers like '[Zitat Anfang]' / '[Zitat Ende]'
+    in_quote = False
+    for b in blocks_copy:
+        txt = b.get('gr', '')
+        if isinstance(txt, str) and 'Zitat Anfang' in txt:
+            in_quote = True
+            b['_in_quote_marker'] = True
+        elif isinstance(txt, str) and 'Zitat Ende' in txt:
+            # mark the end block and set flag on it too
+            b['_in_quote_marker'] = True
+            in_quote = False
+        # mark blocks inside quotes
+        b['_in_quote'] = in_quote or b.get('_in_quote_marker', False)
     
     translation_rules: Dict[str, Dict[str, Any]] = {}
     
@@ -1300,16 +1328,21 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
     else:
         print("DEBUG apply_tag_visibility: hidden_tags_by_wortart ist leer - keine Tags werden entfernt")
     
-    # Apply removal on tokens for each pair/flow/quote block
-    # APPLY to pair, flow, and quote blocks (quotes/special regions must behave like pairs)
+    # iterate blocks
     changed_total = 0
     for bi, block in enumerate(blocks_copy):
-        if not isinstance(block, dict) or block.get('type') not in ('pair','flow','quote'):
+        if not isinstance(block, dict):
             continue
-        
         gr_tokens = block.get('gr_tokens', [])
         # token_meta sollte von apply_colors gesetzt worden sein; wenn nicht, erzeuge Platzhalter
         token_meta = block.setdefault("token_meta", [{} for _ in gr_tokens])
+        
+        # if block seems to be a quote-block, treat it the same as normal blocks when removing tags.
+        block_in_quote = bool(block.get('_in_quote', False))
+        
+        # Only process pair/flow blocks (quote blocks are already marked with _in_quote, so they will be processed too)
+        if block.get('type') not in ('pair','flow') and not block_in_quote:
+            continue
         
         # WICHTIG: Übersetzungs-Ausblendung ZUERST (bevor Tags entfernt werden)
         # Verwende ORIGINAL-Tokens (mit allen Tags) für die Erkennung
@@ -1372,16 +1405,43 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             if hidden_tags_by_wortart and wortart:
                 tags_to_hide = set(hidden_tags_by_wortart.get(wortart.lower(), []))
             
-            # Entferne nur die Tags, die sowohl in tags_to_hide stehen als auch tatsächlich im Token vorhanden sind
-            tags_to_remove = tags_to_hide & set(orig_tags)
+            # compute intersection: remove only tags actually present on token (orig tags)
+            # If block is a quote and we shouldn't treat it specially, still apply rules (user expects same behaviour)
+            # Remove only the tags that both are in tags_to_hide and present in original_tags
+            tags_to_remove = tags_to_hide & orig_tags if tags_to_hide else set()
             if tags_to_remove:
+                sup_keep_for_token = set(SUP_TAGS) - (tags_to_remove & set(SUP_TAGS))
+                sub_keep_for_token = set(SUB_TAGS) - (tags_to_remove & set(SUB_TAGS))
+                cleaned = remove_tags_from_token_local(tok, tags_to_remove)
                 # Debug: only print for first blocks / tokens (limit output)
                 if bi < 2 and i < 5:
                     print(f"DEBUG apply_tag_visibility: Block {bi} Token {i}: wortart='{wortart}', tags_removed={sorted(list(tags_to_remove))}, orig_tags={sorted(list(orig_tags))[:8]}")
-                cleaned = remove_tags_from_token_local(tok, tags_to_remove)
                 if cleaned != tok:
                     changed += 1
                 new_tokens_for_block.append(cleaned)
+            else:
+                cleaned = tok
+                new_tokens_for_block.append(cleaned)
+            
+            # --- Dedupe translations that are only punctuation/Stephanus
+            # token_meta may contain translation text in token_meta[i]['translation']
+            if i < len(token_meta):
+                # Check de_tokens and en_tokens in the block
+                de_tokens = block.get('de_tokens', [])
+                en_tokens = block.get('en_tokens', [])
+                
+                if i < len(de_tokens):
+                    de_text = de_tokens[i] if isinstance(de_tokens[i], str) else ''
+                    if is_translation_empty_or_punct(de_text):
+                        # remove translation so renderer won't output an empty punct-only translation cell
+                        if i < len(block.get('de_tokens', [])):
+                            block['de_tokens'][i] = ''
+                
+                if i < len(en_tokens):
+                    en_text = en_tokens[i] if isinstance(en_tokens[i], str) else ''
+                    if is_translation_empty_or_punct(en_text):
+                        if i < len(block.get('en_tokens', [])):
+                            block['en_tokens'][i] = ''
                 # SICHERN: welche Tags wir für dieses token tatsächlich entfernt haben
                 actually_removed = list((set(orig_tags) & set(tags_to_remove)))
                 # Stelle sicher, dass token_meta existiert

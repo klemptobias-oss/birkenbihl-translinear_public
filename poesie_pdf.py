@@ -230,25 +230,18 @@ def _process_one_input(infile: str,
     
     for strength, color_mode, tag_mode, meter_on in itertools.product(strengths, colors, tags, meters):
         
-        # NEW pipeline: discover comments → colors (store orig tags, respect comment mask) → tag visibility → remove_all_tags for NO_TAGS
-        # Schritt 1: Farbzuweisung BASIEREND AUF DEN ORIGINALEN TAGS (damit Wortarten korrekt erkannt werden)
-        # Wenn disable_comment_bg in tag_config gesetzt ist, übergebe es an apply_colors
-        disable_comment_bg_flag = False
-        if final_tag_config and isinstance(final_tag_config, dict):
-            disable_comment_bg_flag = bool(final_tag_config.get('disable_comment_bg', False))
+        # Pipeline: discover comments -> apply_colors -> apply_tag_visibility -> optional remove_all_tags (NO_TAGS)
+        # 1) discover + attach comments
+        blocks = preprocess.discover_and_attach_comments(blocks)
+        # 2) apply colors (must save orig tags in token_meta)
+        disable_comment_bg_flag = final_tag_config.get('disable_comment_bg', False) if final_tag_config else False
         blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
         
-        # Schritt 2: Jetzt erst Tag-Sichtbarkeit anwenden (Tags entfernen, aber Farben bleiben erhalten)
-        # WICHTIG: apply_tag_visibility macht auch Übersetzungs-Ausblendung!
-        # Aus tag_config bauen wir hidden_tags_by_wortart (falls vorhanden)
+        # extract hidden_tags_by_wortart straight from tag_config if present
         hidden_by_wortart = None
-        if final_tag_config and isinstance(final_tag_config, dict):
-            raw = final_tag_config.get('hidden_tags_by_wortart') or final_tag_config.get('hidden_tags_by_wordart') or None
-            if raw:
-                # Normalisiere Keys lower-case und Werte als set
-                hidden_by_wortart = {k.lower(): set(v) for k, v in raw.items()}
-                print("DEBUG poesie_pdf: derived hidden_tags_by_wortart keys:", list(hidden_by_wortart.keys()))
-        
+        if final_tag_config and 'hidden_tags_by_wortart' in final_tag_config:
+            hidden_by_wortart = final_tag_config['hidden_tags_by_wortart']
+        # 3) apply tag visibility
         if tag_mode == "TAGS":
             blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
             # DEBUG: Prüfe, ob Tags wirklich entfernt wurden
