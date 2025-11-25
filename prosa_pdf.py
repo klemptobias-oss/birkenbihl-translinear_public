@@ -152,16 +152,39 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # discover_and_attach_comments füllt block['comments'] und block['comment_token_mask']
     import traceback
     try:
-        comments, comment_mask = preprocess.discover_and_attach_comments_safe(final_blocks)
-        if not isinstance(comment_mask, list) or len(comment_mask) != len(final_blocks):
-            comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in final_blocks]
-        if not isinstance(comments, list) or len(comments) != len(final_blocks):
-            comments = [[] for _ in final_blocks]
-    except Exception:
-        print("ERROR prosa_pdf: discover/attach comments failed:")
+        # Robust: verwende final_blocks falls vorhanden, sonst blocks
+        fb = final_blocks if 'final_blocks' in locals() else locals().get('blocks', None)
+        if fb is None:
+            # Fallback: versuche blocks-Variable
+            fb = blocks if 'blocks' in locals() else []
+        if not fb:
+            comments, comment_mask = [], None
+        else:
+            comments, comment_mask = preprocess.discover_and_attach_comments_safe(fb)
+            if not isinstance(comment_mask, list) or len(comment_mask) != len(fb):
+                comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in fb]
+            if not isinstance(comments, list) or len(comments) != len(fb):
+                comments = [[] for _ in fb]
+    except NameError as e:
+        # final_blocks nicht definiert - verwende blocks
+        try:
+            fb = blocks if 'blocks' in locals() else []
+            if fb:
+                comments, comment_mask = preprocess.discover_and_attach_comments_safe(fb)
+                if not isinstance(comment_mask, list) or len(comment_mask) != len(fb):
+                    comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in fb]
+                if not isinstance(comments, list) or len(comments) != len(fb):
+                    comments = [[] for _ in fb]
+            else:
+                comments, comment_mask = [], None
+        except Exception as e2:
+            print(f"ERROR prosa_pdf: discover/attach comments failed (fallback): {e2}")
+            traceback.print_exc()
+            comments, comment_mask = [], None
+    except Exception as e:
+        print(f"ERROR prosa_pdf: discover/attach comments failed: {e}")
         traceback.print_exc()
-        comments = [[] for _ in final_blocks]
-        comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in final_blocks]
+        comments, comment_mask = [], None
     
     for strength, color_mode, tag_mode in itertools.product(strengths, colors, tags):
         

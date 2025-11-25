@@ -23,6 +23,11 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Optional
 import os, re, itertools, sys
+import logging
+
+# Reduziere Debug-Lärm: Setze Logger-Level auf INFO (verhindert 70k+ Debug-Zeilen)
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 import Poesie_Code as Poesie
 from shared.unified_api import create_pdf_unified, PdfRenderOptions
@@ -206,20 +211,25 @@ def _process_one_input(infile: str,
     # discover_and_attach_comments füllt block['comments'] und block['comment_token_mask']
     import traceback
     try:
-        # discover comments (safe). Returns per-block lists.
-        comments, comment_mask = preprocess.discover_and_attach_comments_safe(blocks)
-        # normalize comment_mask to list-of-lists matching blocks
-        if not isinstance(comment_mask, list) or len(comment_mask) != len(blocks):
-            comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in blocks]
-        # ensure comments is list per block
-        if not isinstance(comments, list) or len(comments) != len(blocks):
-            comments = [[] for _ in blocks]
-    except Exception:
-        print("ERROR poesie_pdf: discover/attach comments failed:")
+        # Robust: verwende blocks
+        fb = blocks if 'blocks' in locals() else []
+        if not fb:
+            comments, comment_mask = [], None
+        else:
+            # discover comments (safe). Returns per-block lists.
+            comments, comment_mask = preprocess.discover_and_attach_comments_safe(fb)
+            # normalize comment_mask to list-of-lists matching blocks
+            if not isinstance(comment_mask, list) or len(comment_mask) != len(fb):
+                comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in fb]
+            # ensure comments is list per block
+            if not isinstance(comments, list) or len(comments) != len(fb):
+                comments = [[] for _ in fb]
+    except Exception as e:
+        logger.error(f"discover/attach comments failed: {e}")
         traceback.print_exc()
         # fallback safe structures
-        comments = [[] for _ in blocks]
-        comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in blocks]
+        comments = [[] for _ in blocks] if 'blocks' in locals() else []
+        comment_mask = [([False] * len(b.get('gr_tokens', []))) for b in blocks] if 'blocks' in locals() else []
     
     # WICHTIG: Reihenfolge - Farben ZUERST (basierend auf ORIGINALEN Tags), dann Tags entfernen
     # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal in der Loop!

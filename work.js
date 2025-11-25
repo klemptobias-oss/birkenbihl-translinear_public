@@ -1315,6 +1315,15 @@ function showTagConfigModal() {
       state.tagConfig = {};
     }
   }
+  
+  // ESC-Taste schließt Dialog
+  function escHandler(e) {
+    if (e.key === 'Escape' || e.key === 'Esc') {
+      hideTagConfigModal();
+      document.removeEventListener('keydown', escHandler);
+    }
+  }
+  document.addEventListener('keydown', escHandler);
 
   // 1. Container für kleine Tabellen leeren
   const tablesContainer = document.getElementById("tag-config-tables");

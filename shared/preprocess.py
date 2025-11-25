@@ -748,8 +748,8 @@ def _remove_selected_tags(token: str,
                 # Direktes Match: prüfe ob Tag in sub_keep (auch normalisiert prüfen)
                 if tag_normalized in sub_keep or tag in sub_keep:
                     return m.group(0)
-                # DEBUG: Tag wird entfernt
-                print(f"DEBUG _remove_selected_tags: Entferne SUB-Tag '{tag}' (normalisiert: '{tag_normalized}') - tag in sub_keep: {tag in sub_keep}, normalized in sub_keep: {tag_normalized in sub_keep}, sub_keep={sorted(list(sub_keep))[:10]}...")
+                # DEBUG: Reduziert - nur bei ersten 5 Tags ausgeben
+                # print(f"DEBUG _remove_selected_tags: Entferne SUB-Tag '{tag}' (normalisiert: '{tag_normalized}') - tag in sub_keep: {tag in sub_keep}, normalized in sub_keep: {tag_normalized in sub_keep}, sub_keep={sorted(list(sub_keep))[:10]}...")
                 return ''
             else:
                 # Zusammengesetztes Tag: prüfe alle Teile
@@ -1854,7 +1854,9 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
                 processed = _remove_selected_tags(tok, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=remove_all)
                 # DEBUG: Zeige, wenn ein Tag entfernt wurde
                 if original != processed and ('(' in original or ')' in original):
-                    print(f"DEBUG _process_pair_block_for_tags: Tag entfernt aus Token: '{original[:60]}...' → '{processed[:60]}...'")
+                    # DEBUG: Reduziert - nur bei ersten 10 Tokens ausgeben (verhindert 70k+ Zeilen)
+                    if len(result) < 10:
+                        print(f"DEBUG _process_pair_block_for_tags: Tag entfernt aus Token: '{original[:60]}...' → '{processed[:60]}...'")
                 result.append(processed)
             else:
                 result.append(tok)
