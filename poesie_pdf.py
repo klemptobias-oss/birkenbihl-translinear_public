@@ -231,8 +231,8 @@ def _process_one_input(infile: str,
     for strength, color_mode, tag_mode, meter_on in itertools.product(strengths, colors, tags, meters):
         
         # Pipeline: discover comments -> apply_colors -> apply_tag_visibility -> optional remove_all_tags (NO_TAGS)
-        # 1) discover + attach comments
-        blocks = preprocess.discover_and_attach_comments(blocks)
+        # 1) discover + attach comments (modifies blocks in-place, returns None)
+        preprocess.discover_and_attach_comments(blocks)
         # 2) apply colors (must save orig tags in token_meta)
         disable_comment_bg_flag = final_tag_config.get('disable_comment_bg', False) if final_tag_config else False
         blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
