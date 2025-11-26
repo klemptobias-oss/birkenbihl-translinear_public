@@ -37,12 +37,56 @@ from reportlab.lib import colors
 # Reduce noisy DEBUG output - set root logger to INFO
 logging.getLogger().setLevel(logging.INFO)
 
+# Make sure logging goes to stdout and is visible in CI fast.
+logger = logging.getLogger(__name__)
+if not logger.handlers:
+    handler = logging.StreamHandler(stream=sys.stdout)
+    formatter = logging.Formatter("%(levelname)s %(message)s")
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+    logger.setLevel(logging.DEBUG)
+
 # Attach log throttle to suppress mass warnings (table width, tag removal spam)
 try:
     from shared.log_throttle import setup_logging_throttle
     setup_logging_throttle()
 except Exception:
     logging.getLogger().debug("prosa_pdf: log throttle not available/failed to init")
+
+# Print an immediate startup banner so CI shows process start
+try:
+    banner = "prosa_pdf: startup pid=%s argv=%s" % (os.getpid(), " ".join(sys.argv))
+    print(banner)
+    sys.stdout.flush()
+    logger.info(banner)
+except Exception:
+    # never fail here
+    pass
+
+def _install_global_timeout():
+    """
+    Install a SIGALRM that will abort the process after PROSA_PDF_TIMEOUT seconds.
+    Default: 600 seconds. This prevents CI from hanging forever.
+    """
+    try:
+        timeout = int(os.environ.get("PROSA_PDF_TIMEOUT", "600"))
+        def _timeout_handler(signum, frame):
+            msg = "prosa_pdf: GLOBAL TIMEOUT reached (%s seconds) - aborting" % timeout
+            logger.error(msg)
+            try:
+                sys.stdout.flush(); sys.stderr.flush()
+            except Exception:
+                pass
+            # exit with non-zero so CI marks failure
+            raise SystemExit(2)
+        signal.signal(signal.SIGALRM, _timeout_handler)
+        signal.alarm(timeout)
+        logger.info("prosa_pdf: global timeout installed: %s seconds", timeout)
+    except Exception:
+        logger.exception("prosa_pdf: failed to install global timeout (continuing without alarm)")
+
+# Try to install the timeout immediately (defensive)
+_install_global_timeout()
 
 import Prosa_Code as Prosa
 
@@ -188,9 +232,17 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     logging.getLogger(__name__).info("prosa_pdf: group_pairs_into_flows done (%.2f s), blocks=%d", time.time() - t_group, len(blocks) if blocks else 0)
     
     # --- robust comment discovery: never abort the whole run because of comment attach errors ---
+    # Discover and attach comments. This used to sometimes yield None or threw
+    # exceptions that left 'final_blocks' undefined. We defend here and always
+    # ensure final_blocks is a list.
     final_blocks = blocks
     try:
-        logging.getLogger(__name__).info("prosa_pdf: START processing file=%s", base_name)
+        logger.info("prosa_pdf: START processing file=%s", base_name)
+        try:
+            sys.stdout.flush()
+        except Exception:
+            pass
+        start_time = time.time()
         import shared.comment_utils as comment_utils  # local import so patch is conservative
         fb = comment_utils.safe_discover_and_attach_comments(
             blocks,
@@ -200,16 +252,26 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             pipeline_name='prosa_pdf'
         )
         if fb is None:
-            logging.getLogger(__name__).info("prosa_pdf: discover_and_attach_comments returned None -> fallback to original blocks")
+            logger.debug("prosa_pdf: discover_and_attach_comments returned None -> using original blocks")
             final_blocks = blocks
         else:
             final_blocks = fb
-            logging.getLogger(__name__).info("prosa_pdf: discover_and_attach_comments completed, blocks=%d", len(final_blocks))
-    except Exception as e:
-        # write a compact debug dump and continue without comments
+            logger.info("prosa_pdf: discover_and_attach_comments completed, blocks=%d", len(final_blocks))
+    except Exception:
+        # Log exception but continue with original blocks (no comments attached).
         tb = traceback.format_exc()
-        logging.getLogger(__name__).error("prosa_pdf: discover/attach comments FAILED (continuing without comments): %s", e)
-        logging.getLogger(__name__).debug("prosa_pdf: discover/attach comments traceback (first 800 chars):\n%s", tb[:800])
+        logger.exception("discover/attach comments failed (continuing without comments): %s", tb[:800])
+        final_blocks = blocks
+    
+    # Sane debug summary for CI: print first block comments + mask (if any)
+    try:
+        c0 = final_blocks[0].get('comments') if isinstance(final_blocks, list) and final_blocks else None
+        mask0 = final_blocks[0].get('comment_token_mask') if isinstance(final_blocks, list) and final_blocks else None
+        logger.info("DEBUG prosa_pdf: final_blocks[0].comments=%s mask_sample=%s",
+                    (c0 if c0 else []),
+                    (mask0[:40] if mask0 is not None else None))
+    except Exception:
+        logger.debug("prosa_pdf: failed to print final_blocks[0] debug info", exc_info=True)
         try:
             # dump a compact JSON with first blocks so we can inspect in CI artifacts
             dump_sample = []
@@ -381,7 +443,8 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         # WICHTIG: Die unified_api wird jetzt nur noch für das Rendering aufgerufen.
         # Die Vorverarbeitung ist hier abgeschlossen. `tag_config` wird trotzdem durchgereicht,
         # falls der Renderer selbst noch Konfigurationsdetails benötigt (z.B. für Platzierung).
-        logging.getLogger(__name__).info("prosa_pdf: about to call create_pdf_unified() for %s (blocks=%d)", out_name, total_blocks)
+        # build the PDF document (via create_pdf_unified which calls Prosa.create_pdf which calls doc.build())
+        logger.info("prosa_pdf: about to call reportlab build() for %s (blocks=%d)", out_name, total_blocks)
         try:
             sys.stdout.flush()
         except Exception:
@@ -389,16 +452,16 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         try:
             # call the real build (this may be the long blocking step)
             create_pdf_unified("prosa", Prosa, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
-            logging.getLogger(__name__).info("prosa_pdf: create_pdf_unified() finished for %s", out_name)
+            logger.info("prosa_pdf: reportlab build() finished for %s", out_name)
             generated_files.append(out_name)
-            logging.getLogger(__name__).info("✓ PDF created -> %s", out_name)
-        except Exception as e:
-            logging.getLogger(__name__).exception("prosa_pdf: create_pdf_unified() FAILED for %s", out_name)
-            # re-raise so CI shows failure (but the global timeout will also stop extreme hangs)
+            logger.info("✓ PDF created -> %s", out_name)
+        except Exception:
+            logger.exception("prosa_pdf: reportlab build() FAILED for %s", out_name)
             raise
         finally:
+            # cancel the global alarm because the heavy work finished
             try:
-                sys.stdout.flush()
+                signal.alarm(0)
             except Exception:
                 pass
     
@@ -411,16 +474,16 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # final summary for CI logs: list files created
     try:
         end_time = time.time()
-        logging.getLogger(__name__).info("prosa_pdf: finished processing %s in %.1f seconds", base_name, end_time - t_start)
-        logging.getLogger(__name__).info("prosa_pdf: END processing file=%s created_files=%d", base_name, len(generated_files))
+        logger.info("prosa_pdf: finished processing %s in %.1f seconds", base_name, end_time - t_start)
+        logger.info("prosa_pdf: END processing file=%s created_files=%d", base_name, len(generated_files))
         for f in generated_files:
-            logging.getLogger(__name__).info("✓ PDF created -> %s", f)
+            logger.info("✓ PDF created -> %s", f)
         try:
             sys.stdout.flush()
         except Exception:
             pass
     except Exception:
-        logging.getLogger(__name__).debug("prosa_pdf: failed to log generated files", exc_info=True)
+        logger.debug("prosa_pdf: failed to log generated files", exc_info=True)
 
 def main():
     # Parse command line arguments for tag config

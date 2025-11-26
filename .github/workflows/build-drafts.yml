@@ -60,7 +60,13 @@ jobs:
           ls -l shared/fonts/DejaVuSans*.ttf
 
       - name: Build Draft PDFs
+        env:
+          PYTHONUNBUFFERED: '1'
         run: |
+          # ensure Python prints unbuffered so CI logs appear immediately
+          export PYTHONUNBUFFERED=1
+          set -x
+          
           echo "Build Draft PDFs gestartet..."
 
           # Finde alle Draft-Dateien die in diesem Commit geändert wurden
@@ -122,9 +128,11 @@ jobs:
               # Bestimme ob es Prosa oder Poesie ist und erstelle neue PDFs
               if [[ "$KIND" == "prosa" ]]; then
                 echo "Erstelle Prosa PDFs für: $FILE"
+                echo "LAUNCHING PYTHON: python build_prosa_drafts_adapter.py \"$(pwd)/$FILE\""
                 python build_prosa_drafts_adapter.py "$(pwd)/$FILE"
               elif [[ "$KIND" == "poesie" ]]; then
                 echo "Erstelle Poesie PDFs für: $FILE"
+                echo "LAUNCHING PYTHON: python build_poesie_drafts_adapter.py \"$(pwd)/$FILE\""
                 python build_poesie_drafts_adapter.py "$(pwd)/$FILE"
               else
                 echo "Unbekannter Draft-Typ ($KIND) für: $FILE"

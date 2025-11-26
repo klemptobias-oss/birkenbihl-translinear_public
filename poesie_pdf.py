@@ -27,6 +27,8 @@ import logging
 import os
 import json
 import tempfile
+import time
+import signal
 import traceback
 from reportlab.platypus import Paragraph
 from reportlab.lib.styles import ParagraphStyle
@@ -34,7 +36,42 @@ from reportlab.lib import colors
 
 # Reduce noisy DEBUG output - set root logger to INFO
 logging.getLogger().setLevel(logging.INFO)
+
+# ensure logs flush to stdout in CI
 logger = logging.getLogger(__name__)
+if not logger.handlers:
+    handler = logging.StreamHandler(stream=sys.stdout)
+    formatter = logging.Formatter("%(levelname)s %(message)s")
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+    logger.setLevel(logging.DEBUG)
+
+try:
+    banner = "poesie_pdf: startup pid=%s argv=%s" % (os.getpid(), " ".join(sys.argv))
+    print(banner)
+    sys.stdout.flush()
+    logger.info(banner)
+except Exception:
+    pass
+
+def _install_global_timeout():
+    try:
+        timeout = int(os.environ.get("POESIE_PDF_TIMEOUT", "600"))
+        def _timeout_handler(signum, frame):
+            msg = "poesie_pdf: GLOBAL TIMEOUT reached (%s seconds) - aborting" % timeout
+            logger.error(msg)
+            try:
+                sys.stdout.flush()
+            except:
+                pass
+            raise SystemExit(2)
+        signal.signal(signal.SIGALRM, _timeout_handler)
+        signal.alarm(timeout)
+        logger.info("poesie_pdf: global timeout installed: %s seconds", timeout)
+    except Exception:
+        logger.exception("poesie_pdf: failed to install global timeout (continuing without alarm)")
+
+_install_global_timeout()
 
 # Attach log throttle to suppress mass warnings (table width, tag removal spam)
 try:
@@ -267,7 +304,18 @@ def _process_one_input(infile: str,
     # WICHTIG: Reihenfolge - Farben ZUERST (basierend auf ORIGINALEN Tags), dann Tags entfernen
     # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal in der Loop!
     
+    total_blocks = len(final_blocks) if isinstance(final_blocks, list) else 0
+    num_variants = len(list(itertools.product(strengths, colors, tags, meters)))
+    logger.info("poesie_pdf: Starting PDF generation loop for %d variants, total_blocks=%d", num_variants, total_blocks)
+    
+    variant_index = 0
     for strength, color_mode, tag_mode, meter_on in itertools.product(strengths, colors, tags, meters):
+        variant_index += 1
+        logger.info("poesie_pdf: processing variant %d/%d (strength=%s, color=%s, tag=%s, meter=%s)", variant_index, num_variants, strength, color_mode, tag_mode, meter_on)
+        try:
+            sys.stdout.flush()
+        except Exception:
+            pass
         
         # Pipeline: apply_colors -> apply_tag_visibility -> optional remove_all_tags (NO_TAGS)
         # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal!
@@ -327,8 +375,41 @@ def _process_one_input(infile: str,
         versmass_mode = "KEEP_MARKERS" if meter_on else "REMOVE_MARKERS"
         opts = PdfRenderOptions(strength=strength, color_mode=color_mode, tag_mode=tag_mode, versmass_mode=versmass_mode)
         
-        create_pdf_unified("poesie", Poesie, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
-        print(f"✓ PDF erstellt → {out_name}")
+        # build the PDF document (via create_pdf_unified which calls Poesie.create_pdf which calls doc.build())
+        logger.info("poesie_pdf: about to call reportlab build() for %s (blocks=%d)", out_name, total_blocks)
+        try:
+            sys.stdout.flush()
+        except Exception:
+            pass
+        try:
+            create_pdf_unified("poesie", Poesie, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
+            logger.info("poesie_pdf: reportlab build() finished for %s", out_name)
+            print(f"✓ PDF erstellt → {out_name}")
+        except Exception:
+            logger.exception("poesie_pdf: reportlab build() FAILED for %s", out_name)
+            raise
+        finally:
+            try:
+                signal.alarm(0)
+            except Exception:
+                pass
+    
+    # turn off the alarm now that the heavy section finished
+    try:
+        signal.alarm(0)
+    except Exception:
+        pass
+    
+    try:
+        base_name = str(base)
+        end_time = time.time()
+        logger.info("poesie_pdf: finished processing %s in %.1f seconds", base_name, end_time - start_time)
+        try:
+            sys.stdout.flush()
+        except Exception:
+            pass
+    except Exception:
+        pass
 
 def main():
     # Parse command line arguments for tag config
