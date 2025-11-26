@@ -1820,7 +1820,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
 
     # NEU: Hilfsfunktion zum Rendern von Kommentaren aus block['comments']
     def render_block_comments(block, elements_list):
-        """Rendert Kommentare aus block['comments'] als Paragraphen"""
+        """Rendert Kommentare aus block['comments'] als Paragraphen (dedupliziert + limitiert)"""
         cms = block.get('comments') or []
         if not cms:
             return
@@ -1832,17 +1832,33 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         except Exception:
             disable_comment_bg = block.get('disable_comment_bg', False)
         
+        # Deduplicate comments per block and limit count & length to keep PDF generation fast.
+        MAX_COMMENTS_PER_BLOCK = 5
+        MAX_COMMENT_CHARS = 400
+        added_keys = set()
+        added_count = 0
+        truncated = False
+        
         for cm in cms:
+            if added_count >= MAX_COMMENTS_PER_BLOCK:
+                truncated = True
+                break
+            
             # Unterstütze verschiedene Formate: dict mit 'text', 'comment', 'body' oder direkt String
             if isinstance(cm, dict):
                 txt = cm.get('text') or cm.get('comment') or cm.get('body') or ""
-            elif isinstance(cm, str):
-                txt = cm
+                key = (cm.get('line_num'), len(txt))
             else:
                 txt = str(cm) if cm else ""
+                key = ("txt", hash(txt))
             
             if not txt or not txt.strip():
                 continue
+            
+            # Deduplizierung: überspringe identische Kommentare
+            if key in added_keys:
+                continue
+            added_keys.add(key)
             
             # Optional: Zeige den Bereich (z.B. (2-4k))
             rng = cm.get('pair_range') if isinstance(cm, dict) else None
@@ -1853,6 +1869,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             else:
                 display = txt.strip()
             
+            # Sanitize and truncate to a reasonable size
+            text_clean = " ".join(display.split())
+            if len(text_clean) > MAX_COMMENT_CHARS:
+                text_clean = text_clean[:MAX_COMMENT_CHARS].rstrip() + "…"
+            
             # Kommentar-Style: klein, grau, kursiv — be defensive
             try:
                 comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
@@ -1862,11 +1883,21 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     spaceBefore=2, spaceAfter=2,
                     textColor=colors.Color(0.36, 0.36, 0.36), italic=True)
                 elements_list.append(Spacer(1, 2*mm))
-                elements_list.append(Paragraph(html.escape(display), comment_style_simple))
+                elements_list.append(Paragraph(html.escape(text_clean), comment_style_simple))
                 elements_list.append(Spacer(1, 2*mm))
+                added_count += 1
             except Exception as e:
                 import logging
                 logging.getLogger(__name__).exception("prosa_pdf: rendering comment failed (continuing): %s", str(e))
+        
+        # Compact debug log instead of per-comment verbose logging
+        if added_count > 0:
+            block_id = block.get("block_index") or block.get("index") or "?"
+            import logging
+            logging.getLogger(__name__).debug(
+                "prosa_pdf: Added %d comment paragraphs for block idx=%s (total_comments=%d, truncated=%s)",
+                added_count, block_id, len(cms), truncated
+            )
 
     elements, idx = [], 0
     last_block_type = None  # Speichert den Typ des letzten verarbeiteten Blocks

@@ -2334,7 +2334,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             # (verhindert, dass GR/DE/EN über Seitenumbrüche getrennt werden)
             elements.append(KeepTogether(tables))
             
-            # NEU: Kommentare aus block['comments'] rendern (nach dem pair-Block)
+            # NEU: Kommentare aus block['comments'] rendern (nach dem pair-Block) - dedupliziert + limitiert
             comments = b.get('comments') or []
             if comments:
                 # Prüfe disable_comment_bg Flag (falls verfügbar)
@@ -2344,17 +2344,32 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 except Exception:
                     pass
                 
+                MAX_COMMENTS_PER_BLOCK = 5
+                MAX_COMMENT_CHARS = 400
+                added_keys = set()
+                added_count = 0
+                truncated = False
+                
                 for cm in comments:
+                    if added_count >= MAX_COMMENTS_PER_BLOCK:
+                        truncated = True
+                        break
+                    
                     # Unterstütze verschiedene Formate: dict mit 'text', 'comment', 'body' oder direkt String
                     if isinstance(cm, dict):
                         txt = cm.get('text') or cm.get('comment') or cm.get('body') or ""
-                    elif isinstance(cm, str):
-                        txt = cm
+                        key = (cm.get('line_num'), len(txt))
                     else:
                         txt = str(cm) if cm else ""
+                        key = ("txt", hash(txt))
                     
                     if not txt or not txt.strip():
                         continue
+                    
+                    # Deduplizierung: überspringe identische Kommentare
+                    if key in added_keys:
+                        continue
+                    added_keys.add(key)
                     
                     # Optional: Zeige den Bereich (z.B. (2-4k))
                     rng = cm.get('pair_range') if isinstance(cm, dict) else None
@@ -2365,7 +2380,11 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     else:
                         display = txt.strip()
                     
-                    print(f"✓✓✓ Kommentar verarbeiten (Poesie): {display[:80]}...")
+                    # Sanitize and truncate to a reasonable size
+                    text_clean = " ".join(display.split())
+                    if len(text_clean) > MAX_COMMENT_CHARS:
+                        text_clean = text_clean[:MAX_COMMENT_CHARS].rstrip() + "…"
+                    
                     # Kommentar-Style: klein, grau, kursiv
                     comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
                         fontName='DejaVu', fontSize=8,
@@ -2374,8 +2393,18 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         spaceBefore=2, spaceAfter=2,
                         textColor=colors.Color(0.36, 0.36, 0.36), italic=True)
                     elements.append(Spacer(1, 2*MM))
-                    elements.append(Paragraph(html.escape(display), comment_style_simple))
+                    elements.append(Paragraph(html.escape(text_clean), comment_style_simple))
                     elements.append(Spacer(1, 2*MM))
+                    added_count += 1
+                
+                # Compact debug log instead of per-comment verbose logging
+                if added_count > 0:
+                    block_id = b.get("block_index") or b.get("index") or "?"
+                    import logging
+                    logging.getLogger(__name__).debug(
+                        "poesie_pdf: Added %d comment paragraphs for block idx=%s (total_comments=%d, truncated=%s)",
+                        added_count, block_id, len(comments), truncated
+                    )
 
             # Abstand nach jedem Textblock hinzufügen
             # Finde den nächsten relevanten Block (überspringe 'blank' und 'title_brace')
