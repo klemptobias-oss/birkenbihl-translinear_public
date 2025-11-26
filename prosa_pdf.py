@@ -58,24 +58,35 @@ class _RepeatThrottleFilter(logging.Filter):
                 return False
         return True
 
-# --- Quiet noisy "Table-Breite zu groß" repetitions ---
-class _TableWidthFilter(logging.Filter):
-    def __init__(self):
+# --- Log-Throttling für wiederholte Table/Comment Warnungen ---
+class _TableWidthAndCommentFilter(logging.Filter):
+    def __init__(self, max_occurrences: int = 60):
         super().__init__()
-        self.seen = set()
-        self.suppressed = 0
-    def filter(self, record):
+        self.max_occurrences = max_occurrences
+        self._count = 0
+
+    def filter(self, record: logging.LogRecord) -> bool:
         try:
             msg = record.getMessage()
         except Exception:
             return True
-        if msg.startswith("⚠️ Table-Breite zu groß"):
-            if msg in self.seen:
-                self.suppressed += 1
+        if "Table-Breite zu groß" in msg or "Kommentar-Paragraph HINZUGEFÜGT" in msg or ("Added" in msg and "comment paragraphs" in msg):
+            if self._count < self.max_occurrences:
+                self._count += 1
+                return True
+            elif self._count == self.max_occurrences:
+                record.msg = "Table/Comment warnings suppressed after %d occurrences" % self.max_occurrences
+                self._count += 1
+                return True
+            else:
                 return False
-            self.seen.add(msg)
-            return True
         return True
+
+try:
+    logger.addFilter(_TableWidthAndCommentFilter(60))
+except Exception:
+    pass
+# --- Ende Log-Throttling ---
 
 # Ensure stream handler with throttle filter
 logger = logging.getLogger(__name__)
@@ -86,10 +97,6 @@ if not any(isinstance(h, logging.StreamHandler) for h in logger.handlers):
     logger.addHandler(sh)
     logger.setLevel(logging.DEBUG)
 
-try:
-    logger.addFilter(_TableWidthFilter())
-except Exception:
-    pass
 
 # Attach log throttle to suppress mass warnings (table width, tag removal spam)
 try:
@@ -530,9 +537,9 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         logger.debug("prosa_pdf: failed to log generated files", exc_info=True)
     
     # optional: print suppressed counts for table warnings
-    for f in [h for h in getattr(logger, "filters", []) if isinstance(h, _TableWidthFilter)]:
-        if getattr(f, "suppressed", 0):
-            logger.info("Suppressed %d repeated 'Table-Breite zu groß' warnings", f.suppressed)
+    for f in [h for h in getattr(logger, "filters", []) if isinstance(h, _TableWidthAndCommentFilter)]:
+        if getattr(f, "_count", 0) > 60:
+            logger.info("Suppressed repeated Table/Comment warnings (total count: %d)", f._count)
 
 def main():
     # Parse command line arguments for tag config
