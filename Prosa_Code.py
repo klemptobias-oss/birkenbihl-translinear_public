@@ -1799,32 +1799,43 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         return max(SPEAKER_COL_MIN_MM * mm, w)
 
     def build_flow_tables(flow_block):
-        gr_tokens, de_tokens = flow_block['gr_tokens'], flow_block['de_tokens']
-        pdisp = flow_block.get('para_label') or ''
-        sdisp = flow_block.get('speaker') or ''
-        pwidth = para_width_pt(pdisp)
-        swidth = speaker_width_pt(sdisp) if any_speaker else 0.0
-        base_num = flow_block.get('base')  # NEU: Zeilennummer für Hinterlegung
+        print(f"Prosa_Code: build_flow_tables() ENTRY (gr_tokens={len(flow_block.get('gr_tokens', []))}, de_tokens={len(flow_block.get('de_tokens', []))})", flush=True)
+        try:
+            gr_tokens, de_tokens = flow_block['gr_tokens'], flow_block['de_tokens']
+            pdisp = flow_block.get('para_label') or ''
+            sdisp = flow_block.get('speaker') or ''
+            print(f"Prosa_Code: build_flow_tables() calculating widths (pdisp='{pdisp}', sdisp='{sdisp}')", flush=True)
+            pwidth = para_width_pt(pdisp)
+            swidth = speaker_width_pt(sdisp) if any_speaker else 0.0
+            base_num = flow_block.get('base')  # NEU: Zeilennummer für Hinterlegung
 
-        en_tokens = flow_block.get('en_tokens', [])  # NEU: Englische Tokens
-        tables = build_tables_for_stream(
-            gr_tokens, de_tokens,
-            doc_width_pt=frame_w,
-            reverse_mode=False,  # Nicht mehr verwendet
-            token_gr_style=token_gr, token_de_style=token_de,
-            para_display=pdisp, para_width_pt=pwidth, style_para=style_para,
-            speaker_display=(f'[{sdisp}]:' if sdisp else ''), speaker_width_pt=swidth, style_speaker=style_speaker,
-            table_halign='LEFT', italic=False,
-            en_tokens=en_tokens,  # NEU: Englische Tokens übergeben
-            hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
-            tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
-            base_num=base_num,  # NEU: Zeilennummer für Hinterlegung
-            line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
-            block=flow_block  # NEU: Block-Objekt für comment_token_mask
-        )
-        for idx, t in enumerate(tables):
-            if idx > 0: t.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
-        return tables
+            en_tokens = flow_block.get('en_tokens', [])  # NEU: Englische Tokens
+            print(f"Prosa_Code: build_flow_tables() calling build_tables_for_stream() (frame_w={frame_w})", flush=True)
+            tables = build_tables_for_stream(
+                gr_tokens, de_tokens,
+                doc_width_pt=frame_w,
+                reverse_mode=False,  # Nicht mehr verwendet
+                token_gr_style=token_gr, token_de_style=token_de,
+                para_display=pdisp, para_width_pt=pwidth, style_para=style_para,
+                speaker_display=(f'[{sdisp}]:' if sdisp else ''), speaker_width_pt=swidth, style_speaker=style_speaker,
+                table_halign='LEFT', italic=False,
+                en_tokens=en_tokens,  # NEU: Englische Tokens übergeben
+                hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
+                tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
+                base_num=base_num,  # NEU: Zeilennummer für Hinterlegung
+                line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
+                block=flow_block  # NEU: Block-Objekt für comment_token_mask
+            )
+            print(f"Prosa_Code: build_flow_tables() build_tables_for_stream() completed (tables={len(tables)})", flush=True)
+            for idx, t in enumerate(tables):
+                if idx > 0: t.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
+            print(f"Prosa_Code: build_flow_tables() EXIT (returning {len(tables)} tables)", flush=True)
+            return tables
+        except Exception as e:
+            print(f"Prosa_Code: build_flow_tables() ERROR: {e}", flush=True)
+            import traceback
+            traceback.print_exc()
+            raise
 
     # NEU: Hilfsfunktion zum Rendern von Kommentaren aus block['comments']
     def render_block_comments(block, elements_list):
@@ -1919,7 +1930,13 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     elements, idx = [], 0
     last_block_type = None  # Speichert den Typ des letzten verarbeiteten Blocks
     
+    print(f"Prosa_Code: Entering element creation loop (flow_blocks={len(flow_blocks)})", flush=True)
+    
     while idx < len(flow_blocks):
+        # DIAGNOSE: Logging am Anfang jeder Iteration (für ersten Block)
+        if idx == 0:
+            print(f"Prosa_Code: Processing first block (idx=0, type={flow_blocks[idx].get('type', 'unknown')})", flush=True)
+        
         b, t = flow_blocks[idx], flow_blocks[idx]['type']
 
         if t == 'blank':
@@ -2484,15 +2501,23 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             idx += 1; continue
         
         if t == 'flow':
+            # DIAGNOSE: Aggressives Logging für flow-Blöcke
+            print(f"Prosa_Code: Processing flow block {idx+1}/{len(flow_blocks)} (gr_tokens={len(b.get('gr_tokens', []))}, de_tokens={len(b.get('de_tokens', []))})", flush=True)
+            
             # NEU: Kommentare aus block['comments'] rendern (VOR den Tabellen)
             render_block_comments(b, elements)
             
             # WICHTIG: Nur EINZELNE Zeilen zusammenhalten (2 oder 3 Tabellen für GR/DE oder GR/DE/EN)
             # NICHT den gesamten Flow-Block, um große weiße Flächen zu vermeiden
-            # DIAGNOSE: Logging vor build_flow_tables
-            if idx % 20 == 0:  # Logge alle 20 Blöcke
-                print(f"Prosa_Code: Processing flow block {idx+1}/{len(flow_blocks)}", flush=True)
-            flow_tables = build_flow_tables(b)
+            print(f"Prosa_Code: About to call build_flow_tables() for block {idx+1}", flush=True)
+            try:
+                flow_tables = build_flow_tables(b)
+                print(f"Prosa_Code: build_flow_tables() completed for block {idx+1} (tables={len(flow_tables)})", flush=True)
+            except Exception as e:
+                print(f"Prosa_Code: ERROR in build_flow_tables() for block {idx+1}: {e}", flush=True)
+                import traceback
+                traceback.print_exc()
+                raise
             
             # Bestimme die Anzahl der Sprachen (2 oder 3)
             has_en = b.get('has_en', False)
