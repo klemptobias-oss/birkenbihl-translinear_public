@@ -23,8 +23,12 @@ from pathlib import Path
 import os, itertools, sys
 from pathlib import Path
 import logging
+import os
 import time
 import traceback
+from reportlab.platypus import Paragraph
+from reportlab.lib.styles import ParagraphStyle
+from reportlab.lib import colors
 
 # Reduce noisy DEBUG output - set root logger to INFO
 logging.getLogger().setLevel(logging.INFO)
@@ -145,28 +149,32 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     blocks = Prosa.group_pairs_into_flows(blocks_raw)
     logging.getLogger(__name__).info("prosa_pdf: group_pairs_into_flows done (%.2f s), blocks=%d", time.time() - t_group, len(blocks) if blocks else 0)
     
-    # Discover and attach comments: be defensive and log progress + timings
-    final_blocks = None
+    # Defensive: always ensure final_blocks is a list. Protect pipeline from exceptions
+    final_blocks = blocks
     try:
-        t0 = time.time()
-        logging.getLogger(__name__).info("prosa_pdf: discover_and_attach_comments START")
+        # write PID/cwd briefly so CI shows context if it hangs
+        try:
+            logging.getLogger(__name__).info("prosa_pdf: pid=%d cwd=%s", os.getpid(), os.getcwd())
+        except Exception:
+            pass
+        
         import shared.comment_utils as comment_utils  # local import so patch is conservative
-        final_blocks = comment_utils.safe_discover_and_attach_comments(
+        fb = comment_utils.safe_discover_and_attach_comments(
             blocks,
             preprocess,
             comment_regexes=None,
             strip_comment_lines=True,
             pipeline_name='prosa_pdf'
         )
-        dt = time.time() - t0
-        if final_blocks is None:
-            logging.getLogger(__name__).info("prosa_pdf: discover_and_attach_comments returned None -> using original blocks")
+        if fb is None:
+            logging.getLogger(__name__).info("prosa_pdf: discover_and_attach_comments returned None -> fallback to original blocks")
             final_blocks = blocks
         else:
-            logging.getLogger(__name__).info("prosa_pdf: discover_and_attach_comments END (%.2f s) blocks=%d", dt, len(final_blocks))
+            final_blocks = fb
+            logging.getLogger(__name__).info("prosa_pdf: discover_and_attach_comments completed, blocks=%d", len(final_blocks))
     except Exception as e:
         tb = traceback.format_exc()
-        logging.getLogger(__name__).error("prosa_pdf: discover/attach comments failed (continuing without comments): %s", str(e))
+        logging.getLogger(__name__).error("prosa_pdf: discover/attach comments failed (continuing without comments): %s", e)
         logging.getLogger(__name__).debug("prosa_pdf: discover/attach comments traceback (first 800 chars):\n%s", tb[:800])
         final_blocks = blocks
     

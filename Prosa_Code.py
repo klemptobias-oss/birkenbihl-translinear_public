@@ -69,8 +69,9 @@ BLANK_MARKER_GAP_MM = 4.0         # Abstand bei Leerzeilen-Marker
 
 PARA_COL_MIN_MM = 5.0      # Mindestbreite für Paragraphen-Spalte (stark reduziert)
 PARA_GAP_MM = 1.2          # Abstand neben Paragraphen-Spalte (weiter reduziert für maximale Textbreite)
-SPEAKER_COL_MIN_MM = 2.0   # Mindestbreite für Sprecher-Spalte (weiter reduziert für mehr Textraum)
-SPEAKER_GAP_MM = 1.2       # Abstand neben Sprecher-Spalte (gleich wie PARA_GAP_MM für konsistente Formatierung)
+# Normalize spacing constants so speaker texts behave like §/no-speaker texts
+SPEAKER_COL_MIN_MM = 3.0   # Mindestbreite für Sprecher-Spalte
+SPEAKER_GAP_MM = PARA_GAP_MM   # keep same gap as normal paragraph/§ texts
 
 CELL_PAD_LR_PT = 0.6       # Innenabstand links/rechts in Zellen (stark reduziert für kompaktere TAG-PDFs)
 SAFE_EPS_PT = 0.3          # Sicherheitsabstand für Messungen (reduziert für kompaktere Darstellung)
@@ -634,6 +635,17 @@ def tokenize(line:str):
 
 def _measure_string(text:str, font:str, size:float) -> float:
     return pdfmetrics.stringWidth(text, font, size)
+
+def _token_extra_buffer(token_gr_style, no_tag_no_trans=False):
+    """
+    Unified extra buffer for token spacing.
+    For NoTag/NoTrans tokens (especially in speaker lines) use slightly larger buffer
+    to avoid words sticking together. This value should match spacing used in § and
+    non-speaker prosa.
+    """
+    if no_tag_no_trans:
+        return max(token_gr_style.fontSize * 0.05, 1.5)
+    return max(token_gr_style.fontSize * 0.04, 1.2)
 
 # ----------------------- Sprecher-Handling -----------------------
 def pop_leading_speaker(tokens):
@@ -1341,17 +1353,11 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                 is_notag = len(all_tags) > 0 and len(visible_tags) == 0
             
             if w_gr > 0:
-                if is_notag:
-                    # NoTag NoTrans: Größerer Puffer für bessere Abstände
-                    # WICHTIG: Bei Sprechern (Politeia) müssen wir einen noch größeren Puffer verwenden
-                    # um Überlappungen zu vermeiden, besonders bei orange gefärbten Wörtern
-                    # Unified extra buffer: ensure speaker lines (Platon) get at least same spacing
-                    extra_buffer = max(token_gr_style.fontSize * 0.06, 1.6)
-                    return w_gr + base_safety + extra_buffer
-                else:
-                    # Tag NoTrans: Normaler Puffer (konsistent für alle)
-                    extra_buffer = max(token_gr_style.fontSize * 0.025, 0.7)  # 2.5% oder mindestens 0.7pt
-                    return w_gr + base_safety + extra_buffer
+                # Determine extra buffer for spacing. Use unified buffer for NO_TAGS
+                # and for speaker lines so tokens do not collide.
+                no_tag_no_trans = is_notag  # or (token_meta and token_meta.get('hide_tags', False) and token_meta.get('hide_trans', False))
+                extra_buffer = _token_extra_buffer(token_gr_style, no_tag_no_trans=no_tag_no_trans)
+                return w_gr + base_safety + extra_buffer
             else:
                 return base_safety
         

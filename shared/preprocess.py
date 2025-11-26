@@ -119,6 +119,24 @@ RE_PAREN_TAG     = re.compile(r'\(([A-Za-z0-9/≈äöüßÄÖÜ]+)\)')
 RE_LEAD_BAR_COLOR= re.compile(r'^\|\s*([+\-#§$])')  # |+ |# |- |§ |$ (Farbcode NACH leitender '|')
 RE_WORD_START = re.compile(r'([(\[|]*)([\w\u0370-\u03FF\u1F00-\u1FFF\u1F00-\u1FFF]+)') # Findet den Anfang eines Wortes, auch mit Präfixen wie (, [ oder |
 RE_STEPHANUS = re.compile(r'\[(\d+[a-e])\]')  # Stephanus-Paginierungen: [543b], [546b] etc.
+STEHPANUS_RE = re.compile(r'^\s*(\[[0-9a-zA-Z]+\]|[0-9]+[a-z]?)\s*$')  # simple stephanus-like bracket forms
+
+def is_only_punctuation_or_stephanus(s: str) -> bool:
+    """
+    Return True if the string s contains only punctuation characters
+    (.,;:!?()[]-quotes etc.) or a stephanus-like pagination token.
+    Used to hide translation lines that would be visually empty.
+    """
+    if s is None:
+        return False
+    t = s.strip()
+    if not t:
+        return True
+    # stephanus page forms like [581b] or [5c]
+    if STEHPANUS_RE.match(t):
+        return True
+    # if every char is punctuation or whitespace
+    return all(ch in string.punctuation or ch.isspace() for ch in t)
 
 def is_trivial_translation(text: str) -> bool:
     """
