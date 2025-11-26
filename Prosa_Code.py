@@ -1065,6 +1065,8 @@ def group_pairs_into_flows(blocks):
             # WICHTIG: Übertrage Kommentare vom letzten pair-Block zum flow-Block
             if accumulated_comments:
                 flow_block['comments'] = list(accumulated_comments)
+                # DEBUG: Logge übertragene Kommentare
+                print(f"Prosa_Code: flush() - transferring {len(accumulated_comments)} comments to flow block", flush=True)
                 accumulated_comments = []  # Reset nach Übertragung
             flows.append(flow_block)
             buf_gr, buf_de, buf_en = [], [], []
@@ -1106,6 +1108,8 @@ def group_pairs_into_flows(blocks):
             pair_comments = b.get('comments', [])
             if pair_comments:
                 accumulated_comments.extend(pair_comments)
+                # DEBUG: Logge gesammelte Kommentare
+                print(f"Prosa_Code: pair block has {len(pair_comments)} comments, total accumulated: {len(accumulated_comments)}", flush=True)
             
             # NEU: base_num für Hinterlegung speichern (erstes base_num wird verwendet)
             if current_base_num is None:
@@ -1841,8 +1845,14 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     def render_block_comments(block, elements_list):
         """Rendert Kommentare aus block['comments'] als Paragraphen (dedupliziert + limitiert)"""
         cms = block.get('comments') or []
+        # DEBUG: Prüfe auch, ob der Block selbst ein Kommentar ist
+        if not cms and block.get('type') == 'comment':
+            # Block ist selbst ein Kommentar - verwende ihn direkt
+            cms = [block]
         if not cms:
             return
+        # DEBUG: Logge gefundene Kommentare
+        print(f"Prosa_Code: render_block_comments() - found {len(cms)} comments in block type={block.get('type')}", flush=True)
         
         # Prüfe disable_comment_bg Flag (falls verfügbar)
         disable_comment_bg = False

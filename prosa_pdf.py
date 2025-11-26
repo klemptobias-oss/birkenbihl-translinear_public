@@ -401,26 +401,25 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             # um die Tag-Sichtbarkeit basierend auf tag_config zu steuern (z.B. hide für bestimmte Wortarten)
             # Bei NO_TAGS-Varianten: Alle Tags werden später komplett entfernt
             blocks_after_visibility = blocks_with_colors
-            if tag_mode == "TAGS":
+            if tag_mode == "TAGS" and final_tag_config:
                 # Bei TAGS-Varianten: Tag-Sichtbarkeit basierend auf tag_config anwenden
                 # (z.B. wenn Nomen-Tags versteckt werden sollen, werden sie entfernt)
-                # WICHTIG: Nur anwenden, wenn tag_config vorhanden ist UND nicht alle Tags versteckt sind
-                if final_tag_config and isinstance(final_tag_config, dict):
-                    # Prüfe, ob alle Tags versteckt sind - wenn ja, dann keine Filterung (Tags bleiben)
-                    all_hidden = all(conf.get('hide') in (True, 'true', 'True', 'hide', 'Hide') 
-                                    for conf in final_tag_config.values() 
-                                    if isinstance(conf, dict))
-                    if not all_hidden:
-                        # Nicht alle Tags sind versteckt - wende Tag-Sichtbarkeit an
-                        hidden_by_wortart = (final_tag_config.get('hidden_tags_by_wortart') if isinstance(final_tag_config, dict) else None)
-                        blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
-                        logging.getLogger(__name__).info("prosa_pdf: TAGS mode - applied tag visibility based on tag_config")
-                    else:
-                        # Alle Tags sind versteckt - aber bei TAGS-Varianten wollen wir Tags behalten!
-                        logging.getLogger(__name__).info("prosa_pdf: TAGS mode - all tags marked as hide, but keeping all tags (TAGS variant)")
+                # WICHTIG: apply_tag_visibility entfernt nur die Tags, die in tag_config als "hide" markiert sind
+                # Prüfe, ob ALLE Tags versteckt sind - wenn ja, dann keine Filterung (Tags bleiben bei TAGS-Varianten)
+                all_hidden = all(conf.get("hide") in (True, "true", "True", "hide", "Hide") 
+                                for conf in final_tag_config.values() 
+                                if isinstance(conf, dict))
+                if not all_hidden:
+                    # Nicht alle Tags sind versteckt - wende Tag-Sichtbarkeit an
+                    hidden_by_wortart = (final_tag_config.get("hidden_tags_by_wortart") if isinstance(final_tag_config, dict) else None)
+                    blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
+                    logging.getLogger(__name__).info("prosa_pdf: TAGS mode - applied tag visibility based on tag_config (not all tags hidden)")
                 else:
-                    # Keine tag_config vorhanden - alle Tags bleiben erhalten
-                    logging.getLogger(__name__).info("prosa_pdf: TAGS mode - keeping all tags (no tag_config)")
+                    # Alle Tags sind versteckt - aber bei TAGS-Varianten wollen wir Tags behalten!
+                    logging.getLogger(__name__).info("prosa_pdf: TAGS mode - all tags marked as hide in tag_config, but keeping all tags (TAGS variant)")
+            elif tag_mode == "TAGS":
+                # Bei TAGS-Varianten ohne tag_config: Alle Tags bleiben erhalten
+                logging.getLogger(__name__).info("prosa_pdf: TAGS mode - keeping all tags (no tag_config)")
             else:
                 logging.getLogger(__name__).info("prosa_pdf: NO_TAGS mode - will remove all tags in next step")
         except Exception as e:
