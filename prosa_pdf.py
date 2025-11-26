@@ -58,35 +58,45 @@ class _RepeatThrottleFilter(logging.Filter):
                 return False
         return True
 
-# --- Log-Throttling für wiederholte Table/Comment Warnungen ---
-class _TableWidthAndCommentFilter(logging.Filter):
-    def __init__(self, max_occurrences: int = 60):
+# --- START: Repeated-message throttling filter (prevents log-spam) ---
+from typing import Iterable
+
+class _RepeatedMessageFilter(logging.Filter):
+    def __init__(self, patterns: Iterable[str] = None, max_occurrences: int = 60):
         super().__init__()
-        self.max_occurrences = max_occurrences
-        self._count = 0
+        self.patterns = list(patterns) if patterns else [
+            "Table-Breite zu groß",
+            "Kommentar verarbeiten:",
+            "Kommentar-Paragraph HINZUGEFÜGT",
+            "Added",
+        ]
+        self.max_occurrences = int(max_occurrences)
+        self._counts = {p: 0 for p in self.patterns}
 
     def filter(self, record: logging.LogRecord) -> bool:
         try:
             msg = record.getMessage()
         except Exception:
             return True
-        if "Table-Breite zu groß" in msg or "Kommentar-Paragraph HINZUGEFÜGT" in msg or ("Added" in msg and "comment paragraphs" in msg):
-            if self._count < self.max_occurrences:
-                self._count += 1
-                return True
-            elif self._count == self.max_occurrences:
-                record.msg = "Table/Comment warnings suppressed after %d occurrences" % self.max_occurrences
-                self._count += 1
-                return True
-            else:
-                return False
+        for p in self.patterns:
+            if p in msg:
+                c = self._counts[p]
+                if c < self.max_occurrences:
+                    self._counts[p] = c + 1
+                    return True
+                elif c == self.max_occurrences:
+                    record.msg = f"{p}: further identical messages suppressed after {self.max_occurrences} occurrences"
+                    self._counts[p] = c + 1
+                    return True
+                else:
+                    return False
         return True
 
 try:
-    logger.addFilter(_TableWidthAndCommentFilter(60))
+    logger.addFilter(_RepeatedMessageFilter(max_occurrences=100))
 except Exception:
     pass
-# --- Ende Log-Throttling ---
+# --- END: Repeated-message throttling filter ---
 
 # Ensure stream handler with throttle filter
 logger = logging.getLogger(__name__)
@@ -294,27 +304,31 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         pass
     start_time = time.time()
     
-    # Call discover_and_attach_comments in a backward/forward-compatible way.
+    # robust call to discover_and_attach_comments: try new signature, fallback to old
+    final_blocks = None
+    comment_regexes = None
+    strip_comment_lines = True
     try:
         final_blocks = preprocess.discover_and_attach_comments(
-            blocks, comment_regexes=None, strip_comment_lines=True
+            blocks,
+            comment_regexes=comment_regexes,
+            strip_comment_lines=strip_comment_lines,
         )
     except TypeError:
-        # Older signature: try simple call
         try:
             final_blocks = preprocess.discover_and_attach_comments(blocks)
-        except Exception:
-            logger.exception("prosa_pdf: discover/attach comments failed (continuing without comments):")
+        except Exception as e:
+            logger.exception("prosa_pdf: discover/attach comments failed (continuing without comments): %s", e)
             final_blocks = blocks
-    except Exception:
-        logger.exception("prosa_pdf: discover/attach comments failed (continuing without comments):")
+    except Exception as e:
+        logger.exception("prosa_pdf: discover/attach comments failed (continuing without comments): %s", e)
         final_blocks = blocks
 
     if final_blocks is None:
         logger.debug("prosa_pdf: discover_and_attach_comments returned None -> using original blocks")
         final_blocks = blocks
 
-    # small debug summary
+    # Compact debug summary for CI logs: print only first block's comments and a short mask sample.
     try:
         c0 = final_blocks[0].get('comments') if isinstance(final_blocks, list) and final_blocks else None
         mask0 = final_blocks[0].get('comment_token_mask') if isinstance(final_blocks, list) and final_blocks else None
@@ -323,33 +337,6 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
                     (mask0[:40] if mask0 is not None else None))
     except Exception:
         logger.debug("prosa_pdf: failed to print final_blocks[0] debug info", exc_info=True)
-        try:
-            # dump a compact JSON with first blocks so we can inspect in CI artifacts
-            dump_sample = []
-            for b in (blocks[:50] if blocks else []):
-                dump_sample.append({
-                    'block_index_example': b.get('index') if isinstance(b, dict) else None,
-                    'comment_count': len(b.get('comments') or []),
-                    'comment_token_mask_sample': (b.get('comment_token_mask')[:40] if b.get('comment_token_mask') else None),
-                    'gr_tokens_sample': (b.get('gr_tokens')[:10] if b.get('gr_tokens') else None),
-                })
-            tmpf = tempfile.gettempdir() + os.sep + ("prosa_debug_%s.json" % base_name.replace('/', '_'))
-            with open(tmpf, 'w', encoding='utf-8') as fh:
-                json.dump({'error': str(e), 'trace_snippet': tb[:800], 'sample_blocks': dump_sample}, fh, ensure_ascii=False, indent=2)
-            logging.getLogger(__name__).info("prosa_pdf: wrote debug dump to %s", tmpf)
-        except Exception:
-            logging.getLogger(__name__).exception("prosa_pdf: failed to write debug dump")
-        final_blocks = blocks
-    
-    # Compact debug summary for CI logs: print only first block's comments and a short mask sample.
-    try:
-        c0 = final_blocks[0].get('comments') if isinstance(final_blocks, list) and final_blocks else None
-        mask0 = final_blocks[0].get('comment_token_mask') if isinstance(final_blocks, list) and final_blocks else None
-        logging.getLogger(__name__).info("DEBUG prosa_pdf: final_blocks[0].comments=%s mask_sample=%s",
-                    (c0 if c0 else []),
-                    (mask0[:40] if mask0 is not None else None))
-    except Exception:
-        logging.getLogger(__name__).debug("prosa_pdf: failed to print final_blocks[0] debug info", exc_info=True)
 
     # Erkenne Sprache aus Dateinamen
     ancient_lang_strength = _detect_language_from_filename(infile)
@@ -537,9 +524,10 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         logger.debug("prosa_pdf: failed to log generated files", exc_info=True)
     
     # optional: print suppressed counts for table warnings
-    for f in [h for h in getattr(logger, "filters", []) if isinstance(h, _TableWidthAndCommentFilter)]:
-        if getattr(f, "_count", 0) > 60:
-            logger.info("Suppressed repeated Table/Comment warnings (total count: %d)", f._count)
+    for f in [h for h in getattr(logger, "filters", []) if isinstance(h, _RepeatedMessageFilter)]:
+        total_suppressed = sum(1 for c in f._counts.values() if c > 100)
+        if total_suppressed > 0:
+            logger.info("Suppressed repeated Table/Comment warnings (patterns suppressed: %d)", total_suppressed)
 
 def main():
     # Parse command line arguments for tag config

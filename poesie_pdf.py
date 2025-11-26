@@ -47,39 +47,52 @@ if not logger.handlers:
     logger.addHandler(handler)
     logger.setLevel(logging.DEBUG)
 
-# --- Log-Throttling für wiederholte Table/Comment Warnungen ---
-class _TableWidthAndCommentFilter(logging.Filter):
-    """Throttle repeated 'Table-Breite zu groß' and comment-add messages."""
-    def __init__(self, max_occurrences: int = 60):
+# --- START: Repeated-message throttling filter (prevents log-spam) ---
+from typing import Iterable
+
+class _RepeatedMessageFilter(logging.Filter):
+    """
+    Filter identical noisy messages (like 'Table-Breite zu groß' / 'Kommentar verarbeiten') after N occurrences.
+    """
+    def __init__(self, patterns: Iterable[str] = None, max_occurrences: int = 60):
         super().__init__()
-        self.max_occurrences = max_occurrences
-        self._count = 0
+        self.patterns = list(patterns) if patterns else [
+            "Table-Breite zu groß",
+            "Kommentar verarbeiten:",
+            "Kommentar-Paragraph HINZUGEFÜGT",
+            "Added",
+        ]
+        self.max_occurrences = int(max_occurrences)
+        # counts per pattern
+        self._counts = {p: 0 for p in self.patterns}
 
     def filter(self, record: logging.LogRecord) -> bool:
         try:
             msg = record.getMessage()
         except Exception:
             return True
-        if "Table-Breite zu groß" in msg or "Kommentar-Paragraph HINZUGEFÜGT" in msg or ("Added" in msg and "comment paragraphs" in msg):
-            if self._count < self.max_occurrences:
-                self._count += 1
-                return True
-            elif self._count == self.max_occurrences:
-                # one final line to indicate suppression
-                record.msg = "Table/Comment warnings suppressed after %d occurrences" % self.max_occurrences
-                self._count += 1
-                return True
-            else:
-                return False
+        for p in self.patterns:
+            if p in msg:
+                c = self._counts[p]
+                if c < self.max_occurrences:
+                    self._counts[p] = c + 1
+                    return True
+                elif c == self.max_occurrences:
+                    # allow one final suppression-notice
+                    record.msg = f"{p}: further identical messages suppressed after {self.max_occurrences} occurrences"
+                    self._counts[p] = c + 1
+                    return True
+                else:
+                    return False
         return True
 
-# Add the filter to the module logger (ensure logger exists)
+# attach filter to module logger (wrapped in try so it never breaks startup)
 try:
-    logger.addFilter(_TableWidthAndCommentFilter(60))
+    logger.addFilter(_RepeatedMessageFilter(max_occurrences=100))
 except Exception:
-    # if logger not set up yet, ignore
+    # if we don't yet have logger or something else fails, ignore silently
     pass
-# --- Ende Log-Throttling ---
+# --- END: Repeated-message throttling filter ---
 
 try:
     banner = "poesie_pdf: startup pid=%s argv=%s" % (os.getpid(), " ".join(sys.argv))
@@ -256,26 +269,27 @@ def _process_one_input(infile: str,
     
     blocks = Poesie.process_input_file(infile)
     
-    # Call discover_and_attach_comments in a backward/forward-compatible way.
-    # Newer preprocess implementations accept keyword args (comment_regexes, strip_comment_lines).
-    # Older ones accept only (blocks). Try the newer signature first, fall back to the older.
+    # Robust call to discover_and_attach_comments: try new signature, fall back to old (blocks)
     final_blocks = None
+    comment_regexes = None
+    strip_comment_lines = True
     try:
         final_blocks = preprocess.discover_and_attach_comments(
-            blocks, comment_regexes=None, strip_comment_lines=True
+            blocks,
+            comment_regexes=comment_regexes,
+            strip_comment_lines=strip_comment_lines,
         )
     except TypeError:
-        # Older signature: try the simple call
+        # older preprocess implementation might accept only (blocks,)
         try:
             final_blocks = preprocess.discover_and_attach_comments(blocks)
-        except Exception:
-            logger.exception("poesie_pdf: discover/attach comments failed (continuing without comments):")
+        except Exception as e:
+            logger.exception("poesie_pdf: discover/attach comments failed (continuing without comments): %s", e)
             final_blocks = blocks
-    except Exception:
-        logger.exception("poesie_pdf: discover/attach comments failed (continuing without comments):")
+    except Exception as e:
+        logger.exception("poesie_pdf: discover/attach comments failed (continuing without comments): %s", e)
         final_blocks = blocks
 
-    # Defensive: ensure final_blocks is always usable
     if final_blocks is None:
         logger.debug("poesie_pdf: discover_and_attach_comments returned None -> using original blocks")
         final_blocks = blocks
@@ -454,9 +468,10 @@ def _process_one_input(infile: str,
         pass
     
     # optional: print suppressed counts for table warnings
-    for f in [h for h in getattr(logger, "filters", []) if isinstance(h, _TableWidthAndCommentFilter)]:
-        if getattr(f, "_count", 0) > 60:
-            logger.info("Suppressed repeated Table/Comment warnings (total count: %d)", f._count)
+    for f in [h for h in getattr(logger, "filters", []) if isinstance(h, _RepeatedMessageFilter)]:
+        total_suppressed = sum(1 for c in f._counts.values() if c > 100)
+        if total_suppressed > 0:
+            logger.info("Suppressed repeated Table/Comment warnings (patterns suppressed: %d)", total_suppressed)
 
 def main():
     # Parse command line arguments for tag config
