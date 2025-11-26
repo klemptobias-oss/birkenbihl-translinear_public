@@ -58,6 +58,25 @@ class _RepeatThrottleFilter(logging.Filter):
                 return False
         return True
 
+# --- Quiet noisy "Table-Breite zu groß" repetitions ---
+class _TableWidthFilter(logging.Filter):
+    def __init__(self):
+        super().__init__()
+        self.seen = set()
+        self.suppressed = 0
+    def filter(self, record):
+        try:
+            msg = record.getMessage()
+        except Exception:
+            return True
+        if msg.startswith("⚠️ Table-Breite zu groß"):
+            if msg in self.seen:
+                self.suppressed += 1
+                return False
+            self.seen.add(msg)
+            return True
+        return True
+
 # Ensure stream handler with throttle filter
 logger = logging.getLogger(__name__)
 if not any(isinstance(h, logging.StreamHandler) for h in logger.handlers):
@@ -66,6 +85,11 @@ if not any(isinstance(h, logging.StreamHandler) for h in logger.handlers):
     sh.addFilter(_RepeatThrottleFilter())
     logger.addHandler(sh)
     logger.setLevel(logging.DEBUG)
+
+try:
+    logger.addFilter(_TableWidthFilter())
+except Exception:
+    pass
 
 # Attach log throttle to suppress mass warnings (table width, tag removal spam)
 try:
@@ -263,16 +287,23 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         pass
     start_time = time.time()
     
+    # Robustly handle multiple preprocess versions:
     final_blocks = None
     try:
-        final_blocks = preprocess.discover_and_attach_comments(
-            blocks, comment_regexes=None, strip_comment_lines=True)
+        func = preprocess.discover_and_attach_comments
+        sig = inspect.signature(func)
+        if 'comment_regexes' in sig.parameters or 'strip_comment_lines' in sig.parameters:
+            final_blocks = func(blocks, comment_regexes=None,
+                                strip_comment_lines=True)
+        else:
+            final_blocks = func(blocks)
         if final_blocks is None:
             logger.debug("prosa_pdf: discover_and_attach_comments returned None -> using original blocks")
             final_blocks = blocks
     except Exception:
-        tb = traceback.format_exc()
-        logger.error("prosa_pdf: discover/attach comments failed (continuing without comments): %s", tb[:800])
+        import traceback as _tb
+        logger.exception("discover/attach comments failed (continuing without comments): %s",
+                         _tb.format_exc()[:1000])
         final_blocks = blocks
 
     # small debug summary
@@ -496,6 +527,11 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             pass
     except Exception:
         logger.debug("prosa_pdf: failed to log generated files", exc_info=True)
+    
+    # optional: print suppressed counts for table warnings
+    for f in [h for h in getattr(logger, "filters", []) if isinstance(h, _TableWidthFilter)]:
+        if getattr(f, "suppressed", 0):
+            logger.info("Suppressed %d repeated 'Table-Breite zu groß' warnings", f.suppressed)
 
 def main():
     # Parse command line arguments for tag config

@@ -30,6 +30,7 @@ import tempfile
 import time
 import signal
 import traceback
+import inspect
 from reportlab.platypus import Paragraph
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib import colors
@@ -45,6 +46,32 @@ if not logger.handlers:
     handler.setFormatter(formatter)
     logger.addHandler(handler)
     logger.setLevel(logging.DEBUG)
+
+# --- Quiet noisy "Table-Breite zu groß" repetitions ---
+class _TableWidthFilter(logging.Filter):
+    def __init__(self):
+        super().__init__()
+        self.seen = set()
+        self.suppressed = 0
+    def filter(self, record):
+        try:
+            msg = record.getMessage()
+        except Exception:
+            return True
+        if msg.startswith("⚠️ Table-Breite zu groß"):
+            if msg in self.seen:
+                self.suppressed += 1
+                return False
+            self.seen.add(msg)
+            return True
+        return True
+
+# Attach the filter to the module logger (create if not present above)
+try:
+    logger.addFilter(_TableWidthFilter())
+except Exception:
+    # If logger not defined yet, ignore here — we will add filter later.
+    pass
 
 try:
     banner = "poesie_pdf: startup pid=%s argv=%s" % (os.getpid(), " ".join(sys.argv))
@@ -221,16 +248,25 @@ def _process_one_input(infile: str,
     
     blocks = Poesie.process_input_file(infile)
     
+    # Robust discover_and_attach_comments call: new signature may accept
+    # comment_regexes / strip_comment_lines, older versions may not.
     final_blocks = None
     try:
-        final_blocks = preprocess.discover_and_attach_comments(
-            blocks, comment_regexes=None, strip_comment_lines=True)
+        func = preprocess.discover_and_attach_comments
+        sig = inspect.signature(func)
+        if 'comment_regexes' in sig.parameters or 'strip_comment_lines' in sig.parameters:
+            final_blocks = func(blocks, comment_regexes=None,
+                                strip_comment_lines=True)
+        else:
+            # fallback to older signature
+            final_blocks = func(blocks)
         if final_blocks is None:
             logger.debug("poesie_pdf: discover_and_attach_comments returned None -> using original blocks")
             final_blocks = blocks
     except Exception:
-        tb = traceback.format_exc()
-        logger.error("poesie_pdf: discover/attach comments failed (continuing without comments): %s", tb[:800])
+        import traceback as _tb
+        logger.exception("discover/attach comments failed (continuing without comments): %s",
+                         _tb.format_exc()[:1000])
         final_blocks = blocks
 
     try:
@@ -405,6 +441,11 @@ def _process_one_input(infile: str,
             pass
     except Exception:
         pass
+    
+    # optional: print suppressed counts for table warnings
+    for f in [h for h in getattr(logger, "filters", []) if isinstance(h, _TableWidthFilter)]:
+        if getattr(f, "suppressed", 0):
+            logger.info("Suppressed %d repeated 'Table-Breite zu groß' warnings", f.suppressed)
 
 def main():
     # Parse command line arguments for tag config
