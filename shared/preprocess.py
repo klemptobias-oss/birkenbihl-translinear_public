@@ -394,7 +394,12 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,A
     comments_found = 0
 
     # 2) scan each block for full-line or inline comment markers
+    # WICHTIG: Überspringe Blöcke, die bereits als 'comment' markiert sind (werden separat gerendert)
     for bi, b in enumerate(blocks):
+        # WICHTIG: Kommentar-Blöcke (type='comment') überspringen - diese bleiben als separate Blöcke
+        if b.get('type') == 'comment':
+            continue
+        
         gr = b.get('gr')
         if not gr or not isinstance(gr, str):
             continue

@@ -407,11 +407,12 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             tb = traceback.format_exc()
             logging.getLogger(__name__).error("prosa_pdf: apply_colors/apply_tag_visibility failed (continuing): %s", str(e))
             logging.getLogger(__name__).debug("prosa_pdf: apply_colors/apply_tag_visibility traceback (first 800 chars):\n%s", tb[:800])
-            blocks_after_visibility = final_blocks
+            # WICHTIG: Verwende blocks_with_colors falls verfügbar, sonst final_blocks (wie in Poesie)
+            blocks_after_visibility = blocks_with_colors if 'blocks_with_colors' in locals() else final_blocks
         
         # 3) Entferne ALLE Tags für NO_TAGS-Varianten (NUR bei NO_TAGS!)
         # WICHTIG: Diese Prüfung muss NACH dem try-except-Block stehen, damit sie auch bei Fehlern ausgeführt wird
-        if tag_mode == "NO_TAGS":
+        if tag_mode != "TAGS":  # NO_TAGS - wie in Poesie
             # Bei NO_TAGS-Varianten: Entferne ALLE Tags komplett
             # WICHTIG: Verwende blocks_with_colors, nicht blocks_after_visibility (die könnte bei Fehlern final_blocks sein)
             blocks_after_visibility = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)

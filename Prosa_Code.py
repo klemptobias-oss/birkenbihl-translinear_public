@@ -1998,96 +1998,58 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             last_block_type = t
             idx += 1; continue
 
-        # NEU: Kommentar-Zeilen (zahlk oder zahl-zahlk)
+        # NEU: Kommentar-Zeilen (zahlk oder zahl-zahlk) - GANZ EINFACH: Text in grauer Box
         if t == 'comment':
-            line_num = b.get('line_num', '')
-            content = b.get('content', '')
             original_line = b.get('original_line', '')
+            content = b.get('content', '')
             
-            # Kommentar wird verarbeitet (DEBUG entfernt für weniger Log-Noise)
-            
-            # Fallback: Wenn content leer ist, versuche original_line zu verwenden
+            # WICHTIG: Kommentar-Text direkt aus original_line extrahieren (einfach!)
+            # Format: "(105k) Text" oder "(71-77k) Text"
             if not content and original_line:
-                # Extrahiere content aus original_line
-                _, content = extract_line_number(original_line)
+                # Entferne Zeilennummer-Marker am Anfang: "(105k) " oder "(71-77k) "
+                content = re.sub(r'^\(\d+(?:-\d+)?k\)\s*', '', original_line).strip()
             
-            # Wenn immer noch kein content, verwende original_line direkt (ohne Zeilennummer)
-            if not content and original_line:
-                # Entferne Zeilennummer am Anfang (z.B. "(3-7k) " oder "(24k) ")
-                content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
-                content = re.sub(r'^\(\d+k\)\s*', '', content)
-                content = content.strip()
+            # Fallback: Wenn immer noch kein content, verwende original_line
+            if not content:
+                content = original_line.strip()
             
-            # Fallback: Wenn line_num leer ist, extrahiere sie aus original_line
-            if not line_num and original_line:
-                line_num, _ = extract_line_number(original_line)
-            
-            comment_color = b.get('comment_color', COMMENT_COLORS[0])  # Fallback zu rot
-            comment_index = b.get('comment_index', 0)
-            
-            # ROBUST: Prüfe, ob überhaupt Daten vorhanden sind (line_num, content oder original_line)
-            if not line_num and not content and not original_line:
+            # Wenn content leer ist, überspringe
+            if not content:
                 idx += 1
                 continue
             
-            # Formatiere Zeilennummer in der Kommentar-Farbe (rot/blau/grün)
-            # Konvertiere RGB-Tupel zu Hex für HTML
-            r, g, b = comment_color
-            color_hex = f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
+            # GANZ EINFACH: Kommentar in grauer Box rendern
+            # Grau hinterlegte Box: Table mit Hintergrundfarbe
+            from reportlab.platypus import Table, TableStyle
+            comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
+                fontName='DejaVu', fontSize=7,  # Kleinere Schrift
+                leading=8.5,  # Dichte Zeilenabstände
+                alignment=TA_LEFT,
+                textColor=colors.Color(0.25, 0.25, 0.25),  # Dunkleres Grau
+                leftIndent=0, rightIndent=0,  # Kein Indent in der Table
+                spaceBefore=0, spaceAfter=0)
             
-            # Kommentar-Text mit kleinerem Font und etwas kursiv/leicht hervorgehoben
-            formatted_parts = []
-            # Zeilennummer in Kommentar-Farbe, DEUTLICH gefärbt für bessere Sichtbarkeit
-            # (WICHTIG: xml_escape auf line_num anwenden, um "-" zu schützen)
-            comment_num_size = de_size * 0.9  # Etwas größer (90% statt 85%)
+            # Berechne verfügbare Breite
+            try:
+                available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*mm
+            except:
+                available_width = 170*mm  # Fallback
             
-            # Zeilennummer hinzufügen, auch wenn sie leer ist (als Fallback)
-            if line_num:
-                formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
-            else:
-                # Fallback: Extrahiere line_num aus original_line
-                if original_line:
-                    extracted_num, _ = extract_line_number(original_line)
-                    if extracted_num:
-                        line_num = extracted_num
-                        formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
-            # Kommentar-Text mit kleinerem Font, aber SCHWARZ (nicht farbig)
-            comment_size = de_size * 0.85  # Etwas größer (85% statt 80%)
-            
-            # Sicherstellen, dass content vorhanden ist - robuste Fallback-Logik
-            if not content:
-                # Fallback 1: Versuche original_line zu verwenden
-                if original_line:
-                    # Entferne Zeilennummer aus original_line für content
-                    _, fallback_content = extract_line_number(original_line)
-                    if fallback_content:
-                        content = fallback_content
-                    else:
-                        # Fallback 2: Verwende original_line direkt (ohne Zeilennummer)
-                        content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
-                        content = re.sub(r'^\(\d+k\)\s*', '', content)
-                        content = content.strip()
-            
-            # Kommentar-Text hinzufügen, wenn vorhanden
-            if content:
-                formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#000000"><i> {xml_escape(content)}</i></font>')
-            
-            formatted_text = ''.join(formatted_parts)
-            
-            # Prüfe, ob formatted_text leer ist
-            if not formatted_text.strip():
-                # Selbst wenn formatted_text leer ist, erstelle einen Paragraph mit zumindest der Zeilennummer
-                if line_num:
-                    formatted_text = f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>'
-            
-            # Style für Kommentar (kompakt, kleiner, dichter)
-            # WICHTIG: Keine Hinterlegung für den Kommentartext selbst - die Hinterlegung betrifft die Originaltext-Zeilen
-            comment_style = ParagraphStyle('Comment', parent=base['Normal'],
-                fontName='DejaVu', fontSize=comment_size, 
-                leading=comment_size * 1.2,  # Dichterer Zeilenabstand (1.2 statt normal)
-                alignment=TA_LEFT, leftIndent=5*mm,  # Leicht eingerückt
-                spaceBefore=0, spaceAfter=0,  # Keine zusätzlichen Abstände
-                textColor=colors.black)  # Kommentartext ist schwarz
+            comment_table = Table([[Paragraph(html.escape(content), comment_style_simple)]], 
+                                 colWidths=[available_width])
+            comment_table.setStyle(TableStyle([
+                ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
+                ('LEFTPADDING', (0, 0), (-1, -1), 4*mm),
+                ('RIGHTPADDING', (0, 0), (-1, -1), 4*mm),
+                ('TOPPADDING', (0, 0), (-1, -1), 3*mm),
+                ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),
+            ]))
+            elements.append(Spacer(1, 2*mm))
+            elements.append(comment_table)
+            elements.append(Spacer(1, 2*mm))
+            print(f"Prosa_Code: Rendered comment block: '{content[:50]}...'", flush=True)
+            idx += 1
+            continue
             
             # Kommentar-Paragraph IMMER hinzufügen, auch wenn formatted_text leer ist
             if not formatted_text.strip():
