@@ -1,6 +1,6 @@
 ######## START: build_poesie_drafts_adapter.py ########
 from pathlib import Path
-import subprocess, sys, json, re
+import subprocess, sys, json, re, shlex, time, traceback, os
 
 ROOT = Path(__file__).parent.resolve()
 SRC_ROOT = ROOT / "texte_drafts" / "poesie_drafts"       # Eingaben
@@ -102,46 +102,100 @@ def run_one(input_path: Path) -> None:
         with open(config_file, 'w', encoding='utf-8') as f:
             json.dump(tag_config, f, ensure_ascii=False, indent=2)
     
+    # --- START robust subprocess invocation of poesie_pdf.py ---
+    # This will stream poesie_pdf output live, enforce a per-call timeout,
+    # and report a clear error/exit code to the outer CI.
     try:
-        # Führe den Runner mit optionaler Konfiguration aus
-        cmd = [sys.executable, str(RUNNER), str(temp_input)]
-        if force_meter:
-            cmd.append("--force-meter")
-            print(f"→ Kommando enthält --force-meter Flag")
-        if config_file:
-            cmd.extend(["--tag-config", str(config_file)])
-            print(f"→ Kommando enthält --tag-config: {config_file}")
-        if hide_pipes:
-            cmd.extend(["--hide-pipes"])
-            print(f"→ Kommando enthält --hide-pipes Flag")
-        
-        print(f"→ Führe aus: {' '.join(str(c) for c in cmd)}")
-        
-        # Führe den Runner aus
-        import traceback
-        try:
-            result = subprocess.run(cmd, cwd=str(ROOT), check=True, capture_output=True, text=True)
-            print(result.stdout)
-            if result.stderr:
-                print(f"→ Stderr: {result.stderr}")
-        except Exception as e:
-            print(f"ERROR: processing draft {input_path} failed with exception:")
-            traceback.print_exc()
-            # continue so CI can try other drafts
-            return
+        POESIE_PDF_CALL_TIMEOUT = int(os.environ.get("POESIE_PDF_CALL_TIMEOUT", "600"))
+    except Exception:
+        POESIE_PDF_CALL_TIMEOUT = 600
 
-    except subprocess.CalledProcessError as e:
-        print(f"✗ Fehler beim Ausführen des Runners für {input_path.name}:")
-        print(f"✗ Return code: {e.returncode}")
-        print(f"✗ Stdout: {e.stdout}")
-        print(f"✗ Stderr: {e.stderr}")
-        return
+    poesie_script = str(RUNNER)
+
+    cmd = [sys.executable, "-u", poesie_script, str(temp_input)]
+
+    if force_meter:
+        cmd.append("--force-meter")
+        print(f"→ Kommando enthält --force-meter Flag")
+    if config_file:
+        cmd.extend(["--tag-config", str(config_file)])
+        print(f"→ Kommando enthält --tag-config: {config_file}")
+    if hide_pipes:
+        cmd.extend(["--hide-pipes"])
+        print(f"→ Kommando enthält --hide-pipes Flag")
+
+    print("build_poesie_drafts_adapter.py: INVOCATION CMD: %s" % shlex.join(cmd))
+    sys.stdout.flush()
+
+    proc = None
+    start = time.time()
+    try:
+        proc = subprocess.Popen(
+            cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,
+            cwd=str(ROOT)
+        )
+
+        # stream stdout lines live, enforce timeout
+        while True:
+            line = proc.stdout.readline()
+            if line:
+                # Print streamed line exactly as produced
+                print(line.rstrip("\n"))
+                sys.stdout.flush()
+            else:
+                # no immediate line; check if process finished
+                if proc.poll() is not None:
+                    break
+                # check timeout
+                if time.time() - start > POESIE_PDF_CALL_TIMEOUT:
+                    print("ERROR: poesie_pdf subprocess exceeded timeout (%ds) — killing." % POESIE_PDF_CALL_TIMEOUT)
+                    sys.stdout.flush()
+                    try:
+                        proc.kill()
+                    except Exception:
+                        pass
+                    raise TimeoutError("poesie_pdf call timeout")
+                # small sleep to avoid busy loop
+                time.sleep(0.1)
+
+        rc = proc.poll()
+        if rc is None:
+            rc = proc.wait()
+        print("build_poesie_drafts_adapter.py: poesie_pdf exited with rc=%s" % rc)
+        sys.stdout.flush()
+        if rc != 0:
+            print("ERROR: poesie_pdf returned non-zero exit status %s" % rc)
+            # Intentionally re-raise to make CI step fail so you get visible failure
+            raise SystemExit(rc)
+
+    except TimeoutError as te:
+        print("build_poesie_drafts_adapter.py: TimeoutError while running poesie_pdf: %s" % str(te))
+        traceback.print_exc()
+        sys.stdout.flush()
+        raise
+    except Exception as e:
+        print("build_poesie_drafts_adapter.py: Exception while running poesie_pdf:", str(e))
+        traceback.print_exc()
+        sys.stdout.flush()
+        raise
     finally:
-        # Lösche temporäre Dateien
-        if config_file and config_file.exists():
-            config_file.unlink()
-        if temp_input.exists():
-            temp_input.unlink()
+        # Cleanup: delete temp files
+        try:
+            if config_file and config_file.exists():
+                config_file.unlink()
+        except Exception:
+            pass
+        try:
+            if temp_input.exists():
+                temp_input.unlink()
+        except Exception:
+            pass
+
+    # --- END robust subprocess invocation ---
     
     after = {p.name for p in ROOT.glob("*.pdf")}
     new_pdfs = sorted(after - before)
