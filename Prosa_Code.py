@@ -1932,10 +1932,20 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     
     print(f"Prosa_Code: Entering element creation loop (flow_blocks={len(flow_blocks)})", flush=True)
     
+    iteration_count = 0
     while idx < len(flow_blocks):
+        iteration_count += 1
+        
+        # DIAGNOSE: Safety check - prevent infinite loops
+        if iteration_count > len(flow_blocks) * 10:  # Max 10x iterations per block
+            print(f"Prosa_Code: ERROR - Infinite loop detected! iteration_count={iteration_count}, idx={idx}, len(flow_blocks)={len(flow_blocks)}", flush=True)
+            raise RuntimeError(f"Infinite loop detected in element creation: iteration_count={iteration_count}, idx={idx}")
+        
         # DIAGNOSE: Logging am Anfang jeder Iteration (für ersten Block)
         if idx == 0:
             print(f"Prosa_Code: Processing first block (idx=0, type={flow_blocks[idx].get('type', 'unknown')})", flush=True)
+        elif iteration_count % 50 == 0:  # Logge alle 50 Iterationen
+            print(f"Prosa_Code: Still processing... iteration={iteration_count}, idx={idx}, type={flow_blocks[idx].get('type', 'unknown')}", flush=True)
         
         b, t = flow_blocks[idx], flow_blocks[idx]['type']
 
@@ -2523,14 +2533,30 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             has_en = b.get('has_en', False)
             tables_per_line = 3 if has_en else 2
             
-            # Gruppiere Tabellen nach Zeilen und halte jede Zeile zusammen
-            for i in range(0, len(flow_tables), tables_per_line):
-                line_tables = flow_tables[i:i+tables_per_line]
-                if line_tables:
-                    elements.append(KeepTogether(line_tables))
+            print(f"Prosa_Code: Grouping {len(flow_tables)} tables into groups of {tables_per_line}", flush=True)
             
-            elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
-            idx += 1; continue
+            # Gruppiere Tabellen nach Zeilen und halte jede Zeile zusammen
+            try:
+                group_count = 0
+                for i in range(0, len(flow_tables), tables_per_line):
+                    line_tables = flow_tables[i:i+tables_per_line]
+                    if line_tables:
+                        group_count += 1
+                        elements.append(KeepTogether(line_tables))
+                
+                print(f"Prosa_Code: Added {group_count} KeepTogether groups to elements (total elements now: {len(elements)})", flush=True)
+                
+                elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
+            except Exception as e:
+                print(f"Prosa_Code: ERROR grouping tables for block {idx+1}: {e}", flush=True)
+                import traceback
+                traceback.print_exc()
+                raise
+            
+            old_idx = idx
+            idx += 1
+            print(f"Prosa_Code: Flow block {old_idx+1} completed, incremented idx from {old_idx} to {idx} (next block type: {flow_blocks[idx].get('type', 'unknown') if idx < len(flow_blocks) else 'END'})", flush=True)
+            continue
 
         idx += 1
 
