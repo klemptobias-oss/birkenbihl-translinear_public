@@ -185,13 +185,13 @@ def run_one(input_path: Path) -> None:
     finally:
         # Cleanup: delete temp files
         try:
-        if config_file and config_file.exists():
-            config_file.unlink()
+            if config_file and config_file.exists():
+                config_file.unlink()
         except Exception:
             pass
         try:
-        if temp_input.exists():
-            temp_input.unlink()
+            if temp_input.exists():
+                temp_input.unlink()
         except Exception:
             pass
 
