@@ -2529,6 +2529,16 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             idx += 1; continue
         
         if t == 'flow':
+            # WICHTIG: Prüfe, ob dieser Flow-Block bereits verarbeitet wurde (z.B. durch h3_eq Handler)
+            if idx in processed_flow_indices:
+                print(f"Prosa_Code: SKIPPING flow block {idx+1} (already processed by h3_eq/h2_eq handler, processed_flow_indices={processed_flow_indices})", flush=True)
+                idx += 1
+                continue
+            
+            # Markiere diesen Block als verarbeitet (SOFORT, bevor etwas anderes passiert)
+            processed_flow_indices.add(idx)
+            print(f"Prosa_Code: Marked flow block {idx+1} as processed (processed_flow_indices now contains: {sorted(processed_flow_indices)})", flush=True)
+            
             # DIAGNOSE: Aggressives Logging für flow-Blöcke
             print(f"Prosa_Code: Processing flow block {idx+1}/{len(flow_blocks)} (gr_tokens={len(b.get('gr_tokens', []))}, de_tokens={len(b.get('de_tokens', []))})", flush=True)
             
@@ -2570,6 +2580,12 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 import traceback
                 traceback.print_exc()
                 raise
+            
+            # WICHTIG: Block sollte bereits in processed_flow_indices sein (wurde oben hinzugefügt)
+            # Aber sicherheitshalber nochmal prüfen
+            if old_idx not in processed_flow_indices:
+                processed_flow_indices.add(old_idx)
+                print(f"Prosa_Code: WARNING - Flow block {old_idx+1} was not in processed_flow_indices, adding now", flush=True)
             
             old_idx = idx
             idx += 1
