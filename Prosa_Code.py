@@ -1930,6 +1930,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     elements, idx = [], 0
     last_block_type = None  # Speichert den Typ des letzten verarbeiteten Blocks
     processed_flow_indices = set()  # WICHTIG: Verhindere doppelte Verarbeitung von Flow-Blöcken
+    processed_h3_indices = set()  # WICHTIG: Verhindere doppelte Verarbeitung von h3_eq Blöcken
     
     print(f"Prosa_Code: Entering element creation loop (flow_blocks={len(flow_blocks)})", flush=True)
     
@@ -2168,6 +2169,14 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 continue
 
         if t == 'h3_eq':
+            # WICHTIG: Prüfe, ob dieser h3_eq Block bereits verarbeitet wurde
+            if idx in processed_h3_indices:
+                print(f"Prosa_Code: SKIPPING h3_eq block {idx+1} (already processed, processed_h3_indices={sorted(processed_h3_indices)})", flush=True)
+                idx += 1
+                continue
+            
+            # Markiere diesen Block als verarbeitet (SOFORT, bevor etwas anderes passiert)
+            processed_h3_indices.add(idx)
             print(f"Prosa_Code: Processing h3_eq block at idx={idx}", flush=True)
             h3_para = Paragraph(xml_escape(b['text']), style_eq_h3)
             idx += 1
