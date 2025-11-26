@@ -412,9 +412,9 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,A
             line_strip = line.strip()
             m = comment_full_re.match(line_strip)
             if m:
-                # full-line comment "(2-4k) text..."
+                # full-line comment "(2-4k) text..." oder "(105k)" (ohne Text)
                 range_str = m.group(1)
-                text = m.group(2).strip()
+                text = m.group(2).strip() if len(m.groups()) > 1 and m.group(2) else ""
                 if '-' in range_str:
                     s, e = range_str.split('-', 1)
                     start, end = int(s), int(e)

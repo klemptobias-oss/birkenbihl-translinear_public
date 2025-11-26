@@ -1831,8 +1831,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 block=flow_block  # NEU: Block-Objekt für comment_token_mask
             )
             print(f"Prosa_Code: build_flow_tables() build_tables_for_stream() completed (tables={len(tables)})", flush=True)
-            for idx, t in enumerate(tables):
-                if idx > 0: t.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
+            # WICHTIG: TableStyle explizit importieren (verhindert Closure-Scope-Problem)
+            from reportlab.platypus import TableStyle
+            for table_idx, table in enumerate(tables):
+                if table_idx > 0:  # WICHTIG: Verwende table_idx statt idx (verhindert Namenskonflikt)
+                    table.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
             print(f"Prosa_Code: build_flow_tables() EXIT (returning {len(tables)} tables)", flush=True)
             return tables
         except Exception as e:
@@ -2050,35 +2053,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             print(f"Prosa_Code: Rendered comment block: '{content[:50]}...'", flush=True)
             idx += 1
             continue
-            
-            # Kommentar-Paragraph IMMER hinzufügen, auch wenn formatted_text leer ist
-            if not formatted_text.strip():
-                # Fallback 1: Erstelle zumindest die Zeilennummer
-                if line_num:
-                    formatted_text = f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>'
-                # Fallback 2: Verwende original_line komplett
-                elif original_line:
-                    formatted_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>{xml_escape(original_line)}</i></font>'
-                # Fallback 3: Erstelle einen Platzhalter-Text
-                else:
-                    formatted_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>[Kommentar]</i></font>'
-            
-            # Kommentar-Paragraph IMMER hinzufügen
-            # ROBUST: Wenn formatted_text leer ist, verwende original_line komplett
-            if not formatted_text.strip() and original_line:
-                # Verwende original_line komplett als Fallback
-                formatted_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>{xml_escape(original_line)}</i></font>'
-            
-            if formatted_text.strip():
-                elements.append(Paragraph(formatted_text, comment_style))
-            else:
-                # Letzter Fallback: Erstelle einen minimalen Paragraph
-                minimal_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>[Kommentar {line_num if line_num else "?"}]</i></font>'
-                elements.append(Paragraph(minimal_text, comment_style))
-            
-            elements.append(Spacer(1, CONT_PAIR_GAP_MM * 1.2 * mm))  # Größerer Abstand nach Kommentar für bessere Trennung
-            last_block_type = t
-            idx += 1; continue
 
         if t in ('h1_eq', 'h2_eq'):
             # WICHTIG: Füge Abstand VOR Überschriften hinzu, wenn vorher Text war
