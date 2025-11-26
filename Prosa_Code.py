@@ -1054,13 +1054,19 @@ def group_pairs_into_flows(blocks):
     any_speaker_seen = False
     in_lyric_mode = False  # NEU: Lyrik-Modus für Boethius
     current_base_num = None  # NEU: Zeilennummer für Hinterlegung
+    accumulated_comments = []  # NEU: Sammle Kommentare von pair-Blöcken für flow-Block
 
     def flush():
-        nonlocal buf_gr, buf_de, buf_en, active_speaker, current_base_num
+        nonlocal buf_gr, buf_de, buf_en, active_speaker, current_base_num, accumulated_comments
         if buf_gr or buf_de or buf_en:
-            flows.append({'type':'flow','gr_tokens':buf_gr,'de_tokens':buf_de,'en_tokens':buf_en,
+            flow_block = {'type':'flow','gr_tokens':buf_gr,'de_tokens':buf_de,'en_tokens':buf_en,
                           'para_label': current_para_label, 'speaker': active_speaker,
-                          'base': current_base_num})  # NEU: Zeilennummer für Hinterlegung
+                          'base': current_base_num}  # NEU: Zeilennummer für Hinterlegung
+            # WICHTIG: Übertrage Kommentare vom letzten pair-Block zum flow-Block
+            if accumulated_comments:
+                flow_block['comments'] = list(accumulated_comments)
+                accumulated_comments = []  # Reset nach Übertragung
+            flows.append(flow_block)
             buf_gr, buf_de, buf_en = [], [], []
             current_base_num = None  # Reset für nächsten Block
 
@@ -1095,6 +1101,11 @@ def group_pairs_into_flows(blocks):
             gt = tokenize(b['gr']) if b['gr'] else []
             dt = tokenize(b['de']) if b['de'] else []
             et = tokenize(b['en']) if b.get('en') else []  # NEU: Englische Zeile
+            
+            # WICHTIG: Sammle Kommentare vom pair-Block für späteren flow-Block
+            pair_comments = b.get('comments', [])
+            if pair_comments:
+                accumulated_comments.extend(pair_comments)
             
             # NEU: base_num für Hinterlegung speichern (erstes base_num wird verwendet)
             if current_base_num is None:

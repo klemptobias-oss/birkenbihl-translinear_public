@@ -288,15 +288,10 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     blocks_raw = Prosa.process_input_file(infile)
     logging.getLogger(__name__).info("prosa_pdf: process_input_file done (%.2f s), blocks_raw=%d", time.time() - t_process, len(blocks_raw) if blocks_raw else 0)
     
-    # Tokenisierung direkt hier durchführen, um die Pipeline an Poesie anzugleichen
-    t_group = time.time()
-    blocks = Prosa.group_pairs_into_flows(blocks_raw)
-    logging.getLogger(__name__).info("prosa_pdf: group_pairs_into_flows done (%.2f s), blocks=%d", time.time() - t_group, len(blocks) if blocks else 0)
-    
+    # WICHTIG: Kommentare MÜSSEN VOR group_pairs_into_flows() erkannt werden,
+    # da discover_and_attach_comments() nach block['gr'] (String) sucht,
+    # aber nach group_pairs_into_flows() haben flow-Blöcke nur noch block['gr_tokens'] (Liste)!
     # --- robust comment discovery: never abort the whole run because of comment attach errors ---
-    # Discover and attach comments. This used to sometimes yield None or threw
-    # exceptions that left 'final_blocks' undefined. We defend here and always
-    # ensure final_blocks is a list.
     logger.info("prosa_pdf: START processing file=%s", base_name)
     try:
         sys.stdout.flush()
@@ -305,28 +300,37 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     start_time = time.time()
     
     # robust call to discover_and_attach_comments: try new signature, fallback to old
-    final_blocks = None
+    # WICHTIG: Aufruf VOR group_pairs_into_flows(), damit block['gr'] noch vorhanden ist!
+    blocks_with_comments = None
     comment_regexes = None
     strip_comment_lines = True
     try:
-        final_blocks = preprocess.discover_and_attach_comments(
-            blocks,
+        blocks_with_comments = preprocess.discover_and_attach_comments(
+            blocks_raw,
             comment_regexes=comment_regexes,
             strip_comment_lines=strip_comment_lines,
         )
     except TypeError:
         try:
-            final_blocks = preprocess.discover_and_attach_comments(blocks)
+            blocks_with_comments = preprocess.discover_and_attach_comments(blocks_raw)
         except Exception as e:
             logger.exception("prosa_pdf: discover/attach comments failed (continuing without comments): %s", e)
-            final_blocks = blocks
+            blocks_with_comments = blocks_raw
     except Exception as e:
         logger.exception("prosa_pdf: discover/attach comments failed (continuing without comments): %s", e)
-        final_blocks = blocks
+        blocks_with_comments = blocks_raw
 
-    if final_blocks is None:
+    if blocks_with_comments is None:
         logger.debug("prosa_pdf: discover_and_attach_comments returned None -> using original blocks")
-        final_blocks = blocks
+        blocks_with_comments = blocks_raw
+    
+    # JETZT: Tokenisierung durchführen (nach Kommentar-Erkennung)
+    t_group = time.time()
+    blocks = Prosa.group_pairs_into_flows(blocks_with_comments)
+    logging.getLogger(__name__).info("prosa_pdf: group_pairs_into_flows done (%.2f s), blocks=%d", time.time() - t_group, len(blocks) if blocks else 0)
+    
+    # Verwende blocks als final_blocks (Kommentare sind bereits erkannt und angehängt)
+    final_blocks = blocks
 
     # Compact debug summary for CI logs: print only first block's comments and a short mask sample.
     try:
@@ -388,15 +392,35 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             t1 = time.time()
             logging.getLogger(__name__).info("prosa_pdf: apply_colors START (strength=%s, color=%s, tag=%s)", strength, color_mode, tag_mode)
             disable_comment_bg_flag = (final_tag_config.get('disable_comment_bg', False) if isinstance(final_tag_config, dict) else False)
+            # WICHTIG: apply_colors wird IMMER aufgerufen (auch bei BLACK_WHITE), 
+            # da es Farben basierend auf tag_config hinzufügt. Bei BLACK_WHITE werden Farben später entfernt.
             blocks_with_colors = preprocess.apply_colors(final_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
             
-            # WICHTIG: Bei TAGS-Varianten: Alle Tags bleiben erhalten (KEIN apply_tag_visibility)
-            # Bei NO_TAGS-Varianten: Alle Tags werden später entfernt
-            # apply_tag_visibility wird NICHT aufgerufen, damit alle Tags bei TAGS-Varianten erhalten bleiben
+            # WICHTIG: Tag-Sichtbarkeit basierend auf tag_mode und tag_config
+            # Bei TAGS-Varianten: Tags bleiben erhalten, aber apply_tag_visibility wird aufgerufen,
+            # um die Tag-Sichtbarkeit basierend auf tag_config zu steuern (z.B. hide für bestimmte Wortarten)
+            # Bei NO_TAGS-Varianten: Alle Tags werden später komplett entfernt
             blocks_after_visibility = blocks_with_colors
             if tag_mode == "TAGS":
-                # Bei TAGS-Varianten: Alle Tags bleiben erhalten (keine Filterung)
-                logging.getLogger(__name__).info("prosa_pdf: TAGS mode - keeping all tags (no filtering)")
+                # Bei TAGS-Varianten: Tag-Sichtbarkeit basierend auf tag_config anwenden
+                # (z.B. wenn Nomen-Tags versteckt werden sollen, werden sie entfernt)
+                # WICHTIG: Nur anwenden, wenn tag_config vorhanden ist UND nicht alle Tags versteckt sind
+                if final_tag_config and isinstance(final_tag_config, dict):
+                    # Prüfe, ob alle Tags versteckt sind - wenn ja, dann keine Filterung (Tags bleiben)
+                    all_hidden = all(conf.get('hide') in (True, 'true', 'True', 'hide', 'Hide') 
+                                    for conf in final_tag_config.values() 
+                                    if isinstance(conf, dict))
+                    if not all_hidden:
+                        # Nicht alle Tags sind versteckt - wende Tag-Sichtbarkeit an
+                        hidden_by_wortart = (final_tag_config.get('hidden_tags_by_wortart') if isinstance(final_tag_config, dict) else None)
+                        blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
+                        logging.getLogger(__name__).info("prosa_pdf: TAGS mode - applied tag visibility based on tag_config")
+                    else:
+                        # Alle Tags sind versteckt - aber bei TAGS-Varianten wollen wir Tags behalten!
+                        logging.getLogger(__name__).info("prosa_pdf: TAGS mode - all tags marked as hide, but keeping all tags (TAGS variant)")
+                else:
+                    # Keine tag_config vorhanden - alle Tags bleiben erhalten
+                    logging.getLogger(__name__).info("prosa_pdf: TAGS mode - keeping all tags (no tag_config)")
             else:
                 logging.getLogger(__name__).info("prosa_pdf: NO_TAGS mode - will remove all tags in next step")
         except Exception as e:
@@ -405,8 +429,9 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             logging.getLogger(__name__).debug("prosa_pdf: apply_colors/apply_tag_visibility traceback (first 800 chars):\n%s", tb[:800])
             blocks_after_visibility = final_blocks
         
-        # 3) Entferne ALLE Tags für NO_TAGS-Varianten
+        # 3) Entferne ALLE Tags für NO_TAGS-Varianten (NUR bei NO_TAGS!)
         if tag_mode == "NO_TAGS":
+            # Bei NO_TAGS-Varianten: Entferne ALLE Tags komplett
             blocks_after_visibility = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
             # NO_TAG variant: strip any remaining tags from tokens
             for b in blocks_after_visibility:
@@ -415,6 +440,10 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
                 for i, t in enumerate(b.get("gr_tokens", [])):
                     if t:
                         b["gr_tokens"][i] = preprocess.remove_all_tags_from_token(t)
+            logging.getLogger(__name__).info("prosa_pdf: NO_TAGS mode - removed all tags")
+        else:
+            # Bei TAGS-Varianten: blocks_after_visibility wurde bereits oben gesetzt
+            logging.getLogger(__name__).info("prosa_pdf: TAGS mode - tags preserved (possibly filtered by tag_config)")
 
         # Schritt 3: Entferne leere Übersetzungszeilen (wenn alle Übersetzungen ausgeblendet)
         # WICHTIG: Verwende blocks_after_visibility, nicht blocks_with_colors!
