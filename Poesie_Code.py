@@ -2034,8 +2034,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             content = b.get('content', '')
             original_line = b.get('original_line', '')
             
-            # DEBUG: Kommentar wird verarbeitet (IMMER, auch wenn leer)
-            print(f"  → Kommentar verarbeiten (Poesie): type={t}, line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:80] if original_line else '(leer)'}")
+            # Kommentar wird verarbeitet (DEBUG entfernt für weniger Log-Noise)
             
             # Fallback: Wenn content leer ist, versuche original_line zu verwenden
             if not content and original_line:
@@ -2060,7 +2059,6 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             
             # ROBUST: Prüfe, ob überhaupt Daten vorhanden sind (line_num, content oder original_line)
             if not line_num and not content and not original_line:
-                print(f"  ⚠️ Kommentar komplett leer übersprungen (Poesie)")
                 i += 1
                 continue
             

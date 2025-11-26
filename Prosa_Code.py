@@ -1757,13 +1757,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     flow_blocks = blocks
 
     # DEBUG: Prüfe, ob Kommentare in flow_blocks vorhanden sind
-    comment_count = sum(1 for b in flow_blocks if isinstance(b, dict) and b.get('type') == 'comment')
-    if comment_count > 0:
-        print(f"  → {comment_count} Kommentar(e) in flow_blocks gefunden")
-        # DEBUG: Zeige Details der ersten Kommentare
-        for i, b in enumerate(flow_blocks):
-            if isinstance(b, dict) and b.get('type') == 'comment' and i < 3:
-                print(f"  → Kommentar {i+1}: type={b.get('type')}, line_num={b.get('line_num')}, content={b.get('content', '')[:50] if b.get('content') else '(leer)'}, original_line={b.get('original_line', '')[:50] if b.get('original_line') else '(leer)'}")
+    # Kommentare werden in flow_blocks verarbeitet (DEBUG entfernt für weniger Log-Noise)
 
     # Meta-Flag: ob irgendwo Sprecher auftraten
     any_speaker = False
@@ -1918,8 +1912,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             content = b.get('content', '')
             original_line = b.get('original_line', '')
             
-            # DEBUG: Kommentar wird verarbeitet (IMMER, auch wenn leer)
-            print(f"  → Kommentar verarbeiten: type={t}, line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:80] if original_line else '(leer)'}")
+            # Kommentar wird verarbeitet (DEBUG entfernt für weniger Log-Noise)
             
             # Fallback: Wenn content leer ist, versuche original_line zu verwenden
             if not content and original_line:
@@ -1942,7 +1935,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # ROBUST: Prüfe, ob überhaupt Daten vorhanden sind (line_num, content oder original_line)
             if not line_num and not content and not original_line:
-                print(f"  ⚠️ Kommentar komplett leer übersprungen")
                 idx += 1
                 continue
             
@@ -1990,9 +1982,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             formatted_text = ''.join(formatted_parts)
             
-            # DEBUG: Prüfe, ob formatted_text leer ist
+            # Prüfe, ob formatted_text leer ist
             if not formatted_text.strip():
-                print(f"  ⚠️ Kommentar formatted_text ist leer: line_num={line_num}, content={content[:50] if content else '(leer)'}, original_line={original_line[:50] if original_line else '(leer)'}")
                 # Selbst wenn formatted_text leer ist, erstelle einen Paragraph mit zumindest der Zeilennummer
                 if line_num:
                     formatted_text = f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>'
@@ -2023,16 +2014,13 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             if not formatted_text.strip() and original_line:
                 # Verwende original_line komplett als Fallback
                 formatted_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>{xml_escape(original_line)}</i></font>'
-                print(f"  ⚠️ Fallback: Verwende original_line komplett: {original_line[:80]}...")
             
             if formatted_text.strip():
                 elements.append(Paragraph(formatted_text, comment_style))
-                print(f"  ✓✓✓ Kommentar-Paragraph HINZUGEFÜGT: line_num={line_num}, content_length={len(content) if content else 0}, {formatted_text[:80]}...")
             else:
                 # Letzter Fallback: Erstelle einen minimalen Paragraph
                 minimal_text = f'<font name="DejaVu" size="{comment_size}" color="#000000"><i>[Kommentar {line_num if line_num else "?"}]</i></font>'
                 elements.append(Paragraph(minimal_text, comment_style))
-                print(f"  ⚠️⚠️⚠️ Kommentar-Paragraph mit Platzhalter HINZUGEFÜGT - formatted_text war leer! line_num={line_num}, original_line={original_line[:50] if original_line else 'leer'}")
             
             elements.append(Spacer(1, CONT_PAIR_GAP_MM * 1.2 * mm))  # Größerer Abstand nach Kommentar für bessere Trennung
             last_block_type = t

@@ -473,9 +473,9 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         sample = _sample_tokens_with_tags(final_blocks, limit=20)
         print(f"DEBUG: verbleibende Tokens mit '(...)' (sollte LEER sein bei Tag-Entfernung): {len(sample)} gefunden")
         if sample:
-            print(f"DEBUG: Beispiele: {sample[:5]}")
+            logger.debug(f"DEBUG: Beispiele: {sample[:5]}")
         num_comments, comment_examples = _count_flow_comments(final_blocks)
-        print(f"DEBUG: Anzahl gefundener Kommentare in final_blocks = {num_comments}. Beispiele: {comment_examples}")
+        logger.debug(f"DEBUG: Anzahl gefundener Kommentare in final_blocks = {num_comments}. Beispiele: {comment_examples}")
         # --- Ende DEBUG ---
         
         # WICHTIG: Die unified_api wird jetzt nur noch für das Rendering aufgerufen.
