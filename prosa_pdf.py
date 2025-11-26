@@ -429,8 +429,10 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             blocks_after_visibility = final_blocks
         
         # 3) Entferne ALLE Tags für NO_TAGS-Varianten (NUR bei NO_TAGS!)
+        # WICHTIG: Diese Prüfung muss NACH dem try-except-Block stehen, damit sie auch bei Fehlern ausgeführt wird
         if tag_mode == "NO_TAGS":
             # Bei NO_TAGS-Varianten: Entferne ALLE Tags komplett
+            # WICHTIG: Verwende blocks_with_colors, nicht blocks_after_visibility (die könnte bei Fehlern final_blocks sein)
             blocks_after_visibility = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
             # NO_TAG variant: strip any remaining tags from tokens
             for b in blocks_after_visibility:
@@ -440,9 +442,8 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
                     if t:
                         b["gr_tokens"][i] = preprocess.remove_all_tags_from_token(t)
             logging.getLogger(__name__).info("prosa_pdf: NO_TAGS mode - removed all tags")
-        else:
-            # Bei TAGS-Varianten: blocks_after_visibility wurde bereits oben gesetzt
-            logging.getLogger(__name__).info("prosa_pdf: TAGS mode - tags preserved (possibly filtered by tag_config)")
+        # Bei TAGS-Varianten: blocks_after_visibility wurde bereits oben gesetzt (oder ist blocks_with_colors)
+        # Es ist bereits korrekt, keine weitere Aktion nötig
 
         # Schritt 3: Entferne leere Übersetzungszeilen (wenn alle Übersetzungen ausgeblendet)
         # WICHTIG: Verwende blocks_after_visibility, nicht blocks_with_colors!
