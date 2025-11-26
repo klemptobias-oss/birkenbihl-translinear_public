@@ -1584,19 +1584,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         if tag_config and isinstance(tag_config, dict):
             disable_comment_bg_flag = bool(tag_config.get('disable_comment_bg', False))
         
-        # Nur Hintergrund setzen, wenn nicht deaktiviert UND keine comment_mask vorhanden
-        if not disable_comment_bg_flag and base_num is not None and line_comment_colors and base_num in line_comment_colors and not has_comment_mask:
-            comment_color = line_comment_colors[base_num]
-            # Hinterlegung für die gesamte Tabelle (alle Zeilen und Spalten)
-            # "Augiebig" - also der gesamte Bereich wird markiert
-            r, g, b = comment_color
-            # Stärkere Hinterlegung (0.35) für bessere Sichtbarkeit
-            bg_color = colors.Color(r, g, b, alpha=0.35)
-            style_list.append(('BACKGROUND', (0, 0), (-1, -1), bg_color))
-        elif base_num is not None and line_comment_colors:
-            # DEBUG: Prüfe, ob base_num in line_comment_colors enthalten ist
-            # (Für Debugging - kann später entfernt werden)
-            pass
+        # WICHTIG: Hinterlegung KOMPLETT DEAKTIVIERT (User-Request)
+        # Keine Hinterlegung mehr für kommentierte Bereiche
         
         # Padding nur hinzufügen, wenn Übersetzungen vorhanden sind
         if has_de or has_en:

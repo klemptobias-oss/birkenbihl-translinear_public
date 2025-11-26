@@ -382,24 +382,31 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         except Exception:
             pass
         
-        # Pipeline: apply_colors -> apply_tag_visibility -> optional remove_all_tags (NO_TAGS)
+        # Pipeline: apply_colors -> apply_tag_visibility (NUR wenn tag_config vorhanden) -> optional remove_all_tags (NO_TAGS)
         # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal!
         try:
             t1 = time.time()
-            logging.getLogger(__name__).info("prosa_pdf: apply_colors -> apply_tag_visibility START (strength=%s, color=%s, tag=%s)", strength, color_mode, tag_mode)
+            logging.getLogger(__name__).info("prosa_pdf: apply_colors START (strength=%s, color=%s, tag=%s)", strength, color_mode, tag_mode)
             disable_comment_bg_flag = (final_tag_config.get('disable_comment_bg', False) if isinstance(final_tag_config, dict) else False)
             blocks_with_colors = preprocess.apply_colors(final_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
-            hidden_by_wortart = (final_tag_config.get('hidden_tags_by_wortart') if isinstance(final_tag_config, dict) else None)
-            blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
-            logging.getLogger(__name__).info("prosa_pdf: apply_tag_visibility END (%.2f s)", time.time() - t1)
+            
+            # WICHTIG: Bei TAGS-Varianten: Alle Tags bleiben erhalten (KEIN apply_tag_visibility)
+            # Bei NO_TAGS-Varianten: Alle Tags werden später entfernt
+            # apply_tag_visibility wird NICHT aufgerufen, damit alle Tags bei TAGS-Varianten erhalten bleiben
+            blocks_after_visibility = blocks_with_colors
+            if tag_mode == "TAGS":
+                # Bei TAGS-Varianten: Alle Tags bleiben erhalten (keine Filterung)
+                logging.getLogger(__name__).info("prosa_pdf: TAGS mode - keeping all tags (no filtering)")
+            else:
+                logging.getLogger(__name__).info("prosa_pdf: NO_TAGS mode - will remove all tags in next step")
         except Exception as e:
             tb = traceback.format_exc()
             logging.getLogger(__name__).error("prosa_pdf: apply_colors/apply_tag_visibility failed (continuing): %s", str(e))
             logging.getLogger(__name__).debug("prosa_pdf: apply_colors/apply_tag_visibility traceback (first 800 chars):\n%s", tb[:800])
             blocks_after_visibility = final_blocks
         
-        # 3) apply tag visibility (bereits im try-Block gesetzt, nur NO_TAGS weiter verarbeiten)
-        if tag_mode != "TAGS": # NO_TAGS
+        # 3) Entferne ALLE Tags für NO_TAGS-Varianten
+        if tag_mode == "NO_TAGS":
             blocks_after_visibility = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
             # NO_TAG variant: strip any remaining tags from tokens
             for b in blocks_after_visibility:
