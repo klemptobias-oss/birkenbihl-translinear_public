@@ -1828,8 +1828,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             disable_comment_bg = block.get('disable_comment_bg', False)
         
         # Deduplicate comments per block and limit count & length to keep PDF generation fast.
-        MAX_COMMENTS_PER_BLOCK = 5
-        MAX_COMMENT_CHARS = 400
+        # REDUZIERT: Weniger Kommentare pro Block um PDF-Generierung zu beschleunigen
+        MAX_COMMENTS_PER_BLOCK = 1  # Reduziert auf 1 (minimal)
+        MAX_COMMENT_CHARS = 100  # Reduziert auf 100 (sehr kurz)
         added_keys = set()
         added_count = 0
         truncated = False
@@ -2487,22 +2488,48 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     # Build PDF with error handling and file verification
     import logging
     import os
+    import sys
     logger = logging.getLogger(__name__)
     try:
+        # Flush stdout before starting (critical for CI visibility)
+        try:
+            sys.stdout.flush()
+            sys.stderr.flush()
+        except Exception:
+            pass
+        
         logger.info("Prosa_Code: starting doc.build() for %s (elements=%d)", pdf_name, len(elements))
+        print(f"Prosa_Code: BUILD START for {os.path.basename(pdf_name)} (elements={len(elements)})", flush=True)
+        
         # Check if file already exists (for debugging)
         if os.path.exists(pdf_name):
             logger.warning("Prosa_Code: PDF file %s already exists, will be overwritten", pdf_name)
+        
+        # Actual build - this is the blocking call
+        import time
+        build_start = time.time()
         doc.build(elements)
+        build_duration = time.time() - build_start
+        
+        # Flush again after build
+        try:
+            sys.stdout.flush()
+            sys.stderr.flush()
+        except Exception:
+            pass
+        
         # Verify PDF was created
         if os.path.exists(pdf_name):
             file_size = os.path.getsize(pdf_name)
-            logger.info("Prosa_Code: doc.build() completed for %s (file_size=%d bytes)", pdf_name, file_size)
+            logger.info("Prosa_Code: doc.build() completed for %s (file_size=%d bytes, duration=%.1fs)", pdf_name, file_size, build_duration)
+            print(f"Prosa_Code: BUILD SUCCESS for {os.path.basename(pdf_name)} ({file_size} bytes, {build_duration:.1f}s)", flush=True)
         else:
             logger.error("Prosa_Code: doc.build() completed but PDF file %s does NOT exist!", pdf_name)
+            print(f"Prosa_Code: BUILD FAILED - file not created: {pdf_name}", flush=True)
             raise FileNotFoundError(f"PDF file {pdf_name} was not created after doc.build()")
     except Exception as e:
         logger.exception("Prosa_Code: doc.build() FAILED for %s: %s", pdf_name, str(e))
+        print(f"Prosa_Code: BUILD ERROR for {os.path.basename(pdf_name)}: {e}", flush=True)
         raise
 
 # ----------------------- Batch / Dateinamen (Legacy-Einzellauf) -----------------------

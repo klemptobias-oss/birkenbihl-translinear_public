@@ -2342,8 +2342,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 except Exception:
                     pass
                 
-                MAX_COMMENTS_PER_BLOCK = 5
-                MAX_COMMENT_CHARS = 400
+                MAX_COMMENTS_PER_BLOCK = 1  # Reduziert auf 1 (minimal)
+                MAX_COMMENT_CHARS = 100  # Reduziert auf 100 (sehr kurz)
                 added_keys = set()
                 added_count = 0
                 truncated = False
