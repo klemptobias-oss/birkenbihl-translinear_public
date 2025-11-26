@@ -1931,12 +1931,34 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     last_block_type = None  # Speichert den Typ des letzten verarbeiteten Blocks
     processed_flow_indices = set()  # WICHTIG: Verhindere doppelte Verarbeitung von Flow-Blöcken
     processed_h3_indices = set()  # WICHTIG: Verhindere doppelte Verarbeitung von h3_eq Blöcken
+    skipped_indices = set()  # WICHTIG: Verfolge übersprungene Indizes, um Endlosschleifen zu vermeiden
     
     print(f"Prosa_Code: Entering element creation loop (flow_blocks={len(flow_blocks)})", flush=True)
     
     iteration_count = 0
+    last_idx_seen = -1  # Track last idx to detect backwards jumps
+    consecutive_same_idx = 0  # Count consecutive iterations with same idx
     while idx < len(flow_blocks):
         iteration_count += 1
+        
+        # DIAGNOSE: Detect backwards jumps or stuck idx
+        if idx == last_idx_seen:
+            consecutive_same_idx += 1
+            if consecutive_same_idx >= 2:  # Reduziert von 3 auf 2 für frühere Erkennung
+                print(f"Prosa_Code: ERROR - idx stuck at {idx} for {consecutive_same_idx} iterations! Forcing increment to break loop.", flush=True)
+                idx += 1  # Force increment to break loop
+                if idx >= len(flow_blocks):
+                    break
+                continue
+        elif idx < last_idx_seen:
+            print(f"Prosa_Code: ERROR - idx decreased from {last_idx_seen} to {idx}! Forcing increment.", flush=True)
+            idx = last_idx_seen + 1  # Force increment
+            if idx >= len(flow_blocks):
+                break
+            continue
+        else:
+            consecutive_same_idx = 0
+        last_idx_seen = idx
         
         # DIAGNOSE: Safety check - prevent infinite loops
         if iteration_count > len(flow_blocks) * 10:  # Max 10x iterations per block
@@ -2171,8 +2193,18 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         if t == 'h3_eq':
             # WICHTIG: Prüfe, ob dieser h3_eq Block bereits verarbeitet wurde
             if idx in processed_h3_indices:
+                if idx in skipped_indices:
+                    # WICHTIG: Dieser Block wurde bereits übersprungen - verhindere Endlosschleife
+                    print(f"Prosa_Code: ERROR - h3_eq block {idx+1} already skipped! Forcing increment to break loop.", flush=True)
+                    idx += 1
+                    if idx >= len(flow_blocks):
+                        break
+                    continue
+                skipped_indices.add(idx)
                 print(f"Prosa_Code: SKIPPING h3_eq block {idx+1} (already processed, processed_h3_indices={sorted(processed_h3_indices)})", flush=True)
                 idx += 1
+                if idx >= len(flow_blocks):
+                    break
                 continue
             
             # Markiere diesen Block als verarbeitet (SOFORT, bevor etwas anderes passiert)
@@ -2540,8 +2572,18 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         if t == 'flow':
             # WICHTIG: Prüfe, ob dieser Flow-Block bereits verarbeitet wurde (z.B. durch h3_eq Handler)
             if idx in processed_flow_indices:
+                if idx in skipped_indices:
+                    # WICHTIG: Dieser Block wurde bereits übersprungen - verhindere Endlosschleife
+                    print(f"Prosa_Code: ERROR - flow block {idx+1} already skipped! Forcing increment to break loop.", flush=True)
+                    idx += 1
+                    if idx >= len(flow_blocks):
+                        break
+                    continue
+                skipped_indices.add(idx)
                 print(f"Prosa_Code: SKIPPING flow block {idx+1} (already processed by h3_eq/h2_eq handler, processed_flow_indices={processed_flow_indices})", flush=True)
                 idx += 1
+                if idx >= len(flow_blocks):
+                    break
                 continue
             
             # Markiere diesen Block als verarbeitet (SOFORT, bevor etwas anderes passiert)
