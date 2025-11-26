@@ -27,6 +27,13 @@ import logging
 # Reduce noisy DEBUG output - set root logger to INFO
 logging.getLogger().setLevel(logging.INFO)
 
+# Attach log throttle to suppress mass warnings (table width, tag removal spam)
+try:
+    from shared.log_throttle import setup_logging_throttle
+    setup_logging_throttle()
+except Exception:
+    logging.getLogger().debug("prosa_pdf: log throttle not available/failed to init")
+
 import Prosa_Code as Prosa
 
 # Ensure final_blocks always exists to avoid NameError in except blocks
