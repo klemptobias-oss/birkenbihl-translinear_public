@@ -27,6 +27,8 @@ import os
 import json
 import tempfile
 import time
+import signal
+import sys
 import traceback
 from reportlab.platypus import Paragraph
 from reportlab.lib.styles import ParagraphStyle
@@ -139,8 +141,40 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
 
     base = base_from_input_path(Path(infile))
     base_name = str(base)  # for logging and debug dumps
-    logging.getLogger(__name__).info("prosa_pdf: _process_one_input START for %s", infile)
+    
+    # --- START: install a global timeout and log start ---
+    def _install_global_timeout():
+        """
+        Install a SIGALRM handler which aborts the process after PROSA_PDF_TIMEOUT seconds.
+        Default timeout: 600 seconds (10 minutes). This prevents CI jobs from hanging forever.
+        """
+        try:
+            timeout = int(os.environ.get("PROSA_PDF_TIMEOUT", "600"))
+            def _timeout_handler(signum, frame):
+                logging.getLogger(__name__).error("prosa_pdf: GLOBAL TIMEOUT reached (%s seconds) - aborting", timeout)
+                # attempt to flush stdout/stderr so CI shows this immediately
+                try:
+                    sys.stdout.flush()
+                    sys.stderr.flush()
+                except Exception:
+                    pass
+                # exit non-zero so CI marks job failed
+                raise SystemExit(2)
+            signal.signal(signal.SIGALRM, _timeout_handler)
+            signal.alarm(timeout)
+            logging.getLogger(__name__).info("prosa_pdf: global timeout installed: %s seconds", timeout)
+        except Exception:
+            logging.getLogger(__name__).exception("prosa_pdf: failed to install global timeout (continuing without alarm)")
+
+    _install_global_timeout()
+    logging.getLogger(__name__).info("prosa_pdf: START processing file=%s", base_name)
+    # make sure logs are visible quickly in CI
+    try:
+        sys.stdout.flush()
+    except Exception:
+        pass
     t_start = time.time()
+    # --- END start/timeout block ---
     
     generated_files = []  # track created PDFs
     
@@ -236,9 +270,17 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # Kommentare sind bereits in final_blocks['comments'] vorhanden
     
     num_variants = len(list(itertools.product(strengths, colors, tags)))
-    logging.getLogger(__name__).info("prosa_pdf: Starting PDF generation loop for %d variants", num_variants)
+    total_blocks = len(final_blocks) if isinstance(final_blocks, list) else 0
+    logging.getLogger(__name__).info("prosa_pdf: Starting PDF generation loop for %d variants, total_blocks=%d", num_variants, total_blocks)
     
+    variant_index = 0
     for strength, color_mode, tag_mode in itertools.product(strengths, colors, tags):
+        variant_index += 1
+        logging.getLogger(__name__).info("prosa_pdf: processing variant %d/%d (strength=%s, color=%s, tag=%s)", variant_index, num_variants, strength, color_mode, tag_mode)
+        try:
+            sys.stdout.flush()
+        except Exception:
+            pass
         
         # Pipeline: apply_colors -> apply_tag_visibility -> optional remove_all_tags (NO_TAGS)
         # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal!
@@ -339,8 +381,46 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         # WICHTIG: Die unified_api wird jetzt nur noch für das Rendering aufgerufen.
         # Die Vorverarbeitung ist hier abgeschlossen. `tag_config` wird trotzdem durchgereicht,
         # falls der Renderer selbst noch Konfigurationsdetails benötigt (z.B. für Platzierung).
-        create_pdf_unified("prosa", Prosa, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
-        print(f"✓ PDF erstellt → {out_name}")
+        logging.getLogger(__name__).info("prosa_pdf: about to call create_pdf_unified() for %s (blocks=%d)", out_name, total_blocks)
+        try:
+            sys.stdout.flush()
+        except Exception:
+            pass
+        try:
+            # call the real build (this may be the long blocking step)
+            create_pdf_unified("prosa", Prosa, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
+            logging.getLogger(__name__).info("prosa_pdf: create_pdf_unified() finished for %s", out_name)
+            generated_files.append(out_name)
+            logging.getLogger(__name__).info("✓ PDF created -> %s", out_name)
+        except Exception as e:
+            logging.getLogger(__name__).exception("prosa_pdf: create_pdf_unified() FAILED for %s", out_name)
+            # re-raise so CI shows failure (but the global timeout will also stop extreme hangs)
+            raise
+        finally:
+            try:
+                sys.stdout.flush()
+            except Exception:
+                pass
+    
+    # turn off the alarm now that the heavy section finished (if it was set)
+    try:
+        signal.alarm(0)
+    except Exception:
+        pass
+    
+    # final summary for CI logs: list files created
+    try:
+        end_time = time.time()
+        logging.getLogger(__name__).info("prosa_pdf: finished processing %s in %.1f seconds", base_name, end_time - t_start)
+        logging.getLogger(__name__).info("prosa_pdf: END processing file=%s created_files=%d", base_name, len(generated_files))
+        for f in generated_files:
+            logging.getLogger(__name__).info("✓ PDF created -> %s", f)
+        try:
+            sys.stdout.flush()
+        except Exception:
+            pass
+    except Exception:
+        logging.getLogger(__name__).debug("prosa_pdf: failed to log generated files", exc_info=True)
 
 def main():
     # Parse command line arguments for tag config
