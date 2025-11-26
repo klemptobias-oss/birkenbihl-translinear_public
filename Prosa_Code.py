@@ -1542,7 +1542,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             # Skaliere alle colWidths proportional
             scale_factor = max_available_width / total_table_width
             colWidths = [w * scale_factor for w in colWidths]
-            print(f"⚠️ Table-Breite zu groß ({total_table_width:.1f} > {max_available_width:.1f}), skaliert um Faktor {scale_factor:.3f}")
+            # Warnung unterdrückt: Skalierung erfolgt automatisch, keine Log-Flut nötig
+            # (Table-Breite wird automatisch angepasst, daher ist diese Warnung redundant)
 
         # NEU: Prüfe, ob englische Zeile vorhanden ist
         has_en = any(slice_en)
@@ -2483,7 +2484,26 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
 
         idx += 1
 
-    doc.build(elements)
+    # Build PDF with error handling and file verification
+    import logging
+    import os
+    logger = logging.getLogger(__name__)
+    try:
+        logger.info("Prosa_Code: starting doc.build() for %s (elements=%d)", pdf_name, len(elements))
+        # Check if file already exists (for debugging)
+        if os.path.exists(pdf_name):
+            logger.warning("Prosa_Code: PDF file %s already exists, will be overwritten", pdf_name)
+        doc.build(elements)
+        # Verify PDF was created
+        if os.path.exists(pdf_name):
+            file_size = os.path.getsize(pdf_name)
+            logger.info("Prosa_Code: doc.build() completed for %s (file_size=%d bytes)", pdf_name, file_size)
+        else:
+            logger.error("Prosa_Code: doc.build() completed but PDF file %s does NOT exist!", pdf_name)
+            raise FileNotFoundError(f"PDF file {pdf_name} was not created after doc.build()")
+    except Exception as e:
+        logger.exception("Prosa_Code: doc.build() FAILED for %s: %s", pdf_name, str(e))
+        raise
 
 # ----------------------- Batch / Dateinamen (Legacy-Einzellauf) -----------------------
 def label_from_input_name(infile:str) -> str:
