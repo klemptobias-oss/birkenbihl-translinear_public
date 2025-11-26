@@ -23,6 +23,8 @@ from pathlib import Path
 import os, itertools, sys
 from pathlib import Path
 import logging
+import time
+import traceback
 
 # Reduce noisy DEBUG output - set root logger to INFO
 logging.getLogger().setLevel(logging.INFO)
@@ -129,20 +131,44 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     if not os.path.isfile(infile):
         print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
 
-    base = base_from_input_path(Path(infile))
-    blocks_raw = Prosa.process_input_file(infile)
-    # Tokenisierung direkt hier durchführen, um die Pipeline an Poesie anzugleichen
-    blocks = Prosa.group_pairs_into_flows(blocks_raw)
+    logging.getLogger(__name__).info("prosa_pdf: _process_one_input START for %s", infile)
+    t_start = time.time()
     
-    # Use a safe helper so we never abort the prosa pipeline with a NoneType/error.
-    import shared.comment_utils as comment_utils  # local import so patch is conservative
-    final_blocks = comment_utils.safe_discover_and_attach_comments(
-        blocks,
-        preprocess,
-        comment_regexes=None,
-        strip_comment_lines=True,
-        pipeline_name='prosa_pdf'
-    )
+    base = base_from_input_path(Path(infile))
+    
+    t_process = time.time()
+    blocks_raw = Prosa.process_input_file(infile)
+    logging.getLogger(__name__).info("prosa_pdf: process_input_file done (%.2f s), blocks_raw=%d", time.time() - t_process, len(blocks_raw) if blocks_raw else 0)
+    
+    # Tokenisierung direkt hier durchführen, um die Pipeline an Poesie anzugleichen
+    t_group = time.time()
+    blocks = Prosa.group_pairs_into_flows(blocks_raw)
+    logging.getLogger(__name__).info("prosa_pdf: group_pairs_into_flows done (%.2f s), blocks=%d", time.time() - t_group, len(blocks) if blocks else 0)
+    
+    # Discover and attach comments: be defensive and log progress + timings
+    final_blocks = None
+    try:
+        t0 = time.time()
+        logging.getLogger(__name__).info("prosa_pdf: discover_and_attach_comments START")
+        import shared.comment_utils as comment_utils  # local import so patch is conservative
+        final_blocks = comment_utils.safe_discover_and_attach_comments(
+            blocks,
+            preprocess,
+            comment_regexes=None,
+            strip_comment_lines=True,
+            pipeline_name='prosa_pdf'
+        )
+        dt = time.time() - t0
+        if final_blocks is None:
+            logging.getLogger(__name__).info("prosa_pdf: discover_and_attach_comments returned None -> using original blocks")
+            final_blocks = blocks
+        else:
+            logging.getLogger(__name__).info("prosa_pdf: discover_and_attach_comments END (%.2f s) blocks=%d", dt, len(final_blocks))
+    except Exception as e:
+        tb = traceback.format_exc()
+        logging.getLogger(__name__).error("prosa_pdf: discover/attach comments failed (continuing without comments): %s", str(e))
+        logging.getLogger(__name__).debug("prosa_pdf: discover/attach comments traceback (first 800 chars):\n%s", tb[:800])
+        final_blocks = blocks
     
     # Compact debug summary for CI logs: print only first block's comments and a short mask sample.
     try:
@@ -185,18 +211,25 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen (vor der Loop)
     # Kommentare sind bereits in final_blocks['comments'] vorhanden
     
+    num_variants = len(list(itertools.product(strengths, colors, tags)))
+    logging.getLogger(__name__).info("prosa_pdf: Starting PDF generation loop for %d variants", num_variants)
+    
     for strength, color_mode, tag_mode in itertools.product(strengths, colors, tags):
         
         # Pipeline: apply_colors -> apply_tag_visibility -> optional remove_all_tags (NO_TAGS)
         # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal!
         try:
+            t1 = time.time()
+            logging.getLogger(__name__).info("prosa_pdf: apply_colors -> apply_tag_visibility START (strength=%s, color=%s, tag=%s)", strength, color_mode, tag_mode)
             disable_comment_bg_flag = (final_tag_config.get('disable_comment_bg', False) if isinstance(final_tag_config, dict) else False)
             blocks_with_colors = preprocess.apply_colors(final_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
             hidden_by_wortart = (final_tag_config.get('hidden_tags_by_wortart') if isinstance(final_tag_config, dict) else None)
             blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
-        except Exception:
-            print("ERROR prosa_pdf: apply_colors/apply_tag_visibility failed:")
-            traceback.print_exc()
+            logging.getLogger(__name__).info("prosa_pdf: apply_tag_visibility END (%.2f s)", time.time() - t1)
+        except Exception as e:
+            tb = traceback.format_exc()
+            logging.getLogger(__name__).error("prosa_pdf: apply_colors/apply_tag_visibility failed (continuing): %s", str(e))
+            logging.getLogger(__name__).debug("prosa_pdf: apply_colors/apply_tag_visibility traceback (first 800 chars):\n%s", tb[:800])
             blocks_after_visibility = final_blocks
         
         # 3) apply tag visibility (bereits im try-Block gesetzt, nur NO_TAGS weiter verarbeiten)

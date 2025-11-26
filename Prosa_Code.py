@@ -1847,17 +1847,20 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             else:
                 display = txt.strip()
             
-            print(f"✓✓✓ Kommentar verarbeiten (Prosa): {display[:80]}...")
-            # Kommentar-Style: klein, grau, kursiv
-            comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                fontName='DejaVu', fontSize=8,
-                leading=9,
-                alignment=TA_LEFT, leftIndent=5*mm,
-                spaceBefore=2, spaceAfter=2,
-                textColor=colors.Color(0.36, 0.36, 0.36), italic=True)
-            elements_list.append(Spacer(1, 2*mm))
-            elements_list.append(Paragraph(html.escape(display), comment_style_simple))
-            elements_list.append(Spacer(1, 2*mm))
+            # Kommentar-Style: klein, grau, kursiv — be defensive
+            try:
+                comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
+                    fontName='DejaVu', fontSize=8,
+                    leading=9,
+                    alignment=TA_LEFT, leftIndent=5*mm,
+                    spaceBefore=2, spaceAfter=2,
+                    textColor=colors.Color(0.36, 0.36, 0.36), italic=True)
+                elements_list.append(Spacer(1, 2*mm))
+                elements_list.append(Paragraph(html.escape(display), comment_style_simple))
+                elements_list.append(Spacer(1, 2*mm))
+            except Exception as e:
+                import logging
+                logging.getLogger(__name__).exception("prosa_pdf: rendering comment failed (continuing): %s", str(e))
 
     elements, idx = [], 0
     last_block_type = None  # Speichert den Typ des letzten verarbeiteten Blocks
