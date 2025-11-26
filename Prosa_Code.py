@@ -2163,6 +2163,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 continue
 
         if t == 'h3_eq':
+            print(f"Prosa_Code: Processing h3_eq block at idx={idx}", flush=True)
             h3_para = Paragraph(xml_escape(b['text']), style_eq_h3)
             idx += 1
             
@@ -2171,6 +2172,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             while scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'blank': scan += 1
             
             if scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'flow':
+                print(f"Prosa_Code: h3_eq found flow block at scan={scan}, calling build_flow_tables()", flush=True)
                 flow_tables = build_flow_tables(flow_blocks[scan])
                 if flow_tables:
                     # Bestimme Anzahl der Sprachen (2 oder 3)
@@ -2188,9 +2190,13 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                             elements.append(KeepTogether(line_tables))
                     
                     elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
+                    old_idx = idx
                     idx = scan + 1
+                    print(f"Prosa_Code: h3_eq completed, set idx from {old_idx} to {idx} (next block type: {flow_blocks[idx].get('type', 'unknown') if idx < len(flow_blocks) else 'END'})", flush=True)
+                    continue  # WICHTIG: Muss hier sein, damit nicht weiterverarbeitet wird!
                 else:
                     elements.append(KeepTogether([h3_para]))
+                    print(f"Prosa_Code: h3_eq no flow tables, idx={idx}", flush=True)
             else:
                 # Suche weiter voraus
                 lookahead = scan
@@ -2217,7 +2223,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         else:
                             elements.append(KeepTogether([h3_para]))
                         found_flow = True
+                        old_idx = idx
                         idx = lookahead + 1
+                        print(f"Prosa_Code: h3_eq found flow at lookahead={lookahead}, set idx from {old_idx} to {idx} (next block type: {flow_blocks[idx].get('type', 'unknown') if idx < len(flow_blocks) else 'END'})", flush=True)
                         break
                     elif flow_blocks[lookahead]['type'] in ('h1_eq', 'h2_eq', 'h3_eq'):
                         break
@@ -2225,6 +2233,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 
                 if not found_flow:
                     elements.append(KeepTogether([h3_para]))
+                    print(f"Prosa_Code: h3_eq no flow found, idx={idx}", flush=True)
             continue
 
         if t == 'quote':
