@@ -1,6 +1,6 @@
 ######## START: build_prosa_drafts_adapter.py ########
 from pathlib import Path
-import subprocess, sys, json, re
+import subprocess, sys, json, re, shlex, time, traceback, os
 
 ROOT = Path(__file__).parent.resolve()
 SRC_ROOT = ROOT / "texte_drafts" / "prosa_drafts"        # Eingaben
@@ -86,7 +86,8 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     
     before = {p.name for p in ROOT.glob("*.pdf")}
     print(f"→ Erzeuge PDFs für: {input_path}")
-    
+    sys.stdout.flush()
+
     # Erstelle temporäre Konfigurationsdatei für Tag-Einstellungen
     config_file = None
     if tag_config:
@@ -94,36 +95,98 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
         with open(config_file, 'w', encoding='utf-8') as f:
             json.dump(tag_config, f, ensure_ascii=False, indent=2)
     
+    # --- START robust subprocess invocation of prosa_pdf.py ---
+    # This will stream prosa_pdf output live, enforce a per-call timeout,
+    # and report a clear error/exit code to the outer CI.
     try:
-        # Führe den Runner mit optionaler Konfiguration aus
-        cmd = [sys.executable, str(RUNNER), str(temp_input)]
-        if config_file:
-            cmd.extend(["--tag-config", str(config_file)])
-        if hide_pipes:
-            cmd.extend(["--hide-pipes"])
-        
-        # Führe den Runner aus und übertrage Tag-Konfiguration
-        import traceback
-        try:
-            result = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True)
-            if result.returncode != 0:
-                print(f"Fehler beim Ausführen des Runners: {result.stderr}")
-                return
-            print(result.stdout)
-        except Exception as e:
-            print(f"ERROR: processing draft {input_path} failed with exception:")
-            traceback.print_exc()
-            # continue so CI can try other drafts
-            return
+        PROSA_PDF_CALL_TIMEOUT = int(os.environ.get("PROSA_PDF_CALL_TIMEOUT", "600"))
+    except Exception:
+        PROSA_PDF_CALL_TIMEOUT = 600
+
+    prosa_script = str(RUNNER)
+
+    cmd = [sys.executable, "-u", prosa_script, str(temp_input)]
+
+    # If there were extra flags in the previous implementation (e.g. --tag-config,
+    # --force-meter, --hide-pipes) we should append them here. Try to preserve
+    # optional variables if available in local variables (best-effort).
+    if config_file:
+        cmd.extend(["--tag-config", str(config_file)])
+    if hide_pipes:
+        cmd.extend(["--hide-pipes"])
+
+    print("build_prosa_drafts_adapter.py: INVOCATION CMD: %s" % shlex.join(cmd))
+    sys.stdout.flush()
+
+    proc = None
+    start = time.time()
+    try:
+        proc = subprocess.Popen(
+            cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,
+            cwd=str(ROOT)
+        )
+
+        # stream stdout lines live, enforce timeout
+        while True:
+            line = proc.stdout.readline()
+            if line:
+                # Print streamed line exactly as produced
+                print(line.rstrip("\n"))
+                sys.stdout.flush()
+            else:
+                # no immediate line; check if process finished
+                if proc.poll() is not None:
+                    break
+                # check timeout
+                if time.time() - start > PROSA_PDF_CALL_TIMEOUT:
+                    print("ERROR: prosa_pdf subprocess exceeded timeout (%ds) — killing." % PROSA_PDF_CALL_TIMEOUT)
+                    sys.stdout.flush()
+                    try:
+                        proc.kill()
+                    except Exception:
+                        pass
+                    raise TimeoutError("prosa_pdf call timeout")
+                # small sleep to avoid busy loop
+                time.sleep(0.1)
+
+        rc = proc.poll()
+        if rc is None:
+            rc = proc.wait()
+        print("build_prosa_drafts_adapter.py: prosa_pdf exited with rc=%s" % rc)
+        sys.stdout.flush()
+        if rc != 0:
+            print("ERROR: prosa_pdf returned non-zero exit status %s" % rc)
+            # Intentionally don't crash the whole adapter — report and continue/abort
+            # Here we re-raise to make CI step fail so you get visible failure
+            raise SystemExit(rc)
+
+    except TimeoutError as te:
+        print("build_prosa_drafts_adapter.py: TimeoutError while running prosa_pdf: %s" % str(te))
+        traceback.print_exc()
+        sys.stdout.flush()
+        raise
     except Exception as e:
-        print(f"Fehler beim Ausführen des Runners: {e}")
-        return
+        print("build_prosa_drafts_adapter.py: Exception while running prosa_pdf:", str(e))
+        traceback.print_exc()
+        sys.stdout.flush()
+        raise
     finally:
+        try:
+            if proc and proc.stdout:
+                proc.stdout.close()
+        except Exception:
+            pass
         # Lösche temporäre Dateien
         if config_file and config_file.exists():
             config_file.unlink()
         if temp_input.exists():
             temp_input.unlink()
+
+    # --- END robust subprocess invocation ---
     
     after = {p.name for p in ROOT.glob("*.pdf")}
     new_pdfs = sorted(after - before)
