@@ -1929,6 +1929,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     
     elements, idx = [], 0
     last_block_type = None  # Speichert den Typ des letzten verarbeiteten Blocks
+    processed_flow_indices = set()  # WICHTIG: Verhindere doppelte Verarbeitung von Flow-Blöcken
     
     print(f"Prosa_Code: Entering element creation loop (flow_blocks={len(flow_blocks)})", flush=True)
     
@@ -2102,6 +2103,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # Wenn direkt ein flow-Block folgt, verkoppeln wir ihn mit der Überschrift
             if scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'flow':
+                # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
+                processed_flow_indices.add(scan)
                 flow_tables = build_flow_tables(flow_blocks[scan])
                 if flow_tables:
                     # Bestimme Anzahl der Sprachen (2 oder 3)
@@ -2128,6 +2131,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 found_flow = False
                 while lookahead < len(flow_blocks) and lookahead < scan + 10:
                     if flow_blocks[lookahead]['type'] == 'flow':
+                        # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
+                        processed_flow_indices.add(lookahead)
                         # flow-Block gefunden - verkoppeln mit Überschrift
                         flow_tables = build_flow_tables(flow_blocks[lookahead])
                         if flow_tables:
@@ -2172,6 +2177,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             while scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'blank': scan += 1
             
             if scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'flow':
+                # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
+                processed_flow_indices.add(scan)
                 print(f"Prosa_Code: h3_eq found flow block at scan={scan}, calling build_flow_tables()", flush=True)
                 flow_tables = build_flow_tables(flow_blocks[scan])
                 if flow_tables:
@@ -2203,6 +2210,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 found_flow = False
                 while lookahead < len(flow_blocks) and lookahead < scan + 10:
                     if flow_blocks[lookahead]['type'] == 'flow':
+                        # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
+                        processed_flow_indices.add(lookahead)
                         flow_tables = build_flow_tables(flow_blocks[lookahead])
                         if flow_tables:
                             # Bestimme Anzahl der Sprachen (2 oder 3)
