@@ -1652,6 +1652,19 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                tag_config: dict | None = None,
                hide_pipes:bool=False):  # NEU: Pipes (|) in Übersetzungen verstecken
 
+    # DIAGNOSE: Logging am Anfang von create_pdf
+    import logging
+    import sys
+    import os
+    logger = logging.getLogger(__name__)
+    logger.info("Prosa_Code.create_pdf: ENTRY for %s (blocks=%d, strength=%s, color=%s, tag=%s)", 
+                os.path.basename(pdf_name), len(blocks), strength, color_mode, tag_mode)
+    print(f"Prosa_Code: create_pdf ENTRY for {os.path.basename(pdf_name)} (blocks={len(blocks)})", flush=True)
+    try:
+        sys.stdout.flush()
+    except Exception:
+        pass
+
     # Verarbeite Kommentare und weise Farben zu
     comments = process_comments_for_coloring(blocks)
     
@@ -1895,6 +1908,14 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 added_count, block_id, len(cms), truncated
             )
 
+    # DIAGNOSE: Logging vor Element-Erstellung
+    logger.info("Prosa_Code.create_pdf: Starting element creation (flow_blocks=%d)", len(flow_blocks))
+    print(f"Prosa_Code: Starting element creation (flow_blocks={len(flow_blocks)})", flush=True)
+    try:
+        sys.stdout.flush()
+    except Exception:
+        pass
+    
     elements, idx = [], 0
     last_block_type = None  # Speichert den Typ des letzten verarbeiteten Blocks
     
@@ -2468,6 +2489,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # WICHTIG: Nur EINZELNE Zeilen zusammenhalten (2 oder 3 Tabellen für GR/DE oder GR/DE/EN)
             # NICHT den gesamten Flow-Block, um große weiße Flächen zu vermeiden
+            # DIAGNOSE: Logging vor build_flow_tables
+            if idx % 20 == 0:  # Logge alle 20 Blöcke
+                print(f"Prosa_Code: Processing flow block {idx+1}/{len(flow_blocks)}", flush=True)
             flow_tables = build_flow_tables(b)
             
             # Bestimme die Anzahl der Sprachen (2 oder 3)
@@ -2485,11 +2509,15 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
 
         idx += 1
 
+    # DIAGNOSE: Logging nach Element-Erstellung, vor doc.build()
+    logger.info("Prosa_Code.create_pdf: Element creation complete (elements=%d)", len(elements))
+    print(f"Prosa_Code: Element creation complete (elements={len(elements)})", flush=True)
+    try:
+        sys.stdout.flush()
+    except Exception:
+        pass
+
     # Build PDF with error handling and file verification
-    import logging
-    import os
-    import sys
-    logger = logging.getLogger(__name__)
     try:
         # Flush stdout before starting (critical for CI visibility)
         try:
