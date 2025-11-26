@@ -25,6 +25,8 @@ from typing import Optional
 import os, re, itertools, sys
 import logging
 import os
+import json
+import tempfile
 import traceback
 from reportlab.platypus import Paragraph
 from reportlab.lib.styles import ParagraphStyle

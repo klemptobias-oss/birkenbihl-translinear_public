@@ -7,6 +7,8 @@ shared/preprocess.py
 Vorverarbeitung der Blockstruktur vor dem Rendern.
 """
 import re
+import os
+import string
 import logging
 from typing import List, Dict, Any, Iterable, Optional, Set, Tuple
 
@@ -1879,6 +1881,25 @@ def apply(blocks: List[Dict[str, Any]],
         
     return out
 
+# --- helper to reduce tag-removal log noise ---
+def _log_tag_removals(block_index, removed_examples, removed_count):
+    """
+    Compact logging for tag removal. If environment variable TAG_REMOVAL_DEBUG is set,
+    print every removal. Otherwise print a short summary per block with up to 5 examples.
+    """
+    try:
+        if removed_count == 0:
+            return
+        if os.getenv('TAG_REMOVAL_DEBUG'):
+            for orig, new in removed_examples:
+                logging.getLogger(__name__).debug("DEBUG _process_pair_block_for_tags: Tag entfernt aus Token: '%s' → '%s'", orig, new)
+        else:
+            # print summary and a few examples
+            ex = ["'%s'→'%s'" % (o, n) for (o, n) in removed_examples[:5]]
+            logging.getLogger(__name__).debug("DEBUG _process_pair_block_for_tags: Block %s: %d tag(s) removed. Examples: %s", block_index, removed_count, ex)
+    except Exception:
+        logging.getLogger(__name__).debug("DEBUG _process_pair_block_for_tags: logging failed", exc_info=True)
+
 # Hilfsfunktion zum Entfernen von Tags in einem Block
 def _process_pair_block_for_tags(block: Dict[str, Any], *,
                                  sup_keep: Optional[set[str]],
@@ -1886,6 +1907,7 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
                                  remove_all: bool,
                                  translation_rules: Optional[Dict[str, Dict[str, Any]]] = None) -> Dict[str, Any]:
     source_tokens = block.get('gr_tokens', [])
+    block_index = block.get('index') or 'unknown'
 
     if translation_rules:
         hide_translation_flags = [
@@ -1894,17 +1916,25 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
         ]
     else:
         hide_translation_flags = [False] * len(source_tokens)
+    
+    # collect tag removals for compact logging
+    tag_removals = []
+    tag_removal_count = 0
+    
     def proc_tokens(seq: Iterable[str]) -> List[str]:
+        nonlocal tag_removals, tag_removal_count
         result = []
         for tok in (seq or []):
             if tok:
                 original = tok
                 processed = _remove_selected_tags(tok, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=remove_all)
-                # DEBUG: Zeige, wenn ein Tag entfernt wurde
+                # collect removals and log compactly per-block (see helper above)
                 if original != processed and ('(' in original or ')' in original):
-                    # DEBUG: Reduziert - nur bei ersten 5 Tokens ausgeben (verhindert 70k+ Zeilen)
-                    if len(result) < 5:
-                        logging.getLogger(__name__).debug(f"_process_pair_block_for_tags: Tag entfernt aus Token: '{original[:60]}...' → '{processed[:60]}...'")
+                    try:
+                        tag_removals.append((original[:60], processed[:60]))
+                        tag_removal_count += 1
+                    except Exception:
+                        pass
                 result.append(processed)
             else:
                 result.append(tok)
@@ -1913,6 +1943,12 @@ def _process_pair_block_for_tags(block: Dict[str, Any], *,
     if 'gr_tokens' in block or 'de_tokens' in block:
         new_gr_tokens = proc_tokens(block.get('gr_tokens', []))
         new_de_tokens = proc_tokens(block.get('de_tokens', []))
+        
+        # At the end of processing this block, log compactly:
+        try:
+            _log_tag_removals(block_index, tag_removals, tag_removal_count)
+        except Exception:
+            logging.getLogger(__name__).debug("failed to log tag removal summary for block %s", block_index, exc_info=True)
         
         result = {
             **block,

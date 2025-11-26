@@ -24,6 +24,8 @@ import os, itertools, sys
 from pathlib import Path
 import logging
 import os
+import json
+import tempfile
 import time
 import traceback
 from reportlab.platypus import Paragraph
@@ -135,10 +137,12 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     if not os.path.isfile(infile):
         print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
 
+    base = base_from_input_path(Path(infile))
+    base_name = str(base)  # for logging and debug dumps
     logging.getLogger(__name__).info("prosa_pdf: _process_one_input START for %s", infile)
     t_start = time.time()
     
-    base = base_from_input_path(Path(infile))
+    generated_files = []  # track created PDFs
     
     t_process = time.time()
     blocks_raw = Prosa.process_input_file(infile)
@@ -149,15 +153,10 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     blocks = Prosa.group_pairs_into_flows(blocks_raw)
     logging.getLogger(__name__).info("prosa_pdf: group_pairs_into_flows done (%.2f s), blocks=%d", time.time() - t_group, len(blocks) if blocks else 0)
     
-    # Defensive: always ensure final_blocks is a list. Protect pipeline from exceptions
+    # --- robust comment discovery: never abort the whole run because of comment attach errors ---
     final_blocks = blocks
     try:
-        # write PID/cwd briefly so CI shows context if it hangs
-        try:
-            logging.getLogger(__name__).info("prosa_pdf: pid=%d cwd=%s", os.getpid(), os.getcwd())
-        except Exception:
-            pass
-        
+        logging.getLogger(__name__).info("prosa_pdf: START processing file=%s", base_name)
         import shared.comment_utils as comment_utils  # local import so patch is conservative
         fb = comment_utils.safe_discover_and_attach_comments(
             blocks,
@@ -173,9 +172,26 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             final_blocks = fb
             logging.getLogger(__name__).info("prosa_pdf: discover_and_attach_comments completed, blocks=%d", len(final_blocks))
     except Exception as e:
+        # write a compact debug dump and continue without comments
         tb = traceback.format_exc()
-        logging.getLogger(__name__).error("prosa_pdf: discover/attach comments failed (continuing without comments): %s", e)
+        logging.getLogger(__name__).error("prosa_pdf: discover/attach comments FAILED (continuing without comments): %s", e)
         logging.getLogger(__name__).debug("prosa_pdf: discover/attach comments traceback (first 800 chars):\n%s", tb[:800])
+        try:
+            # dump a compact JSON with first blocks so we can inspect in CI artifacts
+            dump_sample = []
+            for b in (blocks[:50] if blocks else []):
+                dump_sample.append({
+                    'block_index_example': b.get('index') if isinstance(b, dict) else None,
+                    'comment_count': len(b.get('comments') or []),
+                    'comment_token_mask_sample': (b.get('comment_token_mask')[:40] if b.get('comment_token_mask') else None),
+                    'gr_tokens_sample': (b.get('gr_tokens')[:10] if b.get('gr_tokens') else None),
+                })
+            tmpf = tempfile.gettempdir() + os.sep + ("prosa_debug_%s.json" % base_name.replace('/', '_'))
+            with open(tmpf, 'w', encoding='utf-8') as fh:
+                json.dump({'error': str(e), 'trace_snippet': tb[:800], 'sample_blocks': dump_sample}, fh, ensure_ascii=False, indent=2)
+            logging.getLogger(__name__).info("prosa_pdf: wrote debug dump to %s", tmpf)
+        except Exception:
+            logging.getLogger(__name__).exception("prosa_pdf: failed to write debug dump")
         final_blocks = blocks
     
     # Compact debug summary for CI logs: print only first block's comments and a short mask sample.
