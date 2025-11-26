@@ -1190,7 +1190,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             tag_config:dict=None,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                             base_num:int=None,  # NEU: Zeilennummer für Hinterlegung
                             line_comment_colors:dict=None,  # NEU: Map von Zeilennummern zu Kommentar-Farben
-                            block:dict=None):  # NEU: Block-Objekt für comment_token_mask
+                            block:dict=None,  # NEU: Block-Objekt für comment_token_mask
+                            tag_mode:str="TAGS"):  # NEU: Tag-Modus (TAGS oder NO_TAGS)
     if en_tokens is None:
         en_tokens = []
     if de_tokens is None:
@@ -1477,6 +1478,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
 
         slice_gr, slice_de, slice_w = gr[i:j], de[i:j], widths[i:j]
         slice_en = en[i:j]  # NEU: Englische Zeile
+        slice_start = i  # NEU: Start-Index für tok_idx-Berechnung
 
         # linke Zusatzspalten
         sp_cell_gr = Paragraph(xml_escape(speaker_display), style_speaker) if (first_slice and speaker_width_pt>0 and speaker_display) else Paragraph('', style_speaker)
@@ -1491,9 +1493,10 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         para_gap_gr  = Paragraph('', token_gr_style); para_gap_de = Paragraph('', token_de_style)
         para_gap_en  = Paragraph('', token_de_style)  # NEU: Englische Zeile
 
-        def cell_markup(t, is_gr):
+        def cell_markup(t, is_gr, tok_idx=None):
             # DEFENSIV: Entferne Tags aus Token, falls sie noch vorhanden sind
-            t_cleaned = _strip_tags_from_token(t) if t else t
+            # WICHTIG: Übergebe tag_mode und block, damit _strip_tags_from_token korrekt arbeitet
+            t_cleaned = _strip_tags_from_token(t, block=block, tok_idx=tok_idx, tag_mode=tag_mode) if t else t
             mk = format_token_markup(t_cleaned, reverse_mode=False, is_greek_row=is_gr,
                                      base_font_size=(token_gr_style.fontSize if is_gr else token_de_style.fontSize))
             return f'<i>{mk}</i>' if italic and mk else mk
@@ -1510,10 +1513,11 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                 return t
             return replace_pipes_with_spaces(t) if hide_pipes else t
 
-        gr_cells = [Paragraph(cell_markup(t, True),  token_gr_style) if t else Paragraph('', token_gr_style) for t in slice_gr]
+        # WICHTIG: Übergebe tok_idx an cell_markup, damit _strip_tags_from_token korrekt arbeitet
+        gr_cells = [Paragraph(cell_markup(t, True, tok_idx=slice_start + idx),  token_gr_style) if t else Paragraph('', token_gr_style) for idx, t in enumerate(slice_gr)]
         # Für DE und EN: Ersetze | durch Leerzeichen, wenn hide_pipes aktiviert ist
-        de_cells = [Paragraph(cell_markup(process_translation_token(t), False), token_de_style) if t else Paragraph('', token_de_style) for t in slice_de]
-        en_cells = [Paragraph(cell_markup(process_translation_token(t), False), token_de_style) if t else Paragraph('', token_de_style) for t in slice_en]  # NEU: Englische Zellen
+        de_cells = [Paragraph(cell_markup(process_translation_token(t), False, tok_idx=None), token_de_style) if t else Paragraph('', token_de_style) for t in slice_de]
+        en_cells = [Paragraph(cell_markup(process_translation_token(t), False, tok_idx=None), token_de_style) if t else Paragraph('', token_de_style) for t in slice_en]  # NEU: Englische Zellen
 
         row_gr, row_de, row_en, colWidths = [], [], [], []  # NEU: row_en
         # WICHTIG: Para/Speaker-Spalten IMMER hinzufügen (auch wenn leer), damit alle Zeilen am gleichen Ort beginnen
@@ -1828,7 +1832,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                 base_num=base_num,  # NEU: Zeilennummer für Hinterlegung
                 line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
-                block=flow_block  # NEU: Block-Objekt für comment_token_mask
+                block=flow_block,  # NEU: Block-Objekt für comment_token_mask
+                tag_mode=tag_mode  # NEU: Tag-Modus übergeben
             )
             print(f"Prosa_Code: build_flow_tables() build_tables_for_stream() completed (tables={len(tables)})", flush=True)
             # WICHTIG: TableStyle explizit importieren (verhindert Closure-Scope-Problem)
@@ -1997,6 +2002,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         if t == 'blank':
             elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm)); idx += 1; continue
         if t == 'title_brace':
+            # NEU: Kommentare aus block['comments'] rendern (auch bei title_brace)
+            render_block_comments(b, elements, doc)
             elements.append(Paragraph(xml_escape(b['text']), style_title))
             last_block_type = t
             idx += 1; continue
@@ -2055,6 +2062,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             continue
 
         if t in ('h1_eq', 'h2_eq'):
+            # NEU: Kommentare aus block['comments'] rendern (auch bei Überschriften)
+            render_block_comments(b, elements, doc)
+            
             # WICHTIG: Füge Abstand VOR Überschriften hinzu, wenn vorher Text war
             # (aber nicht zwischen aufeinanderfolgenden Überschriften)
             if last_block_type in ('flow', 'pair', 'quote'):
@@ -2145,6 +2155,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 continue
 
         if t == 'h3_eq':
+            # NEU: Kommentare aus block['comments'] rendern (auch bei h3-Überschriften)
+            render_block_comments(b, elements, doc)
+            
             # WICHTIG: Prüfe, ob dieser h3_eq Block bereits verarbeitet wurde
             if idx in processed_h3_indices:
                 if idx in skipped_indices:
@@ -2241,6 +2254,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             continue
 
         if t == 'quote':
+            # NEU: Kommentare aus block['comments'] rendern (auch bei Zitaten)
+            render_block_comments(b, elements, doc)
+            
             # WICHTIG: Mehr Abstand vor dem Zitat (1.5x größer als normal)
             elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm * 1.5))
             
@@ -2339,12 +2355,20 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # KRITISCH: Zitate müssen ALLE Tag/Translation-Einstellungen erben!
             import shared.preprocess as preprocess
             
-            # 1) Farben anwenden (mit disable_comment_bg Flag)
+            # WICHTIG: Die Blöcke wurden bereits in prosa_pdf.py vorverarbeitet!
+            # Die Farben und Tags sind bereits korrekt gesetzt.
+            # Wir müssen hier NUR noch die Farbsymbole entfernen, wenn BLACK_WHITE aktiv ist.
+            # ABER: Wir müssen die Farben ZUERST hinzufügen (falls noch nicht geschehen),
+            # dann die Tags verarbeiten, und dann die Farbsymbole entfernen.
+            
+            # 1) Farben anwenden (IMMER, auch bei BLACK_WHITE - werden später entfernt)
             disable_comment_bg_flag = False
             if tag_config and isinstance(tag_config, dict):
                 disable_comment_bg_flag = bool(tag_config.get('disable_comment_bg', False))
             
-            if tag_config and color_mode == "COLOR":
+            # WICHTIG: apply_colors IMMER aufrufen (auch bei BLACK_WHITE),
+            # da es die Farbsymbole hinzufügt, die dann bei BLACK_WHITE entfernt werden
+            if tag_config:
                 temp_quote_blocks = preprocess.apply_colors(temp_quote_blocks, tag_config, disable_comment_bg=disable_comment_bg_flag)
             
             # 2) Tag-Sichtbarkeit anwenden (wie beim normalen Text)
@@ -2459,7 +2483,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         table_halign='CENTER', italic=True,  # Zentriert für Einrückung von beiden Seiten
                         en_tokens=q_en,  # NEU: Englische Tokens übergeben
                         hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
-                        tag_config=tag_config  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
+                        tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
+                        tag_mode=tag_mode  # NEU: Tag-Modus übergeben
                     )
                     q_tables.extend(line_tables)
             for k, tquote in enumerate(q_tables):
@@ -2502,6 +2527,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             para_label = b.get('para_label', '')
             speaker = b.get('speaker', '')
             
+            # NEU: Kommentare aus block['comments'] rendern (VOR den Tabellen, damit sie im Fließtext erscheinen)
+            render_block_comments(b, elements, doc)
+            
             # Erstelle eine Pseudo-Flow-Struktur für eine einzelne Zeile
             pseudo_flow = {
                 'type': 'flow',
@@ -2517,9 +2545,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             pair_tables = build_flow_tables(pseudo_flow)
             if pair_tables:
                 elements.append(KeepTogether(pair_tables))
-            
-            # NEU: Kommentare aus block['comments'] rendern (nach dem pair-Block)
-            render_block_comments(b, elements, doc)
             
             idx += 1; continue
         

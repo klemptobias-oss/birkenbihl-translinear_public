@@ -70,13 +70,13 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     if tag_config is None:
         config_blob = metadata.get("TAG_CONFIG")
         if config_blob:
-            try:
+        try:
                 tag_config = json.loads(config_blob)
-                print(f"✓ Tag-Konfiguration gefunden: {len(tag_config.get('tag_colors', {}))} Farben, {len(tag_config.get('hidden_tags', []))} versteckte Tags")
-            except Exception as e:
-                print(f"⚠ Fehler beim Parsen der Tag-Konfiguration: {e}")
+            print(f"✓ Tag-Konfiguration gefunden: {len(tag_config.get('tag_colors', {}))} Farben, {len(tag_config.get('hidden_tags', []))} versteckte Tags")
+        except Exception as e:
+            print(f"⚠ Fehler beim Parsen der Tag-Konfiguration: {e}")
                 tag_config = None
-
+    
     # Entferne Metadaten-Kommentare aus dem Text für die Verarbeitung
     clean_text = strip_metadata_comments(text_content)
     
@@ -87,7 +87,7 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     before = {p.name for p in ROOT.glob("*.pdf")}
     print(f"→ Erzeuge PDFs für: {input_path}")
     sys.stdout.flush()
-
+    
     # Erstelle temporäre Konfigurationsdatei für Tag-Einstellungen
     config_file = None
     if tag_config:
@@ -110,8 +110,8 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     # If there were extra flags in the previous implementation (e.g. --tag-config,
     # --force-meter, --hide-pipes) we should append them here. Try to preserve
     # optional variables if available in local variables (best-effort).
-    if config_file:
-        cmd.extend(["--tag-config", str(config_file)])
+        if config_file:
+            cmd.extend(["--tag-config", str(config_file)])
     if hide_pipes:
         cmd.extend(["--hide-pipes"])
 
@@ -206,7 +206,7 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
         print(f"⚠ Keine passenden PDFs für {input_stem} gefunden."); return
 
     sanitized_release_base = release_base.strip()
-    
+
     for name in relevant_pdfs:
         bare = name[:-4] if name.lower().endswith(".pdf") else name
         suffix = ""

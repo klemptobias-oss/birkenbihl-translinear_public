@@ -860,11 +860,11 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
             # Create comment mask default (may be set elsewhere)
             if "comment_token_mask" not in new_block:
                 new_block["comment_token_mask"] = [False] * len(gr_tokens)
-            
+
             for i, token in enumerate(gr_tokens):
                 if not token:
                     continue
-                
+
                 # Extract original tags and store them so later removal uses original tag set
                 orig_tags = set(_extract_tags(token))
                 
@@ -1398,7 +1398,7 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         wortart = wortart_key
                     elif wortart_key in HIERARCHIE:
                         wortart = wortart_key
-                    else:
+            else:
                         continue
                     
                     if tag in SUP_TAGS or tag in SUB_TAGS:
@@ -1463,7 +1463,7 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         hidden_tags_by_wortart_normalized = {k.lower(): v for k, v in hidden_tags_by_wortart.items()}
         hidden_tags_by_wortart = hidden_tags_by_wortart_normalized
         print(f"DEBUG apply_tag_visibility: hidden_tags_by_wortart: {dict((k, sorted(list(v))[:10]) for k, v in hidden_tags_by_wortart.items())}")
-    else:
+            else:
         print("DEBUG apply_tag_visibility: hidden_tags_by_wortart ist leer - keine Tags werden entfernt")
     
     # iterate blocks
@@ -1509,14 +1509,14 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         if is_trivial_translation(de_text):
                             de_tokens[idx] = ''
                         # Ansonsten: entferne nur wenn hide_translation aktiv ist (was hier der Fall ist, da wir in diesem if-Block sind)
-                        else:
+    else:
                             de_tokens[idx] = ''
                     
                     if idx < len(en_tokens):
                         en_text = en_tokens[idx].strip() if isinstance(en_tokens[idx], str) else ''
                         if is_trivial_translation(en_text):
                             en_tokens[idx] = ''
-                        else:
+        else:
                             en_tokens[idx] = ''
             
             # Aktualisiere die Token-Listen im Block
@@ -1828,7 +1828,7 @@ def apply(blocks: List[Dict[str, Any]],
                         normalized_tag = _normalize_tag_name(tag)
                         if is_specific_rule or (tag not in forbidden_tags_sup and normalized_tag not in forbidden_tags_sup):
                             if tag in SUP_TAGS:
-                                sup_keep.add(tag)
+                    sup_keep.add(tag)
                             if tag in SUB_TAGS:
                                 sub_keep.discard(tag)
                 elif placement == 'sub':
@@ -1836,7 +1836,7 @@ def apply(blocks: List[Dict[str, Any]],
                         normalized_tag = _normalize_tag_name(tag)
                         if is_specific_rule or (tag not in forbidden_tags_sub and normalized_tag not in forbidden_tags_sub):
                             if tag in SUB_TAGS:
-                                sub_keep.add(tag)
+                    sub_keep.add(tag)
                             if tag in SUP_TAGS:
                                 sup_keep.discard(tag)
                 else:
@@ -1848,7 +1848,7 @@ def apply(blocks: List[Dict[str, Any]],
                         if is_specific_rule or (tag not in forbidden_tags_sub and normalized_tag not in forbidden_tags_sub):
                             if tag in SUB_TAGS:
                                 sub_keep.add(tag)
-        
+    
         print(f"DEBUG apply (in apply()): Finale sup_keep={sorted(list(sup_keep))}, sub_keep={sorted(list(sub_keep))}")
     else:
         # Wenn tag_mode == "NO_TAGS" oder keine tag_config, alle Tags entfernen

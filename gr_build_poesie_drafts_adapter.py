@@ -117,8 +117,8 @@ def run_one(input_path: Path) -> None:
     if force_meter:
         cmd.append("--force-meter")
         print(f"→ Kommando enthält --force-meter Flag")
-    if config_file:
-        cmd.extend(["--tag-config", str(config_file)])
+        if config_file:
+            cmd.extend(["--tag-config", str(config_file)])
         print(f"→ Kommando enthält --tag-config: {config_file}")
     if hide_pipes:
         cmd.extend(["--hide-pipes"])
@@ -185,13 +185,13 @@ def run_one(input_path: Path) -> None:
     finally:
         # Cleanup: delete temp files
         try:
-            if config_file and config_file.exists():
-                config_file.unlink()
+        if config_file and config_file.exists():
+            config_file.unlink()
         except Exception:
             pass
         try:
-            if temp_input.exists():
-                temp_input.unlink()
+        if temp_input.exists():
+            temp_input.unlink()
         except Exception:
             pass
 
@@ -227,10 +227,10 @@ def run_one(input_path: Path) -> None:
             final_bare = bare[5:] if bare.startswith("temp_") else bare
 
         final_name = f"{final_bare}.pdf"
-        src = ROOT / name
-        dst = target_dir / final_name
-        src.replace(dst)
-        print(f"✓ PDF → {dst}")
+            src = ROOT / name
+            dst = target_dir / final_name
+            src.replace(dst)
+            print(f"✓ PDF → {dst}")
 
 def main():
     # Dieser Adapter wird typischerweise mit genau einem Dateipfad aufgerufen.

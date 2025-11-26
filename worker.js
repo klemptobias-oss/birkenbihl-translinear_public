@@ -155,12 +155,12 @@ export default {
       let lastStatus = 404;
 
       for (const candidate of filenameVariants) {
-        const upstreamUrl = `https://github.com/${owner}/${repo}/releases/download/${encodeURIComponent(
-          tag
+      const upstreamUrl = `https://github.com/${owner}/${repo}/releases/download/${encodeURIComponent(
+        tag
         )}/${encodeURIComponent(candidate)}`;
         const attempt = await fetch(upstreamUrl, {
-          method: method === "HEAD" ? "HEAD" : "GET",
-        });
+        method: method === "HEAD" ? "HEAD" : "GET",
+      });
         if (attempt && attempt.ok) {
           upstream = attempt;
           finalFileName = candidate;
@@ -378,7 +378,7 @@ export default {
         ? stripUnsafe(filename.replace(/\.txt$/i, ""))
         : "";
     if (!baseName) baseName = stripUnsafe(work) || "Entwurf";
-    
+
     // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
     baseName = baseName.replace(/_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g, "_Versmass");
     

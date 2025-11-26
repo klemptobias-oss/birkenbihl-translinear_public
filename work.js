@@ -580,7 +580,7 @@ function getLocalizedFilenameBase() {
   }
 
   if (!filename.includes("_birkenbihl")) {
-    filename += "_birkenbihl";
+  filename += "_birkenbihl";
   }
 
   return filename;
@@ -607,7 +607,7 @@ function buildVariantSuffix(localizedBase) {
   let suffix = "";
   if (state.strength === "Normal") {
     suffix += "_Normal";
-  } else {
+    } else {
     const marker =
       state.strength === "Fett"
         ? isGreek
@@ -992,9 +992,9 @@ async function loadTexts() {
         if (savedDraft) {
           console.log("✅ Gespeicherter Draft-Text wiederhergestellt");
           el.draftText.innerHTML = addSpansToTags(savedDraft);
-        } else {
+      } else {
           el.draftText.innerHTML = addSpansToTags(text);
-        }
+      }
       }
       if (el.birkenbihlText) {
         el.birkenbihlText.innerHTML = addSpansToTags(text);
@@ -1220,20 +1220,20 @@ async function performRendering() {
         filename: data.filename,
         url: draftPdfUrl,
       });
-    } else {
-      el.draftStatus.innerHTML = `
-        <div style="color: #059669; font-weight: bold;">
+      } else {
+        el.draftStatus.innerHTML = `
+          <div style="color: #059669; font-weight: bold;">
           ✓ Text gespeichert: ${displayName}
-        </div>
+          </div>
         <div style="color: #dc2626; margin-top: 6px;">
           Bitte lokal ausführen:<br>
           <code style="background: #f3f4f6; padding: 2px 4px; border-radius: 3px; display: inline-block; margin-top: 4px;">
             ${manualCommand}
-          </code>
-        </div>
-      `;
+            </code>
+          </div>
+        `;
       showDraftManualPlaceholder({ command: manualCommand });
-    }
+      }
 
     updatePdfView(true);
   } catch (e) {
@@ -2553,7 +2553,7 @@ async function loadWorkMeta() {
 
   // WICHTIG: Lade Werk-Metadaten aus dem Katalog (setzt strength, meterSupported, etc.)
   try {
-    await loadWorkMeta();
+  await loadWorkMeta();
   } catch (error) {
     console.error("❌ FEHLER beim Laden der Werk-Metadaten:", error);
     el.pageTitle.textContent = "Fehler beim Laden";
@@ -2567,7 +2567,7 @@ async function loadWorkMeta() {
 
   // Inhalte laden
   try {
-    await loadTexts();
+  await loadTexts();
   } catch (error) {
     console.error("❌ FEHLER beim Laden der Texte:", error);
   }
@@ -2576,7 +2576,7 @@ async function loadWorkMeta() {
 
   // Entwurfs-Text initialisieren
   try {
-    await initializeDraftText();
+  await initializeDraftText();
   } catch (error) {
     console.error("❌ FEHLER beim Initialisieren des Draft-Textes:", error);
   }

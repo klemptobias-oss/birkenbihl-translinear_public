@@ -440,7 +440,7 @@ def _process_one_input(infile: str,
         try:
             create_pdf_unified("poesie", Poesie, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
             logger.info("poesie_pdf: reportlab build() finished for %s", out_name)
-            print(f"✓ PDF erstellt → {out_name}")
+        print(f"✓ PDF erstellt → {out_name}")
         except Exception:
             logger.exception("poesie_pdf: reportlab build() FAILED for %s", out_name)
             raise

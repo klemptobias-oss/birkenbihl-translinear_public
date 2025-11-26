@@ -100,7 +100,7 @@ jobs:
             REL_PATH="${file#texte_drafts/}"
             DIR_PATH=$(dirname "$REL_PATH")
             FILENAME=$(basename "$REL_PATH")
-            TIMESTAMP=$(echo "$FILENAME" | grep -o '[0-9]\{8\}_[0-9]\{6\}' || echo "00000000_000000")
+              TIMESTAMP=$(echo "$FILENAME" | grep -o '[0-9]\{8\}_[0-9]\{6\}' || echo "00000000_000000")
             echo "${DIR_PATH}|${TIMESTAMP}|${file}" >> "$TEMP_GROUP_FILE"
           done
 

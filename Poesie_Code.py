@@ -1546,10 +1546,10 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         de = []
         en = []
     else:
-        cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
-        gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
-        de = de_tokens[:] + [''] * (cols - len(de_tokens))
-        en = en_tokens[:] + [''] * (cols - len(en_tokens))
+    cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
+    gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
+    de = de_tokens[:] + [''] * (cols - len(de_tokens))
+    en = en_tokens[:] + [''] * (cols - len(en_tokens))
 
     # Effektive cfg abhängig von meter_on (Versmaß an/aus) und tag_mode
     eff_cfg = dict(CFG)
@@ -1753,13 +1753,13 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
 
         # Prüfe, ob Übersetzungen vorhanden sind
         has_de = any(de)
-        
+
         # Für 3-sprachige Texte: englische Zeile hinzufügen
         if has_en:
             row_en = [num_para_en, num_gap_en, sp_para_en, sp_gap_en, indent_en] + en_cells
             if has_de:
-                tbl = Table([row_gr, row_de, row_en], colWidths=col_w, hAlign='LEFT')
-            else:
+            tbl = Table([row_gr, row_de, row_en], colWidths=col_w, hAlign='LEFT')
+        else:
                 # Keine deutschen Übersetzungen, nur griechisch und englisch
                 tbl = Table([row_gr, row_en], colWidths=col_w, hAlign='LEFT')
         elif has_de:
@@ -1777,7 +1777,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         
         if base_line_num is not None and line_comment_colors and base_line_num in line_comment_colors and not has_comment_mask:
             comment_color = line_comment_colors[base_line_num]
-        
+
         if meter_on:
             # Versmaß: KEIN Innenabstand, sonst entstehen Lücken zwischen Flowables
             style_list = [
@@ -2421,6 +2421,76 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         "poesie_pdf: Added %d comment paragraphs for block idx=%s (total_comments=%d, truncated=%s)",
                         added_count, block_id, len(comments), truncated
                     )
+
+            # NEU: Kommentare aus block['comments'] rendern (auch bei anderen Block-Typen)
+            # Prüfe, ob es Kommentare gibt, die noch nicht gerendert wurden
+            comments = b.get('comments') or []
+            if comments:
+                # Verwende die gleiche Logik wie oben für Kommentare
+                MAX_COMMENTS_PER_BLOCK = 5
+                MAX_COMMENT_CHARS = 400
+                added_keys = set()
+                added_count = 0
+                truncated = False
+                
+                for cm in comments:
+                    if added_count >= MAX_COMMENTS_PER_BLOCK:
+                        truncated = True
+                        break
+                    
+                    if isinstance(cm, dict):
+                        txt = cm.get('text') or cm.get('comment') or cm.get('body') or ""
+                        key = (cm.get('line_num'), len(txt))
+                    else:
+                        txt = str(cm) if cm else ""
+                        key = ("txt", hash(txt))
+                    
+                    if not txt or not txt.strip():
+                        continue
+                    
+                    if key in added_keys:
+                        continue
+                    added_keys.add(key)
+                    
+                    rng = cm.get('pair_range') if isinstance(cm, dict) else None
+                    if rng:
+                        display = f"({rng[0]}-{rng[1]}k) {txt}"
+                    elif isinstance(cm, dict) and cm.get('start') and cm.get('end'):
+                        display = f"({cm.get('start')}-{cm.get('end')}k) {txt}"
+                    else:
+                        display = txt.strip()
+                    
+                    text_clean = " ".join(display.split())
+                    if len(text_clean) > MAX_COMMENT_CHARS:
+                        text_clean = text_clean[:MAX_COMMENT_CHARS].rstrip() + "…"
+                    
+                    comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
+                        fontName='DejaVu', fontSize=7,
+                        leading=8.5,
+                        alignment=TA_LEFT, 
+                        leftIndent=4*MM, rightIndent=4*MM,
+                        spaceBefore=2, spaceAfter=2,
+                        textColor=colors.Color(0.25, 0.25, 0.25),
+                        backColor=colors.Color(0.92, 0.92, 0.92))
+                    from reportlab.platypus import Table, TableStyle
+                    try:
+                        from Poesie_Code import doc
+                        available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*MM
+                    except:
+                        available_width = 170*MM
+                    comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]], 
+                                         colWidths=[available_width])
+                    comment_table.setStyle(TableStyle([
+                        ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),
+                        ('LEFTPADDING', (0, 0), (-1, -1), 4*MM),
+                        ('RIGHTPADDING', (0, 0), (-1, -1), 4*MM),
+                        ('TOPPADDING', (0, 0), (-1, -1), 3*MM),
+                        ('BOTTOMPADDING', (0, 0), (-1, -1), 3*MM),
+                    ]))
+                    elements.append(Spacer(1, 2*MM))
+                    elements.append(comment_table)
+                    elements.append(Spacer(1, 2*MM))
+                    added_count += 1
 
             # Abstand nach jedem Textblock hinzufügen
             # Finde den nächsten relevanten Block (überspringe 'blank' und 'title_brace')
