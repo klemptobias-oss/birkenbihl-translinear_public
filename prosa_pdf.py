@@ -37,13 +37,34 @@ from reportlab.lib import colors
 # Reduce noisy DEBUG output - set root logger to INFO
 logging.getLogger().setLevel(logging.INFO)
 
-# Make sure logging goes to stdout and is visible in CI fast.
+# Throttle / suppress huge repeated debug lines from low-level loops
+class _RepeatThrottleFilter(logging.Filter):
+    def __init__(self, name='', max_messages=3000):
+        super().__init__(name)
+        self.max_messages = int(os.environ.get("LOG_THROTTLE_MAX", max_messages))
+        self.counter = {}
+    def filter(self, record):
+        msg = getattr(record, "getMessage", lambda: str(record))()
+        # target the debug spam we know: _process_pair_block_for_tags
+        if "_process_pair_block_for_tags" in msg:
+            cnt = self.counter.get("_process_pair_block_for_tags", 0) + 1
+            self.counter["_process_pair_block_for_tags"] = cnt
+            if cnt > self.max_messages:
+                # drop extra messages
+                if cnt == self.max_messages + 1:
+                    # log once that we've suppressed further lines
+                    logging.getLogger(__name__).warning(
+                        "prosa_pdf: suppressed further _process_pair_block_for_tags debug lines (>%d)", self.max_messages)
+                return False
+        return True
+
+# Ensure stream handler with throttle filter
 logger = logging.getLogger(__name__)
-if not logger.handlers:
-    handler = logging.StreamHandler(stream=sys.stdout)
-    formatter = logging.Formatter("%(levelname)s %(message)s")
-    handler.setFormatter(formatter)
-    logger.addHandler(handler)
+if not any(isinstance(h, logging.StreamHandler) for h in logger.handlers):
+    sh = logging.StreamHandler(stream=sys.stdout)
+    sh.setFormatter(logging.Formatter("%(levelname)s %(message)s"))
+    sh.addFilter(_RepeatThrottleFilter())
+    logger.addHandler(sh)
     logger.setLevel(logging.DEBUG)
 
 # Attach log throttle to suppress mass warnings (table width, tag removal spam)
@@ -235,35 +256,26 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # Discover and attach comments. This used to sometimes yield None or threw
     # exceptions that left 'final_blocks' undefined. We defend here and always
     # ensure final_blocks is a list.
-    final_blocks = blocks
+    logger.info("prosa_pdf: START processing file=%s", base_name)
     try:
-        logger.info("prosa_pdf: START processing file=%s", base_name)
-        try:
-            sys.stdout.flush()
-        except Exception:
-            pass
-        start_time = time.time()
-        import shared.comment_utils as comment_utils  # local import so patch is conservative
-        fb = comment_utils.safe_discover_and_attach_comments(
-            blocks,
-            preprocess,
-            comment_regexes=None,
-            strip_comment_lines=True,
-            pipeline_name='prosa_pdf'
-        )
-        if fb is None:
+        sys.stdout.flush()
+    except Exception:
+        pass
+    start_time = time.time()
+    
+    final_blocks = None
+    try:
+        final_blocks = preprocess.discover_and_attach_comments(
+            blocks, comment_regexes=None, strip_comment_lines=True)
+        if final_blocks is None:
             logger.debug("prosa_pdf: discover_and_attach_comments returned None -> using original blocks")
             final_blocks = blocks
-        else:
-            final_blocks = fb
-            logger.info("prosa_pdf: discover_and_attach_comments completed, blocks=%d", len(final_blocks))
     except Exception:
-        # Log exception but continue with original blocks (no comments attached).
         tb = traceback.format_exc()
-        logger.exception("discover/attach comments failed (continuing without comments): %s", tb[:800])
+        logger.error("prosa_pdf: discover/attach comments failed (continuing without comments): %s", tb[:800])
         final_blocks = blocks
-    
-    # Sane debug summary for CI: print first block comments + mask (if any)
+
+    # small debug summary
     try:
         c0 = final_blocks[0].get('comments') if isinstance(final_blocks, list) and final_blocks else None
         mask0 = final_blocks[0].get('comment_token_mask') if isinstance(final_blocks, list) and final_blocks else None

@@ -209,41 +209,36 @@ def _process_one_input(infile: str,
     print(f"{'='*60}\n")
 
     base = base_from_input_path(Path(infile))
+    base_name = str(base)  # for logging
     print(f"→ Base-Name aus Datei: {base}")
+    
+    logger.info("poesie_pdf: START processing file=%s", base_name)
+    try:
+        sys.stdout.flush()
+    except Exception:
+        pass
+    start_time = time.time()
     
     blocks = Poesie.process_input_file(infile)
     
-    final_blocks = blocks
+    final_blocks = None
     try:
-        try:
-            logger.info("poesie_pdf: pid=%d cwd=%s", os.getpid(), os.getcwd())
-        except Exception:
-            pass
-        import shared.comment_utils as comment_utils  # local import
-        fb = comment_utils.safe_discover_and_attach_comments(
-            blocks,
-            preprocess,
-            comment_regexes=None,
-            strip_comment_lines=True,
-            pipeline_name='poesie_pdf'
-        )
-        if fb is None:
-            logger.info("poesie_pdf: discover_and_attach_comments returned None -> fallback to original blocks")
+        final_blocks = preprocess.discover_and_attach_comments(
+            blocks, comment_regexes=None, strip_comment_lines=True)
+        if final_blocks is None:
+            logger.debug("poesie_pdf: discover_and_attach_comments returned None -> using original blocks")
             final_blocks = blocks
-        else:
-            final_blocks = fb
-            logger.info("poesie_pdf: discover_and_attach_comments completed, blocks=%d", len(final_blocks))
-    except Exception as e:
+    except Exception:
         tb = traceback.format_exc()
-        logger.error("poesie_pdf: discover/attach comments failed (continuing without comments): %s", e)
-        logger.debug("poesie_pdf: discover/attach comments traceback (first 800 chars):\n%s", tb[:800])
+        logger.error("poesie_pdf: discover/attach comments failed (continuing without comments): %s", tb[:800])
         final_blocks = blocks
 
     try:
         c0 = final_blocks[0].get('comments') if isinstance(final_blocks, list) and final_blocks else None
         mask0 = final_blocks[0].get('comment_token_mask') if isinstance(final_blocks, list) and final_blocks else None
         logger.info("DEBUG poesie_pdf: final_blocks[0].comments=%s mask_sample=%s",
-                    (c0 if c0 else []), (mask0[:40] if mask0 is not None else None))
+                    (c0 if c0 else []),
+                    (mask0[:40] if mask0 is not None else None))
     except Exception:
         logger.debug("poesie_pdf: failed to print final_blocks[0] debug info", exc_info=True)
     

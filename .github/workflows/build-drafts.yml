@@ -128,12 +128,26 @@ jobs:
               # Bestimme ob es Prosa oder Poesie ist und erstelle neue PDFs
               if [[ "$KIND" == "prosa" ]]; then
                 echo "Erstelle Prosa PDFs für: $FILE"
-                echo "LAUNCHING PYTHON: python build_prosa_drafts_adapter.py \"$(pwd)/$FILE\""
-                python build_prosa_drafts_adapter.py "$(pwd)/$FILE"
+                CMD="python build_prosa_drafts_adapter.py \"$(pwd)/$FILE\""
+                echo "+ RUN: ${CMD}"
+                # timeout 600s bedeutet: 10 Minuten harte Grenze (passt Du an mit POESIE/PROSA_PDF_TIMEOUT env)
+                timeout --preserve-status 600s env PYTHONUNBUFFERED=1 bash -c "${CMD}"
+                RC=$?
+                if [ $RC -ne 0 ]; then
+                  echo "ERROR: python step failed with exit $RC for file $FILE"
+                  exit $RC
+                fi
               elif [[ "$KIND" == "poesie" ]]; then
                 echo "Erstelle Poesie PDFs für: $FILE"
-                echo "LAUNCHING PYTHON: python build_poesie_drafts_adapter.py \"$(pwd)/$FILE\""
-                python build_poesie_drafts_adapter.py "$(pwd)/$FILE"
+                CMD="python build_poesie_drafts_adapter.py \"$(pwd)/$FILE\""
+                echo "+ RUN: ${CMD}"
+                # timeout 600s bedeutet: 10 Minuten harte Grenze (passt Du an mit POESIE/PROSA_PDF_TIMEOUT env)
+                timeout --preserve-status 600s env PYTHONUNBUFFERED=1 bash -c "${CMD}"
+                RC=$?
+                if [ $RC -ne 0 ]; then
+                  echo "ERROR: python step failed with exit $RC for file $FILE"
+                  exit $RC
+                fi
               else
                 echo "Unbekannter Draft-Typ ($KIND) für: $FILE"
               fi
