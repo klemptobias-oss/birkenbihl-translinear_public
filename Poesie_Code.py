@@ -1546,10 +1546,10 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         de = []
         en = []
     else:
-    cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
-    gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
-    de = de_tokens[:] + [''] * (cols - len(de_tokens))
-    en = en_tokens[:] + [''] * (cols - len(en_tokens))
+        cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
+        gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
+        de = de_tokens[:] + [''] * (cols - len(de_tokens))
+        en = en_tokens[:] + [''] * (cols - len(en_tokens))
 
     # Effektive cfg abhängig von meter_on (Versmaß an/aus) und tag_mode
     eff_cfg = dict(CFG)
