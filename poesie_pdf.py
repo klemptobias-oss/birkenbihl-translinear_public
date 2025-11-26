@@ -248,25 +248,28 @@ def _process_one_input(infile: str,
     
     blocks = Poesie.process_input_file(infile)
     
-    # Robust discover_and_attach_comments call: new signature may accept
-    # comment_regexes / strip_comment_lines, older versions may not.
+    # Call discover_and_attach_comments in a backward/forward-compatible way.
+    # Newer preprocess implementations accept keyword args (comment_regexes, strip_comment_lines).
+    # Older ones accept only (blocks). Try the newer signature first, fall back to the older.
     final_blocks = None
     try:
-        func = preprocess.discover_and_attach_comments
-        sig = inspect.signature(func)
-        if 'comment_regexes' in sig.parameters or 'strip_comment_lines' in sig.parameters:
-            final_blocks = func(blocks, comment_regexes=None,
-                                strip_comment_lines=True)
-        else:
-            # fallback to older signature
-            final_blocks = func(blocks)
-        if final_blocks is None:
-            logger.debug("poesie_pdf: discover_and_attach_comments returned None -> using original blocks")
+        final_blocks = preprocess.discover_and_attach_comments(
+            blocks, comment_regexes=None, strip_comment_lines=True
+        )
+    except TypeError:
+        # Older signature: try the simple call
+        try:
+            final_blocks = preprocess.discover_and_attach_comments(blocks)
+        except Exception:
+            logger.exception("poesie_pdf: discover/attach comments failed (continuing without comments):")
             final_blocks = blocks
     except Exception:
-        import traceback as _tb
-        logger.exception("discover/attach comments failed (continuing without comments): %s",
-                         _tb.format_exc()[:1000])
+        logger.exception("poesie_pdf: discover/attach comments failed (continuing without comments):")
+        final_blocks = blocks
+
+    # Defensive: ensure final_blocks is always usable
+    if final_blocks is None:
+        logger.debug("poesie_pdf: discover_and_attach_comments returned None -> using original blocks")
         final_blocks = blocks
 
     try:

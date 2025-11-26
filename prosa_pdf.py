@@ -287,23 +287,24 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         pass
     start_time = time.time()
     
-    # Robustly handle multiple preprocess versions:
-    final_blocks = None
+    # Call discover_and_attach_comments in a backward/forward-compatible way.
     try:
-        func = preprocess.discover_and_attach_comments
-        sig = inspect.signature(func)
-        if 'comment_regexes' in sig.parameters or 'strip_comment_lines' in sig.parameters:
-            final_blocks = func(blocks, comment_regexes=None,
-                                strip_comment_lines=True)
-        else:
-            final_blocks = func(blocks)
-        if final_blocks is None:
-            logger.debug("prosa_pdf: discover_and_attach_comments returned None -> using original blocks")
+        final_blocks = preprocess.discover_and_attach_comments(
+            blocks, comment_regexes=None, strip_comment_lines=True
+        )
+    except TypeError:
+        # Older signature: try simple call
+        try:
+            final_blocks = preprocess.discover_and_attach_comments(blocks)
+        except Exception:
+            logger.exception("prosa_pdf: discover/attach comments failed (continuing without comments):")
             final_blocks = blocks
     except Exception:
-        import traceback as _tb
-        logger.exception("discover/attach comments failed (continuing without comments): %s",
-                         _tb.format_exc()[:1000])
+        logger.exception("prosa_pdf: discover/attach comments failed (continuing without comments):")
+        final_blocks = blocks
+
+    if final_blocks is None:
+        logger.debug("prosa_pdf: discover_and_attach_comments returned None -> using original blocks")
         final_blocks = blocks
 
     # small debug summary
