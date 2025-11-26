@@ -1842,7 +1842,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             raise
 
     # NEU: Hilfsfunktion zum Rendern von Kommentaren aus block['comments']
-    def render_block_comments(block, elements_list):
+    def render_block_comments(block, elements_list, doc=None):
         """Rendert Kommentare aus block['comments'] als Paragraphen (dedupliziert + limitiert)"""
         cms = block.get('comments') or []
         # DEBUG: Prüfe auch, ob der Block selbst ein Kommentar ist
@@ -1862,9 +1862,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             disable_comment_bg = block.get('disable_comment_bg', False)
         
         # Deduplicate comments per block and limit count & length to keep PDF generation fast.
-        # REDUZIERT: Weniger Kommentare pro Block um PDF-Generierung zu beschleunigen
-        MAX_COMMENTS_PER_BLOCK = 1  # Reduziert auf 1 (minimal)
-        MAX_COMMENT_CHARS = 100  # Reduziert auf 100 (sehr kurz)
+        # Erhöht: Mehr Kommentare pro Block sichtbar machen
+        MAX_COMMENTS_PER_BLOCK = 5  # Erhöht auf 5 für bessere Sichtbarkeit
+        MAX_COMMENT_CHARS = 400  # Erhöht auf 400 für vollständige Kommentare
         added_keys = set()
         added_count = 0
         truncated = False
@@ -1877,12 +1877,16 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # Unterstütze verschiedene Formate: dict mit 'text', 'comment', 'body' oder direkt String
             if isinstance(cm, dict):
                 txt = cm.get('text') or cm.get('comment') or cm.get('body') or ""
-                key = (cm.get('line_num'), len(txt))
+                key = (cm.get('start'), cm.get('end'), len(txt))
             else:
                 txt = str(cm) if cm else ""
                 key = ("txt", hash(txt))
             
+            # DEBUG: Zeige gefundenen Kommentartext
+            print(f"Prosa_Code: render_block_comments - processing comment: txt='{txt[:50]}...' (type={type(cm).__name__})", flush=True)
+            
             if not txt or not txt.strip():
+                print(f"Prosa_Code: render_block_comments - SKIPPING empty comment", flush=True)
                 continue
             
             # Deduplizierung: überspringe identische Kommentare
@@ -1904,17 +1908,21 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             if len(text_clean) > MAX_COMMENT_CHARS:
                 text_clean = text_clean[:MAX_COMMENT_CHARS].rstrip() + "…"
             
-            # Kommentar-Style: klein, grau, kursiv — be defensive
+            # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT — be defensive
             try:
+                # Grau hinterlegter Kommentar-Box mit kleiner Schrift
                 comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                    fontName='DejaVu', fontSize=8,
-                    leading=9,
-                    alignment=TA_LEFT, leftIndent=5*mm,
-                    spaceBefore=2, spaceAfter=2,
-                    textColor=colors.Color(0.36, 0.36, 0.36), italic=True)
+                    fontName='DejaVu', fontSize=7,  # Noch kleiner
+                    leading=9,  # Dichte Zeilenabstände
+                    alignment=TA_LEFT, 
+                    leftIndent=3*mm, rightIndent=3*mm,
+                    spaceBefore=3, spaceAfter=3,
+                    textColor=colors.Color(0.3, 0.3, 0.3), italic=True,
+                    backColor=colors.Color(0.95, 0.95, 0.95))  # GRAU HINTERLEGT
                 elements_list.append(Spacer(1, 2*mm))
                 elements_list.append(Paragraph(html.escape(text_clean), comment_style_simple))
                 elements_list.append(Spacer(1, 2*mm))
+                print(f"Prosa_Code: render_block_comments - ADDED comment paragraph: '{text_clean[:50]}...'", flush=True)
                 added_count += 1
             except Exception as e:
                 import logging
@@ -2575,7 +2583,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 elements.append(KeepTogether(pair_tables))
             
             # NEU: Kommentare aus block['comments'] rendern (nach dem pair-Block)
-            render_block_comments(b, elements)
+            render_block_comments(b, elements, doc)
             
             idx += 1; continue
         
@@ -2604,7 +2612,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             print(f"Prosa_Code: Processing flow block {idx+1}/{len(flow_blocks)} (gr_tokens={len(b.get('gr_tokens', []))}, de_tokens={len(b.get('de_tokens', []))})", flush=True)
             
             # NEU: Kommentare aus block['comments'] rendern (VOR den Tabellen)
-            render_block_comments(b, elements)
+            render_block_comments(b, elements, doc)
             
             # WICHTIG: Nur EINZELNE Zeilen zusammenhalten (2 oder 3 Tabellen für GR/DE oder GR/DE/EN)
             # NICHT den gesamten Flow-Block, um große weiße Flächen zu vermeiden
@@ -2642,15 +2650,14 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 traceback.print_exc()
                 raise
             
-            # WICHTIG: Block sollte bereits in processed_flow_indices sein (wurde oben hinzugefügt)
-            # Aber sicherheitshalber nochmal prüfen
-            if old_idx not in processed_flow_indices:
-                processed_flow_indices.add(old_idx)
-                print(f"Prosa_Code: WARNING - Flow block {old_idx+1} was not in processed_flow_indices, adding now", flush=True)
-            
-            old_idx = idx
+            # Block wurde bereits oben in processed_flow_indices hinzugefügt
+            # idx wird direkt erhöht
             idx += 1
-            print(f"Prosa_Code: Flow block {old_idx+1} completed, incremented idx from {old_idx} to {idx} (next block type: {flow_blocks[idx].get('type', 'unknown') if idx < len(flow_blocks) else 'END'})", flush=True)
+            if idx < len(flow_blocks):
+                next_type = flow_blocks[idx].get('type', 'unknown')
+            else:
+                next_type = 'END'
+            print(f"Prosa_Code: Flow block completed, incremented idx to {idx} (next block type: {next_type})", flush=True)
             continue
 
         idx += 1

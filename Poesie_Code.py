@@ -2342,8 +2342,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 except Exception:
                     pass
                 
-                MAX_COMMENTS_PER_BLOCK = 1  # Reduziert auf 1 (minimal)
-                MAX_COMMENT_CHARS = 100  # Reduziert auf 100 (sehr kurz)
+                MAX_COMMENTS_PER_BLOCK = 5  # Erhöht auf 5 für bessere Sichtbarkeit
+                MAX_COMMENT_CHARS = 400  # Erhöht auf 400 für vollständige Kommentare
                 added_keys = set()
                 added_count = 0
                 truncated = False
@@ -2383,15 +2383,33 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     if len(text_clean) > MAX_COMMENT_CHARS:
                         text_clean = text_clean[:MAX_COMMENT_CHARS].rstrip() + "…"
                     
-                    # Kommentar-Style: klein, grau, kursiv
+                    # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT
                     comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                        fontName='DejaVu', fontSize=8,
-                        leading=9,
-                        alignment=TA_LEFT, leftIndent=5*MM,
+                        fontName='DejaVu', fontSize=7,  # Kleinere Schrift
+                        leading=8.5,  # Dichte Zeilenabstände
+                        alignment=TA_LEFT, 
+                        leftIndent=4*MM, rightIndent=4*MM,
                         spaceBefore=2, spaceAfter=2,
-                        textColor=colors.Color(0.36, 0.36, 0.36), italic=True)
+                        textColor=colors.Color(0.25, 0.25, 0.25),  # Dunkleres Grau
+                        backColor=colors.Color(0.92, 0.92, 0.92))  # GRAU HINTERLEGT
+                    # Grau hinterlegte Box: Table mit Hintergrundfarbe
+                    from reportlab.platypus import Table, TableStyle
+                    try:
+                        from Poesie_Code import doc  # Versuche doc zu finden
+                        available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*MM
+                    except:
+                        available_width = 170*MM  # Fallback
+                    comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]], 
+                                         colWidths=[available_width])
+                    comment_table.setStyle(TableStyle([
+                        ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
+                        ('LEFTPADDING', (0, 0), (-1, -1), 4*MM),
+                        ('RIGHTPADDING', (0, 0), (-1, -1), 4*MM),
+                        ('TOPPADDING', (0, 0), (-1, -1), 3*MM),
+                        ('BOTTOMPADDING', (0, 0), (-1, -1), 3*MM),
+                    ]))
                     elements.append(Spacer(1, 2*MM))
-                    elements.append(Paragraph(html.escape(text_clean), comment_style_simple))
+                    elements.append(comment_table)
                     elements.append(Spacer(1, 2*MM))
                     added_count += 1
                 
