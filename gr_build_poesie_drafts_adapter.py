@@ -227,10 +227,10 @@ def run_one(input_path: Path) -> None:
             final_bare = bare[5:] if bare.startswith("temp_") else bare
 
         final_name = f"{final_bare}.pdf"
-            src = ROOT / name
-            dst = target_dir / final_name
-            src.replace(dst)
-            print(f"✓ PDF → {dst}")
+        src = ROOT / name
+        dst = target_dir / final_name
+        src.replace(dst)
+        print(f"✓ PDF → {dst}")
 
 def main():
     # Dieser Adapter wird typischerweise mit genau einem Dateipfad aufgerufen.
