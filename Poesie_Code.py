@@ -1758,8 +1758,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         if has_en:
             row_en = [num_para_en, num_gap_en, sp_para_en, sp_gap_en, indent_en] + en_cells
             if has_de:
-            tbl = Table([row_gr, row_de, row_en], colWidths=col_w, hAlign='LEFT')
-        else:
+                tbl = Table([row_gr, row_de, row_en], colWidths=col_w, hAlign='LEFT')
+            else:
                 # Keine deutschen Übersetzungen, nur griechisch und englisch
                 tbl = Table([row_gr, row_en], colWidths=col_w, hAlign='LEFT')
         elif has_de:
