@@ -414,8 +414,8 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         # WICHTIG: Diese Prüfung muss NACH dem try-except-Block stehen, damit sie auch bei Fehlern ausgeführt wird
         if tag_mode != "TAGS":  # NO_TAGS - wie in Poesie
             # Bei NO_TAGS-Varianten: Entferne ALLE Tags komplett
-            # WICHTIG: Verwende blocks_with_colors, nicht blocks_after_visibility (die könnte bei Fehlern final_blocks sein)
-            blocks_after_visibility = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
+            # WICHTIG: Verwende blocks_after_visibility (die bereits durch apply_tag_visibility verarbeitet wurde)
+            blocks_after_visibility = preprocess.remove_all_tags(blocks_after_visibility, final_tag_config)
             # NO_TAG variant: strip any remaining tags from tokens
             for b in blocks_after_visibility:
                 if b.get("type") not in ("pair", "flow"):

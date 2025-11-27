@@ -240,12 +240,17 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
     
     # If NO_TAGS - remove everything, but preserve color symbols
     if tag_mode == "NO_TAGS":
-        # Preserve color symbols before removing tags
+        # WICHTIG: Hole Farbsymbol aus token_meta (hat Priorität)
         color_sym = None
-        for sym in ['#', '+', '-', '§', '$']:
-            if sym in tok:
-                color_sym = sym
-                break
+        if block is not None and tok_idx is not None:
+            token_meta = block.get('token_meta', [])
+            meta = token_meta[tok_idx] if tok_idx < len(token_meta) else {}
+            color_sym = meta.get('color_symbol')
+        if not color_sym:
+            for sym in ['#', '+', '-', '§', '$']:
+                if sym in tok:
+                    color_sym = sym
+                    break
         cleaned = remove_all_tags_from_token(tok)
         # Re-add color symbol if it was removed
         if color_sym and color_sym not in cleaned:
@@ -261,7 +266,7 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
         meta = token_meta[tok_idx] if tok_idx < len(token_meta) else {}
         removed_tags = set(meta.get('removed_tags', []))
         if removed_tags:
-            # Preserve color symbols before removing tags
+            # WICHTIG: Hole Farbsymbol aus token_meta (hat Priorität)
             color_sym = meta.get('color_symbol')
             if not color_sym:
                 for sym in ['#', '+', '-', '§', '$']:
