@@ -2254,6 +2254,17 @@ def _strip_colors_from_block(block: Dict[str, Any]) -> Dict[str, Any]:
         # NEU: Auch en_tokens entfärben, falls vorhanden
         if 'en_tokens' in block:
             result['en_tokens'] = proc_tokens(block.get('en_tokens', []))
+        
+        # WICHTIG: Entferne auch Farbsymbole aus token_meta, damit sie nicht wieder hinzugefügt werden
+        if 'token_meta' in result:
+            token_meta = result['token_meta']
+            for meta in token_meta:
+                if isinstance(meta, dict):
+                    # Entferne color_symbol und computed_color aus token_meta
+                    meta.pop('color_symbol', None)
+                    meta.pop('computed_color', None)
+                    meta.pop('color', None)
+        
         return result
     return block
 

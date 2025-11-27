@@ -241,7 +241,7 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
     Entfernt Tags aus einem Token basierend auf tag_mode und token_meta.
     - Wenn tag_mode == "NO_TAGS": entferne alle Tags
     - Sonst: entferne nur Tags, die in token_meta[i]['removed_tags'] markiert sind
-    WICHTIG: Farbsymbole (#, +, -, §, $) bleiben IMMER erhalten!
+    WICHTIG: Farbsymbole (#, +, -, §, $) bleiben IMMER erhalten, AUSSER wenn sie bereits entfernt wurden (BLACK_WHITE)!
     """
     if not tok:
         return tok
@@ -259,6 +259,7 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
         if sym in tok:
             color_symbols.append(sym)
     # Wenn kein Farbsymbol im Token, aber in token_meta vorhanden, verwende das
+    # WICHTIG: Dies stellt sicher, dass Farben auch nach Tag-Entfernung erhalten bleiben
     if not color_symbols and color_symbol_from_meta:
         color_symbols = [color_symbol_from_meta]
     
@@ -1674,8 +1675,12 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 return Paragraph('', token_gr_style if is_gr else token_de_style)
 
             if is_gr and meter_on:
-                had_lead = _has_leading_bar_local(tok)
-                endbars_match = re.search(r'\|+\s*$', RE_TAG_STRIP.sub('', tok))
+                # WICHTIG: Entferne Tags basierend auf tag_mode und token_meta, BEVOR ToplineTokenFlowable verwendet wird
+                # Dies stellt sicher, dass Farbsymbole erhalten bleiben, auch wenn Tags entfernt werden
+                tok_cleaned = _strip_tags_from_token(tok, block=block, tok_idx=global_idx, tag_mode=tag_mode)
+                
+                had_lead = _has_leading_bar_local(tok_cleaned)
+                endbars_match = re.search(r'\|+\s*$', RE_TAG_STRIP.sub('', tok_cleaned))
                 endbars = len(endbars_match.group(0).strip()) if endbars_match else 0
                 br_to_next = False
                 next_has_lead = False
@@ -1684,12 +1689,14 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 next_tok_starts_bar = False
                 if idx_in_slice is not None and idx_in_slice < (len(slice_gr) - 1):
                     nxt = slice_gr[idx_in_slice + 1]
-                    br_to_next = same_foot(tok, nxt)
-                    next_has_lead = _has_leading_bar_local(nxt)
+                    # WICHTIG: Auch für next_token die Tags entfernen
+                    nxt_cleaned = _strip_tags_from_token(nxt, block=block, tok_idx=global_idx+1 if global_idx is not None else None, tag_mode=tag_mode)
+                    br_to_next = same_foot(tok_cleaned, nxt_cleaned)
+                    next_has_lead = _has_leading_bar_local(nxt_cleaned)
                     next_tok_starts_bar = next_has_lead
 
                 return ToplineTokenFlowable(
-                    tok, token_gr_style, eff_cfg,
+                    tok_cleaned, token_gr_style, eff_cfg,
                     gr_bold=(gr_bold if is_gr else False),
                     had_leading_bar=had_lead,
                     end_bar_count=endbars,
@@ -2065,7 +2072,10 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             content = b.get('content', '')
             original_line = b.get('original_line', '')
             
-            # Kommentar wird verarbeitet (DEBUG entfernt für weniger Log-Noise)
+            # WICHTIG: Debug-Ausgabe um zu sehen, ob Kommentare ankommen
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.debug(f"DEBUG Poesie_Code: Kommentar-Block gefunden: line_num={line_num}, content={content[:50] if content else 'None'}, original_line={original_line[:50] if original_line else 'None'}")
             
             # Fallback: Wenn content leer ist, versuche original_line zu verwenden
             if not content and original_line:
@@ -2091,6 +2101,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             # ROBUST: Prüfe, ob überhaupt Daten vorhanden sind (line_num, content oder original_line)
             # WICHTIG: Auch wenn line_num leer ist, aber content oder original_line vorhanden ist, rendern wir den Kommentar
             if not line_num and not content and not original_line:
+                logger.debug(f"DEBUG Poesie_Code: Kommentar übersprungen - keine Daten vorhanden")
                 i += 1
                 continue
             
