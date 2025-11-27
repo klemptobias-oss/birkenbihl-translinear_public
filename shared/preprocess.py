@@ -845,7 +845,10 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
         
     new_blocks = []
     for block in blocks:
-        if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
+        # WICHTIG: Kommentar-Blöcke und andere nicht-pair/flow Blöcke unverändert weitergeben
+        if not isinstance(block, dict) or block.get('type') not in ('pair', 'flow'):
+            new_blocks.append(block)
+            continue
             new_block = block.copy()
             gr_tokens = new_block.get('gr_tokens', [])
             de_tokens = new_block.get('de_tokens', [])
@@ -1025,8 +1028,6 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
             if new_en_tokens:  # NEU: Englische Tokens nur setzen, wenn vorhanden
                 new_block['en_tokens'] = new_en_tokens
             new_blocks.append(new_block)
-        else:
-            new_blocks.append(block)
     
     return new_blocks
 
