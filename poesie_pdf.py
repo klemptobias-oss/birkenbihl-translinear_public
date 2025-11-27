@@ -269,39 +269,16 @@ def _process_one_input(infile: str,
     
     blocks = Poesie.process_input_file(infile)
     
-    # Robust call to discover_and_attach_comments: try new signature, fall back to old (blocks)
-    final_blocks = None
-    comment_regexes = None
-    strip_comment_lines = True
-    try:
-        final_blocks = preprocess.discover_and_attach_comments(
-            blocks,
-            comment_regexes=comment_regexes,
-            strip_comment_lines=strip_comment_lines,
-        )
-    except TypeError:
-        # older preprocess implementation might accept only (blocks,)
-        try:
-            final_blocks = preprocess.discover_and_attach_comments(blocks)
-        except Exception as e:
-            logger.exception("poesie_pdf: discover/attach comments failed (continuing without comments): %s", e)
-            final_blocks = blocks
-    except Exception as e:
-        logger.exception("poesie_pdf: discover/attach comments failed (continuing without comments): %s", e)
-        final_blocks = blocks
-
-    if final_blocks is None:
-        logger.debug("poesie_pdf: discover_and_attach_comments returned None -> using original blocks")
-        final_blocks = blocks
-
-    try:
-        c0 = final_blocks[0].get('comments') if isinstance(final_blocks, list) and final_blocks else None
-        mask0 = final_blocks[0].get('comment_token_mask') if isinstance(final_blocks, list) and final_blocks else None
-        logger.info("DEBUG poesie_pdf: final_blocks[0].comments=%s mask_sample=%s",
-                    (c0 if c0 else []),
-                    (mask0[:40] if mask0 is not None else None))
-    except Exception:
-        logger.debug("poesie_pdf: failed to print final_blocks[0] debug info", exc_info=True)
+    # WICHTIG: Für Poesie werden Kommentare bereits als separate type='comment' Blöcke von process_input_file erkannt
+    # Wir müssen discover_and_attach_comments NICHT aufrufen, da dies die Kommentar-Blöcke nicht verarbeitet
+    # und sie möglicherweise entfernt oder umformatiert
+    final_blocks = blocks
+    
+    # Debug: Zähle Kommentar-Blöcke
+    comment_blocks = [b for b in blocks if isinstance(b, dict) and b.get('type') == 'comment']
+    logger.info("DEBUG poesie_pdf: %d Kommentar-Blöcke gefunden von %d total Blöcken", len(comment_blocks), len(blocks))
+    if comment_blocks:
+        logger.debug("DEBUG poesie_pdf: Erster Kommentar-Block: %s", comment_blocks[0])
     
     print(f"→ Anzahl Blöcke: {len(blocks)}")
 

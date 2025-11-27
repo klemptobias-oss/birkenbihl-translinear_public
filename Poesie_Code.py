@@ -1211,14 +1211,19 @@ def process_input_file(fname:str):
         if line_num is not None and is_comment_line(line_num):
             # Kommentar-Zeile: Extrahiere Zeilenbereich und speichere als Kommentar-Block
             start_line, end_line = extract_line_range(line_num)
-            blocks.append({
+            comment_block = {
                 'type': 'comment',
                 'line_num': line_num,
                 'content': line_content,
                 'start_line': start_line,
                 'end_line': end_line,
                 'original_line': line
-            })
+            }
+            # WICHTIG: Debug-Ausgabe um zu sehen, ob Kommentare erkannt werden
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.debug(f"DEBUG Poesie_Code.process_input_file: Kommentar erkannt: line_num={line_num}, content={line_content[:50] if line_content else 'None'}, original_line={line[:50] if line else 'None'}")
+            blocks.append(comment_block)
             i += 1
             continue
         
