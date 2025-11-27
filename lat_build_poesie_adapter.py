@@ -67,6 +67,12 @@ def run_one(input_path: Path, language: str) -> None:
     # Katalog aktualisieren <-- Entfernt
     # update_catalog(language, "Poesie", author, work, input_path)
 
+def apply_bold_if_needed(text, bold_text):
+    """Apply bold formatting if needed"""
+    if bold_text:
+        return f"<b>{text}</b>"
+    return text
+
 def main():
     if not RUNNER.exists():
         print(f"✗ {RUNNER.name} nicht gefunden – Abbruch."); sys.exit(1)

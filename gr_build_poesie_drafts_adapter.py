@@ -235,6 +235,18 @@ def run_one(input_path: Path) -> None:
         src.replace(dst)
         print(f"✓ PDF → {dst}")
 
+def apply_bold_if_needed(text, bold_text):
+    """Apply bold formatting if needed, preserving existing styles"""
+    if bold_text:
+        # Check if text already has a style attribute (e.g., color)
+        if '<span style="' in text:
+            # Insert font-weight: bold into existing style
+            text = text.replace('<span style="', '<span style="font-weight: bold; ')
+        else:
+            # No existing style, just add bold
+            return f"<b>{text}</b>"
+    return text
+
 def main():
     # Dieser Adapter wird typischerweise mit genau einem Dateipfad aufgerufen.
     if len(sys.argv) < 2:
