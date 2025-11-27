@@ -20,13 +20,13 @@ import re, os, html, unicodedata, json, argparse
 # Import für Preprocessing
 try:
     from shared import preprocess
-    from shared.preprocess import remove_tags_from_token, remove_all_tags_from_token
+    from shared.preprocess import remove_tags_from_token, remove_all_tags_from_token, RE_WORD_START
 except ImportError:
     # Fallback für direkten Aufruf
     import sys
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
     from shared import preprocess
-    from shared.preprocess import remove_tags_from_token, remove_all_tags_from_token
+    from shared.preprocess import remove_tags_from_token, remove_all_tags_from_token, RE_WORD_START
 
 # ========= Optik / Einheiten =========
 MM = RL_MM
@@ -1642,6 +1642,22 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             if not tok:
                 return Paragraph('', token_gr_style if is_gr else token_de_style)
 
+            # WICHTIG: Hole Farbe aus token_meta, falls Farbsymbol im Token fehlt
+            # Dies stellt sicher, dass Farben auch nach Tag-Entfernung erhalten bleiben
+            token_meta = block.get('token_meta', []) if block else []
+            meta = token_meta[global_idx] if global_idx is not None and global_idx < len(token_meta) else {}
+            color_symbol_from_meta = meta.get('color_symbol')
+            computed_color_from_meta = meta.get('computed_color') or meta.get('color')
+            
+            # Wenn Farbsymbol in token_meta vorhanden ist, aber nicht im Token, füge es hinzu
+            if color_symbol_from_meta and color_symbol_from_meta not in tok:
+                # Füge Farbsymbol am Anfang des Wortes hinzu (nach führenden Markern)
+                match = RE_WORD_START.search(tok)
+                if match:
+                    tok = tok[:match.start(2)] + color_symbol_from_meta + tok[match.start(2):]
+                else:
+                    tok = color_symbol_from_meta + tok
+
             if is_gr and meter_on:
                 had_lead = _has_leading_bar_local(tok)
                 endbars_match = re.search(r'\|+\s*$', RE_TAG_STRIP.sub('', tok))
@@ -2087,16 +2103,40 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="{color_hex}"><i> {xml_escape(fallback_content)}</i></font>')
             formatted_text = ''.join(formatted_parts)
             
-            # Style für Kommentar (kompakt, kleiner, dichter)
-            comment_style = ParagraphStyle('Comment', parent=base['Normal'],
-                fontName='DejaVu', fontSize=comment_size, 
-                leading=comment_size * 1.2,  # Dichterer Zeilenabstand (1.2 statt normal)
-                alignment=TA_LEFT, leftIndent=5*MM,  # Leicht eingerückt
-                spaceBefore=0, spaceAfter=0,  # Keine zusätzlichen Abstände
-                backColor=colors.Color(comment_color[0], comment_color[1], comment_color[2], alpha=0.1))  # Sehr leichte Hinterlegung
+            # WICHTIG: Kommentare als graue Box rendern (wie in Prosa)
+            # Verwende Table mit Hintergrundfarbe für bessere Sichtbarkeit
+            from reportlab.platypus import Table, TableStyle
+            try:
+                from Poesie_Code import doc  # Versuche doc zu finden
+                available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*MM
+            except:
+                available_width = 170*MM  # Fallback
             
-            elements.append(Paragraph(formatted_text, comment_style))
-            elements.append(Spacer(1, INTER_PAIR_GAP_MM * 0.5 * MM))  # Kleinerer Abstand
+            # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT
+            comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
+                fontName='DejaVu', fontSize=7,  # Kleinere Schrift
+                leading=8.5,  # Dichte Zeilenabstände
+                alignment=TA_LEFT, 
+                leftIndent=4*MM, rightIndent=4*MM,
+                spaceBefore=2, spaceAfter=2,
+                textColor=colors.Color(0.25, 0.25, 0.25),  # Dunkleres Grau
+                backColor=colors.Color(0.92, 0.92, 0.92))  # GRAU HINTERLEGT
+            
+            # Erstelle Table mit Hintergrundfarbe für bessere Sichtbarkeit
+            # formatted_text enthält bereits HTML, daher verwenden wir es direkt
+            comment_table = Table([[Paragraph(formatted_text, comment_style_simple)]], 
+                                 colWidths=[available_width])
+            comment_table.setStyle(TableStyle([
+                ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
+                ('LEFTPADDING', (0, 0), (-1, -1), 4*MM),
+                ('RIGHTPADDING', (0, 0), (-1, -1), 4*MM),
+                ('TOPPADDING', (0, 0), (-1, -1), 3*MM),
+                ('BOTTOMPADDING', (0, 0), (-1, -1), 3*MM),
+            ]))
+            
+            elements.append(Spacer(1, 2*MM))
+            elements.append(comment_table)
+            elements.append(Spacer(1, 2*MM))
             i += 1; continue
 
         # Gleichheitszeichen-Überschriften (wie in Prosa)
