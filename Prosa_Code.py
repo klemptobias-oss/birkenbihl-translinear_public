@@ -2487,6 +2487,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         tag_mode=tag_mode  # NEU: Tag-Modus übergeben
                     )
                     q_tables.extend(line_tables)
+            # WICHTIG: TableStyle explizit importieren (verhindert Scope-Problem)
+            from reportlab.platypus import TableStyle
             for k, tquote in enumerate(q_tables):
                 if k > 0: tquote.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
 
