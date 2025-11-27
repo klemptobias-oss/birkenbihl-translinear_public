@@ -270,7 +270,7 @@ def extract_inline_comments_from_blocks(blocks: List[Dict[str,Any]]) -> List[Dic
                 text = m.group(3).strip()
                 comments.append({'start_pair': s, 'end_pair': e, 'text': text, 'origin_block_index': i})
                 # Entferne den Kommentar-Token
-                block['gr_tokens'] = gr_tokens[1:] if len(gr_tokens) > 1 else []
+                block['gr_tokens'] = gr_tokens[1:] if len(gr_tokens) > 1 : []
                 continue
         
         # 3. Prüfe ob Block selbst ein comment-Block ist
@@ -1765,525 +1765,88 @@ def remove_all_color_symbols(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any
             processed_blocks.append(b)
     return processed_blocks
 
-
-# ======= Hilfen: PoS-Ermittlung für Farbregel =======
-def _has_any_pos(token: str, pos_whitelist: set[str]) -> bool:
+def _strip_colors_from_block(block: dict, tag_config: dict = None) -> dict:
     """
-    Prüft, ob das Token mind. einen (TAG) aus der pos_whitelist trägt.
-    Die Prüfung erfolgt auf SUP+SUB-Tags (da PoS bei dir als SUP-Tags geführt werden).
-    """
-    tags = _extract_tags(token)
-    for t in tags:
-        parts = [p for p in t.split('/') if p]
-        for p in parts:
-            if p in pos_whitelist:
-                return True
-    return False
-
-
-# ======= Veraltete Öffentliche API (wird schrittweise entfernt) =======
-def apply(blocks: List[Dict[str, Any]],
-          *,
-          color_mode: ColorMode,
-          tag_mode: TagMode,
-          versmass_mode: VersmassMode = "NORMAL",
-          # NEU (optional):
-          tag_config: Optional[Dict[str, Any]] = None,
-          disable_comment_bg: bool = False) -> List[Dict[str, Any]]:
-    """
-    Vorverarbeitung der Blockliste. Gibt eine NEUE Liste zurück.
-    - tag_config: Das neue, detaillierte Konfigurationsobjekt vom Frontend.
-    - disable_comment_bg: Wenn True, werden Hintergrundfarben in Kommentarbereichen unterdrückt.
-    """
+    Entfernt alle Farbsymbole (#, +, -, §, $) aus einem Block.
+    Wird für BLACK_WHITE PDFs verwendet.
     
-    # 0. Erstelle Kommentar-Masken für alle pair-Blöcke (VOR dem Hinzufügen der Farben)
-    if disable_comment_bg:
-        for block in blocks:
-            if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
-                mask = create_comment_token_mask_for_block(block, blocks)
-                block['comment_token_mask'] = mask
-    
-    # 1. Farben anwenden (wenn color_mode="COLOR")
-    # Dieser Schritt fügt die Farbsymbole (#, +, §, $) basierend auf der tag_config hinzu.
-    # Die Original-Tags bleiben für den nächsten Schritt erhalten.
-    blocks_with_colors = blocks
-    if color_mode == "COLOR" and tag_config:
-        blocks_with_colors = _apply_colors_and_placements(blocks, tag_config, disable_comment_bg=disable_comment_bg)
-
-    # 2. Tags filtern/entfernen (je nach tag_mode)
-    # Dieser Schritt wird NACH dem Hinzufügen der Farben ausgeführt.
-    sup_keep, sub_keep = None, None
-    remove_all_tags_flag = (tag_mode == "NO_TAGS")
-    translation_rules: Dict[str, Dict[str, Any]] = {}
-
-    if tag_config:
-        for rule_id, conf in tag_config.items():
-            normalized_rule_id = _normalize_rule_id(rule_id)
-            _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
-
-    if tag_mode == "TAGS" and tag_config:
-        # WICHTIG: Starte mit ALLEN Tags, dann entferne die, die hide=true haben
-        sup_keep = SUP_TAGS.copy()
-        sub_keep = SUB_TAGS.copy()
-        
-        # Sortiere Regeln: Gruppen-Regeln zuerst, dann spezifische Regeln
-        group_rules = []
-        specific_rules = []
-        
-        for rule_id, conf in tag_config.items():
-            normalized_rule_id = _normalize_rule_id(rule_id)
-            if '_' in normalized_rule_id and normalized_rule_id.split('_', 1)[1]:
-                specific_rules.append((rule_id, conf, normalized_rule_id))
-            else:
-                group_rules.append((rule_id, conf, normalized_rule_id))
-        
-        # Verarbeite zuerst Gruppen-Regeln, dann spezifische Regeln
-        forbidden_tags_sup = set()
-        forbidden_tags_sub = set()
-        
-        for rule_id, conf, normalized_rule_id in group_rules + specific_rules:
-            tags_for_rule = _resolve_tags_for_rule(normalized_rule_id)
-            if not tags_for_rule:
-                continue
-            
-            is_specific_rule = (rule_id, conf, normalized_rule_id) in specific_rules
-            
-            # ROBUST: Prüfe hide (akzeptiere sowohl True als auch String "hide" für Kompatibilität)
-            hide_value = conf.get('hide')
-            should_hide = hide_value == True or hide_value == "hide" or hide_value == "true"
-            
-            if should_hide:
-                # Entferne Tags aus sup_keep/sub_keep
-                for tag in tags_for_rule:
-                    normalized_tag = _normalize_tag_name(tag)
-                    if tag in sup_keep:
-                        sup_keep.discard(tag)
-                        if not is_specific_rule:
-                            forbidden_tags_sup.add(tag)
-                            forbidden_tags_sup.add(normalized_tag)
-                    if normalized_tag in sup_keep and normalized_tag != tag:
-                        sup_keep.discard(normalized_tag)
-                        if not is_specific_rule:
-                            forbidden_tags_sup.add(normalized_tag)
-                    if tag in sub_keep:
-                        sub_keep.discard(tag)
-                        if not is_specific_rule:
-                            forbidden_tags_sub.add(tag)
-                            forbidden_tags_sub.add(normalized_tag)
-                    if normalized_tag in sub_keep and normalized_tag != tag:
-                        sub_keep.discard(normalized_tag)
-                        if not is_specific_rule:
-                            forbidden_tags_sub.add(normalized_tag)
-            else:
-                # Tags hinzufügen, wenn hide=false (nur wenn nicht verboten)
-                placement = conf.get('placement')
-                if placement == 'sup':
-                    for tag in tags_for_rule:
-                        normalized_tag = _normalize_tag_name(tag)
-                        if is_specific_rule or (tag not in forbidden_tags_sup and normalized_tag not in forbidden_tags_sup):
-                            if tag in SUP_TAGS:
-                                sup_keep.add(tag)
-                            if tag in SUB_TAGS:
-                                sub_keep.discard(tag)
-                elif placement == 'sub':
-                    for tag in tags_for_rule:
-                        normalized_tag = _normalize_tag_name(tag)
-                        if is_specific_rule or (tag not in forbidden_tags_sub and normalized_tag not in forbidden_tags_sub):
-                            if tag in SUB_TAGS:
-                                sub_keep.add(tag)
-                            if tag in SUP_TAGS:
-                                sup_keep.discard(tag)
-                else:
-                    for tag in tags_for_rule:
-                        normalized_tag = _normalize_tag_name(tag)
-                        if is_specific_rule or (tag not in forbidden_tags_sup and normalized_tag not in forbidden_tags_sup):
-                            if tag in SUP_TAGS:
-                                sup_keep.add(tag)
-                        if is_specific_rule or (tag not in forbidden_tags_sub and normalized_tag not in forbidden_tags_sub):
-                            if tag in SUB_TAGS:
-                                sub_keep.add(tag)
-    
-        print(f"DEBUG apply (in apply()): Finale sup_keep={sorted(list(sup_keep))}, sub_keep={sorted(list(sub_keep))}")
-    else:
-        # Wenn tag_mode == "NO_TAGS" oder keine tag_config, alle Tags entfernen
-        sup_keep = set()
-        sub_keep = set()
-
-    translation_rules_arg = translation_rules if translation_rules else None
-    out: List[Dict[str, Any]] = []
-    for b in blocks_with_colors:
-        if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
-            processed_block = _process_pair_block_for_tags(
-                b,
-                sup_keep=sup_keep,
-                sub_keep=sub_keep,
-                remove_all=remove_all_tags_flag,
-                translation_rules=translation_rules_arg,
-            )
-            # NEU: Entferne Stephanus-Paginierungen aus Übersetzungszeilen, wenn Übersetzungen ausgeblendet sind
-            processed_block = _hide_stephanus_in_translations(processed_block, translation_rules_arg)
-            out.append(processed_block)
-        else:
-            out.append(b)
-
-    # 3. Farbcodes für BLACK_WHITE-Modus entfernen
-    # Dieser Schritt ist der letzte, um sicherzustellen, dass die Farben
-    # auch dann korrekt hinzugefügt wurden, wenn die Tags danach entfernt werden.
-    if color_mode == "BLACK_WHITE":
-        final_blocks = []
-        for b in out:
-            if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
-                final_blocks.append(_strip_colors_from_block(b))
-            else:
-                final_blocks.append(b)
-        return final_blocks
-        
-    return out
-
-# --- helper to reduce tag-removal log noise ---
-def _log_tag_removals(block_index, removed_examples, removed_count):
+    WICHTIG: Diese Funktion wird von remove_all_color_symbols() aufgerufen!
     """
-    Compact logging for tag removal. If environment variable TAG_REMOVAL_DEBUG is set,
-    print every removal. Otherwise print a short summary per block with up to 5 examples.
-    """
-    try:
-        if removed_count == 0:
-            return
-        if os.getenv('TAG_REMOVAL_DEBUG'):
-            for orig, new in removed_examples:
-                logging.getLogger(__name__).debug("DEBUG _process_pair_block_for_tags: Tag entfernt aus Token: '%s' → '%s'", orig, new)
-        else:
-            # print summary and a few examples
-            ex = ["'%s'→'%s'" % (o, n) for (o, n) in removed_examples[:5]]
-            logging.getLogger(__name__).debug("DEBUG _process_pair_block_for_tags: Block %s: %d tag(s) removed. Examples: %s", block_index, removed_count, ex)
-    except Exception:
-        logging.getLogger(__name__).debug("DEBUG _process_pair_block_for_tags: logging failed", exc_info=True)
-
-# Hilfsfunktion zum Entfernen von Tags in einem Block
-def _process_pair_block_for_tags(block: Dict[str, Any], *,
-                                 sup_keep: Optional[set[str]],
-                                 sub_keep: Optional[set[str]],
-                                 remove_all: bool,
-                                 translation_rules: Optional[Dict[str, Dict[str, Any]]] = None) -> Dict[str, Any]:
-    source_tokens = block.get('gr_tokens', [])
-    block_index = block.get('index') or 'unknown'
-
-    if translation_rules:
-        hide_translation_flags = [
-            _token_should_hide_translation(token, translation_rules)
-            for token in source_tokens
+    if not isinstance(block, dict):
+        return block
+    
+    # Entferne Farbsymbole aus gr_tokens
+    if 'gr_tokens' in block and isinstance(block['gr_tokens'], list):
+        block['gr_tokens'] = [
+            remove_color_symbols_from_token(t) if t else t
+            for t in block['gr_tokens']
         ]
-    else:
-        hide_translation_flags = [False] * len(source_tokens)
     
-    # collect tag removals for compact logging
-    tag_removals = []
-    tag_removal_count = 0
+    # Entferne Farbsymbole aus de_tokens
+    if 'de_tokens' in block and isinstance(block['de_tokens'], list):
+        block['de_tokens'] = [
+            remove_color_symbols_from_token(t) if t else t
+            for t in block['de_tokens']
+        ]
     
-    def proc_tokens(seq: Iterable[str]) -> List[str]:
-        nonlocal tag_removals, tag_removal_count
-        result = []
-        for tok in (seq or []):
-            if tok:
-                original = tok
-                processed = _remove_selected_tags(tok, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=remove_all)
-                # collect removals and log compactly per-block (see helper above)
-                if original != processed and ('(' in original or ')' in original):
-                    try:
-                        tag_removals.append((original[:60], processed[:60]))
-                        tag_removal_count += 1
-                    except Exception:
-                        pass
-                result.append(processed)
-            else:
-                result.append(tok)
-        return result
+    # Entferne Farbsymbole aus en_tokens (für 3-sprachige Texte)
+    if 'en_tokens' in block and isinstance(block['en_tokens'], list):
+        block['en_tokens'] = [
+            remove_color_symbols_from_token(t) if t else t
+            for t in block['en_tokens']
+        ]
     
-    if 'gr_tokens' in block or 'de_tokens' in block:
-        new_gr_tokens = proc_tokens(block.get('gr_tokens', []))
-        new_de_tokens = proc_tokens(block.get('de_tokens', []))
-        
-        # At the end of processing this block, log compactly:
-        try:
-            _log_tag_removals(block_index, tag_removals, tag_removal_count)
-        except Exception:
-            logging.getLogger(__name__).debug("failed to log tag removal summary for block %s", block_index, exc_info=True)
-        
-        result = {
-            **block,
-            'gr_tokens': new_gr_tokens,
-            'de_tokens': new_de_tokens,
-        }
-        if 'en_tokens' in block:
-            result['en_tokens'] = proc_tokens(block.get('en_tokens', []))
-
-        if translation_rules:
-            for idx, should_hide in enumerate(hide_translation_flags):
-                if not should_hide:
-                    continue
-                if idx < len(result['de_tokens']):
-                    result['de_tokens'][idx] = ''
-                if 'en_tokens' in result and idx < len(result['en_tokens']):
-                    result['en_tokens'][idx] = ''
-        
-        # WICHTIG: Aktualisiere auch block['gr'] und block['de'], damit Renderer die bereinigten Strings verwenden
-        # Rekonstruiere die Linerpräsentation, die Renderer ggf. benutzen:
-        result['gr'] = _join_tokens_to_line(new_gr_tokens)
-        result['de'] = _join_tokens_to_line(new_de_tokens)
-        if 'en_tokens' in result:
-            result['en'] = _join_tokens_to_line(result.get('en_tokens', []))
-        
-        return result
+    # Entferne color_symbol aus token_meta (falls vorhanden)
+    if 'token_meta' in block and isinstance(block['token_meta'], list):
+        for meta in block['token_meta']:
+            if isinstance(meta, dict) and 'color_symbol' in meta:
+                del meta['color_symbol']
+    
     return block
 
-# Hilfsfunktion zum Entfernen von Stephanus-Paginierungen aus Tokens
-def _remove_stephanus_from_token(token: str) -> str:
-    """
-    Entfernt Stephanus-Paginierungen (z.B. [543b], [546b]) aus einem Token.
-    """
+def remove_color_symbols_from_token(token: str) -> str:
+    """Entfernt alle Farbsymbole (#, +, -, §, $) aus einem einzelnen Token."""
     if not token:
         return token
-    # Entferne Stephanus-Paginierungen: [543b], [546b] etc.
-    return RE_STEPHANUS.sub('', token).strip()
+    
+    # Entferne alle Farbsymbole
+    for sym in ['#', '+', '-', '§', '$']:
+        token = token.replace(sym, '')
+    
+    return token
 
-# Regex für Satzzeichen-Token (nur Satzzeichen, keine Wörter)
-RE_PUNCTUATION_ONLY = re.compile(r'^[.,;:!?·…\s]+$')
-
-def _is_punctuation_only_token(token: str) -> bool:
+def remove_empty_translation_lines(blocks: list) -> list:
     """
-    Prüft, ob ein Token nur aus Satzzeichen oder Stephanus-Paginierungen besteht.
-    Beispiele: ".", "?", "!", "...", ". . .", "·", "[581b]", "[1251a]", "[5c]", "[25e]", etc.
-    """
-    if not token:
-        return False
-    token_stripped = token.strip()
-    
-    # Prüfe auf Stephanus-Paginierung wie [581b], [1251a], [5c], [25e]
-    if RE_STEPHANUS.fullmatch(token_stripped):
-        return True
-    
-    # Entferne Leerzeichen und prüfe, ob nur Satzzeichen übrig bleiben
-    no_spaces = token_stripped.replace(' ', '').replace('\t', '').replace('\n', '').replace('\r', '')
-    # Prüfe, ob nur Satzzeichen vorhanden sind (inkl. Ellipsis, Gedankenstrich, etc.)
-    punct_chars = '.,;:!?·…–—()[]{}"\'"„«»‚''‹›'
-    return bool(no_spaces) and all(c in punct_chars for c in no_spaces)
-
-# Hilfsfunktion zum Verstecken von Übersetzungen basierend auf (HideTrans) Tag
-def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Versteckt Übersetzungen für Tokens, die den (HideTrans) Tag haben.
-    Dies ist unabhängig von der tag_config und funktioniert für manuelle Tags im Text.
-    """
-    if 'gr_tokens' not in block:
-        return block
-    
-    source_tokens = block.get('gr_tokens', [])
-    hide_flags = []
-    
-    for token in source_tokens:
-        tags = _extract_tags(token)
-        # Prüfe auf HideTrans (case-insensitive, da Nutzer verschiedene Schreibweisen verwenden könnten)
-        should_hide = any(tag.lower() == TRANSLATION_HIDE_TAG.lower() for tag in tags)
-        hide_flags.append(should_hide)
-    
-    result = {**block}
-    
-    # Verstecke Übersetzungen für markierte Tokens
-    for idx, should_hide in enumerate(hide_flags):
-        if not should_hide:
-            continue
-        if 'de_tokens' in result and idx < len(result['de_tokens']):
-            result['de_tokens'][idx] = ''
-        if 'en_tokens' in result and idx < len(result['en_tokens']):
-            result['en_tokens'][idx] = ''
-    
-    return result
-
-# NEU: Funktion zum Entfernen von Stephanus-Paginierungen aus Übersetzungszeilen
-def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Optional[Dict[str, Dict[str, Any]]] = None) -> Dict[str, Any]:
-    """
-    Entfernt Stephanus-Paginierungen aus Übersetzungszeilen (DE, EN), wenn Übersetzungen ausgeblendet sind.
-    Entfernt ALLE Stephanus-Paginierungen aus Übersetzungszeilen, wenn die entsprechenden Übersetzungen ausgeblendet sind.
-    """
-    if 'gr_tokens' not in block:
-        return block
-    
-    source_tokens = block.get('gr_tokens', [])
-    result = {**block}
-    
-    # Prüfe, ob ALLE Übersetzungen in diesem Block ausgeblendet sind (NoTrans PDF)
-    # Nur dann sollen Stephanus-Paginierungen entfernt werden
-    has_all_translations_hidden = True
-    if translation_rules and source_tokens:
-        for idx, gr_token in enumerate(source_tokens):
-            if not _token_should_hide_translation(gr_token, translation_rules):
-                has_all_translations_hidden = False
-                break
-    else:
-        has_all_translations_hidden = False
-    
-    # Entferne Stephanus-Paginierungen aus DE-Tokens
-    # ROBUST: Entferne ALLE Stephanus-Paginierungen aus Übersetzungszeilen, wenn irgendwelche Übersetzungen ausgeblendet sind
-    if 'de_tokens' in result:
-        de_tokens = result['de_tokens']
-        for idx, token in enumerate(de_tokens):
-            if not token:
-                continue
-            
-            # Prüfe, ob die Übersetzung für dieses Token ausgeblendet ist
-            should_hide_translation = False
-            if translation_rules and idx < len(source_tokens):
-                should_hide_translation = _token_should_hide_translation(source_tokens[idx], translation_rules)
-            
-            # Prüfe, ob Token eine Stephanus-Paginierung enthält ODER nur Satzzeichen ist
-            token_stripped = token.strip()
-            
-            # WICHTIG: Entferne Interpunktion/Stephanus auch wenn nur EINE Übersetzung ausgeblendet ist
-            # (nicht nur wenn ALLE ausgeblendet sind)
-            # AUCH: Entferne trivial translations (nur Interpunktion/Stephanus) IMMER, auch wenn hide_translation nicht aktiv ist
-            if should_hide_translation or has_all_translations_hidden:
-                # Prüfe ob Übersetzung trivial ist (nur Interpunktion/Stephanus) - das ist die robusteste Methode
-                if is_trivial_translation(token_stripped):
-                    result['de_tokens'][idx] = ''
-                    continue
-                
-                # Entferne Tokens, die nur aus Satzzeichen bestehen
-                if _is_punctuation_only_token(token_stripped):
-                    result['de_tokens'][idx] = ''
-                    continue
-                
-                # Entferne Stephanus-Paginierungen
-                if RE_STEPHANUS.search(token_stripped):
-                    if RE_STEPHANUS.fullmatch(token_stripped):
-                        # Token ist nur eine Stephanus-Paginierung → komplett entfernen
-                        result['de_tokens'][idx] = ''
-                    else:
-                        # Token enthält Stephanus-Paginierung + anderen Text → nur Paginierung entfernen
-                        cleaned = _remove_stephanus_from_token(token)
-                        if not cleaned.strip() or is_trivial_translation(cleaned.strip()):
-                            result['de_tokens'][idx] = ''
-                        else:
-                            result['de_tokens'][idx] = cleaned
-            # AUCH wenn hide_translation NICHT aktiv ist: entferne trivial translations
-            elif is_trivial_translation(token_stripped):
-                result['de_tokens'][idx] = ''
-                continue
-    
-    # Entferne Stephanus-Paginierungen aus EN-Tokens
-    # ROBUST: Entferne ALLE Stephanus-Paginierungen aus Übersetzungszeilen, wenn irgendwelche Übersetzungen ausgeblendet sind
-    if 'en_tokens' in result:
-        en_tokens = result['en_tokens']
-        for idx, token in enumerate(en_tokens):
-            if not token:
-                continue
-            
-            # Prüfe, ob die Übersetzung für dieses Token ausgeblendet ist
-            should_hide_translation = False
-            if translation_rules and idx < len(source_tokens):
-                should_hide_translation = _token_should_hide_translation(source_tokens[idx], translation_rules)
-            
-            # Prüfe, ob Token eine Stephanus-Paginierung enthält ODER nur Satzzeichen ist
-            token_stripped = token.strip()
-            
-            # WICHTIG: Entferne Interpunktion/Stephanus auch wenn nur EINE Übersetzung ausgeblendet ist
-            # (nicht nur wenn ALLE ausgeblendet sind)
-            # AUCH: Entferne trivial translations (nur Interpunktion/Stephanus) IMMER, auch wenn hide_translation nicht aktiv ist
-            if should_hide_translation or has_all_translations_hidden:
-                # Prüfe ob Übersetzung trivial ist (nur Interpunktion/Stephanus)
-                if is_trivial_translation(token_stripped):
-                    result['en_tokens'][idx] = ''
-                    continue
-                
-                # Entferne Tokens, die nur aus Satzzeichen bestehen
-                if _is_punctuation_only_token(token_stripped):
-                    result['en_tokens'][idx] = ''
-                    continue
-                
-                # Entferne Stephanus-Paginierungen
-                if RE_STEPHANUS.search(token_stripped):
-                    if RE_STEPHANUS.fullmatch(token_stripped):
-                        # Token ist nur eine Stephanus-Paginierung → komplett entfernen
-                        result['en_tokens'][idx] = ''
-                    else:
-                        # Token enthält Stephanus-Paginierung + anderen Text → nur Paginierung entfernen
-                        cleaned = _remove_stephanus_from_token(token)
-                        if not cleaned.strip() or _is_punctuation_only_token(cleaned.strip()):
-                            result['en_tokens'][idx] = ''
-                        else:
-                            result['en_tokens'][idx] = cleaned
-            # AUCH wenn hide_translation NICHT aktiv ist: entferne trivial translations
-            elif is_trivial_translation(token_stripped):
-                result['en_tokens'][idx] = ''
-                continue
-    
-    return result
-
-def _all_translations_hidden(block: Dict[str, Any]) -> bool:
-    """
-    Prüft, ob ALLE Übersetzungen in einem Block leer/versteckt sind.
-    Gibt True zurück, wenn alle de_tokens (und en_tokens, falls vorhanden) leer sind.
-    """
-    if 'de_tokens' not in block:
-        return False
-    
-    de_tokens = block.get('de_tokens', [])
-    en_tokens = block.get('en_tokens', [])
-    
-    # Prüfe, ob alle deutschen Übersetzungen leer sind
-    de_all_empty = all(not tok or tok.strip() == '' for tok in de_tokens)
-    
-    # Wenn en_tokens vorhanden, müssen auch diese leer sein
-    if en_tokens:
-        en_all_empty = all(not tok or tok.strip() == '' for tok in en_tokens)
-        return de_all_empty and en_all_empty
-    
-    return de_all_empty
-
-def remove_empty_translation_lines(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """
-    Entfernt die Übersetzungszeilen aus Blöcken, wo ALLE Übersetzungen versteckt sind.
-    Dies verhindert leere Zeilen im PDF, wenn der Nutzer alle Übersetzungen ausblendet.
-    
-    WICHTIG: Dies funktioniert nur für 'pair' und 'flow' Blöcke mit Tokens.
-    WICHTIG: Wir setzen de_tokens/en_tokens auf leere Listen, statt sie zu entfernen,
-             damit der Rendering-Code nicht abstürzt.
+    Entfernt Zeilen, bei denen ALLE Übersetzungen leer sind (de_tokens UND en_tokens).
+    WICHTIG: Behält aber die antiken Tokens (gr_tokens)!
     """
     result = []
     for block in blocks:
-        if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
-            if _all_translations_hidden(block):
-                # Setze Übersetzungszeilen auf leere Listen (nicht entfernen!)
-                new_block = {**block}
-                if 'de_tokens' in new_block:
-                    new_block['de_tokens'] = []
-                if 'en_tokens' in new_block:
-                    new_block['en_tokens'] = []
-                if 'de' in new_block:
-                    new_block['de'] = ''
-                if 'en' in new_block:
-                    new_block['en'] = ''
-                result.append(new_block)
-            else:
-                result.append(block)
-        else:
+        if not isinstance(block, dict):
             result.append(block)
+            continue
+        
+        # Behalte ALLE Nicht-pair/flow Blöcke (Überschriften, Kommentare, etc.)
+        if block.get('type') not in ('pair', 'flow'):
+            result.append(block)
+            continue
+        
+        # Prüfe ob ALLE Übersetzungen leer sind
+        de_tokens = block.get('de_tokens', [])
+        en_tokens = block.get('en_tokens', [])
+        
+        has_any_translation = any(de_tokens) or any(en_tokens)
+        
+        if has_any_translation:
+            # Mindestens eine Übersetzung vorhanden → Block behalten
+            result.append(block)
+        else:
+            # KEINE Übersetzungen → Prüfe ob antike Tokens vorhanden sind
+            gr_tokens = block.get('gr_tokens', [])
+            if any(gr_tokens):
+                # Antike Tokens vorhanden → Block behalten (nur ohne Übersetzungen)
+                result.append(block)
+            # Sonst: Block komplett leer → entfernen (nicht zu result hinzufügen)
     
     return result
-
-def all_blocks_have_no_translations(blocks: list) -> bool:
-    """
-    Prüft, ob ALLE pair/flow-Blöcke keine Übersetzungen haben.
-    WICHTIG: Kommentar-Blöcke werden ignoriert!
-    """
-    for b in blocks:
-        if not isinstance(b, dict):
-            continue
-        # WICHTIG: Ignoriere Kommentare, Überschriften, etc.
-        if b.get('type') not in ('pair', 'flow'):
-            continue
-        # Wenn IRGENDEIN Block Übersetzungen hat → False
-        if b.get('de_tokens') or b.get('en_tokens'):
-            return False
-    # Nur True, wenn KEIN pair/flow-Block Übersetzungen hat
-    return True
 
