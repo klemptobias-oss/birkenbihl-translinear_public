@@ -375,9 +375,10 @@ def _process_one_input(infile: str,
         
         # Pipeline: apply_colors -> apply_tag_visibility -> optional remove_all_tags (NO_TAGS)
         # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal!
+        # WICHTIG: Verwende final_blocks (mit Kommentaren), nicht blocks!
         try:
             disable_comment_bg_flag = (final_tag_config.get('disable_comment_bg', False) if isinstance(final_tag_config, dict) else False)
-            blocks_with_colors = preprocess.apply_colors(blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
+            blocks_with_colors = preprocess.apply_colors(final_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
             hidden_by_wortart = (final_tag_config.get('hidden_tags_by_wortart') if isinstance(final_tag_config, dict) else None)
             blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
         except Exception:
