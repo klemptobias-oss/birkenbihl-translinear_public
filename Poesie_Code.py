@@ -1499,6 +1499,7 @@ def measure_token_width_with_visibility_poesie(token: str, font: str, size: floa
     """
     if not token:
 
+
         return 0.0  # FIXED: Fehlender return-Statement!
 
     # Berechne Breite direkt mit dem Token, wie es ist (Tags wurden bereits entfernt)
@@ -1587,7 +1588,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         en = en_tokens[:] + [''] * (cols - len(en_tokens))
 
     # Effektive cfg abhängig von meter_on (Versmaß an/aus) und tag_mode
-    eff_cfg = dict(CFG)
+    eff_cfg = dict(CFG)  # FIXED: war "fg = dict(CFG)"
     if meter_on:
         eff_cfg['CELL_PAD_LR_PT'] = 0.0   # MUSS 0 SEIN für lückenlose Topline
         if tag_mode == "TAGS":
