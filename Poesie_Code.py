@@ -1642,22 +1642,6 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             if not tok:
                 return Paragraph('', token_gr_style if is_gr else token_de_style)
 
-            # WICHTIG: Hole Farbe aus token_meta, falls Farbsymbol im Token fehlt
-            # Dies stellt sicher, dass Farben auch nach Tag-Entfernung erhalten bleiben
-            token_meta = block.get('token_meta', []) if block else []
-            meta = token_meta[global_idx] if global_idx is not None and global_idx < len(token_meta) else {}
-            color_symbol_from_meta = meta.get('color_symbol')
-            computed_color_from_meta = meta.get('computed_color') or meta.get('color')
-            
-            # Wenn Farbsymbol in token_meta vorhanden ist, aber nicht im Token, füge es hinzu
-            if color_symbol_from_meta and color_symbol_from_meta not in tok:
-                # Füge Farbsymbol am Anfang des Wortes hinzu (nach führenden Markern)
-                match = RE_WORD_START.search(tok)
-                if match:
-                    tok = tok[:match.start(2)] + color_symbol_from_meta + tok[match.start(2):]
-                else:
-                    tok = color_symbol_from_meta + tok
-
             if is_gr and meter_on:
                 had_lead = _has_leading_bar_local(tok)
                 endbars_match = re.search(r'\|+\s*$', RE_TAG_STRIP.sub('', tok))
@@ -2106,11 +2090,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             # WICHTIG: Kommentare als graue Box rendern (wie in Prosa)
             # Verwende Table mit Hintergrundfarbe für bessere Sichtbarkeit
             from reportlab.platypus import Table, TableStyle
-            try:
-                from Poesie_Code import doc  # Versuche doc zu finden
-                available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*MM
-            except:
-                available_width = 170*MM  # Fallback
+            # Berechne verfügbare Breite basierend auf A4 und Margins
+            available_width = A4[0] - left_margin - right_margin - 8*MM
             
             # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT
             comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
