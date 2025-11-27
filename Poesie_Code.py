@@ -1533,62 +1533,22 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                           style_speaker = None,
                           gr_bold: bool = False,
                           en_tokens: list[str] = None,
-                          tag_config: dict = None,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
-                          base_line_num: int = None,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
-                          line_comment_colors: dict = None,  # NEU: Map von Zeilennummern zu Kommentar-Farben
-                          hide_pipes: bool = False,  # NEU: Pipes (|) in Übersetzungen verstecken
-                          block: dict = None):  # NEU: Block-Objekt für comment_token_mask
+                          tag_config: dict = None,
+                          base_line_num: int = None,
+                          line_comment_colors: dict = None,
+                          hide_pipes: bool = False,
+                          block: dict = None):
+    
     # Standardwerte setzen falls nicht übergeben
     if doc_width_pt is None:
-        doc_width_pt = A4[0] - 40*MM  # A4-Breite minus Ränder
-    if num_style is None:
-        num_style = ParagraphStyle('Default', fontName='DejaVu', fontSize=8)
-    if global_speaker_width_pt is None:
-        global_speaker_width_pt = 0.0
+        doc_width_pt = A4[0] - 40*MM
     
-    # linke Spaltenbreiten
-    # Nummernspalte
-    num_w   = max(6.0*MM, _sw('[999]', num_style.fontName, num_style.fontSize) + 2.0)
-    num_gap = NUM_GAP_MM * MM
-
-    # Sprecher-Laterne (immer reservieren, falls irgendwo ein Sprecher vorkam)
-    sp_w   = 0.0
-    sp_gap = 0.0
-    if speaker:
-        # Nutze mindestens die global ermittelte Breite (inkl. Puffer)
-        sp_w  = max(global_speaker_width_pt, SPEAKER_COL_MIN_MM * MM)
-        sp_gap= SPEAKER_GAP_MM*MM
-    elif reserve_speaker_col:
-        # Kein Sprecher in diesem Pair – aber Spalte bleibt als "Laterne" reserviert, mit globaler Breite
-        sp_w  = max(global_speaker_width_pt, SPEAKER_COL_MIN_MM * MM)
-        sp_gap= SPEAKER_GAP_MM*MM
-
-    indent_w = max(0.0, float(indent_pt))  # Kachel-Einrückung (Stufenlayout)
-
-    avail_tokens_w = doc_width_pt - (num_w + num_gap + sp_w + sp_gap + indent_w)
-    if avail_tokens_w < 60: avail_tokens_w = doc_width_pt * 0.9
-
-    # Spaltenlängen angleichen (zeilengetreu)
-    # Für 3-sprachige Texte: englische Zeile einbeziehen
-    if en_tokens is None:
-        en_tokens = []
-    if de_tokens is None:
-        de_tokens = []
+    # WICHTIG: Prüfe, ob Übersetzungen vorhanden sind
+    # Diese Variable wird später verwendet, um zu entscheiden, ob nur die griechische Zeile gezeigt wird
+    has_no_translations = (not de_tokens or not any(de_tokens)) and (not en_tokens or not any(en_tokens))
     
-    # Wenn KEINE Übersetzungen vorhanden sind (alle ausgeblendet), zeige nur die griechische Zeile
-    if not de_tokens and not en_tokens:
-        cols = len(gr_tokens)
-        gr = gr_tokens[:]
-        de = []
-        en = []
-    else:
-        cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
-        gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
-        de = de_tokens[:] + [''] * (cols - len(de_tokens))
-        en = en_tokens[:] + [''] * (cols - len(en_tokens))
-
     # Effektive cfg abhängig von meter_on (Versmaß an/aus) und tag_mode
-    eff_cfg = dict(CFG)  # FIXED: war "fg = dict(CFG)"
+    eff_cfg = dict(CFG)
     if meter_on:
         eff_cfg['CELL_PAD_LR_PT'] = 0.0   # MUSS 0 SEIN für lückenlose Topline
         if tag_mode == "TAGS":
