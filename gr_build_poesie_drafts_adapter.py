@@ -117,9 +117,12 @@ def run_one(input_path: Path) -> None:
     if force_meter:
         cmd.append("--force-meter")
         print(f"→ Kommando enthält --force-meter Flag")
-        if config_file:
-            cmd.extend(["--tag-config", str(config_file)])
+    
+    # WICHTIG: Tag-Config IMMER hinzufügen, wenn vorhanden (nicht nur bei force_meter!)
+    if config_file:
+        cmd.extend(["--tag-config", str(config_file)])
         print(f"→ Kommando enthält --tag-config: {config_file}")
+    
     if hide_pipes:
         cmd.extend(["--hide-pipes"])
         print(f"→ Kommando enthält --hide-pipes Flag")
