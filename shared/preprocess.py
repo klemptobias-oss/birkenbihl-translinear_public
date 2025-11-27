@@ -270,7 +270,7 @@ def extract_inline_comments_from_blocks(blocks: List[Dict[str,Any]]) -> List[Dic
                 text = m.group(3).strip()
                 comments.append({'start_pair': s, 'end_pair': e, 'text': text, 'origin_block_index': i})
                 # Entferne den Kommentar-Token
-                block['gr_tokens'] = gr_tokens[1:] if len(gr_tokens) > 1 : []
+                block['gr_tokens'] = gr_tokens[1:] if len(gr_tokens) > 1 else []
                 continue
         
         # 3. Prüfe ob Block selbst ein comment-Block ist
