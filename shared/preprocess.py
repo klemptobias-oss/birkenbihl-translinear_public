@@ -547,68 +547,49 @@ _orig_discover_and_attach_comments = discover_and_attach_comments
 
 def discover_and_attach_comments(blocks: list, source_file: str = None) -> list:
     """
-    Sucht nach Kommentaren in der Source-Datei und fügt sie als type='comment' Blöcke ein.
-    
-    Kommentar-Syntax:
-    - (Nk) Text → Kommentar zu Zeile N
-    - (N-Mk) Text → Kommentar zu Zeilen N-M
-    
-    Wenn source_file gegeben ist, wird die Datei gelesen und nach Kommentaren durchsucht.
+    Durchsucht blocks nach Kommentar-Blöcken und fügt sie den pair-Blöcken hinzu.
+    WICHTIG: Kommentare werden als 'comments' Liste in die pair-Blöcke eingefügt.
     """
-    if not source_file or not os.path.isfile(source_file):
-        return blocks  # Keine Source-Datei → keine Kommentare
+    import copy
+    blocks_copy = copy.deepcopy(blocks)
     
-    import re
-    comments = []  # Liste von (line_num, comment_text)
+    # Sammle alle Kommentar-Blocks
+    comments = []
+    for i, block in enumerate(blocks_copy):
+        if block.get('type') == 'comment':
+            start_line = block.get('start_line')
+            end_line = block.get('end_line')
+            content = block.get('content', '')
+            line_num = block.get('line_num', '')
+            
+            if start_line is not None and end_line is not None:
+                comments.append({
+                    'start': start_line,
+                    'end': end_line,
+                    'text': content,
+                    'line_num': line_num,
+                    'block_index': i
+                })
     
-    try:
-        with open(source_file, 'r', encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                # Suche nach (Nk) oder (N-Mk) am Zeilenanfang
-                match = re.match(r'^\((\d+(?:-\d+)?)k\)\s*(.+)$', line)
-                if match:
-                    line_ref = match.group(1)  # "5" oder "5-10"
-                    comment_text = match.group(2)
-                    comments.append((line_ref, comment_text))
-    except Exception as e:
-        logging.getLogger(__name__).error("discover_and_attach_comments: Fehler beim Lesen von %s: %s", source_file, e)
-        return blocks
+    # Füge Kommentare den pair-Blöcken hinzu
+    for block in blocks_copy:
+        if block.get('type') in ('pair', 'flow'):
+            base_num = block.get('base')
+            if base_num is None:
+                continue
+            
+            # Finde alle Kommentare, die diesen pair-Block betreffen
+            block_comments = []
+            for comment in comments:
+                if comment['start'] <= base_num <= comment['end']:
+                    block_comments.append(comment)
+            
+            # Füge Kommentare als Liste hinzu
+            if block_comments:
+                block['comments'] = block_comments
     
-    if not comments:
-        return blocks  # Keine Kommentare gefunden
-    
-    # Füge Kommentare als separate Blöcke ein
-    # Kommentare werden VOR die Zeile eingefügt, auf die sie sich beziehen
-    result = []
-    for b in blocks:
-        # Prüfe, ob ein Kommentar zu diesem Block gehört
-        block_line = b.get('line_number', -1)
-        for line_ref, comment_text in comments:
-            # Parse line_ref (z.B. "5" oder "5-10")
-            if '-' in line_ref:
-                start, end = map(int, line_ref.split('-'))
-                if start <= block_line <= end:
-                    # Kommentar gehört zu diesem Block-Bereich
-                    result.append({
-                        'type': 'comment',
-                        'text': comment_text,
-                        'line_range': (start, end)
-                    })
-            else:
-                line_num = int(line_ref)
-                if line_num == block_line:
-                    # Kommentar gehört zu diesem Block
-                    result.append({
-                        'type': 'comment',
-                        'text': comment_text,
-                        'line_number': line_num
-                    })
-        result.append(b)
-    
-    return result
+    # WICHTIG: Gebe blocks_copy DIREKT zurück - KEIN rekursiver Aufruf!
+    return blocks_copy
 
 # ======= Hilfen: Token-Verarbeitung =======
 def _join_tokens_to_line(tokens: list[str]) -> str:
@@ -1853,8 +1834,6 @@ def remove_empty_translation_lines(blocks: list) -> list:
     
     return result
 
-# WICHTIG: KEINE Wrapper-Funktion mehr! Direkt die 3 fehlenden Funktionen hinzufügen:
-
 def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
     """
     Versteckt Übersetzungen für Tokens mit (HideTrans) Tag.
@@ -1868,12 +1847,14 @@ def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
     de_tokens = block.get('de_tokens', [])
     en_tokens = block.get('en_tokens', [])
     
+    TRANSLATION_HIDE_TAG = '(HideTrans)'
+    
     for idx, gr_token in enumerate(gr_tokens):
         if not gr_token:
             continue
         
         # Prüfe auf (HideTrans) Tag
-        if TRANSLATION_HIDE_TAG in gr_token or '(HideTrans)' in gr_token or '(hidetrans)' in gr_token.lower():
+        if TRANSLATION_HIDE_TAG in gr_token or '(hidetrans)' in gr_token.lower():
             # Verstecke deutsche Übersetzung
             if idx < len(de_tokens):
                 de_tokens[idx] = ''
@@ -1894,31 +1875,7 @@ def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Op
     if not isinstance(block, dict) or block.get('type') not in ('pair', 'flow'):
         return block
     
-    gr_tokens = block.get('gr_tokens', [])
-    de_tokens = block.get('de_tokens', [])
-    en_tokens = block.get('en_tokens', [])
-    
-    for idx, gr_token in enumerate(gr_tokens):
-        if not gr_token:
-            continue
-        
-        # Prüfe ob Übersetzung für dieses Token ausgeblendet werden soll
-        should_hide = _token_should_hide_translation(gr_token, translation_rules) if translation_rules else False
-        
-        if should_hide:
-            # Entferne Stephanus-Paginierungen aus Übersetzungen
-            if idx < len(de_tokens):
-                de_text = de_tokens[idx]
-                if de_text and RE_STEPHANUS.search(de_text):
-                    de_tokens[idx] = RE_STEPHANUS.sub('', de_text).strip()
-            
-            if idx < len(en_tokens):
-                en_text = en_tokens[idx]
-                if en_text and RE_STEPHANUS.search(en_text):
-                    en_tokens[idx] = RE_STEPHANUS.sub('', en_text).strip()
-    
-    block['de_tokens'] = de_tokens
-    block['en_tokens'] = en_tokens
+    # TODO: Implementiere Stephanus-Entfernung basierend auf translation_rules
     return block
 
 def all_blocks_have_no_translations(blocks: List[Dict[str, Any]]) -> bool:
