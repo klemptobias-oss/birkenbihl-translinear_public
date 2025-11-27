@@ -387,6 +387,13 @@ def _process_one_input(infile: str,
         # Schritt 5: PDF rendern
         name_no_meter = output_pdf_name(base, NameOpts(strength=strength, color_mode=color_mode, tag_mode=tag_mode))
         
+        # WICHTIG: Prüfe, ob alle Übersetzungen ausgeblendet sind
+        has_no_translations = all(
+            not b.get('de_tokens') and not b.get('en_tokens')
+            for b in final_blocks
+            if b.get('type') == 'pair'
+        )
+        
         # Füge _NoTrans hinzu, wenn alle Übersetzungen ausgeblendet sind
         if has_no_translations:
             name_no_meter = _add_suffix_before_ext(name_no_meter, "_NoTrans")
