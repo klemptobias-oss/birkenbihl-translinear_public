@@ -238,12 +238,21 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
     if not tok:
         return tok
     
-    # If NO_TAGS - remove everything
+    # If NO_TAGS - remove everything, but preserve color symbols
     if tag_mode == "NO_TAGS":
+        # Preserve color symbols before removing tags
+        color_sym = None
+        for sym in ['#', '+', '-', '§', '$']:
+            if sym in tok:
+                color_sym = sym
+                break
         cleaned = remove_all_tags_from_token(tok)
-        # DEBUG: Reduziert - nur bei ersten 3 Tokens ausgeben (verhindert 70k+ Zeilen)
-        # if cleaned != tok:
-        #     print(f"DEBUG _strip_tags_from_token: (NO_TAGS) Tag entfernt aus Token: '{tok}' → '{cleaned}'")
+        # Re-add color symbol if it was removed
+        if color_sym and color_sym not in cleaned:
+            if cleaned and cleaned[0] == '|':
+                cleaned = '|' + color_sym + cleaned[1:]
+            else:
+                cleaned = color_sym + cleaned
         return cleaned
     
     # Otherwise remove only tags that were recorded as removed by apply_tag_visibility
@@ -252,10 +261,20 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
         meta = token_meta[tok_idx] if tok_idx < len(token_meta) else {}
         removed_tags = set(meta.get('removed_tags', []))
         if removed_tags:
+            # Preserve color symbols before removing tags
+            color_sym = meta.get('color_symbol')
+            if not color_sym:
+                for sym in ['#', '+', '-', '§', '$']:
+                    if sym in tok:
+                        color_sym = sym
+                        break
             cleaned = remove_tags_from_token(tok, removed_tags)
-            # DEBUG: Reduziert - nur bei ersten 3 Tokens ausgeben (verhindert 70k+ Zeilen)
-            # if cleaned != tok:
-            #     print(f"DEBUG _strip_tags_from_token: Tag entfernt aus Token: '{tok}' → '{cleaned}' removed_tags={sorted(list(removed_tags))}")
+            # Re-add color symbol if it was removed
+            if color_sym and color_sym not in cleaned:
+                if cleaned and cleaned[0] == '|':
+                    cleaned = '|' + color_sym + cleaned[1:]
+                else:
+                    cleaned = color_sym + cleaned
             return cleaned
     
     # nothing to remove for this token, keep as-is

@@ -254,21 +254,19 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
         color_symbol_from_meta = meta.get('color_symbol')
     
     # WICHTIG: Speichere Farbsymbole vor der Tag-Entfernung (aus Token UND token_meta)
-    # WICHTIG: Prüfe ZUERST token_meta, dann Token, damit wir die korrekte Farbe haben
+    # WICHTIG: token_meta hat IMMER Priorität - das ist die Quelle der Wahrheit aus der Tag-Konfigurationstabelle
     color_symbols = []
     # ZUERST: Hole Farbsymbol aus token_meta (wird von apply_colors gesetzt) - DAS IST DIE QUELLE DER WAHRHEIT
     if color_symbol_from_meta:
-        color_symbols.append(color_symbol_from_meta)
-    # DANN: Prüfe Token (falls kein Farbsymbol in token_meta) - FALLBACK
-    if not color_symbols:
+        # WICHTIG: token_meta hat IMMER Priorität, auch wenn das Symbol bereits im Token ist
+        # Das stellt sicher, dass die Farbe aus der Tag-Konfigurationstabelle verwendet wird
+        color_symbols = [color_symbol_from_meta]
+    else:
+        # FALLBACK: Prüfe Token nur wenn kein Farbsymbol in token_meta vorhanden ist
         for sym in ['#', '+', '-', '§', '$']:
             if sym in tok:
                 color_symbols.append(sym)
                 break  # Nur das erste Farbsymbol nehmen
-    # WICHTIG: Wenn token_meta ein Farbsymbol hat, VERWENDE ES IMMER, auch wenn es im Token ist
-    # Das stellt sicher, dass die Farbe aus der Tag-Konfigurationstabelle verwendet wird
-    if color_symbol_from_meta and color_symbol_from_meta not in color_symbols:
-        color_symbols = [color_symbol_from_meta]  # Überschreibe mit token_meta-Wert
     
     # If NO_TAGS - remove everything
     if tag_mode == "NO_TAGS":
