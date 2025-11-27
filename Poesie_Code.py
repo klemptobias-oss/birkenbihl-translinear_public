@@ -2092,13 +2092,28 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
         if t == 'comment':
             line_num = b.get('line_num', '')
             content = b.get('content', '')
-            # ... existing validation code ...
+            original_line = b.get('original_line', '')
+            
+            # WICHTIG: text_clean MUSS initialisiert werden, bevor es verwendet wird!
+            text_clean = content if content else ''
+            
+            # Fallback: Wenn content leer ist, extrahiere aus original_line
+            if not text_clean and original_line:
+                # Entferne Zeilennummer-Marker
+                text_clean = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
+                text_clean = re.sub(r'^\(\d+k\)\s*', '', text_clean)
+                text_clean = text_clean.strip()
+            
+            # Wenn text_clean immer noch leer ist, überspringe
+            if not text_clean:
+                i += 1
+                continue
             
             # WICHTIG: Zeilennummer VOR dem Kommentartext anzeigen!
             if line_num:
                 text_clean = f"({line_num}) {text_clean}"
             
-            # Sanitize and truncate to a reasonable size
+            # Sanitize and truncate
             text_clean = " ".join(text_clean.split())
             MAX_COMMENT_CHARS = 400
             if len(text_clean) > MAX_COMMENT_CHARS:
@@ -2106,13 +2121,14 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             
             # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT
             comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                fontName='DejaVu', fontSize=7,  # Kleinere Schrift
-                leading=8.5,  # Dichte Zeilenabstände
+                fontName='DejaVu', fontSize=7,
+                leading=8.5,
                 alignment=TA_LEFT, 
                 leftIndent=4*MM, rightIndent=4*MM,
                 spaceBefore=2, spaceAfter=2,
-                textColor=colors.Color(0.25, 0.25, 0.25),  # Dunkleres Grau
-                backColor=colors.Color(0.92, 0.92, 0.92))  # GRAU HINTERLEGT
+                textColor=colors.Color(0.25, 0.25, 0.25),
+                backColor=colors.Color(0.92, 0.92, 0.92))
+            
             # Grau hinterlegte Box: Table mit Hintergrundfarbe
             from reportlab.platypus import Table, TableStyle
             try:
@@ -2120,7 +2136,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*MM
             except:
                 available_width = 170*MM  # Fallback
-            comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]],
+            comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]], 
                                  colWidths=[available_width])
             comment_table.setStyle(TableStyle([
                 ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
@@ -2132,7 +2148,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             elements.append(Spacer(1, 2*MM))
             elements.append(comment_table)
             elements.append(Spacer(1, 2*MM))
-            i += 1; continue
+            i += 1
+            continue
 
         # Gleichheitszeichen-Überschriften (wie in Prosa)
         # WICHTIG: Alle aufeinanderfolgenden Überschriften sammeln und mit erster Textzeile koppeln
@@ -2428,8 +2445,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         alignment=TA_LEFT, 
                         leftIndent=4*MM, rightIndent=4*MM,
                         spaceBefore=2, spaceAfter=2,
-                        textColor=colors.Color(0.25, 0.25, 0.25),  # Dunkleres Grau
-                        backColor=colors.Color(0.92, 0.92, 0.92))  # GRAU HINTERLEGT
+                        textColor=colors.Color(0.25, 0.25, 0.25),
+                        backColor=colors.Color(0.92, 0.92, 0.92))
                     # Grau hinterlegte Box: Table mit Hintergrundfarbe
                     from reportlab.platypus import Table, TableStyle
                     try:

@@ -1853,12 +1853,13 @@ def remove_empty_translation_lines(blocks: list) -> list:
     
     return result
 
-def _hide_manual_translations_in_block(block: dict) -> dict:
+# WICHTIG: KEINE Wrapper-Funktion mehr! Direkt die 3 fehlenden Funktionen hinzufügen:
+
+def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
     """
     Versteckt Übersetzungen für Tokens mit (HideTrans) Tag.
     
     WICHTIG: Diese Funktion wird von apply_colors() aufgerufen!
-    NEU ERSTELLT - existierte vorher NICHT!
     """
     if not isinstance(block, dict) or block.get('type') not in ('pair', 'flow'):
         return block
@@ -1884,12 +1885,11 @@ def _hide_manual_translations_in_block(block: dict) -> dict:
     block['en_tokens'] = en_tokens
     return block
 
-def _hide_stephanus_in_translations(block: dict, translation_rules: Optional[dict]) -> dict:
+def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Optional[Dict[str, Dict[str, Any]]]) -> Dict[str, Any]:
     """
     Entfernt Stephanus-Paginierungen aus Übersetzungszeilen, wenn Übersetzungen ausgeblendet sind.
     
     WICHTIG: Diese Funktion wird von apply_colors() aufgerufen!
-    NEU ERSTELLT - existierte vorher NICHT!
     """
     if not isinstance(block, dict) or block.get('type') not in ('pair', 'flow'):
         return block
@@ -1901,7 +1901,7 @@ def _hide_stephanus_in_translations(block: dict, translation_rules: Optional[dic
     for idx, gr_token in enumerate(gr_tokens):
         if not gr_token:
             continue
-
+        
         # Prüfe ob Übersetzung für dieses Token ausgeblendet werden soll
         should_hide = _token_should_hide_translation(gr_token, translation_rules) if translation_rules else False
         
@@ -1921,13 +1921,12 @@ def _hide_stephanus_in_translations(block: dict, translation_rules: Optional[dic
     block['en_tokens'] = en_tokens
     return block
 
-def all_blocks_have_no_translations(blocks: list) -> bool:
+def all_blocks_have_no_translations(blocks: List[Dict[str, Any]]) -> bool:
     """
     Prüft, ob ALLE pair/flow Blöcke keine Übersetzungen haben.
     Wird für _NoTrans Suffix verwendet.
     
     WICHTIG: Diese Funktion wird von prosa_pdf.py und poesie_pdf.py aufgerufen!
-    NEU ERSTELLT - existierte vorher nur als Inline-Code!
     """
     if not blocks:
         return True
