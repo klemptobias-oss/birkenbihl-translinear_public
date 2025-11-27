@@ -2035,7 +2035,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         elif iteration_count % 50 == 0:  # Logge alle 50 Iterationen
             print(f"Prosa_Code: Still processing... iteration={iteration_count}, idx={idx}, type={flow_blocks[idx].get('type', 'unknown')}", flush=True)
         
-        b, t = flow_blocks[idx], flow_blocks[idx]['type']
+        b, t = flow_blocks[idx], flow_blocks[idx].get('type', 'unknown')
+        
+        # DEBUG: Logge type für Kommentar-Blöcke
+        if isinstance(b, dict) and b.get('type') == 'comment':
+            print(f"Prosa_Code: DEBUG - Found comment block at idx={idx}, t='{t}', b.type='{b.get('type')}', will check if t=='comment'", flush=True)
 
         if t == 'blank':
             elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm)); idx += 1; continue
@@ -2161,7 +2165,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 lookahead = scan
                 found_flow = False
                 while lookahead < len(flow_blocks) and lookahead < scan + 10:
-                    if flow_blocks[lookahead]['type'] == 'flow':
+                    lookahead_type = flow_blocks[lookahead].get('type', 'unknown')
+                    if lookahead_type == 'flow':
                         # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
                         processed_flow_indices.add(lookahead)
                         # flow-Block gefunden - verkoppeln mit Überschrift
@@ -2187,9 +2192,12 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         found_flow = True
                         idx = lookahead + 1
                         break
-                    elif flow_blocks[lookahead]['type'] in ('h1_eq', 'h2_eq', 'h3_eq'):
+                    elif lookahead_type in ('h1_eq', 'h2_eq', 'h3_eq'):
                         # Weitere Überschrift gefunden - nicht verkoppeln
                         break
+                    elif lookahead_type == 'comment':
+                        # WICHTIG: Kommentar-Blöcke überspringen, aber nicht abbrechen
+                        pass
                     lookahead += 1
                 
                 if not found_flow:
@@ -2261,7 +2269,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 lookahead = scan
                 found_flow = False
                 while lookahead < len(flow_blocks) and lookahead < scan + 10:
-                    if flow_blocks[lookahead]['type'] == 'flow':
+                    lookahead_type = flow_blocks[lookahead].get('type', 'unknown')
+                    if lookahead_type == 'flow':
                         # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
                         processed_flow_indices.add(lookahead)
                         flow_tables = build_flow_tables(flow_blocks[lookahead])
@@ -2288,8 +2297,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         idx = lookahead + 1
                         print(f"Prosa_Code: h3_eq found flow at lookahead={lookahead}, set idx from {old_idx} to {idx} (next block type: {flow_blocks[idx].get('type', 'unknown') if idx < len(flow_blocks) else 'END'})", flush=True)
                         break
-                    elif flow_blocks[lookahead]['type'] in ('h1_eq', 'h2_eq', 'h3_eq'):
+                    elif lookahead_type in ('h1_eq', 'h2_eq', 'h3_eq'):
                         break
+                    elif lookahead_type == 'comment':
+                        # WICHTIG: Kommentar-Blöcke überspringen, aber nicht abbrechen
+                        pass
                     lookahead += 1
                 
                 if not found_flow:
