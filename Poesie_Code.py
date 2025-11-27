@@ -1269,7 +1269,7 @@ def process_input_file(fname:str):
                     break
             
             # Jetzt haben wir alle Zeilen mit derselber Nummer
-            # WICHTIG: Prüfe, ob die ERSTE Zeile selbst ein Kommentar ist (sollte nicht passieren, aber sicherheitshalber)
+            # WICHTIG: Prüfe die ERSTE Zeile selbst ein Kommentar ist (sollte nicht passieren, aber sicherheitshalber)
             first_line_num, _ = extract_line_number(lines_with_same_num[0])
             if first_line_num is not None and is_comment_line(first_line_num):
                 # Die erste Zeile ist ein Kommentar - das sollte bereits oben erkannt worden sein!
@@ -1498,8 +1498,7 @@ def measure_token_width_with_visibility_poesie(token: str, font: str, size: floa
     Wir müssen nicht mehr prüfen, welche Tags versteckt sind - sie sind bereits entfernt.
     """
     if not token:
-        return 0.0
-    
+
     # Berechne Breite direkt mit dem Token, wie es ist (Tags wurden bereits entfernt)
     # Das Token enthält bereits nur noch die sichtbaren Tags!
     w_with_remaining_tags = visible_measure_token(token, font=font, size=size, cfg=cfg, is_greek_row=is_greek_row)
@@ -1695,7 +1694,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     nxt_cleaned = _strip_tags_from_token(nxt, block=block, tok_idx=global_idx+1 if global_idx is not None else None, tag_mode=tag_mode)
                     br_to_next = same_foot(tok_cleaned, nxt_cleaned)
                     next_has_lead = _has_leading_bar_local(nxt_cleaned)
-                    next_tok_starts_bar = next_has_lead
+                    next_tok_starts_with_bar = next_has_lead
 
                 return ToplineTokenFlowable(
                     tok_cleaned, token_gr_style, eff_cfg,
@@ -2264,6 +2263,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             
             # Suche nach den nächsten 2 pair-Blöcken
             scan = temp_i
+            
             while scan < len(blocks) and blocks[scan]['type'] == 'blank':
                 scan += 1
             
