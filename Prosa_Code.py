@@ -1869,8 +1869,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 base_num=base_num,  # NEU: Zeilennummer für Hinterlegung
                 line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
                 block=flow_block,  # NEU: Block-Objekt für comment_token_mask
-                tag_mode=tag_mode  # NEU: Tag-Modus übergeben
-            )
+                tag_mode=tag_mode)  # NEU: Tag-Modus (TAGS oder NO_TAGS)
             print(f"Prosa_Code: build_flow_tables() build_tables_for_stream() completed (tables={len(tables)})", flush=True)
             # WICHTIG: TableStyle explizit importieren (verhindert Closure-Scope-Problem)
             from reportlab.platypus import TableStyle
@@ -2081,7 +2080,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             except:
                 available_width = 170*mm  # Fallback
             
-            comment_table = Table([[Paragraph(html.escape(content), comment_style_simple)]], 
+            comment_table = Table([[Paragraph(xml_escape(content), comment_style_simple)]], 
                                  colWidths=[available_width])
             comment_table.setStyle(TableStyle([
                 ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
