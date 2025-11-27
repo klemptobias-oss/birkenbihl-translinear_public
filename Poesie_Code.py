@@ -246,17 +246,27 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
     if not tok:
         return tok
     
-    # WICHTIG: Speichere Farbsymbole vor der Tag-Entfernung
+    # WICHTIG: Hole Farbsymbol aus token_meta, falls vorhanden (von apply_colors gesetzt)
+    color_symbol_from_meta = None
+    if block is not None and tok_idx is not None:
+        token_meta = block.get('token_meta', [])
+        meta = token_meta[tok_idx] if tok_idx < len(token_meta) else {}
+        color_symbol_from_meta = meta.get('color_symbol')
+    
+    # WICHTIG: Speichere Farbsymbole vor der Tag-Entfernung (aus Token UND token_meta)
     color_symbols = []
     for sym in ['#', '+', '-', '§', '$']:
         if sym in tok:
             color_symbols.append(sym)
+    # Wenn kein Farbsymbol im Token, aber in token_meta vorhanden, verwende das
+    if not color_symbols and color_symbol_from_meta:
+        color_symbols = [color_symbol_from_meta]
     
     # If NO_TAGS - remove everything
     if tag_mode == "NO_TAGS":
         cleaned = remove_all_tags_from_token(tok)
         # WICHTIG: Stelle sicher, dass Farbsymbole erhalten bleiben
-        # (remove_all_tags_from_token entfernt nur Tags, nicht Farbsymbole, aber zur Sicherheit)
+        # Verwende Farbsymbol aus token_meta, falls im Token nicht vorhanden
         for sym in color_symbols:
             if sym not in cleaned:
                 # Füge Farbsymbol am Anfang des Wortes hinzu (nach führenden Markern)
@@ -275,7 +285,7 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
         if removed_tags:
             cleaned = remove_tags_from_token(tok, removed_tags)
             # WICHTIG: Stelle sicher, dass Farbsymbole erhalten bleiben
-            # (remove_tags_from_token entfernt nur Tags, nicht Farbsymbole, aber zur Sicherheit)
+            # Verwende Farbsymbol aus token_meta, falls im Token nicht vorhanden
             for sym in color_symbols:
                 if sym not in cleaned:
                     # Füge Farbsymbol am Anfang des Wortes hinzu (nach führenden Markern)
@@ -2108,21 +2118,44 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             formatted_parts = []
             # Zeilennummer in Kommentar-Farbe (WICHTIG: xml_escape auf line_num anwenden, um "-" zu schützen)
             comment_num_size = num_style.fontSize * 0.85  # Etwas kleiner als normale Zeilennummern
-            formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
+            if line_num:
+                formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
             # Kommentar-Text mit kleinerem Font und Farbe
             comment_size = DE_SIZE * 0.8  # Deutlich kleiner (80% statt 90%)
             # Sicherstellen, dass content vorhanden ist
             if content:
-                formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="{color_hex}"><i> {xml_escape(content)}</i></font>')
+                formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#666666"><i> {xml_escape(content)}</i></font>')
             else:
                 # Fallback: Verwende original_line wenn content leer ist
-                original_line = b.get('original_line', '')
-                if original_line:
+                original_line_fallback = b.get('original_line', '')
+                if original_line_fallback:
                     # Entferne Zeilennummer aus original_line für content
-                    _, fallback_content = extract_line_number(original_line)
+                    _, fallback_content = extract_line_number(original_line_fallback)
                     if fallback_content:
-                        formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="{color_hex}"><i> {xml_escape(fallback_content)}</i></font>')
-            formatted_text = ''.join(formatted_parts)
+                        formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#666666"><i> {xml_escape(fallback_content)}</i></font>')
+                    elif original_line_fallback.strip():
+                        # Wenn kein content extrahiert werden konnte, verwende original_line direkt (ohne Zeilennummer)
+                        fallback_content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line_fallback)
+                        fallback_content = re.sub(r'^\(\d+k\)\s*', '', fallback_content)
+                        fallback_content = fallback_content.strip()
+                        if fallback_content:
+                            formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#666666"><i> {xml_escape(fallback_content)}</i></font>')
+            
+            # WICHTIG: Wenn formatted_parts leer ist, verwende original_line direkt
+            if not formatted_parts and original_line:
+                # Verwende original_line direkt, aber entferne Zeilennummer
+                fallback_content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
+                fallback_content = re.sub(r'^\(\d+k\)\s*', '', fallback_content)
+                fallback_content = fallback_content.strip()
+                if fallback_content:
+                    formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#666666"><i>{xml_escape(fallback_content)}</i></font>')
+            
+            formatted_text = ''.join(formatted_parts) if formatted_parts else xml_escape(original_line or '')
+            
+            # WICHTIG: Wenn formatted_text immer noch leer ist, überspringe diesen Kommentar
+            if not formatted_text or not formatted_text.strip():
+                i += 1
+                continue
             
             # WICHTIG: Kommentare als graue Box rendern (wie in Prosa)
             # Verwende Table mit Hintergrundfarbe für bessere Sichtbarkeit
