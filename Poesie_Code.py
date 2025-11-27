@@ -1543,22 +1543,16 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     if doc_width_pt is None:
         doc_width_pt = A4[0] - 40*MM
     
-    # WICHTIG: Prüfe, ob Übersetzungen vorhanden sind
-    # Diese Variable wird später verwendet, um zu entscheiden, ob nur die griechische Zeile gezeigt wird
-    has_no_translations = (not de_tokens or not any(de_tokens)) and (not en_tokens or not any(en_tokens))
-    
     # Effektive cfg abhängig von meter_on (Versmaß an/aus) und tag_mode
     eff_cfg = dict(CFG)
     if meter_on:
-        eff_cfg['CELL_PAD_LR_PT'] = 0.0   # MUSS 0 SEIN für lückenlose Topline
+        eff_cfg['CELL_PAD_LR_PT'] = 0.0
         if tag_mode == "TAGS":
             eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_TAG', 1.0)
         else:
             eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_NOTAG', 0.5)
-        # Versmaß-spezifische Gaps (INTER_PAIR wird global gesetzt, INTRA wird direkt berechnet)
         eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_VERSMASS
     else:
-        # Für normale PDFs ist ein kleiner Zell-Innenabstand gut, der Hauptabstand kommt vom Token-Pad.
         eff_cfg['CELL_PAD_LR_PT'] = 0.5
         if tag_mode == "TAGS":
             eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_NORMAL_TAG', 4.0)
@@ -1567,11 +1561,27 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_NORMAL_NOTAG', 3.0)
             eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL_NOTAG
 
-    # Breiten: Berücksichtige auch englische Zeile
-    # Verwende die neue Funktion, die Tag-Sichtbarkeit berücksichtigt
+    # WICHTIG: Spaltenlängen angleichen (zeilengetreu) - MUSS VOR der widths-Berechnung kommen!
+    if en_tokens is None:
+        en_tokens = []
+    if de_tokens is None:
+        de_tokens = []
+    
+    # Wenn KEINE Übersetzungen vorhanden sind (alle ausgeblendet), zeige nur die griechische Zeile
+    if not de_tokens and not en_tokens:
+        cols = len(gr_tokens)
+        gr = gr_tokens[:]
+        de = []
+        en = []
+    else:
+        cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
+        gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
+        de = de_tokens[:] + [''] * (cols - len(de_tokens))
+        en = en_tokens[:] + [''] * (cols - len(en_tokens))
+
+    # JETZT können wir widths berechnen, weil cols definiert ist!
     widths = []
     for k in range(cols):
-        # Verwende die neue Funktion, die Tag-Sichtbarkeit berücksichtigt (nur für griechische Tokens)
         w_gr = measure_token_width_with_visibility_poesie(
             gr[k] if (k < len(gr) and gr[k]) else '', 
             font=token_gr_style.fontName, 
@@ -1580,15 +1590,13 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             is_greek_row=True,
             tag_config=tag_config
         ) if (k < len(gr) and gr[k]) else 0.0
-        # DE- und EN-Tokens haben normalerweise keine Tags, daher verwenden wir die Standard-Breitenberechnung
-        # NEU: Berücksichtige Pipe-Ersetzung bei der Breitenberechnung
+        
+        # DE- und EN-Tokens: Pipe-Ersetzung berücksichtigen
         if hide_pipes:
             de_text = de[k].replace('|', ' ') if (k < len(de) and de[k]) else ''
             en_text = en[k].replace('|', ' ') if (k < len(en) and en[k]) else ''
-            # Berechne die Anzahl der Pipes, die ersetzt werden (für zusätzlichen Platz)
-            de_pipe_count = (de[k].count('|') if (k < len(de) and de[k]) else 0)
-            en_pipe_count = (en[k].count('|') if (k < len(en) and en[k]) else 0)
-            # Leerzeichen sind breiter als Pipes - füge zusätzlichen Platz hinzu
+            de_pipe_count = de[k].count('|') if (k < len(de) and de[k]) else 0
+            en_pipe_count = en[k].count('|') if (k < len(en) and en[k]) else 0
             space_vs_pipe_diff = token_de_style.fontSize * 0.25
             de_pipe_extra = de_pipe_count * space_vs_pipe_diff
             en_pipe_extra = en_pipe_count * space_vs_pipe_diff
@@ -1601,11 +1609,21 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         w_de = visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if de_text else 0.0
         w_en = visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if en_text else 0.0
         
-        # Addiere zusätzlichen Platz für ersetzte Pipes
         w_de += de_pipe_extra
         w_en += en_pipe_extra
         
         widths.append(max(w_gr, w_de, w_en))
+
+    # JETZT kommt der Rest der Funktion (Layout-Berechnung, Tabellen-Erstellung, etc.)
+    # Die restlichen 800+ Zeilen der Funktion bleiben UNVERÄNDERT...
+    
+    # Layout-Spalten berechnen
+    num_w = max(6.0*MM, _sw('[999]', num_style.fontName, num_style.fontSize) + 2.0)
+    num_gap = NUM_GAP_MM * MM
+    sp_w = max(global_speaker_width_pt or 0.0, SPEAKER_COL_MIN_MM * MM) if (reserve_speaker_col or speaker) else 0.0
+    sp_gap = SPEAKER_GAP_MM * MM if sp_w > 0 else 0.0
+    indent_w = indent_pt
+    avail_tokens_w = doc_width_pt - (num_w + num_gap + sp_w + sp_gap + indent_w)
 
     tables, i, first_slice = [], 0, True
     
