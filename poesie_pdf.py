@@ -372,19 +372,17 @@ def _process_one_input(infile: str,
             traceback.print_exc()
             blocks_after_visibility = blocks_with_colors
 
-        # Schritt 3: Entferne leere Übersetzungszeilen (wenn alle Übersetzungen ausgeblendet)
+        # Schritt 3: Entferne leere Übersetzungszeilen
         blocks_no_empty_trans = preprocess.remove_empty_translation_lines(blocks_after_visibility)
-        
-        # Prüfe, ob alle Übersetzungen ausgeblendet sind (für _NoTrans Tag)
-        has_no_translations = preprocess.all_blocks_have_no_translations(blocks_no_empty_trans)
 
-        # Schritt 4: Farbsymbole entfernen (für _BlackWhite-Versionen)
-        # WICHTIG: Poesie_Code.create_pdf entfernt Tags selbst basierend auf tag_mode,
-        # aber Farben müssen wir hier entfernen für BLACK_WHITE
+        # Schritt 4: Farbsymbole entfernen (für BLACK_WHITE)
         if color_mode == "BLACK_WHITE":
             final_blocks = preprocess.remove_all_color_symbols(blocks_no_empty_trans)
         else: # COLOR
             final_blocks = blocks_no_empty_trans
+
+        # WICHTIG: Ab hier müssen wir final_blocks verwenden (nicht mehr final_blocks aus dem Input!)
+        # final_blocks enthält jetzt die token_meta von apply_colors
 
         # Schritt 5: PDF rendern
         name_no_meter = output_pdf_name(base, NameOpts(strength=strength, color_mode=color_mode, tag_mode=tag_mode))

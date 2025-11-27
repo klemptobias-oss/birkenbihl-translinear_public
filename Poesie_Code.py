@@ -378,33 +378,30 @@ def extract_line_number(s: str) -> tuple[str | None, str]:
     Format: (123) oder (123a) oder (123b) etc.
     NEU: Auch (123k) für Kommentare und (123i) für Insertionszeilen.
     NEU: Auch (220-222k) für Bereichs-Kommentare.
-    
-    Returns:
-        (line_number, rest_of_line) oder (None, original_line)
-    
-    Beispiele:
-        "(1) Text hier" → ("1", "Text hier")
-        "(100a) Text" → ("100a", "Text")
-        "(50k) Kommentar hier" → ("50k", "Kommentar hier")
-        "(300i) Insertion hier" → ("300i", "Insertion hier")
-        "(220-222k) Kommentar zu Zeilen 220-222" → ("220-222k", "Kommentar zu Zeilen 220-222")
-        "Text ohne Nummer" → (None, "Text ohne Nummer")
     """
     s = (s or '').strip()
-    # NEU: Regex für Bereichs-Kommentare: (zahl-zahl+k/i)
+    # NEU: Regex für Bereichs-Kommentare: (zahl-zahl+k/i) - MUSS ZUERST GEPRÜFT WERDEN!
     m_range = re.match(r'^\((-?\d+)-(-?\d+)([a-z]?)\)\s*(.*)$', s, re.IGNORECASE)
     if m_range:
         start = m_range.group(1)
         end = m_range.group(2)
         suffix = m_range.group(3)
         rest = m_range.group(4)
-        return (f"{start}-{end}{suffix}", rest)
+        line_num = f"{start}-{end}{suffix}"  # z.B. "2-4k"
+        print(f"DEBUG extract_line_number: Bereichs-Kommentar erkannt: line_num={line_num}, rest={rest[:50] if rest else 'None'}")
+        return (line_num, rest)
     
     # Regex für Zeilennummer: (Zahl[optionaler Buchstabe oder k/i]) - auch negative Zahlen!
-    # k = Kommentar, i = Insertion
-    m = re.match(r'^\((-?\d+[a-z]?)\)\s*(.*)$', s, re.IGNORECASE)
+    m = re.match(r'^\((-?\d+)([a-z]?)\)\s*(.*)$', s, re.IGNORECASE)
     if m:
-        return (m.group(1), m.group(2))
+        num = m.group(1)
+        suffix = m.group(2)
+        rest = m.group(3)
+        line_num = f"{num}{suffix}"
+        if suffix and suffix.lower() in ['k', 'i']:
+            print(f"DEBUG extract_line_number: Einzelner Kommentar/Insertion erkannt: line_num={line_num}, rest={rest[:50] if rest else 'None'}")
+        return (line_num, rest)
+    
     return (None, s)
 
 def is_comment_line(line_num: str | None) -> bool:
@@ -837,7 +834,7 @@ def tokenize(line:str):
                 buf = []
             continue
         if tok.startswith('[') and not tok.endswith(']'):
-            # Start eines mehrteiligen Tokens - sammle erstmal
+            # Start eines mehrteiliger Tokens - sammle erstmal
             buf = [tok]
             continue
         out.append(tok)
@@ -1222,8 +1219,8 @@ def process_input_file(fname:str):
                 'original_line': line
             }
             # WICHTIG: Debug-Ausgabe um zu sehen, ob Kommentare erkannt werden
-            print(f"DEBUG Poesie_Code.process_input_file: Kommentar erkannt: line_num={line_num}, content={line_content[:50] if line_content else 'None'}, original_line={line[:50] if line else 'None'}")
-            blocks.append(comment_block)
+            print(f"DEBUG Poesie_Code.process_input_file: Kommentar erkannt: line_num={line_num}, content={line_content[:50] if line_content else 'None'}, start={start_line}, end={end_line}")
+            blocks.append(comment_block)  # ← HIER WAR DAS PROBLEM: Das wurde NICHT erreicht!
             i += 1
             continue
         
@@ -2130,7 +2127,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 from Poesie_Code import extract_line_number
                 line_num, _ = extract_line_number(content)
             
-            # Formatiere Zeilennummer in der Kommentar-Farbe (WICHTIG: xml_escape auf line_num anwenden, um "-" zu schützen)
+            # Formatiere Zeilennummer in der Kommentar-Farbe (WICHTIG: xml_escape auf line_num anwenden, um "-" nicht als Farbmarker zu interpretieren)
             # Konvertiere RGB-Tupel zu Hex für HTML
             r, g, b = comment_color
             color_hex = f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
