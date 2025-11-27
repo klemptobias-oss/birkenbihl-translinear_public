@@ -1100,9 +1100,21 @@ def group_pairs_into_flows(blocks):
             continue
         
         if t == 'pair':
-            gt = tokenize(b['gr']) if b['gr'] else []
-            dt = tokenize(b['de']) if b['de'] else []
-            et = tokenize(b['en']) if b.get('en') else []  # NEU: Englische Zeile
+            # WICHTIG: Unterstütze sowohl bereits tokenisierte Blöcke (gr_tokens/de_tokens) als auch String-Blöcke (gr/de)
+            if 'gr_tokens' in b:
+                gt = list(b['gr_tokens']) if b.get('gr_tokens') else []
+            else:
+                gt = tokenize(b['gr']) if b.get('gr') else []
+            
+            if 'de_tokens' in b:
+                dt = list(b['de_tokens']) if b.get('de_tokens') else []
+            else:
+                dt = tokenize(b['de']) if b.get('de') else []
+            
+            if 'en_tokens' in b:
+                et = list(b['en_tokens']) if b.get('en_tokens') else []
+            else:
+                et = tokenize(b['en']) if b.get('en') else []  # NEU: Englische Zeile
             
             # WICHTIG: Sammle Kommentare vom pair-Block für späteren flow-Block
             pair_comments = b.get('comments', [])

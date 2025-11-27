@@ -849,185 +849,187 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
         if not isinstance(block, dict) or block.get('type') not in ('pair', 'flow'):
             new_blocks.append(block)
             continue
-            new_block = block.copy()
-            gr_tokens = new_block.get('gr_tokens', [])
-            de_tokens = new_block.get('de_tokens', [])
-            en_tokens = new_block.get('en_tokens', [])  # NEU: Englische Tokens für 3-sprachige Texte
+        
+        # WICHTIG: pair/flow Blöcke verarbeiten
+        new_block = block.copy()
+        gr_tokens = new_block.get('gr_tokens', [])
+        de_tokens = new_block.get('de_tokens', [])
+        en_tokens = new_block.get('en_tokens', [])  # NEU: Englische Tokens für 3-sprachige Texte
+        
+        new_gr_tokens = list(gr_tokens)
+        new_de_tokens = list(de_tokens)
+        new_en_tokens = list(en_tokens) if en_tokens else []  # NEU: Englische Tokens kopieren
+
+        # Initialize token_meta for storing original tags
+        token_meta = new_block.setdefault("token_meta", [{} for _ in gr_tokens])
+        # Create comment mask default (may be set elsewhere)
+        if "comment_token_mask" not in new_block:
+            new_block["comment_token_mask"] = [False] * len(gr_tokens)
+
+        for i, token in enumerate(gr_tokens):
+            if not token:
+                continue
+
+            # Extract original tags and store them so later removal uses original tag set
+            orig_tags = set(_extract_tags(token))
             
-            new_gr_tokens = list(gr_tokens)
-            new_de_tokens = list(de_tokens)
-            new_en_tokens = list(en_tokens) if en_tokens else []  # NEU: Englische Tokens kopieren
+            # WICHTIG: Erkenne HideTags/HideTrans Flags direkt im Token-String (vor Tag-Extraktion)
+            # Prüfe sowohl im Token-String als auch in extrahierten Tags
+            hide_tags_flag = (TAG_HIDE_TAGS in token or '(HideTags)' in token or '(hidetags)' in token) or (TAG_HIDE_TAGS in orig_tags or 'hidetags' in (t.lower() for t in orig_tags))
+            hide_trans_flag = (TRANSLATION_HIDE_TAG in token or '(HideTrans)' in token or '(hidetrans)' in token) or (TRANSLATION_HIDE_TAG in orig_tags or 'hidetrans' in (t.lower() for t in orig_tags))
+            
+            # Entferne HideTags/HideTrans Marker aus dem Token-String, damit sie nicht im PDF erscheinen
+            cleaned_token = token
+            if hide_tags_flag:
+                cleaned_token = cleaned_token.replace(f'({TAG_HIDE_TAGS})', '')
+                cleaned_token = cleaned_token.replace('(HideTags)', '')
+                cleaned_token = cleaned_token.replace('(hidetags)', '')
+            if hide_trans_flag:
+                cleaned_token = cleaned_token.replace(f'({TRANSLATION_HIDE_TAG})', '')
+                cleaned_token = cleaned_token.replace('(HideTrans)', '')
+                cleaned_token = cleaned_token.replace('(hidetrans)', '')
+            # Aktualisiere token in der Liste
+            new_gr_tokens[i] = cleaned_token
+            
+            # Aktualisiere orig_tags nach Entfernung der Hide-Marker
+            orig_tags_clean = orig_tags - {TAG_HIDE_TAGS, TRANSLATION_HIDE_TAG}
+            orig_tags_clean = orig_tags_clean - {t for t in orig_tags if t.lower() in ('hidetags', 'hidetrans')}
+            
+            # Speichere die Original-Tags (ohne Hide-Marker) und Flags in token_meta
+            if i < len(token_meta):
+                token_meta[i]['orig_tags'] = list(orig_tags_clean)
+                token_meta[i].setdefault('flags', {})
+                token_meta[i]['flags']['hide_tags'] = hide_tags_flag
+                token_meta[i]['flags']['hide_trans'] = hide_trans_flag
+            else:
+                # sollte nicht passieren, aber sicherstellen
+                token_meta.append({
+                    'orig_tags': list(orig_tags_clean),
+                    'flags': {
+                        'hide_tags': hide_tags_flag,
+                        'hide_trans': hide_trans_flag
+                    }
+                })
+            
+            # Verwende cleaned_token für weitere Verarbeitung
+            token = cleaned_token
+            
+            # If disable_comment_bg and this token belongs to comment → skip bg coloring
+            if disable_comment_bg and new_block.get("comment_token_mask", [False])[i]:
+                # Still keep other color metadata (e.g. token color), but skip background fill
+                # We still may set token_meta[i]['color'] etc. if needed
+                continue
+            
+            if any(c in token for c in COLOR_SYMBOLS):
+                continue
 
-            # Initialize token_meta for storing original tags
-            token_meta = new_block.setdefault("token_meta", [{} for _ in gr_tokens])
-            # Create comment mask default (may be set elsewhere)
-            if "comment_token_mask" not in new_block:
-                new_block["comment_token_mask"] = [False] * len(gr_tokens)
+            # WICHTIG: Für Farbberechnung HideTags/HideTrans entfernen, damit sie die Farbzuordnung nicht beeinflussen
+            tags_for_color = orig_tags - {TAG_HIDE_TAGS, TRANSLATION_HIDE_TAG}
+            tags_for_color = tags_for_color - {t for t in orig_tags if t.lower() in ('hidetags', 'hidetrans')}
+            token_tags = tags_for_color
+            
+            if not token_tags:
+                continue
+            
+            # Bestimme Wortart und relevante Tags BASIEREND AUF TAGS OHNE HideTags/HideTrans
+            wortart, relevant_tags = _get_wortart_and_relevant_tags(token_tags)
+            if not wortart:
+                continue
+            
+            # Speichere Wortart in token_meta für spätere Verwendung
+            if i < len(token_meta):
+                token_meta[i]['wortart'] = wortart
+            
+            # Finde die relevanteste Regel basierend auf der Prioritäts-Hierarchie
+            best_rule_config = None
+            highest_priority = -1
 
-            for i, token in enumerate(gr_tokens):
-                if not token:
-                    continue
+            # 1. Prüfe Gruppenanführer-Regel zuerst (niedrigste Priorität)
+            group_leader_id = f"{wortart}"
+            group_leader_config = config.get(group_leader_id)
+            if group_leader_config and 'color' in group_leader_config:
+                best_rule_config = group_leader_config
+                highest_priority = 0
 
-                # Extract original tags and store them so later removal uses original tag set
-                orig_tags = set(_extract_tags(token))
+            # 2. Prüfe alle spezifischen Tags (höhere Priorität = weiter unten in der Tabelle)
+            for tag in relevant_tags:
+                rule_id = f"{wortart}_{tag}"
+                # Versuche auch normalisierte Versionen für Draft-Kompatibilität
+                normalized_rule_id = _normalize_rule_id(rule_id)
                 
-                # WICHTIG: Erkenne HideTags/HideTrans Flags direkt im Token-String (vor Tag-Extraktion)
-                # Prüfe sowohl im Token-String als auch in extrahierten Tags
-                hide_tags_flag = (TAG_HIDE_TAGS in token or '(HideTags)' in token or '(hidetags)' in token) or (TAG_HIDE_TAGS in orig_tags or 'hidetags' in (t.lower() for t in orig_tags))
-                hide_trans_flag = (TRANSLATION_HIDE_TAG in token or '(HideTrans)' in token or '(hidetrans)' in token) or (TRANSLATION_HIDE_TAG in orig_tags or 'hidetrans' in (t.lower() for t in orig_tags))
-                
-                # Entferne HideTags/HideTrans Marker aus dem Token-String, damit sie nicht im PDF erscheinen
-                cleaned_token = token
-                if hide_tags_flag:
-                    cleaned_token = cleaned_token.replace(f'({TAG_HIDE_TAGS})', '')
-                    cleaned_token = cleaned_token.replace('(HideTags)', '')
-                    cleaned_token = cleaned_token.replace('(hidetags)', '')
-                if hide_trans_flag:
-                    cleaned_token = cleaned_token.replace(f'({TRANSLATION_HIDE_TAG})', '')
-                    cleaned_token = cleaned_token.replace('(HideTrans)', '')
-                    cleaned_token = cleaned_token.replace('(hidetrans)', '')
-                # Aktualisiere token in der Liste
-                new_gr_tokens[i] = cleaned_token
-                
-                # Aktualisiere orig_tags nach Entfernung der Hide-Marker
-                orig_tags_clean = orig_tags - {TAG_HIDE_TAGS, TRANSLATION_HIDE_TAG}
-                orig_tags_clean = orig_tags_clean - {t for t in orig_tags if t.lower() in ('hidetags', 'hidetrans')}
-                
-                # Speichere die Original-Tags (ohne Hide-Marker) und Flags in token_meta
-                if i < len(token_meta):
-                    token_meta[i]['orig_tags'] = list(orig_tags_clean)
-                    token_meta[i].setdefault('flags', {})
-                    token_meta[i]['flags']['hide_tags'] = hide_tags_flag
-                    token_meta[i]['flags']['hide_trans'] = hide_trans_flag
-                else:
-                    # sollte nicht passieren, aber sicherstellen
-                    token_meta.append({
-                        'orig_tags': list(orig_tags_clean),
-                        'flags': {
-                            'hide_tags': hide_tags_flag,
-                            'hide_trans': hide_trans_flag
-                        }
-                    })
-                
-                # Verwende cleaned_token für weitere Verarbeitung
-                token = cleaned_token
-                
-                # If disable_comment_bg and this token belongs to comment → skip bg coloring
-                if disable_comment_bg and new_block.get("comment_token_mask", [False])[i]:
-                    # Still keep other color metadata (e.g. token color), but skip background fill
-                    # We still may set token_meta[i]['color'] etc. if needed
-                    continue
-                
-                if any(c in token for c in COLOR_SYMBOLS):
-                    continue
-
-                # WICHTIG: Für Farbberechnung HideTags/HideTrans entfernen, damit sie die Farbzuordnung nicht beeinflussen
-                tags_for_color = orig_tags - {TAG_HIDE_TAGS, TRANSLATION_HIDE_TAG}
-                tags_for_color = tags_for_color - {t for t in orig_tags if t.lower() in ('hidetags', 'hidetrans')}
-                token_tags = tags_for_color
-                
-                if not token_tags:
-                    continue
-                
-                # Bestimme Wortart und relevante Tags BASIEREND AUF TAGS OHNE HideTags/HideTrans
-                wortart, relevant_tags = _get_wortart_and_relevant_tags(token_tags)
-                if not wortart:
-                    continue
-                
-                # Speichere Wortart in token_meta für spätere Verwendung
-                if i < len(token_meta):
-                    token_meta[i]['wortart'] = wortart
-                
-                # Finde die relevanteste Regel basierend auf der Prioritäts-Hierarchie
-                best_rule_config = None
-                highest_priority = -1
-
-                # 1. Prüfe Gruppenanführer-Regel zuerst (niedrigste Priorität)
-                group_leader_id = f"{wortart}"
-                group_leader_config = config.get(group_leader_id)
-                if group_leader_config and 'color' in group_leader_config:
-                    best_rule_config = group_leader_config
-                    highest_priority = 0
-
-                # 2. Prüfe alle spezifischen Tags (höhere Priorität = weiter unten in der Tabelle)
-                for tag in relevant_tags:
-                    rule_id = f"{wortart}_{tag}"
-                    # Versuche auch normalisierte Versionen für Draft-Kompatibilität
-                    normalized_rule_id = _normalize_rule_id(rule_id)
+                rule_config = config.get(rule_id) or config.get(normalized_rule_id)
+                if rule_config and 'color' in rule_config:
+                    # Bestimme Priorität basierend auf Position in der HIERARCHIE
+                    priority = 0
+                    if wortart in HIERARCHIE and tag in HIERARCHIE[wortart]:
+                        # Höhere Priorität = weiter unten in der Liste
+                        priority = HIERARCHIE[wortart].index(tag) + 1
+                    else:
+                        # Fallback: Tags ohne Hierarchie bekommen Standard-Priorität
+                        priority = 100
                     
-                    rule_config = config.get(rule_id) or config.get(normalized_rule_id)
-                    if rule_config and 'color' in rule_config:
-                        # Bestimme Priorität basierend auf Position in der HIERARCHIE
-                        priority = 0
-                        if wortart in HIERARCHIE and tag in HIERARCHIE[wortart]:
-                            # Höhere Priorität = weiter unten in der Liste
-                            priority = HIERARCHIE[wortart].index(tag) + 1
-                        else:
-                            # Fallback: Tags ohne Hierarchie bekommen Standard-Priorität
-                            priority = 100
-                        
-                        if priority > highest_priority:
-                            highest_priority = priority
-                            best_rule_config = rule_config
-                
-                # Regel anwenden (aktuell nur Farbe)
-                computed_color = None
-                computed_symbol = None
-                if best_rule_config and 'color' in best_rule_config:
-                    color = best_rule_config['color']
-                    computed_color = color  # Speichere die berechnete Farbe
-                    if color in COLOR_MAP:
-                        symbol = COLOR_MAP[color]
-                        computed_symbol = symbol
-                        
-                        # Symbol im griechischen Token einfügen
-                        match = RE_WORD_START.search(token)
-                        if match:
-                            new_gr_tokens[i] = token[:match.start(2)] + symbol + token[match.start(2):]
-
-                            # Symbol auf deutsches Token übertragen
-                            if i < len(de_tokens):
-                                de_tok = de_tokens[i]
-                                if de_tok and not any(c in de_tok for c in COLOR_SYMBOLS):
-                                    de_match = RE_WORD_START.search(de_tok)
-                                    if de_match:
-                                        new_de_tokens[i] = de_tok[:de_match.start(2)] + symbol + de_tok[de_match.start(2):]
-                                    else:
-                                        new_de_tokens[i] = symbol + de_tok
-                            
-                            # NEU: Symbol auch auf englisches Token übertragen (für 3-sprachige Texte)
-                            if i < len(new_en_tokens):
-                                en_tok = en_tokens[i]
-                                if en_tok and not any(c in en_tok for c in COLOR_SYMBOLS):
-                                    en_match = RE_WORD_START.search(en_tok)
-                                    if en_match:
-                                        new_en_tokens[i] = en_tok[:en_match.start(2)] + symbol + en_tok[en_match.start(2):]
-                                    else:
-                                        new_en_tokens[i] = symbol + en_tok
-                
-                # WICHTIG: Speichere computed_color und computed_symbol in token_meta, damit Renderer sie auch nach Tag-Entfernung verwenden kann
-                # preserve color chosen by apply_colors so later tag removal does not wipe it
-                if i < len(token_meta):
-                    if computed_color:
-                        token_meta[i]['computed_color'] = computed_color
-                        token_meta[i]['color'] = computed_color  # Also store as 'color' for compatibility
-                    if computed_symbol:
-                        token_meta[i]['color_symbol'] = computed_symbol
-                else:
-                    # fallback - erweitern
-                    while len(token_meta) <= i:
-                        token_meta.append({})
-                    if computed_color:
-                        token_meta[i]['computed_color'] = computed_color
-                        token_meta[i]['color'] = computed_color  # Also store as 'color' for compatibility
-                    if computed_symbol:
-                        token_meta[i]['color_symbol'] = computed_symbol
+                    if priority > highest_priority:
+                        highest_priority = priority
+                        best_rule_config = rule_config
             
-            new_block['gr_tokens'] = new_gr_tokens
-            new_block['de_tokens'] = new_de_tokens
-            if new_en_tokens:  # NEU: Englische Tokens nur setzen, wenn vorhanden
-                new_block['en_tokens'] = new_en_tokens
-            new_blocks.append(new_block)
+            # Regel anwenden (aktuell nur Farbe)
+            computed_color = None
+            computed_symbol = None
+            if best_rule_config and 'color' in best_rule_config:
+                color = best_rule_config['color']
+                computed_color = color  # Speichere die berechnete Farbe
+                if color in COLOR_MAP:
+                    symbol = COLOR_MAP[color]
+                    computed_symbol = symbol
+                    
+                    # Symbol im griechischen Token einfügen
+                    match = RE_WORD_START.search(token)
+                    if match:
+                        new_gr_tokens[i] = token[:match.start(2)] + symbol + token[match.start(2):]
+
+                        # Symbol auf deutsches Token übertragen
+                        if i < len(de_tokens):
+                            de_tok = de_tokens[i]
+                            if de_tok and not any(c in de_tok for c in COLOR_SYMBOLS):
+                                de_match = RE_WORD_START.search(de_tok)
+                                if de_match:
+                                    new_de_tokens[i] = de_tok[:de_match.start(2)] + symbol + de_tok[de_match.start(2):]
+                                else:
+                                    new_de_tokens[i] = symbol + de_tok
+                        
+                        # NEU: Symbol auch auf englisches Token übertragen (für 3-sprachige Texte)
+                        if i < len(new_en_tokens):
+                            en_tok = en_tokens[i]
+                            if en_tok and not any(c in en_tok for c in COLOR_SYMBOLS):
+                                en_match = RE_WORD_START.search(en_tok)
+                                if en_match:
+                                    new_en_tokens[i] = en_tok[:en_match.start(2)] + symbol + en_tok[en_match.start(2):]
+                                else:
+                                    new_en_tokens[i] = symbol + en_tok
+            
+            # WICHTIG: Speichere computed_color und computed_symbol in token_meta, damit Renderer sie auch nach Tag-Entfernung verwenden kann
+            # preserve color chosen by apply_colors so later tag removal does not wipe it
+            if i < len(token_meta):
+                if computed_color:
+                    token_meta[i]['computed_color'] = computed_color
+                    token_meta[i]['color'] = computed_color  # Also store as 'color' for compatibility
+                if computed_symbol:
+                    token_meta[i]['color_symbol'] = computed_symbol
+            else:
+                # fallback - erweitern
+                while len(token_meta) <= i:
+                    token_meta.append({})
+                if computed_color:
+                    token_meta[i]['computed_color'] = computed_color
+                    token_meta[i]['color'] = computed_color  # Also store as 'color' for compatibility
+                if computed_symbol:
+                    token_meta[i]['color_symbol'] = computed_symbol
+        
+        new_block['gr_tokens'] = new_gr_tokens
+        new_block['de_tokens'] = new_de_tokens
+        if new_en_tokens:  # NEU: Englische Tokens nur setzen, wenn vorhanden
+            new_block['en_tokens'] = new_en_tokens
+        new_blocks.append(new_block)
     
     return new_blocks
 
