@@ -1499,6 +1499,8 @@ def measure_token_width_with_visibility_poesie(token: str, font: str, size: floa
     """
     if not token:
 
+        return 0.0  # FIXED: Fehlender return-Statement!
+
     # Berechne Breite direkt mit dem Token, wie es ist (Tags wurden bereits entfernt)
     # Das Token enthält bereits nur noch die sichtbaren Tags!
     w_with_remaining_tags = visible_measure_token(token, font=font, size=size, cfg=cfg, is_greek_row=is_greek_row)
