@@ -1500,6 +1500,9 @@ def measure_token_width_with_visibility_poesie(token: str, font: str, size: floa
     if not token:
 
 
+
+
+
         return 0.0  # FIXED: Fehlender return-Statement!
 
     # Berechne Breite direkt mit dem Token, wie es ist (Tags wurden bereits entfernt)
@@ -1517,6 +1520,26 @@ def measure_token_width_with_visibility_poesie(token: str, font: str, size: floa
     else:
         # Keine Tags vorhanden → NoTag-PDF, verwende gemessene Breite mit größerem Puffer
         return w_with_remaining_tags + max(size * 0.15, 2.5)  # Größerer Puffer für NoTag NoTrans
+
+def _calculate_column_widths(tokens: list, tag_mode: str) -> list:
+    """
+    Berechnet die Spaltenbreiten für eine Token-Liste.
+    WICHTIG: tag_mode bestimmt, ob Tags in der Breiten-Berechnung berücksichtigt werden!
+    
+    tag_mode='TAGS' → Breite MIT Tags
+    tag_mode='NO_TAGS' → Breite OHNE Tags (schmaler!)
+    """
+    widths = []
+    for token in tokens:
+        if tag_mode == 'NO_TAGS':
+            # Entferne Tags aus Token für Breiten-Berechnung
+            token_display = remove_all_tags_from_token(token)
+        else:
+            token_display = token
+        # Berechne Breite basierend auf Zeichen-Länge
+        width = len(token_display) * CHAR_WIDTH  # CHAR_WIDTH ist eine Konstante
+        widths.append(width)
+    return widths
 
 def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None, 
                           indent_pt: float = 0.0,

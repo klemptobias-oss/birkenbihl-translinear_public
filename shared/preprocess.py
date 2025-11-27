@@ -545,26 +545,70 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,A
 # and 'comment_token_mask' set (never None). Wrap the existing function defensively.
 _orig_discover_and_attach_comments = discover_and_attach_comments
 
-def discover_and_attach_comments(blocks):
-    """Defensive wrapper that guarantees non-None return and required fields."""
-    try:
-        final = _orig_discover_and_attach_comments(blocks)
-        if final is None:
-            logging.warning("discover_and_attach_comments returned None -> fallback to input blocks")
-            final = list(blocks)
-    except Exception:
-        logging.exception("discover_and_attach_comments threw; falling back to no-comments")
-        final = list(blocks)
+def discover_and_attach_comments(blocks: list, source_file: str = None) -> list:
+    """
+    Sucht nach Kommentaren in der Source-Datei und fügt sie als type='comment' Blöcke ein.
     
-    # Guarantee fields
-    for b in final:
-        if 'comments' not in b or b.get('comments') is None:
-            b['comments'] = []
-        if 'comment_token_mask' not in b or b.get('comment_token_mask') is None:
-            # default: no tokens are comment-masked
-            gtokens = b.get('gr_tokens') or []
-            b['comment_token_mask'] = [False] * len(gtokens)
-    return final
+    Kommentar-Syntax:
+    - (Nk) Text → Kommentar zu Zeile N
+    - (N-Mk) Text → Kommentar zu Zeilen N-M
+    
+    Wenn source_file gegeben ist, wird die Datei gelesen und nach Kommentaren durchsucht.
+    """
+    if not source_file or not os.path.isfile(source_file):
+        return blocks  # Keine Source-Datei → keine Kommentare
+    
+    import re
+    comments = []  # Liste von (line_num, comment_text)
+    
+    try:
+        with open(source_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                # Suche nach (Nk) oder (N-Mk) am Zeilenanfang
+                match = re.match(r'^\((\d+(?:-\d+)?)k\)\s*(.+)$', line)
+                if match:
+                    line_ref = match.group(1)  # "5" oder "5-10"
+                    comment_text = match.group(2)
+                    comments.append((line_ref, comment_text))
+    except Exception as e:
+        logging.getLogger(__name__).error("discover_and_attach_comments: Fehler beim Lesen von %s: %s", source_file, e)
+        return blocks
+    
+    if not comments:
+        return blocks  # Keine Kommentare gefunden
+    
+    # Füge Kommentare als separate Blöcke ein
+    # Kommentare werden VOR die Zeile eingefügt, auf die sie sich beziehen
+    result = []
+    for b in blocks:
+        # Prüfe, ob ein Kommentar zu diesem Block gehört
+        block_line = b.get('line_number', -1)
+        for line_ref, comment_text in comments:
+            # Parse line_ref (z.B. "5" oder "5-10")
+            if '-' in line_ref:
+                start, end = map(int, line_ref.split('-'))
+                if start <= block_line <= end:
+                    # Kommentar gehört zu diesem Block-Bereich
+                    result.append({
+                        'type': 'comment',
+                        'text': comment_text,
+                        'line_range': (start, end)
+                    })
+            else:
+                line_num = int(line_ref)
+                if line_num == block_line:
+                    # Kommentar gehört zu diesem Block
+                    result.append({
+                        'type': 'comment',
+                        'text': comment_text,
+                        'line_number': line_num
+                    })
+        result.append(b)
+    
+    return result
 
 # ======= Hilfen: Token-Verarbeitung =======
 def _join_tokens_to_line(tokens: list[str]) -> str:
@@ -2226,169 +2270,20 @@ def remove_empty_translation_lines(blocks: List[Dict[str, Any]]) -> List[Dict[st
     
     return result
 
-def all_blocks_have_no_translations(blocks: List[Dict[str, Any]]) -> bool:
+def all_blocks_have_no_translations(blocks: list) -> bool:
     """
-    Prüft, ob ALLE Blöcke keine Übersetzungen haben.
-    Gibt True zurück, wenn alle pair/flow Blöcke leere de_tokens/en_tokens haben.
-    Dies wird verwendet, um den _NoTrans Tag zum Dateinamen hinzuzufügen.
+    Prüft, ob ALLE pair/flow-Blöcke keine Übersetzungen haben.
+    WICHTIG: Kommentar-Blöcke werden ignoriert!
     """
-    for block in blocks:
-        if isinstance(block, dict) and block.get('type') in ('pair', 'flow'):
-            # Prüfe, ob dieser Block Übersetzungen hat
-            de_tokens = block.get('de_tokens', [])
-            en_tokens = block.get('en_tokens', [])
-            
-            # Wenn irgendein Token nicht leer ist, haben wir Übersetzungen
-            if any(tok and tok.strip() for tok in de_tokens):
-                return False
-            if any(tok and tok.strip() for tok in en_tokens):
-                return False
-    
-    # Alle Blöcke haben keine Übersetzungen
+    for b in blocks:
+        if not isinstance(b, dict):
+            continue
+        # WICHTIG: Ignoriere Kommentare, Überschriften, etc.
+        if b.get('type') not in ('pair', 'flow'):
+            continue
+        # Wenn IRGENDEIN Block Übersetzungen hat → False
+        if b.get('de_tokens') or b.get('en_tokens'):
+            return False
+    # Nur True, wenn KEIN pair/flow-Block Übersetzungen hat
     return True
-
-# Hilfsfunktion zum Entfernen von Farben in einem Block
-def _strip_colors_from_block(block: Dict[str, Any]) -> Dict[str, Any]:
-    def proc_tokens(seq: Iterable[str]) -> List[str]:
-        return [_strip_all_colors(tok) for tok in (seq or [])]
-
-    if 'gr_tokens' in block or 'de_tokens' in block:
-        result = {
-            **block,
-            'gr_tokens': proc_tokens(block.get('gr_tokens', [])),
-            'de_tokens': proc_tokens(block.get('de_tokens', [])),
-        }
-        # NEU: Auch en_tokens entfärben, falls vorhanden
-        if 'en_tokens' in block:
-            result['en_tokens'] = proc_tokens(block.get('en_tokens', []))
-        
-        # WICHTIG: Entferne auch Farbsymbole aus token_meta, damit sie nicht wieder hinzugefügt werden
-        if 'token_meta' in result:
-            token_meta = result['token_meta']
-            for meta in token_meta:
-                if isinstance(meta, dict):
-                    # Entferne color_symbol und computed_color aus token_meta
-                    meta.pop('color_symbol', None)
-                    meta.pop('computed_color', None)
-                    meta.pop('color', None)
-        
-        return result
-    return block
-
-# ======= Komfort: Payload aus UI (Hidden JSON) verarbeiten =======
-def apply_from_payload(blocks: List[Dict[str, Any]], payload: Dict[str, Any], *,
-                       default_versmass_mode: VersmassMode = "NORMAL") -> List[Dict[str, Any]]:
-    """
-    Verarbeitet die Konfiguration aus dem Frontend.
-    """
-    tag_config = payload.get("tag_config", {})
-    
-    # 1. Farbmodus bestimmen
-    color_mode = "BLACK_WHITE" if payload.get("color_mode") == "BlackWhite" else "COLOR"
-
-    # 2. Tag-Modus bestimmen (vereinfacht)
-    # Wenn alle Tags auf "hide" stehen, ist es NO_TAGS, ansonsten TAGS
-    # Die Detail-Logik, welche Tags gezeigt werden, steckt jetzt in `apply`
-    all_hidden = True
-    if not tag_config:
-        all_hidden = False
-    else:
-        # ROBUST: Prüfe hide (akzeptiere sowohl True als auch String "hide" für Kompatibilität)
-        for conf in tag_config.values():
-            hide_value = conf.get('hide')
-            should_hide = hide_value == True or hide_value == "hide" or hide_value == "true"
-            if not should_hide:
-                all_hidden = False
-                break
-        
-    tag_mode = "NO_TAGS" if all_hidden else "TAGS"
-    
-    # 3. Versmaß-Modus
-    versmass_mode  = payload.get("versmass", default_versmass_mode)
-
-    return apply(
-        blocks,
-        color_mode=color_mode,
-        tag_mode=tag_mode,
-        versmass_mode=versmass_mode,
-        tag_config=tag_config,
-    )
-
-
-# WICHTIG: Safe-Wrapper für discover_and_attach_comments
-def discover_and_attach_comments_safe(blocks: List[Dict[str, Any]]) -> tuple:
-    """
-    Robust wrapper around discover_and_attach_comments().
-    Returns a tuple (comments_per_block, comment_token_mask_per_block)
-    where:
-      - comments_per_block is a list with len(blocks), each element a list of comment strings
-      - comment_token_mask_per_block is a list with len(blocks), each element a list-of-bools
-    This avoids any 'NoneType' iterability errors downstream.
-    """
-    import traceback
-    try:
-        # call discover_and_attach_comments - it now returns blocks (never None)
-        blocks_result = discover_and_attach_comments(blocks)
-        # ensure blocks_result is not None
-        if blocks_result is None:
-            blocks_result = blocks
-            print("WARNING discover_and_attach_comments_safe: discover_and_attach_comments returned None, using original blocks")
-
-        # Extract comments and masks from blocks_result
-        comments_per_block = []
-        mask_per_block = []
-        for b in blocks_result:
-            comments_per_block.append(b.get('comments', []))
-            mask_per_block.append(b.get('comment_token_mask', []))
-        
-        # Normalize comments_per_block and mask_per_block
-        normalized_comments = []
-        normalized_masks = []
-        for i, b in enumerate(blocks_result):
-            # Normalize comments
-            c_list = comments_per_block[i] if i < len(comments_per_block) else []
-            if not isinstance(c_list, list):
-                c_list = [c_list] if c_list else []
-            # Handle comment dicts - extract text field
-            normalized_c = []
-            for c in c_list:
-                if isinstance(c, dict):
-                    txt = c.get('text') or c.get('comment') or c.get('body') or ""
-                    if txt:
-                        normalized_c.append(str(txt))
-                elif c is not None:
-                    normalized_c.append(str(c))
-            normalized_comments.append(normalized_c)
-            
-            # Normalize mask
-            m_list = mask_per_block[i] if i < len(mask_per_block) else []
-            if not isinstance(m_list, list):
-                grt = b.get('gr_tokens', [])
-                m_list = [False] * len(grt) if grt else []
-            normalized_masks.append([bool(x) for x in m_list])
-        
-        comments_per_block = normalized_comments
-        mask_per_block = normalized_masks
-
-        # Attach safe placeholders to each block so renderers can rely on them
-        for i, b in enumerate(blocks_result):
-            if i < len(comments_per_block):
-                b['comments'] = comments_per_block[i]
-            else:
-                b.setdefault('comments', [])
-            if i < len(mask_per_block):
-                b['comment_token_mask'] = mask_per_block[i]
-            else:
-                grt = b.get('gr_tokens', [])
-                b['comment_token_mask'] = [False] * len(grt) if grt else []
-
-        return comments_per_block, mask_per_block
-    except Exception:
-        print("DEBUG discover_and_attach_comments_safe: unexpected exception")
-        traceback.print_exc()
-        # guarantee safe placeholders on exception
-        for b in blocks:
-            b.setdefault('comments', [])
-            b.setdefault('comment_token_mask', [])
-        return [[] for _ in blocks], [[False] * len(b.get('gr_tokens', [])) for b in blocks]
 
