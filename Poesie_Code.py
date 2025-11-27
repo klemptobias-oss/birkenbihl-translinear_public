@@ -1251,17 +1251,26 @@ def process_input_file(fname:str):
             j = i + 1
             
             # Sammle alle aufeinanderfolgenden Zeilen mit derselben Nummer
-            # (überspringe leere Zeilen dazwischen)
-            # NEU: Überspringe auch Kommentar-Zeilen, damit sie nicht als Teil eines Paares behandelt werden
+            # NEU: Überspringe auch Kommentar-Zeilen, aber füge sie als Blöcke ein!
             while j < len(raw):
                 next_line = (raw[j] or '').strip()
                 if is_empty_or_sep(next_line):
                     j += 1
                     continue
                 
-                # Prüfe, ob die nächste Zeile ein Kommentar ist - überspringe sie dann
-                next_num_temp, _ = extract_line_number(next_line)
+                # Prüfe, ob die nächste Zeile ein Kommentar ist
+                next_num_temp, next_content_temp = extract_line_number(next_line)
                 if next_num_temp is not None and is_comment_line(next_num_temp):
+                    # WICHTIG: Kommentar als Block einfügen, DANN überspringen
+                    start_line, end_line = extract_line_range(next_num_temp)
+                    blocks.append({
+                        'type': 'comment',
+                        'line_num': next_num_temp,
+                        'content': next_content_temp,
+                        'start_line': start_line,
+                        'end_line': end_line,
+                        'original_line': next_line
+                    })
                     j += 1
                     continue  # Überspringe Kommentar-Zeilen
                 
