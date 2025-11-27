@@ -1476,7 +1476,14 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             continue
         gr_tokens = block.get('gr_tokens', [])
         # token_meta sollte von apply_colors gesetzt worden sein; wenn nicht, erzeuge Platzhalter
-        token_meta = block.setdefault("token_meta", [{} for _ in gr_tokens])
+        # WICHTIG: Verwende setdefault nur wenn token_meta nicht existiert, sonst behalte die bestehende token_meta
+        # Dies stellt sicher, dass color_symbol von apply_colors erhalten bleibt
+        if "token_meta" not in block:
+            block["token_meta"] = [{} for _ in gr_tokens]
+        token_meta = block["token_meta"]
+        # Stelle sicher, dass token_meta die richtige Länge hat
+        while len(token_meta) < len(gr_tokens):
+            token_meta.append({})
         
         # if block seems to be a quote-block, treat it the same as normal blocks when removing tags.
         block_in_quote = bool(block.get('_in_quote', False))
