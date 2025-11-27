@@ -1251,7 +1251,8 @@ def process_input_file(fname:str):
             j = i + 1
             
             # Sammle alle aufeinanderfolgenden Zeilen mit derselben Nummer
-            # NEU: Überspringe auch Kommentar-Zeilen, aber füge sie als Blöcke ein!
+            # NEU: Sammle auch Kommentare, aber füge sie NICHT sofort ein!
+            comments_to_insert = []  # Liste: (insert_after_index, comment_block)
             while j < len(raw):
                 next_line = (raw[j] or '').strip()
                 if is_empty_or_sep(next_line):
@@ -1261,16 +1262,18 @@ def process_input_file(fname:str):
                 # Prüfe, ob die nächste Zeile ein Kommentar ist
                 next_num_temp, next_content_temp = extract_line_number(next_line)
                 if next_num_temp is not None and is_comment_line(next_num_temp):
-                    # WICHTIG: Kommentar als Block einfügen, DANN überspringen
+                    # WICHTIG: Kommentar NICHT sofort einfügen, sondern merken!
                     start_line, end_line = extract_line_range(next_num_temp)
-                    blocks.append({
+                    comment_block = {
                         'type': 'comment',
                         'line_num': next_num_temp,
                         'content': next_content_temp,
                         'start_line': start_line,
                         'end_line': end_line,
                         'original_line': next_line
-                    })
+                    }
+                    # Merke: Dieser Kommentar soll NACH dem aktuellen pair-Block eingefügt werden
+                    comments_to_insert.append(comment_block)
                     j += 1
                     continue  # Überspringe Kommentar-Zeilen
                 
@@ -1353,8 +1356,11 @@ def process_input_file(fname:str):
                     'de_tokens': de_tokens,
                     'en_tokens': en_tokens  # NEU: Englische Tokens für 3-sprachige Texte
                 })
-                i = j
-                continue
+                
+                # JETZT die gesammelten Kommentare einfügen (NACH dem pair-Block!)
+                for comment_block in comments_to_insert:
+                    blocks.append(comment_block)
+            
             else:
                 # Nur eine Zeile mit dieser Nummer - könnte Strukturzeile oder Fehler sein
                 # Als Fallback: Prüfe Sprachinhalt (OHNE Sprecher zu berücksichtigen!)
@@ -1502,33 +1508,32 @@ def get_visible_tags_poesie(token: str, tag_config: dict = None) -> list:
     return visible_tags
 
 def measure_token_width_with_visibility_poesie(token: str, font: str, size: float, cfg: dict,
-                                                                                             is_greek_row: bool = False, 
+                                               is_greek_row: bool = False, 
                                                tag_config: dict = None) -> float:
     """
     Berechnet die Breite eines Tokens - Poesie-Version.
     WICHTIG: Diese Funktion erhält das Token NACH der Vorverarbeitung (apply_tag_visibility).
     Die Tags, die im Token noch vorhanden sind, sind bereits die sichtbaren Tags!
-    Wir müssen nicht mehr prüfen, welche Tags versteckt sind - sie sind bereits entfernt.
     """
     if not token:
+        return 0.0
 
-        return 0.0  # FIXED: Fehlender return-Statement!
-
-    # Berechne Breite direkt mit dem Token, wie es ist (Tags wurden bereits entfernt)
-    # Das Token enthält bereits nur noch die sichtbaren Tags!
+    # Berechne Breite mit dem Token, wie es ist
     w_with_remaining_tags = visible_measure_token(token, font=font, size=size, cfg=cfg, is_greek_row=is_greek_row)
     
-    # WICHTIG: Das Token wurde bereits in apply_tag_visibility verarbeitet.
-    # Die Tags, die noch im Token vorhanden sind, sind die sichtbaren Tags!
-    # Wir müssen einfach nur die Breite des aktuellen Tokens messen.
-    
+    # Prüfe ob Tags vorhanden sind
     tags_in_token = RE_TAG_FINDALL.findall(token)
+    
+    # WICHTIG: Puffer-Berechnung basierend auf Tag-Präsenz
     if tags_in_token:
-        # Tags vorhanden → Tag-PDF, verwende gemessene Breite mit angemessenem Puffer
-        return w_with_remaining_tags + max(size * 0.03, 0.8)  # Puffer für Tag-PDFs
+        # Tags vorhanden → Tag-PDF, verwende angemessenen Puffer
+        base_padding = max(size * 0.03, 0.8)
     else:
-        # Keine Tags vorhanden → NoTag-PDF, verwende gemessene Breite mit größerem Puffer
-        return w_with_remaining_tags + max(size * 0.15, 2.5)  # Größerer Puffer für NoTag NoTrans
+        # Keine Tags vorhanden → NoTag-PDF, verwende MINIMALEN Puffer
+        # WICHTIG: Dieser Puffer muss DEUTLICH kleiner sein als bei Tag-PDFs!
+        base_padding = max(size * 0.01, 0.3)  # REDUZIERT von 0.15/2.5 auf 0.01/0.3
+    
+    return w_with_remaining_tags + base_padding
 
 def _calculate_column_widths(tokens: list, tag_mode: str) -> list:
     """
@@ -1590,7 +1595,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_NORMAL_TAG', 4.0)
             eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL_TAG
         else:
-            eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_NORMAL_NOTAG', 3.0)
+            # WICHTIG: NoTag-PDFs brauchen MINIMALE Abstände!
+            eff_cfg['SAFE_EPS_PT'] = 0.5  # REDUZIERT von 3.0 auf 0.5
             eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL_NOTAG
 
     # WICHTIG: Spaltenlängen angleichen (zeilengetreu) - MUSS VOR der widths-Berechnung kommen!
@@ -1652,7 +1658,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     # Layout-Spalten berechnen
     num_w = max(6.0*MM, _sw('[999]', num_style.fontName, num_style.fontSize) + 2.0)
     num_gap = NUM_GAP_MM * MM
-    sp_w = max(global_speaker_width_pt or 0.0, SPEAKER_COL_MIN_MM * MM) if (reserve_speaker_col or speaker) else 0.0
+    sp_w = max(global_speaker_width_pt, SPEAKER_COL_MIN_MM * MM) if (reserve_speaker_col or speaker) else 0.0
     sp_gap = SPEAKER_GAP_MM * MM if sp_w > 0 else 0.0
     indent_w = indent_pt
     avail_tokens_w = doc_width_pt - (num_w + num_gap + sp_w + sp_gap + indent_w)
@@ -1827,8 +1833,10 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         comment_token_mask = block.get('comment_token_mask', []) if block else []
         has_comment_mask = comment_token_mask and any(comment_token_mask)
         
-        if base_line_num is not None and line_comment_colors and base_line_num in line_comment_colors and not has_comment_mask:
-            comment_color = line_comment_colors[base_line_num]
+        # DEAKTIVIERT: Farbliche Hinterlegung für Kommentar-referenzierte Zeilen
+        # (Code bleibt erhalten für spätere Reaktivierung)
+        # if base_line_num is not None and line_comment_colors and base_line_num in line_comment_colors and not has_comment_mask:
+        #     comment_color = line_comment_colors[base_line_num]
 
         if meter_on:
             # Versmaß: KEIN Innenabstand, sonst entstehen Lücken zwischen Flowables
@@ -1841,10 +1849,10 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 ('ALIGN',         (0,0), (0,-1), 'RIGHT'),  # Nummern rechts
                 ('ALIGN',         (1,0), (-1,-1), 'LEFT'),  # Rest links (wie im Epos)
             ]
-            # NEU: Hinterlegung für Kommentar-referenzierte Zeilen
-            if comment_color:
-                bg_color = colors.Color(comment_color[0], comment_color[1], comment_color[2], alpha=0.35)  # Flächige Hinterlegung (wie Prosa)
-                style_list.append(('BACKGROUND', (0,0), (-1,-1), bg_color))
+            # NEU: Hinterlegung DEAKTIVIERT (Code bleibt erhalten)
+            # if comment_color:
+            #     bg_color = colors.Color(comment_color[0], comment_color[1], comment_color[2], alpha=0.35)
+            #     style_list.append(('BACKGROUND', (0,0), (-1,-1), bg_color))
             # Nur Padding für Sprecher-Spalte hinzufügen, wenn sie existiert (sp_w > 0)
             if sp_w > 0:
                 style_list.append(('RIGHTPADDING',  (2,0), (2,-1), 2.0))
@@ -2084,58 +2092,13 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
         if t == 'comment':
             line_num = b.get('line_num', '')
             content = b.get('content', '')
-            original_line = b.get('original_line', '')
+            # ... existing validation code ...
             
-            # WICHTIG: Debug-Ausgabe um zu sehen, ob Kommentare ankommen
-            import logging
-            logger = logging.getLogger(__name__)
-            logger.debug(f"DEBUG Poesie_Code: Kommentar-Block gefunden: line_num={line_num}, content={content[:50] if content else 'None'}, original_line={original_line[:50] if original_line else 'None'}")
+            # WICHTIG: Zeilennummer VOR dem Kommentartext anzeigen!
+            if line_num:
+                text_clean = f"({line_num}) {text_clean}"
             
-            # Fallback: Wenn content leer ist, versuche original_line zu verwenden
-            if not content and original_line:
-                # Extrahiere content aus original_line
-                from Poesie_Code import extract_line_number
-                _, content = extract_line_number(original_line)
-
-            # Wenn immer noch kein content, verwende original_line direkt (ohne Zeilennummer)
-            if not content and original_line:
-                # Entferne Zeilennummer am Anfang (z.B. "(3-7k) " oder "(24k) ")
-                content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
-                content = re.sub(r'^\(\d+k\)\s*', '', content)
-                content = content.strip()
-            
-            # Fallback: Wenn line_num leer ist, extrahiere sie aus original_line
-            if not line_num and original_line:
-                from Poesie_Code import extract_line_number
-                line_num, _ = extract_line_number(original_line)
-            
-            comment_color = b.get('comment_color', COMMENT_COLORS[0])  # Fallback zu rot
-            comment_index = b.get('comment_index', 0)
-            
-            # ROBUST: Prüfe, ob überhaupt Daten vorhanden sind (line_num, content oder original_line)
-            # WICHTIG: Auch wenn line_num leer ist, aber content oder original_line vorhanden ist, rendern wir den Kommentar
-            if not line_num and not content and not original_line:
-                logger.debug(f"DEBUG Poesie_Code: Kommentar übersprungen - keine Daten vorhanden")
-                i += 1
-                continue
-            
-            # Extrahiere Text aus verfügbaren Feldern
-            if content:
-                text_clean = content
-            elif original_line:
-                # Entferne Zeilennummer-Marker aus original_line
-                text_clean = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
-                text_clean = re.sub(r'^\(\d+k\)\s*', '', text_clean)
-                text_clean = text_clean.strip()
-            
-            # Wenn text_clean IMMER NOCH leer ist, überspringe
-            if not text_clean:
-                logger.debug(f"DEBUG Poesie_Code: Kommentar übersprungen - kein Text extrahierbar")
-                i += 1
-                continue
-            
-            # Ab hier ist text_clean garantiert definiert und nicht-leer
-            # Sanitize and truncate
+            # Sanitize and truncate to a reasonable size
             text_clean = " ".join(text_clean.split())
             MAX_COMMENT_CHARS = 400
             if len(text_clean) > MAX_COMMENT_CHARS:
@@ -2157,7 +2120,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*MM
             except:
                 available_width = 170*MM  # Fallback
-            comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]], 
+            comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]],
                                  colWidths=[available_width])
             comment_table.setStyle(TableStyle([
                 ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
