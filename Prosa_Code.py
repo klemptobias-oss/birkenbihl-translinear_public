@@ -1995,6 +1995,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     skipped_indices = set()  # WICHTIG: Verfolge übersprungene Indizes, um Endlosschleifen zu vermeiden
     
     print(f"Prosa_Code: Entering element creation loop (flow_blocks={len(flow_blocks)})", flush=True)
+    comment_count = sum(1 for b in flow_blocks if isinstance(b, dict) and b.get('type') == 'comment')
+    if comment_count > 0:
+        print(f"Prosa_Code: Found {comment_count} comment blocks in flow_blocks", flush=True)
     
     iteration_count = 0
     last_idx_seen = -1  # Track last idx to detect backwards jumps
@@ -2045,8 +2048,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
 
         # NEU: Kommentar-Zeilen (zahlk oder zahl-zahlk) - GANZ EINFACH: Text in grauer Box
         if t == 'comment':
+            print(f"Prosa_Code: Processing comment block at idx={idx}", flush=True)
             original_line = b.get('original_line', '')
             content = b.get('content', '')
+            line_num = b.get('line_num', '')
             
             # WICHTIG: Kommentar-Text direkt aus original_line extrahieren (einfach!)
             # Format: "(105k) Text" oder "(71-77k) Text"
@@ -2054,12 +2059,16 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 # Entferne Zeilennummer-Marker am Anfang: "(105k) " oder "(71-77k) "
                 content = re.sub(r'^\(\d+(?:-\d+)?k\)\s*', '', original_line).strip()
             
-            # Fallback: Wenn immer noch kein content, verwende original_line
+            # Fallback: Wenn immer noch kein content, verwende original_line (ohne Zeilennummer)
             if not content:
-                content = original_line.strip()
+                if original_line:
+                    content = re.sub(r'^\(\d+(?:-\d+)?k\)\s*', '', original_line).strip()
+                else:
+                    content = ''
             
             # Wenn content leer ist, überspringe
             if not content:
+                print(f"Prosa_Code: Skipping comment block at idx={idx} (content is empty, original_line='{original_line[:50] if original_line else ''}')", flush=True)
                 idx += 1
                 continue
             
