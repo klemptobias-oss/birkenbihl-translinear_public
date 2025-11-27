@@ -269,16 +269,18 @@ def _process_one_input(infile: str,
     
     blocks = Poesie.process_input_file(infile)
     
-    # WICHTIG: Für Poesie werden Kommentare bereits als separate type='comment' Blöcke von process_input_file erkannt
-    # Wir müssen discover_and_attach_comments NICHT aufrufen, da dies die Kommentar-Blöcke nicht verarbeitet
-    # und sie möglicherweise entfernt oder umformatiert
-    final_blocks = blocks
+    # WICHTIG: Für Poesie werden Kommentare NICHT automatisch als separate Blöcke erkannt
+    # Wir müssen discover_and_attach_comments aufrufen, um sie zu finden und als Blöcke hinzuzufügen
+    from shared.preprocess import discover_and_attach_comments
+    blocks = discover_and_attach_comments(blocks)
     
-    # Debug: Zähle Kommentar-Blöcke
+    # Debug: Zähle Kommentar-Blöcke NACH discover_and_attach_comments
     comment_blocks = [b for b in blocks if isinstance(b, dict) and b.get('type') == 'comment']
-    logger.info("DEBUG poesie_pdf: %d Kommentar-Blöcke gefunden von %d total Blöcken", len(comment_blocks), len(blocks))
+    logger.info("DEBUG poesie_pdf: %d Kommentar-Blöcke gefunden von %d total Blöcken (nach discover_and_attach_comments)", len(comment_blocks), len(blocks))
     if comment_blocks:
         logger.debug("DEBUG poesie_pdf: Erster Kommentar-Block: %s", comment_blocks[0])
+    
+    final_blocks = blocks
     
     print(f"→ Anzahl Blöcke: {len(blocks)}")
 
@@ -329,13 +331,6 @@ def _process_one_input(infile: str,
         print(f"DEBUG poesie_pdf: tag_config keys: {list(final_tag_config.keys())[:10]}")
         hide_count = sum(1 for conf in final_tag_config.values() if isinstance(conf, dict) and (conf.get('hide') == True or conf.get('hide') == 'hide' or conf.get('hide') == 'true'))
         print(f"DEBUG poesie_pdf: {hide_count} Regeln mit hide=true gefunden")
-
-    # ---- Stelle sicher, dass Kommentare erkannt und zugeordnet sind ----
-    # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen
-    # Kommentare sind bereits in final_blocks['comments'] vorhanden
-    
-    # WICHTIG: Reihenfolge - Farben ZUERST (basierend auf ORIGINALEN Tags), dann Tags entfernen
-    # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal in der Loop!
     
     total_blocks = len(final_blocks) if isinstance(final_blocks, list) else 0
     num_variants = len(list(itertools.product(strengths, colors, tags, meters)))
@@ -350,20 +345,22 @@ def _process_one_input(infile: str,
         except Exception:
             pass
         
-        # WICHTIG: Poesie funktioniert anders als Prosa!
-        # Poesie_Code.create_pdf entfernt Tags/Farben selbst basierend auf tag_mode.
-        # Wir müssen nur die Farben für BLACK_WHITE entfernen und die Blöcke vorbereiten.
+        # KRITISCH: Wir müssen für JEDE Variante eine FRISCHE KOPIE der Blöcke verwenden
+        # und die Preprocessing-Schritte NEU durchführen!
+        # Sonst werden die Farben/Tags/etc. von vorherigen Varianten wiederverwendet.
+        import copy
+        variant_blocks = copy.deepcopy(final_blocks)
         
-        # Schritt 1: Farben hinzufügen (basierend auf tag_config)
+        # Schritt 1: Farben hinzufügen (basierend auf tag_config) - FÜR JEDE VARIANTE NEU!
         try:
             disable_comment_bg_flag = (final_tag_config.get('disable_comment_bg', False) if isinstance(final_tag_config, dict) else False)
-            blocks_with_colors = preprocess.apply_colors(final_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
+            blocks_with_colors = preprocess.apply_colors(variant_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
         except Exception:
             print("ERROR poesie_pdf: apply_colors failed:")
             traceback.print_exc()
-            blocks_with_colors = final_blocks
+            blocks_with_colors = variant_blocks
         
-        # Schritt 2: Tag-Sichtbarkeit anwenden (basierend auf tag_config)
+        # Schritt 2: Tag-Sichtbarkeit anwenden (basierend auf tag_config) - FÜR JEDE VARIANTE NEU!
         try:
             hidden_by_wortart = (final_tag_config.get('hidden_tags_by_wortart') if isinstance(final_tag_config, dict) else None)
             blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
@@ -377,12 +374,9 @@ def _process_one_input(infile: str,
 
         # Schritt 4: Farbsymbole entfernen (für BLACK_WHITE)
         if color_mode == "BLACK_WHITE":
-            final_blocks = preprocess.remove_all_color_symbols(blocks_no_empty_trans)
+            variant_final_blocks = preprocess.remove_all_color_symbols(blocks_no_empty_trans)
         else: # COLOR
-            final_blocks = blocks_no_empty_trans
-
-        # WICHTIG: Ab hier müssen wir final_blocks verwenden (nicht mehr final_blocks aus dem Input!)
-        # final_blocks enthält jetzt die token_meta von apply_colors
+            variant_final_blocks = blocks_no_empty_trans
 
         # Schritt 5: PDF rendern
         name_no_meter = output_pdf_name(base, NameOpts(strength=strength, color_mode=color_mode, tag_mode=tag_mode))
@@ -390,7 +384,7 @@ def _process_one_input(infile: str,
         # WICHTIG: Prüfe, ob alle Übersetzungen ausgeblendet sind
         has_no_translations = all(
             not b.get('de_tokens') and not b.get('en_tokens')
-            for b in final_blocks
+            for b in variant_final_blocks
             if b.get('type') == 'pair'
         )
         
@@ -411,13 +405,13 @@ def _process_one_input(infile: str,
         opts = PdfRenderOptions(strength=strength, color_mode=color_mode, tag_mode=tag_mode, versmass_mode=versmass_mode)
         
         # build the PDF document (via create_pdf_unified which calls Poesie.create_pdf which calls doc.build())
-        logger.info("poesie_pdf: about to call reportlab build() for %s (blocks=%d)", out_name, total_blocks)
+        logger.info("poesie_pdf: about to call reportlab build() for %s (blocks=%d)", out_name, len(variant_final_blocks))
         try:
             sys.stdout.flush()
         except Exception:
             pass
         try:
-            create_pdf_unified("poesie", Poesie, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
+            create_pdf_unified("poesie", Poesie, variant_final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
             logger.info("poesie_pdf: reportlab build() finished for %s", out_name)
             print(f"✓ PDF erstellt → {out_name}")
         except Exception:

@@ -245,109 +245,40 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     if not os.path.isfile(infile):
         print(f"⚠ Datei fehlt: {infile} — übersprungen"); return
 
+    print(f"→ Verarbeite: {infile}")
     base = base_from_input_path(Path(infile))
-    base_name = str(base)  # for logging and debug dumps
+    print(f"→ Base-Name aus Datei: {base}")
     
-    # --- START: install a global timeout and log start ---
-    def _install_global_timeout():
-        """
-        Install a SIGALRM handler which aborts the process after PROSA_PDF_TIMEOUT seconds.
-        Default timeout: 600 seconds (10 minutes). This prevents CI jobs from hanging forever.
-        """
-        try:
-            timeout = int(os.environ.get("PROSA_PDF_TIMEOUT", "600"))
-            def _timeout_handler(signum, frame):
-                logging.getLogger(__name__).error("prosa_pdf: GLOBAL TIMEOUT reached (%s seconds) - aborting", timeout)
-                # attempt to flush stdout/stderr so CI shows this immediately
-                try:
-                    sys.stdout.flush()
-                    sys.stderr.flush()
-                except Exception:
-                    pass
-                # exit non-zero so CI marks job failed
-                raise SystemExit(2)
-            signal.signal(signal.SIGALRM, _timeout_handler)
-            signal.alarm(timeout)
-            logging.getLogger(__name__).info("prosa_pdf: global timeout installed: %s seconds", timeout)
-        except Exception:
-            logging.getLogger(__name__).exception("prosa_pdf: failed to install global timeout (continuing without alarm)")
-
-    _install_global_timeout()
-    logging.getLogger(__name__).info("prosa_pdf: START processing file=%s", base_name)
-    # make sure logs are visible quickly in CI
-    try:
-        sys.stdout.flush()
-    except Exception:
-        pass
-    t_start = time.time()
-    # --- END start/timeout block ---
-    
-    generated_files = []  # track created PDFs
-    
-    t_process = time.time()
-    blocks_raw = Prosa.process_input_file(infile)
-    logging.getLogger(__name__).info("prosa_pdf: process_input_file done (%.2f s), blocks_raw=%d", time.time() - t_process, len(blocks_raw) if blocks_raw else 0)
-    
-    # WICHTIG: Kommentare MÜSSEN VOR group_pairs_into_flows() erkannt werden,
-    # da discover_and_attach_comments() nach block['gr'] (String) sucht,
-    # aber nach group_pairs_into_flows() haben flow-Blöcke nur noch block['gr_tokens'] (Liste)!
-    # --- robust comment discovery: never abort the whole run because of comment attach errors ---
-    logger.info("prosa_pdf: START processing file=%s", base_name)
-    try:
-        sys.stdout.flush()
-    except Exception:
-        pass
+    logger = logging.getLogger(__name__)
+    logger.info("prosa_pdf: START processing file=%s", str(base))
     start_time = time.time()
     
-    # robust call to discover_and_attach_comments: try new signature, fallback to old
-    # WICHTIG: Aufruf VOR group_pairs_into_flows(), damit block['gr'] noch vorhanden ist!
-    blocks_with_comments = None
-    comment_regexes = None
-    strip_comment_lines = True
-    try:
-        blocks_with_comments = preprocess.discover_and_attach_comments(
-            blocks_raw,
-            comment_regexes=comment_regexes,
-            strip_comment_lines=strip_comment_lines,
-        )
-    except TypeError:
-        try:
-            blocks_with_comments = preprocess.discover_and_attach_comments(blocks_raw)
-        except Exception as e:
-            logger.exception("prosa_pdf: discover/attach comments failed (continuing without comments): %s", e)
-            blocks_with_comments = blocks_raw
-    except Exception as e:
-        logger.exception("prosa_pdf: discover/attach comments failed (continuing without comments): %s", e)
-        blocks_with_comments = blocks_raw
-
-    if blocks_with_comments is None:
-        logger.debug("prosa_pdf: discover_and_attach_comments returned None -> using original blocks")
-        blocks_with_comments = blocks_raw
+    blocks = Prosa.process_input_file(infile)
     
-    # JETZT: Tokenisierung durchführen (nach Kommentar-Erkennung)
-    t_group = time.time()
-    blocks = Prosa.group_pairs_into_flows(blocks_with_comments)
-    logging.getLogger(__name__).info("prosa_pdf: group_pairs_into_flows done (%.2f s), blocks=%d", time.time() - t_group, len(blocks) if blocks else 0)
+    # WICHTIG: Für Prosa werden Kommentare NICHT automatisch als separate Blöcke erkannt
+    # Wir müssen discover_and_attach_comments aufrufen
+    from shared.preprocess import discover_and_attach_comments
+    blocks = discover_and_attach_comments(blocks)
     
-    # Verwende blocks als final_blocks (Kommentare sind bereits erkannt und angehängt)
+    # Debug: Zähle Kommentar-Blöcke
+    comment_blocks = [b for b in blocks if isinstance(b, dict) and b.get('type') == 'comment']
+    logger.info("DEBUG prosa_pdf: %d Kommentar-Blöcke gefunden von %d total Blöcken (nach discover_and_attach_comments)", len(comment_blocks), len(blocks))
+    
     final_blocks = blocks
-
-    # Compact debug summary for CI logs: print only first block's comments and a short mask sample.
-    try:
-        c0 = final_blocks[0].get('comments') if isinstance(final_blocks, list) and final_blocks else None
-        mask0 = final_blocks[0].get('comment_token_mask') if isinstance(final_blocks, list) and final_blocks else None
-        logger.info("DEBUG prosa_pdf: final_blocks[0].comments=%s mask_sample=%s",
-                    (c0 if c0 else []),
-                    (mask0[:40] if mask0 is not None else None))
-    except Exception:
-        logger.debug("prosa_pdf: failed to print final_blocks[0] debug info", exc_info=True)
+    
+    print(f"→ Anzahl Blöcke: {len(blocks)}")
 
     # Erkenne Sprache aus Dateinamen
     ancient_lang_strength = _detect_language_from_filename(infile)
     print(f"  → Erkannte Sprache: {ancient_lang_strength}")
 
-    # NEUE KONFIGURATION: 8 Varianten pro Input-Datei
-    # - NORMAL: Nichts fett (weder antike Sprache noch Überschriften)
+    # WICHTIG: Prosa hat KEINE Versmaß-Varianten
+    # NEUE KONFIGURATION: 8 Varianten pro Input (wie bei Poesie)
+    # - NORMAL (antike Sprache nicht fett) + FETT (antike Sprache fett)
+    # - COLOR + BLACK_WHITE
+    # - TAGS + NO_TAGS
+    # WICHTIG: Bei PROSA ist die Fettung anders:
+    # - NORMAL: deutsche Übersetzung normal, antike Sprache normal
     # - GR_FETT/LAT_FETT: Antike Sprache fett, Überschriften normal (um Tinte zu sparen)
     strengths = ("NORMAL", ancient_lang_strength)
     colors    = ("COLOR", "BLACK_WHITE")
@@ -369,8 +300,6 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         hide_count = sum(1 for conf in final_tag_config.values() if isinstance(conf, dict) and (conf.get('hide') == True or conf.get('hide') == 'hide' or conf.get('hide') == 'true'))
         print(f"DEBUG prosa_pdf: {hide_count} Regeln mit hide=true gefunden")
     
-    # ---- Stelle sicher, dass Kommentare erkannt und zugeordnet sind ----
-    # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen (vor der Loop)
     # Kommentare sind bereits in final_blocks['comments'] vorhanden
     
     num_variants = len(list(itertools.product(strengths, colors, tags)))
@@ -386,16 +315,29 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         except Exception:
             pass
         
+        # KRITISCH: Wir müssen für JEDE Variante eine FRISCHE KOPIE der Blöcke verwenden
+        # und die Preprocessing-Schritte NEU durchführen!
+        import copy
+        variant_blocks = copy.deepcopy(final_blocks)
+        
         # Pipeline: apply_colors -> apply_tag_visibility (NUR wenn tag_config vorhanden) -> optional remove_all_tags (NO_TAGS)
-        # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal!
         try:
             t1 = time.time()
             logging.getLogger(__name__).info("prosa_pdf: apply_colors START (strength=%s, color=%s, tag=%s)", strength, color_mode, tag_mode)
             disable_comment_bg_flag = (final_tag_config.get('disable_comment_bg', False) if isinstance(final_tag_config, dict) else False)
             # WICHTIG: apply_colors wird IMMER aufgerufen (auch bei BLACK_WHITE), 
             # da es Farben basierend auf tag_config hinzufügt. Bei BLACK_WHITE werden Farben später entfernt.
-            blocks_with_colors = preprocess.apply_colors(final_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
-            
+            blocks_with_colors = preprocess.apply_colors(variant_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
+            t2 = time.time()
+            logging.getLogger(__name__).info("prosa_pdf: apply_colors END (%.2fs)", t2 - t1)
+        except Exception as e:
+            tb = traceback.format_exc()
+            logging.getLogger(__name__).error("prosa_pdf: apply_colors failed: %s", str(e))
+            logging.getLogger(__name__).debug("prosa_pdf: apply_colors traceback:\n%s", tb[:800])
+            blocks_with_colors = variant_blocks
+        
+        # 2) Tag-Sichtbarkeit anwenden (wenn tag_config vorhanden)
+        try:
             # WICHTIG: Tag-Sichtbarkeit basierend auf tag_config anwenden (wie in Poesie)
             # apply_tag_visibility wird IMMER aufgerufen (auch bei TAGS), um die Tag-Sichtbarkeit zu steuern
             # Bei TAGS-Varianten: Entfernt nur die Tags, die in tag_config als "hide" markiert sind
@@ -407,11 +349,10 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             tb = traceback.format_exc()
             logging.getLogger(__name__).error("prosa_pdf: apply_colors/apply_tag_visibility failed (continuing): %s", str(e))
             logging.getLogger(__name__).debug("prosa_pdf: apply_colors/apply_tag_visibility traceback (first 800 chars):\n%s", tb[:800])
-            # WICHTIG: Verwende blocks_with_colors falls verfügbar, sonst final_blocks (wie in Poesie)
-            blocks_after_visibility = blocks_with_colors if 'blocks_with_colors' in locals() else final_blocks
+            # WICHTIG: Verwende blocks_with_colors falls verfügbar, sonst variant_blocks
+            blocks_after_visibility = blocks_with_colors if 'blocks_with_colors' in locals() else variant_blocks
         
         # 3) Entferne ALLE Tags für NO_TAGS-Varianten (NUR bei NO_TAGS!)
-        # WICHTIG: Diese Prüfung muss NACH dem try-except-Block stehen, damit sie auch bei Fehlern ausgeführt wird
         if tag_mode != "TAGS":  # NO_TAGS - wie in Poesie
             # Bei NO_TAGS-Varianten: Entferne ALLE Tags komplett
             # WICHTIG: Verwende blocks_after_visibility (die bereits durch apply_tag_visibility verarbeitet wurde)
@@ -436,9 +377,9 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
 
         # Schritt 4: Farbsymbole entfernen (für _BlackWhite-Versionen).
         if color_mode == "BLACK_WHITE":
-            final_blocks = preprocess.remove_all_color_symbols(blocks_no_empty_trans)
+            variant_final_blocks = preprocess.remove_all_color_symbols(blocks_no_empty_trans)
         else: # COLOR
-            final_blocks = blocks_no_empty_trans
+            variant_final_blocks = blocks_no_empty_trans
 
         # Schritt 5: PDF rendern mit dem final prozessierten Block-Set.
         out_name = output_pdf_name(base, NameOpts(strength=strength, color_mode=color_mode, tag_mode=tag_mode))
@@ -449,103 +390,29 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             out_name = p.with_name(p.stem + "_NoTrans" + p.suffix).name
         opts = PdfRenderOptions(strength=strength, color_mode=color_mode, tag_mode=tag_mode, versmass_mode="REMOVE_MARKERS")
         
-        # --- DEBUG-HILFSFUNKTIONEN ---
-        import re
-        RE_TAG_INLINE = re.compile(r'\([A-Za-z0-9/≈äöüßÄÖÜ]+\)')
-        
-        def _sample_tokens_with_tags(blocks, limit=20):
-            found = []
-            for b in blocks:
-                if not isinstance(b, dict):
-                    continue
-                for seqk in ('gr_tokens','de_tokens','en_tokens'):
-                    seq = b.get(seqk, [])
-                    for tok in (seq or []):
-                        if tok and RE_TAG_INLINE.search(tok):
-                            found.append(tok)
-                            if len(found) >= limit:
-                                return found
-            return found
-        
-        def _count_flow_comments(blocks):
-            total = 0
-            examples = []
-            for b in blocks:
-                if isinstance(b, dict):
-                    # Prüfe direkt auf type='comment'
-                    if b.get('type') == 'comment':
-                        total += 1
-                        if len(examples) < 3:
-                            examples.append(b.get('content') or b.get('text') or b.get('original_line') or '')
-                    # Prüfe auf flow-Blöcke mit Kommentaren
-                    if b.get('type') == 'flow':
-                        if 'flow_blocks' in b and isinstance(b['flow_blocks'], list):
-                            for fb in b['flow_blocks']:
-                                if isinstance(fb, dict) and fb.get('type') == 'comment':
-                                    total += 1
-                                    if len(examples) < 3:
-                                        examples.append(fb.get('content') or fb.get('text') or fb.get('original_line') or '')
-            return total, examples[:3]
-        
-        # Drucke kurze Zusammenfassung
-        sample = _sample_tokens_with_tags(final_blocks, limit=20)
-        print(f"DEBUG: verbleibende Tokens mit '(...)' (sollte LEER sein bei Tag-Entfernung): {len(sample)} gefunden")
-        if sample:
-            logger.debug(f"DEBUG: Beispiele: {sample[:5]}")
-        num_comments, comment_examples = _count_flow_comments(final_blocks)
-        logger.debug(f"DEBUG: Anzahl gefundener Kommentare in final_blocks = {num_comments}. Beispiele: {comment_examples}")
-        # --- Ende DEBUG ---
-        
-        # WICHTIG: Die unified_api wird jetzt nur noch für das Rendering aufgerufen.
-        # Die Vorverarbeitung ist hier abgeschlossen. `tag_config` wird trotzdem durchgereicht,
-        # falls der Renderer selbst noch Konfigurationsdetails benötigt (z.B. für Platzierung).
-        # build the PDF document (via create_pdf_unified which calls Prosa.create_pdf which calls doc.build())
-        logger.info("prosa_pdf: about to call reportlab build() for %s (blocks=%d)", out_name, total_blocks)
+        # build the PDF via unified API
+        logger.info("prosa_pdf: about to call reportlab build() for %s (blocks=%d)", out_name, len(variant_final_blocks))
         try:
             sys.stdout.flush()
         except Exception:
             pass
         try:
-            # call the real build (this may be the long blocking step)
-            create_pdf_unified("prosa", Prosa, final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
+            create_pdf_unified("prosa", Prosa, variant_final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
             logger.info("prosa_pdf: reportlab build() finished for %s", out_name)
-            generated_files.append(out_name)
-            logger.info("✓ PDF created -> %s", out_name)
+            print(f"✓ PDF erstellt → {out_name}")
         except Exception:
             logger.exception("prosa_pdf: reportlab build() FAILED for %s", out_name)
             raise
-        finally:
-            # cancel the global alarm because the heavy work finished
-            try:
-                signal.alarm(0)
-            except Exception:
-                pass
     
-    # turn off the alarm now that the heavy section finished (if it was set)
-    try:
-        signal.alarm(0)
-    except Exception:
-        pass
-    
-    # final summary for CI logs: list files created
     try:
         end_time = time.time()
-        logger.info("prosa_pdf: finished processing %s in %.1f seconds", base_name, end_time - t_start)
-        logger.info("prosa_pdf: END processing file=%s created_files=%d", base_name, len(generated_files))
-        for f in generated_files:
-            logger.info("✓ PDF created -> %s", f)
+        logger.info("prosa_pdf: finished processing %s in %.1f seconds", str(base), end_time - start_time)
         try:
             sys.stdout.flush()
         except Exception:
             pass
     except Exception:
-        logger.debug("prosa_pdf: failed to log generated files", exc_info=True)
-    
-    # optional: print suppressed counts for table warnings
-    for f in [h for h in getattr(logger, "filters", []) if isinstance(h, _RepeatedMessageFilter)]:
-        total_suppressed = sum(1 for c in f._counts.values() if c > 100)
-        if total_suppressed > 0:
-            logger.info("Suppressed repeated Table/Comment warnings (patterns suppressed: %d)", total_suppressed)
+        pass
 
 def main():
     # Parse command line arguments for tag config
