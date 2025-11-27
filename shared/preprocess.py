@@ -1687,12 +1687,13 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                 # SICHERN: welche Tags wir für dieses token tatsächlich entfernt haben
                 # Stelle sicher, dass token_meta existiert
                 if i < len(token_meta):
-                    token_meta[i]['removed_tags'] = actually_removed
+                    # WICHTIG: tags_to_remove ist das Set der entfernten Tags (nicht actually_removed!)
+                    token_meta[i]['removed_tags'] = list(tags_to_remove) if tags_to_remove else []
                 else:
                     # fallback - erweitern
                     while len(token_meta) <= i:
                         token_meta.append({})
-                    token_meta[i]['removed_tags'] = actually_removed
+                    token_meta[i]['removed_tags'] = list(tags_to_remove) if tags_to_remove else []
             else:
                 new_tokens_for_block.append(tok)
                 # kein Entfernen — entfernte Tags leer setzen
@@ -1737,12 +1738,15 @@ def remove_all_tags(blocks: List[Dict[str, Any]],
 
     for b in blocks_copy:
         if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
-            processed_blocks.append(_process_pair_block_for_tags(
+            # WICHTIG: Verwende _process_pair_block statt der nicht-existierenden _process_pair_block_for_tags
+            processed_blocks.append(_process_pair_block(
                 b,
-                sup_keep=set(),
-                sub_keep=set(),
-                remove_all=True,
-                translation_rules=translation_rules if translation_rules else None,
+                color_mode="COLOR",  # Farben bleiben erhalten
+                tag_mode="NO_TAGS",  # Alle Tags entfernen
+                versmass_mode="NORMAL",
+                color_pos_keep=None,
+                sup_keep=set(),  # Keine SUP-Tags behalten
+                sub_keep=set(),  # Keine SUB-Tags behalten
             ))
         else:
             # Kommentare und andere Block-Typen durchreichen
@@ -1897,7 +1901,7 @@ def _hide_stephanus_in_translations(block: dict, translation_rules: Optional[dic
     for idx, gr_token in enumerate(gr_tokens):
         if not gr_token:
             continue
-        
+
         # Prüfe ob Übersetzung für dieses Token ausgeblendet werden soll
         should_hide = _token_should_hide_translation(gr_token, translation_rules) if translation_rules else False
         

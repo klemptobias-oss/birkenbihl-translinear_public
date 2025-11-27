@@ -2119,79 +2119,27 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 i += 1
                 continue
             
-            # WICHTIG: Wenn line_num leer ist, aber original_line vorhanden ist, extrahiere line_num erneut
-            if not line_num and original_line:
-                from Poesie_Code import extract_line_number
-                line_num, _ = extract_line_number(original_line)
-            
-            # WICHTIG: Wenn content leer ist, aber original_line vorhanden ist, extrahiere content erneut
-            if not content and original_line:
-                from Poesie_Code import extract_line_number
-                _, content = extract_line_number(original_line)
-                # Wenn immer noch kein content, verwende original_line direkt (ohne Zeilennummer)
-                if not content:
-                    content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
-                    content = re.sub(r'^\(\d+k\)\s*', '', content)
-                    content = content.strip()
-            
-            # Fallback: Wenn line_num leer ist, extrahiere sie aus content (falls möglich)
-            if not line_num and content:
-                from Poesie_Code import extract_line_number
-                line_num, _ = extract_line_number(content)
-            
-            # Formatiere Zeilennummer in der Kommentar-Farbe (WICHTIG: xml_escape auf line_num anwenden, um "-" nicht als Farbmarker zu interpretieren)
-            # Konvertiere RGB-Tupel zu Hex für HTML
-            r, g, b = comment_color
-            color_hex = f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
-            
-            # Kommentar-Text mit kleinerem Font und etwas kursiv/leicht hervorgehoben
-            formatted_parts = []
-            # Zeilennummer in Kommentar-Farbe (WICHTIG: xml_escape auf line_num anwenden, um "-" nicht als Farbmarker zu interpretieren)
-            comment_num_size = num_style.fontSize * 0.85  # Etwas kleiner als normale Zeilennummern
-            if line_num:
-                formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
-            # Kommentar-Text mit kleinerem Font und Farbe
-            comment_size = DE_SIZE * 0.8  # Deutlich kleiner (80% statt 90%)
-            # Sicherstellen, dass content vorhanden ist
+            # Extrahiere Text aus verfügbaren Feldern
             if content:
-                formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#666666"><i> {xml_escape(content)}</i></font>')
-            else:
-                # Fallback: Verwende original_line wenn content leer ist
-                original_line_fallback = b.get('original_line', '')
-                if original_line_fallback:
-                    # Entferne Zeilennummer aus original_line für content
-                    _, fallback_content = extract_line_number(original_line_fallback)
-                    if fallback_content:
-                        formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#666666"><i> {xml_escape(fallback_content)}</i></font>')
-                    elif original_line_fallback.strip():
-                        # Wenn kein content extrahiert werden konnte, verwende original_line direkt (ohne Zeilennummer)
-                        fallback_content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line_fallback)
-                        fallback_content = re.sub(r'^\(\d+k\)\s*', '', fallback_content)
-                        fallback_content = fallback_content.strip()
-                        if fallback_content:
-                            formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#666666"><i> {xml_escape(fallback_content)}</i></font>')
+                text_clean = content
+            elif original_line:
+                # Entferne Zeilennummer-Marker aus original_line
+                text_clean = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
+                text_clean = re.sub(r'^\(\d+k\)\s*', '', text_clean)
+                text_clean = text_clean.strip()
             
-            # WICHTIG: Wenn formatted_parts leer ist, verwende original_line direkt
-            if not formatted_parts and original_line:
-                # Verwende original_line direkt, aber entferne Zeilennummer
-                fallback_content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
-                fallback_content = re.sub(r'^\(\d+k\)\s*', '', fallback_content)
-                fallback_content = fallback_content.strip()
-                if fallback_content:
-                    formatted_parts.append(f'<font name="DejaVu" size="{comment_size}" color="#666666"><i>{xml_escape(fallback_content)}</i></font>')
-            
-            formatted_text = ''.join(formatted_parts) if formatted_parts else xml_escape(original_line or '')
-            
-            # WICHTIG: Wenn formatted_text immer noch leer ist, überspringe diesen Kommentar
-            if not formatted_text or not formatted_text.strip():
+            # Wenn text_clean IMMER NOCH leer ist, überspringe
+            if not text_clean:
+                logger.debug(f"DEBUG Poesie_Code: Kommentar übersprungen - kein Text extrahierbar")
                 i += 1
                 continue
             
-            # WICHTIG: Kommentare als graue Box rendern (wie in Prosa)
-            # Verwende Table mit Hintergrundfarbe für bessere Sichtbarkeit
-            from reportlab.platypus import Table, TableStyle
-            # Berechne verfügbare Breite basierend auf A4 und Margins
-            available_width = A4[0] - left_margin - right_margin - 8*MM
+            # Ab hier ist text_clean garantiert definiert und nicht-leer
+            # Sanitize and truncate
+            text_clean = " ".join(text_clean.split())
+            MAX_COMMENT_CHARS = 400
+            if len(text_clean) > MAX_COMMENT_CHARS:
+                text_clean = text_clean[:MAX_COMMENT_CHARS].rstrip() + "…"
             
             # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT
             comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
