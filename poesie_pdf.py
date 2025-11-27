@@ -373,41 +373,37 @@ def _process_one_input(infile: str,
         except Exception:
             pass
         
-        # Pipeline: apply_colors -> apply_tag_visibility -> optional remove_all_tags (NO_TAGS)
-        # WICHTIG: discover_and_attach_comments wurde bereits oben aufgerufen - nicht nochmal!
-        # WICHTIG: Verwende final_blocks (mit Kommentaren), nicht blocks!
+        # WICHTIG: Poesie funktioniert anders als Prosa!
+        # Poesie_Code.create_pdf entfernt Tags/Farben selbst basierend auf tag_mode.
+        # Wir müssen nur die Farben für BLACK_WHITE entfernen und die Blöcke vorbereiten.
+        
+        # Schritt 1: Farben hinzufügen (basierend auf tag_config)
         try:
             disable_comment_bg_flag = (final_tag_config.get('disable_comment_bg', False) if isinstance(final_tag_config, dict) else False)
             blocks_with_colors = preprocess.apply_colors(final_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
+        except Exception:
+            print("ERROR poesie_pdf: apply_colors failed:")
+            traceback.print_exc()
+            blocks_with_colors = final_blocks
+        
+        # Schritt 2: Tag-Sichtbarkeit anwenden (basierend auf tag_config)
+        try:
             hidden_by_wortart = (final_tag_config.get('hidden_tags_by_wortart') if isinstance(final_tag_config, dict) else None)
             blocks_after_visibility = preprocess.apply_tag_visibility(blocks_with_colors, final_tag_config, hidden_tags_by_wortart=hidden_by_wortart)
         except Exception:
-            print("ERROR poesie_pdf: apply_colors/apply_tag_visibility failed:")
+            print("ERROR poesie_pdf: apply_tag_visibility failed:")
             traceback.print_exc()
-            # try to continue with original blocks (best effort)
-            blocks_after_visibility = blocks
-        
-        # 3) apply tag visibility (bereits im try-Block gesetzt für TAGS, nur NO_TAGS weiter verarbeiten)
-        if tag_mode != "TAGS": # NO_TAGS
-            blocks_after_visibility = preprocess.remove_all_tags(blocks_with_colors, final_tag_config)
-            # Finally: if NO_TAGS variant requested, strip all tags now (but keep token_meta color decisions)
-            for b in blocks_after_visibility:
-                if b.get("type") not in ("pair", "flow"):
-                    continue
-                toks = b.get("gr_tokens", [])
-                for ti, t in enumerate(toks):
-                    if not t:
-                        continue
-                    b['gr_tokens'][ti] = preprocess.remove_all_tags_from_token(t)
+            blocks_after_visibility = blocks_with_colors
 
         # Schritt 3: Entferne leere Übersetzungszeilen (wenn alle Übersetzungen ausgeblendet)
-        # WICHTIG: Verwende blocks_after_visibility, nicht blocks_with_colors!
         blocks_no_empty_trans = preprocess.remove_empty_translation_lines(blocks_after_visibility)
         
         # Prüfe, ob alle Übersetzungen ausgeblendet sind (für _NoTrans Tag)
         has_no_translations = preprocess.all_blocks_have_no_translations(blocks_no_empty_trans)
 
         # Schritt 4: Farbsymbole entfernen (für _BlackWhite-Versionen)
+        # WICHTIG: Poesie_Code.create_pdf entfernt Tags selbst basierend auf tag_mode,
+        # aber Farben müssen wir hier entfernen für BLACK_WHITE
         if color_mode == "BLACK_WHITE":
             final_blocks = preprocess.remove_all_color_symbols(blocks_no_empty_trans)
         else: # COLOR
