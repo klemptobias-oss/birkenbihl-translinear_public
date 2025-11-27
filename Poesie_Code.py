@@ -1713,7 +1713,26 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
 
             # NICHT-Versmaß: Bars entfernen + pro Spaltenbreite weich zentrieren (Epos-Logik)
             # WICHTIG: Entferne Tags basierend auf tag_mode und token_meta
+            # DEBUG: Prüfe Farbsymbole vor _strip_tags_from_token
+            has_color_before = any(sym in tok for sym in ['#', '+', '-', '§', '$'])
+            if block and global_idx is not None:
+                token_meta = block.get('token_meta', [])
+                meta = token_meta[global_idx] if global_idx < len(token_meta) else {}
+                color_symbol_from_meta = meta.get('color_symbol')
+                if has_color_before or color_symbol_from_meta:
+                    import logging
+                    logger = logging.getLogger(__name__)
+                    logger.debug(f"DEBUG Poesie_Code: Token vor _strip_tags_from_token: tok={tok[:50]}, has_color={has_color_before}, color_from_meta={color_symbol_from_meta}, gr_bold={gr_bold}, tag_mode={tag_mode}")
+            
             tok_cleaned = _strip_tags_from_token(tok, block=block, tok_idx=global_idx, tag_mode=tag_mode)
+            
+            # DEBUG: Prüfe Farbsymbole nach _strip_tags_from_token
+            has_color_after = any(sym in tok_cleaned for sym in ['#', '+', '-', '§', '$'])
+            if has_color_before and not has_color_after:
+                import logging
+                logger = logging.getLogger(__name__)
+                logger.warning(f"DEBUG Poesie_Code: Farbsymbol verloren! Vor: {tok[:50]}, Nach: {tok_cleaned[:50]}, gr_bold={gr_bold}, tag_mode={tag_mode}")
+            
             html_ = format_token_markup(tok_cleaned, is_greek_row=is_gr, gr_bold=(gr_bold if is_gr else False), remove_bars_instead=True)
             # Spaltenbreite dieser Zelle
             if is_gr and idx_in_slice is not None:
