@@ -241,7 +241,7 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
     Entfernt Tags aus einem Token basierend auf tag_mode und token_meta.
     - Wenn tag_mode == "NO_TAGS": entferne alle Tags
     - Sonst: entferne nur Tags, die in token_meta[i]['removed_tags'] markiert sind
-    WICHTIG: Farbsymbole (#, +, -, §, $) bleiben IMMER erhalten, AUSSER wenn sie bereits entfernt wurden (BLACK_WHITE)!
+    WICHTIG: Farbsymbole (#, +, -, §, $) bleiben IMMER erhalten!
     """
     if not tok:
         return tok
@@ -250,29 +250,27 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
     color_symbol_from_meta = None
     if block is not None and tok_idx is not None:
         token_meta = block.get('token_meta', [])
-        meta = token_meta[tok_idx] if tok_idx < len(token_meta) else {}
-        color_symbol_from_meta = meta.get('color_symbol')
+        if tok_idx < len(token_meta):
+            meta = token_meta[tok_idx]
+            color_symbol_from_meta = meta.get('color_symbol')
     
     # WICHTIG: Speichere Farbsymbole vor der Tag-Entfernung (aus Token UND token_meta)
-    # WICHTIG: token_meta hat IMMER Priorität - das ist die Quelle der Wahrheit aus der Tag-Konfigurationstabelle
     color_symbols = []
-    # ZUERST: Hole Farbsymbol aus token_meta (wird von apply_colors gesetzt) - DAS IST DIE QUELLE DER WAHRHEIT
+    
+    # ZUERST: Hole Farbsymbol aus token_meta (wird von apply_colors gesetzt)
     if color_symbol_from_meta:
-        # WICHTIG: token_meta hat IMMER Priorität, auch wenn das Symbol bereits im Token ist
-        # Das stellt sicher, dass die Farbe aus der Tag-Konfigurationstabelle verwendet wird
         color_symbols = [color_symbol_from_meta]
     else:
         # FALLBACK: Prüfe Token nur wenn kein Farbsymbol in token_meta vorhanden ist
         for sym in ['#', '+', '-', '§', '$']:
             if sym in tok:
                 color_symbols.append(sym)
-                break  # Nur das erste Farbsymbol nehmen
+                break
     
     # If NO_TAGS - remove everything
     if tag_mode == "NO_TAGS":
         cleaned = remove_all_tags_from_token(tok)
         # WICHTIG: Stelle sicher, dass Farbsymbole erhalten bleiben
-        # Verwende Farbsymbol aus token_meta, falls im Token nicht vorhanden
         for sym in color_symbols:
             if sym not in cleaned:
                 # Füge Farbsymbol am Anfang des Wortes hinzu (nach führenden Markern)
@@ -286,21 +284,20 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
     # Otherwise remove only tags that were recorded as removed by apply_tag_visibility
     if block is not None and tok_idx is not None:
         token_meta = block.get('token_meta', [])
-        meta = token_meta[tok_idx] if tok_idx < len(token_meta) else {}
-        removed_tags = set(meta.get('removed_tags', []))
-        if removed_tags:
-            cleaned = remove_tags_from_token(tok, removed_tags)
-            # WICHTIG: Stelle sicher, dass Farbsymbole erhalten bleiben
-            # Verwende Farbsymbol aus token_meta, falls im Token nicht vorhanden
-            for sym in color_symbols:
-                if sym not in cleaned:
-                    # Füge Farbsymbol am Anfang des Wortes hinzu (nach führenden Markern)
-                    match = RE_WORD_START.search(cleaned)
-                    if match:
-                        cleaned = cleaned[:match.start(2)] + sym + cleaned[match.start(2):]
-                    else:
-                        cleaned = sym + cleaned
-            return cleaned
+        if tok_idx < len(token_meta):
+            meta = token_meta[tok_idx]
+            removed_tags = set(meta.get('removed_tags', []))
+            if removed_tags:
+                cleaned = remove_tags_from_token(tok, removed_tags)
+                # WICHTIG: Stelle sicher, dass Farbsymbole erhalten bleiben
+                for sym in color_symbols:
+                    if sym not in cleaned:
+                        match = RE_WORD_START.search(cleaned)
+                        if match:
+                            cleaned = cleaned[:match.start(2)] + sym + cleaned[match.start(2):]
+                        else:
+                            cleaned = sym + cleaned
+                return cleaned
     
     # nothing to remove for this token, keep as-is
     return tok
@@ -1134,9 +1131,8 @@ def measure_full_layout_width(gr_tokens, de_tokens, speaker, line_label, *,
     layout_width += num_w + NUM_GAP_MM * MM
 
     # Sprecher-Laterne (falls vorhanden oder reserviert)
-    if speaker or global_speaker_width_pt > 0:
-        sp_w = max(global_speaker_width_pt, SPEAKER_COL_MIN_MM * MM)
-        layout_width += sp_w + SPEAKER_GAP_MM * MM
+    sp_w = max(global_speaker_width_pt, SPEAKER_COL_MIN_MM * MM)
+    sp_gap = SPEAKER_GAP_MM * MM
 
     # Gesamtbreite = Layout-Elemente + Token-Breite
     return layout_width + token_width
@@ -2129,14 +2125,19 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     content = re.sub(r'^\(\d+k\)\s*', '', content)
                     content = content.strip()
             
-            # Formatiere Zeilennummer in der Kommentar-Farbe (rot/blau/grün)
+            # Fallback: Wenn line_num leer ist, extrahiere sie aus content (falls möglich)
+            if not line_num and content:
+                from Poesie_Code import extract_line_number
+                line_num, _ = extract_line_number(content)
+            
+            # Formatiere Zeilennummer in der Kommentar-Farbe (WICHTIG: xml_escape auf line_num anwenden, um "-" zu schützen)
             # Konvertiere RGB-Tupel zu Hex für HTML
             r, g, b = comment_color
             color_hex = f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
             
             # Kommentar-Text mit kleinerem Font und etwas kursiv/leicht hervorgehoben
             formatted_parts = []
-            # Zeilennummer in Kommentar-Farbe (WICHTIG: xml_escape auf line_num anwenden, um "-" zu schützen)
+            # Zeilennummer in Kommentar-Farbe (WICHTIG: xml_escape auf line_num anwenden, um "-" nicht als Farbmarker zu interpretieren)
             comment_num_size = num_style.fontSize * 0.85  # Etwas kleiner als normale Zeilennummern
             if line_num:
                 formatted_parts.append(f'<font name="DejaVu" size="{comment_num_size}" color="{color_hex}"><b>[{xml_escape(line_num)}]</b></font>')
@@ -2192,10 +2193,14 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 spaceBefore=2, spaceAfter=2,
                 textColor=colors.Color(0.25, 0.25, 0.25),  # Dunkleres Grau
                 backColor=colors.Color(0.92, 0.92, 0.92))  # GRAU HINTERLEGT
-            
-            # Erstelle Table mit Hintergrundfarbe für bessere Sichtbarkeit
-            # formatted_text enthält bereits HTML, daher verwenden wir es direkt
-            comment_table = Table([[Paragraph(formatted_text, comment_style_simple)]], 
+            # Grau hinterlegte Box: Table mit Hintergrundfarbe
+            from reportlab.platypus import Table, TableStyle
+            try:
+                from Poesie_Code import doc  # Versuche doc zu finden
+                available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*MM
+            except:
+                available_width = 170*MM  # Fallback
+            comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]], 
                                  colWidths=[available_width])
             comment_table.setStyle(TableStyle([
                 ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
@@ -2204,7 +2209,6 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 ('TOPPADDING', (0, 0), (-1, -1), 3*MM),
                 ('BOTTOMPADDING', (0, 0), (-1, -1), 3*MM),
             ]))
-            
             elements.append(Spacer(1, 2*MM))
             elements.append(comment_table)
             elements.append(Spacer(1, 2*MM))
@@ -2219,7 +2223,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             # Dies verhindert, dass Zeilen aus verschiedenen Gedichten kumulativ eingerückt werden
             heading_text = b.get('text', '').lower()
             if t in ['h1_eq', 'h2_eq', 'h3_eq'] and 'gedicht' in heading_text:
-                cum_width_by_base = {}  # Reset für neues Gedicht
+                cum_width_by_base = {}
             
             # Wähle den richtigen Style basierend auf dem Typ
             if t == 'h1_eq':
@@ -2568,8 +2572,6 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 cum_width_by_base[base_num] = cum_width_by_base.get(base_num, 0.0) + this_w
 
             i += 1; continue
-
-        i += 1
 
     doc.build(elements)
 

@@ -286,6 +286,7 @@ def _has_any_pos(token: str, pos_whitelist: set[str]) -> bool:
 def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict[str, Any]]:
     """
     Fügt Farbsymbole und (zukünftig) Platzierungen basierend auf der vollen Konfiguration hinzu.
+    WICHTIG: Speichert auch `token_meta` in jedem Block, um Farbsymbole bei späterer Tag-Entfernung zu erhalten.
     """
     if not config:
         return blocks
@@ -296,69 +297,66 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
             new_block = block.copy()
             gr_tokens = new_block.get('gr_tokens', [])
             de_tokens = new_block.get('de_tokens', [])
-            en_tokens = new_block.get('en_tokens', [])  # NEU: Englische Tokens für 3-sprachige Texte
+            en_tokens = new_block.get('en_tokens', [])
             
             new_gr_tokens = list(gr_tokens)
             new_de_tokens = list(de_tokens)
-            new_en_tokens = list(en_tokens) if en_tokens else []  # NEU: Englische Tokens kopieren
+            new_en_tokens = list(en_tokens) if en_tokens else []
+            
+            # NEU: Erstelle token_meta für jeden Token
+            token_meta = []
 
             for i, token in enumerate(gr_tokens):
                 if not token or any(c in token for c in COLOR_SYMBOLS):
+                    token_meta.append({'color_symbol': None, 'removed_tags': []})
                     continue
 
                 token_tags = set(_extract_tags(token))
                 if not token_tags:
+                    token_meta.append({'color_symbol': None, 'removed_tags': []})
                     continue
                 
-                # Bestimme Wortart und relevante Tags
                 wortart, relevant_tags = _get_wortart_and_relevant_tags(token_tags)
                 if not wortart:
+                    token_meta.append({'color_symbol': None, 'removed_tags': []})
                     continue
                 
-                # Finde die relevanteste Regel basierend auf der Prioritäts-Hierarchie
                 best_rule_config = None
                 highest_priority = -1
 
-                # 1. Prüfe Gruppenanführer-Regel zuerst (niedrigste Priorität)
                 group_leader_id = f"{wortart}"
                 group_leader_config = config.get(group_leader_id)
                 if group_leader_config and 'color' in group_leader_config:
                     best_rule_config = group_leader_config
                     highest_priority = 0
 
-                # 2. Prüfe alle spezifischen Tags (höhere Priorität = weiter unten in der Tabelle)
                 for tag in relevant_tags:
                     rule_id = f"{wortart}_{tag}"
-                    # Versuche auch normalisierte Versionen für Draft-Kompatibilität
                     normalized_rule_id = _normalize_rule_id(rule_id)
                     
                     rule_config = config.get(rule_id) or config.get(normalized_rule_id)
                     if rule_config and 'color' in rule_config:
-                        # Bestimme Priorität basierend auf Position in der HIERARCHIE
                         priority = 0
                         if wortart in HIERARCHIE and tag in HIERARCHIE[wortart]:
-                            # Höhere Priorität = weiter unten in der Liste
                             priority = HIERARCHIE[wortart].index(tag) + 1
                         else:
-                            # Fallback: Tags ohne Hierarchie bekommen Standard-Priorität
                             priority = 100
                         
                         if priority > highest_priority:
                             highest_priority = priority
                             best_rule_config = rule_config
                 
-                # Regel anwenden (aktuell nur Farbe)
+                color_symbol = None
                 if best_rule_config and 'color' in best_rule_config:
                     color = best_rule_config['color']
                     if color in COLOR_MAP:
                         symbol = COLOR_MAP[color]
+                        color_symbol = symbol
                         
-                        # Symbol im griechischen Token einfügen
                         match = RE_WORD_START.search(token)
                         if match:
                             new_gr_tokens[i] = token[:match.start(2)] + symbol + token[match.start(2):]
 
-                            # Symbol auf deutsches Token übertragen
                             if i < len(de_tokens):
                                 de_tok = de_tokens[i]
                                 if de_tok and not any(c in de_tok for c in COLOR_SYMBOLS):
@@ -368,7 +366,6 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                                     else:
                                         new_de_tokens[i] = symbol + de_tok
                             
-                            # NEU: Symbol auch auf englisches Token übertragen (für 3-sprachige Texte)
                             if i < len(new_en_tokens):
                                 en_tok = en_tokens[i]
                                 if en_tok and not any(c in en_tok for c in COLOR_SYMBOLS):
@@ -377,11 +374,17 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                                         new_en_tokens[i] = en_tok[:en_match.start(2)] + symbol + en_tok[en_match.start(2):]
                                     else:
                                         new_en_tokens[i] = symbol + en_tok
+                
+                token_meta.append({
+                    'color_symbol': color_symbol,
+                    'removed_tags': []
+                })
             
             new_block['gr_tokens'] = new_gr_tokens
             new_block['de_tokens'] = new_de_tokens
-            if new_en_tokens:  # NEU: Englische Tokens nur setzen, wenn vorhanden
+            if new_en_tokens:
                 new_block['en_tokens'] = new_en_tokens
+            new_block['token_meta'] = token_meta
             new_blocks.append(new_block)
         else:
             new_blocks.append(block)
