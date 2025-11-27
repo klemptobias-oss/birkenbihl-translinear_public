@@ -1685,7 +1685,6 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         if i < len(block.get('en_tokens', [])):
                             block['en_tokens'][i] = ''
                 # SICHERN: welche Tags wir für dieses token tatsächlich entfernt haben
-                actually_removed = list((set(orig_tags) & set(tags_to_remove)))
                 # Stelle sicher, dass token_meta existiert
                 if i < len(token_meta):
                     token_meta[i]['removed_tags'] = actually_removed
@@ -1849,4 +1848,98 @@ def remove_empty_translation_lines(blocks: list) -> list:
             # Sonst: Block komplett leer → entfernen (nicht zu result hinzufügen)
     
     return result
+
+def _hide_manual_translations_in_block(block: dict) -> dict:
+    """
+    Versteckt Übersetzungen für Tokens mit (HideTrans) Tag.
+    
+    WICHTIG: Diese Funktion wird von apply_colors() aufgerufen!
+    NEU ERSTELLT - existierte vorher NICHT!
+    """
+    if not isinstance(block, dict) or block.get('type') not in ('pair', 'flow'):
+        return block
+    
+    gr_tokens = block.get('gr_tokens', [])
+    de_tokens = block.get('de_tokens', [])
+    en_tokens = block.get('en_tokens', [])
+    
+    for idx, gr_token in enumerate(gr_tokens):
+        if not gr_token:
+            continue
+        
+        # Prüfe auf (HideTrans) Tag
+        if TRANSLATION_HIDE_TAG in gr_token or '(HideTrans)' in gr_token or '(hidetrans)' in gr_token.lower():
+            # Verstecke deutsche Übersetzung
+            if idx < len(de_tokens):
+                de_tokens[idx] = ''
+            # Verstecke englische Übersetzung
+            if idx < len(en_tokens):
+                en_tokens[idx] = ''
+    
+    block['de_tokens'] = de_tokens
+    block['en_tokens'] = en_tokens
+    return block
+
+def _hide_stephanus_in_translations(block: dict, translation_rules: Optional[dict]) -> dict:
+    """
+    Entfernt Stephanus-Paginierungen aus Übersetzungszeilen, wenn Übersetzungen ausgeblendet sind.
+    
+    WICHTIG: Diese Funktion wird von apply_colors() aufgerufen!
+    NEU ERSTELLT - existierte vorher NICHT!
+    """
+    if not isinstance(block, dict) or block.get('type') not in ('pair', 'flow'):
+        return block
+    
+    gr_tokens = block.get('gr_tokens', [])
+    de_tokens = block.get('de_tokens', [])
+    en_tokens = block.get('en_tokens', [])
+    
+    for idx, gr_token in enumerate(gr_tokens):
+        if not gr_token:
+            continue
+        
+        # Prüfe ob Übersetzung für dieses Token ausgeblendet werden soll
+        should_hide = _token_should_hide_translation(gr_token, translation_rules) if translation_rules else False
+        
+        if should_hide:
+            # Entferne Stephanus-Paginierungen aus Übersetzungen
+            if idx < len(de_tokens):
+                de_text = de_tokens[idx]
+                if de_text and RE_STEPHANUS.search(de_text):
+                    de_tokens[idx] = RE_STEPHANUS.sub('', de_text).strip()
+            
+            if idx < len(en_tokens):
+                en_text = en_tokens[idx]
+                if en_text and RE_STEPHANUS.search(en_text):
+                    en_tokens[idx] = RE_STEPHANUS.sub('', en_text).strip()
+    
+    block['de_tokens'] = de_tokens
+    block['en_tokens'] = en_tokens
+    return block
+
+def all_blocks_have_no_translations(blocks: list) -> bool:
+    """
+    Prüft, ob ALLE pair/flow Blöcke keine Übersetzungen haben.
+    Wird für _NoTrans Suffix verwendet.
+    
+    WICHTIG: Diese Funktion wird von prosa_pdf.py und poesie_pdf.py aufgerufen!
+    NEU ERSTELLT - existierte vorher nur als Inline-Code!
+    """
+    if not blocks:
+        return True
+    
+    for block in blocks:
+        if not isinstance(block, dict):
+            continue
+        if block.get('type') not in ('pair', 'flow'):
+            continue
+        
+        de_tokens = block.get('de_tokens', [])
+        en_tokens = block.get('en_tokens', [])
+        
+        # Wenn irgendein Token eine nicht-leere Übersetzung hat
+        if any(de_tokens) or any(en_tokens):
+            return False
+    
+    return True
 
