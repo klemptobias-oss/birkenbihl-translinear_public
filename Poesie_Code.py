@@ -241,16 +241,30 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
     Entfernt Tags aus einem Token basierend auf tag_mode und token_meta.
     - Wenn tag_mode == "NO_TAGS": entferne alle Tags
     - Sonst: entferne nur Tags, die in token_meta[i]['removed_tags'] markiert sind
+    WICHTIG: Farbsymbole (#, +, -, §, $) bleiben IMMER erhalten!
     """
     if not tok:
         return tok
     
+    # WICHTIG: Speichere Farbsymbole vor der Tag-Entfernung
+    color_symbols = []
+    for sym in ['#', '+', '-', '§', '$']:
+        if sym in tok:
+            color_symbols.append(sym)
+    
     # If NO_TAGS - remove everything
     if tag_mode == "NO_TAGS":
         cleaned = remove_all_tags_from_token(tok)
-        # DEBUG: Reduziert - nur bei ersten 3 Tokens ausgeben (verhindert 70k+ Zeilen)
-        # if cleaned != tok:
-        #     print(f"DEBUG _strip_tags_from_token: (NO_TAGS) Tag entfernt aus Token: '{tok}' → '{cleaned}'")
+        # WICHTIG: Stelle sicher, dass Farbsymbole erhalten bleiben
+        # (remove_all_tags_from_token entfernt nur Tags, nicht Farbsymbole, aber zur Sicherheit)
+        for sym in color_symbols:
+            if sym not in cleaned:
+                # Füge Farbsymbol am Anfang des Wortes hinzu (nach führenden Markern)
+                match = RE_WORD_START.search(cleaned)
+                if match:
+                    cleaned = cleaned[:match.start(2)] + sym + cleaned[match.start(2):]
+                else:
+                    cleaned = sym + cleaned
         return cleaned
     
     # Otherwise remove only tags that were recorded as removed by apply_tag_visibility
@@ -260,9 +274,16 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
         removed_tags = set(meta.get('removed_tags', []))
         if removed_tags:
             cleaned = remove_tags_from_token(tok, removed_tags)
-            # DEBUG: Reduziert - nur bei ersten 3 Tokens ausgeben (verhindert 70k+ Zeilen)
-            # if cleaned != tok:
-            #     print(f"DEBUG _strip_tags_from_token: Tag entfernt aus Token: '{tok}' → '{cleaned}' (removed_tags={sorted(list(removed_tags))})")
+            # WICHTIG: Stelle sicher, dass Farbsymbole erhalten bleiben
+            # (remove_tags_from_token entfernt nur Tags, nicht Farbsymbole, aber zur Sicherheit)
+            for sym in color_symbols:
+                if sym not in cleaned:
+                    # Füge Farbsymbol am Anfang des Wortes hinzu (nach führenden Markern)
+                    match = RE_WORD_START.search(cleaned)
+                    if match:
+                        cleaned = cleaned[:match.start(2)] + sym + cleaned[match.start(2):]
+                    else:
+                        cleaned = sym + cleaned
             return cleaned
     
     # nothing to remove for this token, keep as-is
@@ -2058,9 +2079,25 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             comment_index = b.get('comment_index', 0)
             
             # ROBUST: Prüfe, ob überhaupt Daten vorhanden sind (line_num, content oder original_line)
+            # WICHTIG: Auch wenn line_num leer ist, aber content oder original_line vorhanden ist, rendern wir den Kommentar
             if not line_num and not content and not original_line:
                 i += 1
                 continue
+            
+            # WICHTIG: Wenn line_num leer ist, aber original_line vorhanden ist, extrahiere line_num erneut
+            if not line_num and original_line:
+                from Poesie_Code import extract_line_number
+                line_num, _ = extract_line_number(original_line)
+            
+            # WICHTIG: Wenn content leer ist, aber original_line vorhanden ist, extrahiere content erneut
+            if not content and original_line:
+                from Poesie_Code import extract_line_number
+                _, content = extract_line_number(original_line)
+                # Wenn immer noch kein content, verwende original_line direkt (ohne Zeilennummer)
+                if not content:
+                    content = re.sub(r'^\(\d+-\d+k\)\s*', '', original_line)
+                    content = re.sub(r'^\(\d+k\)\s*', '', content)
+                    content = content.strip()
             
             # Formatiere Zeilennummer in der Kommentar-Farbe (rot/blau/grün)
             # Konvertiere RGB-Tupel zu Hex für HTML
