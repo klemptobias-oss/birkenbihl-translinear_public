@@ -1638,7 +1638,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         def _end_has_bar_local(s: str) -> bool: return _end_has_bar(s)
         def _has_leading_bar_local(s: str) -> bool: return _has_leading_bar(s)
 
-        def cell(is_gr, tok, idx_in_slice):
+        def cell(is_gr, tok, idx_in_slice, global_idx=None):
             if not tok:
                 return Paragraph('', token_gr_style if is_gr else token_de_style)
 
@@ -1669,8 +1669,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 )
 
             # NICHT-Versmaß: Bars entfernen + pro Spaltenbreite weich zentrieren (Epos-Logik)
-            # DEFENSIV: Entferne Tags aus Token, falls sie noch vorhanden sind
-            tok_cleaned = _strip_tags_from_token(tok)
+            # WICHTIG: Entferne Tags basierend auf tag_mode und token_meta
+            tok_cleaned = _strip_tags_from_token(tok, block=block, tok_idx=global_idx, tag_mode=tag_mode)
             html_ = format_token_markup(tok_cleaned, is_greek_row=is_gr, gr_bold=(gr_bold if is_gr else False), remove_bars_instead=True)
             # Spaltenbreite dieser Zelle
             if is_gr and idx_in_slice is not None:
@@ -1684,7 +1684,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 # idx_in_slice ist bei DE nicht gesetzt; nutze parallelen Index über enumerate weiter unten
                 return html_  # wird später im de_cells-Block zentriert
 
-        gr_cells = [cell(True,  t, k) for k, t in enumerate(slice_gr)]
+        gr_cells = [cell(True,  t, k, global_idx=i+k) for k, t in enumerate(slice_gr)]
 
         # DE-Zellen mit gleicher Zentrierung wie im Epos
         # NEU: Pipe-Ersetzung für hide_pipes
@@ -1892,9 +1892,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
     # Speichere line_comment_colors für späteres Rendering
     # (wird in build_tables_for_pair verwendet)
 
-    # NoTags-Schalter global setzen, wenn Dateiname auf _NoTags.pdf endet
+    # NoTags-Schalter global setzen basierend auf tag_mode (nicht nur Dateiname!)
     global CURRENT_IS_NOTAGS
-    CURRENT_IS_NOTAGS = pdf_name.lower().endswith("_notags.pdf")
+    CURRENT_IS_NOTAGS = (tag_mode == "NO_TAGS") or pdf_name.lower().endswith("_notags.pdf")
     # Lateinischer Text? (keine Versmaß-Marker-Entfernung für i, r, L)
     global CURRENT_IS_LATIN
     CURRENT_IS_LATIN = "_LAT_" in pdf_name.upper() or "_lat_" in pdf_name.lower()
@@ -2220,6 +2220,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         indent_pt=next_indent_pt,
                         global_speaker_width_pt=next_current_speaker_width_pt,
                         meter_on=versmass_display and next_has_versmass,
+                        tag_mode=tag_mode,  # WICHTIG: tag_mode übergeben für korrekte Tag-Entfernung
                         en_tokens=next_en_tokens,
                         tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                         base_line_num=next_base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
@@ -2321,6 +2322,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 indent_pt=indent_pt,
                 global_speaker_width_pt=current_speaker_width_pt,  # Verwende aktuelle Breite!
                 meter_on=versmass_display and has_versmass,
+                tag_mode=tag_mode,  # WICHTIG: tag_mode übergeben für korrekte Tag-Entfernung
                 en_tokens=en_tokens,
                 tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                 base_line_num=base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
