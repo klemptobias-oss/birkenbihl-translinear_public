@@ -408,7 +408,11 @@ def is_comment_line(line_num: str | None) -> bool:
     """Prüft, ob eine Zeilennummer ein Kommentar ist (endet mit 'k')."""
     if not line_num:
         return False
-    return line_num.lower().endswith('k')
+    # WICHTIG: Normalisiere line_num (entferne Leerzeichen, Kleinbuchstaben)
+    line_num_clean = line_num.strip().lower()
+    # Prüfe ob es mit 'k' endet (für einfache Kommentare wie "9k")
+    # ODER ob es das Format "zahl-zahlk" hat (für Bereichs-Kommentare wie "2-4k")
+    return line_num_clean.endswith('k') or '-' in line_num_clean and line_num_clean.split('-')[-1].endswith('k')
 
 def extract_line_range(line_num: str | None) -> tuple[int | None, int | None]:
     """
@@ -1489,7 +1493,7 @@ def get_visible_tags_poesie(token: str, tag_config: dict = None) -> list:
     return visible_tags
 
 def measure_token_width_with_visibility_poesie(token: str, font: str, size: float, cfg: dict,
-                                               is_greek_row: bool = False, 
+                                                                                             is_greek_row: bool = False, 
                                                tag_config: dict = None) -> float:
     """
     Berechnet die Breite eines Tokens - Poesie-Version.
@@ -1498,10 +1502,6 @@ def measure_token_width_with_visibility_poesie(token: str, font: str, size: floa
     Wir müssen nicht mehr prüfen, welche Tags versteckt sind - sie sind bereits entfernt.
     """
     if not token:
-
-
-
-
 
         return 0.0  # FIXED: Fehlender return-Statement!
 
