@@ -1391,7 +1391,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
-                                                                                                                                                         # Nur griechische Zeile sichtbar
+                                                                                                                                
+            # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
             is_notag = False
             if tag_config is None:
@@ -2136,13 +2137,13 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             continue
 
         if t == 'h3_eq':
-            render_block_comments(b, elements, doc)
             processed_h3_indices.add(idx)
+            render_block_comments(b, elements, doc)
             print(f"Prosa_Code: Processing h3_eq block at idx={idx}", flush=True)
             h3_para = Paragraph(xml_escape(b['text']), style_eq_h3)
             idx += 1
             
-            # WICHTIG: Suche nach dem nächsten flow-Block - überspringe ALLES außer flow!
+            # KRITISCH: Suche nach flow-Block
             scan = idx
             found_flow = False
             
@@ -2151,10 +2152,14 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 print(f"Prosa_Code: h3_eq scanning idx={scan}, type={scan_type}", flush=True)
                 
                 if scan_type == 'flow':
-                    # FLOW GEFUNDEN!
+                    if scan in processed_flow_indices:
+                        scan += 1
+                        continue
+                    
                     found_flow = True
                     processed_flow_indices.add(scan)
-                    print(f"Prosa_Code: h3_eq found flow block at scan={scan}, calling build_flow_tables()", flush=True)
+                    print(f"Prosa_Code: h3_eq found flow at scan={scan}", flush=True)
+                    
                     flow_tables = build_flow_tables(flow_blocks[scan])
                     if flow_tables:
                         has_en = flow_blocks[scan].get('has_en', False)
@@ -2170,14 +2175,12 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     else:
                         elements.append(KeepTogether([h3_para]))
                         idx = scan + 1
-                    break  # WICHTIG: Schleife verlassen nach flow-Block
+                    break
                 
-                # NICHT flow → weitersuchen
                 scan += 1
             
             if not found_flow:
-                # Kein flow-Block gefunden - Überschrift allein
-                print(f"Prosa_Code: h3_eq no flow found after scanning to idx={scan}", flush=True)
+                print(f"Prosa_Code: h3_eq no flow found, idx={scan}", flush=True)
                 elements.append(KeepTogether([h3_para]))
                 idx = scan
             
@@ -2515,9 +2518,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 import traceback
                 traceback.print_exc()
                 raise
-            
-            idx += 1
-            continue
 
     # DIAGNOSE: Logging nach Element-Erstellung, vor doc.build()
     logger.info("Prosa_Code.create_pdf: Element creation complete (elements=%d)", len(elements))
