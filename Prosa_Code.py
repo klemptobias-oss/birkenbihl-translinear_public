@@ -2077,18 +2077,33 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 continue
             
             # GANZ EINFACH: Kommentar in grauer Box rendern
-            # Grau hinterlegter Kommentar-Box mit kleiner Schrift
+            # Grau hinterlegte Box: Table mit Hintergrundfarbe
             from reportlab.platypus import Table, TableStyle
             comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                fontName='DejaVu', fontSize=7,  # Noch kleiner
-                leading=9,  # Dichte Zeilenabstände
-                alignment=TA_LEFT, 
-                leftIndent=3*mm, rightIndent=3*mm,
-                spaceBefore=3, spaceAfter=3,
-                textColor=colors.Color(0.3, 0.3, 0.3), italic=True,
-                backColor=colors.Color(0.95, 0.95, 0.95))  # GRAU HINTERLEGT
+                fontName='DejaVu', fontSize=7,  # Kleinere Schrift
+                leading=8.5,  # Dichte Zeilenabstände
+                alignment=TA_LEFT,
+                textColor=colors.Color(0.25, 0.25, 0.25),  # Dunkleres Grau
+                leftIndent=0, rightIndent=0,  # Kein Indent in der Table
+                spaceBefore=0, spaceAfter=0)
+            
+            # Berechne verfügbare Breite
+            try:
+                available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*mm
+            except:
+                available_width = 170*mm  # Fallback
+            
+            comment_table = Table([[Paragraph(xml_escape(content), comment_style_simple)]], 
+                                 colWidths=[available_width])
+            comment_table.setStyle(TableStyle([
+                ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
+                ('LEFTPADDING', (0, 0), (-1, -1), 4*mm),
+                ('RIGHTPADDING', (0, 0), (-1, -1), 4*mm),
+                ('TOPPADDING', (0, 0), (-1, -1), 3*mm),
+                ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),
+            ]))
             elements.append(Spacer(1, 2*mm))
-            elements.append(Paragraph(html.escape(content), comment_style_simple))
+            elements.append(comment_table)
             elements.append(Spacer(1, 2*mm))
             print(f"Prosa_Code: Rendered comment block: '{content[:50]}...'", flush=True)
             idx += 1
@@ -2116,30 +2131,80 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 while idx < len(flow_blocks) and flow_blocks[idx]['type'] == 'h3_eq':
                     header.append(Paragraph(xml_escape(flow_blocks[idx]['text']), style_eq_h3)); idx += 1
 
-            # Suche nach dem nächsten flow-Block
-            scan = i + 1
-            while scan < len(flow_blocks) and flow_blocks[scan]['type'] in ('blank', 'comment'):
-                # WICHTIG: Kommentare rendern, aber NICHT als flow-Block behandeln
-                if flow_blocks[scan]['type'] == 'comment':
-                    # Render comment block INLINE (nicht überspringen!)
-                    comment_block = flow_blocks[scan]
-                    content = comment_block.get('content', '')
-                    if content:
-                        # ... EXISTING CODE für Kommentar-Rendering ...
-                        pass
-                scan += 1
+            # WICHTIG: Suche nach dem nächsten flow-Block (auch wenn nicht direkt folgend)
+            # um "orphan headings" zu vermeiden
+            scan = idx
+            while scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'blank': scan += 1
             
-            # WICHTIG: Prüfe ob wir einen flow-Block gefunden haben
+            # Wenn direkt ein flow-Block folgt, verkoppeln wir ihn mit der Überschrift
             if scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'flow':
-                # FLOW-BLOCK GEFUNDEN! Verarbeite ihn!
-                print(f"Prosa_Code: h3_eq found flow at idx={scan}")
-                # NICHT überspringen - weitermachen mit der normalen Verarbeitung
-                i = scan  # ← KRITISCH: Setze i auf den flow-Block, NICHT auf scan+1!
+                # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
+                processed_flow_indices.add(scan)
+                flow_tables = build_flow_tables(flow_blocks[scan])
+                if flow_tables:
+                    # Bestimme Anzahl der Sprachen (2 oder 3)
+                    has_en = flow_blocks[scan].get('has_en', False)
+                    tables_per_line = 3 if has_en else 2
+                    
+                    # Verkoppele Header mit ersten 2 ZEILEN (= 4 oder 6 Tabellen)
+                    num_tables_to_keep = min(2 * tables_per_line, len(flow_tables))
+                    elements.append(KeepTogether(header + flow_tables[:num_tables_to_keep]))
+                    
+                    # Restliche Zeilen einzeln mit KeepTogether
+                    for i in range(num_tables_to_keep, len(flow_tables), tables_per_line):
+                        line_tables = flow_tables[i:i+tables_per_line]
+                        if line_tables:
+                            elements.append(KeepTogether(line_tables))
+                    
+                    elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
+                else:
+                    elements.append(KeepTogether(header))
+                idx = scan + 1; continue
             else:
-                print(f"Prosa_Code: h3_eq no flow found, idx={scan}")
-                i = scan  # ← Setze i auf scan (nächster Block nach Überschrift)
-            
-            continue
+                # Kein flow-Block direkt gefunden - suche weiter voraus (max 10 Blöcke)
+                lookahead = scan
+                found_flow = False
+                while lookahead < len(flow_blocks) and lookahead < scan + 10:
+                    lookahead_type = flow_blocks[lookahead].get('type', 'unknown')
+                    if lookahead_type == 'flow':
+                        # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
+                        processed_flow_indices.add(lookahead)
+                        # flow-Block gefunden - verkoppeln mit Überschrift
+                        flow_tables = build_flow_tables(flow_blocks[lookahead])
+                        if flow_tables:
+                            # Bestimme Anzahl der Sprachen (2 oder 3)
+                            has_en = flow_blocks[lookahead].get('has_en', False)
+                            tables_per_line = 3 if has_en else 2
+                            
+                            # Verkoppele Header mit ersten 2 ZEILEN (= 4 oder 6 Tabellen)
+                            num_tables_to_keep = min(2 * tables_per_line, len(flow_tables))
+                            elements.append(KeepTogether(header + flow_tables[:num_tables_to_keep]))
+                            
+                            # Restliche Zeilen einzeln mit KeepTogether
+                            for i in range(num_tables_to_keep, len(flow_tables), tables_per_line):
+                                line_tables = flow_tables[i:i+tables_per_line]
+                                if line_tables:
+                                    elements.append(KeepTogether(line_tables))
+                            
+                            elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
+                        else:
+                            elements.append(KeepTogether(header))
+                        found_flow = True
+                        idx = lookahead + 1
+                        break
+                    elif lookahead_type in ('h1_eq', 'h2_eq', 'h3_eq'):
+                        # Weitere Überschrift gefunden - nicht verkoppeln
+                        break
+                    elif lookahead_type == 'comment':
+                        # WICHTIG: Kommentar-Blöcke überspringen, aber nicht abbrechen
+                        pass
+                    lookahead += 1
+                
+                if not found_flow:
+                    # Kein flow-Block gefunden - Überschrift allein hinzufügen
+                    elements.append(KeepTogether(header))
+                    idx = scan
+                continue
 
         if t == 'h3_eq':
             # NEU: Kommentare aus block['comments'] rendern (auch bei h3-Überschriften)
@@ -2167,28 +2232,81 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             h3_para = Paragraph(xml_escape(b['text']), style_eq_h3)
             idx += 1
             
-            # Suche nach dem nächsten flow-Block
-            scan = i + 1
-            while scan < len(flow_blocks) and flow_blocks[scan]['type'] in ('blank', 'comment'):
-                # WICHTIG: Kommentare rendern, aber NICHT als flow-Block behandeln
-                if flow_blocks[scan]['type'] == 'comment':
-                    # Render comment block INLINE (nicht überspringen!)
-                    comment_block = flow_blocks[scan]
-                    content = comment_block.get('content', '')
-                    if content:
-                        # ... EXISTING CODE für Kommentar-Rendering ...
-                        pass
-                scan += 1
+            # WICHTIG: Auch h3-Überschriften mit nachfolgendem Text verkoppeln
+            scan = idx
+            while scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'blank': scan += 1
             
-            # WICHTIG: Prüfe ob wir einen flow-Block gefunden haben
             if scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'flow':
-                # FLOW-BLOCK GEFUNDEN! Verarbeite ihn!
-                print(f"Prosa_Code: h3_eq found flow at idx={scan}")
-                # NICHT überspringen - weitermachen mit der normalen Verarbeitung
-                i = scan  # ← KRITISCH: Setze i auf den flow-Block, NICHT auf scan+1!
+                # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
+                processed_flow_indices.add(scan)
+                print(f"Prosa_Code: h3_eq found flow block at scan={scan}, calling build_flow_tables()", flush=True)
+                flow_tables = build_flow_tables(flow_blocks[scan])
+                if flow_tables:
+                    # Bestimme Anzahl der Sprachen (2 oder 3)
+                    has_en = flow_blocks[scan].get('has_en', False)
+                    tables_per_line = 3 if has_en else 2
+                    
+                    # Verkoppele h3_para mit ersten 2 ZEILEN (= 4 oder 6 Tabellen)
+                    num_tables_to_keep = min(2 * tables_per_line, len(flow_tables))
+                    elements.append(KeepTogether([h3_para] + flow_tables[:num_tables_to_keep]))
+                    
+                    # Restliche Zeilen einzeln mit KeepTogether
+                    for i in range(num_tables_to_keep, len(flow_tables), tables_per_line):
+                        line_tables = flow_tables[i:i+tables_per_line]
+                        if line_tables:
+                            elements.append(KeepTogether(line_tables))
+                    
+                    elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
+                    old_idx = idx
+                    idx = scan + 1
+                    print(f"Prosa_Code: h3_eq completed, set idx from {old_idx} to {idx} (next block type: {flow_blocks[idx].get('type', 'unknown') if idx < len(flow_blocks) else 'END'})", flush=True)
+                    continue  # WICHTIG: Muss hier sein, damit nicht weiterverarbeitet wird!
+                else:
+                    elements.append(KeepTogether([h3_para]))
+                    print(f"Prosa_Code: h3_eq no flow tables, idx={idx}", flush=True)
             else:
-                print(f"Prosa_Code: h3_eq no flow found, idx={scan}")
-                i = scan  # ← Setze i auf scan (nächster Block nach Überschrift)
+                # Suche weiter voraus
+                lookahead = scan
+                found_flow = False
+                while lookahead < len(flow_blocks) and lookahead < scan + 10:
+                    lookahead_type = flow_blocks[lookahead].get('type', 'unknown')
+                    if lookahead_type == 'flow':
+                        # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
+                        processed_flow_indices.add(lookahead)
+                        flow_tables = build_flow_tables(flow_blocks[lookahead])
+                        if flow_tables:
+                            # Bestimme Anzahl der Sprachen (2 oder 3)
+                            has_en = flow_blocks[lookahead].get('has_en', False)
+                            tables_per_line = 3 if has_en else 2
+                            
+                            # Verkoppele h3_para mit ersten 2 ZEILEN (= 4 oder 6 Tabellen)
+                            num_tables_to_keep = min(2 * tables_per_line, len(flow_tables))
+                            elements.append(KeepTogether([h3_para] + flow_tables[:num_tables_to_keep]))
+                            
+                            # Restliche Zeilen einzeln mit KeepTogether
+                            for i in range(num_tables_to_keep, len(flow_tables), tables_per_line):
+                                line_tables = flow_tables[i:i+tables_per_line]
+                                if line_tables:
+                                    elements.append(KeepTogether(line_tables))
+                            
+                            elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
+                        else:
+                            elements.append(KeepTogether([h3_para]))
+                        found_flow = True
+                        old_idx = idx
+                        idx = lookahead + 1
+                        print(f"Prosa_Code: h3_eq found flow at lookahead={lookahead}, set idx from {old_idx} to {idx} (next block type: {flow_blocks[idx].get('type', 'unknown') if idx < len(flow_blocks) else 'END'})", flush=True)
+                        break
+                    elif lookahead_type in ('h1_eq', 'h2_eq', 'h3_eq'):
+                        break
+                    elif lookahead_type == 'comment':
+                        # WICHTIG: Kommentar-Blöcke überspringen, aber nicht abbrechen
+                        pass
+                    lookahead += 1
+                
+                if not found_flow:
+                    elements.append(KeepTogether([h3_para]))
+                    print(f"Prosa_Code: h3_eq no flow found, idx={idx}", flush=True)
             continue
 
         if t == 'quote':
@@ -2348,7 +2466,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                             # Wende die gleiche Logik wie in apply_tag_visibility an
                             gr_tokens_orig = qb.get('gr_tokens', [])
                             de_tokens = list(qb.get('de_tokens', []))
-                            en_tokens = list(qb.get('en_tokens', []))  # NEU: Englische Tokens für 3-sprachige Zitate
+                            en_tokens = list(qb.get('en_tokens', []))
                             
                             for idx, gr_token in enumerate(gr_tokens_orig):
                                 if hasattr(preprocess, '_token_should_hide_translation'):
@@ -2507,7 +2625,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # Markiere diesen Block als verarbeitet (SOFORT, bevor etwas anderes passiert)
             processed_flow_indices.add(idx)
-            print(f"Prosa_Code: Markierte flow block {idx+1} als verarbeitet (processed_flow_indices enthält jetzt: {sorted(processed_flow_indices)})", flush=True)
+            print(f"Prosa_Code: Marked flow block {idx+1} as processed (processed_flow_indices now contains: {sorted(processed_flow_indices)})", flush=True)
             
             # DIAGNOSE: Aggressives Logging für flow-Blöcke
             print(f"Prosa_Code: Processing flow block {idx+1}/{len(flow_blocks)} (gr_tokens={len(b.get('gr_tokens', []))}, de_tokens={len(b.get('de_tokens', []))})", flush=True)

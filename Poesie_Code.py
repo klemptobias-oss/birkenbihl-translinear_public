@@ -1627,20 +1627,15 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     # JETZT können wir widths berechnen, weil cols definiert ist!
     widths = []
     for k in range(cols):
-        # WICHTIG: Für NoTag-PDFs müssen wir die Breite OHNE Tags berechnen!
-        # Die Tokens wurden bereits von apply_tag_visibility vorverarbeitet
-        
+        # WICHTIG: Für NoTag-PDFs müssen wir die Breite OHNE Tag-Puffer berechnen!
         gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
-        de_token = de[k] if (k < len(de) and de[k]) else ''
-        en_token = en[k] if (k < len(en) and en[k]) else ''
         
-        # Für GR-Tokens: Prüfe ob Tags vorhanden sind
         if gr_token:
-            # Wenn KEIN Tag mehr im Token ist (NoTag-PDF), berechne Breite OHNE Tag-Puffer
-            has_tags_in_token = bool(RE_TAG_FINDALL.findall(gr_token))
+            # Prüfe ob Tags NOCH im Token vorhanden sind
+            tags_in_token = RE_TAG_FINDALL.findall(gr_token)
             
-            if has_tags_in_token:
-                # Tags vorhanden → normale Berechnung
+            if tags_in_token:
+                # Tags vorhanden → Tag-PDF, normale Berechnung
                 w_gr = measure_token_width_with_visibility_poesie(
                     gr_token, 
                     font=token_gr_style.fontName, 
@@ -1650,21 +1645,20 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     tag_config=tag_config
                 )
             else:
-                # KEINE Tags mehr vorhanden (NoTag-PDF) → Breite OHNE Tag-Puffer berechnen
-                # WICHTIG: Verwende visible_measure_token für reine Text-Breite
-                core_text = RE_TAG_STRIP.sub('', gr_token).strip()
+                # KEINE Tags mehr → NoTag-PDF, MINIMALE Breite
                 # Entferne auch Farbmarker für Breiten-Berechnung
+                core_text = RE_TAG_STRIP.sub('', gr_token).strip()
                 for color_char in ['#', '+', '-', '§', '$']:
                     core_text = core_text.replace(color_char, '')
                 
-                # MINIMALER Puffer für NoTag (wie in measure_token_width_with_visibility_poesie)
+                # MINIMALER Puffer für NoTag
                 base_padding = max(token_gr_style.fontSize * 0.01, 0.3)
                 w_gr = visible_measure_token(core_text, font=token_gr_style.fontName, 
                                             size=token_gr_style.fontSize, cfg=eff_cfg, 
                                             is_greek_row=True) + base_padding
         else:
             w_gr = 0.0
-
+        
         # DE- und EN-Tokens: Pipe-Ersetzung berücksichtigen
         if hide_pipes:
             de_text = de[k].replace('|', ' ') if (k < len(de) and de[k]) else ''
