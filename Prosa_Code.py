@@ -2401,13 +2401,18 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 elements.append(KeepTogether(block))
                 # Abstand nach der Quelle (1.5x größer als normal)
                 elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm * 1.5))
-                idx = kidx + 1
+                # KRITISCH: Setze idx auf MAXIMUM(kidx+1, idx+1) um Rücksprünge zu vermeiden!
+                idx = max(kidx + 1, idx + 1)
             else:
                 # Keine Quelle - füge Abstand direkt nach dem Zitat hinzu
                 elements.append(KeepTogether(block))
                 elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm * 1.5))
-                idx = idx + 1
-            if idx < len(flow_blocks) and flow_blocks[idx]['type'] == 'blank': idx += 1
+                # KRITISCH: Inkrementiere idx normal
+                idx += 1
+            
+            # Überspringe trailing blanks
+            while idx < len(flow_blocks) and flow_blocks[idx]['type'] == 'blank': 
+                idx += 1
             continue
 
         if t == 'source':
