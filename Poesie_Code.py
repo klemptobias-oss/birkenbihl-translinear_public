@@ -1624,20 +1624,22 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         de = de_tokens[:] + [''] * (cols - len(de_tokens))
         en = en_tokens[:] + [''] * (cols - len(en_tokens))
 
-    # Spaltenbreiten berechnen - WICHTIG: Berücksichtige tag_mode!
+    # Spaltenbreiten berechnen - WICHTIG: Prüfe token_meta['had_tags_before']!
     widths = []
     for k in range(cols):
         gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
-        de_token = de[k] if (k < len(de) and de[k]) else ''
-        en_token = en[k] if (k < len(en) and en[k]) else ''
         
-        # WICHTIG: Prüfe ob Tags im Token TATSÄCHLICH NOCH VORHANDEN sind!
-        # Dies ist das Pendant zu HideTags/HideTrans - wir prüfen den IST-Zustand des Tokens!
         if gr_token:
-            tags_in_token = RE_TAG_FINDALL.findall(gr_token)
+            # KRITISCH: Prüfe token_meta, ob dieses Token Tags hatte (die jetzt entfernt wurden)
+            token_meta = block.get('token_meta', []) if block else []
+            meta = token_meta[k] if k < len(token_meta) else {}
+            had_tags_before = meta.get('had_tags_before', False)
             
-            if tags_in_token:
-                # Tags vorhanden → Tag-PDF Breite (MIT Tag-Puffer)
+            # Prüfe ob Tags JETZT NOCH im Token vorhanden sind
+            tags_now = RE_TAG_FINDALL.findall(gr_token)
+            
+            if tags_now:
+                # Tags vorhanden → Tag-PDF
                 w_gr = measure_token_width_with_visibility_poesie(
                     gr_token, 
                     font=token_gr_style.fontName, 
@@ -1646,19 +1648,22 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     is_greek_row=True,
                     tag_config=tag_config
                 )
-            else:
-                # KEINE Tags vorhanden → NoTag-PDF Breite (OHNE Tag-Puffer!)
-                # WICHTIG: Dies ist das Pendant zu HideTags - Token hat keine Tags mehr!
+            elif had_tags_before:
+                # Tags wurden entfernt → NoTag-PDF, MINIMALER Puffer!
                 core_text = RE_TAG_STRIP.sub('', gr_token).strip()
                 for color_char in ['#', '+', '-', '§', '$']:
                     core_text = core_text.replace(color_char, '')
                 
-                # Reine Kernbreite OHNE Tag-Puffer (wie bei HideTags)
                 w_gr = visible_measure_token(core_text, font=token_gr_style.fontName, 
                                             size=token_gr_style.fontSize, cfg=eff_cfg, 
                                             is_greek_row=True)
-                # MINIMALER Puffer (NICHT der große Tag-Puffer!)
-                w_gr += max(token_gr_style.fontSize * 0.06, 0.7)
+                w_gr += max(token_gr_style.fontSize * 0.01, 0.3)  # MINIMALER Puffer
+            else:
+                # Token hatte nie Tags → normale Berechnung
+                w_gr = visible_measure_token(gr_token, font=token_gr_style.fontName, 
+                                            size=token_gr_style.fontSize, cfg=eff_cfg, 
+                                            is_greek_row=True)
+                w_gr += max(token_gr_style.fontSize * 0.04, 1.2)
         else:
             w_gr = 0.0
         

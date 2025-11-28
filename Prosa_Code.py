@@ -1391,7 +1391,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
-                                                                                                                                
+                                                                                                                                                                                                                                                                
             # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
             is_notag = False
@@ -2141,49 +2141,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             render_block_comments(b, elements, doc)
             print(f"Prosa_Code: Processing h3_eq block at idx={idx}", flush=True)
             h3_para = Paragraph(xml_escape(b['text']), style_eq_h3)
+            
+            # EINFACH: Füge Überschrift hinzu und gehe weiter (KEIN Scannen!)
+            elements.append(KeepTogether([h3_para]))
             idx += 1
-            
-            # KRITISCH: Suche nach flow-Block
-            scan = idx
-            found_flow = False
-            
-            while scan < len(flow_blocks):
-                scan_type = flow_blocks[scan].get('type', 'unknown')
-                print(f"Prosa_Code: h3_eq scanning idx={scan}, type={scan_type}", flush=True)
-                
-                if scan_type == 'flow':
-                    if scan in processed_flow_indices:
-                        scan += 1
-                        continue
-                    
-                    found_flow = True
-                    processed_flow_indices.add(scan)
-                    print(f"Prosa_Code: h3_eq found flow at scan={scan}", flush=True)
-                    
-                    flow_tables = build_flow_tables(flow_blocks[scan])
-                    if flow_tables:
-                        has_en = flow_blocks[scan].get('has_en', False)
-                        tables_per_line = 3 if has_en else 2
-                        num_tables_to_keep = min(2 * tables_per_line, len(flow_tables))
-                        elements.append(KeepTogether([h3_para] + flow_tables[:num_tables_to_keep]))
-                        for i in range(num_tables_to_keep, len(flow_tables), tables_per_line):
-                            line_tables = flow_tables[i:i+tables_per_line]
-                            if line_tables:
-                                elements.append(KeepTogether(line_tables))
-                        elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
-                        idx = scan + 1
-                    else:
-                        elements.append(KeepTogether([h3_para]))
-                        idx = scan + 1
-                    break
-                
-                scan += 1
-            
-            if not found_flow:
-                print(f"Prosa_Code: h3_eq no flow found, idx={scan}", flush=True)
-                elements.append(KeepTogether([h3_para]))
-                idx = scan
-            
             continue
 
         if t == 'quote':

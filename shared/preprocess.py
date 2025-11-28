@@ -1248,31 +1248,18 @@ def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any], disab
     
     return blocks_with_hidden_trans
 
-def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict[str, Any]], hidden_tags_by_wortart: Optional[Dict[str, Set[str]]] = None) -> List[Dict[str, Any]]:
+def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict[str, Any]], 
+                        hidden_tags_by_wortart: Optional[Dict[str, Set[str]]] = None) -> List[Dict[str, Any]]:
     """
-    WICHTIG: Tags werden nur bei der entsprechenden Wortart entfernt!
-    Wenn "nomen" ausgeblendet wird, werden Kasus-Tags nur bei Nomen entfernt, nicht bei Partizipien.
-    
-    Robust: expandiert Gruppen-Regeln in konkrete hidden_tags pro Wortart, berechnet sup_keep/sub_keep pro Token,
-    entfernt die nicht gewünschten Tags aus ALLEN token-Feldern und schreibt gr/de strings zurück.
+    Filtert Tags basierend auf den 'hide' und 'placement' Regeln in tag_config.
+    WICHTIG: Markiert auch, welche Tags entfernt wurden, damit Poesie_Code.py die Breite korrekt berechnen kann.
     """
-    # helper: is this translation-only (punctuation / Stephanus) so it can be deduped?
-    import re
-    _re_only_punct = re.compile(r'^[\s\.\,\:\;\?\!\-\–\—\"\'\[\]\(\)\/\\]+$')
-    _re_stephanus = re.compile(r'^\s*\[\s*\d+\s*[a-z]?\s*\]\s*$', re.I)
-    
-    def is_translation_empty_or_punct(txt: str) -> bool:
-        if not txt or not txt.strip():
-            return True
-        s = txt.strip()
-        if _re_only_punct.match(s):
-            return True
-        if _re_stephanus.match(s):
-            return True
-        return False
-    
     import copy
     blocks_copy = copy.deepcopy(blocks)
+    
+    # Schritt 1: Bestimme globale und wortart-spezifische sup_keep / sub_keep
+    global_sup_keep = set(SUP_TAGS)
+    global_sub_keep = set(SUB_TAGS)
     
     # Struktur: {wortart: {tags_to_hide}} - Tags werden nur bei der richtigen Wortart entfernt
     # Wenn hidden_tags_by_wortart bereits übergeben wurde, verwende es, sonst baue es aus tag_config
