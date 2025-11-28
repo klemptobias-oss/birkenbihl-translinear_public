@@ -1291,9 +1291,8 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
             first_line_num, _ = extract_line_number(lines_with_same_num[0])
             if first_line_num is not None and is_comment_line(first_line_num):
                 # Die erste Zeile ist ein Kommentar - das sollte bereits oben erkannt worden sein!
-                # Aber sicherheitshalber überspringen wir sie hier auch
+                # WICHTIG: i auf j setzen, um Endlosschleife zu vermeiden
                 i = j
-                continue
             
             num_lines = len(lines_with_same_num)
             
