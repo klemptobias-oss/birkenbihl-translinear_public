@@ -1158,25 +1158,24 @@ def detect_eq_heading(line:str):
     return (None, None)
 
 # ========= Parser =========
-def process_input_file(fname:str):
-    with open(fname, encoding='utf-8') as f:
-        raw = [ln.rstrip('\n') for ln in f]
+def process_input_file(infile: str) -> List[Dict[str, Any]]:
+    """Parst Input-Datei in Blöcke."""
+    import logging
+    logger = logging.getLogger(__name__)
     
-    # LATEINISCH: (N)(Abl) → (Abl) Transformation für ALLE Zeilen
-    # Prüfe ob es ein lateinischer Text ist (keine griechischen Zeichen)
-    is_latin_text = False
-    for line in raw:
-        if line.strip() and not is_empty_or_sep(line.strip()):
-            is_latin_text = not RE_GREEK_CHARS.search(line)
-            break
+    # NEU: Debug-Logging am Anfang
+    logger.info("Poesie_Code.process_input_file: START reading %s", infile)
     
-    if is_latin_text:
-        raw = [re.sub(r'\(N\)\(Abl\)', '(Abl)', ln) for ln in raw]
-
+    with open(infile, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    
+    # NEU: Log Zeilenanzahl
+    logger.info("Poesie_Code.process_input_file: read %d lines", len(lines))
+    
     blocks = []
     i = 0
-    while i < len(raw):
-        line = (raw[i] or '').strip()
+    while i < len(lines):
+        line = (lines[i] or '').strip()
         if is_empty_or_sep(line):
             i += 1; continue
 
@@ -1253,8 +1252,8 @@ def process_input_file(fname:str):
             # Sammle alle aufeinanderfolgenden Zeilen mit derselben Nummer
             # NEU: Sammle auch Kommentare, aber füge sie NICHT sofort ein!
             comments_to_insert = []  # Liste: (insert_after_index, comment_block)
-            while j < len(raw):
-                next_line = (raw[j] or '').strip()
+            while j < len(lines):
+                next_line = (lines[j] or '').strip()
                 if is_empty_or_sep(next_line):
                     j += 1
                     continue
@@ -1415,19 +1414,19 @@ def process_input_file(fname:str):
             if is_greek_line(line_cls) or is_latin_line(line_cls):
                 gr_line = line
                 i += 1
-                while i < len(raw) and is_empty_or_sep(raw[i]): i += 1
+                while i < len(lines) and is_empty_or_sep(lines[i]): i += 1
 
                 de_line = ''
-                if i < len(raw):
-                    cand = (raw[i] or '').strip()
+                if i < len(lines):
+                    cand = (lines[i] or '').strip()
                     # NEU: Prüfe, ob die Kandidaten-Zeile ein Kommentar ist - überspringe sie dann
                     cand_num, _ = extract_line_number(cand)
                     if cand_num is not None and is_comment_line(cand_num):
                         # Kommentar-Zeile überspringen
                         i += 1
-                        while i < len(raw) and is_empty_or_sep(raw[i]): i += 1
-                        if i < len(raw):
-                            cand = (raw[i] or '').strip()
+                        while i < len(lines) and is_empty_or_sep(lines[i]): i += 1
+                        if i < len(lines):
+                            cand = (lines[i] or '').strip()
                             cand_num, _ = extract_line_number(cand)
                             if cand_num is not None and is_comment_line(cand_num):
                                 # Noch ein Kommentar - überspringe auch diesen
@@ -1470,6 +1469,8 @@ def process_input_file(fname:str):
                            'gr_tokens': [], 'de_tokens': de_tokens})
             i += 1
 
+    # NEU: Log am Ende
+    logger.info("Poesie_Code.process_input_file: END - parsed %d blocks", len(blocks))
     return blocks
 
 # ========= Tabellenbau – NUM → Sprecher → Einrückung → Tokens =========

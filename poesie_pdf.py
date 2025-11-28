@@ -273,10 +273,21 @@ def _process_one_input(infile: str,
         pass
     start_time = time.time()
     
+    # KRITISCH: Debug-Logging VOR process_input_file
+    logger.info("poesie_pdf: ABOUT TO CALL Poesie.process_input_file(%s)", infile)
+    try:
+        sys.stdout.flush()
+    except Exception:
+        pass
+    
     # KRITISCH: Lade Input-Datei mit Timeout-Protection
     try:
         blocks = Poesie.process_input_file(infile)
-        logger.info("poesie_pdf: Poesie.process_input_file() returned %d blocks", len(blocks) if isinstance(blocks, list) else -1)
+        logger.info("poesie_pdf: Poesie.process_input_file() RETURNED %d blocks", len(blocks) if isinstance(blocks, list) else -1)
+        try:
+            sys.stdout.flush()
+        except Exception:
+            pass
     except Exception as e:
         logger.exception("poesie_pdf: Poesie.process_input_file() FAILED")
         raise
