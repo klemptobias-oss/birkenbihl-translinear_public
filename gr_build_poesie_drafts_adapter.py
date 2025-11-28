@@ -92,6 +92,10 @@ def run_one(input_path: Path) -> None:
     temp_input = ROOT / f"temp_{input_path.name}"
     temp_input.write_text(clean_text, encoding="utf-8")
     
+    # NEUE Position (RICHTIG) - Zeile ~145 (NACH temp_input.write_text, VOR subprocess.Popen):
+    before = {p.name for p in ROOT.glob("*.pdf")}  # ← GENAU HIER!
+    print(f"→ Erzeuge PDFs für: {temp_input.name}")
+
     # Erstelle temporäre Konfigurationsdatei für Tag-Einstellungen, falls eine Konfig vorhanden ist
     config_file = None
     if tag_config:
@@ -205,8 +209,6 @@ def run_one(input_path: Path) -> None:
     # ... (bestehender Code bleibt) ...
     
     # WICHTIG: before-Snapshot HIER setzen (NACH temp_input Erstellung, VOR poesie_pdf Aufruf)
-    before = {p.name for p in ROOT.glob("*.pdf")}
-    print(f"→ Erzeuge PDFs für: {temp_input.name}")
     after = {p.name for p in ROOT.glob("*.pdf")}
     new_pdfs = sorted(after - before)
 
