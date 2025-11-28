@@ -273,14 +273,27 @@ def _process_one_input(infile: str,
         pass
     start_time = time.time()
     
-    blocks = Poesie.process_input_file(infile)
+    # KRITISCH: Lade Input-Datei mit Timeout-Protection
+    try:
+        blocks = Poesie.process_input_file(infile)
+        logger.info("poesie_pdf: Poesie.process_input_file() returned %d blocks", len(blocks) if isinstance(blocks, list) else -1)
+    except Exception as e:
+        logger.exception("poesie_pdf: Poesie.process_input_file() FAILED")
+        raise
     
     # WICHTIG: Für Poesie werden Kommentare NICHT automatisch als separate Blöcke erkannt
     # Wir müssen discover_and_attach_comments aufrufen, um sie zu finden und als Blöcke hinzuzufügen
     from shared.preprocess import discover_and_attach_comments
-    # KRITISCH: discover_and_attach_comments akzeptiert NUR blocks, KEIN source_file!
-    blocks = discover_and_attach_comments(blocks)
     
+    logger.info("poesie_pdf: calling discover_and_attach_comments() with %d blocks", len(blocks))
+    try:
+        blocks = discover_and_attach_comments(blocks)
+        logger.info("poesie_pdf: discover_and_attach_comments() returned %d blocks", len(blocks))
+    except Exception as e:
+        logger.exception("poesie_pdf: discover_and_attach_comments() FAILED")
+        # Fallback: Verwende Original-Blöcke ohne Kommentar-Verarbeitung
+        logger.warning("poesie_pdf: falling back to original blocks (no comment processing)")
+
     # Debug: Zähle Kommentar-Blöcke NACH discover_and_attach_comments
     comment_blocks = [b for b in blocks if isinstance(b, dict) and b.get('type') == 'comment']
     logger.info("DEBUG poesie_pdf: %d Kommentar-Blöcke gefunden von %d total Blöcken (nach discover_and_attach_comments)", len(comment_blocks), len(blocks))

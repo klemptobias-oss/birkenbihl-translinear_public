@@ -359,191 +359,141 @@ def assign_comment_ranges_to_blocks(blocks: List[Dict[str,Any]], inline_comments
 def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,Any]]:
     """
     Robustere Kommentar-Erkennung und -Zuordnung.
+    WICHTIG: Diese Funktion DARF NICHT in eine Endlosschleife geraten!
     """
     import re
+    import time
     
-    # Log START
+    # Log START mit Timeout-Protection
     logger = logging.getLogger(__name__)
+    start_time = time.time()
+    MAX_PROCESSING_TIME = 60  # Maximum 60 Sekunden für Kommentar-Verarbeitung
+    
     logger.info("discover_and_attach_comments: START processing %d blocks", len(blocks))
+    
+    # KRITISCH: Defensive Prüfung - blocks MUSS eine Liste sein
+    if not isinstance(blocks, list):
+        logger.error("discover_and_attach_comments: blocks is not a list (type=%s), returning empty list", type(blocks))
+        return []
+    
+    # KRITISCH: Leere oder sehr große Listen abfangen
+    if len(blocks) == 0:
+        logger.info("discover_and_attach_comments: empty blocks list, returning []")
+        return []
+    
+    if len(blocks) > 50000:
+        logger.warning("discover_and_attach_comments: HUGE blocks list (%d blocks), may be slow!", len(blocks))
     
     comment_full_re = re.compile(r'^\s*\((\d+(?:-\d+)?)k\)\s*(.+)$', re.UNICODE)
     comment_inline_re = re.compile(r'\((\d+(?:-\d+)?)k\)\s*([^()]+)', re.UNICODE)
 
-    # 1) build pair_index -> block index mapping for pair/flow blocks
-    # Build pair_index for pair/flow blocks if not present
+    # Schritt 1: Erstelle ein Mapping von Zeilennummern zu Block-Indices
     pair_to_block = {}
-    pair_index = 1
-    for bi, b in enumerate(blocks):
-        if b.get('type') in ('pair', 'flow'):
-            # preserve existing if present
-            if not b.get('pair_index') and not b.get('_pair_index'):
-                b['pair_index'] = pair_index
-                b['_pair_index'] = pair_index
-            elif b.get('pair_index'):
-                b['_pair_index'] = b['pair_index']
-            elif b.get('_pair_index'):
-                b['pair_index'] = b['_pair_index']
-            pair_index_val = b.get('pair_index') or b.get('_pair_index') or pair_index
-            pair_to_block[pair_index_val] = bi
-            if not b.get('pair_index'):
-                b['pair_index'] = pair_index_val
-            pair_index += 1
-
+    
+    for idx, block in enumerate(blocks):
+        # Timeout-Check alle 1000 Blöcke
+        if idx > 0 and idx % 1000 == 0:
+            elapsed = time.time() - start_time
+            if elapsed > MAX_PROCESSING_TIME:
+                logger.error("discover_and_attach_comments: TIMEOUT after %.1f seconds at block %d/%d", elapsed, idx, len(blocks))
+                return blocks  # Gebe unveränderte Blöcke zurück
+            
+            if idx % 5000 == 0:
+                logger.debug("discover_and_attach_comments: processed %d/%d blocks (%.1fs elapsed)", idx, len(blocks), elapsed)
+        
+        if not isinstance(block, dict):
+            continue
+        
+        block_type = block.get('type')
+        if block_type not in ('pair', 'flow'):
+            continue
+        
+        # Versuche Zeilennummer zu extrahieren
+        line_num = block.get('line_num') or block.get('label')
+        if not line_num:
+            continue
+        
+        # Normalisiere Zeilennummer (entferne Buchstaben wie "a", "b")
+        base_num = re.sub(r'[a-z]', '', str(line_num).lower())
+        try:
+            base_num = int(base_num)
+            pair_to_block[base_num] = idx
+        except (ValueError, TypeError):
+            continue
+    
+    logger.debug("discover_and_attach_comments: built pair_to_block mapping with %d entries", len(pair_to_block))
+    
     comments_found = 0
-
-    # 2) scan each block for full-line or inline comment markers
-    # WICHTIG: Überspringe Blöcke, die bereits als 'comment' markiert sind (werden separat gerendert)
-    for bi, b in enumerate(blocks):
-        # WICHTIG: Kommentar-Blöcke (type='comment') überspringen - diese bleiben als separate Blöcke
-        if b.get('type') == 'comment':
+    result_blocks = []
+    
+    # Schritt 2: Durchlaufe alle Blöcke und extrahiere Kommentare
+    for idx, block in enumerate(blocks):
+        # Timeout-Check alle 1000 Blöcke
+        if idx > 0 and idx % 1000 == 0:
+            elapsed = time.time() - start_time
+            if elapsed > MAX_PROCESSING_TIME:
+                logger.error("discover_and_attach_comments: TIMEOUT after %.1f seconds at block %d/%d", elapsed, idx, len(blocks))
+                return blocks  # Gebe unveränderte Blöcke zurück
+        
+        if not isinstance(block, dict):
+            result_blocks.append(block)
             continue
         
-        gr = b.get('gr')
-        if not gr or not isinstance(gr, str):
-            continue
-
-        lines = gr.splitlines()
-        new_lines = []
-        block_comments = b.setdefault('comments', [])
-
-        for line in lines:
-            line_strip = line.strip()
-            m = comment_full_re.match(line_strip)
-            if m:
-                # full-line comment "(2-4k) text..." oder "(105k)" (ohne Text)
-                range_str = m.group(1)
-                text = m.group(2).strip() if len(m.groups()) > 1 and m.group(2) else ""
-                if '-' in range_str:
-                    s, e = range_str.split('-', 1)
-                    start, end = int(s), int(e)
-                else:
-                    start = end = int(range_str)
-                # attach comment to blocks whose pair_index is in [start..end]
-                # Helper function to attach comment to range
-                for target_idx, target_block in enumerate(blocks):
-                    if target_block.get('type') in ('pair', 'flow'):
-                        target_pi = target_block.get('pair_index') or target_block.get('_pair_index')
-                        if target_pi is not None and start <= target_pi <= end:
-                            # ensure comments list exists
-                            c = target_block.setdefault('comments', [])
-                            # token_start/ token_end set to whole block by default
-                            token_start = 0
-                            token_end = max(0, len(target_block.get('gr_tokens', [])) - 1)
-                            c.append({
-                                'start': start, 'end': end, 'text': text, 'kind': 'range',
-                                'pair_range': (start, end),
-                                'token_start': token_start,
-                                'token_end': token_end
-                            })
-                comments_found += 1
-                # do not keep this line in the original block -> remove
-                continue
-
-            # inline comment(s) in this line?
-            inline_matches = list(comment_inline_re.finditer(line))
-            if inline_matches:
-                cleaned_line = line
-                for im in inline_matches:
-                    range_str = im.group(1)
-                    text = im.group(2).strip()
-                    if '-' in range_str:
-                        s, e = range_str.split('-', 1)
-                        start, end = int(s), int(e)
-                    else:
-                        start = end = int(range_str)
-                    # attach to blocks whose pair_index is in [start..end]
-                    for target_idx, target_block in enumerate(blocks):
-                        if target_block.get('type') in ('pair', 'flow'):
-                            target_pi = target_block.get('pair_index') or target_block.get('_pair_index')
-                            if target_pi is not None and start <= target_pi <= end:
-                                c = target_block.setdefault('comments', [])
-                                token_start = 0
-                                token_end = max(0, len(target_block.get('gr_tokens', [])) - 1)
-                                c.append({
-                                    'start': start, 'end': end, 'text': text, 'kind': 'inline',
-                                    'pair_range': (start, end),
-                                    'token_start': token_start,
-                                    'token_end': token_end
-                                })
+        block_type = block.get('type')
+        
+        # Kommentare in pair/flow Blöcken extrahieren
+        if block_type in ('pair', 'flow'):
+            # Prüfe gr_tokens auf Kommentare
+            gr_tokens = block.get('gr_tokens', [])
+            if isinstance(gr_tokens, list):
+                for token in gr_tokens:
+                    if not token or not isinstance(token, str):
+                        continue
+                    
+                    # Inline-Kommentare: "(123k) Text" innerhalb eines Tokens
+                    match = comment_inline_re.search(token)
+                    if match:
+                        line_ref = match.group(1)
+                        comment_text = match.group(2).strip()
+                        
+                        if comment_text:
+                            # Erstelle einen neuen Kommentar-Block
+                            comment_block = {
+                                'type': 'comment',
+                                'line_num': line_ref,
+                                'content': comment_text,
+                                'original_line': f"({line_ref}k) {comment_text}"
+                            }
+                            result_blocks.append(comment_block)
+                            comments_found += 1
+            
+            result_blocks.append(block)
+        
+        # Vollständige Kommentar-Zeilen: "(123k) Text"
+        elif block_type == 'comment':
+            original_line = block.get('original_line', '')
+            if original_line:
+                match = comment_full_re.match(original_line)
+                if match:
+                    line_ref = match.group(1)
+                    comment_text = match.group(2).strip()
+                    
+                    # Aktualisiere den Block mit extrahierten Daten
+                    block['line_num'] = line_ref
+                    block['content'] = comment_text
                     comments_found += 1
-                    # remove the inline comment chunk from the line
-                    cleaned_line = cleaned_line.replace(im.group(0), '')
-                cleaned_line = cleaned_line.strip()
-                if cleaned_line:
-                    new_lines.append(cleaned_line)
-                # if cleaned_line is empty we drop the line
-                continue
-
-            # no comment detected: keep original line
-            new_lines.append(line)
-
-        # write back the cleaned block text (without detected comment lines)
-        if new_lines:
-            b['gr'] = '\n'.join(new_lines)
-        else:
-            b['gr'] = ''
+            
+            result_blocks.append(block)
         
-        # Also remove comment tokens from gr_tokens if they exist
-        gr_tokens = b.get('gr_tokens', [])
-        if gr_tokens:
-            # Filter out tokens that look like comment markers
-            filtered_tokens = []
-            for tok in gr_tokens:
-                if not isinstance(tok, str):
-                    filtered_tokens.append(tok)
-                    continue
-                tok_strip = tok.strip()
-                # Skip tokens that are just comment markers like "(2-4k)" or "(123k)"
-                if comment_full_re.match(tok_strip) or comment_inline_re.search(tok):
-                    continue
-                filtered_tokens.append(tok)
-            b['gr_tokens'] = filtered_tokens
-
-    # 3) Build per-block comment_token_mask (True for tokens that are inside a comment range)
-    # WICHTIG: Stelle sicher, dass comment_token_mask IMMER initialisiert ist (nie None)
-    for b in blocks:
-        if b.get("type") not in ("pair", "flow"):
-            continue
-        toks = b.get('gr_tokens') or []
-        mask = [False] * len(toks) if toks else []
-        # For each comment attached to this block, mark tokens in the range
-        for c in b.get("comments", []):
-            start = c.get("token_start", 0)
-            end = c.get("token_end", -1)
-            # If token_end is -1, mark all tokens in the block
-            if end < 0:
-                end = len(toks) - 1
-            # Ensure end is within bounds
-            end = min(end, len(toks) - 1) if toks else -1
-            # Mark all tokens in the range
-            for i in range(max(0, start), max(end + 1, start)):
-                if 0 <= i < len(mask):
-                    mask[i] = True
-        # WICHTIG: Stelle sicher, dass mask niemals None ist (verhindert 'NoneType' object is not iterable')
-        b['comment_token_mask'] = mask if mask else []
-
-    # WICHTIG: Stelle sicher, dass IMMER blocks zurückgegeben wird (nie None) - verhindert 'NoneType' object is not iterable
-    # Stelle sicher, dass alle Blöcke comment_token_mask haben (auch wenn leer)
-    for b in blocks:
-        if b.get("type") in ("pair", "flow"):
-            if 'comment_token_mask' not in b:
-                toks = b.get('gr_tokens') or []
-                b['comment_token_mask'] = [False] * len(toks) if toks else []
-        if 'comments' not in b:
-            b['comments'] = []
+        else:
+            result_blocks.append(block)
     
     # Log ENDE mit Statistiken
-    total_comments_attached = sum(len(b.get('comments', [])) for b in blocks)
-    logger.info("discover_and_attach_comments: END - found=%d, attached=%d (total_blocks=%d)", 
-                comments_found, total_comments_attached, len(blocks))
+    elapsed = time.time() - start_time
+    logger.info("discover_and_attach_comments: END - found=%d comment blocks, total_blocks=%d (%.1fs)", 
+                comments_found, len(result_blocks), elapsed)
     
-    return blocks
-
-# === Defensive wrapper for discover_and_attach_comments ===
-# WICHTIG: DIESER WRAPPER IST DEFEKT UND VERURSACHT ENDLOSSCHLEIFEN!
-# ER WURDE VOLLSTÄNDIG ENTFERNT!
-
-# Die discover_and_attach_comments Funktion (oben bei Zeile ~450) wird direkt verwendet.
+    return result_blocks
 
 # ======= Hilfen: Token-Processing =======
 def _join_tokens_to_line(tokens: list[str]) -> str:
