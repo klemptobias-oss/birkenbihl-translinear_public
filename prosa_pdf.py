@@ -276,7 +276,7 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # KRITISCH: Wenn pair_count > 0 und flow_count == 0, rufe group_pairs_into_flows() auf!
     if pair_count > 0 and flow_count == 0:
         logger.info(f"Converting {pair_count} pair blocks to flow blocks...")
-        blocks = Prosa_Code.group_pairs_into_flows(blocks)
+        blocks = Prosa.group_pairs_into_flows(blocks)
         
         # Re-check nach Konvertierung
         flow_count_after = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'flow')

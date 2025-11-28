@@ -201,29 +201,21 @@ def run_one(input_path: Path) -> None:
 
     # --- END robust subprocess invocation ---
     
-# Zeilen 185-235 KOMPLETT ERSETZEN (PDF-Matching Section)
-    # WICHTIG: before-Snapshot NACH cleanup, DIREKT vor dem poesie_pdf Aufruf!
-    # (wird später im Code gesetzt, siehe unten)
-
-    # --- START robust subprocess invocation of poesie_pdf.py ---
-    # ... (bestehender Code bleibt) ...
-    
-    # WICHTIG: before-Snapshot HIER setzen (NACH temp_input Erstellung, VOR poesie_pdf Aufruf)
+    # WICHTIG: Jetzt nach subprocess die neuen PDFs finden!
     after = {p.name for p in ROOT.glob("*.pdf")}
     new_pdfs = sorted(after - before)
+    
+    print(f"→ Snapshot AFTER subprocess: {len(after)} PDFs, {len(new_pdfs)} neue PDFs")
+    print(f"→ Neue PDFs: {new_pdfs[:3] if new_pdfs else 'KEINE'}")
 
     if not new_pdfs:
-        print("⚠ Keine PDFs erzeugt."); return
+        print("⚠ Keine PDFs erzeugt.")
+        return
 
     # KRITISCH: Die PDFs heißen "temp_agamemnon_..." (mit temp_ Präfix!)
-    # Wir müssen ALLE PDFs finden, die mit dem temp_stem übereinstimmen
+    temp_stem = temp_input.stem  # z.B. "temp_agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251128_232610"
     
-    temp_stem = temp_input.stem  # z.B. "temp_agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251128_222056"
-    
-    # Extrahiere Basisnamen (ohne temp_ und ohne DRAFT_TIMESTAMP)
-    import re
-    
-    # Entferne "temp_" Präfix
+    # Entferne "temp_" Präfix und DRAFT_TIMESTAMP
     base_without_temp = temp_stem[5:] if temp_stem.startswith('temp_') else temp_stem
     
     # Entferne DRAFT_TIMESTAMP Suffix
@@ -259,7 +251,6 @@ def run_one(input_path: Path) -> None:
         if bare.startswith(clean_base):
             suffix = bare[len(clean_base):]
         else:
-            # Fallback: Verwende vollständigen Namen als Suffix
             suffix = '_' + bare
         
         # Erstelle finalen Namen
@@ -275,6 +266,7 @@ def run_one(input_path: Path) -> None:
         src.replace(dst)
         print(f"✓ PDF → {dst}")
 
+# ENDE der run_one() Funktion - ab hier kommen die Helper-Funktionen
 def apply_bold_if_needed(text, bold_text):
     """Apply bold formatting if needed, preserving existing styles"""
     if bold_text:
