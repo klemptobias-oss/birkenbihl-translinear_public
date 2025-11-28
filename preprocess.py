@@ -567,57 +567,49 @@ def apply_colors(blocks: List[Dict[str, Any]], tag_config: Dict[str, Any]) -> Li
 def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
     Filtert Tags basierend auf den 'hide' und 'placement' Regeln in tag_config.
-    Wenn tag_config=None ist, bleiben alle Tags erhalten.
-    Gibt eine NEUE, tief kopierte Blockliste zurück.
+    WICHTIG: Aktualisiert auch token_meta['removed_tags'] für jeden Token!
     """
     import copy
     blocks_copy = copy.deepcopy(blocks)
     
     sup_keep, sub_keep = set(), set()
     if tag_config:
-        # Starte mit allen bekannten Tags
         sup_keep = SUP_TAGS.copy()
         sub_keep = SUB_TAGS.copy()
         
-        # Entferne Tags, die explizit als "hide" markiert sind
         for rule_id, conf in tag_config.items():
-            # Normalisiere die Regel-ID für Draft-Kompatibilität
             normalized_rule_id = _normalize_rule_id(rule_id)
             
-            # Extrahiere Tag aus der Regel-ID
             if '_' in normalized_rule_id:
                 tag = normalized_rule_id.split('_')[-1]
             else:
-                # Für Standalone-Tags (ohne Unterstrich)
                 tag = normalized_rule_id
             
             if not tag: continue
 
             if conf.get('hide'):
-                # Tag soll versteckt werden
                 sup_keep.discard(tag)
                 sub_keep.discard(tag)
             else:
-                # Tag soll angezeigt werden - setze Placement falls spezifiziert
                 placement = conf.get('placement')
                 if placement == 'sup': 
-                    sub_keep.discard(tag)  # Entferne aus SUB, falls vorhanden
+                    sub_keep.discard(tag)
                     sup_keep.add(tag)
                 elif placement == 'sub': 
-                    sup_keep.discard(tag)  # Entferne aus SUP, falls vorhanden
+                    sup_keep.discard(tag)
                     sub_keep.add(tag)
-                # Wenn placement=None, bleibt das Tag in beiden Sets (falls vorhanden)
     else:
-        # Wenn keine Config da ist, alle bekannten Tags behalten
         sup_keep = SUP_TAGS
         sub_keep = SUB_TAGS
 
     processed_blocks = []
     for b in blocks_copy:
         if isinstance(b, dict) and b.get('type') in ('pair', 'flow'):
-            processed_blocks.append(_process_pair_block_for_tags(
+            # WICHTIG: Verarbeite Block UND aktualisiere token_meta!
+            processed_block = _process_pair_block_for_tags_with_meta(
                 b, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=False
-            ))
+            )
+            processed_blocks.append(processed_block)
         else:
             processed_blocks.append(b)
     return processed_blocks
@@ -775,6 +767,70 @@ def _strip_colors_from_block(block: Dict[str, Any]) -> Dict[str, Any]:
         # NEU: Auch en_tokens entfärben, falls vorhanden
         if 'en_tokens' in block:
             result['en_tokens'] = proc_tokens(block.get('en_tokens', []))
+        return result
+    return block
+
+# NEU: Hilfsfunktion, die auch token_meta aktualisiert
+def _process_pair_block_for_tags_with_meta(block: Dict[str, Any], *,
+                                           sup_keep: Optional[set[str]],
+                                           sub_keep: Optional[set[str]],
+                                           remove_all: bool) -> Dict[str, Any]:
+    """
+    Wie _process_pair_block_for_tags, aber aktualisiert auch token_meta['removed_tags']
+    """
+    def proc_tokens_with_meta(seq: Iterable[str], token_meta: List[Dict]) -> tuple[List[str], List[Dict]]:
+        new_tokens = []
+        new_meta = []
+        
+        for i, tok in enumerate(seq or []):
+            # Hole bestehende Metadaten (falls vorhanden)
+            if i < len(token_meta):
+                meta = token_meta[i].copy()
+            else:
+                meta = {'color_symbol': None, 'removed_tags': []}
+            
+            # Extrahiere Tags VOR der Entfernung
+            tags_before = set(RE_PAREN_TAG.findall(tok))
+            
+            # Entferne Tags
+            new_tok = _remove_selected_tags(tok, sup_keep=sup_keep, sub_keep=sub_keep, remove_all=remove_all)
+            
+            # Extrahiere Tags NACH der Entfernung
+            tags_after = set(RE_PAREN_TAG.findall(new_tok))
+            
+            # Berechne entfernte Tags
+            removed_tags = tags_before - tags_after
+            
+            # WICHTIG: Speichere entfernte Tags in token_meta!
+            meta['removed_tags'] = list(removed_tags)
+            
+            new_tokens.append(new_tok)
+            new_meta.append(meta)
+        
+        return new_tokens, new_meta
+    
+    if 'gr_tokens' in block or 'de_tokens' in block:
+        # Hole bestehende token_meta (falls vorhanden)
+        old_token_meta = block.get('token_meta', [])
+        
+        # Verarbeite gr_tokens
+        new_gr_tokens, new_gr_meta = proc_tokens_with_meta(block.get('gr_tokens', []), old_token_meta)
+        
+        # Verarbeite de_tokens (verwenden gleiche Meta-Struktur)
+        new_de_tokens, _ = proc_tokens_with_meta(block.get('de_tokens', []), [])
+        
+        result = {
+            **block,
+            'gr_tokens': new_gr_tokens,
+            'de_tokens': new_de_tokens,
+            'token_meta': new_gr_meta  # WICHTIG: Aktualisiere token_meta!
+        }
+        
+        # Auch en_tokens verarbeiten, falls vorhanden
+        if 'en_tokens' in block:
+            new_en_tokens, _ = proc_tokens_with_meta(block.get('en_tokens', []), [])
+            result['en_tokens'] = new_en_tokens
+        
         return result
     return block
 

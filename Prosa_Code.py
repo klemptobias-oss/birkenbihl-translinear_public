@@ -1391,7 +1391,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
-                                                                                         # Nur griechische Zeile sichtbar
+                                                                                                                                                         # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
             is_notag = False
             if tag_config is None:
@@ -2480,79 +2480,44 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             idx += 1; continue
         
         if t == 'flow':
-            # WICHTIG: Prüfe, ob dieser Flow-Block bereits verarbeitet wurde (z.B. durch h3_eq Handler)
+            # WICHTIG: Prüfe, ob dieser Flow-Block bereits verarbeitet wurde
             if idx in processed_flow_indices:
-                if idx in skipped_indices:
-                    # WICHTIG: Dieser Block wurde bereits übersprungen - verhindere Endlosschleife
-                    print(f"Prosa_Code: ERROR - flow block {idx+1} already skipped! Forcing increment to break loop.", flush=True)
-                    idx += 1
-                    if idx >= len(flow_blocks):
-                        break
-                    continue
-                skipped_indices.add(idx)
-                print(f"Prosa_Code: SKIPPING flow block {idx+1} (already processed by h3_eq/h2_eq handler, processed_flow_indices={processed_flow_indices})", flush=True)
+                print(f"Prosa_Code: SKIPPING flow block {idx+1} (already processed)", flush=True)
                 idx += 1
-                if idx >= len(flow_blocks):
-                    break
                 continue
             
-            # Markiere diesen Block als verarbeitet (SOFORT, bevor etwas anderes passiert)
+            # Markiere SOFORT als verarbeitet
             processed_flow_indices.add(idx)
-            print(f"Prosa_Code: Marked flow block {idx+1} as processed (processed_flow_indices now contains: {sorted(processed_flow_indices)})", flush=True)
+            print(f"Prosa_Code: Processing flow block {idx+1}/{len(flow_blocks)}", flush=True)
             
-            # DIAGNOSE: Aggressives Logging für flow-Blöcke
-            print(f"Prosa_Code: Processing flow block {idx+1}/{len(flow_blocks)} (gr_tokens={len(b.get('gr_tokens', []))}, de_tokens={len(b.get('de_tokens', []))})", flush=True)
-            
-            # NEU: Kommentare aus block['comments'] rendern (VOR den Tabellen)
+            # KRITISCH: Kommentare aus block['comments'] rendern (VOR den Tabellen)
             render_block_comments(b, elements, doc)
             
-            # WICHTIG: Nur EINZELNE Zeilen zusammenhalten (2 oder 3 Tabellen für GR/DE oder GR/DE/EN)
-            # NICHT den gesamten Flow-Block, um große weiße Flächen zu vermeiden
-            print(f"Prosa_Code: About to call build_flow_tables() for block {idx+1}", flush=True)
+            # KRITISCH: build_flow_tables DIREKT aufrufen (OHNE h3_eq-Abhängigkeit)
             try:
                 flow_tables = build_flow_tables(b)
-                print(f"Prosa_Code: build_flow_tables() completed for block {idx+1} (tables={len(flow_tables)})", flush=True)
-            except Exception as e:
-                print(f"Prosa_Code: ERROR in build_flow_tables() for block {idx+1}: {e}", flush=True)
-                import traceback
-                traceback.print_exc()
-                raise
-            
-            # Bestimme die Anzahl der Sprachen (2 oder 3)
-            has_en = b.get('has_en', False)
-            tables_per_line = 3 if has_en else 2
-            
-            print(f"Prosa_Code: Grouping {len(flow_tables)} tables into groups of {tables_per_line}", flush=True)
-            
-            # Gruppiere Tabellen nach Zeilen und halte jede Zeile zusammen
-            try:
-                group_count = 0
+                print(f"Prosa_Code: build_flow_tables() completed (tables={len(flow_tables)})", flush=True)
+                
+                # Bestimme Anzahl der Sprachen (2 oder 3)
+                has_en = b.get('has_en', False)
+                tables_per_line = 3 if has_en else 2
+                
+                # Gruppiere Tabellen nach Zeilen und halte jede Zeile zusammen
                 for i in range(0, len(flow_tables), tables_per_line):
                     line_tables = flow_tables[i:i+tables_per_line]
                     if line_tables:
-                        group_count += 1
                         elements.append(KeepTogether(line_tables))
                 
-                print(f"Prosa_Code: Added {group_count} KeepTogether groups to elements (total elements now: {len(elements)})", flush=True)
-                
                 elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
+                print(f"Prosa_Code: Flow block completed", flush=True)
             except Exception as e:
-                print(f"Prosa_Code: ERROR grouping tables for block {idx+1}: {e}", flush=True)
+                print(f"Prosa_Code: ERROR in build_flow_tables(): {e}", flush=True)
                 import traceback
                 traceback.print_exc()
                 raise
             
-            # Block wurde bereits oben in processed_flow_indices hinzugefügt
-            # idx wird direkt erhöht
             idx += 1
-            if idx < len(flow_blocks):
-                next_type = flow_blocks[idx].get('type', 'unknown')
-            else:
-                next_type = 'END'
-            print(f"Prosa_Code: Flow block completed, incremented idx to {idx} (next block type: {next_type})", flush=True)
             continue
-
-        idx += 1
 
     # DIAGNOSE: Logging nach Element-Erstellung, vor doc.build()
     logger.info("Prosa_Code.create_pdf: Element creation complete (elements=%d)", len(elements))
