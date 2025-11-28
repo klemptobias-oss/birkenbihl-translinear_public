@@ -1107,9 +1107,9 @@ def group_pairs_into_flows(blocks):
             if 'lyrik' in heading_text:
                 in_lyric_mode = True
                 print("  → Lyrik-Modus AKTIVIERT (Zeilenstruktur wird bewahrt, keine § Marker)")
-            elif in_lyric_mode:
+            elif in_lyrik_mode:
                 # Andere h2_eq Überschrift nach Lyrik → Lyrik-Modus beenden
-                in_lyric_mode = False
+                in_lyrik_mode = False
                 print("  → Lyrik-Modus BEENDET")
             flows.append(b)
             continue
@@ -1117,8 +1117,8 @@ def group_pairs_into_flows(blocks):
         # Bei anderen Überschriften (h1_eq, h3_eq, section, title) Lyrik-Modus beenden
         if t in ('h1_eq', 'h3_eq', 'section', 'title'):
             flush()
-            if in_lyric_mode:
-                in_lyric_mode = False
+            if in_lyrik_mode:
+                in_lyrik_mode = False
                 print("  → Lyrik-Modus beendet")
             flows.append(b)
             continue
@@ -1172,7 +1172,7 @@ def group_pairs_into_flows(blocks):
             if len(et) < max_len: et += [''] * (max_len - len(et))
 
             # NEU: Im Lyrik-Modus Zeilenstruktur bewahren (wie bei Zitaten)
-            if in_lyric_mode:
+            if in_lyrik_mode:
                 flush()  # Vorherige Flows abschließen
                 # Jede Zeile als separates Paar ausgeben (Zeilenstruktur erhalten)
                 # WICHTIG: Keine para_label im Lyrik-Modus (verhindert § vor jeder Zeile)
@@ -1391,7 +1391,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
-                                             # Nur griechische Zeile sichtbar
+                                                                                         # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
             is_notag = False
             if tag_config is None:
@@ -2077,13 +2077,12 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 continue
             
             # GANZ EINFACH: Kommentar in grauer Box rendern
-            # Grau hinterlegte Box: Table mit Hintergrundfarbe
+            # Grau hinterlegter Kommentar-Box mit kleiner Schrift
             from reportlab.platypus import Table, TableStyle
             comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                fontName='DejaVu', fontSize=7,  # Kleinere Schrift
-                leading=8.5,  # Dichte Zeilenabstände
-                alignment=TA_LEFT,
-                textColor=colors.Color(0.25, 0.25, 0.25),  # Dunkleres Grau
+                fontName='DejaVu', fontSize=7,  # Noch kleiner
+                leading=9,  # Dichte Zeilenabstände
+                alignment=TA_LEFT, 
                 leftIndent=0, rightIndent=0,  # Kein Indent in der Table
                 spaceBefore=0, spaceAfter=0)
             
@@ -2146,8 +2145,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # WICHTIG: Suche nach dem nächsten flow-Block - überspringe ALLES außer flow!
             scan = idx
             found_flow = False
+            
             while scan < len(flow_blocks):
                 scan_type = flow_blocks[scan].get('type', 'unknown')
+                print(f"Prosa_Code: h3_eq scanning idx={scan}, type={scan_type}", flush=True)
                 
                 if scan_type == 'flow':
                     # FLOW GEFUNDEN!
@@ -2166,17 +2167,17 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                                 elements.append(KeepTogether(line_tables))
                         elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
                         idx = scan + 1
-                        break  # WICHTIG: Schleife verlassen nach flow-Block
                     else:
                         elements.append(KeepTogether([h3_para]))
                         idx = scan + 1
-                        break
+                    break  # WICHTIG: Schleife verlassen nach flow-Block
                 
                 # NICHT flow → weitersuchen
                 scan += 1
             
             if not found_flow:
                 # Kein flow-Block gefunden - Überschrift allein
+                print(f"Prosa_Code: h3_eq no flow found after scanning to idx={scan}", flush=True)
                 elements.append(KeepTogether([h3_para]))
                 idx = scan
             
