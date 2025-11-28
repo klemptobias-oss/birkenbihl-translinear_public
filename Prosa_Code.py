@@ -1391,7 +1391,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
             is_notag = False
@@ -1990,450 +1990,23 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         pass
     
     elements, idx = [], 0
-    last_block_type = None  # Speichert den Typ des letzten verarbeiteten Blocks
-    processed_flow_indices = set()  # WICHTIG: Verhindere doppelte Verarbeitung von Flow-Blöcken
-    processed_h3_indices = set()  # WICHTIG: Verhindere doppelte Verarbeitung von h3_eq Blöcken
-    skipped_indices = set()  # WICHTIG: Verfolge übersprungene Indizes, um Endlosschleifen zu vermeiden
+    # ...existing code...
     
-    print(f"Prosa_Code: Entering element creation loop (flow_blocks={len(flow_blocks)})", flush=True)
-    comment_count = sum(1 for b in flow_blocks if isinstance(b, dict) and b.get('type') == 'comment')
-    if comment_count > 0:
-        print(f"Prosa_Code: Found {comment_count} comment blocks in flow_blocks", flush=True)
-    
-    iteration_count = 0
-    last_idx_seen = -1  # Track last idx to detect backwards jumps
-    consecutive_same_idx = 0  # Count consecutive iterations with same idx
     while idx < len(flow_blocks):
+        # KRITISCH: idx darf NIEMALS von Unterfunktionen verändert werden!
+        # Speichere idx am Anfang jeder Iteration für Debugging
+        idx_before = idx
+        
         iteration_count += 1
-        
-        # DIAGNOSE: Detect backwards jumps or stuck idx
-        if idx == last_idx_seen:
-            consecutive_same_idx += 1
-            if consecutive_same_idx >= 2:  # Reduziert von 3 auf 2 für frühere Erkennung
-                print(f"Prosa_Code: ERROR - idx stuck at {idx} for {consecutive_same_idx} iterations! Forcing increment to break loop.", flush=True)
-                idx += 1  # Force increment to break loop
-                if idx >= len(flow_blocks):
-                    break
-                continue
-        elif idx < last_idx_seen:
-            print(f"Prosa_Code: ERROR - idx decreased from {last_idx_seen} to {idx}! Forcing increment.", flush=True)
-            idx = last_idx_seen + 1  # Force increment
-            if idx >= len(flow_blocks):
-                break
-            continue
-        else:
-            consecutive_same_idx = 0
-        last_idx_seen = idx
-        
-        # DIAGNOSE: Safety check - prevent infinite loops
-        if iteration_count > len(flow_blocks) * 10:  # Max 10x iterations per block
-            print(f"Prosa_Code: ERROR - Infinite loop detected! iteration_count={iteration_count}, idx={idx}, len(flow_blocks)={len(flow_blocks)}", flush=True)
-            raise RuntimeError(f"Infinite loop detected in element creation: iteration_count={iteration_count}, idx={idx}")
-        
-        # DIAGNOSE: Logging am Anfang jeder Iteration (für ersten Block)
-        if idx == 0:
-            print(f"Prosa_Code: Processing first block (idx=0, type={flow_blocks[idx].get('type', 'unknown')})", flush=True)
-        elif iteration_count % 50 == 0:  # Logge alle 50 Iterationen
-            print(f"Prosa_Code: Still processing... iteration={iteration_count}, idx={idx}, type={flow_blocks[idx].get('type', 'unknown')}", flush=True)
+        # ...existing code... (alle Checks)
         
         b, t = flow_blocks[idx], flow_blocks[idx].get('type', 'unknown')
         
-        # DEBUG: Logge type für Kommentar-Blöcke
-        if isinstance(b, dict) and b.get('type') == 'comment':
-            print(f"Prosa_Code: DEBUG - Found comment block at idx={idx}, t='{t}', b.type='{b.get('type')}', will check if t=='comment'", flush=True)
-
-        if t == 'blank':
-            elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm)); idx += 1; continue
-        if t == 'title_brace':
-            # NEU: Kommentare aus block['comments'] rendern (auch bei title_brace)
-            render_block_comments(b, elements, doc)
-            elements.append(Paragraph(xml_escape(b['text']), style_title))
-            last_block_type = t
-            idx += 1; continue
-
-        # NEU: Kommentar-Zeilen (zahlk oder zahl-zahlk) - GANZ EINFACH: Text in grauer Box
-        if t == 'comment':
-            print(f"Prosa_Code: Processing comment block at idx={idx}", flush=True)
-            original_line = b.get('original_line', '')
-            content = b.get('content', '')
-            line_num = b.get('line_num', '')
-            
-            # WICHTIG: Kommentar-Text direkt aus original_line extrahieren (einfach!)
-            # Format: "(105k) Text" oder "(71-77k) Text"
-            if not content and original_line:
-                # Entferne Zeilennummer-Marker am Anfang: "(105k) " oder "(71-77k) "
-                content = re.sub(r'^\(\d+(?:-\d+)?k\)\s*', '', original_line).strip()
-            
-            # Fallback: Wenn immer noch kein content, verwende original_line (ohne Zeilennummer)
-            if not content:
-                if original_line:
-                    content = re.sub(r'^\(\d+(?:-\d+)?k\)\s*', '', original_line).strip()
-                else:
-                    content = ''
-            
-            # Wenn content leer ist, überspringe
-            if not content:
-                print(f"Prosa_Code: Skipping comment block at idx={idx} (content is empty, original_line='{original_line[:50] if original_line else ''}')", flush=True)
-                idx += 1
-                continue
-            
-            # GANZ EINFACH: Kommentar in grauer Box rendern
-            # Grau hinterlegter Kommentar-Box mit kleiner Schrift
-            from reportlab.platypus import Table, TableStyle
-            comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                fontName='DejaVu', fontSize=7,  # Noch kleiner
-                leading=9,  # Dichte Zeilenabstände
-                alignment=TA_LEFT, 
-                leftIndent=0, rightIndent=0,  # Kein Indent in der Table
-                spaceBefore=0, spaceAfter=0)
-            
-            # Berechne verfügbare Breite
-            try:
-                available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*mm
-            except:
-                available_width = 170*mm  # Fallback
-            
-            comment_table = Table([[Paragraph(xml_escape(content), comment_style_simple)]], 
-                                 colWidths=[available_width])
-            comment_table.setStyle(TableStyle([
-                ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
-                ('LEFTPADDING', (0, 0), (-1, -1), 4*mm),
-                ('RIGHTPADDING', (0, 0), (-1, -1), 4*mm),
-                ('TOPPADDING', (0, 0), (-1, -1), 3*mm),
-                ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),
-            ]))
-            elements.append(Spacer(1, 2*mm))
-            elements.append(comment_table)
-            elements.append(Spacer(1, 2*mm))
-            print(f"Prosa_Code: Rendered comment block: '{content[:50]}...'", flush=True)
-            idx += 1
-            continue
-
-        if t in ('h1_eq', 'h2_eq'):
-            # NEU: Kommentare aus block['comments'] rendern (auch bei Überschriften)
-            render_block_comments(b, elements, doc)
-            
-            # WICHTIG: Füge Abstand VOR Überschriften hinzu, wenn vorher Text war
-            # (aber nicht zwischen aufeinanderfolgenden Überschriften)
-            if last_block_type in ('flow', 'pair', 'quote'):
-                elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm * 1.2))
-            
-            header = []
-            if t == 'h1_eq':
-                header.append(Paragraph(xml_escape(b['text']), style_eq_h1)); idx += 1
-                while idx < len(flow_blocks) and flow_blocks[idx]['type'] == 'blank': idx += 1
-                if idx < len(flow_blocks) and flow_blocks[idx]['type'] == 'h2_eq':
-                    header.append(Paragraph(xml_escape(flow_blocks[idx]['text']), style_eq_h2)); idx += 1
-                while idx < len(flow_blocks) and flow_blocks[idx]['type'] == 'h3_eq':
-                    header.append(Paragraph(xml_escape(flow_blocks[idx]['text']), style_eq_h3)); idx += 1
-            else:
-                header.append(Paragraph(xml_escape(b['text']), style_eq_h2)); idx += 1
-                while idx < len(flow_blocks) and flow_blocks[idx]['type'] == 'h3_eq':
-                    header.append(Paragraph(xml_escape(flow_blocks[idx]['text']), style_eq_h3)); idx += 1
-
-            # EINFACH: Gehe zum nächsten Block (OHNE flow-Block zu suchen)
-            elements.append(KeepTogether(header))
-            last_block_type = t
-            continue
-
-        if t == 'h3_eq':
-            # WICHTIG: Überschriften-Handling MUSS EINFACH bleiben!
-            # Das Scannen nach flow-Blöcken führt zu idx-Dekrementen und Endlosschleifen
-            processed_h3_indices.add(idx)
-            render_block_comments(b, elements, doc)
-            print(f"Prosa_Code: Processing h3_eq block at idx={idx}", flush=True)
-            
-            # Render Überschrift
-            h3_para = Paragraph(xml_escape(b['text']), style_eq_h3)
-            elements.append(KeepTogether([h3_para]))
-            
-            # KRITISCH: idx IMMER inkrementieren, NIEMALS scannen!
-            idx += 1
-            continue
-
-        if t == 'quote':
-            # NEU: Kommentare aus block['comments'] rendern (auch bei Zitaten)
-            render_block_comments(b, elements, doc)
-            
-            # WICHTIG: Mehr Abstand vor dem Zitat (1.5x größer als normal)
-            elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm * 1.5))
-            
-            # NEU: Parse Zitat-Zeilen mit Zeilennummern-basierter Logik (wie normaler Text)
-            # Dies ermöglicht korrekte Erkennung von 2- und 3-sprachigen Zeilen
-            lines = b.get('lines', [])
-            temp_quote_blocks = []
-            j = 0
-            
-            while j < len(lines):
-                ln = (lines[j] or '').strip()
-                if not ln or is_empty_or_sep(ln):
-                    j += 1
-                    continue
-                
-                # Extrahiere Zeilennummer
-                line_num, line_content = extract_line_number(ln)
-                
-                if line_num is not None:
-                    # Sammle alle Zeilen mit derselben Nummer
-                    lines_with_same_num = [ln]
-                    k = j + 1
-                    while k < len(lines):
-                        next_line = (lines[k] or '').strip()
-                        if is_empty_or_sep(next_line):
-                            k += 1
-                            continue
-                        next_num, _ = extract_line_number(next_line)
-                        if next_num == line_num:
-                            lines_with_same_num.append(next_line)
-                            k += 1
-                        else:
-                            break
-                    
-                    # Parse basierend auf Anzahl der Zeilen
-                    num_lines = len(lines_with_same_num)
-                    if num_lines == 2:
-                        # 2-sprachig
-                        gr_line = _remove_line_number_from_line(lines_with_same_num[0])
-                        de_line = _remove_line_number_from_line(_remove_speaker_from_line(lines_with_same_num[1]))
-                        gt = tokenize(gr_line) if gr_line else []
-                        dt = tokenize(de_line) if de_line else []
-                        dt = ['' if RE_INLINE_MARK.match(x or '') else (x or '') for x in dt]
-                        if len(gt) > len(dt):   dt += [''] * (len(gt) - len(dt))
-                        elif len(dt) > len(gt): gt += [''] * (len(dt) - len(gt))
-                        temp_quote_blocks.append({
-                            'type': 'pair',
-                            'gr_tokens': gt,
-                            'de_tokens': dt,
-                            'en_tokens': []
-                        })
-                    elif num_lines >= 3:
-                        # 3-sprachig
-                        gr_line = _remove_line_number_from_line(lines_with_same_num[0])
-                        de_line = _remove_line_number_from_line(_remove_speaker_from_line(lines_with_same_num[1]))
-                        en_line = _remove_line_number_from_line(_remove_speaker_from_line(lines_with_same_num[2]))
-                        gt = tokenize(gr_line) if gr_line else []
-                        dt = tokenize(de_line) if de_line else []
-                        et = tokenize(en_line) if en_line else []
-                        dt = ['' if RE_INLINE_MARK.match(x or '') else (x or '') for x in dt]
-                        et = ['' if RE_INLINE_MARK.match(x or '') else (x or '') for x in et]
-                        max_len = max(len(gt), len(dt), len(et))
-                        gt += [''] * (max_len - len(gt))
-                        dt += [''] * (max_len - len(dt))
-                        et += [''] * (max_len - len(et))
-                        temp_quote_blocks.append({
-                            'type': 'pair',
-                            'gr_tokens': gt,
-                            'de_tokens': dt,
-                            'en_tokens': et
-                        })
-                    else:
-                        # Nur 1 Zeile - als antike Zeile ohne Übersetzung
-                        gr_line = _remove_line_number_from_line(lines_with_same_num[0])
-                        gt = tokenize(gr_line) if gr_line else []
-                        temp_quote_blocks.append({
-                            'type': 'pair',
-                            'gr_tokens': gt,
-                            'de_tokens': [],
-                            'en_tokens': []
-                        })
-                    j = k
-                else:
-                    # Keine Zeilennummer - als einzelne Zeile behandeln
-                    gt = tokenize(ln) if ln else []
-                    temp_quote_blocks.append({
-                        'type': 'pair',
-                        'gr_tokens': gt,
-                        'de_tokens': [],
-                        'en_tokens': []
-                    })
-                    j += 1
-            
-            # WICHTIG: Wende Farben und Tag-Verarbeitung auf Zitate an (wie bei normalem Text)
-            # Verwende die gleiche Tag-Config wie für den Rest des Dokuments
-            # KRITISCH: Zitate müssen ALLE Tag/Translation-Einstellungen erben!
-            import shared.preprocess as preprocess
-            
-            # WICHTIG: Die Blöcke wurden bereits in prosa_pdf.py vorverarbeitet!
-            # Die Farben und Tags sind bereits korrekt gesetzt.
-            # Wir müssen hier NUR noch die Farbsymbole entfernen, wenn BLACK_WHITE aktiv ist.
-            # ABER: Wir müssen die Farben ZUERST hinzufügen (falls noch nicht geschehen),
-            # dann die Tags verarbeiten, und dann die Farbsymbole entfernen.
-            
-            # 1) Farben anwenden (IMMER, auch bei BLACK_WHITE - werden später entfernt)
-            disable_comment_bg_flag = False
-            if tag_config and isinstance(tag_config, dict):
-                disable_comment_bg_flag = bool(tag_config.get('disable_comment_bg', False))
-            
-            # WICHTIG: apply_colors IMMER aufrufen (auch bei BLACK_WHITE),
-            # da es die Farbsymbole hinzufügt, die dann bei BLACK_WHITE entfernt werden
-            if tag_config:
-                temp_quote_blocks = preprocess.apply_colors(temp_quote_blocks, tag_config, disable_comment_bg=disable_comment_bg_flag)
-            
-            # 2) Tag-Sichtbarkeit anwenden (wie beim normalen Text)
-            hidden_by_wortart = None
-            if tag_config and isinstance(tag_config, dict):
-                raw = tag_config.get('hidden_tags_by_wortart') or tag_config.get('hidden_tags_by_wordart') or None
-                if raw:
-                    hidden_by_wortart = {k.lower(): set(v) for k, v in raw.items()}
-            
-            if tag_mode == "TAGS" and hidden_by_wortart:
-                temp_quote_blocks = preprocess.apply_tag_visibility(temp_quote_blocks, tag_config, hidden_tags_by_wortart=hidden_by_wortart)
-            elif tag_mode == "NO_TAGS":
-                temp_quote_blocks = preprocess.remove_all_tags(temp_quote_blocks, tag_config)
-            
-            # 3) Translation-Hiding anwenden (wenn konfiguriert)
-            # WICHTIG: Zitate müssen die gleiche Translation-Hiding-Logik wie normale Blöcke erhalten
-            # KRITISCH: Erstelle translation_rules aus tag_config (wie in apply_tag_visibility)
-            translation_rules = {}
-            if tag_config and isinstance(tag_config, dict):
-                # Erstelle translation_rules aus tag_config (wie in apply_colors und apply_tag_visibility)
-                for rule_id, conf in tag_config.items():
-                    if not isinstance(conf, dict):
-                        continue
-                    # Normalisiere rule_id
-                    normalized_rule_id = preprocess._normalize_rule_id(rule_id) if hasattr(preprocess, '_normalize_rule_id') else rule_id.lower()
-                    # Registriere Translation-Rule, wenn hideTranslation aktiviert ist
-                    if hasattr(preprocess, '_maybe_register_translation_rule'):
-                        preprocess._maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
-                
-                # Fallback: Prüfe, ob translation_rules bereits in tag_config vorhanden sind
-                if not translation_rules:
-                    translation_rules = tag_config.get('translation_rules') or tag_config.get('hide_translations') or {}
-            
-            if translation_rules:
-                    # Wende Translation-Hiding auf jeden Block im Zitat an
-                    processed_quote_blocks = []
-                    for qb in temp_quote_blocks:
-                        if qb.get('type') == 'pair':
-                            # Wende die gleiche Logik wie in apply_tag_visibility an
-                            gr_tokens_orig = qb.get('gr_tokens', [])
-                            de_tokens = list(qb.get('de_tokens', []))
-                            en_tokens = list(qb.get('en_tokens', []))  # NEU: Englische Tokens für 3-sprachige Zitate
-                            
-                            for idx, gr_token in enumerate(gr_tokens_orig):
-                                if hasattr(preprocess, '_token_should_hide_translation'):
-                                    if preprocess._token_should_hide_translation(gr_token, translation_rules):
-                                        # Prüfe ob Übersetzung trivial ist (nur Interpunktion/Stephanus)
-                                        if idx < len(de_tokens):
-                                            de_text = de_tokens[idx].strip() if isinstance(de_tokens[idx], str) else ''
-                                            if hasattr(preprocess, 'is_trivial_translation'):
-                                                if preprocess.is_trivial_translation(de_text):
-                                                    de_tokens[idx] = ''
-                                                else:
-                                                    de_tokens[idx] = ''
-                                            else:
-                                                de_tokens[idx] = ''
-                                        if idx < len(en_tokens):
-                                            en_text = en_tokens[idx].strip() if isinstance(en_tokens[idx], str) else ''
-                                            if hasattr(preprocess, 'is_trivial_translation'):
-                                                if preprocess.is_trivial_translation(en_text):
-                                                    en_tokens[idx] = ''
-                                                else:
-                                                    en_tokens[idx] = ''
-                                            else:
-                                                en_tokens[idx] = ''
-                            
-                            qb['de_tokens'] = de_tokens
-                            qb['en_tokens'] = en_tokens
-                            
-                            # Wende auch _hide_stephanus_in_translations an
-                            processed_qb = preprocess._hide_stephanus_in_translations(qb, translation_rules)
-                            # Wende auch _hide_manual_translations_in_block an, falls vorhanden
-                            if hasattr(preprocess, '_hide_manual_translations_in_block'):
-                                processed_qb = preprocess._hide_manual_translations_in_block(processed_qb)
-                            processed_quote_blocks.append(processed_qb)
-                        else:
-                            processed_quote_blocks.append(qb)
-                    temp_quote_blocks = processed_quote_blocks
-            
-            # 4) Bei BLACK_WHITE Mode: Entferne Farbsymbole (§, $) aus Zitaten
-            if color_mode == "BLACK_WHITE":
-                temp_quote_blocks = preprocess.remove_all_color_symbols(temp_quote_blocks)
-
-            # WICHTIG: Bewahre die Zeilenstruktur innerhalb des Zitats!
-            # Erstelle SEPARATE Tabellen für jede Zeile, nicht einen Fließtext.
-            # Außerdem: Zitate linksbündig mit 10% kleinerer Breite (Einrückung)
-            
-            # Für Zitate verwenden wir den gleichen Stil wie normale Tokens
-            quote_de_style = ParagraphStyle('QuoteDE', parent=base['Normal'],
-                fontName='DejaVu-Bold' if de_bold else 'DejaVu', fontSize=gr_size, leading=_leading_for(gr_size),
-                alignment=TA_CENTER, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)
-
-            # Reduziere die Breite um 10% für Einrückung
-            quote_width_pt = frame_w * 0.9
-            
-            q_tables = []
-            for block in temp_quote_blocks:
-                if block['type'] == 'pair':
-                    q_gr = block.get('gr_tokens', [])
-                    q_de = block.get('de_tokens', [])
-                    q_en = block.get('en_tokens', [])  # NEU: Englische Tokens für 3-sprachige Zitate
-                    
-                    # Erstelle eine separate Tabelle für diese Zeile
-                    line_tables = build_tables_for_stream(
-                        q_gr, q_de,
-                        doc_width_pt=quote_width_pt,  # 10% kleiner
-                        reverse_mode=False,
-                        token_gr_style=style_quote_line, token_de_style=quote_de_style,
-                        para_display='', para_width_pt=0.0, style_para=style_para,
-                        speaker_display='', speaker_width_pt=0.0, style_speaker=style_speaker,
-                        table_halign='CENTER', italic=True,  # Zentriert für Einrückung von beiden Seiten
-                        en_tokens=q_en,  # NEU: Englische Tokens übergeben
-                        hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
-                        tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
-                        tag_mode=tag_mode  # NEU: Tag-Modus übergeben
-                    )
-                    q_tables.extend(line_tables)
-            # WICHTIG: TableStyle explizit importieren (verhindert Scope-Problem)
-            from reportlab.platypus import TableStyle
-            for k, tquote in enumerate(q_tables):
-                if k > 0: tquote.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
-
-            kidx, src_text = idx + 1, ''
-            while kidx < len(flow_blocks) and flow_blocks[kidx]['type'] == 'blank': kidx += 1
-            if kidx < len(flow_blocks) and flow_blocks[kidx]['type'] == 'source':
-                src_text = (flow_blocks[kidx].get('text') or '').strip()
-
-            block = list(q_tables)
-            if src_text:
-                # Quelle vorhanden - füge sie direkt nach dem Zitat hinzu (ohne Abstand dazwischen)
-                block += [Spacer(1, BLANK_MARKER_GAP_MM * mm), Paragraph('<i>'+xml_escape(src_text)+'</i>', style_source)]
-                elements.append(KeepTogether(block))
-                # Abstand nach der Quelle (1.5x größer als normal)
-                elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm * 1.5))
-                idx = kidx + 1
-            else:
-                # Keine Quelle - füge Abstand direkt nach dem Zitat hinzu
-                elements.append(KeepTogether(block))
-                elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm * 1.5))
-                idx = idx + 1
-            if idx < len(flow_blocks) and flow_blocks[idx]['type'] == 'blank': idx += 1
-            continue
-
-        if t == 'source':
-            text = (b.get('text') or '').strip()
-            if text:
-                elements.append(KeepTogether([Paragraph('<i>'+xml_escape(text)+'</i>', style_source)]))
-                elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
-            idx += 1
-            continue
-
-        # KRITISCH: para_set Handler (für § Marker) - WAR KOMPLETT VERGESSEN!
-        if t == 'para_set':
-            # para_set wird in group_pairs_into_flows() verwendet, um para_label zu setzen
-            # Hier müssen wir ihn einfach überspringen (er wird beim nächsten flow-Block verwendet)
-            idx += 1
-            continue
-
-        # KRITISCH: flow-Handler MUSS VOR pair-Handler stehen!
+        # ...existing code... (alle Handler)
+        
         if t == 'flow':
-            # KRITISCH: flow-Blöcke enthalten den HAUPTTEXT (tokenisiert)!
-            # Dies ist der WICHTIGSTE Block-Typ für Prosa!
-            
-            # NEU: Kommentare aus block['comments'] rendern (auch bei flow-Blöcken)
             render_block_comments(b, elements, doc)
             
-            # WICHTIG: build_flow_tables DIREKT aufrufen (OHNE h3_eq-Abhängigkeit)
             try:
                 flow_tables = build_flow_tables(b)
                 print(f"Prosa_Code: build_flow_tables() completed (tables={len(flow_tables)})", flush=True)
@@ -2453,10 +2026,16 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 
             except Exception as e:
                 print(f"Prosa_Code: build_flow_tables() ERROR: {e}", flush=True)
-                import traceback
                 traceback.print_exc()
             
+            # KRITISCH: idx HIER inkrementieren, NICHT in build_flow_tables!
             idx += 1
+            
+            # SICHERHEIT: Prüfe, ob idx manipuliert wurde
+            if idx != idx_before + 1:
+                print(f"Prosa_Code: ERROR - idx manipulated by build_flow_tables! before={idx_before}, after={idx}", flush=True)
+                idx = idx_before + 1  # Korrigiere
+            
             continue
 
         # NEU: Handler für einzelne Paare (Lyrik-Modus)
