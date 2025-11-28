@@ -2310,29 +2310,29 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                             de_tokens = list(qb.get('de_tokens', []))
                             en_tokens = list(qb.get('en_tokens', []))  # NEU: Englische Tokens für 3-sprachige Zitate
                             
-                            for idx, gr_token in enumerate(gr_tokens_orig):
+                            for idx_token, gr_token in enumerate(gr_tokens_orig):
                                 if hasattr(preprocess, '_token_should_hide_translation'):
                                     if preprocess._token_should_hide_translation(gr_token, translation_rules):
                                         # Prüfe ob Übersetzung trivial ist (nur Interpunktion/Stephanus)
-                                        if idx < len(de_tokens):
-                                            de_text = de_tokens[idx].strip() if isinstance(de_tokens[idx], str) else ''
+                                        if idx_token < len(de_tokens):
+                                            de_text = de_tokens[idx_token].strip() if isinstance(de_tokens[idx_token], str) else ''
                                             if hasattr(preprocess, 'is_trivial_translation'):
                                                 if preprocess.is_trivial_translation(de_text):
-                                                    de_tokens[idx] = ''
+                                                    de_tokens[idx_token] = ''
                                                 else:
-                                                    de_tokens[idx] = ''
+                                                    de_tokens[idx_token] = ''
                                             else:
-                                                de_tokens[idx] = ''
-                                        if idx < len(en_tokens):
-                                            en_text = en_tokens[idx].strip() if isinstance(en_tokens[idx], str) else ''
+                                                de_tokens[idx_token] = ''
+                                        if idx_token < len(en_tokens):
+                                            en_text = en_tokens[idx_token].strip() if isinstance(en_tokens[idx_token], str) else ''
                                             if hasattr(preprocess, 'is_trivial_translation'):
                                                 if preprocess.is_trivial_translation(en_text):
-                                                    en_tokens[idx] = ''
+                                                    en_tokens[idx_token] = ''
                                                 else:
-                                                    en_tokens[idx] = ''
+                                                    en_tokens[idx_token] = ''
                                             else:
-                                                en_tokens[idx] = ''
-                            
+                                                en_tokens[idx_token] = ''
+
                             qb['de_tokens'] = de_tokens
                             qb['en_tokens'] = en_tokens
                             
