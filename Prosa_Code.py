@@ -1391,7 +1391,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
-                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                
             # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
             is_notag = False
@@ -1476,7 +1476,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             acc += w
             j += 1
 
-        # --- SPEZIALFALL: erstes Slice eines Sprecher-Blocks ohne DE-Inhalt
+        # --- SPEZIALFALL: erstes Slice eines Sprecher-Blocks ohne DE-Content
         # Nur ausführen, wenn DE-Übersetzungen vorhanden sind
         if first_slice and de and not _has_de_content(i, j):
             k = _next_de_index(j)  # erster Index mit DE-Inhalt rechts vom Slice
@@ -2444,20 +2444,13 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             idx += 1; continue
         
         if t == 'flow':
-            # WICHTIG: Prüfe, ob dieser Flow-Block bereits verarbeitet wurde
-            if idx in processed_flow_indices:
-                print(f"Prosa_Code: SKIPPING flow block {idx+1} (already processed)", flush=True)
-                idx += 1
-                continue
+            # KRITISCH: flow-Blöcke enthalten den HAUPTTEXT (tokenisiert)!
+            # Dies ist der WICHTIGSTE Block-Typ für Prosa!
             
-            # Markiere SOFORT als verarbeitet
-            processed_flow_indices.add(idx)
-            print(f"Prosa_Code: Processing flow block {idx+1}/{len(flow_blocks)}", flush=True)
-            
-            # KRITISCH: Kommentare aus block['comments'] rendern (VOR den Tabellen)
+            # NEU: Kommentare aus block['comments'] rendern (auch bei flow-Blöcken)
             render_block_comments(b, elements, doc)
             
-            # KRITISCH: build_flow_tables DIREKT aufrufen (OHNE h3_eq-Abhängigkeit)
+            # WICHTIG: build_flow_tables DIREKT aufrufen (OHNE h3_eq-Abhängigkeit)
             try:
                 flow_tables = build_flow_tables(b)
                 print(f"Prosa_Code: build_flow_tables() completed (tables={len(flow_tables)})", flush=True)
@@ -2472,13 +2465,16 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     if line_tables:
                         elements.append(KeepTogether(line_tables))
                 
+                # Abstand nach dem flow-Block
                 elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
-                print(f"Prosa_Code: Flow block completed", flush=True)
+                
             except Exception as e:
-                print(f"Prosa_Code: ERROR in build_flow_tables(): {e}", flush=True)
+                print(f"Prosa_Code: build_flow_tables() ERROR: {e}", flush=True)
                 import traceback
                 traceback.print_exc()
-                raise
+            
+            idx += 1
+            continue
 
     # DIAGNOSE: Logging nach Element-Erstellung, vor doc.build()
     logger.info("Prosa_Code.create_pdf: Element creation complete (elements=%d)", len(elements))

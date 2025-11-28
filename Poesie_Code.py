@@ -1568,20 +1568,24 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                           meter_on: bool = False,
                           tag_mode: str = "TAGS",
                           speaker: str = "",
-                          reserve_speaker_col: bool = False,
                           line_label: str = "",
-                          doc_width_pt: float = None,
-                          token_gr_style = None,
-                          token_de_style = None,
-                          num_style = None,
-                          style_speaker = None,
+                          doc_width_pt: float = 595.0,
+                          token_gr_style: ParagraphStyle = None,
+                          token_de_style: ParagraphStyle = None,
+                          num_style: ParagraphStyle = None,
+                          style_speaker: ParagraphStyle = None,
                           gr_bold: bool = False,
+                          reserve_speaker_col: bool = False,
                           en_tokens: list[str] = None,
                           tag_config: dict = None,
                           base_line_num: int = None,
                           line_comment_colors: dict = None,
                           hide_pipes: bool = False,
                           block: dict = None):
+    """
+    Erstellt die Tabellen für ein Verspaar (pair/flow).
+    WICHTIG: Spaltenbreiten müssen NACH dem Tag-Entfernen berechnet werden!
+    """
     
     # Standardwerte setzen falls nicht übergeben
     if doc_width_pt is None:
