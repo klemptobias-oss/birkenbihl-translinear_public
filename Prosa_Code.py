@@ -987,7 +987,7 @@ def process_input_file(fname:str):
             elif num_lines >= 3:
                 # Dreisprachig: gr/lat_de_en
                 # WICHTIG: Erste = antike Sprache, zweite = de, dritte = en
-                # WICHTIG: Sprecher nur in der antiken Zeile behalten, aus Übersetzungen entfernen
+                # WICHTIG: Sprecher nur aus der antiken Zeile behalten, aus Übersetzungen entfernen
                 # NEU: Zeilennummern aus allen Zeilen entfernen (nur für Prosa)
                 gr_line = _remove_line_number_from_line(lines_with_same_num[0])
                 de_line = _remove_line_number_from_line(_remove_speaker_from_line(lines_with_same_num[1]))
@@ -1391,7 +1391,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
             is_notag = False
@@ -1436,7 +1436,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # WICHTIG: IMMER reduzieren, damit alle Zeilen am gleichen Ort beginnen
         # Para/Speaker-Spalten werden nur beim ersten Slice angezeigt, aber der Platz wird immer reserviert
         # für konsistente Ausrichtung aller Zeilen im gleichen Block
-        # WICHTIG: SPEAKER_GAP_MM ist jetzt gleich PARA_GAP_MM (1.2mm) für konsistente Formatierung
+        # WICHTIG: SPEAKER_GAP_MM ist jetzt gleich PARA_GAP_MM für konsistente Formatierung
         # If block looks like a speaker line, reduce speaker column and use full content area for text
         avail_w = doc_width_pt
         has_speaker = bool(speaker_display) or (block and block.get('speaker'))
@@ -2435,21 +2435,26 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # KRITISCH: flow-Blöcke enthalten den HAUPTTEXT (tokenisiert)!
             # Dies ist der WICHTIGSTE Block-Typ für Prosa!
             
+            logger.debug("Prosa_Code: flow block detected, line_num=%s", b.get('line_num'))
+            
             # NEU: Kommentare aus block['comments'] rendern (auch bei flow-Blöcken)
             render_block_comments(b, elements, doc)
             
-            # WICHTIG: build_flow_tables DIREKT aufrufen (OHNE h3_eq-Abhängigkeit)
+            # WICHTIG: build_flow_tables DIREKT aufrufen
             try:
+                logger.debug("Prosa_Code: calling build_flow_tables() with block keys=%s", list(b.keys()))
                 flow_tables = build_flow_tables(b)
-                print(f"Prosa_Code: build_flow_tables() completed (tables={len(flow_tables)})", flush=True)
+                logger.info("Prosa_Code: build_flow_tables() completed (tables=%d)", len(flow_tables))
                 
                 # Bestimme Anzahl der Sprachen (2 oder 3)
                 has_en = b.get('has_en', False)
                 tables_per_line = 3 if has_en else 2
                 
+                logger.debug("Prosa_Code: has_en=%s, tables_per_line=%d", has_en, tables_per_line)
+                
                 # Gruppiere Tabellen nach Zeilen und halte jede Zeile zusammen
-                for i in range(0, len(flow_tables), tables_per_line):
-                    line_tables = flow_tables[i:i+tables_per_line]
+                for i_table in range(0, len(flow_tables), tables_per_line):
+                    line_tables = flow_tables[i_table:i_table+tables_per_line]
                     if line_tables:
                         elements.append(KeepTogether(line_tables))
                 
@@ -2457,42 +2462,21 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
                 
             except Exception as e:
-                print(f"Prosa_Code: build_flow_tables() ERROR: {e}", flush=True)
-                import traceback
-                traceback.print_exc()
+                logger.exception("Prosa_Code: build_flow_tables() ERROR: %s", e)
+                # Fallback: Zeige Fehlermeldung im PDF
+                error_style = ParagraphStyle('FlowError', parent=base['Normal'],
+                    fontSize=8, textColor=colors.red, leftIndent=10*mm)
+                elements.append(Paragraph(f"[Fehler beim Rendern von flow-Block: {e}]", error_style))
             
             idx += 1
             continue
 
-        # NEU: Handler für einzelne Paare (Lyrik-Modus)
-        # Bewahrt die Zeilenstruktur wie bei Zitaten
+        # ========= PAIR (sollte nicht vorkommen in Prosa, aber zur Sicherheit) =========
         if t == 'pair':
-            gr_tokens = b.get('gr_tokens', [])
-            de_tokens = b.get('de_tokens', [])
-            en_tokens = b.get('en_tokens', [])
-            para_label = b.get('para_label', '')
-            speaker = b.get('speaker', '')
-            
-            # NEU: Kommentare aus block['comments'] rendern (VOR den Tabellen, damit sie im Fließtext erscheinen)
-            render_block_comments(b, elements, doc)
-            
-            # Erstelle eine Pseudo-Flow-Struktur für eine einzelne Zeile
-            pseudo_flow = {
-                'type': 'flow',
-                'gr_tokens': gr_tokens,
-                'de_tokens': de_tokens,
-                'en_tokens': en_tokens,
-                'para_label': para_label,
-                'speaker': speaker,
-                'has_en': bool(en_tokens)
-            }
-            
-            # Rendere als einzelne Zeile (behält Zeilenstruktur)
-            pair_tables = build_flow_tables(pseudo_flow)
-            if pair_tables:
-                elements.append(KeepTogether(pair_tables))
-            
-            idx += 1
+            logger.warning("Prosa_Code: 'pair' block detected (unexpected in Prosa!), converting to flow")
+            # Konvertiere pair zu flow und verarbeite als flow
+            b['type'] = 'flow'
+            # Springe zurück zur flow-Verarbeitung
             continue
 
     # DIAGNOSE: Logging nach Element-Erstellung, vor doc.build()

@@ -92,9 +92,6 @@ def run_one(input_path: Path) -> None:
     temp_input = ROOT / f"temp_{input_path.name}"
     temp_input.write_text(clean_text, encoding="utf-8")
     
-    before = {p.name for p in ROOT.glob("*.pdf")}
-    print(f"→ Erzeuge PDFs für: {temp_input.name}")
-    
     # Erstelle temporäre Konfigurationsdatei für Tag-Einstellungen, falls eine Konfig vorhanden ist
     config_file = None
     if tag_config:
@@ -201,7 +198,15 @@ def run_one(input_path: Path) -> None:
     # --- END robust subprocess invocation ---
     
 # Zeilen 185-235 KOMPLETT ERSETZEN (PDF-Matching Section)
+    # WICHTIG: before-Snapshot NACH cleanup, DIREKT vor dem poesie_pdf Aufruf!
+    # (wird später im Code gesetzt, siehe unten)
 
+    # --- START robust subprocess invocation of poesie_pdf.py ---
+    # ... (bestehender Code bleibt) ...
+    
+    # WICHTIG: before-Snapshot HIER setzen (NACH temp_input Erstellung, VOR poesie_pdf Aufruf)
+    before = {p.name for p in ROOT.glob("*.pdf")}
+    print(f"→ Erzeuge PDFs für: {temp_input.name}")
     after = {p.name for p in ROOT.glob("*.pdf")}
     new_pdfs = sorted(after - before)
 
