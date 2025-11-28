@@ -268,13 +268,23 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     block_types = Counter(b.get('type', 'unknown') for b in blocks if isinstance(b, dict))
     logger.info(f"Block-Typen: {dict(block_types)}")
     
-    # KRITISCH: Prüfe, ob flow-Blöcke vorhanden sind!
+    # KRITISCH: Prüfe, ob flow/pair-Blöcke vorhanden sind!
     flow_count = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'flow')
     pair_count = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'pair')
     logger.info(f"flow_blocks={flow_count}, pair_blocks={pair_count}")
     
+    # KRITISCH: Wenn pair_count > 0 und flow_count == 0, rufe group_pairs_into_flows() auf!
+    if pair_count > 0 and flow_count == 0:
+        logger.info(f"Converting {pair_count} pair blocks to flow blocks...")
+        blocks = Prosa_Code.group_pairs_into_flows(blocks)
+        
+        # Re-check nach Konvertierung
+        flow_count_after = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'flow')
+        pair_count_after = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'pair')
+        logger.info(f"After conversion: flow_blocks={flow_count_after}, pair_blocks={pair_count_after}")
+    
     if flow_count == 0 and pair_count == 0:
-        logger.error("KEIN TRANSLINEAR-TEXT GEFUNDEN! Nur Kommentare/Überschriften vorhanden!")
+        logger.error("ERROR: KEIN TRANSLINEAR-TEXT!")
         return  # WICHTIG: Abbrechen, da keine verarbeitbaren Blöcke vorhanden sind
     
     final_blocks = blocks
@@ -451,7 +461,7 @@ def main():
             # DEBUG: Zeige tag_config-Struktur
             print("DEBUG prosa_pdf: geladene tag_config keys:", list(tag_config.keys())[:10])
             print("DEBUG prosa_pdf: tag_colors count:", len(tag_config.get("tag_colors", {})))
-            print("DEBUG prosa_pdf: hidden_tags:", tag_config.get("hidden_tags"))
+            print("DEBUG prosa_pdf: hidden_tags:", tag_config.get("hiddenTags"))
             # Prüfe hide-Regeln
             hide_count = sum(1 for conf in tag_config.values() if isinstance(conf, dict) and (conf.get('hide') == True or conf.get('hide') == 'hide' or conf.get('hide') == 'true'))
             print(f"DEBUG prosa_pdf: {hide_count} Regeln mit hide=true gefunden")
