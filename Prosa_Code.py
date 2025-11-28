@@ -1210,7 +1210,7 @@ def group_pairs_into_flows(blocks):
 
     flush()
     # Meta: merken, ob überhaupt Sprecher existieren
-    flows.append({'type':'_meta', 'any_speaker': any_speaker_seen})
+    flows.append({'type':'_meta', 'any_speaker': any_speaker})
     return flows
 
 # ----------------------- Tabellenbau -----------------------
@@ -1391,7 +1391,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
-            # Nur griechische Zeile sichtbar
+                       # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
             is_notag = False
             if tag_config is None:
@@ -2137,106 +2137,40 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             continue
 
         if t == 'h3_eq':
-            # NEU: Kommentare aus block['comments'] rendern (auch bei h3-Überschriften)
             render_block_comments(b, elements, doc)
-            
-            # WICHTIG: Prüfe, ob dieser h3_eq Block bereits verarbeitet wurde
-            if idx in processed_h3_indices:
-                if idx in skipped_indices:
-                    # WICHTIG: Dieser Block wurde bereits übersprungen - verhindere Endlosschleife
-                    print(f"Prosa_Code: ERROR - h3_eq block {idx+1} already skipped! Forcing increment to break loop.", flush=True)
-                    idx += 1
-                    if idx >= len(flow_blocks):
-                        break
-                    continue
-                skipped_indices.add(idx)
-                print(f"Prosa_Code: SKIPPING h3_eq block {idx+1} (already processed, processed_h3_indices={sorted(processed_h3_indices)})", flush=True)
-                idx += 1
-                if idx >= len(flow_blocks):
-                    break
-                continue
-            
-            # Markiere diesen Block als verarbeitet (SOFORT, bevor etwas anderes passiert)
             processed_h3_indices.add(idx)
             print(f"Prosa_Code: Processing h3_eq block at idx={idx}", flush=True)
             h3_para = Paragraph(xml_escape(b['text']), style_eq_h3)
             idx += 1
             
-            # WICHTIG: Auch h3-Überschriften mit nachfolgendem Text verkoppeln
+            # WICHTIG: Überspringe blank UND comment Blöcke!
             scan = idx
-            while scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'blank': scan += 1
+            while scan < len(flow_blocks) and flow_blocks[scan]['type'] in ('blank', 'comment'):
+                scan += 1
             
             if scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'flow':
-                # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
                 processed_flow_indices.add(scan)
                 print(f"Prosa_Code: h3_eq found flow block at scan={scan}, calling build_flow_tables()", flush=True)
                 flow_tables = build_flow_tables(flow_blocks[scan])
                 if flow_tables:
-                    # Bestimme Anzahl der Sprachen (2 oder 3)
                     has_en = flow_blocks[scan].get('has_en', False)
                     tables_per_line = 3 if has_en else 2
-                    
-                    # Verkoppele h3_para mit ersten 2 ZEILEN (= 4 oder 6 Tabellen)
                     num_tables_to_keep = min(2 * tables_per_line, len(flow_tables))
                     elements.append(KeepTogether([h3_para] + flow_tables[:num_tables_to_keep]))
-                    
-                    # Restliche Zeilen einzeln mit KeepTogether
                     for i in range(num_tables_to_keep, len(flow_tables), tables_per_line):
                         line_tables = flow_tables[i:i+tables_per_line]
                         if line_tables:
                             elements.append(KeepTogether(line_tables))
-                    
                     elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
-                    old_idx = idx
                     idx = scan + 1
-                    print(f"Prosa_Code: h3_eq completed, set idx from {old_idx} to {idx} (next block type: {flow_blocks[idx].get('type', 'unknown') if idx < len(flow_blocks) else 'END'})", flush=True)
-                    continue  # WICHTIG: Muss hier sein, damit nicht weiterverarbeitet wird!
+                    continue
                 else:
                     elements.append(KeepTogether([h3_para]))
-                    print(f"Prosa_Code: h3_eq no flow tables, idx={idx}", flush=True)
             else:
-                # Suche weiter voraus
-                lookahead = scan
-                found_flow = False
-                while lookahead < len(flow_blocks) and lookahead < scan + 10:
-                    lookahead_type = flow_blocks[lookahead].get('type', 'unknown')
-                    if lookahead_type == 'flow':
-                        # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
-                        processed_flow_indices.add(lookahead)
-                        flow_tables = build_flow_tables(flow_blocks[lookahead])
-                        if flow_tables:
-                            # Bestimme Anzahl der Sprachen (2 oder 3)
-                            has_en = flow_blocks[lookahead].get('has_en', False)
-                            tables_per_line = 3 if has_en else 2
-                            
-                            # Verkoppele h3_para mit ersten 2 ZEILEN (= 4 oder 6 Tabellen)
-                            num_tables_to_keep = min(2 * tables_per_line, len(flow_tables))
-                            elements.append(KeepTogether([h3_para] + flow_tables[:num_tables_to_keep]))
-                            
-                            # Restliche Zeilen einzeln mit KeepTogether
-                            for i in range(num_tables_to_keep, len(flow_tables), tables_per_line):
-                                line_tables = flow_tables[i:i+tables_per_line]
-                                if line_tables:
-                                    elements.append(KeepTogether(line_tables))
-                            
-                            elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
-                        else:
-                            elements.append(KeepTogether([h3_para]))
-                        found_flow = True
-                        old_idx = idx
-                        idx = lookahead + 1
-                        print(f"Prosa_Code: h3_eq found flow at lookahead={lookahead}, set idx from {old_idx} to {idx} (next block type: {flow_blocks[idx].get('type', 'unknown') if idx < len(flow_blocks) else 'END'})", flush=True)
-                        break
-                    elif lookahead_type in ('h1_eq', 'h2_eq', 'h3_eq'):
-                        break
-                    elif lookahead_type == 'comment':
-                        # WICHTIG: Kommentar-Blöcke überspringen, aber nicht abbrechen
-                        pass
-                    lookahead += 1
-                
-                if not found_flow:
-                    elements.append(KeepTogether([h3_para]))
-                    print(f"Prosa_Code: h3_eq no flow found, idx={idx}", flush=True)
+                elements.append(KeepTogether([h3_para]))
+            
+            print(f"Prosa_Code: h3_eq no flow found, idx={scan}", flush=True)
+            idx = scan  # WICHTIG: Setze idx auf scan (nicht scan+1), damit Kommentare nicht übersprungen werden
             continue
 
         if t == 'quote':
@@ -2396,7 +2330,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                             # Wende die gleiche Logik wie in apply_tag_visibility an
                             gr_tokens_orig = qb.get('gr_tokens', [])
                             de_tokens = list(qb.get('de_tokens', []))
-                            en_tokens = list(qb.get('en_tokens', []))
+                            en_tokens = list(qb.get('en_tokens', []))  # NEU: Englische Tokens für 3-sprachige Zitate
                             
                             for idx, gr_token in enumerate(gr_tokens_orig):
                                 if hasattr(preprocess, '_token_should_hide_translation'):
@@ -2411,7 +2345,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                                                     de_tokens[idx] = ''
                                             else:
                                                 de_tokens[idx] = ''
-                                        
                                         if idx < len(en_tokens):
                                             en_text = en_tokens[idx].strip() if isinstance(en_tokens[idx], str) else ''
                                             if hasattr(preprocess, 'is_trivial_translation'):

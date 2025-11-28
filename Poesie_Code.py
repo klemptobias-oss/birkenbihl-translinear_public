@@ -1006,7 +1006,7 @@ def format_token_markup(token:str, *, is_greek_row:bool, gr_bold:bool, remove_ba
     core_all = RE_TAG_STRIP.sub('', raw).strip()
     core_no_end = re.sub(r'\|+\s*$', '', core_all)
 
-    core_no_end, color2, had_leading_bar = _strip_leading_bar_color(core_no_end)
+    core_no_end, color2, had_leading = _strip_leading_bar_color(core_no_end)
     if color2: color = color2 or color
 
     is_bold = gr_bold if is_greek_row else False
@@ -1631,11 +1631,12 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
         
         if gr_token:
-            # Prüfe ob Tags NOCH im Token vorhanden sind
+            # KRITISCH: Prüfe ob TATSÄCHLICH Tags im Token vorhanden sind
+            # NICHT ob tag_mode == "NO_TAGS" ist!
             tags_in_token = RE_TAG_FINDALL.findall(gr_token)
             
             if tags_in_token:
-                # Tags vorhanden → Tag-PDF, normale Berechnung
+                # Tags VORHANDEN → Normale Berechnung MIT Tag-Puffer
                 w_gr = measure_token_width_with_visibility_poesie(
                     gr_token, 
                     font=token_gr_style.fontName, 
@@ -1645,17 +1646,18 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     tag_config=tag_config
                 )
             else:
-                # KEINE Tags mehr → NoTag-PDF, MINIMALE Breite
+                # KEINE Tags mehr vorhanden → Berechne Breite OHNE Tag-Puffer
                 # Entferne auch Farbmarker für Breiten-Berechnung
                 core_text = RE_TAG_STRIP.sub('', gr_token).strip()
                 for color_char in ['#', '+', '-', '§', '$']:
                     core_text = core_text.replace(color_char, '')
                 
-                # MINIMALER Puffer für NoTag
-                base_padding = max(token_gr_style.fontSize * 0.01, 0.3)
+                # Berechne Breite ohne Tag-Puffer
                 w_gr = visible_measure_token(core_text, font=token_gr_style.fontName, 
                                             size=token_gr_style.fontSize, cfg=eff_cfg, 
-                                            is_greek_row=True) + base_padding
+                                            is_greek_row=True)
+                # Minimaler Puffer (NICHT der große Tag-Puffer!)
+                w_gr += max(token_gr_style.fontSize * 0.01, 0.3)
         else:
             w_gr = 0.0
         
