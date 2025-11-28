@@ -1628,14 +1628,15 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         de = de_tokens[:] + [''] * (cols - len(de_tokens))
         en = en_tokens[:] + [''] * (cols - len(en_tokens))
 
-    # Spaltenbreiten berechnen - WICHTIG: Berücksichtige token_meta['had_tags_before']!
+    # Spaltenbreiten berechnen
     widths = []
     for k in range(cols):
         gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
-        de_token = de[k] if (k < len(de) and de[k]) else ''  # NEU: WICHTIG!
-        en_token = en[k] if (k < len(en) and en[k]) else ''  # NEU: WICHTIG!
+        de_token = de[k] if (k < len(de) and de[k]) else ''  # ← NEU: HIER DEFINIEREN!
+        en_token = en[k] if (k < len(en) and en[k]) else ''  # ← NEU: HIER DEFINIEREN!
         
         if gr_token:
+            # GR-Token Breite
             # KRITISCH: Prüfe token_meta, ob dieses Token Tags hatte (die jetzt entfernt wurden)
             token_meta = block.get('token_meta', []) if block else []
             meta = token_meta[k] if k < len(token_meta) else {}
@@ -1673,10 +1674,10 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         else:
             w_gr = 0.0
         
-        # DE- und EN-Tokens: Pipe-Ersetzung berücksichtigen
+        # Breite für deutsches Token (JETZT funktioniert de_token!)
         if hide_pipes:
-            de_text = de_token.replace('|', ' ') if de_token else ''  # ← JETZT definiert!
-            en_text = en_token.replace('|', ' ') if en_token else ''  # ← JETZT definiert!
+            de_text = de_token.replace('|', ' ') if de_token else ''  # ← JETZT DEFINIERT!
+            en_text = en_token.replace('|', ' ') if en_token else ''  # ← JETZT DEFINIERT!
             de_pipe_count = de_token.count('|') if de_token else 0
             en_pipe_count = en_token.count('|') if en_token else 0
             space_vs_pipe_diff = token_de_style.fontSize * 0.25

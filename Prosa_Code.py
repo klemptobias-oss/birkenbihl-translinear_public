@@ -1391,7 +1391,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
-                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
             is_notag = False
@@ -2137,13 +2137,17 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             continue
 
         if t == 'h3_eq':
+            # WICHTIG: Überschriften-Handling MUSS EINFACH bleiben!
+            # Das Scannen nach flow-Blöcken führt zu idx-Dekrementen und Endlosschleifen
             processed_h3_indices.add(idx)
             render_block_comments(b, elements, doc)
             print(f"Prosa_Code: Processing h3_eq block at idx={idx}", flush=True)
-            h3_para = Paragraph(xml_escape(b['text']), style_eq_h3)
             
-            # EINFACH: Füge Überschrift hinzu und gehe weiter (KEIN Scannen!)
+            # Render Überschrift
+            h3_para = Paragraph(xml_escape(b['text']), style_eq_h3)
             elements.append(KeepTogether([h3_para]))
+            
+            # KRITISCH: idx IMMER inkrementieren, NIEMALS scannen!
             idx += 1
             continue
 
@@ -2395,7 +2399,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 # Quelle vorhanden - füge sie direkt nach dem Zitat hinzu (ohne Abstand dazwischen)
                 block += [Spacer(1, BLANK_MARKER_GAP_MM * mm), Paragraph('<i>'+xml_escape(src_text)+'</i>', style_source)]
                 elements.append(KeepTogether(block))
-                # Abstand NACH der Quelle (1.5x größer als normal)
+                # Abstand nach der Quelle (1.5x größer als normal)
                 elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm * 1.5))
                 idx = kidx + 1
             else:
@@ -2413,36 +2417,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
             idx += 1; continue
 
-        # NEU: Handler für einzelne Paare (Lyrik-Modus)
-        # Bewahrt die Zeilenstruktur wie bei Zitaten
-        if t == 'pair':
-            gr_tokens = b.get('gr_tokens', [])
-            de_tokens = b.get('de_tokens', [])
-            en_tokens = b.get('en_tokens', [])
-            para_label = b.get('para_label', '')
-            speaker = b.get('speaker', '')
-            
-            # NEU: Kommentare aus block['comments'] rendern (VOR den Tabellen, damit sie im Fließtext erscheinen)
-            render_block_comments(b, elements, doc)
-            
-            # Erstelle eine Pseudo-Flow-Struktur für eine einzelne Zeile
-            pseudo_flow = {
-                'type': 'flow',
-                'gr_tokens': gr_tokens,
-                'de_tokens': de_tokens,
-                'en_tokens': en_tokens,
-                'para_label': para_label,
-                'speaker': speaker,
-                'has_en': bool(en_tokens)
-            }
-            
-            # Rendere als einzelne Zeile (behält Zeilenstruktur)
-            pair_tables = build_flow_tables(pseudo_flow)
-            if pair_tables:
-                elements.append(KeepTogether(pair_tables))
-            
-            idx += 1; continue
-        
+        # KRITISCH: flow-Handler MUSS VOR pair-Handler stehen!
         if t == 'flow':
             # KRITISCH: flow-Blöcke enthalten den HAUPTTEXT (tokenisiert)!
             # Dies ist der WICHTIGSTE Block-Typ für Prosa!
@@ -2472,6 +2447,37 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 print(f"Prosa_Code: build_flow_tables() ERROR: {e}", flush=True)
                 import traceback
                 traceback.print_exc()
+            
+            idx += 1
+            continue
+
+        # NEU: Handler für einzelne Paare (Lyrik-Modus)
+        # Bewahrt die Zeilenstruktur wie bei Zitaten
+        if t == 'pair':
+            gr_tokens = b.get('gr_tokens', [])
+            de_tokens = b.get('de_tokens', [])
+            en_tokens = b.get('en_tokens', [])
+            para_label = b.get('para_label', '')
+            speaker = b.get('speaker', '')
+            
+            # NEU: Kommentare aus block['comments'] rendern (VOR den Tabellen, damit sie im Fließtext erscheinen)
+            render_block_comments(b, elements, doc)
+            
+            # Erstelle eine Pseudo-Flow-Struktur für eine einzelne Zeile
+            pseudo_flow = {
+                'type': 'flow',
+                'gr_tokens': gr_tokens,
+                'de_tokens': de_tokens,
+                'en_tokens': en_tokens,
+                'para_label': para_label,
+                'speaker': speaker,
+                'has_en': bool(en_tokens)
+            }
+            
+            # Rendere als einzelne Zeile (behält Zeilenstruktur)
+            pair_tables = build_flow_tables(pseudo_flow)
+            if pair_tables:
+                elements.append(KeepTogether(pair_tables))
             
             idx += 1
             continue
