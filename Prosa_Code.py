@@ -1391,7 +1391,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
             is_notag = False
@@ -2415,7 +2415,15 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             if text:
                 elements.append(KeepTogether([Paragraph('<i>'+xml_escape(text)+'</i>', style_source)]))
                 elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
-            idx += 1; continue
+            idx += 1
+            continue
+
+        # KRITISCH: para_set Handler (für § Marker) - WAR KOMPLETT VERGESSEN!
+        if t == 'para_set':
+            # para_set wird in group_pairs_into_flows() verwendet, um para_label zu setzen
+            # Hier müssen wir ihn einfach überspringen (er wird beim nächsten flow-Block verwendet)
+            idx += 1
+            continue
 
         # KRITISCH: flow-Handler MUSS VOR pair-Handler stehen!
         if t == 'flow':

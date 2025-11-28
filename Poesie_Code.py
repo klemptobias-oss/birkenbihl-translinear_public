@@ -1628,25 +1628,25 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         de = de_tokens[:] + [''] * (cols - len(de_tokens))
         en = en_tokens[:] + [''] * (cols - len(en_tokens))
 
-    # Spaltenbreiten berechnen
+    # Spaltenbreiten berechnen - WICHTIG: Prüfe ZUERST ob Tags entfernt wurden!
     widths = []
     for k in range(cols):
         gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
-        de_token = de[k] if (k < len(de) and de[k]) else ''  # ← NEU: HIER DEFINIEREN!
-        en_token = en[k] if (k < len(en) and en[k]) else ''  # ← NEU: HIER DEFINIEREN!
+        de_token = de[k] if (k < len(de) and de[k]) else ''  # WICHTIG: Hier definieren!
+        en_token = en[k] if (k < len(en) and en[k]) else ''  # WICHTIG: Hier definieren!
         
         if gr_token:
-            # GR-Token Breite
-            # KRITISCH: Prüfe token_meta, ob dieses Token Tags hatte (die jetzt entfernt wurden)
+            # KRITISCH: Prüfe ob dieses Token Tags HATTE (die jetzt entfernt wurden)
+            # Wenn ja, verwende MINIMALE Spaltenbreite (wie bei HideTags)
             token_meta = block.get('token_meta', []) if block else []
             meta = token_meta[k] if k < len(token_meta) else {}
             had_tags_before = meta.get('had_tags_before', False)
             
             # Prüfe ob Tags JETZT NOCH im Token vorhanden sind
-            tags_now = RE_TAG_FINDALL.findall(gr_token)
+            tags_now = RE_TAG.findall(gr_token)
             
             if tags_now:
-                # Tags vorhanden → Tag-PDF
+                # Tags vorhanden → Tag-PDF, normale Breitenberechnung
                 w_gr = measure_token_width_with_visibility_poesie(
                     gr_token, 
                     font=token_gr_style.fontName, 
@@ -1656,28 +1656,32 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     tag_config=tag_config
                 )
             elif had_tags_before:
-                # Tags wurden entfernt → NoTag-PDF, MINIMALER Puffer!
+                # Tags wurden entfernt → NoTag-PDF, MINIMALE Breite!
+                # Entferne ALLE Markup-Zeichen für Breitenberechnung
                 core_text = RE_TAG_STRIP.sub('', gr_token).strip()
-                for color_char in ['#', '+', '-', '§', '$']:
+                for color_char in ['#', '+', '-', '§', '$', '~', '*']:
                     core_text = core_text.replace(color_char, '')
+                core_text = core_text.replace('|', '')  # Pipes auch entfernen
                 
+                # Berechne MINIMALE Breite (wie bei HideTags)
                 w_gr = visible_measure_token(core_text, font=token_gr_style.fontName, 
-                                            size=token_gr_style.fontSize, cfg=eff_cfg, 
-                                            is_greek_row=True)
-                w_gr += max(token_gr_style.fontSize * 0.01, 0.3)  # MINIMALER Puffer
+                                             size=token_gr_style.fontSize, cfg=eff_cfg, 
+                                             is_greek_row=True)
+                # MINIMALER Puffer (wie bei HideTags)
+                w_gr += max(token_gr_style.fontSize * 0.01, 0.3)
             else:
                 # Token hatte nie Tags → normale Berechnung
                 w_gr = visible_measure_token(gr_token, font=token_gr_style.fontName, 
-                                            size=token_gr_style.fontSize, cfg=eff_cfg, 
-                                            is_greek_row=True)
+                                             size=token_gr_style.fontSize, cfg=eff_cfg, 
+                                             is_greek_row=True)
                 w_gr += max(token_gr_style.fontSize * 0.04, 1.2)
         else:
             w_gr = 0.0
         
-        # Breite für deutsches Token (JETZT funktioniert de_token!)
+        # Breite für deutsches Token
         if hide_pipes:
-            de_text = de_token.replace('|', ' ') if de_token else ''  # ← JETZT DEFINIERT!
-            en_text = en_token.replace('|', ' ') if en_token else ''  # ← JETZT DEFINIERT!
+            de_text = de_token.replace('|', ' ') if de_token else ''
+            en_text = en_token.replace('|', ' ') if en_token else ''
             de_pipe_count = de_token.count('|') if de_token else 0
             en_pipe_count = en_token.count('|') if en_token else 0
             space_vs_pipe_diff = token_de_style.fontSize * 0.25
@@ -1689,8 +1693,12 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             de_pipe_extra = 0.0
             en_pipe_extra = 0.0
         
-        w_de = visible_measure_token(de_text, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if de_text else 0.0
-        w_en = visible_measure_token(en_text, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False) if en_text else 0.0
+        w_de = visible_measure_token(de_text, font=token_de_style.fontName, 
+                                     size=token_de_style.fontSize, cfg=eff_cfg, 
+                                     is_greek_row=False) if de_text else 0.0
+        w_en = visible_measure_token(en_text, font=token_de_style.fontName, 
+                                     size=token_de_style.fontSize, cfg=eff_cfg, 
+                                     is_greek_row=False) if en_text else 0.0
         
         w_de += de_pipe_extra
         w_en += en_pipe_extra
@@ -2555,89 +2563,4 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 cum_width_by_base[base_num] = cum_width_by_base.get(base_num, 0.0) + this_w
 
             i += 1; continue
-
-    doc.build(elements)
-
-# ========= Batch (Legacy) =========
-def category_and_label_from_input(infile:str):
-    stem = Path(infile).stem; s = stem.lower()
-    if s.startswith('inputkomödie') or s.startswith('inputkomoedie'):
-        cat = 'Komödie'
-        label = stem[len('InputKomödie'):] if stem.startswith('InputKomödie') else stem[len('InputKomodie'):]
-    elif s.startswith('inputtragödie') or s.startswith('inputtragoedie'):
-        cat = 'Tragödie'
-        label = stem[len('InputTragödie'):] if stem.startswith('InputTragödie') else stem[len('InputTragoedie'):]
-    else:
-        cat = 'Drama'; label = stem
-    label = re.sub(r'\W+', '', label) or 'Text'
-    return cat, label
-
-def output_name_fett(cat:str, label:str) -> str:   return f'{cat}{label}_Fett.pdf'
-def output_name_normal(cat:str, label:str) -> str: return f'{cat}{label}_Normal.pdf'
-
-def process_inputs_glob():
-    return sorted(
-        [str(p) for p in Path('.').glob('InputKomödie*.txt')] +
-        [str(p) for p in Path('.').glob('InputKomodie*.txt')] +
-        [str(p) for p in Path('.').glob('InputTragödie*.txt')] +
-        [str(p) for p in Path('.').glob('InputTragoedie*.txt')]
-    )
-
-def run_batch(input_files):
-    for infile in input_files:
-        if not os.path.isfile(infile):
-            print(f"⚠ Datei nicht gefunden, übersprungen: {infile}"); continue
-        try:
-            print(f"→ Verarbeite: {infile}")
-            blocks = process_input_file(infile)
-            cat, label = category_and_label_from_input(infile)
-            out_fett = output_name_fett(cat, label)
-            create_pdf(blocks, out_fett, gr_bold=True)
-            print(f"✓ PDF erstellt → {out_fett}")
-            out_norm = output_name_normal(cat, label)
-            create_pdf(blocks, out_norm, gr_bold=False)
-            print(f"✓ PDF erstellt → {out_norm}")
-        except Exception as e:
-            print(f"✗ Fehler bei {infile}: {e}")
-
-if __name__ == '__main__':
-    # Parse command line arguments
-    parser = argparse.ArgumentParser(description='Poesie PDF Generator')
-    parser.add_argument('input_file', nargs='?', help='Input file to process')
-    parser.add_argument('--tag-config', help='JSON file with tag configuration')
-    args = parser.parse_args()
-    
-    # Load tag configuration if provided
-    if args.tag_config:
-        load_tag_config(args.tag_config)
-    
-    if args.input_file:
-        # Process single file
-        if not os.path.isfile(args.input_file):
-            print(f"⚠ Datei nicht gefunden: {args.input_file}")
-            exit(1)
-        try:
-            print(f"→ Verarbeite: {args.input_file}")
-            blocks = process_input_file(args.input_file)
-            cat, label = category_and_label_from_input(args.input_file)
-            out_fett = output_name_fett(cat, label)
-            create_pdf(blocks, out_fett, gr_bold=True)
-            print(f"✓ PDF erstellt → {out_fett}")
-            out_norm = output_name_normal(cat, label)
-            create_pdf(blocks, out_norm, gr_bold=False)
-            print(f"✓ PDF erstellt → {out_norm}")
-        except Exception as e:
-            print(f"✗ Fehler bei {args.input_file}: {e}")
-    else:
-        # Process batch
-        inputs = process_inputs_glob()
-        if not inputs:
-            print("⚠ Keine InputKomödie* / InputTragödie* gefunden.")
-        else:
-            run_batch(inputs)
-
-# ========= PDF-Erstellung mit Versmaß-spezifischen Abständen =========
-# Die ursprüngliche create_pdf Funktion wurde bereits oben definiert und 
-# enthält bereits die Versmaß-spezifische Logik. Diese doppelte Definition
-# wurde entfernt, um Endlosschleifen zu vermeiden.
 
