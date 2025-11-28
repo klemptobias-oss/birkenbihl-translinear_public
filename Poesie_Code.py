@@ -1627,16 +1627,14 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     # JETZT können wir widths berechnen, weil cols definiert ist!
     widths = []
     for k in range(cols):
-        # WICHTIG: Für NoTag-PDFs müssen wir die Breite OHNE Tag-Puffer berechnen!
         gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
         
         if gr_token:
-            # KRITISCH: Prüfe ob TATSÄCHLICH Tags im Token vorhanden sind
-            # NICHT ob tag_mode == "NO_TAGS" ist!
+            # Prüfe ob Tags NOCH im Token vorhanden sind
             tags_in_token = RE_TAG_FINDALL.findall(gr_token)
             
             if tags_in_token:
-                # Tags VORHANDEN → Normale Berechnung MIT Tag-Puffer
+                # Tags vorhanden → Tag-PDF, normale Berechnung
                 w_gr = measure_token_width_with_visibility_poesie(
                     gr_token, 
                     font=token_gr_style.fontName, 
@@ -1646,18 +1644,18 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     tag_config=tag_config
                 )
             else:
-                # KEINE Tags mehr vorhanden → Berechne Breite OHNE Tag-Puffer
-                # Entferne auch Farbmarker für Breiten-Berechnung
+                # KEINE Tags mehr vorhanden → NoTag-PDF
+                # Entferne Farbmarker für Breiten-Berechnung
                 core_text = RE_TAG_STRIP.sub('', gr_token).strip()
                 for color_char in ['#', '+', '-', '§', '$']:
                     core_text = core_text.replace(color_char, '')
                 
-                # Berechne Breite ohne Tag-Puffer
+                # WICHTIG: Puffer für HideTags-Wörter ERHÖHEN (von 0.3 auf 1.5)!
+                # Dies sorgt für bessere Lesbarkeit bei Wörtern, die durch HideTags ihre Tags verloren haben
+                base_padding = max(token_gr_style.fontSize * 0.05, 0.5)  # ERHÖHT von 0.01/0.3 auf 0.15/1.5
                 w_gr = visible_measure_token(core_text, font=token_gr_style.fontName, 
                                             size=token_gr_style.fontSize, cfg=eff_cfg, 
-                                            is_greek_row=True)
-                # Minimaler Puffer (NICHT der große Tag-Puffer!)
-                w_gr += max(token_gr_style.fontSize * 0.01, 0.3)
+                                            is_greek_row=True) + base_padding
         else:
             w_gr = 0.0
         

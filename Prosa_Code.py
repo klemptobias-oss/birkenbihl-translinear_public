@@ -1391,7 +1391,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
-                       # Nur griechische Zeile sichtbar
+                                             # Nur griechische Zeile sichtbar
             # Prüfe, ob es eine NoTag-Version ist (keine Tags sichtbar durch measure_token_width_with_visibility)
             is_notag = False
             if tag_config is None:
@@ -2143,34 +2143,43 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             h3_para = Paragraph(xml_escape(b['text']), style_eq_h3)
             idx += 1
             
-            # WICHTIG: Überspringe blank UND comment Blöcke!
+            # WICHTIG: Suche nach dem nächsten flow-Block - überspringe ALLES außer flow!
             scan = idx
-            while scan < len(flow_blocks) and flow_blocks[scan]['type'] in ('blank', 'comment'):
+            found_flow = False
+            while scan < len(flow_blocks):
+                scan_type = flow_blocks[scan].get('type', 'unknown')
+                
+                if scan_type == 'flow':
+                    # FLOW GEFUNDEN!
+                    found_flow = True
+                    processed_flow_indices.add(scan)
+                    print(f"Prosa_Code: h3_eq found flow block at scan={scan}, calling build_flow_tables()", flush=True)
+                    flow_tables = build_flow_tables(flow_blocks[scan])
+                    if flow_tables:
+                        has_en = flow_blocks[scan].get('has_en', False)
+                        tables_per_line = 3 if has_en else 2
+                        num_tables_to_keep = min(2 * tables_per_line, len(flow_tables))
+                        elements.append(KeepTogether([h3_para] + flow_tables[:num_tables_to_keep]))
+                        for i in range(num_tables_to_keep, len(flow_tables), tables_per_line):
+                            line_tables = flow_tables[i:i+tables_per_line]
+                            if line_tables:
+                                elements.append(KeepTogether(line_tables))
+                        elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
+                        idx = scan + 1
+                        break  # WICHTIG: Schleife verlassen nach flow-Block
+                    else:
+                        elements.append(KeepTogether([h3_para]))
+                        idx = scan + 1
+                        break
+                
+                # NICHT flow → weitersuchen
                 scan += 1
             
-            if scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'flow':
-                processed_flow_indices.add(scan)
-                print(f"Prosa_Code: h3_eq found flow block at scan={scan}, calling build_flow_tables()", flush=True)
-                flow_tables = build_flow_tables(flow_blocks[scan])
-                if flow_tables:
-                    has_en = flow_blocks[scan].get('has_en', False)
-                    tables_per_line = 3 if has_en else 2
-                    num_tables_to_keep = min(2 * tables_per_line, len(flow_tables))
-                    elements.append(KeepTogether([h3_para] + flow_tables[:num_tables_to_keep]))
-                    for i in range(num_tables_to_keep, len(flow_tables), tables_per_line):
-                        line_tables = flow_tables[i:i+tables_per_line]
-                        if line_tables:
-                            elements.append(KeepTogether(line_tables))
-                    elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
-                    idx = scan + 1
-                    continue
-                else:
-                    elements.append(KeepTogether([h3_para]))
-            else:
+            if not found_flow:
+                # Kein flow-Block gefunden - Überschrift allein
                 elements.append(KeepTogether([h3_para]))
+                idx = scan
             
-            print(f"Prosa_Code: h3_eq no flow found, idx={scan}", flush=True)
-            idx = scan  # WICHTIG: Setze idx auf scan (nicht scan+1), damit Kommentare nicht übersprungen werden
             continue
 
         if t == 'quote':
