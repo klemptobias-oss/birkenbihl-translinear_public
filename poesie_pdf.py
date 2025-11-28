@@ -275,10 +275,11 @@ def _process_one_input(infile: str,
     
     blocks = Poesie.process_input_file(infile)
     
-    # WICHTIG: Kommentare aus dem Input-File extrahieren und als separate Blöcke einfügen
-    # discover_and_attach_comments() sucht nach (Nk) und (N-Mk) Zeilen und fügt sie als type='comment' Blöcke ein
+    # WICHTIG: Für Poesie werden Kommentare NICHT automatisch als separate Blöcke erkannt
+    # Wir müssen discover_and_attach_comments aufrufen, um sie zu finden und als Blöcke hinzuzufügen
     from shared.preprocess import discover_and_attach_comments
-    blocks = discover_and_attach_comments(blocks, source_file=infile)
+    # KRITISCH: discover_and_attach_comments akzeptiert NUR blocks, KEIN source_file!
+    blocks = discover_and_attach_comments(blocks)
     
     # Debug: Zähle Kommentar-Blöcke NACH discover_and_attach_comments
     comment_blocks = [b for b in blocks if isinstance(b, dict) and b.get('type') == 'comment']

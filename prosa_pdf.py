@@ -259,6 +259,7 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # WICHTIG: Für Prosa werden Kommentare NICHT automatisch als separate Blöcke erkannt
     # Wir müssen discover_and_attach_comments aufrufen
     from shared.preprocess import discover_and_attach_comments
+    # KRITISCH: discover_and_attach_comments akzeptiert NUR blocks, KEIN source_file!
     blocks = discover_and_attach_comments(blocks)
     
     # Debug: Zähle Kommentar-Blöcke
