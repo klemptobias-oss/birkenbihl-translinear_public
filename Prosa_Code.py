@@ -2131,80 +2131,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 while idx < len(flow_blocks) and flow_blocks[idx]['type'] == 'h3_eq':
                     header.append(Paragraph(xml_escape(flow_blocks[idx]['text']), style_eq_h3)); idx += 1
 
-            # WICHTIG: Suche nach dem nächsten flow-Block (auch wenn nicht direkt folgend)
-            # um "orphan headings" zu vermeiden
-            scan = idx
-            while scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'blank': scan += 1
-            
-            # Wenn direkt ein flow-Block folgt, verkoppeln wir ihn mit der Überschrift
-            if scan < len(flow_blocks) and flow_blocks[scan]['type'] == 'flow':
-                # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
-                processed_flow_indices.add(scan)
-                flow_tables = build_flow_tables(flow_blocks[scan])
-                if flow_tables:
-                    # Bestimme Anzahl der Sprachen (2 oder 3)
-                    has_en = flow_blocks[scan].get('has_en', False)
-                    tables_per_line = 3 if has_en else 2
-                    
-                    # Verkoppele Header mit ersten 2 ZEILEN (= 4 oder 6 Tabellen)
-                    num_tables_to_keep = min(2 * tables_per_line, len(flow_tables))
-                    elements.append(KeepTogether(header + flow_tables[:num_tables_to_keep]))
-                    
-                    # Restliche Zeilen einzeln mit KeepTogether
-                    for i in range(num_tables_to_keep, len(flow_tables), tables_per_line):
-                        line_tables = flow_tables[i:i+tables_per_line]
-                        if line_tables:
-                            elements.append(KeepTogether(line_tables))
-                    
-                    elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
-                else:
-                    elements.append(KeepTogether(header))
-                idx = scan + 1; continue
-            else:
-                # Kein flow-Block direkt gefunden - suche weiter voraus (max 10 Blöcke)
-                lookahead = scan
-                found_flow = False
-                while lookahead < len(flow_blocks) and lookahead < scan + 10:
-                    lookahead_type = flow_blocks[lookahead].get('type', 'unknown')
-                    if lookahead_type == 'flow':
-                        # WICHTIG: Markiere diesen Flow-Block als verarbeitet, damit er nicht nochmal verarbeitet wird
-                        processed_flow_indices.add(lookahead)
-                        # flow-Block gefunden - verkoppeln mit Überschrift
-                        flow_tables = build_flow_tables(flow_blocks[lookahead])
-                        if flow_tables:
-                            # Bestimme Anzahl der Sprachen (2 oder 3)
-                            has_en = flow_blocks[lookahead].get('has_en', False)
-                            tables_per_line = 3 if has_en else 2
-                            
-                            # Verkoppele Header mit ersten 2 ZEILEN (= 4 oder 6 Tabellen)
-                            num_tables_to_keep = min(2 * tables_per_line, len(flow_tables))
-                            elements.append(KeepTogether(header + flow_tables[:num_tables_to_keep]))
-                            
-                            # Restliche Zeilen einzeln mit KeepTogether
-                            for i in range(num_tables_to_keep, len(flow_tables), tables_per_line):
-                                line_tables = flow_tables[i:i+tables_per_line]
-                                if line_tables:
-                                    elements.append(KeepTogether(line_tables))
-                            
-                            elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
-                        else:
-                            elements.append(KeepTogether(header))
-                        found_flow = True
-                        idx = lookahead + 1
-                        break
-                    elif lookahead_type in ('h1_eq', 'h2_eq', 'h3_eq'):
-                        # Weitere Überschrift gefunden - nicht verkoppeln
-                        break
-                    elif lookahead_type == 'comment':
-                        # WICHTIG: Kommentar-Blöcke überspringen, aber nicht abbrechen
-                        pass
-                    lookahead += 1
-                
-                if not found_flow:
-                    # Kein flow-Block gefunden - Überschrift allein hinzufügen
-                    elements.append(KeepTogether(header))
-                    idx = scan
-                continue
+            # EINFACH: Gehe zum nächsten Block (OHNE flow-Block zu suchen)
+            elements.append(KeepTogether(header))
+            last_block_type = t
+            continue
 
         if t == 'h3_eq':
             # NEU: Kommentare aus block['comments'] rendern (auch bei h3-Überschriften)
