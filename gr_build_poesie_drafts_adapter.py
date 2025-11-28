@@ -200,36 +200,69 @@ def run_one(input_path: Path) -> None:
 
     # --- END robust subprocess invocation ---
     
+# Zeilen 185-235 KOMPLETT ERSETZEN (PDF-Matching Section)
+
     after = {p.name for p in ROOT.glob("*.pdf")}
     new_pdfs = sorted(after - before)
 
     if not new_pdfs:
         print("⚠ Keine PDFs erzeugt."); return
 
-    # Der Runner benennt die PDFs nach dem temporären Dateinamen.
-    # Wir müssen sie zurück auf den originalen Stammnamen umbenennen.
-    temp_stem = temp_input.stem
+    # KRITISCH: Die PDFs heißen "temp_agamemnon_..." (mit temp_ Präfix!)
+    # Wir müssen ALLE PDFs finden, die mit dem temp_stem übereinstimmen
     
-    sanitized_release_base = release_base.strip()
+    temp_stem = temp_input.stem  # z.B. "temp_agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251128_222056"
     
+    # Extrahiere Basisnamen (ohne temp_ und ohne DRAFT_TIMESTAMP)
+    import re
+    
+    # Entferne "temp_" Präfix
+    base_without_temp = temp_stem[5:] if temp_stem.startswith('temp_') else temp_stem
+    
+    # Entferne DRAFT_TIMESTAMP Suffix
+    match = re.match(r'^(.+?)_draft_translinear_DRAFT_\d{8}_\d{6}$', base_without_temp)
+    if match:
+        clean_base = match.group(1)  # z.B. "agamemnon_gr_de_en_stil1_birkenbihl"
+    else:
+        clean_base = base_without_temp
+    
+    print(f"→ Suche PDFs mit Basis: temp_{clean_base}")
+    
+    # Finde ALLE PDFs, die mit "temp_" + clean_base beginnen
+    relevant_pdfs = []
     for name in new_pdfs:
-        bare = name[:-4] if name.lower().endswith(".pdf") else name
-        suffix = ""
-        if bare.startswith(temp_stem):
-            suffix = bare[len(temp_stem):]
-        else:
-            original_stem = input_stem
-            if bare.startswith(original_stem):
-                suffix = bare[len(original_stem):]
-            else:
-                suffix = bare
+        if name.startswith(f'temp_{clean_base}'):
+            relevant_pdfs.append(name)
+    
+    if not relevant_pdfs:
+        print(f"⚠ Keine passenden PDFs gefunden für Basis: temp_{clean_base}")
+        print(f"   Gefundene PDFs: {new_pdfs[:3] if len(new_pdfs) > 0 else 'keine'}")
+        return
 
+    sanitized_release_base = release_base.strip()
+
+    for name in relevant_pdfs:
+        bare = name[:-4] if name.lower().endswith(".pdf") else name
+        
+        # Entferne "temp_" Präfix
+        if bare.startswith('temp_'):
+            bare = bare[5:]
+        
+        # Entferne den clean_base Präfix, behalte nur Suffix (z.B. "_Normal_Colour_Tag")
+        if bare.startswith(clean_base):
+            suffix = bare[len(clean_base):]
+        else:
+            # Fallback: Verwende vollständigen Namen als Suffix
+            suffix = '_' + bare
+        
+        # Erstelle finalen Namen
         if sanitized_release_base:
             final_bare = f"{sanitized_release_base}{suffix}"
         else:
-            final_bare = bare[5:] if bare.startswith("temp_") else bare
-
+            final_bare = clean_base + suffix
+        
         final_name = f"{final_bare}.pdf"
+        
         src = ROOT / name
         dst = target_dir / final_name
         src.replace(dst)

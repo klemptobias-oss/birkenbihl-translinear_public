@@ -261,10 +261,21 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     from shared.preprocess import discover_and_attach_comments
     # KRITISCH: discover_and_attach_comments akzeptiert NUR blocks, KEIN source_file!
     blocks = discover_and_attach_comments(blocks)
+    logger.info(f"discover_and_attach_comments() returned {len(blocks)} blocks")
     
-    # Debug: Zähle Kommentar-Blöcke
-    comment_blocks = [b for b in blocks if isinstance(b, dict) and b.get('type') == 'comment']
-    logger.info("DEBUG prosa_pdf: %d Kommentar-Blöcke gefunden von %d total Blöcken (nach discover_and_attach_comments)", len(comment_blocks), len(blocks))
+    # DIAGNOSE: Zeige Block-Typen
+    from collections import Counter
+    block_types = Counter(b.get('type', 'unknown') for b in blocks if isinstance(b, dict))
+    logger.info(f"Block-Typen: {dict(block_types)}")
+    
+    # KRITISCH: Prüfe, ob flow-Blöcke vorhanden sind!
+    flow_count = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'flow')
+    pair_count = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'pair')
+    logger.info(f"flow_blocks={flow_count}, pair_blocks={pair_count}")
+    
+    if flow_count == 0 and pair_count == 0:
+        logger.error("KEIN TRANSLINEAR-TEXT GEFUNDEN! Nur Kommentare/Überschriften vorhanden!")
+        return  # WICHTIG: Abbrechen, da keine verarbeitbaren Blöcke vorhanden sind
     
     final_blocks = blocks
     
