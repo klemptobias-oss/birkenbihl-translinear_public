@@ -1624,10 +1624,12 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         de = de_tokens[:] + [''] * (cols - len(de_tokens))
         en = en_tokens[:] + [''] * (cols - len(en_tokens))
 
-    # Spaltenbreiten berechnen - WICHTIG: Prüfe token_meta['had_tags_before']!
+    # Spaltenbreiten berechnen - WICHTIG: Berücksichtige token_meta['had_tags_before']!
     widths = []
     for k in range(cols):
         gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
+        de_token = de[k] if (k < len(de) and de[k]) else ''  # NEU: WICHTIG!
+        en_token = en[k] if (k < len(en) and en[k]) else ''  # NEU: WICHTIG!
         
         if gr_token:
             # KRITISCH: Prüfe token_meta, ob dieses Token Tags hatte (die jetzt entfernt wurden)
@@ -1667,10 +1669,10 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         else:
             w_gr = 0.0
         
-        # DE- und EN-Tokens: Pipe-Ersetzung berücksichtigen (wie gehabt)
+        # DE- und EN-Tokens: Pipe-Ersetzung berücksichtigen
         if hide_pipes:
-            de_text = de_token.replace('|', ' ') if de_token else ''
-            en_text = en_token.replace('|', ' ') if en_token else ''
+            de_text = de_token.replace('|', ' ') if de_token else ''  # ← JETZT definiert!
+            en_text = en_token.replace('|', ' ') if en_token else ''  # ← JETZT definiert!
             de_pipe_count = de_token.count('|') if de_token else 0
             en_pipe_count = en_token.count('|') if en_token else 0
             space_vs_pipe_diff = token_de_style.fontSize * 0.25
@@ -1688,7 +1690,6 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         w_de += de_pipe_extra
         w_en += en_pipe_extra
         
-        # WICHTIG: Nimm das Maximum der KORREKTEN Breiten!
         widths.append(max(w_gr, w_de, w_en))
 
     # JETZT kommt der Rest der Funktion (Layout-Berechnung, Tabellen-Erstellung, etc.)

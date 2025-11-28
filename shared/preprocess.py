@@ -743,6 +743,19 @@ def _remove_selected_tags(token: str,
 
     return RE_PAREN_TAG.sub(repl, token)
 
+def is_translation_empty_or_punct(text: str) -> bool:
+    """
+    Prüft, ob eine Übersetzung leer ist oder nur Satzzeichen enthält.
+    Wird verwendet, um zu entscheiden, ob Übersetzungen ausgeblendet werden sollen.
+    """
+    if not text or not text.strip():
+        return True
+    # Entferne Whitespace und Satzzeichen
+    cleaned = text.strip()
+    for char in ['.', ',', ';', ':', '!', '?', '…', '·', '‧']:
+        cleaned = cleaned.replace(char, '')
+    return not cleaned
+
 # ======= Hilfen: PoS-Ermittlung für Farbregel =======
 def _has_any_pos(token: str, pos_whitelist: set[str]) -> bool:
     """
@@ -1793,4 +1806,6 @@ def all_blocks_have_no_translations(blocks: List[Dict[str, Any]]) -> bool:
             return False
     
     return True
+
+
 
