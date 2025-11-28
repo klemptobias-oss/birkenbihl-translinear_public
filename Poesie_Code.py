@@ -1361,6 +1361,10 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                 # JETZT die gesammelten Kommentare einfügen (NACH dem pair-Block!)
                 for comment_block in comments_to_insert:
                     blocks.append(comment_block)
+                
+                # ← KRITISCH: Hier fehlte die Aktualisierung von i!
+                i = j  # ← FIX: Setze i auf j, um zur nächsten unverarbeiteten Zeile zu springen
+                continue  # ← WICHTIG: continue, um die äußere while-Schleife fortzusetzen
             
             else:
                 # Nur eine Zeile mit dieser Nummer - könnte Strukturzeile oder Fehler sein
