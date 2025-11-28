@@ -17,6 +17,9 @@ from reportlab.platypus     import SimpleDocTemplate, Paragraph, Spacer, KeepTog
 from reportlab.lib          import colors
 import re, os, html, unicodedata, json, argparse
 
+# WICHTIG: Füge typing Imports hinzu für Type Hints
+from typing import List, Dict, Any, Optional, Tuple
+
 # Import für Preprocessing
 try:
     from shared import preprocess
