@@ -127,25 +127,26 @@ except Exception:
 
 def _install_global_timeout():
     """
-    Install a SIGALRM that will abort the process after PROSA_PDF_TIMEOUT seconds.
-    Default: 600 seconds. This prevents CI from hanging forever.
+    Installiert einen globalen Timeout-Handler (nur auf Unix-Systemen).
+    WICHTIG: Reduziert auf 6 Minuten (360 Sekunden) statt 10 Minuten.
     """
     try:
-        timeout = int(os.environ.get("PROSA_PDF_TIMEOUT", "600"))
-        def _timeout_handler(signum, frame):
-            msg = "prosa_pdf: GLOBAL TIMEOUT reached (%s seconds) - aborting" % timeout
-            logger.error(msg)
-            try:
-                sys.stdout.flush(); sys.stderr.flush()
-            except Exception:
-                pass
-            # exit with non-zero so CI marks failure
-            raise SystemExit(2)
-        signal.signal(signal.SIGALRM, _timeout_handler)
-        signal.alarm(timeout)
-        logger.info("prosa_pdf: global timeout installed: %s seconds", timeout)
+        import signal
+        # TIMEOUT: Reduziert auf 6 Minuten (360 Sekunden)
+        TIMEOUT_SECONDS = 360  # GEÄNDERT von 600 auf 360
+        
+        def timeout_handler(signum, frame):
+            logger = logging.getLogger(__name__)
+            logger.error("prosa_pdf: GLOBAL TIMEOUT after %d seconds - aborting", TIMEOUT_SECONDS)
+            sys.exit(124)  # Timeout exit code
+        
+        signal.signal(signal.SIGALRM, timeout_handler)
+        signal.alarm(TIMEOUT_SECONDS)
+        logger = logging.getLogger(__name__)
+        logger.info("prosa_pdf: global timeout installed: %d seconds", TIMEOUT_SECONDS)
     except Exception:
-        logger.exception("prosa_pdf: failed to install global timeout (continuing without alarm)")
+        # Windows oder andere Plattformen ohne SIGALRM
+        pass
 
 # Try to install the timeout immediately (defensive)
 _install_global_timeout()

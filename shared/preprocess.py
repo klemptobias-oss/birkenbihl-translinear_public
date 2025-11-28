@@ -359,15 +359,13 @@ def assign_comment_ranges_to_blocks(blocks: List[Dict[str,Any]], inline_comments
 def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,Any]]:
     """
     Robustere Kommentar-Erkennung und -Zuordnung.
-    - erkennt Zeilen wie "(2-4k) Kommentartext ..." (Range-kommentare)
-    - erkennt "(5121k) Kommentar..." (Einzelkommentar)
-    - erkennt inline "(2-4k) Kommentar" innerhalb einer gr-Zeile
-    - hängt Kommentare an block['comments'] an (Liste von dicts: {'start','end','text'})
-    - entfernt Kommentartext aus block['gr'] (damit er nicht als normaler Text weiter gerendert bzw. als comment bg markiert wird)
-    - legt für jeden Block block['comment_token_mask'] an (bool list mit len(gr_tokens))
     """
     import re
-
+    
+    # Log START
+    logger = logging.getLogger(__name__)
+    logger.info("discover_and_attach_comments: START processing %d blocks", len(blocks))
+    
     comment_full_re = re.compile(r'^\s*\((\d+(?:-\d+)?)k\)\s*(.+)$', re.UNICODE)
     comment_inline_re = re.compile(r'\((\d+(?:-\d+)?)k\)\s*([^()]+)', re.UNICODE)
 
@@ -534,64 +532,20 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,A
         if 'comments' not in b:
             b['comments'] = []
     
-    # Log summary (always log - concise, no size limit)
+    # Log ENDE mit Statistiken
     total_comments_attached = sum(len(b.get('comments', [])) for b in blocks)
-    logging.getLogger(__name__).info(f"discover_and_attach_comments: returning {len(blocks)} blocks with comments found={comments_found}, attached={total_comments_attached}")
+    logger.info("discover_and_attach_comments: END - found=%d, attached=%d (total_blocks=%d)", 
+                comments_found, total_comments_attached, len(blocks))
     
     return blocks
 
 # === Defensive wrapper for discover_and_attach_comments ===
-# Ensure the function always returns a list of blocks with 'comments'
-# and 'comment_token_mask' set (never None). Wrap the existing function defensively.
-_orig_discover_and_attach_comments = discover_and_attach_comments
+# WICHTIG: DIESER WRAPPER IST DEFEKT UND VERURSACHT ENDLOSSCHLEIFEN!
+# ER WURDE VOLLSTÄNDIG ENTFERNT!
 
-def discover_and_attach_comments(blocks: list, source_file: str = None) -> list:
-    """
-    Durchsucht blocks nach Kommentar-Blöcken und fügt sie den pair-Blöcken hinzu.
-    WICHTIG: Kommentare werden als 'comments' Liste in die pair-Blöcke eingefügt.
-    """
-    import copy
-    blocks_copy = copy.deepcopy(blocks)
-    
-    # Sammle alle Kommentar-Blocks
-    comments = []
-    for i, block in enumerate(blocks_copy):
-        if block.get('type') == 'comment':
-            start_line = block.get('start_line')
-            end_line = block.get('end_line')
-            content = block.get('content', '')
-            line_num = block.get('line_num', '')
-            
-            if start_line is not None and end_line is not None:
-                comments.append({
-                    'start': start_line,
-                    'end': end_line,
-                    'text': content,
-                    'line_num': line_num,
-                    'block_index': i
-                })
-    
-    # Füge Kommentare den pair-Blöcken hinzu
-    for block in blocks_copy:
-        if block.get('type') in ('pair', 'flow'):
-            base_num = block.get('base')
-            if base_num is None:
-                continue
-            
-            # Finde alle Kommentare, die diesen pair-Block betreffen
-            block_comments = []
-            for comment in comments:
-                if comment['start'] <= base_num <= comment['end']:
-                    block_comments.append(comment)
-            
-            # Füge Kommentare als Liste hinzu
-            if block_comments:
-                block['comments'] = block_comments
-    
-    # WICHTIG: Gebe blocks_copy DIREKT zurück - KEIN rekursiver Aufruf!
-    return blocks_copy
+# Die discover_and_attach_comments Funktion (oben bei Zeile ~450) wird direkt verwendet.
 
-# ======= Hilfen: Token-Verarbeitung =======
+# ======= Hilfen: Token-Processing =======
 def _join_tokens_to_line(tokens: list[str]) -> str:
     """
     Einfacher Zusammenbau: Tokens werden durch ein Leerzeichen verbunden.

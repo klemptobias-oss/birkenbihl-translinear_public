@@ -103,21 +103,27 @@ except Exception:
     pass
 
 def _install_global_timeout():
+    """
+    Installiert einen globalen Timeout-Handler (nur auf Unix-Systemen).
+    WICHTIG: Reduziert auf 6 Minuten (360 Sekunden) statt 10 Minuten.
+    """
     try:
-        timeout = int(os.environ.get("POESIE_PDF_TIMEOUT", "600"))
-        def _timeout_handler(signum, frame):
-            msg = "poesie_pdf: GLOBAL TIMEOUT reached (%s seconds) - aborting" % timeout
-            logger.error(msg)
-            try:
-                sys.stdout.flush()
-            except:
-                pass
-            raise SystemExit(2)
-        signal.signal(signal.SIGALRM, _timeout_handler)
-        signal.alarm(timeout)
-        logger.info("poesie_pdf: global timeout installed: %s seconds", timeout)
+        import signal
+        # TIMEOUT: Reduziert auf 6 Minuten (360 Sekunden)
+        TIMEOUT_SECONDS = 360  # GEÄNDERT von 600 auf 360
+        
+        def timeout_handler(signum, frame):
+            logger = logging.getLogger(__name__)
+            logger.error("poesie_pdf: GLOBAL TIMEOUT after %d seconds - aborting", TIMEOUT_SECONDS)
+            sys.exit(124)  #Timeout exit code
+        
+        signal.signal(signal.SIGALRM, timeout_handler)
+        signal.alarm(TIMEOUT_SECONDS)
+        logger = logging.getLogger(__name__)
+        logger.info("poesie_pdf: global timeout installed: %d seconds", TIMEOUT_SECONDS)
     except Exception:
-        logger.exception("poesie_pdf: failed to install global timeout (continuing without alarm)")
+        # Windows oder andere Plattformen ohne SIGALRM
+        pass
 
 _install_global_timeout()
 
