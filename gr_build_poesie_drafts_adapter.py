@@ -173,8 +173,72 @@ def run_one(input_path: Path) -> None:
         sys.stdout.flush()
         if rc != 0:
             print("ERROR: poesie_pdf returned non-zero exit status %s" % rc)
-            # Intentionally re-raise to make CI step fail so you get visible failure
             raise SystemExit(rc)
+        
+        # KRITISCH: PDF-Matching HIER (innerhalb try, VOR finally)!
+        print(f"→ Prüfe ROOT-Verzeichnis: {ROOT}")
+        all_pdfs_in_root = list(ROOT.glob("*.pdf"))
+        print(f"→ Alle PDFs in ROOT: {[p.name for p in all_pdfs_in_root]}")
+        
+        after = {p.name for p in ROOT.glob("*.pdf")}
+        new_pdfs = sorted(after - before)
+        
+        print(f"→ Snapshot AFTER subprocess: {len(after)} PDFs, {len(new_pdfs)} neue PDFs")
+        
+        if new_pdfs:
+            # KRITISCH: Die PDFs heißen "temp_agamemnon_..." (mit temp_ Präfix!)
+            temp_stem = temp_input.stem  # z.B. "temp_agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251128_232610"
+            
+            # Entferne "temp_" Präfix und DRAFT_TIMESTAMP
+            base_without_temp = temp_stem[5:] if temp_stem.startswith('temp_') else temp_stem
+            
+            # Entferne DRAFT_TIMESTAMP Suffix
+            match = re.match(r'^(.+?)_draft_translinear_DRAFT_\d{8}_\d{6}$', base_without_temp)
+            if match:
+                clean_base = match.group(1)  # z.B. "agamemnon_gr_de_en_stil1_birkenbihl"
+            else:
+                clean_base = base_without_temp
+            
+            print(f"→ Suche PDFs mit Basis: temp_{clean_base}")
+            
+            # Finde ALLE PDFs, die mit "temp_" + clean_base beginnen
+            relevant_pdfs = []
+            for name in new_pdfs:
+                if name.startswith(f'temp_{clean_base}'):
+                    relevant_pdfs.append(name)
+            
+            if not relevant_pdfs:
+                print(f"⚠ Keine passenden PDFs gefunden für Basis: temp_{clean_base}")
+                print(f"   Gefundene PDFs: {new_pdfs[:3] if len(new_pdfs) > 0 else 'keine'}")
+                return
+
+            sanitized_release_base = release_base.strip()
+
+            for name in relevant_pdfs:
+                bare = name[:-4] if name.lower().endswith(".pdf") else name
+                
+                # Entferne "temp_" Präfix
+                if bare.startswith('temp_'):
+                    bare = bare[5:]
+                
+                # Entferne den clean_base Präfix, behalte nur Suffix (z.B. "_Normal_Colour_Tag")
+                if bare.startswith(clean_base):
+                    suffix = bare[len(clean_base):]
+                else:
+                    suffix = '_' + bare
+                
+                # Erstelle finalen Namen
+                if sanitized_release_base:
+                    final_bare = f"{sanitized_release_base}{suffix}"
+                else:
+                    final_bare = clean_base + suffix
+                
+                final_name = f"{final_bare}.pdf"
+                
+                src = ROOT / name
+                dst = target_dir / final_name
+                src.replace(dst)
+                print(f"✓ PDF → {dst}")
 
     except TimeoutError as te:
         print("build_poesie_drafts_adapter.py: TimeoutError while running poesie_pdf: %s" % str(te))
@@ -187,7 +251,8 @@ def run_one(input_path: Path) -> None:
         sys.stdout.flush()
         raise
     finally:
-        # Cleanup: delete temp files
+        # Cleanup NACH dem PDF-Verschieben
+        # --- Cleanup: delete temp files ---
         try:
             if config_file and config_file.exists():
                 config_file.unlink()
@@ -201,88 +266,6 @@ def run_one(input_path: Path) -> None:
 
     # --- END robust subprocess invocation ---
     
-    # KRITISCH: Sofort prüfen, ob PDFs existieren (BEVOR cleanup sie löscht!)
-    print(f"→ Prüfe ROOT-Verzeichnis: {ROOT}")
-    all_pdfs_in_root = list(ROOT.glob("*.pdf"))
-    print(f"→ Alle PDFs in ROOT: {[p.name for p in all_pdfs_in_root]}")
-    
-    after = {p.name for p in ROOT.glob("*.pdf")}
-    new_pdfs = sorted(after - before)
-    
-    print(f"→ Snapshot AFTER subprocess: {len(after)} PDFs, {len(new_pdfs)} neue PDFs")
-    print(f"→ before={len(before)}, after={len(after)}")
-    print(f"→ Neue PDFs: {new_pdfs[:5] if new_pdfs else 'KEINE'}")
-
-    if not new_pdfs:
-        print("⚠ Keine PDFs erzeugt.")
-        # WICHTIG: Cleanup TROTZDEM ausführen
-        try:
-            if config_file and config_file.exists():
-                config_file.unlink()
-        except Exception:
-            pass
-        try:
-            if temp_input.exists():
-                temp_input.unlink()
-        except Exception:
-            pass
-        return
-
-    # KRITISCH: Die PDFs heißen "temp_agamemnon_..." (mit temp_ Präfix!)
-    temp_stem = temp_input.stem  # z.B. "temp_agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251128_232610"
-    
-    # Entferne "temp_" Präfix und DRAFT_TIMESTAMP
-    base_without_temp = temp_stem[5:] if temp_stem.startswith('temp_') else temp_stem
-    
-    # Entferne DRAFT_TIMESTAMP Suffix
-    match = re.match(r'^(.+?)_draft_translinear_DRAFT_\d{8}_\d{6}$', base_without_temp)
-    if match:
-        clean_base = match.group(1)  # z.B. "agamemnon_gr_de_en_stil1_birkenbihl"
-    else:
-        clean_base = base_without_temp
-    
-    print(f"→ Suche PDFs mit Basis: temp_{clean_base}")
-    
-    # Finde ALLE PDFs, die mit "temp_" + clean_base beginnen
-    relevant_pdfs = []
-    for name in new_pdfs:
-        if name.startswith(f'temp_{clean_base}'):
-            relevant_pdfs.append(name)
-    
-    if not relevant_pdfs:
-        print(f"⚠ Keine passenden PDFs gefunden für Basis: temp_{clean_base}")
-        print(f"   Gefundene PDFs: {new_pdfs[:3] if len(new_pdfs) > 0 else 'keine'}")
-        return
-
-    sanitized_release_base = release_base.strip()
-
-    for name in relevant_pdfs:
-        bare = name[:-4] if name.lower().endswith(".pdf") else name
-        
-        # Entferne "temp_" Präfix
-        if bare.startswith('temp_'):
-            bare = bare[5:]
-        
-        # Entferne den clean_base Präfix, behalte nur Suffix (z.B. "_Normal_Colour_Tag")
-        if bare.startswith(clean_base):
-            suffix = bare[len(clean_base):]
-        else:
-            suffix = '_' + bare
-        
-        # Erstelle finalen Namen
-        if sanitized_release_base:
-            final_bare = f"{sanitized_release_base}{suffix}"
-        else:
-            final_bare = clean_base + suffix
-        
-        final_name = f"{final_bare}.pdf"
-        
-        src = ROOT / name
-        dst = target_dir / final_name
-        src.replace(dst)
-        print(f"✓ PDF → {dst}")
-
-# ENDE der run_one() Funktion - ab hier kommen die Helper-Funktionen
 def apply_bold_if_needed(text, bold_text):
     """Apply bold formatting if needed, preserving existing styles"""
     if bold_text:
