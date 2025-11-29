@@ -1076,7 +1076,7 @@ def group_pairs_into_flows(blocks):
     current_para_label = None
     active_speaker = ''
     any_speaker_seen = False
-    in_lyric_mode = False  # NEU: Lyrik-Modus für Boethius
+    in_lyrik_mode = False  # NEU: Lyrik-Modus für Boethius
     current_base_num = None  # NEU: Zeilennummer für Hinterlegung
     accumulated_comments = []  # NEU: Sammle Kommentare von pair-Blöcken für flow-Block
 
@@ -1105,7 +1105,7 @@ def group_pairs_into_flows(blocks):
             heading_text = b.get('text', '').lower()
             # DEBUG: print(f"  [DEBUG] h2_eq gefunden: '{heading_text}'")
             if 'lyrik' in heading_text:
-                in_lyric_mode = True
+                in_lyrik_mode = True
                 print("  → Lyrik-Modus AKTIVIERT (Zeilenstruktur wird bewahrt, keine § Marker)")
             elif in_lyrik_mode:
                 # Andere h2_eq Überschrift nach Lyrik → Lyrik-Modus beenden
@@ -2471,12 +2471,35 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             idx += 1
             continue
 
-        # ========= PAIR (sollte nicht vorkommen in Prosa, aber zur Sicherheit) =========
+        # NEU: Handler für einzelne Paare (Lyrik-Modus)
+        # Bewahrt die Zeilenstruktur wie bei Zitaten
         if t == 'pair':
-            logger.warning("Prosa_Code: 'pair' block detected (unexpected in Prosa!), converting to flow")
-            # Konvertiere pair zu flow und verarbeite als flow
-            b['type'] = 'flow'
-            # Springe zurück zur flow-Verarbeitung
+            gr_tokens = b.get('gr_tokens', [])
+            de_tokens = b.get('de_tokens', [])
+            en_tokens = b.get('en_tokens', [])
+            para_label = b.get('para_label', '')
+            speaker = b.get('speaker', '')
+            
+            # NEU: Kommentare aus block['comments'] rendern (VOR den Tabellen, damit sie im Fließtext erscheinen)
+            render_block_comments(b, elements, doc)
+            
+            # Erstelle eine Pseudo-Flow-Struktur für eine einzelne Zeile
+            pseudo_flow = {
+                'type': 'flow',
+                'gr_tokens': gr_tokens,
+                'de_tokens': de_tokens,
+                'en_tokens': en_tokens,
+                'para_label': para_label,
+                'speaker': speaker,
+                'has_en': bool(en_tokens)
+            }
+            
+            # Rendere als einzelne Zeile (behält Zeilenstruktur)
+            pair_tables = build_flow_tables(pseudo_flow)
+            if pair_tables:
+                elements.append(KeepTogether(pair_tables))
+            
+            idx += 1
             continue
 
     # DIAGNOSE: Logging nach Element-Erstellung, vor doc.build()

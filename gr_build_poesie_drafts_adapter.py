@@ -201,15 +201,31 @@ def run_one(input_path: Path) -> None:
 
     # --- END robust subprocess invocation ---
     
-    # WICHTIG: Jetzt nach subprocess die neuen PDFs finden!
+    # KRITISCH: Sofort prüfen, ob PDFs existieren (BEVOR cleanup sie löscht!)
+    print(f"→ Prüfe ROOT-Verzeichnis: {ROOT}")
+    all_pdfs_in_root = list(ROOT.glob("*.pdf"))
+    print(f"→ Alle PDFs in ROOT: {[p.name for p in all_pdfs_in_root]}")
+    
     after = {p.name for p in ROOT.glob("*.pdf")}
     new_pdfs = sorted(after - before)
     
     print(f"→ Snapshot AFTER subprocess: {len(after)} PDFs, {len(new_pdfs)} neue PDFs")
-    print(f"→ Neue PDFs: {new_pdfs[:3] if new_pdfs else 'KEINE'}")
+    print(f"→ before={len(before)}, after={len(after)}")
+    print(f"→ Neue PDFs: {new_pdfs[:5] if new_pdfs else 'KEINE'}")
 
     if not new_pdfs:
         print("⚠ Keine PDFs erzeugt.")
+        # WICHTIG: Cleanup TROTZDEM ausführen
+        try:
+            if config_file and config_file.exists():
+                config_file.unlink()
+        except Exception:
+            pass
+        try:
+            if temp_input.exists():
+                temp_input.unlink()
+        except Exception:
+            pass
         return
 
     # KRITISCH: Die PDFs heißen "temp_agamemnon_..." (mit temp_ Präfix!)
