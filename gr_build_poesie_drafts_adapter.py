@@ -44,14 +44,41 @@ def run_one(input_path: Path) -> None:
     metadata = extract_metadata_sections(text_content)
     print(f"→ Extrahierte Metadaten: {list(metadata.keys())}")
     
-    # KRITISCH: Baue Verzeichnisstruktur aus Metadaten (wie im Frontend erwartet)
+    # KRITISCH: Baue Verzeichnisstruktur aus Metadaten ODER aus Input-Pfad
     # Frontend erwartet: pdf_drafts/griechisch/poesie/Epos/Homer/Ilias/
     # Alte Struktur war: pdf_drafts/poesie_drafts/Homer/Ilias/
-    sprache = metadata.get("SPRACHE", "").strip().lower() or "griechisch"
-    gattung = metadata.get("GATTUNG", "").strip().lower() or "poesie"
-    kategorie = metadata.get("KATEGORIE", "").strip() or "Unsortiert"
-    autor = metadata.get("AUTOR", "").strip() or "Unbekannt"
-    werk = metadata.get("WERK", "").strip() or input_path.stem.split("_")[0]
+    
+    # NEUE LOGIK: Wenn Metadata leer, aus Input-Pfad extrahieren (wie bei Prosa!)
+    sprache = metadata.get("SPRACHE", "").strip().lower()
+    gattung = metadata.get("GATTUNG", "").strip().lower()
+    kategorie = metadata.get("KATEGORIE", "").strip()
+    autor = metadata.get("AUTOR", "").strip()
+    werk = metadata.get("WERK", "").strip()
+    
+    # Fallback: Aus Input-Pfad extrahieren (spiegelt texte_drafts Struktur)
+    if not sprache or not kategorie or not autor:
+        # Input: texte_drafts/griechisch/poesie/Epos/Homer/Ilias_11/ilias11_gr_de_en...txt
+        # Erwarte: texte_drafts/<sprache>/<gattung>/<kategorie>/<autor>/<werk>/file.txt
+        parts = input_path.parts
+        try:
+            # Finde "texte_drafts" Index
+            drafts_idx = parts.index("texte_drafts") if "texte_drafts" in parts else -1
+            if drafts_idx >= 0 and len(parts) >= drafts_idx + 6:
+                sprache = sprache or parts[drafts_idx + 1]
+                gattung = gattung or parts[drafts_idx + 2]
+                kategorie = kategorie or parts[drafts_idx + 3]
+                autor = autor or parts[drafts_idx + 4]
+                werk = werk or parts[drafts_idx + 5]
+                print(f"→ Metadaten aus Pfad extrahiert: {sprache}/{gattung}/{kategorie}/{autor}/{werk}")
+        except (ValueError, IndexError):
+            pass
+    
+    # Finale Fallbacks
+    sprache = sprache or "griechisch"
+    gattung = gattung or "poesie"
+    kategorie = kategorie or "Unsortiert"
+    autor = autor or "Unbekannt"
+    werk = werk or input_path.stem.split("_")[0]
     
     # Baue relativen Pfad (wie Frontend erwartet)
     relative_path = Path(sprache) / gattung / kategorie / autor / werk

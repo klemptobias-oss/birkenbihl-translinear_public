@@ -74,7 +74,7 @@ SPEAKER_COL_MIN_MM = 3.0   # Mindestbreite für Sprecher-Spalte
 SPEAKER_GAP_MM = PARA_GAP_MM   # keep same gap as normal paragraph/§ texts
 
 CELL_PAD_LR_PT = 0.6       # Innenabstand links/rechts in Zellen (stark reduziert für kompaktere TAG-PDFs)
-SAFE_EPS_PT = 0.8          # Sicherheitsabstand für Messungen (erhöht von 0.3 auf 0.8 für bessere Lesbarkeit)
+SAFE_EPS_PT = 1.5          # Sicherheitsabstand für Messungen (erhöht von 0.8 auf 1.5 für bessere Lesbarkeit bei Sprecher-Texten)
 
 # ----------------------- TAG-KONFIGURATION -----------------------
 # Einstellungen für Tag-Darstellung
@@ -1940,12 +1940,12 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 continue
             added_keys.add(key)
             
-            # Optional: Zeige den Bereich (z.B. (2-4k))
+            # Optional: Zeige den Bereich in [ECKIGEN KLAMMERN] (z.B. [2-4])
             rng = cm.get('pair_range') if isinstance(cm, dict) else None
             if rng:
-                display = f"({rng[0]}-{rng[1]}k) {txt}"
+                display = f"[{rng[0]}-{rng[1]}] {txt}"
             elif isinstance(cm, dict) and cm.get('start') and cm.get('end'):
-                display = f"({cm.get('start')}-{cm.get('end')}k) {txt}"
+                display = f"[{cm.get('start')}-{cm.get('end')}] {txt}"
             else:
                 display = txt.strip()
             
@@ -1958,17 +1958,30 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             try:
                 # Grau hinterlegter Kommentar-Box mit kleiner Schrift
                 comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                    fontName='DejaVu', fontSize=7,  # Noch kleiner
-                    leading=9,  # Dichte Zeilenabstände
+                    fontName='DejaVu', fontSize=7.5,  # Erhöht von 7 auf 7.5 (+0.5pt)
+                    leading=9.5,  # Proportional angepasst
                     alignment=TA_LEFT, 
                     leftIndent=3*mm, rightIndent=3*mm,
                     spaceBefore=3, spaceAfter=3,
                     textColor=colors.Color(0.3, 0.3, 0.3), italic=True,
                     backColor=colors.Color(0.95, 0.95, 0.95))  # GRAU HINTERLEGT
-                elements_list.append(Spacer(1, 2*mm))
-                elements_list.append(Paragraph(html.escape(text_clean), comment_style_simple))
-                elements_list.append(Spacer(1, 2*mm))
-                print(f"Prosa_Code: render_block_comments - ADDED comment paragraph: '{text_clean[:50]}...'", flush=True)
+                
+                # Prüfe ob Kommentar lang ist (>200 Wörter) für Page-Breaking
+                word_count = len(text_clean.split())
+                if word_count > 200:
+                    # Langer Kommentar: Erlaube Seitenumbrüche
+                    p = Paragraph(html.escape(text_clean), comment_style_simple)
+                    p.keepWithNext = False  # Darf von nachfolgendem Element getrennt werden
+                    elements_list.append(Spacer(1, 2*mm))
+                    elements_list.append(p)
+                    elements_list.append(Spacer(1, 2*mm))
+                else:
+                    # Kurzer Kommentar: Bleibt zusammen
+                    elements_list.append(Spacer(1, 2*mm))
+                    elements_list.append(Paragraph(html.escape(text_clean), comment_style_simple))
+                    elements_list.append(Spacer(1, 2*mm))
+                    
+                print(f"Prosa_Code: render_block_comments - ADDED comment paragraph ({word_count} words): '{text_clean[:50]}...'", flush=True)
                 added_count += 1
             except Exception as e:
                 import logging
@@ -2061,15 +2074,28 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             line_num = b.get('line_num', '')
             
             # WICHTIG: Kommentar-Text direkt aus original_line extrahieren (einfach!)
-            # Format: "(105k) Text" oder "(71-77k) Text"
+            # Format: "(105k) Text" oder "(71-77k) Text" → wird zu "[105] Text" oder "[71-77] Text"
+            line_num_prefix = ""
             if not content and original_line:
-                # Entferne Zeilennummer-Marker am Anfang: "(105k) " oder "(71-77k) "
-                content = re.sub(r'^\(\d+(?:-\d+)?k\)\s*', '', original_line).strip()
+                # Extrahiere Zeilennummer-Bereich und entferne (XYZk)-Marker
+                line_num_match = re.match(r'^\((\d+(?:-\d+)?)k\)\s*(.*)', original_line)
+                if line_num_match:
+                    line_num_str = line_num_match.group(1)
+                    content = line_num_match.group(2).strip()
+                    line_num_prefix = f"[{line_num_str}] "
+                else:
+                    content = re.sub(r'^\(\d+(?:-\d+)?k\)\s*', '', original_line).strip()
             
             # Fallback: Wenn immer noch kein content, verwende original_line (ohne Zeilennummer)
             if not content:
                 if original_line:
-                    content = re.sub(r'^\(\d+(?:-\d+)?k\)\s*', '', original_line).strip()
+                    line_num_match = re.match(r'^\((\d+(?:-\d+)?)k\)\s*(.*)', original_line)
+                    if line_num_match:
+                        line_num_str = line_num_match.group(1)
+                        content = line_num_match.group(2).strip()
+                        line_num_prefix = f"[{line_num_str}] "
+                    else:
+                        content = re.sub(r'^\(\d+(?:-\d+)?k\)\s*', '', original_line).strip()
                 else:
                     content = ''
             
@@ -2079,12 +2105,15 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 idx += 1
                 continue
             
+            # Füge Zeilennummer-Präfix hinzu
+            full_content = line_num_prefix + content
+            
             # GANZ EINFACH: Kommentar in grauer Box rendern
             # Grau hinterlegter Kommentar-Box mit kleiner Schrift
             from reportlab.platypus import Table, TableStyle
             comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                fontName='DejaVu', fontSize=7,  # Noch kleiner
-                leading=9,  # Dichte Zeilenabstände
+                fontName='DejaVu', fontSize=7.5,  # Erhöht von 7 auf 7.5 (+0.5pt)
+                leading=9.5,  # Proportional angepasst
                 alignment=TA_LEFT, 
                 leftIndent=0, rightIndent=0,  # Kein Indent in der Table
                 spaceBefore=0, spaceAfter=0)
@@ -2095,7 +2124,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             except:
                 available_width = 170*mm  # Fallback
             
-            comment_table = Table([[Paragraph(xml_escape(content), comment_style_simple)]], 
+            # Prüfe ob Kommentar lang ist (>200 Wörter) für Page-Breaking
+            word_count = len(full_content.split())
+            
+            comment_table = Table([[Paragraph(xml_escape(full_content), comment_style_simple)]], 
                                  colWidths=[available_width])
             comment_table.setStyle(TableStyle([
                 ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
@@ -2104,10 +2136,18 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 ('TOPPADDING', (0, 0), (-1, -1), 3*mm),
                 ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),
             ]))
+            
+            # Bei langen Kommentaren (>200 Wörter): Erlaube Seitenumbrüche
+            if word_count > 200:
+                comment_table.hAlign = 'LEFT'
+                # Deaktiviere keepTogether für lange Kommentare
+                if hasattr(comment_table, 'keepWithNext'):
+                    comment_table.keepWithNext = False
+                    
             elements.append(Spacer(1, 2*mm))
             elements.append(comment_table)
             elements.append(Spacer(1, 2*mm))
-            print(f"Prosa_Code: Rendered comment block: '{content[:50]}...'", flush=True)
+            print(f"Prosa_Code: Rendered comment block ({word_count} words): '{full_content[:50]}...'", flush=True)
             idx += 1
             continue
 

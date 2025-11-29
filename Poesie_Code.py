@@ -1653,8 +1653,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 w_gr = visible_measure_token(core_text, font=token_gr_style.fontName, 
                                              size=token_gr_style.fontSize, cfg=eff_cfg, 
                                              is_greek_row=True)
-                # ERHÖHTER Puffer von 0.3pt auf 1.0pt für bessere Lesbarkeit
-                w_gr += max(token_gr_style.fontSize * 0.08, 1.0)
+                # ERHÖHTER Puffer von 1.0pt auf 1.3pt für bessere Lesbarkeit
+                w_gr += max(token_gr_style.fontSize * 0.10, 1.3)
                 
             elif tags_in_token and tag_mode == "TAGS":
                 # FALL 2: Tag-PDF UND Token HAT Tags → Tags werden angezeigt → normale Breite
@@ -2160,9 +2160,11 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 i += 1
                 continue
             
-            # WICHTIG: Zeilennummer VOR dem Kommentartext anzeigen!
+            # WICHTIG: Zeilennummer VOR dem Kommentartext anzeigen in [ECKIGEN KLAMMERN]!
             if line_num:
-                text_clean = f"({line_num}) {text_clean}"
+                # Entferne "k" Suffix und verwende eckige Klammern
+                line_num_clean = line_num.rstrip('kK')
+                text_clean = f"[{line_num_clean}] {text_clean}"
             
             # Sanitize and truncate
             text_clean = " ".join(text_clean.split())
@@ -2172,8 +2174,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             
             # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT
             comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                fontName='DejaVu', fontSize=7,
-                leading=8.5,
+                fontName='DejaVu', fontSize=7.5,  # Erhöht von 7 auf 7.5 (+0.5pt)
+                leading=9,  # Proportional angepasst (war 8.5)
                 alignment=TA_LEFT, 
                 leftIndent=4*MM, rightIndent=4*MM,
                 spaceBefore=2, spaceAfter=2,
@@ -2187,6 +2189,10 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*MM
             except:
                 available_width = 170*MM  # Fallback
+            
+            # Prüfe ob Kommentar lang ist (>200 Wörter) für Page-Breaking
+            word_count = len(text_clean.split())
+            
             comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]], 
                                  colWidths=[available_width])
             comment_table.setStyle(TableStyle([
@@ -2196,6 +2202,13 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 ('TOPPADDING', (0, 0), (-1, -1), 3*MM),
                 ('BOTTOMPADDING', (0, 0), (-1, -1), 3*MM),
             ]))
+            
+            # Bei langen Kommentaren (>200 Wörter): Erlaube Seitenumbrüche
+            if word_count > 200:
+                comment_table.hAlign = 'LEFT'
+                if hasattr(comment_table, 'keepWithNext'):
+                    comment_table.keepWithNext = False
+                    
             elements.append(Spacer(1, 2*MM))
             elements.append(comment_table)
             elements.append(Spacer(1, 2*MM))
@@ -2475,12 +2488,12 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         continue
                     added_keys.add(key)
                     
-                    # Optional: Zeige den Bereich (z.B. (2-4k))
+                    # Optional: Zeige den Bereich in [ECKIGEN KLAMMERN] (z.B. [2-4])
                     rng = cm.get('pair_range') if isinstance(cm, dict) else None
                     if rng:
-                        display = f"({rng[0]}-{rng[1]}k) {txt}"
+                        display = f"[{rng[0]}-{rng[1]}] {txt}"
                     elif isinstance(cm, dict) and cm.get('start') and cm.get('end'):
-                        display = f"({cm.get('start')}-{cm.get('end')}k) {txt}"
+                        display = f"[{cm.get('start')}-{cm.get('end')}] {txt}"
                     else:
                         display = txt.strip()
                     
@@ -2491,8 +2504,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     
                     # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT
                     comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                        fontName='DejaVu', fontSize=7,  # Kleinere Schrift
-                        leading=8.5,  # Dichte Zeilenabstände
+                        fontName='DejaVu', fontSize=7.5,  # Erhöht von 7 auf 7.5 (+0.5pt)
+                        leading=9,  # Proportional angepasst (war 8.5)
                         alignment=TA_LEFT, 
                         leftIndent=4*MM, rightIndent=4*MM,
                         spaceBefore=2, spaceAfter=2,
@@ -2505,6 +2518,10 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*MM
                     except:
                         available_width = 170*MM  # Fallback
+                    
+                    # Prüfe ob Kommentar lang ist (>200 Wörter) für Page-Breaking
+                    word_count = len(text_clean.split())
+                    
                     comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]], 
                                          colWidths=[available_width])
                     comment_table.setStyle(TableStyle([
@@ -2514,6 +2531,13 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         ('TOPPADDING', (0, 0), (-1, -1), 3*MM),
                         ('BOTTOMPADDING', (0, 0), (-1, -1), 3*MM),
                     ]))
+                    
+                    # Bei langen Kommentaren (>200 Wörter): Erlaube Seitenumbrüche
+                    if word_count > 200:
+                        comment_table.hAlign = 'LEFT'
+                        if hasattr(comment_table, 'keepWithNext'):
+                            comment_table.keepWithNext = False
+                            
                     elements.append(Spacer(1, 2*MM))
                     elements.append(comment_table)
                     elements.append(Spacer(1, 2*MM))
