@@ -2025,34 +2025,52 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT — be defensive
             try:
-                # Grau hinterlegter Kommentar-Box mit kleiner Schrift
+                # WICHTIG: backColor im ParagraphStyle verhindert Seitenumbrüche!
+                # Daher: Verwende Table mit grauem Hintergrund für ALLE Kommentare
                 comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
                     fontName='DejaVu', fontSize=7.5,  # Erhöht von 7 auf 7.5 (+0.5pt)
                     leading=9.5,  # Proportional angepasst
                     alignment=TA_LEFT, 
-                    leftIndent=3*mm, rightIndent=3*mm,
-                    spaceBefore=3, spaceAfter=3,
+                    leftIndent=0, rightIndent=0,  # Kein Indent im Style (wird in Table gemacht)
+                    spaceBefore=0, spaceAfter=0,
                     textColor=colors.Color(0.3, 0.3, 0.3), italic=True,
-                    backColor=colors.Color(0.95, 0.95, 0.95),  # GRAU HINTERLEGT
-                    splitLongWords=True,  # KRITISCH: Erlaube Wortumbrüche für lange Kommentare
+                    splitLongWords=True,  # KRITISCH: Erlaube Wortumbrüche
                     wordWrap='LTR')  # WICHTIG: Aktiviere Word-Wrapping
                 
                 # Prüfe ob Kommentar lang ist (>175 Wörter) für Page-Breaking
                 word_count = len(text_clean.split())
                 
-                # WICHTIG: Lange Kommentare OHNE KeepTogether rendern (damit sie umbrechen können)
+                # KRITISCH: Verwende Table mit grauem Hintergrund für ALLE Kommentare
+                # Table kann über Seiten umbrechen, wenn kein KeepTogether verwendet wird!
                 p = Paragraph(html.escape(text_clean), comment_style_simple)
+                
+                # Berechne verfügbare Breite (verwende frame_w vom Doc)
+                try:
+                    available_width = doc.width - 12*mm  # doc.width ist frame_w minus margins
+                except:
+                    available_width = 170*mm  # Fallback
+                
+                # Padding: 0.3cm = 3mm oben/unten, 0.6cm = 6mm links/rechts
+                comment_table = Table([[p]], colWidths=[available_width])
+                comment_table.setStyle(TableStyle([
+                    ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
+                    ('LEFTPADDING', (0, 0), (-1, -1), 6*mm),  # 0.6cm links
+                    ('RIGHTPADDING', (0, 0), (-1, -1), 6*mm),  # 0.6cm rechts
+                    ('TOPPADDING', (0, 0), (-1, -1), 3*mm),  # 0.3cm oben
+                    ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),  # 0.3cm unten
+                    ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                ]))
                 
                 if word_count > MAX_COMMENT_WORDS:
                     # Langer Kommentar: Direkt hinzufügen (KEIN KeepTogether!)
-                    # So kann ReportLab den Kommentar über mehrere Seiten verteilen
+                    # Table kann über Seiten umbrechen
                     elements_list.append(Spacer(1, 2*mm))
-                    elements_list.append(p)
+                    elements_list.append(comment_table)
                     elements_list.append(Spacer(1, 2*mm))
                 else:
                     # Kurzer Kommentar: Mit KeepTogether (bleibt auf einer Seite)
                     elements_list.append(Spacer(1, 2*mm))
-                    elements_list.append(KeepTogether([p]))
+                    elements_list.append(KeepTogether([comment_table]))
                     elements_list.append(Spacer(1, 2*mm))
                     
                 print(f"Prosa_Code: render_block_comments - ADDED comment paragraph ({word_count} words): '{text_clean[:50]}...'", flush=True)

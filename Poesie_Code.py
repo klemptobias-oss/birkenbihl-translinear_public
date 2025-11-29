@@ -2170,51 +2170,54 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             text_clean = " ".join(text_clean.split())
             # Längere Kommentare sind erlaubt (kein Abschneiden)
             
-            # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT
+            # WICHTIG: backColor im ParagraphStyle verhindert Seitenumbrüche!
+            # Daher: Verwende Table mit grauem Hintergrund für ALLE Kommentare
             comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
                 fontName='DejaVu', fontSize=7.5,  # Erhöht von 7 auf 7.5 (+0.5pt)
                 leading=9,  # Proportional angepasst (war 8.5)
                 alignment=TA_LEFT, 
-                leftIndent=4*MM, rightIndent=4*MM,  # KRITISCH: Gleiche Indents wie Bereichskommentar!
-                spaceBefore=2, spaceAfter=2,
+                leftIndent=0, rightIndent=0,  # Kein Indent im Style (wird in Table gemacht)
+                spaceBefore=0, spaceAfter=0,
                 textColor=colors.Color(0.25, 0.25, 0.25),
-                backColor=colors.Color(0.92, 0.92, 0.92),
-                splitLongWords=True,  # KRITISCH: Erlaube Wortumbrüche für lange Kommentare
+                splitLongWords=True,  # KRITISCH: Erlaube Wortumbrüche
                 wordWrap='LTR')  # WICHTIG: Aktiviere Word-Wrapping
             
             # Grau hinterlegte Box: Table mit Hintergrundfarbe
             from reportlab.platypus import Table, TableStyle
             try:
                 from Poesie_Code import doc  # Versuche doc zu finden
-                available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*MM
+                available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 12*MM  # -12MM für Padding
             except:
-                available_width = 170*MM  # Fallback
+                available_width = 170*MM - 12*MM  # Fallback mit Padding
             
             # Prüfe ob Kommentar lang ist (>175 Wörter) für Page-Breaking
             word_count = len(text_clean.split())
             
-            # WICHTIG: Table-basierte Kommentare mit grauem Hintergrund
-            # Bei langen Kommentaren (>175 Wörter): Verwende PARAGRAPH statt Table für Umbruch
+            # KRITISCH: Verwende Table mit grauem Hintergrund für ALLE Kommentare
+            # Table kann über Seiten umbrechen, wenn kein KeepTogether verwendet wird!
+            p = Paragraph(html.escape(text_clean), comment_style_simple)
+            
+            # Padding: 0.3cm = 3mm oben/unten, 0.6cm = 6mm links/rechts
+            comment_table = Table([[p]], colWidths=[available_width])
+            comment_table.setStyle(TableStyle([
+                ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
+                ('LEFTPADDING', (0, 0), (-1, -1), 6*MM),  # 0.6cm links
+                ('RIGHTPADDING', (0, 0), (-1, -1), 6*MM),  # 0.6cm rechts
+                ('TOPPADDING', (0, 0), (-1, -1), 3*MM),  # 0.3cm oben
+                ('BOTTOMPADDING', (0, 0), (-1, -1), 3*MM),  # 0.3cm unten
+                ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+            ]))
+            
             if word_count > 175:
-                # Langer Kommentar: Verwende einfachen Paragraph (kann umbrechen)
-                p = Paragraph(html.escape(text_clean), comment_style_simple)
+                # Langer Kommentar: Direkt hinzufügen (KEIN KeepTogether!)
+                # Table kann über Seiten umbrechen
                 elements.append(Spacer(1, 2*MM))
-                elements.append(p)  # KEIN KeepTogether - kann über Seiten umbrechen!
+                elements.append(comment_table)
                 elements.append(Spacer(1, 2*MM))
             else:
-                # Kurzer Kommentar: Verwende Table mit grauem Hintergrund
-                comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]], 
-                                     colWidths=[available_width])
-                comment_table.setStyle(TableStyle([
-                    ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
-                    ('LEFTPADDING', (0, 0), (-1, -1), 4*MM),
-                    ('RIGHTPADDING', (0, 0), (-1, -1), 4*MM),
-                    ('TOPPADDING', (0, 0), (-1, -1), 3*MM),
-                    ('BOTTOMPADDING', (0, 0), (-1, -1), 3*MM),
-                ]))
-                
+                # Kurzer Kommentar: Mit KeepTogether (bleibt auf einer Seite)
                 elements.append(Spacer(1, 2*MM))
-                elements.append(KeepTogether([comment_table]))  # Kurze Kommentare bleiben zusammen
+                elements.append(KeepTogether([comment_table]))
                 elements.append(Spacer(1, 2*MM))
             i += 1
             continue
