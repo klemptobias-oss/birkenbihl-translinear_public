@@ -1646,6 +1646,15 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # NEU: Prüfe, ob englische Zeile vorhanden ist
         has_en = any(slice_en)
         has_de = any(de)  # Prüfe, ob überhaupt deutsche Übersetzungen vorhanden sind
+        has_gr = any(slice_gr)  # Prüfe, ob griechische Zeile Inhalt hat
+        
+        # KRITISCH: Wenn ALLE Zeilen leer sind (z.B. nur Stephanus-Paginierungen),
+        # dann überspringe diese Tabelle komplett um ReportLab-Crash zu vermeiden
+        if not has_gr and not has_de and not has_en:
+            # Keine Inhalte, überspringe diese Tabelle
+            i = j
+            first_slice = False
+            continue
         
         if has_en:
             if has_de:
