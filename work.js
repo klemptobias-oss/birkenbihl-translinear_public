@@ -657,11 +657,26 @@ function buildFullReleaseName() {
 }
 
 function buildDraftPdfFilename() {
+  // KRITISCH: Wenn pendingDraftFilename verfügbar ist, extrahiere den Base daraus
+  // Dieser enthält den _draft_translinear_DRAFT_TIMESTAMP Teil!
+  if (state.pendingDraftFilename) {
+    // z.B. "ilias11_gr_de_en_stil1_Versmass_birkenbihl_draft_translinear_DRAFT_20251129_081518.txt"
+    const filebase = state.pendingDraftFilename.replace(/\.txt$/, '');
+    // Entferne "_birkenbihl" suffix und normalisiere zu "_birkenbihl"
+    const normalized = normalizeReleaseBase(filebase);
+    if (normalized) {
+      const name = `${normalized}${buildVariantSuffix()}.pdf`;
+      console.log("Generated draft filename (from pendingDraftFilename):", name);
+      return name;
+    }
+  }
+  
+  // Fallback: Verwende draftBase (ohne Timestamp)
   const releaseBase =
     normalizeReleaseBase(state.draftBase) || buildReleaseBase();
   if (!releaseBase) return "error.pdf";
   const name = `${releaseBase}${buildVariantSuffix()}.pdf`;
-  console.log("Generated draft filename:", name);
+  console.log("Generated draft filename (from draftBase):", name);
   return name;
 }
 
