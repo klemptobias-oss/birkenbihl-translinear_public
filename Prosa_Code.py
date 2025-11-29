@@ -71,7 +71,7 @@ PARA_COL_MIN_MM = 5.0      # Mindestbreite für Paragraphen-Spalte (stark reduzi
 PARA_GAP_MM = 1.2          # Abstand neben Paragraphen-Spalte (weiter reduziert für maximale Textbreite)
 # Normalize spacing constants so speaker texts behave like §/no-speaker texts
 SPEAKER_COL_MIN_MM = 3.0   # Mindestbreite für Sprecher-Spalte
-SPEAKER_GAP_MM = PARA_GAP_MM   # keep same gap as normal paragraph/§ texts
+SPEAKER_GAP_MM = 1.5       # Erhöht von 1.2 auf 1.5mm für minimalen Puffer zwischen Sprecher und Text
 
 CELL_PAD_LR_PT = 0.6       # Innenabstand links/rechts in Zellen (stark reduziert für kompaktere TAG-PDFs)
 SAFE_EPS_PT = 1.7          # Sicherheitsabstand für Messungen (erhöht von 1.6 auf 1.7 für beste Lesbarkeit bei Sprecher-Texten)
@@ -1235,6 +1235,38 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
     if de_tokens is None:
         de_tokens = []
     
+    def is_only_symbols_or_stephanus(token: str) -> bool:
+        """
+        Prüft ob ein Token NUR aus Stephanus-Paginierungen, Interpunktion oder Symbolen besteht.
+        Returns True wenn das Token unsichtbar gemacht werden soll (nur Symbole, keine echten Wörter).
+        
+        Beispiele die True zurückgeben:
+        - [535b], [100c], [5125e] (Stephanus-Paginierungen)
+        - ?, !, ., ,, :, ;, —, ", ', ..., ?, ?., ?"
+        - Kombinationen: [535b],  oder  ?.
+        """
+        if not token or not token.strip():
+            return True
+        
+        # Entferne alle Whitespace
+        cleaned = token.strip()
+        
+        # Regex: NUR Stephanus-Paginierungen, Interpunktion, Symbole, Klammern, Whitespace
+        # Stephanus: [123a], [123b], [123c], [123d], [123e]
+        # Symbole: . , ; : ! ? … — " ' * † ‡ § ( ) [ ] 
+        only_symbols_pattern = r'^[\[\]\(\).,;:!?…—"\'*†‡§\s]+$'
+        
+        # Prüfe ob es NUR aus diesen Zeichen besteht
+        if re.match(only_symbols_pattern, cleaned):
+            return True
+        
+        # Spezielle Prüfung für Stephanus-Paginierungen: [123a-e]
+        stephanus_pattern = r'^\[?\d+[a-e]?\]?$'
+        if re.match(stephanus_pattern, cleaned):
+            return True
+        
+        return False
+    
     # Wenn KEINE Übersetzungen vorhanden sind (alle ausgeblendet), zeige nur die griechische Zeile
     if not de_tokens and not en_tokens:
         cols = len(gr_tokens)
@@ -1246,8 +1278,10 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
         de = de_tokens[:] + [''] * (cols - len(de_tokens))
         en = en_tokens[:] + [''] * (cols - len(en_tokens))
-        de = ['' if RE_INLINE_MARK.match(t or '') else (t or '') for t in de]
-        en = ['' if RE_INLINE_MARK.match(t or '') else (t or '') for t in en]
+        
+        # Filtere Inline-Marker UND Stephanus/Symbole
+        de = ['' if (RE_INLINE_MARK.match(t or '') or is_only_symbols_or_stephanus(t or '')) else (t or '') for t in de]
+        en = ['' if (RE_INLINE_MARK.match(t or '') or is_only_symbols_or_stephanus(t or '')) else (t or '') for t in en]
 
     def get_visible_tags(token: str, tag_config: dict = None) -> list:
         """Gibt die Liste der sichtbaren Tags für ein Token zurück (basierend auf tag_config)."""
@@ -1431,6 +1465,11 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             return base_safety
 
     widths = [col_width(k) for k in range(cols)]
+    
+    # DEFENSIVE: Filtere ungültige Breiten heraus (None, 0, negativ)
+    # Dies kann passieren wenn ALLE Übersetzungen versteckt sind
+    widths = [max(w or 0.1, 0.1) for w in widths]  # Mindestens 0.1pt pro Spalte
+    
     tables, i, first_slice = [], 0, True
     while i < cols:
         acc, j = 0.0, i

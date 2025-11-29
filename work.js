@@ -177,7 +177,10 @@ function needsVersmassRendering() {
 }
 
 function getDraftWorkPath() {
-  if (state.workMeta?.path) return state.workMeta.path;
+  if (state.workMeta?.path) {
+    console.log("✓ Using workMeta.path:", state.workMeta.path);
+    return state.workMeta.path;
+  }
   const segments = [
     state.lang,
     state.kind,
@@ -185,7 +188,15 @@ function getDraftWorkPath() {
     state.author,
     state.work,
   ].filter(Boolean);
-  return segments.join("/");
+  const constructedPath = segments.join("/");
+  console.log("⚠ Constructed path from state:", constructedPath, {
+    lang: state.lang,
+    kind: state.kind,
+    category: state.category,
+    author: state.author,
+    work: state.work,
+  });
+  return constructedPath;
 }
 
 function buildDraftUploadFilename() {
@@ -687,7 +698,14 @@ function buildReleaseProxyUrl(filename, disposition = "inline") {
 function buildDraftRelativePath(filename) {
   const workPath = getDraftWorkPath();
   const segments = ["pdf_drafts", workPath, filename];
-  return segments.filter(Boolean).join("/").replace(/\/+/g, "/");
+  const relativePath = segments.filter(Boolean).join("/").replace(/\/+/g, "/");
+  console.log("🔍 Draft Path Debug:", {
+    workPath,
+    filename,
+    relativePath,
+    workMeta: state.workMeta,
+  });
+  return relativePath;
 }
 
 function buildDraftPdfUrl(filename) {
