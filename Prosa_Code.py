@@ -74,7 +74,7 @@ SPEAKER_COL_MIN_MM = 3.0   # Mindestbreite für Sprecher-Spalte
 SPEAKER_GAP_MM = PARA_GAP_MM   # keep same gap as normal paragraph/§ texts
 
 CELL_PAD_LR_PT = 0.6       # Innenabstand links/rechts in Zellen (stark reduziert für kompaktere TAG-PDFs)
-SAFE_EPS_PT = 1.6          # Sicherheitsabstand für Messungen (erhöht von 1.5 auf 1.6 für beste Lesbarkeit bei Sprecher-Texten)
+SAFE_EPS_PT = 1.7          # Sicherheitsabstand für Messungen (erhöht von 1.6 auf 1.7 für beste Lesbarkeit bei Sprecher-Texten)
 
 # ----------------------- TAG-KONFIGURATION -----------------------
 # Einstellungen für Tag-Darstellung
@@ -1310,7 +1310,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         else:
             # Keine Tags vorhanden → NoTag-PDF, verwende gemessene Breite mit größerem Puffer
             # ERHÖHT: Besonders wichtig bei Wörtern, wo Tags mit (HideTags) versteckt wurden
-            return w_with_remaining_tags + max(size * 0.18, 2.8)  # Erhöht von 0.15/2.5 auf 0.18/2.8
+            return w_with_remaining_tags + max(size * 0.20, 3.0)  # Erhöht von 0.18/2.8 auf 0.20/3.0
     
     def col_width(k:int) -> float:
         """
@@ -1909,9 +1909,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             disable_comment_bg = block.get('disable_comment_bg', False)
         
         # Deduplicate comments per block and limit count & length to keep PDF generation fast.
-        # Erhöht: Mehr Kommentare pro Block sichtbar machen
-        MAX_COMMENTS_PER_BLOCK = 5  # Erhöht auf 5 für bessere Sichtbarkeit
-        MAX_COMMENT_CHARS = 400  # Erhöht auf 400 für vollständige Kommentare
+        # ERHÖHT: Keine Kürzung mehr, erlaubt längere Kommentare mit Umbruch
+        MAX_COMMENTS_PER_BLOCK = 10  # Erhöht auf 10
+        MAX_COMMENT_WORDS = 175  # Wortgrenze für automatischen Umbruch (kein Abschneiden!)
         added_keys = set()
         added_count = 0
         truncated = False
@@ -1952,8 +1952,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # Sanitize and truncate to a reasonable size
             text_clean = " ".join(display.split())
-            if len(text_clean) > MAX_COMMENT_CHARS:
-                text_clean = text_clean[:MAX_COMMENT_CHARS].rstrip() + "…"
+            # KEIN Abschneiden mehr! Längere Kommentare erlaubt.
             
             # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT — be defensive
             try:
@@ -1967,9 +1966,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     textColor=colors.Color(0.3, 0.3, 0.3), italic=True,
                     backColor=colors.Color(0.95, 0.95, 0.95))  # GRAU HINTERLEGT
                 
-                # Prüfe ob Kommentar lang ist (>200 Wörter) für Page-Breaking
+                # Prüfe ob Kommentar lang ist (>175 Wörter) für Page-Breaking
                 word_count = len(text_clean.split())
-                if word_count > 200:
+                if word_count > MAX_COMMENT_WORDS:
                     # Langer Kommentar: Erlaube Seitenumbrüche
                     p = Paragraph(html.escape(text_clean), comment_style_simple)
                     # Kein keepWithNext für lange Kommentare

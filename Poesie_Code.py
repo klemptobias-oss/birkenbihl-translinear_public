@@ -1653,8 +1653,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 w_gr = visible_measure_token(core_text, font=token_gr_style.fontName, 
                                              size=token_gr_style.fontSize, cfg=eff_cfg, 
                                              is_greek_row=True)
-                # ERHÖHTER Puffer von 1.0pt auf 1.3pt für bessere Lesbarkeit
-                w_gr += max(token_gr_style.fontSize * 0.10, 1.3)
+                # ERHÖHTER Puffer von 1.3pt auf 1.6pt für bessere Lesbarkeit (wie in _Tag PDFs mit versteckten Tags)
+                w_gr += max(token_gr_style.fontSize * 0.13, 1.6)
                 
             elif tags_in_token and tag_mode == "TAGS":
                 # FALL 2: Tag-PDF UND Token HAT Tags → Tags werden angezeigt → normale Breite
@@ -2166,11 +2166,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 line_num_clean = line_num.rstrip('kK')
                 text_clean = f"[{line_num_clean}] {text_clean}"
             
-            # Sanitize and truncate
+            # Sanitize - KEINE Kürzung mehr!
             text_clean = " ".join(text_clean.split())
-            MAX_COMMENT_CHARS = 400
-            if len(text_clean) > MAX_COMMENT_CHARS:
-                text_clean = text_clean[:MAX_COMMENT_CHARS].rstrip() + "…"
+            # Längere Kommentare sind erlaubt (kein Abschneiden)
             
             # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT
             comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
@@ -2461,8 +2459,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 except Exception:
                     pass
                 
-                MAX_COMMENTS_PER_BLOCK = 5  # Erhöht auf 5 für bessere Sichtbarkeit
-                MAX_COMMENT_CHARS = 400  # Erhöht auf 400 für vollständige Kommentare
+                MAX_COMMENTS_PER_BLOCK = 10  # Erhöht auf 10
+                MAX_COMMENT_WORDS = 175  # Wortgrenze für automatischen Umbruch
                 added_keys = set()
                 added_count = 0
                 truncated = False
@@ -2497,10 +2495,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     else:
                         display = txt.strip()
                     
-                    # Sanitize and truncate to a reasonable size
+                    # Sanitize - KEINE Kürzung mehr!
                     text_clean = " ".join(display.split())
-                    if len(text_clean) > MAX_COMMENT_CHARS:
-                        text_clean = text_clean[:MAX_COMMENT_CHARS].rstrip() + "…"
+                    # Längere Kommentare sind erlaubt (kein Abschneiden)
                     
                     # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT
                     comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
@@ -2519,7 +2516,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     except:
                         available_width = 170*MM  # Fallback
                     
-                    # Prüfe ob Kommentar lang ist (>200 Wörter) für Page-Breaking
+                    # Prüfe ob Kommentar lang ist (>175 Wörter) für Page-Breaking
                     word_count = len(text_clean.split())
                     
                     comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]], 
@@ -2532,7 +2529,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         ('BOTTOMPADDING', (0, 0), (-1, -1), 3*MM),
                     ]))
                     
-                    # Bei langen Kommentaren (>200 Wörter): Tables brechen automatisch
+                    # Bei langen Kommentaren (>175 Wörter): Tables brechen automatisch
                             
                     elements.append(Spacer(1, 2*MM))
                     elements.append(comment_table)
