@@ -591,7 +591,7 @@ function getLocalizedFilenameBase() {
   }
 
   if (!filename.includes("_birkenbihl")) {
-  filename += "_birkenbihl";
+    filename += "_birkenbihl";
   }
 
   return filename;
@@ -618,7 +618,7 @@ function buildVariantSuffix(localizedBase) {
   let suffix = "";
   if (state.strength === "Normal") {
     suffix += "_Normal";
-    } else {
+  } else {
     const marker =
       state.strength === "Fett"
         ? isGreek
@@ -1010,9 +1010,9 @@ async function loadTexts() {
         if (savedDraft) {
           console.log("✅ Gespeicherter Draft-Text wiederhergestellt");
           el.draftText.innerHTML = addSpansToTags(savedDraft);
-      } else {
+        } else {
           el.draftText.innerHTML = addSpansToTags(text);
-      }
+        }
       }
       if (el.birkenbihlText) {
         el.birkenbihlText.innerHTML = addSpansToTags(text);
@@ -1238,8 +1238,8 @@ async function performRendering() {
         filename: data.filename,
         url: draftPdfUrl,
       });
-      } else {
-        el.draftStatus.innerHTML = `
+    } else {
+      el.draftStatus.innerHTML = `
           <div style="color: #059669; font-weight: bold;">
           ✓ Text gespeichert: ${displayName}
           </div>
@@ -1251,7 +1251,7 @@ async function performRendering() {
           </div>
         `;
       showDraftManualPlaceholder({ command: manualCommand });
-      }
+    }
 
     updatePdfView(true);
   } catch (e) {
@@ -1333,15 +1333,15 @@ function showTagConfigModal() {
       state.tagConfig = {};
     }
   }
-  
+
   // ESC-Taste schließt Dialog
   function escHandler(e) {
-    if (e.key === 'Escape' || e.key === 'Esc') {
+    if (e.key === "Escape" || e.key === "Esc") {
       hideTagConfigModal();
-      document.removeEventListener('keydown', escHandler);
+      document.removeEventListener("keydown", escHandler);
     }
   }
-  document.addEventListener('keydown', escHandler);
+  document.addEventListener("keydown", escHandler);
 
   // 1. Container für kleine Tabellen leeren
   const tablesContainer = document.getElementById("tag-config-tables");
@@ -1497,9 +1497,9 @@ function showTagConfigModal() {
 
   // 6. Modal anzeigen
   el.modal.style.display = "flex";
-  
+
   // Register modal for ESC key handler
-  if (el.modal && typeof window.setTagConfigOpen === 'function') {
+  if (el.modal && typeof window.setTagConfigOpen === "function") {
     window.setTagConfigOpen(el.modal);
   }
 }
@@ -1707,7 +1707,7 @@ function handleTableChange(event) {
     // WICHTIG: Für "hide" immer true/false setzen, nicht den String-Wert
     if (updateType === "hide") {
       if (isChecked) {
-        currentConfig.hide = true;  // Immer true, nicht "hide"
+        currentConfig.hide = true; // Immer true, nicht "hide"
       } else {
         delete currentConfig.hide;
       }
@@ -2119,7 +2119,7 @@ function togglePipesHidden() {
 function hideTagConfigModal() {
   if (el.modal) el.modal.style.display = "none";
   // Clear ESC key handler registration
-  if (typeof window.clearTagConfigOpen === 'function') {
+  if (typeof window.clearTagConfigOpen === "function") {
     window.clearTagConfigOpen();
   }
 }
@@ -2571,7 +2571,7 @@ async function loadWorkMeta() {
 
   // WICHTIG: Lade Werk-Metadaten aus dem Katalog (setzt strength, meterSupported, etc.)
   try {
-  await loadWorkMeta();
+    await loadWorkMeta();
   } catch (error) {
     console.error("❌ FEHLER beim Laden der Werk-Metadaten:", error);
     el.pageTitle.textContent = "Fehler beim Laden";
@@ -2585,7 +2585,7 @@ async function loadWorkMeta() {
 
   // Inhalte laden
   try {
-  await loadTexts();
+    await loadTexts();
   } catch (error) {
     console.error("❌ FEHLER beim Laden der Texte:", error);
   }
@@ -2594,7 +2594,7 @@ async function loadWorkMeta() {
 
   // Entwurfs-Text initialisieren
   try {
-  await initializeDraftText();
+    await initializeDraftText();
   } catch (error) {
     console.error("❌ FEHLER beim Initialisieren des Draft-Textes:", error);
   }
@@ -3088,13 +3088,15 @@ function debouncePdf(fn, ms) {
    hide the panel by setting style.display='none' and adding a 'hidden' class.
    This avoids errors if the exact DOM shape varies between builds.
    -------------------------------------------------------------------------- */
-(function(){
-  function tryCloseElement(el){
-    if(!el) return false;
+(function () {
+  function tryCloseElement(el) {
+    if (!el) return false;
     try {
       // If an explicit close button exists, click it (this will run the existing close logic)
-      const closeBtn = el.querySelector('.close, .btn-close, .tag-config-close, .close-button, .modal-close');
-      if(closeBtn){
+      const closeBtn = el.querySelector(
+        ".close, .btn-close, .tag-config-close, .close-button, .modal-close"
+      );
+      if (closeBtn) {
         // prefer built-in click behaviour
         closeBtn.click();
         return true;
@@ -3102,45 +3104,47 @@ function debouncePdf(fn, ms) {
 
       // If element is visible, hide it gracefully
       const style = window.getComputedStyle(el);
-      if(style && style.display !== 'none' && el.offsetParent !== null){
+      if (style && style.display !== "none" && el.offsetParent !== null) {
         // mark hidden for potential CSS
-        el.classList.add('hidden');
-        el.style.display = 'none';
+        el.classList.add("hidden");
+        el.style.display = "none";
         // If there is an ARIA attribute, keep it consistent
-        try { el.setAttribute('aria-hidden','true'); } catch(e){}
+        try {
+          el.setAttribute("aria-hidden", "true");
+        } catch (e) {}
         return true;
       }
-    } catch(e) {
+    } catch (e) {
       // swallow errors - we don't want ESC to break anything
-      console.error('tryCloseElement error', e);
+      console.error("tryCloseElement error", e);
     }
     return false;
   }
 
-  function closeTagConfigOnEsc(ev){
+  function closeTagConfigOnEsc(ev) {
     // only handle plain Escape (not when user focuses an input while pressing Esc for other reasons)
-    if(!ev || (ev.key !== 'Escape' && ev.key !== 'Esc')) return;
+    if (!ev || (ev.key !== "Escape" && ev.key !== "Esc")) return;
 
     // Candidate selectors for your tag/config UI. This list is intentionally broad.
     const selectors = [
-      '#tag-config-modal',
-      '#tag-config',
-      '#renderingModal',
-      '.tag-config-modal',
-      '.tag-config',
-      '.tag-config-panel',
-      '.config-table',
-      '.tag-config-drawer',
-      '.panel-tag-config',
-      '[data-tag-config]',
-      '[data-tag-config-panel]',
-      '.tag-configuration'
+      "#tag-config-modal",
+      "#tag-config",
+      "#renderingModal",
+      ".tag-config-modal",
+      ".tag-config",
+      ".tag-config-panel",
+      ".config-table",
+      ".tag-config-drawer",
+      ".panel-tag-config",
+      "[data-tag-config]",
+      "[data-tag-config-panel]",
+      ".tag-configuration",
     ];
 
     // Try each selector and attempt to close the first visible one
-    for(const sel of selectors){
+    for (const sel of selectors) {
       const el = document.querySelector(sel);
-      if(el && tryCloseElement(el)){
+      if (el && tryCloseElement(el)) {
         ev.preventDefault();
         ev.stopPropagation();
         return;
@@ -3148,12 +3152,19 @@ function debouncePdf(fn, ms) {
     }
 
     // If nothing found above: try to find elements that are visible and likely settings panels
-    const fallbackCandidates = Array.from(document.querySelectorAll('.modal, .drawer, .panel, .overlay'));
-    for(const el of fallbackCandidates){
+    const fallbackCandidates = Array.from(
+      document.querySelectorAll(".modal, .drawer, .panel, .overlay")
+    );
+    for (const el of fallbackCandidates) {
       // Heuristic: look for nodes that contain words like "tag" or "config"
-      const txt = (el.textContent || '').toLowerCase();
-      if(txt.includes('tag') || txt.includes('konfig') || txt.includes('config') || txt.includes('configuration')){
-        if(tryCloseElement(el)){
+      const txt = (el.textContent || "").toLowerCase();
+      if (
+        txt.includes("tag") ||
+        txt.includes("konfig") ||
+        txt.includes("config") ||
+        txt.includes("configuration")
+      ) {
+        if (tryCloseElement(el)) {
           ev.preventDefault();
           ev.stopPropagation();
           return;
@@ -3162,21 +3173,30 @@ function debouncePdf(fn, ms) {
     }
 
     // Last resort: if a dedicated global close element exists, click it.
-    const globalClose = document.querySelector('.tag-config-global-close, #tag-config-close, .close-tag-config');
-    if(globalClose){
-      try { globalClose.click(); ev.preventDefault(); ev.stopPropagation(); } catch(e){}
+    const globalClose = document.querySelector(
+      ".tag-config-global-close, #tag-config-close, .close-tag-config"
+    );
+    if (globalClose) {
+      try {
+        globalClose.click();
+        ev.preventDefault();
+        ev.stopPropagation();
+      } catch (e) {}
     }
   }
 
   // Attach on DOMContentLoaded so we won't run too early
-  document.addEventListener('DOMContentLoaded', function(){
+  document.addEventListener("DOMContentLoaded", function () {
     // Listen on keydown globally to allow ESC from anywhere
-    window.addEventListener('keydown', closeTagConfigOnEsc, {capture: false});
+    window.addEventListener("keydown", closeTagConfigOnEsc, { capture: false });
   });
 
   // Also attach immediately in case work.js is loaded after DOMContentLoaded
-  if(document.readyState === 'interactive' || document.readyState === 'complete'){
-    window.addEventListener('keydown', closeTagConfigOnEsc, {capture: false});
+  if (
+    document.readyState === "interactive" ||
+    document.readyState === "complete"
+  ) {
+    window.addEventListener("keydown", closeTagConfigOnEsc, { capture: false });
   }
 })();
 
@@ -3187,14 +3207,18 @@ function debouncePdf(fn, ms) {
    Then ESC will close that element quickly via window.closeTagConfig()
    This is more robust than selector heuristics.
  ----------------------------------------------------------------------------- */
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   // only add once
   if (!window.setTagConfigOpen) {
     window._tagConfigOpen = null;
 
     // Register the currently open panel (call from your "open panel" logic)
     window.setTagConfigOpen = function (panelElement) {
-      try { window._tagConfigOpen = panelElement || null; } catch (e) { window._tagConfigOpen = null; }
+      try {
+        window._tagConfigOpen = panelElement || null;
+      } catch (e) {
+        window._tagConfigOpen = null;
+      }
     };
 
     // Clear registration (call from your "close panel" logic)
@@ -3210,10 +3234,16 @@ if (typeof window !== 'undefined') {
         // prefer an explicit close button if present
         var closeBtn = null;
         if (el.querySelector) {
-          closeBtn = el.querySelector('.close, .btn-close, .tag-config-close, .close-button, .modal-close, [data-close]');
+          closeBtn = el.querySelector(
+            ".close, .btn-close, .tag-config-close, .close-button, .modal-close, [data-close]"
+          );
         }
         if (closeBtn) {
-          try { closeBtn.click(); } catch (e) { /* fall through to hide fallback */ }
+          try {
+            closeBtn.click();
+          } catch (e) {
+            /* fall through to hide fallback */
+          }
           // assume click closed it; clear the handle
           window._tagConfigOpen = null;
           return true;
@@ -3221,14 +3251,16 @@ if (typeof window !== 'undefined') {
 
         // fallback: hide gracefully
         try {
-          el.classList.add('hidden');
-          el.style.display = 'none';
-          el.setAttribute && el.setAttribute('aria-hidden', 'true');
-        } catch (e) { /* ignore */ }
+          el.classList.add("hidden");
+          el.style.display = "none";
+          el.setAttribute && el.setAttribute("aria-hidden", "true");
+        } catch (e) {
+          /* ignore */
+        }
         window._tagConfigOpen = null;
         return true;
       } catch (e) {
-        console.error('window.closeTagConfig error', e);
+        console.error("window.closeTagConfig error", e);
         window._tagConfigOpen = null;
         return false;
       }
@@ -3240,18 +3272,29 @@ if (typeof window !== 'undefined') {
    If a panel has been registered via setTagConfigOpen, prefer closing that
    element before running other heuristics. This listener is lightweight
    and only prevents event propagation when it actually closed something. */
-if (typeof window !== 'undefined') {
-  window.addEventListener && window.addEventListener('keydown', function (ev) {
-    if (ev.key !== 'Escape' && ev.key !== 'Esc') return;
-    try {
-      if (typeof window.closeTagConfig === 'function') {
-        var closed = false;
-        try { closed = window.closeTagConfig(); } catch (e) { closed = false; }
-        if (closed) {
-          ev.preventDefault();
-          ev.stopPropagation();
+if (typeof window !== "undefined") {
+  window.addEventListener &&
+    window.addEventListener(
+      "keydown",
+      function (ev) {
+        if (ev.key !== "Escape" && ev.key !== "Esc") return;
+        try {
+          if (typeof window.closeTagConfig === "function") {
+            var closed = false;
+            try {
+              closed = window.closeTagConfig();
+            } catch (e) {
+              closed = false;
+            }
+            if (closed) {
+              ev.preventDefault();
+              ev.stopPropagation();
+            }
+          }
+        } catch (e) {
+          /* swallow */
         }
-      }
-    } catch (e) { /* swallow */ }
-  }, { capture: false });
+      },
+      { capture: false }
+    );
 }
