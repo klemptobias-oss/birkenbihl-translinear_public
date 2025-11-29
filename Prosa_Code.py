@@ -74,7 +74,7 @@ SPEAKER_COL_MIN_MM = 3.0   # Mindestbreite für Sprecher-Spalte
 SPEAKER_GAP_MM = PARA_GAP_MM   # keep same gap as normal paragraph/§ texts
 
 CELL_PAD_LR_PT = 0.6       # Innenabstand links/rechts in Zellen (stark reduziert für kompaktere TAG-PDFs)
-SAFE_EPS_PT = 1.5          # Sicherheitsabstand für Messungen (erhöht von 0.8 auf 1.5 für bessere Lesbarkeit bei Sprecher-Texten)
+SAFE_EPS_PT = 1.6          # Sicherheitsabstand für Messungen (erhöht von 1.5 auf 1.6 für beste Lesbarkeit bei Sprecher-Texten)
 
 # ----------------------- TAG-KONFIGURATION -----------------------
 # Einstellungen für Tag-Darstellung
@@ -1309,7 +1309,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             return w_with_remaining_tags + max(size * 0.03, 0.8)  # Puffer für Tag-PDFs
         else:
             # Keine Tags vorhanden → NoTag-PDF, verwende gemessene Breite mit größerem Puffer
-            return w_with_remaining_tags + max(size * 0.15, 2.5)  # Größerer Puffer für NoTag NoTrans
+            # ERHÖHT: Besonders wichtig bei Wörtern, wo Tags mit (HideTags) versteckt wurden
+            return w_with_remaining_tags + max(size * 0.18, 2.8)  # Erhöht von 0.15/2.5 auf 0.18/2.8
     
     def col_width(k:int) -> float:
         """
@@ -1971,7 +1972,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 if word_count > 200:
                     # Langer Kommentar: Erlaube Seitenumbrüche
                     p = Paragraph(html.escape(text_clean), comment_style_simple)
-                    p.keepWithNext = False  # Darf von nachfolgendem Element getrennt werden
+                    # Kein keepWithNext für lange Kommentare
                     elements_list.append(Spacer(1, 2*mm))
                     elements_list.append(p)
                     elements_list.append(Spacer(1, 2*mm))
@@ -2138,11 +2139,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             ]))
             
             # Bei langen Kommentaren (>200 Wörter): Erlaube Seitenumbrüche
-            if word_count > 200:
-                comment_table.hAlign = 'LEFT'
-                # Deaktiviere keepTogether für lange Kommentare
-                if hasattr(comment_table, 'keepWithNext'):
-                    comment_table.keepWithNext = False
+            # (Keine spezielle Behandlung nötig, Tables brechen automatisch)
                     
             elements.append(Spacer(1, 2*mm))
             elements.append(comment_table)

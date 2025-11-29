@@ -2532,11 +2532,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         ('BOTTOMPADDING', (0, 0), (-1, -1), 3*MM),
                     ]))
                     
-                    # Bei langen Kommentaren (>200 Wörter): Erlaube Seitenumbrüche
-                    if word_count > 200:
-                        comment_table.hAlign = 'LEFT'
-                        if hasattr(comment_table, 'keepWithNext'):
-                            comment_table.keepWithNext = False
+                    # Bei langen Kommentaren (>200 Wörter): Tables brechen automatisch
                             
                     elements.append(Spacer(1, 2*MM))
                     elements.append(comment_table)
