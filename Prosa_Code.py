@@ -1198,10 +1198,12 @@ def group_pairs_into_flows(blocks):
             current_para_label = b['label']
             continue
 
-        # NEU: Kommentare → NICHT flushen, Fließtext beibehalten
+        # NEU: Kommentare → VORHER flushen, damit Text VOR Kommentar kommt!
         if t == 'comment':
-            # Kommentare werden direkt zu flows hinzugefügt, OHNE flush() aufzurufen
-            # Das beendet den Fließtext nicht - nach dem Kommentar wird der Text fortgesetzt
+            # KRITISCH: Vorherigen Text-Buffer flushen, BEVOR Kommentar eingefügt wird
+            # Das stellt sicher, dass der Kommentar NACH dem Text erscheint, zu dem er gehört
+            flush()
+            # Kommentar als separaten Block hinzufügen
             flows.append(b)
             continue
 
