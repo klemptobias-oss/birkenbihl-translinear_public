@@ -1559,17 +1559,9 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         slice_en = en[i:j]  # NEU: Englische Zeile
         slice_start = i  # NEU: Start-Index für tok_idx-Berechnung
 
-        # KRITISCH: Prüfe ob alle Zeilen leer sind (z.B. nur Stephanus-Paginierungen)
-        # Dies kann passieren wenn ALL translations hidden sind via TAG_CONFIG
-        has_gr_content = any(t and t.strip() for t in slice_gr)
-        has_de_content = any(t and t.strip() for t in slice_de)
-        has_en_content = any(t and t.strip() for t in slice_en)
-        
-        if not has_gr_content and not has_de_content and not has_en_content:
-            # Keine Inhalte in diesem Slice, überspringe Tabelle komplett
-            i = j
-            first_slice = False
-            continue
+        # KRITISCH: Content-Check MUSS NACH Stephanus-Filterung kommen!
+        # Die Filterung passiert in Paragraph-Erstellung unten, aber wir müssen hier schon prüfen
+        # ob nach Filterung noch Content übrig bleibt
 
         # linke Zusatzspalten
         sp_cell_gr = Paragraph(xml_escape(speaker_display), style_speaker) if (first_slice and speaker_width_pt>0 and speaker_display) else Paragraph('', style_speaker)
@@ -1609,6 +1601,32 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # Für DE und EN: Ersetze | durch Leerzeichen, wenn hide_pipes aktiviert ist
         de_cells = [Paragraph(cell_markup(process_translation_token(t), False, tok_idx=None), token_de_style) if t else Paragraph('', token_de_style) for t in slice_de]
         en_cells = [Paragraph(cell_markup(process_translation_token(t), False, tok_idx=None), token_de_style) if t else Paragraph('', token_de_style) for t in slice_en]  # NEU: Englische Zellen
+
+        # KRITISCH: Content-Check NACH cell_markup (wo Stephanus-Filterung passiert)
+        # Prüfe ob alle Token-Zellen leer/unsichtbar sind
+        # WICHTIG: Die Filterung passiert in cell_markup(), also prüfen wir die ORIGINALEN Tokens
+        # ABER mit dem gleichen Filter wie cell_markup verwendet
+        def has_visible_content(token):
+            """Prüft ob Token nach cell_markup() sichtbaren Content hat"""
+            if not token or not token.strip():
+                return False
+            # cell_markup() ruft _strip_tags_from_token() und format_token_markup() auf
+            # Simuliere die gleiche Logik hier
+            cleaned = _strip_tags_from_token(token, block=block, tok_idx=None, tag_mode=tag_mode) if token else token
+            # Nach Tag-Stripping und Markup-Formatierung, prüfe ob noch Text übrig ist
+            if cleaned and cleaned.strip() and cleaned.strip() not in ['', '<i></i>', '<b></b>']:
+                return True
+            return False
+        
+        has_gr_visible = any(has_visible_content(t) for t in slice_gr)
+        has_de_visible = any(has_visible_content(process_translation_token(t)) for t in slice_de)
+        has_en_visible = any(has_visible_content(process_translation_token(t)) for t in slice_en)
+        
+        if not has_gr_visible and not has_de_visible and not has_en_visible:
+            # Alle Zeilen leer nach Filterung - überspringe dieses Slice komplett
+            i = j
+            first_slice = False
+            continue
 
         row_gr, row_de, row_en, colWidths = [], [], [], []  # NEU: row_en
         # WICHTIG: Para/Speaker-Spalten IMMER hinzufügen (auch wenn leer), damit alle Zeilen am gleichen Ort beginnen
@@ -2015,21 +2033,26 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     leftIndent=3*mm, rightIndent=3*mm,
                     spaceBefore=3, spaceAfter=3,
                     textColor=colors.Color(0.3, 0.3, 0.3), italic=True,
-                    backColor=colors.Color(0.95, 0.95, 0.95))  # GRAU HINTERLEGT
+                    backColor=colors.Color(0.95, 0.95, 0.95),  # GRAU HINTERLEGT
+                    splitLongWords=True,  # KRITISCH: Erlaube Wortumbrüche für lange Kommentare
+                    wordWrap='LTR')  # WICHTIG: Aktiviere Word-Wrapping
                 
                 # Prüfe ob Kommentar lang ist (>175 Wörter) für Page-Breaking
                 word_count = len(text_clean.split())
+                
+                # WICHTIG: Lange Kommentare OHNE KeepTogether rendern (damit sie umbrechen können)
+                p = Paragraph(html.escape(text_clean), comment_style_simple)
+                
                 if word_count > MAX_COMMENT_WORDS:
-                    # Langer Kommentar: Erlaube Seitenumbrüche
-                    p = Paragraph(html.escape(text_clean), comment_style_simple)
-                    # Kein keepWithNext für lange Kommentare
+                    # Langer Kommentar: Direkt hinzufügen (KEIN KeepTogether!)
+                    # So kann ReportLab den Kommentar über mehrere Seiten verteilen
                     elements_list.append(Spacer(1, 2*mm))
                     elements_list.append(p)
                     elements_list.append(Spacer(1, 2*mm))
                 else:
-                    # Kurzer Kommentar: Bleibt zusammen
+                    # Kurzer Kommentar: Mit KeepTogether (bleibt auf einer Seite)
                     elements_list.append(Spacer(1, 2*mm))
-                    elements_list.append(Paragraph(html.escape(text_clean), comment_style_simple))
+                    elements_list.append(KeepTogether([p]))
                     elements_list.append(Spacer(1, 2*mm))
                     
                 print(f"Prosa_Code: render_block_comments - ADDED comment paragraph ({word_count} words): '{text_clean[:50]}...'", flush=True)

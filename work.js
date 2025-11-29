@@ -599,6 +599,14 @@ function getLocalizedFilenameBase() {
 
 function normalizeReleaseBase(base) {
   if (!base) return null;
+
+  // KRITISCH: Prüfe ob base bereits "_draft_translinear_DRAFT_TIMESTAMP" enthält
+  // Wenn ja, NICHT normalisieren (ist bereits vollständiger Draft-Name)
+  if (base.includes("_draft_translinear_DRAFT_")) {
+    // Draft-Namen nicht normalisieren - behalten wie sie sind
+    return base.includes("_birkenbihl") ? base : `${base}_birkenbihl`;
+  }
+
   // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
   let normalized = base.replace(
     /_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g,
