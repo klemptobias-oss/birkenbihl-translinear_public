@@ -2564,3 +2564,5 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
 
             i += 1; continue
 
+    # PDF erzeugen
+    doc.build(elements)

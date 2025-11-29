@@ -1210,7 +1210,7 @@ def group_pairs_into_flows(blocks):
 
     flush()
     # Meta: merken, ob überhaupt Sprecher existieren
-    flows.append({'type':'_meta', 'any_speaker': any_speaker})
+    flows.append({'type':'_meta', 'any_speaker': any_speaker_seen})
     return flows
 
 # ----------------------- Tabellenbau -----------------------
