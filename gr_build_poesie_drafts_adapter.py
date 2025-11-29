@@ -36,25 +36,6 @@ def run_one(input_path: Path) -> None:
 
     tag_config = None
 
-    # Ableitung des relativen Pfads unterhalb von texte_drafts
-    try:
-        parts = input_path.resolve().parts
-        texte_drafts_index = parts.index("texte_drafts")
-        relative_parts = list(parts[texte_drafts_index + 1 : -1])
-        if not relative_parts:
-            raise ValueError("leerer relativer Pfad")
-    except (ValueError, IndexError):
-        relative_parts = ["unknown", "poesie", "Unsortiert", "Unbenannt"]
-    
-    relative_path = Path(*relative_parts)
-    target_dir = ROOT / "pdf_drafts" / relative_path
-    target_dir.mkdir(parents=True, exist_ok=True)
-    
-    # Erstelle .gitkeep Datei um sicherzustellen, dass der Ordner bei Git gepusht wird
-    gitkeep_file = target_dir / ".gitkeep"
-    if not gitkeep_file.exists():
-        gitkeep_file.write_text("")
-
     # Extrahiere den Basisnamen der Eingabedatei (ohne .txt)
     input_stem = input_path.stem
     
@@ -62,6 +43,26 @@ def run_one(input_path: Path) -> None:
     text_content = input_path.read_text(encoding="utf-8")
     metadata = extract_metadata_sections(text_content)
     print(f"→ Extrahierte Metadaten: {list(metadata.keys())}")
+    
+    # KRITISCH: Baue Verzeichnisstruktur aus Metadaten (wie im Frontend erwartet)
+    # Frontend erwartet: pdf_drafts/griechisch/poesie/Epos/Homer/Ilias/
+    # Alte Struktur war: pdf_drafts/poesie_drafts/Homer/Ilias/
+    sprache = metadata.get("SPRACHE", "").strip().lower() or "griechisch"
+    gattung = metadata.get("GATTUNG", "").strip().lower() or "poesie"
+    kategorie = metadata.get("KATEGORIE", "").strip() or "Unsortiert"
+    autor = metadata.get("AUTOR", "").strip() or "Unbekannt"
+    werk = metadata.get("WERK", "").strip() or input_path.stem.split("_")[0]
+    
+    # Baue relativen Pfad (wie Frontend erwartet)
+    relative_path = Path(sprache) / gattung / kategorie / autor / werk
+    target_dir = ROOT / "pdf_drafts" / relative_path
+    target_dir.mkdir(parents=True, exist_ok=True)
+    print(f"→ Zielverzeichnis: {target_dir}")
+    
+    # Erstelle .gitkeep Datei um sicherzustellen, dass der Ordner bei Git gepusht wird
+    gitkeep_file = target_dir / ".gitkeep"
+    if not gitkeep_file.exists():
+        gitkeep_file.write_text("")
     
     release_base = normalize_release_base(metadata.get("RELEASE_BASE", ""))
     print(f"→ Release Base: {release_base}")

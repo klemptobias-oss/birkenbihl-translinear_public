@@ -1628,7 +1628,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         de = de_tokens[:] + [''] * (cols - len(de_tokens))
         en = en_tokens[:] + [''] * (cols - len(en_tokens))
 
-    # Spaltenbreiten berechnen - WICHTIG: Prüfe ZUERST ob Tags entfernt wurden!
+    # Spaltenbreiten berechnen - KRITISCH: Bei NO_TAGS muss Breite OHNE Tags berechnet werden!
     widths = []
     for k in range(cols):
         gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
@@ -1636,28 +1636,14 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         en_token = en[k] if (k < len(en) and en[k]) else ''  # WICHTIG: Hier definieren!
         
         if gr_token:
-            # KRITISCH: Prüfe ob dieses Token Tags HATTE (die jetzt entfernt wurden)
-            # Wenn ja, verwende MINIMALE Spaltenbreite (wie bei HideTags)
-            token_meta = block.get('token_meta', []) if block else []
-            meta = token_meta[k] if k < len(token_meta) else {}
-            had_tags_before = meta.get('had_tags_before', False)
+            # KRITISCH: Prüfe ob dieses Token Tags HAT (die bei NO_TAGS entfernt werden)
+            # Bei NO_TAGS muss die Breite OHNE Tags berechnet werden!
+            tags_in_token = RE_TAG.findall(gr_token)
             
-            # Prüfe ob Tags JETZT NOCH im Token vorhanden sind
-            tags_now = RE_TAG.findall(gr_token)
-            
-            if tags_now:
-                # Tags vorhanden → Tag-PDF, normale Breitenberechnung
-                w_gr = measure_token_width_with_visibility_poesie(
-                    gr_token, 
-                    font=token_gr_style.fontName, 
-                    size=token_gr_style.fontSize, 
-                    cfg=eff_cfg,
-                    is_greek_row=True,
-                    tag_config=tag_config
-                )
-            elif had_tags_before:
-                # Tags wurden entfernt → NoTag-PDF, MINIMALE Breite!
-                # Entferne ALLE Markup-Zeichen für Breitenberechnung
+            # ENTSCHEIDUNG: Basierend auf tag_mode UND Vorhandensein von Tags
+            if tag_mode == "NO_TAGS" and tags_in_token:
+                # FALL 1: NoTag-PDF UND Token HAT Tags → Tags werden entfernt → MINIMALE Breite!
+                # Entferne ALLE Tags und Markup-Zeichen für Breitenberechnung
                 core_text = RE_TAG_STRIP.sub('', gr_token).strip()
                 for color_char in ['#', '+', '-', '§', '$', '~', '*']:
                     core_text = core_text.replace(color_char, '')
@@ -1667,10 +1653,22 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 w_gr = visible_measure_token(core_text, font=token_gr_style.fontName, 
                                              size=token_gr_style.fontSize, cfg=eff_cfg, 
                                              is_greek_row=True)
-                # MINIMALER Puffer (wie bei HideTags)
+                # MINIMALER Puffer (wie bei HideTags im manuellen Text)
                 w_gr += max(token_gr_style.fontSize * 0.01, 0.3)
+                
+            elif tags_in_token and tag_mode == "TAGS":
+                # FALL 2: Tag-PDF UND Token HAT Tags → Tags werden angezeigt → normale Breite
+                w_gr = measure_token_width_with_visibility_poesie(
+                    gr_token, 
+                    font=token_gr_style.fontName, 
+                    size=token_gr_style.fontSize, 
+                    cfg=eff_cfg,
+                    is_greek_row=True,
+                    tag_config=tag_config
+                )
+                
             else:
-                # Token hatte nie Tags → normale Berechnung
+                # FALL 3: Token HAT KEINE Tags (oder andere Fälle) → normale Berechnung
                 w_gr = visible_measure_token(gr_token, font=token_gr_style.fontName, 
                                              size=token_gr_style.fontSize, cfg=eff_cfg, 
                                              is_greek_row=True)

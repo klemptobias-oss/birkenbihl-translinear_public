@@ -2437,9 +2437,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             logger.debug("Prosa_Code: flow block detected, line_num=%s", b.get('line_num'))
             
-            # NEU: Kommentare aus block['comments'] rendern (auch bei flow-Blöcken)
-            render_block_comments(b, elements, doc)
-            
             # WICHTIG: build_flow_tables DIREKT aufrufen
             try:
                 logger.debug("Prosa_Code: calling build_flow_tables() with block keys=%s", list(b.keys()))
@@ -2461,6 +2458,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 # Abstand nach dem flow-Block
                 elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
                 
+                # KRITISCH: Kommentare NACH den Tabellen rendern, damit sie nach dem Text erscheinen!
+                render_block_comments(b, elements, doc)
+                
             except Exception as e:
                 logger.exception("Prosa_Code: build_flow_tables() ERROR: %s", e)
                 # Fallback: Zeige Fehlermeldung im PDF
@@ -2480,9 +2480,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             para_label = b.get('para_label', '')
             speaker = b.get('speaker', '')
             
-            # NEU: Kommentare aus block['comments'] rendern (VOR den Tabellen, damit sie im Fließtext erscheinen)
-            render_block_comments(b, elements, doc)
-            
             # Erstelle eine Pseudo-Flow-Struktur für eine einzelne Zeile
             pseudo_flow = {
                 'type': 'flow',
@@ -2498,6 +2495,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             pair_tables = build_flow_tables(pseudo_flow)
             if pair_tables:
                 elements.append(KeepTogether(pair_tables))
+            
+            # KRITISCH: Kommentare NACH den Tabellen rendern, damit sie nach dem Text erscheinen!
+            render_block_comments(b, elements, doc)
             
             idx += 1
             continue

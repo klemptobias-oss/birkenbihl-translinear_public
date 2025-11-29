@@ -443,6 +443,9 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,A
         
         # Kommentare in pair/flow Blöcken extrahieren
         if block_type in ('pair', 'flow'):
+            # Sammle Kommentare aus diesem Block
+            inline_comments = []
+            
             # Prüfe gr_tokens auf Kommentare
             gr_tokens = block.get('gr_tokens', [])
             if isinstance(gr_tokens, list):
@@ -464,10 +467,15 @@ def discover_and_attach_comments(blocks: List[Dict[str,Any]]) -> List[Dict[str,A
                                 'content': comment_text,
                                 'original_line': f"({line_ref}k) {comment_text}"
                             }
-                            result_blocks.append(comment_block)
+                            inline_comments.append(comment_block)
                             comments_found += 1
             
+            # KRITISCH: Füge pair/flow-Block ZUERST hinzu, DANN die Kommentare!
             result_blocks.append(block)
+            
+            # Füge gesammelte Inline-Kommentare NACH dem Block hinzu
+            if inline_comments:
+                result_blocks.extend(inline_comments)
         
         # Vollständige Kommentar-Zeilen: "(123k) Text"
         elif block_type == 'comment':
