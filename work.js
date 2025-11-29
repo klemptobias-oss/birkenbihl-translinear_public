@@ -670,11 +670,9 @@ function buildDraftPdfFilename() {
     // z.B. "agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251129_203821.txt"
     let filebase = state.pendingDraftFilename.replace(/\.txt$/, "");
 
-    // KRITISCH: Normalisiere Sprachcodes ZUERST (wie GitHub Actions macht)
-    // _gr_de_en_ → _gr_de_ (2-sprachig anzeigen, obwohl 3-sprachig im Dateinamen)
-    // _lat_de_en_ → _lat_de_
-    filebase = filebase.replace(/_gr_de_en_/, "_gr_de_");
-    filebase = filebase.replace(/_lat_de_en_/, "_lat_de_");
+    // KEINE Normalisierung mehr! GitHub Actions erstellt PDFs mit dem ORIGINALEN Dateinamen
+    // Die PDFs heißen: amphitruo_lat_de_en_stil1 (NICHT lat_de_stil1)
+    // Die PDFs heißen: agamemnon_gr_de_stil1 (kommt schon so vom Upload)
 
     // DANN: PDFs haben das meta_prefix DAVOR!
     // Beispiel: PDF = "GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_stil1_birkenbihl_draft_..."

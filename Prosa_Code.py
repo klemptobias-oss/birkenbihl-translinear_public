@@ -1683,6 +1683,9 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
 
         colWidths += token_slice_w
 
+        # DEFENSIVE: Prüfe auf None-Werte in colWidths
+        colWidths = [max(w or 0.1, 0.1) for w in colWidths]
+
         # SICHERHEIT: Prüfe, ob die Table-Breite größer ist als die verfügbare Breite
         # Wenn ja, skaliere die colWidths, um negative Breiten zu vermeiden
         total_table_width = sum(colWidths)
@@ -1690,10 +1693,14 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         padding_overhead = len(colWidths) * 2 * CELL_PAD_LR_PT
         max_available_width = avail_w - padding_overhead
         
+        # DEFENSIVE: Sicherstellen dass max_available_width positiv ist
+        if max_available_width <= 0:
+            max_available_width = avail_w * 0.9  # Fallback: 90% der verfügbaren Breite
+        
         if total_table_width > max_available_width and max_available_width > 0:
             # Skaliere alle colWidths proportional
             scale_factor = max_available_width / total_table_width
-            colWidths = [w * scale_factor for w in colWidths]
+            colWidths = [max(w * scale_factor, 0.1) for w in colWidths]  # Min 0.1 pro Spalte
             # Warnung unterdrückt: Skalierung erfolgt automatisch, keine Log-Flut nötig
             # (Table-Breite wird automatisch angepasst, daher ist diese Warnung redundant)
 
@@ -2115,17 +2122,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     ('VALIGN', (0, 0), (-1, -1), 'TOP'),
                 ]))
                 
-                if word_count > MAX_COMMENT_WORDS:
-                    # Langer Kommentar: Direkt hinzufügen (KEIN KeepTogether!)
-                    # Table kann über Seiten umbrechen
-                    elements_list.append(Spacer(1, 2*mm))
-                    elements_list.append(comment_table)
-                    elements_list.append(Spacer(1, 2*mm))
-                else:
-                    # Kurzer Kommentar: Mit KeepTogether (bleibt auf einer Seite)
-                    elements_list.append(Spacer(1, 2*mm))
-                    elements_list.append(KeepTogether([comment_table]))
-                    elements_list.append(Spacer(1, 2*mm))
+                # ALLE Kommentare ohne KeepTogether hinzufügen
+                # (Table kann über Seiten umbrechen, wenn Inhalt zu lang)
+                elements_list.append(Spacer(1, 2*mm))
+                elements_list.append(comment_table)
+                elements_list.append(Spacer(1, 2*mm))
                     
                 print(f"Prosa_Code: render_block_comments - ADDED comment paragraph ({word_count} words): '{text_clean[:50]}...'", flush=True)
                 added_count += 1
