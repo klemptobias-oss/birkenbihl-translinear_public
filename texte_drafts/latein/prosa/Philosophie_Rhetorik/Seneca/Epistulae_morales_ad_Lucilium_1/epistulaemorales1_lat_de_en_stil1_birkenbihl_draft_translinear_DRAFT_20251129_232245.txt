@@ -1,0 +1,1533 @@
+<!-- RELEASE_BASE:LAT_prosa_Philosophie_Rhetorik_Seneca_Epistulae_morales_ad_Lucilium_1__epistulaemorales1_lat_de_stil1_birkenbihl -->
+<!-- TAG_CONFIG:{"nomen":{"color":"red"},"nomen_N":{"color":"red","placement":"sup"},"nomen_G":{"color":"red","placement":"sup"},"nomen_D":{"color":"red","placement":"sup"},"nomen_A":{"color":"red","placement":"sup"},"nomen_Abl":{"color":"red","placement":"sup"},"nomen_V":{"color":"red","placement":"sup"},"verb":{"color":"green"},"verb_Pra":{"color":"green","placement":"sub"},"verb_Imp":{"color":"green","placement":"sub"},"verb_Per":{"color":"green","placement":"sub"},"verb_Plq":{"color":"green","placement":"sub"},"verb_Fu1":{"color":"green","placement":"sub"},"verb_Fu2":{"color":"green","placement":"sub"},"verb_Akt":{"color":"green","placement":"sub"},"verb_Pas":{"color":"green","placement":"sub"},"verb_Inf":{"color":"green","placement":"sub"},"verb_Knj":{"color":"green","placement":"sub"},"verb_Imv":{"color":"green","placement":"sub"},"partizip":{"color":"violett"},"partizip_Pra":{"color":"violett","placement":"sub"},"partizip_Per":{"color":"violett","placement":"sub"},"partizip_Fu1":{"color":"violett","placement":"sub"},"partizip_N":{"color":"violett","placement":"sup"},"partizip_G":{"color":"violett","placement":"sup"},"partizip_D":{"color":"violett","placement":"sup"},"partizip_A":{"color":"violett","placement":"sup"},"partizip_Abl":{"color":"violett","placement":"sup"},"partizip_V":{"color":"violett","placement":"sup"},"partizip_Akt":{"color":"violett","placement":"sub"},"partizip_Pas":{"color":"violett","placement":"sub"},"adjektiv":{"color":"blue","placement":"sup"},"adjektiv_N":{"color":"blue","placement":"sup"},"adjektiv_G":{"color":"blue","placement":"sup"},"adjektiv_D":{"color":"blue","placement":"sup"},"adjektiv_A":{"color":"blue","placement":"sup"},"adjektiv_Abl":{"color":"blue","placement":"sup"},"adjektiv_V":{"color":"blue","placement":"sup"},"adjektiv_Kmp":{"color":"blue","placement":"sup"},"adjektiv_Sup":{"color":"blue","placement":"sup"},"gerundium":{"color":"violett","placement":"sub"},"gerundium_G":{"color":"violett","placement":"sup"},"gerundium_D":{"color":"violett","placement":"sup"},"gerundium_A":{"color":"violett","placement":"sup"},"gerundium_Abl":{"color":"violett","placement":"sup"},"gerundivum":{"color":"violett","placement":"sub"},"gerundivum_N":{"color":"violett","placement":"sup"},"gerundivum_G":{"color":"violett","placement":"sup"},"gerundivum_D":{"color":"violett","placement":"sup"},"gerundivum_A":{"color":"violett","placement":"sup"},"gerundivum_Abl":{"color":"violett","placement":"sup"},"gerundivum_V":{"color":"violett","placement":"sup"},"supinum":{"color":"violett","placement":"sub"},"supinum_A":{"color":"violett","placement":"sup"},"supinum_Abl":{"color":"violett","placement":"sup"},"adverb":{"placement":"sup"},"adverb_Kmp":{"placement":"sup"},"adverb_Sup":{"placement":"sup"},"pronomen":{"placement":"sub"},"pronomen_N":{"placement":"sup"},"pronomen_G":{"placement":"sup"},"pronomen_D":{"placement":"sup"},"pronomen_A":{"placement":"sup"},"pronomen_Abl":{"placement":"sup"},"prp":{"placement":"sup"},"kon":{"placement":"sup"},"pt":{"placement":"sup"},"ij":{"placement":"sup"}} -->
+<!-- VERSMASS:false -->
+<!-- METER_MODE:without -->
+<!-- HIDE_PIPES:true -->
+==== Epistulae morales ad Lucilium 1 ====
+=== Brief 1 ===
+= § 1 =
+(4) Ita(Adv) fac(Imv)(Akt), mi(Adj)(V) Lucili(V); vindica(Imv)(Akt) te(Pr)(A)(HideTrans) tibi(Pr)(D)(HideTrans), et(Kon) tempus(A), quod(Pr)(A)(HideTrans)
+(4) so mach, mein Lucilius; fordere|zurück dich für|dich, und Zeit, das
+(5) adhuc(Adv)(HideTrans) aut(Kon)(HideTrans) auferebatur(Imp)(Pas) aut(Kon)(HideTrans) subripiebatur(Imp)(Pas) aut(Kon)(HideTrans) excidebat(Imp)(Akt), collige(Imv)(Akt) et(Kon)(HideTrans) serva(Imv)(Akt).
+(5) bisher oder wurde|weggenommen oder wurde|unter|entwendet oder fiel|heraus, sammle und bewahre.
+(6) Persuade(Imv)(Akt) tibi(Pr)(D)(HideTags) hoc(Pr)(A)(HideTags) sic(Adv) esse(Inf)(Akt), ut(Kon)(HideTags) scribo(Prä)(Akt): quaedam(Pr)(N)(HideTags) tempora(N) eripiuntur(Prä)(Pas)
+(6) überzeuge dir dies so zu|sein, wie ich|schreibe: gewisse Zeiten werden|entrissen
+(6i) Persuade(Imv)(Akt) tibi(Pr)(D)(HideTags) hoc(Pr)(A)(HideTags) sic(Adv) esse(Inf)(Akt), ut(Kon) scribo(Prä)(Akt): quaedam(Pr)(N)(HideTags) tempora(N) eripiuntur(Prä)(Pas)
+(6i) überzeuge dir dies so zu|sein, wie ich|schreibe: gewisse Zeiten werden|entrissen
+(7) nobis(Pr)(D), quaedam(Pr)(N) subducuntur(Prä)(Pas), quaedam(Pr)(N) effluunt(Prä)(Akt). Turpissima(Adj)(Sup)(N) tamen(Pt) est(Prä)(Akt) iactura(N), quae(Pr)(N)
+(7) uns, einige werden|heimlich|entzogen, einige fließen|hinweg. schändlichste jedoch ist Verlust, welche
+(8) per(Prp) neglegentiam(A) fit(Prä)(Akt). Et(Kon) si(Kon) volueris(Fu2)(Akt) attendere(Inf)(Akt), maxima(Adj)(Sup)(N) pars(N) vitae(G)
+(8) durch Nachlässigkeit geschieht. und wenn wirst|gewollt|haben aufzumerken, größte Teil des|Lebens
+(9) elabitur(Prä)(Pas) male(Adv) agentibus(Prä)(Akt)(Abl), magna(Adj)(N) nihil(Pr)(A) agentibus(Prä)(Akt)(D), tota(Adj)(N) vita(N) aliud(Pr)(A) agentibus(Prä)(Akt)(D).
+(9) entgleitet schlecht den|Handelnden, großer nichts den|Handelnden, ganze das|Leben etwas|anderes den|Handelnden.
+= § 2 =
+(11) Quem(Pr)(A) mihi(Pr)(D) dabis(Fu1)(Akt), qui(Pr)(N) aliquod(Pr)(A) pretium(A) tempori(D) ponat(Prä)(Akt)(Knj), qui(Pr)(N) diem(A)
+(11) wen mir wirst|geben, der irgendeinen Preis der|Zeit setze, der den|Tag
+(7i) Persuade(Imv)(Akt) tibi(Pr)(D) hoc(Pr)(A) sic(Adv) esse(Inf)(Akt), ut(Kon) scribo(Prä)(Akt): quaedam(Pr)(N) tempora(N) eripiuntur(Prä)(Pas)
+(7i) überzeuge dir dies so zu|sein, wie ich|schreibe: gewisse Zeiten werden|entrissen
+(12) aestimet(Prä)(Akt)(Knj), qui(Pr)(N) intellegat(Prä)(Akt)(Knj) se(Pr)(A) cotidie(Adv) mori(Inf)(Pas) ? In(Prp) hoc(Pr)(Abl) enim(Pt)
+(12) schätzt, der versteht sich täglich zu|sterben ? in diesem nämlich
+(13) fallimur(Prä)(Pas), quod(Kon) mortem(A) prospicimus(Prä)(Akt); magna(Adj)(N) pars(N) eius(Pr)(G) iam(Adv) praeterit(Prä)(Akt). Quicquid(Pr)(N)
+(13) irren|wir, dass den|Tod voraussehen|wir; großer Teil von|ihr schon ist|vorüber. was|auch|immer
+(14) aetatis(G) retro(Adv) est(Prä)(Akt), mors(N) tenet(Prä)(Akt). Fac(Imv)(Akt) ergo(Pt), mi(Adj)(V) Lucili(V), quod(Pr)(A)
+(14) der|Lebenszeit rückwärts ist, der|Tod hält. tue also, mein Lucilius, was
+(15) facere(Inf)(Akt) te(Pr)(A) scribis(Prä)(Akt), omnes(Adj)(A) horas(A) conplectere(Imv)(Pas). Sic(Adv) fiet(Fu1)(Akt), ut(Kon) minus(Adv)
+(15) zu|tun dich schreibst|du, alle Stunden umfasse. so wird|geschehen, dass weniger
+(16) ex(Prp) crastino(Abl) pendeas(Prä)(Akt)(Knj), si(Kon) hodierno(Abl) manum(A) inieceris(Fu2)(Akt). Dum(Kon) differtur(Prä)(Pas), vita(N)
+(16) aus dem|Morgigen hängest|du|ab, wenn dem|Heutigen die|Hand eingelegt|haben|wirst. solange wird|aufgeschoben, das|Leben
+(17) transcurrit(Prä)(Akt).
+(17) läuft|vorüber.
+= § 3 =
+(19) Omnia(Pr)(N), Lucili(V), aliena(Adj)(N) sunt(Prä)(Akt), tempus(N) tantum(Adv) nostrum(Pr)(G) est(Prä)(Akt). In(Prp) huius(Pr)(G)
+(19) alles, Lucilius, fremd sind, die|Zeit nur von|uns ist. in dieses
+(20) rei(G) unius(G) fugacis(G) ac(Kon) lubricae(G) possessionem(A) natura(N) nos(Pr)(A) misit(Per)(Akt), ex(Prp)
+(20) der|Sache eines flüchtigen und glitschigen Besitz die|Natur uns sandte, aus
+(21) qua(Pr)(Abl) expellit(Prä)(Akt) quicumque(Pr)(N) vult(Prä)(Akt). Et(Kon) tanta(Adj)(N) stultitia(N) mortalium(G) est(Prä)(Akt), ut(Kon)
+(21) der vertreibt wer|auch|immer will. und so|große Torheit der|Sterblichen ist, dass
+(22) quae(Pr)(N) minima(Adj)(Sup)(N) et(Kon) vilissima(Adj)(Sup)(N) sunt(Prä)(Akt), certe(Pt) reparabilia(Adj)(N), imputari(Inf)(Pas) sibi(Pr)(D), cum(Kon)
+(22) die kleinsten und billigsten sind, gewiss wieder|beschaffbar, zugerechnet|werden sich, wenn
+(23) impetravere(Per)(Akt), patiantur(Prä)(Pas)(Knj); nemo(Pr)(N) se(Pr)(A) iudicet(Prä)(Akt)(Knj) quicquam(Pr)(A) debere(Inf)(Akt), qui(Pr)(N) tempus(A) accepit(Per)(Akt),
+(23) erlangt|haben|sie, dulden|mögen|sie; niemand sich urteile irgend|etwas zu|schulden, der Zeit empfangen|hat,
+(24) cum(Kon) interim(Adv) hoc(Pr)(N) unum(Adj)(N) est(Prä)(Akt), quod(Pr)(N) ne(Pt) gratus(Adj)(N) quidem(Pt) potest(Prä)(Akt)
+(24) während inzwischen dieses eine ist, das nicht|einmal dankbar doch kann
+(25) reddere(Inf)(Akt).
+(25) zurück|geben.
+= § 4 =
+(27) Interrogabis(Fu1)(Akt) fortasse(Pt), quid(Pr)(A) ego(Pr)(N) faciam(Prä)(Akt)(Knj), qui(Pr)(N) tibi(Pr)(D) ista(Pr)(A) praecipio(Prä)(Akt). Fatebor(Fu1)(Pas)
+(27) wirst|fragen vielleicht, was ich mache, der dir diese|Dinge|da vorschreibe. werde|gestehen
+(28) ingenue(Adv): quod(Kon) apud(Prp) luxuriosum(A) sed(Kon) diligentem(A) evenit(Prä)(Akt), ratio(N) mihi(Pr)(D) constat(Prä)(Akt)
+(28) offen: dass bei einem|Verschwender aber einem|Sorgfältigen geschieht, Rechnung mir steht|fest
+(29) inpensae(G). Non(Pt) possum(Prä)(Akt) me(Pr)(A) dicere(Inf)(Akt) nihil(Pr)(A) perdere(Inf)(Akt), sed(Kon) quid(Pr)(A) perdam(Prä)(Akt)(Knj)
+(29) der|Ausgabe. nicht kann|ich mich sagen nichts zu|verlieren, sondern was verliere|ich
+(30) et(Kon) quare(Adv) et(Kon) quemadmodum(Adv), dicam(Fu1)(Akt); causas(A) paupertatis(G) meae(Adj)(G) reddam(Fu1)(Akt), sed(Kon)
+(30) und warum und auf|welche|Weise, werde|ich|sagen; Gründe der|Armut meiner werde|ich|darlegen, aber
+(31) evenit(Prä)(Akt) mihi(Pr)(D), quod(Kon) plerisque(Pr)(D) non(Pt) suo(Adj)(Abl) vitio(Abl) ad(Prp) inopiam(A) redactis(Per)(Pas)(Abl):
+(31) geschieht mir, dass den|meisten nicht durch|eigenes Verschulden zu Armut zurück|geführt|wordenen:
+(32) omnes(Pr)(N) ignoscunt(Prä)(Akt), nemo(Pr)(N) succurrit(Prä)(Akt).
+(32) alle verzeihen, niemand hilft.
+= § 5 =
+(34) Quid(Pr)(A) ergo(Pt) est(Prä)(Akt) ? Non(Pt) puto(Prä)(Akt) pauperem(A), cui(Pr)(D) quantulumcumque(Pr)(N) superest(Prä)(Akt),
+(34) was also ist ? nicht meine|ich arm, dem wie|wenig|auch|immer übrig|ist,
+(35) sat(Adv) est(Prä)(Akt). Tu(Pr)(N) tamen(Pt) malo(Prä)(Akt) serves(Prä)(Akt)(Knj) tua(Pr)(A), et(Kon) bono(Abl) tempore(Abl)
+(35) genug ist. du dennoch ziehe|vor bewahrst|du deine, und zu|guter Zeit
+(36) incipies(Fu1)(Akt). Nam(Pt) ut(Kon) visum(Per)(Pas)(N) est(Per)(Akt) maioribus(Abl) nostris(Pr)(Abl), sera(Adj)(N) parsimonia(N) in(Prp)
+(36) wirst|du|beginnen. denn wie gesehen ist den|Älteren unseren, späte Sparsamkeit in
+(37) fundo(Abl) est(Prä)(Akt). Non(Pt) enim(Pt) tantum(Adv) minimum(Adj)(Sup)(N) in(Prp) imo(Abl), sed(Kon) pessimum(Adj)(Sup)(N)
+(37) dem|Boden ist. nicht nämlich nur das|Kleinste in dem|untersten, sondern das|Schlechteste
+(38) remanet(Prä)(Akt). VALE(Imv)(Akt).
+(38) bleiben|zurück. lebe|wohl.
+=== Brief 2 ===
+== Seneca Lucilio suo salutem ==
+= § 1 =
+(42) Ex(Prp) iis(Pr)(Abl) quae(Pr)(N) mihi(Pr)(D) scribis(Prä)(Akt), et(Kon) ex(Prp) iis(Pr)(Abl) quae(Pr)(N) audio(Prä)(Akt),
+(42) aus denen die mir schreibst|du, und aus denen die höre|ich,
+(43) bonam(Adj)(A) spem(A) de(Prp) te(Pr)(Abl) concipio(Prä)(Akt); non(Pt) discurris(Prä)(Akt) nec(Kon) locorum(G) mutationibus(Abl)
+(43) gute Hoffnung über dich fasse|ich; nicht läufst|du|herum noch der|Orte Wechseln
+(44) inquietaris(Prä)(Pas). Aegri(Adj)(G) animi(G) ista(Pr)(N) iactatio(N) est(Prä)(Akt). Primum(Adv) argumentum(N) conpositae(Adj)(G) mentis(G)
+(44) wirst|beunruhigt. des|kranken Geistes diese|da Unruhe ist. erstes Beweis eines|geordneten Geistes
+(45) existimo(Prä)(Akt) posse(Inf)(Akt) consistere(Inf)(Akt) et(Kon) secum(Pr)(Abl)(Prp) morari(Inf)(Pas).
+(45) halte|ich|dafür zu|können zu|verweilen und mit|sich sich|aufzuhalten.
+= § 2 =
+(47) Illud(Pr)(A) autem(Pt) vide(Imv)(Akt), ne(Kon) ista(Pr)(N) lectio(N) auctorum(G) multorum(Adj)(G) et(Kon) omnis(Adj)(G)
+(47) jenes aber sieh, dass|nicht diese|da Lektüre der|Autoren vieler und jeder|Art
+(48) generis(G) voluminum(G) habeat(Prä)(Akt)(Knj) aliquid(Pr)(A) vagum(Adj)(A) et(Kon) instabile(Adj)(A). Certis(Adj)(Abl) ingeniis(Abl) inmorari(Inf)(Pas)
+(48) der|Art der|Bücher habe etwas Unstetes und Unbeständiges. an|festen Geistern sich|aufzuhalten
+(49) et(Kon) innutriri(Inf)(Pas) oportet(Prä)(Akt), si(Kon) velis(Prä)(Akt)(Knj) aliquid(Pr)(A) trahere(Inf)(Akt), quod(Pr)(A) in(Prp) animo(Abl)
+(49) und sich|ein|nähren ist|nötig, wenn wolltest|du etwas zu|ziehen, das in dem|Geist
+(50) fideliter(Adv) sedeat(Prä)(Akt)(Knj). Nusquam(Adv) est(Prä)(Akt), qui(Pr)(N) ubique(Adv) est(Prä)(Akt). Vitam(A) in(Prp) peregrinatione(Abl)
+(50) treu sitze. nirgends ist, der überall ist. das|Leben in der|Wanderschaft
+(51) exigentibus(Prä)(Akt)(D) hoc(Pr)(N) evenit(Prä)(Akt), ut(Kon) multa(Adj)(A) hospitia(A) habeant(Prä)(Akt)(Knj), nullas(Adj)(A) amicitias(A). Idem(Pr)(N)
+(51) den|Verbringenden dies geschieht, dass viele Herbergen haben, keine Freundschaften. dasselbe
+(52) accidat(Prä)(Akt)(Knj) necesse(Adv) est(Prä)(Akt) iis(Pr)(D), qui(Pr)(N) nullius(Pr)(G) se(Pr)(A) ingenio(Abl) familiariter(Adv) applicant(Prä)(Akt),
+(52) widerfahre notwendig ist denen, die keines sich dem|Geist vertraut anschließen,
+(53) sed(Kon) omnia(Pr)(A) cursim(Adv) et(Kon) properantes(Prä)(Akt)(N) transmittunt(Prä)(Akt).
+(53) sondern alles flüchtig und eilend überfliegen.
+= § 3 =
+(55) Non(Pt) prodest(Prä)(Akt) cibus(N) nec(Kon) corpori(D) accedit(Prä)(Akt), qui(Pr)(N) statim(Adv) sumptus(Per)(Pas)(N) emittitur(Prä)(Pas);
+(55) nicht nützt Nahrung noch dem|Körper kommt|zugute, die sofort eingenommen ausgeschieden|wird;
+(56) nihil(Pr)(N) aeque(Adv) sanitatem(A) impedit(Prä)(Akt) quam(Kon) remediorum(G) crebra(Adj)(N) mutatio(N); non(Pt) venit(Prä)(Akt)
+(56) nichts ebenso die|Gesundheit hindert wie der|Heilmittel häufige Wechsel; nicht kommt
+(57) vulnus(N) ad(Prp) cicatricem(A), in(Prp) quo(Pr)(Abl) medicamenta(N) temptantur(Prä)(Pas); non(Pt) convalescit(Prä)(Akt) planta(N),
+(57) die|Wunde zu der|Narbe, in welcher Mittel erprobt|werden; nicht erstarkt die|Pflanze,
+(58) quae(Pr)(N) saepe(Adv) transfertur(Prä)(Pas). Nihil(Pr)(N) tam(Adv) utile(Adj)(N) est(Prä)(Akt), ut(Kon) in(Prp) transitu(Abl)
+(58) die oft versetzt|wird. nichts so nützlich ist, dass im Vorübergehen
+(59) prosit(Prä)(Akt)(Knj). Distringit(Prä)(Akt) librorum(G) multitudo(N). Itaque(Pt) cum(Kon) legere(Inf)(Akt) non(Pt) possis(Prä)(Akt)(Knj), quantum(Pr)(A)
+(59) nütze. zerstreut der|Bücher Menge. daher wenn zu|lesen nicht könntest|du, wie|viel
+(60) habueris(Fu2)(Akt), satis(Adv) est(Prä)(Akt) habere(Inf)(Akt), quantum(Pr)(A) legas(Prä)(Akt)(Knj). "
+(60) gehabt|haben|wirst, genug ist zu|haben, wie|viel du|liest. "
+= § 4 =
+(62) Sed(Kon) modo(Adv)," inquis(Prä)(Akt), " hunc(Pr)(A) librum(A) evolvere(Inf)(Akt) volo(Prä)(Akt), modo(Adv) illum(Pr)(A)."
+(62) aber einmal," sagst|du, " diesen Buch auf|schlagen will|ich, einmal jenen."
+(63) Fastidientis(Prä)(Akt)(G) stomachi(G) est(Prä)(Akt) multa(Adj)(A) degustare(Inf)(Akt); quae(Pr)(N) ubi(Kon) varia(Adj)(N), sunt(Prä)(Akt) et(Kon)
+(63) des|sich|ekelnden Magens ist vieles zu|kosten; die wo verschieden, sind und
+(64) diversa(Adj)(N), inquinant(Prä)(Akt), non(Pt) alunt(Prä)(Akt). Probatos(Per)(Pas)(A) itaque(Pt) semper(Adv) lege(Imv)(Akt), et(Kon) si(Kon)
+(64) abweichende, verunreinigen, nicht nähren. Bewährte daher immer lies, und wenn
+(65) quando(Kon) ad(Prp) alios(A) deverti(Inf)(Akt) libuerit(Fu2)(Akt), ad(Prp) priores(Adj)(A) redi(Imv)(Akt). Aliquid(Pr)(A) cotidie(Adv)
+(65) wenn|einmal zu anderen abzuschweifen beliebt|haben|wird, zu den|früheren kehre|zurück. etwas täglich
+(66) adversus(Prp) paupertatem(A), aliquid(Pr)(A) adversus(Prp) mortem(A) auxilii(G) compara(Imv)(Akt), nec(Kon) minus(Adv) adversus(Prp)
+(66) gegen die|Armut, etwas gegen den|Tod an|Hilfe beschaffe, und|nicht weniger gegen
+(67) ceteras(Adj)(A) pestes(A); et(Kon) cum(Kon) multa(Adj)(A) percurrens(Prä)(Akt)(N), unum(Adj)(A) excerpe(Imv)(Akt), quod(Pr)(A) illo(Pr)(Abl)
+(67) übrige Plagen; und wobei vieles durchlaufend, eines heraus|greife, das an|jenem
+(68) die(Abl) concoquas(Prä)(Akt)(Knj).
+(68) Tag verdaust|du.
+= § 5 =
+(70) Hoc(Pr)(A) ipse(Pr)(N) quoque(Pt) facio(Prä)(Akt); ex(Prp) pluribus(Abl), quae(Pr)(A) legi(Per)(Akt), aliquid(Pr)(A) adprehendo(Prä)(Akt)
+(70) dies selbst auch tue|ich; aus mehreren, die gelesen|habe|ich, etwas ergreife|ich
+(71) Hodiernum(Adj)(N) hoc(Pr)(N) est(Prä)(Akt), quod(Pr)(N) apud(Prp) Epicurum(A) nanctus(Per)(Akt)(N) sum(Prä)(Akt); soleo(Prä)(Akt) enim(Pt)
+(71) heutiges dies ist, was bei Epikur erlangt|habend bin|ich; pflege|ich nämlich
+(72) et(Kon) in(Prp) aliena(Adj)(A) castra(A) transire(Inf)(Akt), non(Pt) tamquam(Kon) transfuga(N), sed(Kon) tamquam(Kon)
+(72) und in fremde Lager überzugehen, nicht gleich|wie Überläufer, sondern gleich|wie
+(73) explorator(N). "
+(73) Kundschafter. "
+= § 6 =
+(75) Honesta(Adj)(N)," inquit(Prä)(Akt), "res(N) est(Prä)(Akt) laeta(Adj)(N) paupertas(N)." Illa(Pr)(N) vero(Pt) non(Pt) est(Prä)(Akt)
+(75) ehrenhaft," sagt|er, "Sache ist fröhliche Armut." jene aber nicht ist
+(76) paupertas(N), si(Kon) laeta(Adj)(N) est(Prä)(Akt). Non(Pt) qui(Pr)(N) parum(Adv) habet(Prä)(Akt), sed(Kon) qui(Pr)(N)
+(76) Armut, wenn froh ist. nicht wer zu|wenig hat, sondern wer
+(77) plus(Adv)(Kmp) cupit(Prä)(Akt), pauper(Adj)(N) est(Prä)(Akt). Quid(Pr)(A) enim(Pt) refert(Prä)(Akt), quantum(Pr)(A) illi(Pr)(D) in(Prp)
+(77) mehr begehrt, arm ist. was nämlich kommt|an, wie|viel jenem in
+(78) arca(Abl), quantum(Pr)(A) in(Prp) horreis(Abl) iaceat(Prä)(Akt)(Knj), quantum(Pr)(A) pascat(Prä)(Akt)(Knj) aut(Kon) feneret(Imp)(Akt)(Knj), si(Kon)
+(78) Truhe, wie|viel in Speichern liege|möge, wie|viel füttere|möge oder verzinste|er, wenn
+(79) alieno(Adj)(D) inminet(Prä)(Akt), si(Kon) non(Pt) adquisita(Per)(Pas)(A) sed(Kon) adquirenda(Gdv)(Fu1)(Pas)(A) computat(Prä)(Akt) ? Quis(Pr)(N)
+(79) fremdem|Geld lastet, wenn nicht Erworbenes sondern Zu|Erwerbendes zählt ? wer
+(80) sit(Prä)(Akt)(Knj) divitiarum(G) modus(N), quaeris(Prä)(Akt) ? Primus(Adj)(N) habere(Inf)(Akt) quod(Pr)(A) necesse(Adj)(N) est(Prä)(Akt),
+(80) sei der|Reichtümer Maß, fragst|du ? das|Erste haben was nötig ist,
+(81) proximus(Adj)(N) quod(Pr)(A) sat(Adv) est(Prä)(Akt). VALE(Imv)(Akt).
+(81) das|Nächste was genug ist. lebe|wohl.
+=== Brief 3 ===
+== Seneca Lucilio suo salutem ==
+= § 1 =
+(85) Epistulas(A) ad(Prp) me(Pr)(A) perferendas(Gdv)(Fu1)(Pas)(A) tradidisti(Per)(Akt), ut(Kon) scribis(Prä)(Akt), amico(D) tuo(Adj)(D); deinde(Adv)
+(85) Briefe zu mir zu|überbringende hast|du|übergeben, wie schreibst|du, dem|Freund deinem; sodann
+(86) admones(Prä)(Akt) me(Pr)(A), ne(Kon) omnia(Adj)(A) cum(Prp) eo(Pr)(Abl) ad(Prp) te(Pr)(A) pertinentia(Prä)(Akt)(A) communicem(Prä)(Akt)(Knj),
+(86) mahnst|du mich, dass|nicht alles mit ihm zu dir gehörigen mitteile|ich,
+(87) quia(Kon) non(Pt) soleas(Prä)(Akt)(Knj) ne(Pt) ipse(Adj)(N) quidem(Pt) id(Pr)(A) facere(Inf)(Akt); ita(Adv) in(Prp)
+(87) weil nicht pflegest|du nicht|einmal selbst doch dies zu|tun; so in
+(88) eadem(Adj)(Abl) epistula(Abl) illum(Pr)(A) et(Kon) dixisti(Per)(Akt) amicum(A) et(Kon) negasti(Per)(Akt). Itaque(Pt) si(Kon)
+(88) derselben Brief jenen und nanntest|du Freund und verneintest|du. daher wenn
+(89) proprio(Adj)(Abl) illo(Pr)(Abl) verbo(Abl) quasi(Pt) publico(Adj)(Abl) usus(Per)(Akt)(N) es(Prä)(Akt) et(Kon) sic(Adv) illum(Pr)(A)
+(89) eigenem jenem Wort gleichsam öffentlichem gebraucht|habend bist|du und so jenen
+(90) amicum(A) vocasti(Per)(Akt), quomodo(Adv) omnes(Adj)(A) candidatos(A) bonos(Adj)(A) viros(A) dicimus(Prä)(Akt), quomodo(Adv) obvios(Adj)(A),
+(90) als|Freund nanntest|du, wie alle Bewerber gute Männer nennen|wir, wie Entgegenkommende,
+(91) si(Kon) nomen(N) non(Pt) succurrit(Prä)(Akt), dominos(A) salutamus(Prä)(Akt), hac(Pr)(Abl) abierit(Fu2)(Akt).
+(91) wenn der|Name nicht einfällt, Herren grüßen|wir, so wird|es|weggegangen|sein.
+= § 2 =
+(93) Sed(Kon) si(Kon) aliquem(Pr)(A) amicum(A) existimas(Prä)(Akt), cui(Pr)(D) non(Pt) tantundem(Adv) credis(Prä)(Akt) quantum(Pr)(A)
+(93) aber wenn irgendeinen Freund hältst|du, dem nicht ebensoviel glaubst|du wie|viel
+(94) tibi(Pr)(D), vehementer(Adv) erras(Prä)(Akt) et(Kon) non(Pt) satis(Adv) nosti(Prä)(Akt) vim(A) verae(Adj)(G) amicitiae(G).
+(94) dir, sehr irrst|du und nicht hinreichend kennst|du die|Kraft der|wahren Freundschaft.
+(95) Tu(Pr)(N) vero(Pt) omnia(Adj)(A) cum(Prp) amico(D) delibera(Imv)(Akt), sed(Kon) de(Prp) ipso(Pr)(Abl) prius(Adv).
+(95) du wirklich alles mit dem|Freund erwäge, aber über ihn|selbst zuerst.
+(96) Post(Prp) amicitiam(A) credendum(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt), ante(Prp) amicitiam(A) iudicandum(Gdv)(Fu1)(Pas)(N). Isti(Pr)(N) vero(Pt) praepostero(Adj)(Abl)
+(96) nach Freundschaft zu|glauben ist, vor Freundschaft zu|urteilen. jene wahrlich auf|verkehrte|Weise
+(97) officia(N) permiscent(Prä)(Akt), qui(Pr)(N) contra(Prp) praecepta(A) Theophrasti(G), cum(Kon) amaverunt(Per)(Akt), iudicant(Prä)(Akt), et(Kon)
+(97) Pflichten vermischen, die gegen Vorschriften des|Theophrast, als geliebt|haben|sie, urteilen|sie, und
+(98) non(Pt) amant(Prä)(Akt), cum(Kon) iudicaverunt(Per)(Akt). Diu(Adv) cogita(Imv)(Akt), an(Kon) tibi(Pr)(D) in(Prp) amicitiam(A)
+(98) nicht lieben|sie, wenn geurteilt|haben|sie. lange bedenke, ob dir in Freundschaft
+(99) aliquis(Pr)(N) recipiendus(Gdv)(Fu1)(Pas)(N) sit(Prä)(Akt)(Knj). Cum(Kon) placuerit(Fu2)(Akt) fieri(Inf)(Pas), toto(Adj)(Abl) illum(Pr)(A) pectore(Abl) admitte(Imv)(Akt);
+(99) irgend|einer aufzunehmender sei. wenn gefallen|haben|wird zu|geschehen, mit|ganzer jenen Brust nimm|auf;
+(100) tam(Adv) audaciter(Adv) cum(Prp) illo(Pr)(Abl) loquere(Prä)(Akt)(Imv) quam(Kon) tecum(Pr)(Abl)(Prp).
+(100) so kühn mit jenem sprich wie mit|dir.
+= § 3 =
+(102) Tu(Pr)(N) quidem(Pt) ita(Adv) vive(Imv)(Akt), ut(Kon) nihil(Pr)(A) tibi(Pr)(D) committas(Prä)(Akt)(Knj), nisi(Kon) quod(Pr)(A)
+(102) du doch so lebe, dass nichts dir anvertraust|du, außer was
+(103) committere(Inf)(Akt) etiam(Adv) inimico(D) tuo(Adj)(D) possis(Prä)(Akt)(Knj); sed(Kon) quia(Kon) interveniunt(Prä)(Akt) quaedam(Pr)(N), quae(Pr)(N)
+(103) anzuvertrauen auch dem|Feind deinem könntest|du; aber weil dazwischen|treten einiges, die
+(104) consuetudo(N) fecit(Per)(Akt) arcana(A), cum(Prp) amico(Abl) omnes(Adj)(A) curas(A), omnes(Adj)(A) cogitationes(A) tuas(Adj)(A)
+(104) Gewohnheit hat|gemacht geheime|Dinge, mit dem|Freund alle Sorgen, alle Gedanken deine
+(105) misce(Imv)(Akt). Fidelem(Adj)(A) si(Kon) putaveris(Fu2)(Akt), facies(Fu1)(Akt). Nam(Pt) quidam(Pr)(N) fallere(Inf)(Akt) docuerunt(Per)(Akt), dum(Kon)
+(105) mische. als|treu wenn gedacht|haben|wirst|du, wirst|du|machen. denn einige zu|täuschen lehrten, während
+(106) timent(Prä)(Akt) falli(Inf)(Pas), et(Kon) illi(Pr)(N) ius(N) peccandi(Ger)(G) suspicando(Ger)(Abl) fecerunt(Per)(Akt). Quid(Pr)(A) est(Prä)(Akt),
+(106) fürchten|sie getäuscht|zu|werden, und jene Recht des|Fehlens durch|Argwöhnen machten|sie. was ist,
+(107) quare(Adv) ego(Pr)(N) ulla(Adj)(A) verba(A) coram(Prp) amico(Abl) meo(Adj)(Abl) retraham(Prä)(Akt)(Knj) ? Quid(Pr)(A)
+(107) weshalb ich irgendwelche Worte vor dem|Freund meinem zurückhalten|sollte ? was
+(108) est(Prä)(Akt), quare(Adv) me(Pr)(A) coram(Prp) illo(Pr)(Abl) non(Pt) putem(Prä)(Akt)(Knj) solum(Adv) ?
+(108) ist, weshalb mich vor jenem nicht glauben|sollte|ich allein ?
+= § 4 =
+(110) Quidam(Pr)(N) quae(Pr)(N) tantum(Adv) amicis(Pr)(D) committenda(Gdv)(Fu1)(Pas)(N) sunt(Prä)(Akt), obviis(Adj)(D) narrant(Prä)(Akt) et(Kon) in(Prp)
+(110) einige die nur den|Freunden anzuvertrauende sind, den|Entgegenkommenden erzählen|sie und in
+(111) quaslibet(Adj)(A) aures(A), quicquid(Pr)(A) illos(Pr)(A) urserit(Fu2)(Akt), exonerant(Prä)(Akt). Quidam(Pr)(N) rursus(Adv) etiam(Adv) carissimorum(Adj)(G)
+(111) welche|auch|immer Ohren, was|auch|immer sie gedrückt|haben|wird, entleeren|sie. einige wiederum auch der|Liebsten
+(112) conscientiam(A) reformidant(Prä)(Akt), et(Kon) si(Kon) possent(Imp)(Akt)(Knj), ne(Pt) sibi(Pr)(D) quidem(Pt) credituri(Fu1)(Akt)(N) interius(Adv)
+(112) Gewissens fürchten|sie, und wenn könnten|sie, nicht|einmal sich doch zu|glauben|im|Begriff innerlich
+(113) premunt(Prä)(Akt) omne(Adj)(A) secretum(A). Neutrum(Pr)(N) faciendum(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt). Utrumque(Pr)(N) enim(Pt) vitium(N) est(Prä)(Akt),
+(113) drücken|sie alles Geheimnis. keines|von|beiden zu|tun ist. beides nämlich Fehler ist,
+(114) et(Kon) omnibus(Pr)(D) credere(Inf)(Akt) et(Kon) nulli(Pr)(D). Sed(Kon) alterum(Pr)(A) honestius(Adv)(Kmp) dixerim(Per)(Akt)(Knj) vitium(N),
+(114) und allen zu|glauben und keinem. aber das|eine ehrlicher würde|ich|sagen Fehler,
+(115) alterum(Pr)(A) tutius(Adv)(Kmp); sic(Adv) utrosque(Pr)(A) reprehendas(Prä)(Akt)(Knj), et(Kon) eos(Pr)(A) qui(Pr)(N) semper(Adv) inquieti(Adj)(N)
+(115) das|andere sicherer; so beide tadeln|sollst|du, und jene die immer unruhig
+(116) sunt(Prä)(Akt), et(Kon) eos(Pr)(A) qui(Pr)(N) semper(Adv) quiescunt(Prä)(Akt).
+(116) sind, und jene die immer ruhen.
+= § 5 =
+(118) Nam(Pt) illa(Pr)(N) tumultu(Abl) gaudens(Prä)(Akt)(N) non(Pt) est(Prä)(Akt) industria(N), sed(Kon) exagitatae(Per)(Pas)(G) mentis(G)
+(118) denn jene vom|Tumult sich|freuend nicht ist Emsigkeit, sondern des|aufgejagten Geistes
+(119) concursatio(N). Et(Kon) haec(Pr)(N) non(Pt) est(Prä)(Akt) quies(N), quae(Pr)(N) motum(A) omnem(Adj)(A) molestiam(A)
+(119) Zusammenlauf. und diese nicht ist Ruhe, welche Bewegung jede Unannehmlichkeit
+(120) iudicat(Prä)(Akt), sed(Kon) dissolutio(N) et(Kon) languor(N).
+(120) erachtet, sondern Auflösung und Ermattung.
+= § 6 =
+(122) Itaque(Pt) hoc(Pr)(N), quod(Pr)(A) apud(Prp) Pomponium(A) legi(Per)(Akt), animo(Pr)(D) mandabitur(Fu1)(Pas): "quidam(Pr)(N) adeo(Adv)
+(122) daher dies, was bei Pomponius gelesen|habe|ich, dem|Geist wird|anvertraut|werden: "einige so|sehr
+(123) in(Prp) latebras(A) refugerunt(Per)(Akt), ut(Kon) putent(Prä)(Akt)(Knj) in(Prp) turbido(Abl) esse(Inf)(Akt), quicquid(Pr)(N) in(Prp)
+(123) in Verstecke sind|sie|zurückgeflüchtet, so|dass meinen|sie im Trüben zu|sein, was|auch|immer im
+(124) luce(Abl) est(Prä)(Akt)." Inter(Prp) se(Pr)(Abl) ista(Pr)(N) miscenda(Gdv)(Fu1)(Pas)(N) sunt(Prä)(Akt), et(Kon) quiescenti(Prä)(Akt)(D) agendum(Gdv)(Fu1)(Pas)(N)
+(124) Licht ist." unter sich diese|Dinge zu|mischen sind, und dem|Ruhenden zu|handeln
+(125) et(Kon) agenti(Prä)(Akt)(D) quiescendum(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt). Cum(Prp) rerum(G) natura(Abl) delibera(Imv)(Akt); illa(Pr)(N) dicet(Fu1)(Akt)
+(125) und dem|Handelnden zu|ruhen ist. mit der|Dinge Natur erwäge; jene wird|sagen
+(126) tibi(Pr)(D) et(Kon) diem(A) fecisse(Per)(Akt)(Inf) se(Pr)(A) et(Kon) noctem(A). VALE(Imv)(Akt).
+(126) dir und den|Tag gemacht|zu|haben sich und die|Nacht. lebe|wohl.
+=== Brief 4 ===
+== Seneca Lucilio suo salutem ==
+= § 1 =
+(130) Persevera(Imv)(Akt) ut(Kon) coepisti(Per)(Akt) et(Kon) quantum(Pr)(A) potes(Prä)(Akt) propera(Imv)(Akt), quo(Kon) diutius(Adv)(Kmp) frui(Inf)(Akt)
+(130) verharre damit begonnen|hast|du und so|sehr|wie kannst|du eile, damit länger genießen
+(131) emendato(Per)(Pas)(Abl) animo(Abl) et(Kon) conposito(Per)(Pas)(Abl) possis(Prä)(Akt)(Knj). Frueris(Prä)(Akt) quidem(Pt) etiam(Adv) dum(Kon) emendas(Prä)(Akt),
+(131) verbessertem Geist und geordnetem kannst|du. genießt|du doch auch während besserst|du,
+(132) etiam(Adv) dum(Kon) conponis(Prä)(Akt); alia(Adj)(N) tamen(Pt) illa(Pr)(N) voluptas(N) est(Prä)(Akt), quae(Pr)(N) percipitur(Prä)(Pas)
+(132) auch während ordnest|du; eine|andere dennoch jene Freude ist, die wird|erfasst
+(133) ex(Prp) contemplatione(Abl) mentis(G) ab(Prp) omni(Adj)(Abl) labe(Abl) purae(Adj)(G) et(Kon) splendidae(Adj)(G).
+(133) aus Betrachtung des|Geistes von jeder Befleckung der|reinen und der|glänzenden.
+= § 2 =
+(135) Tenes(Prä)(Akt) utique(Adv) memoria(Abl), quantum(Pr)(A) senseris(Per)(Akt)(Knj) gaudium(A), cum(Kon) praetexta(Abl) posita(Per)(Pas)(Abl) sumpsisti(Per)(Akt)
+(135) hältst|du gewiss im|Gedächtnis, wie|viel empfunden|hast|du Freude, als praetexta abgelegt genommen|hast|du
+(136) virilem(Adj)(A) togam(A) et(Kon) in(Prp) forum(A) deductus(Per)(Pas)(N) es(Prä)(Akt); maius(Adj)(A)(Kmp) expecta(Imv)(Akt), cum(Kon)
+(136) männliche Toga und auf das|Forum herabgeführt bist|du; Größeres erwarte, wenn
+(137) puerilem(Adj)(A) animum(A) deposueris(Fu2)(Akt) et(Kon) te(Pr)(A) in(Prp) viros(A) philosophia(N) transscripserit(Fu2)(Akt). Adhuc(Adv)
+(137) kindlichen Sinn abgelegt|haben|wirst und dich in Männer Philosophie übergetragen|haben|wird. bisher
+(138) enim(Pt) non(Pt) pueritia(N) sed(Kon), quod(Pr)(N) est(Prä)(Akt) gravius(Adj)(N)(Kmp), puerilitas(N) remanet(Prä)(Akt). Et(Kon)
+(138) nämlich nicht Kindheit sondern, was ist schwerer, Kinderei bleibt. und
+(139) hoc(Pr)(N) quidem(Pt) peior(Adj)(N)(Kmp) est(Prä)(Akt), quod(Pr)(N) auctoritatem(A) habemus(Prä)(Akt) senum(G), vitia(A) puerorum(G),
+(139) dies doch schlechter ist, dass Autorität haben|wir der|Alten, Fehler der|Kinder,
+(140) nec(Kon) puerorum(G) tantum(Adv) sed(Kon) infantum(G). Illi(Pr)(N) levia(Adj)(A), hi(Pr)(N) falsa(Adj)(A) formidant(Prä)(Akt),
+(140) und|nicht der|Knaben nur sondern der|Unmündigen. jene Leichtes, diese Falsches fürchten,
+(141) nos(Pr)(N) utraque(Pr)(A).
+(141) wir beides.
+= § 3 =
+(143) Profice(Imv)(Akt) modo(Adv); intelleges(Fu1)(Akt) quaedam(Pr)(N) ideo(Adv) minus(Adv)(Kmp) timenda(Gdv)(Fu1)(Pas)(N), quia(Kon) multum(Adj)(A) metus(G)
+(143) schreite|voran nur; wirst|du|einsehen einiges deswegen weniger zu|fürchten, weil viel der|Furcht
+(144) adferunt(Prä)(Akt). Nullum(Adj)(N) malum(N) est(Prä)(Akt) magnum(Adj)(N), quod(Pr)(N) extremum(Adj)(N) est(Prä)(Akt). Mors(N) ad(Prp)
+(144) bringen|herbei. kein Übel ist groß, welches das|Äußerste ist. der|Tod zu
+(145) te(Pr)(A) venit(Prä)(Akt); timenda(Gdv)(Fu1)(Pas)(N) erat(Imp)(Akt), si(Kon) tecum(Pr)(Abl)(Prp) esse(Inf)(Akt) posset(Imp)(Akt)(Knj); sed(Kon) necesse(Adj)
+(145) dir kommt; zu|fürchtende war, wenn mit|dir zu|sein könnte; aber nötig
+(146) est(Prä)(Akt) aut(Kon) non(Pt) perveniat(Prä)(Akt)(Knj) aut(Kon) transeat(Prä)(Akt)(Knj)
+(146) ist oder nicht gelange oder vorübergehe
+= § 4 =
+(148) " Difficile(Adj)(N) est(Prä)(Akt)," inquis(Prä)(Akt), " animum(A) perducere(Inf)(Akt) ad(Prp) contemptionem(A) animae(G)."
+(148) " schwierig ist," sagst|du, " den|Sinn hin|führen zu Verachtung der|Seele."
+(149) Non(Pt) vides(Prä)(Akt), quam(Adv) ex(Prp) frivolis(Adj)(Abl) causis(N)(Abl) contemnatur(Prä)(Pas)? Alius(Pr)(N) ante(Prp) amicae(G)
+(149) nicht siehst|du, wie aus leichtfertigen Gründen wird|verachtet? ein|anderer vor der|Freundin
+(150) fores(A) laqueo(N)(Abl) pependit(Per)(Akt), alius(Pr)(N) se(Pr)(A) praecipitavit(Per)(Akt) e(Prp) tecto(N)(Abl), ne(Kon) dominum(A)
+(150) Türen mit|der|Schlinge hing, ein|anderer sich stürzte|hinab aus dem|Dach, damit|nicht den|Herrn
+(151) stomachantem(Prä)(Akt)(A) diutius(Adv)(Kmp) audiret(Imp)(Akt)(Knj), alius(Pr)(N) ne(Kon) reduceretur(Imp)(Pas)(Knj) e(Prp) fuga(N)(Abl), ferrum(A) adegit(Per)(Akt)
+(151) sich|zornenden länger anhörte, ein|anderer damit|nicht zurückgeführt|würde aus der|Flucht, das|Eisen trieb|hinein
+(152) in(Prp) viscera(A). Non(Pt) putas(Prä)(Akt) virtutem(A) hoc(Pr)(A) effecturam(Fu1)(Akt)(A), quod(Pr)(A) efficit(Prä)(Akt) nimia(Adj)(N)
+(152) in die|Eingeweide. nicht meinst|du die|Tugend dies bewirken|werdend, was bewirkt übermäßige
+(153) formido(N) ? Nulli(Pr)(D) potest(Prä)(Akt) secura(Adj)(N) vita(N) contingere(Inf)(Akt), qui(Pr)(N) de(Prp) producenda(Gdv)(Fu1)(Pas)(Abl)
+(153) Furcht ? keinem kann sichere das|Leben zuteil|werden, der über zu|verlängerndem
+(154) nimis(Adv) cogitat(Prä)(Akt), qui(Pr)(N) inter(Prp) magna(Adj)(A) bona(A) multos(Adj)(A) consules(A) numerat(Prä)(Akt).
+(154) zu|sehr denkt, der unter den|großen Gütern viele Konsuln zählt.
+= § 5 =
+(156) Hoc(Pr)(A) cotidie(Adv) meditare(Prä)(Akt)(Imv), ut(Kon) possis(Prä)(Akt)(Knj) aequo(Adj)(Abl) animo(N)(Abl) vitam(A) relinquere(Inf)(Akt), quam(Pr)(A)
+(156) dies täglich bedenke, damit könntest|du gleichmütigem Geist das|Leben zurück|lassen, welches
+(157) multi(Adj)(N) sic(Adv) conplectuntur(Prä)(Pas) et(Kon) tenent(Prä)(Akt), quomodo(Kon) qui(Pr)(N) aqua(N)(Abl) torrente(Prä)(Akt)(Abl) rapiuntur(Prä)(Pas)
+(157) viele so umfassen und halten, wie die vom|Wasser reißendem werden|fortgerissen
+(158) spinas(A) et(Kon) aspera(Adj)(A). Plerique(Pr)(N) inter(Prp) mortis(G) metum(A) et(Kon) vitae(G) tormenta(A)
+(158) Dornen und Raues. die|meisten zwischen des|Todes Furcht und des|Lebens Qualen
+(159) miseri(Adj)(N) fluctuantur(Prä)(Pas) et(Kon) vivere(Inf)(Akt) nolunt(Prä)(Akt), mori(Inf)(Pas) nesciunt(Prä)(Akt).
+(159) Elende schwanken und zu|leben wollen|sie|nicht, zu|sterben wissen|sie|nicht.
+= § 6 =
+(161) Fac(Prä)(Akt)(Imv) itaque(Pt) tibi(Pr)(D) iucundam(Adj)(A) vitam(A) omnem(Adj)(A) pro(Prp) illa(Pr)(Abl) sollicitudinem(A) deponendo(Ger)(Abl).
+(161) mache also dir angenehm das|Leben ganz anstatt jener Sorge durch|das|Ablegen.
+(162) Nullum(Adj)(A) bonum(A) adiuvat(Prä)(Akt) habentem(Prä)(Akt)(A), nisi(Kon) ad(Prp) cuius(Pr)(G) amissionem(A) praeparatus(Per)(Pas)(N) est(Prä)(Akt)
+(162) kein Gut hilft habenden, außer zu dessen Verlust vorbereitet ist
+(163) animus(N); nullius(Pr)(G) autem(Pt) rei(G) facilior(Adj)(N)(Kmp) amissio(N) est(Prä)(Akt), quam(Kon) quae(Pr)(N) desiderari(Inf)(Pas)
+(163) der|Geist; keiner aber Sache leichter das|Verlieren ist, als die vermisst|zu|werden
+(164) amissa(Per)(Pas)(N) non(Pt) potest(Prä)(Akt). Ergo(Pt) adversus(Prp) haec(Pr)(A), quae(Pr)(N) incidere(Inf)(Akt) possunt(Prä)(Akt) etiam(Adv)
+(164) verloren nicht kann. also gegen diese, die sich|ereignen können auch
+(165) potentissimis(Adj)(D)(Sup), adhortare(Prä)(Akt)(Imv) te(Pr)(A) et(Kon) indura(Prä)(Akt)(Imv).
+(165) den|Mächtigsten, ermuntere dich und verhärte|dich.
+= § 7 =
+(167) De(Prp) Pompei(G) capite(N)(Abl) pupillus(N) et(Kon) spado(N) tulere(Per)(Akt) sententiam(A), de(Prp) Crasso(N)(Abl)
+(167) über des|Pompeius dem|Kopf Mündel und Kastrat fällten Urteil, über Crassus
+(168) crudelis(Adj)(N) et(Kon) insolens(Adj)(N) Parthus(N); Gaius(N) Caesar(N) iussit(Per)(Akt) Lepidum(A) Dextro(D) tribuno(D)
+(168) grausamer und anmaßender Parther; Gaius Caesar befahl Lepidus Dextro dem|Tribunen
+(169) praebere(Inf)(Akt) cervicem(A), ipse(Pr)(N) Chaereae(D) praestitit(Per)(Akt). Neminem(Pr)(A) eo(Adv) fortuna(N) provexit(Per)(Akt), ut(Kon)
+(169) dar|bieten den|Nacken, er|selbst Chaerea leistete|er. niemanden so|weit das|Glück hat|emporgetragen, dass
+(170) non(Pt) tantum(Adv) illi(Pr)(D) minaretur(Imp)(Pas)(Knj), quantum(Adv) permiserat(Plq)(Akt). Noli(Prä)(Akt)(Imv) huic(Pr)(D) tranquillitati(D) confidere(Inf)(Akt);
+(170) nicht so|viel jenem drohte, wie|viel zugelassen|hatte. wolle|nicht dieser Ruhe zu|vertrauen;
+(171) momento(N)(Abl) mare(N) evertitur(Prä)(Pas). Eodem(Adj)(Abl) die(N)(Abl) ubi(Kon) luserunt(Per)(Akt) navigia(N), sorbentur(Prä)(Pas).
+(171) in|einem|Augenblick das|Meer wird|umgestürzt. an|dem|selben Tag wo spielten die|Schiffe, werden|verschlungen.
+= § 8 =
+(173) Cogita(Prä)(Akt)(Imv) posse(Inf)(Akt) et(Kon) latronem(A) et(Kon) hostem(A) admovere(Inf)(Akt) iugulo(D) tuo(Adj)(D) gladium(A):
+(173) bedenke können und Räuber und Feind heran|bewegen dem|Hals deinem Schwert:
+(174) Ut(Kon) potestas(N) maior(Adj)(N)(Kmp) absit(Prä)(Akt)(Knj), nemo(Pr)(N) non(Pt) servus(N) habet(Prä)(Akt) in(Prp) te(Pr)(A)
+(174) auch|wenn Macht größere fehle, niemand nicht Sklave hat über dich
+(175) vitae(G) necisque(G)(Kon) arbitrium(N). Ita(Pt) dico(Prä)(Akt): quisquis(Pr)(N) vitam(A) suam(Adj)(A) contempsit(Per)(Akt), tuae(Adj)(G)
+(175) des|Lebens des|Todes|und Entscheidung. so sage|ich: wer|auch|immer das|Leben sein|eigenes verachtete, deiner
+(176) dominus(N) est(Prä)(Akt). Recognosce(Prä)(Akt)(Imv) exempla(A) eorum(Pr)(G), qui(Pr)(N) domesticis(Adj)(Abl) insidiis(N)(Abl) perierunt(Per)(Akt), aut(Kon)
+(176) Herr ist. erkenne|wieder Beispiele derer, die häuslichen Nachstellungen zugrunde|gingen, oder
+(177) aperta(Per)(Pas)(Abl) vi(N)(Abl) aut(Kon) dolo(N)(Abl); intelleges(Fu1)(Akt) non(Pt) pauciores(Adj)(A)(Kmp) servorum(G) ira(N)(Abl) cecidisse(Per)(Akt)(Inf)
+(177) offener Gewalt oder List; wirst|du|einsehen nicht weniger der|Sklaven durch|Zorn gefallen|zu|sein
+(178) quam(Kon) regum(G). Quid(Pr)(A) ad(Prp) te(Pr)(A) itaque(Pt), quam(Adv) potens(Adj)(N) sit(Prä)(Akt)(Knj) quem(Pr)(A)
+(178) als der|Könige. was zu dir also, wie mächtig sei wen
+(179) times(Prä)(Akt), cum(Kon) id(Pr)(A), propter(Prp) quod(Pr)(A) times(Prä)(Akt), nemo(Pr)(N) non(Pt) possit(Prä)(Akt)(Knj) ?
+(179) fürchtest|du, da dies, wegen was fürchtest|du, niemand nicht könne ?
+= § 9 =
+(181) At(Kon) si(Kon) forte(Adv) in(Prp) manus(A) hostium(G) incideris(Fu2)(Akt), victor(N) te(Pr)(A) duci(Inf)(Pas)
+(181) aber wenn vielleicht in die|Hände der|Feinde geraten|haben|wirst, der|Sieger dich geführt|zu|werden
+(182) iubebit(Fu1)(Akt); eo(Adv) nempe(Pt), quo(Pr)(Abl) duceris(Prä)(Pas). Quid(Pr)(A) te(Pr)(A) ipse(Pr)(N) decipis(Prä)(Akt) et(Kon)
+(182) wird|befehlen; dorthin nämlich, wohin wirst|du|geführt. was dich selbst täuschst|du und
+(183) hoc(Pr)(A) nunc(Adv) primum(Adv), quod(Pr)(A) olim(Adv) patiebaris(Imp)(Pas), intellegis(Prä)(Akt)? Ita(Pt) dico(Prä)(Akt): ex(Prp)
+(183) dies jetzt zum|ersten, was einst erduldetest|du, verstehst|du? so sage|ich: seit
+(184) quo(Pr)(Abl) natus(Per)(Pas)(N) es(Prä)(Akt), duceris(Prä)(Pas). Haec(Pr)(N) et(Kon) eiusmodi(Adj)(N) versanda(Gdv)(Fu1)(Pas)(N) in(Prp) animo(N)(Abl)
+(184) dem geboren bist, wirst|du|geführt. dieses und der|Art zu|wendende im Geist
+(185) sunt(Prä)(Akt), si(Kon) volumus(Prä)(Akt) ultimam(Adj)(A) illam(Pr)(A) horam(A) placidi(Adj)(G) expectare(Inf)(Akt), cuius(Pr)(G) metus(N)
+(185) sind, wenn wollen|wir letzte jene Stunde ruhig zu|erwarten, deren Furcht
+(186) omnes(Adj)(A) alias(Adj)(A) inquietas(Adj)(A) facit(Prä)(Akt).
+(186) alle anderen unruhig macht.
+= § 10 =
+(188) Sed(Kon) ut(Kon) finem(A) epistulae(D) inponam(Prä)(Akt)(Knj), accipe(Prä)(Akt)(Imv), quod(Pr)(A) mihi(Pr)(D) hodierno(Adj)(Abl) die(N)(Abl)
+(188) aber damit ein|Ende dem|Brief ich|aufsetze, nimm|auf, was mir heutigen Tag
+(189) placuit(Per)(Akt). Et(Kon) hoc(Pr)(N) quoque(Adv) ex(Prp) alienis(Adj)(Abl) hortulis(N)(Abl) sumptum(Per)(Pas)(N) est(Prä)(Akt). "
+(189) gefiel. und dies auch aus fremden Gärtchen genommen ist. "
+(190) Magnae(Adj)(N) divitiae(N) sunt(Prä)(Akt) lege(N)(Abl) naturae(G) composita(Per)(Pas)(N) paupertas(N)." Lex(N) autem(Pt) illa(Pr)(N)
+(190) große Reichtümer sind durch|das|Gesetz der|Natur zusammen|gestellt Armut." Gesetz aber jenes
+(191) naturae(G) scis(Prä)(Akt) quos(Pr)(A) nobis(Pr)(D) terminos(A) statuat(Prä)(Akt)(Knj) ? Non(Pt) esurire(Inf)(Akt), non(Pt)
+(191) der|Natur weißt|du welche uns Grenzen setze ? nicht hungern, nicht
+(192) sitire(Inf)(Akt), non(Pt) algere(Inf)(Akt). Ut(Kon) famem(A) sitimque(A)(Kon) depellas(Prä)(Akt)(Knj), non(Pt) est(Prä)(Akt) necesse(Adj)
+(192) dürsten, nicht frieren. um den|Hunger den|Durst|und abwehrst|du, nicht ist nötig
+(193) superbis(Adj)(D) adsidere(Inf)(Akt) liminibus(D) nec(Kon) supercilium(A) grave(Adj)(A) et(Kon) contumeliosam(Adj)(A) etiam(Adv) humanitatem(A)
+(193) den|Stolzen zu|sitzen|bei den|Schwellen und|nicht Stirnrunzeln schweres und kränkende auch Freundlichkeit
+(194) pati(Inf)(Pas), non(Pt) est(Prä)(Akt) necesse(Adj) maria(A) temptare(Inf)(Akt) nec(Kon) sequi(Inf)(Pas) castra(A); parabile(Adj)(N)
+(194) zu|ertragen, nicht ist nötig Meere zu|versuchen und|nicht zu|folgen Lagern; beschaffbar
+(195) est(Prä)(Akt), quod(Pr)(N) natura(N) desiderat(Prä)(Akt), et(Kon) adpositum(Per)(Pas)(N).
+(195) ist, was die|Natur verlangt, und daneben|gelegt.
+= § 11 =
+(197) Ad(Prp) supervacua(Adj)(A) sudatur(Prä)(Pas). Illa(Pr)(N) sunt(Prä)(Akt), quae(Pr)(N) togam(A) conterunt(Prä)(Akt), quae(Pr)(N) nos(Pr)(A)
+(197) für Überflüssiges man|schwitzt. jene sind, die die|Toga abnutzen, die uns
+(198) senescere(Inf)(Akt) sub(Prp) tentorio(N)(Abl) cogunt(Prä)(Akt), quae(Pr)(N) in(Prp) aliena(Adj)(A) litora(A) inpingunt(Prä)(Akt). Ad(Prp)
+(198) alt|werden unter dem|Zelt zwingen, die an fremde Gestade hinein|stoßen. zur
+(199) manum(A) est(Prä)(Akt), quod(Pr)(N) sat(Adv) est(Prä)(Akt). Cui(Pr)(D) cum(Prp) paupertate(N)(Abl) bene(Adv) convenit(Prä)(Akt),
+(199) Hand ist, was genug ist. wem mit der|Armut gut passt,
+(200) dives(Adj)(N) est(Prä)(Akt). VALE(Imv)(Akt).
+(200) reich ist. lebe|wohl.
+=== Brief 5 ===
+== Seneca Lucilio suo salutem ==
+= § 1 =
+(204) Quod(Kon) pertinaciter(Adv) studes(Prä)(Akt) et(Kon) omnibus(Pr)(Abl) omissis(Per)(Pas)(Abl) hoc(Pr)(A) unum(Adj)(A) agis(Prä)(Akt), ut(Kon)
+(204) weil hartnäckig bemühst|du|dich und allem weg|gelassenen dies eine treibst|du, dass
+(205) te(Pr)(A) meliorem(Adj)(A)(Kmp) cotidie(Adv) facias(Prä)(Akt)(Knj), et(Kon) probo(Prä)(Akt) et(Kon) gaudeo(Prä)(Akt), nec(Kon) tantum(Adv)
+(205) dich besser täglich machst|du, und billige|ich und freue|ich|mich, und|nicht nur
+(206) hortor(Prä)(Akt), ut(Kon) perseveres(Prä)(Akt)(Knj), sed(Kon) etiam(Adv) rogo(Prä)(Akt). Illud(Pr)(A) autem(Pt) te(Pr)(A) admoneo(Prä)(Akt),
+(206) mahn|ich, dass du|beharrst, sondern auch bitte|ich. jenes aber dich mahne|ich,
+(207) ne(Kon) eorum(Pr)(G) more(N)(Abl), qui(Pr)(N) non(Pt) proficere(Inf)(Akt) sed(Kon) conspici(Inf)(Pas) cupiunt(Prä)(Akt), facias(Prä)(Akt)(Knj)
+(207) dass|nicht deren Sitte, die nicht voran|kommen sondern gesehen|zu|werden wünschen|sie, machst|du
+(208) aliqua(Adj)(A), quae(Pr)(N) in(Prp) habitu(N)(Abl) tuo(Adj)(Abl) aut(Kon) genere(N)(Abl) vitae(G) notabilia(Adj)(N) sint(Prä)(Akt)(Knj).
+(208) einiges, die in der|Erscheinung deiner oder der|Lebensart des|Lebens auffällige seien.
+= § 2 =
+(210) Asperum(Adj)(A) cultum(A) et(Kon) intonsum(Per)(Pas)(A) caput(A) et(Kon) neglegentiorem(Adj)(A)(Kmp) barbam(A) et(Kon) indictum(Per)(Pas)(A)
+(210) rauhen Kleidung und un|geschorenes Haupt und nachlässigere Bart und angekündigt
+(211) argento(D) odium(A) et(Kon) cubile(A) humi(N)(Abl) positum(Per)(Pas)(N), et(Kon) quicquid(Pr)(N) aliud(Adj)(N) ambitio(N)
+(211) dem|Silber Hass und Lager auf|der|Erde hingelegt, und was|auch|immer anderes Ehrsucht
+(212) nempe(Pt) perversa(Per)(Pas)(Abl) via(N)(Abl) sequitur(Prä)(Pas), evita(Prä)(Akt)(Imv). Satis(Adv) ipsum(Adj)(N) nomen(N) philosophiae(G), etiam(Adv)
+(212) nämlich verkehrten Weg folgt, meide. genug selbst Name der|Philosophie, auch
+(213) si(Kon) modeste(Adv) tractetur(Prä)(Pas)(Knj), invidiosum(Adj)(N) est(Prä)(Akt); quid(Pr)(A) si(Kon) nos(Pr)(A) hominum(G) consuetudini(D)
+(213) wenn maßvoll werde|behandelt, anstößig ist; was wenn uns der|Menschen der|Gewohnheit
+(214) coeperimus(Fu2)(Akt) excerpere(Inf)(Akt) ? Intus(Adv) omnia(Pr)(N) dissimilia(Adj)(N) sint(Prä)(Akt)(Knj), frons(N) populo(D) nostra(Adj)(N)
+(214) begonnen|haben|werden heraus|greifen ? innen alles unähnlich seien, Erscheinung dem|Volk unsere
+(215) conveniat(Prä)(Akt)(Knj).
+(215) passe.
+= § 3 =
+(217) Non(Pt) splendeat(Prä)(Akt)(Knj) toga(N), ne(Kon) sordeat(Prä)(Akt)(Knj) quidem(Pt). Non(Pt) habeamus(Prä)(Akt)(Knj) argentum(A), in(Prp)
+(217) nicht glänze Toga, nicht sei|schmutzig einmal. nicht haben|mögen|wir Silber, in
+(218) quod(Pr)(A) solidi(Adj)(G) auri(G) caelatura(N) descenderit(Per)(Akt)(Knj), sed(Kon) non(Pt) putemus(Prä)(Akt)(Knj) frugalitatis(G) indicium(A)
+(218) worin massiven des|Goldes Ziselierung herab|gekommen|sei, sondern nicht sollten|wir|meinen der|Genügsamkeit Anzeichen
+(219) auro(N)(Abl) argentoque(N)(Abl)(Kon) caruisse(Per)(Akt)(Inf). Id(Pr)(A) agamus(Prä)(Akt)(Knj), ut(Kon) meliorem(Adj)(A)(Kmp) vitam(A) sequamur(Prä)(Akt)(Knj) quam(Kon)
+(219) von|Gold von|Silber|und entbehrt|zu|haben. dies machen|mögen|wir, dass besseres Leben folgen|mögen|wir als
+(220) vulgus(N), non(Pt) ut(Kon) contrariam(Adj)(A); alioquin(Adv) quos(Pr)(A) emendari(Inf)(Pas) volumus(Prä)(Akt), fugamus(Prä)(Akt) a(Prp)
+(220) die|Menge, nicht damit entgegengesetzte; andernfalls die verbessert|zu|werden wollen|wir, vertreiben|wir von
+(221) nobis(Pr)(Abl) et(Kon) avertimus(Prä)(Akt). Illud(Pr)(A) quoque(Pt) efficimus(Prä)(Akt), ut(Kon) nihil(Pr)(A) imitari(Inf)(Akt) velint(Prä)(Akt)(Knj)
+(221) uns und wenden|wir|ab. dies auch bewirken|wir, dass nichts nach|ahmen wollen|sie
+(222) nostri(Adj)(N), dum(Kon) timent(Prä)(Akt), ne(Kon) imitanda(Gdv)(Fu1)(Pas)(N) sint(Prä)(Akt)(Knj) omnia(Pr)(N).
+(222) die|Unseren, solange fürchten|sie, dass|nicht nach|zu|ahmende seien alles.
+= § 4 =
+(224) Hoc(Pr)(A) primum(Adv) philosophia(N) promittit(Prä)(Akt), sensum(A) communem(Adj)(A), humanitatem(A) et(Kon) congregationem(A). A(Prp)
+(224) dies zuerst Philosophie verspricht, Sinn gemeinsamen, Menschlichkeit und Gemeinschaft. von
+(225) qua(Pr)(Abl) professione(N)(Abl) dissimilitudo(N) nos(Pr)(A) separabit(Fu1)(Akt). Videamus(Prä)(Akt)(Knj), ne(Kon) ista(Pr)(N), per(Prp) quae(Pr)(A)
+(225) welcher Berufung Unähnlichkeit uns wird|trennen. lasst|uns|sehen, dass|nicht diese|Dinge|da, durch welche
+(226) admirationem(A) parare(Inf)(Akt) volumus(Prä)(Akt), ridicula(Adj)(N) et(Kon) odiosa(Adj)(N) sint(Prä)(Akt)(Knj). Nempe(Pt) propositum(N) nostrum(Adj)(N)
+(226) Bewunderung bereiten wollen|wir, lächerlich und verhasst seien. nämlich Vorsatz unser
+(227) est(Prä)(Akt) secundum(Prp) naturam(A) vivere(Inf)(Akt); hoc(Pr)(N) contra(Prp) naturam(A) est(Prä)(Akt), torquere(Inf)(Akt) corpus(A)
+(227) ist gemäß der|Natur zu|leben; dieses gegen die|Natur ist, zu|quälen Körper
+(228) suum(Adj)(A) et(Kon) faciles(Adj)(A) odisse(Per)(Akt)(Inf) munditias(A) et(Kon) squalorem(A) adpetere(Inf)(Akt) et(Kon) cibis(N)(Abl)
+(228) seinen und leichte hassen Reinlichkeiten und Schmutz an|streben und mit|Speisen
+(229) non(Pt) tantum(Adv) vilibus(Adj)(Abl) uti(Inf)(Akt) sed(Kon) taetris(Adj)(Abl) et(Kon) horridis(Adj)(Abl).
+(229) nicht nur billigen gebrauchen sondern widerlichen und rauen.
+= § 5 =
+(231) Quemadmodum(Adv) desiderare(Inf)(Akt) delicatas(Adj)(A) res(A) luxuriae(G) est(Prä)(Akt), ita(Adv) usitatas(Adj)(A) et(Kon) non(Pt)
+(231) wie begehren feine Dinge der|Üppigkeit ist, so gewohnte und nicht
+(232) magno(Adj)(Abl) parabiles(Adj)(A) fugere(Inf)(Akt) dementiae(G). Frugalitatem(A) exigit(Prä)(Akt) philosophia(N), non(Pt) poenam(A), potest(Prä)(Akt)
+(232) zu|großem beschaffbare meiden der|Torheit. Genügsamkeit verlangt Philosophie, nicht Strafe, kann
+(233) autem(Pt) esse(Inf)(Akt) non(Pt) incompta(Adj)(N) frugalitas(N). Hic(Pr)(N) mihi(Pr)(D) modus(N) placet(Prä)(Akt): temperetur(Prä)(Pas)(Knj)
+(233) aber sein nicht ungepflegt Genügsamkeit. dieser mir Maß gefällt: werde|gemäßigt
+(234) vita(N) inter(Prp) bonos(Adj)(A) mores(A) et(Kon) publicos(Adj)(A); suspiciant(Prä)(Akt)(Knj) omnes(Adj)(N) vitam(A) nostram(Adj)(A),
+(234) Leben zwischen guten Sitten und öffentlichen; mögen|bewundern alle Leben unser,
+(235) sed(Kon) agnoscant(Prä)(Akt)(Knj).
+(235) aber mögen|anerkennen.
+= § 6 =
+(237) " Quid(Pr)(A) ergo(Pt) ? Eadem(Pr)(A) faciemus(Fu1)(Akt), quae(Pr)(A) ceteri(Adj)(N) ? Nihil(Pr)(N)
+(237) " was also ? dieselben werden|wir|tun, welche die|Übrigen ? nichts
+(238) inter(Prp) nos(Pr)(A) et(Kon) illos(Pr)(A) intererit(Fu1)(Akt) ? " Plurimum(Adv). Dissimiles(Adj)(N) esse(Inf)(Akt)
+(238) zwischen uns und jenen wird|bestehen ? " sehr|viel. unähnlich sein
+(239) nos(Pr)(A) vulgo(D) sciat(Prä)(Akt)(Knj), qui(Pr)(N) inspexerit(Fu2)(Akt) propius(Adv)(Kmp). Qui(Pr)(N) domum(A) intraverit(Fu2)(Akt), nos(Pr)(A)
+(239) uns der|Menge wisse, wer näher|hingesehen|haben|wird näher. wer das|Haus eingetreten|haben|wird, uns
+(240) potius(Adv) miretur(Prä)(Akt)(Knj) quam(Kon) supellectilem(A) nostram(Adj)(A). Magnus(Adj)(N) ille(Pr)(N) est(Prä)(Akt), qui(Pr)(N) fictilibus(N)(Abl)
+(240) eher bewundere als Hausrat unseren. groß jener ist, der irdenen
+(241) sic(Adv) utitur(Prä)(Akt) quemadmodum(Adv) argento(N)(Abl). Nec(Kon) ille(Pr)(N) minor(Adj)(N)(Kmp) est(Prä)(Akt), qui(Pr)(N) sic(Adv)
+(241) so gebraucht wie Silber. und|nicht jener geringer ist, der so
+(242) argento(N)(Abl) utitur(Prä)(Akt) quemadmodum(Adv) fictilibus(N)(Abl). Infirmi(Adj)(G) animi(G) est(Prä)(Akt) pati(Inf)(Akt) non(Pt) posse(Inf)(Akt)
+(242) Silber gebraucht wie irdenen. des|schwachen Geistes ist ertragen nicht können
+(243) divitias(A).
+(243) Reichtümer.
+= § 7 =
+(245) Sed(Kon) ut(Kon) huius(Pr)(G) quoque(Pt) diei(G) lucellum(A) tecum(Pr)(Abl)(Prp) communicem(Prä)(Akt)(Knj), apud(Prp) Hecatonem(A)
+(245) aber damit dieses auch Tages Gewinn|chen mit|dir teile|möge|ich, bei Hecaton
+(246) nostrum(Adj)(A) inveni(Per)(Akt) cupiditatium(G) finem(A) etiam(Adv) ad(Prp) timoris(G) remedia(A) proficere(Inf)(Akt). "
+(246) unseren fand|ich der|Begierden Ende auch zu der|Furcht Heil|mittel nützen. "
+(247) Desines(Fu1)(Akt)," inquit(Prä)(Akt), "timere(Inf)(Akt), si(Kon) sperare(Inf)(Akt) desieris(Fu2)(Akt)." Dices(Fu1)(Akt): "Quomodo(Adv) ista(Pr)(N) tam(Adv)
+(247) wirst|du|aufhören," sagt|er, "fürchten, wenn hoffen aufgehört|haben|wirst." wirst|du|sagen: "wie diese|Dinge|da so
+(248) diversa(Adj)(N) pariter(Adv) eunt(Prä)(Akt) ?" Ita(Pt) est(Prä)(Akt), mi(Adj)(V) Lucili(V): cum(Kon) videantur(Prä)(Pas)(Knj)
+(248) verschieden zugleich gehen ?" so ist, mein Lucilius: wenn scheinen
+(249) dissidere(Inf)(Akt), coniuncta(Per)(Pas)(N) sunt(Prä)(Akt). Quemadmodum(Adv) eadem(Pr)(N) catena(N)(Abl) et(Kon) custodiam(A) et(Kon) militem(A)
+(249) uneins|zu|sein, verbunden sind. wie dieselbe Kette und Wache und Soldaten
+(250) copulat(Prä)(Akt), sic(Adv) ista(Pr)(N), quae(Pr)(N) tam(Adv) dissimilia(Adj)(N) sunt(Prä)(Akt), pariter(Adv) incedunt(Prä)(Akt); spem(A)
+(250) verbindet, so diese|Dinge|da, welche so unähnlich sind, gleichermaßen schreiten; Hoffnung
+(251) metus(N) sequitur(Prä)(Akt) Nec(Kon) miror(Prä)(Akt) ista(Pr)(A) sic(Adv) ire(Inf)(Akt); utrumque(Pr)(N) pendentis(Prä)(Akt)(G) animi(G)
+(251) Furcht folgt und|nicht wundere|ich|mich diese|Dinge|da so zu|gehen; beides des|hängenden Geistes
+(252) est(Prä)(Akt), utrumque(Pr)(N) futuri(G) exspectatione(N)(Abl) solliciti(Adj)(N).
+(252) ist, beides der|Zukunft durch|Erwartung bekümmert.
+= § 8 =
+(254) Maxima(Adj)(N)(Sup) autem(Pt) utriusque(Pr)(G) causa(N) est(Prä)(Akt), quod(Kon) non(Pt) ad(Prp) praesentia(A) aptamur(Prä)(Pas),
+(254) größte aber beider Ursache ist, dass nicht zu den|Gegenwärtigen|Dingen werden|angepasst|wir,
+(255) sed(Kon) cogitationes(N) in(Prp) longinqua(Adj)(A) praemittimus(Prä)(Akt). Itaque(Pt) providentia(N), maximum(Adj)(N)(Sup) bonum(N) condicionis(G)
+(255) sondern Gedanken in das|Ferne schicken|wir|voraus. daher Voraussicht, größtes Gut der|Lage
+(256) humanae(Adj)(G), in(Prp) malum(A) versa(Per)(Pas)(N) est(Prä)(Akt).
+(256) der|menschlichen, in Übel gewendet ist.
+= § 9 =
+(258) Ferae(N) pericula(A), quae(Pr)(A) vident(Prä)(Akt), fugiunt(Prä)(Akt); cum(Kon) effugere(Inf)(Akt), securae(Adj)(N) sunt(Prä)(Akt); nos(Pr)(N)
+(258) Wild|tiere Gefahren, die sehen|sie, fliehen|sie; wenn entkommen|zu|sein, sicher sind; wir
+(259) et(Kon) venturo(Fu1)(Akt)(Abl) torquemur(Prä)(Pas) et(Kon) praeterito(N)(Abl). Multa(Adj)(N) bona(Adj)(N) nostra(Adj)(N) nobis(Pr)(D) nocent(Prä)(Akt),
+(259) und dem|Kommenden werden|gequält|wir und dem|Vergangenen. viele Güter unsere uns schaden,
+(260) timoris(G) enim(Pt) tormentum(N) memoria(N) reducit(Prä)(Akt), providentia(N) anticipat(Prä)(Akt). Nemo(Pr)(N) tantum(Adv) praesentibus(Adj)(Abl)
+(260) der|Furcht nämlich Qual Erinnerung ruft|zurück, Voraussicht nimmt|vorweg. niemand so|sehr an|den|Gegenwärtigen
+(261) miser(Adj)(N) est(Prä)(Akt). VALE(Imv)(Akt).
+(261) unglücklich ist. lebe|wohl.
+=== Brief 6 ===
+== Seneca Lucilio suo salutem ==
+= § 1 =
+(265) Intellego(Prä)(Akt), Lucili(V), non(Pt) emendari(Inf)(Pas) me(Pr)(A) tantum(Adv) sed(Kon) transfigurari(Inf)(Pas). Nec(Kon) hoc(Pr)(N)
+(265) ich|verstehe, Lucilius, nicht verbessert|zu|werden mich nur sondern um|gestaltet|zu|werden. und|nicht dies
+(266) promitto(Prä)(Akt) iam(Adv) aut(Kon) spero(Prä)(Akt), nihil(Pr)(N) in(Prp) me(Pr)(Abl) superesse(Inf)(Akt), quod(Pr)(N) mutandum(Gdv)(Fu1)(Pas)(N)
+(266) verspreche|ich schon oder hoffe|ich, nichts in mir übrig|zu|sein, was zu|ändernd
+(267) sit(Prä)(Akt)(Knj). Quidni(Pt) multa(Adj)(A) habeam(Prä)(Akt)(Knj), quae(Pr)(N) debeant(Prä)(Akt)(Knj) colligi(Inf)(Pas), quae(Pr)(N) extenuari(Inf)(Pas), quae(Pr)(N)
+(267) sei. warum|nicht vieles hätte|ich, die sollen gesammelt|zu|werden, die gemindert|zu|werden, die
+(268) attolli(Inf)(Pas) ? Et(Kon) hoc(Pr)(N) ipsum(Adj)(N) argumentum(N) est(Prä)(Akt) in(Prp) melius(Adv)(Kmp) translati(Per)(Pas)(G)
+(268) erhöht|zu|werden ? und dies selbst Beweis ist in das|Bessere des|Übertragenen
+(269) animi(G), quod(Kon) vitia(A) sua(Adj)(A), quae(Pr)(N) adhuc(Adv) ignorabat(Imp)(Akt), videt(Prä)(Akt). Quibusdam(Pr)(D) aegris(Adj)(D)
+(269) des|Geistes, dass Fehler seine, die bislang nicht|kannte, sieht. manchen Kranken
+(270) gratulatio(N) fit(Prä)(Akt), cum(Kon) ipsi(Pr)(N) aegros(Adj)(A) se(Pr)(A) esse(Inf)(Akt) senserunt(Per)(Akt).
+(270) Glück|wunsch geschieht, wenn sie|selbst krank sich zu|sein wahrnahmen.
+= § 2 =
+(272) Cuperem(Imp)(Akt) itaque(Pt) tecum(Pr)(Abl)(Prp) communicare(Inf)(Akt) tam(Adv) subitam(Adj)(A) mutationem(A) mei(Pr)(G); tunc(Adv) amicitiae(G)
+(272) wünschte|ich daher mit|dir zu|teilen so plötzliche Veränderung meiner; dann der|Freundschaft
+(273) nostrae(Adj)(G) certiorem(Adj)(A)(Kmp) fiduciam(A) habere(Inf)(Akt) coepissem(Plq)(Akt), illius(Pr)(G) verae(Adj)(G), quam(Pr)(A) non(Pt) spes(N),
+(273) unserer sichereres Vertrauen zu|haben begonnen|hatte|ich, jener wahren, die nicht Hoffnung,
+(274) non(Pt) timor(N), non(Pt) utilitatis(G) suae(Adj)(G) cura(N) divellit(Prä)(Akt), illius(Pr)(G), cum(Prp) qua(Pr)(Abl)
+(274) nicht Furcht, nicht des|Vorteils eigenen Sorge trennt, jener, mit welcher
+(275) homines(N) moriuntur(Prä)(Akt), pro(Prp) qua(Pr)(Abl) moriuntur(Prä)(Akt).
+(275) Menschen sterben, für welche sterben.
+= § 3 =
+(277) Multos(Adj)(A) tibi(Pr)(D) dabo(Fu1)(Akt), qui(Pr)(N) non(Pt) amico(N)(Abl), sed(Kon) amicitia(N)(Abl) caruerunt(Per)(Akt). Hoc(Pr)(N)
+(277) viele dir werde|ich|geben, die nicht eines|Freundes, sondern der|Freundschaft entbehrten. dies
+(278) non(Pt) potest(Prä)(Akt) accidere(Inf)(Akt), cum(Kon) animos(A) in(Prp) societatem(A) honesta(Adj)(A) cupiendi(Ger)(G) par(Adj)(N)
+(278) nicht kann geschehen, wenn Gemüter in Gemeinschaft Ehren|haftes des|Begehrens gleich
+(279) voluntas(N) trahit(Prä)(Akt). Quidni(Pt) non(Pt) possit(Prä)(Akt)(Knj)? Sciunt(Prä)(Akt) enim(Pt) ipsos(Pr)(A) omnia(Pr)(A) habere(Inf)(Akt)
+(279) Wille zieht. warum|nicht nicht könne|es? wissen|sie nämlich sich|selbst alles zu|haben
+(280) communia(Adj)(A), et(Kon) quidem(Pt) magis(Adv)(Kmp) adversa(Adj)(A). Concipere(Inf)(Akt) animo(N)(Abl) non(Pt) potes(Prä)(Akt), quantum(Pr)(A)
+(280) gemeinsam, und zwar mehr widrige. zu|fassen im|Geist nicht kannst|du, wie|viel
+(281) momenti(G) adferre(Inf)(Akt) mihi(Pr)(D) singulos(Adj)(A) dies(A) videam(Prä)(Akt)(Knj). "
+(281) an|Bedeutung zu|bringen mir einzelne Tage sehe|ich. "
+= § 4 =
+(283) Mitte(Imv)(Akt)," inquis(Prä)(Akt), "et(Kon) nobis(Pr)(D) ista(Pr)(A), quae(Pr)(N) tam(Adv) efficacia(Adj)(A) expertus(Per)(Akt)(N) es(Prä)(Akt)."
+(283) schicke," sagst|du, "und uns jene|Dinge|da, die so wirksam erprobt|habend bist|du."
+(284) Ego(Pr)(N) vero(Pt) omnia(Pr)(A) in(Prp) te(Pr)(A) cupio(Prä)(Akt) transfundere(Inf)(Akt), et(Kon) in(Prp) hoc(Pr)(Abl)
+(284) ich wahrlich alles in dich wünsche|ich über|fließen|zu|lassen, und in diesem
+(285) aliquid(Pr)(A) gaudeo(Prä)(Akt) discere(Inf)(Akt), ut(Kon) doceam(Prä)(Akt)(Knj). Nec(Kon) me(Pr)(A) ulla(Adj)(N) res(N) delectabit(Fu1)(Akt),
+(285) etwas freue|ich|mich zu|lernen, damit lehre|ich. und|nicht mich irgendeine Sache wird|erfreuen,
+(286) licet(Prä)(Akt) sit(Prä)(Akt)(Knj) eximia(Adj)(N) et(Kon) salutaris(Adj)(N), quam(Pr)(A) mihi(Pr)(D) uni(Adj)(D) sciturus(Fu1)(Akt)(N) sum(Prä)(Akt).
+(286) obgleich sei ausgezeichnet und heilsam, die mir allein wissen|werdend bin.
+(287) Si(Kon) cum(Prp) hac(Pr)(Abl) exceptione(Abl) detur(Prä)(Pas)(Knj) sapientia(N), ut(Kon) illam(Pr)(A) inclusam(Per)(Pas)(A) teneam(Prä)(Akt)(Knj)
+(287) wenn mit dieser Ausnahme gegeben|werde Weisheit, dass jene eingeschlossen halte|ich
+(288) nec(Kon) enuntiem(Prä)(Akt)(Knj), reiciam(Fu1)(Akt). Nullius(Adj)(G) boni(G) sine(Prp) socio(Abl) iucunda(Adj)(N) possessio(N) est(Prä)(Akt).
+(288) und|nicht ausspreche|ich, werde|ich|abweisen. keines Guten ohne Genossen angenehme Besitzung ist.
+= § 5 =
+(290) Mittam(Fu1)(Akt) itaque(Pt) ipsos(Pr)(A) tibi(Pr)(D) libros(A) et(Kon) ne(Kon) multum(Adj)(A) operae(G) inpendas(Prä)(Akt)(Knj),
+(290) werde|ich|schicken daher eben|jene dir Bücher und damit|nicht viel der|Mühe aufwendest|du,
+(291) dum(Kon) passim(Adv) profutura(Fu1)(Akt)(A) sectaris(Prä)(Akt), inponam(Fu1)(Akt) notas(A), ut(Kon) ad(Prp) ipsa(Pr)(A) protinus(Adv),
+(291) solange überall nützen|werdende verfolgst|du, werde|ich|aufsetzen Zeichen, damit zu gerade|die sofort,
+(292) quae(Pr)(A) probo(Prä)(Akt) et(Kon) miror(Prä)(Akt), accedas(Prä)(Akt)(Knj). Plus(Adv) tamen(Pt) tibi(Pr)(D) et(Kon) viva(Adj)(N)
+(292) die billige|ich und bewundere|ich, heran|trittst|du. mehr doch dir und lebendige
+(293) vox(N) et(Kon) convictus(N) quam(Kon) oratio(N) proderit(Fu1)(Akt). In(Prp) rem(A) praesentem(Adj)(A) venias(Prä)(Akt)(Knj)
+(293) Stimme und Zusammen|Leben als Rede wird|nützen. in die|Sache gegenwärtige kommest|du
+(294) oportet(Prä)(Akt), primum(Adv), quia(Kon) homines(N) amplius(Adv)(Kmp) oculis(Abl) quam(Kon) auribus(Abl) credunt(Prä)(Akt); deinde(Adv),
+(294) ist|nötig, erstens, weil Menschen mehr den|Augen als den|Ohren glauben; sodann,
+(295) quia(Kon) longum(Adj)(N) iter(N) est(Prä)(Akt) per(Prp) praecepta(A), breve(Adj)(N) et(Kon) efficax(Adj)(N) per(Prp)
+(295) weil lang Weg ist durch Vorschriften, kurz und wirksam durch
+(296) exempla(A).
+(296) Beispiele.
+= § 6 =
+(298) Zenonem(A) Cleanthes(N) non(Pt) expressisset(Plq)(Akt)(Knj), si(Kon) tantummodo(Adv) audisset(Plq)(Akt)(Knj); vitae(G) eius(Pr)(G) interfuit(Per)(Akt),
+(298) Zenon Cleanthes nicht hätte|nachgebildet, wenn nur gehört|hätte; des|Lebens seines war|dabei,
+(299) secreta(A) perspexit(Per)(Akt), observavit(Per)(Akt) illum(Pr)(A), an(Kon) ex(Prp) formula(Abl) sua(Adj)(Abl) viveret(Imp)(Akt)(Knj). Platon(N)
+(299) Geheimnisse durchschaute, beobachtete jenen, ob nach der|Formel seiner lebte. Platon
+(300) et(Kon) Aristoteles(N) et(Kon) omnis(Adj)(N) in(Prp) diversum(A) itura(Fu1)(Akt)(N) sapientium(G) turba(N) plus(Adv)
+(300) und Aristoteles und ganze in ins|Verschiedene gehen|werdende der|Weisen Menge mehr
+(301) ex(Prp) moribus(Abl) quam(Kon) ex(Prp) verbis(Abl) Socratis(G) traxit(Per)(Akt); Metrodorum(A) et(Kon) Hermarchum(A)
+(301) aus den|Sitten als aus den|Worten des|Sokrates zog; Metrodor und Hermarchus
+(302) et(Kon) Polyaenum(A) magnos(Adj)(A) viros(A) non(Pt) schola(N) Epicuri(G) sed(Kon) contubernium(N) fecit(Per)(Akt).
+(302) und Polyaenos große Männer nicht Schule des|Epikur sondern Zelt|Gemeinschaft machte.
+(303) Nec(Kon) in(Prp) hoc(Pr)(Abl) te(Pr)(A) accerso(Prä)(Akt) tantum(Adv), ut(Kon) proficias(Prä)(Akt)(Knj), sed(Kon) ut(Kon)
+(303) nicht|nur zu diesem dich rufe|ich|herbei nur, damit vorankommest|du, sondern damit
+(304) prosis(Prä)(Akt)(Knj); plurimum(Adv)(Sup) enim(Pt) alter(N) alteri(D) conferemus(Fu1)(Akt).
+(304) nützest|du; am|meisten nämlich einer dem|anderen werden|wir|beitragen.
+= § 7 =
+(306) Interim(Adv) quoniam(Kon) diurnam(Adj)(A) tibi(Pr)(D) mercedulam(A) debeo(Prä)(Akt), quid(Pr)(A) me(Pr)(A) hodie(Adv) apud(Prp)
+(306) inzwischen da|ja tägliche dir Löhnchen schulde|ich, was mich heute bei
+(307) Hecatonem(A) delectaverit(Per)(Akt)(Knj) dicam(Fu1)(Akt). "Quaeris(Prä)(Akt)," inquit(Prä)(Akt), " quid(Pr)(A) profecerim(Per)(Akt)(Knj) ? Amicus(N)
+(307) Hekaton erfreut|hat werde|ich|sagen. "fragst|du," sagt|er, " was Fortschritt|gemacht|habe|ich ? Freund
+(308) esse(Inf)(Akt) mihi(Pr)(D) coepi(Per)(Akt)." Multum(Adv) profecit(Per)(Akt); numquam(Adv) erit(Fu1)(Akt) solus(Adj)(N). Scito(Prä)(Akt)(Imv) hunc(Pr)(A)
+(308) zu|sein mir habe|begonnen." viel hat|Fortschritt|gemacht; niemals wird|sein allein. wisse diesen
+(309) amicum(A) omnibus(D) esse(Inf)(Akt). VALE(Imv)(Akt).
+(309) Freund allen zu|sein. lebe|wohl.
+=== Brief 7 ===
+== Seneca Lucilio suo salutem ==
+= § 1 =
+(313) Quid(Pr)(A) tibi(Pr)(D) vitandum(Gdv)(Fu1)(Pas)(A) praecipue(Adv) existimes(Prä)(Akt)(Knj), quaeris(Prä)(Akt) ? Turbam(A). Nondum(Adv) illi(Pr)(D)
+(313) was dir zu|vermeidendes besonders hältst|du, fragst|du ? die|Menge. noch|nicht jenem
+(314) tuto(Adv) committeris(Prä)(Pas). Ego(Pr)(N) certe(Pt) confitebor(Fu1)(Akt) inbecillitatem(A) meam(Adj)(A): numquam(Adv) mores(A), quos(Pr)(A)
+(314) sicher anvertraust|du|dich. ich gewiss werde|ich|bekennen Schwäche meine: niemals Sitten, welche
+(315) extuli(Per)(Akt), refero(Prä)(Akt). Aliquid(Pr)(N) ex(Prp) eo(Pr)(Abl), quod(Pr)(A) conposui(Per)(Akt), turbatur(Prä)(Pas); aliquid(Pr)(N) ex(Prp)
+(315) hinaus|getragen|habe|ich, bringe|ich|zurück. etwas aus dem, was geordnet|habe|ich, wird|gestört; etwas aus
+(316) iis(Pr)(Abl), quae(Pr)(A) fugavi(Per)(Akt), redit(Prä)(Akt). Quod(Pr)(N) aegris(Adj)(D) evenit(Prä)(Akt), quos(Pr)(A) longa(Adj)(N) inbecillitas(N)
+(316) denen, die vertrieben|habe|ich, kehrt|zurück. was den|Kranken geschieht, welche lange Schwäche
+(317) usque(Adv) eo(Adv) adfecit(Per)(Akt), ut(Kon) nusquam(Adv) sine(Prp) offensa(Abl) proferantur(Prä)(Pas)(Knj), hoc(Pr)(N) accidit(Prä)(Akt)
+(317) bis dahin hat|zugesetzt, dass nirgends ohne Anstoß vor|gebracht|werden, dies geschieht
+(318) nobis(Pr)(D), quorum(Pr)(G) animi(N) ex(Prp) longo(Adj)(Abl) morbo(Abl) reficiuntur(Prä)(Pas).
+(318) uns, deren Geister aus langem Krankheit werden|erneuert.
+= § 2 =
+(320) Inimica(Adj)(N) est(Prä)(Akt) multorum(G) conversatio(N); nemo(Pr)(N) non(Pt) aliquod(Pr)(A) nobis(Pr)(D) vitium(A) aut(Kon)
+(320) feindlich ist vieler|Leute Umgang; niemand nicht irgendeinen uns Fehler oder
+(321) commendat(Prä)(Akt) aut(Kon) inprimit(Prä)(Akt) aut(Kon) nescientibus(Prä)(Akt)(D) adlinit(Prä)(Akt). Utique(Adv) quo(Adv) maior(Adj)(N)(Kmp) est(Prä)(Akt)
+(321) empfiehlt oder prägt|ein oder den|Nicht|Wissenden schmiert|an. auf|jeden|Fall je größer ist
+(322) populus(N), cui(Pr)(D) miscemur(Prä)(Pas), hoc(Abl) periculi(G) plus(Adv) est(Prä)(Akt). Nihil(N) vero(Pt) tam(Adv)
+(322) Volk, dem mischen|wir|uns, um|so an|Gefahr mehr ist. nichts wirklich so
+(323) damnosum(Adj)(N) bonis(Adj)(Abl) moribus(Abl) quam(Kon) in(Prp) aliquo(Adj)(Abl) spectaculo(Abl) desidere(Inf)(Akt). Tunc(Adv) enim(Pt)
+(323) schädlich guten Sitten als in irgendeinem Schauspiel sitzen|bleiben. dann nämlich
+(324) per(Prp) voluptatem(A) facilius(Adv)(Kmp) vitia(N) subrepunt(Prä)(Akt).
+(324) durch Vergnügen leichter Laster schleichen|sich|ein.
+= § 3 =
+(326) Quid(Pr)(A) me(Pr)(A) existimas(Prä)(Akt) dicere(Inf)(Akt) ? Avarior(Adj)(N)(Kmp) redeo(Prä)(Akt), ambitiosior(Adj)(N)(Kmp), luxuriosior(Adj)(N)(Kmp), immo(Pt)
+(326) was mich meinst|du zu|sagen ? habgieriger kehre|ich|zurück, ehrgeiziger, luxuriöser, vielmehr
+(327) vero(Pt) crudelior(Adj)(N)(Kmp) et(Kon) inhumanior(Adj)(N)(Kmp), quia(Kon) inter(Prp) homines(A) fui(Per)(Akt). Casu(Abl) in(Prp)
+(327) wirklich grausamer und unmenschlicher, weil zwischen Menschen war|ich. zufällig in
+(328) meridianum(Adj)(A) spectaculum(A) incidi(Per)(Akt) lusus(A) expectans(Prä)(Akt)(N) et(Kon) sales(A) et(Kon) aliquid(Pr)(A) laxamenti(G),
+(328) mittägliches Schauspiel geriet|ich|hinein Scherze erwartend und Witze und etwas der|Entspannung,
+(329) quo(Pr)(Abl) hominum(G) oculi(N) ab(Prp) humano(Adj)(Abl) cruore(Abl) adquiescunt(Prä)(Akt); contra(Adv) est(Prä)(Akt). Quicquid(Pr)(N)
+(329) wodurch der|Menschen Augen von menschlichem Blut ruhen|aus; dagegen ist. was|auch|immer
+(330) ante(Adv) pugnatum(Per)(Pas)(N) est(Prä)(Akt), misericordia(N) fuit(Per)(Akt). Nunc(Adv) omissis(Per)(Pas)(Abl) nugis(Abl) mera(Adj)(N) homicidia(N)
+(330) zuvor gekämpft|worden ist, Barmherzigkeit war. jetzt bei|weg|gelassenen Spielereien lauter Tötungen
+(331) sunt(Prä)(Akt). Nihil(N) habent(Prä)(Akt) quo(Pr)(Abl) tegantur(Prä)(Pas)(Knj), ad(Prp) ictum(A) totis(Adj)(Abl) corporibus(Abl) expositi(Per)(Pas)(N)
+(331) sind. nichts haben womit bedeckt|werden, zu dem|Schlag ganzen mit|Körpern ausgesetzt
+(332) numquam(Adv) frustra(Adv) manum(A) mittunt(Prä)(Akt).
+(332) niemals vergeblich Hand setzen|sie.
+= § 4 =
+(334) Hoc(Pr)(N) plerique(Pr)(N) ordinariis(Adj)(Abl) paribus(Abl) et(Kon) postulaticiis(Adj)(Abl) praeferunt(Prä)(Akt). Quidni(Adv) praeferant(Prä)(Akt)(Knj)? Non(Pt)
+(334) dies die|Meisten gewöhnlichen Paaren und auf|Zuruf ziehen|vor. warum|nicht zögen|sie|vor? nicht
+(335) galea(Abl), non(Pt) scuto(Abl) repellitur(Prä)(Pas) ferrum(N). Quo(Adv) munimenta(N) ? Quo(Adv) artes(N)
+(335) durch|den|Helm, nicht durch|den|Schild wird|abgewehrt Eisen. wozu Schutz|mittel ? wozu Künste
+(336) ? Omnia(N) ista(Pr)(N) mortis(G) morae(N) sunt(Prä)(Akt). Mane(Adv) leonibus(D) et(Kon) ursis(D)
+(336) ? alles diese|da des|Todes Verzögerungen sind. morgens den|Löwen und den|Bären
+(337) homines(N), meridie(Abl) spectatoribus(D) suis(Adj)(D) obiciuntur(Prä)(Pas). Interfectores(N) interfecturis(Fu1)(Akt)(D) iubent(Prä)(Akt) obici(Inf)(Pas) et(Kon)
+(337) Menschen, am|Mittag den|Zuschauern ihren werden|vorgeworfen. Töter töten|werdenden befehlen|sie vor|zu|werfen und
+(338) victorem(A) in(Prp) aliam(Adj)(A) detinent(Prä)(Akt) caedem(A). Exitus(N) pugnantium(Prä)(Akt)(G) mors(N) est(Prä)(Akt); ferro(Abl)
+(338) den|Sieger in andere halten|sie|zurück Tötung. Ausgang der|Kämpfenden Tod ist; mit|Eisen
+(339) et(Kon) igne(Abl) res(N) geritur(Prä)(Pas). Haec(Pr)(N) fiunt(Prä)(Akt), dum(Kon) vacat(Prä)(Akt) harena(N). "
+(339) und mit|Feuer Sache wird|geführt. dieses geschehen, solange frei|ist die|Arena. "
+= § 5 =
+(341) Sed(Kon) latrocinium(A) fecit(Per)(Akt) aliquis(Pr)(N), occidit(Per)(Akt) hominem(A)." Quid(Pr)(A) ergo(Pt) ? Quia(Kon)
+(341) aber Räuberei hat|begangen jemand, tötete einen|Menschen." was also ? weil
+(342) occidit(Per)(Akt) ille(Pr)(N), meruit(Per)(Akt) ut(Kon) hoc(Pr)(A) pateretur(Imp)(Pas)(Knj); tu(Pr)(N) quid(Pr)(A) meruisti(Per)(Akt) miser(Adj)(V),
+(342) tötete jener, verdiente dass dies erlitte; du was hast|verdient Elender,
+(343) ut(Kon) hoc(Pr)(A) spectes(Prä)(Akt)(Knj) ? " Occide(Prä)(Akt)(Imv), verbera(Prä)(Akt)(Imv), ure(Prä)(Akt)(Imv) ! Quare(Adv)
+(343) dass dies zuschaust|du ? " töte, schlage, brenne ! weshalb
+(344) tam(Adv) timide(Adv) incurrit(Prä)(Akt) in(Prp) ferrum(A) ? Quare(Adv) parum(Adv) audacter(Adv) occidit(Prä)(Akt)
+(344) so ängstlich läuft|hinein in Eisen ? weshalb zu|wenig kühn tötet|er
+(345) ? Quare(Adv) parum(Adv) libenter(Adv) moritur(Prä)(Akt) ? Plagis(Abl) agatur(Prä)(Pas)(Knj) in(Prp) vulnera(A),
+(345) ? weshalb zu|wenig gern stirbt|er ? mit|Schlägen werde|getrieben in Wunden,
+(346) mutuos(Adj)(A) ictus(A) nudis(Adj)(Abl) et(Kon) obviis(Adj)(Abl) pectoribus(Abl) excipiant(Prä)(Akt)(Knj)." Intermissum(Per)(Pas)(N) est(Prä)(Akt) spectaculum(N):
+(346) gegenseitige Schläge nackten und offenen mit|Brüsten mögen|auffangen." unterbrochen ist Schauspiel:
+(347) "interim(Adv) iugulentur(Prä)(Pas)(Knj) homines(N), ne(Kon) nihil(N) agatur(Prä)(Pas)(Knj)." Age(Prä)(Akt)(Imv), ne(Kon) hoc(Pr)(A) quidem(Pt)
+(347) "unterdessen mögen|geschlachtet|werden Menschen, damit|nicht nichts getan|werde." nun, nicht dies einmal
+(348) intellegitis(Prä)(Akt), mala(Adj)(A) exempla(A) in(Prp) eos(Pr)(A) redundare(Inf)(Akt), qui(Pr)(N) faciunt(Prä)(Akt) ? Agite(Prä)(Akt)(Imv)
+(348) versteht|ihr, schlechte Beispiele auf die|jenigen zurück|fließen, die tun ? handelt
+(349) dis(Abl) inmortalibus(Adj)(Abl) gratias(A), quod(Kon) eum(Pr)(A) docetis(Prä)(Akt) esse(Inf)(Akt) crudelem(Adj)(A), qui(Pr)(N) non(Pt)
+(349) den|Göttern unsterblichen Dank, dass jenen lehrt|ihr zu|sein grausam, der nicht
+(350) potest(Prä)(Akt) discere(Inf)(Akt).
+(350) kann lernen.
+= § 6 =
+(352) Subducendus(Gdv)(Fu1)(Pas)(N) populo(D) est(Prä)(Akt) tener(Adj)(N) animus(N) et(Kon) parum(Adv) tenax(Adj)(N) recti(G); facile(Adv)
+(352) weg|zu|führender dem|Volk ist zarter Geist und zu|wenig fest des|Rechten; leicht
+(353) transitur(Prä)(Pas) ad(Prp) plures(Adj)(A)(Kmp). Socrati(D) et(Kon) Catoni(D) et(Kon) Laelio(D) excutere(Inf)(Akt) morem(A)
+(353) wird|übergegangen zu mehreren. dem|Sokrates und dem|Cato und dem|Laelius abschütteln Sitte
+(354) suum(Adj)(A) dissimilis(Adj)(N) multitudo(N) potuisset(Plq)(Akt)(Knj); adeo(Adv) nemo(Pr)(N) nostrum(G), qui(Pr)(N) cum(Kon) maxime(Adv)(Sup)
+(354) seine unähnliche Menge hätte|gekonnt; so|sehr niemand von|uns, der gerade am|meisten
+(355) concinnamus(Prä)(Akt) ingenium(A), ferre(Inf)(Akt) impetum(A) vitiorum(G) tam(Adv) magno(Adj)(Abl) comitatu(Abl) venientium(Prä)(Akt)(G) potest(Prä)(Akt).
+(355) gestalten|wir Anlage, zu|ertragen Ansturm der|Laster so großem Geleit kommender kann.
+= § 7 =
+(357) Unum(Adj)(N) exemplum(N) luxuriae(G) aut(Kon) avaritiae(G) multum(Adj)(A) mali(G) facit(Prä)(Akt); convictor(N) delicatus(Adj)(N)
+(357) ein|einziges Beispiel der|Üppigkeit oder der|Habsucht viel des|Übels macht; Tafel|Gefährte verwöhnt
+(358) paulatim(Adv) enervat(Prä)(Akt) et(Kon) emollit(Prä)(Akt), vicinus(N) dives(Adj)(N) cupiditatem(A) inritat(Prä)(Akt), malignus(Adj)(N) comes(N)
+(358) allmählich entkräftet und erweicht, der|Nachbar reich die|Begierde reizt|an, bösartig Begleiter
+(359) quamvis(Kon) candido(Adj)(D) et(Kon) simplici(Adj)(D) rubiginem(A) suam(Adj)(A) adfricuit(Per)(Akt). Quid(Pr)(A) tu(Pr)(N) accidere(Inf)(Akt)
+(359) wenngleich dem|Reinen und dem|Schlichten Rost seinen rieb|an. was du geschehen
+(360) his(Pr)(D) moribus(D) credis(Prä)(Akt), in(Prp) quos(Pr)(A) publice(Adv) factus(Per)(Pas)(N) est(Prä)(Akt) impetus(N) ?
+(360) diesen Sitten glaubst|du, in die|welchen öffentlich gemacht ist Angriff ?
+(361) Necesse(Adj)(N) est(Prä)(Akt) aut(Kon) imiteris(Prä)(Pas)(Knj) aut(Kon) oderis(Per)(Akt)(Knj).
+(361) nötig ist entweder nachahmest|du oder hassest|du.
+= § 8 =
+(363) Utrumque(Pr)(A) autem(Pt) devitandum(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt); neve(Kon) similis(Adj)(N) malis(Adj)(D) fias(Prä)(Pas)(Knj), quia(Kon) multi(Adj)(N)
+(363) beides aber zu|vermeidend ist; und|nicht ähnlich den|Schlechten werdest|du, weil viele
+(364) sunt(Prä)(Akt), neve(Kon) inimicus(Adj)(N) multis(D), quia(Kon) dissimiles(Adj)(N) sunt(Prä)(Akt). Recede(Prä)(Akt)(Imv) in(Prp) te(Pr)(A)
+(364) sind, und|nicht Feind vielen, weil unähnlich sind. ziehe|dich|zurück in dich
+(365) ipsum(Pr)(A), quantum(Adv) potes(Prä)(Akt). Cum(Prp) his(Pr)(Abl) versare(Prä)(Pas)(Imv), qui(Pr)(N) te(Pr)(A) meliorem(Adj)(A)(Kmp) facturi(Fu1)(Akt)(N)
+(365) selbst, so|weit kannst|du. mit diesen verkehre, die dich besser machen|werdend
+(366) sunt(Prä)(Akt). Illos(Pr)(A) admitte(Prä)(Akt)(Imv), quos(Pr)(A) tu(Pr)(N) potes(Prä)(Akt) facere(Inf)(Akt) meliores(Adj)(A)(Kmp). Mutuo(Adv) ista(Pr)(N)
+(366) sind. jene lasse|ein, die|welche du kannst machen besser. gegenseitig diese|Dinge|da
+(367) fiunt(Prä)(Akt), et(Kon) homines(N), dum(Kon) docent(Prä)(Akt), discunt(Prä)(Akt).
+(367) geschehen, und Menschen, während lehren|sie, lernen|sie.
+= § 9 =
+(369) Non(Pt) est(Prä)(Akt) quod(Kon) te(Pr)(A) gloria(N) publicandi(Ger)(G) ingenii(G) producat(Prä)(Akt)(Knj) in(Prp) medium(A),
+(369) nicht ist dass dich der|Ruhm des|Öffentlich|Machens der|Begabung vor|führe in die|Mitte,
+(370) ut(Kon) recitare(Inf)(Akt) istis(Pr)(D) velis(Prä)(Akt)(Knj) aut(Kon) disputare(Inf)(Akt); quod(Kon) facere(Inf)(Akt) te(Pr)(A) vellem(Imp)(Akt)(Knj),
+(370) damit vorzulesen jenen|da willest|du oder zu|erörtern; was zu|tun dich wünschte|ich,
+(371) si(Kon) haberes(Imp)(Akt)(Knj) isti(Pr)(D) populo(D) idoneam(Adj)(A) mercem(A); nemo(Pr)(N) est(Prä)(Akt), qui(Pr)(N) intellegere(Inf)(Akt)
+(371) wenn hättest|du diesem|da Volk geeignete Ware; niemand ist, der zu|verstehen
+(372) te(Pr)(A) possit(Prä)(Akt)(Knj). Aliquis(Pr)(N) fortasse(Adv), unus(Adj)(N) aut(Kon) alter(Adj)(N) incidet(Fu1)(Akt), et(Kon) hic(Pr)(N)
+(372) dich vermöge. irgend|einer vielleicht, einer oder ein|anderer wird|auftreffen, und dieser
+(373) ipse(Pr)(N) formandus(Gdv)(Fu1)(Pas)(N) tibi(Pr)(D) erit(Fu1)(Akt) instituendusque(Gdv)(Fu1)(Pas)(N)(Kon) ad(Prp) intellectum(A) tui(Pr)(G). " Cui(Pr)(D)
+(373) selbst zu|bildender dir wird|sein zu|unterweisender|und zu das|Verständnis deiner. " wem
+(374) ergo(Pt) ista(Pr)(A) didici(Per)(Akt) ? " Non(Pt) est(Prä)(Akt) quod(Kon) timeas(Prä)(Akt)(Knj), ne(Kon)
+(374) also diese|Dinge|da lernte|ich ? " nicht ist dass du|fürchtest, dass|nicht
+(375) operam(A) perdideris(Per)(Akt)(Knj); tibi(Pr)(D) didicisti(Per)(Akt).
+(375) die|Mühe verloren|habest; für|dich hast|gelernt|du.
+= § 10 =
+(377) Sed(Kon) ne(Kon) soli(Adj)(D) mihi(Pr)(D) hodie(Adv) didicerim(Per)(Akt)(Knj), communicabo(Fu1)(Akt) tecum(Pr)(Abl)(Prp), quae(Pr)(N) occurrerunt(Per)(Akt)
+(377) aber damit|nicht allein mir heute gelernt|habe|ich, werde|ich|mitteilen mit|dir, welche begegnet|sind
+(378) mihi(Pr)(D) egregie(Adv) dicta(Per)(Pas)(N) circa(Prp) eundem(Pr)(A) fere(Adv) sensum(A) tria(Adj)(N); ex(Prp) quibus(Pr)(Abl)
+(378) mir ausgezeichnet Gesagte um denselben fast Sinn drei; aus denen
+(379) unum(Adj)(A) haec(Pr)(N) epistula(N) in(Prp) debitum(A) solvet(Fu1)(Akt), duo(Adj)(A) in(Prp) antecessum(A) accipe(Prä)(Akt)(Imv).
+(379) eines dieser Brief in die|Schuld wird|einlösen, zwei in Voraus|Zahlung nimm|an.
+(380) Democritus(N) ait(Prä)(Akt): " Unus(Adj)(N) mihi(Pr)(D) pro(Prp) populo(Abl) est(Prä)(Akt), et(Kon) populus(N)
+(380) Demokrit sagt: " einer mir für das|Volk ist, und das|Volk
+(381) pro(Prp) uno(Abl)."
+(381) für einen."
+= § 11 =
+(383) Bene(Adv) et(Kon) ille(Pr)(N), quisquis(Pr)(N) fuit(Per)(Akt), ambigitur(Prä)(Pas) enim(Pt) de(Prp) auctore(Abl), cum(Kon)
+(383) gut auch jener, wer|auch|immer war, wird|bezweifelt nämlich über den|Urheber, als
+(384) quaereretur(Imp)(Pas)(Knj) ab(Prp) illo(Pr)(Abl), quo(Pr)(Abl) tanta(Adj)(N) diligentia(N) artis(G) spectaret(Imp)(Akt)(Knj) ad(Prp) paucissimos(Adj)(A)(Sup)
+(384) gefragt|würde von jenem, wozu so|große Sorgfalt der|Kunst sich|richtete auf sehr|wenige
+(385) perventurae(Fu1)(Akt)(G), " Satis(Adv) sunt(Prä)(Akt)," inquit(Prä)(Akt), " mihi(Pr)(D) pauci(Adj)(N), satis(Adv) est(Prä)(Akt)
+(385) hin|gelangend|werdender, " genug sind," sagt|er, " mir wenige, genug ist
+(386) unus(Adj)(N), satis(Adv) est(Prä)(Akt) nullus(Adj)(N)." Egregie(Adv) hoc(Pr)(N) tertium(Adj)(N) Epicurus(N), cum(Kon) uni(Pr)(D)
+(386) einer, genug ist keiner." ausgezeichnet dies dritte Epikur, als einem
+(387) ex(Prp) consortibus(Abl) studiorum(G) suorum(Adj)(G) scriberet(Imp)(Akt)(Knj): " Haec(Pr)(A)," inquit(Prä)(Akt), " ego(Pr)(N)
+(387) aus Genossen der|Studien seiner schriebe: " diese|Dinge," sagt|er, " ich
+(388) non(Pt) multis(Adj)(D), sed(Kon) tibi(Pr)(D); satis(Adv) enim(Pt) magnum(Adj)(N) alter(Pr)(N) alteri(Pr)(D) theatrum(N)
+(388) nicht vielen, sondern dir; hinreichend nämlich großes der|eine dem|anderen Schau|Platz
+(389) sumus(Prä)(Akt)."
+(389) sind|wir."
+= § 12 =
+(391) Ista(Pr)(N), mi(Adj)(V) Lucili(V), condenda(Gdv)(Fu1)(Pas)(N) in(Prp) animum(A) sunt(Prä)(Akt), ut(Kon) contemnas(Prä)(Akt)(Knj) voluptatem(A)
+(391) diese|Dinge|da, mein Lucilius, einzu|lagernde in den|Geist sind, damit verachtest|du die|Lust
+(392) ex(Prp) plurium(G) adsensione(Abl) venientem(Prä)(Akt)(A). Multi(Adj)(N) te(Pr)(A) laudant(Prä)(Akt). Ecquid(Pr)(A) habes(Prä)(Akt), cur(Kon)
+(392) aus der|Mehreren der|Zustimmung her|kommende. viele dich loben|sie. irgend|etwas hast|du, warum
+(393) placeas(Prä)(Akt)(Knj) tibi(Pr)(D), si(Kon) is(Pr)(N) es(Prä)(Akt), quem(Pr)(A) intellegant(Prä)(Akt)(Knj) multi(Adj)(N) ? Introrsus(Adv)
+(393) gefällest|du dir, wenn der|jenige bist|du, den|welchen verstehen|sie viele ? nach|innen
+(394) bona(N) tua(Adj)(N) spectent(Prä)(Akt)(Knj). VALE(Imv)(Akt).
+(394) Güter deine schauen|mögen|sie. lebe|wohl.
+=== Brief 8 ===
+== Seneca Lucilio suo salutem ==
+= § 1 =
+(398) "Tu(Pr)(N) me(Pr)(A)," inquis(Prä)(Akt), "vitare(Inf)(Akt) turbam(A) iubes(Prä)(Akt), secedere(Inf)(Akt) et(Kon) conscientia(Abl) esse(Inf)(Akt)
+(398) "du mich," sagst|du, "zu|meiden die|Menge befiehlst|du, sich|zurückzuziehen und mit|dem|Gewissen zu|sein
+(399) contentum(Adj)(A) ? Ubi(Adv) illa(Pr)(N) praecepta(N) vestra(Adj)(N), quae(Pr)(N) imperant(Prä)(Akt) in(Prp) actu(Abl)
+(399) zufrieden ? wo jene Vorschriften eure, die gebieten im Handeln
+(400) mori(Inf)(Pas) ? " Quod(Kon) ego(Pr)(N) tibi(Pr)(D) videor(Prä)(Pas) interim(Adv) suadere(Inf)(Akt), in(Prp)
+(400) zu|sterben ? " was ich dir scheine einstweilen anzu|raten, in
+(401) hoc(Pr)(Abl) me(Pr)(A) recondidi(Per)(Akt) et(Kon) fores(A) clusi(Per)(Akt), ut(Kon) prodesse(Inf)(Akt) pluribus(Adj)(D) possem(Imp)(Akt)(Knj).
+(401) hierin mich verschloss|ich und die|Türen schloss|ich, damit zu|nützen mehreren könnte|ich.
+(402) Nullus(Adj)(N) mihi(Pr)(D) per(Prp) otium(A) dies(N) exit(Prä)(Akt). Partem(A) noctium(G) studiis(Abl) vindico(Prä)(Akt).
+(402) kein mir durch die|Muße Tag vergeht. einen|Teil der|Nächte den|Studien beanspruche|ich.
+(403) Non(Pt) vaco(Prä)(Akt) somno(Abl) sed(Kon) succumbo(Prä)(Akt), et(Kon) oculos(A) vigilia(Abl) fatigatos(Per)(Pas)(A) cadentesque(Prä)(Akt)(A)(Kon)
+(403) nicht bin|frei vom|Schlaf sondern ergebe|ich|mich, und die|Augen vom|Wachen ermüdet fallend|und
+(404) in(Prp) opere(Abl) detineo(Prä)(Akt).
+(404) in der|Arbeit halte|ich|fest.
+= § 2 =
+(406) Secessi(Per)(Akt) non(Pt) tantum(Adv) ab(Prp) hominibus(Abl), sed(Kon) a(Prp) rebus(Abl), et(Kon) inprimis(Adv)
+(406) habe|ich|mich|zurückgezogen nicht nur von den|Menschen, sondern von den|Dingen, und vor|allem
+(407) a(Prp) meis(Adj)(Abl) rebus(Abl); posterorum(G) negotium(A) ago(Prä)(Akt); illis(Pr)(D) aliqua(Pr)(A), quae(Pr)(A) possint(Prä)(Akt)(Knj)
+(407) von meinen Dingen; der|Nachkommen Geschäft führe|ich; jenen einiges, das|welche können|sie
+(408) prodesse(Inf)(Akt), conscribo(Prä)(Akt). Salutares(Adj)(N) admonitiones(N), velut(Kon) medicamentorum(G) utilium(Adj)(G) compositiones(N), litteris(D) mando(Prä)(Akt),
+(408) zu|nützen, schreibe|ich. heilsame Mahnungen, gleichwie der|Heil|mittel nützlichen Zusammen|Stellungen, der|Schrift übergebe|ich,
+(409) esse(Inf)(Akt) illas(Pr)(A) efficaces(Adj)(A) in(Prp) meis(Adj)(Abl) ulceribus(Abl) expertus(Per)(Akt)(N), quae(Pr)(N) etiam(Adv) si(Kon)
+(409) zu|sein jene wirksam an meinen Geschwüren erfahren|habend, welche auch wenn
+(410) persanata(Per)(Pas)(N) non(Pt) sunt(Prä)(Akt), serpere(Inf)(Akt) desierunt(Per)(Akt).
+(410) vollständig|geheilt nicht sind, zu|kriechen haben|aufgehört.
+= § 3 =
+(412) Rectum(Adj)(N) iter(N), quod(Pr)(A) sero(Adv) cognovi(Per)(Akt) et(Kon) lassus(Adj)(N) errando(Ger)(Abl), aliis(Pr)(D) monstro(Prä)(Akt).
+(412) gerader Weg, das|welchen spät erkannte|ich und ermüdet durch|das|Irren, den|Anderen zeige|ich.
+(413) Clamo(Prä)(Akt): "Vitate(Prä)(Akt)(Imv), quaecumque(Pr)(A) vulgo(Adv) placent(Prä)(Akt), quae(Pr)(N) casus(N) adtribuit(Prä)(Akt). Ad(Prp) omne(Adj)(A)
+(413) ich|rufe: "meidet, was|auch|immer bei|der|Menge gefallen, welche der|Zufall zuweist. gegenüber jedes
+(414) fortuitum(Adj)(A) bonum(A) suspiciosi(Adj)(N) pavidique(Adj)(N)(Kon) subsistite(Prä)(Akt)(Imv); et(Kon) fera(N) et(Kon) piscis(N) spe(Abl)
+(414) zufälliges Gut misstrauisch furchtsam|und haltet|inne; sowohl das|Wild|tier als|auch der|Fisch durch|Hoffnung
+(415) aliqua(Adj)(Abl) oblectante(Prä)(Akt)(Abl) decipitur(Prä)(Pas). Munera(N) ista(Pr)(N) fortunae(G) putatis(Prä)(Akt)? Insidiae(N) sunt(Prä)(Akt). Quisquis(Pr)(N)
+(415) durch|irgendeine erfreuend wird|getäuscht. Gaben diese|da des|Glücks meint|ihr|?? Nach|Stellungen sind. wer|auch|immer
+(416) vestrum(Pr)(G) tutam(Adj)(A) agere(Inf)(Akt) vitam(A) volet(Fu1)(Akt), quantum(Adv) plurimum(Adv)(Sup) potest(Prä)(Akt), ista(Pr)(A) viscata(Per)(Pas)(A)
+(416) von|euch sicheres zu|führen Leben wird|wollen, so|viel wie|möglich kann|er, diese|Dinge|da mit|Leim|bestrichene
+(417) beneficia(A) devitet(Prä)(Akt)(Knj), in(Prp) quibus(Pr)(Abl) hoc(Pr)(A) quoque(Pt) miserrimi(Adj)(N)(Sup) fallimur(Prä)(Pas); habere(Inf)(Akt) nos(Pr)(A)
+(417) Wohl|taten meide|er, in welchen dies auch ärmsten werden|wir|getäuscht; zu|haben uns
+(418) putamus(Prä)(Akt), haeremus(Prä)(Akt).
+(418) meinen|wir, haften|wir.
+= § 4 =
+(420) In(Prp) praecipitia(A) cursus(N) iste(Pr)(N) deducit(Prä)(Akt). Huius(Pr)(G) eminentis(Prä)(Akt)(G) vitae(G) exitus(N) cadere(Inf)(Akt)
+(420) in die|Ab|gründe der|Lauf dieser|da führt|hinab. dieses herausragenden Lebens Ausgang zu|stürzen
+(421) est(Prä)(Akt). Deinde(Adv) ne(Pt) resistere(Inf)(Akt) quidem(Pt) licet(Prä)(Akt), eum(Pr)(A) coepit(Per)(Akt) transversos(Adj)(A) agere(Inf)(Akt)
+(421) ist. sodann nicht widerstehen einmal ist|erlaubt, ihn begann quer zu|treiben
+(422) felicitas(N), aut(Kon) saltim(Adv) rectis(Adj)(Abl) aut(Kon) semel(Adv) ruere(Inf)(Akt); non(Pt) evertit(Prä)(Akt) fortuna(N),
+(422) das|Glück, oder wenigstens auf|Geraden oder auf|einmal zu|stürzen; nicht stürzt|um das|Glück,
+(423) sed(Kon) cernulat(Prä)(Akt) et(Kon) allidit(Prä)(Akt).
+(423) sondern schlingert und schlägt|an.
+= § 5 =
+(425) Hanc(Pr)(A) ergo(Pt) sanam(Adj)(A) ac(Kon) salubrem(Adj)(A) formam(A) vitae(G) tenete(Prä)(Akt)(Imv), ut(Kon) corpori(D)
+(425) diese also gesunde und heilsame Form des|Lebens haltet, damit dem|Körper
+(426) tantum(Adv) indulgeatis(Prä)(Akt)(Knj), quantum(Adv) bonae(Adj)(G) valitudini(D) satis(Adv) est(Prä)(Akt). Durius(Adv)(Kmp) tractandum(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt),
+(426) nur|so|viel gebt|ihr|nach, wie der|guten Gesundheit genug ist. härter zu|behandelnd ist,
+(427) ne(Kon) animo(D) male(Adv) pareat(Prä)(Akt)(Knj). Cibus(N) famem(A) sedet(Prä)(Akt), potio(N) sitim(A) extinguat(Prä)(Akt)(Knj),
+(427) damit|nicht dem|Geist schlecht gehorche. Speise den|Hunger stillt, Trank den|Durst lösche,
+(428) vestis(N) arceat(Prä)(Akt)(Knj) frigus(A), domus(N) munimentum(N) sit(Prä)(Akt)(Knj) adversus(Prp) infesta(Adj)(A) corporis(G). Hanc(Pr)(A)
+(428) Kleidung halte|ab die|Kälte, das|Haus Schutz|Bollwerk sei gegen feindliche des|Körpers. diese
+(429) utrum(Kon) caespes(N) erexerit(Per)(Akt)(Knj) an(Kon) varius(Adj)(N) lapis(N) gentis(G) alienae(Adj)(G), nihil(Pr)(N) interest(Prä)(Akt);
+(429) ob Rasen|Scholle aufgerichtet|habe oder bunt Stein des|Volkes fremden, nichts bedeutet;
+(430) scitote(Prä)(Akt)(Imv) tam(Adv) bene(Adv) hominem(A) culmo(Abl) quam(Kon) auro(Abl) tegi(Inf)(Pas). Contemnite(Prä)(Akt)(Imv) omnia(Pr)(A),
+(430) wisset so gut den|Menschen mit|dem|Stroh wie mit|dem|Gold bedeckt|zu|werden. verachtet alles,
+(431) quae(Pr)(A) supervacuus(Adj)(N) labor(N) velut(Adv) ornamentum(A) ac(Kon) decus(A) ponit(Prä)(Akt). Cogitate(Prä)(Akt)(Imv) nihil(Pr)(A)
+(431) die überflüssige Arbeit gleichwie Zier|Stück und Schmuck setzt. bedenkt nichts
+(432) praeter(Prp) animum(A) esse(Inf)(Akt) mirabile(Adj)(A), cui(Pr)(D) magno(Adj)(D) nihil(Pr)(N) magnum(Adj)(N) est(Prä)(Akt)."
+(432) außer den|Geist zu|sein erstaunlich, dem großen nichts groß ist."
+= § 6 =
+(434) Si(Kon) haec(Pr)(A) mecum(Pr)(Abl)(Prp), si(Kon) haec(Pr)(A) cum(Prp) posteris(N)(Abl) loquor(Prä)(Akt), non(Pt) videor(Prä)(Pas)
+(434) wenn diese mit|mir, wenn diese mit den|Nachkommen spreche|ich, nicht scheine|ich
+(435) tibi(Pr)(D) plus(Adv)(Kmp) prodesse(Inf)(Akt), quam(Kon) cum(Prp) ad(Prp) vadimonium(A) advocatus(Per)(Pas)(N) descenderem(Imp)(Akt)(Knj), aut(Kon)
+(435) dir mehr zu|nützen, als als zu Gerichts|Termin als|Beistand hinab|ginge, oder
+(436) tabulis(Abl) testamenti(G) anulum(A) inprimerem(Imp)(Akt)(Knj), aut(Kon) in(Prp) senatu(Abl) candidato(D) vocem(A) et(Kon)
+(436) auf|den|Tafeln des|Testaments den|Ring eindrückte, oder in dem|Senat dem|Kandidaten Stimme und
+(437) manum(A) commodarem(Imp)(Akt)(Knj) ? Mihi(Pr)(D) crede(Prä)(Akt)(Imv), qui(Pr)(N) nihil(Pr)(A) agere(Inf)(Akt) videntur(Prä)(Pas), maiora(Adj)(A)
+(437) die|Hand lieh|ich ? mir glaube, der nichts zu|tun scheinen, Größeres
+(438) agunt(Prä)(Akt); humana(Adj)(A) divinaque(Adj)(A)(Kon) simul(Adv) tractant(Prä)(Akt).
+(438) treiben|sie; Menschliches Göttliches|und zugleich behandeln|sie.
+= § 7 =
+(440) Sed(Kon) iam(Adv) finis(N) faciendus(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt) et(Kon) aliquid(Pr)(N), ut(Kon) institui(Per)(Akt), pro(Prp)
+(440) aber schon Ende sei|zu|machen ist und etwas, wie ich|einrichtete, für
+(441) hac(Pr)(Abl) epistula(Abl) dependendum(Gdv)(Fu1)(Pas)(N). Id(Pr)(N) non(Pt) de(Prp) meo(Adj)(Abl) fiet(Fu1)(Akt); adhuc(Adv) Epicurum(A)
+(441) mit|diesem Brief sei|zu|entrichten. dieses nicht von meinem wird|geschehen; bisher Epikur
+(442) complicamus(Prä)(Akt), cuius(Pr)(G) hanc(Pr)(A) vocem(A) hodierno(Adj)(Abl) die(N)(Abl) legi(Per)(Akt): " Philosophiae(G) servias(Prä)(Akt)(Knj)
+(442) wir|schließen|ab, dessen diese Äußerung heutigen Tag las|ich: " der|Philosophie dienen|mögest|du
+(443) oportet(Prä)(Akt), ut(Kon) tibi(Pr)(D) contingat(Prä)(Akt)(Knj) vera(Adj)(N) libertas(N)." Non(Pt) differtur(Prä)(Pas) in(Prp) diem(A),
+(443) es|ist|nötig, damit dir zuteil|werde wahre Freiheit." nicht wird|aufgeschoben auf den|Tag,
+(444) qui(Pr)(N) se(Pr)(A) illi(Pr)(D) subiecit(Per)(Akt) et(Kon) tradidit(Per)(Akt); statim(Adv) circumagitur(Prä)(Pas). Hoc(Pr)(N) enim(Pt)
+(444) wer sich jener unterwarf und übergab; sofort wird|umgewendet. dies nämlich
+(445) ipsum(Adj)(N) philosophiae(G) servire(Inf)(Akt) libertas(N) est(Prä)(Akt).
+(445) selbst der|Philosophie zu|dienen Freiheit ist.
+= § 8 =
+(447) Potest(Prä)(Akt) fieri(Inf)(Pas), ut(Kon) me(Pr)(A) interroges(Prä)(Akt)(Knj), quare(Adv) ab(Prp) Epicuro(Abl) tam(Adv) multa(Adj)(A)
+(447) es|kann geschehen, dass mich fragest|du, warum von Epikur so vieles
+(448) bene(Adv) dicta(Per)(Pas)(A) referam(Prä)(Akt)(Knj) potius(Adv) quam(Kon) nostrorum(Adj)(G). Quid(Pr)(N) est(Prä)(Akt) tamen(Pt), quare(Adv)
+(448) gut Gesagtes berichten|möge|ich eher als der|Unseren. was ist dennoch, weshalb
+(449) tu(Pr)(N) istas(Pr)(A) Epicuri(G) voces(A) putes(Prä)(Akt)(Knj) esse(Inf)(Akt), non(Pt) publicas(Adj)(A) ? Quam(Adv)
+(449) du jene des|Epikur Stimmen meinst|du zu|sein, nicht allgemein ? wie
+(450) multi(Adj)(N) poetae(N) dicunt(Prä)(Akt), quae(Pr)(N) philosophis(D) aut(Kon) dicta(Per)(Pas)(N) sunt(Prä)(Akt) aut(Kon) dicenda(Gdv)(Fu1)(Pas)(N)!
+(450) viele Dichter sagen, die den|Philosophen oder Gesagtes sind oder zu|sagende!
+(451) Non(Pt) adtingam(Prä)(Akt)(Knj) tragicos(Adj)(A) nec(Kon) togatas(Adj)(A) nostras(Adj)(A). Habent(Prä)(Akt) enim(Pt) hae(Pr)(N) quoque(Pt)
+(451) nicht berühre|ich Tragiker noch Toga|Komödien unsere. haben nämlich diese auch
+(452) aliquid(Pr)(N) severitatis(G) et(Kon) sunt(Prä)(Akt) inter(Prp) comoedias(A) ac(Kon) tragoedias(A) mediae(Adj)(N). Quantum(Adv)
+(452) etwas der|Strenge und sind zwischen Komödien und Tragödien mittlere. wie|viel
+(453) disertissimorum(Adj)(G)(Sup) versuum(G) inter(Prp) mimos(A) iacet(Prä)(Akt)! Quam(Adv) multa(Adj)(N) Publilii(G) non(Pt) excalceatis(Per)(Pas)(D),
+(453) der|beredtsten der|Verse zwischen Mimen liegt! wie viele des|Publilius nicht den|Schuh|losen,
+(454) sed(Kon) coturnatis(Per)(Pas)(D) dicenda(Gdv)(Fu1)(Pas)(N) sunt(Prä)(Akt)!
+(454) sondern den|Kothurn|Trägern zu|sagende sind!
+= § 9 =
+(456) Unum(Adj)(A) versum(A) eius(Pr)(G), qui(Pr)(N) ad(Prp) philosophiam(A) pertinet(Prä)(Akt) et(Kon) ad(Prp) hanc(Pr)(A)
+(456) einen Vers dessen, der zu Philosophie gehört und zu dieser
+(457) partem(A), quae(Pr)(N) modo(Adv) fuit(Per)(Akt) in(Prp) manibus(Abl), referam(Prä)(Akt)(Knj), quo(Pr)(Abl) negat(Prä)(Akt) fortuita(Adj)(A)
+(457) Teil, die eben war in Händen, berichten|möge|ich, wodurch verneint Zufälliges
+(458) in(Prp) nostro(Adj)(Abl) habenda(Gdv)(Fu1)(Pas)(N):
+(458) in unserem zu|haltendes:
+(459) [Zitat Anfang]
+(460) Alienum(Adj)(N) est(Prä)(Akt) omne(Adj)(N), quicquid(Pr)(N) optando(Ger)(Abl) evenit(Prä)(Akt).
+(460) fremd ist alles, was|auch|immer durch|das|Wünschen eintritt.
+(461) [Zitat Ende]
+= § 10 =
+(463) Hunc(Pr)(A) sensum(A) a(Prp) te(Pr)(Abl) dici(Inf)(Pas) non(Pt) paulo(N)(Abl) melius(Adv)(Kmp) et(Kon) adstrictis(Per)(Pas)(Abl)
+(463) diesen Sinn von dir gesagt|zu|werden nicht um|ein|Wenig besser und zusammen|Gezogenen
+(464) memini(Per)(Akt):
+(464) ich|erinnere|mich:
+(465) [Zitat Anfang]
+(466) Non(Pt) est(Prä)(Akt) tuum(Adj)(N), fortuna(N) quod(Pr)(N) fecit(Per)(Akt) tuum(Adj)(N).
+(466) nicht ist dein, Glück|Schicksal was gemacht|hat dein.
+(467) [Zitat Ende]
+(468) Illud(Pr)(A) etiamnunc(Adv) melius(Adj)(N)(Kmp) dictum(Per)(Pas)(N) a(Prp) te(Pr)(Abl) non(Pt) praeteribo(Fu1)(Akt):
+(468) jenes noch besser Gesagte von dir nicht werde|ich|übergehen:
+(469) [Zitat Anfang]
+(470) Dari(Inf)(Pas) bonum(N) quod(Pr)(N) potuit(Per)(Akt), auferri(Inf)(Pas) potest(Prä)(Akt).
+(470) gegeben|zu|werden Gut was vermocht|hat, weggenommen|zu|werden kann.
+(471) [Zitat Ende]
+(472) Hoc(Pr)(A) non(Pt) inputo(Prä)(Akt) in(Prp) solutum(Per)(Pas)(A); dedi(Per)(Akt) de(Prp) tuo(Adj)(Abl) tibi(Pr)(D).
+(472) dies nicht rechne|ich|an zu dem|Ausgleich; gab|ich von dem|Deinen dir.
+=== Brief 9 ===
+== Seneca Lucilio suo salutem ==
+= § 1 =
+(476) An(Kon) merito(Adv) reprehendat(Prä)(Akt)(Knj) in(Prp) quadam(Adj)(Abl) epistula(Abl) Epicurus(N) eos(Pr)(A), qui(Pr)(N) dicunt(Prä)(Akt)
+(476) ob mit|Recht tadle|er in einem|gewissen Brief Epikur jene, die sagen
+(477) sapientem(Adj)(A) se(Pr)(A) ipso(Pr)(Abl) esse(Inf)(Akt) contentum(Per)(Pas)(A) et(Kon) propter(Prp) hoc(Pr)(A) amico(Abl) non(Pt)
+(477) den|Weisen sich selbst zu|sein zufrieden und wegen dies einem|Freund nicht
+(478) indigere(Inf)(Akt), desideras(Prä)(Akt) scire(Inf)(Akt). Hoc(Pr)(N) obicitur(Prä)(Pas) Stilboni(D) ab(Prp) Epicuro(Abl) et(Kon) iis(Pr)(D)
+(478) bedürfen, wünschest|du zu|wissen. dies wird|vorgehalten Stilbo von Epikur und denen
+(479) quibus(Pr)(D) summum(Adj)(N)(Sup) bonum(N) visum(Per)(Pas)(N) est(Prä)(Akt) animus(N) inpatiens(Adj)(N).
+(479) denen höchstes Gut schien ist Geist unempfindlich.
+= § 2 =
+(481) In(Prp) ambiguitatem(A) incidendum(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt), si(Kon) exprimere(Inf)(Akt) ἀπάθειαν(A) uno(Adj)(Abl) verbo(N)(Abl) cito(Adv)
+(481) in Zweideutigkeit sei|hinein|zu|fallen ist, wenn ausdrücken Apathie mit|einem Wort schnell
+(482) voluerimus(Per)(Akt)(Knj) et(Kon) inpatientiam(A) dicere(Inf)(Akt). Poterit(Fu1)(Akt) enim(Pt) contrarium(Adj)(N) ei(Pr)(D), quod(Pr)(N) significare(Inf)(Akt)
+(482) gewollt|haben|wir und Unleidlichkeit zu|sagen. wird|können nämlich das|Gegenteil dem, was bedeuten
+(483) volumus(Prä)(Akt), intellegi(Inf)(Pas). Nos(Pr)(N) eum(Pr)(A) volumus(Prä)(Akt) dicere(Inf)(Akt), qui(Pr)(N) respuat(Prä)(Akt)(Knj) omnis(Adj)(G) mali(G)
+(483) wollen, verstanden|zu|werden. wir ihn wollen sagen, der zurückweise jedes Übels
+(484) sensum(A); accipietur(Fu1)(Pas) is(Pr)(N), qui(Pr)(N) nullum(Adj)(A) ferre(Inf)(Akt) possit(Prä)(Akt)(Knj) malum(A). Vide(Prä)(Akt)(Imv) ergo(Pt),
+(484) Empfindung; wird|aufgefasst der, der kein zu|ertragen vermöge Übel. sieh daher,
+(485) num(Pt) satius(Adj)(N)(Kmp) sit(Prä)(Akt)(Knj) aut(Kon) invulnerabilem(Adj)(A) animum(A) dicere(Inf)(Akt) aut(Kon) animum(A) extra(Prp)
+(485) ob besser sei oder unverletzlichen Geist zu|sagen oder Geist außerhalb
+(486) omnem(Adj)(A) patientiam(A) positum(Per)(Pas)(N).
+(486) jeder Leidens|fähigkeit hingestellt.
+= § 3 =
+(488) Hoc(Pr)(N) inter(Prp) nos(Pr)(A) et(Kon) illos(Pr)(A) interest(Prä)(Akt): noster(Adj)(N) sapiens(Adj)(N) vincit(Prä)(Akt) quidem(Pt)
+(488) dies zwischen uns und jene besteht: unser Weiser besiegt immerhin
+(489) incommodum(A) omne(Adj)(A), sed(Kon) sentit(Prä)(Akt); illorum(Pr)(G) ne(Pt) sentit(Prä)(Akt) quidem(Pt). Illud(Pr)(N) nobis(Pr)(D)
+(489) Unannehmlichkeit jede, aber fühlt; derer nicht|einmal fühlt doch. jenes uns
+(490) et(Kon) illis(Pr)(D) commune(Adj)(N) est(Prä)(Akt): sapientem(Adj)(A) se(Pr)(A) ipso(Pr)(Abl) esse(Inf)(Akt) contentum(Per)(Pas)(A). Sed(Kon)
+(490) und ihnen gemeinsam ist: den|Weisen sich selbst zu|sein zufrieden. aber
+(491) tamen(Pt) et(Kon) amicum(A) habere(Inf)(Akt) vult(Prä)(Akt) et(Kon) vicinum(A) et(Kon) contubernalem(A), quamvis(Kon)
+(491) doch auch Freund zu|haben will und Nachbarn und Zelt|Genossen, obgleich
+(492) sibi(Pr)(D) ipse(Pr)(N) sufficiat(Prä)(Akt)(Knj).
+(492) sich er|selbst ausreiche.
+= § 4 =
+(494) Vide(Prä)(Akt)(Imv) quam(Adv) sit(Prä)(Akt)(Knj) se(Pr)(A) contentus(Per)(Pas)(N); aliquando(Adv) sui(Pr)(G) parte(Abl) contentus(Per)(Pas)(N) est(Prä)(Akt).
+(494) sieh wie sei sich zufrieden; bisweilen seiner Teil zufrieden ist.
+(495) Si(Kon) illi(Pr)(D) manum(A) aut(Kon) morbus(N) aut(Kon) hostis(N) exciderit(Fu2)(Akt), si(Kon) quis(Pr)(N)
+(495) wenn ihm die|Hand oder Krankheit oder Feind aus|geschlagen|haben|wird, wenn jemand
+(496) oculum(A) vel(Kon) oculos(A) casus(N) excusserit(Fu2)(Akt), reliquiae(N) illi(Pr)(D) suae(Adj)(N) satisfacient(Fu1)(Akt), et(Kon)
+(496) Auge oder Augen Zufall|Unfall aus|geschleudert|haben|wird, Überreste jenem seine werden|genügen, und
+(497) erit(Fu1)(Akt) inminuto(Per)(Pas)(Abl) corpore(Abl) et(Kon) amputato(Per)(Pas)(Abl) tam(Adv) laetus(Adj)(N), quam(Kon) integro(Adj)(Abl) fuit(Per)(Akt).
+(497) wird|sein verminderten Körper und ab|geschnittenen so froh, wie unversehrten war.
+(498) Sed(Kon) quae(Pr)(N) si(Kon) desunt(Prä)(Akt), non(Pt) desiderat(Prä)(Akt), non(Pt) deesse(Inf)(Akt) mavult(Prä)(Akt).
+(498) aber die wenn fehlen, nicht begehrt|er, nicht zu|fehlen zieht|er|vor.
+= § 5 =
+(500) Ita(Adv) sapiens(Adj)(N) se(Pr)(A) contentus(Per)(Pas)(N) est(Prä)(Akt), non(Pt) ut(Kon) velit(Prä)(Akt)(Knj) esse(Inf)(Akt) sine(Prp)
+(500) so der|Weise sich zufrieden ist, nicht dass wolle zu|sein ohne
+(501) amico(Abl), sed(Kon) ut(Kon) possit(Prä)(Akt)(Knj). Et(Kon) hoc(Pr)(A), quod(Pr)(N) dico(Prä)(Akt) " possit(Prä)(Akt)(Knj),"
+(501) einem|Freund, sondern dass kann|er. und dies, was sage|ich " kann|er,"
+(502) tale(Adj)(N) est(Prä)(Akt): amissum(Per)(Pas)(A) aequo(Adj)(Abl) animo(N)(Abl) fert(Prä)(Akt). Sine(Prp) amico(N)(Abl) quidem(Pt) numquam(Adv)
+(502) so ist: Verlorenes gleichmütigem mit|Sinn trägt. ohne Freund freilich niemals
+(503) erit(Fu1)(Akt). In(Prp) sua(Adj)(Abl) potestate(Abl) habet(Prä)(Akt), quam(Adv) cito(Adv) reparet(Prä)(Akt)(Knj). Quomodo(Adv) si(Kon)
+(503) wird|sein. in seiner Macht hat, wie schnell ersetze|er. wie wenn
+(504) perdiderit(Fu2)(Akt) Phidias(N) statuam(A), protinus(Adv) alteram(Adj)(A) faciet(Fu1)(Akt); sic(Adv) hic(Pr)(N) faciendarum(Gdv)(Fu1)(Pas)(G) amicitiarum(G)
+(504) verloren|haben|wird Phidias Statue, sogleich eine|andere wird|machen; so dieser der|zu|machenden Freundschaften
+(505) artifex(N) substituet(Fu1)(Akt) alium(Adj)(A) in(Prp) locum(A) amissi(Per)(Pas)(G).
+(505) Künstler wird|ersetzen einen|anderen an die|Stelle des|Verlorenen.
+= § 6 =
+(507) Quaeris(Prä)(Akt), quomodo(Adv) amicum(A) cito(Adv) facturus(Fu1)(Akt)(N) sit(Prä)(Akt)(Knj); dicam(Fu1)(Akt), si(Kon) illud(Pr)(A) mihi(Pr)(D)
+(507) fragst|du, wie Freund schnell machen|werdend sei; ich|werde|sagen, wenn jenes mir
+(508) tecum(Pr)(Abl)(Prp) converterit(Fu2)(Akt), ut(Kon) statim(Adv) tibi(Pr)(D) solvam(Prä)(Akt)(Knj), quod(Pr)(A) debeo(Prä)(Akt), et(Kon) quantum(Pr)(A)
+(508) mit|dir um|gewendet|haben|wird, damit sofort dir ich|bezahle, was ich|schulde, und wie|viel
+(509) ad(Prp) hanc(Pr)(A) epistulam(A), paria(Adj)(A) faciamus(Prä)(Akt)(Knj). Hecaton(N) ait(Prä)(Akt): " Ego(Pr)(N) tibi(Pr)(D)
+(509) zu diesem Brief, Gleiches machen|wir. Hecaton sagt: " ich dir
+(510) monstrabo(Fu1)(Akt) amatorium(Adj)(A) sine(Prp) medicamenta(Abl), sine(Prp) herba(Abl), sine(Prp) ullius(Pr)(G) veneficae(G) carmine(Abl):
+(510) ich|werde|zeigen Liebes|Mittel ohne Heil|mittel, ohne Kraut, ohne irgendeiner der|Zauberin Spruch:
+(511) si(Kon) vis(Prä)(Akt) amari(Inf)(Pas), ama(Imv)(Akt)." Habet(Prä)(Akt) autem(Pt) non(Pt) tantum(Adv) usus(N) amicitiae(G)
+(511) wenn willst|du geliebt|zu|werden, liebe." hat aber nicht nur Gebrauch der|Freundschaft
+(512) veteris(Adj)(G) et(Kon) certae(Adj)(G) magnam(Adj)(A) voluptatem(A), sed(Kon) etiam(Adv) initium(A) et(Kon) comparatio(A)
+(512) der|alten und der|gewissen große Freude, sondern auch Anfang und zusammen|Beschaffung
+(513) novae(Adj)(G).
+(513) der|neuen.
+= § 7 =
+(515) Quod(Pr)(N) interest(Prä)(Akt) inter(Prp) metentem(Prä)(Akt)(A) agricolam(A) et(Kon) serentem(Prä)(Akt)(A), hoc(Pr)(N) inter(Prp) eum(Pr)(A),
+(515) was ist|zwischen zwischen erntend Bauern und säend, dies zwischen ihn,
+(516) qui(Pr)(N) amicum(A) paravit(Per)(Akt) et(Kon) qui(Pr)(N) parat(Prä)(Akt). Attalus(N) philosophus(N) dicere(Inf)(Akt) solebat(Imp)(Akt)
+(516) der Freund beschafft|hat und der beschafft. Attalus Philosoph zu|sagen pflegte
+(517) iucundius(Adv)(Kmp) esse(Inf)(Akt) amicum(A) facere(Inf)(Akt) quam(Kon) habere(Inf)(Akt), quomodo(Adv) artifici(D) iucundius(Adv)(Kmp) pingere(Inf)(Akt)
+(517) angenehmer zu|sein Freund zu|machen als zu|haben, wie dem|Künstler angenehmer zu|malen
+(518) est(Prä)(Akt) quam(Kon) pinxisse(Per)(Akt)(Inf). Illa(Pr)(N) in(Prp) opere(N)(Abl) suo(Adj)(Abl) occupata(Per)(Pas)(N) sollicitudo(N) ingens(Adj)(N)
+(518) ist als gemalt|zu|haben. jene in dem|Werk seinem beschäftigt Unruhe gewaltige
+(519) oblectamentum(A) habet(Prä)(Akt) in(Prp) ipsa(Adj)(Abl) occupatione(N)(Abl). Non(Pt) aeque(Adv) delectatur(Prä)(Pas), qui(Pr)(N) ab(Prp)
+(519) Ergötzung hat in der|selben Beschäftigung. nicht gleich wird|erfreut, der von
+(520) opere(N)(Abl) perfecto(Per)(Pas)(Abl) removit(Per)(Akt) manum(A). Iam(Adv) fructu(N)(Abl) artis(G) suae(Adj)(G) fruitur(Prä)(Akt); ipsa(Pr)(N)
+(520) dem|Werk vollendet nahm|weg die|Hand. nun der|Frucht der|Kunst seiner genießt; sie|selbst
+(521) fruebatur(Imp)(Akt) arte(N)(Abl), cum(Kon) pingeret(Imp)(Akt)(Knj). Fructuosior(Adj)(N)(Kmp) est(Prä)(Akt) adulescentia(N) liberorum(G), sed(Kon) infantia(N)
+(521) genoss die|Kunst, als malte. ertragreicher ist Jugend der|Kinder, aber Kindheit
+(522) dulcior(Adj)(N)(Kmp).
+(522) süßer.
+= § 8 =
+(524) Nunc(Adv) ad(Prp) propositum(A) revertamur(Prä)(Akt)(Knj). Sapiens(Adj)(N), etiam(Adv) si(Kon) contentus(Per)(Pas)(N) est(Prä)(Akt) se(Pr)(A),
+(524) nun zum Vorsatz kehren|wir|zurück. der|Weise, auch wenn zufrieden ist mit|sich,
+(525) tamen(Adv) habere(Inf)(Akt) amicum(A) vult(Prä)(Akt), si(Kon) nihil(Pr)(N) aliud(Adj)(N), ut(Kon) exerceat(Prä)(Akt)(Knj) amicitiam(A),
+(525) doch zu|haben einen|Freund will, wenn nichts anderes, damit ausübe die|Freundschaft,
+(526) ne(Kon) tam(Adv) magna(Adj)(N) virtus(N) iaceat(Prä)(Akt)(Knj), non(Pt) ad(Prp) hoc(Pr)(A), quod(Pr)(A) dicebat(Imp)(Akt)
+(526) damit|nicht so große Tugend daliege, nicht zu diesem, was sagte
+(527) Epicurus(N) in(Prp) hac(Pr)(Abl) ipsa(Adj)(Abl) epistula(N)(Abl), " ut(Kon) habeat(Prä)(Akt)(Knj), qui(Pr)(N) sibi(Pr)(D)
+(527) Epikur in diesem selben Brief, " damit habe|er, der sich
+(528) aegro(Adj)(D) adsideat(Prä)(Akt)(Knj), succurrat(Prä)(Akt)(Knj) in(Prp) vincula(A) coniecto(Per)(Pas)(D) vel(Kon) inopi(Adj)(D)," sed(Kon) ut(Kon)
+(528) dem|Kranken bei|sitze, zu|Hilfe|komme in die|Fesseln hinein|geworfenem oder dem|Armen," sondern damit
+(529) habeat(Prä)(Akt)(Knj) aliquem(Pr)(A), cui(Pr)(D) ipse(Pr)(N) aegro(Adj)(D) adsideat(Prä)(Akt)(Knj), quem(Pr)(A) ipse(Pr)(N) circumventum(Per)(Pas)(A) hostili(Adj)(Abl)
+(529) er|habe jemanden, wem er|selbst dem|Kranken bei|sitze, wen er|selbst umringten feindlicher
+(530) custodia(N)(Abl) liberet(Prä)(Akt)(Knj). Qui(Pr)(N) se(Pr)(A) spectat(Prä)(Akt) et(Kon) propter(Prp) hoc(Pr)(A) ad(Prp) amicitiam(A)
+(530) Bewachung befreie. wer sich ansieht und wegen dieses zu der|Freundschaft
+(531) venit(Prä)(Akt), male(Adv) cogitat(Prä)(Akt). Quemadmodum(Adv) coepit(Per)(Akt), sic(Adv) desinet(Fu1)(Akt): paravit(Per)(Akt) amicum(A) adversum(Prp)
+(531) kommt, schlecht denkt. wie begonnen|hat, so wird|aufhören: bereitete einen|Freund gegen
+(532) vincla(A) laturum(Fu1)(Akt)(A) opem(A); cum(Kon) primum(Adv) crepuerit(Fu2)(Akt) catena(N), discedet(Fu1)(Akt).
+(532) die|Fesseln bringen|werdenden Hilfe; sobald sogleich geklirrt|haben|wird die|Kette, wird|weggehen.
+= § 9 =
+(534) Hae(Pr)(N) sunt(Prä)(Akt) amicitiae(N), quas(Pr)(A) temporarias(Adj)(A) populus(N) appellat(Prä)(Akt); qui(Pr)(N) utilitatis(G) causa(Abl)
+(534) diese sind Freundschaften, welche zeitweilige das|Volk nennt; der des|Nutzens wegen
+(535) adsumptus(Per)(Pas)(N) est(Prä)(Akt), tamdiu(Adv) placebit(Fu1)(Akt), quamdiu(Adv) utilis(Adj)(N) fuerit(Fu2)(Akt). Hac(Pr)(Abl) re(N)(Abl) florentes(Prä)(Akt)(N)
+(535) aufgenommen ist, so|lange wird|gefallen, solange nützlich gewesen|sein|wird. durch|diese Sache Blühende
+(536) amicorum(G) turba(N) circumsedet(Prä)(Akt); circa(Prp) eversos(Per)(Pas)(A) solitudo(N) est(Prä)(Akt), et(Kon) inde(Adv) amici(N)
+(536) der|Freunde Schar sitzt|ringsum; um gestürzte Einsamkeit ist, und dann Freunde
+(537) fugiunt(Prä)(Akt), ubi(Adv) probantur(Prä)(Pas). Hac(Pr)(Abl) re(N)(Abl) ista(Pr)(N) tot(Adj)(N) nefaria(Adj)(N) exempla(N) sunt(Prä)(Akt)
+(537) fliehen, wo werden|geprüft. durch|diese Sache jene so|viele verwerfliche Beispiele sind
+(538) aliorum(Pr)(G) metu(Abl) relinquentium(Prä)(Akt)(G), aliorum(Pr)(G) metu(Abl) prodendum(Gdv)(Fu1)(Pas)(N). Necesse(Adj)(N) est(Prä)(Akt) initia(N) inter(Prp)
+(538) der|Anderen aus|Furcht der|Zurücklassenden, der|Anderen aus|Furcht zu|verratendes. nötig ist Anfänge zwischen
+(539) se(Pr)(A) et(Kon) exitus(N) congruant(Prä)(Akt)(Knj). Qui(Pr)(N) amicus(Adj)(N) esse(Inf)(Akt) coepit(Per)(Akt), quia(Kon) expedit(Prä)(Akt),
+(539) sich und Enden zusammen|stimmen. der Freund zu|sein begonnen|hat, weil es|nützlich|ist,
+(540) et(Kon) desinet(Fu1)(Akt), quia(Kon) expedit(Prä)(Akt). Placebit(Fu1)(Akt) aliquod(Pr)(A) pretium(A) contra(Prp) amicitiam(A), si(Kon)
+(540) und wird|aufhören, weil es|nützlich|ist. wird|gefallen irgendein Preis gegen die|Freundschaft, wenn
+(541) ullum(Adj)(A) in(Prp) illa(Pr)(Abl) placet(Prä)(Akt) praeter(Prp) ipsam(Pr)(A).
+(541) irgendein in ihr gefällt außer ihr|selbst.
+= § 10 =
+(543) In(Prp) quid(Pr)(A) amicum(A) paro(Prä)(Akt)? Ut(Kon) habeam(Prä)(Akt)(Knj) pro(Prp) quo(Pr)(Abl) mori(Inf)(Pas) possim(Prä)(Akt)(Knj),
+(543) wofür was Freund bereite|ich? damit ich|habe für den zu|sterben ich|könne,
+(544) ut(Kon) habeam(Prä)(Akt)(Knj) quem(Pr)(A) in(Prp) exilium(A) sequar(Prä)(Akt)(Knj), cuius(Pr)(G) me(Pr)(A) morti(D) opponam(Prä)(Akt)(Knj)
+(544) damit ich|habe wen in die|Verbannung ich|folge, dessen mich dem|Tod entgegen|stelle
+(545) et(Kon) inpendam(Prä)(Akt)(Knj). Ista(Pr)(N), quam(Pr)(A) tu(Pr)(N) describis(Prä)(Akt), negotiatio(N) est(Prä)(Akt), non(Pt) amicitia(N),
+(545) und hingebe. jene, die du beschreibst, Geschäft ist, nicht Freundschaft,
+(546) quae(Pr)(N) ad(Prp) commodum(A) accedit(Prä)(Akt), quae(Pr)(N) quid(Pr)(A) consecutura(Fu1)(Akt)(N) sit(Prä)(Akt)(Knj) spectat(Prä)(Akt).
+(546) die zum Vorteil hinzu|tritt, die was erreichen|werdend sei blickt.
+= § 11 =
+(548) Non(Pt) dubie(Adv) habet(Prä)(Akt) aliquid(Pr)(A) simile(Adj)(A) amicitiae(G) affectus(N) amantium(G); possis(Prä)(Akt)(Knj) dicere(Inf)(Akt)
+(548) nicht zweifelhaft hat etwas Ähnliches der|Freundschaft Affekt der|Liebenden; könntest sagen
+(549) illam(Pr)(A) esse(Inf)(Akt) insanam(Adj)(A) amicitiam(A). Numquid(Pt) ergo(Pt) quisquam(Pr)(N) amat(Prä)(Akt) lucri(G) causa(Abl)
+(549) jene zu|sein wahnsinnige Freundschaft. etwa also irgend|jemand liebt des|Gewinns wegen
+(550) ? Numquid(Pt) ambitionis(G) aut(Kon) gloriae(G) ? Ipse(Pr)(N) per(Prp) se(Pr)(A) amor(N)
+(550) ? etwa der|Ehrgeizes oder des|Ruhmes ? er|selbst durch sich Liebe
+(551) omnium(Pr)(G) aliarum(Adj)(G) rerum(G) neglegens(Prä)(Akt)(N) animos(A) in(Prp) cupiditatem(A) formae(G) non(Pt) sine(Prp)
+(551) aller anderen Dinge vernachlässigend Gemüter in Begierde der|Gestalt nicht ohne
+(552) spe(N)(Abl) mutuae(Adj)(G) caritatis(G) accendit(Prä)(Akt). Quid(Pr)(A) ergo(Pt)? Ex(Prp) honestiore(Adj)(Abl)(Kmp) causa(Abl) coit(Prä)(Akt)
+(552) durch|Hoffnung gegenseitiger Zuneigung entzündet. was also? aus ehrlicherem Grund kommt|zusammen
+(553) turpis(Adj)(N) adfectus(N)? "
+(553) schändlicher Affekt? "
+= § 12 =
+(555) Non(Pt) agitur(Prä)(Pas)," inquis(Prä)(Akt), " nunc(Adv) de(Prp) hoc(Pr)(Abl), an(Kon) amicitia(N) propter(Prp)
+(555) nicht wird|verhandelt," sagst|du, " jetzt über dieses, ob Freundschaft wegen
+(556) se(Pr)(A) ipsam(Pr)(A) adpetenda(Gdv)(Fu1)(Pas)(N) sit(Prä)(Akt)(Knj)." Immo(Pt) vero(Pt) nihil(Pr)(N) magis(Adv)(Kmp) probandum(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt).
+(556) sich selbst zu|erstrebende sei." vielmehr in|der|Tat nichts mehr zu|billigen|seiendes ist.
+(557) Nam(Pt) si(Kon) propter(Prp) se(Pr)(A) ipsam(Pr)(A) expetenda(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt), potest(Prä)(Akt) ad(Prp) illam(Pr)(A)
+(557) denn wenn wegen sich selbst zu|erstrebende ist, kann zu jener
+(558) accedere(Inf)(Akt) qui(Pr)(N) se(Pr)(A) ipso(Pr)(Abl) contentus(Per)(Pas)(N) est(Prä)(Akt). " Quomodo(Adv) ergo(Pt) ad(Prp)
+(558) hinzu|treten der sich selbst zufrieden ist. " wie also zu
+(559) illam(Pr)(A) accedit(Prä)(Akt)? " Quomodo(Adv) ad(Prp) rem(A) pulcherrimam(Adj)(A)(Sup), non(Pt) lucro(N)(Abl) captus(Per)(Pas)(N) nec(Kon)
+(559) jener tritt|hinzu? " wie zu der|Sache sehr|schönen, nicht vom|Gewinn gefangen noch
+(560) varietate(N)(Abl) fortunae(G) perterritus(Per)(Pas)(N). Detrahit(Prä)(Akt) amicitiae(G) maiestatem(A) suam(Adj)(A), qui(Pr)(N) illam(Pr)(A) parat(Prä)(Akt)
+(560) durch|Wechsel des|Schicksals verschreckt. herab|zieht der|Freundschaft Würde ihre, der jene bereitet
+(561) ad(Prp) bonos(Adj)(A) casus(A).
+(561) für gute Fälle.
+= § 13 =
+(563) Se(Pr)(A) contentus(Per)(Pas)(N) est(Prä)(Akt) sapiens(Adj)(N). Hoc(Pr)(A), mi(Adj)(V) Lucili(V), plerique(Adj)(N) perperam(Adv) interpretantur(Prä)(Akt);
+(563) mit|sich zufrieden ist der|Weise. dies, mein Lucilius, die|meisten verkehrt deuten;
+(564) sapientem(Adj)(A) undique(Adv) submovent(Prä)(Akt) et(Kon) intra(Prp) cutem(A) suam(Adj)(A) cogunt(Prä)(Akt). Distinguendum(Gdv)(Fu1)(Pas)(N) autem(Pt)
+(564) den|Weisen von|überall entfernen und innerhalb der|Haut seine zwingen. zu|unterscheiden aber
+(565) est(Prä)(Akt), quid(Pr)(A) et(Kon) quatenus(Adv) vox(N) ista(Pr)(N) promittat(Prä)(Akt)(Knj); se(Pr)(A) contentus(Per)(Pas)(N) est(Prä)(Akt)
+(565) ist, was und inwie|weit Ausspruch jener verspreche; sich zufrieden ist
+(566) sapiens(Adj)(N) ad(Prp) beate(Adv) vivendum(Ger)(A), non(Pt) ad(Prp) vivendum(Ger)(A). Ad(Prp) hoc(Pr)(A) enim(Pt)
+(566) der|Weise zum glücklich Leben, nicht zum Leben. zu diesem nämlich
+(567) multis(Adj)(Abl) illi(Pr)(D) rebus(N)(Abl) opus(N) est(Prä)(Akt), ad(Prp) illud(Pr)(A) tantum(Adv) animo(N)(Abl) sano(Adj)(Abl)
+(567) vielen jenem Dingen Bedarf ist, zu jenem nur mit|Geist gesundem
+(568) et(Kon) erecto(Per)(Pas)(Abl) et(Kon) despiciente(Prä)(Akt)(Abl) fortunam(A).
+(568) und erhobenem und verachtendem das|Glück.
+= § 14 =
+(570) Volo(Prä)(Akt) tibi(Pr)(D) Chrysippi(Pr)(G) quoque(Pt) distinctionem(A) indicare(Inf)(Akt). Ait(Prä)(Akt) sapientem(Adj)(A) nulla(Adj)(Abl) re(N)(Abl)
+(570) ich|will dir des|Chrysippos auch Unterscheidung anzeigen. sagt den|Weisen keiner Sache
+(571) egere(Inf)(Akt), et(Kon) tamen(Adv) multis(Adj)(Abl) illi(Pr)(D) rebus(N)(Abl) opus(N) esse(Inf)(Akt). " Contra(Pt)
+(571) zu|bedürfen, und doch vielen jenem Dingen Bedarf zu|sein. " hingegen
+(572) stulto(Adj)(D) nulla(Adj)(Abl) re(N)(Abl) opus(N) est(Prä)(Akt), nulla(Adj)(Abl) enim(Pt) re(N)(Abl) uti(Inf)(Akt) scit(Prä)(Akt),
+(572) dem|Toren keiner Sache Bedarf ist, keiner nämlich Sache zu|gebrauchen weiß,
+(573) sed(Kon) omnibus(Adj)(Abl) eget(Prä)(Akt)." Sapienti(Adj)(D) et(Kon) manibus(N)(Abl) et(Kon) oculis(N)(Abl) et(Kon) multis(Adj)(Abl)
+(573) aber aller bedarf." dem|Weisen und Händen und Augen und vielen
+(574) ad(Prp) cotidianum(Adj)(A) usum(A) necessariis(Adj)(Abl) opus(N) est(Prä)(Akt), eget(Prä)(Akt) nulla(Adj)(Abl) re(N)(Abl). Egere(Inf)(Akt)
+(574) zum täglichen Gebrauch notwendigen Bedarf ist, bedarf keiner Sache. zu|bedürfen
+(575) enim(Pt) necessitatis(G) est(Prä)(Akt), nihil(Pr)(N) necesse(Adj)(N) sapienti(Adj)(D) est(Prä)(Akt).
+(575) nämlich der|Notwendigkeit ist, nichts nötig dem|Weisen ist.
+= § 15 =
+(577) Ergo(Pt) quamvis(Kon) se(Pr)(Abl) ipso(Pr)(Abl) contentus(Per)(Pas)(N) sit(Prä)(Akt)(Knj), amicis(N)(Abl) illi(Pr)(D) opus(N) est(Prä)(Akt).
+(577) also obgleich mit|sich selbst zufrieden sei, an|Freunden ihm Bedarf ist.
+(578) Hos(Pr)(A) cupit(Prä)(Akt) habere(Inf)(Akt) quam(Adv) plurimos(Adj)(A)(Sup), non(Pt) ut(Kon) beate(Adv) vivat(Prä)(Akt)(Knj); vivet(Fu1)(Akt)
+(578) diese wünscht zu|haben so sehr|viele, nicht damit glücklich lebe; wird|leben
+(579) enim(Pt) etiam(Adv) sine(Prp) amicis(N)(Abl) beate(Adv). Summum(Adj)(N) bonum(N) extrinsecus(Adv) instrumenta(A) non(Pt)
+(579) nämlich auch ohne Freunden glücklich. höchstes Gut von|außen Hilfsmittel nicht
+(580) quaerit(Prä)(Akt). Domi(Adv) colitur(Prä)(Pas), ex(Prp) se(Pr)(Abl) totum(Adj)(N) est(Prä)(Akt). Incipit(Prä)(Akt) fortunae(G) esse(Inf)(Akt)
+(580) sucht. zu|Hause wird|gepflegt, aus sich|selbst ganz ist. beginnt des|Schicksals zu|sein
+(581) subiectum(Per)(Pas)(N), si(Kon) quam(Pr)(A) partem(A) sui(Pr)(G) foris(Adv) quaerit(Prä)(Akt).
+(581) unterworfen, wenn welchen Teil seines|selbst außen sucht.
+= § 16 =
+(583) "Qualis(Pr)(N) tamen(Pt) futura(Fu1)(Akt)(N) est(Prä)(Akt) vita(N) sapientis(Adj)(G), si(Kon) sine(Prp) amicis(N)(Abl) relinquatur(Prä)(Pas)(Knj)
+(583) "welcher|Art doch zukünftig ist Leben des|Weisen, wenn ohne Freunden zurückgelassen|werde
+(584) in(Prp) custodiam(A) coniectus(Per)(Pas)(N), vel(Kon) in(Prp) aliqua(Pr)(Abl) gente(N)(Abl) aliena(Adj)(Abl) destitutus(Per)(Pas)(N), vel(Kon)
+(584) in die|Bewachung hinein|geworfen, oder in irgendeiner Sippe|Volk fremden verlassen, oder
+(585) in(Prp) navigatione(N)(Abl) longa(Adj)(Abl) retentus(Per)(Pas)(N), aut(Kon) in(Prp) desertum(Adj)(A) litus(A) eiectus(Per)(Pas)(N)? " Qualis(Pr)(N)
+(585) in Seefahrt langer zurück|gehalten, oder auf öde Küste hinaus|geworfen? " welcher|Art
+(586) est(Prä)(Akt) Iovis(G), cum(Kon) resoluto(Per)(Pas)(Abl) mundo(N)(Abl) et(Kon) dis(N)(Abl) in(Prp) unum(Adj)(A) confusis(Per)(Pas)(Abl)
+(586) ist des|Jupiter, wenn aufgelöstem Welt und Göttern in eins zusammen|gemischt
+(587) paulisper(Adv) cessante(Prä)(Akt)(Abl) natura(N)(Abl) adquiescit(Prä)(Akt) sibi(Pr)(D) cogitationibus(N)(Abl) suis(Adj)(Abl) traditus(Per)(Pas)(N). Tale(Adj)(N) quiddam(Pr)(N)
+(587) für|kurze|Zeit aussetzender Natur ruht|aus sich Gedanken seinen übergeben. ein|solches etwas
+(588) sapiens(Adj)(N) facit(Prä)(Akt); in(Prp) se(Pr)(Abl) reconditur(Prä)(Pas), secum(Pr)(Abl)(Prp) est(Prä)(Akt).
+(588) der|Weise macht; in sich zieht|sich|zurück, mit|sich ist.
+= § 17 =
+(590) Quamdiu(Adv) quidem(Pt) illi(Pr)(D) licet(Prä)(Akt) suo(Adj)(Abl) arbitrio(N)(Abl) res(A) suas(Adj)(A) ordinare(Inf)(Akt), se(Pr)(Abl)
+(590) so|lange doch ihm ist|erlaubt seinem Ermessen Dinge seine zu|ordnen, sich
+(591) contentus(Per)(Pas)(N) est(Prä)(Akt) et(Kon) ducit(Prä)(Akt) uxorem(A); se(Pr)(Abl) contentus(Per)(Pas)(N) est(Prä)(Akt) et(Kon) liberos(A)
+(591) zufrieden ist und führt Ehefrau; sich zufrieden ist und Kinder
+(592) tollit(Prä)(Akt); se(Pr)(Abl) contentus(Per)(Pas)(N) est(Prä)(Akt) et(Kon) tamen(Pt) non(Pt) viveret(Imp)(Akt)(Knj), si(Kon) foret(Imp)(Akt)(Knj)
+(592) nimmt|an; sich zufrieden ist und dennoch nicht lebte, wenn wäre
+(593) sine(Prp) homine(N)(Abl) victurus(Fu1)(Akt)(N). Ad(Prp) amicitiam(A) fert(Prä)(Akt) illum(Pr)(A) nulla(Adj)(N) utilitas(N) sua(Adj)(N),
+(593) ohne Menschen zu|leben|werdend. zu Freundschaft führt ihn kein Nutzen sein,
+(594) sed(Kon) naturalis(Adj)(N) inritatio(N). Nam(Pt) ut(Kon) aliarum(Adj)(G) nobis(Pr)(D) rerum(G) innata(Per)(Pas)(N) dulcedo(N)
+(594) sondern natürliche Anreizung. denn wie anderer uns der|Dinge angeborene Süße
+(595) est(Prä)(Akt), sic(Adv) amicitiae(G). Quomodo(Adv) solitudinis(G) odium(N) est(Prä)(Akt) et(Kon) adpetitio(N) societatis(G),
+(595) ist, so der|Freundschaft. wie der|Einsamkeit Hass ist und Begehren der|Gemeinschaft,
+(596) quomodo(Adv) hominem(A) homini(D) natura(N) conciliat(Prä)(Akt), sic(Adv) inest(Prä)(Akt) huic(Pr)(D) quoque(Pt) rei(D)
+(596) wie Menschen dem|Menschen die|Natur verbündet, so wohnt|inne dieser auch Sache
+(597) stimulus(N), qui(Pr)(N) nos(Pr)(A) amicitiarum(G) adpetentes(Prä)(Akt)(A) faciat(Prä)(Akt)(Knj).
+(597) Ansporn, der uns der|Freundschaften begehrende mache.
+= § 18 =
+(599) Nihilominus(Adv) cum(Kon) sit(Prä)(Akt)(Knj) amicorum(G) amantissimus(Adj)(N)(Sup), cum(Kon) illos(Pr)(A) sibi(Pr)(D) comparet(Prä)(Akt)(Knj), saepe(Adv)
+(599) dennoch obgleich sei der|Freunde am|meisten|liebend, wenn jene sich verschafft, oft
+(600) praeferat(Prä)(Akt)(Knj), omne(Adj)(A) intra(Prp) se(Pr)(A) bonum(A) terminabit(Fu1)(Akt) et(Kon) dicet(Fu1)(Akt), quod(Pr)(A) Stilbon(N)
+(600) vorziehe, alles innerhalb sich Gut wird|begrenzen und wird|sagen, was Stilbon
+(601) ille(Pr)(N) dixit(Per)(Akt), Stilbon(N) quem(Pr)(A) Epicuri(G) epistula(N) insequitur(Prä)(Akt); hic(Pr)(N) enim(Pt) capta(Per)(Pas)(Abl)
+(601) jener sagte, Stilbon welchen des|Epikur Brief folgt; dieser nämlich erobertem
+(602) patria(N)(Abl), amissis(Per)(Pas)(Abl) liberis(N)(Abl), amissa(Per)(Pas)(Abl) uxore(N)(Abl) cum(Kon) ex(Prp) incendio(N)(Abl) publico(Adj)(Abl) solus(Adj)(N)
+(602) Vaterland, verlorenen Kindern, verlorener Ehefrau als aus Brand öffentlichem allein
+(603) et(Kon) tamen(Pt) beatus(Adj)(N) exiret(Imp)(Akt)(Knj), interroganti(Prä)(Akt)(D) Demetrio(D), cui(Pr)(D) cognomen(N) ab(Prp) exitio(N)(Abl)
+(603) und dennoch glücklich ginge|hinaus, dem|fragenden Demetrios, dem Beiname von Verderben
+(604) urbium(G) Poliorcetes(N) fuit(Per)(Akt), numquid(Pt) perdidisset(Plq)(Akt)(Knj), " Omnia(Adj)(A)," inquit(Prä)(Akt), " bona(A)
+(604) der|Städte Poliorcetes war, etwa verloren|hätte, " alles," sagt|er, " Güter
+(605) mea(Adj)(N) mecum(Pr)(Abl)(Prp) sunt(Prä)(Akt)."
+(605) meine mit|mir sind."
+= § 19 =
+(607) Ecce(ij) vir(N) fortis(Adj)(N) ac(Kon) strenuus(Adj)(N)! Ipsam(Pr)(A) hostis(G) sui(Pr)(G) victoriam(A) vicit(Per)(Akt).
+(607) siehe Mann tapfer und tatkräftig! selbst|die des|Feindes seines Sieg besiegte.
+(608) " Nihil(Pr)(A)," inquit(Prä)(Akt), " perdidi(Per)(Akt) "; dubitare(Inf)(Akt) illum(Pr)(A) coegit(Per)(Akt), an(Kon)
+(608) " nichts," sagt|er, " habe|verloren "; zu|zweifeln ihn zwang, ob
+(609) vicisset(Plq)(Akt)(Knj). "Omnia(Adj)(A) mea(Adj)(N) mecum(Pr)(Abl)(Prp) sunt(Prä)(Akt) ; " hoc(Pr)(N) ipsum(Pr)(N) est(Prä)(Akt)
+(609) gesiegt|hätte. "alles meine mit|mir sind ; " dies eben ist
+(610) nihil(Pr)(A) bonum(A) putare(Inf)(Akt), quod(Pr)(A) eripi(Inf)(Pas) possit(Prä)(Akt)(Knj). Miramur(Prä)(Akt) animalia(A) quaedam(Pr)(N), quae(Pr)(N)
+(610) nichts Gutes zu|halten, was geraubt|zu|werden könne. wir|bewundern Tiere gewisse, die
+(611) per(Prp) medios(Adj)(A) ignes(A) sine(Prp) noxa(A) corporum(G) transeant(Prä)(Akt)(Knj); quanto(Adv) hic(Pr)(N) mirabilior(Adj)(N)(Kmp)
+(611) durch mittleren Feuer ohne Schaden der|Körper hindurch|gehen; um|wie|viel dieser wunderbarer
+(612) vir(N), qui(Pr)(N) per(Prp) ferrum(A) et(Kon) ruinas(A) et(Kon) ignes(A) inlaesus(Adj)(N) et(Kon)
+(612) Mann, der durch Eisen und Trümmer und Feuer un|verletzt und
+(613) indemnis(Adj)(N) evasit(Per)(Akt)! Vides(Prä)(Akt), quanto(Adv) facilius(Adv)(Kmp) sit(Prä)(Akt)(Knj) totam(Adj)(A) gentem(A) quam(Kon) unum(Adj)(A)
+(613) un|geschädigt ist|entkommen! siehst|du, um|wie|viel leichter sei ganze Volk als einen
+(614) virum(A) vincere(Inf)(Akt) ? Haec(Pr)(N) vox(N) illi(Pr)(D) communis(Adj)(N) est(Prä)(Akt) cum(Prp) Stoico(Adj)(Abl).
+(614) Mann zu|besiegen ? dieses Ausspruch jenem gemeinsam ist mit dem|Stoiker.
+(615) Aeque(Adv) et(Kon) hic(Pr)(N) intacta(Adj)(A) bona(A) per(Prp) concrematas(Per)(Pas)(A) urbes(A) fert(Prä)(Akt). Se(Pr)(A)
+(615) gleichermaßen und dieser un|berührt Güter durch nieder|gebrannten Städte trägt. sich
+(616) enim(Pt) ipso(Pr)(Abl) contentus(Per)(Pas)(N) est(Prä)(Akt). Hoc(Pr)(N) felicitatem(A) suam(Adj)(A) fine(N)(Abl) designat(Prä)(Akt).
+(616) nämlich selbst zufrieden ist. dies Glückseligkeit seine Grenze bestimmt.
+= § 20 =
+(618) Ne(Kon) existimes(Prä)(Akt)(Knj) nos(Pr)(N) solos(Adj)(A) generosa(Adj)(A) verba(A) iactare(Inf)(Akt); et(Kon) ipse(Pr)(N) Stilbonis(G)
+(618) nicht du|glaubest wir allein hochherzige Worte zu|schleudern; und selbst des|Stilbon
+(619) obiurgator(N) Epicurus(N) similem(Adj)(A) illi(Pr)(D) vocem(A) emisit(Per)(Akt), quam(Pr)(A) tu(Pr)(N) boni(Adj)(G) consule(Prä)(Akt)(Imv),
+(619) Tadelnder Epikur ähnliche jenem Stimme ließ|aus, welche du zum|Guten beurteile|günstig,
+(620) etiam(Adv) si(Kon) hunc(Pr)(A) diem(A) iam(Adv) expunxi(Per)(Akt). " Si(Kon) cui(Pr)(D)," inquit(Prä)(Akt),
+(620) auch wenn diesen Tag schon habe|ausgestrichen. " wenn jemandem," sagt|er,
+(621) " sua(Adj)(N) non(Pt) videntur(Prä)(Pas) amplissima(Adj)(N)(Sup), licet(Prä)(Akt) totius(Adj)(G) mundi(G) dominus(N) sit(Prä)(Akt)(Knj),
+(621) " seine nicht scheinen aller|größten, obgleich des|ganzen Welt Herr sei,
+(622) tamen(Pt) miser(Adj)(N) est(Prä)(Akt)." Vel(Kon) si(Kon) hoc(Pr)(N) modo(N)(Abl) tibi(Pr)(D) melius(Adv)(Kmp) enuntiari(Inf)(Pas)
+(622) dennoch elend ist." oder wenn dies Weise dir besser ausgesagt|zu|werden
+(623) videtur(Prä)(Pas), — id(Pr)(N) enim(Pt) agendum(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt), ut(Kon) non(Pt) verbis(N)(Abl) serviamus(Prä)(Akt)(Knj), sed(Kon)
+(623) scheint, — dies nämlich ist|zu|tun ist, damit nicht Worten dienen, sondern
+(624) sensibus(N)(Abl), — : " Miser(Adj)(N) est(Prä)(Akt), qui(Pr)(N) se(Pr)(A) non(Pt) beatissimum(Adj)(A)(Sup) iudicat(Prä)(Akt), licet(Prä)(Akt)
+(624) Sinnen, — : " elend ist, der sich nicht den|glücklichsten beurteilt, obgleich
+(625) imperet(Prä)(Akt)(Knj) mundo(D)
+(625) herrsche|er über|die|Welt
+= § 21 =
+(627) Ut(Kon) scias(Prä)(Akt)(Knj) autem(Pt) hos(Pr)(A) sensus(A) esse(Inf)(Akt) communes(Adj)(A), natura(N)(Abl) scilicet(Pt) dictante(Prä)(Akt)(Abl),
+(627) damit du|erkennest aber diese Auffassungen zu|sein gemeinsame, von|der|Natur freilich vorschreibender,
+(628) apud(Prp) poetam(A) comicum(Adj)(A) invenies(Fu1)(Akt):
+(628) bei Dichter komischen wirst|finden:
+(629) [Zitat Anfang]
+(630) Non(Pt) est(Prä)(Akt) beatus(Adj)(N), esse(Inf)(Akt) se(Pr)(A) qui(Pr)(N) non(Pt) putat(Prä)(Akt).
+(630) nicht ist glücklich, zu|sein sich der nicht meint.
+(631) [Zitat Ende]
+(632) Quid(Pr)(N) enim(Pt) refert(Prä)(Akt), qualis(Pr)(N) status(N) tuus(Adj)(N) sit(Prä)(Akt)(Knj), si(Kon) tibi(Pr)(D) videtur(Prä)(Pas)
+(632) was nämlich bedeutet, welcher|Art Zustand dein sei, wenn dir scheint
+(633) malus(Adj)(N)? "
+(633) schlecht? "
+= § 22 =
+(635) Quid(Pr)(N) ergo(Pt)? " inquis(Prä)(Akt). "Si(Kon) beatum(Adj)(A) se(Pr)(A) dixerit(Fu2)(Akt)(Knj) ille(Pr)(N) turpiter(Adv) dives(Adj)(N)
+(635) was also? " fragst|du. "wenn glücklich sich gesagt|haben|werde jener schändlich reich
+(636) et(Kon) ille(Pr)(N) multorum(Adj)(G) dominus(N) sed(Kon) plurium(Adj)(G) servus(N), beatus(Adj)(N) sua(Adj)(Abl) sententia(N)(Abl)
+(636) und jener vieler Herr sondern mehrerer Sklave, glücklich seiner Meinung
+(637) fiet(Fu1)(Akt) ? " Non(Pt) quid(Pr)(N) dicat(Prä)(Akt)(Knj), sed(Kon) quid(Pr)(N) sentiat(Prä)(Akt)(Knj), refert(Prä)(Akt),
+(637) wird|werden ? " nicht was sage, sondern was empfinde, bedeutet,
+(638) nec(Kon) quid(Pr)(N) uno(Adj)(Abl) die(N)(Abl) sentiat(Prä)(Akt)(Knj), sed(Kon) quid(Pr)(N) adsidue(Adv). Non(Pt) est(Prä)(Akt)
+(638) noch was an|einem Tag empfinde, sondern was beständig. nicht ist
+(639) autem(Pt) quod(Pr)(A) verearis(Prä)(Akt)(Knj), ne(Kon) ad(Prp) indignum(Adj)(A) res(N) tanta(Adj)(N) perveniat(Prä)(Akt)(Knj); nisi(Kon)
+(639) aber dass du|fürchtest, dass|nicht zu Unwürdigen Sache so|große gelange; es|sei|denn
+(640) sapienti(Adj)(D) sua(Adj)(N) non(Pt) placent(Prä)(Akt). Omnis(Adj)(N) stultitia(N) laborat(Prä)(Akt) fastidio(N)(Abl) sui(Pr)(G). VALE(Imv)(Akt).
+(640) dem|Weisen seine nicht gefallen. jede Torheit leidet Überdruss an|sich|selbst. lebe|wohl.
+=== Brief 10 ===
+== Seneca Lucilio suo salutem ==
+= § 1 =
+(644) Sic(Adv) est(Prä)(Akt), non(Pt) muto(Prä)(Akt) sententiam(A): fuge(Prä)(Akt)(Imv) multitudinem(A), fuge(Prä)(Akt)(Imv) paucitatem(A), fuge(Prä)(Akt)(Imv)
+(644) so ist, nicht ändere|ich Meinung: fliehe Menge, fliehe geringe|Zahl, fliehe
+(645) etiam(Adv) unum(Adj)(A). Non(Pt) habeo(Prä)(Akt), cum(Prp) quo(Pr)(Abl) te(Pr)(A) communicatum(Per)(Pas)(A) velim(Prä)(Akt)(Knj). Et(Kon)
+(645) auch einen. nicht habe|ich, mit wem dich geteilt möchte|ich. und
+(646) vide(Prä)(Akt)(Imv), quod(Pr)(A) iudicium(A) meum(Adj)(A) habeas(Prä)(Akt)(Knj): audeo(Prä)(Akt) te(Pr)(A) tibi(Pr)(D) credere(Inf)(Akt). Crates(N),
+(646) sieh, dass Urteil mein du|hast: wage|ich dich dir zu|glauben. Krates,
+(647) ut(Kon) aiunt(Prä)(Akt), huius(Pr)(G) ipsius(Pr)(G) Stilbonis(G) auditor(N), cuius(Pr)(G) mentionem(A) priore(Adj)(Abl) epistula(N)(Abl)
+(647) wie sagen|sie, dieses selbst des|Stilbon Zuhörer, dessen Erwähnung früheren Brief
+(648) feci(Per)(Akt), cum(Kon) vidisset(Plq)(Akt)(Knj) adulescentulum(A) secreto(Abl) ambulantem(Prä)(Akt)(A), interrogavit(Per)(Akt), quid(Pr)(A) illic(Adv) solus(Adj)(N)
+(648) machte|ich, als gesehen|hätte einen|Jüngling im|Geheimen gehend, fragte, was dort allein
+(649) faceret(Imp)(Akt)(Knj) ? " Mecum(Pr)(Abl)(Prp)," inquit(Prä)(Akt), " loquor(Prä)(Akt)." Cui(Pr)(D) Crates(N) "
+(649) mache|er ? " mit|mir," sagt|er, " spreche|ich." wem Crates "
+(650) Cave(Prä)(Akt)(Imv)," inquit(Prä)(Akt), " rogo(Prä)(Akt), et(Kon) diligenter(Adv) adtende(Prä)(Akt)(Imv); cum(Prp) homine(Abl) malo(Adj)(Abl)
+(650) hüte|dich," sagt|er, " bitte|ich, und sorgfältig achte|auf; mit dem|Menschen schlechten
+(651) loqueris(Prä)(Akt)."
+(651) sprichst|du."
+= § 2 =
+(653) Lugentem(Prä)(Akt)(A) timentemque(Prä)(Akt)(A)(Kon) custodire(Inf)(Akt) solemus(Prä)(Akt), ne(Kon) solitudine(Abl) male(Adv) utatur(Prä)(Akt)(Knj). Nemo(Pr)(N) est(Prä)(Akt)
+(653) den|Trauernden Furchtsamen|und zu|bewachen pflegen|wir, damit|nicht in|der|Einsamkeit schlecht gebrauche|er. niemand ist
+(654) ex(Prp) inprudentibus(Abl), qui(Pr)(N) relinqui(Inf)(Pas) sibi(Pr)(D) debeat(Prä)(Akt)(Knj); tunc(Adv) mala(Adj)(A) consilia(A) agitant(Prä)(Akt),
+(654) aus den|Unvorsichtigen, der zurück|gelassen|zu|werden für|sich solle|er; dann schlechte Pläne wälzen|sie,
+(655) tunc(Adv) aut(Kon) aliis(D) aut(Kon) ipsis(Pr)(D) futura(Fu1)(Akt)(A) pericula(A) struunt(Prä)(Akt); tunc(Adv) cupiditates(A)
+(655) dann oder den|Anderen oder sich|selbst künftige Gefahren bauen|sie; dann Begierden
+(656) improbas(Adj)(A) ordinant(Prä)(Akt); tunc(Adv) quicquid(Pr)(A) aut(Kon) metu(Abl) aut(Kon) pudore(Abl) celabat(Imp)(Akt), animus(N)
+(656) verwerfliche ordnen|sie; dann was|auch|immer oder aus|Furcht oder aus|der|Scham verbarg, der|Sinn
+(657) exponit(Prä)(Akt), tunc(Adv) audaciam(A) acuit(Prä)(Akt), libidinem(A) inritat(Prä)(Akt), iracundiam(A) instigat(Prä)(Akt). Denique(Adv) quod(Pr)(A)
+(657) legt|offen, dann Kühnheit schärft, Begierde reizt|an, Jähzorn stachelt|an. schließlich was
+(658) unum(Adj)(A) solitudo(N) habet(Prä)(Akt) commodum(A), nihil(Pr)(A) ulli(Pr)(D) committere(Inf)(Akt), non(Pt) timere(Inf)(Akt) indicem(A),
+(658) eines die|Einsamkeit hat Vorteil, nichts irgend|wem anzuvertrauen, nicht zu|fürchten den|Angeber,
+(659) perit(Prä)(Akt) stulto(D); ipse(Pr)(N) se(Pr)(A) prodit(Prä)(Akt). Vide(Prä)(Akt)(Imv) itaque(Pt), quid(Pr)(A) de(Prp) te(Pr)(Abl)
+(659) geht|verloren dem|Tor; selbst sich verrät. sieh daher, was über dich
+(660) sperem(Prä)(Akt)(Knj), immo(Pt) quid(Pr)(A) spondeam(Prä)(Akt)(Knj) mihi(Pr)(D), spes(N) enim(Pt) incerti(Adj)(G) boni(G) nomen(N)
+(660) hoffe|ich, vielmehr was verspreche|ich mir, Hoffnung nämlich des|Ungewissen des|Guten Name
+(661) est(Prä)(Akt): non(Pt) invenio(Prä)(Akt), cum(Prp) quo(Pr)(Abl) te(Pr)(A) malim(Prä)(Akt)(Knj) esse(Inf)(Akt) quam(Kon) tecum(Pr)(Abl)(Prp).
+(661) ist: nicht finde|ich, mit wem dich lieber|hätte|ich zu|sein als mit|dir.
+= § 3 =
+(663) Repeto(Prä)(Akt) memoria(Abl), quam(Adv) magno(Adj)(Abl) animo(Abl) quaedam(Pr)(A) verba(A) proieceris(Per)(Akt)(Knj), quanti(Adj)(G) roboris(G)
+(663) rufe|ich|zurück im|Gedächtnis, wie mit|großem Sinn gewisse Worte vor|geschleudert|habest, wie|viel an|Kraft
+(664) plena(Adj)(N). Gratulatus(Per)(Pas)(N) sum(Prä)(Akt) protinus(Adv) mihi(Pr)(D) et(Kon) dixi(Per)(Akt): " Non(Pt) a(Prp)
+(664) voll. beglückwünscht|habend bin|ich sogleich mir und sagte|ich: " nicht von
+(665) summis(Adj)(Abl) labris(Abl) ista(Pr)(N) venerunt(Per)(Akt), habent(Prä)(Akt) hae(Pr)(N) voces(N) fundamentum(A). Iste(Pr)(N) homo(N)
+(665) den|obersten Lippen jene|Dinge kamen, haben diese Stimmen Fundament. dieser|da Mann
+(666) non(Pt) est(Prä)(Akt) unus(Adj)(N) e(Prp) populo(Abl), ad(Prp) salutem(A) spectat(Prä)(Akt)."
+(666) nicht ist einer aus dem|Volk, auf|zu Rettung blickt|er."
+= § 4 =
+(668) Sic(Adv) loquere(Prä)(Akt)(Imv), sic(Adv) vive(Prä)(Akt)(Imv); vide(Prä)(Akt)(Imv) ne(Kon) te(Pr)(A) ulla(Adj)(N) res(N) deprimat(Prä)(Akt)(Knj).
+(668) so sprich, so lebe; sieh dass|nicht dich irgendeine Sache drücke|nieder.
+(669) Votorum(G) tuorum(Adj)(G) veterum(Adj)(G) licet(Prä)(Akt) dis(D) gratiam(A) facias(Prä)(Akt)(Knj), alia(Adj)(A) de(Prp) integro(Adj)(Abl)
+(669) der|Gelübde deiner alten es|ist|erlaubt den|Göttern Dank machest|du, anderes von Neuem
+(670) suscipe(Prä)(Akt)(Imv); roga(Prä)(Akt)(Imv) bonam(Adj)(A) mentem(A), bonam(Adj)(A) valitudinem(A) animi(G), deinde(Adv) tunc(Adv) corporis(G).
+(670) nimm|auf; bitte gute Gesinnung, gute Gesundheit des|Geistes, sodann dann des|Körpers.
+(671) Quidni(Pt) tu(Pr)(N) ista(Pr)(A) vota(A) saepe(Adv) facias(Prä)(Akt)(Knj) ? Audacter(Adv) deum(A) roga(Prä)(Akt)(Imv);
+(671) warum|nicht du diese|da Gelübde oft machest|du ? kühn den|Gott bitte;
+(672) nihil(Pr)(A) illum(Pr)(A) de(Prp) alieno(Adj)(Abl) rogaturus(Fu1)(Akt)(N) es(Prä)(Akt).
+(672) nichts ihn um Fremdes zu|bitten|beabsichtigend bist|du.
+= § 5 =
+(674) Sed(Kon) ut(Kon) more(N)(Abl) meo(Adj)(Abl) cum(Prp) aliquo(Adj)(Abl) munusculo(N)(Abl) epistulam(A) mittam(Prä)(Akt)(Knj), verum(Adj)(N)
+(674) aber damit im|Brauch meinem mit irgendeinem kleinen|Geschenk Brief senden|möge|ich, wahr
+(675) est(Prä)(Akt), quod(Pr)(N) apud(Prp) Athenodorum(A) inveni(Per)(Akt): " Tunc(Adv) scito(Prä)(Akt)(Imv) esse(Inf)(Akt) te(Pr)(A)
+(675) ist, was bei Athenodoros fand|ich: " dann wisse zu|sein dich
+(676) omnibus(Adj)(Abl) cupiditatibus(N)(Abl) solutum(Per)(Pas)(A), cum(Kon) eo(Adv) perveneris(Per)(Akt)(Knj), ut(Kon) nihil(Pr)(A) deum(A) roges(Prä)(Akt)(Knj),
+(676) von|allen Begierden gelöst, wenn dorthin gelangt|sein|wirst, dass nichts den|Gott bittest|du,
+(677) nisi(Kon) quod(Pr)(A) rogare(Inf)(Akt) possis(Prä)(Akt)(Knj) palam(Adv)." Nunc(Adv) enim(Pt) quanta(Adj)(N) dementia(N) est(Prä)(Akt)
+(677) außer|wenn was zu|bitten könntest|du offen." jetzt nämlich wie|groß Torheit ist
+(678) hominum(G) ! Turpissima(Adj)(N)(Sup) vota(N) dis(D) insusurrant(Prä)(Akt); si(Kon) quis(Pr)(N) admoverit(Fu2)(Akt) aurem(A),
+(678) der|Menschen ! schmählichste Gelübde den|Göttern flüstern|sie|hinein; wenn jemand heran|bewegt|haben|wird das|Ohr,
+(679) conticescent(Fu1)(Akt). Et(Kon) quod(Pr)(A) scire(Inf)(Akt) hominem(A) nolunt(Prä)(Akt), deo(D) narrant(Prä)(Akt). Vide(Prä)(Akt)(Imv) ergo(Pt),
+(679) werden|sie|verstummen. und was zu|wissen den|Menschen wollen|sie|nicht, dem|Gott erzählen|sie. sieh also,
+(680) ne(Kon) hoc(Pr)(A) praecipi(Inf)(Pas) salubriter(Adv) possit(Prä)(Akt)(Knj): sic(Adv) vive(Prä)(Akt)(Imv) eum(Pr)(A) hominibus(N)(Abl), tamquam(Kon)
+(680) dass|nicht dies vor|geschrieben|zu|werden heilsam könne|es: so lebe ihn den|Menschen, als|ob
+(681) deus(N) videat(Prä)(Akt)(Knj); sic(Adv) loquere(Prä)(Pas)(Imv) cum(Prp) deo(N)(Abl), tamquam(Kon) homines(N) audiant(Prä)(Akt)(Knj). VALE(Prä)(Akt)(Imv).
+(681) Gott möge|sehen; so sprich mit Gott, als|ob Menschen hören|mögen. LEBE|WOHL.
+=== Brief 11 ===
+== Seneca Lucilio suo salutem ==
+= § 1 =
+(685) Locutus(Per)(Pas)(N) est(Prä)(Akt) mecum(Pr)(Abl)(Prp) amicus(N) tuus(Adj)(N) bonae(Adj)(G) indolis(G), in(Prp) quo(Pr)(Abl) quantum(Pr)(A)
+(685) gesprochen|habend hat mit|mir Freund dein guten des|Charakters, in dem|welchen wie|viel
+(686) esset(Imp)(Akt)(Knj) animi(G), quantum(Pr)(A) ingenii(G), quantum(Pr)(A) iam(Adv) etiam(Adv) profectus(G), sermo(N) primus(Adj)(N)
+(686) sei|er an|Geist, wie|viel an|Begabung, wie|viel schon auch des|Fortschritts, die|Rede erste
+(687) ostendit(Per)(Akt). Dedit(Per)(Akt) nobis(Pr)(D) gustum(A), ad(Prp) quem(Pr)(A) respondebit(Fu1)(Akt). Non(Pt) enim(Pt) ex(Prp)
+(687) zeigte. gab uns Vorgeschmack, zu welchem wird|er|entsprechen. nicht nämlich aus
+(688) praeparato(Per)(Pas)(Abl) locutus(Per)(Pas)(N) est(Prä)(Akt), sed(Kon) subito(Adv) deprehensus(Per)(Pas)(N). Ubi(Kon) se(Pr)(A) colligebat(Imp)(Akt), verecundiam(A),
+(688) Aus|Vorbereitetem gesprochen|habend hat, sondern plötzlich ergriffen. als sich sammelte|er, Scheu,
+(689) bonum(Adj)(A) in(Prp) adulescente(Abl) signum(A), vix(Adv) potuit(Per)(Akt) excutere(Inf)(Akt); adeo(Adv) illi(Pr)(D) ex(Prp)
+(689) gutes an dem|Jüngling Zeichen, kaum vermochte|er ab|zu|schütteln; so|sehr ihm aus
+(690) alto(Adj)(Abl) suffusus(Per)(Pas)(N) est(Prä)(Akt) rubor(N). Hic(Pr)(N) illum(Pr)(A), quantum(Pr)(A) suspicor(Prä)(Akt), etiam(Adv) cum(Kon)
+(690) der|Tiefe übergossen ist das|Erröten. dieser jenen, wie|sehr vermute|ich, auch wenn
+(691) se(Pr)(A) confirmaverit(Per)(Akt)(Knj) et(Kon) omnibus(Adj)(Abl) vitiis(N)(Abl) exuerit(Per)(Akt)(Knj), sapientem(Adj)(A) quoque(Pt) sequetur(Fu1)(Akt). Nulla(Adj)(N)
+(691) sich gestärkt|haben|wird und allen Fehlern abgelegt|haben|wird, den|Weisen auch wird|folgen. keine
+(692) enim(Pt) sapientia(N) naturalia(Adj)(N) corporis(G) vitia(N) ponuntur(Prä)(Pas). Quicquid(Pr)(N) infixum(Per)(Pas)(N) et(Kon) ingenitum(Per)(Pas)(N)
+(692) nämlich Weisheit natürliche des|Körpers Fehler werden|abgelegt. was|auch|immer eingeprägt und eingeboren
+(693) est(Prä)(Akt), lenitur(Prä)(Pas) arte(N)(Abl), non(Pt) vincitur(Prä)(Pas).
+(693) ist, wird|gelindert durch|Kunst, nicht überwunden|wird.
+= § 2 =
+(695) Quibusdam(Pr)(D) etiam(Adv) constantissimis(Adj)(Abl)(Sup) in(Prp) conspectu(N)(Abl) populi(G) sudor(N) erumpit(Prä)(Akt), non(Pt) aliter(Adv)
+(695) bei|einigen auch den|Standhaftesten im Anblick des|Volkes Schweiß bricht|hervor, nicht anders
+(696) quam(Kon) fatigatis(Per)(Pas)(Abl) et(Kon) aestuantibus(Prä)(Akt)(Abl) solet(Prä)(Akt), quibusdam(Pr)(D) tremunt(Prä)(Akt) genua(N) dicturis(Fu1)(Akt)(Abl), quorundam(Pr)(G)
+(696) als Ermüdeten und Schweißenden pflegt|es, bei|einigen zittern die|Knie den|Sprechen|Bevorstehenden, mancher|Leute
+(697) dentes(N) colliduntur(Prä)(Pas), lingua(N) titubat(Prä)(Akt), labra(N) concurrunt(Prä)(Akt). Haec(Pr)(N) nec(Kon) disciplina(N) nec(Kon)
+(697) die|Zähne schlagen|zusammen, die|Zunge stottert, die|Lippen laufen|zusammen. diese|Dinge weder Übung noch
+(698) usus(N) umquam(Adv) excutit(Prä)(Akt), sed(Kon) natura(N) vim(A) suam(Adj)(A) exercet(Prä)(Akt) et(Kon) illo(Pr)(Abl)
+(698) Gebrauch jemals schüttelt|ab, sondern die|Natur die|Kraft ihre übt und durch|jenes
+(699) vitio(N)(Abl) sui(Pr)(G) etiam(Adv) robustissimos(Adj)(A)(Sup) admonet(Prä)(Akt).
+(699) durch|den|Fehler des|Eigenen sogar die|Kräftigsten mahnt.
+= § 3 =
+(701) Inter(Prp) haec(Pr)(A) esse(Inf)(Akt) et(Kon) ruborem(A) scio(Prä)(Akt), qui(Pr)(N) gravissimis(Adj)(D)(Sup) quoque(Pt) viris(D)
+(701) unter diesen|Dingen zu|sein auch die|Röte weiß|ich, die den|Ernstesten auch Männern
+(702) subitus(Adj)(N) adfunditur(Prä)(Pas). Magis(Adv)(Kmp) quidem(Pt) in(Prp) iuvenibus(N)(Abl) apparet(Prä)(Akt), quibus(Pr)(D) et(Kon) plus(Adv)
+(702) plötzlich ergießt|sich. mehr allerdings bei den|Jungen zeigt|sich, bei|denen auch mehr
+(703) caloris(G) est(Prä)(Akt) et(Kon) tenera(Adj)(N) frons(N); nihilominus(Adv) et(Kon) veteranos(A) et(Kon) senes(A)
+(703) an|Hitze ist und zarte Stirn; dennoch auch die|Erfahrenen und die|Alten
+(704) tangit(Prä)(Akt). Quidam(Pr)(N) numquam(Adv) magis(Adv)(Kmp), quam(Kon) cum(Kon) erubuerint(Per)(Akt)(Knj), timendi(Gdv)(Fu1)(Pas)(N) sunt(Prä)(Akt), quasi(Kon)
+(704) berührt. manche niemals mehr, als wenn errötet|haben, zu|fürchtende sind, gleichsam
+(705) omnem(Adj)(A) verecundiam(A) effuderint(Per)(Akt)(Knj).
+(705) alle Scham ausgegossen|haben.
+= § 4 =
+(707) Sulla(N) tunc(Adv) erat(Imp)(Akt) violentissimus(Adj)(N)(Sup), cum(Kon) faciem(A) eius(Pr)(G) sanguis(N) invaserat(Plq)(Akt). Nihil(Pr)(N)
+(707) Sulla damals war am|gewalttätigsten, als das|Gesicht von|ihm Blut eingedrungen|war. nichts
+(708) erat(Imp)(Akt) mollius(Adv)(Kmp) ore(N)(Abl) Pompei(G); numquam(Adv) non(Pt) coram(Prp) pluribus(Adj)(Abl)(Kmp) rubuit(Per)(Akt), utique(Adv)
+(708) war weicher im|Antlitz des|Pompeius; niemals nicht vor mehreren errötete, besonders
+(709) in(Prp) contionibus(N)(Abl). Fabianum(A), cum(Kon) in(Prp) senatum(A) testis(N) esset(Imp)(Akt)(Knj) inductus(Per)(Pas)(N), erubuisse(Per)(Akt)(Inf)
+(709) in Versammlungen. Fabianus, als in den|Senat als|Zeuge gewesen|sei eingeführt, errötet|zu|haben
+(710) memini(Per)(Akt), et(Kon) hic(Pr)(N) illum(Pr)(A) mire(Adv) pudor(N) decuit(Per)(Akt).
+(710) erinnere|ich|mich, und dieser jenen wunderbar Scham ziemte|sich.
+= § 5 =
+(712) Non(Pt) accidit(Prä)(Akt) hoc(Pr)(N) ab(Prp) infirmitate(N)(Abl) mentis(G), sed(Kon) a(Prp) novitate(N)(Abl) rei(G),
+(712) nicht geschieht dies aus Schwäche des|Geistes, sondern aus Neuheit der|Sache,
+(713) quae(Pr)(N) inexercitatos(Adj)(A), etiamsi(Kon) non(Pt) concutit(Prä)(Akt), movet(Prä)(Akt) naturali(Adj)(Abl) in(Prp) hoc(Pr)(Abl) facilitate(N)(Abl)
+(713) die Ungeübten, auch|wenn nicht erschüttert, bewegt natürlichen in diesem Leichtigkeit
+(714) corporis(G) pronos(Adj)(A). Nam(Pt) ut(Kon) quidam(Pr)(N) boni(Adj)(G) sanguinis(G) sunt(Prä)(Akt), ita(Adv) quidam(Pr)(N)
+(714) des|Körpers geneigte. denn wie manche guten Blutes sind, so manche
+(715) incitati(Adj)(G) et(Kon) mobilis(Adj)(G) et(Kon) cito(Adv) in(Prp) os(A) prodeuntis(Prä)(Akt)(G).
+(715) erregten und beweglichen und rasch in das|Gesicht hervortretenden.
+= § 6 =
+(717) Haec(Pr)(N), ut(Kon) dixi(Per)(Akt), nulla(Adj)(N) sapientia(N) abigit(Prä)(Akt); alioquin(Adv) haberet(Imp)(Akt)(Knj) rerum(G) naturam(A)
+(717) dies, wie sagte|ich, keine Weisheit vertreibt; andernfalls hätte der|Dinge Natur
+(718) sub(Prp) imperio(Abl), si(Kon) omnia(Adj)(A) eraderet(Imp)(Akt)(Knj) vitia(A). Quaecumque(Pr)(N) adtribuit(Prä)(Akt) condicio(N) nascendi(Ger)(G)
+(718) unter der|Herrschaft, wenn alle würde|aus|roden Laster. was|auch|immer weist|zu Bedingung des|Geboren|Werdens
+(719) et(Kon) corporis(G) temperatum(A), cum(Kon) multum(Adv) se(Pr)(A) diuque(Adv)(Kon) animus(N) conposuerit(Per)(Akt)(Knj), haerebunt(Fu1)(Akt).
+(719) und des|Körpers Temperament, wenn viel sich lange|und der|Geist sich|zusammen|gesetzt|hat, werden|haften.
+(720) Nihil(Pr)(N) horum(Pr)(G) vetari(Inf)(Pas) potest(Prä)(Akt), non(Pt) magis(Adv) quam(Kon) accersi(Inf)(Pas).
+(720) nichts von|diesen verboten|zu|werden kann, nicht mehr als herbei|gerufen|zu|werden.
+= § 7 =
+(722) Artifices(N) scaenici(Adj)(N), qui(Pr)(N) imitantur(Prä)(Pas) adfectus(A), qui(Pr)(N) metum(A) et(Kon) trepidationem(A) exprimunt(Prä)(Akt),
+(722) Bühnen|Künstler szenische, die nach|ahmen Gemüts|Lagen, die Furcht und Zittern drücken|aus,
+(723) qui(Pr)(N) tristitiam(A) repraesentant(Prä)(Akt), hoc(Pr)(Abl) indicio(Abl) imitantur(Prä)(Pas) verecundiam(A): deiciunt(Prä)(Akt) enim(Pt) vultum(A),
+(723) die Traurigkeit stellen|dar, durch|dieses An|Zeichen nach|ahmen Scham|haftigkeit: senken nämlich das|Gesicht,
+(724) verba(A) submittunt(Prä)(Akt), figunt(Prä)(Akt) in(Prp) terram(A) oculos(A) et(Kon) deprimunt(Prä)(Akt). Ruborem(A) sibi(Pr)(D)
+(724) die|Worte senken, heften in die|Erde die|Augen und drücken|hinunter. das|Erröten sich
+(725) exprimere(Inf)(Akt) non(Pt) possunt(Prä)(Akt); nec(Kon) prohibetur(Prä)(Pas) hic(Pr)(N) nec(Kon) adducitur(Prä)(Pas). Nihil(Pr)(N) adversus(Prp)
+(725) aus|drücken nicht können; und|nicht wird|verhindert dieses und|nicht wird|herbei|geführt. nichts gegen
+(726) haec(Pr)(A) sapientia(N) promittit(Prä)(Akt), nihil(Pr)(A) proficit(Prä)(Akt); sui(Pr)(G) iuris(G) sunt(Prä)(Akt), iniussa(Adj)(N) veniunt(Prä)(Akt),
+(726) diese|Dinge die|Weisheit verspricht, nichts nützt; eigenen des|Rechts sind, ungebeten kommen,
+(727) iniussa(Adj)(N) discedunt(Prä)(Akt).
+(727) ungebeten gehen|fort.
+= § 8 =
+(729) Iam(Adv) clausulam(A) epistula(N) poscit(Prä)(Akt). Accipe(Prä)(Akt)(Imv), et(Kon) quidem(Pt) utilem(A) ac(Kon) salutarem(A),
+(729) schon Schluss|Teil der|Brief fordert. nimm|an, und doch nützliche und heilsame,
+(730) quam(Pr)(A) te(Pr)(A) affigere(Inf)(Akt) animo(D) volo(Prä)(Akt): "Aliquis(Pr)(N) vir(N) bonus(Adj)(N) nobis(Pr)(D) diligendus(Gdv)(Fu1)(Pas)(N)
+(730) die dich an|zu|heften dem|Geist will|ich: "irgendein Mann gut uns zu|liebender
+(731) est(Prä)(Akt) ac(Kon) semper(Adv) ante(Prp) oculos(A) habendus(Gdv)(Fu1)(Pas)(N), ut(Kon) sic(Adv) tamquam(Kon) illo(Pr)(Abl)
+(731) ist und immer vor Augen zu|haltender, damit so als|ob jenem
+(732) spectante(Prä)(Akt)(Abl) vivamus(Prä)(Akt)(Knj) et(Kon) omnia(A) tamquam(Kon) illo(Pr)(Abl) vidente(Prä)(Akt)(Abl) faciamus(Prä)(Akt)(Knj)."
+(732) unter|schauend leben|wir und alles als|ob jener unter|sehend machen|wir."
+= § 9 =
+(734) Hoc(Pr)(A), mi(Adj)(V) Lucili(V), Epicurus(N) praecepit(Per)(Akt). Custodem(A) nobis(Pr)(D) et(Kon) paedagogum(A) dedit(Per)(Akt),
+(734) dies, mein Lucilius, Epikur hat|vorgeschrieben. einen|Wächter uns und einen|Führer hat|gegeben,
+(735) nec(Kon) immerito(Adv). Magna(Adj)(N) pars(N) peccatorum(G) tollitur(Prä)(Pas), si(Kon) peccaturis(Fu1)(Akt)(D) testis(N) adsistit(Prä)(Akt).
+(735) und|nicht nicht|ohne|Grund. großer Teil der|Verfehlungen wird|beseitigt, wenn den|zu|sündigen|Beabsichtigenden ein|Zeuge bei|steht.
+(736) Aliquem(Pr)(A) habeat(Prä)(Akt)(Knj) animus(N), quem(Pr)(A) vereatur(Prä)(Pas)(Knj), cuius(Pr)(G) auctoritate(Abl) etiam(Adv) secretum(A) suum(Adj)(A)
+(736) irgendeinen habe der|Geist, den|welchen er|scheue, dessen durch|die|Autorität auch das|Geheime sein|eigenes
+(737) sanctius(Adv)(Kmp) faciat(Prä)(Akt)(Knj). O(ij) felicem(Adj)(A) illum(Pr)(A), qui(Pr)(N) non(Pt) praesens(Adj)(N) tantum(Adv), sed(Kon)
+(737) heiliger mache. o glücklichen jenen, der nicht an|wesend nur, sondern
+(738) etiam(Adv) cogitatus(Per)(Pas)(N) emendat(Prä)(Akt)! O(ij) felicem(Adj)(A), qui(Pr)(N) sic(Adv) aliquem(Pr)(A) vereri(Inf)(Pas) potest(Prä)(Akt),
+(738) auch gedacht bessert! o glücklichen, der so jemanden zu|scheuen vermag,
+(739) ut(Kon) ad(Prp) memoriam(A) quoque(Pt) eius(Pr)(G) se(Pr)(A) conponat(Prä)(Akt)(Knj) atque(Kon) ordinet(Prä)(Akt)(Knj)! Qui(Pr)(N)
+(739) dass zu dem|Gedächtnis auch seines sich ordne|er|sich und|auch ordne|er! wer
+(740) sic(Adv) aliquem(Pr)(A) vereri(Inf)(Pas) potest(Prä)(Akt), cito(Adv) erit(Fu1)(Akt) verendus(Gdv)(Fu1)(Pas)(N).
+(740) so jemanden zu|scheuen vermag, bald wird|sein zu|scheuender.
+= § 10 =
+(742) Elige(Prä)(Akt)(Imv) itaque(Pt) Catonem(A). Si(Kon) hic(Pr)(N) tibi(Pr)(D) videtur(Prä)(Pas) nimis(Adv) rigidus(Adj)(N), elige(Prä)(Akt)(Imv)
+(742) wähle daher Cato. wenn dieser dir scheint zu|sehr streng, wähle
+(743) remissioris(Adj)(G)(Kmp) animi(G) virum(A) Laelium(A). Elige(Prä)(Akt)(Imv) eum(Pr)(A), cuius(Pr)(G) tibi(Pr)(D) placuit(Per)(Akt) et(Kon)
+(743) gelasseneren des|Geistes Mann Laelius. wähle den, dessen dir gefiel und
+(744) vita(N) et(Kon) oratio(N) et(Kon) ipse(Pr)(N) animum(A) ante(Prp) se(Pr)(A) ferens(Prä)(Akt)(N) vultus(N);
+(744) das|Leben und die|Rede und selbst den|Sinn vor sich tragend die|Miene;
+(745) illum(Pr)(A) tibi(Pr)(D) semper(Adv) ostende(Prä)(Akt)(Imv) vel(Kon) custodem(A) vel(Kon) exemplum(A). Opus(N) est(Prä)(Akt),
+(745) jenen dir immer zeige entweder den|Wächter oder das|Vorbild. Bedarf ist,
+(746) inquam(Prä)(Akt), aliquo(Pr)(Abl), ad(Prp) quem(Pr)(A) mores(N) nostri(Adj)(N) se(Pr)(A) ipsi(Pr)(A) exigant(Prä)(Akt)(Knj); nisi(Kon)
+(746) sage|ich, mit|einem, zu dem|welchen Sitten unsere sich selbst prüfen|mögen; wenn|nicht
+(747) ad(Prp) regulam(A) prava(Adj)(A) non(Pt) corriges(Fu1)(Akt). VALE(Imv)(Akt).
+(747) an die|Richtschnur das|Falsche nicht wirst|berichtigen. lebe|wohl.
+=== Brief 12 ===
+== Seneca Lucilio suo salutem ==
+= § 1 =
+(751) Quocumque(Adv) me(Pr)(A) verti(Per)(Akt), argumenta(N) senectutis(G) meae(Adj)(G) video(Prä)(Akt). Veneram(Plq)(Akt) in(Prp) suburbanum(A)
+(751) wohin|auch|immer mich wandte|ich, Beweise des|Alters meines sehe|ich. war|gekommen in das|Landhaus
+(752) meum(Adj)(A) et(Kon) querebar(Imp)(Pas) de(Prp) inpensis(Abl) aedificii(G) dilabentis(Prä)(Akt)(G). Ait(Prä)(Akt) vilicus(N) mihi(Pr)(D)
+(752) mein und beklagte|ich über den|Kosten des|Gebäudes zer|fallend. sagt der|Gutsverwalter mir
+(753) non(Pt) esse(Inf)(Akt) neglegentiae(G) suae(Adj)(G) vitium(A), omnia(Pr)(A) se(Pr)(A) facere(Inf)(Akt), sed(Kon) villam(A)
+(753) nicht zu|sein der|Nachlässigkeit seiner Fehler, alles sich zu|tun, sondern das|Landhaus
+(754) veterem(Adj)(A) esse(Inf)(Akt). Haec(Pr)(N) villa(N) inter(Prp) manus(A) meas(Adj)(A) crevit(Per)(Akt); quid(Pr)(A) mihi(Pr)(D)
+(754) alt zu|sein. dieses Landhaus zwischen die|Hände meine ist|gewachsen; was mir
+(755) futurum(Fu1)(Akt)(N) est(Prä)(Akt), si(Kon) tam(Adv) putria(Adj)(N) sunt(Prä)(Akt) aetatis(G) meae(Adj)(G) saxa(N) ?
+(755) zukünftig ist, wenn so mürbe sind des|Alters meines die|Steine ?
+= § 2 =
+(757) Iratus(Adj)(N) illi(Pr)(D) proximam(Adj)(A) occasionem(A) stomachandi(Ger)(G) arripio(Prä)(Akt). " Apparet(Prä)(Akt)," inquam(Prä)(Akt), "
+(757) zornig gegen|jenen nächste Gelegenheit des|Sich|Erbostens ergreife|ich. " es|erscheint," sage|ich, "
+(758) has(Pr)(A) platanos(A) neglegi(Inf)(Pas); nullas(Adj)(A) habent(Prä)(Akt) frondes(A). Quam(Adv) nodosi(Adj)(N) sunt(Prä)(Akt) et(Kon)
+(758) diese Platanen vernachlässigt|worden|zu|sein; keine haben Blätter. wie knotig sind und
+(759) retorridi(Adj)(N) rami(N), quam(Adv) tristes(Adj)(N) et(Kon) squalidi(Adj)(N) trunci(N)! Hoc(Pr)(N) non(Pt) accideret(Imp)(Akt)(Knj),
+(759) zurück|gedrehte Äste, wie traurig und schmutzig Stämme! dies nicht träfe|ein,
+(760) si(Kon) quis(Pr)(N) has(Pr)(A) circumfoderet(Imp)(Akt)(Knj), si(Kon) inrigaret(Imp)(Akt)(Knj)." Iurat(Prä)(Akt) per(Prp) genium(A) meum(Adj)(A)
+(760) wenn jemand diese herum|grübe, wenn be|wässerte." er|schwört bei dem|Schutzgeist meinem
+(761) se(Pr)(A) omnia(Pr)(A) facere(Inf)(Akt), in(Prp) nulla(Adj)(Abl) re(Abl) cessare(Inf)(Akt) curam(A) suam(Adj)(A), sed(Kon)
+(761) sich alles zu|tun, in keiner Sache nach|zulassen die|Sorge seine, sondern
+(762) illas(Pr)(A) vetulas(Adj)(A) esse(Inf)(Akt). Quod(Kon) intra(Prp) nos(Pr)(A) sit(Prä)(Akt)(Knj), ego(Pr)(N) illas(Pr)(A) posueram(Plq)(Akt),
+(762) jene betagte zu|sein. was|aber unter uns sei, ich jene hatte|gepflanzt,
+(763) ego(Pr)(N) illarum(Pr)(G) primum(Adj)(A) videram(Plq)(Akt) folium(A).
+(763) ich jener erstes hatte|gesehen Blatt.
+= § 3 =
+(765) Conversus(Per)(Pas)(N) ad(Prp) ianuam(A) " Quis(Pr)(N) est(Prä)(Akt) iste(Pr)(N) ? " inquam(Prä)(Akt),
+(765) gewandt zur Tür " wer ist dieser ? " sage|ich,
+(766) " iste(Pr)(N) decrepitus(Adj)(N) et(Kon) merito(Adv) ad(Prp) ostium(A) admotus(Per)(Pas)(N)? Foras(Adv) enim(Pt)
+(766) " dieser hinfällig und mit|Recht an den|Eingang heran|gebracht? hinaus nämlich
+(767) spectat(Prä)(Akt). Unde(Adv) istunc(Pr)(A) nactus(Per)(Akt)(N) es(Prä)(Akt) ? Quid(Pr)(A) te(Pr)(A) delectavit(Per)(Akt) alienum(Adj)(A)
+(767) blickt. woher jenen|da erlangt hast|du ? was dich erfreute fremden
+(768) mortuum(Adj)(A) tollere(Inf)(Akt) ? " At(Kon) ille(Pr)(N) "Non(Pt) cognoscis(Prä)(Akt) me(Pr)(A) ?"
+(768) Toten auf|zu|heben ? " aber jener "nicht erkennst mich ?"
+(769) inquit(Prä)(Akt). " Ego(Pr)(N) sum(Prä)(Akt) Felicio(N), cui(Pr)(D) solebas(Imp)(Akt) sigillaria(A) adferre(Inf)(Akt). Ego(Pr)(N)
+(769) sagt|er. " ich bin Felicio, dem pflegtest|du Figürchen zu|bringen. ich
+(770) sum(Prä)(Akt) Philositi(G) vilici(G) filius(N), deliciolum(A) tuum(Adj)(A)." "Perfecte(Adv)," inquam(Prä)(Akt), "iste(Pr)(N) delirat(Prä)(Akt).
+(770) bin des|Philositus des|Verwalters Sohn, Liebling deinen." "völlig," sage|ich, "dieser faselt.
+(771) Pupulus(N) etiam(Adv) delicium(N) meum(Adj)(N) factus(Per)(Pas)(N) est(Prä)(Akt) ? Prorsus(Adv) potest(Prä)(Akt) fieri(Inf)(Akt);
+(771) Knabe sogar Liebling mein geworden ist ? durchaus kann werden;
+(772) dentes(N) illi(Pr)(N) cum(Kon) maxime(Adv)(Sup) cadunt(Prä)(Akt)."
+(772) die|Zähne ihm gerade am|meisten fallen."
+= § 4 =
+(774) Debeo(Prä)(Akt) hoc(Adj)(D) suburbano(D) meo(Adj)(D), quod(Kon) mihi(Pr)(D) senectus(N) mea(Adj)(N), quocumque(Adv) adverteram(Plq)(Akt),
+(774) ich|verdanke diesem Vorort|Gute meinem, dass mir das|Alter mein, wohin|auch|immer ich|gewandt|hatte,
+(775) apparuit(Per)(Akt). Conplectamur(Prä)(Pas)(Knj) illam(Pr)(A) et(Kon) amemus(Prä)(Akt)(Knj); plena(Adj)(N) est(Prä)(Akt) voluptatis(G), si(Kon) illa(Pr)(N)
+(775) ist|erschienen. um|armen|wir sie und lieben|wir; voll ist der|Lust, wenn sie
+(776) scias(Prä)(Akt)(Knj) uti(Inf)(Pas). Gratissima(Adj)(N)(Sup) sunt(Prä)(Akt) poma(N), cum(Kon) fugiunt(Prä)(Akt); pueritiae(G) maximus(Adj)(N)(Sup) in(Prp)
+(776) du|erkennen|mögest zu|gebrauchen. liebste sind die|Äpfel, wenn sie|entweichen; der|Kindheit größter im
+(777) exitu(Abl) decor(N) est(Prä)(Akt); deditos(Per)(Pas)(A) vino(D) potio(N) extrema(Adj)(N) delectat(Prä)(Akt), illa(Pr)(N) quae(Pr)(N)
+(777) Ausgang Anmut ist; den|Hingegebenen dem|Wein der|Trank letzte erfreut, jene welche
+(778) mergit(Prä)(Akt), quae(Pr)(N) ebrietati(D) summam(Adj)(A)(Sup) manum(A) inponit(Prä)(Akt).
+(778) taucht|unter, die der|Trunkenheit höchste Hand auf|legt.
+= § 5 =
+(780) Quod(Pr)(N) in(Prp) se(Pr)(Abl) iucundissimum(Adj)(A)(Sup) omnis(Adj)(N) voluptas(N) habet(Prä)(Akt), in(Prp) finem(A) sui(Pr)(G)
+(780) was in sich das|aller|angenehmste jede Lust hat, auf das|Ende seiner|selbst
+(781) differt(Prä)(Akt). Iucundissima(Adj)(N)(Sup) est(Prä)(Akt) aetas(N) devexa(Adj)(N) iam(Adv), non(Pt) tamen(Pt) praeceps(Adj)(N). Et(Kon)
+(781) verschiebt. am|angenehmsten ist das|Alter ab|geneigt schon, nicht dennoch kopf|voran. und
+(782) illam(Pr)(A) quoque(Pt) in(Prp) extrema(Adj)(Abl) tegula(Abl) stantem(Prä)(Akt)(A) iudico(Prä)(Akt) habere(Inf)(Akt) suas(Adj)(A) voluptates(A).
+(782) jene auch auf äußerster Ziegel|kante stehend halte|ich zu|haben ihre Freuden.
+(783) Aut(Kon) hoc(Pr)(N) ipsum(Pr)(A) succedit(Prä)(Akt) in(Prp) locum(A) voluptatum(G), nullis(Adj)(Abl) egere(Inf)(Akt). Quam(Adv)
+(783) oder dieses gerade tritt|an|die|Stelle des Platzes der|Lüste, keiner zu|bedürfen. wie
+(784) dulce(Adj)(N) est(Prä)(Akt) cupiditates(A) fatigasse(Per)(Akt)(Inf) ac(Kon) reliquisse(Per)(Akt)(Inf) ! "
+(784) süß ist Begierden ermüdet|zu|haben und zurück|gelassen|zu|haben ! "
+= § 6 =
+(786) Molestum(Adj)(N) est(Prä)(Akt)," inquis(Prä)(Akt), " mortem(A) ante(Prp) oculos(A) habere(Inf)(Akt)." Primum(Adv) ista(Pr)(N)
+(786) lästig ist," sagst|du, " den|Tod vor die|Augen zu|haben." erstens diese|Dinge|da
+(787) tam(Adv) seni(Adj)(D) ante(Prp) oculos(A) debet(Prä)(Akt) esse(Inf)(Akt) quam(Kon) iuveni(D). Non(Pt) enim(Pt)
+(787) ebenso dem|Alten vor die|Augen soll sein wie dem|Jungen. nicht nämlich
+(788) citamur(Prä)(Pas) ex(Prp) censu(Abl). Deinde(Adv) nemo(Pr)(N) tam(Adv) senex(Adj)(N) est(Prä)(Akt), ut(Kon) inprobe(Adv)
+(788) werden|aufgerufen aus dem|Zensus. sodann niemand so alt ist, dass ungebührlich
+(789) unum(Adj)(A) diem(A) speret(Prä)(Akt)(Knj). Unus(Adj)(N) autem(Pt) dies(N) gradus(N) vitae(G) est(Prä)(Akt). Tota(Adj)(N)
+(789) einen Tag er|hoffe. ein|einziger aber Tag Stufe des|Lebens ist. ganze
+(790) aetas(N) partibus(N)(Abl) constat(Prä)(Akt) et(Kon) orbes(A) habet(Prä)(Akt) circumductos(Per)(Pas)(A) maiores(Adj)(A)(Kmp) minoribus(Adj)(Abl)(Kmp). Est(Prä)(Akt)
+(790) Lebenszeit aus|Teilen besteht und Kreise hat herum|geführt größere als|den|Kleineren. ist
+(791) aliquis(Pr)(N), qui(Pr)(N) omnis(Adj)(A) conplectatur(Prä)(Akt)(Knj) et(Kon) cingat(Prä)(Akt)(Knj); hic(Pr)(N) pertinet(Prä)(Akt) a(Prp) natali(N)(Abl)
+(791) irgendeiner, der alle umfasse und umschlinge; dieser erstreckt|sich von der|Geburt
+(792) ad(Prp) diem(A) extremum(Adj)(A). Est(Prä)(Akt) alter(Adj)(N), qui(Pr)(N) annos(A) adulescentiae(G) cludit(Prä)(Akt). Est(Prä)(Akt)
+(792) bis|zu dem|Tag äußersten. ist ein|anderer, der die|Jahre der|Jugend schließt. ist
+(793) qui(Pr)(N) totam(Adj)(A) pueritiam(A) ambitu(N)(Abl) suo(Adj)(Abl) adstringit(Prä)(Akt). Est(Prä)(Akt) deinde(Adv) per(Prp) se(Pr)(A)
+(793) der ganze Kindheit durch|den|Umfang seinen zusammen|bindet. ist ferner für sich
+(794) annus(N) in(Prp) se(Pr)(Abl) omnia(Adj)(A) continens(Prä)(Akt)(N) tempora(A), quorum(Pr)(G) multiplicatione(N)(Abl) vita(N) conponitur(Prä)(Pas).
+(794) das|Jahr in sich alle enthaltend Zeiten, deren durch|Vervielfachung das|Leben wird|zusammen|gesetzt.
+(795) Mensis(N) artiore(Adj)(Abl)(Kmp) praecingitur(Prä)(Pas) circulo(N)(Abl). Angustissimum(Adj)(A)(Sup) habet(Prä)(Akt) dies(N) gyrum(A), sed(Kon) et(Kon)
+(795) der|Monat mit|engerem wird|umgürtet Kreis. den|engsten hat der|Tag Umlauf, aber auch
+(796) hic(Pr)(N) ab(Prp) initio(N)(Abl) ad(Prp) exitum(A) venit(Prä)(Akt), ab(Prp) ortu(N)(Abl) ad(Prp) occasum(A).
+(796) dieser vom Anfang bis|zu dem|Ausgang kommt, vom Aufgang bis|zu Untergang.
+= § 7 =
+(798) Ideo(Adv) Heraclitus(N), cui(Pr)(D) cognomen(A) fecit(Per)(Akt) orationis(G) obscuritas(N), " Unus(Adj)(N)," inquit(Prä)(Akt),
+(798) deshalb Heraclitus, dem|welchen Beiname machte der|Rede Dunkelheit, " einziger," sagt|er,
+(799) " dies(N) par(Adj)(N) omni(Adj)(D) est(Prä)(Akt)." Hoc(Pr)(A) alius(Pr)(N) aliter(Adv) excepit(Per)(Akt). Dixit(Per)(Akt)
+(799) " Tag gleich jedem ist." dies ein|anderer anders fasste|auf. sagte|er
+(800) enim(Pt) parem(Adj)(A) esse(Inf)(Akt) horis(D), nec(Kon) mentitur(Prä)(Akt); nam(Pt) si(Kon) dies(N) est(Prä)(Akt)
+(800) nämlich gleich zu|sein den|Stunden, und|nicht lügt; denn wenn der|Tag ist
+(801) tempus(N) viginti(Adj)(N) et(Kon) quattuor(Adj)(N) horarum(G), necesse(Adj) est(Prä)(Akt) omnes(Adj)(A) inter(Prp) se(Pr)(A)
+(801) Zeit zwanzig und vier der|Stunden, notwendig ist alle unter einander
+(802) dies(A) pares(Adj)(A) esse(Inf)(Akt), quia(Kon) nox(N) habet(Prä)(Akt), quod(Pr)(A) dies(N) perdidit(Per)(Akt). Alius(Pr)(N)
+(802) Tage gleich zu|sein, weil die|Nacht hat, was der|Tag verloren|hat. ein|anderer
+(803) ait(Prä)(Akt) parem(Adj)(A) esse(Inf)(Akt) unum(Adj)(A) diem(A) omnibus(Adj)(D) similitudine(N)(Abl); nihil(Pr)(N) enim(Pt) habet(Prä)(Akt)
+(803) behauptet|er gleich zu|sein einen Tag allen an|Ähnlichkeit; nichts nämlich hat
+(804) longissimi(Adj)(G)(Sup) temporis(G) spatium(A), quod(Pr)(N) non(Pt) et(Kon) in(Prp) uno(Adj)(Abl) die(N)(Abl) invenias(Prä)(Akt)(Knj),
+(804) des|sehr|langen der|Zeit Raum, was nicht auch in einem Tag findest|du,
+(805) lucem(A) et(Kon) noctem(A), et(Kon) in(Prp) aeternum(Adj)(A) dies(N) vices(A) plures(Adj)(A)(Kmp) facit(Prä)(Akt)
+(805) Licht und Nacht, und auf ewig der|Tag Wechsel mehrere macht
+(806) istas(Pr)(A), non(Pt) alias(Pr)(A) contractior(Adj)(N)(Kmp), alias(Pr)(A) productior(Adj)(N)(Kmp).
+(806) diese|da, nicht andere kürzer, andere länger.
+= § 8 =
+(808) Itaque(Pt) sic(Adv) ordinandus(Gdv)(Fu1)(Pas)(N) est(Prä)(Akt) dies(N) omnis(Adj)(N), tamquam(Kon) cogat(Prä)(Akt)(Knj) agmen(A) et(Kon)
+(808) daher so anordnend|zu|sein ist der|Tag jeder, als|ob dränge Zug und
+(809) consummet(Prä)(Akt)(Knj) atque(Kon) expleat(Prä)(Akt)(Knj) vitam(A). Pacuvius(N), qui(Pr)(N) Syriam(A) usu(N)(Abl) suam(Adj)(A) fecit(Per)(Akt),
+(809) vollende und erfülle das|Leben. Pacuvius, der Syrien durch|Gebrauch seine machte,
+(810) cum(Prp) vino(N)(Abl) et(Kon) illis(Pr)(Abl) funebribus(Adj)(Abl) epulis(N)(Abl) sibi(Pr)(D) parentaverat(Plq)(Akt), sic(Adv) in(Prp)
+(810) mit Wein und jenen begräbnis Mahlzeiten sich Totenopfer|gefeiert|hatte, so in
+(811) cubiculum(A) ferebatur(Imp)(Pas) a(Prp) cena(N)(Abl), ut(Kon) inter(Prp) plausus(A) exoletorum(G) hoc(Pr)(A) ad(Prp)
+(811) das|Schlafzimmer wurde|getragen von Mahl, dass zwischen Beifälle der|Günstlinge dies zur
+(812) symphoniam(A) caneretur(Imp)(Pas)(Knj): βεβίωται, βεβίωται.
+(812) Zusammen|Klang gesungen|würde: es|ist|gelebt, es|ist|gelebt.
+= § 9 =
+(814) Nullo(Adj)(Abl) non(Pt) se(Pr)(A) die(N)(Abl) extulit(Per)(Akt). Hoc(Pr)(N), quod(Pr)(A) ille(Pr)(N) ex(Prp) mala(Adj)(Abl)
+(814) an|keinem nicht sich Tag hob|er|empor. dies, was jener aus schlechtem
+(815) conscientia(N)(Abl) faciebat(Imp)(Akt), nos(Pr)(N) ex(Prp) bona(Adj)(Abl) faciamus(Prä)(Akt)(Knj) et(Kon) in(Prp) somnum(A) ituri(Fu1)(Akt)(N)
+(815) Gewissen tat, wir aus gutem machen|wir und in den|Schlaf im|Begriff|zu|gehen
+(816) laeti(Adj)(N) hilaresque(Adj)(N)(Kon) dicamus(Prä)(Akt)(Knj):
+(816) froh heiter|und sagen|wir:
+(817) [Zitat Anfang]
+(818) Vixi(Per)(Akt) et(Kon) quem(Pr)(A) dederat(Plq)(Akt) cursum(A) fortuna(N), peregi(Per)(Akt).
+(818) ich|habe|gelebt und welchen gegeben|hatte Lauf Glück|Schicksal, vollendet|habe|ich.
+(819) [Zitat Ende]
+(820) Crastinum(A) si(Kon) adiecerit(Fu2)(Akt) deus(N), laeti(Adj)(N) recipiamus(Prä)(Akt)(Knj). Ille(Pr)(N) beatissimus(Adj)(N)(Sup) est(Prä)(Akt) et(Kon)
+(820) das|Morgige wenn hinzugefügt|haben|wird der|Gott, froh nehmen|wir|auf. jener glücklichster ist und
+(821) securus(Adj)(N) sui(Pr)(G) possessor(N), qui(Pr)(N) crastinum(A) sine(Prp) sollicitudine(N)(Abl) expectat(Prä)(Akt). Quisquis(Pr)(N) dixit(Per)(Akt)
+(821) sorglos seiner Besitzer, der das|Morgige ohne Sorge erwartet. wer|auch|immer gesagt|hat
+(822) " vixi(Per)(Akt)," cotidie(Adv) ad(Prp) lucrum(A) surgit(Prä)(Akt).
+(822) " ich|habe|gelebt," täglich zu Gewinn erhebt|er|sich.
+= § 10 =
+(824) Sed(Kon) iam(Adv) debeo(Prä)(Akt) epistulam(A) includere(Inf)(Akt). " Sic(Pt)," inquis(Prä)(Akt), "sine(Prp) ullo(Adj)(Abl)
+(824) aber schon schulde|ich den|Brief zu|schließen. " so," sagst|du, "ohne irgendeinem
+(825) ad(Prp) me(Pr)(A) peculio(N)(Abl) veniet(Fu1)(Akt)? " Noli(Prä)(Akt)(Imv) timere(Inf)(Akt); aliquid(Pr)(A) secum(Pr)(Abl) fert(Prä)(Akt). Quare(Adv)
+(825) zu mir Spar|Geld wird|kommen? " wolle|nicht zu|fürchten; etwas mit|sich trägt. weshalb
+(826) aliquid(Pr)(A) dixi(Per)(Akt) ? Multum(Adj)(N). Quid(Pr)(N) enim(Pt) hac(Pr)(Abl) voce(N)(Abl) praeclarius(Adj)(N)(Kmp), quam(Kon)
+(826) etwas sagte|ich ? viel. was nämlich dieser Stimme herrlicher, als
+(827) illi(Pr)(D) trado(Prä)(Akt) ad(Prp) te(Pr)(A) perferendam(Gdv)(Fu1)(Pas)(A) ? " Malum(N) est(Prä)(Akt) in(Prp)
+(827) jenem übergebe|ich zur dir hin|zu|bringende ? " übel ist in
+(828) necessitate(N)(Abl) vivere(Inf)(Akt); sed(Kon) in(Prp) necessitate(N)(Abl) vivere(Inf)(Akt) necessitas(N) nulla(Adj)(N) est(Prä)(Akt)." Quidni(Pt)
+(828) der|Not zu|leben; aber in der|Not zu|leben Notwendigkeit keine ist." warum|nicht
+(829) nulla(Adj)(N) sit(Prä)(Akt)(Knj) ? Patent(Prä)(Akt) undique(Adv) ad(Prp) libertatem(A) viae(N) multae(Adj)(N) breves(Adj)(N),
+(829) keine sei ? stehen|offen von|allen|Seiten zu der|Freiheit Wege viele kurze,
+(830) faciles(Adj)(N). Agamus(Prä)(Akt)(Knj) deo(D) gratias(A), quod(Kon) nemo(Pr)(N) in(Prp) vita(A) teneri(Inf)(Pas) potest(Prä)(Akt).
+(830) leichte. lasst|uns|danken dem|Gott Dank, weil niemand im Leben gehalten|zu|werden kann.
+(831) Calcare(Inf)(Akt) ipsas(Adj)(A) necessitates(A) licet(Prä)(Akt). "
+(831) nieder|treten die|selbst Notwendigkeiten ist|erlaubt. "
+= § 11 =
+(833) Epicurus(N)," inquis(Prä)(Akt), "dixit(Per)(Akt). Quid(Pr)(N) tibi(Pr)(D) cum(Prp) alieno(Adj)(Abl) ?" Quod(Pr)(N) verum(Adj)(N)
+(833) Epikur," sagst|du, "sagte. was dir mit Fremdem ?" was wahr
+(834) est(Prä)(Akt), meum(Adj)(N) est(Prä)(Akt). Perseverabo(Fu1)(Akt) Epicurum(A) tibi(Pr)(D) ingerere(Inf)(Akt), ut(Kon) isti(Pr)(D), qui(Pr)(N)
+(834) ist, mein ist. werde|ich|fortfahren Epikur dir auf|zudrängen, damit jenen|da, die
+(835) in(Prp) verba(A) iurant(Prä)(Akt), nec(Kon) quid(Pr)(A) dicatur(Prä)(Pas)(Knj) aestimant(Prä)(Akt), sed(Kon) a(Prp) quo(Pr)(Abl),
+(835) auf Worte schwören, und|nicht was gesagt|werde schätzen, sondern von wem,
+(836) sciant(Prä)(Akt)(Knj), quae(Pr)(N) optima(Adj)(N)(Sup) sunt(Prä)(Akt), esse(Inf)(Akt) communia(Adj)(N). VALE(Imv)(Akt).
+(836) wüssten, welche die|besten sind, zu|sein gemeinsam. lebe|wohl.
