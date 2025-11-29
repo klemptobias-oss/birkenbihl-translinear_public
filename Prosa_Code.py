@@ -1559,6 +1559,18 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         slice_en = en[i:j]  # NEU: Englische Zeile
         slice_start = i  # NEU: Start-Index für tok_idx-Berechnung
 
+        # KRITISCH: Prüfe ob alle Zeilen leer sind (z.B. nur Stephanus-Paginierungen)
+        # Dies kann passieren wenn ALL translations hidden sind via TAG_CONFIG
+        has_gr_content = any(t and t.strip() for t in slice_gr)
+        has_de_content = any(t and t.strip() for t in slice_de)
+        has_en_content = any(t and t.strip() for t in slice_en)
+        
+        if not has_gr_content and not has_de_content and not has_en_content:
+            # Keine Inhalte in diesem Slice, überspringe Tabelle komplett
+            i = j
+            first_slice = False
+            continue
+
         # linke Zusatzspalten
         sp_cell_gr = Paragraph(xml_escape(speaker_display), style_speaker) if (first_slice and speaker_width_pt>0 and speaker_display) else Paragraph('', style_speaker)
         sp_cell_de = Paragraph('', style_speaker)
@@ -1646,15 +1658,6 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # NEU: Prüfe, ob englische Zeile vorhanden ist
         has_en = any(slice_en)
         has_de = any(de)  # Prüfe, ob überhaupt deutsche Übersetzungen vorhanden sind
-        has_gr = any(slice_gr)  # Prüfe, ob griechische Zeile Inhalt hat
-        
-        # KRITISCH: Wenn ALLE Zeilen leer sind (z.B. nur Stephanus-Paginierungen),
-        # dann überspringe diese Tabelle komplett um ReportLab-Crash zu vermeiden
-        if not has_gr and not has_de and not has_en:
-            # Keine Inhalte, überspringe diese Tabelle
-            i = j
-            first_slice = False
-            continue
         
         if has_en:
             if has_de:
