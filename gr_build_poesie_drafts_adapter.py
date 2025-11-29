@@ -9,7 +9,7 @@ DST_BASE = ROOT / "pdf_drafts" / "poesie_drafts"         # Ausgaben (spiegelbild
 RUNNER = ROOT / "poesie_pdf.py"                          # 24 Varianten (Poesie)
 
 META_HEADER_RE = re.compile(
-    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|VERSMASS|METER_MODE|HIDE_PIPES):(.*?)\s*-->',
+    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|VERSMASS|METER_MODE|HIDE_PIPES|SPRACHE|GATTUNG|KATEGORIE|AUTOR|WERK):(.*?)\s*-->',
     re.DOTALL | re.IGNORECASE
 )
 

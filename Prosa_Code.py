@@ -74,7 +74,7 @@ SPEAKER_COL_MIN_MM = 3.0   # Mindestbreite für Sprecher-Spalte
 SPEAKER_GAP_MM = PARA_GAP_MM   # keep same gap as normal paragraph/§ texts
 
 CELL_PAD_LR_PT = 0.6       # Innenabstand links/rechts in Zellen (stark reduziert für kompaktere TAG-PDFs)
-SAFE_EPS_PT = 0.3          # Sicherheitsabstand für Messungen (reduziert für kompaktere Darstellung)
+SAFE_EPS_PT = 0.8          # Sicherheitsabstand für Messungen (erhöht von 0.3 auf 0.8 für bessere Lesbarkeit)
 
 # ----------------------- TAG-KONFIGURATION -----------------------
 # Einstellungen für Tag-Darstellung

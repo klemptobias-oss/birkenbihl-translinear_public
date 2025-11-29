@@ -1653,8 +1653,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 w_gr = visible_measure_token(core_text, font=token_gr_style.fontName, 
                                              size=token_gr_style.fontSize, cfg=eff_cfg, 
                                              is_greek_row=True)
-                # MINIMALER Puffer (wie bei HideTags im manuellen Text)
-                w_gr += max(token_gr_style.fontSize * 0.01, 0.3)
+                # ERHÖHTER Puffer von 0.3pt auf 1.0pt für bessere Lesbarkeit
+                w_gr += max(token_gr_style.fontSize * 0.08, 1.0)
                 
             elif tags_in_token and tag_mode == "TAGS":
                 # FALL 2: Tag-PDF UND Token HAT Tags → Tags werden angezeigt → normale Breite
