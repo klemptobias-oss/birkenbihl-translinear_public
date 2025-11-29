@@ -670,19 +670,21 @@ function buildDraftPdfFilename() {
     // z.B. "agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251129_203821.txt"
     let filebase = state.pendingDraftFilename.replace(/\.txt$/, "");
 
-    // KRITISCH: PDFs haben das meta_prefix DAVOR!
+    // KRITISCH: Normalisiere Sprachcodes ZUERST (wie GitHub Actions macht)
+    // _gr_de_en_ → _gr_de_ (2-sprachig anzeigen, obwohl 3-sprachig im Dateinamen)
+    // _lat_de_en_ → _lat_de_
+    filebase = filebase.replace(/_gr_de_en_/, "_gr_de_");
+    filebase = filebase.replace(/_lat_de_en_/, "_lat_de_");
+
+    // DANN: PDFs haben das meta_prefix DAVOR!
     // Beispiel: PDF = "GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_stil1_birkenbihl_draft_..."
-    // aber pendingDraftFilename = "agamemnon_gr_de_en_stil1_birkenbihl_draft_..."
+    // aber pendingDraftFilename (nach Normalisierung) = "agamemnon_gr_de_stil1_birkenbihl_draft_..."
     const metaPrefix = state.workMeta?.meta_prefix || "";
     if (metaPrefix && !filebase.startsWith(metaPrefix)) {
       filebase = `${metaPrefix}__${filebase}`;
     }
 
-    // Normalisiere Sprachcodes: _gr_de_en_ → _gr_de_ (wie GitHub Actions macht)
-    let normalized = filebase.replace(/_gr_de_en_/, "_gr_de_");
-    normalized = normalized.replace(/_lat_de_en_/, "_lat_de_");
-
-    const name = `${normalized}${buildVariantSuffix()}.pdf`;
+    const name = `${filebase}${buildVariantSuffix()}.pdf`;
     console.log("Generated draft filename (from pendingDraftFilename):", name);
     return name;
   }

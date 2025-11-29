@@ -1596,21 +1596,10 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                 return t
             return replace_pipes_with_spaces(t) if hide_pipes else t
 
-        # WICHTIG: Übergebe tok_idx an cell_markup, damit _strip_tags_from_token korrekt arbeitet
-        gr_cells = [Paragraph(cell_markup(t, True, tok_idx=slice_start + idx),  token_gr_style) if t else Paragraph('', token_gr_style) for idx, t in enumerate(slice_gr)]
-        # Für DE und EN: Ersetze | durch Leerzeichen, wenn hide_pipes aktiviert ist
-        de_cells = [Paragraph(cell_markup(process_translation_token(t), False, tok_idx=None), token_de_style) if t else Paragraph('', token_de_style) for t in slice_de]
-        en_cells = [Paragraph(cell_markup(process_translation_token(t), False, tok_idx=None), token_de_style) if t else Paragraph('', token_de_style) for t in slice_en]  # NEU: Englische Zellen
-
-        # KRITISCH: Content-Check NACH cell_markup (wo Stephanus-Filterung passiert)
-        # Prüfe ob alle Token-Zellen leer/unsichtbar sind
-        # WICHTIG: Die Filterung passiert in cell_markup() UND in build_flow_tables()
-        # Wir müssen BEIDE Filter simulieren:
-        # 1. is_only_symbols_or_stephanus() für DE/EN (aus build_flow_tables)
-        # 2. _strip_tags_from_token() für alle (aus cell_markup)
+        # KRITISCH: Content-Check VOR Paragraph-Erstellung!
+        # Prüfe ob alle Slices nach Stephanus-Filterung + Tag-Stripping leer sind
+        # Dies verhindert ReportLab-Crashes durch leere Tabellen
         
-        # Importiere die Stephanus-Filter-Funktion (definiert weiter oben in build_flow_tables)
-        # ABER: Wir sind AUSSERHALB von build_flow_tables, also müssen wir die Logik hier duplizieren
         def is_only_symbols_or_stephanus_local(token: str) -> bool:
             """Lokale Kopie der Stephanus-Filter-Funktion"""
             if not token or not token.strip():
@@ -1655,6 +1644,13 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             i = j
             first_slice = False
             continue
+
+        # JETZT erst die Paragraphs erstellen (nachdem wir wissen, dass Content vorhanden ist)
+        # WICHTIG: Übergebe tok_idx an cell_markup, damit _strip_tags_from_token korrekt arbeitet
+        gr_cells = [Paragraph(cell_markup(t, True, tok_idx=slice_start + idx),  token_gr_style) if t else Paragraph('', token_gr_style) for idx, t in enumerate(slice_gr)]
+        # Für DE und EN: Ersetze | durch Leerzeichen, wenn hide_pipes aktiviert ist
+        de_cells = [Paragraph(cell_markup(process_translation_token(t), False, tok_idx=None), token_de_style) if t else Paragraph('', token_de_style) for t in slice_de]
+        en_cells = [Paragraph(cell_markup(process_translation_token(t), False, tok_idx=None), token_de_style) if t else Paragraph('', token_de_style) for t in slice_en]  # NEU: Englische Zellen
 
         row_gr, row_de, row_en, colWidths = [], [], [], []  # NEU: row_en
         # WICHTIG: Para/Speaker-Spalten IMMER hinzufügen (auch wenn leer), damit alle Zeilen am gleichen Ort beginnen
