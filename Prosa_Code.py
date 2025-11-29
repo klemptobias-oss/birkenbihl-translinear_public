@@ -1604,23 +1604,51 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
 
         # KRITISCH: Content-Check NACH cell_markup (wo Stephanus-Filterung passiert)
         # Prüfe ob alle Token-Zellen leer/unsichtbar sind
-        # WICHTIG: Die Filterung passiert in cell_markup(), also prüfen wir die ORIGINALEN Tokens
-        # ABER mit dem gleichen Filter wie cell_markup verwendet
-        def has_visible_content(token):
-            """Prüft ob Token nach cell_markup() sichtbaren Content hat"""
+        # WICHTIG: Die Filterung passiert in cell_markup() UND in build_flow_tables()
+        # Wir müssen BEIDE Filter simulieren:
+        # 1. is_only_symbols_or_stephanus() für DE/EN (aus build_flow_tables)
+        # 2. _strip_tags_from_token() für alle (aus cell_markup)
+        
+        # Importiere die Stephanus-Filter-Funktion (definiert weiter oben in build_flow_tables)
+        # ABER: Wir sind AUSSERHALB von build_flow_tables, also müssen wir die Logik hier duplizieren
+        def is_only_symbols_or_stephanus_local(token: str) -> bool:
+            """Lokale Kopie der Stephanus-Filter-Funktion"""
+            if not token or not token.strip():
+                return True
+            cleaned = token.strip()
+            # Nur Symbole/Interpunktion
+            only_symbols_pattern = r'^[\[\]\(\).,;:!?…—"\'*†‡§\s]+$'
+            if re.match(only_symbols_pattern, cleaned):
+                return True
+            # Stephanus-Paginierungen: [123a-e]
+            stephanus_pattern = r'^\[?\d+[a-e]?\]?$'
+            if re.match(stephanus_pattern, cleaned):
+                return True
+            return False
+        
+        def has_visible_content(token, is_translation=False):
+            """Prüft ob Token nach ALLEN Filterungen sichtbaren Content hat"""
             if not token or not token.strip():
                 return False
-            # cell_markup() ruft _strip_tags_from_token() und format_token_markup() auf
-            # Simuliere die gleiche Logik hier
+            
+            # Für Übersetzungen (DE/EN): Prüfe zuerst Stephanus-Filter
+            if is_translation:
+                if RE_INLINE_MARK.match(token or ''):
+                    return False
+                if is_only_symbols_or_stephanus_local(token or ''):
+                    return False
+            
+            # Dann Tag-Stripping (für alle Zeilen)
             cleaned = _strip_tags_from_token(token, block=block, tok_idx=None, tag_mode=tag_mode) if token else token
-            # Nach Tag-Stripping und Markup-Formatierung, prüfe ob noch Text übrig ist
+            
+            # Nach allen Filterungen, prüfe ob noch sichtbarer Text übrig ist
             if cleaned and cleaned.strip() and cleaned.strip() not in ['', '<i></i>', '<b></b>']:
                 return True
             return False
         
-        has_gr_visible = any(has_visible_content(t) for t in slice_gr)
-        has_de_visible = any(has_visible_content(process_translation_token(t)) for t in slice_de)
-        has_en_visible = any(has_visible_content(process_translation_token(t)) for t in slice_en)
+        has_gr_visible = any(has_visible_content(t, is_translation=False) for t in slice_gr)
+        has_de_visible = any(has_visible_content(process_translation_token(t), is_translation=True) for t in slice_de)
+        has_en_visible = any(has_visible_content(process_translation_token(t), is_translation=True) for t in slice_en)
         
         if not has_gr_visible and not has_de_visible and not has_en_visible:
             # Alle Zeilen leer nach Filterung - überspringe dieses Slice komplett
@@ -2044,11 +2072,41 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 # Table kann über Seiten umbrechen, wenn kein KeepTogether verwendet wird!
                 p = Paragraph(html.escape(text_clean), comment_style_simple)
                 
-                # Berechne verfügbare Breite (verwende frame_w vom Doc)
+                # WICHTIG: Kommentar-Box-Breite soll NUR bis zum Ende des Translinear-Texts reichen
+                # Verwende die gleiche Breite wie die Token-Tables (frame_w minus speaker/para columns)
+                # Diese Info ist NICHT im render_block_comments Scope verfügbar, daher:
+                # Verwende doc.width (= frame_w) MINUS die Speaker/Para-Spalten (falls vorhanden)
                 try:
-                    available_width = doc.width - 12*mm  # doc.width ist frame_w minus margins
+                    # doc.width ist die verfügbare Frame-Breite (pagesize - margins)
+                    frame_width = doc.width
+                    
+                    # Ziehe Speaker/Para-Spalten ab, falls im Block vorhanden
+                    speaker_display = block.get('speaker_display', '')
+                    para_display = block.get('paragraph_display', '')
+                    
+                    # Berechne die Spaltenbreiten (wie in build_flow_tables)
+                    speaker_width_pt = 0
+                    para_width_pt = 0
+                    SPEAKER_GAP_MM = 1.5  # Von oben kopiert
+                    PARA_GAP_MM = 0.3
+                    
+                    if speaker_display:
+                        speaker_width_pt = min(len(speaker_display) * 3.5, 30)  # Max 30pt
+                    if para_display:
+                        para_width_pt = 8  # Feste Breite
+                    
+                    # Verfügbare Breite für Kommentar = frame_width - speaker/para columns
+                    available_width = frame_width
+                    if speaker_width_pt > 0:
+                        available_width -= (speaker_width_pt + SPEAKER_GAP_MM*mm)
+                    if para_width_pt > 0:
+                        available_width -= (para_width_pt + PARA_GAP_MM*mm)
                 except:
-                    available_width = 170*mm  # Fallback
+                    # Fallback: Verwende doc.width minus kleiner Puffer
+                    try:
+                        available_width = doc.width * 0.95  # 95% der Frame-Breite
+                    except:
+                        available_width = 170*mm  # Absoluter Fallback
                 
                 # Padding: 0.3cm = 3mm oben/unten, 0.6cm = 6mm links/rechts
                 comment_table = Table([[p]], colWidths=[available_width])

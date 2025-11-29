@@ -2197,6 +2197,14 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             # Table kann über Seiten umbrechen, wenn kein KeepTogether verwendet wird!
             p = Paragraph(html.escape(text_clean), comment_style_simple)
             
+            # WICHTIG: Kommentar-Box-Breite soll bis zum Ende des Translinear-Texts reichen
+            # In Poesie: Verwende pagesize - margins (volle Textbreite)
+            try:
+                from Poesie_Code import doc
+                available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin
+            except:
+                available_width = 170*MM  # Fallback
+            
             # Padding: 0.3cm = 3mm oben/unten, 0.6cm = 6mm links/rechts
             comment_table = Table([[p]], colWidths=[available_width])
             comment_table.setStyle(TableStyle([

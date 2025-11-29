@@ -665,46 +665,29 @@ function buildFullReleaseName() {
 }
 
 function buildDraftPdfFilename() {
-  // KRITISCH: Wenn pendingDraftFilename verfügbar ist, extrahiere den Base daraus
-  // Dieser enthält den _draft_translinear_DRAFT_TIMESTAMP Teil!
+  // KRITISCH: Wenn pendingDraftFilename verfügbar ist, verwende es für Draft-PDFs
   if (state.pendingDraftFilename) {
     // z.B. "agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251129_203821.txt"
     let filebase = state.pendingDraftFilename.replace(/\.txt$/, "");
-    
-    // KRITISCH: PDFs haben das meta_prefix DAVOR, aber pendingDraftFilename NICHT!
+
+    // KRITISCH: PDFs haben das meta_prefix DAVOR!
     // Beispiel: PDF = "GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_stil1_birkenbihl_draft_..."
     // aber pendingDraftFilename = "agamemnon_gr_de_en_stil1_birkenbihl_draft_..."
-    // Also: Füge meta_prefix hinzu, wenn vorhanden
     const metaPrefix = state.workMeta?.meta_prefix || "";
     if (metaPrefix && !filebase.startsWith(metaPrefix)) {
       filebase = `${metaPrefix}__${filebase}`;
     }
-    
-    // Normalisiere: Entferne "_gr_de_en" zu "_gr_de" (wie GitHub Actions es macht)
-    // ABER behalte "_draft_translinear_DRAFT_TIMESTAMP"!
-    let normalized = filebase;
-    
-    // Extrahiere timestamp wenn vorhanden
-    const timestampMatch = filebase.match(/_draft_translinear_DRAFT_(\d{8}_\d{6})/);
-    if (timestampMatch) {
-      const timestamp = timestampMatch[1];
-      // Entferne _en aus Sprachcodes (gr_de_en → gr_de)
-      normalized = filebase.replace(/_gr_de_en_/, "_gr_de_");
-      // Stelle sicher dass timestamp erhalten bleibt
-      if (!normalized.includes(`_draft_translinear_DRAFT_${timestamp}`)) {
-        normalized = `${normalized}_draft_translinear_DRAFT_${timestamp}`;
-      }
-    }
-    
+
+    // Normalisiere Sprachcodes: _gr_de_en_ → _gr_de_ (wie GitHub Actions macht)
+    let normalized = filebase.replace(/_gr_de_en_/, "_gr_de_");
+    normalized = normalized.replace(/_lat_de_en_/, "_lat_de_");
+
     const name = `${normalized}${buildVariantSuffix()}.pdf`;
-    console.log(
-      "Generated draft filename (from pendingDraftFilename):",
-      name
-    );
+    console.log("Generated draft filename (from pendingDraftFilename):", name);
     return name;
   }
 
-  // Fallback: Verwende draftBase (ohne Timestamp)
+  // Fallback: Verwende draftBase (OHNE Timestamp - für normale Drafts)
   const releaseBase =
     normalizeReleaseBase(state.draftBase) || buildReleaseBase();
   if (!releaseBase) return "error.pdf";
