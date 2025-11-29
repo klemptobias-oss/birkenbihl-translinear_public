@@ -152,6 +152,7 @@ def _install_global_timeout():
 _install_global_timeout()
 
 import Prosa_Code as Prosa
+from Prosa_Code import group_pairs_into_flows  # ← HINZUFÜGEN
 
 # Ensure final_blocks always exists to avoid NameError in except blocks
 final_blocks = None
@@ -276,7 +277,7 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # KRITISCH: Wenn pair_count > 0 und flow_count == 0, rufe group_pairs_into_flows() auf!
     if pair_count > 0 and flow_count == 0:
         logger.info(f"Converting {pair_count} pair blocks to flow blocks...")
-        blocks = Prosa.group_pairs_into_flows(blocks)
+        blocks = group_pairs_into_flows(blocks)
         
         # Re-check nach Konvertierung
         flow_count_after = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'flow')
