@@ -48,17 +48,17 @@ jobs:
               echo "  ✓ Zugehörige PDFs ebenfalls gelöscht"
             fi
           done
-          
+
           echo ""
           echo "Phase 2: Lösche ALTE Drafts desselben Nutzers für dasselbe Werk (behalte nur neuesten pro Werk+Session)"
           echo ""
-          
+
           # Gruppiere Drafts nach Session + Werk-Pfad
           # Format: agamemnon_gr_de_en_stil1_SESSION_abc123_DRAFT_20251130_032356.txt
           # Gruppierung: SESSION_abc123 + Werk-Name (alles VOR _SESSION_)
-          
+
           declare -A LATEST_DRAFTS
-          
+
           find texte_drafts -type f -name "*_SESSION_*_DRAFT_*.txt" 2>/dev/null | while read -r draft_file; do
             filename=$(basename "$draft_file")
             

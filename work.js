@@ -1227,7 +1227,7 @@ async function performRendering() {
       method: "POST",
       body: form,
       mode: "cors",
-      credentials: "include",  // WICHTIG: Cookies senden/empfangen
+      credentials: "include", // WICHTIG: Cookies senden/empfangen
     });
 
     if (!res || !res.ok) {

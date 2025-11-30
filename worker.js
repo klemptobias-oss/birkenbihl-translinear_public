@@ -399,7 +399,9 @@ export default {
     // Format: SESSION_abc123def456 (16-stellige Hex-ID)
     const cookieHeader = request.headers.get("Cookie") || "";
     let sessionId = null;
-    const sessionMatch = cookieHeader.match(/birkenbihl_session=([a-f0-9]{16})/);
+    const sessionMatch = cookieHeader.match(
+      /birkenbihl_session=([a-f0-9]{16})/
+    );
     if (sessionMatch) {
       sessionId = sessionMatch[1];
     } else {
@@ -554,12 +556,12 @@ export default {
         message:
           "Text gespeichert und PDF-Generierung automatisch gestartet. PDFs werden in wenigen Minuten verfügbar sein.",
         release_base: releaseBase || null,
-        session_id: sessionId,  // Session-ID zurückgeben
+        session_id: sessionId, // Session-ID zurückgeben
       },
       200,
       {
         ...CORS,
-        "Set-Cookie": `birkenbihl_session=${sessionId}; Path=/; Max-Age=86400; SameSite=Lax; Secure`,  // 24h Cookie
+        "Set-Cookie": `birkenbihl_session=${sessionId}; Path=/; Max-Age=86400; SameSite=Lax; Secure`, // 24h Cookie
       }
     );
   },
