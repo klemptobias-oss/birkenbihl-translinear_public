@@ -1532,15 +1532,21 @@ def measure_token_width_with_visibility_poesie(token: str, font: str, size: floa
     # Berechne Breite mit dem Token, wie es ist
     w_with_remaining_tags = visible_measure_token(token, font=font, size=size, cfg=cfg, is_greek_row=is_greek_row)
     
-    # KRITISCH: Puffer basiert auf tag_mode (PDF-Typ), NICHT auf Tag-Präsenz im Token!
-    # Grund: In Tag-PDFs haben manche Wörter keine Tags (hideTags), aber brauchen trotzdem Tag-Puffer!
+    # KRITISCH: Puffer-Strategie unterscheidet sich zwischen Tag- und NoTag-PDFs!
+    # Tag-PDFs: Wörter MIT Tags = 0.8pt, Wörter OHNE Tags = 0.3pt (original, perfekt!)
+    # NoTag-PDFs: ALLE Wörter = 0.8pt (erhöht von 0.3pt für bessere Lesbarkeit!)
+    
+    tags_in_token = RE_TAG.findall(token)
+    
     if tag_mode == "TAGS":
-        # Tag-PDF → verwende angemessenen Puffer für ALLE Wörter (auch ohne Tags!)
-        base_padding = max(size * 0.03, 0.8)
+        # Tag-PDF → Original-Logik beibehalten (MIT Tags = 0.8pt, OHNE Tags = 0.3pt)
+        if tags_in_token:
+            base_padding = max(size * 0.03, 0.8)  # MIT Tags → größerer Puffer
+        else:
+            base_padding = max(size * 0.01, 0.3)  # OHNE Tags → kleinerer Puffer (PERFEKT!)
     else:
-        # NoTag-PDF → verwende größeren Puffer für bessere Lesbarkeit
-        # WICHTIG: NoTag-PDFs brauchen MEHR Puffer als gedacht (wie Tag-PDFs ohne Tags)!
-        base_padding = max(size * 0.03, 0.8)  # ERHÖHT von 0.01/0.3 auf 0.03/0.8 (gleich wie Tag-PDFs!)
+        # NoTag-PDF → ALLE Wörter bekommen größeren Puffer (wie Tag-PDFs MIT Tags!)
+        base_padding = max(size * 0.03, 0.8)  # ERHÖHT von 0.3pt auf 0.8pt!
     
     return w_with_remaining_tags + base_padding
 
@@ -1672,12 +1678,19 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 )
                 
             else:
-                # FALL 3: Token HAT KEINE Tags (oder andere Fälle) → normale Berechnung
+                # FALL 3: Token HAT KEINE Tags (in beiden PDF-Typen möglich!)
+                # Tag-PDF: Wörter ohne Tags (z.B. HideTags) → Original-Puffer 0.3pt (PERFEKT!)
+                # NoTag-PDF: Normale Wörter ohne Tags → erhöhter Puffer 0.8pt (bessere Lesbarkeit!)
                 w_gr = visible_measure_token(gr_token, font=token_gr_style.fontName, 
                                              size=token_gr_style.fontSize, cfg=eff_cfg, 
                                              is_greek_row=True)
-                # WICHTIG: Verwende GLEICHEN Puffer wie Tag-PDFs (0.8pt) für konsistente Abstände!
-                w_gr += max(token_gr_style.fontSize * 0.03, 0.8)  # REDUZIERT von 0.04/1.2 auf 0.03/0.8 (wie Tag-PDFs!)
+                
+                if tag_mode == "TAGS":
+                    # Tag-PDF → Original-Puffer für Wörter ohne Tags (wie früher, perfekt!)
+                    w_gr += max(token_gr_style.fontSize * 0.01, 0.3)
+                else:
+                    # NoTag-PDF → erhöhter Puffer (wie Tag-PDFs MIT Tags!)
+                    w_gr += max(token_gr_style.fontSize * 0.03, 0.8)
         else:
             w_gr = 0.0
         
