@@ -9,19 +9,19 @@ export default {
       .split(",")
       .map((s) => s.trim())
       .filter(Boolean);
-    
+
     // WICHTIG: Bei credentials: 'include' darf KEIN Wildcard (*) verwendet werden!
     // Verwende immer den spezifischen Origin (wenn in allowedList oder leer)
     const allowOrigin =
       allowedList.length === 0
-        ? origin || "*"  // Fallback auf Origin, nur wenn leer dann *
+        ? origin || "*" // Fallback auf Origin, nur wenn leer dann *
         : allowedList.includes(origin)
         ? origin
         : allowedList[0];
 
     const CORS = {
       "Access-Control-Allow-Origin": allowOrigin,
-      "Access-Control-Allow-Credentials": "true",  // KRITISCH: Für Cookies!
+      "Access-Control-Allow-Credentials": "true", // KRITISCH: Für Cookies!
       Vary: "Origin",
       "Access-Control-Allow-Methods": "GET, HEAD, POST, OPTIONS",
       "Access-Control-Allow-Headers": "content-type",
@@ -530,6 +530,9 @@ export default {
       },
     };
 
+    console.log("workflow_dispatch URL:", workflowDispatchUrl);
+    console.log("workflow_dispatch payload:", JSON.stringify(dispatchPayload, null, 2));
+
     const dispatchRes = await fetch(workflowDispatchUrl, {
       method: "POST",
       headers: {
@@ -541,9 +544,15 @@ export default {
       body: JSON.stringify(dispatchPayload),
     });
 
+    console.log("workflow_dispatch response status:", dispatchRes.status);
+
+    let errorDetails = null;
     if (!dispatchRes.ok) {
-      console.warn(
-        `workflow_dispatch fehlgeschlagen (Status ${dispatchRes.status}), aber Draft wurde gespeichert`
+      const errText = await dispatchRes.text().catch(() => "");
+      errorDetails = `Status ${dispatchRes.status}: ${errText}`;
+      console.error(
+        `workflow_dispatch fehlgeschlagen:`,
+        errorDetails
       );
     } else {
       console.log("workflow_dispatch erfolgreich getriggert für", path);
@@ -556,9 +565,11 @@ export default {
         filename: stamped,
         size_bytes: textBytes.length,
         html_url: res.content?.html_url || null,
-        workflow_triggered: true,
-        message:
-          "Text gespeichert und PDF-Generierung automatisch gestartet. PDFs werden in wenigen Minuten verfügbar sein.",
+        workflow_triggered: dispatchRes.ok,  // Nur true wenn Workflow erfolgreich getriggert
+        workflow_error: errorDetails,  // Detaillierter Fehler
+        message: dispatchRes.ok
+          ? "Text gespeichert und PDF-Generierung automatisch gestartet. PDFs werden in wenigen Minuten verfügbar sein."
+          : `Text gespeichert, aber PDF-Generierung fehlgeschlagen: ${errorDetails}`,
         release_base: releaseBase || null,
         session_id: sessionId, // Session-ID zurückgeben
       },
