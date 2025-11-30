@@ -2543,8 +2543,12 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     q_tables.extend(line_tables)
             # WICHTIG: TableStyle explizit importieren (verhindert Scope-Problem)
             from reportlab.platypus import TableStyle
+            # WICHTIG: Lyrik-Bereiche (=== Lyrik ===) brauchen MEHR Zeilenabstand als normaler Prosa-Text!
+            # Verwende gleichen Abstand wie in Poesie: 8-10mm statt 2mm
+            LYRIK_GAP_MM = 8.0  # Größerer Abstand für Lyrik-Zeilen (wie in Poesie)
             for k, tquote in enumerate(q_tables):
-                if k > 0: tquote.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), CONT_PAIR_GAP_MM * mm)]))
+                if k > 0: tquote.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), LYRIK_GAP_MM * mm)]))
+
 
             kidx, src_text = idx + 1, ''
             while kidx < len(flow_blocks) and flow_blocks[kidx]['type'] == 'blank': kidx += 1
