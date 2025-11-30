@@ -24,6 +24,7 @@ build/
 
 # Große/abgeleitete Artefakte – NIEMALS pushen
 pdf/
+pdf_drafts/
 pdf/**
 
 Result/
