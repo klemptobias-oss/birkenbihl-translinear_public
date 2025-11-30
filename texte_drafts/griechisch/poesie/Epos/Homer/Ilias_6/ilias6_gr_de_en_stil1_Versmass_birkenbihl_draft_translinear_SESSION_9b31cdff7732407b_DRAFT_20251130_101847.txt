@@ -1,0 +1,1592 @@
+<!-- RELEASE_BASE:GR_poesie_Epos_Homer_Ilias_6__ilias6_gr_de_en_stil1_Versmass_birkenbihl -->
+<!-- TAG_CONFIG:{"nomen":{"color":"orange","hide":true,"hideTranslation":true},"nomen_N":{"color":"orange","hide":true,"hideTranslation":true},"nomen_G":{"color":"orange","hide":true,"hideTranslation":true},"nomen_D":{"color":"orange","hide":true,"hideTranslation":true},"nomen_A":{"color":"orange","hide":true,"hideTranslation":true},"nomen_V":{"color":"orange","hide":true,"hideTranslation":true},"nomen_Du":{"color":"orange","hide":true,"hideTranslation":true},"verb":{"color":"orange","hide":true,"hideTranslation":true},"verb_Pra":{"color":"orange","hide":true,"hideTranslation":true},"verb_Imp":{"color":"orange","hide":true,"hideTranslation":true},"verb_Aor":{"color":"orange","hide":true,"hideTranslation":true},"verb_AorS":{"color":"orange","hide":true,"hideTranslation":true},"verb_Per":{"color":"orange","hide":true,"hideTranslation":true},"verb_Plq":{"color":"orange","hide":true,"hideTranslation":true},"verb_Fu":{"color":"orange","hide":true,"hideTranslation":true},"verb_Du":{"color":"orange","hide":true,"hideTranslation":true},"verb_Akt":{"color":"orange","hide":true,"hideTranslation":true},"verb_Med":{"color":"orange","hide":true,"hideTranslation":true},"verb_Pas":{"color":"orange","hide":true,"hideTranslation":true},"verb_MP":{"color":"orange","hide":true,"hideTranslation":true},"verb_Inf":{"color":"orange","hide":true,"hideTranslation":true},"verb_Op":{"color":"orange","hide":true,"hideTranslation":true},"verb_Knj":{"color":"orange","hide":true,"hideTranslation":true},"verb_Imv":{"color":"orange","hide":true,"hideTranslation":true},"partizip":{"color":"violett"},"partizip_Pra":{"color":"violett","placement":"sub"},"partizip_Imp":{"color":"violett","placement":"sub"},"partizip_Aor":{"color":"violett","placement":"sub"},"partizip_AorS":{"color":"violett","placement":"sub"},"partizip_Per":{"color":"violett","placement":"sub"},"partizip_Plq":{"color":"violett","placement":"sub"},"partizip_Fu":{"color":"violett","placement":"sub"},"partizip_N":{"color":"violett","placement":"sup"},"partizip_G":{"color":"violett","placement":"sup"},"partizip_D":{"color":"violett","placement":"sup"},"partizip_A":{"color":"violett","placement":"sup"},"partizip_V":{"color":"violett","placement":"sup"},"partizip_Du":{"color":"violett","placement":"sup"},"partizip_Akt":{"color":"violett","placement":"sub"},"partizip_Med":{"color":"violett","placement":"sub"},"partizip_Pas":{"color":"violett","placement":"sub"},"partizip_MP":{"color":"violett","placement":"sub"},"adjektiv":{"color":"blue","placement":"sup"},"adjektiv_N":{"color":"blue","placement":"sup"},"adjektiv_G":{"color":"blue","placement":"sup"},"adjektiv_D":{"color":"blue","placement":"sup"},"adjektiv_A":{"color":"blue","placement":"sup"},"adjektiv_V":{"color":"blue","placement":"sup"},"adjektiv_Du":{"color":"blue","placement":"sup"},"adjektiv_Kmp":{"color":"blue","placement":"sup"},"adjektiv_Sup":{"color":"blue","placement":"sup"},"adverb":{"placement":"sup"},"adverb_Kmp":{"placement":"sup"},"adverb_Sup":{"placement":"sup"},"pronomen":{"placement":"sub"},"pronomen_N":{"placement":"sup"},"pronomen_G":{"placement":"sup"},"pronomen_D":{"placement":"sup"},"pronomen_A":{"placement":"sup"},"pronomen_Du":{"placement":"sup"},"artikel":{"placement":"sup"},"artikel_N":{"placement":"sup"},"artikel_G":{"placement":"sup"},"artikel_D":{"placement":"sup"},"artikel_A":{"placement":"sup"},"artikel_Du":{"placement":"sup"},"prp":{"placement":"sup"},"kon":{"placement":"sup"},"pt":{"placement":"sup"},"ij":{"placement":"sup"}} -->
+<!-- VERSMASS:true -->
+<!-- METER_MODE:with -->
+==== Ilias 6 ====
+(1) ΤρώLωνL(G) |δʼ(Pt) οἰLώθL|ηL(Aor)(Pas) καὶi(Kon) Ἀχi|αιLῶνL(G) |φύλLοπiιςi(N) |αἰνLήL(Adj)(N)·|
+(1) der|Troer aber wurde|allein und der|Achaier Schlacht|lärm schrecklich·
+(1) of|Trojans but was|left|alone and of|Achaeans battle|din dread·
+(2) πολλLὰi(Adj)(A) δʼ(Pt) ἄρiʼ(Pt) |ἔνθLαi(Adv) καὶi(Kon) |ἔνθLʼ(Adv) ἴθL|υσLεi(Aor)(Akt) μάχi|ηL(N) πεδiίi|οιLοL(G)|
+(2) viel aber ja hier und dort drängte|vorwärts Kampf der|Ebene
+(2) many but then here and there pressed|on battle of|the|plain
+(3) ἀλλLήλL|ωνL(Pr)(G) ἰθL|υνLομiένi|ωνL(Prä)(M/P)(G) χαλκL|ήρLεiαi(Adj)(A) |δοῦρLαL(A)|
+(3) einander gerade|lenkend bronze|gerandet Speere
+(3) of|each|other being|directed bronze|fitted spears
+(4) μεσσLηγL|ὺςL(Adv) Σιμiόi|εντLοςi(G) ἰδi|ὲL(Kon) ΞάνθL|οιLοi(G) ῥοi|άLωνL(G).|
+(4) mitten|zwischen des|Simoeis und des|Xanthos Ströme.
+(4) between of|Simoeis and of|Xanthus of|streams.
+(5) ΑἴLαςL(N) |δὲL(Pt) πρῶτL|οςL(Adj)(N) Τελiαμi|ώνLιiοςi(Adj)(N) |ἕρκLοςi(N) Ἀχi|αιLῶνL(G)|
+(5) Aias aber zuerst Telamons|Sohn Bollwerk der|Achaier
+(5) Aias but first Telamonian bulwark of|Achaeans
+(6) ΤρώLωνL(G) |ῥῆξLεi(Aor)(Akt) φάλi|αγγLαi(A), φόi|ωςL(A) δʼ(Pt) ἑτiάρi|οισLινi(D) ἔθi|ηκLενL(AorS)(Akt),|
+(6) der|Troer zer|brach Phalanx, Licht aber den|Gefährten setzte,
+(6) of|Trojans broke phalanx, light but for|companions he|set,
+(7) ἄνδρLαi(A) βαλi|ὼνL(AorS)(Akt)(N) ὃςi(Pr)(N) ἄρi|ιστLοςi(Adj)(Sup)(N) ἐνi|ὶL(Prp) ΘρῄκL|εσσLιi(D) τέτi|υκτLοL(Per)(M/P)|
+(7) Mann geworfen|habend der der|beste in den|Thrakern war|bestimmt
+(7) a|man having|struck who best in Thracians had|been|made
+(8) υἱLὸνi(A) Ἐi|ϋσσLώρL|ουL(G) Ἀκiάμi|αντLʼ(A) ἠL|ΰνL(Adj)(A) τεi(Pt) μέγi|ανL(Adj)(A) τεL(Pt).|
+(8) Sohn des|Eussoros Akamanten schön auch groß auch.
+(8) son of|Eussoros Akamant good and great and.
+(9) τόνL(Pr)(A) ῥʼ(Pt) ἔβiαλi|εL(AorS)(Akt) πρῶτL|οςL(Adj)(N) κόρiυθi|οςL(G) φάλiονi(A) |ἱππLοδiασi|είLηςL(Adj)(G),|
+(9) den ja traf zuerst des|Helmes Kamm pferde|haarig|besetzten,
+(9) him then struck first of|helmet crest horse|haired,
+(10) ἐνL(Prp) δὲi(Pt) μετi|ώπLῳL(D) |πῆξLεi(Aor)(Akt), πέρi|ησLεi(Aor)(Akt) δʼ(Pt) ἄρiʼ(Pt) |ὀστLέiονi(A) |εἴσLωL(Adv)|
+(10) in aber an|der|Stirn stieß, durchbohrte dann sogleich Knochen hinein
+(10) in but on|the|forehead fixed, pierced|through and then bone within
+(11) αἰχμLὴL(N) |χαλκLείL|ηL(Adj)(N)· τὸνL(Pr)(A) |δὲL(Pt) σκότiοςi(N) |ὄσσLεi(Du)(A) κάλi|υψLενL(Aor)(Akt).|
+(11) Spitze erz|ern· ihn aber Dunkel Augen hüllte.
+(11) spear bronze· the|man but darkness eyes covered.
+(12) ἌξLυλL|ονL(A) δʼ(Pt) ἄρiʼ(Pt) ἔπi|εφνLεi(AorS)(Akt) βοi|ὴνL(A) ἀγiαθi|ὸςL(Adj)(N) Διiομi|ήδLηςL(N)|
+(12) Axylos dann sogleich erschlug im|Ruf gut Diomedes
+(12) Axylos and then slew war|cry good Diomedes
+(13) ΤευθρLανiίδi|ηνL(A), ὃςi(Pr)(N) ἔνi|αιLενi(Imp)(Akt) ἐi|ϋκτLιμiένi|ῃL(Adj)(D) ἐνi(Prp) Ἀρi|ίσβLῃL(D)|
+(13) Teuthraniden, der wohnte wohl|gebauten in Arisbe
+(13) Teuthranides, who dwelt in|well|built in Arisbe
+(14) ἀφνLειL|ὸςL(Adj)(N) βιiότi|οιLοi(G), φίλi|οςL(Adj)(N) δʼ(Pt) ἦνL(Imp) |ἀνθρLώπL|οισLιL(D).|
+(14) reich an|Besitz, lieb aber war den|Menschen.
+(14) wealthy of|livelihood, dear and was for|men.
+(15) πάντLαςL(Adj)(A) |γὰρL(Pt) φιλiέi|εσκLενi(Imp)(Akt) ὁδi|ῷL(D) ἔπiιi(Prp) |οἰκLίiαi(D) |ναίLωνL(Prä)(Akt)(N).|
+(15) alle denn liebte|gewöhnlich auf|dem|Weg bei dem|Haus wohnend.
+(15) all for used|to|love on|the|road at house dwelling.
+(16) ἀλλLάi(Kon) οἱi(Pr)(D) |οὔL(Pt) τιςL(Pr)(N) |τῶνL(Pr)(G) γεi(Pt) τότiʼ(Adv) |ἤρκLεσiεi(Aor)(Akt) |λυγρLὸνi(Adj)(A) ὄλi|εθρLονL(A)|
+(16) aber ihm nicht einer derer doch damals half jämmerlichen Verderben
+(16) but for|him not anyone of|those indeed then warded|off woeful destruction
+(17) πρόσθLενi(Adv) ὑπi|αντLιiάσi|αςL(Aor)(Akt)(N), ἀλλLʼ(Kon) |ἄμφLωL(Pr)(Du)(A) |θυμLὸνi(A) ἀπi|ηύρLαL(Aor)(Akt)|
+(17) zuvor entgegen|gegangen|habend, aber beide Mut raubte
+(17) before having|met, but both spirit took|away
+(18) αὐτLὸνL(Pr)(A) |καὶL(Kon) θερiάπi|οντLαi(A) Καλi|ήσLιiονi(A), |ὅςL(Pr)(N) ῥαi(Pt) τόθiʼ(Adv) |ἵππLωνL(G)|
+(18) ihn und Diener Kalesios, der ja damals der|Pferde
+(18) himself and attendant Kalesios, who indeed then of|horses
+(19) ἔσκLενi(Imp) ὑφi|ηνLίiοχi|οςL(N)· τὼL(Pr)(Du)(N) |δʼ(Pt) ἄμφLωL(Pr)(Du)(N) |γαῖLανi(A) ἐδi|ύτLηνL(AorS)(Akt)(Du).|
+(19) war|gewöhnlich Zügel|führer· die|beiden aber beide Erde tauchten.
+(19) was charioteer· the|two but both earth they|went|down.
+(20) ΔρῆσLονL(A) |δʼ(Pt) ΕὐρLύiαλi|οςL(N) καὶi(Kon) Ὀφi|έλτLιiονi(A) |ἐξLενiάρi|ιξLεL(Aor)(Akt)·|
+(20) Dresos aber Euryalos und Opheltion ent|leibte·
+(20) Dresos but Euryalos and Opheltion stripped|and|slew·
+(21) βῆL(AorS)(Akt) δὲi(Pt) μετiʼ(Prp) |ΑἴσLηπL|ονL(A) καὶL(Kon) |ΠήδLασiονi(A), |οὕςL(Pr)(A) ποτiεi(Pt) |νύμφLηL(N)|
+(21) ging aber nach Aisepos und Pedasos, die einst Nymphe
+(21) went but after Aisepos and Pedasos, whom once nymph
+(22) νηLῒςi(N) Ἀβi|αρβLαρiέi|ηL(N) τέκiʼ(AorS)(Akt) ἀμi|ύμLονiιi(Adj)(D) |ΒουκLολiίi|ωνLιL(D).|
+(22) Naiade Abarbaree gebar dem|makellosen Bukolion.
+(22) of|river Abarbaree bore to|blameless Boukolion.
+(23) ΒουκLολiίi|ωνL(N) δʼ(Pt) ἦνL(Imp) |υἱLὸςi(N) ἀγi|αυLοῦL(Adj)(G) |ΛαLομiέδi|οντLοςL(G)|
+(23) Bukolion aber war Sohn des|edlen Laomedon
+(23) Boukolion but was son of|noble Laomedon
+(24) πρεσβLύτiατi|οςL(Adj)(Sup)(N) γενiεi|ῇL(D), σκότiιi|ονL(Adv) δέi(Pt) ἑi(Pr)(A) |γείνLατiοi(Aor)(Med) |μήτLηρL(N)·|
+(24) ältester der|Abstammung|nach, heimlich aber ihn gebar Mutter·
+(24) eldest in|birth, secretly however him bore mother·
+(25) ποιμLαίνL|ωνL(Prä)(Akt)(N) δʼ(Pt) ἐπiʼ(Prp) ὄi|εσσLιi(D) μίγi|ηL(AorS)(M/P) φιλiότi|ητLιi(D) καὶi(Kon) |εὐνLῇL(D),|
+(25) weidend aber auf Schafen vereinte|sich in|Liebe und im|Bett,
+(25) tending but over sheep was|mixed in|love and in|bed,
+(26) ἣL(Pr)(N) δʼ(Pt) ὑπiοκi|υσLαμiένi|ηL(Aor)(Med)(N) διδiυμi|άLονiεi(Adj)(Du)(A) |γείνLατiοi(AorS)(Med) |παῖδLεL(Du)(A).|
+(26) die dann empfangen|habend zwei gebar Kinder.
+(26) who then having|conceived twin|two bore children|two.
+(27) καὶL(Kon) μὲνL(Pt) |τῶνL(Pr)(G) ὑπiέλi|υσLεi(Aor)(Akt) μένi|οςL(A) καὶL(Kon) |φαίδLιμiαi(Adj)(A) |γυῖLαL(A)|
+(27) und doch deren löste Kraft und glänzende Glieder
+(27) and indeed of|them loosed might and shining limbs
+(28) ΜηκLιστL|ηLϊiάδi|ηςL(N) καὶi(Kon) ἀπiʼ(Prp) |ὤμLωνL(G) |τεύχLεiʼ(A) ἐσi|ύλLαL(Aor)(Akt).|
+(28) Mekistaiades und von Schultern Rüstungen raubte.
+(28) the|son|of|Mekisteus and from shoulders armor stripped.
+(29) ἈστLύiαλi|ονL(A) δʼ(Pt) ἄρiʼ(Pt) ἔπi|εφνLεi(AorS)(Akt) μενi|επτLόλiεμi|οςL(Adj)(N) Πολiυπi|οίτLηςL(N)·|
+(29) Astyalos dann sogleich erschlug kampf|tapfer Polypoites·
+(29) Astyalos and then slew staunch|in|war Polypoites·
+(30) ΠιδLύτL|ηνL(A) δʼ(Pt) Ὀδiυσi|εὺςL(N) ΠερκL|ώσLιiονi(Adj)(A) |ἐξLενiάρi|ιξLενL(Aor)(Akt)|
+(30) Pidyten aber Odysseus Perkos|ischen entleibte
+(30) Pidytes but Odysseus of|Percote stripped|and|slew
+(31) ἔγχLεiϊi(D) |χαλκLείL|ῳL(Adj)(D), ΤεῦκρL|οςL(N) δʼ(Pt) Ἀρiετi|άLονiαi(A) |δῖLονL(Adj)(A).|
+(31) mit|Speer ehernem, Teukros aber Aretaon göttlichen.
+(31) with|spear brazen, Teukros but Aretaon divine.
+(32) ἈντLίλiοχi|οςL(N) δʼ(Pt) ἌβλL|ηρLονi(A) ἐνi|ήρLατiοi(Aor)(Med) |δουρLὶi(D) φαi|εινLῷL(Adj)(D)|
+(32) Antilochos aber Ablaron tötete mit|Speer leuchtendem
+(32) Antilochos then Ablaros took|life with|spear shining
+(33) ΝεστLορiίδi|ηςL(N), Ἔλiατi|ονL(A) δὲi(Pt) ἄνi|αξL(N) ἀνδρL|ῶνL(G) Ἀγiαμi|έμνLωνL(N)·|
+(33) Nestor|Sohn, Elaton aber König der|Männer Agamemnon·
+(33) son|of|Nestor, Elatos but lord of|men Agamemnon·
+(34) ναῖLεi(Imp)(Akt) δὲi(Pt) |ΣατνLιiόi|εντLοςi(G) ἐi|ϋρρLείτL|αLοi(Adj)(G) παρiʼ(Prp) |ὄχθLαςL(A)|
+(34) wohnte aber des|Satnioeis schön|strömenden an Ufer
+(34) dwelt but of|Satenios fair|flowing beside banks
+(35) ΠήδLασiονi(A) |αἰπLεινL|ήνL(Adj)(A). Φύλiακi|ονL(A) δʼ(Pt) ἕλiεi(AorS)(Akt) |ΛήLϊτiοςi(N) |ἥρLωςL(N)|
+(35) Pedasos steile. Phylakon aber nahm Leitos Held
+(35) Pedasos steep. Phylakos but took Leitos hero
+(36) φεύγLοντLʼ(Prä)(Akt)(A)· |ΕὐρLύπiυλi|οςL(N) δὲi(Pt) Μελi|άνθLιiονi(A) |ἐξLενiάρi|ιξLενL(Aor)(Akt).|
+(36) fliehend· Eurypylos aber Melanthion entleibte.
+(36) fleeing· Eurypylos but Melanthios stripped|and|slew.
+(37) ἌδρLηστL|ονL(A) δʼ(Pt) ἄρiʼ(Pt) ἔπi|ειτLαi(Adv) βοi|ὴνL(A) ἀγiαθi|ὸςL(Adj)(N) Μενiέλi|αLοςL(N)|
+(37) Adrestos dann sogleich hernach im|Ruf gut Menelaos
+(37) Adrestos and then thereafter war|cry good Menelaos
+(38) ζωLὸνi(Adj)(A) ἕλiʼ(AorS)(Akt)· |ἵππLωL(Du)(N) |γάρL(Pt) οἱi(Pr)(D) ἀτi|υζLομiένi|ωL(Prä)(M/P)(Du)(N) πεδiίi|οιLοL(G)|
+(38) lebendig nahm· zwei|Pferde denn ihm erschreckt der|Ebene
+(38) alive took· two|horses for to|him panic|stricken of|the|plain
+(39) ὄζLῳi(D) ἔνi|ιL(Prp) βλαφθL|έντLεi(Aor)(Pas)(Du)(N) μυρi|ικLίνiῳi(Adj)(D) |ἀγκLύλiονi(Adj)(A) |ἅρμLαL(A)|
+(39) an|Zweig in beschädigt|worden tamarisken gebogenen Wagen
+(39) on|a|bough in having|been|harmed tamarisk curved chariot
+(40) ἄξLαντLʼ(Aor)(Akt)(Du)(N) |ἐνL(Prp) πρώτL|ῳL(Adj)(D) ῥυμL|ῷL(D) αὐτL|ὼL(Pr)(Du)(N) μὲνi(Pt) ἐβi|ήτLηνL(AorS)(Akt)(Du)|
+(40) gebrochen in vordersten Deichsel sie|beide doch gingen
+(40) having|broken in foremost pole the|two indeed went
+(41) πρὸςL(Prp) πόλiινi(A), |ᾗL(Pr)(D) περi(Pt) οἱi(Pr)(N) |ἄλλLοιi(Adj)(N) ἀτi|υζLόμiενi|οιL(Prä)(M/P)(N) φοβiέi|οντLοL(Imp)(M/P),|
+(41) zu Stadt, wohin ja die anderen erschreckt|seiend fürchteten|sich,
+(41) toward city, where indeed for|him others panic|stricken were|fleeing,
+(42) αὐτLὸςL(Pr)(N) |δʼ(Pt) ἐκL(Prp) δίφρL|οιLοi(G) παρi|ὰL(Prp) τροχiὸνi(A) |ἐξLεκiυλi|ίσθLηL(Aor)(M/P)|
+(42) er|selbst aber aus Wagen neben Rad wurde|herausgewälzt
+(42) himself but from chariot beside wheel was|rolled|out
+(43) πρηνLὴςL(Adj)(N) |ἐνL(Prp) κονiίi|ῃσLινi(D) ἐπi|ὶL(Prp) στόμiαi(A)· |πὰρL(Prp) δέi(Pt) οἱi(Pr)(D) |ἔστLηL(AorS)(Akt)|
+(43) vornüber in Staub auf Mund· neben aber ihm stellte|sich
+(43) headlong in dust upon mouth· beside then for|him stood
+(44) ἈτρLεiΐδi|ηςL(N) Μενiέλi|αLοςi(N) ἔχi|ωνL(Prä)(Akt)(N) δολiιχi|όσκLιiονi(Adj)(A) |ἔγχLοςL(A).|
+(44) Atreide Menelaos haltend lang|schattigen Speer.
+(44) Atreides Menelaos holding long|shadowed spear.
+(45) ἌδρLηστL|οςL(N) δʼ(Pt) ἄρiʼ(Pt) ἔπi|ειτLαi(Adv) λαβi|ὼνL(AorS)(Akt)(N) ἐλL|ίσσLετiοi(Imp)(Med) |γούνLωνL(G)·|
+(45) Adrestos dann sogleich hernach ergriffen|habend flehte der|Knie·
+(45) Adrestos and then thereafter having|taken was|imploring of|the|knees·
+(46) ζώγρLειL(Imv)(Akt) |ἈτρLέiοςi(G) |υἱLέi(V), σὺi(Pr)(N) |δʼ(Pt) ἄξLιiαi(Adj)(A) |δέξLαιi(Aor)(Med)(Imv) ἄπi|οινLαL(A)·|
+(46) nimm|lebend des|Atreus Sohn, du aber angemessene nimm|an Lösegeld·
+(46) take|me|alive son of|Atreus, you then worthy ransoms accept·
+(47) πολλLὰi(Adj)(N) δʼ(Pt) ἐνi(Prp) |ἀφνLειL|οῦL(Adj)(G) πατρL|ὸςL(G) κειμL|ήλLιiαi(N) |κεῖτLαιL(Prä)(M/P)|
+(47) viele aber in reichen Vaters Kostbarkeiten liegen
+(47) many indeed in of|wealthy father treasures lie
+(48) χαλκLόςL(N) |τεL(Pt) χρυσL|όςL(N) τεi(Pt) πολi|ύκμLητL|όςL(Adj)(N) τεi(Pt) σίδi|ηρLοςL(N),|
+(48) Bronze und Gold und viel|mühsam|erworben und Eisen,
+(48) bronze and gold and much|wrought and iron,
+(49) τῶνL(Pr)(G) κένL(Pt) |τοιL(Pr)(D) χαρiίσi|αιτLοi(Aor)(Med) πατi|ὴρL(N) ἀπiερi|είσLιiʼ(Adj)(A) ἄπi|οινLαL(A)|
+(49) davon wohl dir würde|gewähren Vater un|zählige Lösegeld
+(49) of|which at|least for|you would|grant father boundless ransoms
+(50) εἴL(Kon) κενi(Pt) ἐμi|ὲL(Pr)(A) ζωL|ὸνL(Adj)(A) πεπiύθi|οιτLʼ(Per)(M/P) ἐπiὶi(Prp) |νηυσLὶνi(D) Ἀχi|αιLῶνL(G).|
+(50) wenn wohl mich lebend erfahren|würde bei Schiffen der|Achaier.
+(50) if at|least me alive should|learn at ships of|Achaeans.
+(51) ὣςL(Adv) φάτiοi(Imp)(Med), |τῷL(Pr)(D) δʼ(Pt) ἄρiαi(Pt) |θυμLὸνi(A) ἐνi|ὶL(Prp) στήθL|εσσLινi(D) ἔπi|ειθLεL(Imp)(Akt)·|
+(51) so sprach|er, ihm dann also Mut in den|Brüsten überredete·
+(51) thus he|spoke, him and then spirit in breasts was|persuading·
+(52) καὶL(Kon) δήL(Pt) |μινL(Pr)(A) τάχiʼ(Adv) ἔμi|ελλLεi(Imp)(Akt) θοi|ὰςL(Adj)(A) ἐπiὶi(Prp) |νῆLαςi(A) Ἀχi|αιLῶνL(G)|
+(52) und nun ihn bald war|im|Begriff schnelle auf Schiffe der|Achaier
+(52) and indeed him soon was|going to to|swift to|ships of|Achaeans
+(53) δώσLεινL(Fu)(Akt)(Inf) |ᾧL(Pr)(D) θερiάπi|οντLιi(D) κατi|αξLέμiενi(Aor)(Akt)(Inf)· |ἀλλLʼ(Kon) Ἀγiαμi|έμνLωνL(N)|
+(53) zu|geben seinem Diener hinab|zu|führen· aber Agamemnon
+(53) to|give to|his attendant to|lead|down· but Agamemnon
+(54) ἀντLίiοςi(Adj)(N) |ἦλθLεi(AorS)(Akt) θέi|ωνL(Prä)(Akt)(N), καὶi(Kon) ὁμi|οκλLήσL|αςL(AorS)(Akt)(N) ἔπiοςi(A) |ηὔδLαL(Imp)(Akt)·|
+(54) entgegen kam laufend, und schaltend|gerufen Wort sprach·
+(54) facing came running, and having|shouted word he|spoke·
+(55) ὦL(ij) πέπiονi(V) |ὦL(ij) Μενiέλi|αLεi(V), τίi(Pr)(A) |ἢL(Pt) δὲi(Pt) σὺi(Pr)(N) |κήδLεiαιi(Prä)(M/P) |οὕτLωςL(Adv)|
+(55) o Teurer o Menelaos, warum denn doch du sorgst so
+(55) O dear|friend O Menelaos, why then but you care thus
+(56) ἀνδρLῶνL(G) |ἦL(Pt) σοὶi(Pr)(D) ἄρi|ιστLαi(Adv) πεπi|οίLητL|αιL(Per)(M/P) κατiὰi(Prp) |οἶκLονL(A)|
+(56) von|Männern wahrlich dir am|besten ist|geschehen hinsichtlich des|Hauses
+(56) of|men truly for|you best has|been|done in|regard|to house
+(57) πρὸςL(Prp) ΤρώL|ωνL(G) τῶνL(Pr)(G) |μήL(Pt) τιςi(Pr)(N) ὑπi|εκφLύγiοιi(Aor)(Akt) |αἰπLὺνi(Adj)(A) ὄλi|εθρLονL(A)|
+(57) von der|Troer von|denen nicht irgend|einer entflöhe steiles Verderben
+(57) against Trojans of|whom not anyone might|escape sheer destruction
+(58) χεῖρLάςL(A) |θʼ(Pt) ἡμLετiέρi|αςL(Adj)(A), μηδLʼ(Pt) |ὅνL(Pr)(A) τινiαi(Pr)(A) |γαστLέρiιi(D) |μήτLηρL(N)|
+(58) Hände und unsere, noch den irgendeinen im|Leib Mutter
+(58) hands and our, nor whom ever in|womb mother
+(59) κοῦρLονi(A) ἐi|όντLαi(Prä)(Akt)(A) φέρi|οιL(Prä)(Akt), μηδLʼ(Kon) |ὃςL(Pr)(N) φύγiοιi(Aor)(Akt), |ἀλλLʼ(Kon) ἅμiαi(Adv) |πάντLεςL(Adj)(N)|
+(59) Knaben seiend trüge, noch welcher fliehe, sondern zugleich alle
+(59) boy being may|carry, nor who might|flee, but at|once all
+(60) ἸλLίiουi(G) |ἐξLαπiολi|οίLατiʼ(Aor)(M/P) ἀκi|ήδLεστL|οιL(Adj)(N) καὶi(Kon) ἄφi|αντLοιL(Adj)(N).|
+(60) von|Ilion sollten|zugrunde|gehen un|beklagt und verschwunden.
+(60) of|Ilion may|perish|utterly unwept and unseen.
+(61) ὣςL(Adv) εἰπL|ὼνL(AorS)(Akt)(N) ἔτρL|εψLενi(AorS)(Akt) ἀδi|ελφLειL|οῦL(Adj)(G) φρένiαςi(A) |ἥρLωςL(N)|
+(61) so gesagt|habend wandte des|Bruders Sinn Held
+(61) thus having|spoken turned of|his|brother mind hero
+(62) αἴσLιμiαi(Adv) |παρLειπL|ώνL(Aor)(Akt)(N)· ὃi(Pr)(N) δʼ(Pt) ἀπi|ὸL(Prp) ἕθiενi(Pr)(G) |ὤσLατiοi(Aor)(Med) |χειρLὶL(D)|
+(62) gebührend zugesprochen|habend· der dann von sich stieß|zurück mit|der|Hand
+(62) fitly speaking· he then from himself pushed with|hand
+(63) ἥρLωLʼ(A) |ἌδρLηστL|ονL(A)· τὸνL(Pr)(A) |δὲL(Pt) κρείL|ωνL(N) Ἀγiαμi|έμνLωνL(N)|
+(63) Helden Adrestos· den aber Herrscher Agamemnon
+(63) hero Adrestos· him but ruler Agamemnon
+(64) οὖτLαi(Aor)(Akt) κατi|ὰL(Prp) λαπiάρi|ηνL(A)· ὃi(Pr)(N) δʼ(Pt) ἀνi|ετρLάπiετiʼ(Aor)(Pas), |ἈτρLεiΐδi|ηςL(N) δὲL(Pt)|
+(64) verwundete an die|Weiche· der dann stürzte|um, Atreides aber
+(64) wounded down|upon flank· he then was|overturned, Atreides but
+(65) λὰξL(Adv) ἐνL(Prp) |στήθLεσiιi(D) |βὰςL(AorS)(Akt)(N) ἐξL|έσπLασiεi(Aor)(Akt) |μείλLινiονi(Adj)(A) |ἔγχLοςL(A).|
+(65) mit|dem|Fuß in den|Brüsten schreitend|gewesen zog|heraus eschen|hölzernen Speer.
+(65) with|the|foot in the|chest having|stepped he|drew|out ashen spear.
+(66) ΝέστLωρL(N) |δʼ(Pt) ἈργLείL|οισLινi(D) ἐκi|έκλLετiοi(Imp)(M/P) |μακρLὸνi(Adj)(A) ἀi|ΰσLαςL(AorS)(Akt)(N)·|
+(66) Nestor aber den|Argivern rief|zu laut gerufen|habend·
+(66) Nestor but to|the|Argives was|calling loudly having|shouted·
+(67) ὦL(ij) φίλiοιi(Adj)(V) |ἥρLωL|εςL(V) Δανiαi|οὶL(V) θερiάπi|οντLεςi(V) Ἄρi|ηLοςL(G)|
+(67) o Freunde Helden Danaer Diener des|Ares
+(67) O friends heroes Danaans attendants of|Ares
+(68) μήL(Pt) τιςL(Pr)(N) |νῦνL(Adv) ἐνiάρi|ωνL(G) ἐπiιβi|αλλLόμiενi|οςL(Prä)(M/P)(N) μετiόπi|ισθLεL(Adv)|
+(68) nicht irgend|einer jetzt der|Beute sich|darauf|werfend hinten
+(68) not anyone now of|spoils throwing|on behind
+(69) μιμνLέτiωi(Prä)(Akt)(Imv) |ὥςL(Kon) κεL(Pt) |πλεῖστLαi(Adj)(Sup)(A) φέρi|ωνL(Prä)(Akt)(N) ἐπiὶi(Prp) |νῆLαςi(A) ἵκi|ητLαιL(Aor)(M/P)(Knj),|
+(69) soll|verweilen damit wohl möglichst|viel tragend zu den|Schiffen gelange,
+(69) let|him|remain so|that at|least most bearing to the|ships he|may|come,
+(70) ἀλλLʼ(Kon) ἄνδρL|αςL(A) κτείνL|ωμLενi(Prä)(Akt)(Knj)· ἔπi|ειτLαi(Adv) δὲi(Pt) |καὶL(Kon) τὰi(Art)(A) ἕκi|ηλLοιL(Adj)(N)|
+(70) aber Männer lasst|uns|töten· dann aber auch die ruhig
+(70) but men let|us|kill· then indeed and the|things at|ease
+(71) νεκρLοὺςL(A) |ἂμL(Prp) πεδiίi|ονL(A) συλL|ήσLετiεi(Fu)(Akt) |τεθνLηL|ῶτLαςL(Per)(Akt)(A).|
+(71) Tote über die|Ebene werdet|berauben gestorben|seiende.
+(71) corpses across the|plain you|will|strip having|died.
+(72) ὣςL(Adv) εἰπL|ὼνL(AorS)(Akt)(N) ὄτρL|υνLεi(Aor)(Akt) μένi|οςL(A) καὶL(Kon) |θυμLὸνi(A) ἑκi|άστLουL(Pr)(G).|
+(72) so gesagt|habend stachelte|an Kraft und Sinn eines|jeden.
+(72) thus having|spoken he|stirred might and spirit of|each.
+(73) ἔνθLάi(Adv) κενi(Pt) |αὖτLεL(Adv) |ΤρῶLεςi(N) ἀρi|ηLϊφiίλi|ωνL(Adj)(G) ὑπiʼ(Prp) Ἀχi|αιLῶνL(G)|
+(73) da wohl wiederum Troer Ares|liebenden von den|Achaiern
+(73) then at|least again Trojans Ares|loving by the|Achaeans
+(74) ἼλLιiονi(A) |εἰσLανiέβi|ησLανi(AorS)(Akt) ἀνi|αλκLείL|ῃσLιi(D) δαμi|έντLεςL(AorS)(Pas)(N),|
+(74) Ilion hinein|stiegen durch|Unkraft bezwungen|worden|seiend,
+(74) Ilion went|up by|weaknesses having|been|subdued,
+(75) εἰL(Kon) μὴi(Pt) ἄρiʼ(Pt) |ΑἰνLείL|ᾳL(D) τεi(Pt) καὶi(Kon) |ἝκτLορiιi(D) |εἶπLεi(Aor)(Akt) παρi|αστLὰςL(AorS)(Akt)(N)|
+(75) wenn nicht ja dem|Aineias und auch dem|Hektor sagte dazugestellt|seiend
+(75) if not then to|Aeneas and also to|Hector he|said having|stood|beside
+(76) ΠριLαμiίδi|ηςL(N) Ἕλiενi|οςL(N) οἰL|ωνLοπiόλi|ωνL(G) ὄχiʼ(Adv) ἄρi|ιστLοςL(Adj)(N)·|
+(76) Priam|Sohn Helenos Vogel|deuter bei|weitem der|beste·
+(76) son|of|Priam Helenos of|bird|diviners by|far best·
+(77) ΑἰνLείL|αL(V) τεi(Pt) καὶi(Kon) |ἝκτLορi(V), ἐπi|εὶL(Kon) πόνiοςi(N) |ὔμμLιi(Pr)(D) μάλi|ιστLαL(Adv)(Sup)|
+(77) Aineias und auch Hektor, weil Mühe euch am|meisten
+(77) Aeneas and also Hector, since toil to|you most
+(78) ΤρώLωνL(G) |καὶL(Kon) Λυκiίi|ωνL(G) ἐγκL|έκλLιτiαιi(Per)(M/P), |οὕνLεκiʼ(Kon) ἄρi|ιστLοιL(Adj)(N)|
+(78) der|Troer und der|Lyker liegt|auf, weil die|besten
+(78) of|Trojans and of|Lycians has|inclined, because best
+(79) πᾶσLανi(Adj)(A) ἐπiʼ(Prp) |ἰθLύνL(A) |ἐστLεi(Prä)(Akt) μάχi|εσθLαίL(Prä)(M/P)(Inf) |τεL(Pt) φρονiέi|εινL(Prä)(Akt)(Inf) τεL(Pt),|
+(79) jede auf Richtung seid zu|kämpfen und zu|bedenken und,
+(79) every upon direction you|are to|fight and to|think and,
+(80) στῆτLʼ(AorS)(Akt)(Imv) αὐτL|οῦL(Adv), καὶL(Kon) |λαLὸνi(A) ἐρi|υκLάκiετi|εL(Prä)(Akt)(Imv) πρὸi(Prp) πυλi|άLωνL(G)|
+(80) steht|fest hier, und Volk haltet|zurück vor den|Toren
+(80) stand here, and people hold|back before of|gates
+(81) πάντLῃi(Adv) ἐπi|οιχLόμiενi|οιL(Prä)(M/P)(N) πρὶνL(Kon) |αὖτLʼ(Adv) ἐνL(Prp) |χερσLὶi(D) γυνi|αικLῶνL(G)|
+(81) allerseits umher|gehend|seiend ehe wieder in den|Händen der|Frauen
+(81) everywhere going|about before again in hands of|women
+(82) φεύγLοντL|αςL(Prä)(Akt)(A) πεσiέi|εινL(Fu)(Akt)(Inf), δηίL|οισLιi(Adj)(D) δὲi(Pt) |χάρμLαi(A) γενi|έσθLαιL(AorS)(Med)(Inf).|
+(82) fliehende zu|fallen, den|Feindlichen aber Freude zu|werden.
+(82) fleeing to|fall, for|foes but joy to|become.
+(83) αὐτLὰρi(Kon) ἐπi|είL(Kon) κεi(Pt) φάλi|αγγLαςi(A) ἐπi|οτρLύνL|ητLονi(Aor)(Akt)(Knj)(Du) ἁπi|άσLαςL(Adj)(A),|
+(83) aber wenn wohl Phalangen ihr|beide|angestachelt|habt alle,
+(83) but when at|least phalanxes you|two|urge all,
+(84) ἡμLεῖςL(Pr)(N) |μὲνL(Pt) Δανiαi|οῖσLιi(D) μαχi|ησLόμiεθiʼ(Fu)(Med) |αὖθLιi(Adv) μένi|οντLεςL(Prä)(Akt)(N),|
+(84) wir zwar den|Danaern werden|kämpfen hier bleibend,
+(84) we indeed with|the|Danaans shall|fight here remaining,
+(85) καὶL(Kon) μάλiαi(Adv) |τειρLόμiενi|οίL(Prä)(M/P)(N) περi(Pt)· ἀνi|αγκLαίL|ηL(Adj)(N) γὰρi(Pt) ἐπi|είγLειL(Prä)(Akt)·|
+(85) auch sehr leidend|seiend zwar· Not denn drängt·
+(85) and very being|worn even· necessity for presses·
+(86) ἝκτLορi(V) ἀτi|ὰρL(Kon) σὺi(Pr)(N) πόλi|ινδLεi(Adv) μετi|έρχLεiοi(Prä)(Med)(Imv), |εἰπLὲi(Aor)(Akt)(Imv) δʼ(Pt) ἔπi|ειτLαL(Adv)|
+(86) Hektor aber du zur|Stadt begib|dich, sage aber dann
+(86) Hector but you to|the|city go|toward, say then then
+(87) μητLέρiιi(D) |σῇL(Adj)(D) καὶi(Kon) ἐμi|ῇL(Adj)(D)· ἣL(Pr)(N) |δὲL(Pt) ξυνiάγi|ουσLαi(Prä)(Akt)(N) γερi|αιLὰςL(Adj)(A)|
+(87) der|Mutter deiner und meiner· die aber zusammen|führend Greisinnen
+(87) to|mother your and my· who then gathering old|women
+(88) νηLὸνi(A) Ἀθi|ηνLαίL|ηςL(G) γλαυκL|ώπLιδiοςi(Adj)(G) |ἐνL(Prp) πόλiειi(D) |ἄκρLῃL(Adj)(D)|
+(88) Tempel der|Athene eulen|äugigen in der|Stadt auf|der|Höhe
+(88) temple of|Athena grey|eyed in city high
+(89) οἴξLασL|αL(AorS)(Akt)(N) κληL|ῗδLιi(D) θύρi|αςL(A) ἱiερi|οῖLοi(Adj)(G) δόμi|οιLοL(G)|
+(89) geöffnet|habend mit|dem|Schlüssel die|Türen des|heiligen Hauses
+(89) having|opened with|a|key doors of|holy house
+(90) πέπλLονi(A), ὅςi(Pr)(N) |οἱL(Pr)(D) δοκiέi|ειL(Prä)(Akt) χαρiιi|έστLατiοςi(Adj)(Sup)(N) |ἠδLὲi(Kon) μέγi|ιστLοςL(Adj)(Sup)(N)|
+(90) Schleier, welcher ihr scheint lieblichst|er und größt|er
+(90) robe, which to|her seems most|pleasing and greatest
+(91) εἶνLαιi(Prä)(Akt)(Inf) ἐνi|ὶL(Prp) μεγiάρi|ῳL(D) καίL(Kon) |οἱL(Pr)(D) πολiὺi(Adv) |φίλτLατiοςi(Adj)(Sup)(N) |αὐτLῇL(Pr)(D),|
+(91) zu|sein in der|Halle und ihr sehr liebster ihr,
+(91) to|be in hall and to|her by|far dearest to|herself,
+(92) θεῖνLαιi(Aor)(Akt)(Inf) Ἀθi|ηνLαίL|ηςL(G) ἐπiὶi(Prp) |γούνLασiινi(D) |ἠLϋκiόμi|οιLοL(Adj)(G),|
+(92) zu|setzen der|Athene auf die|Knie schön|haarigen,
+(92) to|place of|Athena upon knees fair|haired,
+(93) καίL(Kon) οἱi(Pr)(D) ὑπi|οσχLέσθL|αιL(Aor)(Med)(Inf) δυiοκi|αίδLεκiαi(Adj)(A) |βοῦςL(A) ἐνiὶi(Prp) |νηLῷL(D)|
+(93) und ihr zu|versprechen zwölf Rinder im Heiligtum
+(93) and to|her to|promise twelve cows in temple
+(94) ἤνLιςL(Adj)(A) |ἠκLέστL|αςL(Adj)(A) ἱiερi|ευσLέμiενi(Fu)(Akt)(Inf), |αἴL(Kon) κʼ(Pt) ἐλiεi|ήσLῃL(Aor)(Akt)(Knj)|
+(94) jährig ungestachelte zu|opfern, wenn wohl sich|erbarmen|möge
+(94) yearling unyoked to|sacrifice, if at|least she|may|pity
+(95) ἄστLύi(A) τεi(Pt) |καὶL(Kon) ΤρώL|ωνL(G) ἀλiόχi|ουςL(A) καὶL(Kon) |νήπLιiαi(Adj)(A) |τέκνLαL(A),|
+(95) die|Stadt und auch der|Troer Ehefrauen und kleine Kinder,
+(95) city and and of|Trojans wives and infant children,
+(96) ὥςL(Adv) κενL(Pt) |ΤυδLέiοςi(G) |υἱLὸνi(A) ἀπi|όσχLῃL(Aor)(Akt)(Knj) |ἸλLίiουi(G) |ἱρLῆςL(Adj)(G)|
+(96) damit wohl des|Tydeus Sohn ab|halte von|Ilion heiligen
+(96) so|that at|least of|Tydeus son he|may|keep|away of|Ilion holy
+(97) ἄγρLιiονi(Adj)(A) |αἰχμLητL|ὴνL(A) κρατiερi|ὸνL(Adj)(A) μήστL|ωρLαi(A) φόβi|οιLοL(G),|
+(97) wilden Speer|kämpfer starken Stifter des|Schreckens,
+(97) savage spearman strong contriver of|fear,
+(98) ὃνL(Pr)(A) δὴi(Pt) ἐγi|ὼL(Pr)(N) κάρτL|ιστLονi(Adj)(Sup)(A) Ἀχi|αιLῶνL(G) |φημLιi(Prä)(Akt) γενi|έσθLαιL(AorS)(Med)(Inf).|
+(98) den ja ich stärksten der|Achaier behaupte geworden|zu|sein.
+(98) whom indeed I strongest of|Achaeans I|say to|become.
+(99) οὐδLʼ(Pt) Ἀχiιλi|ῆLάi(A) ποθiʼ(Pt) |ὧδLέi(Adv) γʼ(Pt) ἐδi|είδLιμiενi(Plq)(Akt) |ὄρχLαμiονi(A) |ἀνδρLῶνL(G),|
+(99) auch|nicht Achilleus je so doch fürchteten|wir Anführer der|Männer,
+(99) nor Achilles ever thus at|least we|feared leader of|men,
+(100) ὅνL(Pr)(A) πέρL(Pt) |φασLιi(Prä)(Akt) θεi|ᾶςL(G) ἐξL|έμμLενiαιi(Prä)(Akt)(Inf)· |ἀλλLʼ(Kon) ὅδiεi(Pr)(N) |λίLηνL(Adv)|
+(100) den gerade sagen|sie einer|Göttin zu|sein|von· aber dieser allzu
+(100) whom indeed they|say of|a|goddess to|be|from· but this|man exceedingly
+(101) μαίνLετiαιi(Prä)(Med), |οὐδLέi(Pt) τίςi(Pr)(N) |οἱL(Pr)(D) δύνiατi|αιL(Prä)(M/P) μένiοςi(A) |ἰσLοφiαρi|ίζLεινL(Prä)(Akt)(Inf).|
+(101) tobt|er, und|kein irgend|wer ihm vermag Kraft gleich|zu|kommen.
+(101) raves, nor anyone for|him is|able might to|match.
+(102) ὣςL(Adv) ἔφiαθiʼ(Aor)(Med), |ἝκτLωρL(N) |δʼ(Pt) οὔL(Pt) τιi(Pr)(A) κασi|ιγνLήτL|ῳL(D) ἀπiίθi|ησLενL(Aor)(Akt).|
+(102) so sprach|er, Hektor aber nicht im|Geringsten dem|Bruder gehorchte.
+(102) thus he|spoke, Hector but not at|all to|his|brother disobeyed.
+(103) αὐτLίκiαi(Adv) |δʼ(Pt) ἐξL(Prp) ὀχiέi|ωνL(G) σὺνL(Prp) |τεύχLεσiινi(D) |ἆλτLοi(AorS)(Med) χαμi|ᾶζLεL(Adv),|
+(103) sogleich aber aus den|Wagen mit den|Waffen sprang|er zur|Erde,
+(103) straightway then from the|chariot with arms he|leapt to|the|ground,
+(104) πάλλLωνL(Prä)(Akt)(N) |δʼ(Pt) ὀξLέiαi(Adj)(A) |δοῦρLαi(A) κατi|ὰL(Prp) στρατiὸνi(A) |ᾤχLετiοi(Imp)(M/P) |πάντLῃL(Adv)|
+(104) schwingend aber scharfe Speere durch das|Heer ging|er|hin überall
+(104) brandishing then sharp spears through|down army he|went everywhere
+(105) ὀτρLύνL|ωνL(Prä)(Akt)(N) μαχiέσi|ασθLαιi(Aor)(Med)(Inf), ἔγi|ειρLεi(Aor)(Akt) δὲi(Pt) |φύλLοπiινi(A) |αἰνLήνL(Adj)(A).|
+(105) antreibend zu|kämpfen, erregte aber Schlacht|lärm schrecklichen.
+(105) urging to|fight, he|roused and battle|din dread.
+(106) οἳL(Pr)(N) δʼ(Pt) ἐλiελi|ίχθLησL|ανL(Aor)(Pas) καὶi(Kon) ἐνi|αντLίiοιi(Adj)(N) |ἔστLανi(AorS)(Akt) Ἀχi|αιLῶνL(G)·|
+(106) sie aber wurden|durchgerüttelt und entgegen|stehend stellten|sich den|Achaiern·
+(106) they|who then were|shaken and opposite stood of|Achaeans·
+(107) ἈργLεῖL|οιL(N) δʼ(Pt) ὑπiεχi|ώρLησL|ανL(Aor)(Akt), λῆξL|ανL(Aor)(Akt) δὲi(Pt) φόνi|οιLοL(G),|
+(107) Argiver aber wichen|zurück, ließen|ab aber vom|Morden,
+(107) Argives but withdrew, ceased and of|slaughter,
+(108) φὰνL(Aor)(Akt) δέi(Pt) τινiʼ(Pr)(A) |ἀθLανiάτi|ωνL(G) ἐξL(Prp) |οὐρLανiοῦi(G) |ἀστLερiόi|εντLοςL(Adj)(G)|
+(108) meinten|sie aber irgend|einer der|Unsterblichen aus dem|Himmel stern|funkelnden
+(108) they|thought and someone of|immortals from heaven starry
+(109) ΤρωσLὶνi(D) ἀλi|εξLήσL|οντLαi(Fu)(Akt)(A) κατi|ελθLέμiενi(AorS)(Akt)(Inf), |ὡςL(Kon) ἐλiέλi|ιχθLενL(Aor)(Akt).|
+(109) den|Troern abwehren|werdenden herab|gekommen|sein, weil es|erbebt|hatte.
+(109) to|Trojans about|to|ward to|come|down, as it|had|shaken.
+(110) ἝκτLωρL(N) |δὲL(Pt) ΤρώL|εσσLινi(D) ἐκi|έκλLετiοi(Imp)(M/P) |μακρLὸνi(Adj)(A) ἀi|ΰσLαςL(AorS)(Akt)(N)·|
+(110) Hektor aber den|Troern rief|zu laut gerufen|habend·
+(110) Hector but to|the|Trojans was|calling loudly having|shouted·
+(111) ΤρῶLεςi(V) ὑπi|έρθLυμL|οιL(Adj)(V) τηλL|εκλLειτL|οίL(Adj)(V) τʼ(Pt) ἐπiίκi|ουρLοιL(V)|
+(111) Troer hohen|Mutes fern|berühmt und Beistands|männer
+(111) Trojans over|spirited far|famed and allies
+(112) ἀνLέρiεςi(V) |ἔστLεi(Prä)(Akt) φίλi|οιL(Adj)(V), μνήσL|ασθLεi(Aor)(Med)(Imv) δὲi(Pt) |θούρLιδiοςi(Adj)(G) |ἀλκLῆςL(G),|
+(112) Männer seid Freunde, erinnert|euch aber stürmischer Kraft,
+(112) men be dear, remember but impetuous might,
+(113) ὄφρLʼ(Kon) ἂνi(Pt) ἐγi|ὼL(Pr)(N) βείL|ωL(AorS)(Akt)(Knj) προτiὶi(Prp) |ἼλLιiονi(A), |ἠδLὲi(Kon) γέρi|ουσLινL(D)|
+(113) bis wohl ich gehe zu Ilion, und den|Greisen
+(113) until at|least I I|go toward Ilion, and elders
+(114) εἴπLωL(AorS)(Akt)(Knj) |βουλLευτL|ῇσLιi(D) καὶi(Kon) |ἡμLετiέρi|ῃςL(Adj)(D) ἀλiόχi|οισLιL(D)|
+(114) sage den|Ratgebern und unseren Ehefrauen
+(114) I|may|say to|counsellors and our to|wives
+(115) δαίμLοσiινi(D) |ἀρLήσL|ασθLαιi(Aor)(Med)(Inf), ὑπi|οσχLέσθL|αιL(Aor)(Med)(Inf) δʼ(Pt) ἑκiατi|όμβLαςL(A).|
+(115) den|Gottheiten zu|flehen, zu|versprechen aber Hekatomben.
+(115) to|divinities to|pray, to|promise and hecatombs.
+(116) ὣςL(Adv) ἄρiαi(Pt) |φωνLήσL|αςL(Aor)(Akt)(N) ἀπiέβi|ηL(AorS)(Akt) κορiυθi|αίLολiοςi(Adj)(N) |ἝκτLωρL(N)·|
+(116) so dann gesprochen|habend ging|fort mit|Helmbusch|wogendem Hektor·
+(116) thus then having|spoken went|off flashing|helmed Hector·
+(117) ἀμφLὶi(Prp) δέi(Pt) |μινL(Pr)(A) σφυρiὰi(A) |τύπτLεi(Imp)(Akt) καὶi(Kon) |αὐχLένiαi(A) |δέρμLαi(A) κελi|αινLὸνL(Adj)(A)|
+(117) um aber ihn Knöchel schlug und Nacken Leder schwarz|es
+(117) around but him ankles struck and neck skin dark
+(118) ἄντLυξL(N) |ἣL(Pr)(N) πυμiάτi|ηL(Adj)(N) θέiενi(Imp)(Akt) |ἀσπLίδiοςi(G) |ὀμφLαλiοi|έσσLηςL(Adj)(G).|
+(118) Reifen|kranz die äußerste lief des|Schildes buckel|tragenden.
+(118) rim which outermost ran of|shield bossed.
+(119) ΓλαῦκLοςL(N) |δʼ(Pt) ἹππLολiόχi|οιLοi(G) πάi|ϊςL(N) καὶL(Kon) |ΤυδLέiοςi(G) |υἱLὸςL(N)|
+(119) Glaukos aber des|Hippolochos Sohn und des|Tydeus Sohn
+(119) Glaukos then of|Hippolochos son and of|Tydeus son
+(120) ἐςL(Prp) μέσiονi(A) |ἀμφLοτiέρi|ωνL(Pr)(G) συνiίτi|ηνL(Aor)(Akt)(Du) μεμiαi|ῶτLεi(Per)(Akt)(Du)(N) μάχi|εσθLαιL(Prä)(Med)(Inf).|
+(120) in die|Mitte beider kamen|beide|zusammen eifrig|seiend|beide zu|kämpfen.
+(120) into middle of|both came|together eager to|fight.
+(121) οἳL(Pr)(N) δʼ(Pt) ὅτiεi(Kon) |δὴL(Pt) σχεδiὸνi(Adv) |ἦσLανi(Imp)(Akt) ἐπiʼ(Prp) |ἀλλLήλL|οισLινi(Pr)(D) ἰi|όντLεL(Prä)(Akt)(Du)(N),|
+(121) die aber als ja nahe waren auf einander gehend|beide,
+(121) who then when indeed near they|were upon one|another going,
+(122) τὸνL(Pr)(A) πρότiερi|οςL(Adj)(N) προσiέi|ειπLεi(Aor)(Akt) βοi|ὴνL(A) ἀγiαθi|ὸςL(Adj)(N) Διiομi|ήδLηςL(N)·|
+(122) ihn als|Erster redete|an Schlacht|ruf gut|seiender Diomedes·
+(122) him first addressed battle|cry good Diomedes·
+(123) τίςL(Pr)(N) δὲi(Pt) σύi(Pr)(N) |ἐσσLιi(Prä)(Akt) φέρi|ιστLεi(Adj)(Sup)(V) κατi|αθνLητL|ῶνL(Adj)(G) ἀνθρL|ώπLωνL(G)|
+(123) wer aber du bist Bester der|Sterblichen Menschen
+(123) who then you are best of|mortals of|men
+(124) οὐL(Pt) μὲνL(Pt) |γάρL(Pt) ποτiʼ(Pt) ὄπi|ωπLαi(Per)(Akt) μάχi|ῃL(D) ἔνiιi(Prp) |κυδLιiανi|είρLῃL(Adj)(D)|
+(124) nicht zwar denn je habe|ich|gesehen Schlacht in|der männer|rühmenden
+(124) not indeed for ever I|have|seen in|battle in man|glorifying
+(125) τὸL(Art)(A) πρίνi(Adv)· ἀτi|ὰρL(Kon) μὲνL(Pt) |νῦνL(Adv) γεi(Pt) πολi|ὺL(Adv) προβiέβi|ηκLαςi(Per)(Akt) ἁπi|άντLωνL(Adj)(G)|
+(125) das früher· aber doch jetzt gerade sehr bist|du|vorge|schritten von|allen
+(125) the before· but indeed now at|least by|far you|have|advanced of|all
+(126) σῷL(Adj)(D) θάρσL|ειL(D), ὅi(Pr)(N) τʼ(Pt) ἐμi|ὸνL(Adj)(A) δολiιχi|όσκLιiονi(Adj)(A) |ἔγχLοςi(A) ἔμi|εινLαςL(Aor)(Akt)·|
+(126) deinem Mut, welcher auch meinen lang|schattigen Speer erwartetest·
+(126) your by|courage, who and my long|shadowed spear you|awaited·
+(127) δυστLήνL|ωνL(Adj)(G) δέi(Pt) τεi(Pt) |παῖδLεςi(N) ἐμi|ῷL(Adj)(D) μένiειi(D) |ἀντLιiόi|ωσLινL(Prä)(Akt).|
+(127) der|Unglücklichen aber auch Söhne meiner Kraft treten|entgegen.
+(127) of|wretched and also sons to|my might face.
+(128) εἰL(Kon) δέi(Pt) τιςi(Pr)(N) |ἀθLανiάτi|ωνL(G) γεi(Pt) κατiʼ(Prp) |οὐρLανiοῦi(G) |εἰλLήλL|ουθLαςL(Per)(Akt),|
+(128) wenn aber irgend|einer der|Unsterblichen doch von dem|Himmel bist|du|gekommen,
+(128) if but someone of|immortals at|least down of|heaven you|have|come,
+(129) οὐκL(Pt) ἂνi(Pt) ἔγi|ωγLεi(Pr)(N) θεi|οῖσLινi(D) ἐπi|ουρLανiίi|οισLιi(Adj)(D) μαχi|οίμLηνL(Aor)(Med)(Op).|
+(129) nicht wohl ich|jedenfalls den|Göttern über|himmlischen kämpfen|würde.
+(129) not at|least I|indeed to|the|gods over|heavenly would|fight.
+(130) οὐδLὲi(Pt) γὰρi(Pt) |οὐδLὲi(Pt) Δρύi|αντLοςi(G) υἱi|ὸςL(N) κρατiερi|ὸςL(Adj)(N) Λυκiόi|οργLοςL(N)|
+(130) auch|nicht denn auch|nicht des|Dryas Sohn stark Lykóurgos
+(130) nor for nor of|Dryas son strong Lycurgus
+(131) δὴνL(Adv) ἦνL(Imp)(Akt), |ὅςL(Pr)(N) ῥαi(Pt) θεi|οῖσLινi(D) ἐπi|ουρLανiίi|οισLινi(Adj)(D) ἔρi|ιζLενL(Imp)(Akt)·|
+(131) lange war, der ja den|Göttern über|himmlischen stritt·
+(131) long was, who then to|the|gods over|heavenly was|contending·
+(132) ὅςL(Pr)(N) ποτiεi(Pt) |μαινLομiένi|οιLοi(Prä)(M/P)(G) Διi|ωνLύσL|οιLοi(G) τιθi|ήνLαςL(A)|
+(132) der einst des|rasend|seienden des|Dionysos Ammen
+(132) who once of|raving of|Dionysos nurses
+(133) σεῦLεi(Imp)(Akt) κατiʼ(Prp) |ἠγLάθiεi|ονL(Adj)(A) ΝυσL|ήLϊiονi(A)· |αἳL(Pr)(N) δʼ(Pt) ἅμiαi(Adv) |πᾶσLαιL(Adj)(N)|
+(133) trieb hinab die|heilige Nysäische· die aber zugleich alle
+(133) drove down holy Nysaion· who but together all
+(134) θύσθλLαi(A) χαμi|αὶL(Adv) κατiέχi|ευLανi(Imp)(Akt) ὑπiʼ(Prp) |ἀνδρLοφiόνi|οιLοi(Adj)(G) Λυκi|ούργLουL(G)|
+(134) Thyrsos|Geräte zu|Boden schütteten|hin unter Männer|tötenden des|Lykourgos
+(134) ritual|implements to|the|ground were|pouring under man|slaying of|Lycurgus
+(135) θεινLόμiενi|αιL(Prä)(M/P)(N) βουπλL|ῆγLιi(D)· Διi|ώνLυσL|οςL(N) δὲi(Pt) φοβi|ηθLεὶςL(Aor)(Pas)(N)|
+(135) geschlagen|werdend mit|der|Rinder|peitsche· Dionysos aber erschrocken|seiend
+(135) being|struck with|an|ox|goad· Dionysos but having|been|frightened
+(136) δύσLεθiʼ(Aor)(Med) ἁλi|ὸςL(G) κατiὰi(Prp) |κῦμLαi(A), Θέτi|ιςL(N) δʼ(Pt) ὑπiεδi|έξLατiοi(Aor)(Med) |κόλπLῳL(D)|
+(136) tauchte des|Meeres durch die|Woge, Thetis aber nahm|auf im|Schoß
+(136) went|down of|the|sea down wave, Thetis but received in|bosom
+(137) δειδLιiότi|αL(Per)(Akt)(A)· κρατiερi|ὸςL(Adj)(N) γὰρi(Pt) ἔχi|εL(Imp)(Akt) τρόμiοςi(N) |ἀνδρLὸςi(G) ὁμi|οκλLῇL(D).|
+(137) den|Furcht|Habenden· starker denn hielt Zittern des|Mannes mit|Drohruf.
+(137) frightened· strong for held trembling of|the|man with|shout.
+(138) τῷL(Pr)(D) μὲνi(Pt) ἔπi|ειτLʼ(Adv) ὀδiύσi|αντLοi(Aor)(Med) θεi|οὶL(N) ῥεῖL|αL(Adv) ζώL|οντLεςL(Prä)(Akt)(N),|
+(138) dem zwar darauf entrüsteten|sich die|Götter leicht lebend|seiend,
+(138) to|him indeed then were|angry gods easily living,
+(139) καίL(Kon) μινL(Pr)(A) |τυφλLὸνi(Adj)(A) ἔθi|ηκLεi(Aor)(Akt) Κρόνi|ουL(G) πάiϊςi(N)· |οὐδLʼ(Pt) ἄρiʼ(Pt) ἔτi|ιL(Adv) δὴνL(Adv)|
+(139) und ihn blind machte des|Kronos Sohn· auch|nicht ja mehr lange
+(139) and him blind made of|Kronos child· not then yet long
+(140) ἦνL(Imp)(Akt), ἐπiεὶi(Kon) |ἀθLανiάτi|οισLινi(Adj)(D) ἀπi|ήχθLετiοi(Imp)(M/P) |πᾶσLιi(Adj)(D) θεi|οῖσLινL(D)·|
+(140) war, da den|Unsterblichen war|verhasst allen den|Göttern·
+(140) was, since to|the|immortals he|was|hated to|all to|the|gods·
+(141) οὐδLʼ(Pt) ἂνi(Pt) ἐγi|ὼL(Pr)(N) μακiάρi|εσσLιi(Adj)(D) θεi|οῖςL(D) ἐθiέλi|οιμLιi(Prä)(Akt)(Op) μάχi|εσθLαιL(Prä)(M/P)(Inf).|
+(141) auch|nicht wohl ich den|Seligen den|Göttern möchte zu|kämpfen.
+(141) nor at|least I to|the|blessed to|the|gods would|wish to|fight.
+(142) εἰL(Kon) δέi(Kon) τίςi(Pr)(N) |ἐσσLιi(Prä)(Akt) βροτi|ῶνL(G) οἳi(Pr)(N) ἀρi|ούρLηςL(G) |καρπLὸνi(A) ἔδi|ουσLινL(Prä)(Akt),|
+(142) wenn aber wer|irgend bist der|Sterblichen die der|Acker|erde Frucht essen,
+(142) if but who you|are of|mortals who of|field fruit eat,
+(143) ἆσσLονi(Adv) ἴθiʼ(AorS)(Akt)(Imv) |ὥςL(Kon) κενL(Pt) |θᾶσσLονi(Adv)(Kmp) ὀλi|έθρLουL(G) |πείρLαθiʼ(A) ἵκi|ηLαιL(Prä)(M/P)(Knj).|
+(143) näher geh damit wohl schneller des|Verderbens Enden du|gelangest.
+(143) nearer go so|that at|least more|quickly of|destruction bounds you|may|come.
+(144) τὸνL(Pr)(A) δʼ(Pt) αὖθLʼ(Adv) |ἹππLολiόχi|οιLοi(G) προσi|ηύδLαL(Imp)(Akt) |φαίδLιμiοςi(Adj)(N) |υἱLόςL(N)·|
+(144) den aber wiederum des|Hippolochos redete|an strahlend Sohn·
+(144) him but again of|Hippolochos addressed glorious son·
+(145) ΤυδLεiΐδi|ηL(V) μεγiάθi|υμLεi(Adj)(V) τίi(Pr)(A) |ἢL(Kon) γενiεi|ὴνL(A) ἐρiεi|είνLειςL(Prä)(Akt)|
+(145) Tydäide groß|mütiger was denn Geschlecht fragst
+(145) Tydeides great|hearted why or lineage you|question
+(146) οἵLηL(Pr)(N) |περL(Pt) φύλλL|ωνL(G) γενiεi|ὴL(N) τοίL|ηL(Pr)(N) δὲi(Pt) καὶi(Kon) |ἀνδρLῶνL(G).|
+(146) wie|geartet gerade der|Blätter Geschlecht so|beschaffen aber und der|Männer.
+(146) such as of|leaves generation such but and of|men.
+(147) φύλλLαi(N) τὰi(Art)(N) |μένL(Pt) τʼ(Pt) ἄνiεμi|οςL(N) χαμiάδi|ιςL(Adv) χέiειi(Prä)(Akt), |ἄλλLαi(Adj)(N) δέi(Pt) |θʼ(Pt) ὕλLηL(N)|
+(147) Blätter die zwar und Wind zu|Boden streut, andere aber und Wald
+(147) leaves the indeed and wind to|the|ground pours, others but and wood
+(148) τηλLεθiόi|ωσLαi(Prä)(Akt)(N) φύi|ειL(Prä)(Akt), ἔiαρi|οςL(G) δʼ(Pt) ἐπiιγi|ίγνLετiαιi(Prä)(M/P) |ὥρLηL(N)·|
+(148) blühend|seiend bringt|hervor, des|Frühlings aber tritt|ein Jahres|zeit·
+(148) blooming brings|forth, of|spring but comes|upon season·
+(149) ὣςL(Adv) ἀνδρL|ῶνL(G) γενiεi|ὴL(N) ἣL(Pr)(N) |μὲνL(Pt) φύiειi(Prä)(Akt) |ἣL(Pr)(N) δʼ(Pt) ἀπiολi|ήγLειL(Prä)(Akt).|
+(149) so der|Männer Geschlecht die|eine zwar wächst die|andere aber hört|auf.
+(149) so of|men generation which indeed grows which but ceases.
+(150) εἰL(Kon) δʼ(Pt) ἐθiέλi|ειςL(Prä)(Akt) καὶL(Kon) |ταῦτLαi(Pr)(A) δαi|ήμLενiαιi(Aor)(M/P)(Inf) |ὄφρLʼ(Kon) ἐiῢi(Adv) |εἰδLῇςL(Prä)(Akt)(Knj)|
+(150) wenn aber du|willst auch dies zu|erfahren damit gut du|wissest
+(150) if then you|wish and these|things to|learn so|that well you|may|know
+(151) ἡμLετiέρi|ηνL(Adj)(A) γενiεi|ήνL(A), πολλL|οὶL(Adj)(N) δέi(Pt) μινi(Pr)(A) |ἄνδρLεςi(N) ἴσi|ασLινL(Prä)(Akt)·|
+(151) unsere Abstammung, viele aber sie Männer wissen·
+(151) our lineage, many but him men know·
+(152) ἔστLιi(Prä)(Akt) πόλi|ιςL(N) Ἐφiύρi|ηL(N) μυχiῷi(D) |ἌργLεiοςi(G) |ἱππLοβiότi|οιLοL(Adj)(G),|
+(152) es|gibt Stadt Ephyre im|Innersten des|Argos Pferde|nährenden,
+(152) there|is city Ephyre in|the|corner of|Argos horse|feeding,
+(153) ἔνθLαi(Adv) δὲi(Pt) |ΣίσLυφiοςi(N) |ἔσκLενi(Imp)(Akt), ὃi(Pr)(N) |κέρδLιστL|οςL(Adj)(Sup)(N) γένiετiʼ(AorS)(Med) |ἀνδρLῶνL(G),|
+(153) dort aber Sisyphos war|gewöhnlich, der listig|ste wurde der|Männer,
+(153) there but Sisyphos used|to|be, who most|crafty became of|men,
+(154) ΣίσLυφiοςi(N) |ΑἰLολiίδi|ηςL(N)· ὃi(Pr)(N) δʼ(Pt) ἄρi|αL(Pt) ΓλαῦκL|ονL(A) τέκiεθiʼ(AorS)(Akt) |υἱLόνL(A),|
+(154) Sisyphos Aiolide· der dann also Glaukos zeugte Sohn,
+(154) Sisyphos Aeolides· who and then Glaukos bore son,
+(155) αὐτLὰρL(Kon) |ΓλαῦκLοςL(N) |τίκτLενi(AorS)(Akt) ἀμi|ύμLονiαi(Adj)(A) |ΒελλLερiοφi|όντLηνL(A)·|
+(155) aber Glaukos zeugte untadeligen Bellerophontes·
+(155) but Glaukos begot blameless Bellerophon·
+(156) τῷL(Pr)(D) δὲi(Pt) θεi|οὶL(N) κάλλL|όςL(A) τεi(Pt) καὶi(Kon) |ἠνLορiέi|ηνL(A) ἐρiατi|εινLὴνL(Adj)(A)|
+(156) dem aber Götter Schönheit und auch Mannes|kraft anmutige
+(156) to|him but gods beauty and also manhood lovely
+(157) ὤπLασiανi(Aor)(Akt)· |αὐτLάρL(Kon) |οἱL(Pr)(D) ΠροῖτL|οςL(N) κακiὰi(Adj)(A) |μήσLατiοi(Aor)(M/P) |θυμLῷL(D),|
+(157) verliehen· aber ihm Proitos schlimme ersann im|Sinn,
+(157) they|granted· but to|him Proitos evils devised in|spirit,
+(158) ὅςL(Pr)(N) ῥʼ(Pt) ἐκL(Prp) |δήμLουi(G) ἔλi|ασσLενi(Aor)(Akt), ἐπi|εὶL(Kon) πολiὺi(Adv) |φέρτLερiοςi(Adj)(Kmp)(N) |ἦLενL(Imp)(Akt),|
+(158) der ja aus dem|Volk trieb|hinaus, weil bei|weitem besser war,
+(158) who then out of|the|people drove, since much better was,
+(159) ἈργLείL|ωνL(G)· ΖεὺςL(N) |γάρL(Pt) οἱi(Pr)(D) ὑπi|ὸL(Prp) σκήπτρL|ῳL(D) ἐδiάμi|ασσLεL(Aor)(Akt).|
+(159) der|Argiver· denn Zeus ihm unter Zepter bezwang.
+(159) of|Argives· Zeus for to|him under sceptre subdued.
+(160) τῷL(Pr)(D) δὲi(Pt) γυνi|ὴL(N) ΠροίτL|ουL(G) ἐπiεμi|ήνLατiοi(Aor)(M/P) |δῖLʼ(Adj)(N) ἌντL|ειLαL(N)|
+(160) dem aber Frau des|Proitos verliebte|sich|heimlich göttliche Anteia
+(160) to|him but wife of|Proitos went|mad|for divine Antea
+(161) κρυπτLαδiίi|ῃL(Adj)(D) φιλiότi|ητLιi(D) μιγi|ήμLενiαιi(Aor)(M/P)(Inf)· |ἀλλLὰi(Kon) τὸνi(Pr)(A) |οὔL(Pt) τιL(Pr)(A)|
+(161) heimlichen Liebe sich|zu|vereinigen· aber den nicht irgend
+(161) in|secret love to|be|mingled· but him not at|all
+(162) πεῖθLʼ(Imp)(Akt) ἀγiαθi|ὰL(Adj)(A) φρονiέi|οντLαi(Prä)(Akt)(A) δαi|ΐφρLονiαi(Adj)(A) |ΒελλLερiοφi|όντLηνL(A).|
+(162) überredete Gutes denkend kampf|kundigen Bellerophontes.
+(162) persuaded good|things thinking battle|minded Bellerophon.
+(163) ἣL(Pr)(N) δὲL(Pt) |ψευσLαμiένi|ηL(Aor)(M/P)(N) ΠροῖτL|ονL(A) βασiιλi|ῆLαi(A) προσi|ηύδLαL(Imp)(Akt)·|
+(163) die aber gelogen|habend Proitos König redete|an·
+(163) she but having|lied Proitos king addressed·
+(164) τεθνLαίL|ηςL(Per)(M/P) ὦL(ij) |ΠροῖτLʼ(V), ἢL(Kon) |κάκτLανiεi(AorS)(Akt)(Imv) |ΒελλLερiοφi|όντLηνL(A),|
+(164) sterben|mögest o Proit, oder töte Bellerophontes,
+(164) may|you|be|dead O Proitos, or kill Bellerophon,
+(165) ὅςL(Pr)(N) μʼ(Pr)(A) ἔθiελi|ενL(Imp)(Akt) φιλiότi|ητLιi(D) μιγi|ήμLενiαιi(Aor)(M/P)(Inf) |οὐκL(Pt) ἐθiελi|ούσLῃL(Prä)(Akt)(D).|
+(165) der mich wollte in|Liebe sich|zu|mischen nicht willigen.
+(165) who me was|willing in|love to|be|mingled not willing.
+(166) ὣςL(Adv) φάτiοi(Imp)(M/P), |τὸνL(Pr)(A) δὲi(Pt) ἄνi|ακτLαi(A) χόλi|οςL(N) λάβiενi(AorS)(Akt) |οἷLονi(Adj)(A) ἄκi|ουσLεL(AorS)(Akt)·|
+(166) so sprach, den aber Herrscher Zorn ergriff welche hörte·
+(166) thus he|spoke, him but lord anger took such|a|thing he|heard·
+(167) κτεῖνLαιL(Aor)(Akt)(Inf) |μένL(Pt) ῥʼ(Pt) ἀλiέi|εινLεi(Imp)(Akt), σεβi|άσσLατiοi(Imp)(M/P) |γὰρL(Pt) τόi(Art)(A) γεi(Pt) |θυμLῷL(D),|
+(167) zu|töten zwar ja mied, scheute|sich denn dies doch im|Herzen,
+(167) to|kill indeed then he|was|avoiding, he|revered for this indeed in|spirit,
+(168) πέμπLεi(Imp)(Akt) δέi(Pt) |μινL(Pr)(A) Λυκiίi|ηνδLεi(Adv), πόρi|ενL(Aor)(Akt) δʼ(Pt) ὅi(Pr)(N) γεi(Pt) |σήμLατiαi(A) |λυγρLὰL(Adj)(A)|
+(168) sandte aber ihn nach|Lykien, gab aber der ja Zeichen un|heilvolle
+(168) was|sending then him to|Lycia, gave but who indeed tokens baneful
+(169) γράψLαςL(AorS)(Akt)(N) |ἐνL(Prp) πίνiακi|ιL(D) πτυκτL|ῷL(Adj)(D) θυμL|οφθLόρiαi(Adj)(A) |πολλLάL(Adj)(A),|
+(169) geschrieben|habend auf|einer Tafel gefalteten lebens|vernichtende viele,
+(169) having|written in tablet folded soul|destroying many,
+(170) δεῖξLαιL(Aor)(Akt)(Inf) |δʼ(Pt) ἠνLώγL|εινL(Imp)(Akt)(Inf) ᾧL(Pr)(D) |πενθLερiῷi(D) |ὄφρLʼ(Kon) ἀπiόλi|οιτLοL(Aor)(M/P)(Knj).|
+(170) zu|zeigen aber befohlen|zu|haben seinem Schwiegervater damit zugrunde|gehe.
+(170) to|show then he|was|bidding to|whom father|in|law so|that he|might|perish.
+(171) αὐτLὰρi(Kon) ὁi(Pr)(N) |βῆL(AorS)(Akt) Λυκiίi|ηνδLεi(Adv) θεi|ῶνL(G) ὑπiʼ(Prp) ἀμi|ύμLονiιi(Adj)(D) |πομπLῇL(D).|
+(171) aber er ging nach|Lykien der|Götter unter tadelloser Führung.
+(171) but he went to|Lycia of|gods under blameless escort.
+(172) ἀλλLʼ(Kon) ὅτiεi(Kon) |δὴL(Pt) Λυκiίi|ηνL(A) ἷξL|εL(AorS)(Akt) ΞάνθL|όνL(A) τεi(Pt) ῥέi|οντLαL(Prä)(Akt)(A),|
+(172) aber als ja Lykien erreichte Xanthos und fließend,
+(172) but when indeed Lycia he|came Xanthos and flowing,
+(173) προφρLονiέi|ωςL(Adv) μινL(Pr)(A) |τῖLενi(Imp)(Akt) ἄνi|αξL(N) Λυκiίi|ηςL(G) εὐρL|είLηςL(Adj)(G)·|
+(173) bereitwillig ihn ehrte Herr von|Lykien weit|gedehnten·
+(173) eagerly him honored lord of|Lycia wide·
+(174) ἐννLῆμL|αρL(Adv) ξείνL|ισσLεi(Aor)(Akt) καὶi(Kon) |ἐννLέiαi(Adj)(A) |βοῦςL(A) ἱiέρi|ευσLενL(Aor)(Akt).|
+(174) neun|Tage bewirtete und neun Rinder opferte.
+(174) nine|days hosted and nine oxen sacrificed.
+(175) ἀλλLʼ(Kon) ὅτiεi(Kon) |δὴL(Pt) δεκiάτi|ηL(Adj)(N) ἐφiάνi|ηL(Aor)(Pas) ῥοδiοδi|άκτLυλiοςi(Adj)(N) |ἨLὼςL(N)|
+(175) aber als ja der|zehnte erschien rosen|fingrige Eos
+(175) but when indeed tenth appeared rosy|fingered Dawn
+(176) καὶL(Kon) τότiεi(Adv) |μινL(Pr)(A) ἐρiέi|εινLεi(Imp)(Akt) καὶi(Kon) |ᾔτLεiεi(Imp)(Akt) |σῆμLαi(A) ἰδi|έσθLαιL(Aor)(M/P)(Inf)|
+(176) und dann ihn befragte und bat Zeichen zu|sehen
+(176) and then him was|inquiring and was|asking token to|see
+(177) ὅττLίi(Pr)(A) ῥάi(Pt) |οἱL(Pr)(D) γαμβρL|οῖLοi(G) πάρi|αL(Prp) ΠροίτL|οιLοi(G) φέρi|οιτLοL(Prä)(M/P)(Knj).|
+(177) was denn ihm des|Schwiegersohns von|seiner|Seite des|Proitos gebracht|werde.
+(177) what then for|him of|son|in|law from Proitos might|be|brought.
+(178) αὐτLὰρi(Kon) ἐπi|εὶL(Kon) δὴL(Pt) |σῆμLαi(A) κακi|ὸνL(Adj)(A) παρiεδi|έξLατiοi(Aor)(Med) |γαμβρLοῦL(G),|
+(178) aber als ja Zeichen schlimmes nahm|entgegen des|Schwiegersohns,
+(178) but when indeed token evil he|received of|son|in|law,
+(179) πρῶτLονL(Adv) |μένL(Pt) ῥαi(Pt) Χίμi|αιρLανi(A) ἀμi|αιμLακiέτi|ηνL(Adj)(A) ἐκiέλi|ευσLεL(Aor)(Akt)|
+(179) zuerst zwar ja Chimaira un|bezwingbare befahl
+(179) first indeed then Chimaera indomitable he|ordered
+(180) πεφνLέμiενi(Per)(Akt)(Inf)· |ἣL(Pr)(N) δʼ(Pt) ἄρiʼ(Pt) ἔi|ηνL(Imp)(Akt) θεῖL|ονL(Adj)(N) γένiοςi(N) |οὐδLʼ(Pt) ἀνθρL|ώπLωνL(G),|
+(180) getötet|zu|haben· die aber ja war göttlich|es Geschlecht und|nicht der|Menschen,
+(180) to|slay· which then indeed was divine race not of|men,
+(181) πρόσθLεi(Adv) λέi|ωνL(N), ὄπiιθi|ενL(Adv) δὲi(Pt) δράκi|ωνL(N), μέσσL|ηL(Adj)(N) δὲi(Pt) χίμi|αιρLαL(N),|
+(181) vorn Löwe, hinten aber Drache, mittlere aber Chimära,
+(181) in|front lion, behind but serpent, middle but she|goat,
+(182) δεινLὸνi(Adj)(A) ἀπi|οπνLείL|ουσLαi(Prä)(Akt)(N) πυρi|ὸςL(G) μένiοςi(A) |αἰθLομiένi|οιLοL(Prä)(M/P)(G),|
+(182) furchtbare aus|hauchtend des|Feuers Kraft brennend|seienden,
+(182) terrible breathing|out of|fire might burning,
+(183) καὶL(Kon) τὴνL(Pr)(A) |μὲνL(Pt) κατiέπi|εφνLεi(Per)(Akt) θεi|ῶνL(G) τερiάi|εσσLιi(D) πιθi|ήσLαςL(AorS)(Akt)(N).|
+(183) und die zwar hat|getötet der|Götter Wundern|Zeichen gehorcht|habend.
+(183) and her indeed he|slew of|gods by|portents obeying.
+(184) δεύτLερiονi(Adv) |αὖL(Adv) Σολiύμi|οισLιi(D) μαχi|έσσLατiοi(Aor)(M/P) |κυδLαλiίμi|οισLιL(Adj)(D)·|
+(184) zum|zweiten wiederum den|Solymiern kämpfte ruhm|reichen·
+(184) secondly again with|the|Solymoi he|fought glorious·
+(185) καρτLίστL|ηνL(Adj)(Sup)(A) δὴL(Pt) |τήνL(Art)(A) γεi(Pt) μάχi|ηνL(A) φάτiοi(Imp)(M/P) |δύμLενiαιi(AorS)(M/P)(Inf) |ἀνδρLῶνL(G).|
+(185) stärkste ja die doch Schlacht sagte ein|zugehen der|Männer.
+(185) strongest indeed this at|least battle he|said to|have|entered of|men.
+(186) τὸL(Art)(A) τρίτiονi(Adj)(A) |αὖL(Adv) κατiέπi|εφνLενi(Per)(Akt) Ἀμi|αζLόνiαςi(A) |ἀντLιiανi|είρLαςL(Adj)(A).|
+(186) das dritte wiederum tötete Amazonen Männer|bekämpfende.
+(186) the third again he|slew Amazons man|opposing.
+(187) τῷL(Pr)(D) δʼ(Pt) ἄρiʼ(Pt) ἀνi|ερχLομiένi|ῳL(Prä)(M/P)(D) πυκiινi|ὸνL(Adj)(A) δόλiονi(A) |ἄλλLονi(Adj)(A) ὕφi|αινLεL(Imp)(Akt)·|
+(187) dem dann sogleich zurück|kehrend dicht Trug anderen wob·
+(187) for|him and then returning close trick other he|was|weaving·
+(188) κρίνLαςL(AorS)(Akt)(N) |ἐκL(Prp) Λυκiίi|ηςL(G) εὐρL|είLηςL(Adj)(G) |φῶτLαςi(A) ἀρi|ίστLουςL(Adj)(A)|
+(188) ausgewählt|habend aus Lykien weit|gedehnten Männer beste
+(188) having|chosen out|of Lycia wide men best
+(189) εἷσLεi(AorS)(Akt) λόχi|ονL(A)· τοὶL(Pr)(N) |δʼ(Pt) οὔL(Pt) τιi(Pt) πάλi|ινL(Adv) οἶκL|ονδLεi(Adv) νέi|οντLοL(Imp)(Med)·|
+(189) setzte Hinterhalt· jene aber nicht auch|nur wieder heimwärts gingen·
+(189) set ambush· they but not at|all back home|ward were|going·
+(190) πάντLαςL(Adj)(A) |γὰρL(Pt) κατiέπi|εφνLενi(Per)(Akt) ἀμi|ύμLωνL(Adj)(N) |ΒελλLερiοφi|όντLηςL(N).|
+(190) alle denn hat|getötet untadelig Bellerophontes.
+(190) all for slew blameless Bellerophon.
+(191) ἀλλLʼ(Kon) ὅτiεi(Kon) |δὴL(Pt) γίγνL|ωσκLεi(Imp)(Akt) θεi|οῦL(G) γόνiονi(A) |ἠLῢνi(Adj)(A) ἐi|όντLαL(Prä)(Akt)(A)|
+(191) aber als ja erkannte des|Gottes Sprössling gut seiend
+(191) but when indeed was|recognizing of|a|god offspring good being
+(192) αὐτLοῦL(Adv) |μινL(Pr)(A) κατiέρi|υκLεi(Aor)(Akt), δίδi|ουL(Imp)(Akt) δʼ(Pt) ὅi(Pr)(N) γεi(Pt) |θυγLατiέρi|αL(A) ἥνL(Pr)(A),|
+(192) dort ihn hielt|zurück, gab aber der ja Tochter welche,
+(192) there him held|back, was|giving but he indeed daughter whom,
+(193) δῶκLεi(AorS)(Akt) δέi(Pt) |οἱL(Pr)(D) τιμL|ῆςL(G) βασiιλi|ηLΐδiοςi(Adj)(G) |ἥμLισiυi(Adj)(A) |πάσLηςL(Adj)(G)·|
+(193) gab aber ihm der|Ehre königlichen Hälfte des|ganzen·
+(193) gave then to|him of|honor royal half of|all·
+(194) καὶL(Kon) μένL(Pt) |οἱL(Pr)(D) Λύκiιi|οιL(N) τέμiενi|οςL(A) τάμiονi(AorS)(Akt) |ἔξLοχiονi(Adj)(A) |ἄλλLωνL(Adj)(G)|
+(194) und zwar ihm Lyker Bezirk teilten hervorragend der|anderen
+(194) and indeed for|him Lycians precinct cut|out outstanding of|others
+(195) καλLὸνL(Adj)(A) |φυτLαλiιi|ῆςL(G) καὶi(Kon) ἀρi|ούρLηςL(G), |ὄφρLαi(Kon) νέμi|οιτLοL(Prä)(M/P)(Knj).|
+(195) schön der|Pflanzung und der|Acker|erde, damit bewirtschafte.
+(195) fair of|orchard and of|ploughland, so|that he|might|enjoy.
+(196) ἣL(Pr)(N) δʼ(Pt) ἔτiεκi|εL(AorS)(Akt) τρίiαi(Adj)(A) |τέκνLαi(A) δαi|ΐφρLονiιi(Adj)(D) |ΒελλLερiοφi|όντLῃL(D)|
+(196) die aber gebar drei Kinder kampf|kundigem Bellerophontes
+(196) who then bore three children to|battle|minded Bellerophon
+(197) ἼσLανδρL|όνL(A) τεi(Pt) καὶi(Kon) |ἹππLόλiοχi|ονL(A) καὶL(Kon) |ΛαLοδiάμi|ειLανL(A).|
+(197) Isandros und und Hippolochos und Laodameia.
+(197) Isandros and and Hippolochos and Laodameia.
+(198) ΛαLοδiαμi|είLῃL(D) |μὲνL(Pt) παρiελi|έξLατiοi(AorS)(Med) |μητLίiετi|αL(Adj)(N) ΖεύςL(N),|
+(198) der|Laodameia zwar legte|sich|bei rat|reicher Zeus,
+(198) to|Laodameia indeed lay|beside counselling Zeus,
+(199) ἣL(Pr)(N) δʼ(Pt) ἔτiεκiʼ(AorS)(Akt) |ἀντLίθiεi|ονL(Adj)(A) ΣαρπL|ηδLόνiαi(A) |χαλκLοκiορi|υστLήνL(Adj)(A).|
+(199) die aber gebar gott|gleichen Sarpedon bronze|gerüsteten.
+(199) who then bore godlike Sarpedon bronze|armed.
+(200) ἀλλLʼ(Kon) ὅτiεi(Kon) |δὴL(Pt) καὶL(Kon) |κεῖνLοςi(Pr)(N) ἀπi|ήχθLετiοi(Imp)(M/P) |πᾶσLιi(Adj)(D) θεi|οῖσLινL(D),|
+(200) aber als ja auch jener war|verhasst allen Göttern,
+(200) but when indeed also that|one was|hated to|all gods,
+(201) ἤτLοιi(Pt) ὃi(Pr)(N) |κὰπL(Prp) πεδiίi|ονL(A) τὸi(Art)(A) Ἀλi|ήLϊiονi(A) |οἶLοςi(Adj)(N) ἀλi|ᾶτLοL(Imp)(M/P)|
+(201) ja|wirklich er über Ebene die Aleische allein irrte
+(201) indeed he down|upon plain the Aleion alone wandered
+(202) ὃνL(Pr)(A) θυμL|ὸνL(A) κατiέδi|ωνL(Prä)(Akt)(N), πάτiονi(A) |ἀνθρLώπL|ωνL(G) ἀλiεi|είνLωνL(Prä)(Akt)(G)·|
+(202) den Sinn verzehrend, Weg der|Menschen meidend·
+(202) his spirit eating|down, path of|men avoiding·
+(203) ἼσLανδρL|ονL(A) δέi(Pt) οἱi(Pr)(D) |υἱLὸνi(A) Ἄρi|ηςL(N) ἆτL|οςL(Adj)(N) πολiέμi|οιLοL(G)|
+(203) Isandros aber ihm Sohn Ares un|ersättlich des|Krieges
+(203) Isandros then for|him son Ares insatiate of|war
+(204) μαρνLάμiενi|ονL(Prä)(M/P)(A) Σολiύμi|οισLιi(D) κατi|έκτLανiεi(AorS)(Akt) |κυδLαλiίμi|οισLιL(Adj)(D)·|
+(204) kämpfend den|Solymiern erschlug ruhm|reichen·
+(204) fighting with|the|Solymi slew glorious·
+(205) τὴνL(Pr)(A) δὲi(Pt) χολi|ωσLαμiένi|ηL(Aor)(M/P)(N) χρυσL|ήνLιiοςi(Adj)(N) |ἌρτLεμiιςi(N) |ἔκτLαL(AorS)(Akt).|
+(205) sie aber zornig|geworden gold|gürtelige Artemis tötete.
+(205) her then having|been|angered golden Artemis slew.
+(206) ἹππLόλiοχi|οςL(N) δέi(Pt) μʼ(Pr)(A) ἔτi|ικτLεi(Imp)(Akt), καὶi(Kon) |ἐκL(Prp) τοῦL(Pr)(G) |φημLιi(Prä)(Akt) γενi|έσθLαιL(Aor)(Med)(Inf)·|
+(206) Hippolochos aber mich zeugte, und aus dem sage|ich geworden|zu|sein·
+(206) Hippolochos then me begot, and from him I|say to|become·
+(207) πέμπLεi(Imp)(Akt) δέi(Pt) |μʼ(Pr)(A) ἐςL(Prp) ΤροίL|ηνL(A), καίL(Kon) |μοιL(Pr)(D) μάλiαi(Adv) |πόλλLʼ(Adj)(A) ἐπiέτi|ελλLενL(Imp)(Akt)|
+(207) sandte aber mich nach Troja, und mir sehr vieles befahl
+(207) sent then me to Troy, and to|me very many was|enjoining
+(208) αἰLὲνi(Adv) ἀρi|ιστLεύL|εινL(Prä)(Akt)(Inf) καὶi(Kon) ὑπi|είρLοχiονi(Adj)(A) |ἔμμLενiαιi(Prä)(Akt)(Inf) |ἄλλLωνL(Adj)(G),|
+(208) immer auszuzeichnen und überragend zu|sein der|anderen,
+(208) always to|excel and preeminent to|be of|others,
+(209) μηδLὲi(Kon) γένi|οςL(A) πατiέρi|ωνL(G) αἰσχL|υνLέμiενi(Prä)(Akt)(Inf), |οἳL(Pr)(N) μέγiʼ(Adv) ἄρi|ιστLοιL(Adj)(N)|
+(209) und|nicht Geschlecht der|Väter zu|schänden, die sehr Besten
+(209) nor|even race of|fathers to|shame, who greatly best
+(210) ἔνL(Prp) τʼ(Pt) Ἐφiύρi|ῃL(D) ἐγiένi|οντLοi(AorS)(Med) καὶi(Kon) |ἐνL(Prp) Λυκiίi|ῃL(D) εὐρL|είLῃL(Adj)(D).|
+(210) in und Ephyra wurden|geboren und in Lykien weit|gedehnten.
+(210) in and Ephyre became and in Lycia wide.
+(211) ταύτLηςL(Pr)(G) |τοιL(Pt) γενiεi|ῆςL(G) τεi(Pt) καὶi(Kon) |αἵμLατiοςi(G) |εὔχLομiαιi(Prä)(M/P) |εἶνLαιL(Prä)(Akt)(Inf).|
+(211) dieser ja Abstammung und auch Blutes rühme|ich zu|sein.
+(211) of|this indeed of|lineage and also of|blood I|boast to|be.
+(212) ὣςL(Adv) φάτiοi(Imp)(M/P), |γήθLησL|ενL(Aor)(Akt) δὲi(Pt) βοi|ὴνL(A) ἀγiαθi|ὸςL(Adj)(N) Διiομi|ήδLηςL(N)·|
+(212) so sprach|er, freute|sich aber Schlacht|ruf gut Diomedes·
+(212) thus he|spoke, rejoiced then battle|cry good Diomedes·
+(213) ἔγχLοςL(A) |μὲνL(Pt) κατiέπi|ηξLενi(AorS)(Akt) ἐπi|ὶL(Prp) χθονiὶi(D) |πουλLυβiοτi|είρLῃL(Adj)(D),|
+(213) Speer zwar pflanzte|ein auf Erde viel|nährenden,
+(213) spear indeed fixed upon ground much|nourishing,
+(214) αὐτLὰρi(Kon) ὃi(Pr)(N) |μειλLιχiίi|οισLιi(Adj)(D) προσi|ηύδLαL(Imp)(Akt) |ποιμLένiαi(A) |λαLῶνL(G)·|
+(214) aber er mit|milden sprach|an Hirten der|Völker·
+(214) but he with|gentle addressed shepherd of|peoples·
+(215) ἦL(Pt) ῥάi(Pt) νύi(Pt) |μοιL(Pr)(D) ξεῖνL|οςL(N) πατρL|ώLϊiόςi(Adj)(N) |ἐσσLιi(Prä)(Akt) παλi|αιLόςL(Adj)(N)·|
+(215) wahrlich ja nun mir Gast|freund väterlicher bist|du alt·
+(215) indeed then now to|me guest|friend paternal you|are old·
+(216) ΟἰνLεὺςL(N) |γάρL(Pt) ποτiεi(Pt) |δῖLοςi(Adj)(N) ἀμi|ύμLονiαi(Adj)(A) |ΒελλLερiοφi|όντLηνL(A)|
+(216) Oineus denn einst göttlicher untadeligen Bellerophontes
+(216) Oineus for once divine blameless Bellerophon
+(217) ξείνLισiʼ(Aor)(Akt) ἐνi|ὶL(Prp) μεγiάρi|οισLινi(D) ἐi|είκLοσiινi(Adj)(A) |ἤμLατiʼ(A) ἐρi|ύξLαςL(AorS)(Akt)(N)·|
+(217) bewirtete in Hallen zwanzig Tage aufgehalten|habend·
+(217) hosted in halls twenty days having|kept|back·
+(218) οἳL(Pr)(N) δὲi(Pt) καὶi(Kon) |ἀλλLήλL|οισLιi(Pr)(D) πόρi|ονL(AorS)(Akt) ξεινL|ήLϊiαi(A) |καλLάL(Adj)(A)·|
+(218) sie aber auch einander gaben Gast|geschenke schöne·
+(218) they then and to|each|other provided guest|gifts fair·
+(219) ΟἰνLεὺςL(N) |μὲνL(Pt) ζωστL|ῆρLαi(A) δίδi|ουL(Imp)(Akt) φοίνL|ικLιi(Adj)(D) φαi|εινLόνL(Adj)(A),|
+(219) Oineus zwar Gürtel gab purpur|nem leuchtenden,
+(219) Oineus indeed belt was|giving purple bright,
+(220) ΒελλLερiοφi|όντLηςL(N) |δὲL(Pt) χρύσiεi|ονL(Adj)(A) δέπiαςi(A) |ἀμφLικiύπi|ελλLονL(Adj)(A)|
+(220) Bellerophontes aber goldenen Becher doppel|henkeligen
+(220) Bellerophon then golden cup double|handled
+(221) καίL(Kon) μινi(Pr)(A) ἐγi|ὼL(Pr)(N) κατiέλi|ειπLονi(Imp)(Akt) ἰi|ὼνL(Prä)(Akt)(N) ἐνL(Prp) |δώμLασiʼ(D) ἐμi|οῖσLιL(Adj)(D).|
+(221) und ihn ich ließ|zurück gehend in Häusern meinen.
+(221) and him I was|leaving going in houses my.
+(222) ΤυδLέiαi(A) |δʼ(Pt) οὐL(Pt) μέμνL|ημLαιi(Per)(M/P), ἐπi|είL(Kon) μʼ(Pr)(A) ἔτiιi(Adv) |τυτθLὸνi(Adj)(A) ἐi|όντLαL(Prä)(Akt)(A)|
+(222) Tydeus aber nicht erinnere|ich|mich, da mich noch klein seiend
+(222) Tydeus then not I|remember, since me yet small being
+(223) κάλλLιφiʼ(AorS)(Akt), ὅτiʼ(Kon) |ἐνL(Prp) ΘήβL|ῃσLινi(D) ἀπi|ώλLετiοi(Aor)(M/P) |λαLὸςi(N) Ἀχi|αιLῶνL(G).|
+(223) ließ|zurück, als in Theben zugrunde|ging Heer der|Achaier.
+(223) left, when in Thebes perished people of|Achaeans.
+(224) τὼL(Pt) νῦνL(Adv) |σοὶL(Pr)(D) μὲνi(Pt) ἐγi|ὼL(Pr)(N) ξεῖνL|οςL(N) φίλiοςi(Adj)(N) |ἌργLεiϊi(D) |μέσσLῳL(Adj)(D)|
+(224) so nun dir zwar ich Gast|freund freundlich Argos mittleren
+(224) therefore now to|you indeed I guest|friend dear in|Argos central
+(225) εἰμLίi(Prä)(Akt), σὺi(Pr)(N) |δʼ(Pt) ἐνL(Prp) Λυκiίi|ῃL(D) ὅτiεi(Kon) |κενL(Pt) τῶνL(Pr)(G) |δῆμLονi(A) ἵκi|ωμLαιL(Prä)(M/P)(Knj).|
+(225) bin, du aber in Lykien wenn wohl der|Deinen Volk ich|gelange.
+(225) I|am, you then in Lycia when at|least of|those people I|may|come.
+(226) ἔγχLεiαi(A) |δʼ(Pt) ἀλλLήλL|ωνL(Pr)(G) ἀλiεi|ώμLεθiαi(Prä)(M/P) |καὶL(Kon) διiʼ(Prp) ὁμi|ίλLουL(G)·|
+(226) Speere aber einander meiden|wir und durch Haufen·
+(226) spears then of|each|other we|avoid and through crowd·
+(227) πολλLοὶL(Adj)(N) |μὲνL(Pt) γὰρi(Pt) ἐμi|οὶL(Pr)(D) ΤρῶL|εςL(N) κλειτL|οίL(Adj)(N) τʼ(Pt) ἐπiίκi|ουρLοιL(N)|
+(227) viele zwar denn mir Troer berühmte und Beistands|männer
+(227) many indeed for to|me Trojans famed and allies
+(228) κτείνLεινL(Prä)(Akt)(Inf) |ὅνL(Pr)(A) κεi(Pt) θεi|όςL(N) γεi(Pt) πόρi|ῃL(Aor)(Akt)(Knj) καὶL(Kon) |ποσσLὶi(D) κιχi|είLωL(Aor)(Akt)(Knj),|
+(228) zu|töten den wohl Gott ja gewähre und mit|Füßen ich|erreiche,
+(228) to|kill whom at|least god indeed may|give and with|feet I|may|reach,
+(229) πολλLοὶL(Adj)(N) |δʼ(Pt) αὖL(Adv) σοὶi(Pr)(D) Ἀχi|αιLοὶi(N) ἐνi|αιρLέμiενi(Prä)(Akt)(Inf) |ὅνL(Pr)(A) κεi(Pt) δύνi|ηLαιL(Prä)(M/P)(Knj).|
+(229) viele aber wiederum dir Achaier zu|töten den wohl du|vermögst.
+(229) many then again to|you Achaeans to|take whom at|least you|may|be|able.
+(230) τεύχLεiαi(A) |δʼ(Pt) ἀλλLήλL|οιςL(Pr)(D) ἐπiαμi|είψLομiενi(Fu)(Akt), |ὄφρLαi(Kon) καὶi(Kon) |οἵδLεL(Pr)(N)|
+(230) Rüstungen aber einander werden|austauschen, damit auch diese|hier
+(230) arms then with|each|other we|shall|exchange, so|that and these
+(231) γνῶσLινi(Aor)(Akt)(Knj) ὅτi|ιL(Kon) ξεῖνL|οιL(N) πατρL|ώLϊiοιi(Adj)(N) |εὐχLόμiεθiʼ(Prä)(M/P) |εἶνLαιL(Prä)(Akt)(Inf).|
+(231) erkennen|mögen dass Gast|freunde väterliche rühmen|wir|uns zu|sein.
+(231) may|know that guest|friends paternal we|boast to|be.
+(232) ὣςL(Adv) ἄρiαi(Pt) |φωνLήσL|αντLεi(AorS)(Akt)(Du)(N) καθiʼ(Prp) |ἵππLωνL(G) |ἀLΐξL|αντLεL(AorS)(Akt)(Du)(N)|
+(232) so dann gesprochen|habend hinab|von Pferden geeilt|habend
+(232) thus then having|spoken down|from horses having|darted
+(233) χεῖρLάςL(A) |τʼ(Pt) ἀλλLήλL|ωνL(Pr)(G) λαβiέτi|ηνL(AorS)(Akt)(Du) καὶL(Kon) |πιστLώσL|αντLοL(Aor)(M/P)·|
+(233) Hände und einander ergriffen|beide und besiegelten·
+(233) hands and of|each|other they|two|took and pledged|themselves·
+(234) ἔνθLʼ(Adv) αὖτL|εL(Adv) ΓλαύκL|ῳL(D) Κρονiίδi|ηςL(N) φρένiαςi(A) |ἐξLέλiετi|οL(AorS)(Med) ΖεύςL(N),|
+(234) da wiederum dem|Glaukos Kronide Sinn nahm|hinweg Zeus,
+(234) then again to|Glaukos son|of|Kronos mind took|out Zeus,
+(235) ὃςL(Pr)(N) πρὸςL(Prp) |ΤυδLεiΐδi|ηνL(A) Διiομi|ήδLεiαi(A) |τεύχLεiʼ(A) ἄμi|ειβLεL(Imp)(Akt)|
+(235) der mit Tydeiden Diomedes Rüstungen tauschte
+(235) who with Tydeides Diomedes arms was|exchanging
+(236) χρύσLεiαi(Adj)(N) |χαλκLείL|ωνL(Adj)(G), ἑκiατi|όμβLοιLʼ(Adj)(G) |ἐννLεiαβi|οίLωνL(Adj)(G).|
+(236) goldene der|ehernen, von|hundert|rindern von|neun|rindern.
+(236) golden of|bronzes, of|a|hundred of|nine|oxen.
+(237) ἝκτLωρL(N) |δʼ(Pt) ὡςL(Kon) ΣκαιL|άςL(Adj)(A) τεi(Pt) πύλi|αςL(A) καὶL(Kon) |φηγLὸνi(A) ἵκi|ανLενL(Imp)(Akt),|
+(237) Hektor aber als Skaïsche und Tore und Eiche kam,
+(237) Hector then when Scaean and gates and oak came,
+(238) ἀμφLʼ(Prp) ἄρiαi(Pt) |μινL(Pr)(A) ΤρώL|ωνL(G) ἄλiοχi|οιL(N) θέiονi(Imp)(Akt) |ἠδLὲi(Kon) θύγi|ατρLεςL(N)|
+(238) um dann ihn der|Troer Ehefrauen liefen und Töchter
+(238) around then him of|Trojans wives ran and daughters
+(239) εἰρLόμiενi|αιL(Prä)(M/P)(N) παῖδL|άςL(A) τεi(Pt) κασi|ιγνLήτL|ουςL(A) τεi(Pt) ἔτi|αςL(A) τεL(Pt)|
+(239) fragend|seiend Söhne und Brüder und Gefährten und
+(239) asking sons and brothers and kinsmen and
+(240) καὶL(Kon) πόσiιi|αςL(A)· ὃi(Pr)(N) δʼ(Pt) ἔπi|ειτLαi(Adv) θεi|οῖςL(D) εὔχL|εσθLαιi(Prä)(M/P)(Inf) ἀνi|ώγLειL(Prä)(Akt)|
+(240) und Ehemänner· der aber hernach den|Göttern zu|beten befiehlt
+(240) and husbands· he then thereafter to|gods to|pray commands
+(241) πάσLαςL(Adj)(A) |ἑξLείL|ηςL(Adv)· πολλL|ῇσLιi(Adj)(D) δὲi(Pt) |κήδLεiʼ(A) ἐφi|ῆπτLοL(Imp)(M/P).|
+(241) alle der|Reihe|nach· vielen aber Sorgen legte|auf.
+(241) all in|order· to|many indeed cares was|fastened.
+(242) ἀλλLʼ(Kon) ὅτiεi(Kon) |δὴL(Pt) Πριiάμi|οιLοi(G) δόμi|ονL(A) περiικi|αλλLέiʼ(Adj)(A) ἵκi|ανLεL(AorS)(Akt)|
+(242) aber als ja des|Priamos Haus sehr|schönes erreichte
+(242) but when indeed of|Priam house very|beautiful he|came
+(243) ξεστLῇςL(Adj)(D) |αἰθLούσL|ῃσLιi(D) τετi|υγμLένiονi(Per)(Pas)(A)· |αὐτLὰρi(Kon) ἐνi(Prp) |αὐτLῷL(Pr)(D)|
+(243) geschliffenen Säulen|hallen bereitet|wordenes· aber in ihm
+(243) with|polished porticoes made· but in it
+(244) πεντLήκL|οντLʼ(Adj)(N) ἔνiεσi|ανL(Imp)(Akt) θάλiαμi|οιL(N) ξεστL|οῖLοi(Adj)(G) λίθi|οιLοL(G)|
+(244) fünfzig waren|drin Gemächer gehauenen Steins
+(244) fifty there|were chambers of|hewn of|stone
+(245) πλησLίiονi(Adv) |ἀλλLήλL|ωνL(Pr)(G) δεδμL|ημLένiοιi(Per)(M/P)(N), |ἔνθLαi(Adv) δὲi(Pt) |παῖδLεςL(N)|
+(245) nahe einander erbaut|seiend, wo aber Söhne
+(245) near of|each|other built, there then sons
+(246) κοιμLῶντL|οL(Imp)(M/P) Πριiάμi|οιLοi(G) παρi|ὰL(Prp) μνηστL|ῇςL(Adj)(D) ἀλiόχi|οισLιL(D),|
+(246) schliefen des|Priamos bei rechtmäßig|anvermählten Ehefrauen,
+(246) were|sleeping of|Priam beside wedded wives,
+(247) κουρLάL|ωνL(G) δʼ(Pt) ἑτiέρi|ωθLενi(Adv) ἐνi|αντLίiοιi(Adj)(N) |ἔνδLοθiενi(Adv) |αὐλLῆςL(G)|
+(247) der|Mädchen aber an|der|anderen|Seite gegenüber von|innen des|Hofes
+(247) of|maidens then on|the|other|side opposite within of|court
+(248) δώδLεκiʼ(Adj)(N) ἔσi|ανL(Imp)(Akt) τέγiεi|οιL(Adj)(N) θάλiαμi|οιL(N) ξεστL|οῖLοi(Adj)(G) λίθi|οιLοL(G)|
+(248) zwölf waren überdachte Gemächer gehauenen Steins
+(248) twelve were roofed chambers of|hewn of|stone
+(249) πλησLίiονi(Adv) |ἀλλLήλL|ωνL(Pr)(G) δεδμL|ημLένiοιi(Per)(M/P)(N), |ἔνθLαi(Adv) δὲi(Pt) |γαμβρLοὶL(N)|
+(249) nahe einander erbaut|seiend, wo aber Schwieger|söhne
+(249) near of|each|other built, there then sons|in|law
+(250) κοιμLῶντL|οL(Imp)(M/P) Πριiάμi|οιLοi(G) παρiʼ(Prp) |αἰδLοίL|ῃςL(Adj)(D) ἀλiόχi|οισLινL(D)·|
+(250) schliefen des|Priamos bei ehrwürdigen Ehefrauen·
+(250) were|sleeping of|Priam beside revered wives·
+(251) ἔνθLάi(Adv) οἱi(Pr)(D) |ἠπLιiόδi|ωρLοςi(Adj)(N) ἐνi|αντLίiηi(Adj)(N) |ἤλLυθiεi(AorS)(Akt) |μήτLηρL(N)|
+(251) da ihm mild|gaben|spendende entgegen|kommend kam Mutter
+(251) there to|him gentle|giving meeting came mother
+(252) ΛαLοδiίκi|ηνL(A) ἐσiάγi|ουσLαi(Prä)(Akt)(N) θυγi|ατρLῶνL(G) |εἶδLοςi(A) ἀρi|ίστLηνL(Adj)(A)·|
+(252) Laodike herein|führend der|Töchter Anblick beste·
+(252) Laodike leading|in of|daughters form best·
+(253) ἔνL(Prp) τʼ(Pt) ἄρiαi(Pt) |οἱL(Pr)(D) φῦL(AorS)(Akt) |χειρLὶi(D) ἔπi|οςL(A) τʼ(Pt) ἔφiατiʼ(Imp)(Med) |ἔκL(Prp) τʼ(Pt) ὀνiόμi|αζLεL(Imp)(Akt)·|
+(253) in und dann ihm legte mit|der|Hand Wort und sprach aus und nannte·
+(253) in and indeed to|him placed with|hand word and was|saying out|of and named·
+(254) τέκνLονL(V) |τίπτLεi(Adv) λιπi|ὼνL(AorS)(Akt)(N) πόλiεμi|ονL(A) θρασiὺνi(Adj)(A) |εἰλLήλL|ουθLαςL(Per)(Akt)|
+(254) Kind warum|denn verlassen|habend Krieg kühn bist|gekommen
+(254) child why having|left war bold you|have|come
+(255) ἦL(Pt) μάλiαi(Adv) |δὴL(Pt) τείρL|ουσLιi(Prä)(Akt) δυσi|ώνLυμiοιi(Adj)(N) |υἷLεςi(N) Ἀχi|αιLῶνL(G)|
+(255) wahrlich sehr ja ermüden übel|benannte Söhne der|Achaier
+(255) indeed very now wear|down ill|named sons of|Achaeans
+(256) μαρνLάμiενi|οιL(Prä)(M/P)(N) περiὶi(Prp) |ἄστLυi(A)· σὲi(Pr)(A) |δʼ(Pt) ἐνθLάδiεi(Adv) |θυμLὸςi(N) ἀνi|ῆκLενL(Aor)(Akt)|
+(256) kämpfend|seiend um Stadt· dich aber hierher Sinn sandte
+(256) fighting around city· you but here spirit sent|up
+(257) ἐλθLόντLʼ(AorS)(Akt)(A) |ἐξL(Prp) ἄκρL|ηςL(Adj)(G) πόλiιi|οςL(G) Διiὶi(D) |χεῖρLαςi(A) ἀνi|ασχLεῖνL(Aor)(Akt)(Inf).|
+(257) gekommen|seienden aus der|Höhe der|Stadt dem|Zeus Hände empor|zu|halten.
+(257) having|come from of|the|height of|city to|Zeus hands to|raise|up.
+(258) ἀλλLὰi(Kon) μένiʼ(Prä)(Akt)(Imv) |ὄφρLάi(Kon) κέi(Pt) |τοιL(Pr)(D) μελiιi|ηδLέiαi(Adj)(A) |οἶνLονi(A) ἐνi|είκLωL(Aor)(Akt)(Knj),|
+(258) aber bleib damit wohl dir honig|süßen Wein ich|bringe,
+(258) but stay so|that at|least for|you honey|sweet wine I|may|bring,
+(259) ὡςL(Kon) σπείσL|ῃςL(Aor)(Akt)(Knj) Διiὶi(D) |πατρLὶi(D) καὶi(Kon) |ἄλλLοιςL(Adj)(D) |ἀθLανiάτi|οισLιL(Adj)(D)|
+(259) damit du|spendest dem|Zeus Vater und den|anderen Unsterblichen
+(259) so|that you|may|pour to|Zeus father and to|others immortals
+(260) πρῶτLονi(Adv), ἔπi|ειτLαi(Adv) δὲi(Pt) |καὐτLὸςi(Kon)(Pr)(N) ὀνi|ήσLεiαιi(Fu)(Med) |αἴL(Kon) κεi(Pt) πίi|ῃσθLαL(Aor)(M/P)(Knj).|
+(260) zuerst, danach aber und|selbst wirst|Nutzen|haben wenn wohl du|trinkest.
+(260) first, then but and|your|self you|will|benefit if at|least you|may|drink.
+(261) ἀνδρLὶi(D) δὲi(Pt) |κεκμLηL|ῶτLιi(Per)(Akt)(D) μένi|οςL(N) μέγiαi(Adj)(N) |οἶνLοςi(N) ἀi|έξLειL(Fu)(Akt),|
+(261) dem|Mann aber ermüdet|seienden Kraft groß Wein wird|mehren,
+(261) for|a|man but having|toiled might great wine increases,
+(262) ὡςL(Kon) τύνL|ηL(Pr)(N) κέκμL|ηκLαςi(Per)(Akt) ἀμi|ύνLωνL(Prä)(Akt)(N) |σοῖσLινi(Adj)(D) ἔτi|ῃσLιL(D).|
+(262) da du|selbst bist|ermüdet abwehrend deinen Gefährten.
+(262) as you|yourself are|weary warding|off for|your companions.
+(263) τὴνL(Pr)(A) δʼ(Pt) ἠμL|είβLετiʼ(Imp)(M/P) ἔπi|ειτLαi(Adv) μέγi|αςL(Adj)(N) κορiυθi|αίLολiοςi(Adj)(N) |ἝκτLωρL(N)·|
+(263) sie aber antwortete darauf großer helm|wogender Hektor·
+(263) her but was|answering then great flashing|helmed Hector·
+(264) μήL(Pt) μοιL(Pr)(D) |οἶνLονi(A) ἄi|ειρLεi(Prä)(Akt)(Imv) μελi|ίφρLονiαi(Adj)(A) |πότνLιiαi(Adj)(V) |μῆτLερL(V),|
+(264) nicht mir Wein hebe honig|sanften Herrin Mutter,
+(264) do|not for|me wine lift sweet|to|mind lady mother,
+(265) μήL(Pt) μʼ(Pr)(A) ἀπiογi|υιLώσL|ῃςL(Aor)(Akt)(Knj) μένiεi|οςL(G), ἀλκL|ῆςL(G) τεi(Pt) λάθi|ωμLαιL(Aor)(Med)(Knj)·|
+(265) nicht mich ent|kräftest des|Mutes, der|Wehrkraft und ich|vergesse·
+(265) do|not me you|may|unlimb of|might, of|defence and I|may|forget·
+(266) χερσLὶi(D) δʼ(Pt) ἀνi|ίπτLοισL|ινL(Adj)(D) Διiὶi(D) |λείβLεινL(Prä)(Akt)(Inf) |αἴθLοπiαi(Adj)(A) |οἶνLονL(A)|
+(266) mit|Händen aber ungewaschenen dem|Zeus gießen funkel|roten Wein
+(266) with|hands but unwashed to|Zeus to|pour glowing wine
+(267) ἅζLομiαιi(Prä)(M/P)· |οὐδLέi(Pt) πῃi(Adv) |ἔστLιi(Prä)(Akt) κελi|αινLεφiέi|ϊL(Adj)(D) Κρονiίi|ωνLιL(D)|
+(267) ich|scheue|mich· auch|nicht irgend ist dem|schwarz|bewölkten dem|Kronos|Sohn
+(267) I|revere· nor in|any|way is black|clouded to|Kronion
+(268) αἵμLατiιi(D) |καὶL(Kon) λύθρL|ῳL(D) πεπiαλi|αγμLένiονi(Per)(M/P)(A) |εὐχLετiάi|ασθLαιL(Prä)(M/P)(Inf).|
+(268) mit|Blut und mit|Blut|schmutz besudelt|seienden zu|beten.
+(268) with|blood and with|gore having|been|bespattered to|pray.
+(269) ἀλλLὰi(Kon) σὺi(Pr)(N) |μὲνL(Pt) πρὸςL(Prp) |νηLὸνi(A) Ἀθi|ηνLαίL|ηςL(G) ἀγiελi|είLηςL(Adj)(G)|
+(269) aber du zwar zu Tempel der|Athene der|Scharen|führenden
+(269) but you indeed toward temple of|Athena people|gathering
+(270) ἔρχLεiοi(Prä)(Med)(Imv) |σὺνL(Prp) θυiέi|εσσLινi(D) ἀi|ολλLίσσL|ασLαi(Aor)(Akt)(N) γερi|αιLάςL(Adj)(A)·|
+(270) geh mit Opfer|tieren zusammen|gebracht|habend Greisinnen·
+(270) go with sacrifices having|gathered old|women·
+(271) πέπλLονL(A) |δʼ(Pt), ὅςL(Pr)(N) τίςL(Pr)(N) |τοιL(Pr)(D) χαρiιi|έστLατiοςi(Adj)(Sup)(N) |ἠδLὲi(Kon) μέγi|ιστLοςL(Adj)(Sup)(N)|
+(271) Schleier aber, welcher irgend dir lieblichst|er und größt|er
+(271) robe but, which ever for|you most|pleasing and greatest
+(272) ἔστLινi(Prä)(Akt) ἐνi|ὶL(Prp) μεγiάρi|ῳL(D) καίL(Kon) |τοιL(Pr)(D) πολiὺi(Adv) |φίλτLατiοςi(Adj)(Sup)(N) |αὐτLῇL(Pr)(D),|
+(272) ist in Halle und dir sehr lieb|ster dir|selbst,
+(272) is in hall and for|you much dearest to|her|self,
+(273) τὸνL(Pr)(A) θὲςi(AorS)(Akt)(Imv) Ἀθi|ηνLαίL|ηςL(G) ἐπiὶi(Prp) |γούνLασiινi(D) |ἠLϋκiόμi|οιLοL(Adj)(G),|
+(273) den setze der|Athene auf Knieen schön|haarigen,
+(273) that place of|Athena upon knees fair|haired,
+(274) καίL(Kon) οἱi(Pr)(D) ὑπi|οσχLέσθL|αιL(Aor)(Med)(Inf) δυiοκi|αίδLεκiαi(Adj)(A) |βοῦςL(A) ἐνiὶi(Prp) |νηLῷL(D)|
+(274) und ihr zu|versprechen zwölf Rinder in Heiligtum
+(274) and to|her to|promise twelve cows in temple
+(275) ἤνLιςL(Adj)(A) |ἠκLέστL|αςL(Adj)(A) ἱiερi|ευσLέμiενi(Fu)(Akt)(Inf), |αἴL(Kon) κʼ(Pt) ἐλiεi|ήσLῃL(Aor)(Akt)(Knj)|
+(275) jährige ungestachelte opfern|zu|werden, wenn wohl sich|erbarmen|möge
+(275) yearling unyoked to|sacrifice, if at|least she|may|pity
+(276) ἄστLύi(A) τεi(Pt) |καὶL(Kon) ΤρώL|ωνL(G) ἀλiόχi|ουςL(A) καὶL(Kon) |νήπLιiαi(Adj)(A) |τέκνLαL(A),|
+(276) Stadt und auch der|Troer Ehefrauen und kleine Kinder,
+(276) city and and of|Trojans wives and infant children,
+(277) αἴL(Kon) κενL(Pt) |ΤυδLέiοςi(G) |υἱLὸνi(A) ἀπi|όσχLῃL(Aor)(Akt)(Knj) |ἸλLίiουi(G) |ἱρLῆςL(Adj)(G)|
+(277) wenn wohl des|Tydeus Sohn ab|hält von|Ilion heiligen
+(277) if at|least of|Tydeus son she|may|keep|away of|Ilion holy
+(278) ἄγρLιiονi(Adj)(A) |αἰχμLητL|ὴνL(A) κρατiερi|ὸνL(Adj)(A) μήστL|ωρLαi(A) φόβi|οιLοL(G).|
+(278) wilden Speer|kämpfer starken Stifter des|Schreckens.
+(278) savage spearman strong contriver of|fear.
+(279) ἀλλLὰi(Kon) σὺi(Pr)(N) |μὲνL(Pt) πρὸςL(Prp) |νηLὸνi(A) Ἀθi|ηνLαίL|ηςL(G) ἀγiελi|είLηςL(Adj)(G)|
+(279) aber du zwar zu Tempel der|Athene der|Scharen|führenden
+(279) but you indeed toward temple of|Athena people|gathering
+(280) ἔρχLευi(Prä)(Med)(Imv), ἐγi|ὼL(Pr)(N) δὲi(Pt) Πάρi|ινL(A) μετiελi|εύσLομiαιi(Fu)(Med) |ὄφρLαi(Kon) καλi|έσσLωL(Fu)(Akt)|
+(280) geh, ich aber Paris werde|aufsuchen damit ich|rufen|werde
+(280) go, I then Paris I|will|go|to so|that I|will|call
+(281) αἴL(Kon) κʼ(Pt) ἐθiέλi|ῃσLʼ(Prä)(Akt)(Knj) εἰπL|όντLοςi(AorS)(Akt)(G) ἀκi|ουLέμiενi(Prä)(M/P)(Inf)· |ὥςL(Kon) κέi(Pt) οἱi(Pr)(D) |αὖθLιL(Adv)|
+(281) wenn wohl wolle des|Sprechenden zuzuhören· so|dass wohl ihm hier
+(281) if at|least he|may|want of|me|having|spoken to|listen· so|that at|least for|him on|the|spot
+(282) γαῖLαi(N) χάνi|οιL(Aor)(Akt)· μέγiαi(Adv) |γάρL(Pt) μινi(Pr)(A) Ὀλi|ύμπLιiοςi(Adj)(N) |ἔτρLεφiεi(Imp)(Akt) |πῆμLαL(A)|
+(282) Erde möchte|verschlingen· sehr denn ihn der|Olympische nährte Unheil
+(282) earth might|yawn· greatly for him Olympian was|rearing bane
+(283) ΤρωσLίi(D) τεi(Pt) |καὶL(Kon) Πριiάμi|ῳL(D) μεγiαλi|ήτLορiιi(Adj)(D) |τοῖLόi(Pr)(G) τεi(Pt) |παισLίνL(D).|
+(283) den|Troern und auch Priamos groß|herzigen dessen und Kindern.
+(283) for|Trojans and and to|Priam great|hearted of|that|man and to|sons.
+(284) εἰL(Kon) κεῖνL|όνL(Pr)(A) γεi(Pt) ἴδi|οιμLιi(Aor)(Akt) κατi|ελθLόντLʼ(AorS)(Akt)(A) |ἌLϊδiοςi(G) |εἴσLωL(Adv)|
+(284) wenn jenen doch möchte|sehen hinab|gegangen|seienden des|Hades hinein
+(284) if that|man at|least I|would|see having|gone|down of|Hades within
+(285) φαίLηνL(Prä)(Akt) |κεL(Pt) φρένiʼ(A) ἀτi|έρπLουi(Adj)(G) ὀi|ϊζLύiοςi(G) |ἐκλLελiαθi|έσθLαιL(Per)(M/P)(Inf).|
+(285) würde|sagen wohl Sinn un|freuden|haften Not vergessen|zu|haben.
+(285) I|would|say at|least mind of|joyless of|woe to|have|forgotten.
+(286) ὣςL(Adv) ἔφiαθiʼ(Imp)(M/P), |ἣL(Pr)(N) δὲi(Pt) μολi|οῦσLαi(AorS)(Akt)(N) ποτi|ὶL(Prp) μέγiαρiʼ(A) |ἀμφLιπiόλi|οισLιL(D)|
+(286) so sprach, sie aber gekommen|seiend zu Hallen Dienerinnen
+(286) thus was|speaking, she then having|come toward halls to|handmaids
+(287) κέκλLετiοi(Imp)(M/P)· |ταὶL(Pr)(N) δʼ(Pt) ἄρiʼ(Pt) ἀi|όλλLισσL|ανL(Aor)(Akt) κατiὰi(Prp) |ἄστLυi(A) γερi|αιLάςL(Adj)(A).|
+(287) rief· die aber ja sammelten durch Stadt Greisinnen.
+(287) was|calling· they then indeed gathered|together through|down city old|women.
+(288) αὐτLὴL(Pr)(N) |δʼ(Pt) ἐςL(Prp) θάλiαμi|ονL(A) κατiεβi|ήσLετiοi(AorS)(Med) |κηLώL|εντLαL(Adj)(A),|
+(288) sie|selbst aber in Gemach stieg|hinab duftend|es,
+(288) she|her|self but into chamber went|down fragrant,
+(289) ἔνθLʼ(Adv) ἔσiάνi(Imp)(Akt) |οἱL(Pr)(D) πέπλL|οιL(N) παμπL|οίκLιλiαi(Adj)(N) |ἔργLαi(N) γυνi|αικLῶνL(G)|
+(289) dort waren ihr Schleier ganz|bunte Werke der|Frauen
+(289) there were for|her robes all|varicolored works of|women
+(290) ΣιδLονiίi|ωνL(Adj)(G), τὰςL(Pr)(A) |αὐτLὸςi(Pr)(N) Ἀλi|έξLανδρL|οςL(N) θεiοi|ειδLὴςL(Adj)(N)|
+(290) der|Sidonierinnen, die selbst Alexandros gott|ähnlich
+(290) of|Sidonians, whom him|self Alexandros god|like
+(291) ἤγLαγiεi(AorS)(Akt) |ΣιδLονiίi|ηθLενi(Adv) ἐπi|ιπλLὼςL(AorS)(Akt)(N) |εὐρLέiαi(Adj)(A) |πόντLονL(A),|
+(291) führte von|Sidon|her hinüber|gesegelt|habend weites Meer,
+(291) led from|Sidon having|sailed wide sea,
+(292) τὴνL(Art)(A) ὁδiὸνi(A) |ἣνL(Pr)(A) Ἑλiένi|ηνL(A) περi(Pt) ἀνi|ήγLαγiενi(AorS)(Akt) |εὐπLατiέρi|ειLανL(Adj)(A)·|
+(292) die Weg den Helena ja herauf|führte wohl|geborene·
+(292) the way which Helen indeed brought|up well|born·
+(293) τῶνL(Pr)(G) ἕνiʼ(Pr)(A) ἀi|ειρLαμiένi|ηL(AorS)(M/P)(N) Ἑκiάβi|ηL(N) φέρiεi(Imp)(Akt) |δῶρLονi(A) Ἀθi|ήνLῃL(D),|
+(293) von|denen eines auf|gehoben|habend Hekabe trug Geschenk der|Athene,
+(293) of|those one having|lifted Hecabe bore gift to|Athena,
+(294) ὃςL(Pr)(N) κάλλL|ιστLοςi(Adj)(Sup)(N) ἔi|ηνL(Imp)(Akt) ποικL|ίλμLασiινi(D) |ἠδLὲi(Kon) μέγi|ιστLοςL(Adj)(Sup)(N),|
+(294) welcher schönst|er war mit|Bunt|arbeiten und größt|er,
+(294) which fairest was with|embroideries and greatest,
+(295) ἀστLὴρL(N) |δʼ(Pt) ὣςL(Adv) ἀπiέλi|αμπLενi(Imp)(Akt)· ἔκi|ειτLοi(Imp)(M/P) δὲi(Pt) |νείLατiοςi(Adj)(N) |ἄλλLωνL(Pr)(G).|
+(295) Stern aber so strahlte· lag aber zuunterst der|anderen.
+(295) star but thus shone· was|lying then lowest of|others.
+(296) βῆL(AorS)(Akt) δʼ(Pt) ἰiένi|αιL(Prä)(Akt)(Inf), πολλL|αὶL(Adj)(N) δὲi(Pt) μετi|εσσLεύL|οντLοi(Imp)(M/P) γερi|αιLαίL(Adj)(N).|
+(296) ging aber zu|gehen, viele aber eilten|nach Greisinnen.
+(296) went but to|go, many then were|hurrying|after old|women.
+(297) αἳL(Pr)(N) δʼ(Pt) ὅτiεi(Kon) |νηLὸνi(A) ἵκi|ανLονi(Imp)(Akt) Ἀθi|ήνLηςL(G) |ἐνL(Prp) πόλiειi(D) |ἄκρLῃL(Adj)(D),|
+(297) die aber als Tempel erreichten der|Athene in Stadt auf|der|Höhe,
+(297) they then when temple came of|Athena in city high,
+(298) τῇσLιi(Pr)(D) θύρi|αςL(A) ὤL|ϊξLεi(Aor)(Akt) Θεi|ανLὼL(N) |καλλLιπiάρi|ῃLοςL(Adj)(N)|
+(298) ihnen Türen öffnete Theano schön|wangige
+(298) for|them doors opened Theano fair|cheeked
+(299) ΚισσLηL|ῒςL(Adj)(N) ἄλiοχi|οςL(N) ἈντL|ήνLορiοςi(G) |ἱππLοδiάμi|οιLοL(Adj)(G)·|
+(299) Kisse|ische Gattin des|Antenor Pferde|bändigers·
+(299) Kissean wife of|Antenor horse|taming·
+(300) τὴνL(Pr)(A) γὰρL(Pt) |ΤρῶLεςi(N) ἔθi|ηκLανi(Aor)(Akt) Ἀθi|ηνLαίL|ηςL(G) ἱiέρi|ειLανL(A).|
+(300) sie denn Troer setzten der|Athene Priesterin.
+(300) her for Trojans made of|Athena priestess.
+(301) αἳL(Pr)(N) δʼ(Pt) ὀλiολi|υγLῇL(D) |πᾶσLαιi(Adj)(N) Ἀθi|ήνLῃL(D) |χεῖρLαςi(A) ἀνi|έσχLονL(AorS)(Akt)·|
+(301) die aber mit|Ritual|ruf alle der|Athene Hände hoben·
+(301) they then with|ululation all to|Athena hands raised·
+(302) ἣL(Pr)(N) δʼ(Pt) ἄρiαi(Pt) |πέπλLονi(A) ἑλi|οῦσLαi(AorS)(M/P)(N) Θεi|ανLὼL(N) |καλλLιπiάρi|ῃLοςL(Adj)(N)|
+(302) sie aber ja Schleier genommen|habend Theano schön|wangige
+(302) she then indeed robe having|taken Theano fair|cheeked
+(303) θῆκLενi(AorS)(Akt) Ἀθi|ηνLαίL|ηςL(G) ἐπiὶi(Prp) |γούνLασiινi(D) |ἠLϋκiόμi|οιLοL(Adj)(G),|
+(303) setzte der|Athene auf Knieen schön|haarigen,
+(303) placed of|Athena upon knees fair|haired,
+(304) εὐχLομiένi|ηL(Prä)(M/P)(N) δʼ(Pt) ἠρL|ᾶτLοi(Imp)(M/P) Διi|ὸςL(G) κούρL|ῃL(D) μεγiάλi|οιLοL(Adj)(G)·|
+(304) betend|seiend aber bat des|Zeus Tochter großen·
+(304) praying then was|praying of|Zeus to|daughter great·
+(305) πότνLιiʼ(Adj)(V) Ἀθi|ηνLαίL|ηL(V) ἐρiυσi|ίπτLολiιi(Adj)(V) |δῖLαi(Adj)(V) θεi|άLωνL(G)|
+(305) Herrin Athena Stadt|schützende gott|gleiche der|Göttinnen
+(305) lady Athena city|protecting divine of|goddesses
+(306) ἆξLονL(AorS)(Akt)(Imv) |δὴL(Pt) ἔγχL|οςL(A) Διiομi|ήδLεiοςi(G), |ἠδLὲi(Kon) καὶi(Kon) |αὐτLὸνL(Pr)(A)|
+(306) brich ja Speer des|Diomedes, und auch ihn|selbst
+(306) break now spear of|Diomedes, and also him
+(307) πρηνLέiαi(Adj)(A) |δὸςL(AorS)(Akt)(Imv) πεσiέi|εινL(Fu)(Akt)(Inf) ΣκαιL|ῶνL(Adj)(G) προπiάρi|οιθLεi(Prp) πυλi|άLωνL(G),|
+(307) vornüber gib zu|fallen der|Skäischen vor Tore,
+(307) headlong grant to|fall of|Scaeans before of|gates,
+(308) ὄφρLάi(Kon) τοιi(Pr)(D) |αὐτLίκiαi(Adv) |νῦνL(Adv) δυiοκi|αίδLεκiαi(Adj)(A) |βοῦςL(A) ἐνiὶi(Prp) |νηLῷL(D)|
+(308) damit dir sofort jetzt zwölf Rinder in Heiligtum
+(308) so|that for|you straightway now twelve cows in temple
+(309) ἤνLιςL(Adj)(A) |ἠκLέστL|αςL(Adj)(A) ἱiερi|εύσLομiενi(Fu)(Akt), |αἴL(Kon) κʼ(Pt) ἐλiεi|ήσLῃςL(Aor)(Akt)(Knj)|
+(309) jährige ungestachelte wir|werden|opfern, wenn wohl erbarmen|mögest
+(309) yearling unyoked we|shall|sacrifice, if at|least you|may|pity
+(310) ἄστLύi(A) τεi(Pt) |καὶL(Kon) ΤρώL|ωνL(G) ἀλiόχi|ουςL(A) καὶL(Kon) |νήπLιiαi(Adj)(A) |τέκνLαL(A).|
+(310) Stadt und auch der|Troer Ehefrauen und kleine Kinder.
+(310) city and and of|Trojans wives and infant children.
+(311) ὣςL(Adv) ἔφiατiʼ(Imp)(M/P) |εὐχLομiένi|ηL(Prä)(M/P)(N), ἀνiένi|ευLεi(Imp)(Akt) δὲi(Pt) |ΠαλλLὰςi(N) Ἀθi|ήνLηL(N).|
+(311) so sprach betend|seiend, lehnte|ab aber Pallas Athene.
+(311) thus was|speaking praying, was|denying then Pallas Athena.
+(312) ὣςL(Adv) αἳL(Pr)(N) |μένL(Pt) ῥʼ(Pt) εὔχL|οντLοi(Imp)(M/P) Διi|ὸςL(G) κούρL|ῃL(D) μεγiάλi|οιLοL(Adj)(G),|
+(312) so die zwar ja beteten des|Zeus Tochter großen,
+(312) thus they indeed then were|praying of|Zeus to|daughter great,
+(313) ἝκτLωρL(N) |δὲL(Pt) πρὸςL(Prp) |δώμLατiʼ(A) Ἀλi|εξLάνδρL|οιLοi(G) βεβi|ήκLειL(Plq)(Akt)|
+(313) Hektor aber zu Haus Alexandros war|gegangen
+(313) Hector then toward halls of|Alexandros has|gone
+(314) καλLάi(Adj)(A), τάi(Art)(A) |ῥʼ(Pt) αὐτLὸςi(Pr)(N) ἔτi|ευξLεi(AorS)(Akt) σὺνi(Prp) |ἀνδρLάσiινi(D) |οἳL(Pr)(N) τότiʼ(Adv) ἄρi|ιστLοιL(Adj)(N)|
+(314) schöne, die ja selbst baute mit Männern die damals beste
+(314) beautiful, which then him|self made with men who then best
+(315) ἦσLανi(Imp)(Akt) ἐνi|ὶL(Prp) ΤροίL|ῃL(D) ἐρiιβi|ώλLακiιi(Adj)(D) |τέκτLονiεςi(N) |ἄνδρLεςL(N),|
+(315) waren in Troja erd|reichen Zimmer|leute Männer,
+(315) were in Troy rich|soiled craftsmen men,
+(316) οἵL(Pr)(N) οἱi(Pr)(D) ἐπi|οίLησL|ανL(Aor)(Akt) θάλiαμi|ονL(A) καὶL(Kon) |δῶμLαi(A) καὶi(Kon) |αὐλLὴνL(A)|
+(316) die ihm machten Gemach und Haus und Hof
+(316) who for|him made chamber and house and courtyard
+(317) ἐγγLύθiιi(Adv) |τεL(Pt) Πριiάμi|οιLοi(G) καὶi(Kon) |ἝκτLορiοςi(G) |ἐνL(Prp) πόλiειi(D) |ἄκρLῃL(Adj)(D).|
+(317) nahe und des|Priamos und des|Hektors in Stadt auf|der|Höhe.
+(317) near and of|Priam and of|Hector in city high.
+(318) ἔνθLʼ(Adv) ἝκτL|ωρL(N) εἰσL|ῆλθLεi(AorS)(Akt) Διi|ῒL(D) φίλiοςi(Adj)(N), |ἐνL(Prp) δʼ(Pt) ἄρiαi(Pt) |χειρLὶL(D)|
+(318) dort Hektor trat|ein dem|Zeus lieb, in aber ja der|Hand
+(318) there Hector went|in to|Zeus dear, in but then hand
+(319) ἔγχLοςi(A) ἔχiʼ(Imp)(Akt) |ἑνδLεκiάπi|ηχLυi(Adj)(A)· πάρi|οιθLεi(Adv) δὲi(Pt) |λάμπLετiοi(Imp)(M/P) |δουρLὸςL(G)|
+(319) Speer hielt elf|Ellen|lang· vorn aber leuchtete des|Schaftes
+(319) spear held eleven|cubit|long· in|front but was|gleaming of|shaft
+(320) αἰχμLὴL(N) |χαλκLείL|ηL(Adj)(N), περiὶi(Prp) |δὲL(Pt) χρύσiεi|οςL(Adj)(G) θέiεi(Imp)(Akt) |πόρκLηςL(G).|
+(320) Spitze erz|ern, rings|um aber gold|enen lief des|Reifens.
+(320) point bronze, around but of|gold was|running of|ring.
+(321) τὸνL(Pr)(A) δʼ(Pt) εὗρLʼ(AorS)(Akt) |ἐνL(Prp) θαλiάμi|ῳL(D) περiικi|αλλLέiαi(Adj)(A) |τεύχLεiʼ(A) ἕπi|οντLαL(Prä)(Akt)(A)|
+(321) den aber fand in der|Kammer sehr|schöne Waffen tragend
+(321) him but found in chamber very|beautiful arms busy|with
+(322) ἀσπLίδiαi(A) |καὶL(Kon) θώρL|ηκLαi(A), καὶi(Kon) |ἀγκLύλiαi(Adj)(A) |τόξLʼ(A) ἁφiόi|ωντLαL(Prä)(Akt)(A)·|
+(322) Schild und Panzer, und gebogene Bögen ergreifend·
+(322) shield and cuirass, and crooked bows stringing·
+(323) ἈργLείL|ηL(Adj)(N) δʼ(Pt) Ἑλiένi|ηL(N) μετiʼ(Prp) ἄρi|αL(Pt) δμῳL|ῇσLιi(D) γυνi|αιξLὶνL(D)|
+(323) Argivische aber Helena mit dann Mägden Frauen
+(323) Argive then Helen with indeed handmaids women
+(324) ἧστLοi(Imp)(M/P) καὶi(Kon) |ἀμφLιπiόλi|οισLιi(D) περi|ικλLυτiὰi(Adj)(A) |ἔργLαi(A) κέλi|ευLεL(Imp)(Akt).|
+(324) saß und den|Mägden sehr|berühmte Arbeiten befahl.
+(324) sat and to|handmaids very|famous works was|ordering.
+(325) τὸνL(Pr)(A) δʼ(Pt) ἝκτL|ωρL(N) νείκL|εσσLενi(Imp)(Akt) ἰδi|ὼνL(AorS)(Akt)(N) αἰσχρL|οῖςL(Adj)(D) ἐπiέi|εσσLιL(D)·|
+(325) den aber Hektor schalt gesehen|habend schändlichen Worten·
+(325) him but Hector was|reproaching having|seen with|shameful words·
+(326) δαιμLόνiιiʼ(Adj)(V) |οὐL(Pt) μὲνL(Pt) |καλLὰi(Adj)(A) χόλi|ονL(A) τόνδLʼ(Pr)(A) |ἔνθLεiοi(Aor)(M/P)(Imv) |θυμLῷL(D),|
+(326) du|Unglücklicher nicht zwar schöne Zorn diesen lege|hinein in|den|Sinn,
+(326) strange|man not indeed fair anger this put in|heart,
+(327) λαLοὶL(N) |μὲνL(Pt) φθινiύθi|ουσLιi(Prä)(Akt) περi|ὶL(Prp) πτόλiινi(A) |αἰπLύi(Adj)(A) τεi(Pt) |τεῖχLοςL(A)|
+(327) Leute zwar schwinden um die|Stadt steil|es und Mauer
+(327) people indeed are|perishing around city steep and wall
+(328) μαρνLάμiενi|οιL(Prä)(M/P)(N)· σέiοi(Pr)(G) |δʼ(Pt) εἵνLεκiʼ(Prp) ἀi|ϋτLήL(N) |τεL(Pt) πτόλiεμi|όςL(N) τεL(Pt)|
+(328) kämpfend· deiner aber wegen Geheul und Krieg und
+(328) fighting· of|you but on|account battle|cry and war and
+(329) ἄστLυi(N) τόδiʼ(Pr)(N) |ἀμφLιδiέδi|ηLεi(Per)(Akt)· σὺi(Pr)(N) |δʼ(Pt) ἂνL(Pt) μαχiέσi|αιLοi(Aor)(Med) καὶi(Kon) |ἄλλLῳL(Pr)(D),|
+(329) die|Stadt diese ist|ringsum|verbrannt· du aber wohl würdest|kämpfen auch mit|einem|anderen,
+(329) city this has|blazed|around· you but at|least would|fight and with|another,
+(330) ὅνL(Pr)(A) τινiάi(Pr)(A) |πουL(Adv) μεθiιi|έντLαi(Prä)(Akt)(A) ἴδi|οιςL(AorS)(Akt) στυγiερi|οῦL(Adj)(G) πολiέμi|οιLοL(G).|
+(330) den irgendeinen irgendwo loslassend würdest|sehen des|verhassten Krieges.
+(330) whom someone perhaps ceasing you|might|see of|hateful war.
+(331) ἀλλLʼ(Kon) ἄνiαi(V) |μὴL(Pt) τάχiαi(Adv) |ἄστLυi(N) πυρi|ὸςL(G) δηίL|οιLοi(Adj)(G) θέρi|ητLαιL(Aor)(M/P)(Knj).|
+(331) aber Herr nicht bald die|Stadt des|Feuers feindlichen werde|verzehrt.
+(331) but lord not soon city of|fire hostile may|be|destroyed.
+(332) τὸνL(Pr)(A) δʼ(Pt) αὖτL|εL(Adv) προσiέi|ειπLενi(AorS)(Akt) Ἀλi|έξLανδρL|οςL(N) θεiοi|ειδLήςL(Adj)(N)·|
+(332) den aber wiederum sprach|an Alexandros gott|gleich·
+(332) him but again addressed Alexandros god|like·
+(333) ἝκτLορi(V) ἐπi|είL(Kon) μεi(Pr)(A) κατiʼ(Prp) |αἶσLανi(A) ἐνi|είκLεσiαςi(AorS)(Akt) |οὐδLʼ(Pt) ὑπiὲρi(Prp) |αἶσLανL(A),|
+(333) Hektor da mich nach Maß|Anteil tadeltest und|nicht über Maß|Anteil,
+(333) Hector since me according|to portion you|reproached and|not beyond portion,
+(334) τοὔνLεκiάi(Kon) |τοιL(Pr)(D) ἐρiέi|ωL(Fu)(Akt)· σὺi(Pr)(N) δὲi(Pt) |σύνθLεiοi(Aor)(M/P)(Imv) |καίL(Kon) μευi(Pr)(G) ἄκi|ουσLονL(AorS)(Akt)(Imv)·|
+(334) des|wegen dir werde|sagen· du aber nimm|zu|Herzen und meiner höre·
+(334) therefore for|you I|will|say· you but understand and of|me listen·
+(335) οὔL(Pt) τοιi(Pr)(D) ἐγi|ὼL(Pr)(N) ΤρώL|ωνL(G) τόσσL|ονL(Adv) χόλiῳi(D) |οὐδLὲi(Pt) νεμi|έσσLιL(D)|
+(335) nicht dir ich der|Troer so|sehr im|Zorn noch im|Groll
+(335) not for|you I of|Trojans so|much in|wrath nor in|indignation
+(336) ἥμLηνL(Imp)(M/P) |ἐνL(Prp) θαλiάμi|ῳL(D), ἔθiελi|ονL(Imp)(Akt) δʼ(Pt) ἄχiεi|ϊL(D) προτρiαπi|έσθLαιL(Aor)(M/P)(Inf).|
+(336) saß in der|Kammer, wollte aber in|Kummer mich|wenden.
+(336) I|was in chamber, I|wished but in|grief to|yield.
+(337) νῦνL(Adv) δέi(Pt) μεi(Pr)(A) |παρLειπL|οῦσLʼ(AorS)(Akt)(N) ἄλiοχi|οςL(N) μαλiακi|οῖςL(Adj)(D) ἐπiέi|εσσLινL(D)|
+(337) nun aber mich zugesprochen|habend Ehefrau weichen Worten
+(337) now but me having|addressed wife with|soft words
+(338) ὅρμLησLʼ(AorS)(Akt) |ἐςL(Prp) πόλiεμi|ονL(A)· δοκiέi|ειL(Prä)(Akt) δέi(Pt) μοιi(Pr)(D) |ὧδLεi(Adv) καὶi(Kon) |αὐτLῷL(Pr)(D)|
+(338) trieb|an in den|Krieg· dünkt aber mir so auch mir|selbst
+(338) urged into war· it|seems but to|me thus and to|myself
+(339) λώLϊiονi(Adj)(A) |ἔσσLεσθL|αιL(Fu)(M/P)(Inf)· νίκL|ηL(N) δʼ(Pt) ἐπiαμi|είβLετiαιi(Prä)(M/P) |ἄνδρLαςL(A).|
+(339) besser zu|sein· Sieg aber wechselt Männer.
+(339) better to|be· victory but comes|in|turn men.
+(340) ἀλλLʼ(Kon) ἄγiεi(Prä)(Akt)(Imv) |νῦνL(Adv) ἐπiίμi|εινLονi(Aor)(Akt)(Imv), Ἀρi|ήLϊiαi(Adj)(A) |τεύχLεiαi(A) |δύLωL(Prä)(Akt)·|
+(340) aber komm nun harre, Ares|ische Waffen lege|an·
+(340) but come now wait, warlike arms I|put|on·
+(341) ἢL(Kon) ἴθiʼ(Prä)(Akt)(Imv), ἐγi|ὼL(Pr)(N) δὲi(Pt) μέτi|ειμLιi(Prä)(Akt)· κιχi|ήσLεσθL|αιL(Fu)(M/P)(Inf) δέi(Pt) σʼ(Pr)(A) ὀi|ΐLωL(Prä)(M/P).|
+(341) oder geh, ich aber werde|folgen· einholen|zu|werden aber dich meine|ich.
+(341) or go, I but go|after· to|reach then you I|think.
+(342) ὣςL(Adv) φάτiοi(Imp)(M/P), |τὸνL(Pr)(A) δʼ(Pt) οὔL(Pt) |τιL(Pr)(A) προσiέφi|ηL(Imp)(Akt) κορiυθi|αίLολiοςi(Adj)(N) |ἝκτLωρL(N)·|
+(342) so sprach, ihn aber nicht irgend redete|an helm|wogender Hektor·
+(342) thus spoke, him but not at|all addressed flashing|helmed Hector·
+(343) τὸνL(Pr)(A) δʼ(Pt) Ἑλiένi|ηL(N) μύθL|οισLιi(D) προσi|ηύδLαL(Imp)(Akt) |μειλLιχiίi|οισLιL(Adj)(D)·|
+(343) ihn aber Helena mit|Worten redete|an milden·
+(343) him but Helen with|words was|addressing with|gentle·
+(344) δᾶLερi(V) ἐμi|εῖLοi(Pr)(G) κυνi|ὸςL(G) κακiομi|ηχLάνiουi(Adj)(G) |ὀκρLυiοi|έσσLηςL(Adj)(G),|
+(344) Schwager meines Hundes arg|tückischen schauer|lichen,
+(344) brother|in|law of|me of|dog evil|plotting chilling,
+(345) ὥςL(Adv) μʼ(Pr)(A) ὄφiελiʼ(Pt) |ἤμLατiιi(D) |τῷL(Pr)(D) ὅτiεi(Kon) |μεL(Pr)(A) πρῶτL|ονL(Adv) τέκiεi(AorS)(Akt) |μήτLηρL(N)|
+(345) dass mich hätte|sollen am|Tag dem als mich zuerst gebar Mutter
+(345) so me would|that on|the|day that when me first bore mother
+(346) οἴχLεσθL|αιL(Prä)(M/P)(Inf) προφiέρi|ουσLαi(Prä)(Akt)(N) κακi|ὴL(Adj)(N) ἀνiέμi|οιLοi(G) θύi|ελλLαL(N)|
+(346) fort|zu|gehen vor|tragend böse des|Windes Sturmes
+(346) to|be|gone carrying|forth evil of|wind storm
+(347) εἰςL(Prp) ὄρiοςi(A) |ἢL(Kon) εἰςL(Prp) |κῦμLαi(A) πολi|υφλLοίσβL|οιLοi(Adj)(G) θαλi|άσσLηςL(G),|
+(347) in den|Berg oder in die|Woge viel|rauschenden des|Meeres,
+(347) into mountain or into wave of|much|roaring of|sea,
+(348) ἔνθLάi(Adv) μεi(Pr)(A) |κῦμLʼ(N) ἀπiόi|ερσLεi(AorS)(Akt) πάρi|οςL(Adv) τάδiεi(Pr)(A) |ἔργLαi(A) γενi|έσθLαιL(Aor)(M/P)(Inf).|
+(348) dort mich die|Woge hätte|weggespült zuvor diese Werke zu|werden.
+(348) there me wave swept|away before these deeds to|come|to|be.
+(349) αὐτLὰρi(Kon) ἐπi|εὶL(Kon) τάδiεi(Pr)(A) |γʼ(Pt) ὧδLεi(Adv) θεi|οὶL(N) κακiὰi(Adj)(A) |τεκμLήρL|αντLοL(Aor)(M/P),|
+(349) aber sobald dies ja so Götter Übel beschlossen,
+(349) but since these indeed thus gods evil ordained,
+(350) ἀνδρLὸςi(G) ἔπi|ειτLʼ(Adv) ὤφL|ελλLονi(Pt) ἀμi|είνLονiοςi(Adj)(G) |εἶνLαιi(Prä)(Akt)(Inf) ἄκi|οιτLιςL(N),|
+(350) eines|Mannes danach hätte|ich|sollen besseren zu|sein Gattin,
+(350) of|a|man then would|that of|better to|be wife,
+(351) ὃςL(Pr)(N) ᾔδL|ηL(Plq)(Akt) νέμiεσi|ίνL(A) τεi(Pt) καὶi(Kon) |αἴσχLεiαi(A) |πόλλLʼ(Adj)(A) ἀνθρL|ώπLωνL(G).|
+(351) der wusste Tadel und auch Schanden viele der|Menschen.
+(351) who knew indignations and also shames many of|men.
+(352) τούτLῳL(Pr)(D) |δʼ(Pt) οὔτLʼ(Pt) ἂρL(Pt) |νῦνL(Adv) φρένiεςi(N) |ἔμπLεδiοιi(Adj)(N) |οὔτLʼ(Pt) ἄρiʼ(Pt) ὀπi|ίσσLωL(Adv)|
+(352) diesem aber weder ja jetzt Sinne fest noch ja später
+(352) to|this but neither at|least now wits firm neither at|least hereafter
+(353) ἔσσLοντL|αιL(Fu)(M/P)· τὼL(Pt) |καίL(Kon) μινi(Pr)(A) ἐπi|αυρLήσL|εσθLαιi(Fu)(M/P)(Inf) ὀi|ΐLωL(Prä)(M/P).|
+(353) werden|sie|sein· daher auch ihn ernten|zu|werden meine|ich.
+(353) will|be· therefore and him to|reap I|think.
+(354) ἀλλLʼ(Kon) ἄγiεi(Prä)(Akt)(Imv) |νῦνL(Adv) εἴσL|ελθLεi(AorS)(Akt)(Imv) καὶi(Kon) |ἕζLεiοi(Prä)(M/P)(Imv) |τῷδLʼ(Pr)(D) ἐπiὶi(Prp) |δίφρLῳL(D)|
+(354) aber komm nun tritt|ein und setze|dich auf|diesem auf Sessel
+(354) but come now go|in and sit|yourself on|this upon seat
+(355) δᾶLερi(V), ἐπi|είL(Kon) σεi(Pr)(A) μάλi|ιστLαi(Adv)(Sup) πόνi|οςL(N) φρένiαςi(A) |ἀμφLιβiέβi|ηκLενL(Per)(Akt)|
+(355) Schwager, da dich am|meisten Mühe den|Sinn um|stellt|hat
+(355) brother|in|law, since you most toil minds has|gone|around
+(356) εἵνLεκiʼ(Prp) ἐμi|εῖLοi(Pr)(G) κυνi|ὸςL(G) καὶi(Kon) Ἀλi|εξLάνδρL|ουL(G) ἕνiεκiʼ(Prp) |ἄτLηςL(G),|
+(356) wegen meiner Hündin und Alexandros wegen Verblendung,
+(356) on|account|of of|me of|dog and of|Alexandros on|account|of of|ruin,
+(357) οἷσLινi(Pr)(D) ἐπi|ὶL(Prp) ΖεὺςL(N) |θῆκLεi(AorS)(Akt) κακi|ὸνL(Adj)(A) μόρiονi(A), |ὡςL(Kon) καὶi(Kon) ὀπi|ίσσLωL(Adv)|
+(357) denen auf Zeus setzte böses Schicksal, so|dass auch nachher
+(357) to|whom upon Zeus placed evil fate, so|that and afterward
+(358) ἀνθρLώπL|οισLιi(D) πελi|ώμLεθiʼ(Prä)(M/P) ἀi|οίδLιμiοιi(Adj)(N) |ἐσσLομiένi|οισLιL(Fu)(M/P)(D).|
+(358) bei|Menschen werden|wir lied|berühmte den|Künftigen.
+(358) for|men we|become song|famed to|those|to|be.
+(359) τὴνL(Pr)(A) δʼ(Pt) ἠμL|είβLετiʼ(Imp)(M/P) ἔπi|ειτLαi(Adv) μέγi|αςL(Adj)(N) κορiυθi|αίLολiοςi(Adj)(N) |ἝκτLωρL(N)·|
+(359) ihr aber antwortete darauf großer helm|wogender Hektor·
+(359) her but was|answering then great flashing|helmed Hector·
+(360) μήL(Pt) μεi(Pr)(A) κάθi|ιζLʼ(Prä)(Akt)(Imv) Ἑλiένi|ηL(V) φιλiέi|ουσLάi(Prä)(Akt)(N) περi(Pt)· |οὐδLέi(Kon) μεi(Pr)(A) |πείσLειςL(Fu)(Akt)·|
+(360) nicht mich setz|nieder Helena liebend zwar· auch|nicht mich wirst|überreden·
+(360) not me seat Helen loving though· nor me you|will|persuade·
+(361) ἤδLηL(Adv) |γάρL(Kon) μοιL(Pr)(D) |θυμLὸςi(N) ἐπi|έσσLυτiαιi(Per)(M/P) |ὄφρLʼ(Kon) ἐπiαμi|ύνLωL(Prä)(Akt)(Knj)|
+(361) schon denn mir Sinn ist|vorgestürmt damit ich|abwehre
+(361) already for to|me spirit has|rushed|on so|that I|ward
+(362) ΤρώLεσσLʼ(D), |οἳL(Pr)(N) μέγiʼ(Adv) ἐμi|εῖLοi(Pr)(G) ποθi|ὴνL(A) ἀπiεi|όντLοςi(Prä)(Akt)(G) ἔχi|ουσLινL(Prä)(Akt).|
+(362) den|Troern, die sehr meiner Sehnsucht des|Abwesenden haben.
+(362) to|the|Trojans, who greatly of|me longing of|being|away have.
+(363) ἀλλLὰi(Kon) σύi(Pr)(N) |γʼ(Pt) ὄρνLυθiιi(Prä)(M/P)(Imv) |τοῦτLονi(Pr)(A), ἐπi|ειγLέσθL|ωL(Prä)(M/P)(Imv) δὲi(Pt) καὶi(Kon) |αὐτLόςL(Pr)(N),|
+(363) aber du doch rege|an diesen, soll|eilen aber auch selbst,
+(363) but you at|least rouse this|man, let|him|hasten and also himself,
+(364) ὥςL(Kon) κενi(Pt) ἔμiʼ(Pr)(A) |ἔντLοσθL|ενL(Adv) πόλiιi|οςL(G) κατiαμi|άρψLῃi(Aor)(Akt)(Knj) ἐi|όντLαL(Prä)(Akt)(A).|
+(364) damit wohl mich innen der|Stadt er|packe seiend.
+(364) so|that perhaps me within of|city he|may|seize being.
+(365) καὶL(Kon) γὰρi(Pt) ἐγi|ὼνL(Pr)(N) οἶκL|ονδLεi(Adv) ἐλi|εύσLομiαιi(Fu)(Med) |ὄφρLαi(Kon) ἴδi|ωμLαιL(AorS)(M/P)(Knj)|
+(365) und|auch denn ich heim|zum|Haus werde|gehen damit ich|sehe
+(365) and for I homeward I|will|go so|that I|may|see
+(366) οἰκLῆL|αςL(A) ἄλiοχi|όνL(A) τεi(Pt) φίλi|ηνL(Adj)(A) καὶL(Kon) |νήπLιiονi(Adj)(A) |υἱLόνL(A).|
+(366) Haus|genossen Gattin und liebe und kleinen Sohn.
+(366) householders wife and dear and infant son.
+(367) οὐL(Pt) γὰρL(Pt) |οἶδLʼ(Per)(Akt) εἰi(Kon) ἔτi|ιL(Adv) σφινi(Pr)(D) ὑπi|ότρLοπiοςi(Adj)(N) |ἵξLομiαιi(Fu)(Med) |αὖτLιςL(Adv),|
+(367) nicht denn weiß|ich ob noch zu|ihnen zurück|kehrend werde|gelangen wieder,
+(367) not for I|know if yet to|them returning I|shall|come again,
+(368) ἦL(Pt) ἤδL|ηL(Adv) μʼ(Pr)(A) ὑπiὸi(Prp) |χερσLὶi(D) θεi|οὶL(N) δαμiόi|ωσLινi(Prä)(Akt) Ἀχi|αιLῶνL(G).|
+(368) oder schon mich unter den|Händen Götter bezwingen der|Achaier.
+(368) or already me under hands gods subdue of|Achaeans.
+(369) ὣςL(Adv) ἄρiαi(Pt) |φωνLήσL|αςL(AorS)(Akt)(N) ἀπiέβi|ηL(AorS)(Akt) κορiυθi|αίLολiοςi(Adj)(N) |ἝκτLωρL(N)·|
+(369) so dann gesprochen|habend ging|fort helm|wogender Hektor·
+(369) thus then having|spoken went|off flashing|helmed Hector·
+(370) αἶψLαi(Adv) δʼ(Pt) ἔπi|ειθLʼ(Adv) ἵκL|ανLεi(Imp)(Akt) δόμi|ουςL(A) εὖL(Adv) |ναιLετiάi|οντLαςL(Prä)(Akt)(A),|
+(370) schnell aber darauf gelangte Häuser gut bewohnt|seiende,
+(370) quickly but then came houses well well|inhabited,
+(371) οὐδLʼ(Pt) εὗρLʼ(AorS)(Akt) |ἈνδρLομiάχi|ηνL(A) λευκL|ώλLενiονi(Adj)(A) |ἐνL(Prp) μεγiάρi|οισLινL(D),|
+(371) und|nicht fand Andromache weiß|armige in den|Hallen,
+(371) nor found Andromache white|armed in halls,
+(372) ἀλλLʼ(Kon) ἥL(Pr)(N) |γεL(Pt) ξὺνL(Prp) |παιδLὶi(D) καὶi(Kon) |ἀμφLιπiόλi|ῳL(D) ἐiϋπi|έπλLῳL(Adj)(D)|
+(372) sondern sie ja mit dem|Kind und der|Dienerin gut|gekleideten
+(372) but she indeed with child and handmaid well|robed
+(373) πύργLῳi(D) ἐφi|εστLήκL|ειL(Plq)(Akt) γοiόi|ωσLάi(Prä)(Akt)(N) τεi(Pt) |μυρLομiένi|ηL(Prä)(M/P)(N) τεL(Pt).|
+(373) am|Turm hatte|gestanden wehklagend und weinend und.
+(373) on|tower had|stood wailing and weeping and.
+(374) ἝκτLωρL(N) |δʼ(Pt) ὡςL(Kon) οὐκL(Pt) |ἔνδLονi(Adv) ἀμi|ύμLονiαi(Adj)(A) |τέτμLενi(AorS)(Akt) ἄκi|οιτLινL(A)|
+(374) Hektor aber als nicht drinnen untadelige traf Gattin
+(374) Hector but when not within blameless found wife
+(375) ἔστLηi(AorS)(Akt) ἐπiʼ(Prp) |οὐδLὸνi(A) ἰi|ώνL(Prä)(Akt)(N), μετiὰi(Prp) |δὲL(Pt) δμῳL|ῇσLινi(D) ἔi|ειπLενL(AorS)(Akt)·|
+(375) stellte|sich auf die|Schwelle gehend, unter aber den|Dienerinnen sprach·
+(375) stood upon threshold going, among then handmaids spoke·
+(376) εἰL(Kon) δʼ(Pt) ἄγiεi(Prä)(Akt)(Imv) |μοιL(Pr)(D) δμῳL|αὶL(N) νημL|ερτLέiαi(Adj)(A) |μυθLήσL|ασθLεL(Aor)(M/P)(Imv)·|
+(376) wenn aber auf mir Mägde un|fehlbare sprecht|aus·
+(376) if but come to|me handmaids exactly tell|yourselves·
+(377) πῇL(Adv) ἔβiηi(AorS)(Akt) |ἈνδρLομiάχi|ηL(N) λευκL|ώλLενiοςi(Adj)(N) |ἐκL(Prp) μεγiάρi|οιLοL(G)|
+(377) wohin ging Andromache weiß|armige aus dem|Palast
+(377) where went Andromache white|armed out|of hall
+(378) ἠLέi(Kon) πῃi(Adv) |ἐςL(Prp) γαλiόi|ωνL(G) ἢL(Kon) |εἰνLατiέρi|ωνL(G) ἐiϋπi|έπλLωνL(Adj)(G)|
+(378) oder irgendwo zu der|Schwägerinnen oder der|Schwägerinnen|der|Brüder wohl|gekleideten
+(378) or anywhere to of|sisters|in|law or of|sisters|in|law well|robed
+(379) ἢL(Kon) ἐςi(Prp) Ἀθi|ηνLαίL|ηςL(G) ἐξL|οίχLετiαιi(Prä)(M/P), |ἔνθLάi(Adv) περi(Pt) |ἄλλLαιL(Adj)(N)|
+(379) oder zu der|Athene ist|weg|gegangen, dort doch|eben die|anderen
+(379) or to of|Athena has|gone|out, there indeed other
+(380) ΤρῳLαὶi(N) ἐi|ϋπλLόκiαμi|οιL(Adj)(N) δεινL|ὴνL(Adj)(A) θεiὸνi(A) |ἱλLάσκL|οντLαιL(Prä)(M/P)|
+(380) Troerinnen schön|gelockte furcht|bare Göttin versöhnen
+(380) Trojan|women fair|tressed terrible goddess propitiate
+(381) τὸνL(Pr)(A) δʼ(Pt) αὖτLʼ(Adv) |ὀτρLηρL|ὴL(Adj)(N) ταμiίi|ηL(N) πρὸςL(Prp) |μῦθLονi(A) ἔi|ειπLενL(AorS)(Akt)·|
+(381) den aber wiederum behende Haus|verwalterin zu Wort sprach·
+(381) him but again nimble housekeeper toward word spoke·
+(382) ἝκτLορi(V) ἐπi|εὶL(Kon) μάλiʼ(Adv) ἄνi|ωγLαςi(Per)(Akt) ἀλi|ηθLέiαi(Adj)(A) |μυθLήσL|ασθLαιL(Aor)(M/P)(Inf),|
+(382) Hektor da|weil sehr hast|befohlen Wahres zu|erzählen,
+(382) Hector since very you|have|commanded true|things to|speak,
+(383) οὔτLέi(Kon) πῃi(Adv) |ἐςL(Prp) γαλiόi|ωνL(G) οὔτLʼ(Kon) |εἰνLατiέρi|ωνL(G) ἐiϋπi|έπλLωνL(Adj)(G)|
+(383) weder irgendwo zu der|Schwägerinnen noch der|Schwägerinnen|der|Brüder wohl|gekleideten
+(383) neither anywhere to of|sisters|in|law nor of|sisters|in|law well|robed
+(384) οὔτLʼ(Kon) ἐςi(Prp) Ἀθi|ηνLαίL|ηςL(G) ἐξL|οίχLετiαιi(Prä)(M/P), |ἔνθLάi(Adv) περi(Pt) |ἄλλLαιL(Adj)(N)|
+(384) noch zu der|Athene ist|weg|gegangen, dort doch|eben die|anderen
+(384) nor to of|Athena has|gone|out, there indeed other
+(385) ΤρῳLαὶi(N) ἐi|ϋπλLόκiαμi|οιL(Adj)(N) δεινL|ὴνL(Adj)(A) θεiὸνi(A) |ἱλLάσκL|οντLαιL(Prä)(M/P),|
+(385) Troerinnen schön|gelockte furcht|bare Göttin versöhnen,
+(385) Trojan|women fair|tressed terrible goddess propitiate,
+(386) ἀλλLʼ(Kon) ἐπiὶi(Prp) |πύργLονi(A) ἔβi|ηL(AorS)(Akt) μέγiανi(Adj)(A) |ἸλLίiουi(G), |οὕνLεκiʼ(Kon) ἄκi|ουσLεL(AorS)(Akt)|
+(386) sondern auf|zu Turm ging großen von|Ilion, weil hörte
+(386) but upon tower went great of|Ilion, because heard
+(387) τείρLεσθL|αιL(Prä)(M/P)(Inf) ΤρῶL|αςL(A), μέγiαi(Adv) |δὲL(Pt) κράτiοςi(N) |εἶνLαιi(Prä)(Akt)(Inf) Ἀχi|αιLῶνL(G).|
+(387) zu|ermatten die|Troer, sehr aber Stärke zu|sein der|Achaier.
+(387) to|be|worn|down Trojans, greatly but might to|be of|Achaeans.
+(388) ἣL(Pr)(N) μὲνL(Pt) |δὴL(Pt) πρὸςL(Prp) |τεῖχLοςi(A) ἐπi|ειγLομiένi|ηL(Prä)(M/P)(N) ἀφiικi|άνLειL(Prä)(M/P)|
+(388) sie|die zwar ja gegen|zu die|Mauer eilend gelangt
+(388) she|who indeed now toward wall hastening arrives
+(389) μαινLομiένi|ῃL(Prä)(M/P)(D) ἐiϊκi|υῖLαi(Per)(Akt)(N)· φέρi|ειL(Prä)(Akt) δʼ(Pt) ἅμiαi(Adv) |παῖδLαi(A) τιθi|ήνLηL(N).|
+(389) der|Rasenden gleich· trägt aber zugleich das|Kind die|Amme.
+(389) to|a|raving like· carries but together child nurse.
+(390) ἦL(Pt) ῥαi(Pt) γυνi|ὴL(N) ταμiίi|ηL(N), ὃi(Pr)(N) δʼ(Pt) ἀπi|έσσLυτiοi(AorS)(M/P) |δώμLατiοςi(G) |ἝκτLωρL(N)|
+(390) ja freilich die|Frau Haus|verwalterin, der aber stürzte|fort aus|dem|Haus Hektor
+(390) then indeed woman housekeeper, he but rushed|out of|house Hector
+(391) τὴνL(Pr)(A) αὐτL|ὴνL(Pr)(A) ὁδiὸνi(A) |αὖτLιςi(Adv) ἐi|ϋκτLιμiένi|αςL(Adj)(A) κατiʼ(Prp) ἀγi|υιLάςL(A).|
+(391) den selben Weg wiederum wohl|gebauten durch Straßen.
+(391) the same road again well|built down|along streets.
+(392) εὖτLεi(Kon) πύλi|αςL(A) ἵκL|ανLεi(Imp)(Akt) διi|ερχLόμiενi|οςL(Prä)(M/P)(N) μέγiαi(Adj)(A) |ἄστLυL(A)|
+(392) als die|Tore gelangte hindurch|gehend große Stadt
+(392) when gates was|coming going|through great city
+(393) ΣκαιLάςL(Adj)(A), |τῇL(Pr)(D) ἄρiʼ(Pt) ἔμi|ελλLεi(Imp)(Akt) διi|εξLίμiενi|αιL(Prä)(M/P)(Inf) πεδiίi|ονδLεL(Adv),|
+(393) Skäischen, bei|der ja im|Begriff|war hinaus|zu|gehen zur|Ebene,
+(393) Scaean, by|which then was|about to|go|out|through to|the|plain,
+(394) ἔνθLʼ(Adv) ἄλiοχi|οςL(N) πολiύδi|ωρLοςi(Adj)(N) ἐνi|αντLίiηi(Adj)(N) |ἦλθLεi(AorS)(Akt) θέi|ουσLαL(Prä)(Akt)(N)|
+(394) dort Gattin reich|begabt entgegen kam laufend
+(394) there wife much|dowered opposite came running
+(395) ἈνδρLομiάχi|ηL(N) θυγiάτi|ηρL(N) μεγiαλi|ήτLορiοςi(Adj)(G) |ἨLετiίi|ωνLοςL(G)|
+(395) Andromache Tochter groß|herzigen des|Eëtion
+(395) Andromache daughter great|hearted of|Eëtion
+(396) ἨLετiίi|ωνL(N) ὃςi(Pr)(N) ἔνi|αιLενi(Imp)(Akt) ὑπi|ὸL(Prp) Πλάκiῳi(D) |ὑλLηL|έσσLῃL(Adj)(D)|
+(396) Eëtion der wohnte unter Plakos wald|reichen
+(396) Eëtion who dwelt under Placus wooded
+(397) ΘήβLῃi(D) Ὑπi|οπλLακiίi|ῃL(Adj)(D) Κιλiίκi|εσσLʼ(D) ἄνδρL|εσσLινi(D) ἀνi|άσσLωνL(Prä)(Akt)(N)·|
+(397) Thebe Hypoplakischen den|Kilikern Männern herrschend·
+(397) Thebe Under|Placus to|Cilicians to|men ruling·
+(398) τοῦL(Pr)(G) περL(Pt) |δὴL(Pt) θυγiάτi|ηρL(N) ἔχiεθiʼ(Imp)(M/P) |ἝκτLορiιi(D) |χαλκLοκiορi|υστLῇL(Adj)(D).|
+(398) dessen ja gewiss Tochter war|vermählt mit|Hektor bronze|gerüsteten.
+(398) of|him indeed now daughter was|held|to for|Hector bronze|armed.
+(399) ἥL(Pr)(N) οἱi(Pr)(D) ἔπi|ειτLʼ(Adv) ἤντL|ησLʼ(AorS)(Akt), ἅμiαi(Adv) |δʼ(Pt) ἀμφLίπiολi|οςL(N) κίiενi(Imp)(Akt) |αὐτLῇL(Pr)(D)|
+(399) die ihm darauf begegnete, zugleich aber Dienerin ging mit|ihr
+(399) who to|him then met, together but handmaid went with|her
+(400) παῖδLʼ(A) ἐπiὶi(Prp) |κόλπLῳi(D) ἔχi|ουσLʼ(Prä)(Akt)(N) ἀτiαλi|άφρLονiαi(Adj)(A) |νήπLιiονi(Adj)(A) |αὔτLωςL(Adv)|
+(400) Kind auf Schoß haltend zart|sinnigen kind|lichen ebenso
+(400) child upon lap holding tender|minded infant just|so
+(401) ἙκτLορiίδi|ηνL(A) ἀγiαπi|ητLὸνi(Adj)(A) ἀλi|ίγκLιiονi(Adj)(A) |ἀστLέρiιi(D) |καλLῷL(Adj)(D),|
+(401) Hektor|Sohn geliebten gleich dem|Stern schönen,
+(401) Hectorid beloved like|to star fair,
+(402) τόνL(Pr)(A) ῥʼ(Pt) ἝκτL|ωρL(N) καλiέi|εσκLεi(Imp)(Akt) Σκαμi|άνδρLιiονi(A), |αὐτLὰρi(Kon) οἱi(Pr)(N) |ἄλλLοιL(Adj)(N)|
+(402) den ja Hektor pflegte|zu|nennen Skamandrion, aber die anderen
+(402) him then Hector used|to|call Scamandrios, but the others
+(403) ἈστLυiάνi|ακτLʼ(A)· οἶL|οςL(Adj)(N) γὰρi(Pt) ἐρi|ύLετiοi(Imp)(M/P) |ἼλLιiονi(A) |ἝκτLωρL(N).|
+(403) Astyanax· allein denn schützte Ilion Hektor.
+(403) City|lord· alone for was|guarding Ilion Hector.
+(404) ἤτLοιi(Pt) ὃi(Pr)(N) |μὲνL(Pt) μείδL|ησLενi(AorS)(Akt) ἰδi|ὼνL(AorS)(Akt)(N) ἐςL(Prp) |παῖδLαi(A) σιi|ωπLῇL(D)·|
+(404) zwar er zwar lächelte gesehen|habend auf den|Knaben in|Stille·
+(404) indeed he indeed smiled having|seen toward child silently·
+(405) ἈνδρLομiάχi|ηL(N) δέi(Pt) οἱi(Pr)(D) |ἄγχLιi(Adv) παρi|ίστLατiοi(Imp)(M/P) |δάκρLυi(A) χέi|ουσLαL(Prä)(Akt)(N),|
+(405) Andromache aber ihm nahe stand|bei Träne gießend,
+(405) Andromache but to|him near stood|by tear shedding,
+(406) ἔνL(Prp) τʼ(Pt) ἄρiαi(Pt) |οἱL(Pr)(D) φῦL(AorS)(Akt) |χειρLὶi(D) ἔπi|οςL(A) τʼ(Pt) ἔφiατiʼ(Imp)(M/P) |ἔκL(Prp) τʼ(Pt) ὀνiόμi|αζLεL(Imp)(Akt)·|
+(406) in und doch ihm legte mit|der|Hand Wort und sprach aus und nannte·
+(406) in and then to|him placed with|hand word and was|saying out|of and was|naming·
+(407) δαιμLόνiιi|εL(Adj)(V) φθίσL|ειL(Fu)(Akt) σεi(Pr)(A) τὸi(Art)(A) |σὸνL(Adj)(A) μένiοςi(A), |οὐδLʼ(Kon) ἐλiεi|αίρLειςL(Prä)(Akt)|
+(407) Un|seliger wird|verderben dich das dein Mut, und|nicht erbarmst|dich
+(407) strange|man will|destroy you the your might, nor you|pity
+(408) παῖδLάi(A) τεi(Pt) |νηπLίiαχi|ονL(Adj)(A) καὶi(Kon) ἔμiʼ(Pr)(A) |ἄμμLορiονi(Adj)(A), |ἣL(Pr)(N) τάχiαi(Adv) |χήρLηL(N)|
+(408) Kind und unmündig und mich unglückselig, die bald Witwe
+(408) child and infant and me luckless, who soon widow
+(409) σεῦL(Pr)(G) ἔσiομi|αιL(Fu)(M/P)· τάχiαi(Adv) |γάρL(Pt) σεi(Pr)(A) κατi|ακτLανiέi|ουσLινi(Fu)(Akt) Ἀχi|αιLοὶL(N)|
+(409) deiner werde|ich|sein· bald denn dich werden|töten die|Achaier
+(409) of|you I|shall|be· soon for you they|will|kill Achaeans
+(410) πάντLεςi(Adj)(N) ἐφi|ορμLηθL|έντLεςi(AorS)(Pas)(N)· ἐμi|οὶL(Pr)(D) δέi(Pt) κεi(Pt) |κέρδLιiονi(Adj)(N) |εἴLηL(Prä)(M/P)(Op)|
+(410) alle heran|gestürmt|habend· mir aber wohl vorteilhafter wäre
+(410) all having|rushed|on· to|me but at|least more|profitable might|be
+(411) σεῦL(Pr)(G) ἀφiαμi|αρτLούσL|ῃL(AorS)(Akt)(D) χθόνiαi(A) |δύμLενiαιi(Aor)(M/P)(Inf)· |οὐL(Pt) γὰρi(Pt) ἔτiʼ(Pt) |ἄλλLηL(Adj)(N)|
+(411) deiner verfehlend|seiend Erde hinab|zu|gehen· nicht denn mehr andere
+(411) of|you missing earth to|go|down· not for yet other
+(412) ἔστLαιL(Fu)(M/P) |θαλπLωρL|ὴL(N) ἐπiεὶi(Kon) |ἂνL(Pt) σύi(Pr)(N) γεi(Pt) |πότμLονi(A) ἐπi|ίσπLῃςL(Aor)(M/P)(Knj)|
+(412) wird|sein Wärme|Trost sobald|da wohl du doch Tod|Schicksal erreichest
+(412) will|be warmth since at|least you indeed fate you|may|incur
+(413) ἀλλLʼ(Kon) ἄχiεiʼ(N)· |οὐδLέi(Kon) μοιi(Pr)(D) |ἔστLιi(Prä)(Akt) πατi|ὴρL(N) καὶL(Kon) |πότνLιiαi(Adj)(N) |μήτLηρL(N).|
+(413) sondern Schmerzen· und|nicht mir ist Vater und ehrwürdige Mutter.
+(413) but woes· nor to|me is father and revered mother.
+(414) ἤτLοιL(Pt) |γὰρL(Pt) πατiέρiʼ(A) |ἁμLὸνi(Adj)(A) ἀπi|έκτLανiεi(AorS)(Akt) |δῖLοςi(Adj)(N) Ἀχi|ιλλLεύςL(N),|
+(414) ja|wahrlich denn den|Vater meinen tötete göttlich|er Achilleus,
+(414) indeed for father my slew godlike Achilles,
+(415) ἐκL(Prp) δὲi(Pt) πόλi|ινL(A) πέρσL|ενL(AorS)(Akt) Κιλiίκi|ωνL(G) εὖL(Adv) |ναιLετiάi|ουσLανL(Prä)(Akt)(A)|
+(415) aus aber die|Stadt verwüstete der|Kilikier gut bewohnt|seiende
+(415) out|of but city sacked of|Cilicians well dwelling
+(416) ΘήβLηνL(A) |ὑψLίπiυλi|ονL(Adj)(A)· κατiὰi(Prp) |δʼ(Pt) ἔκτLανiενi(AorS)(Akt) |ἨLετiίi|ωνLαL(A),|
+(416) Thebe hoch|torige· nieder aber erschlug Eëtion,
+(416) Thebe high|gated· down and slew Eëtion,
+(417) οὐδLέi(Kon) μινi(Pr)(A) |ἐξLενiάρi|ιξLεi(AorS)(Akt), σεβi|άσσLατiοi(AorS)(M/P) |γὰρL(Pt) τόi(Art)(A) γεi(Pt) |θυμLῷL(D),|
+(417) und|nicht ihn ent|leibte, scheute|sich denn dies ja im|Sinn,
+(417) nor him stripped, revered for this indeed in|spirit,
+(418) ἀλλLʼ(Kon) ἄρiαi(Pt) |μινL(Pr)(A) κατiέκi|ηLεi(AorS)(Akt) σὺνi(Prp) |ἔντLεσiιi(D) |δαιδLαλiέi|οισLινL(Adj)(D)|
+(418) sondern dann ihn verbrannte mit den|Geräten kunst|vollen
+(418) but then him burned with arms curiously|wrought
+(419) ἠδLʼ(Kon) ἐπiὶi(Prp) |σῆμLʼ(A) ἔχiεi|ενL(Imp)(Akt)· περiὶi(Prp) |δὲL(Pt) πτελiέi|αςL(A) ἐφiύτi|ευσLανL(AorS)(Akt)|
+(419) und auf Grab|hügel schüttete· rings|um aber Pappeln pflanzten
+(419) and upon tomb heaped· around but elms they|planted
+(420) νύμφLαιi(N) ὀρi|εστLιiάδi|εςL(Adj)(N) κοῦρL|αιL(N) Διiὸςi(G) |αἰγLιiόχi|οιLοL(Adj)(G).|
+(420) Nymphen berg|ländische Mädchen des|Zeus Ägis|tragenden.
+(420) nymphs mountain|dwelling maidens of|Zeus aegis|bearing.
+(421) οἳL(Pr)(N) δέi(Pt) μοιi(Pr)(D) |ἑπτLὰi(Adj)(N) κασi|ίγνLητL|οιL(N) ἔσiανi(Imp)(Akt) |ἐνL(Prp) μεγiάρi|οισLινL(D)|
+(421) die aber mir sieben Brüder waren in den|Hallen
+(421) who but to|me seven brothers were in halls
+(422) οἳL(Pr)(N) μὲνL(Pt) |πάντLεςi(Adj)(N) ἰi|ῷL(Adj)(D) κίiονi(Imp)(Akt) |ἤμLατiιi(D) |ἌLϊδiοςi(G) |εἴσLωL(Adv)·|
+(422) die zwar alle an|einem gingen Tag des|Hades hinein·
+(422) who indeed all on|one went day of|Hades within·
+(423) πάντLαςL(Adj)(A) |γὰρL(Pt) κατiέπi|εφνLεi(Per)(Akt) ποδi|άρκLηςL(Adj)(N) |δῖLοςi(Adj)(N) Ἀχi|ιλλLεὺςL(N)|
+(423) alle denn hat|getötet schnell|füßiger göttlich|er Achilleus
+(423) all for slew swift|footed godlike Achilles
+(424) βουσLὶνi(D) ἐπiʼ(Prp) |εἰλLιπiόδi|εσσLιi(Adj)(D) καὶi(Kon) |ἀργLεννL|ῇςL(Adj)(D) ὀiΐi|εσσLιL(D).|
+(424) bei|den|Rindern an rund|schrittigen und schnee|weißen Schafen.
+(424) with|cows upon rolling|footed and white sheep.
+(425) μητLέρiαi(A) |δʼ(Pt), ἣL(Pr)(N) βασiίλi|ευLενi(Imp)(Akt) ὑπi|ὸL(Prp) Πλάκiῳi(D) |ὑλLηL|έσσLῃL(Adj)(D),|
+(425) die|Mutter aber, die herrschte unter Plakos wald|reicher,
+(425) mother but, who was|queen under Placus wooded,
+(426) τὴνL(Pr)(A) ἐπiεὶi(Kon) |ἂρL(Pt) δεῦρLʼ(Adv) |ἤγLαγiʼ(AorS)(Akt) ἅμiʼ(Prp) |ἄλλLοισL|ιL(Adj)(D) κτεiάτi|εσσLινL(D),|
+(426) diese als ja hierher führte samt anderen Schätzen,
+(426) her since then hither led with other possessions,
+(427) ἂψL(Adv) ὅi(Pr)(N) γεi(Pt) |τὴνL(Pr)(A) ἀπiέλi|υσLεi(AorS)(Akt) λαβi|ὼνL(AorS)(Akt)(N) ἀπiερi|είσLιiʼ(Adj)(A) ἄπi|οινLαL(A),|
+(427) wieder dieser ja sie ließ|frei genommen|habend un|zählige Löse|gelder,
+(427) back who indeed her released having|taken countless ransom|gifts,
+(428) πατρLὸςL(G) |δʼ(Pt) ἐνL(Prp) μεγiάρi|οισLιi(D) βάλiʼ(AorS)(Akt) |ἌρτLεμiιςi(N) |ἰLοχiέi|αιρLαL(Adj)(N).|
+(428) des|Vaters aber in den|Hallen traf Artemis Pfeil|schützin.
+(428) of|father but in halls struck Artemis arrow|pouring.
+(429) ἝκτLορi(V) ἀτi|ὰρL(Kon) σύi(Pr)(N) μοίi(Pr)(D) |ἐσσLιi(Prä)(Akt) πατi|ὴρL(N) καὶL(Kon) |πότνLιiαi(Adj)(N) |μήτLηρL(N)|
+(429) Hektor doch du mir bist Vater und ehrwürdige Mutter
+(429) Hector but you to|me are father and revered mother
+(430) ἠδLὲi(Kon) κασi|ίγνLητL|οςL(N), σὺi(Pr)(N) δέi(Kon) |μοιL(Pr)(D) θαλiερi|ὸςL(Adj)(N) παρiακi|οίτLηςL(N)·|
+(430) und Bruder, du aber mir kräftiger Bett|genosse·
+(430) and brother, you but to|me stalwart bedfellow·
+(431) ἀλλLʼ(Kon) ἄγiεi(Prä)(Akt)(Imv) |νῦνL(Adv) ἐλiέi|αιρLεi(Aor)(Akt)(Imv) καὶi(Kon) |αὐτLοῦL(Adv) |μίμνLʼ(Prä)(Akt)(Imv) ἐπiὶi(Prp) |πύργLῳL(D),|
+(431) sondern komm jetzt erbarme|dich und hier verharre auf dem|Turm,
+(431) but come now pity and here stay upon tower,
+(432) μὴL(Pt) παῖδLʼ(A) |ὀρφLανiικi|ὸνL(Adj)(A) θήL|ῃςL(Aor)(M/P)(Knj) χήρL|ηνL(Adj)(A) τεi(Pt) γυνi|αῖκLαL(A)·|
+(432) nicht das|Kind zum|Waisen machest zur|Witwe und die|Frau·
+(432) do|not child orphaned make widowed and woman·
+(433) λαLὸνL(A) |δὲL(Pt) στῆσL|ονL(AorS)(Akt)(Imv) παρiʼ(Prp) ἐρi|ινLεiόνi(A), |ἔνθLαi(Adv) μάλi|ιστLαL(Adv)(Sup)|
+(433) das|Volk aber stelle|auf an die|Feige, wo am|meisten
+(433) people but set beside wild|fig|tree, there most
+(434) ἀμβLατiόςi(Adj)(N) |ἐστLιi(Prä)(Akt) πόλi|ιςL(N) καὶi(Kon) ἐπi|ίδρLομiονi(Adj)(N) |ἔπλLετiοi(Imp)(M/P) |τεῖχLοςL(N).|
+(434) besteig|bar ist die|Stadt und über|lauf|bar war|geworden die|Mauer.
+(434) scalable is city and assaultable was wall.
+(435) τρὶςL(Adv) γὰρL(Pt) |τῇL(Pr)(D) γʼ(Pt) ἐλθL|όντLεςi(AorS)(Akt)(N) ἐπi|ειρLήσL|ανθLʼ(AorS)(M/P) οἱi(Pr)(N) ἄρi|ιστLοιL(Adj)(N)|
+(435) dreimal denn dort ja gekommen|seiend versuchten die Besten
+(435) thrice for there indeed having|come made|trial the best
+(436) ἀμφLʼ(Prp) ΑἴL|αντLεi(Du)(A) δύi|ωL(Adj)(Du)(A) καὶi(Kon) ἀγi|ακλLυτiὸνi(Adj)(A) |ἸδLομiενi|ῆLαL(A)|
+(436) um die|Aiante zwei und ruhm|reichen Idomeneus
+(436) about Ajaxes two and very|glorious Idomeneus
+(437) ἠδLʼ(Kon) ἀμφLʼ(Prp) |ἈτρLεiΐδi|αςL(A) καὶL(Kon) |ΤυδLέiοςi(G) |ἄλκLιμiονi(Adj)(A) |υἱLόνL(A)·|
+(437) und um Atre|iden und des|Tydeus tapferen Sohn·
+(437) and about Atreidae and of|Tydeus valiant son·
+(438) ἤL(Kon) πούL(Adv) |τίςL(Pr)(N) σφινi(Pr)(D) ἔνi|ισπLεi(AorS)(Akt) θεi|οπρLοπiίi|ωνL(G) ἐiῢi(Adv) |εἰδLώςL(Per)(Akt)(N),|
+(438) oder wohl|irgendwo jemand ihnen sagte|vorher von|Götter|sprüchen gut wissend,
+(438) or perhaps someone to|them told of|prophecies well knowing,
+(439) ἤL(Kon) νυi(Pt) καὶi(Kon) |αὐτLῶνL(Pr)(G) |θυμLὸςi(N) ἐπi|οτρLύνL|ειL(Prä)(Akt) καὶi(Kon) ἀνi|ώγLειL(Prä)(Akt).|
+(439) oder ja auch von|ihnen Sinn treibt|an und befiehlt.
+(439) or now and of|them spirit urges|on and bids.
+(440) τὴνL(Pr)(A) δʼ(Pt) αὖτL|εL(Adv) προσiέi|ειπLεi(AorS)(Akt) μέγi|αςL(Adj)(N) κορiυθi|αίLολiοςi(Adj)(N) |ἝκτLωρL(N)·|
+(440) die aber wiederum sprach|an großer helmbusch|wogender Hektor·
+(440) her but again addressed great flashing|helmed Hector·
+(441) ἦL(Pt) καὶi(Kon) ἐμi|οὶL(Pr)(D) τάδiεi(Pr)(A) |πάντLαi(Pr)(A) μέλi|ειL(Prä)(Akt) γύνiαιi(V)· |ἀλλLὰi(Kon) μάλiʼ(Adv) |αἰνLῶςL(Adv)|
+(441) ja auch mir dies|hier alles liegt|am|Herzen Frau· aber sehr schrecklich
+(441) indeed and to|me these all is|a|care woman· but very terribly
+(442) αἰδLέiομi|αιL(Prä)(M/P) ΤρῶL|αςL(A) καὶL(Kon) |ΤρῳLάδiαςi(A) |ἑλκLεσiιπi|έπλLουςL(Adj)(A),|
+(442) ich|scheue|mich die|Troer und die|Troerinnen schlepp|Gewand|tragende,
+(442) I|am|ashamed Trojans and Trojan|women trailing|robed,
+(443) αἴL(Kon) κεi(Pt) κακi|ὸςL(Adj)(N) ὣςL(Adv) |νόσφLινi(Adv) ἀλi|υσκLάζL|ωL(Prä)(Akt) πολiέμi|οιLοL(G)·|
+(443) wenn wohl schlecht so abseits meide|ich des|Krieges·
+(443) if at|least bad thus apart I|avoid of|war·
+(444) οὐδLέi(Kon) μεi(Pr)(A) |θυμLὸςi(N) ἄνi|ωγLενi(Per)(Akt), ἐπi|εὶL(Kon) μάθiονi(AorS)(Akt) |ἔμμLενiαιi(Prä)(M/P)(Inf) |ἐσθλLὸςL(Adj)(N)|
+(444) auch|nicht mich Sinn hat|befohlen, weil lernte|ich zu|sein tüchtig
+(444) nor me spirit has|urged, since I|learned to|be noble
+(445) αἰLεὶL(Adv) |καὶL(Kon) πρώτL|οισLιi(Adj)(D) μετi|ὰL(Prp) ΤρώL|εσσLιi(D) μάχi|εσθLαιL(Prä)(M/P)(Inf)|
+(445) immer und den|Ersten mitten|unter den|Troern zu|kämpfen
+(445) always and with|the|foremost among Trojans to|fight
+(446) ἀρνLύμiενi|οςL(Prä)(M/P)(N) πατρL|όςL(G) τεi(Pt) μέγi|αL(Adj)(A) κλέiοςi(A) |ἠδLʼ(Kon) ἐμiὸνi(Adj)(A) |αὐτLοῦL(Adv).|
+(446) erringend des|Vaters und großen Ruhm und meinen selbst.
+(446) winning of|father and great glory and my my|self.
+(447) εὖL(Adv) γὰρi(Pt) ἐγi|ὼL(Pr)(N) τόδiεi(Pr)(A) |οἶδLαi(Per)(Akt) κατi|ὰL(Prp) φρένiαi(A) |καὶL(Kon) κατiὰi(Prp) |θυμLόνL(A)·|
+(447) gut denn ich dieses weiß|ich in Sinn und in Mut·
+(447) well for I this I|know according|to mind and according|to spirit·
+(448) ἔσσLετiαιi(Fu)(M/P) |ἦμLαρi(N) ὅτiʼ(Kon) |ἄνL(Pt) ποτiʼ(Pt) ὀλi|ώλLῃL(Per)(Akt)(Knj) |ἼλLιiοςi(N) |ἱρLὴL(Adj)(N)|
+(448) es|wird|sein Tag wenn wohl einmal zugrunde|gehe Ilion heilig
+(448) there|will|be day when at|least at|some|time may|have|perished Ilion holy
+(449) καὶL(Kon) Πρίiαμi|οςL(N) καὶL(Kon) |λαLὸςi(N) ἐi|ϋμμLελiίi|ωL(Adj)(D) Πριiάμi|οιLοL(G).|
+(449) und Priamos und Volk gut|lanzen|bewaffnetem des|Priamos.
+(449) and Priam and people spear|famed of|Priam.
+(450) ἀλλLʼ(Kon) οὔL(Pt) |μοιL(Pr)(D) ΤρώL|ωνL(G) τόσσL|ονL(Adv) μέλiειi(Prä)(Akt) |ἄλγLοςi(N) ὀπi|ίσσLωL(Adv),|
+(450) aber nicht mir der|Troer so|sehr kümmert Schmerz später,
+(450) but not to|me of|Trojans so|much is|a|care pain afterwards,
+(451) οὔτLʼ(Kon) αὐτL|ῆςL(Pr)(G) Ἑκiάβi|ηςL(G) οὔτL|εL(Kon) Πριiάμi|οιLοi(G) ἄνi|ακτLοςL(G)|
+(451) weder selbst der|Hekabe noch des|Priamos Herrschers
+(451) nor herself of|Hecabe nor of|Priam lord
+(452) οὔτLεi(Kon) κασi|ιγνLήτL|ωνL(G), οἵL(Pr)(N) |κενL(Pt) πολiέi|εςL(Adj)(N) τεi(Pt) καὶi(Kon) |ἐσθλLοὶL(Adj)(N)|
+(452) noch der|Brüder, die wohl viele und auch tüchtige
+(452) nor of|brothers, who at|least many and and good
+(453) ἐνL(Prp) κονiίi|ῃσLιi(D) πέσi|οιLενi(Aor)(Akt)(Op) ὑπiʼ(Prp) |ἀνδρLάσiιi(D) |δυσμLενiέi|εσσLινL(Adj)(D),|
+(453) in den|Stäuben würden|fallen unter Männern feind|gesinnten,
+(453) in dust might|fall under men hostile,
+(454) ὅσσLονL(Adv) |σεῦL(Pr)(G), ὅτiεi(Kon) |κένL(Pt) τιςi(Pr)(N) Ἀχi|αιLῶνL(G) |χαλκLοχiιτi|ώνLωνL(Adj)(G)|
+(454) so|viel deiner, wenn wohl einer der|Achaier bronze|gewandeten
+(454) as|much of|you, when at|least someone of|Achaeans bronze|clad
+(455) δακρLυiόi|εσσLανi(Adj)(A) ἄγi|ητLαιi(Prä)(M/P)(Knj) ἐλi|εύθLερiονi(Adj)(A) |ἦμLαρi(A) ἀπi|ούρLαςL(AorS)(Akt)(N)·|
+(455) tränen|reiche führe freien Tag geraubt|habend·
+(455) tearful leads|away free day having|taken|away·
+(456) καίL(Kon) κενi(Pt) ἐνi(Prp) |ἌργLειi(D) ἐi|οῦσLαi(Prä)(M/P)(N) πρὸςi(Prp) |ἄλλLηςL(Adj)(G) |ἱστLὸνi(A) ὑφi|αίνLοιςL(Prä)(Akt)(Op),|
+(456) und wohl in Argos seiend bei einer|anderen Webstuhl würdest|weben,
+(456) and at|least in Argos being by of|another loom you|would|weave,
+(457) καίL(Kon) κενi(Pt) ὕδi|ωρL(A) φορiέi|οιςL(Prä)(Akt)(Op) ΜεσσL|ηLΐδiοςi(Adj)(G) |ἢL(Kon) Ὑπiερi|είLηςL(G)|
+(457) und wohl Wasser würdest|tragen von|Messeis oder von|Hypereia
+(457) and at|least water you|would|carry of|Messeïs or of|Hypereia
+(458) πόλλLʼ(Adj)(A) ἀiεκi|αζLομiένi|ηL(Prä)(M/P)(N), κρατiερi|ὴL(Adj)(N) δʼ(Pt) ἐπiικi|είσLετiʼ(Fu)(M/P) ἀνi|άγκLηL(N)·|
+(458) viel wider|willens|seiend, starke aber wird|auferliegen Not·
+(458) much being|unwilling, strong but will|lie|upon necessity·
+(459) καίL(Kon) ποτiέi(Adv) |τιςL(Pr)(N) εἴπL|ῃσLινi(AorS)(Akt)(Knj) ἰδi|ὼνL(AorS)(Akt)(N) κατiὰi(Prp) |δάκρLυi(A) χέi|ουσLανL(Prä)(Akt)(A)·|
+(459) und einmal jemand möge|sagen gesehen|habend über Träne vergießend·
+(459) and at|some|time someone may|say having|seen down tear pouring·
+(460) ἝκτLορiοςi(G) |ἥδLεi(Pr)(N) γυνi|ὴL(N) ὃςi(Pr)(N) ἀρi|ιστLεύL|εσκLεi(Imp)(Akt) μάχi|εσθLαιL(Prä)(M/P)(Inf)|
+(460) des|Hektors diese Frau der pflegte|auszuzeichnen zu|kämpfen
+(460) of|Hector this woman who used|to|excel to|fight
+(461) ΤρώLωνL(G) |ἱππLοδiάμi|ωνL(Adj)(G) ὅτiεi(Kon) |ἼλLιiονi(A) |ἀμφLεμiάχi|οντLοL(Imp)(M/P).|
+(461) der|Troer Pferde|bändiger als Ilion um|kämpften|sie.
+(461) of|Trojans horse|taming when Ilion were|fighting|around.
+(462) ὥςL(Adv) ποτiέi(Adv) |τιςL(Pr)(N) ἐρiέi|ειL(Fu)(Akt)· σοὶL(Pr)(D) |δʼ(Pt) αὖL(Adv) νέiονi(Adj)(N) |ἔσσLετiαιi(Fu)(M/P) |ἄλγLοςL(N)|
+(462) so einmal jemand wird|sagen· dir aber wieder neu wird|sein Schmerz
+(462) thus at|some|time someone will|say· to|you but again new there|will|be pain
+(463) χήτLεiϊi(D) |τοιLοῦδLʼ(Pr)(G) |ἀνδρLὸςi(G) ἀμi|ύνLεινL(Prä)(Akt)(Inf) |δούλLιiονi(Adj)(A) |ἦμLαρL(A).|
+(463) an|Mangel eines|solchen Mannes abzuwehren sklavischen Tag.
+(463) in|bereavement of|such of|a|man to|ward|off slavish day.
+(464) ἀλλLάi(Kon) μεi(Pr)(A) |τεθνLηL|ῶτLαi(Per)(M/P)(A) χυτi|ὴL(Adj)(N) κατiὰi(Prp) |γαῖLαi(N) καλi|ύπτLοιL(Prä)(Akt)(Op)|
+(464) aber mich gestorben|seiend geschüttete hinab Erde möchte|bedecken
+(464) but me having|died heaped down earth might|cover
+(465) πρίνL(Kon) γέi(Pt) τιi(Pr)(A) |σῆςL(Adj)(G) τεi(Pt) βοi|ῆςL(G) σοῦL(Pr)(G) |θʼ(Pt) ἑλκLηθμL|οῖLοi(G) πυθi|έσθLαιL(Aor)(Med)(Inf).|
+(465) ehe doch etwas deines und Rufes deines und Zerrens zu|erfahren.
+(465) before at|least anything of|your and cry of|you and of|dragging to|learn.
+(466) ὣςL(Adv) εἰπL|ὼνL(AorS)(Akt)(N) οὗL(Pr)(G) |παιδLὸςi(G) ὀρi|έξLατiοi(Aor)(Med) |φαίδLιμiοςi(Adj)(N) |ἝκτLωρL(N)·|
+(466) so gesagt|habend seines Kindes streckte|aus strahlender Hektor·
+(466) thus having|said of|his of|son reached|out glorious Hector·
+(467) ἂψL(Adv) δʼ(Pt) ὃi(Pr)(N) πάi|ϊςL(N) πρὸςL(Prp) |κόλπLονi(A) ἐi|ϋζLώνL|οιLοi(Adj)(G) τιθi|ήνLηςL(G)|
+(467) wieder aber der Knabe zu Schoß der|gurt|reichen Amme
+(467) back but he child toward bosom of|well|girdled of|nurse
+(468) ἐκλLίνθL|ηL(Aor)(Pas) ἰiάχi|ωνL(Prä)(Akt)(N) πατρL|ὸςL(G) φίλiουi(Adj)(G) |ὄψLινi(A) ἀτi|υχθLεὶςL(Aor)(Pas)(N)|
+(468) neigte|sich schreiend des|Vaters lieben Anblick erschreckt|worden
+(468) was|bent|back crying|out of|father dear sight having|been|startled
+(469) ταρβLήσL|αςL(Aor)(Akt)(N) χαλκL|όνL(A) τεi(Pt) ἰδi|ὲL(Kon) λόφiονi(A) |ἱππLιiοχi|αίτLηνL(Adj)(A),|
+(469) erschrocken|seiend Erz und und Helmbusch pferde|haarigen,
+(469) having|feared bronze and and crest horse|haired,
+(470) δεινLὸνi(Adj)(A) ἀπiʼ(Prp) |ἀκρLοτiάτi|ηςL(Adj)(G)(Sup) κόρiυθi|οςL(G) νεύL|οντLαi(Prä)(Akt)(A) νοi|ήσLαςL(AorS)(Akt)(N).|
+(470) schrecklich von ober|sten Helmes nickend bemerkt|habend.
+(470) terrible from of|highest of|helmet nodding having|perceived.
+(471) ἐκL(Prp) δʼ(Pt) ἐγiέλi|ασσLεi(Aor)(Akt) πατi|ήρL(N) τεi(Pt) φίλi|οςL(Adj)(N) καὶL(Kon) |πότνLιiαi(Adj)(N) |μήτLηρL(N)·|
+(471) aus aber lachte Vater und lieber und ehrwürdige Mutter·
+(471) out but laughed father and dear and revered mother·
+(472) αὐτLίκiʼ(Adv) ἀπi|ὸL(Prp) κρατL|ὸςL(G) κόρiυθiʼ(A) |εἵλLετiοi(Aor)(M/P) |φαίδLιμiοςi(Adj)(N) |ἝκτLωρL(N),|
+(472) sofort von Haupt Helm nahm|ab strahlender Hektor,
+(472) straightway from of|head helmet took|for|himself glorious Hector,
+(473) καὶL(Kon) τὴνL(Pr)(A) |μὲνL(Pt) κατiέθi|ηκLενi(Aor)(Akt) ἐπi|ὶL(Prp) χθονiὶi(D) |παμφLανiόi|ωσLανL(Prä)(M/P)(A)·|
+(473) und sie zwar setzte|hin auf Erde all|leuchtend·
+(473) and it indeed placed upon earth all|shining·
+(474) αὐτLὰρi(Kon) ὅi(Pr)(N) |γʼ(Pt) ὃνL(Pr)(A) φίλiονi(Adj)(A) |υἱLὸνi(A) ἐπi|εὶL(Kon) κύσiεi(AorS)(Akt) |πῆλLέi(AorS)(Akt) τεi(Pt) |χερσLὶνL(D)|
+(474) aber der ja seinen lieben Sohn als küsste wiegte und mit|Händen
+(474) but he indeed his dear son when kissed swung and with|hands
+(475) εἶπLεi(AorS)(Akt) δʼ(Pt) ἐπi|ευξLάμiενi|οςL(AorS)(M/P)(N) Διiίi(D) |τʼ(Pt) ἄλλLοισL|ίνL(Adj)(D) τεi(Pt) θεi|οῖσLιL(D)·|
+(475) sprach aber gebetet|habend dem|Zeus und anderen und Göttern·
+(475) said but having|prayed to|Zeus and other and to|gods·
+(476) ΖεῦL(V) ἄλλL|οιL(Adj)(N) τεi(Pt) θεi|οὶL(N) δότiεi(AorS)(Akt)(Imv) |δὴL(Pt) καὶL(Kon) |τόνδLεi(Pr)(A) γενi|έσθLαιL(AorS)(Med)(Inf)|
+(476) Zeus andere und Götter gebt ja auch diesen|hier zu|werden
+(476) Zeus other and gods give indeed and this to|become
+(477) παῖδLʼ(A) ἐμiὸνi(Adj)(A) |ὡςL(Kon) καὶi(Kon) ἐγi|ώL(Pr)(N) περi(Pt) ἀρi|ιπρLεπiέi|αL(Adj)(A) ΤρώL|εσσLινL(D),|
+(477) Kind mein wie auch ich gerade sehr|berühmt bei|den|Troern,
+(477) child my as and I indeed very|notable to|Trojans,
+(478) ὧδLεi(Adv) βίi|ηνL(A) τʼ(Pt) ἀγiαθi|όνL(Adj)(A), καὶL(Kon) |ἸλLίiουi(G) |ἶφLιi(Adv) ἀνi|άσσLεινL(Prä)(Akt)(Inf)·|
+(478) so an|Kraft und tüchtig, und von|Ilion mit|Macht herrschen·
+(478) thus force and good, and of|Ilion by|might to|rule·
+(479) καίL(Kon) ποτiέi(Adv) |τιςL(Pr)(N) εἴπL|οιL(Aor)(Akt)(Op) πατρL|όςL(G) γʼ(Pt) ὅδiεi(Pr)(N) |πολλLὸνi(Adv) ἀμi|είνLωνL(Adj)(Kmp)(N)|
+(479) und einmal jemand möchte|sagen des|Vaters ja dieser viel besser
+(479) and at|some|time someone may|say than|father indeed this much better
+(480) ἐκL(Prp) πολiέμi|ουL(G) ἀνiιi|όντLαi(Prä)(Akt)(A)· φέρi|οιL(Prä)(Akt)(Op) δʼ(Pt) ἔνiαρi|αL(A) βροτiόi|εντLαL(Adj)(A)|
+(480) aus dem|Krieg herauf|kommend· möchte|tragen aber Beute blutige
+(480) out|of war coming|up· might|bear but spoils blood|stained
+(481) κτείνLαςL(AorS)(Akt)(N) |δήLϊiονi(Adj)(A) |ἄνδρLαi(A), χαρi|είLηL(Aor)(Pas)(Op) |δὲL(Pt) φρένiαi(A) |μήτLηρL(N).|
+(481) getötet|habend feind|lichen Mann, würde|sich|freuen aber Herz Mutter.
+(481) having|slain foe man, may|rejoice but heart mother.
+(482) ὣςL(Adv) εἰπL|ὼνL(AorS)(Akt)(N) ἀλiόχi|οιLοi(G) φίλi|ηςL(Adj)(G) ἐνL(Prp) |χερσLὶνi(D) ἔθi|ηκLεL(AorS)(Akt)|
+(482) so gesagt|habend der|Gattin lieben in die|Hände legte|er
+(482) thus having|said of|wife dear in hands placed
+(483) παῖδLʼ(A) ἑiόνi(Adj)(A)· |ἣL(Pr)(N) δʼ(Pt) ἄρiαi(Pt) |μινL(Pr)(A) κηL|ώδLεiϊi(Adj)(D) |δέξLατiοi(Aor)(M/P) |κόλπLῳL(D)|
+(483) Kind sein|eigenes· sie aber dann ihn duft|enden nahm|auf Schoß
+(483) child his|own· she but then him fragrant received in|bosom
+(484) δακρLυiόi|ενL(Adj)(A) γελiάσi|ασLαi(AorS)(Akt)(N)· πόσi|ιςL(N) δʼ(Pt) ἐλiέi|ησLεi(Aor)(Akt) νοi|ήσLαςL(AorS)(Akt)(N),|
+(484) tränen|reich gelacht|habend· Gatte aber erbarmte|sich bemerkt|habend,
+(484) tearful having|smiled· husband but pitied having|perceived,
+(485) χειρLίi(D) τέi(Pt) |μινL(Pr)(A) κατiέρi|εξLενi(Aor)(Akt) ἔπi|οςL(A) τʼ(Pt) ἔφiατiʼ(Imp)(M/P) |ἔκL(Prp) τʼ(Pt) ὀνiόμi|αζLεL(Imp)(Akt)·|
+(485) mit|der|Hand und ihn streichelte|nieder Wort und sprach|er aus und nannte|beim|Namen·
+(485) with|hand and him caressed word and was|speaking out and was|naming·
+(486) δαιμLονiίi|ηL(Adj)(V) μήL(Pt) |μοίL(Pr)(D) τιi(Pr)(A) λίi|ηνL(Adv) ἀκiαχi|ίζLεiοi(Prä)(M/P)(Imv) |θυμLῷL(D)·|
+(486) Unglückliche nicht mir etwas allzu gräme|dich im|Sinn·
+(486) strange|woman not for|me anything too do|grieve in|heart·
+(487) οὐL(Pt) γάρL(Pt) |τίςL(Pr)(N) μʼ(Pr)(A) ὑπiὲρi(Prp) |αἶσLανi(A) ἀνi|ὴρL(N) Ἄiϊδi|ιL(D) προiϊi|άψLειL(Fu)(Akt)·|
+(487) nicht denn irgend|wer mich über Anteil|Schicksal Mann zum|Hades vorschicken|wird·
+(487) not for anyone me beyond fate man to|Hades will|send|forth·
+(488) μοῖρLανL(A) |δʼ(Pt) οὔL(Pt) τινiάi(Pr)(A) |φημLιi(Prä)(Akt) πεφi|υγμLένiονi(Per)(M/P)(A) |ἔμμLενiαιi(Prä)(M/P)(Inf) |ἀνδρLῶνL(G),|
+(488) Schicksals|Anteil aber nicht irgendeinen behaupte|ich entronnen|seiend zu|sein der|Männer,
+(488) fate but not anyone I|say having|fled to|be of|men,
+(489) οὐL(Pt) κακiὸνi(Adj)(A) |οὐδLὲi(Kon) μὲνi(Pt) |ἐσθλLόνi(Adj)(A), ἐπi|ὴνL(Kon) τὰL(Art)(A) |πρῶτLαi(Adj)(Sup)(A) γένi|ητLαιL(Aor)(M/P)(Knj).|
+(489) weder schlechtes noch aber gutes, wenn|immer die ersten entsteht.
+(489) not bad nor indeed good, whenever the first may|become.
+(490) ἀλλLʼ(Kon) εἰςL(Prp) |οἶκLονi(A) ἰi|οῦσLαi(Prä)(M/P)(N) τὰi(Art)(A) |σʼ(Pr)(A) αὐτLῆςL(Pr)(G) |ἔργLαi(A) κόμi|ιζLεL(Prä)(Akt)(Imv)|
+(490) aber in Haus gehend die deinen eigenen Arbeiten verwalte
+(490) but into house going the your of|your|self works tend
+(491) ἱστLόνL(A) |τʼ(Pt) ἠλLακiάτi|ηνL(A) τεi(Pt), καὶi(Kon) |ἀμφLιπiόλi|οισLιi(D) κέλi|ευLεL(Prä)(Akt)(Imv)|
+(491) Webstuhl und Spindel und, und den|Mägden befiehl
+(491) loom and distaff and, and to|handmaids command
+(492) ἔργLονi(A) ἐπi|οίχLεσθL|αιL(Prä)(M/P)(Inf)· πόλiεμi|οςL(N) δʼ(Pt) ἄνδρL|εσσLιi(D) μελi|ήσLειL(Fu)(Akt)|
+(492) Arbeit nachzugehen· Krieg aber den|Männern wird|am|Herzen|liegen
+(492) work to|go|about· war but for|men will|be|a|care
+(493) πᾶσLιi(Adj)(D), μάλi|ιστLαi(Adv)(Sup) δʼ(Pt) ἐμi|οίL(Pr)(D), τοὶL(Pr)(N) |ἸλLίiῳi(D) |ἐγγLεγiάi|ασLινL(Per)(Akt).|
+(493) allen, am|meisten aber mir, die in|Ilion geboren|sind.
+(493) to|all, most but to|me, who in|Ilion have|been|born.
+(494) ὣςL(Adv) ἄρiαi(Pt) |φωνLήσL|αςL(AorS)(Akt)(N) κόρiυθiʼ(A) |εἵλLετiοi(Aor)(M/P) |φαίδLιμiοςi(Adj)(N) |ἝκτLωρL(N)|
+(494) so dann gesprochen|habend Helm nahm|an strahlender Hektor
+(494) thus then having|spoken helmet took glorious Hector
+(495) ἵππLουρL|ινL(Adj)(A)· ἄλiοχi|οςL(N) δὲi(Pt) φίλi|ηL(Adj)(N) οἶκL|ονδLεi(Adv) βεβi|ήκLειL(Plq)(Akt)|
+(495) pferde|haarigen· Gattin aber liebe heim|wärts war|gegangen
+(495) horse|tailed· wife but dear homeward had|gone
+(496) ἐντρLοπiαλi|ιζLομiένi|ηL(Prä)(M/P)(N), θαλiερi|ὸνL(Adj)(A) κατiὰi(Prp) |δάκρLυi(A) χέi|ουσLαL(Prä)(Akt)(N).|
+(496) sich|hin|und|her|wendend, kräftige herab Träne gießend.
+(496) turning|back, abundant down tear pouring.
+(497) αἶψLαi(Adv) δʼ(Pt) ἔπi|ειθLʼ(Adv) ἵκL|ανLεi(Imp)(Akt) δόμi|ουςL(A) εὖL(Adv) |ναιLετiάi|οντLαςL(Prä)(Akt)(A)|
+(497) schnell aber dann gelangte|sie Häuser gut bewohnt|seiende
+(497) quickly but then came houses well inhabited
+(498) ἝκτLορiοςi(G) |ἀνδρLοφiόνi|οιLοi(Adj)(G), κιχi|ήσLατiοi(Aor)(M/P) |δʼ(Pt) ἔνδLοθiιi(Adv) |πολλLὰςL(Adj)(A)|
+(498) des|Hektors menschen|tötenden, traf|an aber innen viele
+(498) of|Hector man|slaying, found but within many
+(499) ἀμφLιπiόλi|ουςL(A), τῇσL|ινL(Pr)(D) δὲi(Pt) γόi|ονL(A) πάσL|ῃσLινi(Adj)(D) ἐνi|ῶρσLενL(Aor)(Akt).|
+(499) Dienerinnen, unter|denen aber Klage allen erregte.
+(499) handmaids, to|them but lament to|all he|aroused.
+(500) αἳL(Pr)(N) μὲνi(Pt) ἔτi|ιL(Adv) ζωL|ὸνL(Adj)(A) γόiονi(A) |ἝκτLορiαi(A) |ᾧL(Pr)(D) ἐνiὶi(Prp) |οἴκLῳL(D)·|
+(500) die zwar noch lebend Klage Hektor dem in Haus·
+(500) who indeed still alive lament Hector in|his in house·
+(501) οὐL(Pt) γάρL(Pt) |μινL(Pr)(A) ἔτiʼ(Adv) ἔφi|αντLοi(Imp)(M/P) ὑπi|ότρLοπiονi(Adj)(A) |ἐκL(Prp) πολiέμi|οιLοL(G)|
+(501) nicht denn ihn noch meinten|sie zurück|kehrend aus Krieg
+(501) not for him yet they|thought returning from war
+(502) ἵξLεσθL|αιL(Fu)(Med)(Inf) προφiυγi|όντLαi(AorS)(Akt)(A) μένi|οςL(A) καὶL(Kon) |χεῖρLαςi(A) Ἀχi|αιLῶνL(G).|
+(502) zu|gelangen entflohen|habend Kraft und Hände der|Achaier.
+(502) to|come having|escaped might and hands of|Achaeans.
+(503) οὐδLὲi(Kon) Πάρi|ιςL(N) δήθL|υνLενi(Imp)(Akt) ἐνi(Prp) |ὑψLηλL|οῖσLιi(Adj)(D) δόμi|οισLινL(D),|
+(503) auch|nicht Paris zögerte in hochen Häusern,
+(503) nor Paris tarried in high halls,
+(504) ἀλλLʼ(Kon) ὅi(Pr)(N) γʼ(Pt), ἐπi|εὶL(Kon) κατiέδi|υL(AorS)(Akt) κλυτiὰi(Adj)(A) |τεύχLεiαi(A) |ποικLίλiαi(Adj)(A) |χαλκLῷL(D),|
+(504) aber der ja, als anzog berühmte Rüstungen bunte mit|Bronze,
+(504) but he then, when put|on famous arms variegated with|bronze,
+(505) σεύLατiʼ(Aor)(M/P) ἔπi|ειτLʼ(Adv) ἀνiὰi(Prp) |ἄστLυi(A) ποσi|ὶL(D) κραιπνL|οῖσLιi(Adj)(D) πεπi|οιθLώςL(Per)(Akt)(N).|
+(505) stürzte darauf hin|auf Stadt mit|Füßen schnellen vertrauend.
+(505) rushed then through city with|feet nimble confident.
+(506) ὡςL(Kon) δʼ(Pt) ὅτiεi(Kon) |τιςL(Pr)(N) στατiὸςi(Adj)(N) |ἵππLοςi(N) ἀκi|οστLήσL|αςL(AorS)(Akt)(N) ἐπiὶi(Prp) |φάτνLῃL(D)|
+(506) wie aber als irgendwer stall|stehend Pferd satt|gefressen|habend an Krippe
+(506) as but when someone stall|fed horse having|fed at manger
+(507) δεσμLὸνi(A) ἀπi|ορρLήξL|αςL(AorS)(Akt)(N) θείL|ῃL(Prä)(Akt)(Knj) πεδiίi|οιLοi(G) κροi|αίνLωνL(Prä)(Akt)(N)|
+(507) Fessel ab|gerissen|habend läuft der|Ebene wiehernd
+(507) bond having|broken he|runs of|plain stamping
+(508) εἰLωθL|ὼςL(Per)(Akt)(N) λούL|εσθLαιi(Prä)(M/P)(Inf) ἐi|ϋρρLεῖL|οςL(Adj)(G) ποτiαμi|οῖLοL(G)|
+(508) gewöhnlich|seiend sich|zu|baden schön|strömenden des|Flusses
+(508) accustomed to|bathe fair|flowing of|river
+(509) κυδLιiόi|ωνL(Prä)(Akt)(N)· ὑψL|οῦL(Adv) δὲi(Pt) κάρi|ηL(A) ἔχiειi(Prä)(Akt), |ἀμφLὶi(Prp) δὲi(Pt) |χαῖτLαιL(N)|
+(509) sich|rühmend· hoch aber Haupt hält, um aber Locken
+(509) exulting· on|high but head he|holds, around but locks
+(510) ὤμLοιςL(D) |ἀLΐσσL|οντLαιi(Prä)(M/P)· ὃi(Pr)(N) |δʼ(Pt) ἀγλLαiΐi|ηφLιi(D) πεπi|οιθLὼςL(Per)(Akt)(N)|
+(510) auf|Schultern schnellen|um· der aber an|Pracht vertrauend
+(510) on|shoulders are|darting· he then in|splendor having|trusted
+(511) ῥίμφLάi(Adv) ἑi(Pr)(A) |γοῦνLαi(A) φέρi|ειL(Prä)(Akt) μετiάi(Prp) |τʼ(Pt) ἤθLεiαi(A) |καὶL(Kon) νομiὸνi(A) |ἵππLωνL(G)·|
+(511) rasch ihn Knie trägt nach und gewohnte|Orte und Weide der|Pferde·
+(511) swiftly him knees bears among and haunts and pasture of|horses·
+(512) ὣςL(Adv) υἱL|ὸςL(N) Πριiάμi|οιLοi(G) Πάρi|ιςL(N) κατiὰi(Prp) |ΠεργLάμiουi(G) |ἄκρLηςL(Adj)(G)|
+(512) so Sohn des|Priamos Paris hinab|von des|Pergamos Höhe
+(512) thus son of|Priam Paris down of|Pergamus of|peak
+(513) τεύχLεσiιi(D) |παμφLαίνL|ωνL(Prä)(Akt)(N) ὥςL(Kon) |τʼ(Pt) ἠλLέκτL|ωρL(N) ἐβiεβi|ήκLειL(Plq)(Akt)|
+(513) mit|Rüstungen all|leuchtend wie ja Sonne war|gegangen
+(513) in|arms all|shining as and sun had|gone
+(514) καγχLαλiόi|ωνL(Prä)(Akt)(N), ταχiέi|εςL(Adj)(N) δὲi(Pt) πόδi|εςL(N) φέρiονi(Imp)(Akt)· |αἶψLαi(Adv) δʼ(Pt) ἔπi|ειτLαL(Adv)|
+(514) schallend|lachend, schnelle aber Füße trugen· sogleich aber danach
+(514) laughing|aloud, swift but feet were|bearing· quickly then thereafter
+(515) ἝκτLορiαi(A) |δῖLονi(Adj)(A) ἔτi|ετμLενi(Aor)(Akt) ἀδi|ελφLεiὸνi(A) |εὖτLʼ(Kon) ἄρiʼ(Pt) ἔμi|ελλLεL(Imp)(Akt)|
+(515) Hektor göttlichen traf Bruder als ja im|Begriff|war
+(515) Hector godlike he|met brother when then was|about|to
+(516) στρέψLεσθLʼ(Fu)(M/P)(Inf) |ἐκL(Prp) χώρL|ηςL(G) ὅθiιi(Kon) |ᾗL(Pr)(D) ὀiάρi|ιζLεi(Imp)(Akt) γυνi|αικLίL(D).|
+(516) sich|zu|wenden aus Gegend wo mit|der plauderte Frau.
+(516) to|turn from of|field where with|her was|chatting woman.
+(517) τὸνL(Pr)(A) πρότiερi|οςL(Adj)(N) προσiέi|ειπLενi(AorS)(Akt) Ἀλi|έξLανδρL|οςL(N) θεiοi|ειδLήςL(Adj)(N)·|
+(517) den zuerst redete|an Alexandros gott|ähnlich·
+(517) him earlier addressed Alexandros godlike·
+(518) ἠθLεῖLʼ(V) |ἦL(Pt) μάλiαi(Adv) |δήL(Pt) σεi(Pr)(A) καὶi(Kon) |ἐσσLύμiενi|ονL(Prä)(M/P)(A) κατiερi|ύκLωL(Prä)(Akt)|
+(518) Freund ja sehr doch dich und eilend|seienden halte|ich|zurück
+(518) friend indeed very now you and rushing I|restrain
+(519) δηθLύνL|ωνL(Prä)(Akt)(N), οὐδLʼ(Kon) |ἦλθLονi(AorS)(Akt) ἐνi|αίσLιμiονi(Adj)(A) |ὡςL(Kon) ἐκiέλi|ευLεςL(Imp)(Akt)|
+(519) verzögernd, auch|nicht kam|ich gebührlich wie du|befahlst
+(519) delaying, nor came in|due|time as you|were|bidding
+(520) τὸνL(Pr)(A) δʼ(Pt) ἀπiαμi|ειβLόμiενi|οςL(Prä)(M/P)(N) προσiέφi|ηL(Imp)(Akt) κορiυθi|αίLολiοςi(Adj)(N) |ἝκτLωρL(N)·|
+(520) den aber erwidernd|seiend sprach|an helm|wogender Hektor·
+(520) him then answering he|spoke flashing|helmed Hector·
+(521) δαιμLόνiιiʼ(Adj)(V) |οὐκL(Pt) ἄνL(Pt) |τίςL(Pr)(N) τοιi(Pr)(D) ἀνi|ὴρL(N) ὃςi(Pr)(N) ἐνi|αίσLιμiοςi(Adj)(N) |εἴLηL(Prä)(M/P)(Op)|
+(521) du|Unglücklicher nicht wohl irgend|wer dir Mann der recht|gemäß wäre
+(521) strange|man not at|least anyone to|you man who proper might|be
+(522) ἔργLονi(A) ἀτi|ιμLήσL|ειLεi(Aor)(Akt)(Op) μάχi|ηςL(G), ἐπiεὶi(Kon) |ἄλκLιμiόςi(Adj)(N) |ἐσσLιL(Prä)(Akt)·|
+(522) Werk würde|verachten des|Kampfes, weil tapfer bist|du·
+(522) work would|dishonor of|battle, since valiant you|are·
+(523) ἀλλLὰi(Kon) ἑκi|ὼνL(Adj)(N) μεθiιi|εῖςL(Prä)(Akt) τεi(Pt) καὶi(Kon) |οὐκL(Pt) ἐθiέλi|ειςL(Prä)(Akt)· τὸi(Art)(N) δʼ(Pt) ἐμi|ὸνL(Adj)(A) κῆρL(A)|
+(523) aber frei|willig lässt|du|nach und auch nicht willst|du· das aber mein Herz
+(523) but willing you|relax and also not you|wish· the then my heart
+(524) ἄχνLυτiαιi(Prä)(M/P) |ἐνL(Prp) θυμL|ῷL(D), ὅθiʼ(Kon) ὑπi|ὲρL(Prp) σέθiενi(Pr)(G) |αἴσχLεiʼ(A) ἀκi|ούLωL(Prä)(Akt)|
+(524) betrübt|sich in Sinn, wenn über deiner Schanden höre|ich
+(524) is|grieved in spirit, when over you shames I|hear
+(525) πρὸςL(Prp) ΤρώL|ωνL(G), οἳi(Pr)(N) ἔχi|ουσLιi(Prä)(Akt) πολi|ὺνL(Adj)(A) πόνiονi(A) |εἵνLεκiαi(Prp) |σεῖLοL(Pr)(G).|
+(525) von der|Troer, die haben vielen Mühe um|willen deiner.
+(525) from of|Trojans, who have much toil because|of you.
+(526) ἀλλLʼ(Kon) ἴiομi|ενL(Prä)(Akt)· τὰi(Art)(A) δʼ(Pt) ὄπi|ισθLενi(Adv) ἀρi|εσσLόμiεθiʼ(Fu)(M/P), |αἴL(Kon) κέi(Pt) ποθi|ιL(Adv) ΖεὺςL(N)|
+(526) aber gehen|wir· die aber hinterher werden|wir|aus|gleichen, wenn wohl einmal Zeus
+(526) but we|go· the|things then afterward we|will|make|amends, if at|least somewhere Zeus
+(527) δώLῃi(Aor)(Akt)(Knj) ἐπi|ουρLανiίi|οισLιi(Adj)(D) θεi|οῖςL(D) αἰL|ειγLενiέτi|ῃσLιL(Adj)(D)|
+(527) gewähre über|himmlischen Göttern immer|geborenen
+(527) may|grant over|heavenly to|gods ever|born
+(528) κρητLῆρL|αL(A) στήσL|ασθLαιi(AorS)(M/P)(Inf) ἐλi|εύθLερiονi(Adj)(A) |ἐνL(Prp) μεγiάρi|οισLινL(D)|
+(528) Krater auf|zustellen freien in Hallen
+(528) mixing|bowl to|set|up free in halls
+(529) ἐκL(Prp) ΤροίL|ηςL(G) ἐλiάσi|αντLαςi(AorS)(Akt)(A) ἐi|ϋκνLήμL|ιδLαςi(Adj)(A) Ἀχi|αιLούςL(A).|
+(529) aus Troja hinaus|getrieben|habend wohl|Bein|schienen|tragende Achaier.
+(529) from of|Troy having|driven well|greaved Achaeans.
