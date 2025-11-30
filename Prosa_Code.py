@@ -2007,7 +2007,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         # Deduplicate comments per block and limit count & length to keep PDF generation fast.
         # ERHÖHT: Keine Kürzung mehr, erlaubt längere Kommentare mit Umbruch
         MAX_COMMENTS_PER_BLOCK = 10  # Erhöht auf 10
-        MAX_COMMENT_WORDS = 175  # Wortgrenze für automatischen Umbruch (kein Abschneiden!)
+        MAX_COMMENT_WORDS = 175  # Wortgrenze für automatischen Umbruch (gleich wie Poesie!)
         added_keys = set()
         added_count = 0
         truncated = False
@@ -2064,100 +2064,36 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 # WICHTIG: backColor im ParagraphStyle verhindert Seitenumbrüche!
                 # Daher: Verwende Table mit grauem Hintergrund für ALLE Kommentare
                 comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                    fontName='DejaVu', fontSize=7.5,  # Erhöht von 7 auf 7.5 (+0.5pt)
-                    leading=9.5,  # Proportional angepasst
+                    fontName='DejaVu', fontSize=7.5,  # Gleich wie Poesie
+                    leading=9,  # Gleich wie Poesie (war 9.5)
                     alignment=TA_LEFT, 
-                    leftIndent=0, rightIndent=0,  # Kein Indent im Style (wird in Table gemacht)
-                    spaceBefore=0, spaceAfter=0,
-                    textColor=colors.Color(0.3, 0.3, 0.3), italic=True,
-                    splitLongWords=True,  # KRITISCH: Erlaube Wortumbrüche
-                    wordWrap='CJK',  # KRITISCH: CJK ermöglicht Umbrüche überall (nicht nur an Spaces)
-                    allowWidows=True, allowOrphans=True)  # KRITISCH: Erlaube Umbrüche über Seiten
+                    leftIndent=4*mm, rightIndent=4*mm,  # Gleich wie Poesie
+                    spaceBefore=2, spaceAfter=2,  # Gleich wie Poesie
+                    textColor=colors.Color(0.25, 0.25, 0.25),  # Gleich wie Poesie
+                    backColor=colors.Color(0.92, 0.92, 0.92))  # Gleich wie Poesie
                 
                 # Prüfe ob Kommentar lang ist (>175 Wörter) für Page-Breaking
                 word_count = len(text_clean.split())
                 
-                # WICHTIG: Kommentar-Box-Breite soll NUR bis zum Ende des Translinear-Texts reichen
-                # Verwende die gleiche Breite wie die Token-Tables (frame_w minus speaker/para columns)
-                # Diese Info ist NICHT im render_block_comments Scope verfügbar, daher:
-                # Verwende doc.width (= frame_w) MINUS die Speaker/Para-Spalten (falls vorhanden)
+                # Berechne verfügbare Breite (gleich wie Poesie)
                 try:
-                    # doc.width ist die verfügbare Frame-Breite (pagesize - margins)
-                    frame_width = doc.width
-                    
-                    # Ziehe Speaker/Para-Spalten ab, falls im Block vorhanden
-                    speaker_display = block.get('speaker_display', '')
-                    para_display = block.get('paragraph_display', '')
-                    
-                    # Berechne die Spaltenbreiten (wie in build_flow_tables)
-                    speaker_width_pt = 0
-                    para_width_pt = 0
-                    SPEAKER_GAP_MM = 1.5  # Von oben kopiert
-                    PARA_GAP_MM = 0.3
-                    
-                    if speaker_display:
-                        speaker_width_pt = min(len(speaker_display) * 3.5, 30)  # Max 30pt
-                    if para_display:
-                        para_width_pt = 8  # Feste Breite
-                    
-                    # Verfügbare Breite für Kommentar = frame_width - speaker/para columns
-                    available_width = frame_width
-                    if speaker_width_pt > 0:
-                        available_width -= (speaker_width_pt + SPEAKER_GAP_MM*mm)
-                    if para_width_pt > 0:
-                        available_width -= (para_width_pt + PARA_GAP_MM*mm)
+                    from Prosa_Code import doc  # Versuche doc zu finden
+                    available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*mm
                 except:
-                    # Fallback: Verwende doc.width minus kleiner Puffer
-                    try:
-                        available_width = doc.width * 0.95  # 95% der Frame-Breite
-                    except:
-                        available_width = 170*mm  # Absoluter Fallback
+                    available_width = 170*mm  # Fallback
                 
-                # KRITISCH: Bei langen Kommentaren (>175 Wörter) teile in mehrere Paragraphen!
-                # Grund: ReportLab kann einzelne riesige Paragraphs schwer splitten
-                # Lösung: Erstelle Multi-Row Table mit kleineren Chunks (~100 Wörter pro Chunk)
+                # Bei langen Kommentaren (>175 Wörter): Tables brechen automatisch
+                comment_table = Table([[Paragraph(html.escape(text_clean), comment_style_simple)]], 
+                                     colWidths=[available_width])
+                comment_table.setStyle(TableStyle([
+                    ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
+                    ('LEFTPADDING', (0, 0), (-1, -1), 4*mm),
+                    ('RIGHTPADDING', (0, 0), (-1, -1), 4*mm),
+                    ('TOPPADDING', (0, 0), (-1, -1), 3*mm),
+                    ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),
+                ]))
                 
-                if word_count > 175:
-                    # LANGER Kommentar: Teile in Chunks von ~100 Wörtern
-                    words = text_clean.split()
-                    chunk_size = 100
-                    chunks = []
-                    
-                    for i in range(0, len(words), chunk_size):
-                        chunk_words = words[i:i+chunk_size]
-                        chunk_text = " ".join(chunk_words)
-                        p_chunk = Paragraph(html.escape(chunk_text), comment_style_simple)
-                        chunks.append([p_chunk])
-                    
-                    # Erstelle Multi-Row Table (jede Zeile = ein Chunk)
-                    comment_table = Table(chunks, colWidths=[available_width])
-                    comment_table.setStyle(TableStyle([
-                        ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
-                        ('LEFTPADDING', (0, 0), (-1, -1), 6*mm),
-                        ('RIGHTPADDING', (0, 0), (-1, -1), 6*mm),
-                        ('TOPPADDING', (0, 0), (-1, -1), 3*mm),
-                        ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),
-                        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-                    ]))
-                    comment_table.canSplit = True  # KRITISCH: Erlaube Split zwischen Rows
-                    
-                    print(f"Prosa_Code: render_block_comments - SPLIT large comment into {len(chunks)} chunks ({word_count} words)", flush=True)
-                else:
-                    # NORMALER Kommentar (<= 175 Wörter): Single-Row Table
-                    p = Paragraph(html.escape(text_clean), comment_style_simple)
-                    comment_table = Table([[p]], colWidths=[available_width])
-                    comment_table.setStyle(TableStyle([
-                        ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),
-                        ('LEFTPADDING', (0, 0), (-1, -1), 6*mm),
-                        ('RIGHTPADDING', (0, 0), (-1, -1), 6*mm),
-                        ('TOPPADDING', (0, 0), (-1, -1), 3*mm),
-                        ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),
-                        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-                    ]))
-                    comment_table.canSplit = True
-                
-                # ALLE Kommentare ohne KeepTogether hinzufügen
-                # (Table kann über Seiten umbrechen, wenn Inhalt zu lang)
+                # Füge Kommentar hinzu
                 elements_list.append(Spacer(1, 2*mm))
                 elements_list.append(comment_table)
                 elements_list.append(Spacer(1, 2*mm))
@@ -2293,19 +2229,21 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # Grau hinterlegter Kommentar-Box mit kleiner Schrift
             from reportlab.platypus import Table, TableStyle
             comment_style_simple = ParagraphStyle('CommentSimple', parent=base['Normal'],
-                fontName='DejaVu', fontSize=7.5,  # Erhöht von 7 auf 7.5 (+0.5pt)
-                leading=9.5,  # Proportional angepasst
+                fontName='DejaVu', fontSize=7.5,  # Gleich wie Poesie
+                leading=9,  # Gleich wie Poesie
                 alignment=TA_LEFT, 
-                leftIndent=0, rightIndent=0,  # Kein Indent in der Table
-                spaceBefore=0, spaceAfter=0)
+                leftIndent=4*mm, rightIndent=4*mm,  # Gleich wie Poesie
+                spaceBefore=2, spaceAfter=2,  # Gleich wie Poesie
+                textColor=colors.Color(0.25, 0.25, 0.25),  # Gleich wie Poesie
+                backColor=colors.Color(0.92, 0.92, 0.92))  # Gleich wie Poesie
             
-            # Berechne verfügbare Breite
+            # Berechne verfügbare Breite (gleich wie Poesie)
             try:
                 available_width = doc.pagesize[0] - doc.leftMargin - doc.rightMargin - 8*mm
             except:
                 available_width = 170*mm  # Fallback
             
-            # Prüfe ob Kommentar lang ist (>200 Wörter) für Page-Breaking
+            # Prüfe ob Kommentar lang ist (>175 Wörter) für Page-Breaking
             word_count = len(full_content.split())
             
             comment_table = Table([[Paragraph(xml_escape(full_content), comment_style_simple)]], 
@@ -2318,7 +2256,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),
             ]))
             
-            # Bei langen Kommentaren (>200 Wörter): Erlaube Seitenumbrüche
+            # Bei langen Kommentaren (>175 Wörter): Erlaube Seitenumbrüche
             # (Keine spezielle Behandlung nötig, Tables brechen automatisch)
                     
             elements.append(Spacer(1, 2*mm))
