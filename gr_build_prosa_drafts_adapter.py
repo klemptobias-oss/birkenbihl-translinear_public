@@ -205,8 +205,20 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     if not relevant_pdfs:
         print(f"⚠ Keine passenden PDFs für {input_stem} gefunden."); return
 
-    sanitized_release_base = release_base.strip()
-
+    # KRITISCH: Verwende IMMER den Upload-Filename (input_stem), NICHT RELEASE_BASE!
+    # Grund: Browser muss PDFs anhand des Upload-Filenames finden können
+    # RELEASE_BASE kann normalisiert sein (z.B. gr_de statt gr_de_en), was zu 404s führt
+    # Lösung: PDF-Name = Upload-Filename + Variant-Suffix
+    # Beispiel: agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_011301_GR_Fett_Colour_Tag.pdf
+    
+    # Extrahiere den Pfad-Teil aus RELEASE_BASE (falls vorhanden) für die Ordnerstruktur
+    # Format: GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_stil1_birkenbihl
+    # Wir brauchen nur den Prefix: GR_poesie_Drama_Aischylos_Agamemnon__
+    path_prefix = ""
+    if release_base and "__" in release_base:
+        # Extrahiere alles bis zum "__" (Pfad-Komponenten)
+        path_prefix = release_base.split("__")[0] + "__"
+    
     for name in relevant_pdfs:
         bare = name[:-4] if name.lower().endswith(".pdf") else name
         suffix = ""
@@ -218,10 +230,13 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
         else:
             suffix = bare
         
-        if sanitized_release_base:
-            final_bare = f"{sanitized_release_base}{suffix}"
+        # FINALE LÖSUNG: Verwende Pfad-Prefix (wenn vorhanden) + Upload-Filename + Variant-Suffix
+        if path_prefix:
+            final_bare = f"{path_prefix}{input_stem}{suffix}"
         else:
-            final_bare = bare[5:] if bare.startswith("temp_") else bare
+            # Fallback: Nur Upload-Filename + Suffix (für alte Dateien ohne RELEASE_BASE)
+            final_bare = f"{input_stem}{suffix}"
+        
         final_name = f"{final_bare}.pdf"
         
         src = ROOT / name

@@ -240,7 +240,17 @@ def run_one(input_path: Path) -> None:
                 print(f"   Gefundene PDFs: {new_pdfs[:3] if len(new_pdfs) > 0 else 'keine'}")
                 return
 
-            sanitized_release_base = release_base.strip()
+            # KRITISCH: Verwende IMMER den Upload-Filename (input_stem), NICHT RELEASE_BASE!
+            # Grund: Browser muss PDFs anhand des Upload-Filenames finden können
+            # RELEASE_BASE kann normalisiert sein (z.B. gr_de statt gr_de_en), was zu 404s führt
+            # Lösung: PDF-Name = Upload-Filename + Variant-Suffix
+            
+            # Extrahiere den Pfad-Teil aus RELEASE_BASE (falls vorhanden) für die Ordnerstruktur
+            # Format: GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_stil1_birkenbihl
+            # Wir brauchen nur den Prefix: GR_poesie_Drama_Aischylos_Agamemnon__
+            path_prefix = ""
+            if release_base and "__" in release_base:
+                path_prefix = release_base.split("__")[0] + "__"
 
             for name in relevant_pdfs:
                 bare = name[:-4] if name.lower().endswith(".pdf") else name
@@ -255,11 +265,14 @@ def run_one(input_path: Path) -> None:
                 else:
                     suffix = '_' + bare
                 
-                # Erstelle finalen Namen
-                if sanitized_release_base:
-                    final_bare = f"{sanitized_release_base}{suffix}"
+                # FINALE LÖSUNG: Verwende Pfad-Prefix (wenn vorhanden) + ORIGINAL Upload-Filename + Variant-Suffix
+                # Der input_stem enthält den ORIGINAL Upload-Namen inkl. DRAFT_TIMESTAMP
+                # z.B. "agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_011301"
+                if path_prefix:
+                    final_bare = f"{path_prefix}{input_stem}{suffix}"
                 else:
-                    final_bare = clean_base + suffix
+                    # Fallback: Nur Upload-Filename + Suffix
+                    final_bare = f"{input_stem}{suffix}"
                 
                 final_name = f"{final_bare}.pdf"
                 

@@ -665,44 +665,34 @@ function buildFullReleaseName() {
 }
 
 function buildDraftPdfFilename() {
-  // KRITISCH: Verwende state.draftBase (enthält RELEASE_BASE aus Metadaten)
-  // Das ist der EXAKTE Name, den GitHub Actions verwendet - unabhängig vom Upload-Dateinamen!
+  // EINFACHE LÖSUNG: PDF-Name = Pfad-Prefix (aus RELEASE_BASE) + Upload-Filename + Variant-Suffix
   //
-  // Beispiele:
-  // - Upload: "agamemnon_gr_de_en_stil1_..." → RELEASE_BASE: "GR_poesie_...__agamemnon_gr_de_stil1_birkenbihl"
-  // - Upload: "amphitruo_lat_de_en_stil1_..." → RELEASE_BASE: "LAT_poesie_...__amphitruo_lat_de_en_stil1_birkenbihl"
+  // Warum NICHT RELEASE_BASE für den Filename verwenden?
+  // - RELEASE_BASE kann normalisiert sein (z.B. gr_de statt gr_de_en)
+  // - GitHub Actions erstellt PDFs mit ORIGINAL Upload-Filename
+  // - Browser muss PDFs anhand Upload-Filename finden (404 sonst!)
   //
-  // GitHub Actions normalisiert intern basierend auf tatsächlichem Content,
-  // wir verwenden einfach das RELEASE_BASE aus den Metadaten!
+  // Beispiel:
+  // - Upload: agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_011301.txt
+  // - RELEASE_BASE: GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_stil1_birkenbihl
+  // - PDF-Name: GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_011301_GR_Fett_Colour_Tag.pdf
+  //             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Prefix aus RELEASE_BASE
+  //                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ORIGINAL Upload-Filename
+  //                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^ Variant-Suffix
 
   if (state.pendingDraftFilename && state.draftBase) {
-    // DEBUG: Zeige was wir haben
-    console.log("DEBUG buildDraftPdfFilename:");
-    console.log("  - state.draftBase:", state.draftBase);
-    console.log("  - state.pendingDraftFilename:", state.pendingDraftFilename);
-
-    // KRITISCH: Verwende den UPLOAD-Filename (pendingDraftFilename), nicht draftBase!
-    // Grund: GitHub Actions erstellt PDFs basierend auf dem UPLOAD-Filenamen,
-    // nicht auf dem normalisierten RELEASE_BASE aus den Metadaten.
-    //
-    // Beispiel:
-    // - Upload: agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_011301.txt
-    // - PDF wird: GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_011301_GR_Fett_Colour_Tag.pdf
-    //            (beachte: gr_de_en bleibt erhalten, wird NICHT zu gr_de normalisiert!)
-
-    // Extrahiere den Base-Namen aus pendingDraftFilename (ohne .txt Extension)
-    const uploadBase = state.pendingDraftFilename.replace(/\.txt$/, "");
-
-    // Füge draftBase-Prefix hinzu (enthält Pfad-Komponenten)
-    // Extrahiere nur die Pfad-Teile aus draftBase (alles vor dem letzten "__")
+    // Extrahiere Pfad-Prefix aus draftBase (alles vor "__")
     const draftBasePrefix = state.draftBase.substring(
       0,
       state.draftBase.lastIndexOf("__") + 2
     );
 
+    // Extrahiere Upload-Filename (ohne .txt)
+    const uploadBase = state.pendingDraftFilename.replace(/\.txt$/, "");
+
+    // Kombiniere: Prefix + Upload-Filename + Variant-Suffix
     const filebase = draftBasePrefix + uploadBase;
     const name = `${filebase}${buildVariantSuffix()}.pdf`;
-    console.log("Generated draft filename (from upload + prefix):", name);
     return name;
   }
 
