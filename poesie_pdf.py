@@ -331,11 +331,25 @@ def _process_one_input(infile: str,
     base_lower = base.lower()
     input_has_versmass_tag = bool(re.search(r"_versm[aä][sß]{1,2}", base_lower))
     
+    # WICHTIG: Prüfe ob der Text tatsächlich Versmaß-Marker (i, L, |) enthält
+    # Wenn der Dateiname _Versmass_ enthält, aber KEIN Versmaß im Text ist,
+    # behandle ihn als normalen Text (sonst werden die Zeilen zu eng!)
+    content_has_meter = False
+    for block in blocks:
+        if block.get('type') == 'pair':
+            if has_meter_markers(block.get('gr_tokens', [])):
+                content_has_meter = True
+                break
+    
     # Normalisiere den base-Namen: ersetze alle Versmaß-Varianten durch "Versmass"
     # Regex: _Versm + (a|ä) + (s|ß){1,2} + optional weitere Buchstaben bis zum nächsten Unterstrich
     if input_has_versmass_tag:
         base = re.sub(r"_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*(?=_|$)", "_Versmass", base)
         print(f"  → Normalisierter Base-Name: {base}")
+        # WARNUNG ausgeben wenn Dateiname Versmaß verspricht, aber keines im Text ist
+        if not content_has_meter:
+            print(f"  ⚠ WARNUNG: Dateiname enthält '_Versmass', aber Text enthält KEINE Versmaß-Marker (i, L, |)!")
+            print(f"  ⚠ Text wird als NORMAL (ohne Versmaß) behandelt, um korrekte Abstände zu gewährleisten.")
     
     if force_meter is True:
         print("  → Versmaß durch Parameter erzwungen.")
@@ -343,11 +357,15 @@ def _process_one_input(infile: str,
     elif force_meter is False:
         print("  → Kein Versmaß (Parameter).")
         meters = (False,)
-    elif input_has_versmass_tag:
-        print("  → _Versmaß-Tag im Dateinamen gefunden, erstelle Versmaß-PDFs.")
+    elif input_has_versmass_tag and content_has_meter:
+        # NUR wenn BEIDES zutrifft: Dateiname hat _Versmass_ UND Text hat tatsächlich Marker
+        print("  → _Versmaß-Tag im Dateinamen gefunden UND Versmaß-Marker im Text vorhanden, erstelle Versmaß-PDFs.")
         meters = (True,)  # Nur Versmaß-PDFs (meter_on=True)
     else:
-        print("  → Kein _Versmaß-Tag im Dateinamen, erstelle normale PDFs.")
+        if input_has_versmass_tag and not content_has_meter:
+            print("  → _Versmaß-Tag im Dateinamen, aber KEIN Versmaß im Text → erstelle normale PDFs.")
+        else:
+            print("  → Kein _Versmaß-Tag im Dateinamen, erstelle normale PDFs.")
         meters = (False,)  # Nur normale PDFs (meter_on=False)
 
     # Verwende die neue Standard-Farbkonfiguration basierend auf der Sprache

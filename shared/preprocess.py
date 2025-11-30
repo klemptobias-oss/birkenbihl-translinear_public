@@ -1544,6 +1544,49 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             # compute intersection: remove only tags actually present on token (orig tags)
             # WICHTIG: Nur Tags entfernen, die tatsächlich auf dem Token vorhanden sind
             tags_to_remove = tags_to_hide_from_table & orig_tags if tags_to_hide_from_table else set()
+            
+            # NEU: Enklitische Tags-Logik
+            # Wenn bei einer Wortart ALLE Tags entfernt werden sollen (z.B. bei Nomen alle Kasus),
+            # sollen auch enklitische Partikel (Pt), Konjunktionen (Kon) und Präpositionen (Prp) entfernt werden
+            enclitic_tags = {'Pt', 'Kon', 'Prp'}
+            wortart_is_completely_tagfree = False
+            
+            if wortart and tags_to_hide_from_table:
+                # Prüfe ob alle möglichen Tags dieser Wortart entfernt werden sollen
+                if wortart.lower() in ['nomen', 'adjektiv', 'partizip']:
+                    # Bei Nomen/Adjektiv/Partizip: wenn alle Kasus entfernt werden
+                    all_kasus = set(KASUS_TAGS)
+                    if all_kasus.issubset(tags_to_hide_from_table):
+                        wortart_is_completely_tagfree = True
+                elif wortart.lower() == 'verb':
+                    # Bei Verben: wenn alle Tempora/Modi entfernt werden
+                    all_verb_tags = set(TEMPUS_TAGS) | set(MODUS_TAGS) | set(LATEINISCHE_VERBFORMEN)
+                    # Prüfe ob mindestens alle Haupt-Tags (Präsens, Imperfekt, etc.) entfernt werden
+                    main_tempus = {'Prä', 'Imp', 'Aor', 'Fu', 'Pf', 'Plpf'}
+                    if main_tempus.issubset(tags_to_hide_from_table) or len(all_verb_tags & tags_to_hide_from_table) >= 8:
+                        wortart_is_completely_tagfree = True
+                elif wortart.lower() == 'adjektiv':
+                    # Bei Adjektiven: wenn Adj-Tag und alle Kasus entfernt werden
+                    if 'Adj' in tags_to_hide_from_table and set(KASUS_TAGS).issubset(tags_to_hide_from_table):
+                        wortart_is_completely_tagfree = True
+            
+            # Wenn Wortart komplett tagfrei werden soll, entferne auch enklitische Tags
+            if wortart_is_completely_tagfree:
+                tags_to_remove = tags_to_remove | (orig_tags & enclitic_tags)
+            
+            # ZUSÄTZLICH: Wenn ein enklitisches Tag (Pt, Kon, Prp) global ausgeschaltet ist,
+            # entferne es überall, auch wenn es enklitisch an anderen Wortarten hängt
+            for enclitic in enclitic_tags:
+                # Prüfe ob dieses enklitische Tag in irgendeiner Wortart ausgeschaltet ist
+                # ODER ob es als standalone (z.B. 'pt', 'kon', 'prp') ausgeschaltet ist
+                if hidden_tags_by_wortart:
+                    for wort_key, hidden_set in hidden_tags_by_wortart.items():
+                        if enclitic in hidden_set:
+                            # Dieses enklitische Tag ist global ausgeschaltet
+                            if enclitic in orig_tags:
+                                tags_to_remove.add(enclitic)
+                            break
+            
             if tags_to_remove:
                 sup_keep_for_token = set(SUP_TAGS) - (tags_to_remove & set(SUP_TAGS))
                 sub_keep_for_token = set(SUB_TAGS) - (tags_to_remove & set(SUB_TAGS))
