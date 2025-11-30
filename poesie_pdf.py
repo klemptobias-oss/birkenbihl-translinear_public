@@ -325,15 +325,8 @@ def _process_one_input(infile: str,
     colors    = ("COLOR", "BLACK_WHITE")
     tags      = ("TAGS", "NO_TAGS")
     
-    # Versmaß-Erkennung: tolerant gegenüber unterschiedlichen Schreibweisen
-    # (z. B. _Versmaß, _Versmass, _Versma__, etc.)
-    # WICHTIG: Wir normalisieren immer zu "Versmass" (mit ss) für URL-Sicherheit
-    base_lower = base.lower()
-    input_has_versmass_tag = bool(re.search(r"_versm[aä][sß]{1,2}", base_lower))
-    
     # WICHTIG: Prüfe ob der Text tatsächlich Versmaß-Marker (i, L, |) enthält
-    # Wenn der Dateiname _Versmass_ enthält, aber KEIN Versmaß im Text ist,
-    # behandle ihn als normalen Text (sonst werden die Zeilen zu eng!)
+    # Dies ist die EINZIGE zuverlässige Methode zur Versmaß-Erkennung!
     content_has_meter = False
     for block in blocks:
         if block.get('type') == 'pair':
@@ -341,32 +334,17 @@ def _process_one_input(infile: str,
                 content_has_meter = True
                 break
     
-    # Normalisiere den base-Namen: ersetze alle Versmaß-Varianten durch "Versmass"
-    # Regex: _Versm + (a|ä) + (s|ß){1,2} + optional weitere Buchstaben bis zum nächsten Unterstrich
-    if input_has_versmass_tag:
-        base = re.sub(r"_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*(?=_|$)", "_Versmass", base)
-        print(f"  → Normalisierter Base-Name: {base}")
-        # WARNUNG ausgeben wenn Dateiname Versmaß verspricht, aber keines im Text ist
-        if not content_has_meter:
-            print(f"  ⚠ WARNUNG: Dateiname enthält '_Versmass', aber Text enthält KEINE Versmaß-Marker (i, L, |)!")
-            print(f"  ⚠ Text wird als NORMAL (ohne Versmaß) behandelt, um korrekte Abstände zu gewährleisten.")
-    
-    if force_meter is True:
-        print("  → Versmaß durch Parameter erzwungen.")
+    # ENTSCHEIDUNG: Nur auf Basis der tatsächlichen Meter-Marker im Text
+    # force_meter Parameter wird IGNORIERT, wenn keine Marker vorhanden sind!
+    if content_has_meter:
+        print("  → Versmaß-Marker im Text gefunden, erstelle Versmaß-PDFs.")
         meters = (True,)
-    elif force_meter is False:
-        print("  → Kein Versmaß (Parameter).")
-        meters = (False,)
-    elif input_has_versmass_tag and content_has_meter:
-        # NUR wenn BEIDES zutrifft: Dateiname hat _Versmass_ UND Text hat tatsächlich Marker
-        print("  → _Versmaß-Tag im Dateinamen gefunden UND Versmaß-Marker im Text vorhanden, erstelle Versmaß-PDFs.")
-        meters = (True,)  # Nur Versmaß-PDFs (meter_on=True)
     else:
-        if input_has_versmass_tag and not content_has_meter:
-            print("  → _Versmaß-Tag im Dateinamen, aber KEIN Versmaß im Text → erstelle normale PDFs.")
-        else:
-            print("  → Kein _Versmaß-Tag im Dateinamen, erstelle normale PDFs.")
-        meters = (False,)  # Nur normale PDFs (meter_on=False)
+        if force_meter is True:
+            print("  ⚠ WARNUNG: --force-meter Parameter gesetzt, aber Text enthält KEINE Versmaß-Marker!")
+            print("  ⚠ Text wird als NORMAL (ohne Versmaß) behandelt, um korrekte Abstände zu gewährleisten.")
+        print("  → Kein Versmaß im Text gefunden, erstelle normale PDFs.")
+        meters = (False,)
 
     # Verwende die neue Standard-Farbkonfiguration basierend auf der Sprache
     default_poesie_tag_config = _get_default_tag_config(ancient_lang_strength)
@@ -439,14 +417,10 @@ def _process_one_input(infile: str,
         if has_no_translations:
             name_no_meter = _add_suffix_before_ext(name_no_meter, "_NoTrans")
         
-        # Füge _Versmass zum Output-Namen hinzu, aber nur wenn:
-        # 1. meter_on ist True (wir erstellen ein Versmaß-PDF)
-        # 2. Der Input-Name NICHT bereits _Versmass enthält (sonst doppelt)
-        # WICHTIG: Wir verwenden immer "Versmass" (mit ss) für URL-Sicherheit
-        if meter_on and not input_has_versmass_tag:
-            out_name = _add_suffix_before_ext(name_no_meter, "_Versmass")
-        else:
-            out_name = name_no_meter
+        # WICHTIG: Wir fügen NICHT mehr automatisch "_Versmass" zum Namen hinzu
+        # Versmaß-Erkennung erfolgt NUR über tatsächliche Meter-Marker im Text!
+        # Der Output-Name bleibt wie der Input-Name (ohne Modifikation)
+        out_name = name_no_meter
             
         versmass_mode = "KEEP_MARKERS" if meter_on else "REMOVE_MARKERS"
         opts = PdfRenderOptions(strength=strength, color_mode=color_mode, tag_mode=tag_mode, versmass_mode=versmass_mode)

@@ -167,8 +167,10 @@ def is_trivial_translation(text: str) -> bool:
         if not without_steps:
             return True
     
-    # Wenn nur Interpunktion und Leerzeichen übrig bleiben
-    if re.fullmatch(r'^[\s\.\,\;\:\?\!\-\(\)\[\]\"\'\/\\\|…·•]+$', t_no_speaker):
+    # Erweiterte Liste von Interpunktionszeichen und Sonderzeichen:
+    # . , ; : ? ! - ( ) [ ] " ' / \ | … · • — – ‒ ― * + = < > « » ' ' " " „ " ‹ › ‐ ‑ ‧
+    # Wenn nur diese Zeichen und Leerzeichen übrig bleiben -> trivial
+    if re.fullmatch(r'^[\s\.\,\;\:\?\!\-\(\)\[\]\"\'\/\\\|…·•—–‒―\*\+=<>«»''""„"‹›‐‑‧]+$', t_no_speaker):
         return True
     
     return False
@@ -758,9 +760,13 @@ def is_translation_empty_or_punct(text: str) -> bool:
     """
     if not text or not text.strip():
         return True
-    # Entferne Whitespace und Satzzeichen
+    # Entferne Whitespace und alle Satzzeichen / Sonderzeichen
     cleaned = text.strip()
-    for char in ['.', ',', ';', ':', '!', '?', '…', '·', '‧']:
+    # Erweiterte Liste von Satzzeichen und Sonderzeichen, die als "leer" gelten
+    punct_chars = ['.', ',', ';', ':', '!', '?', '…', '·', '‧', '—', '–', '‒', '―', '-', 
+                   '*', '+', '=', '<', '>', '(', ')', '[', ']', '{', '}', '"', "'", 
+                   '«', '»', ''', ''', '"', '"', '„', '"', '‹', '›', '/', '\\', '|', '‐', '‑']
+    for char in punct_chars:
         cleaned = cleaned.replace(char, '')
     return not cleaned
 
