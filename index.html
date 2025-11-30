@@ -712,9 +712,9 @@
                 "
               >
                 <strong>💡 Tipp:</strong> Es ist auch ohne Download möglich, den
-                Text direkt im Browserfenster zu bearbeiten. Aber: Beim
-                Herunterladen ist die Datei "permanent", während Änderungen im
-                Browser verloren gehen können, wenn man die Seite verlässt.
+                Text direkt im Browserfenster zu bearbeiten. Aber beim
+                Herunterladen ist die Datei und ihre Änderungen "permanent", während Änderungen im
+                Browser verloren gehen können, wenn man die Seite verlässt. Außerdem ist es im Text-Editor viel flüssiger.
               </p>
               
               </li>
@@ -729,18 +729,21 @@
                 Text-Editor öffnen und nach Wunsch bearbeiten. Die Bearbeitungen
                 können vielfältig sein, sollten aber gewissen Regeln folgen. Zum
                 Einfügen neuer Dinge oder beim Ändern von Dingen sollte sich
-                stets an der Grundstruktur der bereitgestellten translinear.txt
+                stets an der erkennbaren Grundstruktur der bereitgestellten translinear.txt
                 Datei orientiert werden. Dies liegt daran, dass der Text eine
                 gewisse Struktur haben muss um korrekt vom Builder verarbeitet zu
                 werden. Es ist hilfreich, bei der .txt Bearbeitung das originale
-                PDF parallel im Blick zu haben, da dort die Dinge übersichtlicher aussehen.
+                PDF parallel im Blick zu haben, da dort die Informationen aus dem translinear.txt final dargestellt werden und übersichtlicher
+                aussehen.
               </p>
               
               <p style="margin-bottom: 10px">
                 <strong>• Wortanzahl beachten:</strong> In jeder Zeile sollte zwingend
                 stets die selbe Anzahl an Wörtern stehen, da der Code "Wort 1
                 unter Wort 1", "Wort 2 unter Wort 2" usw. stellt, um die
-                translineare Darstellung zu erreichen.
+                translineare Darstellung zu erreichen. <strong>Wichtig:</strong> Bei ungleicher Anzahl von Wörtern
+                in antiker Zeile oder Übersetzungszeile verschieben sich die
+                Zeilen gegeneinander und es steht nicht mehr das richtige Wort unter dem richtigen Wort!
               </p>
 
               <p style="margin-bottom: 10px">
@@ -754,22 +757,8 @@
                   >|</code
                 >
                 <kbd style="background: #f8f9fa; padding: 3px 6px; border: 1px solid #bbb; border-radius: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.1); font-family: monospace; font-size: 0.9em;">AltGr</kbd> + <kbd style="background: #f8f9fa; padding: 3px 6px; border: 1px solid #bbb; border-radius: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.1); font-family: monospace; font-size: 0.9em;">&lt;</kbd> auf der Tastatur) verbunden wurden,
-                zählen dabei als EIN Wort, was auch Möglichkeiten gibt, ein antikes Wort im Genitiv z.B. mit des|Hauses zu übersetzen.
-
-              <p>
-                style="
-                  margin-bottom: 0;
-                  padding: 10px;
-                  background: #fff3cd;
-                  border-left: 3px solid #f39c12;
-                  border-radius: 3px;
-                "
-              >
-                <strong>⚠️ Wichtig:</strong> Bei ungleicher Anzahl von Wörtern
-                in antiker Zeile oder Übersetzungszeile verschieben sich die
-                Zeilen gegeneinander und es steht nicht mehr das richtige Wort unter dem richtigen Wort!
-              </p>
-            </li>
+                zählen dabei als EIN Wort, was auch Möglichkeiten gibt, ein antikes Wort im Genitiv z.B. mit des|Hauses zu übersetzen, ohne die 
+                Wort für Wort Regel zu verletzen.
 
             <li
               style="
@@ -784,10 +773,12 @@
                 <strong>• Übersetzungen ändern oder ausblenden:</strong> Um fehlerhafte oder ungewollte Übersetzungen zu ändern, einfach das
                 ungewünschte Wort der Übersetzungszeile im .txt Dokument mit dem richtigen ersetzen.
                 Es gibt außerdem die Möglichkeit, einzelne Wörter der
-                der Übersetzungszeile mit (HideTrans) ganz unsichtbar zu machen. Wenn an dem Antiken Wort (das die Tags trägt) zusätzlich der Tag
-                (HideTrans) gesetzt wird, ist das dazugehörige Wort der Übersetzungszeile unsichtbar 
-                (wenn man das Wort der Übersetzungszeile dagegen einfach löschen würde, stünde nicht mehr die selbe Anzahl an Wörtern in der Zeile und
-                die antike und übersetzte Zeile würden gegeneinander verrutschen).
+                der Übersetzungszeile mit dem <strong>manuell im translinear.txt zu platzierenden Tag (HideTrans)</strong> ganz unsichtbar zu machen.
+                Wenn an dem antiken Wort (latein oder griechisch) zusätzlich der Tag (HideTrans) gesetzt wird, wird das dazugehörige Wort der
+                Übersetzungszeile unsichtbar. Das lateinische Wort Mercurius(N)(HideTrans) würde also im Text ohne
+                seine Übersetzung Merkur erscheinen.
+                (Wenn man das Wort Merkur dagegen einfach löschen würde, stünde nicht mehr die selbe Anzahl an Wörtern in der Zeile. Dann würde die
+                antike Zeile und die übersetzte Zeile gegeneinander verrutschen).
               </p>
 
               <p style="margin-bottom: 10px">
@@ -819,7 +810,7 @@
                   "
                   >(Imp)</code
                 >
-                für Imperfekt, falls ein Fehler im gegebenen Text vorliegt). Es
+                für Imperfekt, falls ein Fehler im bereitgestellten Text vorliegt). Es
                 ist aber <strong>nicht möglich</strong> neue Kürzel einfach zu
                 "erstellen" (z.B.
                 <code
@@ -841,7 +832,9 @@
                 >
                 für Deponens) – neue Kürzel aller Art werden NICHT einfach so
                 erkannt und hoch- oder tiefgestellt. Setzt man an das antike Wort den Kürzel (HideTags) werden die Tags für dieses Wort explizit 
-                nicht dargestellt. (HideTrans) und (HideTags) können auch beide gleichzeitig verwendet werden.
+                nicht dargestellt (die Alternative wäre auch hier die Löschung der ursprünglichen Grammatiktags, was aber zur Folge hätte, dass sie 
+                nicht mehr farbig dargestellt werden können). (HideTrans) und (HideTags) können auch beide gleichzeitig verwendet werden wie in
+                cōnfessus(Per)(Pas)(N)(HideTags)(HideTrans).
               </p>
               
               <p style="margin-bottom: 10px">
@@ -853,7 +846,7 @@
               </p>
               
               <p style="margin-bottom: 10px">
-                <strong>• Zusatzfunktion: Kommentare:</strong> Es ist möglich, Kommentare mit Zeilennummer + k in den translinear.txt einzufügen
+                <strong>• Zusatzfunktion Kommentare:</strong> Es ist möglich, Kommentare mit Zeilennummer + k in den translinear.txt einzufügen
                 (z.B. (8k) als Zeilennummer für "Stellenkommentar zur Zeile 8" oder (125-129k) für "Bereichskommentar für Zeilen 125-129"). Diese 
                 Kommentare bieten die Möglichkeit, Kontext zu geben oder den Text zu kommentieren und sie erscheinen stets grau hinterlegt in kleinerer
                 Schrift an der Stelle, in der sie auch im translinear.txt Dokument gesetzt sind.
@@ -1424,17 +1417,20 @@
                   >(Adv)</code
                 >-Farbe überschreiben.
               </p>
-               <strong>Übersetzung ausblenden:</strong> Ein Haken in <strong>Übersetzung ausblenden</strong> sorgt dafür, dass die Übersetzungszeilen
-               für die 
-               ausgewählten Wortgruppen unsichtbar werden. Diese Funktion ergänzt die manuelle Unsichtbarmachung über das Anfügen von (HideTrans) an 
-               Wörter in der Übersetzungszeile. Dies ermöglicht z.B. Partikel, Pronomen, Artikel und andere "simplere" Dinge großflächig nicht mehr
-               mit einer Übersetzung zu versehen, bei Dingen wie Verben oder Nomen aber individuell entscheiden zu können.
+               <strong>Übersetzung ausblenden:</strong> Ein Haken in der Tabelle bei <strong>Übersetzung ausblenden</strong> sorgt dafür, dass die
+               Übersetzungszeilen für die 
+               ausgewählten Wortgruppen unsichtbar werden. Diese Funktion ergänzt die manuelle, punktuelle Unsichtbarmachung, welche durch das Anfügen
+               von (HideTrans) an antike Wörter geschieht. Dies ermöglicht zusammen, dass z.B. Partikel, Pronomen, Artikel und andere "simplere" Dinge
+               großflächig
+               ohne Übersetzung dargestellt werden, bei Dingen wie Verben oder Nomen aber individuell entschieden werden kann, ob die Übersetzung im
+               Einzelfall darstehen soll oder nicht.
                
             </li>
             
              </p>
-               <strong>Zusatzfunktion: NoTrans PDF:</strong> Ein Haken in <strong>Übersetzungen ausblenden</strong> (oben in der Tabelle) sorgt dafür,
-               dass alle Übersetzungszeilen ausgeblendet werden. Man erhält dann das "NoTrans" PDF (also Originaltext + Tags und Farben).
+               <strong>Zusatzfunktion NoTrans PDF:</strong> Ein Haken in <strong>Übersetzungen ausblenden</strong> (oben in der Tabelle) sorgt dafür,
+               dass alle Übersetzungszeilen ausgeblendet werden. Man erhält dann das "NoTrans" PDF (keine translinear-Zeilen, also Originaltext mit
+               Farben und Grammatiktags).
             </li>
             
             </p>
@@ -1449,7 +1445,7 @@
                   >|</code
                 > 
               </p>
-              unsichtbar erscheinen zu lassen, sodass "des|Hauses" am Ende doch als "des Hauses" erscheint (wie oben erwähnt).
+              in den Übersetzungszeilen unsichtbar erscheinen, sodass "des|Hauses" optional am Ende doch als "des Hauses" erscheint.
             </li>
 
             <li
@@ -1475,7 +1471,7 @@
 
               <p style="margin-bottom: 10px">
                 <strong>• Automatische Varianten:</strong> Es werden automatisch
-                immer mehrere Versionen des Dokumentes zusätzlich erstellt, unabhängig davon welche Einstellungen man vornimmt: schwarz-weiß, farbig,
+                immer alle 8 Versionen des Dokumentes erstellt, unabhängig davon welche Einstellungen man vornimmt: schwarz-weiß, farbig,
                 mit/ohne Grammatik-Tags, mit/ohne fetter Schrift in der antiken Zeile.
               </p>
 
@@ -1489,8 +1485,9 @@
                 "
               >
                 <strong>⚠️ WICHTIG:</strong> Im Idealfall die PDFs
-                herunterladen, da sie sonst vermutlich schnell verschwinden,
-                wenn man die Seite verlässt!
+                herunterladen, da sie sonst vermutlich verschwinden,
+                wenn man die Seite verlässt! Da der translinear.txt die Grundlage aller PDF Erzeugungen ist, den bearbeiteten translinear.txt
+                sicher abspeichern, um seine Änderungen nicht zu verlieren, falls man ihn noch einmal verändern möchte.
               </p>
             </li>
           </ul>

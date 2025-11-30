@@ -61,12 +61,12 @@ jobs:
 
       - name: Build Draft PDFs
         env:
-          PYTHONUNBUFFERED: '1'
+          PYTHONUNBUFFERED: "1"
         run: |
           # ensure Python prints unbuffered so CI logs appear immediately
           export PYTHONUNBUFFERED=1
           set -x
-          
+
           echo "Build Draft PDFs gestartet..."
 
           # Finde alle Draft-Dateien die in diesem Commit geändert wurden
@@ -172,7 +172,7 @@ jobs:
           # Grund: .gitignore blockiert pdf_drafts/ für lokale Entwicklung
           # Aber: GitHub Actions MUSS PDFs committen können!
           git add -f pdf_drafts/
-          
+
           # Füge auch alle anderen Änderungen hinzu (z.B. .gitkeep, temp-Dateien)
           git add -A
 
