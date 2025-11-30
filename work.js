@@ -1318,7 +1318,7 @@ async function performRendering() {
 
     updatePdfView(true);
   } catch (e) {
-    console.error(e);
+    console.error("Draft submit error:", e);
     state.draftBuildActive = false;
     state.pendingDraftFilename = null;
     state.manualDraftBuildRequired = false;
@@ -1333,7 +1333,8 @@ async function performRendering() {
       el.draftStatus.textContent =
         "CORS-Fehler: Worker nicht erreichbar. Bitte versuchen Sie es auf der GitHub-Seite (https://klemptobias-oss.github.io/birkenbihl-translinear_public/).";
     } else {
-      el.draftStatus.textContent = "Fehler beim Fallback-Rendering.";
+      el.draftStatus.textContent = `Fehler beim PDF-Erstellen: ${e.message || "Unbekannter Fehler"}`;
+      console.error("Draft submit stack:", e.stack);
     }
   }
 }

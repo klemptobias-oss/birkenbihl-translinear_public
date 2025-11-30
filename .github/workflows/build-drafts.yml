@@ -19,14 +19,16 @@ on:
         description: "Werk"
         required: false
         type: string
-  push:
-    paths:
-      - "texte_drafts/**/*_birkenbihl_DRAFT_*.txt"
-      - "texte_drafts/**/*_DRAFT_*.txt"
-      - "build_prosa_drafts_adapter.py"
-      - "build_poesie_drafts_adapter.py"
-      - "prosa_pdf.py"
-      - "poesie_pdf.py"
+  # WICHTIG: push-Trigger DEAKTIVIERT, weil Worker explizit workflow_dispatch triggert
+  # Andernfalls würden BEIDE Trigger parallel laufen und ALLE Drafts verarbeiten!
+  # push:
+  #   paths:
+  #     - "texte_drafts/**/*_birkenbihl_DRAFT_*.txt"
+  #     - "texte_drafts/**/*_DRAFT_*.txt"
+  #     - "build_prosa_drafts_adapter.py"
+  #     - "build_poesie_drafts_adapter.py"
+  #     - "prosa_pdf.py"
+  #     - "poesie_pdf.py"
 
 concurrency:
   group: draft-pdf-build
