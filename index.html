@@ -733,11 +733,11 @@
                 Datei orientiert werden. Dies liegt daran, dass der Text eine
                 gewisse Struktur haben muss um korrekt vom Builder verarbeitet zu
                 werden. Es ist hilfreich, bei der .txt Bearbeitung das originale
-                PDF parallel im Blick zu haben, da dort die Dinge übersichtlicher sind.
+                PDF parallel im Blick zu haben, da dort die Dinge übersichtlicher aussehen.
               </p>
               
               <p style="margin-bottom: 10px">
-                <strong>• Wortanzahl beachten:</strong> In jeder Zeile sollte
+                <strong>• Wortanzahl beachten:</strong> In jeder Zeile sollte zwingend
                 stets die selbe Anzahl an Wörtern stehen, da der Code "Wort 1
                 unter Wort 1", "Wort 2 unter Wort 2" usw. stellt, um die
                 translineare Darstellung zu erreichen.
@@ -755,9 +755,8 @@
                 >
                 <kbd style="background: #f8f9fa; padding: 3px 6px; border: 1px solid #bbb; border-radius: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.1); font-family: monospace; font-size: 0.9em;">AltGr</kbd> + <kbd style="background: #f8f9fa; padding: 3px 6px; border: 1px solid #bbb; border-radius: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.1); font-family: monospace; font-size: 0.9em;">&lt;</kbd> auf der Tastatur) verbunden wurden,
                 zählen dabei als EIN Wort, was auch Möglichkeiten gibt, ein antikes Wort im Genitiv z.B. mit des|Hauses zu übersetzen.
-              </p>
 
-              <p
+              <p>
                 style="
                   margin-bottom: 0;
                   padding: 10px;
@@ -782,12 +781,13 @@
               <strong>2.1) Einfach mögliche Änderungen:</strong>
 
               <p style="margin-top: 10px; margin-bottom: 10px">
-                <strong>• Übersetzungen ändern:</strong> Um fehlerhafte oder ungewollte Übersetzungen zu ändern, einfach das
+                <strong>• Übersetzungen ändern oder ausblenden:</strong> Um fehlerhafte oder ungewollte Übersetzungen zu ändern, einfach das
                 ungewünschte Wort der Übersetzungszeile im .txt Dokument mit dem richtigen ersetzen.
-                Es gibt außerdem die Möglichkeit, einzelne Wörter über
-                der Übersetzungszeile mit (HideTrans) ganz unsichtbar zu machen. Wenn "Haus(HideTrans)" gesetzt wird, ist das Wort unsichtbar 
-                (wenn es dagegen einfach gelöscht wird, steht nicht mehr die selbe Anzahl an Wörtern in der Zeile und die antike und übersetzte 
-                Zeile verrutschen gegeneinander).
+                Es gibt außerdem die Möglichkeit, einzelne Wörter der
+                der Übersetzungszeile mit (HideTrans) ganz unsichtbar zu machen. Wenn an dem Antiken Wort (das die Tags trägt) zusätzlich der Tag
+                (HideTrans) gesetzt wird, ist das dazugehörige Wort der Übersetzungszeile unsichtbar 
+                (wenn man das Wort der Übersetzungszeile dagegen einfach löschen würde, stünde nicht mehr die selbe Anzahl an Wörtern in der Zeile und
+                die antike und übersetzte Zeile würden gegeneinander verrutschen).
               </p>
 
               <p style="margin-bottom: 10px">
@@ -840,7 +840,23 @@
                   >(Dep)</code
                 >
                 für Deponens) – neue Kürzel aller Art werden NICHT einfach so
-                erkannt und hoch- oder tiefgestellt.
+                erkannt und hoch- oder tiefgestellt. Setzt man an das antike Wort den Kürzel (HideTags) werden die Tags für dieses Wort explizit 
+                nicht dargestellt. (HideTrans) und (HideTags) können auch beide gleichzeitig verwendet werden.
+              </p>
+              
+              <p style="margin-bottom: 10px">
+                <strong>• Fehlenden Text hinzufügen:</strong> Falls aus irgendwelchen Gründen Text fehlen sollte, können natürlich die bereits
+                bestehenden Zeilen erweitert oder verändert werden. Zusätzlich gibt es die Möglichkeit, über Insertion Zeilen
+                hinzuzufügen. Dazu ist der entsprechende Text im translinear.txt mit der (Zeilennummer + i) zu versehen (z.B. Zeile (25i) fügt eine
+                Zusätzliche Zeile ein mit der Zeilennummer (25i). Bei Prosa Texten wird die Zusatzzeile in den Fließtext eingebaut, bei Poesie 
+                Texten wird die Zeile normal hinzugefügt so wie sie im translinear.txt steht.
+              </p>
+              
+              <p style="margin-bottom: 10px">
+                <strong>• Zusatzfunktion: Kommentare:</strong> Es ist möglich, Kommentare mit Zeilennummer + k in den translinear.txt einzufügen
+                (z.B. (8k) als Zeilennummer für "Stellenkommentar zur Zeile 8" oder (125-129k) für "Bereichskommentar für Zeilen 125-129"). Diese 
+                Kommentare bieten die Möglichkeit, Kontext zu geben oder den Text zu kommentieren und sie erscheinen stets grau hinterlegt in kleinerer
+                Schrift an der Stelle, in der sie auch im translinear.txt Dokument gesetzt sind.
               </p>
 
               <p style="margin-bottom: 10px">
@@ -1265,7 +1281,7 @@
               <p style="margin-top: 10px; margin-bottom: 10px">
                 Die translinear.txt Datei über den Knopf
                 <strong>"Entwurf.txt hochladen"</strong> neu in das Entwurf --> PDF Fenster hineinladen und damit in die
-                entsprechende Werkseite einbetten. Auch mit Strg+C könnte man den text dort hineinkopieren.
+                entsprechende Werkseite einbetten. Auch mit Strg+C Strg+V könnte man den text dort hineinkopieren.
               </p>
 
             </li>
@@ -1298,7 +1314,7 @@
                     border-radius: 3px;
                   "
                   >"Tag nicht zeigen"</code
-                >) konfigurieren. Dies ermöglicht zum Beispiel, 
+                >) konfigurieren. Dies ermöglicht zum Beispiel, alle
                 <code
                   style="
                     background: #f0f0f0;
@@ -1307,7 +1323,7 @@
                   "
                   >(Adv)</code
                 >
-                Adverb oder
+                Adverbien oder
                 <code
                   style="
                     background: #f0f0f0;
@@ -1316,7 +1332,8 @@
                   "
                   >(Prp)</code
                 >
-                Präposition nicht als Tag zu zeigen.
+                Präpositionen nicht mit ihrem Tag zu zeigen. Dies ergänzt die Individuelle Ausblendung von Tags durch den (HideTags) Tag und 
+                ermöglicht, ganze Gruppen einfach auszuschalten und bei den Übrigbleibenden Wörtern individuell zu entscheiden.
               </p>
 
               <p style="margin-bottom: 10px">
@@ -1407,10 +1424,32 @@
                   >(Adv)</code
                 >-Farbe überschreiben.
               </p>
-               <strong>Übersetzung ausblenden:</strong> Ein Haken in "Übersetzung ausblenden" sorgt dafür, dass die Übersetzungszeilen für die 
+               <strong>Übersetzung ausblenden:</strong> Ein Haken in <strong>Übersetzung ausblenden</strong> sorgt dafür, dass die Übersetzungszeilen
+               für die 
                ausgewählten Wortgruppen unsichtbar werden. Diese Funktion ergänzt die manuelle Unsichtbarmachung über das Anfügen von (HideTrans) an 
-               Wörter in der Übersetzungszeile. Dies ermöglicht z.B. Partikel, Pronomen, Artikel und andere "simplere" Dinge nicht mehr
-               mit einer Übersetzung zu versehen.
+               Wörter in der Übersetzungszeile. Dies ermöglicht z.B. Partikel, Pronomen, Artikel und andere "simplere" Dinge großflächig nicht mehr
+               mit einer Übersetzung zu versehen, bei Dingen wie Verben oder Nomen aber individuell entscheiden zu können.
+               
+            </li>
+            
+             </p>
+               <strong>Zusatzfunktion: NoTrans PDF:</strong> Ein Haken in <strong>Übersetzungen ausblenden</strong> (oben in der Tabelle) sorgt dafür,
+               dass alle Übersetzungszeilen ausgeblendet werden. Man erhält dann das "NoTrans" PDF (also Originaltext + Tags und Farben).
+            </li>
+            
+            </p>
+               <strong>Pipes verstecken:</strong> Ein Haken in <strong>Pipes verstecken</strong> (oben in der Tabelle) sorgt dafür,
+               dass alle 
+                <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >|</code
+                > 
+              </p>
+              unsichtbar erscheinen zu lassen, sodass "des|Hauses" am Ende doch als "des Hauses" erscheint (wie oben erwähnt).
             </li>
 
             <li
