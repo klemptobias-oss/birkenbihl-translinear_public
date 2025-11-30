@@ -13,7 +13,7 @@ from reportlab.lib.units    import mm as RL_MM
 from reportlab.lib.styles   import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums    import TA_CENTER, TA_LEFT, TA_RIGHT
 from reportlab.pdfbase      import pdfmetrics
-from reportlab.platypus     import SimpleDocTemplate, Paragraph, Spacer, KeepTogether, Table, TableStyle, Flowable
+from reportlab.platypus     import SimpleDocTemplate, Paragraph, Spacer, KeepTogether, Table, TableStyle, Flowable, CondPageBreak
 from reportlab.lib          import colors
 import re, os, html, unicodedata, json, argparse
 
@@ -1516,11 +1516,15 @@ def get_visible_tags_poesie(token: str, tag_config: dict = None) -> list:
 
 def measure_token_width_with_visibility_poesie(token: str, font: str, size: float, cfg: dict,
                                                is_greek_row: bool = False, 
-                                               tag_config: dict = None) -> float:
+                                               tag_config: dict = None,
+                                               tag_mode: str = "TAGS") -> float:
     """
     Berechnet die Breite eines Tokens - Poesie-Version.
     WICHTIG: Diese Funktion erhält das Token NACH der Vorverarbeitung (apply_tag_visibility).
     Die Tags, die im Token noch vorhanden sind, sind bereits die sichtbaren Tags!
+    
+    KRITISCH: tag_mode bestimmt den Puffer, NICHT die Tag-Präsenz im Token!
+    In Tag-PDFs haben manche Wörter keine Tags (hideTags/Config) → trotzdem Tag-Puffer verwenden!
     """
     if not token:
         return 0.0
@@ -1528,17 +1532,15 @@ def measure_token_width_with_visibility_poesie(token: str, font: str, size: floa
     # Berechne Breite mit dem Token, wie es ist
     w_with_remaining_tags = visible_measure_token(token, font=font, size=size, cfg=cfg, is_greek_row=is_greek_row)
     
-    # Prüfe ob Tags vorhanden sind
-    tags_in_token = RE_TAG_FINDALL.findall(token)
-    
-    # WICHTIG: Puffer-Berechnung basierend auf Tag-Präsenz
-    if tags_in_token:
-        # Tags vorhanden → Tag-PDF, verwende angemessenen Puffer
+    # KRITISCH: Puffer basiert auf tag_mode (PDF-Typ), NICHT auf Tag-Präsenz im Token!
+    # Grund: In Tag-PDFs haben manche Wörter keine Tags (hideTags), aber brauchen trotzdem Tag-Puffer!
+    if tag_mode == "TAGS":
+        # Tag-PDF → verwende angemessenen Puffer für ALLE Wörter (auch ohne Tags!)
         base_padding = max(size * 0.03, 0.8)
     else:
-        # Keine Tags vorhanden → NoTag-PDF, verwende MINIMALEN Puffer
-        # WICHTIG: Dieser Puffer muss DEUTLICH kleiner sein als bei Tag-PDFs!
-        base_padding = max(size * 0.01, 0.3)  # REDUZIERT von 0.15/2.5 auf 0.01/0.3
+        # NoTag-PDF → verwende größeren Puffer für bessere Lesbarkeit
+        # WICHTIG: NoTag-PDFs brauchen MEHR Puffer als gedacht (wie Tag-PDFs ohne Tags)!
+        base_padding = max(size * 0.03, 0.8)  # ERHÖHT von 0.01/0.3 auf 0.03/0.8 (gleich wie Tag-PDFs!)
     
     return w_with_remaining_tags + base_padding
 
@@ -1642,19 +1644,20 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             
             # ENTSCHEIDUNG: Basierend auf tag_mode UND Vorhandensein von Tags
             if tag_mode == "NO_TAGS" and tags_in_token:
-                # FALL 1: NoTag-PDF UND Token HAT Tags → Tags werden entfernt → MINIMALE Breite!
+                # FALL 1: NoTag-PDF UND Token HAT Tags → Tags werden entfernt → Breite ohne Tags!
                 # Entferne ALLE Tags und Markup-Zeichen für Breitenberechnung
                 core_text = RE_TAG_STRIP.sub('', gr_token).strip()
                 for color_char in ['#', '+', '-', '§', '$', '~', '*']:
                     core_text = core_text.replace(color_char, '')
                 core_text = core_text.replace('|', '')  # Pipes auch entfernen
                 
-                # Berechne MINIMALE Breite (wie bei HideTags)
+                # Berechne Breite ohne Tags
                 w_gr = visible_measure_token(core_text, font=token_gr_style.fontName, 
                                              size=token_gr_style.fontSize, cfg=eff_cfg, 
                                              is_greek_row=True)
-                # ERHÖHTER Puffer von 1.3pt auf 1.6pt für bessere Lesbarkeit (wie in _Tag PDFs mit versteckten Tags)
-                w_gr += max(token_gr_style.fontSize * 0.13, 1.6)
+                # WICHTIG: Verwende GLEICHEN Puffer wie Tag-PDFs (0.8pt) für konsistente Abstände!
+                # Dies macht NoTag-PDFs lesbar wie Tag-PDFs (mit versteckten Tags)
+                w_gr += max(token_gr_style.fontSize * 0.03, 0.8)  # REDUZIERT von 0.13/1.6 auf 0.03/0.8 (wie Tag-PDFs!)
                 
             elif tags_in_token and tag_mode == "TAGS":
                 # FALL 2: Tag-PDF UND Token HAT Tags → Tags werden angezeigt → normale Breite
@@ -1664,7 +1667,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     size=token_gr_style.fontSize, 
                     cfg=eff_cfg,
                     is_greek_row=True,
-                    tag_config=tag_config
+                    tag_config=tag_config,
+                    tag_mode=tag_mode  # WICHTIG: tag_mode übergeben für korrekte Puffer-Berechnung!
                 )
                 
             else:
@@ -1672,7 +1676,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 w_gr = visible_measure_token(gr_token, font=token_gr_style.fontName, 
                                              size=token_gr_style.fontSize, cfg=eff_cfg, 
                                              is_greek_row=True)
-                w_gr += max(token_gr_style.fontSize * 0.04, 1.2)
+                # WICHTIG: Verwende GLEICHEN Puffer wie Tag-PDFs (0.8pt) für konsistente Abstände!
+                w_gr += max(token_gr_style.fontSize * 0.03, 0.8)  # REDUZIERT von 0.04/1.2 auf 0.03/0.8 (wie Tag-PDFs!)
         else:
             w_gr = 0.0
         
@@ -2376,6 +2381,10 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 # OPTIMIERTE LÖSUNG gegen weiße Flächen:
                 # Problem: Große KeepTogether-Blöcke erzwingen zu früh Seitenumbrüche
                 # Lösung: Kleinere Blöcke + keepWithNext=True
+                
+                # WICHTIG: Verhindere Orphan Headlines (Überschrift ohne nachfolgenden Text am Seitenende)
+                # CondPageBreak(80mm) → Seitenumbruch wenn weniger als 80mm Platz (≈ Überschrift + 2 Zeilen)
+                elements.append(CondPageBreak(80*MM))
                 
                 # 1. Alle Überschriften zusammen (mit keepWithNext=True im Style)
                 if len(headers) > 0:
