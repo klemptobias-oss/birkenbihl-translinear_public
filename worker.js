@@ -464,7 +464,7 @@ export default {
     const owner = env.OWNER;
     const repo = env.REPO;
     const branch = env.BRANCH || "main";
-    const token = env.GITHUB_TOKEN;
+    const token = env.GITHUB_PAT;
 
     if (!owner || !repo || !token) {
       console.log("Missing environment variables:", {
@@ -476,7 +476,7 @@ export default {
         {
           ok: false,
           error: "misconfigured",
-          message: "OWNER/REPO/GITHUB_TOKEN missing",
+          message: "OWNER/REPO/GITHUB_PAT missing",
         },
         500,
         CORS
@@ -531,7 +531,10 @@ export default {
     };
 
     console.log("workflow_dispatch URL:", workflowDispatchUrl);
-    console.log("workflow_dispatch payload:", JSON.stringify(dispatchPayload, null, 2));
+    console.log(
+      "workflow_dispatch payload:",
+      JSON.stringify(dispatchPayload, null, 2)
+    );
 
     const dispatchRes = await fetch(workflowDispatchUrl, {
       method: "POST",
@@ -550,10 +553,7 @@ export default {
     if (!dispatchRes.ok) {
       const errText = await dispatchRes.text().catch(() => "");
       errorDetails = `Status ${dispatchRes.status}: ${errText}`;
-      console.error(
-        `workflow_dispatch fehlgeschlagen:`,
-        errorDetails
-      );
+      console.error(`workflow_dispatch fehlgeschlagen:`, errorDetails);
     } else {
       console.log("workflow_dispatch erfolgreich getriggert für", path);
     }
@@ -565,8 +565,8 @@ export default {
         filename: stamped,
         size_bytes: textBytes.length,
         html_url: res.content?.html_url || null,
-        workflow_triggered: dispatchRes.ok,  // Nur true wenn Workflow erfolgreich getriggert
-        workflow_error: errorDetails,  // Detaillierter Fehler
+        workflow_triggered: dispatchRes.ok, // Nur true wenn Workflow erfolgreich getriggert
+        workflow_error: errorDetails, // Detaillierter Fehler
         message: dispatchRes.ok
           ? "Text gespeichert und PDF-Generierung automatisch gestartet. PDFs werden in wenigen Minuten verfügbar sein."
           : `Text gespeichert, aber PDF-Generierung fehlgeschlagen: ${errorDetails}`,

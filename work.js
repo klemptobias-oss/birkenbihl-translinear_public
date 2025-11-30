@@ -4,7 +4,7 @@ import { loadCatalog, getWorkMeta } from "./catalog.js";
 
 // 1) KONFIG
 const GH_OWNER = "klemptobias-oss";
-const GH_REPO = "birkenbihl-translinear_public";
+const GH_REPO = "Antike-Translinear";
 const GH_BASE = `https://github.com/${GH_OWNER}/${GH_REPO}/releases/download`;
 const GH_RAW_BRANCH = "main";
 const GH_RAW_BASE = `https://raw.githubusercontent.com/${GH_OWNER}/${GH_REPO}/${GH_RAW_BRANCH}`;
@@ -1331,7 +1331,7 @@ async function performRendering() {
         e.message.includes("NetworkError"))
     ) {
       el.draftStatus.textContent =
-        "CORS-Fehler: Worker nicht erreichbar. Bitte versuchen Sie es auf der GitHub-Seite (https://klemptobias-oss.github.io/birkenbihl-translinear_public/).";
+        "CORS-Fehler: Worker nicht erreichbar. Bitte versuchen Sie es auf der GitHub-Seite (https://klemptobias-oss.github.io/Antike-Translinear/).";
     } else {
       el.draftStatus.textContent = `Fehler beim PDF-Erstellen: ${
         e.message || "Unbekannter Fehler"
