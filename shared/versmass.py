@@ -55,16 +55,42 @@ def _iter_markers(core: str):
         if ch in ('i', 'L', '|'):
             yield i, ch
 
-def has_meter_markers(tokens: List[str]) -> bool:
+def has_meter_markers(tokens: List[str], min_markers_per_line: int = 3, min_total: int = 10) -> bool:
     """
-    True, wenn nach dem Wrapper-Strip irgendwo i/L/| im Token-Core vorkommt.
+    Prüft, ob die Token-Liste signifikante Versmaß-Marker enthält.
+    
+    Rückgabe True wenn EINE der folgenden Bedingungen erfüllt ist:
+    1. Mindestens 10 Marker (i/L/|) insgesamt in der Token-Liste ODER
+    2. Es gibt mindestens 3 Marker in dieser einzelnen Zeile
+    
+    Dies verhindert, dass zufällige einzelne 'i' oder 'L' Buchstaben im Text
+    fälschlicherweise als Versmaß-Marker erkannt werden.
+    
+    Args:
+        tokens: Liste von Token-Strings (eine Zeile)
+        min_markers_per_line: Mindestanzahl Marker pro Zeile für Versmaß-Erkennung (default: 3)
+        min_total: Mindestanzahl Marker insgesamt für sichere Erkennung (default: 10)
+    
+    Returns:
+        True wenn signifikante Versmaß-Marker gefunden wurden
     """
     if not tokens:
         return False
+    
+    # Zähle alle Marker in dieser Token-Liste
+    marker_count = 0
     for t in tokens:
         core = strip_wrappers(t)
-        if any(ch in ('i', 'L', '|') for ch in core):
-            return True
+        marker_count += sum(1 for ch in core if ch in ('i', 'L', '|'))
+    
+    # Bedingung 1: Mindestens min_total Marker insgesamt (sehr sicher)
+    if marker_count >= min_total:
+        return True
+    
+    # Bedingung 2: Mindestens min_markers_per_line Marker in dieser Zeile
+    if marker_count >= min_markers_per_line:
+        return True
+    
     return False
 
 def extract_meter(tokens: List[str]) -> Optional[Dict[str, Any]]:
@@ -104,3 +130,56 @@ def extract_meter(tokens: List[str]) -> Optional[Dict[str, Any]]:
         "counts": {"i": ci, "L": cl, "|": cp},
     }
 
+
+def document_has_meter_markers(blocks: List[Dict[str, Any]], 
+                               min_lines_with_markers: int = 3,
+                               min_markers_per_line: int = 3) -> bool:
+    """
+    Prüft, ob ein ganzes Dokument (Liste von Blöcken) signifikante Versmaß-Marker enthält.
+    
+    Rückgabe True wenn EINE der folgenden Bedingungen erfüllt ist:
+    1. Mindestens min_lines_with_markers verschiedene Zeilen haben je mindestens 
+       min_markers_per_line Marker ODER
+    2. Mindestens eine Zeile hat 10 oder mehr Marker
+    
+    Dies ist robuster als die einzelne has_meter_markers Funktion, da sie über
+    mehrere Zeilen hinweg prüft und nicht durch zufällige 'i' oder 'L' getäuscht wird.
+    
+    Args:
+        blocks: Liste von Block-Dictionaries (type='pair' mit 'gr_tokens')
+        min_lines_with_markers: Mindestanzahl Zeilen mit Markern (default: 3)
+        min_markers_per_line: Mindestanzahl Marker pro Zeile (default: 3)
+    
+    Returns:
+        True wenn das Dokument signifikante Versmaß-Marker enthält
+    """
+    if not blocks:
+        return False
+    
+    lines_with_sufficient_markers = 0
+    
+    for block in blocks:
+        if block.get('type') == 'pair':
+            tokens = block.get('gr_tokens', [])
+            if not tokens:
+                continue
+            
+            # Zähle Marker in dieser Zeile
+            marker_count = 0
+            for t in tokens:
+                core = strip_wrappers(t)
+                marker_count += sum(1 for ch in core if ch in ('i', 'L', '|'))
+            
+            # Bedingung 1: Eine Zeile mit sehr vielen Markern (>=10) → sofort True
+            if marker_count >= 10:
+                return True
+            
+            # Bedingung 2: Zeile hat mindestens min_markers_per_line Marker → zähle sie
+            if marker_count >= min_markers_per_line:
+                lines_with_sufficient_markers += 1
+                
+                # Wenn wir genug Zeilen mit Markern haben → True
+                if lines_with_sufficient_markers >= min_lines_with_markers:
+                    return True
+    
+    return False
