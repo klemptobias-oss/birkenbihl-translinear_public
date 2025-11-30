@@ -2613,13 +2613,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     # Bei Apologie NoTag-Mode können leere Tables entstehen → SKIP these!
                     valid_tables = [t for t in line_tables if t is not None]
                     if valid_tables:
-                        # DEFENSIVE: Versuche KeepTogether, aber fallback zu direktem append
-                        try:
-                            elements.append(KeepTogether(valid_tables))
-                        except (TypeError, ValueError) as e:
-                            # Fallback: Füge Tables einzeln hinzu (kein KeepTogether)
-                            logger.warning("Prosa_Code: KeepTogether failed, appending tables individually: %s", e)
-                            elements.extend(valid_tables)
+                        # WICHTIG: KEIN KeepTogether mehr! Führt zu Crashes bei negativer availWidth!
+                        # Flow-Tables sind einzelne Zeilen und brechen nicht über Seiten.
+                        # Füge Tables direkt hinzu (ohne KeepTogether-Wrapper)
+                        elements.extend(valid_tables)
                 
                 # Abstand nach dem flow-Block
                 elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
