@@ -35,7 +35,7 @@ export default {
 
     // --------- Healthcheck ---------
     if ((method === "GET" || method === "HEAD") && url.pathname === "/") {
-      return new Response("OK birkenbihl-draft-01", {
+      return new Response("OK antike-translinear-draft", {
         status: 200,
         headers: CORS,
       });

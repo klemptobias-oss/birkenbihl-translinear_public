@@ -10,7 +10,7 @@ const GH_RAW_BRANCH = "main";
 const GH_RAW_BASE = `https://raw.githubusercontent.com/${GH_OWNER}/${GH_REPO}/${GH_RAW_BRANCH}`;
 const GH_ACTIONS_URL = `https://github.com/${GH_OWNER}/${GH_REPO}/actions`;
 
-const WORKER_BASE = "https://birkenbihl-draft-01.klemp-tobias.workers.dev"; // Externer Worker
+const WORKER_BASE = "https://antike-translinear-draft.klemp-tobias.workers.dev"; // Externer Worker
 const GH_RELEASE_PROXY = `${WORKER_BASE}/release`;
 const TXT_BASE = "texte"; // texte/<kind>/<author>/<work>/
 const DRAFT_BASE = "pdf_drafts"; // pdf_drafts/<kind>_drafts/<author>/<work>/
