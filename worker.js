@@ -81,7 +81,13 @@ export default {
         }
 
         // Draft-PDFs sind auf raw.githubusercontent.com/OWNER/REPO/main/pdf_drafts/...
-        const draftUrl = "https://raw.githubusercontent.com/" + owner + "/" + repo + "/main/pdf_drafts/" + file;
+        const draftUrl =
+          "https://raw.githubusercontent.com/" +
+          owner +
+          "/" +
+          repo +
+          "/main/pdf_drafts/" +
+          file;
         const upstream = await fetch(draftUrl, {
           method: method === "HEAD" ? "HEAD" : "GET",
         });
@@ -113,19 +119,22 @@ export default {
         // Content-Disposition Header für Download-Namen
         // Für Draft-PDFs: Entferne Session-IDs und Timestamps aus dem Dateinamen
         let baseName = file.split("/").pop() || "translinear.pdf";
-        
+
         if (file.toLowerCase().endsWith(".pdf")) {
           // Entferne lange Session-IDs, Timestamps und "temp_" Prefix
           // Behalte nur: Werk_Sprache_Variante.pdf
           baseName = baseName
-            .replace(/_draft_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi, "")
+            .replace(
+              /_draft_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi,
+              ""
+            )
             .replace(/^temp_/gi, "");
         }
-        
+
         const disposition =
           mode === "attachment"
-            ? "attachment; filename=\"" + baseName + "\""
-            : "inline; filename=\"" + baseName + "\"";
+            ? 'attachment; filename="' + baseName + '"'
+            : 'inline; filename="' + baseName + '"';
 
         const headers = {
           ...CORS,
@@ -179,9 +188,15 @@ export default {
       let lastStatus = 404;
 
       for (const candidate of filenameVariants) {
-        const upstreamUrl = "https://github.com/" + owner + "/" + repo + "/releases/download/" + encodeURIComponent(
-          tag
-        ) + "/" + encodeURIComponent(candidate);
+        const upstreamUrl =
+          "https://github.com/" +
+          owner +
+          "/" +
+          repo +
+          "/releases/download/" +
+          encodeURIComponent(tag) +
+          "/" +
+          encodeURIComponent(candidate);
         const attempt = await fetch(upstreamUrl, {
           method: method === "HEAD" ? "HEAD" : "GET",
         });
@@ -240,14 +255,17 @@ export default {
       // Für Release-PDFs: Vereinfachter Name (ohne lange Session-IDs)
       // Format: GR_poesie_Drama_Autor_Werk_Variante.pdf
       let desiredName = finalFileName;
-      
+
       // Für inline-Anzeige im Browser: behalte den vollen Namen
       // Für Download (mode=attachment): vereinfachter Name
       if (mode === "attachment" && lowerFile.endsWith(".pdf")) {
         // Entferne lange Session-IDs und Timestamps aus dem Namen
         // z.B. "__sieben_gr_de_stil1_birkenbihl" → behalte nur das Wichtige
         desiredName = finalFileName
-          .replace(/_draft_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi, "")
+          .replace(
+            /_draft_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi,
+            ""
+          )
           .replace(/temp_/gi, "");
       }
 
@@ -409,23 +427,65 @@ export default {
     }
 
     // Dateinamen-Strategie
-    let baseName =
-      filename && filename.endsWith(".txt")
-        ? stripUnsafe(filename.replace(/\.txt$/i, ""))
-        : "";
-    if (!baseName) baseName = stripUnsafe(work) || "Entwurf";
-
-    // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
-    baseName = baseName.replace(
-      /_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g,
-      "_Versmass"
-    );
-
-    // Entferne "translinear" aus dem baseName, falls vorhanden (wird später wieder hinzugefügt)
-    baseName = baseName
-      .replace(/^translinear_?/i, "")
-      .replace(/_translinear_?/gi, "_");
-    if (!baseName) baseName = stripUnsafe(work) || "Entwurf";
+    // WICHTIG: Baue einen aussagekräftigen Namen aus den Metadaten
+    // Format: Autor_Werk_Sprache_[Versmass]
+    
+    // 1. Erkenne Sprach-Kombination aus dem TEXT-INHALT
+    let detectedLangSuffix = "";
+    const lines = text.split('\n').filter(l => l.trim());
+    
+    // Suche nach typischen Zeilen-Mustern: (1) Greek (1) Deutsch (1) English
+    // Zähle wie viele Zeilen mit (Zahl) beginnen
+    let pairCount = 0;
+    let linesWithSameNumber = {};
+    
+    for (const line of lines) {
+      const match = line.match(/^\((\d+)\)/);
+      if (match) {
+        const num = match[1];
+        linesWithSameNumber[num] = (linesWithSameNumber[num] || 0) + 1;
+        pairCount++;
+      }
+      if (pairCount > 20) break; // Nur Anfang analysieren
+    }
+    
+    // Wenn wir 3 Zeilen pro Nummer haben → 3-sprachig, sonst 2-sprachig
+    const avgLinesPerNumber = Object.values(linesWithSameNumber).reduce((a,b) => a+b, 0) / Object.keys(linesWithSameNumber).length;
+    const isThreeLanguages = avgLinesPerNumber >= 2.5; // ~3 Zeilen pro Nummer
+    
+    // Bestimme Basissprache (griechisch oder latein)
+    const langBase = (language || "").toLowerCase().includes("lat") ? "lat" : "gr";
+    
+    // Baue Sprach-Suffix
+    if (isThreeLanguages) {
+      detectedLangSuffix = `_${langBase}_de_en`;
+    } else {
+      // 2-sprachig: Versuche aus filename zu extrahieren, sonst fallback
+      if (filename && (filename.includes("_gr_en") || filename.includes("_lat_en"))) {
+        detectedLangSuffix = `_${langBase}_en`;
+      } else {
+        detectedLangSuffix = `_${langBase}_de`; // Default
+      }
+    }
+    
+    // 2. Versmaß-Suffix aus versmassFlag oder filename
+    let versmassSuffix = "";
+    if (versmassFlag === "true" || versmassFlag === "ON" || filename.match(/_[Vv]ersm[aä][sß]{1,2}/)) {
+      versmassSuffix = "_Versmass";
+    }
+    
+    // 3. Baue sauberen Namen
+    const authorForName = stripUnsafe(author) || "";
+    const workForName = stripUnsafe(work) || "Entwurf";
+    
+    let baseName = "";
+    if (authorForName && workForName) {
+      baseName = `${authorForName}_${workForName}${detectedLangSuffix}${versmassSuffix}`;
+    } else if (workForName) {
+      baseName = `${workForName}${detectedLangSuffix}${versmassSuffix}`;
+    } else {
+      baseName = `Entwurf${detectedLangSuffix}${versmassSuffix}`;
+    }
 
     // WICHTIG: SESSION-ID aus Cookie lesen (oder generieren)
     // Format: SESSION_abc123def456 (16-stellige Hex-ID)
@@ -443,7 +503,13 @@ export default {
       ).join("");
     }
 
-    const stamped = baseName + "_translinear_SESSION_" + sessionId + "_DRAFT_" + tsStamp() + ".txt";
+    const stamped =
+      baseName +
+      "_translinear_SESSION_" +
+      sessionId +
+      "_DRAFT_" +
+      tsStamp() +
+      ".txt";
 
     const kindSafe = sanitizePathSegment(kind) || "prosa";
     const authorSafe = sanitizePathSegment(author) || "Unsortiert";
@@ -472,7 +538,9 @@ export default {
       metadataHeaders.push("<!-- RELEASE_BASE:" + releaseBase + " -->");
     }
     if (tagConfig) {
-      metadataHeaders.push("<!-- TAG_CONFIG:" + JSON.stringify(tagConfig) + " -->");
+      metadataHeaders.push(
+        "<!-- TAG_CONFIG:" + JSON.stringify(tagConfig) + " -->"
+      );
       console.log("Tag-Konfiguration eingebettet:", Object.keys(tagConfig));
     }
     if (versmassFlag) {
@@ -511,9 +579,13 @@ export default {
       );
     }
 
-    const apiUrl = "https://api.github.com/repos/" + owner + "/" + repo + "/contents/" + encodeURI(
-      path
-    );
+    const apiUrl =
+      "https://api.github.com/repos/" +
+      owner +
+      "/" +
+      repo +
+      "/contents/" +
+      encodeURI(path);
     const body = {
       message: "draft: " + baseName + " birkenbihl (" + stamped + ")",
       content: toBase64Utf8(textWithConfig),
@@ -550,7 +622,12 @@ export default {
     console.log("Draft gespeichert, triggere GitHub Action für diese Datei...");
 
     // Trigger workflow_dispatch explizit für DIESE draft_file
-    const workflowDispatchUrl = "https://api.github.com/repos/" + owner + "/" + repo + "/actions/workflows/build-drafts.yml/dispatches";
+    const workflowDispatchUrl =
+      "https://api.github.com/repos/" +
+      owner +
+      "/" +
+      repo +
+      "/actions/workflows/build-drafts.yml/dispatches";
     const dispatchPayload = {
       ref: branch,
       inputs: {
@@ -597,14 +674,18 @@ export default {
         workflow_error: errorDetails, // Detaillierter Fehler
         message: dispatchRes.ok
           ? "Text gespeichert und PDF-Generierung automatisch gestartet. PDFs werden in wenigen Minuten verfügbar sein."
-          : "Text gespeichert, aber PDF-Generierung fehlgeschlagen: " + errorDetails,
+          : "Text gespeichert, aber PDF-Generierung fehlgeschlagen: " +
+            errorDetails,
         release_base: releaseBase || null,
         session_id: sessionId, // Session-ID zurückgeben
       },
       200,
       {
         ...CORS,
-        "Set-Cookie": "birkenbihl_session=" + sessionId + "; Path=/; Max-Age=86400; SameSite=Lax; Secure", // 24h Cookie
+        "Set-Cookie":
+          "birkenbihl_session=" +
+          sessionId +
+          "; Path=/; Max-Age=86400; SameSite=Lax; Secure", // 24h Cookie
       }
     );
   },
@@ -687,9 +768,16 @@ function stateLangFallback(kindSafe = "prosa") {
 
 function tsStamp(d = new Date()) {
   const p = (n) => n.toString().padStart(2, "0");
-  return d.getFullYear() + "" + p(d.getMonth() + 1) + p(d.getDate()) + "_" + p(
-    d.getHours()
-  ) + p(d.getMinutes()) + p(d.getSeconds());
+  return (
+    d.getFullYear() +
+    "" +
+    p(d.getMonth() + 1) +
+    p(d.getDate()) +
+    "_" +
+    p(d.getHours()) +
+    p(d.getMinutes()) +
+    p(d.getSeconds())
+  );
 }
 
 function stripUnsafe(s = "") {
