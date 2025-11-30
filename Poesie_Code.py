@@ -1606,7 +1606,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         if tag_mode == "TAGS":
             eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_TAG', 1.0)
         else:
-            eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_NOTAG', 0.5)
+            # NoTag-PDFs (Versmass): Erhöht von 0.5 auf 1.0 (gleich wie Tag-PDFs!)
+            eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_NOTAG', 1.0)  # ERHÖHT von 0.5
         eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_VERSMASS
     else:
         eff_cfg['CELL_PAD_LR_PT'] = 0.5
@@ -1614,8 +1615,9 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_NORMAL_TAG', 4.0)
             eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL_TAG
         else:
-            # WICHTIG: NoTag-PDFs brauchen MINIMALE Abstände!
-            eff_cfg['SAFE_EPS_PT'] = 0.5  # REDUZIERT von 3.0 auf 0.5
+            # NoTag-PDFs (Normal): Erhöht von 0.5 auf 3.5 (näher an Tag-PDFs 4.0!)
+            # Dies gibt den "Grund-Abstand" den Tag-PDFs haben!
+            eff_cfg['SAFE_EPS_PT'] = 3.5  # ERHÖHT von 0.5 (war zu eng!)
             eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL_NOTAG
 
     # WICHTIG: Spaltenlängen angleichen (zeilengetreu) - MUSS VOR der widths-Berechnung kommen!
