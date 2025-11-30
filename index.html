@@ -369,16 +369,15 @@
           <h3>Inhalte und Kommentar</h3>
           <ul>
             <li>
-              <strong>Sprachen:</strong> Es sind für jeden antiken Text sowohl
-              deutsche, als auch englische Übersetzungen vorhanden, sowie eine
-              dreisprachige Version (die eine Übereinanderlegung der deutschen
-              und englischen Zeilen der vorhergenannten Übersetzung ist). Die Übersetzungen werden
-              unabhängig von einander erstellt durch die KI (also nicht innerhalb des
-              selben Gespräches), was dem dreisprachigen Dokument den Vor- oder Nachteil
-              geben könnte, dass der Text zwei Mal auf zwei unterschiedliche
-              Weisen durchdacht und übersetzt wurde, was eventuell zu verschiedenen Lesarten (inkl. Konflikten) führen könnte. Diese könnten sich 
-              auch herausstellen, wenn morphologisch
-              uneindeutige Worte in dem einen Text z.B. adjektivisch, im anderen substantivisch übersetzt werden würden.
+              <strong>Sprachen:</strong> Es sind für jeden antiken Text sowohl eine individuelle
+              deutsche, als auch eine individuelle englische Übersetzungen vorhanden, sowie eine
+              dreisprachige Version, die durch eine Insertion der englischen Zeilen der englischen Übersetzung unter die deutsche Übersetzung
+              entsteht (der antike-Text samt Grammatiktags stammt also aus der deutschen Übersetzung). Die deutsche und die englische
+              Übersetzung werden unabhängig von einander erstellt durch die KI (also nicht innerhalb des
+              selben Gespräches, sondern parallel in zwei verschiedenen). Dies könnte dem dreisprachigen Dokument den Vor- oder Nachteil
+              geben, dass der Original-Text auf zwei unterschiedliche
+              Weisen durchdacht und übersetzt wurde, was sich darin äußern könnte, dass Wörter zum Beispiel einmal adjektivisch, einmal subjektivisch
+              interpretiert und übersetzt werden, oder auch dass verschiedenen Lesarten in deutscher und englischer Zeile sichtbar werden. 
             </li>
             <li>
               <strong>Gattungen/Werke:</strong> Die Werke sind zuerst in Poesie
@@ -408,7 +407,7 @@
           <h3>Dokumente für jedes Werk</h3>
           <p>
             Zusammenfassung: Für jedes Werk stehen verschiedene grundsätzliche
-            Translinear-Basis-Texte zur Verfügung:
+            Translinear-Basis-Texte und daraus entstandene PDFs zur Verfügung:
           </p>
           <ul>
             <li>
@@ -438,12 +437,12 @@
               oder farbige Version. Bei der farbigen Version sind Verben stets
               grün, Nomen rot, Adjektive blau, und Partizipe, Gerundium,
               Gerundivum und Supinum stets violett eingefärbt. Individualisierte
-              Färbungen (basierend auf Grammatiktags) können
+              Färbungen (basierend auf Erkennung der Wörter und Wortarten anhand der Grammatiktags) können
               im Builder eingestellt werden (s.u.).
             </li>
             <li>
               <strong>_Fett oder _Normal:</strong> Die antike Textzeile wird entweder in Fett oder Normal dargestellt
-              (um vielleicht Tinte zu sparen beim Drucken, aber Fett sieht schöner aus zum lesen).
+              (um vielleicht Tinte zu sparen beim Drucken, aber der antike Text in Fett hebt sich besser ab).
             </li>
             <li>
               <strong>_Tag oder _NoTag:</strong> Es werden Dokumente stets mit
@@ -520,7 +519,7 @@
 
           <p>
             <strong>Hinweis:</strong> Diese Tags können kombiniert auftreten,
-            z.B. <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">(N)(Prä)(Akt)</code> für ein Partizip im Nominativ, Präsens, Aktiv.
+            z.B. <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">(N)(Prä)(Akt)</code> für ein Partizip im Nominativ, Präsens, Aktiv. Das Partizip selbst hat keinen eigenen Tag, ebensowenig wie Verben und Nomen, sie müssen daher erschlossen werden, z.B. Partizip aus Kasus + Tempus + Genus Verbi, was nur bei Partizipien so vorkommt.
           </p>
 
           <!-- BEISPIEL 2: Noch ein Bild einfügen -->
@@ -839,15 +838,42 @@
               </p>
               
               <p style="margin-bottom: 10px">
-                <strong>• Fehlenden Text hinzufügen:</strong> Falls aus irgendwelchen Gründen Text fehlen sollte, können natürlich die bereits
-                bestehenden Zeilen erweitert oder verändert werden. Zusätzlich gibt es die Möglichkeit, über Insertion Zeilen
-                hinzuzufügen. Dazu ist der entsprechende Text im translinear.txt mit der (Zeilennummer + i) zu versehen (z.B. Zeile (25i) fügt eine
+                <strong>• Färbungen:</strong> Die Färbungen können in der Tag und Konfigurationstabelle eingestellt werden. Dabei basieren die Farben
+                stets auf den Tags, die die Wörter tragen. Bei einigen Wortgruppen (Partizip, Verb, Nomen) gibt es keinen gesonderten Tag zur
+                Erkennung. Es wird jedes Wort, welches "Kasus, Tempus und Genus Verbi" trägt, als Partizip erkannt
+                (und entsprechend gefärbt). Verben werden erkannt anhand von "Tempus ohne Kasus" und Nomen über "Nur Kasus" (es gibt Zusatzregeln wie 
+                dass (Pt) Partikel oder (Kon) Konjunktion enklitisch mit dran hängen können, wie oft im lat.).
+              </p>
+              
+              
+  
+              <p style="margin-bottom: 10px">
+                <strong>• Fehlenden Text hinzufügen:</strong> Falls aus irgendwelchen Gründen Text fehlen sollte, können die bereits
+                bestehenden Zeilen erweitert oder verändert werden. Dabei ist der wichtige Unterschied zwischen den zwei PDF Buildern zu beachten:
+                der <strong>Prosa Builder</strong> erzeugt stets einen Fließtext aus seinem translinear.txt, falls also Text fehlen sollte, könnte jede
+                beliebige Zeile endlos lange um den fehlenden Text erweitert (oder gekürzt) werden. Am Ende sollte stets ein durchgängiger Fließtext
+                entstehen. Der <strong>Poesie Builder</strong> wiederum behält 
+                stets die Originale Zeilenstruktur des translinear.txt bei (und somit bei Tragödien oder Hexameter die Originale Form). Es ist in
+                beiden Texten möglich (aber wie gesagt, nur bei Poesie nötig), falls Zeilen fehlen sollten, Insertionszeilen hinzuzufügen. Dazu ist
+                an die entsprechende Stelle im translinear.txt zu gehen, wo der vermeintliche Text fehlt und eine Insertionszeile einzufügen 
+                (irgendeine gewünschte Zeilennummer + "Insertionssuffix" i) zu setzen und mit dem Text zu bestücken. Beispiel:
+                
+(25) dētestāta(Per)(Pas)(A). Manet(Prä)(Akt) sub(Prp) Jove(Abl) frīgidō(Adj)(Abl)
+(25) verabscheute. bleibt unter Jupiter kalt
+(777i) μῆνιν(A) ἄειδε(Prä)(Akt)(Imv) θεὰ(V) Πηληϊάδεω(G) Ἀχιλῆος(G)
+(777i) Zorn sing Göttin des|Peleus|Sohnes des|Achilleus
+(26) vēnātor(N) tenerae(Adj)(G) conjugis(G) inmemor(Adj)(N),
+(26) Jäger zarten Gattin vergessend,
+
+
+(z.B. Zeile (25i) fügt eine
                 Zusätzliche Zeile ein mit der Zeilennummer (25i). Bei Prosa Texten wird die Zusatzzeile in den Fließtext eingebaut, bei Poesie 
                 Texten wird die Zeile normal hinzugefügt so wie sie im translinear.txt steht.
               </p>
               
               <p style="margin-bottom: 10px">
-                <strong>• Zusatzfunktion Kommentare:</strong> Es ist möglich, Kommentare mit Zeilennummer + k in den translinear.txt einzufügen
+                <strong>• Zusatzfunktion Kommentare:</strong> Es ist möglich, Kommentare mit (Zeilennummer + "Kommentarsuffix" k) in den
+                translinear.txt einzufügen
                 (z.B. (8k) als Zeilennummer für "Stellenkommentar zur Zeile 8" oder (125-129k) für "Bereichskommentar für Zeilen 125-129"). Diese 
                 Kommentare bieten die Möglichkeit, Kontext zu geben oder den Text zu kommentieren und sie erscheinen stets grau hinterlegt in kleinerer
                 Schrift an der Stelle, in der sie auch im translinear.txt Dokument gesetzt sind.
