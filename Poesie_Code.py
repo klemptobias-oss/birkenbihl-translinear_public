@@ -1098,44 +1098,56 @@ def measure_rendered_line_width(gr_tokens, de_tokens, *, gr_bold:bool, is_notags
     
     tag_mode = "NO_TAGS" if is_notags else "TAGS"
     
-    # Berechne Spaltenbreiten für ALLE Tokens (wie in build_tables_for_pair)
+    # KRITISCH: Berechne Breiten PER TOKEN (wie in build_tables_for_pair)!
+    # build_tables_for_pair macht: widths.append(max(w_gr, w_de, w_en))
+    # Wir müssen also für JEDEN Token das Maximum nehmen und dann summieren!
+    
     total_width = 0.0
     
-    for token in gr_tokens:
-        # KRITISCH: Verwende die GLEICHE Logik wie in build_tables_for_pair!
-        tags_in_token = RE_TAG.findall(token)
+    # Iteriere über alle Tokens (verwende längere Liste als Basis)
+    max_tokens = max(len(gr_tokens), len(de_tokens))
+    
+    for i in range(max_tokens):
+        gr_token = gr_tokens[i] if i < len(gr_tokens) else ''
+        de_token = de_tokens[i] if i < len(de_tokens) else ''
         
-        if tag_mode == "NO_TAGS" and tags_in_token:
-            # FALL 1: NoTag-PDF + Token hat Tags → Tags entfernen
-            core_text = RE_TAG_STRIP.sub('', token).strip()
-            for color_char in ['#', '+', '-', '§', '$', '~', '*']:
-                core_text = core_text.replace(color_char, '')
-            core_text = core_text.replace('|', '')
+        # GRIECHISCHES TOKEN
+        if gr_token:
+            tags_in_token = RE_TAG.findall(gr_token)
             
-            w = visible_measure_token(core_text, font=gr_font, size=GR_SIZE, cfg=cfg, is_greek_row=True)
-            w += max(GR_SIZE * 0.03, 0.8)  # Extra-Puffer (wie in build_tables_for_pair)
-            
-        elif tags_in_token and tag_mode == "TAGS":
-            # FALL 2: Tag-PDF + Token hat Tags → measure_token_width_with_visibility_poesie
-            w = measure_token_width_with_visibility_poesie(
-                token, font=gr_font, size=GR_SIZE, cfg=cfg,
-                is_greek_row=True, tag_config=tag_config, tag_mode=tag_mode
-            )
+            if tag_mode == "NO_TAGS" and tags_in_token:
+                # FALL 1: NoTag-PDF + Token hat Tags → Tags entfernen
+                core_text = RE_TAG_STRIP.sub('', gr_token).strip()
+                for color_char in ['#', '+', '-', '§', '$', '~', '*']:
+                    core_text = core_text.replace(color_char, '')
+                core_text = core_text.replace('|', '')
+                
+                w_gr = visible_measure_token(core_text, font=gr_font, size=GR_SIZE, cfg=cfg, is_greek_row=True)
+                w_gr += max(GR_SIZE * 0.03, 0.8)  # Extra-Puffer (wie in build_tables_for_pair)
+                
+            elif tags_in_token and tag_mode == "TAGS":
+                # FALL 2: Tag-PDF + Token hat Tags → measure_token_width_with_visibility_poesie
+                w_gr = measure_token_width_with_visibility_poesie(
+                    gr_token, font=gr_font, size=GR_SIZE, cfg=cfg,
+                    is_greek_row=True, tag_config=tag_config, tag_mode=tag_mode
+                )
+            else:
+                # FALL 3: Keine Tags
+                w_gr = visible_measure_token(gr_token, font=gr_font, size=GR_SIZE, cfg=cfg, is_greek_row=True)
+                w_gr += max(GR_SIZE * 0.03, 0.8)  # Extra-Puffer (wie in build_tables_for_pair)
         else:
-            # FALL 3: Keine Tags
-            w = visible_measure_token(token, font=gr_font, size=GR_SIZE, cfg=cfg, is_greek_row=True)
-            w += max(GR_SIZE * 0.03, 0.8)  # Extra-Puffer (wie in build_tables_for_pair)
+            w_gr = 0.0
         
-        total_width += w
+        # DEUTSCHES TOKEN
+        if de_token:
+            w_de = visible_measure_token(de_token, font=de_font, size=DE_SIZE, cfg=cfg, is_greek_row=False)
+        else:
+            w_de = 0.0
+        
+        # WICHTIG: Nehme Maximum PER TOKEN (wie build_tables_for_pair: widths.append(max(w_gr, w_de, w_en)))
+        total_width += max(w_gr, w_de)
     
-    # Deutsche Tokens (vereinfacht, da meist kürzer als griechisch)
-    de_width = 0.0
-    for token in de_tokens:
-        w = visible_measure_token(token, font=de_font, size=DE_SIZE, cfg=cfg, is_greek_row=False)
-        de_width += w
-    
-    # Rückgabe: Maximum von griechisch und deutsch (wie in build_tables_for_pair)
-    return max(total_width, de_width)
+    return total_width
 
 def measure_full_layout_width(gr_tokens, de_tokens, speaker, line_label, *,
                              token_gr_style, token_de_style, num_style, style_speaker,
