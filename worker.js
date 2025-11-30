@@ -81,7 +81,7 @@ export default {
         }
 
         // Draft-PDFs sind auf raw.githubusercontent.com/OWNER/REPO/main/pdf_drafts/...
-        const draftUrl = `https://raw.githubusercontent.com/${owner}/${repo}/main/pdf_drafts/${file}`;
+        const draftUrl = "https://raw.githubusercontent.com/" + owner + "/" + repo + "/main/pdf_drafts/" + file;
         const upstream = await fetch(draftUrl, {
           method: method === "HEAD" ? "HEAD" : "GET",
         });
@@ -92,7 +92,7 @@ export default {
               ok: false,
               error: "upstream_error",
               status: upstream?.status || 404,
-              message: `GitHub raw responded with ${upstream?.status || 404}`,
+              message: "GitHub raw responded with " + (upstream?.status || 404),
               url: draftUrl,
             },
             upstream?.status || 404,
@@ -179,9 +179,9 @@ export default {
       let lastStatus = 404;
 
       for (const candidate of filenameVariants) {
-        const upstreamUrl = `https://github.com/${owner}/${repo}/releases/download/${encodeURIComponent(
+        const upstreamUrl = "https://github.com/" + owner + "/" + repo + "/releases/download/" + encodeURIComponent(
           tag
-        )}/${encodeURIComponent(candidate)}`;
+        ) + "/" + encodeURIComponent(candidate);
         const attempt = await fetch(upstreamUrl, {
           method: method === "HEAD" ? "HEAD" : "GET",
         });
@@ -199,7 +199,7 @@ export default {
             ok: false,
             error: "upstream_error",
             status: lastStatus,
-            message: `GitHub responded with ${lastStatus}`,
+            message: "GitHub responded with " + lastStatus,
             attempted: filenameVariants,
           },
           lastStatus,
@@ -443,7 +443,7 @@ export default {
       ).join("");
     }
 
-    const stamped = `${baseName}_translinear_SESSION_${sessionId}_DRAFT_${tsStamp()}.txt`;
+    const stamped = baseName + "_translinear_SESSION_" + sessionId + "_DRAFT_" + tsStamp() + ".txt";
 
     const kindSafe = sanitizePathSegment(kind) || "prosa";
     const authorSafe = sanitizePathSegment(author) || "Unsortiert";
@@ -469,20 +469,20 @@ export default {
     let textWithConfig = text;
     const metadataHeaders = [];
     if (releaseBase) {
-      metadataHeaders.push(`<!-- RELEASE_BASE:${releaseBase} -->`);
+      metadataHeaders.push("<!-- RELEASE_BASE:" + releaseBase + " -->");
     }
     if (tagConfig) {
-      metadataHeaders.push(`<!-- TAG_CONFIG:${JSON.stringify(tagConfig)} -->`);
+      metadataHeaders.push("<!-- TAG_CONFIG:" + JSON.stringify(tagConfig) + " -->");
       console.log("Tag-Konfiguration eingebettet:", Object.keys(tagConfig));
     }
     if (versmassFlag) {
-      metadataHeaders.push(`<!-- VERSMASS:${versmassFlag} -->`);
+      metadataHeaders.push("<!-- VERSMASS:" + versmassFlag + " -->");
     }
     if (meterMode) {
-      metadataHeaders.push(`<!-- METER_MODE:${meterMode} -->`);
+      metadataHeaders.push("<!-- METER_MODE:" + meterMode + " -->");
     }
     if (hidePipes) {
-      metadataHeaders.push(`<!-- HIDE_PIPES:true -->`);
+      metadataHeaders.push("<!-- HIDE_PIPES:true -->");
     }
     if (metadataHeaders.length) {
       textWithConfig = metadataHeaders.join("\n") + "\n" + text;
@@ -511,11 +511,11 @@ export default {
       );
     }
 
-    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURI(
+    const apiUrl = "https://api.github.com/repos/" + owner + "/" + repo + "/contents/" + encodeURI(
       path
-    )}`;
+    );
     const body = {
-      message: `draft: ${baseName} birkenbihl (${stamped})`,
+      message: "draft: " + baseName + " birkenbihl (" + stamped + ")",
       content: toBase64Utf8(textWithConfig),
       branch,
     };
@@ -523,7 +523,7 @@ export default {
     const gh = await fetch(apiUrl, {
       method: "PUT",
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: "Bearer " + token,
         Accept: "application/vnd.github+json",
         "Content-Type": "application/json",
         "User-Agent": "birkenbihl-worker/1.0",
@@ -550,7 +550,7 @@ export default {
     console.log("Draft gespeichert, triggere GitHub Action für diese Datei...");
 
     // Trigger workflow_dispatch explizit für DIESE draft_file
-    const workflowDispatchUrl = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/build-drafts.yml/dispatches`;
+    const workflowDispatchUrl = "https://api.github.com/repos/" + owner + "/" + repo + "/actions/workflows/build-drafts.yml/dispatches";
     const dispatchPayload = {
       ref: branch,
       inputs: {
@@ -567,7 +567,7 @@ export default {
     const dispatchRes = await fetch(workflowDispatchUrl, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: "Bearer " + token,
         Accept: "application/vnd.github+json",
         "Content-Type": "application/json",
         "User-Agent": "birkenbihl-worker/1.0",
@@ -580,8 +580,8 @@ export default {
     let errorDetails = null;
     if (!dispatchRes.ok) {
       const errText = await dispatchRes.text().catch(() => "");
-      errorDetails = `Status ${dispatchRes.status}: ${errText}`;
-      console.error(`workflow_dispatch fehlgeschlagen:`, errorDetails);
+      errorDetails = "Status " + dispatchRes.status + ": " + errText;
+      console.error("workflow_dispatch fehlgeschlagen:", errorDetails);
     } else {
       console.log("workflow_dispatch erfolgreich getriggert für", path);
     }
@@ -597,14 +597,14 @@ export default {
         workflow_error: errorDetails, // Detaillierter Fehler
         message: dispatchRes.ok
           ? "Text gespeichert und PDF-Generierung automatisch gestartet. PDFs werden in wenigen Minuten verfügbar sein."
-          : `Text gespeichert, aber PDF-Generierung fehlgeschlagen: ${errorDetails}`,
+          : "Text gespeichert, aber PDF-Generierung fehlgeschlagen: " + errorDetails,
         release_base: releaseBase || null,
         session_id: sessionId, // Session-ID zurückgeben
       },
       200,
       {
         ...CORS,
-        "Set-Cookie": `birkenbihl_session=${sessionId}; Path=/; Max-Age=86400; SameSite=Lax; Secure`, // 24h Cookie
+        "Set-Cookie": "birkenbihl_session=" + sessionId + "; Path=/; Max-Age=86400; SameSite=Lax; Secure", // 24h Cookie
       }
     );
   },
@@ -687,9 +687,9 @@ function stateLangFallback(kindSafe = "prosa") {
 
 function tsStamp(d = new Date()) {
   const p = (n) => n.toString().padStart(2, "0");
-  return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}_${p(
+  return d.getFullYear() + "" + p(d.getMonth() + 1) + p(d.getDate()) + "_" + p(
     d.getHours()
-  )}${p(d.getMinutes())}${p(d.getSeconds())}`;
+  ) + p(d.getMinutes()) + p(d.getSeconds());
 }
 
 function stripUnsafe(s = "") {
