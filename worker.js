@@ -9,15 +9,19 @@ export default {
       .split(",")
       .map((s) => s.trim())
       .filter(Boolean);
+    
+    // WICHTIG: Bei credentials: 'include' darf KEIN Wildcard (*) verwendet werden!
+    // Verwende immer den spezifischen Origin (wenn in allowedList oder leer)
     const allowOrigin =
       allowedList.length === 0
-        ? "*"
+        ? origin || "*"  // Fallback auf Origin, nur wenn leer dann *
         : allowedList.includes(origin)
         ? origin
         : allowedList[0];
 
     const CORS = {
       "Access-Control-Allow-Origin": allowOrigin,
+      "Access-Control-Allow-Credentials": "true",  // KRITISCH: Für Cookies!
       Vary: "Origin",
       "Access-Control-Allow-Methods": "GET, HEAD, POST, OPTIONS",
       "Access-Control-Allow-Headers": "content-type",

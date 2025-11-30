@@ -1333,7 +1333,9 @@ async function performRendering() {
       el.draftStatus.textContent =
         "CORS-Fehler: Worker nicht erreichbar. Bitte versuchen Sie es auf der GitHub-Seite (https://klemptobias-oss.github.io/birkenbihl-translinear_public/).";
     } else {
-      el.draftStatus.textContent = `Fehler beim PDF-Erstellen: ${e.message || "Unbekannter Fehler"}`;
+      el.draftStatus.textContent = `Fehler beim PDF-Erstellen: ${
+        e.message || "Unbekannter Fehler"
+      }`;
       console.error("Draft submit stack:", e.stack);
     }
   }
