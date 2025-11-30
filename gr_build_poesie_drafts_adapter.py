@@ -270,7 +270,6 @@ def run_one(input_path: Path) -> None:
                 # suffix soll sein: "_GR_Fett_BlackWhite_NoTags" (OHNE _draft_translinear_DRAFT_...)
                 
                 # Finde den Variant-Suffix (ab _Normal oder _GR_Fett oder _LAT_Fett)
-                import re
                 variant_match = re.search(r'_(Normal|GR_Fett|LAT_Fett)_', bare)
                 if variant_match:
                     suffix = '_' + bare[variant_match.start()+1:]  # Ab dem Variant-Teil
