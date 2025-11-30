@@ -489,7 +489,35 @@ export default {
 
     const res = await gh.json();
 
-    console.log("Draft gespeichert, GitHub Action wird automatisch ausgelöst");
+    console.log("Draft gespeichert, triggere GitHub Action für diese Datei...");
+
+    // Trigger workflow_dispatch explizit für DIESE draft_file
+    const workflowDispatchUrl = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/build-drafts.yml/dispatches`;
+    const dispatchPayload = {
+      ref: branch,
+      inputs: {
+        draft_file: path,  // Nur diese Datei verarbeiten!
+      },
+    };
+
+    const dispatchRes = await fetch(workflowDispatchUrl, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        Accept: "application/vnd.github+json",
+        "Content-Type": "application/json",
+        "User-Agent": "birkenbihl-worker/1.0",
+      },
+      body: JSON.stringify(dispatchPayload),
+    });
+
+    if (!dispatchRes.ok) {
+      console.warn(
+        `workflow_dispatch fehlgeschlagen (Status ${dispatchRes.status}), aber Draft wurde gespeichert`
+      );
+    } else {
+      console.log("workflow_dispatch erfolgreich getriggert für", path);
+    }
 
     return resp(
       {

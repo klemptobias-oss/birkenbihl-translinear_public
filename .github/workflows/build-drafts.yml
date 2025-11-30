@@ -69,21 +69,27 @@ jobs:
 
           echo "Build Draft PDFs gestartet..."
 
-          # Finde alle Draft-Dateien die in diesem Commit geändert wurden
-          echo "Suche nach geänderten Draft-Dateien..."
-
-          # Prüfe ob es vorherige Commits gibt
-          if git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
-            # Vergleiche mit vorherigem Commit
-            DRAFT_FILES=$(git diff --name-only HEAD~1 HEAD | grep 'texte_drafts/.*_DRAFT_.*\.txt$' || true)
+          # NEUE LOGIK: Wenn draft_file explizit angegeben, NUR diesen verarbeiten
+          if [ -n "${{ github.event.inputs.draft_file }}" ]; then
+            echo "Expliziter Draft-Modus: Nur verarbeite ${{ github.event.inputs.draft_file }}"
+            DRAFT_FILES="${{ github.event.inputs.draft_file }}"
           else
-            # Erster Commit - suche alle Draft-Dateien
-            echo "Erster Commit erkannt, suche alle Draft-Dateien..."
-            DRAFT_FILES=$(find texte_drafts -name "*_DRAFT_*.txt" 2>/dev/null || true)
+            # Finde alle Draft-Dateien die in diesem Commit geändert wurden
+            echo "Auto-Modus: Suche nach geänderten Draft-Dateien..."
+
+            # Prüfe ob es vorherige Commits gibt
+            if git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
+              # Vergleiche mit vorherigem Commit
+              DRAFT_FILES=$(git diff --name-only HEAD~1 HEAD | grep 'texte_drafts/.*_DRAFT_.*\.txt$' || true)
+            else
+              # Erster Commit - suche alle Draft-Dateien
+              echo "Erster Commit erkannt, suche alle Draft-Dateien..."
+              DRAFT_FILES=$(find texte_drafts -name "*_DRAFT_*.txt" 2>/dev/null || true)
+            fi
           fi
 
           if [ -z "$DRAFT_FILES" ]; then
-            echo "Keine neuen Draft-Dateien gefunden"
+            echo "Keine Draft-Dateien zu verarbeiten"
             exit 0
           fi
 
