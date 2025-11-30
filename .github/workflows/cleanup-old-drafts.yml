@@ -3,8 +3,8 @@ name: Cleanup Old Drafts
 on:
   schedule:
     # Läuft täglich um 3:00 UTC
-    - cron: '0 3 * * *'
-  workflow_dispatch:  # Manuell ausführbar
+    - cron: "0 3 * * *"
+  workflow_dispatch: # Manuell ausführbar
 
 jobs:
   cleanup:
@@ -18,15 +18,15 @@ jobs:
       - name: Cleanup Old Drafts
         run: |
           set -x
-          echo "Starte Cleanup: Drafts älter als 48h werden gelöscht..."
-          
-          CUTOFF_TIME=$(date -u -d '48 hours ago' +%Y%m%d_%H%M%S)
+          echo "Starte Cleanup: Drafts älter als 24h werden gelöscht..."
+
+          CUTOFF_TIME=$(date -u -d '24 hours ago' +%Y%m%d_%H%M%S)
           echo "Cutoff-Zeit: ${CUTOFF_TIME}"
-          
+
           # Finde alle Draft-Dateien mit Zeitstempel
-          # Format: *_DRAFT_YYYYMMDD_HHMMSS.txt
-          find texte_drafts -type f -name "*_DRAFT_*.txt" | while read -r draft_file; do
-            # Extrahiere Zeitstempel aus Dateinamen
+          # Format: *_SESSION_xxx_DRAFT_YYYYMMDD_HHMMSS.txt
+          find texte_drafts -type f -name "*_DRAFT_*.txt" 2>/dev/null | while read -r draft_file; do
+            # Extrahiere Zeitstempel aus Dateinamen (nach DRAFT_)
             timestamp=$(echo "$draft_file" | grep -oP 'DRAFT_\K[0-9]{8}_[0-9]{6}' || echo "00000000_000000")
             
             if [ "$timestamp" = "00000000_000000" ]; then
@@ -36,7 +36,7 @@ jobs:
             
             # Vergleiche Zeitstempel (lexikographisch sortierbar wegen YYYYMMDD_HHMMSS)
             if [ "$timestamp" \< "$CUTOFF_TIME" ]; then
-              echo "LÖSCHE alten Draft: $draft_file (Zeitstempel: $timestamp)"
+              echo "LÖSCHE alten Draft (>24h): $draft_file (Zeitstempel: $timestamp)"
               rm -f "$draft_file"
               
               # Lösche auch zugehörige PDFs
@@ -44,25 +44,81 @@ jobs:
               base_name=$(basename "$draft_file" .txt)
               
               # Finde PDFs die diesen Base-Namen enthalten
-              find pdf_drafts -type f -name "*${base_name}*.pdf" -exec rm -f {} \;
+              find pdf_drafts -type f -name "*${base_name}*.pdf" -exec rm -f {} \; 2>/dev/null
               echo "  ✓ Zugehörige PDFs ebenfalls gelöscht"
-            else
-              echo "Behalte aktuellen Draft: $draft_file (Zeitstempel: $timestamp)"
             fi
           done
           
+          echo ""
+          echo "Phase 2: Lösche ALTE Drafts desselben Nutzers für dasselbe Werk (behalte nur neuesten pro Werk+Session)"
+          echo ""
+          
+          # Gruppiere Drafts nach Session + Werk-Pfad
+          # Format: agamemnon_gr_de_en_stil1_SESSION_abc123_DRAFT_20251130_032356.txt
+          # Gruppierung: SESSION_abc123 + Werk-Name (alles VOR _SESSION_)
+          
+          declare -A LATEST_DRAFTS
+          
+          find texte_drafts -type f -name "*_SESSION_*_DRAFT_*.txt" 2>/dev/null | while read -r draft_file; do
+            filename=$(basename "$draft_file")
+            
+            # Extrahiere Session-ID
+            session_id=$(echo "$filename" | grep -oP 'SESSION_\K[a-f0-9]{16}' || echo "")
+            if [ -z "$session_id" ]; then
+              continue
+            fi
+            
+            # Extrahiere Werk-Base (alles VOR _translinear_SESSION_)
+            work_base=$(echo "$filename" | sed 's/_translinear_SESSION_.*//')
+            
+            # Extrahiere Zeitstempel
+            timestamp=$(echo "$filename" | grep -oP 'DRAFT_\K[0-9]{8}_[0-9]{6}' || echo "00000000_000000")
+            
+            # Gruppe = Session + Werk-Base
+            group_key="${session_id}__${work_base}"
+            
+            # Vergleiche mit aktuellem neuesten Draft für diese Gruppe
+            current_latest="${LATEST_DRAFTS[$group_key]}"
+            if [ -z "$current_latest" ]; then
+              LATEST_DRAFTS[$group_key]="$timestamp|$draft_file"
+            else
+              current_ts=$(echo "$current_latest" | cut -d'|' -f1)
+              if [ "$timestamp" \> "$current_ts" ]; then
+                # Neuer Draft ist neuer → Lösche den alten
+                old_file=$(echo "$current_latest" | cut -d'|' -f2)
+                echo "LÖSCHE älteren Draft: $old_file (Zeitstempel: $current_ts, neuer: $timestamp)"
+                rm -f "$old_file"
+                
+                # Lösche zugehörige PDFs
+                old_base=$(basename "$old_file" .txt)
+                find pdf_drafts -type f -name "*${old_base}*.pdf" -exec rm -f {} \; 2>/dev/null
+                
+                # Aktualisiere neuesten
+                LATEST_DRAFTS[$group_key]="$timestamp|$draft_file"
+              else
+                # Aktueller Draft ist älter → Lösche ihn
+                echo "LÖSCHE älteren Draft: $draft_file (Zeitstempel: $timestamp, neuer: $current_ts)"
+                rm -f "$draft_file"
+                
+                # Lösche zugehörige PDFs
+                base_name=$(basename "$draft_file" .txt)
+                find pdf_drafts -type f -name "*${base_name}*.pdf" -exec rm -f {} \; 2>/dev/null
+              fi
+            fi
+          done
+
           echo "Cleanup abgeschlossen."
 
       - name: Commit Cleanup
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           if git diff --quiet && git diff --staged --quiet; then
             echo "Keine Änderungen zum Committen"
             exit 0
           fi
-          
+
           git add -A
           git commit -m "cleanup: Alte Drafts (>48h) automatisch gelöscht"
           git push

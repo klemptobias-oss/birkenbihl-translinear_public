@@ -395,7 +395,21 @@ export default {
       .replace(/_translinear_?/gi, "_");
     if (!baseName) baseName = stripUnsafe(work) || "Entwurf";
 
-    const stamped = `${baseName}_translinear_DRAFT_${tsStamp()}.txt`;
+    // WICHTIG: SESSION-ID aus Cookie lesen (oder generieren)
+    // Format: SESSION_abc123def456 (16-stellige Hex-ID)
+    const cookieHeader = request.headers.get("Cookie") || "";
+    let sessionId = null;
+    const sessionMatch = cookieHeader.match(/birkenbihl_session=([a-f0-9]{16})/);
+    if (sessionMatch) {
+      sessionId = sessionMatch[1];
+    } else {
+      // Neue Session generieren (16 hex chars = 64 bits Zufälligkeit)
+      sessionId = Array.from({ length: 16 }, () =>
+        Math.floor(Math.random() * 16).toString(16)
+      ).join("");
+    }
+
+    const stamped = `${baseName}_translinear_SESSION_${sessionId}_DRAFT_${tsStamp()}.txt`;
 
     const kindSafe = sanitizePathSegment(kind) || "prosa";
     const authorSafe = sanitizePathSegment(author) || "Unsortiert";
@@ -540,9 +554,13 @@ export default {
         message:
           "Text gespeichert und PDF-Generierung automatisch gestartet. PDFs werden in wenigen Minuten verfügbar sein.",
         release_base: releaseBase || null,
+        session_id: sessionId,  // Session-ID zurückgeben
       },
       200,
-      CORS
+      {
+        ...CORS,
+        "Set-Cookie": `birkenbihl_session=${sessionId}; Path=/; Max-Age=86400; SameSite=Lax; Secure`,  // 24h Cookie
+      }
     );
   },
 };

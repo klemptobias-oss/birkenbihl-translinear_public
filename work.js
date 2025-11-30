@@ -1227,6 +1227,7 @@ async function performRendering() {
       method: "POST",
       body: form,
       mode: "cors",
+      credentials: "include",  // WICHTIG: Cookies senden/empfangen
     });
 
     if (!res || !res.ok) {
@@ -1235,6 +1236,12 @@ async function performRendering() {
 
     const data = await res.json();
     if (!data?.ok) throw new Error("Worker-Antwort unvollständig.");
+
+    // WICHTIG: Session-ID speichern (für spätere Requests)
+    if (data.session_id) {
+      sessionStorage.setItem("birkenbihl_session", data.session_id);
+      console.log("Session-ID gespeichert:", data.session_id);
+    }
 
     const releaseBaseFromWorker = normalizeReleaseBase(
       data.release_base || null
