@@ -401,7 +401,7 @@ export default {
         {
           ok: false,
           error: "too_large",
-          message: `Text exceeds ${BYTE_LIMIT} bytes`,
+          message: "Text exceeds " + BYTE_LIMIT + " bytes",
         },
         413,
         CORS
