@@ -1,0 +1,2232 @@
+<!-- RELEASE_BASE:GR_poesie_Drama_Aischylos_Choreophoren__choreophoren_gr_en_stil1_birkenbihl -->
+<!-- TAG_CONFIG:{"nomen":{"color":"orange","hide":true,"hideTranslation":true},"nomen_N":{"color":"orange","hide":true,"hideTranslation":true},"nomen_G":{"color":"orange","hide":true,"hideTranslation":true},"nomen_D":{"color":"orange","hide":true,"hideTranslation":true},"nomen_A":{"color":"orange","hide":true,"hideTranslation":true},"nomen_V":{"color":"orange","hide":true,"hideTranslation":true},"nomen_Du":{"color":"orange","hide":true,"hideTranslation":true},"verb":{"color":"green"},"verb_Pra":{"color":"green","placement":"sub"},"verb_Imp":{"color":"green","placement":"sub"},"verb_Aor":{"color":"green","placement":"sub"},"verb_AorS":{"color":"green","placement":"sub"},"verb_Per":{"color":"green","placement":"sub"},"verb_Plq":{"color":"green","placement":"sub"},"verb_Fu":{"color":"green","placement":"sub"},"verb_Du":{"color":"green","placement":"sup"},"verb_Akt":{"color":"green","placement":"sub"},"verb_Med":{"color":"green","placement":"sub"},"verb_Pas":{"color":"green","placement":"sub"},"verb_MP":{"color":"green","placement":"sub"},"verb_Inf":{"color":"green","placement":"sub"},"verb_Op":{"color":"green","placement":"sub"},"verb_Knj":{"color":"green","placement":"sub"},"verb_Imv":{"color":"green","placement":"sub"},"partizip":{"color":"violett"},"partizip_Pra":{"color":"violett","placement":"sub"},"partizip_Imp":{"color":"violett","placement":"sub"},"partizip_Aor":{"color":"violett","placement":"sub"},"partizip_AorS":{"color":"violett","placement":"sub"},"partizip_Per":{"color":"violett","placement":"sub"},"partizip_Plq":{"color":"violett","placement":"sub"},"partizip_Fu":{"color":"violett","placement":"sub"},"partizip_N":{"color":"violett","placement":"sup"},"partizip_G":{"color":"violett","placement":"sup"},"partizip_D":{"color":"violett","placement":"sup"},"partizip_A":{"color":"violett","placement":"sup"},"partizip_V":{"color":"violett","placement":"sup"},"partizip_Du":{"color":"violett","placement":"sup"},"partizip_Akt":{"color":"violett","placement":"sub"},"partizip_Med":{"color":"violett","placement":"sub"},"partizip_Pas":{"color":"violett","placement":"sub"},"partizip_MP":{"color":"violett","placement":"sub"},"adjektiv":{"color":"blue","placement":"sup"},"adjektiv_N":{"color":"blue","placement":"sup"},"adjektiv_G":{"color":"blue","placement":"sup"},"adjektiv_D":{"color":"blue","placement":"sup"},"adjektiv_A":{"color":"blue","placement":"sup"},"adjektiv_V":{"color":"blue","placement":"sup"},"adjektiv_Du":{"color":"blue","placement":"sup"},"adjektiv_Kmp":{"color":"blue","placement":"sup"},"adjektiv_Sup":{"color":"blue","placement":"sup"},"adverb":{"placement":"sup"},"adverb_Kmp":{"placement":"sup"},"adverb_Sup":{"placement":"sup"},"pronomen":{"placement":"sub"},"pronomen_N":{"placement":"sup"},"pronomen_G":{"placement":"sup"},"pronomen_D":{"placement":"sup"},"pronomen_A":{"placement":"sup"},"pronomen_Du":{"placement":"sup"},"artikel":{"placement":"sup"},"artikel_N":{"placement":"sup"},"artikel_G":{"placement":"sup"},"artikel_D":{"placement":"sup"},"artikel_A":{"placement":"sup"},"artikel_Du":{"placement":"sup"},"prp":{"placement":"sup"},"kon":{"placement":"sup"},"pt":{"placement":"sup"},"ij":{"placement":"sup"}} -->
+<!-- VERSMASS:false -->
+<!-- METER_MODE:without -->
+==== Choreophoren ====
+=== Episode ===
+(1) [Χορός:] Ἑρμῆ(V) χθόνιε(Adj)(V), πατρῷʼ(Adj)(A) ἐποπτεύων(Prä)(Akt)(N) κράτη(A),
+(1) [Χορός:] Hermes chthonian, ancestral overseeing powers,
+(2) [Χορός:] σωτὴρ(V) γενοῦ(Aor)(Med)(Imv) μοι(Pr)(D) ξύμμαχός(Adj)(N) τʼ(Pt) αἰτουμένῳ(Prä)(M/P)(D)·
+(2) [Χορός:] savior become to|me ally and to|the|asking|one·
+(3) [Χορός:] ἥκω(Prä)(Akt) γὰρ(Pt) ἐς(Prp) γῆν(A) τήνδε(Pr)(A) καὶ(Kon) κατέρχομαι(Prä)(Med).
+(3) [Χορός:] I|have|come for into land this|here and I|go|down.
+(4) [Χορός:] τύμβου(G) δʼ(Pt) ἐπʼ(Prp) ὄχθῳ(D) τῷδε(Pr)(D) κηρύσσω(Prä)(Akt) πατρὶ(D)
+(4) [Χορός:] of|tomb but on mound this|here I|proclaim to|father
+(5) [Χορός:] κλύειν(Prä)(Inf)(Akt), ἀκοῦσαι(Aor)(Inf)(Akt)
+(5) [Χορός:] to|hear, to|hear
+(5b) [Χορός:] [[Zeile Lost]]
+(6) [Χορός:] πλόκαμον(A) Ἰνάχῳ(D) θρεπτήριον(Adj)(A).
+(6) [Χορός:] lock to|Inachus nurturing.
+(7) [Χορός:] τὸν(Art)(A) δεύτερον(Adj)(A) δὲ(Pt) τόνδε(Pr)(A) πενθητήριον(Adj)(A)
+(7) [Χορός:] the second but this|here mourning
+(7b) [Χορός:] [[Zeile Lost]]
+(8) [Χορός:] οὐ(Pt) γὰρ(Pt) παρὼν(Prä)(Akt)(N) ᾤμωξα(Aor)(Akt) σόν(Adj)(A), πάτερ(V), μόρον(A)
+(8) [Χορός:] not for being|present I|wailed your, father, fate
+(9) [Χορός:] οὐδʼ(Pt) ἐξέτεινα(Aor)(Akt) χεῖρʼ(A) ἐπʼ(Prp) ἐκφορᾷ(D) νεκροῦ(G).
+(9) [Χορός:] not|even I|stretched|out hand upon funeral|procession of|corpse.
+(9b) [Χορός:] [[Zeile Lost]]
+(10) [Χορός:] τί(Adv) χρῆμα(A) λεύσσω(Prä)(Akt); τίς(Pr)(N) ποθʼ(Pt) ἥδʼ(Pr)(N) ὁμήγυρις(N)
+(10) [Χορός:] what thing do|I|see; who ever this|here assembly
+(11) [Χορός:] στείχει(Prä)(Akt) γυναικῶν(G) φάρεσιν(D) μελαγχίμοις(Adj)(D)
+(11) [Χορός:] goes of|women with|garments black|robed
+(12) [Χορός:] πρέπουσα(Prä)(Akt)(N); ποίᾳ(Pr)(D) ξυμφορᾷ(D) προσεικάσω(Aor)(Akt)(Knj);
+(12) [Χορός:] fitting; to|which misfortune shall|I|liken;
+(13) [Χορός:] πότερα(Kon) δόμοισι(D) πῆμα(N) προσκυρεῖ(Prä)(Akt) νέον(Adj)(N);
+(13) [Χορός:] whether to|houses bane befalls new;
+(14) [Χορός:] ἢ(Kon) πατρὶ(D) τὠμῷ(Pr)(D) τάσδʼ(Pr)(A) ἐπεικάσας(Aor)(Akt)(N) τύχω(AorS)(Akt)(Knj)
+(14) [Χορός:] or to|father to|my these|here having|likened may|I|happen|upon
+(15) [Χορός:] χοὰς(A) φερούσας(Prä)(Akt)(A) νερτέροις(Adj)(D) μειλίγματα(A);
+(15) [Χορός:] libations bearing to|nether|ones appeasements;
+(16) [Χορός:] οὐδέν(A) ποτʼ(Pt) ἄλλο(Adj)(A)· καὶ(Kon) γὰρ(Pt) Ἠλέκτραν(A) δοκῶ(Prä)(Akt)
+(16) [Χορός:] nothing at|all other· and for Electra I|think
+(17) [Χορός:] στείχειν(Prä)(Inf)(Akt) ἀδελφὴν(A) τὴν(Art)(A) ἐμὴν(Adj)(A) πένθει(D) λυγρῷ(Adj)(D)
+(17) [Χορός:] to|go sister the my in|grief grievous
+(18) [Χορός:] πρέπουσαν(Prä)(Akt)(A). ὦ(ij) Ζεῦ(V), δός(Aor)(Imv)(Akt) με(Pr)(A) τείσασθαι(Aor)(Med)(Inf) μόρον(A)
+(18) [Χορός:] fitting. O Zeus, grant me to|pay|back fate
+(19) [Χορός:] πατρός(G), γενοῦ(Aor)(Med)(Imv) δὲ(Pt) σύμμαχος(Adj)(N) θέλων(Prä)(Akt)(N) ἐμοί(Pr)(D).
+(19) [Χορός:] of|father, become but ally willing to|me.
+(20) [Χορός:] Πυλάδη(V), σταθῶμεν(AorS)(Pas)(Knj) ἐκποδών(Adv), ὡς(Kon) ἂν(Pt) σαφῶς(Adv)
+(20) [Χορός:] Pylades, let|us|stand out|of|the|way, so|that ever clearly
+(21) [Χορός:] μάθω(AorS)(Akt)(Knj) γυναικῶν(G) ἥτις(Pr)(N) ἥδε(Pr)(N) προστροπή(N).
+(21) [Χορός:] I|may|learn of|women whoever this|here approach.
+=== Chor ===
+== Strophe 1 ==
+(22) [Χορός:] ἰαλτὸς(Adv) ἐκ(Prp) δόμων(G) ἔβαν(AorS)(Akt)
+(22) [Χορός:] with|a|leap out|of of|houses they|went
+(23) [Χορός:] χοὰς(A) προπομπὸς(N) ὀξύχειρι(Adj)(D) σὺν(Prp) κτύπῳ(D).
+(23) [Χορός:] libations escort sharp|handed with din.
+(24) [Χορός:] πρέπει(Prä)(Akt) παρηὶς(N) φοινίοις(Adj)(D) ἀμυγμοῖς(D)
+(24) [Χορός:] befits cheek with|bloody scratches
+(25) [Χορός:] ὄνυχος(G) ἄλοκι(D) νεοτόμῳ(Adj)(D)·
+(25) [Χορός:] of|nail furrow newly|cut·
+(26) [Χορός:] διʼ(Prp) αἰῶνος(G) δʼ(Pt) ἰυγμοῖσι(D) βόσκεται(Prä)(M/P) κέαρ(N).
+(26) [Χορός:] through lifetime but with|shrieks is|fed heart.
+(27) [Χορός:] λινοφθόροι(Adj)(N) δʼ(Pt) ὑφασμάτων(G)
+(27) [Χορός:] linen|destroying but of|weavings
+(28) [Χορός:] λακίδες(N) ἔφλαδον(Aor)(Akt) ὑπʼ(Prp) ἄλγεσιν(D),
+(28) [Χορός:] rents gaped under pains,
+(29) [Χορός:] προστέρνῳ(D) στολμῷ(D)
+(29) [Χορός:] at|the|breast garment
+(30) [Χορός:] πέπλων(G) ἀγελάστοις(Adj)(D)
+(30) [Χορός:] of|robes unsmiling
+(31) [Χορός:] ξυμφοραῖς(D) πεπληγμένων(Per)(Pas)(G).
+(31) [Χορός:] with|misfortunes of|smitten.
+== Antistrophe 1 ==
+(32) [Χορός:] τορὸς(Adj)(N) δὲ(Pt) Φοῖβος(N) ὀρθόθριξ(Adj)(N)
+(32) [Χορός:] clear but Phoebus upright|haired
+(33) [Χορός:] δόμων(G) ὀνειρόμαντις(N), ἐξ(Prp) ὕπνου(G) κότον(A)
+(33) [Χορός:] of|houses dream|prophet, out|of sleep wrath
+(34) [Χορός:] πνέων(Prä)(Akt)(N), ἀωρόνυκτον(Adj)(A) ἀμβόαμα(A)
+(34) [Χορός:] breathing, untimely|night outcry
+(35) [Χορός:] μυχόθεν(Adv) ἔλακε(Aor)(Akt) περὶ(Prp) φόβῳ(D),
+(35) [Χορός:] from|the|inner|place cried|aloud about fear,
+(36) [Χορός:] γυναικείοισιν(Adj)(D) ἐν(Prp) δώμασιν(D) βαρὺς(Adj)(N) πίτνων(Prä)(Akt)(N).
+(36) [Χορός:] womanly in chambers heavy falling.
+(37) [Χορός:] κριταί(N) τε(Pt) τῶνδʼ(Pr)(G) ὀνειράτων(G)
+(37) [Χορός:] judges and of|these dreams
+(38) [Χορός:] θεόθεν(Adv) ἔλακον(Aor)(Akt) ὑπέγγυοι(Adj)(N)
+(38) [Χορός:] from|god cried|out guarantors
+(39) [Χορός:] μέμφεσθαι(Prä)(M/P)(Inf) τοὺς(Art)(A) γᾶς(G)
+(39) [Χορός:] to|blame the of|earth
+(40) [Χορός:] νέρθεν(Adv) περιθύμως(Adv)
+(40) [Χορός:] from|below earnestly
+(41) [Χορός:] τοῖς(Art)(D) κτανοῦσί(AorS)(Akt)(D) τʼ(Pt) ἐγκοτεῖν(Prä)(Inf)(Akt).
+(41) [Χορός:] to|the having|killed and to|bear|grudge.
+== Strophe 2 ==
+(42) [Χορός:] τοιάνδε(Adj)(A) χάριν(A) ἀχάριτον(Adj)(A) ἀπότροπον(Adj)(A) κακῶν(G),
+(42) [Χορός:] such favor ungracious averter of|evils,
+(43) [Χορός:] ἰὼ(ij) γαῖα(N) μαῖα(N),
+(43) [Χορός:] io earth mother,
+(45) [Χορός:] μωμένα(Per)(M/P)(A) μʼ(Pr)(A) ἰάλλει(Prä)(Akt)
+(45) [Χορός:] having|been|deluded me hurls
+(46) [Χορός:] δύσθεος(Adj)(V) γυνά(V). φοβοῦ‖μαι(Prä)(M/P)
+(46) [Χορός:] ungodly woman. I|fear
+(47) [Χορός:] δʼ(Pt) ἔπος(N) τόδʼ(Pr)(N) ἐκβαλεῖν(Aor)(Inf)(Akt).
+(47) [Χορός:] but word this|here to|throw|out.
+(48) [Χορός:] τί(Adv) γὰρ(Pt) λύτρον(N) πεσόντος(Aor)(Akt)(G) αἵματος(G) πέδοι(Adv);
+(48) [Χορός:] what for ransom of|fallen blood on|the|ground;
+(49) [Χορός:] ἰὼ(ij) πάνοιζυς(Adj)(V) ἑστία(V),
+(49) [Χορός:] io all|pure hearth,
+(50) [Χορός:] ἰὼ(ij) κατασκαφαὶ(V) δόμων(G).
+(50) [Χορός:] io demolitions of|houses.
+(51) [Χορός:] ἀνήλιοι(Adj)(N) βροτοστυγεῖς(Adj)(N)
+(51) [Χορός:] sunless mortals|hating
+(52) [Χορός:] δνόφοι(N) καλύπτουσι(Prä)(Akt) δόμους(A)
+(52) [Χορός:] glooms cover houses
+(53) [Χορός:] δεσποτῶν(G) θανάτοισι(D).
+(53) [Χορός:] of|masters with|deaths.
+== Antistrophe 2 ==
+(55) [Χορός:] σέβας(N) δʼ(Pt) ἄμαχον(Adj)(N) ἀδάματον(Adj)(N) ἀπόλεμον(Adj)(N) τὸ(Art)(N) πρὶν(Adv)
+(55) [Χορός:] awe but unconquered untamed unwarlike the before
+(56) [Χορός:] διʼ(Prp) ὤτων(G) φρενός(G) τε(Pt)
+(56) [Χορός:] through ears of|mind and
+(57) [Χορός:] δαμίας(Adj)(N) περαῖνον(Prä)(Akt)
+(57) [Χορός:] subduing bring|to|completion
+(58) [Χορός:] νῦν(Adv) ἀφίσταται(Prä)(M/P). φοβεῖ‖ται(Prä)(M/P)
+(58) [Χορός:] now withdraws. is|afraid
+(59) [Χορός:] δέ(Pt) τις(N). τὸ(Art)(N) δʼ(Pt) εὐτυχεῖν(Prä)(Inf)(Akt),
+(59) [Χορός:] but someone. the and to|be|fortunate,
+(60) [Χορός:] τόδʼ(Pr)(N) ἐν(Prp) βροτοῖς(D) θεός(N) τε(Pt) καὶ(Kon) θεοῦ(G) πλέον(Adj)(N)(Kmp).
+(60) [Χορός:] this|here among mortals god and also of|god more.
+(61) [Χορός:] ῥοπὴ(N) δʼ(Pt) ἐπισκοπεῖ(Prä)(Akt) δίκας(A)
+(61) [Χορός:] swing but inspects judgments
+(62) [Χορός:] ταχεῖα(Adj)(N) τοὺς(Art)(A) μὲν(Pt) ἐν(Prp) φάει(D),
+(62) [Χορός:] swift those indeed in light,
+(63) [Χορός:] τὰ(Art)(A) δʼ(Pt) ἐν(Prp) μεταιχμίῳ(D) σκότου(G)
+(63) [Χορός:] the|things but in mid|line of|darkness
+(64) [Χορός:] μένει(Prä)(Akt) χρονίζοντας(Prä)(Akt)(A) ἄχη(A) βρύει(Prä)(Akt),
+(64) [Χορός:] it|remains lingering pains swells,
+(65) [Χορός:] τοὺς(Art)(A) δʼ(Pt) ἄκραντος(Adj)(A) ἔχει(Prä)(Akt) νύξ(N).
+(65) [Χορός:] those but unfulfilled holds night.
+== Strophe 3 ==
+(66) [Χορός:] διʼ(Prp) αἵματʼ(A) ἐκποθένθʼ(Aor)(Pas)(A) ὑπὸ(Prp) χθονὸς(G) τροφοῦ(G)
+(66) [Χορός:] through bloods drunk|out under of|earth nurse
+(67) [Χορός:] τίτας(Adj)(N) φόνος(N) πέπηγεν(Per)(Akt) οὐ(Pt) διαρρύδαν(Adv).
+(67) [Χορός:] avenging slaughter has|set|fast not to|wash|away.
+(68) [Χορός:] διαλγὴς(N) δʼ(Pt) ἄτα(N) διαφέρει(Prä)(Akt)
+(68) [Χορός:] pain|of|grief but ruin prevails
+(70) [Χορός:] τὸν(Art)(A) αἴτιον(Adj)(A) παναρκέτας(Adj)(A) νόσου(G) βρύειν(Prä)(Inf)(Akt).
+(70) [Χορός:] the cause all|sufficient of|disease to|seethe.
+== Antistrophe 3 ==
+(71) [Χορός:] θιγόντι(AorS)(Akt)(D) δʼ(Pt) οὔτι(Pt) νυμφικῶν(Adj)(G) ἑδωλίων(G)
+(71) [Χορός:] to|one|having|touched but not|at|all of|bridal seats
+(72) [Χορός:] ἄκος(N), πόροι(N) τε(Pt) πάντες(Adj)(N) ἐκ(Prp) μιᾶς(Adj)(G) ὁδοῦ(G)
+(72) [Χορός:] remedy, resources and all out|of one road
+(73) [Χορός:] προβαίνοντες(Prä)(Akt)(N) τὸν(Art)(A) χερομυσῆ(Adj)(A)
+(73) [Χορός:] going|forward the hand|defiled
+(74) [Χορός:] φόνον(A) καθαίροντες(Prä)(Akt)(N) ἴθυσαν(Aor)(Akt) μάταν(Adv).
+(74) [Χορός:] murder purifying rushed vainly.
+== Epode ==
+(75) [Χορός:] ἐμοὶ(Pr)(D) δʼ(Pt) —ἀνάγκαν(A) γὰρ(Pt) ἀμφίπτολιν(Adj)(A)
+(75) [Χορός:] to|me but —necessity for two|fold
+(76) [Χορός:] θεοὶ(N) προσήνεγκαν(Aor)(Akt)· ʽἐκ(Prp) γὰρ(Pt) οἴκων(G)
+(76) [Χορός:] gods brought· out|of for houses
+(77) [Χορός:] πατρῴων(Adj)(G) δούλιόν(Adj)(A) μʼ(Pr)(A) ἐσᾶγον(Imp)(Akt) αἶσαν̓̓(A)
+(77) [Χορός:] of|ancestral servile me were|leading fate
+(78) [Χορός:] δίκαια(Adj)(A) καὶ(Kon) μὴ(Pt) δίκαια(Adj)(A) ἀρχὰς(A) πρέπον(Prä)(Akt)(N)
+(78) [Χορός:] just and not just powers fitting
+(80) [Χορός:] βίᾳ(D) φρενῶν(G) αἰνέσαι(Aor)(Inf)(Akt)
+(80) [Χορός:] by|force of|minds to|praise
+(81) [Χορός:] πικρὸν(Adj)(A) στύγος(A) κρατούσῃ(Prä)(Akt)(D).
+(81) [Χορός:] bitter hatred to|one|ruling.
+(82) [Χορός:] δακρύω(Prä)(Akt) δʼ(Pt) ὑφʼ(Prp) εἱμάτων(G)
+(82) [Χορός:] I|weep but under of|garments
+(83) [Χορός:] ματαίοισι(Adj)(D) δεσποτᾶν(G)
+(83) [Χορός:] in|vain of|masters
+(83b) [Χορός:] τύχαις(D), κρυφαίοις(Adj)(D) πένθεσιν(D) παχνουμένη(Prä)(M/P)(N).
+(83b) [Χορός:] by|fortunes, secret with|griefs being|congealed.
+=== Episode ===
+(84) [Ἠλέκτρα:] δμωαὶ(N) γυναῖκες(N), δωμάτων(G) εὐθήμονες(Adj)(N),
+(84) [Ἠλέκτρα:] maidservants women, of|houses orderly,
+(85) [Ἠλέκτρα:] ἐπεὶ(Kon) πάρεστε(Prä)(Akt) τῆσδε(Pr)(G) προστροπῆς(G) ἐμοὶ(Pr)(D)
+(85) [Ἠλέκτρα:] since you|are|present of|this approach to|me
+(86) [Ἠλέκτρα:] πομποί(N), γένεσθε(Aor)(Med)(Imv) τῶνδε(Pr)(G) σύμβουλοι(N) πέρι(Prp)·
+(86) [Ἠλέκτρα:] escorts, become of|these advisers about·
+(87) [Ἠλέκτρα:] τί(Adv) φῶ(Prä)(Akt) χέουσα(Prä)(Akt)(N) τάσδε(Art)(A) κηδείους(Adj)(A) χοάς(A);
+(87) [Ἠλέκτρα:] what do|I|say pouring these funeral libations;
+(88) [Ἠλέκτρα:] πῶς(Adv) εὔφρονʼ(Adv) εἴπω(AorS)(Akt)(Knj), πῶς(Adv) κατεύξομαι(Fu)(Med) πατρί(D);
+(88) [Ἠλέκτρα:] how graciously shall|I|say, how shall|I|pray to|father;
+(89) [Ἠλέκτρα:] πότερα(Kon) λέγουσα(Prä)(Akt)(N) παρὰ(Prp) φίλης(Adj)(G) φίλῳ(D) φέρειν(Prä)(Inf)(Akt)
+(89) [Ἠλέκτρα:] whether speaking from a|female|friend to|a|friend to|bring
+(90) [Ἠλέκτρα:] γυναικὸς(G) ἀνδρί(D), τῆς(Art)(G) ἐμῆς(Adj)(G) μητρὸς(G) πάρα(Prp);
+(90) [Ἠλέκτρα:] of|woman to|man, of|the my mother from;
+(91) [Ἠλέκτρα:] τῶνδʼ(Pr)(G) οὐ(Pt) πάρεστι(Prä)(Akt) θάρσος(N), οὐδʼ(Pt) ἔχω(Prä)(Akt) τί(Adv) φῶ(Prä)(Akt),
+(91) [Ἠλέκτρα:] of|these not is|present courage, nor I|have anything I|say,
+(92) [Ἠλέκτρα:] χέουσα(Prä)(Akt)(N) τόνδε(Art)(A) πέλανον(A) ἐν(Prp) τύμβῳ(D) πατρός(G).
+(92) [Ἠλέκτρα:] pouring this mixture in tomb of|father.
+(93) [Ἠλέκτρα:] ἢ(Kon) τοῦτο(Pr)(A) φάσκω(Prä)(Akt) τοὔπος(N), ὡς(Kon) νόμος(N) βροτοῖς(D),
+(93) [Ἠλέκτρα:] or this I|assert the|word, as custom|law to|mortals,
+(94) [Ἠλέκτρα:] ἔσθλʼ(Adj)(A) ἀντιδοῦναι(Aor)(Inf)(Akt) τοῖσι(Art)(D) πέμπουσιν(Prä)(Akt)(D) τάδε(Pr)(A)
+(94) [Ἠλέκτρα:] good|things to|give|back to|the sending these
+(95) [Ἠλέκτρα:] στέφη(A), δόσιν(A) γε(Pt) τῶν(Art)(G) κακῶν(Adj)(G) ἐπαξίαν(Adj)(A);
+(95) [Ἠλέκτρα:] garlands, giving at|least of|the evils worthy;
+(96) [Ἠλέκτρα:] ἢ(Kon) σῖγʼ(Adv) ἀτίμως(Adv), ὥσπερ(Kon) οὖν(Pt) ἀπώλετο(Aor)(M/P)
+(96) [Ἠλέκτρα:] or silently dishonorably, just|as then perished
+(97) [Ἠλέκτρα:] πατήρ(N), τάδʼ(Pr)(A) ἐκχέασα(Aor)(Akt), γάποτον(Adj)(A) χύσιν(A),
+(97) [Ἠλέκτρα:] father, these I|poured|out, indeed|undrinkable pouring,
+(98) [Ἠλέκτρα:] στείχω(Prä)(Akt) καθάρμαθʼ(A) ὥς(Kon) τις(Pr)(N) ἐκπέμψας(Aor)(Akt)(N) πάλιν(Adv)
+(98) [Ἠλέκτρα:] I|go purifications as someone having|sent|out again
+(99) [Ἠλέκτρα:] δικοῦσα(Prä)(Akt)(N) τεῦχος(A) ἀστρόφοισιν(Adj)(D) ὄμμασιν(D);
+(99) [Ἠλέκτρα:] judging vessel with|averted eyes;
+(100) [Ἠλέκτρα:] τῆσδʼ(Pr)(G) ἐστὲ(Prä)(Akt) βουλῆς(G), ὦ(ij) φίλαι(V), μεταίτιαι(Adj)(N)·
+(100) [Ἠλέκτρα:] of|this you|are of|counsel, O dear|ones, joint|causes·
+(101) [Ἠλέκτρα:] κοινὸν(Adj)(A) γὰρ(Pt) ἔχθος(A) ἐν(Prp) δόμοις(D) νομίζομεν(Prä)(Akt).
+(101) [Ἠλέκτρα:] common for enmity in houses we|consider.
+(102) [Ἠλέκτρα:] μὴ(Pt) κεύθετʼ(Prä)(Akt)(Imv) ἔνδον(Adv) καρδίας(G) φόβῳ(D) τινός(Pr)(G).
+(102) [Ἠλέκτρα:] not hide inside of|heart with|fear of|someone.
+(103) [Ἠλέκτρα:] τὸ(Art)(N) μόρσιμον(Adj)(N) γὰρ(Pt) τόν(Art)(A) τʼ(Pt) ἐλεύθερον(Adj)(A) μένει(Prä)(Akt)
+(103) [Ἠλέκτρα:] the fated for the and free awaits
+(104) [Ἠλέκτρα:] καὶ(Kon) τὸν(Art)(A) πρὸς(Prp) ἄλλης(Adj)(G) δεσποτούμενον(Prä)(M/P)(A) χερός(G).
+(104) [Ἠλέκτρα:] and the by of|another being|ruled of|hand.
+(105) [Ἠλέκτρα:] λέγοις(Prä)(Akt)(Op) ἄν(Pt), εἴ(Kon) τι(Pr)(A) τῶνδʼ(Pr)(G) ἔχοις(Prä)(Akt)(Op) ὑπέρτερον(Adj)(A)(Kmp).
+(105) [Ἠλέκτρα:] you|might|say would, if anything of|these you|might|have superior.
+(106) [Χορός:] αἰδουμένη(Prä)(M/P)(N) σοι(Pr)(D) βωμὸν(A) ὡς(Kon) τύμβον(A) πατρὸς(G)
+(106) [Χορός:] revering to|you altar as tomb of|father
+(107) [Χορός:] λέξω(Fu)(Akt), κελεύεις(Prä)(Akt) γάρ(Pt), τὸν(Art)(A) ἐκ(Prp) φρενὸς(G) λόγον(A).
+(107) [Χορός:] I|will|say, you|bid for, the from of|mind word.
+(108) [Ἠλέκτρα:] λέγοις(Prä)(Akt)(Op) ἄν(Pt), ὥσπερ(Kon) ᾐδέσω(Aor)(M/P) τάφον(A) πατρός(G).
+(108) [Ἠλέκτρα:] you|might|say would, just|as you|revered tomb of|father.
+(109) [Χορός:] φθέγγου(Prä)(M/P)(Imv) χέουσα(Prä)(Akt)(N) κεδνὰ(Adj)(A) τοῖσιν(Art)(D) εὔφροσιν(Adj)(D).
+(109) [Χορός:] utter pouring prudent to|the well|disposed.
+(110) [Ἠλέκτρα:] τίνας(Pr)(A) δὲ(Pt) τούτους(Pr)(A) τῶν(Art)(G) φίλων(G) προσεννέπω(Prä)(Akt);
+(110) [Ἠλέκτρα:] whom but these of|the friends do|I|address;
+(111) [Χορός:] πρῶτον(Adv)(Sup) μὲν(Pt) αὑτὴν(Pr)(A) χὤστις(Kon)(Pr)(N) Αἴγισθον(A) στυγεῖ(Prä)(Akt).
+(111) [Χορός:] first indeed herself and|whoever Aegisthus hates.
+(112) [Ἠλέκτρα:] ἐμοί(Pr)(D) τε(Pt) καὶ(Kon) σοί(Pr)(D) τἄρʼ(Pt) ἐπεύξομαι(Fu)(Med) τάδε(Pr)(A);
+(112) [Ἠλέκτρα:] to|me and also to|you then I|will|pray these;
+(113) [Χορός:] αὐτὴ(Pr)(N) σὺ(Pr)(N) ταῦτα(Pr)(A) μανθάνουσʼ(Prä)(Akt)(N) ἤδη(Adv) φράσαι(Aor)(Inf)(Akt).
+(113) [Χορός:] yourself you these learning already to|tell.
+(114) [Ἠλέκτρα:] τίνʼ(Pr)(A) οὖν(Pt) ἔτʼ(Pt) ἄλλον(Adj)(A) τῇδε(Pr)(D) προστιθῶ(Prä)(Akt) στάσει(D);
+(114) [Ἠλέκτρα:] whom then still another to|this I|add to|faction;
+(115) [Χορός:] μέμνησʼ(Per)(M/P)(Imv) Ὀρέστου(G), κεἰ(Kon) θυραῖός(Adj)(N) ἐσθʼ(Prä)(Akt) ὅμως(Adv).
+(115) [Χορός:] remember of|Orestes, and|if outside is nevertheless.
+(116) [Ἠλέκτρα:] εὖ(Adv) τοῦτο(Pr)(A), κἀφρένωσας(Kon)(Aor)(Akt) οὐχ(Pt) ἥκιστά(Adv)(Sup) με(Pr)(A).
+(116) [Ἠλέκτρα:] well this, and|you|have|made|sober not least me.
+(117) [Χορός:] τοῖς(Art)(D) αἰτίοις(Adj)(D) νῦν(Adv) τοῦ(Art)(G) φόνου(G) μεμνημένη(Per)(M/P)(N)—
+(117) [Χορός:] to|the responsible now of|the of|murder remembering—
+(118) [Ἠλέκτρα:] τί(Adv) φῶ(Prä)(Akt); δίδασκʼ(Prä)(Akt)(Imv) ἄπειρον(Adj)(A) ἐξηγουμένη(Prä)(M/P)(N).
+(118) [Ἠλέκτρα:] what do|I|say; teach inexperienced explaining.
+(119) [Χορός:] ἐλθεῖν(AorS)(Inf)(Akt) τινʼ(Pr)(A) αὐτοῖς(Pr)(D) δαίμονʼ(A) ἢ(Kon) βροτῶν(G) τινα(Pr)(A)—
+(119) [Χορός:] to|come someone to|them a|spirit or of|mortals someone—
+(120) [Ἠλέκτρα:] πότερα(Kon) δικαστὴν(A) ἢ(Kon) δικηφόρον(A) λέγεις(Prä)(Akt);
+(120) [Ἠλέκτρα:] whether judge or justice|bearing do|you|say;
+(121) [Χορός:] ἅπλῶς(Adv) τι(Pr)(A) φράζουσʼ(Prä)(M/P)(N), ὅστις(Pr)(N) ἀνταποκτενεῖ(Fu)(Akt).
+(121) [Χορός:] simply something speaking, whoever will|kill|in|return.
+(122) [Ἠλέκτρα:] καὶ(Kon) ταῦτά(Pr)(A) μοὐστὶν(Pr)(D)(Prä)(Akt) εὐσεβῆ(Adj)(A) θεῶν(G) πάρα(Prp);
+(122) [Ἠλέκτρα:] and these to|me|is pious of|gods from;
+(123) [Χορός:] πῶς(Adv) δʼ(Pt) οὐ(Pt) τὸν(Art)(A) ἐχθρὸν(A) ἀνταμείβεσθαι(Prä)(M/P)(Inf) κακοῖς(D);
+(123) [Χορός:] how but not the enemy to|repay with|evils;
+(124) [Ἠλέκτρα:] κῆρυξ(V) μέγιστε(Adj)(V)(Sup) τῶν(Art)(G) ἄνω(Adv) τε(Pt) καὶ(Kon) κάτω(Adv),
+(124) [Ἠλέκτρα:] herald greatest of|the above and also below,
+(124a) [Ἠλέκτρα:] ἄρηξον(Aor)(Akt)(Imv), Ἑρμῆ(V) χθόνιε(Adj)(V), κηρύξας(Aor)(Akt)(N) ἐμοὶ(Pr)(D)
+(124a) [Ἠλέκτρα:] help, Hermes chthonian, having|proclaimed to|me
+(125) [Ἠλέκτρα:] τοὺς(Art)(A) γῆς(G) ἔνερθε(Adv) δαίμονας(A) κλύειν(Prä)(Inf)(Akt) ἐμὰς(Adj)(A)
+(125) [Ἠλέκτρα:] the of|earth beneath spirits to|hear my
+(126) [Ἠλέκτρα:] εὐχάς(A), πατρῴων(Adj)(G) δωμάτων(G) ἐπισκόπους(A),
+(126) [Ἠλέκτρα:] prayers, ancestral of|houses overseers,
+(127) [Ἠλέκτρα:] καὶ(Kon) Γαῖαν(A) αὐτήν(Pr)(A), ἣ(Pr)(N) τὰ(Art)(A) πάντα(Adj)(A) τίκτεται(Prä)(M/P),
+(127) [Ἠλέκτρα:] and Earth herself, who the all begets,
+(128) [Ἠλέκτρα:] θρέψασά(Aor)(Akt)(N) τʼ(Pt) αὖθις(Adv) τῶνδε(Pr)(G) κῦμα(A) λαμβάνει(Prä)(Akt)·
+(128) [Ἠλέκτρα:] having|nourished and again of|these wave takes·
+(129) [Ἠλέκτρα:] κἀγὼ(Kon)(Pr)(N) χέουσα(Prä)(Akt)(N) τάσδε(Art)(A) χέρνιβας(A) βροτοῖς(D)
+(129) [Ἠλέκτρα:] and|I pouring these lustral|waters to|mortals
+(130) [Ἠλέκτρα:] λέγω(Prä)(Akt) καλοῦσα(Prä)(Akt)(N) πατέρʼ(A), ἐποίκτιρόν(Aor)(Akt)(Imv) τʼ(Pt) ἐμὲ(Pr)(A)
+(130) [Ἠλέκτρα:] I|say calling father, pity and me
+(131) [Ἠλέκτρα:] φίλον(Adj)(A) τʼ(Pt) Ὀρέστην(A)· πῶς(Adv) ἀνάξομεν(Fu)(Akt) δόμοις(D);
+(131) [Ἠλέκτρα:] dear and Orestes· how shall|we|bring|back to|houses;
+(132) [Ἠλέκτρα:] πεπραμένοι(Per)(M/P)(N) γὰρ(Pt) νῦν(Adv) γέ(Pt) πως(Adv) ἀλώμεθα(Prä)(M/P)
+(132) [Ἠλέκτρα:] having|been|sold for now at|least somehow we|wander
+(133) [Ἠλέκτρα:] πρὸς(Prp) τῆς(Art)(G) τεκούσης(Per)(Akt)(G), ἄνδρα(A) δʼ(Pt) ἀντηλλάξατο(Aor)(M/P)
+(133) [Ἠλέκτρα:] by of|the having|borne, husband but she|exchanged
+(134) [Ἠλέκτρα:] Αἴγισθον(A), ὅσπερ(Pr)(N) σοῦ(Pr)(G) φόνου(G) μεταίτιος(Adj)(N).
+(134) [Ἠλέκτρα:] Aegisthus, who|indeed of|you of|murder joint|cause.
+(135) [Ἠλέκτρα:] κἀγὼ(Kon)(Pr)(N) μὲν(Pt) ἀντίδουλος(Adj)(N)· ἐκ(Prp) δὲ(Pt) χρημάτων(G)
+(135) [Ἠλέκτρα:] and|I indeed counter|slave· out|of but of|goods
+(136) [Ἠλέκτρα:] φεύγων(Prä)(Akt)(N) Ὀρέστης(N) ἐστίν(Prä)(Akt), οἱ(Art)(N) δʼ(Pt) ὑπερκόπως(Adv)
+(136) [Ἠλέκτρα:] fleeing Orestes is, the|ones but exceedingly
+(137) [Ἠλέκτρα:] ἐν(Prp) τοῖσι(Art)(D) σοῖς(Adj)(D) πόνοισι(D) χλίουσιν(Prä)(Akt) μέγα(Adv).
+(137) [Ἠλέκτρα:] in the your labors they|luxuriate greatly.
+(138) [Ἠλέκτρα:] ἐλθεῖν(AorS)(Inf)(Akt) δʼ(Pt) Ὀρέστην(A) δεῦρο(Adv) σὺν(Prp) τύχῃ(D) τινὶ(Pr)(D)
+(138) [Ἠλέκτρα:] to|come but Orestes hither with with|fortune some
+(139) [Ἠλέκτρα:] κατεύχομαί(Prä)(M/P) σοι(Pr)(D), καὶ(Kon) σὺ(Pr)(N) κλῦθί(Aor)(Imv)(Akt) μου(Pr)(G), πάτερ(V)·
+(139) [Ἠλέκτρα:] I|pray to|you, and you hear of|me, father·
+(140) [Ἠλέκτρα:] αὐτῇ(Pr)(D) τέ(Pt) μοι(Pr)(D) δὸς(Aor)(Imv)(Akt) σωφρονεστέραν(Adj)(A)(Kmp) πολὺ(Adv)
+(140) [Ἠλέκτρα:] to|her and to|me give more|temperate much
+(141) [Ἠλέκτρα:] μητρὸς(G) γενέσθαι(Aor)(Med)(Inf) χεῖρά(A) τʼ(Pt) εὐσεβεστέραν(Adj)(A)(Kmp).
+(141) [Ἠλέκτρα:] of|mother to|become hand and more|pious.
+(142) [Ἠλέκτρα:] ἡμῖν(Pr)(D) μὲν(Pt) εὐχὰς(A) τάσδε(Pr)(A), τοῖς(Art)(D) δʼ(Pt) ἐναντίοις(Adj)(D)
+(142) [Ἠλέκτρα:] to|us indeed prayers these, to|the but adversaries
+(143) [Ἠλέκτρα:] λέγω(Prä)(Akt) φανῆναί(Aor)(Pas)(Inf) σου(Pr)(G), πάτερ(V), τιμάορον(A),
+(143) [Ἠλέκτρα:] I|say to|appear of|you, father, honor|avenger,
+(144) [Ἠλέκτρα:] καὶ(Kon) τοὺς(Art)(A) κτανόντας(Aor)(Akt)(A) ἀντικατθανεῖν(AorS)(Inf)(Akt) δίκῃ(D).
+(144) [Ἠλέκτρα:] and the|ones having|killed to|die|in|return with|justice.
+(145) [Ἠλέκτρα:] ταῦτʼ(Pr)(A) ἐν(Prp) μέσῳ(Adj)(D) τίθημι(Prä)(Akt) τῆς(Art)(G) καλῆς(Adj)(G) ἀρᾶς(G),
+(145) [Ἠλέκτρα:] these|things in the|midst I|place of the|fair prayer,
+(146) [Ἠλέκτρα:] κείνοις(Pr)(D) λέγουσα(Prä)(Akt)(N) τήνδε(Pr)(A) τὴν(Art)(A) κακὴν(Adj)(A) ἀράν(A)·
+(146) [Ἠλέκτρα:] to|those speaking this the evil curse·
+(147) [Ἠλέκτρα:] ἡμῖν(Pr)(D) δὲ(Pt) πομπὸς(N) ἴσθι(Prä)(Imv)(Akt) τῶν(Art)(G) ἐσθλῶν(Adj)(G) ἄνω(Adv),
+(147) [Ἠλέκτρα:] to|us but guide be of the|good from|above,
+(148) [Ἠλέκτρα:] σὺν(Prp) θεοῖσι(D) καὶ(Kon) γῇ(D) καὶ(Kon) δίκῃ(D) νικηφόρῳ(Adj)(D).
+(148) [Ἠλέκτρα:] with gods and earth and justice victory|bearing.
+(149) [Ἠλέκτρα:] τοιαῖσδʼ(Adj)(D) ἐπʼ(Prp) εὐχαῖς(D) τάσδʼ(Pr)(A) ἐπισπένδω(Prä)(Akt) χοάς(A).
+(149) [Ἠλέκτρα:] such upon prayers these I|pour|over libations.
+(150) [Ἠλέκτρα:] ὑμᾶς(Pr)(A) δὲ(Pt) κωκυτοῖς(D) ἐπανθίζειν(Prä)(Inf)(Akt) νόμος(N),
+(150) [Ἠλέκτρα:] you but with|wailings to|wreathe custom|law,
+(151) [Ἠλέκτρα:] παιᾶνα(A) τοῦ(Art)(G) θανόντος(AorS)(Akt)(G) ἐξαυδωμένας(Per)(M/P)(A).
+(151) [Ἠλέκτρα:] paean of the|having|died spoken|out.
+(152) [Χορός:] ἵετε(Prä)(Akt)(Imv) δάκρυ(A) καναχὲς(Adj)(A) ὀλόμενον(AorS)(Med)(A)
+(152) [Χορός:] send a|tear ringing perishing
+(153) [Χορός:] ὀλομένῳ(AorS)(Med)(D) δεσπότᾳ(D)
+(153) [Χορός:] to|the|destroyed master
+(154) [Χορός:] πρὸς(Prp) ἔρυμα(A) τόδε(Pr)(A) κακῶν(Adj)(G), κεδνῶν(Adj)(G) τʼ(Pt)
+(154) [Χορός:] toward defense this of|evils, of|useful and
+(155) [Χορός:] ἀπότροπον(Adj)(A) ἄγος(A) ἀπεύχετον(Adj)(A)
+(155) [Χορός:] averting pollution prayed|against
+(156) [Χορός:] κεχυμένων(Per)(M/P)(G) χοᾶν(G). κλύε(Prä)(Imv)(Akt) δέ(Pt) μοι(Pr)(D), κλύε(Prä)(Imv)(Akt), σέ‖βας(N)
+(156) [Χορός:] of|poured libations. hear but to|me, hear, reverence
+(157) [Χορός:] ὦ(ij) δέσποτʼ(V), ἐξ(Prp) ἀμαυρᾶς(Adj)(G) φρενός(G).
+(157) [Χορός:] O master, out|of dark mind.
+(158) [Χορός:] ὀτοτοτοτοτοτοτοῖ(ij),
+(158) [Χορός:] otototototototoi,
+(159) [Χορός:] ἴτω(Prä)(Akt)(Imv) τις(Pr)(N) δορυ‖σθενὴς(Adj)(N)
+(159) [Χορός:] let|him|go someone spear|strong
+(160) [Χορός:] ἀνήρ(N), ἀναλυτὴρ(N) δόμων(G),
+(160) [Χορός:] man, deliverer of|houses,
+(161) [Χορός:] Σκυθικά(Adj)(A) τʼ(Pt) ἐν(Prp) χεροῖν(Du)(D) παλίντονʼ(Adj)(A)
+(161) [Χορός:] Scythian and in the|two|hands back|bent
+(162) [Χορός:] ἐν(Prp) ἔργῳ(D) βέλη(A) ʼπιπάλλων(Prä)(Akt)(N) Ἄρης(N)
+(162) [Χορός:] in deed arrows upon|brandishing Ares
+(163) [Χορός:] σχέδιά(Adj)(A) τʼ(Pt) αὐτόκωπα(Adj)(A) νωμῶν(Prä)(Akt)(N) ξίφη(A).
+(163) [Χορός:] at|close|quarters and self|edged wielding swords.
+(164) [Ἠλέκτρα:] ἔχει(Prä)(Akt) μὲν(Pt) ἤδη(Adv) γαπότους(Adj)(A) χοὰς(A) πατήρ(N)·
+(164) [Ἠλέκτρα:] has indeed already undrinkable libations father·
+(165) [Ἠλέκτρα:] νέου(Adj)(G) δὲ(Pt) μύθου(G) τοῦδε(Pr)(G) κοινωνήσατε(Aor)(Akt)(Imv)·
+(165) [Ἠλέκτρα:] of|new but of|speech of|this share·
+(166) [Χορός:] λέγοις(Prä)(Akt)(Op) ἄν(Pt)· ὀρχεῖται(Prä)(M/P) δὲ(Pt) καρδία(N) φόβῳ(D).
+(166) [Χορός:] you|might|say at|least· dances but heart with|fear.
+(167) [Ἠλέκτρα:] ὁρῶ(Prä)(Akt) τομαῖον(Adj)(A) τόνδε(Pr)(A) βόστρυχον(A) τάφῳ(D).
+(167) [Ἠλέκτρα:] I|see cut this lock for|the|tomb.
+(168) [Χορός:] τίνος(Pr)(G) ποτʼ(Pt) ἀνδρός(G), ἢ(Kon) βαθυζώνου(Adj)(G) κόρης(G);
+(168) [Χορός:] of|whom ever of|man, or of|deep|girdled maiden;
+(170) [Ἠλέκτρα:] εὐξύμβολον(Adj)(N) τόδʼ(Pr)(N) ἐστὶ(Prä)(Akt) παντὶ(Adj)(D) δοξάσαι(Aor)(Inf)(Akt).
+(170) [Ἠλέκτρα:] easy|to|conjecture this is to|every|one to|think.
+(171) [Χορός:] πῶς(Adv) οὖν(Pt); παλαιὰ(Adj)(N) παρὰ(Prp) νεωτέρας(Adj)(G) μάθω(AorS)(Akt)(Knj).
+(171) [Χορός:] how then; old|one from the|younger shall|I|learn.
+(172) [Ἠλέκτρα:] οὐκ(Pt) ἔστιν(Prä)(Akt) ὅστις(Pr)(N) πλὴν(Prp) ἐμοῦ(Pr)(G) κείραιτό(Aor)(M/P)(Op) νιν(Pr)(A).
+(172) [Ἠλέκτρα:] not there|is whoever except of|me would|cut him.
+(173) [Χορός:] ἐχθροὶ(Adj)(N) γὰρ(Pt) οἷς(Pr)(D) προσῆκε(Prä)(Akt) πενθῆσαι(Aor)(Inf)(Akt) τριχί(D).
+(173) [Χορός:] enemies for to|whom is|fitting to|mourn with|hair.
+(174) [Ἠλέκτρα:] καὶ(Kon) μὴν(Pt) ὅδʼ(Pr)(N) ἐστὶ(Prä)(Akt) κάρτʼ(Adv) ἰδεῖν(AorS)(Inf)(Akt) ὁμόπτερος(Adj)(N)—
+(174) [Ἠλέκτρα:] and indeed this is very to|see same|winged—
+(175) [Χορός:] ποίαις(Adj)(D) ἐθείραις(D); τοῦτο(Pr)(A) γὰρ(Pt) θέλω(Prä)(Akt) μαθεῖν(AorS)(Inf)(Akt).
+(175) [Χορός:] with|what locks; this for I|wish to|learn.
+(176) [Ἠλέκτρα:] αὐτοῖσιν(Pr)(D) ἡμῖν(Pr)(D) κάρτα(Adv) προσφερὴς(Adj)(N) ἰδεῖν(AorS)(Inf)(Akt).
+(176) [Ἠλέκτρα:] to|the|same to|us very fitting to|see.
+(177) [Χορός:] μῶν(Pt) οὖν(Pt) Ὀρέστου(G) κρύβδα(Adv) δῶρον(N) ἦν(Imp)(Akt) τόδε(Pr)(N);
+(177) [Χορός:] surely|not then of|Orestes secretly gift was this;
+(178) [Ἠλέκτρα:] μάλιστʼ(Adv)(Sup) ἐκείνου(Pr)(G) βοστρύχοις(D) προσείδεται(Prä)(M/P).
+(178) [Ἠλέκτρα:] most|certainly of|that|one with|curls it|resembles.
+(179) [Χορός:] καὶ(Kon) πῶς(Adv) ἐκεῖνος(Pr)(N) δεῦρʼ(Adv) ἐτόλμησεν(Aor)(Akt) μολεῖν(AorS)(Inf)(Akt);
+(179) [Χορός:] and how that|one hither dared to|come;
+(180) [Ἠλέκτρα:] ἔπεμψε(Aor)(Akt) χαίτην(A) κουρίμην(Adj)(A) χάριν(A) πατρός(G).
+(180) [Ἠλέκτρα:] sent lock first|shorn for|the|sake|of father.
+(181) [Χορός:] οὐχ(Pt) ἧσσον(Adj)(N)(Kmp) εὐδάκρυτά(Adj)(A) μοι(Pr)(D) λέγεις(Prä)(Akt) τάδε(Pr)(A),
+(181) [Χορός:] not less tear|ready to|me you|say these,
+(182) [Χορός:] εἰ(Kon) τῆσδε(Pr)(G) χώρας(G) μήποτε(Adv) ψαύσει(Fu)(Akt) ποδί(D).
+(182) [Χορός:] if of|this land never will|touch with|foot.
+(183) [Ἠλέκτρα:] κἀμοὶ(Kon)(Pr)(D) προσέστη(AorS)(Akt) καρδίας(G) κλυδώνιον(N)
+(183) [Ἠλέκτρα:] and|to|me stood|near of|heart surge
+(184) [Ἠλέκτρα:] χολῆς(G), ἐπαίσθην(Aor)(M/P) δʼ(Pt) ὡς(Kon) διανταίῳ(Adj)(D) βέλει(D)·
+(184) [Ἠλέκτρα:] of|anger, I|perceived but as with|opposed arrow·
+(185) [Ἠλέκτρα:] ἐξ(Prp) ὀμμάτων(G) δὲ(Pt) δίψιοι(Adj)(N) πίπτουσί(Prä)(Akt) μοι(Pr)(D)
+(185) [Ἠλέκτρα:] out|of eyes but thirsty fall to|me
+(186) [Ἠλέκτρα:] σταγόνες(N) ἄφρακτοι(Adj)(N) δυσχίμου(Adj)(G) πλημμυρίδος(G),
+(186) [Ἠλέκτρα:] drops unbarred of|ill|winter flood,
+(187) [Ἠλέκτρα:] πλόκαμον(A) ἰδούσῃ(AorS)(Akt)(D) τόνδε(Pr)(A)· πῶς(Adv) γὰρ(Pt) ἐλπίσω(Fu)(Akt)
+(187) [Ἠλέκτρα:] lock to|me|having|seen this· how for shall|I|hope
+(188) [Ἠλέκτρα:] ἀστῶν(G) τινʼ(Pr)(A) ἄλλον(Adj)(A) τῆσδε(Pr)(G) δεσπόζειν(Prä)(Inf)(Akt) φόβης(G);
+(188) [Ἠλέκτρα:] of|citizens someone other of|this to|rule fear;
+(189) [Ἠλέκτρα:] ἀλλʼ(Kon) οὐδὲ(Pt) μήν(Pt) νιν(Pr)(A) ἡ(Art)(N) κτανοῦσʼ(AorS)(Akt)(N) ἐκείρατο(Aor)(M/P),
+(189) [Ἠλέκτρα:] but not|even indeed him the having|killed cut|for|herself,
+(190) [Ἠλέκτρα:] ἐμὴ(Adj)(N) δὲ(Pt) μήτηρ(N), οὐδαμῶς(Adv) ἐπώνυμον(Adj)(N)
+(190) [Ἠλέκτρα:] my but mother, by|no|means name|worthy
+(191) [Ἠλέκτρα:] φρόνημα(N) παισὶ(D) δύσθεον(Adj)(N) πεπαμένη(Per)(M/P)(N).
+(191) [Ἠλέκτρα:] spirit to|children ungodly having|been|imbued.
+(192) [Ἠλέκτρα:] ἐγὼ(Pr)(N) δʼ(Pt) ὅπως(Kon) μὲν(Pt) ἄντικρυς(Adv) τάδʼ(Pr)(A) αἰνέσω(Fu)(Akt),
+(192) [Ἠλέκτρα:] I but how indeed straight|out these I|will|praise,
+(193) [Ἠλέκτρα:] εἶναι(Prä)(Inf)(Akt) τόδʼ(Pr)(N) ἀγλάισμά(N) μοι(Pr)(D) τοῦ(Art)(G) φιλτάτου(Adj)(G)(Sup)
+(193) [Ἠλέκτρα:] to|be this ornament to|me of the|dearest
+(194) [Ἠλέκτρα:] βροτῶν(G) Ὀρέστου— σαίνομαι(Prä)(M/P) δʼ(Pt) ὑπʼ(Prp) ἐλπίδος(G).
+(194) [Ἠλέκτρα:] of|mortals of|Orestes— I|am|wheedled but by hope.
+(195) [Ἠλέκτρα:] φεῦ(ij).
+(195) [Ἠλέκτρα:] alas.
+(195b) [Ἠλέκτρα:] εἴθʼ(Kon) εἶχε(Imp)(Akt) φωνὴν(A) εὔφρονʼ(Adj)(A) ἀγγέλου(G) δίκην(A),
+(195b) [Ἠλέκτρα:] if|only it|had voice kindly of|messenger manner,
+(196) [Ἠλέκτρα:] ὅπως(Kon) δίφροντις(Adj)(N) οὖσα(Prä)(Akt)(N) μὴ(Pt) ʼκινυσσόμην(Imp)(M/P),
+(196) [Ἠλέκτρα:] so|that double|minded being not I|was|stirred,
+(197) [Ἠλέκτρα:] ἀλλʼ(Kon) εὖ(Adv) ʼσαφήνει(Prä)(Akt) τόνδʼ(Pr)(A) ἀποπτύσαι(Aor)(Inf)(Akt) πλόκον(A),
+(197) [Ἠλέκτρα:] but well makes|clear this to|reject lock,
+(198) [Ἠλέκτρα:] εἴπερ(Kon) γʼ(Pt) ἀπʼ(Prp) ἐχθροῦ(G) κρατὸς(G) ἦν(Imp)(Akt) τετμημένος(Per)(M/P)(N),
+(198) [Ἠλέκτρα:] if|indeed at|least from enemy head was having|been|cut,
+(199) [Ἠλέκτρα:] ἢ(Kon) ξυγγενὴς(Adj)(N) ὢν(Prä)(Akt)(N) εἶχε(Imp)(Akt) συμπενθεῖν(Prä)(Inf)(Akt) ἐμοὶ(Pr)(D)
+(199) [Ἠλέκτρα:] or with|born being had to|mourn|with to|me
+(200) [Ἠλέκτρα:] ἄγαλμα(A) τύμβου(G) τοῦδε(Pr)(G) καὶ(Kon) τιμὴν(A) πατρός(G).
+(200) [Ἠλέκτρα:] offering of|tomb of|this and honor of|father.
+(201) [Ἠλέκτρα:] ἀλλʼ(Kon) εἰδότας(Per)(Akt)(A) μὲν(Pt) τοὺς(Art)(A) θεοὺς(A) καλούμεθα(Prä)(M/P),
+(201) [Ἠλέκτρα:] but knowing indeed the gods we|call,
+(202) [Ἠλέκτρα:] οἵοισιν(Adj)(D) ἐν(Prp) χειμῶσι(D) ναυτίλων(G) δίκην(A)
+(202) [Ἠλέκτρα:] such|as in storms of|sailors manner
+(203) [Ἠλέκτρα:] στροβούμεθʼ(Prä)(M/P)· εἰ(Kon) δὲ(Pt) χρὴ(Prä)(Akt) τυχεῖν(AorS)(Inf)(Akt) σωτηρίας(G),
+(203) [Ἠλέκτρα:] we|are|whirled· if but it|is|needful to|attain of|safety,
+(204) [Ἠλέκτρα:] σμικροῦ(Adj)(G) γένοιτʼ(AorS)(Med)(Op) ἂν(Pt) σπέρματος(G) μέγας(Adj)(N) πυθμήν(N).
+(204) [Ἠλέκτρα:] of|small might|become at|least of|seed great base.
+(205) [Ἠλέκτρα:] καὶ(Kon) μὴν(Pt) στίβοι(N) γε(Pt), δεύτερον(Adj)(N) τεκμήριον(N),
+(205) [Ἠλέκτρα:] and indeed tracks at|least, second proof,
+(206) [Ἠλέκτρα:] ποδῶν(G) ὅμοιοι(Adj)(N) τοῖς(Art)(D) τʼ(Pt) ἐμοῖσιν(Pr)(D) ἐμφερεῖς(Adj)(N)—
+(206) [Ἠλέκτρα:] of|feet like to|the and to|my resembling—
+(207) [Ἠλέκτρα:] καὶ(Kon) γὰρ(Pt) δύʼ(Adj)(N) ἐστὸν(Prä)(Akt)(Du) τώδε(Pr)(Du)(N) περιγραφὰ(N) ποδοῖν(Du)(G),
+(207) [Ἠλέκτρα:] and for two are these|two outlines of|two|feet,
+(208) [Ἠλέκτρα:] αὐτοῦ(Pr)(G) τʼ(Pt) ἐκείνου(Pr)(G) καὶ(Kon) συνεμπόρου(G) τινός(Pr)(G).
+(208) [Ἠλέκτρα:] of|himself and of|that|one and of|fellow|traveler of|someone.
+(209) [Ἠλέκτρα:] πτέρναι(N) τενόντων(G) θʼ(Pt) ὑπογραφαὶ(N) μετρούμεναι(Prä)(M/P)(N)
+(209) [Ἠλέκτρα:] heels of|tendons and outlines being|measured
+(210) [Ἠλέκτρα:] εἰς(Prp) ταὐτὸ(Pr)(A) συμβαίνουσι(Prä)(Akt) τοῖς(Art)(D) ἐμοῖς(Pr)(D) στίβοις(D).
+(210) [Ἠλέκτρα:] into the|same they|concur to|the my tracks.
+(211) [Ἠλέκτρα:] πάρεστι(Prä)(Akt) δʼ(Pt) ὠδὶς(N) καὶ(Kon) φρενῶν(G) καταφθορά(N).
+(211) [Ἠλέκτρα:] is|present but pang and of|minds ruin.
+(212) [Ὀρέστης:] εὔχου(Prä)(M/P)(Imv) τὰ(Art)(A) λοιπά(Adj)(A), τοῖς(Art)(D) θεοῖς(D) τελεσφόρους(Adj)(A)
+(212) [Ὀρέστης:] pray the remaining, to|the gods fulfillment|bearing
+(213) [Ὀρέστης:] εὐχὰς(A) ἐπαγγέλλουσα(Prä)(Akt)(N), τυγχάνειν(Prä)(Inf)(Akt) καλῶς(Adv).
+(213) [Ὀρέστης:] prayers proclaiming, to|obtain well.
+(214) [Ἠλέκτρα:] ἐπεὶ(Kon) τί(Pr)(A) νῦν(Adv) ἕκατι(Prp) δαιμόνων(G) κυρῶ(Prä)(Akt);
+(214) [Ἠλέκτρα:] since what now on|account|of of|spirits do|I|meet|with;
+(215) [Ὀρέστης:] εἰς(Prp) ὄψιν(A) ἥκεις(Prä)(Akt) ὧνπερ(Pr)(G) ἐξηύχου(Imp)(M/P) πάλαι(Adv).
+(215) [Ὀρέστης:] into sight you|come of|which|indeed you|were|praying long|ago.
+(216) [Ἠλέκτρα:] καὶ(Kon) τίνα(Pr)(A) σύνοισθά(Per)(Akt) μοι(Pr)(D) καλουμένῃ(Prä)(M/P)(D) βροτῶν(G);
+(216) [Ἠλέκτρα:] and whom are|you|aware to|me being|called of|mortals;
+(217) [Ὀρέστης:] σύνοιδʼ(Per)(Akt) Ὀρέστην(A) πολλά(Adj)(A) σʼ(Pr)(A) ἐκπαγλουμένην(Prä)(M/P)(A).
+(217) [Ὀρέστης:] I|am|aware Orestes much you being|astonished.
+(218) [Ἠλέκτρα:] καὶ(Kon) πρὸς(Prp) τί(Adv) δῆτα(Pt) τυγχάνω(Prä)(Akt) κατευγμάτων(G);
+(218) [Ἠλέκτρα:] and toward what indeed I|happen of|prayers;
+(219) [Ὀρέστης:] ὅδʼ(Pr)(N) εἰμί(Prä)(Akt)· μὴ(Pt) μάτευʼ(Prä)(Akt)(Imv) ἐμοῦ(Pr)(G) μᾶλλον(Adv)(Kmp) φίλον(Adj)(A).
+(219) [Ὀρέστης:] this|one I|am· not seek of|me more dear.
+(220) [Ἠλέκτρα:] ἀλλʼ(Kon) ἦ(Pt) δόλον(A) τινʼ(Pr)(A), ὦ(ij) ξένʼ(V), ἀμφί(Prp) μοι(Pr)(D) πλέκεις(Prä)(Akt);
+(220) [Ἠλέκτρα:] but indeed trick some, O stranger, around to|me you|weave;
+(221) [Ὀρέστης:] αὐτὸς(Pr)(N) καθʼ(Prp) αὑτοῦ(Pr)(G) τἄρα(Pt) μηχανορραφῶ(Prä)(Akt).
+(221) [Ὀρέστης:] myself against my|self then I|weave|plots.
+(222) [Ἠλέκτρα:] ἀλλʼ(Kon) ἐν(Prp) κακοῖσι(Adj)(D) τοῖς(Art)(D) ἐμοῖς(Pr)(D) γελᾶν(Prä)(Inf)(Akt) θέλεις(Prä)(Akt).
+(222) [Ἠλέκτρα:] but in evils the my to|laugh you|wish.
+(223) [Ὀρέστης:] κἀν(Kon)(Prp) τοῖς(Art)(D) ἐμοῖς(Pr)(D) ἄρʼ(Pt), εἴπερ(Kon) ἔν(Prp) γε(Pt) τοῖσι(Art)(D) σοῖς(Adj)(D)
+(223) [Ὀρέστης:] and|in the my then, if|indeed in at|least the yours
+(224) [Ἠλέκτρα:] ὡς(Kon) ὄντʼ(Prä)(Akt)(A) Ὀρέστην(A) τάδε(Pr)(A) σʼ(Pr)(A) ἐγὼ(Pr)(N) προσεννέπω(Prä)(Akt);
+(224) [Ἠλέκτρα:] that being Orestes these you I address;
+(225) [Ὀρέστης:] αὐτὸν(Pr)(A) μὲν(Pt) οὖν(Pt) ὁρῶσα(Prä)(Akt)(N) δυσμαθεῖς(Adj)(N) ἐμέ(Pr)(A)·
+(225) [Ὀρέστης:] the|very indeed then seeing hard|to|know me·
+(226) [Ὀρέστης:] κουρὰν(A) δʼ(Pt) ἰδοῦσα(AorS)(Akt)(N) τήνδε(Pr)(A) κηδείου(Adj)(G) τριχὸς(G)
+(226) [Ὀρέστης:] a|lock but having|seen this of|funeral of|hair
+(227) [Ὀρέστης:] ἀνεπτερώθης(Aor)(Pas) κἀδόκεις(Kon)(Imp)(Akt) ὁρᾶν(Prä)(Inf)(Akt) ἐμέ(Pr)(A).
+(227) [Ὀρέστης:] you|were|winged and|you|seemed to|see me.
+(228) [Ὀρέστης:] ἰχνοσκοποῦσά(Prä)(Akt)(N) τʼ(Pt) ἐν(Prp) στίβοισι(D) τοῖς(Art)(D) ἐμοῖς(Pr)(D)
+(228) [Ὀρέστης:] tracking and in tracks the my
+(229) [Ὀρέστης:] σαυτῆς(Pr)(G) ἀδελφοῦ(G) σύμμετρον(Adj)(A) τὠμῷ(Art)(D)(Pr)(D) κάρᾳ(D).
+(229) [Ὀρέστης:] of|your|self of|brother commensurate to|the|my head.
+(230) [Ὀρέστης:] σκέψαι(Aor)(Med)(Imv) τομῇ(D) προσθεῖσα(AorS)(Akt)(N) βόστρυχον(A) τριχὸς(G)
+(230) [Ὀρέστης:] examine with|a|cut having|added curl of|hair
+(231) [Ὀρέστης:] ἰδοῦ(ij) δʼ(Pt) ὕφασμα(N) τοῦτο(Pr)(N), σῆς(Pr)(G) ἔργον(N) χερός(G),
+(231) [Ὀρέστης:] look but weaving this, of|you work of|hand,
+(232) [Ὀρέστης:] σπάθης(G) τε(Pt) πληγὰς(A) ἠδὲ(Kon) θήρειον(Adj)(A) γραφήν(A).
+(232) [Ὀρέστης:] of|blade and strokes and wild|beast drawing.
+(233) [Ὀρέστης:] ἔνδον(Adv) γενοῦ(Aor)(Med)(Imv), χαρᾷ(D) δὲ(Pt) μὴ(Pt) ʼκπλαγῇς(Aor)(Pas)(Knj) φρένας(A)·
+(233) [Ὀρέστης:] inside become, with|joy but not be|struck|out mind·
+(234) [Ὀρέστης:] τοὺς(Art)(A) φιλτάτους(Adj)(A)(Sup) γὰρ(Pt) οἶδα(Per)(Akt) νῷν(Pr)(Du)(G) ὄντας(Prä)(Akt)(A) πικρούς(Adj)(A).
+(234) [Ὀρέστης:] the dearest|ones for I|know of|us|two being bitter.
+(235) [Ἠλέκτρα:] ὦ(ij) φίλτατον(Adj)(N)(Sup) μέλημα(N) δώμασιν(D) πατρός(G),
+(235) [Ἠλέκτρα:] O dearest care in|houses of|father,
+(236) [Ἠλέκτρα:] δακρυτὸς(Adj)(N) ἐλπὶς(N) σπέρματος(G) σωτηρίου(Adj)(G),
+(236) [Ἠλέκτρα:] tearful hope of|seed saving,
+(237) [Ἠλέκτρα:] ἀλκῇ(D) πεποιθὼς(Per)(Akt)(N) δῶμʼ(A) ἀνακτήσῃ(Fu)(Akt) πατρός(G).
+(237) [Ἠλέκτρα:] by|strength having|trusted house you|will|regain of|father.
+(238) [Ἠλέκτρα:] ὦ(ij) τερπνὸν(Adj)(N) ὄμμα(N) τέσσαρας(Adj)(A) μοίρας(A) ἔχον(Prä)(Akt)(N)
+(238) [Ἠλέκτρα:] O delightful eye four shares having
+(239) [Ἠλέκτρα:] ἐμοί(Pr)(D)· προσαυδᾶν(Prä)(Inf)(Akt) δʼ(Pt) ἐστʼ(Prä)(Akt) ἀναγκαίως(Adv) ἔχον(Prä)(Akt)(N)
+(239) [Ἠλέκτρα:] to|me· to|address but is necessarily having
+(240) [Ἠλέκτρα:] πατέρα(A) τε(Pt), καὶ(Kon) τὸ(Art)(N) μητρὸς(G) ἐς(Prp) σέ(Pr)(A) μοι(Pr)(D) ῥέπει(Prä)(Akt)
+(240) [Ἠλέκτρα:] father and, also the of|mother toward you to|me inclines
+(241) [Ἠλέκτρα:] στέργηθρον(N)· ἡ(Art)(N) δὲ(Pt) πανδίκως(Adv) ἐχθαίρεται(Prä)(M/P)·
+(241) [Ἠλέκτρα:] affection· she but in|all|justice is|hated·
+(242) [Ἠλέκτρα:] καὶ(Kon) τῆς(Art)(G) τυθείσης(Aor)(Pas)(G) νηλεῶς(Adv) ὁμοσπόρου(Adj)(G)·
+(242) [Ἠλέκτρα:] and of|the having|been|sacrificed pitilessly of|same|seed·
+(243) [Ἠλέκτρα:] πιστὸς(Adj)(N) δʼ(Pt) ἀδελφὸς(N) ἦσθʼ(Imp)(Akt), ἐμοὶ(Pr)(D) σέβας(A) φέρων(Prä)(Akt)(N)
+(243) [Ἠλέκτρα:] faithful but brother you|were, to|me reverence bearing
+(244) [Ἠλέκτρα:] μόνος(Adj)(N)· Κράτος(N) τε(Pt) καὶ(Kon) Δίκη(N) σὺν(Prp) τῷ(Art)(D) τρίτῳ(Adj)(D)
+(244) [Ἠλέκτρα:] alone· Power and also Justice with the third
+(245) [Ἠλέκτρα:] πάντων(Adj)(G) μεγίστῳ(Adj)(D)(Sup) Ζηνὶ(D) συγγένοιτό(AorS)(Med)(Op) σοι(Pr)(D).
+(245) [Ἠλέκτρα:] of|all to|the|greatest Zeus may|be|allied to|you.
+(246) [Ὀρέστης:] Ζεῦ(V) Ζεῦ(V), θεωρὸς(N) τῶνδε(Pr)(G) πραγμάτων(G) γενοῦ(Aor)(Med)(Imv)·
+(246) [Ὀρέστης:] Zeus Zeus, spectator of|these of|matters become·
+(247) [Ὀρέστης:] ἰδοῦ(ij) δὲ(Pt) γένναν(A) εὖνιν(Adj)(A) αἰετοῦ(G) πατρός(G),
+(247) [Ὀρέστης:] look but offspring young of|eagle of|father,
+(248) [Ὀρέστης:] θανόντος(AorS)(Akt)(G) ἐν(Prp) πλεκταῖσι(Adj)(D) καὶ(Kon) σπειράμασιν(D)
+(248) [Ὀρέστης:] of|having|died in plaited and coils
+(249) [Ὀρέστης:] δεινῆς(Adj)(G) ἐχίδνης(G). τοὺς(Art)(A) δʼ(Pt) ἀπωρφανισμένους(Per)(M/P)(A)
+(249) [Ὀρέστης:] of|terrible viper. the but having|been|orphaned
+(250) [Ὀρέστης:] νῆστις(Adj)(N) πιέζει(Prä)(Akt) λιμός(N)· οὐ(Pt) γὰρ(Pt) ἐντελεῖς(Adj)(N)
+(250) [Ὀρέστης:] fasting presses hunger· not for complete
+(251) [Ὀρέστης:] θήραν(A) πατρῴαν(Adj)(A) προσφέρειν(Prä)(Inf)(Akt) σκηνήμασιν(D).
+(251) [Ὀρέστης:] hunt paternal to|bring|to lodgings.
+(252) [Ὀρέστης:] οὕτω(Adv) δὲ(Pt) κἀμὲ(Kon)(Pr)(A) τήνδε(Pr)(A) τʼ(Pt), Ἠλέκτραν(A) λέγω(Prä)(Akt),
+(252) [Ὀρέστης:] thus but and|me this and, Electra I|say,
+(253) [Ὀρέστης:] ἰδεῖν(AorS)(Inf)(Akt) πάρεστί(Prä)(Akt) σοι(Pr)(D), πατροστερῆ(Adj)(A) γόνον(A),
+(253) [Ὀρέστης:] to|see is|present to|you, father|bereft offspring,
+(254) [Ὀρέστης:] ἄμφω(Pr)(Du)(N) φυγὴν(A) ἔχοντε(Prä)(Akt)(Du)(N) τὴν(Art)(A) αὐτὴν(Adj)(A) δόμων(G).
+(254) [Ὀρέστης:] both flight having the same of|houses.
+(255) [Ὀρέστης:] καὶ(Kon) τοῦ(Art)(G) θυτῆρος(G) καί(Kon) σε(Pr)(A) τιμῶντος(Prä)(Akt)(G) μέγα(Adv)
+(255) [Ὀρέστης:] and of|the sacrificer and you of|honoring greatly
+(256) [Ὀρέστης:] πατρὸς(G) νεοσσοὺς(A) τούσδʼ(Pr)(A) ἀποφθείρας(AorS)(Akt)(N) πόθεν(Adv)
+(256) [Ὀρέστης:] of|father nestlings these having|destroyed whence
+(257) [Ὀρέστης:] ἕξεις(Fu)(Akt) ὁμοίας(Adj)(A) χειρὸς(G) εὔθοινον(Adj)(A) γέρας(A);
+(257) [Ὀρέστης:] will|you|have like of|hand feast|worthy gift;
+(258) [Ὀρέστης:] οὔτʼ(Pt) αἰετοῦ(G) γένεθλʼ(A) ἀποφθείρας(AorS)(Akt)(N), πάλιν(Adv)
+(258) [Ὀρέστης:] neither of|eagle offspring having|destroyed, again
+(259) [Ὀρέστης:] πέμπειν(Prä)(Inf)(Akt) ἔχοις(Prä)(Akt)(Op) ἂν(Pt) σήματʼ(A) εὐπιθῆ(Adj)(A) βροτοῖς(D)·
+(259) [Ὀρέστης:] to|send you|might|have at|least signs persuasive to|mortals·
+(260) [Ὀρέστης:] οὔτʼ(Pt) ἀρχικός(Adj)(N) σοι(Pr)(D) πᾶς(Adj)(N) ὅδʼ(Pr)(N) αὐανθεὶς(AorS)(Pas)(N) πυθμὴν(A)
+(260) [Ὀρέστης:] nor princely to|you all this withered base
+(261) [Ὀρέστης:] βωμοῖς(D) ἀρήξει(Fu)(Akt) βουθύτοις(Adj)(D) ἐν(Prp) ἤμασιν(D).
+(261) [Ὀρέστης:] to|altars will|avail ox|slaughtering in days.
+(262) [Ὀρέστης:] κόμιζʼ(Prä)(Imv)(Akt), ἀπὸ(Prp) σμικροῦ(Adj)(G) δʼ(Pt) ἂν(Pt) ἄρειας(AorS)(Akt)(Op) μέγαν(Adj)(A)
+(262) [Ὀρέστης:] bring, from small but at|least you|might|raise great
+(263) [Ὀρέστης:] δόμον(A), δοκοῦντα(Prä)(Akt)(A) κάρτα(Adv) νῦν(Adv) πεπτωκέναι(Per)(Inf)(Akt).
+(263) [Ὀρέστης:] house, seeming very now to|have|fallen.
+(264) [Χορός:] ὦ(ij) παῖδες(N), ὦ(ij) σωτῆρες(N) ἑστίας(G) πατρός(G),
+(264) [Χορός:] O children, O saviors of|hearth of|father,
+(265) [Χορός:] σιγᾶθʼ(Prä)(Imv)(Akt), ὅπως(Kon) μὴ(Pt) πεύσεταί(Fu)(M/P) τις(Pr)(N), ὦ(ij) τέκνα(V),
+(265) [Χορός:] be|silent, in|order|that not will|learn someone, O children,
+(266) [Χορός:] γλώσσης(G) χάριν(A) δὲ(Pt) πάντʼ(Adj)(A) ἀπαγγείλῃ(AorS)(Akt)(Knj) τάδε(Pr)(A)
+(266) [Χορός:] of|tongue for|the|sake but all may|report these
+(267) [Χορός:] πρὸς(Prp) τοὺς(Art)(A) κρατοῦντας(Prä)(Akt)(A)· οὓς(Pr)(A) ἴδοιμʼ(AorS)(Akt)(Op) ἐγώ(Pr)(N) ποτε(Adv)
+(267) [Χορός:] toward the ruling· whom I|might|see I sometime
+(268) [Χορός:] θανόντας(AorS)(Akt)(A) ἐν(Prp) κηκῖδι(D) πισσήρει(Adj)(D) φλογός(G).
+(268) [Χορός:] having|died in scum pitch|dark of|flame.
+(269) [Ὀρέστης:] οὔτοι(Pt) προδώσει(Fu)(Akt) Λοξίου(G) μεγασθενὴς(Adj)(N)
+(269) [Ὀρέστης:] not|indeed will|betray of|Loxias mighty
+(270) [Ὀρέστης:] χρησμὸς(N) κελεύων(Prä)(Akt)(N) τόνδε(Pr)(A) κίνδυνον(A) περᾶν(Prä)(Inf)(Akt),
+(270) [Ὀρέστης:] oracle bidding this danger to|pass,
+(271) [Ὀρέστης:] κἀξορθιάζων(Kon)(Prä)(Akt)(N) πολλὰ(Adj)(A) καὶ(Kon) δυσχειμέρους(Adj)(A)
+(271) [Ὀρέστης:] and|setting|upright many and ill|stormy
+(272) [Ὀρέστης:] ἄτας(A) ὑφʼ(Prp) ἧπαρ(A) θερμὸν(Adj)(A) ἐξαυδώμενος(Prä)(M/P)(N),
+(272) [Ὀρέστης:] ruins under liver hot speaking|out,
+(273) [Ὀρέστης:] εἰ(Kon) μὴ(Pt) μέτειμι(Prä)(Akt) τοῦ(Art)(G) πατρὸς(G) τοὺς(Art)(A) αἰτίους(Adj)(A)·
+(273) [Ὀρέστης:] if not I|pursue of|the father the guilty·
+(274) [Ὀρέστης:] τρόπον(A) τὸν(Art)(A) αὐτὸν(Adj)(A) ἀνταποκτεῖναι(AorS)(Inf)(Akt) λέγων(Prä)(Akt)(N),
+(274) [Ὀρέστης:] manner the same to|kill|in|return saying,
+(275) [Ὀρέστης:] ἀποχρημάτοισι(Adj)(D) ζημίαις(D) ταυρούμενον(Prä)(M/P)(N)·
+(275) [Ὀρέστης:] with|out|of|money penalties being|branded·
+(276) [Ὀρέστης:] αὐτὸν(Pr)(A) δʼ(Pt) ἔφασκε(Imp)(Akt) τῇ(Art)(D) φίλῃ(Adj)(D) ψυχῇ(D) τάδε(Pr)(A)
+(276) [Ὀρέστης:] him but he|kept|saying to|the dear soul these
+(277) [Ὀρέστης:] τείσειν(Aor)(Inf)(Akt) μʼ(Pr)(A) ἔχοντα(Prä)(Akt)(A) πολλὰ(Adj)(A) δυστερπῆ(Adj)(A) κακά(Adj)(A).
+(277) [Ὀρέστης:] to|pay me having many hard|to|bear evils.
+(278) [Ὀρέστης:] τὰ(Art)(N) μὲν(Pt) γὰρ(Pt) ἐκ(Prp) γῆς(G) δυσφρόνων(Adj)(G) μηνίματα(N)
+(278) [Ὀρέστης:] the indeed for from earth of|ill|minded portents
+(279) [Ὀρέστης:] βροτοῖς(D) πιφαύσκων(Prä)(Akt)(N) εἶπε(AorS)(Akt), τὰς(Art)(A) δʼ(Pt) αἰνῶν(Prä)(Akt)(N) νόσους(A),
+(279) [Ὀρέστης:] to|mortals making|manifest he|said, the but praising diseases,
+(280) [Ὀρέστης:] σαρκῶν(G) ἐπαμβατῆρας(A) ἀγρίαις(Adj)(D) γνάθοις(D)
+(280) [Ὀρέστης:] of|flesh leapers|upon with|wild jaws
+(281) [Ὀρέστης:] λειχῆνας(A) ἐξέσθοντας(Prä)(Akt)(A) ἀρχαίαν(Adj)(A) φύσιν(A)·
+(281) [Ὀρέστης:] scabs out|eating ancient nature·
+(282) [Ὀρέστης:] λευκὰς(Adj)(A) δὲ(Pt) κόρσας(A) τῇδʼ(Pr)(D) ἐπαντέλλειν(Prä)(Inf)(Akt) νόσῳ(D)·
+(282) [Ὀρέστης:] white but pupils to|this to|rise|up with|disease·
+(283) [Ὀρέστης:] ἄλλας(Adj)(A) τʼ(Pt) ἐφώνει(Prä)(Akt) προσβολάς(A) Ἐρινύων(G)
+(283) [Ὀρέστης:] other and cried assaults of|Erinyes
+(284) [Ὀρέστης:] ἐκ(Prp) τῶν(Art)(G) πατρῴων(Adj)(G) αἱμάτων(G) τελουμένας(Prä)(M/P)(A)·
+(284) [Ὀρέστης:] out|of of|the paternal bloods being|accomplished·
+(285) [Ὀρέστης:] τὸ(Art)(N) γὰρ(Pt) σκοτεινὸν(Adj)(N) τῶν(Art)(G) ἐνερτέρων(Adj)(G) βέλος(N)
+(285) [Ὀρέστης:] the for dark of|the nether|ones dart
+(286) [Ὀρέστης:] ἐκ(Prp) προστροπαίων(Adj)(G) ἐν(Prp) γένει(D) πεπτωκότων(Per)(Akt)(G),
+(286) [Ὀρέστης:] out|of averting in race having|fallen,
+(287) [Ὀρέστης:] καὶ(Kon) λύσσα(N) καὶ(Kon) μάταιος(Adj)(N) ἐκ(Prp) νυκτῶν(G) φόβος(N)
+(287) [Ὀρέστης:] and rage and vain out|of nights fear
+(288) [Ὀρέστης:] ὁρῶντα(Prä)(Akt)(A) λαμπρὸν(Adj)(A) ἐν(Prp) σκότῳ(D) νωμῶντʼ(Prä)(Akt)(A) ὀφρὺν(A)
+(288) [Ὀρέστης:] seeing bright in darkness wielding brow
+(289) [Ὀρέστης:] κινεῖ(Prä)(Akt), ταράσσει(Prä)(Akt), καὶ(Kon) διώκεσθαι(Prä)(M/P)(Inf) πόλεως(G)
+(289) [Ὀρέστης:] moves, disturbs, and to|be|chased of|city
+(290) [Ὀρέστης:] χαλκηλάτῳ(Adj)(D) πλάστιγγι(D) λυμανθὲν(AorS)(Pas)(N) δέμας(N).
+(290) [Ὀρέστης:] with|bronze|wrought scale|pan having|been|outraged body.
+(291) [Ὀρέστης:] καὶ(Kon) τοῖς(Art)(D) τοιούτοις(Adj)(D) οὔτε(Pt) κρατῆρος(G) μέρος(N)
+(291) [Ὀρέστης:] and to|the such nor of|bowl share
+(292) [Ὀρέστης:] εἶναι(Prä)(Inf)(Akt) μετασχεῖν(AorS)(Inf)(Akt), οὐ(Pt) φιλοσπόνδου(Adj)(G) λιβός(G),
+(292) [Ὀρέστης:] to|be to|share, not of|libation|loving drop,
+(293) [Ὀρέστης:] βωμῶν(G) τʼ(Pt) ἀπείργειν(Prä)(Inf)(Akt) οὐχ(Pt) ὁρωμένην(Prä)(M/P)(A) πατρὸς(G)
+(293) [Ὀρέστης:] of|altars and to|keep|away not being|seen of|father
+(294) [Ὀρέστης:] μῆνιν(A)· δέχεσθαι(Prä)(M/P)(Inf) δʼ(Pt) οὔτε(Pt) συλλύειν(Prä)(Inf)(Akt) τινά(Pr)(A).
+(294) [Ὀρέστης:] wrath· to|receive but nor to|reconcile anyone.
+(295) [Ὀρέστης:] πάντων(G) δʼ(Pt) ἄτιμον(Adj)(A) κἄφιλον(Kon)(Adj)(A) θνῄσκειν(Prä)(Inf)(Akt) χρόνῳ(D)
+(295) [Ὀρέστης:] of|all but dishonored and|unloved to|die with|time
+(296) [Ὀρέστης:] κακῶς(Adv) ταριχευθέντα(Aor)(Pas)(A) παμφθάρτῳ(Adj)(D) μόρῳ(D).
+(296) [Ὀρέστης:] badly having|been|embalmed with|all|destroying with|fate.
+(297) [Ὀρέστης:] τοιοῖσδε(Adj)(D) χρησμοῖς(D) ἆρα(Pt) χρὴ(Prä)(Akt) πεποιθέναι(Per)(Inf)(Akt);
+(297) [Ὀρέστης:] to|such oracles then it|is|necessary to|have|trusted;
+(298) [Ὀρέστης:] κεἰ(Kon) μὴ(Pt) πέποιθα(Per)(Akt), τοὔργον(N) ἔστʼ(Prä)(Akt) ἐργαστέον(Adj)(N).
+(298) [Ὀρέστης:] and|if not I|have|trusted, the|work is to|be|done.
+(299) [Ὀρέστης:] πολλοὶ(Adj)(N) γὰρ(Pt) εἰς(Prp) ἓν(Adj)(A) συμπίτνουσιν(Prä)(Akt) ἵμεροι(N),
+(299) [Ὀρέστης:] many for into one fall|together longings,
+(300) [Ὀρέστης:] θεοῦ(G) τʼ(Pt) ἐφετμαὶ(N) καὶ(Kon) πατρὸς(G) πένθος(N) μέγα(Adj)(N),
+(300) [Ὀρέστης:] of|god and commands and of|father grief great,
+(301) [Ὀρέστης:] καὶ(Kon) πρὸς(Prp) πιέζει(Prä)(Akt) χρημάτων(G) ἀχηνία(N),
+(301) [Ὀρέστης:] and in|addition|to presses of|goods want,
+(302) [Ὀρέστης:] τὸ(Art)(N) μὴ(Pt) πολίτας(A) εὐκλεεστάτους(Adj)(A)(Sup) βροτῶν(G),
+(302) [Ὀρέστης:] the not citizens most|glorious of|mortals,
+(303) [Ὀρέστης:] Τροίας(G) ἀναστατῆρας(A) εὐδόξῳ(Adj)(D) φρενί(D),
+(303) [Ὀρέστης:] of|Troy overturners with|well|famed mind,
+(304) [Ὀρέστης:] δυοῖν(Adj)(Du)(D) γυναικοῖν(Du)(D) ὧδʼ(Adv) ὑπηκόους(Adj)(A) πέλειν(Prä)(Inf)(Akt).
+(304) [Ὀρέστης:] to|two women thus subject to|be.
+(305) [Ὀρέστης:] θήλεια(Adj)(N) γὰρ(Pt) φρήν(N)· εἰ(Kon) δὲ(Pt) μή(Pt), τάχʼ(Adv) εἴσεται(Fu)(M/P).
+(305) [Ὀρέστης:] female for mind· and if not, soon will|know.
+== Anapäste ==
+(306) [Χορός:] ἀλλʼ(Kon) ὦ(ij) μεγάλαι(Adj)(V) Μοῖραι(V), Διόθεν(Adv)
+(306) [Χορός:] but O great Fates, from|Zeus
+(307) [Χορός:] τῇδε(Pr)(D) τελευτᾶν(Prä)(Inf)(Akt),
+(307) [Χορός:] in|this|way to|end,
+(308) [Χορός:] τὸ(Art)(N) δίκαιον(Adj)(N) μεταβαίνει(Prä)(Akt).
+(308) [Χορός:] the just|thing goes|over.
+(309) [Χορός:] ἀντὶ(Prp) μὲν(Pt) ἐχθρᾶς(Adj)(G) γλώσσης(G) ἐχθρὰ(Adj)(N)
+(309) [Χορός:] instead|of indeed hostile tongue hostile
+(310) [Χορός:] γλῶσσα(N) τελείσθω(Prä)(M/P)(Imv)· τοὐφειλόμενον(Per)(M/P)(N)
+(310) [Χορός:] tongue let|be|accomplished· the|owed
+(311) [Χορός:] πράσσουσα(Prä)(Akt)(N) Δίκη(N) μέγʼ(Adv) ἀυτεῖ(Prä)(Akt)·
+(311) [Χορός:] doing Justice greatly cries|aloud·
+(312) [Χορός:] ἀντὶ(Prp) δὲ(Pt) πληγῆς(G) φονίας(Adj)(G) φονίαν(Adj)(A)
+(312) [Χορός:] instead|of but of|blow murderous murderous
+(313) [Χορός:] πληγὴν(A) τινέτω(Prä)(Akt)(Imv). δράσαντι(AorS)(Akt)(D) παθεῖν(AorS)(Inf)(Akt),
+(313) [Χορός:] blow let|pay. to|one|having|done to|suffer,
+(314) [Χορός:] τριγέρων(Adj)(N) μῦθος(N) τάδε(Pr)(A) φωνεῖ(Prä)(Akt).
+(314) [Χορός:] thrice|old saying these speaks.
+=== Chor ===
+== Strophe 1 ==
+(315) [Ὀρέστης:] ὦ(ij) πάτερ(V) αἰνόπατερ(V), τί(Adv) σοι(Pr)(D)
+(315) [Ὀρέστης:] O father dread|father, what to|you
+(316) [Ὀρέστης:] φάμενος(Prä)(M/P)(N) ἢ(Kon) τί(Adv) ῥέξας(AorS)(Akt)(N)
+(316) [Ὀρέστης:] saying or what having|done
+(317) [Ὀρέστης:] τύχοιμʼ(Prä)(Akt)(Op) ἂν(Pt) ἕκαθεν(Adv) οὐρίσας(AorS)(Akt)(N),
+(317) [Ὀρέστης:] I|might|happen at|least from|afar having|made|fair|wind,
+(318) [Ὀρέστης:] ἔνθα(Adv) σʼ(Pr)(A) ἔχουσιν(Prä)(Akt) εὐναί(N),
+(318) [Ὀρέστης:] where you hold beds,
+(319) [Ὀρέστης:] σκότῳ(D) φάος(N) ἀντίμοι‖ρον(Adj)(N);
+(319) [Ὀρέστης:] in|darkness light counter|allotted;
+(320) [Ὀρέστης:] χάριτες(N) δʼ(Pt) ὁμοίως(Adv)
+(320) [Ὀρέστης:] Graces but likewise
+(321) [Ὀρέστης:] κέκληνται(Per)(M/P) γόος(N) εὐκλεὴς(Adj)(N)
+(321) [Ὀρέστης:] have|been|called lament well|famed
+(322) [Ὀρέστης:] προσθοδόμοις(Adj)(D) Ἀτρείδαις(D).
+(322) [Ὀρέστης:] before|the|house Atreidae.
+== Strophe 2 ==
+(323) [Χορός:] τέκνον(V), φρόνημα(N) τοῦ(Art)(G)
+(323) [Χορός:] child, mindset of|the
+(324) [Χορός:] θανόντος(AorS)(Akt)(G) οὐ(Pt) δαμάζει(Prä)(Akt)
+(324) [Χορός:] of|having|died not tames
+(325) [Χορός:] πυρὸς(G) ἡ(Art)(N) μαλερὰ(Adj)(N) γνάθος(N),
+(325) [Χορός:] of|fire the fierce jaw,
+(326) [Χορός:] φαίνει(Prä)(Akt) δʼ(Pt) ὕστερον(Adv) ὀργάς(A)·
+(326) [Χορός:] shows but later angers·
+(327) [Χορός:] ὀτοτύζεται(Prä)(M/P) δʼ(Pt) ὁ(Art)(N) θνῄσκων(Prä)(Akt)(N),
+(327) [Χορός:] wails but the dying,
+(328) [Χορός:] ἀναφαίνεται(Prä)(M/P) δʼ(Pt) ὁ(Art)(N) βλάπτων(Prä)(Akt)(N).
+(328) [Χορός:] appears but the harming.
+(329) [Χορός:] πατέρων(G) τε(Pt) καὶ(Kon) τεκόντων(Per)(Akt)(G)
+(329) [Χορός:] of|fathers and and of|having|borne
+(330) [Χορός:] γόος(N) ἔνδικος(Adj)(N) ματεύει(Prä)(Akt)
+(330) [Χορός:] lament just seeks
+(331) [Χορός:] τὸ(Art)(N) πᾶν(Adj)(N) ἀμφιλαφής(Adj)(N) ταραχθείς(Aor)(Pas)(N).
+(331) [Χορός:] the all all|spreading having|been|agitated.
+== Antistrophe 1 ==
+(332) [Ἠλέκτρα:] κλῦθὶ(Aor)(Akt)(Imv) νυν(Adv), ὦ(ij) πάτερ(V), ἐν(Prp) μέρει(D)
+(332) [Ἠλέκτρα:] hear now, O father, in turn
+(333) [Ἠλέκτρα:] πολυδάκρυτα(Adj)(A) πένθη(A).
+(333) [Ἠλέκτρα:] much|wept sorrows.
+(334) [Ἠλέκτρα:] δίπαις(Adj)(N) τοί(Pt) σʼ(Pr)(A) ἐπιτύμβιος(Adj)(N)
+(334) [Ἠλέκτρα:] two|childed indeed you over|tomb
+(335) [Ἠλέκτρα:] θρῆνος(N) ἀναστενάζει(Prä)(Akt).
+(335) [Ἠλέκτρα:] dirge groans.
+(336) [Ἠλέκτρα:] τάφος(N) δʼ(Pt) ἱκέτας(A) δέδεκται(Per)(M/P)
+(336) [Ἠλέκτρα:] tomb but suppliants has|received
+(337) [Ἠλέκτρα:] φυγάδας(A) θʼ(Pt) ὁμοίως(Adv).
+(337) [Ἠλέκτρα:] exiles and alike.
+(338) [Ἠλέκτρα:] τί(Adv) τῶνδʼ(Pr)(G) εὖ(Adv), τί(Adv) δʼ(Pt) ἄτερ(Prp) κακῶν(G);
+(338) [Ἠλέκτρα:] what of|these well, what but without evils;
+(339) [Ἠλέκτρα:] οὐκ(Pt) ἀτρίακτος(Adj)(N) ἄτα(N);
+(339) [Ἠλέκτρα:] not unvanquished ruin;
+== Anapäste ==
+(340) [Χορός:] ἀλλʼ(Kon) ἔτʼ(Adv) ἂν(Pt) ἐκ(Prp) τῶνδε(Pr)(G) θεὸς(N) χρῄζων(Prä)(Akt)(N)
+(340) [Χορός:] but still at|least out|of these god needing
+(341) [Χορός:] θείη(Aor)(Akt)(Op) κελάδους(A) εὐφθογγοτέρους(Adj)(A)(Kmp)·
+(341) [Χορός:] might|set clamors more|well|sounding·
+(342) [Χορός:] ἀντὶ(Prp) δὲ(Pt) θρήνων(G) ἐπιτυμβιδίων(Adj)(G)
+(342) [Χορός:] instead|of but of|dirges over|tomb
+(343) [Χορός:] παιὰν(A) μελάθροις(D) ἐν(Prp) βασιλείοις(Adj)(D)
+(343) [Χορός:] paean halls in royal
+(344) [Χορός:] νεοκρᾶτα(Adj)(A) φίλον(Adj)(A) κομίσειεν(Aor)(Akt)(Op).
+(344) [Χορός:] freshly|mixed dear might|bring.
+== Strophe 3 ==
+(345) [Ὀρέστης:] εἰ(Kon) γὰρ(Pt) ὑπʼ(Prp) Ἰλίῳ(D)
+(345) [Ὀρέστης:] if for under Ilium
+(346) [Ὀρέστης:] πρός(Prp) τινος(Pr)(G) Λυκίων(G), πάτερ(V),
+(346) [Ὀρέστης:] by of|someone of|Lycians, father,
+(347) [Ὀρέστης:] δορίτμητος(Adj)(N) κατηναρίσθης(AorS)(Pas)·
+(347) [Ὀρέστης:] spear|wounded you|were|slain·
+(348) [Ὀρέστης:] λιπὼν(AorS)(Akt)(N) ἂν(Pt) εὔκλειαν(A) ἐν(Prp) δόμοισι(D)
+(348) [Ὀρέστης:] having|left at|least good|fame in houses
+(349) [Ὀρέστης:] τέκνων(G) τʼ(Pt) ἐν(Prp) κελεύθοις(D)
+(349) [Ὀρέστης:] of|children and in paths
+(350) [Ὀρέστης:] ἐπιστρεπτὸν(Adj)(A) αἰῶ(A)
+(350) [Ὀρέστης:] returnable life
+(351) [Ὀρέστης:] κτίσας(AorS)(Akt)(N) πολύχωστον(Adj)(A) ἂν(Pt) εἶχες(Imp)(Akt)
+(351) [Ὀρέστης:] having|founded much|heaped at|least you|had
+(352) [Ὀρέστης:] τάφον(A) διαποντίου(Adj)(G) γᾶς(G)
+(352) [Ὀρέστης:] tomb across|sea of|land
+(353) [Ὀρέστης:] δώμασιν(D) εὐφόρητον(Adj)(A),
+(353) [Ὀρέστης:] houses well|borne,
+== Antistrophe 2 ==
+(354) [Χορός:] φίλος(Adj)(N) φίλοισι(D) τοῖς(Art)(D)
+(354) [Χορός:] dear to|friends the
+(355) [Χορός:] ἐκεῖ(Adv) καλῶς(Adv) θανοῦσιν(AorS)(Akt)(D)
+(355) [Χορός:] there well to|the|having|died
+(356) [Χορός:] κατὰ(Prp) χθονὸς(G) ἐμπρέπων(Prä)(Akt)(N)
+(356) [Χορός:] down|upon earth conspicuous
+(357) [Χορός:] σεμνότιμος(Adj)(N) ἀνάκτωρ(N),
+(357) [Χορός:] august|honored lord,
+(358) [Χορός:] πρόπολός(N) τε(Pt) τῶν(Art)(G) μεγίστων(Adj)(G)(Sup)
+(358) [Χορός:] attendant and of|the greatest
+(359) [Χορός:] χθονίων(Adj)(G) ἐκεῖ(Adv) τυράννων(G)·
+(359) [Χορός:] of|chthonic there of|tyrants·
+(360) [Χορός:] βασιλεὺς(N) γὰρ(Pt) ἦσθʼ(Imp)(Akt), ὄφρʼ(Kon) ἔζης(Imp)(Akt),
+(360) [Χορός:] king for you|were, so|long|as you|lived,
+(361) [Χορός:] μόριμον(Adj)(N) λάχος(N) πιπλάντων(Prä)(Akt)(G)
+(361) [Χορός:] fated lot of|wandering|ones
+(362) [Χορός:] χεροῖν(Du)(D) πεισίβροτόν(Adj)(A) τε(Pt) βάκτρον(A).
+(362) [Χορός:] with|two|hands man|subduing and staff.
+== Antistrophe 3 ==
+(363) [Ἠλέκτρα:] μηδʼ(Kon) ὑπὸ(Prp) Τρωίας(G)
+(363) [Ἠλέκτρα:] nor under of|Troy
+(364) [Ἠλέκτρα:] τείχεσι(D) φθίμενος(Aor)(M/P)(N), πάτερ(V),
+(364) [Ἠλέκτρα:] at|the|walls having|perished, father,
+(365) [Ἠλέκτρα:] μετʼ(Prp) ἄλλῳ(Adj)(D) δουρικμῆτι(Adj)(D) λαῷ(D)
+(365) [Ἠλέκτρα:] with another spear|won people
+(366) [Ἠλέκτρα:] παρὰ(Prp) Σκαμάνδρου(G) πόρον(A) τεθάφθαι(Per)(M/P)(Inf).
+(366) [Ἠλέκτρα:] beside of|Scamander ford to|have|been|buried.
+(367) [Ἠλέκτρα:] πάρος(Adv) δʼ(Pt) οἱ(Art)(N) κτανόντες(AorS)(Akt)(N)
+(367) [Ἠλέκτρα:] before but the|ones having|killed
+(368) [Ἠλέκτρα:] νιν(Pr)(A) οὕτως(Adv) δαμῆναι(Aor)(Pas)(Inf)
+(368) [Ἠλέκτρα:] him thus to|be|subdued
+(369) [Ἠλέκτρα:] φίλοις(Adj)(D), θανατηφόρον(Adj)(A) αἶσαν(A)
+(369) [Ἠλέκτρα:] to|friends, death|bringing fate
+(370) [Ἠλέκτρα:] πρόσω(Adv) τινὰ(Pr)(A) πυνθάνεσθαι(Prä)(M/P)(Inf)
+(370) [Ἠλέκτρα:] afar someone to|inquire
+(371) [Ἠλέκτρα:] τῶνδε(Pr)(G) πόνων(G) ἄπειρον(Adj)(A).
+(371) [Ἠλέκτρα:] of|these toils unacquainted.
+== Anapäste ==
+(372) [Χορός:] ταῦτα(Pr)(A) μέν(Pt), ὦ(ij) παῖ(V), κρείσσονα(Adj)(A)(Kmp) χρυσοῦ(G),
+(372) [Χορός:] these indeed, O child, better than|gold,
+(373) [Χορός:] μεγάλης(Adj)(G) δὲ(Pt) τύχης(G) καὶ(Kon) ὑπερβορέου(Adj)(G)
+(373) [Χορός:] of|great but fortune and of|Hyperborean
+(374) [Χορός:] μείζονα(Adj)(A)(Kmp) φωνεῖς(Prä)(Akt)· δύνασαι(Prä)(M/P) γάρ(Pt).
+(374) [Χορός:] greater you|speak· you|are|able for.
+(375) [Χορός:] ἀλλὰ(Kon) διπλῆς(Adj)(G) γὰρ(Pt) τῆσδε(Pr)(G) μαράγνης(G)
+(375) [Χορός:] but of|double for of|this strife
+(376) [Χορός:] δοῦπος(N) ἱκνεῖται(Prä)(M/P)· τῶν(Art)(G) μὲν(Pt) ἀρωγοὶ(Adj)(N)
+(376) [Χορός:] thud comes· of|the indeed helpers
+(377) [Χορός:] κατὰ(Prp) γῆς(G) ἤδη(Adv), τῶν(Art)(G) δὲ(Pt) κρατούντων(Prä)(Akt)(G)
+(377) [Χορός:] down|upon earth already, of|the but ruling
+(378) [Χορός:] χέρες(N) οὐχ(Pt) ὅσιαι(Adj)(N) στυγερῶν(Adj)(G) τούτων(Pr)(G)·
+(378) [Χορός:] hands not holy of|hateful of|these·
+(379) [Χορός:] παισὶ(D) δὲ(Pt) μᾶλλον(Adv)(Kmp) γεγένηται(Per)(M/P).
+(379) [Χορός:] to|children but more has|become.
+== Strophe 4 ==
+(380) [Ὀρέστης:] τοῦτο(Pr)(N) διαμπερὲς(Adj)(A) οὖς(A)
+(380) [Ὀρέστης:] this through|and|through ear
+(381) [Ὀρέστης:] ἵκεθʼ(Aor)(Akt) ἅπερ(Pr)(A) τι(Pr)(A) βέλος(A).
+(381) [Ὀρέστης:] reached just|what some arrow.
+(382) [Ὀρέστης:] Ζεῦ(V) Ζεῦ(V), κάτωθεν(Adv) ἀμπέμπων(Prä)(Akt)(N)
+(382) [Ὀρέστης:] Zeus Zeus, from|below sending|up
+(383) [Ὀρέστης:] ὑστερόποινον(Adj)(A) ἄταν(A)
+(383) [Ὀρέστης:] late|avenging ruin
+(384) [Ὀρέστης:] βροτῶν(G) τλάμονι(Adj)(D) καὶ(Kon) πανούργῳ(Adj)(D)
+(384) [Ὀρέστης:] of|mortals enduring and knavish
+(385) [Ὀρέστης:] χειρὶ— τοκεῦσι(D) δʼ(Pt) ὅμως(Adv) τελεῖται(Prä)(M/P).
+(385) [Ὀρέστης:] hand— to|parents but nevertheless is|fulfilled.
+== Strophe 5 ==
+(386) [Χορός:] ἐφυμνῆσαι(Aor)(Inf)(Akt) γένοιτό(Aor)(Med)(Op) μοι(Pr)(D) πυκά‖εντ(Adj)(A)
+(386) [Χορός:] to|sing|in|response might|become to|me close|set
+(387) [Χορός:] ʼ ὀλολυγμὸν(A) ἀνδρὸς(G)
+(387) [Χορός:] ululation of|man
+(388) [Χορός:] θεινομένου(Prä)(M/P)(G), γυναικός(G) τʼ(Pt)
+(388) [Χορός:] being|struck, of|woman and
+(389) [Χορός:] ὀλλυμένας(Prä)(M/P)(A)· τί(Adv) γὰρ(Pt) κεύθω(Prä)(Akt) φρενὸς(G) οἷον(Adv) ἔμπας(Adv)
+(389) [Χορός:] perishing· why for I|hide of|mind as|what at|all
+(390) [Χορός:] ποτᾶται(Prä)(M/P); πάροιθεν(Adv) δὲ(Pt) πρῴρας(G)
+(390) [Χορός:] it|flutters; in|front but of|prow
+(391) [Χορός:] δριμὺς(Adj)(N) ἄηται(Prä)(M/P) κραδίας(G)
+(391) [Χορός:] sharp is|blown of|heart
+(392) [Χορός:] θυμὸς(N) ἔγκοτον(Adj)(A) στύγος(A).
+(392) [Χορός:] spirit resentful hatred.
+== Antistrophe 4 ==
+(394) [Ἠλέκτρα:] καί(Kon) πότʼ(Adv) ἂν(Pt) ἀμφιθαλὴς(Adj)(N)
+(394) [Ἠλέκτρα:] and when at|least double|nursed
+(395) [Ἠλέκτρα:] Ζεὺς(N) ἐπὶ(Prp) χεῖρα(A) βάλοι(Aor)(Akt)(Op),
+(395) [Ἠλέκτρα:] Zeus upon hand would|cast,
+(396) [Ἠλέκτρα:] φεῦ(ij) φεῦ(ij), κάρανα(A) δαΐξας(Aor)(Akt)(N);
+(396) [Ἠλέκτρα:] alas alas, heads having|rent;
+(397) [Ἠλέκτρα:] πιστὰ(Adj)(N) γένοιτο(Aor)(Med)(Op) χώρᾳ(D).
+(397) [Ἠλέκτρα:] true might|become to|the|land.
+(398) [Ἠλέκτρα:] δίκαν(A) δʼ(Pt) ἐξ(Prp) ἀδίκων(Adj)(G) ἀπαιτῶ(Prä)(Akt).
+(398) [Ἠλέκτρα:] justice but from of|unjust|ones I|demand.
+(399) [Ἠλέκτρα:] κλῦτε(Aor)(Imv)(Akt) δὲ(Pt) Γᾶ(V) χθονίων(Adj)(G) τε(Pt) τιμαί(N).
+(399) [Ἠλέκτρα:] hear but O|Earth of|chthonic and honors.
+== Anapäste ==
+(400) [Χορός:] ἀλλὰ(Kon) νόμος(N) μὲν(Pt) φονίας(G) σταγόνας(A)
+(400) [Χορός:] but custom|law indeed of|murder drops
+(401) [Χορός:] χυμένας(Per)(M/P)(A) ἐς(Prp) πέδον(A) ἄλλο(Adj)(A) προσαιτεῖν(Prä)(Inf)(Akt)
+(401) [Χορός:] poured into ground other to|beg|besides
+(402) [Χορός:] αἷμα(A). βοᾷ(Prä)(Akt) γὰρ(Pt) λοιγὸς(Adj)(N) Ἐρινὺν(A)
+(402) [Χορός:] blood. cries for bane Erinys
+(403) [Χορός:] παρὰ(Prp) τῶν(Art)(G) πρότερον(Adv) φθιμένων(Aor)(M/P)(G) ἄτην(A)
+(403) [Χορός:] from the|ones earlier having|perished ruin
+(404) [Χορός:] ἑτέραν(Adj)(A) ἐπάγουσαν(Prä)(Akt)(A) ἐπʼ(Prp) ἄτῃ(D).
+(404) [Χορός:] another bringing|on upon ruin.
+== Strophe 6 ==
+(405) [Ὀρέστης:] πόποι(ij) δὴ(Pt) νερτέρων(Adj)(G) τυραννίδες(N),
+(405) [Ὀρέστης:] ah indeed of|nether tyrannies,
+(406) [Ὀρέστης:] ἴδετε(Aor)(Imv)(Akt) πολυκρατεῖς(Adj)(N) Ἀραὶ(N) φθινομένων(Prä)(Akt)(G),
+(406) [Ὀρέστης:] see mighty Curses of|the|perishing,
+(407) [Ὀρέστης:] ἴδεσθʼ(Aor)(Med)(Imv) Ἀτρειδᾶν(G) τὰ(Art)(A) λοίπʼ(Adj)(A) ἀμηχάνως(Adv)
+(407) [Ὀρέστης:] see|for|yourselves of|Atreidae the remaining helplessly
+(408) [Ὀρέστης:] ἔχοντα(Prä)(Akt)(A) καὶ(Kon) δωμάτων(G)
+(408) [Ὀρέστης:] having and of|houses
+(409) [Ὀρέστης:] ἄτιμα(Adj)(A). πᾷ(Adv) τις(Pr)(N) τράποιτʼ(Aor)(Med)(Op) ἄν(Pt), ὦ(ij) Ζεῦ(V);
+(409) [Ὀρέστης:] dishonored. whither someone might|turn at|least, O Zeus;
+== Antistrophe 5 ==
+(410) [Χορός:] πέπαλται(Per)(M/P) δαὖτὲ(Pt) μοι(Pr)(D) φίλον(Adj)(N) κέαρ(N)
+(410) [Χορός:] has|throbbed again to|me dear heart
+(411) [Χορός:] τόνδε(Art)(A) κλύουσαν(Prä)(Akt)(A) οἶκτον(A)
+(411) [Χορός:] this|here hearing pity
+(412) [Χορός:] καὶ(Kon) τότε(Adv) μὲν(Pt) δύσελπις(Adj)(N),
+(412) [Χορός:] and then indeed despairing,
+(413) [Χορός:] σπλάγχνα(N) δέ(Pt) μοι(Pr)(D) κελαινοῦ‖ται(Prä)(M/P)
+(413) [Χορός:] entrails but to|me grow|black
+(414) [Χορός:] πρὸς(Prp) ἔπος(A) κλυούσᾳ(Prä)(Akt)(D).
+(414) [Χορός:] at word listening.
+(415) [Χορός:] ὅταν(Kon) δʼ(Pt) αὖτʼ(Adv) ἐπʼ(Prp) ἀλκῆς(G) ἐπάρῃ(Aor)(Akt)(Knj) μʼ(Pr)(A)
+(415) [Χορός:] whenever but again upon of|strength raise|up me
+(416) [Χορός:] ἐλπὶς(N), ἀπέστασεν(Aor)(Akt) ἄχος(N)
+(416) [Χορός:] hope, has|withdrawn pain
+(417) [Χορός:] προσφανεῖσά(Aor)(Akt)(N) μοι(Pr)(D) καλῶς(Adv).
+(417) [Χορός:] appearing to|me well.
+== Antistrophe 6 ==
+(418) [Ἠλέκτρα:] τί(Adv) δʼ(Pt) ἂν(Pt) φάντες(Aor)(Akt)(N) τύχοιμεν(Aor)(Akt)(Op) ἢ(Kon) τά(Art)(A) περ(Pt)
+(418) [Ἠλέκτρα:] what but at|least saying might|we|happen or the indeed
+(419) [Ἠλέκτρα:] πάθομεν(Aor)(Akt) ἄχεα(A) πρός(Prp) γε(Pt) τῶν(Art)(G) τεκομένων(Aor)(Med)(G);
+(419) [Ἠλέκτρα:] we|suffered pains from indeed the|ones having|borne;
+(420) [Ἠλέκτρα:] πάρεστι(Prä)(Akt) σαίνειν(Prä)(Inf)(Akt), τὰ(Art)(N) δʼ(Pt) οὔτι(Pt) θέλγεται(Prä)(M/P).
+(420) [Ἠλέκτρα:] it|is|present to|fawn, the|things but not|at|all are|enchanted.
+(421) [Ἠλέκτρα:] λύκος(N) γὰρ(Pt) ὥστʼ(Kon) ὠμόφρων(Adj)(N)
+(421) [Ἠλέκτρα:] wolf for as savage|minded
+(422) [Ἠλέκτρα:] ἄσαντος(Adj)(G) ἐκ(Prp) ματρός(G) ἐστι(Prä)(Akt) θυμός(N).
+(422) [Ἠλέκτρα:] unsated from mother is spirit.
+== Strophe 7 ==
+(423) [Χορός:] ἔκοψα(Aor)(Akt) κομμὸν(A) Ἄριον(A) ἔν(Prp) τε(Pt) Κισσίας(D)
+(423) [Χορός:] I|cut lock Arion in and Cissian
+(424) [Χορός:] νόμοις(D) ἰηλεμιστρίας(G),
+(424) [Χορός:] modes of|dirge|leader,
+(425) [Χορός:] ἀπριγδόπληκτα(Adj)(A) πολυπλάνητα(Adj)(A) δʼ(Pt) ἦν(Imp)(Akt) ἰδεῖν(AorS)(Inf)(Akt)
+(425) [Χορός:] rapid|struck much|wandering but was to|see
+(426) [Χορός:] ἐπασσυτεροτριβῆ(Adj)(A) τὰ(Art)(A) χερὸς(G) ὀρέγματα(A)
+(426) [Χορός:] quick|successive|rubbed the of|hand raisings
+(427) [Χορός:] ἄνωθεν(Adv) ἀνέκαθεν(Adv), κτύπῳ(D) δʼ(Pt) ἐπερρόθει(Imp)(Akt)
+(427) [Χορός:] from|above from|behind, with|din but roared|upon
+(428) [Χορός:] κροτητὸν(Adj)(A) ἀμὸν(Adj)(A) καὶ(Kon) πανάθλιον(Adj)(A) κάρα(A).
+(428) [Χορός:] clattering my and all|wretched head.
+== Strophe 8 ==
+(429) [Ἠλέκτρα:] ἰὼ(ij) ἰὼ(ij) δαΐα(Adj)(V)
+(429) [Ἠλέκτρα:] io io destructive
+(430) [Ἠλέκτρα:] πάντολμε(Adj)(V) μᾶτερ(V), δαΐαις(Adj)(D) ἐν(Prp) ἐκφοραῖς(D)
+(430) [Ἠλέκτρα:] all|bold mother, with|destructive in funeral|processions
+(431) [Ἠλέκτρα:] ἄνευ(Prp) πολιτᾶν(G) ἄνακτʼ(A),
+(431) [Ἠλέκτρα:] without of|citizens lord,
+(432) [Ἠλέκτρα:] ἄνευ(Prp) δὲ(Pt) πενθημάτων(G)
+(432) [Ἠλέκτρα:] without but of|mournings
+(433) [Ἠλέκτρα:] ἔτλας(AorS)(Akt) ἀνοίμωκτον(Adj)(A) ἄνδρα(A) θάψαι(Aor)(Inf)(Akt).
+(433) [Ἠλέκτρα:] you|dared unwept man to|bury.
+== Strophe 9 ==
+(434) [Ὀρέστης:] τὸ(Art)(A) πᾶν(Adj)(A) ἀτίμως(Adv) ἔλεξας(Aor)(Akt), οἴμοι(ij).
+(434) [Ὀρέστης:] the whole dishonorably you|said, woe|is|me.
+(435) [Ὀρέστης:] πατρὸς(G) δʼ(Pt) ἀτίμωσιν(A) ἆρα(Pt) τείσει(Fu)(Akt)
+(435) [Ὀρέστης:] of|father but dishonor then will|pay
+(436) [Ὀρέστης:] ἕκατι(Prp) μὲν(Pt) δαιμόνων(G),
+(436) [Ὀρέστης:] because|of indeed of|spirits,
+(437) [Ὀρέστης:] ἕκατι(Prp) δʼ(Pt) ἀμᾶν(Adj)(G) χερῶν(G);
+(437) [Ὀρέστης:] on|account|of but our of|hands;
+(438) [Ὀρέστης:] ἔπειτʼ(Adv) ἐγὼ(Pr)(N) νοσφίσας(Aor)(Akt)(N) ὀλοίμαν(Aor)(M/P)(Op).
+(438) [Ὀρέστης:] then I having|removed might|perish.
+== Antistrophe 9 ==
+(439) [Χορός:] ἐμασχαλίσθη(Aor)(Pas) δέ(Pt) γʼ(Pt), ὡς(Kon) τόδʼ(Pr)(A) εἰδῇς(Per)(Akt)(Knj)·
+(439) [Χορός:] was|armpit|bound but at|least, so|that this you|may|know·
+(440) [Χορός:] ἔπρασσε(Imp)(Akt) δʼ(Pt), ᾇπέρ(Adv) νιν(Pr)(A) ὧδε(Adv) θάπτει(Prä)(Akt),
+(440) [Χορός:] was|doing but, where|indeed him thus buries,
+(441) [Χορός:] μόρον(A) κτίσαι(Aor)(Inf)(Akt) μωμένα(Per)(M/P)(A)
+(441) [Χορός:] fate to|found having|been|deluded
+(442) [Χορός:] ἄφερτον(Adj)(A) αἰῶνι(D) σῷ(Adj)(D).
+(442) [Χορός:] unbearable to|lifetime your.
+(443) [Χορός:] κλύεις(Prä)(Akt) πατρῴους(Adj)(A) δύας(A) ἀτίμους(Adj)(A).
+(443) [Χορός:] you|hear ancestral pains dishonored.
+== Antistrophe 7 ==
+(445) [Ἠλέκτρα:] λέγεις(Prä)(Akt) πατρῷον(Adj)(A) μόρον(A)· ἐγὼ(Pr)(N) δʼ(Pt) ἀπεστάτουν(Imp)(Akt)
+(445) [Ἠλέκτρα:] you|say paternal fate· I but was|apart|standing
+(446) [Ἠλέκτρα:] ἄτιμος(Adj)(N), οὐδὲν(Pr)(A) ἀξία(Adj)(N)·
+(446) [Ἠλέκτρα:] dishonored, nothing worthy·
+(447) [Ἠλέκτρα:] μυχῷ(D) δʼ(Pt) ἄφερκτος(Adj)(N) πολυσινοῦς(Adj)(N) κυνὸς(G) δίκαν(Adv)
+(447) [Ἠλέκτρα:] in|the|inner|room but not|to|be|kept|off much|harmful of|dog like
+(448) [Ἠλέκτρα:] ἑτοιμότερα(Adj)(A)(Kmp) γέλωτος(G) ἀνέφερον(Imp)(Akt) λίβη(N),
+(448) [Ἠλέκτρα:] more|ready of|laughter I|was|bringing|up drop,
+(449) [Ἠλέκτρα:] χέουσα(Prä)(Akt)(N) πολύδακρυν(Adj)(A) γόον(A) κεκρυμμένα(Per)(M/P)(N).
+(449) [Ἠλέκτρα:] pouring much|tearful lament having|been|hidden.
+(450) [Ἠλέκτρα:] τοιαῦτʼ(Pr)(A) ἀκούων(Prä)(Akt)(N) ἐν(Prp) φρεσὶν(D) γράφου(Prä)(M/P)(Imv) ˘ ¯.
+(450) [Ἠλέκτρα:] such|things hearing in minds write ˘ ¯.
+== Antistrophe 8 ==
+(451) [Χορός:] διʼ(Prp) ὤτων(G) δὲ(Pt) συν‖τέτραινε(Aor)(Akt)(Imv)
+(451) [Χορός:] through of|ears but pierce|through
+(452) [Χορός:] μῦθον(A) ἡσύχῳ(Adj)(D) φρενῶν(G) βάσει(D).
+(452) [Χορός:] word with|quiet of|minds step.
+(453) [Χορός:] τὰ(Art)(A) μὲν(Pt) γὰρ(Pt) οὕτως(Adv) ἔχει(Prä)(Akt),
+(453) [Χορός:] the|things indeed for thus has,
+(454) [Χορός:] τὰ(Art)(A) δʼ(Pt) αὐτὸς(Pr)(N) ὄργα(A) μαθεῖν(AorS)(Inf)(Akt).
+(454) [Χορός:] the|things but himself works to|learn.
+(455) [Χορός:] πρέπει(Prä)(Akt) δʼ(Pt) ἀκάμπτῳ(Adj)(D) μένει(D) καθήκειν(Prä)(Inf)(Akt).
+(455) [Χορός:] it|befits but with|unyielding staying to|be|fitting.
+== Strophe 10 ==
+(456) [Ὀρέστης:] σὲ(Pr)(A) τοι(Pt) λέγω(Prä)(Akt), ξυγγενοῦ(Adj)(V), πάτερ(V), φίλοις(D).
+(456) [Ὀρέστης:] you at|least I|say, kinsman, father, to|friends.
+(457) [Ἠλέκτρα:] ἐγὼ(Pr)(N) δʼ(Pt) ἐπιφθέγγομαι(Prä)(M/P) κεκλαυμένα(Per)(M/P)(A).
+(457) [Ἠλέκτρα:] I but speak|out having|been|wept.
+(458) [Χορός:] στάσις(N) δὲ(Pt) πάγκοινος(Adj)(N) ἅδʼ(Pr)(N) ἐπιρροθεῖ(Prä)(Akt)·
+(458) [Χορός:] faction but all|common this cries|aloud·
+(459) [Χορός:] ἄκουσον(Aor)(Imv)(Akt) ἐς(Prp) φάος(A) μολών(AorS)(Akt)(N),
+(459) [Χορός:] hear into light having|come,
+(460) [Χορός:] ξὺν(Prp) δὲ(Pt) γενοῦ(Aor)(Med)(Imv) πρὸς(Prp) ἐχθρούς(A).
+(460) [Χορός:] with but become toward enemies.
+== Antistrophe 10 ==
+(461) [Ὀρέστης:] Ἄρης(N) Ἄρει(D) ξυμβαλεῖ(Fu)(Akt), Δίκᾳ(D) Δίκα(N).
+(461) [Ὀρέστης:] Ares to|Ares will|engage, to|Justice Justice.
+(462) [Ἠλέκτρα:] ἰὼ(ij) θεοί(N), κραίνετʼ(Prä)(Imv)(Akt) ἐνδίκως(Adv) δίκας(A).
+(462) [Ἠλέκτρα:] io gods, accomplish justly judgments.
+(463) [Χορός:] τρόμος(N) μʼ(Pr)(A) ὑφέρπει(Prä)(Akt) κλύουσαν(Prä)(Akt)(A) εὐγμάτων(G).
+(463) [Χορός:] tremor me creeps|under listening of|prayers.
+(464) [Χορός:] τὸ(Art)(N) μόρσιμον(Adj)(N) μένει(Prä)(Akt) πάλαι(Adv),
+(464) [Χορός:] the destined remains long|ago,
+(465) [Χορός:] εὐχομένοις(Prä)(M/P)(D) δʼ(Pt) ἂν(Pt) ἔλθοι(AorS)(Akt)(Op).
+(465) [Χορός:] to|the|praying but at|least might|come.
+== Strophe 11 ==
+(466) [Χορός:] ὦ(ij) πόνος(N) ἐγγενὴς(Adj)(N)
+(466) [Χορός:] O toil inborn
+(467) [Χορός:] καὶ(Kon) παράμουσος(Adj)(N) Ἄτας(G)
+(467) [Χορός:] and unmusical of|Ate
+(468) [Χορός:] αἱματόεσσα(Adj)(N) πλαγά(N).
+(468) [Χορός:] blood|stained blow.
+(469) [Χορός:] ἰὼ(ij) δύστονʼ(Adj)(V) ἄφερτα(Adj)(A) κήδη(A)·
+(469) [Χορός:] io woeful unbearable griefs·
+(470) [Χορός:] ἰὼ(ij) δυσκατάπαυστον(Adj)(A) ἄλγος(A).
+(470) [Χορός:] io hard|to|stop pain.
+== Antistrophe 11 ==
+(471) [Χορός:] δώμασιν(D) ἔμμοτον(Adj)(N)
+(471) [Χορός:] in|the|houses blood|soaked
+(472) [Χορός:] τῶνδʼ(Pr)(G) ἄκος(N), οὐδʼ(Pt) ἀπʼ(Prp) ἄλλων(Adj)(G)
+(472) [Χορός:] of|these remedy, not from others
+(473) [Χορός:] ἔκτοθεν(Adv), ἀλλʼ(Kon) ἀπʼ(Prp) αὐτῶν(Pr)(G),
+(473) [Χορός:] from|outside, but from themselves,
+(474) [Χορός:] διʼ(Prp) ὠμὰν(Adj)(A) ἔριν(A) αἱματηράν(Adj)(A).
+(474) [Χορός:] through savage strife bloody.
+(475) [Χορός:] θεῶν(G) τῶν(Art)(G) κατὰ(Prp) γᾶς(G) ὅδʼ(Pr)(N) ὕμνος(N).
+(475) [Χορός:] of|gods of|the down|in of|earth this hymn.
+== Anapäste ==
+(476) [Χορός:] ἀλλὰ(Kon) κλύοντες(Prä)(Akt)(N), μάκαρες(Adj)(N) χθόνιοι(Adj)(N),
+(476) [Χορός:] but hearing, blessed chthonic,
+(477) [Χορός:] τῆσδε(Pr)(G) κατευχῆς(G) πέμπετʼ(Prä)(Imv)(Akt) ἀρωγὴν(A)
+(477) [Χορός:] of|this of|prayer send aid
+(478) [Χορός:] παισὶν(D) προφρόνως(Adv) ἐπὶ(Prp) νίκῃ(D).
+(478) [Χορός:] to|children kindly upon victory.
+=== Episode ===
+(479) [Ὀρέστης:] πάτερ(V), τρόποισιν(D) οὐ(Pt) τυραννικοῖς(Adj)(D) θανών(AorS)(Akt)(N),
+(479) [Ὀρέστης:] father, in|ways not tyrannical having|died,
+(480) [Ὀρέστης:] αἰτουμένῳ(Prä)(M/P)(D) μοι(Pr)(D) δὸς(Aor)(Imv)(Akt) κράτος(A) τῶν(Art)(G) σῶν(Adj)(G) δόμων(G).
+(480) [Ὀρέστης:] to|the|asking to|me give power of|the your of|houses.
+(481) [Ἠλέκτρα:] κἀγώ(Kon)(Pr)(N), πάτερ(V), τοιάνδε(Adj)(A) σου(Pr)(G) χρείαν(A) ἔχω(Prä)(Akt),
+(481) [Ἠλέκτρα:] and|I, father, such|as|this of|you need I|have,
+(482) [Ἠλέκτρα:] φυγεῖν(AorS)(Inf)(Akt) μέγαν(Adj)(A) προσθεῖσαν(AorS)(Akt)(A) Αἰγίσθῳ(D) φθόρον(A).
+(482) [Ἠλέκτρα:] to|flee great having|added to|Aegisthus ruin.
+(483) [Ὀρέστης:] οὕτω(Adv) γὰρ(Pt) ἄν(Pt) σοι(Pr)(D) δαῖτες(N) ἔννομοι(Adj)(N) βροτῶν(G)
+(483) [Ὀρέστης:] thus for at|least to|you feasts lawful of|mortals
+(484) [Ὀρέστης:] κτιζοίατʼ(Prä)(Akt)(Op)· εἰ(Kon) δὲ(Pt) μή(Pt), παρʼ(Prp) εὐδείπνοις(Adj)(D) ἔσῃ(Fu)(M/P)
+(484) [Ὀρέστης:] would|be|instituted· if but not, beside sumptuous you|will|be
+(485) [Ὀρέστης:] ἄτιμος(Adj)(N) ἐμπύροισι(Adj)(D) κνισωτοῖς(Adj)(D) χθονός(G).
+(485) [Ὀρέστης:] dishonored at|burnt|offerings smoke|scented of|earth.
+(486) [Ἠλέκτρα:] κἀγὼ(Kon)(Pr)(N) χοάς(A) σοι(Pr)(D) τῆς(Art)(G) ἐμῆς(Adj)(G) παγκληρίας(G)
+(486) [Ἠλέκτρα:] and|I libations to|you of|the my full|inheritance
+(487) [Ἠλέκτρα:] οἴσω(Fu)(Akt) πατρῴων(Adj)(G) ἐκ(Prp) δόμων(G) γαμηλίους(Adj)(A)·
+(487) [Ἠλέκτρα:] I|will|bring of|ancestral out|of houses nuptial·
+(488) [Ἠλέκτρα:] πάντων(Adj)(G) δὲ(Pt) πρῶτον(Adv)(Sup) τόνδε(Pr)(A) πρεσβεύσω(Fu)(Akt) τάφον(A).
+(488) [Ἠλέκτρα:] of|all but first this I|will|honor tomb.
+(489) [Ὀρέστης:] ὦ(ij) Γαῖʼ(V), ἄνες(Aor)(Imv)(Akt) μοι(Pr)(D) πατέρʼ(A) ἐποπτεῦσαι(Aor)(Inf)(Akt) μάχην(A).
+(489) [Ὀρέστης:] O Earth, allow to|me father to|oversee battle.
+(490) [Ἠλέκτρα:] ὦ(ij) Περσέφασσα(V), δὸς(Aor)(Imv)(Akt) δʼ(Pt) ἔτʼ(Adv) εὔμορφον(Adj)(A) κράτος(A).
+(490) [Ἠλέκτρα:] O Persephassa, give but yet fair|formed power.
+(491) [Ὀρέστης:] μέμνησο(Per)(Med)(Imv) λουτρῶν(G) οἷς(Pr)(D) ἐνοσφίσθης(Aor)(Pas), πάτερ(V).
+(491) [Ὀρέστης:] remember of|baths with|which you|were|deprived, father.
+(492) [Ἠλέκτρα:] μέμνησο(Per)(Med)(Imv) δʼ(Pt) ἀμφίβληστρον(A) ὡς(Kon) ἐκαίνισαν(Aor)(Akt).
+(492) [Ἠλέκτρα:] remember but casting|net how they|renewed.
+(493) [Ὀρέστης:] πέδαις(D) δʼ(Pt) ἀχαλκεύτοις(Adj)(D) ἐθηρεύθης(Aor)(Pas), πάτερ(V).
+(493) [Ὀρέστης:] with|fetters but unhammered you|were|hunted, father.
+(494) [Ἠλέκτρα:] αἰσχρῶς(Adv) τε(Pt) βουλευτοῖσιν(D) ἐν(Prp) καλύμμασιν(D).
+(494) [Ἠλέκτρα:] shamefully and by|councillors in coverings.
+(495) [Ὀρέστης:] ἆρʼ(Pt) ἐξεγείρῃ(Prä)(Akt) τοῖσδʼ(Art)(D) ὀνείδεσιν(D), πάτερ(V);
+(495) [Ὀρέστης:] then do|you|rouse by|these reproaches, father;
+(496) [Ἠλέκτρα:] ἆρʼ(Pt) ὀρθὸν(Adj)(A) αἴρεις(Prä)(Akt) φίλτατον(Adj)(A)(Sup) τὸ(Art)(A) σὸν(Adj)(A) κάρα(A);
+(496) [Ἠλέκτρα:] then upright do|you|raise dearest the your head;
+(497) [Ὀρέστης:] ἤτοι(Pt) δίκην(A) ἴαλλε(Prä)(Imv)(Akt) σύμμαχον(Adj)(A) φίλοις(D),
+(497) [Ὀρέστης:] indeed justice send|forth ally to|friends,
+(498) [Ὀρέστης:] ἢ(Kon) τὰς(Art)(A) ὁμοίας(Adj)(A) ἀντίδος(Aor)(Imv)(Akt) λαβὰς(A) λαβεῖν(AorS)(Inf)(Akt),
+(498) [Ὀρέστης:] or the similar give|back seizures to|take,
+(499) [Ὀρέστης:] εἴπερ(Kon) κρατηθείς(Aor)(Pas)(N) γʼ(Pt) ἀντινικῆσαι(Aor)(Inf)(Akt) θέλεις(Prä)(Akt).
+(499) [Ὀρέστης:] if|indeed having|been|overpowered at|least to|win|back you|want.
+(500) [Ἠλέκτρα:] καὶ(Kon) τῆσδʼ(Pr)(G) ἄκουσον(Aor)(Imv)(Akt) λοισθίου(Adj)(G) βοῆς(G), πάτερ(V),
+(500) [Ἠλέκτρα:] and of|this hear of|last of|cry, father,
+(501) [Ἠλέκτρα:] ἰδὼν(AorS)(Akt)(N) νεοσσοὺς(A) τούσδʼ(Pr)(A) ἐφημένους(Prä)(M/P)(A) τάφῳ(D)·
+(501) [Ἠλέκτρα:] having|seen nestlings these sitting|by to|tomb·
+(502) [Ἠλέκτρα:] οἴκτιρε(Aor)(Imv)(Akt) θῆλυν(Adj)(A) ἄρσενός(Adj)(G) θʼ(Pt) ὁμοῦ(Adv) γόνον(A),
+(502) [Ἠλέκτρα:] pity female of|male and together offspring,
+(503) [Ἠλέκτρα:] καὶ(Kon) μὴ(Pt) ʼξαλείψῃς(Aor)(Akt)(Knj) σπέρμα(A) Πελοπιδῶν(G) τόδε(Pr)(A)
+(503) [Ἠλέκτρα:] and not you|may|wipe|out seed of|Pelopids this
+(504) [Ἠλέκτρα:] οὕτω(Adv) γὰρ(Pt) οὐ(Pt) τέθνηκας(Per)(Akt) οὐδὲ(Kon) περ(Pt) θανών(AorS)(Akt)(N)·
+(504) [Ἠλέκτρα:] thus for not you|have|died nor even having|died·
+(505) [Ἠλέκτρα:] παῖδες(N) γὰρ(Pt) ἀνδρὶ(D) κληδόνες(N) σωτήριοι(Adj)(N)
+(505) [Ἠλέκτρα:] children for to|a|man heralds saving
+(506) [Ἠλέκτρα:] θανόντι(AorS)(Akt)(D)· φελλοὶ(N) δʼ(Pt) ὣς(Adv) ἄγουσι(Prä)(Akt) δίκτυον(A),
+(506) [Ἠλέκτρα:] to|the|dead· corks but as they|lead net,
+(507) [Ἠλέκτρα:] τὸν(Art)(A) ἐκ(Prp) βυθοῦ(G) κλωστῆρα(A) σῴζοντες(Prä)(Akt)(N) λίνου(G).
+(507) [Ἠλέκτρα:] the|one from of|deep spindle saving of|flax.
+(508) [Ἠλέκτρα:] ἄκουʼ(Prä)(Imv)(Akt), ὑπὲρ(Prp) σοῦ(Pr)(G) τοιάδʼ(Adj)(A) ἔστʼ(Prä)(Akt) ὀδύρματα(N).
+(508) [Ἠλέκτρα:] listen, for|the|sake|of you such there|is laments.
+(509) [Ἠλέκτρα:] αὐτὸς(Pr)(N) δὲ(Pt) σῴζῃ(Prä)(M/P)(Knj) τόνδε(Pr)(A) τιμήσας(Aor)(Akt)(N) λόγον(A).
+(509) [Ἠλέκτρα:] your|self but you|may|save this having|honored word.
+(510) [Χορός:] καὶ(Pt) μὴν(Pt) ἀμεμφῆ(Adj)(A) τόνδʼ(Pr)(A) ἐτείνατον(Aor)(Akt)(Du) λόγον(A),
+(510) [Χορός:] and now blameless this you|two|stretched word,
+(511) [Χορός:] τίμημα(A) τύμβου(G) τῆς(Art)(G) ἀνοιμώκτου(Adj)(G) τύχης(G).
+(511) [Χορός:] honor|due of|tomb of|the unwept fortune.
+(512) [Χορός:] τὰ(Art)(A) δʼ(Pt) ἄλλʼ(Adj)(A), ἐπειδὴ(Kon) δρᾶν(Prä)(Inf)(Akt) κατώρθωσαι(Aor)(Akt) φρενί(D),
+(512) [Χορός:] the but other|things, since to|do you|brought|right in|mind,
+(513) [Χορός:] ἔρδοις(Prä)(Akt)(Op) ἂν(Pt) ἤδη(Adv) δαίμονος(G) πειρώμενος(Prä)(M/P)(N).
+(513) [Χορός:] you|might|do at|least already of|daimon making|trial.
+(514) [Ὀρέστης:] ἔσται(Fu)(M/P)· πυθέσθαι(Aor)(M/P)(Inf) δʼ(Pt) οὐδέν(Pr)(N) ἐστʼ(Prä)(Akt) ἔξω(Adv) δρόμου(G),
+(514) [Ὀρέστης:] it|shall|be· to|learn but nothing is outside of|course,
+(515) [Ὀρέστης:] πόθεν(Adv) χοὰς(A) ἔπεμψεν(Aor)(Akt), ἐκ(Prp) τίνος(Pr)(G) λόγου(G)
+(515) [Ὀρέστης:] whence libations she|sent, out|of of|what account
+(516) [Ὀρέστης:] μεθύστερον(Adv) τιμῶσʼ(Prä)(Akt)(N) ἀνήκεστον(Adj)(A) πάθος(A);
+(516) [Ὀρέστης:] later honoring incurable suffering;
+(517) [Ὀρέστης:] θανόντι(AorS)(Akt)(D) δʼ(Pt) οὐ(Pt) φρονοῦντι(Prä)(Akt)(D) δειλαία(Adj)(N) χάρις(N)
+(517) [Ὀρέστης:] to|the|dead and not thinking wretched favor
+(518) [Ὀρέστης:] ἐπέμπετʼ(Imp)(M/P)· οὐκ(Pt) ἔχοιμʼ(Prä)(Akt)(Op) ἂν(Pt) εἰκάσαι(Aor)(Inf)(Akt) τόδε(Pr)(N).
+(518) [Ὀρέστης:] was|being|sent· not I|might|have at|least to|conjecture this.
+(519) [Ὀρέστης:] τὰ(Art)(N) δῶρα(N) μείω(Adj)(N) δʼ(Pt) ἐστὶ(Prä)(Akt) τῆς(Art)(G) ἁμαρτίας(G).
+(519) [Ὀρέστης:] the gifts lesser but is of the|fault.
+(520) [Ὀρέστης:] τὰ(Art)(A) πάντα(Adj)(A) γάρ(Pt) τις(Pr)(N) ἐκχέας(Aor)(Akt)(N) ἀνθʼ(Prp) αἵματος(G)
+(520) [Ὀρέστης:] the all for someone having|poured instead|of blood
+(521) [Ὀρέστης:] ἑνός(Pr)(G), μάτην(Adv) ὁ(Art)(N) μόχθος(N)· ὧδʼ(Adv) ἔχει(Prä)(Akt) λόγος(N).
+(521) [Ὀρέστης:] of|one, in|vain the toil· thus has word.
+(522) [Ὀρέστης:] θέλοντι(Prä)(Akt)(D) δʼ(Pt), εἴπερ(Kon) οἶσθʼ(Per)(Akt), ἐμοὶ(Pr)(D) φράσον(Aor)(Akt)(Imv) τάδε(Pr)(A).
+(522) [Ὀρέστης:] to|one|willing but, if|indeed you|know, to|me tell these.
+(523) [Χορός:] οἶδʼ(Per)(Akt), ὦ(ij) τέκνον(V), παρῆ(Imp)(Akt) γάρ(Pt)· ἔκ(Prp) τʼ(Pt) ὀνειράτων(G)
+(523) [Χορός:] I|know, O child, I|was|present for· out|of and dreams
+(524) [Χορός:] καὶ(Kon) νυκτιπλάγκτων(Adj)(G) δειμάτων(G) πεπαλμένη(Per)(M/P)(N)
+(524) [Χορός:] and of|night|wandering of|terrors having|throbbed
+(525) [Χορός:] χοὰς(A) ἔπεμψε(Aor)(Akt) τάσδε(Art)(A) δύσθεος(Adj)(N) γυνή(N).
+(525) [Χορός:] libations she|sent these ungodly woman.
+(526) [Ὀρέστης:] ἦ(Pt) καὶ(Pt) πέπυσθε(Per)(M/P) τοὔναρ(Pr)(N), ὥστʼ(Kon) ὀρθῶς(Adv) φράσαι(Aor)(Inf)(Akt);
+(526) [Ὀρέστης:] indeed and you|have|learned the|dream, so|as rightly to|tell;
+(527) [Χορός:] τεκεῖν(Aor)(Inf)(Akt) δράκοντʼ(A) ἔδοξεν(Aor)(Akt), ὡς(Kon) αὐτὴ(Pr)(N) λέγει(Prä)(Akt).
+(527) [Χορός:] to|bear serpent it|seemed, as she|herself says.
+(528) [Ὀρέστης:] καὶ(Kon) ποῖ(Adv) τελευτᾷ(Prä)(Akt) καὶ(Kon) καρανοῦται(Prä)(M/P) λόγος(N);
+(528) [Ὀρέστης:] and whither ends and is|fulfilled word;
+(529) [Χορός:] ἐν(Prp) σπαργάνοισι(D) παιδὸς(G) ὁρμίσαι(Aor)(Inf)(Akt) δίκην(A).
+(529) [Χορός:] in swaddling|bands of|child to|moor like|manner.
+(530) [Ὀρέστης:] τίνος(Pr)(G) βορᾶς(G) χρῄζοντα(Prä)(Akt)(A), νεογενὲς(Adj)(N) δάκος(N);
+(530) [Ὀρέστης:] of|what food needing, newly|born bite;
+(531) [Χορός:] αὐτὴ(Pr)(N) προσέσχε(Aor)(Akt) μαζὸν(A) ἐν(Prp) τὠνείρατι(D).
+(531) [Χορός:] she|herself held|forth breast in the|dream.
+(532) [Ὀρέστης:] καὶ(Kon) πῶς(Adv) ἄτρωτον(Adj)(N) οὖθαρ(N) ἦν(Imp)(Akt) ὑπὸ(Prp) στύγους(G);
+(532) [Ὀρέστης:] and how unwounded udder was under hatred;
+(533) [Χορός:] ὥστʼ(Kon) ἐν(Prp) γάλακτι(D) θρόμβον(A) αἵματος(G) σπάσαι(Aor)(Inf)(Akt).
+(533) [Χορός:] so|as in milk clot of|blood to|draw.
+(534) [Ὀρέστης:] οὔτοι(Pt) μάταιον(Adj)(N)· ἀνδρὸς(G) ὄψανον(N) πέλει(Prä)(Akt).
+(534) [Ὀρέστης:] not|indeed vain· of|man relish becomes.
+(535) [Χορóς:] ἡ(Art)(N) δʼ(Pt) ἐξ(Prp) ὕπνου(G) κέκλαγγεν(Per)(Akt) ἐπτοημένη(Per)(M/P)(N).
+(535) [Χορóς:] she but out|of sleep has|cried|out being|frightened.
+(536) [Χορóς:] πολλοὶ(Adj)(N) δʼ(Pt) ἀνῇθον(Aor)(Akt), ἐκτυφλωθέντες(Aor)(Pas)(N) σκότῳ(D),
+(536) [Χορóς:] many but went|up, having|been|blinded by|darkness,
+(537) [Χορóς:] λαμπτῆρες(N) ἐν(Prp) δόμοισι(D) δεσποίνης(G) χάριν(A)·
+(537) [Χορóς:] lamps in houses of|mistress for|sake·
+(538) [Χορóς:] πέμπει(Prä)(Akt) τʼ(Pt) ἔπειτα(Adv) τάσδε(Art)(A) κηδείους(Adj)(A) χοάς(A),
+(538) [Χορóς:] she|sends and then these funeral libations,
+(539) [Χορóς:] ἄκος(A) τομαῖον(Adj)(A) ἐλπίσασα(Aor)(Akt)(N) πημάτων(G).
+(539) [Χορóς:] remedy cutting having|hoped of|sufferings.
+(540) [Ὀρέστης:] ἀλλʼ(Kon) εὔχομαι(Prä)(M/P) γῇ(D) τῇδε(Pr)(D) καὶ(Kon) πατρὸς(G) τάφῳ(D)
+(540) [Ὀρέστης:] but I|pray to|earth this and to|fathers tomb
+(541) [Ὀρέστης:] τοὔνειρον(Pr)(N) εἶναι(Prä)(Inf)(Akt) τοῦτʼ(Pr)(N) ἐμοὶ(Pr)(D) τελεσφόρον(Adj)(N).
+(541) [Ὀρέστης:] the|dream to|be this to|me bringing|to|end.
+(542) [Ὀρέστης:] κρίνω(Prä)(Akt) δέ(Pt) τοί(Pt) νιν(Pr)(A) ὥστε(Kon) συγκόλλως(Adv) ἔχειν(Prä)(Inf)(Akt).
+(542) [Ὀρέστης:] I|judge but indeed him so|that coherently to|have.
+(543) [Ὀρέστης:] εἰ(Kon) γὰρ(Pt) τὸν(Art)(A) αὐτὸν(Adj)(A) χῶρον(A) ἐκλιπὼν(AorS)(Akt)(N) ἐμοὶ(Pr)(D)
+(543) [Ὀρέστης:] if for the same place having|left to|me
+(544) [Ὀρέστης:] οὕφις(N) ἐμοῖσι(Pr)(D) σπαργάνοις(D) ὡπλίζετο(Imp)(M/P),
+(544) [Ὀρέστης:] serpent with|my swaddling|bands was|arming|himself,
+(545) [Ὀρέστης:] καὶ(Kon) μαστὸν(A) ἀμφέχασκʼ(Imp)(Akt) ἐμὸν(Adj)(A) θρεπτήριον(Adj)(A),
+(545) [Ὀρέστης:] and breast was|gaping|around my nourishing,
+(546) [Ὀρέστης:] θρόμβῳ(D) δʼ(Pt) ἔμειξεν(Aor)(Akt) αἵματος(G) φίλον(Adj)(A) γάλα(A),
+(546) [Ὀρέστης:] with|clot but he|mingled of|blood dear milk,
+(547) [Ὀρέστης:] ἡ(Art)(N) δʼ(Pt) ἀμφὶ(Prp) τάρβει(D) τῷδʼ(Pr)(D) ἐπῴμωξεν(Aor)(Akt) πάθει(D),
+(547) [Ὀρέστης:] she but about fear this she|wailed at|suffering,
+(548) [Ὀρέστης:] δεῖ(Prä)(Akt) τοί(Pt) νιν(Pr)(A), ὡς(Kon) ἔθρεψεν(Aor)(Akt) ἔκπαγλον(Adj)(A) τέρας(A),
+(548) [Ὀρέστης:] it|is|needful indeed him, as she|nourished terrible monster,
+(549) [Ὀρέστης:] θανεῖν(AorS)(Inf)(Akt) βιαίως(Adv)· ἐκδρακοντωθεὶς(Aor)(Pas)(N) δʼ(Pt) ἐγὼ(Pr)(N)
+(549) [Ὀρέστης:] to|die violently· having|been|made|serpent|like but I
+(550) [Ὀρέστης:] κτείνω(Prä)(Akt) νιν(Pr)(A), ὡς(Kon) τοὔνειρον(Pr)(N) ἐννέπει(Prä)(Akt) τόδε(Pr)(N).
+(550) [Ὀρέστης:] I|kill him, as the|dream tells this.
+(551) [Χορός:] τερασκόπον(A) δὴ(Pt) τῶνδέ(Pr)(G) σʼ(Pr)(A) αἱροῦμαι(Prä)(M/P) πέρι(Prp).
+(551) [Χορός:] seer|of|portents indeed about|these you I|choose about.
+(552) [Χορός:] γένοιτο(AorS)(Med)(Op) δʼ(Pt) οὕτως(Adv). τἄλλα(Art)(A)(Adj)(A) δʼ(Pt) ἐξηγοῦ(Prä)(M/P)(Imv) φίλοις(D),
+(552) [Χορός:] may|it|be and thus. the|others and explain for|friends,
+(553) [Χορός:] τοὺς(Art)(A) μέν(Pt) τι(Pr)(A) ποιεῖν(Prä)(Inf)(Akt), τοὺς(Art)(A) δὲ(Pt) μή(Pt) τι(Pr)(A) δρᾶν(Prä)(Inf)(Akt) λέγων(Prä)(Akt)(N).
+(553) [Χορός:] the|ones indeed something to|do, the|ones but not something to|do saying.
+(554) [Ὀρέστης:] ἁπλοῦς(Adj)(N) ὁ(Art)(N) μῦθος(N)· τήνδε(Pr)(A) μὲν(Pt) στείχειν(Prä)(Inf)(Akt) ἔσω(Adv),
+(554) [Ὀρέστης:] simple the tale· this|woman indeed to|go inside,
+(555) [Ὀρέστης:] αἰνῶ(Prä)(Akt) δὲ(Pt) κρύπτειν(Prä)(Inf)(Akt) τάσδε(Art)(A) συνθήκας(A) ἐμάς(Adj)(A),
+(555) [Ὀρέστης:] I|praise but to|hide these compacts my,
+(556) [Ὀρέστης:] ὡς(Kon) ἂν(Pt) δόλῳ(D) κτείναντες(Aor)(Akt)(N) ἄνδρα(A) τίμιον(Adj)(A)
+(556) [Ὀρέστης:] so|that would by|guile having|killed man honorable
+(557) [Ὀρέστης:] δόλοισι(D) καὶ(Kon) ληφθῶσιν(Aor)(Pas)(Knj) ἐν(Prp) ταὐτῷ(Art)(D)(Adj)(D) βρόχῳ(D)
+(557) [Ὀρέστης:] by|wiles and they|may|be|taken in the|same noose
+(558) [Ὀρέστης:] θανόντες(AorS)(Akt)(N), καὶ(Kon) Λοξίας(N) ἐφήμισεν(Aor)(Akt),
+(558) [Ὀρέστης:] having|died, and Loxias declared,
+(559) [Ὀρέστης:] ἄναξ(N) Ἀπόλλων(N), μάντις(N) ἀψευδὴς(Adj)(N) τὸ(Art)(A) πρίν(Adv).
+(559) [Ὀρέστης:] lord Apollo, seer unerring the before.
+(560) [Ὀρέστης:] ξένῳ(D) γὰρ(Pt) εἰκώς(Per)(Akt)(N), παντελῆ(Adj)(A) σαγὴν(A) ἔχων(Prä)(Akt)(N),
+(560) [Ὀρέστης:] to|a|stranger for being|like, complete net having,
+(561) [Ὀρέστης:] ἥξω(Fu)(Akt) σὺν(Prp) ἀνδρὶ(D) τῷδʼ(Pr)(D) ἐφʼ(Prp) ἑρκείους(Adj)(A) πύλας(A)
+(561) [Ὀρέστης:] I|shall|come with man this upon courtyard gates
+(562) [Ὀρέστης:] Πυλάδῃ(D), ξένος(N) τε(Pt) καὶ(Kon) δορύξενος(Adj)(N) δόμων(G).
+(562) [Ὀρέστης:] Pylades, guest and also spear|guest of|houses.
+(563) [Ὀρέστης:] ἄμφω(Pr)(Du)(N) δὲ(Pt) φωνὴν(A) ἥσομεν(Fu)(Akt) Παρνησσίδα(Adj)(A),
+(563) [Ὀρέστης:] both but voice we|will|send Parnassian,
+(564) [Ὀρέστης:] γλώσσης(G) ἀυτὴν(Pr)(A) Φωκίδος(G) μιμουμένω(Prä)(M/P)(Du)(N).
+(564) [Ὀρέστης:] of|tongue it of|Phocis imitating|we|two.
+(565) [Ὀρέστης:] καὶ(Kon) δὴ(Pt) θυρωρῶν(G) οὔτις(Pr)(N) ἂν(Pt) φαιδρᾷ(Adj)(D) φρενὶ(D)
+(565) [Ὀρέστης:] and indeed of|doorkeepers no|one at|least with|bright mind
+(566) [Ὀρέστης:] δέξαιτʼ(Aor)(Med)(Op), ἐπειδὴ(Kon) δαιμονᾷ(Prä)(Akt) δόμος(N) κακοῖς(Adj)(D)·
+(566) [Ὀρέστης:] would|receive, since is|possessed house by|evils·
+(567) [Ὀρέστης:] μενοῦμεν(Fu)(Akt) οὕτως(Adv) ὥστʼ(Kon) ἐπεικάζειν(Prä)(Inf)(Akt) τινὰ(Pr)(A)
+(567) [Ὀρέστης:] we|will|remain thus so|as to|conjecture someone
+(568) [Ὀρέστης:] δόμους(A) παραστείχοντα(Prä)(Akt)(A) καὶ(Kon) τάδʼ(Pr)(A) ἐννέπειν(Prä)(Inf)(Akt)·
+(568) [Ὀρέστης:] houses passing|by and these to|say·
+(569) [Ὀρέστης:] τί(Adv) δὴ(Pt) πύλαισι(D) τὸν(Art)(A) ἱκέτην(A) ἀπείργεται(Prä)(M/P)
+(569) [Ὀρέστης:] why indeed by|gates the suppliant keeps|off
+(570) [Ὀρέστης:] Αἴγισθος(N), εἴπερ(Kon) οἶδεν(Per)(Akt) ἔνδημος(Adj)(N) παρών(Prä)(Akt)(N);
+(570) [Ὀρέστης:] Aegisthus, if|indeed he|knows in|the|deme being|present;
+(571) [Ὀρέστης:] εἰ(Kon) δʼ(Pt) οὖν(Pt) ἀμείψω(Aor)(Akt)(Knj) βαλὸν(Aor)(Akt)(A) ἑρκείων(Adj)(G) πυλῶν(G)
+(571) [Ὀρέστης:] if then indeed I|may|pass having|cast of|enclosure gates
+(572) [Ὀρέστης:] κἀκεῖνον(Kon)(Pr)(A) ἐν(Prp) θρόνοισιν(D) εὑρήσω(Fu)(Akt) πατρός(G),
+(572) [Ὀρέστης:] and|that|one in thrones I|will|find of|father,
+(573) [Ὀρέστης:] ἢ(Kon) καὶ(Kon) μολὼν(AorS)(Akt)(N) ἔπειτά(Adv) μοι(Pr)(D) κατὰ(Prp) στόμα(A)
+(573) [Ὀρέστης:] or and having|come then to|me according|to mouth
+(574) [Ὀρέστης:] ἀρεῖ(Fu)(Akt), σάφʼ(Adv) ἴσθι(Per)(Akt)(Imv), καὶ(Kon) κατʼ(Prp) ὀφθαλμοὺς(A) βαλεῖ(Fu)(Akt),
+(574) [Ὀρέστης:] he|will|take, clearly know, and down|upon eyes he|will|throw,
+(575) [Ὀρέστης:] πρὶν(Kon) αὐτὸν(Pr)(A) εἰπεῖν(Aor)(Inf)(Akt) ποδαπὸς(Adj)(N) ὁ(Art)(N) ξένος(N); νεκρὸν(Adj)(A)
+(575) [Ὀρέστης:] before him to|say from|what|country the stranger; dead
+(576) [Ὀρέστης:] θήσω(Fu)(Akt), ποδώκει(Adj)(D) περιβαλὼν(Aor)(Akt)(N) χαλκεύματι(D).
+(576) [Ὀρέστης:] I|will|put, to|the|swift|foot having|cast|around with|bronze|work.
+(577) [Ὀρέστης:] φόνου(G) δʼ(Pt) Ἐρινὺς(N) οὐχ(Pt) ὑπεσπανισμένη(Per)(M/P)(N)
+(577) [Ὀρέστης:] of|murder but Erinys not under|lacking
+(578) [Ὀρέστης:] ἄκρατον(Adj)(A) αἷμα(A) πίεται(Fu)(M/P) τρίτην(Adj)(A) πόσιν(A).
+(578) [Ὀρέστης:] unmixed blood will|drink third draught.
+(579) [Ὀρέστης:] νῦν(Adv) οὖν(Pt) σὺ(Pr)(N) μὲν(Pt) φύλασσε(Prä)(Akt)(Imv) τἀν(Art)(A) οἴκῳ(D) καλῶς(Adv),
+(579) [Ὀρέστης:] now then you indeed guard the|in house well,
+(580) [Ὀρέστης:] ὅπως(Kon) ἂν(Pt) ἀρτίκολλα(Adj)(N) συμβαίνῃ(Prä)(Akt)(Knj) τάδε(Pr)(A)·
+(580) [Ὀρέστης:] so|that at|least right|together may|happen these·
+(581) [Ὀρέστης:] ὑμῖν(Pr)(D) δʼ(Pt) ἐπαινῶ(Prä)(Akt) γλῶσσαν(A) εὔφημον(Adj)(A) φέρειν(Prä)(Inf)(Akt),
+(581) [Ὀρέστης:] to|you but I|praise tongue well|spoken to|bear,
+(582) [Ὀρέστης:] σιγᾶν(Prä)(Inf)(Akt) θʼ(Pt) ὅπου(Adv) δεῖ(Prä)(Akt) καὶ(Kon) λέγειν(Prä)(Inf)(Akt) τὰ(Art)(A) καίρια(Adj)(A).
+(582) [Ὀρέστης:] to|be|silent and where it|is|necessary and to|say the timely.
+(583) [Ὀρέστης:] τὰ(Art)(A) δʼ(Pt) ἄλλα(Adj)(A) τούτῳ(Pr)(D) δεῦρʼ(Adv) ἐποπτεῦσαι(Aor)(Inf)(Akt) λέγω(Prä)(Akt),
+(583) [Ὀρέστης:] the but other to|this hither to|oversee I|say,
+(584) [Ὀρέστης:] ξιφηφόρους(Adj)(A) ἀγῶνας(A) ὀρθώσαντί(Aor)(Akt)(D) μοι(Pr)(D).
+(584) [Ὀρέστης:] sword|bearing contests having|set|upright to|me.
+=== Chor ===
+== Strophe 1 ==
+(585) [Χορός:] πολλὰ(Adj)(A) μὲν(Pt) γᾶ(N) τρέφει(Prä)(Akt)
+(585) [Χορός:] many indeed earth feeds
+(586) [Χορός:] δεινὰ(Adj)(A) καὶ(Kon) δειμάτων(G) ἄχη(A),
+(586) [Χορός:] fearful and of|terrors pains,
+(587) [Χορός:] πόντιαί(Adj)(N) τʼ(Pt) ἀγκάλαι(N) κνωδάλων(G)
+(587) [Χορός:] sea and arms of|monsters
+(588) [Χορός:] ἀνταίων(Adj)(G) βρύουσι(Prä)(Akt)·
+(588) [Χορός:] of|opponents they|swarm·
+(589) [Χορός:] πλάθουσι(Prä)(Akt) βλαστοῦσι(Prä)(Akt) καὶ(Kon) πεδαίχμιοι(Adj)(N)
+(589) [Χορός:] they|form they|sprout and ground|speared
+(590) [Χορός:] λαμπάδες(N) πεδάοροι(Adj)(N),
+(590) [Χορός:] torches ground|moving,
+(591) [Χορός:] πτανά(Adj)(A) τε(Pt) καὶ(Kon) πεδοβά‖μονα(Adj)(A)
+(591) [Χορός:] winged and also ground|treading
+(592) [Χορός:] κἀνεμοέντʼ(Kon)(Adj)(A) ἂν(Pt)
+(592) [Χορός:] and|windy at|least
+(593) [Χορός:] αἰγίδων(G) φράσαι(Aor)(Inf)(Akt) κότον(A).
+(593) [Χορός:] of|aegises to|declare grudge.
+== Antistrophe 1 ==
+(594) [Χορός:] ἀλλʼ(Kon) ὑπέρτολμον(Adj)(A) ἀν‖δρὸς(G)
+(594) [Χορός:] but over|bold of|man
+(595) [Χορός:] φρόνημα(A) τίς(Pr)(N) λέγοι(Prä)(Akt)(Op)
+(595) [Χορός:] mindset who might|say
+(596) [Χορός:] καὶ(Kon) γυναικῶν(G) φρεσὶν(D) τλαμόνων(Adj)(G) καὶ(Kon)
+(596) [Χορός:] and of|women in|minds of|enduring and
+(597) [Χορός:] παντόλμους(Adj)(A) ἔρωτας(A)
+(597) [Χορός:] all|bold loves
+(598) [Χορός:] ἄταισι(D) συννόμους(Adj)(A) βροτῶν(G);
+(598) [Χορός:] with|ruins sharing|pasture of|mortals;
+(599) [Χορός:] ξυζύγους(Adj)(A) δʼ(Pt) ὁμαυλίας(G)
+(599) [Χορός:] yoked|together but of|same|court
+(599b) [Χορός:] θηλυκρατὴς(Adj)(N) ἀπέρω‖τος(Adj)(N)
+(599b) [Χορός:] female|ruled un|loved
+(600) [Χορός:] ἔρως(N) παρανικᾷ(Prä)(Akt)
+(600) [Χορός:] love prevails
+(601) [Χορός:] κνωδάλων(G) τε(Pt) καὶ(Kon) βροτῶν(G).
+(601) [Χορός:] of|monsters and also of|mortals.
+== Strophe 2 ==
+(602) [Χορός:] ἴστω(Aor)(Akt)(Imv) δʼ(Pt), ὅστις(Pr)(N) οὐχ(Pt) ὑπόπτερος(Adj)(N)
+(602) [Χορός:] let|him|know however, whoever not under|winged
+(603) [Χορός:] φροντίσιν(D), δαεὶς(Adj)(N)
+(603) [Χορός:] with|thoughts, knowing
+(604) [Χορός:] τὰν(Art)(A) ἁ(Pr)(N) παιδολυ‖μὰς(A)
+(604) [Χορός:] the who child|destroyer
+(605) [Χορός:] τάλαινα(Adj)(N) Θεστιὰς(N) μήσατο(Aor)(M/P)
+(605) [Χορός:] wretched Thestiad planned
+(606) [Χορός:] πυρδαῆτιν(Adj)(A) πρόνοιαν(A),
+(606) [Χορός:] fire|bright forethought,
+(607) [Χορός:] καταίθουσα(Prä)(Akt)(N) παιδὸς(G) δαφοινὸν(Adj)(A)
+(607) [Χορός:] burning|down of|child blood|red
+(608) [Χορός:] δαλὸν(A) ἥλικʼ(Adv), ἐπεὶ(Kon) μολὼν(AorS)(Akt)(N)
+(608) [Χορός:] brand of|equal|age, since having|come
+(609) [Χορός:] ματρόθεν(Adv) κελάδησε(Aor)(Akt),
+(609) [Χορός:] from|mother he|cried|aloud,
+(610) [Χορός:] ξύμμετρόν(Adj)(A) τε(Pt) διαὶ(Prp) βίου(G)
+(610) [Χορός:] commensurate and through of|life
+(611) [Χορός:] μοιρόκραντον(Adj)(A) ἐς(Prp) ἆμαρ(A).
+(611) [Χορός:] fate|ruling into day.
+== Antistrophe 2 ==
+(612) [Χορός:] ἄλλαν(Adj)(A) δεῖ(Prä)(Akt) τινʼ(Pr)(A) ἐν(Prp) λόγοις(D) στυγεῖν(Prä)(Inf)(Akt)
+(612) [Χορός:] another it|is|necessary someone in words to|hate
+(613) [Χορός:] φοινίαν(Adj)(A) κόραν(A),
+(613) [Χορός:] murderous maiden,
+(615) [Χορός:] ἅτʼ(Kon) ἐχθρῶν(G) ὑπαὶ(Prp)
+(615) [Χορός:] as of|enemies under
+(616) [Χορός:] φῶτʼ(A) ἀπώλεσεν(Aor)(Akt) φίλον(Adj)(A) Κρητικοῖς(Adj)(D)
+(616) [Χορός:] man destroyed dear to|Cretans
+(617) [Χορός:] χρυσοκμήτοισιν(Adj)(D) ὅρμοις(D)
+(617) [Χορός:] gold|wrought necklaces
+(618) [Χορός:] πιθήσασα(Aor)(Akt)(N) δώροισι(D) Μίνω(D),
+(618) [Χορός:] obeying to|gifts to|Minos,
+(619) [Χορός:] Νῖσον(A) ἀθανάτας(Adj)(G) τριχὸς(G)
+(619) [Χορός:] Nisus of|immortal of|hair
+(620) [Χορός:] νοσφίσασʼ(Aor)(Akt)(N) ἀπροβούλως(Adv)
+(620) [Χορός:] having|stolen without|deliberation
+(621) [Χορός:] πνέονθʼ(Prä)(Akt)(A) ἁ(Art)(N) κυνόφρων(Adj)(N) ὕπνῳ(D).
+(621) [Χορός:] breathing the dog|minded with|sleep.
+(622) [Χορός:] κιγχάνει(Prä)(Akt) δέ(Pt) μιν(Pr)(A) Ἑρμῆς(N).
+(622) [Χορός:] reaches but him Hermes.
+== Strophe 3 ==
+(623) [Χορός:] ἐπεὶ(Kon) δʼ(Pt) ἐπεμνασάμαν(Aor)(M/P) ἀμειλίχων(Adj)(G)
+(623) [Χορός:] since then we|remembered of|implacable
+(624) [Χορός:] πόνων(G), ὁ(Art)(N) καιρὸς(N) δὲ(Pt) δυσφιλὲς(Adj)(N) γαμή‖λευμ(A)
+(624) [Χορός:] toils, the moment but ill|beloved marriage
+(625) [Χορός:] ἀπεύχετον(Adj)(A) δόμοις(D)
+(625) [Χορός:] prayed|against to|houses
+(626) [Χορός:] γυναικοβούλους(Adj)(A) τε(Pt) μήτιδας(A) φρενῶν(G)
+(626) [Χορός:] woman|counselled and counsels of|minds
+(627) [Χορός:] ἐπʼ(Prp) ἀνδρὶ(D) τευχεσφόρῳ(Adj)(D),
+(627) [Χορός:] upon to|man armor|bearing,
+(628) [Χορός:] ἐπʼ(Prp) ἀνδρὶ(D) δᾴοις(Adj)(D) ἐπεικότως(Adv) σέβαι(Prä)(M/P).
+(628) [Χορός:] upon to|man hostile fittingly you|revere.
+(629) [Χορός:] τίω(Prä)(Akt) δʼ(Pt) ἀθέρμαντον(Adj)(A) ἑστίαν(A) δόμων(G)
+(629) [Χορός:] I|honor but un|warmed hearth of|houses
+(630) [Χορός:] γυναικείαν(Adj)(A) τʼ(Pt) ἄτολμον(Adj)(A) αἰχμάν(A).
+(630) [Χορός:] womanly and un|bold spear.
+== Antistrophe 3 ==
+(631) [Χορός:] κακῶν(G) δὲ(Pt) πρεσβεύεται(Prä)(M/P) τὸ(Art)(N) Λήμνιον(Adj)(N)
+(631) [Χορός:] of|evils but is|esteemed the Lemnian
+(632) [Χορός:] λόγῳ(D)· γοᾶται(Prä)(M/P) δὲ(Pt) δὴ(Pt) πάθος(N) κατά‖πτυστον(Adj)(N)·
+(632) [Χορός:] by|word· is|lamented but indeed suffering abominable·
+(633) [Χορός:] ᾔκασεν(Per)(Akt) δέ(Pt) τις(Pr)(N)
+(633) [Χορός:] has|likened but someone
+(634) [Χορός:] τὸ(Art)(N) δεινὸν(Adj)(N) αὖ(Adv) Λημνίοισι(Adj)(D) πήμασιν(D).
+(634) [Χορός:] the terrible again with|Lemnian woes.
+(635) [Χορός:] θεοστυγήτῳ(Adj)(D) δʼ(Pt) ἄχει(D)
+(635) [Χορός:] with|god|hated but grief
+(636) [Χορός:] βροτῶν(G) ἀτιμωθὲν(Aor)(Pas)(N) οἴχεται(Prä)(M/P) γένος(N).
+(636) [Χορός:] of|mortals having|been|dishonored goes race.
+(637) [Χορός:] σέβει(Prä)(Akt) γὰρ(Pt) οὔτις(Pr)(N) τὸ(Art)(N) δυσφιλὲς(Adj)(N) θεοῖς(D).
+(637) [Χορός:] honors for no|one the ill|beloved to|gods.
+(638) [Χορός:] τί(Adv) τῶνδʼ(Pr)(G) οὐκ(Pt) ἐνδίκως(Adv) ἀγείρω(Prä)(Akt);
+(638) [Χορός:] why of|these not justly I|assemble;
+== Strophe 4 ==
+(639) [Χορός:] τὸ(Art)(N) δʼ(Pt) ἄγχι(Adv) πλευμόνων(G) ξίφος(N)
+(639) [Χορός:] the but near of|lungs sword
+(640) [Χορός:] διανταίαν(Adj)(A) ὀξυπευκὲς(Adj)(N) οὐτᾷ(Prä)(Akt)
+(640) [Χορός:] counter|opposed sharp|quick wounds
+(641) [Χορός:] διαὶ(Prp) Δίκας(G). τὸ(Art)(N) μὴ(Pt) θέμις(N) γὰρ(Pt) οὖν(Pt)
+(641) [Χορός:] through of|Justice. the not lawful for then
+(642) [Χορός:] λὰξ(Adv) πέδοι(Adv) πατούμενον(Prä)(M/P)(N), τὸ(Art)(N) πᾶν(Adj)(N) Διὸς(G)
+(642) [Χορός:] with|the|heel to|the|ground being|trampled, the whole of|Zeus
+(645) [Χορός:] σέβας(N) παρεκβάντος(Aor)(Akt)(G) οὐ(Pt) θεμιστῶς(Adv).
+(645) [Χορός:] reverence of|one|having|stepped|aside not lawfully.
+== Antistrophe 4 ==
+(646) [Χορός:] Δίκας(G) δʼ(Pt) ἐρείδεται(Prä)(M/P) πυθμήν(N)·
+(646) [Χορός:] of|Justice but is|set base·
+(647) [Χορός:] προχαλκεύει(Prä)(Akt) δʼ(Pt) Αἶσα(N) φασγανουργός(Adj)(N)·
+(647) [Χορός:] forges|before but Fate sword|making·
+(648) [Χορός:] τέκνον(A) δʼ(Pt) ἐπεισφέρει(Prä)(Akt) δόμοισιν(D)
+(648) [Χορός:] child but brings|in|besides to|houses
+(650) [Χορός:] αἱμάτων(G) παλαιτέρων(Adj)(G) τίνειν(Prä)(Inf)(Akt) μύσος(N)
+(650) [Χορός:] of|bloods older to|pay pollution
+(651) [Χορός:] χρόνῳ(D) κλυτὰ(Adj)(N) βυσσόφρων(Adj)(N) Ἐρινύς(N).
+(651) [Χορός:] with|time famed deep|minded Erinys.
+=== Episode ===
+(653) [Ὀρέστης:] παῖ(V) παῖ(V), θύρας(A) ἄκουσον(Aor)(Akt)(Imv) ἑρκείας(Adj)(G) κτύπον(A).
+(653) [Ὀρέστης:] child child, doors hear courtyard knock.
+(654) [Ὀρέστης:] τίς(Pr)(N) ἔνδον(Adv), ὦ(ij) παῖ(V), παῖ(V), μάλʼ(Adv) αὖθις(Adv), ἐν(Prp) δόμοις(D);
+(654) [Ὀρέστης:] who within, O child, child, very again, in houses;
+(655) [Ὀρέστης:] τρίτον(Adj)(A) τόδʼ(Pr)(A) ἐκπέραμα(A) δωμάτων(G) καλῶ(Prä)(Akt),
+(655) [Ὀρέστης:] third this|here out|passage of|houses I|call,
+(656) [Ὀρέστης:] εἴπερ(Kon) φιλόξενʼ(Adj)(N) ἐστὶν(Prä)(Akt) Αἰγίσθου(G) διαί(N).
+(656) [Ὀρέστης:] if|indeed hospitable is of|Aegisthus quarters.
+(657) [Οἰκέτης:] εἶεν(Prä)(Akt)(Op), ἀκούω(Prä)(Akt)· ποδαπὸς(Adj)(N) ὁ(Art)(N) ξένος(N); πόθεν(Adv);
+(657) [Οἰκέτης:] be|it|so, I|hear· from|what|country the stranger; whence;
+(658) [Ὀρέστης:] ἄγγελλε(Prä)(Akt)(Imv) τοῖσι(Art)(D) κυρίοισι(Adj)(D) δωμάτων(G),
+(658) [Ὀρέστης:] announce to|the masters of|houses,
+(659) [Ὀρέστης:] πρὸς(Prp) οὕσπερ(Pr)(A) ἥκω(Prä)(Akt) καὶ(Kon) φέρω(Prä)(Akt) καινοὺς(Adj)(A) λόγους(A).
+(659) [Ὀρέστης:] toward whom|indeed I|come and I|bring new words.
+(660) [Ὀρέστης:] τάχυνε(Prä)(Akt)(Imv) δʼ(Pt), ὡς(Kon) καὶ(Kon) νυκτὸς(G) ἅρμʼ(N) ἐπείγεται(Prä)(M/P)
+(660) [Ὀρέστης:] hasten but, so|that and of|night chariot is|urged
+(661) [Ὀρέστης:] σκοτεινόν(Adj)(N), ὥρα(N) δʼ(Pt) ἐμπόρους(A) καθιέναι(Prä)(Inf)(Akt)
+(661) [Ὀρέστης:] dark, season but merchants to|let|down
+(662) [Ὀρέστης:] ἄγκυραν(A) ἐν(Prp) δόμοισι(D) πανδόκοις(Adj)(D) ξένων(G).
+(662) [Ὀρέστης:] anchor in houses all|receiving of|strangers.
+(663) [Ὀρέστης:] ἐξελθέτω(Aor)(Akt)(Imv) τις(Pr)(N) δωμάτων(G) τελεσφόρος(Adj)(N)
+(663) [Ὀρέστης:] let|come|out someone of|houses end|bringing
+(664) [Ὀρέστης:] γυνὴ(N) τόπαρχος(N), ἄνδρα(A) δʼ(Pt) εὐπρεπέστερον(Adj)(A)(Kmp)·
+(664) [Ὀρέστης:] woman place|ruler, man but more|seemly·
+(665) [Ὀρέστης:] αἰδὼς(N) γὰρ(Pt) ἐν(Prp) λεχθεῖσιν(Aor)(Pas)(D) οὐκ(Pt) ἐπαργέμους(Adj)(A)
+(665) [Ὀρέστης:] reverence for in having|been|said not effective
+(666) [Ὀρέστης:] λόγους(A) τίθησιν(Prä)(Akt)· εἶπε(Aor)(Akt)(Imv) θαρσήσας(Aor)(Akt)(N) ἀνὴρ(N)
+(666) [Ὀρέστης:] words sets· speak having|taken|courage man
+(667) [Ὀρέστης:] πρὸς(Prp) ἄνδρα(A) κἀσήμηνεν(Kon)(Aor)(Akt) ἐμφανὲς(Adj)(A) τέκμαρ(A).
+(667) [Ὀρέστης:] toward man and|he|signified manifest token.
+(668) [Κλυταιμνήστρα:] ξένοι(N), λέγοιτʼ(Prä)(M/P)(Op) ἂν(Pt) εἴ(Kon) τι(Pr)(N) δεῖ(Prä)(Akt)· πάρεστι(Prä)(Akt) γὰρ(Pt)
+(668) [Κλυταιμνήστρα:] strangers, speak|might at|least if something is|needed· is|present for
+(669) [Κλυταιμνήστρα:] ὁποῖά(Pr)(A) περ(Pt) δόμοισι(D) τοῖσδʼ(Pr)(D) ἐπεικότα(Per)(Akt)(A),
+(669) [Κλυταιμνήστρα:] whatever indeed in|houses these fitting,
+(670) [Κλυταιμνήστρα:] καὶ(Kon) θερμὰ(Adj)(A) λουτρὰ(A) καὶ(Kon) πόνων(G) θελκτηρία(A)
+(670) [Κλυταιμνήστρα:] and warm baths and of|toils charms
+(671) [Κλυταιμνήστρα:] στρωμνή(N), δικαίων(Adj)(G) τʼ(Pt) ὀμμάτων(G) παρουσία(N).
+(671) [Κλυταιμνήστρα:] couch, of|just and of|eyes presence.
+(672) [Κλυταιμνήστρα:] εἰ(Kon) δʼ(Pt) ἄλλο(Adj)(A) πρᾶξαι(Aor)(Inf)(Akt) δεῖ(Prä)(Akt) τι(Pr)(A) βουλιώτερον(Adj)(A)(Kmp),
+(672) [Κλυταιμνήστρα:] if but other to|do is|need something more|counselled,
+(673) [Κλυταιμνήστρα:] ἀνδρῶν(G) τόδʼ(Pr)(N) ἐστὶν(Prä)(Akt) ἔργον(N), οἷς(Pr)(D) κοινώσομεν(Fu)(Akt)
+(673) [Κλυταιμνήστρα:] of|men this is work, with|whom we|will|share
+(674) [Ὀρέστης:] ξένος(N) μέν(Pt) εἰμι(Prä)(Akt) Δαυλιεὺς(N) ἐκ(Prp) Φωκέων(G)·
+(674) [Ὀρέστης:] stranger indeed I|am Daulian out|of of|Phocians·
+(675) [Ὀρέστης:] στείχοντα(Prä)(Akt)(A) δʼ(Pt) αὐτόφορτον(Adj)(A) οἰκείᾳ(Adj)(D) σαγῇ(D)
+(675) [Ὀρέστης:] going but self|carried in|own cloak
+(676) [Ὀρέστης:] εἰς(Prp) Ἄργος(A), ὥσπερ(Kon) δεῦρʼ(Adv) ἀπεζύγην(Aor)(M/P) πόδα(A),
+(676) [Ὀρέστης:] into Argos, just|as hither I|was|unyoked on|foot,
+(677) [Ὀρέστης:] ἀγνὼς(Adj)(N) πρὸς(Prp) ἀγνῶτʼ(Adj)(A) εἶπε(Aor)(Akt) συμβαλὼν(Aor)(Akt)(N) ἀνήρ(N),
+(677) [Ὀρέστης:] unknown toward unknown said having|met man,
+(678) [Ὀρέστης:] ἐξιστορήσας(Aor)(Akt)(N) καὶ(Kon) σαφηνίσας(Aor)(Akt)(N) ὁδόν(A),
+(678) [Ὀρέστης:] having|related and having|made|clear road,
+(679) [Ὀρέστης:] Στροφίος(N) ὁ(Art)(N) Φωκεύς(N)· πεύθομαι(Prä)(M/P) γὰρ(Pt) ἐν(Prp) λόγῳ(D)
+(679) [Ὀρέστης:] Strophius the Phocian· I|learn for in word
+(680) [Ὀρέστης:] ἐπείπερ(Kon) ἄλλως(Adv), ὦ(ij) ξένʼ(V), εἰς(Prp) Ἄργος(A) κίεις(Prä)(Akt),
+(680) [Ὀρέστης:] since|indeed otherwise, O stranger, into Argos you|go,
+(681) [Ὀρέστης:] πρὸς(Prp) τοὺς(Art)(A) τεκόντας(Aor)(Akt)(A) πανδίκως(Adv) μεμνημένος(Per)(M/P)(N)
+(681) [Ὀρέστης:] toward the having|borne wholly|justly remembering
+(682) [Ὀρέστης:] τεθνεῶτʼ(Per)(Akt)(A) Ὀρέστην(A) εἰπέ(Aor)(Akt)(Imv), μηδαμῶς(Adv) λάθῃ(Aor)(M/P)(Knj).
+(682) [Ὀρέστης:] having|died Orestes say, by|no|means you|may|be|hidden.
+(683) [Ὀρέστης:] εἴτʼ(Kon) οὖν(Pt) κομίζειν(Prä)(Inf)(Akt) δόξα(N) νικήσει(Fu)(Akt) φίλων(G),
+(683) [Ὀρέστης:] whether then to|bring opinion will|prevail of|friends,
+(684) [Ὀρέστης:] εἴτʼ(Kon) οὖν(Pt) μέτοικον(A), εἰς(Prp) τὸ(Art)(A) πᾶν(Adj)(A) ἀεὶ(Adv) ξένον(Adj)(A),
+(684) [Ὀρέστης:] or then metic, into the whole always stranger,
+(685) [Ὀρέστης:] θάπτειν(Prä)(Inf)(Akt), ἐφετμὰς(A) τάσδε(Pr)(A) πόρθμευσον(Aor)(Akt)(Imv) πάλιν(Adv).
+(685) [Ὀρέστης:] to|bury, commands these ferry|across again.
+(686) [Ὀρέστης:] νῦν(Adv) γὰρ(Pt) λέβητος(G) χαλκέου(Adj)(G) πλευρώματα(A)
+(686) [Ὀρέστης:] now for of|cauldron of|bronze ribs|plates
+(687) [Ὀρέστης:] σποδὸν(A) κέκευθεν(Per)(Akt) ἀνδρὸς(G) εὖ(Adv) κεκλαυμένου(Per)(M/P)(G).
+(687) [Ὀρέστης:] ash has|covered of|man well having|been|wept.
+(688) [Ὀρέστης:] τοσαῦτʼ(Adj)(A) ἀκούσας(Aor)(Akt)(N) εἶπον(Aor)(Akt). εἰ(Kon) δὲ(Pt) τυγχάνω(Prä)(Akt)
+(688) [Ὀρέστης:] so|much having|heard I|said. if but I|happen
+(689) [Ὀρέστης:] τοῖς(Art)(D) κυρίοισι(Adj)(D) καὶ(Kon) προσήκουσιν(Prä)(Akt)(D) λέγων(Prä)(Akt)(N)
+(689) [Ὀρέστης:] to|the masters and to|belonging speaking
+(690) [Ὀρέστης:] οὐκ(Pt) οἶδα(Per)(Akt), τὸν(Art)(A) τεκόντα(Aor)(Akt)(A) δʼ(Pt) εἰκὸς(Per)(Akt)(N) εἰδέναι(Per)(Inf)(Akt).
+(690) [Ὀρέστης:] not I|know, the having|borne but likely to|know.
+(691) [Κλυταιμνήστρα:] οἲ(ij) ʼγώ(Pr)(N), κατʼ(Prp) ἄκρας(Adj)(G) εἶπας(Aor)(Akt) ὡς(Kon) πορθούμεθα(Prä)(M/P).
+(691) [Κλυταιμνήστρα:] woe I, down peaks you|said that we|are|sacked.
+(692) [Κλυταιμνήστρα:] ὦ(ij) δυσπάλαιστε(Adj)(V) τῶνδε(Pr)(G) δωμάτων(G) Ἀρά(V),
+(692) [Κλυταιμνήστρα:] O hard|to|wrestle of|these of|houses Curse,
+(693) [Κλυταιμνήστρα:] ὡς(Kon) πόλλʼ(Adj)(A) ἐπωπᾷς(Prä)(Akt), κἀκποδὼν(Kon)(Prp)(D) εὖ(Adv) κείμενα(Per)(M/P)(A)
+(693) [Κλυταιμνήστρα:] how many|things you|oversee, and|out|of|the|way well lying
+(694) [Κλυταιμνήστρα:] τόξοις(D) πρόσωθεν(Adv) εὐσκόποις(Adj)(D) χειρουμένη(Prä)(M/P)(N),
+(694) [Κλυταιμνήστρα:] with|bows from|afar well|aiming being|subdued,
+(695) [Κλυταιμνήστρα:] φίλων(G) ἀποψιλοῖς(Prä)(Akt) με(Pr)(A) τὴν(Art)(A) παναθλίαν(Adj)(A).
+(695) [Κλυταιμνήστρα:] of|friends you|strip me the all|wretched.
+(696) [Κλυταιμνήστρα:] καὶ(Kon) νῦν(Adv) Ὀρέστης(N)— ἦν(Imp)(Akt) γὰρ(Pt) εὐβούλως(Adv) ἔχων(Prä)(Akt)(N),
+(696) [Κλυταιμνήστρα:] and now Orestes— he|was for well|advised holding,
+(697) [Κλυταιμνήστρα:] ἔξω(Adv) κομίζων(Prä)(Akt)(N) ὀλεθρίου(Adj)(G) πηλοῦ(G) πόδα(A), —
+(697) [Κλυταιμνήστρα:] outside carrying of|destructive mud foot, —
+(698) [Κλυταιμνήστρα:] νῦν(Adv) δʼ(Pt) ἥπερ(Pr)(N) ἐν(Prp) δόμοισι(D) βακχείας(G) καλῆς(Adj)(G)
+(698) [Κλυταιμνήστρα:] now but she|who in houses of|bacchic fair
+(699) [Κλυταιμνήστρα:] ἰατρὸς(N) ἐλπὶς(N) ἦν(Imp)(Akt), προδοῦσαν(Aor)(Akt)(A) ἔγγραφε(Imp)(Akt).
+(699) [Κλυταιμνήστρα:] healer hope was, betraying he|recorded.
+(700) [Ὀρέστης:] ἐγὼ(Pr)(N) μὲν(Pt) οὖν(Pt) ξένοισιν(D) ὧδʼ(Adv) εὐδαίμοσιν(Adj)(D)
+(700) [Ὀρέστης:] I indeed then to|strangers thus fortunate
+(701) [Ὀρέστης:] κεδνῶν(Adj)(G) ἕκατι(Prp) πραγμάτων(G) ἂν(Pt) ἤθελον(Imp)(Akt)
+(701) [Ὀρέστης:] of|useful for|the|sake|of affairs at|least I|was|willing
+(702) [Ὀρέστης:] γνωστὸς(Adj)(N) γενέσθαι(Aor)(Med)(Inf) καὶ(Kon) ξενωθῆναι(Aor)(Pas)(Inf)· τί(Adv) γὰρ(Pt)
+(702) [Ὀρέστης:] known to|become and to|be|hosted· what for
+(703) [Ὀρέστης:] ξένου(G) ξένοισίν(D) ἐστιν(Prä)(Akt) εὐμενέστερον(Adj)(N)(Kmp);
+(703) [Ὀρέστης:] of|guest to|guests is more|well|inclined;
+(704) [Ὀρέστης:] πρὸς(Prp) δυσσεβείας(G) δʼ(Pt) ἦν(Imp)(Akt) ἐμοὶ(Pr)(D) τόδʼ(Pr)(N) ἐν(Prp) φρεσίν(D),
+(704) [Ὀρέστης:] toward impiety but was to|me this in minds,
+(705) [Ὀρέστης:] τοιόνδε(Adj)(A) πρᾶγμα(A) μὴ(Pt) καρανῶσαι(Aor)(Inf)(Akt) φίλοις(D),
+(705) [Ὀρέστης:] such deed not to|bring|to|head for|friends,
+(706) [Ὀρέστης:] καταινέσαντα(Aor)(Akt)(A) καὶ(Kon) κατεξενωμένον(Per)(M/P)(A).
+(706) [Ὀρέστης:] having|approved and having|been|hosted|completely.
+(707) [Κλυταιμνήστρα:] οὔτοι(Pt) κυρήσεις(Fu)(Akt) μεῖον(Adj)(A)(Kmp) ἀξίως(Adv) σέθεν(Pr)(G),
+(707) [Κλυταιμνήστρα:] not|indeed you|will|obtain less worthily of|you,
+(708) [Κλυταιμνήστρα:] οὐδʼ(Pt) ἧσσον(Adj)(A)(Kmp) ἂν(Pt) γένοιο(Aor)(Med)(Op) δώμασιν(D) φίλος(Adj)(N).
+(708) [Κλυταιμνήστρα:] nor less at|least you|might|be in|houses friend.
+(709) [Κλυταιμνήστρα:] ἄλλος(Adj)(N) δʼ(Pt) ὁμοίως(Adv) ἦλθεν(AorS)(Akt) ἂν(Pt) τάδʼ(Pr)(A) ἀγγελῶν(Prä)(Akt)(N).
+(709) [Κλυταιμνήστρα:] another but likewise came at|least these announcing.
+(710) [Κλυταιμνήστρα:] ἀλλʼ(Kon) ἔσθʼ(Prä)(Akt) ὁ(Art)(N) καιρὸς(N) ἡμερεύοντας(Prä)(Akt)(A) ξένους(A)
+(710) [Κλυταιμνήστρα:] but is the opportunity day|staying guests
+(711) [Κλυταιμνήστρα:] μακρᾶς(Adj)(G) κελεύθου(G) τυγχάνειν(Prä)(Inf)(Akt) τὰ(Art)(A) πρόσφορα(Adj)(A).
+(711) [Κλυταιμνήστρα:] of|long road to|obtain the suitable.
+(712) [Κλυταιμνήστρα:] ἄγʼ(Prä)(Imv)(Akt) αὐτὸν(Pr)(A) εἰς(Prp) ἀνδρῶνας(A) εὐξένους(Adj)(A) δόμων(G),
+(712) [Κλυταιμνήστρα:] lead him into mens|halls well|hospitable of|houses,
+(713) [Κλυταιμνήστρα:] ὀπισθόπους(Adj)(A) τε(Pt) τούσδε(Pr)(A) καὶ(Kon) ξυνέμπορον(A)·
+(713) [Κλυταιμνήστρα:] following|feet and these and fellow|traveler·
+(714) [Κλυταιμνήστρα:] κἀκεῖ(Kon)(Adv) κυρούντων(Prä)(Akt)(G) δώμασιν(D) τὰ(Art)(A) πρόσφορα(Adj)(A).
+(714) [Κλυταιμνήστρα:] and|there of|confirming in|houses the suitable.
+(715) [Κλυταιμνήστρα:] αἰνῶ(Prä)(Akt) δὲ(Pt) πράσσειν(Prä)(Inf)(Akt) ὡς(Kon) ὑπευθύνῳ(Adj)(D) τάδε(Pr)(A).
+(715) [Κλυταιμνήστρα:] I|praise but to|do as to|responsible these.
+(716) [Κλυταιμννήστρα:] ἡμεῖς(Pr)(N) δὲ(Pt) ταῦτα(Pr)(A) τοῖς(Art)(D) κρατοῦσι(Prä)(Akt)(D) δωμάτων(G)
+(716) [Κλυταιμννήστρα:] we but these to|the ruling of|houses
+(717) [Κλυταιμνήστρα:] κοινώσομέν(Fu)(Akt) τε(Pt) κοὐ(Kon)(Pt) σπανίζοντες(Prä)(Akt)(N) φίλων(G)
+(717) [Κλυταιμνήστρα:] we|will|share and and|not lacking of|friends
+(718) [Κλυταιμνήστρα:] βουλευσόμεσθα(Fu)(M/P) τῆσδε(Pr)(G) συμφορᾶς(G) πέρι(Prp).
+(718) [Κλυταιμνήστρα:] we|will|deliberate of|this misfortune about.
+== Anapäste ==
+(719) [Χορός:] εἶεν(Prä)(Akt)(Op), φίλιαι(Adj)(N) δμωίδες(N) οἴκων(G),
+(719) [Χορός:] be|it|so, friendly maidservants of|houses,
+(720) [Χορός:] πότε(Adv) δὴ(Pt) στομάτων(G)
+(720) [Χορός:] when indeed of|mouths
+(721) [Χορός:] δείξομεν(Fu)(Akt) ἰσχὺν(A) ἐπʼ(Prp) Ὀρέστῃ(D);
+(721) [Χορός:] we|will|show strength upon Orestes;
+(722) [Χορός:] ὦ(ij) πότνια(Adj)(V) χθὼν(V) καὶ(Kon) πότνιʼ(Adj)(V) ἀκτὴ(V)
+(722) [Χορός:] O lady earth and lady shore
+(723) [Χορός:] χώματος(G), ἣ(Pr)(N) νῦν(Adv) ἐπὶ(Prp) ναυάρχῳ(D)
+(723) [Χορός:] of|earth, who now upon admiral
+(724) [Χορός:] σώματι(D) κεῖσαι(Prä)(M/P) τῷ(Art)(D) βασιλείῳ(Adj)(D),
+(724) [Χορός:] with|body you|lie the royal,
+(725) [Χορός:] νῦν(Adv) ἐπάκουσον(Aor)(Akt)(Imv), νῦν(Adv) ἐπάρηξον(Aor)(Akt)(Imv)·
+(725) [Χορός:] now listen, now help·
+(726) [Χορός:] νῦν(Adv) γὰρ(Pt) ἀκμάζει(Prä)(Akt) Πειθὼ(N) δολίαν(Adj)(A)
+(726) [Χορός:] now for prospers Peitho wily
+(727) [Χορός:] ξυγκαταβῆναι(AorS)(Inf)(Akt), χθόνιον(Adj)(A) δʼ(Pt) Ἑρμῆν(A)
+(727) [Χορός:] to|go|down|together, chthonian but Hermes
+(728) [Χορός:] καὶ(Kon) τὸν(Art)(A) νύχιον(Adj)(A) τοῖσδʼ(Art)(D) ἐφοδεῦσαι(Aor)(Inf)(Akt)
+(728) [Χορός:] and the nightly to|these to|visit
+(729) [Χορός:] ξιφοδηλήτοισιν(Adj)(D) ἀγῶσιν(D).
+(729) [Χορός:] with|sword|injurious contests.
+(730) [Χορός:] ἔοικεν(Per)(Akt) ἁνὴρ(N) ὁ(Art)(N) ξένος(N) τεύχειν(Prä)(Inf)(Akt) κακόν(A)·
+(730) [Χορός:] seems man the stranger to|make evil·
+(731) [Χορός:] τροφὸν(A) δʼ(Pt) Ὀρέστου(G) τήνδʼ(Pr)(A) ὁρῶ(Prä)(Akt) κεκλαυμένην(Per)(M/P)(A).
+(731) [Χορός:] nurse but of|Orestes this I|see having|wept.
+(732) [Χορός:] ποῖ(Adv) δὴ(Pt) πατεῖς(Prä)(Akt), Κίλισσα(V), δωμάτων(G) πύλας(A);
+(732) [Χορός:] whither indeed you|tread, Cilissa, of|houses gates;
+(733) [Χορός:] λύπη(N) δʼ(Pt) ἄμισθός(Adj)(N) ἐστί(Prä)(Akt) σοι(Pr)(D) ξυνέμπορος(N);
+(733) [Χορός:] grief but unpaid is to|you fellow|traveler;
+(734) [Τροφός:] Αἴγισθον(A) ἡ(Art)(N) κρατοῦσα(Prä)(Akt)(N) τοῖς(Art)(D) ξένοις(Adj)(D) καλεῖν(Prä)(Inf)(Akt)
+(734) [Τροφός:] Aegisthus the ruling to|the strangers to|call
+(735) [Τροφός:] ὅπως(Kon) τάχιστʼ(Adv)(Sup) ἄνωγεν(Per)(Akt), ὡς(Kon) σαφέστερον(Adj)(A)(Kmp)
+(735) [Τροφός:] so|that most|swiftly has|ordered, as more|clear
+(736) [Τροφός:] ἀνὴρ(N) ἀπʼ(Prp) ἀνδρὸς(G) τὴν(Art)(A) νεάγγελτον(Adj)(A) φάτιν(A)
+(736) [Τροφός:] man from of|man the newly|announced report
+(737) [Τροφός:] ἐλθὼν(AorS)(Akt)(N) πύθηται(Aor)(M/P)(Knj) τήνδε(Pr)(A), πρὸς(Prp) μὲν(Pt) οἰκέτας(A)
+(737) [Τροφός:] having|come may|learn this, toward indeed household|servants
+(738) [Τροφός:] θετοσκυθρωπῶν(Prä)(Akt)(N) ἐντὸς(Adv) ὀμμάτων(G) γέλων(N)
+(738) [Τροφός:] setting|gloomy within of|eyes laughter
+(739) [Τροφός:] κεύθουσʼ(Prä)(Akt)(N) ἐπʼ(Prp) ἔργοις(D) διαπεπραγμένοις(Per)(M/P)(D) καλῶς(Adv)
+(739) [Τροφός:] concealing upon works having|been|accomplished well
+(740) [Τροφός:] κείνῃ(Pr)(D), δόμοις(D) δὲ(Pt) τοῖσδε(Pr)(D) παγκάκως(Adv) ἔχειν(Prä)(Inf)(Akt),
+(740) [Τροφός:] to|her, to|houses but these utterly|badly to|fare,
+(741) [Τροφός:] φήμης(G) ὕφʼ(Prp) ἧς(Pr)(G) ἤγγειλαν(Aor)(Akt) οἱ(Art)(N) ξένοι(N) τορῶς(Adv).
+(741) [Τροφός:] of|report under of|which they|announced the strangers clearly.
+(742) [Τροφός:] ἦ(Pt) δὴ(Pt) κλύων(Prä)(Akt)(N) ἐκεῖνος(Pr)(N) εὐφρανεῖ(Fu)(Akt) νόον(A),
+(742) [Τροφός:] indeed indeed hearing that|one will|gladden mind,
+(743) [Τροφός:] εὖτʼ(Kon) ἂν(Pt) πύθηται(Aor)(M/P)(Knj) μῦθον(A). ὦ(ij) τάλαινʼ(Adj)(V) ἐγώ(Pr)(N)·
+(743) [Τροφός:] when at|least may|learn word. O wretched I·
+(744) [Τροφός:] ὥς(Kon) μοι(Pr)(D) τὰ(Art)(A) μὲν(Pt) παλαιὰ(Adj)(A) συγκεκραμένα(Per)(M/P)(A)
+(744) [Τροφός:] as to|me the indeed old having|been|mixed
+(745) [Τροφός:] ἄλγη(A) δύσοιστα(Adj)(A) τοῖσδʼ(Pr)(D) ἐν(Prp) Ἀτρέως(G) δόμοις(D)
+(745) [Τροφός:] pains hard|to|bear to|these in of|Atreus houses
+(746) [Τροφός:] τυχόντʼ(AorS)(Akt)(A) ἐμὴν(Adj)(A) ἤλγυνεν(Aor)(Akt) ἐν(Prp) στέρνοις(D) φρένα(A).
+(746) [Τροφός:] having|chanced my pained in breasts mind.
+(747) [Τροφός:] ἀλλʼ(Kon) οὔτι(Pt) πω(Pt) τοιόνδε(Adj)(A) πῆμʼ(A) ἀνεσχόμην(Aor)(Med)·
+(747) [Τροφός:] but not|at|all yet such woe I|endured·
+(748) [Τροφός:] τὰ(Art)(A) μὲν(Pt) γὰρ(Pt) ἄλλα(Adj)(A) τλημόνως(Adv) ἤντλουν(Imp)(Akt) κακά(Adj)(A)·
+(748) [Τροφός:] the indeed for other enduringly I|was|bearing evils·
+(749) [Τροφός:] φίλον(Adj)(A) δʼ(Pt) Ὀρέστην(A), τῆς(Art)(G) ἐμῆς(Adj)(G) ψυχῆς(G) τριβήν(A),
+(749) [Τροφός:] dear but Orestes, of|the my soul wear,
+(750) [Τροφός:] ὃν(Pr)(A) ἐξέθρεψα(Aor)(Akt) μητρόθεν(Adv) δεδεγμένη(Per)(M/P)(N), —
+(750) [Τροφός:] whom I|reared from|mother having|received, —
+(751) [Τροφός:] κἀκʼ(Kon)(Prp) νυκτιπλάγκτων(Adj)(G) ὀρθίων(Adj)(G) κελευμάτων(G)
+(751) [Τροφός:] and|out|of night|wandering straight biddings
+(752) [Τροφός:] καὶ(Kon) πολλὰ(Adj)(A) καὶ(Kon) μοχθήρʼ(Adj)(A) ἀνωφέλητʼ(Adj)(A) ἐμοὶ(Pr)(D)
+(752) [Τροφός:] and many and toilsome unprofitable to|me
+(753) [Τροφός:] τλάσῃ(Aor)(Akt)(Knj)· — τὸ(Art)(N) μὴ(Pt) φρονοῦν(Prä)(Akt)(N) γὰρ(Pt) ὡσπερεὶ(Kon) βοτὸν(A)
+(753) [Τροφός:] you|might|bear· — the not thinking for just|as cattle
+(754) [Τροφός:] τρέφειν(Prä)(Inf)(Akt) ἀνάγκη(N), πῶς(Adv) γὰρ(Pt) οὔ(Pt); τρόπῳ(D) φρενός(G)·
+(754) [Τροφός:] to|nourish necessity, how for not; with|way of|mind·
+(755) [Τροφός:] οὐ(Pt) γάρ(Pt) τι(Pr)(N) φωνεῖ(Prä)(Akt) παῖς(N) ἔτʼ(Adv) ὢν(Prä)(Akt)(N) ἐν(Prp) σπαργάνοις(D),
+(755) [Τροφός:] not for anything speaks child yet being in swaddling|bands,
+(756) [Τροφός:] εἰ(Kon) λιμός(N), ἢ(Kon) δίψη(N) τις(Pr)(N), ἢ(Kon) λιψουρία(N)
+(756) [Τροφός:] if hunger, or thirst someone, or need|to|urinate
+(757) [Τροφός:] ἔχει(Prä)(Akt)· νέα(Adj)(N) δὲ(Pt) νηδὺς(N) αὐτάρκης(Adj)(N) τέκνων(G).
+(757) [Τροφός:] has· new but womb self|sufficient of|children.
+(758) [Τροφός:] τούτων(Pr)(G) πρόμαντις(N) οὖσα(Prä)(Akt)(N), πολλὰ(Adj)(A) δʼ(Pt), οἴομαι(Prä)(M/P),
+(758) [Τροφός:] of|these foreknower being, many but, I|think,
+(759) [Τροφός:] ψευσθεῖσα(Aor)(M/P)(N) παιδὸς(G) σπαργάνων(G) φαιδρύντρια(N),
+(759) [Τροφός:] having|been|deceived of|child of|swaddling|bands brightener,
+(760) [Τροφός:] γναφεὺς(N) τροφεύς(N) τε(Pt) ταὐτὸν(Pr)(A) εἰχέτην(Imp)(Akt)(Du) τέλος(A).
+(760) [Τροφός:] fuller nurse and the|same had end.
+(761) [Τροφός:] ἐγὼ(Pr)(N) διπλᾶς(Adj)(G) δὲ(Pt) τάσδε(Pr)(A) χειρωναξίας(G)
+(761) [Τροφός:] I of|double but these of|hand|labors
+(762) [Τροφός:] ἔχουσʼ(Prä)(Akt)(N) Ὀρέστην(A) ἐξεδεξάμην(Aor)(Med) πατρί(D)·
+(762) [Τροφός:] having Orestes I|received to|father·
+(763) [Τροφός:] τεθνηκότος(Per)(Akt)(G) δὲ(Pt) νῦν(Adv) τάλαινα(Adj)(N) πεύθομαι(Prä)(M/P).
+(763) [Τροφός:] of|having|died but now wretched I|learn.
+(764) [Τροφός:] στείχω(Prä)(Akt) δʼ(Pt) ἐπʼ(Prp) ἄνδρα(A) τῶνδε(Pr)(G) λυμαντήριον(Adj)(A)
+(764) [Τροφός:] I|go but toward man of|these destroyer
+(765) [Τροφός:] οἴκων(G), θέλων(Prä)(Akt)(N) δὲ(Pt) τόνδε(Pr)(A) πεύσεται(Fu)(M/P) λόγον(A).
+(765) [Τροφός:] of|houses, wishing but this he|will|learn word.
+(766) [Χορός:] πῶς(Adv) οὖν(Pt) κελεύει(Prä)(Akt) νιν(Pr)(A) μολεῖν(AorS)(Inf)(Akt) ἐσταλμένον(Per)(M/P)(A);
+(766) [Χορός:] how then he|bids him to|go having|been|sent;
+(767) [Τροφός:] ἦ(Pt) πῶς(Adv); λέγʼ(Prä)(Akt)(Imv) αὖθις(Adv), ὡς(Kon) μάθω(AorS)(Akt)(Knj) σαφέστερον(Adj)(A)(Kmp).
+(767) [Τροφός:] indeed how; speak again, so|that I|may|learn more|clear.
+(768) [Χορός:] εἰ(Kon) ξὺν(Prp) λοχίταις(D) εἴτε(Kon) καὶ(Kon) μονοστιβῆ(Adj)(A).
+(768) [Χορός:] if with ambush|men or|if and single|file.
+(769) [Τροφός:] ἄγειν(Prä)(Inf)(Akt) κελεύει(Prä)(Akt) δορυφόρους(Adj)(A) ὀπάονας(A).
+(769) [Τροφός:] to|lead he|bids spear|bearing attendants.
+(770) [Χορός:] μή(Pt) νυν(Adv) σὺ(Pr)(N) ταῦτʼ(Pr)(A) ἄγγελλε(Prä)(Akt)(Imv) δεσπότου(G) στύγει(Prä)(Akt)·
+(770) [Χορός:] do|not now you these announce of|master you|hate·
+(771) [Χορός:] ἀλλʼ(Kon) αὐτὸν(Pr)(A) ἐλθεῖν(AorS)(Inf)(Akt), ὡς(Kon) ἀδειμάντως(Adv) κλύῃ(Prä)(Akt)(Knj),
+(771) [Χορός:] but him to|come, so|that fearlessly he|may|hear,
+(772) [Χορός:] ἄνωχθʼ(Per)(Akt)(Imv) ὅσον(Adv) τάχιστα(Adv)(Sup) γηθούσῃ(Prä)(Akt)(D) φρενί(D).
+(772) [Χορός:] command as|much most|swiftly rejoicing with|mind.
+(773) [Χορός:] ἐν(Prp) ἀγγέλῳ(D) γὰρ(Pt) κυπτὸς(Adj)(N) ὀρθοῦται(Prä)(M/P) λόγος(N).
+(773) [Χορός:] in messenger for bent is|set|upright word.
+(774) [Τροφός:] ἀλλʼ(Kon) ἦ(Pt) φρονεῖς(Prä)(Akt) εὖ(Adv) τοῖσι(Art)(D) νῦν(Adv) ἠγγελμένοις(Per)(M/P)(D);
+(774) [Τροφός:] but indeed you|think well to|the now having|been|announced;
+(775) [Χορός:] ἀλλʼ(Kon) εἰ(Kon) τροπαίαν(Adj)(A) Ζεὺς(N) κακῶν(G) θήσει(Fu)(Akt) ποτέ(Adv).
+(775) [Χορός:] but if turning Zeus of|evils he|will|set at|some|time.
+(776) [Τροφός:] καὶ(Kon) πῶς(Adv); Ὀρέστης(N) ἐλπὶς(N) οἴχεται(Prä)(M/P) δόμων(G).
+(776) [Τροφός:] and how; Orestes hope is|gone of|houses.
+(777) [Χορός:] οὔπω(Adv)· κακός(Adj)(N) γε(Pt) μάντις(N) ἂν(Pt) γνοίη(Aor)(Akt)(Op) τάδε(Pr)(A).
+(777) [Χορός:] not|yet· bad at|least seer at|least might|know these.
+(778) [Τροφός:] τί(Adv) φής(Prä)(Akt); ἔχεις(Prä)(Akt) τι(Pr)(A) τῶν(Art)(G) λελεγμένων(Per)(M/P)(G) δίχα(Adv);
+(778) [Τροφός:] what do|you|say; do|you|have anything of|the having|been|said apart;
+(779) [Χορός:] ἄγγελλʼ(Prä)(Akt)(Imv) ἰοῦσα(Prä)(Akt)(N), πρᾶσσε(Prä)(Akt)(Imv) τἀπεσταλμένα(Per)(M/P)(A).
+(779) [Χορός:] announce going, do the|having|been|sent.
+(780) [Χορός:] μέλει(Prä)(Akt) θεοῖσιν(D) ὧνπερ(Pr)(G) ἂν(Pt) μέλῃ(Prä)(Akt)(Knj) πέρι(Prp).
+(780) [Χορός:] it|concerns to|gods of|the|things|indeed at|least it|may|be|a|care about.
+(781) [Τροφός:] ἀλλʼ(Kon) εἶμι(Prä)(Akt) καὶ(Kon) σοῖς(Adj)(D) ταῦτα(Pr)(A) πείσομαι(Fu)(M/P) λόγοις(D).
+(781) [Τροφός:] but I|will|go and to|your these I|will|obey words.
+(782) [Τροφός:] γένοιτο(AorS)(Med)(Op) δʼ(Pt) ὡς(Kon) ἄριστα(Adv)(Sup) σὺν(Prp) θεῶν(G) δόσει(D).
+(782) [Τροφός:] might|become but as best with of|gods gift.
+=== Chor ===
+== Strophe 1 ==
+(783) [Χορός:] νῦν(Adv) παραιτουμένᾳ(Prä)(M/P)(D) μοι(Pr)(D), πάτερ(V)
+(783) [Χορός:] now to|one|begging to|me, father
+(784) [Χορός:] Ζεῦ(V) θεῶν(G) Ὀλυμπίων(Adj)(G),
+(784) [Χορός:] Zeus of|gods Olympian,
+(785) [Χορός:] δὸς(Aor)(Imv)(Akt) τύχας(A) τυχεῖν(AorS)(Inf)(Akt) δόμου(G) κυρίως(Adv)
+(785) [Χορός:] give fortunes to|obtain of|house rightfully
+(786) [Χορός:] τὰ(Art)(A) σώφρονʼ(Adj)(A) εὖ(Adv) μαιομένοις(Prä)(M/P)(D) ἰδεῖν(AorS)(Inf)(Akt).
+(786) [Χορός:] the prudent well to|seeking to|see.
+(787) [Χορός:] διὰ(Prp) δίκας(A) πᾶν(Adj)(A) ἔπος(A)
+(787) [Χορός:] through justices every word
+(788) [Χορός:] ἔλακον(Aor)(Akt)· ὦ(ij) Ζεῦ(V), σύ(Pr)(N) νιν(Pr)(A) φυλάσσοις(Prä)(Akt)(Op).
+(788) [Χορός:] they|cried· O Zeus, you him you|might|guard.
+=== Nachgesang 1 ===
+(789) [Χορός:] ἓ(ij) ἕ(ij), πρὸ(Prp) δὲ(Pt) δὴ(Pt) ʼχθρῶν(G)
+(789) [Χορός:] he he, before but indeed of|enemies
+(790) [Χορός:] τὸν(Art)(A) ἔσωθεν(Adv) μελάθρων(G), Ζεῦ(V),
+(790) [Χορός:] the|one within of|halls, O|Zeus,
+(791) [Χορός:] θές(Aor)(Akt)(Imv), ἐπεί(Kon) νιν(Pr)(A) μέγαν(Adj)(A) ἄρας(AorS)(Akt)(N),
+(791) [Χορός:] set, since him great having|raised,
+(792) [Χορός:] δίδυμα(Adj)(A) καὶ(Kon) τριπλᾶ(Adj)(A)
+(792) [Χορός:] double|things and triple|things
+(793) [Χορός:] παλίμποινα(Adj)(A) θέλων(Prä)(Akt)(N) ἀμείψει(Fu)(Akt).
+(793) [Χορός:] payback|things willing he|will|repay.
+== Antistrophe 1 ==
+(794) [Χορός:] ἴσθι(Per)(Akt)(Imv) δʼ(Pt) ἀνδρὸς(G) φίλου(Adj)(G) πῶλον(A) εὖ‖νιν(Adj)(A)
+(794) [Χορός:] know but of|man dear colt young
+(795) [Χορός:] ζυγέντʼ(Aor)(Pas)(A) ἐν(Prp) ἅρμασιν(D)
+(795) [Χορός:] having|been|yoked in chariots
+(796) [Χορός:] πημάτων(G). σὺ(Pr)(N) δʼ(Pt) ἐν(Prp) δρόμῳ(D) προστιθεὶς(Prä)(Akt)(N)
+(796) [Χορός:] of|sufferings. you but in course adding
+(797) [Χορός:] μέτρον(A) κτίσον(AorS)(Akt)(Imv) σῳζόμενον(Prä)(M/P)(A) ῥυθμὸν(A)
+(797) [Χορός:] measure establish being|preserved rhythm
+(798) [Χορός:] τοῦτʼ(Pr)(A) ἰδεῖν(AorS)(Inf)(Akt) διὰ(Prp) πέδον(A)
+(798) [Χορός:] this to|see through ground
+(799) [Χορός:] ἀνομένων(Prä)(M/P)(G) βημάτων(G) ὄρεγμα(N);
+(799) [Χορός:] of|rising of|steps reach;
+== Strophe 2 ==
+(800) [Χορός:] οἵ(Pr)(N) τʼ(Pt) ἔσω(Adv) δωμάτων(G)
+(800) [Χορός:] who and inside of|houses
+(801) [Χορός:] πλουτογαθῆ(Adj)(A) μυχὸν(A) νομίζετε(Prä)(Akt),
+(801) [Χορός:] wealth|blessed recess you|consider,
+(802) [Χορός:] κλῦτε(Aor)(Imv)(Akt), σύμφρονες(Adj)(N) θεοί(N)·
+(802) [Χορός:] hear, agreeing gods·
+(803) [Χορός:] ἄγετε(Prä)(Akt)(Imv) τῶν(Art)(G) πάλαι(Adv) πεπραγμένων(Per)(M/P)(G)
+(803) [Χορός:] lead of|the formerly having|been|done
+(804) [Χορός:] λύσασθʼ(Aor)(Med)(Imv) αἷμα(A) προσφάτοις(Adj)(D) δίκαις(D).
+(804) [Χορός:] release|yourselves blood to|fresh judgments.
+(805) [Χορός:] γέρων(Adj)(N) φόνος(N) μηκέτʼ(Adv) ἐν(Prp) δόμοις(D) τέκοι(AorS)(Akt)(Knj).
+(805) [Χορός:] old murder no|longer in houses may|beget.
+=== Nachgesang 2 ===
+(806) [Χορός:] τὸ(Art)(N) δὲ(Pt) καλῶς(Adv) κτίμενον(Per)(M/P)(N) ὦ(ij) μέγα(Adj)(N) ναίων(Prä)(Akt)(N)
+(806) [Χορός:] the but|now well having|been|founded O great dwelling
+(807) [Χορός:] στόμιον(N), εὖ(Adv) δὸς(Aor)(Imv)(Akt) ἀνιδεῖν(AorS)(Inf)(Akt) δόμον(A) ἀνδρός(G),
+(807) [Χορός:] mouth, well give to|behold house of|man,
+(808) [Χορός:] καί(Kon) νιν(Pr)(A) ἐλευθερίας(G) φῶς(N)
+(808) [Χορός:] and him of|freedom light
+(809) [Χορός:] λαμπρὸν(Adj)(A) ἰδεῖν(AorS)(Inf)(Akt) φιλίοις(Adj)(D)
+(809) [Χορός:] bright to|see by|friendly
+(810) [Χορός:] ὄμμασιν(D) ἐκ(Prp) δνοφερᾶς(Adj)(G) καλύπτρας(G).
+(810) [Χορός:] eyes out|of gloomy veil.
+== Antistrophe 2 ==
+(811) [Χορός:] ξυλλάβοι(Aor)(Akt)(Op) δʼ(Pt) ἐνδίκως(Adv)
+(811) [Χορός:] might|assist but|now justly
+(812) [Χορός:] παῖς(N) ὁ(Art)(N) Μαίας(G), ἐπεὶ(Kon) φορώτατος(Adj)(N)(Sup)
+(812) [Χορός:] child the of|Maia, since most|carrying
+(813) [Χορός:] πρᾶξιν(A) οὐρίαν(Adj)(A) θέλων(Prä)(Akt)(N)·
+(813) [Χορός:] act favorable willing·
+(815) [Χορός:] πολλὰ(Adj)(A) δʼ(Pt) ἄλλα(Adj)(A) φανεῖ(Fu)(Akt)(Knj) χρηίζων(Prä)(Akt)(N) κρυπτά(Adj)(A).
+(815) [Χορός:] many but|now other he|would|show needing hidden.
+(816) [Χορός:] ἄσκοπον(Adj)(A) δʼ(Pt) ἔπος(A) λέγων(Prä)(Akt)(N)
+(816) [Χορός:] aimless but|now word speaking
+(817) [Χορός:] νύκτα(A) πρό(Prp) τʼ(Pt) ὀμμάτων(G) σκότον(A) φέρει(Prä)(Akt),
+(817) [Χορός:] night before and of|eyes darkness brings,
+(818) [Χορός:] καθʼ(Prp) ἡμέραν(A) δʼ(Pt) οὐδὲν(Pr)(A) ἐμφανέστερος(Adj)(N)(Kmp).
+(818) [Χορός:] through day but|now nothing more|manifest.
+== Strophe 3 ==
+(819) [Χορός:] καὶ(Kon) τότʼ(Adv) ἤδη(Adv) κλυτὸν(Adj)(A)
+(819) [Χορός:] and then already famous
+(820) [Χορός:] δωμάτων(G) λυτήριον(A),
+(820) [Χορός:] of|houses deliverer,
+(821) [Χορός:] θῆλυν(Adj)(A) οὐριοστάταν(Adj)(A) οὐδʼ(Kon)
+(821) [Χορός:] female favorable|wind|setter nor
+(822) [Χορός:] ὀξύκρεκτον(Adj)(A) γοα‖τᾶν(G)
+(822) [Χορός:] shrill|crying of|lamenters
+(823) [Χορός:] νόμον(A) θήσομεν(Fu)(Akt)· πλεῖ(Adj)(N)(Kmp) τάδʼ(Pr)(A) εὖ(Adv)·
+(823) [Χορός:] custom|law we|will|set· more these well·
+(825) [Χορός:] ἐμὸν(Adj)(N) ἐμὸν(Adj)(N) κέρδος(N) αὔξεται(Prä)(M/P) τόδʼ(Pr)(N)· ἄ‖τα(N)
+(825) [Χορός:] my my gain increases this· ruin
+(826) [Χορός:] δʼ(Pt) ἀποστατεῖ(Prä)(Akt) φίλων(G).
+(826) [Χορός:] but|now revolts of|friends.
+=== Nachgesang 3 ===
+(827) [Χορός:] σὺ(Pr)(N) δὲ(Pt) θαρσῶν(Prä)(Akt)(N), ὅταν(Kon) ἥκῃ(Prä)(Akt)(Knj) μέρος(N) ἔργων(G),
+(827) [Χορός:] you but|now being|bold, whenever you|may|come share of|works,
+(828) [Χορός:] ἐπαΰσας(AorS)(Akt)(N) πατρὸς(G) αὐδὰν(A)
+(828) [Χορός:] having|stopped of|father voice
+(829) [Χορός:] θροούσᾳ(Prä)(Akt)(D) πρὸς(Prp) σὲ(Pr)(A) τέκνον(V) πατρὸς(G) αὐδὰν(A)
+(829) [Χορός:] speaking toward you child of|father voice
+(830) [Χορός:] καὶ(Kon) πέραινʼ(Prä)(Imv)(Akt) ἀνεπίμομφον(Adj)(A) ἄταν(A).
+(830) [Χορός:] and accomplish blameless ruin.
+== Antistrophe 3 ==
+(831) [Χορός:] Περσέως(G) τʼ(Pt) ἐν(Prp) φρεσὶν(D)
+(831) [Χορός:] of|Perseus and in minds
+(832) [Χορός:] καρδίαν(A) ἀνασχεθών(AorS)(Akt)(N),
+(832) [Χορός:] heart having|endured,
+(833) [Χορός:] τοῖς(Art)(D) θʼ(Pt) ὑπὸ(Prp) χθονὸς(G) φίλοισιν(Adj)(D),
+(833) [Χορός:] to|the and under of|earth dear|ones,
+(834) [Χορός:] τοῖς(Art)(D) τʼ(Pt) ἄνωθεν(Adv) πρόπρασ‖σε(Prä)(Akt)(Imv)
+(834) [Χορός:] to|the and from|above act|before
+(835) [Χορός:] χάριν(A) ὀργᾶς(G) λυγρᾶς(Adj)(G), ἔνδοθεν(Adv)
+(835) [Χορός:] favor of|wrath mournful, from|within
+(836) [Χορός:] φόνιον(Adj)(A) ἄταν(A) τιθείς(Prä)(Akt)(N), τὸν(Art)(A) αἴτιον(Adj)(A) δʼ(Pt)
+(836) [Χορός:] murderous ruin setting, the responsible but|now
+(837) [Χορός:] ἐξαπολλύων(Prä)(Akt)(N) μόρου(G).
+(837) [Χορός:] destroying|utterly of|fate.
+=== Episode ===
+(838) [Αἴγισθος:] ἥκω(Prä)(Akt) μὲν(Pt) οὐκ(Pt) ἄκλητος(Adj)(N), ἀλλʼ(Kon) ὑπάγγελος(N)·
+(838) [Αἴγισθος:] I|have|come indeed not uninvited, but under|messenger·
+(839) [Αἴγισθος:] νέαν(Adj)(A) φάτιν(A) δὲ(Pt) πεύθομαι(Prä)(M/P) λέγειν(Prä)(Inf)(Akt) τινὰς(Pr)(A)
+(839) [Αἴγισθος:] new report but|now I|learn to|say some
+(840) [Αἴγισθος:] ξένους(Adj)(A) μολόντας(AorS)(Akt)(A) οὐδαμῶς(Adv) ἐφίμερον(Adj)(A),
+(840) [Αἴγισθος:] strangers having|come in|no|way welcome,
+(841) [Αἴγισθος:] μόρον(A) δʼ(Pt) Ὀρέστου(G). καὶ(Kon) τόδʼ(Pr)(N) ἀμφέρειν(Prä)(Inf)(Akt) δόμοις(D)
+(841) [Αἴγισθος:] death but|now of|Orestes. and this to|bring|round to|houses
+(842) [Αἴγισθος:] γένοιτʼ(AorS)(Med)(Op) ἂν(Pt) ἄχθος(N) δειματοσταγὲς(Adj)(N) φόνῳ(D)
+(842) [Αἴγισθος:] might|become at|least burden fear|dripping with|murder
+(843) [Αἴγισθος:] τῷ(Art)(D) πρόσθεν(Adv) ἑλκαίνουσι(Prä)(Akt)(D) καὶ(Kon) δεδηγμένοις(Per)(M/P)(D).
+(843) [Αἴγισθος:] to|the before to|the|ones|ulcering and having|been|bitten.
+(844) [Αἴγισθος:] πῶς(Adv) ταῦτʼ(Pr)(A) ἀληθῆ(Adj)(A) καὶ(Kon) βλέποντα(Prä)(Akt)(A) δοξάσω(Fu)(Akt);
+(844) [Αἴγισθος:] how these true and seeing I|will|deem;
+(845) [Αἴγισθος:] ἢ(Kon) πρὸς(Prp) γυναικῶν(G) δειματούμενοι(Prä)(M/P)(N) λόγοι(N)
+(845) [Αἴγισθος:] or from of|women being|frightened words
+(846) [Αἴγισθος:] πεδάρσιοι(Adj)(N) θρῴσκουσι(Prä)(Akt), θνῄσκοντες(Prä)(Akt)(N) μάτην(Adv);
+(846) [Αἴγισθος:] aloft they|leap, dying vainly;
+(847) [Αἴγισθος:] τί(Pr)(A) τῶνδʼ(Pr)(G) ἂν(Pt) εἴποις(Aor)(Akt)(Op) ὥστε(Kon) δηλῶσαι(Aor)(Inf)(Akt) φρενί(D);
+(847) [Αἴγισθος:] what of|these at|least you|might|say so|as to|make|clear to|mind;
+(848) [Χορός:] ἠκούσαμεν(Aor)(Akt) μέν(Pt), πυνθάνου(Prä)(M/P)(Imv) δὲ(Pt) τῶν(Art)(G) ξένων(Adj)(G)
+(848) [Χορός:] we|heard indeed, inquire but|now of|the strangers
+(849) [Χορός:] ἔσω(Adv) παρελθών(AorS)(Akt)(N). οὐδὲν(Pr)(N) ἀγγέλων(G) σθένος(N)
+(849) [Χορός:] inside having|gone|in. nothing of|messengers strength
+(850) [Χορός:] ὡς(Kon) αὐτὸν(Pr)(A) αὐτῶν(Pr)(G) ἄνδρα(A) πεύθεσθαι(Prä)(M/P)(Inf) πάρα(Adv).
+(850) [Χορός:] as him of|themselves man to|learn at|hand.
+(851) [Αἴγισθος:] ἰδεῖν(AorS)(Inf)(Akt) ἐλέγξαι(Aor)(Inf)(Akt) τʼ(Pt) αὖ(Adv) θέλω(Prä)(Akt) τὸν(Art)(A) ἄγγελον(A),
+(851) [Αἴγισθος:] to|see to|test and again I|want the messenger,
+(852) [Αἴγισθος:] εἴτʼ(Kon) αὐτὸς(Pr)(N) ἦν(Imp)(Akt) θνῄσκοντος(Prä)(Akt)(G) ἐγγύθεν(Adv) παρών(Prä)(Akt)(N),
+(852) [Αἴγισθος:] whether him|self was of|one|dying from|near being|present,
+(853) [Αἴγισθος:] εἴτʼ(Kon) ἐξ(Prp) ἀμαυρᾶς(Adj)(G) κληδόνος(G) λέγει(Prä)(Akt) μαθών(AorS)(Akt)(N).
+(853) [Αἴγισθος:] or|whether out|of dim rumor he|says having|learned.
+(854) [Αἴγισθος:] οὔτοι(Pt) φρένʼ(A) ἂν(Pt) κλέψειεν(Aor)(Akt)(Op) ὠμματωμένην(Per)(M/P)(A).
+(854) [Αἴγισθος:] not|indeed mind at|least would|steal eye|having.
+== Anapäste ==
+(855) [Χορός:] Ζεῦ(V) Ζεῦ(V), τί(Adv) λέγω(Prä)(Akt), πόθεν(Adv) ἄρξωμαι(Aor)(Med)(Knj)
+(855) [Χορός:] O|Zeus O|Zeus, what I|say, whence I|may|begin
+(856) [Χορός:] τάδʼ(Pr)(A) ἐπευχομένη(Prä)(M/P)(N) κἀπιθεάζουσʼ(Kon)(Prä)(Akt)(N),
+(856) [Χορός:] these praying and|invoking,
+(857) [Χορός:] ὑπὸ(Prp) δʼ(Pt) εὐνοίας(G)
+(857) [Χορός:] under but|now goodwill
+(858) [Χορός:] πῶς(Adv) ἴσον(Adj)(A) εἰποῦσʼ(AorS)(Akt)(N) ἀνύσωμαι(Aor)(Med)(Knj);
+(858) [Χορός:] how equal having|said I|may|accomplish;
+(859) [Χορός:] νῦν(Adv) γὰρ(Pt) μέλλουσι(Prä)(Akt) μιανθεῖσαι(Aor)(Pas)(N)
+(859) [Χορός:] now for are|about|to having|been|stained
+(860) [Χορός:] πειραὶ(N) κοπάνων(G) ἀνδροδαΐκτων(Adj)(G)
+(860) [Χορός:] trials of|clubs man|slaying
+(861) [Χορός:] ἢ(Kon) πάνυ(Adv) θήσειν(Fu)(Akt)(Inf) Ἀγαμεμνονίων(Adj)(G)
+(861) [Χορός:] or quite to|set of|Agamemnonids
+(862) [Χορός:] οἴκων(G) ὄλεθρον(A) διὰ(Prp) παντός(G),
+(862) [Χορός:] of|houses destruction through all,
+(863) [Χορός:] ἢ(Kon) πῦρ(N) καὶ(Kon) φῶς(N) ἐπʼ(Prp) ἐλευθερίᾳ(D)
+(863) [Χορός:] or fire and light upon freedom
+(864) [Χορός:] δαίων(Prä)(Akt)(N) ἀρχάς(A) τε(Pt) πολισσονόμους(Adj)(A)
+(864) [Χορός:] kindling authorities and much|ruled
+(865) [Χορός:] πατέρων(G) θʼ(Pt) ἕξει(Fu)(Akt) μέγαν(Adj)(A) ὄλβον(A).
+(865) [Χορός:] of|fathers and will|have great prosperity.
+(866) [Χορός:] τοιάνδε(Adj)(A) πάλην(A) μόνος(Adj)(N) ὢν(Prä)(Akt)(N) ἔφεδρος(Adj)(N)
+(866) [Χορός:] such struggle alone being sitting|near
+(867) [Χορός:] δισσοῖς(Adj)(D) μέλλει(Prä)(Akt) θεῖος(Adj)(N) Ὀρέστης(N)
+(867) [Χορός:] with|two is|about|to divine Orestes
+(868) [Χορός:] ἅψειν(Aor)(Inf)(Akt). εἴη(Prä)(Akt)(Op) δʼ(Pt) ἐπὶ(Prp) νίκῃ(D).
+(868) [Χορός:] to|touch. may|it|be but upon victory.
+(869) [Αἴγισθος:] ἒ(ij) ἔ(ij), ὀτοτοτοῖ(ij).
+(869) [AIGISTHOS:] eh eh, otototoi.
+(870) [Χορός:] ἔα(ij) ἔα(ij) μάλα(Adv)·
+(870) [Χορός:] ah ah very·
+(871) [Χορός:] πῶς(Adv) ἔχει(Prä)(Akt); πῶς(Adv) κέκρανται(Per)(M/P) δόμοις(D);
+(871) [Χορός:] how does|it|fare; how are|mixed in|houses;
+(872) [Χορός:] ἀποσταθῶμεν(AorS)(Pas)(Knj) πράγματος(G) τελουμένου(Prä)(M/P)(G),
+(872) [Χορός:] let|us|stand|aside of|matter being|completed,
+(873) [Χορός:] ὅπως(Kon) δοκῶμεν(Prä)(Akt)(Knj) τῶνδʼ(Pr)(G) ἀναίτιαι(Adj)(N) κακῶν(Adj)(G)
+(873) [Χορός:] so|that we|may|seem of|these not|responsible of|evils
+(874) [Χορός:] εἶναι(Prä)(Inf)(Akt)· μάχης(G) γὰρ(Pt) δὴ(Pt) κεκύρωται(Per)(M/P) τέλος(N).
+(874) [Χορός:] to|be· of|battle for indeed has|been|confirmed end.
+(875) [Οἰκέτης:] οἴμοι(ij), πανοίμοι(ij) δεσπότου(G) πεπληγμένου(Per)(M/P)(G)·
+(875) [OIKETĒS:] woe|is|me, all|woe of|master having|been|struck·
+(876) [Οἰκέτης:] οἴμοι(ij) μάλʼ(Adv) αὖθις(Adv) ἐν(Prp) τρίτοις(Adj)(D) προσφθέγμασιν(D).
+(876) [OIKETĒS:] woe|is|me very again in third utterances.
+(877) [Οἰκέτης:] Αἴγισθος(N) οὐκέτʼ(Adv) ἔστιν(Prä)(Akt). ἀλλʼ(Kon) ἀνοίξατε(Aor)(Akt)(Imv)
+(877) [OIKETĒS:] Aegisthus no|longer is. but open
+(878) [Οἰκέτης:] ὅπως(Kon) τάχιστα(Adv)(Sup), καὶ(Kon) γυναικείους(Adj)(A) πύλας(A)
+(878) [OIKETĒS:] so|that most|swiftly, and womens gates
+(879) [Οἰκέτης:] μοχλοῖς(D) χαλᾶτε(Prä)(Akt)(Imv)· καὶ(Kon) μάλʼ(Adv) ἡβῶντος(Prä)(Akt)(G) δὲ(Pt) δεῖ(Prä)(Akt),
+(879) [OIKETĒS:] with|bars loosen· and very of|a|youth but there|is|need,
+(880) [Οἰκέτης:] οὐχ(Pt) ὡς(Kon) δʼ(Pt) ἀρῆξαι(Aor)(Inf)(Akt) διαπεπραγμένῳ(Per)(M/P)(D)· τί(Adv) γάρ(Pt);
+(880) [OIKETĒS:] not as but to|help having|been|accomplished· what for;
+(881) [Οἰκέτης:] ἰοὺ(ij) ἰού(ij).
+(881) [OIKETĒS:] iou iou.
+(882) [Οἰκέτης:] κωφοῖς(Adj)(D) ἀυτῶ(Prä)(Akt) καὶ(Kon) καθεύδουσιν(Prä)(Akt)(D) μάτην(Adv)
+(882) [OIKETĒS:] to|deaf I|shout and sleeping in|vain
+(883) [Οἰκέτης:] ἄκραντα(Adj)(A) βάζω(Prä)(Akt); ποῖ(Adv) Κλυταιμήστρα(V); τί(Adv) δρᾷ(Prä)(Akt);
+(883) [OIKETĒS:] unfulfilled I|speak; whither Clytaimestra; what does;
+(884) [Οἰκέτης:] ἔοικε(Per)(Akt) νῦν(Adv) αὐτῆς(Pr)(G) ἐπὶ(Prp) ξυροῦ(G) πέλας(Adv)
+(884) [OIKETĒS:] it|seems now of|her upon razor near
+(884b) [Οἰκέτης:] αὐχὴν(A) πεσεῖσθαι(AorS)(Med)(Inf) πρὸς(Prp) δίκην(A) πεπληγμένος(Per)(M/P)(N).
+(884b) [OIKETĒS:] neck to|fall toward justice having|been|struck.
+(885) [Κλυταιμνήστρα:] τί(Adv) δʼ(Pt) ἐστὶ(Prä)(Akt) χρῆμα(N); τίνα(Pr)(A) βοὴν(A) ἵστης(Prä)(Akt) δόμοις(D);
+(885) [KLYTAIMNĒSTRA:] what but is thing; what|kind|of shout you|set|up in|houses;
+(886) [Οἰκέτης:] τὸν(Art)(A) ζῶντα(Prä)(Akt)(A) καίνειν(Prä)(Inf)(Akt) τοὺς(Art)(A) τεθνηκότας(Per)(Akt)(A) λέγω(Prä)(Akt).
+(886) [OIKETĒS:] the living to|kill the having|died I|say.
+(887) [Κλυταιμνήστρα:] οἲ(ij) ʼγώ(Pr)(N). ξυνῆκα(AorS)(Akt) τοὔπος(N) ἐξ(Prp) αἰνιγμάτων(G).
+(887) [KLYTAIMNĒSTRA:] woe I. I|understood the|word out|of riddles.
+(888) [Κλυταιμνήστρα:] δόλοις(D) ὀλούμεθʼ(Prä)(M/P), ὥσπερ(Kon) οὖν(Pt) ἐκτείναμεν(AorS)(Akt).
+(888) [KLYTAIMNĒSTRA:] with|tricks we|are|destroyed, just|as then we|killed.
+(889) [Κλυταιμνήστρα:] δοίη(AorS)(Akt)(Op) τις(Pr)(N) ἀνδροκμῆτα(Adj)(A) πέλεκυν(A) ὡς(Kon) τάχος(A)·
+(889) [KLYTAIMNĒSTRA:] may|give someone man|cleaving axe as speed·
+(890) [Κλυταιμνήστρα:] εἰδῶμεν(Per)(Akt)(Knj) εἰ(Kon) νικῶμεν(Prä)(Akt)(Knj), ἢ(Kon) νικώμεθα(Prä)(M/P)(Knj)·
+(890) [KLYTAIMNĒSTRA:] we|may|know if we|may|win, or we|may|be|defeated·
+(891) [Κλυταιμνήστρα:] ἐνταῦθα(Adv) γὰρ(Pt) δὴ(Pt) τοῦδʼ(Pr)(G) ἀφικόμην(AorS)(Med) κακοῦ(Adj)(G).
+(891) [KLYTAIMNĒSTRA:] here for indeed of|this I|arrived of|evil.
+(892) [Ὀρέστης:] σὲ(Pr)(A) καὶ(Kon) ματεύω(Prä)(Akt)· τῷδε(Pr)(D) δʼ(Pt) ἀρκούντως(Adv) ἔχει(Prä)(Akt).
+(892) [ORESTĒS:] you and I|seek· to|this|one but sufficiently it|suffices.
+(893) [Κλυταιμνήστρα:] οἲ(ij) ʼγώ(Pr)(N). τέθνηκας(Per)(Akt), φίλτατʼ(Adj)(V)(Sup) Αἰγίσθου(G) βία(N).
+(893) [KLYTAIMNĒSTRA:] woe I. you|are|dead, dearest of|Aegisthus force.
+(894) [Ὀρέστης:] φιλεῖς(Prä)(Akt) τὸν(Art)(A) ἄνδρα(A); τοιγὰρ(Pt) ἐν(Prp) ταὐτῷ(Adj)(D) τάφῳ(D)
+(894) [ORESTĒS:] you|love the man; therefore in the|same tomb
+(895) [Ὀρέστης:] κείσῃ(Fu)(M/P)· θανόντα(AorS)(Akt)(A) δʼ(Pt) οὔτι(Pt) μὴ(Pt) προδῷς(AorS)(Akt)(Knj) ποτε(Adv).
+(895) [ORESTĒS:] you|will|lie· having|died but not|at|all not you|may|betray ever.
+(896) [Κλυταιμνήστρα:] ἐπίσχες(AorS)(Akt)(Imv), ὦ(ij) παῖ(V), τόνδε(Pr)(A) δʼ(Pt) αἴδεσαι(Prä)(M/P), τέκνον(V),
+(896) [KLYTAIMNĒSTRA:] hold|back, O child, this but you|respect, child,
+(897) [Κλυταιμνήστρα:] μαστόν(A), πρὸς(Prp) ᾧ(Pr)(D) σὺ(Pr)(N) πολλὰ(Adj)(A) δὴ(Pt) βρίζων(Prä)(Akt)(N) ἅμα(Adv)
+(897) [KLYTAIMNĒSTRA:] breast, to which you many indeed pressing at|once
+(898) [Κλυταιμνήστρα:] οὔλοισιν(Adj)(D) ἐξήμελξας(AorS)(Akt) εὐτραφὲς(Adj)(A) γάλα(A).
+(898) [KLYTAIMNĒSTRA:] with|woolly you|milked|out well|nourished milk.
+(899) [Ὀρέστης:] Πυλάδη(V) τί(Adv) δράσω(AorS)(Akt)(Knj); μητέρʼ(A) αἰδεσθῶ(AorS)(M/P)(Knj) κτανεῖν(AorS)(Inf)(Akt);
+(899) [ORESTĒS:] Pylades what shall|I|do; mother should|I|revere to|kill;
+(900) [Πυλάδης:] ποῦ(Adv) δὴ(Pt) τὰ(Art)(A) λοιπὰ(Adj)(A) Λοξίου(G) μαντεύματα(A)
+(900) [PYLADĒS:] where indeed the remaining of|Loxias oracles
+(901) [Πυλάδης:] τὰ(Art)(A) πυθόχρηστα(Adj)(A), πιστὰ(Adj)(A) δʼ(Pt) εὐορκώματα(A);
+(901) [PYLADĒS:] the Pytho|oracular, trustworthy but oath|pledges;
+(902) [Πυλάδης:] ἅπαντας(Adj)(A) ἐχθροὺς(A) τῶν(Art)(G) θεῶν(G) ἡγοῦ(Prä)(Med)(Imv) πλέον(Adj)(A)(Kmp).
+(902) [PYLADĒS:] all enemies of the|gods consider more.
+(903) [Ὀρέστης:] κρίνω(Prä)(Akt) σὲ(Pr)(A) νικᾶν(Prä)(Inf)(Akt), καὶ(Kon) παραινεῖς(Prä)(Akt) μοι(Pr)(D) καλῶς(Adv).
+(903) [ORESTĒS:] I|decide you to|win, and you|advise to|me well.
+(904) [Ὀρέστης:] ἕπου(Prä)(M/P)(Imv), πρὸς(Prp) αὐτὸν(Pr)(A) τόνδε(Pr)(A) σὲ(Pr)(A) σφάξαι(AorS)(Inf)(Akt) θέλω(Prä)(Akt).
+(904) [ORESTĒS:] follow, toward him this you to|slaughter I|wish.
+(905) [Ὀρέστης:] καὶ(Kon) ζῶντα(Prä)(Akt)(A) γάρ(Pt) νιν(Pr)(A) κρείσσονʼ(Adj)(A)(Kmp) ἡγήσω(Fu)(Med) πατρός(G)·
+(905) [ORESTĒS:] and living for him stronger I|will|consider than|father·
+(906) [Ὀρέστης:] τούτῳ(Pr)(D) θανοῦσα(AorS)(Akt)(N) ξυγκάθευδʼ(Prä)(Akt)(Imv), ἐπεὶ(Kon) φιλεῖς(Prä)(Akt)
+(906) [ORESTĒS:] with|this having|died sleep|together, since you|love
+(907) [Ὀρέστης:] τὸν(Art)(A) ἄνδρα(A) τοῦτον(Pr)(A), ὃν(Pr)(A) δʼ(Pt) ἐχρῆν(Imp)(Akt) φιλεῖν(Prä)(Inf)(Akt) στυγεῖς(Prä)(Akt).
+(907) [ORESTĒS:] the man this, whom but it|was|necessary to|love you|hate.
+(908) [Κλυταιμνήστρα:] ἐγώ(Pr)(N) σʼ(Pr)(A) ἔθρεψα(AorS)(Akt), σὺν(Prp) δὲ(Pt) γηράναι(AorS)(Inf)(Akt) θέλω(Prä)(Akt).
+(908) [KLYTAIMNĒSTRA:] I you I|nourished, with but to|grow|old I|wish.
+(909) [Ὀρέστης:] πατροκτονοῦσα(Prä)(Akt)(N) γὰρ(Pt) ξυνοικήσεις(Fu)(Akt) ἐμοί(Pr)(D);
+(909) [ORESTĒS:] father|killing for you|will|live|with to|me;
+(910) [Κλυταιμνήστρα:] ἡ(Art)(N) Μοῖρα(N) τούτων(Pr)(G), ὦ(ij) τέκνον(V), παραιτία(N).
+(910) [KLYTAIMNĒSTRA:] the Fate of|these, O child, cause.
+(911) [Ὀρέστης:] καὶ(Kon) τόνδε(Pr)(A) τοίνυν(Pt) Μοῖρʼ(A) ἐπόρσυνεν(AorS)(Akt) μόρον(A).
+(911) [ORESTĒS:] and this then|indeed Fate brought|about fate.
+(912) [Κλυταιμνήστρα:] οὐδὲν(Pr)(A) σεβίζῃ(Prä)(Akt) γενεθλίους(Adj)(A) ἀράς(A), τέκνον(V);
+(912) [KLYTAIMNĒSTRA:] nothing you|revere birth|related curses, child;
+(913) [Ὀρέστης:] τεκοῦσα(AorS)(Akt)(N) γάρ(Pt) μʼ(Pr)(A) ἔρριψας(AorS)(Akt) ἐς(Prp) τὸ(Art)(A) δυστυχές(Adj)(A).
+(913) [ORESTĒS:] having|borne for me you|threw into the ill|starred.
+(914) [Κλυταιμνήστρα:] οὔτοι(Pt) σʼ(Pr)(A) ἀπέρριψʼ(AorS)(Akt) εἰς(Prp) δόμους(A) δορυξένους(Adj)(A).
+(914) [KLYTAIMNĒSTRA:] not|indeed you I|cast|away into houses spear|guest.
+(915) [Ὀρέστης:] αἰκῶς(Adv) ἐπράθην(AorS)(Pas) ὢν(Prä)(Akt)(N) ἐλευθέρου(Adj)(G) πατρός(G).
+(915) [ORESTĒS:] shamefully I|was|sold being of|free father.
+(916) [Κλυταιμνήστρα:] ποῦ(Adv) δῆθʼ(Pt) ὁ(Art)(N) τῖμος(N), ὅντινʼ(Pr)(A) ἀντεδεξάμην(AorS)(Med);
+(916) [KLYTAIMNĒSTRA:] where indeed the honored|one, whomever I|received|in|return;
+(917) [Ὀρέστης:] αἰσχύνομαί(Prä)(M/P) σοι(Pr)(D) τοῦτʼ(Pr)(A) ὀνειδίσαι(AorS)(Inf)(Akt) σαφῶς(Adv).
+(917) [ORESTĒS:] I|am|ashamed to|you this to|reproach clearly.
+(918) [Κλυταιμνήστρα:] μὴ(Pt) ἀλλʼ(Kon) εἴφʼ(AorS)(Akt)(Imv) ὁμοίως(Adv) καὶ(Kon) πατρὸς(G) τοῦ(Art)(G) σοῦ(Pr)(G) μάτας(Adv).
+(918) [KLYTAIMNĒSTRA:] not but say likewise and of|father the your vainly.
+(919) [Ὀρέστης:] μὴ(Pt) ʼλεγχε(Prä)(Akt)(Imv) τὸν(Art)(A) πονοῦντʼ(Prä)(Akt)(A) ἔσω(Adv) καθημένη(Prä)(M/P)(N).
+(919) [ORESTĒS:] not blame the suffering inside sitting.
+(920) [Κλυταιμνήστρα:] ἄλγος(N) γυναιξὶν(D) ἀνδρὸς(G) εἴργεσθαι(Prä)(M/P)(Inf), τέκνον(V).
+(920) [KLYTAIMNĒSTRA:] pain for|women of|man to|be|kept|away, child.
+(921) [Ὀρέστης:] τρέφει(Prä)(Akt) δέ(Pt) γʼ(Pt) ἀνδρὸς(G) μόχθος(N) ἡμένας(Per)(M/P)(A) ἔσω(Adv).
+(921) [ORESTĒS:] nourishes but at|least of|man toil seated inside.
+(922) [Κλυταιμνήστρα:] κτενεῖν(Fu)(Inf)(Akt) ἔοικας(Per)(Akt), ὦ(ij) τέκνον(V), τὴν(Art)(A) μητέρα(A).
+(922) [KLYTAIMNĒSTRA:] to|kill you|seem, O child, the mother.
+(923) [Ὀρέστης:] σύ(Pr)(N) τοι(Pt) σεαυτήν(Pr)(A), οὐκ(Pt) ἐγώ(Pr)(N), κατακτενεῖς(Fu)(Akt).
+(923) [ORESTĒS:] you indeed yourself, not I, you|will|kill.
+(924) [Κλυταιμνήστρα:] ὅρα(Prä)(Akt)(Imv), φύλαξαι(AorS)(Med)(Imv) μητρὸς(G) ἐγκότους(Adj)(A) κύνας(A).
+(924) [KLYTAIMNĒSTRA:] see, guard|yourself of|mother spiteful dogs.
+(925) [Ὀρέστης:] τὰς(Art)(A) τοῦ(Art)(G) πατρὸς(G) δὲ(Pt) πῶς(Adv) φύγω(AorS)(Akt)(Knj), παρεὶς(AorS)(Akt)(N) τάδε(Pr)(A);
+(925) [ORESTĒS:] the of the|father but how may|I|flee, letting|go these|things;
+(926) [Κλυταιμνήστρα:] ἔοικα(Per)(Akt) θρηνεῖν(Prä)(Inf)(Akt) ζῶσα(Prä)(Akt)(N) πρὸς(Prp) τύμβον(A) μάτην(Adv).
+(926) [KLYTAIMNĒSTRA:] I|seem to|lament living toward tomb in|vain.
+(927) [Ὀρέστης:] πατρὸς(G) γὰρ(Pt) αἶσα(N) τόνδε(Pr)(A) σοὐρίζει(Prä)(Akt) μόρον(A).
+(927) [ORESTĒS:] of|father for fate this drives doom.
+(928) [Κλυταιμνήστρα:] οἲ(ij) ʼγὼ(Pr)(N) τεκοῦσα(AorS)(Akt)(N) τόνδʼ(Pr)(A) ὄφιν(A) ἐθρεψάμην(AorS)(Med).
+(928) [KLYTAIMNĒSTRA:] woe I having|borne this serpent I|reared.
+(929) [Ὀρέστης:] ἦ(Pt) κάρτα(Adv) μάντις(N) οὑξ(Art)(N)(Prp) ὀνειράτων(G) φόβος(N).
+(929) [Ὀρέστης:] indeed very seer the|from|out|of of|dreams fear.
+(930) [Ὀρέστης:] ἔκανες(AorS)(Akt) ὃν(Pr)(A) οὐ(Pt) χρῆν(Imp)(Akt), καὶ(Kon) τὸ(Art)(A) μὴ(Pt) χρεὼν(Prä)(Akt)(N) πάθε(AorS)(Akt)(Imv).
+(930) [ORESTĒS:] you|did what not it|was|necessary, and the not needful suffer.
+(931) [Χορός:] στένω(Prä)(Akt) μὲν(Pt) οὖν(Pt) καὶ(Kon) τῶνδε(Pr)(G) συμφορὰν(A) διπλῆν(Adj)(A).
+(931) [Χορός:] I|groan indeed now and of|these misfortune double.
+(932) [Χορός:] ἐπεὶ(Kon) δὲ(Pt) πολλῶν(Adj)(G) αἱμάτων(G) ἐπήκρισε(Aor)(Akt)
+(932) [Χορός:] since but many of|bloods he|decided
+(933) [Χορός:] τλήμων(Adj)(N) Ὀρέστης(N), τοῦθʼ(Pr)(A) ὅμως(Adv) αἱρούμεθα(Prä)(M/P),
+(933) [Χορός:] wretched Orestes, this nevertheless we|choose,
+(934) [Χορός:] ὀφθαλμὸν(A) οἴκων(G) μὴ(Pt) πανώλεθρον(Adj)(A) πεσεῖν(AorS)(Inf)(Akt).
+(934) [Χορός:] eye of|houses not utterly|destroyed to|fall.
+=== Chor ===
+== Strophe 1 ==
+(935) [Χορός:] ἔμολε(AorS)(Akt) μὲν(Pt) δίκα(N) Πριαμίδαις(D) χρόνῳ(D),
+(935) [Χορός:] came indeed justice to|Priamids with|time,
+(936) [Χορός:] βαρύδικος(Adj)(N) ποινά(N)·
+(936) [Χορός:] heavy|judging penalty·
+(937) [Χορός:] ἔμολε(AorS)(Akt) δʼ(Pt) ἐς(Prp) δόμον(A) τὸν(Art)(A) Ἀγαμέμνονος(G)
+(937) [Χορός:] came but into house the of|Agamemnon
+(938) [Χορός:] διπλοῦς(Adj)(N) λέων(N), διπλοῦς(Adj)(N) Ἄρης(N).
+(938) [Χορός:] double lion, double Ares.
+(939) [Χορός:] ἔλασε(AorS)(Akt) δʼ(Pt) ἐς(Prp) τὸ(Art)(A) πᾶν(Adj)(A)
+(939) [Χορός:] drove but into the all
+(940) [Χορός:] ὁ(Art)(N) πυθόχρηστος(Adj)(N) φυγὰς(N)
+(940) [Χορός:] the Pytho|oracular exile
+(941) [Χορός:] θεόθεν(Adv) εὖ(Adv) φραδαῖσιν(D) ὡρμημένος(Per)(M/P)(N).
+(941) [Χορός:] from|god well with|counsels having|been|set|in|motion.
+=== Nachgesang 1 ===
+(942) [Χορός:] ἐπολολύξατʼ(Aor)(Akt)(Imv) ὦ(ij) δεσποσύνων(Adj)(G) δόμων(G)
+(942) [Χορός:] cry|aloud O lordly of|houses
+(942a) [Χορός:] ἐπολολύξατʼ(Aor)(Akt)(Imv) ὦ(ij) δεσποσύνων(Adj)(G) δόμων(G)
+(942a) [Χορός:] cry|aloud O lordly of|houses
+(943) [Χορός:] ἀναφυγᾶς(G) κακῶν(G) καὶ(Kon) κτεάνων(G) τριβᾶς(G)
+(943) [Χορός:] of|escape of|evils and of|possessions of|waste
+(943a) [Χορός:] ἀναφυγᾶς(G) κακῶν(G) καὶ(Kon) κτεάνων(G) τριβᾶς(G)
+(943a) [Χορός:] of|escape of|evils and of|possessions of|waste
+(944) [Χορός:] ὑπαὶ(Prp) δυοῖν(Adj)(Du)(D) μιαστόροιν(Adj)(Du)(D),
+(944) [Χορός:] under two polluters,
+(944a) [Χορός:] ὑπαὶ(Prp) δυοῖν(Adj)(Du)(D) μιαστόροιν(Adj)(Du)(D),
+(944a) [Χορός:] under two polluters,
+(945) [Χορός:] δυσοίμου(Adj)(G) τύχας(A).
+(945) [Χορός:] of|ill|omen fortunes.
+(945a) [Χορός:] δυσοίμου(Adj)(G) τύχας(A).
+(945a) [Χορός:] of|ill|omen fortunes.
+== Antistrophe 1 ==
+(946) [Χορός:] ἔμολε(AorS)(Akt) δʼ(Pt) ᾧ(Pr)(D) μέλει(Prä)(Akt) κρυπταδίου(Adj)(G) μάχας(A)
+(946) [Χορός:] came but to|whom concerns of|secret battles
+(947) [Χορός:] δολιόφρων(Adj)(N) ποινά(N)·
+(947) [Χορός:] guile|minded penalty·
+(948) [Χορός:] ἔθιγε(Aor)(Akt) δʼ(Pt) ἐν(Prp) μάχᾳ(D) χερὸς(G) ἐτήτυμος(Adj)(N)
+(948) [Χορός:] touched but in battle of|hand true
+(949) [Χορός:] Διὸς(G) κόρα(N)— Δίκαν(A) δέ(Pt) νιν(Pr)(A)
+(949) [Χορός:] of|Zeus maiden— Justice but her
+(950) [Χορός:] προσαγορεύομεν(Prä)(Akt) βροτοὶ(N) τυχόντες(AorS)(Akt)(N) καλῶς(Adv)—
+(950) [Χορός:] we|address mortals having|happened well—
+(951) [Χορός:] ὀλέθριον(Adj)(A) πνέουσʼ(Prä)(Akt)(N) ἐν(Prp) ἐχθροῖς(D) κότον(A).
+(951) [Χορός:] destructive breathing in enemies grudge.
+== Strophe 2 ==
+(953) [Χορός:] τά(Art)(A) περ(Pt) ὁ(Art)(N) Λοξίας(N) ὁ(Art)(N) Παρνασσίας(Adj)(N)
+(953) [Χορός:] the|things at|least the Loxias the Parnassian
+(954) [Χορός:] μέγαν(Adj)(A) ἔχων(Prä)(Akt)(N) μυχὸν(A) χθονὸς(G) ἐπωρθία‖ξεν(Aor)(Akt)
+(954) [Χορός:] great holding recess of|earth he|set|upright
+(955) [Χορός:] ἀδόλως(Adv) δόλοις(D)
+(955) [Χορός:] guilelessly with|wiles
+(956) [Χορός:] βλάβαν(A) ἐγχρονισθεῖσαν(Aor)(Pas)(A) ἐποίχεται(Prä)(M/P).
+(956) [Χορός:] harm having|grown|with|time he|goes|against.
+(957) [Χορός:] κρατεῖταί(Prä)(M/P) πως(Adv) τὸ(Art)(N) θεῖον(N) παρὰ(Prp) τὸ(Art)(A) μὴ(Pt)
+(957) [Χορός:] prevails somehow the divine beside the not
+(958) [Χορός:] ὑπουργεῖν(Prä)(Inf)(Akt) κακοῖς(D).
+(958) [Χορός:] to|assist to|evils.
+(960) [Χορός:] ἄξια(Adj)(A) δʼ(Pt) οὐρανοῦχον(Adj)(A) ἀρχὰν(A) σέβειν(Prä)(Inf)(Akt).
+(960) [Χορός:] worthy but heaven|holding rule to|revere.
+=== Nachgesang 2 ===
+(961) [Χορός:] πάρα(Adv) τε(Pt) φῶς(A) ἰδεῖν(AorS)(Inf)(Akt)
+(961) [Χορός:] at|hand and light to|see
+(962) [Χορός:] μέγα(Adj)(N) τʼ(Pt) ἀφῃρέθην(Aor)(Pas) ψάλιον(A) οἰκέων(G).
+(962) [Χορός:] greatly and I|was|deprived bridle of|houses.
+(962a) [Χορός:] μέγα(Adj)(N) τʼ(Pt) ἀφῃρέθην(Aor)(Pas) ψάλιον(A) οἰκέων(G).
+(962a) [Χορός:] greatly and I|was|deprived bridle of|houses.
+(963) [Χορός:] ἄναγε(Prä)(Imv)(Akt) μὰν(Pt) δόμοι(V)· πολὺν(Adj)(A) ἄγαν(Adv) χρόνον(A)
+(963) [Χορός:] bring|up indeed O|houses· much excessively time
+(963a) [Χορός:] ἄναγε(Prä)(Imv)(Akt) μὰν(Pt) δόμοι(V)· πολὺν(Adj)(A) ἄγαν(Adv) χρόνον(A)
+(963a) [Χορός:] bring|up indeed O|houses· much excessively time
+(964) [Χορός:] χαμαιπετεῖς(Adj)(N) ἔκεισθʼ(Imp)(M/P) ἀεί(Adv).
+(964) [Χορός:] ground|crawling you|were|lying always.
+(964a) [Χορός:] χαμαιπετεῖς(Adj)(N) ἔκεισθʼ(Imp)(M/P) ἀεί(Adv).
+(964a) [Χορός:] ground|crawling you|were|lying always.
+== Antistrophe 2 ==
+(965) [Χορός:] τάχα(Adv) δὲ(Pt) παντελὴς(Adj)(N) χρόνος(N) ἀμείψεται(Fu)(M/P)
+(965) [Χορός:] soon but complete time will|change
+(966) [Χορός:] πρόθυρα(A) δωμάτων(G), ὅταν(Kon) ἀφʼ(Prp) ἑστίας(G)
+(966) [Χορός:] front|doors of|houses, whenever from hearth
+(967) [Χορός:] πᾶν(Adj)(N) ἐλαθῇ(Aor)(Pas)(Knj) μύσος(N)
+(967) [Χορός:] all may|be|forgotten pollution
+(968) [Χορός:] καθαρμοῖσιν(D) ἀτᾶν(G) ἐλατηρίοις(Adj)(D).
+(968) [Χορός:] with|purifications of|ruin driving.
+(969) [Χορός:] τύχαι(N) δʼ(Pt) εὐπροσωποκοῖται(Adj)(N) τὸ(Art)(A) πᾶν(Adj)(A)
+(969) [Χορός:] fortunes but fair|faced|bed|mates the whole
+(970) [Χορός:] ἰδεῖν(AorS)(Inf)(Akt) ἀκοῦσαι(AorS)(Inf)(Akt) πρευμενεῖς(Adj)(N)
+(970) [Χορός:] to|see to|hear kindly|disposed
+(971) [Χορός:] μετοίκοις(D) δόμων(G) πεσοῦνται(Fu)(M/P) πάλιν(Adv).
+(971) [Χορός:] to|dwellers of|houses they|will|fall again.
+=== Nachgesang 2 ===
+(972) [Χορός:] πάρα(Adv) τε(Pt) φῶς(A) ἰδεῖν(AorS)(Inf)(Akt)
+(972) [Χορός:] at|hand and light to|see
+=== Episode ===
+(973) [Ὀρέστης:] ἴδεσθε(AorS)(Akt)(Imv) χώρας(G) τὴν(Art)(A) διπλῆν(Adj)(A) τυραννίδα(A)
+(973) [Ὀρέστης:] see of|land the double tyranny
+(974) [Ὀρέστης:] πατροκτόνους(Adj)(A) τε(Pt) δωμάτων(G) πορθήτορας(A).
+(974) [Ὀρέστης:] father|slaying and of|houses ravagers.
+(975) [Ὀρέστης:] σεμνοὶ(Adj)(N) μὲν(Pt) ἦσαν(Imp)(Akt) ἐν(Prp) θρόνοις(D) τόθʼ(Adv) ἥμενοι(Per)(M/P)(N),
+(975) [Ὀρέστης:] august indeed they|were in thrones then sitting,
+(976) [Ὀρέστης:] φίλοι(Adj)(N) δὲ(Pt) καὶ(Kon) νῦν(Adv), ὡς(Kon) ἐπεικάσαι(Aor)(Inf)(Akt) πάθη(N)
+(976) [Ὀρέστης:] dear but and now, as to|infer sufferings
+(977) [Ὀρέστης:] πάρεστιν(Prä)(Akt), ὅρκος(N) τʼ(Pt) ἐμμένει(Prä)(Akt) πιστώμασι(D).
+(977) [Ὀρέστης:] is|present, oath and abides in|pledges.
+(978) [Ὀρέστης:] ξυνώμοσαν(Aor)(Akt) μὲν(Pt) θάνατον(A) ἀθλίῳ(Adj)(D) πατρὶ(D)
+(978) [Ὀρέστης:] swore|together indeed death to|wretched father
+(979) [Ὀρέστης:] καὶ(Kon) ξυνθανεῖσθαι(AorS)(Inf)(M/P)· καὶ(Kon) τάδʼ(Pr)(N) εὐόρκως(Adv) ἔχει(Prä)(Akt).
+(979) [Ὀρέστης:] and to|die|with· and these well|sworn stand.
+(980) [Ὀρέστης:] ἴδεσθε(AorS)(Akt)(Imv) δʼ(Pt) αὖτε(Adv), τῶνδʼ(Pr)(G) ἐπήκοοι(Adj)(N) κακῶν(G),
+(980) [Ὀρέστης:] see but again, of|these listening of|evils,
+(981) [Ὀρέστης:] τὸ(Art)(N) μηχάνημα(N), δεσμὸν(A) ἀθλίῳ(Adj)(D) πατρί(D),
+(981) [Ὀρέστης:] the device, bond to|wretched father,
+(982) [Ὀρέστης:] πέδας(A) τε(Pt) χειροῖν(Du)(D) καὶ(Kon) ποδοῖν(Du)(D) ξυνωρίδα(A).
+(982) [Ὀρέστης:] fetters and of|two|hands and of|two|feet pair.
+(983) [Ὀρέστης:] ἐκτείνατʼ(Aor)(Akt)(Imv) αὐτὸ(Pr)(A) καὶ(Kon) κύκλῳ(D) παρασταδὸν(Adv)
+(983) [Ὀρέστης:] stretch|out it and in|a|circle side|by|side
+(984) [Ὀρέστης:] στέγαστρον(A) ἀνδρὸς(G) δείξαθʼ(Aor)(M/P)(Imv), ὡς(Kon) ἴδῃ(Aor)(Akt)(Knj) πατήρ(N),
+(984) [Ὀρέστης:] covering of|man show, so|that may|see father,
+(985) [Ὀρέστης:] οὐχ(Pt) οὑμός(Pr)(N), ἀλλʼ(Kon) ὁ(Art)(N) πάντʼ(Adj)(A) ἐποπτεύων(Prä)(Akt)(N) τάδε(Pr)(A)
+(985) [Ὀρέστης:] not my|own, but the all overseeing these
+(986) [Ὀρέστης:] Ἥλιος(N), ἄναγνα(Adj)(A) μητρὸς(G) ἔργα(A) τῆς(Art)(G) ἐμῆς(Adj)(G),
+(986) [Ὀρέστης:] Sun, unholy works of|mother the my,
+(987) [Ὀρέστης:] ὡς(Kon) ἂν(Pt) παρῇ(Aor)(Akt)(Knj) μοι(Pr)(D) μάρτυς(N) ἐν(Prp) δίκῃ(D) ποτέ(Adv),
+(987) [Ὀρέστης:] so|that at|least may|be|present to|me witness in trial sometime,
+(988) [Ὀρέστης:] ὡς(Kon) τόνδʼ(Pr)(A) ἐγὼ(Pr)(N) μετῆλθον(AorS)(Akt) ἐνδίκως(Adv) μόρον(A)
+(988) [Ὀρέστης:] that this I pursued justly doom
+(989) [Ὀρέστης:] τὸν(Art)(A) μητρός(G)· Αἰγίσθου(G) γὰρ(Pt) οὐ(Pt) λέγω(Prä)(Akt) μόρον(A)·
+(989) [Ὀρέστης:] the of|mother· of|Aegisthus for not I|say doom·
+(990) [Ὀρέστης:] ἔχει(Prä)(Akt) γὰρ(Pt) αἰσχυντῆρος(G), ὡς(Kon) νόμος(N), δίκην(A)·
+(990) [Ὀρέστης:] has for of|shame|doer, as custom|law, penalty·
+(991) [Ὀρέστης:] ἥτις(Pr)(N) δʼ(Pt) ἐπʼ(Prp) ἀνδρὶ(D) τοῦτʼ(Pr)(A) ἐμήσατο(Aor)(M/P) στύγος(A),
+(991) [Ὀρέστης:] whoever but upon man this contrived hatred,
+(992) [Ὀρέστης:] ἐξ(Prp) οὗ(Pr)(G) τέκνων(G) ἤνεγχʼ(AorS)(Akt) ὑπὸ(Prp) ζώνην(A) βάρος(A),
+(992) [Ὀρέστης:] since when of|children bore under belt weight,
+(993) [Ὀρέστης:] φίλον(Adj)(A) τέως(Adv), νῦν(Adv) δʼ(Pt) ἐχθρόν(Adj)(A), ὡς(Kon) φαίνει(Prä)(Akt), κακόν(Adj)(A),
+(993) [Ὀρέστης:] dear for|the|present, now but hostile, as it|shows, evil,
+(994) [Ὀρέστης:] τί(Adv) σοι(Pr)(D) δοκεῖ(Prä)(Akt); μύραινά(N) γʼ(Pt) εἴτʼ(Kon) ἔχιδνʼ(N) ἔφυ(Aor)(Akt)
+(994) [Ὀρέστης:] what to|you seems; moray at|least either viper became
+(995) [Ὀρέστης:] σήπειν(Prä)(Inf)(Akt) θιγοῦσʼ(Aor)(Akt)(N) ἂν(Pt) ἄλλον(Adj)(A) οὐ(Pt) δεδηγμένον(Per)(M/P)(A)
+(995) [Ὀρέστης:] to|rot touching would another not having|been|bitten
+(996) [Ὀρέστης:] τόλμης(G) ἕκατι(Prp) κἀκδίκου(Kon)(Adj)(G) φρονήματος(G).
+(996) [Ὀρέστης:] of|daring on|account|of and|unjust of|mind.
+(997) [Ὀρέστης:] τί(Adv) νιν(Pr)(A) προσείπω(Prä)(Akt), κἂν(Kon)(Pt) τύχω(AorS)(Akt)(Knj) μάλʼ(Adv) εὐστομῶν(Prä)(Akt)(N);
+(997) [Ὀρέστης:] what him do|I|address, and|if I|may|happen very speaking|well;
+(998) [Ὀρέστης:] ἄγρευμα(N) θηρός(G), ἢ(Kon) νεκροῦ(G) ποδένδυτον(Adj)(N)
+(998) [Ὀρέστης:] a|catch of|beast, or of|corpse foot|garmented
+(999) [Ὀρέστης:] δροίτης(G) κατασκήνωμα(N); δίκτυον(A) μὲν(Pt) οὖν(Pt),
+(999) [Ὀρέστης:] of|runner lair; net indeed now,
+(1000) [Ὀρέστης:] ἄρκυν(A) τʼ(Pt) ἂν(Pt) εἴποις(Aor)(Akt)(Op) καὶ(Kon) ποδιστῆρας(Adj)(A) πέπλους(A).
+(1000) [Ὀρέστης:] a|snare and at|least you|might|say also foot|trapping robes.
+(1001) [Ὀρέστης:] τοιοῦτον(Adj)(A) ἂν(Pt) κτήσαιτο(Aor)(Med)(Op) φηλήτης(N) ἀνήρ(N),
+(1001) [Ὀρέστης:] such at|least might|acquire deceiver man,
+(1002) [Ὀρέστης:] ξένων(G) ἀπαιόλημα(A) κἀργυροστερῆ(Kon)(Adj)(A)
+(1002) [Ὀρέστης:] of|strangers spoil and|silver|lacking
+(1003) [Ὀρέστης:] βίον(A) νομίζων(Prä)(Akt)(N), τῷδέ(Pr)(D) τʼ(Pt) ἂν(Pt) δολώματι(D)
+(1003) [Ὀρέστης:] life thinking, with|this and at|least bait
+(1004) [Ὀρέστης:] πολλοὺς(Adj)(A) ἀναιρῶν(Prä)(Akt)(N) πολλὰ(Adj)(A) θερμαίνοι(Prä)(Akt)(Op) φρένα(A).
+(1004) [Ὀρέστης:] many killing many would|warm mind.
+(1005) [Ὀρέστης:] τοιάδʼ(Adj)(N) ἐμοὶ(Pr)(D) ξύνοικος(Adj)(N) ἐν(Prp) δόμοισι(D) μὴ(Pt)
+(1005) [Ὀρέστης:] such to|me house|mate in houses not
+(1006) [Ὀρέστης:] γένοιτʼ(Aor)(Med)(Op)· ὀλοίμην(Aor)(Med)(Op) πρόσθεν(Adv) ἐκ(Prp) θεῶν(G) ἄπαις(Adj)(N).
+(1006) [Ὀρέστης:] might|be· I|might|perish before out|of of|gods childless.
+== Anapäste ==
+(1007) [Χορός:] αἰαῖ(ij) αἰαῖ(ij) μελέων(Adj)(G) ἔργων(G)·
+(1007) [Χορός:] alas alas of|wretched of|works·
+(1008) [Χορός:] στυγερῷ(Adj)(D) θανάτῳ(D) διεπράχθης(Aor)(Pas).
+(1008) [Χορός:] by|hateful death you|were|dispatched.
+(1008b) [Χορός:] ἒ(ij) ἔ(ij),
+(1008b) [Χορός:] eh eh,
+(1009) [Χορός:] μίμνοντι(Prä)(Akt)(D) δὲ(Pt) καὶ(Kon) πάθος(N) ἀνθεῖ(Prä)(Akt).
+(1009) [Χορός:] to|one|remaining but and suffering blooms.
+(1010) [Ὀρέστης:] ἔδρασεν(Aor)(Akt) ἢ(Kon) οὐκ(Pt) ἔδρασε(Aor)(Akt); μαρτυρεῖ(Prä)(Akt) δέ(Pt) μοι(Pr)(D)
+(1010) [Ὀρέστης:] did or not did; bears|witness but to|me
+(1011) [Ὀρέστης:] φᾶρος(N) τόδʼ(Pr)(N), ὡς(Kon) ἔβαψεν(Aor)(Akt) Αἰγίσθου(G) ξίφος(N).
+(1011) [Ὀρέστης:] robe this, as he|stained of|Aegisthus sword.
+(1012) [Ὀρέστης:] φόνου(G) δὲ(Pt) κηκὶς(N) ξὺν(Prp) χρόνῳ(D) ξυμβάλλεται(Prä)(M/P),
+(1012) [Ὀρέστης:] of|murder but scab with time is|brought|together,
+(1013) [Ὀρέστης:] πολλὰς(Adj)(A) βαφὰς(A) φθείρουσα(Prä)(Akt)(N) τοῦ(Art)(G) ποικίλματος(G).
+(1013) [Ὀρέστης:] many stains destroying the of|embroidery.
+(1014) [Ὀρέστης:] νῦν(Adv) αὐτὸν(Pr)(A) αἰνῶ(Prä)(Akt), νῦν(Adv) ἀποιμώζω(Prä)(Akt) παρών(Prä)(Akt)(N),
+(1014) [Ὀρέστης:] now him I|praise, now I|lament being|present,
+(1015) [Ὀρέστης:] πατροκτόνον(Adj)(A) θʼ(Pt) ὕφασμα(A) προσφωνῶν(Prä)(Akt)(N) τόδε(Pr)(A).
+(1015) [Ὀρέστης:] father|killing and weaving addressing this.
+(1016) [Ὀρέστης:] ἀλγῶ(Prä)(Akt) μὲν(Pt) ἔργα(A) καὶ(Kon) πάθος(A) γένος(A) τε(Pt) πᾶν(Adj)(A),
+(1016) [Ὀρέστης:] I|grieve indeed deeds and suffering race and all,
+(1017) [Ὀρέστης:] ἄζηλα(Adj)(A) νίκης(G) τῆσδʼ(Pr)(G) ἔχων(Prä)(Akt)(N) μιάσματα(A).
+(1017) [Ὀρέστης:] unenviable of|victory this having pollutions.
+== Anapäste ==
+(1018) [Χορός:] οὔτις(Pr)(N) μερόπων(G) ἀσινὴς(Adj)(N) βίοτον(A)
+(1018) [Χορός:] no|one of|mortals unharmed life
+(1019) [Χορός:] διὰ(Prp) παντὸς(Pr)(G) ἀπήμονʼ(Adj)(A) ἀμείψει(Fu)(Akt).
+(1019) [Χορός:] through of|all unharmed will|pass.
+(1020) [Χορός:] ἒ(ij) ἔ(ij),
+(1020) [Χορός:] eh eh,
+(1020b) [Χορός:] μόχθος(N) δʼ(Pt) ὁ(Art)(N) μὲν(Pt) αὐτίχʼ(Adv), ὁ(Art)(N) δʼ(Pt) ἥξει(Fu)(Akt).
+(1020b) [Χορός:] toil but the indeed at|once, the but will|come.
+(1021) [Ὀρέστης:] ἀλλʼ(Kon), ὡς(Kon) ἂν(Pt) εἰδῆτʼ(Aor)(Akt)(Knj), οὐ(Pt) γὰρ(Pt) οἶδʼ(Per)(Akt) ὅπη(Adv) τελεῖ(Prä)(Akt),
+(1021) [Ὀρέστης:] but, so|that at|least you|may|know, not for I|know where it|ends,
+(1022) [Ὀρέστης:] ὥσπερ(Kon) ξὺν(Prp) ἵπποις(D) ἡνιοστροφῶ(Prä)(Akt) δρόμου(G)
+(1022) [Ὀρέστης:] just|as with horses I|rein|turn of|course
+(1023) [Ὀρέστης:] ἐξωτέρω(Adv)(Kmp)· φέρουσι(Prä)(Akt) γὰρ(Pt) νικώμενον(Prä)(M/P)(A)
+(1023) [Ὀρέστης:] further|out· carry for being|defeated
+(1024) [Ὀρέστης:] φρένες(N) δύσαρκτοι(Adj)(N)· πρὸς(Prp) δὲ(Pt) καρδίᾳ(D) φόβος(N)
+(1024) [Ὀρέστης:] minds hard|to|yoke· toward but to|heart fear
+(1025) [Ὀρέστης:] ᾄδειν(Prä)(Inf)(Akt) ἕτοιμος(Adj)(N) ἠδʼ(Kon) ὑπορχεῖσθαι(Prä)(Inf)(M/P) κότῳ(D).
+(1025) [Ὀρέστης:] to|sing ready and to|dance with|wrath.
+(1026) [Ὀρέστης:] ἕως(Kon) δʼ(Pt) ἔτʼ(Adv) ἔμφρων(Adj)(N) εἰμί(Prä)(Akt), κηρύσσω(Prä)(Akt) φίλοις(D)
+(1026) [Ὀρέστης:] as|long|as but still in|mind I|am, I|proclaim to|friends
+(1027) [Ὀρέστης:] κτανεῖν(Aor)(Inf)(Akt) τέ(Pt) φημι(Prä)(Akt) μητέρʼ(A) οὐκ(Pt) ἄνευ(Prp) δίκης(G),
+(1027) [Ὀρέστης:] to|kill and I|say mother not without of|justice,
+(1028) [Ὀρέστης:] πατροκτόνον(Adj)(A) μίασμα(A) καὶ(Kon) θεῶν(G) στύγος(A).
+(1028) [Ὀρέστης:] parricidal pollution and of|gods abomination.
+(1029) [Ὀρέστης:] καὶ(Kon) φίλτρα(A) τόλμης(G) τῆσδε(Pr)(G) πλειστηρίζομαι(Prä)(M/P)
+(1029) [Ὀρέστης:] and love|charms of|daring this I|pledge|myself
+(1030) [Ὀρέστης:] τὸν(Art)(A) πυθόμαντιν(Adj)(A) Λοξίαν(A), χρήσαντʼ(Aor)(Akt)(A) ἐμοὶ(Pr)(D)
+(1030) [Ὀρέστης:] the Pytho|seer Loxias, having|oracled to|me
+(1031) [Ὀρέστης:] πράξαντι(Aor)(Akt)(D) μὲν(Pt) ταῦτʼ(Pr)(A) ἐκτὸς(Adv) αἰτίας(G) κακῆς(Adj)(G)
+(1031) [Ὀρέστης:] to|one|having|done indeed these outside of|blame evil
+(1032) [Ὀρέστης:] εἶναι(Prä)(Inf)(Akt), παρέντα(Aor)(Akt)(A) δʼ(Pt)— οὐκ(Pt) ἐρῶ(Fu)(Akt) τὴν(Art)(A) ζημίαν(A)·
+(1032) [Ὀρέστης:] to|be, having|omitted but— not I|will|say the penalty·
+(1033) [Ὀρέστης:] τόξῳ(D) γὰρ(Pt) οὔτις(Pr)(N) πημάτων(G) ἐφίξεται(Fu)(M/P).
+(1033) [Ὀρέστης:] by|bow for no|one of|sufferings will|reach.
+(1034) [Ὀρέστης:] καὶ(Kon) νῦν(Adv) ὁρᾶτέ(Prä)(Akt)(Imv) μʼ(Pr)(A), ὡς(Kon) παρεσκευασμένος(Per)(M/P)(N)
+(1034) [Ὀρέστης:] and now see|you me, as having|been|prepared
+(1035) [Ὀρέστης:] ξὺν(Prp) τῷδε(Pr)(D) θαλλῷ(D) καὶ(Kon) στέφει(D) προσίξομαι(Fu)(M/P)
+(1035) [Ὀρέστης:] with this branch and wreath I|shall|approach
+(1036) [Ὀρέστης:] μεσόμφαλόν(Adj)(A) θʼ(Pt) ἵδρυμα(A), Λοξίου(G) πέδον(A),
+(1036) [Ὀρέστης:] mid|navel and shrine, of|Loxias ground,
+(1037) [Ὀρέστης:] πυρός(G) τε(Pt) φέγγος(N) ἄφθιτον(Adj)(N) κεκλημένον(Per)(M/P)(A),
+(1037) [Ὀρέστης:] of|fire and light unfailing having|been|called,
+(1038) [Ὀρέστης:] φεύγων(Prä)(Akt)(N) τόδʼ(Pr)(A) αἷμα(A) κοινόν(Adj)(A)· οὐδʼ(Kon)(Pt) ἐφʼ(Prp) ἑστίαν(A)
+(1038) [Ὀρέστης:] fleeing this blood common· and|not upon hearth
+(1039) [Ὀρέστης:] ἄλλην(Adj)(A) τραπέσθαι(Aor)(Med)(Inf) Λοξίας(N) ἐφίετο(Imp)(M/P).
+(1039) [Ὀρέστης:] other to|turn|oneself Loxias was|desiring.
+(1040) [Ὀρέστης:] τάδʼ(Pr)(A) ἐν(Prp) χρόνῳ(D) μοι(Pr)(D) πάντας(Adj)(A) Ἀργείους(A) λέγω(Prä)(Akt)·
+(1040) [Ὀρέστης:] these in time to|me all Argives I|say·
+(1041) [Ὀρέστης:] καὶ(Kon) μαρτυρεῖν(Prä)(Inf)(Akt) μὲν(Pt) ὡς(Kon) ἐπορσύνθη(Aor)(Pas) κακὰ(Adj)(A)
+(1041) [Ὀρέστης:] and to|bear|witness indeed that was|brought|about evils
+(1042) [Ὀρέστης:] ἐγὼ(Pr)(N) δʼ(Pt) ἀλήτης(N) τῆσδε(Pr)(G) γῆς(G) ἀπόξενος(Adj)(N),
+(1042) [Ὀρέστης:] I but wanderer of|this of|land out|stranger,
+(1043) [Ὀρέστης:] ζῶν(Prä)(Akt)(N) καὶ(Kon) τεθνηκὼς(Per)(Akt)(N) τάσδε(Pr)(A) κληδόνας(A) λιπών(Aor)(Akt)(N).
+(1043) [Ὀρέστης:] living and having|died these tidings leaving.
+(1044) [Χορός:] ἀλλʼ(Kon) εὖ(Adv) γʼ(Pt) ἔπραξας(Aor)(Akt), μηδʼ(Kon)(Pt) ἐπιζευχθῇς(Aor)(Pas)(Knj) στόμα(A)
+(1044) [Χορός:] but well at|least you|did, and|not you|may|be|yoked mouth
+(1045) [Χορός:] φήμῃ(D) πονηρᾷ(Adj)(D) μηδʼ(Kon)(Pt) ἐπιγλωσσῶ(Prä)(Akt)(Knj) κακά(Adj)(A),
+(1045) [Χορός:] with|report wicked and|not you|may|blame evils,
+(1046) [Χορός:] ἐλευθερώσας(Aor)(Akt)(N) πᾶσαν(Adj)(A) Ἀργείων(G) πόλιν(A),
+(1046) [Χορός:] having|freed all of|Argives city,
+(1047) [Χορός:] δυοῖν(Adj)(Du)(D) δρακόντοιν(Du)(G) εὐπετῶς(Adv) τεμὼν(Aor)(Akt)(N) κάρα(A).
+(1047) [Χορός:] of|two of|serpents easily having|cut head.
+(1048) [Ὀρέστης:] ἆ(ij), ἆ(ij).
+(1048) [Ὀρέστης:] ah, ah.
+(1048b) [Ὀρέστης:] δμωαὶ(N) γυναῖκες(N), αἵδε(Pr)(N) Γοργόνων(G) δίκην(A)
+(1048b) [Ὀρέστης:] slave|women women, these of|Gorgons fashion
+(1049) [Ὀρέστης:] φαιοχίτωνες(Adj)(N) καὶ(Kon) πεπλεκτανημέναι(Per)(M/P)(N)
+(1049) [Ὀρέστης:] dusky|robed and having|been|braided
+(1050) [Ὀρέστης:] πυκνοῖς(Adj)(D) δράκουσιν(D)· οὐκέτʼ(Adv) ἂν(Pt) μείναιμʼ(Aor)(Akt)(Op) ἐγώ(Pr)(N).
+(1050) [Ὀρέστης:] thick snakes· no|longer at|least I|might|remain I.
+(1051) [Χορός:] τίνες(Pr)(N) σε(Pr)(A) δόξαι(N), φίλτατʼ(Adj)(V) ἀνθρώπων(G) πατρί(D),
+(1051) [Χορός:] what visions you, dearest of|men to|father,
+(1052) [Χορός:] στροβοῦσιν(Prä)(Akt); ἴσχε(Prä)(Akt)(Imv), μὴ(Pt) φόβου(G) νικῶ(Prä)(Akt) πολύ(Adv).
+(1052) [Χορός:] they|whirl; hold|back, not of|fear you|are|defeated much.
+(1053) [Ὀρέστης:] οὐκ(Pt) εἰσὶ(Prä)(Akt) δόξαι(N) τῶνδε(Pr)(G) πημάτων(G) ἐμοί(Pr)(D)·
+(1053) [Ὀρέστης:] not are visions of|these of|sufferings to|me·
+(1054) [Ὀρέστης:] σαφῶς(Adv) γὰρ(Pt) αἵδε(Pr)(N) μητρὸς(G) ἔγκοτοι(Adj)(N) κύνες(N).
+(1054) [Ὀρέστης:] clearly for these of|mother spiteful dogs.
+(1055) [Χορός:] ποταίνιον(Adj)(N) γὰρ(Pt) αἷμά(A) σοι(Pr)(D) χεροῖν(Du)(D) ἔτι(Adv)·
+(1055) [Χορός:] fresh for blood to|you of|two|hands still·
+(1056) [Χορός:] ἐκ(Prp) τῶνδέ(Pr)(G) τοι(Pt) ταραγμὸς(N) ἐς(Prp) φρένας(A) πίτνει(Prä)(Akt).
+(1056) [Χορός:] from of|these indeed disturbance into minds falls.
+(1057) [Ὀρέστης:] ἄναξ(V) Ἄπολλον(V), αἵδε(Pr)(N) πληθύουσι(Prä)(Akt) δή(Pt),
+(1057) [Ὀρέστης:] lord Apollo, these are|multiplying indeed,
+(1058) [Ὀρέστης:] κἀξ(Kon)(Prp) ὀμμάτων(G) στάζουσιν(Prä)(Akt) αἷμα(A) δυσφιλές(Adj)(A).
+(1058) [Ὀρέστης:] and|out|of of|eyes they|drip blood hateful.
+(1059) [Χορός:] εἷς(Adj)(N) σοὶ(Pr)(D) καθαρμός(N)· Λοξίας(N) δὲ(Pt) προσθιγὼν(Aor)(Akt)(N)
+(1059) [Χορός:] one to|you cleansing· Loxias but having|touched
+(1060) [Χορός:] ἐλεύθερόν(Adj)(A) σε(Pr)(A) τῶνδε(Pr)(G) πημάτων(G) κτίσει(Fu)(Akt).
+(1060) [Χορός:] free you of|these of|sufferings will|make.
+(1061) [Ὀρέστης:] ὑμεῖς(Pr)(N) μὲν(Pt) οὐχ(Pt) ὁρᾶτε(Prä)(Akt) τάσδʼ(Pr)(A), ἐγὼ(Pr)(N) δʼ(Pt) ὁρῶ(Prä)(Akt)·
+(1061) [Ὀρέστης:] you indeed not you|see these|here, I but I|see·
+(1062) [Ὀρέστης:] ἐλαύνομαι(Prä)(M/P) δὲ(Pt) κοὐκέτʼ(Kon)(Adv) ἂν(Pt) μείναιμʼ(Aor)(Akt)(Op) ἐγὼ(Pr)(N).
+(1062) [Ὀρέστης:] I|am|driven but and|no|longer would stay I.
+(1063) [Χορός:] ἀλλʼ(Kon) εὐτυχοίης(Prä)(Akt)(Op), καί(Kon) σʼ(Pr)(A) ἐποπτεύων(Prä)(Akt)(N) πρόφρων(Adj)(N)
+(1063) [Χορός:] but may|you|be|fortunate, and you watching well|disposed
+(1064) [Χορός:] θεὸς(N) φυλάσσοι(Prä)(Akt)(Op) καιρίοισι(Adj)(D) συμφοραῖς(D).
+(1064) [Χορός:] god may|guard in|critical misfortunes.
+== Anapäste ==
+(1065) [Χορός:] ὅδε(Pr)(N) τοι(Pt) μελάθροις(D) τοῖς(Art)(D) βασιλείοις(Adj)(D)
+(1065) [Χορός:] this indeed in|halls the royal
+(1066) [Χορός:] τρίτος(Adj)(N) αὖ(Pt) χειμὼν(N)
+(1066) [Χορός:] third again winter
+(1067) [Χορός:] πνεύσας(Aor)(Akt)(N) γονίας(G) ἐτελέσθη(Aor)(Pas).
+(1067) [Χορός:] having|blown of|corners was|brought|to|an|end.
+(1068) [Χορός:] παιδοβόροι(Adj)(N) μὲν(Pt) πρῶτον(Adv) ὑπῆρξαν(Aor)(Akt)
+(1068) [Χορός:] child|eating indeed first they|began
+(1069) [Χορός:] μόχθοι(N) τάλανές(Adj)(N) τε(Pt) Θυέστου(G)·
+(1069) [Χορός:] toils wretched and of|Thyestes·
+(1070) [Χορός:] δεύτερον(Adv) ἀνδρὸς(G) βασίλεια(Adj)(A) πάθη(A)·
+(1070) [Χορός:] secondly of|man royal sufferings·
+(1071) [Χορός:] λουτροδάικτος(Adj)(N) δʼ(Pt) ὤλετʼ(AorS)(M/P) Ἀχαιῶν(G)
+(1071) [Χορός:] bath|slain but perished of|Achaeans
+(1072) [Χορός:] πολέμαρχος(N) ἀνήρ(N)·
+(1072) [Χορός:] war|leader man·
+(1073) [Χορός:] νῦν(Adv) δʼ(Pt) αὖ(Pt) τρίτος(Adj)(N) ἦλθέ(AorS)(Akt) ποθεν(Adv) σωτήρ(N),
+(1073) [Χορός:] now but again third came from|somewhere savior,
+(1074) [Χορός:] ἢ(Kon) μόρον(A) εἴπω(AorS)(Akt)(Knj);
+(1074) [Χορός:] or doom may|I|say;
+(1075) [Χορός:] ποῖ(Adv) δῆτα(Pt) κρανεῖ(Fu)(Akt), ποῖ(Adv) καταλήξει(Fu)(Akt)
+(1075) [Χορός:] whither indeed will|turn|out, whither will|end
+(1076) [Χορός:] μετακοιμισθὲν(Aor)(Pas)(N) μένος(N) ἄτης(G);
+(1076) [Χορός:] having|been|lulled|to|sleep might of|Ate;
