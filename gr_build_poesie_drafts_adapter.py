@@ -259,11 +259,25 @@ def run_one(input_path: Path) -> None:
                 if bare.startswith('temp_'):
                     bare = bare[5:]
                 
-                # Entferne den clean_base Präfix, behalte nur Suffix (z.B. "_Normal_Colour_Tag")
-                if bare.startswith(clean_base):
-                    suffix = bare[len(clean_base):]
+                # KRITISCH: Entferne clean_base Präfix, um nur Variant-Suffix zu bekommen
+                # bare ist jetzt z.B.: "agamemnon_gr_de_en_stil1_Versmass_birkenbihl_draft_translinear_DRAFT_20251129_232252_GR_Fett_BlackWhite_NoTags"
+                # clean_base ist: "agamemnon_gr_de_en_stil1_Versmass_birkenbihl"
+                # suffix soll sein: "_GR_Fett_BlackWhite_NoTags" (OHNE _draft_translinear_DRAFT_...)
+                
+                # Finde den Variant-Suffix (ab _Normal oder _GR_Fett oder _LAT_Fett)
+                import re
+                variant_match = re.search(r'_(Normal|GR_Fett|LAT_Fett)_', bare)
+                if variant_match:
+                    suffix = '_' + bare[variant_match.start()+1:]  # Ab dem Variant-Teil
                 else:
-                    suffix = '_' + bare
+                    # Fallback: Verwende alles nach clean_base
+                    if bare.startswith(clean_base):
+                        remainder = bare[len(clean_base):]
+                        # Entferne _draft_translinear_DRAFT_... Teil
+                        remainder = re.sub(r'_draft_translinear_DRAFT_\d{8}_\d{6}', '', remainder)
+                        suffix = remainder
+                    else:
+                        suffix = '_' + bare
                 
                 # FINALE LÖSUNG: Verwende Pfad-Prefix (wenn vorhanden) + ORIGINAL Upload-Filename + Variant-Suffix
                 # Der input_stem enthält den ORIGINAL Upload-Namen inkl. DRAFT_TIMESTAMP

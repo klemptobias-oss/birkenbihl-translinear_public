@@ -221,14 +221,24 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     
     for name in relevant_pdfs:
         bare = name[:-4] if name.lower().endswith(".pdf") else name
-        suffix = ""
-        temp_prefix = f"temp_{input_stem}"
-        if bare.startswith(temp_prefix):
-            suffix = bare[len(temp_prefix):]
-        elif bare.startswith(input_stem):
-            suffix = bare[len(input_stem):]
+        
+        # KRITISCH: Extrahiere nur den Variant-Suffix (ab _Normal oder _GR_Fett oder _LAT_Fett)
+        # Das PDF heißt z.B.: "temp_epistulaemorales1_lat_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_023827_LAT_Fett_BlackWhite_NoTags"
+        # Wir wollen nur: "_LAT_Fett_BlackWhite_NoTags"
+        
+        import re
+        variant_match = re.search(r'_(Normal|GR_Fett|LAT_Fett)_', bare)
+        if variant_match:
+            suffix = '_' + bare[variant_match.start()+1:]  # Ab dem Variant-Teil
         else:
-            suffix = bare
+            # Fallback: Alte Logik
+            temp_prefix = f"temp_{input_stem}"
+            if bare.startswith(temp_prefix):
+                suffix = bare[len(temp_prefix):]
+            elif bare.startswith(input_stem):
+                suffix = bare[len(input_stem):]
+            else:
+                suffix = bare
         
         # FINALE LÖSUNG: Verwende Pfad-Prefix (wenn vorhanden) + Upload-Filename + Variant-Suffix
         if path_prefix:
