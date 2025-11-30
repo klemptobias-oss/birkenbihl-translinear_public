@@ -2036,10 +2036,20 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 continue
             added_keys.add(key)
             
-            # Optional: Zeige den Bereich in [ECKIGEN KLAMMERN] (z.B. [2-4])
+            # Optional: Zeige den Bereich in [ECKIGEN KLAMMERN] (z.B. [2-4] oder [8k])
+            # Unterstütze verschiedene Formate:
+            # 1. pair_range: dict mit start/end
+            # 2. line_num: direkt aus dem Kommentar-Block (von discover_and_attach_comments)
+            # 3. start/end: explizite Felder
             rng = cm.get('pair_range') if isinstance(cm, dict) else None
+            line_num = cm.get('line_num') if isinstance(cm, dict) else None
+            
             if rng:
                 display = f"[{rng[0]}-{rng[1]}] {txt}"
+            elif line_num:
+                # Kommentar hat line_num (z.B. "123" oder "255-266" oder "8k")
+                # Zeige es in eckigen Klammern
+                display = f"[{line_num}] {txt}"
             elif isinstance(cm, dict) and cm.get('start') and cm.get('end'):
                 display = f"[{cm.get('start')}-{cm.get('end')}] {txt}"
             else:
@@ -2061,7 +2071,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     spaceBefore=0, spaceAfter=0,
                     textColor=colors.Color(0.3, 0.3, 0.3), italic=True,
                     splitLongWords=True,  # KRITISCH: Erlaube Wortumbrüche
-                    wordWrap='LTR')  # WICHTIG: Aktiviere Word-Wrapping
+                    wordWrap='CJK',  # KRITISCH: CJK ermöglicht Umbrüche überall (nicht nur an Spaces)
+                    allowWidows=True, allowOrphans=True)  # KRITISCH: Erlaube Umbrüche über Seiten
                 
                 # Prüfe ob Kommentar lang ist (>175 Wörter) für Page-Breaking
                 word_count = len(text_clean.split())
@@ -2116,6 +2127,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),  # 0.3cm unten
                     ('VALIGN', (0, 0), (-1, -1), 'TOP'),
                 ]))
+                
+                # KRITISCH: Setze canSplit=True, damit Table über Seiten umbrechen kann!
+                comment_table.canSplit = True
                 
                 # ALLE Kommentare ohne KeepTogether hinzufügen
                 # (Table kann über Seiten umbrechen, wenn Inhalt zu lang)
