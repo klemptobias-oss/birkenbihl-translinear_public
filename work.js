@@ -2596,37 +2596,55 @@ async function loadWorkMeta() {
       )}/${filenameBase}_birkenbihl.txt`;
       birkenbihlDownload.addEventListener("click", (e) => {
         e.preventDefault();
-        
+
         // Extrahiere Sprach-Infos aus dem originalen Dateinamen
         // z.B. "werkeundtage_gr_de_en_stil1_Versmass_birkenbihl.txt"
         const author = state.author || "";
         const work = state.work || "";
-        
+
         // Erkenne Sprach-Kombination aus filenameBase
         let langSuffix = "";
-        if (filenameBase.includes("_gr_de_en_") || filenameBase.includes("_gr_de_en")) {
+        if (
+          filenameBase.includes("_gr_de_en_") ||
+          filenameBase.includes("_gr_de_en")
+        ) {
           langSuffix = "_gr_de_en";
-        } else if (filenameBase.includes("_lat_de_en_") || filenameBase.includes("_lat_de_en")) {
+        } else if (
+          filenameBase.includes("_lat_de_en_") ||
+          filenameBase.includes("_lat_de_en")
+        ) {
           langSuffix = "_lat_de_en";
-        } else if (filenameBase.includes("_gr_de_") || filenameBase.includes("_gr_de")) {
+        } else if (
+          filenameBase.includes("_gr_de_") ||
+          filenameBase.includes("_gr_de")
+        ) {
           langSuffix = "_gr_de";
-        } else if (filenameBase.includes("_gr_en_") || filenameBase.includes("_gr_en")) {
+        } else if (
+          filenameBase.includes("_gr_en_") ||
+          filenameBase.includes("_gr_en")
+        ) {
           langSuffix = "_gr_en";
-        } else if (filenameBase.includes("_lat_de_") || filenameBase.includes("_lat_de")) {
+        } else if (
+          filenameBase.includes("_lat_de_") ||
+          filenameBase.includes("_lat_de")
+        ) {
           langSuffix = "_lat_de";
-        } else if (filenameBase.includes("_lat_en_") || filenameBase.includes("_lat_en")) {
+        } else if (
+          filenameBase.includes("_lat_en_") ||
+          filenameBase.includes("_lat_en")
+        ) {
           langSuffix = "_lat_en";
         }
-        
+
         // Erkenne Versmaß aus filenameBase
         let versmassSuffix = "";
         if (filenameBase.match(/_[Vv]ersm[aä][sß]{1,2}/)) {
           versmassSuffix = "_Versmass";
         }
-        
+
         // Baue schönen Dateinamen: Autor_Werk_Sprache_[Versmass]_translinear.txt
         const filename = `${author}_${work}${langSuffix}${versmassSuffix}_translinear.txt`;
-        
+
         const a = document.createElement("a");
         a.href = birkenbihlUrl;
         a.download = filename;
@@ -2663,10 +2681,14 @@ async function loadWorkMeta() {
         if (state.languages === 3) {
           langs += "_en";
         }
-        
+
         // Versmaß-Suffix hinzufügen, wenn auf Versmaß-Werkseite
         let versmassSuffix = "";
-        if (state.meterSupported && filenameBase && filenameBase.match(/_[Vv]ersm[aä][sß]{1,2}/)) {
+        if (
+          state.meterSupported &&
+          filenameBase &&
+          filenameBase.match(/_[Vv]ersm[aä][sß]{1,2}/)
+        ) {
           versmassSuffix = "_Versmass";
         }
 

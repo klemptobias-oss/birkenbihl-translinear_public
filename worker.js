@@ -123,19 +123,22 @@ export default {
         if (file.toLowerCase().endsWith(".pdf")) {
           // Ziel: Von "GR_poesie_Drama_Euripides_Kyklops__Euripides_Kyklops_gr_de_translinear_SESSION_xxx_DRAFT_date_time_Normal_BlackWhite_NoTags.pdf"
           //       Zu: "Euripides_Kyklops_gr_de_translinear_Normal_BlackWhite_NoTags.pdf"
-          
+
           // Schritt 1: Entferne Sprach/Gattungs/Kategorie-Präfix (GR_poesie_Drama_, LAT_prosa_Historie_, etc.)
           baseName = baseName.replace(/^(GR|LAT)_(poesie|prosa)_[^_]+_/i, "");
-          
+
           // Schritt 2: Entferne doppelte Autor_Werk-Wiederholung (Autor_Werk__Autor_Werk → Autor_Werk)
           baseName = baseName.replace(/([^_]+_[^_]+)__\1/g, "$1");
-          
+
           // Schritt 3: Entferne SESSION und DRAFT Timestamps
-          baseName = baseName.replace(/_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi, "_translinear");
-          
+          baseName = baseName.replace(
+            /_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi,
+            "_translinear"
+          );
+
           // Schritt 4: Entferne übriggebliebene doppelte Unterstriche
           baseName = baseName.replace(/__+/g, "_");
-          
+
           // Schritt 5: Entferne temp_ Prefix (falls vorhanden)
           baseName = baseName.replace(/^temp_/gi, "");
         }
@@ -269,20 +272,26 @@ export default {
       if (mode === "attachment" && lowerFile.endsWith(".pdf")) {
         // Ziel: Von "GR_poesie_Drama_Euripides_Kyklops__Euripides_Kyklops_gr_de_translinear_SESSION_xxx_DRAFT_date_time_Normal_BlackWhite_NoTags.pdf"
         //       Zu: "Euripides_Kyklops_gr_de_translinear_Normal_BlackWhite_NoTags.pdf"
-        
+
         // Schritt 1: Entferne Sprach/Gattungs/Kategorie-Präfix (GR_poesie_Drama_, LAT_prosa_Historie_, etc.)
-        desiredName = finalFileName.replace(/^(GR|LAT)_(poesie|prosa)_[^_]+_/i, "");
-        
+        desiredName = finalFileName.replace(
+          /^(GR|LAT)_(poesie|prosa)_[^_]+_/i,
+          ""
+        );
+
         // Schritt 2: Entferne doppelte Autor_Werk-Wiederholung (Autor_Werk__Autor_Werk → Autor_Werk)
         // Beispiel: "Euripides_Kyklops__Euripides_Kyklops" → "Euripides_Kyklops"
         desiredName = desiredName.replace(/([^_]+_[^_]+)__\1/g, "$1");
-        
+
         // Schritt 3: Entferne SESSION und DRAFT Timestamps
-        desiredName = desiredName.replace(/_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi, "_translinear");
-        
+        desiredName = desiredName.replace(
+          /_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi,
+          "_translinear"
+        );
+
         // Schritt 4: Entferne übriggebliebene doppelte Unterstriche
         desiredName = desiredName.replace(/__+/g, "_");
-        
+
         // Schritt 5: Entferne temp_ Prefix (falls vorhanden)
         desiredName = desiredName.replace(/^temp_/gi, "");
       }
