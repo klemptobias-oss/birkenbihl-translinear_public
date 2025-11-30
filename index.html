@@ -363,7 +363,8 @@
             gibt es aktuell optional noch eine metrische
             Darstellung (Versmaß-Darstellung). Der PDF-Builder gibt, über die passive Möglichkeit des herunterladens hinaus, die Möglichkeit PDFs aus
             der Translinear-Text-Vorlage heraus zu erstellen und damit z.B. KI-Fehler zu 
-            verbessern, oder anderweitig diverse verschiedene individualisierte Darstellungen zu erzeugen.
+            verbessern, oder anderweitig diverse verschiedene individualisierte Darstellungen zu erzeugen. Am Schluss der Anleitung gibt es ein 
+            exemplarisches translinear.txt Dokument zum herunterladen, welches zur Erzeugung eines ungemein erhellenden translinear-PDF bemächtigt.
           </p>
 
           <h3>Inhalte und Kommentar</h3>
@@ -714,7 +715,9 @@
                 <strong>💡 Tipp:</strong> Es ist auch ohne Download möglich, den
                 Text direkt im Browserfenster zu bearbeiten. Aber beim
                 Herunterladen ist die Datei und ihre Änderungen "permanent", während Änderungen im
-                Browser verloren gehen können, wenn man die Seite verlässt. Außerdem ist es im Text-Editor viel flüssiger.
+                Browser verloren gehen können, wenn man die Seite verlässt. Außerdem ist es im Text-Editor viel flüssiger und im Browser können gewisse
+                Probleme auftreten. Für ein seriöses Unterfangen sei daher der Download und die sichere Speicherung und die lokale Bearbeitung sehr
+                empfohlen.
               </p>
               
               </li>
@@ -853,30 +856,24 @@
                 der <strong>Prosa Builder</strong> erzeugt stets einen Fließtext aus seinem translinear.txt, falls also Text fehlen sollte, könnte jede
                 beliebige Zeile endlos lange um den fehlenden Text erweitert (oder gekürzt) werden. Am Ende sollte stets ein durchgängiger Fließtext
                 entstehen. Der <strong>Poesie Builder</strong> wiederum behält 
-                stets die Originale Zeilenstruktur des translinear.txt bei (und somit bei Tragödien oder Hexameter die Originale Form). Es ist in
-                beiden Texten möglich (aber wie gesagt, nur bei Poesie nötig), falls Zeilen fehlen sollten, Insertionszeilen hinzuzufügen. Dazu ist
-                an die entsprechende Stelle im translinear.txt zu gehen, wo der vermeintliche Text fehlt und eine Insertionszeile einzufügen 
-                (irgendeine gewünschte Zeilennummer + "Insertionssuffix" i) zu setzen und mit dem Text zu bestücken. Beispiel:
-                
-(25) dētestāta(Per)(Pas)(A). Manet(Prä)(Akt) sub(Prp) Jove(Abl) frīgidō(Adj)(Abl)
-(25) verabscheute. bleibt unter Jupiter kalt
-(777i) μῆνιν(A) ἄειδε(Prä)(Akt)(Imv) θεὰ(V) Πηληϊάδεω(G) Ἀχιλῆος(G)
-(777i) Zorn sing Göttin des|Peleus|Sohnes des|Achilleus
-(26) vēnātor(N) tenerae(Adj)(G) conjugis(G) inmemor(Adj)(N),
-(26) Jäger zarten Gattin vergessend,
-
-
-(z.B. Zeile (25i) fügt eine
-                Zusätzliche Zeile ein mit der Zeilennummer (25i). Bei Prosa Texten wird die Zusatzzeile in den Fließtext eingebaut, bei Poesie 
-                Texten wird die Zeile normal hinzugefügt so wie sie im translinear.txt steht.
+                stets die Originale Zeilenstruktur des translinear.txt bei (und somit bei Tragödien oder Hexameter die "originale Form"). Es ist in
+                beiden Texten möglich (aber wie gesagt, bei Prosa eigentlich unnötig), falls Zeilen fehlen sollten, Insertionszeilen hinzuzufügen. Dazu
+                ist an die entsprechende Stelle im translinear.txt zu gehen, wo der vermeintliche Text fehlt und eine Insertionszeile einzufügen 
+                (Zeilennummer + "Insertionssuffix" i) zu setzen und mit dem vermissten Text zu befüllen (praktisches Beispiel am Schluss).
+                Es wird dann eine zusätzliche Zeile mit Zeilennummer z.B. (25i) in den Poesie Text eingefügt. Bei Poesie Texten wird die Zeile dort
+                hinzugefügt wo sie im translinear.txt platziert wurde. Bei Prosa Texten wird die Zusatzzeile in den Fließtext eingebaut (und ist daher
+                nicht nötig, da man die bestehenden Zeilen einfach erweitern kann).
               </p>
               
               <p style="margin-bottom: 10px">
                 <strong>• Zusatzfunktion Kommentare:</strong> Es ist möglich, Kommentare mit (Zeilennummer + "Kommentarsuffix" k) in den
                 translinear.txt einzufügen
-                (z.B. (8k) als Zeilennummer für "Stellenkommentar zur Zeile 8" oder (125-129k) für "Bereichskommentar für Zeilen 125-129"). Diese 
-                Kommentare bieten die Möglichkeit, Kontext zu geben oder den Text zu kommentieren und sie erscheinen stets grau hinterlegt in kleinerer
-                Schrift an der Stelle, in der sie auch im translinear.txt Dokument gesetzt sind.
+                (z.B. (8k) als Zeilennummer für "Stellenkommentar zur Zeile 8" oder (125-129k) für "Bereichskommentar für Zeilen 125-129"). Kommentare
+                erscheinen stets grau hinterlegt in kleinerer Schrift als Fließtext an genau der Stelle, an der sie im translinear.txt gesetzt werden
+                (Zur Setzung mehr im Beispiel-Translinear.txt). Sie bieten die Möglichkeit, im Dokument laufend Kontext zu geben
+                oder den Text zu kommentieren in welcher "Frequenz" und Ausführlichkeit auch immer (unter 300 Wörter pro Kommentar ist empfohlen, aber
+                alles ist möglich). Dadurch kann entweder gar kein Kommentar, ein sehr seltener, spezifischer, oder auch ein sehr ausführlicher
+                Kommentar geschrieben werden, der fast ein "Lesetext" ist. 
               </p>
 
               <p style="margin-bottom: 10px">
@@ -1357,8 +1354,8 @@
               </p>
 
               <p style="margin-bottom: 10px">
-                <strong>• Konflikte bei mehreren Tags:</strong> Bei Wörtern mit
-                mehreren Tags (wie Partizipe) können Konflikte auftauchen (z.B.
+                <strong>• Farb-Konflikte bei mehreren Tags:</strong> Bei Wörtern mit
+                mehreren Tags (wie Partizipe) können Farb-Konflikte auftauchen (z.B.
                 wenn man
                 <code
                   style="
@@ -1404,8 +1401,8 @@
                     border-radius: 3px;
                   "
                   >(Aor)</code
-                >-getaggten Verben. Dies ermöglicht z.B. auch Adverbien rot zu
-                färben, aber komparative und superlative Adverbien anders, da
+                >-getaggten Verben. Dies ermöglicht z.B. auch, Adverbien rot zu
+                färben, aber komparative und superlative Adverbien anders (grün), da
                 <code
                   style="
                     background: #f0f0f0;
@@ -1442,12 +1439,24 @@
                     border-radius: 3px;
                   "
                   >(Adv)</code
-                >-Farbe überschreiben.
+                >-Farbe überschreiben, falls sie denn zusammen mit
+                
+                 <code
+                  style="
+                    background: #f0f0f0;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                  "
+                  >(Adv)</code
+                >
+                
+                
+                vorkommen.
               </p>
                <strong>Übersetzung ausblenden:</strong> Ein Haken in der Tabelle bei <strong>Übersetzung ausblenden</strong> sorgt dafür, dass die
                Übersetzungszeilen für die 
                ausgewählten Wortgruppen unsichtbar werden. Diese Funktion ergänzt die manuelle, punktuelle Unsichtbarmachung, welche durch das Anfügen
-               von (HideTrans) an antike Wörter geschieht. Dies ermöglicht zusammen, dass z.B. Partikel, Pronomen, Artikel und andere "simplere" Dinge
+               von (HideTrans) an antike Wörter geschieht. Dies ermöglicht insgesamt, dass z.B. Partikel, Pronomen, Artikel und andere "simplere" Dinge
                großflächig
                ohne Übersetzung dargestellt werden, bei Dingen wie Verben oder Nomen aber individuell entschieden werden kann, ob die Übersetzung im
                Einzelfall darstehen soll oder nicht.
@@ -1490,7 +1499,7 @@
               </p>
 
               <p style="margin-bottom: 10px">
-                <strong>• Wartezeit:</strong> Nach ca. 2 Minuten sollten rechts
+                <strong>• Wartezeit:</strong> Nach ca. 1-2 Minuten sollten rechts
                 in der Werkseite im Fenster <strong>"PDF-Ansicht"</strong> die
                 PDFs aus dem Entwurf erscheinen. Dazu sollte man statt den Reiter <strong>original</strong> den Reiter <strong>Entwurf</strong>
                 anklicken, der auf die PDFs aus dem Entwurf verweist.
@@ -1512,11 +1521,26 @@
                 "
               >
                 <strong>⚠️ WICHTIG:</strong> Im Idealfall die PDFs
-                herunterladen, da sie sonst vermutlich verschwinden,
-                wenn man die Seite verlässt! Da der translinear.txt die Grundlage aller PDF Erzeugungen ist, den bearbeiteten translinear.txt
-                sicher abspeichern, um seine Änderungen nicht zu verlieren, falls man ihn noch einmal verändern möchte.
+                herunterladen, da sie nicht ewig dort verbleiben (sie sind aber stets neu erstellbar, wenn man weise mit seinem translinear.txt umging!
+                Da der translinear.txt die Grundlage aller PDF Erzeugungen ist, den bearbeiteten translinear.txt
+                sicher abspeichern (vor allem wenn man Arbeit hinein investiert hat), um seine Änderungen nicht zu verlieren, falls man ihn noch einmal
+                verändern möchte.
               </p>
             </li>
+            <h3>PDF aus Entwurf erzeugen: Funktionendemonstration</h3>
+               <p style="margin-bottom: 10px">
+                <strong>• Anleitung praktische Demonstration:</strong>Um die besprochenen Dinge angewandt (und über die Kommentarfunktion kommentiert)
+                zu betrachten, wird ein translinear.txt dokument zum
+                herunterladen angeboten. Es sollte damit in einen griechischen Posie Builder gegangen werden (am besten einfach Euripides Kyklops) und
+                das .txt Dokument dort über <strong>Entwurf.txt hochladen</strong> eingeladen werden. Dann sollte auf <strong>PDF aus Entwurf
+                erstellen</strong> geklickt werden und die PDFs mit <strong>PDFs erstellen</strong> erzeugt werden. Nach kurzer Zeit sollten die PDFs
+                erscheinen. Aus der Struktur des
+                translinear.txt und die Darstellung im finalen PDF können die besprochenen Funktionen sehr klar zum Ausdruck kommen und auch selber
+                angewandt werden. Der
+                Demonstrations-Translinear-Text kann (wie alle anderen Texte auch) auch weiter manipuliert werden um weitere Änderungen daran zu
+                betrachten und die Anwendung der Funktionen zu verstehen. Sehr interessant ist auch, die PDFs mit "Übersetzungen ausblenden" zu 
+                erstellen, wobei das "NoTrans" PDF erscheint. 
+              </p>
           </ul>
         </div>
       </div>
