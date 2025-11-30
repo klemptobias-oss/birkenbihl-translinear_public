@@ -123,6 +123,12 @@ export default {
           "Content-Disposition": disposition,
         };
 
+        // WICHTIG: Content-Length vom Upstream kopieren, damit Browser die Dateigröße kennt
+        const contentLength = upstream.headers.get("content-length");
+        if (contentLength) {
+          headers["Content-Length"] = contentLength;
+        }
+
         if (method === "HEAD") {
           return new Response(null, { status: 200, headers });
         }
@@ -213,6 +219,12 @@ export default {
         "Content-Type": contentType,
         "Cache-Control": "public, max-age=3600",
       });
+
+      // WICHTIG: Content-Length vom Upstream kopieren, damit Browser die Dateigröße kennt
+      const contentLength = upstream.headers.get("content-length");
+      if (contentLength) {
+        headers.set("Content-Length", contentLength);
+      }
 
       let desiredName = "";
       if (lowerFile.endsWith(".pdf")) {
