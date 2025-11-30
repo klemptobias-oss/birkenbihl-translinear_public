@@ -680,13 +680,13 @@ function buildDraftPdfFilename() {
     console.log("DEBUG buildDraftPdfFilename:");
     console.log("  - state.draftBase:", state.draftBase);
     console.log("  - state.pendingDraftFilename:", state.pendingDraftFilename);
-    
+
     // Verwende draftBase (enthält normalisierten Namen aus RELEASE_BASE)
     // Füge Timestamp aus pendingDraftFilename hinzu
     const timestampMatch =
       state.pendingDraftFilename.match(/_(DRAFT_\d{8}_\d{6})/);
     const timestamp = timestampMatch ? timestampMatch[1] : "";
-    
+
     console.log("  - timestampMatch:", timestampMatch);
     console.log("  - extracted timestamp:", timestamp);
 
