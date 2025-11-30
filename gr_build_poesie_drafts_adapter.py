@@ -217,11 +217,16 @@ def run_one(input_path: Path) -> None:
             # KRITISCH: Die PDFs heißen "temp_agamemnon_..." (mit temp_ Präfix!)
             temp_stem = temp_input.stem  # z.B. "temp_agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251128_232610"
             
-            # Entferne "temp_" Präfix und DRAFT_TIMESTAMP
+            # Entferne "temp_" Präfix und SESSION + DRAFT_TIMESTAMP
             base_without_temp = temp_stem[5:] if temp_stem.startswith('temp_') else temp_stem
             
-            # Entferne DRAFT_TIMESTAMP Suffix
-            match = re.match(r'^(.+?)_draft_translinear_DRAFT_\d{8}_\d{6}$', base_without_temp)
+            # Entferne SESSION_xxx_DRAFT_TIMESTAMP Suffix
+            # Format: agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_SESSION_c2b74016d1731d08_DRAFT_20251130_040907
+            match = re.match(r'^(.+?)_draft_translinear_SESSION_[a-f0-9]{16}_DRAFT_\d{8}_\d{6}$', base_without_temp)
+            if not match:
+                # Fallback: Altes Format ohne SESSION (für Kompatibilität)
+                match = re.match(r'^(.+?)_draft_translinear_DRAFT_\d{8}_\d{6}$', base_without_temp)
+            
             if match:
                 clean_base = match.group(1)  # z.B. "agamemnon_gr_de_en_stil1_birkenbihl"
             else:

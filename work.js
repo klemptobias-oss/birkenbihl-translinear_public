@@ -254,9 +254,26 @@ async function probeDraftAvailability() {
       state.manualDraftBuildRequired = false;
       state.lastDraftUrl = url;
       updatePdfView(true);
+    } else {
+      // PDF noch nicht verfügbar → Retry in 5 Sekunden (wenn noch buildActive)
+      if (state.draftBuildActive) {
+        setTimeout(() => {
+          draftProbeInFlight = false;
+          probeDraftAvailability();
+        }, 5000);
+        return; // WICHTIG: Nicht draftProbeInFlight = false setzen (wird im setTimeout gemacht)
+      }
     }
   } catch (e) {
     console.warn("Draft probe failed", e);
+    // Retry bei Fehler (wenn noch buildActive)
+    if (state.draftBuildActive) {
+      setTimeout(() => {
+        draftProbeInFlight = false;
+        probeDraftAvailability();
+      }, 5000);
+      return;
+    }
   } finally {
     draftProbeInFlight = false;
   }
