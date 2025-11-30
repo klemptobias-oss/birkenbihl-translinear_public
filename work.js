@@ -667,21 +667,23 @@ function buildFullReleaseName() {
 function buildDraftPdfFilename() {
   // KRITISCH: Verwende state.draftBase (enthält RELEASE_BASE aus Metadaten)
   // Das ist der EXAKTE Name, den GitHub Actions verwendet - unabhängig vom Upload-Dateinamen!
-  // 
+  //
   // Beispiele:
   // - Upload: "agamemnon_gr_de_en_stil1_..." → RELEASE_BASE: "GR_poesie_...__agamemnon_gr_de_stil1_birkenbihl"
   // - Upload: "amphitruo_lat_de_en_stil1_..." → RELEASE_BASE: "LAT_poesie_...__amphitruo_lat_de_en_stil1_birkenbihl"
-  // 
+  //
   // GitHub Actions normalisiert intern basierend auf tatsächlichem Content,
   // wir verwenden einfach das RELEASE_BASE aus den Metadaten!
 
   if (state.pendingDraftFilename && state.draftBase) {
     // Verwende draftBase (enthält normalisierten Namen aus RELEASE_BASE)
     // Füge Timestamp aus pendingDraftFilename hinzu
-    const timestampMatch = state.pendingDraftFilename.match(/_(DRAFT_\d{8}_\d{6})/);
+    const timestampMatch =
+      state.pendingDraftFilename.match(/_(DRAFT_\d{8}_\d{6})/);
     const timestamp = timestampMatch ? timestampMatch[1] : "";
-    
-    const filebase = state.draftBase + (timestamp ? `_draft_translinear_${timestamp}` : "");
+
+    const filebase =
+      state.draftBase + (timestamp ? `_draft_translinear_${timestamp}` : "");
     const name = `${filebase}${buildVariantSuffix()}.pdf`;
     console.log("Generated draft filename (from draftBase + timestamp):", name);
     return name;
