@@ -211,6 +211,10 @@ function getDraftStorageKey() {
   return `draftBase::${getDraftWorkPath()}`;
 }
 
+function getDraftFilenameStorageKey() {
+  return `draftFilename::${getDraftWorkPath()}`;
+}
+
 function persistDraftBase() {
   if (!state.draftBase) return;
   if (typeof window === "undefined" || !window.localStorage) return;
@@ -218,6 +222,19 @@ function persistDraftBase() {
     window.localStorage.setItem(getDraftStorageKey(), state.draftBase);
   } catch (e) {
     console.warn("Persisting draft base failed", e);
+  }
+}
+
+function persistPendingDraftFilename() {
+  if (typeof window === "undefined" || !window.localStorage) return;
+  try {
+    if (state.pendingDraftFilename) {
+      window.localStorage.setItem(getDraftFilenameStorageKey(), state.pendingDraftFilename);
+    } else {
+      window.localStorage.removeItem(getDraftFilenameStorageKey());
+    }
+  } catch (e) {
+    console.warn("Persisting pending draft filename failed", e);
   }
 }
 
@@ -230,6 +247,12 @@ function restoreDraftBase() {
       state.draftHasResult = false;
       state.draftBuildActive = false;
       state.manualDraftBuildRequired = false;
+    }
+    
+    // Restore pending draft filename
+    const storedFilename = window.localStorage.getItem(getDraftFilenameStorageKey());
+    if (storedFilename) {
+      state.pendingDraftFilename = storedFilename;
     }
   } catch (e) {
     console.warn("Restoring draft base failed", e);
@@ -1284,6 +1307,7 @@ async function performRendering() {
     state.source = "draft";
     state.lastDraftUrl = draftPdfUrl;
     state.pendingDraftFilename = data.filename;
+    persistPendingDraftFilename(); // Speichere Filename persistent
     state.draftBuildActive = buildActive;
     state.draftHasResult = false;
     state.manualDraftBuildRequired = manualRequired;
@@ -2825,7 +2849,8 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
     const task = pdfjs.getDocument(pdfUrl);
     pdfRenderer.pdf = await task.promise;
     if (state.source === "draft") {
-      state.pendingDraftFilename = null;
+      // WICHTIG: pendingDraftFilename NICHT zurücksetzen!
+      // Es wird benötigt, um alle Varianten zu laden (mit SESSION_ID und TIMESTAMP)
       state.manualDraftBuildRequired = false;
       state.manualDraftCommand = null;
       state.draftBuildActive = false;
