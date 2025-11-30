@@ -168,8 +168,10 @@ jobs:
         run: |
           echo "Comitte PDF-Änderungen..."
 
-          # Füge alle PDF-Änderungen hinzu (neue und gelöschte)
-          git add pdf_drafts/
+          # KRITISCH: Verwende -f (force) um .gitignore zu überschreiben!
+          # Grund: .gitignore blockiert pdf_drafts/ für lokale Entwicklung
+          # Aber: GitHub Actions MUSS PDFs committen können!
+          git add -f pdf_drafts/
           
           # Füge auch alle anderen Änderungen hinzu (z.B. .gitkeep, temp-Dateien)
           git add -A
