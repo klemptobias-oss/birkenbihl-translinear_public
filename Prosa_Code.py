@@ -2677,8 +2677,17 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 # Gruppiere Tabellen nach Zeilen und halte jede Zeile zusammen
                 for i_table in range(0, len(flow_tables), tables_per_line):
                     line_tables = flow_tables[i_table:i_table+tables_per_line]
-                    if line_tables:
-                        elements.append(KeepTogether(line_tables))
+                    # KRITISCH: Prüfe ob line_tables gültige Tables enthält (nicht None/leer)
+                    # Bei Apologie NoTag-Mode können leere Tables entstehen → SKIP these!
+                    valid_tables = [t for t in line_tables if t is not None]
+                    if valid_tables:
+                        # DEFENSIVE: Versuche KeepTogether, aber fallback zu direktem append
+                        try:
+                            elements.append(KeepTogether(valid_tables))
+                        except (TypeError, ValueError) as e:
+                            # Fallback: Füge Tables einzeln hinzu (kein KeepTogether)
+                            logger.warning("Prosa_Code: KeepTogether failed, appending tables individually: %s", e)
+                            elements.extend(valid_tables)
                 
                 # Abstand nach dem flow-Block
                 elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
@@ -2719,7 +2728,15 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # Rendere als einzelne Zeile (behält Zeilenstruktur)
             pair_tables = build_flow_tables(pseudo_flow)
             if pair_tables:
-                elements.append(KeepTogether(pair_tables))
+                # DEFENSIVE: Prüfe auf gültige Tables (nicht None/leer)
+                valid_tables = [t for t in pair_tables if t is not None]
+                if valid_tables:
+                    try:
+                        elements.append(KeepTogether(valid_tables))
+                    except (TypeError, ValueError) as e:
+                        # Fallback: Einzeln hinzufügen
+                        logger.warning("Prosa_Code: KeepTogether failed for pair, appending individually: %s", e)
+                        elements.extend(valid_tables)
             
             # KRITISCH: Kommentare NACH den Tabellen rendern, damit sie nach dem Text erscheinen!
             render_block_comments(b, elements, doc)
