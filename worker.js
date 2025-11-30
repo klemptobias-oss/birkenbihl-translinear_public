@@ -38,7 +38,10 @@ export default {
     }
 
     // --------- Release-Proxy (GET/HEAD) ---------
-    if ((method === "GET" || method === "HEAD") && url.pathname === "/release") {
+    if (
+      (method === "GET" || method === "HEAD") &&
+      url.pathname === "/release"
+    ) {
       const tag = (url.searchParams.get("tag") || "").trim();
       const file = (url.searchParams.get("file") || "").trim();
       const modeRaw = (url.searchParams.get("mode") || "inline").toLowerCase();
@@ -58,7 +61,7 @@ export default {
             CORS
           );
         }
-        
+
         const owner = env.OWNER;
         const repo = env.REPO;
         if (!owner || !repo) {
@@ -72,13 +75,13 @@ export default {
             CORS
           );
         }
-        
+
         // Draft-PDFs sind auf raw.githubusercontent.com/OWNER/REPO/main/pdf_drafts/...
         const draftUrl = `https://raw.githubusercontent.com/${owner}/${repo}/main/pdf_drafts/${file}`;
         const upstream = await fetch(draftUrl, {
           method: method === "HEAD" ? "HEAD" : "GET",
         });
-        
+
         if (!upstream || !upstream.ok) {
           return resp(
             {
@@ -92,7 +95,7 @@ export default {
             CORS
           );
         }
-        
+
         // Content-Type für PDFs setzen
         let contentType = upstream.headers.get("content-type") || "";
         if (!contentType || contentType === "application/octet-stream") {
@@ -102,26 +105,27 @@ export default {
             contentType = "text/plain; charset=utf-8";
           }
         }
-        
+
         // Content-Disposition Header für Download-Namen
         const baseName = file.split("/").pop() || "translinear.pdf";
-        const disposition = mode === "attachment"
-          ? `attachment; filename="${baseName}"`
-          : `inline; filename="${baseName}"`;
-        
+        const disposition =
+          mode === "attachment"
+            ? `attachment; filename="${baseName}"`
+            : `inline; filename="${baseName}"`;
+
         const headers = {
           ...CORS,
           "Content-Type": contentType,
           "Content-Disposition": disposition,
         };
-        
+
         if (method === "HEAD") {
           return new Response(null, { status: 200, headers });
         }
-        
+
         return new Response(upstream.body, { status: 200, headers });
       }
-      
+
       // Original Release-Proxy-Logik (für nicht-Draft PDFs)
       if (!tag || !file) {
         return resp(
@@ -155,12 +159,12 @@ export default {
       let lastStatus = 404;
 
       for (const candidate of filenameVariants) {
-      const upstreamUrl = `https://github.com/${owner}/${repo}/releases/download/${encodeURIComponent(
-        tag
+        const upstreamUrl = `https://github.com/${owner}/${repo}/releases/download/${encodeURIComponent(
+          tag
         )}/${encodeURIComponent(candidate)}`;
         const attempt = await fetch(upstreamUrl, {
-        method: method === "HEAD" ? "HEAD" : "GET",
-      });
+          method: method === "HEAD" ? "HEAD" : "GET",
+        });
         if (attempt && attempt.ok) {
           upstream = attempt;
           finalFileName = candidate;
@@ -380,10 +384,15 @@ export default {
     if (!baseName) baseName = stripUnsafe(work) || "Entwurf";
 
     // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
-    baseName = baseName.replace(/_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g, "_Versmass");
-    
+    baseName = baseName.replace(
+      /_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g,
+      "_Versmass"
+    );
+
     // Entferne "translinear" aus dem baseName, falls vorhanden (wird später wieder hinzugefügt)
-    baseName = baseName.replace(/^translinear_?/i, "").replace(/_translinear_?/gi, "_");
+    baseName = baseName
+      .replace(/^translinear_?/i, "")
+      .replace(/_translinear_?/gi, "_");
     if (!baseName) baseName = stripUnsafe(work) || "Entwurf";
 
     const stamped = `${baseName}_translinear_DRAFT_${tsStamp()}.txt`;
@@ -391,7 +400,8 @@ export default {
     const kindSafe = sanitizePathSegment(kind) || "prosa";
     const authorSafe = sanitizePathSegment(author) || "Unsortiert";
     const workSafe = sanitizePathSegment(work) || "Unbenannt";
-    const languageSafe = sanitizePathSegment(language) || stateLangFallback(kindSafe);
+    const languageSafe =
+      sanitizePathSegment(language) || stateLangFallback(kindSafe);
     const categorySafe = sanitizePathSegment(category);
 
     const providedWorkPathSegments = sanitizeWorkPath(workPath);
@@ -496,7 +506,7 @@ export default {
     const dispatchPayload = {
       ref: branch,
       inputs: {
-        draft_file: path,  // Nur diese Datei verarbeiten!
+        draft_file: path, // Nur diese Datei verarbeiten!
       },
     };
 
@@ -550,7 +560,8 @@ function buildReleaseFilenameVariants(file) {
   const umlautVariant = replaceGermanUmlauts(file);
   if (umlautVariant && umlautVariant !== file) variants.push(umlautVariant);
   const plainVariant = stripDiacritics(file);
-  if (plainVariant && !variants.includes(plainVariant)) variants.push(plainVariant);
+  if (plainVariant && !variants.includes(plainVariant))
+    variants.push(plainVariant);
   return [...new Set(variants)];
 }
 
@@ -567,12 +578,15 @@ function replaceGermanUmlauts(str = "") {
 
 function stripDiacritics(str = "") {
   if (typeof str.normalize !== "function") return str;
-  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
 function sanitizeReleaseBase(value) {
   if (!value) return "";
-  let cleaned = value.toString().replace(/[\r\n]/g, "").trim();
+  let cleaned = value
+    .toString()
+    .replace(/[\r\n]/g, "")
+    .trim();
   // Normalisiere Versmaß-Varianten zu "Versmass" (URL-sicher)
   cleaned = cleaned.replace(/_[Vv]ersm[aä][sß]{1,2}[a-zßA-Z]*/g, "_Versmass");
   if (cleaned && !cleaned.includes("_birkenbihl")) {
@@ -629,4 +643,3 @@ function toBase64Utf8(str) {
   bytes.forEach((b) => (bin += String.fromCharCode(b)));
   return btoa(bin);
 }
-

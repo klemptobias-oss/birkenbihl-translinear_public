@@ -2046,19 +2046,17 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             rng = cm.get('pair_range') if isinstance(cm, dict) else None
             line_num = cm.get('line_num') if isinstance(cm, dict) else None
             
-            if rng:
-                display = f"[{rng[0]}-{rng[1]}] {txt}"
-            elif line_num:
-                # Kommentar hat line_num (z.B. "123" oder "255-266" oder "8k")
-                # Zeige es in eckigen Klammern
-                display = f"[{line_num}] {txt}"
+            # WICHTIG: Entferne "k" Suffix von line_num (wie in Poesie)
+            if line_num:
+                line_num_clean = str(line_num).rstrip('kK')
+                txt = f"[{line_num_clean}] {txt}"
+            elif rng:
+                txt = f"[{rng[0]}-{rng[1]}] {txt}"
             elif isinstance(cm, dict) and cm.get('start') and cm.get('end'):
-                display = f"[{cm.get('start')}-{cm.get('end')}] {txt}"
-            else:
-                display = txt.strip()
+                txt = f"[{cm.get('start')}-{cm.get('end')}] {txt}"
             
-            # Sanitize and truncate to a reasonable size
-            text_clean = " ".join(display.split())
+            # Sanitize - KEINE Kürzung mehr! Längere Kommentare erlaubt
+            text_clean = " ".join(txt.split())
             # KEIN Abschneiden mehr! Längere Kommentare erlaubt.
             
             # Kommentar-Style: klein, grau, kursiv, GRAU HINTERLEGT — be defensive
@@ -2078,10 +2076,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 
                 # Prüfe ob Kommentar lang ist (>175 Wörter) für Page-Breaking
                 word_count = len(text_clean.split())
-                
-                # KRITISCH: Verwende Table mit grauem Hintergrund für ALLE Kommentare
-                # Table kann über Seiten umbrechen, wenn kein KeepTogether verwendet wird!
-                p = Paragraph(html.escape(text_clean), comment_style_simple)
                 
                 # WICHTIG: Kommentar-Box-Breite soll NUR bis zum Ende des Translinear-Texts reichen
                 # Verwende die gleiche Breite wie die Token-Tables (frame_w minus speaker/para columns)
@@ -2119,14 +2113,14 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     except:
                         available_width = 170*mm  # Absoluter Fallback
                 
-                # KRITISCH: Bei SEHR langen Kommentaren (>300 Wörter) teile in mehrere Paragraphen!
+                # KRITISCH: Bei langen Kommentaren (>175 Wörter) teile in mehrere Paragraphen!
                 # Grund: ReportLab kann einzelne riesige Paragraphs schwer splitten
-                # Lösung: Erstelle Multi-Row Table mit kleineren Chunks
+                # Lösung: Erstelle Multi-Row Table mit kleineren Chunks (~100 Wörter pro Chunk)
                 
-                if word_count > 300:
-                    # LANGER Kommentar: Teile in Chunks von ~200 Wörtern
+                if word_count > 175:
+                    # LANGER Kommentar: Teile in Chunks von ~100 Wörtern
                     words = text_clean.split()
-                    chunk_size = 200
+                    chunk_size = 100
                     chunks = []
                     
                     for i in range(0, len(words), chunk_size):
@@ -2149,7 +2143,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     
                     print(f"Prosa_Code: render_block_comments - SPLIT large comment into {len(chunks)} chunks ({word_count} words)", flush=True)
                 else:
-                    # NORMALER Kommentar: Single-Row Table
+                    # NORMALER Kommentar (<= 175 Wörter): Single-Row Table
                     p = Paragraph(html.escape(text_clean), comment_style_simple)
                     comment_table = Table([[p]], colWidths=[available_width])
                     comment_table.setStyle(TableStyle([

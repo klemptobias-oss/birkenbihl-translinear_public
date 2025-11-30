@@ -1,0 +1,68 @@
+name: Cleanup Old Drafts
+
+on:
+  schedule:
+    # Läuft täglich um 3:00 UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:  # Manuell ausführbar
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cleanup Old Drafts
+        run: |
+          set -x
+          echo "Starte Cleanup: Drafts älter als 48h werden gelöscht..."
+          
+          CUTOFF_TIME=$(date -u -d '48 hours ago' +%Y%m%d_%H%M%S)
+          echo "Cutoff-Zeit: ${CUTOFF_TIME}"
+          
+          # Finde alle Draft-Dateien mit Zeitstempel
+          # Format: *_DRAFT_YYYYMMDD_HHMMSS.txt
+          find texte_drafts -type f -name "*_DRAFT_*.txt" | while read -r draft_file; do
+            # Extrahiere Zeitstempel aus Dateinamen
+            timestamp=$(echo "$draft_file" | grep -oP 'DRAFT_\K[0-9]{8}_[0-9]{6}' || echo "00000000_000000")
+            
+            if [ "$timestamp" = "00000000_000000" ]; then
+              echo "Warnung: Kein gültiger Zeitstempel in $draft_file"
+              continue
+            fi
+            
+            # Vergleiche Zeitstempel (lexikographisch sortierbar wegen YYYYMMDD_HHMMSS)
+            if [ "$timestamp" \< "$CUTOFF_TIME" ]; then
+              echo "LÖSCHE alten Draft: $draft_file (Zeitstempel: $timestamp)"
+              rm -f "$draft_file"
+              
+              # Lösche auch zugehörige PDFs
+              # Extrahiere Base-Name ohne .txt
+              base_name=$(basename "$draft_file" .txt)
+              
+              # Finde PDFs die diesen Base-Namen enthalten
+              find pdf_drafts -type f -name "*${base_name}*.pdf" -exec rm -f {} \;
+              echo "  ✓ Zugehörige PDFs ebenfalls gelöscht"
+            else
+              echo "Behalte aktuellen Draft: $draft_file (Zeitstempel: $timestamp)"
+            fi
+          done
+          
+          echo "Cleanup abgeschlossen."
+
+      - name: Commit Cleanup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "Keine Änderungen zum Committen"
+            exit 0
+          fi
+          
+          git add -A
+          git commit -m "cleanup: Alte Drafts (>48h) automatisch gelöscht"
+          git push
