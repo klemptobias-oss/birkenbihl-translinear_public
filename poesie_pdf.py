@@ -327,12 +327,23 @@ def _process_one_input(infile: str,
     
     # WICHTIG: Prüfe ob der Text tatsächlich Versmaß-Marker (i, L, |) enthält
     # Dies ist die EINZIGE zuverlässige Methode zur Versmaß-Erkennung!
+    # 
+    # WICHTIG: Versmaß-Erkennung ist NUR für GRIECHISCHE Texte aktiviert!
+    # Lateinische Texte verwenden 'i' und 'L' als normale Buchstaben (z.B. "L" in "Lucius")
+    # TODO: Später separate Versmaß-Marker für Latein definieren (z.B. andere Symbole)
     content_has_meter = False
-    for block in blocks:
-        if block.get('type') == 'pair':
-            if has_meter_markers(block.get('gr_tokens', [])):
-                content_has_meter = True
-                break
+    is_latin_text = ancient_lang_strength == "LAT_FETT"
+    
+    if is_latin_text:
+        print("  → Lateinischer Text: Versmaß-Erkennung deaktiviert (i/L sind normale Buchstaben)")
+        content_has_meter = False
+    else:
+        # Nur für griechische Texte: Prüfe auf Versmaß-Marker
+        for block in blocks:
+            if block.get('type') == 'pair':
+                if has_meter_markers(block.get('gr_tokens', [])):
+                    content_has_meter = True
+                    break
     
     # ENTSCHEIDUNG: Nur auf Basis der tatsächlichen Meter-Marker im Text
     # force_meter Parameter wird IGNORIERT, wenn keine Marker vorhanden sind!

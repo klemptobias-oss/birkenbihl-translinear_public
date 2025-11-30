@@ -111,7 +111,17 @@ export default {
         }
 
         // Content-Disposition Header für Download-Namen
-        const baseName = file.split("/").pop() || "translinear.pdf";
+        // Für Draft-PDFs: Entferne Session-IDs und Timestamps aus dem Dateinamen
+        let baseName = file.split("/").pop() || "translinear.pdf";
+        
+        if (file.toLowerCase().endsWith(".pdf")) {
+          // Entferne lange Session-IDs, Timestamps und "temp_" Prefix
+          // Behalte nur: Werk_Sprache_Variante.pdf
+          baseName = baseName
+            .replace(/_draft_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi, "")
+            .replace(/^temp_/gi, "");
+        }
+        
         const disposition =
           mode === "attachment"
             ? `attachment; filename="${baseName}"`
@@ -226,15 +236,21 @@ export default {
         headers.set("Content-Length", contentLength);
       }
 
-      let desiredName = "";
-      if (lowerFile.endsWith(".pdf")) {
-        desiredName = "translinear.pdf";
-      } else if (lowerFile.endsWith(".txt")) {
-        desiredName = "translinear.txt";
-      } else {
-        desiredName = finalFileName;
+      // WICHTIG: Verwende den ECHTEN Dateinamen für Download!
+      // Für Release-PDFs: Vereinfachter Name (ohne lange Session-IDs)
+      // Format: GR_poesie_Drama_Autor_Werk_Variante.pdf
+      let desiredName = finalFileName;
+      
+      // Für inline-Anzeige im Browser: behalte den vollen Namen
+      // Für Download (mode=attachment): vereinfachter Name
+      if (mode === "attachment" && lowerFile.endsWith(".pdf")) {
+        // Entferne lange Session-IDs und Timestamps aus dem Namen
+        // z.B. "__sieben_gr_de_stil1_birkenbihl" → behalte nur das Wichtige
+        desiredName = finalFileName
+          .replace(/_draft_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi, "")
+          .replace(/temp_/gi, "");
       }
-
+```
       if (desiredName) {
         const dispositionType = mode === "attachment" ? "attachment" : "inline";
         headers.set(
