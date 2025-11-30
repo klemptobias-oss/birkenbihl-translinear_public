@@ -1268,7 +1268,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         return False
     
     # Wenn KEINE Übersetzungen vorhanden sind (alle ausgeblendet), zeige nur die griechische Zeile
-    if not de_tokens and not en_tokens:
+    # WICHTIG: Prüfe mit any() ob irgendein Token nicht-leer ist (nicht nur ob Liste leer ist!)
+    if not any(de_tokens) and not any(en_tokens):
         cols = len(gr_tokens)
         gr = gr_tokens[:]
         de = []
