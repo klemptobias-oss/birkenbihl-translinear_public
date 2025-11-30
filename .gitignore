@@ -23,9 +23,10 @@ build/
 .cache/
 
 # Große/abgeleitete Artefakte – NIEMALS pushen
+# WICHTIG: Alle PDFs ignorieren (auch in Unterordnern)
 pdf/
 pdf_drafts/
-pdf/**
+*.pdf
 
 Result/
 Result/**
