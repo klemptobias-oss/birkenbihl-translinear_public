@@ -2119,19 +2119,48 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     except:
                         available_width = 170*mm  # Absoluter Fallback
                 
-                # Padding: 0.3cm = 3mm oben/unten, 0.6cm = 6mm links/rechts
-                comment_table = Table([[p]], colWidths=[available_width])
-                comment_table.setStyle(TableStyle([
-                    ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
-                    ('LEFTPADDING', (0, 0), (-1, -1), 6*mm),  # 0.6cm links
-                    ('RIGHTPADDING', (0, 0), (-1, -1), 6*mm),  # 0.6cm rechts
-                    ('TOPPADDING', (0, 0), (-1, -1), 3*mm),  # 0.3cm oben
-                    ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),  # 0.3cm unten
-                    ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-                ]))
+                # KRITISCH: Bei SEHR langen Kommentaren (>300 Wörter) teile in mehrere Paragraphen!
+                # Grund: ReportLab kann einzelne riesige Paragraphs schwer splitten
+                # Lösung: Erstelle Multi-Row Table mit kleineren Chunks
                 
-                # KRITISCH: Setze canSplit=True, damit Table über Seiten umbrechen kann!
-                comment_table.canSplit = True
+                if word_count > 300:
+                    # LANGER Kommentar: Teile in Chunks von ~200 Wörtern
+                    words = text_clean.split()
+                    chunk_size = 200
+                    chunks = []
+                    
+                    for i in range(0, len(words), chunk_size):
+                        chunk_words = words[i:i+chunk_size]
+                        chunk_text = " ".join(chunk_words)
+                        p_chunk = Paragraph(html.escape(chunk_text), comment_style_simple)
+                        chunks.append([p_chunk])
+                    
+                    # Erstelle Multi-Row Table (jede Zeile = ein Chunk)
+                    comment_table = Table(chunks, colWidths=[available_width])
+                    comment_table.setStyle(TableStyle([
+                        ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),  # Grauer Hintergrund
+                        ('LEFTPADDING', (0, 0), (-1, -1), 6*mm),
+                        ('RIGHTPADDING', (0, 0), (-1, -1), 6*mm),
+                        ('TOPPADDING', (0, 0), (-1, -1), 3*mm),
+                        ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),
+                        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                    ]))
+                    comment_table.canSplit = True  # KRITISCH: Erlaube Split zwischen Rows
+                    
+                    print(f"Prosa_Code: render_block_comments - SPLIT large comment into {len(chunks)} chunks ({word_count} words)", flush=True)
+                else:
+                    # NORMALER Kommentar: Single-Row Table
+                    p = Paragraph(html.escape(text_clean), comment_style_simple)
+                    comment_table = Table([[p]], colWidths=[available_width])
+                    comment_table.setStyle(TableStyle([
+                        ('BACKGROUND', (0, 0), (-1, -1), colors.Color(0.92, 0.92, 0.92)),
+                        ('LEFTPADDING', (0, 0), (-1, -1), 6*mm),
+                        ('RIGHTPADDING', (0, 0), (-1, -1), 6*mm),
+                        ('TOPPADDING', (0, 0), (-1, -1), 3*mm),
+                        ('BOTTOMPADDING', (0, 0), (-1, -1), 3*mm),
+                        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                    ]))
+                    comment_table.canSplit = True
                 
                 # ALLE Kommentare ohne KeepTogether hinzufügen
                 # (Table kann über Seiten umbrechen, wenn Inhalt zu lang)
