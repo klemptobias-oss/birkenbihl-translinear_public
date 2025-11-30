@@ -30,9 +30,12 @@ on:
   #     - "prosa_pdf.py"
   #     - "poesie_pdf.py"
 
+# WICHTIG: Concurrency-Group basiert auf Session-ID (aus draft_file extrahiert)
+# → Jeder Nutzer (= jede Session) kann parallel PDFs erstellen!
+# → Aber derselbe Nutzer kann nicht 2 Runs gleichzeitig starten (verhindert Doppel-Builds)
 concurrency:
-  group: draft-pdf-build
-  cancel-in-progress: false
+  group: draft-pdf-build-${{ github.event.inputs.draft_file }}
+  cancel-in-progress: true  # Neuere Uploads desselben Nutzers canceln ältere
 
 jobs:
   build:

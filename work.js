@@ -229,7 +229,10 @@ function persistPendingDraftFilename() {
   if (typeof window === "undefined" || !window.localStorage) return;
   try {
     if (state.pendingDraftFilename) {
-      window.localStorage.setItem(getDraftFilenameStorageKey(), state.pendingDraftFilename);
+      window.localStorage.setItem(
+        getDraftFilenameStorageKey(),
+        state.pendingDraftFilename
+      );
     } else {
       window.localStorage.removeItem(getDraftFilenameStorageKey());
     }
@@ -248,9 +251,11 @@ function restoreDraftBase() {
       state.draftBuildActive = false;
       state.manualDraftBuildRequired = false;
     }
-    
+
     // Restore pending draft filename
-    const storedFilename = window.localStorage.getItem(getDraftFilenameStorageKey());
+    const storedFilename = window.localStorage.getItem(
+      getDraftFilenameStorageKey()
+    );
     if (storedFilename) {
       state.pendingDraftFilename = storedFilename;
     }
