@@ -1686,23 +1686,18 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # DEFENSIVE: Prüfe auf None-Werte in colWidths
         colWidths = [max(w or 0.1, 0.1) for w in colWidths]
 
-        # SICHERHEIT: Prüfe, ob die Table-Breite größer ist als die verfügbare Breite
-        # Wenn ja, skaliere die colWidths, um negative Breiten zu vermeiden
+        # KRITISCH: AGGRESSIVE Breiten-Skalierung für Apologie NoTag-Stabilität
+        # Problem: ReportLab subtrahiert CELL_PAD_LR_PT von jeder Spalte NACH colWidths-Übergabe
+        # Das kann zu "negative availWidth" Fehlern führen, selbst wenn colWidths passt
+        # Lösung: Verwende nur 90% der verfügbaren Breite (10% Reserve für Padding/Rundung)
         total_table_width = sum(colWidths)
-        # Berücksichtige Padding: 2 * CELL_PAD_LR_PT pro Spalte
-        padding_overhead = len(colWidths) * 2 * CELL_PAD_LR_PT
-        max_available_width = avail_w - padding_overhead
+        max_available_width = avail_w * 0.9  # 10% Reserve
         
-        # DEFENSIVE: Sicherstellen dass max_available_width positiv ist
-        if max_available_width <= 0:
-            max_available_width = avail_w * 0.9  # Fallback: 90% der verfügbaren Breite
-        
-        if total_table_width > max_available_width and max_available_width > 0:
-            # Skaliere alle colWidths proportional
+        # IMMER skalieren (auch wenn nicht zu breit) für maximale Stabilität
+        if total_table_width > 0:
             scale_factor = max_available_width / total_table_width
-            colWidths = [max(w * scale_factor, 0.1) for w in colWidths]  # Min 0.1 pro Spalte
-            # Warnung unterdrückt: Skalierung erfolgt automatisch, keine Log-Flut nötig
-            # (Table-Breite wird automatisch angepasst, daher ist diese Warnung redundant)
+            # Extra-defensiv: Garantiere min 0.5pt pro Spalte (verhindert 0-Breiten)
+            colWidths = [max(w * scale_factor, 0.5) for w in colWidths]
 
         # NEU: Prüfe, ob englische Zeile vorhanden ist
         has_en = any(slice_en)
