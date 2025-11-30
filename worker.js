@@ -124,8 +124,8 @@ export default {
         
         const disposition =
           mode === "attachment"
-            ? `attachment; filename="${baseName}"`
-            : `inline; filename="${baseName}"`;
+            ? "attachment; filename=\"" + baseName + "\""
+            : "inline; filename=\"" + baseName + "\"";
 
         const headers = {
           ...CORS,
@@ -255,7 +255,7 @@ export default {
         const dispositionType = mode === "attachment" ? "attachment" : "inline";
         headers.set(
           "Content-Disposition",
-          `${dispositionType}; filename="${desiredName}"`
+          dispositionType + '; filename="' + desiredName + '"'
         );
       }
 
