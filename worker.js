@@ -117,18 +117,27 @@ export default {
         }
 
         // Content-Disposition Header für Download-Namen
-        // Für Draft-PDFs: Entferne Session-IDs und Timestamps aus dem Dateinamen
+        // Für Draft-PDFs: Kürze den Dateinamen drastisch
         let baseName = file.split("/").pop() || "translinear.pdf";
 
         if (file.toLowerCase().endsWith(".pdf")) {
-          // Entferne lange Session-IDs, Timestamps und "temp_" Prefix
-          // Behalte nur: Werk_Sprache_Variante.pdf
-          baseName = baseName
-            .replace(
-              /_draft_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi,
-              ""
-            )
-            .replace(/^temp_/gi, "");
+          // Ziel: Von "GR_poesie_Drama_Euripides_Kyklops__Euripides_Kyklops_gr_de_translinear_SESSION_xxx_DRAFT_date_time_Normal_BlackWhite_NoTags.pdf"
+          //       Zu: "Euripides_Kyklops_gr_de_translinear_Normal_BlackWhite_NoTags.pdf"
+          
+          // Schritt 1: Entferne Sprach/Gattungs/Kategorie-Präfix (GR_poesie_Drama_, LAT_prosa_Historie_, etc.)
+          baseName = baseName.replace(/^(GR|LAT)_(poesie|prosa)_[^_]+_/i, "");
+          
+          // Schritt 2: Entferne doppelte Autor_Werk-Wiederholung (Autor_Werk__Autor_Werk → Autor_Werk)
+          baseName = baseName.replace(/([^_]+_[^_]+)__\1/g, "$1");
+          
+          // Schritt 3: Entferne SESSION und DRAFT Timestamps
+          baseName = baseName.replace(/_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi, "_translinear");
+          
+          // Schritt 4: Entferne übriggebliebene doppelte Unterstriche
+          baseName = baseName.replace(/__+/g, "_");
+          
+          // Schritt 5: Entferne temp_ Prefix (falls vorhanden)
+          baseName = baseName.replace(/^temp_/gi, "");
         }
 
         const disposition =
@@ -252,21 +261,30 @@ export default {
       }
 
       // WICHTIG: Verwende den ECHTEN Dateinamen für Download!
-      // Für Release-PDFs: Vereinfachter Name (ohne lange Session-IDs)
-      // Format: GR_poesie_Drama_Autor_Werk_Variante.pdf
+      // Für inline-Anzeige: behalte den vollen GitHub-Dateinamen (für korrekte URL-Auflösung)
+      // Für Download: vereinfachter, benutzerfreundlicher Name
       let desiredName = finalFileName;
 
-      // Für inline-Anzeige im Browser: behalte den vollen Namen
-      // Für Download (mode=attachment): vereinfachter Name
+      // Für Download (mode=attachment): Kürze den Namen drastisch
       if (mode === "attachment" && lowerFile.endsWith(".pdf")) {
-        // Entferne lange Session-IDs und Timestamps aus dem Namen
-        // z.B. "__sieben_gr_de_stil1_birkenbihl" → behalte nur das Wichtige
-        desiredName = finalFileName
-          .replace(
-            /_draft_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi,
-            ""
-          )
-          .replace(/temp_/gi, "");
+        // Ziel: Von "GR_poesie_Drama_Euripides_Kyklops__Euripides_Kyklops_gr_de_translinear_SESSION_xxx_DRAFT_date_time_Normal_BlackWhite_NoTags.pdf"
+        //       Zu: "Euripides_Kyklops_gr_de_translinear_Normal_BlackWhite_NoTags.pdf"
+        
+        // Schritt 1: Entferne Sprach/Gattungs/Kategorie-Präfix (GR_poesie_Drama_, LAT_prosa_Historie_, etc.)
+        desiredName = finalFileName.replace(/^(GR|LAT)_(poesie|prosa)_[^_]+_/i, "");
+        
+        // Schritt 2: Entferne doppelte Autor_Werk-Wiederholung (Autor_Werk__Autor_Werk → Autor_Werk)
+        // Beispiel: "Euripides_Kyklops__Euripides_Kyklops" → "Euripides_Kyklops"
+        desiredName = desiredName.replace(/([^_]+_[^_]+)__\1/g, "$1");
+        
+        // Schritt 3: Entferne SESSION und DRAFT Timestamps
+        desiredName = desiredName.replace(/_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi, "_translinear");
+        
+        // Schritt 4: Entferne übriggebliebene doppelte Unterstriche
+        desiredName = desiredName.replace(/__+/g, "_");
+        
+        // Schritt 5: Entferne temp_ Prefix (falls vorhanden)
+        desiredName = desiredName.replace(/^temp_/gi, "");
       }
 
       if (desiredName) {
@@ -429,16 +447,16 @@ export default {
     // Dateinamen-Strategie
     // WICHTIG: Baue einen aussagekräftigen Namen aus den Metadaten
     // Format: Autor_Werk_Sprache_[Versmass]
-    
+
     // 1. Erkenne Sprach-Kombination aus dem TEXT-INHALT
     let detectedLangSuffix = "";
-    const lines = text.split('\n').filter(l => l.trim());
-    
+    const lines = text.split("\n").filter((l) => l.trim());
+
     // Suche nach typischen Zeilen-Mustern: (1) Greek (1) Deutsch (1) English
     // Zähle wie viele Zeilen mit (Zahl) beginnen
     let pairCount = 0;
     let linesWithSameNumber = {};
-    
+
     for (const line of lines) {
       const match = line.match(/^\((\d+)\)/);
       if (match) {
@@ -448,36 +466,47 @@ export default {
       }
       if (pairCount > 20) break; // Nur Anfang analysieren
     }
-    
+
     // Wenn wir 3 Zeilen pro Nummer haben → 3-sprachig, sonst 2-sprachig
-    const avgLinesPerNumber = Object.values(linesWithSameNumber).reduce((a,b) => a+b, 0) / Object.keys(linesWithSameNumber).length;
+    const avgLinesPerNumber =
+      Object.values(linesWithSameNumber).reduce((a, b) => a + b, 0) /
+      Object.keys(linesWithSameNumber).length;
     const isThreeLanguages = avgLinesPerNumber >= 2.5; // ~3 Zeilen pro Nummer
-    
+
     // Bestimme Basissprache (griechisch oder latein)
-    const langBase = (language || "").toLowerCase().includes("lat") ? "lat" : "gr";
-    
+    const langBase = (language || "").toLowerCase().includes("lat")
+      ? "lat"
+      : "gr";
+
     // Baue Sprach-Suffix
     if (isThreeLanguages) {
       detectedLangSuffix = `_${langBase}_de_en`;
     } else {
       // 2-sprachig: Versuche aus filename zu extrahieren, sonst fallback
-      if (filename && (filename.includes("_gr_en") || filename.includes("_lat_en"))) {
+      if (
+        filename &&
+        (filename.includes("_gr_en") || filename.includes("_lat_en"))
+      ) {
         detectedLangSuffix = `_${langBase}_en`;
       } else {
         detectedLangSuffix = `_${langBase}_de`; // Default
       }
     }
-    
+
     // 2. Versmaß-Suffix aus versmassFlag oder filename
     let versmassSuffix = "";
-    if (versmassFlag === "true" || versmassFlag === "ON" || filename.match(/_[Vv]ersm[aä][sß]{1,2}/)) {
+    if (
+      versmassFlag === "true" ||
+      versmassFlag === "ON" ||
+      filename.match(/_[Vv]ersm[aä][sß]{1,2}/)
+    ) {
       versmassSuffix = "_Versmass";
     }
-    
+
     // 3. Baue sauberen Namen
     const authorForName = stripUnsafe(author) || "";
     const workForName = stripUnsafe(work) || "Entwurf";
-    
+
     let baseName = "";
     if (authorForName && workForName) {
       baseName = `${authorForName}_${workForName}${detectedLangSuffix}${versmassSuffix}`;
