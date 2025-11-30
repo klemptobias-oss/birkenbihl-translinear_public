@@ -35,7 +35,7 @@ on:
 # → Aber derselbe Nutzer kann nicht 2 Runs gleichzeitig starten (verhindert Doppel-Builds)
 concurrency:
   group: draft-pdf-build-${{ github.event.inputs.draft_file }}
-  cancel-in-progress: true  # Neuere Uploads desselben Nutzers canceln ältere
+  cancel-in-progress: true # Neuere Uploads desselben Nutzers canceln ältere
 
 jobs:
   build:
