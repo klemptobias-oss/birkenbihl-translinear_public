@@ -681,19 +681,25 @@ function buildDraftPdfFilename() {
     console.log("  - state.draftBase:", state.draftBase);
     console.log("  - state.pendingDraftFilename:", state.pendingDraftFilename);
 
-    // Verwende draftBase (enthält normalisierten Namen aus RELEASE_BASE)
-    // Füge Timestamp aus pendingDraftFilename hinzu
-    const timestampMatch =
-      state.pendingDraftFilename.match(/_(DRAFT_\d{8}_\d{6})/);
-    const timestamp = timestampMatch ? timestampMatch[1] : "";
-
-    console.log("  - timestampMatch:", timestampMatch);
-    console.log("  - extracted timestamp:", timestamp);
-
-    const filebase =
-      state.draftBase + (timestamp ? `_draft_translinear_${timestamp}` : "");
+    // KRITISCH: Verwende den UPLOAD-Filename (pendingDraftFilename), nicht draftBase!
+    // Grund: GitHub Actions erstellt PDFs basierend auf dem UPLOAD-Filenamen,
+    // nicht auf dem normalisierten RELEASE_BASE aus den Metadaten.
+    // 
+    // Beispiel:
+    // - Upload: agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_011301.txt
+    // - PDF wird: GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_011301_GR_Fett_Colour_Tag.pdf
+    //            (beachte: gr_de_en bleibt erhalten, wird NICHT zu gr_de normalisiert!)
+    
+    // Extrahiere den Base-Namen aus pendingDraftFilename (ohne .txt Extension)
+    const uploadBase = state.pendingDraftFilename.replace(/\.txt$/, '');
+    
+    // Füge draftBase-Prefix hinzu (enthält Pfad-Komponenten)
+    // Extrahiere nur die Pfad-Teile aus draftBase (alles vor dem letzten "__")
+    const draftBasePrefix = state.draftBase.substring(0, state.draftBase.lastIndexOf('__') + 2);
+    
+    const filebase = draftBasePrefix + uploadBase;
     const name = `${filebase}${buildVariantSuffix()}.pdf`;
-    console.log("Generated draft filename (from draftBase + timestamp):", name);
+    console.log("Generated draft filename (from upload + prefix):", name);
     return name;
   }
 

@@ -1686,19 +1686,19 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # DEFENSIVE: Prüfe auf None-Werte in colWidths
         colWidths = [max(w or 0.1, 0.1) for w in colWidths]
 
-        # KRITISCH: ULTRA-AGGRESSIVE Breiten-Skalierung für Apologie NoTag-Stabilität
-        # Problem: ReportLab subtrahiert CELL_PAD_LR_PT von jeder Spalte NACH colWidths-Übergabe
-        # Das kann zu "negative availWidth" Fehlern führen, selbst wenn colWidths passt
-        # Lösung v7: Verwende nur 80% der verfügbaren Breite (20% Reserve für Padding/Rundung)
-        # GRUND: Bei NoTag-Mode werden viele Spalten sehr schmal → Padding-Overhead steigt
+        # SICHERHEIT: Prüfe, ob die Table-Breite größer ist als die verfügbare Breite
+        # Wenn ja, skaliere die colWidths, um negative Breiten zu vermeiden
         total_table_width = sum(colWidths)
-        max_available_width = avail_w * 0.80  # 20% Reserve (erhöht von 10%)
+        # Berücksichtige Padding: 2 * CELL_PAD_LR_PT pro Spalte
+        padding_overhead = len(colWidths) * 2 * CELL_PAD_LR_PT
+        max_available_width = avail_w - padding_overhead
         
-        # IMMER skalieren (auch wenn nicht zu breit) für maximale Stabilität
-        if total_table_width > 0:
+        if total_table_width > max_available_width and max_available_width > 0:
+            # Skaliere alle colWidths proportional
             scale_factor = max_available_width / total_table_width
-            # Extra-defensiv: Garantiere min 1.0pt pro Spalte (erhöht von 0.5pt)
-            colWidths = [max(w * scale_factor, 1.0) for w in colWidths]
+            colWidths = [w * scale_factor for w in colWidths]
+            # Warnung unterdrückt: Skalierung erfolgt automatisch, keine Log-Flut nötig
+            # (Table-Breite wird automatisch angepasst, daher ist diese Warnung redundant)
 
         # NEU: Prüfe, ob englische Zeile vorhanden ist
         has_en = any(slice_en)
