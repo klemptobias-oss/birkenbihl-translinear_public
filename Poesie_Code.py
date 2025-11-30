@@ -1070,61 +1070,83 @@ def measure_line_width(gr_tokens, de_tokens=None, *, font:str, size:float, font_
     # Nimm die breitere Zeile als Basisbreite
     return max(gr_width, de_width)
 
-def measure_rendered_line_width(gr_tokens, de_tokens, *, gr_bold:bool, is_notags:bool, remove_bars_instead:bool = False) -> float:
+def measure_rendered_line_width(gr_tokens, de_tokens, *, gr_bold:bool, is_notags:bool, remove_bars_instead:bool = False, tag_config:dict = None) -> float:
     """
-    Berechnet die tatsächliche gerenderte Breite einer Zeile unter Berücksichtigung
-    aller Formatierungsoptionen (Tags, Fettdruck, Versmaß-Marker, etc.)
+    Berechnet die tatsächliche gerenderte Breite einer Zeile.
+    WICHTIG: Verwendet die GLEICHEN Mechanismen wie build_tables_for_pair() für genaue Messung!
+    
+    NEU: Berücksichtigt SAFE_EPS_PT, Extra-Puffer, Tag-Config für akkurate Breiten-Berechnung
+    von gestaffelten Zeilen (23a, 23b, etc.)
     """
     if not gr_tokens:
         gr_tokens = []
     if not de_tokens:
         de_tokens = []
 
-    # Verwende die gleichen Fonts wie in create_pdf
+    # Verwende die gleichen Parameter wie in build_tables_for_pair
     GR_SIZE = 8.4
     DE_SIZE = 7.8
     gr_font = 'DejaVu-Bold' if gr_bold else 'DejaVu'
     de_font = 'DejaVu'
-
-    # Temporär CURRENT_IS_NOTAGS setzen für korrekte Messung
-    global CURRENT_IS_NOTAGS
-    original_notags = CURRENT_IS_NOTAGS
-    CURRENT_IS_NOTAGS = is_notags
-
-    try:
-        # Berechne griechische Breite mit voller Formatierung
-        gr_width = 0.0
-        for token in gr_tokens:
-            # Verwende format_token_markup um die tatsächliche Formatierung zu bekommen
-            formatted = format_token_markup(token, is_greek_row=True, gr_bold=gr_bold, remove_bars_instead=remove_bars_instead)
-            # Entferne HTML-Tags für Breitenberechnung
-            plain_text = re.sub(r'<[^>]+>', '', formatted)
-            if plain_text.strip():
-                gr_width += _sw(plain_text, gr_font, GR_SIZE)
-
-        # Berechne deutsche Breite
-        de_width = 0.0
-        for token in de_tokens:
-            formatted = format_token_markup(token, is_greek_row=False, gr_bold=gr_bold, remove_bars_instead=remove_bars_instead)
-            plain_text = re.sub(r'<[^>]+>', '', formatted)
-            if plain_text.strip():
-                de_width += _sw(plain_text, de_font, DE_SIZE)
-
-        return max(gr_width, de_width)
-
-    finally:
-        # Stelle ursprünglichen Wert wieder her
-        CURRENT_IS_NOTAGS = original_notags
+    
+    # WICHTIG: cfg mit SAFE_EPS_PT basierend auf is_notags
+    cfg = dict(CFG)
+    if is_notags:
+        cfg['SAFE_EPS_PT'] = 3.5  # NoTag-PDFs (wie in build_tables_for_pair)
+    else:
+        cfg['SAFE_EPS_PT'] = 4.0  # Tag-PDFs (wie in build_tables_for_pair)
+    
+    tag_mode = "NO_TAGS" if is_notags else "TAGS"
+    
+    # Berechne Spaltenbreiten für ALLE Tokens (wie in build_tables_for_pair)
+    total_width = 0.0
+    
+    for token in gr_tokens:
+        # KRITISCH: Verwende die GLEICHE Logik wie in build_tables_for_pair!
+        tags_in_token = RE_TAG.findall(token)
+        
+        if tag_mode == "NO_TAGS" and tags_in_token:
+            # FALL 1: NoTag-PDF + Token hat Tags → Tags entfernen
+            core_text = RE_TAG_STRIP.sub('', token).strip()
+            for color_char in ['#', '+', '-', '§', '$', '~', '*']:
+                core_text = core_text.replace(color_char, '')
+            core_text = core_text.replace('|', '')
+            
+            w = visible_measure_token(core_text, font=gr_font, size=GR_SIZE, cfg=cfg, is_greek_row=True)
+            w += max(GR_SIZE * 0.03, 0.8)  # Extra-Puffer (wie in build_tables_for_pair)
+            
+        elif tags_in_token and tag_mode == "TAGS":
+            # FALL 2: Tag-PDF + Token hat Tags → measure_token_width_with_visibility_poesie
+            w = measure_token_width_with_visibility_poesie(
+                token, font=gr_font, size=GR_SIZE, cfg=cfg,
+                is_greek_row=True, tag_config=tag_config, tag_mode=tag_mode
+            )
+        else:
+            # FALL 3: Keine Tags
+            w = visible_measure_token(token, font=gr_font, size=GR_SIZE, cfg=cfg, is_greek_row=True)
+            w += max(GR_SIZE * 0.03, 0.8)  # Extra-Puffer (wie in build_tables_for_pair)
+        
+        total_width += w
+    
+    # Deutsche Tokens (vereinfacht, da meist kürzer als griechisch)
+    de_width = 0.0
+    for token in de_tokens:
+        w = visible_measure_token(token, font=de_font, size=DE_SIZE, cfg=cfg, is_greek_row=False)
+        de_width += w
+    
+    # Rückgabe: Maximum von griechisch und deutsch (wie in build_tables_for_pair)
+    return max(total_width, de_width)
 
 def measure_full_layout_width(gr_tokens, de_tokens, speaker, line_label, *,
                              token_gr_style, token_de_style, num_style, style_speaker,
-                             global_speaker_width_pt, gr_bold:bool = False, is_notags:bool = False) -> float:
+                             global_speaker_width_pt, gr_bold:bool = False, is_notags:bool = False, tag_config:dict = None) -> float:
     """Berechnet die Gesamtbreite einer Zeile inklusive aller Layout-Elemente."""
     # Token-Breite (robuste Berechnung)
     token_width = measure_rendered_line_width(
         gr_tokens, de_tokens,
         gr_bold=gr_bold, is_notags=is_notags,
-        remove_bars_instead=False
+        remove_bars_instead=False,
+        tag_config=tag_config  # NEU: Tag-Config übergeben
     )
 
     # Layout-Elemente Breite
@@ -2387,7 +2409,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         next_w = measure_rendered_line_width(
                             next_gr_tokens, next_de_tokens,
                             gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
-                            remove_bars_instead=True
+                            remove_bars_instead=True,
+                            tag_config=tag_config  # NEU: Tag-Config für akkurate Breiten-Berechnung!
                         )
                         cum_width_by_base[next_base_num] = cum_width_by_base.get(next_base_num, 0.0) + next_w
                 
@@ -2395,9 +2418,15 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 # Problem: Große KeepTogether-Blöcke erzwingen zu früh Seitenumbrüche
                 # Lösung: Kleinere Blöcke + keepWithNext=True
                 
+                # NEU: Abstand VOR der ersten Überschrift (nur wenn Text davor existiert!)
+                # Dies verhindert, dass Überschriften direkt am vorherigen Text kleben
+                if i > 0:  # Nur wenn nicht am Anfang des Dokuments
+                    elements.append(Spacer(1, 4*MM))  # 4mm Sicherheitsabstand vor Überschriften
+                
                 # WICHTIG: Verhindere Orphan Headlines (Überschrift ohne nachfolgenden Text am Seitenende)
-                # CondPageBreak(80mm) → Seitenumbruch wenn weniger als 80mm Platz (≈ Überschrift + 2 Zeilen)
-                elements.append(CondPageBreak(80*MM))
+                # CondPageBreak prüft, ob genug Platz für Überschrift + mindestens 1 Zeile Text
+                # REDUZIERT von 80mm auf 30mm (≈ Überschrift + 2 Zeilen, nicht 15 Zeilen!)
+                elements.append(CondPageBreak(30*MM))
                 
                 # 1. Alle Überschriften zusammen (mit keepWithNext=True im Style)
                 if len(headers) > 0:
@@ -2612,7 +2641,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 this_w = measure_rendered_line_width(
                     gr_tokens, de_tokens,
                     gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
-                    remove_bars_instead=True
+                    remove_bars_instead=True,
+                    tag_config=tag_config  # NEU: Tag-Config für akkurate Breiten-Berechnung!
                 )
                 cum_width_by_base[base_num] = cum_width_by_base.get(base_num, 0.0) + this_w
 
