@@ -843,6 +843,140 @@ function shortenPdfFilename(filename) {
   return baseName;
 }
 
+/**
+ * Analysiert hochgeladenen Translinear-Text und extrahiert Metadaten für Dateinamen-Generierung
+ * 
+ * STRATEGIE (Fallback-Hierarchie):
+ * 1. Metadaten aus Text (## METADATUM: Author=..., Work=...)
+ * 2. Dateiname-Analyse (_gr_de_, _lat_en_, _Versmaß_, etc.)
+ * 3. Sprach-Erkennung aus Code (EN/DE Zeilen zählen)
+ * 4. Work-Kontext (falls auf Werkseite)
+ * 5. Generisch (einfach Dateinamen + Suffixe)
+ * 
+ * @param {string} text - Translinear-Text Inhalt
+ * @param {string} filename - Original Dateiname (z.B. "Kyklops_gr_de_Versmass_translinear.txt")
+ * @returns {object} { author, work, language, hasVersmaß, hasDE, hasEN, confidence }
+ */
+function analyzeTranslinearText(text, filename) {
+  const result = {
+    author: null,
+    work: null,
+    language: null,      // 'gr' oder 'lat'
+    hasDE: false,
+    hasEN: false,
+    hasVersmaß: false,
+    confidence: 'unknown',  // 'high', 'medium', 'low', 'unknown'
+    source: 'none'       // 'metadata', 'filename', 'code', 'context', 'generic'
+  };
+
+  // SCHRITT 1: Metadaten aus Text extrahieren
+  const metaAuthor = text.match(/##\s*METADATUM:\s*Author\s*=\s*(.+?)$/im);
+  const metaWork = text.match(/##\s*METADATUM:\s*Work\s*=\s*(.+?)$/im);
+  
+  if (metaAuthor || metaWork) {
+    result.author = metaAuthor ? metaAuthor[1].trim() : null;
+    result.work = metaWork ? metaWork[1].trim() : null;
+    result.source = 'metadata';
+    result.confidence = 'high';
+  }
+
+  // SCHRITT 2: Dateiname analysieren (ohne .txt Extension)
+  const baseFilename = filename.replace(/\.txt$/i, '');
+  
+  // Erkenne Sprache aus Dateinamen (_gr_, _lat_)
+  if (/_gr[_\.]|^gr_/i.test(baseFilename)) {
+    result.language = 'gr';
+  } else if (/_lat[_\.]|^lat_/i.test(baseFilename)) {
+    result.language = 'lat';
+  }
+  
+  // Erkenne Übersetzungs-Sprachen aus Dateinamen
+  // WICHTIG: _gr_de_en_ ist 3-sprachig (immer gr_de_en, niemals gr_en_de!)
+  // WICHTIG: _gr_de_ oder _gr_en_ ist 2-sprachig
+  if (/_gr_de_en[_\.]|_lat_de_en[_\.]/i.test(baseFilename)) {
+    result.hasDE = true;
+    result.hasEN = true;
+    if (result.confidence === 'unknown') {
+      result.confidence = 'medium';
+      result.source = 'filename';
+    }
+  } else if (/_gr_de[_\.]|_lat_de[_\.]/i.test(baseFilename)) {
+    result.hasDE = true;
+    if (result.confidence === 'unknown') {
+      result.confidence = 'medium';
+      result.source = 'filename';
+    }
+  } else if (/_gr_en[_\.]|_lat_en[_\.]/i.test(baseFilename)) {
+    result.hasEN = true;
+    if (result.confidence === 'unknown') {
+      result.confidence = 'medium';
+      result.source = 'filename';
+    }
+  }
+  
+  // Erkenne Versmaß aus Dateinamen (mehrere Schreibweisen!)
+  if (/_(Versmaß|Versmass|versmaß|versmass)[_\.]/i.test(baseFilename)) {
+    result.hasVersmaß = true;
+  }
+  
+  // SCHRITT 3: Code-Analyse (wenn Dateiname keine klare Sprach-Info hat)
+  if (!result.hasDE && !result.hasEN) {
+    const lines = text.split('\n');
+    let deCount = 0;
+    let enCount = 0;
+    
+    // Zähle Zeilen mit erkennbar deutschen/englischen Wörtern
+    // Sampling: Erste 50 Übersetzungs-Zeilen
+    let sampleCount = 0;
+    for (const line of lines) {
+      if (sampleCount >= 50) break;
+      
+      // Skip Kommentare, Metadaten, leere Zeilen
+      if (line.trim().startsWith('#') || line.trim().startsWith('##') || !line.trim()) {
+        continue;
+      }
+      
+      // Skip griechische/lateinische Zeilen (haben meist (Tag) oder Unicode-Greek)
+      if (/\(.*\)|[α-ωΑ-Ω]/.test(line)) {
+        continue;
+      }
+      
+      // Deutsche Indizien: der|die|das|und|ist|sein|werden|zu|von
+      if (/\b(der|die|das|und|ist|sind|sein|war|werden|zu|von|mit|für|auf|dem|den|des)\b/i.test(line)) {
+        deCount++;
+        sampleCount++;
+        continue;
+      }
+      
+      // Englische Indizien: the|and|is|are|to|be|of|in|for|with
+      if (/\b(the|and|is|are|was|were|be|to|of|in|for|with|from|on|at)\b/i.test(line)) {
+        enCount++;
+        sampleCount++;
+        continue;
+      }
+      
+      sampleCount++;
+    }
+    
+    // Wenn genug Samples: Setze Sprachen
+    if (sampleCount >= 10) {
+      result.hasDE = deCount > 2;
+      result.hasEN = enCount > 2;
+      if (result.confidence === 'unknown') {
+        result.confidence = 'low';
+        result.source = 'code';
+      }
+    }
+  }
+  
+  // SCHRITT 4: Versmaß aus Code erkennen ({{METER:...}} Marker)
+  if (!result.hasVersmaß && /\{\{METER:/i.test(text)) {
+    result.hasVersmaß = true;
+  }
+
+  return result;
+}
+
 function updatePdfView(fromWorker = false) {
   if (state.source === "draft") {
     if (state.draftBuildActive) {
@@ -1242,11 +1376,22 @@ async function performRendering() {
     return;
   }
 
-  const releaseBase = buildReleaseBase();
-  if (!releaseBase) {
-    el.draftStatus.textContent =
-      "Metadaten fehlen – bitte laden Sie die Seite neu.";
-    return;
+  // WICHTIG: Wenn Datei hochgeladen wurde, nutze Upload-Basis statt Work-Kontext!
+  // Dies stellt sicher, dass PDFs mit Upload-Dateinamen (nicht Work-Namen) generiert werden
+  let releaseBase;
+  if (state.uploadBase) {
+    // Upload-Fall: Nutze analysierte Upload-Basis
+    console.log('🎯 Nutze Upload-Basis für PDF-Namen:', state.uploadBase);
+    releaseBase = state.uploadBase;
+  } else {
+    // Standard-Fall: Nutze Work-Kontext (wenn auf Werkseite)
+    releaseBase = buildReleaseBase();
+    if (!releaseBase) {
+      el.draftStatus.textContent =
+        "Metadaten fehlen – bitte laden Sie die Seite neu.";
+      return;
+    }
+    console.log('📄 Nutze Work-Basis für PDF-Namen:', releaseBase);
   }
 
   state.draftBase = releaseBase;
@@ -2306,8 +2451,59 @@ function wireEvents() {
     if (file) {
       const reader = new FileReader();
       reader.onload = (e) => {
-        el.draftText.innerHTML = addSpansToTags(e.target.result);
+        const uploadedText = e.target.result;
+        el.draftText.innerHTML = addSpansToTags(uploadedText);
         el.draftStatus.textContent = `Datei ${file.name} geladen.`;
+        
+        // WICHTIG: Analysiere hochgeladenen Text für intelligente Namensbildung
+        const analysis = analyzeTranslinearText(uploadedText, file.name);
+        console.log('📊 Translinear-Analyse:', analysis);
+        
+        // Speichere Analyse im State für spätere Verwendung
+        state.uploadAnalysis = analysis;
+        state.uploadFilename = file.name;
+        
+        // STRATEGIE: Baue draftBase basierend auf Upload-Analyse
+        // Falls hochgeladen: Verwende Upload-Dateinamen als Basis (nicht Work-Kontext!)
+        // Dies stellt sicher, dass PDFs korrekt benannt werden
+        
+        // Extrahiere Basis-Namen (ohne .txt und _translinear)
+        let uploadBase = file.name.replace(/\.txt$/i, '').replace(/_translinear$/i, '');
+        
+        // Falls der hochgeladene Text Metadaten hat (hohe Konfidenz), nutze diese
+        if (analysis.confidence === 'high' && analysis.author && analysis.work) {
+          // Nutze Metadaten für konsistente Benennung
+          const author = analysis.author.replace(/\s+/g, '_');
+          const work = analysis.work.replace(/\s+/g, '_');
+          
+          // Baue Sprach-Suffix
+          let langSuffix = '';
+          if (analysis.hasDE && analysis.hasEN) {
+            langSuffix = analysis.language === 'lat' ? '_lat_de_en' : '_gr_de_en';
+          } else if (analysis.hasDE) {
+            langSuffix = analysis.language === 'lat' ? '_lat_de' : '_gr_de';
+          } else if (analysis.hasEN) {
+            langSuffix = analysis.language === 'lat' ? '_lat_en' : '_gr_en';
+          } else {
+            langSuffix = analysis.language === 'lat' ? '_lat' : '_gr';
+          }
+          
+          // Versmaß-Suffix
+          const versmaßSuffix = analysis.hasVersmaß ? '_Versmaß' : '';
+          
+          uploadBase = `${author}_${work}${langSuffix}${versmaßSuffix}`;
+          console.log('✨ Nutze Metadaten für Basis:', uploadBase);
+        } else {
+          // Fallback: Nutze Upload-Dateinamen (robust, keine Annahmen!)
+          console.log('📝 Nutze Upload-Dateinamen als Basis:', uploadBase);
+        }
+        
+        // Setze draftBase (wird später mit Timestamp/Variant kombiniert)
+        // Format: uploadBase (ohne _translinear, das wird später hinzugefügt)
+        state.uploadBase = uploadBase;
+        
+        console.log('💾 Upload verarbeitet - Basis:', state.uploadBase);
+        
         // Nach dem Laden leeren, um eine versehentliche Wiederverwendung zu vermeiden
         event.target.value = null;
       };
