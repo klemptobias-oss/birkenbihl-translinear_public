@@ -1666,13 +1666,10 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
 
         row_gr += gr_cells; row_de += de_cells; row_en += en_cells
 
-        # Blocksatz-ähnliche Verteilung der Spaltenbreiten
-        # Berechne die tatsächlich verfügbare Breite für die Token-Spalten
-        token_avail_w = avail_w
-        if speaker_width_pt > 0:
-            token_avail_w -= (speaker_width_pt + SPEAKER_GAP_MM*mm)
-        if para_width_pt > 0:
-            token_avail_w -= (para_width_pt + PARA_GAP_MM*mm)
+        # WICHTIG: Die verfügbare Breite wurde bereits oben berechnet (avail_w)
+        # und berücksichtigt bereits speaker_width_pt und para_width_pt!
+        # Daher dürfen wir diese NICHT NOCHMAL abziehen!
+        token_avail_w = avail_w  # Bereits korrekt berechnet in Zeile 1485-1492
 
         # Verfügbare Breite für Token-Spalten
         token_slice_w = slice_w
