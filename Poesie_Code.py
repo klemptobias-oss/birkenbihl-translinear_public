@@ -2437,12 +2437,23 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
 
                     # Breite gutschreiben - NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
                     if next_base_num is not None and next_line_label and _is_staggered_label(next_line_label):
-                        next_w = measure_rendered_line_width(
+                        # KRITISCH: Berechne Token-Breite
+                        next_token_w = measure_rendered_line_width(
                             next_gr_tokens, next_de_tokens,
                             gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
                             remove_bars_instead=True,
-                            tag_config=tag_config  # NEU: Tag-Config für akkurate Breiten-Berechnung!
+                            tag_config=tag_config
                         )
+                        
+                        # KRITISCH: Addiere Sprecher-Spalten-Breite (falls vorhanden)!
+                        # Dies ist der Unterschied zwischen Zeilen mit verschiedenen Sprechern!
+                        next_speaker_w = 0.0
+                        if reserve_all_speakers or next_speaker:
+                            next_speaker_w = max(next_current_speaker_width_pt, SPEAKER_COL_MIN_MM * MM)
+                            next_speaker_w += SPEAKER_GAP_MM * MM  # Gap nach Sprecher-Spalte
+                        
+                        # GESAMT-Breite = Token-Breite + Sprecher-Spalte + Gap
+                        next_w = next_token_w + next_speaker_w
                         cum_width_by_base[next_base_num] = cum_width_by_base.get(next_base_num, 0.0) + next_w
                 
                 # OPTIMIERTE LÖSUNG gegen weiße Flächen:
@@ -2667,14 +2678,23 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             # Nach dem Rendern: Nur die Token-Breite dem Basisvers gutschreiben
             # NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
             if base_num is not None and line_label and _is_staggered_label(line_label):
-                # Nur die eigentliche Textbreite zählt für die Einrückung,
-                # Layout-Elemente (Nummern, Sprecher) stehen links und beeinflussen nicht den Textfluss
-                this_w = measure_rendered_line_width(
+                # KRITISCH: Berechne Token-Breite
+                this_token_w = measure_rendered_line_width(
                     gr_tokens, de_tokens,
                     gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
                     remove_bars_instead=True,
-                    tag_config=tag_config  # NEU: Tag-Config für akkurate Breiten-Berechnung!
+                    tag_config=tag_config
                 )
+                
+                # KRITISCH: Addiere Sprecher-Spalten-Breite (falls vorhanden)!
+                # Dies ist der Unterschied zwischen Zeilen mit verschiedenen Sprechern!
+                this_speaker_w = 0.0
+                if reserve_all_speakers or speaker:
+                    this_speaker_w = max(current_speaker_width_pt, SPEAKER_COL_MIN_MM * MM)
+                    this_speaker_w += SPEAKER_GAP_MM * MM  # Gap nach Sprecher-Spalte
+                
+                # GESAMT-Breite = Token-Breite + Sprecher-Spalte + Gap
+                this_w = this_token_w + this_speaker_w
                 cum_width_by_base[base_num] = cum_width_by_base.get(base_num, 0.0) + this_w
 
             i += 1; continue
