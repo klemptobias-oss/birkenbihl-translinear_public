@@ -44,7 +44,17 @@ export async function getWorkEntry(language, kind, category, author, work) {
 export function listAuthors(cat, language, kind, category) {
   const categoryNode = cat?.Sprachen?.[language]?.[kind]?.[category] || {};
   return Object.keys(categoryNode)
-    .map((a) => ({ author: a, display: categoryNode[a].display || a })) // Annahme: display-Name ist optional
+    .map((a) => {
+      // WICHTIG: Display-Name ist auf Werk-Ebene als "author_display" gespeichert!
+      // Hole den Display-Namen aus dem ersten Werk
+      const authorWorks = categoryNode[a];
+      const firstWorkId = Object.keys(authorWorks)[0];
+      const displayName = firstWorkId 
+        ? authorWorks[firstWorkId].author_display || a.replace(/_/g, ' ')
+        : a.replace(/_/g, ' ');
+      
+      return { author: a, display: displayName };
+    })
     .sort((x, y) => naturalCollator.compare(x.display, y.display));
 }
 
