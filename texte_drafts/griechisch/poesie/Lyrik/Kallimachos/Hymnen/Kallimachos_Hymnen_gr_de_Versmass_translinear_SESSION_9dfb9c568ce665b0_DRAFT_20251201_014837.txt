@@ -1,0 +1,2184 @@
+<!-- RELEASE_BASE:GR_poesie_Lyrik_Kallimachos_Hymnen__hymnencallimachos_gr_de_stil1_Versmass_birkenbihl -->
+<!-- TAG_CONFIG:{"nomen":{"color":"orange","hide":true,"hideTranslation":true},"nomen_N":{"color":"orange","hide":true,"hideTranslation":true},"nomen_G":{"color":"orange","hide":true,"hideTranslation":true},"nomen_D":{"color":"orange","hide":true,"hideTranslation":true},"nomen_A":{"color":"orange","hide":true,"hideTranslation":true},"nomen_V":{"color":"orange","hide":true,"hideTranslation":true},"nomen_Du":{"color":"orange","hide":true,"hideTranslation":true},"verb":{"color":"orange","hide":true,"hideTranslation":true},"verb_Pra":{"color":"orange","hide":true,"hideTranslation":true},"verb_Imp":{"color":"orange","hide":true,"hideTranslation":true},"verb_Aor":{"color":"orange","hide":true,"hideTranslation":true},"verb_AorS":{"color":"orange","hide":true,"hideTranslation":true},"verb_Per":{"color":"orange","hide":true,"hideTranslation":true},"verb_Plq":{"color":"orange","hide":true,"hideTranslation":true},"verb_Fu":{"color":"orange","hide":true,"hideTranslation":true},"verb_Du":{"color":"orange","hide":true,"hideTranslation":true},"verb_Akt":{"color":"orange","hide":true,"hideTranslation":true},"verb_Med":{"color":"orange","hide":true,"hideTranslation":true},"verb_Pas":{"color":"orange","hide":true,"hideTranslation":true},"verb_MP":{"color":"orange","hide":true,"hideTranslation":true},"verb_Inf":{"color":"orange","hide":true,"hideTranslation":true},"verb_Op":{"color":"orange","hide":true,"hideTranslation":true},"verb_Knj":{"color":"orange","hide":true,"hideTranslation":true},"verb_Imv":{"color":"orange","hide":true,"hideTranslation":true},"partizip":{"color":"violett"},"partizip_Pra":{"color":"violett","placement":"sub"},"partizip_Imp":{"color":"violett","placement":"sub"},"partizip_Aor":{"color":"violett","placement":"sub"},"partizip_AorS":{"color":"violett","placement":"sub"},"partizip_Per":{"color":"violett","placement":"sub"},"partizip_Plq":{"color":"violett","placement":"sub"},"partizip_Fu":{"color":"violett","placement":"sub"},"partizip_N":{"color":"violett","placement":"sup"},"partizip_G":{"color":"violett","placement":"sup"},"partizip_D":{"color":"violett","placement":"sup"},"partizip_A":{"color":"violett","placement":"sup"},"partizip_V":{"color":"violett","placement":"sup"},"partizip_Du":{"color":"violett","placement":"sup"},"partizip_Akt":{"color":"violett","placement":"sub"},"partizip_Med":{"color":"violett","placement":"sub"},"partizip_Pas":{"color":"violett","placement":"sub"},"partizip_MP":{"color":"violett","placement":"sub"},"adjektiv":{"color":"blue","placement":"sup"},"adjektiv_N":{"color":"blue","placement":"sup"},"adjektiv_G":{"color":"blue","placement":"sup"},"adjektiv_D":{"color":"blue","placement":"sup"},"adjektiv_A":{"color":"blue","placement":"sup"},"adjektiv_V":{"color":"blue","placement":"sup"},"adjektiv_Du":{"color":"blue","placement":"sup"},"adjektiv_Kmp":{"color":"blue","placement":"sup"},"adjektiv_Sup":{"color":"blue","placement":"sup"},"adverb":{"placement":"sup"},"adverb_Kmp":{"placement":"sup"},"adverb_Sup":{"placement":"sup"},"pronomen":{"placement":"sub"},"pronomen_N":{"placement":"sup"},"pronomen_G":{"placement":"sup"},"pronomen_D":{"placement":"sup"},"pronomen_A":{"placement":"sup"},"pronomen_Du":{"placement":"sup"},"artikel":{"placement":"sup"},"artikel_N":{"placement":"sup"},"artikel_G":{"placement":"sup"},"artikel_D":{"placement":"sup"},"artikel_A":{"placement":"sup"},"artikel_Du":{"placement":"sup"},"prp":{"placement":"sup"},"kon":{"placement":"sup"},"pt":{"placement":"sup"},"ij":{"placement":"sup"}} -->
+<!-- VERSMASS:true -->
+<!-- METER_MODE:with -->
+<!-- HIDE_PIPES:true -->
+==== Hymnen ====
+=== Gedicht 1 ===
+== εἰς Δία ==
+(1) ΖηLνὸςi(G) ἔi|οιL(Prä)(Op) τίi(Pr)(A) κενi(Pt) |ἄλLλοi(Adj)(A) παi|ρὰL(Prp) σπονL|δῇLσινi(D) ἀi|είLδεινL(Prä)(Inf)(Akt)|
+(1) des|Zeus wäre was wohl anderes bei den|Libationen zu|singen
+(2) λώLιiονi(Adv)(Kmp) |ἢL(Kon) θεiὸνi(A) |αὐLτόνi(Pr)(A), ἀi|εὶL(Adv) μέiγανi(Adj)(A), |αἰLὲνi(Adv) ἄi|ναLκταL(A),|
+(2) besser als den|Gott ihn|selbst, immer groß, immer den|Herrscher,
+(3) ΠηLλαiγόi|νωνL(G) ἐiλαi|τῆLραi(A), διi|καLσπόiλονi(A) |οὐLραiνίi|δῃLσιL(D);|
+(3) der|Pelagonen Lenker, Richter den|Uraniden;
+(4) πῶςL(Adv) καίL(Kon) |μινL(Pr)(A), ΔιL|κταῖLονi(Adj)(A) ἀi|είLσοiμενi(Fu)(Akt) |ἠLὲi(Kon) Λυi|καῖLονL(Adj)(A);|
+(4) wie und ihn, Diktaisch wir|werden|singen oder Lykaeisch;
+(5) ἐνL(Prp) δοιL|ῇL(Adj)(D) μάiλαi(Adv) |θυLμόςi(N), ἐi|πεὶL(Kon) γέiνοςi(N) |ἀμLφήL|ριLστονL(Adj)(N).|
+(5) in dem|Zwiespalt sehr der|Sinn, weil Abstammung umstritten.
+(6) ΖεῦL(V), σὲi(Pr)(A) μὲνi(Pt) |ἸLδαίL|οιLσινi(Adj)(D) ἐνi(Prp) |οὔLρεiσίi(D) |φαLσιi(Prä)(Akt) γεi|νέLσθαιL(AorS)(Inf)(Med),|
+(6) Zeus, dich zwar ida|eischen in Bergen sie|sagen geboren|zu|werden,
+(7) ΖεῦL(V), σὲi(Pr)(A) δ᾽(Pt) ἐνi(Prp) |ἈρLκαiδίi|ῃL(D)· πόiτεi|ροιL(Pr)(N), πάiτερi(V), |ἐLψεύL|σανLτοL(Aor)(Med);|
+(7) Zeus, dich aber in Arkadien· wer|von|beiden, Vater, logen;
+(8) "ΚρῆLτεςi(N) ἀi|εὶL(Adv) ψεῦL|σταιL(N)· " καὶL(Kon) |γὰρL(Pt) τάiφονi(A), |ὦL(ij) ἄiναi(V), |σεῖLοL(Pr)(G)|
+(8) "Kreter immer Lügner· " und denn Grab, o Herr, von|dir
+(9) ΚρῆLτεςi(N) ἐi|τεLκτήL|νανLτοi(Aor)(Med)· σὺi(Pr)(N) |δ᾽(Pt) οὐL(Pt) θάiνεςi(AorS)(Akt), |ἐσLσὶi(Prä) γὰρi(Pt) |αἰLείL(Adv).|
+(9) Kreter machten|sich· du aber nicht starb|st, bist denn immer.
+(10) ἐνL(Prp) δέi(Pt) σεi(Pr)(A) |ΠαρLραiσίi|ῃL(D) ῬείL|ηL(N) τέiκενi(AorS)(Akt), |ἧLχιi(Adv) μάi|λιLσταL(Adv)|
+(10) in aber dich in|Parrhasia Rhea gebar, wo am|meisten
+(11) ἔLσκενi(Imp) ὄi|ροςL(N) θάL|μνοιLσιi(D) πεi|ριLσκεiπέςi(Adj)(N)· |ἔνLθενi(Adv) ὁi(Art)(N) |χῶLροςL(N)|
+(11) war Berg mit|Sträuchern rings|um|bedeckt· von|dort der Ort
+(12) ἱLεiρόςi(Adj)(N), |οὐLδέi(Kon) τίi(Pr)(A) |μινL(Pr)(A) κεL|χρηLμέiνονi(Per)(M/P)(A) |ΕἰLλειL|θυίLηςL(G)|
+(12) heilig, und|nicht etwas ihn bedurft|habend der|Eileithyia
+(13) ἑρLπεiτὸνi(N) |οὐLδὲi(Kon) γυi|νὴL(N) ἐiπιi|μίσLγεiταιi(Prä)(M/P), |ἀλLλάi(Kon) ἑi(Pr)(A) |ῬείLηςL(G)|
+(13) Kriech|tier und|nicht Frau nähert|sich, sondern sie der|Rhea
+(14) ὠLγύiγιi|ονL(Adj)(A) καiλέi|ουLσιi(Prä)(Akt) λεi|χώLιiονi(A) |ἈLπιiδαi|νῆLεςL(N).|
+(14) uralt nennen|sie Gebär|lager Apidaneer.
+(15) ἔνLθαi(Adv) σ᾽(Pr)(A) ἐi|πεὶL(Kon) μήL|τηρL(N) μεiγάi|λωνL(Adj)(G) ἀiπεi|θήLκαiτοi(Aor)(Med) |κόλLπωνL(G)|
+(15) dort dich nachdem Mutter der|großen niederlegte Schöße
+(16) αὐLτίiκαi(Adv) |δίLζηL|τοL(Imp)(Med) ῥόiονi(A) |ὕLδαiτοςi(G), |ᾧL(Pr)(D) κεi(Pt) τόi|κοιLοL(G)|
+(16) sofort suchte|sie Strom des|Wassers, mit|welchem wohl der|Geburt
+(17) λύLμαiταi(A) |χυτLλώL|σαιLτοi(Aor)(Med)(Op), τεi|ὸνL(Adj)(A) δ᾽(Pt) ἐiνὶi(Prp) |χρῶLταi(A) λοi|έσLσαιL(Aor)(Inf)(Akt).|
+(17) Unrat fort|spülen|möchte, deinen aber in Leib waschen|zu.
+(18) ΛάLδωνL(N) |ἀλλL᾽(Kon) οὔL|πωL(Adv) μέiγαςi(Adj)(N) |ἔρLρεiενi(Imp)(Akt) |οὐδL᾽(Kon) Ἐiρύi|μανLθοςL(N),|
+(18) Ladon aber noch|nicht groß floß und|nicht Erymanthos,
+(19) λευLκόiταi|τοςL(Adj)(N)(Sup) ποiταi|μῶνL(G), ἔiτιi(Adv) |δ᾽(Pt) ἄLβροiχοςi(Adj)(N) |ἦLενi(Imp)(Akt) ἅi|παLσαL(Adj)(N)|
+(19) am|weißesten der|Flüsse, noch aber regen|los war ganz
+(20) ἈρLκαiδίi|ηL(N)· μέλL|λενL(Imp)(Akt) δὲi(Pt) μάλi᾽(Adv) |εὔLυL|δροςL(Adj)(N) καiλέi|εLσθαιL(Prä)(M/P)(Inf)|
+(20) Arkadien· sollte aber sehr wasser|reich genannt|werden
+(21) αὖLτιςi(Adv)· ἐi|πεὶL(Kon) τηL|μόσLδεi(Adv), Ῥέi|ηL(N) ὅτi᾽(Kon) ἐi|λύLσαiτοi(Aor)(Med) |μίLτρηνL(A),|
+(21) wieder· denn da|mals|hier, Rhea als löste|sich Gürtel,
+(22) ἦL(Pt) πολL|λὰςL(Adj)(A) ἐiφύi|περLθεi(Adv) σαi|ρωLνίiδαςi(A) |ὑLγρὸςi(Adj)(N) Ἰi|άLωνL(N)|
+(22) wahrlich viele von|oben|her Reisig|bündel nass Iaon
+(23) ἤLειL|ρενL(Imp)(Akt), πολL|λὰςL(Adj)(A) δὲi(Pt) Μέi|λαςL(N) ὤκL|χηLσενi(Aor)(Akt) ἁi|μάLξαςL(A),|
+(23) hob, viele aber Melas führte Wagen,
+(24) πολLλὰi(Adj)(A) δὲi(Pt) |ΚαρLνίL|ωLνοςi(G) ἄi|νωL(Adv) διiεi|ροῦL(Adj)(G) περi(Pt) ἐi|όνLτοςL(Prä)(Akt)(G)|
+(24) vieles aber des|Karnion oben heiligen doch seiend
+(25) ἰLλυL|οὺςL(Adj)(A) ἐiβάi|λονLτοi(Aor)(Med) κιi|νώLπεiταi(A), |νίσLσεiτοi(Imp)(M/P) |δ᾽(Pt) ἀLνὴρL(N)|
+(25) schlammige warfen|sich staub|farbene, ging aber Mann
+(26) πεLζὸςi(Adj)(N) ὑi|πὲρL(Prp) ΚρᾶL|θίνL(A) τεi(Pt) ποi|λύLστιL|όνL(Adj)(A) τεi(Pt) Μεi|τώLπηνL(A)|
+(26) zu|Fuß über Krathin und viel|säulige und Metope
+(27) διLψαiλέi|οςL(Adj)(N)· τὸi(Art)(N) δὲi(Pt) |πολLλὸνi(Adj)(N) ὕi|δωρL(N) ὑiπὸi(Prp) |ποσLσὶνi(D) ἔi|κειLτοL(Imp)(M/P).|
+(27) durstig· das aber viel Wasser unter Füßen lag.
+(28) καίL(Kon) ῥ᾽(Pt) ὑπi᾽(Prp) ἀi|μηLχαiνίi|ηςL(G) σχοiμέi|νηL(Aor)(Med)(N) φάiτοi(Imp)(Med) |πότLνιiαi(N) |ῬείLηL(N)·|
+(28) und dann unter Rat|losigkeit ergriffen|seiend sprach Herrin Rhea·
+(29) "ΓαῖLαi(N) φίi|ληL(Adj)(N), τέiκεi(AorS)(Akt)(Imv) |καὶL(Kon) σύi(Pr)(N)· τεi|αὶL(Adj)(N) δ᾽(Pt) ὠL|δῖLνεςi(N) ἐi|λαLφραίL(Adj)(N)."|
+(29) "Gaia liebe, gebäre auch du· deine aber Geburts|wehen leicht."
+(30) εἶLπεi(AorS)(Akt) καὶi(Kon) |ἀνLταiνύi|σαLσαi(Aor)(Akt)(N) θεi|ὴL(N) μέiγανi(Adj)(A) |ὑLψόiθιi(Adv) |πῆLχυνL(A)|
+(30) sprach und aus|streckend Göttin großen empor Elle
+(31) πλῆLξενi(AorS)(Akt) ὄi|ροςL(A) σκήL|πτρῳL(D)· τὸi(Art)(N) δέi(Pt) |οἱL(Pr)(D) δίiχαi(Adv) |πουLλὺi(Adv) διi|έLστηL(AorS)(Akt),|
+(31) schlug Berg mit|Zepter· es aber ihr entzwei weit trat|auseinander,
+(32) ἐκL(Prp) δ᾽(Pt) ἔiχεi|ενL(Imp)(Akt) μέiγαi(Adj)(A) |χεῦLμαi(A)· τόi|θιL(Adv) χρόiαi(A) |φαιLδρύL|ναLσαL(Aor)(Akt)(N),|
+(32) aus aber goss großen Strom· dort Haut hell|machend,
+(33) ὦLναi(ij), τεi|ὸνL(Adj)(A) σπείL|ρωLσεi(Aor)(Akt), Νέi|δῃL(D) δέi(Pt) σεi(Pr)(A) |δῶLκεi(AorS)(Akt) κοi|μίLζεινL(Prä)(Inf)(Akt)|
+(33) o, deinen wickelte, der|Neda aber dich gab zu|tragen
+(34) κευθLμὸνi(A) ἔi|σωL(Adv) ΚρηL|ταῖLονi(Adj)(A), ἵi|ναL(Kon) κρύiφαi(Adv) |παιLδεύL|οιLοL(Prä)(M/P)(Knj),|
+(34) verborgen hinein kretischen, damit heimlich erzogen|würdest,
+(35) πρεLσβυiτάi|τῃL(Adj)(D)(Sup) ΝυμL|φέωνL(G) αἵL(Pr)(N) |μινL(Pr)(A) τόiτεi(Adv) |μαιLώL|σανLτοL(Aor)(Med),|
+(35) ältesten der|Nymphen die ihn damals entbanden,
+(36) πρωLτίL|στῃL(Adj)(D)(Sup) γεiνεi|ῇL(D) μεiτάi(Prp) |γεL(Pt) Στύiγαi(A) |τεL(Pt) Φιiλύi|ρηνL(A) τεL(Pt).|
+(36) aller|ersten Geschlecht nach doch Styx und Philyre und.
+(37) οὐδL᾽(Pt) ἁiλίi|ηνL(Adj)(A) ἀiπέi|τειLσεi(Aor)(Akt) θεi|ὴL(N) χάiρινi(A), |ἀλLλὰi(Kon) τὸi(Art)(A) |χεῦLμαL(A)|
+(37) und|nicht meer|ische vergalt die|Göttin Gunst, sondern den Strom
+(38) κεῖLνοi(Pr)(A) Νέi|δηνL(A) ὀiνόi|μηLνεi(Aor)(Akt)· τὸi(Art)(N) |μένL(Pt) ποiθιi(Adv) |πουLλὺi(Adv) κατi᾽(Prp) |αὐLτὸL(Pr)(A)|
+(38) jenen Neda benannte· das zwar irgendwo sehr längs selb|es
+(39) ΚαυLκώL|νωνL(G) πτοiλίi|εLθρονi(N), ὃi(Pr)(N) |ΛέLπρειL|ονL(N) πεiφάi|τιLσταιL(Per)(M/P),|
+(39) der|Kaukōner Stadt, die Lepreion ist|benannt,
+(40) συμLφέiρεi|ταιL(Prä)(M/P) ΝηL|ρῆLιi(D), παi|λαιLόiταi|τονL(Adj)(N)(Sup) δέi(Pt) μινi(Pr)(A) |ὕLδωρL(N)|
+(40) mündet|zusammen in|Nereus, ältest|es aber ihn Wasser
+(41) υἱLωL|νοὶL(N) πίL|νουLσιi(Prä)(Akt) Λυi|καLοiνίi|ηςL(G) ἄρL|κτοιLοL(G).|
+(41) Enkel|söhne trinken der|Lykaon|ischen des|Bären.
+(42) εὖLτεi(Kon) Θεi|νὰςL(A) ἀiπέi|λειLπενi(Imp)(Akt) ἐi|πὶL(Prp) ΚνωL|σοῖLοi(G) φέi|ρουLσαL(Prä)(Akt)(N),|
+(42) wenn Thenas verließ nach Knossos tragend,
+(43) ΖεῦL(V) πάiτερi(V), |ἡL(Art)(N) ΝύμL|φηL(N) σεi(Pr)(A) Θ̔εi|ναὶὶL(N) δ᾽(Pt) ἔiσανi(Imp)(Akt) |ἐγLγύiθιi(Adv) |ΚνωLσοὖL(G),|
+(43) Zeus Vater, die Nymphe dich Thenai aber waren nah von|Knossos,
+(44) τουLτάiκιi(Adv) |τοιL(Pt) πέiσεi(AorS)(Akt), |δαῖLμονi(V), ἄπi᾽(Prp) |ὀμLφαiλόςi(N)· |ἔνLθενi(Adv) ἐi|κεῖLνοL(Pr)(N)|
+(44) damals|gleich ja fiel, Dämon, von Nabel· von|dort jen|es
+(45) ὀμLφάiλιi|ονL(Adj)(N) μεiτέi|πειLταi(Adv) πέi|δονL(N) καiλέi|ουLσιi(Prä)(Akt) Κύi|δωLνεςL(N).|
+(45) nabel|iger später Boden nennen die|Kydonen.
+(46) ΖεῦL(V), σὲi(Pr)(A) δὲi(Pt) |ΚυρLβάνL|τωνL(G) ἑiτάi|ραιL(N) προiσεi|πηLχύL|νανLτοL(Aor)(Med)|
+(46) Zeus, dich aber der|Korybanten Genossen streckten|aus
+(47) ΔιLκταῖL|αιL(Adj)(N) Μεiλίi|αιL(N), σὲi(Pr)(A) δ᾽(Pt) ἐi|κοίLμιiσενi(Aor)(Akt) |ἈLδρήL|στειLαL(N)|
+(47) diktäische Melien, dich aber ließ|einschlafen Adrasteia
+(48) λίLκνῳi(D) ἐi|νὶL(Prp) χρυiσέi|ῳL(Adj)(D), δὺi(Adj) δ᾽(Pt) ἐi|θήLσαiοi(Aor)(Med) |πίLοiναi(Adj)(A) |μαLζὸνL(A)|
+(48) Wiege in golden|er, zwei aber nahmst fetten Busen
+(49) αἰLγὸςi(G) Ἀi|μαλLθείL|ηςL(G), ἐiπὶi(Prp) |σὲL(Pr)(A) γλυiκὺi(Adj)(N) |κηLρίiονi(N) |ἔLβρωςL(AorS)(Akt).|
+(49) der|Ziege Amaltheia, auf dich süße Honig|wabe aßest.
+(50) γένLτοi(Aor)(Med) γὰρi(Pt) |ἐLξαiπιi|ναῖLαi(Adv) Παi|ναLκρίiδοςi(G) |ἔρLγαi(N) μεi|λίσLσηςL(G)|
+(50) wurden denn plötzlich der|Panakris Werke der|Biene
+(51) ἸLδαίL|οιςL(Adj)(D) ἐνi(Prp) ὄi|ρεσLσιi(D), τάi(Art)(N) |τεL(Pt) κλείL|ουLσιi(Prä)(Akt) Πάi|ναLκραL(N).|
+(51) ida|ischen in Bergen, die und preisen Panakra.
+(52) οὖLλαi(Adv) δὲi(Pt) |ΚούLρηL|τέςL(N) σεi(Pr)(A) πεi|ρὶL(Prp) πρύiλινi(A) |ὠρLχήL|σανLτοL(Aor)(Med)|
+(52) freundlich aber Kureten dich um Krieg|tanz tanzten
+(53) τεύLχεiαi(A) |πεLπλήL|γονLτεςi(Per)(Akt)(N), ἵi|ναL(Kon) Κρόiνοςi(N) |οὔLαiσινi(D) |ἠLχὴνL(A)|
+(53) Waffen schlagend, damit Kronos den|Ohren Klang
+(54) ἀLσπίiδοςi(G) |εἰLσαiΐi|οιL(Prä)(Akt)(Knj) καὶL(Kon) |μήL(Pt) σεiοi(Pr)(G) |κουLρίL|ζονLτοςL(Prä)(Akt)(G).|
+(54) des|Schildes höre|möge und nicht deines säugenden.
+(55) καLλὰi(Adj)(N) μὲνi(Pt) |ἠLέL|ξευL(Aor)(Akt), καiλὰi(Adj)(N) |δ᾽(Pt) ἔLτραiφεςi(Aor)(M/P), |οὐLράiνιi|εL(Adj)(V) ΖεῦL(V),|
+(55) schön zwar gediehst, schön aber wurdest|aufgezogen, himmlischer Zeus,
+(56) ὀLξὺi(Adv) δ᾽(Pt) ἀi|νήLβηL|σαςL(Aor)(Akt), ταiχιi|νοὶL(Adj)(N) δέi(Pt) τοιi(Pt) |ἦλLθονi(AorS)(Akt) ἴi|ουLλοιL(N).|
+(56) schnell aber erwuchs|t, rasche aber dir kamen Bärt|flaum.
+(57) ἀλλL᾽(Kon) ἔiτιi(Adv) |παιδLνὸςi(Adj)(N) ἐi|ὼνL(Prä)(Akt)(N) ἐL|φράσLσαiοi(Aor)(Med) |πάνLταi(Adj)(A) τέi|λειLαL(Adj)(A)·|
+(57) aber noch kind|lich seiend ersannst alles voll|endet·
+(58) τῶL(Adv) τοιL(Pt) |καὶL(Kon) γνωL|τοὶL(N) προiτεi|ρηLγεiνέi|εςL(Adj)(N) περi(Pt) ἐi|όνLτεςL(Prä)(Akt)(N)|
+(58) darum dir auch Verwandte früher|geboren doch seiend
+(59) οὐLραiνὸνi(A) |οὐκL(Pt) ἐiμέi|γηLρανi(Aor)(Akt) ἔi|χεινL(Prä)(Inf)(Akt) ἐiπιi|δαίLσιiονi(Adj)(A) |οἶLκονL(A).|
+(59) Himmel nicht missgönnten zu|haben gemein|samen Haus.
+(60) δηLναιL|οὶL(Adj)(N) δ᾽(Pt) οὐL(Pt) |πάμLπανi(Adv) ἀi|ληLθέiεςi(Adj)(N) |ἦLσανi(Imp)(Akt) ἀi|οιLδοίL(N).|
+(60) lohn|sänger aber nicht ganz wahr waren Sänger.
+(61) φάνLτοi(Imp)(M/P) πάi|λονL(N) Κροiνίi|δῃLσιi(D) διi|άLτριiχαi(Adv) |δώLμαiταi(A) |νεῖLμαιL(Aor)(M/P)(Inf)·|
+(61) sagten Los den|Kroniden drei|geteilt Häuser zu|teilen·
+(62) τίςL(Pr)(N) δέi(Pt) κ᾽(Pt) ἐπi᾽(Prp) |ΟὐLλύμL|πῳL(D) τεi(Pt) καὶi(Kon) |ἌιLδιL(D) |κλῆLρονi(A) ἐi|ρύσLσαιL(Aor)(Akt)(Inf),|
+(62) wer aber wohl auf dem|Olymp und auch dem|Hades Los ziehen,
+(63) ὃςL(Pr)(N) μάiλαi(Adv) |μὴL(Pt) νεiνίi|ηLλοςi(Adj)(N); ἐπi᾽(Prp) |ἰLσαίL|ῃL(Adj)(D) γὰρi(Pt) ἔi|οιLκεL(Per)(Akt)|
+(63) wer sehr nicht unverständig; auf gleicher denn scheint
+(64) πήLλαL|σθαιL(Aor)(Med)(Inf)· τὰi(Art)(A) δὲi(Pt) |τόσLσονi(Adv) ὅi|σονL(Adv) διiὰi(Prp) |πλεῖLστονi(Adj)(A)(Sup) ἔi|χουLσιL(Prä)(Akt).|
+(64) losen· die aber so|weit wie|weit um meiste haben.
+(65) ψευLδοίL|μηνL(Prä)(Med)(Op) ἀiίi|ονLτοςi(Prä)(Akt)(G) ἅi(Pr)(A) |κενL(Pt) πεiπίi|θοιLενi(Per)(Akt)(Op) ἀi|κουLήνL(A).|
+(65) ich|würde|lügen des|Hörenden was wohl würden|überzeugen das|Gehör.
+(66) οὔL(Pt) σεi(Pr)(A) θεi|ῶνL(G) ἐσL|σῆLναi(A) πάi|λοιL(D) θέiσανi(Aor)(Akt), |ἔρLγαi(A) δὲi(Pt) |χειLρῶνL(G),|
+(66) nicht dich der|Götter Herrscher durch|Lose setzten, Werke aber der|Hände,
+(67) σήL(Adj)(N) τεi(Pt) βίi|ηL(N) τόi(Art)(N) τεi(Pt) |κάρLτοςi(N), ὃi(Pr)(N) |καὶL(Kon) πέiλαςi(Adv) |εἵLσαiοi(Aor)(Med) |δίLφρουL(G).|
+(67) deine und Kraft das auch Stärke, die und nahe setztest des|Sitzes.
+(68) θήLκαiοi(Aor)(Med) |δ᾽(Pt) οἰLωL|νῶνL(G) μέγi᾽(Adv) ὑi|πείLροiχονi(Adj)(A) |ἀγLγεiλιi|ώLτηνL(A)|
+(68) machtest aber der|Vögel sehr herausragend Boten
+(69) σῶνL(Adj)(G) τεiράi|ωνL(G)· ἅi(Pr)(A) τ᾽(Pt) ἐi|μοῖLσιi(Adj)(D) φίi|λοιςL(D) ἐνL|δέLξιiαi(Adv) |φαίLνοιςL(Prä)(Akt)(Op).|
+(69) deiner Wunder|zeichen· die und meinen Freunden günstig würdest|erscheinen.
+(70) εἵLλεiοi(Aor)(Med) |δ᾽(Pt) αἰLζηL|ῶνL(G) ὅi(Pr)(A) τιi(Pr)(A) |φέρLταiτονi(Adj)(A)(Sup)· |οὐL(Pt) σύi(Pr)(N) γεi(Pt) |νηLῶνL(G)|
+(70) wähltest aber der|Männer was auch|immer das|Beste· nicht du eben der|Schiffe
+(71) ἐμLπεiράi|μουςL(Adj)(A), οὐκL(Pt) |ἄνLδραi(A) σαi|κέLσπαiλονi(Adj)(A), |οὐL(Pt) μὲνi(Pt) ἀi|οιLδόνL(A)·|
+(71) seefahr|kundig, nicht den|Mann Schild|schwinger, noch zwar Sänger·
+(72) ἀλLλὰi(Kon) τὰi(Art)(A) |μὲνL(Pt) μαiκάi|ρεσLσινi(D) ὀi|λίLζοiσινi(Adj)(D) |αὖLθιi(Adv) παi|ρῆLκαςL(Aor)(Akt)|
+(72) sondern die zwar den|Seligen geringeren sogleich ließest|über
+(73) ἄλLλαi(Adj)(A) μέi|λεινL(Prä)(Inf)(Akt) ἑiτέi|ροιLσιi(Adj)(D), σὺi(Pr)(N) |δ᾽(Pt) ἐLξέiλεi|οL(Aor)(Med) πτοiλιi|άρLχουςL(A)|
+(73) anderes sorgen|zu anderen, du aber wähltest|aus Stadt|herrscher
+(74) αὐLτούςL(Pr)(A), |ὧνL(Pr)(G) ὑiπὸi(Prp) |χεῖLραi(A) γεi|ωLμόiροςi(N), |ὧνL(Pr)(G) ἴiδριςi(Adj)(N) |αἰχLμῆςL(G),|
+(74) sie|selbst, deren unter der|Hand der|Bauer, deren kundig im|Speer,
+(75) ὧνL(Pr)(G) ἐiρέi|τηςL(N), ὧνL(Pr)(G) |πάνLταi(Adj)(A)· τίi(Pr)(N) |δ᾽(Pt) οὐL(Pt) κραiτέi|ονLτοςi(Prä)(Akt)(G) ὑπi᾽(Prp) |ἰσLχύνL(A);|
+(75) deren Ruderer, deren alles· was aber nicht des|Herrschenden unter die|Kraft;
+(76) αὐLτίiκαi(Adv) |χαλLκῆL|αςL(A) μὲνi(Pt) ὑi|δείLοiμενi(Prä)(Akt) |ἩLφαίL|στοιLοL(G),|
+(76) sogleich Schmiede zwar ordnen|wir|zu des|Hephaistos,
+(77) τευLχηL|στὰςL(A) δ᾽(Pt) ἌL|ρηLοςi(G), ἐi|παLκτῆL|ραςL(A) δὲi(Pt) Χιi|τώLνηςL(G)|
+(77) Waffen|macher aber des|Ares, Jäger aber der|Chitōn|tragenden
+(78) ἈρLτέiμιi|δοςL(G), ΦοίL|βουL(G) δὲi(Pt) λύi|ρηςL(G) εὖL(Adv) |εἰLδόiταςi(Per)(Akt)(A) |οἴLμουςL(A)·|
+(78) der|Artemis, des|Phoibos aber der|Leier gut kundige Weisen·
+(79) ἐκL(Prp) δὲi(Pt) Διi|ὸςL(G) βαiσιi|λῆLεςi(N), ἐi|πεὶL(Kon) Διiὸςi(G) |οὐLδὲνi(Pr)(N) ἀi|νάLκτωνL(G)|
+(79) aus aber des|Zeus Könige, weil des|Zeus nichts der|Herrscher
+(80) θειLόiτεi|ρονL(Adj)(A)(Kmp)· τῶL(Adv) |καίL(Kon) σφεi(Pr)(A) τεi|ὴνL(Adj)(A) ἐL|κρίLναiοi(Aor)(Med) |λάLξινL(A).|
+(80) göttlicher· darum und sie zu|deinem wähltest Anteil.
+(81) δῶLκαςL(Aor)(Akt) |δὲL(Pt) πτοiλίi|εLθραi(A) φυi|λασLσέiμενi(Prä)(Inf)(Akt), |ἵLζεiοi(Prä)(Med)(Imv) |δ᾽(Pt) αὐLτὸςL(Pr)(N)|
+(81) gabst aber Städte zu|bewachen, setz|dich aber selbst
+(82) ἄLκρῃσL᾽(D) |ἐνL(Prp) ποiλίi|εσLσινi(D), ἐi|πόLψιiοςi(Adj)(N) |οἵL(Pr)(N) τεi(Pt) δίi|κῃLσιL(D)|
+(82) auf|Höhen in den|Städten, über|wachend die und mit|Urteilen
+(83) λαLὸνi(A) ὑi|πὸL(Prp) σκοiλιi|ῇσL᾽(Adj)(D) οἵL(Pr)(N) |τ᾽(Pt) ἔμLπαiλινi(Adv) |ἰLθύL|νουLσινL(Prä)(Akt)·|
+(83) das|Volk unter krummen die und umgekehrt lenken·
+(84) ἐνL(Prp) δὲi(Pt) ῥυi|ηLφεiνίi|ηνL(A) ἔiβαi|λέςL(Aor)(Akt) σφιiσινi(Pr)(D), |ἐνL(Prp) δ᾽(Pt) ἅiλιςi(Adv) |ὄλLβονL(A)·|
+(84) in aber strömende|Fülle warfst ihnen, in aber reichlich Glück|Reichtum·
+(85) πᾶLσιi(Adj)(D) μένi(Pt), |οὐL(Pt) μάiλαi(Adv) |δ᾽(Pt) ἶLσονi(Adj)(A). ἔi|οιLκεi(Per)(Akt) δὲi(Pt) |τεκLμήL|ραLσθαιL(Aor)(Med)(Inf)|
+(85) allen zwar, nicht sehr aber gleich. scheint aber zu|beurteilen
+(86) ἡLμεiτέi|ρῳL(Adj)(D) μεiδέi|ονLτιi(D)· πεi|ριLπρὸi(Adv) γὰρi(Pt) |εὐLρὺi(Adv) βέi|βηLκενL(Per)(Akt).|
+(86) unserem Lenker· weit|hinaus denn weit ist|geschritten.
+(87) ἑLσπέiριi|οςL(Adv) κεῖL|νόςL(Pr)(N) γεi(Pt) τεi|λεῖL(Prä)(Akt) τάi(Art)(A) κενi(Pt) |ἦLριi(Adv) νοi|ήLσῃL(Aor)(Akt)(Knj)·|
+(87) abends jener eben vollbringt was wohl morgens ersinnt·
+(88) ἑLσπέiριi|οςL(Adv) τὰi(Art)(A) μέi|γιLσταi(Adj)(A)(Sup), τὰi(Art)(A) |μείLοiναi(Adj)(A)(Kmp) |δ᾽(Pt), εὖLτεi(Kon) νοi|ήLσῃL(Aor)(Akt)(Knj).|
+(88) abends die größten, die geringeren aber, sobald er|denkt.
+(89) οἱL(Pr)(N) δὲi(Pt) τὰi(Art)(A) |μὲνL(Pt) πλειL|ῶLνιi(Adj)(D)(Kmp), τὰi(Art)(A) |δ᾽(Pt) οὐχL(Pt) ἑiνίi(Adj)(D), |τῶνL(Art)(G) δ᾽(Pt) ἀiπὸi(Prp) |πάμLπανL(Adv)|
+(89) die|anderen aber manches zwar in|mehrerem, manches aber nicht in|einem, von|denen aber ganz|weg|von gänzlich
+(90) αὐLτὸςi(Pr)(N) ἄi|νηνL(A) ἐiκόi|λουLσαςi(Aor)(Akt), ἐi|νέLκλασL|σαςL(Aor)(Akt) δὲi(Pt) μεi|νοιLνήνL(A).|
+(90) du|selbst Vollendung kürztest, zerbrachst aber Vorhaben.
+(91) χαῖLρεi(Prä)(Akt)(Imv) μέi|γαL(Adv), Κροiνίi|δηL(V) παiνυi|πέρLταiτεi(Adj)(V)(Sup), |δῶLτορi(V) ἐi|άLωνL(G),|
+(91) sei|gegrüßt sehr, Kronide höchst|erhabener, Geber der|Güter,
+(92) δῶLτορi(V) ἀi|πηLμοiνίi|ηςL(G). τεiὰi(Adj)(A) |δ᾽(Pt) ἔργLμαiταi(A) |τίςL(Pr)(N) κενi(Pt) ἀi|είLδοιL(Prä)(Akt)(Op);|
+(92) Geber der|Unversehrtheit. deine aber Werke wer wohl würde|singen;
+(93) οὐL(Pt) γέiνετi᾽(Aor)(M/P), |οὐκL(Pt) ἔL|σταιL(Fu), τίςL(Pr)(N) |κενL(Pt) Διiὸςi(G) |ἔργLματi᾽(A) ἀi|είLσαιL(Aor)(Akt)(Inf).|
+(93) nicht ist|geworden, nicht wird|sein, wer wohl des|Zeus Werke zu|besingen.
+(94) χαῖLρεi(Prä)(Akt)(Imv) πάi|τερL(V), χαῖρL᾽(Prä)(Akt)(Imv) |αὖLθιi(Adv)· δίi|δουL(Prä)(Akt)(Imv) δ᾽(Pt) ἀiρεi|τήνL(A) τ᾽(Pt) ἄiφεi|νόςL(G) τεL(Pt).|
+(94) sei|gegrüßt Vater, sei|gegrüßt wiederum· gib aber Tugend und des|Reichtums auch.
+(95) οὔτL᾽(Pt) ἀiρεi|τῆςL(G) ἄiτερi(Prp) |ὄλLβοςi(N) ἐi|πίLσταiταιi(Prä)(M/P) |ἄνLδραςi(A) ἀi|έLξεινL(Prä)(Inf)(Akt)|
+(95) weder der|Tugend ohne Glück|Reichtum versteht Männer zu|mehren
+(96) οὔτL᾽(Pt) ἀiρεi|τὴL(N) ἀiφέi|νοιLοi(G)· δίi|δουL(Prä)(Akt)(Imv) δ᾽(Pt) ἀiρεi|τήνL(A) τεi(Pt) καὶi(Kon) |ὄλLβονL(A).|
+(96) noch Tugend des|Reichtums· gib aber Tugend und auch Glück|Reichtum.
+=== Gedicht 2 ===
+== εἰς Ἀπόλλωνα ==
+(1) οἷLονi(Adv) ὁi(Art)(N) |τὠLπόλL|λωLνοςi(Art)(G) ἐi|σείLσαiτοi(Aor)(Med) |δάφLνιiνοςi(Adj)(N) |ὅρLπηξL(N),|
+(1) wie|sehr der des|Apollon schüttelte|sich lorbeer|ner Zweig,
+(2) οἷLαi(Adv) δ᾽(Pt) ὅi|λονL(Adj)(A) τὸi(Art)(A) μέi|λαLθρονi(A)· ἑi|κάςL(Adv), ἑiκὰςi(Adv) |ὅLστιςi(Pr)(N) ἀi|λιLτρόςL(Adj)(N).|
+(2) wie|sehr aber ganz das Hallen|dach· fort, fort wer|immer frevel|haft.
+(3) καὶL(Kon) δήL(Pt) |πουL(Pt) τὰi(Art)(A) θύi|ρεLτραi(A) καi|λῷL(Adj)(D) ποiδὶi(D) |ΦοῖLβοςi(N) ἀi|ράσLσειL(Prä)(Akt)·|
+(3) und ja wohl die Türen schönem Fuß Phoibos schlägt·
+(4) οὐχL(Pt) ὁiράi|ᾳςL(Prä)(Akt); ἐiπέi|νευLσενi(Aor)(Akt) ὁi(Art)(N) |ΔήLλιiοςi(Adj)(N) |ἡLδύi(Adj)(A) τιi(Pr)(A) |φοῖLνιξL(N)|
+(4) nicht siehst; nickte der Delische süß etwas Palm|baum
+(5) ἐLξαiπίi|νηςL(Adv), ὁi(Art)(N) δὲi(Pt) |κύLκνοςi(N) ἐνi(Prp) |ἠLέiριi(D) |καLλὸνi(Adj)(A) ἀi|είLδειL(Prä)(Akt).|
+(5) plötzlich, der aber Schwan in der|Luft schön singt.
+(6) αὐLτοὶL(Pr)(N) |νῦνL(Adv) καiτοi|χῆLεςi(N) ἀi|ναLκλίL|νεLσθεi(Prä)(M/P)(Imv) πυi|λάLωνL(G),|
+(6) ihr|selbst jetzt Tor|hüter lehnt|zurück der|Tore,
+(7) αὐLταὶL(Pr)(N) |δὲL(Pt) κληL|ῖLδεςi(N)· ὁi(Art)(N) |γὰρL(Pt) θεiὸςi(N) |οὐLκέiτιi(Adv) |μαLκρήνL(Adv)·|
+(7) ihr|selbst aber Schlüssel· der denn Gott nicht|mehr fern·
+(8) οἱL(Art)(N) δὲi(Pt) νέi|οιL(N) μολL|πήνL(A) τεi(Pt) καὶi(Kon) |ἐςL(Prp) χοiρὸνi(A) |ἐνLτύL|νεLσθεL(Prä)(M/P)(Imv).|
+(8) ihr aber Jungen Gesang und auch zum Chor rüstet|euch.
+(9) ὡLπόλL|λωνL(Art)(N) οὐL(Pt) |πανLτὶi(Adj)(D) φαi|είLνεiταιi(Prä)(M/P), |ἀλλL᾽(Kon) ὅi(Pr)(N) τιςi(Pr)(N) |ἐLσθλόςL(Adj)(N)·|
+(9) der|Apollon nicht jedem erscheint, sondern wer auch|immer tüchtig·
+(10) ὅςL(Pr)(N) μινi(Pr)(A) ἴi|δῃL(Aor)(Akt)(Knj), μέiγαςi(Adj)(N) |οὗLτοςi(Pr)(N), ὃςi(Pr)(N) |οὐκL(Pt) ἴiδεi(AorS)(Akt), |λιLτὸςi(Adj)(N) ἐi|κεῖLνοςL(Pr)(N).|
+(10) wer ihn erblicke, groß dieser, wer nicht sah, schlicht jener.
+(11) ὀLψόiμεθi᾽(Fu)(Med), |ὦL(ij) Ἑiκάi|ερLγεi(V), καὶi(Kon) |ἐσLσόiμεθi᾽(Fu)(M/P) |οὔLποiτεi(Adv) |λιLτοίL(Adj)(N).|
+(11) wir|werden|sehen, o Fern|schütze, und wir|werden|sein niemals gering.
+(12) μήLτεi(Kon) σιi|ωLπηL|λὴνL(Adj)(A) κίiθαi|ρινL(A) μήτL᾽(Kon) |ἄLψοiφονi(Adj)(A) |ἴχLνοςL(A)|
+(12) weder stumm Leier noch geräusch|los Spur
+(13) τοῦL(Art)(G) ΦοίL|βουL(G) τοὺςL(Art)(A) |παῖLδαςi(A) ἔi|χεινL(Prä)(Inf)(Akt) ἐiπιi|δηLμήL|σανLτοςL(Aor)(Akt)(G),|
+(13) des Phoibos die Knaben haben eingekehrt|seienden,
+(14) εἰL(Kon) τεiλέi|εινL(Prä)(Inf)(Akt) μέλL|λουLσιi(Prä)(Akt) γάi|μονL(A) ποiλιi|ήνL(Adj)(A) τεi(Pt) κεi|ρεῖLσθαιL(Prä)(M/P)(Inf),|
+(14) wenn vollziehen beabsichtigen Hochzeit grau|es und sich|scheren,
+(15) ἑLστήL|ξεινL(Fu)(Akt)(Inf) δὲi(Pt) τὸi(Art)(A) |τεῖLχοςi(A) ἐπi᾽(Prp) |ἀρLχαίL|οιLσιi(Adj)(D) θεi|μέLθλοιςL(D).|
+(15) stehen|zu aber die Mauer auf alten Fundamenten.
+(16) ἠLγαiσάi|μηνL(Aor)(Med) τοὺςL(Art)(A) |παῖLδαςi(A), ἐi|πεὶL(Kon) χέiλυςi(N) |οὐLκέτi᾽(Adv) ἀi|ερLγόςL(Adj)(N).|
+(16) ich|bewunderte die Knaben, da Schild|kröten|leier nicht|mehr untätig.
+(17) εὐLφηL|μεῖτL᾽(Prä)(Akt)(Imv) ἀiίi|ονLτεςi(Prä)(Akt)(N) ἐπi᾽(Prp) |ἈLπόλL|λωLνοςi(G) ἀi|οιLδῇL(D).|
+(17) sprecht|heilig hörend bei Apollons Gesang.
+(18) εὐLφηL|μεῖL(Prä)(Akt) καὶL(Kon) |πόνLτοςi(N), ὅi|τεL(Kon) κλείL|ουLσινi(Prä)(Akt) ἀi|οιLδοὶL(N)|
+(18) schweigt|heilig auch der|Meer, wenn preisen Sänger
+(19) ἢL(Kon) κίiθαi|ρινL(A) ἢL(Kon) |τόLξαi(A), Λυi|κωLρέiοςi(Adj)(G) |ἔνLτεiαi(A) |ΦοίLβουL(G).|
+(19) entweder Leier oder Bogen, lykoräischen Geräte des|Phoibos.
+(20) οὐLδὲi(Kon) Θέi|τιςL(N) Ἀiχιi|λῆLαi(A) κιi|νύLρεiταιi(Prä)(M/P) |αἴLλιiναi(Adj)(A) |μήLτηρL(N),|
+(20) noch Thetis Achilleus wehklagt Klag|gesänge Mutter,
+(21) ὁπLπόθi᾽(Kon) ἱi|ὴL(ij) παιL|ῆLονi(A) ἱi|ὴL(ij) παιL|ῆLονi(A) ἀi|κούLσῃL(Aor)(Akt)(Knj).|
+(21) sooft hīe Paian hīe Paian sie|hört.
+(22) καὶL(Kon) μὲνi(Pt) ὁi(Art)(N) |δαLκρυiόi|ειςL(Adj)(N) ἀiναi|βάλLλεiταιi(Prä)(M/P) |ἄλLγεiαi(A) |πέLτροςL(N),|
+(22) und zwar der tränen|reich wirft|zurück Schmerzen Fels,
+(23) ὅLστιςi(Pr)(N) ἐi|νὶL(Prp) Φρυiγίi|ῃL(D) διiεi|ρὸςL(Adj)(N) λίiθοςi(N) |ἐLστήL|ριLκταιL(Per)(M/P),|
+(23) wer in Phrygien durchlöchert Stein ist|aufgestellt,
+(24) μάρLμαiρονi(N) |ἀνLτὶi(Prp) γυi|ναιLκὸςi(G) ὀi|ιLζυL|ρόνL(Adj)(N) τιi(Pr)(N) χαi|νούLσηςL(Prä)(Akt)(G).|
+(24) Marmor an|statt der|Frau jammer|voll etwas der|Sterbenden.
+(25) ἱLὴi(ij) ἱi|ὴL(ij) φθέγL|γεLσθεi(Prä)(M/P)(Imv)· καi|κὸνL(Adj)(N) μαiκάi|ρεσLσινi(Adj)(D) ἐi|ρίLζεινL(Prä)(Inf)(Akt).|
+(25) hīe hīe ruft· schlecht den|Seligen zu|streiten.
+(26) ὃςL(Pr)(N) μάiχεi|ταιL(Prä)(M/P) μαiκάi|ρεσLσινi(Adj)(D), ἐi|μῷL(Adj)(D) βαiσιi|λῆLιi(D) μάi|χοιLτοL(Prä)(M/P)(Op)·|
+(26) wer kämpft den|Seligen, meinem König möge|kämpfen·
+(27) ὅLστιςi(Pr)(N) ἐi|μῷL(Adj)(D) βαiσιi|λῆLιi(D), καὶi(Kon) |ἈLπόλL|λωLνιi(D) μάi|χοιLτοL(Prä)(M/P)(Op).|
+(27) wer meinem König, und dem|Apollon möge|kämpfen.
+(28) τὸνL(Art)(A) χοiρὸνi(A) |ὡLπόλL|λωνL(Art)(N), ὅi(Pr)(A) τιi(Pr)(A) |οἱL(Pr)(D) καiτὰi(Prp) |θυLμὸνi(A) ἀi|είLδειL(Prä)(Akt),|
+(28) den Chor der|Apollon, was auch|immer ihm gemäß dem|Sinn singt,
+(29) τιLμήL|σειL(Fu)(Akt)· δύiναi|ταιL(Prä)(M/P) γάρi(Pt), ἐi|πεὶL(Kon) Διiὶi(D) |δεLξιiὸςi(Adj)(N) |ἧLσταιL(Per)(M/P).|
+(29) wird|ehren· vermag denn, weil dem|Zeus zur|Rechten sitzt.
+(30) οὐδL᾽(Pt) ὁi(Art)(N) χοi|ρὸςL(N) τὸνL(Art)(A) |ΦοῖLβονi(A) ἐφi᾽(Prp) |ἓνL(Adj)(A) μόiνονi(Adj)(A) |ἦLμαρi(A) ἀi|είLσειL(Fu)(Akt),|
+(30) auch|nicht der Chor den Phoibos für einen nur Tag wird|besingen,
+(31) ἔLστιi(Prä)(M/P) γὰρi(Pt) |εὔLυL|μνοςL(Adj)(N)· τίςi(Pr)(N) ἂνi(Pt) |οὐL(Pt) ῥέiαi(Adv) |ΦοῖLβονi(A) ἀi|είLδοιL(Prä)(Akt)(Op);|
+(31) ist denn leicht|zu|besingen· wer wohl nicht leicht Phoibos sänge;
+(32) χρύLσεiαi(Adj)(N) |τὠLπόλL|λωLνιi(Art)(D) τόi(Art)(N) |τ᾽(Pt) ἐνLδυiτὸνi(Adj)(N) |ἥL(Pr)(N) τ᾽(Pt) ἐiπιi|πορLπὶςL(N)|
+(32) golden dem|Apollon das und Anzieh|bares die und Spange
+(33) ἥL(Pr)(N) τεi(Pt) λύi|ρηL(N) τόi(Art)(N) τ᾽(Pt) ἄi|εμLμαi(N) τὸi(Art)(N) |ΛύLκτιiονi(Adj)(N) |ἥL(Pr)(N) τεi(Pt) φαi|ρέLτρηL(N),|
+(33) die und Leier das und Haupt|band das Lyktische die und Köcher,
+(34) χρύLσεiαi(Adj)(N) |καὶL(Kon) τὰi(Art)(N) πέi|διLλαi(N)· ποi|λύLχρυL|σοςL(Adj)(N) γὰρi(Pt) Ἀi|πόλLλωνL(N).|
+(34) golden und die Sandalen· gold|reich denn Apollon.
+(35) καὶL(Kon) δὲi(Pt) ποi|λυLκτέiαi|νοςL(Adj)(N)· ΠυL|θῶLνίi(D) κεi(Pt) |τεκLμήL|ραιLοL(Aor)(Med)(Op).|
+(35) auch aber viel|besitzend· bei|Pytho wohl würdest|bezeugen.
+(36) καὶL(Kon) μὲνi(Pt) ἀi|εὶL(Adv) καL|λὸςL(Adj)(N) καὶi(Kon) ἀi|εὶL(Adv) νέiοςi(Adj)(N)· |οὔLποiτεi(Adv) |ΘοίLβουL(G)|
+(36) auch zwar immer schön und immer jung· niemals des|Phoibos
+(37) θηLλείL|ῃσL᾽(Adj)(D) οὐδL᾽(Pt) |ὅσLσονi(Pr)(A) ἐi|πὶL(Prp) χνόiοςi(N) |ἦλLθεi(AorS)(Akt) παi|ρειLαῖςL(D).|
+(37) weiblichen auch|nicht so|viel auf Flaum kam den|Wangen.
+(38) αἱL(Art)(N) δὲi(Pt) κόi|μαιL(N) θυiόi|ενLταi(Adj)(A) πέi|δῳL(D) λείL|βουLσινi(Prä)(Akt) ἔi|λαιLαL(A)·|
+(38) die aber Locken duftende zum|Boden träufeln Öle·
+(39) οὐL(Pt) λίiποςi(N) |ἈLπόλL|λωLνοςi(G) ἀi|ποLστάL|ζουLσινi(Prä)(Akt) ἔi|θειLραιL(N),|
+(39) nicht Fett des|Apollon tropfen|ab die|Haarsträhnen,
+(40) ἀλλL᾽(Kon) αὐL|τὴνL(Pr)(A) παiνάi|κειLανi(A)· ἐνi(Prp) |ἄLστεiϊi(D) |δ᾽(Pt) ᾧL(Pr)(D) κενi(Pt) ἐi|κεῖLναιL(Pr)(N)|
+(40) sondern selbst All|heil|mittel· in der|Stadt aber wo wohl jene
+(41) πρῶLκεςi(N) ἔi|ραLζεi(Adv) πέi|σωLσινi(AorS)(Akt)(Knj) ἀi|κήLριiαi(Adj)(N) |πάντL᾽(Pr)(A) ἐiγέi|νονLτοL(Aor)(M/P).|
+(41) Strähnen zum|Boden fallen unversehrt alles wurden.
+(42) τέχLνῃL(D) |δ᾽(Pt) ἀμLφιiλαi|φὴςL(Adj)(N) οὔL(Pt) |τιςL(Pr)(N) τόiσονi(Adv) |ὅσLσονi(Adv) Ἀi|πόλLλωνL(N)·|
+(42) an|Kunst aber all|seitig nicht irgend|einer so|sehr wie Apollon·
+(43) κεῖLνοςi(Pr)(N) ὀi|ιLστευL|τὴνL(A) ἔiλαχi᾽(AorS)(Akt) |ἀLνέiραi(A), |κεῖLνοςi(Pr)(N) ἀi|οιLδὸνL(A)|
+(43) jener Schützen zuteil|wurde Mann, jener Sänger
+(44) ΦοίLβῳL(D) |γὰρL(Pt) καὶL(Kon) |τόLξονi(N) ἐi|πιLτρέiπεi|ταιL(Prä)(M/P) καὶi(Kon) ἀi|οιLδήL(N),|
+(44) dem|Phoibos denn auch Bogen wird|anvertraut und Gesang,
+(45) κείLνουL(Pr)(G) |δὲL(Pt) θριL|αὶL(N) καὶL(Kon) |μάνLτιiεςi(N)· |ἐκL(Prp) δέi(Pt) νυi(Pt) |ΦοίLβουL(G)|
+(45) seines aber Thriai und Seher· aus aber nun des|Phoibos
+(46) ἰLηL|τροὶL(N) δεiδάi|αLσινi(Per)(Akt) ἀi|νάLβληL|σινL(A) θαiνάi|τοιLοL(G).|
+(46) Ärzte haben|gelernt Hinaus|schiebung des|Todes.
+(47) ΦοῖLβονL(A) |καὶL(Kon) Νόiμιi|ονL(Adj)(A) κιL|κλήLσκοiμενi(Prä)(Akt) |ἐLξέiτιi(Adv) |κείLνουL(Pr)(G),|
+(47) Phoibos und Nomios nennen|wir seit jenem,
+(48) ἐLξότi᾽(Kon) ἐπi᾽(Prp) |ἈμLφρυσL|σῷL(D) ζευL|γίLτιiδαςi(Adj)(A) |ἔLτρεiφενi(Imp)(Akt) |ἵπLπουςL(A)|
+(48) seit|da an dem|Amphryssos Joch|ziehende hütete Pferde
+(49) ἠLιiθέi|ουL(Adj)(G) ὑπi᾽(Prp) ἔi|ρωLτιi(D) κεi|καυLμέiνοςi(Per)(Pas)(N) |ἈδLμήL|τοιLοL(G).|
+(49) des|Jünglings unter Liebe verbrannt|seiend des|Admetos.
+(50) ῥεῖLάi(Adv) κεi(Pt) |βουLβόiσιi|ονL(Adj)(N) τεiλέi|θοιL(Prä)(Akt)(Op) πλέiονi(Adv), |οὐLδέi(Pt) κενi(Pt) |αἶLγεςL(N)|
+(50) leicht wohl Rind|vieh|bestand würde|gedeihen mehr, und|nicht wohl Ziegen
+(51) δεύLοινL|τοL(Prä)(M/P)(Op) βρεiφέi|ωνL(G) ἐiπιi|μηLλάiδεςi(N) |ᾗLδινi(Kon) Ἀi|πόλLλωνL(N)|
+(51) würden|entbehren der|Jungen Weide|herden wenn Apollon
+(52) βοLσκοiμέi|νῃσL᾽(Prä)(M/P)(D) ὀL|φθαλLμὸνi(A) ἐi|πήLγαiγενi(AorS)(Akt)· |οὐδL᾽(Pt) ἀiγάi|λαLκτεςL(Adj)(N)|
+(52) weidenden Auge richtete|er|zu· noch ohne|Milch
+(53) οἴLιiεςi(N) |οὐδL᾽(Pt) ἄiκυi|θοιL(Adj)(N), πᾶL|σαιL(Pr)(N) δέi(Pt) κενi(Pt) |εἶLενi(Prä)(Akt)(Op) ὕi|παρLνοιL(Adj)(N),|
+(53) Mutterschafe noch un|trächtig, alle aber wohl wären tragend,
+(54) ἡL(Pr)(N) δέi(Pt) κεi(Pt) |μουLνοiτόi|κοςL(Adj)(N) διiδυi|μηLτόiκοςi(Adj)(N) |αἶLψαi(Adv) γέi|νοιLτοL(Aor)(Med)(Op).|
+(54) die aber wohl Einlings|gebärend Zwillings|gebärend schnell würde|werden.
+(55) ΦοίLβῳL(D) |δ᾽(Pt) ἑLσπόiμεi|νοιL(Aor)(Med)(N) πόiλιi|αςL(A) διiεi|μεLτρήL|σανLτοL(Aor)(Med)|
+(55) dem|Phoibos aber folgend|seiend Städte maßen|sie|aus
+(56) ἄνLθρωL|ποιL(N)· ΦοῖL|βοςL(N) γὰρi(Pt) ἀi|εὶL(Adv) ποiλίi|εσLσιi(D) φιi|ληLδεῖL(Prä)(Akt)|
+(56) Menschen· Phoibos denn immer den|Städten hat|Freude
+(57) κτιLζοiμέi|νῃσL᾽(Prä)(M/P)(D), αὐL|τὸςL(Pr)(N) δὲi(Pt) θεi|μείLλιiαi(A) |ΦοῖLβοςi(N) ὑi|φαίLνειL(Prä)(Akt).|
+(57) gegründet|werdenden, selbst aber Fundamente Phoibos webt.
+(58) τεLτραiέi|τηςL(Adj)(N) τὰL(Art)(A) |πρῶLταi(Adj)(A) θεi|μείLλιiαi(A) |ΦοῖLβοςi(N) ἔi|πηLξεL(AorS)(Akt)|
+(58) vier|jährig die ersten Fundamente Phoibos setzte
+(59) καLλῇi(Adj)(D) ἐνi(Prp) |ὈρLτυiγίi|ῃL(D) πεiριi|ηLγέiοςi(Adj)(G) |ἐγLγύiθιi(Adv) |λίLμνηςL(G).|
+(59) schönen in Ortygia um|herführenden nah des|Sees.
+(60) ἌρLτεiμιςi(N) |ἀLγρώσL|σουLσαi(Prä)(Akt)(N) καi|ρήLαiταi(A) |συLνεiχὲςi(Adv) |αἰLγῶνL(G)|
+(60) Artemis jagend|seiend Köpfe dicht der|Ziegen
+(61) ΚυνLθιiάi|δωνL(Adj)(G) φοiρέi|εLσκενi(Imp)(Akt), ὁi(Art)(N) |δ᾽(Pt) ἔLπλεiκεi(Imp)(Akt) |βωLμὸνi(A) Ἀi|πόλLλωνL(N).|
+(61) der|Kynthiaden trug|oft, der aber flocht Altar Apollon.
+(62) δείLμαiτοi(Aor)(Med) |μὲνL(Pt) κεiράi|εσLσινi(D) ἐi|δέLθλιiαi(A), |πῆLξεi(AorS)(Akt) δὲi(Pt) |βωLμὸνL(A)|
+(62) baute|sich zwar mit|Hörnern Befestigungen, setzte aber Altar
+(63) ἐκL(Prp) κεiράi|ωνL(G), κεiραi|οὺςL(Adj)(A) δὲi(Pt) πέi|ριξL(Adv) ὑiπεi|βάλLλεiτοi(Imp)(Med) |τοίLχουςL(A).|
+(63) aus Hörnern, hornige aber ringsum legte|darüber Wände.
+(64) ὧδL᾽(Adv) ἔiμαi|θενL(Aor)(Akt) τὰL(Art)(A) |πρῶLταi(Adj)(A) θεi|μείLλιiαi(A) |ΦοῖLβοςi(N) ἐi|γείLρεινL(Prä)(Inf)(Akt).|
+(64) so lernte die ersten Fundamente Phoibos zu|errichten.
+(65) ΦοῖLβοςL(N) |καὶL(Kon) βαiθύi|γειLονi(Adj)(A) ἐi|μὴνL(Adj)(A) πόiλινi(A) |ἔLφραiσεi(Aor)(Akt) |ΒάτLτῳL(D)|
+(65) Phoibos auch tief|erdig meine Stadt zeigte dem|Battos
+(66) καὶL(Kon) Λιiβύi|ηνL(A) ἐiσιi|όνLτιi(Prä)(Akt)(D) κόi|ραξL(N) ἡL|γήLσαiτοi(Aor)(Med) |λαLῷL(D)|
+(66) und Libyen hineingehen|dem Rabe leitete dem|Volk
+(67) δεLξιiὸςi(Adj)(N) |οἰLκιL|στῆLριi(D) καὶi(Kon) |ὤLμοiσεi(Aor)(Akt) |τείLχεiαi(A) |δώLσεινL(Fu)(Inf)(Akt)|
+(67) rechts|günstig dem|Gründer und schwor Mauern zu|geben
+(68) ἡLμεiτέi|ροιςL(Adj)(D) βαiσιi|λεῦLσινi(D)· ἀi|εὶL(Adv) δ᾽(Pt) εὔL|ορLκοςi(Adj)(N) Ἀi|πόλLλωνL(N).|
+(68) unseren Königen· immer aber eid|treu Apollon.
+(69) ὤLπολL|λονL(V), πολL|λοίL(Adj)(N) σεi(Pr)(A) Βοi|ηLδρόiμιi|ονL(A) καiλέi|ουLσιL(Prä)(Akt),|
+(69) o|Apollon, viele dich Boedromios nennen,
+(70) πολLλοὶL(Adj)(N) |δὲL(Pt) Κλάiριi|ονL(A), πάνL|τηL(Adv) δέi(Pt) τοιi(Pr)(D) |οὔLνοiμαi(N) |πουLλύL(Adv)·|
+(70) viele aber Klarion, überall aber dir Name weit·
+(71) αὐLτὰρi(Kon) ἐi|γὼL(Pr)(N) ΚαρL|νεῖLονi(A)· ἐi|μοὶL(Pr)(D) παL|τρώLιiονi(Adj)(N) |οὕLτωL(Adv).|
+(71) aber ich Karneios· mir väterlich so.
+(72) ΣπάρLτηL(N) |τοιL(Pr)(D), ΚαρL|νεῖLεi(V), τὸi(Art)(N) |δὴL(Pt) πρώL|τιLστονi(Adj)(N)(Sup) ἔi|δεLθλονL(N),|
+(72) Sparta dir, Karneie, das ja aller|erste Fest,
+(73) δεύLτεiρονi(Adj)(N) |αὖL(Adv) ΘήL|ρηL(N), τρίiταi|τόνL(Adj)(N)(Sup) γεi(Pt) μὲνi(Pt) |ἄLστυi(N) Κυi|ρήLνηςL(G).|
+(73) zweites wiederum Thera, dritt|es ja zwar Stadt der|Kyrene.
+(74) ἐκL(Prp) μένL(Pt) |σεL(Pr)(A) ΣπάρL|τηςL(G) ἕL|κτονL(Adj)(N) γέiνοςi(N) |ΟἰLδιiπόi|δαLοL(G)|
+(74) aus zwar dich Spartas sechstes Geschlecht des|Oidipus
+(75) ἤLγαiγεi(AorS)(Akt) |ΘηLραίL|ηνL(Adj)(A) ἐςi(Prp) ἀi|πόLκτιiσινi(A)· |ἐκL(Prp) δέi(Pt) σεi(Pr)(A) |ΘήLρηςL(N)|
+(75) führte Theräischen in Besiedlung· aus aber dich Theres
+(76) οὖLλοςi(Adj)(N) Ἀi|ριLστοiτέi|ληςL(N) ἈL|σβυLστίiδιi(Adj)(D) |πάρLθεiτοi(Aor)(Med) |γαίLῃL(D),|
+(76) Oulos Aristoteles der|Asbystis nahm|sich zum|Land,
+(77) δεῖLμεi(Aor)(Akt) δέi(Pt) |τοιL(Pr)(D) μάiλαi(Adv) |καLλὸνi(Adj)(A) ἀi|νάLκτοiρονi(A), |ἐνL(Prp) δὲi(Pt) πόi|ληLιL(D)|
+(77) baute aber dir sehr schön|es Palast, in aber der|Stadt
+(78) θῆLκεi(AorS)(Akt) τεi|λεLσφοiρίi|ηνL(A) ἐiπεi|τήLσιiονi(Adj)(A), |ᾗL(Pr)(D) ἐiνὶi(Prp) |πολLλοὶL(Adj)(N)|
+(78) setzte Telesphoria jährlich, in|welcher in viele
+(79) ὑLστάiτιi|ονL(Adv) πίL|πτουLσινi(Prä)(Akt) ἐπi᾽(Prp) |ἰLσχίiονi(A), |ὦL(ij) ἄiναi(V), |ταῦLροιL(N).|
+(79) zuletzt fallen auf Hüfte, o Herr, Stiere.
+(80) ἱLὴi(ij) ἱi|ὴL(ij) ΚαρL|νεῖLεi(V) ποi|λύλLλιiτεi(Adj)(V), |σεῖLοi(Pr)(G) δὲi(Pt) |βωLμοὶL(N)|
+(80) hīe hīe Karneie viel|angerufener, deiner aber Altäre
+(81) ἄνLθεiαi(A) |μὲνL(Pt) φοiρέi|ουLσινi(Prä)(Akt) ἐνi(Prp) |εἴLαiριi(D) |τόσLσαi(Pr)(A) περi(Pt) |ὯLραιL(N)|
+(81) Blüten zwar tragen im Frühling so|viele eben Horen
+(82) ποιLκίλi᾽(Adj)(A) ἀi|γιLνεῦL|σιL(Prä)(Akt) ζεiφύi|ρουL(G) πνείL|ονLτοςi(Prä)(Akt)(G) ἐi|έρLσηνL(A),|
+(82) bunte führen|herbei des|Zephyrs blasenden Tau,
+(83) χείLμαiτιi(D) |δὲL(Pt) κρόiκονi(A) |ἡLδύνi(Adj)(A)· ἀi|εὶL(Adv) δέi(Pt) τοιi(Pr)(D) |ἀLέiναi|ονL(Adj)(A) πῦρL(N),|
+(83) im|Winter aber Safran süßen· immer aber dir un|ablässig|es Feuer,
+(84) οὐLδέi(Pt) ποi|τεL(Adv) χθιL|ζὸνL(Adj)(A) πεiριi|βόLσκεiταιi(Prä)(M/P) |ἄνLθραiκαi(A) |τέLφρηL(N).|
+(84) auch|nicht je gestrigen um|weidet Kohle Asche.
+(85) ἦL(ij) ῥ᾽ ἐiχάi|ρηL(Pt)(Aor)(M/P) μέiγαi(Adv) |ΦοῖLβοςi(N), ὅi|τεL(Kon) ζωL|στῆLρεςi(N) Ἐi|νυLοῦςL(G)|
+(85) wahrlich dann freute|er|sich sehr Phoibos, als Gürtel|riemen der|Enyo
+(86) ἀLνέiρεςi(N) |ὠρLχήL|σανLτοi(Aor)(Med) μεi|τὰL(Prp) ξανL|θῇLσιi(Adj)(D) Λιi|βύσLσαιςL(D),|
+(86) Männer tanzten mit blonden Libyerinnen,
+(87) τέθLμιiαιi(Adj)(N) |εὖLτέL(Kon) |σφινL(Pr)(D) ΚαρL|νειLάiδεςi(Adj)(N) |ἤLλυiθονi(AorS)(Akt) |ὧLραιL(N).|
+(87) fest|gesetzt als ihnen Karneische kamen Horen.
+(88) οἱL(Pr)(N) δ᾽(Pt) οὔL|πωL(Adv) πηL|γῇLσιi(D) Κύi|ρηςL(G) ἐiδύi|νανLτοi(Imp)(M/P) πεi|λάσLσαιL(Aor)(Akt)(Inf)|
+(88) die aber noch|nicht den|Quellen der|Kyrene konnten sich|nähern
+(89) ΔωLριiέi|εςL(N), πυiκιi|νὴνL(Adj)(A) δὲi(Pt) νάi|παιςL(D) ἌL|ζιLλινi(A) ἔi|ναιLονL(Imp)(Akt).|
+(89) Dorer, dichte aber in|Hainen Azilis wohnten.
+(90) τοὺςL(Art)(A) μὲνi(Pt) ἄi|ναξL(N) ἴiδενi(AorS)(Akt) |αὐLτόςi(Pr)(N), ἑi|ῇL(Adj)(D) δ᾽(Pt) ἐiπεi|δείLξαiτοi(Aor)(Med) |νύμLφῃL(D)|
+(90) die zwar Herr sah selbst, sein|er aber zeigte der|Braut
+(91) στὰςL(AorS)(Akt)(N) ἐiπὶi(Prp) |ΜυρLτούσL|σηςL(G) κεiραi|τώLδεiοςi(Adj)(G), |ἧLχιi(Adv) λέi|ονLταL(A)|
+(91) stehend auf der|Myrtoussa horn|ig|er, wo Löwen
+(92) ὙLψηL|ὶςL(N) καiτέi|πεφLνεi(AorS)(Akt) βοi|ῶνL(G) σίiνινi(A) |ΕὐLρυiπύi|λοιLοL(G).|
+(92) Hypses erschlug der|Rinder Verderber des|Eurypylos.
+(93) οὐL(Pt) κείL|νουL(Pr)(G) χοiρὸνi(A) |εἶLδεi(AorS)(Akt) θεi|ώLτεiρονi(Adj)(A)(Kmp) |ἄλLλονi(Adj)(A) Ἀi|πόλLλωνL(N),|
+(93) nicht jenes Chor sah göttlicheren anderen Apollon,
+(94) οὐLδὲi(Kon) πόi|λειL(D) τόσi᾽(Adj)(A) ἔi|νειLμενi(Aor)(Akt) ὀi|φέλLσιiμαi(A), |τόσLσαi(Adj)(A) Κυi|ρήLνῃL(D),|
+(94) noch der|Stadt so|viele verteilte Vorteile, so|vieles der|Kyrene,
+(95) μνωLόiμεi|νοςL(Prä)(M/P)(N) προiτέi|ρηςL(Adj)(G) ἁρL|παLκτύiοςi(G). |οὐLδὲi(Kon) μὲνi(Pt) |αὐLτοὶL(Pr)(N)|
+(95) gedenkend früher|er Raub|Entführung. noch zwar sie|selbst
+(96) ΒατLτιiάi|δαιL(N) ΦοίL|βοιLοi(G) πλέi|ονL(Adv)(Kmp) θεiὸνi(A) |ἄλLλονi(Adj)(A) ἔi|τειLσανL(Aor)(Akt).|
+(96) Battiden als|Phoibos mehr Gott anderen ehrten.
+(97) ἱLὴi(ij) ἱi|ὴL(ij) παιL|ῆLονi(A) ἀi|κούLοiμενi(Prä)(Akt), |οὕLνεiκαi(Kon) |τοῦLτοL(Pr)(A)|
+(97) hīe hīe Paian hören|wir, weil dies
+(98) ΔελLφόςL(Adj)(N) |τοιL(Pt) πρώL|τιLστονi(Adj)(A)(Sup) ἐi|φύLμνιiονi(A) |εὕLρεiτοi(Aor)(Med) |λαLόςL(N),|
+(98) delphisch|es ja aller|erstes Hymnen|lied erfand Volk,
+(99) ἦLμοςi(Kon) ἑi|κηLβοiλίi|ηνL(A) χρυL|σέωνL(Adj)(G) ἐiπεi|δείLκνυiσοi(Imp)(M/P) |τόLξωνL(G).|
+(99) als Weit|schuss|kraft der|goldenen zeigtest der|Bögen.
+(100) ΠυLθώL(D) |τοιL(Pt) καiτιi|όνLτιi(Prä)(Akt)(D) συi|νήνLτεiτοi(Imp)(M/P) |δαιLμόiνιi|οςL(Adj)(N) θήρL(N),|
+(100) in|Pytho ja hinab|kommendem begegnete dämonisch|es Tier,
+(101) αἰLνὸςi(Adj)(N) ὄi|φιςL(N). τὸνL(Art)(A) |μὲνL(Pt) σὺi(Pr)(N) καi|τήLναiρεςi(Aor)(Akt) |ἄλLλονi(Adj)(A) ἐπi᾽(Prp) |ἄλLλῳL(Adj)(D)|
+(101) furchtbar Schlange. den zwar du tötetest einen auf den|anderen
+(102) βάλLλωνL(Prä)(Akt)(N) |ὠLκὺνi(Adj)(A) ὀi|ιLστόνi(A), ἐπi|ηLύL|τηLσεi(Aor)(Akt) δὲi(Pt) |λαLόςL(N),|
+(102) werfend schnellen Pfeil, bejubelte aber Volk,
+(103) "ἱLὴi(ij) ἱi|ὴL(ij) παιL|ῆLονi(A), ἵi|ειL(Prä)(Akt)(Imv) βέiλοςi(A).|" εὐLθύi(Adv) σεi(Pr)(A) |μήLτηρL(N)|
+(103) "hīe hīe Paian, schieß Geschoss." sogleich dich Mutter
+(104) γείLνατi᾽(Aor)(Med) ἀi|οσLσηL|τῦLραi(A), τὸi(Art)(N) |δ᾽(Pt) ἐLξέiτιi(Adv) |κεῖLθενi(Adv) ἀi|είLδῃL(Prä)(Akt).|
+(104) gebar Helfer, das aber seit von|dort singt|man.
+(105) ὁL(Art)(N) Φθόiνοςi(N) |ἈLπόλL|λωLνοςi(G) ἐπi᾽(Prp) |οὔLαiταi(A) |λάLθριiοςi(Adv) |εἶLπενL(AorS)(Akt)|
+(105) der Neid des|Apollon an Ohren heimlich sagte
+(106) "οὐκL(Pt) ἄiγαi|μαιL(Prä)(M/P) τὸνi(Art)(A) ἀi|οιLδὸνi(A) ὃςi(Pr)(N) |οὐδL᾽(Pt) ὅiσαi(Pr)(A) |πόνLτοςi(N) ἀi|είLδειL(Prä)(Akt)."|
+(106) "nicht bewundere|ich den Sänger der auch|nicht so|viele|wie Meer singt."
+(107) τὸνL(Art)(A) Φθόiνονi(A) |ὡLπόλL|λωνL(Art)(N) ποiδίi(D) |τ᾽(Pt) ἤLλαiσενi(Aor)(Akt) |ὧLδέi(Adv) τ᾽(Pt) ἔi|ειLπενL(Aor)(Akt)·|
+(107) den Neid der|Apollon mit|Fuß und stieß so und sprach·
+(108) "ἈσLσυiρίi|ουL(Adj)(G) ποiταi|μοῖLοi(G) μέi|γαςL(Adj)(N) ῥόiοςi(N), |ἀλLλὰi(Kon) τὰi(Art)(A) |πολLλὰL(Adj)(A)|
+(108) "assyrischen des|Flusses groß Strom, aber die vielen
+(109) λύLμαiταi(A) |γῆςL(G) καὶL(Kon) |πολLλὸνi(Adj)(A) ἐφi᾽(Prp) |ὕLδαiτιi(D) |συρLφεiτὸνi(A) |ἕλLκειL(Prä)(Akt).|
+(109) Unrat der|Erde und viel auf dem|Wasser Kehrricht zieht.
+(110) ΔηLοῖL(D) |δ᾽(Pt) οὐκL(Pt) ἀiπὸi(Prp) |πανLτὸςi(Adj)(G) ὕi|δωρL(A) φοiρέi|ουLσιi(Prä)(Akt) Μέi|λισLσαιL(N),|
+(110) der|Demeter aber nicht von jedem Wasser tragen Bienen,
+(111) '. . . λλL᾽(Kon) ἥL|τιςL(Pr)(N) καiθαi|ρήL(Adj)(N) τεi(Pt) καὶi(Kon) |ἀLχράL|ανLτοςi(Adj)(N) ἀi|νέρLπειL(Prä)(Akt)|
+(111) '. . . aber die|welche rein und auch un|befleckt hinauf|quillt
+(112) πίLδαiκοςi(G) |ἐξL(Prp) ἱiεi|ρῆςL(Adj)(G) ὀiλίi|γηL(Adj)(N) λιiβὰςi(N) |ἄLκρονi(Adj)(A) ἄi|ωLτονL(A).'|
+(112) der|Quelle aus heiligen gering Tropfen höchst|es Beste.'
+(113) χαῖLρεi(Prä)(Akt)(Imv) ἄi|ναξL(V)· ὁi(Art)(N) δὲi(Pt) |ΜῶLμοςi(N), ἵνi᾽(Kon) |ὁL(Art)(N) Φθόiνοςi(N), |ἔνLθαi(Adv) νέi|οιLτοL(Prä)(M/P)(Op).|
+(113) sei|gegrüßt Herr· der aber Tadel, wo der Neid, dort möge|sich|aufhalten.
+=== Gedicht 3 ===
+== εἰς Ἄρτεμιν ==
+(1) ἌρLτεiμινi(A), |οὐL(Pt) γὰρi(Pt) ἐi|λαLφρὸνi(Adj)(A) ἀi|ειLδόνL|τεσLσιi(Prä)(Akt)(D) λαi|θέLσθαἰL(Aor)(Med)(Inf)|
+(1) Artemis, nicht denn leicht Singenden verborgen|zu|bleiben
+(2) ὑLμνέiοi|μενL(Prä)(Akt), τῇL(Pr)(D) |τόLξαi(N) λαi|γωLβοiλίi|αιL(N) τεi(Pt) μέi|λονLταιL(Prä)(M/P)|
+(2) wir|huldigen, der Bögen Hasen|jagden und sind|ihr|lieb
+(3) καὶL(Kon) χοiρὸςi(N) |ἀμLφιiλαi|φὴςL(Adj)(N) καὶi(Kon) ἐνi(Prp) |οὔLρεiσινi(D) |ἑLψιiάi|αLσθαιL(Prä)(M/P)(Inf),|
+(3) und Chor all|seitig und in Bergen kochen|zu,
+(4) ἄρχLμεiνοιi(Prä)(M/P)(N), |ὡςL(Kon) ὅiτεi(Kon) |παLτρὸςi(G) ἐi|φεLζοiμέi|νηL(Prä)(M/P)(N) γοiνάi|τεσLσιL(D)|
+(4) beginnend, wie als des|Vaters sich|auf|setzende Knien
+(5) παῖςL(N) ἔiτιi(Adv) |κουLρίL|ζουLσαi(Prä)(Akt)(N) τάi|δεL(Pr)(A) προiσέi|ειLπεi(AorS)(Akt) γοi|νῆLαL(A)|
+(5) Mädchen noch jugend|lich|seiend dies sprach|zu Erzeuger
+(6) "δόςL(Aor)(Akt)(Imv) μοιL(Pr)(D) |παρLθεiνίi|ηνL(A) αἰL|ώLνιiονi(Adj)(A), |ἄπLπαi(V), φυi|λάσLσεινL(Prä)(Inf)(Akt),|
+(6) "gib mir Jungfräulichkeit ewige, Vater, zu|bewahren,
+(7) καὶL(Kon) ποiλυi|ωLνυiμίi|ηνL(A), ἵiναi(Kon) |μήL(Pt) μοιL(Pr)(D) |ΦοῖLβοςi(N) ἐi|ρίLζῃL(Prä)(Akt)(Knj).|
+(7) und Viel|namigkeit, damit nicht mir Phoibos streite.
+(8) δὸςL(Aor)(Akt)(Imv) δ᾽(Pt) ἰL|οὺςL(A) καὶL(Kon) |τόLξαi(A)· ἔi|αL(ij), πάiτερi(V), |οὔL(Pt) σεi(Pr)(A) Φαi|ρέLτρηνL(A)|
+(8) gib aber Pfeile und Bögen· lass, Vater, nicht dich Köcher
+(9) οὐδL᾽(Pt) αἰL|τέωL(Prä)(Akt) μέiγαi(Adj)(A) |τόLξονi(A)· ἐi|μοὶL(Pr)(D) ΚύL|κλωLπεςi(N) ὀi|ιLστοὺςL(A)|
+(9) auch|nicht bitte|ich großen Bogen· mir Kyklopen Pfeile
+(10) αὐLτίiκαi(Adv) |τεχLνήL|σονLταιi(Fu)(M/P), ἐi|μοὶL(Pr)(D) δ᾽(Pt) εὐL|καμLπὲςi(Adj)(A) ἄi|εμLμαL(A)·|
+(10) sofort werden|anfertigen, mir aber biegsam|es Band·
+(11) ἀλLλὰi(Kon) φαi|εLσφοiρίi|ηνL(A) τεi(Pt) καὶi(Kon) |ἐςL(Prp) γόiνυi(A) |μέLχριi(Prp) χιi|τῶLναL(A)|
+(11) sondern Licht|trägerin und auch zu Knie bis Tunika
+(12) ζώνLνυL|σθαιL(Prä)(M/P)(Inf) λεL|γνωLτόνi(Adj)(A), ἵνi᾽(Kon) |ἄLγριiαi(Adj)(A) |θηLρίiαi(A) |καίLνωL(Prä)(Akt).|
+(12) sich|gürten knapp, damit wilde Tiere töte|ich.
+(13) δὸςL(Aor)(Akt)(Imv) δέi(Kon) μοιi(Pr)(D) |ἑLξήL|κονLταi(Adj)(A) χοi|ρίLτιiδαςi(A) |ὨLκεiαi|νίLναςL(A),|
+(13) gib aber mir sechzig Chor|mädchen Okeaniden,
+(14) πάLσαςL(Adj)(A) |εἰLνέiτεi|αςL(Adj)(A), πάiσαςi(Adj)(A) |ἔLτιL(Adv) |παῖLδαςi(A) ἀi|μίLτρουςL(Adj)(A).|
+(14) alle neun|jährige, alle noch Mädchen un|gegürtet.
+(15) δὸςL(Aor)(Akt)(Imv) δέi(Kon) μοιi(Pr)(D) |ἀμLφιiπόi|λουςL(A) ἈL|μνιLσίiδαςi(Adj)(A) |εἴLκοiσιi(Adj)(A) |νύμLφαςL(A),|
+(15) gib aber mir Dienerinnen amnisischen zwanzig Nymphen,
+(16) αἵL(Pr)(N) τέi(Pt) μοιi(Pr)(D) |ἐνLδροiμίi|δαςL(A) τεi(Pt) καὶi(Kon) |ὁπLπόiτεi(Kon) |μηLκέiτιi(Adv) |λύγLκαςL(A)|
+(16) die und mir Lauf|schuhe und auch sooft nicht|mehr Luchse
+(17) μήτL᾽(Kon) ἐiλάi|φουςL(A) βάλL|λοιLμιi(Prä)(Akt)(Op), θοi|οὺςL(Adj)(A) κύiναςi(A) |εὖL(Adv) κοiμέi|οιLενL(Prä)(Akt)(Op),|
+(17) weder Hirsche schösse|ich, schnelle Hunde gut pflegten|sie,
+(18) δὸςL(Aor)(Akt)(Imv) δέi(Kon) μοιi(Pr)(D) |οὔLρεiαi(A) |πάνLταi(Adj)(A)· πόi|λινL(A) δέi(Kon) μοιi(Pr)(D) |ἥνLτιiναi(Pr)(A) |νεῖLμονL(Aor)(Akt)(Imv)|
+(18) gib aber mir Berge alle· Stadt aber mir welche|auch|immer zuteile
+(19) ἥνLτιiναi(Pr)(A) |λῇςL(Prä)(Akt)· σπαρL|νὸνL(Adj)(N) γὰρi(Pt) ὅτi᾽(Kon) |ἌρLτεiμιςi(N) |ἄLστυi(A) κάi|τειLσινL(Prä)(Akt)·|
+(19) welche|auch|immer willst|du· selten denn wenn Artemis Stadt hinab|geht·
+(20) οὔLρεiσινi(D) |οἰLκήL|σωL(Fu)(Akt), πόiλεi|σινL(D) δ᾽(Pt) ἐiπιi|μείLξοiμαιi(Fu)(Med) |ἀνLδρῶνL(G)|
+(20) auf|Bergen werde|wohnen, in|Städten aber werde|mich|mischen der|Männer
+(21) μοῦLνονi(Adv) ὅτi᾽(Kon) |ἐLξείL|ῃLσινi(Prä)(M/P)(Knj) ὑπi᾽(Prp) |ὠLδίL|νεσLσιi(D) γυi|ναῖLκεςL(N)|
+(21) nur wenn erlaubt|ist unter Geburts|wehen Frauen
+(22) τειLρόiμεi|ναιL(Prä)(M/P)(N) καiλέi|ουLσιi(Prä)(Akt) βοi|ηLθόiονi(A), |ᾗLσίi(Pr)(D) μεi(Pr)(A) |ΜοῖLραιL(N)|
+(22) leidend rufen Helfer, denen mich Moiren
+(23) γειLνοiμέi|νηνL(Prä)(M/P)(A) τὸL(Art)(A) |πρῶLτονi(Adv) ἐi|πεLκλήL|ρωLσανi(Aor)(Akt) ἀi|ρήLγεινL(Prä)(Inf)(Akt),|
+(23) geboren|werdend das zuerst bestimmten zu|helfen,
+(24) ὅτLτιi(Kon) μεi(Pr)(A) |καὶL(Kon) τίL|κτουLσαi(Prä)(Akt)(N) καὶi(Kon) |οὐκL(Pt) ἤλL|γηLσεi(Aor)(Akt) φέi|ρουLσαL(Prä)(Akt)(N)|
+(24) dass mich und gebärend und nicht schmerzte|sie tragend
+(25) μήLτηρL(N), |ἀλλL᾽(Kon) ἀiμοi|γηLτὶi(Adv) φίi|λωνL(Adj)(G) ἀiπεi|θήLκαiτοi(Aor)(Med) |γυίLωνL(G)."|
+(25) Mutter, aber mühelos lieb|er legte|ab|sich Glieder."
+(26) ὣςL(Adv) ἡL(Art)(N) |παῖςL(N) εἰL|ποῦLσαi(Aor)(Akt)(N) γεi|νειLάiδοςi(Adj)(G) |ἤLθεiλεi(Imp)(Akt) |παLτρὸςL(G)|
+(26) so die Mädchen gesagt|habend bärtigen wollte des|Vaters
+(27) ἅLψαL|σθαιL(Aor)(Med)(Inf), πολL|λὰςL(Adj)(A) δὲi(Pt) μάi|τηνL(Adv) ἐiταi|νὐσLσαiτοi(Aor)(Med) |χεῖLραςL(A),|
+(27) anzu|fassen, viele aber vergeblich streckte|aus Hände,
+(28) μέLχριςi(Prp) ἵi|ναL(Kon) ψαύL|σειLεi(Aor)(Akt)(Op). παi|τὴρL(N) δ᾽(Pt) ἐiπέi|νευLσεi(Aor)(Akt) γεi|λάσLσαςL(Aor)(Akt)(N),|
+(28) bis wo würde|berühren. Vater aber nickte lachend,
+(29) φῆL(Aor)(Akt) δὲi(Pt) καi|ταρLρέL|ζωνL(Prä)(Akt)(N) "ὅiτεi(Kon) |μοιL(Pr)(D) τοιL|αῦLταi(Adj)(A) θέi|αιLναιL(D)|
+(29) sprach aber streichelnd "wenn mir solche Göttinnen
+(30) τίLκτοιL|ενL(Prä)(Akt)(Op), τυτL|θόνL(Adv) κενi(Pt) ἐi|γὼL(Pr)(N) ζηL|λήLμοiνοςi(Adj)(G) |ἭLρηςL(G)|
+(30) würden|gebären, wenig wohl ich eifersüchtigen der|Hera
+(31) χωLοiμέi|νηςL(Prä)(M/P)(G) ἀiλέi|γοιLμιi(Prä)(Akt)(Op). φέi|ρευL(ij), τέiκοςi(V), |ὅσσL᾽(Pr)(A) ἐiθεi|ληLμὸςL(Adj)(N)|
+(31) zornig|seiend würde|ich|achten. nur, Kind, so|viele willens
+(32) αἰLτίL|ζειςL(Prä)(Akt), καὶL(Kon) |δ᾽(Pt) ἄλLλαi(Adj)(A) παi|τὴρL(N) ἔiτιi(Adv) |μείLζοiναi(Adj)(A)(Kmp) |δώLσειL(Fu)(Akt).|
+(32) forderst, und aber anderes Vater noch größer|es wird|geben.
+(33) τρὶςL(Adv) δέiκαi(Adj)(A) |τοιL(Pt) πτοiλίi|εLθραi(A) καὶi(Kon) |οὐχL(Pt) ἕiναi(Adj)(A) |πύρLγονi(A) ὀi|πάσLσωL(Fu)(Akt),|
+(33) drei|mal zehn ja Städte und nicht einen Turm werde|ich|verleihen,
+(34) τρὶςL(Adv) δέiκαi(Adj)(A) |τοιL(Pt) πτοiλίi|εLθραi(A), τὰi(Art)(A) |μὴL(Pt) θεiὸνi(A) |ἄλLλονi(Adj)(A) ἀi|έLξεινL(Fu)(Inf)(Akt)|
+(34) dreimal zehn ja Städte, die nicht Gott anderen zu|erhöhen
+(35) εἴLσεiταιi(Fu)(M/P), |ἀλLλὰi(Kon) μόi|νηνL(Adj)(A) σὲi(Pr)(A) καὶi(Kon) |ἈρLτέiμιi|δοςL(G) καiλέi|εLσθαιL(Prä)(M/P)(Inf)·|
+(35) wird|wissen, sondern allein dich und der|Artemis genannt|zu|werden·
+(36) πολLλὰςL(Adj)(A) |δὲL(Pt) ξυL|νῇL(Adv) πόiλιi|αςL(A) διiαi|μεLτρήL|σαLσθαιL(Aor)(Med)(Inf)|
+(36) viele aber zusammen Städte ab|zumessen
+(37) μεσLσόiγεi|ωςL(Adj)(A) νήL|σουςL(A) τεi(Pt)· καὶi(Kon) |ἐνL(Prp) πάL|σῃLσινi(Adj)(D) ἔi|σονLταιL(Fu)(M/P)|
+(37) binnen|ländische Inseln und· und in allen werden|sein
+(38) ἈρLτέiμιi|δοςL(G) βωL|μοίL(N) τεi(Pt) καὶi(Kon) |ἄλLσεiαi(N). |καὶL(Kon) μὲνi(Pt) ἀi|γυιLαῖςL(D)|
+(38) der|Artemis Altäre und auch Haine. und zwar Straßen
+(39) ἔσLσῃL(Fu)(M/P) |καὶL(Kon) λιiμέi|νεσLσινi(D) ἐi|πίLσκοiποςi(Adj)(N).|" ὣςL(Adv) ὁi(Art)(N) μὲνi(Pt) |εἰLπὼνL(AorS)(Akt)(N)|
+(39) wirst|sein und Häfen Aufseherin." so der zwar gesagt|habend
+(40) μῦLθονi(A) ἐi|πεLκρήL|ηLνεi(Aor)(Akt) καi|ρήLαiτιi(D). |βαῖLνεi(Imp)(Akt) δὲi(Pt) |κούLρηL(N)|
+(40) Rede erfüllte mit|Kopfe. ging aber Mädchen
+(41) λευLκὸνi(Adj)(A) ἐi|πὶL(Prp) ΚρηL|ταῖLονi(Adj)(A) ὄi|ροςL(A) κεiκοi|μηLμέiνονi(Per)(M/P)(A) |ὕLλῃL(D)·|
+(41) weißen auf kretischen Berg bekränzt mit|Wald·
+(42) ἔνLθενi(Adv) ἐπi᾽(Prp) |ὨLκεiαi|νόνL(A)· ποiλέi|αςL(Adj)(A) δ᾽(Pt) ἐiπεi|λέLξαiτοi(Aor)(Med) |νύμLφαςL(A),|
+(42) von|dort zu Okeanos· viele aber wählte|sich|aus Nymphen,
+(43) πάLσαςL(Adj)(A) |εἰLνέiτεi|αςL(Adj)(A), πάiσαςi(Adj)(A) |ἔLτιL(Adv) |παῖLδαςi(A) ἀi|μίLτρουςL(Adj)(A).|
+(43) alle neun|jährige, alle noch Mädchen un|gegürtet.
+(44) χαῖLρεi(Prä)(Akt)(Imv) δὲi(Pt) |ΚαίLραL|τοςL(N) ποiταi|μὸςL(N) μέiγαi(Adv), |χαῖLρεi(Prä)(Akt)(Imv) δὲi(Pt) |ΤηLθύςL(N),|
+(44) sei|gegrüßt aber Kairatos Fluss sehr, sei|gegrüßt aber Tethys,
+(45) οὕLνεiκαi(Kon) |θυLγαiτέi|ραςL(A) ΛηL|τωLίiδιi(Adj)(D) |πέμLπονi(Imp)(Akt) ἀi|μορLβούςL(Adj)(A).|
+(45) weil Töchter der|Leto|Tochter sandten un|versehrt.
+(46) αὖLθιi(Adv) δὲi(Pt) |ΚύLκλωL|παςL(A) μεiτεi|κίLαiθεi(Aor)(Akt)· |τοὺςL(Art)(A) μὲνi(Pt) ἔi|τετLμεL(Aor)(Akt)|
+(46) dort aber Kyklopen suchte|auf· die zwar fand
+(47) νήLσῳi(D) ἐi|νὶL(Prp) Λιiπάi|ρῃL(D) (Λιiπάi|ρηL(N) νέiονi(Adv), |ἀλLλὰi(Kon) τότi᾽(Adv) |ἔLσκενL(Imp)(Akt)|
+(47) Insel in Lipara (Lipara neuerdings, aber damals war
+(48) οὔLνοiμάi(N) |οἱL(Pr)(D) Μεiλιi|γουLνίςi(N)) ἐπi᾽(Prp) |ἄκLμοiσινi(D) |ἩLφαίL|στοιLοL(G)|
+(48) Name ihr Meligunis) auf Ambossen des|Hephaistos
+(49) ἑLσταiόi|ταςL(Per)(Akt)(A) πεiρὶi(Prp) |μύLδρονi(A)· ἐi|πείLγεiτοi(Imp)(M/P) |γὰρL(Pt) μέiγαi(Adj)(A) |ἔρLγονL(A)·|
+(49) stehend um Schmelz|masse· beeilte|sich denn groß|es Werk·
+(50) ἱπLπείL|ηνL(Adj)(A) τεiτύi|κονLτοi(Per)(M/P) Ποi|σειLδάL|ωLνιi(D) ποi|τίLστρηνL(A).|
+(50) pferd|ische hatten|bereitet dem|Poseidon Tränke.
+(51) αἱL(Art)(N) νύμL|φαιL(N) δ᾽(Pt) ἔδL|δειLσανi(Aor)(Akt), ὅi|πωςL(Kon) ἴiδονi(AorS)(Akt) |αἰLνὰi(Adj)(A) πέi|λωLραL(A)|
+(51) die Nymphen aber erschraken, als sahen schreckliche Ungeheuer
+(52) πρηLόiσινi(D) |ὈσLσαίL|οιLσινi(Adj)(D) ἐi|οιLκόiταi(Per)(Akt)(A), |πᾶLσιi(Adj)(D) δ᾽(Pt) ὑπi᾽(Prp) |ὀLφρὺνL(A)|
+(52) Abhängen Ossa|ischen gleichend, allen aber unter Braue
+(53) φάLεiαi(A) |μουLνόL|γληLναi(Adj)(A) σάi|κειL(D) ἴiσαi(Adv) |τεLτραiβοi|είLῳL(Adj)(D)|
+(53) Lichter ein|blickig Schild gleich vier|ohrigem
+(54) δειLνὸνi(Adj)(A) ὑi|ποLγλαύσL|σονLταi(Prä)(Akt)(A), καὶi(Kon) |ὁπLπόiτεi(Kon) |δοῦLπονi(A) ἄi|κουLσανL(AorS)(Akt)|
+(54) furchtbar|es unter|funkelnd|es, und sobald Dröhnen hörten
+(55) ἄκLμοiνοςi(G) |ἠLχήL|σανLτοςi(Aor)(Akt)(G) ἐi|πὶL(Prp) μέiγαi(Adv) |πουLλύi(Adv) τ᾽(Pt) ἄi|ηLμαL(N)|
+(55) des|Ambosses er|schallt|seienden über weit sehr und Wehen
+(56) φυLσάL|ωνL(Prä)(Akt)(G) αὐL|τῶνL(Pr)(G) τεi(Pt) βαi|ρὺνL(Adj)(A) στόiνονi(A)· |αὖLεi(Imp)(Akt) γὰρi(Pt) |ΑἴτLνηL(N),|
+(56) blasenden ihrer und schwer|es Stöhnen· hallte denn Ätna,
+(57) αὖLεi(Imp)(Akt) δὲi(Pt) |ΤριLναiκίi|ηL(N), Σιiκαi|νῶνL(G) ἕiδοςi(N), |αὖLεi(Imp)(Akt) δὲi(Pt) |γείLτωνL(N)|
+(57) hallte aber Trinakria, der|Sikaner Sitz, hallte aber Nachbar
+(58) ἸLταiλίi|ηL(N), μεiγάi|ληνL(Adj)(A) δὲi(Pt) βοi|ὴνL(A) ἐiπὶi(Prp) |ΚύρLνοςL(A) |ἀύLτειL(Prä)(Akt),|
+(58) Italien, großen aber Ruf nach Kyrnos ruft|hin,
+(59) εὖθL᾽(Kon) οἵL(Pr)(N) |γεL(Pt) ῥαιL|στῆLραςi(A) ἀi|ειLράiμεi|νοιL(Aor)(M/P)(N) ὑiπὲρi(Prp) |ὤLμωνL(G)|
+(59) sobald die eben Hämmer aufgehoben|habend über Schultern
+(60) ἢL(Kon) χαλL|κὸνL(A) ζείL|ονLταi(Prä)(Akt)(A) καi|μιLνόiθενi(Adv) |ἠLὲi(Kon) σίi|δηLρονL(A)|
+(60) entweder Bronze siedenden ofen|wärts oder Eisen
+(61) ἀμLβοiλαi|δὶςL(Adv) τεiτυi|πόνLτεςi(Per)(Akt)(N) ἐi|πὶL(Prp) μέiγαi(Adv) |μοχLθήL|σειLανL(Aor)(Akt)(Op).|
+(61) stoss|weise geschlagen|habend auf sehr würden|mühen.
+(62) τῶL(Adv) σφέiαςi(Pr)(A) |οὐκL(Pt) ἐiτάi|λασLσανi(Aor)(Akt) ἀi|κηLδέiεςi(Adj)(N) |ὨLκεiαi|νῖLναιL(N)|
+(62) darum sie nicht wagten sorg|lose Okeaniden
+(63) οὔτL᾽(Kon) ἄνL|τηνL(Adv) ἰiδέi|εινL(Prä)(Inf)(Akt) οὔL|τεL(Kon) κτύiπονi(A) |οὔLαiσιi(D) |δέχLθαιL(Aor)(M/P)(Inf).|
+(63) weder entgegen zu|sehen noch Krachen mit|Ohren zu|empfangen.
+(64) οὐL(Pt) νέiμεi|σιςL(N)· κείL|νουςL(Pr)(A) γεi(Pt) καὶi(Kon) |αἱL(Art)(N) μάiλαi(Adv) |μηLκέiτιi(Adv) |τυτLθαὶL(Adj)(N)|
+(64) kein Tadel· jene eben auch die sehr nicht|mehr kleine
+(65) οὐLδέiποτi᾽(Adv) |ἀLφριL|κτὶL(Adv) μαiκάi|ρωνL(Adj)(G) ὁiρόi|ωLσιi(Prä)(Akt) θύi|γαLτρεςL(N).|
+(65) niemals ohne|Schauder der|Seligen sehen Töchter.
+(66) ἀλλL᾽(Kon) ὅiτεi(Kon) |κουLράL|ωνL(G) τιςi(Pr)(N) ἀi|πειLθέiαi(Adj)(A) |μηLτέiριi(D) |τεύLχοιL(Prä)(Akt)(Knj),|
+(66) aber wenn der|Mädchen irgendeine ungehorsame der|Mutter bereite,
+(67) μήLτηρL(N) |μὲνL(Pt) ΚύL|κλωLπαςi(A) ἑi|ῇL(Adj)(D) ἐiπὶi(Prp) |παιLδὶi(D) καi|λιLστρεῖL(Prä)(Akt),|
+(67) Mutter zwar Kyklopen ihr|er über Kind beschwichtigt,
+(68) ἌρLγηνL(A) |ἢL(Kon) Στεiρόi|πηνL(A)· ὁi(Art)(N) δὲi(Pt) |δώLμαiτοςi(G) |ἐκL(Prp) μυiχάi|τοιLοL(Adj)(G)|
+(68) Arges oder Steropes· der aber des|Hauses aus inner|sten
+(69) ἔρLχεiταιi(Prä)(M/P) |ἙρLμείL|ηςL(N) σποiδιi|ῇL(D) κεL|χρηLμέiνοςi(Per)(M/P)(N) |αἰLθῇL(D)·|
+(69) kommt Hermes mit|Asche eingerieben|seiend mit|Ruß·
+(70) αὐLτίiκαi(Adv) |τὴνL(Art)(A) κούL|ρηνL(A) μορL|μύσLσεiταιi(Prä)(M/P), |ἡL(Art)(N) δὲi(Pt) τεi|κούLσηςL(Aor)(Akt)(G)|
+(70) sofort das Mädchen erschreckt|an, die aber geboren|habend|er
+(71) δύLνειi(Prä)(Akt) ἔi|σωL(Adv) κόλL|πουςL(A) θεiμέi|νηL(Aor)(M/P)(N) ἐiπὶi(Prp) |φάLεiσιi(D) |χεῖLραςL(A).|
+(71) taucht hinein Schöße gesetzt|habend auf Lichter Hände.
+(72) κοῦLραi(V), σὺi(Pr)(N) |δὲL(Pt) προiτέi|ρωL(Adv)(Kmp) περi(Pt), ἔi|τιL(Adv) τριiέi|τηLροςi(Adj)(N) ἐi|οῦLσαL(Prä)(Akt)(N),|
+(72) Mädchen, du aber früher doch, noch drei|jährig seiend,
+(73) εὖτL᾽(Kon) ἔiμοi|λενL(AorS)(Akt) ΛηL|τώL(N) σεi(Pr)(A) μετi᾽(Prp) |ἀγLκαiλίi|δεσLσιi(D) φέi|ρουLσαL(Prä)(Akt)(N),|
+(73) als kam Leto dich mit Armen tragend,
+(74) ἩLφαίL|στουL(G) καiλέi|ονLτοςi(Prä)(Akt)(G) ὅi|πωςL(Kon) ὀL|πτήLριiαi(A) |δοίLηL(Aor)(Akt)(Knj),|
+(74) des|Hephaistos rufend|seienden damit Brat|geräte geben|möge,
+(75) ΒρόνLτεώL(N) |σεL(Pr)(A) στιiβαi|ροῖLσινi(Adj)(D) ἐi|φεσLσαiμέi|νουL(Prä)(M/P)(G) γοiνάi|τεσLσιL(D),|
+(75) Brontes dich kräftigen sich|setzenden Knien,
+(76) στήLθεiοςi(G) |ἐκL(Prp) μεiγάi|λουL(Adj)(G) λαiσίi|ηςL(Adj)(G) ἐL|δράLξαiοi(Aor)(Med) |χαίLτηςL(G),|
+(76) der|Brust aus großen zottigen packtest Mähne,
+(77) ὤLλοL|ψαςL(Aor)(Akt) δὲi(Pt) βίi|ηLφιi(D)· τὸi(Art)(N) |δ᾽(Pt) ἄLτριiχονi(Adj)(N) |εἰLσέiτιi(Adv) |καὶL(Adv) νῦνL(Adv)|
+(77) rissest|aus aber mit|Gewalt· das aber haar|lose bis|jetzt|noch auch jetzt
+(78) μεσLσάiτιi|ονL(Adj)(N) στέρL|νοιLοi(G) μέi|νειL(Prä)(Akt) μέiροςi(N), |ὡςL(Kon) ὅiτεi(Kon) |κόρLσηνL(A)|
+(78) mittler|es der|Brust bleibt Teil, wie wenn Haar|büschel
+(79) φωLτὸςi(G) ἐi|νιLδρυL|θεῖLσαi(Aor)(Pas)(N) κόi|μηνL(A) ἐiπεi|νείLματi᾽(Aor)(Akt) ἀi|λώLπηξL(N).|
+(79) des|Mannes hinein|gesetzt|worden|seiend Haar|schopf verteilte Fuchs.
+(80) τῶL(Adv) μάiλαi(Adv) |θαρLσαiλέi|ηL(Adj)(N) σφεi(Pr)(A) τάi|δεL(Pr)(A) προiσεi|λέLξαiοi(Aor)(Med) |τῆLμοςL(Adv)|
+(80) darum sehr mutige sie dies redetest|zu damals
+(81) "ΚύLκλωL|πεςL(V), κἠL|μοίL(Kon)(Pr)(D) τιi(Pr)(A) Κυi|δώLνιiονi(Adj)(A) |εἰL(Kon) δ᾽(Pt) ἄiγεi(Prä)(Akt)(Imv) |τόLξονL(A)|
+(81) "Kyklopen, und|mir etwas kydonischen wenn aber auf Bogen
+(82) ἠδL᾽(Kon) ἰL|οὺςL(A) κοίL|ληνL(Adj)(A) τεi(Pt) καi|ταLκληL|ῖLδαi(A) βεi|λέLμνωνL(G)|
+(82) und Pfeile hohle und Verschluss der|Geschosse
+(83) τεύLξαiτεi(Aor)(Akt)(Imv)· |καὶL(Kon) γὰρi(Pt) ἐi|γὼL(Pr)(N) ΛηL|τωLιiὰςi(Adj)(N) |ὥLσπερi(Kon) Ἀi|πόλLλωνL(N).|
+(83) fertigt|an· auch denn ich leto|ische so|wie Apollon.
+(84) αἰL(Kon) δέi(Pt) κ᾽(Pt) ἐi|γὼL(Pr)(N) τόL|ξοιςL(D) μοiνιi|ὸνL(Adj)(A) δάiκοςi(A) |ἤL(Kon) τιi(Pr)(A) πέi|λωLρονL(Adj)(A)|
+(84) wenn aber wohl ich mit|Bögen ein|zeln|es Beißer oder etwas ungeheuer|es
+(85) θηLρίiονi(A) |ἀLγρεύL|σωL(Fu)(Akt), τὸi(Art)(N) δέi(Pt) |κενL(Pt) ΚύL|κλωLπεςi(N) ἔi|δοιLενL(Prä)(Akt)(Op)."|
+(85) Tier werde|jagen, das aber wohl Kyklopen würden|essen."
+(86) ἔνLνεiπεςi(Aor)(Akt)· |οἱL(Pr)(N) δ᾽(Pt) ἐiτέi|λεσLσανi(Aor)(Akt)· ἄi|φαρL(Adv) δ᾽(Pt) ὡL|πλίσLσαiοi(Aor)(Med), |δαῖLμονL(V),|
+(86) sprachst· sie aber vollbrachten· sogleich aber bewaffnetest|dich, Dämon,
+(87) αἶLψαi(Adv) δ᾽(Pt) ἐi|πὶL(Prp) σκύiλαi|καςL(A) πάiλινi(Adv) |ἤLιiεςi(Imp)(Akt)· |ἵLκεiοi(Aor)(M/P) |δ᾽(Pt) αὖLλινL(A)|
+(87) schnell aber zu Welpen wieder gingst· kamst|an aber Lager
+(88) ἈρLκαiδιi|κὴνL(Adj)(A) ἔiπιi(Prp) |ΠαLνόςi(G). ὁi(Art)(N) |δὲL(Pt) κρέiαi(A) |λυγLκὸςi(G) ἔi|ταLμνεL(Imp)(Akt)|
+(88) arkadische bei des|Pan. der aber Fleisch des|Luchses schnitt
+(89) ΜαιLναiλίi|ηςL(Adj)(G), ἵiναi(Kon) |οἱL(Pr)(D) τοiκάi|δεςL(Adj)(N) κύiνεςi(N) |εἶLδαρi(A) ἔi|δοιLενL(Prä)(Akt)(Op).|
+(89) mainalischen, damit ihm gebärende Hunde Futter würden|essen.
+(90) τὶνL(Art)(A) δ᾽(Pt) ὁi(Art)(N) γεi|νειLήL|τηςL(N) δύiοi(Adj)(A) |μὲνL(Pt) κύiναςi(A) |ἥLμιiσυi(Adj)(A) |πηLγοὺςL(Adj)(A)|
+(90) die aber der Bärtige zwei zwar Hunde halb kräftige
+(91) τρεῖςL(Adj)(A) δὲi(Pt) παi|ρουLαίL|ουςL(Adj)(A) ἕiναi(Adj)(A) |δ᾽(Pt) αἰLόiλονi(Adj)(A), |οἵL(Pr)(N) ῥαi(Pt) λέi|ονLταςL(A)|
+(91) drei aber kurz|beinige einen aber bunt|schillernden, die ja Löwen
+(92) αὐLτοὺςL(Pr)(A) |αὖL(Adv) ἐiρύi|ονLτεςi(Prä)(Akt)(N), ὅi|τεL(Kon) δράL|ξαινLτοi(Aor)(M/P)(Knj) δεi|ράLωνL(G),|
+(92) sie|selbst wieder ziehend, wenn ergriffen|würden der|Häute,
+(93) εἷλLκονi(Imp)(Akt) ἔi|τιL(Adv) ζώL|ονLταςi(Prä)(Akt)(A) ἐπi᾽(Prp) |αὐLλίiονi(A), |ἑLπτὰi(Adj)(A) δ᾽(Pt) ἔi|δωLκεL(AorS)(Akt)|
+(93) zogen noch lebende zum Lager, sieben aber gab
+(94) θάσLσοiναςi(Adj)(A) |αὐLράL|ωνL(Adj)(G) Κυiνοi|σουLρίiδαςi(A), |αἵL(Pr)(N) ῥαi(Pt) διi|ῶLξαιL(Aor)(Akt)(Inf)|
+(94) schnell|ere wind|iger Kynosouriden, die ja zu|verfolgen
+(95) ὤLκιL|σταιL(Adj)(N)(Sup) νεL|βρούςL(A) τεi(Pt) καὶi(Kon) |οὐL(Pt) μύL|ονLταi(Prä)(Akt)(A) λαi|γωLόνL(A),|
+(95) schnellsten Kitze und auch nicht blinzelnden Hasen,
+(96) καὶL(Kon) κοίL|τηνL(A) ἐiλάi|φοιLοi(G) καὶi(Kon) |ὕLστριiχοςi(G) |ἔνLθαi(Adv) καi|λιLαὶL(N)|
+(96) und Lager|statt des|Hirsches und des|Ebers wo Lager|stätten
+(97) σηLμῆL|ναιL(Aor)(Akt)(Inf), καὶL(Kon) |ζορLκὸςi(Adj)(N) ἐπi᾽(Prp) |ἴχLνιiονi(A) |ἡLγήL|σαLσθαιL(Aor)(Med)(Inf).|
+(97) anzeigen, und scharf|äugig auf die|Spur führen.
+(98) ἔνLθενi(Adv) ἀi|περLχοiμέi|νηL(Prä)(M/P)(N) (μεiτὰi(Prp) |καὶL(Kon) κύiνεςi(N) |ἐσLσεύL|ονLτὀL(Imp)(M/P)|
+(98) von|dort weg|gehend (mit und Hunde eilten
+(99) εὗLρεςi(AorS)(Akt) ἐi|τίL(Adv) προiμοi|λῇσL(AorS)(Akt)(Knj)) ὄiρεi|οςL(G) τοῦL(Art)(G) |ΠαρLραiσίi|οιLοL(G)|
+(99) fandest noch vor|gingst) des|Berges des Parrhasischen
+(100) σκαιLρούL|σαςL(Prä)(Akt)(A) ἐiλάi|φουςL(A), μέiγαi(Adj)(A) |τιL(Pr)(A) χρέiοςi(N)· |αἱL(Art)(N) μὲνi(Pt) ἑπi᾽(Prp) |ὄχLθῃςL(D)|
+(100) hüpfend Hirsche, groß etwas Aufgabe|Pflicht· die zwar an|auf Ufern
+(101) αἰLὲνi(Adv) ἐi|βουLκοiλέi|ονLτοi(Imp)(M/P) μεi|λαμLψήL|φιLδοςi(Adj)(G) Ἀi|ναύLρουL(G),|
+(101) immer weideten|sich des|schwarz|kiesigen Anauros,
+(102) μάσLσοiνεςi(Adj)(N)(Kmp) |ἢL(Kon) ταῦL|ροιL(N), κεiράi|ωνL(G) δ᾽(Pt) ἀiπεi|λάμLπεiτοi(Imp)(M/P) |χρυLσόςL(N)·|
+(102) größer als Stiere, der|Hörner aber strahlte|hervor Gold·
+(103) ἐLξαiπίi|νηςL(Adv) δ᾽(Pt) ἔiταi|φέςL(Aor)(M/P) τεi(Pt) καὶi(Kon) |ὃνL(Pr)(A) ποiτὶi(Prp) |θυLμὸνi(A) ἔi|ειLπεςL(AorS)(Akt)|
+(103) plötzlich aber warst|erstaunt und auch dein|eigenen zu|dem Sinn sagtest
+(104) "τοῦLτόi(Pr)(N) κενi(Pt) |ἈρLτέiμιi|δοςL(G) πρωL|τάLγριiονi(Adj)(N) |ἄLξιiονi(Adj)(N) |εἴLηL(Prä)(Akt)(Op)."|
+(104) "dieses wohl der|Artemis Erst|Wild wert wäre."
+(105) πέντL᾽(Adj)(N) ἔiσανi(Imp)(Akt) |αἱL(Art)(N) πᾶL|σαιL(Adj)(N)· πίiσυi|ραςL(Adj)(A) δ᾽(Pt) ἕiλεςi(AorS)(Akt) |ὦLκαi(Adv) θέi|ουLσαL(Prä)(Akt)(N)|
+(105) fünf waren die alle· vier aber nahmst schnell laufend
+(106) νόLσφιi(Prp) κυi|νοLδροiμίi|ηςL(G), ἵiναi(Kon) |τοιL(Pr)(D) θοiὸνi(Adj)(A) |ἅρLμαi(A) φέi|ρωLσιL(Prä)(Akt)(Knj).|
+(106) abseits der|Hunde|jagd, damit dir schnell|es Gespann tragen|mögen.
+(107) τὴνL(Art)(A) δὲi(Pt) μίi|ανL(Adj)(A) Κεiλάi|δονLτοςi(G) ὑi|πὲρL(Prp) ποiταi|μοῖLοi(G) φυi|γοῦLσανL(Aor)(Akt)(A)|
+(107) die aber eine des|Keladon über des|Flusses fliehend
+(108) ἩLρηςL(G) |ἐνLνεiσίi|ῃLσινi(D), ἀi|έLθλιiονi(Adj)(A) |ἩLραL|κλῆLιL(D)|
+(108) der|Hera durch|Anstiftungen, Wettkampf|preis für|Herakles
+(109) ὕLστεiρονi(Adv) |ὄLφραi(Kon) γέi|νοιLτοi(Aor)(Med)(Op), πάi|γοςL(N) Κεiρύi|νειLοςi(Adj)(N) ἔi|δεLκτοL(Aor)(Med).|
+(109) später damit würde|werden, Fels Kerynäisch|er empfing.
+(110) ἌρLτεiμιi(V) |ΠαρLθεiνίi|ηL(Adj)(V) Τιiτυi|οLκτόiνεi(Adj)(V), |χρύLσεiαi(Adj)(N) |μένL(Pt) τοιL(Pr)(D)|
+(110) Artemis Jungfräuliche Tityos|Töterin, golden zwar dir
+(111) ἔνLτεiαi(A) |καὶL(Kon) ζώL|νηL(N), χρύiσεi|ονL(Adj)(A) δ᾽(Pt) ἐL|ζεύLξαiοi(Aor)(Med) |δίLφρονL(A),|
+(111) Geräte und Gürtel, golden aber spanntest|du Wagen,
+(112) ἐνL(Prp) δ᾽(Pt) ἐiβάi|λευL(Aor)(Akt) χρύL|σειLαi(Adj)(A), θεi|ήL(V), κεiμάi|δεσLσιi(D) χαi|λιLνάL(A).|
+(112) in aber warfst|du goldene, Göttin, den|Jährlingen Gebisse.
+(113) ποῦL(Adv) δέi(Pt) σεi(Pr)(A) |τὸL(Art)(A) πρῶL|τονL(Adj)(A) κεiρόi|ειςL(Adj)(N) ὄiχοςi(N) |ἤρLξατi᾽(Aor)(Med) ἀi|είLρεινL(Prä)(Inf)(Akt);|
+(113) wo aber dich das erste hornig|er Wagen begann heben;
+(114) ΑἵLμῳi(D) ἐi|πὶL(Prp) ΘρήL|ιLκιi(Adj)(D), τόi|θενL(Adv) βοiρέi|αLοi(G) κατi|ᾶLιξL(N)|
+(114) Hämos auf thrakischem, von|dort des|Boreas Böe
+(115) ἔρLχεiταιi(Prä)(M/P) |ἀLχλαίL|νοιLσιi(Adj)(D) δυi|σαLέiαi(Adj)(A) |κρυLμὸνi(A) ἄi|γουLσαL(Prä)(Akt)(N).|
+(115) kommt den|Mantel|losen schwer|erträglichen Frost führend.
+(116) ποῦL(Adv) δ᾽(Pt) ἔiταi|μεςL(Aor)(Akt) πεύL|κηνL(A), ἀiπὸi(Prp) |δὲL(Pt) φλοiγὸςi(G) |ἥLψαiοi(Aor)(Med) |ποίLηςL(G);|
+(116) wo aber schnittest Kiefer, von aber der|Flamme ergriffst|du der|Streu;
+(117) ΜυLσῷi(Adj)(D) ἐνi(Prp) |ΟὐLλύμL|πῳL(D), φάiεi|οςL(G) δ᾽(Pt) ἐiνέi|ηLκαςi(Aor)(Akt) ἀi|υτLμὴνL(A)|
+(117) mysischem in Olymp, des|Lichtes aber sandtest|du|hinein Hauch
+(118) ἀLσβέL|στουL(Adj)(G), τόi(Art)(N) ῥαi(Pt) |παLτρὸςi(G) ἀi|ποLστάL|ζουLσιi(Prä)(Akt) κεi|ραυLνοίL(N).|
+(118) unlöschbaren, das ja des|Vaters tropfen|ab Blitze.
+(119) ποσLσάiκιi(Adv) |δ᾽(Pt) ἀρLγυiρέi|οιLοi(Adj)(G), θεi|ήL(V), πειL|ρήLσαiοi(Aor)(Med) |τόLξουL(G);|
+(119) wie|oft aber des|silbernen, Göttin, versucht|hast|du des|Bogens;
+(120) πρῶLτονi(Adv) ἐi|πὶL(Prp) πτεiλέi|ηνL(A), τὸi(Art)(A) δὲi(Pt) |δεύLτεiρονi(Adj)(A) |ἧLκαςi(Aor)(Akt) ἐi|πὶL(Prp) δρῦνL(A),|
+(120) zuerst auf Ulme, das aber zweite schossest|du auf Eiche,
+(121) τὸL(Art)(A) τρίiτονi(Adj)(A) |αὖτL᾽(Adv) ἐiπὶi(Prp) |θῆLραi(A). τὸi(Art)(A) |τέLτραiτονi(Adj)(A) |οὐLκέτi᾽(Adv) ἐi|πὶL(Prp) δὴνL(Adv)|
+(121) das dritte wieder auf Wild. das vierte nicht|mehr auf lange
+(122) ἀλLλάi(Kon) μινi(Pr)(A) |εἰςL(Prp) ἀiδίi|κωνL(Adj)(G) ἔiβαi|λεςL(Aor)(Akt) πόiλινi(A), |οἵL(Pr)(N) τεi(Pt) πεi|ρὶL(Prp) σφέαςL(Pr)(A)|
+(122) sondern sie in der|Ungerechten warfst|du Stadt, die und um sich
+(123) οἵL(Pr)(N) τεi(Pt) πεi|ρὶL(Prp) ξείL|νουςL(A) ἀiλιi|τήLμοiναi(Adj)(A) |πολLλάi(Adj)(A) τέi|λεLσκονL(Imp)(Akt),|
+(123) die und um Fremde verfehlend|sündhaft vieles vollbrachten,
+(124) σχέτLλιiοιi(Adj)(N)· |οἷςL(Pr)(D) τύL|νηL(Pr)(N) χαiλεi|πὴνL(Adj)(A) ἐμL|μάLξεiαιi(Prä)(M/P) |ὀρLγήνL(A)·|
+(124) verstockte· denen du harte anlegst Zorn·
+(125) κτήLνεiάi(A) |φινL(Pr)(A) λοιL|μὸςL(N) καiταi|βόLσκεiταιi(Prä)(M/P), |ἔρLγαi(N) δὲi(Pt) |πάχLνηL(N),|
+(125) Herden sie Seuche frisst|hinab, Werke aber Reif,
+(126) κείLρονL|ταιL(Prä)(M/P) δὲi(Pt) γέi|ρονLτεςi(N) ἐφi᾽(Prp) |υἱLάiσινi(D), |αἱL(Art)(N) δὲi(Pt) γυi|ναῖLκεςL(N)|
+(126) werden|geschoren aber Greise auf Söhnen, die aber Frauen
+(127) ἢL(Kon) βληL|ταὶL(Adj)(N) θνῄL|σκουLσιi(Prä)(Akt) λεi|χωLίiδεςi(N) |ἠLὲi(Kon) φυi|γοῦLσαιL(Aor)(Akt)(N)|
+(127) oder getroffene sterben Wöchnerinnen oder fliehend|seiend
+(128) τίLκτουL|σινL(Prä)(Akt) τῶνL(Pr)(G) |οὐLδὲνi(Pr)(A) ἐi|πὶL(Prp) σφυiρὸνi(A) |ὀρLθὸνi(Adj)(A) ἀi|νέLστηL(Aor)(Akt).|
+(128) gebären von|denen nichts auf Knöchel aufrecht erhob|sich.
+(129) οἷςL(Pr)(D) δέi(Pt) κενi(Pt) |εὐLμειL|δήςL(Adj)(N) τεi(Pt) καὶi(Kon) |ἵLλαiοςi(Adj)(N) |αὐLγάσL|σηLαιL(Prä)(M/P)(Knj),|
+(129) denen aber wohl freundlich|blickend und auch gnädig erstrahlest|du,
+(130) κείLνοιςL(Pr)(D) |εὖL(Adv) μὲνi(Pt) ἄi|ρουLραi(N) φέi|ρειL(Prä)(Akt) στάiχυνi(A), |εὖL(Adv) δὲi(Pt) γεi|νέLθληL(N)|
+(130) jenen gut zwar Acker trägt Ähre, gut aber Zucht
+(131) τεLτραiπόi|δωνL(Adj)(G), εὖL(Adv) |δ᾽(Pt) ὄλLβοςi(N) ἀi|έLξεiταιi(Fu)(M/P)· |οὐδL᾽(Kon) ἐiπὶi(Prp) |σῆLμαL(A)|
+(131) der|Vierfüßer, gut aber Wohl|stand wird|wachsen· noch zu Grabmal
+(132) ἔρLχονL|ταιL(Prä)(M/P) πλὴνL(Prp) |εὖLτεi(Kon) ποi|λυLχρόiνιi|όνL(Adj)(A) τιi(Pr)(A) φέi|ρωLσινL(Prä)(Akt)(Knj)·|
+(132) gehen außer wenn lang|jährig|es etwas tragen|mögen·
+(133) οὐLδὲi(Kon) διi|χοLσταiσίi|ηL(N) τρώL|ειL(Prä)(Akt) γέiνοςi(N), |ἥL(Pr)(N) τεi(Pt) καὶi(Kon) |εὖL(Adv) περL(Pt)|
+(133) noch Zwietracht nagt Geschlecht, die und auch wohl doch
+(134) οἴLκουςL(A) |ἑLστηL|ῶLταςi(Per)(Akt)(A) ἐi|σίLναiτοi(Imp)(M/P)· |ταὶL(Art)(N) δὲi(Pt) θυi|ωLρὸνL(A)|
+(134) Häuser stehend|seiend heimsuchte· die aber Opfer|fest
+(135) εἰLνάiτεi|ρεςL(N) γαiλόi|ῳL(D) τεi(Pt) μίi|ανL(Adj)(A) πεiρὶi(Prp) |δίLφραi(A) τίi|θενLταιL(Prä)(M/P).|
+(135) Schwägerinnen der|Schwägerin und einen um Sitz stellen.
+(136) πότLνιiαi(V), |τῶνL(Pr)(G) εἴL|ηL(Prä)(Akt)(Op) μὲνi(Pt) ἐi|μοὶL(Pr)(D) φίiλοςi(Adj)(N) |ὅLστιςi(Pr)(N) ἀi|ληLθήςL(Adj)(N),|
+(136) Herrin, derer wäre zwar mir Freund wer wahr,
+(137) εἴLηνL(Prä)(Akt)(Op) |δ᾽(Pt) αὐLτόςi(Pr)(N), ἄi|νασLσαi(V), μέi|λοιL(Prä)(Akt)(Op) δέi(Pt) μοιi(Pr)(D) |αἰLὲνi(Adv) ἀi|οιLδήL(N)·|
+(137) wäre aber selbst, Herrin, möge|liegen doch mir immer Gesang·
+(138) τῇL(Pr)(D) ἔiνιi(Prp) |μὲνL(Pt) ΛηL|τοῦςL(G) γάiμοςi(N) |ἔσLσεiταιi(Fu)(M/P), |ἐνL(Prp) δὲi(Pt) σὺi(Pr)(N) |πολLλήL(Adj)(N),|
+(138) darin in zwar der|Leto Hochzeit wird|sein, in aber du viel,
+(139) ἐνL(Prp) δὲi(Pt) καὶi(Kon) |ἈLπόλL|λωνL(N), ἐνL(Prp) |δ᾽(Pt) οἵL(Pr)(N) σεiοi(Pr)(G) |πάνLτεςi(Adj)(N) ἄi|εLθλοιL(N),|
+(139) in aber auch Apollon, in aber die deiner alle Wettkämpfe,
+(140) ἐνL(Prp) δὲi(Pt) κύi|νεςL(N) καὶL(Kon) |τόLξαi(N) καὶi(Kon) |ἄνLτυiγεςi(N), |αἵL(Pr)(N) τέi(Pt) σεi(Pr)(A) |ῥεῖLαL(Adv)|
+(140) in aber Hunde und Bogen und Joch|ringe, die und dich leicht
+(141) θηLηL|τὴνL(Adj)(A) φοiρέi|ουLσινi(Prä)(Akt), ὅτi᾽(Kon) |ἐςL(Prp) Διiὸςi(G) |οἶLκονi(A) ἐi|λαύLνειςL(Prä)(Akt).|
+(141) bestaunens|wert tragen, wenn in des|Zeus Haus treibst.
+(142) ἔνLθαi(Adv) τοιi(Pr)(D) |ἀνLτιiόi|ωνLτεςi(Prä)(Akt)(N) ἐi|νὶL(Prp) προiμοi|λῇLσιi(D) δέi|χονLταιL(Prä)(M/P)|
+(142) dort dir entgegen|gehend|seiend in Vor|hallen empfangen|sie
+(143) ὅLπλαi(A) μὲνi(Pt) |ἙρLμείL|ηςL(N) Ἀiκαi|κήLσιiοςi(Adj)(N), |αὐLτὰρi(Kon) Ἀi|πόλLλωνL(N)|
+(143) Waffen zwar Hermes Un|schädlich|er, aber Apollon
+(144) θηLρίiονi(A) |ὅτLτιi(Pr)(A) φέi|ρῃLσθαi(Prä)(M/P)(Knj)· πάi|ροιLθέi(Adv) γέi(Pt), |πρίνL(Kon) περi(Pt) ἱi|κέLσθαιL(Aor)(Med)(Inf)|
+(144) Tier was bringest|du· zuvor ja, ehe doch an|zu|kommen
+(145) καρLτεiρὸνi(Adj)(A) |ἈλLκεiΐi|δηνL(A)· νῦνL(Adv) |δ᾽(Pt) οὐLκέiτιi(Adv) |τοῦLτονi(Pr)(A) ἄi|εLθλονL(A)|
+(145) starken Alkiden· jetzt aber nicht|mehr diesen Wettkampf|preis
+(146) ΦοῖLβοςi(N) ἔi|χειL(Prä)(Akt), τοῖL|οςL(Pr)(N) γὰρi(Pt) ἀi|εὶL(Adv) ΤιL|ρύνLθιiοςi(Adj)(N) |ἄκLμωνL(N)|
+(146) Phoibos hat, solcher denn immer Tirynthisch|er Amboß
+(147) ἕLστηL|κεL(Per)(Akt) πρὸi(Prp) πυi|λέωνL(G) ποiτιi|δέγLμεiνοςi(Prä)(M/P)(N), |εἴL(Kon) τιi(Pr)(A) φέi|ρουLσαL(Prä)(Akt)(N)|
+(147) steht vor der|Tore entgegen|wartend, wenn etwas bringend
+(148) νεῖLαιL(Aor)(Akt)(Knj) |πῖLονi(Adj)(A) ἔi|δεLσμαi(A)· θεi|οὶL(N) δ᾽(Pt) ἐiπὶi(Prp) |πάνLτεςi(Adj)(N) ἐi|κείLνῳL(Pr)(D)|
+(148) hinab|bringest fettes Speise· Götter aber auf alle jenem
+(149) ἄλLληL|κτονL(Adv) γεiλόi|ωLσιi(Prä)(Akt), μάi|λιLσταi(Adv) δὲi(Pt) |πενLθεiρὴi(N) |αὐLτήL(Pr)(N),|
+(149) un|aufhörlich lachen, am|meisten aber Schwieger|mutter selbst,
+(150) ταῦLρονi(A) ὅτi᾽(Kon) |ἐκL(Prp) δίL|φροιLοi(G) μάi|λαL(Adv) μέiγανi(Adj)(A) |ἢL(Kon) ὅi(Pr)(N) γεi(Pt) |χλούLνηνL(A)|
+(150) Stier wenn aus des|Wagens sehr großen oder der ja Eber
+(151) κάLπρονi(A) ὀi|πιLσθιiδίi|οιLοi(Adj)(G) φέi|ροιL(Prä)(Akt)(Op) ποiδὸςi(G) |ἀLσπαίL|ρονLταL(Prä)(Akt)(A)·|
+(151) Keiler rück|seitigen trüge des|Fußes zuckend|seiend·
+(152) κερLδαiλέi|ῳL(Adj)(D) μύL|θῳL(D) σεi(Pr)(A), θεi|ήL(V), μάiλαi(Adv) |τῷLδεi(Pr)(D) πιi|νύLσκειL(Prä)(Akt)|
+(152) mit|gewinn|bringend|er Rede dich, Göttin, sehr mit|diesem belehrt
+(153) "βάλLλεi(Prä)(Akt)(Imv) καi|κοὺςL(Adj)(A) ἐiπὶi(Prp) |θῆLραςi(A), ἵi|ναL(Kon) θνηL|τοίL(Adj)(N) σεi(Pr)(A) βοi|ηLθὸνL(A)|
+(153) "triff Böse auf Tiere, damit Sterbliche dich Helfer
+(154) ὡςL(Kon) ἐiμὲi(Pr)(A) |κιLκλήL|σκωLσινi(Prä)(Akt)(Knj). ἔi|αL(Prä)(Akt)(Imv) πρόiκαςi(A) |ἠLδὲi(Kon) λαi|γωLοὺςL(A)|
+(154) wie mich rufen|mögen. lass Gämsen und Hasen
+(155) οὔLρεiαi(A) |βόLσκεL|σθαιL(Prä)(M/P)(Inf)· τίi(Pr)(N) δέi(Pt) |κενL(Pt) πρόiκεςi(N) |ἠLδὲi(Kon) λαi|γωLοὶL(N)|
+(155) Berge weiden|sich|zu· was aber wohl Böcke und Hasen
+(156) ῥέLξειL|ανL(Aor)(Akt)(Op); σύiεςi(N) |ἔρLγαi(A), σύi|εςL(N) φυiτὰi(A) |λυLμαίL|νονLταιL(Prä)(M/P).|
+(156) würden|anstellen; Schweine Werke, Schweine Pflanzen verderben.
+(157) καὶL(Kon) βόiεςi(N) |ἀνLθρώL|ποιLσιi(D) καi|κὸνL(Adj)(N) μέiγαi(Adj)(N)· |βάλλL᾽(Prä)(Akt)(Imv) ἐiπὶi(Prp) |καὶL(Kon) τούςL(Pr)(A)."|
+(157) auch Rinder den|Menschen Übel groß· wirf gegen auch jene."
+(158) ὣςL(Adv) ἔiνεi|πενL(Aor)(Akt), ταiχιi|νὸςL(Adj)(N) δὲi(Pt) μέi|γανL(Adj)(A) πεiρὶi(Prp) |θῆLραi(A) ποi|νεῖLτοL(Prä)(M/P).|
+(158) so sprach, schnell aber großen um Jagd mühte|sich.
+(159) οὐL(Pt) γὰρi(Pt) ὅi(Pr)(N) |γεL(Pt) Φρυiγίi|ῃL(Adj)(D) περi(Pt) ὑi|πὸL(Prp) δρυiὶi(D) |γυῖLαi(A) θεi|ωLθεὶςL(Aor)(Pas)(N)|
+(159) nicht denn der ja in|Phrygien doch unter Eiche Glieder vergöttert|worden
+(160) παύLσατi᾽(Aor)(M/P) ἀi|δηLφαiγίi|ηςL(G)· ἔiτιi(Adv) |οἱL(Pr)(D) πάiραi(Adv) |νηLδὺςi(N) ἐi|κείLνηL(Pr)(N),|
+(160) ließ|ab von|Völlerei· noch ihm zur|Hand Bauch jener,
+(161) τῇL(Art)(D) ποτi᾽(Pt) ἀi|ροLτριiόi|ωνLτιi(Prä)(Akt)(D) συi|νήνLτεiτοi(Imp)(M/P) |ΘειLοiδάi|μανLτιL(D).|
+(161) der einst pflügenden begegnete dem|Theiodamas.
+(162) σοὶL(Pr)(D) δ᾽(Pt) ἈL|μνιLσιiάi|δεςL(N) μὲνi(Pt) ὑi|πὸL(Prp) ζεύL|γληLφιi(D) λυi|θείLσαςL(Aor)(Pas)(A)|
+(162) dir aber Amnisiaden zwar unter Joch|riemen gelöst|worden
+(163) ψήLχουL|σινL(Prä)(Akt) κεiμάi|δαςL(A), παiρὰi(Prp) |δέL(Pt) σφιiσιi(Pr)(D) |πουLλὺi(Adv) νέi|μεLσθαιL(Prä)(M/P)(Inf)|
+(163) reiben Jährlinge, bei aber ihnen viel weiden|sich
+(164) ἭLρηςL(G) |ἐκL(Prp) λειL|μῶLνοςi(G) ἀi|μηLσάiμεi|ναιL(Aor)(Med)(N) φοiρέi|ουLσινL(Prä)(Akt)|
+(164) der|Hera aus Wiese geerntet|habend tragen
+(165) ὠLκύiθοi|ονL(Adj)(A) τριiπέi|τηLλονi(Adj)(A), ὃi(Pr)(N) |καὶL(Kon) Διiὸςi(G) |ἵπLποιi(N) ἔi|δονLσινL(Prä)(Akt)·|
+(165) schnell|sprießend drei|blättrig, welches auch des|Zeus Pferde essen·
+(166) ἐνL(Prp) καὶL(Kon) |χρυLσείL|αςL(Adj)(A) ὑiποi|ληLνίiδαςi(A) |ἐLπλήL|σανLτοL(Aor)(M/P)|
+(166) in auch goldene unter|Kelter|schalen füllten
+(167) ὕLδαiτοςi(G), |ὄφρL᾽(Kon) ἐiλάi|φοιLσιi(D) ποi|τὸνL(A) θυL|μάρLμεiνονi(Per)(M/P)(A) |εἴLηL(Prä)(Akt)(Op).|
+(167) des|Wassers, damit den|Hirschen Trank herz|angemessen sei.
+(168) αὐLτὴL(Pr)(N) |δ᾽(Pt) ἐςL(Prp) παL|τρὸςL(G) δόiμονi(A) |ἔρLχεiαιi(Prä)(M/P)· |οἱL(Pr)(N) δέi(Pt) σ᾽(Pr)(A) ἐφi᾽(Prp) |ἕLδρηνL(A)|
+(168) du|selbst aber in des|Vaters Haus gehst· sie aber dich auf Sitz
+(169) πάνLτεςi(Adj)(N) ὁi|μῶςL(Adv) καiλέi|ουLσιi(Prä)(Akt)· σὺi(Pr)(N) |δ᾽(Pt) ἈLπόλL|λωLνιi(D) παi|ρίLζειςL(Prä)(Akt).|
+(169) alle gleichermaßen rufen· du aber dem|Apollon sitzt|bei.
+(170) ἡLνίiκαi(Kon) |δ᾽(Pt) αἱL(Art)(N) νύμL|φαιL(N) σεi(Pr)(A) χοi|ρῷL(D) ἔiνιi(Prp) |κυLκλώL|σονLταιL(Fu)(M/P)|
+(170) wenn aber die Nymphen dich im|Chor darin umringen|werden
+(171) ἀγLχόiθιi(Adv) |πηLγάL|ωνL(G) ΑἰL|γυLπτίiουi(Adj)(G) |ἸLνωL|ποῖLοL(G)|
+(171) nahe der|Quellen ägyptischen des|Inopos
+(172) ἢL(Kon) Πιiτάi|νηςL(G) (καὶL(Kon) |γὰρL(Pt) Πιiτάi|νηL(N) σέiθενi(Pr)(G)|) ἢL(Kon) ἐiνὶi(Prp) |ΛίLμναιςL(D),|
+(172) oder der|Pitane (und denn Pitane deiner) oder in Limnai,
+(173) ἢL(Kon) ἵiναi(Adv), |δαῖLμονi(V), Ἀi|λὰςL(N) Ἀiραi|φηLνίiδαςi(Adj)(A) |οἰLκήL|σονLσαL(Fu)(Akt)(N)|
+(173) oder wo, Dämon, Salz|sümpfe araphenidische wohnend|werdend
+(174) ἦλLθεςi(AorS)(Akt) ἀi|πὸL(Prp) Σκυiθίi|ηςL(G), ἀiπὸi(Prp) |δ᾽(Pt) εἴLπαiοi(Aor)(M/P) |τέθLμιiαi(A) |ΤαύLρωνL(G),|
+(174) kamst von Skythien, von aber sagtest|du Satzungen der|Taurer,
+(175) μὴL(Pt) νειL|ὸνL(A) τηL|μοῦLτοςi(Adv) ἐi|μαὶL(Adj)(N) βόiεςi(N) |εἵLνεiκαi(Prp) |μιLσθοῦL(G)|
+(175) nicht Acker hier|orts meine Kühe um|willen des|Lohns
+(176) τεLτράiγυi|ονL(Adj)(A) τέL|μνοιLενi(Prä)(Akt)(Op) ὑπi᾽(Prp) |ἀλLλοiτρίi|ῳL(Adj)(D) ἀiροi|τῆLριL(D)·|
+(176) vier|gespannt schneiden|mögen unter fremdem Pflüger·
+(177) ἦL(Pt) γάρL(Pt) |κενL(Pt) γυιL|αίL(N) τεi(Pt) καὶi(Kon) |αὐLχέiναi(A) |κεκLμηL|υῖLαιL(Per)(Akt)(N)|
+(177) wahrlich denn wohl Glieder und auch Nacken ermattet|seiend
+(178) κόLπρονi(A) ἔi|πιL(Prp) προiγέi|νοινLτοi(Prä)(M/P)(Op), καὶi(Kon) |εἰL(Kon) ΣτυμL|φαιLίiδεςi(Adj)(N) |εἶLενL(Prä)(M/P)(Op)|
+(178) Kot darauf würden|geraten, und wenn Stymphalische wären
+(179) εἰLναiεi|τιLζόiμεi|ναιL(Prä)(M/P)(N) κεiραi|ελLκέiεςi(Adj)(N), |αἳL(Pr)(N) μέγi᾽(Adv) ἄi|ριLσταιL(Adj)(N)(Sup)|
+(179) ein|jährig|werdend horn|ziehende, die sehr beste
+(180) τέLμνεινL(Prä)(Inf)(Akt) |ὦλLκαi(A) βαi|θεῖLανi(Adj)(A)· ἐi|πεὶL(Kon) θεiὸςi(N) |οὔLποτi᾽(Adv) ἐi|κεῖLνονL(Pr)(A)|
+(180) zu|schneiden Furche tiefe· da Gott niemals jenen
+(181) ἦλLθεi(AorS)(Akt) παρi᾽(Prp) |ἨLέiλιi|οςL(G) καL|λὸνL(Adj)(A) χοiρόνi(A), |ἀλLλὰi(Kon) θεi|ῆLταιL(Prä)(M/P)|
+(181) kam zu des|Helios schönen Chor, sondern schaut
+(182) δίLφρονi(A) ἐi|πιLστήL|σαςL(Aor)(Akt)(N), τὰi(Art)(N) δὲi(Pt) |φάLεiαi(N) |μηLκύL|νονLταιL(Prä)(M/P).|
+(182) Wagen anhaltend, die aber Lichter verlängern|sich.
+(183) τίςL(Pr)(N) δέi(Pt) νύi(Pt) |τοιL(Pr)(D) νήL|σωνL(G), ποῖL|ονL(Pr)(A) δ᾽(Pt) ὄiροςi(N) |εὔLαiδεi(Aor)(Akt) |πλεῖLστονL(Adj)(A)(Sup),|
+(183) welche aber nun dir der|Inseln, welches aber Berg gefiel am|meisten,
+(184) τίςL(Pr)(N) δὲi(Pt) λιi|μήνL(N), ποίL|ηL(Pr)(N) δὲi(Pt) πόi|λιςL(N); τίiναi(Pr)(A) |δ᾽(Pt) ἔLξοiχαi(Adv) |νυμLφέωνL(G)|
+(184) welcher aber Hafen, welche aber Stadt; welche aber besonders der|Nymphen
+(185) φίLλαiοi(Prä)(Akt), |καὶL(Kon) ποίL|αςL(Pr)(A) ἡL|ρωLίiδαςi(A) |ἔLσχεςi(AorS)(Akt) ἑi|ταίLραςL(A);|
+(185) liebst, und welche Heldinnen hattest Gefährtinnen;
+(186) εἰLπέi(Aor)(Akt)(Imv), θεi|ήL(V), σὺi(Pr)(N) μὲνi(Pt) |ἄμLμινi(Pr)(D), ἐi|γὼL(Pr)(N) δ᾽(Pt) ἑiτέi|ροιLσινi(Adj)(D) ἀi|είLσωL(Fu)(Akt).|
+(186) sage, Göttin, du zwar uns, ich aber den|anderen werde|singen.
+(187) νήLσωνL(G) |μὲνL(Pt) Δοiλίi|χηL(N), ποiλίi|ωνL(G) δέi(Pt) τοιi(Pr)(D) |εὔLαiδεi(Aor)(Akt) |ΠέρLγηL(N),|
+(187) der|Inseln zwar Doliche, der|Städte aber dir gefiel Perge,
+(188) ΤηύLγεL|τονL(N) δ᾽(Pt) ὀiρέi|ωνL(G), λιiμέi|νεςL(N) γεi(Pt) μὲνi(Pt) |ΕὐLρίL|ποιLοL(G).|
+(188) Taygetos aber der|Berge, Häfen ja zwar des|Euripos.
+(189) ἔLξοiχαi(Adv) |δ᾽(Pt) ἀλLλάL|ωνL(Adj)(G) ΓορL|τυLνίiδαi(Adj)(A) |φίLλαiοi(Prä)(Akt) |νύμLφηνL(A),|
+(189) besonders aber der|anderen Gortynische liebst Nymphe,
+(190) ἐλLλοiφόi|νονL(Adj)(A) Βριiτόi|μαρLτινi(A) ἐi|ύLσκοiπονi(Adj)(A)· |ἧςL(Pr)(G) ποiτεi(Adv) |ΜίLνωςL(N)|
+(190) Hirsch|tötend Britomartis gut|zielend· deren einst Minos
+(191) πτοιLηL|θεὶςL(Aor)(Pas)(N) ὑπi᾽(Prp) ἔi|ρωLτιi(D) καi|τέLδραiμενi(AorS)(Akt) |οὔLρεiαi(A) |ΚρήLτηςL(G).|
+(191) erschreckt|worden unter Liebe lief|hinab Berge Kretas.
+(192) ἡL(Pr)(N) δ᾽(Pt) ὁiτὲi(Pt) |μὲνL(Pt) λαiσίi|ῃLσινi(Adj)(D) ὑi|πὸL(Prp) δρυiσὶi(D) |κρύLπτεiτοi(Imp)(M/P) |νύμLφηL(N),|
+(192) sie aber einmal zwar dicht|laubigen unter Eichen verbarg|sich Nymphe,
+(193) ἄλLλοiτεi(Adv) |δ᾽(Pt) εἱLαiμεi|νῇLσινi(Adj)(D)· ὁi(Art)(N) |δ᾽(Pt) ἐνLνέiαi(Adj)(A) |μῆLναςi(A) ἐi|φοίLταL(Imp)(Akt)|
+(193) ein|andermal aber in|gelösten· der aber neun Monate ging|um
+(194) παίLπαiλάi(A) |τεL(Pt) κρηL|μνούςL(A) τεi(Pt) καὶi(Kon) |οὐκL(Pt) ἀiνέi|παυLσεi(Aor)(Akt) διi|ωLκτύνL(A),|
+(194) Fels|klippen und Steil|hänge und auch nicht ruhte|aus Verfolgung,
+(195) μέσφL᾽(Adv) ὅiτεi(Kon) |μαρLπτοiμέi|νηL(Prä)(M/P)(N) καὶL(Kon) |δὴL(Pt) σχεiδὸνi(Adv) |ἥLλαiτοi(AorS)(Med) |πόνLτονL(A)|
+(195) bis als ergriffen|werdend und ja beinahe sprang Meer
+(196) πρηLόiνοςi(Adj)(G) |ἐξL(Prp) ὑiπάi|τοιLοi(Adj)(G) καὶi(Kon) |ἔνLθοiρενi(AorS)(Akt) |εἰςL(Prp) ἁiλιi|ήLωνL(G)|
+(196) des|Vorsprungs aus hoch|ragenden und sprang|hinein in der|Fischer
+(197) δίLκτυiαi(A), |τάL(Art)(N) σφ᾽(Pr)(A) ἐiσάi|ωLσανi(Aor)(Akt)· ὅi|θενL(Adv) μεiτέi|πειLταi(Adv) Κύi|δωLνεςL(N)|
+(197) Netze, welche sie retteten· daher nachher Kydonen
+(198) νύμLφηνL(A) |μὲνL(Pt) ΔίL|κτυLνανi(A), ὄi|ροςL(N) δ᾽(Pt) ὅiθενi(Adv) |ἥLλαiτοi(AorS)(Med) |νύμLφηL(N)|
+(198) Nymphe zwar Diktyna, Berg aber woher sprang Nymphe
+(199) ΔιLκταῖL|ονL(Adj)(A) καiλέi|ουLσινi(Prä)(Akt), ἀi|νεLστήL|σανLτοi(Aor)(M/P) δὲi(Pt) |βωLμοὺςL(A)|
+(199) Diktaiosen nennen, errichteten|sich aber Altäre
+(200) ἱLεiράi(A) |τεL(Pt) ῥέL|ζουLσιi(Prä)(Akt)· τὸi(Art)(N) |δὲL(Pt) στέiφοςi(N) |ἤLμαiτιi(D) |κείLνῳL(Pr)(D)|
+(200) Opfer und verrichten· der aber Kranz am|Tag jenem
+(201) ἢL(Kon) πίiτυςi(N) |ἢL(Kon) σχῖL|νοςL(N), μύρL|τοιLοi(G) δὲi(Pt) |χεῖLρεςi(N) ἄi|θιLκτοιL(Adj)(N)·|
+(201) oder Kiefer oder Mastix|strauch, der|Myrte aber Hände un|berührt·
+(202) δὴL(Pt) τόiτεi(Adv) |γὰρL(Pt) πέL|πλοιLσινi(D) ἐi|νέLσχεiτοi(Aor)(Med) |μύρLσιiνοςi(Adj)(N) |ὄLζοςL(N)|
+(202) ja damals denn in|Gewändern verfing|sich myrten Zweig
+(203) τῆςL(Art)(G) κούL|ρηςL(G), ὅτi᾽(Kon) ἔi|φευLγενi(Aor)(Akt)· ὅi|θενL(Adv) μέiγαi(Adv) |χώLσαiτοi(Aor)(M/P) |μύρLτῳL(D).|
+(203) der Jungfrau, als floh· daher sehr erzürnte|sich über|der|Myrte.
+(204) ΟὖLπιi(V) ἄi|νασσL᾽(V) εὐL|ῶLπιi(Adj)(V) φαi|εLσφόiρεi(V), |καὶL(Kon) δὲi(Pt) σὲi(Pr)(A) |κείLνηςL(Pr)(G)|
+(204) Oupis Herrin schön|äugig Licht|trägerin, und doch dich jener
+(205) ΚρηLταiέi|εςL(N) καiλέi|ουLσινi(Prä)(Akt) ἐi|πωLνυiμίi|ηνL(A) ἀiπὸi(Prp) |νύμLφηςL(G).|
+(205) Kreter nennen Beinamen von der|Nymphe.
+(206) καὶL(Kon) μὴνL(Pt) |ΚυLρήL|νηνL(A) ἑiταi|ρίσLσαiοi(Aor)(M/P), |τῇL(Pr)(D) ποτi᾽(Pt) ἔi|δωLκαςL(AorS)(Akt)|
+(206) und wahrlich Kyrene ver|freundetest|dich, der einst gabst
+(207) αὐLτὴL(Pr)(N) |θηLρηL|τῆLρεi(A) δύi|ωL(Adj) κύiνεi(Du)(A), |τοῖςL(Art)(D) ἔiνιi(Prp) |κούLρηL(N)|
+(207) selbst Jagd|gefährten zwei Hunde, in|denen ist das|Mädchen
+(208) ὙLψηL|ὶςL(N) παiρὰi(Prp) |τύμLβονi(A) Ἰi|ώλLκιiονi(Adj)(A) |ἔμLμορi᾽(Adj)(N) ἀi|έLθλουL(G).|
+(208) Hypsis neben Grab iolkischen würdig des|Wettkampfs.
+(209) καὶL(Kon) Κεiφάi|λουL(G) ξανL|θὴνL(Adj)(A) ἄiλοi|χονL(A) ΔηL|ιLοiνίi|δαLοL(G),|
+(209) und des|Kephalos blonde Gattin des|Deion,
+(210) πότLνιiαi(V), |σὴνL(Adj)(A) ὁiμόi|θηLρονi(Adj)(A) ἐi|θήLκαiοi(Aor)(Med)· |καὶL(Kon) δὲi(Pt) σὲi(Pr)(A) |φαLσὶL(Prä)(Akt)|
+(210) Herrin, deine Mit|jägerin setztest|du· und auch dich sagen
+(211) καLλὴνL(Adj)(A) |ἈνLτίL|κλειLανi(A) ἴi|σονL(Adj)(A) φαiέi|εσLσιi(D) φιi|λῆLσαιL(Aor)(Akt)(Inf)|
+(211) schöne Antikleia gleich den|Lichtern zu|lieben
+(212) αἳL(Pr)(N) πρῶL|ταιL(Adj)(N)(Sup) θοiὰi(Adj)(A) |τόLξαi(A) καὶi(Kon) |ἀμφL᾽(Prp) ὤL|μοιLσιi(D) φαi|ρέLτραςL(A)|
+(212) die zuerst schnelle Bogen und um Schultern Köcher
+(213) ἰLοiδόi|κουςL(Adj)(A) ἐiφόi|ρηLσανi(Aor)(Akt)· ἀi|σίλLλωL|τοιL(Adj)(N) δέi(Pt) φινi(Pr)(A) |ὦLμοιL(N)|
+(213) Pfeil|tragend trugen· unverletzt aber sie Schultern
+(214) δεLξιiτεi|ροὶL(Adj)(N) καὶL(Kon) |γυLμνὸςi(Adj)(N) ἀi|εὶL(Adv) παiρεi|φαίLνεiτοi(Imp)(M/P) |μαLζόςL(N).|
+(214) rechte und nackt immer zeigte|sich Brust.
+(215) ᾔLνηL|σαςL(Aor)(Akt) δ᾽(Pt) ἔiτιi(Adv) |πάγLχυi(Adv) ποi|δορLρώL|ρηνL(Adj)(A) Ἀiταi|λάνLτηνL(A),|
+(215) priesest aber noch ganz|und|gar schnell|füßige Atalante,
+(216) κούLρηνL(A) |ἸLαiσίi|οιLοi(G) συi|οLκτόiνονi(Adj)(A) |ἈρLκαiσίi|δαLοL(Adj)(G),|
+(216) Mädchen des|Iasios Schwein|tötend des|Arkas,
+(217) καίL(Kon) ἑi(Pr)(A) κυi|νηLλαiσίi|ηνL(A) τεi(Pt) καὶi(Kon) |εὐLστοiχίi|ηνL(A) ἐiδίi|δαLξαςL(Aor)(Akt).|
+(217) und sie Jagd|trieb und auch gut|treffen lehrtest.
+(218) οὔL(Pt) μινi(Pr)(A) ἐi|πίLκληL|τοιL(Adj)(N) Καiλυi|δωLνίiουi(Adj)(G) |ἀLγρευL|τῆLρεςL(N)|
+(218) nicht sie scheltend des|Kaly|donischen Jäger
+(219) μέμLφονL|ταιL(Prä)(M/P) κάL|προιLοi(G)· τὰi(Art)(N) |γὰρL(Pt) σηL|μήLιiαi(N) |νίLκηςL(G)|
+(219) schmähen des|Keilers· die denn Zeichen des|Sieges
+(220) ἈρLκαiδίi|ηνL(A) εἰL|σῆλLθενi(AorS)(Akt), ἔi|χειL(Prä)(Akt) δ᾽(Pt) ἔiτιi(Adv) |θηLρὸςi(G) ὀi|δόνLταςL(A)·|
+(220) Arkadien betrat, hat aber noch des|Tieres Zähne·
+(221) οὐLδὲi(Pt) μὲνi(Pt) |ὙLλαῖL|όνL(A) τεi(Pt) καὶi(Kon) |ἄLφροiναi(Adj)(A) |ῬοῖLκονi(A) ἔi|ολLπαL(Per)(Akt)|
+(221) auch|nicht zwar Hylaion und auch törichten Roikos habe|ich|erwartet
+(222) οὐLδέi(Pt) περi(Pt) |ἐχLθαίL|ρονLταςi(Prä)(Akt)(A) ἐνi(Prp) |ἌιLδιL(D) |μωLμήL|σαLσθαιL(Aor)(Med)(Inf)|
+(222) auch|nicht doch hassend|seiende in Hades tadeln|zu
+(223) τοLξόiτινi(A)· |οὐL(Pt) γάρL(Pt) |σφινL(Pr)(D) λαiγόi|νεςL(N) συiνεi|πιLψεύL|σονLταιL(Fu)(M/P),|
+(223) den|Bogenschützen· nicht denn ihnen Lenden werden|mit|lügen,
+(224) τάLωνL(Pr)(G) |ΜαιLναiλίi|ηL(Adj)(N) νᾶL|ενL(Imp)(Akt) φόiνῳi(D) |ἀLκρώL|ρειLαL(N).|
+(224) deren Mainalische wohnte mit|Mord Höhenrücken.
+(225) πότLνιiαi(V) |πουLλυiμέi|λαLθρεi(Adj)(V), ποi|λύLπτοiλιi(Adj)(V), |χαῖLρεi(Prä)(Akt)(Imv) Χιi|τώLνηL(V)|
+(225) Herrin viel|hallen|reiche, viel|städte|ige, sei|gegrüßt Chitone
+(226) ΜιLλήL|τῳL(D) ἐiπίi|δηLμεi(Prä)(Akt)(Imv)· σὲi(Pr)(A) |γὰρL(Pt) ποιL|ήLσαiτοi(Aor)(Med) |ΝηLλεὺςL(N)|
+(226) in|Milet weile· dich denn machte|er|zu Neleus
+(227) ἡLγεiμόi|νηνL(A), ὅiτεi(Kon) |νηυLσὶνi(D) ἀi|νήLγεiτοi(Imp)(M/P) |ΚεLκροiπίi|ηLθενL(Adv).|
+(227) Führerin, als mit|Schiffen fuhr|er|hinaus von|Kekropia|her.
+(228) ΧηLσιiὰςi(V) |ἸμLβραiσίi|ηL(Adj)(V) πρωL|τόLθροiνεi(Adj)(V), |σοὶL(Pr)(D) δ᾽(Pt) Ἀiγαi|μέLμνωνL(N)|
+(228) Chesia Imbrasia erst|thronige, dir aber Agamemnon
+(229) πηLδάiλιi|ονL(A) νηL|ὸςL(G) σφεiτέi|ρηςL(Adj)(G) ἐγL|κάτLθεiτοi(Aor)(Med) |νηLῷL(D)|
+(229) Steuer des|Schiffes seines|eigenen legte|er|hinein im|Tempel
+(230) μείLλιiονi(A) |ἀLπλοiΐi|ηςL(G), ὅiτεi(Kon) |οἱL(Pr)(D) καiτέi|δηLσαςi(Aor)(Akt) ἀi|ήLταςL(A),|
+(230) Versöhnungs|gabe der|glatten|Fahrt, als ihm bandest|du Winde,
+(231) ΤευLκρῶνL(G) |ἡLνίiκαi(Kon) |νῆLεςi(N) Ἀi|χαιLίiδεςi(Adj)(N) |ἄLστεiαi(A) |κήLδεινL(Prä)(Inf)(Akt)|
+(231) der|Teukrer da Schiffe achai|ische Städte kränken|zu
+(232) ἔLπλεiονi(Imp)(Akt) |ἀμφL᾽(Prp) Ἑiλέi|νῃL(D) ῬαL|μνουLσίiδιi(Adj)(D) |θυLμωL|θεῖLσαιL(Aor)(Pas)(N).|
+(232) segelten um Helena rhamnusisch|er erzürnt|worden|seiend.
+(233) ἦL(Pt) μένL(Pt) |τοιL(Pt) ΠροῖL|τόςL(N) γεi(Pt) δύi|ωL(Adj)(A) ἐiκαi|θίσLσαiτοi(Aor)(Med) |νηLούςL(A),|
+(233) wahrlich zwar dir|ja Proitos eben zwei errichtete|er|sich Tempel,
+(234) ἄλLλονL(Adj)(A) |μὲνL(Pt) Κοiρίi|ηςL(G), ὅiτιi(Kon) |οἱL(Pr)(D) συiνεi|λέLξαiοi(Aor)(Med) |κούLραςL(A)|
+(234) einen|anderen zwar der|Kore, weil ihm sammeltest|du Mädchen
+(235) οὔLρεiαi(A) |πλαLζοiμέi|ναςL(Prä)(M/P)(A) ἈL|ζήLνιiαi(Adj)(A), |τὸνL(Art)(A) δ᾽(Pt) ἐiνὶi(Prp) |ΛούLσοιςL(D)|
+(235) Berge umher|irrend|seiende azenische, den|anderen aber in Lousoi
+(236) ἡLμέiρῃi(D), |οὕLνεiκαi(Kon) |θυLμὸνi(A) ἀπi᾽(Prp) |ἄLγριiονi(Adj)(A) |εἵLλεiοi(Aor)(Med) |παίLδωνL(G).|
+(236) am|Tage, weil Sinn von wildem nahmst|du der|Mädchen.
+(237) σοὶL(Pr)(D) καὶi(Kon) Ἀi|μαLζοiνίi|δεςL(N) ποiλέi|μουL(G) ἐiπιi|θυLμήL|τειLραιL(Adj)(N)|
+(237) dir auch Amazonen des|Krieges begehrend|seiende
+(238) ἔνL(Prp) ποiτεi(Adv) |παρLραiλίi|ῃL(Adj)(D) Ἐiφέi|σῳL(D) βρέiταςi(A) |ἱLδρύL|σανLτοL(Aor)(Med)|
+(238) in einst küsten|naher Ephesos Götterbild richteten|sie|auf
+(239) φηLγῷi(D) ὑi|πὸL(Prp) πρέiμεi|ῳL(Adj)(D), τέiλεi|σενL(Aor)(Akt) δέi(Pt) τοιi(Pr)(D) |ἱLεiρὸνi(Adj)(A) |ἹπLπώL(N)·|
+(239) an|der|Eiche unter bebendem, vollendete aber dir heilig|es Hippō·
+(240) αὐLταὶL(Pr)(N) |δ᾽(Pt), ΟὖLπιi(V) ἄi|νασLσαi(V), πεi|ρὶL(Prp) πρύiλινi(A) |ὠρLχήL|σανLτοL(Aor)(Med)|
+(240) sie|selbst aber, Oupis Herrin, um Kriegstanz tanzten|sie
+(241) πρῶLταi(Adv) μὲνi(Pt) |ἐνL(Prp) σαiκέi|εσLσινi(D) ἐi|νόLπλιiονi(Adj)(A), |αὖLθιi(Adv) δὲi(Pt) |κύLκλῳL(D)|
+(241) zuerst zwar in Schildern bewaffnet, hernach aber im|Kreis
+(242) στηLσάiμεi|ναιL(Aor)(Med)(N) χοiρὸνi(A) |εὐLρύνi(Adj)(A)· ὑi|πήLειL|σανL(Imp)(Akt) δὲi(Pt) λίi|γειLαιL(Adj)(N)|
+(242) aufgestellt|habend Chor breiten· sangen|mit aber helle
+(243) λεLπταiλέi|ονL(Adj)(N) σύL|ριγLγεςi(N), ἵi|ναL(Kon) ῥήσL|σωLσινi(Prä)(Akt)(Knj) ὁi|μαρLτῇL(Adv)·|
+(243) feine Pfeifen, damit stampfen|sie gleich|schritts·
+(244) οὐL(Pt) γάρL(Pt) |πωL(Adv) νέL|βρειLαi(A) διi᾽(Prp) |ὀLστέiαi(A) |τεLτρήL|νανLτοL(Per)(M/P),|
+(244) nicht denn noch Kitz|felle durch Knochen haben|sie|durchbohrt,
+(245) ἔρLγονi᾽(A) Ἀi|θηLναίL|ηςL(G) ἐiλάi|φῳL(D) καiκόνi(Adj)(A)· |ἔLδραiμεi(AorS)(Akt) |δ᾽(Pt) ἠLχὼL(N)|
+(245) Werk der|Athene dem|Hirsch schlecht|es· lief aber Echo
+(246) ΣάρLδιiαςi(A) |ἔςL(Prp) τεi(Pt) νοi|μὸνL(A) Βεiρεi|κύνLθιiονi(Adj)(A). |αἱL(Art)(N) δὲi(Pt) πόi|δεσLσινL(D)|
+(246) nach|Sardis zu und Weide|platz bereky|nthischen. die aber mit|Füßen
+(247) οὖLλαi(Adv) καi|τεLκροiτάi|λιLζονi(Imp)(Akt), ἐi|πεLψόiφεi|ονL(Imp)(Akt) δὲi(Pt) φαi|ρέLτραιL(N).|
+(247) freundlich klapperten|sie, rauschten aber Köcher.
+(248) κεῖLνοi(Pr)(N) δέi(Pt) |τοιL(Pr)(D) μεiτέi|πειLταi(Adv) πεi|ρὶL(Prp) βρέiταςi(G) |εὐLρὺi(Adj)(A) θέi|μειLλονL(A)|
+(248) jenes aber dir später um Götterbild breite Grund|lage
+(249) δωLμήL|θηL(Aor)(Pas), τοῦL(Art)(G) |δ᾽(Pt) οὔLτεi(Pt) θεi|ώLτεiρονi(Adj)(A)(Kmp) |ὄLψεiταιi(Fu)(M/P) |ἠLὼςL(N)|
+(249) wurde|gebaut, dessen aber weder göttlicher|es wird|sehen Eos
+(250) οὐδL᾽(Pt) ἀφL|νειLόiτεi|ρονL(Adj)(A)(Kmp)· ῥέiαi(Adv) |κενL(Pt) ΠυL|θῶLναi(A) παi|ρέλLθοιL(Aor)(Akt)(Op).|
+(250) noch reicher|es· leicht wohl Pytho würde|übertreffen.
+(251) τῶL(Adv) ῥαi(Pt) καὶi(Kon) |ἠLλαίL|νωνL(Prä)(Akt)(N) ἀiλαi|παLξέiμενi(Fu)(Inf)(Akt) |ἠLπείL|ληLσεL(Aor)(Akt)|
+(251) darum ja auch treibend|seiend auszurauben drohte|er
+(252) ΛύγLδαiμιςi(N) |ὑLβριL|στήςL(N)· ἐiπὶi(Prp) |δὲL(Pt) στραiτὸνi(A) |ἱπLπηL|μολLγῶνL(G)|
+(252) Lygdamis Freveler· gegen aber Heer der|Pferde|melker
+(253) ἤLγαiγεi(Aor)(Akt) |ΚιμLμεiρίi|ωνL(Adj)(G) ψαiμάi|θῳL(D) ἴiσονi(Adv), |οἵL(Pr)(N) ῥαi(Pt) παρi᾽(Prp) |αὐLτὸνL(Pr)(A)|
+(253) führte der|Kimmerier dem|Sand gleich, die ja bei ihn
+(254) κεLκλιiμέi|νοιL(Per)(M/P)(N) ναίL|ουLσιi(Prä)(Akt) βοi|ὸςL(G) πόiρονi(A) |ἸLναiχιi|ώLνηςL(Adj)(G).|
+(254) hingelegt|seiend wohnen|sie der|Kuh Furt inachisch|er.
+(255) ἆL(ij) δειL|λὸςL(Adj)(N) βαiσιi|λέωνL(G), ὅiσονi(Pr)(A) |ἤLλιiτενi(Aor)(Akt)· |οὐL(Pt) γὰρi(Pt) ἔi|μελLλενL(Imp)(Akt)|
+(255) ach elend der|Könige, wie|sehr verfehlte|er· nicht denn beabsichtigte|er
+(256) οὔτL᾽(Pt) αὐL|τὸςL(Pr)(N) Σκυiθίi|ηνLδεi(Adv) παi|λιμLπεiτὲςi(Adv) |οὔLτεi(Pt) τιςi(Pr)(N) |ἄλLλοςL(Adj)(N)|
+(256) weder selbst nach|Skythien|hin zurück|kehrend noch irgendeiner anderer
+(257) ὅσLσωνL(Pr)(G) |ἐνL(Prp) λειL|μῶLνιi(D) Καi|ϋLστρίiῳi(Adj)(D) |ἔLστανi(Imp)(Akt) ἅi|μαLξαιL(N)|
+(257) der|so|vielen in Flur kaystrisch|er standen Wagen
+(258) νοLστήL|σεινL(Fu)(Inf)(Akt)· Ἐiφέi|σουL(G) γὰρi(Pt) ἀi|εὶL(Adv) τεiὰi(Adj)(N) |τόLξαi(N) πρόi|κειLταιL(Prä)(M/P).|
+(258) zurückzukehren· Ephesos denn immer deine Bögen liegen|bereit.
+(259) πότLνιiαi(V) |ΜουLνιiχίi|ηL(Adj)(V) λιiμεi|νοLσκόiπεi(Adj)(V), |χαῖLρεi(Prä)(Akt)(Imv) Φεi|ραίLηL(Adj)(V).|
+(259) Herrin Mounichia Hafen|schauerin, sei|gegrüßt Pherae|ische.
+(260) μήL(Kon) τιςi(Pr)(N) ἀi|τιLμήL|σῃL(Aor)(Akt)(Knj) τὴνL(Art)(A) |ἌρLτεiμινi(A)· |οὐLδὲi(Pt) γὰρi(Pt) |ΟἰLνεῖL(D)|
+(260) nicht|soll irgendeiner entehren die Artemis· auch|nicht denn Oineus
+(261) βωLμὸνi(A) ἀi|τιLμήL|σανLτιi(Aor)(Akt)(D) καi|λοὶL(Adj)(N) πόiλινi(A) |ἦλLθονi(AorS)(Akt) ἀi|γῶLνεςL(N)·|
+(261) Altar entehrt|habendem schöne zur|Stadt kamen Wettkämpfe·
+(262) μηδL᾽(Kon) ἐiλαi|φηLβοiλίi|ηνL(A) μηδL᾽(Kon) |εὐLστοiχίi|ηνL(A) ἐiριi|δαίLνεινL(Prä)(Inf)(Akt)·|
+(262) auch|nicht Hirsch|schießen noch guten|Treffer streiten|zu·
+(263) οὐLδὲi(Pt) γὰρi(Pt) |ἈLτρεiΐi|δηςL(N) ὀiλίi|γῳL(Adj)(D) ἔiπιi(Prp) |κόμLπαiσεi(Aor)(Akt) |μιLσθῷL(D)·|
+(263) auch|nicht denn Atreide mit|kleinem auf pralte|er Lohn·
+(264) μηLδέi(Kon) τιi|ναL(Pr)(A) μνᾶL|σθαιL(Prä)(M/P)(Inf) τὴνL(Art)(A) |παρLθέiνονi(A)· |οὐLδὲi(Pt) γὰρi(Pt) |ὮLτοςL(N),|
+(264) auch|nicht irgendeinen werben|um die Jungfrau· auch|nicht denn Otos,
+(265) οὐLδὲi(Pt) μὲνi(Pt) |ὨLαiρίi|ωνL(N) ἀiγαi|θὸνL(Adj)(A) γάiμονi(A) |ἐLμνήL|στευLσανL(Aor)(Akt)·|
+(265) auch|nicht zwar Orion guten Ehebund warben|sie·
+(266) μηLδὲi(Kon) χοi|ρὸνL(A) φεύL|γεινL(Prä)(Inf)(Akt) ἐiνιi|αύLσιiονi(Adj)(A)· |οὐLδὲi(Pt) γὰρi(Pt) |ἹπLπὼL(N)|
+(266) auch|nicht Chor meiden jährlichen· auch|nicht denn Hippō
+(267) ἀLκλαυL|τεὶL(Adv) πεiρὶi(Prp) |βωLμὸνi(A) ἀi|πείLπαiτοi(Aor)(Med) |κυLκλώL|σαLσθαιL(Aor)(Med)(Inf)·|
+(267) un|beweint um Altar verbot|sie|sich zu|umkreisen·
+(268) χαῖLρεi(Prä)(Akt)(Imv) μέi|γαL(Adv) κρείL|ουLσαi(Prä)(Akt)(V) καὶi(Kon) |εὐLάνL|τηLσονi(Aor)(Akt)(Imv) ἀi|οιLδῇL(D).|
+(268) sei|gegrüßt sehr herrschend|seiende und begegne|gütig dem|Lied.
+=== Gedicht 4 ===
+== εἰς Δῆλον ==
+(1) τὴνL(Art)(A) ἱiεi|ρήνL(Adj)(A), ὦL(ij) |θυLμέi(V), τίi|ναL(Pr)(A) χρόiνονi(A) |ἢL(Kon) πότi᾽(Adv) ἀi|είLσειςL(Fu)(Akt)|
+(1) die heilige, o Sinn, welchen Zeitraum oder wann wirst|du|besingen
+(2) δῆLλονi(A), Ἀi|πόλLλωL|νοςL(G) κουL|ροLτρόiφονi(Adj)(A); |ἦL(Pt) μὲνi(Pt) ἅi|παLσαιL(Adj)(N)|
+(2) Delos, des|Apollon Knaben|nährende; wahrlich zwar alle
+(3) ΚυLκλάiδεςi(N), |αἳL(Pr)(N) νήL|σωνL(G) ἱiεi|ρώLταiταιi(Adj)(N)(Sup) |εἰνL(Prp) ἁiλὶi(D) |κεῖνLταιL(Prä)(M/P),|
+(3) Kykladen, die der|Inseln am|heiligsten in dem|Meer liegen,
+(4) εὔLυL|μνοιL(Adj)(N)· δῆL|λοςL(N) δ᾽(Pt) ἐiθέi|λειL(Prä)(M/P) τὰL(Art)(A) |πρῶLταi(Adj)(A) φέi|ρεLσθαιL(Prä)(M/P)(Inf)|
+(4) gut|besungene· Delos aber will die ersten getragen|zu|werden
+(5) ἐκL(Prp) ΜουL|σέωνL(G), ὅiτιi(Kon) |ΦοῖLβονi(A) ἀi|οιLδάL|ωνL(G) μεiδέi|ονLταL(Prä)(Akt)(A)|
+(5) aus den|Musen, weil Phoibos der|Gesänge leitend|seienden
+(6) λοῦLσέi(Aor)(Akt) τεi(Pt) |καὶL(Kon) σπείL|ρωLσεi(Aor)(Akt) καὶi(Kon) |ὡςL(Adv) θεiὸνi(A) |ᾔLνεiσεi(Aor)(Akt) |πρώLτηL(Adj)(N).|
+(6) wusch und auch wickelte und als Gott pries zuerst.
+(7) ὡςL(Kon) ΜοῦL|σαιL(N) τὸνi(Art)(A) ἀi|οιLδὸνi(A) ὃi(Pr)(N) |μὴL(Pt) ΠίμL|πλειLανi(A) ἀi|είLσῃL(Aor)(Akt)(Knj)|
+(7) wie die|Musen den Sänger der nicht Pimpleia singe
+(8) ἔχLθουL|σινL(Prä)(Akt), τὼςL(Adv) |ΦοῖLβοςi(N) ὅi|τιςL(Pr)(N) ΔήL|λοιLοi(G) λάi|θηLταιL(Aor)(M/P)(Knj).|
+(8) hassen, so Phoibos wer Delos vergessen|möge.
+(9) ΔήLλῳL(D) |νῦνL(Adv) οἴL|μηςL(G) ἀiποi|δάσLσοiμαιi(Fu)(Med), |ὡςL(Kon) ἂνi(Pt) Ἀi|πόλLλωνL(N)|
+(9) Delos nun des|Gesangs werde|ich|zuteilen, damit wohl Apollon
+(10) ΚύνLθιiοςi(Adj)(N) |αἰLνήL|σῃL(Aor)(Akt)(Knj) μεi(Pr)(A) φίi|ληςL(Adj)(G) ἀiλέi|γονLταi(Prä)(Akt)(A) τιi|θήLνηςL(G).|
+(10) Kynthisch|er möge|preisen mich der|lieben sorgend|seienden Amme.
+(11) κείνγL(Pr)(N) δ᾽(Pt) ἠL|νεLμόL|εσLσαi(Adj)(N) καὶi(Kon) |ἄLτροiποςi(Adj)(N) |οἷLάi(Pr)(A) θ᾽(Kon) ἁi|λιLπλὴξL(Adj)(N)|
+(11) jene aber wind|umwehte und un|wandelbar wie auch meer|gepeitschte
+(12) αἰLθυίL|ῃςL(D) καὶL(Kon) |μᾶλLλονi(Adv) ἐi|πίLδροiμοςi(Adj)(N) |ἠLέiπερi(Kon) |ἵπLποιςL(D)|
+(12) Taucher|vögeln und mehr schnell|laufig als Pferden
+(13) πόνLτῳi(D) ἐi|νεLστήL|ριLκταιi(Per)(M/P)· ὁi(Art)(N) |δ᾽(Pt) ἀμLφίi(Prp) ἑi(Pr)(A) |πουLλύςi(Adj)(N) ἑi|λίσLσωνL(Prä)(Akt)(N)|
+(13) im|Meer ist|hingestellt· der aber um sie viel wirbelnd|seiende
+(14) ἸLκαiρίi|ουL(Adj)(G) πολL|λὴνL(Adj)(A) ἀiποi|μάσLσεiταιi(Prä)(M/P) |ὕLδαiτοςi(G) |ἄχLνηνL(A)·|
+(14) ikarischen viele wischt|ab des|Wassers Schaum·
+(15) τῶL(Adv) σφεi(Pr)(A) καὶi(Kon) |ἰχLθυiβοi|λῆLεςi(N) ἁi|λίLπλοiοιi(Adj)(N) |ἐνLνάσL|σανLτοL(Imp)(Med).|
+(15) darum sie auch Fischer meer|fahrende wohnten|sich|an.
+(16) ἀλLλάi(Kon) οἱi(Pr)(D) |οὐL(Pt) νεiμεi|σηLτὸνi(Adj)(N) ἐi|νὶL(Prp) πρώL|τῃLσιi(Adj)(D) λέi|γεLσθαιL(Prä)(M/P)(Inf),|
+(16) aber ihm|ihr nicht tadel|haft in den|ersten genannt|zu|werden,
+(17) ὀπLπότi᾽(Kon) ἐςi(Prp) |ὨLκεiαi|νόνL(A) τεi(Pt) καὶi(Kon) |ἐςL(Prp) ΤιL|τηLνίiδαi(Adj)(A) |ΤηLθὺνL(A)|
+(17) wenn in den|Okeanos und auch in Titanide Tethys
+(18) νῆLσοιi(N) ἀi|ολLλίL|ζονLταιi(Prä)(M/P), ἀi|εὶL(Adv) δ᾽(Pt) ἔL|ξαρLχοςi(N) ὁi|δεύLειL(Prä)(Akt).|
+(18) Inseln sammeln|sich, immer aber Anführer reist.
+(19) ἡL(Art)(N) δ᾽(Pt) ὄiπιi|θενL(Adv) ΦοίL|νισLσαi(Adj)(N) μετi᾽(Prp) |ἴχLνιiαi(A) |ΚύρLνοςi(N) ὀi|πηLδεῖL(Prä)(Akt)|
+(19) die aber hinten phönizische nach Spuren Kyrnos folgt
+(20) οὐκL(Pt) ὀiνοi|τὴL(Adj)(N) καὶL(Kon) |ΜάLκριςi(N) Ἀi|βανLτιiὰςi(Adj)(N) |ἘλLλοiπιi|ήLωνL(Adj)(G)|
+(20) nicht verächtlich auch Makris abantische der|Ellopier
+(21) ΣαρLδώL(N) |θ᾽(Pt) ἱLμεiρόi|εσLσαi(Adj)(N) καὶi(Kon) |ἣνL(Pr)(A) ἐiπεi|νήLξαiτοi(Aor)(Med) |ΚύLπριςL(N)|
+(21) Sardō aber liebens|würdig und die fuhr|an Kypris
+(22) ἐξL(Prp) ὕiδαi|τοςL(G) τὰL(Art)(A) |πρῶLταi(Adj)(A), σαi|οῖL(Prä)(Akt) δέi(Pt) μινi(Pr)(A) |ἀντL᾽(Prp) ἐiπιi|βάLθρωνL(G).|
+(22) aus dem|Wasser die ersten, schützt|du aber ihn|sie statt der|Landungs|stufen.
+(23) κεῖLναιL(Pr)(N) |μὲνL(Pt) πύρL|γοιLσιi(D) πεi|ριLσκεiπέi|εσLσινi(Adj)(D) ἐi|ρυLμναίL(Adj)(N),|
+(23) jene zwar mit|Türmen rings|um|bedeckt fest|befestigt,
+(24) δῆLλοςL(N) |δ᾽(Pt) ἈLπόλL|λωLνιi(D)· τίi(Pr)(N) |δὲL(Pt) στιiβαi|ρώLτεiρονi(Adj)(A)(Kmp) |ἕρLκοςL(N);|
+(24) Delos aber dem|Apollon· was aber fester|er Wall;
+(25) τείLχεiαi(N) |μὲνL(Pt) καὶL(Kon) |λᾶLεςi(N) ὑi|παὶL(Prp) ῥιL|πῆςL(G) κεi(Pt) πέi|σοιLενL(Aor)(Akt)(Op)|
+(25) Mauern zwar und Steine unter des|Stoßes wohl fielen|würden
+(26) ΣτρυLμοiνίi|ουL(Adj)(G) βοiρέi|αLοi(G)· θεi|ὸςL(N) δ᾽(Pt) ἀiεὶi(Adv) |ἀLστυiφέi|λιLκτοςL(Adj)(N)·|
+(26) des|Strymonischen Nord|windes· der|Gott aber immer stadt|schlagend·
+(27) ΔῆLλεi(V) φίi|ληL(Adj)(V), τοῖL|όςL(Adj)(N) σεi(Pr)(A) βοi|ηLθόiοςi(Adj)(N) |ἀμLφιiβέi|βηLκενL(Per)(Akt).|
+(27) Delos liebe, solch|ein dich Hilfe|leistend hat|umstanden.
+(28) εἰL(Kon) δὲi(Pt) λίi|ηνL(Adv) ποiλέi|εςL(Adj)(N) σεi(Pr)(A) πεi|ριLτροiχόi|ωLσινi(Prä)(Akt)(Knj) ἀi|οιLδαίL(N),|
+(28) wenn aber gar|sehr viele dich um|kreisen|mögen Lieder,
+(29) ποίLῃi(Pr)(D) ἐi|νιLπλέL|ξωL(Fu)(Akt) σεi(Pr)(A); τίi(Pr)(N) |τοιL(Pr)(D) θυL|μῆLρεςi(Adj)(N) ἀi|κοῦLσαιL(Aor)(Akt)(Inf);|
+(29) welcher werde|ich|ein|flechten dich; was dir herz|lieb zu|hören;
+(30) ἢL(Kon) ὡςL(Kon) |τὰL(Art)(A) πρώL|τιLσταi(Adj)(A)(Sup) μέi|γαςL(Adj)(N) θεiὸςi(N) |οὔLρεiαi(A) |θείLνωνL(Prä)(Akt)(N)|
+(30) oder wie die aller|ersten groß|er Gott Berge schlagend
+(31) ἄLοiριi(D) |τριLγλώL|χιLνιi(Adj)(D), τόi(Pr)(A) |οἱL(Pr)(D) ΤελL|χῖLνεςi(N) ἔi|τευLξανL(Aor)(Akt),|
+(31) mit|dem|Schwert drei|zackigen, das ihm Telchinen fertigten,
+(32) νήLσουςL(A) |εἰLναiλίi|αςL(Adj)(A) εἰρL|γάLζεiτοi(Imp)(M/P), |νέρLθεi(Adv) δὲi(Pt) |πάLσαςL(Adj)(A)|
+(32) Inseln meer|umspülte machte|sich, unten aber alle
+(33) ἐκL(Prp) νεiάi|τωνL(G) ὤL|χλισLσεi(Aor)(Akt) καὶi(Kon) |εἰLσεiκύi|λιLσεi(Aor)(Akt) θαi|λάσLσῃL(D);|
+(33) aus den|Tiefsten hebelte und rollte|hinein in|das|Meer;
+(34) καὶL(Kon) τὰςL(Art)(A) |μὲνL(Pt) καiτὰi(Prp) |βυσLσόνi(A), ἵνi᾽(Kon) |ἠLπείL|ροιLοi(G) λάi|θωνLταιL(Aor)(M/P)(Knj),|
+(34) und jene zwar in|die|Tiefe Tiefe, damit des|Festlandes verborgen|seien|mögen,
+(35) πρυLμνόiθενi(Adv) |ἐρLρίL|ζωLσεi(Aor)(Akt)· δὲi(Pt) |δ᾽(Pt) οὐκL(Pt) ἔL|θλιLψενi(Aor)(Akt) ἀi|νάγLκηL(N),|
+(35) von|Grund|aus verwurzelte· aber und nicht drückte Not|zwang,
+(36) ἀλλL᾽(Kon) ἄiφεi|τοςL(Adj)(N) πεiλάi|γεσLσινi(D) ἐi|πέLπλεiεςi(Imp)(Akt), |οὔLνοiμαi(N) |δ᾽(Pt) ἦνL(Imp)(Akt) σοιL(Pr)(D)|
+(36) sondern frei auf|den|Meeren segeltest, Name aber war dir
+(37) ἈLστεiρίi|ηL(N) τὸi(Art)(N) παi|λαιLόνi(Adj)(N), ἐi|πεὶL(Kon) βαiθὺνi(Adj)(A) |ἥLλαiοi(AorS)(Med) |τάLφρονL(A)|
+(37) Asterie das ehemals, da tiefen sprangst Graben
+(38) οὐLραiνόi|θενL(Adv) φεύL|γουLσαi(Prä)(Akt)(N) Διi|ὸςL(G) γάiμονi(A) |ἀLστέiριi(D) |ἴLσηL(Adj)(N).|
+(38) vom|Himmel|her fliehend des|Zeus Ehe einem|Stern gleich.
+(39) τόLφραi(Adv) μὲνi(Pt) |οὔLπωL(Adv) |σοιL(Pr)(D) χρυiσέi|ηL(Adj)(N) ἐiπεi|μίσLγεiτοi(Imp)(M/P) |ΛηLτώL(N),|
+(39) bis|dahin zwar noch|nicht mit|dir goldene mischte|sich Leto,
+(40) τόLφραi(Adv) δ᾽(Pt) ἔτi᾽(Adv) |ἈLστεiρίi|ηL(N) σὺi(Pr)(N) καὶi(Kon) |οὐLδέiπωi(Adv) |ἔLκλεiοi(Imp)(M/P) |ΔῆLλοςL(N)·|
+(40) bis|dahin aber noch Asterie du und noch|nicht hieß|est Delos·
+(41) πολLλάiκιi(Adv) |σεL(Pr)(A) ΤροιL|ζῆLνοςi(Adj)(G) ἀi|πὸL(Prp) ξανL|θοῖLοi(Adj)(G) ποi|λίχLνηςL(G)|
+(41) oftmals dich des|Troizen von hell|farbigen Klein|stadt
+(42) ἐρLχόiμεi|νοιL(Prä)(M/P)(N) Ἐiφύi|ρηνLδεi(Adv) Σαi|ρωLνιiκοῦi(Adj)(G) |ἔνLδοiθιi(Adv) |κόλLπουL(G)|
+(42) kommend|seiend nach|Ephyra des|Saronischen innerhalb Meer|busens
+(43) ναῦLταιi(N) ἐi|πεLσκέL|ψανLτοi(Aor)(M/P), καὶi(Kon) |ἐξL(Prp) Ἐiφύi|ρηςL(G) ἀiνιi|όνLτεςL(Prä)(Akt)(N)|
+(43) Seefahrer besahen|sich, und von Ephyra hinauf|gehend|seiend
+(44) οἱL(Pr)(N) μὲνi(Pt) ἔτi᾽(Adv) |οὐκL(Pt) ἴiδονi(AorS)(Akt) |αὖLθιi(Adv), σὺi(Pr)(N) |δὲL(Pt) στειL|νοῖLοi(Adj)(G) παρi᾽(Prp) |ὀLξὺνL(Adj)(A)|
+(44) jene zwar noch nicht sahen hier, du aber des|Eng|passes an scharfen
+(45) ἔLδραiμεςi(AorS)(Akt) |ΕὐLρίL|ποιLοi(G) πόi|ρονL(A) καiναi|χηLδὰi(Adv) ῥέi|ονLτοςL(Prä)(Akt)(G),|
+(45) ranntest des|Euripos Durch|gang dröhnend fließenden,
+(46) ΧαλLκιiδιi|κῆςL(Adj)(G) δ᾽(Pt) αὐL|τῆLμαρi(Adv) ἀi|νηLναiμέi|νηL(Aor)(M/P)(N) ἁiλὸςi(G) |ὕLδωρL(A)|
+(46) des|chalkidischen aber selben|Tags ablehnend des|Meeres Wasser
+(47) μέσφL᾽(Adv) ἐςi(Prp) Ἀi|θηLναίL|ωνL(G) προiσεi|νήLξαiοi(Aor)(Med) |ΣούLνιiονi(Adj)(A) |ἄLκρονL(A)|
+(47) mitten|hinein bis|zu der|Athener fuhrst|heran Sunion|isches Kap
+(48) ἢL(Kon) Χίiονi(A) |ἢL(Kon) νήL|σοιLοi(G) διi|άLβροiχονi(Adj)(A) |ὕLδαiτιi(D) |μαLστὸνL(A)|
+(48) oder Chios oder der|Insel durch|nässten mit|Wasser Busen
+(49) παρLθεiνίi|ηςL(G) (οὔL|πωL(Adv) γὰρi(Pt) ἔi|ηνL(Imp)(M/P) Σάiμοςi(N)|), ἧLχιi(Adv) σεi(Pr)(A) |νύμLφαιL(N)|
+(49) der|Jungfräulichkeit (noch|nicht denn war Samos), wo dich Nymphen
+(50) γείLτοiνεςi(N) |ἈγLκαίL|ουL(G) Μυiκαi|λησLσίiδεςi(Adj)(N) |ἐLξείL|νισLσανL(Aor)(Akt).|
+(50) Nachbarinnen des|Ankaios mykalische beherbergten.
+(51) ἡLνίiκαi(Kon) |δ᾽(Pt) ἈLπόλL|λωLνιi(D) γεi|νέLθλιiονi(Adj)(A) |οὖLδαςi(A) ὑi|πέLσχεςL(AorS)(Akt),|
+(51) als aber dem|Apollon geburts|tägig|es Gelände gewährtest,
+(52) τοῦLτόi(Pr)(N) τοιi(Pr)(D) |ἀνLτηL|μοιLβὸνi(Adj)(N) ἁi|λίLπλοiοιi(Adj)(N) |οὔLνομi᾽(A) ἔi|θενLτοL(Aor)(M/P),|
+(52) dies dir zum|Gegen|lohn see|fahrende Namen setzten,
+(53) οὕLνεiκενi(Kon) |οὐLκέτi᾽(Adv) ἄi|δηLλοςi(Adj)(N) ἐi|πέLπλεiεςi(Imp)(Akt), |ἀλλL᾽(Kon) ἐiνὶi(Prp) |πόνLτουL(G)|
+(53) weil nicht|mehr un|sicht|bar segeltest, sondern in des|Meeres
+(54) κύLμαiσινi(D) |ΑἰLγαίL|οιLοi(Adj)(G) ποi|δῶνL(G) ἐiνεi|θήLκαiοi(Aor)(Med) |ῥίLζαςL(A).|
+(54) in|den|Wellen des|Ägäischen der|Füße legtest|hinein Wurzeln.
+(55) οὐδL᾽(Pt) ἭL|ρηνL(A) κοiτέi|ουLσανi(Prä)(Akt)(A) ὑi|πέLτρεiσαςi(AorS)(Akt)· |ἡL(Art)(N) μὲνi(Pt) ἁi|πάLσαιςL(Adj)(D)|
+(55) auch|nicht die|Hera grollend|seiend fürchtetest· sie zwar allen
+(56) δειLνὸνi(Adj)(A) ἐi|πεLβρωL|μᾶLτοi(Imp)(M/P) λεi|χωLίiσινi(D) |αἳL(Pr)(N) Διiὶi(D) |παῖLδαςL(A)|
+(56) schrecklich schalt|heftig den|Wöchnerinnen die dem|Zeus Kinder
+(57) ἐLξέiφεi|ρονL(Imp)(Akt), ΛηL|τοῖL(D) δὲi(Pt) διi|αLκριiδόνi(Adv), |οὕLνεiκαi(Kon) |μούLνηL(Adj)(N)|
+(57) gebaren, der|Leto aber besonders, weil allein
+(58) ΖηLνὶi(D) τεi|κεῖνL(Aor)(Akt)(Inf) ἤL|μελLλεi(Imp)(Akt) φιi|λαίLτεiρονi(Adj)(A)(Kmp) |ἌLρεiοςi(G) |υἷLαL(A).|
+(58) dem|Zeus zu|gebären im|Begriff|war lieberen des|Ares Sohn.
+(59) τῶL(Adv) ῥαi(Pt) καὶi(Kon) |αὐLτὴL(Pr)(N) |μὲνL(Pt) σκοiπιi|ὴνL(A) ἔiχενi(Imp)(Akt) |αἰLθέiροςi(G) |εἴLσωL(Adv)|
+(59) darum ja auch sie|selbst zwar Wach|stellung hielt des|Äthers innen
+(60) σπερLχοiμέi|νηL(Prä)(M/P)(N) μέiγαi(Adv) |δήL(Pt) τιi(Pr)(A) καὶi(Kon) |οὐL(Pt) φαiτόνi(Adj)(A), |εἶρLγεi(Imp)(Akt) δὲi(Pt) |ΛηLτὼL(A)|
+(60) eilend|seiend sehr ja etwas auch nicht sag|bar, hielt|fern aber Leto
+(61) τειLροiμέi|νηνL(Prä)(M/P)(A) ὠL|δῖLσιi(D)· δύi|ωL(Adj)(N) δέi(Pt) οἱi(Pr)(D) |εἵLαiτοi(Imp)(M/P) |φρουLροὶL(N)|
+(61) gequält|werdend von|Wehen· zwei aber ihr saßen Wächter
+(62) γαῖLανi(A) ἐi|ποLπτεύL|ονLτεςi(Prä)(Akt)(N), ὁi(Art)(N) |μὲνL(Pt) πέiδονi(A) |ἠLπείL|ροιLοL(G)|
+(62) die|Erde über|wachend, der zwar Gefilde des|Festlandes
+(63) ἥLμεiνοςi(Per)(M/P)(N) |ὑLψηL|λῆςL(Adj)(G) κοiρυi|φῆςL(G) ἔiπιi(Prp) |ΘρήLιiκοςi(Adj)(G) |ΑἵLμουL(G)|
+(63) sitzend hoch|er Gipfel auf thrakischen Haimos
+(64) θοῦLροςi(Adj)(N) Ἄi|ρηςL(N) ἐiφύi|λασLσεi(Imp)(Akt) σὺνi(Prp) |ἔνLτεiσιi(D), |τὼL(Pr)(Du)(N) δέi(Pt) οἱi(Pr)(D) |ἵπLπωL(Du)(N)|
+(64) stürmisch Ares bewachte mit Waffen, die|beiden aber ihm Pferde
+(65) ἑLπτάiμυi|χονL(Adj)(A) βοiρέi|αLοi(G) παi|ρὰL(Prp) σπέiοςi(A) |ηὐLλίL|ζονLτοL(Imp)(M/P)·|
+(65) sieben|buch|tig|es des|Boreas neben Höhlen|raum lagerten|sich·
+(66) ἡL(Art)(N) δ᾽(Pt) ἐiπὶi(Prp) |νηLσάL|ωνL(G) ἑiτέi|ρηL(Adj)(N) σκοiπὸςi(N) |εὐLρειL|άLωνL(Adj)(G)|
+(66) die aber über der|Inseln andere Wächterin weit|gedehnt|er
+(67) ἧLστοi(Imp)(M/P) κόi|ρηL(N) ΘαύL|μανLτοςi(G) ἐi|παLΐiξαi|σαL(Aor)(Akt)(N) ΜίL|μανLτιL(D).|
+(67) saß die|Maid des|Thaumas hin|sprungen|seiend auf|Mimas.
+(68) ἔνθL᾽(Adv) οἱL(Pr)(D) |μὲνL(Pt) ποiλίi|εσLσινi(D) ὅi|σαιςL(Pr)(D) ἐiπεi|βάλLλεiτοi(Imp)(M/P) |ΛηLτὼL(N)|
+(68) dort ihr zwar den|Städten so|vielen|wie sie|sich|wandte Leto
+(69) μίLμνονi(Imp)(Akt) ἀi|πειLληL|τῆLρεςi(N), ἀi|πεLτρώL|πωνL(Prä)(Akt)(N) δὲi(Pt) δέi|χεLσθαιL(Prä)(M/P)(Inf).|
+(69) blieben Droher, ab|wendend|seiend aber zu|empfangen.
+(70) φεῦLγεi(Imp)(Akt) μὲνi(Pt) |ἈρLκαiδίi|ηL(N), φεῦL|γενL(Imp)(Akt) δ᾽(Pt) ὄiροςi(N) |ἱLεiρὸνi(Adj)(N) |ΑὔLγηςL(G)|
+(70) floh zwar Arkadien, floh aber der|Berg heilig der|Auge
+(71) ΠαρLθέiνιi|ονL(N), φεῦL|γενL(Imp)(Akt) δ᾽(Pt) ὁi(Art)(N) γέi|ρωνL(N) μεiτόi|πιLσθεi(Adv) Φεi|νειLόςL(N).|
+(71) Parthenion, floh aber der Greis rück|wärts Pheneos.
+(72) φεῦLγεi(Imp)(Akt) δ᾽(Pt) ὅi|ληL(Adj)(N) Πεiλοi|πηLὶςi(N) ὅi|σηL(Pr)(N) παiραi|κέLκλιiταιi(Per)(M/P) |ἸσθLμῷL(D),|
+(72) floh aber ganz Pelops|land so|weit an|liegt dem|Isthmus,
+(73) ἔμLπληνL(Prp) |ΑἰLγιiαi|λοῦL(G) τεi(Pt) καὶi(Kon) |ἌρLγεiοςi(G)· |οὐL(Pt) γὰρi(Pt) ἐi|κείLναςL(Pr)(A)|
+(73) aus|genommen des|Aigialos und auch des|Argos· nicht denn jene
+(74) ἀLτραiπιi|τοὺςL(Adj)(A) ἐiπάi|τηLσενi(Aor)(Akt), ἐi|πεὶL(Kon) λάiχενi(AorS)(Akt) |ἼLναiχονi(A) |ἭLρηL(N).|
+(74) Pfade betrat, da zuteil|wurde den|Inachos Hera.
+(75) φεῦLγεi(Imp)(Akt) καὶi(Kon) |ἈLοiνίi|ηL(N) τὸνi(Art)(A) ἕi|ναL(Adj)(A) δρόiμονi(A), |αἱL(Art)(N) δ᾽(Pt) ἐiφέi|πονLτοL(Imp)(M/P)|
+(75) floh auch Aonien den einen Lauf, sie aber folgten|nach
+(76) ΔίρLκηL(N) |τεL(Pt) Στροiφίi|ηL(N) τεi(Pt) μεi|λαμLψήL|φιLδοςi(Adj)(G) ἔi|χουLσαιL(Prä)(Akt)(N)|
+(76) Dirke und Strophie und schwarz|kiesigen besitzend
+(77) ἸLσμηL|νοῦL(G) χέiραi(A) |παLτρόςi(G), ὁi(Art)(N) |δ᾽(Pt) εἵLπεiτοi(Imp)(M/P) |πολLλὸνi(Adv) ὄi|πιLσθενL(Adv)|
+(77) des|Ismenos die|Hand des|Vaters, der aber folgte weit hinten
+(78) ἈLσωL|πὸςL(N) βαiρύi|γουLνοςi(Adj)(N), ἐi|πεὶL(Kon) πεiπάi|λαLκτοi(Per)(M/P) κεi|ραυLνῷL(D).|
+(78) Asopos schwer|wogend, weil war|geschmettert vom|Blitz.
+(79) ἡL(Art)(N) δ᾽(Pt) ὑiποi|διLνηL|θεῖLσαi(Aor)(Pas)(N) χοi|ροῦL(G) ἀiπεi|παύLσαiτοi(Aor)(M/P) |νύμLφηL(N)|
+(79) die aber hinunter|gewirbelt|worden|seiend des|Tanzes hörte|auf Nymphe
+(80) αὐLτόχL|θωνL(Adj)(N) Μεiλίi|ηL(N) καὶi(Kon) ὑi|πόLχλοiονi(Adj)(A) |ἔLσχεi(AorS)(Akt) παi|ρειLὴνL(A)|
+(80) autochthon Melia und grün|über|hauchte gewann Wange
+(81) ἥLλιiκοςi(Adj)(N) |ἀσθLμαίL|νουLσαi(Prä)(Akt)(N) πεi|ρὶL(Prp) δρυiόςi(G), |ὡςL(Kon) ἴiδεi(AorS)(Akt) |χαίLτηνL(A)|
+(81) gleich|alt keuchend um die|Eiche, als sah Mähne|Haar
+(82) σειLοiμέi|νηνL(Prä)(M/P)(A) Ἑiλιi|κῶLνοςi(G). ἐi|μαὶL(Adj)(N) θεiαίi(N), |εἴLπαiτεi(Aor)(Akt)(Imv) |ΜοῦLσαιL(V),|
+(82) erschüttert|werdend des|Helikon. meine Göttinnen, sagt Musen,
+(83) ἦL(Pt) ῥ᾽(Pt) ἐiτεi|ὸνL(Adv) ἐiγέi|νονLτοi(Aor)(Med) τόi|τεL(Adv) δρύiεςi(N) |ἡLνίiκαi(Kon) |ΝύμLφαιL(N);|
+(83) ja ja|wohl wirklich wurden damals Eichen als Nymphen;
+(84) νύμLφαιL(N) |μὲνL(Pt) χαίL|ρουLσινi(Prä)(Akt), ὅi|τεL(Kon) δρύiαςi(A) |ὄμLβροςi(N) ἀi|έLξειL(Prä)(Akt),|
+(84) Nymphen zwar freuen|sich, wenn Eichen Regen mehrt,
+(85) νύμLφαιL(N) |δ᾽(Pt) αὖL(Adv) κλαίL|ουLσινi(Prä)(Akt), ὅi|τεL(Kon) δρυiσὶνi(D) |οὐLκέiτιi(Adv) |φύλLλαL(N).|
+(85) Nymphen aber wieder weinen, wenn bei|Eichen nicht|mehr Blätter.
+(86) ταῖςL(Art)(D) μὲνi(Pt) ἔτi᾽(Adv) |ἈLπόλL|λωνL(N) ὑiποi|κόλLπιiοςi(Adj)(N) |αἰLνὰi(Adv) χοi|λώLθηL(Aor)(Pas),|
+(86) denen zwar noch Apollon brust|nah schrecklich ward|erzürnt,
+(87) φθέγLξαiτοi(AorS)(Med) |δ᾽(Pt) οὐκL(Pt) ἀiτέi|λεLστονi(Adj)(A) ἀi|πειLλήL|σαςL(Aor)(Akt)(N) ἐiπὶi(Prp) |ΘήLβῃL(D)·|
+(87) sprach|aus aber nicht un|erfolglos drohend gegen Thebe·
+(88) "ΘήLβηL(V), |τίLπτεi(Adv) τάi|λαιLναi(Adj)(V) τὸνi(Art)(A) |αὐLτίiκαi(Adv) |πότLμονi(A) ἐi|λέγLχειςL(Prä)(Akt);|
+(88) "Thebe, warum Unglückliche den so|gleich Tod|Schicksal tadelst|du;
+(89) μήLπωL(Adv) |μήL(Pt) μ᾽(Pr)(A) ἀiέi|κονLταi(Adj)(A) βιi|άLζεiοi(Prä)(M/P)(Imv) |μανLτεύL|εLσθαιL(Prä)(M/P)(Inf).|
+(89) noch|nicht nicht mich ungewollt zwinge zu|weissagen.
+(90) οὔLπωL(Adv) |μοιL(Pr)(D) ΠυL|θῶLνιi(D) μέi|λειL(Prä)(Akt) τριiποi|δήLιiοςi(Adj)(N) |ἕLδρηL(N),|
+(90) noch|nicht mir bei|Pytho liegt|am|Herzen dreifußig Sitz,
+(91) οὐLδέi(Kon) τίi(Pr) |πωL(Adv) τέL|θνηLκενi(Per)(Akt) ὄi|φιςL(N) μέiγαςi(Adj)(N), |ἀλλL᾽(Kon) ἔiτιi(Adv) |κεῖLνοL(Pr)(N)|
+(91) und|nicht irgend|etwas bislang ist|gestorben Schlange groß, sondern noch jenes
+(92) θηLρίiονi(N) |αἰLνοiγέi|νειLονi(Adj)(N) ἀi|πὸL(Prp) ΠλειL|στοῖLοi(G) καi|θέρLπονL(Prä)(Akt)(N)|
+(92) Tier schrecklich|geboren von des|Pleistos herab|kriechend
+(93) ΠαρLνηL|σὸνL(A) νιiφόi|ενLταi(Adj)(A) πεi|ριLστέiφειi(Prä)(Akt) |ἐνLνέiαi(Adj)(A) |κύLκλοιςL(D)·|
+(93) Parnass schnee|reich um|kränzt neun Kreisen·
+(94) ἀλλL᾽(Kon) ἔμL|πηςL(Adv) ἐiρέi|ωL(Fu)(Akt) τιi(Pr) τοi|μώLτεiρονi(Adj)(A)(Kmp) |ἢL(Kon) ἀiπὸi(Prp) |δάφLνηςL(G).|
+(94) sondern dennoch ich|werde|sagen etwas schärfer als von Lorbeer.
+(95) φεῦLγεi(Prä)(Akt)(Imv) πρόi|σωL(Adv)· ταiχιi|νόςL(Adj)(N) σεi(Pr)(A) κιi|χήLσοiμαιi(Fu)(Med) |αἵLμαiτιi(D) |λούLσωνL(Fu)(Akt)(N)|
+(95) fliehe weiter· schnell dich ich|werde|einholen mit|Blut waschend
+(96) τόLξονi(A) ἐi|μόνL(Adj)(A)· σὺi(Pr)(N) δὲi(Pt) |τέLκναi(A) καi|κοLγλώσL|σοιLοi(Adj)(G) γυi|ναιLκὸςL(G)|
+(96) Bogen meinen· du aber Kinder schlecht|züngigen Frau
+(97) ἔλLλαiχεςi|1(Aor)(Akt). οὐL(Pt) σύi(Pr)(N) γ᾽(Pt) ἐi|μεῖLοi(Pr)(G) φίi|ληL(Adj)(N) τροiφὸςi(N) |οὐLδὲi(Kon) Κιi|θαιLρὼνL(N)|
+(97) erhieltest. nicht du ja meiner liebe Amme und|nicht Kithairon
+(98) ἔσLσεiταιi(Fu)(M/P)· |εὐLαiγέi|ωνL(Adj)(G) δὲi(Pt) καὶi(Kon) |εὐLαiγέi|εσLσιi(Adj)(D) μεi|λοίLμηνL(Prä)(M/P)(Op)."|
+(98) wird|sein· der|Frommen aber und den|Frommen möchte|ich|angehen."
+(99) ὣςL(Adv) ἄρi᾽(Pt) ἔi|φηL(Aor)(Akt). ΛηL|τὼL(N) δὲi(Pt) μεi|τάLτροiποςi(Adj)(N) |αὖLτιςi(Adv) ἐi|χώLρειL(Imp)(Akt).|
+(99) so denn sprach. Leto aber um|gewandt wieder ging.
+(100) ἀλλL᾽(Kon) ὅτi᾽(Kon) Ἀi|χαιLιiάi|δεςL(Adj)(N) μινi(Pr)(A) ἀi|πηρLνήL|σανLτοi(Aor)(Med) πόi|ληLεςL(N)|
+(100) aber als achai|ische sie verweigerten|sich Städte
+(101) ἐρLχοiμέi|νηνL(Prä)(M/P)(A), Ἑiλίi|κηL(N) τεi(Pt) Ποi|σειLδάL|ωLνοςi(G) ἑi|ταίLρηL(N)|
+(101) kommend|seiende, Helike und des|Poseidon Gefährtin
+(102) ΒοῦLράi(N) τεi(Pt) |ΔεLξαiμεi|νοῖLοi(G) βοi|όLσταiσιςi(N) |ΟἰLκιiάi|δαLοL(G),|
+(102) Bura und des|Dexamenos Rinder|stätte des|Oikiada,
+(103) ἂψL(Adv) δ᾽(Pt) ἐiπὶi(Prp) |ΘεσLσαiλίi|ηνL(A) πόiδαςi(A) |ἔLτρεiπεi(Imp)(Akt), |φεῦLγεi(Imp)(Akt) δ᾽(Pt) Ἄi|ναυLροςL(N)|
+(103) wieder|zurück aber auf Thessalien Füße wandte, floh aber Anauros
+(104) καὶL(Kon) μεiγάi|ληL(Adj)(N) Λάiριi|σαL(N) καὶL(Kon) |αἱL(Art)(N) ΧειL|ρωLνίiδεςi(Adj)(N) |ἄLκραιL(N),|
+(104) und große Larisa und die cheiron|ischen Gipfel,
+(105) φεῦLγεi(Imp)(Akt) δὲi(Pt) |καὶL(Kon) ΠηL|νειLὸςi(N) ἑi|λισLσόiμεi|νοςL(Prä)(M/P)(N) διiὰi(Prp) |ΤεμLπέωνL(G).|
+(105) floh aber auch Peneios sich|windend durch von|Tempe.
+(106) ἭLρηL(V), |σοὶL(Pr)(D) δ᾽(Pt) ἔiτιi(Adv) |τῆLμοςi(Adv) ἀi|νηLλεiὲςi(Adj)(N) |ἦLτορi(N) ἔi|κειLτοL(Imp)(M/P)|
+(106) Hera, dir aber noch damals un|barmherzig Herz lag
+(107) οὐLδὲi(Kon) καi|τεLκλάL|σθηςL(Aor)(Pas) τεi(Pt) καὶi(Kon) |ᾤLκτιiσαςi(Aor)(Akt), |ἡLνίiκαi(Kon) |πήLχειςL(A)|
+(107) und|nicht brachst|zusammen und auch erbarmtest|dich, als Arme
+(108) ἀμLφοiτέi|ρουςL(Adj)(A) ὀiρέi|γουLσαi(Prä)(M/P)(N) μάi|τηνL(Adv) ἐL|φθέγLξαiτοi(Aor)(Med) |τοῖLαL(Pr)(A)|
+(108) beide ausstreckend vergeblich sprach|aus solches
+(109) "ΝύμLφαιL(V) |ΘεσLσαiλίi|δεςL(Adj)(V), ποiταi|μοῦL(G) γέiνοςi(N), |εἴLπαiτεi(Aor)(Akt)(Imv) |παLτρὶL(D)|
+(109) "Nymphen thessal|ische, des|Flusses Geschlecht, sagt dem|Vater
+(110) κοιLμῆL|σαιL(Aor)(M/P)(Inf) μέiγαi(Adj)(A) |χεῦLμαi(A)· πεi|ριLπλέL|ξαLσθεi(Aor)(M/P)(Imv) γεi|νείLῳL(D)|
+(110) zu|beruhigen groß Flut· umschlingt Bart
+(111) λισLσόiμεi|ναιL(Prä)(M/P)(N) τὰL(Art)(A) |ΖηLνὸςi(G) ἐνi(Prp) |ὕLδαiτιi(D) |τέLκναi(A) τεi|κέLσθαιL(Aor)(M/P)(Inf).|
+(111) bittend die des|Zeus in Wasser Kinder zu|gebären.
+(112) ΠηLνειL|ὲL(V) ΦθιL|ῶLταi(Adj)(V), τίi(Pr)(N) |νῦνL(Adv) ἀiνέi|μοιLσινi(D) ἐi|ρίLζειςL(Prä)(Akt);|
+(112) Peneios phthiot|ischer, warum jetzt mit|Winden streitest|du;
+(113) ὦL(ij) πάiτερi(V), |οὐL(Pt) μὴνL(Pt) |ἵπLπονi(A) ἀi|έLθλιiονi(Adj)(A) |ἀμLφιiβέi|βηLκαςL(Per)(Akt).|
+(113) o Vater, nicht doch Pferd zum|Wettkampf hast|bestiegen.
+(114) ἦL(Pt) ῥάi(Pt) τοιi(Pt) |ὧδL᾽(Adv) αἰL|εὶL(Adv) ταiχιi|νοὶL(Adj)(N) πόiδεςi(N), |ἢL(Kon) ἐπi᾽(Prp) ἐi|μεῖLοL(Pr)(G)|
+(114) ja in|der|Tat ja|wohl so immer schnelle Füße, oder gegen|auf mich|gen
+(115) μοῦLνοιi(Adj)(N) ἐi|λαLφρίL|ζουLσιi(Prä)(Akt), πεi|ποίLηL|σαιL(Per)(Akt) δὲi(Pt) πέi|τεLσθαιL(Prä)(M/P)(Inf)|
+(115) allein leicht|sind, hast|gemacht aber zu|fliegen
+(116) σήLμεiρονi(Adv) |ἐLξαiπίi|νηςL(Adv); " ὁi(Art)(N) δ᾽(Pt) ἀi|νήLκοiοςi(Adj)(N). |"ὦL(ij) ἐiμὸνi(Adj)(A) |ἄχLθοςL(N),|
+(116) heute plötzlich; " der aber taub. "o mein Last,
+(117) ποῖL(Adv) σεi(Pr)(A) φέi|ρωL(Prä)(Akt); μέiλεi|οιL(Adj)(N) γὰρi(Pt) ἀi|πειLρήL|καLσιi(Per)(Akt) τέi|νονLτεςL(N).|
+(117) wohin dich trage|ich; erschöpft denn haben|nachgelassen Sehnen.
+(118) ΠήLλιiονi(N) |ὦL(ij) Φιiλύi|ρηςL(Adj)(N) νυμL|φήLιiονi(Adj)(N), |ἀλLλὰi(Kon) σὺi(Pr)(N) |μεῖLνονL(Aor)(Akt)(Imv),|
+(118) Pelion o Philyras braut|lich, aber du bleibe,
+(119) μεῖLνονi(Aor)(Akt)(Imv), ἐi|πεὶL(Kon) καὶL(Kon) |θῆLρεςi(N) ἐνi(Prp) |οὔLρεiσιi(D) |πολLλάiκιi(Adv) |σεῖLοL(Pr)(G)|
+(119) bleibe, da|weil auch Tiere in Bergen oft deiner
+(120) ὠLμοiτόi|κουςL(Adj)(A) ὠL|δῖLναςi(A) ἀi|πηLρείL|σανLτοi(Aor)(Med) λέi|αιLναιL(N)."|
+(120) roh|gebär|end Wehen abwehrten Löwinnen."
+(121) τὴνL(Art)(A) δ᾽(Pt) ἄiραi(Pt) |καὶL(Kon) ΠηL|νειLὸςi(N) ἀi|μείLβεiτοi(Imp)(M/P) |δάLκρυiαi(A) |λείLβωνL(Prä)(Akt)(N)|
+(121) sie aber ja auch Peneios antwortete Tränen träufelnd
+(122) "ΛηLτοῖi(D), Ἀi|ναγLκαίL|ηL(N) μεiγάi|ληL(Adj)(N) θεiόςi(N). |οὐL(Pt) γὰρi(Pt) ἔi|γωLγεL(Pr)(N)|
+(122) "der|Leto, Ananke große Göttin. nicht denn ich|gewiss
+(123) πότLνιiαi(V) |σὰςL(Adj)(A) ὠL|δῖLναςi(A) ἀi|ναίLνοiμαιi(Prä)(M/P)· |οἶLδαi(Per)(Akt) καὶi(Kon) |ἄλLλαςL(Adj)(A)|
+(123) Herrin deine Geburts|wehen leugne|ich· ich|weiß auch andere
+(124) λουLσαiμέi|ναςL(Aor)(M/P)(A) ἀπi᾽(Prp) ἐi|μεῖLοi(Pr)(G) λεi|χωLίiδαςi(A)· |ἀλLλάi(Kon) μοιi(Pr)(D) |ἭLρηL(N)|
+(124) gewaschen|habend von mir Wöchnerinnen· aber mir Hera
+(125) δαLψιiλὲςi(Adj)(A) |ἠLπείL|ληLσενi(Aor)(Akt). ἀi|παύLγαiσαιi(Aor)(Akt)(Imv), |οἷLοςi(Pr)(N) ἔi|φεLδροςL(Adj)(N)|
+(125) reich|lich drohte. strahle|auf, welcher auf|Warte|posten
+(126) οὔLρεiοςi(G) |ἐξL(Prp) ὑiπάi|τουL(Adj)(G) σκοiπιi|ὴνL(A) ἔiχειi(Prä)(Akt), |ὅςL(Pr)(N) κέi(Pt) μεi(Pr)(A) |ῥεῖLαL(Adv)|
+(126) des|Berges aus hoch|ragenden Wacht|stelle hat, der wohl mich leicht
+(127) βυσLσόiθενi(Adv) |ἐLξεiρύi|σειLεi(Aor)(Akt)(Op). τίi(Pr)(N) |μήLσοiμαιi(Fu)(M/P); |ἢL(Kon) ἀiποi|λέLσθαιL(Aor)(M/P)(Inf)|
+(127) aus|der|Tiefe würde|herausziehen. was werde|ich|bedenken; oder zu|zugrunde|gehen
+(128) ἡLδύi(Adj)(N) τίi(Pr)(N) |τοιL(Pt) ΠηL|νειLόνi(A); ἴi|τωL(Prä)(Akt)(Imv) πεL|πρωLμέiνονi(Per)(M/P)(N) |ἦLμαρL(N)·|
+(128) angenehm etwas dir|ja den|Peneios; gehe vor|bestimmt Tag·
+(129) τλήLσοiμαιi(Fu)(M/P) |εἵLνεiκαi(Prp) |σεῖLοi(Pr)(G) καὶi(Kon) |εἰL(Kon) μέλL|λοιLμιi(Prä)(Akt)(Op) ῥοi|άLωνL(G)|
+(129) werde|ich|erdulden um|willen deiner und wenn würde|ich der|Ströme
+(130) διLψαiλέi|ηνL(Adj)(A) ἄμL|πωLτινi(A) ἔi|χωνL(Prä)(Akt)(N) αἰL|ώLνιiονi(Adj)(A) |ἔρLρεινL(Prä)(Akt)(Inf)|
+(130) dürre Ebbe haltend ewig zu|versiegen
+(131) καὶL(Kon) μόiνοςi(Adj)(N) |ἐνL(Prp) ποiταi|μοῖLσινi(D) ἀi|τιLμόiταi|τοςL(Adj)(N)(Sup) καiλέi|εLσθαιL(Prä)(M/P)(Inf).|
+(131) und allein in den|Flüssen am|entehrtesten genannt|zu|werden.
+(132) ἠLνίδi᾽(Adv) ἐi|γώL(Pr)(N)· τίi(Pr)(N) πεi|ρισLσάi(Adj)(N); κάi|λειL(Prä)(Akt)(Imv) μόiνονi(Adj)(A) |ΕἰLλήL|θυιLανL(A)."|
+(132) nun ich· was überflüssig; rufe nur Eileithyia."
+(133) εἶLπεi(AorS)(Akt) καὶi(Kon) |ἠLρώL|ηLσεi(Aor)(Akt) μέi|μανL(Per)(Akt) ῥόiονi(A). |ἀλLλάi(Kon) οἱi(Pr)(D) |ἌLρηςL(N)|
+(133) sprach und strömte|an verlangend Strom. aber ihm Ares
+(134) ΠαγLγαίL|ουL(G) προiθέi|λυLμναi(Adj)(A) καi|ρήLαiταi(A) |μέλLλενi(Imp)(Akt) ἀi|είLραςL(Aor)(Akt)(N)|
+(134) des|Pangaion vor|steil Häupter war|im|Begriff aufgehoben|habend
+(135) ἐμLβαiλέi|εινL(Aor)(Akt)(Inf) δίL|νῃLσινi(D), ἀi|ποLκρύL|ψαιL(Aor)(Akt)(Inf) δὲi(Pt) ῥέi|εLθραL(A)·|
+(135) hinein|zu|werfen in|Wirbeln, zu|verbergen aber Strömungen·
+(136) ὑLψόiθεi(Adv) |δ᾽(Pt) ἐLσμαiράi|γηLσεi(Aor)(Akt) καὶi(Kon) |ἀLσπίiδαi(A) |τύLψενi(Aor)(Akt) ἀi|κωLκῇL(D)|
+(136) von|oben aber dröhnte und Schild schlug mit|der|Speer|spitze
+(137) δούLραiτοςi(G)· |ἡL(Art)(N) δ᾽(Pt) ἐiλέi|λιLξενi(Aor)(Akt) ἐi|νόLπλιiονi(Adj)(N)· |ἔLτρεiμεi(Imp)(Akt) |δ᾽(Pt) ὌσLσηςL(G)|
+(137) des|Schaftes· sie aber ließ|erbeben bewaffnet· erbebte aber Ossas
+(138) οὔLρεiαi(N) |καὶL(Kon) πεiδίi|ονL(N) ΚρανL|νώLνιiονi(Adj)(N) |αἵL(Pr)(N) τεi(Pt) δυi|σαLεῖςL(Adj)(N)|
+(138) Berge und Ebene Krannon|isch die und wind|widrige
+(139) ἐLσχαiτιi|αὶL(N) ΠίνL|δοιLοi(G), φόi|βῳL(D) δ᾽(Pt) ὠρL|χήLσαiτοi(Aor)(Med) |πᾶLσαL(Adj)(N)|
+(139) Rand|gebiete des|Pindos, vor|Furcht aber tanzte ganze
+(140) ΘεσLσαiλίi|ηL(N)· τοῖL|οςL(Adj)(N) γὰρi(Pt) ἀπi᾽(Prp) |ἀLσπίiδοςi(G) |ἔLβρεiμενi(Imp)(Akt) |ἦLχοςL(N).|
+(140) Thessalien· so|beschaffen denn von Schild dröhnte Klang.
+(141) ὡςL(Kon) δ᾽(Pt) ὁiπότi᾽(Kon) |ΑἰτLναίL|ουL(Adj)(G) ὄiρεi|οςL(G) πυiρὶi(D) |τυLφοiμέi|νοιLοL(Prä)(M/P)(G)|
+(141) wie aber wenn Ätna|ischen Berges mit|Feuer qualmenden
+(142) σείLονL|ταιL(Prä)(M/P) μυiχὰi(Adv) |πάνLταi(Adj)(N) καi|τουLδαίL|οιLοi(Adj)(G) γίi|γανLτοςL(G)|
+(142) beben in|die|Tiefen alles unter|irdischen Riesen
+(143) εἰςL(Prp) ἑiτέi|ρηνL(Adj)(A) Βριiαi|ρῆLοςi(G) ἐi|πωLμίiδαi(A) |κιLνυiμέi|νοιLοL(Prä)(M/P)(G),|
+(143) auf andere des|Briareus Schulter sich|rührenden,
+(144) θερLμάL|στραιL(N) τεi(Pt) βρέi|μουLσινi(Prä)(Akt) ὑφi᾽(Prp) |ἩLφαίL|στοιLοi(G) πυi|ράLγρηςL(N)|
+(144) Heiz|herde und dröhnen unter des|Hephaistos Feuer|zange
+(145) ἔρLγαi(N) θ᾽(Pt) ὁi|μοῦL(Adv), δειL|νὸνL(Adj)(N) δὲi(Pt) πυi|ρίκLμηL|τοίL(Adj)(N) τεi(Pt) λέi|βηLτεςL(N)|
+(145) Werke und zugleich, furchtbar aber vom|Feuer|gehärtet und Kessel
+(146) καὶL(Kon) τρίiποi|δεςL(N) πίL|πτονLτεςi(Prä)(Akt)(N) ἐπi᾽(Prp) |ἀλLλήL|λοιςL(Pr)(D) ἰiαi|χεῦLσιL(Prä)(Akt)·|
+(146) und Dreifüße fallend auf einander lärmen·
+(147) τῆLμοςi(Adv) ἔi|γεντL᾽(Aor)(Med) ἄiραi|βοςL(N) σάiκεi|οςL(G) τόiσοςi(Adj)(N) |εὐLκύL|κλοιLοL(Adj)(G).|
+(147) damals entstand Geräusch des|Schildes so|groß gut|runden.
+(148) ΠηLνειL|ὸςL(N) δ᾽(Pt) οὐκL(Pt) |αὖLτιςi(Adv) ἐi|χάLζεiτοi(Imp)(M/P), |μίLμνεi(Imp)(Akt) δ᾽(Pt) ὁi|μοίLωςL(Adv)|
+(148) Peneios aber nicht wiederum wich|zurück, blieb aber gleichermaßen
+(149) καρLτεiρὸςi(Adj)(N) |ὡςL(Kon) τὰL(Art)(A) |πρῶLταi(Adj)(A), θοi|ὰςL(Adj)(A) δ᾽(Pt) ἐL|στήLσαiτοi(Aor)(Med) |δίLναςL(A),|
+(149) stark wie die ersten, schnelle aber stellte|auf Wirbel,
+(150) εἰLσόiκεi(Adv) |οἱL(Pr)(D) ΚοιL|ηLὶςi(Adj)(N) ἐi|κέLκλεiτοi(Aor)(Med) |"σῴLζεiοi(Prä)(M/P)(Imv) |χαίLρωνL(Prä)(Akt)(N),|
+(150) bis|dass ihm die|Koische rief "rette|dich froh,
+(151) σῴLζεiοi(Prä)(M/P)(Imv)· |μὴL(Pt) σύi(Pr)(N) γ᾽(Pt) ἐi|μεῖLοi(Pr)(G) πάi|θῃςL(Aor)(Akt)(Knj) καiκὸνi(Adj)(A) |εἵLνεiκαi(Prp) |τῆσLδεL(Pr)(G)|
+(151) rette|dich· nicht du ja meiner erleidest Übel um|willen dieser
+(152) ἀντL᾽(Prp) ἐiλεi|ηLμοiσύi|νηςL(G), χάiριi|τοςL(G) δέi(Kon) τοιi(Pr)(D) |ἔσLσετi᾽(Fu)(M/P) ἀi|μοιLβήL(N)."|
+(152) statt Erbarmen, der|Gunst aber dir wird|sein Gegengabe."
+(153) ἦL(Pt) καὶL(Kon) |πολLλὰi(Adj)(A) πάi|ροιLθενi(Adv) ἐi|πεὶL(Kon) κάiμενi(Aor)(Akt) |ἔLστιiχεi(Imp)(Akt) |νήLσουςL(A)|
+(153) so auch vieles zuvor als ermüdete schritt Inseln
+(154) εἰLναiλίi|αςL(Adj)(A)· αἱL(Art)(N) |δ᾽(Pt) οὔL(Pt) μινi(Pr)(A) ἐi|περLχοiμέi|νηνL(Prä)(M/P)(A) ἐiδέi|χονLτοL(Imp)(M/P),|
+(154) meer|um|spülte· die aber nicht sie heran|kommend nahmen|auf,
+(155) οὐL(Pt) λιiπαi|ρὸνL(Adj)(A) νήL|εσLσινi(D) Ἐi|χιLνάiδεςi(N) |ὅρLμονi(A) ἔi|χουLσαιL(Prä)(Akt)(N),|
+(155) nicht glänzend für|Schiffen Echinaden Hafen habend,
+(156) οὐδL᾽(Kon) ἥL|τιςL(Pr)(N) ΚέρL|κυLραi(N) φιi|λοLξειL|νωLτάiτηi(Adj)(N)(Sup) |ἄλLλωνL(Adj)(G),|
+(156) noch welche Kerkyra gastfreundlichst der|anderen,
+(157) ἾLριςi(N) ἐi|πεὶL(Kon) πάL|σῃLσινi(Adj)(D) ἐφi᾽(Prp) |ὑLψηL|λοῖLοi(Adj)(G) Μίi|μανLτοςL(G)|
+(157) Iris da allen auf hoch|ragenden Mimas
+(158) σπερLχοiμέi|νηL(Prä)(M/P)(N) μάiλαi(Adv) |πολLλὸνi(Adv) ἀi|πέLτραiπενi(Aor)(Akt)· |αἱL(Art)(N) δ᾽(Pt) ὑπi᾽(Prp) ὁi|μοLκλῆςL(G)|
+(158) eilend sehr viel wandte|ab· die aber unter Zuruf
+(159) πανLσυiδίi|ῃL(Adv) φοiβέi|ονLτοi(Imp)(M/P) καi|τὰL(Prp) ῥόiονi(A) |ἥνLτιiναi(Pr)(A) |τέτLμοιL(Aor)(Akt)(Op).|
+(159) all|zusammen fürchteten|sich entlang Strom welchen|auch|immer träfe.
+(160) ὠLγυiγίi|ηνL(Adj)(A) δἤL|πειLταi(Pt)(Adv) Κόi|ωνL(G), Μεiροi|πηLίiδαi(Adj)(A) |νῆLσονL(A),|
+(160) uralt aber|danach der|Koer, meropische Insel,
+(161) ἵLκεiτοi(Aor)(M/P), |ΧαλLκιiόi|πηςL(G) ἱiεi|ρὸνL(Adj)(A) μυiχὸνi(A) |ἡLρωL|ίLνηςL(G).|
+(161) gelangte|sie, der|Chalkiope heiligen Winkel der|Heldin.
+(162) ἀλLλάi(Kon) ἑi(Pr)(A) |παιLδὸςi(G) ἔi|ρυLκενi(Aor)(Akt) ἔi|ποςL(N) τόiδεi(Pr)(N) |"μὴL(Pt) σύi(Pr)(N) γεi(Pt), |μῆLτερL(V),|
+(162) aber sie des|Kindes hielt|zurück Wort dieses "nicht du doch, Mutter,
+(163) τῇL(Pr)(D) μεi(Pr)(A) τέi|κοιςL(Aor)(Akt)(Op). οὔτL᾽(Kon) |οὖνL(Pt) ἐiπιi|μέμLφοiμαιi(Prä)(M/P) |οὐLδὲi(Kon) μεi|γαίLρωL(Prä)(Akt)|
+(163) hier mich gebärtest. weder nun tadle|ich noch miss|gönne|ich
+(164) νῆLσονi(A), ἐi|πεὶL(Kon) λιiπαi|ρήL(Adj)(N) τεi(Pt) καὶi(Kon) |εὔLβοiτοςi(Adj)(N), |εἴL(Kon) νύi(Pt) τιςi(Pr)(N) |ἄλLληL(Adj)(N)·|
+(164) Insel, da glänzend und auch gut|weidend, wenn nun irgendeine andere·
+(165) ἀλLλάi(Kon) οἱi(Pr)(D) |ἐκL(Prp) ΜοιL|ρέωνL(G) τιςi(Pr)(N) ὀi|φειLλόiμεi|νοςL(Prä)(M/P)(N) θεiὸςi(N) |ἄλLλοςL(Adj)(N)|
+(165) aber ihr aus der|Moiren irgendein geschuldet Gott anderer
+(166) ἐLστίi(Prä)(M/P), Σαi|ωLτήL|ρωνL(G) ὕiπαi|τονL(Adj)(N) γέiνοςi(N)· |ᾧL(Pr)(D) ὑiπὸi(Prp) |μίLτρηνL(A)|
+(166) ist, der|Retter höchst Geschlecht· dem unter Gürtel
+(167) ἵLξεiταιi(Fu)(M/P) |οὐκL(Pt) ἀiέi|κουLσαi(Adj)(N) Μαi|κηLδόiνιi(D) |κοιLραiνέi|εLσθαιL(Prä)(M/P)(Inf)|
+(167) wird|kommen nicht un|willig vom|Makedonen beherrscht|zu|werden
+(168) ἀμLφοiτέi|ρηL(Adj)(N) μεiσόi|γειLαi(N) καὶi(Kon) |αἳL(Pr)(N) πεiλάi|γεσLσιi(D) κάi|θηνLταιL(Prä)(M/P),|
+(168) beide Binnen|lande und die bei|Meeren sitzen,
+(169) μέLχριςi(Prp) ὅi|πουL(Pr) πεiράi|τηL(Adj)(N) τεi(Pt) καὶi(Kon) |ὁπLπόiθενi(Pr) |ὠLκέiεςi(Adj)(N) |ἵπLποιL(N)|
+(169) bis wo Grenze und auch woher schnelle Pferde
+(170) ἠLέiλιi|ονL(A) φοiρέi|ουLσινi(Prä)(Akt)· ὁi(Pr)(N) |δ᾽(Pt) εἴLσεiταιi(Fu)(M/P) |ἤLθεiαi(A) |παLτρόςL(G).|
+(170) die|Sonne tragen· er aber wird|erkennen Bräuche des|Vaters.
+(171) καίL(Kon) νύi(Pt) ποi|τεL(Adv) ξυL|νόςL(Adj)(N) τιςi(Pr)(N) ἐi|λεύLσεiταιi(Fu)(M/P) |ἄμLμινi(Pr)(D) ἄi|εLθλοςL(N)|
+(171) und nun einst gemeinsam irgendein wird|kommen uns Wettkampf
+(172) ὕLστεiρονi(Adv), |ὁπLπότi᾽(Kon) ἂνi(Pt) |οἱL(Pr)(N) μὲνi(Pt) ἐφi᾽(Prp) |ἙλLλήL|νεσLσιi(D) μάi|χαιLρανL(A)|
+(172) später, sobald wohl die zwar gegen den|Hellenen Schwert
+(173) βαρLβαiριi|κὴνL(Adj)(A) καὶL(Kon) |ΚελLτὸνi(Adj)(A) ἀi|ναLστήL|σανLτεςi(Aor)(Akt)(N) Ἄi|ρηLαL(A)|
+(173) barbarischen und keltischen auf|erregt|habend Ares
+(174) ὀLψίiγοi|νοιL(Adj)(N) ΤιL|τῆLνεςi(N) ἀφi᾽(Prp) |ἑLσπέiρουi(G) |ἐLσχαiτόi|ωνLτοςL(Adj)(G)|
+(174) spät|geborene Titanen von Westen äußer|sten
+(175) ῥώLσωνL|ταιL(Prä)(M/P)(Knj) νιiφάi|δεσLσινi(D) ἐi|οιLκόiτεςi(Per)(Akt)(N) |ἢL(Kon) ἰiσάi|ριθLμοιL(Adj)(N)|
+(175) mögen|stärken Schneeflocken gleich|seiend oder gleich|zahlige
+(176) τείLρεiσινi(D), |ἡLνίiκαi(Kon) |πλεῖLσταi(Adj)(A)(Sup) κατi᾽(Prp) |ἠLέiραi(A) |βουLκοiλέi|ονLταιL(Prä)(M/P),|
+(176) den|Sternen, wenn die|meisten über Luft geweidet|werden,
+(177) φρούLριiαi(N) |καὶL(Kon) [κῶL|μαιL(N) ΛοL|κρῶνL(G) καὶL(Kon) |ΔελLφίiδεςi(Adj)(N) |ἄLκραιL(N)]|
+(177) Festungen und [Dörfer der|Lokrer und delphische Höhen]
+(178) καὶL(Kon) πεiδίi|αL(N) ΚρισL|σαῖLαi(Adj)(N) καὶi(Kon) |ἠLπείL|ροιL(Adj)(N) [οi(Art)(N) φάi|ραγLγεςL(N)]|
+(178) und Ebenen krissai|ische und festländische [die Schluchten]
+(179) ἀμLφιiπεi|ριLστείL|νωνLταιi(Prä)(M/P)(Knj), ἴi|δωLσιi(Aor)(Akt)(Knj) δὲi(Kon) |πίLοiναi(Adj)(A) |καLπνὸνL(A)|
+(179) mögen|rings|um|hüllen, mögen|sehen aber fetten Rauch
+(180) γείLτοiνοςi(G) |αἰLθοiμέi|νοιLοi(Prä)(M/P)(G), καὶi(Kon) |οὐLκέiτιi(Adv) |μοῦLνονi(Adj)(A) ἀi|κουLῇL(D),|
+(180) des|Nachbarn brennenden, und nicht|mehr nur durch|Hören,
+(181) ἀλλL᾽(Kon) ἤL|δηL(Adv) παiρὰi(Prp) |νηLὸνi(A) ἀi|παυLγάL|ζοινLτοi(Prä)(M/P)(Op) φάi|λαγLγαςL(A)|
+(181) sondern schon neben Tempel würden|auf|leuchten Schlachtreihen
+(182) δυLσμεiνέi|ωνL(Adj)(G), ἤL|δηL(Adv) δὲi(Kon) παi|ρὰL(Prp) τριiπόi|δεσLσινi(D) ἐi|μεῖLοL(Pr)(G)|
+(182) der|Feinde, schon aber neben Dreifüßen meiner
+(183) φάσLγαiναi(A) |καὶL(Kon) ζωL|στῆLραςi(A) ἀi|ναιLδέiαςi(Adj)(A) |ἐχLθοiμέi|ναςL(Prä)(M/P)(A) τεL(Pt)|
+(183) Schwerter und Gürtel un|verschämte verhasste und
+(184) ἀLσπίiδαςi(A), |αἳL(Pr)(N) Γαiλάi|τῃLσιi(D) καi|κὴνL(Adj)(A) ὁiδὸνi(A) |ἄLφροiνιi(Adj)(D) |φύLλῳL(D)|
+(184) Schilde, die den|Galliern schlechten Weg dem|törichten Stamm
+(185) στήLσονL|ταιL(Fu)(M/P)· τέωνL(Pr)(G) |αἱL(Pr)(N) μὲνi(Pt) ἐi|μοὶL(Pr)(D) γέiραςi(N), |αἱL(Pr)(N) δ᾽(Pt) ἐiπὶi(Prp) |ΝείLλῳL(D)|
+(185) werden|auf|stellen· deren die zwar mir Ehrengeschenk, die aber am Nil
+(186) ἐνL(Prp) πυiρὶi(D) |τοὺςL(Art)(A) φοiρέi|ονLταςi(Prä)(Akt)(A) ἀi|ποLπνεύL|σανLταςi(Aor)(Akt)(A) ἰi|δοῦLσαιL(Aor)(Akt)(N)|
+(186) im Feuer die tragend aus|geatmet|habend sehend
+(187) κείLσονL|ταιL(Fu)(M/P) βαiσιi|λῆLοςi(G) ἀi|έLθλιiαi(N) |πολLλὰi(Adj)(A) καi|μόνLτοςL(Aor)(Akt)(G).|
+(187) werden|liegen des|Königs Preise vieles ermüdet|habend.
+(188) ἐσLσόiμεi|νεL(Fu)(Akt)(V) Πτοiλεi|μαῖLεi(V), τάi(Art)(A) |τοιL(Pr)(D) μανL|τήLιiαi(A) |φαίLνωL(Prä)(Akt).|
+(188) werdend|er Ptolemaios, dies dir Orakel zeige|ich.
+(189) αἰLνήL|σειςL(Fu)(Akt) μέiγαi(Adv) |δήL(Pt) τιi(Pr)(A) τὸνi(Art)(A) |εἰLσέiτιi(Adv) |γαLστέiριi(D) |μάνLτινL(A)|
+(189) wirst|preisen sehr ja etwas den noch im|Bauch Seher
+(190) ὕLστεiρονi(Adv) |ἤLμαiταi(A) |πάνLταi(Adj)(A). σὺi(Pr)(N) |δὲL(Pt) ξυμL|βάλLλεiοi(Prä)(M/P)(Imv), |μῆLτερL(V)·|
+(190) später Tage alle. du aber überlege, Mutter·
+(191) ἔLστιi(Prä)(M/P) διi|ειLδοiμέi|νηL(Prä)(M/P)(N) τιςi(Pr)(N) ἐνi(Prp) |ὕLδαiτιi(D) |νήLσοςi(N) ἀi|ραιLήL(Adj)(N),|
+(191) es|gibt durch|scheinend irgendeine in Wasser Insel dünn,
+(192) πλαLζοiμέi|νηL(Prä)(M/P)(N) πεiλάi|γεσLσιi(D)· πόi|δεςL(N) δέi(Kon) οἱi(Pr)(D) |οὐχL(Pt) ἑiνὶi(Adj)(D) |χώLρῳL(D),|
+(192) umherirrend auf|Meeren· Füße aber ihr nicht an|einem Ort,
+(193) ἀλLλὰi(Kon) παi|λιρLροίL|ῃL(D) ἐiπιi|νήLχεiταιi(Prä)(M/P) |ἀνLθέiριi|κοςL(N) ὥςL(Kon),|
+(193) sondern Rück|strömung wird|getrieben Asphodel|halm wie,
+(194) ἔνLθαi(Adv) νόi|τοςL(N), ἔνθL᾽(Adv) |εὖLροςi(N), ὅi|πηL(Adv) φοiρέi|ῃLσιi(Prä)(Akt)(Knj) θάi|λασLσαL(N).|
+(194) dort Südwind, dort Eurus, wohin trägt Meer.
+(195) τῇL(Pr)(D) μεi(Pr)(A) φέi|ροιςL(Prä)(Akt)(Op)· κείL|νηνL(Pr)(A) γὰρi(Pt) ἐi|λεύLσεiαιi(Fu)(M/P) |εἰςL(Prp) ἐiθέi|λουLσανL(Prä)(Akt)(A)."|
+(195) zu|jener mich würdest|tragen· jene denn wirst|kommen zu Willige."
+(196) αἱL(Art)(N) μὲνL(Pt) |τόσLσαi(Adj)(A) λέi|γονLτοςi(Prä)(Akt)(G) ἀi|πέLτρεiχονi(Imp)(Akt) |εἰνL(Prp) ἁiλὶi(D) |νῆLσοιL(N)·|
+(196) die zwar so|viel des|Sprechenden liefen|weg ins Meer Inseln·
+(197) ἈLστεiρίi|ηL(V) φιiλόi|μολLπεi(Adj)(V), σὺi(Pr)(N) |δ᾽(Pt) ΕὐLβοίL|ηLθεi(Adv) καi|τῄLειςL(Imp)(Akt),|
+(197) Asterie lied|liebend, du aber nach|Euboia gingst,
+(198) ΚυLκλάiδαςi(A) |ὀLψοiμέi|νηL(Prä)(M/P)(N) πεiριi|ηLγέiαςi(Adj)(A), |οὔL(Pt) τιi(Pr)(A) παi|λαιLόνL(Adj)(A),|
+(198) Kykladen schauend rings|her, nicht irgend alt,
+(199) ἀλλL᾽(Kon) ἔiτιi(Adv) |τοιL(Pr)(D) μεiτόi|πιLσθεi(Adv) Γεi|ραίLστιiονi(Adj)(A) |εἵLπεiτοi(Imp)(M/P) |φῦLκοςL(N)·|
+(199) sondern noch dir hinten|nach geraistisch|es folgte Tang·
+(200) ...
+(200) ...
+(201) .. . φλεL|ξαςL(Aor)(Akt)(N) ἐL|πεὶL(Kon) πεiριi|καίLεiοi|L(Prä)(M/P) πυL|ρίL(D),|
+(201) .. . entflammt|habend da rings|branntest|du mit|Feuer,
+(202) τλήLμονi᾽(Adj)(A) ὑπi᾽(Prp) |ὠLδίL|νεσLσιi(D) βαi|ρυLνοiμέi|νηνL(Prä)(M/P)(A) ὁiρόi|ωLσαL(Prä)(Akt)(N)·|
+(202) elende unter Geburtswehen beschwert|werdend sehend·
+(203) "ἭLρηL(V), |τοῦLτόi(Pr)(N) μεi(Pr)(A) |ῥέLξονi(Aor)(Akt)(Imv) ὅi(Pr)(A) |τοιL(Pr)(D) φίiλονi(Adj)(N)· |οὐL(Pt) γὰρi(Pt) ἀi|πειLλὰςL(A)|
+(203) "Hera, dies mich tu was dir lieb· nicht denn Drohungen
+(204) ὑLμεiτέi|ραςL(Adj)(A) ἐiφύi|λαLξαi(Aor)(Akt)· πέi|ραL(Adv), πέiραi(Adv) |εἰςL(Prp) ἐiμὲi(Pr)(A) |ΛηLτοῖL(D)."|
+(204) eure bewahrte|ich· fort, fort in mich der|Leto."
+(205) ἔνLνεiπεςi(Aor)(Akt)(Imv)· |ἡL(Art)(N) δ᾽(Pt) ἀL|ρηLτὸνi(Adj)(A) ἄi|ληςL(G) ἀiπεi|παύLσαiτοi(Aor)(M/P) |λυLγρῆςL(Adj)(G),|
+(205) sprich· sie aber erbeten des|Irrens hörte|auf leidvollen,
+(206) ἕLζεiτοi(Imp)(M/P) |δ᾽(Pt) ἸLνωL|ποῖLοi(Adj)(G) παi|ρὰL(Prp) ῥόiονi(A), |ὅνLτεi(Pr)(A) βάi|θιLστονL(Adj)(A)(Sup)|
+(206) setzte|sich aber des|Inopos neben Strom, welchen|denn tiefst
+(207) γαῖLαi(N) τότi᾽(Pt) |ἐLξαiνίi|ηLσινi(Prä)(Akt), ὅi|τεL(Kon) πλήL|θονLτιi(Adj)(D) ῥεi|έLθρῳL(D)|
+(207) Erde damals lässt|hinaus, wenn voll|strömendem Stromlauf
+(208) ΝεῖLλοςi(N) ἀi|πὸL(Prp) κρηL|μνοῖLοi(G) καi|τέρLχεiταιi(Prä)(M/P) |ΑἰLθιiοi|πῆLοςL(Adj)(G)·|
+(208) Nil von Fels|absturz steigt|hinab äthiopischen·
+(209) λύLσαiτοi(Aor)(M/P) |δὲL(Kon) ζώL|νηνL(A), ἀiπὸi(Prp) |δ᾽(Pt) ἐLκλίiθηi(Aor)(Pas) |ἔμLπαiλινi(Adv) |ὤLμοιςL(D)|
+(209) löste|sich aber Gürtel, von aber neigte|sich rückwärts Schultern
+(210) φοίLνιL|κοςL(G) ποiτὶi(Prp) |πρέLμνονi(A) ἀi|μηLχαiνίi|ηςL(G) ὑiπὸi(Prp) |λυLγρῆςL(Adj)(G)|
+(210) der|Palme gegen Stamm der|Ratlosigkeit unter leidvoll|er
+(211) τειLροiμέi|νηL(Prä)(M/P)(N)· νόiτιi|οςL(Adj)(N) δὲi(Kon) διi|ὰL(Prp) χροiὸςi(G) |ἔρLρεiενi(Imp)(Akt) |ἱLδρώςL(N).|
+(211) leidend· feucht aber durch Haut floss Schweiß.
+(212) εἶLπεi(AorS)(Akt) δ᾽(Pt) ἀi|λυσθLμαίL|νουLσαi(Prä)(Akt)(N) "τίi(Pr) |μηLτέiραi(A), |κοῦLρεi(V), βαi|ρύLνειςL(Prä)(Akt);|
+(212) sprach aber keuchend "warum Mutter, Knabe, beschwerst|du;
+(213) αὕLτηL(Pr)(N) |τοιL(Pt), φίiλεi(Adj)(V), |νῆLσοςi(N) ἐi|πιLπλώL|ουLσαi(Prä)(Akt)(N) θαi|λάσLσῃL(D).|
+(213) diese ja, Freund, Insel auf|schwimmend auf|dem|Meer.
+(214) γείLνεiοi(Prä)(Med)(Imv), |γείLνεiοi(Prä)(Med)(Imv), |κοῦLρεi(V), καὶi(Kon) |ἤLπιiοςi(Adj)(N) |ἔLξιiθιi(AorS)(Akt)(Imv) |κόλLπουL(G)."|
+(214) werde|geboren, werde|geboren, Knabe, und sanft geh|hinaus aus|dem|Schoß."
+(215) νύμLφαi(V) Διi|ὸςL(G) βαiρύi|θυLμεi(Adj)(V), σὺi(Pr)(N) |δ᾽(Pt) οὐκL(Pt) ἄρi᾽(Pt) ἔi|μελLλεςi(Imp)(Akt) ἄi|πυLστοςL(Adj)(N)|
+(215) Braut des|Zeus schwer|mütige, du aber nicht ja warst|im|Begriff unwissend
+(216) δὴνL(Adv) ἔiμεi|ναιL(Prä)(Inf)(Akt)· τοίL|ηL(Pr)(N) σεi(Pr)(A) προi|σέLδραiμενi(AorS)(Akt) |ἀγLγεiλιi|ῶLτιςL(N),|
+(216) lange zu|sein· solche dich lief|herzu Botin,
+(217) εἶLπεi(AorS)(Akt) δ᾽(Pt) ἔτi᾽(Adv) |ἀσθLμαίL|νουLσαi(Prä)(Akt)(N), φόi|βῳL(D) δ᾽(Pt) ἀiνεi|μίσLγεiτοi(Imp)(M/P) |μῦLθοςL(N),|
+(217) sprach aber noch keuchend, mit|Furcht aber mischte|sich Rede,
+(218) "ἭLρηL(V) |τιLμηL|έσLσαi(Adj)(V), ποi|λὺL(Adv) προὔL|χουLσαi(Prä)(Akt)(N) θεi|άLωνL(G)|
+(218) "Hera ehr|würdige, sehr vor|ragend|seiend der|Göttinnen
+(219) σὴL(Adj)(N) μὲνi(Pt) ἐi|γώL(Pr)(N), σὰi(Adj)(A) δὲi(Pt) |πάνLταi(Adj)(A), σὺi(Pr)(N) |δὲL(Pt) κρείL|ουLσαi(Prä)(Akt)(N) κάi|θηLσαιL(Prä)(M/P)|
+(219) deine zwar ich, deine aber alles, du aber herrschend|seiend sitzt
+(220) γνηLσίiηi(Adj)(V) |ΟὐLλύμL|ποιLοi(G), καὶi(Kon) |οὐL(Pt) χέiραi(A) |δείLδιiμενi(Per)(Akt) |ἄλLληνL(Adj)(A)|
+(220) rechtmäßige des|Olympos, und nicht die|Hand fürchten|wir andere
+(221) θηLλυiτέi|ρηνL(Adj)(A)(Kmp), σὺi(Pr)(N) δ᾽(Pt), ἄi|νασLσαi(V), τὸνi(Art)(A) |αἴLτιiονi(Adj)(A) |εἴLσεiαιi(Fu)(M/P) |ὀρLγῆςL(G).|
+(221) weiblich|ere, du aber, Herrin, den Schuld|igen wirst|erkennen des|Zorns.
+(222) ΛηLτώL(N) |τοιL(Pt) μίL|τρηνL(A) ἀiναi|λύLεiταιi(Prä)(M/P) |ἔνLδοiθιi(Adv) |νήLσουL(G).|
+(222) Leto ja Gürtel löst|sich innen der|Insel.
+(223) ἄλLλαιL(Adj)(N) |μὲνL(Pt) πᾶL|σαίL(Adj)(N) μινi(Pr)(A) ἀi|πέLστυiγονi(Imp)(Akt) |οὐδL᾽(Kon) ἐiδέi|χονLτοL(Imp)(M/P)·|
+(223) andere zwar alle sie verabscheuten auch|nicht nahmen|auf·
+(224) ἈLστεiρίi|ηL(N) δ᾽(Pt) ὀiνοi|μαLστὶi(Adv) παi|ρερLχοiμέi|νηνL(Prä)(M/P)(A) ἐiκάi|λεσLσενL(Aor)(Akt),|
+(224) Asterie aber namentlich vorüber|gehende rief,
+(225) ἈLστεiρίi|ηL(V), πόνL|τοιLοi(G) καi|κὸνL(Adj)(A) σάiρονi(A)· |οἶLσθαi(Per)(Akt) καὶi(Kon) |αὐLτήL(Pr)(N).|
+(225) Asterie, des|Meeres schlecht|es Besen· weißt|du und selbst.
+(226) ἀλLλάi(Kon), φίi|ληL(Adj)(V), δύiναi|σαιL(Prä)(M/P) γάρi(Kon), ἀi|μύLνεινL(Prä)(Inf)(Akt), |πότLνιiαi(V), |δούLλοιςL(D)|
+(226) aber, Freundin, vermagst|du denn, zu|schützen, Herrin, den|Dienern
+(227) ὑLμεiτέi|ροιςL(Adj)(D), οἳL(Pr)(N) |σεῖLοi(Pr)(G) πέi|δονL(A) παiτέi|ουLσινi(Prä)(Akt) ἐi|φετLμῇL(D)."|
+(227) euren, die deiner Boden betreten auf|Befehl."
+(228) ἦL(Pt) καὶi(Kon) ὑi|πὸL(Prp) χρύL|σειLονi(Adj)(A) ἐi|δέLθλιiονi(A) |ἷLζεi(Imp)(Akt) κύi|ωνL(N) ὥςL(Kon),|
+(228) wahrlich und unter goldene Fußbank saß Hund wie,
+(229) ἈρLτέiμιi|δοςL(G) ἥL|τιςL(Pr)(N) τεi(Pt), θοi|ῆςL(Adj)(G) ὅiτεi(Kon) |παύLσεiταιi(Fu)(M/P) |ἄLγρηςL(G),|
+(229) der|Artemis welche und, der|schnellen wenn wird|aufhören der|Jagd,
+(230) ἵLζειL(Prä)(Akt) |θηLρήL|τειLραi(N) παρi᾽(Prp) |ἴχLνεiσινi(D), |οὔLαiταi(N) |δ᾽(Pt) αὐLτῆςL(Pr)(G)|
+(230) setzt|sich Jägerin neben Spuren, Ohren aber ihrer
+(231) ὀρLθὰi(Adj)(A) μάλi᾽(Adv), |αἰLὲνi(Adv) ἑi|τοῖLμαi(Adj)(A) θεi|ῆςL(G) ὑiποi|δέχLθαιi(Aor)(Med)(Inf) ὀi|μοLκλήνL(A)·|
+(231) aufrecht sehr, immer bereit der|Göttin zu|empfangen Zuruf·
+(232) τῇL(Pr)(D) ἰiκέi|ληL(Adj)(N) ΘαύL|μανLτοςi(G) ὑi|πὸL(Prp) θρόiνονi(A) |ἵLζεiτοi(Imp)(M/P) |κούLρηL(N).|
+(232) der gleich des|Thaumas unter Thron setzte|sich Mädchen.
+(233) κείLνηL(Pr)(N) |δ᾽(Pt) οὐLδέiποi|τεL(Adv) σφεiτέi|ρηςL(Adj)(G) ἐiπιi|λήLθεiταιi(Prä)(M/P) |ἕLδρηςL(G),|
+(233) jene aber niemals ihrer|eigenen vergisst des|Sitzes,
+(234) οὐδL᾽(Kon) ὅiτεi(Kon) |οἱL(Pr)(D) ληL|θαῖLονi(Adj)(A) ἐi|πὶL(Prp) πτεiρὸνi(A) |ὕLπνοςi(N) ἐi|ρείLσῃL(Aor)(Akt)(Knj),|
+(234) auch|nicht wenn ihr vergessend|es auf Flügel Schlaf stütze|sich,
+(235) ἀλλL᾽(Kon) αὐL|τοῦL(Adv) μεiγάi|λοιLοi(Adj)(G) ποi|τὶL(Prp) γλωL|χῖLναi(A) θρόi|νοιLοL(G)|
+(235) sondern da|selbst des|großen an Zacke des|Throns
+(236) τυτLθὸνi(Adv) ἀi|ποLκλίiναi|σαL(Aor)(Akt)(N) καL|ρήLαiταi(A) |λέLχριiοςi(Adv) |εὕLδειL(Prä)(Akt).|
+(236) ein|wenig ab|geneigt|habend Haupt seitwärts schläft.
+(237) οὐLδέi(Kon) ποi|τεL(Adv) ζώL|νηνL(A) ἀiναi|λύLεiταιi(Prä)(M/P) |οὐLδὲi(Kon) ταi|χείLαςL(Adj)(A)|
+(237) auch|nicht jemals Gürtel löst|sich auch|nicht schnelle
+(238) ἐνLδροiμίi|δαςL(A), μήL(Pt) |οἵL(Pr)(D) τιi(Pr) καὶi(Kon) |αἰφLνίiδιi|ονL(Adj)(A) ἔiποςi(A) |εἴLπῃL(Aor)(Akt)(Knj)|
+(238) Lauf|schuhe, damit|nicht ihr etwas und plötzlich|es Wort sage
+(239) δεLσπόiτιςi(N). |ἡL(Art)(N) δ᾽(Pt) ἀiλεi|γειLνὸνi(Adj)(A) ἀi|λαLστήL|σαLσαi(Aor)(Akt)(N) προi|σηύLδαL(Imp)(Akt)|
+(239) Herrin. die aber schmerzlich|es wütend|geworden|seiend redete|an
+(240) "οὕLτωL(Adv) |νῦνL(Adv), ὦL(ij) |ΖηLνὸςi(G) ὀi|νείLδεiαi(V), |καὶL(Kon) γαiμέi|οιLσθεL(Prä)(M/P)|
+(240) "so jetzt, o des|Zeus Schmach, und heiratet|ihr
+(241) λάLθριiαi(Adv) |καὶL(Kon) τίL|κτοιLτεi(Prä)(Akt)(Op) κεi|κρυμLμέiναi(Per)(M/P)(A), |μηδL᾽(Kon) ὅiθιi(Kon) |δειLλαὶL(Adj)(N)|
+(241) heimlich und würdet|gebären verborgen|es, und|nicht wo Elende
+(242) δυLστοiκέi|εςL(Adj)(N) μοiγέi|ουLσινi(Prä)(Akt) ἀi|λεLτρίiδεςi(N), |ἀλλL᾽(Kon) ὅiθιi(Kon) |φῶLκαιL(N)|
+(242) schwer|gebärende mühen|sich Müllerinnen, sondern wo Seehunde
+(243) εἰLνάiλιi|αιL(Adj)(N) τίL|κτουLσινi(Prä)(Akt), ἐi|νὶL(Prp) σπιiλάi|δεσLσινi(D) ἐi|ρήLμοιςL(Adj)(D).|
+(243) meer|lebende gebären, in Felsen|klippen einsamen.
+(244) ἈLστεiρίi|ῃL(D) δ᾽(Pt) οὐL|δένL(Pr)(N) τιi(Pr) βαi|ρύLνοiμαιi(Prä)(M/P) |εἵLνεiκαi(Prp) |τῆσLδεL(Pr)(G)|
+(244) der|Asterie aber nichts etwas nehme|ich|übel um|willen dieser
+(245) ἀμLπλαiκίi|ηςL(G), οὐδL᾽(Kon) |ἔLστινi(Prä)(M/P) ὅi|πωςL(Kon) ἀiποi|θύLμιiαi(A) |ῥέLξωL(Fu)(Akt),|
+(245) des|Fehlers, auch|nicht es|ist wie Sühne|gaben werde|ich|tun,
+(246) τόσLσαi(Adj)(A) δέi|οιL(Prä)(Akt)(Op) μάiλαi(Adv) |γάρL(Kon) τεi(Pt) καi|κῶςL(Adv) ἐiχαi|ρίσLσαiτοi(Aor)(Med) |ΛηLτοῖL(D)·|
+(246) so|viele würden|nötig|sein sehr denn und schlecht erwies|Gunst der|Leto·
+(247) ἀλLλάi(Kon) μινi(Pr)(A) |ἔκLπαL|γλόνL(Adv) τιi(Pr) σεi|βίLζοiμαιi(Prä)(M/P), |οὕLνεκi᾽(Kon) ἐi|μεῖLοL(Pr)(G)|
+(247) aber sie überaus etwas verehre|ich, weil meiner
+(248) δέLμνιiονi(A) |οὐκL(Pt) ἐiπάi|τηLσεi(Aor)(Akt), Διi|ὸςL(G) δ᾽(Pt) ἀνL|θείLλεiτοi(Aor)(Med) |πόνLτονL(A)."|
+(248) Bett nicht betrat, des|Zeus aber wies|zurück Meer."
+(249) ἡL(Art)(N) μὲνi(Pt) ἔi|φηL(Aor)(Akt)· κύL|κνοιL(N) δὲi(Pt) θεi|οῦL(G) μέλL|πονLτεςi(Prä)(Akt)(N) ἀi|οιLδοὶL(N)|
+(249) die zwar sprach· Schwäne aber des|Gottes singend Sänger
+(250) ΜῃLόiνιi|ονL(Adj)(A) ΠαL|κτωLλὸνi(A) ἐi|κυLκλώL|σανLτοi(Aor)(M/P) λιi|πόνLτεςL(Aor)(Akt)(N)|
+(250) meonischen Paktolos umkreisten|sie verlassen|habend
+(251) ἑLβδοiμάi|κιςL(Adv) πεiρὶi(Prp) |ΔῆLλονi(A), ἐi|πήLειL|σανL(Aor)(Akt) δὲi(Pt) λοi|χείLῃL(D)|
+(251) siebenmal um Delos, beistanden|sie aber bei|der|Geburt
+(252) ΜουLσάL|ωνL(G) ὄρL|νιLθεςi(N), ἀi|οιLδόiταi|τοιL(Adj)(N)(Sup) πεiτεi|ηLνῶνL(Adj)(G)·|
+(252) der|Musen Vögel, am|gesangreichsten der|Gefiederten·
+(253) ἔνLθενi(Adv) ὁi(Art)(N) |παῖςL(N) τοσL|σάσLδεi(Pr)(A) λύi|ρῃL(D) ἐiνεi|δήLσαiτοi(Aor)(Med) |χορLδὰςL(A)|
+(253) von|dort der Knabe so|viele|diese der|Leier band|hinein Saiten
+(254) ὕLστεiρονi(Adv), |ὁσLσάiκιi(Adv) |κύLκνοιi(N) ἐπi᾽(Prp) |ὠLδίL|νεσLσινi(D) ἄi|ειLσανL(Imp)(Akt).|
+(254) später, so|oft Schwäne bei Geburts|wehen sangen.
+(255) ὄγLδοiονi(Adj)(A) |οὐLκέτi᾽(Adv) ἄi|ειLσανi(Imp)(Akt), ὁi(Art)(N) |δ᾽(Pt) ἔκLθοiρενi(AorS)(Akt), |αἱL(Art)(N) δ᾽(Pt) ἐiπὶi(Prp) |μαLκρὸνL(Adj)(A)|
+(255) das|achte nicht|mehr sangen, der aber sprang|heraus, die aber auf lang
+(256) νύμLφαιL(N) |ΔηLλιiάi|δεςL(Adj)(N), ποiταi|μοῦL(G) γέiνοςi(N) |ἀρLχαίL|οιLοL(Adj)(G),|
+(256) Nymphen Delia|den, des|Flusses Geschlecht ur|alten,
+(257) εἶLπανi(Aor)(Akt) Ἐi|λειLθυίL|ηςL(G) ἱiεi|ρὸνL(Adj)(A) μέiλοςi(A), |αὐLτίiκαi(Adv) |δ᾽(Pt) αἰLθὴρL(N)|
+(257) sprachen|sie der|Eileithyia heilig|es Lied, sogleich aber Äther
+(258) χάλLκεiοςi(Adj)(N) |ἀνLτήL|χηLσεi(Aor)(Akt) διi|αLπρυiσίi|ηνL(Adj)(A) ὀiλοi|λυLγήνL(A),|
+(258) ehern widerhallte durch|dringenden Jauchzer,
+(259) οὐδL᾽(Kon) ἭL|ρηL(N) νεiμέi|σηLσενi(Aor)(Akt), ἐi|πεὶL(Kon) χόiλονi(A) |ἐLξέiλεi|τοL(Aor)(Med) ΖεύςL(N).|
+(259) und|nicht Hera grollte, weil Zorn nahm|weg Zeus.
+(260) χρύLσεiάi(Adj)(N) |τοιL(Pt) τόiτεi(Adv) |πάνLταi(Adj)(N) θεi|μείLλιiαi(N) |γείLνεiτοi(Aor)(Med), |ΔῆLλεL(V),|
+(260) goldene ja damals alle Fundamente wurden, Delos,
+(261) χρυLσῷL(D) |δὲL(Pt) τροiχόi|εσLσαi(Adj)(N) παi|νήLμεiροςi(Adj)(N) |ἔρLρεiεi(Imp)(Akt) |λίLμνηL(N),|
+(261) mit|Gold aber kreis|ende den|ganzen|Tag floß See,
+(262) χρύLσειL|ονL(Adj)(A) δ᾽(Pt) ἐiκόi|μηLσεi(Aor)(Akt) γεi|νέLθλιiονi(Adj)(A) |ἔρLνοςi(A) ἐi|λαίLηςL(G),|
+(262) goldenen aber trug|hervor geburts|tägigen Spross der|Olive,
+(263) χρυLσῷL(D) |δὲL(Pt) πλήL|μυLρεi(Aor)(Akt) βαi|θὺςL(Adj)(N) ἸL|νωLπὸςi(N) ἑi|λιχLθείςL(Aor)(Pas)(N).|
+(263) mit|Gold aber flutete|voll tief Inopos gewunden|seiend.
+(264) αὐLτὴL(Pr)(N) |δὲL(Pt) χρυiσέi|οιLοi(Adj)(G) ἀπi᾽(Prp) |οὔLδεiοςi(G) |εἵLλεiοi(Aor)(Med) |παῖLδαL(A),|
+(264) selbst aber goldenen von Boden nahmst|dir Knaben,
+(265) ἐνL(Prp) δ᾽(Pt) ἐiβάi|λευL(Aor)(Akt) κόλL|ποιLσινi(D), ἔi|ποςL(A) δ᾽(Pt) ἐL|φθέγLξαiοi(Aor)(Med) |τοῖLονL(Adj)(A)·|
+(265) in aber legtest Schoß, Wort aber sprachst|aus solch|es·
+(266) "ᾦL(ij) μεiγάi|ληL(Adj)(V) ποiλύi|βωLμεi(Adj)(V) ποi|λύLπτοiλιi(Adj)(V) |πολLλὰi(Adv) φέi|ρουLσαL(Prä)(Akt)(V),|
+(266) "o große viel|altärige viel|städt|ige viel tragend|seiend,
+(267) πίLοiνεςi(Adj)(N) |ἤLπειL|ροίL(N) τεi(Pt) καὶi(Kon) |αἳL(Pr)(N) πεiριi|ναίLεiτεi(Prä)(Akt) |νῆLσοιL(N)·|
+(267) fette Fest|länder und und die ringsum|wohnt|ihr Inseln·
+(268) αὐLτὴi(Pr)(N) ἐi|γὼL(Pr)(N) τοιL|ήLδεi(Pr)(N), δυi|σήLροiτοςi(Adj)(N), |ἀλλL᾽(Kon) ἀπi᾽(Prp) ἐi|μεῖLοL(Pr)(G)|
+(268) selbst ich so|beschaffen, schwer|zu|bebauen, aber von mir
+(269) ΔήLλιiοςi(Adj)(N) |ΑLπόλL|λωνL(N) κεL|κλήLσεiταιi(Fu)(M/P), |οὐLδέi(Kon) τιςi(Pr)(N) |ἄλLληL(Adj)(N)|
+(269) delisch|er Apollon wird|genannt|werden, und|nicht irgendeiner andere
+(270) γαιLάL|ωνL(G) τοσL|σόνLδεi(Adv) θεi|ῷL(D) πεiφιi|λήLσεiταιi(Fu)(M/P) |ἄλLλῳL(Adj)(D),|
+(270) der|Länder so|sehr dem|Gott wird|geliebt|werden anderem,
+(271) οὐL(Pt) ΚερχL|νὶςL(N) κρείL|ονLτιi(Prä)(Akt)(D) Ποi|σειLδάL|ωLνιi(D) Λεi|χαίLῳL(Adj)(D),|
+(271) nicht Kerchnis herrschendem dem|Poseidon Lechaion,
+(272) οὐL(Pt) πάiγοςi(N) |ἙρLμείL|ῃL(D) ΚυλL|λήLνιiοςi(Adj)(N), |οὐL(Pt) Διiὶi(D) |ΚρήLτηL(N),|
+(272) nicht Fels dem|Hermes Kyllen|isch|er, nicht dem|Zeus Kreta,
+(273) ὡςL(Kon) ἐiγὼi(Pr)(N) |ἈLπόλL|λωLνιi(D)· καὶi(Kon) |ἔσLσοiμαιi(Fu)(M/P) |οὐLκέiτιi(Adv) |πλαγLκτήL(Adj)(N)."|
+(273) so|wie ich dem|Apollon· und werde|sein nicht|mehr umher|irrend."
+(274) ὧLδεi(Adv) σὺi(Pr)(N) |μὲνL(Pt) καiτέi|λεLξαςi(Aor)(Akt)· ὁi(Art)(N) |δὲL(Pt) γλυiκὺνi(Adj)(A) |ἔLσπαiσεi(Aor)(Akt) |μαLζόνL(A).|
+(274) so du zwar erzähltest· der aber süßen saugte Brust.
+(275) τῶL(Adv) καὶL(Kon) |νηLσάL|ωνL(G) ἁiγιi|ωLτάiτηi(Adj)(N)(Sup) |ἐLξέiτιi(Adv) |κεἰLνουL(Kon)(Pr)(G)|
+(275) darum und der|Inseln heilig|ste seit und|jenes
+(276) κλἠLζῃi(Prä)(M/P), Ἀi|πόλLλωL|νοςL(G) κουL|ροLτρόiφοςi(Adj)(N)· |οὐLδέi(Kon) σ᾽(Pr)(A) Ἐi|νυLὼL(N)|
+(276) wirst|gerufen, des|Apollon Knaben|nährende· und|nicht dich Enyo
+(277) οὐδL᾽(Kon) Ἀiίi|δηςL(N) οὐδL᾽(Kon) |ἵπLποιi(N) ἐi|πιLστείL|βουLσινi(Prä)(Akt) Ἄi|ρηLοςL(G)·|
+(277) und|nicht Hades und|nicht Pferde betreten des|Ares·
+(278) ἀλLλάi(Kon) τοιi(Pt) |ἀμLφιiεi|τεῖςL(Prä)(Akt) δεiκαi|τηLφόiροιi(Adj)(N) |αἰLὲνi(Adv) ἀi|παρLχαὶL(N)|
+(278) sondern ja umgibst|du zehnt|tragende immer Erst|früchte
+(279) πέμLπονL|ταιL(Prä)(M/P), πᾶL|σαιL(Adj)(N) δὲi(Pt) χοi|ροὺςL(A) ἀiνάi|γουLσιi(Prä)(Akt) πόi|ληLεςL(N),|
+(279) werden|gesandt, alle aber Chöre führen|hinauf Städte,
+(280) αἵL(Pr)(N) τεi(Pt) πρὸςi(Prp) |ἠLοίL|ηνL(A) αἵL(Pr)(N) |θ᾽(Pt) ἕLσπεiρονi(Adv) |αἵL(Pr)(N) τ᾽(Pt) ἀiνὰi(Prp) |μέσLσηνL(Adj)(A)|
+(280) die auch gegen Morgenröte die und Abend die und durch Mitte
+(281) κλήLρονςL(A) |ἐLστήL|σανLτοi(Aor)(Med), καὶi(Kon) |οἳL(Pr)(N) καiθύi|περLθεi(Adv) βοi|ρείLηςL(Adj)(G)|
+(281) Lose stellten|auf, und die oberhalb nördlich|er
+(282) οἰLκίiαi(A) |θιLνὸςi(G) ἔi|χουLσιi(Prä)(Akt), ποi|λυχρLνιL|ώLταiτονi(Adj)(A) |αἷLμαL(A).|
+(282) Häuser des|Ufers haben, uralt|es Blut.
+(283) οἱL(Pr)(N) μένL(Pt) |τοιL(Pt) καiλάi|μηνL(A) τεi(Pt) καὶi(Kon) |ἱLεiρὰi(Adj)(A) |δράγLμαiταi(A) |πρῶLτοιL(Adj)(N)|
+(283) die zwar ja Stroh und auch heilige Garben zuerst
+(284) ἀLσταiχύi|ωνL(G) φοiρέi|ουLσινi(Prä)(Akt)· ἃi(Pr)(A) |ΔωLδώL|νηLθιi(Adv) Πεi|λασLγοὶL(N)|
+(284) der|Ähren tragen· welche bei|Dodona Pelasger
+(285) τηLλόiθενi(Adv) |ἐκLβαίL|νονLταi(Prä)(Akt)(A) ποi|λὺL(Adv) πρώL|τιLσταi(Adv)(Sup) δέi|χονLταιL(Prä)(M/P),|
+(285) aus|der|Ferne aus|steigend sehr aller|erst empfangen,
+(286) γηLλεiχέi|εςL(Adj)(N) θεiράi|πονLτεςi(N) ἀi|σιLγήL|τοιLοi(Adj)(G) λέi|βηLτοςL(G)·|
+(286) erd|verbundene Diener des|un|schweigenden Kessels·
+(287) δεύLτεiρονi(Adv) |ἹLεiρὸνi(Adj)(A) |ἄLστυi(A) καὶi(Kon) |οὔLτεiαi(A) |ΜηLλίiδοςi(Adj)(G) |αἴLηςL(G)|
+(287) als|zweites heilige Stadt und Höhen der|melischen Erde
+(288) ἔρLχονL|ταιL(Prä)(M/P)· κεῖL|θενL(Adv) δὲi(Pt) διi|αLπλώL|ουLσινi(Prä)(Akt) Ἀi|βάνLτωνL(G)|
+(288) kommen· von|dort aber durch|segeln der|Abanten
+(289) εἰςL(Prp) ἀiγαi|θὸνL(Adj)(A) πεiδίi|ονL(A) ΛηL|λάνLτιiονi(Adj)(A)· |οὐδL᾽(Kon) ἔiτιi(Adv) |μαLκρὸςL(Adj)(N)|
+(289) in gute Ebene lelántische· und|nicht mehr lang
+(290) ὁL(Art)(N) πλόiοςi(N) |ΕὐLβοίL|ηLθενi(Adv), ἐi|πεὶL(Kon) σέiοi(Pr)(G) |γείLτοiνεςi(N) |ὅρLμοιL(N).|
+(290) die Fahrt von|Euböa|her, da deiner Nachbarn Häfen.
+(291) πρῶLταίL(Adj)(N) |τοιL(Pt) τάδi᾽(Pr)(A) ἔi|νειLκανi(AorS)(Akt) ἀi|πὸL(Prp) ξανL|θῶνL(Adj)(G) Ἀiριi|μαLσπῶνL(G)|
+(291) die|Ersten ja dieses brachten von blonden der|Arimaspen
+(292) ΟὖLπίςL(N) |τεL(Pt) ΛοL|ξώL(N) τεi(Pt) καὶi(Kon) |εὐLαίL|ωνL(Adj)(N) Ἑiκαi|έρLγηL(N),|
+(292) Oupis und Loxo und und glückliche Hekaerge,
+(293) θυLγαiτέi|ρεςL(N) Βοiρέi|αLοi(G), καὶi(Kon) |ἄρLσεiνεςi(Adj)(N) |οἱL(Pr)(N) τότi᾽(Pt) ἄi|ριLστοιL(Adj)(N)|
+(293) Töchter des|Boreas, und männliche die damals Beste
+(294) ἠLιiθέi|ωνL(G)· οὐδL᾽(Kon) |οἵL(Pr)(N) γεi(Pt) παi|λιμLπεiτὲςi(Adv) |οἴLκαδi᾽(Adv) ἵi|κονLτοL(Aor)(M/P),|
+(294) der|Jünglinge· und|nicht diese ja rück|kehrend heimwärts kamen,
+(295) εὔLμοιL|ροιL(Adj)(N) δ᾽(Pt) ἐiγέi|νονLτοi(Aor)(Med), καὶi(Kon) |ἀLκλέiεςi(Adj)(N) |οὔLποτi᾽(Adv) ἐi|κεῖLνοιL(Pr)(N).|
+(295) beglückt aber wurden, und ruhm|los niemals jene.
+(296) ἦL(Pt) τοιL(Pt) |ΔηLλιiάi|δεςL(Adj)(N) μένi(Pt), ὅτi᾽(Kon) |εὐLήL|χηςL(Adj)(N) ὑiμέi|ναιLοςL(N)|
+(296) ja gewiss delische zwar, wenn wohl|tönend Hochzeitslied
+(297) ἤLθεiαi(A) |κουLράL|ωνL(G) μορL|μύσLσεiταιi(Prä)(M/P), |ἥLλιiκαi(Adj)(A) |χαίLτηνL(A)|
+(297) Sitten der|Mädchen rauscht, gleich|altrig Haar|mähne
+(298) παρLθεiνιi|καῖςL(Adj)(D), παῖL|δεςL(N) δὲi(Pt) θέi|ροςL(A) τὸL(Art)(A) |πρῶLτονi(Adj)(A) ἰi|ούLλωνL(A)|
+(298) den|Jungfrauen, Knaben aber Sommer das erste Flaum
+(299) ἄρLσεiνεςi(Adj)(N) |ἠLιiθέi|οιLσινi(D) ἀi|παρLχόiμεi|νοιL(Prä)(M/P)(N) φοiρέi|ουLσινL(Prä)(Akt).|
+(299) männliche den|Jünglingen als|Erstlinge tragensie.
+(300) ἈLστεiρίi|ηL(V) θυiόi|εσLσαi(Adj)(V), σὲi(Pr)(A) |μὲνL(Pt) πεiρίi(Prp) |τ᾽(Pt) ἀμLφίi(Prp) τεi(Pt) |νῆLσοιL(N)|
+(300) Asterie opfer|reiche, dich zwar rings und um und Inseln
+(301) κύLκλονi(A) ἐi|ποιLήL|σανLτοi(Aor)(Med) καὶi(Kon) |ὡςL(Kon) χοiρὸνi(A) |ἀμLφεiβάi|λονLτοL(Aor)(Med)·|
+(301) Kreis machten|sich und wie Chor warfen|sich|rings·
+(302) οὔLτεi(Kon) σιi|ωLπηL|λὴνL(Adj)(A) οὔτL᾽(Kon) |ἄLψοiφονi(Adj)(A) |οὖLλοςi(Adj)(N) ἐi|θείLραιςL(D)|
+(302) weder stille noch lautlos lockig der|Haar|mähnen
+(303) ἕLσπεiροςi(N), |ἀλλL᾽(Kon) αἰL|είL(Adv) σεi(Pr)(A) καi|ταLβλέiπειi(Prä)(Akt) |ἀμLφιiβόi|ηLτονL(Adj)(A).|
+(303) Abendstern, sondern immer dich blickt|hinab all|seitig|tönend.
+(304) οἱL(Pr)(N) μὲνi(Pt) ὑi|παLείL|δουLσιi(Prä)(Akt) νόi|μονL(A) Λυiκίi|οιLοi(Adj)(G) γέi|ρονLτοςL(G),|
+(304) die zwar unter|singen Gesetz des|lykischen Greises,
+(305) ὅνL(Pr)(A) τοιi(Pt) ἀi|πὸL(Prp) ΞάνL|θοιLοi(G) θεi|οLπρόiποςi(N) |ἤLγαiγενi(AorS)(Akt) |ὨLλήνL(N)·|
+(305) welches dir von Xanthos Seher brachte Olen·
+(306) αἱL(Pr)(N) δὲi(Pt) ποi|δὶL(D) πλήσL|σουLσιi(Prä)(Akt) χοi|ρίLτιiδεςi(N) |ἀLσφαiλἐςi(Adj)(A) |οὖLδαςL(A).|
+(306) die aber mit|Fuß schlagen Chor|mädchen festen Boden.
+(307) δὴL(Pt) τόiτεi(Adv) |καὶL(Kon) στεiφάi|νοιLσιi(D) βαi|ρύLνεiταιi(Prä)(M/P) |ἱLρὸνi(Adj)(N) ἄi|γαλLμαL(N)|
+(307) ja dann auch mit|Kränzen wird|beschwert heilig|es Bild
+(308) ΚύLπριiδοςi(G) |ἀρLχαίL|ηςL(Adj)(G) ἀiριi|ήLκοiονi(Adj)(A), |ἥνL(Pr)(A) ποiτεi(Adv) |ΘηLσεὺςL(N)|
+(308) der|Kypris alten sehr|verehrt|es, welche einst Theseus
+(309) εἵLσαiτοi(Aor)(Med) |σὺνL(Prp) παίL|δεσLσινi(D), ὅi|τεL(Kon) ΚρήL|τηLθενi(Adv) ἀi|νέLπλειL(Imp)(Akt).|
+(309) setzte mit Kindern, als von|Kreta herauf|segelte.
+(310) οἳL(Pr)(N) χαiλεi|πὸνL(Adj)(A) μύL|κηLμαi(A) καὶi(Kon) |ἄLγριiονi(Adj)(A) |υἷLαi(A) φυi|γόνLτεςL(Aor)(Akt)(N)|
+(310) die schrecklich|es Gebrüll und wilden Sohn entronnen|seiend
+(311) ΠαLσιiφάi|ηςL(G) καὶL(Kon) |γναμLπτὸνi(Adj)(A) ἕi|δοςL(A) σκοiλιi|οῦL(Adj)(G) λαiβυi|ρίνLθουL(G),|
+(311) der|Pasiphae und gewundenen Sitz des|krummen Labyrinths,
+(312) πότLνιiαi(V), |σὸνL(Adj)(A) πεiρὶi(Prp) |βωLμὸνi(A) ἐi|γειLροiμέi|νουL(Prä)(M/P)(G) κιiθαi|ριLσμοῦL(G)|
+(312) Herrin, um deinen Altar des|sich|hebenden Kithara|spiels
+(313) κύLκλιiονi(Adj)(A) |ὠρLχήL|σανLτοi(Aor)(Med), χοi|ροῦL(G) δ᾽(Pt) ἡL|γήLσαiτοi(Aor)(Med) |ΘηLσεύςL(N).|
+(313) kreis|förmig tanzten, des|Chores aber führte Theseus.
+(314) ἔνLθενi(Adv) ἀi|ειLζώL|ονLταi(Adj)(A) θεi|ωLρίiδοςi(G) |ἱLεiρὰi(A) |ΦοίLβῳL(D)|
+(314) von|dort immer|lebende der|Theorie geweihten für|Phoibos
+(315) ΚεLκροiπίi|δαιL(N) πέμL|πουLσιi(Prä)(Akt), τοi|πήLιiαi(A) |νηLὸςi(G) ἐi|κείLνηςL(Pr)(G).|
+(315) die|Kekropiden senden, Wahrzeichen des|Tempels jen|es.
+(316) ἈLστεiρίi|ηL(V) ποiλύi|βωLμεi(Adj)(V) ποi|λύλLλιiτεi(Adj)(V), |τίςL(Pr)(N) δέi(Pt) σεi(Pr)(A) |ναύLτηςL(N)|
+(316) Asterie viel|altärig viel|angerufen, welcher aber dich Seefahrer
+(317) ἔμLποiροςi(N) |ΑἰLγαίL|οιLοi(Adj)(G) παi|ρήLλυiθεi(AorS)(Akt) |νηLὶi(D) θεi|ούLσῃL(Prä)(M/P)(D);|
+(317) Kaufmann des|Ägäis fuhr|vorbei mit|Schiff fahrend;
+(318) οὐχL(Pt) οὕL|τωL(Adv) μεiγάi|λοιL(Adj)(N) μινi(Pr)(A) ἐi|πιLπνείL|ουLσινi(Prä)(Akt) ἀi|ῆLταιL(N),|
+(318) nicht so große ihn an|wehen Winde,
+(319) χρειLὼL(N) |δ᾽(Pt) ὅτLτιi(Pr)(A) τάi|χιLστονi(Adj)(A)(Sup) ἄi|γειL(Prä)(Akt) πλόiονi(A), |ἀλLλὰi(Kon) τὰi(Art)(A) |λαίLφηL(A)|
+(319) Not aber was am|schnellsten führt Fahrt, sondern die Segel
+(320) ὠLκέiεςi(Adj)(N) |ἐLστείL|λανLτοi(Aor)(M/P) καὶi(Kon) |οὐL(Pt) πάiλινi(Adv) |αὖLτιςi(Adv) ἔi|βηLσανL(AorS)(Akt),|
+(320) schnelle zogen|ein und nicht wieder nochmals gingen,
+(321) πρὶνL(Prp) μέiγανi(Adj)(A) |ἢL(Kon) σέiοi(Pr)(G) |βωLμὸνi(A) ὑi|πὸL(Prp) πληL|γῇLσινi(D) ἑi|λίLξαιL(Aor)(Akt)(Inf)|
+(321) ehe großen oder deinen Altar unter Schlägen zu|winden
+(322) ῥησLσόiμεi|νονL(Prä)(M/P)(A) καὶL(Kon) |πρέLμνονi(A) ὀi|δαLκτάiσαιi(Aor)(Akt)(Inf) |ἁLγνὸνi(Adj)(A) ἐi|λαίLηςL(G)|
+(322) berstenden und Stamm zu|benagen heiligen der|Olive
+(323) χεῖLραςi(A) ἀi|ποLστρέL|ψανLταςi(Aor)(Akt)(A)· ἃi(Pr)(A) |ΔηLλιiὰςi(Adj)(N) |εὕLρεiτοi(Aor)(Med) |νύμLφηL(N)|
+(323) die|Hände ab|gewandt|habend· was delische fand Nymphe
+(324) παίLγνιiαi(A) |κουLρίL|ζονLτιi(Prä)(Akt)(D) καὶi(Kon) |ἈLπόλL|λωLνιi(D) γεi|λαLστύνL(A).|
+(324) Spiele dem|Heranwachsenden und dem|Apollon Lächeln.
+(325) ἱLστίiηi(V) |ὦL(ij) νήL|σωνL(G) εὐL|έLστιiεi(Adj)(V), |χαῖLρεi(Prä)(Akt)(Imv) μὲνi(Pt) |αὐLτήL(Pr)(N),|
+(325) Herd o der|Inseln gute|Wirtin, freue|dich zwar selbst,
+(326) χαίLροιL(Prä)(Akt)(Op) |δ᾽(Pt) ἈLπόλL|λωνL(N) τεi(Pt) καὶi(Kon) |ἣνL(Pr)(A) ἐiλοi|χεύLσαiτοi(Aor)(Med) |ΛηLτώL(N).|
+(326) möge|sich|freuen aber Apollon und und die entband Leto.
+=== Gedicht 5 ===
+== λουτρὰ τῆς Παλλάδος ==
+(1) ὅσLσαιL(Pr)(N) λωLτροiχόiοιL(N) τᾶςL(Art)(G) ΠαλLλάiδοςi(G) ἔLξιiτεi(Aor)(Akt)(Imv) πᾶLσαιL(Adj)(N),|
+(1) wie|viele Bade|trägerinnen der Pallas geht|hinaus alle,
+(2) ἔLξιiτεi(Aor)(Akt)(Imv)· τᾶνL(Art)(G) ἵπLπωνL(G) ἄρLτιi(Adv) φρυiασLσοiμεiνᾶνL(Prä)(M/P)(G)|
+(2) geht|hinaus· der Pferde eben schnaubenden
+(3) τᾶνL(Art)(G) ἱiεiρᾶνL(Adj)(G) ἐiσάiκουLσαi(Aor)(Akt), καὶi(Kon) ἁL(Art)(N) θεiὸςi(N) εὔLτυiκοςi(Adj)(N) ἕρLπεινL(Prä)(Akt)(Inf)|
+(3) der heiligen hörte|ich, und die Göttin günstig zu|kommen
+(4) σοῦLσθέi(Prä)(M/P)(Imv) νυνi(Adv), ὦL(ij) ξανLθαίL(Adj)(V), σοῦLσθεi(Prä)(M/P)(Imv) ΠεiλασLγιiάiδεςL(V).|
+(4) eilt nun, o Blond|haarige, eilt Pelasgierinnen.
+(5) οὔLποκi᾽(Adv) ἈiθαLναίLαL(N) μεiγάiλωςL(Adv) ἀiπεiνίLψαiτοi(Aor)(M/P) πάLχειςL(A)|
+(5) niemals Athene sehr wusch|sich Glieder
+(6) πρὶνL(Prp) κόiνινi(A) ἱπLπειLᾶνL(Adj)(A) ἐLξεiλάiσαιL(Aor)(Akt)(Inf) λαiγόiνωνL(G),|
+(6) bevor Staub pferd|ischen aus|treiben der|Flanken,
+(7) οὐδL᾽(Kon) ὅiκαi(Kon) δὴL(Pt) λύLθρῳL(D) πεiπαiλαγLμέiναi(Per)(M/P)(A) πάνLταi(Adj)(A) φέiροιLσαL(Prä)(Akt)(N)|
+(7) noch wenn ja mit|Blut befleckte alle tragend
+(8) τεύLχεiαi(A) τῶνL(Art)(G) ἀiδίiκωνL(Adj)(G) ἦνθL᾽(Aor)(Akt) ἀiπὸi(Prp) γηLγεiνέiωνL(Adj)(G),|
+(8) Waffen der Frevelnden kam von Erd|geborenen,
+(9) ἀλLλὰi(Kon) ποiλὺL(Adv) πράLτιLστονi(Adj)(A) ὑφi᾽(Prp) ἅρLμαiτοςi(G) αὐLχέiναςi(A) ἵπLπωνL(G)|
+(9) sondern weit zuerst unter des|Wagens Nacken der|Pferde
+(10) λυLσαiμέiναL(Aor)(M/P)(N) παLγαῖςL(D) ἔLκλυiσενi(Aor)(Akt) ὨLκεiαiνῶL(G)|
+(10) gelöst|habend mit|Quellen wusch|ab von|Okeanos
+(11) ἱLδρῶL(A) καὶL(Kon) ῥαiθάiμιγLγαςi(A), ἐiφοίLβαLσενL(Aor)(Akt) δὲi(Pt) παiγένLταL(Per)(M/P)(A)|
+(11) Schweiß und Tropfen, reinigte aber geronnenen
+(12) πάνLταi(Adj)(A) χαiλιLνοiφάiγωνL(Adj)(G) ἀLφρὸνi(A) ἀiπὸL(Prp) στοiμάiτωνL(G).|
+(12) allen der|Zaum|beißer Schaum von Mäulern.
+(13) ὦL(ij) ἴτi᾽(Aor)(Akt)(Imv) ἈiχαιLιiάiδεςL(V), καὶL(Kon) μὴL(Pt) μύiραi(A) μηδL᾽(Kon) ἀiλαiβάLστρωςL(Adv)|
+(13) o geht Achaierinnen, und nicht Salben noch in|Alabastern
+(14) (συLρίγLγωνL(G) ἀiίiωL(Prä)(Akt) φθόγLγονi(A) ὑiπαLξοiνίiωνL(Adj)(G)),|
+(14) (der|Pfeifen höre|ich Klang der|Begleitenden),
+(15) μὴL(Pt) μύiραi(A) λωLτροiχόiοιL(N) τᾷL(Art)(D) ΠαλLλάiδιi(D) μηδL᾽(Kon) ἀiλαiβάLστρωςL(Adv)·|
+(15) nicht Salben Bade|trägerinnen der Pallas noch in|Alabastern·
+(16) οὐL(Pt) γὰρi(Pt) ἈiθαLναίLαL(N) χρίLμαiταi(A) μειLκτὰi(Adj)(A) φιiλεἶL(Prä)(Akt)|
+(16) nicht denn Athene Salbungen gemischt liebt
+(17) οἴLσεiτεi(Fu)(Akt) μηLδὲi(Kon) κάiτοLπτρονi(A)· ἀiεὶL(Adv) καiλὸνi(Adj)(N) ὄμLμαi(N) τὸi(Art)(N) τήLναςL(Pr)(G)|
+(17) bringt auch|nicht Spiegel· immer schön Auge das jener
+(18) οὐδL᾽(Kon) ὅiκαi(Kon) τὰνL(Art)(A) ἼLδᾳL(D) ΦρὺξL(N) ἐiδίiκαLζενi(Imp)(Akt) ἔiρινL(A),|
+(18) auch|nicht als die auf|Ida Phryge entschied Streit,
+(19) οὔτL᾽(Kon) ἐςi(Prp) ὀiρείLχαλLκονL(A) μεiγάiλαL(Adj)(A) θεiὸςi(N) οὔLτεi(Kon) ΣιiμοῦνLτοςL(G)|
+(19) weder in Berg|erz groß|es Gott noch des|Simois
+(20) ἔLβλεLψενL(AorS)(Akt) δίiνανi(A) ἐςL(Prp) διLαiφαιiνοLμέiνανi(Prä)(M/P)(A)·|
+(20) schaute Strudel in durch|scheinende·
+(21) οὐδL᾽(Kon) ἭLραL(N)· ΚύLπριςL(N) δὲi(Pt) διiαυLγέiαi(Adj)(A) χαλLκὸνi(A) ἑiλοῖLσαL(Aor)(Med)(N)|
+(21) noch Hera· Kypris aber durch|leuchtenden Bronze gewählt|habend
+(22) πολLλάiκιi(Adv) τὰνL(Art)(A) αὐLτὰνL(Adj)(A) δὶςL(Adv) μεiτέiθηLκεi(Aor)(Akt) κόiμανL(A)·|
+(22) vielfach die selbe zweimal verlegte Haarpracht·
+(23) ἁL(Art)(N) δέi(Pt), δὶςi(Adv) ἑLξήLκονLταi(Adj)(A) διiαLθρέLξαLσαi(Aor)(Akt)(N) διiαύLλωςL(Adv),|
+(23) die aber, zweimal sechzig durch|gelaufen|habend im|Laufgang,
+(24) οἷLαi(Adv) παρi᾽(Prp) ΕὐLρώLτᾳL(D) τοὶL(Art)(N) ΛαiκεiδαιLμόiνιiοιL(N)|
+(24) wie bei Eurotas die Lakedaimonier
+(25) ἀLστέiρεςi(N), ἐμLπεiράiμωςL(Adv) ἐiνεiτρίLψαiτοi(Aor)(M/P) λιLτὰi(Adj)(A) λαiβοῖLσαL(Aor)(Akt)(N)|
+(25) Sterne, kundig rieb|sich|ein schlichte genommen|habend
+(26) χρίLμαiταi(A), τᾶςL(Art)(G) ἰiδίiαςL(Adj)(G) ἔκLγοiναi(A) φυLταiλιiᾶςL(G)·|
+(26) Salbungen, der eigenen Nachwuchs der|Pflanzung·
+(27) ὦL(ij) κῶLραιL(V), τὸi(Art)(N) δ᾽(Pt) ἔiρευLθοςi(N) ἀiνέLδραiμεi(Aor)(Akt), πρώLιiονi(Adv) οἵLανL(Pr)(A)|
+(27) o Mädchen, das aber Rot lief|hinauf, früh wie
+(28) ἢL(Kon) ῥόiδονi(A) ἢL(Kon) σίLβδαςL(A) κόκLκοςi(N) ἔiχειL(Prä)(Akt) χροiΐiανL(A).|
+(28) oder Rose oder Kornelkirschen Kern hat Farbe.
+(29) τῶL(Adv) καὶL(Pt) νῦνL(Adv) ἄρLσενL(Adj)(A) τιi(Pr)(A) κοiμίLξαiτεi(Aor)(Akt)(Imv) μῶLνονi(Adv) ἔiλαιLονL(A),|
+(29) darum auch nun männlich etwas bringt allein Öl,
+(30) ᾧL(Pr)(D) ΚάLστωρL(N), ᾧL(Pr)(D) καὶL(Kon) χρίLεiταιi(Prä)(M/P) ἩLραiκλέiηςL(N)·|
+(30) mit|welchem Kastor, mit|welchem auch salbt|sich Herakles·
+(31) οἴLσεiτεi(Fu)(Akt) καὶL(Kon) κτέiναi(A) οἱL(Pr)(D) παγLχρύLσεiονi(Adj)(A), ὡςL(Kon) ἀiπὸi(Prp) χαίLτανL(A)|
+(31) werdet|bringen auch Kamm ihr|für|sie ganz|golden, damit von Haar
+(32) πέLξηLταιL(Aor)(M/P)(Knj), λιiπαiρὸνL(Adj)(A) σμαLσαiμέiναL(Aor)(M/P)(N) πλόiκαiμονL(A).|
+(32) gefestigt|werde, glänzenden gewischt|habend Locke.
+(33) ἔLξιθi᾽(Aor)(Akt)(Imv) ἈiθαLναίLαL(V)· πάiραi(Adv) τοιL(Pr)(D) καiταiθύLμιiοςi(Adj)(N) ἴLλαL(N),|
+(33) tritt|heraus Athene· bei dir herzens|gemäß Gunst,
+(34) παρLθεiνιiκαὶL(Adj)(N) μεiγάiλωνL(Adj)(G) παῖLδεςi(N) ἈiκεLστοiριiδᾶνL(G)|
+(34) jungfräuliche der|Großen Kinder der|Akestoriden
+(35) ὠLθάiναi(ij), φέLρεLταιL(Prä)(M/P) δὲi(Pt) καὶi(Kon) ἁL(Art)(N) ΔιiοiμήLδεiοςi(G) ἀLσπίςL(N),|
+(35) voran, es|wird|getragen aber auch die des|Diomedes Schild,
+(36) ὡςL(Kon) ἔiθοςi(N) ἈρLγείLωνL(Adj)(G) τοῦLτοi(Pr)(N) παiλαιLόiτεiρονL(Adj)(N)(Kmp)|
+(36) wie Brauch der|Argiver dies älter
+(37) ΕὐLμήLδηςL(N) ἐiδίiδαLξεL(Aor)(Akt), τεὶνL(Art)(A) κεiχαiριLσμέiνοςi(Per)(M/P)(N) ἱLρεύςL(N)·|
+(37) Eumedes lehrte, den erfreut|seienden Priester·
+(38) ὅςL(Pr)(N) ποiκαi(Adv) βωLλευLτὸνL(Adj)(A) γνοὺςL(Aor)(Akt)(N) ἐiπίi(Prp) οἱL(Pr)(D) θάiναiτονL(A)|
+(38) der einst geplanten erkannt|habend gegen ihn Tod
+(39) δᾶLμονi(A) ἑiτοιLμάLζονLταi(Prä)(Akt)(A) φυiγᾷL(D) τεiὸνi(Adj)(A) ἱLρὸνi(Adj)(A) ἄiγαλLμαL(A)|
+(39) Volk vorbereitend in|Flucht dein heilig|es Bild
+(40) ᾤLχετi᾽(Imp)(M/P) ἔiχωνL(Prä)(Akt)(N), ΚρεῖLονL(A) δ᾽(Pt) εἰςL(Prp) ὄiροςi(A) ᾠLκίiσαiτοL(Aor)(M/P)·|
+(40) ging|fort haltend, Kreion aber in den|Berg ließ|sich|nieder·
+(41) κρεῖLονi(N) ὄiροςL(N)· σὲi(Pr)(A) δέi(Pt), δαῖLμονi(V), ἀiπορLρώLγεσLσινi(Adj)(D) ἔiθηLκενL(Aor)(Akt)|
+(41) Kreion Berg· dich aber, Göttin, in|ab|gerissenen|Felsen setzte
+(42) ἐνL(Prp) πέLτραιςL(D), αἷςL(Pr)(D) νῦνL(Adv) οὔLνοiμαi(N) ΠαλLλαiτίiδεςL(N)·|
+(42) in Felsen, welchen nun Name Pallatiden·
+(43) ἔLξιθi᾽(Aor)(Akt)(Imv) ἈiθαLναίLαL(V) περLσέLπτοiλιi(Adj)(V), χρυLσεiοiπήLληξL(Adj)(V),|
+(43) tritt|heraus Athene Städte|verwüsterin, gold|gehelmt,
+(44) ἵπLπωνL(G) καὶL(Kon) σαiκέiωνL(G) ἁLδοiμέiναL(Prä)(M/P)(N) παiτάiγῳL(D).|
+(44) der|Pferde und der|Schilde gefallend dem|Klappern.
+(45) σάLμεiρονi(Adv) ὑLδροiφόiροιL(N) μὴL(Pt) βάLπτεiτεi(Prä)(Akt)(Imv)— σάLμεiρονi(Adv) ἌρLγοςL(N)|
+(45) heute Wasser|trägerinnen nicht taucht— heute Argos
+(46) πίLνετi᾽(Prä)(Akt)(Imv) ἀiπὸL(Prp) κραLνᾶνL(G) μηδL᾽(Kon) ἀiπὸi(Prp) τῶL(Art)(G) ποiταiμῶL(G),|
+(46) trinkt von Quellen noch von den Flüssen,
+(47) σάLμεiρονi(Adv) αἱL(Art)(N) δῶLλαιL(N) τὰςL(Art)(A) κάλLπιiδαςi(A) ἢ᾽(Kon) ςL(Prp) ΦυiσάiδειLανL(A)|
+(47) heute die Mägde die Krüge oder zu Physadeia
+(48) ἢL(Kon) ἐςi(Prp) ἈiμυLμώLνανL(A) οἴLσεiτεi(Fu)(Akt) τὰνL(Art)(A) ΔαiναiῶL(G).|
+(48) oder zu Amymone werdet|tragen die des|Danaos.
+(49) καὶL(Pt) γὰρL(Pt) δὴL(Pt) χρυLδῷL(D) τεi(Pt) καὶi(Kon) ἄνLθεiσινi(D) ὕLδαiταi(A) μίLξαςL(Aor)(Akt)(N)|
+(49) auch denn ja mit|Gold|staub und auch mit|Blüten Wasser mischend
+(50) ἡLξεῖL(Fu)(Akt) φορLβαίLωνL(Adj)(G) ἼLναiχοςi(N) ἐξL(Prp) ὀiρέiωνL(G)|
+(50) wird|kommen der|Weide|reiche Inachos aus Bergen
+(51) τἀLθάLνᾳL(Art)(D) τὸi(Art)(A) λοiεLτρὸνi(A) ἄiγωνL(Prä)(Akt)(N) καiλόνi(Adj)(A). ἀλLλάi(Kon), ΠεiλασLγέL(V),|
+(51) der|Athana das Bad bringend schön. aber, Pelasger,
+(52) φράLζεiοi(Prä)(M/P)(Imv) μὴοὐκL(Pt) ἐiθέiλωνi(Prä)(Akt)(N) τὰνL(Art)(A) βαiσίiλειLανi(A) ἴiδῃςL(Aor)(Akt)(Knj).|
+(52) hüte|dich nicht|nicht willend die Königin siehst.
+(53) ὅςL(Pr)(N) κενi(Pt) ἴiδῃL(Aor)(Akt)(Knj) γυLμνὰνL(Adj)(A) τὰνL(Art)(A) ΠαλLλάiδαi(A) τὰνL(Art)(A) ποiλιiοῦLχονL(Adj)(A),|
+(53) wer wohl sähe nackt die Pallas die Stadt|schützerin,
+(54) τὦρLγοςi(Art)(N) ἐiσοLψεῖLταιL(Fu)(M/P) τοῦLτοi(Pr)(A) παiνυLστάiτιiονL(Adj)(A).|
+(54) das|Werk wird|er|sehen dies aller|letztest.
+(55) πότLνἰi(V) ἈiθαLναίLαL(V) τὺi(Pr)(N) μὲνi(Pt) ἔLξιiθιi(Aor)(Akt)(Imv)· μέLσφαi(Adv) δ᾽(Pt) ἐiγώL(Pr)(N) τιL(Pr)(A)|
+(55) Herrin Athene du aber tritt|hinaus· inzwischen aber ich etwas
+(56) ταῖσδL᾽(Pr)(D) ἐiρέiωL(Fu)(Akt). μῦLθοςL(N) δ᾽(Pt) οὐκL(Pt) ἐiμόςi(Adj)(N), ἀλλL᾽(Kon) ἑiτέiρωνL(Adj)(G).|
+(56) diesen werde|ich|sagen. Erzählung aber nicht mein, sondern der|anderen.
+(57) παῖLδεςi(V), ἈiθαLναίLαL(N) νύμLφανL(A) μίiανi(Adj)(A) ἔνL(Prp) ποiκαi(Adv) ΘήLβαιςL(D)|
+(57) Kinder, Athena Nymphe eine in einst Theben
+(58) πουLλύi(Adv) τιi(Pr) καὶL(Pt) πεiρὶi(Prp) δὴL(Pt) φίLλαiτοi(Imp)(M/P) τᾶνL(Art)(G) ἑiταiρᾶνL(G),|
+(58) sehr etwas auch um ja liebte|sie der Gefährtinnen,
+(59) μαLτέiραi(A) ΤειLρεiσίiαLοi(G), καὶi(Kon) οὔLποiκαi(Adv) χωLρὶςi(Adv) ἔiγενLτοL(Aor)(M/P)·|
+(59) Mutter des|Teiresias, und niemals getrennt wurde|sie·
+(60) ἀλLλὰi(Kon) καὶi(Kon) ἀρLχαίLωνL(Adj)(G) εὖτL᾽(Kon) ἐiπὶi(Prp) ΘεLσπιiέiωνL(G)|
+(60) sondern auch der|alten sobald auf Thespiern
+(61) ἢLi(Kon) ᾽πὶi(Prp) ΚοLρωLνείLαςi(G) ἢi(Kon) εἰςL(Prp) ἉiλίiαρLτονi(A) ἐiλαύLνοιL(Prä)(Akt)(Op)|
+(61) oder auf Koroneia oder nach Haliartos triebe|sie
+(62) ἵπLπωςL(Adv), ΒοιLωLτῶνL(G) ἔρLγαi(A) διiερLχοiμέiναL(Prä)(M/P)(N),|
+(62) mit|Pferde, der|Böoter Werke durch|gehend,
+(63) ἢL(Kon) ᾽πὶi(Prp) ΚοiρωLνείLαςL(G), ἵiναi(Kon) οἱL(Pr)(D) τεiθυiωLμέiνονi(Per)(M/P)(A) ἄλLσοςL(A)|
+(63) oder auf Koroneia, wo ihr geopferter Hain
+(64) καὶL(Kon) βωLμοὶL(N) ποiταiμῷL(D) κεῖντL᾽(Imp)(M/P) ἐiπὶi(Prp) ΚωLραiλίiῳL(D)·|
+(64) und Altäre dem|Fluss lagen bei Koralios·
+(65) πολLλάiκιςi(Adv) ἁL(Art)(N) δαίLμωνL(N) νινi(Pr)(A) ἑiῶL(Adj)(G) ἐiπεiβάLσαiτοi(Aor)(M/P) δίLφρωL(D),|
+(65) oft die Göttin sie ihr|eigener setzte auf|dem|Wagen,
+(66) οὐδL᾽(Kon) ὄiαiροιL(N) νυμLφᾶνL(G) οὐLδὲi(Kon) χοiροLσταiσίiαιL(N)|
+(66) noch Plaudereien der|Nymphen noch Chor|stellungen
+(67) ἁLδεῖLαιL(Adj)(N) τεiλέiθεLσκονi(Imp)(Akt), ὅκi᾽(Kon) οὐχL(Pt) ἁLγεῖLτοi(Imp)(M/P) ΧαiριLκλώL(D)·|
+(67) angenehm wurden, wenn nicht geführt|wurde von|Chariklo·
+(68) ἀλλL᾽(Kon) ἔiτιi(Adv) καὶL(Pt) τήLνανL(Pr)(A) δάLκρυiαi(A) πόλλL᾽(Adj)(A) ἔiμεiνενL(Imp)(Akt),|
+(68) sondern noch auch jener Tränen viele blieben,
+(69) καίLπερi(Adv) ἈiθαLναίLᾳL(D) καiταiθύLμιiονi(Adj)(A) ἔσLσανi(Imp)(M/P) ἑiταίLρανL(A).|
+(69) obgleich der|Athena herzens|genehme seiend Gefährtin.
+(70) δήL(Pt) ποiκαi(Adv) γὰρL(Pt) πέLπλωνL(G) λυLσαiμέiναL(Aor)(M/P)(N) πεiρόiναςL(A)|
+(70) ja einst denn der|Gewänder gelöst|habend Fibeln
+(71) ἵπLπωi(D) ἐiπὶL(Prp) κράLνᾳL(D) ἙiλιiκωLνίiδιi(Adj)(D) καLλὰi(Adj)(A) ῥεiοίLσᾳL(Prä)(M/P)(D)|
+(71) mit|Pferd an Quelle Helikon|ischen schön strömend|er
+(72) λῶνLτοi(Imp)(M/P)· μεiσαμLβριiνὰi(Adv) δ᾽(Pt) εἶχL᾽(Imp)(Akt) ὄLροςi(N) ἁiσυLχίiαi(N).|
+(72) badeten· mittags aber hatte der|Berg Stille.
+(73) ἀμLφόiτεiραιL(Adj)(N) λώLονLτοi(Imp)(M/P), μεiσαμLβριLναὶL(Adj)(N) δ᾽(Pt) ἔiσανi(Imp)(Akt) ὧLραιL(N),|
+(73) beide badeten, mittägige aber waren Stunden,
+(74) πολLλὰi(Adj)(N) δ᾽(Pt) ἁiσυLχίiαi(N) τῆLνοL(Pr)(A) καiτεῖiχενL(Imp)(Akt) ὄiροςi(N).|
+(74) viel aber Ruhe jene beherrschte Berg.
+(75) ΤειLρεiσίiαςL(N) δ᾽(Pt) ἔiτιi(Adv) μῶLνοςi(Adj)(N) ἁiμᾶL(Adv) κυiσὶνi(D) ἄρLτιi(Adv) γέiνειLαL(A)|
+(75) Teiresias aber noch allein zugleich mit|Hunden eben Bart
+(76) περLκάLζωνL(Prä)(Akt)(N) ἱiεiρὸνL(Adj)(A) χῶLρονi(A) ἀiνεLστρέiφεiτοL(Imp)(M/P)·|
+(76) dunkel|bärtig heiligen Ort streifte|umher·
+(77) διLψάLσαςL(Aor)(Akt)(N) δ᾽(Pt) ἄiφαiτόνL(Adj)(A) τιi(Pr)(A) ποiτὶL(Prp) ῥόiονi(A) ἤLλυiθεi(AorS)(Akt) κράLναςL(G),|
+(77) durstig|geworden aber unsagbar etwas zu Fluss kam der|Quelle,
+(78) σχέτLλιiοςi(Adj)(N)· οὐκL(Pt) ἐiθέiλωνL(Prä)(Akt)(N) δ᾽(Pt) εἶLδεi(AorS)(Akt) τὰi(Art)(A) μὴL(Pt) θεiμιiτάL(Adj)(A)·|
+(78) elender· nicht wollend aber sah die nicht erlaubten·
+(79) τὸνL(Art)(A) δὲi(Pt) χοiλωLσαiμέiναL(Aor)(M/P)(N) περi(Pt) ὅiμωςL(Adv) προiσέiφαLσενi(Aor)(Akt) ἈiθάLναL(N)|
+(79) ihn aber zornig|geworden zwar dennoch sprach|an Athena
+(80) "τίςL(Pr)(N) σεi(Pr)(A), τὸνi(Art)(A) ὀLφθαλLμὼςL(A) οὐLκέτi᾽(Adv) ἀiποιLσόiμεiνονL(Fu)(M/P)(A),|
+(80) "wer dich, den die|Augen nicht|mehr behalten|werdend,
+(81) ὦL(ij) ΕὐLηLρείLδαL(V), χαiλεiπὰνL(Adj)(A) ὁiδὸνi(A) ἄLγαiγεi(AorS)(Akt) δαίLμωνL(N); "|
+(81) o Eueres|Sohn, schwierigen Weg führte Gott; "
+(82) ἁL(Art)(N) μὲνi(Pt) ἔiφαL(Aor)(Akt), παιLδὸςL(G) δ᾽(Pt) ὄμLμαiταi(A) νὺξL(N) ἔiλαiβενL(Aor)(Akt).|
+(82) die zwar sprach, des|Knaben aber Augen Nacht nahm.
+(83) ἑLστάLκηL(Per)(Akt) δ᾽(Pt) ἄLφθογLγοςi(Adj)(N), ἐiκόλLλαLσανL(Aor)(Akt) γὰρi(Pt) ἀiνῖLαιL(N)|
+(83) stand aber sprachlos, verleimten denn Schmerzen
+(84) γώLναiταi(A) καὶL(Kon) φωLνὰνL(A) ἔLσχενi(Aor)(Akt) ἀiμηLχαiνίiαL(N).|
+(84) Knie und Stimme hielt Ratlosigkeit.
+(85) ἁL(Art)(N) νύμLφαL(N) δ᾽(Pt) ἐiβόiαLσεi(Aor)(Akt) "τίi(Pr)(N) μοιL(Pr)(D) τὸνL(Art)(A) κῶLρονi(A) ἔiρεLξαςL(Aor)(Akt),|
+(85) die Nymphe aber schrie "warum mir den Knaben tatest|du,
+(86) πότLνιiαi(V); τοιLαῦLταιL(Adj)(N) δαίLμοiνεςi(N) ἐLστὲi(Prä)(M/P) φίiλαιL(Adj)(N);|
+(86) Herrin; solche Göttinnen seid|ihr liebe;
+(87) ὄμLμαiτάi(A) μοιL(Pr)(D) τῶL(Art)(G) παιLδὸςi(G) ἀiφείLλεiοi(Aor)(M/P). τέLκνονi(V) ἄiλαLστεL(Adj)(V),|
+(87) Augen mir des Kindes nahmst|weg. Kind verfluchtes,
+(88) εἶLδεςi(AorS)(Akt) ἈiθαLναίLαςL(G) στήLθεiαi(A) καὶL(Kon) λαiγόiναςL(A),|
+(88) sahst der|Athena Brüste und Flanken,
+(89) ἀλλL᾽(Kon) οὐκL(Pt) ἀLέiλιiονL(A) πάiλινi(Adv) ὄLψεiαιi(Fu)(M/P). ὦL(ij) ἐiμὲi(Pr)(A) δειLλάνL(Adj)(A),|
+(89) aber nicht Sonne wieder wirst|du|sehen. o mich Elende,
+(90) ὦL(ij) ὄiροςi(V), ὦL(ij) ἙiλιiκὼνL(V) οὐLκέiτιi(Adv) μοιL(Pr)(D) παiριiτέL(Prä)(Akt)(Imv),|
+(90) o Berg, o Helikon nicht|mehr mir verzeiht,
+(91) ἦL(Pt) μεiγάλi᾽(Adj)(A) ἀντL᾽(Prp) ὀiλίiγωνL(Adj)(G) ἐLπράLξαiοi(Aor)(Med)· δόρLκαςi(A) ὀiλέσLσαςL(Aor)(Akt)(N)|
+(91) ja groß statt geringem hast|du|vollbracht· Gazellen vernichtet|habend
+(92) καὶL(Kon) πρόiκαςi(A) οὐL(Pt) πολLλὰςL(Adj)(A) φάLεiαi(A) παιLδὸςi(G) ἔiχειςL(Prä)(Akt)."|
+(92) und Gämsen nicht viele Lichter des|Kindes hast."
+(93) ἆL(ij) καὶi(Kon) ἅμi᾽(Adv) ἀμLφοiτέiραιLσιi(Adj)(D) φίiλονL(Adj)(A) πεiρὶi(Prp) παῖLδαi(A) λαiβοῖLσαL(Aor)(Akt)(N)|
+(93) ach und zugleich den|beiden lieb um Kind ergriffen|habend
+(94) μάLτηρL(N) μὲνL(Pt) γοiεiρᾶνL(Adj)(G) οἶLτονi(A) ἀiηLδοiνίiδωνL(G)|
+(94) Mutter zwar wehmütiger Klaglied der|Nachtigallen
+(95) ἆLγεi(Imp)(Akt) βαiρὺL(Adv) κλαίLοιLσαi(Prä)(Akt)(N), θεiὰL(N) δ᾽(Pt) ἐiλέiηLσενi(Aor)(Akt) ἑiταίLρανL(A)|
+(95) führte schwer weinend, die|Göttin aber erbarmte Gefährtin
+(96) καίL(Kon) νινi(Pr)(A) ἈiθαLναίLαL(N) πρὸςL(Prp) τόδi᾽(Pr)(A) ἔiλεLξενi(Aor)(Akt) ἔiποςL(A)|
+(96) und sie Athene zu diesem sagte Wort
+(97) "δῖLαi(Adj)(V) γύiναιL(V), μεiτὰi(Prp) πάνLταi(Adj)(A) βαiλεῦL(Aor)(Akt)(Imv) πάiλινi(Adv) ὅσLσαi(Pr)(A) διi᾽(Prp) ὀρLγὰνL(A)|
+(97) "edle Frau, nach allem wirf wieder was|auch|immer durch Zorn
+(98) εἶLπαςi(AorS)(Akt)· ἐiγὼL(Pr)(N) δ᾽(Pt) οὔL(Pt) τοιL(Pr)(D) τέLκνονi(A) ἔiθηκL᾽(AorS)(Akt) ἀiλαiόνL(Adj)(A).|
+(98) sagtest· ich aber nicht dir Kind setzte|ich blind.
+(99) οὐL(Pt) γὰρi(Pt) ἈiθαLναίLᾳL(D) γλυiκεiρὸνL(Adj)(N) πέiλειi(Prä)(M/P) ὄμLμαiταi(A) παίLδωνL(G)|
+(99) nicht denn der|Athena süß ist Augen der|Kinder
+(100) ἁρLπάLζεινL(Prä)(Inf)(Akt)· ΚρόiνιiοιL(Adj)(N) δ᾽(Pt) ὧLδεi(Adv) λέiγονLτιi(Prä)(Akt)(D) νόiμοιL(N)·|
+(100) zu|rauben· Kroniden aber so sagen Gesetze·
+(101) ὅςL(Pr)(N) κεi(Pt) τινi᾽(Pr)(A) ἀLθαiνάiτωνL(Adj)(G), ὅiκαi(Kon) μὴL(Pt) θεiὸςi(N) αὐLτὸςi(Adj)(N) ἕiληLταιL(Aor)(Med)(Knj),|
+(101) wer ja irgendeinen der|Unsterblichen, wenn nicht Gott selbst wähle,
+(102) ἀLθρήLσῃL(Aor)(Akt)(Knj), μιLσθῶL(D) τοῦLτονi(Pr)(A) ἰiδεῖνL(AorS)(Inf)(Akt) μεiγάiλωL(Adj)(D).|
+(102) erblicke, mit|Strafe diesen zu|sehen groß.
+(103) δῖLαi(Adj)(V) γύiναιL(V), τὸi(Art)(N) μὲνi(Pt) οὐL(Pt) παiλιiνάLγρεiτονi(Adj)(N) αὖLθιi(Adv) γέiνοιLτοL(Aor)(Med)(Op)|
+(103) edle Frau, dies zwar nicht zurück|fangbar hier würde|werden
+(104) ἔρLγονi(N)· ἐiπεὶL(Kon) μοιLρᾶνL(G) ὧδL᾽(Adv) ἐiπέiνηLσεi(Aor)(Akt) λίiναL(A),|
+(104) Werk· da der|Moiren so spann Fäden,
+(105) ἁLνίiκαi(Adv) τὸL(Art)(A) πρᾶLτόνL(Adj)(A) νινi(Pr)(A) ἐiγείLναiοi(Aor)(Med)· νῦνL(Adv) δὲi(Pt) κοiμίLζευL(Prä)(M/P)(Imv),|
+(105) wann das erste ihn gebarst|du· nun aber betreue,
+(106) ὦL(ij) ΕὐLηLρείLδαL(V), τέλLθοςi(A) ὀiφειLλόiμεiνονL(Per)(M/P)(A).|
+(106) o Eueres|Sohn, Lohn geschuldet.
+(107) πόσLσαi(Pr)(A) μὲνi(Pt) ἁL(Art)(N) ΚαδLμηLὶςi(Adj)(N) ἐςi(Prp) ὕLστεiρονi(Adv) ἔμLπυiραi(A) καυLσεῖL(Fu)(Akt),|
+(107) wie|viele zwar die Kadmeische nach später Opfer|brände wird|brennen,
+(108) τόσLσαi(Pr)(A) δ᾽(Pt) ἈiριLσταῖLοςL(N), τὸνL(Art)(A) μόiνονi(Adj)(A) εὐLχόiμεiνοιL(Prä)(M/P)(N)|
+(108) so|viele aber Aristaeus, den allein betend
+(109) παῖLδαi(A), τὸνi(Art)(A) ἁLβαiτὰνi(Adj)(A) ἈLκταίLοLναL(A), τυLφλὸνi(Adj)(A) ἰiδέLσθαιL(AorS)(M/P)(Inf).|
+(109) Kind, den un|betretbaren Aktäon, blind zu|sehen.
+(110) καὶL(Kon) τῆLνοςL(Pr)(N) μεiγάiλαςL(Adj)(G) σύνLδροiμοςi(N) ἈρLτέiμιiδοςL(G)|
+(110) und jener der|großen Mit|läufer der|Artemis
+(111) ἐσLσεῖτL᾽(Fu)(M/P)· ἀλλL᾽(Kon) οὐκL(Pt) αὐLτὸνi(Pr)(A) ὅi(Pr)(N) τεL(Pt) δρόiμοςi(N) αἵL(Pr)(N) τ᾽(Pt) ἐνi(Prp) ὄiρεσLσιL(D)|
+(111) wird|sein· aber nicht ihn sowohl auch Lauf die und in Bergen
+(112) ῥυLσεῦνLταιL(Fu)(M/P) ξυLναὶL(Adj)(N) τᾶLμοςi(Adv) ἑiκαLβοiλίiαιL(N),|
+(112) werden|retten gemeinsam dann Fern|schüsse,
+(113) ὁπLπόκi᾽(Kon) ἂνi(Pt) οὐκL(Pt) ἐiθέiλωνL(Prä)(Akt)(N) περi(Pt) ἴiδῃL(AorS)(Akt)(Knj) χαiρίiενLταi(Adj)(A) λοiεLτρὰL(A)|
+(113) sobald wohl nicht willend doch erblicke reizende Bäder
+(114) δαίLμοiνοςi(G)· ἀλλL᾽(Kon) αὐLταὶL(Pr)(N) τὸνL(Art)(A) πρὶνi(Adv) ἄiναLκταi(A) κύiνεςL(N)|
+(114) der|Göttin· sondern selbst den früher Herrn Hunde
+(115) τουLτάiκιi(Adv) δειLπνηLσεῦνLτιi(Prä)(M/P)(D)· τὰi(Art)(A) δ᾽(Pt) υἱLέiοςi(G) ὀLστέiαi(A) μάLτηρL(N)|
+(115) damals zum|Speisen· die aber des|Sohnes Knochen Mutter
+(116) λεLξεῖLταιL(Fu)(M/P) δρυLμὼςL(N) πάνLταςi(Adj)(A) ἐiπερLχοiμέiναL(Prä)(M/P)(A)·|
+(116) wird|auf|lesen Hain alle vorüber|gehend·
+(117) ὀλLβίLστανL(Adj)(A)(Sup) ἐiρέiειL(Fu)(Akt) σεi(Pr)(A) καὶi(Kon) εὐLαίLωLναi(Adj)(A) γεiνέLσθαιL(AorS)(M/P)(Inf),|
+(117) selig|ste wird|sagen dich und glück|selig geworden|zu|sein,
+(118) ἐξL(Prp) ὀiρέiωνL(G) ἀiλαiὸνL(Adj)(A) παῖδL᾽(A) ὑiποiδεLξαiμέiνανL(Aor)(M/P)(A).|
+(118) aus Bergen blind Kind empfangen|habend.
+(119) ὦL(ij) ἑiτάiραL(V), τῶL(Adv) μήL(Pt) τιi(Pr) μιiνύLρεiοi(Prä)(M/P)(Imv)· τῷLδεi(Pr)(D) γὰρi(Pt) ἄλLλαL(Adj)(A)|
+(119) o Gefährtin, darum nicht etwas klage· diesem denn weitere
+(120) τεῦL(Pr)(G) χάiρινi(A) ἐξL(Prp) ἐiμέiθενL(Pr)(G) πολLλὰi(Adj)(A) μεiνεῦνLτιi(Fu)(Akt)(D) γέiραL(A).|
+(120) dessen wegen aus mir viele bleibendem Ehren|gaben.
+(121) μάνLτινi(A) ἐiπεὶL(Kon) θηLσῶL(Fu)(Akt) νινi(Pr)(A) ἀiοίLδιiμονi(Adj)(A) ἐσLσοiμέiνοιLσινL(Per)(M/P)(D),|
+(121) Seher da werde|ich|setzen ihn besing|bar den|Künftigen,
+(122) ἦL(Pt) μέiγαi(Adj)(N) τῶνL(Art)(G) ἄλLλωνL(Adj)(G) δήL(Pt) τιi(Pr) πεiρισLσόiτεiρονL(Adj)(N).|
+(122) wahrlich groß der|anderen übrigen ja etwas mehr.
+(123) γνωLσεῖLταιL(Fu)(M/P) δ᾽(Pt) ὄρLνιLχαςi(A), ὅςi(Pr)(N) αἴLσιiοςi(Adj)(N) οἵL(Pr)(N) τεi(Pt) πέiτονLταιL(Prä)(M/P)|
+(123) wird|erkennen aber Vögel, welcher günstig die und fliegen
+(124) ἤLλιiθαi(Adv) καὶL(Kon) ποίLωνL(Pr)(G) οὐκL(Pt) ἀiγαiθαὶL(Adj)(N) πτέiρυiγεςL(N).|
+(124) fehl und welcher nicht gut Flügel.
+(125) πολLλὰi(Adj)(A) δὲi(Pt) ΒοιLωLτοῖLσιi(D) θεiοLπρόiπαi(A), πολLλὰi(Adj)(A) δὲi(Pt) ΚάδLμῳL(D)|
+(125) vieles aber den|Böotern göttliche|Aussprüche, vieles aber dem|Kadmos
+(126) χρηLσεῖL(Fu)(Akt), καὶL(Kon) μεiγάiλοιςL(Adj)(D) ὕLστεiραi(Adv) ΛαLβδαiκίiδαιςL(D).|
+(126) wird|orakeln, und den|Großen später den|Labdakiden.
+(127) δωLσῶL(Fu)(Akt) καὶL(Kon) μέiγαi(Adj)(A) βάLκτρονi(A), ὅi(Pr)(N) οἱL(Pr)(D) πόiδαςi(A) ἐςL(Prp) δέiονi(A) ἀLξεῖL(Fu)(Akt),|
+(127) ich|werde|geben auch groß Stab, der ihm Füße zu Nötigem führen|wird,
+(128) δωLσῶL(Fu)(Akt) καὶL(Kon) βιiόiτωL(D) τέρLμαi(A) ποiλυLχρόiνιiονL(Adj)(A).|
+(128) ich|werde|geben auch dem|Leben Ziel lang|dauernd.
+(129) καὶL(Kon) μόiνοςi(Adj)(N), εὖLτεi(Kon) θάiνῃL(AorS)(Akt)(Knj), πεLπνυLμέiνοςi(Per)(M/P)(N) ἐνL(Prp) νεiκύiεσLσιL(D)|
+(129) und allein, sobald sterbe, verständig unter den|Toten
+(130) φοιLταLσεῖL(Fu)(Akt), μεiγάiλωιL(Adj)(D) τίLμιiοςi(Adj)(N) ἉLγεiσίiλᾳL(D)."|
+(130) wird|umhergehen, dem|Großen geehrt bei|Hagesilas."
+(131) ὥςL(Kon) φαiμέiναL(Aor)(M/P)(N) καiτέiνευLσεi(Aor)(Akt)· τὸi(Art)(N) δ᾽(Pt) ἐνLτεiλὲςi(Adj)(N) ᾧL(Pr)(D) κ᾽(Pt) ἔiπιi(Prp) νεύLσῃL(Aor)(Akt)(Knj)|
+(131) so gesagt|habend nickte· das aber vollendet dem ja darauf nicke
+(132) ΠαλLλάςi(N), ἐiπεὶL(Kon) μώLνᾳL(Adj)(D) ΖεὺςL(N) τόi(Art)(N) γεi(Pt) θυLγαiτέiρωνL(G)|
+(132) Pallas, da allein Zeus dies ja der|Töchter
+(133) δῶLκενi(Aor)(Akt) ἈiθαLναίLᾳL(D), παLτρώLιiαi(Adj)(A) πάνLταi(Adj)(A) φέiρεLσθαιL(Prä)(M/P)(Inf),|
+(133) gab der|Athene, väterliche alle zu|tragen,
+(134) λωLτροiχόiοιL(V), μάLτηρL(N) δ᾽(Pt) οὔLτιςi(Pr)(N) ἔiτιLκτεi(Imp)(Akt) θεiάνL(A),|
+(134) Bad|trägerinnen, Mutter aber niemand gebar Göttin,
+(135) ἀλLλὰi(Kon) ΔιiὸςL(G) κοiρυiφάL(N). κοiρυiφὰL(N) Διiὸςi(G) οὐκL(Pt) ἐiπιiνεύLειL(Prä)(Akt)|
+(135) sondern des|Zeus Gipfel. Gipfel des|Zeus nicht nickt|zu
+(136) ψεύLδεiαi(A) κοὐLδὲi(Pt) ΔιiὸςL(G) ψεύLδετi(Prä)(M/P) αιi(Pt) ἁL(Art)(N) θυiγάiτηρL(N).|
+(136) Lügen und|nicht|einmal des|Zeus lüg t die Tochter.
+(137) ἔρLχετi᾽(Prä)(M/P)(Imv) ἈiθαLναίLαL(V) νῦνL(Adv) ἀLτρεiκέςi(Adj)(N)· ἀλLλὰi(Kon) δέiχεLσθεL(Prä)(M/P)(Imv)|
+(137) kommt Athene jetzt wahr· aber empfangt
+(138) τὰνL(Art)(A) θεiόνi(A), ὦL(ij) κῶLραιL(V) τὦρLγονi(N) ὅiσαιςL(Pr)(D) μέiλεiταιL(Prä)(M/P),|
+(138) die Göttin, o Mädchen das|Werk welchen liegt|am|Herzen,
+(139) σύνL(Prp) τ᾽(Pt) εὐLαLγοiρίiᾳL(D) σύνL(Prp) τ᾽(Pt) εὔγLμαiσιi(D) σύνL(Prp) τ᾽(Pt) ὀiλοiλυLγαῖςL(D).|
+(139) mit und heilig|er|Rede mit und guten|Gebeten mit und Jauchz|rufen.
+(140) χαῖLρεi(Prä)(Akt)(Imv) θεiάL(N), κάLδευL(Aor)(Akt)(Imv) δ᾽(Pt) ἌρLγεiοςi(G) ἸLναiχίiωL(Adj)(D).|
+(140) sei|gegrüßt Göttin, gieße aber des|Argos inachischem.
+(141) χαῖLρεi(Prä)(Akt)(Imv) καὶi(Kon) ἐLξεiλάiοιLσαi(Aor)(Akt)(N), καὶi(Kon) ἐςL(Prp) πάiλινi(Adv) αὖLτιςi(Adv) ἐiλάσLσαιςL(Aor)(Akt)(Knj)|
+(141) sei|gegrüßt und heraus|getrieben|habend, und zu wieder nochmals mögest|treiben
+(142) ἵπLπωςL(Adv), καὶL(Kon) ΔαiναiῶνL(G) κλᾶLρονi(A) ἅiπανLταi(Adj)(A) σάiωL(Prä)(Akt)(Imv).|
+(142) mit|Pferden, und der|Danaer Anteil ganzen schütze.
+=== Gedicht 6 ===
+== εἰς Δημήτρα ==
+(1) τῶL(Art)(D) καiλάi|θωL(D) καiτιi|όνLτοςi(Prä)(Akt)(G) ἐi|πιLφθέγL|ξαLσθεi(Aor)(M/P)(Imv), γυi|ναῖLκεςL(V),|
+(1) dem Korb herab|kommend ruft|aus, Frauen,
+(2) "ΔάLμαL|τερL(V) μέiγαi(Adv) |χαῖLρεi(Prä)(Akt)(Imv) ποi|λυLτρόiφεi(Adj)(V) |πουLλυiμέi|διLμνεL(Adj)(V)."|
+(2) "Demeter groß sei|gegrüßt viel|nährend viel|ratend."
+(3) τὸνL(Art)(A) κάiλαi|θονL(A) καiτιi|όνLταi(Prä)(Akt)(A) χαi|μαὶL(Adv) θαL|σεῖLσθεi(Fu)(M/P) βέi|βαLλοιL(N),|
+(3) den Korb herab|gehend zu|Boden werdet|schweigen Profane,
+(4) μηδL᾽(Kon) ἀiπὸi(Prp) |τῶL(Art)(G) τέiγεi|οςL(G) μηδL᾽(Kon) |ὑLψόiθενi(Adv) |αὐLγάσL|σηLσθεL(Prä)(M/P)(Imv)|
+(4) noch von dem Dache noch von|oben späht
+(5) μὴL(Pt) παῖςL(N) |μηLδὲi(Kon) γυi|νὰL(N) μηδL᾽(Kon) |ἃL(Pr)(N) καiτεi|χεύLαiτοi(Imp)(M/P) |χαίLτανL(A),|
+(5) nicht Kind noch Frau noch die ließ|herab Haar,
+(6) μηδL᾽(Kon) ὅκi᾽(Kon) ἀφi᾽(Prp) |αὑLαiλέi|ωνL(Adj)(G) στοiμάi|τωνL(G) πτύL|ωLμεςi(Prä)(Akt)(Knj) ἄi|παLστοιL(Adj)(N).|
+(6) noch wenn von trocknen Mündern wir|spucken ungegessen.
+(7) ἕLσπεiροςi(N) |ἐκL(Prp) νεiφέi|ωνL(G) ἐL|σκέLψαiτοi(Aor)(M/P) |παLνίiκαi(Adv) |νεῖLταιL(Prä)(M/P),|
+(7) Abendstern aus Wolken schaute sooft geht,
+(8) ἕLσπεiροςi(N), |ὅσLτεi(Pr)(N) πιi|εῖνL(AorS)(Inf)(Akt) Δαiμάi|τεLραL(A) |μῶLνοςi(Adj)(N) ἔi|πειLσενL(Aor)(Akt),|
+(8) Abendstern, der zu|trinken Demeter allein überredete,
+(9) ἁρLπαiγίi|μαςL(A) ὅκi᾽(Kon) ἄi|πυLσταi(Adj)(A) μεi|τέLστιiχενi(Aor)(Akt) |ἴχLνιiαi(A) |κώLραςL(G).|
+(9) Raub|taten wenn unkundige verfolgte Spuren des|Mädchens.
+(10) πότLνιiαi(V), |πῶςL(Adv) σεi(Pr)(A) δύi|νανLτοi(Imp)(M/P) πόi|δεςL(N) φέiρενi(Prä)(Inf)(Akt) |ἔστL᾽(Kon) ἐiπὶi(Prp) |δυθLμάςL(A),|
+(10) Herrin, wie dich vermochten Füße tragen bis auf Dämmerungen,
+(11) ἔστL᾽(Kon) ἐiπὶi(Prp) |τὼςL(Art)(A) μέiλαi|ναςL(Adj)(A) καὶi(Kon) ὅi|παL(Adv) τὰL(Art)(A) |χρύLσεiαi(Adj)(A) |μᾶLλαL(A);|
+(11) bis auf die schwarzen und wo die goldenen Äpfel;
+(12) οὐL(Pt) πίiεςi(Aor)(Akt) |οὔτL᾽(Kon)(Pt) ἄρi᾽(Pt) ἔi|δεςL(Aor)(Akt) τῆL|νονL(Pr)(A) χρόiνονi(A) |οὐLδὲi(Kon) λοi|έσLσαL(Aor)(Akt).|
+(12) nicht trankst weder ja aßest jene Zeit und|nicht badetest.
+(13) τρὶςL(Adv) μὲνL(Pt) |δὴL(Pt) διiέi|βαςL(AorS)(Akt)(N) Ἀiχεi|λώLιiονi(A) |ἀρLγυiροi|δίLνανL(Adj)(A),|
+(13) dreimal zwar ja überquert|habend den|Achelous silber|wirbelnd,
+(14) τοσLσάiκιi(Adv) |δ᾽(Pt) ἀLεiνάi|ωνL(Adj)(G) ποiταi|μῶνL(G) ἐiπέi|ραLσαςi(Aor)(Akt) ἕi|καLστονL(Adj)(A),|
+(14) so|oft aber der|immer|fließenden Flüsse überschrittst jeden,
+(15) τρὶςL(Adv) δ᾽(Pt) ἐiπὶi(Prp) |ΚαλLλιiχόi|ρῳL(D) χαiμάi|διςL(Adv) ἐiκαi|θίσLσαiοi(Aor)(Med) |φρηLτίL(D)|
+(15) dreimal aber auf Kallichoros zum|Boden setztest|dich im|Sinn
+(16) αὐLσταiλέi|αL(Adj)(A) ἄiποi|τόςL(Adj)(A) τεi(Pt) καὶi(Kon) |οὐL(Pt) φάiγεςi(Aor)(Akt) |οὐLδὲi(Kon) λοi|έσLσαL(Aor)(Akt).|
+(16) trocken un|getrunken und auch nicht aßest und|nicht badetest.
+(17) μὴL(Pt) μὴL(Pt) |ταῦLταi(Pr)(A) λέi|γωLμεςi(Prä)(Akt)(Knj) ἃi(Pr)(A) |δάLκρυiονi(A) |ἄLγαiγεi(AorS)(Akt) |ΔηLοῖL(D)·|
+(17) nicht nicht dieses reden|wir was Träne brachte der|Demeter·
+(18) κάλLλιiονi(Adv), |ὡςL(Kon) ποiλίi|εσLσινi(D) ἑi|αLδόiταi(Per)(Akt)(A) |τέθLμιiαi(A) |δῶLκεL(AorS)(Akt)·|
+(18) besser, wie den|Städten gefallen|habende Satzungen gab·
+(19) κάλLλιiονi(Adv), |ὡςL(Kon) καiλάi|μανL(A) τεi(Pt) καὶi(Kon) |ἱLεiρὰi(Adj)(A) |δράγLμαiταi(A) |πράLταL(Adj)(A)|
+(19) besser, wie Halm und auch heilige Garben erste
+(20) ἀLσταiχύi|ωνL(G) ἀiπέi|κοLψεi(Aor)(Akt) καὶi(Kon) |ἐνL(Prp) βόiαςi(A) |ἧLκεi(AorS)(Akt) παi|τῆLσαιL(Aor)(Inf)(Akt),|
+(20) der|Ähren schnitt|ab und in Rinder ließ treten,
+(21) ἁLνίiκαi(Kon) |ΤριLπτόiλεi|μοςL(N) ἀiγαi|θὰνL(Adj)(A) ἐiδιi|δάLσκεiτοi(Imp)(M/P) |τέχLνανL(A)·|
+(21) als Triptolemos gute lernte Kunst·
+(22) κάλLλιiονi(Adv), |ὡςL(Kon), ἵiναi(Kon) |καίL(Kon) τιςi(Pr)(N) ὑi|περLβαiσίi|αςL(A) ἀiλέi|ηLταιL(Prä)(M/P)(Knj),|
+(22) besser, wie, damit auch irgend|einer Übertretungen meide,
+(23) πLi(Pt) .. . ἰi|δέL|σθαιL(Aor)(Med)(Inf)|
+(23) p .. . zu|sehen
+(24) οὔLπωL(Adv) |τὰνL(Art)(A) Κνιiδίi|ανL(Adj)(A), ἔiτιi(Adv) |ΔώLτιiονi(Adj)(A) |ἱLρὸνi(Adj)(A) ἔi|ναιLονL(Imp)(Akt),|
+(24) noch|nicht die Knidische, noch dotion|isches heiliges wohnten,
+(25) τὶνL(Art)(A) δ᾽(Pt) αὐL|τᾷL(Pr)(D) καiλὸνi(Adj)(A) |ἄλLσοςi(A) ἐi|ποιLήL|σανLτοi(Aor)(M/P) Πεi|λασLγοὶL(N)|
+(25) die aber ihr|selbst schönen Hain schufen Pelasger
+(26) δένLδρεiσινi(D) |ἀμLφιiλαi|έςL(Adj)(N)· διiάi(Prp) |κενL(Pt) μόiλιςi(Adv) |ἦνLθενi(Imp)(Akt) ὀi|ιLστόςL(N)·|
+(26) mit|Bäumen rings|bewaldet· durch wohl kaum ging Pfeil·
+(27) ἐνL(Prp) πίiτυςi(N), |ἐνL(Prp) μεiγάi|λαιL(Adj)(N) πτεiλέi|αιL(N) ἔiσανi(Imp)(Akt), |ἐνL(Prp) δὲi(Pt) καὶi(Kon) |ὄχLναιL(N),|
+(27) in Kiefer, in große Ulmen waren, in aber auch Birnbäume,
+(28) ἐνL(Prp) δὲi(Pt) καi|λὰL(Adj)(N) γλυiκύi|μαLλαi(N)· τὸi(Art)(N) |δ᾽(Pt) ὥστL᾽(Kon) ἀL|λέLκτριiνονi(Adj)(A) |ὕLδωρL(A)|
+(28) in aber schöne Süß|äpfel· das aber wie morgen|früh Wasser
+(29) ἐξL(Prp) ἀiμαi|ρᾶνL(G) ἀiνέi|θυLεi(Imp)(Akt). θεi|ὰL(N) δ᾽(Pt) ἐiπεi|μαίLνεiτοi(Imp)(M/P) |χώLρῳL(D)|
+(29) aus Zisternen sprudelte|auf. die|Göttin aber liebte am|Ort
+(30) ὅσLσονi(Pr)(A) Ἐi|λευLσῖL|νιL(D), Τριiόi|πῳL(D) θ᾽(Pt) ὅiσονi(Pr)(A), |ὁκLκόiσονi(Pr)(A) |ἜνLνᾳL(D).|
+(30) so|viel bei|Eleusis, bei|Triopos und so|viel, wie|viel bei|Enna.
+(31) ἀλλL᾽(Kon) ὅiκαi(Kon) |ΤριLοiπίi|δαιLσινi(D) ὁi(Art)(N) |δεLξιiὸςi(Adj)(N) |ἄχLθεiτοi(Imp)(M/P) |δαίLμωνL(N),|
+(31) aber als bei|den|Triopiden der rechte zürnte Gott,
+(32) τουLτάiκιςi(Adv) |ἁL(Art)(N) χείL|ρωνL(Adj)(N)(Kmp) Ἐiρυi|σίχLθοiνοςi(G) |ἅLψαiτοi(Aor)(Med) |βωLλάL(A)·|
+(32) damals|gleich die schlechtere des|Erysichthon berührte Schollen·
+(33) σεύLατi᾽(Aor)(M/P) ἔi|χωνL(Prä)(Akt)(N) θεiράi|πονLταςi(A) ἐi|είLκοiσιi(Adj)(A), |πάνLταςi(Adj)(A) ἐνi(Prp) |ἀκLμᾷL(D),|
+(33) eilte haltend Diener zwanzig, alle in Blüte,
+(34) πάνLταςL(Adj)(A) |δ᾽(Pt) ἀνLδροiγίi|γανLταςi(A) ὅi|λανL(Adj)(A) πόiλινi(A) |ἀρLκίiοςi(Adj)(N) |ἆLραιL(Aor)(Inf)(Akt),|
+(34) alle aber Männer|riesen ganze Stadt hinreichend zu|heben,
+(35) ἀμLφόiτεi|ρονL(Adv) πεiλέi|κεσLσιi(D) καὶi(Kon) |ἀLξίL|ναιLσινi(D) ὁi|πλίσLσαςL(Aor)(Akt)(N),|
+(35) sowohl mit|Beilen und mit|Äxten gerüstet|habend,
+(36) ἐςL(Prp) δὲi(Pt) τὸi(Art)(A) |ΔάLμαL|τροςL(G) ἀL|ναιLδέiεςi(Adj)(N) |ἔLδραiμονi(Aor)(Akt) |ἄλLσοςL(A).|
+(36) in aber das der|Demeter freche rannten Hain.
+(37) ἦςL(Imp)(Akt) δέi(Pt) τιςi(Pr)(N) |αἴLγειL|ροςL(N), μέiγαi(Adj)(N) |δένLδρεiονi(Adj)(N) |αἰLθέiριi(D) |κῦLρονL(N),|
+(37) war aber ein Schwarzpappel, groß Baum im|Äther Wipfel,
+(38) τῷL(Pr)(D) δ᾽(Pt) ἔiπιi(Prp) |ταὶL(Art)(N) νύμL|φαιL(N) ποiτὶi(Prp) |τὤνLδιiονi(A) |ἑLψιiόi|ωνLτοL(Imp)(M/P),|
+(38) dar|auf aber auf die Nymphen zu Mittag|mahl kochten,
+(39) ἃL(Pr)(N) πράL|ταL(Adj)(A) πλαL|γεῖLσαi(Aor)(Pas)(N) καi|κὸνL(Adj)(A) μέiλοςi(A) |ἴLαiχενi(Imp)(Akt) |ἄλLλαιςL(Adj)(D).|
+(39) welche zuerst geschlagen|worden|seiend schlecht|es Lied kreischte den|anderen.
+(40) ᾄLσθεiτοi(Imp)(M/P) |ΔαLμάL|τηρL(N), ὅiτιi(Kon) |οἱL(Pr)(D) ξύiλονi(N) |ἱLεiρὸνi(Adj)(N) |ἄλLγειL(Prä)(Akt),|
+(40) vernahm Demeter, dass ihr Holz heilig|es schmerzt,
+(41) εἶLπεi(AorS)(Akt) δὲi(Pt) |χωLσαiμέi|ναL(Aor)(M/P)(N) "τίςL(Pr)(N) |μοιL(Pr)(D) καiλὰi(Adj)(A) |δένLδρεiαi(A) |κόLπτειL(Prä)(Akt); "|
+(41) sprach aber zornig|geworden|seiend "wer mir schöne Bäume schlägt; "
+(42) αὐLτίiκαi(Adv) |ΝιLκίπL|πᾳL(D), τάνL(Art)(A) |οἱL(Pr)(D) πόiλιςi(N) |ἀLράL|τειLρανL(Adj)(A)|
+(42) sofort der|Nikippe, die ihr Stadt Fluch|löserin
+(43) δαLμοiσίi|ανL(Adj)(A) ἔL|σταLσανi(AorS)(Akt), ἐi|είLσαiτοi(Aor)(Med), |γένLτοi(Aor)(Med) δὲi(Pt) |χειLρὶL(D)|
+(43) öffentliche stellten, legte|an, nahm|sich aber mit|der|Hand
+(44) στέμLμαiταi(A) |καὶL(Kon) μάL|κωLναi(A), καi|τωLμαiδίi|ανL(Adj)(A) δ᾽(Pt) ἔiχεi(Prä)(Akt) |κλᾷLδαL(A).|
+(44) Kranz|gebinde und Mohn, frisch|gepflückt aber hielt Schlüssel.
+(45) φᾶL(Aor)(Akt) δὲi(Pt) παi|ραLψύL|χοιLσαi(Prä)(Akt)(N) καi|κὸνL(Adj)(A) καὶi(Kon) ἀi|ναιLδέiαi(Adj)(A) |φῶLταL(A)|
+(45) sprach aber besänftigend schlechten und frechen Mann
+(46) "τέLκνονi(V), ὅi|τιςL(Pr)(N) τὰi(Art)(A) θεi|οῖLσινi(D) ἀi|νειLμέiναi(Per)(M/P)(A) |δένLδρεiαi(A) |κόLπτειςL(Prä)(Akt),|
+(46) "Kind, wer die den|Göttern geweiht|seiend Bäume schlägst,
+(47) τέLκνονi(V) ἐi|λίLνυL|σονL(Aor)(Akt)(Imv), τέL|κνονL(V) ποiλύi|θεLστεi(Adj)(V) τοi|κεῦLσιL(D),|
+(47) Kind halte|ein, Kind viel|angefleht|er den|Eltern,
+(48) παύLεiοi(Prä)(M/P)(Imv) |καὶL(Kon) θεiράi|πονLταςi(A) ἀi|πόLτρεiπεi(Prä)(Akt)(Imv), |μήL(Pt) τιi(Pr)(N) χαi|λεLφθῇL(Aor)(Pas)(Knj)|
+(48) höre|auf und Diener ab|wende, nicht etwas zürne
+(49) πότLνιiαi(V) |ΔαLμάL|τηρL(N), τᾶςL(Art)(G) |ἱLεiρὸνi(Adj)(A) |ἐκLκεiραi|ΐLζειςL(Prä)(Akt)."|
+(49) Herrin Demeter, deren Heiligtum verwüstest."
+(50) τὰνL(Art)(A) δ᾽(Pt) ἄρi᾽(Pt) ὑi|ποLβλέL|ψαςL(Aor)(Akt)(N) χαiλεi|πώLτεiρονi(Adj)(A)(Kmp) |ἠLὲi(Kon) κυi|ναLγὸνL(A)|
+(50) die aber ja finster|anblickend härter oder Jäger
+(51) ὤLρεiσινi(D) |ἐνL(Prp) Τμαiρίi|οιLσινi(Adj)(D) ὑi|ποLβλέiπειi(Prä)(Akt) |ἄνLδραi(A) λέi|αιLναL(N)|
+(51) in|Bergen in tmarischen sieht|finster|an Mann Löwin
+(52) ὠLμοiτόi|κοςL(Adj)(N), τᾶςL(Pr)(G) |φανLτὶi(Prä)(Akt)(N) πέi|λεινL(Prä)(Inf)(Akt) βλοiσυi|ρώLταiτονi(Adj)(A)(Sup) |ὄμLμαL(A),|
+(52) roh|gebärend, deren sagt|man zu|sein finsterst|es Auge,
+(53) "χάLζευi(Prä)(Akt)(Imv)," ἔi|φαL(Aor)(Akt), "μήL(Pt) |τοιL(Pr)(D) πέiλεi|κυνL(A) μέiγανi(Adj)(A) |ἐνL(Prp) χροiΐi(D) |πάLξωL(Aor)(Akt)(Knj).|
+(53) "weich|zurück," sprach, "nicht dir Beil groß|es in Haut schlage.
+(54) ταῦLταi(Pr)(A) δ᾽(Pt) ἐi|μὸνL(Adj)(A) θηL|σεῖL(Fu)(Akt) στεiγαi|νὸνL(Adj)(A) δόiμονi(A), |ᾧL(Pr)(D) ἔiνιi(Prp) |δαῖLταςL(A)|
+(54) dieses aber meinen wirst|setzen dichten Bau, in|welchem in Gast|mähler
+(55) αἰLὲνi(Adv) ἐi|μοῖςL(Adj)(D) ἑiτάi|ροιLσινi(D) ἄi|δηνL(Adv) θυL|μαLρέiαςi(Adj)(A) |ἀLξῶL(Fu)(Akt)."|
+(55) immer meinen Gefährten satt herz|angenehme werde|bringen."
+(56) εἶLπενi(AorS)(Akt) ὁi(Art)(N) |παῖςL(N), Νέiμεi|σιςL(N) δὲi(Pt) καi|κὰνL(Adj)(A) ἐL|γράLψαiτοi(Aor)(Med) |φωLνάνL(A).|
+(56) sprach der Knabe, Nemesis aber übele zeichnete|ein Stimme.
+(57) ΔαLμάL|τηρL(N) δ᾽(Pt) ἄiφαi|τόνL(Adj)(A) τιi(Pr)(A) κοi|τέσLσαiτοi(Aor)(Med), |γείLναiτοi(Aor)(Med) |δ᾽(Pt) ἁL(Art)(N) θεύςL(N)·|
+(57) Demeter aber unaussprechlich|es etwas erzürnte|sich, zeugte|sie aber die Göttin·
+(58) ἴθLμαiταi(N) |μὲνL(Pt) χέρL|σωL(D), κεiφαi|λὰL(N) δέi(Pt) οἱi(Pr)(D) |ἅLψατi᾽(Aor)(Akt) Ὀi|λύμLπωL(D).|
+(58) Fuß|sohlen zwar auf|Erde, Kopf aber ihr berührte den|Olymp.
+(59) οἱL(Art)(N) μὲνi(Pt) ἄρi᾽(Pt) |ἡLμιL|θνῆLτεςi(Adj)(N), ἐi|πεὶL(Kon) τὰνL(Art)(A) |πότLνιiανi(A) |εἶLδονL(AorS)(Akt),|
+(59) die zwar ja halb|tot, als die Herrin sahen,
+(60) ἐLξαiπίi|ναςL(Adv) ἀiπόi|ρουLσανi(Aor)(Akt)(N) ἐi|νὶL(Prp) δρυiσὶi(D) |χαλLκὸνi(A) ἀi|φένLτεςL(Aor)(Akt)(N)·|
+(60) plötzlich weg|springend in Eichen Erz entlassend·
+(61) ἁL(Art)(N) δ᾽(Pt) ἄλL|λωςL(Adv) μὲνi(Pt) ἔi|αLσενi(Aor)(Akt), ἀi|ναγLκαίL|ᾳL(Adj)(D) γὰρi(Pt) ἕi|πονLτοL(Imp)(M/P)|
+(61) sie aber sonst zwar ließ, not|gedrungen denn folgten
+(62) δεLσποiτιi|κὰνL(Adj)(A) ὑiπὸi(Prp) |χεῖLραi(A), βαi|ρὺνL(Adj)(A) δ᾽(Pt) ἀiπαi|μείLψατi᾽(Aor)(Med) ἄi|ναLκταL(A)|
+(62) herrische unter Hand, schweren aber antwortete Herrn
+(63) "ναὶL(ij) ναίL(ij), |τεύLχεiοi(Prä)(M/P)(Imv) |δῶLμαi(A), κύi|ονL(V), κύiονi(V), |ᾧL(Pr)(D) ἔiνιi(Prp) |δαῖLταςL(A)|
+(63) "ja ja, bereite|dir Haus, Hund, Hund, in|welchem in Gast|mähler
+(64) ποιLηL|σεῖςL(Fu)(Akt)· θαiμιi|ναὶL(Adj)(N) γάρi(Pt) ἐςi(Prp) |ὕLστεiρονi(Adv) |εἰLλαiπίi|ναιL(N) τοιL(Pr)(D)."|
+(64) wirst|machen· häufige denn in später Gelage dir."
+(65) ἁL(Art)(N) μὲνL(Pt) |τόσσL᾽(Adj)(A) εἰL|ποῖσL᾽(Aor)(Akt)(N) Ἐiρυi|σίχLθοiνιi(D) |τεῦLχεi(Aor)(Akt) ποi|νηLράL(Adj)(A).|
+(65) sie zwar so|viel|es gesagt|habend dem|Erysichthon machte üble.
+(66) αὐLτίiκαi(Adv) |οἱL(Pr)(D) χαiλεi|πόνL(Adj)(A) τεi(Pt) καὶi(Kon) |ἄLγριiονi(Adj)(A) |ἔμLβαiλεi(AorS)(Akt) |λιLμὸνL(A)|
+(66) sofort ihm harten und auch wilden warf|hinein Hunger
+(67) αἴLθωL|ναL(Adj)(A) κραiτεi|ρόνL(Adj)(A), μεiγάi|λᾳL(Adj)(D) δ᾽(Pt) ἐL|στρεύLγεiτοi(Imp)(M/P) |νούLσῳL(D).|
+(67) glühenden starken, groß|er aber zehrte|sich von|Krankheit.
+(68) σχέτLλιiοςi(Adj)(N), |ὅσLσαi(Pr)(A) πάi|σαιLτοi(Aor)(M/P)(Op) τόi|σωνL(Pr)(G) ἔiχενi(Imp)(Akt) |ἵLμεiροςi(N) |αὖLτιςL(Adv).|
+(68) elend, wie|viele essen|möchte so|viel|er hatte Begierde wieder.
+(69) εἴLκαiτιi(Adv) |δαῖLταi(A) πέi|νονLτοi(Imp)(M/P), δυi|ώLδεiκαi(Adj)(A) |δ᾽(Pt) οἶLνονi(A) ἄi|φυσLσονL(Aor)(Akt)·|
+(69) zwanzig|fach Mahl bereiteten, zwölf aber Wein schöpften·
+(70) τόσLσαi(Adj)(A) Διi|ώLνυL|σονL(A) γὰρi(Pt) ἃi(Pr)(N) |καὶL(Kon) ΔάL|μαLτραi(A) χαi|λέLπτελL(Imp)(Akt)·|
+(70) so|viele Dionysos denn was auch Demeter verärgerten·
+(71) καὶL(Kon) γὰρL(Pt) |τᾷL(Art)(D) ΔάL|μαLτριi(D) συi|νωρLγίL|σθηL(Aor)(M/P) Διiόi|νυLσοςL(N).|
+(71) auch denn der Demeter zürnte|mit Dionysos.
+(72) οὔLτεi(Kon) νινi(Pr)(A) |εἰςL(Prp) ἐiράi|νωςL(A) οὔL|τεL(Kon) ξυνL|δείLπνιiαi(A) |πέμLπονL(Imp)(Akt)|
+(72) weder ihn zu Beiträgen noch Gemeinschafts|mahle sandten
+(73) αἰLδόiμεi|νοιL(Prä)(M/P)(N) γοiνέi|εςL(N), προiχαi|νὰL(Adv) δ᾽(Pt) εὑL|ρίLσκεiτοi(Imp)(M/P) |πᾶLσαL(Adj)(N).|
+(73) sich|schämend Eltern, vor|der|Tür aber fand|sich jeder.
+(74) ἦνLθονi(AorS)(Akt) Ἰi|τωLνιiάi|δοςL(Adj)(G) νινi(Pr)(A) Ἀi|θαLναίL|αςL(Adj)(G) ἐπi᾽(Prp) ἄi|εLθλαL(A)|
+(74) kamen der|Itonischen ihn der|Athena zu Wettkämpfen
+(75) ὈρLμεiνίi|δαιL(N) καiλέi|ονLτεςi(Prä)(Akt)(N)· ἀπi᾽(Prp) |ὦνL(Pt) ἀρL|νήLσαiτοi(Aor)(Med) |μάLτηρL(N)|
+(75) die|Ormeniden rufend· von denen verweigerte Mutter
+(76) "οὐκL(Pt) ἔνL|δοιL(Adv), χθιL|ζὸςL(Adv) γὰρi(Pt) ἐi|πὶL(Prp) ΚρανL|νῶLναi(A) βέi|βαLκεL(Per)(Akt)|
+(76) "nicht daheim, gestern ja nach Krannon ist|gegangen
+(77) τέλLθοςi(A) ἀi|παιLτηL|σῶνL(Fu)(Akt)(N) ἑiκαi|τὸνL(Adj)(A) βόiαςi(A).|" ἦνLθεi(AorS)(Akt) Ποi|λυLξώL(N),|
+(77) Preis ein|zufordern hundert Kühe." kam Polyxo,
+(78) μάLτηρL(N) |ἈLκτοiρίi|ωLνοςi(G), ἐi|πεὶL(Kon) γάiμονi(A) |ἄρLτυiεi(Imp)(Akt) |παιLδίL(D),|
+(78) Mutter des|Aktorion, da Hochzeit bereitete dem|Kind,
+(79) ἀμLφόiτεi|ρονL(Adv) Τριiόi|πανL(A) τεi(Pt) καὶi(Kon) |υἱLέiαi(A) |κιLκλήL|σκοιLσαL(Prä)(Akt)(N).|
+(79) beide den|Triopas und auch den|Sohn rufend.
+(80) τὰνL(Art)(A) δὲi(Pt) γυi|νὰL(N) βαiρύi|θυLμοςi(Adj)(N) ἀi|μείLβεiτοi(Imp)(M/P) |δάLκρυi(A) χέi|οιLσαL(Prä)(Akt)(N)|
+(80) jene aber Frau schwer|mütig erwiderte Träne gießend
+(81) "νεῖLταίL(Prä)(M/P) |τοιL(Pt) Τριiόi|παςL(N), Ἐiρυi|σίχLθοiναi(A) |δ᾽(Pt) ἤLλαiσεi(Aor)(Akt) |κάLπροςL(N)|
+(81) "fort|ist ja Triopas, Erysichthon aber trieb ein|Keiler
+(82) ΠίνLδονi(A) ἀνi᾽(Prp) |εὐLάγL|κειLανi(A), ὁi(Art)(N) |δ᾽(Pt) ἐνLνέiαi(Adj)(A) |φάLεiαi(A) |κεῖLταιL(Prä)(M/P)."|
+(82) den|Pindos hin|auf durch|Eng|pass, er aber neun Tage liegt."
+(83) δειLλαίL|αL(Adj)(V) φιiλόi|τεLκνεi(Adj)(V), τίi(Pr)(N) |δ᾽(Pt) οὐκL(Pt) ἐL|ψεύLσαiοi(Aor)(M/P), |μᾶLτερL(V);|
+(83) Elende kinder|lieb, warum denn nicht belog|st|du, Mutter;
+(84) δαίLνυiενi(Imp)(Akt) |εἰLλαiπίi|νανL(A) τιςi(Pr)(N)· "ἐνi(Prp) |ἀλLλοiτρίi|οιςL(Adj)(D) Ἐiρυi|σίχLθωνL(N)."|
+(84) schmauste Fest|mahl jemand· "in fremden|Häusern Erysichthon."
+(85) ἄLγεiτόi(Imp)(M/P) |τιςL(Pr)(N) νύμL|φανL(A)· "Ἐiρυi|σίχLθοiναi(A) |δίLσκοςi(N) ἔi|τυLψενL(Aor)(Akt),"|
+(85) führte jemand Braut· "Erysichthon ein|Diskus traf,"
+(86) ἢL(Kon) "ἔiπεσi᾽(AorS)(Akt) |ἐξL(Prp) ἵπL|πωνL(G)," ἢi(Kon) "ἐνi(Prp) |ὌLθρυiϊi|ποίLμνιi᾽(D) ἀi|μιLθρεῖL(Prä)(Akt)."|
+(86) oder "fiel von Pferden," oder "in Othrys|Herden ringt."
+(87) ἐνLδόiμυi|χοςL(Adj)(N) δἤL|πειLταi(Pt)(Adv) παi|νάLμεiροςi(Adj)(N) |εἰLλαiπιi|ναLστὰςL(A)|
+(87) innen|im|Haus aber|hernach ganzen|Tag Schmausende
+(88) ἤLσθιiεi(Imp)(Akt) |μυLρίiαi(Adj)(A) |πάνLταi(Adj)(A)· καi|κὰL(Adj)(A) δ᾽(Pt) ἐL|ξάλLλεiτοi(Aor)(M/P) |γαLστὴρL(N)|
+(88) aß Myriaden alles· Übles aber sprang|heraus der|Bauch
+(89) αἰLεὶL(Adv) |μᾶλLλονi(Adv) ἔi|δονLτιi(Prä)(Akt)(D), τὰi(Art)(A) |δ᾽(Pt) ἐςL(Prp) βυiθὸνi(A) |οἷLαi(Pr)(A) θαi|λάσLσαςL(G)|
+(89) immer mehr essend|dem, die aber in den|Grund wie des|Meeres
+(90) ἀLλεiμάi|τωςL(Adv) ἀiχάi|ριLσταi(Adv) καi|τέρLρεiενi(Imp)(Akt) |εἴLδαiταi(N) |πάνLταL(Adj)(N).|
+(90) ungekocht undankbar flossen|hinab die|Wässer alle.
+(91) ὡςL(Kon) δὲi(Pt) Μίi|μανLτιi(D) χιi|ώνL(N), ὡςL(Kon) |ἀLεiλίi|ῳL(D) ἔiνιi(Prp) |πλαγLγώνL(N),|
+(91) wie aber auf|Mimas Schnee, wie in der|Sonne Puppe,
+(92) καὶL(Kon) τούL|τωνL(Pr)(G) ἔiτιi(Adv) |μεῖLζονi(Adj)(A)(Kmp) ἐi|τάLκεiτοi(Aor)(M/P) |μέσφL᾽(Adv) ἐiπὶi(Prp) |νευLράςL(A)·|
+(92) und von|diesen noch mehr schmolz|er bis|mitten auf Sehnen·
+(93) δειLλαίL|ῳL(Adj)(D) ἶL|νέςL(N) τεi(Pt) καὶi(Kon) |ὀLστέiαi(N) |μῶLνονi(Adv) ἔi|λειLφθενL(Aor)(Pas).|
+(93) dem|Elenden Sehnen und auch Knochen nur blieben.
+(94) κλαῖLεi(Imp)(Akt) μὲνi(Pt) |ἁL(Art)(N) μάL|τηρL(N), βαiρὺi(Adv) |δ᾽(Pt) ἔLστεiνονi(Imp)(Akt) |αἱL(Art)(N) δị̣̣̣̔̓̔̓(Pt) ἀi|δελLφαὶL(N)|
+(94) weinte zwar die Mutter, schwer aber seufzten die aber Schwestern
+(95) χὡL(Kon)(Art)(N) μαL|στὸςL(N) τὸνi(Art)(A) ἔi|πωLνεi(Imp)(Akt) καὶi(Kon) |αἱL(Art)(N) δέiκαi(Adj)(N) |πολLλάiκιi(Adv) |δῶLλαιL(N).|
+(95) und|der Busen den nährte und die zehn oft Mägde.
+(96) καὶL(Pt) δ᾽(Pt) αὐL|τὸςL(Adj)(N) Τριiόi|παςL(N) ποiλιi|αῖςL(Adj)(D) ἐiπὶi(Prp) |χεῖLραςi(A) ἔi|βαλLλεL(Imp)(Akt),|
+(96) und ja selbst Triopas mit|grauen auf Hände schlug,
+(97) τοῖLαi(Adj)(A) τὸνi(Art)(A) |οὐκL(Pt) ἀiίi|ονLταi(Prä)(Akt)(A) Ποi|σειLδάL|ωLναi(A) καi|λιLστρέωνL(Prä)(Akt)(N)·|
+(97) solches den nicht hörenden Poseidon beschwörend·
+(98) "ψευLδοiπάi|τωρL(V) ἰiδὲi(Prä)(Akt)(Imv) |τόνLδεi(Pr)(A) τεi|οῦL(Pr)(G) τρίiτονi(Adj)(A), |εἴLπερi(Kon) ἐi|γὼL(Pr)(N) μὲνL(Pt)|
+(98) "Lügen|Vater sieh diesen deines dritten, wenn|denn ich zwar
+(99) σεῦL(Pr)(G) τεi(Pt) καὶi(Kon) |ΑἰLοiλίi|δοςL(Adj)(G) Καiνάi|καςL(G) γέiνοςi(N), |αὐLτὰρi(Kon) ἐi|μεῖLοL(Pr)(G)|
+(99) deiner sowohl als|auch der|Aiolierin Kanakes Spross, doch meines
+(100) τοῦLτοi(Pr)(N) τὸi(Art)(N) |δείLλαιL|ονL(Adj)(N) γέiνεi|τοL(Aor)(M/P) βρέiφοςi(N)· |αἴLθεi(ij) γὰρi(Pt) |αὐLτὸνL(Pr)(A)|
+(100) dieses das erbärmliche wurde Kind· hätte doch ihn
+(101) βληLτὸνi(Adj)(A) ὑπi᾽(Prp) |ἈLπόλL|λωLνοςi(G) ἐi|μαὶL(Adj)(N) χέiρεςi(N) |ἐLκτεiρέi|ιLξανL(Aor)(Akt)·|
+(101) getroffen von Apollon meine Hände trugen|hinaus·
+(102) νῦνL(Adv) δὲi(Pt) καi|κὰL(Adj)(A) βούL|βρωLστιςi(N) ἐνi(Prp) |ὀLφθαλL|μοῖLσιi(D) κάi|θηLταιL(Prä)(M/P).|
+(102) nun aber böse Rinder|fraß vor den|Augen sitzt.
+(103) ἤL(Kon) οἱi(Pr)(D) ἀi|πόLσταL|σονL(Aor)(Akt)(Imv) χαiλεi|πὰνL(Adj)(A) νόiσονi(A) |ἠLέi(Kon) νινi(Pr)(A) |αὐLτὸςL(Adj)(N)|
+(103) oder ihm entferne schwere Krankheit oder ihn selbst
+(104) βόLσκεi(Prä)(Akt)(Imv) λαi|βώνL(Aor)(Akt)(N)· ἁL|μαὶL(Adv) γὰρi(Pt) ἀi|πειLρήL|κανLτιi(Per)(Akt)(D) τράi|πεLζαιL(N).|
+(104) nähre genommen· zugleich denn sind|ausgegangen Tafeln.
+(105) χῆLραιL(Adj)(N) |μὲνL(Pt) μάνL|δραιL(N), κεiνεi|αὶL(Adj)(N) δέi(Pt) μοιi(Pr)(D) |αὔLλιiεςi(N) |ἤLδηL(Adv)|
+(105) leer zwar Hürden, hohl aber mir Ställe schon
+(106) τεLτραiπόi|δωνL(G), ἤL|δηL(Adv) γὰρi(Pt) ἀi|παρLνήL|σανLτοi(Aor)(M/P) μάi|γειLροιL(N)."|
+(106) der|Vierfüßer, schon denn verweigerten die|Köche."
+(107) ἀλLλὰi(Kon) καὶi(Kon) |οὐLρῆL|αςL(A) μεiγαi|λᾶνL(Adj)(G) ὑiπέi|λυLσανi(Aor)(Akt) ἁi|μαLξᾶνL(G),|
+(107) aber auch Schwänze der|großen lösten Wagen,
+(108) καὶL(Kon) τὰνL(Art)(A) |βῶνL(A) ἔiφαi|γενL(Aor)(Akt), τὰνL(Art)(A) |ἙLστίiᾳi(D) |ἔLτρεiφεi(Imp)(Akt) |μάLτηρL(N),|
+(108) und die Kuh fraß|er, die der|Hestia nährte Mutter,
+(109) καὶL(Kon) τὰνi(Art)(A) ἀi|εLθλοiφόi|ρονL(Adj)(A) καὶL(Kon) |τὸνL(Art)(A) ποiλεi|μήLιiονi(Adj)(A) |ἵπLπονL(A),|
+(109) und die preis|tragende und den kriegs|mäßigen Hengst,
+(110) καὶL(Kon) τὰνL(Art)(A) |αἴLλουL|ρονL(A), τὰνL(Art)(A) |ἔLτρεiμεi(Imp)(Akt) |θηLρίiαi(N) |μικLκάL(Adj)(N).|
+(110) und die Katze, die es|zitterten Tiere kleine.
+(111) μέσφL᾽(Adv) ὅiκαi(Kon) |μὲνL(Pt) Τριiόi|παLοi(G) δόi|μοιςL(D) ἔiνιi(Prp) |χρήLμαiταi(N) |κεῖLτοL(Imp)(M/P),|
+(111) solange als zwar des|Triopas im|Haus drin Vermögen lag,
+(112) μῶLνοιi(Adj)(N) ἄρi᾽(Pt) |οἰLκεῖL|οιL(Adj)(N) θάiλαi|μοιL(N) καiκὸνi(Adj)(A) |ἠLπίL|στανLτοL(Imp)(M/P).|
+(112) nur ja häusliche Gemächer das|Übel kannten.
+(113) ἀλλL᾽(Kon) ὅiκαi(Kon) |τὸνL(Art)(A) βαiθὺνi(Adj)(A) |οἶLκονi(A) ἀi|νεLξήL|ραLνανi(Aor)(Akt) ὀi|δόνLτεςL(N),|
+(113) aber als das tiefe Haus trockneten|aus die|Zähne,
+(114) καὶL(Kon) τόχi᾽(Pt) ὁi(Art)(N) |τῶL(Art)(G) βαiσιi|λῆLοςi(G) ἐi|νὶL(Prp) τριiόi|δοιLσιi(D) καi|θῆLστοL(Imp)(M/P)|
+(114) und darauf der des Königs an den|Drei|Straßen saß
+(115) αἰLτίL|ζωνL(Prä)(Akt)(N) ἀiκόi|λωςL(Adv) τεi(Pt) καὶi(Kon) |ἔκLβοiλαi(Adj)(A) |λύLμαiταi(A) |δαιLτόςL(G).|
+(115) bettelnd maßlos und auch hinaus|geworfene Abfälle des|Mahls.
+(116) ΔάLμαL|τερL(V), μὴL(Pt) |τῆLνοςi(Pr)(N) ἐi|μὶνL(Adj)(D) φίiλοςi(Adj)(N), |ὅςL(Pr)(N) τοιi(Pr)(D) ἀi|πεχLθήςL(Adj)(N),|
+(116) Demeter, nicht jener mir Freund, der dir verhasst,
+(117) εἴLηL(Prä)(Akt)(Op) |μηδL᾽(Kon) ὁiμόi|τοιLχοςi(Adj)(N)· ἐi|μοὶL(Pr)(D) καiκοi|γείLτοiνεςi(Adj)(N) |ἐχLθροίL(N).|
+(117) möge|sein noch mit|gleicher|Wand· mir schlechte|Nachbarn Feinde.
+(118) ᾄLσαiτεi(Aor)(Akt)(Imv) |παρLθεiνιi|καίL(Adj)(N), καὶi(Kon) ἐi|πιLφθέγL|ξαLσθεi(Aor)(M/P)(Imv) τεi|κοῖLσαιL(Per)(M/P)(N)|
+(118) singt Jungfräuliche, und ruft|aus Gebärende
+(119) "ΔάLμαL|τερL(V) μέiγαi(Adv) |χαῖLρεi(Prä)(Akt)(Imv) ποi|λυLτρόiφεi(Adj)(V) |πουLλυiμέi|διLμνεL(Adj)(V)."|
+(119) "Demeter sehr sei|gegrüßt viel|nährend viel|ratend."
+(120) χὠςL(Kon)(Art)(N) αἱL(Art)(N) |τὸνL(Art)(A) κάiλαi|θονL(A) λευL|κόLτριiχεςi(Adj)(N) |ἵπLποιi(N) ἄi|γονLτιL(Prä)(Akt)(D)|
+(120) und|wie die den Korb weiß|haarige Pferde führend
+(121) τέσLσαiρεςi(Adj)(N), |ὣςL(Adv) ἁL|μὶνL(Pr)(D) μεiγάi|λαL(Adj)(A) θεiὸςi(N) |εὐLρυiάi|νασLσαL(Adj)(N)|
+(121) vier, so uns groß die|Göttin weit|herrschende
+(122) λευLκὸνi(Adj)(A) ἔi|αρL(A), λευL|κὸνL(Adj)(A) δὲi(Pt) θέi|ροςL(A) καὶL(Kon) |χεῖLμαi(A) φέi|ροιLσαL(Prä)(Akt)(N)|
+(122) weißen Frühling, weißen aber Sommer und Winter bringend
+(123) ἡLξεῖL(Fu)(Akt) |καὶL(Kon) φθιiνόi|πωLρονi(A), ἔi|τοςL(A) δ᾽(Pt) εἰςL(Prp) |ἄλLλοi(Adj)(A) φυi|λαLξεῖL(Fu)(Akt).|
+(123) wird|kommen auch Herbst, Jahr aber in anderes wird|bewahren.
+(124) ὡςL(Adv) δ᾽(Pt) ἀiπεi|δίLλωL|τοιL(Adj)(N) καὶi(Kon) ἀi|νάμLπυiκεςi(Adj)(N) |ἄLστυi(A) παi|τεῦLμεςL(Prä)(Akt)(N),|
+(124) wie auch ohne|Schleier und ohne|Stirnbänder Stadt betretend,
+(125) ὣςL(Adv) πόiδαςi(A), |ὣςL(Adv) κεiφαi|λὰςL(A) παiναi|πηLρέiαςi(Adj)(A) |ἕLξοiμεςi(Fu)(Akt) |αἰLείL(Adv).|
+(125) so Füße, so Köpfe ganz|unversehrt werden|wir|haben immer.
+(126) ὡςL(Adv) δ᾽(Pt) αἱL(Art)(N) |λιLκνοiφόi|ροιL(Adj)(N) χρυL|σῶL(Adj)(D) πλέiαi(Adj)(A) |λίLκναi(A) φέi|ρονLτιL(Prä)(Akt)(D),|
+(126) wie auch die Wiegenträgerinnen golden voll Wiegen tragend,
+(127) ὣςL(Adv) ἁL|μὲςL(Pr)(N) τὸνL(Art)(A) |χρυLσὸνi(A) ἀi|φειLδέiαi(Adj)(A) |παLσαίL|μεLσθαL(Aor)(M/P)(Op).|
+(127) so wir den Gold freigebig würden|verteilen.
+(128) μέLσφαi(Adv) τὰi(Art)(A) |τᾶςL(Art)(G) πόiλιi|οςL(G) πρυiταi|νήLιiαi(A) |τὰςL(Art)(A) ἀiτεi|λέLστωςL(Adv),|
+(128) inzwischen die der Stadt Prytaneien die unvollendet,
+(129) τὰςL(Art)(A) δὲi(Pt) τεi|λεLσφοiρέi|αςL(Adj)(A) ποiτὶi(Prp) |τὰνL(Art)(A) θεiὸνi(A) |ἄLχριςi(Prp) ὁi|μαρLτεῖνL(Prä)(Akt)(Inf),|
+(129) die aber Vollendungs|tragenden zu der Göttin bis begleiten,
+(130) αἵLτιiνεςi(Pr)(N) |ἑLξήL|κονLταi(Adj)(A) καi|τώLτεiραιi(Adj)(N)· |αἱL(Art)(N) δὲi(Pt) βαi|ρεῖLαιL(Adj)(N)|
+(130) die sechzig niedriger· die aber schwer|fälligen
+(131) χἄLτιςi(Kon)(Pr)(N) Ἐi|λειLθυίL|ᾳL(D) τείL|νειL(Prä)(Akt) χέiραi(A) |χἄLτιςi(Kon)(Pr)(N) ἐνi(Prp) |ἄλLγειL(D).|
+(131) und|wer der|Eileithyia streckt Hand und|wer in Schmerz.
+(132) ὣςL(Adv) ἅiλιςi(Adv), |ὡςL(Adv) αὐL|τᾶνL(Pr)(G) ἱiκαi|νὸνL(Adj)(A) γόiνυi(A)· |ταῖLσιi(Pr)(D) δὲi(Pt) |ΔηLὼL(N)|
+(132) so genug, so derer genügsames Knie· jenen aber Demeter
+(133) δωLσεῖL(Fu)(Akt) |πάντL᾽(Adj)(A) ἐiπίi|μεLσταi(Adj)(A) καὶi(Kon) |ὡςL(Adv) ποiτὶi(Prp) |ναLὸνi(A) ἵi|κωνLταιL(Aor)(M/P)(Knj).|
+(133) wird|geben alles voll|endet und wie zum Tempel sie|kommen.
+(134) χαῖLρεi(Prä)(Akt)(Imv) θεi|ὰL(V) καὶL(Kon) |τάνLδεi(Art)(A) σάi|ωL(Prä)(Akt)(Imv) πόiλινi(A) |ἔνL(Prp) θ᾽(Pt) ὁiμοi|νοίLᾳL(D)|
+(134) sei|gegrüßt Göttin und diese schütze Stadt in und Eintracht
+(135) ἔνL(Prp) τ᾽(Pt) εὐL|ηLπεiλίi|ᾳL(D), φέiρεi(Prä)(Akt)(Imv) |δ᾽(Pt) ἀLγρόiθιi(Adv) |νόLστιiμαi(Adj)(A) |πάνLταL(Adj)(A)·|
+(135) in und Milde, bringe aber auf|dem|Felde heimkehrend alles·
+(136) φέρLβεi(Prä)(Akt)(Imv) βόi|αςL(A), φέiρεi(Prä)(Akt)(Imv) |μᾶLλαi(A), φέi|ρεL(Prä)(Akt)(Imv) στάiχυνi(A), |οἶLσεi(Aor)(Akt)(Imv) θεi|ριLσμόνL(A),|
+(136) ernähre Rinder, bringe Äpfel, bringe Ähre, bringe Ernte,
+(137) φέρLβεi(Prä)(Akt)(Imv) καὶi(Kon) |εἰLράL|νανL(A), ἵνi᾽(Kon) ὃςi(Pr)(N) |ἄLροiσεi(Aor)(Akt) |τῆLνοςi(Pr)(A) ἀi|μάLσῃL(Aor)(Akt)(Knj).|
+(137) ernähre und Erbsen, damit wer pflügte jenes ernte.
+(138) ἵLλαiθίi(Prä)(Akt)(Imv) |μοιL(Pr)(D) τρίλL|λιLστεi(Adj)(V) μέi|γαL(Adv) κρείL|οιLσαi(Prä)(Akt)(V) θεi|άLωνL(G).|
+(138) sei|gnädig mir dreifach|Erflehte sehr herrschend der|Göttinnen.
