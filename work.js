@@ -1264,12 +1264,12 @@ async function loadTexts() {
     if (result && result.text) {
       const text = result.text;
       state.originalBirkenbihlText = text;
-      
+
       // WICHTIG: Speichere den TATSÄCHLICH geladenen Dateinamen-Base für Entwurf-Downloads!
       // result.base enthält z.B. "agamemnon_gr_en_stil1_Versmaß" (ohne _birkenbihl.txt)
       // Dies ist die korrekte Sprach-Kombination der geladenen Datei!
       state.loadedBirkenbihlBase = result.base;
-      
+
       console.log("✅ Birkenbihl text loaded from", result.path);
       console.log("✅ Loaded base filename:", result.base);
 
@@ -1395,22 +1395,53 @@ async function performRendering() {
     return;
   }
 
-  // WICHTIG: Wenn Datei hochgeladen wurde, nutze Upload-Basis statt Work-Kontext!
-  // Dies stellt sicher, dass PDFs mit Upload-Dateinamen (nicht Work-Namen) generiert werden
+  // STRATEGIE für releaseBase (in Prioritäts-Reihenfolge):
+  // 1. state.uploadBase (wenn Datei hochgeladen wurde)
+  // 2. Generiere aus state.loadedBirkenbihlBase (eingebetteter Entwurf mit korrekter Sprach-Info)
+  // 3. Fallback: buildReleaseBase() (Work-Kontext, aber oft falsche Sprach-Kombination)
+  
   let releaseBase;
+  
   if (state.uploadBase) {
-    // Upload-Fall: Nutze analysierte Upload-Basis
+    // FALL 1: Datei wurde hochgeladen → Nutze Upload-Basis
     console.log("🎯 Nutze Upload-Basis für PDF-Namen:", state.uploadBase);
     releaseBase = state.uploadBase;
+  } else if (state.loadedBirkenbihlBase) {
+    // FALL 2: Eingebetteter Entwurf → Generiere aus loadedBirkenbihlBase
+    // loadedBirkenbihlBase enthält z.B. "agamemnon_gr_en_stil1_Versmaß"
+    // Daraus bauen wir: "Autor_Werk_gr_en_Versmass"
+    const author = state.author || "";
+    const work = state.work || "";
+    
+    // Extrahiere Sprach-Segment und Versmaß aus loadedBirkenbihlBase
+    const loadedBase = state.loadedBirkenbihlBase;
+    const langMatch = loadedBase.match(/_(gr|lat)_(de_en|en|de)(?:_stil1)?/);
+    const hasVersmaß = loadedBase.match(/_[Vv]ersm[aä][sß]{1,2}/);
+    
+    if (langMatch) {
+      const langs = `${langMatch[1]}_${langMatch[2]}`;
+      const versmaßSuffix = hasVersmaß ? "_Versmass" : "";
+      releaseBase = `${author}_${work}_${langs}${versmaßSuffix}`;
+      console.log("📝 Generiere Release-Base aus loadedBirkenbihlBase:", {
+        loadedBase,
+        langs,
+        versmaßSuffix,
+        releaseBase
+      });
+    } else {
+      // Fallback: Kann Sprache nicht extrahieren, nutze Work-Kontext
+      releaseBase = buildReleaseBase();
+      console.warn("⚠️ Konnte Sprache nicht aus loadedBirkenbihlBase extrahieren, nutze Work-Kontext");
+    }
   } else {
-    // Standard-Fall: Nutze Work-Kontext (wenn auf Werkseite)
+    // FALL 3: Fallback → Nutze Work-Kontext (oft falsche Sprach-Kombination)
     releaseBase = buildReleaseBase();
     if (!releaseBase) {
       el.draftStatus.textContent =
         "Metadaten fehlen – bitte laden Sie die Seite neu.";
       return;
     }
-    console.log("📄 Nutze Work-Basis für PDF-Namen:", releaseBase);
+    console.log("📄 Nutze Work-Basis für PDF-Namen (Fallback):", releaseBase);
   }
 
   state.draftBase = releaseBase;
@@ -2931,16 +2962,18 @@ async function loadWorkMeta() {
         // Regex: _(gr|lat)_(de_en|en|de)(?:_stil1)?
         let langs = "";
         let versmassSuffix = "";
-        
+
         if (state.loadedBirkenbihlBase) {
           // PERFEKT! Wir haben den tatsächlich geladenen Dateinamen
           const loadedBase = state.loadedBirkenbihlBase;
-          
-          const langMatch = loadedBase.match(/_(gr|lat)_(de_en|en|de)(?:_stil1)?/);
+
+          const langMatch = loadedBase.match(
+            /_(gr|lat)_(de_en|en|de)(?:_stil1)?/
+          );
           if (langMatch) {
             langs = `${langMatch[1]}_${langMatch[2]}`;
           }
-          
+
           // Versmaß aus geladenem Base extrahieren
           if (loadedBase.match(/_[Vv]ersm[aä][sß]{1,2}/)) {
             versmassSuffix = "_Versmass";
@@ -2948,7 +2981,9 @@ async function loadWorkMeta() {
         } else {
           // Fallback 1: Versuche filenameBase aus Metadaten
           if (filenameBase) {
-            const langMatch = filenameBase.match(/_(gr|lat)_(de_en|en|de)(?:_stil1)?/);
+            const langMatch = filenameBase.match(
+              /_(gr|lat)_(de_en|en|de)(?:_stil1)?/
+            );
             if (langMatch) {
               langs = `${langMatch[1]}_${langMatch[2]}`;
             }
@@ -2956,10 +2991,15 @@ async function loadWorkMeta() {
               versmassSuffix = "_Versmass";
             }
           }
-          
+
           // Fallback 2: Nutze URL-Parameter
           if (!langs) {
-            const lang = state.lang === "griechisch" ? "gr" : state.lang === "latein" ? "lat" : state.lang;
+            const lang =
+              state.lang === "griechisch"
+                ? "gr"
+                : state.lang === "latein"
+                ? "lat"
+                : state.lang;
             langs = `${lang}_de`;
             if (state.languages === 3) {
               langs += "_en";
