@@ -1862,6 +1862,10 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             gr_token = slice_gr[idx] if idx < len(slice_gr) else ''
             should_hide_trans = '(HideTrans)' in gr_token or '(hidetrans)' in gr_token.lower()
             
+            # DEBUG: Zeige an, wenn HideTrans erkannt wird
+            if should_hide_trans and gr_token:
+                print(f"🚫 HideTrans erkannt: {gr_token[:50]}")
+            
             if not t or should_hide_trans:
                 # Leeres Token ODER HideTrans → keine Übersetzung anzeigen
                 de_cells.append(Paragraph('', token_de_style))

@@ -364,7 +364,8 @@
             Darstellung (Versmaß-Darstellung). Der PDF-Builder gibt, über die passive Möglichkeit des herunterladens hinaus, die Möglichkeit PDFs aus
             der Translinear-Text-Vorlage heraus zu erstellen und damit z.B. KI-Fehler zu 
             verbessern, oder anderweitig diverse verschiedene individualisierte Darstellungen zu erzeugen. Am Schluss der Anleitung gibt es ein 
-            exemplarisches translinear.txt Dokument zum herunterladen, welches zur Erzeugung eines ungemein erhellenden translinear-PDF bemächtigt.
+            Demonstrations-translinear.txt Dokument zum herunterladen, welches zur Erzeugung von mehreren sehr erhellenden 
+            Demonstrations-translinear-PDFs bemächtigt.
           </p>
 
           <h3>Inhalte und Kommentar</h3>
@@ -581,11 +582,9 @@
           </p>
           
           
-          Für einige Werke ist eine Versmaß-Darstellung vorhanden, welche lange und kurze Silben kennzeichnet.
-          Dabei sind lange silben durch waagerechte Linien
-          über der Silbe gekennzeichnet und kurze Silben durch zwei kleine Wellen (uu). Dabei ist es stets so, dass die Grammatikkürzel (falls eingeschaltet) 
-          mit zum Wort gehören und sich
-          die Versmaß-Darstellung auch über sie erstreckt. Bei Tragödien (Perser, Prometheus, Sieben gegen Theben) sind ebenfalls Versmaß Versionen verfügbar. Dabei sind Zäsuren, also ungerelmäßig
+          Für einige Werke ist eine Versmaß-Darstellung vorhanden, welche lange und kurze Silben über dem Text als Trassen-Formation und Metrum-Füße als senkrechte Linien ("Antennen") setzt, also für einen Hexameter Vers 6 "Antennen" oder Füße.
+          Dabei ist je eine lange Silbe durch eine waagerechte Linie über der Silbe gekennzeichnet und eine kurze Silbe je durch zwei kleine Wellen in der Trasse (uu). Dabei ist es stets so, dass die Grammatikkürzel mit zur letzten Silbe des Wortes gezählt werden und sich
+          die Silben-Darstellung der letzten Silbe eines Wortes auch über die Tags mithinüber erstreckt. Bei Tragödien (Perser, Prometheus, Sieben gegen Theben) sind ebenfalls Versmaß Versionen verfügbar. Dabei sind <strong>Zäsuren</strong>, also ungerelmäßig
           auftretende kurze Silben, die anstelle von einer einzelnen langen oder kurzen Silbe stehen, stets rot und nach OBEN gewölbt dargestellt (anstatt schwarz
           und 
           nach unten gewölbt, wie normale kurze Silben). Die Informationen zu langen und kurzen Silben stammen stets von der sehr schönen und wertvollen Seite
@@ -614,14 +613,16 @@
             Abbildung 3: Ilias 1 griechisch-deutsch, typischer Hexameter in Versmaßdarstellung.
           </p>
           
-          <p>Die Tragödien, Oden und Hymnen haben eine Versmaßdarstellung, die aufgrund der Komplexität der verschiedenen Versmaße nur die 
-          Längen und Kürzen quantitativ darstellt, nicht aber die Füße in jedem Fall eingezeichnet hat (diese ließen sich durch den Builder manuell hinzufügen,
-          s.u.).</p>
+          <p>Die Tragödien, Oden und Hymnen haben eine Versmaßdarstellung, die aufgrund der Verschiedenheit der Versmaße teilweise nur die 
+          Längen und Kürzen quantitativ darstellt, nicht aber sind in jedem Fall die Füße eingezeichnet (diese ließen sich durch den Builder manuell 
+          hinzufügen, s.u.).
+          
+          </p>
           
          <p><strong> Wichtig: Bekannter Fehler:</strong> Bei Ellisionsapostrophen tritt leider in der Versmaßdarstellung aktuell ein Fehler auf. Bei Wörtern wie γʼ 
           oder σʼ oder δʼ, die eigentlich keine eigenständigen Silben sprachlich darstellen, sondern nur durch Verschmelzung mit dem Nachfolgenden zur Silbe werden,
           wird aktuell eine kurze Silbe (uu) über dem δʼ oder σʼ angezeigt, die natürlich nicht wirklich sprachlich realisiert wird. Hier erkennbar an Zeile
-          845 im gefesselten Prometheus, bei dem δʼ ἀπʼ  als zwei kurze Silben beschrieben wird, obwohl es klarerweise nur eine sein kann. Eine Zäsur des Versmaßes 
+          845 im gefesselten Prometheus, bei dem δʼ ἀπʼ  als zwei kurze Silben beschrieben wird, obwohl es klarerweise nur Eine sein kann. Eine Zäsur des Versmaßes 
           (hier 6-füßiger Jambus) ist in Zeile 843 zu sehen.</p>
          </p>
           <img
@@ -644,7 +645,8 @@
               margin-top: -10px;
             "
           >
-            Abbildung 4: Prometheus griechisch-deutsch, Versmaß Version, typischer 6 füßiger Jambus mit Zäsur in rot und Ellisionsapostroph-Bug in Zeile 845.
+            Abbildung 4: Prometheus griechisch-deutsch, Versmaß Version, typischer 6 füßiger Jambus mit Zäsur in rot und Ellisionsapostroph-Bug in
+            Zeile 845.
           </p>
           
 
@@ -653,13 +655,17 @@
             Der PDF Builder ist dazu da, eigenständig PDFs erzeugen zu können, um kleine Fehler oder ungünstige
             Übersetzungen der Wörter anzupassen und Farben und Grammatikkürzel zu individualisieren. Den PDF Builder ruft man auf,
             indem man auf einer Werkseite (egal welches Werk) auf den
-            dunkelgrünen Button
+            dunkelgrünen Button 
             <strong>"PDF aus Entwurf erstellen"</strong> klickt. Es öffnet sich
             darauf die Tag- und Farbkonfigurationstabelle. Mit dem Klick unten
             rechts auf <strong>PDFs erstellen</strong>, werden dann die PDFs
             erzeugt (es dauert eine kurze Zeit, bis sie in der PDF-Ansicht unter
-            <strong>Entwurf</strong> angezeigt werden). Änderungen im Text können vorgenommen werden, indem der translinear.txt manipuliert wird und daraus ein neues
-            PDF erzeugt wird. Eine Beispielhafte Vorgehensweise ist diese:
+            <strong>Entwurf</strong> angezeigt werden). Änderungen im Text können vorgenommen werden, indem der translinear.txt manipuliert wird und
+            daraus dann ein neues PDF erzeugt wird (mit dem Programm, welches auch die hinterlegten "Original"-PDFs erzeugt hat. Es ist dabei
+            empfehlenswert, wenn man einen Agamemnon oder Timaios oder Ilias Text erstellen will, auch den jeweiligen Builder auf der
+            dazugehörigen Werkseite zu nutzen (und nicht etwa einen Poesie-Ilias-Text bei Prosa-Platon in den PDF-Builder zu tun, da die Verarbeitung
+            anders ist).
+            Eine Beispielhafte Vorgehensweise ist diese:
           </p>
           <ul>
             <li
@@ -672,7 +678,7 @@
               <strong>1.) Textgrundlage erhalten</strong>
 
               <p style="margin-top: 10px; margin-bottom: 10px">
-                Auf einer Werkseite oben links mit
+                Auf irgendeiner Werkseite (z.B. Ilias 1 griechisch - deutsch) oben links mit
                 <strong>"Entwurf.txt herunterladen"</strong> die Basisdatei
                 (translinear.txt) herunterladen.
               </p>
@@ -716,8 +722,7 @@
                 Text direkt im Browserfenster zu bearbeiten. Aber beim
                 Herunterladen ist die Datei und ihre Änderungen "permanent", während Änderungen im
                 Browser verloren gehen können, wenn man die Seite verlässt. Außerdem ist es im Text-Editor viel flüssiger und im Browser können gewisse
-                Probleme auftreten. Für ein seriöses Unterfangen sei daher der Download und die sichere Speicherung und die lokale Bearbeitung sehr
-                empfohlen.
+                Probleme auftreten. Klug ist daher der Download, dann die sichere Speicherung und die lokale Bearbeitung.
               </p>
               
               </li>
@@ -729,14 +734,16 @@
               >
               <p style="margin-top: 10px; margin-bottom: 10px;">
                 Die heruntergeladene translinear.txt Datei mit einem sinnvollen
-                Text-Editor öffnen und nach Wunsch bearbeiten. Die Bearbeitungen
+                Text-Editor öffnen und nach Wunsch bearbeiten (zur Not im Browser). Die Bearbeitungen
                 können vielfältig sein, sollten aber gewissen Regeln folgen. Zum
-                Einfügen neuer Dinge oder beim Ändern von Dingen sollte sich
-                stets an der erkennbaren Grundstruktur der bereitgestellten translinear.txt
-                Datei orientiert werden. Dies liegt daran, dass der Text eine
+                Einfügen neuer Dinge oder beim Ändern von Dingen in irgendeinem Werk, sollte sich
+                stets an der erkennbaren Grundstruktur der bereitgestellten translinear.txt Datei für dieses Werk orientiert werden. Dies liegt daran,
+                dass jeder Text eine
                 gewisse Struktur haben muss um korrekt vom Builder verarbeitet zu
-                werden. Es ist hilfreich, bei der .txt Bearbeitung das originale
-                PDF parallel im Blick zu haben, da dort die Informationen aus dem translinear.txt final dargestellt werden und übersichtlicher
+                werden. Bei einzelnen beobachteten Fehlern oder Ungereimtheiten in jeglichen PDFs ist stets die "Umgebung" im translinear.txt nach 
+                Stellen abzusuchen, die von der Grundstruktur des Dokumentes abweichen. Diese Abweichungen manuell beheben zu können ist ein Sinn des
+                Builders. Es ist sinnvoll, während der Bearbeitung des translinear.txt das dazugehörige PDF parallel im Blick zu haben, da dort die
+                Informationen aus dem translinear.txt final dargestellt werden und übersichtlicher
                 aussehen.
               </p>
               
