@@ -3,6 +3,7 @@
 ## ✅ Emojis funktionieren in:
 
 ### 1. **Kommentarzeilen** (# am Anfang)
+
 ```
 # 🔥 WICHTIG: Dieser Abschnitt ist schwierig!
 # ⚠️ Achtung: Grammatik-Besonderheit
@@ -12,6 +13,7 @@
 ```
 
 ### 2. **Metadaten-Kommentare**
+
 ```
 ## KOMMENTAR: 🌟 Diese Zeile zeigt eine klassische Konstruktion
 ## ANMERKUNG: ⚡ Blitzschnelle Handlung
@@ -19,7 +21,9 @@
 ```
 
 ### 3. **Inline-Tags** (neu!)
+
 Sie können Emojis auch direkt in Tags packen:
+
 ```
 πρῶτον(Adv)(Sup)(📍Wichtig)
 μῦθον(Mask)(Akk)(Sg)(🎭Drama)
@@ -28,6 +32,7 @@ Sie können Emojis auch direkt in Tags packen:
 ## 📋 Beliebte Emojis für PDFs:
 
 ### Priorität & Wichtigkeit
+
 - 🔥 Sehr wichtig
 - ⚠️ Achtung
 - ❗ Wichtig
@@ -35,6 +40,7 @@ Sie können Emojis auch direkt in Tags packen:
 - 💡 Idee/Tipp
 
 ### Fachbereiche
+
 - 📚 Literatur
 - 🎭 Drama
 - 📜 Epos
@@ -43,6 +49,7 @@ Sie können Emojis auch direkt in Tags packen:
 - ⚔️ Krieg/Schlacht
 
 ### Grammatik & Struktur
+
 - 🔄 Wiederholung
 - ➡️ Fortsetzung
 - ⬅️ Rückbezug
@@ -50,6 +57,7 @@ Sie können Emojis auch direkt in Tags packen:
 - 📍 Position
 
 ### Lernhilfen
+
 - ✨ Schöne Stelle
 - 🎯 Übungsziel
 - 💪 Schwierige Stelle
@@ -57,6 +65,7 @@ Sie können Emojis auch direkt in Tags packen:
 - ⭐ Merken!
 
 ### Status
+
 - ✅ Fertig
 - ⏳ In Arbeit
 - 🚧 Baustelle
@@ -64,19 +73,22 @@ Sie können Emojis auch direkt in Tags packen:
 
 ## 🛠️ Technische Details:
 
-**Font-Unterstützung**: 
+**Font-Unterstützung**:
 ReportLab verwendet standardmäßig Helvetica/Times, die keine Emojis unterstützen. Aber:
+
 - **DejaVuSans** (unsere Standard-Font) unterstützt viele Unicode-Zeichen ✓
 - Emojis werden als Schwarzweiß-Symbole dargestellt (keine Farbe)
 - Die meisten Standard-Emojis funktionieren
 
 **Was funktioniert:**
+
 - ✅ Häufige Symbole: ✓ ✗ ★ ☆ ♠ ♣ ♥ ♦ ☀ ☁ ☂ ☃
 - ✅ Pfeile: → ← ↑ ↓ ↔ ⇒ ⇐ ⇔ ➡️ ⬅️
 - ✅ Musik/Math: ♪ ♫ ∞ ± ÷ × √ ∑ ∫
 - ✅ Viele Standard-Emojis (s/w): 🔥 ⚠️ ✨ 📚 etc.
 
 **Was NICHT funktioniert:**
+
 - ❌ Komplexe Multi-Codepoint-Emojis (z.B. Hautfarben, kombinierte Emojis)
 - ❌ Farbige Emojis (werden schwarz/weiß)
 
@@ -108,6 +120,7 @@ Geschichte|Erzählung|Mythos
 3. Prüfe, ob Emojis sichtbar sind
 
 **Tipp**: Kopiere Emojis von [emojipedia.com](https://emojipedia.org) oder nutze:
+
 - Windows: `Win + .` (Punkt)
 - Mac: `Cmd + Ctrl + Space`
 - Linux: `Ctrl + .` oder `Ctrl + ;`

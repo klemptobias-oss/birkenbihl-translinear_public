@@ -1868,16 +1868,18 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             
             if not t or should_hide_trans:
                 # Leeres Token ODER HideTrans → keine Übersetzung anzeigen
+                # WICHTIG: Paragraph muss trotzdem die korrekte Breite haben (aus slice_w)!
                 de_cells.append(Paragraph('', token_de_style))
-                continue
-            # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
-            t_processed = process_translation_token_poesie(t)
-            de_html = format_token_markup(t_processed, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
-            # WICHTIG: Breite mit verarbeitetem Token messen (Pipes bereits ersetzt)
-            de_meas  = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
-            de_width = slice_w[idx]
-            de_html_centered = center_word_in_width(de_html, de_meas, de_width, token_de_style.fontName, token_de_style.fontSize)
-            de_cells.append(Paragraph(de_html_centered, token_de_style))
+                # KEIN continue! Wir müssen slice_w[idx] korrekt zuordnen
+            else:
+                # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
+                t_processed = process_translation_token_poesie(t)
+                de_html = format_token_markup(t_processed, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
+                # WICHTIG: Breite mit verarbeitetem Token messen (Pipes bereits ersetzt)
+                de_meas  = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
+                de_width = slice_w[idx]
+                de_html_centered = center_word_in_width(de_html, de_meas, de_width, token_de_style.fontName, token_de_style.fontSize)
+                de_cells.append(Paragraph(de_html_centered, token_de_style))
 
         # EN-Zellen (für 3-sprachige Texte)
         en_cells = []
@@ -1890,16 +1892,18 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 
                 if not t or should_hide_trans:
                     # Leeres Token ODER HideTrans → keine Übersetzung anzeigen
+                    # WICHTIG: Paragraph muss trotzdem die korrekte Breite haben (aus slice_w)!
                     en_cells.append(Paragraph('', token_de_style))
-                    continue
-                # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
-                t_processed = process_translation_token_poesie(t)
-                en_html = format_token_markup(t_processed, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
-                # WICHTIG: Breite mit verarbeitetem Token messen (Pipes bereits ersetzt)
-                en_meas  = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
-                en_width = slice_w[idx]
-                en_html_centered = center_word_in_width(en_html, en_meas, en_width, token_de_style.fontName, token_de_style.fontSize)
-                en_cells.append(Paragraph(en_html_centered, token_de_style))
+                    # KEIN continue! Wir müssen slice_w[idx] korrekt zuordnen
+                else:
+                    # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
+                    t_processed = process_translation_token_poesie(t)
+                    en_html = format_token_markup(t_processed, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
+                    # WICHTIG: Breite mit verarbeitetem Token messen (Pipes bereits ersetzt)
+                    en_meas  = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
+                    en_width = slice_w[idx]
+                    en_html_centered = center_word_in_width(en_html, en_meas, en_width, token_de_style.fontName, token_de_style.fontSize)
+                    en_cells.append(Paragraph(en_html_centered, token_de_style))
 
         # Linke Spalten: NUM → Gap → SPRECHER → Gap → INDENT → Tokens
         # WICHTIG: Zeilennummer in <font> Tag wrappen, damit "-" nicht als Farbmarker interpretiert wird

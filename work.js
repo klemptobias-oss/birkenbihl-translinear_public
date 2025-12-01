@@ -2904,7 +2904,10 @@ function bindPdfUtilityButtons() {
 
       // WICHTIG: Verkürze den Filename für den Download (entfernt Präfixe, SESSION, etc.)
       const shortFilename = shortenPdfFilename(filename);
-      console.log("🔧 Download Debug:", { original: filename, shortened: shortFilename });
+      console.log("🔧 Download Debug:", {
+        original: filename,
+        shortened: shortFilename,
+      });
 
       const pdfUrl =
         state.source === "draft"
