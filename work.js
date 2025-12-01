@@ -1264,7 +1264,14 @@ async function loadTexts() {
     if (result && result.text) {
       const text = result.text;
       state.originalBirkenbihlText = text;
+      
+      // WICHTIG: Speichere den TATSÄCHLICH geladenen Dateinamen-Base für Entwurf-Downloads!
+      // result.base enthält z.B. "agamemnon_gr_en_stil1_Versmaß" (ohne _birkenbihl.txt)
+      // Dies ist die korrekte Sprach-Kombination der geladenen Datei!
+      state.loadedBirkenbihlBase = result.base;
+      
       console.log("✅ Birkenbihl text loaded from", result.path);
+      console.log("✅ Loaded base filename:", result.base);
 
       // Versuche, gespeicherten Draft-Text aus localStorage zu laden
       const workKey = `${state.lang}_${state.kind}_${state.category}_${state.author}_${state.work}`;
@@ -2914,52 +2921,60 @@ async function loadWorkMeta() {
           return;
         }
 
-        // WICHTIG: Extrahiere Sprach- und Versmaß-Infos aus dem tatsächlich geladenen filenameBase!
-        // filenameBase enthält die korrekte Sprach-Kombination aus der Datei, z.B.:
-        // "Aischylos_Agamemnon_gr_en_stil1" → gr_en
-        // "Aischylos_Perser_gr_de_en_stil1_Versmaß" → gr_de_en + Versmass
+        // WICHTIG: Nutze den TATSÄCHLICH geladenen Birkenbihl-Text-Base!
+        // state.loadedBirkenbihlBase enthält z.B. "agamemnon_gr_en_stil1_Versmaß"
+        // Dies ist die korrekte Sprach-Kombination der geladenen Datei!
         const author = state.author || "";
         const work = state.work || "";
 
-        // Extrahiere Sprach-Segment aus filenameBase (zwischen erster Sprache und _stil1)
-        // Regex: _(gr|lat)_([a-z_]+)_stil1
+        // Extrahiere Sprach-Segment aus dem geladenen Base
+        // Regex: _(gr|lat)_(de_en|en|de)(?:_stil1)?
         let langs = "";
-        if (filenameBase) {
-          const langMatch = filenameBase.match(/_(gr|lat)_(de_en|en|de)(?:_stil1)?/);
+        let versmassSuffix = "";
+        
+        if (state.loadedBirkenbihlBase) {
+          // PERFEKT! Wir haben den tatsächlich geladenen Dateinamen
+          const loadedBase = state.loadedBirkenbihlBase;
+          
+          const langMatch = loadedBase.match(/_(gr|lat)_(de_en|en|de)(?:_stil1)?/);
           if (langMatch) {
-            // langMatch[1] = "gr" oder "lat"
-            // langMatch[2] = "de_en" oder "en" oder "de"
             langs = `${langMatch[1]}_${langMatch[2]}`;
-          } else {
-            // Fallback: Nutze URL-Parameter wie bisher
+          }
+          
+          // Versmaß aus geladenem Base extrahieren
+          if (loadedBase.match(/_[Vv]ersm[aä][sß]{1,2}/)) {
+            versmassSuffix = "_Versmass";
+          }
+        } else {
+          // Fallback 1: Versuche filenameBase aus Metadaten
+          if (filenameBase) {
+            const langMatch = filenameBase.match(/_(gr|lat)_(de_en|en|de)(?:_stil1)?/);
+            if (langMatch) {
+              langs = `${langMatch[1]}_${langMatch[2]}`;
+            }
+            if (filenameBase.match(/_[Vv]ersm[aä][sß]{1,2}/)) {
+              versmassSuffix = "_Versmass";
+            }
+          }
+          
+          // Fallback 2: Nutze URL-Parameter
+          if (!langs) {
             const lang = state.lang === "griechisch" ? "gr" : state.lang === "latein" ? "lat" : state.lang;
             langs = `${lang}_de`;
             if (state.languages === 3) {
               langs += "_en";
             }
           }
-        } else {
-          // Fallback: Nutze URL-Parameter wie bisher
-          const lang = state.lang === "griechisch" ? "gr" : state.lang === "latein" ? "lat" : state.lang;
-          langs = `${lang}_de`;
-          if (state.languages === 3) {
-            langs += "_en";
-          }
-        }
-
-        // Versmaß-Suffix hinzufügen, wenn im filenameBase vorhanden
-        let versmassSuffix = "";
-        if (filenameBase && filenameBase.match(/_[Vv]ersm[aä][sß]{1,2}/)) {
-          versmassSuffix = "_Versmass";
         }
 
         const filename = `${author}_${work}_${langs}${versmassSuffix}_Entwurf_translinear.txt`;
 
         console.log("📥 Entwurf-Download:", {
+          loadedBirkenbihlBase: state.loadedBirkenbihlBase,
           filenameBase,
           detectedLangs: langs,
           versmassSuffix,
-          finalFilename: filename
+          finalFilename: filename,
         });
 
         const blob = new Blob([draftText], { type: "text/plain" });

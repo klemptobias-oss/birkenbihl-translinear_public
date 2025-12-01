@@ -1091,18 +1091,26 @@ def measure_line_width(gr_tokens, de_tokens=None, *, font:str, size:float, font_
     # Nimm die breitere Zeile als Basisbreite
     return max(gr_width, de_width)
 
-def measure_rendered_line_width(gr_tokens, de_tokens, *, gr_bold:bool, is_notags:bool, remove_bars_instead:bool = False, tag_config:dict = None) -> float:
+def measure_rendered_line_width(gr_tokens, de_tokens, *, gr_bold:bool, is_notags:bool, remove_bars_instead:bool = False, tag_config:dict = None, hide_trans_flags:list = None) -> float:
     """
     Berechnet die tatsächliche gerenderte Breite einer Zeile.
     WICHTIG: Verwendet die GLEICHEN Mechanismen wie build_tables_for_pair() für genaue Messung!
     
     NEU: Berücksichtigt SAFE_EPS_PT, Extra-Puffer, Tag-Config für akkurate Breiten-Berechnung
     von gestaffelten Zeilen (23a, 23b, etc.)
+    
+    hide_trans_flags: Optional[List[bool]]
+        Parallel-Liste zu gr_tokens. True wenn Token (HideTrans) hatte.
+        Bei True wird DE-Übersetzung NICHT in Breiten-Berechnung einbezogen!
     """
     if not gr_tokens:
         gr_tokens = []
     if not de_tokens:
         de_tokens = []
+    
+    # Fallback: Wenn keine Flags übergeben wurden, erstelle leere Liste
+    if hide_trans_flags is None:
+        hide_trans_flags = [False] * len(gr_tokens)
 
     # Verwende die gleichen Parameter wie in build_tables_for_pair
     GR_SIZE = 8.4
@@ -1132,6 +1140,9 @@ def measure_rendered_line_width(gr_tokens, de_tokens, *, gr_bold:bool, is_notags
         gr_token = gr_tokens[i] if i < len(gr_tokens) else ''
         de_token = de_tokens[i] if i < len(de_tokens) else ''
         
+        # WICHTIG: Prüfe HideTrans-Flag für diesen Token
+        should_hide_trans = hide_trans_flags[i] if i < len(hide_trans_flags) else False
+        
         # GRIECHISCHES TOKEN
         if gr_token:
             tags_in_token = RE_TAG.findall(gr_token)
@@ -1160,7 +1171,9 @@ def measure_rendered_line_width(gr_tokens, de_tokens, *, gr_bold:bool, is_notags
             w_gr = 0.0
         
         # DEUTSCHES TOKEN
-        if de_token:
+        # KRITISCH: Wenn HideTrans aktiv ist, wird DE-Übersetzung NICHT gerendert!
+        # Daher darf sie NICHT in die Breiten-Berechnung einfließen!
+        if de_token and not should_hide_trans:
             w_de = visible_measure_token(de_token, font=de_font, size=DE_SIZE, cfg=cfg, is_greek_row=False)
         else:
             w_de = 0.0
@@ -2473,12 +2486,13 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
 
                     # Breite gutschreiben - NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
                     if next_base_num is not None and next_line_label and _is_staggered_label(next_line_label):
-                        # KRITISCH: Berechne Token-Breite
+                        # KRITISCH: Berechne Token-Breite MIT HideTrans-Berücksichtigung!
                         next_token_w = measure_rendered_line_width(
                             next_gr_tokens, next_de_tokens,
                             gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
                             remove_bars_instead=True,
-                            tag_config=tag_config
+                            tag_config=tag_config,
+                            hide_trans_flags=pair_b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags für korrekte Breitenberechnung!
                         )
                         
                         # KRITISCH: Addiere Sprecher-Spalten-Breite (falls vorhanden)!
@@ -2715,12 +2729,13 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             # Nach dem Rendern: Nur die Token-Breite dem Basisvers gutschreiben
             # NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
             if base_num is not None and line_label and _is_staggered_label(line_label):
-                # KRITISCH: Berechne Token-Breite
+                # KRITISCH: Berechne Token-Breite MIT HideTrans-Berücksichtigung!
                 this_token_w = measure_rendered_line_width(
                     gr_tokens, de_tokens,
                     gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
                     remove_bars_instead=True,
-                    tag_config=tag_config
+                    tag_config=tag_config,
+                    hide_trans_flags=b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags für korrekte Breitenberechnung!
                 )
                 
                 # KRITISCH: Addiere Sprecher-Spalten-Breite (falls vorhanden)!
