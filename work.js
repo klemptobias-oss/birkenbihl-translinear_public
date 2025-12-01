@@ -809,6 +809,37 @@ function buildPdfUrlFromSelection() {
   return buildReleaseProxyUrl(name, "inline");
 }
 
+/**
+ * Verkürzt einen PDF-Dateinamen für Downloads
+ * Entfernt: GR_poesie_Drama_ Präfix, doppelte Autor_Werk, SESSION_xxx_DRAFT_timestamp, temp_
+ * Beispiel: GR_poesie_Drama_Euripides_Kyklops__Euripides_Kyklops_gr_de_translinear_SESSION_xxx_DRAFT_20251201_001511_Normal_Colour_Tag.pdf
+ *        → Euripides_Kyklops_gr_de_translinear_Normal_Colour_Tag.pdf
+ */
+function shortenPdfFilename(filename) {
+  if (!filename || !filename.toLowerCase().endsWith('.pdf')) {
+    return filename;
+  }
+  
+  let baseName = filename;
+  
+  // Schritt 1: Entferne Sprach/Gattungs/Kategorie-Präfix (GR_poesie_Drama_, LAT_prosa_Historie_, etc.)
+  baseName = baseName.replace(/^(GR|LAT)_(poesie|prosa)_[^_]+_/i, '');
+  
+  // Schritt 2: Entferne doppelte Autor_Werk-Wiederholung (Autor_Werk__Autor_Werk → Autor_Werk)
+  baseName = baseName.replace(/([^_]+_[^_]+)__\1/g, '$1');
+  
+  // Schritt 3: Entferne SESSION und DRAFT Timestamps
+  baseName = baseName.replace(/_translinear_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/gi, '_translinear');
+  
+  // Schritt 4: Entferne übriggebliebene doppelte Unterstriche
+  baseName = baseName.replace(/__+/g, '_');
+  
+  // Schritt 5: Entferne temp_ Prefix (falls vorhanden)
+  baseName = baseName.replace(/^temp_/gi, '');
+  
+  return baseName;
+}
+
 function updatePdfView(fromWorker = false) {
   if (state.source === "draft") {
     if (state.draftBuildActive) {
@@ -2867,6 +2898,10 @@ function bindPdfUtilityButtons() {
     downloadBtn.addEventListener("click", () => {
       const filename =
         state.source === "draft" ? buildDraftPdfFilename() : buildPdfFilename();
+      
+      // WICHTIG: Verkürze den Filename für den Download (entfernt Präfixe, SESSION, etc.)
+      const shortFilename = shortenPdfFilename(filename);
+      
       const pdfUrl =
         state.source === "draft"
           ? buildDraftPdfUrl(filename)
@@ -2874,7 +2909,7 @@ function bindPdfUtilityButtons() {
       if (!pdfUrl) return;
       const a = document.createElement("a");
       a.href = pdfUrl;
-      a.download = filename;
+      a.download = shortFilename; // Verwende gekürzten Namen für Download
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
