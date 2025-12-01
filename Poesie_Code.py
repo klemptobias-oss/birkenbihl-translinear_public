@@ -1858,7 +1858,12 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         
         de_cells = []
         for idx, t in enumerate(slice_de):
-            if not t:
+            # WICHTIG: Prüfe, ob das entsprechende gr_token (HideTrans) hat
+            gr_token = slice_gr[idx] if idx < len(slice_gr) else ''
+            should_hide_trans = '(HideTrans)' in gr_token or '(hidetrans)' in gr_token.lower()
+            
+            if not t or should_hide_trans:
+                # Leeres Token ODER HideTrans → keine Übersetzung anzeigen
                 de_cells.append(Paragraph('', token_de_style))
                 continue
             # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
@@ -1875,7 +1880,12 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         has_en = any(slice_en)
         if has_en:
             for idx, t in enumerate(slice_en):
-                if not t:
+                # WICHTIG: Prüfe, ob das entsprechende gr_token (HideTrans) hat
+                gr_token = slice_gr[idx] if idx < len(slice_gr) else ''
+                should_hide_trans = '(HideTrans)' in gr_token or '(hidetrans)' in gr_token.lower()
+                
+                if not t or should_hide_trans:
+                    # Leeres Token ODER HideTrans → keine Übersetzung anzeigen
                     en_cells.append(Paragraph('', token_de_style))
                     continue
                 # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
