@@ -814,6 +814,27 @@ class ToplineTokenFlowable(Flowable):
 
 
 # ========= Tokenizer / Label / Sprecher =========
+def extract_hide_trans_flags(gr_tokens):
+    """
+    Extrahiert HideTrans-Flags aus griechischen Tokens BEVOR preprocess.py sie entfernt.
+    
+    WICHTIG: Diese Funktion muss VOR dem Preprocessing aufgerufen werden!
+    preprocess.py entfernt '(HideTrans)' aus dem Token-String (Zeile 845).
+    
+    Returns:
+        List[bool]: Parallel-Liste zu gr_tokens, True wenn Token (HideTrans) hat
+    """
+    flags = []
+    for token in gr_tokens:
+        # Prüfe auf HideTrans-Tag (case-insensitive)
+        has_hide_trans = (
+            '(HideTrans)' in token or 
+            '(hidetrans)' in token or 
+            '(HIDETRANS)' in token
+        )
+        flags.append(has_hide_trans)
+    return flags
+
 def tokenize(line:str):
     # LATEINISCH: (N)(Abl) → (Abl) Transformation
     # Entferne (N) vor Ablativ-Tags, da Nomen mit Ablativ implizit sind
@@ -1372,6 +1393,10 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                 base_num   = base_gr if base_gr is not None else base_de
                 speaker    = sp_gr or ''
 
+                # WICHTIG: Extrahiere HideTrans-Flags BEVOR Elisions-Marker angewendet werden
+                # (Elisions können Tokens ändern, aber HideTrans-Flags bleiben parallel)
+                hide_trans_flags = extract_hide_trans_flags(gr_tokens)
+
                 # WICHTIG: Elisions-Übertragung direkt nach dem Tokenizing anwenden
                 gr_tokens = propagate_elision_markers(gr_tokens)
 
@@ -1389,7 +1414,8 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                     'base':  base_num,
                     'gr_tokens': gr_tokens,
                     'de_tokens': de_tokens,
-                    'en_tokens': en_tokens  # NEU: Englische Tokens für 3-sprachige Texte
+                    'en_tokens': en_tokens,  # NEU: Englische Tokens für 3-sprachige Texte
+                    'hide_trans_flags': hide_trans_flags  # NEU: HideTrans-Flags für jeden Token
                 })
                 
                 # JETZT die gesammelten Kommentare einfügen (NACH dem pair-Block!)
@@ -1408,6 +1434,10 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                     # Antike Sprache ohne Übersetzung
                     gr_tokens = tokenize(line)
                     lbl_gr, base_gr, sp_gr, gr_tokens = split_leading_label_and_speaker(gr_tokens)
+                    
+                    # Extrahiere HideTrans-Flags (wichtig für konsistentes Verhalten)
+                    hide_trans_flags = extract_hide_trans_flags(gr_tokens)
+                    
                     gr_tokens = propagate_elision_markers(gr_tokens)
                     
                     blocks.append({
@@ -1416,7 +1446,8 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                         'label': lbl_gr or '',
                         'base': base_gr,
                         'gr_tokens': gr_tokens,
-                        'de_tokens': []
+                        'de_tokens': [],
+                        'hide_trans_flags': hide_trans_flags
                     })
                 else:
                     # Deutsche Zeile ohne antike Sprache
@@ -1428,7 +1459,8 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                         'label': lbl_de or '',
                         'base': base_de,
                         'gr_tokens': [],
-                        'de_tokens': de_tokens
+                        'de_tokens': de_tokens,
+                        'hide_trans_flags': []  # Keine gr_tokens, also keine Flags
                     })
                 i = j
                 continue
@@ -1506,7 +1538,7 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
             de_tokens = tokenize(line)
             lbl_de, base_de, _sp_de, de_tokens = split_leading_label_and_speaker(de_tokens)
             blocks.append({'type':'pair', 'speaker':'', 'label': (lbl_de or ''), 'base': base_de,
-                           'gr_tokens': [], 'de_tokens': de_tokens})
+                           'gr_tokens': [], 'de_tokens': de_tokens, 'hide_trans_flags': []})
             i += 1
 
     # NEU: Log am Ende
@@ -1624,10 +1656,15 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                           base_line_num: int = None,
                           line_comment_colors: dict = None,
                           hide_pipes: bool = False,
-                          block: dict = None):
+                          block: dict = None,
+                          hide_trans_flags: list[bool] = None):  # NEU: HideTrans-Flags
     """
     Erstellt die Tabellen für ein Verspaar (pair/flow).
     WICHTIG: Spaltenbreiten müssen NACH dem Tag-Entfernen berechnet werden!
+    
+    hide_trans_flags: Optional[List[bool]]
+        Parallel-Liste zu gr_tokens. True wenn Token (HideTrans) hatte.
+        Diese Flags werden VOR dem Preprocessing extrahiert, damit sie verfügbar sind.
     """
     
     # Standardwerte setzen falls nicht übergeben
@@ -1856,15 +1893,14 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 return token
             return token.replace('|', ' ')
         
+        # Stelle sicher, dass hide_trans_flags existiert (Fallback für alte Blocks ohne Flags)
+        if hide_trans_flags is None:
+            hide_trans_flags = [False] * len(slice_gr)
+        
         de_cells = []
         for idx, t in enumerate(slice_de):
-            # WICHTIG: Prüfe, ob das entsprechende gr_token (HideTrans) hat
-            gr_token = slice_gr[idx] if idx < len(slice_gr) else ''
-            should_hide_trans = '(HideTrans)' in gr_token or '(hidetrans)' in gr_token.lower()
-            
-            # DEBUG: Zeige an, wenn HideTrans erkannt wird
-            if should_hide_trans and gr_token:
-                print(f"🚫 HideTrans erkannt: {gr_token[:50]}")
+            # WICHTIG: Verwende hide_trans_flags (wurde VOR Preprocessing extrahiert!)
+            should_hide_trans = hide_trans_flags[idx] if idx < len(hide_trans_flags) else False
             
             if not t or should_hide_trans:
                 # Leeres Token ODER HideTrans → keine Übersetzung anzeigen
@@ -1886,9 +1922,8 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         has_en = any(slice_en)
         if has_en:
             for idx, t in enumerate(slice_en):
-                # WICHTIG: Prüfe, ob das entsprechende gr_token (HideTrans) hat
-                gr_token = slice_gr[idx] if idx < len(slice_gr) else ''
-                should_hide_trans = '(HideTrans)' in gr_token or '(hidetrans)' in gr_token.lower()
+                # WICHTIG: Verwende hide_trans_flags (wurde VOR Preprocessing extrahiert!)
+                should_hide_trans = hide_trans_flags[idx] if idx < len(hide_trans_flags) else False
                 
                 if not t or should_hide_trans:
                     # Leeres Token ODER HideTrans → keine Übersetzung anzeigen
@@ -2429,7 +2464,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         base_line_num=next_base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
                         line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
                         hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
-                        block=pair_b  # NEU: Block-Objekt für comment_token_mask
+                        block=pair_b,  # NEU: Block-Objekt für comment_token_mask
+                        hide_trans_flags=pair_b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags
                     )
 
                     # Sammle die Zeilen
@@ -2553,7 +2589,8 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 base_line_num=base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
                 line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
                 hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
-                block=b  # NEU: Block-Objekt für comment_token_mask
+                block=b,  # NEU: Block-Objekt für comment_token_mask
+                hide_trans_flags=b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags
             )
             # WICHTIG: Alle Tabellen eines Paares/Triplikats zusammenhalten
             # (verhindert, dass GR/DE/EN über Seitenumbrüche getrennt werden)
