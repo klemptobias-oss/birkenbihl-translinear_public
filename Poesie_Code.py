@@ -2940,28 +2940,33 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 # Letzte Zeile: normaler Abstand
                 elements.append(Spacer(1, INTER_PAIR_GAP_MM * MM))
 
-            # Nach dem Rendern: Nur die Token-Breite dem Basisvers gutschreiben
-            # NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
-            if base_num is not None and line_label and _is_staggered_label(line_label):
-                # KRITISCH: Berechne Token-Breite MIT HideTrans-Berücksichtigung!
-                this_token_w = measure_rendered_line_width(
-                    gr_tokens, de_tokens,
-                    gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
-                    remove_bars_instead=True,
-                    tag_config=tag_config,
-                    hide_trans_flags=b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags für korrekte Breitenberechnung!
-                )
+            # Nach dem Rendern: Breite tracken für gestaffelte Zeilen
+            # NUR BASIS-Zeilen (ohne Suffix) setzen cum_width_by_base!
+            # Gestaffelte Zeilen (18a, 18b, 18c) LESEN nur den Wert, schreiben NICHT!
+            if base_num is not None and line_label:
+                is_staggered_line = _is_staggered_label(line_label)
                 
-                # KRITISCH: Addiere Sprecher-Spalten-Breite (falls vorhanden)!
-                # Dies ist der Unterschied zwischen Zeilen mit verschiedenen Sprechern!
-                this_speaker_w = 0.0
-                if reserve_all_speakers or speaker:
-                    this_speaker_w = max(current_speaker_width_pt, SPEAKER_COL_MIN_MM * MM)
-                    this_speaker_w += SPEAKER_GAP_MM * MM  # Gap nach Sprecher-Spalte
-                
-                # GESAMT-Breite = Token-Breite + Sprecher-Spalte + Gap
-                this_w = this_token_w + this_speaker_w
-                cum_width_by_base[base_num] = cum_width_by_base.get(base_num, 0.0) + this_w
+                # NUR wenn dies eine BASIS-Zeile ist (z.B. "18", nicht "18a"):
+                if not is_staggered_line:
+                    # KRITISCH: Berechne Token-Breite MIT HideTrans-Berücksichtigung!
+                    this_token_w = measure_rendered_line_width(
+                        gr_tokens, de_tokens,
+                        gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
+                        remove_bars_instead=True,
+                        tag_config=tag_config,
+                        hide_trans_flags=b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags für korrekte Breitenberechnung!
+                    )
+                    
+                    # KRITISCH: Addiere Sprecher-Spalten-Breite (falls vorhanden)!
+                    this_speaker_w = 0.0
+                    if reserve_all_speakers or speaker:
+                        this_speaker_w = max(current_speaker_width_pt, SPEAKER_COL_MIN_MM * MM)
+                        this_speaker_w += SPEAKER_GAP_MM * MM  # Gap nach Sprecher-Spalte
+                    
+                    # GESAMT-Breite = Token-Breite + Sprecher-Spalte + Gap
+                    this_w = this_token_w + this_speaker_w
+                    # KEIN += hier! Nur SETZEN, nicht ADDIEREN!
+                    cum_width_by_base[base_num] = this_w
 
             i += 1; continue
 
