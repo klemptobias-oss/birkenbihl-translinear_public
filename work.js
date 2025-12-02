@@ -1433,7 +1433,7 @@ async function performRendering() {
       if (analysis.language) {
         // Prüfe AKTUELLE Zielsprache aus state.target
         const currentTarget = state.target || "de"; // Default: Deutsch
-        
+
         if (analysis.hasDE && analysis.hasEN) {
           // Text hat beide Sprachen → verwende AKTUELLE Zielsprache!
           if (currentTarget === "en") {
@@ -1645,12 +1645,15 @@ async function performRendering() {
     let displayName = data.filename
       .replace(/_birkenbihl_/g, "_translinear_")
       .replace(/birkenbihl/g, "translinear");
-    
+
     // Entferne SESSION und DRAFT aus dem Anzeige-Namen (aber NICHT aus data.filename!)
     // Beispiel: "Autor_Werk_gr_de_Versmass_translinear_SESSION_xxx_DRAFT_yyy.txt"
     // → "Autor_Werk_gr_de_Versmass_translinear.txt"
-    displayName = displayName.replace(/_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/g, '');
-    
+    displayName = displayName.replace(
+      /_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/g,
+      ""
+    );
+
     el.draftStatus.textContent = `✓ Text gespeichert: ${displayName}`;
 
     if (buildActive) {

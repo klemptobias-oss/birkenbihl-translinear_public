@@ -2670,8 +2670,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     # Sammle die Zeilen
                     rendered_lines.append(KeepTogether(next_tables))
 
-                    # Breite gutschreiben - NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
-                    if next_base_num is not None and next_line_label and _is_staggered_label(next_line_label):
+                    # KRITISCHER FIX: Breite IMMER gutschreiben, nicht nur für gestaffelte Zeilen!
+                    # Auch BASIS-Zeilen (18) müssen gutgeschrieben werden, damit (18b) sie lesen kann!
+                    if next_base_num is not None:
                         # KRITISCH: Berechne Token-Breite MIT HideTrans-Berücksichtigung!
                         next_token_w = measure_rendered_line_width(
                             next_gr_tokens, next_de_tokens,

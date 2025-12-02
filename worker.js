@@ -339,6 +339,7 @@ export default {
     let releaseName = "";
     let tagConfig = null;
     let releaseBase = "";
+    let translationTarget = "de"; // NEU: Aktuelle Zielsprache (de oder en)
     let versmassFlag = "";
     let meterMode = "";
     let hidePipes = false;
@@ -399,6 +400,7 @@ export default {
         pathPrefix = (form.get("path_prefix") || "").toString().trim();
         releaseName = (form.get("release_name") || "").toString().trim();
         releaseBase = sanitizeReleaseBase(form.get("release_base"));
+        translationTarget = (form.get("translation_target") || "de").toString().trim(); // NEU: Aktuelle Zielsprache
         versmassFlag = (form.get("versmass") || "").toString().trim();
         meterMode = (form.get("meter_mode") || "").toString().trim();
         hidePipes = form.get("hide_pipes") === "true";
@@ -501,24 +503,20 @@ export default {
     if (isThreeLanguages) {
       detectedLangSuffix = `_${langBase}_de_en`;
     } else {
-      // 2-sprachig: Versuche aus filename zu extrahieren, sonst fallback
-      if (
-        filename &&
-        (filename.includes("_gr_en") || filename.includes("_lat_en"))
-      ) {
+      // KRITISCHER FIX: Verwende translationTarget (aktuelle Einstellung), NICHT filename!
+      // User kann target=en haben, aber filename enthält vielleicht "_de"!
+      if (translationTarget === "en") {
         detectedLangSuffix = `_${langBase}_en`;
       } else {
         detectedLangSuffix = `_${langBase}_de`; // Default
       }
     }
 
-    // 2. Versmaß-Suffix aus versmassFlag oder filename
+    // 2. Versmaß-Suffix NUR aus versmassFlag (NICHT aus filename!)
+    // KRITISCHER FIX: filename kann "Versmass" enthalten, aber User will vielleicht "Normal"!
+    // → Nur versmassFlag zählt (aktuelle Einstellung), nicht alter Dateiname!
     let versmassSuffix = "";
-    if (
-      versmassFlag === "true" ||
-      versmassFlag === "ON" ||
-      filename.match(/_[Vv]ersm[aä][sß]{1,2}/)
-    ) {
+    if (versmassFlag === "true" || versmassFlag === "ON") {
       versmassSuffix = "_Versmass";
     }
 
