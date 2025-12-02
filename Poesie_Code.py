@@ -2146,7 +2146,9 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         num_gap_gr  = _p('', token_gr_style); num_gap_de = _p('', token_de_style)
         num_gap_en  = _p('', token_de_style) if has_en else None
 
-        sp_para_gr  = _p(xml_escape(f"[{speaker}]:"), style_speaker) if (first_slice and sp_w>0 and speaker) else _p('', style_speaker)
+        # KRITISCHER FIX: Bei gestaffelten Zeilen sp_w=0, aber Sprecher trotzdem anzeigen!
+        # Bedingung: (sp_w>0 OR is_staggered) AND speaker
+        sp_para_gr  = _p(xml_escape(f"[{speaker}]:"), style_speaker) if (first_slice and (sp_w>0 or is_staggered) and speaker) else _p('', style_speaker)
         sp_para_de  = _p('', style_speaker)
         sp_para_en  = _p('', style_speaker) if has_en else None
         sp_gap_gr   = _p('', token_gr_style); sp_gap_de = _p('', token_de_style)

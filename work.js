@@ -1417,33 +1417,50 @@ async function performRendering() {
     // FALL 2: Kein Upload → Analysiere Text-Inhalt
     // Extrahiere Autor/Werk aus Text (## METADATUM: Author/Work)
     const analysis = analyzeTranslinearText(draftText, "draft.txt");
-    
-    if (analysis.author && analysis.work && (analysis.hasDE || analysis.hasEN)) {
+
+    if (
+      analysis.author &&
+      analysis.work &&
+      (analysis.hasDE || analysis.hasEN)
+    ) {
       // Text hat Metadaten → Baue Namen daraus
       const author = analysis.author.replace(/\s+/g, "_");
       const work = analysis.work.replace(/\s+/g, "_");
-      
-      // Bestimme Sprach-Suffix
+
+      // KRITISCHER FIX: Verwende AKTUELLE target-Einstellung, NICHT aus analysis!
+      // Wenn User target=en hat, soll Dateiname "gr_en" sein, NICHT "gr_de_en"!
       let langs = "";
       if (analysis.language) {
+        // Prüfe AKTUELLE Zielsprache aus state.target
+        const currentTarget = state.target || "de"; // Default: Deutsch
+        
         if (analysis.hasDE && analysis.hasEN) {
-          langs = `${analysis.language}_de_en`;
+          // Text hat beide Sprachen → verwende AKTUELLE Zielsprache!
+          if (currentTarget === "en") {
+            langs = `${analysis.language}_en`;
+          } else {
+            langs = `${analysis.language}_de`;
+          }
         } else if (analysis.hasDE) {
           langs = `${analysis.language}_de`;
         } else if (analysis.hasEN) {
           langs = `${analysis.language}_en`;
         }
       }
-      
-      const versmaßSuffix = analysis.hasVersmaß ? "_Versmass" : "";
+
+      // KRITISCHER FIX: Verwende AKTUELLE meter-Einstellung, NICHT aus analysis!
+      // analysis.hasVersmaß sagt nur OB das Werk Versmaß HAT, nicht ob User es AKTIV hat!
+      const versmaßSuffix = needsVersmassRendering() ? "_Versmass" : "";
       releaseBase = `${author}_${work}_${langs}${versmaßSuffix}`;
       useWorkPagePath = true; // Pfad von Work-Page verwenden
-      
+
       console.log("📝 Generiere Release-Base aus Text-Analyse:", {
         author: analysis.author,
         work: analysis.work,
+        currentTarget: state.target,
         langs,
         versmaßSuffix,
+        meterActive: needsVersmassRendering(),
         releaseBase,
       });
     } else if (state.loadedBirkenbihlBase) {
@@ -1493,16 +1510,20 @@ async function performRendering() {
   // Wir trennen das auf in:
   // - pathPrefix: "GR_poesie_Drama_Autor_Werk" (für Ordnerstruktur in PDFs)
   // - releaseName: "dateiname_gr_de" (für PDF-Dateinamen)
-  
+
   let pathPrefix = "";
   let releaseName = releaseBase;
-  
+
   if (releaseBase.includes("__")) {
     // Format: "prefix__name" → Trenne
     const parts = releaseBase.split("__");
     pathPrefix = parts[0]; // Alles vor "__"
     releaseName = parts.slice(1).join("__"); // Alles nach "__" (falls mehrere __)
-    console.log("🔧 Trenne Pfad-Prefix vom Namen:", { releaseBase, pathPrefix, releaseName });
+    console.log("🔧 Trenne Pfad-Prefix vom Namen:", {
+      releaseBase,
+      pathPrefix,
+      releaseName,
+    });
   } else {
     // Kein "__" → Baue Pfad-Prefix aus Work-Kontext
     if (state.workMeta?.meta_prefix) {
@@ -1618,10 +1639,18 @@ async function performRendering() {
     state.manualDraftBuildRequired = manualRequired;
     state.manualDraftCommand = manualRequired ? manualCommand : null;
 
-    // Ersetze "birkenbihl" durch "translinear" im Dateinamen
-    const displayName = data.filename
+    // KRITISCHER FIX: Display-Name OHNE SESSION und DRAFT für bessere UX!
+    // User soll nur sehen: "Autor_Werk_gr_de_Versmass_translinear.txt"
+    // NICHT: "..._SESSION_xxx_DRAFT_yyy.txt" (das ist nur intern!)
+    let displayName = data.filename
       .replace(/_birkenbihl_/g, "_translinear_")
       .replace(/birkenbihl/g, "translinear");
+    
+    // Entferne SESSION und DRAFT aus dem Anzeige-Namen (aber NICHT aus data.filename!)
+    // Beispiel: "Autor_Werk_gr_de_Versmass_translinear_SESSION_xxx_DRAFT_yyy.txt"
+    // → "Autor_Werk_gr_de_Versmass_translinear.txt"
+    displayName = displayName.replace(/_SESSION_[a-f0-9]+_DRAFT_\d{8}_\d{6}/g, '');
+    
     el.draftStatus.textContent = `✓ Text gespeichert: ${displayName}`;
 
     if (buildActive) {
