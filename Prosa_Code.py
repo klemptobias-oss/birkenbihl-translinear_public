@@ -516,6 +516,98 @@ def is_insertion_line(line_num: str | None) -> bool:
         return False
     return line_num.lower().endswith('i')
 
+def detect_language_count_from_context(lines: list, current_idx: int) -> int:
+    """
+    Erkennt, ob der Text 2-sprachig oder 3-sprachig ist, indem die umgebenden Zeilen analysiert werden.
+    
+    Sucht nach normalen Zeilen (ohne 'i' oder 'k' Suffix) und zählt, wie viele Zeilen mit
+    der gleichen Basisnummer aufeinanderfolgen.
+    
+    Returns:
+        2 oder 3 (Anzahl der Sprachen im Text)
+    """
+    # Suche rückwärts nach der letzten normalen Zeile (keine k, i Suffixe)
+    search_range = 50  # Suche max. 50 Zeilen vor/nach
+    
+    for offset in range(1, min(search_range, current_idx + 1)):
+        check_idx = current_idx - offset
+        if check_idx < 0:
+            break
+            
+        check_line = (lines[check_idx] or '').strip()
+        if not check_line:
+            continue
+            
+        line_num, _ = extract_line_number(check_line)
+        if line_num is None:
+            continue
+            
+        # Ignoriere Kommentare und Insertionen
+        if is_comment_line(line_num) or is_insertion_line(line_num):
+            continue
+        
+        # Wir haben eine normale Zeile gefunden - zähle wie viele Zeilen mit dieser Nummer existieren
+        lines_with_same_num = []
+        j = check_idx
+        while j < len(lines) and len(lines_with_same_num) < 5:  # Max 5 Zeilen prüfen
+            test_line = (lines[j] or '').strip()
+            if not test_line:
+                j += 1
+                continue
+                
+            test_num, _ = extract_line_number(test_line)
+            if test_num == line_num:
+                lines_with_same_num.append(test_line)
+                j += 1
+            else:
+                break
+        
+        # Wenn wir 2 oder 3 Zeilen gefunden haben, geben wir das zurück
+        count = len(lines_with_same_num)
+        if count >= 2:
+            return min(count, 3)  # Max 3 (2 oder 3 Sprachen)
+    
+    # Fallback: Suche vorwärts
+    for offset in range(1, min(search_range, len(lines) - current_idx)):
+        check_idx = current_idx + offset
+        if check_idx >= len(lines):
+            break
+            
+        check_line = (lines[check_idx] or '').strip()
+        if not check_line:
+            continue
+            
+        line_num, _ = extract_line_number(check_line)
+        if line_num is None:
+            continue
+            
+        # Ignoriere Kommentare und Insertionen
+        if is_comment_line(line_num) or is_insertion_line(line_num):
+            continue
+        
+        # Zähle Zeilen mit dieser Nummer
+        lines_with_same_num = []
+        j = check_idx
+        while j < len(lines) and len(lines_with_same_num) < 5:
+            test_line = (lines[j] or '').strip()
+            if not test_line:
+                j += 1
+                continue
+                
+            test_num, _ = extract_line_number(test_line)
+            if test_num == line_num:
+                lines_with_same_num.append(test_line)
+                j += 1
+            else:
+                break
+        
+        count = len(lines_with_same_num)
+        if count >= 2:
+            return min(count, 3)
+    
+    # Default: 2-sprachig
+    return 2
+
 def extract_line_range(line_num: str | None) -> tuple[int | None, int | None]:
     """
     Extrahiert den Zeilenbereich aus einer Zeilennummer wie "220-222k".
@@ -970,6 +1062,41 @@ def process_input_file(fname:str):
             
             # Jetzt haben wir alle Zeilen mit derselber Nummer
             num_lines = len(lines_with_same_num)
+            
+            # NEU: Spezielle Behandlung für Insertionszeilen (i)
+            # Bei konsekutiven (i)-Zeilen müssen wir sie in Gruppen aufteilen
+            if is_insertion_line(line_num):
+                # Erkenne, ob der Text 2-sprachig oder 3-sprachig ist
+                expected_lines_per_insertion = detect_language_count_from_context(raw, i)
+                
+                print(f"DEBUG Prosa: Insertionszeile erkannt: {line_num}, {num_lines} Zeilen gefunden, erwarte {expected_lines_per_insertion} Zeilen pro Insertion")
+                
+                # Gruppiere die Zeilen in Blöcke von expected_lines_per_insertion
+                insertion_idx = 0
+                while insertion_idx < num_lines:
+                    # Hole die nächsten expected_lines_per_insertion Zeilen
+                    insertion_group = lines_with_same_num[insertion_idx:insertion_idx + expected_lines_per_insertion]
+                    
+                    if len(insertion_group) < expected_lines_per_insertion:
+                        # Nicht genug Zeilen für eine vollständige Insertion - überspringe
+                        print(f"WARNING Prosa: Unvollständige Insertionsgruppe: {len(insertion_group)} Zeilen, erwartet {expected_lines_per_insertion}")
+                        break
+                    
+                    # Verarbeite diese Insertionsgruppe
+                    gr_line = _remove_line_number_from_line(insertion_group[0])
+                    de_line = _remove_line_number_from_line(_remove_speaker_from_line(insertion_group[1]))
+                    en_line = ''
+                    if expected_lines_per_insertion >= 3 and len(insertion_group) >= 3:
+                        en_line = _remove_line_number_from_line(_remove_speaker_from_line(insertion_group[2]))
+                    
+                    # Speichere die ursprüngliche Zeilennummer
+                    base_num = int(re.match(r'^(\d+)', line_num).group(1)) if re.match(r'^(\d+)', line_num) else None
+                    blocks.append({'type':'pair', 'gr': gr_line, 'de': de_line, 'en': en_line, 'base': base_num})
+                    
+                    insertion_idx += expected_lines_per_insertion
+                
+                i = j
+                continue
             
             if num_lines == 2:
                 # Zweisprachig: gr/lat_de oder gr/lat_en
@@ -2346,6 +2473,55 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     
                     # Parse basierend auf Anzahl der Zeilen
                     num_lines = len(lines_with_same_num)
+                    
+                    # NEU: Spezielle Behandlung für Insertionszeilen (i) in Zitaten
+                    if is_insertion_line(line_num):
+                        # Erkenne, ob der Text 2-sprachig oder 3-sprachig ist
+                        expected_lines_per_insertion = detect_language_count_from_context(lines, j)
+                        
+                        print(f"DEBUG Prosa Zitat: Insertionszeile erkannt: {line_num}, {num_lines} Zeilen gefunden, erwarte {expected_lines_per_insertion} Zeilen pro Insertion")
+                        
+                        # Gruppiere die Zeilen in Blöcke von expected_lines_per_insertion
+                        insertion_idx = 0
+                        while insertion_idx < num_lines:
+                            # Hole die nächsten expected_lines_per_insertion Zeilen
+                            insertion_group = lines_with_same_num[insertion_idx:insertion_idx + expected_lines_per_insertion]
+                            
+                            if len(insertion_group) < expected_lines_per_insertion:
+                                # Nicht genug Zeilen für eine vollständige Insertion - überspringe
+                                print(f"WARNING Prosa Zitat: Unvollständige Insertionsgruppe: {len(insertion_group)} Zeilen, erwartet {expected_lines_per_insertion}")
+                                break
+                            
+                            # Verarbeite diese Insertionsgruppe
+                            gr_line = _remove_line_number_from_line(insertion_group[0])
+                            de_line = _remove_line_number_from_line(_remove_speaker_from_line(insertion_group[1]))
+                            en_line = ''
+                            if expected_lines_per_insertion >= 3 and len(insertion_group) >= 3:
+                                en_line = _remove_line_number_from_line(_remove_speaker_from_line(insertion_group[2]))
+                            
+                            gt = tokenize(gr_line) if gr_line else []
+                            dt = tokenize(de_line) if de_line else []
+                            et = tokenize(en_line) if en_line else []
+                            dt = ['' if RE_INLINE_MARK.match(x or '') else (x or '') for x in dt]
+                            et = ['' if RE_INLINE_MARK.match(x or '') else (x or '') for x in et]
+                            
+                            if len(gt) > len(dt):   dt += [''] * (len(gt) - len(dt))
+                            elif len(dt) > len(gt): gt += [''] * (len(dt) - len(gt))
+                            if len(gt) > len(et):   et += [''] * (len(gt) - len(et))
+                            elif len(et) > len(gt): gt += [''] * (len(et) - len(gt))
+                            
+                            temp_quote_blocks.append({
+                                'type': 'pair',
+                                'gr_tokens': gt,
+                                'de_tokens': dt,
+                                'en_tokens': et
+                            })
+                            
+                            insertion_idx += expected_lines_per_insertion
+                        
+                        j = k
+                        continue
+                    
                     if num_lines == 2:
                         # 2-sprachig
                         gr_line = _remove_line_number_from_line(lines_with_same_num[0])

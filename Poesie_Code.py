@@ -472,6 +472,98 @@ def is_insertion_line(line_num: str | None) -> bool:
         return False
     return line_num.lower().endswith('i')
 
+def detect_language_count_from_context(lines: list, current_idx: int) -> int:
+    """
+    Erkennt, ob der Text 2-sprachig oder 3-sprachig ist, indem die umgebenden Zeilen analysiert werden.
+    
+    Sucht nach normalen Zeilen (ohne 'i' oder 'k' Suffix) und zählt, wie viele Zeilen mit
+    der gleichen Basisnummer aufeinanderfolgen.
+    
+    Returns:
+        2 oder 3 (Anzahl der Sprachen im Text)
+    """
+    # Suche rückwärts nach der letzten normalen Zeile (keine k, i Suffixe)
+    search_range = 50  # Suche max. 50 Zeilen vor/nach
+    
+    for offset in range(1, min(search_range, current_idx + 1)):
+        check_idx = current_idx - offset
+        if check_idx < 0:
+            break
+            
+        check_line = (lines[check_idx] or '').strip()
+        if is_empty_or_sep(check_line):
+            continue
+            
+        line_num, _ = extract_line_number(check_line)
+        if line_num is None:
+            continue
+            
+        # Ignoriere Kommentare und Insertionen
+        if is_comment_line(line_num) or is_insertion_line(line_num):
+            continue
+        
+        # Wir haben eine normale Zeile gefunden - zähle wie viele Zeilen mit dieser Nummer existieren
+        lines_with_same_num = []
+        j = check_idx
+        while j < len(lines) and len(lines_with_same_num) < 5:  # Max 5 Zeilen prüfen
+            test_line = (lines[j] or '').strip()
+            if is_empty_or_sep(test_line):
+                j += 1
+                continue
+                
+            test_num, _ = extract_line_number(test_line)
+            if test_num == line_num:
+                lines_with_same_num.append(test_line)
+                j += 1
+            else:
+                break
+        
+        # Wenn wir 2 oder 3 Zeilen gefunden haben, geben wir das zurück
+        count = len(lines_with_same_num)
+        if count >= 2:
+            return min(count, 3)  # Max 3 (2 oder 3 Sprachen)
+    
+    # Fallback: Suche vorwärts
+    for offset in range(1, min(search_range, len(lines) - current_idx)):
+        check_idx = current_idx + offset
+        if check_idx >= len(lines):
+            break
+            
+        check_line = (lines[check_idx] or '').strip()
+        if is_empty_or_sep(check_line):
+            continue
+            
+        line_num, _ = extract_line_number(check_line)
+        if line_num is None:
+            continue
+            
+        # Ignoriere Kommentare und Insertionen
+        if is_comment_line(line_num) or is_insertion_line(line_num):
+            continue
+        
+        # Zähle Zeilen mit dieser Nummer
+        lines_with_same_num = []
+        j = check_idx
+        while j < len(lines) and len(lines_with_same_num) < 5:
+            test_line = (lines[j] or '').strip()
+            if is_empty_or_sep(test_line):
+                j += 1
+                continue
+                
+            test_num, _ = extract_line_number(test_line)
+            if test_num == line_num:
+                lines_with_same_num.append(test_line)
+                j += 1
+            else:
+                break
+        
+        count = len(lines_with_same_num)
+        if count >= 2:
+            return min(count, 3)
+    
+    # Default: 2-sprachig
+    return 2
+
 def is_greek_line(line: str) -> bool:
     """
     DEPRECATED: Alte Methode basierend auf griechischen Buchstaben.
@@ -1363,6 +1455,73 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                 i = j
             
             num_lines = len(lines_with_same_num)
+            
+            # NEU: Spezielle Behandlung für Insertionszeilen (i)
+            # Bei konsekutiven (i)-Zeilen müssen wir sie in Gruppen aufteilen
+            if first_line_num is not None and is_insertion_line(first_line_num):
+                # Erkenne, ob der Text 2-sprachig oder 3-sprachig ist
+                expected_lines_per_insertion = detect_language_count_from_context(lines, i)
+                
+                print(f"DEBUG: Insertionszeile erkannt: {first_line_num}, {num_lines} Zeilen gefunden, erwarte {expected_lines_per_insertion} Zeilen pro Insertion")
+                
+                # Gruppiere die Zeilen in Blöcke von expected_lines_per_insertion
+                insertion_idx = 0
+                while insertion_idx < num_lines:
+                    # Hole die nächsten expected_lines_per_insertion Zeilen
+                    insertion_group = lines_with_same_num[insertion_idx:insertion_idx + expected_lines_per_insertion]
+                    
+                    if len(insertion_group) < expected_lines_per_insertion:
+                        # Nicht genug Zeilen für eine vollständige Insertion - überspringe
+                        print(f"WARNING: Unvollständige Insertionsgruppe: {len(insertion_group)} Zeilen, erwartet {expected_lines_per_insertion}")
+                        break
+                    
+                    # Verarbeite diese Insertionsgruppe wie einen normalen Zeilenblock
+                    gr_line = insertion_group[0]
+                    de_line = insertion_group[1]
+                    en_line = insertion_group[2] if expected_lines_per_insertion >= 3 and len(insertion_group) >= 3 else None
+                    
+                    # Tokenisieren & führende Label/Sprecher abwerfen
+                    gr_tokens = tokenize(gr_line)
+                    de_tokens = tokenize(de_line)
+
+                    lbl_gr, base_gr, sp_gr, gr_tokens = split_leading_label_and_speaker(gr_tokens)
+                    lbl_de, base_de, sp_de, de_tokens = split_leading_label_and_speaker(de_tokens)
+
+                    line_label = lbl_gr or lbl_de or ''
+                    base_num   = base_gr if base_gr is not None else base_de
+                    speaker    = sp_gr or ''
+
+                    # Extrahiere HideTrans-Flags
+                    hide_trans_flags = extract_hide_trans_flags(gr_tokens)
+
+                    # Elisions-Übertragung
+                    gr_tokens = propagate_elision_markers(gr_tokens)
+
+                    # Für 3-sprachige Texte: Englische Zeile verarbeiten
+                    en_tokens = []
+                    if en_line:
+                        en_tokens = tokenize(en_line)
+                        lbl_en, base_en, sp_en, en_tokens = split_leading_label_and_speaker(en_tokens)
+
+                    blocks.append({
+                        'type':'pair',
+                        'speaker': speaker,
+                        'label': line_label,
+                        'base':  base_num,
+                        'gr_tokens': gr_tokens,
+                        'de_tokens': de_tokens,
+                        'en_tokens': en_tokens,
+                        'hide_trans_flags': hide_trans_flags
+                    })
+                    
+                    insertion_idx += expected_lines_per_insertion
+                
+                # Füge gesammelte Kommentare ein
+                for comment_block in comments_to_insert:
+                    blocks.append(comment_block)
+                
+                i = j
+                continue
             
             if num_lines >= 2:
                 # WICHTIG: Prüfe, ob eine der Zeilen ein Kommentar ist, BEVOR wir sie verarbeiten
