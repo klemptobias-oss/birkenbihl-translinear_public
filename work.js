@@ -728,16 +728,16 @@ function buildDraftPdfFilename() {
   if (state.pendingDraftFilename && state.draftBase) {
     // GitHub Actions erstellt PDFs mit PATH_PREFIX (aus work meta) + UPLOAD_FILENAME
     // Format: GR_poesie_Drama_Autor_Werk__upload_filename_SESSION_xxx_DRAFT_yyy
-    
+
     // Hole den PATH_PREFIX (aus work meta, nicht aus draftBase!)
     let pathPrefix = "";
     if (state.workMeta?.meta_prefix) {
       pathPrefix = state.workMeta.meta_prefix + "__"; // z.B. "GR_poesie_Drama_Aristophanes_Wolken__"
     }
-    
+
     // Extrahiere Upload-Filename (ohne .txt)
     const uploadBase = state.pendingDraftFilename.replace(/\.txt$/, "");
-    
+
     // Kombiniere: PATH_PREFIX + Upload-Filename + Variant-Suffix
     const filebase = pathPrefix + uploadBase;
     const name = `${filebase}${buildVariantSuffix()}.pdf`;

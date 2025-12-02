@@ -523,16 +523,28 @@ export default {
     }
 
     // 3. Baue sauberen Namen
-    const authorForName = stripUnsafe(author) || "";
-    const workForName = stripUnsafe(work) || "Entwurf";
-
+    // KRITISCH: Wenn releaseName vom Frontend übergeben wurde, VERWENDE IHN!
+    // Das Frontend weiß besser als wir, welcher Name gewünscht ist (z.B. Upload-Filename)!
     let baseName = "";
-    if (authorForName && workForName) {
-      baseName = `${authorForName}_${workForName}${detectedLangSuffix}${versmassSuffix}`;
-    } else if (workForName) {
-      baseName = `${workForName}${detectedLangSuffix}${versmassSuffix}`;
+    
+    if (releaseName) {
+      // Frontend hat explizit einen Namen vorgegeben → verwenden!
+      // (z.B. "Demonstration_Poesie_Euripides_Kyklops_gr_de_Entwurf")
+      baseName = releaseName;
+      console.log("✅ Verwende Frontend-Namen:", baseName);
     } else {
-      baseName = `Entwurf${detectedLangSuffix}${versmassSuffix}`;
+      // Fallback: Baue Namen aus Metadaten (author + work aus Text)
+      const authorForName = stripUnsafe(author) || "";
+      const workForName = stripUnsafe(work) || "Entwurf";
+      
+      if (authorForName && workForName) {
+        baseName = `${authorForName}_${workForName}${detectedLangSuffix}${versmassSuffix}`;
+      } else if (workForName) {
+        baseName = `${workForName}${detectedLangSuffix}${versmassSuffix}`;
+      } else {
+        baseName = `Entwurf${detectedLangSuffix}${versmassSuffix}`;
+      }
+      console.log("⚠️ Generiere Namen aus Metadaten:", baseName);
     }
 
     // WICHTIG: SESSION-ID aus Cookie lesen (oder generieren)
