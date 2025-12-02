@@ -2160,22 +2160,25 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         row_de = [num_para_de, num_gap_de, sp_para_de, sp_gap_de, indent_de] + de_cells
         col_w  = [num_w, num_gap, sp_w,        sp_gap,   indent_w] + slice_w
 
-        # Prüfe, ob Übersetzungen vorhanden sind
-        has_de = any(de)
+        # KRITISCHER FIX: Prüfe ob TATSÄCHLICH sichtbare Übersetzungen vorhanden sind
+        # NICHT nur ob de/en-Listen existieren, sondern ob irgendein Token NICHT HideTrans hat!
+        # Wenn ALLE Tokens (HideTrans) haben → de_cells sind alle leer → Zeile soll kollabieren!
+        has_visible_de = any(de[i] and not (hide_trans_flags[i] if i < len(hide_trans_flags) else False) for i in range(len(de)))
+        has_visible_en = has_en and any(en[i] and not (hide_trans_flags[i] if i < len(hide_trans_flags) else False) for i in range(len(en)))
 
-        # Für 3-sprachige Texte: englische Zeile hinzufügen
-        if has_en:
+        # Für 3-sprachige Texte: englische Zeile hinzufügen (nur wenn sichtbar!)
+        if has_visible_en:
             row_en = [num_para_en, num_gap_en, sp_para_en, sp_gap_en, indent_en] + en_cells
-            if has_de:
+            if has_visible_de:
                 tbl = Table([row_gr, row_de, row_en], colWidths=col_w, hAlign='LEFT')
             else:
-                # Keine deutschen Übersetzungen, nur griechisch und englisch
+                # Keine sichtbaren deutschen Übersetzungen, nur griechisch und englisch
                 tbl = Table([row_gr, row_en], colWidths=col_w, hAlign='LEFT')
-        elif has_de:
-            # Nur griechisch und deutsch (Standard 2-sprachig)
+        elif has_visible_de:
+            # Nur griechisch und deutsch (Standard 2-sprachig) - aber nur wenn DE sichtbar!
             tbl = Table([row_gr, row_de], colWidths=col_w, hAlign='LEFT')
         else:
-            # Keine Übersetzungen, nur griechische Zeile
+            # Keine sichtbaren Übersetzungen (alle HideTrans!), nur griechische Zeile
             tbl = Table([row_gr], colWidths=col_w, hAlign='LEFT')
 
         # NEU: Prüfe, ob diese Zeile von einem Kommentar referenziert wird
@@ -2208,13 +2211,13 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             if sp_w > 0:
                 style_list.append(('RIGHTPADDING',  (2,0), (2,-1), 2.0))
             # Nur Padding zwischen Zeilen hinzufügen, wenn Übersetzungen vorhanden sind
-            if has_de or has_en:
+            if has_visible_de or has_visible_en:
                 style_list.append(('BOTTOMPADDING', (0,0), (-1,0), gap_ancient_to_modern/2.0))
                 style_list.append(('TOPPADDING',    (0,1), (-1,1), gap_ancient_to_modern/2.0))
             # NEU: Für 3-sprachige Texte: Padding zwischen Zeilen
             # Zeile 1 (GR) und Zeile 2 (DE): normaler Abstand (siehe oben)
             # Zeile 2 (DE) und Zeile 3 (EN): SEHR MINIMAL, fast direkt untereinander
-            if has_en:
+            if has_visible_en:
                 style_list.append(('BOTTOMPADDING', (0,1), (-1,1), gap_de_to_en))
                 style_list.append(('TOPPADDING',    (0,2), (-1,2), gap_de_to_en))
             tbl.setStyle(TableStyle(style_list))
@@ -2237,13 +2240,13 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             if sp_w > 0:
                 style_list.append(('RIGHTPADDING',  (2,0), (2,-1), 2.0))
             # Nur Padding zwischen Zeilen hinzufügen, wenn Übersetzungen vorhanden sind
-            if has_de or has_en:
+            if has_visible_de or has_visible_en:
                 style_list.append(('BOTTOMPADDING', (0,0), (-1,0), gap_ancient_to_modern/2.0))
                 style_list.append(('TOPPADDING',    (0,1), (-1,1), gap_ancient_to_modern/2.0))
             # NEU: Für 3-sprachige Texte: Padding zwischen Zeilen
             # Zeile 1 (GR) und Zeile 2 (DE): normaler Abstand (siehe oben)
             # Zeile 2 (DE) und Zeile 3 (EN): SEHR MINIMAL, fast direkt untereinander
-            if has_en:
+            if has_visible_en:
                 style_list.append(('BOTTOMPADDING', (0,1), (-1,1), gap_de_to_en))
                 style_list.append(('TOPPADDING',    (0,2), (-1,2), gap_de_to_en))
             tbl.setStyle(TableStyle(style_list))
