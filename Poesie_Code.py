@@ -2685,16 +2685,10 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                             hide_trans_flags=pair_b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags für korrekte Breitenberechnung!
                         )
                         
-                        # KRITISCH: Addiere Sprecher-Spalten-Breite (falls vorhanden)!
-                        # Dies ist der Unterschied zwischen Zeilen mit verschiedenen Sprechern!
-                        next_speaker_w = 0.0
-                        if reserve_all_speakers or next_speaker:
-                            next_speaker_w = max(next_current_speaker_width_pt, SPEAKER_COL_MIN_MM * MM)
-                            next_speaker_w += SPEAKER_GAP_MM * MM  # Gap nach Sprecher-Spalte
-                        
-                        # GESAMT-Breite = Token-Breite + Sprecher-Spalte + Gap
-                        next_w = next_token_w + next_speaker_w
-                        cum_width_by_base[next_base_num] = cum_width_by_base.get(next_base_num, 0.0) + next_w
+                        # WICHTIG: Sprecher-Spalte ist IMMER da (auch bei gestaffelten Zeilen, nur unsichtbar!)
+                        # Wir speichern NUR die Token-Breite, weil die Sprecher-Spalte immer gleich ist!
+                        # Die Einrückung ist relativ zur Sprecher-Spalte, nicht absolut!
+                        cum_width_by_base[next_base_num] = cum_width_by_base.get(next_base_num, 0.0) + next_token_w
                 
                 # OPTIMIERTE LÖSUNG gegen weiße Flächen:
                 # Problem: Große KeepTogether-Blöcke erzwingen zu früh Seitenumbrüche
