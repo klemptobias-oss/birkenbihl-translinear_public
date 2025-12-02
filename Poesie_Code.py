@@ -1987,15 +1987,15 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     num_gap = NUM_GAP_MM * MM
     
     # KRITISCHER FIX: Bei gestaffelten Zeilen (b/c/d) steht der Sprecher bereits in der num-Spalte!
-    # Dann darf sp_w NICHT die Breite des Sprechers sein, sonst gibt es eine zusätzliche Lücke!
+    # WICHTIG: Gestaffelte Zeilen (18a, 18b) haben AUCH eine Sprecher-Spalte!
+    # Die Spalte ist nur LEER/UNSICHTBAR, aber sie nimmt Platz ein!
+    # Der Unterschied: Bei gestaffelten Zeilen wird der Sprecher NICHT angezeigt,
+    # aber die Spalten-Breite bleibt gleich (reserve_speaker_col erzwingt das).
     is_staggered = _is_staggered_label(line_label) if line_label else False
     
-    if is_staggered:
-        # Gestaffelte Zeilen: Sprecher steht LINKS in num-Spalte, sp_w muss 0 sein!
-        sp_w = 0.0
-    else:
-        # Normale Zeilen: Sprecher-Spalten-Breite verwenden
-        sp_w = max(global_speaker_width_pt, SPEAKER_COL_MIN_MM * MM) if (reserve_speaker_col or speaker) else 0.0
+    # Sprecher-Spalten-Breite: IMMER reservieren wenn reserve_speaker_col=True
+    # (auch bei gestaffelten Zeilen - die Spalte ist nur unsichtbar!)
+    sp_w = max(global_speaker_width_pt, SPEAKER_COL_MIN_MM * MM) if (reserve_speaker_col or speaker) else 0.0
     
     sp_gap = SPEAKER_GAP_MM * MM if sp_w > 0 else 0.0
     indent_w = indent_pt
