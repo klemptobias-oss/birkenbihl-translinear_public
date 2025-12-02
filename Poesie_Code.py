@@ -970,13 +970,24 @@ def _is_staggered_label(label: str) -> bool:
     """
     Prüft, ob ein Label ein gültiges Suffix für gestaffelte Zeilen hat.
     Nur Suffixe a-g sind erlaubt (h, i, j, etc. sind für andere Zwecke wie Insertions).
+    
+    Beispiele:
+    - "(18)" -> False (keine Suffix)
+    - "(18b)" -> True (Suffix 'b')
+    - "(18c)" -> True (Suffix 'c')
+    - "(9i)" -> False (Suffix 'i' ist für Insertions)
     """
-    if not label:
+    if not label or len(label) < 3:
         return False
-    # Extrahiere Suffix (letzter Buchstabe)
-    suffix = label[-1].lower() if label[-1].isalpha() else ''
-    # Nur a-g sind gültig für gestaffelte Zeilen
-    return suffix in 'abcdefg'
+    
+    # Format: "(zahl)" oder "(zahlsuffix)"
+    # Extrahiere letztes Zeichen VOR der schließenden Klammer
+    if label.endswith(')'):
+        suffix_char = label[-2]  # Das Zeichen vor ')'
+        if suffix_char.isalpha():
+            return suffix_char.lower() in 'abcdefg'
+    
+    return False
 
 def _pop_label(toks):
     if toks and _is_label_token(toks[0]):
@@ -1971,7 +1982,18 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     # Layout-Spalten berechnen
     num_w = max(6.0*MM, _sw('[999]', num_style.fontName, num_style.fontSize) + 2.0)
     num_gap = NUM_GAP_MM * MM
-    sp_w = max(global_speaker_width_pt, SPEAKER_COL_MIN_MM * MM) if (reserve_speaker_col or speaker) else 0.0
+    
+    # KRITISCHER FIX: Bei gestaffelten Zeilen (b/c/d) steht der Sprecher bereits in der num-Spalte!
+    # Dann darf sp_w NICHT die Breite des Sprechers sein, sonst gibt es eine zusätzliche Lücke!
+    is_staggered = _is_staggered_label(line_label) if line_label else False
+    
+    if is_staggered:
+        # Gestaffelte Zeilen: Sprecher steht LINKS in num-Spalte, sp_w muss 0 sein!
+        sp_w = 0.0
+    else:
+        # Normale Zeilen: Sprecher-Spalten-Breite verwenden
+        sp_w = max(global_speaker_width_pt, SPEAKER_COL_MIN_MM * MM) if (reserve_speaker_col or speaker) else 0.0
+    
     sp_gap = SPEAKER_GAP_MM * MM if sp_w > 0 else 0.0
     indent_w = indent_pt
     avail_tokens_w = doc_width_pt - (num_w + num_gap + sp_w + sp_gap + indent_w)
