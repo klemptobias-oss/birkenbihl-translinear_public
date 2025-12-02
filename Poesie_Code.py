@@ -2723,10 +2723,10 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     rendered_lines.append(KeepTogether(next_tables))
 
                     # KRITISCHER FIX: JEDE Zeile fügt ihre Breite zur kumulativen Breite hinzu!
-                    # Logik: 18 → 18b startet bei Breite_von_18
-                    #        18b → 18c startet bei Breite_von_18 + Breite_von_18b
-                    if next_base_num is not None:
-                        # KRITISCH: Berechne NUR Token-Breite (OHNE Sprecher-Spalte)!
+                    # Logik: 18 → 18b startet bei (Sprecher_von_18 + Text_von_18)
+                    #        18b → 18c startet bei (Sprecher_von_18 + Text_von_18 + Text_von_18b)
+                    if next_base_num is not None and next_line_label:
+                        # KRITISCH: Berechne Token-Breite
                         next_token_w = measure_rendered_line_width(
                             next_gr_tokens, next_de_tokens,
                             gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
@@ -2735,9 +2735,17 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                             hide_trans_flags=pair_b.get('hide_trans_flags', [])
                         )
                         
-                        # WICHTIG: JEDE Zeile (auch gestaffelte) addiert ihre Breite!
-                        # Dies ist KUMULATIV: 18 → 18b → 18c → 18d
-                        cum_width_by_base[next_base_num] = cum_width_by_base.get(next_base_num, 0.0) + next_token_w
+                        # WICHTIG: Für die BASIS-Zeile, addiere auch die Sprecher-Spalten-Breite!
+                        # Für gestaffelte Zeilen, addiere nur die Token-Breite.
+                        next_is_staggered = _is_staggered_label(next_line_label) if next_line_label else False
+                        
+                        if not next_is_staggered:
+                            # BASIS-Zeile: Setze kumulative Breite = Sprecher + Text
+                            next_speaker_w = _speaker_col_width(next_speaker) if next_speaker else 0.0
+                            cum_width_by_base[next_base_num] = next_speaker_w + next_token_w
+                        else:
+                            # Gestaffelte Zeile: Addiere nur Token-Breite
+                            cum_width_by_base[next_base_num] = cum_width_by_base.get(next_base_num, 0.0) + next_token_w
                 
                 # OPTIMIERTE LÖSUNG gegen weiße Flächen:
                 # Problem: Große KeepTogether-Blöcke erzwingen zu früh Seitenumbrüche
@@ -2960,13 +2968,13 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 elements.append(Spacer(1, INTER_PAIR_GAP_MM * MM))
 
             # Nach dem Rendern: JEDE Zeile fügt ihre Breite zur kumulative Breite hinzu
-            # Logik: 18 → 18b startet bei Breite_von_18
-            #        18b → 18c startet bei Breite_von_18 + Breite_von_18b
-            #        18c → 18d startet bei Breite_von_18 + Breite_von_18b + Breite_von_18c
+            # Logik: 18 → 18b startet bei (Sprecher_von_18 + Text_von_18)
+            #        18b → 18c startet bei (Sprecher_von_18 + Text_von_18 + Text_von_18b)
+            # WICHTIG: Wir speichern die ABSOLUTE Position, wo der Text endet!
             if base_num is not None and line_label:
-                # KRITISCH: Berechne NUR Token-Breite (OHNE Sprecher-Spalte)!
-                # Warum? Die Sprecher-Spalte ist IMMER da (auch bei gestaffelten Zeilen)
-                # Der Indent ist eine ZUSÄTZLICHE Spalte NACH der Sprecher-Spalte!
+                # KRITISCH: Berechne Token-Breite UND Sprecher-Breite der BASIS-Zeile!
+                # Warum? Jede Zeile hat unterschiedlich lange Sprecher!
+                # Die kumulative Breite ist die ABSOLUTE Position, wo diese Zeile endet.
                 this_token_w = measure_rendered_line_width(
                     gr_tokens, de_tokens,
                     gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
@@ -2975,9 +2983,17 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     hide_trans_flags=b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags für korrekte Breitenberechnung!
                 )
                 
-                # WICHTIG: JEDE Zeile (auch gestaffelte) addiert ihre Breite!
-                # Dies ist KUMULATIV: 18 → 18b → 18c → 18d
-                cum_width_by_base[base_num] = cum_width_by_base.get(base_num, 0.0) + this_token_w
+                # WICHTIG: Für die BASIS-Zeile, addiere auch die Sprecher-Spalten-Breite!
+                # Für gestaffelte Zeilen, addiere nur die Token-Breite.
+                is_staggered_line = _is_staggered_label(line_label) if line_label else False
+                
+                if not is_staggered_line:
+                    # BASIS-Zeile: Setze kumulative Breite = Sprecher + Text
+                    this_speaker_w = _speaker_col_width(speaker) if speaker else 0.0
+                    cum_width_by_base[base_num] = this_speaker_w + this_token_w
+                else:
+                    # Gestaffelte Zeile: Addiere nur Token-Breite (Sprecher ist unterschiedlich!)
+                    cum_width_by_base[base_num] = cum_width_by_base.get(base_num, 0.0) + this_token_w
 
             i += 1; continue
 
