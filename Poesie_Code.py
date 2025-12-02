@@ -972,20 +972,23 @@ def _is_staggered_label(label: str) -> bool:
     Nur Suffixe a-g sind erlaubt (h, i, j, etc. sind für andere Zwecke wie Insertions).
     
     Beispiele:
-    - "(18)" -> False (keine Suffix)
-    - "(18b)" -> True (Suffix 'b')
-    - "(18c)" -> True (Suffix 'c')
-    - "(9i)" -> False (Suffix 'i' ist für Insertions)
+    - "18" -> False (keine Suffix)
+    - "18b" -> True (Suffix 'b')
+    - "18c" -> True (Suffix 'c')
+    - "9i" -> False (Suffix 'i' ist für Insertions)
+    - "(18b)" -> True (mit Klammern - backward compatibility)
     """
-    if not label or len(label) < 3:
+    if not label or len(label) < 2:
         return False
     
-    # Format: "(zahl)" oder "(zahlsuffix)"
-    # Extrahiere letztes Zeichen VOR der schließenden Klammer
-    if label.endswith(')'):
-        suffix_char = label[-2]  # Das Zeichen vor ')'
-        if suffix_char.isalpha():
-            return suffix_char.lower() in 'abcdefg'
+    # Entferne Klammern falls vorhanden (für backward compatibility)
+    if label.startswith('(') and label.endswith(')'):
+        label = label[1:-1]
+    
+    # Prüfe ob letztes Zeichen ein Buchstabe ist
+    if label and label[-1].isalpha():
+        suffix_char = label[-1].lower()
+        return suffix_char in 'abcdefg'
     
     return False
 
