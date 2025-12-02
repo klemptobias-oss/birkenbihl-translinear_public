@@ -2,7 +2,10 @@
 // Nutzung: import { loadCatalog, ... } from './catalog.js';
 
 let _cache = null;
-const naturalCollator = new Intl.Collator('de', { numeric: true, sensitivity: 'base' });
+const naturalCollator = new Intl.Collator("de", {
+  numeric: true,
+  sensitivity: "base",
+});
 
 export async function loadCatalog() {
   if (_cache) return _cache;
@@ -49,10 +52,10 @@ export function listAuthors(cat, language, kind, category) {
       // Hole den Display-Namen aus dem ersten Werk
       const authorWorks = categoryNode[a];
       const firstWorkId = Object.keys(authorWorks)[0];
-      const displayName = firstWorkId 
-        ? authorWorks[firstWorkId].author_display || a.replace(/_/g, ' ')
-        : a.replace(/_/g, ' ');
-      
+      const displayName = firstWorkId
+        ? authorWorks[firstWorkId].author_display || a.replace(/_/g, " ")
+        : a.replace(/_/g, " ");
+
       return { author: a, display: displayName };
     })
     .sort((x, y) => naturalCollator.compare(x.display, y.display));

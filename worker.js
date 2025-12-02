@@ -335,6 +335,8 @@ export default {
     let language = "";
     let category = "";
     let workPath = "";
+    let pathPrefix = "";
+    let releaseName = "";
     let tagConfig = null;
     let releaseBase = "";
     let versmassFlag = "";
@@ -355,6 +357,8 @@ export default {
         language = (data.language ?? "").toString().trim();
         category = (data.category ?? "").toString().trim();
         workPath = (data.work_path ?? "").toString().trim();
+        pathPrefix = (data.path_prefix ?? "").toString().trim();
+        releaseName = (data.release_name ?? "").toString().trim();
         releaseBase = sanitizeReleaseBase(data.release_base);
         versmassFlag = (data.versmass ?? "").toString().trim();
         meterMode = (data.meter_mode ?? "").toString().trim();
@@ -368,6 +372,8 @@ export default {
         language = (url.searchParams.get("language") || "").trim();
         category = (url.searchParams.get("category") || "").trim();
         workPath = (url.searchParams.get("work_path") || "").trim();
+        pathPrefix = (url.searchParams.get("path_prefix") || "").trim();
+        releaseName = (url.searchParams.get("release_name") || "").trim();
         releaseBase = sanitizeReleaseBase(url.searchParams.get("release_base"));
         versmassFlag = (url.searchParams.get("versmass") || "").trim();
         meterMode = (url.searchParams.get("meter_mode") || "").trim();
@@ -390,6 +396,8 @@ export default {
         language = (form.get("language") || "").toString().trim();
         category = (form.get("category") || "").toString().trim();
         workPath = (form.get("work_path") || "").toString().trim();
+        pathPrefix = (form.get("path_prefix") || "").toString().trim();
+        releaseName = (form.get("release_name") || "").toString().trim();
         releaseBase = sanitizeReleaseBase(form.get("release_base"));
         versmassFlag = (form.get("versmass") || "").toString().trim();
         meterMode = (form.get("meter_mode") || "").toString().trim();
@@ -414,6 +422,8 @@ export default {
         language = (data.language ?? "").toString().trim();
         category = (data.category ?? "").toString().trim();
         workPath = (data.work_path ?? "").toString().trim();
+        pathPrefix = (data.path_prefix ?? "").toString().trim();
+        releaseName = (data.release_name ?? "").toString().trim();
         releaseBase = sanitizeReleaseBase(data.release_base);
         versmassFlag = (data.versmass ?? "").toString().trim();
         meterMode = (data.meter_mode ?? "").toString().trim();
@@ -574,6 +584,12 @@ export default {
     const metadataHeaders = [];
     if (releaseBase) {
       metadataHeaders.push("<!-- RELEASE_BASE:" + releaseBase + " -->");
+    }
+    if (pathPrefix) {
+      metadataHeaders.push("<!-- PATH_PREFIX:" + pathPrefix + " -->");
+    }
+    if (releaseName) {
+      metadataHeaders.push("<!-- RELEASE_NAME:" + releaseName + " -->");
     }
     if (tagConfig) {
       metadataHeaders.push(

@@ -1395,57 +1395,121 @@ async function performRendering() {
     return;
   }
 
-  // STRATEGIE für releaseBase (in Prioritäts-Reihenfolge):
+  // NEUE ARCHITEKTUR: Entkopplung von PFAD und NAME
+  // - PFAD: Von der Werkseite (state.workMeta.path) → für Ordnerstruktur
+  // - NAME: Vom Upload/Analysis → für Dateiname
+
+  // STRATEGIE für releaseBase (NAME-Komponente):
   // 1. state.uploadBase (wenn Datei hochgeladen wurde)
-  // 2. Generiere aus state.loadedBirkenbihlBase (eingebetteter Entwurf mit korrekter Sprach-Info)
-  // 3. Fallback: buildReleaseBase() (Work-Kontext, aber oft falsche Sprach-Kombination)
-  
+  // 2. Analysiere Text-Inhalt (author + work extrahieren)
+  // 3. Generiere aus state.loadedBirkenbihlBase (eingebetteter Entwurf)
+  // 4. Fallback: buildReleaseBase() (Work-Kontext)
+
   let releaseBase;
-  
+  let useWorkPagePath = false; // Flag: Soll Work-Page-Pfad verwendet werden?
+
   if (state.uploadBase) {
-    // FALL 1: Datei wurde hochgeladen → Nutze Upload-Basis
+    // FALL 1: Datei wurde hochgeladen → Nutze Upload-Basis für NAME
     console.log("🎯 Nutze Upload-Basis für PDF-Namen:", state.uploadBase);
     releaseBase = state.uploadBase;
-  } else if (state.loadedBirkenbihlBase) {
-    // FALL 2: Eingebetteter Entwurf → Generiere aus loadedBirkenbihlBase
-    // loadedBirkenbihlBase enthält z.B. "agamemnon_gr_en_stil1_Versmaß"
-    // Daraus bauen wir: "Autor_Werk_gr_en_Versmass"
-    const author = state.author || "";
-    const work = state.work || "";
+    useWorkPagePath = true; // Pfad von Work-Page verwenden
+  } else {
+    // FALL 2: Kein Upload → Analysiere Text-Inhalt
+    // Extrahiere Autor/Werk aus Text (## METADATUM: Author/Work)
+    const analysis = analyzeTranslinearText(draftText, "draft.txt");
     
-    // Extrahiere Sprach-Segment und Versmaß aus loadedBirkenbihlBase
-    const loadedBase = state.loadedBirkenbihlBase;
-    const langMatch = loadedBase.match(/_(gr|lat)_(de_en|en|de)(?:_stil1)?/);
-    const hasVersmaß = loadedBase.match(/_[Vv]ersm[aä][sß]{1,2}/);
-    
-    if (langMatch) {
-      const langs = `${langMatch[1]}_${langMatch[2]}`;
-      const versmaßSuffix = hasVersmaß ? "_Versmass" : "";
+    if (analysis.author && analysis.work && (analysis.hasDE || analysis.hasEN)) {
+      // Text hat Metadaten → Baue Namen daraus
+      const author = analysis.author.replace(/\s+/g, "_");
+      const work = analysis.work.replace(/\s+/g, "_");
+      
+      // Bestimme Sprach-Suffix
+      let langs = "";
+      if (analysis.language) {
+        if (analysis.hasDE && analysis.hasEN) {
+          langs = `${analysis.language}_de_en`;
+        } else if (analysis.hasDE) {
+          langs = `${analysis.language}_de`;
+        } else if (analysis.hasEN) {
+          langs = `${analysis.language}_en`;
+        }
+      }
+      
+      const versmaßSuffix = analysis.hasVersmaß ? "_Versmass" : "";
       releaseBase = `${author}_${work}_${langs}${versmaßSuffix}`;
-      console.log("📝 Generiere Release-Base aus loadedBirkenbihlBase:", {
-        loadedBase,
+      useWorkPagePath = true; // Pfad von Work-Page verwenden
+      
+      console.log("📝 Generiere Release-Base aus Text-Analyse:", {
+        author: analysis.author,
+        work: analysis.work,
         langs,
         versmaßSuffix,
-        releaseBase
+        releaseBase,
       });
+    } else if (state.loadedBirkenbihlBase) {
+      // FALL 3: Eingebetteter Entwurf → Generiere aus loadedBirkenbihlBase
+      const author = state.author || "";
+      const work = state.work || "";
+
+      // Extrahiere Sprach-Segment und Versmaß aus loadedBirkenbihlBase
+      const loadedBase = state.loadedBirkenbihlBase;
+      const langMatch = loadedBase.match(/_(gr|lat)_(de_en|en|de)(?:_stil1)?/);
+      const hasVersmaß = loadedBase.match(/_[Vv]ersm[aä][sß]{1,2}/);
+
+      if (langMatch) {
+        const langs = `${langMatch[1]}_${langMatch[2]}`;
+        const versmaßSuffix = hasVersmaß ? "_Versmass" : "";
+        releaseBase = `${author}_${work}_${langs}${versmaßSuffix}`;
+        console.log("📝 Generiere Release-Base aus loadedBirkenbihlBase:", {
+          loadedBase,
+          langs,
+          versmaßSuffix,
+          releaseBase,
+        });
+      } else {
+        // Fallback: Kann Sprache nicht extrahieren, nutze Work-Kontext
+        releaseBase = buildReleaseBase();
+        console.warn(
+          "⚠️ Konnte Sprache nicht aus loadedBirkenbihlBase extrahieren, nutze Work-Kontext"
+        );
+      }
     } else {
-      // Fallback: Kann Sprache nicht extrahieren, nutze Work-Kontext
+      // FALL 4: Fallback → Nutze Work-Kontext
       releaseBase = buildReleaseBase();
-      console.warn("⚠️ Konnte Sprache nicht aus loadedBirkenbihlBase extrahieren, nutze Work-Kontext");
+      if (!releaseBase) {
+        el.draftStatus.textContent =
+          "Metadaten fehlen – bitte laden Sie die Seite neu.";
+        return;
+      }
+      console.log("📄 Nutze Work-Basis für PDF-Namen (Fallback):", releaseBase);
     }
-  } else {
-    // FALL 3: Fallback → Nutze Work-Kontext (oft falsche Sprach-Kombination)
-    releaseBase = buildReleaseBase();
-    if (!releaseBase) {
-      el.draftStatus.textContent =
-        "Metadaten fehlen – bitte laden Sie die Seite neu.";
-      return;
-    }
-    console.log("📄 Nutze Work-Basis für PDF-Namen (Fallback):", releaseBase);
   }
 
   state.draftBase = releaseBase;
   persistDraftBase();
+
+  // NEU: Extrahiere Pfad-Prefix separat vom Namen
+  // Der releaseBase kann format haben: "GR_poesie_Drama_Autor_Werk__dateiname_gr_de"
+  // Wir trennen das auf in:
+  // - pathPrefix: "GR_poesie_Drama_Autor_Werk" (für Ordnerstruktur in PDFs)
+  // - releaseName: "dateiname_gr_de" (für PDF-Dateinamen)
+  
+  let pathPrefix = "";
+  let releaseName = releaseBase;
+  
+  if (releaseBase.includes("__")) {
+    // Format: "prefix__name" → Trenne
+    const parts = releaseBase.split("__");
+    pathPrefix = parts[0]; // Alles vor "__"
+    releaseName = parts.slice(1).join("__"); // Alles nach "__" (falls mehrere __)
+    console.log("🔧 Trenne Pfad-Prefix vom Namen:", { releaseBase, pathPrefix, releaseName });
+  } else {
+    // Kein "__" → Baue Pfad-Prefix aus Work-Kontext
+    if (state.workMeta?.meta_prefix) {
+      pathPrefix = state.workMeta.meta_prefix;
+      console.log("🔧 Verwende meta_prefix als Pfad-Prefix:", pathPrefix);
+    }
+  }
 
   // Erstelle eine Blob-Datei aus dem Editor-Inhalt
   const blob = new Blob([draftText], { type: "text/plain" });
@@ -1486,6 +1550,13 @@ async function performRendering() {
   if (state.workMeta?.path) {
     form.append("work_path", state.workMeta.path);
   }
+  // NEU: Sende path_prefix und release_name separat (statt kombiniert als release_base)
+  if (pathPrefix) {
+    form.append("path_prefix", pathPrefix);
+  }
+  form.append("release_name", releaseName);
+  // DEPRECATED: release_base wird nicht mehr verwendet (durch path_prefix + release_name ersetzt)
+  // Aber für Kompatibilität mit älteren Versionen noch senden
   form.append("release_base", releaseBase);
   form.append("translation_target", state.translationTarget);
   form.append("versmass", needsVersmassRendering() ? "true" : "false");

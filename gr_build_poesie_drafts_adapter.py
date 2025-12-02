@@ -9,7 +9,7 @@ DST_BASE = ROOT / "pdf_drafts" / "poesie_drafts"         # Ausgaben (spiegelbild
 RUNNER = ROOT / "poesie_pdf.py"                          # 24 Varianten (Poesie)
 
 META_HEADER_RE = re.compile(
-    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|VERSMASS|METER_MODE|HIDE_PIPES|SPRACHE|GATTUNG|KATEGORIE|AUTOR|WERK):(.*?)\s*-->',
+    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|PATH_PREFIX|RELEASE_NAME|VERSMASS|METER_MODE|HIDE_PIPES|SPRACHE|GATTUNG|KATEGORIE|AUTOR|WERK):(.*?)\s*-->',
     re.DOTALL | re.IGNORECASE
 )
 
@@ -250,12 +250,20 @@ def run_one(input_path: Path) -> None:
             # RELEASE_BASE kann normalisiert sein (z.B. gr_de statt gr_de_en), was zu 404s führt
             # Lösung: PDF-Name = Upload-Filename + Variant-Suffix
             
-            # Extrahiere den Pfad-Teil aus RELEASE_BASE (falls vorhanden) für die Ordnerstruktur
-            # Format: GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_stil1_birkenbihl
-            # Wir brauchen nur den Prefix: GR_poesie_Drama_Aischylos_Agamemnon__
+            # Extrahiere den Pfad-Teil aus PATH_PREFIX Metadaten (falls vorhanden)
+            # Fallback: Extrahiere aus RELEASE_BASE (alte Methode, für Kompatibilität)
+            # Format PATH_PREFIX: "GR_poesie_Drama_Aischylos_Agamemnon"
+            # Format RELEASE_BASE (alt): "GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_stil1_birkenbihl"
             path_prefix = ""
-            if release_base and "__" in release_base:
+            
+            if "PATH_PREFIX" in metadata and metadata["PATH_PREFIX"]:
+                # NEUE Methode: PATH_PREFIX aus Metadaten
+                path_prefix = metadata["PATH_PREFIX"] + "__"
+                print(f"→ Verwende PATH_PREFIX aus Metadaten: {path_prefix}")
+            elif release_base and "__" in release_base:
+                # ALTE Methode (Fallback): Extrahiere aus RELEASE_BASE
                 path_prefix = release_base.split("__")[0] + "__"
+                print(f"→ Verwende PATH_PREFIX aus RELEASE_BASE (Fallback): {path_prefix}")
 
             for name in relevant_pdfs:
                 bare = name[:-4] if name.lower().endswith(".pdf") else name
