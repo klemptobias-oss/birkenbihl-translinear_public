@@ -2107,6 +2107,19 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             else:
                 # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
                 t_processed = process_translation_token_poesie(t)
+                
+                # WICHTIG: Farbsymbol vom griechischen Token übernehmen (aus token_meta)
+                color_symbol = None
+                global_idx = i + idx  # i = Startindex des Slice im Block
+                token_meta = block.get('token_meta', [])
+                if global_idx < len(token_meta):
+                    meta = token_meta[global_idx]
+                    color_symbol = meta.get('color_symbol')
+                
+                # Farbsymbol VOR den deutschen Token setzen, damit format_token_markup es findet
+                if color_symbol:
+                    t_processed = color_symbol + t_processed
+                
                 de_html = format_token_markup(t_processed, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
                 # WICHTIG: Breite mit verarbeitetem Token messen (Pipes bereits ersetzt)
                 de_meas  = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
@@ -2130,6 +2143,19 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 else:
                     # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
                     t_processed = process_translation_token_poesie(t)
+                    
+                    # WICHTIG: Farbsymbol vom griechischen Token übernehmen (aus token_meta)
+                    color_symbol = None
+                    global_idx = i + idx  # i = Startindex des Slice im Block
+                    token_meta = block.get('token_meta', [])
+                    if global_idx < len(token_meta):
+                        meta = token_meta[global_idx]
+                        color_symbol = meta.get('color_symbol')
+                    
+                    # Farbsymbol VOR den englischen Token setzen, damit format_token_markup es findet
+                    if color_symbol:
+                        t_processed = color_symbol + t_processed
+                    
                     en_html = format_token_markup(t_processed, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
                     # WICHTIG: Breite mit verarbeitetem Token messen (Pipes bereits ersetzt)
                     en_meas  = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
