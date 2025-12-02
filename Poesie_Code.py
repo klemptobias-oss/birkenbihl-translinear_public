@@ -2741,8 +2741,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         
                         if not next_is_staggered:
                             # BASIS-Zeile: Setze kumulative Breite = Sprecher + Text
-                            next_speaker_w = _speaker_col_width(next_speaker) if next_speaker else 0.0
-                            cum_width_by_base[next_base_num] = next_speaker_w + next_token_w
+                            # KRITISCH: Verwende next_current_speaker_width_pt (berechnet VOR dem Rendering)!
+                            # Dies ist die GLEICHE Breite, die in build_tables_for_pair() verwendet wurde!
+                            cum_width_by_base[next_base_num] = next_current_speaker_width_pt + next_token_w
                         else:
                             # Gestaffelte Zeile: Addiere nur Token-Breite
                             cum_width_by_base[next_base_num] = cum_width_by_base.get(next_base_num, 0.0) + next_token_w
@@ -2972,9 +2973,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             #        18b → 18c startet bei (Sprecher_von_18 + Text_von_18 + Text_von_18b)
             # WICHTIG: Wir speichern die ABSOLUTE Position, wo der Text endet!
             if base_num is not None and line_label:
-                # KRITISCH: Berechne Token-Breite UND Sprecher-Breite der BASIS-Zeile!
-                # Warum? Jede Zeile hat unterschiedlich lange Sprecher!
-                # Die kumulative Breite ist die ABSOLUTE Position, wo diese Zeile endet.
+                # KRITISCH: Berechne Token-Breite
                 this_token_w = measure_rendered_line_width(
                     gr_tokens, de_tokens,
                     gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
@@ -2989,8 +2988,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 
                 if not is_staggered_line:
                     # BASIS-Zeile: Setze kumulative Breite = Sprecher + Text
-                    this_speaker_w = _speaker_col_width(speaker) if speaker else 0.0
-                    cum_width_by_base[base_num] = this_speaker_w + this_token_w
+                    # KRITISCH: Verwende current_speaker_width_pt (berechnet VOR dem Rendering)!
+                    # Dies ist die GLEICHE Breite, die in build_tables_for_pair() verwendet wurde!
+                    cum_width_by_base[base_num] = current_speaker_width_pt + this_token_w
                 else:
                     # Gestaffelte Zeile: Addiere nur Token-Breite (Sprecher ist unterschiedlich!)
                     cum_width_by_base[base_num] = cum_width_by_base.get(base_num, 0.0) + this_token_w
