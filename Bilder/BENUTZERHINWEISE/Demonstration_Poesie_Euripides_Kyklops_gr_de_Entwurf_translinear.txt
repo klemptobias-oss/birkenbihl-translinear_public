@@ -1,6 +1,6 @@
 ==== Kyklops (ehemals) ====
 === Demonstration ===
-== Wichtigster Teil: Kommentare, Insertionen, (HideTags), (HideTrans) ==
+== Teil 1: Korrektur, Kommentar, Insertion, HideTags, HideTrans ==
 (1) [Σιληνός:] Ὦ(ij)(HideTags) Βρόμιε(V)(HideTags), διὰ(Prp)(HideTags) σὲ(Pr)(A)(HideTags) μυρίους(Adj)(A)(HideTags) ἔχω(Prä)(Akt)(HideTags) πόνους(A)(HideTags)
 (1) [Σιληνός:] o Bromios, durch dich unzählige habe Mühen
 (2) [Σιληνός:] νῦν(Adv)(HideTags) χὥτʼ(Kon)(HideTags) ἐν(Prp)(HideTags) ἥβῃ(D)(HideTags) τοὐμὸν(Adj)(A)(HideTags) εὐσθένει(D)(HideTags) δέμας(A)(HideTags)·
@@ -15,32 +15,40 @@
 (6) [Σιληνός:] rechts deinem Fuß Schildträger geworden
 (7) [Σιληνός:] Ἐγκέλαδον(Prä)(Akt) ἰτέαν(Prä)(Akt) εἰς(Prä)(Akt) μέσην(N) θενὼν(G) δορὶ(D)
 (7) [Σιληνός:] Enkelados Weide in Mitte gesetzt mit|dem|Speer
-(8) [Σιληνός:] ἔκτεινα(Aor)(Akt)— φέρʼ(Prä)(Imv)(Akt) ἴδω(Aor)(Knj)(Akt), τοῦτʼ(Pr)(A) ἰδὼν(AorS)(Akt)(N) ὄναρ(Adv) λέγω(Prä)(Akt);
+(8) [Σιληνός:] ἔκτεινα(Aor)(Akt)— φέρʼ(Prä)(Imv)(Akt) ἴδω(Aor)(Knj)(Akt), τοῦτʼ(Pr)(A) ἰδὼν(AorS)(Akt)(N) ὄναρ(A) λέγω(Prä)(Akt);
 (8) [Σιληνός:] ich tötete— bring möge|ich|sehen, dieses gesehen|habend im|Traum sage ich;
-(9) [Σιληνός:] οὐ(Pt) μὰ(Prp) Δίʼ(A), ἐπεὶ(Kon) καὶ(Kon) σκῦλʼ(A) ἔδειξα(Aor)(Akt) βακχίῳ(D).
-(9) [Σιληνός:] Zeus, da auch Beute zeigte dem|Bacchanten.
-(9i) [Ὀδυσσεύς:] μῆνιν(A) ἄειδε(Prä)(Akt)(Imv) θεὰ(V) Πηληϊάδεω(G) Ἀχιλῆος(G)
-(9i) [Ὀδυσσεύς:] Zorn sing Göttin des|Peleus|Sohnes des|Achilleus
-(10) [Σιληνός:] οὐλομένην(Adj)(A), ἣ(Pr)(N) μυρίʼ(Adj)(A) Ἀχαιοῖς(D) ἄλγεʼ(A) ἔθηκε(AorS)(Akt),
-(10) [Σιληνός:] verderblich, die unzählige den|Achaiern Schmerzen setzte,
-(1-10k) Beispiel für einen "Bereichskommentar", der mit (Zeilennummer - Zeilennummer + k) im Translinear.txt platziert, erzeugbar ist, für die Zeilen 1-10: In den ersten 2 Zeilen wurde jedem antiken Wort im translinear.txt der (HideTags) Tag manuell gegeben. Die Tags sind daher auch im _Tag PDF unsichtbar. In den Zeilen 3-4 wurden jedem antiken Wort der Tag (HideTrans) gegeben. Es kollabiert die Übersetzungszeile, falls keine Übersetzungen darin enthalten sind (es können auch nur einzelne Wörter markiert werden mit diesen Tags, es muss nicht stets die ganze Zeile sein). In den Zeilen 5-6 wurden jedem antiken Wort beide Tags gegeben, auch hier kollabiert dann die Übersetzungszeile und wir haben ebenfalls keine Grammatiktags. In Zeile 7 wurden Grammatiktags manuell "korrigiert" (von einem Amateur, wie man sieht, mit offensichtlichen Fehlern, man könnte aber auch Fehler richtigstellen). Falsch gesetzte Tags rufen falsche Farben hervor. In Zeile 8 wurde für das erste Wort "ich tötete" statt "ich|tötete" und für das letzte Wort "sage ich" statt sage|ich übersetzt. Das Ergebnis ist Textzeilenverrutschung und ebenfalls offensichtlich "unpassende" Farben (das Wort "ich" in grün). In Zeile 9 hat der imaginäre Benutzer die ersten 2 Wörter der Übersetzungszeile (nicht bei [Zeus, ...]) unklugerweise einfach so aus dem translinear.txt gelöscht (wohl, um sie unsichtbar zu machen?), anstatt sie mit οὐ(Pt)(HideTrans) μὰ(Prp)(HideTrans) ordnungsgemäß unsichtbar zu machen. Das Resultat ist die wieder Verschiebung, da diese deutschen Wörter nun fehlen und andere Wörter "nachrücken". Zwischen Zeile 9 und 10 wurde mit (9i) eine Insertionszeile eingefügt (Odysseus meldet sich plötzlich zu Wort, 2 sprachig und 2 zeilig im 2 sprachigen translinear.txt und 3 sprachig und 3 zeilig im 3 sprachigen translinear.txt). In Zeile 10 wurde schlicht der Text durch den gewünschten text durch manuelle Ersetzung ersetzt. Stets wurde bei allen Änderungen die "bereits vorhandene Grundstruktur" der gegebenen translinear.txt-Datei beachtet (z.B. dass vor jeder Zeile ein Sprecher steht in diesem konkreten translinear.txt aus dem Bereich Drama). Wenn man die Regeln beachtet, kann man so gut wie alle Fehler mit der einen oder anderen Methode beheben und das gewünschte Dokument zuverlässig erzeugen.
+(8i) [Σιληνός:] ἔκτεινα(Aor)(Akt)— φέρʼ(Prä)(Imv)(Akt) ἴδω(Aor)(Knj)(Akt), τοῦτʼ(Pr)(A) ἰδὼν(AorS)(Akt)(N) ὄναρ(A) λέγω(Prä)(Akt)(HideTags);
+(8i) [Σιληνός:] ich tötete— bring möge|ich|sehen, dieses gesehen|habend im|Traum sage ich;
+(9) [Σιλ:] ἔκτεινα(Aor)(Akt)— φέρʼ(Prä)(Imv)(Akt) ἴδω(Aor)(Knj)(Akt), τοῦτʼ(Pr)(A) ἰδὼν(AorS)(Akt)(N) ὄναρ(A) λέγω(Prä)(Akt);
+(9) [Σιλ:] ich tötete— bring möge|ich|sehen, dieses gesehen|habend im|Traum sage ich;
+(9i) [Σιληνός:] οὐ(Pt) μὰ(Prp) Δίʼ(A), ἐπεὶ(Kon) καὶ(Kon) σκῦλʼ(A) ἔδειξα(Aor)(Akt) βακχίῳ(D).
+(9i) [Σιληνός:] Zeus, da auch Beute zeigte dem|Bacchanten.
+(10) μῆνιν(A) ἄειδε(Prä)(Akt)(Imv) θεὰ(V) Πηληϊάδεω(G) Ἀχιλῆος(G)
+(10) Zorn sing Göttin des|Peleus|Sohnes des|Achilleus
+(1-10k) Beispiel für einen "Bereichskommentar", der mit (Zeilennummer - Zeilennummer + k) im Translinear.txt platziert, erzeugbar ist, für die Zeilen 1-10: In den ersten 2 Zeilen wurde jedem antiken Wort im translinear.txt der (HideTags) Tag manuell gegeben. Die Tags sind daher auch im _Tag PDF unsichtbar. In den Zeilen 3-4 wurden jedem antiken Wort der Tag (HideTrans) gegeben. Es kollabiert die Übersetzungszeile, falls keine Übersetzungen darin enthalten sind (es können auch nur einzelne Wörter markiert werden mit diesen Tags, es muss nicht stets die ganze Zeile sein). In den Zeilen 5-6 wurden jedem antiken Wort beide Tags gegeben, auch hier kollabiert dann die Übersetzungszeile und wir haben ebenfalls keine Grammatiktags. In Zeile 7 wurden Grammatiktags manuell "korrigiert" (von einem Amateur, wie man sieht, mit offensichtlichen Fehlern, man könnte aber auch Fehler richtigstellen). Falsch gesetzte Tags rufen falsche Farben hervor. In Zeile 8 wurde für das erste Wort "ich tötete" statt "ich|tötete" und für das letzte Wort "sage ich" statt sage|ich übersetzt. Das Ergebnis ist Textzeilenverrutschung und ebenfalls offensichtlich "unpassende" Farben (das Wort "ich" in grün). Manche Zeilen Brechen um, wenn sie zu lang sind. Insertionszeile (8i) zeigt eine Lösung auf: die unnötigen Tags des einfachen Wortes λέγω wurden ordnungsgemäß mit (HideTags) entfernt, wobei die Farbe erhalten bleibt, die Tags sollten ohnehin dem Leser bekannt sein. Andere Lösungen könnten sein, den Sprechernamen zu verkürzen, was in Zeile 9 dargestellt ist (könnte vor allem in lat. Dramen relevant sein, wo Sprecher teilweise aus drei Namen bestehen). Es ist erkennbar, dass der Sprecher immer bei einem "Sprecherwechsel" neu im PDF erscheint (also von Zeile 8i auf 9 und von 9 auf 9i). In Zeile 9i hat der imaginäre Benutzer die ersten 2 Wörter der Übersetzungszeile (nicht bei [Zeus, ...]) unklugerweise einfach so aus dem translinear.txt gelöscht (wohl, um sie unsichtbar zu machen?), anstatt sie mit οὐ(Pt)(HideTrans) μὰ(Prp)(HideTrans) ordnungsgemäß unsichtbar zu machen. Das Resultat ist die wieder Verschiebung, da diese deutschen Wörter nun fehlen und andere Wörter "nachrücken". In Zeile 10 wurde schlicht der vorher darstehende Text durch den gewünschten Text durch manuelle Ersetzung ersetzt. Es ist eine typische Epos Zeile ohne Sprecher und fällt daher in der Darstellung deutlich aus dem Raster. Stets sollte also bei allen Änderungen die "bereits vorhandene Grundstruktur" der gegebenen translinear.txt-Datei beachtet (z.B. dass vor jeder Zeile ein Sprecher steht in diesem konkreten translinear.txt aus dem Bereich Drama).
 == Teil 2: häufige Fehler und mehr ==
 (11) [Σιληνός:] ἐπεὶ γὰρ(Pt) Ἥρα σοι(Pr)(D) γένος Τυρσηνικὸν(Adj)(A)
 (11) [Σιληνός:] weil denn Hera dir Geschlecht tyrrhenisch
-(12) [Σιληνός:] [ λῃστῶν(G) ἐπῶρσεν(Aor)(Akt) , ὡς(Kon) ? ὁδηθείης(Aor)(Pas)(Op)  μακράν(Adv),
-(12) [Σιληνός:] der|Räuber aufstachelte, damit geführt|würdest weit,
-(13) [Σιληνός]: αὐτὸς(Pr)(N) λαβὼν(AorS)(Akt)(N) ηὔθυνον(Imp)(Akt) ἀμφῆρες(Adj)(A) δόρυ(A),
-(13) [Σιληνός]: selbst genommen|habend richtete zweigriffigen Speer,
-(14) [Λυσιστράτη:] πλὴν(Kon) ἥ(Pr)(N)(Sg) γʼ(Pt) ἐμὴ(Adj)(N) κωμῆτις(N) ἥδʼ(Pr)(N)(SpezialTag) ἐξέρχεται(Prä)(M/P)(Dep).
+(11i) [Σιληνός:] ἐπεὶ(Kon) γὰρ(Pt) Ἥρα  Ἥρα(N)(HideTags)  Ἥρα(N)(HideTags)(HideTrans) -Ἥρα(Kon) +Ἥρα(Pt) #Ἥρα(Aor)(Akt) §Ἥρα(Adj)(N) $Ἥρα(N)
+(11i) [Σιληνός:] weil denn Hera Hera Hera Hera Hera Hera Hera Hera
+(12) [Σιληνός]: αὐτὸς(Pr)(N) λαβὼν(AorS)(Akt)(N) ηὔθυνον(Imp)(Akt) ἀμφῆρες(Adj)(A) δόρυ(A),
+(12) [Σιληνός]: selbst genommen|habend richtete zweigriffigen Speer,
+(12i) [Σιληνός]: αὐτὸς(Pr)(N)(Sg) λαβὼν(AorS)(Akt)(N)(Part) ηὔθυνον(Imp)(Akt) ἀμφῆρες(Adj)(A) δόρυ(A)(SpezialTag),
+(12i) [Σιληνός]: selbst genommen|habend richtete zweigriffigen Speer,
+(13) [Σιληνός:] [ λῃστῶν(G) ἐπῶρσεν(Aor)(Akt) , ὡς(Kon) ? ὁδηθείης(Aor)(Pas)(Op) μακράν(Adv),
+(13) [Σιληνός:] der|Räuber aufstachelte, damit geführt|würdest weit,
+(13i) [Σιληνός:] [λῃστῶν(G) ἐπῶρσεν(Aor)(Akt), ὡς(Kon) ὁδηθείης(Aor)(Pas)(Op) μακράν(Adv),
+(13i) [Σιληνός:] [der|Räuber aufstachelte, damit geführt|würdest weit,
+(500k) Beispiel für einen "Stellenkommentar", mit (Zeilennummer + k) im translinear.txt erzeugbar. Der Kommentar erscheint stets dort, wo er im translinear.txt platziert wird (unabhängig von der angegebenen Zeilennummer von 500). In Zeile 11 fehlen an 3 Wörtern Grammatiktags (vielleicht wurden sie gelöscht, weil sie nicht dargestellt werden sollten?). Folgen sind u.a. Farbverlust z.B. bei dem Nomen (Hera). Außerdem: würde man nun im Builder bei allen Konjunktionen die "Übersetzung ausblenden" angehakt haben, aber eine offensichtliche Konjunktion wie ἐπεὶ Zeile 11 trägt diesen Tag nicht, wird die Übersetzung nicht korrekt ausgeblendet. Zeile 11i demonstriert die verschiedenen Möglichkeiten im translinear.txt das Wort  Ἥρα zu taggen oder zu Färben. Durch die Symbole - (grün), + (blau), # (rot), $ (orange) und § (violett) können Wörter auch unabhängig von ihren Tags gefärbt werden.  Ἥρα(Pt) zeigt einen möglichen Trick: Wenn man sowieso Partikel ohne Tag, ohne Übersetzung und in schwarz darstellen möchte, kann man Wörter mit (Pt) taggen, dann werden sie ebenfalls auf diese Weise dargestellt. In Zeile 12 ist der Sprechername nicht in der üblichen (aus der Umgebung erkennbaren) Weise dargestellt und erzeugt daher Fehler bei der Sprechererkennung. Zeile 12i enthält "selbst erfundene", nicht zulässige Tags (Part), (SpezialTag), (Sg). Zeile 13 hat alleinstehende Satzzeichen, die als "Wörter" erkannt werden können und die Wort-für-Wort Reihenfolge stören. Der Fix ist, sie mit den Wörtern OHNE Leerzeichen DIREKT zu verbinden (wie normale Punkte und Kommata auch normal verbunden sind), oder sie auch einfach zu löschen, falls sie falsch sind. Zeile 13i zeigt dies auf. Wenn man diese simplen Regeln beachtet, kann man so gut wie alle potentiellen Fehler beheben und das gewünschte Dokument in allen Farben und mit oder ohne alle Übersetzungen zuverlässig und zügig erzeugen.
+(14) [Λυσιστράτη:] -πλὴν(Kon) -ἥ(Pr)(N) -γʼ(Pt) -ἐμὴ(Adj)(N) -κωμῆτις(N) -ἥδʼ(Pr)(N) -ἐξέρχεται(Prä)(M/P).
 (14) [Λυσιστράτη:] ausgenommen sie doch meine Mitbürgerin diese|hier tritt|hinaus.
-(500k) Beispiel für einen "Stellenkommentar", mit (Zeilennummer + k) im translinear.txt erzeugbar. Der Kommentar erscheint stets dort, wo er im translinear.txt platziert wird (unabhängig von der angegebenen Zeilennummer von 500). Zeilen 11-14 enthalten weitere typische Fehler und demonstrieren ihr Erscheinungsbild. In Zeile 11 fehlen an 3 Wörtern Grammatiktags. Folgen sind u.a. Farbverlust z.B. bei dem Nomen (Hera). Außerdem: würde man nun im Builder bei allen Konjunktionen die "Übersetzung ausblenden" anhaken, aber eine offensichtliche Konjunktion wie ἐπεὶ Zeile 11 trägt diesen Tag nicht, wird die Übersetzung nicht korrekt ausgeblendet, da das Wort nicht als Konjunktion erkannt wird. Zeile 12 hat alleinstehende Satzzeichen, die als "Wörter" erkannt werden können und die Wort-für-Wort Reihenfolge stören. Der Fix ist, sie mit den Wörtern OHNE Leerzeichen DIREKT zu verbinden (wie normale Punkte und Kommata auch normal verbunden sind), oder sie auch einfach zu löschen, falls sie falsch sind. In Zeile 13 ist der Sprechername nicht in der üblichen (aus der Umgebung erkennbaren) Weise dargestellt und erzeugt daher Fehler bei der Sprechererkennung. Zeile 14 enthält "selbst erfundene", nicht zulässige Tags (Dep), (SpezialTag), (Sg).
-(15) [Λυσιστράτη:] χαῖρʼ(Prä)(Imv)(Akt) ὦ(ij) Καλονίκη(V).
+(15) [Λυσιστράτη:] +χαῖρʼ +ὦ +Καλονίκη.
 (15) [Λυσιστράτη:] sei|gegrüßt o Kalonike.
-(15b) [Καλονίκη:] καὶ(Kon) σύ(Pr)(N) γʼ(Pt) ὦ(ij) Λυσιστράτη(V).
-(15b) [Καλονίκη:] und du doch o Lysistrata.
-(15c) [Λυσιστράτη:] ἄειδε(Prä)(Akt)(Imv) θεὰ(V)
-(15c) [Λυσιστράτη:] sing Göttin
-(16) [Χρεμύλος:] ὥστʼ(Kon) οὐδὲ(Pt) μεστὸς(Adj)(N) σοῦ(Pr)(G) γέγονʼ(Per)(Akt) οὐδεὶς(Pr)(N) πώποτε(Adv).
+(15a) [Καλονίκη:] $καὶ(Kon) $σύ(Pr)(N) $γʼ(Pt) $ὦ(ij) $Λυσιστράτη(V).
+(15a) [Καλονίκη:] und du doch o Lysistrata.
+(15b) [Λυσιστράτη:] §ἄειδε(Prä)(Akt)(Imv) §θεὰ(V)
+(15b) [Λυσιστράτη:] sing Göttin
+(16) [Χρεμύλος:] #ὥστʼ(Kon) #οὐδὲ(Pt) #μεστὸς(Adj)(N) #σοῦ(Pr)(G) #γέγονʼ(Per)(Akt) #οὐδεὶς(Pr)(N) #πώποτε(Adv).
 (16) [Χρεμύλος:] sodass auch|nicht voll deiner geworden|ist niemand jemals.
 (17) [Χρεμύλος:] τῶν(Art)(G) μὲν(Pt) γὰρ(Pt) ἄλλων(Adj)(G) ἐστὶ(Prä)(Akt) πάντων(Adj)(G) πλησμονή(N),
 (17) [Χρεμύλος:] der zwar denn anderen ist aller Fülle,
@@ -54,12 +62,12 @@
 (18d) [Καρίων:] der|Süßspeisen
 (19) [Χρεμύλος:] τιμῆς(G)
 (19) [Χρεμύλος:] der|Ehre
-(19b) [Καρίων:] πλακούντων(G)
-(19b) [Καρίων:] der|Kuchen
-(19c) [Χρεμύλος:] ἀνδραγαθίας(G)
-(19c) [Χρεμύλος:] der|Tapferkeit
-(19d) [Καρίων:] ἰσχάδων(G)
-(19d) [Καρίων:] der|Trockenfeigen
+(19c) [Καρίων:] πλακούντων(G)
+(19c) [Καρίων:] der|Kuchen
+(19d) [Χρεμύλος:] ἀνδραγαθίας(G)
+(19d) [Χρεμύλος:] der|Tapferkeit
+(19e) [Καρίων:] ἰσχάδων(G)
+(19e) [Καρίων:] der|Trockenfeigen
 (20) [Χρεμύλος:] φιλοτιμίας(G)
 (20) [Χρεμύλος:] der|Ehrsucht
 (20b) [Καρίων:] μάζης(G)
@@ -105,7 +113,7 @@
 (1) [Ὀδυσσεύς:] Zorn sing Göttin des|Peleus|Sohnes des|Achilleus
 (9i) [Καλονίκη:] οὐλομένην(Adj)(A), ἣ(Pr)(N) μυρίʼ(Adj)(A) Ἀχαιοῖς(D) ἄλγεʼ(A) ἔθηκε(AorS)(Akt),
 (9i) [Καλονίκη:] verderblich, die unzählige den|Achaiern Schmerzen setzte,
-(29-777k) Letzter Poesiekommentar: Zeile 15, 15b und 15c (entnommen aus Lysistrate) demonstrieren die "b c d e" Zeilen Logik in Poesie Buildern (tritt vor allem bei gr. Komödien auf): Zeile 15b beginnt erst dort, wo Zeile 15 aufhört. So wird Ihre Zugehörigkeit zueinander deutlicher (die b c d e Zeilen kommen stets aus dem Original-Perseus Text). Das selbe passiert mit Zeile 15c (die natürlich frei dazuerfunden ist). Ab Zeile 16 ist dieses auch an einem Plutos Ausschnitt gezeigt. Zeilen (18i) bis (29i) zeigen, wie man diese Darstellung umgehen könnte. Zeile (22i) zeigt einen weiteren subtilen typischen Fehler, wenn die Sprecherbox ungewollt mit dem Text verbunden ist. Zeilen (777i) und (333) demonstrieren, dass Poesie Zeilen stets dort stehen, wo sie platziert werden (unabhängig von der Zeilennummer) und sie zeigen den Renderprozess bei "Doppelzeilen" (also doppelten Doppelzeilen in diesem Fall, oder auch doppelten Dreifachzeilen in 3-sprachigen translinear.txt Dateien) und zeigen, wieso man auf diese Weise nicht sinnvoll zusätzlichen Text erzeugen kann und man in Poesie oft auf Insertionszeilen angewiesen ist. Alle Zeilennummern nach (=== Gedicht 1 === kamen bereits oben einmal vor. Sie sollen die "Gedichtslogik" demonstrieren, die ermöglicht, dass bei Texten mit z.B. 20 Gedichten (homerische Hymnen oder anderes), doch Zeilen mehrfach vorkommen dürfen, nämlich einmal pro Gedicht (Hinweis: nutzbar wäre dies z.B. um 10 Passagen aus 10 Ilias Gesängen in ein translinear.txt zu kopieren und sie durch Gedicht 1, Gedicht 2... abgetrennt nacheinander darzustellen, auch wenn sich die Zeilennummern kreuzen. Es könnten auch verschiedene Poesie Texte oder Passagen (wie in diesem Demonstrations.txt auch geschehen) so kombiniert werden.
+(29-777k) Dritter Kommentar: Zeile 15, 15b und 15c (entnommen aus Lysistrate) demonstrieren die "a b c d e f g" Zeilen Logik in Poesie Buildern (tritt vor allem bei gr. Komödien auf): Zeile 15a beginnt erst dort, wo Zeile 15 aufhört. So wird Ihre Zugehörigkeit zueinander deutlicher (die a b c d e Zeilen kommen stets aus dem Original-Perseus Text). Das selbe passiert mit Zeile 15b (die natürlich frei dazuerfunden ist). Ab Zeile 16 ist dieses auch an einem Plutos Ausschnitt gezeigt. Zeilen (18i) bis (29i) zeigen, wie man diese Darstellung umgehen könnte. Zeile (22i) zeigt einen weiteren subtilen typischen Fehler, wenn die Sprecherbox ungewollt mit dem Text verbunden ist. Zeilen (777i) und (333) demonstrieren, dass Poesie Zeilen stets dort stehen, wo sie platziert werden (unabhängig von der Zeilennummer) und sie zeigen den Renderprozess bei "Doppelzeilen" (also doppelten Doppelzeilen in diesem Fall, oder auch doppelten Dreifachzeilen in 3-sprachigen translinear.txt Dateien) und zeigen, wieso man auf diese Weise nicht sinnvoll zusätzlichen Text erzeugen kann und man in Poesie oft auf Insertionszeilen angewiesen ist. Alle Zeilennummern nach (=== Gedicht 1 === kamen bereits oben einmal vor. Sie sollen die "Gedichtslogik" demonstrieren, die ermöglicht, dass bei Texten mit z.B. 20 Gedichten (homerische Hymnen oder anderes), doch Zeilen mehrfach vorkommen dürfen, nämlich einmal pro Gedicht (Hinweis: nutzbar wäre dies z.B. um 10 Passagen aus 10 Ilias Gesängen in ein translinear.txt zu kopieren und sie durch Gedicht 1, Gedicht 2... abgetrennt nacheinander darzustellen, auch wenn sich die Zeilennummern kreuzen. Es könnten auch verschiedene Poesie Texte oder Passagen (wie in diesem Demonstrations.txt auch geschehen) so kombiniert werden.
 (999k) Prosakommentar: Die Arbeit mit Prosatexten und allen anderen Texten sollte aus den ausführlichen Darstellungen zur Poesie nun ersichtlich sein. Herzlichen Glückwunsch, falls Sie es bis hier her geschafft haben! Sie sollten nun über ca. 95% aller erdenklichen Probleme lösen können. Nun kurz zu Prosa: Beim Einsenden eines Textes in den Prosa-Builder (also dem Einsenden in eine Prosa-Werkseite wie Platon Symposion) wird ein Fließtext erzwungen. Die Zeilenangaben dienen nur zur Strukturierung und werden im PDF unsichtbar (ca. 10 Wörter pro translinear.txt Zeile). Wörter können durch Insertionszeilen (meist unnötig) oder einfach durch Addition an die entsprechende Stelle im translinear.txt zum Fließtext hinzugefügt werden. Zur grundsätzlichen Nutzung und Funktionsweise von [Zitat Anfang] und [Zitat Ende] und [Quelle Anfang] [Quelle Ende] waren Beispiele bereits in den Benutzerhinweisen gegeben. Falls ein "Fließtext-Zitat" erscheinen soll, z.B. 50 Wörter, ist es am besten zwischen Zitat Anfang und Zitat Ende nur eine Translinearzeile mit 50 Wörtern (pro Zeile) zu schreiben. Werden 3 Homerverse zitiert, sollten auch 3 einzelne Zeilen geschrieben werden, um den "Originaltext" in seiner Struktur zu bewahren. Spezialfunktion in Prosa: alle Textzeilen (als translinear Doppel- oder Dreifachzeilen), die unter der Überschrift === Lyrik === stehen, werden, so wie Zitate auch, nicht in einen Fließtext gezwungen, sondern werden wie Poesie in ihrer ursprünglichen Zeilenstruktur erhalten (einziger realer Anwendungsfall bisher: De consolatione philosophiae 1, Prosatext mit Lyrikpartien). Andere Funktionen können durch Probieren (und Anschauen der translinear.txt für verschiedene Prosa-Werke) nun selbstständig eingesehen werden.
 (22) [Σιληνός:] ύκλωπες(N) οἰκοῦσʼ(Prä)(Akt)(N) ἄντρʼ(A) ἔρημʼ(Adj)(A) ἀνδροκτόνοι(Adj)(N).
 (22) [Σιληνός:] Kyklopen wohnend Höhlen öde männer|tötend.

@@ -2673,22 +2673,26 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     # Sammle die Zeilen
                     rendered_lines.append(KeepTogether(next_tables))
 
-                    # KRITISCHER FIX: Breite IMMER gutschreiben, nicht nur für gestaffelte Zeilen!
-                    # Auch BASIS-Zeilen (18) müssen gutgeschrieben werden, damit (18b) sie lesen kann!
+                    # KRITISCHER FIX: Breite NUR für BASIS-Zeilen gutschreiben!
+                    # Gestaffelte Zeilen (18a, 18b, 18c) LESEN die Breite, updaten sie aber NICHT!
                     if next_base_num is not None:
-                        # KRITISCH: Berechne Token-Breite MIT HideTrans-Berücksichtigung!
-                        next_token_w = measure_rendered_line_width(
-                            next_gr_tokens, next_de_tokens,
-                            gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
-                            remove_bars_instead=True,
-                            tag_config=tag_config,
-                            hide_trans_flags=pair_b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags für korrekte Breitenberechnung!
-                        )
+                        # Prüfe ob das eine BASIS-Zeile ist (ohne Suffix a-g)
+                        next_is_staggered = _is_staggered_label(next_line_label) if next_line_label else False
                         
-                        # WICHTIG: Sprecher-Spalte ist IMMER da (auch bei gestaffelten Zeilen, nur unsichtbar!)
-                        # Wir speichern NUR die Token-Breite, weil die Sprecher-Spalte immer gleich ist!
-                        # Die Einrückung ist relativ zur Sprecher-Spalte, nicht absolut!
-                        cum_width_by_base[next_base_num] = cum_width_by_base.get(next_base_num, 0.0) + next_token_w
+                        if not next_is_staggered:
+                            # NUR BASIS-Zeilen (18) updaten cum_width_by_base!
+                            # Gestaffelte Zeilen (18a, 18b) NICHT!
+                            next_token_w = measure_rendered_line_width(
+                                next_gr_tokens, next_de_tokens,
+                                gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
+                                remove_bars_instead=True,
+                                tag_config=tag_config,
+                                hide_trans_flags=pair_b.get('hide_trans_flags', [])
+                            )
+                            
+                            # Speichere Token-Breite für diese BASIS-Zeile
+                            # Gestaffelte Zeilen verwenden diesen Wert als Einrückung
+                            cum_width_by_base[next_base_num] = next_token_w
                 
                 # OPTIMIERTE LÖSUNG gegen weiße Flächen:
                 # Problem: Große KeepTogether-Blöcke erzwingen zu früh Seitenumbrüche

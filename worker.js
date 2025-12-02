@@ -526,7 +526,7 @@ export default {
     // KRITISCH: Wenn releaseName vom Frontend übergeben wurde, VERWENDE IHN!
     // Das Frontend weiß besser als wir, welcher Name gewünscht ist (z.B. Upload-Filename)!
     let baseName = "";
-    
+
     if (releaseName) {
       // Frontend hat explizit einen Namen vorgegeben → verwenden!
       // (z.B. "Demonstration_Poesie_Euripides_Kyklops_gr_de_Entwurf")
@@ -536,7 +536,7 @@ export default {
       // Fallback: Baue Namen aus Metadaten (author + work aus Text)
       const authorForName = stripUnsafe(author) || "";
       const workForName = stripUnsafe(work) || "Entwurf";
-      
+
       if (authorForName && workForName) {
         baseName = `${authorForName}_${workForName}${detectedLangSuffix}${versmassSuffix}`;
       } else if (workForName) {
