@@ -2675,10 +2675,18 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
 
                     next_gr_tokens = propagate_elision_markers(next_gr_tokens)
                     
-                    # Einrückung: NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
+                    # WICHTIG: Berechne Sprecher-Breite ZUERST (wird für Indent-Berechnung benötigt!)
+                    next_current_speaker_width_pt = _speaker_col_width(next_speaker) if next_speaker else 0.0
+                    
+                    # Einrückung: kumulative Breite aller bisherigen Teilverse dieses Basisverses
+                    # NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
+                    # KRITISCH: Ziehe die AKTUELLE Sprecher-Breite ab, da das Layout ist:
+                    #   Position = Sprecher-Spalte + Indent
+                    # Also: Indent = kumulative_Breite - aktuelle_Sprecher-Breite
                     next_indent_pt = 0.0
                     if next_base_num is not None and next_line_label and _is_staggered_label(next_line_label):
-                        next_indent_pt = max(0.0, cum_width_by_base.get(next_base_num, 0.0))
+                        cum_width = cum_width_by_base.get(next_base_num, 0.0)
+                        next_indent_pt = max(0.0, cum_width - next_current_speaker_width_pt)
 
                     next_has_versmass = has_meter_markers(next_gr_tokens)
                     
@@ -2695,7 +2703,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                             next_display_speaker = ''
                         last_speaker = next_speaker
                     
-                    next_current_speaker_width_pt = _speaker_col_width(next_speaker) if next_speaker else 0.0
+                    # Sprecher-Breite wurde bereits oben berechnet (für Indent-Berechnung)
 
                     next_tables = build_tables_for_pair(
                         next_gr_tokens, next_de_tokens,
@@ -2800,11 +2808,18 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             gr_tokens = propagate_elision_markers(gr_tokens)
             # <<<
 
+            # WICHTIG: Berechne Sprecher-Breite ZUERST (wird für Indent-Berechnung benötigt!)
+            current_speaker_width_pt = _speaker_col_width(speaker) if speaker else 0.0
+
             # Einrückung: kumulative Breite aller bisherigen Teilverse dieses Basisverses
             # NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
+            # KRITISCH: Ziehe die AKTUELLE Sprecher-Breite ab, da das Layout ist:
+            #   Position = Sprecher-Spalte + Indent
+            # Also: Indent = kumulative_Breite - aktuelle_Sprecher-Breite
             indent_pt = 0.0
             if base_num is not None and line_label and _is_staggered_label(line_label):
-                indent_pt = max(0.0, cum_width_by_base.get(base_num, 0.0))
+                cum_width = cum_width_by_base.get(base_num, 0.0)
+                indent_pt = max(0.0, cum_width - current_speaker_width_pt)
 
             # Prüfe auf Versmaß-Marker
             has_versmass = has_meter_markers(gr_tokens)
@@ -2824,9 +2839,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 last_speaker = speaker
                 last_was_heading = False
             
-            # Berechne Sprecher-Spaltenbreite für DIESE Zeile
-            # WICHTIG: Verwende den AKTUELLEN Sprecher für die Breite, auch wenn er nicht angezeigt wird!
-            current_speaker_width_pt = _speaker_col_width(speaker) if speaker else 0.0
+            # Sprecher-Breite wurde bereits oben berechnet (für Indent-Berechnung)
 
             tables = build_tables_for_pair(
                 gr_tokens, de_tokens,
