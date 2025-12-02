@@ -2116,12 +2116,15 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     meta = token_meta[global_idx]
                     color_symbol = meta.get('color_symbol')
                 
-                # Farbsymbol VOR den deutschen Token setzen, damit format_token_markup es findet
-                if color_symbol:
-                    t_processed = color_symbol + t_processed
+                # WICHTIG: Farbsymbol VOR den deutschen Token setzen FÜR format_token_markup
+                # (damit die Farbe erkannt wird)
+                t_with_color = color_symbol + t_processed if color_symbol else t_processed
                 
-                de_html = format_token_markup(t_processed, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
-                # WICHTIG: Breite mit verarbeitetem Token messen (Pipes bereits ersetzt)
+                # format_token_markup entfernt das Symbol und gibt farbigen HTML zurück
+                de_html = format_token_markup(t_with_color, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
+                
+                # KRITISCH: Breite OHNE Farbsymbol messen! (Symbol wurde von format_token_markup entfernt)
+                # Verwende t_processed (OHNE Symbol) für Breitenmessung!
                 de_meas  = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
                 de_width = slice_w[idx]
                 de_html_centered = center_word_in_width(de_html, de_meas, de_width, token_de_style.fontName, token_de_style.fontSize)
@@ -2152,12 +2155,13 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                         meta = token_meta[global_idx]
                         color_symbol = meta.get('color_symbol')
                     
-                    # Farbsymbol VOR den englischen Token setzen, damit format_token_markup es findet
-                    if color_symbol:
-                        t_processed = color_symbol + t_processed
+                    # WICHTIG: Farbsymbol VOR den englischen Token setzen FÜR format_token_markup
+                    t_with_color = color_symbol + t_processed if color_symbol else t_processed
                     
-                    en_html = format_token_markup(t_processed, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
-                    # WICHTIG: Breite mit verarbeitetem Token messen (Pipes bereits ersetzt)
+                    # format_token_markup entfernt das Symbol und gibt farbigen HTML zurück
+                    en_html = format_token_markup(t_with_color, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
+                    
+                    # KRITISCH: Breite OHNE Farbsymbol messen! (Symbol wurde von format_token_markup entfernt)
                     en_meas  = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
                     en_width = slice_w[idx]
                     en_html_centered = center_word_in_width(en_html, en_meas, en_width, token_de_style.fontName, token_de_style.fontSize)
@@ -2699,26 +2703,22 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     # Sammle die Zeilen
                     rendered_lines.append(KeepTogether(next_tables))
 
-                    # KRITISCHER FIX: Breite NUR für BASIS-Zeilen gutschreiben!
-                    # Gestaffelte Zeilen (18a, 18b, 18c) LESEN die Breite, updaten sie aber NICHT!
+                    # KRITISCHER FIX: JEDE Zeile fügt ihre Breite zur kumulativen Breite hinzu!
+                    # Logik: 18 → 18b startet bei Breite_von_18
+                    #        18b → 18c startet bei Breite_von_18 + Breite_von_18b
                     if next_base_num is not None:
-                        # Prüfe ob das eine BASIS-Zeile ist (ohne Suffix a-g)
-                        next_is_staggered = _is_staggered_label(next_line_label) if next_line_label else False
+                        # KRITISCH: Berechne NUR Token-Breite (OHNE Sprecher-Spalte)!
+                        next_token_w = measure_rendered_line_width(
+                            next_gr_tokens, next_de_tokens,
+                            gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
+                            remove_bars_instead=True,
+                            tag_config=tag_config,
+                            hide_trans_flags=pair_b.get('hide_trans_flags', [])
+                        )
                         
-                        if not next_is_staggered:
-                            # NUR BASIS-Zeilen (18) updaten cum_width_by_base!
-                            # Gestaffelte Zeilen (18a, 18b) NICHT!
-                            next_token_w = measure_rendered_line_width(
-                                next_gr_tokens, next_de_tokens,
-                                gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
-                                remove_bars_instead=True,
-                                tag_config=tag_config,
-                                hide_trans_flags=pair_b.get('hide_trans_flags', [])
-                            )
-                            
-                            # Speichere Token-Breite für diese BASIS-Zeile
-                            # Gestaffelte Zeilen verwenden diesen Wert als Einrückung
-                            cum_width_by_base[next_base_num] = next_token_w
+                        # WICHTIG: JEDE Zeile (auch gestaffelte) addiert ihre Breite!
+                        # Dies ist KUMULATIV: 18 → 18b → 18c → 18d
+                        cum_width_by_base[next_base_num] = cum_width_by_base.get(next_base_num, 0.0) + next_token_w
                 
                 # OPTIMIERTE LÖSUNG gegen weiße Flächen:
                 # Problem: Große KeepTogether-Blöcke erzwingen zu früh Seitenumbrüche
@@ -2940,30 +2940,25 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 # Letzte Zeile: normaler Abstand
                 elements.append(Spacer(1, INTER_PAIR_GAP_MM * MM))
 
-            # Nach dem Rendern: Breite tracken für gestaffelte Zeilen
-            # NUR BASIS-Zeilen (ohne Suffix) setzen cum_width_by_base!
-            # Gestaffelte Zeilen (18a, 18b, 18c) LESEN nur den Wert, schreiben NICHT!
+            # Nach dem Rendern: JEDE Zeile fügt ihre Breite zur kumulative Breite hinzu
+            # Logik: 18 → 18b startet bei Breite_von_18
+            #        18b → 18c startet bei Breite_von_18 + Breite_von_18b
+            #        18c → 18d startet bei Breite_von_18 + Breite_von_18b + Breite_von_18c
             if base_num is not None and line_label:
-                is_staggered_line = _is_staggered_label(line_label)
+                # KRITISCH: Berechne NUR Token-Breite (OHNE Sprecher-Spalte)!
+                # Warum? Die Sprecher-Spalte ist IMMER da (auch bei gestaffelten Zeilen)
+                # Der Indent ist eine ZUSÄTZLICHE Spalte NACH der Sprecher-Spalte!
+                this_token_w = measure_rendered_line_width(
+                    gr_tokens, de_tokens,
+                    gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
+                    remove_bars_instead=True,
+                    tag_config=tag_config,
+                    hide_trans_flags=b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags für korrekte Breitenberechnung!
+                )
                 
-                # NUR wenn dies eine BASIS-Zeile ist (z.B. "18", nicht "18a"):
-                if not is_staggered_line:
-                    # KRITISCH: Berechne NUR Token-Breite (OHNE Sprecher-Spalte)!
-                    # Warum? Die Sprecher-Spalte ist IMMER da (auch bei gestaffelten Zeilen)
-                    # Der Indent ist eine ZUSÄTZLICHE Spalte NACH der Sprecher-Spalte!
-                    this_token_w = measure_rendered_line_width(
-                        gr_tokens, de_tokens,
-                        gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
-                        remove_bars_instead=True,
-                        tag_config=tag_config,
-                        hide_trans_flags=b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags für korrekte Breitenberechnung!
-                    )
-                    
-                    # WICHTIG: KEINE Sprecher-Spalten-Breite addieren!
-                    # Die Sprecher-Spalte ist bereits im Layout (sp_w) vorhanden!
-                    # cum_width_by_base speichert NUR die Token-Breite!
-                    # KEIN += hier! Nur SETZEN, nicht ADDIEREN!
-                    cum_width_by_base[base_num] = this_token_w
+                # WICHTIG: JEDE Zeile (auch gestaffelte) addiert ihre Breite!
+                # Dies ist KUMULATIV: 18 → 18b → 18c → 18d
+                cum_width_by_base[base_num] = cum_width_by_base.get(base_num, 0.0) + this_token_w
 
             i += 1; continue
 
