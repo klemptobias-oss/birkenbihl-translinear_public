@@ -876,7 +876,48 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                 # We still may set token_meta[i]['color'] etc. if needed
                 continue
             
-            if any(c in token for c in COLOR_SYMBOLS):
+            # WICHTIG: Manuelle Farbsymbole im griechischen Token extrahieren
+            # Diese sollen ALLE Übersetzungen färben UND in BlackWhite-PDFs sichtbar sein!
+            manual_color_symbol = None
+            for sym in COLOR_SYMBOLS:
+                if sym in token:
+                    manual_color_symbol = sym
+                    break
+            
+            # Wenn manuelles Symbol gefunden: Zu allen Übersetzungen hinzufügen und in token_meta speichern
+            if manual_color_symbol:
+                # Symbol zu deutschem Token hinzufügen (wenn noch nicht vorhanden)
+                if i < len(de_tokens):
+                    de_tok = de_tokens[i]
+                    if de_tok and not any(c in de_tok for c in COLOR_SYMBOLS):
+                        de_match = RE_WORD_START.search(de_tok)
+                        if de_match:
+                            new_de_tokens[i] = de_tok[:de_match.start(2)] + manual_color_symbol + de_tok[de_match.start(2):]
+                        else:
+                            new_de_tokens[i] = manual_color_symbol + de_tok
+                
+                # Symbol zu englischem Token hinzufügen (wenn noch nicht vorhanden)
+                if i < len(new_en_tokens):
+                    en_tok = en_tokens[i]
+                    if en_tok and not any(c in en_tok for c in COLOR_SYMBOLS):
+                        en_match = RE_WORD_START.search(en_tok)
+                        if en_match:
+                            new_en_tokens[i] = en_tok[:en_match.start(2)] + manual_color_symbol + en_tok[en_match.start(2):]
+                        else:
+                            new_en_tokens[i] = manual_color_symbol + en_tok
+                
+                # WICHTIG: Symbol in token_meta speichern mit FORCE_COLOR Flag!
+                # Dies signalisiert, dass diese Farbe AUCH in BlackWhite-PDFs gezeigt werden soll!
+                if i < len(token_meta):
+                    token_meta[i]['color_symbol'] = manual_color_symbol
+                    token_meta[i]['force_color'] = True  # Manuelle Farbe überschreibt BlackWhite-Modus!
+                else:
+                    while len(token_meta) <= i:
+                        token_meta.append({})
+                    token_meta[i]['color_symbol'] = manual_color_symbol
+                    token_meta[i]['force_color'] = True
+                
+                # Fahre mit nächstem Token fort (keine automatische Farbzuweisung mehr nötig)
                 continue
 
             # WICHTIG: Für Farbberechnung HideTags/HideTrans entfernen, damit sie die Farbzuordnung nicht beeinflussen
@@ -1712,40 +1753,50 @@ def remove_all_color_symbols(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any
 
 def _strip_colors_from_block(block: dict, tag_config: dict = None) -> dict:
     """
-    Entfernt alle Farbsymbole (#, +, -, §, $) aus einem Block.
+    Entfernt Farbsymbole (#, +, -, §, $) aus einem Block.
     Wird für BLACK_WHITE PDFs verwendet.
     
-    WICHTIG: Diese Funktion wird von remove_all_color_symbols() aufgerufen!
+    WICHTIG: Manuelle Farbsymbole (mit force_color=True) werden BEIBEHALTEN!
+    Dies ermöglicht es, einzelne Wörter auch in BlackWhite-PDFs zu färben.
     """
     if not isinstance(block, dict):
         return block
     
-    # Entferne Farbsymbole aus gr_tokens
+    # Prüfe welche Tokens manuelle Farben haben (force_color=True)
+    force_color_indices = set()
+    if 'token_meta' in block and isinstance(block['token_meta'], list):
+        for i, meta in enumerate(block['token_meta']):
+            if isinstance(meta, dict) and meta.get('force_color') == True:
+                force_color_indices.add(i)
+    
+    # Entferne Farbsymbole aus gr_tokens (NUR wenn NICHT force_color!)
     if 'gr_tokens' in block and isinstance(block['gr_tokens'], list):
         block['gr_tokens'] = [
-            remove_color_symbols_from_token(t) if t else t
-            for t in block['gr_tokens']
+            t if (i in force_color_indices or not t) else remove_color_symbols_from_token(t)
+            for i, t in enumerate(block['gr_tokens'])
         ]
     
-    # Entferne Farbsymbole aus de_tokens
+    # Entferne Farbsymbole aus de_tokens (NUR wenn NICHT force_color!)
     if 'de_tokens' in block and isinstance(block['de_tokens'], list):
         block['de_tokens'] = [
-            remove_color_symbols_from_token(t) if t else t
-            for t in block['de_tokens']
+            t if (i in force_color_indices or not t) else remove_color_symbols_from_token(t)
+            for i, t in enumerate(block['de_tokens'])
         ]
     
-    # Entferne Farbsymbole aus en_tokens (für 3-sprachige Texte)
+    # Entferne Farbsymbole aus en_tokens (NUR wenn NICHT force_color!)
     if 'en_tokens' in block and isinstance(block['en_tokens'], list):
         block['en_tokens'] = [
-            remove_color_symbols_from_token(t) if t else t
-            for t in block['en_tokens']
+            t if (i in force_color_indices or not t) else remove_color_symbols_from_token(t)
+            for i, t in enumerate(block['en_tokens'])
         ]
     
-    # Entferne color_symbol aus token_meta (falls vorhanden)
+    # Entferne color_symbol aus token_meta (NUR wenn NICHT force_color!)
     if 'token_meta' in block and isinstance(block['token_meta'], list):
         for meta in block['token_meta']:
             if isinstance(meta, dict) and 'color_symbol' in meta:
-                del meta['color_symbol']
+                # Behalte Symbol wenn force_color=True
+                if not meta.get('force_color'):
+                    del meta['color_symbol']
     
     return block
 

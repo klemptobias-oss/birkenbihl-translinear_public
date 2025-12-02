@@ -2108,13 +2108,24 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
                 t_processed = process_translation_token_poesie(t)
                 
-                # WICHTIG: Farbsymbol vom griechischen Token übernehmen (aus token_meta)
+                # WICHTIG: Farbsymbol bestimmen - ZWEI Quellen:
+                # 1. MANUELL: Symbol IM deutschen Token selbst (Priorität!)
+                # 2. AUTOMATISCH: Symbol aus token_meta (vom Builder gesetzt für griechisches Wort)
                 color_symbol = None
-                global_idx = i + idx  # i = Startindex des Slice im Block
-                token_meta = block.get('token_meta', [])
-                if global_idx < len(token_meta):
-                    meta = token_meta[global_idx]
-                    color_symbol = meta.get('color_symbol')
+                
+                # ZUERST: Prüfe ob deutscher Token selbst ein Symbol hat (manuell gesetzt)
+                for sym in ['#', '+', '-', '§', '$']:
+                    if sym in t_processed:
+                        color_symbol = sym
+                        break
+                
+                # FALLBACK: Wenn kein manuelles Symbol, hole vom griechischen Token (token_meta)
+                if not color_symbol:
+                    global_idx = i + idx
+                    token_meta = block.get('token_meta', [])
+                    if global_idx < len(token_meta):
+                        meta = token_meta[global_idx]
+                        color_symbol = meta.get('color_symbol')
                 
                 # WICHTIG: Farbsymbol VOR den deutschen Token setzen FÜR format_token_markup
                 # (damit die Farbe erkannt wird)
@@ -2147,13 +2158,24 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
                     t_processed = process_translation_token_poesie(t)
                     
-                    # WICHTIG: Farbsymbol vom griechischen Token übernehmen (aus token_meta)
+                    # WICHTIG: Farbsymbol bestimmen - ZWEI Quellen:
+                    # 1. MANUELL: Symbol IM englischen Token selbst (Priorität!)
+                    # 2. AUTOMATISCH: Symbol aus token_meta (vom Builder gesetzt für griechisches Wort)
                     color_symbol = None
-                    global_idx = i + idx  # i = Startindex des Slice im Block
-                    token_meta = block.get('token_meta', [])
-                    if global_idx < len(token_meta):
-                        meta = token_meta[global_idx]
-                        color_symbol = meta.get('color_symbol')
+                    
+                    # ZUERST: Prüfe ob englischer Token selbst ein Symbol hat (manuell gesetzt)
+                    for sym in ['#', '+', '-', '§', '$']:
+                        if sym in t_processed:
+                            color_symbol = sym
+                            break
+                    
+                    # FALLBACK: Wenn kein manuelles Symbol, hole vom griechischen Token (token_meta)
+                    if not color_symbol:
+                        global_idx = i + idx
+                        token_meta = block.get('token_meta', [])
+                        if global_idx < len(token_meta):
+                            meta = token_meta[global_idx]
+                            color_symbol = meta.get('color_symbol')
                     
                     # WICHTIG: Farbsymbol VOR den englischen Token setzen FÜR format_token_markup
                     t_with_color = color_symbol + t_processed if color_symbol else t_processed
