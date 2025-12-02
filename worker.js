@@ -400,7 +400,9 @@ export default {
         pathPrefix = (form.get("path_prefix") || "").toString().trim();
         releaseName = (form.get("release_name") || "").toString().trim();
         releaseBase = sanitizeReleaseBase(form.get("release_base"));
-        translationTarget = (form.get("translation_target") || "de").toString().trim(); // NEU: Aktuelle Zielsprache
+        translationTarget = (form.get("translation_target") || "de")
+          .toString()
+          .trim(); // NEU: Aktuelle Zielsprache
         versmassFlag = (form.get("versmass") || "").toString().trim();
         meterMode = (form.get("meter_mode") || "").toString().trim();
         hidePipes = form.get("hide_pipes") === "true";
