@@ -1,0 +1,1591 @@
+<!-- RELEASE_BASE:Theokrit_Idyllen_2_gr_en_birkenbihl -->
+<!-- PATH_PREFIX:GR_poesie_Lyrik_Theokrit_Idyllen_2 -->
+<!-- RELEASE_NAME:Theokrit_Idyllen_2_gr_en -->
+<!-- TAG_CONFIG:{"nomen":{"color":"red"},"nomen_N":{"color":"red","placement":"sup"},"nomen_G":{"color":"red","placement":"sup"},"nomen_D":{"color":"red","placement":"sup"},"nomen_A":{"color":"red","placement":"sup"},"nomen_V":{"color":"red","placement":"sup"},"nomen_Du":{"color":"red","placement":"sup"},"verb":{"color":"green"},"verb_Pra":{"color":"green","placement":"sub"},"verb_Imp":{"color":"green","placement":"sub"},"verb_Aor":{"color":"green","placement":"sub"},"verb_AorS":{"color":"green","placement":"sub"},"verb_Per":{"color":"green","placement":"sub"},"verb_Plq":{"color":"green","placement":"sub"},"verb_Fu":{"color":"green","placement":"sub"},"verb_Du":{"color":"green","placement":"sup"},"verb_Akt":{"color":"green","placement":"sub"},"verb_Med":{"color":"green","placement":"sub"},"verb_Pas":{"color":"green","placement":"sub"},"verb_MP":{"color":"green","placement":"sub"},"verb_Inf":{"color":"green","placement":"sub"},"verb_Op":{"color":"green","placement":"sub"},"verb_Knj":{"color":"green","placement":"sub"},"verb_Imv":{"color":"green","placement":"sub"},"partizip":{"color":"violett"},"partizip_Pra":{"color":"violett","placement":"sub"},"partizip_Imp":{"color":"violett","placement":"sub"},"partizip_Aor":{"color":"violett","placement":"sub"},"partizip_AorS":{"color":"violett","placement":"sub"},"partizip_Per":{"color":"violett","placement":"sub"},"partizip_Plq":{"color":"violett","placement":"sub"},"partizip_Fu":{"color":"violett","placement":"sub"},"partizip_N":{"color":"violett","placement":"sup"},"partizip_G":{"color":"violett","placement":"sup"},"partizip_D":{"color":"violett","placement":"sup"},"partizip_A":{"color":"violett","placement":"sup"},"partizip_V":{"color":"violett","placement":"sup"},"partizip_Du":{"color":"violett","placement":"sup"},"partizip_Akt":{"color":"violett","placement":"sub"},"partizip_Med":{"color":"violett","placement":"sub"},"partizip_Pas":{"color":"violett","placement":"sub"},"partizip_MP":{"color":"violett","placement":"sub"},"adjektiv":{"color":"blue","placement":"sup"},"adjektiv_N":{"color":"blue","placement":"sup"},"adjektiv_G":{"color":"blue","placement":"sup"},"adjektiv_D":{"color":"blue","placement":"sup"},"adjektiv_A":{"color":"blue","placement":"sup"},"adjektiv_V":{"color":"blue","placement":"sup"},"adjektiv_Du":{"color":"blue","placement":"sup"},"adjektiv_Kmp":{"color":"blue","placement":"sup"},"adjektiv_Sup":{"color":"blue","placement":"sup"},"adverb":{"placement":"sup"},"adverb_Kmp":{"placement":"sup"},"adverb_Sup":{"placement":"sup"},"pronomen":{"placement":"sub"},"pronomen_N":{"placement":"sup"},"pronomen_G":{"placement":"sup"},"pronomen_D":{"placement":"sup"},"pronomen_A":{"placement":"sup"},"pronomen_Du":{"placement":"sup"},"artikel":{"placement":"sup"},"artikel_N":{"placement":"sup"},"artikel_G":{"placement":"sup"},"artikel_D":{"placement":"sup"},"artikel_A":{"placement":"sup"},"artikel_Du":{"placement":"sup"},"prp":{"placement":"sup"},"kon":{"placement":"sup"},"pt":{"placement":"sup"},"ij":{"placement":"sup"}} -->
+<!-- VERSMASS:true -->
+<!-- METER_MODE:without -->
+==== Idyllen 2 ====
+=== Gedicht 10 ===
+== ἐργατίναι ἢ Θερισταί ==
+(1) Ἐργατίνα(V) βουκαῖε(V), τί(Pr)(A) νῦν(Adv) ᾦζυρὲ(Adj)(V) πεπόνθεις(Per)(Akt);
+(1) work|woman cowherd, what now wretched|one have|you|suffered;
+(2) οὔθ᾽(Kon) ἑὸν(Adj)(A) ὄγμον(A) ἄγειν(Prä)(Akt)(Inf) ὀρθὸν(Adj)(A) δύνᾳ(Prä)(M/P), ὡς(Kon) τὸ(Art)(A) πρὶν(Adv) ἆγες(Imp)(Akt),
+(2) neither your|own furrow to|lead straight you|can, as the before you|led,
+(3) οὔθ᾽(Kon) ἅμα(Adv) λᾳοτομεῖς(Prä)(Akt) τῷ(Art)(D) πλατίον(Adj)(Kmp)(D), ἀλλ᾽(Kon) ἀπολείπῃ(Prä)(Akt)
+(3) neither together you|reap with|the broader, but you|leave|behind
+(4) ὥσπερ(Kon) ὄις(N) ποίμνας(G), ἇς(Pr)(G) τὸν(Art)(A) πόδα(A) κάκτος(N) ἔτυψε(Aor)(Akt).
+(4) just|as sheep of|flock, whose the foot thistle struck.
+(5) ποῖός(Adj)(N) τις(Pr)(N) δείλαν(Adj) τυ(Pr)(N) καὶ(Kon) ἐκ(Prp) μέσω(Adj)(G) ἄματος(G) ἐσσῇ(Prä)(Akt),
+(5) what|sort someone wretched you and out|of middle of|furrow you|are,
+(6) ὃς(Pr)(N) νῦν(Adv) ἀρχόμενος(Prä)(M/P)(N) τᾶς(Art)(G) αὔλακος(G) οὐκ(Pt) ἀποτρώγεις(Prä)(Akt);
+(6) who now beginning of|the of|furrow not you|gnaw|off;
+(7) Μίλων(V) ὀψαμάτα(Adv), πέτρας(G) ἀπόκομμ᾽(A) ἀτεράμνω(Prä)(Akt),
+(7) Milon toward|evening, of|rocks cut|off|piece I|hew,
+(8) οὐδαμά(Adv) τοι(Pr)(D) συνέβα(Aor)(Akt) ποθέσαι(Aor)(Akt)(Inf) τινὰ(Pr)(A) τῶν(Art)(G) ἀπεόντων(Prä)(Akt)(G);
+(8) never to|you it|befell to|long someone of|the absent|ones;
+(9) οὐδαμά(Adv). τίς(Pr)(N) δὲ(Pt) πόθος(N) τῶν(Art)(G) ἔκτοθεν(Adv) ἐργάτᾳ(D) ἀνδρί(D);
+(9) never. who but desire of|the from|outside to|a|workman to|a|man;
+(10) οὐδαμά(Adv) νυν(Adv) συνέβα(Aor)(Akt) τοι(Pr)(D) ἀγρυπνῆσαι(Aor)(Akt)(Inf) δι᾽(Prp) ἔρωτα(A);
+(10) never now it|befell to|you to|keep|awake through love;
+(11) μηδέ(Kon) γε(Pt) συμβαίη(Aor)(Akt)(Op)· χαλεπὸν(Adj)(A) χορίω(D) κύνα(A) γεῦσαι(Aor)(Akt)(Inf).
+(11) nor indeed may|it|not|befall· hard in|a|place dog to|taste.
+(12) ἀλλ᾽(Kon) ἐγὼ(Pr)(N) ὦ(ij) Μίλων(V) ἔραμαι(Prä)(Med) σχεδὸν(Adv) ἑνδεκαταῖος(Adj)(N).
+(12) but I O Milon I|am|in|love nearly eleven|days|old.
+(13) ἐκ(Prp) πίθω(G) ἀντλεῖς(Prä)(Akt) δῆλον(Adj)(N)· ἐγὼ(Pr)(N) δ᾽(Pt) ἔχω(Prä)(Akt) οὐδ᾽(Pt) ἅλις(Adv) ὄξος(A).
+(13) from jar you|draw clear· I but I|have not|even enough vinegar.
+(14) τοιγάρτοι(Pt) πρὸ(Prp) θυρᾶν(G) μοι(Pr)(D) ἀπὸ(Prp) σπόρω(G) ἄσκαλα(A) πάντα(Adj)(A).
+(14) therefore before of|doors to|me from seed|sowing implements all.
+(15) τίς(Pr)(N) δέ(Pt) τυ(Pr)(A) τᾶν(Art)(G) παίδων(G) λυμαίνεται(Prä)(M/P); ἁ(Art)(N) Πολυβώτα(N),
+(15) who but you of|the of|boys injures; the Polybota,
+(16) ἃ(Pr)(N) πρᾶν(Adv) ἀμάντεσσι(D) παρ᾽(Prp) Ἱπποκίωνι(D) ποταύλει(Prä)(Akt).
+(16) who recently with|diviners beside Hippokion haunts.
+(17) εὗρε(AorS)(Akt) θεὸς(N) τὸν(Art)(A) ἀλιτρόν(A)· ἔχεις(Prä)(Akt) πάλαι(Adv) ὧν(Pr)(G) ἐπεθύμεις(Imp)(Akt).
+(17) found a|god the wrongdoer· you|have long|ago of|which you|desired.
+(18) μάντίς(N) τοι(Pr)(D) τὰν(Art)(A) νύκτα(A) χροϊξεῖθ᾽(Fu)(M/P) ἁ(Art)(N) καλαμαία(N).
+(18) seer to|you the night will|deliver|oracles the reed|pipe.
+(19) μωμᾶσθαί(Prä)(M/P)(Inf) μ᾽(Pr)(A) ἄρχῃ(Prä)(Akt) τύ(Pr)(N)· τυφλὸς(Adj)(N) δ᾽(Pt) οὐκ(Pt) αὐτὸς(Pr)(N) ὁ(Art)(N) Πλοῦτος(N),
+(19) to|blame me you|begin you· blind but not himself the Ploutos,
+(20) ἀλλὰ(Kon) καὶ(Kon) ὡφρόντιστος(Adj)(N) Ἔρως(N). μὴ(Pt) δὴ(Pt) μέγα(Adv) μυθεῦ(Prä)(M/P)(Imv).
+(20) but and ill|counselled Eros. not indeed greatly speak.
+(21) οὐ(Pt) μέγα(Adv) μυθεῦμαι(Prä)(M/P)· τὺ(Pr)(N) μόνον(Adv) κατάβαλλε(Prä)(Akt)(Imv) τὸ(Art)(A) λᾷον(Adj)(Kmp)(A),
+(21) not greatly I|speak· you only lay|down the better,
+(22) καί(Kon) τι(Pr)(A) κόρας(G) φιλικὸν(Adj)(A) μέλος(A) ἀμβάλευ(Aor)(Akt)(Imv). ἅδιον(Adv)(Kmp) οὑτῶς(Adv)
+(22) and something of|girls friendly song strike|up. more|sweetly thus
+(23) ἐργαξῇ(Fu)(M/P)· καὶ(Kon) μὰν(Pt) πρότερόν(Adv)(Kmp) ποκα(Adv) μουσικὸς(Adj)(N) ἦσθα(Imp).
+(23) you|will|work· and indeed earlier once musical you|were.
+(24) Μοῖσαι(V) Πιερίδες(V), συναείσατε(Aor)(Akt)(Imv) τὰν(Art)(A) ῥαδινάν(Adj)(A) μοι(Pr)(D)
+(24) Muses Pierides, sing|together the slender to|me
+(25) παῖδ᾽(A)· ὧν(Pr)(G) γάρ(Pt) χ᾽(Pt) ἅψησθε(Aor)(Med)(Knj) θεαί(N), καλὰ(Adj)(A) πάντα(Adj)(A) ποεῖτε(Prä)(Akt).
+(25) girl· of|whom for at|least you|touch goddesses, beautiful all you|make.
+(26) Βομβύκα(V) χαρίεσσα(Adj)(V), Σύραν(A) καλέοντί(Prä)(Akt) τυ(Pr)(A) πάντες(Adj)(N),
+(26) Bombyca graceful, Syrian they|call you all,
+(27) ἰσχνὰν(Adj)(A) ἁλιόκαυστον(Adj)(A), ἐγὼ(Pr)(N) δὲ(Pt) μόνος(Adj)(N) μελίχλωρον(Adj)(N).
+(27) slender sea|scorched, I but alone honey|green.
+(28) καὶ(Kon) τὸ(Art)(N) ἴον(N) μέλαν(Adj)(N) ἐστὶ(Prä)(Akt) καὶ(Kon) ἁ(Art)(N) γραπτὰ(Adj)(N) ὑάκινθος(N),
+(28) and the violet black is and the streaked hyacinth,
+(29) ἀλλ᾽(Kon) ἔμπας(Adv) ἐν(Prp) τοῖς(Art)(D) στεφάνοις(D) τὰ(Art)(N) πρᾶτα(Adj)(N) λέγονται(Prä)(M/P).
+(29) but nevertheless in the garlands the first are|said.
+(30) ἁ(Art)(N) αἲξ(N) τὰν(Art)(A) κύτισον(A), ὁ(Art)(N) λύκος(N) τὰν(Art)(A) αἶγα(A) διώκει(Prä)(Akt),
+(30) the goat the cytisus, the wolf the she|goat chases,
+(31) ἁ(Art)(N) γέρανος(N) τὤροτρον(N), ἐγὼ(Pr)(N) δ᾽(Pt) ἐπὶ(Prp) τὶν(Art)(A) μεμάνημαι(Per)(M/P).
+(31) the crane the|plow, I but for the I|am|mad.
+(32) αἴθέ(ij) μοι(Pr)(D) ἦς(Imp)(Akt), ὅσσα(Pr)(A) Κροῖσόν(A) ποκα(Adv) φαντὶ(Prä)(Akt) πεπᾶσθαι(Per)(M/P)(Inf),
+(32) would|that to|me you|were, as|many Croesus once they|say to|have|possessed,
+(33) χρύσεοι(Adj)(N) ἀμφότεροί(Adj)(Du)(N) κ᾽(Pt) ἀνεκείμεθα(Imp)(M/P) τᾷ(Art)(D) Ἀφροδίτᾳ(D),
+(33) golden both would we|reclined to|the Aphrodite,
+(34) τὼς(Adv) αὐλὼς(A) μὲν(Pt) ἔχοισα(Prä)(Akt)(N) καὶ(Kon) ἢ(Kon) ῥόδον(A) ἢ(Kon) μᾶλον(A) τύ(Pr)(N),
+(34) thus pipes indeed having and either rose or apple you,
+(35) σχῆμα(A) δ᾽(Pt) ἐγὼ(Pr)(N) καὶ(Kon) καινὰς(Adj)(A) ἐπ᾽(Prp) ἀμφοτέροισιν(Adj)(Du)(D) ἀμύκλας(A).
+(35) figure but I and new upon both clasps.
+(36) Βομβύκα(V) χαρίεσσ᾽(Adj)(V), οἱ(Art)(N) μὲν(Pt) πόδες(N) ἀστράγαλοί(N) τευς(Pr)(G),
+(36) Bombyca graceful, the indeed feet ankle|bones of|you,
+(37) ἁ(Art)(N) φωνὰ(N) δὲ(Pt) τρύχνος(N)· τὸν(Art)(A) μὰν(Pt) τρόπον(A) οὐκ(Pt) ἔχω(Prä)(Akt) εἰπεῖν(Aor)(Akt)(Inf).
+(37) the voice but nightshade· the indeed manner not I|have to|say.
+(38) Ἠ(Kon) καλὰς(Adj)(A) ἄμμι(Pr)(D) ποέων(Prä)(Akt)(N) ἐλελήθει(Per)(Akt) βοῦκος(N) ἀοιδάς(A).
+(38) or beautiful to|us making has|forgotten cowherd songs.
+(39) ὡς(Kon) εὖ(Adv) τὰν(Art)(A) ἰδέαν(A) τᾶς(Art)(G) ἁρμονίας(G) ἐμέτρησεν(Aor)(Akt).
+(39) how well the form of|the harmony he|measured.
+(40) ὤμοι(ij) τῶ(Art)(G) πώγωνος(G), ὃν(Pr)(A) ἀλιθίως(Adv) ἀνέφυσα(Aor)(Akt).
+(40) alas of|the of|beard, which truly I|grew.
+(41) θᾶσαι(Adv) δὴ(Pt) καὶ(Kon) ταῦτα(Pr)(A) τὰ(Art)(A) τῶ(Art)(G) θείω(Adj)(G) Λιτυέρσα(V).
+(41) quickly indeed and these|things the of|the divine Lityerses.
+(42) Δάματερ(V) πολύκαρπε(Adj)(V) πολύσταχυ(Adj)(V), τοῦτο(Pr)(N) τὸ(Art)(N) λᾷον(Adj)(N)
+(42) Demeter much|fruited much|eared, this the good
+(43) εὔεργόν(Adj)(N) τ᾽(Pt) εἴη(Knj)(Akt) καὶ(Kon) κάρπιμον(Adj)(N) ὅττι(Kon) μάλιστα(Adv)(Sup).
+(43) beneficial and may|it|be and fruitful as|much|as most.
+(44) Σφίγγετ᾽(Prä)(Akt)(Imv) ἀμαλλοδέται(N) τὰ(Art)(A) δράγματα(A), μὴ(Pt) παριών(Prä)(Akt)(N) τις(Pr)(N)
+(44) tighten sheaf|binders the sheaves, not passing|by someone
+(45) εἴποι(Aor)(Akt)(Op)· "σύκινοι(Adj)(N) ἄνδρες(N), ἀπώλετο(Aor)(M/P) χοὗτος(Pr)(N) ὁ(Art)(N) μισθός(N)."
+(45) would|say· "fig|clad men, has|perished this|here the wage."
+(46) Ἐς(Prp) βορέην(Adj)(A) ἄνεμον(A) τᾶς(Art)(G) κόρθυος(G) ἁ(Art)(N) τομὰ(N) ὔμμιν(Pr)(D)
+(46) toward north wind of|the sieve the cutting to|you
+(47) ἢ(Kon) ζέφυρον(A) βλεπέτω(Prä)(Akt)(Imv)· πιαίνεται(Prä)(M/P) ὁ(Art)(N) στάχυς(N) οὑτῶς(Adv).
+(47) or Zephyr let|it|look· becomes|fat the ear|of|grain thus.
+(48) σῖτον(A) ἀλοιῶντας(Prä)(Akt)(A) φεύγειν(Prä)(Akt)(Inf) τὸ(Art)(A) μεσαμβρινὸν(Adj)(A) ὕπνον(A)·
+(48) grain bruising|it to|shun the midday sleep·
+(49) ἐκ(Prp) καλάμας(G) ἄχυρον(N) τελέθει(Prä)(Akt) τημόσδε(Adv) μάλιστα(Adv)(Sup).
+(49) out|of stalks chaff comes|to|be at|this|season most.
+(50) ἄρχεσθαι(Prä)(M/P)(Inf) δ᾽(Pt) ἀμῶντας(Prä)(Akt)(A) ἐγειρομένω(Prä)(M/P)(D) κορυδαλλῶ(D),
+(50) to|begin but reaping being|awakened to|the|lark,
+(51) καὶ(Kon) λήγειν(Prä)(Akt)(Inf) εὕδοντος(Prä)(Akt)(G), ἐλινῦσαι(Prä)(Akt)(Inf) δὲ(Pt) τὸ(Art)(A) καῦμα(A).
+(51) and to|cease of|sleeping, to|rest but the heat.
+(52) εὐκτὸς(Adj)(N) ὁ(Art)(N) τῶ(Art)(G) βατράχω(G) παῖδες(V) βίος(N)· οὐ(Pt) μελεδαίνει(Prä)(Akt)
+(52) desirable the of|the frog boys life· not cares
+(53) τὸν(Art)(A) προπιεῖν(Aor)(Akt)(Inf) ἐγχεῦντα(Prä)(Akt)(A)· πάρεστι(Prä)(Akt) γὰρ(Pt) ἄφθονον(Adj)(N) αὐτῷ(Pr)(D).
+(53) the to|drink|before pouring· is|present for abundant to|him.
+(54) κάλλιον(Adv)(Kmp) ὦπιμελητὰ(ij)(V) φιλάργυρε(Adj)(V) τὸν(Art)(A) φακὸν(A) ἕψειν(Prä)(Akt)(Inf)·
+(54) better O|caretaker money|loving the lentil to|boil·
+(55) μή(Pt) τι(Pr)(A) τάμῃς(Aor)(Akt)(Knj) τὰν(Art)(A) χεῖρα(A) καταπρίων(Prä)(Akt)(N) τὸ(Art)(A) κύμινον(A).
+(55) not something you|should|cut the hand sawing|through the cumin.
+(56) ταῦτα(Pr)(A) χρὴ(Prä)(Akt) μοχθεῦντας(Prä)(Akt)(A) ἐν(Prp) ἁλίῳ(D) ἄνδρας(A) ἀείδειν(Prä)(Akt)(Inf),
+(56) these|things it|is|necessary toiling in threshing|floor men to|sing,
+(57) τὸν(Art)(A) δὲ(Pt) τεὸν(Adj)(A) βουκαῖε(V) πρέπει(Prä)(Akt) λιμηρὸν(Adj)(A) ἔρωτα(A)
+(57) the but your cowherd befits baneful love
+(58) μυθίσδεν(Imp)(Akt) τᾷ(Art)(D) ματρὶ(D) κατ᾽(Prp) εὐνὰν(A) ὀρθρευοίσᾳ(Prä)(Akt)(D).
+(58) he|told to|the mother down|on bed rising|early.
+=== Gedicht 11 ===
+== Κύκλωψ ==
+(1) οὐδὲν(Pr)(N) πὸτ(Adv) τὸν(Art)(A) ἔρωτα(A) πεφύκει(Per)(Akt) φάρμακον(N) ἄλλο(Adj)(N)
+(1) nothing ever the love has|grown remedy other
+(2) Νικία(V) οὔτ᾽(Kon) ἔγχριστον(Adj)(A), ἐμὶν(Pr)(D) δοκεῖ(Prä)(Akt), οὔτ᾽(Kon) ἐπίπαστον(Adj)(A),
+(2) Nicias neither anointable, to|me seems, nor sprinkled|on,
+(3) ἢ(Kon) ταὶ(Art)(N) Πιερίδες(N)· κοῦφον(Adj)(N) δέ(Pt) τι(Pr)(N) τοῦτο(Pr)(N) καὶ(Kon) ἁδὺ(Adj)(N)
+(3) or the Pierides· light but some this and sweet
+(4) γίνετ᾽(Prä)(M/P) ἐπ᾽(Prp) ἀνθρώποις(D), εὑρεῖν(Aor)(Akt)(Inf) δ᾽(Pt) οὐ(Pt) ῥᾴδιόν(Adj)(N) ἐστι(Prä)(Akt).
+(4) comes|to|be upon men, to|find but not easy is.
+(5) γινώσκειν(Prä)(Akt)(Inf) δ᾽(Pt) οἶμαί(Prä)(M/P) τυ(Pr)(A) καλῶς(Adv) ἰατρὸν(A) ἐόντα(Prä)(Akt)(A)
+(5) to|know but I|suppose you well physician being
+(6) καὶ(Kon) ταῖς(Art)(D) ἐννέα(Adj)(D) δὴ(Pt) πεφιλάμενον(Per)(M/P)(A) ἔξοχα(Adv) Μοίσαις(D).
+(6) and to the|nine indeed having|been|fond especially to|Muses.
+(7) οὕτω(Adv) γοῦν(Pt) ῥάιστα(Adv)(Sup) διᾶγ᾽(Imp)(Akt) ὁ(Art)(N) Κύκλωψ(N) ὁ(Art)(N) παρ᾽(Prp) ἁμῖν(Pr)(D),
+(7) thus at|least most|easily was|passing the Cyclops the beside us,
+(8) ὡρχαῖος(Adj)(N) Πολύφαμος(N), ὅκ᾽(Kon) ἤρατο(Aor)(Med) τᾶς(Art)(G) Γαλατείας(G),
+(8) prime Polyphemus, when he|fell|in|love of the|Galatea,
+(9) ἄρτι(Adv) γενειάσδων(Prä)(Akt)(N) περὶ(Prp) τὸ(Art)(A) στόμα(A) τὼς(Art)(Du)(A) κροτάφως(Du)(A) τε(Pt).
+(9) just bearding around the mouth the|two temples and.
+(10) ἤρατο(Aor)(Med) δ᾽(Pt) οὐ(Pt) μάλοις(D) οὐδὲ(Kon) ῥόδῳ(D) οὐδὲ(Kon) κικίννοις(D),
+(10) he|fell|in|love but not with|apples nor with|rose nor with|scarlets,
+(11) ἀλλ᾽(Kon) ὀρθαῖς(Adj)(D) μανίαις(D), ἁγεῖτο(Imp)(M/P) δὲ(Pt) πάντα(Adj)(A) πάρεργα(A).
+(11) but with|straight madness, he|was|led but all side|works.
+(12) πολλάκι(Adv) ταὶ(Art)(N) ὄιες(N) ποτὶ(Prp) ταὐλίον(A) αὐταὶ(Pr)(N) ἀπῆνθον(Imp)(Akt)
+(12) often the sheep to the|fold themselves were|going|off
+(13) χλωρᾶς(Adj)(G) ἐκ(Prp) βοτάνας(G)· ὁ(Art)(N) δὲ(Pt) τὰν(Art)(A) Γαλάτειαν(A) ἀείδων(Prä)(Akt)(N)
+(13) of|green out|of fodder· the but the Galatea singing
+(14) αὐτόθ᾽(Adv) ἐπ᾽(Prp) ἀιόνος(G) κατετάκετο(Imp)(M/P) φυκιοέσσας(Adj)(G)
+(14) right|there upon shore was|melted seaweed|clad
+(15) ἐξ(Prp) ἀοῦς(G), ἔχθιστον(Adj)(A)(Sup) ἔχων(Prä)(Akt)(N) ὑποκάρδιον(Adj)(A) ἕλκος(A)
+(15) from dawn, most|hateful holding under|heart wound
+(16) Κύπριδος(G) ἐκ(Prp) μεγάλας(Adj)(G), τό(Art)(N) οἱ(Pr)(D) ἥπατι(D) πᾶξε(AorS)(Akt) βέλεμνον(N).
+(16) of|Cypris out|of great, the to|him at|liver fixed missile.
+(17) ἀλλὰ(Kon) τὸ(Art)(A) φάρμακον(A) εὗρε(AorS)(Akt), καθεζόμενος(Prä)(M/P)(N) δ᾽(Pt) ἐπὶ(Prp) πέτρας(G)
+(17) but the remedy found, sitting but upon rock
+(18) ὑψηλᾶς(Adj)(G) ἐς(Prp) πόντον(A) ὁρῶν(Prä)(Akt)(N) ἄειδε(Imp)(Akt) τοιαῦτα(Pr)(A).
+(18) high into sea seeing he|sang such|things.
+(19) Ὠ(ij) λευκὰ(Adj)(V) Γαλάτεια(V), τί(Pr)(A) τὸν(Art)(A) φιλέοντ᾽(Prä)(Akt)(A) ἀποβάλλῃ(Prä)(Akt);
+(19) O white Galatea, why the loving|one do|you|cast|off;
+(20) λευκοτέρα(Adj)(Kmp)(N) πακτᾶς(G) ποτιδεῖν(Prä)(Akt)(Inf), ἁπαλωτέρα(Adj)(Kmp)(N) ἀρνός(G),
+(20) whiter of|curd to|see, softer of|lamb,
+(21) μόσχω(D) γαυροτέρα(Adj)(Kmp)(N), σφριγανωτέρα(Adj)(Kmp)(N) ὄμφακος(G) ὠμᾶς(Adj)(G).
+(21) to|calf prouder, more|vigorous of|unripe|grape unripe.
+(22) φοιτῇς(Prä)(Akt) δ᾽(Pt) αὖθ᾽(Adv) οὑτῶς(Adv), ὅκκα(Kon) γλυκὺς(Adj)(N) ὕπνος(N) ἔχῃ(Knj)(Akt) με(Pr)(A),
+(22) you|visit but again thus, when sweet sleep may|hold me,
+(23) οἴχῃ(Prä)(M/P) δ᾽(Pt) εὐθὺς(Adv) ἰοῖσ᾽(Prä)(Akt)(N), ὅκκα(Kon) γλυκὺς(Adj)(N) ὕπνος(N) ἀνῇ(Knj)(Akt) με(Pr)(A),
+(23) you|go but straight going, when sweet sleep may|loosen me,
+(24) φεύγεις(Prä)(Akt) δ᾽(Pt) ὥσπερ(Kon) ὄις(N) πολιὸν(Adj)(A) λύκον(A) ἀθρήσασα(Aor)(Akt)(N).
+(24) you|flee but just|as sheep grey wolf having|gazed|at.
+(25) ἠράσθην(Aor)(M/P) μὲν(Pt) ἔγωγα(Pr)(N) τεοῦς(Pr)(G) κόρα(N), ἁνίκα(Kon) πρᾶτον(Adv)
+(25) I|fell|in|love indeed I of|you girl, when first
+(26) ἦνθες(Aor)(Akt) ἐμᾷ(Adj)(D) σὺν(Prp) ματρὶ(D) θέλοισ᾽(Prä)(Akt)(N) ὑακίνθινα(Adj)(A) φύλλα(A)
+(26) you|came my with mother wishing hyacinthine leaves
+(27) ἐξ(Prp) ὄρεος(G) δρέψασθαι(Aor)(Med)(Inf), ἐγὼ(Pr)(N) δ᾽(Pt) ὁδὸν(A) ἁγεμόνευον(Imp)(Akt).
+(27) out|of mountain to|pluck|for|oneself, I but way I|led.
+(28) παύσασθαι(Aor)(Med)(Inf) δ᾽(Pt) ἐσιδών(Aor)(Akt)(N) τυ(Pr)(A) καὶ(Kon) ὕστερον(Adv) οὐδέ(Pt) τί(Pr)(A) πᾳ(Adv) νῦν(Adv)
+(28) to|cease but having|seen you and later not|even anything anywhere now
+(29) ἐκ(Prp) τήνω(Pr)(G) δύναμαι(Prä)(M/P)· τὶν(Pr)(D) δ᾽(Pt) οὐ(Pt) μέλει(Prä)(Akt), οὐ(Pt) μὰ(Pt) Δί᾽(A) οὐδέν(Pr)(N).
+(29) out|of that I|am|able· to|you but not it|concerns, not by Zeus nothing.
+(30) γινώσκω(Prä)(Akt) χαρίεσσα(Adj)(V) κόρα(V), τίνος(Pr)(G) ὥνεκα(Kon) φεύγεις(Prä)(Akt)·
+(30) I|know graceful girl, of|what because you|flee·
+(31) ὥνεκά(Kon) μοι(Pr)(D) λασία(Adj)(N) μὲν(Pt) ὀφρῦς(N) ἐπὶ(Prp) παντὶ(Adj)(D) μετώπῳ(D)
+(31) because to|me shaggy indeed eyebrow upon whole forehead
+(32) ἐξ(Prp) ὠτὸς(G) τέταται(Per)(M/P) ποτὶ(Prp) θὥτερον(Adj)(A) ὦς(A) μία(Adj)(N) μακρά(Adj)(N),
+(32) out|of ear has|been|stretched toward other ear one long,
+(33) εἷς(Adj)(N) δ᾽(Pt) ὀφθαλμὸς(N) ἔπεστι(Prä)(Akt), πλατεῖα(Adj)(N) δὲ(Pt) ῥὶς(N) ἐπὶ(Prp) χείλει(D).
+(33) one but eye is|upon, broad but nose upon lip.
+(34) ἀλλ᾽(Kon) οὗτος(Pr)(N) τοιοῦτος(Adj)(N) ἐὼν(Prä)(Akt)(N) βοτὰ(A) χίλια(Adj)(A) βόσκω(Prä)(Akt),
+(34) but this|one such being cattle thousand I|feed,
+(35) κἠκ(Kon)(Prp) τούτων(Pr)(G) τὸ(Art)(A) κράτιστον(Adj)(Kmp)(Sup)(A) ἀμελγόμενος(Prä)(M/P)(N) γάλα(A) πίνω(Prä)(Akt)·
+(35) and|from of|these the best milking milk I|drink·
+(36) τυρὸς(N) δ᾽(Pt) οὐ(Pt) λείπει(Prä)(Akt) μ᾽(Pr)(A) οὔτ᾽(Kon) ἐν(Prp) θέρει(D) οὔτ᾽(Kon) ἐν(Prp) ὀπώρᾳ(D),
+(36) cheese but not fails me neither in summer nor in harvest,
+(37) οὐ(Pt) χειμῶνος(G) ἄκρω(Adj)(D)· ταρσοὶ(N) δ᾽(Pt) ὑπεραχθέες(Adj)(N) αἰεί(Adv).
+(37) nor of|winter at|peak· soles but over|burdened always.
+(38) συρίσδεν(Prä)(Akt)(Inf) δ᾽(Pt) ὡς(Kon) οὔτις(Pr)(N) ἐπίσταμαι(Prä)(M/P) ὧδε(Adv) Κυκλώπων(G),
+(38) to|pipe but as no|one I|know thus of|Cyclopes,
+(39) τὶν(Pr)(A) τὸ(Art)(A) φίλον(Adj)(A) γλυκύμαλον(A) ἁμᾷ(Adv) κἠμαυτὸν(Kon)(Pr) ἀείδων(Prä)(Akt)(N)
+(39) you the dear sweet|apple together and|myself singing
+(40) πολλάκι(Adv) νυκτὸς(G) ἀωρί(Adv). τρέφω(Prä)(Akt) δέ(Pt) τοι(Pr)(D) ἕνδεκα(Adj)(A) νεβρὼς(A)
+(40) often of|night at|untimely. I|nourish but to|you eleven fawns
+(41) πάσας(Adj)(A) μηνοφόρως(Adv) καὶ(Kon) σκύμνως(A) τέσσαρας(Adj)(A) ἄρκτων(G).
+(41) all month|fed and whelps four of|bears.
+(42) ἀλλ᾽(Kon) ἀφίκευσο(Aor)(Akt)(Imv) ποθ᾽(Pt) ἁμέ(Pr)(D), καὶ(Kon) ἑξεῖς(Fu)(Akt) οὐδὲν(Pr)(A) ἔλασσον(Adj)(Kmp)(A),
+(42) but come once to|me, and you|will|have nothing less,
+(43) τὰν(Art)(A) γλαυκὰν(Adj)(A) δὲ(Pt) θάλασσαν(A) ἔα(Prä)(Akt)(Imv) ποτὶ(Prp) χέρσον(A) ὀρεχθεῖν(Aor)(Pas)(Inf).
+(43) the grey then sea let toward land to|be|stretched.
+(44) ἅδιον(Adv)(Kmp) ἐν(Prp) τὤντρῳ(D) παρ᾽(Prp) ἐμὶν(Pr)(D) τὰν(Art)(A) νύκτα(A) διαξεῖς(Fu)(Akt).
+(44) more|sweetly in the|cave beside me the night you|will|spend.
+(45) ἐντὶ(Prä)(Akt) δάφναι(N) τηνεῖ(Adv), ἐντὶ(Prä)(Akt) ῥαδιναὶ(Adj)(N) κυπάρισσοι(N),
+(45) there|is laurels there, there|is slender cypresses,
+(46) ἔστι(Prä)(Akt) μέλας(Adj)(N) κισσός(N), ἔστ᾽(Prä)(Akt) ἄμπελος(N) ἁ(Art)(N) γλυκύκαρπος(Adj)(N),
+(46) there|is black ivy, there|is vine the sweet|fruited,
+(47) ἔστι(Prä)(Akt) ψυχρὸν(Adj)(N) ὕδωρ(N), τό(Art)(N) μοι(Pr)(D) ἁ(Art)(N) πολυδένδρεος(Adj)(N) Αἴτνα(N)
+(47) there|is cold water, which to|me the many|treed Etna
+(48) λευκᾶς(Adj)(G) ἐκ(Prp) χιόνος(G) ποτὸν(A) ἀμβρόσιον(Adj)(A) προΐητι(Prä)(Akt).
+(48) white out|of snow drink ambrosial sends|forth.
+(49) τίς(Pr)(N) κα(Pt) τῶνδε(Pr)(G) θάλασσαν(A) ἔχειν(Prä)(Akt)(Inf) καὶ(Kon) κύμαθ᾽(A) ἕλοιτο(Aor)(Med)(Op);
+(49) who then of|these sea to|have and waves would|choose;
+(50) αἰ(Kon) δέ(Pt) τοι(Pr)(D) αὐτὸς(Pr)(N) ἐγὼ(Pr)(N) δοκέω(Prä)(Akt) λασιώτερος(Adj)(Kmp)(N) ἦμεν(Imp)(Akt),
+(50) if but to|you myself I seem hairier I|was,
+(51) ἐντὶ(Prä)(Akt) δρυὸς(G) ξύλα(N) μοι(Pr)(D) καὶ(Kon) ὑπὸ(Prp) σποδῷ(D) ἀκάματον(Adj)(N) πῦρ(N).
+(51) there|is of|oak logs to|me and under ash untiring fire.
+(52) καιόμενος(Prä)(M/P)(N) δ᾽(Pt) ὑπὸ(Prp) τεῦς(Pr)(G) καὶ(Kon) τὰν(Art)(A) ψυχὰν(A) ἀνεχοίμαν(Op)(M/P)
+(52) burning but under of|you and the soul I|would|endure
+(53) καὶ(Kon) τὸν(Art)(A) ἕν᾽(Adj)(A) ὀφθαλμόν(A), τῶ(Art)(D) μοι(Pr)(D) γλυκερώτερον(Adj)(Kmp)(N) οὐδέν(Pr)(N).
+(53) and the one eye, than|the to|me sweeter nothing.
+(54) ὤμοι(ij), ὅ(Pr)(N) τ᾽(Pt) οὐκ(Pt) ἔτεκέν(Aor)(Akt) μ᾽(Pr)(A) ἁ(Art)(N) μάτηρ(N) βραγχί᾽(A) ἔχοντα(Prä)(Akt)(A),
+(54) alas, that but not bore me the mother gills having,
+(55) ὡς(Kon) κατέδυν(AorS)(Akt) ποτὶ(Prp) τὶν(Pr)(A) καὶ(Kon) τὰν(Art)(A) χέρα(A) τευς(Pr)(G) ἐφίλασα(Aor)(Akt),
+(55) so I|dove toward you and the hand of|you I|kissed,
+(56) αἰ(Kon) μὴ(Pt) τὸ(Art)(A) στόμα(A) λῇς(Knj)(Akt), ἔφερον(Imp)(Akt) δέ(Pt) τοι(Pr)(D) ἢ(Kon) κρίνα(A) λευκὰ(Adj)(A)
+(56) if not the mouth you|allow, I|was|bringing but to|you either lilies white
+(57) ἢ(Kon) μάκων᾽(A) ἁπαλὰν(Adj)(A) ἐρυθρὰ(Adj)(A) πλαταγώνι᾽(A) ἔχοισαν(Prä)(Akt)(Op).
+(57) or poppy soft red clappers having.
+(58) ἀλλὰ(Kon) τὰ(Art)(N) μὲν(Pt) θέρεος(G), τὰ(Art)(N) δὲ(Pt) γίνεται(Prä)(M/P) ἐν(Prp) χειμῶνι(D),
+(58) but the indeed of|summer, the but comes|to|be in winter,
+(59) ὥστ᾽(Kon) οὐκ(Pt) ἄν(Pt) τοι(Pr)(D) ταῦτα(Pr)(A) φέρειν(Prä)(Akt)(Inf) ἅμα(Adv) πάντ᾽(Adj)(A) ἐδυνάθην(Aor)(M/P).
+(59) so|that not would to|you these to|carry at|once all I|was|able.
+(60) νῦν(Adv) μὰν(Pt) ὦ(ij) κόριον(V), νῦν(Adv) αὐτόγα(Pt) νεῖν(Prä)(Akt)(Inf) κε(Pt) μάθοιμι(Aor)(Akt)(Op),
+(60) now indeed O maiden, now even to|swim perhaps I|might|learn,
+(61) αἴκά(Kon) τις(Pr)(N) σὺν(Prp) ναῒ(D) πλέων(Prä)(Akt)(N) ξένος(N) ὧδ᾽(Adv) ἀφίκηται(Aor)(M/P),
+(61) if|ever someone with ship sailing stranger thus arrives,
+(62) ὡς(Kon) εἰδῶ(Knj)(Akt), τί(Pr)(A) ποθ᾽(Pt) ἁδὺ(Adj)(N) κατοικεῖν(Prä)(Akt)(Inf) τὸν(Art)(A) βυθὸν(A) ὔμμιν(Pr)(D).
+(62) so|that I|may|know, what ever sweet to|dwell the depth to|you|all.
+(63) ἐξένθοις(Aor)(Akt)(Op) Γαλάτεια(V) καὶ(Kon) ἐξενθοῖσα(Aor)(Akt)(N) λάθοιο(Aor)(M/P)(Op)
+(63) you|would|come|out Galatea and having|come|out you|would|forget
+(64) ὥσπερ(Kon) ἐγὼ(Pr)(N) νῦν(Adv) ὧδε(Adv) καθήμενος(Prä)(M/P)(N) οἴκαδ᾽(Adv) ἀπενθεῖν(Prä)(Akt)(Inf).
+(64) just|as I now here sitting homeward to|depart.
+(65) ποιμαίνειν(Prä)(Akt)(Inf) δ᾽(Pt) ἐθέλοις(Prä)(Akt)(Op) σὺν(Prp) ἐμὶν(Pr)(D) ἅμα(Adv) καὶ(Kon) γάλ᾽(A) ἀμέλγειν(Prä)(Akt)(Inf)
+(65) to|herd but you|would|wish with me together and milk to|milk
+(66) καὶ(Kon) τυρὸν(A) πᾶξαι(Aor)(Akt)(Inf) τάμισον(A) δριμεῖαν(Adj)(A) ἐνεῖσα(Aor)(Akt)(N).
+(66) and cheese to|press strainer sharp inserting.
+(67) ἁ(Art)(N) μάτηρ(N) ἀδικεῖ(Prä)(Akt) με(Pr)(A) μόνα(Adj)(A), καὶ(Kon) μέμφομαι(Prä)(M/P) αὐτᾷ(Pr)(D)·
+(67) the mother wrongs me alone, and I|blame her·
+(68) οὐδὲν(Pr)(N) πήποχ᾽(Pt) ὅλως(Adv) ποτὶ(Prp) τὶν(Art)(A) φίλον(Adj)(A) εἶπεν(Aor)(Akt) ὑπέρ(Prp) μευ(Pr)(G),
+(68) nothing ever at|all toward the dear said on|behalf|of me,
+(69) καὶ(Kon) ταῦτ᾽(Pr)(A) ἆμαρ(A) ἐπ᾽(Prp) ἆμαρ(A) ὁρεῦσά(Prä)(Akt)(N) με(Pr)(A) λεπτὸν(Adj)(A) ἐόντα(Prä)(Akt)(A).
+(69) and these|things day upon day seeing me thin being.
+(70) φασῶ(Fu)(Akt) τὰν(Art)(A) κεφαλὰν(A) καὶ(Kon) τὼς(Art)(Du)(A) πόδας(A) ἀμφοτέρως(Adv) μευ(Pr)(G)
+(70) I|will|say the head and the|two feet in|both|ways of|me
+(71) σφύζειν(Prä)(Akt)(Inf), ὡς(Kon) ἀνιαθῇ(Aor)(M/P)(Knj), ἐπεὶ(Kon) κἠγὼν(Kon)(Pr)(N) ἀνιῶμαι(Prä)(M/P).
+(71) to|throb, so|that she|be|pained, since and|I I|am|pained.
+(72) ὦ(ij) Κύκλωψ(V) Κύκλωψ(V), πᾷ(Adv) τὰς(Art)(A) φρένας(A) ἐκπεπότασαι(Per)(M/P);
+(72) O Cyclops Cyclops, where the wits have|you|flown|out;
+(73) αἴκ᾽(Kon) ἐνθὼν(Aor)(Akt)(N) θαλάρως(Adv) τε(Pt) πλέκοις(Prä)(Akt)(Op) καὶ(Kon) θαλλὸν(A) ἀμάσας(Aor)(Akt)(N)
+(73) if having|come|here at|ease and you|would|weave and sprig having|plucked
+(74) ταῖς(Art)(D) ἄρνεσσι(D) φέροις(Prä)(Akt)(Op), τάχα(Adv) κα(Pt) πολὺ(Adv) μᾶλλον(Adv)(Kmp) ἔχοις(Prä)(Akt)(Op) νῶν(Pr)(G).
+(74) to|the lambs you|would|carry, soon then much more you|would|have of|us.
+(75) τὰν(Art)(A) παρεοῖσαν(Prä)(Akt)(A) ἄμελγε(Imp)(Akt). τί(Pr)(A) τὸν(Art)(A) φεύγοντα(Prä)(Akt)(A) διώκεις(Prä)(Akt);
+(75) the present milk. why the fleeing do|you|pursue;
+(76) εὑρησεῖς(Fu)(Akt) Γαλάτειαν(A) ἴσως(Adv) καὶ(Kon) καλλίον᾽(Adj)(Kmp)(A) ἄλλαν(Adj)(A).
+(76) you|will|find Galatea perhaps and fairer another.
+(77) πολλαὶ(Adj)(N) συμπαίσδέν(Prä)(Akt)(Inf) με(Pr)(A) κόραι(N) τὰν(Art)(A) νύκτα(A) κέλονται(Prä)(M/P),
+(77) many to|play|together me girls the night bid,
+(78) κιχλίζοντι(Prä)(Akt) δὲ(Pt) πᾶσαι(Adj)(N), ἐπεί(Kon) κ᾽(Pt) αὐταῖς(Pr)(D) ὑπακούσω(Fu)(Akt)
+(78) giggle but all, since then to|them I|will|hearken
+(79) δῆλον(Adj)(N) ὅ(Pr)(N) τ᾽(Pt) ἐν(Prp) τᾷ(Art)(D) γᾷ(D) κἠγώ(Kon)(Pr)(N) τις(Pr)(N) φαίνομαι(Prä)(M/P) ἦμεν(Imp)(Akt).
+(79) clear that and in the earth and|I someone I|appear I|was.
+(80) οὕτω(Adv) τοι(Pr)(D) Πολύφαμος(N) ἐποίμαινεν(Imp)(Akt) τὸν(Art)(A) ἔρωτα(A)
+(80) thus to|you Polyphemus was|pasturing the love
+(81) μουσίσδων(Prä)(Akt)(N), ῥᾷον(Adv)(Kmp) δὲ(Pt) διᾶγ᾽(Imp)(Akt) ἢεἰ(Kon) χρυσὸν(A) ἔδωκεν(Aor)(Akt).
+(81) musicking, more|easily but he|spent|time than|if gold he|gave.
+=== Gedicht 12 ===
+== Ἀίτης ==
+(1) Ἤλυθες(Aor)(Akt) ὦ(ij) φίλε(Adj)(V) κοῦρε(V) τρίτῃ(Adj)(D) σὺν(Prp) νυκτὶ(D) καὶ(Kon) ἀοῖ(D);
+(1) you|came O dear youth on|the|third with night and dawn;
+(2) ἤλυθες(Aor)(Akt)· οἱ(Art)(N) δὲ(Pt) ποθεῦντες(Prä)(Akt)(N) ἐν(Prp) ἤματι(D) γηράσκουσιν(Prä)(Akt).
+(2) you|came· the but longing in day grow|old.
+(3) ὅσσον(Pr)(N) ἔαρ(N) χειμῶνος(G), ὅσον(Pr)(N) μᾶλον(N) βραβίλοιο(Adj)(G)
+(3) as|much|as spring of|winter, as|much|as apple of|prize|giving
+(4) ἅδιον(Adj)(Kmp)(N), ὅσσον(Pr)(N) ὄις(N) σφετέρας(Adj)(G) λασιωτέρα(Adj)(Kmp)(N) ἀρνός(G),
+(4) sweeter, as|much|as sheep of|its|own hairier of|lamb,
+(5) ὅσσον(Pr)(N) παρθενικὴ(Adj)(N) προφέρει(Prä)(Akt) τριγάμοιο(Adj)(G) γυναικός(G),
+(5) as|much|as maidenly surpasses of|thrice|wedded of|woman,
+(6) ὅσσον(Pr)(N) ἐλαφροτέρη(Adj)(Kmp)(N) μόσχου(G) νεβρός(N), ὅσσον(Pr)(N) ἀηδὼν(N)
+(6) as|much|as lighter of|calf fawn, as|much|as nightingale
+(7) συμπάντων(Adj)(G) λιγύφωνος(Adj)(N) ἀοιδοτάτη(Adj)(Sup)(N) πετεηνῶν(G),
+(7) of|all clear|voiced most|singing of|birds,
+(8) τόσσον(Adj)(N) ἔμ᾽(Pr)(A) εὔφρανας(Aor)(Akt) τὺ(Pr)(N) φανείς(Aor)(Akt)(N), σκιερὰν(Adj)(A) δ᾽(Pt) ὑπὸ(Prp) φαγὸν(A)
+(8) so|much me you|gladdened you appearing, shady but under beech
+(9) ἀελίου(G) φρύγοντος(Prä)(Akt)(G) ὁδοιπόρος(N) ἔδραμον(AorS)(Akt) ὥς(Kon) τις(Pr)(N).
+(9) of|sun burning wayfarer I|ran like someone.
+(10) εἴθ᾽(Kon) ὁμαλοὶ(Adj)(N) πνεύσειαν(Aor)(Akt)(Op) ἐπ᾽(Prp) ἀμφοτέροισιν(Adj)(Du)(D) Ἔρωτες(N)
+(10) would|that even might|blow upon the|both Loves
+(11) νῶιν(Pr)(Du)(G), ἐπεσσομένοις(Prä)(M/P)(D) δὲ(Pt) γενοίμεθα(Aor)(Med)(Op) πᾶσιν(Adj)(D) ἀοιδά(N).
+(11) of|us|two, being|sung|of but we|might|become to|all song.
+(12) θείω(Adj)(Du)(N) δή(Pt) τινε(Pr)(Du)(N) τώδε(Pr)(Du)(N) μετὰ(Prp) προτέροισι(Adj)(D) γενέσθην(Aor)(M/P)(Du)
+(12) divine|two indeed some|two these|two among former they|two|were|born
+(13) φῶθ᾽(Du)(V), ὁ(Art)(N) μὲν(Pt) εἴσπνηλος(Adj)(N), φαίη(Aor)(Akt)(Op) χ᾽(Pt) ὡμυκλαϊάσδων(Prä)(Akt)(N),
+(13) O|men|two, the indeed inspirer, would|say at|least baying|together,
+(14) τὸν(Art)(A) δ᾽(Pt) ἕτερον(Adj)(A) πάλιν(Adv) ὥς(Kon) κεν(Pt) ὁ(Art)(N) Θεσσαλὸς(N) εἴποι(Aor)(Akt)(Op) ἀίταν(A).
+(14) the but other again as would the Thessalian would|say beggar.
+(15) ἀλλήλους(Pr)(A) δ᾽(Pt) ἐφίλησαν(Aor)(Akt) ἴσῳ(Adj)(D) ζυγῷ(D). ἦ(ij) ῥα(Pt) τότ᾽(Adv) ἦσαν(Imp)(Akt)
+(15) each|other but they|loved with|equal yoke. indeed then then they|were
+(16) χρύσειοι(Adj)(N) πάλιν(Adv) ἄνδρες(N), ὃ(Pr)(N) κἀντεφίλησ᾽(Kon)(Aor)(Akt) ὁ(Art)(N) φιληθείς(Aor)(M/P)(N).
+(16) golden again men, who and|loved|in|return the having|been|loved.
+(17) εἰ(Kon) γὰρ(Pt) τοῦτο(Pr)(N) πάτερ(V) Κρονίδα(V) πέλοι(Prä)(M/P)(Op), εἰ(Kon) γὰρ(Pt) ἀγήρῳ(Adj)(D)
+(17) if for this father Kronide might|be, if for ageless
+(18) ἀθάνατοι(Adj)(N), γενεαῖς(D) δὲ(Pt) διηκοσίαισιν(Adj)(D) ἔπειτα(Adv)
+(18) immortal, to|generations but two|hundred then
+(19) ἀγγείλειεν(Aor)(Akt)(Op) ἐμοί(Pr)(D) τις(Pr)(N) ἀνέξοδον(Adj)(A) εἰς(Prp) Ἀχέροντα(A)·
+(19) would|announce to|me someone without|exit into Acheron·
+(20) "ἡ(Art)(N) σὴ(Adj)(N) νῦν(Adv) φιλότης(N) καὶ(Kon) τοῦ(Art)(G) χαρίεντος(Adj)(G) ἀίτεω(G)
+(20) "the your now friendship and of graceful the|beggar
+(21) πᾶσι(Adj)(D) διὰ(Prp) στόματος(G), μετὰ(Prp) δ᾽(Pt) ἠιθέοισι(D) μάλιστα(Adv)(Sup)."
+(21) to|all through of|mouth, among but youths most."
+(22) ἀλλ᾽(Kon) ἤτοι(Pt) τούτων(Pr)(G) μὲν(Pt) ὑπέρτεροι(Adj)(N) Οὐρανίωνες(N)
+(22) but indeed of|these at|least superior heavenly|ones
+(23) ἔσσονθ᾽(Fu)(Akt) ὡς(Kon) ἐθέλοντι(Prä)(Akt)(D). ἐγὼ(Pr)(N) δέ(Pt) σε(Pr)(A) τὸν(Art)(A) καλὸν(Adj)(A) αἰνέων(Prä)(Akt)(N)
+(23) will|be as to|one|willing. I but you the fair praising
+(24) ψεύδεα(A) ῥινὸς(G) ὕπερθεν(Adv) ἀραιᾶς(Adj)(G) οὐκ(Pt) ἀναφύσω(Fu)(Akt).
+(24) lies of|nose above thin not I|will|inflate.
+(25) ἢν(Kon) γὰρ(Pt) καί(Kon) τι(Pr)(A) δάκῃς(Aor)(Akt)(Knj), τὸ(Art)(N) μὲν(Pt) ἀβλαβὲς(Adj)(N) εὐθὺς(Adv) ἔθηκας(Aor)(Akt),
+(25) if for even something you|bite, the indeed harmless straightway you|made,
+(26) διπλάσιον(Adj)(A) δ᾽(Pt) ὤνασας(Aor)(Akt), ἔχων(Prä)(Akt)(N) δ᾽(Pt) ἐπίμετρον(Adj)(A) ἀπῆνθον(A).
+(26) double but you|profited, having but added blossom.
+(27) Νισαῖοι(Adj)(N) Μεγαρῆες(N) ἀριστεύοντες(Prä)(Akt)(N) ἐρετμοῖς(D),
+(27) Nisaean Megarians excelling with|oars,
+(28) ὄλβιοι(Adj)(N) οἰκείοιτε(Prä)(Akt)(Op), τὸν(Art)(A) Ἀττικὸν(Adj)(A) ὡς(Kon) περίαλλα(Adv)
+(28) blessed may|you|dwell, the Attic how beyond|measure
+(29) ξεῖνον(A) ἐτιμήσασθε(Aor)(M/P) Διοκλέα(A) τὸν(Art)(A) φιλόπαιδα(Adj)(A).
+(29) guest|friend you|honored Diocles the boy|loving.
+(30) αἰεί(Adv) οἱ(Pr)(D) περὶ(Prp) τύμβον(A) ἀολλέες(Adj)(N) εἴαρι(D) πράτῳ(Adj)(D)
+(30) always to|him around tomb in|a|throng in|spring first
+(31) κοῦροι(N) ἐριδμαίνοντι(Prä)(Akt)(D) φιλήματος(G) ἄκρα(A) φέρεσθαι(Prä)(M/P)(Inf).
+(31) youths contending of|kiss prize to|be|borne.
+(32) ὃς(Pr)(N) δέ(Pt) κε(Pt) προσμάξῃ(Aor)(Akt)(Knj) γλυκερώτερα(Adj)(Kmp)(A) χείλεσι(D) χείλη(A),
+(32) whoever then indeed he|may|press sweeter with|lips lips,
+(33) βριθόμενος(Prä)(M/P)(N) στεφάνοισιν(D) ἑὰν(Adj)(A) ἐς(Prp) μητέρ᾽(A) ἀπῆνθεν(Aor)(Akt).
+(33) being|burdened with|garlands his|own to mother he|went.
+(34) ὄλβιος(Adj)(N), ὅστις(Pr)(N) παισὶ(D) φιλήματα(A) κεῖνα(Pr)(A) διαιτᾷ(Prä)(Akt).
+(34) blessed, whoever for|boys kisses those dispenses.
+(35) ἦ(Pt) που(Pt) τὸν(Art)(A) χαροπὸν(Adj)(A) Γανυμήδεα(A) πόλλ᾽(Adv) ἐπιβωτᾷ(Prä)(Akt)
+(35) surely perhaps the bright|eyed Ganymede much invokes
+(36) Λυδίῃ(Adj)(D) ἶσον(Adj)(A) ἔχειν(Prä)(Akt)(Inf) πέτρῃ(D) στόμα(A), χρυσὸν(A) ὁποίῃ(Pr)(D)
+(36) to|a|Lydian equal to|have to|a|stone mouth, gold by|which
+(37) πεύθονται(Prä)(M/P) μὴ(Pt) φαῦλος(Adj)(N) ἐτήτυμω(Adj)(D) ἀργυραμοιβοί(N).
+(37) they|ascertain not base with|truth money|changers.
+=== Gedicht 13 ===
+== ῎Υλας ==
+(1) οὐχ(Pt) ἁμῖν(Pr)(D) τὸν(Art)(A) Ἔρωτα(A) μόνοις(Adj)(D) ἔτεχ᾽(Aor)(Akt), ὡς(Kon) ἐδοκεῦμες(Imp)(Akt),
+(1) not to|us the Love alone did|beget, as we|thought,
+(2) Νικία(V), ᾧ(Pr)(D) τινι(Pr)(D) τοῦτο(Pr)(N) θεῶν(G) ποκα(Adv) τέκνον(N) ἔγεντο(Aor)(M/P).
+(2) Nicias, to|some one this of|gods once child became.
+(3) οὐχ(Pt) ἁμῖν(Pr)(D) τὰ(Art)(N) καλὰ(Adj)(N) πράτοις(Adj)(D) καλὰ(Adj)(N) φαίνεται(Prä)(M/P) εἶμεν(Prä)(Akt)(Inf),
+(3) not to|us the beautiful at|first beautiful appears to|be,
+(4) οἳ(Pr)(N) θνατοὶ(Adj)(N) πελόμεσθα(Prä)(M/P), τὸ(Art)(A) δ᾽(Pt) αὔριον(A) οὐκ(Pt) ἐσορῶμες(Prä)(Akt)·
+(4) who mortal we|are, the but tomorrow not we|see·
+(5) ἀλλὰ(Kon) καὶ(Kon) ὡμφιτρύωνος(G) ὁ(Art)(N) χαλκεοκάρδιος(Adj)(N) υἱός(N),
+(5) but and of|Amphitryon the bronze|hearted son,
+(6) ὃς(Pr)(N) τὸν(Art)(A) λῖν(A) ὑπέμεινε(Aor)(Akt) τὸν(Art)(A) ἄγριον(Adj)(A), ἤρατο(Aor)(Med) παιδός(G),
+(6) who the lion he|withstood the wild, he|fell|in|love of|a|boy,
+(7) τῶ(Art)(G) χαρίεντος(Adj)(G) Ὕλα(G), τῶ(Art)(G) τὰν(Art)(A) πλοκαμῖδα(A) φορεῦντος(Prä)(Akt)(G),
+(7) of|the graceful Hylas, of|the the lock wearing,
+(8) καί(Kon) νιν(Pr)(A) πάντ᾽(Adj)(A) ἐδίδαξε(Aor)(Akt) πατὴρ(N) ὡσεὶ(Kon) φίλον(Adj)(A) υἱέα(A),
+(8) and him all taught father as|if dear son,
+(9) ὅσσα(Pr)(A) μαθὼν(Aor)(Akt)(N) ἀγαθὸς(Adj)(N) καὶ(Kon) ἀοίδιμος(Adj)(N) αὐτὸς(Pr)(N) ἔγεντο(Aor)(M/P)·
+(9) all|that having|learned good and song|famed himself became·
+(10) χωρὶς(Adv) δ᾽(Pt) οὐδέποκ᾽(Pt) ἦς(Imp)(Akt), οὔτ᾽(Kon) εἰ(Kon) μέσον(Adj)(A) ἆμαρ(A) ὄροιτο(Op)(M/P),
+(10) apart but never he|was, nor if middle day might|rise,
+(11) οὔτ᾽(Kon) ἄρ᾽(Pt) ὅχ᾽(Kon) ἁ(Art)(N) λεύκιππος(Adj)(N) ἀνατρέχοι(Prä)(Akt)(Knj) ἐς(Prp) Διὸς(G) Ἀώς(A),
+(11) nor then when the white|horsed may|run|up into of|Zeus Dawn,
+(12) οὐδ᾽(Kon) ὁπόκ᾽(Kon) ὀρτάλιχοι(N) μινυροὶ(Adj)(N) ποτὶ(Prp) κοῖτον(A) ὁρῷεν(Prä)(Akt)(Op),
+(12) nor whenever nestlings plaintive toward bed they|might|look,
+(13) σεισαμένας(Aor)(M/P)(A) πτερὰ(A) ματρὸς(G) ἐπ᾽(Prp) αἰθαλόεντι(Adj)(D) πετεύρῳ(D),
+(13) having|shaken wings of|mother upon sooty rafter,
+(14) ὡς(Kon) αὐτῷ(Pr)(D) κατὰ(Prp) θυμὸν(A) ὁ(Art)(N) παῖς(N) πεποναμένος(Per)(M/P)(N) εἴη(Knj)(Akt),
+(14) so|that to|him according|to spirit the boy having|worked may|be,
+(15) αὐτῷ(Pr)(D) δ᾽(Pt) εὖ(Adv) ἕλκων(Prä)(Akt)(N) ἐς(Prp) ἀλαθινὸν(Adj)(A) ἄνδρ᾽(A) ἀποβαίη(Prä)(Akt)(Op).
+(15) to|him but well drawing into true man he|might|turn|out.
+(16) ἀλλ᾽(Kon) ὅτε(Kon) τὸ(Art)(A) χρύσειον(Adj)(A) ἔπλει(Imp)(Akt) μετὰ(Prp) κῶας(A) Ἰήσων(N)
+(16) but when the golden he|sailed after fleece Jason
+(17) Αἰσονίδας(N), οἱ(Art)(N) δ᾽(Pt) αὐτῷ(Pr)(D) ἀριστῆες(N) συνέποντο(Imp)(M/P)
+(17) Aisonides, the but to|him best|men were|following
+(18) πασᾶν(Adj)(G) ἐκ(Prp) πολίων(G) προλελεγμένοι(Per)(M/P)(N), ὧν(Pr)(G) ὄφελός(N) τι(Pr)(N),
+(18) of|all out|of cities having|been|chosen|before, of|whom benefit some,
+(19) ἵκετο(AorS)(M/P) χὡ(Kon)(Art)(N) ταλαεργὸς(Adj)(N) ἀνὴρ(N) ἐς(Prp) ἀφνειὸν(Adj)(A) Ἰωλκόν(A),
+(19) came and|the much|toiling man into wealthy Iolcus,
+(20) Ἀλκμήνης(G) υἱὸς(N) Μιδεάτιδος(Adj)(G) ἡρωίνης(G),
+(20) of|Alcmene son Mideatian heroine,
+(21) σὺν(Prp) δ᾽(Pt) αὐτῷ(Pr)(D) κατέβαινεν(Imp)(Akt) Ὕλας(N) εὔεδρον(Adj)(A) ἐς(Prp) Ἀργώ(A),
+(21) with but him he|was|going|down Hylas well|benched into Argo,
+(22) ἅτις(Pr)(N) κυανεᾶν(Adj)(G) οὐχ(Pt) ἥψατο(Aor)(M/P) συνδρομάδων(G) ναῦς(N),
+(22) which of|dark|blue not touched of|clashing ship,
+(23) ἀλλὰ(Kon) διεξάιξε(Aor)(Akt), βαθὺν(Adj)(A) δ᾽(Pt) εἰσέδραμε(AorS)(Akt) Φᾶσιν(A),
+(23) but darted|through, deep but ran|into Phasis,
+(24) αἰετὸς(N) ἐς(Prp) μέγα(Adj)(A) λαῖτμα(A)· ἀφ᾽(Prp) οὗ(Pr)(G) τότε(Adv) χοιράδες(N) ἔσταν(Imp)(Akt).
+(24) eagle into great gulf· from which then sandbanks were.
+(25) ἆμος(Kon) δ᾽(Pt) ἀντέλλοντι(Prä)(Akt)(D) Πελειάδες(N), ἐσχατιαὶ(N) δὲ(Pt)
+(25) when but rising|opposite Pleiades, borders but
+(26) ἄρνα(A) νέον(Adj)(A) βόσκοντι(Prä)(Akt)(D), τετραμμένου(Per)(M/P)(G) εἴαρος(G) ἤδη(Adv),
+(26) lamb new feeding, of|turned spring already,
+(27) τᾶμος(Adv) ναυτιλίας(G) μιμνάσκετο(Imp)(M/P) θεῖος(Adj)(N) ἄωτος(N)
+(27) then of|voyage was|remembering divine flower
+(28) ἡρώων(G), κοίλαν(Adj)(A) δὲ(Pt) καθιδρυνθέντες(Aor)(Pas)(N) ἐς(Prp) Ἀργὼ(A)
+(28) of|heroes, hollow but having|sat|down into Argo
+(29) Ἑλλάσποντον(A) ἵκοντο(AorS)(M/P) νότῳ(D) τρίτον(Adj)(A) ἆμαρ(A) ἀέντι(Prä)(Akt)(D),
+(29) Hellespont they|came with|south|wind third day blowing,
+(30) εἴσω(Adv) δ᾽(Pt) ὅρμον(A) ἔθεντο(Aor)(M/P) Προποντίδος(G), ἔνθα(Kon) Κιανῶν(Adj)(G)
+(30) within but harbor they|placed of|Propontis, where of|Kianians
+(31) αὔλακας(A) εὐρύνοντι(Prä)(Akt)(D) βόες(N) τρίβοντες(Prä)(Akt)(N) ἄροτρα(A).
+(31) furrows widening oxen rubbing ploughs.
+(32) ἐκβάντες(Aor)(Akt)(N) δ᾽(Pt) ἐπὶ(Prp) θῖνα(A) κατὰ(Prp) ζυγὰ(A) δαῖτα(A) πένοντο(Imp)(M/P)
+(32) having|gone|out but upon beach according|to ranks feast were|busying
+(33) δειελινοί(Adj)(N), πολλοὶ(Adj)(N) δὲ(Pt) μίαν(Adj)(A) στορέσαντο(Aor)(M/P) χαμεύναν(A).
+(33) evening, many but one spread|for|themselves ground|bed.
+(34) λειμὼν(N) γάρ(Pt) σφιν(Pr)(D) ἔκειτο(Imp)(M/P), μέγα(Adj)(N) στιβάδεσσιν(D) ὄνειαρ(N),
+(34) meadow for to|them lay, great with|bedding boon,
+(35) ἔνθεν(Adv) βούτομον(A) ὀξὺ(Adj)(A) βαθύν(Adj)(A) τ᾽(Pt) ἐτάμοντο(Aor)(M/P) κύπειρον(A).
+(35) thence ox|fodder sharp deep and they|cut galingale.
+(36) κᾤχεθ᾽(Kon)(Imp)(M/P) Ὕλας(N) ὁ(Art)(N) ξανθὸς(Adj)(N) ὕδωρ(A) ἐπιδόρπιον(Adj)(A) οἰσῶν(Fu)(Akt)(N)
+(36) and|went|off Hylas the fair|haired water for|after|supper bringing
+(37) αὐτῷ(Pr)(D) θ᾽(Pt) Ἡρακλῆι(D) καὶ(Kon) ἀστεμφεῖ(Adj)(D) Τελαμῶνι(D),
+(37) to|him and to|Heracles and steadfast to|Telamon,
+(38) οἳ(Pr)(N) μίαν(Adj)(A) ἄμφω(Adj)(Du)(N) ἑταῖροι(N) ἀεὶ(Adv) δαίνυντο(Imp)(M/P) τράπεζαν(A),
+(38) who one both companions always were|feasting table,
+(39) χάλκεον(Adj)(A) ἄγγος(A) ἔχων(Prä)(Akt)(N). τάχα(Adv) δὲ(Pt) κράναν(A) ἐνόησεν(Aor)(Akt)
+(39) bronze vessel holding. soon but spring he|noticed
+(40) ἡμένῳ(Adj)(D) ἐν(Prp) χώρῳ(D)· περὶ(Prp) δὲ(Pt) θρύα(N) πολλὰ(Adj)(N) πεφύκει(Per)(Akt),
+(40) low in place· around but reeds many had|grown,
+(41) κυάνεόν(Adj)(A) τε(Pt) χελιδόνιον(A) χλωρόν(Adj)(A) τ᾽(Pt) ἀδίαντον(A)
+(41) dark|blue and celandine green and adiantum
+(42) καὶ(Kon) θάλλοντα(Prä)(Akt)(A) σέλινα(A) καὶ(Kon) εἰλιτενὴς(Adj)(N) ἄγρωστις(N).
+(42) and flourishing celery and winding wild|grass.
+(43) ὕδατι(D) δ᾽(Pt) ἐν(Prp) μέσσῳ(Adj)(D) Νύμφαι(N) χορὸν(A) ἀρτίζοντο(Imp)(M/P),
+(43) water but in middle Nymphs dance were|arranging,
+(44) νύμφαι(N) ἀκοίμητοι(Adj)(N), δειναὶ(Adj)(N) θεαὶ(N) ἀγροιώταις(D),
+(44) nymphs sleepless, dread goddesses for|country|folk,
+(45) Εὐνείκα(N) καὶ(Kon) Μαλὶς(N) ἔαρ(A) θ᾽(Pt) ὁρόωσα(Prä)(Akt)(N) Νύχεια(N),
+(45) Euneika and Malis spring and seeing Nycheia,
+(46) ἤτοι(Pt) ὁ(Art)(N) κοῦρος(N) ἐπεῖχε(Imp)(Akt) ποτῷ(D) πολυχανδέα(Adj)(A) κρωσσὸν(A)
+(46) indeed the youth was|holding|over for|drink wide|mouthed pitcher
+(47) βάψαι(Aor)(Akt)(Inf) ἐπειγόμενος(Prä)(M/P)(N), ταὶ(Art)(N) δ᾽(Pt) ἐν(Prp) χερὶ(D) πᾶσαι(Adj)(N) ἔφυσαν(Aor)(Akt)·
+(47) to|dip being|eager, the but in hand all sprang|up·
+(48) πασάων(Adj)(G) γὰρ(Pt) ἔρως(N) ἁπαλὰς(Adj)(A) φρένας(A) ἐξεσόβησεν(AorS)(Akt)
+(48) of|all for love tender minds drove|out
+(49) Ἀργείῳ(Adj)(D) ἐπὶ(Prp) παιδί(D)· κατήριπε(Aor)(Akt) δ᾽(Pt) ἐς(Prp) μέλαν(Adj)(A) ὕδωρ(A)
+(49) to|Argive upon boy· tumbled|down but into black water
+(50) ἀθρόος(Adj)(N), ὡς(Kon) ὅτε(Kon) πυρσὸς(N) ἀπ᾽(Prp) οὐρανοῦ(G) ἤριπεν(Aor)(Akt) ἀστὴρ(N)
+(50) sudden, as when torch from sky fell star
+(51) ἀθρόος(Adj)(N), ἐν(Prp) πόντῳ(D), ναύταις(D) δέ(Pt) τις(Pr)(N) εἶπεν(AorS)(Akt) ἑταίροις(D)·
+(51) at|once, in sea, to|sailors then someone said to|comrades·
+(52) "κουφότερ᾽(Adj)(Kmp)(A) ὦ(ij) παῖδες(V) ποιεῖσθ᾽(Prä)(M/P)(Imv) ὅπλα(A)· πνευστικὸς(Adj)(N) οὖρος(N)."
+(52) "lighter O boys make|for|yourselves gear· blowing wind."
+(53) νύμφαι(N) μὲν(Pt) σφετέροις(Adj)(D) ἐπὶ(Prp) γούνασι(D) κοῦρον(A) ἔχοισαι(Prä)(Akt)(N)
+(53) nymphs indeed their|own upon knees boy holding
+(54) δακρυόεντ᾽(Adj)(A) ἀγανοῖσι(Adj)(D) παρεψύχοντ᾽(Imp)(Akt) ἐπέεσσιν(D).
+(54) tearful with|gentle they|soothed with|words.
+(55) Ἀμφιτρυωνιάδας(N) δὲ(Pt) ταρασσόμενος(Prä)(M/P)(N) περὶ(Prp) παιδὶ(D)
+(55) Amphitryoniad but being|troubled about boy
+(56) ᾤχετο(Imp)(M/P), μαιωτιστὶ(Adv) λαβὼν(Aor)(Akt)(N) εὐκαμπέα(Adj)(A) τόξα(A)
+(56) went|off, in|Maeotian|wise having|taken well|bending bows
+(57) καὶ(Kon) ῥόπαλον(A), τό(Pr)(N) οἱ(Pr)(D) αἰὲν(Adv) ἐχάνδανε(Imp)(Akt) δεξιτερὴ(Adj)(N) χείρ(N).
+(57) and club, which to|him always was|pleasing right hand.
+(58) τρὶς(Adv) μὲν(Pt) Ὕλαν(A) ἄυσεν(Aor)(Akt), ὅσον(Pr)(A) βαρὺς(Adj)(N) ἤρυγε(Imp)(Akt) λαιμός(N)·
+(58) thrice indeed Hylas called, as|much|as heavy was|bellowing throat·
+(59) τρὶς(Adv) δ᾽(Pt) ἄρ᾽(Pt) ὁ(Art)(N) παῖς(N) ὑπάκουσεν(Aor)(Akt), ἀραιὰ(Adj)(N) δ᾽(Pt) ἵκετο(AorS)(M/P) φωνὰ(A)
+(59) thrice then indeed the boy answered, thin but came voice
+(60) ἐξ(Prp) ὕδατος(G), παρεὼν(Prä)(Akt)(N) δὲ(Pt) μάλα(Adv) σχεδὸν(Adv) εἴδετο(Imp)(M/P) πόρρω(Adv).
+(60) out|of water, being|present but very near seemed far.
+(61) ὡς(Kon) δ᾽(Pt) ὁπότ᾽(Kon) ἠυγένειος(Adj)(N) ἀπόπροθι(Adv) λῖς(N) ἐσακούσας(Aor)(Akt)(N)†,
+(61) as but when fair|bearded far|away lion having|heard†,
+(62) νεβροῦ(G) φθεγξαμένας(Aor)(M/P)(A) τις(Pr)(N) ἐν(Prp) οὔρεσιν(D) ὠμοφάγος(Adj)(N) λῖς(N)
+(62) of|fawn having|cried someone in mountains raw|eating lion
+(63) ἐξ(Prp) εὐνᾶς(G) ἔσπευσεν(Aor)(Akt) ἑτοιμοτάταν(Adj)(Sup)(A) ἐπὶ(Prp) δαῖτα(A)·
+(63) out|of bed hastened most|ready to feast·
+(64) Ἡρακλέης(N) τοιοῦτος(Adj)(N) ἐν(Prp) ἀτρίπτοισιν(Adj)(D) ἀκάνθαις(D)
+(64) Heracles such in un|trodden thorns
+(65) παῖδα(A) ποθῶν(Prä)(Akt)(N) δεδόνητο(Per)(M/P), πολὺν(Adj)(A) δ᾽(Pt) ἐπελάμβανε(Imp)(Akt) χῶρον(A).
+(65) boy longing he|was|shaken, much but was|taking ground.
+(66) σχέτλιοι(Adj)(N) οἱ(Art)(N) φιλέοντες(Prä)(Akt)(N)· ἀλώμενος(Prä)(M/P)(N) ὅσσ᾽(Pr)(A) ἐμόγησεν(Aor)(Akt)
+(66) wretched the loving|ones· wandering as|many|things he|toiled
+(67) οὔρεα(A) καὶ(Kon) δρυμούς(A), τὰ(Art)(N) δ᾽(Pt) Ἰήσονος(G) ὕστερα(Adv) πάντ᾽(Adj)(A) ἦς(Imp)(Akt).
+(67) mountains and woods, the but of|Jason later all was.
+(68) ναῦς(N) γέμεν(Prä)(Akt)(Inf) ἄρμεν᾽(A) ἔχοισα(Prä)(Akt)(N) μετάρσια(Adv) τῶν(Art)(G) παρεόντων(Prä)(Akt)(G),
+(68) ship to|be|full gear having aloft of|the being|present,
+(69) ἱστία(N) δ᾽(Pt) ἡμίθεοι(N) μεσονύκτιον(Adv) ἐξεκάθαιρον(Imp)(Akt)
+(69) sails but demigods at|midnight they|were|clearing|out
+(70) Ἡρακλῆα(A) μένοντες(Prä)(Akt)(N). ὁ(Art)(N) δ᾽(Pt) ᾇ(Adv) πόδες(N) ἆγον(Imp)(Akt) ἐχώρει(Imp)(Akt)
+(70) Heracles waiting. he but where feet were|leading he|was|going
+(71) μαινόμενος(Prä)(M/P)(N)· χαλεπὸς(Adj)(N) γὰρ(Pt) ἔσω(Adv) θεὸς(N) ἧπαρ(A) ἄμυσσεν(Aor)(Akt).
+(71) being|mad· harsh for within god liver tore.
+(72) οὕτω(Adv) μὲν(Pt) κάλλιστος(Adj)(Sup)(N) Ὕλας(N) μακάρων(Adj)(G) ἀμιθρεῖται(Prä)(M/P)·
+(72) thus indeed fairest Hylas of|the|blessed is|reckoned|with·
+(73) Ἡρακλέην(A) δ᾽(Pt) ἥρωες(N) ἐκερτόμεον(Imp)(Akt) λιποναύταν(A),
+(73) Heracles but heroes were|mocking ship|leaver,
+(74) οὕνεκεν(Kon) ἠρώησε(Aor)(Akt) τριακοντάζυγον(Adj)(A) Ἀργώ(A),
+(74) because rushed thirty|benched Argo,
+(75) πεζᾷ(Adv) δ᾽(Pt) ἐς(Prp) Κόλχους(A) τε(Pt) καὶ(Kon) ἄξενον(Adj)(A) ἵκετο(AorS)(M/P) Φᾶσιν(A).
+(75) on|foot but to Colchians and also inhospitable came Phasis.
+=== Gedicht 14 ===
+== Κυνίσκας Ἔρως ἢ Θυώνιχος. ==
+(1) χαίρειν(Prä)(Akt)(Inf) πολλὰ(Adv) τὸν(Art)(A) ἄνδρα(A) Θυώνιχον(A). ἀλλὰ(Kon) τὺ(Pr)(N) ταὐτά(Adj)(A),
+(1) greet much the man Thyonichus. but you the|same|things,
+(2) Αἰσχίνα(V). ὡς(Adv) χρόνιος(Adj)(N). χρόνιος(Adj)(N); τί(Pr)(N) δέ(Pt) τοι(Pr)(D) τὸ(Art)(N) μέλημα(N);
+(2) Aischina. how long|time. long|time; what but to|you the care;
+(3) πράσσομες(Prä)(Akt) οὐχ(Pt) ὡς(Kon) λῷστα(Adj)(Sup)(Adv) Θυώνιχε(V). ταῦτ᾽(Pr)(A) ἄρα(Pt) λεπτός(Adj)(N),
+(3) we|fare not as best Thyonichus. these then slender,
+(4) χὡ(Kon)(Art)(N) μύσταξ(N) πολὺς(Adj)(N) οὗτος(Pr)(N), ἀυσταλέοι(Adj)(N) δὲ(Pt) κίκιννοι(N).
+(4) and|the moustache thick this, sun|parched but scarlets.
+(5) τοιοῦτος(Adj)(N) πρώαν(Adv) τις(Pr)(N) ἀφίκετο(Aor)(M/P) Πυθαγορικτάς(A),
+(5) such formerly someone arrived Pythagorean,
+(6) ὠχρὸς(Adj)(N) κἀνυπόδητος(Kon)(Adj)(N)· Ἀθηναῖος(N) δ᾽(Pt) ἔφατ᾽(Imp)(Akt) ἦμεν(Imp)(Akt).
+(6) sallow and|unshod· Athenian but he|said we|were.
+(7) ἤρατο(Aor)(Med) μὰν(Pt) καὶ(Kon) τῆνος(Pr)(N), ἐμὶν(Pr)(D) δοκεῖ(Prä)(Akt), ὀπτῶ(Adj)(D) ἀλεύρω(D).
+(7) fell|in|love indeed and that|one, to|me seems, for|baked flour.
+(8) παίσδεις(Prä)(Akt) ὦγάθ᾽(ij) ἔχων(Prä)(Akt)(N)· ἐμὲ(Pr)(A) δ᾽(Pt) ἁ(Art)(N) χαρίεσσα(Adj)(N) Κυνίσκα(N)
+(8) you|jest O|good|one having· me but the graceful Cynisca
+(9) ὑβρίσδει(Prä)(Akt)· λασῶ(Adj)(N) δὲ(Pt) μανείς(Aor)(M/P)(N) ποκα(Adv), θρὶξ(N) ἀνὰ(Prp) μέσσον(A).
+(9) insults· hairy but mad once, hair up middle.
+(10) τοιοῦτος(Adj)(N) μὲν(Pt) ἀεὶ(Adv) τὺ(Pr)(N) φίλ᾽(Adj)(V) Αἰσχίνα(V), ἁσυχᾷ(Adv) ὀξύς(Adj)(N),
+(10) such indeed always you dear Aischina, quietly keen,
+(11) πάντ᾽(Adj)(A) ἐθέλων(Prä)(Akt)(N) κατὰ(Prp) καιρόν(A)· ὅμως(Adv) δ᾽(Pt) εἶπον(Aor)(Akt), τί(Pr)(N) τὸ(Art)(N) καινόν(Adj)(N).
+(11) all willing according|to right|time· nevertheless but I|said, what the new.
+(12) ὡργεῖος(Adj)(N) κἠγὼ(Kon)(Pr)(N) καὶ(Kon) ὁ(Art)(N) Θεσσαλὸς(N) ἱπποδιώκτας(N)
+(12) banquet|man and|I and the Thessalian horse|chasers
+(13) Ἀπις(N) καὶ(Kon) Κλεύνικος(N) ἐπίνομες(Imp)(Akt) ὁ(Art)(N) στρατιώτας(N)
+(13) Apis and Kleunikos we|drank the soldier
+(14) ἐν(Prp) χώρῳ(D) παρ᾽(Prp) ἐμίν(Pr)(D). δύο(Adj)(A) μὲν(Pt) κατέκοψα(Aor)(Akt) νεοσσὼς(A)
+(14) in place beside me. two indeed I|cut|down young|ones
+(15) θηλάζοντά(Prä)(Akt)(A) τε(Pt) χοῖρον(A), ἀνῷξα(Aor)(Akt) δὲ(Pt) βίβλινον(Adj)(A) αὐτοῖς(Pr)(D)
+(15) suckling and piglet, I|opened but bibline for|them
+(16) εὐώδη(Adj)(A), τετόρων(Adj)(G) ἐτέων(G), σχεδὸν(Adv) ὡς(Kon) ἀπὸ(Prp) λανῶ(G).
+(16) fragrant, of|four of|years, nearly as from wool.
+(17) βολβὸς(N) κτεὶς(N) κοχλίας(N) ἐξῃρέθη(Aor)(Pas). ἦς(Imp)(Akt) πότος(N) ἁδύς(Adj)(N).
+(17) bulb comb shells was|removed. was drink sweet.
+(18) ἤδη(Adv) δὲ(Pt) προϊόντος(Prä)(Akt)(G), ἔδοξ᾽(Aor)(Akt) ἐπιχεῖσθαι(Prä)(M/P)(Inf) ἄκρατον(Adj)(A)
+(18) already but of|advancing, it|seemed to|pour|on unmixed
+(19) ὧτινος(Pr)(G) ἤθελ᾽(Imp)(Akt) ἕκαστος(Pr)(N)· ἔδει(Imp)(M/P) μόνον(Adv) ὧτινος(Pr)(G) εἰπεῖν(Aor)(Akt)(Inf).
+(19) of|which was|willing each· it|was|necessary only of|which to|say.
+(20) ἄμμες(Pr)(N) μὲν(Pt) φωνεῦντες(Prä)(Akt)(N) ἐπίνομες(Imp)(Akt), ὡς(Kon) ἐδέδοκτο(Per)(M/P)·
+(20) we indeed calling we|drank, as it|had|been|resolved·
+(21) ἁ(Art)(N) δ᾽(Pt) οὐδὲν(Pr)(A) παρεόντος(Prä)(Akt)(G) ἐμεῦ(Pr)(G). τίν᾽(Pr)(A) ἔχειν(Prä)(Akt)(Inf) με(Pr)(A) δοκεῖς(Prä)(Akt) νοῦν(A);
+(21) the but nothing of|being|present of|me. what to|have me you|seem mind;
+(22) "οὐ(Pt) φθεγξῇ(Knj)(Akt); λύκον(A) εἶδες(Aor)(Akt)· " ἔπαιξέ(Aor)(Akt) τις(Pr)(N). "ὡς(Kon) σοφός(Adj)(N)" εἶπε(Aor)(Akt),
+(22) "not you|may|speak; wolf you|saw· " he|jesting someone. "how wise" he|said,
+(23) κἠφᾶπτ᾽(Kon)(Aor)(Akt)· εὐμαρέως(Adv) κεν(Pt) ἀπ᾽(Prp) αὐτᾶς(Pr)(G) καὶ(Kon) λύχνον(A) ἇψας(Aor)(Akt)(N).
+(23) and|fastened· easily perhaps from her and lamp having|kindled.
+(24) ἔστι(Prä)(Akt) Λύκος(N), Λύκος(N) ἐστί(Prä)(Akt), Λάβα(N) τῶ(Art)(G) γείτονος(G) υἱός(N),
+(24) there|is Lykos, Lykos is, Laba of|the neighbor son,
+(25) εὐμάκης(Adj)(N) ἁπαλός(Adj)(N), πολλοῖς(Adj)(D) δοκέων(Prä)(Akt)(N) καλὸς(Adj)(N) ἦμεν(Imp)(Akt).
+(25) tall soft, to|many seeming fair he|was.
+(26) τούτω(Pr)(D) τὸν(Art)(A) κλύμενον(Prä)(M/P)(A) κατετάκετο(Imp)(M/P) τῆνον(Pr)(A) ἔρωτα(A).
+(26) to|this the famed was|melted that love.
+(27) χἁμῖν(Kon)(Pr)(D) τοῦτο(Pr)(N) δι᾽(Prp) ὠτὸς(G) ἔγεντό(Aor)(M/P) ποθ᾽(Pt) ἁσυχᾷ(Adv) οὑτῶς(Adv)·
+(27) and|to|us this through ear it|happened once quietly thus·
+(28) οὐ(Pt) μὰν(Pt) ἐξήταξα(Aor)(Akt) μάταν(Adv) εἰς(Prp) ἄνδρα(A) γενειῶν(G).
+(28) not indeed I|examined vainly into man of|beards.
+(29) ἤδη(Adv) δ᾽(Pt) ὦν(Pt) πόσιος(G) τοὶ(Art)(N) τέσσαρες(Adj)(N) ἐν(Prp) βάθει(D) ἦμες(Imp)(Akt),
+(29) already but then of|drink the four in depth we|were,
+(30) χὡ(Kon)(Art)(N) Λαρισαῖος(N) "τὸν(Art)(A) ἐμὸν(Adj)(A) Λύκον(A)" ᾆδεν(Imp)(Akt) ἀπ᾽(Prp) ἀρχᾶς(G),
+(30) and|the Larisaean "the my Lykos" was|singing from beginning,
+(31) Θεσσαλικόν(Adj)(A) τι(Pr)(A) μέλισμα(A), κακαὶ(Adj)(N) φρένες(N)· ἁ(Art)(N) δὲ(Pt) Κυνίσκα(N)
+(31) Thessalian some melody, evil minds· the but Cynisca
+(32) ἔκλαι᾽(Imp)(Akt) ἐξαπίνας(Adv) θαλερώτερον(Adv)(Kmp) ἢ(Kon) παρὰ(Prp) ματρὶ(D)
+(32) was|weeping suddenly more|abundantly than beside mother
+(33) παρθένος(N) ἑξαέτης(Adj)(N) κόλπω(D) ἐπιθυμήσασα(Aor)(Akt)(N).
+(33) maiden six|years|old to|lap having|desired.
+(34) τᾶμος(Adv) ἐγώ(Pr)(N), τὸν(Art)(A) ἴσαις(Prä)(Akt) τὺ(Pr)(N) Θυώνιχε(V), πὺξ(Adv) ἐπὶ(Prp) κόρρας(G)
+(34) then I, the you|know you Thyonichus, with|fist upon cheeks
+(35) ἤλασα(Aor)(Akt), κἄλλαν(Kon)(Adj)(A) αὖθις(Adv). ἀνειρύσσασα(Aor)(Akt)(N) δὲ(Pt) πέπλως(A)
+(35) I|struck, and|another again. having|drawn|up but robes
+(36) ἔξω(Adv) ἀπῴχετο(Imp)(M/P) θᾶσσον(Adv). "ἐμὸν(Adj)(N) κακόν(N), οὔ(Pt) τοι(Pr)(D) ἀρέσκω(Prä)(Akt);
+(36) outside went|away swiftly. "my evil, not to|you I|please;
+(37) ἄλλός(Adj)(N) τοι(Pr)(D) γλυκίων(Adj)(Kmp)(N) ὑποκόλπιος(Adj)(N); ἄλλον(Adj)(A) ἰοῖσα(Prä)(Akt)(N)
+(37) another to|you sweeter under|bosomed; another going
+(38) θάλπε(Prä)(Akt)(Imv) φίλον(Adj)(A). τήνῳ(Pr)(D) τὰ(Art)(A) σὰ(Adj)(A) δάκρυα(A) μᾶλα(Adv) ῥέοντι(Prä)(Akt)(D)."
+(38) warm dear|one. to|that the your tears very to|flowing."
+(39) μάστακα(A) δοῖσα(Aor)(Akt)(N) τέκνοισιν(D) ὑπωροφίοισι(Adj)(D) χελιδὼν(N)
+(39) morsel having|given to|children under|roof swallow
+(40) ἄψορρον(Adv) ταχινὰ(Adv) πέτεται(Prä)(M/P) βίον(A) ἄλλον(Adj)(A) ἀγείρειν(Prä)(Akt)(Inf)·
+(40) back quickly flies food another to|gather·
+(41) ὠκυτέρα(Adj)(Kmp)(N) μαλακᾶς(Adj)(G) ἀπὸ(Prp) δίφρακος(G) ἔδραμε(Aor)(Akt) τήνα(Pr)(N)
+(41) swifter of|soft from seat she|ran that
+(42) ἰθὺ(Adv) δι᾽(Prp) ἀμφιθύρω(G) καὶ(Kon) δικλίδος(G), ᾇ(Adv) πόδες(N) ἆγον(Imp)(Akt).
+(42) straight through double|door and folding|door, where feet were|leading.
+(43) αἶνός(Adj)(N) θην(Pt) λέγεταί(Prä)(M/P) τις(Pr)(N)· ἔβα(AorS)(Akt) τάχα(Adv) ταῦρος(N) ἀν᾽(Prp) ὕλαν(A).
+(43) dreadful indeed is|said someone· went quickly bull up wood.
+(44) εἴκατι(Adv)· ταὶ(Art)(N) δ᾽(Pt) ὀκτώ(Adj)(N), ταὶ(Art)(N) δ᾽(Pt) ἐννέα(Adj)(N), ταὶ(Art)(N) δὲ(Pt) δέκ᾽(Adj)(N) ἄλλαι(Adj)(N),
+(44) perhaps· the but eight, the but nine, the but ten others,
+(45) σάμερον(Adv) ἑνδεκάτα(Adj)(N), ποτίθει(Prä)(Akt) δύο(Adj), καὶ(Kon) δύο(Adj) μῆνες(A),
+(45) today eleventh, it|makes two, and two months,
+(46) ἐξ(Prp) ὧ(Pr)(G) ἀπ᾽(Prp) ἀλλάλων(Pr)(G). οὐδ᾽(Pt) εἰ(Kon) Θρᾳκιστὶ(Adv) κέκαρμαι(Per)(M/P),
+(46) from which from of|each|other. not|even if in|Thracian|wise I|am|shorn,
+(47) οἶδε(Per)(Akt). Λύκος(N) νῦν(Adv) πάντα(Adj)(A), Λύκῳ(D) καὶ(Kon) νυκτὸς(G) ἀνῷκται(Per)(M/P).
+(47) he|knows. Lykos now everything, for|Lykos and of|night it|is|opened.
+(48) ἄμμες(Pr)(N) δ᾽(Pt) οὔτε(Pt) λόγω(D) τινὸς(Pr)(G) ἄξιοι(Adj)(N) οὔτ᾽(Pt) ἀριθμητοί(Adj)(N),
+(48) we but neither to|account of|any worthy nor countable,
+(49) δύστηνοι(Adj)(N) Μεγαρῆες(N) ἀτιμοτάτῃ(Adj)(Sup)(D) ἐνὶ(Prp) μοίρῃ(D).
+(49) unlucky Megarians in most|dishonoured lot.
+(50) κεἰ(Kon)(Pt) μὲν(Pt) ἀποστέρξαιμι(Aor)(Akt)(Op), τὰ(Art)(A) πάντά(Adj)(A) κεν(Pt) εἰς(Prp) δέον(A) ἕρποι(Prä)(Akt)(Op).
+(50) and|if indeed I|might|turn|away, the all then into what|is|fitting it|would|go.
+(51) νῦν(Adv) δὲ(Pt) πόθεν(Adv); μῦς(N), φαντὶ(Prä)(Akt) Θυώνιχε(V), γεύμεθα(Prä)(M/P) πίσσας(A).
+(51) now but whence; mouse, say|they Thyonichus, we|taste pitches.
+(52) χὥτι(Kon) τὸ(Art)(N) φάρμακόν(N) ἐστιν(Prä)(Akt) ἀμηχανέοντος(Adj)(G) ἔρωτος(G),
+(52) and|that the remedy is of|helpless love,
+(53) οὐκ(Pt) οἶδα(Per)(Akt). πλὰν(Kon) Σῖμος(N) ὁ(Art)(N) τᾶς(Art)(G) Ἐπιχάλκω(G) ἐρασθεὶς(Aor)(M/P)(N)
+(53) not I|know. except Simos the of|the Epichalco having|fallen|in|love
+(54) ἐκπλεύσας(Aor)(Akt)(N) ὑγιὴς(Adj)(N) ἐπανῆλθ᾽(Aor)(Akt), ἐμὸς(Adj)(N) ἁλικιώτας(N).
+(54) having|sailed|out sound he|returned, my peer.
+(55) πλευσοῦμαι(Fu)(M/P) κἠγὼ(Kon)(Pr)(N) διαπόντιος(Adj)(N), οὔτε(Pt) κάκιστος(Adj)(Sup)(N)
+(55) I|will|sail and|I over|sea, neither worst
+(56) οὔτε(Pt) πρᾶτος(Adj)(Sup)(N) ἴσως(Adv), ὁμαλὸς(Adj)(N) δέ(Pt) τις(Pr)(N) ὁ(Art)(N) στρατιώτας(N).
+(56) nor first perhaps, even but someone the soldier.
+(57) ὤφελε(Aor)(Akt) μὰν(Pt) χωρεῖν(Prä)(Akt)(Inf) κατὰ(Prp) νοῦν(A) τεόν(Adj)(A), ὧν(Pr)(G) ἐπεθύμεις(Imp)(Akt)
+(57) would|that indeed to|go according|to mind your, of|the|things you|desired
+(58) Αἰσχίνα(V). εἰ(Kon) δ᾽(Pt) οὑτῶς(Adv) ἄρα(Pt) τοι(Pr)(D) δοκεῖ(Prä)(Akt) ὥστ᾽(Kon) ἀποδαμεῖν(Prä)(Akt)(Inf),
+(58) Aischina. if but thus then to|you it|seems so|as|to be|away|from|home,
+(59) μισθοδότας(Adj)(N) Πτολεμαῖος(N) ἐλευθέρῳ(Adj)(D) οἷος(Adj)(N) ἄριστος(Adj)(Sup)(N),
+(59) pay|giving Ptolemy to|a|free|man such|as best,
+(60) τἄλλα(Art)(Adj)(N) δ᾽(Pt) ἀνὴρ(N) ποῖός(Adj)(N) τις(Pr)(N) ἐλευθέρῳ(Adj)(D) οἷος(Adj)(N) ἄριστος(Adj)(Sup)(N);
+(60) the|other but man what|sort someone to|a|free|man such|as best;
+(61) εὐγνώμων(Adj)(N), φιλόμουσος(Adj)(N), ἐρωτικός(Adj)(N), εἰς(Prp) ἄκρον(Adj)(A) ἁδύς(Adj)(N),
+(61) well|disposed, lover|of|Muses, amorous, into summit sweet,
+(62) εἰδὼς(Per)(Akt)(N) τὸν(Art)(A) φιλέοντα(Prä)(Akt)(A), τὸν(Art)(A) οὐ(Pt) φιλέοντ᾽(Prä)(Akt)(A) ἔτι(Adv) μᾶλλον(Adv)(Kmp),
+(62) knowing the loving, the not loving still more,
+(63) πολλοῖς(Adj)(D) πολλὰ(Adj)(A) διδούς(Prä)(Akt)(N), αἰτεύμενος(Prä)(M/P)(N) οὐκ(Pt) ἀνανεύων(Prä)(Akt)(N)
+(63) to|many many giving, being|asked not refusing
+(64) οἷα(Adj)(A) χρὴ(Prä)(Akt) βασιλῆ᾽(A)· αἰτεῖν(Prä)(Akt)(Inf) δὲ(Pt) δεῖ(Prä)(Akt) οὐκ(Pt) ἐπὶ(Prp) παντὶ(Adj)(D)
+(64) such|as it|is|needful for|a|king· to|ask but it|is|necessary not upon every
+(65) Αἰσχίνα(V). ὥστ᾽(Kon) εἴ(Kon) τοι(Pr)(D) κατὰ(Prp) δεξιὸν(Adj)(A) ὦμον(A) ἀρέσκει(Prä)(Akt)
+(65) Aischina. so|that if to|you down right shoulder it|pleases
+(66) λῶπος(N) ἄκρον(Adj)(A) περονᾶσθαι(Prä)(M/P)(Inf), ἐπ᾽(Prp) ἀμφοτέροις(Adj)(Du)(D) δὲ(Pt) βεβακὼς(Per)(Akt)(N)
+(66) cloak at|top to|pin, upon both but having|fixed
+(67) τολμασεῖς(Fu)(Akt) ἐπιόντα(Prä)(Akt)(A) μένειν(Prä)(Akt)(Inf) θρασὺν(Adj)(A) ἀσπιδιώταν(A),
+(67) you|will|dare approaching to|stand bold shield|bearer,
+(68) ᾇ(Adv) τάχος(N) εἰς(Prp) Αἴγυπτον(A). ἀπὸ(Prp) κροτάφων(G) πελόμεσθα(Prä)(M/P)
+(68) where speed into Egypt. from temples we|become
+(69) πάντες(Adj)(N) γηραλέοι(Adj)(N), καὶ(Kon) ἐπισχερὼ(Adv) ἐς(Prp) γένυν(A) ἕρπει(Prä)(Akt)
+(69) all aged, and by|little into chin creeps
+(70) λευκαίνων(Prä)(Akt)(N) ὁ(Art)(N) χρόνος(N)· ποιεῖν(Prä)(Akt)(Inf) τι(Pr)(A) δεῖ(Prä)(Akt), ἇς(Kon) γόνυ(N) χλωρόν(Adj)(N).
+(70) whitening the time· to|do something it|is|needful, while knee green.
+=== Gedicht 15 ===
+== Συρακούσιαι ἢ Αδωνιάζουσαι ==
+(1) Ἔνδοι(Adv) Πραξινόα(V); Γοργοῖ(V) φίλα(Adj)(V), ὡς(Adv) χρόνῳ(D). ἔνδοι(Adv).
+(1) inside Praxinoa; Gorgo dear, how after|time. inside.
+(2) θαῦμ᾽(N) ὅτι(Kon) καὶ(Pt) νῦν(Adv) ἦνθες(Aor)(Akt). ὅρη(Prä)(Akt)(Imv) δίφρον(A) Εὐνόα(V) αὐτῇ(Pr)(D).
+(2) a|wonder that even now you|came. see seat Eunoe for|herself.
+(3) ἔμβαλε(Prä)(Akt)(Imv) καὶ(Kon) ποτίκρανον(Adv). ἔχει(Prä)(Akt) κάλλιστα(Adv)(Sup). καθίζευ(Prä)(Akt)(Imv).
+(3) put|on and over|head. it|fits best. sit|down.
+(4) ὢ(ij) τᾶς(Art)(G) ἀλεμάτω(Adj)(G) ψυχᾶς(G)· μόλις(Adv) ὔμμιν(Pr)(D) ἐσώθην(Aor)(M/P)
+(4) ah of|the care|worn soul· hardly to|you|all I|escaped
+(5) Πραξινόα(V) πολλῶ(Adj)(D) μὲν(Pt) ὄχλω(D), πολλῶν(Adj)(G) δὲ(Pt) τεθρίππων(G).
+(5) Praxinoa by|much indeed crowd, of|many but four|horse|chariots.
+(6) παντᾷ(Adv) κρηπῖδες(N), παντᾷ(Adv) χλαμυδηφόροι(Adj)(N) ἄνδρες(N)·
+(6) everywhere steps, everywhere cloak|wearing men·
+(7) ἁ(Art)(N) δ᾽(Pt) ὁδὸς(N) ἄτρυτος(Adj)(N)· τὺ(Pr)(N) δ᾽(Pt) ἑκαστάτω(Adv) ὅσσον(Adv) ἀποικεῖς(Prä)(Akt).
+(7) the but road unwearied· you but farthest how|far you|dwell|apart.
+(8) ταῦθ᾽(Pr)(A) ὁ(Art)(N) πάραρος(N) τῆνος(Pr)(N) ἐπ᾽(Prp) ἔσχατα(Adj)(A) γᾶς(G) ἔλαβ᾽(Aor)(Akt) ἐνθὼν(Aor)(Akt)(N)
+(8) these the broker that|one to uttermost of|earth took coming|in
+(9) ἰλεόν(A), οὐκ(Pt) οἴκησιν(A), ὅπως(Kon) μὴ(Pt) γείτονες(N) ὦμες(Prä)(M/P)
+(9) stall, not dwelling, so|that not neighbors we|may|be
+(10) ἀλλάλαις(Pr)(D), ποτ᾽(Pt) ἔριν(A), φθονερὸν(Adj)(A) κακόν(A), αἰὲν(Adv) ὁμοῖος(Adj)(N).
+(10) with|each|other, ever strife, envy|filled evil, always the|same.
+(11) μὴ(Pt) λέγε(Prä)(Akt)(Imv) τὸν(Art)(A) τεὸν(Adj)(A) ἄνδρα(A) φίλα(Adj)(V) Δίκωνα(V) τοιαῦτα(Adj)(A),
+(11) not say the your husband dear Dikon such|things,
+(12) τῶ(Art)(D) μικκῶ(Adj)(D) παρεόντος(Prä)(Akt)(G)· ὅρη(Prä)(Akt)(Imv) γύναι(V), ὡς(Adv) ποθορῇ(Prä)(Akt) τυ(Pr)(A).
+(12) the little|one being|present· see woman, how you|frighten you.
+(13) θάρσει(Prä)(Akt)(Imv) Ζωπυρίων(V), γλυκερὸν(Adj)(N) τέκος(N)· οὐ(Pt) λέγει(Prä)(Akt) ἀπφῦν(A).
+(13) take|courage Zopyrion, sweet child· not he|says babble.
+(14) αἰσθάνεται(Prä)(M/P) τὸ(Art)(A) βρέφος(A), ναὶ(Pt) τὰν(Art)(A) πότνιαν(Adj)(A). καλὸς(Adj)(N) ἀπφῦς(N).
+(14) perceives the infant, yes the mistress. good sneeze.
+(15) ἀπφῦς(N) μὰν(Pt) τῆνος(Pr)(N) τὰ(Art)(A) πρόαν(Adv) (λέγομες(Prä)(Akt) δὲ(Pt) πρόαν(Adv) θην(Pt)
+(15) sneeze indeed that|one the before (we|say but before indeed
+(16) πάντα(Adj)(A)) νίτρον(A) καὶ(Kon) φῦκος(A) ἀπὸ(Prp) σκανᾶς(G) ἀγοράσδων(Prä)(Akt)(N)
+(16) all) natron and seaweed from stall buying
+(17) ἦνθε(Aor)(Akt) φέρων(Prä)(Akt)(N) ἅλας(A) ἄμμιν(Pr)(D), ἀνὴρ(N) τρισκαιδεκάπηχυς(Adj)(N).
+(17) he|came carrying salt to|us, a|man thirteen|cubits|tall.
+(18) χὡμὸς(Kon)(Art)(N) ταὐτᾷ(Pr)(N) ἔχει(Prä)(Akt), φθόρος(N) ἀργυρίω(D), Διοκλείδας(N)·
+(18) and|the same has, ruin to|silver, Diocleidas·
+(19) ἑπταδράχμως(Adv) κυνάδας(A), γραιᾶν(Adj)(G) ἀποτίλματα(A) πηρᾶν(Adj)(G),
+(19) at|seven|drachmae dog|fish, of|old|women pluckings lean,
+(20) πέντε(Adj) πόκως(A) ἔλαβ᾽(Aor)(Akt) ἐχθές(Adv), ἅπαν(Adj)(A) ῥύπον(A), ἔργον(N) ἐπ᾽(Prp) ἔργῳ(D).
+(20) five fleeces he|took yesterday, all filth, work upon work.
+(21) ἀλλ᾽(Kon) ἴθι(Prä)(Akt)(Imv) τὠμπέχονον(Art)(A) καὶ(Kon) τὰν(Art)(A) περονατρίδα(A) λάζευ(Prä)(Akt)(Imv).
+(21) but go the|wrap and the pin take.
+(22) βᾶμες(Imp)(Akt) τῶ(Art)(G) βασιλῆος(G) ἐς(Prp) ἀφνειῶ(Adj)(D) Πτολεμαίω(D)
+(22) let|us|go of|the king into rich Ptolemy
+(23) θασόμεναι(Fu)(Med)(N) τὸν(Art)(A) Ἄδωνιν(A)· ἀκούω(Prä)(Akt) χρῆμα(A) καλόν(Adj)(A) τι(Pr)(A)
+(23) to|view the Adonis· I|hear thing fine some
+(24) κοσμεῖν(Prä)(Akt)(Inf) τὰν(Art)(A) βασίλισσαν(A). ἐν(Prp) ὀλβίω(Adj)(D) ὄλβια(Adj)(A) πάντα(Adj)(A).
+(24) to|adorn the queen. in prosperity blessed all.
+(25) ὧν(Pr)(G) ἴδες(Aor)(Akt), ὧν(Pr)(G) εἶπες(Aor)(Akt) καὶ(Kon) ἰδοῖσα(Aor)(Akt)(N) τὺ(Pr)(N) τῷ(Art)(D) μὴ(Pt) ἰδόντι(Aor)(Akt)(D).
+(25) of|what you|saw, of|what you|said and having|seen you to|the not seeing.
+(26) ἕρπειν(Prä)(Akt)(Inf) ὥρα(N) κ᾽(Pt) εἴη(Knj)(Akt). ἀεργοῖς(Adj)(D) αἰὲν(Adv) ἑορτά(N).
+(26) to|go time might|be for|the. idle always holiday.
+(27) Εὐνόα(V), αἶρε(Prä)(Akt)(Imv) τὸ(Art)(A) νῆμα(A) καὶ(Kon) ἐς(Prp) μέσον(Adj)(A) αἰνόθρυπτε(Prä)(Akt)(Imv)
+(27) Eunoe, lift the thread and into middle pound
+(28) θὲς(Aor)(Akt)(Imv) πάλιν(Adv). αἱ(Art)(N) γαλέαι(N) μαλακῶς(Adv) χρῄζοντι(Prä)(Akt) καθεύδειν(Prä)(Akt)(Inf)·
+(28) put back. the weasels softly need to|sleep·
+(29) κινεῦ(Prä)(Akt)(Imv) δή(Pt), φέρε(Prä)(Akt)(Imv) θᾶσσον(Adv) ὕδωρ(A). ὕδατος(G) πρότερον(Adv) δεῖ(Prä)(Akt).
+(29) stir indeed, bring swiftly water. of|water before it|is|needed.
+(30) ἁ(Art)(N) δὲ(Pt) σμᾶμα(N) φέρει(Prä)(Akt). δὸς(Aor)(Akt)(Imv) ὅμως(Adv). μὴ(Pt) δὴ(Pt) πολ᾽(Adv) ἄπληστε(Adj)(V).
+(30) the but soap she|brings. give nevertheless. not indeed very greedy|one.
+(31) ἔγχει(Prä)(Akt)(Imv) ὕδωρ(A). δύστανε(Adj)(V), τί(Pr)(A) μευ(Pr)(G) τὸ(Art)(A) χιτώνιον(A) ἄρδεις(Prä)(Akt);
+(31) pour|in water. wretched|one, why of|me the tunic do|you|wet;
+(32) παῦε(Prä)(Akt)(Imv). ὁκοῖα(Pr)(N) θεοῖς(D) ἐδόκει(Imp)(Akt), τοιαῦτα(Pr)(N) νένιμμαι(Per)(M/P).
+(32) stop. of|what|sort to|gods it|seemed, such|things I|have|assigned.
+(33) ἁ(Art)(N) κλᾲξ(N) τᾶς(Art)(G) μεγάλας(Adj)(G) πᾷ(Adv) λάρνακος(G); ὧδε(Adv) φέρ᾽(Prä)(Akt)(Imv) αὐτάν(Pr)(A).
+(33) the key of|the big where of|chest; here bring her.
+(34) Πραξινόα(V), μάλα(Adv) τοι(Pr)(D) τὸ(Art)(N) καταπτυχὲς(Adj)(N) ἐμπερόναμα(N)
+(34) Praxinoa, very to|you the folded|over over|clasp
+(35) τοῦτο(Pr)(N) πρέπει(Prä)(Akt)· λέγε(Prä)(Akt)(Imv) μοι(Pr)(D), πόσσω(Pr)(D) κατέβα(Aor)(Akt) τοι(Pr)(D) ἀφ᾽(Prp) ἱστῶ(G);
+(35) this befits· tell to|me, for|how|much it|came|down to|you from loom;
+(36) μὴ(Pt) μνάσῃς(Aor)(M/P)(Knj) Γοργοῖ(V)· πλέον(Adv) ἀργυρίω(D) καθαρῶ(Adj)(D) μνᾶν(G)
+(36) not you|may|mention Gorgo· more in|silver pure of|minas
+(37) ἢ(Kon) δύο(Adj)· τοῖς(Art)(D) δ᾽(Pt) ἔργοις(D) καὶ(Kon) τὰν(Art)(A) ψυχὰν(A) ποτέθηκα(Per)(Akt).
+(37) or two· to|the but works and the soul I|have|set.
+(38) ἀλλὰ(Kon) κατὰ(Prp) γνώμαν(A) ἀπέβα(Aor)(Akt) τοι(Pr)(D). τοῦτο(Pr)(N) κάλ᾽(Adv) εἶπες(Aor)(Akt).
+(38) but according|to opinion it|turned|out to|you. this well you|said.
+(39) τὠμπέχονον(Art)(A) φέρε(Prä)(Akt)(Imv) μοι(Pr)(D) καὶ(Kon) τὰν(Art)(A) θολίαν(A) κατὰ(Prp) κόσμον(A)
+(39) the|wrap bring to|me and the veil according|to order
+(40) ἀμφίθες(Aor)(Akt)(Imv). οὐκ(Pt) ἀξῶ(Fu)(Akt) τυ(Pr)(A) τέκνον(A). μορμώ(ij), δάκνει(Prä)(Akt) ἵππος(N).
+(40) put|around. not I|will|carry you child. Mormo, it|bites horse.
+(41) δάκρυ᾽(A), ὅσσα(Pr)(A) θέλεις(Prä)(Akt), χωλὸν(Adj)(A) δ᾽(Pt) οὐ(Pt) δεῖ(Prä)(Akt) τυ(Pr)(A) γενέσθαι(Aor)(Med)(Inf).
+(41) tears, as|many|as you|wish, lame but not it|is|needful you to|become.
+(42) ἕρπωμες(Prä)(Akt). Φρυγία(V), τὸν(Art)(A) μικκὸν(Adj)(A) παῖσδε(A) λαβοῖσα(Aor)(Akt)(N),
+(42) let|us|go. Phrygia, the small child having|taken,
+(43) τὰν(Art)(A) κύν᾽(A) ἔσω(Adv) κάλεσον(Aor)(Akt)(Imv), τὰν(Art)(A) αὐλείαν(Adj)(A) ἀπόκλᾳξον(Aor)(Akt)(Imv).
+(43) the dog inside call, the court|door shut.
+(44) ὦ(ij) θεοί(V), ὅσσος(Pr)(N) ὄχλος(N). πῶς(Adv) καὶ(Kon) πόκα(Adv) τοῦτο(Pr)(N) περᾶσαι(Aor)(Akt)(Inf)
+(44) O gods, how|great crowd. how and when this to|pass
+(45) χρὴ(Prä)(Akt) τὸ(Art)(A) κακόν(A); μύρμακες(N) ἀνάριθμοι(Adj)(N) καὶ(Kon) ἄμετροι(Adj)(N).
+(45) it|is|needful the evil; ants numberless and measureless.
+(46) πολλά(Adj)(N) τοι(Pr)(D) ὦ(ij) Πτολεμαῖε(V) πεποίηται(Per)(M/P) καλὰ(Adj)(N) ἔργα(N),
+(46) many to|you O Ptolemy has|been|done fair works,
+(47) ἐξ(Prp) ὧ(Pr)(G) ἐν(Prp) ἀθανάτοις(Adj)(D) ὁ(Art)(N) τεκων(Aor)(Akt)(N)· οὐδεὶς(Pr)(N) κακοεργὸς(Adj)(N)
+(47) out|of which among immortals the begetter· no evil|doer
+(48) δαλεῖται(Prä)(M/P) τὸν(Art)(A) ἰόντα(Prä)(Akt)(A) παρέρπων(Prä)(Akt)(N) Αἰγυπτιστί(Adv),
+(48) harms the going passing|by in|Egyptian|wise,
+(49) οἷα(Pr)(A) πρὶν(Adv) ἐξ(Prp) ἀπάτας(G) κεκροτημένοι(Per)(M/P)(N) ἄνδρες(N) ἔπαισδον(Imp)(Akt),
+(49) such|things before out|of deceit having|been|knit men were|jesting,
+(50) ἀλλάλοις(Pr)(D) ὁμαλοί(Adj)(N), κακὰ(Adj)(N) παίγνια(N), πάντες(Adj)(N) ἐρειοί(Adj)(N).
+(50) with|each|other smooth, bad games, all ragged.
+(51) ἁδίστα(Prä)(Akt)(Imv) Γοργοῖ(V), τί(Pr)(N) γενοίμεθα(Aor)(Med)(Op); τοὶ(Art)(N) πολεμισταὶ(Adj)(N)
+(51) stand|aside Gorgo, what we|might|become; the warlike
+(52) ἵπποι(N) τῶ(Art)(G) βασιλῆος(G). ἄνερ(V) φίλε(Adj)(V), μή(Pt) με(Pr)(A) πατήσῃς(Aor)(Akt)(Knj).
+(52) horses of|the king. man dear, not me you|may|trample.
+(53) ὀρθὸς(Adj)(N) ἀνέστα(Aor)(Akt) ὁ(Art)(N) πυρρός(Adj)(N)· ἴδ᾽(Aor)(Akt)(Imv) ὡς(Kon) ἄγριος(Adj)(N). κυνοθαρσὴς(Adj)(N)
+(53) upright stood|up the chestnut· see how wild. dog|bold
+(54) Εὐνόα(V), οὐ(Pt) φευξῇ(Aor)(Akt)(Knj); διαχρησεῖται(Fu)(M/P) τὸν(Art)(A) ἄγοντα(Prä)(Akt)(A).
+(54) Eunoe, not you|may|flee; he|will|use|up the leading|one.
+(55) ὠνάθην(Aor)(M/P) μεγάλως(Adv), ὅτι(Kon) μοι(Pr)(D) τὸ(Art)(N) βρέφος(N) μένει(Prä)(Akt) ἔνδον(Adv).
+(55) I|was|gladdened greatly, that to|me the infant stays inside.
+(56) θάρσει(Prä)(Akt)(Imv) Πραξινόα(V)· καὶ(Kon) δὴ(Pt) γεγενήμεθ᾽(Per)(M/P) ὄπισθεν(Adv),
+(56) take|courage Praxinoa· and indeed we|have|become behind,
+(57) τοὶ(Art)(N) δ᾽(Pt) ἔβαν(AorS)(Akt) ἐς(Prp) χώραν(A). καὐτὰ(Kon)(Pr)(A) συναγείρομαι(Prä)(M/P) ἤδη(Adv).
+(57) the then went into place. and|I|too I|am|gathering already.
+(58) ἵππον(A) καὶ(Kon) τὸν(Art)(A) ψυχρὸν(Adj)(A) ὄφιν(A) τὰ(Art)(N) μάλιστα(Adv)(Sup) δεδοίκω(Per)(Akt)
+(58) horse and the cold serpent the most I|have|feared
+(59) ἐκ(Prp) παιδός(G). σπεύδωμες(Prä)(Akt)· ὄχλος(N) πολὺς(Adj)(N) ἄμμιν(Pr)(D) ἐπιρρεῖ(Prä)(Akt).
+(59) out|of boyhood. let|us|hurry· crowd much to|us flows|upon.
+(60) ἐξ(Prp) αὐλᾶς(G) ὦ(ij) μᾶτερ(V); ἐγὼν(Pr)(N) ὦ(ij) τέκνα(V). παρενθεῖν(Aor)(Akt)(Inf)
+(60) out|of court O mother; I O children. to|step|in
+(61) εὐμαρές(Adj)(N); ἐς(Prp) Τροίαν(A) πειρώμενοι(Prä)(M/P)(N) ἦνθον(Aor)(Akt) Ἀχαιοί(N),
+(61) easy; into Troy trying they|came Achaeans,
+(62) καλλίστα(Adv)(Sup) παίδων(G)· πείρᾳ(D) θην(Pt) πάντα(Adj)(N) τελεῖται(Prä)(M/P).
+(62) most|well of|children· by|trial indeed all are|accomplished.
+(63) χρησμὼς(N) ἁ(Art)(N) πρεσβῦτις(N) ἀπῴχετο(Imp)(M/P) θεσπίξασα(Aor)(Akt)(N).
+(63) oracle the old|woman was|going|off having|prophesied.
+(64) πάντα(Adj)(N) γυναῖκες(N) ἴσαντι(Prä)(Akt), καὶ(Kon) ὡς(Kon) Ζεὺς(N) ἠγάγεθ᾽(Aor)(Akt) Ἥρην(A).
+(64) all women know, and how Zeus led Hera.
+(65) θᾶσαι(Adv) Πραξινόα(V), περὶ(Prp) τὰς(Art)(A) θύρας(A) ὅσσος(Pr)(N) ὅμιλος(N).
+(65) quickly Praxinoa, around the doors how|great throng.
+(66) θεσπέσιος(Adj)(N). Γοργοῖ(V), δὸς(Aor)(Akt)(Imv) τὰν(Art)(A) χέρα(A) μοι(Pr)(D)· λάβε(Aor)(Akt)(Imv) καὶ(Kon) τὺ(Pr)(N)
+(66) wondrous. Gorgo, give the hand to|me· take and you
+(67) Εὐνόα(V) Εὐτυχίδος(G)· πότεχ᾽(Aor)(Akt)(Imv) αὐτᾷ(Pr)(D), μή(Pt) τι(Pr)(A) πλαναθῇς(Aor)(M/P)(Knj).
+(67) Eunoe of|Eutychis· hold|fast to|her, not anything you|may|wander.
+(68) πᾶσαι(Adj)(N) ἅμ᾽(Adv) εἰσένθωμες(Aor)(Akt)(Knj)· ἀπρὶξ(Adv) ἔχευ(Prä)(Akt)(Imv) Εὐνόα(V) ἁμῶν(Pr)(G).
+(68) all together let|us|go|in· tightly hold Eunoe of|us.
+(69) οἴμοι(ij) δειλαία(Adj)(V), δίχα(Adv) μευ(Pr)(G) τὸ(Art)(N) θερίστριον(N) ἤδη(Adv)
+(69) alas wretched, apart from|me the little|reaper already
+(70) ἔσχισται(Per)(M/P) Γοργοῖ(V). πὸτ(Prp) τῶ(Art)(G) Διός(G), εἴτι(Kon) γένοιο(Aor)(Med)(Op)
+(70) has|been|split Gorgo. by of|the Zeus, if|ever you|might|become
+(71) εὐδαίμων(Adj)(V) ὤνθρωπε(V), φυλάσσεο(Prä)(M/P)(Imv) τὠμπέχονόν(Art)(A) μευ(Pr)(G).
+(71) blessed man, guard the|wrap of|me.
+(72) οὐκ(Pt) ἐπ᾽(Prp) ἐμὶν(Pr)(D) μέν(Pt), ὅμως(Adv) δὲ(Pt) φυλαξεῦμαι(Fu)(M/P)· ὄχλος(N) ἄθρως(Adv).
+(72) not upon me indeed, nevertheless but I|will|guard· crowd in|throng.
+(73) ὠθεῦνθ᾽(Prä)(M/P) ὥσπερ(Kon) ὕες(N). θάρσει(Prä)(Akt)(Imv) γύναι(V)· ἐν(Prp) καλῷ(Adj)(D) εἰμές(Prä)(Akt).
+(73) are|pushed just|as pigs. take|courage woman· in fair we|are.
+(74) κεἰς(Kon)(Prp) ὥρας(A) κἤπειτα(Kon) φίλ᾽(Adj)(V) ἀνδρῶν(G) ἐν(Prp) καλῷ(Adj)(D) εἴης(Prä)(Akt)(Op)
+(74) and|into season and|then dear of|men in fair you|might|be
+(75) ἄμμε(Pr)(A) περιστέλλων(Prä)(Akt)(N). χρηστῶ(Adj)(G) κᾠκτίρμονος(Kon)(Adj)(G) ἀνδρός(G).
+(75) us wrapping|around. of|good and|pitying of|man.
+(76) φλίβεται(Prä)(M/P) Εὐνόα(N) ἇμιν(Pr)(D)· ἄγ᾽(Prä)(Akt)(Imv) ὦ(ij) δειλὰ(Adj)(V) τὺ(Pr)(N) βιάζευ(Prä)(M/P)(Imv).
+(76) is|pressed Eunoe to|us· come O wretched you force|yourself.
+(77) κάλλιστ᾽(Adv)(Sup)· ἔνδοι(Adv) πᾶσαι(Adj)(N), ὁ(Art)(N) τὰν(Art)(A) νυὸν(A) εἶπ᾽(Aor)(Akt) ἀποκλᾴξας(Aor)(Akt)(N).
+(77) most|finely· inside all, the the daughter|in|law he|said having|shut.
+(78) Πραξινόα(V), πόταγ᾽(Prä)(Akt)(Imv) ὧδε(Adv). τὰ(Art)(A) ποικίλα(Adj)(A) πρᾶτον(Adv) ἄθρησον(Aor)(Akt)(Imv),
+(78) Praxinoa, come|here here. the variegated first look|upon,
+(79) λεπτὰ(Adj)(A) καὶ(Kon) ὡς(Kon) χαρίεντα(Adj)(A)· θεῶν(G) περονάματα(A) φασεῖς(Fu)(Akt).
+(79) slender and how charming· of|gods pin|fastenings you|will|say.
+(80) πότνι᾽(Adj)(V) Ἀθαναία(V), ποῖαί(Pr)(N) σφ᾽(Pr)(A) ἐπόνασαν(Aor)(Akt) ἔριθοι(N),
+(80) lady Athena, what|kind them workers labored,
+(81) ποῖοι(Pr)(N) ζῳογράφοι(N) τἀκριβέα(Art)(Adj)(A) γράμματ᾽(A) ἔγραψαν(Aor)(Akt).
+(81) what painters the|exact letters wrote.
+(82) ὡς(Kon) ἔτυμ᾽(Adv) ἑστάκαντι(Per)(Akt)(D), καὶ(Kon) ὡς(Kon) ἔτυμ᾽(Adv) ἐνδινεῦντι(Prä)(Akt)(D),
+(82) how truly to|one|standing, and how truly to|one|whirling,
+(83) ἔμψυχ᾽(Adj)(N), οὐκ(Pt) ἐνυφαντά(Adj)(N). σοφόν(Adj)(N) τοι(Pr)(D) χρῆμ᾽(N) ὥνθρωπος(N).
+(83) ensouled, not woven. wise to|you thing man.
+(84) αὐτὸς(Pr)(N) δ᾽(Pt) ὡς(Kon) θαητὸς(Adj)(N) ἐπ᾽(Prp) ἀργυρέας(Adj)(D) κατάκειται(Prä)(M/P)
+(84) himself but how wondrous upon silver lies
+(85) κλισμῶ(D), πρᾶτον(Adv) ἴουλον(A) ἀπὸ(Prp) κροτάφων(G) καταβάλλων(Prä)(Akt)(N),
+(85) couches, first down|on|cheek|fuzz from temples letting|fall,
+(86) ὁ(Art)(N) τριφίλητος(Adj)(N) Ἄδωνις(N), ὃ(Pr)(N) κἠν(Kon)(Prp) Ἀχέροντι(D) φιλεῖται(Prä)(M/P).
+(86) the thrice|beloved Adonis, who and|in Acheron is|loved.
+(87) παύσασθ᾽(Aor)(M/P)(Imv) ὦ(ij) δύστανοι(Adj)(V), ἀνάνυτα(Adj)(N) κωτίλλοισαι(Prä)(Akt)(N)
+(87) cease O wretched, endless chattering
+(88) τρυγόνες(N). ἐκκναισεῦντι(Fu)(Akt) πλατειάσδοισαι(Prä)(Akt)(N) ἅπαντα(Adj)(A).
+(88) doves. you|will|scrape|out broad|prattling all.
+(89) μᾶ(ij), πόθεν(Adv) ὥνθρωπος(N); τί(Pr)(N) δὲ(Pt) τίν(Pr)(A), εἰ(Kon) κωτίλαι(Adj)(N) εἰμές(Prä)(Akt);
+(89) by|Mother, whence man; what but whom, if talkative we|are;
+(90) πασάμενος(Aor)(Med)(N) ἐπίτασσε(Prä)(Akt)(Imv). Συρακοσίαις(Adj)(D) ἐπιτάσσεις(Prä)(Akt);
+(90) having|tasted command. do|you|order for|Syracusans;
+(91) ὡς(Kon) δ᾽(Pt) εἰδῇς(Knj)(Akt) καὶ(Kon) τοῦτο(Pr)(N)· Κορίνθιαι(Adj)(N) εἰμὲς(Prä)(Akt) ἄνωθεν(Adv),
+(91) so that you|may|know also this· Corinthian we|are from|above,
+(92) ὡς(Kon) καὶ(Kon) ὁ(Art)(N) Βελλεροφῶν(N)· Πελοποννασιστὶ(Adv) λαλεῦμες(Prä)(Akt)·
+(92) as also the Bellerophon· in|Peloponnesian we|speak·
+(93) δωρίσδεν(Adv) δ᾽(Pt) ἔξεστι(Prä)(Akt) δοκῶ(Prä)(Akt) τοῖς(Art)(D) Δωριέεσσι(D).
+(93) in|Doric but it|is|permitted I|think to|the Dorians.
+(94) μὴ(Pt) φύη(Knj)(Akt) Μελιτῶδες(Adj)(N) ὃς(Pr)(N) ἁμῶν(Pr)(G) καρτερὸς(Adj)(N) εἴη(Knj)(Akt),
+(94) not may|it|arise honey|sweet who of|us strong might|be,
+(95) πλὰν(Prp) ἑνός(Adj)(G). οὐκ(Pt) ἀλέγω(Prä)(Akt). μή(Pt) μοι(Pr)(D) κενεὰν(Adj)(A) ἀπομάξῃς(Aor)(Akt)(Knj).
+(95) except of|one. not I|care. not to|me empty you|may|wipe|off.
+(96) σιγᾷ(Prä)(Akt)(Imv) Πραξινόα(V)· μέλλει(Prä)(Akt) τὸν(Art)(A) Ἄδωνιν(A) ἀείδειν(Prä)(Akt)(Inf)
+(96) be|silent Praxinoa· is|about the Adonis to|sing
+(97) ἁ(Art)(N) τᾶς(Art)(G) Ἀργείας(Adj)(G) θυγάτηρ(N) πολύιδρις(Adj)(N) ἀοιδός(N),
+(97) the of|the Argive daughter much|knowing singer,
+(98) ἅτις(Pr)(N) καὶ(Kon) πέρυσιν(Adv) τὸν(Art)(A) ἰάλεμον(A) ἀρίστευσε(Aor)(Akt).
+(98) who and last|year the wail excelled.
+(99) φθεγξεῖταί(Fu)(M/P) τι(Pr)(A) σάφ᾽(Adv) οἶδα(Per)(Akt) καλόν(Adj)(A)· διαθρύπτεται(Prä)(M/P) ἤδη(Adv).
+(99) she|will|utter something clearly I|know beautiful· is|shattered already.
+(100) δέσποιν᾽(V), ἃ(Pr)(N) Γολγώς(A) τε(Pt) καὶ(Kon) Ἰδάλιον(A) ἐφίλασας(Aor)(Akt)
+(100) mistress, who Golgos and also Idalion you|loved
+(101) αἰπεινάν(Adj)(A) τ᾽(Pt) Ἐρύκαν(A), χρυσῷ(D) παίζοισ᾽(Prä)(Akt)(N) Ἀφροδίτα(N)·
+(101) lofty and Eryx, with|gold playing Aphrodite·
+(102) οἷόν(Adj)(A) τοι(Pr)(D) τὸν(Art)(A) Ἄδωνιν(A) ἀπ᾽(Prp) ἀενάω(Adj)(G) Ἀχέροντος(G)
+(102) what|a to|you the Adonis from ever|flowing of|Acheron
+(103) μηνὶ(D) δυωδεκάτῳ(Adj)(D) μαλακαὶ(Adj)(N) πόδας(A) ἄγαγον(Aor)(Akt) ὩΡαιι(N).
+(103) in|month twelfth soft the|feet led the|Hours.
+(104) βάρδισται(Adj)(Sup)(N) μακάρων(Adj)(G) ὩΡαιι(N) φίλαι(Adj)(N), ἀλλὰ(Kon) ποθειναὶ(Adj)(N)
+(104) slowest of|the|blessed Hours dear, but longed|for
+(105) ἔρχονται(Prä)(M/P) πάντεσσι(Adj)(D) βροτοῖς(D) αἰεί(Adv) τι(Pr)(A) φορεῦσαι(Prä)(Akt)(Inf).
+(105) they|come to|all mortals always something to|bring.
+(106) Κύπρι(V) Διωναία(Adj)(V), τὺ(Pr)(N) μὲν(Pt) ἀθανάταν(Adj)(A) ἀπὸ(Prp) θνατᾶς(Adj)(G),
+(106) Cypris Dionaian, you indeed immortal from mortal,
+(107) ἀνθρώπων(G) ὡς(Kon) μῦθος(N), ἐποίησας(Aor)(Akt) Βερενίκαν(A),
+(107) of|humans as tale, you|made Berenice,
+(108) ἀμβροσίαν(Adj)(A) ἐς(Prp) στῆθος(A) ἀποστάξασα(Aor)(Akt)(N) γυναικός(G)·
+(108) ambrosial into breast having|dripped of|woman·
+(109) τὶν(Pr)(A) δὲ(Pt) χαριζομένα(Prä)(M/P)(N), πολυώνυμε(Adj)(V) καὶ(Kon) πολύναε(Adj)(V),
+(109) her but gratifying, O|many|named and much|dwelling,
+(110) ἁ(Art)(N) Βερενικεία(Adj)(N) θυγάτηρ(N) Ἑλένᾳ(D) εἰκυῖα(Per)(Akt)(N)
+(110) the Berenicean daughter to|Helen having|resembled
+(111) Ἀρσινόα(N) πάντεσσι(Adj)(D) καλοῖς(Adj)(D) ἀτιτάλλει(Prä)(Akt) Ἄδωνιν(A).
+(111) Arsinoe to|all fair|things tends Adonis.
+(112) πὰρ(Prp) μέν(Pt) οἱ(Pr)(D) ὥρια(Adj)(N) κεῖται(Prä)(M/P), ὅσα(Pr)(N) δρυὸς(G) ἄκρα(N) φέρονται(Prä)(M/P),
+(112) beside indeed to|her seasonal|fruits lies, as|many|as of|oak tops are|borne,
+(113) πὰρ(Prp) δ᾽(Pt) ἁπαλοὶ(Adj)(N) κᾶποι(N) πεφυλαγμένοι(Per)(M/P)(N) ἐν(Prp) ταλαρίσκοις(D)
+(113) beside but tender gardens having|been|kept in little|baskets
+(114) ἀργυρέοις(Adj)(D), Συρίω(Adj)(D) δὲ(Pt) μύρω(D) χρύσει᾽(Adj)(A) ἀλάβαστρα(A).
+(114) silver, Syrian but perfume golden alabasters.
+(115) εἴδατα(N) δ᾽(Pt) ὅσσα(Pr)(N) γυναῖκες(N) ἐπὶ(Prp) πλαθάνω(D) πονέονται(Prä)(M/P),
+(115) forms but as|many women upon kneading|board toil,
+(116) ἄνθεα(A) μίσγοισαι(Prä)(Akt)(N) λευκῷ(Adj)(D) παντοῖα(Adj)(A) μαλεύρῳ(D),
+(116) flowers mixing with|white all|kinds meal,
+(117) ὅσσά(Pr)(N) τ᾽(Pt) ἀπὸ(Prp) γλυκερῶ(Adj)(G) μέλιτος(G) τά(Art)(N) τ᾽(Pt) ἐν(Prp) ὑγρῷ(Adj)(D) ἐλαίῳ(D),
+(117) as|many and from sweet of|honey the and in liquid in|oil,
+(118) πάντ᾽(Adj)(N) αὐτῷ(Pr)(D) πετεηνὰ(N) καὶ(Kon) ἑρπετὰ(N) τεῖδε(Adv) πάρεστι(Prä)(Akt).
+(118) all to|him winged|things and creeping|things here are|present.
+(119) χλωραὶ(Adj)(N) δὲ(Pt) σκιάδες(N) μαλακῷ(Adj)(D) βρίθοντι(Prä)(Akt)(D) ἀνήθῳ(D)
+(119) green but shades with|soft weighing dill
+(120) δέδμανθ᾽(Per)(M/P)· οἱ(Art)(N) δέ(Pt) τε(Pt) κῶροι(N) ὑπερπωτῶνται(Prä)(M/P) Ἔρωτες(N),
+(120) have|been|garlanded· the but and youths flit|above Loves,
+(121) οἷοι(Pr)(N) ἀηδονιδῆες(N) ἀεξομενᾶν(Prä)(Akt)(G) ἐπὶ(Prp) δένδρων(G)
+(121) like fledgling|nightingales of|growing upon trees
+(122) πωτῶνται(Prä)(M/P) πτερύγων(G) πειρώμενοι(Prä)(M/P)(N) ὄζον(A) ἀπ᾽(Prp) ὄζω(G).
+(122) they|fly of|wings trying branch from branch.
+(123) ὢ(ij) ἔβενος(N), ὢ(ij) χρυσός(N), ὢ(ij) ἐκ(Prp) λευκῶ(Adj)(G) ἐλέφαντος(G)
+(123) oh ebony, oh gold, oh from white of|ivory
+(124) αἰετοὶ(N) οἰνοχόον(Adj)(A) Κρονίδᾳ(Adj)(D) Διὶ(D) παῖδα(A) φέροντες(Prä)(Akt)(N).
+(124) eagles wine|pouring to|Kronide to|Zeus boy bearing.
+(125) πορφύρεοι(Adj)(N) δὲ(Pt) τάπητες(N) ἄνω(Adv) μαλακώτεροι(Adj)(Kmp)(N) ὕπνω(D),
+(125) purple but carpets above softer than|sleep,
+(126) ἁ(Art)(N) Μίλατος(N) ἐρεῖ(Fu)(Akt) χὡ(Kon)(Art)(N) τὰν(Art)(A) Σαμίαν(Adj)(A) κάτα(Prp) βόσκων(Prä)(Akt)(N)·
+(126) the Miletus will|say and|the the Samian down grazing·
+(127) "ἔστρωται(Per)(M/P) κλίνα(N) τῷ(Art)(D) Ἀδώνιδι(D) τῷ(Art)(D) καλῷ(Adj)(D) ἄλλα(Pt)."
+(127) "is|spread couch to|the Adonis to|the fair but."
+(128) τὰν(Art)(A) μὲν(Pt) Κύπρις(N) ἔχει(Prä)(Akt), τὰν(Art)(A) δ᾽(Pt) ὁ(Art)(N) ῥοδόπαχυς(Adj)(N) Ἄδωνις(N)
+(128) the indeed Cypris holds, the but the rose|wristed Adonis
+(129) ὀκτωκαιδεκέτης(Adj)(N) ἢ(Kon) ἐννεακαίδεχ᾽(Adj)(N) ὁ(Art)(N) γαμβρός(N).
+(129) eighteen|years|old or nineteen the bridegroom.
+(130) οὐ(Pt) κεντεῖ(Prä)(Akt) τὸ(Art)(A) φίλαμ᾽(A), ἔτι(Adv) οἱ(Pr)(D) περὶ(Prp) χείλεα(A) πυρρά(Adj)(N).
+(130) not he|pricks the beloved, still to|him around lips tawny.
+(131) νῦν(Adv) μὰν(Pt) Κύπρις(N) ἔχοισα(Prä)(Akt)(N) τὸν(Art)(A) αὐτᾶς(Pr)(G) χαιρέτω(Prä)(Akt)(Imv) ἄνδρα(A)·
+(131) now indeed Cypris having the of|herself let|her|rejoice man·
+(132) ἀῶθεν(Adv) δ᾽(Pt) ἁμές(Pr)(N) νιν(Pr)(A) ἅμα(Adv) δρόσῳ(D) ἀθρόαι(Adj)(N) ἔξω(Adv)
+(132) at|dawn but we him together with|dew in|a|throng outside
+(133) οἰσεῦμες(Fu)(Akt) ποτὶ(Prp) κύματ᾽(A) ἐπ᾽(Prp) ἀιόνι(Adj)(D) πτύοντα(Prä)(Akt)(A),
+(133) we|will|carry toward waves upon shore splashing,
+(134) λύσασαι(Aor)(Akt)(N) δὲ(Pt) κόμαν(A) καὶ(Kon) ἐπὶ(Prp) σφυρὰ(A) κόλπον(A) ἀνεῖσαι(Aor)(Akt)(N)
+(134) having|loosened but hair and upon ankles fold having|let|down
+(135) στήθεσι(D) φαινομένοις(Prä)(M/P)(D) λιγυρᾶς(Adj)(G) ἀρξώμεθ᾽(Aor)(M/P)(Knj) ἀοιδᾶς(G)·
+(135) with|breasts appearing of|clear we|may|begin of|song·
+(136) Ἕρπεις(Prä)(Akt) ὦ(ij) φίλ᾽(Adj)(V) Ἄδωνι(V) καὶ(Kon) ἐνθάδε(Adv) κεἰς(Kon)(Prp) Ἀχέροντα(A)
+(136) you|creep O dear Adonis and here and|into Acheron
+(137) ἡμιθέων(G), ὡς(Kon) φαντί(Prä)(Akt), μονώτατος(Adj)(Sup)(N). οὔτ᾽(Kon) Ἀγαμέμνων(N)
+(137) of|demigods, as they|say, most|alone. neither Agamemnon
+(138) τοῦτ᾽(Pr)(A) ἔπαθ᾽(Aor)(Akt), οὔτ᾽(Kon) Αἴας(N) ὁ(Art)(N) μέγας(Adj)(N) βαρυμάνιος(Adj)(N) ἥρως(N),
+(138) this he|suffered, nor Ajax the great heavy|spirited hero,
+(139) οὔθ᾽(Kon) Ἕκτωρ(N) Ἑκάβας(G) ὁ(Art)(N) γεραίτερος(Adj)(Kmp)(N) εἴκατι(Adv) παίδων(G),
+(139) nor Hector of|Hecabe the elder by|some of|children,
+(140) οὐ(Pt) Πατροκλῆς(N), οὐ(Pt) Πύρρος(N) ἀπὸ(Prp) Τροίας(G) ἐπανελθών(Aor)(Akt)(N),
+(140) not Patroclus, not Pyrrhus from Troy having|returned,
+(141) οὔθ᾽(Kon) οἱ(Art)(N) ἔτι(Adv) πρότερον(Adv) Λαπίθαι(N) καὶ(Kon) Δευκαλίωνες(N),
+(141) nor the still earlier Lapiths and Deucalions,
+(142) οὐ(Pt) Πελοπηιάδαι(N) τε(Pt) καὶ(Kon) Ἄργεος(G) ἄκρα(Adj)(N) Πελασγοί(N)·
+(142) not Pelopids and also of|Argos highest Pelasgians·
+(143) ἵλαθι(Prä)(Akt)(Imv) νῦν(Adv) φίλ᾽(Adj)(V) Ἄδωνι(V), καὶ(Kon) ἐς(Prp) νέωτ᾽(Adv) εὐθυμήσαις(Aor)(Akt)(Op).
+(143) be|gracious now dear Adonis, and into again you|might|be|cheerful.
+(144) καὶ(Kon) νῦν(Adv) ἦνθες(Aor)(Akt) Ἄδωνι(V), καὶ(Kon) ὅκκ᾽(Kon) ἀφίκῃ(Aor)(M/P)(Knj), φίλος(Adj)(N) ἡξεῖς(Fu)(Akt).
+(144) and now you|came Adonis, and whenever you|arrive, dear you|will|come.
+(145) Πραξινόα(V), τὸ(Art)(N) χρῆμα(N) σοφώτερον(Adj)(Kmp)(N) ἁ(Art)(N) θήλεια(Adj)(N).
+(145) Praxinoa, the matter wiser the female.
+(146) ὀλβία(Adj)(N) ὅσσα(Pr)(N) ἴσατι(Prä)(Akt), πανολβία(Adj)(N) ὡς(Kon) γλυκὺ(Adj)(N) φωνεῖ(Prä)(Akt).
+(146) blessed as|many she|sings, all|blessed how sweet she|speaks.
+(147) ὥρα(N) ὅμως(Adv) κεἰς(Kon)(Prp) οἶκον(A). ἀνάριστος(Adj)(N) Διοκλείδας(N).
+(147) time however and|into home. unbreakfasted Diocleidas.
+(148) χὡνὴρ(Kon)(Art)(N) ὄξος(N) ἅπαν(Adj)(N), πεινᾶντι(Prä)(Akt)(D) δὲ(Pt) μηδὲ(Kon) ποτένθῃς(Prä)(Akt)(Knj).
+(148) and|the|man vinegar whole, to|one|hungry but not|even you|may|give|to|drink.
+(149) χαῖρε(Prä)(Akt)(Imv) Ἄδων(V) ἀγαπητέ(Adj)(V)· καὶ(Kon) ἐς(Prp) χαίροντας(Prä)(Akt)(A) ἀφίκευ(Aor)(M/P)(Imv).
+(149) rejoice Adon beloved· and into rejoicing|ones arrive.
+=== Gedicht 16 ===
+== Χάριτες ἢ Ἱέρων ==
+(1) αἰεὶ(Adv) τοῦτο(Pr)(N) Διὸς(G) κούραις(D) μέλει(Prä)(Akt), αἰὲν(Adv) ἀοιδοῖς(D),
+(1) always this of|Zeus to|maidens is|a|care, always to|singers,
+(2) ὑμνεῖν(Prä)(Akt)(Inf) ἀθανάτους(Adj)(A), ὑμνεῖν(Prä)(Akt)(Inf) ἀγαθῶν(Adj)(G) κλέα(A) ἀνδρῶν(G).
+(2) to|hymn immortals, to|hymn of|good glories of|men.
+(3) Μοῦσαι(N) μὲν(Pt) θεαὶ(N) ἐντί(Prä)(Akt), θεοὺς(A) θεαὶ(N) ἀείδοντι(Prä)(Akt)·
+(3) Muses indeed goddesses are, the|gods goddesses sing·
+(4) ἄμμες(Pr)(N) δὲ(Pt) βροτοὶ(N) οἵδε(Pr)(N), βροτοὺς(A) βροτοὶ(N) ἀείδωμεν(Prä)(Akt)(Knj).
+(4) we but mortals these, mortals mortals let|us|sing.
+(5) τίς(Pr)(N) γὰρ(Pt) τῶν(Pr)(G) ὁπόσοι(Pr)(N) γλαυκὰν(Adj)(A) ναίουσιν(Prä)(Akt) ὑπ᾽(Prp) ἀῶ(A)
+(5) who for of|those as|many gleaming dwell under dawn
+(6) ἡμετέρας(Adj)(A) Χάριτας(A) πετάσας(Aor)(Akt)(N) ὑποδέξεται(Fu)(Med) οἴκῳ(D)
+(6) our Graces having|spread will|receive at|home
+(7) ἀσπασίως(Adv), οὐδ᾽(Kon) αὖθις(Adv) ἀδωρήτους(Adj)(A) ἀποπέμψει(Fu)(Akt);
+(7) gladly, and|not again un|gifted will|send|away;
+(8) αἱ(Art)(N) δὲ(Pt) σκυζόμεναι(Prä)(M/P)(N) γυμνοῖς(Adj)(D) ποσὶν(D) οἴκαδ᾽(Adv) ἴασι(Prä)(Akt),
+(8) the but being|angry bare with|feet homeward go,
+(9) πολλά(Adj)(A) με(Pr)(A) τωθάζοισαι(Prä)(Akt)(N), ὅ(Kon) τ᾽(Pt) ἀλιθίαν(Adj)(A) ὁδὸν(A) ἦνθον(Aor)(Akt),
+(9) many me mocking, because and true road I|came,
+(10) ὀκνηραὶ(Adj)(N) δὲ(Pt) πάλιν(Adv) κενεᾶς(Adj)(G) ἐν(Prp) πυθμένι(D) χηλοῦ(G)
+(10) sluggish but again of|empty in bottom of|chest
+(11) ψυχροῖς(Adj)(D) ἐν(Prp) γονάτεσσι(D) κάρη(A) μίμνοντι(Prä)(Akt)(D) βαλοῖσαι(Aor)(Akt)(N),
+(11) cold in knees head remaining having|cast,
+(12) ἔνθ᾽(Adv) αἰεί(Adv) σφισιν(Pr)(D) ἕδρα(N), ἐπὴν(Kon) ἄπρηκτοι(Adj)(N) ἵκωνται(Prä)(M/P)(Knj).
+(12) there always for|them seat, whenever unaccomplished they|may|come.
+(13) τίς(Pr)(N) τῶν(Art)(G) νῦν(Adv) τοιόσδε(Adj)(N); τίς(Pr)(N) εὖ(Adv) εἰπόντα(Aor)(Akt)(A) φιλήσει(Fu)(Akt);
+(13) who of|the now such; who well having|spoken will|love;
+(14) οὐκ(Pt) οἶδ᾽(Per)(Akt)· οὐ(Pt) γὰρ(Pt) ἔτ᾽(Adv) ἄνδρες(N) ἐπ᾽(Prp) ἔργμασιν(D) ὡς(Kon) πάρος(Adv) ἐσθλοῖς(Adj)(D)
+(14) not I|know· not for any|more men for deeds as formerly noble
+(15) αἰνεῖσθαι(Prä)(M/P)(Inf) σπεύδοντι(Prä)(Akt)(D), νενίκηνται(Per)(M/P) δ᾽(Pt) ὑπὸ(Prp) κερδέων(G).
+(15) to|be|praised to|one|hastening, have|been|defeated but by gains.
+(16) πᾶς(Adj)(N) δ᾽(Pt) ὑπὸ(Prp) κόλπῳ(D) χεῖρας(A) ἔχων(Prä)(Akt)(N) πόθεν(Adv) οἴσεται(Fu)(Akt) ἀθρεῖ(Prä)(Akt)
+(16) every but under bosom hands holding whence will|bring he|looks
+(17) ἄργυρον(A), οὐδέ(Kon) κεν(Pt) ἰὸν(A) ἀποτρίψας(Aor)(Akt)(N) τινὶ(Pr)(D) δοίη(Aor)(Akt)(Op),
+(17) silver, nor perhaps rust having|rubbed|off to|someone he|might|give,
+(18) ἀλλ᾽(Kon) εὐθὺς(Adv) μυθεῖται(Prä)(M/P)· "ἀπωτέρω(Adv) ἢ(Kon) γόνυ(A) κνάμα(A)·
+(18) but straightway he|speaks· "further|off than knee shin·
+(19) αὐτῷ(Pr)(D) μοί(Pr)(D) τι(Pr)(N) γένοιτο(Aor)(Med)(Op)· θεοὶ(N) τιμῶσιν(Prä)(Akt) ἀοιδούς(A).
+(19) to|himself to|me something might|happen· gods honor singers.
+(20) τίς(Pr)(N) δέ(Pt) κεν(Pt) ἄλλου(Pr)(G) ἀκούσαι(Aor)(Akt)(Inf); ἅλις(Adv) πάντεσσιν(Adj)(D) Ὅμηρος(N).
+(20) who but perhaps of|another to|hear; enough for|all Homer.
+(21) οὗτος(Pr)(N) ἀοιδῶν(G) λῷστος(Adj)(Sup)(N), ὃς(Pr)(N) ἐξ(Prp) ἐμεῦ(Pr)(G) οἴσεται(Fu)(Akt) οὐδέν(Pr)(N)."
+(21) this of|singers best, who from me will|bring nothing."
+(22) δαιμόνιοι(Adj)(V), τί(Pr)(N) δὲ(Pt) κέρδος(N) ὁ(Art)(N) μυρίος(Adj)(N) ἔνδοθι(Adv) χρυσὸς(N)
+(22) O|wondrous, what but profit the countless within gold
+(23) κείμενος(Prä)(M/P)(N); οὐχ(Pt) ἅδε(Pr)(N) πλούτου(G) φρονέουσιν(Prä)(Akt) ὄνασις(N),
+(23) lying; not this of|wealth they|think benefit,
+(24) ἀλλὰ(Kon) τὸ(Art)(N) μὲν(Pt) ψυχᾷ(D), τὸ(Art)(N) δὲ(Pt) καί(Kon) τινι(Pr)(D) δοῦναι(Aor)(Akt)(Inf) ἀοιδῶν(G)·
+(24) but the indeed to|soul, the but also to|someone to|give of|singers·
+(25) πολλοὺς(Adj)(A) δ᾽(Pt) εὖ(Adv) ἔρξαι(Aor)(Akt)(Inf) παῶν(G), πολλοὺς(Adj)(A) δὲ(Pt) καὶ(Kon) ἄλλων(Pr)(G)
+(25) many but well to|do of|kinsmen, many but and of|others
+(26) ἀνθρώπων(G), αἰεὶ(Adv) δὲ(Pt) θεοῖς(D) ἐπιβώμια(A) ῥέζειν(Prä)(Akt)(Inf),
+(26) of|humans, always but to|gods altars to|do,
+(27) μηδὲ(Kon) ξεινοδόκον(Adj)(A) κακὸν(Adj)(A) ἔμμεναι(Prä)(Akt)(Inf), ἀλλὰ(Kon) τραπέζῃ(D)
+(27) nor guest|host bad to|be, but with|table
+(28) μειλίξαντ᾽(Aor)(Akt)(N) ἀποπέμψαι(Aor)(Akt)(Inf), ἐπὴν(Kon) ἐθέλωντι(Prä)(Akt)(D) νέεσθαι(Prä)(M/P)(Inf),
+(28) having|soothed to|send|off, whenever to|one|wishing to|return,
+(29) Μουσάων(G) δὲ(Pt) μάλιστα(Adv)(Sup) τίειν(Prä)(Akt)(Inf) ἱεροὺς(Adj)(A) ὑποφήτας(A),
+(29) of|Muses but most to|honor holy interpreters,
+(30) ὄφρα(Kon) καὶ(Kon) εἰν(Prp) Ἀίδαο(G) κεκρυμμένος(Per)(M/P)(N) ἐσθλὸς(Adj)(N) ἀκούσῃς(Aor)(Akt)(Knj),
+(30) so|that and in of|Hades hidden good you|may|hear,
+(31) μηδ᾽(Kon) ἀκλεὴς(Adj)(N) μύρηαι(Prä)(M/P)(Knj) ἐπὶ(Prp) ψυχροῦ(Adj)(G) Ἀχέροντος(G),
+(31) nor without|fame you|may|rot upon cold of|Acheron,
+(32) ὡσεί(Kon) τις(Pr)(N) μακέλᾳ(D) τετυλωμένος(Per)(M/P)(N) ἔνδοθι(Adv) χεῖρας(A)
+(32) as|if someone with|mattock calloused within hands
+(33) ἀχὴν(A) ἐκ(Prp) πατέρων(G) πενίην(A) ἀκτήμονα(Adj)(A) κλαίων(Prä)(Akt)(N).
+(33) grief from fathers poverty property|less weeping.
+(34) πολλοὶ(Adj)(N) ἐν(Prp) Ἀντιόχοιο(Adj)(G) δόμοις(D) καὶ(Kon) ἄνακτος(G) Ἀλεύα(G)
+(34) many in of|Antiochus halls and of|lord Aleuas
+(35) ἁρμαλιὴν(A) ἔμμηνον(Adv) ἐμετρήσαντο(Aor)(M/P) πενέσται(N)·
+(35) mess monthly they|measured poor|men·
+(36) πολλοὶ(Adj)(N) δὲ(Pt) Σκοπάδῃσιν(D) ἐλαυνόμενοι(Prä)(M/P)(N) ποτὶ(Prp) σακοὺς(A)
+(36) many but for|Skopads being|driven toward sacks
+(37) μόσχοι(N) σὺν(Prp) κεραῇσιν(D) ἐμυκήσαντο(Aor)(M/P) βόεσσι(D),
+(37) calves with horns bellowed with|cattle,
+(38) μυρία(Adj)(N) δ᾽(Pt) ἀμπεδίον(N) Κραννώνιον(Adj)(N) ἐνδιάασκον(Imp)(Akt)
+(38) countless but field Krannonian they|filled
+(39) ποιμένες(N) ἔκκριτα(Adj)(A) μῆλα(A) φιλοξείνοισι(Adj)(D) Κρεώνδαις(D)·
+(39) shepherds choice flocks to|hospitable Creondae·
+(40) ἀλλ᾽(Kon) οὔ(Pt) σφιν(Pr)(D) τῶν(Pr)(G) ἦδος(N), ἐπεὶ(Kon) γλυκὺν(Adj)(A) ἐξεκένωσαν(Aor)(Akt)
+(40) but not to|them of|these delight, since sweet they|emptied
+(41) θυμὸν(A) ἐς(Prp) εὐρεῖαν(Adj)(A) σχεδίαν(A) στυγνοῦ(Adj)(G) Ἀχέροντος(G),
+(41) spirit into wide raft grim of|Acheron,
+(42) ἄμναστοι(Adj)(N) δὲ(Pt) τὰ(Art)(A) πολλὰ(Adj)(A) καὶ(Kon) ὄλβια(Adj)(A) τῆνα(Pr)(A) λιπόντες(Aor)(Akt)(N)
+(42) unremembered but the many and blessed those having|left
+(43) δειλοῖς(Adj)(D) ἐν(Prp) νεκύεσσι(D) μακροὺς(Adj)(A) αἰῶνας(A) ἔκειντο(Imp)(M/P),
+(43) to|wretched in dead long ages they|lay,
+(44) εἰ(Kon) μὴ(Pt) κεῖνος(Pr)(N) ἀοιδὸς(N) ὁ(Art)(N) Κήιος(Adj)(N) αἰόλα(Adj)(A) φωνέων(G)
+(44) if not that singer the Cean varied of|voices
+(45) βάρβιτον(A) ἐς(Prp) πολύχορδον(Adj)(A) ἐν(Prp) ἀνδράσι(D) θῆκ᾽(Aor)(Akt) ὀνομαστοὺς(Adj)(A)
+(45) lyre into many|stringed among men placed renowned
+(46) ὁπλοτέροις(Adj)(D), τιμᾶς(G) δὲ(Pt) καὶ(Kon) ὠκέες(Adj)(N) ἔλλαχον(Aor)(Akt) ἵπποι(N),
+(46) for|younger, of|honors but and swift obtained horses,
+(47) οἵ(Pr)(N) σφισιν(Pr)(D) ἐξ(Prp) ἱερῶν(Adj)(G) στεφανηφόροι(Adj)(N) ἦλθον(AorS)(Akt) ἀγώνων(G).
+(47) who to|them out|of sacred crown|bearing came of|contests.
+(48) τίς(Pr)(N) δ᾽(Pt) ἂν(Pt) ἀριστῆας(A) Λυκίων(G) ποτέ(Adv), τίς(Pr)(N) κομόωντας(Prä)(Akt)(A)
+(48) who but would champions of|Lycians ever, who long|haired
+(49) Πριαμίδας(A) ἢ(Kon) θῆλυν(Adj)(A) ἀπὸ(Prp) χροιᾶς(G) Κύκνον(A) ἔγνω(Aor)(Akt),
+(49) sons|of|Priam or womanish from hue Cycnus knew,
+(50) εἰ(Kon) μὴ(Pt) φυλόπιδας(A) προτέρων(Adj)(G) ὕμνησαν(Aor)(Akt) ἀοιδοί(N);
+(50) if not battle|songs of|former sang singers;
+(51) οὐδ᾽(Kon) Ὀδυσεὺς(N) ἑκατόν(Adj) τε(Pt) καὶ(Kon) εἴκοσι(Adj) μῆνας(A) ἀλαθεὶς(Aor)(M/P)(N)
+(51) nor Odysseus hundred and also twenty months having|wandered
+(52) πάντας(Adj)(A) ἐπ᾽(Prp) ἀνθρώπους(A), Ἀίδαν(A) τ᾽(Pt) εἰς(Prp) ἔσχατον(Adj)(A) ἐλθὼν(Aor)(Akt)(N)
+(52) all upon men, Hades and into utmost having|come
+(53) ζωός(Adj)(N), καὶ(Kon) σπήλυγγα(A) φυγὼν(Aor)(Akt)(N) ὀλοοῖο(Adj)(G) Κύκλωπος(G),
+(53) alive, and cave having|escaped of|deadly Cyclops,
+(54) δηναιὸν(Adj)(N) κλέος(N) ἔσχεν(Aor)(Akt), ἐσιγάθη(Aor)(M/P) δ᾽(Pt) ἂν(Pt) ὑφορβὸς(N)
+(54) long|lasting fame he|had, was|silent but would swineherd
+(55) Εὔμαιος(N), καὶ(Kon) βουσὶ(D) Φιλοίτιος(N) ἀμφ᾽(Prp) ἀγελαίαις(Adj)(D)
+(55) Eumaeus, and with|cattle Philoetius around herds
+(56) ἔργον(A) ἔχων(Prä)(Akt)(N), αὐτός(Pr)(N) τε(Pt) περίσπλαγχνος(Adj)(N) Λαέρτης(N),
+(56) work having, himself and tender|hearted Laertes,
+(57) εἰ(Kon) μή(Pt) σφεας(Pr)(A) ὤνασαν(Aor)(Akt) Ἰάονος(Adj)(G) ἀνδρὸς(G) ἀοιδαί(N).
+(57) if not them benefited of|Ionian of|man songs.
+(58) Ἐκ(Prp) Μοισᾶν(G) ἀγαθὸν(Adj)(N) κλέος(N) ἔρχεται(Prä)(M/P) ἀνθρώποισι(D),
+(58) from of|Muses good fame comes to|humans,
+(59) χρήματα(N) δὲ(Pt) ζώοντες(Prä)(Akt)(N) ἀμαλδύνουσι(Prä)(Akt) θανόντων(Per)(Akt)(G).
+(59) goods but living diminish of|dead.
+(60) ἀλλ᾽(Kon) ἶσος(Adj)(N) γὰρ(Pt) ὁ(Art)(N) μόχθος(N) ἐπ᾽(Prp) ᾀόνι(Adj)(D) κύματα(A) μετρεῖν(Prä)(Akt)(Inf),
+(60) but equal for the toil upon shore waves to|measure,
+(61) ὅσσ᾽(Pr)(A) ἄνεμος(N) χέρσονδε(Adv) μετὰ(Prp) γλαυκᾶς(Adj)(G) ἁλὸς(G) ὠθεῖ(Prä)(Akt),
+(61) as|many wind to|land after of|grey sea pushes,
+(62) ἢ(Kon) ὕδατι(D) νίζειν(Prä)(Akt)(Inf) θολερὰν(Adj)(A) διαειδέι(Adj)(D) πλίνθον(A),
+(62) or with|water to|wash muddy with|clear brick,
+(63) καὶ(Kon) φιλοκερδείᾳ(D) βεβλαμμένον(Per)(M/P)(A) ἄνδρα(A) παρελθεῖν(Aor)(Akt)(Inf).
+(63) and with|love|of|gain harmed man to|pass|by.
+(64) χαιρέτω(Prä)(Akt)(Imv) ὃς(Pr)(N) τοιοῦτος(Adj)(N), ἀνάριθμος(Adj)(N) δέ(Pt) οἱ(Pr)(D) εἰη(Prä)(M/P)(Knj)
+(64) let|him|rejoice who such, numberless but to|him may|be
+(65) ἄργυρος(N), αἰεὶ(Adv) δὲ(Pt) πλεόνων(Adj)(G) ἔχοι(Prä)(Akt)(Knj) ἵμερος(N) αὐτόν(Pr)(A).
+(65) silver, always but of|more may|have desire him.
+(66) αὐτὰρ(Kon) ἐγὼ(Pr)(N) τιμήν(A) τε(Pt) καὶ(Kon) ἀνθρώπων(G) φιλότητα(A)
+(66) but I honor and also of|men friendship
+(67) πολλῶν(Adj)(G) ἡμιόνων(G) τε(Pt) καὶ(Kon) ἵππων(G) πρόσθεν(Adv) ἑλοίμαν(Aor)(Med)(Op).
+(67) of|many mules and also horses before I|would|choose.
+(68) δίζημαι(Prä)(M/P) δ᾽(Pt), ὅτινι(Pr)(D) θνατῶν(Adj)(G) κεχαρισμένος(Per)(M/P)(N) ἔνθω(Prä)(Akt)
+(68) I|seek but, for|whom of|mortals having|pleased I|may|be
+(69) σὺν(Prp) Μοίσαις(D)· χαλεπαὶ(Adj)(N) γὰρ(Pt) ὁδοὶ(N) τελέθουσιν(Prä)(Akt) ἀοιδοῖς(D)
+(69) with Muses· hard for roads come|to|be for|singers
+(70) κουράων(G) ἀπάνευθε(Adv) Διὸς(G) μέγα(Adv) βουλεύοντος(Prä)(Akt)(G).
+(70) of|maidens far|from of|Zeus greatly planning.
+(71) οὔπω(Adv) μῆνας(A) ἄγων(Prä)(Akt)(N) ἔκαμ᾽(Aor)(Akt) οὐρανὸς(N) οὐδ᾽(Kon) ἐνιαυτούς(A)·
+(71) not|yet months leading grew|weary sky nor years·
+(72) πολλοὶ(Adj)(N) κινήσουσιν(Fu)(Akt) ἔτι(Adv) τροχὸν(A) ἅρματος(G) ἵπποι(N)·
+(72) many will|move yet wheel of|chariot horses·
+(73) ἔσσεται(Fu)(M/P) οὗτος(Pr)(N) ἀνήρ(N), ὃς(Pr)(N) ἐμεῦ(Pr)(G) κεχρήσετ᾽(Fu)(M/P) ἀοιδοῦ(G),
+(73) will|be this man, who of|me will|use as|singer,
+(74) ῥέξας(Aor)(Akt)(N) ἢ(Kon) Ἀχιλεὺς(N) ὅσσον(Pr)(A) μέγας(Adj)(A) ἢ(Kon) βαρὺς(Adj)(N) Αἴας(N)
+(74) having|done or Achilles as|much great or heavy Ajax
+(75) ἐν(Prp) πεδίῳ(D) Σιμόεντος(G), ὅθι(Kon) Φρυγὸς(Adj)(G) ἠρίον(N) Ἴλου(G).
+(75) in plain of|Simoeis, where of|Phrygian tomb of|Ilus.
+(76) ἤδη(Adv) νῦν(Adv) Φοίνικες(N) ὑπ᾽(Prp) ἠελίῳ(D) δύνοντι(Prä)(Akt)(D)
+(76) already now Phoenicians under sun setting
+(77) οἰκεῦντες(Prä)(Akt)(N) Λιβύας(Adj)(G) ἄκρον(Adj)(A) σφυρὸν(A) ἐρρίγασιν(Per)(Akt).
+(77) dwelling of|Libya extreme ankle have|shivered.
+(78) ἤδη(Adv) βαστάζουσι(Prä)(Akt) Συρακόσιοι(N) μέσα(Adj)(A) δοῦρα(A)
+(78) already bear Syracusans middle spears
+(79) ἀχθόμενοι(Prä)(M/P)(N) σακέεσσι(D) βραχίονας(A) ἰτεΐνοισιν(Adj)(D)·
+(79) being|burdened with|shields arms of|willow·
+(80) ἐν(Prp) δ᾽(Pt) αὐτοῖς(Pr)(D) Ἱέρων(N) προτέροις(Adj)(D) ἴσος(Adj)(N) ἡρώεσσι(D)
+(80) in but them Hieron to|former equal to|heroes
+(81) ζώννυται(Prä)(M/P), ἵππειαι(Adj)(N) δὲ(Pt) κόρυν(A) σκεπάουσιν(Prä)(Akt) ἔθειραι(N).
+(81) is|girt, horsehair but helmet they|cover locks.
+(82) αἰ(Kon) γὰρ(Pt) Ζεῦ(V) κύδιστε(Adj)(V) πάτερ(V) καὶ(Kon) πότνι᾽(Adj)(V) Ἀθάνα(V)
+(82) if indeed Zeus most|glorious father and lady Athena
+(83) κούρη(V) θ᾽(Pt), ἣ(Pr)(N) σὺν(Prp) ματρὶ(D) πολυκλήρων(Adj)(G) Ἐφυραίων(G)
+(83) maiden and, who with mother of|much|allotted of|Ephyraeans
+(84) εἴληχας(Per)(Akt) μέγα(Adj)(A) ἄστυ(A) παρ᾽(Prp) ὕδασι(D) Λυσιμελείας(G),
+(84) you|have|obtained great city by waters of|Lysimeleia,
+(85) ἐχθροὺς(Adj)(A) ἐκ(Prp) νάσοιο(G) κακὰ(Adj)(A) πέμψειεν(Aor)(Akt)(Op) ἀνάγκα(N)
+(85) enemies out|of island evil|things might|send necessity
+(86) Σαρδόνιον(Adj)(A) κατὰ(Prp) κῦμα(A), φίλων(Adj)(G) μόρον(A) ἀγγέλλοντας(Prä)(Akt)(A)
+(86) Sardinian down|along wave, of|friends fate announcing
+(87) τέκνοις(D) ἠδ᾽(Kon) ἀλόχοισιν(D), ἀριθμητοὺς(Adj)(A) ἀπὸ(Prp) πολλῶν(Adj)(G)·
+(87) to|children and to|wives, countable from many·
+(88) ἄστεά(A) τε(Pt) προτέροισι(Adj)(D) πάλιν(Adv) ναίοιτο(Prä)(Akt)(Op) πολίταις(D),
+(88) cities and to|former again might|be|inhabited by|citizens,
+(89) δυσμενέων(Adj)(G) ὅσα(Pr)(N) χεῖρες(N) ἐλωβήσαντο(Aor)(M/P) κατάκρας(Adv)·
+(89) of|enemies as|many|things hands outraged utterly·
+(90) ἀγροὺς(A) δ᾽(Pt) ἐργάζοιντο(Prä)(M/P)(Op) τεθαλότας(Per)(M/P)(A)· αἱ(Art)(N) δ᾽(Pt) ἀνάριθμοι(Adj)(N)
+(90) fields but might|work blooming· the but numberless
+(91) μήλων(G) χιλιάδες(N) βοτάνᾳ(D) διαπιανθεῖσαι(Aor)(Pas)(N)
+(91) of|sheep thousands with|pasture having|been|fattened
+(92) ἀμπεδίον(A) βληχοῖντο(Prä)(M/P)(Op), βόες(N) δ᾽(Pt) ἀγελαδὸν(Adv) ἐς(Prp) αὖλιν(A)
+(92) field might|bleat, oxen but in|herds into fold
+(93) ἐρχόμεναι(Prä)(M/P)(N) σκνιφαῖον(Adv) ἐπισπεύδοιεν(Prä)(Akt)(Op) ὁδίταν(A)·
+(93) coming in|swarms might|hasten way·
+(94) νειοὶ(N) δ᾽(Pt) ἐκπονέοιντο(Prä)(M/P)(Op) ποτὶ(Prp) σπόρον(A), ἁνίκα(Kon) τέττιξ(N)
+(94) fallows but might|be|worked|out toward sowing, when cicada
+(95) ποιμένας(A) ἐνδίους(Adj)(A) πεφυλαγμένος(Per)(M/P)(N) ἔνδοθι(Adv) δένδρων(G)
+(95) shepherds mid|day having|sheltered within of|trees
+(96) ἀχεῖ(Prä)(Akt) ἐν(Prp) ἀκρεμόνεσσιν(D)· ἀράχνια(N) δ᾽(Pt) εἰς(Prp) ὅπλ᾽(A) ἀράχναι(N)
+(96) sounds in tree|tops· webs but into arms spiders
+(97) λεπτὰ(Adj)(N) διαστήσαιντο(Aor)(M/P)(Op), βοᾶς(G) δ᾽(Pt) ἔτι(Adv) μηδ᾽(Pt) ὄνομ᾽(N) εἴη(Knj)(Akt).
+(97) fine might|be|spread, of|oxen but yet not|even name might|be.
+(98) ὑψηλὸν(Adj)(N) δ᾽(Pt) Ἱέρωνι(D) κλέος(N) φορέοιεν(Prä)(Akt)(Op) ἀοιδοὶ(N)
+(98) high but to|Hieron fame might|bear singers
+(99) καὶ(Kon) πόντου(G) Σκυθικοῖο(Adj)(G) πέραν(Adv) καὶ(Kon) ὅθι(Kon) πλατὺ(Adj)(N) τεῖχος(N)
+(99) and of|sea Scythian beyond and where broad wall
+(100) ἀσφάλτῳ(D) δήσασα(Aor)(Akt)(N) Σεμίραμις(N) ἐμβασίλευεν(Imp)(Akt).
+(100) with|asphalt having|bound Semiramis was|reigning.
+(101) εἷς(Adj)(N) μὲν(Pt) ἐγώ(Pr)(N), πολλοὺς(Adj)(A) δὲ(Pt) Διὸς(G) φιλέοντι(Prä)(Akt)(D) καὶ(Kon) ἄλλους(Adj)(A)
+(101) one indeed I, many but of|Zeus to|one|loving and others
+(102) θυγατέρες(N), τοῖς(Art)(D) πᾶσι(Adj)(D) μέλοι(Knj)(Akt) Σικελὰν(Adj)(A) Ἀρέθοισαν(A)
+(102) daughters, to|the all may|be|a|care Sicilian Arethusa
+(103) ὑμνεῖν(Prä)(Akt)(Inf) σὺν(Prp) λαοῖσι(D) καὶ(Kon) αἰχμητὰν(Adj)(A) Ἱέρωνα(A).
+(103) to|hymn with peoples and spear|man Hieron.
+(104) ὦ(ij) Ἐτεόκλειοι(Adj)(N) θύγατρες(N) θεαί(N), ὦ(ij) Μινύειον(Adj)(A)
+(104) O of|Eteocles daughters goddesses, O Minyeian
+(105) Ὀρχομενὸν(A) φιλέοισαι(Prä)(M/P)(N) ἀπεχθόμενόν(Prä)(M/P)(A) ποτε(Adv) Θήβαις(D),
+(105) Orchomenus loving hated once to|Thebes,
+(106) ἄκλητος(Adj)(N) μὲν(Pt) ἔγωγε(Pr)(N) μένοιμί(Knj)(Akt) κεν(Pt), ἐς(Prp) δὲ(Pt) καλεύντων(Prä)(Akt)(G)
+(106) uninvited indeed I might|remain perhaps, into but of|calling|ones
+(107) θαρσήσας(Aor)(Akt)(N) Μοίσαισι(D) σὺν(Prp) ἁμετέραισιν(Adj)(D) ἱκοίμαν(Aor)(M/P)(Op).
+(107) having|taken|courage to|Muses with our I|might|come.
+(108) καλλείψω(Fu)(Akt) δ᾽(Pt) οὐδ᾽(Pt) ὔμμε(Pr)(A)· τί(Pr)(N) γὰρ(Pt) Χαρίτων(G) ἀγαπητὸν(Adj)(N)
+(108) I|will|leave but not|even you|all· what for of|Graces dear
+(109) ἀνθρώποις(D) ἀπάνευθεν(Adv); ἀεὶ(Adv) Χαρίτεσσιν(D) ἅμ᾽(Adv) εἴην(Knj)(Akt).
+(109) to|men far|from; always with|Graces together I|might|be.
+=== Gedicht 17 ===
+== ἐγκώμιον εἰς Πτολεμαῖον ==
+(1) Ἐκ(Prp) Διὸς(G) ἀρχώμεσθα(Prä)(M/P) καὶ(Kon) ἐς(Prp) Δία(A) λήγετε(Prä)(Akt)(Imv) Μοῖσαι(V),
+(1) from of|Zeus let|us|begin and to Zeus cease Muses,
+(2) ἀθανάτων(Adj)(G) τὸν(Art)(A) ἄριστον(Adj)(A) ἐπὴν(Kon) αὐδῶμεν(Prä)(Akt)(Knj) ἀοιδαῖς(D)·
+(2) of|immortals the best whenever we|may|utter with|songs·
+(3) ἀνδρῶν(G) δ᾽(Pt) αὖ(Adv) Πτολεμαῖος(N) ἐνὶ(Prp) πρώτοισι(Adj)(D) λεγέσθω(Prä)(M/P)(Imv)
+(3) of|men but again Ptolemy among first let|him|be|said
+(4) καὶ(Kon) πύματος(Adj)(N) καὶ(Kon) μέσσος(Adj)(N)· ὁ(Art)(N) γὰρ(Pt) προφερέστατος(Adj)(Sup)(N) ἄλλων(Pr)(G).
+(4) and last and middle· the for most|preeminent of|others.
+(5) ἥρωες(N), τοὶ(Art)(N) πρόσθεν(Adv) ἀφ᾽(Prp) ἡμιθέων(G) ἐγένοντο(Aor)(M/P),
+(5) heroes, who formerly from demi|gods were|born,
+(6) ῥέξαντες(Aor)(Akt)(N) καλὰ(Adj)(A) ἔργα(A) σοφῶν(Adj)(G) ἐκύρησαν(Aor)(Akt) ἀοιδῶν(G)·
+(6) having|done fair deeds of|wise they|met|with of|singers·
+(7) αὐτὰρ(Kon) ἐγὼ(Pr)(N) Πτολεμαῖον(A) ἐπιστάμενος(Prä)(M/P)(N) καλὰ(Adj)(A) εἰπεῖν(Aor)(Akt)(Inf)
+(7) but I Ptolemy knowing fair to|say
+(8) ὑμνήσαιμ᾽(Aor)(Akt)(Op)· ὕμνοι(N) δὲ(Pt) καὶ(Kon) ἀθανάτων(Adj)(G) γέρας(N) αὐτῶν(Pr)(G).
+(8) I|would|hymn· songs but and of|immortals gift of|them.
+(9) Ἴδαν(A) ἐς(Prp) πολύδενδρον(Adj)(A) ἀνὴρ(N) ὑλατόμος(N) ἐλθὼν(Aor)(Akt)(N)
+(9) Ida into much|treed man wood|cutter having|come
+(10) παπταίνει(Prä)(Akt), παρεόντος(Prä)(Akt)(G) ἄδην(Adv), πόθεν(Adv) ἄρξεται(Fu)(M/P) ἔργου(G).
+(10) peers, of|being|present enough, whence will|begin of|work.
+(11) τί(Pr)(N) πρῶτον(Adv) καταλέξω(Fu)(Akt); ἐπεὶ(Kon) πάρα(Adv) μυρία(Adj)(N) εἰπεῖν(Aor)(Akt)(Inf),
+(11) what first I|shall|recount; since at|hand countless to|say,
+(12) οἷσι(Pr)(D) θεοὶ(N) τὸν(Art)(A) ἄριστον(Adj)(A) ἐτίμησαν(Aor)(Akt) βασιλήων(G).
+(12) by|which gods the best honored of|kings.
+(13) Ἐκ(Prp) πατέρων(G) οἷος(Pr)(N) μὲν(Pt) ἔην(Imp)(Akt) τελέσαι(Aor)(Akt)(Inf) μέγα(Adj)(A) ἔργον(A)
+(13) from of|fathers such indeed he|was to|accomplish great work
+(14) Λαγείδας(Adj)(N) Πτολεμαῖος(N), ὅτε(Kon) φρεσὶν(D) ἐγκατάθοιτο(Aor)(Akt)(Op)
+(14) Lageid Ptolemy, when in|minds he|might|set|within
+(15) βουλάν(A), ἃν(Pr)(A) οὐκ(Pt) ἄλλος(Adj)(N) ἀνὴρ(N) οἷός(Pr)(N) τε(Pt) νοῆσαι(Aor)(Akt)(Inf).
+(15) plan, which not another man such|as also to|understand.
+(16) τῆνον(Pr)(A) καὶ(Kon) μακάρεσσι(Adj)(D) πατὴρ(N) ὁμότιμον(Adj)(A) ἔθηκεν(Aor)(Akt)
+(16) him and among|the|blessed father equal|in|honor made
+(17) ἀθανάτοις(Adj)(D), καί(Kon) οἱ(Pr)(D) χρύσεος(Adj)(N) δόμος(N) ἐν(Prp) Διὸς(G) οἴκῳ(D)
+(17) to|immortals, and to|him golden house in of|Zeus house
+(18) δέδμηται(Per)(M/P)· παρὰ(Prp) δ᾽(Pt) αὐτὸν(Pr)(A) Ἀλέξανδρος(N) φίλα(Adj)(A) εἰδὼς(Per)(Akt)(N)
+(18) has|been|built· beside but him Alexander dear knowing
+(19) ἑδριάει(Prä)(Akt), Πέρσαισι(D) βαρὺς(Adj)(N) θεὸς(N) αἰολομίτρας(Adj)(N).
+(19) sits, to|Persians heavy god diademed.
+(20) ἀντία(Adv) δ᾽(Pt) Ἡρακλῆος(G) ἕδρα(N) κενταυροφόνοιο(Adj)(G)
+(20) opposite but of|Heracles seat of|centaur|slaying
+(21) ἵδρυται(Per)(M/P) στερεοῖο(Adj)(G) τετυγμένα(Per)(M/P)(N) ἐξ(Prp) ἀδάμαντος(G)·
+(21) is|set of|solid fashioned out|of adamant·
+(22) ἔνθα(Adv) σὐν(Kon)(Prp) ἄλλοισιν(Adj)(D) θαλίας(A) ἔχει(Prä)(Akt) οὐρανίδαισι(D),
+(22) there with others banquets he|has with|heaven|born,
+(23) χαίρων(Prä)(Akt)(N) υἱωνῶν(G) περιώσιον(Adj)(A) υἱωνοῖσιν(D),
+(23) rejoicing of|descendants exceeding to|grandsons,
+(24) ὅττί(Kon) σφεων(Pr)(G) Κρονίδης(N) μελέων(G) ἐξείλετο(Aor)(M/P) γῆρας(A),
+(24) that of|them Kronid of|limbs took|away old|age,
+(25) ἀθάνατοι(Adj)(N) δὲ(Pt) καλεῦνται(Prä)(M/P) ἑοὶ(Pr)(N) νέποδες(N) γεγαῶτες(Per)(Akt)(N).
+(25) immortal but are|called their descendants having|been|born.
+(26) ἄμφω(Adj)(Du)(N) γὰρ(Pt) πρόγονός(N) σφιν(Pr)(D) ὁ(Art)(N) καρτερὸς(Adj)(N) Ἡρακλείδας(N),
+(26) both for ancestor to|them the mighty Heraclid,
+(27) ἀμφότεροι(Adj)(N) δ᾽(Pt) ἀριθμεῦνται(Prä)(M/P) ἐς(Prp) ἔσχατον(Adj)(A) Ἡρακλῆα(A).
+(27) both but are|counted to utmost Heracles.
+(28) τῷ(Art)(D) καὶ(Kon) ἐπεὶ(Kon) δαίτηθεν(Adv) ἴοι(Knj)(Akt) κεκορημένος(Per)(M/P)(N) ἤδη(Adv)
+(28) to|whom and when from|feast he|might|go satisfied already
+(29) νέκταρος(G) εὐόδμοιο(Adj)(G) φίλας(Adj)(G) ἐς(Prp) δῶμ᾽(A) ἀλόχοιο(G),
+(29) of|nectar sweet|smelling of|dear into house of|wife,
+(30) τῷ(Art)(D) μὲν(Pt) τόξον(A) ἔδωκεν(Aor)(Akt) ὑπωλένιόν(Adj)(A) τε(Pt) φαρέτραν(A),
+(30) to|the indeed bow gave under|arm and quiver,
+(31) τῷ(Art)(D) δὲ(Pt) σιδάρειον(Adj)(A) σκύταλον(A) κεχαραγμένον(Per)(M/P)(A) ὄζοις(D).
+(31) to|the but iron staff having|been|engraved with|twigs.
+(32) οἱ(Pr)(N) δ᾽(Pt) εἰς(Prp) ἀμβρόσιον(Adj)(A) θάλαμον(A) λευκοσφύρου(Adj)(G) Ἥβης(G)
+(32) they but into ambrosial chamber of|white|ankled of|Hebe
+(33) ὅπλα(A) καὶ(Kon) αὐτὸν(Pr)(A) ἄγουσι(Prä)(Akt) γενειήταν(Adj)(A) Διὸς(G) υἱόν(A).
+(33) arms and him they|lead bearded of|Zeus son.
+(34) οἵα(Pr)(N) δ᾽(Pt) ἐν(Prp) πινυταῖσι(Adj)(D) περικλειτὰ(Adj)(N) Βερενίκα(N)
+(34) how then in among|the|prudent far|famed Berenice
+(35) ἔπρεπε(Imp)(Akt) θηλυτέραις(Adj)(D), ὄφελος(N) μέγα(Adj)(N) γειναμένοισι(Aor)(M/P)(D).
+(35) was|preeminent to|females, benefit great to|those|having|borne.
+(36) τᾷ(Art)(D) μὲν(Pt) Κύπρον(A) ἔχοισα(Prä)(Akt)(N) Διώνας(G) πότνια(Adj)(N) κούρα(N)
+(36) to|the indeed Cyprus having of|Dione lady maiden
+(37) κόλπον(A) ἐς(Prp) εὐώδη(Adj)(A) ῥαδινὰς(Adj)(A) ἐσεμάξατο(Aor)(Med) χεῖρας(A).
+(37) bosom into fragrant slender she|drew|for|herself hands.
+(38) τῷ(Art)(D) οὔπω(Adv) τινὰ(Pr)(A) φαντὶ(Prä)(Akt) ἁδεῖν(Aor)(Akt)(Inf) τόσον(Adj)(A) ἀνδρὶ(D) γυναικῶν(G),
+(38) to|the not|yet someone say|they to|please so|much to|a|man of|women,
+(39) ὅσσόν(Pr)(A) περ(Pt) Πτολεμαῖος(N) ἑὴν(Adj)(A) ἐφίλησεν(Aor)(Akt) ἄκοιτιν(A).
+(39) as|much indeed Ptolemy his|own he|loved wife.
+(40) ἦ(Pt) μὰν(Pt) ἀντεφιλεῖτο(Imp)(M/P) πολὺ(Adv) πλέον(Adv)(Kmp)· ὧδέ(Adv) κε(Pt) παισὶ(D)
+(40) indeed indeed was|loved|in|return much more· thus perhaps to|children
+(41) θαρσήσας(Aor)(Akt)(N) σφετέροισιν(Adj)(D) ἐπιτρέποι(Prä)(Akt)(Op) οἶκον(A) ἅπαντα(Adj)(A),
+(41) having|taken|courage to|his|own he|would|entrust house whole,
+(42) ὁππότε(Kon) κεν(Pt) φιλέων(Prä)(Akt)(N) βαίνῃ(Knj)(Akt) λέχος(A) ἐς(Prp) φιλεούσης(Prä)(Akt)(G).
+(42) whenever then loving he|may|go bed into of|one|loving.
+(43) ἀστόργου(Adj)(G) δὲ(Pt) γυναικὸς(G) ἐπ᾽(Prp) ἀλλοτρίῳ(Adj)(D) νόος(N) αἰεί(Adv),
+(43) of|unloving but of|woman upon foreign mind always,
+(44) ῥηίδιοι(Adj)(N) δὲ(Pt) γοναί(N), τέκνα(N) δ᾽(Pt) οὐ(Pt) ποτεοικότα(Per)(Akt)(A) πατρί(D).
+(44) easy begettings children, but not ever resembling to|father.
+(45) κάλλει(D) ἀριστεύουσα(Prä)(Akt)(N) θεάων(G) πότν᾽(Adj)(V) Ἀφροδίτα(V),
+(45) in|beauty excelling of|goddesses lady Aphrodite,
+(46) σοὶ(Pr)(D) τήνα(Pr)(N) μεμέλητο(Per)(M/P)· σέθεν(Pr)(G) δ᾽(Pt) ἕνεκεν(Prp) Βερενίκα(N)
+(46) to|you that was|a|care· of|you but for|the|sake Berenice
+(47) εὐειδὴς(Adj)(N) Ἀχέροντα(A) πολύστονον(Adj)(A) οὐκ(Pt) ἐπέρασεν(Aor)(Akt),
+(47) fair Acheron much|groaning not she|crossed,
+(48) ἀλλά(Kon) μιν(Pr)(A) ἁρπάξασα(Aor)(Akt)(N), πάροιθ᾽(Adv) ἐπὶ(Prp) νῆα(A) κατελθεῖν(Aor)(Akt)(Inf)
+(48) but her having|snatched, before upon ship to|go|down
+(49) κυανέαν(Adj)(A) καὶ(Kon) στυγνὸν(Adj)(A) ἀεὶ(Adv) πορθμῆα(A) καμόντων(Per)(Akt)(G),
+(49) dark|blue and grim always ferryman of|the|wearied,
+(50) ἐς(Prp) ναὸν(A) κατέθηκας(Aor)(Akt), ἑᾶς(Adj)(G) δ᾽(Pt) ἀπεδάσσαο(Aor)(Med) τιμᾶς(G).
+(50) into temple you|set, of|your|own but you|apportioned honors.
+(51) πᾶσιν(Adj)(D) δ᾽(Pt) ἤπιος(Adj)(N) ἥδε(Pr)(N) βροτοῖς(D) μαλακοὺς(Adj)(A) μὲν(Pt) ἔρωτας(A)
+(51) to|all but gentle this to|mortals soft indeed loves
+(52) προσπνείει(Prä)(Akt), κούφας(Adj)(A) δὲ(Pt) διδοῖ(Prä)(Akt) ποθέοντι(Prä)(Akt)(D) μερίμνας(A).
+(52) breathes|upon, light but gives to|one|longing cares.
+(53) Ἀργεία(Adj)(V) κυάνοφρυ(Adj)(V), σὺ(Pr)(N) λαοφόνον(Adj)(A) Διομήδεα(A)
+(53) Argive dark|browed, you people|slaying Diomedes
+(54) μισγομένα(Prä)(M/P)(N) Τυδῆι(D) τέκες(Aor)(Akt), Καλυδώνιον(Adj)(A) ἄνδρα(A),
+(54) mingling with|Tydeus you|bore, Calydonian man,
+(55) ἀλλὰ(Kon) Θέτις(N) βαθύκολπος(Adj)(N) ἀκοντιστὰν(Adj)(A) Ἀχιλῆα(A)
+(55) but Thetis deep|bosomed spear|throwing Achilles
+(56) Αἰακίδᾳ(Adj)(D) Πηλῆι(D), σὲ(Pr)(A) δ᾽(Pt) αἰχμητὰ(Adj)(V) Πτολεμαῖε(V)
+(56) to|Aeacid to|Peleus, you but spear|man Ptolemy
+(57) αἰχμητᾷ(Adj)(D) Πτολεμαίῳ(D) ἀρίζηλος(Adj)(N) Βερενίκα(N).
+(57) to|spear|man to|Ptolemy very|famous Berenice.
+(58) καί(Kon) σε(Pr)(A) Κόως(N) ἀτίταλλε(Imp)(Akt) βρέφος(A) νεογιλλὸν(Adj)(A) ἐόντα(Prä)(Akt)(A),
+(58) and you Cos nurtured babe new|born being,
+(59) δεξαμένα(Aor)(Med)(N) παρὰ(Prp) ματρός(G), ὅτε(Kon) πρώταν(Adj)(A) ἴδες(Aor)(Akt) ἀῶ(A).
+(59) having|received beside of|mother, when first you|saw dawn.
+(60) ἔνθα(Adv) γὰρ(Pt) Εἰλείθυιαν(A) ἐβώσατο(Aor)(M/P) λυσίζωνον(Adj)(A)
+(60) there for Eileithyia she|cried belt|loosening
+(61) Ἀντιγόνας(G) θυγάτηρ(N) βεβαρημένα(Per)(M/P)(N) ὠδίνεσσιν(D)·
+(61) of|Antigone daughter having|been|weighed with|birth|pangs·
+(62) ἡ(Art)(N) δέ(Pt) οἱ(Pr)(D) εὐμενέοισα(Prä)(Akt)(N) παρίστατο(Imp)(M/P), κὰδ(Adv) δ᾽(Pt) ἄρα(Pt) πάντων(Adj)(G)
+(62) she but to|her being|gracious stood|by, down then indeed of|all
+(63) νωδυνίαν(A) κατέχευε(Imp)(Akt) μελῶν(G)· ὁ(Art)(N) δὲ(Pt) πατρὶ(D) ἐοικὼς(Per)(Akt)(N)
+(63) painlessness she|was|pouring of|limbs· the but to|father resembling
+(64) παῖς(N) ἀγαπητὸς(Adj)(N) ἔγεντο(Aor)(M/P). Κόως(N) δ᾽(Pt) ὀλόλυξεν(Aor)(Akt) ἰδοῖσα(Aor)(Akt)(N),
+(64) child beloved became. Cos but cried|aloud having|seen,
+(65) φᾶ(Aor)(Akt) δὲ(Pt) καθαπτομένα(Prä)(M/P)(N) βρέφεος(G) χείρεσσι(D) φίλῃσιν(Adj)(D)·
+(65) said but touching of|infant with|hands dear·
+(66) "Ὄλβιε(Adj)(V) κοῦρε(V) γένοιο(Aor)(Med)(Op), τίοις(Op)(Akt) δέ(Pt) με(Pr)(A) τόσσον(Adj)(A), ὅσον(Pr)(A) περ(Pt)
+(66) "blessed boy may|you|be, honor but me so|much, as|much indeed
+(67) Δᾶλον(A) ἐτίμησεν(Aor)(Akt) κυανάμπυκα(Adj)(N) Φοῖβος(N) Ἀπόλλων(N)·
+(67) Delos he|honored dark|filleted Phoebus Apollo·
+(68) ἐν(Prp) δὲ(Pt) μιᾷ(Adj)(D) τιμᾷ(D) Τρίοπον(Adj)(A) καταθεῖο(Aor)(Akt)(Op) κολώναν(A),
+(68) in but one honor Triopian you|might|set column,
+(69) ἶσον(Adj)(A) Δωριέεσσι(Adj)(D) νέμων(Prä)(Akt)(N) γέρας(A) ἐγγὺς(Adv) ἐοῦσιν(Prä)(Akt)(D)."
+(69) equal to|Dorians dispensing gift near being."
+(70) ἶσον(Adv) καὶ(Kon) Ῥήναιαν(A) ἄναξ(N) ἐφίλησεν(Aor)(Akt) Ἀπόλλων(N).
+(70) equally and Rheneia lord loved Apollo.
+(71) Ὣς(Adv) ἄρα(Pt) νᾶσος(N) ἔειπεν(Aor)(Akt)· ὁ(Art)(N) δ᾽(Pt) ὑψόθεν(Adv) ἔκλαγε(Aor)(Akt) φωνᾷ(D)
+(71) thus then island spoke· the but from|above cried with|voice
+(72) ἐς(Prp) τρὶς(Adv) ἀπὸ(Prp) νεφέων(G) μέγας(Adj)(N) αἰετὸς(N) αἴσιος(Adj)(N) ὄρνις(N).
+(72) into thrice from clouds great eagle auspicious bird.
+(73) Ζηνός(G) που(Pt) τόδε(Pr)(N) σᾶμα(N). Διὶ(D) Κρονίωνι(Adj)(D) μέλοντι(Prä)(Akt)(D)
+(73) of|Zeus perhaps this sign. to|Zeus Kronion caring
+(74) αἰδοῖοι(Adj)(N) βασιλῆες(N)· ὁ(Art)(N) δ᾽(Pt) ἔξοχος(Adj)(N), ὅν(Pr)(A) κε(Pt) φιλήσῃ(Knj)(Akt)
+(74) revered kings· the but preeminent, whom perhaps he|may|love
+(75) γεινόμενον(Prä)(M/P)(A) τὰ(Art)(A) πρῶτα(Adj)(A)· πολὺς(Adj)(N) δέ(Pt) οἱ(Pr)(D) ὄλβος(N) ὀπαδεῖ(Prä)(Akt),
+(75) being|born the first· much then to|him prosperity attends,
+(76) πολλᾶς(Adj)(G) δὲ(Pt) κρατέει(Prä)(Akt) γαίας(G), πολλᾶς(Adj)(G) δὲ(Pt) θαλάσσας(G).
+(76) of|many but he|rules lands, of|many but seas.
+(77) μυρίαι(Adj)(N) ἄπειροί(Adj)(N) τε(Pt) καὶ(Kon) ἔθνεα(N) μυρία(Adj)(N) φωτῶν(G)
+(77) countless boundless and also nations countless of|men
+(78) λήιον(N) ἀλδήσκουσιν(Prä)(Akt) ὀφελλόμεναι(Prä)(M/P)(N) Διὸς(G) ὄμβρῳ(D)·
+(78) crop they|grow being|increased of|Zeus by|rain·
+(79) ἀλλ᾽(Kon) οὔτις(Pr)(N) τόσα(Adj)(A) φύει(Prä)(Akt), ὅσα(Pr)(A) χθαμαλὰ(Adj)(N) Αἴγυπτος(N),
+(79) but no|one so|many produces, as low|lying Egypt,
+(80) Νεῖλος(N) ἀναβλύζων(Prä)(Akt)(N) διερὰν(Adj)(A) ὅτε(Kon) βώλακα(A) θρύπτει(Prä)(Akt).
+(80) Nile bubbling|up moist whenever clod he|breaks.
+(81) οὐδέ(Kon) τις(Pr)(N) ἄστεα(A) τόσσα(Adj)(A) βροτῶν(G) ἔχει(Prä)(Akt) ἔργα(A) δαέντων(Per)(Akt)(G).
+(81) nor someone cities so|many of|mortals has works of|knowing|ones.
+(82) τρεῖς(Adj)(N) μέν(Pt) οἱ(Pr)(D) πολίων(G) ἑκατοντάδες(N) ἐνδέδμηνται(Per)(M/P),
+(82) three indeed to|him of|cities hundreds have|been|built,
+(83) τρεῖς(Adj)(N) δ᾽(Pt) ἄρα(Pt) χιλιάδες(N) τρισσαῖς(Adj)(D) ἐπὶ(Prp) μυριάδεσσι(D),
+(83) three but then thousands upon thrice tens|of|thousands,
+(84) δοιαὶ(Adj)(N) δὲ(Pt) τριάδες(N), μετὰ(Prp) δέ(Pt) σφισιν(Pr)(D) ἐννεάδες(N) τρεῖς(Adj)(N)·
+(84) two but triads, after then to|them enneads three·
+(85) τῶν(Art)(G) πάντων(Adj)(G) Πτολεμαῖος(N) ἀλήνωρ(Adj)(N) ἐμβασιλεύει(Prä)(Akt).
+(85) of|the all Ptolemy un|weary reigns|over.
+(86) καὶ(Kon) μὴν(Pt) Φοινίκας(A) ἀποτέμνεται(Prä)(M/P) Ἀρραβίας(A) τε(Pt)
+(86) and indeed Phoenicians he|cuts|off Arabias and
+(87) καὶ(Kon) Συρίας(A) Λιβύας(A) τε(Pt) κελαινῶν(Adj)(G) τ᾽(Pt) Αἰθιοπήων(G).
+(87) and Syrias Libyas and of|dark and of|Ethiopians.
+(88) Παμφύλοισί(Adj)(D) τε(Pt) πᾶσι(Adj)(D) καὶ(Kon) αἰχμηταῖς(Adj)(D) Κιλίκεσσι(D)
+(88) to|Pamphylians and to|all and to|spear|men to|Cilicians
+(89) σαμαίνει(Prä)(Akt), Λυκίοις(D) τε(Pt) φιλοπτολέμοισί(Adj)(D) τε(Pt) Καρσί(D),
+(89) he|threatens, to|Lycians and war|loving and to|Carians,
+(90) καὶ(Kon) νάσοις(D) Κυκλάδεσσιν(D), ἐπεί(Kon) οἱ(Pr)(D) νᾶες(N) ἄρισται(Adj)(Sup)(N)
+(90) and to|islands to|Cyclades, since to|him ships best
+(91) πόντον(A) ἐπιπλώοντι(Prä)(Akt)(D), θάλασσα(N) δὲ(Pt) πᾶσα(Adj)(N) καὶ(Kon) αἶα(N)
+(91) sea to|one|sailing|upon, and sea whole and land
+(92) καὶ(Kon) ποταμοὶ(N) κελάδοντες(Prä)(Akt)(N) ἀνάσσονται(Prä)(M/P) Πτολεμαίῳ(D).
+(92) and rivers resounding are|ruled by|Ptolemy.
+(93) πολλοὶ(Adj)(N) δ᾽(Pt) ἱππῆες(N), πολλοὶ(Adj)(N) δέ(Pt) μιν(Pr)(A) ἀσπιδιῶται(N).
+(93) many then horsemen, many but him shield|men.
+(94) χαλκῷ(D) μαρμαίροντι(Prä)(Akt)(D) σεσαγμένοι(Per)(M/P)(N) ἀμφαγέρονται(Prä)(M/P).
+(94) with|bronze gleaming having|been|armed they|gather|around.
+(95) ὄλβῳ(D) μὲν(Pt) πάντάς(Adj)(A) κε(Pt) καταβρίθοι(Aor)(Akt)(Op) βασιλῆας(A)·
+(95) with|wealth indeed all perhaps he|would|weigh|down kings·
+(96) τόσσον(Adj)(N) ἐπ᾽(Prp) ἆμαρ(A) ἕκαστον(Adj)(A) ἐς(Prp) ἀφνεὸν(Adj)(A) ἔρχεται(Prä)(M/P) οἶκον(A)
+(96) so|much upon day each into wealthy goes house
+(97) πάντοθε(Adv). λαοὶ(N) δ᾽(Pt) ἔργα(A) περιστέλλουσιν(Prä)(Akt) ἕκηλοι(Adj)(N).
+(97) everywhere. peoples but works they|attend calm.
+(98) οὐ(Pt) γάρ(Pt) τις(Pr)(N) δηίων(Adj)(G) πολυκήτεα(Adj)(A) Νεῖλον(A) ὑπερβὰς(Aor)(Akt)(N)
+(98) not for someone of|foes much|shipped Nile having|crossed
+(99) πεζὸς(Adj)(N) ἐν(Prp) ἀλλοτρίαισι(Adj)(D) βοὰν(A) ἐστάσατο(Aor)(M/P) κώμαις(D),
+(99) on|foot in foreign a|shout he|set|up in|villages,
+(100) οὐδέ(Kon) τις(Pr)(N) αἰγιαλόνδε(Adv) θοᾶς(Adj)(G) ἐξάλατο(Aor)(M/P) ναὸς(N)
+(100) nor someone shoreward swift leaped|out ship
+(101) θωρηχθεὶς(Aor)(Pas)(N) ἐπὶ(Prp) βουσὶν(D) ἀνάρσιος(Adj)(N) Αἰγυπτίῃσι(Adj)(D)·
+(101) armored upon cattle hostile among|Egyptians·
+(102) τοῖος(Adj)(N) ἀνὴρ(N) πλατέεσσιν(Adj)(D) ἐνίδρυται(Per)(M/P) πεδίοισι(D)
+(102) such man in|broad has|been|established plains
+(103) ξανθοκόμας(Adj)(N) Πτολεμαῖος(N), ἐπιστάμενος(Prä)(M/P)(N) δόρυ(A) πάλλειν(Prä)(Akt)(Inf),
+(103) blond|haired Ptolemy, knowing spear to|brandish,
+(104) ᾧ(Pr)(D) ἐπὶ(Prp) πάγχυ(Adv) μέλει(Prä)(Akt) πατρώια(Adj)(A) πάντα(Adj)(A) φυλάσσειν(Prä)(Akt)(Inf)
+(104) to|whom upon wholly is|a|care ancestral all to|guard
+(105) οἷ᾽(Pr)(N) ἀγαθῷ(Adj)(D) βασιλῆι(D), τὰ(Art)(N) δὲ(Pt) κτεατίζεται(Prä)(M/P) αὐτός(Pr)(N).
+(105) such to|a|good king, the but acquires himself.
+(106) οὐ(Pt) μὰν(Pt) ἀχρεῖός(Adj)(N) γε(Pt) δόμῳ(D) ἐνὶ(Prp) πίονι(Adj)(D) χρυσὸς(N)
+(106) not indeed useless at|least to|a|house in rich gold
+(107) μυρμάκων(G) ἅτε(Pt) πλοῦτος(N) ἀεὶ(Adv) κέχυται(Per)(M/P) μογεόντων(Prä)(Akt)(G)·
+(107) of|ants at|least wealth always has|been|poured of|toiling|ones·
+(108) ἀλλὰ(Kon) πολὺν(Adj)(A) μὲν(Pt) ἔχοντι(Prä)(Akt)(D) θεῶν(G) ἐρικυδέες(Adj)(N) οἶκοι(N),
+(108) but much indeed to|one|having of|gods glorious houses,
+(109) αἰὲν(Adv) ἀπαρχομένοιο(Prä)(M/P)(G) σὺν(Prp) ἄλλοισιν(Adj)(D) γεράεσσι(D),
+(109) always of|one|offering with others honors,
+(110) πολλὸν(Adj)(A) δ᾽(Pt) ἰφθίμοισι(Adj)(D) δεδώρηται(Per)(M/P) βασιλεῦσι(D),
+(110) much but to|mighty has|been|given to|kings,
+(111) πολλὸν(Adj)(A) δὲ(Pt) πτολίεσσι(D), πολὺν(Adj)(A) δ᾽(Pt) ἀγαθοῖσιν(Adj)(D) ἑταίροις(D).
+(111) much but to|cities, much but to|good companions.
+(112) οὐδὲ(Kon) Διωνύσου(G) τις(Pr)(N) ἀνὴρ(N) ἱεροὺς(Adj)(A) κατ᾽(Prp) ἀγῶνας(A)
+(112) nor of|Dionysus someone man sacred at contests
+(113) ἵκετ᾽(Aor)(Akt) ἐπιστάμενος(Prä)(M/P)(N) λιγυρὰν(Adj)(A) ἀναμέλψαι(Aor)(Akt)(Inf) ἀοιδάν(A),
+(113) came knowing clear|toned to|strike|up song,
+(114) ᾧ(Pr)(D) οὐ(Pt) δωτίναν(A) ἀντάξιον(Adj)(A) ὤπασε(Aor)(Akt) τέχνας(A).
+(114) to|whom not gift equivalent he|bestowed skills.
+(115) Μουσάων(G) δ᾽(Pt) ὑποφῆται(N) ἀείδοντι(Prä)(Akt)(D) Πτολεμαῖον(A)
+(115) of|Muses but interpreters to|singing Ptolemy
+(116) ἀντ᾽(Prp) εὐεργεσίας(G). τί(Pr)(N) δὲ(Pt) κάλλιον(Adj)(Kmp)(N) ἀνδρί(D) κεν(Pt) εἴη(Knj)(Akt)
+(116) in|return|for of|benefaction. what but fairer to|a|man perhaps might|be
+(117) ὀλβίῳ(Adj)(D) ἢ(Kon) κλέος(N) ἐσθλὸν(Adj)(N) ἐν(Prp) ἀνθρώποισιν(D) ἀρέσθαι(Aor)(M/P)(Inf);
+(117) to|a|blest|one or fame good among men to|be|pleasing;
+(118) τοῦτο(Pr)(N) καὶ(Kon) Ἀτρείδαισι(D) μένει(Prä)(Akt)· τὰ(Art)(N) δὲ(Pt) μυρία(Adj)(N) τῆνα(Pr)(A),
+(118) this and to|Atreidae remains· the but countless those,
+(119) ὅσσα(Pr)(N) μέγαν(Adj)(A) Πριάμοιο(G) δόμον(A) κτεάτισσαν(Aor)(Akt) ἑλόντες(AorS)(Akt)(N),
+(119) as|many|things great of|Priam house they|acquired having|taken,
+(120) ἀέρι(D) πᾳ(Adv) κέκρυπται(Per)(M/P), ὅθεν(Adv) πάλιν(Adv) οὐκέτι(Adv) νόστος(N)·
+(120) in|air somewhere has|been|hidden, whence again no|longer return·
+(121) μοῦνος(Adj)(N) δὲ(Pt) προτέρων(Adj)(G) τε(Pt) καὶ(Kon) ὧν(Pr)(G) ἔτι(Adv) θερμὰ(Adj)(N) κονία(N)
+(121) alone but of|former and also of|whom still warm dust
+(122) στειβομένα(Prä)(M/P)(N) καθύπερθε(Adv) ποδῶν(G) ἐκμάσσεται(Prä)(M/P) ἴχνη(A),
+(122) being|trodden from|above of|feet wipes|out tracks,
+(123) ματρὶ(D) φίλᾳ(Adj)(D) καὶ(Kon) πατρὶ(D) θυώδεας(Adj)(A) εἵσατο(Aor)(M/P) ναούς(A)·
+(123) to|mother dear and to|father incense|fragrant he|set|up temples·
+(124) ἐν(Prp) δ᾽(Pt) αὐτοὺς(Pr)(A) χρυσῷ(D) περικαλλέας(Adj)(A) ἠδ᾽(Kon) ἐλέφαντι(D)
+(124) in but them with|gold very|beautiful and with|ivory
+(125) ἵδρυται(Per)(M/P) πάντεσσιν(Adj)(D) ἐπιχθονίοισιν(Adj)(D) ἀρωγούς(Adj)(A).
+(125) has|been|set for|all earth|dwelling helpers.
+(126) πολλὰ(Adj)(A) δὲ(Pt) πιανθέντα(Aor)(Pas)(A) βοῶν(G) ὅγε(Pr)(N) μηρία(A) καίει(Prä)(Akt)
+(126) many but fattened of|oxen he|indeed thighs burns
+(127) μησὶ(D) περιπλομένοισιν(Prä)(M/P)(D) ἐρευθομένων(Prä)(M/P)(G) ἐπὶ(Prp) βωμῶν(G),
+(127) in|months circling of|glowing on altars,
+(128) αὐτός(Pr)(N) τ᾽(Pt) ἰφθίμα(Adj)(N) τ᾽(Pt) ἄλοχος(N), τᾶς(Art)(G) οὔτις(Pr)(N) ἀρείων(Adj)(Kmp)(N)
+(128) himself and sturdy and wife, of|whom no|one better
+(129) νυμφίον(A) ἐν(Prp) μεγάροισι(D) γυνὰ(N) περιβάλλετ᾽(Prä)(Akt) ἀγοστῷ(D),
+(129) bridegroom in halls woman throws|around with|forearm,
+(130) ἐκ(Prp) θυμοῦ(G) στέργοισα(Prä)(Akt)(N) κασίγνητόν(A) τε(Pt) πόσιν(A) τε(Pt).
+(130) out|of spirit loving brother and husband and.
+(131) ὧδε(Adv) καὶ(Kon) ἀθανάτων(Adj)(G) ἱερὸς(Adj)(N) γάμος(N) ἐξετελέσθη(Aor)(M/P),
+(131) thus and of|immortals sacred marriage was|fulfilled,
+(132) οὓς(Pr)(A) τέκετο(Aor)(M/P) κρείουσα(Prä)(Akt)(N) Ῥέα(N) βασιλῆας(A) Ὀλύμπου(G)·
+(132) whom bore ruling Rhea kings of|Olympus·
+(133) ἓν(Adj)(A) δὲ(Pt) λέχος(A) στόρνυσιν(Prä)(Akt) ἰαύειν(Prä)(Akt)(Inf) Ζηνὶ(D) καὶ(Kon) Ἥρῃ(D)
+(133) one but bed he|spreads to|sleep to|Zeus and to|Hera
+(134) χεῖρας(A) φοιβήσασα(Aor)(Akt)(N) μύροις(D) ἔτι(Adv) παρθένος(N) ἸΡιςς(N).
+(134) hands having|cleansed with|ointments still maiden Iris.
+(135) χαῖρε(Prä)(Akt)(Imv) ἄναξ(V) Πτολεμαῖε(V)· σέθεν(Pr)(G) δ᾽(Pt) ἐγὼ(Pr)(N) ἶσα(Adv) καὶ(Kon) ἄλλων(Pr)(G)
+(135) rejoice lord Ptolemy· of|you but I equally and of|others
+(136) μνάσομαι(Prä)(M/P) ἡμιθέων(G), δοκέω(Prä)(Akt) δ᾽(Pt) ἔπος(A) οὐκ(Pt) ἀπόβλητον(Adj)(A)
+(136) I|remember of|demigods, I|seem but word not discardable
+(137) φθέγξομαι(Fu)(M/P) ἐσσομένοις(Prä)(M/P)(D)· ἀρετήν(A) γε(Pt) μὲν(Pt) ἐκ(Prp) Διὸς(G) αἰτεῦ(Prä)(Akt)(Imv).
+(137) I|will|utter to|those|to|come· virtue indeed at|least from Zeus ask.
+=== Gedicht 18 ===
+== Ἑλένης Ἐπιθάλαμιος ==
+(1) Ἔν(Prp) ποκ᾽(Pt) ἄρα(Pt) Σπάρτᾳ(D) ξανθότριχι(Adj)(D) πὰρ(Prp) Μενελάῳ(D)
+(1) in once then at|Sparta fair|haired beside Menelaus
+(2) παρθενικαὶ(Adj)(N) θάλλοντα(Prä)(Akt)(A) κόμαις(D) ὑάκινθον(A) ἔχοισαι(Prä)(Akt)(N)
+(2) maidens blooming with|locks hyacinth having
+(3) πρόσθε(Adv) νεογράπτω(Adj)(D) θαλάμω(D) χορὸν(A) ἐστάσαντο(Aor)(M/P),
+(3) before newly|painted in|chamber chorus they|set|themselves,
+(4) δώδεκα(Adj) ταὶ(Art)(N) πρᾶται(Adj)(N) πόλιος(G), μέγα(Adj)(N) χρῆμα(N) Λακαινᾶν(Adj)(G),
+(4) twelve the foremost of|city, great thing of|Laconian|women,
+(5) ἁνίκα(Kon) Τυνδαριδᾶν(Adj)(G) κατεδέξατο(Aor)(M/P) τὰν(Art)(A) ἀγαπητὰν(Adj)(A)
+(5) when of|Tyndarids received the beloved
+(6) μναστεύσας(Aor)(Akt)(N) Ἑλέναν(A) ὁ(Art)(N) νεώτερος(Adj)(N) Ἀτρέος(G) υἱός(N).
+(6) having|wooed Helen the younger of|Atreus son.
+(7) ἄειδον(Imp)(Akt) δ᾽(Pt) ἄρα(Pt) πᾶσαι(Adj)(N) ἐς(Prp) ἓν(Adj)(A) μέλος(A) ἐγκροτέοισαι(Prä)(Akt)(N)
+(7) sang but then all into one melody clapping
+(8) ποσσὶ(D) περιπλέκτοις(Adj)(D), ὑπὸ(Prp) δ᾽(Pt) ἴαχε(Imp)(Akt) δῶμ᾽(N) ὑμεναίῳ(Adj)(D).
+(8) with|feet entwined, under but it|rang house with|wedding|song.
+(9) οὕτω(Adv) δὴ(Pt) πρωιζὲ(Adv) κατέδραθες(Aor)(Akt) ὦ(ij) φίλε(Adj)(V) γαμβρέ(V);
+(9) thus indeed early you|slept O dear bridegroom;
+(10) ἦ(ij) ῥά(Pt) τις(Pr)(N) ἐσσὶ(Prä)(Akt) λίαν(Adv) βαρυγούνατος(Adj)(N); ἦ(ij) ῥα(Pt) φίλυπνος(Adj)(N);
+(10) is|it then someone you|are too heavy|kneed; is|it then sleep|loving;
+(11) ἦ(ij) ῥα(Pt) πολύν(Adj)(A) τιν᾽(Pr)(A) ἔπινες(Imp)(Akt), ὅτ᾽(Kon) εἰς(Prp) εὐνὰν(A) κατεβάλλευ(Imp)(Akt);
+(11) is|it then much some you|drank, when into bed you|were|laying|down;
+(12) εὕδειν(Prä)(Akt)(Inf) μὰν(Pt) σπεύδοντα(Prä)(Akt)(A) καθ᾽(Prp) ὥραν(A) αὐτὸν(Pr)(A) ἐχρῆν(Imp)(Akt) τυ(Pr)(A),
+(12) to|sleep indeed hastening at time himself it|was|needful you,
+(13) παῖδα(A) δ᾽(Pt) ἐᾶν(Prä)(Akt)(Inf) σὺν(Prp) παισὶ(D) φιλοστόργῳ(Adj)(D) παρὰ(Prp) ματρὶ(D)
+(13) child but to|allow with children affectionate beside mother
+(14) παίσδειν(Prä)(Akt)(Inf) ἐς(Prp) βαθὺν(Adj)(A) ὄρθρον(A), ἐπεὶ(Kon) καὶ(Kon) ἔνας(Adj)(N) καὶ(Kon) ἐς(Prp) ἀῶ(A)
+(14) to|play into deep dawn, since and one and into dawn
+(15) κεἰς(Kon)(Prp) ἔτος(A) ἐξ(Prp) ἔτεος(G) Μενέλαε(V) τεὰ(Adj)(N) νυὸς(N) ἅδε(Pr)(N).
+(15) and|into year out|of year Menelaus your daughter|in|law this.
+(16) ὄλβιε(Adj)(V) γάμβρ᾽(V), ἀγαθός(Adj)(N) τις(Pr)(N) ἐπέπταρεν(Per)(Akt) ἐρχομένῳ(Prä)(M/P)(D) τοι(Pr)(D)
+(16) blessed bridegroom, good someone has|sneezed to|coming to|you
+(17) ἐς(Prp) Σπάρταν(A), ἅπερ(Pr)(N) ὥλλοι(Adj)(N) ἀριστέες(Adj)(N), ὡς(Kon) ἀνύσαιο(Aor)(M/P)(Op).
+(17) into Sparta, which others best, so|that you|might|accomplish.
+(18) μοῦνος(Adj)(N) ἐν(Prp) ἡμιθέοις(D) Κρονίδαν(A) Δία(A) πενθερὸν(A) ἑξεῖς(Fu)(Akt).
+(18) alone among demigods Kronid Zeus father|in|law you|will|have.
+(19) Ζανός(G) τοι(Pt) θυγάτηρ(N) ὑπὸ(Prp) τὰν(Art)(A) μίαν(Adj)(A) ἵκετο(Aor)(M/P) χλαῖναν(A),
+(19) of|Zeus you|know daughter under the one came cloak,
+(20) οἵα(Pr)(N) Ἀχαιιάδων(Adj)(G) γαῖαν(A) πατεῖ(Prä)(Akt) οὐδὲ(Kon) μί᾽(Adj)(N) ἄλλα(Adj)(N).
+(20) such|as of|Achaean|women earth treads not|even one other.
+(21) ἦ(ij) μέγα(Adv) κέν(Pt) τι(Pr)(N) τέκοιτ᾽(Aor)(Akt)(Op), εἰ(Kon) ματέρι(D) τίκτοι(Prä)(Akt)(Knj) ὁμοῖον(Adj)(A).
+(21) indeed greatly perhaps something she|might|bear, if to|mother you|may|beget like.
+(22) ἄμμες(Pr)(N) δ᾽(Pt) αἱ(Art)(N) πᾶσαι(Adj)(N) συνομάλικες(Adj)(N), αἷς(Pr)(D) δρόμος(N) ωὑτός(Adj)(N)
+(22) we but the all co|evals, to|whom race same
+(23) χρισαμέναις(Aor)(Med)(D) ἀνδριστὶ(Adv) παρ᾽(Prp) Εὐρώταο(G) λοετροῖς(D),
+(23) having|anointed|themselves in|man|fashion beside of|Eurotas baths,
+(24) τετράκις(Adv) ἑξήκοντα(Adj)(N) κόραι(N), θῆλυς(Adj)(N) νεολαία(N),
+(24) four|times sixty girls, female youth,
+(25) τᾶν(Art)(G) οὐδέν(Pr)(N) τις(Pr)(N) ἄμωμος(Adj)(N), ἐπεί(Kon) χ᾽(Pt) Ἑλένᾳ(D) παρισωθῇ(Aor)(M/P)(Knj).
+(25) of|the no|one someone blameless, since at|least to|Helen be|set|beside.
+(26) Ἀὼς(N) ἀντέλλοισα(Prä)(Akt)(N) καλὸν(Adj)(A) διέφανε(Aor)(Akt) πρόσωπον(A),
+(26) Dawn rising fair revealed face,
+(27) πότνια(Adj)(N) νὺξ(N) τό(Art)(N) τε(Pt) λευκὸν(Adj)(N) ἔαρ(N) χειμῶνος(G) ἀνέντος(Aor)(Akt)(G)·
+(27) mistress night the and white spring of|winter having|loosened·
+(28) ὧδε(Adv) καὶ(Kon) ἁ(Art)(N) χρυσέα(Adj)(N) Ἑλένα(N) διαφαίνετ᾽(Prä)(M/P) ἐν(Prp) ἁμῖν(Pr)(D).
+(28) thus and the golden Helen appears in us.
+(29) πιείρᾳ(Adj)(D) μέγα(Adv) λᾷον(Adj)(N) ἀνέδραμε(AorS)(Akt) κόσμος(N) ἀρούρᾳ(D)
+(29) rich greatly pleasant sprang|up adornment in|field
+(30) ἢ(Kon) κάπῳ(D) κυπάρισσος(N) ἢ(Kon) ἅρματι(D) Θεσσαλὸς(Adj)(N) ἵππος(N)·
+(30) or in|garden cypress or on|chariot Thessalian horse·
+(31) ὧδε(Adv) καὶ(Kon) ἁ(Art)(N) ῥοδόχρως(Adj)(N) Ἑλένα(N) Λακεδαίμονι(D) κόσμος(N).
+(31) thus and the rose|hued Helen to|Lacedaemon adornment.
+(32) οὔτέ(Kon) τις(Pr)(N) ἐκ(Prp) ταλάρω(D) πανίσδεται(Prä)(M/P) ἔργα(A) τοιαῦτα(Adj)(A),
+(32) nor someone out|of basket brings|forth|wholly works such,
+(33) οὔτ᾽(Kon) ἐνὶ(Prp) δαιδαλέῳ(Adj)(D) πυκινώτερον(Adj)(Kmp)(A) ἄτριον(A) ἱστῷ(D)
+(33) nor in skill|wrought more|compact web on|loom
+(34) κερκίδι(D) συμπλέξασα(Aor)(Akt)(N) μακρῶν(Adj)(G) ἔταμ᾽(Aor)(Akt) ἐκ(Prp) κελεόντων(G).
+(34) with|shuttle having|twined|together of|long cut out|of warp|bars.
+(35) οὐ(Pt) μὰν(Pt) οὐδὲ(Kon) λύραν(A) τις(Pr)(N) ἐπίσταται(Prä)(M/P) ὧδε(Adv) κροτῆσαι(Aor)(Akt)(Inf)
+(35) not indeed nor lyre someone knows thus to|strike
+(36) Ἄρτεμιν(A) ἀείδοισα(Prä)(Akt)(N) καὶ(Kon) εὐρύστερνον(Adj)(A) Ἀθάναν(A),
+(36) Artemis singing and broad|chested Athena,
+(37) ὡς(Kon) Ἑλένα(N), τᾶς(Art)(G) πάντες(Adj)(N) ἐπ᾽(Prp) ὄμμασιν(D) ἵμεροι(Adj)(N) ἐντί(Prä)(Akt).
+(37) as Helen, of|whom all upon eyes desirous are.
+(38) ὦ(ij) καλὰ(Adj)(V) ὦ(ij) χαρίεσσα(Adj)(V) κόρα(V), τὺ(Pr)(N) μὲν(Pt) οἰκέτις(N) ἤδη(Adv),
+(38) O fair O graceful girl, you indeed house|mistress now,
+(39) ἄμμες(Pr)(N) δ᾽(Pt) ἐς(Prp) δρόμον(A) ἦρι(D) καὶ(Kon) ἐς(Prp) λειμώνια(Adj)(A) φύλλα(A)
+(39) we but into running in|spring and into meadowy leaves
+(40) ἑρψοῦμες(Fu)(Akt) στεφάνως(Adv) δρεψούμεναι(Fu)(Med)(N) ἁδὺ(Adv) πνέοντας(Prä)(Akt)(A),
+(40) we|shall|go with|garlands plucking|for|ourselves sweetly blowing,
+(41) πολλὰ(Adj)(A) τεοῦς(Pr)(G) Ἑλένα(V) μεμναμέναι(Per)(M/P)(N) ὡς(Kon) γαλαθηναὶ(Adj)(N)
+(41) much of|you Helen remembering as milk|fed
+(42) ἄρνες(N) γειναμένας(Aor)(Med)(A) ὄιος(G) μαστὸν(A) ποθέοισαι(Prä)(Akt)(N).
+(42) lambs having|been|born of|ewe breast desiring.
+(43) πρᾶταί(Adv) τοι(Pr)(D) στέφανον(A) λωτῶ(G) χαμαὶ(Adv) αὐξομένοιο(Prä)(M/P)(G)
+(43) first to|you garland of|lotus on|ground growing
+(44) πλέξασαι(Aor)(Akt)(N) σκιερὰν(Adj)(A) καταθήσομεν(Fu)(Akt) ἐς(Prp) πλατάνιστον(A),
+(44) having|woven shady we|will|set|down into plane|tree,
+(45) πρᾶται(Adv) δ᾽(Pt) ἀργυρέας(Adj)(G) ἐξ(Prp) ὄλπιδος(G) ὑγρὸν(Adj)(A) ἄλειφαρ(A)
+(45) first but of|silver out|of little|flask liquid ointment
+(46) λαζύμεναι(Prä)(M/P)(N) σταξεῦμες(Fu)(Akt) ὑπὸ(Prp) σκιερὰν(Adj)(A) πλατάνιστον(A)·
+(46) anointing|ourselves we|shall|drip under shady plane|tree·
+(47) γράμματα(N) δ᾽(Pt) ἐν(Prp) φλοιῷ(D) γεγράψεται(Per)(M/P), (ὡς(Kon) παριών(Prä)(Akt)(N) τις(Pr)(N)
+(47) letters but in bark will|have|been|written, (so passing|by someone
+(48) ἀννείμῃ(Knj)(Akt), ) δωριστί(Adv)· σέβου(Prä)(M/P)(Imv) μ᾽(Pr)(A)· Ἑλένας(G) φυτὸν(N) εἰμί(Prä)(Akt).
+(48) you|may|read, ) in|Doric· honor me· Helens plant I|am.
+(49) χαίροις(Prä)(Akt)(Op) ὦ(ij) νύμφα(V), χαίροις(Prä)(Akt)(Op) εὐπένθερε(Adj)(V) γαμβρέ(V).
+(49) may|you|rejoice O bride, may|you|rejoice well|bedded bridegroom.
+(50) Λατὼ(V) μὲν(Pt) δοίη(Aor)(Akt)(Op), Λατὼ(V) κουροτρόφος(Adj)(V) ὔμμιν(Pr)(D)
+(50) Leto indeed may|give, Leto boy|nurturing to|you|all
+(51) εὐτεκνίαν(A), Κύπρις(V) δέ(Pt), θεὰ(Adj)(V) Κύπρις(V) ἶσον(Adv) ἔρασθαι(Aor)(Med)(Inf)
+(51) good|offspring, Cypris but, goddess Cypris equally to|love
+(52) ἀλλάλων(Pr)(G), Ζεὺς(V) δέ(Pt), Κρονίδας(Adj)(V) Ζεὺς(V) ἄφθιτον(Adj)(A) ὄλβον(A),
+(52) of|each|other, Zeus but, Kronian Zeus unfading bliss,
+(53) ὡς(Kon) ἐξ(Prp) εὐπατριδᾶν(Adj)(G) εἰς(Prp) εὐπατρίδας(Adj)(A) πάλιν(Adv) ἔνθῃ(Knj)(Akt).
+(53) so|that out|of noble|born|ones into noble|born|ones again you|may|enter.
+(54) εὕδετ᾽(Prä)(Akt)(Imv) ἐς(Prp) ἀλλάλων(Pr)(G) στέρνον(A) φιλότητα(A) πνέοντες(Prä)(Akt)(N)
+(54) sleep into of|each|other breast affection breathing
+(55) καὶ(Kon) πόθον(A), ἔγρεσθαι(Prä)(M/P)(Inf) δὲ(Pt) πρὸς(Prp) ἀῶ(A) μἠπιλάθησθε(Aor)(M/P)(Imv).
+(55) and desire, to|awake but toward dawn do|not|forget.
+(56) νεύμεθα(Fu)(M/P) κἄμμες(Kon)(Pr)(N) ἐς(Prp) ὄρθρον(A), ἐπεί(Kon) κα(Pt) πρᾶτος(Adj)(N) ἀοιδὸς(N)
+(56) we|shall|go and|we|too into dawn, since indeed first singer
+(57) ἐξ(Prp) εὐνᾶς(G) κελαδήσῃ(Fu)(Akt) ἀνασχὼν(Aor)(Akt)(N) εὔτριχα(Adj)(A) δειράν(A).
+(57) out|of bed you|will|chirp having|raised smooth|haired neck.
+(58) Ὕμὴν(V) ὦ(ij) Ὕμέναιε(V), γάμῳ(D) ἐπὶ(Prp) τῷδε(Pr)(D) χαρείης(Aor)(M/P)(Op).
+(58) Hymen O Hymenaeus, for|marriage upon this|here may|you|rejoice.
+=== Gedicht 19 ===
+== Κηριοκλέπτης ==
+(1) τὸν(Art)(A) κλέπταν(A) πότ᾽(Pt) Ἔρωτα(A) κακὰ(Adj)(A) κέντασε(Aor)(Akt) μέλισσα(N)
+(1) the thief once Eros badly stung bee
+(2) κηρίον(A) ἐκ(Prp) σίμβλων(G) συλεύμενον(Prä)(M/P)(A), ἄκρα(Adj)(A) δὲ(Pt) χειρῶν(G)
+(2) honey|comb out|of hives stealing, tips but of|hands
+(3) δάκτυλα(A) πάνθ᾽(Adj)(A) ὑπένυξεν(Aor)(Akt). ὁ(Art)(N) δ᾽(Pt) ἄλγεε(Imp)(Akt) καὶ(Kon) χέρ᾽(A) ἐφύση(Imp)(Akt)
+(3) fingers all it|pricked. the but he|ached and hand he|blew
+(4) καὶ(Kon) τὰν(Art)(A) γᾶν(A) ἐπάταξε(Aor)(Akt) καὶ(Kon) ἅλατο(Aor)(M/P), τᾷ(Art)(D) δ᾽(Pt) Ἀφροδίτᾳ(D)
+(4) and the earth he|struck and he|leapt, to|the but Aphrodite
+(5) δεῖξεν(Aor)(Akt) τὰν(Art)(A) ὀδύναν(A) καὶ(Kon) μέμφετο(Imp)(M/P), ὅττί(Kon) γε(Pt) τυτθὸν(Adj)(N)
+(5) he|showed the pain and he|complained, that indeed tiny
+(6) θηρίον(N) ἐστὶ(Prä)(Akt) μέλισσα(N) καὶ(Kon) ἁλίκα(Adj)(A) τραύματα(A) ποιεῖ(Prä)(Akt).
+(6) beast is bee and equal|sized wounds makes.
+(7) χἁ(Kon)(Art)(N) μάτηρ(N) γελάσασα(Aor)(Akt)(N)· τί(Pr)(N) δ᾽(Pt); οὐκ(Pt) ἴσος(Adj)(N) ἐσσὶ(Prä)(Akt) μελίσσαις(D);
+(7) and|the mother having|laughed· why but; not equal you|are to|bees;
+(8) ὡς(Kon) τυτθὸς(Adj)(N) μὲν(Pt) ἔφυς(Aor)(Akt), τὰ(Art)(A) δὲ(Pt) τραύματα(A) χἁλίκα(Adj)(A) ποιεῖς(Prä)(Akt).
+(8) since small indeed you|were|born, the but wounds equal|sized you|make.
