@@ -2108,28 +2108,26 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
                 t_processed = process_translation_token_poesie(t)
                 
-                # WICHTIG: Farbsymbol bestimmen - ZWEI Quellen:
-                # 1. MANUELL: Symbol IM deutschen Token selbst (Priorität!)
-                # 2. AUTOMATISCH: Symbol aus token_meta (vom Builder gesetzt für griechisches Wort)
+                # WICHTIG: Farbsymbol bestimmen aus token_meta (vom Builder ODER von preprocess.py gesetzt)
                 color_symbol = None
+                global_idx = i + idx
+                token_meta = block.get('token_meta', [])
+                if global_idx < len(token_meta):
+                    meta = token_meta[global_idx]
+                    color_symbol = meta.get('color_symbol')
                 
-                # ZUERST: Prüfe ob deutscher Token selbst ein Symbol hat (manuell gesetzt)
-                for sym in ['#', '+', '-', '§', '$']:
-                    if sym in t_processed:
-                        color_symbol = sym
-                        break
+                # KRITISCH: Symbol ist bereits im Token enthalten (von preprocess.py hinzugefügt)!
+                # format_token_markup() entfernt das Symbol und färbt den Text
+                # Wir müssen es NICHT nochmal hinzufügen!
+                # ABER: Prüfe ob Symbol WIRKLICH im Token ist (könnte durch BlackWhite entfernt worden sein)
+                token_has_symbol = color_symbol and color_symbol in t_processed
                 
-                # FALLBACK: Wenn kein manuelles Symbol, hole vom griechischen Token (token_meta)
-                if not color_symbol:
-                    global_idx = i + idx
-                    token_meta = block.get('token_meta', [])
-                    if global_idx < len(token_meta):
-                        meta = token_meta[global_idx]
-                        color_symbol = meta.get('color_symbol')
-                
-                # WICHTIG: Farbsymbol VOR den deutschen Token setzen FÜR format_token_markup
-                # (damit die Farbe erkannt wird)
-                t_with_color = color_symbol + t_processed if color_symbol else t_processed
+                # Wenn Symbol NICHT im Token, aber in token_meta → hinzufügen
+                if color_symbol and not token_has_symbol:
+                    t_with_color = color_symbol + t_processed
+                else:
+                    # Symbol bereits im Token ODER kein Symbol
+                    t_with_color = t_processed
                 
                 # format_token_markup entfernt das Symbol und gibt farbigen HTML zurück
                 de_html = format_token_markup(t_with_color, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
@@ -2158,27 +2156,26 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
                     t_processed = process_translation_token_poesie(t)
                     
-                    # WICHTIG: Farbsymbol bestimmen - ZWEI Quellen:
-                    # 1. MANUELL: Symbol IM englischen Token selbst (Priorität!)
-                    # 2. AUTOMATISCH: Symbol aus token_meta (vom Builder gesetzt für griechisches Wort)
+                    # WICHTIG: Farbsymbol bestimmen aus token_meta (vom Builder ODER von preprocess.py gesetzt)
                     color_symbol = None
+                    global_idx = i + idx
+                    token_meta = block.get('token_meta', [])
+                    if global_idx < len(token_meta):
+                        meta = token_meta[global_idx]
+                        color_symbol = meta.get('color_symbol')
                     
-                    # ZUERST: Prüfe ob englischer Token selbst ein Symbol hat (manuell gesetzt)
-                    for sym in ['#', '+', '-', '§', '$']:
-                        if sym in t_processed:
-                            color_symbol = sym
-                            break
+                    # KRITISCH: Symbol ist bereits im Token enthalten (von preprocess.py hinzugefügt)!
+                    # format_token_markup() entfernt das Symbol und färbt den Text
+                    # Wir müssen es NICHT nochmal hinzufügen!
+                    # ABER: Prüfe ob Symbol WIRKLICH im Token ist (könnte durch BlackWhite entfernt worden sein)
+                    token_has_symbol = color_symbol and color_symbol in t_processed
                     
-                    # FALLBACK: Wenn kein manuelles Symbol, hole vom griechischen Token (token_meta)
-                    if not color_symbol:
-                        global_idx = i + idx
-                        token_meta = block.get('token_meta', [])
-                        if global_idx < len(token_meta):
-                            meta = token_meta[global_idx]
-                            color_symbol = meta.get('color_symbol')
-                    
-                    # WICHTIG: Farbsymbol VOR den englischen Token setzen FÜR format_token_markup
-                    t_with_color = color_symbol + t_processed if color_symbol else t_processed
+                    # Wenn Symbol NICHT im Token, aber in token_meta → hinzufügen
+                    if color_symbol and not token_has_symbol:
+                        t_with_color = color_symbol + t_processed
+                    else:
+                        # Symbol bereits im Token ODER kein Symbol
+                        t_with_color = t_processed
                     
                     # format_token_markup entfernt das Symbol und gibt farbigen HTML zurück
                     en_html = format_token_markup(t_with_color, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
