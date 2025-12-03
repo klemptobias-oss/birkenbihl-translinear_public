@@ -2231,10 +2231,18 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     if meter_on:
         eff_cfg['CELL_PAD_LR_PT'] = 0.0
         if tag_mode == "TAGS":
-            eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_TAG', 1.0)
+            # Tag-PDFs (Versmaß): Basis-Padding + Meter-Adjust-Kompensation
+            # WARUM? ToplineTokenFlowable verschiebt Linien um METER_ADJUST_RIGHT_PT
+            # → Diese Verschiebung "stiehlt" Platz zwischen Tokens
+            # → Füge METER_ADJUST zum Padding hinzu um Überlappung zu vermeiden
+            base_padding = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_TAG', 2.0)
+            eff_cfg['SAFE_EPS_PT'] = base_padding + METER_ADJUST_RIGHT_PT
         else:
-            # NoTag-PDFs (Versmass): Erhöht von 0.5 auf 1.0 (gleich wie Tag-PDFs!)
-            eff_cfg['SAFE_EPS_PT'] = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_NOTAG', 1.0)  # ERHÖHT von 0.5
+            # NoTag-PDFs (Versmaß): Basis-Padding + Meter-Adjust-Kompensation
+            # WICHTIG: NoTag braucht mehr Padding als Tag (4pt vs 2pt)
+            # PLUS die Meter-Adjust-Kompensation für korrekte Abstände
+            base_padding = eff_cfg.get('TOKEN_PAD_PT_VERSMASS_NOTAG', 4.0)
+            eff_cfg['SAFE_EPS_PT'] = base_padding + METER_ADJUST_RIGHT_PT
         eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_VERSMASS
     else:
         eff_cfg['CELL_PAD_LR_PT'] = 0.5

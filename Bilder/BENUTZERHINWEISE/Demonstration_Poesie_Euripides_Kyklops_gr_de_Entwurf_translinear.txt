@@ -36,10 +36,10 @@
 (2) πλάγχθη(Aor)(Pas), ἐπεὶ(Kon) Τροίης(G) ἱερὸν(Adj)(A) πτολίεθρον(A) ἔπερσεν(Aor)(Akt)·
 (2) wurde|umher|getrieben, als|nachdem von|Troja/der|Troja/of|the|trojans heiligen/geehrten/holy Stadt|burg/Castle/Schloss zerstörte·/he|has|destroyed|er|zerstörte
 (3) πολλῶν(Adj)(G) δʼ(Pt) ἀνθρώπων(G) ἴδεν(AorS)(Akt) ἄστεα(A) καὶ(Kon) νόον(A) ἔγνω(AorS)(Akt),
-(3) vieler/vielerzwei/vielerdrei/vielervier aber Menschen/(hier:|Leute) sah Städte/Ländereien/(auch:|Festungen) und Sinn/"Geist" erkannte,/verstand|er,
+(3) vieler/vielerzwei/vielerdrei/vielervier/vielerfünf/vielersechs aber Menschen/(hier:|Leute) sah Städte/Ländereien/(auch:|Festungen) und Sinn/"Geist" erkannte,/verstand|er,
 (4) πολλὰ(Adj)(A) δʼ(Pt) ὅ(Pr)(N) γʼ(Pt) ἐν(Prp) πόντῳ(D) πάθεν(AorS)(Akt) ἄλγεα(A) ὃν(Pr)(A) κατὰ(Prp) θυμόν(A),
-(4) vieles/ERGÄNZUNG aber er ja in dem|Meer erlitt/ERGÄNZUNG/ERGÄNZUNG Leiden/ERGÄNZUNG/ERGÄNZUNG seinen nach Mut,/ERGÄNZUNG,
-(4) many|things/WIRKUNGSLOS/WIRKUNGSLOS/WIRKUNGSLOS but he/WIRKUNGSLOS/WIRKUNGSLOS indeed in the|sea/WIRKUNGSLOS suffered pains/WIRKUNGSLOS his|own through heart,/WIRKUNGSLOS
+(4) vieles/ZUSATZ1/ZUSATZ2 aber er ja in dem|Meer/ZUSATZ1 erlitt/ZUSATZ1/ZUSATZ2 Leiden/ZUSATZ1/ZUSATZ2 seinen nach Mut,/ZUSATZ1,
+(4) many|things/ENGL.|ZUSATZ1/ENGL.|ZUSATZ2/ENGL.|ZUSATZ3/ENGL.|ZUSATZ4/ENGL.|ZUSATZ5 but he indeed in the|sea/ENGL.|ZUSATZ1  suffered pains/ENGL.|ZUSATZ1 his|own through heart,/ENGL.|ZUSATZ1,
 (12) [Σιληνός]: αὐτὸς(Pr)(N) λαβὼν(AorS)(Akt)(N) ηὔθυνον(Imp)(Akt) ἀμφῆρες(Adj)(A) δόρυ(A),
 (12) [Σιληνός]: selbst genommen|habend richtete zweigriffigen Speer,
 (12i) [Σιληνός]: αὐτὸς(Pr)(N)(Sg) λαβὼν(AorS)(Akt)(N)(Part) ηὔθυνον(Imp)(Akt) ἀμφῆρες(Adj)(A) δόρυ(A)(SpezialTag),
@@ -48,7 +48,7 @@
 (13) [Σιληνός:] der|Räuber aufstachelte, damit geführt|würdest weit,
 (13i) [Σιληνός:] [λῃστῶν(G) ἐπῶρσεν(Aor)(Akt), ὡς(Kon) ὁδηθείης(Aor)(Pas)(Op) μακράν(Adv),
 (13i) [Σιληνός:] [der|Räuber aufstachelte, damit geführt|würdest weit,
-(500k) Beispiel für einen "Stellenkommentar", mit (Zeilennummer + k) im translinear.txt erzeugbar. Der Kommentar erscheint stets dort, wo er im translinear.txt platziert wird (unabhängig von der angegebenen Zeilennummer von 500). In Zeile 11 fehlen an 3 Wörtern Grammatiktags (vielleicht wurden sie gelöscht, weil sie nicht dargestellt werden sollten?). Folgen sind u.a. Farbverlust z.B. bei dem Nomen (Hera). Außerdem: würde man nun im Builder bei allen Konjunktionen die "Übersetzung ausblenden" angehakt haben, aber eine offensichtliche Konjunktion wie ἐπεὶ Zeile 11 trägt diesen Tag nicht, wird die Übersetzung nicht korrekt ausgeblendet. Zeile 11i demonstriert die verschiedenen Möglichkeiten im translinear.txt das Wort  Ἥρα zu taggen oder zu Färben. Durch die Symbole - (grün), + (blau), # (rot), $ (orange) und § (violett) können Wörter auch unabhängig von (und vor allem vorrangig vor) ihrer Tag-basierten Färbung gefärbt werden. Farben, die manuell mit - # + § $ gesetzt wurden, sind auch noch in schwarz-weiß Dokumenten sichtbar. Ἥρα(Pt) zeigt einen weiteren möglichen Trick: Wenn man sowieso alle Partikel ohne Tag, ohne Übersetzung und in schwarz darstellen möchte, kann man individuelle Wörter mit (Pt) taggen, die man ebenfalls so darstellen möchte. In den nun eingefügten Zeilen 1-3 ist die Straußlogik, vom zweisprachigen Ausgangsdokument ausgehend, eindrucksvoll demonstriert. Vorgehensweise: man und fügt im translinear.txt bei allen Wörtern, die "unzureichend" deutlich übersetzt wurden, über "/" einfach eine weitere Übersetzungszeile darunter ein. Es sind maximal 3 Wörter als Übersetzung für ein Wort erlaubt also Wort/Wort/Wort, wobei natürlich mit Tricks wie "Haus|Gebäude/Struktur|Konstrukt/Hütte|Wohnung|Lebensraum" auch noch mehr Bedeutungsnuancen untergebracht werden können. Über Symbole wie Klammern und Anführungszeichen, oder Kommentare wie "Hütte"/(hier:|Struktur) kommuniziert werden, dass diese Übersetzung vielleicht "spezieller Art" ist oder metaphorisch oder hier eine besondere Bedeutung hat (mit Pipes verstecken werden alle | bekanntlich unsichtbar). Zeile 4 zeigt den Effekt in einem 3-sprachigen Dokument als Ausgangsbasistext: hier kann die die deutsche Zeile (die 2.) jeweils mit / erweitert werden (wie man sieht nicht die 3. Zeile). Typische Fehler: In Zeile 12 ist der Sprechername nicht in der üblichen (aus der Umgebung erkennbaren) Weise dargestellt und erzeugt daher Fehler bei der Sprechererkennung. Zeile 12i enthält "selbst erfundene", nicht zulässige Tags (Part), (SpezialTag), (Sg). Zeile 13 hat alleinstehende Satzzeichen, die als "Wörter" erkannt werden können und die Wort-für-Wort Reihenfolge stören. Der Fix ist, sie mit den Wörtern OHNE Leerzeichen DIREKT zu verbinden (wie normale Punkte und Kommata auch normal verbunden sind), oder sie auch einfach zu löschen, falls sie falsch sind. Zeile 13i zeigt dies auf. Wenn man diese simplen Regeln beachtet, kann man so gut wie alle potentiellen Fehler beheben und das gewünschte Dokument in allen Farben und mit oder ohne alle Übersetzungen (und mit vielen Übersetzungen oder wenigen) zuverlässig und zügig erzeugen.
+(500k) Beispiel für einen "Stellenkommentar", mit (Zeilennummer + k) im translinear.txt erzeugbar. Der Kommentar erscheint stets dort, wo er im translinear.txt platziert wird (unabhängig von der angegebenen Zeilennummer von 500). In Zeile 11 fehlen an 3 Wörtern Grammatiktags (vielleicht wurden sie gelöscht, weil sie nicht dargestellt werden sollten?). Folgen sind u.a. Farbverlust z.B. bei dem Nomen (Hera). Außerdem: würde man nun im Builder bei allen Konjunktionen die "Übersetzung ausblenden" angehakt haben, aber eine offensichtliche Konjunktion wie ἐπεὶ Zeile 11 trägt diesen Tag nicht, wird die Übersetzung nicht korrekt ausgeblendet. Zeile 11i demonstriert die verschiedenen Möglichkeiten im translinear.txt das Wort  Ἥρα zu taggen oder zu Färben. Durch die Symbole - (grün), + (blau), # (rot), $ (orange) und § (violett) können Wörter auch unabhängig von (und vor allem vorrangig vor) ihrer Tag-basierten Färbung gefärbt werden. Farben, die manuell mit - # + § $ gesetzt wurden, sind auch noch in schwarz-weiß Dokumenten sichtbar. Ἥρα(Pt) zeigt einen weiteren möglichen Trick: Wenn man sowieso alle Partikel ohne Tag, ohne Übersetzung und in schwarz darstellen möchte, kann man individuelle Wörter mit (Pt) taggen, die man ebenfalls so darstellen möchte. In den nun eingefügten Zeilen 1-3 ist die Straußlogik, vom zweisprachigen Ausgangsdokument ausgehend, eindrucksvoll demonstriert. Vorgehensweise: man und fügt im translinear.txt bei allen Wörtern, die "unzureichend" deutlich übersetzt wurden, über "/" einfach eine weitere Übersetzung darunter ein. Es sind maximal 4 Wörter als Übersetzung für ein Wort erlaubt also Wort1/Wort2/Wort3/Wort4, wobei natürlich mit Tricks wie "Haus|Gebäude/Struktur|Konstrukt/Hütte|Wohnung|Lebensraum/Räumlichkeit" auch noch mehr Bedeutungsnuancen untergebracht werden können. Über Symbole wie Klammern und Anführungszeichen oder Kommentare wie "Hütte"/(hier:|Struktur) könnte kommuniziert werden, dass diese Übersetzung vielleicht "spezieller Art" ist oder metaphorisch oder hier eine besondere Bedeutung hat (mit Pipes verstecken werden alle | bekanntlich unsichtbar). Zeile 4 zeigt den Effekt in einem 3-sprachigen Dokument als Ausgangsbasistext: hier kann jede der beiden Zeilen wie gewünscht erweitert werden bis zu einem Maximum von 5 Wörtern untereinander in der Übersetzungszeile (mehr wird nicht im PDF sichtbar, auch wenn im translinear.txt mehr "gefordert" wird. Typische Fehler: In Zeile 12 ist der Sprechername nicht in der üblichen (aus der Umgebung erkennbaren) Weise dargestellt und erzeugt daher Fehler bei der Sprechererkennung. Zeile 12i enthält "selbst erfundene", nicht zulässige Tags (Part), (SpezialTag), (Sg). Zeile 13 hat alleinstehende Satzzeichen, die als "Wörter" erkannt werden können und die Wort-für-Wort Reihenfolge stören. Der Fix ist, sie mit den Wörtern OHNE Leerzeichen DIREKT zu verbinden (wie normale Punkte und Kommata auch normal verbunden sind), oder sie auch einfach zu löschen, falls sie falsch sind. Zeile 13i zeigt dies auf. Wenn man diese simplen Regeln beachtet, kann man so gut wie alle potentiellen Fehler beheben und das gewünschte Dokument in allen Farben und mit oder ohne alle Übersetzungen (und mit vielen Übersetzungen oder wenigen) zuverlässig und zügig erzeugen.
 === Teil 3: weitere Besonderheiten ===
 (14) [Λυσιστράτη:] -πλὴν(Kon) -ἥ(Pr)(N) -γʼ(Pt) -ἐμὴ(Adj)(N) -κωμῆτις(N) -ἥδʼ(Pr)(N) -ἐξέρχεται(Prä)(M/P).
 (14) [Λυσιστράτη:] ausgenommen sie doch meine Mitbürgerin diese|hier tritt|hinaus.
@@ -80,12 +80,12 @@
 (19e) [Καρίων:] der|Trockenfeigen
 (20) [Χρεμύλος:] φιλοτιμίας(G)
 (20) [Χρεμύλος:] der|Ehrsucht
-(20b) [Καρίων:] μάζης(G)
-(20b) [Καρίων:] der|Gerstenkuchen
-(20c) [Χρεμύλος:] στρατηγίας(G)
-(20c) [Χρεμύλος:] der|Feldherrnwürde
-(20d) [Καρίων:] φακῆς(G)·
-(20d) [Καρίων:] der|Linse·
+(20a) [Καρίων:] μάζης(G)
+(20a) [Καρίων:] der|Gerstenkuchen
+(20b) [Χρεμύλος:] στρατηγίας(G)
+(20b) [Χρεμύλος:] der|Feldherrnwürde
+(20c) [Καρίων:] φακῆς(G)·
+(20c) [Καρίων:] der|Linse·
 (18i) [Χρεμύλος:] ἔρωτος(G)
 (18i) [Χρεμύλος:] der|Liebe
 (19i) [Καρίων:] ἄρτων(G)
@@ -94,22 +94,10 @@
 (20i) [Χρεμύλος:] der|Musik
 (21i) [Καρίων:] τραγημάτων(G)
 (21i) [Καρίων:] der|Süßspeisen
-(22i) [Χρεμύλος:]τιμῆς(G)
+(22i) [Χρεμύλος:] τιμῆς(G)
 (22i) [Χρεμύλος:] der|Ehre
-(23i) [Καρίων:] πλακούντων(G)
+(23i) [Καρίων:]πλακούντων(G)
 (23i) [Καρίων:] der|Kuchen
-(24i) [Χρεμύλος:] ἀνδραγαθίας(G)
-(24i) [Χρεμύλος:] der|Tapferkeit
-(25i) [Καρίων:] ἰσχάδων(G)
-(25i) [Καρίων:] der|Trockenfeigen
-(26i) [Χρεμύλος:] φιλοτιμίας(G)
-(26i) [Χρεμύλος:] der|Ehrsucht
-(27i) [Καρίων:] μάζης(G)
-(27i) [Καρίων:] der|Gerstenkuchen
-(28i) [Χρεμύλος:] στρατηγίας(G)
-(28i) [Χρεμύλος:] der|Feldherrnwürde
-(29i) [Καρίων:] φακῆς(G)·
-(29i) [Καρίων:] der|Linse·
 (777i) [Ὀδυσσεύς:] μῆνιν(A) ἄειδε(Prä)(Akt)(Imv) θεὰ(V) Πηληϊάδεω(G) Ἀχιλῆος(G)
 (777i) [Ὀδυσσεύς:] Zorn sing Göttin des|Peleus|Sohnes des|Achilleus
 (777i) [Ὀδυσσεύς:] οὐλομένην(Adj)(A), ἣ(Pr)(N) μυρίʼ(Adj)(A) Ἀχαιοῖς(D) ἄλγεʼ(A) ἔθηκε(AorS)(Akt),
@@ -118,7 +106,7 @@
 (333) [Καλονίκη:] Zorn sing Göttin des|Peleus|Sohnes des|Achilleus
 (333) [Καλονίκη:] οὐλομένην(Adj)(A), ἣ(Pr)(N) μυρίʼ(Adj)(A) Ἀχαιοῖς(D) ἄλγεʼ(A) ἔθηκε(AorS)(Akt),
 (333) [Καλονίκη:] verderblich, die unzählige den|Achaiern Schmerzen setzte,
-(29-777k) Dritter Kommentar: Zeile 14 zeigt nochmal die Farblogik. Zeile 15 zeigt Farben durch Farb-Kürzel und ohne Tags. In Zeile 17 zeigt sich, dass wenn ein Farbkürzel an ein Wort in der Übersetzungszeile gesetzt wird, nur dieses eine Wort farbig wird (und seine manuell gesetze Färbung stets Vorrang vor allgemeinen Einstellungen hat). Zeile 15, 15b und 15c (entnommen aus Lysistrate) demonstrieren die "a b c d e f g" Zeilen Logik in Poesie Buildern (tritt vor allem bei gr. Komödien auf): Zeile 15a beginnt erst dort, wo Zeile 15 aufhört. So wird Ihre Zugehörigkeit zueinander deutlicher (die a b c d e Zeilen kommen stets aus dem Original-Perseus Text). Das selbe passiert mit Zeile 15b (die natürlich frei dazuerfunden ist). Ab Zeile 16 ist dieses auch an einem Plutos Ausschnitt gezeigt. Zeilen (18i) bis (29i) zeigen, wie man diese Darstellung umgehen könnte. Zeile (22i) zeigt einen weiteren subtilen typischen Fehler, wenn die Sprecherbox ungewollt mit dem Text verbunden ist. Zeilen (777i) und (333) demonstrieren, dass Poesie Zeilen stets dort stehen, wo sie platziert werden (unabhängig von der Zeilennummer) und sie zeigen den Renderprozess bei "Doppelzeilen" (also doppelt vorkommenden Doppelzeilen in diesem Fall, oder auch doppelt vorkommenden Dreifachzeilen in 3-sprachigen translinear.txt Dateien) und zeigen, wieso man auf diese Weise nicht sinnvoll zusätzlichen Text erzeugen kann und man in Poesie manchmal auf Insertionszeilen angewiesen ist. Bis zu 4 aufeinanderfolgende Translinearzeilen mit identischer Zeilennummer werden von der Straußlogik erfasst (Tags stets aus "Übersetzungszeilen" gelöscht). Hinweis: nutzbar wäre dies z.B. um 10 Passagen aus 10 Ilias Gesängen in ein translinear.txt zu kopieren und sie durch Gedicht 1, Gedicht 2... abgetrennt nacheinander darzustellen, auch wenn sich die Zeilennummern kreuzen. Es könnten auch verschiedene Poesie Texte oder Passagen (wie in diesem Demonstrations.txt auch geschehen) so kombiniert werden.
+(14-777k) Dritter Kommentar: Zeile 14 zeigt nochmal die Farblogik. Zeile 15 zeigt Farben durch Farb-Kürzel und ohne Tags. In Zeile 17 zeigt sich, dass wenn ein Farbkürzel an ein Wort in der Übersetzungszeile gesetzt wird, nur dieses eine Wort farbig wird (und seine manuell gesetze Färbung stets Vorrang vor allgemeinen Farbeinstellung hat und auch im BlackWhite sichtbar ist). Zeile 15, 15b und 15c (entnommen aus Lysistrate) demonstrieren die "a b c d e f g" Zeilen Logik in Poesie Buildern (tritt vor allem bei gr. Komödien auf): Zeile 15a beginnt erst dort, wo Zeile 15 aufhört. So wird Ihre Zugehörigkeit zueinander deutlicher (die a b c d e Zeilen kommen stets aus dem Original-Perseus Text). Das selbe passiert mit Zeile 15b (die natürlich frei dazuerfunden ist). Ab Zeile 16 ist dieses auch an einem Plutos Ausschnitt gezeigt. Zeilen (18i) bis (23i) zeigen, wie man diese Darstellung umgehen könnte. Zeile (23i) zeigt einen weiteren im translinear.txt subtilen und im PDF deutlichen Fehler, wenn die Sprecherbox ungewollt mit dem Text verbunden ist. Zeilen (777i) und (333) demonstrieren, dass Poesie Zeilen stets dort stehen, wo sie platziert werden (unabhängig von der Zeilennummer) und sie zeigen den Renderprozess bei "Doppelzeilen" (also doppelt vorkommenden Doppelzeilen in diesem Fall, oder auch doppelt vorkommenden Dreifachzeilen in 3-sprachigen translinear.txt Dateien) und zeigen, wieso man auf diese Weise nicht sinnvoll zusätzlichen Text erzeugen kann und man in Poesie manchmal auf Insertionszeilen angewiesen ist. Bis zu 4 aufeinanderfolgende Translinearzeilen mit identischer Zeilennummer werden von der Straußlogik erfasst (Tags stets aus "Übersetzungszeilen" gelöscht). Hinweis: nutzbar wäre dies z.B. um 10 Passagen aus 10 Ilias Gesängen in ein translinear.txt zu kopieren und sie durch Gedicht 1, Gedicht 2... abgetrennt nacheinander darzustellen, auch wenn sich die Zeilennummern kreuzen. Es könnten auch verschiedene Poesie Texte oder Passagen (wie in diesem Demonstrations.txt auch geschehen) so kombiniert werden.
 ==== Der peloponnesische Krieg 1 ====
 === Demonstration ===
 == Teil 4: Prosabereich ==
