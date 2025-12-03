@@ -2588,7 +2588,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 next_has_lead = False
                 
                 # Kontext-Übergabe für Schieberegler
-                next_tok_starts_bar = False
+                next_tok_starts_with_bar = False  # FIX: Variable muss korrekt heißen!
                 if idx_in_slice is not None and idx_in_slice < (len(slice_gr) - 1):
                     nxt = slice_gr[idx_in_slice + 1]
                     # WICHTIG: Auch für next_token die Tags entfernen
