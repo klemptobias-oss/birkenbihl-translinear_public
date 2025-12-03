@@ -2011,7 +2011,10 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                           line_comment_colors: dict = None,
                           hide_pipes: bool = False,
                           block: dict = None,
-                          hide_trans_flags: list[bool] = None):  # NEU: HideTrans-Flags
+                          hide_trans_flags: list[bool] = None,  # NEU: HideTrans-Flags
+                          de_tokens_alternatives: list[list[str]] = None,  # NEU: Alternative Übersetzungen
+                          en_tokens_alternatives: list[list[str]] = None,
+                          trans3_tokens_alternatives: list[list[str]] = None):
     """
     Erstellt die Tabellen für ein Verspaar (pair/flow).
     WICHTIG: Spaltenbreiten müssen NACH dem Tag-Entfernen berechnet werden!
@@ -2019,11 +2022,47 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     hide_trans_flags: Optional[List[bool]]
         Parallel-Liste zu gr_tokens. True wenn Token (HideTrans) hatte.
         Diese Flags werden VOR dem Preprocessing extrahiert, damit sie verfügbar sind.
+    
+    de_tokens_alternatives, en_tokens_alternatives, trans3_tokens_alternatives: Optional[List[List[str]]]
+        Alternative Übersetzungen (BEDEUTUNGS-STRAUß durch `/` erzeugt).
+        Wenn angegeben, werden ALLE Alternativen in EINER Tabelle gerendert (eng untereinander).
+        de_tokens/en_tokens/trans3_tokens werden dann ignoriert!
     """
     
     # Standardwerte setzen falls nicht übergeben
     if doc_width_pt is None:
         doc_width_pt = A4[0] - 40*MM
+    
+    # ═══════════════════════════════════════════════════════════════════
+    # NEU: BEDEUTUNGS-STRAUß - Alternative Übersetzungen verarbeiten
+    # ═══════════════════════════════════════════════════════════════════
+    # Wenn *_tokens_alternatives angegeben sind, verwende diese statt einzelner Tokens
+    # Konvertiere sie in Listen von Alternativen für die spätere Verarbeitung
+    if de_tokens_alternatives is not None:
+        # Verwende Alternativen - ignoriere de_tokens
+        pass
+    else:
+        # Keine Alternativen - verwende normale de_tokens als einzige Alternative
+        if de_tokens is None:
+            de_tokens_alternatives = [[]]
+        else:
+            de_tokens_alternatives = [de_tokens]
+    
+    if en_tokens_alternatives is not None:
+        pass
+    else:
+        if en_tokens is None:
+            en_tokens_alternatives = [[]]
+        else:
+            en_tokens_alternatives = [en_tokens]
+    
+    if trans3_tokens_alternatives is not None:
+        pass
+    else:
+        if trans3_tokens is None:
+            trans3_tokens_alternatives = [[]]
+        else:
+            trans3_tokens_alternatives = [trans3_tokens]
     
     # Effektive cfg abhängig von meter_on (Versmaß an/aus) und tag_mode
     eff_cfg = dict(CFG)
@@ -2047,34 +2086,59 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL_NOTAG
 
     # WICHTIG: Spaltenlängen angleichen (zeilengetreu) - MUSS VOR der widths-Berechnung kommen!
-    if en_tokens is None:
-        en_tokens = []
-    if de_tokens is None:
-        de_tokens = []
-    if trans3_tokens is None:  # NEU: Dritte Übersetzung
-        trans3_tokens = []
+    # Bei Alternativen: Berechne maximale Spaltenanzahl über ALLE Alternativen
+    gr = gr_tokens[:]
     
-    # WICHTIG: Wenn KEINE Übersetzungen vorhanden sind, zeige nur die griechische Zeile
-    # ABER: Bei `/`-Alternativen können gr_tokens leer sein (nur Übersetzungen!)
-    # Prüfe mit any() ob irgendein Token nicht-leer ist (nicht nur ob Liste leer ist!)
-    cols = max(len(gr_tokens), len(de_tokens), len(en_tokens), len(trans3_tokens))
+    # Konvertiere Alternativen zu einheitlicher Liste
+    cols = len(gr)
+    for de_alt in de_tokens_alternatives:
+        cols = max(cols, len(de_alt))
+    for en_alt in en_tokens_alternatives:
+        cols = max(cols, len(en_alt))
+    for trans3_alt in trans3_tokens_alternatives:
+        cols = max(cols, len(trans3_alt))
     
     if cols == 0:
         # Komplett leerer Block - rendere nichts
         return []
     
+    # Passe GR-Zeile an Spaltenlänge an
     gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
-    de = de_tokens[:] + [''] * (cols - len(de_tokens))
-    en = en_tokens[:] + [''] * (cols - len(en_tokens))
-    trans3 = trans3_tokens[:] + [''] * (cols - len(trans3_tokens))  # NEU: Dritte Übersetzung
+    
+    # Passe ALLE Alternativen an Spaltenlänge an
+    de_lines = [alt[:] + [''] * (cols - len(alt)) for alt in de_tokens_alternatives]
+    en_lines = [alt[:] + [''] * (cols - len(alt)) for alt in en_tokens_alternatives]
+    trans3_lines = [alt[:] + [''] * (cols - len(alt)) for alt in trans3_tokens_alternatives]
+    
+    # Für Kompatibilität: Verwende erste Alternative als de/en/trans3
+    # (wird für Breitenberechnung benötigt)
+    de = de_lines[0] if de_lines else []
+    en = en_lines[0] if en_lines else []
+    trans3 = trans3_lines[0] if trans3_lines else []
 
     # Spaltenbreiten berechnen - KRITISCH: Bei NO_TAGS muss Breite OHNE Tags berechnet werden!
     widths = []
     for k in range(cols):
         gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
-        de_token = de[k] if (k < len(de) and de[k]) else ''  # WICHTIG: Hier definieren!
-        en_token = en[k] if (k < len(en) and en[k]) else ''  # WICHTIG: Hier definieren!
-        trans3_token = trans3[k] if (k < len(trans3) and trans3[k]) else ''  # NEU: Dritte Übersetzung
+        
+        # Berechne maximale Breite über ALLE Alternativen für diese Spalte
+        de_token = ''
+        for de_line in de_lines:
+            if k < len(de_line) and de_line[k]:
+                if len(de_line[k]) > len(de_token):
+                    de_token = de_line[k]
+        
+        en_token = ''
+        for en_line in en_lines:
+            if k < len(en_line) and en_line[k]:
+                if len(en_line[k]) > len(en_token):
+                    en_token = en_line[k]
+        
+        trans3_token = ''
+        for trans3_line in trans3_lines:
+            if k < len(trans3_line) and trans3_line[k]:
+                if len(trans3_line[k]) > len(trans3_token):
+                    trans3_token = trans3_line[k]
         
         if gr_token:
             # KRITISCH: Prüfe ob dieses Token Tags HAT (die bei NO_TAGS entfernt werden)
@@ -2455,6 +2519,58 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         if has_visible_de:
             table_rows.append(row_de)
         
+        # ═══════════════════════════════════════════════════════════════════
+        # NEU: BEDEUTUNGS-STRAUß - Zusätzliche Übersetzungsalternativen
+        # Füge zusätzliche DE-Zeilen hinzu für Alternativen 1, 2, 3, ...
+        # Diese werden ENG unter der ersten DE-Zeile platziert (wie EN unter DE)
+        # ═══════════════════════════════════════════════════════════════════
+        if len(de_lines) > 1:
+            # Es gibt Alternativen! Rendere sie alle
+            for alt_idx in range(1, len(de_lines)):
+                de_alt = de_lines[alt_idx]
+                slice_de_alt = de_alt[i:j]
+                
+                # Baue Zellen für diese Alternative
+                de_alt_cells = []
+                for idx, t in enumerate(slice_de_alt):
+                    should_hide_trans = hide_trans_flags[idx] if idx < len(hide_trans_flags) else False
+                    
+                    if not t or should_hide_trans:
+                        de_alt_cells.append(Paragraph('', token_de_style))
+                    else:
+                        t_processed = process_translation_token_poesie(t)
+                        
+                        # Farbsymbol aus token_meta
+                        color_symbol = None
+                        global_idx = i + idx
+                        token_meta = block.get('token_meta', [])
+                        if global_idx < len(token_meta):
+                            meta = token_meta[global_idx]
+                            color_symbol = meta.get('color_symbol')
+                        
+                        token_has_symbol = color_symbol and color_symbol in t_processed
+                        
+                        if color_symbol and not token_has_symbol:
+                            t_with_color = color_symbol + t_processed
+                        else:
+                            t_with_color = t_processed
+                        
+                        de_html = format_token_markup(t_with_color, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
+                        de_meas = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
+                        de_width = slice_w[idx]
+                        de_html_centered = center_word_in_width(de_html, de_meas, de_width, token_de_style.fontName, token_de_style.fontSize)
+                        de_alt_cells.append(Paragraph(de_html_centered, token_de_style))
+                
+                # Baue Zeile für diese Alternative (ohne Zeilennummer/Sprecher)
+                num_para_de_alt = _p('\u00A0', num_style)
+                num_gap_de_alt = _p('', token_de_style)
+                sp_para_de_alt = _p('', style_speaker)
+                sp_gap_de_alt = _p('', token_de_style)
+                indent_de_alt = _p('', token_de_style)
+                
+                row_de_alt = [num_para_de_alt, num_gap_de_alt, sp_para_de_alt, sp_gap_de_alt, indent_de_alt] + de_alt_cells
+                table_rows.append(row_de_alt)
+        
         if has_visible_en:
             row_en = [num_para_en, num_gap_en, sp_para_en, sp_gap_en, indent_en] + en_cells
             table_rows.append(row_en)
@@ -2499,12 +2615,28 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             if has_visible_de or has_visible_en:
                 style_list.append(('BOTTOMPADDING', (0,0), (-1,0), gap_ancient_to_modern/2.0))
                 style_list.append(('TOPPADDING',    (0,1), (-1,1), gap_ancient_to_modern/2.0))
+            
+            # ═══════════════════════════════════════════════════════════════════
+            # NEU: BEDEUTUNGS-STRAUß - Padding zwischen Übersetzungsalternativen
+            # Alternativen sollen ENG untereinander stehen (wie EN unter DE)
+            # ═══════════════════════════════════════════════════════════════════
+            num_de_alternatives = len(de_lines)
+            if num_de_alternatives > 1:
+                # Erste DE-Zeile ist an Index 1, weitere Alternativen folgen
+                for alt_idx in range(1, num_de_alternatives):
+                    row_idx = 1 + alt_idx  # Index der Alternative in table_rows
+                    # MINIMALES Padding zwischen DE-Alternativen (wie DE zu EN)
+                    style_list.append(('BOTTOMPADDING', (0,row_idx-1), (-1,row_idx-1), gap_de_to_en))
+                    style_list.append(('TOPPADDING',    (0,row_idx), (-1,row_idx), gap_de_to_en))
+            
             # NEU: Für 3-sprachige Texte: Padding zwischen Zeilen
-            # Zeile 1 (GR) und Zeile 2 (DE): normaler Abstand (siehe oben)
-            # Zeile 2 (DE) und Zeile 3 (EN): SEHR MINIMAL, fast direkt untereinander
-            if has_visible_en:
-                style_list.append(('BOTTOMPADDING', (0,1), (-1,1), gap_de_to_en))
-                style_list.append(('TOPPADDING',    (0,2), (-1,2), gap_de_to_en))
+            # Berechne Index von EN-Zeile (kommt nach allen DE-Alternativen)
+            en_row_idx = 1 + num_de_alternatives if has_visible_en else None
+            if has_visible_en and en_row_idx:
+                # Abstand zwischen letzter DE-Alternative und EN
+                style_list.append(('BOTTOMPADDING', (0,en_row_idx-1), (-1,en_row_idx-1), gap_de_to_en))
+                style_list.append(('TOPPADDING',    (0,en_row_idx), (-1,en_row_idx), gap_de_to_en))
+            
             tbl.setStyle(TableStyle(style_list))
         else:
             # Nicht-Versmaß: bisheriges Padding-Verhalten
@@ -2528,12 +2660,28 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             if has_visible_de or has_visible_en:
                 style_list.append(('BOTTOMPADDING', (0,0), (-1,0), gap_ancient_to_modern/2.0))
                 style_list.append(('TOPPADDING',    (0,1), (-1,1), gap_ancient_to_modern/2.0))
+            
+            # ═══════════════════════════════════════════════════════════════════
+            # NEU: BEDEUTUNGS-STRAUß - Padding zwischen Übersetzungsalternativen
+            # Alternativen sollen ENG untereinander stehen (wie EN unter DE)
+            # ═══════════════════════════════════════════════════════════════════
+            num_de_alternatives = len(de_lines)
+            if num_de_alternatives > 1:
+                # Erste DE-Zeile ist an Index 1, weitere Alternativen folgen
+                for alt_idx in range(1, num_de_alternatives):
+                    row_idx = 1 + alt_idx  # Index der Alternative in table_rows
+                    # MINIMALES Padding zwischen DE-Alternativen (wie DE zu EN)
+                    style_list.append(('BOTTOMPADDING', (0,row_idx-1), (-1,row_idx-1), gap_de_to_en))
+                    style_list.append(('TOPPADDING',    (0,row_idx), (-1,row_idx), gap_de_to_en))
+            
             # NEU: Für 3-sprachige Texte: Padding zwischen Zeilen
-            # Zeile 1 (GR) und Zeile 2 (DE): normaler Abstand (siehe oben)
-            # Zeile 2 (DE) und Zeile 3 (EN): SEHR MINIMAL, fast direkt untereinander
-            if has_visible_en:
-                style_list.append(('BOTTOMPADDING', (0,1), (-1,1), gap_de_to_en))
-                style_list.append(('TOPPADDING',    (0,2), (-1,2), gap_de_to_en))
+            # Berechne Index von EN-Zeile (kommt nach allen DE-Alternativen)
+            en_row_idx = 1 + num_de_alternatives if has_visible_en else None
+            if has_visible_en and en_row_idx:
+                # Abstand zwischen letzter DE-Alternative und EN
+                style_list.append(('BOTTOMPADDING', (0,en_row_idx-1), (-1,en_row_idx-1), gap_de_to_en))
+                style_list.append(('TOPPADDING',    (0,en_row_idx), (-1,en_row_idx), gap_de_to_en))
+            
             tbl.setStyle(TableStyle(style_list))
         tables.append(tbl)
         first_slice, i = False, j
@@ -2952,47 +3100,38 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     # Sprecher-Breite wurde bereits oben berechnet (für Indent-Berechnung)
 
                     # ═══════════════════════════════════════════════════════════════════
-                    # NEU: Rendere ALLE Alternativen (durch `/` erzeugt)
+                    # NEU: Rendere ALLE Alternativen (durch `/` erzeugt) in EINER Tabelle
+                    # Übergebe *_tokens_alternatives Listen, nicht einzelne Alternativen!
                     # ═══════════════════════════════════════════════════════════════════
-                    max_alternatives = max(
-                        len(next_de_tokens_alternatives),
-                        len(next_en_tokens_alternatives),
-                        len(next_trans3_tokens_alternatives)
+                    next_tables = build_tables_for_pair(
+                        next_gr_tokens,  # GR-Zeile nur einmal
+                        de_tokens=None,  # Verwende Alternativen!
+                        speaker=next_display_speaker,  # Sprecher nur bei erster Alternative!
+                        line_label=next_line_label,  # Zeilennummer nur bei erster Alternative!
+                        doc_width_pt=frame_w,
+                        token_gr_style=token_gr, token_de_style=token_de,
+                        num_style=num_style, style_speaker=style_speaker,
+                        gr_bold=gr_bold,
+                        reserve_speaker_col=reserve_all_speakers,
+                        indent_pt=next_indent_pt,
+                        global_speaker_width_pt=next_current_speaker_width_pt,
+                        meter_on=versmass_display and next_has_versmass,
+                        tag_mode=tag_mode,
+                        en_tokens=None,  # Verwende Alternativen!
+                        trans3_tokens=None,  # Verwende Alternativen!
+                        de_tokens_alternatives=next_de_tokens_alternatives,  # NEU!
+                        en_tokens_alternatives=next_en_tokens_alternatives,  # NEU!
+                        trans3_tokens_alternatives=next_trans3_tokens_alternatives,  # NEU!
+                        tag_config=tag_config,
+                        base_line_num=next_base_num,
+                        line_comment_colors=line_comment_colors,
+                        hide_pipes=hide_pipes,
+                        block=pair_b,
+                        hide_trans_flags=pair_b.get('hide_trans_flags', [])
                     )
-                    
-                    for alt_idx in range(max_alternatives):
-                        next_de_tokens = next_de_tokens_alternatives[alt_idx][:] if alt_idx < len(next_de_tokens_alternatives) else []
-                        next_en_tokens = next_en_tokens_alternatives[alt_idx] if alt_idx < len(next_en_tokens_alternatives) else []
-                        next_trans3_tokens = next_trans3_tokens_alternatives[alt_idx] if alt_idx < len(next_trans3_tokens_alternatives) else []
-                        
-                        # WICHTIG: Griechische Zeile nur bei der ERSTEN Alternative anzeigen!
-                        next_gr_tokens_for_alt = next_gr_tokens if alt_idx == 0 else []
 
-                        next_tables = build_tables_for_pair(
-                            next_gr_tokens_for_alt, next_de_tokens,
-                            speaker=next_display_speaker if alt_idx == 0 else '',  # Sprecher nur bei erster Alternative!
-                            line_label=next_line_label if alt_idx == 0 else '',  # Zeilennummer nur bei erster Alternative!
-                            doc_width_pt=frame_w,
-                            token_gr_style=token_gr, token_de_style=token_de,
-                            num_style=num_style, style_speaker=style_speaker,
-                            gr_bold=gr_bold,
-                            reserve_speaker_col=reserve_all_speakers,
-                            indent_pt=next_indent_pt,
-                            global_speaker_width_pt=next_current_speaker_width_pt,
-                            meter_on=versmass_display and next_has_versmass,
-                            tag_mode=tag_mode,  # WICHTIG: tag_mode übergeben für korrekte Tag-Entfernung
-                            en_tokens=next_en_tokens,
-                            trans3_tokens=next_trans3_tokens,  # NEU: Dritte Übersetzung
-                            tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
-                            base_line_num=next_base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
-                            line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
-                            hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
-                            block=pair_b,  # NEU: Block-Objekt für comment_token_mask
-                            hide_trans_flags=pair_b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags
-                        )
-
-                        # Sammle die Zeilen
-                        rendered_lines.append(KeepTogether(next_tables))
+                    # Sammle die Zeilen
+                    rendered_lines.append(KeepTogether(next_tables))
 
                     # ═══════════════════════════════════════════════════════════════════
                     # KUMULATIVE BREITEN-SPEICHERUNG (siehe ~Zeile 3040 für Details)
@@ -3168,65 +3307,36 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             # Sprecher-Breite wurde bereits oben berechnet (für Indent-Berechnung)
 
             # ═══════════════════════════════════════════════════════════════════════════
-            # NEU: Rendere ALLE Alternativen (durch `/` erzeugt)
-            # Die griechische Zeile wird nur EINMAL gerendert, dann folgen die Alternativen
+            # NEU: Rendere ALLE Alternativen (durch `/` erzeugt) in EINER Tabelle
+            # Übergebe *_tokens_alternatives Listen, nicht einzelne Alternativen!
             # ═══════════════════════════════════════════════════════════════════════════
-            max_alternatives = max(
-                len(de_tokens_alternatives),
-                len(en_tokens_alternatives),
-                len(trans3_tokens_alternatives)
+            tables = build_tables_for_pair(
+                gr_tokens,  # GR-Zeile nur einmal
+                de_tokens=None,  # Verwende Alternativen!
+                indent_pt=indent_pt,
+                global_speaker_width_pt=current_speaker_width_pt,
+                meter_on=(versmass_display and has_versmass),
+                tag_mode=tag_mode,
+                speaker=display_speaker,
+                line_label=line_label,
+                doc_width_pt=frame_w,
+                token_gr_style=token_gr, token_de_style=token_de,
+                num_style=num_style, style_speaker=style_speaker,
+                gr_bold=gr_bold,
+                reserve_speaker_col=reserve_all_speakers,
+                en_tokens=None,  # Verwende Alternativen!
+                trans3_tokens=None,  # Verwende Alternativen!
+                de_tokens_alternatives=de_tokens_alternatives,  # NEU!
+                en_tokens_alternatives=en_tokens_alternatives,  # NEU!
+                trans3_tokens_alternatives=trans3_tokens_alternatives,  # NEU!
+                tag_config=tag_config,
+                base_line_num=base_num,
+                line_comment_colors=line_comment_colors,
+                hide_pipes=hide_pipes,
+                block=b,
+                hide_trans_flags=b.get('hide_trans_flags', [])
             )
-            
-            # DEBUG: Log für Slash-Feature
-            import logging
-            logger = logging.getLogger(__name__)
-            logger.info(f"[SLASH-DEBUG] Block mit {max_alternatives} Alternativen (gr_tokens={len(gr_tokens)} tokens)")
-            
-            for alt_idx in range(max_alternatives):
-                # Hole die Token-Arrays für diese Alternative
-                de_tokens = de_tokens_alternatives[alt_idx][:] if alt_idx < len(de_tokens_alternatives) else []
-                en_tokens = en_tokens_alternatives[alt_idx] if alt_idx < len(en_tokens_alternatives) else []
-                trans3_tokens = trans3_tokens_alternatives[alt_idx] if alt_idx < len(trans3_tokens_alternatives) else []
-                
-                # WICHTIG: Griechische Zeile nur bei der ERSTEN Alternative anzeigen!
-                # Bei weiteren Alternativen wird ein leeres Array übergeben
-                gr_tokens_for_this_alt = gr_tokens if alt_idx == 0 else []
-                
-                logger.info(f"[SLASH-DEBUG]   Alternative {alt_idx}: gr={len(gr_tokens_for_this_alt)} de={len(de_tokens)} tokens")
-
-                tables = build_tables_for_pair(
-                    gr_tokens_for_this_alt, de_tokens,
-                    speaker=display_speaker if alt_idx == 0 else '',  # Sprecher nur bei erster Alternative!
-                    line_label=line_label if alt_idx == 0 else '',  # Zeilennummer nur bei erster Alternative!
-                    doc_width_pt=frame_w,
-                    token_gr_style=token_gr, token_de_style=token_de, num_style=num_style, style_speaker=style_speaker,
-                    gr_bold=gr_bold,
-                    reserve_speaker_col=reserve_all_speakers,
-                    indent_pt=indent_pt,
-                    global_speaker_width_pt=current_speaker_width_pt,  # Verwende aktuelle Breite!
-                    meter_on=versmass_display and has_versmass,
-                    tag_mode=tag_mode,  # WICHTIG: tag_mode übergeben für korrekte Tag-Entfernung
-                    en_tokens=en_tokens,
-                    trans3_tokens=trans3_tokens,  # NEU: Dritte Übersetzung
-                    tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
-                    base_line_num=base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
-                    line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
-                    hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
-                    block=b,  # NEU: Block-Objekt für comment_token_mask
-                    hide_trans_flags=b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags
-                )
-                
-                logger.info(f"[SLASH-DEBUG]     → build_tables_for_pair returned {len(tables)} tables")
-                
-                # WICHTIG: Alle Tabellen eines Paares/Triplikats zusammenhalten
-                # (verhindert, dass GR/DE/EN über Seitenumbrüche getrennt werden)
-                elements.append(KeepTogether(tables))
-                logger.info(f"[SLASH-DEBUG]     → appended to elements")
-            
-            # ═══════════════════════════════════════════════════════════════════════════
-            # NACH DER ALTERNATIVEN-SCHLEIFE: Kommentare, Abstände, kumulative Breiten
-            # Diese Operationen erfolgen NUR EINMAL pro Block (nicht pro Alternative!)
-            # ═══════════════════════════════════════════════════════════════════════════
+            elements.extend(tables)
             
             # Verwende de_tokens von der ERSTEN Alternative für kumulative Breitenberechnung
             de_tokens = de_tokens_alternatives[0] if de_tokens_alternatives else []
