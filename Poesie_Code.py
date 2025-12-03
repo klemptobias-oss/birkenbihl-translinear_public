@@ -957,6 +957,18 @@ class ToplineTokenFlowable(Flowable):
                 if en in ends_before_bar_indices:
                     x1_draw += METER_ADJUST_LEFT_PT
                 
+                # ═══════════════════════════════════════════════════════════════════
+                # FIX: Lücke bei führendem | im nächsten Token schließen
+                # ═══════════════════════════════════════════════════════════════════
+                # PROBLEM: Wenn nächstes Token mit | beginnt, endet aktuelle Silbe
+                #          vor diesem | → Topline connected nicht perfekt zur Antenne
+                # LÖSUNG: Verlängere x1_draw um kleinen Wert nach rechts
+                # WANN: Nur für LETZTE Silbe (idx == num_segments - 1) UND
+                #       wenn nächstes Token mit | beginnt
+                if idx == num_segments - 1 and self.next_token_starts_with_bar:
+                    # Kleine Verlängerung um Lücke zur Antenne zu schließen
+                    x1_draw += 0.8  # pt - genug um Lücke zu schließen, nicht zu viel
+                
                 # Zeichne Linie oder Kurve
                 if kind == 'L':
                     c.line(x0_draw, y, x1_draw, y)
@@ -2444,6 +2456,23 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 # NEUE LOGIK: BEIDE PDF-Typen bekommen gleichen Puffer für Wörter ohne Tags!
                 # NoTag-PDFs sind jetzt das Vorbild für Wörter ohne Tags!
                 w_gr += max(token_gr_style.fontSize * 0.03, 0.8)  # ERHÖHT von 0.3pt auf 0.8pt für Tag-PDFs!
+            
+            # ═══════════════════════════════════════════════════════════════════
+            # FIX: Extra-Padding bei Versmaß für Tokens mit vielen Bars
+            # ═══════════════════════════════════════════════════════════════════
+            # PROBLEM: Bei Versmaß sind | unsichtbar (weiß), nehmen aber Platz ein
+            #          Tokens zwischen zwei | (z.B. |ἀλλοδα|ποῖσι) kleben zusammen
+            # URSACHE: visible_measure_token() addiert | zur Breite, aber visuell
+            #          sind sie unsichtbar → kein sichtbarer Abstand zum nächsten Wort
+            # LÖSUNG: Bei Versmaß: Füge extra Padding hinzu basierend auf | -Anzahl
+            #         Je mehr |, desto mehr extra Padding (kompensiert unsichtbare |)
+            if meter_on:
+                bar_count = gr_token.count('|')
+                if bar_count >= 2:
+                    # Token ist "eingeklammert" von | (z.B. |word| oder |wo|rd|)
+                    # Füge signifikantes Extra-Padding hinzu
+                    bar_width = _sw('|', token_gr_style.fontName, token_gr_style.fontSize)
+                    w_gr += bar_count * bar_width * 0.6  # 60% der Bar-Breite als Extra-Padding
         else:
             w_gr = 0.0
         
