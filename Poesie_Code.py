@@ -967,8 +967,8 @@ class ToplineTokenFlowable(Flowable):
                 #       wenn nächstes Token mit | beginnt
                 if idx == num_segments - 1 and self.next_token_starts_with_bar:
                     # Kleine Verlängerung um Lücke zur Antenne zu schließen
-                    # ANGEPASST: 0.8 → 0.5pt (war etwas zu viel, Wörter zu weit rechts)
-                    x1_draw += 0.5  # pt - genug um Lücke zu schließen, nicht zu viel
+                    # ANGEPASST: 0.8 → 0.5pt DANN NOCHMAL AUF 0.2pt !!! (war etwas zu viel, Wörter zu weit rechts)
+                    x1_draw += 0.2  # pt - genug um Lücke zu schließen, nicht zu viel
                 
                 # Zeichne Linie oder Kurve
                 if kind == 'L':
@@ -2598,6 +2598,20 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     next_has_lead = _has_leading_bar_local(nxt_cleaned)
                     next_tok_starts_with_bar = next_has_lead
 
+                # ZENTRIERUNG FÜR VERSMAS-TOKENS (bei NoTag-PDFs)
+                # ═══════════════════════════════════════════════════════════════════
+                # PROBLEM: Bei NoTag-PDFs werden Tags entfernt → Token ist schmaler
+                #          Aber Spaltenbreite wird MIT Tags berechnet → Token links in Spalte
+                # LÖSUNG: Wrap ToplineTokenFlowable in zentriertem Paragraph
+                #         (funktioniert NICHT direkt, daher anderer Ansatz)
+                # 
+                # AKTUELL: ToplineTokenFlowable rendert sich selbst OHNE Zentrierung
+                #          → Bei NoTag-PDFs stehen Wörter linksbündig
+                # 
+                # TODO: Implementiere Zentrierung für ToplineTokenFlowable
+                #       → Kompliziert, weil es Custom Flowable ist
+                #       → Einfacher: TableStyle mit 'ALIGN', 'CENTER' verwenden?
+                
                 return ToplineTokenFlowable(
                     tok_cleaned, token_gr_style, eff_cfg,
                     gr_bold=(gr_bold if is_gr else False),
@@ -2922,6 +2936,23 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 ('VALIGN',        (0,0), (-1,-1), 'BOTTOM'),
                 ('ALIGN',         (0,0), (0,-1), 'RIGHT'),  # Nummern rechts
                 ('ALIGN',         (1,0), (-1,-1), 'LEFT'),  # Rest links (wie im Epos)
+                # ═══════════════════════════════════════════════════════════════════
+                # FIX: ZENTRIERUNG für griechische Zeile in Versmaß-PDFs
+                # ═══════════════════════════════════════════════════════════════════
+                # PROBLEM: Bei NoTag-PDFs werden Tags entfernt → Token ist schmaler
+                #          Aber Spaltenbreite wurde MIT Tags berechnet → Token links in Spalte
+                # LÖSUNG: Zentriere alle Token-Spalten (ab Spalte 5) in der griechischen Zeile (row 0)
+                # 
+                # WARUM ab Spalte 5?
+                #   col_w = [num_w, num_gap, sp_w, sp_gap, indent_w] + slice_w
+                #   Spalten 0-4: Nummer, Gap, Sprecher, Gap, Indent
+                #   Spalten 5+: Die eigentlichen Token-Spalten
+                # 
+                # WANN GREIFT DAS?
+                #   - Immer bei Versmaß-PDFs (meter_on=True)
+                #   - Hilft vor allem bei NoTag-PDFs (Tags versteckt, Spalten zu breit)
+                #   - Bei Tag-PDFs schadet es nicht (Tokens füllen Spalte sowieso aus)
+                ('ALIGN',         (5,0), (-1,0), 'CENTER'),  # Token-Spalten in GR-Zeile zentrieren
             ]
             # NEU: Hinterlegung DEAKTIVIERT (Code bleibt erhalten)
             # if comment_color:
