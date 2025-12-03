@@ -2820,6 +2820,10 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             if base_num is not None and line_label and _is_staggered_label(line_label):
                 cum_width = cum_width_by_base.get(base_num, 0.0)
                 indent_pt = max(0.0, cum_width - current_speaker_width_pt)
+                # DEBUG: Zeige Berechnungen für gestaffelte Zeilen
+                print(f"DEBUG Gestaffelt: Zeile {line_label} (base={base_num})")
+                print(f"  cum_width={cum_width:.1f}pt, current_speaker_width={current_speaker_width_pt:.1f}pt")
+                print(f"  → indent={indent_pt:.1f}pt")
 
             # Prüfe auf Versmaß-Marker
             has_versmass = has_meter_markers(gr_tokens)
@@ -3004,9 +3008,18 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     # KRITISCH: Verwende current_speaker_width_pt (berechnet VOR dem Rendering)!
                     # Dies ist die GLEICHE Breite, die in build_tables_for_pair() verwendet wurde!
                     cum_width_by_base[base_num] = current_speaker_width_pt + this_token_w
+                    # DEBUG:
+                    print(f"DEBUG BASIS: Zeile {line_label} (base={base_num})")
+                    print(f"  speaker_width={current_speaker_width_pt:.1f}pt, token_width={this_token_w:.1f}pt")
+                    print(f"  → cum_width={cum_width_by_base[base_num]:.1f}pt")
                 else:
                     # Gestaffelte Zeile: Addiere nur Token-Breite (Sprecher ist unterschiedlich!)
-                    cum_width_by_base[base_num] = cum_width_by_base.get(base_num, 0.0) + this_token_w
+                    old_cum = cum_width_by_base.get(base_num, 0.0)
+                    cum_width_by_base[base_num] = old_cum + this_token_w
+                    # DEBUG:
+                    print(f"DEBUG Gestaffelt ADD: Zeile {line_label} (base={base_num})")
+                    print(f"  old_cum={old_cum:.1f}pt, token_width={this_token_w:.1f}pt")
+                    print(f"  → new_cum={cum_width_by_base[base_num]:.1f}pt")
 
             i += 1; continue
 
