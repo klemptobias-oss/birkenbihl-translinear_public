@@ -1196,14 +1196,36 @@ def format_token_markup(token:str, *, is_greek_row:bool, gr_bold:bool, remove_ba
     raw = (token or '').strip()
     if not raw: return ''
 
-    color = None; color_pos = -1
-    if '#' in raw: color_pos = raw.find('#'); color = '#FF0000'
-    elif '+' in raw: color_pos = raw.find('+'); color = '#1E90FF'
-    elif '-' in raw: color_pos = raw.find('-'); color = '#228B22'
-    elif '§' in raw: color_pos = raw.find('§'); color = '#9370DB'  # Sanftes Violett (wie Blumen) - Pendant zum sanften Blau
-    elif '$' in raw: color_pos = raw.find('$'); color = '#FFA500'  # Orange
-    if color_pos >= 0: raw = raw[:color_pos] + raw[color_pos+1:]
-    raw = raw.replace('~','')
+    # ═══════════════════════════════════════════════════════════════════
+    # FARBSYMBOL-ERKENNUNG: Nur das ERSTE Symbol bestimmt die Farbe!
+    # ═══════════════════════════════════════════════════════════════════
+    # WICHTIG: Nach dieser Erkennung werden ALLE Symbole entfernt!
+    #
+    # WARUM NUR ERSTES?
+    #   - Token sollte normalerweise nur EIN Symbol haben
+    #   - Falls mehrere (Bug): Nur erstes zählt (konsistent)
+    #
+    # BEISPIELE:
+    #   "#der"    → Rot,  entferne #  → "der"
+    #   "+ist"    → Blau, entferne +  → "ist"
+    #   "#-der"   → Rot,  entferne #- → "der"  (Bug-Fall, beide entfernen!)
+    
+    color = None
+    if '#' in raw:   color = '#FF0000'  # Rot
+    elif '+' in raw: color = '#1E90FF'  # Blau
+    elif '-' in raw: color = '#228B22'  # Grün
+    elif '§' in raw: color = '#9370DB'  # Violett
+    elif '$' in raw: color = '#FFA500'  # Orange
+    
+    # KRITISCH: Entferne ALLE Farbsymbole (nicht nur das erste!)
+    # WARUM? Nach Tetris-Kollabieren können mehrere Symbole vorhanden sein
+    # Beispiel: Token "-der" + token_meta "#" → "#-der" → beide entfernen!
+    # WICHTIG: ~ und * NICHT entfernen (werden später separat behandelt)
+    for symbol in ['#', '+', '-', '§', '$']:
+        raw = raw.replace(symbol, '')
+    
+    # ~ entfernen (kein Farbsymbol, nur Marker)
+    raw = raw.replace('~', '')
 
     m_endbars = re.search(r'\|+\s*$', raw)
     end_bar_count = len(m_endbars.group(0).strip()) if m_endbars else 0
@@ -2555,6 +2577,52 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 # idx_in_slice ist bei DE nicht gesetzt; nutze parallelen Index über enumerate weiter unten
                 return html_  # wird später im de_cells-Block zentriert
 
+        # ═══════════════════════════════════════════════════════════════════
+        # HILFSFUNKTION: Farbverarbeitung für Übersetzungs-Tokens
+        # ═══════════════════════════════════════════════════════════════════
+        # ZWECK: Entscheide ob manuelles oder automatisches Farbsymbol verwendet wird
+        #
+        # REGEL: Manuell gesetzte Symbole (#+-§$) haben VORRANG vor token_meta!
+        #
+        # WARUM?
+        #   - Nach Tetris-Kollabieren kann Token eigenes Symbol + token_meta haben
+        #   - Beispiel: Token "-der" + token_meta "#" → KONFLIKT!
+        #   - Lösung: Wenn Token manuelles Symbol hat, ignoriere token_meta
+        #   - Sonst: Füge token_meta-Symbol hinzu (automatische Färbung)
+        #
+        # RETURN: Token mit korrekt gesetztem Farbsymbol (genau EINS!)
+        
+        def apply_color_symbol(token_text: str, token_index: int, block: dict) -> str:
+            """
+            Wendet Farbsymbol auf Token an: Manuell hat Vorrang vor automatisch.
+            
+            Args:
+                token_text: Der Token-Text (möglicherweise mit manuellem Symbol)
+                token_index: Index des Tokens in der Zeile (für token_meta Lookup)
+                block: Der Block-Dict (enthält token_meta)
+            
+            Returns:
+                Token mit genau EINEM Farbsymbol (oder ohne wenn keine Färbung)
+            """
+            # Prüfe ob Token MANUELLES Symbol hat (#+-§$~*)
+            has_manual_color = any(sym in token_text for sym in ['#', '+', '-', '§', '$', '~', '*'])
+            
+            if has_manual_color:
+                # MANUELL gefärbt → nutze Token as-is (Symbol bereits vorhanden)
+                return token_text
+            else:
+                # NICHT manuell gefärbt → prüfe token_meta für automatische Färbung
+                token_meta = block.get('token_meta', [])
+                if token_index < len(token_meta):
+                    meta = token_meta[token_index]
+                    color_symbol = meta.get('color_symbol')
+                    if color_symbol:
+                        # Füge automatisches Symbol hinzu
+                        return color_symbol + token_text
+                
+                # Kein Symbol (weder manuell noch automatisch)
+                return token_text
+
         gr_cells = [cell(True,  t, k, global_idx=i+k) for k, t in enumerate(slice_gr)]
 
         # DE-Zellen mit gleicher Zentrierung wie im Epos
@@ -2583,26 +2651,9 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
                 t_processed = process_translation_token_poesie(t)
                 
-                # WICHTIG: Farbsymbol bestimmen aus token_meta (vom Builder ODER von preprocess.py gesetzt)
-                color_symbol = None
+                # Wende Farbsymbol an (manuell hat Vorrang!)
                 global_idx = i + idx
-                token_meta = block.get('token_meta', [])
-                if global_idx < len(token_meta):
-                    meta = token_meta[global_idx]
-                    color_symbol = meta.get('color_symbol')
-                
-                # KRITISCH: Symbol ist bereits im Token enthalten (von preprocess.py hinzugefügt)!
-                # format_token_markup() entfernt das Symbol und färbt den Text
-                # Wir müssen es NICHT nochmal hinzufügen!
-                # ABER: Prüfe ob Symbol WIRKLICH im Token ist (könnte durch BlackWhite entfernt worden sein)
-                token_has_symbol = color_symbol and color_symbol in t_processed
-                
-                # Wenn Symbol NICHT im Token, aber in token_meta → hinzufügen
-                if color_symbol and not token_has_symbol:
-                    t_with_color = color_symbol + t_processed
-                else:
-                    # Symbol bereits im Token ODER kein Symbol
-                    t_with_color = t_processed
+                t_with_color = apply_color_symbol(t_processed, global_idx, block)
                 
                 # format_token_markup entfernt das Symbol und gibt farbigen HTML zurück
                 de_html = format_token_markup(t_with_color, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
@@ -2631,26 +2682,9 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
                     t_processed = process_translation_token_poesie(t)
                     
-                    # WICHTIG: Farbsymbol bestimmen aus token_meta (vom Builder ODER von preprocess.py gesetzt)
-                    color_symbol = None
+                    # Wende Farbsymbol an (manuell hat Vorrang!)
                     global_idx = i + idx
-                    token_meta = block.get('token_meta', [])
-                    if global_idx < len(token_meta):
-                        meta = token_meta[global_idx]
-                        color_symbol = meta.get('color_symbol')
-                    
-                    # KRITISCH: Symbol ist bereits im Token enthalten (von preprocess.py hinzugefügt)!
-                    # format_token_markup() entfernt das Symbol und färbt den Text
-                    # Wir müssen es NICHT nochmal hinzufügen!
-                    # ABER: Prüfe ob Symbol WIRKLICH im Token ist (könnte durch BlackWhite entfernt worden sein)
-                    token_has_symbol = color_symbol and color_symbol in t_processed
-                    
-                    # Wenn Symbol NICHT im Token, aber in token_meta → hinzufügen
-                    if color_symbol and not token_has_symbol:
-                        t_with_color = color_symbol + t_processed
-                    else:
-                        # Symbol bereits im Token ODER kein Symbol
-                        t_with_color = t_processed
+                    t_with_color = apply_color_symbol(t_processed, global_idx, block)
                     
                     # format_token_markup entfernt das Symbol und gibt farbigen HTML zurück
                     en_html = format_token_markup(t_with_color, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
@@ -2676,21 +2710,9 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
                     t_processed = process_translation_token_poesie(t)
                     
-                    # WICHTIG: Farbsymbol bestimmen aus token_meta
-                    color_symbol = None
+                    # Wende Farbsymbol an (manuell hat Vorrang!)
                     global_idx = i + idx
-                    token_meta = block.get('token_meta', [])
-                    if global_idx < len(token_meta):
-                        meta = token_meta[global_idx]
-                        color_symbol = meta.get('color_symbol')
-                    
-                    # Symbol-Handling wie bei de_cells und en_cells
-                    token_has_symbol = color_symbol and color_symbol in t_processed
-                    
-                    if color_symbol and not token_has_symbol:
-                        t_with_color = color_symbol + t_processed
-                    else:
-                        t_with_color = t_processed
+                    t_with_color = apply_color_symbol(t_processed, global_idx, block)
                     
                     # format_token_markup entfernt das Symbol und gibt farbigen HTML zurück
                     trans3_html = format_token_markup(t_with_color, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
@@ -2800,20 +2822,9 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     else:
                         t_processed = process_translation_token_poesie(t)
                         
-                        # Farbsymbol aus token_meta
-                        color_symbol = None
+                        # Wende Farbsymbol an (manuell hat Vorrang!)
                         global_idx = i + idx
-                        token_meta = block.get('token_meta', [])
-                        if global_idx < len(token_meta):
-                            meta = token_meta[global_idx]
-                            color_symbol = meta.get('color_symbol')
-                        
-                        token_has_symbol = color_symbol and color_symbol in t_processed
-                        
-                        if color_symbol and not token_has_symbol:
-                            t_with_color = color_symbol + t_processed
-                        else:
-                            t_with_color = t_processed
+                        t_with_color = apply_color_symbol(t_processed, global_idx, block)
                         
                         de_html = format_token_markup(t_with_color, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
                         de_meas = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)

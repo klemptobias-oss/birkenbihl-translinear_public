@@ -61,7 +61,7 @@
 (16) [Χρεμύλος:] #ὥστʼ(Kon) #οὐδὲ(Pt) #μεστὸς(Adj)(N) #σοῦ(Pr)(G) #γέγονʼ(Per)(Akt) #οὐδεὶς(Pr)(N) #πώποτε(Adv).
 (16) [Χρεμύλος:] sodass auch|nicht voll deiner geworden|ist niemand jemals.
 (17) [Χρεμύλος:] τῶν(Art)(G) μὲν(Pt) γὰρ(Pt) ἄλλων(Adj)(G) ἐστὶ(Prä)(Akt) πάντων(Adj)(G) πλησμονή(N),
-(17) [Χρεμύλος:] #der/+der/-der #zwar/+zwar/-zwar #denn/+denn/-denn #anderen/+anderen/-anderen #ist/+ist/-ist #aller/+aller/-aller #Fülle/+Fülle/-Fülle,
+(17) [Χρεμύλος:] #der/+der/-der #zwar/+zwar/-zwar #denn/+denn/-denn #anderen/+anderen/-anderen #ist/+ist/-ist #aller/+aller/-aller #Fülle,/+Fülle,/-Fülle,
 (18) [Χρεμύλοςλος:] ἔρωτος(G)
 (18) [Χρεμύλοςλος:] der|Liebe
 (18b) [Κα:] ἄρτων(G)
