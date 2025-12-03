@@ -2675,14 +2675,16 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
 
                     next_gr_tokens = propagate_elision_markers(next_gr_tokens)
                     
-                    # WICHTIG: Berechne Sprecher-Breite ZUERST (wird für Indent-Berechnung benötigt!)
+                    # ═══════════════════════════════════════════════════════════════════
+                    # KRITISCH: Sprecher-Breite MUSS VOR Indent-Berechnung erfolgen!
+                    # (Siehe ausführliche Dokumentation im WITHOUT-headings Pfad ~Zeile 2810)
+                    # ═══════════════════════════════════════════════════════════════════
                     next_current_speaker_width_pt = _speaker_col_width(next_speaker) if next_speaker else 0.0
                     
-                    # Einrückung: kumulative Breite aller bisherigen Teilverse dieses Basisverses
-                    # NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
-                    # KRITISCH: Ziehe die AKTUELLE Sprecher-Breite ab, da das Layout ist:
-                    #   Position = Sprecher-Spalte + Indent
-                    # Also: Indent = kumulative_Breite - aktuelle_Sprecher-Breite
+                    # ═══════════════════════════════════════════════════════════════════
+                    # GESTAFFELTE ZEILEN: Indent-Berechnung (siehe ~Zeile 2810)
+                    # Formel: indent = cum_width - current_speaker_width
+                    # ═══════════════════════════════════════════════════════════════════
                     next_indent_pt = 0.0
                     if next_base_num is not None and next_line_label and _is_staggered_label(next_line_label):
                         cum_width = cum_width_by_base.get(next_base_num, 0.0)
@@ -2730,11 +2732,10 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     # Sammle die Zeilen
                     rendered_lines.append(KeepTogether(next_tables))
 
-                    # KRITISCHER FIX: JEDE Zeile fügt ihre Breite zur kumulativen Breite hinzu!
-                    # Logik: 18 → 18b startet bei (Sprecher_von_18 + Text_von_18)
-                    #        18b → 18c startet bei (Sprecher_von_18 + Text_von_18 + Text_von_18b)
+                    # ═══════════════════════════════════════════════════════════════════
+                    # KUMULATIVE BREITEN-SPEICHERUNG (siehe ~Zeile 3040 für Details)
+                    # ═══════════════════════════════════════════════════════════════════
                     if next_base_num is not None and next_line_label:
-                        # KRITISCH: Berechne Token-Breite
                         next_token_w = measure_rendered_line_width(
                             next_gr_tokens, next_de_tokens,
                             gr_bold=gr_bold, is_notags=CURRENT_IS_NOTAGS,
@@ -2743,17 +2744,13 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                             hide_trans_flags=pair_b.get('hide_trans_flags', [])
                         )
                         
-                        # WICHTIG: Für die BASIS-Zeile, addiere auch die Sprecher-Spalten-Breite!
-                        # Für gestaffelte Zeilen, addiere nur die Token-Breite.
                         next_is_staggered = _is_staggered_label(next_line_label) if next_line_label else False
                         
                         if not next_is_staggered:
-                            # BASIS-Zeile: Setze kumulative Breite = Sprecher + Text
-                            # KRITISCH: Verwende next_current_speaker_width_pt (berechnet VOR dem Rendering)!
-                            # Dies ist die GLEICHE Breite, die in build_tables_for_pair() verwendet wurde!
+                            # BASIS: Sprecher + Text
                             cum_width_by_base[next_base_num] = next_current_speaker_width_pt + next_token_w
                         else:
-                            # Gestaffelte Zeile: Addiere nur Token-Breite
+                            # Gestaffelt: Nur Text addieren
                             cum_width_by_base[next_base_num] = cum_width_by_base.get(next_base_num, 0.0) + next_token_w
                 
                 # OPTIMIERTE LÖSUNG gegen weiße Flächen:
@@ -2808,22 +2805,68 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             gr_tokens = propagate_elision_markers(gr_tokens)
             # <<<
 
-            # WICHTIG: Berechne Sprecher-Breite ZUERST (wird für Indent-Berechnung benötigt!)
+            # ═══════════════════════════════════════════════════════════════════════════
+            # KRITISCH: Sprecher-Breite MUSS VOR Indent-Berechnung erfolgen!
+            # ═══════════════════════════════════════════════════════════════════════════
+            # Warum? Weil das Indent die Sprecher-Breite abziehen muss (siehe unten)!
+            # Dies ist die TATSÄCHLICHE Breite, die im Layout verwendet wird.
             current_speaker_width_pt = _speaker_col_width(speaker) if speaker else 0.0
 
-            # Einrückung: kumulative Breite aller bisherigen Teilverse dieses Basisverses
-            # NUR wenn das Label ein gültiges Suffix für gestaffelte Zeilen hat (a-g)
-            # KRITISCH: Ziehe die AKTUELLE Sprecher-Breite ab, da das Layout ist:
-            #   Position = Sprecher-Spalte + Indent
-            # Also: Indent = kumulative_Breite - aktuelle_Sprecher-Breite
+            # ═══════════════════════════════════════════════════════════════════════════
+            # GESTAFFELTE ZEILEN: Indent-Berechnung für "Treppenstufen-Effekt"
+            # ═══════════════════════════════════════════════════════════════════════════
+            # 
+            # PROBLEM: Gestaffelte Zeilen (18b, 18c, 18d) sollen wie eine Treppe aussehen.
+            # Jede Zeile soll GENAU dort beginnen, wo die vorherige Zeile endet.
+            # 
+            # BEISPIEL:
+            #   [18]  [Χρεμύλος] ἔρωτος          ← BASIS-Zeile
+            #   [18b] [Κα]      ἄρτων            ← Text startet wo "ἔρωτος" endet
+            #   [18c] [Χρεμύλος] μουσικῆς        ← Text startet wo "ἄρτων" endet
+            #   [18d] [Κα]      τραγημάτων       ← Text startet wo "μουσικῆς" endet
+            # 
+            # HERAUSFORDERUNG: Jede Zeile hat einen UNTERSCHIEDLICH LANGEN Sprecher!
+            #   - Zeile 18:  Sprecher = 58.4pt (lang)
+            #   - Zeile 18b: Sprecher = 21.0pt (kurz)
+            #   - Zeile 18c: Sprecher = 58.4pt (lang)
+            #   - Zeile 18d: Sprecher = 21.0pt (kurz)
+            # 
+            # LAYOUT-STRUKTUR (wichtig für Verständnis!):
+            #   [Nummer] [gap] [Sprecher-Spalte] [gap] [Indent] [Token1] [Token2]...
+            #                   ↑ sp_w              ↑ 0   ↑ indent_pt
+            # 
+            # Die POSITION des Textes ist: Sprecher-Spalte + Indent
+            # 
+            # KUMULATIVE BREITE speichert: sp_w(BASIS) + Tokens(18) + Tokens(18b) + ...
+            # Dies ist die ABSOLUTE Position (von Zeilennummer aus gemessen).
+            # 
+            # BEISPIEL-RECHNUNG:
+            #   Zeile 18:  cum_width[18] = 58.4pt + 42.0pt = 100.5pt
+            #   Zeile 18b: Text soll bei 100.5pt starten (wo 18 endet)
+            #              ABER: Zeile 18b hat sp_w = 21.0pt (eigene Sprecher-Spalte)
+            #              ALSO: indent = 100.5pt - 21.0pt = 79.4pt
+            #              → Position = 21.0pt + 79.4pt = 100.5pt ✅ PERFEKT!
+            # 
+            # WARUM minus current_speaker_width_pt?
+            #   Weil cum_width die ABSOLUTE Position ist (von Zeilennummer aus),
+            #   aber die Sprecher-Spalte den Text schon nach rechts verschiebt!
+            #   
+            #   WENN wir nicht abziehen würden:
+            #     Position = 21.0pt + 100.5pt = 121.5pt ❌ ZU WEIT RECHTS! (Lücke!)
+            #   
+            #   RICHTIG mit Abzug:
+            #     Position = 21.0pt + (100.5pt - 21.0pt) = 100.5pt ✅ PERFEKT!
+            # 
+            # WICHTIG: Diese Berechnung funktioniert NUR, weil:
+            #   1. Wir current_speaker_width_pt VORHER berechnen (nicht nochmal aufrufen!)
+            #   2. Dies ist EXAKT der Wert, der an build_tables_for_pair() übergeben wird
+            #   3. build_tables_for_pair() verwendet: sp_w = max(current_speaker_width_pt, MIN)
+            #   4. Wir verwenden beim Speichern die GLEICHE Breite (siehe unten ~Zeile 3000)
+            # ═══════════════════════════════════════════════════════════════════════════
             indent_pt = 0.0
             if base_num is not None and line_label and _is_staggered_label(line_label):
                 cum_width = cum_width_by_base.get(base_num, 0.0)
                 indent_pt = max(0.0, cum_width - current_speaker_width_pt)
-                # DEBUG: Zeige Berechnungen für gestaffelte Zeilen
-                print(f"DEBUG Gestaffelt: Zeile {line_label} (base={base_num})")
-                print(f"  cum_width={cum_width:.1f}pt, current_speaker_width={current_speaker_width_pt:.1f}pt")
-                print(f"  → indent={indent_pt:.1f}pt")
 
             # Prüfe auf Versmaß-Marker
             has_versmass = has_meter_markers(gr_tokens)
@@ -2999,27 +3042,56 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     hide_trans_flags=b.get('hide_trans_flags', [])  # NEU: HideTrans-Flags für korrekte Breitenberechnung!
                 )
                 
-                # WICHTIG: Für die BASIS-Zeile, addiere auch die Sprecher-Spalten-Breite!
-                # Für gestaffelte Zeilen, addiere nur die Token-Breite.
+                # ═══════════════════════════════════════════════════════════════════════════
+                # KUMULATIVE BREITEN-SPEICHERUNG: Das Herzstück der Treppenstufen-Logik
+                # ═══════════════════════════════════════════════════════════════════════════
+                # 
+                # ZWEI FÄLLE:
+                # 
+                # 1) BASIS-ZEILE (z.B. "18"): Setze kumulative Breite = Sprecher + Text
+                #    Dies ist die STARTPOSITION für die erste gestaffelte Zeile.
+                #    
+                #    BEISPIEL:
+                #      Zeile 18: [Χρεμύλος] ἔρωτος
+                #      speaker_width = 58.4pt, token_width = 42.0pt
+                #      cum_width[18] = 58.4 + 42.0 = 100.5pt
+                #    
+                #    Diese 100.5pt ist die ABSOLUTE Position, wo der Text "ἔρωτος" endet
+                #    (gemessen von der Zeilennummer aus).
+                # 
+                # 2) GESTAFFELTE ZEILE (z.B. "18b"): Addiere NUR Token-Breite
+                #    Die Sprecher-Breite wird NICHT addiert, weil jede gestaffelte Zeile
+                #    ihren EIGENEN Sprecher hat (mit unterschiedlicher Länge)!
+                #    
+                #    BEISPIEL:
+                #      Zeile 18b: [Κα] ἄρτων
+                #      old_cum = 100.5pt (von Zeile 18)
+                #      token_width = 40.8pt
+                #      cum_width[18] = 100.5 + 40.8 = 141.2pt
+                #    
+                #    Diese 141.2pt ist die ABSOLUTE Position, wo der Text "ἄρτων" endet.
+                #    Die nächste gestaffelte Zeile (18c) startet dann bei 141.2pt.
+                # 
+                # WARUM funktioniert das?
+                #   - Die kumulative Breite speichert die ABSOLUTE Position (vom Nullpunkt)
+                #   - Das Indent oben (Zeile ~2820) zieht die aktuelle Sprecher-Breite ab
+                #   - Dadurch kompensieren sich die unterschiedlichen Sprecher-Längen
+                #   - Ergebnis: Perfekte Treppe, unabhängig von Sprecher-Längen!
+                # 
+                # WICHTIG: Verwende current_speaker_width_pt (berechnet VOR dem Rendering)!
+                #   Dies ist die GLEICHE Breite, die in build_tables_for_pair() verwendet wurde.
+                #   Wenn wir hier _speaker_col_width() nochmal aufrufen würden, könnten wir
+                #   einen ANDEREN Wert bekommen (z.B. durch SPEAKER_COL_MIN_MM) → BUG!
+                # ═══════════════════════════════════════════════════════════════════════════
+                
                 is_staggered_line = _is_staggered_label(line_label) if line_label else False
                 
                 if not is_staggered_line:
                     # BASIS-Zeile: Setze kumulative Breite = Sprecher + Text
-                    # KRITISCH: Verwende current_speaker_width_pt (berechnet VOR dem Rendering)!
-                    # Dies ist die GLEICHE Breite, die in build_tables_for_pair() verwendet wurde!
                     cum_width_by_base[base_num] = current_speaker_width_pt + this_token_w
-                    # DEBUG:
-                    print(f"DEBUG BASIS: Zeile {line_label} (base={base_num})")
-                    print(f"  speaker_width={current_speaker_width_pt:.1f}pt, token_width={this_token_w:.1f}pt")
-                    print(f"  → cum_width={cum_width_by_base[base_num]:.1f}pt")
                 else:
                     # Gestaffelte Zeile: Addiere nur Token-Breite (Sprecher ist unterschiedlich!)
-                    old_cum = cum_width_by_base.get(base_num, 0.0)
-                    cum_width_by_base[base_num] = old_cum + this_token_w
-                    # DEBUG:
-                    print(f"DEBUG Gestaffelt ADD: Zeile {line_label} (base={base_num})")
-                    print(f"  old_cum={old_cum:.1f}pt, token_width={this_token_w:.1f}pt")
-                    print(f"  → new_cum={cum_width_by_base[base_num]:.1f}pt")
+                    cum_width_by_base[base_num] = cum_width_by_base.get(base_num, 0.0) + this_token_w
 
             i += 1; continue
 
