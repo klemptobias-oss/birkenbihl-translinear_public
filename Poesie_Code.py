@@ -1127,6 +1127,35 @@ APOSTS = (
 )
 
 def propagate_elision_markers(gr_tokens):
+    """
+    Überträgt Meter-Marker von Tokens mit Ellisionsapostroph auf das vorherige Token.
+    
+    PROBLEM: Wörter wie δʼ, γʼ, σʼ sind KEINE eigenständigen Silben!
+             Sie verschmelzen mit der nächsten Silbe zu EINER Silbe.
+    
+    BEISPIEL:
+        δʼ(Pt) ἱi|κέσLθαιL
+        → δʼ hat keinen Marker (im translinear.txt)
+        → ἱi hat Marker i
+        → Sprachlich: δʼ+ἱ = EINE kurze Silbe "δ-ἱ"
+    
+    LÖSUNG (2-STUFIG):
+        1. Übertrage Marker vom nächsten Token auf Ellisions-Token
+           δʼ(Pt) → δiʼ(Pt) (bekommt i)
+        2. ENTFERNE Marker aus nächstem Token
+           ἱi|κέσLθαιL → ἱ|κέσLθαιL (verliert i)
+    
+    WARUM FUNKTIONIERT DAS?
+        - δiʼ hat Marker → ToplineTokenFlowable zeichnet Topline (uu) ✅
+        - ἱ hat KEINEN Marker → ToplineTokenFlowable erkennt "keine Silbe"
+          und zeichnet KEINE Topline (ist OK, weil schon durch δiʼ abgedeckt!)
+        - RESULTAT: Nur EINE Silbe wird dargestellt! ✅
+    
+    WICHTIG:
+        Das nächste Token (ἱ) hat dann _segments = [] (keine Silben)
+        → draw() zeichnet dann nur Text, aber KEINE Topline!
+        → Perfekt, weil die Topline schon durch δiʼ dargestellt wurde!
+    """
     out = gr_tokens[:]
     n = len(out)
     for i in range(n - 1):
@@ -1135,23 +1164,35 @@ def propagate_elision_markers(gr_tokens):
         head_t = t if idx_t == -1 else t[:idx_t]
         tail_t = '' if idx_t == -1 else t[idx_t:]
 
-        # wie rfind, aber für beide Apostrophe
+        # Finde Ellisions-Apostroph
         pos = max((head_t.rfind(a) for a in APOSTS), default=-1)
         if pos == -1:
             continue
 
+        # Prüfe: Hat das Zeichen VOR dem Apostroph schon einen Marker?
         prev = head_t[pos-1] if pos > 0 else ''
         if prev in ('i', 'L', '|', 'r'):
-            continue
+            continue  # Schon einen Marker → nichts tun
 
         idx_u = u.find('(')
         head_u = u if idx_u == -1 else u[:idx_u]
+        tail_u = '' if idx_u == -1 else u[idx_u:]
+        
+        # Finde ersten Meter-Marker im nächsten Token
         ch_m = next((ch for ch in head_u if ch in ('i','L','|','r')), None)
         if not ch_m:
-            continue
+            continue  # Nächstes Token hat keinen Marker → nichts tun
 
+        # SCHRITT 1: Übertrage Marker auf Ellisions-Token (VOR Apostroph)
         new_head_t = head_t[:pos] + ch_m + head_t[pos:]
         out[i] = new_head_t + tail_t
+        
+        # SCHRITT 2: ENTFERNE Marker aus nächstem Token
+        # → Dadurch hat nächstes Token keine Silben mehr (_segments = [])
+        # → ToplineTokenFlowable zeichnet dann keine Topline (ist OK!)
+        marker_idx = head_u.index(ch_m)
+        new_head_u = head_u[:marker_idx] + head_u[marker_idx+1:]
+        out[i+1] = new_head_u + tail_u
 
     return out  # <— siehe Fix B
 
