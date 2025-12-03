@@ -53,6 +53,7 @@ texte_drafts/**/*.pdf
 
 # Unklare/Debug-Dateien (gesamter Ordner ignoriert)
 UNKLAR_WAS_ES_GENAU_IST_KÖNNT_GUT_SEIN/
+EINMALCODES_README_ANLEITUNGEN_03_12_25/
 
 # Lokale Einmal-/Hilfs-Skripte (nicht mehr versionieren)
 fix_layout.py

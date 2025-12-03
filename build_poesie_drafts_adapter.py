@@ -1,33 +1,364 @@
-"""Kompatibilitäts-Wrapper für gr_build_poesie_drafts_adapter.py."""
+######## START: build_poesie_drafts_adapter.py ########
+from pathlib import Path
+import subprocess, sys, json, re, shlex, time, traceback, os
 
-import os
-import sys
-import time
-import traceback
+ROOT = Path(__file__).parent.resolve()
+SRC_ROOT = ROOT / "texte_drafts" / "poesie_drafts"       # Eingaben
+DST_BASE = ROOT / "pdf_drafts" / "poesie_drafts"         # Ausgaben (spiegelbildlich)
 
-# Line-buffer stdout for immediacy
-try:
-    sys.stdout.reconfigure(line_buffering=True)
-except Exception:
-    pass
+RUNNER = ROOT / "poesie_pdf.py"                          # 24 Varianten (Poesie)
 
-print("build_poesie_drafts_adapter.py: starting pid=%s argv=%s" % (os.getpid(), sys.argv))
-sys.stdout.flush()
+META_HEADER_RE = re.compile(
+    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|PATH_PREFIX|RELEASE_NAME|VERSMASS|METER_MODE|HIDE_PIPES|SPRACHE|GATTUNG|KATEGORIE|AUTOR|WERK):(.*?)\s*-->',
+    re.DOTALL | re.IGNORECASE
+)
 
-from gr_build_poesie_drafts_adapter import main, run_one  # noqa: F401
+def extract_metadata_sections(text: str) -> dict:
+    meta = {}
+    for key, value in META_HEADER_RE.findall(text):
+        meta[key.strip().upper()] = value.strip()
+    return meta
 
+def strip_metadata_comments(text: str) -> str:
+    return META_HEADER_RE.sub('', text)
 
-if __name__ == "__main__":
+def normalize_release_base(base: str) -> str:
+    if not base:
+        return ""
+    cleaned = base.strip()
+    if "_birkenbihl" not in cleaned:
+        cleaned += "_birkenbihl"
+    return cleaned
+
+def run_one(input_path: Path) -> None:
+    if not input_path.is_file():
+        print(f"⚠ Datei fehlt: {input_path} — übersprungen"); return
+
+    tag_config = None
+
+    # Extrahiere den Basisnamen der Eingabedatei (ohne .txt)
+    input_stem = input_path.stem
+    
+    # Lese den Text und entferne die Konfigurationszeilen
+    text_content = input_path.read_text(encoding="utf-8")
+    metadata = extract_metadata_sections(text_content)
+    print(f"→ Extrahierte Metadaten: {list(metadata.keys())}")
+    
+    # KRITISCH: Baue Verzeichnisstruktur aus Metadaten ODER aus Input-Pfad
+    # Frontend erwartet: pdf_drafts/griechisch/poesie/Epos/Homer/Ilias/
+    # Alte Struktur war: pdf_drafts/poesie_drafts/Homer/Ilias/
+    
+    # NEUE LOGIK: Wenn Metadata leer, aus Input-Pfad extrahieren (wie bei Prosa!)
+    sprache = metadata.get("SPRACHE", "").strip().lower()
+    gattung = metadata.get("GATTUNG", "").strip().lower()
+    kategorie = metadata.get("KATEGORIE", "").strip()
+    autor = metadata.get("AUTOR", "").strip()
+    werk = metadata.get("WERK", "").strip()
+    
+    # Fallback: Aus Input-Pfad extrahieren (spiegelt texte_drafts Struktur)
+    if not sprache or not kategorie or not autor:
+        # Input: texte_drafts/griechisch/poesie/Epos/Homer/Ilias_11/ilias11_gr_de_en...txt
+        # Erwarte: texte_drafts/<sprache>/<gattung>/<kategorie>/<autor>/<werk>/file.txt
+        parts = input_path.parts
+        try:
+            # Finde "texte_drafts" Index
+            drafts_idx = parts.index("texte_drafts") if "texte_drafts" in parts else -1
+            if drafts_idx >= 0 and len(parts) >= drafts_idx + 6:
+                sprache = sprache or parts[drafts_idx + 1]
+                gattung = gattung or parts[drafts_idx + 2]
+                kategorie = kategorie or parts[drafts_idx + 3]
+                autor = autor or parts[drafts_idx + 4]
+                werk = werk or parts[drafts_idx + 5]
+                print(f"→ Metadaten aus Pfad extrahiert: {sprache}/{gattung}/{kategorie}/{autor}/{werk}")
+        except (ValueError, IndexError):
+            pass
+    
+    # Finale Fallbacks
+    sprache = sprache or "griechisch"
+    gattung = gattung or "poesie"
+    kategorie = kategorie or "Unsortiert"
+    autor = autor or "Unbekannt"
+    werk = werk or input_path.stem.split("_")[0]
+    
+    # Baue relativen Pfad (wie Frontend erwartet)
+    relative_path = Path(sprache) / gattung / kategorie / autor / werk
+    target_dir = ROOT / "pdf_drafts" / relative_path
+    target_dir.mkdir(parents=True, exist_ok=True)
+    print(f"→ Zielverzeichnis: {target_dir}")
+    
+    # Erstelle .gitkeep Datei um sicherzustellen, dass der Ordner bei Git gepusht wird
+    gitkeep_file = target_dir / ".gitkeep"
+    if not gitkeep_file.exists():
+        gitkeep_file.write_text("")
+    
+    release_base = normalize_release_base(metadata.get("RELEASE_BASE", ""))
+    print(f"→ Release Base: {release_base}")
+    
+    force_meter = False
+    if metadata.get("VERSMASS", "").lower() == "true":
+        force_meter = True
+        print(f"→ Versmaß aktiviert (VERSMASS=true)")
+    if metadata.get("METER_MODE", "").lower() == "with":
+        force_meter = True
+        print(f"→ Versmaß aktiviert (METER_MODE=with)")
+    
+    # Extrahiere HIDE_PIPES aus Metadaten
+    hide_pipes = metadata.get("HIDE_PIPES", "false").lower() == "true"
+
+    config_blob = metadata.get("TAG_CONFIG")
+    if config_blob:
+        try:
+            tag_config = json.loads(config_blob)
+            print(f"✓ Tag-Konfiguration gefunden: {len(tag_config.get('tag_colors', {}))} Farben, {len(tag_config.get('hidden_tags', []))} versteckte Tags")
+        except Exception as e:
+            print(f"⚠ Fehler beim Parsen der Tag-Konfiguration: {e}")
+            tag_config = None
+
+    clean_text = strip_metadata_comments(text_content)
+    
+    # Schreibe bereinigten Text in temporäre Datei
+    temp_input = ROOT / f"temp_{input_path.name}"
+    temp_input.write_text(clean_text, encoding="utf-8")
+    
+    # NEUE Position (RICHTIG) - Zeile ~145 (NACH temp_input.write_text, VOR subprocess.Popen):
+    before = {p.name for p in ROOT.glob("*.pdf")}  # ← GENAU HIER!
+    print(f"→ Erzeuge PDFs für: {temp_input.name}")
+
+    # Erstelle temporäre Konfigurationsdatei für Tag-Einstellungen, falls eine Konfig vorhanden ist
+    config_file = None
+    if tag_config:
+        config_file = ROOT / "temp_tag_config.json"
+        with open(config_file, 'w', encoding='utf-8') as f:
+            json.dump(tag_config, f, ensure_ascii=False, indent=2)
+    
+    # --- START robust subprocess invocation of poesie_pdf.py ---
+    # This will stream poesie_pdf output live, enforce a per-call timeout,
+    # and report a clear error/exit code to the outer CI.
     try:
-        start = time.time()
-        print("build_poesie_drafts_adapter.py: launching main()")
+        POESIE_PDF_CALL_TIMEOUT = int(os.environ.get("POESIE_PDF_CALL_TIMEOUT", "600"))
+    except Exception:
+        POESIE_PDF_CALL_TIMEOUT = 600
+
+    poesie_script = str(RUNNER)
+
+    cmd = [sys.executable, "-u", poesie_script, str(temp_input)]
+
+    if force_meter:
+        cmd.append("--force-meter")
+        print(f"→ Kommando enthält --force-meter Flag")
+    
+    # WICHTIG: Tag-Config IMMER hinzufügen, wenn vorhanden (nicht nur bei force_meter!)
+    if config_file:
+        cmd.extend(["--tag-config", str(config_file)])
+        print(f"→ Kommando enthält --tag-config: {config_file}")
+    
+    if hide_pipes:
+        cmd.extend(["--hide-pipes"])
+        print(f"→ Kommando enthält --hide-pipes Flag")
+
+    print("build_poesie_drafts_adapter.py: INVOCATION CMD: %s" % shlex.join(cmd))
+    sys.stdout.flush()
+
+    proc = None
+    start = time.time()
+    try:
+        proc = subprocess.Popen(
+            cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,
+            cwd=str(ROOT)
+        )
+
+        # stream stdout lines live, enforce timeout
+        while True:
+            line = proc.stdout.readline()
+            if line:
+                # Print streamed line exactly as produced
+                print(line.rstrip("\n"))
+                sys.stdout.flush()
+            else:
+                # no immediate line; check if process finished
+                if proc.poll() is not None:
+                    break
+                # check timeout
+                if time.time() - start > POESIE_PDF_CALL_TIMEOUT:
+                    print("ERROR: poesie_pdf subprocess exceeded timeout (%ds) — killing." % POESIE_PDF_CALL_TIMEOUT)
+                    sys.stdout.flush()
+                    try:
+                        proc.kill()
+                    except Exception:
+                        pass
+                    raise TimeoutError("poesie_pdf call timeout")
+                # small sleep to avoid busy loop
+                time.sleep(0.1)
+
+        rc = proc.poll()
+        if rc is None:
+            rc = proc.wait()
+        print("build_poesie_drafts_adapter.py: poesie_pdf exited with rc=%s" % rc)
         sys.stdout.flush()
-        main()
-        print("build_poesie_drafts_adapter.py: main() finished (%.1fs)" % (time.time() - start))
-        sys.stdout.flush()
-    except Exception as e:
-        print("build_poesie_drafts_adapter.py: ERROR in main():", str(e))
+        if rc != 0:
+            print("ERROR: poesie_pdf returned non-zero exit status %s" % rc)
+            raise SystemExit(rc)
+        
+        # KRITISCH: PDF-Matching HIER (innerhalb try, VOR finally)!
+        print(f"→ Prüfe ROOT-Verzeichnis: {ROOT}")
+        all_pdfs_in_root = list(ROOT.glob("*.pdf"))
+        print(f"→ Alle PDFs in ROOT: {[p.name for p in all_pdfs_in_root]}")
+        
+        after = {p.name for p in ROOT.glob("*.pdf")}
+        new_pdfs = sorted(after - before)
+        
+        print(f"→ Snapshot AFTER subprocess: {len(after)} PDFs, {len(new_pdfs)} neue PDFs")
+        
+        if new_pdfs:
+            # KRITISCH: Die PDFs heißen "temp_agamemnon_..." (mit temp_ Präfix!)
+            temp_stem = temp_input.stem  # z.B. "temp_agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251128_232610"
+            
+            # Entferne "temp_" Präfix und SESSION + DRAFT_TIMESTAMP
+            base_without_temp = temp_stem[5:] if temp_stem.startswith('temp_') else temp_stem
+            
+            # Entferne SESSION_xxx_DRAFT_TIMESTAMP Suffix
+            # Format: agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_SESSION_c2b74016d1731d08_DRAFT_20251130_040907
+            match = re.match(r'^(.+?)_draft_translinear_SESSION_[a-f0-9]{16}_DRAFT_\d{8}_\d{6}$', base_without_temp)
+            if not match:
+                # Fallback: Altes Format ohne SESSION (für Kompatibilität)
+                match = re.match(r'^(.+?)_draft_translinear_DRAFT_\d{8}_\d{6}$', base_without_temp)
+            
+            if match:
+                clean_base = match.group(1)  # z.B. "agamemnon_gr_de_en_stil1_birkenbihl"
+            else:
+                clean_base = base_without_temp
+            
+            print(f"→ Suche PDFs mit Basis: temp_{clean_base}")
+            
+            # Finde ALLE PDFs, die mit "temp_" + clean_base beginnen
+            relevant_pdfs = []
+            for name in new_pdfs:
+                if name.startswith(f'temp_{clean_base}'):
+                    relevant_pdfs.append(name)
+            
+            if not relevant_pdfs:
+                print(f"⚠ Keine passenden PDFs gefunden für Basis: temp_{clean_base}")
+                print(f"   Gefundene PDFs: {new_pdfs[:3] if len(new_pdfs) > 0 else 'keine'}")
+                return
+
+            # KRITISCH: Verwende IMMER den Upload-Filename (input_stem), NICHT RELEASE_BASE!
+            # Grund: Browser muss PDFs anhand des Upload-Filenames finden können
+            # RELEASE_BASE kann normalisiert sein (z.B. gr_de statt gr_de_en), was zu 404s führt
+            # Lösung: PDF-Name = Upload-Filename + Variant-Suffix
+            
+            # Extrahiere den Pfad-Teil aus PATH_PREFIX Metadaten (falls vorhanden)
+            # Fallback: Extrahiere aus RELEASE_BASE (alte Methode, für Kompatibilität)
+            # Format PATH_PREFIX: "GR_poesie_Drama_Aischylos_Agamemnon"
+            # Format RELEASE_BASE (alt): "GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_stil1_birkenbihl"
+            path_prefix = ""
+            
+            if "PATH_PREFIX" in metadata and metadata["PATH_PREFIX"]:
+                # NEUE Methode: PATH_PREFIX aus Metadaten
+                path_prefix = metadata["PATH_PREFIX"] + "__"
+                print(f"→ Verwende PATH_PREFIX aus Metadaten: {path_prefix}")
+            elif release_base and "__" in release_base:
+                # ALTE Methode (Fallback): Extrahiere aus RELEASE_BASE
+                path_prefix = release_base.split("__")[0] + "__"
+                print(f"→ Verwende PATH_PREFIX aus RELEASE_BASE (Fallback): {path_prefix}")
+
+            for name in relevant_pdfs:
+                bare = name[:-4] if name.lower().endswith(".pdf") else name
+                
+                # Entferne "temp_" Präfix
+                if bare.startswith('temp_'):
+                    bare = bare[5:]
+                
+                # KRITISCH: Entferne clean_base Präfix, um nur Variant-Suffix zu bekommen
+                # bare ist jetzt z.B.: "agamemnon_gr_de_en_stil1_Versmass_birkenbihl_draft_translinear_DRAFT_20251129_232252_GR_Fett_BlackWhite_NoTags"
+                # clean_base ist: "agamemnon_gr_de_en_stil1_Versmass_birkenbihl"
+                # suffix soll sein: "_GR_Fett_BlackWhite_NoTags" (OHNE _draft_translinear_DRAFT_...)
+                
+                # Finde den Variant-Suffix (ab _Normal oder _GR_Fett oder _LAT_Fett)
+                variant_match = re.search(r'_(Normal|GR_Fett|LAT_Fett)_', bare)
+                if variant_match:
+                    suffix = '_' + bare[variant_match.start()+1:]  # Ab dem Variant-Teil
+                else:
+                    # Fallback: Verwende alles nach clean_base
+                    if bare.startswith(clean_base):
+                        remainder = bare[len(clean_base):]
+                        # Entferne _draft_translinear_DRAFT_... Teil
+                        remainder = re.sub(r'_draft_translinear_DRAFT_\d{8}_\d{6}', '', remainder)
+                        suffix = remainder
+                    else:
+                        suffix = '_' + bare
+                
+                # FINALE LÖSUNG: Verwende Pfad-Prefix (wenn vorhanden) + ORIGINAL Upload-Filename + Variant-Suffix
+                # Der input_stem enthält den ORIGINAL Upload-Namen inkl. DRAFT_TIMESTAMP
+                # z.B. "agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_011301"
+                if path_prefix:
+                    final_bare = f"{path_prefix}{input_stem}{suffix}"
+                else:
+                    # Fallback: Nur Upload-Filename + Suffix
+                    final_bare = f"{input_stem}{suffix}"
+                
+                final_name = f"{final_bare}.pdf"
+                
+                src = ROOT / name
+                dst = target_dir / final_name
+                src.replace(dst)
+                print(f"✓ PDF → {dst}")
+
+    except TimeoutError as te:
+        print("build_poesie_drafts_adapter.py: TimeoutError while running poesie_pdf: %s" % str(te))
         traceback.print_exc()
         sys.stdout.flush()
         raise
+    except Exception as e:
+        print("build_poesie_drafts_adapter.py: Exception while running poesie_pdf:", str(e))
+        traceback.print_exc()
+        sys.stdout.flush()
+        raise
+    finally:
+        # Cleanup NACH dem PDF-Verschieben
+        # --- Cleanup: delete temp files ---
+        try:
+            if config_file and config_file.exists():
+                config_file.unlink()
+        except Exception:
+            pass
+        try:
+            if temp_input.exists():
+                temp_input.unlink()
+        except Exception:
+            pass
 
+    # --- END robust subprocess invocation ---
+    
+def apply_bold_if_needed(text, bold_text):
+    """Apply bold formatting if needed, preserving existing styles"""
+    if bold_text:
+        # Check if text already has a style attribute (e.g., color)
+        if '<span style="' in text:
+            # Insert font-weight: bold into existing style
+            text = text.replace('<span style="', '<span style="font-weight: bold; ')
+        else:
+            # No existing style, just add bold
+            return f"<b>{text}</b>"
+    return text
+
+def main():
+    # Dieser Adapter wird typischerweise mit genau einem Dateipfad aufgerufen.
+    if len(sys.argv) < 2:
+        print(f"Verwendung: python {sys.argv[0]} <input_file_path>")
+        sys.exit(1)
+    
+    input_file = Path(sys.argv[1])
+    
+    if not input_file.exists():
+        print(f"✗ Eingabedatei nicht gefunden: {input_file}")
+        sys.exit(1)
+
+    run_one(input_file)
+
+if __name__ == "__main__":
+    main()
+######## END: build_poesie_drafts_adapter.py ########
