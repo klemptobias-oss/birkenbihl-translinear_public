@@ -474,13 +474,14 @@ def is_insertion_line(line_num: str | None) -> bool:
 
 def detect_language_count_from_context(lines: list, current_idx: int) -> int:
     """
-    Erkennt, ob der Text 2-sprachig oder 3-sprachig ist, indem die umgebenden Zeilen analysiert werden.
+    Erkennt, ob der Text 2-, 3- oder 4-zeilig ist (1 antike + 1-3 Übersetzungen),
+    indem die umgebenden Zeilen analysiert werden.
     
     Sucht nach normalen Zeilen (ohne 'i' oder 'k' Suffix) und zählt, wie viele Zeilen mit
     der gleichen Basisnummer aufeinanderfolgen.
     
     Returns:
-        2 oder 3 (Anzahl der Sprachen im Text)
+        2, 3 oder 4 (Anzahl der Zeilen pro Block: 1 antike + 1-3 Übersetzungen)
     """
     # Suche rückwärts nach der letzten normalen Zeile (keine k, i Suffixe)
     search_range = 50  # Suche max. 50 Zeilen vor/nach
@@ -518,10 +519,10 @@ def detect_language_count_from_context(lines: list, current_idx: int) -> int:
             else:
                 break
         
-        # Wenn wir 2 oder 3 Zeilen gefunden haben, geben wir das zurück
+        # Wenn wir 2, 3 oder 4 Zeilen gefunden haben, geben wir das zurück
         count = len(lines_with_same_num)
         if count >= 2:
-            return min(count, 3)  # Max 3 (2 oder 3 Sprachen)
+            return min(count, 4)  # NEU: Max 4 (1 antike + bis zu 3 Übersetzungen)
     
     # Fallback: Suche vorwärts
     for offset in range(1, min(search_range, len(lines) - current_idx)):
@@ -559,7 +560,7 @@ def detect_language_count_from_context(lines: list, current_idx: int) -> int:
         
         count = len(lines_with_same_num)
         if count >= 2:
-            return min(count, 3)
+            return min(count, 4)  # NEU: Max 4 (1 antike + bis zu 3 Übersetzungen)
     
     # Default: 2-sprachig
     return 2
@@ -1494,6 +1495,9 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                     de_line = insertion_group[1]
                     en_line = insertion_group[2] if expected_lines_per_insertion >= 3 and len(insertion_group) >= 3 else None
                     
+                    # NEU: Optionale 4. Zeile (dritte Übersetzung) bei Insertionszeilen
+                    trans3_line = insertion_group[3] if expected_lines_per_insertion >= 4 and len(insertion_group) >= 4 else None
+                    
                     # Tokenisieren & führende Label/Sprecher abwerfen
                     gr_tokens = tokenize(gr_line)
                     de_tokens = tokenize(de_line)
@@ -1516,6 +1520,12 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                     if en_line:
                         en_tokens = tokenize(en_line)
                         lbl_en, base_en, sp_en, en_tokens = split_leading_label_and_speaker(en_tokens)
+                    
+                    # NEU: Für 4-zeilige Blöcke: Dritte Übersetzung verarbeiten
+                    trans3_tokens = []
+                    if trans3_line:
+                        trans3_tokens = tokenize(trans3_line)
+                        lbl_trans3, base_trans3, sp_trans3, trans3_tokens = split_leading_label_and_speaker(trans3_tokens)
 
                     blocks.append({
                         'type':'pair',
@@ -1525,6 +1535,7 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                         'gr_tokens': gr_tokens,
                         'de_tokens': de_tokens,
                         'en_tokens': en_tokens,
+                        'trans3_tokens': trans3_tokens,  # NEU: Dritte Übersetzung
                         'hide_trans_flags': hide_trans_flags
                     })
                     
@@ -1552,13 +1563,29 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                 if comment_found:
                     continue  # Kommentar gefunden - überspringe Tokenisierung
                 
-                # Kein Kommentar gefunden - verarbeite normal
-                # Zweisprachig (2) oder Dreisprachig (3+): gr/lat_de oder gr/lat_de_en
-                # WICHTIG: Erste Zeile = IMMER antike Sprache, zweite = IMMER Übersetzung
+                # NEUE FLEXIBILITÄT: Unterstütze 2-4 Zeilen pro Block (1 antike + 1-3 Übersetzungen)
+                # Bei 5+ Zeilen: Verarbeite die ersten 4, rest wird beim nächsten Durchlauf verarbeitet
+                
+                # WICHTIG: Wenn >= 5 Zeilen mit gleicher Nummer existieren, verarbeite nur die ersten 4
+                # und lasse die restlichen für den nächsten Block-Durchlauf übrig
+                if num_lines >= 5:
+                    # Verarbeite nur die ersten 4 Zeilen als einen Block
+                    lines_to_process = lines_with_same_num[:4]
+                    # WICHTIG: Setze j so, dass beim nächsten Durchlauf die 5. Zeile verarbeitet wird
+                    # j zeigt bereits auf die erste Zeile NACH allen gesammelten Zeilen
+                    # Wir müssen j um (num_lines - 4) zurücksetzen, damit die restlichen Zeilen verarbeitet werden
+                    j = i + 4  # Starte nächsten Block bei Zeile 5
+                else:
+                    lines_to_process = lines_with_same_num
+                
+                # WICHTIG: Erste Zeile = IMMER antike Sprache, weitere = Übersetzungen
                 # UNABHÄNGIG von Sprechern oder Buchstaben!
-                gr_line = lines_with_same_num[0]
-                de_line = lines_with_same_num[1]
-                en_line = lines_with_same_num[2] if num_lines >= 3 else None
+                gr_line = lines_to_process[0]
+                de_line = lines_to_process[1] if len(lines_to_process) >= 2 else None
+                en_line = lines_to_process[2] if len(lines_to_process) >= 3 else None
+                
+                # NEU: Optionale 4. Zeile (dritte Übersetzung)
+                trans3_line = lines_to_process[3] if len(lines_to_process) >= 4 else None
                 
                 # WICHTIG: Prüfe nochmal, ob eine der Zeilen ein Kommentar ist, BEVOR wir tokenisieren
                 gr_num, _ = extract_line_number(gr_line)
@@ -1592,6 +1619,13 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                     en_tokens = tokenize(en_line)
                     # Entferne Zeilennummer und Sprecher aus englischer Zeile
                     lbl_en, base_en, sp_en, en_tokens = split_leading_label_and_speaker(en_tokens)
+                
+                # NEU: Für 4-zeilige Blöcke: Dritte Übersetzung verarbeiten
+                trans3_tokens = []
+                if trans3_line:
+                    trans3_tokens = tokenize(trans3_line)
+                    # Entferne Zeilennummer und Sprecher aus dritter Übersetzungszeile
+                    lbl_trans3, base_trans3, sp_trans3, trans3_tokens = split_leading_label_and_speaker(trans3_tokens)
 
                 blocks.append({
                     'type':'pair',
@@ -1601,6 +1635,7 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                     'gr_tokens': gr_tokens,
                     'de_tokens': de_tokens,
                     'en_tokens': en_tokens,  # NEU: Englische Tokens für 3-sprachige Texte
+                    'trans3_tokens': trans3_tokens,  # NEU: Dritte Übersetzung für 4-zeilige Blöcke
                     'hide_trans_flags': hide_trans_flags  # NEU: HideTrans-Flags für jeden Token
                 })
                 
@@ -1838,6 +1873,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                           gr_bold: bool = False,
                           reserve_speaker_col: bool = False,
                           en_tokens: list[str] = None,
+                          trans3_tokens: list[str] = None,  # NEU: Dritte Übersetzung
                           tag_config: dict = None,
                           base_line_num: int = None,
                           line_comment_colors: dict = None,
@@ -1883,19 +1919,23 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         en_tokens = []
     if de_tokens is None:
         de_tokens = []
+    if trans3_tokens is None:  # NEU: Dritte Übersetzung
+        trans3_tokens = []
     
     # Wenn KEINE Übersetzungen vorhanden sind (alle ausgeblendet), zeige nur die griechische Zeile
     # WICHTIG: Prüfe mit any() ob irgendein Token nicht-leer ist (nicht nur ob Liste leer ist!)
-    if not any(de_tokens) and not any(en_tokens):
+    if not any(de_tokens) and not any(en_tokens) and not any(trans3_tokens):
         cols = len(gr_tokens)
         gr = gr_tokens[:]
         de = []
         en = []
+        trans3 = []
     else:
-        cols = max(len(gr_tokens), len(de_tokens), len(en_tokens))
+        cols = max(len(gr_tokens), len(de_tokens), len(en_tokens), len(trans3_tokens))
         gr = gr_tokens[:] + [''] * (cols - len(gr_tokens))
         de = de_tokens[:] + [''] * (cols - len(de_tokens))
         en = en_tokens[:] + [''] * (cols - len(en_tokens))
+        trans3 = trans3_tokens[:] + [''] * (cols - len(trans3_tokens))  # NEU: Dritte Übersetzung
 
     # Spaltenbreiten berechnen - KRITISCH: Bei NO_TAGS muss Breite OHNE Tags berechnet werden!
     widths = []
@@ -1903,6 +1943,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
         de_token = de[k] if (k < len(de) and de[k]) else ''  # WICHTIG: Hier definieren!
         en_token = en[k] if (k < len(en) and en[k]) else ''  # WICHTIG: Hier definieren!
+        trans3_token = trans3[k] if (k < len(trans3) and trans3[k]) else ''  # NEU: Dritte Übersetzung
         
         if gr_token:
             # KRITISCH: Prüfe ob dieses Token Tags HAT (die bei NO_TAGS entfernt werden)
@@ -1956,16 +1997,21 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         if hide_pipes:
             de_text = de_token.replace('|', ' ') if de_token else ''
             en_text = en_token.replace('|', ' ') if en_token else ''
+            trans3_text = trans3_token.replace('|', ' ') if trans3_token else ''  # NEU
             de_pipe_count = de_token.count('|') if de_token else 0
             en_pipe_count = en_token.count('|') if en_token else 0
+            trans3_pipe_count = trans3_token.count('|') if trans3_token else 0  # NEU
             space_vs_pipe_diff = token_de_style.fontSize * 0.25
             de_pipe_extra = de_pipe_count * space_vs_pipe_diff
             en_pipe_extra = en_pipe_count * space_vs_pipe_diff
+            trans3_pipe_extra = trans3_pipe_count * space_vs_pipe_diff  # NEU
         else:
             de_text = de_token
             en_text = en_token
+            trans3_text = trans3_token  # NEU
             de_pipe_extra = 0.0
             en_pipe_extra = 0.0
+            trans3_pipe_extra = 0.0  # NEU
         
         w_de = visible_measure_token(de_text, font=token_de_style.fontName, 
                                      size=token_de_style.fontSize, cfg=eff_cfg, 
@@ -1973,11 +2019,15 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         w_en = visible_measure_token(en_text, font=token_de_style.fontName, 
                                      size=token_de_style.fontSize, cfg=eff_cfg, 
                                      is_greek_row=False) if en_text else 0.0
+        w_trans3 = visible_measure_token(trans3_text, font=token_de_style.fontName,  # NEU
+                                     size=token_de_style.fontSize, cfg=eff_cfg, 
+                                     is_greek_row=False) if trans3_text else 0.0
         
         w_de += de_pipe_extra
         w_en += en_pipe_extra
+        w_trans3 += trans3_pipe_extra  # NEU
         
-        widths.append(max(w_gr, w_de, w_en))
+        widths.append(max(w_gr, w_de, w_en, w_trans3))  # NEU: Include trans3
 
     # JETZT kommt der Rest der Funktion (Layout-Berechnung, Tabellen-Erstellung, etc.)
     # Die restlichen 800+ Zeilen der Funktion bleiben UNVERÄNDERT...
@@ -2022,6 +2072,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
 
         slice_gr, slice_de, slice_w = gr[i:j], de[i:j], widths[i:j]
         slice_en = en[i:j]  # Für 3-sprachige Texte
+        slice_trans3 = trans3[i:j]  # NEU: Für 4-zeilige Blöcke
 
         # Zellen
         def _p(text, st): return Paragraph(text, st)
@@ -2186,6 +2237,46 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     en_html_centered = center_word_in_width(en_html, en_meas, en_width, token_de_style.fontName, token_de_style.fontSize)
                     en_cells.append(Paragraph(en_html_centered, token_de_style))
 
+        # NEU: TRANS3-Zellen (für 4-zeilige Blöcke / dritte Übersetzung)
+        trans3_cells = []
+        has_trans3 = any(slice_trans3)
+        if has_trans3:
+            for idx, t in enumerate(slice_trans3):
+                # WICHTIG: Verwende hide_trans_flags (wurde VOR Preprocessing extrahiert!)
+                should_hide_trans = hide_trans_flags[idx] if idx < len(hide_trans_flags) else False
+                
+                if not t or should_hide_trans:
+                    # Leeres Token ODER HideTrans → keine Übersetzung anzeigen
+                    trans3_cells.append(Paragraph('', token_de_style))
+                else:
+                    # NEU: Pipes durch Leerzeichen ersetzen, wenn hide_pipes aktiviert ist
+                    t_processed = process_translation_token_poesie(t)
+                    
+                    # WICHTIG: Farbsymbol bestimmen aus token_meta
+                    color_symbol = None
+                    global_idx = i + idx
+                    token_meta = block.get('token_meta', [])
+                    if global_idx < len(token_meta):
+                        meta = token_meta[global_idx]
+                        color_symbol = meta.get('color_symbol')
+                    
+                    # Symbol-Handling wie bei de_cells und en_cells
+                    token_has_symbol = color_symbol and color_symbol in t_processed
+                    
+                    if color_symbol and not token_has_symbol:
+                        t_with_color = color_symbol + t_processed
+                    else:
+                        t_with_color = t_processed
+                    
+                    # format_token_markup entfernt das Symbol und gibt farbigen HTML zurück
+                    trans3_html = format_token_markup(t_with_color, is_greek_row=False, gr_bold=False, remove_bars_instead=True)
+                    
+                    # Breite OHNE Farbsymbol messen
+                    trans3_meas = visible_measure_token(t_processed, font=token_de_style.fontName, size=token_de_style.fontSize, cfg=eff_cfg, is_greek_row=False)
+                    trans3_width = slice_w[idx]
+                    trans3_html_centered = center_word_in_width(trans3_html, trans3_meas, trans3_width, token_de_style.fontName, token_de_style.fontSize)
+                    trans3_cells.append(Paragraph(trans3_html_centered, token_de_style))
+
         # Linke Spalten: NUM → Gap → SPRECHER → Gap → INDENT → Tokens
         # WICHTIG: Zeilennummer in <font> Tag wrappen, damit "-" nicht als Farbmarker interpretiert wird
         if first_slice and line_label:
@@ -2195,20 +2286,25 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         num_para_gr = _p(num_text, num_style)
         num_para_de = _p('\u00A0', num_style)
         num_para_en = _p('\u00A0', num_style) if has_en else None
+        num_para_trans3 = _p('\u00A0', num_style) if has_trans3 else None  # NEU
         num_gap_gr  = _p('', token_gr_style); num_gap_de = _p('', token_de_style)
         num_gap_en  = _p('', token_de_style) if has_en else None
+        num_gap_trans3 = _p('', token_de_style) if has_trans3 else None  # NEU
 
         # KRITISCHER FIX: Bei gestaffelten Zeilen sp_w=0, aber Sprecher trotzdem anzeigen!
         # Bedingung: (sp_w>0 OR is_staggered) AND speaker
         sp_para_gr  = _p(xml_escape(f"[{speaker}]:"), style_speaker) if (first_slice and (sp_w>0 or is_staggered) and speaker) else _p('', style_speaker)
         sp_para_de  = _p('', style_speaker)
         sp_para_en  = _p('', style_speaker) if has_en else None
+        sp_para_trans3 = _p('', style_speaker) if has_trans3 else None  # NEU
         sp_gap_gr   = _p('', token_gr_style); sp_gap_de = _p('', token_de_style)
         sp_gap_en   = _p('', token_de_style) if has_en else None
+        sp_gap_trans3 = _p('', token_de_style) if has_trans3 else None  # NEU
 
         indent_gr   = _p('', token_gr_style)
         indent_de   = _p('', token_de_style)
         indent_en   = _p('', token_de_style) if has_en else None
+        indent_trans3 = _p('', token_de_style) if has_trans3 else None  # NEU
 
         row_gr = [num_para_gr, num_gap_gr, sp_para_gr, sp_gap_gr, indent_gr] + gr_cells
         row_de = [num_para_de, num_gap_de, sp_para_de, sp_gap_de, indent_de] + de_cells
@@ -2219,21 +2315,25 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         # Wenn ALLE Tokens (HideTrans) haben → de_cells sind alle leer → Zeile soll kollabieren!
         has_visible_de = any(de[i] and not (hide_trans_flags[i] if i < len(hide_trans_flags) else False) for i in range(len(de)))
         has_visible_en = has_en and any(en[i] and not (hide_trans_flags[i] if i < len(hide_trans_flags) else False) for i in range(len(en)))
+        has_visible_trans3 = has_trans3 and any(trans3[i] and not (hide_trans_flags[i] if i < len(hide_trans_flags) else False) for i in range(len(trans3)))  # NEU
 
-        # Für 3-sprachige Texte: englische Zeile hinzufügen (nur wenn sichtbar!)
+        # NEU: Für 4-zeilige Blöcke: dritte Übersetzung hinzufügen
+        # Build table rows dynamically based on which translations are visible
+        table_rows = [row_gr]  # Ancient line always included
+        
+        if has_visible_de:
+            table_rows.append(row_de)
+        
         if has_visible_en:
             row_en = [num_para_en, num_gap_en, sp_para_en, sp_gap_en, indent_en] + en_cells
-            if has_visible_de:
-                tbl = Table([row_gr, row_de, row_en], colWidths=col_w, hAlign='LEFT')
-            else:
-                # Keine sichtbaren deutschen Übersetzungen, nur griechisch und englisch
-                tbl = Table([row_gr, row_en], colWidths=col_w, hAlign='LEFT')
-        elif has_visible_de:
-            # Nur griechisch und deutsch (Standard 2-sprachig) - aber nur wenn DE sichtbar!
-            tbl = Table([row_gr, row_de], colWidths=col_w, hAlign='LEFT')
-        else:
-            # Keine sichtbaren Übersetzungen (alle HideTrans!), nur griechische Zeile
-            tbl = Table([row_gr], colWidths=col_w, hAlign='LEFT')
+            table_rows.append(row_en)
+        
+        if has_visible_trans3:
+            row_trans3 = [num_para_trans3, num_gap_trans3, sp_para_trans3, sp_gap_trans3, indent_trans3] + trans3_cells
+            table_rows.append(row_trans3)
+        
+        # Create table with all visible rows
+        tbl = Table(table_rows, colWidths=col_w, hAlign='LEFT')
 
         # NEU: Prüfe, ob diese Zeile von einem Kommentar referenziert wird
         # WICHTIG: Wenn comment_token_mask vorhanden ist und nicht leer, unterdrücke Hintergrundfarbe
@@ -2669,6 +2769,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     next_gr_tokens = pair_b.get('gr_tokens', [])[:]
                     next_de_tokens = pair_b.get('de_tokens', [])[:]
                     next_en_tokens = pair_b.get('en_tokens', [])
+                    next_trans3_tokens = pair_b.get('trans3_tokens', [])  # NEU: Dritte Übersetzung
                     next_speaker = pair_b.get('speaker') or ''
                     next_line_label = pair_b.get('label') or ''
                     next_base_num = pair_b.get('base')
@@ -2721,6 +2822,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         meter_on=versmass_display and next_has_versmass,
                         tag_mode=tag_mode,  # WICHTIG: tag_mode übergeben für korrekte Tag-Entfernung
                         en_tokens=next_en_tokens,
+                        trans3_tokens=next_trans3_tokens,  # NEU: Dritte Übersetzung
                         tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                         base_line_num=next_base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
                         line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
@@ -2797,6 +2899,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             gr_tokens = b.get('gr_tokens', [])[:]
             de_tokens = b.get('de_tokens', [])[:]
             en_tokens = b.get('en_tokens', [])  # NEU: Englische Tokens für 3-sprachige Texte
+            trans3_tokens = b.get('trans3_tokens', [])  # NEU: Dritte Übersetzung für 4-zeilige Blöcke
             speaker   = b.get('speaker') or ''
             line_label= b.get('label') or ''
             base_num  = b.get('base')  # None oder int
@@ -2901,6 +3004,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 meter_on=versmass_display and has_versmass,
                 tag_mode=tag_mode,  # WICHTIG: tag_mode übergeben für korrekte Tag-Entfernung
                 en_tokens=en_tokens,
+                trans3_tokens=trans3_tokens,  # NEU: Dritte Übersetzung
                 tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                 base_line_num=base_num,  # NEU: Basis-Zeilennummer für Kommentar-Hinterlegung
                 line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
