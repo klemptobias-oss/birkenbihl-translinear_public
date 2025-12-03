@@ -474,14 +474,38 @@ def is_insertion_line(line_num: str | None) -> bool:
 
 def expand_slash_alternatives(tokens: list[str]) -> list[list[str]]:
     """
-    Expandiert Token-Listen mit `/`-Alternativen in mehrere Zeilen.
+    ═══════════════════════════════════════════════════════════════════════════════════════
+    BEDEUTUNGS-STRAUß: Expandiert Token-Listen mit `/`-Alternativen in mehrere Zeilen
+    ═══════════════════════════════════════════════════════════════════════════════════════
     
-    Beispiel:
+    ZWECK:
+        Implementiert das "BEDEUTUNGS-STRAUß"-Feature nach Vera F. Birkenbihl.
+        Erlaubt mehrere Übersetzungsalternativen für ein Wort, die eng untereinander
+        als "gekoppelte Doppel-/Dreifachzeile" dargestellt werden (wie DE/EN in 3-sprachigen PDFs).
+    
+    WARUM FUNKTIONIERT DAS SO GUT?
+        1. FRÜHE TRANSFORMATION: Diese Funktion wird GANZ AM ANFANG aufgerufen (in process_input_file),
+           VOR allen anderen Verarbeitungsschritten (Tagging, Farben, Meter-Marker, etc.)
+        2. SAUBERE DATENSTRUKTUR: Erzeugt `*_tokens_alternatives` Listen, die durch ALLE
+           nachfolgenden Schritte transparent durchgereicht werden
+        3. POSITION PRESERVATION: Leere Strings an Positionen ohne `/` erhalten die Token-Ausrichtung
+        4. KEINE DUPLIKATE: Griechische Zeile wird NICHT dupliziert (nur Übersetzungen expandiert)
+    
+    BEISPIEL:
         Input:  ['den|Mann/über|den|Mann', 'mir', 'sage,/verrate,', 'Muse,/Göttin,']
         Output: [
-            ['den|Mann', 'mir', 'sage,', 'Muse,'],
-            ['über|den|Mann', 'mir', 'verrate,', 'Göttin,']
+            ['den|Mann',         'mir', 'sage,',    'Muse,'],      # Alternative 0
+            ['über|den|Mann',    '',    'verrate,', 'Göttin,']     # Alternative 1
         ]
+        
+        WICHTIG: Leerer String ('') bei 'mir' in Alternative 1, weil 'mir' kein `/` hat!
+                 Dies erhält die Token-Positionen und Spaltenausrichtung im PDF.
+    
+    INTEGRATION MIT REST DES SYSTEMS:
+        - Tags (nomen, verb, etc.) werden VOR dieser Funktion extrahiert → bleiben erhalten
+        - Farben (#, +, -, §) sind bereits in Tokens → werden mitkopiert
+        - Meter-Marker (´ˆˉ) sind bereits in Tokens → werden mitkopiert
+        - HideTrans-Flags werden parallel gespeichert → funktionieren weiterhin
     
     Args:
         tokens: Liste von Tokens, möglicherweise mit `/`-Trennzeichen
@@ -489,7 +513,7 @@ def expand_slash_alternatives(tokens: list[str]) -> list[list[str]]:
     Returns:
         Liste von Token-Listen (eine pro Alternative)
         Wenn keine `/` vorhanden, wird eine einzige Zeile zurückgegeben
-        Max. 3 Zeilen (bei 2 `/` pro Token)
+        Max. 3 Alternativen (bei 2 `/` pro Token)
     """
     # Zähle maximale Anzahl von Alternativen über alle Tokens
     max_alternatives = 1
@@ -1584,6 +1608,24 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                     # ═══════════════════════════════════════════════════════════════════════════
                     # NEU: BEDEUTUNGS-STRAUß - Expandiere `/`-Alternativen (auch bei Insertionen!)
                     # ═══════════════════════════════════════════════════════════════════════════
+                    # WARUM HIER?
+                    #   - NACH Tokenisierung: Tokens sind bereits aufgespalten
+                    #   - NACH Label/Speaker-Extraktion: Strukturinformationen sind erhalten
+                    #   - NACH HideTrans-Extraktion: Flags sind bereits gesichert
+                    #   - NACH Elisions-Übertragung: Marker sind bereits propagiert
+                    #   - VOR Block-Erstellung: Datenstruktur kann sauber aufgebaut werden
+                    #
+                    # FUNKTIONSWEISE:
+                    #   1. Prüfe ob IRGENDEINE Übersetzung `/` enthält
+                    #   2. Expandiere ALLE Übersetzungen (auch die ohne `/`)
+                    #   3. Gleiche Anzahl Alternativen an (fülle mit leeren Zeilen auf)
+                    #   4. Speichere als *_tokens_alternatives Listen im Block
+                    #
+                    # RESULTAT:
+                    #   Block enthält EINE griechische Zeile + MEHRERE Übersetzungsalternativen
+                    #   Die Rendering-Funktion (build_tables_for_pair) erhält ALLE Alternativen
+                    #   und rendert sie als EINE gekoppelte Tabelle (nicht mehrere separate!)
+                    
                     has_slash_in_de = any('/' in token for token in de_tokens if token)
                     has_slash_in_en = any('/' in token for token in en_tokens if token)
                     has_slash_in_trans3 = any('/' in token for token in trans3_tokens if token)
@@ -1603,6 +1645,33 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                             en_lines.append([''] * len(en_tokens))
                         while len(trans3_lines) < max_alternatives:
                             trans3_lines.append([''] * len(trans3_tokens))
+                        
+                        # ═══════════════════════════════════════════════════════════════════
+                        # KRITISCH: Block-Struktur mit Alternativen
+                        # ═══════════════════════════════════════════════════════════════════
+                        # WARUM FUNKTIONIERT DAS SO GUT?
+                        #
+                        # 1. EINE GRIECHISCHE ZEILE: `gr_tokens` wird nur EINMAL gespeichert
+                        #    → Im PDF erscheint Griechisch nur einmal (kein Duplikat!)
+                        #
+                        # 2. MEHRERE ÜBERSETZUNGEN: `*_tokens_alternatives` sind LISTEN von Listen
+                        #    → Jede Alternative ist eine separate Token-Liste
+                        #    → Alle haben gleiche Länge (aufgefüllt mit leeren Strings)
+                        #
+                        # 3. KOMPATIBILITÄT: Normale Blöcke (ohne `/`) funktionieren weiterhin
+                        #    → Rendering-Code prüft ob `*_tokens_alternatives` existiert
+                        #    → Falls nicht: Erstellt automatisch `[[de_tokens]]` (eine Alternative)
+                        #
+                        # 4. DURCHGÄNGIGKEIT: Alle nachfolgenden Schritte arbeiten mit dieser Struktur
+                        #    → Kommentare: Block wird durchgereicht
+                        #    → Farben: In token_meta gespeichert, bleibt erhalten
+                        #    → Tags: Bereits extrahiert, funktioniert parallel
+                        #    → Hide-Trans: Flags parallel gespeichert, funktioniert weiterhin
+                        #
+                        # 5. RENDERING: build_tables_for_pair() erhält ALLE Alternativen gleichzeitig
+                        #    → Baut EINE Tabelle mit mehreren DE-Zeilen (nicht separate Tabellen!)
+                        #    → Minimales Padding zwischen Alternativen (gap_de_to_en)
+                        #    → Sieht aus wie EN unter DE in 3-sprachigen PDFs
                         
                         # NEU: Erstelle EINEN Block mit MEHREREN Übersetzungsvarianten
                         # Die griechische Zeile erscheint nur EINMAL, aber mit mehreren Übersetzungen darunter
@@ -2016,7 +2085,62 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                           en_tokens_alternatives: list[list[str]] = None,
                           trans3_tokens_alternatives: list[list[str]] = None):
     """
-    Erstellt die Tabellen für ein Verspaar (pair/flow).
+    ═══════════════════════════════════════════════════════════════════════════════════════
+    HAUPTFUNKTION: Erstellt ReportLab-Tabellen für ein griechisch-deutsches Verspaar
+    ═══════════════════════════════════════════════════════════════════════════════════════
+    
+    KERNFUNKTIONALITÄT:
+        Baut Tabellen mit Token-Spalten für:
+        - Griechische Zeile (einmal)
+        - Deutsche Übersetzung(en) (mehrere möglich durch `/`-Alternativen)
+        - Englische Übersetzung(en) (optional)
+        - Dritte Übersetzung(en) (optional)
+    
+    BEDEUTUNGS-STRAUß INTEGRATION:
+        Diese Funktion wurde erweitert um MEHRERE Übersetzungsalternativen zu unterstützen.
+        
+        ALTE ARCHITEKTUR (vor `/`-Feature):
+            - Ein Aufruf = Eine Tabelle mit [GR, DE, EN?, trans3?] Zeilen
+            - Für Alternativen: Multiple Aufrufe → Multiple separate Tabellen → Große Abstände
+        
+        NEUE ARCHITEKTUR (mit `/`-Feature):
+            - Ein Aufruf = Eine Tabelle mit [GR, DE-alt0, DE-alt1, DE-alt2, EN?, trans3?] Zeilen
+            - ALLE Alternativen in EINER Tabelle → Minimale Abstände zwischen Alternativen
+            - Sieht aus wie DE/EN in 3-sprachigen PDFs (eng gekoppelt)
+    
+    WARUM FUNKTIONIERT DAS SO GUT?
+        1. PARAMETER-DESIGN: Akzeptiert sowohl alte (de_tokens) als auch neue Parameter
+           (*_tokens_alternatives), dadurch 100% rückwärtskompatibel
+        
+        2. AUTOMATISCHE KONVERTIERUNG: Wenn alte Parameter übergeben werden, wandelt
+           Funktion automatisch in neue Struktur um (Zeile 2069-2093)
+        
+        3. EINHEITLICHE VERARBEITUNG: Ab Zeile 2094 arbeitet Code nur noch mit
+           *_lines Listen, egal ob Alternativen vorhanden oder nicht
+        
+        4. SPALTENBREITEN: Berechnet maximale Breite über ALLE Alternativen (Zeile 2119-2136)
+           → Alle Alternativen-Zeilen haben gleiche Spaltenbreiten
+           → Token bleiben vertikal ausgerichtet
+        
+        5. ZEILEN-BAU: Schleife baut zusätzliche DE-Zeilen für Alternativen (Zeile 2559-2601)
+           → Verwendet gleiche Zell-Erstellung wie Haupt-DE-Zeile
+           → Keine Zeilennummer/Sprecher bei Alternativen (leere Strings)
+        
+        6. PADDING-LOGIK: Dynamische Style-Regeln basierend auf Anzahl Alternativen
+           (Zeile 2668-2683 für meter_on, Zeile 2715-2730 für normale PDFs)
+           → GR-zu-DE: Normaler Abstand (gap_ancient_to_modern)
+           → DE-zu-DE-alt: Minimaler Abstand (gap_de_to_en, wie DE-zu-EN!)
+           → Alternativen bilden "gekoppelte Mehrfachzeile"
+    
+    KOMPATIBILITÄT MIT ANDEREN FEATURES:
+        - Tags (nomen, verb): Funktioniert! Token-Meta parallel durchgereicht
+        - Farben (#+-§): Funktioniert! In Tokens enthalten, werden mitkopiert
+        - HideTrans: Funktioniert! Flags parallel gespeichert, gelten für alle Alternativen
+        - Meter (Versmaß): Funktioniert! Gilt nur für GR-Zeile (die nur einmal erscheint)
+        - Kommentare: Funktioniert! Block wird durchgereicht mit allen Infos
+        - Sprecher: Funktioniert! Nur bei erster Alternative angezeigt
+        - Gestaffelte Zeilen: Funktioniert! Indent gilt für gesamten Block
+    
     WICHTIG: Spaltenbreiten müssen NACH dem Tag-Entfernen berechnet werden!
     
     hide_trans_flags: Optional[List[bool]]
@@ -2024,7 +2148,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         Diese Flags werden VOR dem Preprocessing extrahiert, damit sie verfügbar sind.
     
     de_tokens_alternatives, en_tokens_alternatives, trans3_tokens_alternatives: Optional[List[List[str]]]
-        Alternative Übersetzungen (BEDEUTUNGS-STRAUß durch `/` erzeugt).
+        NEU: Alternative Übersetzungen (BEDEUTUNGS-STRAUß durch `/` erzeugt).
         Wenn angegeben, werden ALLE Alternativen in EINER Tabelle gerendert (eng untereinander).
         de_tokens/en_tokens/trans3_tokens werden dann ignoriert!
     """
@@ -2036,6 +2160,19 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     # ═══════════════════════════════════════════════════════════════════
     # NEU: BEDEUTUNGS-STRAUß - Alternative Übersetzungen verarbeiten
     # ═══════════════════════════════════════════════════════════════════
+    # ZWECK: Konvertiere alte API (de_tokens) zu neuer API (*_tokens_alternatives)
+    #        Dies macht die Funktion 100% rückwärtskompatibel!
+    #
+    # FUNKTIONSWEISE:
+    #   - Wenn *_tokens_alternatives angegeben: Verwende diese (neuer Code-Pfad)
+    #   - Wenn NICHT angegeben: Konvertiere de_tokens zu [[de_tokens]] (alter Code-Pfad)
+    #   - Ab diesem Punkt arbeitet ALLES mit *_lines Listen
+    #
+    # WARUM SO?
+    #   - Alter Code (ohne `/`) muss weiterhin funktionieren
+    #   - Neuer Code (mit `/`) verwendet bereits die neue Struktur
+    #   - Diese Konvertierung macht beide Fälle identisch für Rest der Funktion
+    
     # Wenn *_tokens_alternatives angegeben sind, verwende diese statt einzelner Tokens
     # Konvertiere sie in Listen von Alternativen für die spätere Verarbeitung
     if de_tokens_alternatives is not None:
@@ -2086,6 +2223,20 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             eff_cfg['INTER_PAIR_GAP_MM'] = INTER_PAIR_GAP_MM_NORMAL_NOTAG
 
     # WICHTIG: Spaltenlängen angleichen (zeilengetreu) - MUSS VOR der widths-Berechnung kommen!
+    # ═══════════════════════════════════════════════════════════════════
+    # BEDEUTUNGS-STRAUß: Berechne maximale Spaltenanzahl über ALLE Alternativen
+    # ═══════════════════════════════════════════════════════════════════
+    # WARUM?
+    #   - Verschiedene Alternativen können unterschiedlich viele Tokens haben
+    #   - Beispiel: Alt 0 = 5 Tokens, Alt 1 = 7 Tokens → Tabelle braucht 7 Spalten
+    #   - Alle kürzeren Alternativen werden mit leeren Strings aufgefüllt
+    #
+    # FUNKTIONSWEISE:
+    #   1. Iteriere über ALLE Alternativen in de_lines, en_lines, trans3_lines
+    #   2. Finde maximale Länge
+    #   3. Fülle alle kürzeren Listen mit leeren Strings auf
+    #   4. Ergebnis: Alle de_lines[i] haben gleiche Länge (=cols)
+    
     # Bei Alternativen: Berechne maximale Spaltenanzahl über ALLE Alternativen
     gr = gr_tokens[:]
     
@@ -2116,7 +2267,23 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     en = en_lines[0] if en_lines else []
     trans3 = trans3_lines[0] if trans3_lines else []
 
+    # ═══════════════════════════════════════════════════════════════════
     # Spaltenbreiten berechnen - KRITISCH: Bei NO_TAGS muss Breite OHNE Tags berechnet werden!
+    # ═══════════════════════════════════════════════════════════════════
+    # BEDEUTUNGS-STRAUß: Berechne maximale Breite über ALLE Alternativen
+    # ═══════════════════════════════════════════════════════════════════
+    # WARUM?
+    #   - Verschiedene Alternativen können unterschiedlich breite Tokens haben
+    #   - Beispiel: Alt 0 = "sage,", Alt 1 = "verrate," → Spalte braucht Breite für "verrate,"
+    #   - Alle Alternativen nutzen dann diese maximale Breite
+    #   - Resultat: Token bleiben vertikal ausgerichtet über alle Alternativen hinweg
+    #
+    # FUNKTIONSWEISE:
+    #   1. Iteriere über jede Spalte (0 bis cols-1)
+    #   2. Für jede Spalte: Finde längstes Token über ALLE Alternativen
+    #   3. Berechne Breite für dieses längste Token
+    #   4. Diese Breite gilt für die Spalte in ALLEN Alternativen
+    
     widths = []
     for k in range(cols):
         gr_token = gr[k] if (k < len(gr) and gr[k]) else ''
@@ -2521,16 +2688,47 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         
         # ═══════════════════════════════════════════════════════════════════
         # NEU: BEDEUTUNGS-STRAUß - Zusätzliche Übersetzungsalternativen
-        # Füge zusätzliche DE-Zeilen hinzu für Alternativen 1, 2, 3, ...
-        # Diese werden ENG unter der ersten DE-Zeile platziert (wie EN unter DE)
         # ═══════════════════════════════════════════════════════════════════
+        # ZWECK: Füge zusätzliche DE-Zeilen hinzu für Alternativen 1, 2, 3, ...
+        #        Diese werden ENG unter der ersten DE-Zeile platziert (wie EN unter DE)
+        #
+        # WARUM HIER?
+        #   - Nach row_de (erste DE-Zeile ist bereits gebaut)
+        #   - Vor row_en (EN-Zeile kommt nach ALLEN DE-Alternativen)
+        #   - Innerhalb der Slice-Schleife (i:j) → Zeilenlänge automatisch korrekt
+        #
+        # FUNKTIONSWEISE:
+        #   1. Prüfe ob mehr als eine Alternative (len(de_lines) > 1)
+        #   2. Iteriere über Alternativen 1, 2, 3... (Index 0 ist bereits als row_de gebaut)
+        #   3. Für jede Alternative: Baue Zellen GENAU WIE für row_de
+        #   4. Wichtig: KEINE Zeilennummer, KEIN Sprecher (leere Paragraphs)
+        #   5. Füge Zeile zu table_rows hinzu
+        #
+        # RESULTAT:
+        #   table_rows = [row_gr, row_de_alt0, row_de_alt1, row_de_alt2, row_en?, row_trans3?]
+        #   Alle DE-Alternativen stehen zwischen GR und EN
+        #   Padding-Logik (weiter unten) macht sie "gekoppelt"
+        
         if len(de_lines) > 1:
             # Es gibt Alternativen! Rendere sie alle
             for alt_idx in range(1, len(de_lines)):
                 de_alt = de_lines[alt_idx]
                 slice_de_alt = de_alt[i:j]
                 
-                # Baue Zellen für diese Alternative
+                # ═══════════════════════════════════════════════════════════════
+                # Baue Zellen für diese Alternative - GENAU WIE für row_de!
+                # ═══════════════════════════════════════════════════════════════
+                # WICHTIG: Gleiche Logik wie bei de_cells (Zeile 2493-2536)
+                #   - HideTrans-Prüfung: Gleich
+                #   - Pipe-Ersetzung: Gleich (hide_pipes wird angewendet)
+                #   - Farbsymbole: Gleich (aus token_meta)
+                #   - Zentrierung: Gleich (center_word_in_width)
+                #
+                # WARUM DUPLIZIERUNG?
+                #   - Code muss identisch sein zu de_cells für Konsistenz
+                #   - Könnte in Funktion extrahiert werden, aber dann schlechter lesbar
+                #   - Duplizierung ist akzeptabel für diese ~20 Zeilen
+                
                 de_alt_cells = []
                 for idx, t in enumerate(slice_de_alt):
                     should_hide_trans = hide_trans_flags[idx] if idx < len(hide_trans_flags) else False
@@ -2617,9 +2815,39 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 style_list.append(('TOPPADDING',    (0,1), (-1,1), gap_ancient_to_modern/2.0))
             
             # ═══════════════════════════════════════════════════════════════════
-            # NEU: BEDEUTUNGS-STRAUß - Padding zwischen Übersetzungsalternativen
-            # Alternativen sollen ENG untereinander stehen (wie EN unter DE)
+            # NEU: BEDEUTUNGS-STRAUß - Padding zwischen Übersetzungsalternativen (METER_ON)
             # ═══════════════════════════════════════════════════════════════════
+            # ZWECK: Alternativen sollen ENG untereinander stehen (wie EN unter DE in 3-sprachigen PDFs)
+            #        Dies ist das HERZSTÜCK der "gekoppelten Doppel-/Dreifachzeile"!
+            #
+            # WARUM FUNKTIONIERT DAS?
+            #   1. DYNAMISCHE ZEILEN-INDIZES: Berechne Position jeder Alternative in table_rows
+            #   2. MINIMALES PADDING: Verwende gap_de_to_en (gleich wie DE→EN, z.B. 0.2-0.7mm)
+            #   3. UNTERSCHIED ZU NORMALEM ABSTAND: gap_ancient_to_modern ist VIEL größer (1-2mm)
+            #   4. VISUELLER EFFEKT: Alternativen "kleben zusammen", Blöcke sind getrennt
+            #
+            # ZEILEN-STRUKTUR IN table_rows:
+            #   Index 0: row_gr              (Griechische Zeile)
+            #   Index 1: row_de (Alternative 0)   ← Erste DE-Zeile
+            #   Index 2: row_de_alt1              ← Zweite DE-Zeile (wenn vorhanden)
+            #   Index 3: row_de_alt2              ← Dritte DE-Zeile (wenn vorhanden)
+            #   Index 4: row_en (wenn vorhanden)  ← EN-Zeile
+            #   Index 5: row_trans3 (wenn vorhanden)
+            #
+            # PADDING-REGELN:
+            #   - Zeile 0→1: gap_ancient_to_modern (normal, GR zu erster DE)
+            #   - Zeile 1→2: gap_de_to_en (MINIMAL, erste zu zweiter DE-Alternative)
+            #   - Zeile 2→3: gap_de_to_en (MINIMAL, zweite zu dritter DE-Alternative)
+            #   - Zeile N→EN: gap_de_to_en (MINIMAL, letzte DE-Alternative zu EN)
+            #
+            # BEISPIEL (3 Alternativen):
+            #   table_rows hat Indizes: [0:GR, 1:DE0, 2:DE1, 3:DE2, 4:EN]
+            #   num_de_alternatives = 3
+            #   Schleife: alt_idx = 1, 2
+            #     alt_idx=1: row_idx=2 → Padding zwischen Index 1↔2 (DE0↔DE1)
+            #     alt_idx=2: row_idx=3 → Padding zwischen Index 2↔3 (DE1↔DE2)
+            #   en_row_idx = 1+3 = 4 → Padding zwischen Index 3↔4 (DE2↔EN)
+            
             num_de_alternatives = len(de_lines)
             if num_de_alternatives > 1:
                 # Erste DE-Zeile ist an Index 1, weitere Alternativen folgen
