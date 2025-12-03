@@ -25,7 +25,8 @@ build/
 # Große/abgeleitete Artefakte – NIEMALS pushen
 # WICHTIG: Alle PDFs ignorieren (auch in Unterordnern)
 pdf/
-pdf_drafts/
+pdf_drafts/**
+!pdf_drafts/.gitkeep
 *.pdf
 
 Result/
@@ -43,6 +44,15 @@ zips/**
 
 Birkenbihl_text_repository/
 server.log
+
+# Lokale Draft-Inhalte (Ordner selbst bleibt, nur Inhalt ignoriert)
+# Nutzer-Uploads landen hier, aber lokale Test-Drafts NICHT pushen
+# Struktur bleibt erhalten (.gitkeep Files), aber alle .txt Dateien ignoriert
+texte_drafts/**/*.txt
+texte_drafts/**/*.pdf
+
+# Unklare/Debug-Dateien (gesamter Ordner ignoriert)
+UNKLAR_WAS_ES_GENAU_IST_KÖNNT_GUT_SEIN/
 
 # Lokale Einmal-/Hilfs-Skripte (nicht mehr versionieren)
 fix_layout.py
