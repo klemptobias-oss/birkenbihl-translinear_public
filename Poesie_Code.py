@@ -472,6 +472,60 @@ def is_insertion_line(line_num: str | None) -> bool:
         return False
     return line_num.lower().endswith('i')
 
+def expand_slash_alternatives(tokens: list[str]) -> list[list[str]]:
+    """
+    Expandiert Token-Listen mit `/`-Alternativen in mehrere Zeilen.
+    
+    Beispiel:
+        Input:  ['den|Mann/über|den|Mann', 'mir', 'sage,/verrate,', 'Muse,/Göttin,']
+        Output: [
+            ['den|Mann', 'mir', 'sage,', 'Muse,'],
+            ['über|den|Mann', 'mir', 'verrate,', 'Göttin,']
+        ]
+    
+    Args:
+        tokens: Liste von Tokens, möglicherweise mit `/`-Trennzeichen
+        
+    Returns:
+        Liste von Token-Listen (eine pro Alternative)
+        Wenn keine `/` vorhanden, wird eine einzige Zeile zurückgegeben
+        Max. 3 Zeilen (bei 2 `/` pro Token)
+    """
+    # Zähle maximale Anzahl von Alternativen über alle Tokens
+    max_alternatives = 1
+    for token in tokens:
+        if token:
+            # Zähle `/` im Token (jedes `/` fügt eine Alternative hinzu)
+            slash_count = token.count('/')
+            alternatives_in_token = slash_count + 1
+            max_alternatives = max(max_alternatives, alternatives_in_token)
+    
+    # Begrenze auf max. 3 Alternativen (2 `/` pro Token)
+    max_alternatives = min(max_alternatives, 3)
+    
+    # Erstelle die erweiterten Zeilen
+    result = []
+    for alt_idx in range(max_alternatives):
+        new_line = []
+        for token in tokens:
+            if not token:
+                new_line.append('')
+                continue
+            
+            # Splitte Token an `/`
+            alternatives = token.split('/')
+            
+            # Wähle die entsprechende Alternative (oder letzte, falls Index zu groß)
+            if alt_idx < len(alternatives):
+                new_line.append(alternatives[alt_idx])
+            else:
+                # Kein weiteres `/` in diesem Token - verwende leeren String
+                new_line.append('')
+        
+        result.append(new_line)
+    
+    return result
+
 def detect_language_count_from_context(lines: list, current_idx: int) -> int:
     """
     Erkennt, ob der Text 2-, 3- oder 4-zeilig ist (1 antike + 1-3 Übersetzungen),
@@ -1527,17 +1581,55 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                         trans3_tokens = tokenize(trans3_line)
                         lbl_trans3, base_trans3, sp_trans3, trans3_tokens = split_leading_label_and_speaker(trans3_tokens)
 
-                    blocks.append({
-                        'type':'pair',
-                        'speaker': speaker,
-                        'label': line_label,
-                        'base':  base_num,
-                        'gr_tokens': gr_tokens,
-                        'de_tokens': de_tokens,
-                        'en_tokens': en_tokens,
-                        'trans3_tokens': trans3_tokens,  # NEU: Dritte Übersetzung
-                        'hide_trans_flags': hide_trans_flags
-                    })
+                    # ═══════════════════════════════════════════════════════════════════════════
+                    # NEU: BEDEUTUNGS-STRAUß - Expandiere `/`-Alternativen (auch bei Insertionen!)
+                    # ═══════════════════════════════════════════════════════════════════════════
+                    has_slash_in_de = any('/' in token for token in de_tokens if token)
+                    has_slash_in_en = any('/' in token for token in en_tokens if token)
+                    has_slash_in_trans3 = any('/' in token for token in trans3_tokens if token)
+                    
+                    if has_slash_in_de or has_slash_in_en or has_slash_in_trans3:
+                        # Es gibt `/`-Alternativen! Expandiere die Übersetzungen
+                        de_lines = expand_slash_alternatives(de_tokens)
+                        en_lines = expand_slash_alternatives(en_tokens) if en_tokens else [[]]
+                        trans3_lines = expand_slash_alternatives(trans3_tokens) if trans3_tokens else [[]]
+                        
+                        # WICHTIG: Alle Zeilen müssen gleich viele Alternativen haben
+                        max_alternatives = max(len(de_lines), len(en_lines), len(trans3_lines))
+                        
+                        while len(de_lines) < max_alternatives:
+                            de_lines.append([''] * len(de_tokens))
+                        while len(en_lines) < max_alternatives:
+                            en_lines.append([''] * len(en_tokens))
+                        while len(trans3_lines) < max_alternatives:
+                            trans3_lines.append([''] * len(trans3_tokens))
+                        
+                        # Erstelle separate Blocks für jede Alternative
+                        for alt_idx in range(max_alternatives):
+                            blocks.append({
+                                'type':'pair',
+                                'speaker': speaker,
+                                'label': line_label,
+                                'base':  base_num,
+                                'gr_tokens': gr_tokens[:],  # Kopie! Griechisch bleibt gleich
+                                'de_tokens': de_lines[alt_idx],
+                                'en_tokens': en_lines[alt_idx],
+                                'trans3_tokens': trans3_lines[alt_idx],
+                                'hide_trans_flags': hide_trans_flags
+                            })
+                    else:
+                        # Keine `/`-Alternativen - normaler Block
+                        blocks.append({
+                            'type':'pair',
+                            'speaker': speaker,
+                            'label': line_label,
+                            'base':  base_num,
+                            'gr_tokens': gr_tokens,
+                            'de_tokens': de_tokens,
+                            'en_tokens': en_tokens,
+                            'trans3_tokens': trans3_tokens,  # NEU: Dritte Übersetzung
+                            'hide_trans_flags': hide_trans_flags
+                        })
                     
                     insertion_idx += expected_lines_per_insertion
                 
@@ -1627,17 +1719,58 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                     # Entferne Zeilennummer und Sprecher aus dritter Übersetzungszeile
                     lbl_trans3, base_trans3, sp_trans3, trans3_tokens = split_leading_label_and_speaker(trans3_tokens)
 
-                blocks.append({
-                    'type':'pair',
-                    'speaker': speaker,
-                    'label': line_label,
-                    'base':  base_num,
-                    'gr_tokens': gr_tokens,
-                    'de_tokens': de_tokens,
-                    'en_tokens': en_tokens,  # NEU: Englische Tokens für 3-sprachige Texte
-                    'trans3_tokens': trans3_tokens,  # NEU: Dritte Übersetzung für 4-zeilige Blöcke
-                    'hide_trans_flags': hide_trans_flags  # NEU: HideTrans-Flags für jeden Token
-                })
+                # ═══════════════════════════════════════════════════════════════════════════
+                # NEU: BEDEUTUNGS-STRAUß - Expandiere `/`-Alternativen in Übersetzungen
+                # ═══════════════════════════════════════════════════════════════════════════
+                # Prüfe ob IRGENDEINE Übersetzungszeile `/` enthält
+                has_slash_in_de = any('/' in token for token in de_tokens if token)
+                has_slash_in_en = any('/' in token for token in en_tokens if token)
+                has_slash_in_trans3 = any('/' in token for token in trans3_tokens if token)
+                
+                if has_slash_in_de or has_slash_in_en or has_slash_in_trans3:
+                    # Es gibt `/`-Alternativen! Expandiere die Übersetzungen
+                    de_lines = expand_slash_alternatives(de_tokens)
+                    en_lines = expand_slash_alternatives(en_tokens) if en_tokens else [[]]
+                    trans3_lines = expand_slash_alternatives(trans3_tokens) if trans3_tokens else [[]]
+                    
+                    # WICHTIG: Alle Zeilen müssen gleich viele Alternativen haben
+                    # Fülle kürzere Listen mit leeren Zeilen auf
+                    max_alternatives = max(len(de_lines), len(en_lines), len(trans3_lines))
+                    
+                    while len(de_lines) < max_alternatives:
+                        de_lines.append([''] * len(de_tokens))
+                    while len(en_lines) < max_alternatives:
+                        en_lines.append([''] * len(en_tokens))
+                    while len(trans3_lines) < max_alternatives:
+                        trans3_lines.append([''] * len(trans3_tokens))
+                    
+                    # Erstelle separate Blocks für jede Alternative
+                    # WICHTIG: Die griechische Zeile bleibt GLEICH für alle Alternativen!
+                    for alt_idx in range(max_alternatives):
+                        blocks.append({
+                            'type':'pair',
+                            'speaker': speaker,
+                            'label': line_label,
+                            'base':  base_num,
+                            'gr_tokens': gr_tokens[:],  # Kopie! Griechisch bleibt gleich
+                            'de_tokens': de_lines[alt_idx],
+                            'en_tokens': en_lines[alt_idx],
+                            'trans3_tokens': trans3_lines[alt_idx],
+                            'hide_trans_flags': hide_trans_flags
+                        })
+                else:
+                    # Keine `/`-Alternativen - normaler Block
+                    blocks.append({
+                        'type':'pair',
+                        'speaker': speaker,
+                        'label': line_label,
+                        'base':  base_num,
+                        'gr_tokens': gr_tokens,
+                        'de_tokens': de_tokens,
+                        'en_tokens': en_tokens,  # NEU: Englische Tokens für 3-sprachige Texte
+                        'trans3_tokens': trans3_tokens,  # NEU: Dritte Übersetzung für 4-zeilige Blöcke
+                        'hide_trans_flags': hide_trans_flags  # NEU: HideTrans-Flags für jeden Token
+                    })
                 
                 # JETZT die gesammelten Kommentare einfügen (NACH dem pair-Block!)
                 for comment_block in comments_to_insert:
