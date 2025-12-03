@@ -2265,73 +2265,63 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     trans3_lines = [alt[:] + [''] * (cols - len(alt)) for alt in trans3_tokens_alternatives]
     
     # ═══════════════════════════════════════════════════════════════════
-    # NEU: "TETRIS-KOLLABIEREN" - Übersetzungsalternativen hochziehen
+    # NEU: "TETRIS-KOLLABIEREN" - ALLE Übersetzungszeilen gemeinsam kollabieren
     # ═══════════════════════════════════════════════════════════════════
-    # ZWECK: Wenn eine Alternative in Spalte K leer ist, soll die nächste
-    #        Alternative in diese Spalte "hochrutschen" (vertikal kollabieren)
+    # ZWECK: Tokens aus ALLEN Übersetzungszeilen (DE-Alternativen, EN, trans3)
+    #        sollen nach oben rutschen in leere Spalten
     #
-    # BEISPIEL:
+    # KRITISCH: Wir müssen DE + EN + trans3 als EINE GRUPPE behandeln!
+    #
+    # BEISPIEL (3-sprachiger Text mit / Alternativen):
     #   VORHER:
-    #     de_lines[0] = ["vieles", "", "er", ...]       ← Lücke in Spalte 1
-    #     de_lines[1] = ["ERGÄNZUNG", "", "", ...]      ← Lücke in Spalte 1
-    #     de_lines[2] = ["many|things", "but", "", ...] ← Hat Wert in Spalte 1!
+    #     de_lines[0] = ["vieles", "", "er", ...]        ← Lücke Spalte 1
+    #     de_lines[1] = ["ERGÄNZUNG", "", "", ...]       ← Lücke Spalte 1  
+    #     en_lines[0] = ["many|things", "but", "", ...]  ← Hat "but" in Spalte 1!
     #
     #   NACHHER:
-    #     de_lines[0] = ["vieles", "but", "er", ...]       ← "but" hochgezogen!
-    #     de_lines[1] = ["ERGÄNZUNG", "", "", ...]         ← Lücke bleibt
-    #     de_lines[2] = ["many|things", "", "", ...]       ← "but" entfernt (hochgezogen)
+    #     de_lines[0] = ["vieles", "but", "er", ...]        ← "but" hochgezogen!
+    #     de_lines[1] = ["ERGÄNZUNG", "", "", ...]          ← Lücke bleibt
+    #     en_lines[0] = ["many|things", "", "", ...]        ← "but" entfernt
     #
     # ALGORITHMUS:
-    #   Für jede Spalte k:
-    #     Für jede Alternative alt_idx (von 0 bis N-2):
-    #       Wenn de_lines[alt_idx][k] leer:
-    #         Suche in Alternativen alt_idx+1, alt_idx+2, ... nach nicht-leerem Token
-    #         Wenn gefunden: Verschiebe Token von source_idx zu alt_idx
-    #                       Setze source_idx[k] auf leer (Token wurde "hochgezogen")
-    #
-    # WARUM 3 SEPARATE SCHLEIFEN (de/en/trans3)?
-    #   - Jede Übersetzungssprache hat eigene Alternativen-Arrays
-    #   - Sie werden unabhängig voneinander kollabiert
-    #   - EN kollabiert zu DE nur wenn beide dieselbe Spalte teilen (nicht implementiert hier)
+    #   1. Kombiniere ALLE Übersetzungszeilen in eine Liste (de_lines + en_lines + trans3_lines)
+    #   2. Für jede Spalte k:
+    #        Für jede Zeile row_idx (von 0 bis N-2):
+    #          Wenn all_lines[row_idx][k] leer:
+    #            Suche in all_lines[row_idx+1...N] nach nicht-leerem Token
+    #            Ziehe Token hoch, entferne von Quelle
+    #   3. Trenne wieder in de_lines, en_lines, trans3_lines
     
-    def collapse_alternatives_vertical(lines_alternatives):
-        """
-        Kollabiert Übersetzungsalternativen vertikal: Leere Tokens werden durch 
-        nicht-leere Tokens aus tieferen Alternativen ersetzt.
-        
-        Args:
-            lines_alternatives: Liste von Token-Listen (eine pro Alternative)
-        
-        Returns:
-            Kollabierte Liste (modifiziert in-place, aber auch zurückgegeben)
-        """
-        if not lines_alternatives or len(lines_alternatives) < 2:
-            return lines_alternatives  # Nichts zu kollabieren
-        
-        num_alts = len(lines_alternatives)
-        num_cols = len(lines_alternatives[0]) if lines_alternatives else 0
+    # Kombiniere ALLE Übersetzungszeilen
+    all_translation_lines = de_lines + en_lines + trans3_lines
+    
+    if len(all_translation_lines) >= 2:
+        num_rows = len(all_translation_lines)
+        num_cols = len(all_translation_lines[0]) if all_translation_lines else 0
         
         # Für jede Spalte
         for k in range(num_cols):
-            # Für jede Alternative (von oben nach unten, außer letzte)
-            for alt_idx in range(num_alts - 1):
-                # Prüfe ob diese Alternative in Spalte k leer ist
-                if not lines_alternatives[alt_idx][k]:
-                    # Suche nach nicht-leerem Token in tieferen Alternativen
-                    for source_idx in range(alt_idx + 1, num_alts):
-                        source_token = lines_alternatives[source_idx][k]
+            # Für jede Zeile (von oben nach unten, außer letzte)
+            for row_idx in range(num_rows - 1):
+                # Prüfe ob diese Zeile in Spalte k leer ist
+                if not all_translation_lines[row_idx][k]:
+                    # Suche nach nicht-leerem Token in tieferen Zeilen
+                    for source_row in range(row_idx + 1, num_rows):
+                        source_token = all_translation_lines[source_row][k]
                         if source_token:
-                            # GEFUNDEN! Ziehe Token hoch
-                            lines_alternatives[alt_idx][k] = source_token
-                            lines_alternatives[source_idx][k] = ''  # Entferne von Quelle
-                            break  # Nur EINEN Token hochziehen (nicht mehrere stapeln)
+                            # GEFUNDEN! Ziehe Token hoch (TETRIS!)
+                            all_translation_lines[row_idx][k] = source_token
+                            all_translation_lines[source_row][k] = ''  # Entferne von Quelle
+                            break  # Nur EINEN Token hochziehen pro Lücke
         
-        return lines_alternatives
-    
-    # Kollabiere alle Übersetzungs-Alternativen
-    de_lines = collapse_alternatives_vertical(de_lines)
-    en_lines = collapse_alternatives_vertical(en_lines)
-    trans3_lines = collapse_alternatives_vertical(trans3_lines)
+        # Trenne wieder in de_lines, en_lines, trans3_lines
+        num_de = len(de_lines)
+        num_en = len(en_lines)
+        num_trans3 = len(trans3_lines)
+        
+        de_lines = all_translation_lines[0:num_de]
+        en_lines = all_translation_lines[num_de:num_de + num_en]
+        trans3_lines = all_translation_lines[num_de + num_en:num_de + num_en + num_trans3]
     
     # Für Kompatibilität: Verwende erste Alternative als de/en/trans3
     # (wird für Breitenberechnung benötigt)
