@@ -1552,10 +1552,13 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
             # NEU: Spezielle Behandlung für Insertionszeilen (i)
             # Bei konsekutiven (i)-Zeilen müssen wir sie in Gruppen aufteilen
             if first_line_num is not None and is_insertion_line(first_line_num):
-                # Erkenne, ob der Text 2-sprachig oder 3-sprachig ist
-                expected_lines_per_insertion = detect_language_count_from_context(lines, i)
+                # FÜR INSERTIONEN: Verwende die tatsächliche Anzahl der aufeinanderfolgenden Zeilen
+                # mit derselben Insertionsnummer, NICHT den Kontext drumherum!
+                # Wenn 4 Zeilen mit (777i) existieren → sie gehören ALLE zusammen
+                # (1. Zeile = Griechisch, 2.-4. Zeile = Deutsche Übersetzungen)
+                expected_lines_per_insertion = num_lines
                 
-                print(f"DEBUG: Insertionszeile erkannt: {first_line_num}, {num_lines} Zeilen gefunden, erwarte {expected_lines_per_insertion} Zeilen pro Insertion")
+                print(f"DEBUG: Insertionszeile erkannt: {first_line_num}, {num_lines} Zeilen gefunden, behandle als EINE zusammenhängende Gruppe")
                 
                 # Gruppiere die Zeilen in Blöcke von expected_lines_per_insertion
                 insertion_idx = 0
