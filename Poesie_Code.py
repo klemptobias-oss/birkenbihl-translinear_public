@@ -513,7 +513,7 @@ def expand_slash_alternatives(tokens: list[str]) -> list[list[str]]:
     Returns:
         Liste von Token-Listen (eine pro Alternative)
         Wenn keine `/` vorhanden, wird eine einzige Zeile zurückgegeben
-        Max. 3 Alternativen (bei 2 `/` pro Token)
+        Max. 4 Alternativen (bei 3 `/` pro Token)
     """
     # Zähle maximale Anzahl von Alternativen über alle Tokens
     max_alternatives = 1
@@ -524,8 +524,8 @@ def expand_slash_alternatives(tokens: list[str]) -> list[list[str]]:
             alternatives_in_token = slash_count + 1
             max_alternatives = max(max_alternatives, alternatives_in_token)
     
-    # Begrenze auf max. 3 Alternativen (2 `/` pro Token)
-    max_alternatives = min(max_alternatives, 3)
+    # Begrenze auf max. 4 Alternativen (3 `/` pro Token)
+    max_alternatives = min(max_alternatives, 4)
     
     # Erstelle die erweiterten Zeilen
     result = []
@@ -584,7 +584,7 @@ def detect_language_count_from_context(lines: list, current_idx: int) -> int:
         # Wir haben eine normale Zeile gefunden - zähle wie viele Zeilen mit dieser Nummer existieren
         lines_with_same_num = []
         j = check_idx
-        while j < len(lines) and len(lines_with_same_num) < 5:  # Max 5 Zeilen prüfen
+        while j < len(lines) and len(lines_with_same_num) < 6:  # Max 6 Zeilen prüfen (um 5 zu finden)
             test_line = (lines[j] or '').strip()
             if is_empty_or_sep(test_line):
                 j += 1
@@ -597,10 +597,10 @@ def detect_language_count_from_context(lines: list, current_idx: int) -> int:
             else:
                 break
         
-        # Wenn wir 2, 3 oder 4 Zeilen gefunden haben, geben wir das zurück
+        # Wenn wir 2, 3, 4 oder 5 Zeilen gefunden haben, geben wir das zurück
         count = len(lines_with_same_num)
         if count >= 2:
-            return min(count, 4)  # NEU: Max 4 (1 antike + bis zu 3 Übersetzungen)
+            return min(count, 5)  # NEU: Max 5 (1 antike + bis zu 4 Übersetzungen)
     
     # Fallback: Suche vorwärts
     for offset in range(1, min(search_range, len(lines) - current_idx)):
@@ -623,7 +623,7 @@ def detect_language_count_from_context(lines: list, current_idx: int) -> int:
         # Zähle Zeilen mit dieser Nummer
         lines_with_same_num = []
         j = check_idx
-        while j < len(lines) and len(lines_with_same_num) < 5:
+        while j < len(lines) and len(lines_with_same_num) < 6:  # Max 6 Zeilen prüfen (um 5 zu finden)
             test_line = (lines[j] or '').strip()
             if is_empty_or_sep(test_line):
                 j += 1
@@ -638,7 +638,7 @@ def detect_language_count_from_context(lines: list, current_idx: int) -> int:
         
         count = len(lines_with_same_num)
         if count >= 2:
-            return min(count, 4)  # NEU: Max 4 (1 antike + bis zu 3 Übersetzungen)
+            return min(count, 5)  # NEU: Max 5 (1 antike + bis zu 4 Übersetzungen)
     
     # Default: 2-sprachig
     return 2
@@ -2263,6 +2263,75 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     de_lines = [alt[:] + [''] * (cols - len(alt)) for alt in de_tokens_alternatives]
     en_lines = [alt[:] + [''] * (cols - len(alt)) for alt in en_tokens_alternatives]
     trans3_lines = [alt[:] + [''] * (cols - len(alt)) for alt in trans3_tokens_alternatives]
+    
+    # ═══════════════════════════════════════════════════════════════════
+    # NEU: "TETRIS-KOLLABIEREN" - Übersetzungsalternativen hochziehen
+    # ═══════════════════════════════════════════════════════════════════
+    # ZWECK: Wenn eine Alternative in Spalte K leer ist, soll die nächste
+    #        Alternative in diese Spalte "hochrutschen" (vertikal kollabieren)
+    #
+    # BEISPIEL:
+    #   VORHER:
+    #     de_lines[0] = ["vieles", "", "er", ...]       ← Lücke in Spalte 1
+    #     de_lines[1] = ["ERGÄNZUNG", "", "", ...]      ← Lücke in Spalte 1
+    #     de_lines[2] = ["many|things", "but", "", ...] ← Hat Wert in Spalte 1!
+    #
+    #   NACHHER:
+    #     de_lines[0] = ["vieles", "but", "er", ...]       ← "but" hochgezogen!
+    #     de_lines[1] = ["ERGÄNZUNG", "", "", ...]         ← Lücke bleibt
+    #     de_lines[2] = ["many|things", "", "", ...]       ← "but" entfernt (hochgezogen)
+    #
+    # ALGORITHMUS:
+    #   Für jede Spalte k:
+    #     Für jede Alternative alt_idx (von 0 bis N-2):
+    #       Wenn de_lines[alt_idx][k] leer:
+    #         Suche in Alternativen alt_idx+1, alt_idx+2, ... nach nicht-leerem Token
+    #         Wenn gefunden: Verschiebe Token von source_idx zu alt_idx
+    #                       Setze source_idx[k] auf leer (Token wurde "hochgezogen")
+    #
+    # WARUM 3 SEPARATE SCHLEIFEN (de/en/trans3)?
+    #   - Jede Übersetzungssprache hat eigene Alternativen-Arrays
+    #   - Sie werden unabhängig voneinander kollabiert
+    #   - EN kollabiert zu DE nur wenn beide dieselbe Spalte teilen (nicht implementiert hier)
+    
+    def collapse_alternatives_vertical(lines_alternatives):
+        """
+        Kollabiert Übersetzungsalternativen vertikal: Leere Tokens werden durch 
+        nicht-leere Tokens aus tieferen Alternativen ersetzt.
+        
+        Args:
+            lines_alternatives: Liste von Token-Listen (eine pro Alternative)
+        
+        Returns:
+            Kollabierte Liste (modifiziert in-place, aber auch zurückgegeben)
+        """
+        if not lines_alternatives or len(lines_alternatives) < 2:
+            return lines_alternatives  # Nichts zu kollabieren
+        
+        num_alts = len(lines_alternatives)
+        num_cols = len(lines_alternatives[0]) if lines_alternatives else 0
+        
+        # Für jede Spalte
+        for k in range(num_cols):
+            # Für jede Alternative (von oben nach unten, außer letzte)
+            for alt_idx in range(num_alts - 1):
+                # Prüfe ob diese Alternative in Spalte k leer ist
+                if not lines_alternatives[alt_idx][k]:
+                    # Suche nach nicht-leerem Token in tieferen Alternativen
+                    for source_idx in range(alt_idx + 1, num_alts):
+                        source_token = lines_alternatives[source_idx][k]
+                        if source_token:
+                            # GEFUNDEN! Ziehe Token hoch
+                            lines_alternatives[alt_idx][k] = source_token
+                            lines_alternatives[source_idx][k] = ''  # Entferne von Quelle
+                            break  # Nur EINEN Token hochziehen (nicht mehrere stapeln)
+        
+        return lines_alternatives
+    
+    # Kollabiere alle Übersetzungs-Alternativen
+    de_lines = collapse_alternatives_vertical(de_lines)
+    en_lines = collapse_alternatives_vertical(en_lines)
+    trans3_lines = collapse_alternatives_vertical(trans3_lines)
     
     # Für Kompatibilität: Verwende erste Alternative als de/en/trans3
     # (wird für Breitenberechnung benötigt)
