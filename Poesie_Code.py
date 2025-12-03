@@ -3564,7 +3564,10 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 block=b,
                 hide_trans_flags=b.get('hide_trans_flags', [])
             )
-            elements.extend(tables)
+            # KRITISCH: KeepTogether() verhindert Seitenumbruch zwischen GR und DE!
+            # OHNE KeepTogether: GR kann am Seitenende, DE am Seitenanfang landen
+            # MIT KeepTogether: Gesamter Block (GR + alle DE-Alternativen) bleibt zusammen
+            elements.append(KeepTogether(tables))
             
             # Verwende de_tokens von der ERSTEN Alternative für kumulative Breitenberechnung
             de_tokens = de_tokens_alternatives[0] if de_tokens_alternatives else []
