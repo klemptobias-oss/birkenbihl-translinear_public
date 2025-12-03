@@ -967,7 +967,8 @@ class ToplineTokenFlowable(Flowable):
                 #       wenn nächstes Token mit | beginnt
                 if idx == num_segments - 1 and self.next_token_starts_with_bar:
                     # Kleine Verlängerung um Lücke zur Antenne zu schließen
-                    x1_draw += 0.8  # pt - genug um Lücke zu schließen, nicht zu viel
+                    # ANGEPASST: 0.8 → 0.5pt (war etwas zu viel, Wörter zu weit rechts)
+                    x1_draw += 0.5  # pt - genug um Lücke zu schließen, nicht zu viel
                 
                 # Zeichne Linie oder Kurve
                 if kind == 'L':
