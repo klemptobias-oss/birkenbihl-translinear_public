@@ -2458,21 +2458,31 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 w_gr += max(token_gr_style.fontSize * 0.03, 0.8)  # ERHÖHT von 0.3pt auf 0.8pt für Tag-PDFs!
             
             # ═══════════════════════════════════════════════════════════════════
-            # FIX: Extra-Padding bei Versmaß für Tokens mit vielen Bars
+            # FIX: Extra-Padding bei Versmaß für Tokens mit Bars
             # ═══════════════════════════════════════════════════════════════════
             # PROBLEM: Bei Versmaß sind | unsichtbar (weiß), nehmen aber Platz ein
-            #          Tokens zwischen zwei | (z.B. |ἀλλοδα|ποῖσι) kleben zusammen
-            # URSACHE: visible_measure_token() addiert | zur Breite, aber visuell
-            #          sind sie unsichtbar → kein sichtbarer Abstand zum nächsten Wort
-            # LÖSUNG: Bei Versmaß: Füge extra Padding hinzu basierend auf | -Anzahl
-            #         Je mehr |, desto mehr extra Padding (kompensiert unsichtbare |)
+            #          Tokens mit | kleben an benachbarten Tokens (z.B. |ἀλλοδα|ποῖσι)
+            # URSACHE: visible_measure_token() addiert nur leading/trailing | zur Breite
+            #          Aber visuell sind ALLE | unsichtbar → kein sichtbarer Abstand
+            # LÖSUNG: Bei Versmaß: Füge extra Padding für JEDEN Token mit ≥1 Bar hinzu
+            #         Mehr Bars → mehr Padding (kompensiert unsichtbare Bars)
+            # 
+            # BEISPIELE:
+            # - |ἀλλοδα|ποῖσι (bar_count=2) → Wort "eingeklammert"
+            # - Πειρεσι|ὰς (bar_count=1) → Bar in der Mitte
+            # - ὄρε|ος (bar_count=1) → Bar in der Mitte
+            # 
+            # Bei 2-Wort-Versen (z.B. "Πειρεσι|ὰς ὄρε|ος") kommen die Wörter
+            # sich sehr nahe, weil beide Tokens je 1 Bar haben und diese
+            # unsichtbar sind. Lösung: Auch bei bar_count=1 Extra-Padding!
             if meter_on:
                 bar_count = gr_token.count('|')
-                if bar_count >= 2:
-                    # Token ist "eingeklammert" von | (z.B. |word| oder |wo|rd|)
-                    # Füge signifikantes Extra-Padding hinzu
+                if bar_count >= 1:  # GEÄNDERT von ≥2 zu ≥1
+                    # Berechne Bar-Breite für diesen Font/Size
                     bar_width = _sw('|', token_gr_style.fontName, token_gr_style.fontSize)
-                    w_gr += bar_count * bar_width * 0.6  # 60% der Bar-Breite als Extra-Padding
+                    # Füge proportionales Extra-Padding hinzu
+                    # Faktor 0.8: 80% der Bar-Breite pro Bar als visueller Abstand
+                    w_gr += bar_count * bar_width * 0.8  # ERHÖHT von 0.6 auf 0.8
         else:
             w_gr = 0.0
         
@@ -2595,7 +2605,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     bridge_to_next=br_to_next,
                     next_has_leading_bar=next_has_lead,
                     is_first_in_line=(idx_in_slice == 0),
-                    next_token_starts_with_bar=next_tok_starts_bar
+                    next_token_starts_with_bar=next_tok_starts_with_bar  # FIX: Typo korrigiert
                 )
 
             # NICHT-Versmaß: Bars entfernen + pro Spaltenbreite weich zentrieren (Epos-Logik)
