@@ -1934,7 +1934,8 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                             'de_tokens_alternatives': de_lines,  # NEU: Liste von Alternativen
                             'en_tokens_alternatives': en_lines if en_tokens else None,  # NEU: Liste von Alternativen
                             'trans3_tokens_alternatives': trans3_lines if trans3_tokens else None,  # NEU: Liste von Alternativen
-                            'hide_trans_flags': hide_trans_flags
+                            'hide_trans_flags': hide_trans_flags,
+                            'inherited_markers': inherited_markers  # NEU: Für Ellisions-Fix! ✅
                         })
                     else:
                         # Keine `/`-Alternativen - normaler Block
@@ -1947,7 +1948,8 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                             'de_tokens': de_tokens,
                             'en_tokens': en_tokens,
                             'trans3_tokens': trans3_tokens,  # NEU: Dritte Übersetzung
-                            'hide_trans_flags': hide_trans_flags
+                            'hide_trans_flags': hide_trans_flags,
+                            'inherited_markers': inherited_markers  # NEU: Für Ellisions-Fix! ✅
                         })
                     
                     insertion_idx += expected_lines_per_insertion
@@ -2074,7 +2076,8 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                         'de_tokens_alternatives': de_lines,  # NEU: Liste von Alternativen
                         'en_tokens_alternatives': en_lines if en_tokens else None,  # NEU: Liste von Alternativen
                         'trans3_tokens_alternatives': trans3_lines if trans3_tokens else None,  # NEU: Liste von Alternativen
-                        'hide_trans_flags': hide_trans_flags
+                        'hide_trans_flags': hide_trans_flags,
+                        'inherited_markers': inherited_markers  # NEU: Für Ellisions-Fix! ✅
                     })
                 else:
                     # Keine `/`-Alternativen - normaler Block
@@ -2087,7 +2090,8 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                         'de_tokens': de_tokens,
                         'en_tokens': en_tokens,  # NEU: Englische Tokens für 3-sprachige Texte
                         'trans3_tokens': trans3_tokens,  # NEU: Dritte Übersetzung für 4-zeilige Blöcke
-                        'hide_trans_flags': hide_trans_flags  # NEU: HideTrans-Flags für jeden Token
+                        'hide_trans_flags': hide_trans_flags,  # NEU: HideTrans-Flags für jeden Token
+                        'inherited_markers': inherited_markers  # NEU: Für Ellisions-Fix! ✅
                     })
                 
                 # JETZT die gesammelten Kommentare einfügen (NACH dem pair-Block!)
@@ -3681,7 +3685,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     next_line_label = pair_b.get('label') or ''
                     next_base_num = pair_b.get('base')
 
-                    next_gr_tokens, next_inherited_markers = propagate_elision_markers(next_gr_tokens)
+                    # WICHTIG: Nutze inherited_markers AUS DEM BLOCK!
+                    # (wurde bereits bei der Block-Erstellung durch propagate_elision_markers berechnet)
+                    next_inherited_markers = pair_b.get('inherited_markers', {})
                     
                     # ═══════════════════════════════════════════════════════════════════
                     # KRITISCH: Sprecher-Breite MUSS VOR Indent-Berechnung erfolgen!
@@ -3836,9 +3842,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             line_label= b.get('label') or ''
             base_num  = b.get('base')  # None oder int
 
-            # >>> NEU: Elisions-Übertragung wie im Epos
-            gr_tokens, inherited_markers = propagate_elision_markers(gr_tokens)
-            # <<<
+            # WICHTIG: Nutze inherited_markers AUS DEM BLOCK!
+            # (wurde bereits bei der Block-Erstellung durch propagate_elision_markers berechnet)
+            inherited_markers = b.get('inherited_markers', {})
 
             # ═══════════════════════════════════════════════════════════════════════════
             # KRITISCH: Sprecher-Breite MUSS VOR Indent-Berechnung erfolgen!
