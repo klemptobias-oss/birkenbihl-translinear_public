@@ -1175,52 +1175,80 @@ def _resolve_tags_for_rule(normalized_rule_id: str) -> List[str]:
     return RULE_TAG_MAP.get(normalized_rule_id, [normalized_rule_id])
 
 def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[str, Dict[str, Any]]]) -> bool:
+    """
+    DEFENSIVE LOGIK (konsistent mit Tag-Ausblendung):
+    Übersetzung wird NUR ausgeblendet wenn ALLE Tags des Tokens auf "hideTranslation" stehen.
+    Solange mindestens EIN Tag noch sichtbar sein will → Übersetzung bleibt!
+    
+    Beispiel:
+      Token: Sorōrem(Adj)(A)
+      Config: 'adj' auf hideTranslation, 'adj_A' NICHT
+      → Übersetzung bleibt, weil (A) noch sichtbar sein will!
+    """
     if not token or not translation_rules:
         return False
 
     tags = _extract_tags(token)
-    # Prüfe zuerst auf HideTrans-Tag
+    # Prüfe zuerst auf HideTrans-Tag (explizites Flag im Token selbst)
     if TRANSLATION_HIDE_TAG in tags:
         return True
+    
+    # Keine Tags? → Übersetzung zeigen
+    if not tags:
+        return False
     
     # WICHTIG: Verwende ORIGINALE Tags (nicht normalisiert) für Wortart-Erkennung
     original_tags = set(tags)
     wortart, _ = _get_wortart_and_relevant_tags(original_tags)
     
+    # Sammle ALLE Tags die auf "hideTranslation" stehen
+    tags_that_want_to_hide = set()
+    
+    # 1. Prüfe wortart-spezifische Regeln (z.B. 'adjektiv', 'nomen')
     if wortart:
         wortart_key = wortart.lower()
         entry = translation_rules.get(wortart_key)
         if entry:
+            # Wenn "all" gesetzt ist: ALLE Tags dieser Wortart wollen ausblenden
             if entry.get("all"):
-                return True
-            # Prüfe auf Tags in entry["tags"]
-            entry_tags = entry.get("tags", set())
-            if entry_tags:
-                # Normalisiere beide Sets für Vergleich
-                normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
-                # Für jedes originale Tag: normalisiere es und prüfe
+                # Füge alle originalen Tags hinzu (normalisiert)
                 for orig_tag in original_tags:
                     parts = [p for p in orig_tag.split('/') if p]
                     for part in parts:
-                        normalized_part = _normalize_tag_name(part)
-                        if normalized_part in normalized_entry_tags:
-                            return True
-
+                        tags_that_want_to_hide.add(_normalize_tag_name(part))
+            else:
+                # Nur spezifische Tags dieser Wortart wollen ausblenden
+                entry_tags = entry.get("tags", set())
+                if entry_tags:
+                    normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
+                    tags_that_want_to_hide.update(normalized_entry_tags)
+    
+    # 2. Prüfe globale Regeln (z.B. '_global')
     global_entry = translation_rules.get(TRANSLATION_HIDE_GLOBAL)
     if global_entry:
         if global_entry.get("all"):
-            return True
-        entry_tags = global_entry.get("tags", set())
-        if entry_tags:
-            normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
+            # Alle Tags wollen ausblenden
             for orig_tag in original_tags:
                 parts = [p for p in orig_tag.split('/') if p]
                 for part in parts:
-                    normalized_part = _normalize_tag_name(part)
-                    if normalized_part in normalized_entry_tags:
-                        return True
-
-    return False
+                    tags_that_want_to_hide.add(_normalize_tag_name(part))
+        else:
+            entry_tags = global_entry.get("tags", set())
+            if entry_tags:
+                normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
+                tags_that_want_to_hide.update(normalized_entry_tags)
+    
+    # 3. DEFENSIVE PRÜFUNG: Gibt es mindestens EIN Tag das NICHT ausgeblendet werden will?
+    for orig_tag in original_tags:
+        parts = [p for p in orig_tag.split('/') if p]
+        for part in parts:
+            normalized_part = _normalize_tag_name(part)
+            # Wenn dieses Tag NICHT in der "hide"-Liste ist → Übersetzung bleibt!
+            if normalized_part not in tags_that_want_to_hide:
+                return False  # Mindestens ein Tag will sichtbar bleiben → Übersetzung zeigen!
+    
+    # Alle Tags wollen ausblenden → Übersetzung ausblenden
+    return True
 
 def _normalize_rule_id(rule_id: str) -> str:
     """
@@ -1247,16 +1275,35 @@ def _normalize_rule_id(rule_id: str) -> str:
     return rule_id
 
 def _register_translation_rule(rules: Dict[str, Dict[str, Any]], normalized_rule_id: str) -> None:
+    """
+    Registriert eine Regel für Übersetzungs-Ausblendung.
+    
+    WICHTIG: Konsistent mit Tag-Visibility-Logik:
+    - Gruppenanführer MIT eigenem Tag (Adj, Art, Pr): Nur das Tag selbst registrieren
+    - Gruppenanführer OHNE eigenem Tag (Nomen, Verb): Nichts (Subtags via spezifische Regeln)
+    """
     if not normalized_rule_id:
         return
+    
     if '_' in normalized_rule_id:
+        # Spezifische Regel: z.B. 'adj_A' -> wortart='adj', tag='A'
         wordart, tag = normalized_rule_id.split('_', 1)
     else:
+        # Gruppen-Regel: z.B. 'adj' -> wortart='adj', tag=None
         wordart, tag = normalized_rule_id, None
 
     normalized_wordart = wordart.lower()
-
-    if normalized_wordart not in RULE_TAG_MAP:
+    
+    # WICHTIG: Normalisiere Wortart-Key zu voller Form (wie bei Tag-Visibility)
+    # 'adj' → 'adjektiv', 'art' → 'artikel', 'pr' → 'pronomen', etc.
+    wordart_capitalized = wordart.capitalize()
+    if wordart_capitalized in WORTART_IDENTIFIER_TAGS:
+        # Map z.B. 'adj' → 'adjektiv'
+        normalized_wordart = WORTART_IDENTIFIER_TAGS[wordart_capitalized]
+    
+    # Prüfe ob normalisierte Wortart bekannt ist
+    if normalized_wordart not in RULE_TAG_MAP and normalized_wordart not in HIERARCHIE:
+        # Unbekannte Wortart → global
         normalized_tag = _normalize_tag_name(normalized_rule_id)
         entry = rules.setdefault(TRANSLATION_HIDE_GLOBAL, {"all": False, "tags": set()})
         if normalized_tag:
@@ -1264,10 +1311,24 @@ def _register_translation_rule(rules: Dict[str, Dict[str, Any]], normalized_rule
         return
 
     entry = rules.setdefault(normalized_wordart, {"all": False, "tags": set()})
+    
     if tag:
+        # Spezifische Regel (z.B. 'adj_A') -> füge nur dieses Tag hinzu
         entry["tags"].add(_normalize_tag_name(tag))
     else:
-        entry["all"] = True
+        # Gruppen-Regel (z.B. 'adj') - DEFENSIVE LOGIK:
+        # Prüfe ob wordart ein Tag ist (Adj, Art, Pr) oder nur organizational (Nomen, Verb)
+        rid_upper = wordart if wordart in SUP_TAGS or wordart in SUB_TAGS else wordart.capitalize()
+        is_tag_itself = rid_upper in SUP_TAGS or rid_upper in SUB_TAGS
+        
+        if is_tag_itself:
+            # Gruppenanführer MIT eigenem Tag (z.B. "Adj", "Art", "Pr")
+            # → Nur dieses Tag registrieren, NICHT alle Subtags
+            entry["tags"].add(rid_upper)
+        else:
+            # Gruppenanführer OHNE eigenem Tag (z.B. "nomen", "verb")
+            # → Setze "all" flag (bedeutet: alle Subtags dieser Wortart)
+            entry["all"] = True
 
 def _should_hide_translation(conf: Dict[str, Any]) -> bool:
     return bool(conf.get('hideTranslation'))
