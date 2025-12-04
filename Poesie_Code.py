@@ -966,13 +966,12 @@ class ToplineTokenFlowable(Flowable):
                         #          Topline von ἄρ beginnt bei x=0 (nächste Zelle)
                         #          → LÜCKE dazwischen! ❌
                         #
-                        # LÖSUNG: Verlängere Topline ÜBER Zellrand hinaus!
-                        #         Wenn nächstes Token inherited_marker hat, zeichne Bridge!
-                        #         Bridge = Extra 5pt nach rechts (überbrückt Inter-Cell-Gap)
+                        # LÖSUNG: Verlängere Topline minimal ÜBER Zellrand hinaus!
+                        #         Nur 1pt Extension (statt 5pt) um Überlappungen zu minimieren
+                        #         Nächstes Token beginnt bei -1pt → minimale Überlappung
                         #
-                        # WANN: bridge_to_next=True (same_foot) UND keine Bars zwischen Tokens
-                        #       → Topline soll durchgängig sein (wie bei δʼ ἂν)
-                        x1_draw = self._w + 5.0  # +5pt über Zellrand hinaus! ✅
+                        # RESULTAT: Glatte, nahezu lückenlose Verbindung! ✅
+                        x1_draw = self._w + 1.0  # +1pt über Zellrand (REDUZIERT von 5pt!) ✅
                     else:
                         x_anchor = None
                         if bar_xs:
@@ -1044,18 +1043,20 @@ class ToplineTokenFlowable(Flowable):
             kind = self.inherited_meter_marker
             
             # ═══════════════════════════════════════════════════════════════════
-            # KRITISCH: Beginne Topline LINKS vom Zellrand (bei x < 0)!
+            # KRITISCH: Beginne Topline minimal LINKS vom Zellrand!
             # ═══════════════════════════════════════════════════════════════════
             # WARUM? Vorheriges Token (τiʼ) hat bridge_to_next=True und zeichnet
-            #        Topline bis self._w + 5pt (über Zellrand hinaus).
+            #        Topline bis self._w + 1pt (minimal über Zellrand hinaus).
             #        Dieses Token (ἄρ) muss bei x < 0 beginnen, um sich mit Bridge
             #        zu verbinden → Lückenlose Topline! ✅
             #
             # BEISPIEL: τiʼ ἄρ
-            #   - τiʼ zeichnet bis x = self._w + 5pt (Bridge nach rechts)
-            #   - ἄρ zeichnet ab x = -5pt (Bridge von links)
-            #   - → Toplines überlappen = durchgängig! ✅
-            x0_draw = -5.0  # Beginne 5pt LINKS vom Zellrand! ✅
+            #   - τiʼ zeichnet bis x = self._w + 1pt (Bridge nach rechts)
+            #   - ἄρ zeichnet ab x = -1pt (Bridge von links)
+            #   - → Minimale Überlappung, glatte Verbindung! ✅
+            #
+            # OPTIMIERUNG: Nur 1pt Offset (statt 5pt) für glattere Kurven!
+            x0_draw = -1.0  # Beginne 1pt LINKS vom Zellrand (REDUZIERT!) ✅
             x1_draw = self._w  # Gesamte Token-Breite
             
             # Zeichne Linie oder Kurve (gleiche Logik wie oben)
