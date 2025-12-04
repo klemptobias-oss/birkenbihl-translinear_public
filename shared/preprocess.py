@@ -598,28 +598,29 @@ def _get_wortart_and_relevant_tags(token_tags: Set[str]) -> (Optional[str], Set[
     Konfiguration relevanten Tags.
     """
     # 1. Eindeutige Identifier prüfen (Adj, Adv, Pr, Art, etc.)
-    # ABER: Kon und Pt werden NUR als Wortart erkannt, wenn sie das EINZIGE Tag sind
+    # ABER: Kon, Pt und Prp werden NUR als Wortart erkannt, wenn sie das EINZIGE Tag sind
     # (z.B. tribuendoqueAblKonGer soll als Verb erkannt werden, nicht als Kon)
     # (z.B. obtinendineGPtGer soll als Verb erkannt werden, nicht als Pt)
     # (z.B. MīlesneNPt soll als Nomen erkannt werden, nicht als Pt)
+    # (z.B. ἐν(Prp)(D) soll als Präposition erkannt werden, nicht als Nomen)
     
-    # Spezialfall: Wenn Kon oder Pt vorhanden ist UND andere Tags, ignoriere sie komplett
-    ignorable_tags = {'Kon', 'Pt'}  # Tags, die nur als Wortart gelten, wenn sie alleine stehen
+    # Spezialfall: Wenn Kon, Pt oder Prp vorhanden ist UND andere Tags, ignoriere sie komplett
+    ignorable_tags = {'Kon', 'Pt', 'Prp'}  # Tags, die nur als Wortart gelten, wenn sie alleine stehen
     has_ignorable = bool(token_tags.intersection(ignorable_tags))
     
     if has_ignorable and len(token_tags) > 1:
-        # Prüfe andere Tags (ohne Kon/Pt) in WORTART_IDENTIFIER_TAGS
+        # Prüfe andere Tags (ohne Kon/Pt/Prp) in WORTART_IDENTIFIER_TAGS
         for tag, wortart in WORTART_IDENTIFIER_TAGS.items():
             if tag not in ignorable_tags and tag in token_tags:
                 return wortart, token_tags
         # Kein anderer Identifier gefunden, fahre mit komplexer Logik fort
         # (z.B. obtinendineGPtGer hat G+Ger, die nicht in WORTART_IDENTIFIER_TAGS sind)
     elif not has_ignorable:
-        # Normale Prüfung (weder Kon noch Pt vorhanden)
+        # Normale Prüfung (weder Kon noch Pt noch Prp vorhanden)
         for tag, wortart in WORTART_IDENTIFIER_TAGS.items():
             if tag in token_tags:
                 return wortart, token_tags
-    # Wenn Kon oder Pt das EINZIGE Tag ist, wird es als 'kon' oder 'pt' erkannt
+    # Wenn Kon, Pt oder Prp das EINZIGE Tag ist, wird es als 'kon', 'pt' oder 'prp' erkannt
 
     # 2. Komplexe Fälle: Nomen, Verb, Partizip
     hat_kasus = bool(token_tags.intersection(KASUS_TAGS))
@@ -639,9 +640,9 @@ def _get_wortart_and_relevant_tags(token_tags: Set[str]) -> (Optional[str], Set[
     if hat_lat_verbform:
         return 'verb', token_tags
     if hat_kasus and not hat_tempus:
-        # Nomen: nur Kasus-Tag(s), AUCH mit Kon/Pt/Du erlaubt (z.B. sollertiaqueAblKon, MīlesneNPt, ἵππωDuN)
-        # Entferne Kon, Pt und Du aus der Prüfung (Du = Dual, optional bei Nomen)
-        tags_ohne_ignorable = token_tags - {'Kon', 'Pt', 'Du'}
+        # Nomen: nur Kasus-Tag(s), AUCH mit Kon/Pt/Du/Prp erlaubt (z.B. sollertiaqueAblKon, MīlesneNPt, ἵππωDuN)
+        # Entferne Kon, Pt, Du und Prp aus der Prüfung (Du = Dual, optional bei Nomen)
+        tags_ohne_ignorable = token_tags - {'Kon', 'Pt', 'Du', 'Prp'}
         if tags_ohne_ignorable and all(t in KASUS_TAGS for t in tags_ohne_ignorable):
              return 'nomen', token_tags
 
@@ -1676,7 +1677,19 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             
             # compute intersection: remove only tags actually present on token (orig tags)
             # WICHTIG: Nur Tags entfernen, die tatsächlich auf dem Token vorhanden sind
-            tags_to_remove = tags_to_hide_from_table & orig_tags if tags_to_hide_from_table else set()
+            # NEU: Normalisiere auch die Gruppenanführer-Tags (Adj -> adjektiv, Pr -> pronomen, Art -> artikel)
+            # damit sie korrekt gefunden und entfernt werden können
+            tags_to_remove = set()
+            if tags_to_hide_from_table:
+                for tag_to_hide in tags_to_hide_from_table:
+                    # Prüfe ob das Tag direkt vorhanden ist
+                    if tag_to_hide in orig_tags:
+                        tags_to_remove.add(tag_to_hide)
+                    # ZUSÄTZLICH: Prüfe ob es ein Gruppenanführer-Tag ist (z.B. 'adjektiv' -> 'Adj')
+                    # Reverse-Lookup in WORTART_IDENTIFIER_TAGS
+                    for tag_code, wortart_name in WORTART_IDENTIFIER_TAGS.items():
+                        if wortart_name == tag_to_hide and tag_code in orig_tags:
+                            tags_to_remove.add(tag_code)
             
             # NEU: Enklitische Tags-Logik
             # Wenn bei einer Wortart ALLE Tags entfernt werden sollen (z.B. bei Nomen alle Kasus),
