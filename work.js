@@ -1750,7 +1750,21 @@ function createTableRow(item, isGroupLeader = false) {
 }
 
 function showTagConfigModal() {
-  // 0. Lade gespeicherte Tag-Konfiguration aus localStorage (falls vorhanden)
+  // 0. Setze dynamische Überschriften basierend auf Sprache und Typ
+  const langName = state.lang === "latein" ? "Latein" : "Griechisch";
+  const typeName = state.kind === "poesie" ? "Poesie" : "Prosa";
+  
+  const mainTitle = document.getElementById("modal-main-title");
+  const subtitle = document.getElementById("modal-subtitle");
+  
+  if (mainTitle) {
+    mainTitle.textContent = "PDF Builder";
+  }
+  if (subtitle) {
+    subtitle.textContent = `${langName} ${typeName}: Tag- und Farbkonfiguration`;
+  }
+
+  // 1. Lade gespeicherte Tag-Konfiguration aus localStorage (falls vorhanden)
   const langKey = state.lang; // "griechisch" oder "latein"
   const savedConfig = localStorage.getItem(`tagConfig_${langKey}`);
   if (savedConfig) {
@@ -1774,14 +1788,14 @@ function showTagConfigModal() {
   }
   document.addEventListener("keydown", escHandler);
 
-  // 1. Container für kleine Tabellen leeren
+  // 2. Container für kleine Tabellen leeren
   const tablesContainer = document.getElementById("tag-config-tables");
   if (!tablesContainer) return;
 
   // Container leeren
   tablesContainer.innerHTML = "";
 
-  // 2. Für jede Gruppe eine eigene Tabelle erstellen
+  // 3. Für jede Gruppe eine eigene Tabelle erstellen
   const standaloneItems = []; // Sammle standalone Items für eine gemeinsame Tabelle
 
   tagConfigDefinition.forEach((group) => {

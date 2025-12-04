@@ -683,20 +683,22 @@
           <p>
             Der PDF Builder ist dazu da, eigenständig PDFs erzeugen zu können, um kleine Fehler oder ungünstige
             Übersetzungen der Wörter anzupassen und Farben und Grammatikkürzel zu individualisieren. Er eröffnet darüber hinaus noch weitaus mehr Möglichkeiten, als
-            in den Original-PDFs verwirklicht werden. Da der Builder die wichtigste Funktion der Seite ist, muss er leider ausführlich beschrieben werden. Den PDF
+            in den Original-PDFs verwirklicht werden. Da der Builder die wichtigste Funktion der Seite ist, muss er leider ausführlich beschrieben werden. Die Demonstration am
+            Schluss ist gedacht, das hier folgende zu begleiten (und kann daher auch schon jetzt angesehen werden) oder zu
+            verdeutlichen. Den PDF
             Builder ruft man auf,
             indem man auf einer Werkseite (egal welches Werk) auf den
             dunkelgrünen Button 
             <strong>"PDF aus Entwurf erstellen"</strong> klickt. Es öffnet sich
             darauf die Tag- und Farbkonfigurationstabelle. Mit dem Klick unten
-            rechts auf <strong>PDFs erstellen</strong>, werden dann die PDFs durch den builder
-            erzeugt (es dauert eine kurze Zeit, bis sie in der PDF-Ansicht unter
-            <strong>Entwurf</strong> angezeigt werden). Änderungen im Text können vorgenommen werden, indem der translinear.txt vorher manipuliert wird und
+            rechts auf <strong>PDFs erstellen</strong>, werden dann die PDFs durch den Builder
+            erzeugt (es dauert leider eine kurze Zeit, bis sie in der PDF-Ansicht unter
+            <strong>Entwurf</strong> angezeigt werden. Änderungen im Text können vorgenommen werden, indem der translinear.txt vorher manipuliert wird und
             daraus dann ein neues PDF mit dem Builder erzeugt wird. Es ist dabei notwendig, den "richtigen" Builder zu nutzen, also wenn man Platon PDFs rendern
             will, auch 
             im "griechisch - Prosa" Bereich den translinear.txt einzubetten und nicht im "Latein - Prosa" oder "Griechisch - Poesie" oder gar "Latein - Poesie" 
             Bereich, da die Builder 
-            verschieden arbeiten.Es gibt also diese vier Arten von PDF-Buildern. 
+            verschieden arbeiten. Es gibt also diese vier Arten von PDF-Buildern. 
             Eine kluge und empfohlene Vorgehensweise ist diese:
           </p>
           <ul>
@@ -891,12 +893,12 @@
               </p>
               
               <p style="margin-bottom: 10px">
-                <strong>• Färbungen:</strong> Die Färbungen können in der Tag und Konfigurationstabelle eingestellt werden. Dabei basieren die Farben
-                stets auf den Tags, die die antiken Wörter tragen. Die Farbe wird dann von diesen auf das darunterstehende Wort übertragen. Ist also 
+                <strong>• Färbungen:</strong> Die Färbungen können in der Tag und Konfigurationstabelle später eingestellt werden. Dabei basieren die Farben
+                stets auf den Tags, die die antiken Wörter tragen. Die Farbe wird dann von diesen auf das darunterstehende Übersetzungswort übertragen. Ist also 
                 ein Tag falsch, wird das Wort und seine Übersetzungen ebenfalls auch falsch gefärbt.
                 Bei einigen Wortgruppen (Partizip, Verb, Nomen) gibt es keinen gesonderten Tag zur
-                Erkennung. Es wird, grob gesagt, jedes Wort, welches "Kasus und Tempus" trägt, als Partizip erkannt
-                (und entsprechend gefärbt). Verben werden erkannt anhand von "Tempus ohne Kasus" und Nomen über "Nur Kasus".
+                Erkennung Dieser Wortarten. Es wird jedes Wort, welches "Kasus und Tempus" trägt, als Partizip erkannt
+                (und entsprechend gefärbt). Verben werden erkannt anhand von "Tempus ohne Kasus" und Nomen grob gesagt über "Nur Kasus".
               </p>
   
               <p style="margin-bottom: 10px">
@@ -910,7 +912,7 @@
                 stets die Originale Zeilenstruktur des translinear.txt bei (und somit bei Tragödien oder Hexameter die originale, metrisch gebundene Form). Es ist in
                 beiden Texten möglich (aber wie gesagt, bei Prosa eigentlich unnötig), falls Zeilen fehlen sollten, Insertionszeilen hinzuzufügen. Dazu
                 ist an die entsprechende Stelle im translinear.txt zu gehen, wo der vermeintliche Text fehlt und eine Insertionszeile über 
-                (Zeilennummer + "Insertionssuffix" i) zu setzen und mit dem vermissten Text zu befüllen (aufhellende Beispiele in der Demonstration am Schluss).
+                (Zeilennummer + "Insertionssuffix" i) zu setzen und mit dem vermissten Text zu befüllen (sehr aufhellende Beispiele in der Demonstration am Schluss).
                 Es wird dann eine zusätzliche Translinear-Zeile mit Zeilennummer z.B. (25i) in den Poesie Text eingefügt. Bei Poesie Texten wird die Zeile dort
                 hinzugefügt wo sie im translinear.txt platziert wurde. Bei Prosa Texten wird die Insertionszeile in den Fließtext eingezwungen, bringt also wenig 
                 erdenklichen Mehrwert
@@ -1534,7 +1536,9 @@
                von (HideTrans) an antike Wörter geschieht. Dies ermöglicht insgesamt, dass z.B. Partikel, Pronomen, Artikel und andere "simplere" Dinge
                großflächig
                ohne Übersetzung dargestellt werden, bei Dingen wie Verben oder Nomen aber individuell entschieden werden kann, ob die Übersetzung im
-               Einzelfall darstehen soll oder nicht.
+               Einzelfall darstehen soll oder nicht. Die "Übersetzungen Ausblenden" Logik im Builder ist im Vergleich zum Setzen von (HideTrans) sehr defensiv. Jeder Tag der an einem
+               antiken Wort hängt, der <strong>NICHT</strong> "Übersetzungen Ausblenden" aktiv hat, erhält die Übersetzung des Wortes, selbst wenn bei "Präsens" und "Aktiv" bei
+               Verben die Übersetzung ausgeblendet würde, bliebe sie doch sichtbar, wenn der Tag noch (Op) Optativ Kürzel besitzt, die nicht auf "Übersetzung ausblenden" stehen.
                
             </li>
             
