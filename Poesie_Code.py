@@ -949,7 +949,49 @@ class ToplineTokenFlowable(Flowable):
             for idx, (st, en, kind) in enumerate(self._segments):
                 if st <= 0 or en > total_greek: continue
                 
-                x0_base = letter_pos[st - 1]
+                # ═══════════════════════════════════════════════════════════════════
+                # FIX: Wenn inherited marker vorhanden, überspringe Pre-Bar Bereich!
+                # ═══════════════════════════════════════════════════════════════════
+                # PROBLEM: Bei δʼ ἐi|μοὶL wird ἐi entfernt → ἐ|μοὶL
+                #          _parse_segments() findet: (1, 4, 'L') = ἐμοὶ als LANG
+                #          ABER: ἐ sollte inherited 'i' (KURZ) haben!
+                #          Segment sollte erst NACH Bar beginnen: (bar_idx+1, 4, 'L')
+                #
+                # LÖSUNG: Wenn inherited marker UND Bar vorhanden, verschiebe
+                #         Segment-Start auf ersten griechischen Buchstaben NACH Bar!
+                #
+                # BEISPIEL: ἐ|μοὶL mit inherited='i' und Bar bei Buchstabe 1
+                #   - Original Segment: (1, 4, 'L') = ἐμοὶ
+                #   - Erster Bar-Index: 1 (nach ἐ)
+                #   - Neues Segment: (2, 4, 'L') = μοὶ ✅
+                #   - inherited='i' zeichnet KURZ über ἐ ✅
+                # ═══════════════════════════════════════════════════════════════════
+                st_draw = st
+                st_adjusted = False  # Flag um zu tracken ob st_draw verschoben wurde
+                if idx == 0 and self.inherited_meter_marker and bar_xs:
+                    # Finde ersten Bar-Index (griechischer Buchstabe VOR erstem Bar)
+                    # Dann starte Segment NACH diesem Buchstaben!
+                    core_text = self._core_with_markers()
+                    greek_count_at_first_bar = 0
+                    greek_idx_temp = 0
+                    for ch in core_text:
+                        if _is_greek_letter(ch):
+                            greek_idx_temp += 1
+                        if ch == '|':
+                            greek_count_at_first_bar = greek_idx_temp
+                            break
+                    
+                    if greek_count_at_first_bar > 0:
+                        st_draw = greek_count_at_first_bar + 1  # Start NACH Bar!
+                        st_adjusted = True  # Markiere als verschoben!
+                
+                # Skip segment wenn Start >= Ende
+                if st_draw > en:
+                    continue
+                
+                # CRITICAL FIX: Wenn st_draw verschoben wurde, nutze letter_pos[st_draw]
+                # nicht letter_pos[st_draw - 1], da st_draw jetzt der ECHTE Start-Index ist!
+                x0_base = letter_pos[st_draw] if st_adjusted else letter_pos[st_draw - 1]
                 x1_base = letter_pos[en]
                 x0_draw, x1_draw = x0_base, x1_base
 
@@ -967,11 +1009,11 @@ class ToplineTokenFlowable(Flowable):
                         #          → LÜCKE dazwischen! ❌
                         #
                         # LÖSUNG: Verlängere Topline minimal ÜBER Zellrand hinaus!
-                        #         Nur 1pt Extension (statt 5pt) um Überlappungen zu minimieren
-                        #         Nächstes Token beginnt bei -1pt → minimale Überlappung
+                        #         Nur 0.1pt Extension (ULTRA-OPTIMIERT!) für glatteste Übergänge
+                        #         Nächstes Token beginnt bei -0.1pt → minimale Überlappung
                         #
                         # RESULTAT: Glatte, nahezu lückenlose Verbindung! ✅
-                        x1_draw = self._w + 1.0  # +1pt über Zellrand (REDUZIERT von 5pt!) ✅
+                        x1_draw = self._w + 0.1  # +0.1pt über Zellrand (ULTRA-OPTIMIERT!) ✅
                     else:
                         x_anchor = None
                         if bar_xs:
@@ -1022,42 +1064,61 @@ class ToplineTokenFlowable(Flowable):
                     c.restoreState()
 
         # ═══════════════════════════════════════════════════════════════════
+        # ═══════════════════════════════════════════════════════════════════
         # NEU: Geerbter Meter-Marker (für Ellisions-Fix)
         # ═══════════════════════════════════════════════════════════════════
-        # ZWECK: Wenn Token keinen eigenen Marker hat (weil nach Ellision
-        #        entfernt), aber einen geerbten Marker vom vorherigen Token,
-        #        zeichne eine Topline über das GESAMTE Token!
+        # ZWECK: Wenn Token Marker durch Ellision verloren hat, aber einen
+        #        geerbten Marker vom vorherigen Token bekam, zeichne Topline
+        #        für den Bereich VOR dem ersten Bar/Segment!
         #
-        # BEISPIEL:
-        #   δiʼ(Pt) ἂν → ἂν hat keinen eigenen Marker, aber inherited='i'
-        #   → Zeichne kurze Silbe (uu) über das gesamte Token "ἂν"
-        #   → Dadurch: Durchgängige Topline von δʼ bis ἂν! ✅
+        # BEISPIEL 1: δiʼ(Pt) ἂν → ἂν hat KEINE Segmente mehr
+        #   - inherited='i' → Zeichne über GESAMTES Token ✅
+        #
+        # BEISPIEL 2: δLʼ(Pt) ἔ|μοιi → ἔ hat Marker verloren, aber Token
+        #             hat noch Bar + andere Segmente!
+        #   - inherited='L' → Zeichne NUR bis zum ersten Bar (ἔ|) ✅
+        #   - Danach normale Segment-Logik (μοιi)
         #
         # WANN GREIFT DAS?
-        #   - self._segments ist leer (keine eigenen Marker gefunden)
         #   - self.inherited_meter_marker ist gesetzt (z.B. 'i', 'L', 'r')
-        #   - → Token ist "Fortsetzung" einer Ellisions-Silbe!
-        if not self._segments and self.inherited_meter_marker and text_vis:
-            # Token hat keine eigenen Segmente, aber geerbten Marker
-            # → Zeichne eine Topline über das GESAMTE Token
+        #   - → Zeichne inherited Topline IMMER (unabhängig von _segments)!
+        #
+        # KRITISCH: Wenn Token Segmente HAT (z.B. Bar), zeichne inherited
+        #           marker NUR bis zum ERSTEN Segment! Danach normale Logic!
+        # ═══════════════════════════════════════════════════════════════════
+        if self.inherited_meter_marker and text_vis:
             kind = self.inherited_meter_marker
             
             # ═══════════════════════════════════════════════════════════════════
-            # KRITISCH: Beginne Topline minimal LINKS vom Zellrand!
+            # Beginne Topline minimal LINKS vom Zellrand (Bridge von vorigem Token)
             # ═══════════════════════════════════════════════════════════════════
-            # WARUM? Vorheriges Token (τiʼ) hat bridge_to_next=True und zeichnet
-            #        Topline bis self._w + 1pt (minimal über Zellrand hinaus).
-            #        Dieses Token (ἄρ) muss bei x < 0 beginnen, um sich mit Bridge
-            #        zu verbinden → Lückenlose Topline! ✅
+            x0_draw = -0.1  # ULTRA-OPTIMIERT auf 0.1pt für glatteste Übergänge! ✅
+            
+            # ═══════════════════════════════════════════════════════════════════
+            # KRITISCH: Ende Topline beim ERSTEN Bar (wenn vorhanden)!
+            # ═══════════════════════════════════════════════════════════════════
+            # ZWECK: Bei ἔ|μοιi soll inherited marker NUR über ἔ gehen!
+            #        Danach normale Segment-Logic für |μοιi
             #
-            # BEISPIEL: τiʼ ἄρ
-            #   - τiʼ zeichnet bis x = self._w + 1pt (Bridge nach rechts)
-            #   - ἄρ zeichnet ab x = -1pt (Bridge von links)
-            #   - → Minimale Überlappung, glatte Verbindung! ✅
+            # FALLUNTERSCHEIDUNG:
+            #   1. Token hat bar_xs → Ende beim ERSTEN Bar
+            #   2. Token hat _segments (aber keine Bars) → Ende beim ERSTEN Segment
+            #   3. Token hat NICHTS → Ende bei self._w (gesamtes Token)
             #
-            # OPTIMIERUNG: Nur 1pt Offset (statt 5pt) für glattere Kurven!
-            x0_draw = -1.0  # Beginne 1pt LINKS vom Zellrand (REDUZIERT!) ✅
-            x1_draw = self._w  # Gesamte Token-Breite
+            # CRITICAL FIX: Verlängere x1_draw um 0.1pt für glatte Verbindung zum Bar!
+            #               OHNE diese Extension entsteht LOCH zwischen Topline und Bar!
+            #               User-Report: "LOCH IN DER TRASSE BEI LANGEN SILBEN"
+            # ═══════════════════════════════════════════════════════════════════
+            if bar_xs:
+                # Fall 1: Bar vorhanden → Ende beim ERSTEN Bar (nicht letzten!)
+                # PLUS: 0.1pt Extension für glatte Verbindung zum Bar! ✅
+                x1_draw = bar_xs[0] + 0.1  # ἔ| → Ende 0.1pt NACH | Position! ✅
+            elif self._segments:
+                # Fall 2: Segmente (ohne Bars) → Ende beim ERSTEN Segment-Start
+                x1_draw = self._segments[0][0]  # Ende vor erstem Segment
+            else:
+                # Fall 3: Keine Segmente/Bars → Gesamtes Token
+                x1_draw = self._w
             
             # Zeichne Linie oder Kurve (gleiche Logik wie oben)
             if kind == 'L':
@@ -1271,10 +1332,23 @@ def propagate_elision_markers(gr_tokens):
         head_u = u if idx_u == -1 else u[:idx_u]
         tail_u = '' if idx_u == -1 else u[idx_u:]
         
-        # Finde ersten Meter-Marker im nächsten Token
-        ch_m = next((ch for ch in head_u if ch in ('i','L','|','r')), None)
+        # ═══════════════════════════════════════════════════════════════════
+        # KRITISCH: Finde ersten SILBEN-Marker (NICHT Bar |)!
+        # ═══════════════════════════════════════════════════════════════════
+        # PROBLEM: Bei ἀ|λαLθής ist erster Marker '|', aber das ist kein 
+        #          Silben-Marker! Das 'ἀ' hat KEINEN eigenen Marker!
+        #          Erst 'λα' hat Marker 'L'!
+        #
+        # BEISPIEL: δʼ ἀ|λαLθής
+        #   - ἀ hat KEINEN Marker (ist Teil von δ-ἀ = KURZ)
+        #   - Bars '|' sind Fuß-Trenner, keine Silben-Marker
+        #   - Nächster Silben-Marker: 'L' (gehört zu λα)
+        #
+        # LÖSUNG: Suche ersten Marker in ('i', 'L', 'r'), IGNORIERE '|'!
+        # ═══════════════════════════════════════════════════════════════════
+        ch_m = next((ch for ch in head_u if ch in ('i','L','r')), None)
         if not ch_m:
-            continue  # Nächstes Token hat keinen Marker → nichts tun
+            continue  # Nächstes Token hat keinen Silben-Marker → nichts tun
 
         # SCHRITT 1: Übertrage Marker auf Ellisions-Token (VOR Apostroph)
         new_head_t = head_t[:pos] + ch_m + head_t[pos:]
