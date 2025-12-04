@@ -967,7 +967,6 @@ class ToplineTokenFlowable(Flowable):
                 #   - inherited='i' zeichnet KURZ über ἐ ✅
                 # ═══════════════════════════════════════════════════════════════════
                 st_draw = st
-                st_adjusted = False  # Flag um zu tracken ob st_draw verschoben wurde
                 if idx == 0 and self.inherited_meter_marker and bar_xs:
                     # Finde ersten Bar-Index (griechischer Buchstabe VOR erstem Bar)
                     # Dann starte Segment NACH diesem Buchstaben!
@@ -983,15 +982,16 @@ class ToplineTokenFlowable(Flowable):
                     
                     if greek_count_at_first_bar > 0:
                         st_draw = greek_count_at_first_bar + 1  # Start NACH Bar!
-                        st_adjusted = True  # Markiere als verschoben!
                 
                 # Skip segment wenn Start >= Ende
                 if st_draw > en:
                     continue
                 
-                # CRITICAL FIX: Wenn st_draw verschoben wurde, nutze letter_pos[st_draw]
-                # nicht letter_pos[st_draw - 1], da st_draw jetzt der ECHTE Start-Index ist!
-                x0_base = letter_pos[st_draw] if st_adjusted else letter_pos[st_draw - 1]
+                # letter_pos[i] = Position NACH griechischem Buchstaben i
+                # Für Segment von Buchstabe st_draw bis en:
+                #   x0 = letter_pos[st_draw-1] (Start von st_draw = Ende von st_draw-1)
+                #   x1 = letter_pos[en] (Ende von en)
+                x0_base = letter_pos[st_draw - 1]
                 x1_base = letter_pos[en]
                 x0_draw, x1_draw = x0_base, x1_base
 
