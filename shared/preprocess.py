@@ -1375,37 +1375,62 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                 
                 # Bestimme Wortart und Tags
                 if '_' in rid:
-                    # Spezifische Regel: z.B. 'nomen_N' -> wortart='nomen', tag='N'
+                    # Spezifische Regel: z.B. 'nomen_N' oder 'adj_A'
                     parts = rid.split('_', 1)
                     wortart_key = parts[0].lower()
                     tag = parts[1]
                     
-                    # Normalisiere wortart_key
-                    if wortart_key in RULE_TAG_MAP:
-                        wortart = wortart_key
-                    elif wortart_key in HIERARCHIE:
-                        wortart = wortart_key
+                    # Normalisiere wortart_key zur vollen Form BEVOR wir prüfen
+                    # 'adj' → 'adjektiv', 'art' → 'artikel', etc.
+                    wortart_key_capitalized = wortart_key.capitalize()
+                    if wortart_key_capitalized in WORTART_IDENTIFIER_TAGS:
+                        # Map z.B. 'adj' → 'adjektiv'
+                        normalized_wortart_key = WORTART_IDENTIFIER_TAGS[wortart_key_capitalized]
                     else:
+                        # Keine Abkürzung, nutze direkt (z.B. 'nomen', 'verb', 'partizip')
+                        normalized_wortart_key = wortart_key
+                    
+                    # Jetzt prüfen ob diese Wortart bekannt ist
+                    if normalized_wortart_key not in RULE_TAG_MAP and normalized_wortart_key not in HIERARCHIE:
+                        # Unbekannte Wortart, überspringe diese Regel
                         continue
                     
                     if tag in SUP_TAGS or tag in SUB_TAGS:
-                        # Verwende wortart_key (lowercase) für konsistente Keys
+                        # Füge das Tag zur normalisierten Wortart hinzu
+                        if normalized_wortart_key not in hidden_tags_by_wortart:
+                            hidden_tags_by_wortart[normalized_wortart_key] = set()
+                        hidden_tags_by_wortart[normalized_wortart_key].add(tag)
+                else:
+                    # Gruppen-Regel: z.B. 'adj', 'nomen', 'verb', 'artikel', etc.
+                    # WICHTIG: Unterscheidung zwischen zwei Arten von Gruppenanführern:
+                    #   1) MIT eigenem Tag (Adj, Art, Pr, Adv) → nur das Tag selbst ausblenden
+                    #   2) OHNE eigenem Tag (Nomen, Verb, Partizip) → nichts (Subtags via spezifische Regeln)
+                    
+                    # Prüfe ob rid selbst ein Tag ist (z.B. "Adj", "Art", "Pr")
+                    rid_upper = rid if rid in SUP_TAGS or rid in SUB_TAGS else rid.capitalize()
+                    is_tag_itself = rid_upper in SUP_TAGS or rid_upper in SUB_TAGS
+                    
+                    if is_tag_itself:
+                        # Gruppenanführer MIT eigenem Tag (z.B. "Adj", "Art", "Pr")
+                        # → Nur das Gruppen-Tag selbst ausblenden, NICHT die Subtags (N, G, D, A)
+                        # Der User kann jeden Subtag individuell steuern (adj_N, adj_G, etc.)
+                        
+                        # WICHTIG: Normalisiere den Key zur vollen Wortart-Form, damit Lookup funktioniert
+                        # 'adj' → 'adjektiv', 'art' → 'artikel', 'pr' → 'pronomen', etc.
+                        # Die Wortart-Funktion gibt 'adjektiv' zurück, nicht 'adj'!
+                        wortart_key = WORTART_IDENTIFIER_TAGS.get(rid_upper)
+                        if not wortart_key:
+                            # Fallback: nutze rid.lower() direkt (z.B. 'prp', 'kon', 'pt', 'ij')
+                            wortart_key = rid.lower()
+                        
                         if wortart_key not in hidden_tags_by_wortart:
                             hidden_tags_by_wortart[wortart_key] = set()
-                        hidden_tags_by_wortart[wortart_key].add(tag)
-                else:
-                    # Gruppen-Regel: z.B. 'nomen' -> alle Kasus-Tags für Nomen
-                    key = rid.lower()
-                    mapped = RULE_TAG_MAP.get(key) or HIERARCHIE.get(key)
-                    if mapped:
-                        if key not in hidden_tags_by_wortart:
-                            hidden_tags_by_wortart[key] = set()
-                        for t in mapped:
-                            hidden_tags_by_wortart[key].add(t)
+                        hidden_tags_by_wortart[wortart_key].add(rid_upper)
                     else:
-                        # Vielleicht ein konkretes Tag direkt
-                        if rid in SUP_TAGS or rid in SUB_TAGS:
-                            global_hidden_tags.add(rid)
+                        # Gruppenanführer OHNE eigenem Tag (z.B. "nomen", "verb", "partizip")
+                        # → Nichts hinzufügen! Diese sind nur UI-Convenience zum schnellen Markieren
+                        # Die einzelnen Subtags (nomen_N, nomen_G, etc.) werden über spezifische Regeln behandelt
+                        pass
         
         # Füge globale hidden tags zu allen Wortarten hinzu (falls nötig)
         if global_hidden_tags:
