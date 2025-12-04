@@ -741,6 +741,44 @@ def _is_greek_letter(ch: str) -> bool:
 
 # METER_CFG entfernt - wird jetzt aus dem gemeinsamen CFG genommen
 
+class CenteredFlowable(Flowable):
+    """
+    Wrapper-Flowable für Zentrierung von ToplineTokenFlowable.
+    
+    PROBLEM: ToplineTokenFlowable kann nicht direkt zentriert werden
+             (Custom Flowable ohne Paragraph-Zentrierung)
+    
+    LÖSUNG: Wrapper berechnet Offset und verschiebt das Kind-Flowable
+    
+    BEISPIEL:
+        - Token-Breite: 30pt
+        - Spalten-Breite: 50pt
+        → Offset: (50-30)/2 = 10pt
+        → Token wird bei x=10pt gezeichnet (zentriert!)
+    """
+    def __init__(self, child_flowable, target_width):
+        super().__init__()
+        self.child = child_flowable
+        self.target_width = target_width
+        
+    def wrap(self, availWidth, availHeight):
+        # Kind-Flowable wrappen
+        w, h = self.child.wrap(availWidth, availHeight)
+        # Wir geben target_width zurück (für Tabellenspalte)
+        # aber speichern echte Breite für Offset-Berechnung
+        self.child_width = w
+        return self.target_width, h
+    
+    def draw(self):
+        # Berechne Offset für Zentrierung
+        offset = max(0, (self.target_width - self.child_width) / 2.0)
+        
+        # Verschiebe Canvas und zeichne Kind
+        self.canv.saveState()
+        self.canv.translate(offset, 0)
+        self.child.drawOn(self.canv, 0, 0)
+        self.canv.restoreState()
+
 class ToplineTokenFlowable(Flowable):
     def __init__(self, token_raw:str, style, cfg, *, gr_bold:bool,
                  had_leading_bar:bool, end_bar_count:int,
@@ -2598,21 +2636,15 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     next_has_lead = _has_leading_bar_local(nxt_cleaned)
                     next_tok_starts_with_bar = next_has_lead
 
-                # ZENTRIERUNG FÜR VERSMAS-TOKENS (bei NoTag-PDFs)
+                # ZENTRIERUNG FÜR VERSMAS-TOKENS
                 # ═══════════════════════════════════════════════════════════════════
-                # PROBLEM: Bei NoTag-PDFs werden Tags entfernt → Token ist schmaler
-                #          Aber Spaltenbreite wird MIT Tags berechnet → Token links in Spalte
-                # LÖSUNG: Wrap ToplineTokenFlowable in zentriertem Paragraph
-                #         (funktioniert NICHT direkt, daher anderer Ansatz)
-                # 
-                # AKTUELL: ToplineTokenFlowable rendert sich selbst OHNE Zentrierung
-                #          → Bei NoTag-PDFs stehen Wörter linksbündig
-                # 
-                # TODO: Implementiere Zentrierung für ToplineTokenFlowable
-                #       → Kompliziert, weil es Custom Flowable ist
-                #       → Einfacher: TableStyle mit 'ALIGN', 'CENTER' verwenden?
+                # PROBLEM: ToplineTokenFlowable gibt nur seine eigene Breite zurück
+                #          → Bei NoTag-PDFs (Tags entfernt) steht Token linksbündig
+                # LÖSUNG: Wrappen in CenteredFlowable mit Ziel-Breite slice_w[idx_in_slice]
+                # BEISPIEL: Token 30pt breit, Spalte 50pt → Offset 10pt → zentriert! ✅
+                # ═══════════════════════════════════════════════════════════════════
                 
-                return ToplineTokenFlowable(
+                flowable = ToplineTokenFlowable(
                     tok_cleaned, token_gr_style, eff_cfg,
                     gr_bold=(gr_bold if is_gr else False),
                     had_leading_bar=had_lead,
@@ -2620,8 +2652,15 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     bridge_to_next=br_to_next,
                     next_has_leading_bar=next_has_lead,
                     is_first_in_line=(idx_in_slice == 0),
-                    next_token_starts_with_bar=next_tok_starts_with_bar  # FIX: Typo korrigiert
+                    next_token_starts_with_bar=next_tok_starts_with_bar
                 )
+                
+                # Zentriere in Spaltenbreite (wie bei normalen Paragraphs!)
+                if idx_in_slice is not None:
+                    target_width = slice_w[idx_in_slice]
+                    return CenteredFlowable(flowable, target_width)
+                else:
+                    return flowable
 
             # NICHT-Versmaß: Bars entfernen + pro Spaltenbreite weich zentrieren (Epos-Logik)
             # WICHTIG: Entferne Tags basierend auf tag_mode und token_meta
