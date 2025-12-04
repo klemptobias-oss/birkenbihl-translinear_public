@@ -745,28 +745,7 @@ class ToplineTokenFlowable(Flowable):
     def __init__(self, token_raw:str, style, cfg, *, gr_bold:bool,
                  had_leading_bar:bool, end_bar_count:int,
                  bridge_to_next:bool, next_has_leading_bar:bool,
-                 is_first_in_line:bool=False, next_token_starts_with_bar:bool=False,
-                 inherited_meter_marker:str=None):
-        """
-        ToplineTokenFlowable für Versmaß-Darstellung.
-        
-        NEU: inherited_meter_marker (für Ellisions-Fix)
-        ═══════════════════════════════════════════════════════════════════
-        PROBLEM: Bei Ellisionsapostrophen (δʼ, γʼ, σʼ) wird der Marker auf
-                 das Ellisions-Token übertragen, aber aus dem nächsten Token
-                 entfernt → nächstes Token hat keine Topline → LÜCKE!
-        
-        LÖSUNG: Wenn nächstes Token keinen eigenen Marker hat (weil nach
-                Ellision entfernt), bekommt es einen "inherited_meter_marker"
-                → zeichnet Topline basierend auf geerb Marker!
-        
-        BEISPIEL:
-            δʼ(Pt) ἂν → δiʼ(Pt) ἂν (ἂν verliert i-Marker)
-            → δiʼ: zeichnet Topline (uu) mit eigenem i
-            → ἂν: hat keinen Marker, ABER inherited_meter_marker='i'
-                  → zeichnet auch Topline (uu) als Fortsetzung!
-            → RESULTAT: Durchgängige Topline (uu-uu) über δʼἂν ✅
-        """
+                 is_first_in_line:bool=False, next_token_starts_with_bar:bool=False):
         super().__init__()
         self.token_raw = token_raw
         self.style = style
@@ -783,7 +762,6 @@ class ToplineTokenFlowable(Flowable):
         self._next_has_leading_bar = next_has_leading_bar
         self.is_first_in_line = is_first_in_line
         self.next_token_starts_with_bar = next_token_starts_with_bar
-        self.inherited_meter_marker = inherited_meter_marker  # NEU!
 
     def _strip_prefix(self, s:str) -> str:
         # WICHTIG: Auch neue Farbmarker § (lila) und $ (orange) entfernen!
@@ -949,49 +927,7 @@ class ToplineTokenFlowable(Flowable):
             for idx, (st, en, kind) in enumerate(self._segments):
                 if st <= 0 or en > total_greek: continue
                 
-                # ═══════════════════════════════════════════════════════════════════
-                # FIX: Wenn inherited marker vorhanden, überspringe Pre-Bar Bereich!
-                # ═══════════════════════════════════════════════════════════════════
-                # PROBLEM: Bei δʼ ἐi|μοὶL wird ἐi entfernt → ἐ|μοὶL
-                #          _parse_segments() findet: (1, 4, 'L') = ἐμοὶ als LANG
-                #          ABER: ἐ sollte inherited 'i' (KURZ) haben!
-                #          Segment sollte erst NACH Bar beginnen: (bar_idx+1, 4, 'L')
-                #
-                # LÖSUNG: Wenn inherited marker UND Bar vorhanden, verschiebe
-                #         Segment-Start auf ersten griechischen Buchstaben NACH Bar!
-                #
-                # BEISPIEL: ἐ|μοὶL mit inherited='i' und Bar bei Buchstabe 1
-                #   - Original Segment: (1, 4, 'L') = ἐμοὶ
-                #   - Erster Bar-Index: 1 (nach ἐ)
-                #   - Neues Segment: (2, 4, 'L') = μοὶ ✅
-                #   - inherited='i' zeichnet KURZ über ἐ ✅
-                # ═══════════════════════════════════════════════════════════════════
-                st_draw = st
-                if idx == 0 and self.inherited_meter_marker and bar_xs:
-                    # Finde ersten Bar-Index (griechischer Buchstabe VOR erstem Bar)
-                    # Dann starte Segment NACH diesem Buchstaben!
-                    core_text = self._core_with_markers()
-                    greek_count_at_first_bar = 0
-                    greek_idx_temp = 0
-                    for ch in core_text:
-                        if _is_greek_letter(ch):
-                            greek_idx_temp += 1
-                        if ch == '|':
-                            greek_count_at_first_bar = greek_idx_temp
-                            break
-                    
-                    if greek_count_at_first_bar > 0:
-                        st_draw = greek_count_at_first_bar + 1  # Start NACH Bar!
-                
-                # Skip segment wenn Start >= Ende
-                if st_draw > en:
-                    continue
-                
-                # letter_pos[i] = Position NACH griechischem Buchstaben i
-                # Für Segment von Buchstabe st_draw bis en:
-                #   x0 = letter_pos[st_draw-1] (Start von st_draw = Ende von st_draw-1)
-                #   x1 = letter_pos[en] (Ende von en)
-                x0_base = letter_pos[st_draw - 1]
+                x0_base = letter_pos[st - 1]
                 x1_base = letter_pos[en]
                 x0_draw, x1_draw = x0_base, x1_base
 
@@ -1000,20 +936,8 @@ class ToplineTokenFlowable(Flowable):
                     # Hier wird die unkorrigierte x1_base für die Brückenberechnung verwendet
                     x1_final = x1_base + tag_w
                     if self._bridge_to_next:
-                        # ═══════════════════════════════════════════════════════════════════
-                        # FIX: Ellisions-Brücke über Zell-Gap hinweg
-                        # ═══════════════════════════════════════════════════════════════════
-                        # PROBLEM: Bei Ellision (τiʼ → ἄρ) entsteht Lücke zwischen Zellen
-                        #          Topline von τiʼ endet bei self._w (Zellrand)
-                        #          Topline von ἄρ beginnt bei x=0 (nächste Zelle)
-                        #          → LÜCKE dazwischen! ❌
-                        #
-                        # LÖSUNG: Verlängere Topline minimal ÜBER Zellrand hinaus!
-                        #         Nur 0.1pt Extension (ULTRA-OPTIMIERT!) für glatteste Übergänge
-                        #         Nächstes Token beginnt bei -0.1pt → minimale Überlappung
-                        #
-                        # RESULTAT: Glatte, nahezu lückenlose Verbindung! ✅
-                        x1_draw = self._w + 0.1  # +0.1pt über Zellrand (ULTRA-OPTIMIERT!) ✅
+                        # Für die Brücke wird der bereits korrigierte x1_draw Wert genutzt
+                        x1_draw = max(x1_draw, self._w)
                     else:
                         x_anchor = None
                         if bar_xs:
@@ -1062,80 +986,6 @@ class ToplineTokenFlowable(Flowable):
                     c.bezier(x0_draw, y, x0_draw, y + h, xm, y + h, xm, y)
                     c.bezier(xm, y, xm, y + h, x1_draw, y + h, x1_draw, y)
                     c.restoreState()
-
-        # ═══════════════════════════════════════════════════════════════════
-        # ═══════════════════════════════════════════════════════════════════
-        # NEU: Geerbter Meter-Marker (für Ellisions-Fix)
-        # ═══════════════════════════════════════════════════════════════════
-        # ZWECK: Wenn Token Marker durch Ellision verloren hat, aber einen
-        #        geerbten Marker vom vorherigen Token bekam, zeichne Topline
-        #        für den Bereich VOR dem ersten Bar/Segment!
-        #
-        # BEISPIEL 1: δiʼ(Pt) ἂν → ἂν hat KEINE Segmente mehr
-        #   - inherited='i' → Zeichne über GESAMTES Token ✅
-        #
-        # BEISPIEL 2: δLʼ(Pt) ἔ|μοιi → ἔ hat Marker verloren, aber Token
-        #             hat noch Bar + andere Segmente!
-        #   - inherited='L' → Zeichne NUR bis zum ersten Bar (ἔ|) ✅
-        #   - Danach normale Segment-Logik (μοιi)
-        #
-        # WANN GREIFT DAS?
-        #   - self.inherited_meter_marker ist gesetzt (z.B. 'i', 'L', 'r')
-        #   - → Zeichne inherited Topline IMMER (unabhängig von _segments)!
-        #
-        # KRITISCH: Wenn Token Segmente HAT (z.B. Bar), zeichne inherited
-        #           marker NUR bis zum ERSTEN Segment! Danach normale Logic!
-        # ═══════════════════════════════════════════════════════════════════
-        if self.inherited_meter_marker and text_vis:
-            kind = self.inherited_meter_marker
-            
-            # ═══════════════════════════════════════════════════════════════════
-            # Beginne Topline minimal LINKS vom Zellrand (Bridge von vorigem Token)
-            # ═══════════════════════════════════════════════════════════════════
-            x0_draw = -0.1  # ULTRA-OPTIMIERT auf 0.1pt für glatteste Übergänge! ✅
-            
-            # ═══════════════════════════════════════════════════════════════════
-            # KRITISCH: Ende Topline beim ERSTEN Bar (wenn vorhanden)!
-            # ═══════════════════════════════════════════════════════════════════
-            # ZWECK: Bei ἔ|μοιi soll inherited marker NUR über ἔ gehen!
-            #        Danach normale Segment-Logic für |μοιi
-            #
-            # FALLUNTERSCHEIDUNG:
-            #   1. Token hat bar_xs → Ende beim ERSTEN Bar
-            #   2. Token hat _segments (aber keine Bars) → Ende beim ERSTEN Segment
-            #   3. Token hat NICHTS → Ende bei self._w (gesamtes Token)
-            #
-            # CRITICAL FIX: Verlängere x1_draw um 0.1pt für glatte Verbindung zum Bar!
-            #               OHNE diese Extension entsteht LOCH zwischen Topline und Bar!
-            #               User-Report: "LOCH IN DER TRASSE BEI LANGEN SILBEN"
-            # ═══════════════════════════════════════════════════════════════════
-            if bar_xs:
-                # Fall 1: Bar vorhanden → Ende beim ERSTEN Bar (nicht letzten!)
-                # PLUS: 0.1pt Extension für glatte Verbindung zum Bar! ✅
-                x1_draw = bar_xs[0] + 0.1  # ἔ| → Ende 0.1pt NACH | Position! ✅
-            elif self._segments:
-                # Fall 2: Segmente (ohne Bars) → Ende beim ERSTEN Segment-Start
-                x1_draw = self._segments[0][0]  # Ende vor erstem Segment
-            else:
-                # Fall 3: Keine Segmente/Bars → Gesamtes Token
-                x1_draw = self._w
-            
-            # Zeichne Linie oder Kurve (gleiche Logik wie oben)
-            if kind == 'L':
-                c.line(x0_draw, y, x1_draw, y)
-            elif kind == 'i':
-                h = self.cfg['BREVE_HEIGHT_PT']
-                xm = (x0_draw + x1_draw) / 2.0
-                c.bezier(x0_draw, y, x0_draw, y - h, xm, y - h, xm, y)
-                c.bezier(xm, y, xm, y - h, x1_draw, y - h, x1_draw, y)
-            elif kind == 'r':
-                c.saveState()
-                c.setStrokeColor(colors.red)
-                h = self.cfg['BREVE_HEIGHT_PT']
-                xm = (x0_draw + x1_draw) / 2.0
-                c.bezier(x0_draw, y, x0_draw, y + h, xm, y + h, xm, y)
-                c.bezier(xm, y, xm, y + h, x1_draw, y + h, x1_draw, y)
-                c.restoreState()
 
         c.restoreState()
 
@@ -1277,95 +1127,33 @@ APOSTS = (
 )
 
 def propagate_elision_markers(gr_tokens):
-    """
-    Überträgt Meter-Marker von Tokens mit Ellisionsapostroph auf das vorherige Token.
-    
-    PROBLEM: Wörter wie δʼ, γʼ, σʼ sind KEINE eigenständigen Silben!
-             Sie verschmelzen mit der nächsten Silbe zu EINER Silbe.
-    
-    BEISPIEL:
-        δʼ(Pt) ἱi|κέσLθαιL
-        → δʼ hat keinen Marker (im translinear.txt)
-        → ἱi hat Marker i
-        → Sprachlich: δʼ+ἱ = EINE kurze Silbe "δ-ἱ"
-    
-    LÖSUNG (3-STUFIG):
-        1. Übertrage Marker vom nächsten Token auf Ellisions-Token
-           δʼ(Pt) → δiʼ(Pt) (bekommt i)
-        2. ENTFERNE Marker aus nächstem Token
-           ἱi|κέσLθαιL → ἱ|κέσLθαιL (verliert i)
-        3. MERKE in inherited_markers: Token i+1 hat geerbten Marker!
-           inherited_markers[i+1] = 'i'
-    
-    WARUM FUNKTIONIERT DAS?
-        - δiʼ hat Marker → ToplineTokenFlowable zeichnet Topline (uu) ✅
-        - ἱ hat KEINEN eigenen Marker → _segments = []
-        - ἱ bekommt inherited_meter_marker='i' → draw() zeichnet Topline ✅
-        - RESULTAT: Durchgängige Topline über δʼ und ἱ! ✅
-    
-    RÜCKGABE:
-        (modified_tokens, inherited_markers)
-        - modified_tokens: Liste mit übertragenen Markern
-        - inherited_markers: Dict {index: marker} für Tokens die geerbte Marker haben
-    """
     out = gr_tokens[:]
-    inherited = {}  # NEU: Speichere welche Tokens geerbte Marker haben
     n = len(out)
-    
     for i in range(n - 1):
         t = out[i]; u = out[i+1]
         idx_t = t.find('(')
         head_t = t if idx_t == -1 else t[:idx_t]
         tail_t = '' if idx_t == -1 else t[idx_t:]
 
-        # Finde Ellisions-Apostroph
+        # wie rfind, aber für beide Apostrophe
         pos = max((head_t.rfind(a) for a in APOSTS), default=-1)
         if pos == -1:
             continue
 
-        # Prüfe: Hat das Zeichen VOR dem Apostroph schon einen Marker?
         prev = head_t[pos-1] if pos > 0 else ''
         if prev in ('i', 'L', '|', 'r'):
-            continue  # Schon einen Marker → nichts tun
+            continue
 
         idx_u = u.find('(')
         head_u = u if idx_u == -1 else u[:idx_u]
-        tail_u = '' if idx_u == -1 else u[idx_u:]
-        
-        # ═══════════════════════════════════════════════════════════════════
-        # KRITISCH: Finde ersten SILBEN-Marker (NICHT Bar |)!
-        # ═══════════════════════════════════════════════════════════════════
-        # PROBLEM: Bei ἀ|λαLθής ist erster Marker '|', aber das ist kein 
-        #          Silben-Marker! Das 'ἀ' hat KEINEN eigenen Marker!
-        #          Erst 'λα' hat Marker 'L'!
-        #
-        # BEISPIEL: δʼ ἀ|λαLθής
-        #   - ἀ hat KEINEN Marker (ist Teil von δ-ἀ = KURZ)
-        #   - Bars '|' sind Fuß-Trenner, keine Silben-Marker
-        #   - Nächster Silben-Marker: 'L' (gehört zu λα)
-        #
-        # LÖSUNG: Suche ersten Marker in ('i', 'L', 'r'), IGNORIERE '|'!
-        # ═══════════════════════════════════════════════════════════════════
-        ch_m = next((ch for ch in head_u if ch in ('i','L','r')), None)
+        ch_m = next((ch for ch in head_u if ch in ('i','L','|','r')), None)
         if not ch_m:
-            continue  # Nächstes Token hat keinen Silben-Marker → nichts tun
+            continue
 
-        # SCHRITT 1: Übertrage Marker auf Ellisions-Token (VOR Apostroph)
         new_head_t = head_t[:pos] + ch_m + head_t[pos:]
         out[i] = new_head_t + tail_t
-        
-        # SCHRITT 2: ENTFERNE Marker aus nächstem Token
-        # → Dadurch hat nächstes Token keine Silben mehr (_segments = [])
-        marker_idx = head_u.index(ch_m)
-        new_head_u = head_u[:marker_idx] + head_u[marker_idx+1:]
-        out[i+1] = new_head_u + tail_u
-        
-        # SCHRITT 3: MERKE geerbten Marker für nächstes Token! (NEU!)
-        # → Token i+1 bekommt inherited_meter_marker=ch_m
-        # → draw() zeichnet dann Topline trotz leerer _segments!
-        inherited[i+1] = ch_m  # z.B. inherited[3] = 'i'
 
-    return out, inherited  # <— Jetzt 2 Rückgabewerte!
+    return out  # <— siehe Fix B
 
 
 # ========= Markup & Messung =========
@@ -1840,8 +1628,8 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                     # Extrahiere HideTrans-Flags
                     hide_trans_flags = extract_hide_trans_flags(gr_tokens)
 
-                    # Elisions-Übertragung (liefert auch inherited_markers zurück!)
-                    gr_tokens, inherited_markers = propagate_elision_markers(gr_tokens)
+                    # Elisions-Übertragung
+                    gr_tokens = propagate_elision_markers(gr_tokens)
 
                     # Für 3-sprachige Texte: Englische Zeile verarbeiten
                     en_tokens = []
@@ -1934,8 +1722,7 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                             'de_tokens_alternatives': de_lines,  # NEU: Liste von Alternativen
                             'en_tokens_alternatives': en_lines if en_tokens else None,  # NEU: Liste von Alternativen
                             'trans3_tokens_alternatives': trans3_lines if trans3_tokens else None,  # NEU: Liste von Alternativen
-                            'hide_trans_flags': hide_trans_flags,
-                            'inherited_markers': inherited_markers  # NEU: Für Ellisions-Fix! ✅
+                            'hide_trans_flags': hide_trans_flags
                         })
                     else:
                         # Keine `/`-Alternativen - normaler Block
@@ -1948,8 +1735,7 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                             'de_tokens': de_tokens,
                             'en_tokens': en_tokens,
                             'trans3_tokens': trans3_tokens,  # NEU: Dritte Übersetzung
-                            'hide_trans_flags': hide_trans_flags,
-                            'inherited_markers': inherited_markers  # NEU: Für Ellisions-Fix! ✅
+                            'hide_trans_flags': hide_trans_flags
                         })
                     
                     insertion_idx += expected_lines_per_insertion
@@ -2024,7 +1810,7 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                 hide_trans_flags = extract_hide_trans_flags(gr_tokens)
 
                 # WICHTIG: Elisions-Übertragung direkt nach dem Tokenizing anwenden
-                gr_tokens, inherited_markers = propagate_elision_markers(gr_tokens)
+                gr_tokens = propagate_elision_markers(gr_tokens)
 
                 # Für 3-sprachige Texte: Englische Zeile verarbeiten
                 en_tokens = []
@@ -2076,8 +1862,7 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                         'de_tokens_alternatives': de_lines,  # NEU: Liste von Alternativen
                         'en_tokens_alternatives': en_lines if en_tokens else None,  # NEU: Liste von Alternativen
                         'trans3_tokens_alternatives': trans3_lines if trans3_tokens else None,  # NEU: Liste von Alternativen
-                        'hide_trans_flags': hide_trans_flags,
-                        'inherited_markers': inherited_markers  # NEU: Für Ellisions-Fix! ✅
+                        'hide_trans_flags': hide_trans_flags
                     })
                 else:
                     # Keine `/`-Alternativen - normaler Block
@@ -2090,8 +1875,7 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                         'de_tokens': de_tokens,
                         'en_tokens': en_tokens,  # NEU: Englische Tokens für 3-sprachige Texte
                         'trans3_tokens': trans3_tokens,  # NEU: Dritte Übersetzung für 4-zeilige Blöcke
-                        'hide_trans_flags': hide_trans_flags,  # NEU: HideTrans-Flags für jeden Token
-                        'inherited_markers': inherited_markers  # NEU: Für Ellisions-Fix! ✅
+                        'hide_trans_flags': hide_trans_flags  # NEU: HideTrans-Flags für jeden Token
                     })
                 
                 # JETZT die gesammelten Kommentare einfügen (NACH dem pair-Block!)
@@ -2114,7 +1898,7 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                     # Extrahiere HideTrans-Flags (wichtig für konsistentes Verhalten)
                     hide_trans_flags = extract_hide_trans_flags(gr_tokens)
                     
-                    gr_tokens, inherited_markers = propagate_elision_markers(gr_tokens)
+                    gr_tokens = propagate_elision_markers(gr_tokens)
                     
                     blocks.append({
                         'type':'pair',
@@ -2198,7 +1982,7 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
                 speaker    = sp_gr or ''
 
                 # WICHTIG: Elisions-Übertragung direkt nach dem Tokenizing anwenden
-                gr_tokens, inherited_markers = propagate_elision_markers(gr_tokens)
+                gr_tokens = propagate_elision_markers(gr_tokens)
 
                 blocks.append({
                     'type':'pair',
@@ -2337,8 +2121,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                           hide_trans_flags: list[bool] = None,  # NEU: HideTrans-Flags
                           de_tokens_alternatives: list[list[str]] = None,  # NEU: Alternative Übersetzungen
                           en_tokens_alternatives: list[list[str]] = None,
-                          trans3_tokens_alternatives: list[list[str]] = None,
-                          inherited_markers: dict = None):  # NEU: Geerbte Meter-Marker (für Ellisions-Fix)
+                          trans3_tokens_alternatives: list[list[str]] = None):
     """
     ═══════════════════════════════════════════════════════════════════════════════════════
     HAUPTFUNKTION: Erstellt ReportLab-Tabellen für ein griechisch-deutsches Verspaar
@@ -2411,10 +2194,6 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
     # Standardwerte setzen falls nicht übergeben
     if doc_width_pt is None:
         doc_width_pt = A4[0] - 40*MM
-    
-    # NEU: inherited_markers defaultmäßig leeres Dict
-    if inherited_markers is None:
-        inherited_markers = {}
     
     # ═══════════════════════════════════════════════════════════════════
     # NEU: BEDEUTUNGS-STRAUß - Alternative Übersetzungen verarbeiten
@@ -2833,24 +2612,6 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 #       → Kompliziert, weil es Custom Flowable ist
                 #       → Einfacher: TableStyle mit 'ALIGN', 'CENTER' verwenden?
                 
-                # ═══════════════════════════════════════════════════════════════════
-                # NEU: Geerbten Meter-Marker prüfen (für Ellisions-Fix)
-                # ═══════════════════════════════════════════════════════════════════
-                # ZWECK: Token nach Ellisions-Apostroph verliert eigenen Marker
-                #        (weil an vorheriges Token übertragen), bekommt aber
-                #        inherited_meter_marker → Zeichnet trotzdem Topline! ✅
-                #
-                # BEISPIEL:
-                #   δiʼ(Pt) ἂν → ἂν hat keinen eigenen Marker, aber inherited='i'
-                #   → ToplineTokenFlowable.draw() zeichnet Topline über "ἂν"
-                #   → Durchgängige Topline von δʼ bis ἂν! ✅
-                #
-                # WANN GREIFT DAS?
-                #   - global_idx ist im inherited_markers Dictionary (z.B. {3: 'i'})
-                #   - Token bekommt inherited_meter_marker='i' übergeben
-                #   - draw() prüft: Keine _segments, aber inherited_marker? → Zeichne!
-                inherited_marker = inherited_markers.get(global_idx) if global_idx is not None else None
-                
                 return ToplineTokenFlowable(
                     tok_cleaned, token_gr_style, eff_cfg,
                     gr_bold=(gr_bold if is_gr else False),
@@ -2859,8 +2620,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                     bridge_to_next=br_to_next,
                     next_has_leading_bar=next_has_lead,
                     is_first_in_line=(idx_in_slice == 0),
-                    next_token_starts_with_bar=next_tok_starts_with_bar,  # FIX: Typo korrigiert
-                    inherited_meter_marker=inherited_marker  # NEU: Geerbten Marker übergeben! ✅
+                    next_token_starts_with_bar=next_tok_starts_with_bar  # FIX: Typo korrigiert
                 )
 
             # NICHT-Versmaß: Bars entfernen + pro Spaltenbreite weich zentrieren (Epos-Logik)
@@ -3685,9 +3445,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                     next_line_label = pair_b.get('label') or ''
                     next_base_num = pair_b.get('base')
 
-                    # WICHTIG: Nutze inherited_markers AUS DEM BLOCK!
-                    # (wurde bereits bei der Block-Erstellung durch propagate_elision_markers berechnet)
-                    next_inherited_markers = pair_b.get('inherited_markers', {})
+                    next_gr_tokens = propagate_elision_markers(next_gr_tokens)
                     
                     # ═══════════════════════════════════════════════════════════════════
                     # KRITISCH: Sprecher-Breite MUSS VOR Indent-Berechnung erfolgen!
@@ -3749,8 +3507,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                         line_comment_colors=line_comment_colors,
                         hide_pipes=hide_pipes,
                         block=pair_b,
-                        hide_trans_flags=pair_b.get('hide_trans_flags', []),
-                        inherited_markers=next_inherited_markers  # NEU: Geerbte Meter-Marker! ✅
+                        hide_trans_flags=pair_b.get('hide_trans_flags', [])
                     )
 
                     # Sammle die Zeilen
@@ -3842,9 +3599,9 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
             line_label= b.get('label') or ''
             base_num  = b.get('base')  # None oder int
 
-            # WICHTIG: Nutze inherited_markers AUS DEM BLOCK!
-            # (wurde bereits bei der Block-Erstellung durch propagate_elision_markers berechnet)
-            inherited_markers = b.get('inherited_markers', {})
+            # >>> NEU: Elisions-Übertragung wie im Epos
+            gr_tokens = propagate_elision_markers(gr_tokens)
+            # <<<
 
             # ═══════════════════════════════════════════════════════════════════════════
             # KRITISCH: Sprecher-Breite MUSS VOR Indent-Berechnung erfolgen!
@@ -3957,8 +3714,7 @@ def create_pdf(blocks, pdf_name:str, *, gr_bold:bool,
                 line_comment_colors=line_comment_colors,
                 hide_pipes=hide_pipes,
                 block=b,
-                hide_trans_flags=b.get('hide_trans_flags', []),
-                inherited_markers=inherited_markers  # NEU: Geerbte Meter-Marker! ✅
+                hide_trans_flags=b.get('hide_trans_flags', [])
             )
             # KRITISCH: KeepTogether() verhindert Seitenumbruch zwischen GR und DE!
             # OHNE KeepTogether: GR kann am Seitenende, DE am Seitenanfang landen
