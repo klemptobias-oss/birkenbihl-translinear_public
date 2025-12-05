@@ -1410,7 +1410,7 @@
             
              </p>
                <strong>Zusatzfunktion NoTrans PDF:</strong> Ein Haken in <strong>Übersetzungen ausblenden</strong> (oben in der Tabelle) sorgt dafür,
-               dass alle Übersetzungszeilen ausgeblendet werden. Man erhält dann das "NoTrans" PDF (keine translinear-Zeilen, also Originaltext mit
+               dass alle Übersetzungszeilen ausgeblendet werden. Man erhält dann das "NoTrans" PDF (keine translinear-Zeilen, also nur Originaltext mit
                Farben und Grammatiktags).
             </li>
             
@@ -1446,14 +1446,14 @@
               <p style="margin-bottom: 10px">
                 <strong>• Wartezeit:</strong> Nach ca. 1-2 Minuten sollten rechts
                 in der Werkseite im Fenster <strong>"PDF-Ansicht"</strong> die
-                PDFs aus dem Entwurf erscheinen. Dazu sollte man statt den Reiter <strong>original</strong> den Reiter <strong>Entwurf</strong>
-                anklicken, der auf die PDFs aus dem Entwurf verweist.
+                PDFs aus dem Entwurf erscheinen. Im Reiter <strong>original</strong> findet man dann die bereits hinterlegten, im Reiter <strong>Entwurf</strong>
+                die selbst erstellten PDFs.
               </p>
 
               <p style="margin-bottom: 10px">
                 <strong>• Automatische Varianten:</strong> Es werden automatisch
                 immer alle 8 Versionen des Dokumentes erstellt, unabhängig davon welche Einstellungen man vornimmt: schwarz-weiß, farbig,
-                mit/ohne Grammatik-Tags, mit/ohne fetter Schrift in der antiken Zeile. Man kann stets wählen aus den verschiedenen Anschauungen.
+                mit/ohne Grammatik-Tags, mit/ohne fetter Schrift in der antiken Zeile. 
               </p>
 
               <p
@@ -1469,8 +1469,7 @@
                 herunterladen, da sie nicht ewig dort verbleiben (sie sind aber stets neu erstellbar, wenn man <strong>weise mit seinem
                 translinear.txt</strong> umging).
                 Da der translinear.txt (nicht die PDFs!) die Grundlage aller PDF Erzeugungen ist, ist es klug, seinen bearbeiteten translinear.txt
-                sicher abzuspeichern (vor allem wenn man Arbeit und Geist hinein investiert hat), um seine Änderungen nicht zu verlieren, falls man ihn
-                noch einmal verändern möchte. Aus dem PDF ließe sich keine neue Version mehr generieren.
+                sicher abzuspeichern (vor allem wenn man Arbeit und Geist hinein investiert hat).
               </p>
             </li>
             <h3 style="display: inline-block; margin-right: 20px;">PDF aus Entwurf erzeugen: Funktionsdemonstration</h3>
@@ -1564,9 +1563,9 @@
                               <p style="margin: 8px 0 0 0; font-size: 0.95em;">
                                 Präpositionen, Partikel, Konjunktionen, Adverbien und Pronomen (Artikel) sind alle ohne Übersetzung, ohne
                                 Tags und in orange dargestellt. Bei Adjektiven wurde der (Adj)-Tag unsichtbar gemacht (die Kasus aber nicht), da dieser aufgrund der blauen Farbe redundant ist. Bei Verben und Partizipien wurde Genus Verbi
-                                als Tag ausgeblendet. Das Ergebnis ist ein "kompakterer" Text, der etwas mehr Vorwissen voraussetzt und aber 
+                                als Tag ausgeblendet. Das Ergebnis ist ein "kompakterer" Text, der etwas weniger Informationen konkret für den Leser enthält und aber darum
                                 das Lesen am "antiken" Text fördern könnte, da für viele Wörter keine Übersetzung gegeben ist und daher der Original-Text nicht
-                                so leicht umgangen werden kann. <em>(Aufwand: 30 Sekunden Konfiguration + 2 Minuten PDF-Generierung)</em>
+                                so leicht umgangen werden kann. Mit (HideTrans) würde man selektiv weitere Wörter ausblenden. <em>(Aufwand: 30 Sekunden Konfiguration + 2 Minuten PDF-Generierung)</em>
                               </p>
                             </div>
                             <button class="btn" onclick="window.open('Bilder/BENUTZERHINWEISE/inspirationspdf1.pdf', '_blank')" style="white-space: nowrap;">
@@ -1579,7 +1578,7 @@
                               <strong>2.) Ilias 1 – Kompakte NoTrans Versmaß-Darstellung</strong>
                               <p style="margin: 8px 0 0 0; font-size: 0.95em;">
                                 Der selbe Text in 3-sprachig und mit Versmaß-Darstellung. Gerade bei Versmaßdarstellung lohnt es sich, einige Tags unsichtbar zu machen, vor
-                                allem bei Verben oder Partizipien entstehen sonst längere Tag-Ketten, die die "Trassen"-Darstellung beeinflussen. Es ist auch erkennbar, wie bei einigen Zeilen die "Füße" entfernt wurden und wie sehr die sonst schöne Darstellung darunter leidet (meiner Ansicht nach).
+                                allem bei Verben oder Partizipien entstehen sonst längere Tag-Ketten, die die "Trassen"-Darstellung beeinflussen. Es ist auch erkennbar, wie bei einigen Zeilen die "Füße" entfernt wurden und wie sehr die sonst elegante Darstellung darunter leidet (meiner Ansicht nach).
                                 <em>(Aufwand: genau gleich groß)</em>
                               </p>
                             </div>
@@ -1607,9 +1606,10 @@
                               <strong>4.) Politeia 8 – Mit KI-generierten Kommentaren</strong>
                               <p style="margin: 8px 0 0 0; font-size: 0.95em;">
                                 Ein Text, welchem Kommentare hinzugefügt wurden. Dabei wurde eine KI damit beauftragt, den Text in regelmäßigen
-                                Abständen zu kommentieren und die Kommentare dann an die entsprechenden Stellen gesetzt. Der Text der der KI gegeben wurde, war
-                                einfach der translinear.txt mit seinen originalen Zeilenangaben und die Kommentare wurden unter die Zeilen gesetzt, auf die sie
-                                sich beziehen.
+                                Abständen zu kommentieren und dabei auch die Zeilennummern anzugeben, auf die sich ihre Kommentare beziehen. Der Text, der der KI gegeben wurde, waren
+                                einfach die ersten Zeilen des Politeia 8 translinear.txt mit seinen originalen Zeilenangaben und die Kommentare wurden unter die Zeilen gesetzt, auf
+                                die sie
+                                sich beziehen (die Quellenangaben waren im Chat-GPT Chatfenster natürlich klickbare Links mit anderer URL, man kann sie auch entfernen).
                               </p>
                             </div>
                             <button class="btn" onclick="window.open('Bilder/BENUTZERHINWEISE/inspirationspdf4.pdf', '_blank')" style="white-space: nowrap;">
@@ -1622,8 +1622,8 @@
                               <strong>5.) Politeia 8 – Für Fortgeschrittene (ohne Hilfsmittel)</strong>
                               <p style="margin: 8px 0 0 0; font-size: 0.95em;">
                                 Ein Text, der sich nur für Spezialisten eignet, er sei denjenigen empfohlen, welche die Stützräder, die die 
-                                Translineartexte ja sein sollen, überwinden wollen: Politeia 8 in der "NoTrans", "NoTag", "BlackWhite", "Normal"
-                                Version, bei der alle Tags, Übersetzungen, Farben und sonstiges ausgeschaltet wurde. <em>(Aufwand: wenige Minuten)</em>
+                                Translineartexte in den meisten Anwendungen ja sein sollen, überwinden wollen: Politeia 8 in der "NoTrans", "NoTag", "BlackWhite", "Normal"
+                                Version, bei der alle Tags, Übersetzungen, Farben und sonstiges ausgeschaltet wurde. <em>(Aufwand: 10 Sekunden und PDF-Generierungszeit)</em>
                               </p>
                             </div>
                             <button class="btn" onclick="window.open('Bilder/BENUTZERHINWEISE/inspirationspdf5.pdf', '_blank')" style="white-space: nowrap;">

@@ -801,7 +801,11 @@ function buildDraftPdfUrl(filename) {
   if (IS_LOCAL_ENVIRONMENT) {
     return relativePath;
   }
-  return `${GH_RAW_BASE}/${relativePath}`;
+  // NEU: Cache-Busting Parameter hinzufügen
+  // GitHub Raw-Content cached sehr aggressiv (1-3 Minuten)
+  // Timestamp-basierter Cache-Buster zwingt Browser zum Neu-Laden
+  const cacheBuster = Date.now();
+  return `${GH_RAW_BASE}/${relativePath}?cb=${cacheBuster}`;
 }
 
 function buildPdfUrlFromSelection() {
@@ -1753,10 +1757,10 @@ function showTagConfigModal() {
   // 0. Setze dynamische Überschriften basierend auf Sprache und Typ
   const langName = state.lang === "latein" ? "Latein" : "Griechisch";
   const typeName = state.kind === "poesie" ? "Poesie" : "Prosa";
-  
+
   const mainTitle = document.getElementById("modal-main-title");
   const subtitle = document.getElementById("modal-subtitle");
-  
+
   if (mainTitle) {
     mainTitle.textContent = "PDF Builder";
   }
@@ -3393,6 +3397,32 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
     console.error("PDF URL war:", pdfUrl);
     const message = error?.message || "";
     if (state.source === "draft") {
+      // NEU: Spezialfall für 404 bei Draft-PDFs
+      // GitHub Raw-Content cached aggressiv → PDF kann 1-3 Minuten brauchen
+      if (/Missing PDF/i.test(message) || /Unexpected server response/i.test(message) || message.includes('404')) {
+        // Zeige Hinweis dass PDF noch nicht verfügbar ist (GitHub Cache)
+        showPdfPlaceholder('draft-waiting', {
+          icon: '⏳',
+          title: 'PDF wird geladen...',
+          message: 'Das PDF wurde gerade erstellt und wird von GitHub verarbeitet.',
+          details: `
+            <p style="margin-top: 10px; font-size: 14px; color: #666;">
+              <strong>GitHub cached aggressiv:</strong> Es kann 1-3 Minuten dauern,
+              bis neue PDFs verfügbar sind.
+            </p>
+            <p style="margin-top: 8px; font-size: 14px; color: #666;">
+              💡 <strong>Tipp:</strong> Wechsle kurz zu einer anderen PDF-Variante
+              (z.B. Normal → Fett) und dann zurück - oft ist es dann da!
+            </p>
+            <button onclick="location.reload()" style="margin-top: 15px; padding: 8px 16px; background: #0066cc; color: white; border: none; border-radius: 4px; cursor: pointer;">
+              🔄 Seite neu laden
+            </button>
+          `
+        });
+        state.draftHasResult = false;
+        return;
+      }
+      
       if (state.manualDraftBuildRequired && !state.draftHasResult) {
         showDraftManualPlaceholder({ command: state.manualDraftCommand });
       } else if (state.draftBuildActive) {

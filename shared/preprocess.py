@@ -1463,14 +1463,28 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                             hidden_tags_by_wortart[normalized_wortart_key] = set()
                         hidden_tags_by_wortart[normalized_wortart_key].add(tag)
                 else:
-                    # Gruppen-Regel: z.B. 'adj', 'nomen', 'verb', 'artikel', etc.
+                    # Gruppen-Regel: z.B. 'adj', 'adjektiv', 'nomen', 'verb', 'artikel', etc.
                     # WICHTIG: Unterscheidung zwischen zwei Arten von Gruppenanführern:
                     #   1) MIT eigenem Tag (Adj, Art, Pr, Adv) → nur das Tag selbst ausblenden
                     #   2) OHNE eigenem Tag (Nomen, Verb, Partizip) → nichts (Subtags via spezifische Regeln)
                     
-                    # Prüfe ob rid selbst ein Tag ist (z.B. "Adj", "Art", "Pr")
-                    rid_upper = rid if rid in SUP_TAGS or rid in SUB_TAGS else rid.capitalize()
-                    is_tag_itself = rid_upper in SUP_TAGS or rid_upper in SUB_TAGS
+                    # WICHTIG: UI schickt volle Wortart-Namen (z.B. "adjektiv", "pronomen")
+                    # Wir müssen daraus das Tag-Kürzel extrahieren (z.B. "Adj", "Pr")
+                    # Reverse-Lookup in WORTART_IDENTIFIER_TAGS: 'Adj' -> 'adjektiv'
+                    tag_code_for_rid = None
+                    rid_lower = rid.lower()
+                    for tag, wortart_name in WORTART_IDENTIFIER_TAGS.items():
+                        if wortart_name == rid_lower:
+                            tag_code_for_rid = tag
+                            break
+                    
+                    # Fallback: Prüfe ob rid selbst ein Tag ist (z.B. "Adj", "Art", "Pr")
+                    if not tag_code_for_rid:
+                        rid_upper = rid if rid in SUP_TAGS or rid in SUB_TAGS else rid.capitalize()
+                        if rid_upper in SUP_TAGS or rid_upper in SUB_TAGS:
+                            tag_code_for_rid = rid_upper
+                    
+                    is_tag_itself = tag_code_for_rid is not None
                     
                     if is_tag_itself:
                         # Gruppenanführer MIT eigenem Tag (z.B. "Adj", "Art", "Pr")
@@ -1480,14 +1494,14 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         # WICHTIG: Normalisiere den Key zur vollen Wortart-Form, damit Lookup funktioniert
                         # 'adj' → 'adjektiv', 'art' → 'artikel', 'pr' → 'pronomen', etc.
                         # Die Wortart-Funktion gibt 'adjektiv' zurück, nicht 'adj'!
-                        wortart_key = WORTART_IDENTIFIER_TAGS.get(rid_upper)
+                        wortart_key = WORTART_IDENTIFIER_TAGS.get(tag_code_for_rid)
                         if not wortart_key:
                             # Fallback: nutze rid.lower() direkt (z.B. 'prp', 'kon', 'pt', 'ij')
-                            wortart_key = rid.lower()
+                            wortart_key = rid_lower
                         
                         if wortart_key not in hidden_tags_by_wortart:
                             hidden_tags_by_wortart[wortart_key] = set()
-                        hidden_tags_by_wortart[wortart_key].add(rid_upper)
+                        hidden_tags_by_wortart[wortart_key].add(tag_code_for_rid)
                     else:
                         # Gruppenanführer OHNE eigenem Tag (z.B. "nomen", "verb", "partizip")
                         # → Nichts hinzufügen! Diese sind nur UI-Convenience zum schnellen Markieren
@@ -1682,14 +1696,18 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             tags_to_remove = set()
             if tags_to_hide_from_table:
                 for tag_to_hide in tags_to_hide_from_table:
-                    # Prüfe ob das Tag direkt vorhanden ist
+                    # Prüfe ob das Tag direkt vorhanden ist (z.B. 'N', 'G', 'Adj')
                     if tag_to_hide in orig_tags:
                         tags_to_remove.add(tag_to_hide)
-                    # ZUSÄTZLICH: Prüfe ob es ein Gruppenanführer-Tag ist (z.B. 'adjektiv' -> 'Adj')
-                    # Reverse-Lookup in WORTART_IDENTIFIER_TAGS
-                    for tag_code, wortart_name in WORTART_IDENTIFIER_TAGS.items():
-                        if wortart_name == tag_to_hide and tag_code in orig_tags:
-                            tags_to_remove.add(tag_code)
+                    
+                    # ZUSÄTZLICH: Prüfe auch alle orig_tags einzeln
+                    # (für Gruppenanführer wie Adj, Art, Pr die in tags_to_hide_from_table sein können)
+                    # WICHTIG: Dies fängt Fälle ab wo tag_to_hide z.B. 'Adj' ist und orig_tags {'Adj', 'N'} hat
+                    # → 'Adj' soll entfernt werden!
+                    if tag_to_hide in {'Adj', 'Art', 'Pr', 'Adv', 'Prp', 'Kon', 'Pt', 'ij'}:
+                        # Gruppenanführer-Tag: entferne es wenn es in orig_tags ist
+                        if tag_to_hide in orig_tags:
+                            tags_to_remove.add(tag_to_hide)
             
             # NEU: Enklitische Tags-Logik
             # Wenn bei einer Wortart ALLE Tags entfernt werden sollen (z.B. bei Nomen alle Kasus),
