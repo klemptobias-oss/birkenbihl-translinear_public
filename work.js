@@ -3399,12 +3399,17 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
     if (state.source === "draft") {
       // NEU: Spezialfall für 404 bei Draft-PDFs
       // GitHub Raw-Content cached aggressiv → PDF kann 1-3 Minuten brauchen
-      if (/Missing PDF/i.test(message) || /Unexpected server response/i.test(message) || message.includes('404')) {
+      if (
+        /Missing PDF/i.test(message) ||
+        /Unexpected server response/i.test(message) ||
+        message.includes("404")
+      ) {
         // Zeige Hinweis dass PDF noch nicht verfügbar ist (GitHub Cache)
-        showPdfPlaceholder('draft-waiting', {
-          icon: '⏳',
-          title: 'PDF wird geladen...',
-          message: 'Das PDF wurde gerade erstellt und wird von GitHub verarbeitet.',
+        showPdfPlaceholder("draft-waiting", {
+          icon: "⏳",
+          title: "PDF wird geladen...",
+          message:
+            "Das PDF wurde gerade erstellt und wird von GitHub verarbeitet.",
           details: `
             <p style="margin-top: 10px; font-size: 14px; color: #666;">
               <strong>GitHub cached aggressiv:</strong> Es kann 1-3 Minuten dauern,
@@ -3417,12 +3422,12 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
             <button onclick="location.reload()" style="margin-top: 15px; padding: 8px 16px; background: #0066cc; color: white; border: none; border-radius: 4px; cursor: pointer;">
               🔄 Seite neu laden
             </button>
-          `
+          `,
         });
         state.draftHasResult = false;
         return;
       }
-      
+
       if (state.manualDraftBuildRequired && !state.draftHasResult) {
         showDraftManualPlaceholder({ command: state.manualDraftCommand });
       } else if (state.draftBuildActive) {
