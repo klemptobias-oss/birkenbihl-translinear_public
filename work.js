@@ -3412,7 +3412,7 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
             "Das PDF wurde gerade erstellt und wird von GitHub verarbeitet.",
           details: `
             <p style="margin-top: 10px; font-size: 14px; color: #666;">
-              <strong>GitHub cached aggressiv:</strong> Es kann 1-3 Minuten dauern,
+              <strong>GitHub ist am Arbeiten:</strong> Es kann 1-3 Minuten dauern,
               bis neue PDFs verfügbar sind.
             </p>
             <p style="margin-top: 8px; font-size: 14px; color: #666;">
