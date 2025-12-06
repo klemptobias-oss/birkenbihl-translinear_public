@@ -3294,9 +3294,12 @@ function bindPdfUtilityButtons() {
         state.source === "draft" &&
         pdfUrl.includes("raw.githubusercontent.com")
       ) {
+        // Entferne Cache-Buster (?cb=...) aus der URL
+        const urlWithoutCacheBuster = pdfUrl.split("?")[0];
+
         // Extrahiere den Dateipfad aus der GitHub RAW URL
         // Der Pfad ist bereits vollständig (inkl. pdf_drafts/), also nur den Teil nach main/ nehmen
-        const match = pdfUrl.match(
+        const match = urlWithoutCacheBuster.match(
           /raw\.githubusercontent\.com\/[^\/]+\/[^\/]+\/[^\/]+\/(.+)$/
         );
         if (match) {
@@ -3318,7 +3321,7 @@ function bindPdfUtilityButtons() {
 
   if (downloadBtn && !downloadBtn.dataset.boundClick) {
     downloadBtn.dataset.boundClick = "true";
-    downloadBtn.addEventListener("click", () => {
+    downloadBtn.addEventListener("click", async () => {
       const filename =
         state.source === "draft" ? buildDraftPdfFilename() : buildPdfFilename();
 
@@ -3334,12 +3337,28 @@ function bindPdfUtilityButtons() {
           ? buildDraftPdfUrl(filename)
           : buildReleaseProxyUrl(filename, "attachment");
       if (!pdfUrl) return;
-      const a = document.createElement("a");
-      a.href = pdfUrl;
-      a.download = shortFilename; // Verwende gekürzten Namen für Download
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
+
+      // NEU: Fetch PDF als Blob und download mit korrektem Namen
+      // (Cross-Origin URLs ignorieren a.download, daher Blob-Trick)
+      try {
+        const response = await fetch(pdfUrl);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const blob = await response.blob();
+        const blobUrl = URL.createObjectURL(blob);
+
+        const a = document.createElement("a");
+        a.href = blobUrl;
+        a.download = shortFilename; // Jetzt funktioniert der Name!
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        // Cleanup
+        setTimeout(() => URL.revokeObjectURL(blobUrl), 100);
+      } catch (error) {
+        console.error("Download fehlgeschlagen:", error);
+        alert("PDF-Download fehlgeschlagen. Bitte versuche es später erneut.");
+      }
     });
   }
 }

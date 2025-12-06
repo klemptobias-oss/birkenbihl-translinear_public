@@ -1238,20 +1238,28 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
         if entry:
             # Wenn "all" gesetzt ist: ALLE Tags dieser Wortart wollen ausblenden
             if entry.get("all"):
-                # Füge alle relevanten Tags hinzu
-                for orig_tag in original_tags:
-                    # Bei Hauptwortart: nur Tags dieser Wortart
-                    # Bei enklitischen: nur das enklitische Tag
-                    if wortart_key in ['kon', 'pt', 'adv', 'prp', 'ij']:
-                        # Enklitisch: nur das eigene Tag
+                # Füge alle relevanten Tags hinzu (basierend auf HIERARCHIE/RULE_TAG_MAP)
+                if wortart_key in ['kon', 'pt', 'adv', 'prp', 'ij']:
+                    # Enklitische Wortarten: nur das eigene Tag
+                    for orig_tag in original_tags:
                         if orig_tag in enklitische_wortarten:
                             tags_that_want_to_hide.add(_normalize_tag_name(orig_tag))
-                    else:
-                        # Hauptwortart: alle nicht-enklitischen Tags
+                else:
+                    # Hauptwortart: ALLE Tags die zur Wortart gehören (aus RULE_TAG_MAP)
+                    # z.B. adjektiv → ['Adj', 'N', 'G', 'D', 'A', 'V', 'Kmp', 'Sup']
+                    wortart_tags = RULE_TAG_MAP.get(wortart_key, [])
+                    for orig_tag in original_tags:
+                        # Füge alle Tags hinzu, die in der Wortart-Hierarchie sind
+                        # UND nicht enklitisch sind (Kon, Pt bleiben draußen)
                         if orig_tag not in enklitische_wortarten:
-                            parts = [p for p in orig_tag.split('/') if p]
-                            for part in parts:
-                                tags_that_want_to_hide.add(_normalize_tag_name(part))
+                            normalized = _normalize_tag_name(orig_tag)
+                            # Prüfe ob das Tag zur Wortart gehört
+                            if any(_normalize_tag_name(wt) == normalized for wt in wortart_tags):
+                                tags_that_want_to_hide.add(normalized)
+                            # ODER: Wenn es ein unbekanntes Tag ist, füge es trotzdem hinzu
+                            # (defensive: lieber zu viel ausblenden als zu wenig)
+                            elif orig_tag not in SUP_TAGS and orig_tag not in SUB_TAGS:
+                                tags_that_want_to_hide.add(normalized)
             else:
                 # Nur spezifische Tags dieser Wortart wollen ausblenden
                 entry_tags = entry.get("tags", set())
