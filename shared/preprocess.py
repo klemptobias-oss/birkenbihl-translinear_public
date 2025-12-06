@@ -1181,10 +1181,17 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
     Übersetzung wird NUR ausgeblendet wenn ALLE Tags des Tokens auf "hideTranslation" stehen.
     Solange mindestens EIN Tag noch sichtbar sein will → Übersetzung bleibt!
     
+    WICHTIG: Bei enklitischen Wörtern (z.B. Eumque(Pr)(A)(Kon)) müssen ALLE Wortarten
+    separat geprüft werden - Kon, Pt, Adv sind EIGENE Wortarten, nicht Teil der Hauptwortart!
+    
     Beispiel:
       Token: Sorōrem(Adj)(A)
       Config: 'adj' auf hideTranslation, 'adj_A' NICHT
       → Übersetzung bleibt, weil (A) noch sichtbar sein will!
+      
+      Token: Eumque(Pr)(A)(Kon)
+      Config: 'pronomen' auf hideTranslation, 'kon' auf hideTranslation
+      → Übersetzung wird ausgeblendet, weil BEIDE Wortarten (Pr und Kon) ausgeblendet sind!
     """
     if not token or not translation_rules:
         return False
@@ -1200,23 +1207,51 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
     
     # WICHTIG: Verwende ORIGINALE Tags (nicht normalisiert) für Wortart-Erkennung
     original_tags = set(tags)
-    wortart, _ = _get_wortart_and_relevant_tags(original_tags)
     
     # Sammle ALLE Tags die auf "hideTranslation" stehen
     tags_that_want_to_hide = set()
     
-    # 1. Prüfe wortart-spezifische Regeln (z.B. 'adjektiv', 'nomen')
-    if wortart:
-        wortart_key = wortart.lower()
+    # NEU: Erkenne ALLE Wortarten im Token (z.B. Eumque(Pr)(A)(Kon) hat Pr UND Kon)
+    wortarten_im_token = set()
+    
+    # 1. Hauptwortart (z.B. Pronomen bei Eumque(Pr)(A)(Kon))
+    hauptwortart, _ = _get_wortart_and_relevant_tags(original_tags)
+    if hauptwortart:
+        wortarten_im_token.add(hauptwortart.lower())
+    
+    # 2. Enklitische Wortarten (Kon, Pt, Adv) separat prüfen
+    # Diese sind EIGENE Wortarten, auch wenn sie mit anderen kombiniert sind!
+    enklitische_wortarten = {
+        'Kon': 'kon',
+        'Pt': 'pt', 
+        'Adv': 'adv',
+        'Prp': 'prp',
+        'ij': 'ij'
+    }
+    for tag, wortart_name in enklitische_wortarten.items():
+        if tag in original_tags:
+            wortarten_im_token.add(wortart_name)
+    
+    # 3. Prüfe für JEDE Wortart im Token die hideTranslation-Regeln
+    for wortart_key in wortarten_im_token:
         entry = translation_rules.get(wortart_key)
         if entry:
             # Wenn "all" gesetzt ist: ALLE Tags dieser Wortart wollen ausblenden
             if entry.get("all"):
-                # Füge alle originalen Tags hinzu (normalisiert)
+                # Füge alle relevanten Tags hinzu
                 for orig_tag in original_tags:
-                    parts = [p for p in orig_tag.split('/') if p]
-                    for part in parts:
-                        tags_that_want_to_hide.add(_normalize_tag_name(part))
+                    # Bei Hauptwortart: nur Tags dieser Wortart
+                    # Bei enklitischen: nur das enklitische Tag
+                    if wortart_key in ['kon', 'pt', 'adv', 'prp', 'ij']:
+                        # Enklitisch: nur das eigene Tag
+                        if orig_tag in enklitische_wortarten:
+                            tags_that_want_to_hide.add(_normalize_tag_name(orig_tag))
+                    else:
+                        # Hauptwortart: alle nicht-enklitischen Tags
+                        if orig_tag not in enklitische_wortarten:
+                            parts = [p for p in orig_tag.split('/') if p]
+                            for part in parts:
+                                tags_that_want_to_hide.add(_normalize_tag_name(part))
             else:
                 # Nur spezifische Tags dieser Wortart wollen ausblenden
                 entry_tags = entry.get("tags", set())
@@ -1224,7 +1259,7 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
                     normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
                     tags_that_want_to_hide.update(normalized_entry_tags)
     
-    # 2. Prüfe globale Regeln (z.B. '_global')
+    # 4. Prüfe globale Regeln (z.B. '_global')
     global_entry = translation_rules.get(TRANSLATION_HIDE_GLOBAL)
     if global_entry:
         if global_entry.get("all"):
@@ -1239,7 +1274,7 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
                 normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
                 tags_that_want_to_hide.update(normalized_entry_tags)
     
-    # 3. DEFENSIVE PRÜFUNG: Gibt es mindestens EIN Tag das NICHT ausgeblendet werden will?
+    # 5. DEFENSIVE PRÜFUNG: Gibt es mindestens EIN Tag das NICHT ausgeblendet werden will?
     for orig_tag in original_tags:
         parts = [p for p in orig_tag.split('/') if p]
         for part in parts:
