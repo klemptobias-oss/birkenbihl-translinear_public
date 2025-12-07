@@ -1404,42 +1404,32 @@ def group_pairs_into_flows(blocks):
             if len(dt) < max_len: dt += [''] * (max_len - len(dt))
             if len(et) < max_len: et += [''] * (max_len - len(et))
 
-            # NEU: Im Lyrik-Modus ODER wenn Alternativen vorhanden sind → Zeilenstruktur bewahren
-            # STRAUßLOGIK: Wenn `/` vorhanden ist, behandeln wir das wie Lyrik (Zeile für Zeile)
-            # KRITISCH: Auch im Fließtext! Alternativen unterbrechen den Flow kurz
-            if in_lyrik_mode or b.get('_has_alternatives'):
-                # WICHTIG: Flush vorherigen Flow (Text VOR dem Alternativ-Token)
+            # NEU: Lyrik-Modus → Zeilenstruktur bewahren (isolierte pair-blocks)
+            # KRITISCH: NUR Lyrik isolieren, NICHT Straußlogik!
+            if in_lyrik_mode:
+                # WICHTIG: Flush vorherigen Flow
                 flush()
                 
-                # Erstelle isolierten pair-Block für diese Zeile/Tokens
-                # (bei Lyrik: volle Zeile; bei Straußlogik im Flow: nur diese Tokens)
-                base_num = b.get('base')  # Zeilennummer aus dem Block
+                # Erstelle isolierten pair-Block für Lyrik-Zeile
+                base_num = b.get('base')
                 pair_block = {
                     'type': 'pair',
                     'gr_tokens': gt,
                     'de_tokens': dt,
                     'en_tokens': et,
-                    'para_label': current_para_label if not in_lyrik_mode else '',  # § nur wenn NICHT Lyrik
+                    'para_label': '',  # Kein § bei Lyrik
                     'speaker': active_speaker,
-                    'base': base_num,  # NEU: Zeilennummer für Hinterlegung
-                    '_is_lyrik': in_lyrik_mode  # KRITISCH: Markiere als Lyrik für größeren Zeilenabstand im Rendering
+                    'base': base_num,
+                    '_is_lyrik': True
                 }
-                # NEU: BEDEUTUNGS-STRAUß - Übertrage Alternativen wenn vorhanden
-                if b.get('_has_alternatives'):
-                    pair_block['_gr_alternatives'] = b.get('_gr_alternatives', [])  # NEU: Auch GR!
-                    pair_block['_de_alternatives'] = b.get('_de_alternatives', [])
-                    pair_block['_en_alternatives'] = b.get('_en_alternatives', [])
-                    pair_block['_has_alternatives'] = True
                 flows.append(pair_block)
-                
-                # WICHTIG: Para-Label zurücksetzen wenn wir es verwendet haben (nur bei Straußlogik, nicht bei Lyrik!)
-                if not in_lyrik_mode and current_para_label:
-                    current_para_label = None
-                
-                # NACH Alternativen: Flow geht weiter! (Buffer bleibt leer für nächste Tokens)
                 continue
-
-            buf_gr.extend(gt); buf_de.extend(dt); buf_en.extend(et)  # NEU: buf_en erweitern
+            
+            # FLIEßTEXT: ALLE Tokens in Buffer, AUCH mit Alternativen!
+            # KRITISCH: Straußlogik bleibt im Flow, keine Isolation!
+            buf_gr.extend(gt)
+            buf_de.extend(dt)
+            buf_en.extend(et)
             continue
 
         if t == 'para_set':
@@ -1473,19 +1463,16 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                                   table_halign='LEFT',
                                   hide_pipes=False, tag_config=None, tag_mode="TAGS"):
     """
-    STRAUßLOGIK: Rendert Alternativen wie in Poesie - EINE Tabelle mit mehreren Zeilen!
+    STRAUßLOGIK mit SLICE-LOGIC für Fließtext-Umbrüche!
     
-    KRITISCH: Wie 3-sprachige PDFs:
-    - GR Zeile: Normale Größe
-    - DE Zeile: Kleinere Schrift, eng darunter
-    - EN Zeile: Kleinere Schrift, eng darunter
-    - Alternativen: Wie zusätzliche DE/EN Zeilen
+    KRITISCH: Wenn die Zeile zu breit ist, wird sie in MEHRERE Tabellen aufgeteilt (Slices)!
+    Jede Slice-Tabelle hat dann wieder mehrere Zeilen (GR + DE-Alternativen + EN-Alternativen).
     
-    FARBEN: Tag-Farben von GR werden auf DE/EN übertragen!
-    AUSRICHTUNG: Spaltenbreiten basierend auf breitestem Token über ALLE Alternativen!
+    GENAU WIE BEI NORMALEM FLOW!
     """
     from reportlab.platypus import Table, TableStyle, Paragraph
     from reportlab.lib import colors
+    from reportlab.pdfbase.pdfmetrics import stringWidth
     
     # Handle None inputs
     if gr_tokens_alternatives is None:
@@ -1517,38 +1504,30 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
     de_lines = [alt + [''] * (cols - len(alt)) for alt in de_tokens_alternatives]
     en_lines = [alt + [''] * (cols - len(alt)) for alt in en_tokens_alternatives]
     
-    # Berechne Spaltenbreiten (wie in Poesie: Maximum über alle Alternativen)
-    # KRITISCH: Für jede Token-Spalte nehmen wir das BREITESTE Token über ALLE Alternativen!
-    from reportlab.pdfbase.pdfmetrics import stringWidth
-    
-    # Erstelle Paragraph-Styles für Breiten-Messung
-    # GR: token_gr_style (größere Schrift)
-    # DE/EN: token_de_style (kleinere Schrift)
+    # ═══════════════════════════════════════════════════════════════════
+    # SPALTENBREITEN-BERECHNUNG (per-column, widest token)
+    # ═══════════════════════════════════════════════════════════════════
     gr_font = token_gr_style.fontName
     gr_size = token_gr_style.fontSize
     de_font = token_de_style.fontName
     de_size = token_de_style.fontSize
     
-    # Berechne Breite für jede Token-Spalte
     token_widths = []
     for k in range(cols):
-        # Finde breitestes GR Token in Spalte k über alle GR Alternativen
+        # Finde breitestes Token in Spalte k über alle Alternativen
         gr_token = ''
         for gr_line in gr_lines:
             if k < len(gr_line) and gr_line[k]:
                 if len(gr_line[k]) > len(gr_token):
                     gr_token = gr_line[k]
         
-        # Finde breitestes DE Token in Spalte k über alle DE Alternativen
         de_token = ''
         for de_line in de_lines:
             if k < len(de_line) and de_line[k]:
-                # Entferne | für Breitenmessung wenn hide_pipes
                 display_tok = de_line[k].replace('|', '') if hide_pipes else de_line[k]
                 if len(display_tok) > len(de_token):
                     de_token = display_tok
         
-        # Finde breitestes EN Token in Spalte k über alle EN Alternativen
         en_token = ''
         for en_line in en_lines:
             if k < len(en_line) and en_line[k]:
@@ -1556,8 +1535,7 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                 if len(display_tok) > len(en_token):
                     en_token = display_tok
         
-        # Messe Breiten (mit einfacher stringWidth, da Paragraphs komplex sind)
-        # VEREINFACHUNG: Nutze visible_measure_token wenn verfügbar, sonst stringWidth
+        # Messe Breiten
         try:
             gr_width = visible_measure_token(gr_token, font=gr_font, size=gr_size, 
                                             is_greek_row=True) if gr_token else 0.0
@@ -1576,186 +1554,181 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
         except:
             en_width = stringWidth(en_token, de_font, de_size) if en_token else 0.0
         
-        # Maximum + Padding
         max_width = max(gr_width, de_width, en_width)
-        
-        # Padding basierend auf tag_mode (Feste Werte wie in Poesie DEFAULT_CONFIG)
-        if tag_mode == "TAGS":
-            padding = 2.5  # TOKEN_PAD_PT_NORMAL_TAG
-        else:
-            padding = 2.0  # TOKEN_PAD_PT_NORMAL_NOTAG
-        
+        padding = 2.5 if tag_mode == "TAGS" else 2.0
         token_widths.append(max_width + padding)
     
-    # Erstelle finale Spaltenbreiten-Liste
-    col_widths = []
-    if para_display:
-        col_widths.append(para_width_pt)
-    if speaker_display:
-        col_widths.append(speaker_width_pt)
-    col_widths.extend(token_widths)
-    
     # ═══════════════════════════════════════════════════════════════════
-    # FARB-EXTRAKTION: Extrahiere Farben aus GR-Tokens für Übertragung
+    # SLICE-LOGIK: Teile Tokens in Slices (wie in normalem Flow!)
     # ═══════════════════════════════════════════════════════════════════
-    # WICHTIG: format_token_markup() macht bereits die Farb-Extraktion!
-    # Wir müssen die RAW-Tokens analysieren, um Farb-Symbole zu finden
+    avail_w = doc_width_pt
+    if speaker_display and speaker_width_pt > 0:
+        avail_w -= (speaker_width_pt + 2.0)  # SPEAKER_GAP_MM
+    if para_display and para_width_pt > 0:
+        avail_w -= (para_width_pt + 2.0)  # PARA_GAP_MM
     
-    def extract_color_from_token(token: str) -> str:
-        """Extrahiert Farbcode aus Token (gleiche Logik wie in format_token_markup)"""
-        if not token:
+    tables = []
+    i = 0
+    first_slice = True
+    
+    while i < cols:
+        # Pack-Phase: Füge Spalten hinzu bis avail_w überschritten
+        acc, j = 0.0, i
+        while j < cols:
+            w = token_widths[j]
+            if acc + w > avail_w and j > i:
+                break
+            acc += w
+            j += 1
+        
+        # Slice: i bis j (exklusiv)
+        slice_gr_lines = [line[i:j] for line in gr_lines]
+        slice_de_lines = [line[i:j] for line in de_lines]
+        slice_en_lines = [line[i:j] for line in en_lines]
+        slice_widths = token_widths[i:j]
+        
+        # ═══════════════════════════════════════════════════════════════════
+        # FARB-EXTRAKTION für diesen Slice
+        # ═══════════════════════════════════════════════════════════════════
+        def extract_color_from_token(token: str) -> str:
+            """Extrahiert Farbcode aus Token"""
+            if not token:
+                return None
+            raw = token.strip()
+            if '#' in raw:
+                return '#FF0000'  # Rot
+            elif '+' in raw:
+                return '#1E90FF'  # Blau
+            elif '-' in raw:
+                return '#228B22'  # Grün
+            elif '§' in raw:
+                return '#9370DB'  # Violett
+            elif '$' in raw:
+                return '#FFA500'  # Orange
             return None
-        raw = token.strip()
         
-        # Farbcodes - finde den ersten Farbcode im Token
-        if '#' in raw:
-            return '#FF0000'  # Rot
-        elif '+' in raw:
-            return '#1E90FF'  # Blau
-        elif '-' in raw:
-            return '#228B22'  # Grün
-        elif '§' in raw:
-            return '#9370DB'  # Violett
-        elif '$' in raw:
-            return '#FFA500'  # Orange
-        return None
-    
-    # Extrahiere Farben aus der ersten GR-Zeile (für jede Spalte)
-    gr_colors = []
-    if gr_lines and len(gr_lines) > 0:
-        for tok in gr_lines[0]:
-            color = extract_color_from_token(tok)
-            gr_colors.append(color)
-    
-    # ═══════════════════════════════════════════════════════════════════
-    # TABELLEN-ZEILEN ERSTELLEN mit Farb-Übertragung
-    # ═══════════════════════════════════════════════════════════════════
-    rows = []
-    
-    # GR Zeile(n) - nur erste Alternative wenn mehrere GR-Alternativen
-    for gr_idx, gr_line in enumerate(gr_lines):
-        if gr_idx > 0:
-            break  # Nur erste GR Alternative (Haupt-Zeile)
+        gr_colors = []
+        if slice_gr_lines and len(slice_gr_lines) > 0:
+            for tok in slice_gr_lines[0]:
+                color = extract_color_from_token(tok)
+                gr_colors.append(color)
         
-        if not any(gr_line):
-            continue
+        # ═══════════════════════════════════════════════════════════════════
+        # TABELLEN-ZEILEN für diesen Slice
+        # ═══════════════════════════════════════════════════════════════════
+        rows = []
         
-        gr_row = []
-        # Para-Spalte (nur in erster Zeile)
-        if para_display:
-            if gr_idx == 0:
-                gr_row.append(Paragraph(para_display, style_para))
-            else:
-                gr_row.append('')
-        
-        # Speaker-Spalte (nur in erster Zeile)
-        if speaker_display:
-            if gr_idx == 0:
-                gr_row.append(Paragraph(speaker_display, style_speaker))
-            else:
-                gr_row.append('')
-        
-        # GR Token-Spalten (mit format_token_markup für korrekte Darstellung)
-        for tok in gr_line:
-            if tok:
-                # format_token_markup macht bereits Farb-Extraktion und HTML-Generierung
-                formatted = format_token_markup(tok, is_greek_row=True, base_font_size=gr_size)
-                gr_row.append(Paragraph(formatted, token_gr_style))
-            else:
-                gr_row.append('')
-        
-        rows.append(gr_row)
-    
-    # DE Alternativen - KLEINERE Schrift, eng untereinander, MIT FARB-ÜBERTRAGUNG
-    for de_line in de_lines:
-        if not any(de_line):
-            continue
-        
-        de_row = []
-        # Para + Speaker leer
-        if para_display:
-            de_row.append('')
-        if speaker_display:
-            de_row.append('')
-        
-        # DE Token-Spalten MIT Farb-Übertragung von GR
-        for col_idx, tok in enumerate(de_line):
-            if tok:
-                # Entferne | wenn hide_pipes
-                display_tok = tok.replace('|', '') if hide_pipes else tok
-                
-                # FARB-ÜBERTRAGUNG: Nutze Farbe aus entsprechender GR-Spalte
-                color = gr_colors[col_idx] if col_idx < len(gr_colors) else None
-                
-                if color:
-                    # Wrappen in <font color="...">
-                    html = f'<font color="{color}">{xml_escape(display_tok)}</font>'
+        # GR Zeile (nur erste Alternative, nur im ersten Slice mit Para/Speaker)
+        for gr_idx, gr_line in enumerate(slice_gr_lines):
+            if gr_idx > 0:
+                break  # Nur erste GR Alternative
+            
+            if not any(gr_line):
+                continue
+            
+            gr_row = []
+            # Para-Spalte (nur first_slice)
+            if para_display:
+                if first_slice:
+                    gr_row.append(Paragraph(para_display, style_para))
                 else:
-                    html = xml_escape(display_tok)
-                
-                de_row.append(Paragraph(html, token_de_style))
-            else:
+                    gr_row.append('')
+            # Speaker-Spalte (nur first_slice)
+            if speaker_display:
+                if first_slice:
+                    gr_row.append(Paragraph(speaker_display, style_speaker))
+                else:
+                    gr_row.append('')
+            # GR Tokens
+            for tok in gr_line:
+                if tok:
+                    formatted = format_token_markup(tok, is_greek_row=True, base_font_size=gr_size)
+                    gr_row.append(Paragraph(formatted, token_gr_style))
+                else:
+                    gr_row.append('')
+            rows.append(gr_row)
+        
+        # DE Alternativen
+        for de_line in slice_de_lines:
+            if not any(de_line):
+                continue
+            de_row = []
+            if para_display:
                 de_row.append('')
+            if speaker_display:
+                de_row.append('')
+            for col_idx, tok in enumerate(de_line):
+                if tok:
+                    display_tok = tok.replace('|', '') if hide_pipes else tok
+                    color = gr_colors[col_idx] if col_idx < len(gr_colors) else None
+                    if color:
+                        html = f'<font color="{color}">{xml_escape(display_tok)}</font>'
+                    else:
+                        html = xml_escape(display_tok)
+                    de_row.append(Paragraph(html, token_de_style))
+                else:
+                    de_row.append('')
+            rows.append(de_row)
         
-        rows.append(de_row)
-    
-    # EN Alternativen - KLEINERE Schrift, eng untereinander, MIT FARB-ÜBERTRAGUNG
-    for en_line in en_lines:
-        if not any(en_line):
+        # EN Alternativen
+        for en_line in slice_en_lines:
+            if not any(en_line):
+                continue
+            en_row = []
+            if para_display:
+                en_row.append('')
+            if speaker_display:
+                en_row.append('')
+            for col_idx, tok in enumerate(en_line):
+                if tok:
+                    display_tok = tok.replace('|', '') if hide_pipes else tok
+                    color = gr_colors[col_idx] if col_idx < len(gr_colors) else None
+                    if color:
+                        html = f'<font color="{color}">{xml_escape(display_tok)}</font>'
+                    else:
+                        html = xml_escape(display_tok)
+                    en_row.append(Paragraph(html, token_de_style))
+                else:
+                    en_row.append('')
+            rows.append(en_row)
+        
+        if not rows:
+            i = j
+            first_slice = False
             continue
         
-        en_row = []
-        # Para + Speaker leer
+        # Erstelle Spaltenbreiten für diesen Slice
+        col_widths = []
         if para_display:
-            en_row.append('')
+            col_widths.append(para_width_pt)
         if speaker_display:
-            en_row.append('')
+            col_widths.append(speaker_width_pt)
+        col_widths.extend(slice_widths)
         
-        # EN Token-Spalten MIT Farb-Übertragung von GR
-        for col_idx, tok in enumerate(en_line):
-            if tok:
-                display_tok = tok.replace('|', '') if hide_pipes else tok
-                
-                # FARB-ÜBERTRAGUNG: Nutze Farbe aus entsprechender GR-Spalte
-                color = gr_colors[col_idx] if col_idx < len(gr_colors) else None
-                
-                if color:
-                    # Wrappen in <font color="...">
-                    html = f'<font color="{color}">{xml_escape(display_tok)}</font>'
-                else:
-                    html = xml_escape(display_tok)
-                
-                en_row.append(Paragraph(html, token_de_style))
-            else:
-                en_row.append('')
+        # Erstelle Tabelle
+        table = Table(rows, colWidths=col_widths, hAlign=table_halign)
         
-        rows.append(en_row)
+        # Style
+        table_style_commands = [
+            ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+            ('LEFTPADDING', (0, 0), (-1, -1), 1),
+            ('RIGHTPADDING', (0, 0), (-1, -1), 1),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 1),
+        ]
+        # GR Zeile: Normales Padding
+        if len(rows) > 0:
+            table_style_commands.append(('TOPPADDING', (0, 0), (-1, 0), 1))
+        # DE/EN Zeilen: KEIN Top-Padding
+        if len(rows) > 1:
+            table_style_commands.append(('TOPPADDING', (0, 1), (-1, -1), 0))
+        
+        table.setStyle(TableStyle(table_style_commands))
+        tables.append(table)
+        
+        i = j
+        first_slice = False
     
-    if not rows:
-        return []
-    
-    # Erstelle EINE Tabelle mit allen Zeilen
-    table = Table(rows, colWidths=col_widths, hAlign=table_halign)
-    
-    # Style: GR Zeile normal, DE/EN Zeilen ENG (wie in 3-sprachig)
-    table_style_commands = [
-        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-        ('LEFTPADDING', (0, 0), (-1, -1), 1),
-        ('RIGHTPADDING', (0, 0), (-1, -1), 1),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 1),
-    ]
-    
-    # GR Zeile: Normales Padding
-    if len(rows) > 0:
-        table_style_commands.append(('TOPPADDING', (0, 0), (-1, 0), 1))
-    
-    # DE/EN Zeilen: KEIN Top-Padding (eng dran!)
-    if len(rows) > 1:
-        table_style_commands.append(('TOPPADDING', (0, 1), (-1, -1), 0))
-    
-    table.setStyle(TableStyle(table_style_commands))
-    
-    return [table]
+    return tables
 
 def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             doc_width_pt,
