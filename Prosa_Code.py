@@ -1281,7 +1281,9 @@ def group_pairs_into_flows(blocks):
     - Bei === Lyrik === wird die Zeilenstruktur bewahrt (wie bei Zitaten)
     - Keine § Paragraphen-Marker im Lyrik-Bereich
     """
-    flows = []; buf_gr, buf_de, buf_en = [], [], []  # NEU: buf_en für englische Zeile
+    flows = []
+    buf_gr, buf_de, buf_en = [], [], []  # Token-Buffer
+    buf_gr_alts, buf_de_alts, buf_en_alts = [], [], []  # NEU: Alternativen-Buffer für Straußlogik
     current_para_label = None
     active_speaker = ''
     any_speaker_seen = False
@@ -1290,11 +1292,20 @@ def group_pairs_into_flows(blocks):
     accumulated_comments = []  # NEU: Sammle Kommentare von pair-Blöcken für flow-Block
 
     def flush():
-        nonlocal buf_gr, buf_de, buf_en, active_speaker, current_base_num, accumulated_comments
+        nonlocal buf_gr, buf_de, buf_en, buf_gr_alts, buf_de_alts, buf_en_alts, active_speaker, current_base_num, accumulated_comments
         if buf_gr or buf_de or buf_en:
             flow_block = {'type':'flow','gr_tokens':buf_gr,'de_tokens':buf_de,'en_tokens':buf_en,
                           'para_label': current_para_label, 'speaker': active_speaker,
                           'base': current_base_num}  # NEU: Zeilennummer für Hinterlegung
+            
+            # NEU: Übertrage Alternativen-Buffer zum flow-Block (falls vorhanden)
+            if any(buf_gr_alts) or any(buf_de_alts) or any(buf_en_alts):
+                flow_block['_gr_alternatives_buffer'] = buf_gr_alts
+                flow_block['_de_alternatives_buffer'] = buf_de_alts
+                flow_block['_en_alternatives_buffer'] = buf_en_alts
+                flow_block['_has_alternatives'] = True
+                print(f"Prosa_Code: flush() - transferring alternatives buffer (gr={len(buf_gr_alts)}, de={len(buf_de_alts)}, en={len(buf_en_alts)})", flush=True)
+            
             # WICHTIG: Übertrage Kommentare vom letzten pair-Block zum flow-Block
             if accumulated_comments:
                 flow_block['comments'] = list(accumulated_comments)
@@ -1303,6 +1314,7 @@ def group_pairs_into_flows(blocks):
                 accumulated_comments = []  # Reset nach Übertragung
             flows.append(flow_block)
             buf_gr, buf_de, buf_en = [], [], []
+            buf_gr_alts, buf_de_alts, buf_en_alts = [], [], []  # Reset Alternativen-Buffer
             current_base_num = None  # Reset für nächsten Block
 
     for b in blocks:
@@ -1430,6 +1442,33 @@ def group_pairs_into_flows(blocks):
             buf_gr.extend(gt)
             buf_de.extend(dt)
             buf_en.extend(et)
+            
+            # NEU: BEDEUTUNGS-STRAUß - Speichere Alternativen im Buffer!
+            # Wenn dieser Block Alternativen hat, füge sie zum Alternativen-Buffer hinzu
+            if b.get('_has_alternatives'):
+                gr_alternatives = b.get('_gr_alternatives', [[]])
+                de_alternatives = b.get('_de_alternatives', [[]])
+                en_alternatives = b.get('_en_alternatives', [[]])
+                
+                # Füge Alternativen für JEDEN Token zum Buffer hinzu
+                for token_idx in range(len(gt)):
+                    # Extrahiere Alternativen für diesen Token (alle Zeilen, diese Spalte)
+                    tok_gr_alts = [alt[token_idx] if token_idx < len(alt) else '' for alt in gr_alternatives]
+                    tok_de_alts = [alt[token_idx] if token_idx < len(alt) else '' for alt in de_alternatives]
+                    tok_en_alts = [alt[token_idx] if token_idx < len(alt) else '' for alt in en_alternatives]
+                    
+                    buf_gr_alts.append(tok_gr_alts)
+                    buf_de_alts.append(tok_de_alts)
+                    buf_en_alts.append(tok_en_alts)
+                
+                print(f"Prosa_Code: Added alternatives to buffer (tokens={len(gt)}, gr_alts={len(gr_alternatives)}, de_alts={len(de_alternatives)}, en_alts={len(en_alternatives)})", flush=True)
+            else:
+                # Kein Alternativen → leere Listen für diese Tokens
+                for _ in range(len(gt)):
+                    buf_gr_alts.append([])
+                    buf_de_alts.append([])
+                    buf_en_alts.append([])
+            
             continue
 
         if t == 'para_set':
@@ -1744,13 +1783,107 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             line_comment_colors:dict=None,  # NEU: Map von Zeilennummern zu Kommentar-Farben
                             block:dict=None,  # NEU: Block-Objekt für comment_token_mask
                             tag_mode:str="TAGS",  # NEU: Tag-Modus (TAGS oder NO_TAGS)
-                            gr_tokens_alternatives=None,  # NEU: STRAUßLOGIK - GR Alternativen
-                            de_tokens_alternatives=None,  # NEU: STRAUßLOGIK - DE Alternativen
-                            en_tokens_alternatives=None):  # NEU: STRAUßLOGIK - EN Alternativen
+                            gr_tokens_alternatives=None,  # NEU: STRAUßLOGIK - GR Alternativen (per-token)
+                            de_tokens_alternatives=None,  # NEU: STRAUßLOGIK - DE Alternativen (per-token)
+                            en_tokens_alternatives=None,  # NEU: STRAUßLOGIK - EN Alternativen (per-token)
+                            gr_alternatives_buffer=None,  # NEU: STRAUßLOGIK - GR Alternativen-Buffer (flow-wide)
+                            de_alternatives_buffer=None,  # NEU: STRAUßLOGIK - DE Alternativen-Buffer (flow-wide)
+                            en_alternatives_buffer=None):  # NEU: STRAUßLOGIK - EN Alternativen-Buffer (flow-wide)
     if en_tokens is None:
         en_tokens = []
     if de_tokens is None:
         de_tokens = []
+    
+    # NEU: STRAUßLOGIK - Prüfe ob Alternativen-Buffer vorhanden ist (flow-wide)
+    # Wenn ja, konvertiere zu per-token Alternativen-Format
+    if gr_alternatives_buffer or de_alternatives_buffer or en_alternatives_buffer:
+        print(f"Prosa_Code: build_tables_for_stream() - Converting alternatives buffer to per-token format", flush=True)
+        print(f"  gr_buffer={len(gr_alternatives_buffer) if gr_alternatives_buffer else 0}, de_buffer={len(de_alternatives_buffer) if de_alternatives_buffer else 0}, en_buffer={len(en_alternatives_buffer) if en_alternatives_buffer else 0}", flush=True)
+        
+        # Prüfe ob irgendein Token Alternativen hat
+        has_any_alternatives = False
+        if gr_alternatives_buffer:
+            has_any_alternatives = has_any_alternatives or any(len(alts) > 1 for alts in gr_alternatives_buffer if alts)
+        if de_alternatives_buffer:
+            has_any_alternatives = has_any_alternatives or any(len(alts) > 1 for alts in de_alternatives_buffer if alts)
+        if en_alternatives_buffer:
+            has_any_alternatives = has_any_alternatives or any(len(alts) > 1 for alts in en_alternatives_buffer if alts)
+        
+        print(f"  has_any_alternatives={has_any_alternatives}", flush=True)
+        
+        if has_any_alternatives:
+            # Konvertiere Buffer zu Alternativen-Format
+            # Buffer: [[alt1, alt2, alt3], [alt1], [alt1, alt2], ...]  (per token)
+            # Alternativen: [[tok1_alt1, tok2_alt1, tok3_alt1, ...], [tok1_alt2, tok2_alt2, ...], ...]  (per alternative)
+            
+            # Bestimme maximale Anzahl Alternativen
+            max_alts = 1
+            for alts_list in (gr_alternatives_buffer or []):
+                if alts_list:
+                    max_alts = max(max_alts, len(alts_list))
+            for alts_list in (de_alternatives_buffer or []):
+                if alts_list:
+                    max_alts = max(max_alts, len(alts_list))
+            for alts_list in (en_alternatives_buffer or []):
+                if alts_list:
+                    max_alts = max(max_alts, len(alts_list))
+            
+            print(f"  max_alts={max_alts}", flush=True)
+            
+            # Erstelle Alternativen-Arrays
+            gr_tokens_alternatives = []
+            for alt_idx in range(max_alts):
+                alt_line = []
+                for token_idx, tok in enumerate(gr_tokens):
+                    if token_idx < len(gr_alternatives_buffer or []) and gr_alternatives_buffer[token_idx]:
+                        alts = gr_alternatives_buffer[token_idx]
+                        if alt_idx < len(alts):
+                            alt_line.append(alts[alt_idx])
+                        else:
+                            alt_line.append('')  # Keine Alternative für diesen Token
+                    else:
+                        # Kein Alternativen für diesen Token → verwende Original
+                        if alt_idx == 0:
+                            alt_line.append(tok)
+                        else:
+                            alt_line.append('')
+                gr_tokens_alternatives.append(alt_line)
+            
+            de_tokens_alternatives = []
+            for alt_idx in range(max_alts):
+                alt_line = []
+                for token_idx, tok in enumerate(de_tokens):
+                    if token_idx < len(de_alternatives_buffer or []) and de_alternatives_buffer[token_idx]:
+                        alts = de_alternatives_buffer[token_idx]
+                        if alt_idx < len(alts):
+                            alt_line.append(alts[alt_idx])
+                        else:
+                            alt_line.append('')
+                    else:
+                        if alt_idx == 0:
+                            alt_line.append(tok)
+                        else:
+                            alt_line.append('')
+                de_tokens_alternatives.append(alt_line)
+            
+            en_tokens_alternatives = []
+            for alt_idx in range(max_alts):
+                alt_line = []
+                for token_idx, tok in enumerate(en_tokens):
+                    if token_idx < len(en_alternatives_buffer or []) and en_alternatives_buffer[token_idx]:
+                        alts = en_alternatives_buffer[token_idx]
+                        if alt_idx < len(alts):
+                            alt_line.append(alts[alt_idx])
+                        else:
+                            alt_line.append('')
+                    else:
+                        if alt_idx == 0:
+                            alt_line.append(tok)
+                        else:
+                            alt_line.append('')
+                en_tokens_alternatives.append(alt_line)
+            
+            print(f"  Converted to alternatives: gr={len(gr_tokens_alternatives)} lines, de={len(de_tokens_alternatives)} lines, en={len(en_tokens_alternatives)} lines", flush=True)
     
     # NEU: STRAUßLOGIK - Konvertiere alte API zu neuer API (wie in Poesie)
     # Wenn *_tokens_alternatives angegeben sind, verwende diese statt einzelner Tokens
@@ -1767,6 +1900,13 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
     else:
         # Keine Alternativen - verwende normale de_tokens als einzige Alternative
         de_tokens_alternatives = [de_tokens]
+    
+    if en_tokens_alternatives is not None:
+        # Verwende EN Alternativen
+        pass
+    else:
+        # Keine Alternativen - verwende normale en_tokens als einzige Alternative
+        en_tokens_alternatives = [en_tokens]
     
     # NEU: STRAUßLOGIK - Wenn Alternativen vorhanden, verwende separate Rendering-Funktion
     if (gr_tokens_alternatives and len(gr_tokens_alternatives) > 1) or \
@@ -2510,6 +2650,16 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             base_num = flow_block.get('base')  # NEU: Zeilennummer für Hinterlegung
 
             en_tokens = flow_block.get('en_tokens', [])  # NEU: Englische Tokens
+            
+            # NEU: STRAUßLOGIK - Prüfe ob Alternativen-Buffer vorhanden ist
+            has_alternatives = flow_block.get('_has_alternatives', False)
+            gr_alts_buffer = flow_block.get('_gr_alternatives_buffer', [])
+            de_alts_buffer = flow_block.get('_de_alternatives_buffer', [])
+            en_alts_buffer = flow_block.get('_en_alternatives_buffer', [])
+            
+            if has_alternatives and (gr_alts_buffer or de_alts_buffer or en_alts_buffer):
+                print(f"Prosa_Code: build_flow_tables() - STRAUßLOGIK detected! gr_alts={len(gr_alts_buffer)}, de_alts={len(de_alts_buffer)}, en_alts={len(en_alts_buffer)}", flush=True)
+            
             print(f"Prosa_Code: build_flow_tables() calling build_tables_for_stream() (frame_w={frame_w})", flush=True)
             tables = build_tables_for_stream(
                 gr_tokens, de_tokens,
@@ -2525,7 +2675,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 base_num=base_num,  # NEU: Zeilennummer für Hinterlegung
                 line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
                 block=flow_block,  # NEU: Block-Objekt für comment_token_mask
-                tag_mode=tag_mode)  # NEU: Tag-Modus (TAGS oder NO_TAGS)
+                tag_mode=tag_mode,  # NEU: Tag-Modus (TAGS oder NO_TAGS)
+                # NEU: STRAUßLOGIK - Übergebe Alternativen-Buffer
+                gr_alternatives_buffer=gr_alts_buffer if has_alternatives else None,
+                de_alternatives_buffer=de_alts_buffer if has_alternatives else None,
+                en_alternatives_buffer=en_alts_buffer if has_alternatives else None)
             print(f"Prosa_Code: build_flow_tables() build_tables_for_stream() completed (tables={len(tables)})", flush=True)
             # WICHTIG: TableStyle explizit importieren (verhindert Closure-Scope-Problem)
             from reportlab.platypus import TableStyle
