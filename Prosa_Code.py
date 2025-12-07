@@ -926,6 +926,84 @@ def detect_eq_heading(line:str):
     if m: return ('h3_eq', m.group(1).strip())
     return (None, None)
 
+def expand_slash_alternatives(tokens: list[str]) -> list[list[str]]:
+    """
+    ═══════════════════════════════════════════════════════════════════════════════════════
+    BEDEUTUNGS-STRAUß: Expandiert Token-Listen mit `/`-Alternativen in mehrere Zeilen
+    ═══════════════════════════════════════════════════════════════════════════════════════
+    
+    ZWECK:
+        Implementiert das "BEDEUTUNGS-STRAUß"-Feature nach Vera F. Birkenbihl.
+        Erlaubt mehrere Übersetzungsalternativen für ein Wort, die eng untereinander
+        als "gekoppelte Doppel-/Dreifachzeile" dargestellt werden (wie DE/EN in 3-sprachigen PDFs).
+    
+    WARUM FUNKTIONIERT DAS SO GUT?
+        1. FRÜHE TRANSFORMATION: Diese Funktion wird GANZ AM ANFANG aufgerufen (in process_input_file),
+           VOR allen anderen Verarbeitungsschritten (Tagging, Farben, Meter-Marker, etc.)
+        2. SAUBERE DATENSTRUKTUR: Erzeugt `*_tokens_alternatives` Listen, die durch ALLE
+           nachfolgenden Schritte transparent durchgereicht werden
+        3. POSITION PRESERVATION: Leere Strings an Positionen ohne `/` erhalten die Token-Ausrichtung
+        4. KEINE DUPLIKATE: Griechische Zeile wird NICHT dupliziert (nur Übersetzungen expandiert)
+    
+    BEISPIEL:
+        Input:  ['den|Mann/über|den|Mann', 'mir', 'sage,/verrate,', 'Muse,/Göttin,']
+        Output: [
+            ['den|Mann',         'mir', 'sage,',    'Muse,'],      # Alternative 0
+            ['über|den|Mann',    '',    'verrate,', 'Göttin,']     # Alternative 1
+        ]
+        
+        WICHTIG: Leerer String ('') bei 'mir' in Alternative 1, weil 'mir' kein `/` hat!
+                 Dies erhält die Token-Positionen und Spaltenausrichtung im PDF.
+    
+    INTEGRATION MIT REST DES SYSTEMS:
+        - Tags (nomen, verb, etc.) werden VOR dieser Funktion extrahiert → bleiben erhalten
+        - Farben (#, +, -, §) sind bereits in Tokens → werden mitkopiert
+        - Meter-Marker (´ˆˉ) sind bereits in Tokens → werden mitkopiert
+        - HideTrans-Flags werden parallel gespeichert → funktionieren weiterhin
+    
+    Args:
+        tokens: Liste von Tokens, möglicherweise mit `/`-Trennzeichen
+        
+    Returns:
+        Liste von Token-Listen (eine pro Alternative)
+        Wenn keine `/` vorhanden, wird eine einzige Zeile zurückgegeben
+        Max. 4 Alternativen (bei 3 `/` pro Token)
+    """
+    # Zähle maximale Anzahl von Alternativen über alle Tokens
+    max_alternatives = 1
+    for token in tokens:
+        if token:
+            # Zähle `/` im Token (jedes `/` fügt eine Alternative hinzu)
+            slash_count = token.count('/')
+            alternatives_in_token = slash_count + 1
+            max_alternatives = max(max_alternatives, alternatives_in_token)
+    
+    # Begrenze auf max. 4 Alternativen (3 `/` pro Token)
+    max_alternatives = min(max_alternatives, 4)
+    
+    # Erstelle die erweiterten Zeilen
+    result = []
+    for alt_idx in range(max_alternatives):
+        new_line = []
+        for token in tokens:
+            if not token:
+                new_line.append('')
+                continue
+            
+            # Splitte Token an `/`
+            alternatives = token.split('/')
+            
+            # Wähle die entsprechende Alternative (oder letzte, falls Index zu groß)
+            if alt_idx < len(alternatives):
+                new_line.append(alternatives[alt_idx])
+            else:
+                # Kein weiteres `/` in diesem Token - verwende leeren String
+                new_line.append('')
+        
+        result.append(new_line)
+    
+    return result
+
 def process_input_file(fname:str):
     """
     Vereinheitlichte Parser-Phase:
@@ -1271,6 +1349,30 @@ def group_pairs_into_flows(blocks):
             else:
                 et = tokenize(b['en']) if b.get('en') else []  # NEU: Englische Zeile
             
+            # NEU: BEDEUTUNGS-STRAUß - Expandiere `/`-Alternativen in ALLEN Sprachen!
+            # AKTIVIERT zum Testen
+            has_slash_in_gr = any('/' in tok for tok in gt if tok)
+            has_slash_in_de = any('/' in tok for tok in dt if tok)
+            has_slash_in_en = any('/' in tok for tok in et if tok)
+            
+            if has_slash_in_gr or has_slash_in_de or has_slash_in_en:
+                # Es gibt Alternativen! Expandiere ALLE Sprachen (auch die ohne Slash)
+                gt_alternatives = expand_slash_alternatives(gt) if has_slash_in_gr else [[tok for tok in gt]]
+                dt_alternatives = expand_slash_alternatives(dt) if has_slash_in_de else [[tok for tok in dt]]
+                et_alternatives = expand_slash_alternatives(et) if has_slash_in_en else [[tok for tok in et]]
+                
+                # WICHTIG: Speichere die Alternativen für späteres Rendering
+                # Alternative 0 ist die "Haupt"-Zeile, Alternativen 1+ sind zusätzliche Zeilen
+                b['_gr_alternatives'] = gt_alternatives
+                b['_de_alternatives'] = dt_alternatives
+                b['_en_alternatives'] = et_alternatives
+                b['_has_alternatives'] = True
+                
+                # Verwende die erste Alternative als "primäre" Übersetzung
+                gt = gt_alternatives[0] if gt_alternatives else gt
+                dt = dt_alternatives[0] if dt_alternatives else dt
+                et = et_alternatives[0] if et_alternatives else et
+            
             # WICHTIG: Sammle Kommentare vom pair-Block für späteren flow-Block
             pair_comments = b.get('comments', [])
             if pair_comments:
@@ -1302,23 +1404,39 @@ def group_pairs_into_flows(blocks):
             if len(dt) < max_len: dt += [''] * (max_len - len(dt))
             if len(et) < max_len: et += [''] * (max_len - len(et))
 
-            # NEU: Im Lyrik-Modus Zeilenstruktur bewahren (wie bei Zitaten)
-            if in_lyrik_mode:
-                flush()  # Vorherige Flows abschließen
-                # Jede Zeile als separates Paar ausgeben (Zeilenstruktur erhalten)
-                # WICHTIG: Keine para_label im Lyrik-Modus (verhindert § vor jeder Zeile)
-                # NEU: base_num für Hinterlegung speichern
+            # NEU: Im Lyrik-Modus ODER wenn Alternativen vorhanden sind → Zeilenstruktur bewahren
+            # STRAUßLOGIK: Wenn `/` vorhanden ist, behandeln wir das wie Lyrik (Zeile für Zeile)
+            # KRITISCH: Auch im Fließtext! Alternativen unterbrechen den Flow kurz
+            if in_lyrik_mode or b.get('_has_alternatives'):
+                # WICHTIG: Flush vorherigen Flow (Text VOR dem Alternativ-Token)
+                flush()
+                
+                # Erstelle isolierten pair-Block für diese Zeile/Tokens
+                # (bei Lyrik: volle Zeile; bei Straußlogik im Flow: nur diese Tokens)
                 base_num = b.get('base')  # Zeilennummer aus dem Block
-                flows.append({
+                pair_block = {
                     'type': 'pair',
                     'gr_tokens': gt,
                     'de_tokens': dt,
                     'en_tokens': et,
-                    'para_label': '',  # Kein § Marker im Lyrik-Modus
+                    'para_label': current_para_label if not in_lyrik_mode else '',  # § nur wenn NICHT Lyrik
                     'speaker': active_speaker,
                     'base': base_num,  # NEU: Zeilennummer für Hinterlegung
-                    '_is_lyrik': True  # KRITISCH: Markiere als Lyrik für größeren Zeilenabstand im Rendering
-                })
+                    '_is_lyrik': in_lyrik_mode  # KRITISCH: Markiere als Lyrik für größeren Zeilenabstand im Rendering
+                }
+                # NEU: BEDEUTUNGS-STRAUß - Übertrage Alternativen wenn vorhanden
+                if b.get('_has_alternatives'):
+                    pair_block['_gr_alternatives'] = b.get('_gr_alternatives', [])  # NEU: Auch GR!
+                    pair_block['_de_alternatives'] = b.get('_de_alternatives', [])
+                    pair_block['_en_alternatives'] = b.get('_en_alternatives', [])
+                    pair_block['_has_alternatives'] = True
+                flows.append(pair_block)
+                
+                # WICHTIG: Para-Label zurücksetzen wenn wir es verwendet haben (nur bei Straußlogik, nicht bei Lyrik!)
+                if not in_lyrik_mode and current_para_label:
+                    current_para_label = None
+                
+                # NACH Alternativen: Flow geht weiter! (Buffer bleibt leer für nächste Tokens)
                 continue
 
             buf_gr.extend(gt); buf_de.extend(dt); buf_en.extend(et)  # NEU: buf_en erweitern
@@ -1348,6 +1466,297 @@ def group_pairs_into_flows(blocks):
     return flows
 
 # ----------------------- Tabellenbau -----------------------
+def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives, en_tokens_alternatives, *,
+                                  doc_width_pt, token_gr_style, token_de_style,
+                                  para_display, para_width_pt, style_para,
+                                  speaker_display, speaker_width_pt, style_speaker,
+                                  table_halign='LEFT',
+                                  hide_pipes=False, tag_config=None, tag_mode="TAGS"):
+    """
+    STRAUßLOGIK: Rendert Alternativen wie in Poesie - EINE Tabelle mit mehreren Zeilen!
+    
+    KRITISCH: Wie 3-sprachige PDFs:
+    - GR Zeile: Normale Größe
+    - DE Zeile: Kleinere Schrift, eng darunter
+    - EN Zeile: Kleinere Schrift, eng darunter
+    - Alternativen: Wie zusätzliche DE/EN Zeilen
+    
+    FARBEN: Tag-Farben von GR werden auf DE/EN übertragen!
+    AUSRICHTUNG: Spaltenbreiten basierend auf breitestem Token über ALLE Alternativen!
+    """
+    from reportlab.platypus import Table, TableStyle, Paragraph
+    from reportlab.lib import colors
+    
+    # Handle None inputs
+    if gr_tokens_alternatives is None:
+        gr_tokens_alternatives = [[]]
+    if de_tokens_alternatives is None:
+        de_tokens_alternatives = [[]]
+    if en_tokens_alternatives is None:
+        en_tokens_alternatives = [[]]
+    
+    # Bestimme maximale Anzahl Alternativen und Spalten
+    max_alts_gr = len(gr_tokens_alternatives)
+    max_alts_de = len(de_tokens_alternatives)
+    max_alts_en = len(en_tokens_alternatives)
+    
+    # Berechne maximale Spaltenanzahl über ALLE Alternativen
+    cols = 0
+    for gr_alt in gr_tokens_alternatives:
+        cols = max(cols, len(gr_alt))
+    for de_alt in de_tokens_alternatives:
+        cols = max(cols, len(de_alt))
+    for en_alt in en_tokens_alternatives:
+        cols = max(cols, len(en_alt))
+    
+    if cols == 0:
+        return []
+    
+    # Angleiche alle Alternativen auf gleiche Länge
+    gr_lines = [alt + [''] * (cols - len(alt)) for alt in gr_tokens_alternatives]
+    de_lines = [alt + [''] * (cols - len(alt)) for alt in de_tokens_alternatives]
+    en_lines = [alt + [''] * (cols - len(alt)) for alt in en_tokens_alternatives]
+    
+    # Berechne Spaltenbreiten (wie in Poesie: Maximum über alle Alternativen)
+    # KRITISCH: Für jede Token-Spalte nehmen wir das BREITESTE Token über ALLE Alternativen!
+    from reportlab.pdfbase.pdfmetrics import stringWidth
+    
+    # Erstelle Paragraph-Styles für Breiten-Messung
+    # GR: token_gr_style (größere Schrift)
+    # DE/EN: token_de_style (kleinere Schrift)
+    gr_font = token_gr_style.fontName
+    gr_size = token_gr_style.fontSize
+    de_font = token_de_style.fontName
+    de_size = token_de_style.fontSize
+    
+    # Berechne Breite für jede Token-Spalte
+    token_widths = []
+    for k in range(cols):
+        # Finde breitestes GR Token in Spalte k über alle GR Alternativen
+        gr_token = ''
+        for gr_line in gr_lines:
+            if k < len(gr_line) and gr_line[k]:
+                if len(gr_line[k]) > len(gr_token):
+                    gr_token = gr_line[k]
+        
+        # Finde breitestes DE Token in Spalte k über alle DE Alternativen
+        de_token = ''
+        for de_line in de_lines:
+            if k < len(de_line) and de_line[k]:
+                # Entferne | für Breitenmessung wenn hide_pipes
+                display_tok = de_line[k].replace('|', '') if hide_pipes else de_line[k]
+                if len(display_tok) > len(de_token):
+                    de_token = display_tok
+        
+        # Finde breitestes EN Token in Spalte k über alle EN Alternativen
+        en_token = ''
+        for en_line in en_lines:
+            if k < len(en_line) and en_line[k]:
+                display_tok = en_line[k].replace('|', '') if hide_pipes else en_line[k]
+                if len(display_tok) > len(en_token):
+                    en_token = display_tok
+        
+        # Messe Breiten (mit einfacher stringWidth, da Paragraphs komplex sind)
+        # VEREINFACHUNG: Nutze visible_measure_token wenn verfügbar, sonst stringWidth
+        try:
+            gr_width = visible_measure_token(gr_token, font=gr_font, size=gr_size, 
+                                            is_greek_row=True) if gr_token else 0.0
+        except:
+            gr_width = stringWidth(gr_token, gr_font, gr_size) if gr_token else 0.0
+        
+        try:
+            de_width = visible_measure_token(de_token, font=de_font, size=de_size,
+                                            is_greek_row=False) if de_token else 0.0
+        except:
+            de_width = stringWidth(de_token, de_font, de_size) if de_token else 0.0
+        
+        try:
+            en_width = visible_measure_token(en_token, font=de_font, size=de_size,
+                                            is_greek_row=False) if en_token else 0.0
+        except:
+            en_width = stringWidth(en_token, de_font, de_size) if en_token else 0.0
+        
+        # Maximum + Padding
+        max_width = max(gr_width, de_width, en_width)
+        
+        # Padding basierend auf tag_mode (Feste Werte wie in Poesie DEFAULT_CONFIG)
+        if tag_mode == "TAGS":
+            padding = 2.5  # TOKEN_PAD_PT_NORMAL_TAG
+        else:
+            padding = 2.0  # TOKEN_PAD_PT_NORMAL_NOTAG
+        
+        token_widths.append(max_width + padding)
+    
+    # Erstelle finale Spaltenbreiten-Liste
+    col_widths = []
+    if para_display:
+        col_widths.append(para_width_pt)
+    if speaker_display:
+        col_widths.append(speaker_width_pt)
+    col_widths.extend(token_widths)
+    
+    # ═══════════════════════════════════════════════════════════════════
+    # FARB-EXTRAKTION: Extrahiere Farben aus GR-Tokens für Übertragung
+    # ═══════════════════════════════════════════════════════════════════
+    # WICHTIG: format_token_markup() macht bereits die Farb-Extraktion!
+    # Wir müssen die RAW-Tokens analysieren, um Farb-Symbole zu finden
+    
+    def extract_color_from_token(token: str) -> str:
+        """Extrahiert Farbcode aus Token (gleiche Logik wie in format_token_markup)"""
+        if not token:
+            return None
+        raw = token.strip()
+        
+        # Farbcodes - finde den ersten Farbcode im Token
+        if '#' in raw:
+            return '#FF0000'  # Rot
+        elif '+' in raw:
+            return '#1E90FF'  # Blau
+        elif '-' in raw:
+            return '#228B22'  # Grün
+        elif '§' in raw:
+            return '#9370DB'  # Violett
+        elif '$' in raw:
+            return '#FFA500'  # Orange
+        return None
+    
+    # Extrahiere Farben aus der ersten GR-Zeile (für jede Spalte)
+    gr_colors = []
+    if gr_lines and len(gr_lines) > 0:
+        for tok in gr_lines[0]:
+            color = extract_color_from_token(tok)
+            gr_colors.append(color)
+    
+    # ═══════════════════════════════════════════════════════════════════
+    # TABELLEN-ZEILEN ERSTELLEN mit Farb-Übertragung
+    # ═══════════════════════════════════════════════════════════════════
+    rows = []
+    
+    # GR Zeile(n) - nur erste Alternative wenn mehrere GR-Alternativen
+    for gr_idx, gr_line in enumerate(gr_lines):
+        if gr_idx > 0:
+            break  # Nur erste GR Alternative (Haupt-Zeile)
+        
+        if not any(gr_line):
+            continue
+        
+        gr_row = []
+        # Para-Spalte (nur in erster Zeile)
+        if para_display:
+            if gr_idx == 0:
+                gr_row.append(Paragraph(para_display, style_para))
+            else:
+                gr_row.append('')
+        
+        # Speaker-Spalte (nur in erster Zeile)
+        if speaker_display:
+            if gr_idx == 0:
+                gr_row.append(Paragraph(speaker_display, style_speaker))
+            else:
+                gr_row.append('')
+        
+        # GR Token-Spalten (mit format_token_markup für korrekte Darstellung)
+        for tok in gr_line:
+            if tok:
+                # format_token_markup macht bereits Farb-Extraktion und HTML-Generierung
+                formatted = format_token_markup(tok, is_greek_row=True, base_font_size=gr_size)
+                gr_row.append(Paragraph(formatted, token_gr_style))
+            else:
+                gr_row.append('')
+        
+        rows.append(gr_row)
+    
+    # DE Alternativen - KLEINERE Schrift, eng untereinander, MIT FARB-ÜBERTRAGUNG
+    for de_line in de_lines:
+        if not any(de_line):
+            continue
+        
+        de_row = []
+        # Para + Speaker leer
+        if para_display:
+            de_row.append('')
+        if speaker_display:
+            de_row.append('')
+        
+        # DE Token-Spalten MIT Farb-Übertragung von GR
+        for col_idx, tok in enumerate(de_line):
+            if tok:
+                # Entferne | wenn hide_pipes
+                display_tok = tok.replace('|', '') if hide_pipes else tok
+                
+                # FARB-ÜBERTRAGUNG: Nutze Farbe aus entsprechender GR-Spalte
+                color = gr_colors[col_idx] if col_idx < len(gr_colors) else None
+                
+                if color:
+                    # Wrappen in <font color="...">
+                    html = f'<font color="{color}">{xml_escape(display_tok)}</font>'
+                else:
+                    html = xml_escape(display_tok)
+                
+                de_row.append(Paragraph(html, token_de_style))
+            else:
+                de_row.append('')
+        
+        rows.append(de_row)
+    
+    # EN Alternativen - KLEINERE Schrift, eng untereinander, MIT FARB-ÜBERTRAGUNG
+    for en_line in en_lines:
+        if not any(en_line):
+            continue
+        
+        en_row = []
+        # Para + Speaker leer
+        if para_display:
+            en_row.append('')
+        if speaker_display:
+            en_row.append('')
+        
+        # EN Token-Spalten MIT Farb-Übertragung von GR
+        for col_idx, tok in enumerate(en_line):
+            if tok:
+                display_tok = tok.replace('|', '') if hide_pipes else tok
+                
+                # FARB-ÜBERTRAGUNG: Nutze Farbe aus entsprechender GR-Spalte
+                color = gr_colors[col_idx] if col_idx < len(gr_colors) else None
+                
+                if color:
+                    # Wrappen in <font color="...">
+                    html = f'<font color="{color}">{xml_escape(display_tok)}</font>'
+                else:
+                    html = xml_escape(display_tok)
+                
+                en_row.append(Paragraph(html, token_de_style))
+            else:
+                en_row.append('')
+        
+        rows.append(en_row)
+    
+    if not rows:
+        return []
+    
+    # Erstelle EINE Tabelle mit allen Zeilen
+    table = Table(rows, colWidths=col_widths, hAlign=table_halign)
+    
+    # Style: GR Zeile normal, DE/EN Zeilen ENG (wie in 3-sprachig)
+    table_style_commands = [
+        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+        ('LEFTPADDING', (0, 0), (-1, -1), 1),
+        ('RIGHTPADDING', (0, 0), (-1, -1), 1),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 1),
+    ]
+    
+    # GR Zeile: Normales Padding
+    if len(rows) > 0:
+        table_style_commands.append(('TOPPADDING', (0, 0), (-1, 0), 1))
+    
+    # DE/EN Zeilen: KEIN Top-Padding (eng dran!)
+    if len(rows) > 1:
+        table_style_commands.append(('TOPPADDING', (0, 1), (-1, -1), 0))
+    
+    table.setStyle(TableStyle(table_style_commands))
+    
+    return [table]
+
 def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             doc_width_pt,
                             reverse_mode:bool=False,  # Deprecated, kept for compatibility
@@ -1361,11 +1770,55 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             base_num:int=None,  # NEU: Zeilennummer für Hinterlegung
                             line_comment_colors:dict=None,  # NEU: Map von Zeilennummern zu Kommentar-Farben
                             block:dict=None,  # NEU: Block-Objekt für comment_token_mask
-                            tag_mode:str="TAGS"):  # NEU: Tag-Modus (TAGS oder NO_TAGS)
+                            tag_mode:str="TAGS",  # NEU: Tag-Modus (TAGS oder NO_TAGS)
+                            gr_tokens_alternatives=None,  # NEU: STRAUßLOGIK - GR Alternativen
+                            de_tokens_alternatives=None,  # NEU: STRAUßLOGIK - DE Alternativen
+                            en_tokens_alternatives=None):  # NEU: STRAUßLOGIK - EN Alternativen
     if en_tokens is None:
         en_tokens = []
     if de_tokens is None:
         de_tokens = []
+    
+    # NEU: STRAUßLOGIK - Konvertiere alte API zu neuer API (wie in Poesie)
+    # Wenn *_tokens_alternatives angegeben sind, verwende diese statt einzelner Tokens
+    if gr_tokens_alternatives is not None:
+        # Verwende GR Alternativen
+        pass
+    else:
+        # Keine Alternativen - verwende normale gr_tokens als einzige Alternative
+        gr_tokens_alternatives = [gr_tokens]
+    
+    if de_tokens_alternatives is not None:
+        # Verwende DE Alternativen
+        pass
+    else:
+        # Keine Alternativen - verwende normale de_tokens als einzige Alternative
+        de_tokens_alternatives = [de_tokens]
+    
+    # NEU: STRAUßLOGIK - Wenn Alternativen vorhanden, verwende separate Rendering-Funktion
+    if (gr_tokens_alternatives and len(gr_tokens_alternatives) > 1) or \
+       (de_tokens_alternatives and len(de_tokens_alternatives) > 1) or \
+       (en_tokens_alternatives and len(en_tokens_alternatives) > 1):
+        # Rufe spezielle Alternativ-Rendering-Funktion auf
+        return build_tables_for_alternatives(
+            gr_tokens_alternatives=gr_tokens_alternatives,
+            de_tokens_alternatives=de_tokens_alternatives,
+            en_tokens_alternatives=en_tokens_alternatives,
+            doc_width_pt=doc_width_pt,
+            token_gr_style=token_gr_style, token_de_style=token_de_style,
+            para_display=para_display, para_width_pt=para_width_pt, style_para=style_para,
+            speaker_display=speaker_display, speaker_width_pt=speaker_width_pt, style_speaker=style_speaker,
+            table_halign=table_halign,
+            hide_pipes=hide_pipes,
+            tag_config=tag_config,
+            tag_mode=tag_mode
+        )
+    
+    # Normaler Fall: KEINE Alternativen (oder nur eine)
+    # Verwende erste Alternative als primäre Tokens
+    gr_tokens = gr_tokens_alternatives[0] if gr_tokens_alternatives else []
+    de_tokens = de_tokens_alternatives[0] if de_tokens_alternatives else []
+    en_tokens = en_tokens_alternatives[0] if en_tokens_alternatives else []
     
     def is_only_symbols_or_stephanus(token: str) -> bool:
         """
@@ -2794,7 +3247,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             idx += 1
             continue
 
-        # NEU: Handler für einzelne Paare (Lyrik-Modus)
+        # NEU: Handler für einzelne Paare (Lyrik-Modus & Zitate mit Straußlogik)
         # Bewahrt die Zeilenstruktur wie bei Zitaten
         if t == 'pair':
             gr_tokens = b.get('gr_tokens', [])
@@ -2803,7 +3256,65 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             para_label = b.get('para_label', '')
             speaker = b.get('speaker', '')
             is_lyrik = b.get('_is_lyrik', False)  # NEU: Prüfe ob Lyrik-Block
+            has_alternatives = b.get('_has_alternatives', False)  # NEU: Prüfe ob Straußlogik
             
+            # NEU: BEDEUTUNGS-STRAUß - Wenn Alternativen vorhanden, erstelle EINE Tabelle mit mehreren Zeilen
+            if has_alternatives:
+                gr_alternatives = b.get('_gr_alternatives', [[]])  # NEU: Auch GR Alternativen!
+                de_alternatives = b.get('_de_alternatives', [[]])
+                en_alternatives = b.get('_en_alternatives', [[]])
+                
+                # KRITISCH: Rufe build_tables_for_stream DIREKT auf (wie in Poesie)!
+                # Übergebe die Alternativen als gr_tokens_alternatives, de_tokens_alternatives, en_tokens_alternatives
+                # Dies erstellt EINE Tabelle mit ALLEN Alternativen als separate Zeilen!
+                
+                # Berechne Spaltenbreiten (wie in normalem Flow)
+                pwidth = para_width_pt(para_label) if para_label else 0.0
+                swidth = speaker_width_pt(speaker) if speaker and any_speaker else 0.0
+                
+                # Rufe build_tables_for_stream direkt mit Alternativen auf
+                pair_tables = build_tables_for_stream(
+                    gr_tokens, de_tokens,  # Primäre Tokens (werden ignoriert wenn alternatives vorhanden)
+                    doc_width_pt=frame_w,
+                    reverse_mode=False,
+                    token_gr_style=token_gr, token_de_style=token_de,
+                    para_display=para_label, para_width_pt=pwidth, style_para=style_para,
+                    speaker_display=(f'[{speaker}]:' if speaker else ''), speaker_width_pt=swidth, style_speaker=style_speaker,
+                    table_halign='LEFT', italic=False,
+                    en_tokens=en_tokens,
+                    hide_pipes=hide_pipes,
+                    tag_config=tag_config,
+                    base_num=b.get('base'),
+                    line_comment_colors=line_comment_colors,
+                    block=b,
+                    tag_mode=tag_mode,
+                    # NEU: Übergebe Alternativen!
+                    gr_tokens_alternatives=gr_alternatives if len(gr_alternatives) > 1 else None,
+                    de_tokens_alternatives=de_alternatives if len(de_alternatives) > 1 else None,
+                    en_tokens_alternatives=en_alternatives if len(en_alternatives) > 1 else None
+                )
+                
+                if pair_tables:
+                    valid_tables = [t for t in pair_tables if t is not None]
+                    if valid_tables:
+                        try:
+                            elements.append(KeepTogether(valid_tables))
+                        except (TypeError, ValueError) as e:
+                            logger.warning("Prosa_Code: KeepTogether failed for alternatives, appending individually: %s", e)
+                            elements.extend(valid_tables)
+                        
+                        # Abstand nach Alternativen (Lyrik hat größeren Abstand)
+                        if is_lyrik:
+                            elements.append(Spacer(1, 3.0 * mm))
+                        else:
+                            elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
+                
+                # Kommentare rendern (nur einmal nach allen Alternativen)
+                render_block_comments(b, elements, doc)
+                idx += 1
+                continue
+            
+            # Normaler Fall: KEINE Alternativen
             # Erstelle eine Pseudo-Flow-Struktur für eine einzelne Zeile
             pseudo_flow = {
                 'type': 'flow',

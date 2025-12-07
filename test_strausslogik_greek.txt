@@ -1,0 +1,10 @@
+=== TEST: GRIECHISCH MIT STRAUßLOGIK ===
+
+=== § 1 ===
+ὁ  ἀνήρ  βαίνει.
+der  Mann/Mensch  geht/schreitet.
+the  man/human  goes/walks.
+
+οὗτος  πίνει  οἶνον.
+dieser  trinkt  Wein/Getränk.
+this  drinks  wine/beverage.

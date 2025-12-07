@@ -1,0 +1,9 @@
+§1 Beispiel aus Herodot
+
+1 ἐν{Prp} δὲ{Kon} τῷ{Art} χρόνῳ{N} τούτῳ{Pron} οἱ{Art} Λακεδαιμόνιοι{N} ἐστρατεύοντο{V,Imp} ἐπὶ{Prp} τοὺς{Art} +Τεγεήτας{N}/Ἀργείους{N}
+in aber der Zeit dieser die Spartaner zogen|zu|Felde gegen die +Tegeaten/Argiver
+in but the time this the Spartans campaigned against the +Tegeans/Argives
+
+2 καὶ{Kon} ἐνίκησαν{V,Aor} μάχῃ{N} μεγάλῃ{Adj} καὶ{Kon} -λαμπρῇ{Adj}/καλῇ{Adj}
+und siegten Schlacht großer und -glänzender/schöner
+and won battle great and -brilliant/beautiful

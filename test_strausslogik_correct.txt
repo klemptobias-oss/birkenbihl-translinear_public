@@ -1,0 +1,8 @@
+=== TEST: STRAUßLOGIK IM FLIEßTEXT (KORREKT) ===
+
+=== § 1 ===
+Der  Mann/Mensch  geht  in  das  Haus/Gebäude.
+Er  trinkt  Wein/Bier/Wasser.
+
+=== § 2 ===
+Das  ist  ein  Test/Versuch/Experiment.

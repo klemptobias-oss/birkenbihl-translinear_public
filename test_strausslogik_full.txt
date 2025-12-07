@@ -1,0 +1,12 @@
+=== TEST: STRAUßLOGIK VOLLSTÄNDIG ===
+
+=== § 1 - Griechisch mit Alternativen ===
+Der  Mann  geht.
+the  man/human  goes/walks.
+
+Er  trinkt  Wein.
+he  drinks  wine/beverage/drink.
+
+=== § 2 - Gemischt ===
+Das  Haus  steht.
+the  house/building  stands/is.

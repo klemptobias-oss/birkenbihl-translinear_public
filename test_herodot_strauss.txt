@@ -1,0 +1,11 @@
+=== HERODOT MIT STRAUßLOGIK TEST ===
+
+=== § 1 ===
+λέγει(Prä)(M/P)  ὁ(nomen_N)  Κροῖσος(nomen_N).
+sagt/spricht  der  Kroisos/Croesus.
+says/speaks  the  Croesus.
+
+Σόλων:
+οὗτος(nomen_N)  εἶδε(verb_Prä)  τὰ(nomen_A)  χρήματα(nomen_A).
+dieser  sah/betrachtete  die  Schätze/Reichtümer.
+this  saw/beheld  the  treasures/riches.
