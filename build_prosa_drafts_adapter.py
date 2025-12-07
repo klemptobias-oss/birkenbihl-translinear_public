@@ -208,23 +208,11 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     # KRITISCH: Verwende IMMER den Upload-Filename (input_stem), NICHT RELEASE_BASE!
     # Grund: Browser muss PDFs anhand des Upload-Filenames finden können
     # RELEASE_BASE kann normalisiert sein (z.B. gr_de statt gr_de_en), was zu 404s führt
-    # Lösung: PDF-Name = Upload-Filename + Variant-Suffix
-    # Beispiel: agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_011301_GR_Fett_Colour_Tag.pdf
+    # Lösung: PDF-Name = Autor_Werk__Upload-Filename + Variant-Suffix (OHNE path_prefix!)
+    # Beispiel: Platon_Menon__Platon_Menon_gr_de_translinear_SESSION_xxx_DRAFT_yyy_Normal_BlackWhite_Tag.pdf
     
-    # Extrahiere den Pfad-Teil aus PATH_PREFIX Metadaten (falls vorhanden)
-    # Fallback: Extrahiere aus RELEASE_BASE (alte Methode, für Kompatibilität)
-    # Format PATH_PREFIX: "GR_prosa_Philosophie_Platon_Menon"
-    # Format RELEASE_BASE (alt): "GR_prosa_Philosophie_Platon_Menon__menon_gr_de_stil1_birkenbihl"
-    path_prefix = ""
-    
-    if "PATH_PREFIX" in metadata and metadata["PATH_PREFIX"]:
-        # NEUE Methode: PATH_PREFIX aus Metadaten
-        path_prefix = metadata["PATH_PREFIX"] + "__"
-        print(f"→ Verwende PATH_PREFIX aus Metadaten: {path_prefix}")
-    elif release_base and "__" in release_base:
-        # ALTE Methode (Fallback): Extrahiere aus RELEASE_BASE
-        path_prefix = release_base.split("__")[0] + "__"
-        print(f"→ Verwende PATH_PREFIX aus RELEASE_BASE (Fallback): {path_prefix}")
+    # WICHTIG: Wir verwenden NICHT mehr PATH_PREFIX oder RELEASE_BASE für den PDF-Namen!
+    # Grund: Frontend (work.js) extrahiert nur Autor_Werk aus Upload-Filename
     
     for name in relevant_pdfs:
         bare = name[:-4] if name.lower().endswith(".pdf") else name
@@ -247,11 +235,15 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
             else:
                 suffix = bare
         
-        # FINALE LÖSUNG: Verwende Pfad-Prefix (wenn vorhanden) + Upload-Filename + Variant-Suffix
-        if path_prefix:
-            final_bare = f"{path_prefix}{input_stem}{suffix}"
+        # NEUE LOGIK: Extrahiere Autor_Werk aus input_stem (wie Frontend!)
+        # Format input_stem: Platon_Menon_gr_de_translinear_SESSION_xxx_DRAFT_yyy
+        # Wir wollen: Platon_Menon__Platon_Menon_gr_de_translinear_SESSION_xxx_DRAFT_yyy_Normal_BlackWhite_Tag.pdf
+        autor_werk_match = re.match(r'^([^_]+_[^_]+)_(?:gr|lat|translinear)', input_stem, re.IGNORECASE)
+        if autor_werk_match:
+            autor_werk = autor_werk_match.group(1)  # z.B. "Platon_Menon"
+            final_bare = f"{autor_werk}__{input_stem}{suffix}"
         else:
-            # Fallback: Nur Upload-Filename + Suffix (für alte Dateien ohne RELEASE_BASE)
+            # Fallback: Nur Upload-Filename + Suffix (für alte Dateien ohne Autor_Werk)
             final_bare = f"{input_stem}{suffix}"
         
         final_name = f"{final_bare}.pdf"

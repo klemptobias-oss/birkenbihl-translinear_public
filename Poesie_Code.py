@@ -1289,9 +1289,11 @@ def format_token_markup(token:str, *, is_greek_row:bool, gr_bold:bool, remove_ba
     if color2: color = color2 or color
 
     is_bold = gr_bold if is_greek_row else False
-    if '*' in core_no_end:
-        core_no_end = core_no_end.replace('*','')
-        is_bold = True
+    # DEAKTIVIERT: Sternchen (*) sollen NICHT mehr automatisch entfernt werden!
+    # User will * Symbole im translinear.txt direkt verwenden können.
+    # if '*' in core_no_end:
+    #     core_no_end = core_no_end.replace('*','')
+    #     is_bold = True
 
     if is_greek_row and not CURRENT_IS_LATIN:
         # DEAKTIVIERT für lateinische Texte: i, r, L sind normale Buchstaben, keine Versmaß-Marker

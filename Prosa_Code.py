@@ -836,15 +836,17 @@ def format_token_markup(token:str, *, reverse_mode:bool=False, is_greek_row:bool
     if aorS_present: strong = True
 
     is_bold = False; star_visible = False
-    if '*' in core:
-        if strong and not aorS_present:  # Bei AorS keine Sternchen anzeigen
-            star_visible = True
-        else:
-            if reverse_mode and not is_greek_row: star_visible = True
-            else: is_bold = True
-        core = core.replace('*','')
-    if strong and not star_visible and not aorS_present:  # Bei AorS keine Sternchen hinzufügen
-        core += '*'
+    # DEAKTIVIERT: Sternchen (*) sollen NICHT mehr automatisch entfernt/hinzugefügt werden!
+    # User will * Symbole im translinear.txt direkt verwenden können.
+    # if '*' in core:
+    #     if strong and not aorS_present:  # Bei AorS keine Sternchen anzeigen
+    #         star_visible = True
+    #     else:
+    #         if reverse_mode and not is_greek_row: star_visible = True
+    #         else: is_bold = True
+    #     core = core.replace('*','')
+    # if strong and not star_visible and not aorS_present:  # Bei AorS keine Sternchen hinzufügen
+    #     core += '*'
     if reverse_mode and is_greek_row: is_bold = True
 
     # NEU: Partition via Overrides
@@ -884,12 +886,14 @@ def visible_measure_token(token:str, *, font:str, size:float, is_greek_row:bool=
     star_visible = False
     aorS_present = 'AorS' in tags
     if aorS_present: strong = True
-    if '*' in core:
-        if strong and not aorS_present:  # Bei AorS keine Sternchen anzeigen
-            star_visible = True
-        core = core.replace('*','')
-    if strong and not star_visible and not aorS_present:  # Bei AorS keine Sternchen hinzufügen
-        core += '*'
+    # DEAKTIVIERT: Sternchen (*) sollen NICHT mehr automatisch entfernt/hinzugefügt werden!
+    # User will * Symbole im translinear.txt direkt verwenden können.
+    # if '*' in core:
+    #     if strong and not aorS_present:  # Bei AorS keine Sternchen anzeigen
+    #         star_visible = True
+    #     core = core.replace('*','')
+    # if strong and not star_visible and not aorS_present:  # Bei AorS keine Sternchen hinzufügen
+    #     core += '*'
 
     w = _measure_string(core.replace('-', '|'), font, size)
 
@@ -1312,7 +1316,8 @@ def group_pairs_into_flows(blocks):
                     'en_tokens': et,
                     'para_label': '',  # Kein § Marker im Lyrik-Modus
                     'speaker': active_speaker,
-                    'base': base_num  # NEU: Zeilennummer für Hinterlegung
+                    'base': base_num,  # NEU: Zeilennummer für Hinterlegung
+                    '_is_lyrik': True  # KRITISCH: Markiere als Lyrik für größeren Zeilenabstand im Rendering
                 })
                 continue
 
@@ -2172,13 +2177,26 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             line_num = cm.get('line_num') if isinstance(cm, dict) else None
             
             # WICHTIG: Entferne "k" Suffix von line_num (wie in Poesie)
+            # ODER: Wenn kein line_num, aber pair_range vorhanden, verwende das!
             if line_num:
                 line_num_clean = str(line_num).rstrip('kK')
                 txt = f"[{line_num_clean}] {txt}"
             elif rng:
-                txt = f"[{rng[0]}-{rng[1]}] {txt}"
+                # pair_range vorhanden: Zeige als [start-end] oder [start] (wenn gleich)
+                if rng[0] == rng[1]:
+                    # Einzelne Zeile → zeige nur [start]
+                    txt = f"[{rng[0]}] {txt}"
+                else:
+                    # Bereich → zeige [start-end]
+                    txt = f"[{rng[0]}-{rng[1]}] {txt}"
             elif isinstance(cm, dict) and cm.get('start') and cm.get('end'):
-                txt = f"[{cm.get('start')}-{cm.get('end')}] {txt}"
+                # Fallback: explizite start/end Felder
+                start = cm.get('start')
+                end = cm.get('end')
+                if start == end:
+                    txt = f"[{start}] {txt}"
+                else:
+                    txt = f"[{start}-{end}] {txt}"
             
             # Sanitize - KEINE Kürzung mehr! Längere Kommentare erlaubt
             text_clean = " ".join(txt.split())
@@ -2437,6 +2455,18 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # NEU: Kommentare aus block['comments'] rendern (auch bei Zitaten)
             render_block_comments(b, elements, doc)
             
+            # KRITISCH: Prüfe ob vorheriger Block ein para_set ist (§ Marker)
+            # Wenn ja: Zeige § Marker VOR dem Zitat an!
+            # Problem: § Marker wird nur in flow-Blöcken angezeigt, aber Zitate sind separate Blöcke
+            # Lösung: Manuell § Marker als Paragraph vor Zitat einfügen
+            if idx > 0 and flow_blocks[idx - 1].get('type') == 'para_set':
+                para_label = flow_blocks[idx - 1].get('label', '')
+                if para_label:
+                    # Füge § Marker als linksbündigen Paragraph hinzu (wie H3-Überschriften)
+                    para_paragraph = Paragraph(xml_escape(para_label), style_eq_h3)
+                    elements.append(para_paragraph)
+                    elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm))
+            
             # WICHTIG: Mehr Abstand vor dem Zitat (1.5x größer als normal)
             elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm * 1.5))
             
@@ -2584,6 +2614,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # KRITISCH: Zitate müssen ALLE Tag/Translation-Einstellungen erben!
             import shared.preprocess as preprocess
             
+            # KRITISCH: Markiere alle Quote-Blöcke mit _in_quote=True damit apply_tag_visibility() sie verarbeitet!
+            # Ohne dieses Flag werden sie in apply_tag_visibility() übersprungen (Zeile 1665)!
+            for qb in temp_quote_blocks:
+                qb['_in_quote'] = True
+            
             # WICHTIG: Die Blöcke wurden bereits in prosa_pdf.py vorverarbeitet!
             # Die Farben und Tags sind bereits korrekt gesetzt.
             # Wir müssen hier NUR noch die Farbsymbole entfernen, wenn BLACK_WHITE aktiv ist.
@@ -2601,6 +2636,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 temp_quote_blocks = preprocess.apply_colors(temp_quote_blocks, tag_config, disable_comment_bg=disable_comment_bg_flag)
             
             # 2) Tag-Sichtbarkeit anwenden (wie beim normalen Text)
+            # WICHTIG: apply_tag_visibility() wendet auch Translation-Hiding an (intern)!
+            # Dank _in_quote=True werden Zitate jetzt korrekt behandelt!
             hidden_by_wortart = None
             if tag_config and isinstance(tag_config, dict):
                 raw = tag_config.get('hidden_tags_by_wortart') or tag_config.get('hidden_tags_by_wordart') or None
@@ -2608,74 +2645,18 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     hidden_by_wortart = {k.lower(): set(v) for k, v in raw.items()}
             
             if tag_mode == "TAGS" and hidden_by_wortart:
+                # WICHTIG: apply_tag_visibility() wendet AUTOMATISCH Translation-Hiding an!
+                # Keine separate Logik mehr nötig (entfernt in diesem Fix)!
                 temp_quote_blocks = preprocess.apply_tag_visibility(temp_quote_blocks, tag_config, hidden_tags_by_wortart=hidden_by_wortart)
             elif tag_mode == "NO_TAGS":
                 temp_quote_blocks = preprocess.remove_all_tags(temp_quote_blocks, tag_config)
+            elif tag_mode == "TAGS" and not hidden_by_wortart:
+                # Auch wenn keine Tags ausgeblendet werden, müssen wir Translation-Hiding anwenden!
+                # apply_tag_visibility() macht das automatisch (wenn tag_config gesetzt ist)
+                temp_quote_blocks = preprocess.apply_tag_visibility(temp_quote_blocks, tag_config)
             
-            # 3) Translation-Hiding anwenden (wenn konfiguriert)
-            # WICHTIG: Zitate müssen die gleiche Translation-Hiding-Logik wie normale Blöcke erhalten
-            # KRITISCH: Erstelle translation_rules aus tag_config (wie in apply_tag_visibility)
-            translation_rules = {}
-            if tag_config and isinstance(tag_config, dict):
-                # Erstelle translation_rules aus tag_config (wie in apply_colors und apply_tag_visibility)
-                for rule_id, conf in tag_config.items():
-                    if not isinstance(conf, dict):
-                        continue
-                    # Normalisiere rule_id
-                    normalized_rule_id = preprocess._normalize_rule_id(rule_id) if hasattr(preprocess, '_normalize_rule_id') else rule_id.lower()
-                    # Registriere Translation-Rule, wenn hideTranslation aktiviert ist
-                    if hasattr(preprocess, '_maybe_register_translation_rule'):
-                        preprocess._maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
-                
-                # Fallback: Prüfe, ob translation_rules bereits in tag_config vorhanden sind
-                if not translation_rules:
-                    translation_rules = tag_config.get('translation_rules') or tag_config.get('hide_translations') or {}
-            
-            if translation_rules:
-                    # Wende Translation-Hiding auf jeden Block im Zitat an
-                    processed_quote_blocks = []
-                    for qb in temp_quote_blocks:
-                        if qb.get('type') == 'pair':
-                            # Wende die gleiche Logik wie in apply_tag_visibility an
-                            gr_tokens_orig = qb.get('gr_tokens', [])
-                            de_tokens = list(qb.get('de_tokens', []))
-                            en_tokens = list(qb.get('en_tokens', []))  # NEU: Englische Tokens für 3-sprachige Zitate
-                            
-                            for idx_token, gr_token in enumerate(gr_tokens_orig):
-                                if hasattr(preprocess, '_token_should_hide_translation'):
-                                    if preprocess._token_should_hide_translation(gr_token, translation_rules):
-                                        # Prüfe ob Übersetzung trivial ist (nur Interpunktion/Stephanus)
-                                        if idx_token < len(de_tokens):
-                                            de_text = de_tokens[idx_token].strip() if isinstance(de_tokens[idx_token], str) else ''
-                                            if hasattr(preprocess, 'is_trivial_translation'):
-                                                if preprocess.is_trivial_translation(de_text):
-                                                    de_tokens[idx_token] = ''
-                                                else:
-                                                    de_tokens[idx_token] = ''
-                                            else:
-                                                de_tokens[idx_token] = ''
-                                        if idx_token < len(en_tokens):
-                                            en_text = en_tokens[idx_token].strip() if isinstance(en_tokens[idx_token], str) else ''
-                                            if hasattr(preprocess, 'is_trivial_translation'):
-                                                if preprocess.is_trivial_translation(en_text):
-                                                    en_tokens[idx_token] = ''
-                                                else:
-                                                    en_tokens[idx_token] = ''
-                                            else:
-                                                en_tokens[idx_token] = ''
-
-                            qb['de_tokens'] = de_tokens
-                            qb['en_tokens'] = en_tokens
-                            
-                            # Wende auch _hide_stephanus_in_translations an
-                            processed_qb = preprocess._hide_stephanus_in_translations(qb, translation_rules)
-                            # Wende auch _hide_manual_translations_in_block an, falls vorhanden
-                            if hasattr(preprocess, '_hide_manual_translations_in_block'):
-                                processed_qb = preprocess._hide_manual_translations_in_block(processed_qb)
-                            processed_quote_blocks.append(processed_qb)
-                        else:
-                            processed_quote_blocks.append(qb)
-                    temp_quote_blocks = processed_quote_blocks
+            # 3) Translation-Hiding wurde bereits in apply_tag_visibility() angewendet!
+            # ALTE LOGIK wurde ENTFERNT, da apply_tag_visibility() das bereits macht!
             
             # 4) Bei BLACK_WHITE Mode: Entferne Farbsymbole (§, $) aus Zitaten
             if color_mode == "BLACK_WHITE":
@@ -2820,6 +2801,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             en_tokens = b.get('en_tokens', [])
             para_label = b.get('para_label', '')
             speaker = b.get('speaker', '')
+            is_lyrik = b.get('_is_lyrik', False)  # NEU: Prüfe ob Lyrik-Block
             
             # Erstelle eine Pseudo-Flow-Struktur für eine einzelne Zeile
             pseudo_flow = {
@@ -2844,6 +2826,13 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         # Fallback: Einzeln hinzufügen
                         logger.warning("Prosa_Code: KeepTogether failed for pair, appending individually: %s", e)
                         elements.extend(valid_tables)
+                    
+                    # WICHTIG: Lyrik-Bereiche brauchen größeren Zeilenabstand (wie in Poesie)!
+                    # Verwende gleichen Abstand wie normale Prosa-Zeilen (3-4mm)
+                    if is_lyrik:
+                        # LYRIK_LINE_GAP_MM = 3.0mm (wie normaler Prosa-Text)
+                        # Das ist der Abstand zwischen einzelnen Lyrik-Zeilen
+                        elements.append(Spacer(1, 3.0 * mm))
             
             # KRITISCH: Kommentare NACH den Tabellen rendern, damit sie nach dem Text erscheinen!
             render_block_comments(b, elements, doc)

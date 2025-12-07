@@ -81,10 +81,10 @@ WORTART_IDENTIFIER_TAGS = {
 # Reihenfolge für Hierarchie-Überschreibung innerhalb der Gruppen
 HIERARCHIE = {
     'verb': ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'Fu1', 'Fu2', 'Akt', 'Med', 'Pas', 'M/P', 'Inf', 'Op', 'Knj', 'Imv'],  # NEU: Fu1, Fu2
-    'partizip': ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'Fu1', 'Fu2', 'N', 'G', 'D', 'A', 'V', 'Akt', 'Med', 'Pas', 'M/P'],  # NEU: Fu1, Fu2
-    'adjektiv': ['N', 'G', 'D', 'A', 'V', 'Kmp', 'Sup'],
+    'partizip': ['Prä', 'Imp', 'Aor', 'AorS', 'Per', 'Plq', 'Fu', 'Fu1', 'Fu2', 'N', 'G', 'D', 'A', 'V', 'Abl', 'Akt', 'Med', 'Pas', 'M/P'],  # NEU: Fu1, Fu2, Abl
+    'adjektiv': ['N', 'G', 'D', 'A', 'V', 'Abl', 'Kmp', 'Sup'],  # NEU: Abl
     'adverb': ['Kmp', 'Sup'],
-    'pronomen': ['N', 'G', 'D', 'A'],
+    'pronomen': ['N', 'G', 'D', 'A', 'Abl'],  # NEU: Abl
     'artikel': ['N', 'G', 'D', 'A'],
     'nomen': ['N', 'G', 'D', 'A', 'V', 'Abl'],  # NEU: Abl für Latein
 }
@@ -1133,9 +1133,19 @@ def _process_pair_block(block: Dict[str, Any],
 def _normalize_tag_name(tag: str) -> str:
     """
     Normalisiert Tag-Namen für Kompatibilität mit Draft-Dateien.
+    
+    WICHTIG: Behandelt auch Sonderzeichen wie / und ä in Tags!
+    - (M/P) → 'M/P' (bleibt unverändert, wird korrekt erkannt)
+    - (Prä) → 'Prä' (Umlaut wird normalisiert)
     """
-    # Normalisiere Umlaute
-    tag = tag.replace('Pra', 'Prä')
+    # KRITISCH: Normalisiere Umlaute (Prä, Präsens)
+    # Verschiedene Encodings können "ä" unterschiedlich darstellen!
+    tag = tag.replace('Pra', 'Prä')  # ASCII-Fallback
+    tag = tag.replace('Prä', 'Prä')  # Normalisiere verschiedene Unicode-Varianten
+    
+    # KRITISCH: (M/P) Tag muss unverändert bleiben!
+    # Der Slash "/" ist bereits Teil des Tag-Namens und darf nicht ersetzt werden.
+    # Keine Normalisierung nötig - Frontend/Backend verwenden beide "M/P" konsistent.
     
     # Normalisiere Wortart-Präfixe
     if tag.startswith('adverb'):
@@ -1260,12 +1270,46 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
                             # (defensive: lieber zu viel ausblenden als zu wenig)
                             elif orig_tag not in SUP_TAGS and orig_tag not in SUB_TAGS:
                                 tags_that_want_to_hide.add(normalized)
+                    
+                    # SPEZIALFALL: Gerundivum, Gerundium, Supinum (lateinische Verbformen)
+                    # Diese haben FEST zugehörige Tags, die IMMER mit ausgeblendet werden müssen!
+                    # - Gerundivum (Gdv): IMMER mit Fu1 + Pas + Kasus
+                    # - Gerundium (Ger): IMMER mit Kasus (kein Fu1/Pas)
+                    # - Supinum (Spn): IMMER mit Kasus
+                    # WICHTIG: Wenn Gdv ausgeblendet wird, müssen Fu1 und Pas auch verschwinden!
+                    if wortart_key == 'gerundivum':
+                        # Gdv hat IMMER: Gdv + Fu1 + Pas + Kasus
+                        # Wenn "all" gesetzt: Füge Fu1 und Pas hinzu (gehören fest zum Gdv!)
+                        tags_that_want_to_hide.add('Fu1')
+                        tags_that_want_to_hide.add('Pas')
+                        print(f"DEBUG: Gerundivum 'all' → Füge Fu1 und Pas zu tags_that_want_to_hide hinzu")
+                    elif wortart_key == 'gerundium':
+                        # Gerundium hat: Ger + Kasus (kein Fu1/Pas)
+                        # Keine Extra-Tags nötig
+                        pass
+                    elif wortart_key == 'supinum':
+                        # Supinum hat: Spn + Kasus
+                        # Keine Extra-Tags nötig
+                        pass
             else:
                 # Nur spezifische Tags dieser Wortart wollen ausblenden
                 entry_tags = entry.get("tags", set())
                 if entry_tags:
                     normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
                     tags_that_want_to_hide.update(normalized_entry_tags)
+                    
+                    # SPEZIALFALL: Wenn Gdv UND alle Kasus ausgeblendet werden → Auch Fu1+Pas ausblenden
+                    if wortart_key == 'gerundivum':
+                        # Prüfe ob Gdv selbst ausgeblendet wird
+                        if 'Gdv' in entry_tags or 'gdv' in {t.lower() for t in entry_tags}:
+                            # Prüfe ob alle Kasus ausgeblendet werden
+                            kasus_in_tags = {_normalize_tag_name(t) for t in entry_tags if t in KASUS_TAGS}
+                            kasus_im_token = {t for t in original_tags if t in KASUS_TAGS}
+                            if kasus_im_token and kasus_im_token.issubset(kasus_in_tags):
+                                # Alle Kasus des Tokens werden ausgeblendet → Fu1 + Pas auch!
+                                tags_that_want_to_hide.add('Fu1')
+                                tags_that_want_to_hide.add('Pas')
+                                print(f"DEBUG: Gerundivum Gdv+Kasus ausgeblendet → Füge Fu1 und Pas hinzu")
     
     # 4. Prüfe globale Regeln (z.B. '_global')
     global_entry = translation_rules.get(TRANSLATION_HIDE_GLOBAL)

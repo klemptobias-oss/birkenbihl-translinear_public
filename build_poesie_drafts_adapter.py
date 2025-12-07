@@ -248,22 +248,13 @@ def run_one(input_path: Path) -> None:
             # KRITISCH: Verwende IMMER den Upload-Filename (input_stem), NICHT RELEASE_BASE!
             # Grund: Browser muss PDFs anhand des Upload-Filenames finden können
             # RELEASE_BASE kann normalisiert sein (z.B. gr_de statt gr_de_en), was zu 404s führt
-            # Lösung: PDF-Name = Upload-Filename + Variant-Suffix
+            # Lösung: PDF-Name = Upload-Filename + Variant-Suffix (OHNE path_prefix!)
             
-            # Extrahiere den Pfad-Teil aus PATH_PREFIX Metadaten (falls vorhanden)
-            # Fallback: Extrahiere aus RELEASE_BASE (alte Methode, für Kompatibilität)
-            # Format PATH_PREFIX: "GR_poesie_Drama_Aischylos_Agamemnon"
-            # Format RELEASE_BASE (alt): "GR_poesie_Drama_Aischylos_Agamemnon__agamemnon_gr_de_stil1_birkenbihl"
-            path_prefix = ""
-            
-            if "PATH_PREFIX" in metadata and metadata["PATH_PREFIX"]:
-                # NEUE Methode: PATH_PREFIX aus Metadaten
-                path_prefix = metadata["PATH_PREFIX"] + "__"
-                print(f"→ Verwende PATH_PREFIX aus Metadaten: {path_prefix}")
-            elif release_base and "__" in release_base:
-                # ALTE Methode (Fallback): Extrahiere aus RELEASE_BASE
-                path_prefix = release_base.split("__")[0] + "__"
-                print(f"→ Verwende PATH_PREFIX aus RELEASE_BASE (Fallback): {path_prefix}")
+            # WICHTIG: Wir verwenden NICHT mehr PATH_PREFIX oder RELEASE_BASE für den PDF-Namen!
+            # Grund: Frontend (work.js) extrahiert nur Autor_Werk aus Upload-Filename
+            # Beispiel Upload: Homer_Ilias_1_gr_de_translinear_SESSION_xxx_DRAFT_yyy.txt
+            # Frontend erwartet: Homer_Ilias_1__Homer_Ilias_1_gr_de_translinear_SESSION_xxx_DRAFT_yyy_Normal_BlackWhite_Tag.pdf
+            # NICHT: GR_poesie_Epos_Homer_Ilias_1__Homer_Ilias_1_gr_de_...pdf
 
             for name in relevant_pdfs:
                 bare = name[:-4] if name.lower().endswith(".pdf") else name
@@ -291,11 +282,13 @@ def run_one(input_path: Path) -> None:
                     else:
                         suffix = '_' + bare
                 
-                # FINALE LÖSUNG: Verwende Pfad-Prefix (wenn vorhanden) + ORIGINAL Upload-Filename + Variant-Suffix
-                # Der input_stem enthält den ORIGINAL Upload-Namen inkl. DRAFT_TIMESTAMP
-                # z.B. "agamemnon_gr_de_en_stil1_birkenbihl_draft_translinear_DRAFT_20251130_011301"
-                if path_prefix:
-                    final_bare = f"{path_prefix}{input_stem}{suffix}"
+                # NEUE LOGIK: Extrahiere Autor_Werk aus input_stem (wie Frontend!)
+                # Format input_stem: Homer_Ilias_1_gr_de_translinear_SESSION_xxx_DRAFT_yyy
+                # Wir wollen: Homer_Ilias_1__Homer_Ilias_1_gr_de_translinear_SESSION_xxx_DRAFT_yyy_Normal_BlackWhite_Tag.pdf
+                autor_werk_match = re.match(r'^([^_]+_[^_]+)_(?:gr|lat|translinear)', input_stem, re.IGNORECASE)
+                if autor_werk_match:
+                    autor_werk = autor_werk_match.group(1)  # z.B. "Homer_Ilias_1"
+                    final_bare = f"{autor_werk}__{input_stem}{suffix}"
                 else:
                     # Fallback: Nur Upload-Filename + Suffix
                     final_bare = f"{input_stem}{suffix}"
