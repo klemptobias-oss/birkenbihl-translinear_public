@@ -397,7 +397,7 @@ const tagConfigDefinitionGreek = [
   {
     leader: { id: "verb", display: "Verben", tag: "Verben" },
     members: [
-      { id: "verb_Pra", display: "Präsenz(Prä)", tag: "Prä" },
+      { id: "verb_Pra", display: "Präsenz (Prä)", tag: "Prä" },
       { id: "verb_Imp", display: "Imperfekt (Imp)", tag: "Imp" },
       { id: "verb_Aor", display: "Aorist (Aor)", tag: "Aor" },
       { id: "verb_AorS", display: "Aorist Stark (AorS)", tag: "AorS" },
@@ -418,7 +418,7 @@ const tagConfigDefinitionGreek = [
   {
     leader: { id: "partizip", display: "Partizipien", tag: "Partizipien" },
     members: [
-      { id: "partizip_Pra", display: "Präsenz(Prä)", tag: "Prä" },
+      { id: "partizip_Pra", display: "Präsenz (Prä)", tag: "Prä" },
       { id: "partizip_Imp", display: "Imperfekt (Imp)", tag: "Imp" },
       { id: "partizip_Aor", display: "Aorist (Aor)", tag: "Aor" },
       { id: "partizip_AorS", display: "Aorist Stark (AorS)", tag: "AorS" },
