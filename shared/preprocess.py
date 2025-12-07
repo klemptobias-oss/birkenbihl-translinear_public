@@ -1137,11 +1137,19 @@ def _normalize_tag_name(tag: str) -> str:
     WICHTIG: Behandelt auch Sonderzeichen wie / und ä in Tags!
     - (M/P) → 'M/P' (bleibt unverändert, wird korrekt erkannt)
     - (Prä) → 'Prä' (Umlaut wird normalisiert)
+    - (Pra) → 'Prä' (ASCII-Variante wird zu Umlaut konvertiert)
     """
     # KRITISCH: Normalisiere Umlaute (Prä, Präsens)
     # Verschiedene Encodings können "ä" unterschiedlich darstellen!
-    tag = tag.replace('Pra', 'Prä')  # ASCII-Fallback
-    tag = tag.replace('Prä', 'Prä')  # Normalisiere verschiedene Unicode-Varianten
+    # WICHTIG: Prüfe ZUERST auf ASCII-Variante "Pra" (ohne Umlaut)!
+    if 'Pra' in tag and 'ä' not in tag:
+        # ASCII-Variante: "Pra" → "Prä"
+        tag = tag.replace('Pra', 'Prä')
+    
+    # Dann normalisiere verschiedene Unicode-Varianten von ä
+    # (Combining Characters, verschiedene Encodings)
+    import unicodedata
+    tag = unicodedata.normalize('NFC', tag)  # Normalisiere zu composed form
     
     # KRITISCH: (M/P) Tag muss unverändert bleiben!
     # Der Slash "/" ist bereits Teil des Tag-Namens und darf nicht ersetzt werden.
@@ -1317,9 +1325,13 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
         if global_entry.get("all"):
             # Alle Tags wollen ausblenden
             for orig_tag in original_tags:
-                parts = [p for p in orig_tag.split('/') if p]
-                for part in parts:
-                    tags_that_want_to_hide.add(_normalize_tag_name(part))
+                # KRITISCH: M/P ist ein EINZELNES Tag, NICHT zwei separate Tags!
+                if orig_tag == 'M/P':
+                    tags_that_want_to_hide.add('M/P')
+                else:
+                    parts = [p for p in orig_tag.split('/') if p]
+                    for part in parts:
+                        tags_that_want_to_hide.add(_normalize_tag_name(part))
         else:
             entry_tags = global_entry.get("tags", set())
             if entry_tags:
@@ -1328,12 +1340,18 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
     
     # 5. DEFENSIVE PRÜFUNG: Gibt es mindestens EIN Tag das NICHT ausgeblendet werden will?
     for orig_tag in original_tags:
-        parts = [p for p in orig_tag.split('/') if p]
-        for part in parts:
-            normalized_part = _normalize_tag_name(part)
-            # Wenn dieses Tag NICHT in der "hide"-Liste ist → Übersetzung bleibt!
+        # KRITISCH: M/P ist ein EINZELNES Tag, NICHT zwei separate Tags!
+        if orig_tag == 'M/P':
+            normalized_part = 'M/P'
             if normalized_part not in tags_that_want_to_hide:
-                return False  # Mindestens ein Tag will sichtbar bleiben → Übersetzung zeigen!
+                return False  # M/P Tag will sichtbar bleiben → Übersetzung zeigen!
+        else:
+            parts = [p for p in orig_tag.split('/') if p]
+            for part in parts:
+                normalized_part = _normalize_tag_name(part)
+                # Wenn dieses Tag NICHT in der "hide"-Liste ist → Übersetzung bleibt!
+                if normalized_part not in tags_that_want_to_hide:
+                    return False  # Mindestens ein Tag will sichtbar bleiben → Übersetzung zeigen!
     
     # Alle Tags wollen ausblenden → Übersetzung ausblenden
     return True

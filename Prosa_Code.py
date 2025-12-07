@@ -2455,12 +2455,16 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # NEU: Kommentare aus block['comments'] rendern (auch bei Zitaten)
             render_block_comments(b, elements, doc)
             
-            # KRITISCH: Prüfe ob vorheriger Block ein para_set ist (§ Marker)
+            # KRITISCH: Prüfe ob vorheriger Block (ignoriere BLANKs) ein para_set ist (§ Marker)
             # Wenn ja: Zeige § Marker VOR dem Zitat an!
             # Problem: § Marker wird nur in flow-Blöcken angezeigt, aber Zitate sind separate Blöcke
             # Lösung: Manuell § Marker als Paragraph vor Zitat einfügen
-            if idx > 0 and flow_blocks[idx - 1].get('type') == 'para_set':
-                para_label = flow_blocks[idx - 1].get('label', '')
+            prev_non_blank_idx = idx - 1
+            while prev_non_blank_idx >= 0 and flow_blocks[prev_non_blank_idx].get('type') == 'blank':
+                prev_non_blank_idx -= 1
+            
+            if prev_non_blank_idx >= 0 and flow_blocks[prev_non_blank_idx].get('type') == 'para_set':
+                para_label = flow_blocks[prev_non_blank_idx].get('label', '')
                 if para_label:
                     # Füge § Marker als linksbündigen Paragraph hinzu (wie H3-Überschriften)
                     para_paragraph = Paragraph(xml_escape(para_label), style_eq_h3)
@@ -2696,13 +2700,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         tag_mode=tag_mode  # NEU: Tag-Modus übergeben
                     )
                     q_tables.extend(line_tables)
-            # WICHTIG: TableStyle explizit importieren (verhindert Scope-Problem)
-            from reportlab.platypus import TableStyle
-            # WICHTIG: Lyrik-Bereiche (=== Lyrik ===) brauchen MEHR Zeilenabstand als normaler Prosa-Text!
-            # Verwende gleichen Abstand wie in Poesie: 8-10mm statt 2mm
-            LYRIK_GAP_MM = 8.0  # Größerer Abstand für Lyrik-Zeilen (wie in Poesie)
-            for k, tquote in enumerate(q_tables):
-                if k > 0: tquote.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), LYRIK_GAP_MM * mm)]))
+            
+            # WICHTIG: KEINE extra Spacer zwischen Zitat-Zeilen!
+            # Die Zeilenabstände werden automatisch durch build_tables_for_stream() gesetzt.
+            # (Die alte LYRIK_GAP_MM Logik war falsch und wurde entfernt)
 
 
             kidx, src_text = idx + 1, ''
