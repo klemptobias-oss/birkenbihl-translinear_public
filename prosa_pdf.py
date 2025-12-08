@@ -152,7 +152,7 @@ def _install_global_timeout():
 _install_global_timeout()
 
 import Prosa_Code as Prosa
-from Prosa_Code import group_pairs_into_flows  # ← HINZUFÜGEN
+from Prosa_Code import group_pairs_into_flows, merge_strauss_alternatives  # ← HINZUFÜGEN
 
 # Ensure final_blocks always exists to avoid NameError in except blocks
 final_blocks = None
@@ -283,6 +283,14 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         flow_count_after = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'flow')
         pair_count_after = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'pair')
         logger.info(f"After conversion: flow_blocks={flow_count_after}, pair_blocks={pair_count_after}")
+        
+        # STRAUßLOGIK: Verschmelze Alternativen zu Multi-Row-Struktur
+        blocks = merge_strauss_alternatives(blocks)
+        
+        # Re-check nach STRAUßLOGIK
+        flow_count_final = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'flow')
+        pair_count_final = sum(1 for b in blocks if isinstance(b, dict) and b.get('type') == 'pair')
+        logger.info(f"After STRAUßLOGIK merge: flow_blocks={flow_count_final}, pair_blocks={pair_count_final}")
     
     if flow_count == 0 and pair_count == 0:
         logger.error("ERROR: KEIN TRANSLINEAR-TEXT!")
