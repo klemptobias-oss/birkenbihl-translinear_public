@@ -1027,6 +1027,77 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
         new_block['de_tokens'] = new_de_tokens
         if new_en_tokens:  # NEU: Englische Tokens nur setzen, wenn vorhanden
             new_block['en_tokens'] = new_en_tokens
+        
+        # STRAUßLOGIK + FLIEßTEXT: Verarbeite auch Multi-Row-Arrays!
+        # WICHTIG: _gr_rows[0] ist die ursprüngliche gr_tokens Liste!
+        # Da wir gr_tokens durch new_gr_tokens ersetzt haben, müssen wir ALLE Rows aktualisieren!
+        
+        if '_gr_rows' in new_block and len(new_block['_gr_rows']) > 0:
+            # GR-Rows: Alle Rows sind WIEDERHOLUNGEN der gleichen GR-Zeile
+            # → Ersetze ALLE mit gefärbten Tokens aus new_gr_tokens
+            new_block['_gr_rows'] = [list(new_gr_tokens) for _ in range(len(new_block['_gr_rows']))]
+        
+        if '_de_rows' in new_block and len(new_block['_de_rows']) > 0:
+            # DE-Rows: Jede Row hat ANDERE Wörter (Alternativen), aber GLEICHE Struktur
+            # → Übertrage Farbsymbole von new_de_tokens zu jedem Token in jeder Row
+            processed_de_rows = []
+            for de_row in new_block['_de_rows']:
+                processed_row = []
+                for i, original_tok in enumerate(de_row):
+                    if i < len(new_de_tokens):
+                        # Extrahiere Farbsymbol aus new_de_tokens
+                        colored_tok = new_de_tokens[i]
+                        color_symbol = None
+                        for sym in COLOR_SYMBOLS:
+                            if sym in colored_tok:
+                                color_symbol = sym
+                                break
+                        
+                        # Füge Symbol zum Original-Token hinzu (falls noch nicht vorhanden)
+                        if color_symbol and color_symbol not in original_tok:
+                            # Symbol am Wortanfang einfügen
+                            match = RE_WORD_START.search(original_tok)
+                            if match:
+                                processed_row.append(original_tok[:match.start(2)] + color_symbol + original_tok[match.start(2):])
+                            else:
+                                processed_row.append(color_symbol + original_tok)
+                        else:
+                            processed_row.append(original_tok)
+                    else:
+                        processed_row.append(original_tok)
+                processed_de_rows.append(processed_row)
+            new_block['_de_rows'] = processed_de_rows
+        
+        if '_en_rows' in new_block and len(new_block['_en_rows']) > 0:
+            # EN-Rows: Gleiche Logik wie DE-Rows
+            processed_en_rows = []
+            for en_row in new_block['_en_rows']:
+                processed_row = []
+                for i, original_tok in enumerate(en_row):
+                    if i < len(new_en_tokens):
+                        # Extrahiere Farbsymbol aus new_en_tokens
+                        colored_tok = new_en_tokens[i]
+                        color_symbol = None
+                        for sym in COLOR_SYMBOLS:
+                            if sym in colored_tok:
+                                color_symbol = sym
+                                break
+                        
+                        # Füge Symbol zum Original-Token hinzu (falls noch nicht vorhanden)
+                        if color_symbol and color_symbol not in original_tok:
+                            # Symbol am Wortanfang einfügen
+                            match = RE_WORD_START.search(original_tok)
+                            if match:
+                                processed_row.append(original_tok[:match.start(2)] + color_symbol + original_tok[match.start(2):])
+                            else:
+                                processed_row.append(color_symbol + original_tok)
+                        else:
+                            processed_row.append(original_tok)
+                    else:
+                        processed_row.append(original_tok)
+                processed_en_rows.append(processed_row)
+            new_block['_en_rows'] = processed_en_rows
+        
         new_blocks.append(new_block)
     
     return new_blocks
@@ -2010,6 +2081,25 @@ def _strip_colors_from_block(block: dict, tag_config: dict = None) -> dict:
         block['en_tokens'] = [
             t if (i in force_color_indices or not t) else remove_color_symbols_from_token(t)
             for i, t in enumerate(block['en_tokens'])
+        ]
+    
+    # STRAUßLOGIK: Entferne Farbsymbole auch aus Multi-Row-Arrays!
+    if '_gr_rows' in block and isinstance(block['_gr_rows'], list):
+        block['_gr_rows'] = [
+            [t if not t else remove_color_symbols_from_token(t) for t in row]
+            for row in block['_gr_rows']
+        ]
+    
+    if '_de_rows' in block and isinstance(block['_de_rows'], list):
+        block['_de_rows'] = [
+            [t if not t else remove_color_symbols_from_token(t) for t in row]
+            for row in block['_de_rows']
+        ]
+    
+    if '_en_rows' in block and isinstance(block['_en_rows'], list):
+        block['_en_rows'] = [
+            [t if not t else remove_color_symbols_from_token(t) for t in row]
+            for row in block['_en_rows']
         ]
     
     # Entferne color_symbol aus token_meta (NUR wenn NICHT force_color!)
