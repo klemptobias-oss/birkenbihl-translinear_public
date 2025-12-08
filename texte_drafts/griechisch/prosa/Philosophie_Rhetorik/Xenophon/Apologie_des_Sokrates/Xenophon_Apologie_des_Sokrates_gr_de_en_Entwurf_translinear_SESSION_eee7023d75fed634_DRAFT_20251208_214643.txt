@@ -1,0 +1,675 @@
+<!-- RELEASE_BASE:Xenophon_Apologie_des_Sokrates_gr_de_en_Entwurf_birkenbihl -->
+<!-- PATH_PREFIX:GR_prosa_Philosophie_Rhetorik_Xenophon_Apologie_des_Sokrates -->
+<!-- RELEASE_NAME:Xenophon_Apologie_des_Sokrates_gr_de_en_Entwurf -->
+<!-- TAG_CONFIG:{"nomen":{"color":"orange"},"nomen_N":{"placement":"sup","color":"orange"},"nomen_G":{"placement":"sup","color":"orange"},"nomen_D":{"placement":"sup","color":"orange"},"nomen_A":{"placement":"sup","color":"orange"},"nomen_V":{"placement":"sup","color":"orange"},"nomen_Du":{"placement":"sup","color":"orange"},"verb":{"color":"green"},"verb_Pra":{"color":"green","placement":"sub"},"verb_Imp":{"color":"green","placement":"sub"},"verb_Aor":{"color":"green","placement":"sub"},"verb_AorS":{"color":"green","placement":"sub"},"verb_Per":{"color":"green","placement":"sub"},"verb_Plq":{"color":"green","placement":"sub"},"verb_Fu":{"color":"green","placement":"sub"},"verb_Du":{"color":"green","placement":"sup"},"verb_Akt":{"color":"green","placement":"sub"},"verb_Med":{"color":"green","placement":"sub"},"verb_Pas":{"color":"green","placement":"sub"},"verb_MP":{"color":"green","placement":"sub"},"verb_Inf":{"color":"green","placement":"sub"},"verb_Op":{"color":"green","placement":"sub"},"verb_Knj":{"color":"green","placement":"sub"},"verb_Imv":{"color":"green","placement":"sub"},"partizip":{"color":"violett"},"partizip_Pra":{"color":"violett","placement":"sub"},"partizip_Imp":{"color":"violett","placement":"sub"},"partizip_Aor":{"color":"violett","placement":"sub"},"partizip_AorS":{"color":"violett","placement":"sub"},"partizip_Per":{"color":"violett","placement":"sub"},"partizip_Plq":{"color":"violett","placement":"sub"},"partizip_Fu":{"color":"violett","placement":"sub"},"partizip_N":{"color":"violett","placement":"sup"},"partizip_G":{"color":"violett","placement":"sup"},"partizip_D":{"color":"violett","placement":"sup"},"partizip_A":{"color":"violett","placement":"sup"},"partizip_V":{"color":"violett","placement":"sup"},"partizip_Du":{"color":"violett","placement":"sup"},"partizip_Akt":{"color":"violett","placement":"sub"},"partizip_Med":{"color":"violett","placement":"sub"},"partizip_Pas":{"color":"violett","placement":"sub"},"partizip_MP":{"color":"violett","placement":"sub"},"adjektiv":{"color":"blue","placement":"sup"},"adjektiv_N":{"color":"blue","placement":"sup"},"adjektiv_G":{"color":"blue","placement":"sup"},"adjektiv_D":{"color":"blue","placement":"sup"},"adjektiv_A":{"color":"blue","placement":"sup"},"adjektiv_V":{"color":"blue","placement":"sup"},"adjektiv_Du":{"color":"blue","placement":"sup"},"adjektiv_Kmp":{"color":"blue","placement":"sup"},"adjektiv_Sup":{"color":"blue","placement":"sup"},"adverb":{"placement":"sup"},"adverb_Kmp":{"placement":"sup"},"adverb_Sup":{"placement":"sup"},"pronomen":{"placement":"sub"},"pronomen_N":{"placement":"sup"},"pronomen_G":{"placement":"sup"},"pronomen_D":{"placement":"sup"},"pronomen_A":{"placement":"sup"},"pronomen_Du":{"placement":"sup"},"artikel":{"placement":"sup"},"artikel_N":{"placement":"sup"},"artikel_G":{"placement":"sup"},"artikel_D":{"placement":"sup"},"artikel_A":{"placement":"sup"},"artikel_Du":{"placement":"sup"},"prp":{"placement":"sup"},"kon":{"placement":"sup"},"pt":{"placement":"sup"},"ij":{"placement":"sup"}} -->
+<!-- VERSMASS:false -->
+<!-- METER_MODE:without -->
+<!-- HIDE_PIPES:true -->
+==== Apologie des Sokrates ====
+= § 1 =
+(2) Σωκράτους(G) δὲ(Pt) ἄξιόν(Adj)(N) μοι(Pr)(D) δοκεῖ(Prä)(Akt) εἶναι(Prä)(Inf)(Akt) μεμνῆσθαι(Per)(M/P)(Inf) καὶ(Kon) ὡς(Kon) ἐπειδὴ(Kon)
+(2) des|Sokrates/TEST aber/TEST angemessen/TEST mir/TEST scheint/TEST zu|sein/TEST sich|erinnern/TEST und/TEST wie/TEST als/TEST
+(2) of|Socrates but worthy to|me seems to|be to|remember and as since
+(3) ἐκλήθη(Aor)(Pas) εἰς(Prp) τὴν(Art)(A) δίκην(A) ἐβουλεύσατο(Aor)(Med) περί(Prp) τε(Pt) τῆς(Art)(G) ἀπολογίας(G) καὶ(Kon)
+(3) wurde|gerufen/TEST/TEST in den/TEST/TEST Prozess/TEST/TEST beriet|sich/TEST/TEST über und der Verteidigung und
+(3) was|summoned into the trial deliberated about and of the|apology/TEST/TEST and/TEST
+(4) τῆς(Art)(G) τελευτῆς(G) τοῦ(Art)(G) βίου(G). γεγράφασι(Per)(Akt) μὲν(Pt) οὖν(Pt) περὶ(Prp) τούτου(Pr)(G) καὶ(Kon)
+(4) der Ende des Lebens. haben|geschrieben zwar nun über dieses auch
+(4) of the|end of the|life. have|written indeed then about this and
+(5) ἄλλοι(Adj)(N) καὶ(Kon) πάντες(Adj)(N) ἔτυχον(AorS)(Akt) τῆς(Art)(G) μεγαληγορίας(G) αὐτοῦ(Pr)(G)· ᾧ(Pr)(D) καὶ(Kon) δῆλον(Adj)(N)
+(5) andere und alle erlangten der Großrederei seiner· wodurch auch klar
+(5) others and all happened of the|boastfulness of|him· to|which and clear
+(6) ὅτι(Kon) τῷ(Art)(D) ὄντι(Prä)(Akt)(D) οὕτως(Adv) ἐρρήθη(AorS)(Pas) ὑπὸ(Prp) Σωκράτους(G). ἀλλʼ(Kon) ὅτι(Kon) ἤδη(Adv)
+(6) dass dem Seienden so gesagt|wurde von Sokrates. aber dass schon
+(6) that in fact thus it|was|said by Socrates. but that already
+(7) ἑαυτῷ(Pr)(D) ἡγεῖτο(Imp)(Med) αἱρετώτερον(Adj)(A)(Kmp) εἶναι(Prä)(Inf)(Akt) τοῦ(Art)(G) βίου(G) θάνατον(A), τοῦτο(Pr)(A) οὐ(Pt) διεσαφήνισαν(Aor)(Akt)·
+(7) für|sich hielt vorzugs|würdiger zu|sein des Lebens Tod, dies nicht klar|legten·
+(7) to|himself he|was|considering more|preferable to|be than life death, this not they|made|clear·
+(8) ὥστε(Kon) ἀφρονεστέρα(Adj)(N)(Kmp) αὐτοῦ(Pr)(G) φαίνεται(Prä)(M/P) εἶναι(Prä)(Inf)(Akt) ἡ(Art)(N) μεγαληγορία(N).
+(8) so|dass törichter seine scheint zu|sein die Großrederei.
+(8) so|that more|foolish of|him it|appears to|be the boastfulness.
+= § 2 =
+(10) Ἑρμογένης(N) μέντοι(Pt) ὁ(Art)(N) Ἱππονίκου(G) ἑταῖρός(N) τε(Pt) ἦν(Imp)(Akt) αὐτῷ(Pr)(D) καὶ(Kon) ἐξήγγειλε(Aor)(Akt)
+(10) Hermogenes jedoch der des|Hipponikos Gefährte und war ihm und berichtete
+(10) Hermogenes however the of|Hipponicus companion and was to|him and reported
+(11) περὶ(Prp) αὐτοῦ(Pr)(G) τοιαῦτα(Pr)(A) ὥστε(Kon) πρέπουσαν(Prä)(Akt)(A) φαίνεσθαι(Prä)(M/P)(Inf) τὴν(Art)(A) μεγαληγορίαν(A) αὐτοῦ(Pr)(G) τῇ(Art)(D)
+(11) über ihn derartige so|dass angemessen|seiend sich|zeigen die Großrederei seine der
+(11) about him such|things so|that fitting to|appear the boastfulness of|him to|the
+(12) διανοίᾳ(D). ἐκεῖνος(Pr)(N) γὰρ(Pt) ἔφη(Imp)(Akt) ὁρῶν(Prä)(Akt)(N) αὐτὸν(Pr)(A) περὶ(Prp) πάντων(Pr)(G) μᾶλλον(Adv)(Kmp) διαλεγόμενον(Prä)(M/P)(A)
+(12) Gesinnung. jener denn sagte sehend ihn über alles mehr sich|unterhaltend
+(12) mind. that|man for said seeing him about everything more conversing
+(13) ἢ(Kon) περὶ(Prp) τῆς(Art)(G) δίκης(G) εἰπεῖν(AorS)(Akt)(Inf)·
+(13) als über der Prozess zu|sagen·
+(13) than about of the|trial to|say·
+= § 3 =
+(15) οὐκ(Pt) ἐχρῆν(Imp)(Akt) μέντοι(Pt) σκοπεῖν(Prä)(Inf)(Akt), ὦ(ij) Σώκρατες(V), καὶ(Kon) ὅ(Pr)(A) τι(Pr)(A) ἀπολογήσῃ(Aor)(Med)(Knj);
+(15) nicht war|nötig jedoch betrachten, o Sokrates, und was auch|immer du|verteidigst;
+(15) not it|was|necessary however to|consider, O Socrates, and what thing you|may|defend;
+(16) τὸν(Art)(A) δὲ(Pt) τὸ(Art)(A) μὲν(Pt) πρῶτον(Adj)(A) ἀποκρίνασθαι(Aor)(Med)(Inf)· οὐ(Pt) γὰρ(Pt) δοκῶ(Prä)(Akt) σοι(Pr)(D)
+(16) den aber das zwar erste zu|antworten· nicht denn scheine dir
+(16) him but the indeed first to|answer· not for I|seem to|you
+(17) ἀπολογεῖσθαι(Prä)(M/P)(Inf) μελετῶν(Prä)(Akt)(N) διαβεβιωκέναι(Per)(M/P)(Inf); ἐπεὶ(Kon) δʼ(Pt) αὐτὸν(Pr)(A) ἐρέσθαι(AorS)(Med)(Inf)· πῶς(Adv); ὅτι(Kon) οὐδὲν(Pr)(A)
+(17) sich|verteidigen übend|seiend durch|gelebt|haben; weil aber ihn zu|fragen· wie; dass nichts
+(17) to|make|a|defense practicing to|have|lived; since but him to|ask· how; that nothing
+(18) ἄδικον(Adj)(A) διαγεγένημαι(Per)(M/P) ποιῶν(Prä)(Akt)(N)· ἥνπερ(Pr)(A) νομίζω(Prä)(Akt) μελέτην(A) εἶναι(Prä)(Inf)(Akt) καλλίστην(Adj)(A)(Sup) ἀπολογίας(G).
+(18) Unrecht ver|weilt|habe tuend|seiend· welche|gerade meine Übung zu|sein beste der|Verteidigung.
+(18) unjust I|have|been doing· which|indeed I|think practice to|be best of|defense.
+= § 4 =
+(20) ἐπεὶ(Kon) δὲ(Pt) αὐτὸν(Pr)(A) πάλιν(Adv) λέγειν(Prä)(Inf)(Akt)· οὐχ(Pt) ὁρᾷς(Prä)(Akt) τὰ(Art)(A) Ἀθηναίων(G) δικαστήρια(A)
+(20) als aber ihn wieder zu|sagen· nicht siehst die der|Athener Gerichte
+(20) since but him again to|say· not you|see the of|Athenians law|courts
+(21) ὡς(Kon) πολλάκις(Adv) μὲν(Pt) οὐδὲν(Pr)(A) ἀδικοῦντας(Prä)(Akt)(A) λόγῳ(D) παραχθέντες(Aor)(Pas)(N) ἀπέκτειναν(Aor)(Akt), πολλάκις(Adv) δὲ(Pt)
+(21) wie oftmals zwar nichts Unrecht|tuend|seiend durch|Rede ver|leitet|worden|seiend töteten, oftmals aber
+(21) how often indeed nothing doing|wrong by|speech led|astray they|killed, often but
+(22) ἀδικοῦντας(Prä)(Akt)(A) ἢ(Kon) ἐκ(Prp) τοῦ(Art)(G) λόγου(G) οἰκτίσαντες(Aor)(Akt)(N) ἢ(Kon) ἐπιχαρίτως(Adv) εἰπόντας(AorS)(Akt)(A) ἀπέλυσαν(Aor)(Akt);
+(22) Unrecht|tuende oder aus des Wortes bemitleidend|habend oder gefällig gesagt|habende ließen|frei;
+(22) doing|wrong or from the argument having|pitied or graciously having|spoken they|released;
+(23) ἀλλὰ(Kon) ναὶ(Pt) μὰ(Pt) Δία(A), φάναι(Aor)(Akt)(Inf) αὐτόν(Pr)(A), καὶ(Kon) δὶς(Adv) ἤδη(Adv) ἐπιχειρήσαντός(Aor)(Akt)(G)
+(23) sondern ja bei Zeus, sagte er, und zweimal schon versucht|habenden
+(23) but yes by Zeus, saying him, and twice already having|attempted
+(24) μου(Pr)(G) σκοπεῖν(Prä)(Inf)(Akt) περὶ(Prp) τῆς(Art)(G) ἀπολογίας(G) ἐναντιοῦταί(Prä)(M/P) μοι(Pr)(D) τὸ(Art)(N) δαιμόνιον(N).
+(24) meiner zu|betrachten über die Verteidigung widersetzt|sich mir das Daimonion.
+(24) by|me to|consider about of the|defense opposes me the divine|sign.
+= § 5 =
+(26) ὡς(Kon) δὲ(Pt) αὐτὸν(Pr)(A) εἰπεῖν(AorS)(Akt)(Inf)· θαυμαστὰ(Adj)(A) λέγεις(Prä)(Akt), τὸν(Art)(A) δʼ(Pt) αὖ(Pt) ἀποκρίνασθαι(Aor)(Med)(Inf)·
+(26) wie aber ihn zu|sagen· erstaunliche|Dinge sagst, den aber wiederum zu|antworten·
+(26) that but him to|say· wonderful|things you|say, him but again to|answer·
+(27) ἦ(Pt) θαυμαστὸν(Adj)(A) νομίζεις(Prä)(Akt) εἰ(Kon) καὶ(Kon) τῷ(Art)(D) θεῷ(D) δοκεῖ(Prä)(Akt) ἐμὲ(Pr)(A) βέλτιον(Adj)(A)(Kmp)
+(27) etwa erstaunlich meinst wenn auch dem Gott scheint mich besser
+(27) indeed wonderful you|think if even to|the god it|seems me better
+(28) εἶναι(Prä)(Inf)(Akt) ἤδη(Adv) τελευτᾶν(Prä)(Inf)(Akt); οὐκ(Pt) οἶσθα(Per)(Akt) ὅτι(Kon) μέχρι(Prp) μὲν(Pt) τοῦδε(Pr)(G) οὐδενὶ(Pr)(D)
+(28) zu|sein schon zu|enden; nicht weißt dass bis zwar dieses keinem
+(28) to|be already to|die; not you|know that up|to indeed this to|no|one
+(29) ἀνθρώπων(G) ὑφείμην(Aor)(Med)(Op) ⟦ἂν⟧(Pt) βέλτιον(Adj)(A)(Kmp) ἐμοῦ(Pr)(G) βεβιωκέναι(Per)(Akt)(Inf); ὅπερ(Pr)(N) γὰρ(Pt) ἥδιστόν(Adj)(N)(Sup) ἐστιν(Prä)(Akt),
+(29) der|Menschen nach|gegeben|hätte wohl besser ich gelebt|haben; was|gerade denn am|angenehmsten ist,
+(29) of|men I|yielded would better than|me to|have|lived; which for sweetest is,
+(30) ᾔδειν(Plq)(Akt) ὁσίως(Adv) μοι(Pr)(D) καὶ(Kon) δικαίως(Adv) ἅπαντα(Adj)(A) τὸν(Art)(A) βίον(A) βεβιωμένον(Per)(M/P)(A)· ὥστε(Kon)
+(30) ich|wusste fromm mir und gerecht alles|gesamt den Leben gelebt|worden· so|dass
+(30) I|knew piously for|me and justly all the life having|been|lived· so|that
+(31) ἰσχυρῶς(Adv) ἀγάμενος(Prä)(M/P)(N) ἐμαυτὸν(Pr)(A) ταὐτὰ(Adj)(A) ηὕρισκον(Imp)(Akt) καὶ(Kon) τοὺς(Art)(A) ἐμοὶ(Pr)(D) συγγιγνομένους(Prä)(M/P)(A) γιγνώσκοντας(Prä)(Akt)(A)
+(31) stark bewundernd|seiend mich|selbst dieselben|Dinge fand|ich und die mir sich|zusammen|kommenden erkennend|seienden
+(31) strongly admiring myself the|same I|was|finding and the to|me together|associating knowing
+(32) περὶ(Prp) ἐμοῦ(Pr)(G).
+(32) über mich.
+(32) about me.
+= § 6 =
+(34) νῦν(Adv) δὲ(Pt) εἰ(Kon) ἔτι(Adv) προβήσεται(Fu)(Med) ἡ(Art)(N) ἡλικία(N), οἶδʼ(Per)(Akt) ὅτι(Kon) ἀνάγκη(N)
+(34) jetzt aber wenn noch vor|schreiten|wird die Lebenszeit, ich|weiß dass Not|wendigkeit
+(34) now but if still will|advance the age, I|know that necessity
+(35) ἔσται(Fu)(Akt) τὰ(Art)(N) τοῦ(Art)(G) γήρως(G) ἐπιτελεῖσθαι(Prä)(M/P)(Inf) καὶ(Kon) ὁρᾶν(Prä)(Inf)(Akt) τε(Pt) χεῖρον(Adv)(Kmp) καὶ(Kon)
+(35) wird|sein die des Alters sich|vollziehen und zu|sehen und|auch schlechter und
+(35) there|will|be the|things of old|age to|be|fulfilled and to|see and worse and
+(36) ἀκούειν(Prä)(Inf)(Akt) ἧττον(Adv)(Kmp) καὶ(Kon) δυσμαθέστερον(Adj)(A)(Kmp) εἶναι(Prä)(Inf)(Akt) καὶ(Kon) ὧν(Pr)(G) ἔμαθον(AorS)(Akt) ἐπιλησμονέστερον(Adj)(A)(Kmp). ἂν(Pt)
+(36) zu|hören weniger und schwer|erlernbarer zu|sein und derer lernte|ich vergesslicher. wohl
+(36) to|hear less and more|hard|to|learn to|be and of|the|things I|learned more|forgetful. if|ever
+(37) δὲ(Pt) αἰσθάνωμαι(Prä)(M/P)(Knj) χείρων(Adj)(N)(Kmp) γιγνόμενος(Prä)(M/P)(N) καὶ(Kon) καταμέμφωμαι(Prä)(M/P)(Knj) ἐμαυτόν(Pr)(A), πῶς(Adv) ἄν(Pt), εἰπεῖν(AorS)(Akt)(Inf),
+(37) aber wahrnehme schlechter werdend|seiend und tadle mich|selbst, wie wohl, zu|sagen,
+(37) but I|perceive worse becoming and I|blame myself, how would, to|say,
+(38) ἐγὼ(Pr)(N) ἔτι(Adv) ἂν(Pt) ἡδέως(Adv) βιοτεύοιμι(Prä)(Akt)(Op);
+(38) ich noch wohl angenehm lebte|würde;
+(38) I still would pleasantly live;
+= § 7 =
+(40) ἴσως(Adv) δέ(Pt) τοι(Pt), φάναι(Aor)(Akt)(Inf) αὐτόν(Pr)(A), καὶ(Kon) ὁ(Art)(N) θεὸς(N) διʼ(Prp) εὐμένειαν(A)
+(40) vielleicht aber gewiss, sagte er, auch der Gott durch Wohl|wollen
+(40) perhaps but indeed, saying him, and the god through favor
+(41) προξενεῖ(Prä)(Akt) μοι(Pr)(D) οὐ(Pt) μόνον(Adv) τὸ(Art)(N) ἐν(Prp) καιρῷ(D) τῆς(Art)(G) ἡλικίας(G) καταλῦσαι(Aor)(Akt)(Inf)
+(41) bewirkt mir nicht nur das im rechten|Zeitpunkt des Lebensalters auf|lösen
+(41) provides to|me not only the in due|season of age to|bring|to|an|end
+(42) τὸν(Art)(A) βίον(A), ἀλλὰ(Kon) καὶ(Kon) τὸ(Art)(N) ᾗ(Adv) ῥᾷστα(Adv)(Sup). ἂν(Pt) γὰρ(Pt) νῦν(Adv)
+(42) den Leben, sondern auch das auf|welche|Weise am|leichtesten. wohl denn jetzt
+(42) the life, but also the in|which|way most|easily. if indeed now
+(43) κατακριθῇ(Aor)(Pas)(Knj) μου(Pr)(G), δῆλον(Adj)(N) ὅτι(Kon) ἐξέσται(Fu)(M/P) μοι(Pr)(D) τῇ(Art)(D) τελευτῇ(D) χρῆσθαι(Prä)(Med)(Inf) ἣ(Pr)(N)
+(43) verurteilt|werde meiner, klar dass wird|möglich|sein mir der Beendigung zu|gebrauchen welche
+(43) be|condemned me, clear that it|will|be|possible for|me by|the end to|use which
+(44) ῥᾴστη(Adj)(N)(Sup) μὲν(Pt) ὑπὸ(Prp) τῶν(Art)(G) τούτου(Pr)(G) ἐπιμεληθέντων(Aor)(M/P)(G) κέκριται(Per)(M/P), ἀπραγμονεστάτη(Adj)(N)(Sup) δὲ(Pt) τοῖς(Art)(D)
+(44) leichteste zwar von den dieses sich|gekümmert|habenden ist|entschieden|worden, am|wenigsten|mühevoll aber den
+(44) easiest indeed by the of|this having|taken|care has|been|decided, most|trouble|free but for|the
+(45) φίλοις(D), πλεῖστον(Adj)(A)(Sup) δὲ(Pt) πόθον(A) ἐμποιοῦσα(Prä)(Akt)(N) τῶν(Art)(G) τελευτώντων(Prä)(Akt)(G). ὅταν(Kon) γὰρ(Pt) ἄσχημον(Adj)(A)
+(45) Freunden, größten aber Sehnsucht erzeugend|seiend der Sterbenden. wenn|immer denn hässlich|schändlich
+(45) friends, most and longing producing of|the dying. whenever for shameful
+(46) μὲν(Pt) μηδὲν(Pr)(A) μηδὲ(Kon) δυσχερὲς(Adj)(A) ἐν(Prp) ταῖς(Art)(D) γνώμαις(D) τῶν(Art)(G) παρόντων(Prä)(Akt)(G) καταλείπηταί(Prä)(M/P)(Knj)
+(46) zwar nichts und|nicht beschwerliches in den Meinungen der Anwesenden zurück|bleibe
+(46) indeed nothing nor troublesome in the judgments of|the present be|left|behind
+(47) ⟦τις⟧(Pr)(N), ὑγιὲς(Adj)(N) δὲ(Pt) τὸ(Art)(N) σῶμα(N) ἔχων(Prä)(Akt)(N) καὶ(Kon) τὴν(Art)(A) ψυχὴν(A) δυναμένην(Prä)(M/P)(A)
+(47) jemand, gesund aber der Körper habend|seiend und die Seele fähig|seiend
+(47) someone, healthy but the body having and the soul being|able
+(48) φιλοφρονεῖσθαι(Prä)(M/P)(Inf) ἀπομαραίνηται(Prä)(M/P)(Knj), πῶς(Adv) οὐκ(Pt) ἀνάγκη(N) τοῦτον(Pr)(A) ποθεινὸν(Adj)(A) εἶναι(Prä)(Inf)(Akt);
+(48) freundlich|zu|sein dahin|welke, wie nicht Not|wendigkeit diesen begehrenswert zu|sein;
+(48) to|be|courteous waste|away, how not necessity this|man longed|for to|be;
+= § 8 =
+(50) ὀρθῶς(Adv) δὲ(Pt) οἱ(Art)(N) θεοὶ(N) τότε(Adv) μου(Pr)(G) ἠναντιοῦντο(Imp)(M/P), φάναι(Aor)(Akt)(Inf) αὐτόν(Pr)(A), τῇ(Art)(D)
+(50) zu|Recht aber die Götter damals mir widersetzten|sich, sagte er, der
+(50) rightly but the gods then to|me were|opposing, saying him, to|the
+(51) τοῦ(Art)(G) λόγου(G) ἐπισκέψει(D) ὅτε(Kon) ἐδόκει(Imp)(Akt) ἡμῖν(Pr)(D) ζητητέα(Adj)(A) εἶναι(Prä)(Inf)(Akt) ἐκ(Prp) παντὸς(Adj)(G)
+(51) der Überlegung Untersuchung als schien uns zu|suchende zu|sein aus jedem
+(51) of the|speech inquiry when it|seemed to|us things|to|be|sought to|be from every
+(52) τρόπου(G) τὰ(Art)(A) ἀποφευκτικά(Adj)(A). εἰ(Kon) γὰρ(Pt) τοῦτο(Pr)(A) διεπραξάμην(Aor)(Med), δῆλον(Adj)(N) ὅτι(Kon) ἡτοιμασάμην(Aor)(Med)
+(52) Weise die das|zu|Vermeidende. wenn nämlich dies durch|gesetzt|habe, klar dass bereitet|hätte|ich
+(52) way the avoidable|things. if indeed this I|had|brought|to|pass, clear that I|had|prepared
+(53) ἂν(Pt) ἀντὶ(Prp) τοῦ(Art)(G) ἤδη(Adv) λῆξαι(Aor)(Akt)(Inf) τοῦ(Art)(G) βίου(G) ἢ(Kon) νόσοις(D) ἀλγυνόμενος(Prä)(M/P)(N)
+(53) wohl an|statt des schon zu|beenden des Lebens oder durch|Krankheiten Schmerz|leidend|seiend
+(53) would instead|of the already to|cease the life or by|diseases being|pained
+(54) τελευτῆσαι(Aor)(Akt)(Inf) ἢ(Kon) γήρᾳ(D), εἰς(Prp) ὃ(Pr)(A) πάντα(Adj)(A) τὰ(Art)(A) χαλεπὰ(Adj)(A) συρρεῖ(Prä)(Akt) καὶ(Kon)
+(54) zu|sterben oder im|Alter, in welches alle die Schwierigen zusammen|strömt und
+(54) to|end or by|old|age, into which all the troubles flow|together and
+(55) μάλα(Adv) ἔρημα(Adj)(A) τῶν(Art)(G) εὐφροσυνῶν(G).
+(55) sehr entblößt der Freuden.
+(55) very bereft of|the joys.
+= § 9 =
+(57) μὰ(Pt) Δίʼ(A), εἰπεῖν(AorS)(Akt)(Inf) αὐτόν(Pr)(A), ὦ(ij) Ἑρμόγενες(V), ἐγὼ(Pr)(N) ταῦτα(Pr)(A) οὐδὲ(Kon) προθυμήσομαι(Fu)(Med),
+(57) bei Zeus, zu|sagen er, o Hermogenes, ich dies und|nicht mich|bemühen|werde,
+(57) by Zeus, to|say him, O Hermogenes, I these|things not|even I|will|endeavor,
+(58) ἀλλʼ(Kon) ὅσων(Pr)(G) νομίζω(Prä)(Akt) τετυχηκέναι(Per)(Akt)(Inf) καλῶν(Adj)(G) καὶ(Kon) παρὰ(Prp) θεῶν(G) καὶ(Kon) παρʼ(Prp)
+(58) sondern deren meine erlangt|zu|haben Guter und von Göttern und von
+(58) but of|as|many|things I|think to|have|obtained good|things both from gods and from
+(59) ἀνθρώπων(G), καὶ(Kon) ἣν(Pr)(A) ἐγὼ(Pr)(N) δόξαν(A) ἔχω(Prä)(Akt) περὶ(Prp) ἐμαυτοῦ(Pr)(G), ταύτην(Pr)(A) ἀναφαίνων(Prä)(Akt)(N)
+(59) Menschen, auch welche ich Ruf habe über mich|selbst, diese offenbarend|seiend
+(59) men, and which I reputation I|have about myself, this displaying
+(60) εἰ(Kon) βαρυνῶ(Prä)(Akt) τοὺς(Art)(A) δικαστάς(A), αἱρήσομαι(Fu)(Med) τελευτᾶν(Prä)(Inf)(Akt) μᾶλλον(Adv)(Kmp) ἢ(Kon) ἀνελευθέρως(Adv) τὸ(Art)(A)
+(60) wenn beschwere die Richter, wählen|werde zu|enden eher als unfrei das
+(60) if I|burden the judges, I|will|choose to|die rather than slavishly the
+(61) ζῆν(Prä)(Inf)(Akt) ἔτι(Adv) προσαιτῶν(Prä)(Akt)(N) κερδᾶναι(Aor)(Akt)(Inf) τὸν(Art)(A) πολὺ(Adv) χείρω(Adj)(A)(Kmp) βίον(A) ἀντὶ(Prp) θανάτου(G).
+(61) zu|leben noch hinzu|bettelnd|seiend zu|gewinnen den viel schlechteren Leben an|statt des|Todes.
+(61) living still begging|in|addition to|gain the much worse life instead|of death.
+= § 10 =
+(63) οὕτως(Adv) δὲ(Pt) γνόντα(AorS)(Akt)(A) αὐτὸν(Pr)(A) ἔφη(Imp)(Akt) [εἰπεῖν(Akt)(Inf)], ἐπειδὴ(Kon) κατηγόρησαν(Aor)(Akt) αὐτοῦ(Pr)(G) οἱ(Art)(N)
+(63) so aber erkannt|habenden ihn sagte [zu|sagen], als anklagten seiner die
+(63) thus but having|known him he|said [to|say], when they|accused him the
+(64) ἀντίδικοι(N) ὡς(Kon) οὓς(Pr)(A) μὲν(Pt) ἡ(Art)(N) πόλις(N) νομίζει(Prä)(Akt) θεοὺς(A) οὐ(Pt) νομίζοι(Prä)(Akt)(Op),
+(64) Gegenkläger dass welche zwar die Stadt für|Götter|hält Götter nicht hielte,
+(64) adversaries that whom indeed the city considers gods not would|consider,
+(65) ἕτερα(Adj)(A) δὲ(Pt) καινὰ(Adj)(A) δαιμόνια(A) εἰσφέροι(Prä)(Akt)(Op) καὶ(Kon) τοὺς(Art)(A) νέους(Adj)(A) διαφθείροι(Prä)(Akt)(Op), παρελθόντα(AorS)(Akt)(A)
+(65) andere aber neue Daimonien brächte|ein und die Jungen verdürbe, heran|getreten|seiend
+(65) other but new divine|signs would|bring|in and the young|men would|corrupt, having|come|forward
+(66) εἰπεῖν(AorS)(Akt)(Inf)·
+(66) zu|sagen·
+(66) to|say·
+= § 11 =
+(68) ἀλλʼ(Kon) ἐγώ(Pr)(N), ὦ(ij) ἄνδρες(V), τοῦτο(Pr)(A) μὲν(Pt) πρῶτον(Adj)(A) θαυμάζω(Prä)(Akt) Μελήτου(G), ὅτῳ(Pr)(D)
+(68) aber ich, o Männer, dieses zwar zuerst wundere|ich|mich des|Meletos, auf|welchem|Grund
+(68) but I, O men, this indeed first I|marvel of|Meletus, for|what|reason
+(69) ποτὲ(Pt) γνοὺς(AorS)(Akt)(N) λέγει(Prä)(Akt) ὡς(Kon) ἐγὼ(Pr)(N) οὓς(Pr)(A) ἡ(Art)(N) πόλις(N) νομίζει(Prä)(Akt) θεοὺς(A)
+(69) einmal erkannt|habend sagt|er dass ich welche die Stadt hält|für Götter
+(69) ever having|known he|says that I whom the city considers gods
+(70) οὐ(Pt) νομίζω(Prä)(Akt)· ἐπεὶ(Kon) θύοντά(Prä)(Akt)(A) γέ(Pt) με(Pr)(A) ἐν(Prp) ταῖς(Art)(D) κοιναῖς(Adj)(D) ἑορταῖς(D)
+(70) nicht halte|ich· weil opfernd ja mich in den gemeinsamen Festen
+(70) not I|consider· since sacrificing indeed me in the common festivals
+(71) καὶ(Kon) ἐπὶ(Prp) τῶν(Art)(G) δημοσίων(Adj)(G) βωμῶν(G) καὶ(Kon) οἱ(Art)(N) ἄλλοι(Adj)(N) οἱ(Art)(N) παρατυγχάνοντες(Prä)(Akt)(N)
+(71) und an den öffentlichen Altären und die anderen die zufällig|Anwesenden
+(71) and on the public altars and the others the happening|to|be|present
+(72) ἑώρων(Imp)(Akt) καὶ(Kon) αὐτὸς(Pr)(N) Μέλητος(N), εἰ(Kon) ἐβούλετο(Imp)(M/P).
+(72) sahen auch selbst Meletos, wenn er|wollte.
+(72) were|seeing and himself Meletus, if he|was|willing.
+= § 12 =
+(74) καινά(Adj)(A) γε(Pt) μὴν(Pt) δαιμόνια(A) πῶς(Adv) ἂν(Pt) ἐγὼ(Pr)(N) εἰσφέροιμι(Prä)(Akt)(Op) λέγων(Prä)(Akt)(N) ὅτι(Kon)
+(74) neue ja freilich Daimonien wie wohl ich einbrächte sagend dass
+(74) new indeed at|least divine|signs how ever I would|bring|in saying that
+(75) θεοῦ(G) μοι(Pr)(D) φωνὴ(N) φαίνεται(Prä)(M/P) σημαίνουσα(Prä)(Akt)(N) ὅ(Pr)(A) τι(Pr)(A) χρὴ(Prä)(Akt) ποιεῖν(Prä)(Akt)(Inf); καὶ(Kon)
+(75) des|Gottes mir Stimme erscheint anzeigend was auch|immer nötig|ist zu|tun; und
+(75) of|god to|me voice appears signifying what thing it|is|necessary to|do; and
+(76) γὰρ(Pt) οἱ(Art)(N) φθόγγοις(D) οἰωνῶν(G) καὶ(Kon) οἱ(Art)(N) φήμαις(D) ἀνθρώπων(G) χρώμενοι(Prä)(M/P)(N) φωναῖς(D)
+(76) denn die Lauten der|Vogelzeichen und die Aussagen der|Menschen sich|bedienend Stimmen
+(76) for the notes of|omens and the reports of|men using voices
+(77) δήπου(Pt) τεκμαίρονται(Prä)(M/P). βροντὰς(A) δὲ(Pt) ἀμφιλέξει(Fu)(Akt) τις(Pr)(N) ἢ(Kon) μὴ(Pt) φωνεῖν(Prä)(Akt)(Inf) ἢ(Kon)
+(77) wohl schließen|sie. Donner aber wird|streiten jemand oder nicht tönen oder
+(77) surely infer. thunders but will|dispute someone or not to|sound or
+(78) μὴ(Pt) μέγιστον(Adj)(A)(Sup) οἰωνιστήριον(A) εἶναι(Prä)(Akt)(Inf); ἡ(Art)(N) δὲ(Pt) Πυθοῖ(D) ἐν(Prp) τῷ(Art)(D) τρίποδι(D)
+(78) nicht größtes Weissagungs|Zeichen zu|sein; die aber in|Delphi in dem Dreifuß
+(78) not greatest omen|sign to|be; the but at|Pytho in the tripod
+(79) ἱέρεια(N) οὐ(Pt) καὶ(Kon) αὐτὴ(Pr)(N) φωνῇ(D) τὰ(Art)(A) παρὰ(Prp) τοῦ(Art)(G) θεοῦ(G) διαγγέλλει(Prä)(Akt);
+(79) Priesterin nicht auch selbst mit|Stimme die von|seiten des Gottes verkündet;
+(79) priestess not and herself by|voice the|things from the god announces;
+= § 13 =
+(81) ἀλλὰ(Kon) μέντοι(Pt) καὶ(Kon) τὸ(Art)(A) προειδέναι(Per)(Akt)(Inf) γε(Pt) τὸν(Art)(A) θεὸν(A) τὸ(Art)(A) μέλλον(Prä)(Akt)(A)
+(81) aber doch auch das vorher|gewusst|haben ja den Gott das Kommende
+(81) but however and the to|know|beforehand at|least the god the future
+(82) καὶ(Kon) τὸ(Art)(A) προσημαίνειν(Prä)(Akt)(Inf) ᾧ(Pr)(D) βούλεται(Prä)(M/P), καὶ(Kon) τοῦτο(Pr)(A), ὥσπερ(Kon) ἐγώ(Pr)(N) φημι(Prä)(Akt),
+(82) und das vorher|anzeigen wem will, auch dies, so|wie ich sage|ich,
+(82) and the to|fore|signify to|whom he|wishes, and this, just|as I say,
+(83) οὕτω(Adv) πάντες(Adj)(N) καὶ(Kon) λέγουσι(Prä)(Akt) καὶ(Kon) νομίζουσιν(Prä)(Akt). ἀλλʼ(Kon) οἱ(Art)(N) μὲν(Pt) οἰωνούς(A)
+(83) so alle auch sagen und meinen. aber die zwar Vogelzeichen
+(83) thus all and say and think. but the indeed omens
+(84) τε(Pt) καὶ(Kon) φήμας(A) καὶ(Kon) συμβόλους(A) τε(Pt) καὶ(Kon) μάντεις(A) ὀνομάζουσι(Prä)(Akt) τοὺς(Art)(A)
+(84) und auch Gerüchte und Kennzeichen und auch Wahrsager nennen die
+(84) and also reports and tokens and also seers they|name the
+(85) προσημαίνοντας(Prä)(Akt)(A) εἶναι(Prä)(Akt)(Inf), ἐγὼ(Pr)(N) δὲ(Pt) τοῦτο(Pr)(A) δαιμόνιον(A) καλῶ(Prä)(Akt) καὶ(Kon) οἶμαι(Prä)(M/P) οὕτως(Adv)
+(85) vorher|anzeigend|seienden zu|sein, ich aber dies Daimonion nenne|ich und meine|ich so
+(85) fore|signifying to|be, I but this divine|sign I|call and I|think thus
+(86) ὀνομάζων(Prä)(Akt)(N) καὶ(Kon) ἀληθέστερα(Adj)(A)(Kmp) καὶ(Kon) ὁσιώτερα(Adj)(A)(Kmp) λέγειν(Prä)(Akt)(Inf) τῶν(Art)(G) τοῖς(Art)(D) ὄρνισιν(D) ἀνατιθέντων(Prä)(Akt)(G)
+(86) benennend und wahrer und frommer zu|sagen der den Vögeln zuschreibenden
+(86) naming and more|true and more|holy to|say of|the to|the birds ascribing
+(87) τὴν(Art)(A) τῶν(Art)(G) θεῶν(G) δύναμιν(A). ὥς(Kon) γε(Pt) μὴν(Pt) οὐ(Pt) ψεύδομαι(Prä)(M/P) κατὰ(Prp)
+(87) die der Götter Macht. so ja gewiss nicht lüge|ich gegen
+(87) the of|the gods power. thus indeed at|least not I|lie against
+(88) τοῦ(Art)(G) θεοῦ(G) καὶ(Kon) τοῦτʼ(Pr)(A) ἔχω(Prä)(Akt) τεκμήριον(A)· καὶ(Kon) γὰρ(Pt) τῶν(Art)(G) φίλων(G)
+(88) des Gottes auch dies habe|ich Beweis· und denn der Freunde
+(88) the god and this I|have evidence· and for of|the friends
+(89) πολλοῖς(Adj)(D) δὴ(Pt) ἐξαγγείλας(Aor)(Akt)(N) τὰ(Art)(A) τοῦ(Art)(G) θεοῦ(G) συμβουλεύματα(A) οὐδεπώποτε(Adv) ψευσάμενος(Aor)(M/P)(N) ἐφάνην(AorS)(M/P).
+(89) vielen ja heraus|verkündet|habend die des Gottes Ratschläge niemals gelogen|habend erschien|ich.
+(89) to|many indeed having|announced the of|the god counsels never|yet having|lied I|appeared.
+= § 14 =
+(91) ἐπεὶ(Kon) δὲ(Pt) ταῦτα(Pr)(A) ἀκούοντες(Prä)(Akt)(N) οἱ(Art)(N) δικασταὶ(N) ἐθορύβουν(Imp)(Akt), οἱ(Art)(N) μὲν(Pt) ἀπιστοῦντες(Prä)(Akt)(N)
+(91) als aber dieses hörend die Richter murrten, die zwar misstrauend
+(91) since but these|things hearing the judges were|clamoring, the indeed disbelieving
+(92) τοῖς(Art)(D) λεγομένοις(Prä)(M/P)(D), οἱ(Art)(N) δὲ(Pt) καὶ(Kon) φθονοῦντες(Prä)(Akt)(N), εἰ(Kon) καὶ(Kon) παρὰ(Prp) θεῶν(G)
+(92) den Gesagten, die aber auch neidend, wenn auch von|seiten der|Götter
+(92) the to|the|things|being|said, and the also envying, if even from gods
+(93) μειζόνων(Adj)(G)(Kmp) ἢ(Kon) αὐτοὶ(Pr)(N) τυγχάνοι(Prä)(Akt)(Op), πάλιν(Adv) εἰπεῖν(AorS)(Akt)(Inf) τὸν(Art)(A) Σωκράτην(A)· ἄγε(Imv) δὴ(Pt)
+(93) größerer als sie|selbst erlangten|würden, wieder zu|sagen den Sokrates· auf ja
+(93) greater than themselves might|happen, again to|say the Socrates· come indeed
+(94) ἀκούσατε(Aor)(Akt)(Imv) καὶ(Kon) ἄλλα(Adj)(A), ἵνα(Kon) ἔτι(Adv) μᾶλλον(Adv)(Kmp) οἱ(Art)(N) βουλόμενοι(Prä)(M/P)(N) ὑμῶν(Pr)(G) ἀπιστῶσι(Prä)(Akt)(Knj)
+(94) hört auch anderes, damit noch mehr die Wollenden von|euch nicht|glauben
+(94) hear and other|things, in|order|that yet more the willing of|you may|disbelieve
+(95) τῷ(Art)(D) ἐμὲ(Pr)(A) τετιμῆσθαι(Per)(M/P)(Inf) ὑπὸ(Prp) δαιμόνων(G). Χαιρεφῶντος(G) γάρ(Pt) ποτε(Pt) ἐπερωτῶντος(Prä)(Akt)(G) ἐν(Prp)
+(95) dem mich geehrt|zu|sein von Daimonien. Chairephon|des denn einmal fragend in
+(95) in|the me to|have|been|honored by daimons. of|Chaerephon for once asking in
+(96) Δελφοῖς(D) περὶ(Prp) ἐμοῦ(Pr)(G) πολλῶν(Adj)(G) παρόντων(Prä)(Akt)(G) ἀνεῖλεν(AorS)(Akt) ὁ(Art)(N) Ἀπόλλων(N) μηδένα(Pr)(A) εἶναι(Prä)(Akt)(Inf)
+(96) Delphi über mich vieler Anwesenden erklärte der Apollon niemanden zu|sein
+(96) Delphi about me of|many being|present declared the Apollo no|one to|be
+(97) ἀνθρώπων(G) ἐμοῦ(Pr)(G) μήτε(Kon) ἐλευθεριώτερον(Adj)(A)(Kmp) μήτε(Kon) δικαιότερον(Adj)(A)(Kmp) μήτε(Kon) σωφρονέστερον(Adj)(A)(Kmp).
+(97) der|Menschen als|mich weder freier noch gerechter noch besonnener.
+(97) of|men than|me neither more|free neither more|just neither more|self|controlled.
+= § 15 =
+(99) ὡς(Kon) δʼ(Pt) αὖ(Pt) ταῦτʼ(Pr)(A) ἀκούσαντες(Aor)(Akt)(N) οἱ(Art)(N) δικασταὶ(N) ἔτι(Adv) μᾶλλον(Adv)(Kmp) εἰκότως(Adv)
+(99) als aber wiederum dieses gehört|habend die Richter noch mehr wohl
+(99) when but again these|things having|heard the judges yet more reasonably
+(100) ἐθορύβουν(Imp)(Akt), αὖθις(Adv) εἰπεῖν(AorS)(Akt)(Inf) τὸν(Art)(A) Σωκράτην(A)· ἀλλὰ(Kon) μείζω(Adj)(A)(Kmp) μέν(Pt), ὦ(ij) ἄνδρες(V),
+(100) murrten, wiederum zu|sagen den Sokrates· aber Größeres zwar, o Männer,
+(100) were|clamoring, again to|say the Socrates· but greater indeed, O men,
+(101) εἶπεν(AorS)(Akt) ὁ(Art)(N) θεὸς(N) ἐν(Prp) χρησμοῖς(D) περὶ(Prp) Λυκούργου(G) τοῦ(Art)(G) Λακεδαιμονίοις(Adj)(D) νομοθετήσαντος(Aor)(Akt)(G)
+(101) sagte der Gott in Orakeln über des|Lykurg der Lakedaimoniern Gesetze|gegeben|habenden
+(101) said the god in oracles about Lycurgus the for|the|Lacedaemonians having|legislated
+(102) ἢ(Kon) περὶ(Prp) ἐμοῦ(Pr)(G). λέγεται(Prä)(M/P) γὰρ(Pt) εἰς(Prp) τὸν(Art)(A) ναὸν(A) εἰσιόντα(Prä)(Akt)(A) προσειπεῖν(AorS)(Akt)(Inf)
+(102) als über mich. wird|gesagt denn in|den den Tempel hinein|gehend vorher|anreden
+(102) than about me. it|is|said for into the temple entering to|address
+(103) αὐτόν(Pr)(A)· φροντίζω(Prä)(Akt) πότερα(Kon) θεόν(A) σε(Pr)(A) εἴπω(AorS)(Akt)(Knj) ἢ(Kon) ἄνθρωπον(A). ἐμὲ(Pr)(A) δὲ(Pt)
+(103) ihn· ich|überlege ob Gott dich nenne|ich oder Menschen. mich aber
+(103) him· I|consider whether god you I|should|say or man. me but
+(104) θεῷ(D) μὲν(Pt) οὐκ(Pt) εἴκασεν(Aor)(Akt), ἀνθρώπων(G) δὲ(Pt) πολλῷ(Adj)(D) προέκρινεν(Aor)(Akt) ὑπερφέρειν(Prä)(Akt)(Inf). ὅμως(Adv)
+(104) einem|Gott zwar nicht ähnelte|er|an, der|Menschen aber um|vieles voraus|entschied zu|übertreffen. dennoch
+(104) to|a|god indeed not likened, but of|men by|much preferred to|excel. nevertheless
+(105) δὲ(Pt) ὑμεῖς(Pr)(N) μηδὲ(Kon) ταῦτʼ(Pr)(A) εἰκῇ(Adv) πιστεύσητε(Aor)(Akt)(Knj) τῷ(Art)(D) θεῷ(D), ἀλλὰ(Kon) καθʼ(Prp)
+(105) aber ihr auch|nicht dieses ohne|Grund glaubt dem Gott, sondern nach
+(105) but you not|even these|things at|random you|should|believe the god, but according|to
+(106) ἓν(Pr)(A) ἕκαστον(Adj)(A) ἐπισκοπεῖτε(Prä)(Akt)(Imv) ὧν(Pr)(G) εἶπεν(AorS)(Akt) ὁ(Art)(N) θεός(N).
+(106) eins jedes prüft was|von|denen sagte der Gott.
+(106) one each examine of|which he|said the god.
+= § 16 =
+(108) τίνα(Pr)(A) μὲν(Pt) γὰρ(Pt) ἐπίστασθε(Prä)(M/P) ἧττον(Adv)(Kmp) ἐμοῦ(Pr)(G) δουλεύοντα(Prä)(Akt)(A) ταῖς(Art)(D) τοῦ(Art)(G) σώματος(G)
+(108) wen zwar denn wisst|ihr weniger als|mir dienend den des Körpers
+(108) whom indeed for you|know less than|me serving the of|the body
+(109) ἐπιθυμίαις(D); τίνα(Pr)(A) δὲ(Pt) ἀνθρώπων(G) ἐλευθεριώτερον(Adj)(A)(Kmp), ὃς(Pr)(N) παρʼ(Prp) οὐδενὸς(Pr)(G) οὔτε(Kon) δῶρα(A)
+(109) Begierden; wen aber der|Menschen freier, der von niemandem weder Gaben
+(109) desires; whom but of|men more|free, who from no|one neither gifts
+(110) οὔτε(Kon) μισθὸν(A) δέχομαι(Prä)(M/P); δικαιότερον(Adj)(A)(Kmp) δὲ(Pt) τίνα(Pr)(A) ἂν(Pt) εἰκότως(Adv) νομίσαιτε(Aor)(Akt)(Op) τοῦ(Art)(G)
+(110) noch Lohn nehme|ich|an; gerechter aber wen wohl mit|Grund würdet|halten für|den
+(110) nor pay I|receive; more|just but whom ever reasonably you|would|think of|the
+(111) πρὸς(Prp) τὰ(Art)(A) παρόντα(Prä)(Akt)(A) συνηρμοσμένου(Per)(M/P)(G), ὡς(Kon) τῶν(Art)(G) ἀλλοτρίων(Adj)(G) μηδενὸς(Pr)(G) προσδεῖσθαι(Prä)(M/P)(Inf); σοφὸν(Adj)(A)
+(111) zu den gegenwärtigen angepaßten, so|dass der Fremden nichts bedarf|zu|sein; weise
+(111) to the present|things having|been|fitted, as of|the alien|things of|nothing to|need; wise
+(112) δὲ(Pt) πῶς(Adv) οὐκ(Pt) ἄν(Pt) τις(Pr)(N) εἰκότως(Adv) ἄνδρα(A) φήσειεν(Aor)(Akt)(Op) εἶναι(Prä)(Akt)(Inf) ὃς(Pr)(N)
+(112) aber wie nicht wohl jemand mit|Grund Mann würde|nennen zu|sein der
+(112) but how not ever someone reasonably a|man would|say to|be who
+(113) ἐξ(Prp) ὅτουπερ(Pr)(G) ξυνιέναι(Prä)(Akt)(Inf) τὰ(Art)(A) λεγόμενα(Prä)(M/P)(A) ἠρξάμην(Aor)(M/P) οὐπώποτε(Adv) διέλειπον(Imp)(Akt) καὶ(Kon) ζητῶν(Prä)(Akt)(N)
+(113) aus seit|dem|Zeitpunkt verstehen die Gesagten begann|ich niemals ließ|ich|nach und suchend
+(113) from since|the|time to|understand the things|being|said I|began never I|was|ceasing and seeking
+(114) καὶ(Kon) μανθάνων(Prä)(Akt)(N) ὅ(Pr)(A) τι(Pr)(A) ἐδυνάμην(Imp)(M/P) ἀγαθόν(Adj)(A);
+(114) und lernend was auch|immer konnte|ich Gutes;
+(114) and learning what thing I|was|able good;
+= § 17 =
+(116) ὡς(Kon) δὲ(Pt) οὐ(Pt) μάτην(Adv) ἐπόνουν(Imp)(Akt) οὐ(Pt) δοκεῖ(Prä)(Akt) ὑμῖν(Pr)(D) καὶ(Kon) τάδε(Pr)(A)
+(116) dass aber nicht vergeblich mühte|ich|mich nicht scheint euch auch dieses|hier
+(116) that but not vainly I|was|toiling not it|seems to|you even these
+(117) τεκμήρια(A) εἶναι(Prä)(Akt)(Inf), τὸ(Art)(A) πολλοὺς(Adj)(A) μὲν(Pt) πολίτας(A) τῶν(Art)(G) ἀρετῆς(G) ἐφιεμένων(Prä)(M/P)(G), πολλοὺς(Adj)(A)
+(117) Beweise zu|sein, das viele zwar Bürger der Tugend strebenden, viele
+(117) proofs to|be, the many indeed citizens of|the virtue striving|after, many
+(118) δὲ(Pt) ξένων(G), ἐκ(Prp) πάντων(Adj)(G) προαιρεῖσθαι(Prä)(M/P)(Inf) ἐμοὶ(Pr)(D) ξυνεῖναι(Prä)(Akt)(Inf); ἐκείνου(Pr)(G) δὲ(Pt) τί(Pr)(A)
+(118) aber Fremder, aus allen vorzuziehen mir beizuwohnen; dessen aber was
+(118) but of|foreigners, from all to|choose for|me to|be|with; of|that|man but what
+(119) φήσομεν(Fu)(Akt) αἴτιον(Adj)(A) εἶναι(Prä)(Akt)(Inf), τοῦ(Art)(G) πάντας(Pr)(A) εἰδέναι(Per)(Akt)(Inf) ὅτι(Kon) ἐγὼ(Pr)(N) ἥκιστʼ(Adv)(Sup) ἂν(Pt)
+(119) werden|wir|sagen Ursache zu|sein, dafür|dass alle gewusst|zu|haben dass ich am|wenigsten wohl
+(119) shall|we|say cause to|be, of|the everyone to|have|known that I least ever
+(120) ἔχοιμι(Prä)(Akt)(Op) χρήματα(A) ἀντιδιδόναι(Prä)(Akt)(Inf), ὅμως(Adv) πολλοὺς(Adj)(A) ἐπιθυμεῖν(Prä)(Akt)(Inf) ἐμοί(Pr)(D) τι(Pr)(A) δωρεῖσθαι(Prä)(M/P)(Inf); τὸ(Art)(A)
+(120) hätte|ich Geld zurück|zu|geben, dennoch viele begehren mir etwas zu|schenken; das
+(120) I|might|have money to|give|in|return, nevertheless many to|desire for|me something to|grant; the
+(121) δʼ(Pt) ἐμὲ(Pr)(A) μὲν(Pt) μηδʼ(Kon) ὑφʼ(Prp) ἑνὸς(Pr)(G) ἀπαιτεῖσθαι(Prä)(M/P)(Inf) εὐεργεσίας(G), ἐμοὶ(Pr)(D) δὲ(Pt)
+(121) aber mich zwar auch|nicht von einem zu|fordern|sein Wohltaten, mir aber
+(121) but me indeed not|even by one to|be|demanded benefactions, for|me but
+(122) πολλοὺς(Adj)(A) ὁμολογεῖν(Prä)(Akt)(Inf) χάριτας(A) ὀφείλειν(Prä)(Akt)(Inf);
+(122) viele einzuräumen Dankbarkeiten zu|schulden;
+(122) many to|acknowledge favors to|owe;
+= § 18 =
+(124) τὸ(Art)(A) δʼ(Pt) ἐν(Prp) τῇ(Art)(D) πολιορκίᾳ(D) τοὺς(Art)(A) μὲν(Pt) ἄλλους(Adj)(A) οἰκτίρειν(Prä)(Akt)(Inf) ἑαυτούς(Pr)(A),
+(124) das aber in der Belagerung die zwar anderen zu|beklagen sich|selbst,
+(124) the but in the siege the indeed others to|pity themselves,
+(125) ἐμὲ(Pr)(A) δὲ(Pt) μηδὲν(Pr)(A) ἀπορώτερον(Adj)(A)(Kmp) διάγειν(Prä)(Akt)(Inf) ἢ(Kon) ὅτε(Kon) τὰ(Art)(A) μάλιστα(Adv)(Sup) ἡ(Art)(N)
+(125) mich aber nichts ratloser zu|verbringen als als die meisten die
+(125) me but nothing more|perplexed to|live than when the most the
+(126) πόλις(N) ηὐδαιμόνει(Imp)(Akt); τὸ(Art)(A) δὲ(Pt) τοὺς(Art)(A) ἄλλους(Adj)(A) μὲν(Pt) τὰς(Art)(A) εὐπαθείας(A) ἐκ(Prp)
+(126) die|Stadt war|glücklich; das aber die anderen zwar die Annehmlichkeiten aus
+(126) city was|prosperous; the but the others indeed the comforts from
+(127) τῆς(Art)(G) ἀγορᾶς(G) πολυτελεῖς(Adj)(A) πορίζεσθαι(Prä)(M/P)(Inf), ἐμὲ(Pr)(A) δὲ(Pt) ἐκ(Prp) τῆς(Art)(G) ψυχῆς(G) ἄνευ(Prp)
+(127) der Markt kostspielige sich|beschaffen, mich aber aus der Seele ohne
+(127) of the|market costly to|procure|for|oneself, me but from the soul without
+(128) δαπάνης(G) ἡδίους(Adj)(A)(Kmp) ἐκείνων(Pr)(G) μηχανᾶσθαι(Prä)(M/P)(Inf); εἴ(Kon) γε(Pt) μὴν(Pt) ὅσα(Pr)(A) εἴρηκα(Per)(Akt) περὶ(Prp)
+(128) Kosten angenehmere jener aus|denken; wenn ja freilich alles|was ich|habe|gesagt über
+(128) of|expense more|pleasant of|those to|devise; if at|least indeed as|many|things I|have|said about
+(129) ἐμαυτοῦ(Pr)(G) μηδεὶς(Pr)(N) δύναιτʼ(Prä)(M/P)(Op) ἂν(Pt) ἐξελέγξαι(Aor)(Akt)(Inf) με(Pr)(A) ὡς(Kon) ψεύδομαι(Prä)(M/P), πῶς(Adv) οὐκ(Pt)
+(129) meiner|selbst niemand könnte wohl wider|legen mich dass ich|lüge, wie nicht
+(129) of|myself no|one could ever to|refute me that I|lie, how not
+(130) ἂν(Pt) ἤδη(Adv) δικαίως(Adv) καὶ(Kon) ὑπὸ(Prp) θεῶν(G) καὶ(Kon) ὑπʼ(Prp) ἀνθρώπων(G) ἐπαινοίμην(Prä)(M/P)(Op);
+(130) wohl schon gerecht und von Göttern und von Menschen würde|gepriesen|werden;
+(130) ever already justly and by the|gods and by the|men I|would|be|praised;
+= § 19 =
+(132) ἀλλʼ(Kon) ὅμως(Adv) σύ(Pr)(N) με(Pr)(A) φῄς(Prä)(Akt), ὦ(ij) Μέλητε(V), τοιαῦτα(Pr)(A) ἐπιτηδεύοντα(Prä)(Akt)(A) τοὺς(Art)(A)
+(132) aber dennoch du mich sagst, o Meletos, derartige betreibend die
+(132) but nevertheless you me you|say, O Meletus, such practicing the
+(133) νέους(Adj)(A) διαφθείρειν(Prä)(Akt)(Inf); καίτοι(Kon) ἐπιστάμεθα(Prä)(M/P) μὲν(Pt) δήπου(Pt) τίνες(Pr)(N) εἰσὶ(Prä)(Akt) νέων(Adj)(G) διαφθοραί(N)·
+(133) Jungen verderben; und|doch wir|wissen zwar wohl welche sind der|Jungen Verderbnisse·
+(133) young|men to|corrupt; and|yet we|know indeed surely who are of|young|men corruptions·
+(134) σὺ(Pr)(N) δὲ(Pt) εἰπὲ(Aor)(Akt)(Imv) εἴ(Kon) τινα(Pr)(A) οἶσθα(Per)(Akt) ὑπʼ(Prp) ἐμοῦ(Pr)(G) γεγενημένον(Per)(M/P)(A) ἢ(Kon)
+(134) du aber sage ob irgendeinen weißt von mir geworden|seiend oder
+(134) you but say if anyone you|know by me having|become or
+(135) ἐξ(Prp) εὐσεβοῦς(Adj)(G) ἀνόσιον(Adj)(A) ἢ(Kon) ἐκ(Prp) σώφρονος(Adj)(G) ὑβριστὴν(A) ἢ(Kon) ἐξ(Prp) εὐδιαίτου(Adj)(G)
+(135) aus frommen unheiligen oder aus besonnenen Frevler oder aus genügsamen
+(135) out|of pious impious or out|of self|controlled wanton or out|of well|living
+(136) πολυδάπανον(Adj)(A) ἢ(Kon) [ὡς] ἐκ(Prp) μετριοπότου(Adj)(G) οἰνόφλυγα(A) ἢ(Kon) ἐκ(Prp) φιλοπόνου(Adj)(G) μαλακὸν(Adj)(A)
+(136) verschwenderischen oder [wie] aus maßvoll|trinkenden Wein|Säufer oder aus arbeits|liebenden weichlichen
+(136) much|spending or [as] out|of moderate|drinking wine|bibber or out|of loving|work soft
+(137) ἢ(Kon) ἄλλης(Adj)(G) πονηρᾶς(Adj)(G) ἡδονῆς(G) ἡττημένον(Per)(M/P)(A).
+(137) oder anderer schlechter Lust besiegt|seiend.
+(137) or other evil of|pleasure having|been|defeated.
+= § 20 =
+(139) ἀλλὰ(Kon) ναὶ(Pt) μὰ(Pt) Δίʼ(A), ἔφη(Imp)(Akt) ὁ(Art)(N) Μέλητος(N), ἐκείνους(Pr)(A) οἶδα(Per)(Akt) οὓς(Pr)(A)
+(139) aber ja bei Zeus, sagte der Meletos, jene ich|weiß die
+(139) but yes by Zeus, he|was|saying the Meletus, those I|know whom
+(140) σὺ(Pr)(N) πέπεικας(Per)(Akt) σοὶ(Pr)(D) πείθεσθαι(Prä)(M/P)(Inf) μᾶλλον(Adv)(Kmp) ἢ(Kon) τοῖς(Art)(D) γειναμένοις(Aor)(M/P)(D). ὁμολογῶ(Prä)(Akt), φάναι(Aor)(Akt)(Inf)
+(140) du hast|überzeugt dir zu|gehorchen mehr als den geboren|habenden. ich|gebe|zu, zu|sagen
+(140) you you|have|persuaded to|you to|obey more than the having|begotten. I|agree, to|say
+(141) τὸν(Art)(A) Σωκράτην(A), περί(Prp) γε(Pt) παιδείας(G)· τοῦτο(Pr)(N) γὰρ(Pt) ἴσασιν(Per)(Akt) ἐμοὶ(Pr)(D) μεμεληκός(Per)(Akt)(N).
+(141) den Sokrates, über ja Erziehung· dies denn sie|wissen mir gelegen|gewesen.
+(141) the Socrates, about at|least education· this for they|know to|me having|been|a|care.
+(142) περὶ(Prp) δὲ(Pt) ὑγιείας(G) τοῖς(Art)(D) ἰατροῖς(D) μᾶλλον(Adv)(Kmp) οἱ(Art)(N) ἄνθρωποι(N) πείθονται(Prä)(M/P) ἢ(Kon)
+(142) über aber Gesundheit den Ärzten mehr die Menschen gehorchen als
+(142) about but health to|the physicians more the men are|persuaded than
+(143) τοῖς(Art)(D) γονεῦσι(D)· καὶ(Kon) ἐν(Prp) ταῖς(Art)(D) ἐκκλησίαις(D) γε(Pt) πάντες(Adj)(N) δήπου(Pt) οἱ(Art)(N)
+(143) den Eltern· und in den Versammlungen ja alle wohl die
+(143) the parents· and in the assemblies at|least all surely the
+(144) Ἀθηναῖοι(N) τοῖς(Art)(D) φρονιμώτατα(Adv)(Sup) λέγουσι(Prä)(Akt)(D) πείθονται(Prä)(M/P) μᾶλλον(Adv)(Kmp) ἢ(Kon) τοῖς(Art)(D) προσήκουσιν(Prä)(Akt)(D). οὐ(Pt)
+(144) Athener den am|verständigsten sprechend gehorchen mehr als den zu|gehörigen. nicht
+(144) Athenians the most|prudently speaking are|persuaded more than the belonging. not
+(145) γὰρ(Pt) δὴ(Pt) καὶ(Kon) στρατηγοὺς(A) αἱρεῖσθε(Prä)(M/P) καὶ(Kon) πρὸ(Prp) πατέρων(G) καὶ(Kon) πρὸ(Prp)
+(145) denn ja auch Feldherren wählt und vor Vätern und vor
+(145) for indeed and generals you|choose and before fathers and before
+(146) ἀδελφῶν(G), καὶ(Kon) ναὶ(Pt) μὰ(Pt) Δία(A) γε(Pt) ὑμεῖς(Pr)(N) πρὸ(Prp) ὑμῶν(Pr)(G) αὐτῶν(Pr)(G),
+(146) Brüdern, und ja bei Zeus gewiss ihr vor euch selbst,
+(146) brothers, and yes by Zeus at|least you before you selves,
+(147) οὓς(Pr)(A) ἂν(Pt) ἡγῆσθε(Prä)(Med)(Knj) περὶ(Prp) τῶν(Art)(G) πολεμικῶν(Adj)(G) φρονιμωτάτους(Adj)(A)(Sup) εἶναι(Prä)(Inf)(Akt); οὕτω(Adv) γάρ(Pt),
+(147) die je haltet in|Bezug|auf die kriegerischen verständigsten zu|sein; so denn,
+(147) whom ever you|may|consider about the warlike|matters most|prudent to|be; thus for,
+(148) φάναι(Aor)(Akt)(Inf) τὸν(Art)(A) Μέλητον(A), ὦ(ij) Σώκρατες(V), καὶ(Kon) συμφέρει(Prä)(Akt) καὶ(Kon) νομίζεται(Prä)(M/P).
+(148) zu|sagen den Meletos, o Sokrates, und nützt und gilt|als.
+(148) to|say the Meletus, O Socrates, and it|is|expedient and it|is|held.
+= § 21 =
+(150) οὐκοῦν(Kon), εἰπεῖν(AorS)(Akt)(Inf) τὸν(Art)(A) Σωκράτην(A), θαυμαστὸν(Adj)(N) καὶ(Kon) τοῦτό(Pr)(N) σοι(Pr)(D) δοκεῖ(Prä)(Akt) εἶναι(Prä)(Inf)(Akt),
+(150) folglich, zu|sagen den Sokrates, erstaunlich auch dies dir scheint zu|sein,
+(150) therefore, to|say the Socrates, strange and this to|you it|seems to|be,
+(151) τὸ(Art)(N) ἐν(Prp) μὲν(Pt) ταῖς(Art)(D) ἄλλαις(Adj)(D) πράξεσι(D) μὴ(Pt) μόνον(Adv) ἰσομοιρίας(G) τυγχάνειν(Prä)(Akt)(Inf)
+(151) das in zwar den anderen Handlungen nicht nur Gleichanteils zu|erlangen
+(151) the in indeed the other actions not only of|equal|share to|obtain
+(152) τοὺς(Art)(A) κρατίστους(Adj)(A)(Sup), ἀλλὰ(Kon) καὶ(Kon) προτετιμῆσθαι(Per)(M/P)(Inf), ἐμὲ(Pr)(A) δέ(Pt), ⟦ὅτι⟧(Kon) περὶ(Prp) τοῦ(Art)(G)
+(152) die Besten, sondern auch vor|gezogen|zu|sein, mich aber, dass über das
+(152) the best, but also to|have|been|preferred, me but, ⟦that⟧ about of
+(153) μεγίστου(Adj)(G)(Sup) ἀγαθοῦ(Adj)(G) ἀνθρώποις(D) περὶ(Prp) παιδείας(G), βέλτιστος(Adj)(N)(Sup) εἶναι(Prä)(Inf)(Akt) ὑπό(Prp) τινων(Pr)(G) προκρίνομαι(Prä)(M/P),
+(153) größten Gutes Menschen in|Bezug|auf Erziehung, Beste zu|sein von einigen werde|vorgezogen,
+(153) greatest good to|men about education, best to|be by some I|am|preferred,
+(154) τούτου(Pr)(G) ἕνεκα(Prp) θανάτου(G) ὑπὸ(Prp) σοῦ(Pr)(G) διώκεσθαι(Prä)(M/P)(Inf);
+(154) dessen um|willen des|Todes von dir verfolgt|zu|werden;
+(154) of|this on|account|of death by you to|be|prosecuted;
+= § 22 =
+(156) ἐρρήθη(Aor)(Pas) μὲν(Pt) δῆλον(Adj)(N) ὅτι(Kon) τούτων(Pr)(G) πλείω(Adj)(A)(Kmp) ὑπό(Prp) τε(Pt) αὐτοῦ(Pr)(G) καὶ(Kon)
+(156) wurde|gesagt zwar klar dass dieser mehreres von und ihm auch
+(156) it|was|said indeed clear that of|these more by and him and
+(157) τῶν(Art)(G) συναγορευόντων(Prä)(Akt)(G) φίλων(G) αὐτῷ(Pr)(D). ἀλλʼ(Kon) ἐγὼ(Pr)(N) οὐ(Pt) τὰ(Art)(A) πάντα(Adj)(A) εἰπεῖν(AorS)(Akt)(Inf)
+(157) der mit|redenden Freunde ihm. aber ich nicht die alles zu|sagen
+(157) of|the speaking|together friends to|him. but I not the all to|say
+(158) τὰ(Art)(A) ἐκ(Prp) τῆς(Art)(G) δίκης(G) ἐσπούδασα(Aor)(Akt), ἀλλʼ(Kon) ἤρκεσέ(Aor)(Akt) μοι(Pr)(D) δηλῶσαι(Aor)(Akt)(Inf) ὅτι(Kon)
+(158) das aus der Gericht bemühte|ich|mich, sondern genügte mir zu|zeigen dass
+(158) the out|of of the|trial I|was|earnest, but it|sufficed to|me to|make|clear that
+(159) Σωκράτης(N) τὸ(Art)(A) μὲν(Pt) μήτε(Kon) περὶ(Prp) θεοὺς(A) ἀσεβῆσαι(Aor)(Akt)(Inf) μήτε(Kon) περὶ(Prp) ἀνθρώπους(A)
+(159) Sokrates das zwar weder gegenüber Götter gottlos|handeln noch gegenüber Menschen
+(159) Socrates the indeed neither about gods to|act|impiously nor about men
+(160) ἄδικος(Adj)(N) φανῆναι(Aor)(Pas)(Inf) περὶ(Prp) παντὸς(Adj)(G) ἐποιεῖτο(Imp)(M/P)·
+(160) ungerecht zu|erscheinen um alles machte|er|sich·
+(160) unjust to|appear about of|everything he|was|making·
+= § 23 =
+(162) τὸ(Art)(N) δὲ(Pt) μὴ(Pt) ἀποθανεῖν(Aor)(Akt)(Inf) οὐκ(Pt) ᾤετο(Imp)(M/P) λιπαρητέον(Adj)(N) εἶναι(Prä)(Inf)(Akt), ἀλλὰ(Kon) καὶ(Kon)
+(162) das aber nicht zu|sterben nicht meinte zu|erflehen zu|sein, sondern auch
+(162) the but not to|die not he|was|thinking to|be|begged|for to|be, but and
+(163) καιρὸν(A) ἤδη(Adv) ἐνόμιζεν(Imp)(Akt) ἑαυτῷ(Pr)(D) τελευτᾶν(Prä)(Akt)(Inf). ὅτι(Kon) δὲ(Pt) οὕτως(Adv) ἐγίγνωσκε(Imp)(Akt) καταδηλότερον(Adj)(A)(Kmp)
+(163) rechten|Zeitpunkt schon hielt für|sich zu|enden. dass aber so erkannte offenkundiger
+(163) right|time already he|was|thinking for|himself to|end. that but thus he|was|knowing more|evidently
+(164) ἐγένετο(AorS)(M/P), ἐπειδὴ(Kon) καὶ(Kon) ἡ(Art)(N) δίκη(N) κατεψηφίσθη(Aor)(Pas). πρῶτον(Adv) μὲν(Pt) γὰρ(Pt) κελευόμενος(Prä)(M/P)(N)
+(164) geschah, als auch das Gericht wurde|beschlossen. zuerst zwar denn aufgefordert|werdend
+(164) it|became, since also the trial was|voted|against. first indeed for being|ordered
+(165) ὑποτιμᾶσθαι(Prä)(M/P)(Inf) οὔτε(Kon) αὐτὸς(Pr)(N) ὑπετιμήσατο(Aor)(M/P) οὔτε(Kon) τοὺς(Art)(A) φίλους(A) εἴασεν(Aor)(Akt), ἀλλὰ(Kon) καὶ(Kon)
+(165) minder|zu|bewerten weder selbst setzte|herab noch die Freunde ließ|zu, sondern auch
+(165) to|be|assessed neither himself he|assessed nor the friends he|allowed, but also
+(166) ἔλεγεν(Imp)(Akt) ὅτι(Kon) τὸ(Art)(N) ὑποτιμᾶσθαι(Prä)(M/P)(Inf) ὁμολογοῦντος(Prä)(Akt)(G) εἴη(Prä)(Akt)(Knj) ἀδικεῖν(Prä)(Akt)(Inf). ἔπειτα(Adv) τῶν(Art)(G) ἑταίρων(G)
+(166) sagte dass das minder|zu|bewerten zugestehenden sei Unrecht|tun. danach der Gefährten
+(166) he|was|saying that the to|be|assessed of|one|confessing would|be to|do|wrong. then of|the comrades
+(167) ἐκκλέψαι(Aor)(Akt)(Inf) βουλομένων(Prä)(M/P)(G) αὐτὸν(Pr)(A) οὐκ(Pt) ἐφείπετο(Imp)(M/P), ἀλλὰ(Kon) καὶ(Kon) ἐπισκῶψαι(Aor)(Akt)(Inf) ἐδόκει(Imp)(M/P) ἐρόμενος(AorS)(M/P)(N)
+(167) hinaus|zu|stehlen wollenden ihn nicht fügte|sich, sondern auch zu|scherzen schien fragend
+(167) to|steal|away of|those|wishing him not he|was|complying, but also to|jest it|seemed asking
+(168) εἴ(Kon) που(Adv) εἰδεῖέν(Per)(Akt)(Op) τι(Pr)(A) χωρίον(A) ἔξω(Adv) τῆς(Art)(G) Ἀττικῆς(G) ἔνθα(Adv) οὐ(Pt)
+(168) ob irgendwo wüssten irgendeinen Ort außerhalb der Attika wo nicht
+(168) if anywhere they|might|know some place outside of Attica where not
+(169) προσβατὸν(Adj)(N) θανάτῳ(D).
+(169) zugänglich dem|Tod.
+(169) accessible to|death.
+= § 24 =
+(171) ὡς(Kon) δὲ(Pt) τέλος(A) εἶχεν(Imp)(Akt) ἡ(Art)(N) δίκη(N), εἰπεῖν(AorS)(Akt)(Inf) αὐτόν(Pr)(A)· ἀλλʼ(Kon), ὦ(ij)
+(171) als aber Ende hatte das Gericht, zu|sagen ihn· aber, o
+(171) when but end it|was|having the trial, to|say him· but, O
+(172) ἄνδρες(V), τοὺς(Art)(A) μὲν(Pt) διδάσκοντας(Prä)(Akt)(A) τοὺς(Art)(A) μάρτυρας(A) ὡς(Kon) χρὴ(Prä)(Akt) ἐπιορκοῦντας(Prä)(Akt)(A) καταψευδομαρτυρεῖν(Prä)(Akt)(Inf)
+(172) Männer, die zwar lehrend die Zeugen wie nötig|ist meineidig|seiend falsch|gegen|Zeugnis|abzugeben
+(172) men, the indeed teaching the witnesses that it|is|necessary perjuring to|bear|false|witness|against
+(173) ἐμοῦ(Pr)(G) καὶ(Kon) τοὺς(Art)(A) πειθομένους(Prä)(M/P)(A) τούτοις(Pr)(D) ἀνάγκη(N) ἐστὶ(Prä)(Akt) πολλὴν(Adj)(A) ἑαυτοῖς(Pr)(D) συνειδέναι(Per)(Akt)(Inf)
+(173) meiner und die gehorchend diesen Notwendigkeit ist große sich|selbst bewusst|zu|sein
+(173) of|me and the being|persuaded by|these necessity is much to|themselves to|know|with
+(174) ἀσέβειαν(A) καὶ(Kon) ἀδικίαν(A)· ἐμοὶ(Pr)(D) δὲ(Pt) τί(Pr)(A) προσήκει(Prä)(Akt) νῦν(Adv) μεῖον(Adv)(Kmp) φρονεῖν(Prä)(Akt)(Inf)
+(174) Gottlosigkeit und Ungerechtigkeit· mir aber was steht|zu jetzt weniger zu|denken
+(174) impiety and injustice· to|me but what befits now less to|think
+(175) ἢ(Kon) πρὶν(Prp) κατακριθῆναι(Aor)(Pas)(Inf), μηδὲν(Pr)(A) ἐλεγχθέντι(Aor)(Pas)(D) ὡς(Kon) πεποίηκά(Per)(Akt) τι(Pr)(A) ὧν(Pr)(G) ἐγράψαντό(Aor)(M/P)
+(175) als bevor verurteilt|zu|werden, nichts überführt|worden dass ich|habe|getan etwas wovon sie|angeklagt|haben
+(175) than before to|be|condemned, nothing having|been|convicted that I|have|done anything of|which they|indicted
+(176) με(Pr)(A); οὐδὲ(Kon) γὰρ(Pt) ἔγωγε(Pr)(N) ἀντὶ(Prp) Διὸς(G) καὶ(Kon) Ἥρας(G) καὶ(Kon) τῶν(Art)(G)
+(176) mich; auch|nicht denn ich|ja anstatt des|Zeus und der|Hera und der
+(176) me; not|even for I|at|least instead|of Zeus and Hera and of
+(177) σὺν(Prp) τούτοις(Pr)(D) θεῶν(G) οὔτε(Kon) θύων(Prä)(Akt)(N) τισὶ(Pr)(D) καινοῖς(Adj)(D) δαίμοσιν(D) οὔτε(Kon) ὀμνὺς(Prä)(Akt)(N)
+(177) mit diesen Göttern weder opfernd einigen neuen Daimonen noch schwörend
+(177) with these the|gods neither sacrificing to|some new daimons nor swearing
+(178) οὔτε(Kon) νομίζων(Prä)(Akt)(N) ἄλλους(Adj)(A) θεοὺς(A) ἀναπέφηνα(Per)(Akt).
+(178) noch meinend andere Götter habe|offenbar|gemacht.
+(178) nor thinking other gods I|have|appeared.
+= § 25 =
+(180) τούς(Art)(A) γε(Pt) μὴν(Pt) νέους(Adj)(A) πῶς(Adv) ἂν(Pt) διαφθείροιμι(Prä)(Akt)(Op) καρτερίαν(A) καὶ(Kon) εὐτέλειαν(A)
+(180) die ja freilich Jungen wie wohl würde|verderben Standhaftigkeit und Genügsamkeit
+(180) the at|least indeed young|men how ever I|would|corrupt endurance and thrift
+(181) προσεθίζων(Prä)(Akt)(N); ἐφʼ(Prp) οἷς(Pr)(D) γε(Pt) μὴν(Pt) ἔργοις(D) κεῖται(Prä)(M/P) θάνατος(N) ἡ(Art)(N) ζημία(N),
+(181) gewöhnend; auf welchen ja freilich Taten liegt Tod die Strafe,
+(181) accustoming; upon which at|least indeed deeds lies death the penalty,
+(182) ἱεροσυλίᾳ(D), τοιχωρυχίᾳ(D), ἀνδραποδίσει(D), πόλεως(G) προδοσίᾳ(D), οὐδʼ(Kon) αὐτοὶ(Pr)(N) οἱ(Art)(N) ἀντίδικοι(N) τούτων(Pr)(G)
+(182) Tempel|raub, Wand|einbruch, Versklavung, der|Stadt Verrat, auch|nicht selbst die Gegen|kläger dieser
+(182) by|temple|robbery, by|wall|digging, by|enslaving|free|men, of|city by|betrayal, nor|even themselves the adversaries of|these
+(183) πρᾶξαί(Aor)(Akt)(Inf) τι(Pr)(A) κατʼ(Prp) ἐμοῦ(Pr)(G) φασιν(Prä)(Akt). ὥστε(Kon) θαυμαστὸν(Adj)(N) ἔμοιγε(Pr)(D) δοκεῖ(Prä)(Akt) εἶναι(Prä)(Inf)(Akt)
+(183) zu|tun etwas gegen mich sagen|sie. so|dass erstaunlich mir|ja scheint zu|sein
+(183) to|do anything against me they|say. so|that strange to|me|at|least it|seems to|be
+(184) ὅπως(Kon) ποτὲ(Pt) ἐφάνη(Aor)(Pas) ὑμῖν(Pr)(D) τοῦ(Art)(G) θανάτου(G) ἔργον(N) ἄξιον(Adj)(N) ἐμοὶ(Pr)(D) εἰργασμένον(Per)(M/P)(N).
+(184) wie einmal erschien euch des Todes Werk würdig mir vollbracht|seiend.
+(184) how ever it|appeared to|you of death deed worthy to|me having|been|wrought.
+= § 26 =
+(186) ἀλλʼ(Kon) οὐδὲ(Kon) μέντοι(Pt) ὅτι(Kon) ἀδίκως(Adv) ἀποθνῄσκω(Prä)(Akt), διὰ(Prp) τοῦτο(Pr)(A) μεῖον(Adv)(Kmp) φρονητέον(Adj)(N)·
+(186) aber auch|nicht jedoch dass ungerecht sterbe|ich, des|wegen dies weniger zu|denken·
+(186) but not|even however that unjustly I|am|dying, because|of this less to|be|minded·
+(187) οὐ(Pt) γὰρ(Pt) ἐμοὶ(Pr)(D) ἀλλὰ(Kon) τοῖς(Art)(D) καταγνοῦσι(AorS)(Akt)(D) τοῦτο(Pr)(N) αἰσχρόν(Adj)(N) [γάρ] ἐστι(Prä)(Akt).
+(187) nicht denn mir sondern den verurteilenden dies schändlich [ja] ist.
+(187) not for to|me but to|the having|condemned this shameful [for] is.
+(188) παραμυθεῖται(Prä)(M/P) δʼ(Pt) ἔτι(Adv) με(Pr)(A) καὶ(Kon) Παλαμήδης(N) ὁ(Art)(N) παραπλησίως(Adv) ἐμοὶ(Pr)(D) τελευτήσας(AorS)(Akt)(N)·
+(188) tröstet aber noch mich auch Palamedes der ähnlich mir gestorben|seiend·
+(188) comforts but still me and Palamedes the similarly to|me having|ended·
+(189) ἔτι(Adv) γὰρ(Pt) καὶ(Kon) νῦν(Adv) πολὺ(Adv) καλλίους(Adj)(A)(Kmp) ὕμνους(A) παρέχεται(Prä)(M/P) Ὀδυσσέως(G) τοῦ(Art)(G)
+(189) noch denn auch jetzt viel schönere Hymnen bietet|dar des|Odysseus des
+(189) still for and now much more|beautiful hymns provides of|Odysseus the
+(190) ἀδίκως(Adv) ἀποκτείναντος(AorS)(Akt)(G) αὐτόν(Pr)(A)· οἶδʼ(Per)(Akt) ὅτι(Kon) καὶ(Kon) ἐμοὶ(Pr)(D) μαρτυρήσεται(Fu)(M/P) ὑπό(Prp) τε(Pt)
+(190) zu|Unrecht getötet|habenden ihn· ich|weiß dass auch mir wird|bezeugen von und
+(190) unjustly having|killed him· I|know that and to|me will|testify by and
+(191) τοῦ(Art)(G) ἐπιόντος(Prä)(Akt)(G) καὶ(Kon) ὑπὸ(Prp) τοῦ(Art)(G) παρεληλυθότος(Per)(Akt)(G) χρόνου(G) ὅτι(Kon) ἠδίκησα(Aor)(Akt) μὲν(Pt)
+(191) des heran|kommenden und von des vorüber|gegangen|seienden der|Zeit dass Unrecht|tat|ich zwar
+(191) the coming and by the having|passed of|time that I|wronged indeed
+(192) οὐδένα(Pr)(A) πώποτε(Adv) οὐδὲ(Kon) πονηρότερον(Adj)(A)(Kmp) ἐποίησα(Aor)(Akt), εὐηργέτουν(Imp)(Akt) δὲ(Pt) τοὺς(Art)(A) ἐμοὶ(Pr)(D) διαλεγομένους(Prä)(M/P)(A)
+(192) niemanden jemals und|nicht schlechteren machte|ich, ich|tat|Gutes aber die mit|mir sich|unterhaltenden
+(192) no|one ever nor more|wicked I|made, I|was|benefiting but the to|me conversing
+(193) προῖκα(Adv) διδάσκων(Prä)(Akt)(N) ὅ(Pr)(A) τι(Pr)(A) ἐδυνάμην(Imp)(M/P) ἀγαθόν(Adj)(A).
+(193) unentgeltlich lehrend was auch|immer konnte|ich Gutes.
+(193) gratis teaching what thing I|was|able good.
+= § 27 =
+(195) εἰπὼν(AorS)(Akt)(N) δὲ(Pt) ταῦτα(Pr)(A) μάλα(Adv) ὁμολογουμένως(Adv) δὴ(Pt) τοῖς(Art)(D) εἰρημένοις(Per)(M/P)(D) ἀπῄει(Imp)(Akt) καὶ(Kon)
+(195) gesagt|habend aber dieses sehr übereinstimmend ja den gesagt|wordenen ging|fort und
+(195) having|said but these|things very in|agreement indeed with|the having|been|said he|was|going|away and
+(196) ὄμμασι(D) καὶ(Kon) σχήματι(D) καὶ(Kon) βαδίσματι(D) φαιδρός(Adj)(N). ὡς(Kon) δὲ(Pt) ᾔσθετο(Aor)(Med) ἄρα(Pt)
+(196) mit|den|Augen und mit|der|Haltung und mit|dem|Gang heiter. als aber nahm|wahr also
+(196) in|the|eyes and in|the|form and in|the|gait cheerful. as but he|perceived then
+(197) τοὺς(Art)(A) παρεπομένους(Prä)(M/P)(A) δακρύοντας(Prä)(Akt)(A), τί(Pr)(N) τοῦτο(Pr)(N); εἰπεῖν(AorS)(Akt)(Inf) αὐτόν(Pr)(A), ἦ(Pt) ἄρτι(Adv) δακρύετε(Prä)(Akt);
+(197) die mit|gehend|seienden weinend|seienden, was ist|dies; zu|sagen ihn, etwa soeben weint|ihr;
+(197) the following weeping, what this; to|say him, indeed just|now you|weep;
+(198) οὐ(Pt) γὰρ(Pt) πάλαι(Adv) ἴστε(Per)(Akt) ὅτι(Kon) ἐξ(Prp) ὅτουπερ(Pr)(G) ἐγενόμην(Aor)(Med) κατεψηφισμένος(Per)(M/P)(N) ἦν(Imp)(Akt)
+(198) nicht denn längst wisst|ihr dass seit gerade|welcher|Zeit ich|geworden|bin verurteilt|worden|seiend war
+(198) not for long|ago you|know that out|of which|indeed I|became having|been|condemned was
+(199) μου(Pr)(G) ὑπὸ(Prp) τῆς(Art)(G) φύσεως(G) ὁ(Art)(N) θάνατος(N); ἀλλὰ(Kon) μέντοι(Pt) εἰ(Kon) μὲν(Pt)
+(199) von|mir durch die Natur der Tod; sondern doch wenn zwar
+(199) of|me by the nature the death; but however if indeed
+(200) ἀγαθῶν(Adj)(G) ἐπιρρεόντων(Prä)(Akt)(G) προαπόλλυμαι(Prä)(M/P), δῆλον(Adj)(N) ὅτι(Kon) ἐμοὶ(Pr)(D) καὶ(Kon) τοῖς(Art)(D) ἐμοῖς(Pr)(D) εὔνοις(Adj)(D)
+(200) der|Güter herbei|strömenden gehe|zuvor|zugrunde, klar dass mir und den meinen Wohl|gesinnten
+(200) of|good|things flowing|upon I|before|perish, clear that to|me and to|the my well|disposed
+(201) λυπητέον(Adj)(N)· εἰ(Kon) δὲ(Pt) χαλεπῶν(Adj)(G) προσδοκωμένων(Prä)(M/P)(G) καταλύω(Prä)(Akt) τὸν(Art)(A) βίον(A), ἐγὼ(Pr)(N) μὲν(Pt)
+(201) ist|zu|beklagen· wenn aber der|schwierigen erwartet|werdenden löse|ich|auf den Leben, ich zwar
+(201) to|be|grieved· if but of|hard being|expected I|end the life, I indeed
+(202) οἶμαι(Prä)(M/P) ὡς(Kon) εὐπραγοῦντος(Prä)(Akt)(G) ἐμοῦ(Pr)(G) πᾶσιν(Adj)(D) ὑμῖν(Pr)(D) εὐθυμητέον(Adj)(N) εἶναι(Prä)(Inf)(Akt).
+(202) meine|ich dass gut|verfahrenden meiner allen euch heiter zu|sein.
+(202) I|think that doing|well of|me to|all to|you must|be|cheerful to|be.
+= § 28 =
+(204) παρὼν(Prä)(Akt)(N) δέ(Pt) τις(Pr)(N) Ἀπολλόδωρος(N), ἐπιθυμητὴς(N) μὲν(Pt) ὢν(Prä)(Akt)(N) ἰσχυρῶς(Adv) αὐτοῦ(Pr)(G), ἄλλως(Adv)
+(204) anwesend|seiend aber jemand Apollodoros, Begehrender zwar seiend stark seiner, sonst
+(204) being|present but someone Apollodorus, desirous indeed being strongly of|him, otherwise
+(205) δʼ(Pt) εὐήθης(Adj)(N), εἶπεν(AorS)(Akt) ἄρα(Pt)· ἀλλὰ(Kon) τοῦτο(Pr)(N) ἔγωγε(Pr)(N), ὦ(ij) Σώκρατες(V), χαλεπώτατα(Adv)(Sup)
+(205) aber einfältig, sagte also· sondern dies ich|freilich, o Sokrates, am|schmerzlichsten
+(205) but simple, he|said then· but this I|at|least, O Socrates, most|grievously
+(206) φέρω(Prä)(Akt) ὅτι(Kon) ὁρῶ(Prä)(Akt) σε(Pr)(A) ἀδίκως(Adv) ἀποθνῄσκοντα(Prä)(Akt)(A). τὸν(Art)(A) δὲ(Pt) λέγεται(Prä)(M/P) καταψήσαντα(Aor)(Akt)(A)
+(206) ertrage|ich dass ich|sehe dich zu|Unrecht sterbend|seienden. den aber wird|gesagt verurteilt|habenden
+(206) I|bear that I|see you unjustly dying. the but it|is|said having|voted|against
+(207) αὐτοῦ(Pr)(G) τὴν(Art)(A) κεφαλὴν(A) εἰπεῖν(AorS)(Akt)(Inf)· σὺ(Pr)(N) δέ(Pt), ὦ(ij) φίλτατε(Adj)(V)(Sup) Ἀπολλόδωρε(V), μᾶλλον(Adv)(Kmp)
+(207) von|ihm den Kopf zu|sagen· du aber, o liebster Apollodore, eher
+(207) of|him the head to|say· you but, O dearest Apollodore, more
+(208) ἐβούλου(Imp)(M/P) με(Pr)(A) ὁρᾶν(Prä)(Akt)(Inf) δικαίως(Adv) ἢ(Kon) ἀδίκως(Adv) ἀποθνῄσκοντα(Prä)(Akt)(A); καὶ(Kon) ἅμα(Adv) ἐπιγελάσαι(Aor)(Akt)(Inf).
+(208) wolltest|du mich zu|sehen rechtens oder zu|Unrecht sterbend|seienden; und zugleich auf|lachen.
+(208) you|were|willing me to|see justly or unjustly dying; and at|once to|laugh|besides.
+= § 29 =
+(210) λέγεται(Prä)(M/P) δὲ(Pt) καὶ(Kon) Ἄνυτον(A) παριόντα(Prä)(Akt)(A) ἰδὼν(AorS)(Akt)(N) εἰπεῖν(AorS)(Akt)(Inf)· ἀλλʼ(Kon) ὁ(Art)(N) μὲν(Pt)
+(210) wird|gesagt aber auch Anytos vorbei|gehend|seienden gesehen|habend zu|sagen· sondern der zwar
+(210) it|is|said but also Anytus passing|by having|seen to|say· but the indeed
+(211) ἀνὴρ(N) ὅδε(Pr)(N) κυδρός(Adj)(N), ὡς(Kon) μέγα(Adj)(A) τι(Pr)(A) καὶ(Kon) καλὸν(Adj)(A) διαπεπραγμένος(Per)(M/P)(N), εἰ(Kon)
+(211) Mann dieser stolz, als groß|es etwas und schön|es durch|geführt|habend, wenn
+(211) man this glorious, as great something and fine having|accomplished|through, if
+(212) ἀπέκτονέ(AorS)(Akt) με(Pr)(A), ὅτι(Kon) αὐτὸν(Pr)(A) τῶν(Art)(G) μεγίστων(Adj)(G)(Sup) ὑπὸ(Prp) τῆς(Art)(G) πόλεως(G) ὁρῶν(Prä)(Akt)(N)
+(212) hat|getötet mich, weil ihn der größten von der Stadt sehend
+(212) has|killed me, because him of|the greatest by the city seeing
+(213) ἀξιούμενον(Prä)(M/P)(A) οὐκ(Pt) ἔφην(Imp)(Akt) χρῆναι(Prä)(Akt)(Inf) τὸν(Art)(A) υἱὸν(A) περὶ(Prp) βύρσας(A) παιδεύειν(Prä)(Akt)(Inf). ὡς(Kon)
+(213) für|würdig|gehalten|werdenden nicht sagte|ich nötig|sei den Sohn über Felle zu|bilden. wie
+(213) being|deemed|worthy not I|was|saying to|be|necessary the son about hides to|educate. as
+(214) μοχθηρὸς(Adj)(N) οὗτος(Pr)(N), ἔφη(Imp)(Akt), ὃς(Pr)(N) οὐκ(Pt) ἔοικεν(Per)(Akt) εἰδέναι(Per)(Akt)(Inf) ὅτι(Kon) ὁπότερος(Pr)(N) ἡμῶν(Pr)(G)
+(214) nichtsnutzig dieser, sagte, der nicht scheint zu|wissen dass welcher|von|beiden von|uns
+(214) wretched this, he|said, who not has|seemed to|know that which|of|two of|us
+(215) καὶ(Kon) συμφορώτερα(Adj)(A)(Kmp) καὶ(Kon) καλλίω(Adj)(A)(Kmp) εἰς(Prp) τὸν(Art)(A) ἀεὶ(Adv) χρόνον(A) διαπέπρακται(Per)(M/P), οὗτός(Pr)(N)
+(215) und günstigere und bessere für die stets Zeit hat|vollbracht, dieser
+(215) and more|expedient and better into the always time has|been|managed, this
+(216) ἐστι(Prä)(Akt) καὶ(Kon) ὁ(Art)(N) νικῶν(Prä)(Akt)(N).
+(216) ist auch der Siegende.
+(216) is and the winning.
+= § 30 =
+(218) ἀλλὰ(Kon) μέντοι(Pt), φάναι(Aor)(Akt)(Inf) αὐτόν(Pr)(A), ἀνέθηκε(Aor)(Akt) μὲν(Pt) καὶ(Kon) Ὅμηρος(N) ἔστιν(Prä)(Akt) οἷς(Pr)(D)
+(218) aber doch, zu|sagen ihn, hat|zugeschrieben zwar auch Homer ist denen
+(218) but however, to|say him, he|dedicated indeed and Homer there|is to|whom
+(219) τῶν(Art)(G) ἐν(Prp) καταλύσει(D) τοῦ(Art)(G) βίου(G) προγιγνώσκειν(Prä)(Akt)(Inf) τὰ(Art)(A) μέλλοντα(Prä)(Akt)(A), βούλομαι(Prä)(M/P) δὲ(Pt)
+(219) der in Auf|lösung des Lebens vor|her|erkennen die Künftigen, will|ich aber
+(219) of|the in dissolution of|the life to|fore|know the things|going|to|be, I|wish but
+(220) καὶ(Kon) ἐγὼ(Pr)(N) χρησμῳδῆσαί(Aor)(Akt)(Inf) τι(Pr)(A). συνεγενόμην(Aor)(Med) γάρ(Pt) ποτε(Pt) βραχέα(Adv) τῷ(Art)(D) Ἀνύτου(G)
+(220) auch ich Orakel|sagen etwas. zusammen|kam|ich denn einst kurz mit|dem des|Anytos
+(220) and I to|prophesy something. I|associated for once briefly to|the of|Anytus
+(221) υἱῷ(D), καὶ(Kon) ἔδοξέ(Aor)(Akt) μοι(Pr)(D) οὐκ(Pt) ἄρρωστος(Adj)(N) τὴν(Art)(A) ψυχὴν(A) εἶναι(Prä)(Inf)(Akt)· ὥστε(Kon)
+(221) Sohn, und schien mir nicht krank die Seele zu|sein· sodass
+(221) to|the|son, and it|seemed to|me not sick the soul to|be· so|that
+(222) φημὶ(Prä)(Akt) αὐτὸν(Pr)(A) ἐπὶ(Prp) τῇ(Art)(D) δουλοπρεπεῖ(Adj)(D) διατριβῇ(D) ἣν(Pr)(A) ὁ(Art)(N) πατὴρ(N) αὐτῷ(Pr)(D)
+(222) behaupte|ich ihn bei der sklavischen Beschäftigung welche der Vater ihm
+(222) I|say him upon the slavish occupation which the father to|him
+(223) παρεσκεύακεν(Per)(Akt) οὐ(Pt) διαμενεῖν(Fu)(Akt)(Inf)· διὰ(Prp) δὲ(Pt) τὸ(Art)(A) μηδένα(Pr)(A) ἔχειν(Prä)(Akt)(Inf) σπουδαῖον(Adj)(A) ἐπιμελητὴν(A)
+(223) hat|vorbereitet nicht zu|verweilen· wegen aber das niemanden zu|haben tüchtigen Betreuer
+(223) has|prepared not to|remain· because|of but the no|one to|have serious caretaker
+(224) προσπεσεῖσθαί(Aor)(M/P)(Inf) τινι(Pr)(D) αἰσχρᾷ(Adj)(D) ἐπιθυμίᾳ(D), καὶ(Kon) προβήσεσθαι(Fu)(M/P)(Inf) μέντοι(Pt) πόρρω(Adv) μοχθηρίας(G).
+(224) zu|verfallen irgendeiner schändlichen Begierde, und fort|schreiten|werden doch weit der|Schlechtigkeit.
+(224) to|fall|upon to|someone shameful desire, and to|advance however far of|baseness.
+= § 31 =
+(226) ταῦτα(Pr)(A) δʼ(Pt) εἰπὼν(AorS)(Akt)(N) οὐκ(Pt) ἐψεύσατο(Aor)(M/P), ἀλλʼ(Kon) ὁ(Art)(N) νεανίσκος(N) ἡσθεὶς(Aor)(M/P)(N) οἴνῳ(D)
+(226) dieses aber gesagt|habend nicht log|er, sondern der Jüngling erfreut|worden|seiend am|Wein
+(226) these|things but having|said not he|lied, but the young|man having|delighted in|wine
+(227) οὔτε(Kon) νυκτὸς(G) οὔτε(Kon) ἡμέρας(G) ἐπαύετο(Imp)(M/P) πίνων(Prä)(Akt)(N), καὶ(Kon) τέλος(Adv) οὔτε(Kon) τῇ(Art)(D)
+(227) weder bei|Nacht noch bei|Tag hörte|auf trinkend|seiend, und schließlich weder der
+(227) neither of|night nor of|day he|was|ceasing drinking, and finally neither to|the
+(228) ἑαυτοῦ(Pr)(G) πόλει(D) οὔτε(Kon) τοῖς(Art)(D) φίλοις(D) οὔτε(Kon) αὑτῷ(Pr)(D) ἄξιος(Adj)(N) οὐδενὸς(Pr)(G) ἐγένετο(AorS)(M/P).
+(228) seiner|eigenen Stadt noch den Freunden noch sich|selbst würdig von|nichts wurde.
+(228) his|own city nor to|the friends nor to|himself worthy of|nothing he|became.
+(229) Ἄνυτος(N) μὲν(Pt) δὴ(Pt) διὰ(Prp) τὴν(Art)(A) τοῦ(Art)(G) υἱοῦ(G) πονηρὰν(Adj)(A) παιδείαν(A) καὶ(Kon)
+(229) Anytos zwar gewiss wegen der des Sohnes schlechten Erziehung und
+(229) Anytus indeed indeed because|of the of|the son bad education and
+(230) διὰ(Prp) τὴν(Art)(A) αὑτοῦ(Pr)(G) ἀγνωμοσύνην(A) ἔτι(Adv) καὶ(Kon) τετελευτηκὼς(Per)(Akt)(N) τυγχάνει(Prä)(Akt) κακοδοξίας(G).
+(230) wegen der eigenen Undankbarkeit noch auch gestorben|seiend trifft|es|zu schlechter|Nachrede.
+(230) because|of the of|himself ingratitude still and having|died happens|to|be of|ill|repute.
+= § 32 =
+(232) Σωκράτης(N) δὲ(Pt) διὰ(Prp) τὸ(Art)(A) μεγαλύνειν(Prä)(Akt)(Inf) ἑαυτὸν(Pr)(A) ἐν(Prp) τῷ(Art)(D) δικαστηρίῳ(D) φθόνον(A)
+(232) Sokrates aber wegen des zu|erheben sich|selbst in dem Gericht Neid
+(232) Socrates but because|of the to|magnify himself in the court envy
+(233) ἐπαγόμενος(Prä)(M/P)(N) μᾶλλον(Adv)(Kmp) καταψηφίσασθαι(Aor)(M/P)(Inf) ἑαυτοῦ(Pr)(G) ἐποίησε(Aor)(Akt) τοὺς(Art)(A) δικαστάς(A). ἐμοὶ(Pr)(D) μὲν(Pt) οὖν(Pt)
+(233) herbei|ziehend|seiend eher sich|verurteilen|zu|lassen seiner|selbst machte die Richter. mir zwar nun
+(233) bringing|upon|himself more to|condemn of|himself he|made the judges. to|me indeed now
+(234) δοκεῖ(Prä)(Akt) θεοφιλοῦς(Adj)(G) μοίρας(G) τετυχηκέναι(Per)(Akt)(Inf)· τοῦ(Art)(G) μὲν(Pt) γὰρ(Pt) βίου(G) τὸ(Art)(A) χαλεπώτατον(Adj)(A)(Sup)
+(234) scheint|es der|götter|liebenden Anteil|Schicksals erlangt|zu|haben· des zwar denn Lebens das Beschwerlichste
+(234) it|seems dear|to|the|gods of|fate to|have|obtained· of|the indeed for life the most|difficult
+(235) ἀπέλιπε(Aor)(Akt), τῶν(Art)(G) δὲ(Pt) θανάτων(G) τοῦ(Art)(G) ῥᾴστου(Adj)(G)(Sup) ἔτυχεν(Aor)(Akt).
+(235) ließ|zurück, der aber Tode des leichtesten traf|er.
+(235) he|left|behind, of|the but deaths of|the easiest he|obtained.
+= § 33 =
+(237) ἐπεδείξατο(Aor)(M/P) δὲ(Pt) τῆς(Art)(G) ψυχῆς(G) τὴν(Art)(A) ῥώμην(A)· ἐπεὶ(Kon) γὰρ(Pt) ἔγνω(Aor)(Akt) τοῦ(Art)(G)
+(237) zeigte|er aber der Seele die Stärke· da nämlich erkannte des
+(237) he|displayed but of|the soul the strength· since for he|knew of|the
+(238) ἔτι(Adv) ζῆν(Prä)(Akt)(Inf) τὸ(Art)(N) τεθνάναι(Per)(Akt)(Inf) αὐτῷ(Pr)(D) κρεῖττον(Adj)(N)(Kmp) εἶναι(Prä)(Inf)(Akt), ὥσπερ(Kon) οὐδὲ(Kon) πρὸς(Prp)
+(238) noch zu|leben das Gestorbensein ihm besser zu|sein, so|wie und|nicht gegenüber
+(238) still to|live the to|be|dead for|him better to|be, just|as nor towards
+(239) τἆλλα(Art)(A)(Adj)(A) τἀγαθὰ(Art)(A)(Adj)(A) προσάντης(Adj)(N) ἦν(Imp)(Akt), οὐδὲ(Kon) πρὸς(Prp) τὸν(Art)(A) θάνατον(A) ἐμαλακίσατο(Aor)(M/P), ἀλλʼ(Kon)
+(239) die|anderen die|Guten abgeneigt war, und|nicht gegenüber dem Tod wurde|weich, sondern
+(239) the|others the|good|things opposed he|was, nor towards the death he|softened|himself, but
+(240) ἱλαρῶς(Adv) καὶ(Kon) προσεδέχετο(Imp)(M/P) αὐτὸν(Pr)(A) καὶ(Kon) ἐπετελέσατο(Aor)(M/P).
+(240) heiter und nahm|an ihn und vollendete|es.
+(240) cheerfully and he|was|accepting it and he|completed.
+= § 34 =
+(242) ἐγὼ(Pr)(N) μὲν(Pt) δὴ(Pt) κατανοῶν(Prä)(Akt)(N) τοῦ(Art)(G) ἀνδρὸς(G) τήν(Art)(A) τε(Pt) σοφίαν(A) καὶ(Kon)
+(242) ich zwar gewiss betrachtend des Mannes die und Weisheit und
+(242) I indeed indeed considering of|the man the and wisdom and
+(243) τὴν(Art)(A) γενναιότητα(A) οὔτε(Kon) μὴ(Pt) μεμνῆσθαι(Per)(M/P)(Inf) δύναμαι(Prä)(M/P) αὐτοῦ(Pr)(G) οὔτε(Kon) μεμνημένος(Per)(M/P)(N) μὴ(Pt)
+(243) die Edel|mut weder nicht mich|zu|erinnern vermag|ich seiner noch erinnernd|seiend nicht
+(243) the nobility neither not to|remember I|am|able of|him nor remembering not
+(244) οὐκ(Pt) ἐπαινεῖν(Prä)(Akt)(Inf). εἰ(Kon) δέ(Pt) τις(Pr)(N) τῶν(Art)(G) ἀρετῆς(G) ἐφιεμένων(Prä)(M/P)(G) ὠφελιμωτέρῳ(Adj)(D)(Kmp) τινὶ(Pr)(D)
+(244) nicht zu|loben. wenn aber jemand der Tugend nach|strebenden nützlicheren jemandem
+(244) not to|praise. if but someone of|the virtue striving|after more|useful to|someone
+(245) Σωκράτους(G) συνεγένετο(Aor)(M/P), ἐκεῖνον(Pr)(A) ἐγὼ(Pr)(N) τὸν(Art)(A) ἄνδρα(A) ἀξιομακαριστότατον(Adj)(A)(Sup) νομίζω(Prä)(Akt).
+(245) des|Sokrates zusammen|kam, jenen ich den Mann höchst|selig|würdig halte|ich.
+(245) of|Socrates he|associated, that|one I the man most|worthy|to|be|blessed I|think.
