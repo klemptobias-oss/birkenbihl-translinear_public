@@ -296,6 +296,51 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     ancient_lang_strength = _detect_language_from_filename(infile)
     print(f"  → Erkannte Sprache: {ancient_lang_strength}")
 
+    # ═══════════════════════════════════════════════════════════════════════════════════════
+    # DATEIGRÖS_SCHÄTZUNG: Bei großen Dateien nur wichtigste PDFs erstellen
+    # ═══════════════════════════════════════════════════════════════════════════════════════
+    # PROBLEM: Cloudflare Worker Response-Limit = 25MB
+    # LÖSUNG: Bei großen Input-Dateien (>1MB) nur Top 4 Varianten erstellen
+    #
+    # PRIORISIERUNG (wichtig → unwichtig):
+    # 1. GR_Fett + Colour + Tag       ✅ (Hauptversion)
+    # 2. GR_Fett + Colour + NoTag     ✅
+    # 3. Normal + Colour + Tag        ✅
+    # 4. GR_Fett + BlackWhite + Tag   ✅
+    # 5. Normal + BlackWhite + Tag    ⚠️ (Level 3: >1.29 MB)
+    # 6. Normal + Colour + NoTag      ⚠️ (Level 1: >=975 KB)
+    # 7. GR_Fett + BlackWhite + NoTag
+    # 8. Normal + BlackWhite + NoTag  ⚠️ (Level 2: >=1.11 MB)
+    
+    # ═══════════════════════════════════════════════════════════════════════════════════════
+    # DATEIGRÖSSE-PRÜFUNG: Stufenweise Varianten-Reduktion
+    # ═══════════════════════════════════════════════════════════════════════════════════════
+    input_size_bytes = os.path.getsize(infile)
+    input_size_kb = input_size_bytes / 1024
+    input_size_mb = input_size_kb / 1024
+    
+    # Bestimme Reduktionslevel basierend auf Dateigröße
+    # Level 0: <975 KB → 8 Varianten (alle)
+    # Level 1: 975 KB - 1.11 MB → 7 Varianten (skip Normal_Colour_NoTag)
+    # Level 2: 1.11 MB - 1.29 MB → 6 Varianten (skip + Normal_BlackWhite_NoTag)
+    # Level 3: >1.29 MB → 5 Varianten (skip + Normal_BlackWhite_Tag)
+    reduction_level = 0
+    skipped_variant_names = []
+    
+    if input_size_kb >= 975:
+        reduction_level = 1
+        skipped_variant_names.append("Normal_Colour_NoTag")
+    if input_size_kb >= 1110:
+        reduction_level = 2
+        skipped_variant_names.append("Normal_BlackWhite_NoTag")
+    if input_size_kb >= 1290:
+        reduction_level = 3
+        skipped_variant_names.append("Normal_BlackWhite_Tag")
+    
+    if reduction_level > 0:
+        print(f"  ⚠️ GROSSE DATEI ({input_size_kb:.0f} KB) - Reduktionslevel {reduction_level}: {len(skipped_variant_names)} Variante(n) werden übersprungen")
+        logger.info(f"prosa_pdf: Large file ({input_size_kb:.0f} KB), reduction_level={reduction_level}, skipping {skipped_variant_names}")
+
     # WICHTIG: Prosa hat KEINE Versmaß-Varianten
     # NEUE KONFIGURATION: 8 Varianten pro Input (wie bei Poesie)
     # - NORMAL (antike Sprache nicht fett) + FETT (antike Sprache fett)
@@ -330,9 +375,54 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     total_blocks = len(final_blocks) if isinstance(final_blocks, list) else 0
     logging.getLogger(__name__).info("prosa_pdf: Starting PDF generation loop for %d variants, total_blocks=%d", num_variants, total_blocks)
     
+    # ═══════════════════════════════════════════════════════════════════════════════════════
+    # VARIANTEN-PRIORISIERUNG: Bei großen Dateien nur Top 4 erstellen
+    # ═══════════════════════════════════════════════════════════════════════════════════════
+    # WICHTIG: Die Reihenfolge ist durch itertools.product determiniert:
+    # strengths x colors x tags = (NORMAL, GR_FETT) x (COLOR, BLACK_WHITE) x (TAGS, NO_TAGS)
+    #
+    # Ergibt folgende Reihenfolge:
+    # 1. NORMAL + COLOR + TAGS
+    # 2. NORMAL + COLOR + NO_TAGS
+    # 3. NORMAL + BLACK_WHITE + TAGS
+    # 4. NORMAL + BLACK_WHITE + NO_TAGS
+    # 5. GR_FETT + COLOR + TAGS        ← WICHTIGSTE!
+    # 6. GR_FETT + COLOR + NO_TAGS     ← ZWEITWICHTIGSTE!
+    # 7. GR_FETT + BLACK_WHITE + TAGS  ← DRITTWICHTIGSTE!
+    # 8. GR_FETT + BLACK_WHITE + NO_TAGS
+    #
+    # ═══════════════════════════════════════════════════════════════════════════════════════
+    # VARIANTEN-SKIP-MAP: Welche Varianten bei welchem Reduktionslevel überspringen?
+    # ═══════════════════════════════════════════════════════════════════════════════════════
+    # Level 1 (>=975 KB): Skip Normal_Colour_NoTag
+    # Level 2 (>=1.11 MB): Skip + Normal_BlackWhite_NoTag
+    # Level 3 (>=1.29 MB): Skip + Normal_BlackWhite_Tag
+    
+    skip_variants_by_level = {
+        1: [("NORMAL", "COLOR", "NO_TAGS")],  # Normal_Colour_NoTag
+        2: [("NORMAL", "COLOR", "NO_TAGS"), ("NORMAL", "BLACK_WHITE", "NO_TAGS")],  # + Normal_BlackWhite_NoTag
+        3: [("NORMAL", "COLOR", "NO_TAGS"), ("NORMAL", "BLACK_WHITE", "NO_TAGS"), ("NORMAL", "BLACK_WHITE", "TAGS")],  # + Normal_BlackWhite_Tag
+    }
+    
+    variants_to_skip = skip_variants_by_level.get(reduction_level, [])
+    
     variant_index = 0
+    skipped_variants = []
     for strength, color_mode, tag_mode in itertools.product(strengths, colors, tags):
         variant_index += 1
+        
+        # ═══ SKIP-LOGIK basierend auf Reduktionslevel ═══
+        variant_key = (strength, color_mode, tag_mode)
+        
+        if variant_key in variants_to_skip:
+            # Skip diese Variante bei großen Dateien
+            variant_name = f"{strength}_{color_mode}_{tag_mode}"
+            skipped_variants.append(variant_name)
+            logging.getLogger(__name__).info("prosa_pdf: SKIPPING variant %d/%d (reduction_level=%d): %s", 
+                                            variant_index, num_variants, reduction_level, variant_name)
+            print(f"  ⏩ Überspringe Variante {variant_index}/{num_variants}: {variant_name} (Datei zu groß, Level {reduction_level})")
+            continue
+        
         logging.getLogger(__name__).info("prosa_pdf: processing variant %d/%d (strength=%s, color=%s, tag=%s)", variant_index, num_variants, strength, color_mode, tag_mode)
         try:
             sys.stdout.flush()
@@ -427,6 +517,30 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         except Exception:
             logger.exception("prosa_pdf: reportlab build() FAILED for %s", out_name)
             raise
+    
+    # ═══════════════════════════════════════════════════════════════════════════════════════
+    # ZUSAMMENFASSUNG: Zeige übersprungene Varianten (falls vorhanden)
+    # ═══════════════════════════════════════════════════════════════════════════════════════
+    if skipped_variants:
+        print("\n" + "═" * 80)
+        print(f"⚠️  HINWEIS: {len(skipped_variants)} Variante(n) wurde(n) übersprungen")
+        print(f"   Ihr translinear.txt ist größer als {975 if reduction_level >= 1 else 0} KB ({input_size_kb:.0f} KB),")
+        print("   daher können nicht alle 8 Varianten erzeugt werden.")
+        print("\n   Übersprungene Variante(n):")
+        for idx, variant in enumerate(skipped_variants, 1):
+            # Ersetze Unterstriche durch Leerzeichen und formatiere schön
+            variant_display = variant.replace("_", " ")
+            print(f"      {idx}. {variant_display}")
+        print("\n   💡 Bitte verwenden Sie einen gekürzten translinear.txt,")
+        print("      falls Sie diese Variante(n) erzeugen wollen.")
+        print("\n   Verfügbare Varianten:")
+        print(f"      ✅ {ancient_lang_strength} + Colour + Tag (Hauptversion)")
+        print(f"      ✅ {ancient_lang_strength} + Colour + NoTag")
+        print(f"      ✅ Normal + Colour + Tag")
+        print(f"      ✅ {ancient_lang_strength} + BlackWhite + Tag")
+        if len(skipped_variants) < 4:  # Falls nur teilweise geskippt
+            print(f"      ✅ Normal + BlackWhite + Tag")
+        print("═" * 80 + "\n")
     
     try:
         end_time = time.time()

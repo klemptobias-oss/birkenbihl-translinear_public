@@ -1611,6 +1611,16 @@ async function performRendering() {
     });
 
     if (!res || !res.ok) {
+      // Spezielle Behandlung für HTTP 413 (Payload Too Large)
+      if (res && res.status === 413) {
+        throw new Error(
+          `Ihr translinear.txt ist zu groß (>975 KB). ` +
+            `Nicht alle 8 PDF-Varianten können erzeugt werden. ` +
+            `Die wichtigsten Varianten werden trotzdem erstellt. ` +
+            `Bitte verwenden Sie einen gekürzten translinear.txt, ` +
+            `falls Sie alle Varianten erzeugen wollen.`
+        );
+      }
       throw new Error(`Worker request failed with status ${res.status}`);
     }
 

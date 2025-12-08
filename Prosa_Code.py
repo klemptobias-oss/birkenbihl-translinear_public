@@ -1657,38 +1657,37 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
         # ═══════════════════════════════════════════════════════════════════
         rows = []
         
-        # GR Zeile (nur erste Alternative, nur im ersten Slice mit Para/Speaker)
+        # GR Alternativen - ALLE ZEILEN RENDERN! (KRITISCH FÜR STRAUßLOGIK!)
         for gr_idx, gr_line in enumerate(slice_gr_lines):
-            if gr_idx > 0:
-                break  # Nur erste GR Alternative
-            
             if not any(gr_line):
                 continue
             
             gr_row = []
-            # Para-Spalte (nur first_slice)
+            # Para-Spalte (nur first_slice UND erste Alternative)
             if para_display:
-                if first_slice:
+                if first_slice and gr_idx == 0:
                     gr_row.append(Paragraph(para_display, style_para))
                 else:
                     gr_row.append('')
-            # Speaker-Spalte (nur first_slice)
+            # Speaker-Spalte (nur first_slice UND erste Alternative)
             if speaker_display:
-                if first_slice:
+                if first_slice and gr_idx == 0:
                     gr_row.append(Paragraph(speaker_display, style_speaker))
                 else:
                     gr_row.append('')
-            # GR Tokens
-            for tok in gr_line:
+            # GR Tokens mit Farbübertragung
+            for col_idx, tok in enumerate(gr_line):
                 if tok:
+                    # KRITISCH: format_token_markup() gibt bereits HTML mit Farben zurück!
+                    # Diese Farben müssen für DE/EN erhalten bleiben!
                     formatted = format_token_markup(tok, is_greek_row=True, base_font_size=gr_size)
                     gr_row.append(Paragraph(formatted, token_gr_style))
                 else:
                     gr_row.append('')
             rows.append(gr_row)
         
-        # DE Alternativen
-        for de_line in slice_de_lines:
+        # DE Alternativen - ALLE ZEILEN RENDERN!
+        for de_idx, de_line in enumerate(slice_de_lines):
             if not any(de_line):
                 continue
             de_row = []
@@ -1709,8 +1708,8 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                     de_row.append('')
             rows.append(de_row)
         
-        # EN Alternativen
-        for en_line in slice_en_lines:
+        # EN Alternativen - ALLE ZEILEN RENDERN!
+        for en_idx, en_line in enumerate(slice_en_lines):
             if not any(en_line):
                 continue
             en_row = []
@@ -1747,17 +1746,20 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
         # Erstelle Tabelle
         table = Table(rows, colWidths=col_widths, hAlign=table_halign)
         
-        # Style
+        # Style mit DIFFERENZIERTEM PADDING
         table_style_commands = [
             ('VALIGN', (0, 0), (-1, -1), 'TOP'),
             ('LEFTPADDING', (0, 0), (-1, -1), 1),
             ('RIGHTPADDING', (0, 0), (-1, -1), 1),
-            ('BOTTOMPADDING', (0, 0), (-1, -1), 1),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 0.5),  # Minimal bottom padding
         ]
-        # GR Zeile: Normales Padding
+        
+        # ERSTE ZEILE (erste GR Alternative): Normales Top-Padding
         if len(rows) > 0:
             table_style_commands.append(('TOPPADDING', (0, 0), (-1, 0), 1))
-        # DE/EN Zeilen: KEIN Top-Padding
+        
+        # ALLE WEITEREN ZEILEN (weitere GR Alternativen + DE + EN): KEIN Top-Padding!
+        # Das macht die Alternativen eng untereinander (wie in Poesie)
         if len(rows) > 1:
             table_style_commands.append(('TOPPADDING', (0, 1), (-1, -1), 0))
         
