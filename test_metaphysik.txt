@@ -1,0 +1,3 @@
+{PARA=1|SPEAKER=}τὸ#(Art)(N) ὂν$(Prä)(Akt)(N) λέγεται-(Prä)(M/P) πολλαχῶς(Adv), καθάπερ+(Kon) διειλόμεθα§(AorS)(Med) πρότερον(Adv) ἐν(Prp)
+{PARA=1|SPEAKER=}das Seiendes sagt|sich vielfach, wie wir|unterschieden|haben früher in
+{PARA=1|SPEAKER=}the being is|said in|many|ways, just|as we|divided earlier in

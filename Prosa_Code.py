@@ -1718,8 +1718,14 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                 if col_idx < len(gr_line):
                     tok = gr_line[col_idx]
                     if tok:
-                        # Formatiere Token MIT Farben
+                        # Formatiere Token MIT Farben (format_token_markup entfernt # + - § $ automatisch!)
                         formatted = format_token_markup(tok, is_greek_row=True, base_font_size=token_gr_style.fontSize)
+                        
+                        # Ab 2. Alternative: Kleinere Schrift via <font size="...">
+                        if gr_idx >= 1:
+                            smaller_size = int(token_gr_style.fontSize * 0.85)
+                            formatted = f'<font size="{smaller_size}">{formatted}</font>'
+                        
                         alternatives_html.append(formatted)
             
             # Kombiniere mit <br/> (Zeilenumbruch innerhalb der Zelle)
@@ -1746,23 +1752,16 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                     if tok:
                         display_tok = tok.replace('|', '') if hide_pipes else tok
                         
-                        # Farbe aus GR-Token extrahieren
-                        color = None
-                        if de_idx < len(slice_gr_lines) and col_idx < len(slice_gr_lines[de_idx]):
-                            gr_tok = slice_gr_lines[de_idx][col_idx]
-                            if gr_tok:
-                                formatted_gr = format_token_markup(gr_tok, is_greek_row=True, base_font_size=token_gr_style.fontSize)
-                                color = extract_color_from_html(formatted_gr)
+                        # Formatiere Token MIT Farben (format_token_markup entfernt # + - § $ automatisch!)
+                        # Für DE/EN verwenden wir is_greek_row=False
+                        formatted = format_token_markup(display_tok, is_greek_row=False, base_font_size=token_de_style.fontSize)
                         
-                        # Style: Ab zweiter Alternative kleiner
-                        use_style = token_de_style_small if de_idx >= 1 else token_de_style
-                        size_attr = f' size="{int(use_style.fontSize)}"' if de_idx >= 1 else ''
+                        # Ab 2. Alternative: Kleinere Schrift via <font size="...">
+                        if de_idx >= 1:
+                            smaller_size = int(token_de_style.fontSize * 0.85)
+                            formatted = f'<font size="{smaller_size}">{formatted}</font>'
                         
-                        if color:
-                            html = f'<font color="{color}"{size_attr}>{xml_escape(display_tok)}</font>'
-                        else:
-                            html = f'<font{size_attr}>{xml_escape(display_tok)}</font>'
-                        alternatives_html.append(html)
+                        alternatives_html.append(formatted)
             
             if alternatives_html:
                 combined_html = '<br/>'.join(alternatives_html)
@@ -1787,23 +1786,16 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                     if tok:
                         display_tok = tok.replace('|', '') if hide_pipes else tok
                         
-                        # Farbe aus GR-Token extrahieren
-                        color = None
-                        if en_idx < len(slice_gr_lines) and col_idx < len(slice_gr_lines[en_idx]):
-                            gr_tok = slice_gr_lines[en_idx][col_idx]
-                            if gr_tok:
-                                formatted_gr = format_token_markup(gr_tok, is_greek_row=True, base_font_size=token_gr_style.fontSize)
-                                color = extract_color_from_html(formatted_gr)
+                        # Formatiere Token MIT Farben (format_token_markup entfernt # + - § $ automatisch!)
+                        # Für EN verwenden wir is_greek_row=False
+                        formatted = format_token_markup(display_tok, is_greek_row=False, base_font_size=token_de_style.fontSize)
                         
-                        # Style: Ab zweiter Alternative kleiner
-                        use_style = token_en_style_small if en_idx >= 1 else token_de_style
-                        size_attr = f' size="{int(use_style.fontSize)}"' if en_idx >= 1 else ''
+                        # Ab 2. Alternative: Kleinere Schrift via <font size="...">
+                        if en_idx >= 1:
+                            smaller_size = int(token_de_style.fontSize * 0.85)
+                            formatted = f'<font size="{smaller_size}">{formatted}</font>'
                         
-                        if color:
-                            html = f'<font color="{color}"{size_attr}>{xml_escape(display_tok)}</font>'
-                        else:
-                            html = f'<font{size_attr}>{xml_escape(display_tok)}</font>'
-                        alternatives_html.append(html)
+                        alternatives_html.append(formatted)
             
             if alternatives_html:
                 combined_html = '<br/>'.join(alternatives_html)
