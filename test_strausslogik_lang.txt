@@ -1,5 +1,0 @@
-§1 Langer Satz mit Straußlogik (sollte umbrechen!)
-
-4 ἐν{Prp} δὲ{Kon} τῷ{Art} χρόνῳ{N} τούτῳ{Pron} οἱ{Art} +Λακεδαιμόνιοι{N}/Ἀθηναῖοι{N}/Κορίνθιοι{N} ἐστρατεύοντο{V,Imp} ἐπὶ{Prp} τοὺς{Art} -Τεγεήτας{N}/Ἀργείους{N}/Θηβαίους{N} καὶ{Kon} ἐνίκησαν{V,Aor} μάχῃ{N} §μεγάλῃ{Adj}/λαμπρᾷ{Adj}/δεινῇ{Adj} καὶ{Kon} $καλῇ{Adj}/ἀγαθῇ{Adj}
-in aber der Zeit dieser die +Spartaner/Athener/Korinther zogen|zu|Felde gegen die -Tegeaten/Argiver/Thebaner und siegten Schlacht §großer/glänzender/schrecklicher und $schöner/guter
-in but the time this the +Spartans/Athenians/Corinthians campaigned against the -Tegeans/Argives/Thebans and won battle §great/brilliant/terrible and $beautiful/good

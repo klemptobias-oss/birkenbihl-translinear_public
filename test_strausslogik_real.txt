@@ -1,8 +1,0 @@
-=== TEST: STRAUßLOGIK MIT ÜBERSETZUNGEN ===
-
-=== § 1 ===
-Der  Mann  geht.
-the  man/human  goes.
-
-Er  trinkt  Wein.
-he  drinks  wine/beverage.
