@@ -1512,6 +1512,19 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
     from reportlab.platypus import Table, TableStyle, Paragraph
     from reportlab.lib import colors
     from reportlab.pdfbase.pdfmetrics import stringWidth
+    from reportlab.lib.styles import ParagraphStyle
+    
+    # WICHTIG: Erstelle KLEINERE Styles für Alternativen-Zeilen (wie in Poesie)
+    # Die erste DE/EN-Zeile ist normal groß, weitere Alternativen sind kleiner
+    de_size_alternative = token_de_style.fontSize * 0.85  # 15% kleiner
+    en_size_alternative = token_de_style.fontSize * 0.85
+    
+    token_de_style_small = ParagraphStyle('TokDE_Alt', parent=token_de_style,
+        fontSize=de_size_alternative, leading=de_size_alternative * 1.2,
+        spaceBefore=0, spaceAfter=0)
+    token_en_style_small = ParagraphStyle('TokEN_Alt', parent=token_de_style,
+        fontSize=en_size_alternative, leading=en_size_alternative * 1.2,
+        spaceBefore=0, spaceAfter=0)
     
     # Handle None inputs
     if gr_tokens_alternatives is None:
@@ -1629,28 +1642,31 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
         # ═══════════════════════════════════════════════════════════════════
         # FARB-EXTRAKTION für diesen Slice
         # ═══════════════════════════════════════════════════════════════════
-        def extract_color_from_token(token: str) -> str:
-            """Extrahiert Farbcode aus Token"""
-            if not token:
+        def extract_color_from_html(html: str) -> str:
+            """Extrahiert Farbcode aus HTML-String"""
+            if not html:
                 return None
-            raw = token.strip()
-            if '#' in raw:
-                return '#FF0000'  # Rot
-            elif '+' in raw:
-                return '#1E90FF'  # Blau
-            elif '-' in raw:
-                return '#228B22'  # Grün
-            elif '§' in raw:
-                return '#9370DB'  # Violett
-            elif '$' in raw:
-                return '#FFA500'  # Orange
+            # Suche nach <font color="...">
+            import re
+            match = re.search(r'<font\s+color="([^"]+)"', html, re.IGNORECASE)
+            if match:
+                return match.group(1)
             return None
         
+        # WICHTIG: Formatiere GR-Tokens und extrahiere Farben aus dem HTML!
+        # Das ist kritisch, weil format_token_markup() die Tag-Farben hinzufügt
+        gr_formatted_tokens = []
         gr_colors = []
         if slice_gr_lines and len(slice_gr_lines) > 0:
             for tok in slice_gr_lines[0]:
-                color = extract_color_from_token(tok)
-                gr_colors.append(color)
+                if tok:
+                    formatted = format_token_markup(tok, is_greek_row=True, base_font_size=token_gr_style.fontSize)
+                    gr_formatted_tokens.append(formatted)
+                    color = extract_color_from_html(formatted)
+                    gr_colors.append(color)
+                else:
+                    gr_formatted_tokens.append('')
+                    gr_colors.append(None)
         
         # ═══════════════════════════════════════════════════════════════════
         # TABELLEN-ZEILEN für diesen Slice
@@ -1675,15 +1691,22 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                     gr_row.append(Paragraph(speaker_display, style_speaker))
                 else:
                     gr_row.append('')
-            # GR Tokens mit Farbübertragung
-            for col_idx, tok in enumerate(gr_line):
-                if tok:
-                    # KRITISCH: format_token_markup() gibt bereits HTML mit Farben zurück!
-                    # Diese Farben müssen für DE/EN erhalten bleiben!
-                    formatted = format_token_markup(tok, is_greek_row=True, base_font_size=gr_size)
-                    gr_row.append(Paragraph(formatted, token_gr_style))
-                else:
-                    gr_row.append('')
+            # GR Tokens - ERSTE Zeile verwendet vorformatierte Tokens, weitere formatieren neu
+            if gr_idx == 0 and gr_formatted_tokens:
+                # Erste Zeile: Verwende bereits formatierte Tokens (mit extrahierten Farben)
+                for formatted in gr_formatted_tokens:
+                    if formatted:
+                        gr_row.append(Paragraph(formatted, token_gr_style))
+                    else:
+                        gr_row.append('')
+            else:
+                # Weitere Zeilen: Formatiere neu
+                for col_idx, tok in enumerate(gr_line):
+                    if tok:
+                        formatted = format_token_markup(tok, is_greek_row=True, base_font_size=token_gr_style.fontSize)
+                        gr_row.append(Paragraph(formatted, token_gr_style))
+                    else:
+                        gr_row.append('')
             rows.append(gr_row)
         
         # DE Alternativen - ALLE ZEILEN RENDERN!
@@ -1695,6 +1718,10 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                 de_row.append('')
             if speaker_display:
                 de_row.append('')
+            
+            # WICHTIG: Ab zweiter Zeile (de_idx >= 1) kleineren Style verwenden
+            de_style = token_de_style_small if de_idx >= 1 else token_de_style
+            
             for col_idx, tok in enumerate(de_line):
                 if tok:
                     display_tok = tok.replace('|', '') if hide_pipes else tok
@@ -1703,7 +1730,7 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                         html = f'<font color="{color}">{xml_escape(display_tok)}</font>'
                     else:
                         html = xml_escape(display_tok)
-                    de_row.append(Paragraph(html, token_de_style))
+                    de_row.append(Paragraph(html, de_style))
                 else:
                     de_row.append('')
             rows.append(de_row)
@@ -1717,6 +1744,10 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                 en_row.append('')
             if speaker_display:
                 en_row.append('')
+            
+            # WICHTIG: Ab zweiter Zeile (en_idx >= 1) kleineren Style verwenden
+            en_style = token_en_style_small if en_idx >= 1 else token_de_style
+            
             for col_idx, tok in enumerate(en_line):
                 if tok:
                     display_tok = tok.replace('|', '') if hide_pipes else tok
@@ -1725,7 +1756,7 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                         html = f'<font color="{color}">{xml_escape(display_tok)}</font>'
                     else:
                         html = xml_escape(display_tok)
-                    en_row.append(Paragraph(html, token_de_style))
+                    en_row.append(Paragraph(html, en_style))
                 else:
                     en_row.append('')
             rows.append(en_row)
@@ -1746,22 +1777,18 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
         # Erstelle Tabelle
         table = Table(rows, colWidths=col_widths, hAlign=table_halign)
         
-        # Style mit DIFFERENZIERTEM PADDING
+        # Style mit MINIMALSTEM PADDING für eng untereinander stehende Zeilen
         table_style_commands = [
             ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-            ('LEFTPADDING', (0, 0), (-1, -1), 1),
-            ('RIGHTPADDING', (0, 0), (-1, -1), 1),
-            ('BOTTOMPADDING', (0, 0), (-1, -1), 0.5),  # Minimal bottom padding
+            ('LEFTPADDING', (0, 0), (-1, -1), 0.5),    # Minimal
+            ('RIGHTPADDING', (0, 0), (-1, -1), 0.5),   # Minimal
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 0),    # 0 für eng untereinander
+            ('TOPPADDING', (0, 0), (-1, -1), 0),       # Standard: 0
         ]
         
-        # ERSTE ZEILE (erste GR Alternative): Normales Top-Padding
+        # NUR ERSTE ZEILE bekommt normales Top-Padding (für Abstand zur vorherigen Table)
         if len(rows) > 0:
             table_style_commands.append(('TOPPADDING', (0, 0), (-1, 0), 1))
-        
-        # ALLE WEITEREN ZEILEN (weitere GR Alternativen + DE + EN): KEIN Top-Padding!
-        # Das macht die Alternativen eng untereinander (wie in Poesie)
-        if len(rows) > 1:
-            table_style_commands.append(('TOPPADDING', (0, 1), (-1, -1), 0))
         
         table.setStyle(TableStyle(table_style_commands))
         tables.append(table)
