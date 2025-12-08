@@ -1,0 +1,3 @@
+{PARA=1|SPEAKER=A}nomen#Haus/Hof/Gebäude verb$ist artikel#ein nomen#Test/Versuch
+
+{PARA=2|SPEAKER=B}verb$Ich/Wir verb$gehe/laufen präp+nach nomen#Hause/Heim

@@ -1688,93 +1688,131 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
         # ═══════════════════════════════════════════════════════════════════
         rows = []
         
-        # GR Alternativen - ALLE ZEILEN RENDERN! (KRITISCH FÜR STRAUßLOGIK!)
-        for gr_idx, gr_line in enumerate(slice_gr_lines):
-            if not any(gr_line):
-                continue
-            
-            gr_row = []
-            # Para-Spalte (nur first_slice UND erste Alternative)
-            if para_display:
-                if first_slice and gr_idx == 0:
-                    gr_row.append(Paragraph(para_display, style_para))
-                else:
-                    gr_row.append('')
-            # Speaker-Spalte (nur first_slice UND erste Alternative)
-            if speaker_display:
-                if first_slice and gr_idx == 0:
-                    gr_row.append(Paragraph(speaker_display, style_speaker))
-                else:
-                    gr_row.append('')
-            # GR Tokens - ERSTE Zeile verwendet vorformatierte Tokens, weitere formatieren neu
-            if gr_idx == 0 and gr_formatted_tokens:
-                # Erste Zeile: Verwende bereits formatierte Tokens (mit extrahierten Farben)
-                for formatted in gr_formatted_tokens:
-                    if formatted:
-                        gr_row.append(Paragraph(formatted, token_gr_style))
-                    else:
-                        gr_row.append('')
+        # ============================================================
+        # NEUE STRAUßLOGIK: Alternativen IN DERSELBEN ZELLE statt separate Rows!
+        # ============================================================
+        
+        # 1. GR-Zeile: Kombiniere ALLE Alternativen in EINER Zeile
+        gr_row = []
+        
+        # Para-Spalte (nur first_slice)
+        if para_display:
+            if first_slice:
+                gr_row.append(Paragraph(para_display, style_para))
             else:
-                # Weitere Zeilen: Formatiere neu
-                for col_idx, tok in enumerate(gr_line):
+                gr_row.append('')
+        
+        # Speaker-Spalte (nur first_slice)
+        if speaker_display:
+            if first_slice:
+                gr_row.append(Paragraph(speaker_display, style_speaker))
+            else:
+                gr_row.append('')
+        
+        # GR Tokens: Kombiniere ALLE Alternativen mit <br/> in EINER Zelle
+        num_cols = len(slice_gr_lines[0]) if slice_gr_lines else 0
+        for col_idx in range(num_cols):
+            # Sammle alle Alternativen für diese Spalte
+            alternatives_html = []
+            for gr_idx, gr_line in enumerate(slice_gr_lines):
+                if col_idx < len(gr_line):
+                    tok = gr_line[col_idx]
                     if tok:
+                        # Formatiere Token MIT Farben
                         formatted = format_token_markup(tok, is_greek_row=True, base_font_size=token_gr_style.fontSize)
-                        gr_row.append(Paragraph(formatted, token_gr_style))
-                    else:
-                        gr_row.append('')
-            rows.append(gr_row)
+                        alternatives_html.append(formatted)
+            
+            # Kombiniere mit <br/> (Zeilenumbruch innerhalb der Zelle)
+            if alternatives_html:
+                combined_html = '<br/>'.join(alternatives_html)
+                gr_row.append(Paragraph(combined_html, token_gr_style))
+            else:
+                gr_row.append('')
         
-        # DE Alternativen - ALLE ZEILEN RENDERN!
-        for de_idx, de_line in enumerate(slice_de_lines):
-            if not any(de_line):
-                continue
-            de_row = []
-            if para_display:
-                de_row.append('')
-            if speaker_display:
-                de_row.append('')
-            
-            # WICHTIG: Ab zweiter Zeile (de_idx >= 1) kleineren Style verwenden
-            de_style = token_de_style_small if de_idx >= 1 else token_de_style
-            
-            for col_idx, tok in enumerate(de_line):
-                if tok:
-                    display_tok = tok.replace('|', '') if hide_pipes else tok
-                    color = gr_colors[col_idx] if col_idx < len(gr_colors) else None
-                    if color:
-                        html = f'<font color="{color}">{xml_escape(display_tok)}</font>'
-                    else:
-                        html = xml_escape(display_tok)
-                    de_row.append(Paragraph(html, de_style))
-                else:
-                    de_row.append('')
-            rows.append(de_row)
+        rows.append(gr_row)
         
-        # EN Alternativen - ALLE ZEILEN RENDERN!
-        for en_idx, en_line in enumerate(slice_en_lines):
-            if not any(en_line):
-                continue
-            en_row = []
-            if para_display:
-                en_row.append('')
-            if speaker_display:
-                en_row.append('')
+        # 2. DE-Zeile: Kombiniere ALLE Alternativen in EINER Zeile
+        de_row = []
+        if para_display:
+            de_row.append('')
+        if speaker_display:
+            de_row.append('')
+        
+        for col_idx in range(num_cols):
+            alternatives_html = []
+            for de_idx, de_line in enumerate(slice_de_lines):
+                if col_idx < len(de_line):
+                    tok = de_line[col_idx]
+                    if tok:
+                        display_tok = tok.replace('|', '') if hide_pipes else tok
+                        
+                        # Farbe aus GR-Token extrahieren
+                        color = None
+                        if de_idx < len(slice_gr_lines) and col_idx < len(slice_gr_lines[de_idx]):
+                            gr_tok = slice_gr_lines[de_idx][col_idx]
+                            if gr_tok:
+                                formatted_gr = format_token_markup(gr_tok, is_greek_row=True, base_font_size=token_gr_style.fontSize)
+                                color = extract_color_from_html(formatted_gr)
+                        
+                        # Style: Ab zweiter Alternative kleiner
+                        use_style = token_de_style_small if de_idx >= 1 else token_de_style
+                        size_attr = f' size="{int(use_style.fontSize)}"' if de_idx >= 1 else ''
+                        
+                        if color:
+                            html = f'<font color="{color}"{size_attr}>{xml_escape(display_tok)}</font>'
+                        else:
+                            html = f'<font{size_attr}>{xml_escape(display_tok)}</font>'
+                        alternatives_html.append(html)
             
-            # WICHTIG: Ab zweiter Zeile (en_idx >= 1) kleineren Style verwenden
-            en_style = token_en_style_small if en_idx >= 1 else token_de_style
+            if alternatives_html:
+                combined_html = '<br/>'.join(alternatives_html)
+                de_row.append(Paragraph(combined_html, token_de_style))
+            else:
+                de_row.append('')
+        
+        rows.append(de_row)
+        
+        # 3. EN-Zeile: Kombiniere ALLE Alternativen in EINER Zeile
+        en_row = []
+        if para_display:
+            en_row.append('')
+        if speaker_display:
+            en_row.append('')
+        
+        for col_idx in range(num_cols):
+            alternatives_html = []
+            for en_idx, en_line in enumerate(slice_en_lines):
+                if col_idx < len(en_line):
+                    tok = en_line[col_idx]
+                    if tok:
+                        display_tok = tok.replace('|', '') if hide_pipes else tok
+                        
+                        # Farbe aus GR-Token extrahieren
+                        color = None
+                        if en_idx < len(slice_gr_lines) and col_idx < len(slice_gr_lines[en_idx]):
+                            gr_tok = slice_gr_lines[en_idx][col_idx]
+                            if gr_tok:
+                                formatted_gr = format_token_markup(gr_tok, is_greek_row=True, base_font_size=token_gr_style.fontSize)
+                                color = extract_color_from_html(formatted_gr)
+                        
+                        # Style: Ab zweiter Alternative kleiner
+                        use_style = token_en_style_small if en_idx >= 1 else token_de_style
+                        size_attr = f' size="{int(use_style.fontSize)}"' if en_idx >= 1 else ''
+                        
+                        if color:
+                            html = f'<font color="{color}"{size_attr}>{xml_escape(display_tok)}</font>'
+                        else:
+                            html = f'<font{size_attr}>{xml_escape(display_tok)}</font>'
+                        alternatives_html.append(html)
             
-            for col_idx, tok in enumerate(en_line):
-                if tok:
-                    display_tok = tok.replace('|', '') if hide_pipes else tok
-                    color = gr_colors[col_idx] if col_idx < len(gr_colors) else None
-                    if color:
-                        html = f'<font color="{color}">{xml_escape(display_tok)}</font>'
-                    else:
-                        html = xml_escape(display_tok)
-                    en_row.append(Paragraph(html, en_style))
-                else:
-                    en_row.append('')
-            rows.append(en_row)
+            if alternatives_html:
+                combined_html = '<br/>'.join(alternatives_html)
+                en_row.append(Paragraph(combined_html, token_de_style))
+            else:
+                en_row.append('')
+        
+        rows.append(en_row)
+
         
         if not rows:
             i = j
