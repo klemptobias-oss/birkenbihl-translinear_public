@@ -990,12 +990,27 @@ def expand_slash_alternatives(tokens: list[str]) -> list[list[str]]:
                 new_line.append('')
                 continue
             
-            # Splitte Token an `/`
-            alternatives = token.split('/')
+            # KRITISCH: Extrahiere Tags/Marker VOR dem Splitten!
+            # Tags wie nomen#, verb$, Farben wie #, +, - müssen auf ALLE Alternativen kopiert werden
+            prefix_tags = ''
+            core_token = token
             
-            # Wähle die entsprechende Alternative (oder letzte, falls Index zu groß)
+            # Extrahiere Tag-Prefix (z.B. "nomen#", "verb$", "nomenD#")
+            import re
+            tag_match = re.match(r'^([a-zA-Z_]+[#\$§+\-])', core_token)
+            if tag_match:
+                prefix_tags = tag_match.group(1)
+                core_token = core_token[len(prefix_tags):]
+            
+            # Splitte Core-Token an `/`
+            alternatives = core_token.split('/')
+            
+            # Wähle die entsprechende Alternative
             if alt_idx < len(alternatives):
-                new_line.append(alternatives[alt_idx])
+                chosen_alt = alternatives[alt_idx]
+                # WICHTIG: Füge Tag-Prefix wieder hinzu!
+                final_token = prefix_tags + chosen_alt if chosen_alt else ''
+                new_line.append(final_token)
             else:
                 # Kein weiteres `/` in diesem Token - verwende leeren String
                 new_line.append('')
