@@ -1150,7 +1150,30 @@ def expand_triple_with_slashes(gr_line: str, de_line: str, en_line: str) -> tupl
     # Finde maximale Anzahl Alternativen
     max_alts = max(len(gr_expanded), len(de_expanded), len(en_expanded))
     
-    # Erweitere alle Listen auf max_alts (mit Leerzeilen)
+    # KRITISCH: Bei 2-sprachigen Zeilen (GR ohne Slashes, nur DE mit Slashes):
+    # GR-Zeile muss auf max_alts expandiert werden, mit ∅ Platzhaltern!
+    # Nicht nur leere Zeilen "(3) ", sondern "(3) ∅ ∅ ∅ ..."!
+    
+    if len(gr_expanded) == 1 and max_alts > 1 and gr_line:
+        # GR hat nur 1 Zeile, aber max_alts > 1 → expandiere GR mit ∅
+        # Extrahiere Tokens aus der ersten GR-Zeile
+        import re
+        match = re.match(r'^(\s*\(\d+[a-z]?\)\s*)(.*)', gr_expanded[0])
+        if match:
+            prefix = match.group(1)
+            content = match.group(2)
+            tokens = content.split()
+            num_tokens = len(tokens)
+            
+            
+            # Erstelle Alternative-Zeilen mit ∅
+            # KRITISCH: Füge ein griechisches Zeichen hinzu, damit der Parser es als GR erkennt!
+            # Verwende ͺ (Greek Ano Teleia) - fast unsichtbar, aber griechisch!
+            for _ in range(max_alts - 1):
+                alt_line = prefix + 'ͺ ' + ' '.join(['∅'] * num_tokens)  # ͺ markiert als griechisch
+                gr_expanded.append(alt_line)
+    
+    # Erweitere alle Listen auf max_alts (mit Leerzeilen als Fallback)
     def pad_to_max(lines_list, max_count, line_prefix):
         """Erweitert Liste auf max_count Zeilen (mit leeren Zeilen)"""
         if not lines_list:
@@ -1234,6 +1257,18 @@ def process_input_file(fname:str):
         next1_match = re.match(r'^\s*\((\d+[a-z]?)\)', next1) if next1 else None
         next2_match = re.match(r'^\s*\((\d+[a-z]?)\)', next2) if next2 else None
         
+        # WICHTIG: Überspringe Kommentare! Kommentare enden mit 'k' wie (8k) oder (125-129k)
+        # Sie sollen NICHT für Slash-Expansion verwendet werden!
+        is_comment = line_num.endswith('k') or line_num.endswith('K')
+        next1_is_comment = next1_match and (next1_match.group(1).endswith('k') or next1_match.group(1).endswith('K')) if next1_match else False
+        next2_is_comment = next2_match and (next2_match.group(1).endswith('k') or next2_match.group(1).endswith('K')) if next2_match else False
+        
+        # Wenn IRGENDEINE Zeile ein Kommentar ist → KEINE Expansion!
+        if is_comment or next1_is_comment or next2_is_comment:
+            expanded_raw.append(line)
+            i += 1
+            continue
+        
         # Prüfe ob mindestens EINE der 3 Zeilen `/` enthält
         has_slash = '/' in line or (next1 and '/' in next1) or (next2 and '/' in next2)
         
@@ -1264,16 +1299,25 @@ def process_input_file(fname:str):
             # Expandiere GR + DE zusammen (EN ist leer)
             gr_lines, de_lines, en_lines = expand_triple_with_slashes(line, next1, '')
             
-            # Füge nur GR und DE hinzu (kein EN)
-            for j in range(len(gr_lines)):
-                if j == 0:
-                    expanded_raw.append(gr_lines[j])
-                    expanded_raw.append(de_lines[j])
-                else:
-                    expanded_raw.append('{STRAUSS_ALT}' + gr_lines[j])
-                    expanded_raw.append('{STRAUSS_ALT}' + de_lines[j])
+            # FLIEßTEXT + STRAUßLOGIK: Füge ALLE Zeilen OHNE Marker hinzu!
+            # Sie werden automatisch zum gleichen Flow zusammengefügt!
+            # Keine {STRAUSS_ALT} Marker mehr → alles fließt zusammen!
             
-            print(f"STRAUßLOGIK: Expandierte 2 Zeilen ({line_num}) → {len(gr_lines)} Gruppen", flush=True)
+            # Füge alle Zeilen hinzu (interleaved: GR1, DE1, EN1, GR2, DE2, EN2, ...)
+            # Bei 2-sprachig ist EN immer leer ('')
+            # WICHTIG: Füge ein Leerzeichen zu leeren EN-Zeilen hinzu, damit sie nicht übersprungen werden!
+            for j in range(len(gr_lines)):
+                expanded_raw.append(gr_lines[j])
+                expanded_raw.append(de_lines[j])
+                # KRITISCH: Wenn EN leer ist, füge die Zeilennummer mit einem Leerzeichen hinzu!
+                # Sonst wird die Zeile beim Parsing als leer übersprungen!
+                en_line = en_lines[j]
+                if not en_line or en_line.strip() == '' or en_line.strip() == line_num or en_line.strip() == f'({line_num})':
+                    # EN ist leer → füge Zeilennummer + Leerzeichen hinzu
+                    en_line = f'({line_num}) '
+                expanded_raw.append(en_line)
+            
+            print(f"STRAUßLOGIK + FLIEßTEXT: Expandierte 2 Zeilen ({line_num}) → {len(gr_lines)} Gruppen (fließen zusammen!)", flush=True)
             i += 2
             continue
         
@@ -1515,8 +1559,9 @@ def process_input_file(fname:str):
                 else:
                     # Deutsche Zeile ohne antike Sprache (ungewöhnlich)
                     pair_block = {'type':'pair', 'gr': '', 'de': line, 'en': '', 'base': base_num}
-                if is_strauss_alternative:
-                    pair_block['_is_strauss_alt'] = True  # Markiere als Alternative
+                # NEU: Einzelne Zeilen sind NIEMALS Alternativen (nur bei num_lines >= 3)
+                # if is_strauss_alternative: <- Diese Variable existiert hier nicht!
+                #     pair_block['_is_strauss_alt'] = True
                 blocks.append(pair_block)
                 i = j
                 continue
@@ -1621,6 +1666,7 @@ def group_pairs_into_flows(blocks):
                 flow_block['_gr_rows'] = [buf_gr] + strauss_gr_rows  # Erste Zeile + Alternativen
                 flow_block['_de_rows'] = [buf_de] + strauss_de_rows
                 flow_block['_en_rows'] = [buf_en] + strauss_en_rows
+                
                 strauss_gr_rows, strauss_de_rows, strauss_en_rows = [], [], []  # Reset
             
             # FLIEßTEXT: Wenn NICHT der erste Block im § → kein § Symbol!
@@ -1755,6 +1801,17 @@ def group_pairs_into_flows(blocks):
             is_strauss_alt = b.get('_is_strauss_alt', False)
             if is_strauss_alt:
                 # Alternative → Speichere als separate Zeile (NICHT zum Hauptbuffer)
+                # WICHTIG: Bei 2-sprachigen Alternativen (GR leer, nur DE hat Slashes):
+                # Fülle GR mit ∅ Platzhaltern, damit die Spalten aligniert sind!
+                
+                # KRITISCH: Prüfe ob gt leer ist ODER nur leere Strings enthält!
+                if (not gt or all(not token for token in gt)) and dt:
+                    # GR ist leer oder nur leere Strings, aber DE hat Tokens → Fülle GR mit ∅
+                    gt = ['∅'] * len(dt)
+                if (not gt or all(not token for token in gt)) and et:
+                    # GR ist leer oder nur leere Strings, aber EN hat Tokens → Fülle GR mit ∅
+                    gt = ['∅'] * len(et)
+                
                 strauss_gr_rows.append(list(gt))
                 strauss_de_rows.append(list(dt))
                 strauss_en_rows.append(list(et))
@@ -1884,14 +1941,14 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
         de_token = ''
         for de_line in de_lines:
             if k < len(de_line) and de_line[k]:
-                display_tok = de_line[k].replace('|', '') if hide_pipes else de_line[k]
+                display_tok = de_line[k].replace('|', ' ') if hide_pipes else de_line[k]
                 if len(display_tok) > len(de_token):
                     de_token = display_tok
         
         en_token = ''
         for en_line in en_lines:
             if k < len(en_line) and en_line[k]:
-                display_tok = en_line[k].replace('|', '') if hide_pipes else en_line[k]
+                display_tok = en_line[k].replace('|', ' ') if hide_pipes else en_line[k]
                 if len(display_tok) > len(en_token):
                     en_token = display_tok
         
@@ -2985,11 +3042,6 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 
                 print(f"STRAUßLOGIK + FLIEßTEXT: Rendering Multi-Row (GR={len(gr_rows)} rows, DE={len(de_rows)} rows, EN={len(de_rows)} rows)", flush=True)
                 
-                # DEBUG: Zeige erste 3 Tokens von jeder GR-Row
-                for idx, gr_row in enumerate(gr_rows[:3]):
-                    tokens_preview = gr_row[:3] if len(gr_row) >= 3 else gr_row
-                    print(f"  DEBUG GR Row {idx}: {tokens_preview}", flush=True)
-                
                 # Verwende build_tables_for_alternatives für Multi-Row-Rendering
                 tables = build_tables_for_alternatives(
                     gr_tokens_alternatives=gr_rows,  # GR kann auch Multi-Row sein!
@@ -3247,15 +3299,19 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
 
         # NEU: Kommentar-Zeilen (zahlk oder zahl-zahlk) - GANZ EINFACH: Text in grauer Box
         if t == 'comment':
-            print(f"Prosa_Code: Processing comment block at idx={idx}", flush=True)
             original_line = b.get('original_line', '')
             content = b.get('content', '')
             line_num = b.get('line_num', '')
             
-            # WICHTIG: Kommentar-Text direkt aus original_line extrahieren (einfach!)
-            # Format: "(105k) Text" oder "(71-77k) Text" → wird zu "[105] Text" oder "[71-77] Text"
+            # WICHTIG: line_num ist bereits OHNE 'k' Suffix (wurde beim Parsen entfernt)!
+            # Erstelle Zeilennummer-Präfix direkt aus line_num
             line_num_prefix = ""
-            if not content and original_line:
+            if line_num:
+                # line_num kann '500' oder '1-10' sein (OHNE 'k'!)
+                line_num_prefix = f"[{line_num}] "
+            
+            # Falls kein line_num vorhanden, versuche aus original_line zu extrahieren
+            if not line_num_prefix and original_line:
                 # Extrahiere Zeilennummer-Bereich und entferne (XYZk)-Marker
                 line_num_match = re.match(r'^\((\d+(?:-\d+)?)k\)\s*(.*)', original_line)
                 if line_num_match:
@@ -3763,6 +3819,12 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             print(f"FLIEßTEXT + STRAUßLOGIK: Kombiniere {len(flow_blocks_in_para)} flow-Blöcke → {len(combined_gr_tokens)} Tokens (STRAUß={has_any_strauss}, § '{first_para_label}')", flush=True)
             
+            # WICHTIG: Sammle ALLE Kommentare aus allen kombinierten flow-Blöcken!
+            combined_comments = []
+            for block in flow_blocks_in_para:
+                if 'comments' in block:
+                    combined_comments.extend(block['comments'])
+            
             # Erstelle kombinierten Block mit § Symbol vom ersten Block!
             combined_block = {
                 'type': 'flow',
@@ -3773,6 +3835,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 'speaker': b.get('speaker', ''),
                 'has_en': bool(combined_en_tokens),
             }
+            
+            # WICHTIG: Füge gesammelte Kommentare hinzu!
+            if combined_comments:
+                combined_block['comments'] = combined_comments
+                print(f"  → {len(combined_comments)} Kommentare übernommen", flush=True)
             
             # STRAUßLOGIK: Füge Multi-Row-Struktur hinzu, wenn vorhanden!
             if has_any_strauss and combined_gr_rows:
@@ -3789,7 +3856,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     elements.extend(valid_tables)
                 
                 elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
-                render_block_comments(b, elements, doc)
+                # WICHTIG: Übergebe combined_block statt b (enthält alle gesammelten Kommentare!)
+                render_block_comments(combined_block, elements, doc)
                 
             except Exception as e:
                 logger.exception("Prosa_Code: build_flow_tables() ERROR: %s", e)

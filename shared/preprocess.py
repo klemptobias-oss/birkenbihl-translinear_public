@@ -1033,9 +1033,41 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
         # Da wir gr_tokens durch new_gr_tokens ersetzt haben, müssen wir ALLE Rows aktualisieren!
         
         if '_gr_rows' in new_block and len(new_block['_gr_rows']) > 0:
-            # GR-Rows: Alle Rows sind WIEDERHOLUNGEN der gleichen GR-Zeile
-            # → Ersetze ALLE mit gefärbten Tokens aus new_gr_tokens
-            new_block['_gr_rows'] = [list(new_gr_tokens) for _ in range(len(new_block['_gr_rows']))]
+            # GR-Rows: Bei 3-sprachig sind alle Rows identisch, bei 2-sprachig haben Alternativen ∅!
+            # → Ersetze NUR die ERSTE Row mit new_gr_tokens, behalte Alternativen (mit ∅)!
+            processed_gr_rows = [list(new_gr_tokens)]  # Erste Row: gefärbte Hauptzeile
+            
+            # Alternativen (ab Index 1): Übertrage Farbsymbole zu ∅, behalte andere Tokens
+            for row_idx in range(1, len(new_block['_gr_rows'])):
+                original_gr_row = new_block['_gr_rows'][row_idx]
+                processed_row = []
+                for i, original_tok in enumerate(original_gr_row):
+                    if i < len(new_gr_tokens):
+                        # Extrahiere Farbsymbol aus new_gr_tokens
+                        colored_tok = new_gr_tokens[i]
+                        color_symbol = None
+                        for sym in COLOR_SYMBOLS:
+                            if sym in colored_tok:
+                                color_symbol = sym
+                                break
+                        
+                        # Wenn Original ∅ ist, übertrage Farbe zu ∅
+                        if original_tok == '∅' and color_symbol:
+                            processed_row.append(color_symbol + '∅')
+                        # Sonst: Füge Farbsymbol zum Original hinzu (wie bei DE)
+                        elif color_symbol and color_symbol not in original_tok:
+                            match = RE_WORD_START.search(original_tok)
+                            if match:
+                                processed_row.append(original_tok[:match.start(2)] + color_symbol + original_tok[match.start(2):])
+                            else:
+                                processed_row.append(color_symbol + original_tok)
+                        else:
+                            processed_row.append(original_tok)
+                    else:
+                        processed_row.append(original_tok)
+                processed_gr_rows.append(processed_row)
+            
+            new_block['_gr_rows'] = processed_gr_rows
         
         if '_de_rows' in new_block and len(new_block['_de_rows']) > 0:
             # DE-Rows: Jede Row hat ANDERE Wörter (Alternativen), aber GLEICHE Struktur

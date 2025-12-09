@@ -78,28 +78,28 @@ for block in flow_blocks_in_para:
     combined_gr_tokens.extend(block['gr_tokens'])
     combined_de_tokens.extend(block['de_tokens'])
     combined_en_tokens.extend(block['en_tokens'])
-    
+
     # Hauptzeilen erweitern
     combined_gr_rows[0].extend(block['gr_tokens'])
     combined_de_rows[0].extend(block['de_tokens'])
     combined_en_rows[0].extend(block['en_tokens'])
-    
+
     # STRAUßLOGIK: Multi-Row-Struktur einbetten!
     if block.get('_has_strauss'):
         has_any_strauss = True
         gr_rows = block['_gr_rows']
         de_rows = block['_de_rows']
         en_rows = block['_en_rows']
-        
+
         # Finde Position im kombinierten Block
         # (wo die Tokens dieses Blocks beginnen)
         position_offset = len(combined_gr_rows[0]) - len(block['gr_tokens'])
-        
+
         # Füge Alternativ-Zeilen hinzu (ab Zeile 1)
         for i in range(1, len(gr_rows)):
             # Erstelle Padding davor (∅ für vorherige Blöcke)
             padding = ['∅'] * position_offset
-            
+
             # Füge Alternative hinzu
             combined_gr_rows.append(padding + list(gr_rows[i]))
             combined_de_rows.append(padding + list(de_rows[i]))
