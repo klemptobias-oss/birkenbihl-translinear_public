@@ -1989,6 +1989,8 @@ def group_pairs_into_flows(blocks):
 
             # Sprecher nur aus der antiken Zeile (GR) entfernen
             # DE und EN Zeilen haben bereits keine Sprecher mehr (wurden beim Parsing entfernt)
+            # DEBUG: Zeige erste 3 Tokens BEVOR pop_leading_speaker()
+            print(f"DEBUG: Before pop_leading_speaker: gt[:3]={gt[:3]}", flush=True)
             sp_gr, gt = pop_leading_speaker(gt)
             print(f"DEBUG: Extracted speaker='{sp_gr}', remaining tokens={len(gt)}", flush=True)
             if sp_gr:
@@ -2075,13 +2077,17 @@ def group_pairs_into_flows(blocks):
             is_first_flow_in_para = True
             continue
 
-        # NEU: Kommentare → NICHT flushen! Kommentare gehören zum aktuellen Flow-Block!
-        # KRITISCHER FIX: Kommentare dürfen den Flow NICHT unterbrechen, da sonst der
-        # active_speaker verloren geht (Sprecher steht nur in der ersten Zeile, nicht in jeder!)
+        # NEU: Kommentare → Flush nur bei Sprecherwechsel, nicht bei JEDEM Kommentar!
+        # KRITISCHER FIX: Kommentare müssen gerendert werden, aber active_speaker darf
+        # nicht verloren gehen (Sprecher steht nur in der ersten Zeile, nicht in jeder!)
         if t == 'comment':
-            # Kommentare sammeln für den aktuellen Flow (werden bei flush() übertragen)
-            # WICHTIG: Kommentare sind vollständige Blöcke, nicht nur Strings!
-            accumulated_comments.append(b)
+            # WICHTIG: Nur flushen wenn bereits Tokens gesammelt wurden
+            # Dadurch erscheint der Kommentar NACH dem zugehörigen Text
+            if buf_gr or buf_de or buf_en:
+                flush()
+            # Kommentar als separaten Block hinzufügen (OHNE active_speaker zu ändern!)
+            flows.append(b)
+            # active_speaker bleibt erhalten → nächster pair-Block hat denselben Sprecher!
             continue
 
         # Strukturelle Blöcke → vorher flushen
