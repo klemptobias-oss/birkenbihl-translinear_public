@@ -1310,27 +1310,23 @@ def _resolve_tags_for_rule(normalized_rule_id: str) -> List[str]:
 
 def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[str, Dict[str, Any]]]) -> bool:
     """
-    EINFACHE, DIREKTE LOGIK:
-    Übersetzung wird NUR ausgeblendet wenn ALLE Tags des Tokens auf "hideTranslation" stehen.
-    Solange mindestens EIN Tag noch sichtbar sein will → Übersetzung bleibt!
+    WORTART-BASIERTE LOGIK (restauriert):
+    Übersetzung wird ausgeblendet wenn die HAUPT-WORTART des Tokens ausgeblendet werden soll.
     
-    WICHTIG: Wir prüfen JEDES TAG EINZELN, unabhängig von Wortarten!
-    - Wenn ein Tag explizit auf hideTranslation steht → will ausblenden
-    - Wenn ein Tag NICHT auf hideTranslation steht → will sichtbar bleiben
-    - Nur wenn ALLE Tags ausblenden wollen → Übersetzung verschwindet
+    WICHTIG: Enklitische Tags (Kon, Pt, Prp, Du) sind MODIFIER, keine eigenen Wortarten!
+    Sie ändern NICHT die Haupt-Wortart des Tokens.
     
-    Beispiele:
-      Token: Sorōrem(Adj)(A)
-      Config: 'adjektiv' → all=true, ABER 'adjektiv_A' → hideTranslation=false
-      → (Adj) will ausblenden, (A) will NICHT ausblenden → Übersetzung bleibt!
-      
-      Token: τὼ(Art)(Du)(N)
-      Config: 'artikel' → all=true, 'nomen_Du' → hideTranslation=true, 'nomen_N' → hideTranslation=true
-      → ALLE drei Tags wollen ausblenden → Übersetzung verschwindet!
-      
-      Token: Eumque(Pr)(A)(Kon)
-      Config: 'pronomen' → all=true, 'kon' → all=true
-      → ALLE Tags wollen ausblenden → Übersetzung verschwindet!
+    Wortart-Erkennung (wie bei Farben):
+    - Eumque(Pr)(A)(Kon) → Pronomen (Hauptwortart), Kon ist Modifier
+    - τὼ(Art)(Du)(N) → Artikel (Hauptwortart), Du+N sind zusätzliche Nomen-Tags
+    - MīlesneNPt → Nomen (Hauptwortart), Pt ist Modifier
+    
+    Regel:
+    - Wenn Pronomen ausgeblendet → Eumque(Pr)(A)(Kon) Übersetzung WEG (egal ob Kon ausgeblendet)
+    - Wenn NUR Kon ausgeblendet (Pronomen NICHT) → Übersetzung BLEIBT
+    
+    ABER: Wenn Token mehrere Wortarten hat (z.B. Art+Nomen), müssen ALLE ausgeblendet sein!
+    - τὼ(Art)(Du)(N): Artikel UND Nomen → Beide müssen ausgeblendet sein
     """
     if not token or not translation_rules:
         return False
@@ -1344,60 +1340,83 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
     if not tags:
         return False
     
-    # Sammle ALLE Tags die auf "hideTranslation" stehen
-    # NEUER ANSATZ: Prüfe jedes Tag direkt, nicht über Wortarten!
+    # WICHTIG: Verwende ORIGINALE Tags (nicht normalisiert) für Wortart-Erkennung
     original_tags = set(tags)
     
     # Sammle ALLE Tags die auf "hideTranslation" stehen
-    # NEUER ANSATZ: Prüfe jedes Tag direkt, nicht über Wortarten!
-    original_tags = set(tags)
     tags_that_want_to_hide = set()
     
-    # Für jedes Tag am Token: Prüfe ob es auf hideTranslation steht
-    for tag in original_tags:
-        tag_normalized = _normalize_tag_name(tag)
-        tag_wants_to_hide = False
-        
-        # Prüfe alle Regeln in translation_rules
-        for rule_id, entry in translation_rules.items():
-            if not isinstance(entry, dict):
-                continue
-            
-            # FALL 1: Globale Regel (_global mit all=true)
-            if rule_id == TRANSLATION_HIDE_GLOBAL and entry.get("all"):
-                tag_wants_to_hide = True
-                break
-            
-            # FALL 2: Globale Regel (_global mit spezifischen tags)
-            if rule_id == TRANSLATION_HIDE_GLOBAL:
-                entry_tags = entry.get("tags", set())
-                if tag in entry_tags or tag_normalized in {_normalize_tag_name(t) for t in entry_tags}:
-                    tag_wants_to_hide = True
-                    break
-            
-            # FALL 3: Wortart-Regel mit all=true (z.B. 'adjektiv' → all=true)
-            # Prüfe ob das Tag zu dieser Wortart gehört
-            if entry.get("all"):
-                # Hole die Tags die zu dieser Wortart gehören
-                wortart_tags = _get_tags_for_rule_id(rule_id)
-                if tag in wortart_tags or tag_normalized in {_normalize_tag_name(t) for t in wortart_tags}:
-                    tag_wants_to_hide = True
-                    break
-            
-            # FALL 4: Spezifische Tag-Regel (z.B. 'adjektiv_A' → hideTranslation=true)
-            # oder Wortart-Regel mit spezifischen tags (z.B. 'nomen' → tags=['N', 'G'])
-            entry_tags = entry.get("tags", set())
-            if entry_tags:
-                if tag in entry_tags or tag_normalized in {_normalize_tag_name(t) for t in entry_tags}:
-                    tag_wants_to_hide = True
-                    break
-        
-        # Wenn dieses Tag ausblenden will, füge es zur Liste hinzu
-        if tag_wants_to_hide:
-            tags_that_want_to_hide.add(tag_normalized)
+    # Erkenne ALLE Wortarten im Token (z.B. Eumque(Pr)(A)(Kon) hat Pronomen, τὼ(Art)(Du)(N) hat Artikel+Nomen)
+    wortarten_im_token = set()
     
-    # DEFENSIVE PRÜFUNG: Gibt es mindestens EIN Tag das NICHT ausgeblendet werden will?
-    for orig_tag in original_tags:
+    # 1. Hauptwortart bestimmen (wie bei Farb-Erkennung)
+    hauptwortart, _ = _get_wortart_and_relevant_tags(original_tags)
+    if hauptwortart:
+        wortarten_im_token.add(hauptwortart.lower())
+    
+    # 2. SPEZIALFALL: Artikel/Adjektiv MIT Nomen-Tags (Du, N, G, etc.)
+    # Beispiel: τὼ(Art)(Du)(N) hat Artikel (Hauptwortart) + Nomen-Tags (Du, N)
+    # Das bedeutet: BEIDE Wortarten müssen ausgeblendet werden!
+    if hauptwortart and hauptwortart in ['artikel', 'adjektiv']:
+        # Prüfe ob zusätzliche Nomen-Kasus vorhanden sind
+        kasus_im_token = original_tags.intersection(KASUS_TAGS)
+        if kasus_im_token:
+            # Es gibt Kasus-Tags → Nomen als zusätzliche Wortart!
+            wortarten_im_token.add('nomen')
+    
+    # 3. Prüfe für JEDE Wortart im Token die hideTranslation-Regeln
+    for wortart_key in wortarten_im_token:
+        entry = translation_rules.get(wortart_key)
+        if entry:
+            # Wenn "all" gesetzt ist: ALLE Tags dieser Wortart wollen ausblenden
+            if entry.get("all"):
+                # Füge alle relevanten Tags hinzu (basierend auf RULE_TAG_MAP)
+                wortart_tags = RULE_TAG_MAP.get(wortart_key, [])
+                for orig_tag in original_tags:
+                    normalized = _normalize_tag_name(orig_tag)
+                    # Füge Tags hinzu die zur Wortart gehören
+                    if any(_normalize_tag_name(wt) == normalized for wt in wortart_tags):
+                        tags_that_want_to_hide.add(normalized)
+            else:
+                # Nur spezifische Tags dieser Wortart wollen ausblenden
+                entry_tags = entry.get("tags", set())
+                if entry_tags:
+                    normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
+                    tags_that_want_to_hide.update(normalized_entry_tags)
+    
+    # 4. Prüfe globale Regeln (z.B. '_global')
+    global_entry = translation_rules.get(TRANSLATION_HIDE_GLOBAL)
+    if global_entry:
+        if global_entry.get("all"):
+            # Alle Tags wollen ausblenden
+            for orig_tag in original_tags:
+                if orig_tag == 'M/P':
+                    tags_that_want_to_hide.add('M/P')
+                else:
+                    parts = [p for p in orig_tag.split('/') if p]
+                    for part in parts:
+                        tags_that_want_to_hide.add(_normalize_tag_name(part))
+        else:
+            entry_tags = global_entry.get("tags", set())
+            if entry_tags:
+                normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
+                tags_that_want_to_hide.update(normalized_entry_tags)
+    
+    # 5. ENTSCHEIDUNG: Prüfe ob die HAUPTWORTART(EN) ausgeblendet werden sollen
+    # NICHT jedes einzelne Tag, sondern die Wortart-zugehörigen Tags!
+    for wortart_key in wortarten_im_token:
+        wortart_tags = RULE_TAG_MAP.get(wortart_key, [])
+        # Prüfe ob ALLE Tags dieser Wortart die am Token sind ausgeblendet werden sollen
+        wortart_tags_am_token = {t for t in original_tags if any(_normalize_tag_name(t) == _normalize_tag_name(wt) for wt in wortart_tags)}
+        
+        # Wenn NICHT alle Tags dieser Wortart ausgeblendet werden sollen → Übersetzung bleibt!
+        for wortart_tag in wortart_tags_am_token:
+            normalized_wt = _normalize_tag_name(wortart_tag)
+            if normalized_wt not in tags_that_want_to_hide:
+                return False  # Mindestens ein Tag dieser Wortart will sichtbar bleiben!
+    
+    # ALLE relevanten Tags aller Wortarten wollen ausblenden → Übersetzung ausblenden
+    return True
         # KRITISCH: M/P ist ein EINZELNES Tag, NICHT zwei separate Tags!
         if orig_tag == 'M/P':
             normalized_part = 'M/P'
