@@ -2075,13 +2075,13 @@ def group_pairs_into_flows(blocks):
             is_first_flow_in_para = True
             continue
 
-        # NEU: Kommentare → VORHER flushen, damit Text VOR Kommentar kommt!
+        # NEU: Kommentare → NICHT flushen! Kommentare gehören zum aktuellen Flow-Block!
+        # KRITISCHER FIX: Kommentare dürfen den Flow NICHT unterbrechen, da sonst der
+        # active_speaker verloren geht (Sprecher steht nur in der ersten Zeile, nicht in jeder!)
         if t == 'comment':
-            # KRITISCH: Vorherigen Text-Buffer flushen, BEVOR Kommentar eingefügt wird
-            # Das stellt sicher, dass der Kommentar NACH dem Text erscheint, zu dem er gehört
-            flush()
-            # Kommentar als separaten Block hinzufügen
-            flows.append(b)
+            # Kommentare sammeln für den aktuellen Flow (werden bei flush() übertragen)
+            # WICHTIG: Kommentare sind vollständige Blöcke, nicht nur Strings!
+            accumulated_comments.append(b)
             continue
 
         # Strukturelle Blöcke → vorher flushen
