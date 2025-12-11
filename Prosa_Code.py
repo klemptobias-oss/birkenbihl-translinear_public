@@ -1869,6 +1869,7 @@ def group_pairs_into_flows(blocks):
     
     FLIEßTEXT-LOGIK: Aufeinanderfolgende STRAUßLOGIK-Blöcke haben kein § zwischen sich.
     """
+    print(f"DEBUG group_pairs_into_flows: Called with {len(blocks)} blocks", flush=True)
     flows = []
     buf_gr, buf_de, buf_en = [], [], []
     current_para_label = None
@@ -1989,8 +1990,10 @@ def group_pairs_into_flows(blocks):
             # Sprecher nur aus der antiken Zeile (GR) entfernen
             # DE und EN Zeilen haben bereits keine Sprecher mehr (wurden beim Parsing entfernt)
             sp_gr, gt = pop_leading_speaker(gt)
+            print(f"DEBUG: Extracted speaker='{sp_gr}', remaining tokens={len(gt)}", flush=True)
             if sp_gr:
                 any_speaker_seen = True
+                print(f"DEBUG: any_speaker_seen set to True! active_speaker={active_speaker}", flush=True)
                 if sp_gr != active_speaker:
                     flush()
                     active_speaker = sp_gr
@@ -2086,6 +2089,7 @@ def group_pairs_into_flows(blocks):
 
     flush()
     # Meta: merken, ob überhaupt Sprecher existieren
+    print(f"DEBUG: Flushing flows. any_speaker_seen={any_speaker_seen}", flush=True)
     flows.append({'type':'_meta', 'any_speaker': any_speaker_seen})
     return flows
 
