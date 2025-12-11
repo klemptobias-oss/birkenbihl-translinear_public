@@ -4054,6 +4054,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 # Keine separate Logik mehr nötig (entfernt in diesem Fix)!
                 temp_quote_blocks = preprocess.apply_tag_visibility(temp_quote_blocks, tag_config, hidden_tags_by_wortart=hidden_by_wortart)
             elif tag_mode == "NO_TAGS":
+                # KRITISCHER FIX: apply_tag_visibility() MUSS auch bei NO_TAGS aufgerufen werden!
+                # Grund: Translation-Hiding passiert in apply_tag_visibility(), nicht in remove_all_tags()!
+                # Ohne diesen Aufruf werden Übersetzungen in Zitaten bei NO_TAGS nicht ausgeblendet!
+                temp_quote_blocks = preprocess.apply_tag_visibility(temp_quote_blocks, tag_config, hidden_tags_by_wortart=hidden_by_wortart)
+                # DANACH: Entferne alle Tags (aber Übersetzungen wurden bereits ausgeblendet)
                 temp_quote_blocks = preprocess.remove_all_tags(temp_quote_blocks, tag_config)
             elif tag_mode == "TAGS" and not hidden_by_wortart:
                 # Auch wenn keine Tags ausgeblendet werden, müssen wir Translation-Hiding anwenden!

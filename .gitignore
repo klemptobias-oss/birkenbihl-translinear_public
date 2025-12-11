@@ -29,6 +29,9 @@ pdf_drafts/**
 !pdf_drafts/.gitkeep
 *.pdf
 
+# AUSNAHME: Inspiration PDFs im Bilder-Ordner SOLLEN gepusht werden!
+!Bilder/BENUTZERHINWEISE/inspirationspdf*.pdf
+
 Result/
 Result/**
 

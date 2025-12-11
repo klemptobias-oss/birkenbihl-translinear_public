@@ -692,7 +692,36 @@ function buildVariantSuffix(localizedBase) {
   suffix += state.color === "BlackWhite" ? "_BlackWhite" : "_Colour";
   suffix += state.tags === "NoTags" ? "_NoTags" : "_Tag";
 
+  // KRITISCH: Prüfe ob ALLE Übersetzungen ausgeblendet sind (_NoTrans Suffix)
+  // Python-Code fügt _NoTrans hinzu wenn alle Übersetzungen hidden sind
+  // JavaScript muss das gleiche Muster erkennen für korrekte PDF-URL!
+  const allTransHidden = checkAllTranslationsHidden();
+  if (allTransHidden) {
+    suffix += "_NoTrans";
+  }
+
   return suffix;
+}
+
+/**
+ * Prüft, ob ALLE Übersetzungen ausgeblendet sind (für _NoTrans Suffix)
+ * WICHTIG: Diese Logik muss mit Python-Code (prosa_pdf.py) übereinstimmen!
+ * Python prüft: Mindestens 1 Tag-Konfiguration existiert UND alle haben hideTranslation=true
+ */
+function checkAllTranslationsHidden() {
+  if (!state.tagConfig || typeof state.tagConfig !== 'object') {
+    return false; // Keine Tag-Konfiguration = keine ausgeblendeten Übersetzungen
+  }
+  
+  const entries = Object.entries(state.tagConfig);
+  if (entries.length === 0) {
+    return false; // Keine Einträge = keine ausgeblendeten Übersetzungen
+  }
+  
+  // Prüfe ob ALLE Einträge hideTranslation=true haben
+  return entries.every(([key, config]) => {
+    return config && config.hideTranslation === true;
+  });
 }
 
 function buildReleaseBase() {
