@@ -1960,8 +1960,15 @@ def group_pairs_into_flows(blocks):
             # Tokenisiere falls nötig
             if 'gr_tokens' in b:
                 gt = list(b['gr_tokens']) if b.get('gr_tokens') else []
+                # DEBUG: Zeige ORIGINAL gr_tokens aus dem Block (VOR pop_leading_speaker)
+                if gt:
+                    print(f"DEBUG: Original gr_tokens from block: {gt[:5]}", flush=True)
             else:
-                gt = tokenize(b['gr']) if b.get('gr') else []
+                gr_text = b.get('gr', '')
+                # DEBUG: Zeige GR-Text VOR tokenize
+                if gr_text:
+                    print(f"DEBUG: GR text before tokenize: '{gr_text[:80]}'", flush=True)
+                gt = tokenize(gr_text) if gr_text else []
             
             if 'de_tokens' in b:
                 dt = list(b['de_tokens']) if b.get('de_tokens') else []
