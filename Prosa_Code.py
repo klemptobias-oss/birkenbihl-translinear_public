@@ -2896,9 +2896,11 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # ROBUSTE BREITENBERECHNUNG BASIEREND AUF SICHTBARKEIT
         
         # Basis-Sicherheitspuffer: Konsistent für alle Wörter (verhindert Überlappungen)
-        # WICHTIG: Erhöht auf 5% um alle Wort-Überlappungen zu verhindern (von 1.2% → 3% → 5%)
-        # Bei 10pt Font → 0.5pt Mindestabstand, bei 11pt → 0.55pt
-        base_safety = max(token_gr_style.fontSize * 0.05, 0.6)  # 5% der Font-Size oder mindestens 0.6pt
+        # WICHTIG: Erhöht auf 8% um alle Wort-Überlappungen zu verhindern (1.2% → 3% → 5% → 8%)
+        # Grund: "Blocksatzartige" Darstellung führt zu ungleichen Abständen (manche eng, manche frei)
+        # Der MINDEST-Abstand muss hoch genug sein für die engsten Fälle!
+        # Bei 10pt Font → 0.8pt Mindestabstand, bei 11pt → 0.88pt
+        base_safety = max(token_gr_style.fontSize * 0.08, 0.8)  # 8% der Font-Size oder mindestens 0.8pt
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:

@@ -9,6 +9,25 @@
 (5) καὶ(Kon) πᾶσαν(Adj)(A) παιδείαν(A), ὡσαύτως(Adv) δὲ(Pt) τὰ(Art)(A) ἐπιτηδεύματα(A) κοινὰ(Adj)(A) ἐν(Prp) πολέμῳ(D)
 (5) und die|ganze Erziehung, ebenso aber die Betätigungen gemeinsam in Krieg
 (5) and every education, likewise but the pursuits common in war
+(490) ταῦτα(Pr)(A) ὡς(Kon) ὁσιώτατα(Adv)(Sup) διαβιῶναι(Aor)(Inf)(Akt) τὸν(Art)(A) βίον(A)· οἷσιν(Pr)(D) γὰρ(Pt) ἂν(Pt)—
+(490) dieser dass möglichst|fromm zu|verleben das Leben· denen denn wohl—
+(491) [Zitat Anfang]
+(492) Φερσεφόνα(N) ποινὰν(A) παλαιοῦ(Adj)(G) πένθεος(G)
+(492) Persephone Strafe des|alten Kummers
+(493) δέξεται(Fu)(M/P), εἰς(Prp) τὸν(Art)(A) ὕπερθεν(Adv) ἅλιον(A) κείνων(Pr)(G) ἐνάτῳ(Adj)(D) ἔτεϊ(D)
+(493) wird|empfangen, in den oberen Sonne jener im|neunten Jahr
+(494) ἀνδιδοῖ(Fu)(Akt) ψυχὰς(A) πάλιν(Adv),
+(494) gibt|zurück Seelen wieder,
+(495) ἐκ(Prp) τᾶν(Art)(G) βασιλῆες(N) ἀγαυοὶ(Adj)(N)
+(495) aus den Könige edle
+(496) καὶ(Kon) σθένει(D) κραιπνοὶ(Adj)(N) σοφίᾳ(D) τε(Pt) μέγιστοι(Adj)(N)(Sup)
+(496) und an|Kraft schnell|kräftige an|Weisheit und die|größten
+(497) ἄνδρες(N) αὔξοντʼ(Prä)(Akt)· ἐς(Prp) δὲ(Kon) τὸν(Art)(A) λοιπὸν(Adj)(A) χρόνον(A) ἥρωες(N) ἁγνοὶ(Adj)(N) πρὸς(Prp) ἀνθρώπων(G) καλεῦνται(Prä)(M/P).
+(497) Männer wachsen· in aber die übrige Zeit Helden reine bei den|Menschen werden|genannt.
+(498) [Zitat Ende]
+(499) [Quelle Anfang] Pind. fr. 133 Bergk [Quelle Ende]
+(500) ἅτε(Pt) οὖν(Pt) ἡ(Art)(N) ψυχὴ(N) ἀθάνατός(Adj)(N) τε(Pt) οὖσα(Prä)(Akt)(N) καὶ(Kon) πολλάκις(Adv) γεγονυῖα(Per)(Akt)(N),
+(500) da|ja nun die Seele unsterblich und seiend und oftmals geworden|seiend,
 (6) τε(Pt) καὶ(Kon) εἰρήνῃ(D), βασιλέας(A) δὲ(Pt) αὐτῶν(Pr)(G) εἶναι(Prä)(Inf)(Akt) τοὺς(Art)(A) ἐν(Prp) φιλοσοφίᾳ(D)
 (6) und auch Frieden, Könige aber ihrer zu|sein die in Philosophie
 (6) and also peace, kings but of|them to|be those in philosophy
@@ -2285,7 +2304,7 @@
 (786) according|to the for|Croesus having|come|to|pass oracle—
 (787) [Zitat Anfang]
 (788) πολυψήφιδα(Adj)(A) παρʼ(Prp) Ἕρμον(A)
-(788) viel|Kiesel|reich bei Hermos
+(788) viel|Kiesel|reich/Stein|reichTEST/TEST2STEINSTEIN bei Hermos
 (788) many|pebbled by|beside Hermus
 (789) φεύγει(Prä)(Akt), οὐδὲ(Kon) μένει(Prä)(Akt), οὐδʼ(Kon) αἰδεῖται(Prä)(M/P) κακὸς(Adj)(N) εἶναι(Prä)(Inf)(Akt).
 (789) flieht, auch|nicht bleibt, auch|nicht scheut|sich schlecht zu|sein.
