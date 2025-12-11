@@ -70,7 +70,7 @@ BLANK_MARKER_GAP_MM = 4.0         # Abstand bei Leerzeilen-Marker
 # VEREINHEITLICHUNG: NUR diese zwei Werte entscheiden über horizontalen Abstand!
 # Egal ob: Sprecher, §, HideTags, tag_config, oder NO_TAGS PDF
 TOKEN_SPACING_WITH_TAGS_PT = 1.0    # Wort hat sichtbare Tags → kleinerer Abstand (Tags trennen optisch) - REDUZIERT von 1.2
-TOKEN_SPACING_NO_TAGS_PT = 2.0      # Wort hat keine Tags → größerer Abstand (klare Trennung nötig)
+TOKEN_SPACING_NO_TAGS_PT = 8.5      # Wort hat keine Tags → größerer Abstand (klare Trennung nötig)
 
 # ----------------------- TABELLEN-KONFIGURATION -----------------------
 # Einstellungen für Tabellen-Layout
@@ -2896,11 +2896,9 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # ROBUSTE BREITENBERECHNUNG BASIEREND AUF SICHTBARKEIT
         
         # Basis-Sicherheitspuffer: Konsistent für alle Wörter (verhindert Überlappungen)
-        # WICHTIG: Erhöht auf 8% um alle Wort-Überlappungen zu verhindern (1.2% → 3% → 5% → 8%)
-        # Grund: "Blocksatzartige" Darstellung führt zu ungleichen Abständen (manche eng, manche frei)
-        # Der MINDEST-Abstand muss hoch genug sein für die engsten Fälle!
-        # Bei 10pt Font → 0.8pt Mindestabstand, bei 11pt → 0.88pt
-        base_safety = max(token_gr_style.fontSize * 0.08, 0.8)  # 8% der Font-Size oder mindestens 0.8pt
+        # WICHTIG: Erhöht auf 5% um alle Wort-Überlappungen zu verhindern (von 1.2% → 3% → 5%)
+        # Bei 10pt Font → 0.5pt Mindestabstand, bei 11pt → 0.55pt
+        base_safety = max(token_gr_style.fontSize * 0.05, 0.6)  # 5% der Font-Size oder mindestens 0.6pt
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
@@ -3066,18 +3064,17 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # ob nach Filterung noch Content übrig bleibt
 
         # linke Zusatzspalten
-        # DEFENSIV: Verwende Leerzeichen statt leere Strings für leere Paragraphen (verhindert ReportLab-Crashes)
-        sp_cell_gr = Paragraph(xml_escape(speaker_display), style_speaker) if (first_slice and speaker_width_pt>0 and speaker_display) else Paragraph(' ', style_speaker)
-        sp_cell_de = Paragraph(' ', style_speaker)
-        sp_cell_en = Paragraph(' ', style_speaker)  # NEU: Englische Zeile
-        sp_gap_gr  = Paragraph(' ', token_gr_style); sp_gap_de = Paragraph(' ', token_de_style)
-        sp_gap_en  = Paragraph(' ', token_de_style)  # NEU: Englische Zeile
+        sp_cell_gr = Paragraph(xml_escape(speaker_display), style_speaker) if (first_slice and speaker_width_pt>0 and speaker_display) else Paragraph('', style_speaker)
+        sp_cell_de = Paragraph('', style_speaker)
+        sp_cell_en = Paragraph('', style_speaker)  # NEU: Englische Zeile
+        sp_gap_gr  = Paragraph('', token_gr_style); sp_gap_de = Paragraph('', token_de_style)
+        sp_gap_en  = Paragraph('', token_de_style)  # NEU: Englische Zeile
 
-        para_cell_gr = Paragraph(xml_escape(para_display), style_para) if (para_width_pt>0 and first_slice and para_display) else Paragraph(' ', style_para)
-        para_cell_de = Paragraph(' ', style_para)
-        para_cell_en = Paragraph(' ', style_para)  # NEU: Englische Zeile
-        para_gap_gr  = Paragraph(' ', token_gr_style); para_gap_de = Paragraph(' ', token_de_style)
-        para_gap_en  = Paragraph(' ', token_de_style)  # NEU: Englische Zeile
+        para_cell_gr = Paragraph(xml_escape(para_display), style_para) if (para_width_pt>0 and first_slice and para_display) else Paragraph('', style_para)
+        para_cell_de = Paragraph('', style_para)
+        para_cell_en = Paragraph('', style_para)  # NEU: Englische Zeile
+        para_gap_gr  = Paragraph('', token_gr_style); para_gap_de = Paragraph('', token_de_style)
+        para_gap_en  = Paragraph('', token_de_style)  # NEU: Englische Zeile
 
         def cell_markup(t, is_gr, tok_idx=None):
             # DEFENSIV: Entferne Tags aus Token, falls sie noch vorhanden sind
@@ -3151,15 +3148,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
 
         # JETZT erst die Paragraphs erstellen (nachdem wir wissen, dass Content vorhanden ist)
         # WICHTIG: Übergebe tok_idx an cell_markup, damit _strip_tags_from_token korrekt arbeitet
-        # DEFENSIV: Wenn cell_markup() leer zurückgibt, verwende ' ' (Leerzeichen) statt '' (verhindert ReportLab-Crashes)
-        gr_cells = []
-        for idx, t in enumerate(slice_gr):
-            if t:
-                markup = cell_markup(t, True, tok_idx=slice_start + idx)
-                # KRITISCH: ReportLab crasht manchmal bei komplett leeren Paragraphen - verwende Leerzeichen als Fallback
-                gr_cells.append(Paragraph(markup if markup else ' ', token_gr_style))
-            else:
-                gr_cells.append(Paragraph(' ', token_gr_style))  # Leerzeichen statt '' für Stabilität
+        gr_cells = [Paragraph(cell_markup(t, True, tok_idx=slice_start + idx),  token_gr_style) if t else Paragraph('', token_gr_style) for idx, t in enumerate(slice_gr)]
         
         # KRITISCHER FIX: DE und EN in NESTED TABLES kombinieren (wie STRAUßLOGIK!)
         # WICHTIG: Nur VORHANDENE Übersetzungen hinzufügen (nicht immer 2 Zeilen!)
@@ -3210,8 +3199,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                 nested_table.setStyle(nested_style)
                 de_en_combined_cells.append(nested_table)
             else:
-                # Kein Übersetzung vorhanden - leere Zelle (Leerzeichen statt '' für Stabilität)
-                de_en_combined_cells.append(Paragraph(' ', token_de_style))
+                # Kein Übersetzung vorhanden - leere Zelle
+                de_en_combined_cells.append(Paragraph('', token_de_style))
 
         # VEREINHEITLICHUNG: Nur 2 Rows (wie STRAUßLOGIK)!
         # Row 0: GR-Zeile
@@ -3222,16 +3211,16 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         if speaker_width_pt > 0:
             row_gr.append(sp_cell_gr)
             row_gr.append(sp_gap_gr)
-            row_de_en.append(Paragraph(' ', token_de_style))  # Leer in DE/EN-Row (Leerzeichen statt '')
-            row_de_en.append(Paragraph(' ', token_de_style))  # Leer für Gap (Leerzeichen statt '')
+            row_de_en.append(Paragraph('', token_de_style))  # Leer in DE/EN-Row
+            row_de_en.append(Paragraph('', token_de_style))  # Leer für Gap
             colWidths += [speaker_width_pt, SPEAKER_GAP_MM*mm]
             
         # Para-Spalte (nur in GR-Row sichtbar, in DE/EN-Row leer)
         if para_width_pt > 0:
             row_gr.append(para_cell_gr)
             row_gr.append(para_gap_gr)
-            row_de_en.append(Paragraph(' ', token_de_style))  # Leer in DE/EN-Row (Leerzeichen statt '')
-            row_de_en.append(Paragraph(' ', token_de_style))  # Leer für Gap (Leerzeichen statt '')
+            row_de_en.append(Paragraph('', token_de_style))  # Leer in DE/EN-Row
+            row_de_en.append(Paragraph('', token_de_style))  # Leer für Gap
             colWidths += [para_width_pt, PARA_GAP_MM*mm]
 
         # Token-Spalten
@@ -4195,8 +4184,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             from reportlab.platypus import TableStyle
             for table_idx, table in enumerate(q_tables):
                 if table_idx > 0:  # Erste Zeile braucht kein TOPPADDING
-                    # 2.5× mehr Abstand für Zitate als für normalen Text!
-                    quote_gap = CONT_PAIR_GAP_MM * 2.5 * mm
+                    # 1.0× Abstand für Zitate - GLEICH wie normaler Text (enger zusammen)
+                    quote_gap = CONT_PAIR_GAP_MM * 1.0 * mm
                     table.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), quote_gap)]))
             
             # Die Zeilenabstände werden jetzt durch TOPPADDING kontrolliert, nicht durch Spacer
