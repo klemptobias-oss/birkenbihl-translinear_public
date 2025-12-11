@@ -536,10 +536,9 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             p = Path(out_name)
             out_name = p.with_name(p.stem + "_NoTrans" + p.suffix).name
         
-        # WICHTIG: Vollständiger Pfad zum Ausgabeordner
-        output_dir = Path("pdf_drafts/unknown/prosa/Unsortiert/Unbenannt")
-        output_dir.mkdir(parents=True, exist_ok=True)
-        out_path = str(output_dir / out_name)
+        # WICHTIG: PDFs werden im aktuellen Verzeichnis (ROOT) erstellt
+        # Der Adapter (build_prosa_drafts_adapter.py) verschiebt sie dann in den korrekten Ordner
+        out_path = out_name
         
         opts = PdfRenderOptions(strength=strength, color_mode=color_mode, tag_mode=tag_mode, versmass_mode="REMOVE_MARKERS")
         
