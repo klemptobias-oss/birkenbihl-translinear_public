@@ -2642,8 +2642,10 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
     
     # KRITISCH: Erstelle token_de_style_tight mit engerem Leading (wie STRAUßLOGIK!)
     # Dies sorgt für engere Abstände zwischen Übersetzungszeilen in nested tables
+    # KRITISCH: Erstelle token_de_style_tight mit korrektem Leading für Übersetzungszeilen
+    # 1.4× ist ein guter Kompromiss: Eng genug für kompakte Darstellung, weit genug für Tags
     token_de_style_tight = ParagraphStyle('TokDE_Tight', parent=token_de_style,
-        leading=token_de_style.fontSize * 1.2,  # 1.2× = NEUER KOMPROMISS (wie STRAUßLOGIK)
+        leading=token_de_style.fontSize * 1.4,  # 1.4× = KORREKTER ABSTAND (nicht zu eng!)
         spaceBefore=0, spaceAfter=0)
     
     def is_only_symbols_or_stephanus(token: str) -> bool:
@@ -3116,21 +3118,17 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                 # Erstelle nested Table mit ALLEN Übersetzungen als separate Zeilen
                 nested_table = Table(translation_paragraphs, colWidths=[None])
                 
-                # KRITISCHER FIX: Negative Paddings wie in STRAUßLOGIK!
-                # -0.5pt zwischen Zeilen für dichten Abstand
+                # KRITISCHER FIX: Normale Paddings (0pt) für korrekte Abstände!
+                # Negatives Padding zieht Zeilen zu eng zusammen (Tags ragen in vorherige Zeile)
                 nested_style = TableStyle([
                     ('VALIGN', (0, 0), (-1, -1), 'TOP'),
                     ('LEFTPADDING', (0, 0), (-1, -1), 0),
                     ('RIGHTPADDING', (0, 0), (-1, -1), 0),
-                    ('BOTTOMPADDING', (0, 0), (-1, -1), -0.5),  # -0.5pt zwischen Zeilen
-                    ('TOPPADDING', (0, 0), (-1, -1), -0.5),     # -0.5pt Standard
+                    ('BOTTOMPADDING', (0, 0), (-1, -1), 0),  # 0pt statt -0.5pt für korrekte Abstände
+                    ('TOPPADDING', (0, 0), (-1, -1), 0),     # 0pt Standard
                 ])
                 
-                # KRITISCH: Erste Zeile darf KEIN negatives TOPPADDING haben!
-                # Sonst zieht sie sich zur GR-Zeile hoch
-                if len(translation_paragraphs) > 0:
-                    nested_style.add('TOPPADDING', (0, 0), (-1, 0), 0)  # Erste Zeile: 0pt!
-                
+                # KRITISCH: Erste Zeile braucht KEIN extra Padding (bleibt bei 0pt)
                 nested_table.setStyle(nested_style)
                 de_en_combined_cells.append(nested_table)
             else:
@@ -3210,7 +3208,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             ('TOPPADDING',    (0,0), (-1,-1), 0.0),
             ('BOTTOMPADDING', (0,0), (-1,-1), 0.0),
             ('VALIGN',        (0,0), (-1,-1), 'BOTTOM'),
-            ('ALIGN',         (0,0), (-1,-1), 'CENTER'),
+            ('ALIGN',         (0,0), (-1,-1), 'CENTER'),  # Zentriere Zellen-Inhalte
         ]
         
         # NEU: Hinterlegung für Kommentar-Referenzen
@@ -3394,7 +3392,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         alignment=TA_LEFT, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)
     style_quote_line = ParagraphStyle('QuoteLine', parent=base['Normal'],
         fontName='DejaVu-Bold' if gr_bold else 'DejaVu', fontSize=gr_size, leading=_leading_for(gr_size),
-        alignment=TA_JUSTIFY, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)
+        alignment=TA_CENTER, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)  # CENTER statt JUSTIFY!
     style_source = ParagraphStyle('SourceLine', parent=base['Normal'],
         fontName='DejaVu', fontSize=gr_size, leading=_leading_for(gr_size),
         alignment=TA_RIGHT, rightIndent=SOURCE_RIGHT_INDENT_MM*mm,
@@ -4067,7 +4065,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             
             # Für Zitate verwenden wir den gleichen Stil wie normale Tokens
             quote_de_style = ParagraphStyle('QuoteDE', parent=base['Normal'],
-                fontName='DejaVu-Bold' if de_bold else 'DejaVu', fontSize=gr_size, leading=_leading_for(gr_size),
+                fontName='DejaVu-Bold' if de_bold else 'DejaVu', fontSize=de_size, leading=_leading_for(de_size),  # de_size statt gr_size!
                 alignment=TA_CENTER, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)
 
             # Reduziere die Breite um 10% für Einrückung
@@ -4392,9 +4390,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                                 logger.warning("Prosa_Code: KeepTogether failed for alternatives, appending individually: %s", e)
                                 elements.extend(valid_tables)
                         
-                        # Abstand nach Alternativen (Lyrik hat größeren Abstand)
+                        # Abstand nach Alternativen - verwende CONT_PAIR_GAP_MM für einheitliche Abstände
                         if is_lyrik:
-                            elements.append(Spacer(1, 3.0 * mm))
+                            # KORREKTUR: Gleicher Abstand wie normaler Prosa-Text (CONT_PAIR_GAP_MM)
+                            elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
                         else:
                             elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
                 
@@ -4440,12 +4439,12 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                             logger.warning("Prosa_Code: KeepTogether failed for pair, appending individually: %s", e)
                             elements.extend(valid_tables)
                     
-                    # WICHTIG: Lyrik-Bereiche brauchen größeren Zeilenabstand (wie in Poesie)!
-                    # Verwende gleichen Abstand wie normale Prosa-Zeilen (3-4mm)
+                    # WICHTIG: Lyrik-Bereiche verwenden GLEICHEN Abstand wie normaler Prosa-Text!
+                    # Verwende CONT_PAIR_GAP_MM (der bereits tag_mode berücksichtigt)
                     if is_lyrik:
-                        # LYRIK_LINE_GAP_MM = 3.0mm (wie normaler Prosa-Text)
-                        # Das ist der Abstand zwischen einzelnen Lyrik-Zeilen
-                        elements.append(Spacer(1, 3.0 * mm))
+                        # KORREKTUR: Verwende CONT_PAIR_GAP_MM statt hartcodiertem 3.0mm
+                        # Damit haben Lyrik-Bereiche identische Abstände wie § Prosa-Text
+                        elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
             
             # KRITISCH: Kommentare NACH den Tabellen rendern, damit sie nach dem Text erscheinen!
             render_block_comments(b, elements, doc)

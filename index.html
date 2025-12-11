@@ -356,7 +356,7 @@
           <h3>Benutzerhinweise Antike Translinear-Texte</h3>
            <ul>
             <li>
-            <strong>Einleitung:</strong> Dies ist eine neue, experimentelle Webseite (07.12.25), welche translineare Übersetzungen
+            <strong>Einleitung:</strong> Dies ist eine neue, experimentelle Webseite (11.12.25), welche translineare Übersetzungen
             klassischer griechischer und lateinischer Texte zum Herunterladen anbietet. Der Prozess der "Übersetzung" wurde dabei vom
             relativ neuen Modell Chat-GPT5 (August 2025) im Modus Thinking durchgeführt. Ebenfalls
             wurden die grammatikalischen Kürzel darüber generiert. Bei
@@ -369,11 +369,11 @@
             translinear.txt PDFs
             rendern kann. Der PDF-Builder ist auch in die Webseite integriert und er ermöglicht, PDFs online aus den bereits vorhandenen und herunterladbaren translinear.txt-Vorlagen
             zu erzeugen. Aus allen 
-            vorhanden Texten kann man so seine eigene Version zu erzeugen und das KI-erzeugte "Original" verbessern, verändern, kommentieren oder die Darstellung des Textes individualisieren. Da translineare Webseiten dieser Art hier nicht besonders verbreitet zu sein scheinen, schien es sinnvoll, in den Builder einmal alle Funktionen zu implementieren, die nötig sind, um man am Ende auch wirklich zu einem finalen, sinnvollen Translineartext zu gelangen.
+            vorhanden Texten kann man so seine eigene Version zu erzeugen und das KI-erzeugte "Original" verbessern, verändern, kommentieren oder die Darstellung des Textes individualisieren. Weiter unten ist die Nutzung des PDF Builders ausführlich beschrieben.
             </li>
             <li>
             <strong>Demonstration:</strong> Gegen Ende dieser Benutzerhinweise und unter der textlichen Anleitung zum PDF Builder gibt es ein 
-            Demonstrations-translinear.txt Dokument zum Herunterladen, welches speziell konzipiert ist und durch welches über den besagten PDF-Builder Demonstrations-translinear-PDFs erzeugt werden können. Diese stellen die Funktionen des Builders noch einmal praktisch dar, was dann zur selbstständigen Erzeugung von allen Typen von Translinear-PDFs und der
+            Demonstrations-translinear.txt Dokument zum Herunterladen, welches speziell konzipiert ist und durch welches Demonstrations-translinear-PDFs erzeugt werden können. Diese stellen die Funktionen des Builders noch einmal praktisch dar, was dann zur selbstständigen Erzeugung von allen Typen von Translinear-PDFs und der
             vollen Nutzung des PDF-Builders befähigt. Ganz am Schluss sind einige "Inspirations" PDFs zum Anschauen bereitgestellt, die in dieser Form über den PDF-Builder erzeugbar sind und ebenfalls eine weitere Demonstration darstellen.
             </li>
             </ul>
@@ -464,9 +464,6 @@
               <strong>Tag oder NoTag:</strong> Es wird jedes PDF stets mit allen und ohne alle (NoTag) Grammatiktags erstellt. Eine selektive
               Darstellung nur einiger der Tags und die Unsichtbarmachung von anderen
               kann ebenfalls im Builder vorgenommen werden (s.u.).
-            </li>
-             <li>
-              <strong>Extraversion NoTrans:</strong> Es gibt die Möglichkeit über den PDF-Builder von jedem translinear.txt die eben genannten 8 Dokumente zu erzeugen, bei denen aber dann die Translinearzeilen unsichtbar sind. Es wird dann nur der Originaltext sowie optional seine Grammatikkürzel und Farben erhalten.
             </li>
           </ul>
           <p>
@@ -728,7 +725,7 @@
                 unter Wort 1", "Wort 2 unter Wort 2" usw. stellt, um die
                 translineare Darstellung zu erreichen. <strong>Wichtig:</strong> Bei ungleicher Anzahl von Wörtern
                 in antiker Zeile oder Übersetzungszeile verschieben sich die
-                Zeilen gegeneinander, es steht dann nicht mehr immer das richtige Wort unter dem richtigen Wort und eine der beiden Zeilen weist einen Überhang von der Größe der Wortzahldifferenz auf (im Demonstrations-PDF später ist soetwas auch gezeigt). 
+                Zeilen gegeneinander, es steht dann nicht mehr immer das richtige Wort unter dem richtigen Wort und eine der beiden Zeilen weist einen Überhang von der Größe der Wortzahldifferenz auf (im Demonstrations-PDF sind viele Dinge ganz konkret dargestellt). 
               </p>
 
               <p style="margin-bottom: 10px">
@@ -745,9 +742,9 @@
               <strong>2.1) Einfach mögliche Änderungen:</strong>
 
               <p style="margin-top: 10px; margin-bottom: 10px">
-                <strong>• Übersetzungen ändern oder ausblenden:</strong> Um fehlerhafte oder ungewollte KI-Übersetzungen zu verbessern, einfach das
+                <strong>• Übersetzungen ändern oder ausblenden:</strong> Um fehlerhafte oder ungewollte KI-Übersetzungen zu verbessern ist einfach das
                 ungewünschte Wort der Übersetzungszeile im translinear.txt Dokument mit dem richtigen Wort manuell ersetzen.
-                Es gibt außerdem die Möglichkeit, die Translinearünersetzung eines ausgewählten antiken Wortes mit dem <strong>lokal im translinear.txt zu
+                Es gibt die Möglichkeit, die Translinearübersetzung eines ausgewählten antiken Wortes mit dem <strong>lokal im translinear.txt zu
                 platzierenden Tag (HideTrans)</strong> im PDF ganz unsichtbar zu machen.
                 Dazu ist an das antike Wort (latein oder griechisch) zusätzlich der Tag (HideTrans) zu setzen, dann werden alle zu diesem Wort gehörigen Wörter der
                 Übersetzungszeile unsichtbar. Das lateinische Wort Mercurius(N)(HideTrans) würde also im Text ohne
@@ -757,56 +754,42 @@
               </p>
 
               <p style="margin-bottom: 10px">
-              <strong>• Straußlogik:</strong> Es gibt die Möglichkeit, an irgendein Wort der Übersetzungszeile zu gehen und über "/" weitere Übersetzungswörter daneben zu setzen zum Beispiel Haus/Gebäude/Palast/Wohnort. Im PDF erscheinen diese Wörter dann alle untereinander und bilden dann den "Bedeutungsstrauß" dieses Wortes ab. Pro antiken Wort können bis zu 4 Wörter als Übersetzungen damit untereinander angegeben werden (mehr zur Anwendung dann später in der Demonstration weiter unten). Es kann eines oder mehrere dieser 4 Wörter auch genutzt werden, um einen "Mikrokommentar" abzugeben, zum Beispiel zum|Meer/(Akk. der Richtung) wobei dann der (Akk. der Richtung) unter der eigentlichen Übersetzung zum|Meer stehen würde.
+              <strong>• Straußlogik:</strong> Es gibt die Möglichkeit, an irgendein Wort der Übersetzungszeile zu gehen und über "/" weitere Übersetzungswörter daneben zu setzen zum Beispiel Haus/Gebäude/Palast/Wohnort. Im PDF erscheinen diese Wörter dann alle untereinander und bilden dann den "Bedeutungsstrauß" dieses Wortes ab. Pro antiken Wort können bis zu 4 Wörter als Übersetzungen damit untereinander angegeben werden (mehr zur Anwendung dann später in der Demonstration weiter unten). Es könnte eines oder mehrere dieser 4 Wörter auch genutzt werden, um einen "Mikrokommentar" abzugeben, zum Beispiel zum|Meer/(Akk.|der|Richtung) wobei dann der (Akk. der Richtung) unter der eigentlichen Übersetzung zum Meer stehen würde.
               <p style="margin-bottom: 10px">
                 <strong>• Antiken Text ändern:</strong> Auch im antiken Text sind Wörter
                 änderbar, wobei die Grammatiktags dann manuell (wenn überhaupt gewünscht) an das Wort
                 gesetzt werden müssten. Im PDF-Builder selbst ist keine "KI" am Werk, die Grammatiktags
-                automatisch setzen würde. Interessant wäre vielleicht auch, wenn ein Wort morphologisch nicht eindeutig ist, das antike Wort einfach einmal zu kopieren, in seiner 
-                alternativen Bedeutungsweise neu grammatikalisch zu markieren und so beide Versionen nebeneinander zu stellen, eventuell auch mit verschiedenen Übersetzungen, zum
-                Beispiel 
+                automatisch setzen würde.
               </p>
 
               <p style="margin-bottom: 10px">
-                <strong>• Grammatikkürzel bearbeiten:</strong> Individuelle
-                Grammatikkürzel sind einfach änderbar oder einzeln löschbar
-                (z.B.
-                (Aor)
-                Aorist ändern auf
-                (Imp)
-                für Imperfekt, falls ein Fehler im bereitgestellten translinear.txt vorliegt). Es
-                ist aber <strong>nicht möglich</strong> neue Kürzel einfach zu
-                "erstellen" (z.B.
-                (Pl)
-                für Plural oder
-                (Dep)
-                für Deponens) – neue Kürzel aller Art werden NICHT einfach so
+                <strong>• Grammatikkürzel bearbeiten:</strong> Individuelle Grammatikkürzel sind einfach änderbar oder einzeln löschbar (z.B. (Aor) Aorist ändern auf (Imp)
+                für Imperfekt, falls ein KI-Fehler im bereitgestellten translinear.txt vorliegt). Es ist aber <strong>nicht möglich</strong> neue Kürzel einfach zu
+                "erstellen" (z.B. (Pl) für Plural oder (Dep) für Deponens) – neue Kürzel aller Art werden NICHT einfach so
                 erkannt und hoch- oder tiefgestellt. Setzt man an das antike Wort den Kürzel (HideTags) werden die Tags für dieses Wort explizit 
-                nicht dargestellt, während die Farbe allerdings erhalten bleibt. Die Alternative (analog zu HideTrans) wäre auch hier einfach die schnelle Löschung der ursprünglichen Grammatiktags, was aber zur Folge hätte, dass die Wörter sie 
-                nicht mehr farbig dargestellt werden können. (HideTrans) und (HideTags) können auch beide gleichzeitig verwendet werden wie in
-                μῆνιν(A)(HideTags)(HideTrans).
+                nicht dargestellt (auch im Tag-PDF), während die Farbe allerdings erhalten bleibt. Die Alternative (analog zu HideTrans) wäre auch hier einfach die schnelle Löschung des ursprünglichen Grammatiktags, was aber zur Folge hätte, dass die Wörter nicht mehr anhand ihrer Wortart erkannt und farbig dargestellt werden können. (HideTrans) und (HideTags) können auch beide gleichzeitig verwendet werden wie in μῆνιν(A)(HideTags)(HideTrans).
               </p>
               
               <p style="margin-bottom: 10px">
                 <strong>• Färbungen:</strong> Die Färbungen können in der Tag und Konfigurationstabelle später eingestellt werden. Dabei basieren die Farben
-                stets auf den Tags, die die antiken Wörter tragen. Die Farbe wird dann von diesen auf die darunterstehenden Übersetzungswörter übertragen (oder das Übersetzungswort, falls nur eines vorhanden ist wie im normalen zweisprachigen translinear.txt). Ist also 
+                stets auf den Tags, die die antiken Wörter tragen. Die Farbe wird dann von diesen antiken Wörtern auf die darunterstehenden Übersetzungswörter übertragen (oder das Übersetzungswort, falls nur eines vorhanden ist wie in einem zweisprachigen translinear.txt). Ist also 
                 ein Tag falsch, wird das Wort und seine Übersetzungen ebenfalls auch falsch gefärbt.
                 Bei einigen Wortgruppen (Partizip, Verb, Nomen) gibt es keinen gesonderten Tag zur
                 Erkennung Dieser Wortarten. Es wird jedes Wort, welches "Kasus und Tempus" trägt, vom System als Partizip erkannt
-                (und entsprechend gefärbt). Verben werden erkannt anhand von "Tempus ohne Kasus" und Nomen grob gesagt über "Nur Kasus". Durch die Farbkürzel - (grün),
-                + (blau), # (rot), $ (orange) und § (violett), die <strong>vor</strong> antike Wörter gesetzt werden, können Wörter auch ganz individuell und unabhängig davon gefärbt werden, ob sie Nomen oder Verben oder Adjektive sind. Diese Färbungen sind dann ebenfalls in den Schwarz-Weiß Dokumenten noch sichtbar und können zur Hervorhebung genutzt werden. Falls ein solches Symbol vor ein Wort in der Übersetzungszeile gesetzt wird, erscheint nur dieses eine Wort in dieser Farbe. Das antike Wort behält die Farbe, die es sonst gehabt hätte.
+                (und entsprechend gefärbt). Verben werden erkannt anhand von "Tempus ohne Kasus" und Nomen grob gesagt über "Nur Kasus". Es gibt zusätzlich die Möglichkeit, durch die Farbkürzel - (grün),
+                + (blau), # (rot), $ (orange) und § (violett), die <strong>direkt vor</strong> antike Wörter gesetzt werden, individuell zu färben und die "Standardfärbung" zu überschreiben. Diese Färbungen sind dann ebenfalls in den Schwarz-Weiß Dokumenten noch sichtbar und könnten in diesen zur Hervorhebung genutzt werden. Falls ein solches Farb-Symbol vor ein Wort in der Übersetzungszeile gesetzt wird (also nicht vor ein antikes Wort), erscheint nur dieses eine Wort in dieser Farbe.
               </p>
   
               <p style="margin-bottom: 10px">
                 <strong>• Fehlenden Text hinzufügen:</strong> Falls aus irgendwelchen Gründen Text fehlen sollte (KI-Fehler, Verarbeitungsfehler), können die bereits
-                bestehenden Zeilen erweitert oder verändert werden. Dabei ist der wichtige Unterschied zwischen zwei typen von PDF Buildern zu beachten:
-                der <strong>Prosa Builder</strong> erzeugt stets einen Fließtext aus seinem translinear.txt (egal ob gr. oder lat.) und wird davon nur "hart" von Über- oder Unterüberschriftenzeilen unterbrochen. Falls also Text fehlen sollte,
+                bestehenden Zeilen erweitert oder verändert werden. Dabei ist der Unterschied zwischen zwei typen von PDF Buildern zu beachten:
+                der <strong>Prosa Builder</strong> erzeugt stets einen Fließtext aus seinem translinear.txt (egal ob gr. oder lat.) und wird davon nur "hart" von Über- oder Unterüberschriftenzeilen abgehalten, die diesen Fließtext unterbrechen. Falls also Text irgendwo fehlen sollte,
                 könnte jede
-                beliebige bereits darstehende Zeile endlos lange um den fehlenden Text erweitert (oder gekürzt) werden. Am Ende sollte stets ein durchgängiger
+                beliebige bereits darstehende Zeile um den fehlenden Text erweitert (oder gekürzt) werden. Am Ende sollte stets ein durchgängiger
                 Fließtext im PDF
                 entstehen. Der <strong>Poesie Builder</strong> wiederum behält 
                 stets die Originale Zeilenstruktur des translinear.txt bei (und somit bei Tragödien oder Hexameter die originale, metrisch gebundene Form). Es ist in
-                beiden Texten möglich, falls Zeilen fehlen sollten, Insertionszeilen hinzuzufügen. Dazu
+                beiden Texten möglich (aber nur in Poesie unter Umständen auch nötig), falls Zeilen fehlen sollten, Insertionszeilen hinzuzufügen. Dazu
                 ist an die entsprechende Stelle im translinear.txt zu gehen, wo der vermeintliche Text fehlt und eine Insertionszeile durch 
                 (Zeilennummer + "Insertionssuffix" i) zu setzen und mit dem vermissten Text zu befüllen.
                 Es wird dann eine zusätzliche Translinear-Zeile mit gewählten Zeilennummer z.B. (25i) in das Poesie PDF eingefügt.
@@ -815,10 +798,10 @@
               <p style="margin-bottom: 10px">
                 <strong>• Zusatzfunktion Kommentare:</strong> Es ist möglich, Kommentare mit (Zeilennummer + "Kommentarsuffix" k) in den
                 translinear.txt einzufügen
-                (z.B. (8k) als Zeilennummer für "Stellenkommentar zur Zeile 8" oder (125-129k) für "Bereichskommentar für Zeilen 125-129"). Kommentare
+                (z.B. (8k) als Zeilennummer für "Stellenkommentar zur Zeile 8" oder (125-129k) für "Bereichskommentar für die Zeilen 125-129"). Kommentare
                 erscheinen stets grau hinterlegt, in kleinerer Schrift, als Fließtext und an genau der Stelle, an der sie im translinear.txt gesetzt wurden
-                (zur Setzung von Kommentaren und Insertionen ebenfalls mehr in der Demonstration). Ihre Anwendungsmöglichkeiten sollen jedem offen stehen, da es schlicht eine Kommentarbox ist. Man könnte im Dokument laufend Kontext zu den Handlungen des Textes geben (oder auch in einem einleitenden Kommentar darüber etwas schreiben). Interessant wäre auch, grammatikalische Konstruktionen im Text aufzuzeigen, die vielleicht typischerweise nicht so leicht erkannt werden und beim Unwissenden dann zu Missverständnissen führen. Möglich und vielleicht fruchtbar wäre es auch, andere Lesarten aufzuzeigen, die der Leser beim üblichen Lesen wohl meist nicht erkennt und die Stelle dann zu eindimensional interpretiert. Viele subtile Dinge, die auch zusätzlichen Kontext oder Weltwissen benötigen, fallen sonst zwangsweise nur dem Leser auf, der bereits ein Kenner ist. Dadurch könnte auch der Blick für solche Phänomene und die "echte Tiefe" eines Werkes geschärft werden. Man könnte auch ganz typische Fehler beim Übersetzen vorwegnehmen, oder aber zumindest in "indirekter Weise" auf diese hinzuweisen (z.B. bei einem Wort schlicht zu sagen, dass hier Vorsicht geboten ist, oder eben, dass eine besondere grammatikalische Konstruktion vorliegt), um ebenfalls einem falschen Verständnis zuvorzukommen. Dadurch kann entweder gar kein Kommentar (wie in Original-PDFs), oder ein einmaliger und einleitender, oder ein seltener und spezifischer,
-                oder auch ein frequenter Begleitkommentar geschrieben werden, der fast ein Lesetext ist. 
+                (zur Setzung von Kommentaren und Insertionen ebenfalls mehr in der Demonstration). Ihre Anwendungsmöglichkeiten sind offen, da es schlicht eine Kommentarbox ist. Man könnte im Dokument Kontext zu nicht unbedingt ersichtlichen Vorgehen oder Anspielungen geben (oder auch in einem einleitenden Kommentar darüber etwas schreiben). Interessant wäre auch, grammatikalische Konstruktionen im Text aufzuzeigen, die vielleicht typischerweise nicht so leicht erkannt werden und bei Unwissenden dann zu Missverständnissen führen. Möglich und vielleicht fruchtbar wäre es auch, andere Lesarten aufzuzeigen, die der Leser beim üblichen Lesen wohl meist nicht erkennt und die Stelle dann zu eindimensional interpretiert. Allgemein sind die Kommentare dazu gedacht, die unterstützende Funktion des translinear Dokumentes unterstützen. Es kann entweder gar kein Kommentar (wie in Original-PDFs), oder ein seltener und spezifischer,
+                oder auch ein frequenter Begleitkommentar geschrieben werden, der die Textstellen ausführlicher erschließt. 
               </p>
 
               <p style="margin-bottom: 10px">
@@ -1263,12 +1246,12 @@
 
              </p>
             <p style="margin-bottom: 10px">
-               <strong>• Zusatzfunktion NoTrans PDF:</strong> Ein Haken in <strong>Übersetzungen ausblenden</strong> (oben in der Tabelle) sorgt dafür,
-               dass alle Übersetzungszeilen ausgeblendet werden. Dazu bräuchte es den Knopf an sich nicht, da man die Dinge auch individuell anwählen könnte, man erhält dann aber schnell das "NoTrans" PDF, welches keine translinear-Zeilen, sondern nur antiken Text mit Farben und Grammatiktags enthält, wobei natürlich immer 8 Versionen, also auch NoTag und BlackWhite Versionen entstehen.
+               <strong>• NoTrans PDF:</strong> Ein Haken in <strong>Übersetzungen ausblenden</strong> (oben in der Tabelle) sorgt dafür,
+               dass alle Übersetzungszeilen ausgeblendet werden. Man erhält dann das "NoTrans" PDF, welches keine translinear-Zeilen, sondern nur antiken Text mit Farben und Grammatiktags enthält, wobei auch hier alle 8 Versionen, also auch NoTag und BlackWhite Versionen entstehen.
             </p>
               <p style="margin-bottom: 10px">
                <strong>• Pipes verstecken:</strong> Ein Haken in <strong>Pipes verstecken</strong> (oben in der Tabelle) sorgt dafür,
-               dass alle Pipes (also | Zeichen) in den Übersetzungszeilen als Leerzeichen erscheinen, sodass "des|Hauses" optional am Ende doch als "des Hauses" erscheint. Dies ist größtenteils kosmetisch, aber ermöglicht vor allem zusammen mit der Straußlogik, als Übersetzung z.B. Wirtschaft/hier:|Landwirtschaft schreiben zu können, was dann als Wirtschaft hier: Landwirtschaft untereinander erscheinen würde, und somit eine Art "Mikrokommentar" darstellt, mit dem auf einen besonderen Kontext dieses Übersetzungswortes hingewiesen werden könnte (Wirtschaft heisst das Wort, HIER aber heisst es Landwirtschaft). Die Möglichkeiten sind an sich nicht begrenzt, es ließe sich auch angeben: Haus/(auch:|Wohnraum)/nicht(!)|Villa/Subjekt. Somit ist es möglich, den Begriff auf beliebige Weise einzugrenzen oder näher zu beschreiben.
+               dass alle Pipes (also | Zeichen) in den Übersetzungszeilen als Leerzeichen erscheinen, sodass "des|Hauses" optional am Ende doch als "des Hauses" erscheint. Dies ist größtenteils kosmetisch, aber ermöglicht vor allem zusammen mit der Straußlogik, als Übersetzung z.B. Wirtschaft/hier:|Landwirtschaft schreiben zu können, was dann als Wirtschaft hier: Landwirtschaft untereinander erscheinen würde, und somit eine Art "Mikrokommentar" darstellt, mit dem auf einen besonderen Kontext dieses Übersetzungswortes hingewiesen werden könnte (Wirtschaft heisst das Wort, HIER aber heisst es Landwirtschaft). Es ließe sich auch angeben: Haus/(auch:|Wohnraum)/nicht(!)|Villa/Subjekt|des|Nebensatzes. Somit ist es möglich, den Begriff auf beliebige Weise einzugrenzen oder näher zu beschreiben.
              </p>
             </li>
 
@@ -1403,7 +1386,7 @@
                                 Tags und (nur um sie zum Demonstrieren hervorzuheben) in orange dargestellt sind. Bei Adjektiven wurde der (Adj)-Tag unsichtbar gemacht (die Kasus aber nicht), da dieser aufgrund der blauen Farbe redundant ist. Bei Verben und Partizipien wurde Genus Verbi
                                 als Tag ausgeblendet. Das Ergebnis ist ein "kompakterer" Text, der etwas weniger Informationen für den Leser bereitstellt und aber darum auch
                                 das Lesen am antiken Text fördern könnte, da für viele Wörter keine Übersetzung gegeben ist und der Original-Text daher nicht
-                                so leicht umgangen werden kann. Mit (HideTrans) würde man selektiv weitere Wörter ausblenden können. Weitere wählbare Schritte könnten sein, Kasus bei Nomen, Adjektiven oder Partizipien auszublenden, oder alle oder einige Tempora bei Verben und Partizipien.
+                                so leicht umgangen werden kann.
                               </p>
                             </div>
                             <button class="btn" onclick="window.open('Bilder/BENUTZERHINWEISE/inspirationspdf1.pdf', '_blank')" style="white-space: nowrap;">
