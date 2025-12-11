@@ -257,6 +257,11 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     
     blocks = Prosa.process_input_file(infile)
     
+    # DEBUG: Prüfe ob Sprecher in den RAW blocks vorhanden sind
+    for idx, b in enumerate(blocks[:5]):  # Erste 5 Blöcke
+        if isinstance(b, dict) and b.get('type') == 'pair' and b.get('gr'):
+            print(f"DEBUG RAW BLOCK {idx}: gr='{b['gr'][:80]}'", flush=True)
+    
     # WICHTIG: Für Prosa werden Kommentare NICHT automatisch als separate Blöcke erkannt
     # Wir müssen discover_and_attach_comments aufrufen
     from shared.preprocess import discover_and_attach_comments

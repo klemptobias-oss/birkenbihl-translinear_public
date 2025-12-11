@@ -1446,6 +1446,19 @@ def expand_triple_with_slashes(gr_line: str, de_line: str, en_line: str) -> tupl
     de_lines = pad_to_max(de_expanded, max_alts, line_prefix)
     en_lines = pad_to_max(en_expanded, max_alts, line_prefix)
     
+    # FIX: Füge den Sprecher wieder zur ERSTEN GR-Zeile hinzu!
+    # Der Sprecher soll NUR in der ersten Zeile erscheinen (wie im Original)
+    # Wichtig: Füge ihn NACH der Zeilennummer, aber VOR den Tokens ein!
+    if speaker_prefix and gr_lines:
+        # Extrahiere Zeilennummer und Rest aus der ersten GR-Zeile
+        first_gr = gr_lines[0]
+        match = re.match(r'^(\s*\(\d+[a-z]?\)\s*)(.*)', first_gr)
+        if match:
+            line_num_prefix = match.group(1)  # "(3) "
+            rest_of_line = match.group(2)      # "εἶεν(Prä)..."
+            # Setze die Zeile mit Sprecher zusammen
+            gr_lines[0] = f"{line_num_prefix}{speaker_prefix}{rest_of_line}"
+    
     # FLIEßTEXT + STRAUßLOGIK: KEINE Suffixe mehr!
     # Alle Alternativen behalten die GLEICHE Zeilennummer → werden zu EINEM pair-Block!
     # Später erkennen wir die Multi-Row Struktur anhand der Anzahl der GR/DE/EN Zeilen!
@@ -1709,6 +1722,11 @@ def process_input_file(fname:str):
             # Jetzt haben wir alle Zeilen mit derselber Nummer
             num_lines = len(lines_with_same_num)
             
+            # DEBUG: Zeige die erste Zeile dieser Gruppe
+            if line_num == "3":  # Nur für Zeile 3 (Σωκράτης)
+                print(f"DEBUG process_input_file: line_num={line_num}, num_lines={num_lines}", flush=True)
+                print(f"DEBUG process_input_file: lines_with_same_num[0]='{lines_with_same_num[0][:120]}'", flush=True)
+            
             # NEU: Spezielle Behandlung für Insertionszeilen (i)
             # Bei konsekutiven (i)-Zeilen müssen wir sie in Gruppen aufteilen
             if is_insertion_line(line_num):
@@ -1751,6 +1769,11 @@ def process_input_file(fname:str):
                 # WICHTIG: Sprecher nur in der antiken Zeile behalten, aus Übersetzung entfernen
                 # NEU: Zeilennummern aus allen Zeilen entfernen (nur für Prosa)
                 gr_line = _remove_line_number_from_line(lines_with_same_num[0])
+                
+                # DEBUG: Zeige gr_line nach _remove_line_number_from_line
+                if line_num == "3":
+                    print(f"DEBUG process_input_file: AFTER _remove_line_number_from_line: gr_line='{gr_line[:120]}'", flush=True)
+                
                 de_line = _remove_line_number_from_line(_remove_speaker_from_line(lines_with_same_num[1]))
                 # NEU: Speichere die ursprüngliche Zeilennummer für Hinterlegung (ohne sie im PDF anzuzeigen)
                 base_num = int(re.match(r'^(\d+)', line_num).group(1)) if re.match(r'^(\d+)', line_num) else None
@@ -2006,6 +2029,12 @@ def group_pairs_into_flows(blocks):
                 if sp_gr != active_speaker:
                     flush()
                     active_speaker = sp_gr
+            else:
+                # WICHTIG: Wenn KEIN Sprecher im Input steht, setze active_speaker zurück!
+                # Sonst wird der alte Sprecher nach Kommentaren weiter verwendet.
+                if active_speaker is not None:
+                    flush()
+                    active_speaker = None
 
             # Breitenangleich: Jetzt mit 3 Zeilen
             max_len = max(len(gt), len(dt), len(et))
