@@ -447,9 +447,31 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             t1 = time.time()
             logging.getLogger(__name__).info("prosa_pdf: apply_colors START (strength=%s, color=%s, tag=%s)", strength, color_mode, tag_mode)
             disable_comment_bg_flag = (final_tag_config.get('disable_comment_bg', False) if isinstance(final_tag_config, dict) else False)
-            # WICHTIG: apply_colors wird IMMER aufgerufen (auch bei BLACK_WHITE), 
-            # da es Farben basierend auf tag_config hinzufügt. Bei BLACK_WHITE werden Farben später entfernt.
+            
+            # SCHRITT 1: Tokenisiere pair-Blöcke BEVOR apply_colors!
+            # WICHTIG: apply_colors erwartet gr_tokens/de_tokens/en_tokens (Listen), nicht gr/de/en (Strings)!
+            # Wir tokenisieren OHNE zu flow-Blöcken zu gruppieren, damit jedes pair einzeln gefärbt wird.
+            from Prosa_Code import tokenize
+            for block in variant_blocks:
+                if isinstance(block, dict) and block.get('type') == 'pair':
+                    # Tokenisiere gr, de, en Strings zu Listen
+                    if 'gr' in block and 'gr_tokens' not in block:
+                        block['gr_tokens'] = tokenize(block['gr']) if block.get('gr') else []
+                    if 'de' in block and 'de_tokens' not in block:
+                        block['de_tokens'] = tokenize(block['de']) if block.get('de') else []
+                    if 'en' in block and 'en_tokens' not in block:
+                        block['en_tokens'] = tokenize(block['en']) if block.get('en') else []
+            
+            # SCHRITT 2: Wende Farben an (NACH Tokenisierung!)
+            # WICHTIG: apply_colors wird IMMER aufgerufen (auch bei BLACK_WHITE)!
+            # Grund: Es setzt token_meta mit Farbsymbolen und computed_color, die später verwendet werden.
+            # Bei BLACK_WHITE werden nur die automatischen Farben entfernt, händische Symbole bleiben.
             blocks_with_colors = preprocess.apply_colors(variant_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
+            
+            # SCHRITT 3: Gruppiere pair-Blöcke zu flow-Blöcken (NACH apply_colors!)
+            # Dies MUSS nach apply_colors passieren, damit die Farbsymbole bereits in den Tokens sind!
+            blocks_with_colors = group_pairs_into_flows(blocks_with_colors)
+            
             t2 = time.time()
             logging.getLogger(__name__).info("prosa_pdf: apply_colors END (%.2fs)", t2 - t1)
         except Exception as e:
@@ -498,10 +520,13 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         has_no_translations = preprocess.all_blocks_have_no_translations(blocks_no_empty_trans)
 
         # Schritt 4: Farbsymbole entfernen (für _BlackWhite-Versionen).
+        # WICHTIG: Bei BLACK_WHITE werden automatische Farbsymbole entfernt (force_color=False),
+        # aber händisch gesetzte Symbole (force_color=True) bleiben erhalten!
+        # Dies ermöglicht es, in BlackWhite-PDFs einzelne Wörter gezielt zu färben.
         if color_mode == "BLACK_WHITE":
             variant_final_blocks = preprocess.remove_all_color_symbols(blocks_no_empty_trans)
-        else: # COLOR
-            variant_final_blocks = blocks_no_empty_trans
+        else:
+            variant_final_blocks = blocks_no_empty_trans  # Bei COLOR alle Farben behalten
 
         # Schritt 5: PDF rendern mit dem final prozessierten Block-Set.
         out_name = output_pdf_name(base, NameOpts(strength=strength, color_mode=color_mode, tag_mode=tag_mode))
@@ -510,6 +535,12 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         if has_no_translations:
             p = Path(out_name)
             out_name = p.with_name(p.stem + "_NoTrans" + p.suffix).name
+        
+        # WICHTIG: Vollständiger Pfad zum Ausgabeordner
+        output_dir = Path("pdf_drafts/unknown/prosa/Unsortiert/Unbenannt")
+        output_dir.mkdir(parents=True, exist_ok=True)
+        out_path = str(output_dir / out_name)
+        
         opts = PdfRenderOptions(strength=strength, color_mode=color_mode, tag_mode=tag_mode, versmass_mode="REMOVE_MARKERS")
         
         # build the PDF via unified API
@@ -519,7 +550,7 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
         except Exception:
             pass
         try:
-            create_pdf_unified("prosa", Prosa, variant_final_blocks, out_name, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
+            create_pdf_unified("prosa", Prosa, variant_final_blocks, out_path, opts, payload=None, tag_config=final_tag_config, hide_pipes=hide_pipes)
             logger.info("prosa_pdf: reportlab build() finished for %s", out_name)
             print(f"✓ PDF erstellt → {out_name}")
         except Exception:

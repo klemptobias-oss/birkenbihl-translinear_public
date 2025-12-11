@@ -52,7 +52,7 @@ DE_FETT_DE_SIZE = 8.2   # Deutsche Textgröße im DE_FETT-Modus
 # Vertikale Abstände INNERHALB eines Verspaars (Intra-Pair)
 # Abstand zwischen griechischer und deutscher Zeile
 INTRA_PAIR_GAP_MM_TAGS = 0.7      # Abstand bei PDFs MIT Tags (KOMPAKT wie Poesie: 0.7mm)
-INTRA_PAIR_GAP_MM_NO_TAGS = 0.2   # Abstand bei PDFs OHNE Tags (MAXIMAL ENG für kompakte Darstellung)
+INTRA_PAIR_GAP_MM_NO_TAGS = 0.3   # Abstand bei PDFs OHNE Tags (ETWAS KLEINERER ABSTAND ALS WIE BEI Tags: 0.3mm)
 
 # Vertikale Abstände ZWISCHEN Tabellenzeilen (Inter-Pair)
 # Jede Tabellenzeile enthält mehrere Verspaare (griechisch-deutsch Paare)
@@ -63,6 +63,14 @@ CONT_PAIR_GAP_MM_NO_TAGS = 1.0  # Abstand ZWISCHEN Tabellenzeilen bei PDFs OHNE 
 # Sonstige Abstände (werden durch tag_mode-spezifische Werte überschrieben)
 # CONT_PAIR_GAP_MM wird in create_pdf basierend auf tag_mode gesetzt
 BLANK_MARKER_GAP_MM = 4.0         # Abstand bei Leerzeilen-Marker
+
+# ----------------------- HORIZONTALE ABSTÄNDE (Wort zu Wort) -----------------------
+# Sicherheitspuffer zwischen Wörtern (links-rechts), abhängig von Tag-Sichtbarkeit
+
+# VEREINHEITLICHUNG: NUR diese zwei Werte entscheiden über horizontalen Abstand!
+# Egal ob: Sprecher, §, HideTags, tag_config, oder NO_TAGS PDF
+TOKEN_SPACING_WITH_TAGS_PT = 1.0    # Wort hat sichtbare Tags → kleinerer Abstand (Tags trennen optisch) - REDUZIERT von 1.2
+TOKEN_SPACING_NO_TAGS_PT = 2.0      # Wort hat keine Tags → größerer Abstand (klare Trennung nötig)
 
 # ----------------------- TABELLEN-KONFIGURATION -----------------------
 # Einstellungen für Tabellen-Layout
@@ -235,6 +243,10 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
     - Wenn tag_mode == "NO_TAGS": entferne alle Tags
     - Sonst: entferne nur Tags, die in token_meta[i]['removed_tags'] markiert sind
     """
+    # DEBUG: Print if token contains color symbols
+    if any(sym in tok for sym in ['$', '+', '-']) if tok else False:
+        print(f"DEBUG _strip_tags_from_token: INPUT tok='{tok}', tag_mode='{tag_mode}'", flush=True)
+    
     if not tok:
         return tok
     
@@ -258,6 +270,11 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
                 cleaned = '|' + color_sym + cleaned[1:]
             else:
                 cleaned = color_sym + cleaned
+        
+        # DEBUG: Print result
+        if any(sym in tok for sym in ['$', '+', '-']):
+            print(f"DEBUG _strip_tags_from_token: NO_TAGS OUTPUT cleaned='{cleaned}', color_sym='{color_sym}'", flush=True)
+        
         return cleaned
     
     # Otherwise remove only tags that were recorded as removed by apply_tag_visibility
@@ -280,9 +297,18 @@ def _strip_tags_from_token(tok: str, block: dict = None, tok_idx: int = None, ta
                     cleaned = '|' + color_sym + cleaned[1:]
                 else:
                     cleaned = color_sym + cleaned
+            
+            # DEBUG: Print result
+            if any(sym in tok for sym in ['$', '+', '-']):
+                print(f"DEBUG _strip_tags_from_token: TAGS+removed OUTPUT cleaned='{cleaned}', color_sym='{color_sym}', removed_tags={removed_tags}", flush=True)
+            
             return cleaned
     
     # nothing to remove for this token, keep as-is
+    # DEBUG: Print result
+    if any(sym in tok for sym in ['$', '+', '-']) if tok else False:
+        print(f"DEBUG _strip_tags_from_token: TAGS+no-remove OUTPUT tok='{tok}' (unchanged)", flush=True)
+    
     return tok
 
 def _token_display_text_from_token(tok: str) -> str:
@@ -752,16 +778,123 @@ def tokenize(line:str):
 def _measure_string(text:str, font:str, size:float) -> float:
     return pdfmetrics.stringWidth(text, font, size)
 
-def _token_extra_buffer(token_gr_style, no_tag_no_trans=False):
+def _token_extra_buffer(token_has_visible_tags:bool):
     """
-    Unified extra buffer for token spacing.
-    For NoTag/NoTrans tokens (especially in speaker lines) use slightly larger buffer
-    to avoid words sticking together. This value should match spacing used in § and
-    non-speaker prosa.
+    VEREINHEITLICHTER horizontaler Sicherheitsabstand zwischen Wörtern.
+    
+    EINZIGER Entscheidungsfaktor: Hat das Wort im FINALEN PDF sichtbare Tags?
+    - JA (Tags sichtbar): Kleinerer Abstand (Tags trennen optisch)
+    - NEIN (keine Tags): Größerer Abstand (klare Trennung nötig)
+    
+    EGAL ob: Sprecher, §, HideTags, tag_config, oder NO_TAGS PDF!
     """
-    if no_tag_no_trans:
-        return max(token_gr_style.fontSize * 0.05, 1.5)
-    return max(token_gr_style.fontSize * 0.04, 1.2)
+    if token_has_visible_tags:
+        return TOKEN_SPACING_WITH_TAGS_PT
+    else:
+        return TOKEN_SPACING_NO_TAGS_PT
+
+def _calculate_dynamic_token_spacing(gr_token: str, de_token: str, en_token: str, 
+                                     tag_mode: str, tag_config: dict = None,
+                                     hide_pipes: bool = False,
+                                     font_gr: str = 'DejaVu', size_gr: float = 11.0,
+                                     font_de: str = 'DejaVu', size_de: float = 10.0) -> float:
+    """
+    INTELLIGENTE Abstandsberechnung basierend auf tatsächlicher Wortlänge!
+    
+    Logik:
+    1. Hat GR-Wort sichtbare Tags? → Prüfe weiter
+    2. Ist GR-Wort (mit Tags) länger als ALLE Übersetzungen? 
+       → JA: Reduzierter Abstand (0.5pt) - Tags trennen optisch
+       → NEIN: Normaler Abstand (1.0pt) - Übersetzung ist länger
+    3. Hat GR-Wort keine Tags? → Normaler Abstand wie NoTags (2.0pt)
+    
+    Berücksichtigt:
+    - hide_pipes: Pipes werden zu Leerzeichen (macht Übersetzungen länger!)
+    - tag_mode: NO_TAGS = keine Tags sichtbar
+    - tag_config: Individuelle Tag-Versteckung
+    """
+    # 1. Hat GR-Wort sichtbare Tags?
+    has_tags = _token_has_visible_tags(gr_token, tag_mode, tag_config)
+    
+    if not has_tags:
+        # Keine Tags → Normaler NoTags-Abstand
+        return TOKEN_SPACING_NO_TAGS_PT
+    
+    # 2. Berechne tatsächliche Pixel-Breiten
+    # GR-Wort MIT Tags (nach Tag-Filterung, aber MIT verbleibenden Tags)
+    gr_display = gr_token  # Token wie er angezeigt wird (mit sichtbaren Tags)
+    gr_width = _measure_string(gr_display, font_gr, size_gr)
+    
+    # Übersetzungen: Berücksichtige hide_pipes!
+    de_display = de_token.replace('|', ' ') if hide_pipes and de_token else de_token
+    en_display = en_token.replace('|', ' ') if hide_pipes and en_token else en_token
+    
+    de_width = _measure_string(de_display or '', font_de, size_de)
+    en_width = _measure_string(en_display or '', font_de, size_de)
+    
+    # Maximale Übersetzungsbreite
+    max_translation_width = max(de_width, en_width)
+    
+    # 3. Ist GR länger als ALLE Übersetzungen?
+    if gr_width > max_translation_width:
+        # JA: GR mit Tags ist länger → Reduzierter Abstand (Tags trennen optisch)
+        return 0.5
+    else:
+        # NEIN: Übersetzung ist länger → Normaler Tag-Abstand
+        return TOKEN_SPACING_WITH_TAGS_PT
+
+def _token_has_visible_tags(token: str, tag_mode: str, tag_config: dict = None) -> bool:
+    """
+    VEREINFACHTE Prüfung: Hat das Token im FINALEN PDF sichtbare Tags?
+    
+    Berücksichtigt:
+    - tag_mode == "NO_TAGS": Keine Tags sichtbar
+    - tag_config: Individuelle Tag-Versteckung
+    - HideTags: Tags wurden entfernt
+    
+    Returns:
+        True wenn Token sichtbare Tags hat, sonst False
+    """
+    if not token:
+        return False
+    
+    # Bei NO_TAGS sind ALLE Tags unsichtbar
+    if tag_mode == "NO_TAGS":
+        return False
+    
+    # Extrahiere Tags aus Token
+    tags = RE_TAG.findall(token)
+    if not tags:
+        return False
+    
+    # Wenn tag_config vorhanden, prüfe ob Tags sichtbar sind
+    if tag_config:
+        from shared.preprocess import RULE_TAG_MAP
+        
+        for tag in tags:
+            tag_lower = tag.lower()
+            is_visible = True
+            
+            # Prüfe ob Tag direkt versteckt ist
+            if tag_config.get(tag_lower, {}).get('hide', False):
+                is_visible = False
+            else:
+                # Prüfe ob Gruppe versteckt ist
+                for group_id, group_tags in RULE_TAG_MAP.items():
+                    if tag in group_tags:
+                        if tag_config.get(group_id, {}).get('hide', False):
+                            is_visible = False
+                            break
+            
+            # Wenn mindestens EIN Tag sichtbar ist, return True
+            if is_visible:
+                return True
+        
+        # ALLE Tags sind versteckt
+        return False
+    
+    # Keine tag_config: Tags sind sichtbar
+    return True
 
 # ----------------------- Sprecher-Handling -----------------------
 def pop_leading_speaker(tokens):
@@ -801,7 +934,11 @@ def _inline_badge(text_inside:str, base_font_size:float) -> str:
     small = max(4.0, base_font_size * INLINE_SCALE)
     return f'<font name="DejaVu" color="{INLINE_COLOR_HEX}" size="{small:.2f}">[{xml_escape(text_inside)}]</font>'
 
-def format_token_markup(token:str, *, reverse_mode:bool=False, is_greek_row:bool, base_font_size:float) -> str:
+def format_token_markup(token:str, *, reverse_mode:bool=False, is_greek_row:bool, base_font_size:float, color_mode:str="COLOR") -> str:
+    # DEBUG: Print incoming token if it contains color symbols
+    if any(sym in token for sym in ['$', '+', '-']):
+        print(f"DEBUG format_token_markup: INPUT token='{token}', color_mode={color_mode}", flush=True)
+    
     raw = (token or '').strip()
     if not raw: return ''
     # Inline-Marken wie "(1)" → kleines graues Badge (nur in GR-Zeile sichtbar)
@@ -810,22 +947,34 @@ def format_token_markup(token:str, *, reverse_mode:bool=False, is_greek_row:bool
         return _inline_badge(inner, base_font_size) if is_greek_row else ''
 
     # Farbcodes - finde den ersten Farbcode im Token
+    # WICHTIG: Händisch gesetzte Farbsymbole werden IMMER in bunten Farben dargestellt,
+    # auch in BlackWhite-PDFs! (Die automatischen Farben werden in BlackWhite entfernt,
+    # aber händisch gesetzte Symbole bleiben farbig für Hervorhebungen)
     color = None
     color_pos = -1
+    
+    # IMMER bunte Farben für händisch gesetzte Symbole (auch in BLACK_WHITE!):
     if '#' in raw:
-        color_pos = raw.find('#'); color = '#FF0000'
+        color_pos = raw.find('#'); color = '#FF0000'  # Rot
     elif '+' in raw:
-        color_pos = raw.find('+'); color = '#1E90FF'
+        color_pos = raw.find('+'); color = '#1E90FF'  # Blau
     elif '-' in raw:
-        color_pos = raw.find('-'); color = '#228B22'
+        color_pos = raw.find('-'); color = '#228B22'  # Grün
     elif '§' in raw:
-        color_pos = raw.find('§'); color = '#9370DB'  # Sanftes Violett (wie Blumen) - Pendant zum sanften Blau
+        color_pos = raw.find('§'); color = '#9370DB'  # Violett
     elif '$' in raw:
         color_pos = raw.find('$'); color = '#FFA500'  # Orange
+
+    # DEBUG: Print color detection
+    if any(sym in token for sym in ['$', '+', '-']):
+        print(f"DEBUG format_token_markup: color={color}, color_pos={color_pos}, raw='{raw}'", flush=True)
 
     # Entferne den Farbcode aus dem raw-Text
     if color_pos >= 0:
         raw = raw[:color_pos] + raw[color_pos+1:]
+        # DEBUG: Print after removal
+        if any(sym in token for sym in ['$', '+', '-']):
+            print(f"DEBUG format_token_markup: After removal raw='{raw}'", flush=True)
 
     # Stärke/Tags
     strong = '~' in raw; raw = raw.replace('~','')
@@ -865,7 +1014,14 @@ def format_token_markup(token:str, *, reverse_mode:bool=False, is_greek_row:bool
     for t in rest: parts.append(f'({xml_escape(t)})')
     if color:   parts.append('</font>')
     if is_bold: parts.append('</b>')
-    return ''.join(parts)
+    
+    result = ''.join(parts)
+    
+    # DEBUG: Print final output
+    if any(sym in token for sym in ['$', '+', '-']):
+        print(f"DEBUG format_token_markup: OUTPUT result='{result}'", flush=True)
+    
+    return result
 
 def visible_measure_token(token:str, *, font:str, size:float, is_greek_row:bool=True, reverse_mode:bool=False) -> float:
     t = (token or '').strip()
@@ -1078,13 +1234,21 @@ def expand_line_with_slashes(line: str) -> list[str]:
             token_alternatives.append([token])
         else:
             # Hat `/` → expandiere
-            # Extrahiere Prefix-Tags (z.B. "nomen#")
+            # Extrahiere Prefix-Tags/Symbole (z.B. "nomen#" oder "#" oder "+" oder "$")
+            # WICHTIG: Symbole (#, +, -, §, $) können ALLEINE stehen (ohne Buchstaben davor)!
             prefix_tag = ''
             core = token
-            tag_match = re.match(r'^([a-zA-Z_]+[#\$§+\-])', core)
-            if tag_match:
-                prefix_tag = tag_match.group(1)
-                core = core[len(prefix_tag):]
+            
+            # Prüfe zuerst auf Farbsymbole ALLEINE am Anfang
+            if core and core[0] in ['#', '+', '-', '§', '$']:
+                prefix_tag = core[0]
+                core = core[1:]
+            else:
+                # Prüfe auf Buchstaben + Symbol (z.B. "nomen#")
+                tag_match = re.match(r'^([a-zA-Z_]+[#\$§+\-])', core)
+                if tag_match:
+                    prefix_tag = tag_match.group(1)
+                    core = core[len(prefix_tag):]
             
             # Extrahiere Suffix-Tags (z.B. "(Art)(N)")
             suffix_tag = ''
@@ -1096,10 +1260,53 @@ def expand_line_with_slashes(line: str) -> list[str]:
             # Splitte an `/`
             parts = core.split('/')
             
-            # Füge Tags wieder hinzu
-            alts = [prefix_tag + part + suffix_tag if part else '' for part in parts]
+            # DEBUG: Print if token contains test symbols
+            if any(test in token for test in ['TestEinzeiler', 'Zweizeiler', 'testonly']):
+                print(f"DEBUG expand_line_with_slashes: token='{token}', prefix_tag='{prefix_tag}', suffix_tag='{suffix_tag}', parts={parts}", flush=True)
+            
+            # KRITISCHER FIX: Jedes part kann sein EIGENES Farbsymbol haben!
+            # Beispiel: #der/+der/-der → ['der', '+der', '-der']
+            # Das erste part bekommt prefix_tag (#), die anderen haben ihre eigenen Symbole!
+            alts = []
+            for idx, part in enumerate(parts):
+                if not part:
+                    alts.append('')
+                    continue
+                
+                # Prüfe ob dieses part sein EIGENES Farbsymbol hat
+                if part and part[0] in ['#', '+', '-', '§', '$']:
+                    # Part hat eigenes Symbol → verwende ES (nicht prefix_tag!)
+                    # KRITISCH: Entferne MEHRFACHE Farbsymbole (z.B. "$#Zweizeiler" → "$Zweizeiler")
+                    # Dies kann passieren wenn Preprocess Wortart-Symbole hinzufügt NACH dem Alternativ-Symbol
+                    first_symbol = part[0]
+                    rest = part[1:]
+                    
+                    # DEBUG: Print before cleanup
+                    if any(test in part for test in ['TestEinzeiler', 'Zweizeiler', '+Test', '$Zwei']):
+                        print(f"DEBUG expand CLEANUP: part='{part}', first_symbol='{first_symbol}', rest='{rest}'", flush=True)
+                    
+                    # Entferne alle weiteren Farbsymbole am Anfang
+                    while rest and rest[0] in ['#', '+', '-', '§', '$']:
+                        rest = rest[1:]
+                    
+                    # DEBUG: Print after cleanup
+                    if any(test in part for test in ['TestEinzeiler', 'Zweizeiler', '+Test', '$Zwei']):
+                        print(f"DEBUG expand CLEANUP: after rest='{rest}', final='{first_symbol + rest + suffix_tag}'", flush=True)
+                    
+                    alts.append(first_symbol + rest + suffix_tag)
+                elif idx == 0:
+                    # Erstes part → verwende prefix_tag vom ursprünglichen Token
+                    alts.append(prefix_tag + part + suffix_tag)
+                else:
+                    # Weitere parts OHNE eigenes Symbol → kein prefix_tag!
+                    alts.append(part + suffix_tag)
+            
             token_alternatives.append(alts)
             max_alts = max(max_alts, len(alts))
+            
+            # DEBUG: Print results
+            if any(test in token for test in ['TestEinzeiler', 'Zweizeiler', 'testonly']):
+                print(f"DEBUG expand_line_with_slashes: alts={alts}, max_alts={max_alts}", flush=True)
     
     # Erstelle die Zeilen
     result_lines = []
@@ -1142,10 +1349,44 @@ def expand_triple_with_slashes(gr_line: str, de_line: str, en_line: str) -> tupl
     """
     import re
     
-    # Expandiere alle 3 Zeilen einzeln
+    # KRITISCHER FIX: Extrahiere Sprecher VOR der Expansion!
+    # Der Sprecher [Χρεμύλος:] würde sonst in erste Zeile bleiben, aber in Alternativen zu ∅ werden
+    # → Führt zu falscher Spalten-Alignierung in Tabelle!
+    speaker_prefix = ''
+    
+    # Funktion zum Entfernen des Sprechers aus einer Zeile
+    def remove_speaker(line):
+        if not line:
+            return line, ''
+        # Suche nach Sprecher-Pattern: [Name:] oder Name: nach Zeilennummer
+        # Beispiel: "(17) [Χρεμύλος:] τῶν μὲν..."
+        # WICHTIG: [Name:] - der Doppelpunkt ist INNERHALB der eckigen Klammern!
+        speaker_match = re.match(r'^(\s*\(\d+[a-z]?\)\s*)(\[.+?:\]\s*|([^\s:]+):\s*)(.*)', line)
+        if speaker_match:
+            line_prefix = speaker_match.group(1)  # "(17) "
+            speaker_part = speaker_match.group(2)  # "[Χρεμύλος:] " oder "Name: "
+            rest = speaker_match.group(4)  # Rest der Zeile
+            
+            line_without_speaker = line_prefix + rest
+            return line_without_speaker, speaker_part
+        return line, ''
+    
+    # Entferne Sprecher aus ALLEN Zeilen (GR, DE, EN)
+    gr_line, gr_speaker = remove_speaker(gr_line)
+    de_line, de_speaker = remove_speaker(de_line)
+    en_line, en_speaker = remove_speaker(en_line)
+    
+    # Verwende den ersten nicht-leeren Sprecher
+    speaker_prefix = gr_speaker or de_speaker or en_speaker
+    
+    # Expandiere alle 3 Zeilen einzeln (ohne Sprecher!)
     gr_expanded = expand_line_with_slashes(gr_line) if gr_line else ['']
     de_expanded = expand_line_with_slashes(de_line) if de_line else ['']
     en_expanded = expand_line_with_slashes(en_line) if en_line else ['']
+    
+    # WICHTIG: Sprecher wird NICHT wieder zu den Token-Listen hinzugefügt!
+    # Er wird separat über flow_block['speaker'] behandelt und in einer eigenen Spalte gerendert.
+    # Wenn wir ihn hier wieder hinzufügen würden, hätten wir eine Verschiebung der Spalten!
     
     # Finde maximale Anzahl Alternativen
     max_alts = max(len(gr_expanded), len(de_expanded), len(en_expanded))
@@ -1868,7 +2109,7 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                                   para_display, para_width_pt, style_para,
                                   speaker_display, speaker_width_pt, style_speaker,
                                   table_halign='LEFT',
-                                  hide_pipes=False, tag_config=None, tag_mode="TAGS"):
+                                  hide_pipes=False, tag_config=None, tag_mode="TAGS", color_mode="COLOR"):
     """
     STRAUßLOGIK mit SLICE-LOGIC für Fließtext-Umbrüche!
     
@@ -1882,13 +2123,14 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
     from reportlab.pdfbase.pdfmetrics import stringWidth
     from reportlab.lib.styles import ParagraphStyle
     
-    # WICHTIG: Minimiere Leading (Zeilenabstand) für ENGE Alternativen!
-    # Standardmäßig ist leading = fontSize * 1.2, wir reduzieren auf * 1.0 (= fontSize)
+    # WICHTIG: Leading (Zeilenabstand) für Alternativen mit <br/> Tags!
+    # Verwende fontSize * 1.2 - KOMPROMISS für konsistente Abstände bei vielen Alternativen
+    # (1.0 zu eng → Überlappung, 1.15 → πολλὰ Problem, 1.25 → zu viel Abstand zwischen wenigen)
     token_gr_style_tight = ParagraphStyle('TokGR_Tight', parent=token_gr_style,
-        leading=token_gr_style.fontSize * 1.0,  # Minimal: leading = fontSize
+        leading=token_gr_style.fontSize * 1.2,  # 1.2× = NEUER KOMPROMISS
         spaceBefore=0, spaceAfter=0)
     token_de_style_tight = ParagraphStyle('TokDE_Tight', parent=token_de_style,
-        leading=token_de_style.fontSize * 1.0,  # Minimal: leading = fontSize
+        leading=token_de_style.fontSize * 1.2,  # 1.2× = NEUER KOMPROMISS
         spaceBefore=0, spaceAfter=0)
     
     # Handle None inputs
@@ -2090,7 +2332,7 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                         # WICHTIG: ∅ auch mit Farbsymbolen erkennen
                         is_placeholder = (tok == '∅' or tok in ('#∅', '$∅', '+∅', '-∅', '§∅'))
                         if tok and not is_placeholder:
-                            formatted = format_token_markup(tok, is_greek_row=True, base_font_size=token_gr_style.fontSize)
+                            formatted = format_token_markup(tok, is_greek_row=True, base_font_size=token_gr_style.fontSize, color_mode=color_mode)
                             if not formatted_first:  # Erste nicht-leere für Display speichern
                                 formatted_first = formatted
                             # Extrahiere Farbe
@@ -2139,7 +2381,7 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                     is_placeholder = (tok == '∅' or tok in ('#∅', '$∅', '+∅', '-∅', '§∅'))
                     if tok and not is_placeholder:
                         # Formatiere Token MIT Farben (format_token_markup entfernt # + - § $ automatisch!)
-                        formatted = format_token_markup(tok, is_greek_row=True, base_font_size=token_gr_style.fontSize)
+                        formatted = format_token_markup(tok, is_greek_row=True, base_font_size=token_gr_style.fontSize, color_mode=color_mode)
                         gr_row.append(Paragraph(formatted, token_gr_style_tight))
                     else:
                         gr_row.append('')
@@ -2173,11 +2415,38 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                     is_placeholder = (tok == '∅' or tok in ('#∅', '$∅', '+∅', '-∅', '§∅'))
                     if tok and not is_placeholder:
                         display_tok = tok.replace('|', ' ') if hide_pipes else tok
-                        formatted = format_token_markup(display_tok, is_greek_row=False, base_font_size=token_de_style.fontSize)
                         
-                        # Übertrage GR-Farbe auf Übersetzung!
-                        if gr_color:
+                        # KRITISCHER FIX: Entferne MEHRFACHE Farbsymbole vom Preprocess
+                        # Der Preprocess kann Wortart-Symbole hinzufügen NACHDEM bereits ein Alternativ-Symbol da ist
+                        # Beispiel: '+TestEinzeiler' → Preprocess fügt '#' hinzu → '+#TestEinzeiler'
+                        # Wir wollen nur das ERSTE Symbol behalten (das Alternativ-Symbol!)
+                        if display_tok and display_tok[0] in ['#', '+', '-', '§', '$']:
+                            first_symbol = display_tok[0]
+                            rest = display_tok[1:]
+                            # Entferne alle weiteren Farbsymbole am Anfang
+                            while rest and rest[0] in ['#', '+', '-', '§', '$']:
+                                rest = rest[1:]
+                            display_tok = first_symbol + rest
+                        
+                        # DEBUG: Print token before formatting
+                        if any(sym in tok for sym in ['$', '+', '-']):
+                            print(f"DEBUG DE alt: tok='{tok}', display_tok='{display_tok}'", flush=True)
+                        
+                        formatted = format_token_markup(display_tok, is_greek_row=False, base_font_size=token_de_style.fontSize, color_mode=color_mode)
+                        
+                        # DEBUG: Print after formatting
+                        if any(sym in tok for sym in ['$', '+', '-']):
+                            print(f"DEBUG DE alt: formatted='{formatted}'", flush=True)
+                        
+                        # KRITISCH: Nur GR-Farbe übertragen, wenn Token KEINE eigene Farbe hat!
+                        # Prüfe ob Token eigene Farbsymbole (#, +, -, §, $) hat
+                        has_own_color = any(sym in tok for sym in ['#', '+', '-', '§', '$'])
+                        if gr_color and not has_own_color:
                             formatted = f'<font color="{gr_color}">{formatted}</font>'
+                        
+                        # DEBUG: Print final
+                        if any(sym in tok for sym in ['$', '+', '-']):
+                            print(f"DEBUG DE alt: final='{formatted}', has_own_color={has_own_color}, gr_color={gr_color}", flush=True)
                         
                         all_translations.append(formatted)
             
@@ -2189,18 +2458,68 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                     is_placeholder = (tok == '∅' or tok in ('#∅', '$∅', '+∅', '-∅', '§∅'))
                     if tok and not is_placeholder:
                         display_tok = tok.replace('|', ' ') if hide_pipes else tok
-                        formatted = format_token_markup(display_tok, is_greek_row=False, base_font_size=token_de_style.fontSize)
                         
-                        # Übertrage GR-Farbe auf Übersetzung!
-                        if gr_color:
+                        # KRITISCHER FIX: Entferne MEHRFACHE Farbsymbole vom Preprocess (gleich wie bei DE)
+                        if display_tok and display_tok[0] in ['#', '+', '-', '§', '$']:
+                            first_symbol = display_tok[0]
+                            rest = display_tok[1:]
+                            while rest and rest[0] in ['#', '+', '-', '§', '$']:
+                                rest = rest[1:]
+                            display_tok = first_symbol + rest
+                        
+                        # DEBUG: Print token before formatting
+                        if any(sym in tok for sym in ['$', '+', '-']):
+                            print(f"DEBUG EN alt: tok='{tok}', display_tok='{display_tok}'", flush=True)
+                        
+                        formatted = format_token_markup(display_tok, is_greek_row=False, base_font_size=token_de_style.fontSize, color_mode=color_mode)
+                        
+                        # DEBUG: Print after formatting
+                        if any(sym in tok for sym in ['$', '+', '-']):
+                            print(f"DEBUG EN alt: formatted='{formatted}'", flush=True)
+                        
+                        # KRITISCH: Nur GR-Farbe übertragen, wenn Token KEINE eigene Farbe hat!
+                        # Prüfe ob Token eigene Farbsymbole (#, +, -, §, $) hat
+                        has_own_color = any(sym in tok for sym in ['#', '+', '-', '§', '$'])
+                        if gr_color and not has_own_color:
                             formatted = f'<font color="{gr_color}">{formatted}</font>'
+                        
+                        # DEBUG: Print final
+                        if any(sym in tok for sym in ['$', '+', '-']):
+                            print(f"DEBUG EN alt: final='{formatted}', has_own_color={has_own_color}, gr_color={gr_color}", flush=True)
                         
                         all_translations.append(formatted)
             
-            # Kombiniere ALLE Übersetzungen DICHT (keine Leerräume!)
+            # KRITISCHER FIX: Erstelle SEPARATE Paragraphs für jede Alternative!
+            # <br/> führt zu inkonsistenten Abständen bei vielen Alternativen (πολλὰ Problem)
+            # Mit separaten Paragraphs in nested Table: KONSISTENTE, ENGE Abstände!
             if all_translations:
-                combined_html = '<br/>'.join(all_translations)
-                de_en_row.append(Paragraph(combined_html, token_de_style_tight))
+                # Erstelle Paragraph für jede Alternative
+                translation_paragraphs = []
+                for trans in all_translations:
+                    translation_paragraphs.append([Paragraph(trans, token_de_style_tight)])
+                
+                # Erstelle nested Table mit ALLEN Alternativen als separate Zeilen
+                nested_table = Table(translation_paragraphs, colWidths=[None])
+                
+                # SANFTE Abstände zwischen Alternativen (nicht zu eng für Z/g, aber eng genug)
+                # -0.5pt = KOMPROMISS: Vermeidet Z/g Overlaps, bleibt aber schön dicht
+                nested_style = TableStyle([
+                    ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                    ('LEFTPADDING', (0, 0), (-1, -1), 0),
+                    ('RIGHTPADDING', (0, 0), (-1, -1), 0),
+                    ('BOTTOMPADDING', (0, 0), (-1, -1), -0.5),  # -0.5pt zwischen Zeilen
+                    ('TOPPADDING', (0, 0), (-1, -1), -0.5),     # -0.5pt Standard
+                ])
+                
+                # KRITISCH: Erste Zeile der nested_table darf KEIN negatives TOPPADDING haben!
+                # Sonst "zieht" sie sich zur GR-Zeile hoch und überlappt!
+                # Die erste Alternative braucht 0pt TOPPADDING, damit gap_pts wirken kann
+                if len(translation_paragraphs) > 0:
+                    nested_style.add('TOPPADDING', (0, 0), (-1, 0), 0)  # Erste Zeile: 0pt!
+                
+                nested_table.setStyle(nested_style)
+                
+                de_en_row.append(nested_table)
             else:
                 de_en_row.append('')
         
@@ -2223,18 +2542,23 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
         # Erstelle Tabelle
         table = Table(rows, colWidths=col_widths, hAlign=table_halign)
         
-        # Style mit MINIMALSTEM PADDING für eng untereinander stehende Zeilen
+        # VEREINHEITLICHUNG: Verwende GLEICHEN SPACING-ANSATZ wie build_tables_for_stream!
+        # gap_pts sorgt für konsistenten Abstand GR → DE/EN (Tag-abhängig)
+        gap_pts = INTRA_PAIR_GAP_MM * mm
+        
         table_style_commands = [
             ('VALIGN', (0, 0), (-1, -1), 'TOP'),
             ('LEFTPADDING', (0, 0), (-1, -1), 0.5),    # Minimal
             ('RIGHTPADDING', (0, 0), (-1, -1), 0.5),   # Minimal
-            ('BOTTOMPADDING', (0, 0), (-1, -1), 0),    # 0 für eng untereinander
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 0),    # Standard: 0
             ('TOPPADDING', (0, 0), (-1, -1), 0),       # Standard: 0
         ]
         
-        # NUR ERSTE ZEILE bekommt normales Top-Padding (für Abstand zur vorherigen Table)
+        # KRITISCH: Erste Zeile (GR) bekommt BOTTOMPADDING = gap_pts!
+        # Dies sorgt für Abstand zwischen GR und DE/EN Alternativen
         if len(rows) > 0:
-            table_style_commands.append(('TOPPADDING', (0, 0), (-1, 0), 1))
+            table_style_commands.append(('BOTTOMPADDING', (0, 0), (-1, 0), gap_pts))  # GR → Alternativen
+            table_style_commands.append(('TOPPADDING', (0, 0), (-1, 0), 1))  # Abstand zur vorherigen Table
         
         table.setStyle(TableStyle(table_style_commands))
         tables.append(table)
@@ -2258,6 +2582,7 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             line_comment_colors:dict=None,  # NEU: Map von Zeilennummern zu Kommentar-Farben
                             block:dict=None,  # NEU: Block-Objekt für comment_token_mask
                             tag_mode:str="TAGS",  # NEU: Tag-Modus (TAGS oder NO_TAGS)
+                            color_mode:str="COLOR",  # NEU: Farb-Modus (COLOR oder BLACK_WHITE)
                             gr_tokens_alternatives=None,  # NEU: STRAUßLOGIK - GR Alternativen (Liste von Token-Listen)
                             de_tokens_alternatives=None,  # NEU: STRAUßLOGIK - DE Alternativen (Liste von Token-Listen)
                             en_tokens_alternatives=None):  # NEU: STRAUßLOGIK - EN Alternativen (Liste von Token-Listen)
@@ -2305,7 +2630,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             table_halign=table_halign,
             hide_pipes=hide_pipes,
             tag_config=tag_config,
-            tag_mode=tag_mode
+            tag_mode=tag_mode,
+            color_mode=color_mode
         )
     
     # Normaler Fall: KEINE Alternativen (oder nur eine)
@@ -2313,6 +2639,12 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
     gr_tokens = gr_tokens_alternatives[0] if gr_tokens_alternatives else []
     de_tokens = de_tokens_alternatives[0] if de_tokens_alternatives else []
     en_tokens = en_tokens_alternatives[0] if en_tokens_alternatives else []
+    
+    # KRITISCH: Erstelle token_de_style_tight mit engerem Leading (wie STRAUßLOGIK!)
+    # Dies sorgt für engere Abstände zwischen Übersetzungszeilen in nested tables
+    token_de_style_tight = ParagraphStyle('TokDE_Tight', parent=token_de_style,
+        leading=token_de_style.fontSize * 1.2,  # 1.2× = NEUER KOMPROMISS (wie STRAUßLOGIK)
+        spaceBefore=0, spaceAfter=0)
     
     def is_only_symbols_or_stephanus(token: str) -> bool:
         """
@@ -2523,10 +2855,21 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                 is_notag = len(all_tags) > 0 and len(visible_tags) == 0
             
             if w_gr > 0:
-                # Determine extra buffer for spacing. Use unified buffer for NO_TAGS
-                # and for speaker lines so tokens do not collide.
-                no_tag_no_trans = is_notag  # or (token_meta and token_meta.get('hide_tags', False) and token_meta.get('hide_trans', False))
-                extra_buffer = _token_extra_buffer(token_gr_style, no_tag_no_trans=no_tag_no_trans)
+                # INTELLIGENTE ABSTANDSBERECHNUNG: Berücksichtige tatsächliche Wortlängen!
+                # Wenn GR-Wort mit Tags länger als Übersetzungen → reduzierter Abstand (0.5pt)
+                # Sonst → normaler Abstand basierend auf Tag-Sichtbarkeit
+                extra_buffer = _calculate_dynamic_token_spacing(
+                    gr_token=gr_token,
+                    de_token=de_token_raw,
+                    en_token=en_token_raw,
+                    tag_mode=tag_mode,
+                    tag_config=tag_config,
+                    hide_pipes=hide_pipes,
+                    font_gr=token_gr_style.fontName,
+                    size_gr=token_gr_style.fontSize,
+                    font_de=token_de_style.fontName,
+                    size_de=token_de_style.fontSize
+                )
                 return w_gr + base_safety + extra_buffer
             else:
                 return base_safety
@@ -2536,10 +2879,21 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         max_width = max(w_gr, w_de, w_en)
         
         if max_width > 0:
-            # Füge Basis-Sicherheitspuffer hinzu
-            # Leicht reduzierter natürlicher Abstand für kompaktere TAG-PDFs
-            natural_spacing = max_width * 0.017  # 1.7% statt 2% (leicht reduziert für kompaktere Darstellung)
-            return max_width + base_safety + natural_spacing
+            # INTELLIGENTE ABSTANDSBERECHNUNG auch mit Übersetzungen!
+            # Verwende dynamische Token-Spacing-Logik (wie bei NoTrans)
+            extra_buffer = _calculate_dynamic_token_spacing(
+                gr_token=gr_token,
+                de_token=de_token_raw,
+                en_token=en_token_raw,
+                tag_mode=tag_mode,
+                tag_config=tag_config,
+                hide_pipes=hide_pipes,
+                font_gr=token_gr_style.fontName,
+                size_gr=token_gr_style.fontSize,
+                font_de=token_de_style.fontName,
+                size_de=token_de_style.fontSize
+            )
+            return max_width + base_safety + extra_buffer
         else:
             # Fallback: Minimaler Puffer
             return base_safety
@@ -2661,7 +3015,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             # WICHTIG: Übergebe tag_mode und block, damit _strip_tags_from_token korrekt arbeitet
             t_cleaned = _strip_tags_from_token(t, block=block, tok_idx=tok_idx, tag_mode=tag_mode) if t else t
             mk = format_token_markup(t_cleaned, reverse_mode=False, is_greek_row=is_gr,
-                                     base_font_size=(token_gr_style.fontSize if is_gr else token_de_style.fontSize))
+                                     base_font_size=(token_gr_style.fontSize if is_gr else token_de_style.fontSize),
+                                     color_mode=color_mode)
             return f'<i>{mk}</i>' if italic and mk else mk
         
         def replace_pipes_with_spaces(text):
@@ -2728,22 +3083,84 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # JETZT erst die Paragraphs erstellen (nachdem wir wissen, dass Content vorhanden ist)
         # WICHTIG: Übergebe tok_idx an cell_markup, damit _strip_tags_from_token korrekt arbeitet
         gr_cells = [Paragraph(cell_markup(t, True, tok_idx=slice_start + idx),  token_gr_style) if t else Paragraph('', token_gr_style) for idx, t in enumerate(slice_gr)]
-        # Für DE und EN: Ersetze | durch Leerzeichen, wenn hide_pipes aktiviert ist
-        de_cells = [Paragraph(cell_markup(process_translation_token(t), False, tok_idx=None), token_de_style) if t else Paragraph('', token_de_style) for t in slice_de]
-        en_cells = [Paragraph(cell_markup(process_translation_token(t), False, tok_idx=None), token_de_style) if t else Paragraph('', token_de_style) for t in slice_en]  # NEU: Englische Zellen
+        
+        # KRITISCHER FIX: DE und EN in NESTED TABLES kombinieren (wie STRAUßLOGIK!)
+        # WICHTIG: Nur VORHANDENE Übersetzungen hinzufügen (nicht immer 2 Zeilen!)
+        # Damit bei gemischten 2/3-zeiligen Wörtern die Übersetzungen OBEN bleiben!
+        de_en_combined_cells = []
+        # KRITISCH: Iteriere über slice_gr Länge, nicht über DE/EN!
+        # Die Anzahl der Zellen MUSS mit GR-Zellen übereinstimmen!
+        max_len = len(slice_gr)  # ANZAHL DER GR-TOKENS bestimmt Anzahl der Spalten!
+        for idx in range(max_len):
+            tok_de = slice_de[idx] if idx < len(slice_de) else ''
+            tok_en = slice_en[idx] if idx < len(slice_en) else ''
+            
+            # Sammle NUR vorhandene Übersetzungen (wie STRAUßLOGIK!)
+            all_translations = []
+            
+            if tok_de and tok_de.strip():
+                formatted_de = cell_markup(process_translation_token(tok_de), False, tok_idx=None)
+                all_translations.append(formatted_de)
+            
+            if tok_en and tok_en.strip():
+                formatted_en = cell_markup(process_translation_token(tok_en), False, tok_idx=None)
+                all_translations.append(formatted_en)
+            
+            # Erstelle nested table NUR für vorhandene Übersetzungen
+            if all_translations:
+                # Erstelle Paragraph für jede Übersetzung
+                translation_paragraphs = []
+                for trans in all_translations:
+                    translation_paragraphs.append([Paragraph(trans, token_de_style_tight)])
+                
+                # Erstelle nested Table mit ALLEN Übersetzungen als separate Zeilen
+                nested_table = Table(translation_paragraphs, colWidths=[None])
+                
+                # KRITISCHER FIX: Negative Paddings wie in STRAUßLOGIK!
+                # -0.5pt zwischen Zeilen für dichten Abstand
+                nested_style = TableStyle([
+                    ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                    ('LEFTPADDING', (0, 0), (-1, -1), 0),
+                    ('RIGHTPADDING', (0, 0), (-1, -1), 0),
+                    ('BOTTOMPADDING', (0, 0), (-1, -1), -0.5),  # -0.5pt zwischen Zeilen
+                    ('TOPPADDING', (0, 0), (-1, -1), -0.5),     # -0.5pt Standard
+                ])
+                
+                # KRITISCH: Erste Zeile darf KEIN negatives TOPPADDING haben!
+                # Sonst zieht sie sich zur GR-Zeile hoch
+                if len(translation_paragraphs) > 0:
+                    nested_style.add('TOPPADDING', (0, 0), (-1, 0), 0)  # Erste Zeile: 0pt!
+                
+                nested_table.setStyle(nested_style)
+                de_en_combined_cells.append(nested_table)
+            else:
+                # Kein Übersetzung vorhanden - leere Zelle
+                de_en_combined_cells.append(Paragraph('', token_de_style))
 
-        row_gr, row_de, row_en, colWidths = [], [], [], []  # NEU: row_en
-        # WICHTIG: Para/Speaker-Spalten IMMER hinzufügen (auch wenn leer), damit alle Zeilen am gleichen Ort beginnen
-        # Die Inhalte werden nur beim ersten Slice angezeigt, aber die Spalten werden immer hinzugefügt
-        # für konsistente Ausrichtung aller Zeilen im gleichen Block
+        # VEREINHEITLICHUNG: Nur 2 Rows (wie STRAUßLOGIK)!
+        # Row 0: GR-Zeile
+        # Row 1: DE+EN combined (nested tables)
+        row_gr, row_de_en, colWidths = [], [], []
+        
+        # Speaker-Spalte (nur in GR-Row sichtbar, in DE/EN-Row leer)
         if speaker_width_pt > 0:
-            row_gr += [sp_cell_gr, sp_gap_gr]; row_de += [sp_cell_de, sp_gap_de]; row_en += [sp_cell_en, sp_gap_en]
+            row_gr.append(sp_cell_gr)
+            row_gr.append(sp_gap_gr)
+            row_de_en.append(Paragraph('', token_de_style))  # Leer in DE/EN-Row
+            row_de_en.append(Paragraph('', token_de_style))  # Leer für Gap
             colWidths += [speaker_width_pt, SPEAKER_GAP_MM*mm]
+            
+        # Para-Spalte (nur in GR-Row sichtbar, in DE/EN-Row leer)
         if para_width_pt > 0:
-            row_gr += [para_cell_gr, para_gap_gr]; row_de += [para_cell_de, para_gap_de]; row_en += [para_cell_en, para_gap_en]
+            row_gr.append(para_cell_gr)
+            row_gr.append(para_gap_gr)
+            row_de_en.append(Paragraph('', token_de_style))  # Leer in DE/EN-Row
+            row_de_en.append(Paragraph('', token_de_style))  # Leer für Gap
             colWidths += [para_width_pt, PARA_GAP_MM*mm]
 
-        row_gr += gr_cells; row_de += de_cells; row_en += en_cells
+        # Token-Spalten
+        row_gr += gr_cells
+        row_de_en += de_en_combined_cells
 
         # WICHTIG: Die verfügbare Breite wurde bereits oben berechnet (avail_w)
         # und berücksichtigt bereits speaker_width_pt und para_width_pt!
@@ -2777,27 +3194,19 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
             # Warnung unterdrückt: Skalierung erfolgt automatisch, keine Log-Flut nötig
             # (Table-Breite wird automatisch angepasst, daher ist diese Warnung redundant)
 
-        # NEU: Prüfe, ob englische Zeile vorhanden ist
-        has_en = any(slice_en)
-        has_de = any(de)  # Prüfe, ob überhaupt deutsche Übersetzungen vorhanden sind
+        # VEREINHEITLICHT: Erstelle Tabelle mit NUR 2 Rows (wie STRAUßLOGIK)!
+        # Row 0: GR
+        # Row 1: DE+EN combined (nested tables)
+        tbl = Table([row_gr, row_de_en], colWidths=colWidths, hAlign=table_halign)
         
-        if has_en:
-            if has_de:
-                tbl = Table([row_gr, row_de, row_en], colWidths=colWidths, hAlign=table_halign)
-            else:
-                # Keine deutschen Übersetzungen, nur griechisch und englisch
-                tbl = Table([row_gr, row_en], colWidths=colWidths, hAlign=table_halign)
-        elif has_de:
-            # Nur griechisch und deutsch (Standard 2-sprachig)
-            tbl = Table([row_gr, row_de], colWidths=colWidths, hAlign=table_halign)
-        else:
-            # Keine Übersetzungen, nur griechische Zeile
-            tbl = Table([row_gr], colWidths=colWidths, hAlign=table_halign)
+        # Prüfe ob Übersetzungen vorhanden sind (für Padding-Logik)
+        has_de = any(slice_de)
+        has_en = any(slice_en)
         
         gap_pts = INTRA_PAIR_GAP_MM * mm
         style_list = [
-            ('LEFTPADDING',   (0,0), (-1,-1), CELL_PAD_LR_PT),
-            ('RIGHTPADDING',  (0,0), (-1,-1), CELL_PAD_LR_PT),
+            ('LEFTPADDING',   (0,0), (-1,-1), 0.5),    # Minimal (wie STRAUßLOGIK)
+            ('RIGHTPADDING',  (0,0), (-1,-1), 0.5),    # Minimal (wie STRAUßLOGIK)
             ('TOPPADDING',    (0,0), (-1,-1), 0.0),
             ('BOTTOMPADDING', (0,0), (-1,-1), 0.0),
             ('VALIGN',        (0,0), (-1,-1), 'BOTTOM'),
@@ -2821,16 +3230,22 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         
         # Padding nur hinzufügen, wenn Übersetzungen vorhanden sind
         if has_de or has_en:
-            style_list.append(('BOTTOMPADDING', (0,0), (-1,0), gap_pts))
+            style_list.append(('BOTTOMPADDING', (0,0), (-1,0), gap_pts))  # GR → Übersetzungen
+            style_list.append(('TOPPADDING', (0,0), (-1,0), 1))  # Abstand zur vorherigen Table (wie STRAUßLOGIK)
         
-        # NEU: Für 3-sprachige Texte: Padding zwischen Zeilen - MINIMAL (fast kein Abstand)
+        # VEREINHEITLICHUNG: Entferne NEGATIVE PADDINGS!
+        # Diese verursachten unterschiedliche Abstände zwischen 2-sprachig und 3-sprachig.
+        # Verwende stattdessen EINHEITLICH gap_pts für GR → erste Übersetzung.
+        # Zwischen DE und EN: KEIN zusätzlicher Abstand (0pt)!
+        # KRITISCH: Auch bei § Texten soll der Abstand zwischen DE und EN minimal sein (0mm)!
         if has_en and has_de:
-            style_list.append(('BOTTOMPADDING', (0,1), (-1,1), -1.5))  # Leicht negativ = nah aber nicht überlappend
-            style_list.append(('TOPPADDING',    (0,2), (-1,2), -1.5))  # Leicht negativ = nah aber nicht überlappend
+            # DE und EN vorhanden: KEIN zusätzliches Padding zwischen ihnen!
+            # Die Zeilen liegen DIREKT aufeinander (nur Leading-Abstand innerhalb Paragraph)
+            pass  # Kein BOTTOMPADDING/TOPPADDING zwischen DE und EN!
         elif has_en and not has_de:
             # Nur griechisch und englisch (keine deutsche Zeile)
-            style_list.append(('BOTTOMPADDING', (0,0), (-1,0), -1.5))  # Leicht negativ = nah aber nicht überlappend
-            style_list.append(('TOPPADDING',    (0,1), (-1,1), -1.5))  # Leicht negativ = nah aber nicht überlappend
+            # gap_pts wird bereits oben angewendet
+            pass
         
         tbl.setStyle(TableStyle(style_list))
         tables.append(tbl)
@@ -3054,7 +3469,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     table_halign='LEFT',
                     hide_pipes=hide_pipes,
                     tag_config=tag_config,
-                    tag_mode=tag_mode)
+                    tag_mode=tag_mode,
+                    color_mode=color_mode)
             else:
                 # Normale Zeile ohne STRAUßLOGIK
                 tables = build_tables_for_stream(
@@ -3071,7 +3487,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     base_num=base_num,  # NEU: Zeilennummer für Hinterlegung
                     line_comment_colors=line_comment_colors,  # NEU: Map von Zeilennummern zu Kommentar-Farben
                     block=flow_block,  # NEU: Block-Objekt für comment_token_mask
-                    tag_mode=tag_mode)  # NEU: Tag-Modus (TAGS oder NO_TAGS)
+                    tag_mode=tag_mode,  # NEU: Tag-Modus (TAGS oder NO_TAGS)
+                    color_mode=color_mode)  # NEU: Farb-Modus (COLOR oder BLACK_WHITE)
             
             # WICHTIG: TableStyle explizit importieren (verhindert Closure-Scope-Problem)
             from reportlab.platypus import TableStyle
@@ -3240,6 +3657,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     processed_flow_indices = set()  # WICHTIG: Verhindere doppelte Verarbeitung von Flow-Blöcken
     processed_h3_indices = set()  # WICHTIG: Verhindere doppelte Verarbeitung von h3_eq Blöcken
     skipped_indices = set()  # WICHTIG: Verfolge übersprungene Indizes, um Endlosschleifen zu vermeiden
+    pending_headers = []  # WICHTIG: Speichere Überschriften, die mit nächstem Content zusammen in KeepTogether gepackt werden
     
     print(f"Prosa_Code: Entering element creation loop (flow_blocks={len(flow_blocks)})", flush=True)
     comment_count = sum(1 for b in flow_blocks if isinstance(b, dict) and b.get('type') == 'comment')
@@ -3406,8 +3824,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 while idx < len(flow_blocks) and flow_blocks[idx]['type'] == 'h3_eq':
                     header.append(Paragraph(xml_escape(flow_blocks[idx]['text']), style_eq_h3)); idx += 1
 
-            # EINFACH: Gehe zum nächsten Block (OHNE flow-Block zu suchen)
-            elements.append(KeepTogether(header))
+            # ANTI-ORPHAN: Speichere Überschriften für späteren KeepTogether mit Content
+            pending_headers.extend(header)
             last_block_type = t
             continue
 
@@ -3418,9 +3836,9 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             render_block_comments(b, elements, doc)
             print(f"Prosa_Code: Processing h3_eq block at idx={idx}", flush=True)
             
-            # Render Überschrift
+            # ANTI-ORPHAN: Speichere H3 für späteren KeepTogether mit Content
             h3_para = Paragraph(xml_escape(b['text']), style_eq_h3)
-            elements.append(KeepTogether([h3_para]))
+            pending_headers.append(h3_para)
             
             # KRITISCH: idx IMMER inkrementieren, NIEMALS scannen!
             idx += 1
@@ -3441,13 +3859,15 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             if prev_non_blank_idx >= 0 and flow_blocks[prev_non_blank_idx].get('type') == 'para_set':
                 para_label = flow_blocks[prev_non_blank_idx].get('label', '')
                 if para_label:
-                    # Füge § Marker als linksbündigen Paragraph hinzu (wie H3-Überschriften)
+                    # ANTI-ORPHAN: § Marker zu pending_headers hinzufügen (nicht direkt zu elements!)
                     para_paragraph = Paragraph(xml_escape(para_label), style_eq_h3)
-                    elements.append(para_paragraph)
-                    elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm))
+                    pending_headers.append(para_paragraph)
+                    pending_headers.append(Spacer(1, BLANK_MARKER_GAP_MM * mm))
             
             # WICHTIG: Mehr Abstand vor dem Zitat (1.5x größer als normal)
-            elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm * 1.5))
+            # (wird nur hinzugefügt wenn keine pending_headers vorhanden sind)
+            if not pending_headers:
+                elements.append(Spacer(1, BLANK_MARKER_GAP_MM * mm * 1.5))
             
             # NEU: Parse Zitat-Zeilen mit Zeilennummern-basierter Logik (wie normaler Text)
             # Dies ermöglicht korrekte Erkennung von 2- und 3-sprachigen Zeilen
@@ -3672,7 +4092,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         en_tokens=q_en,  # NEU: Englische Tokens übergeben
                         hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
                         tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
-                        tag_mode=tag_mode  # NEU: Tag-Modus übergeben
+                        tag_mode=tag_mode,  # NEU: Tag-Modus übergeben
+                        color_mode=color_mode  # NEU: Farb-Modus übergeben
                     )
                     q_tables.extend(line_tables)
             
@@ -3687,6 +4108,12 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 src_text = (flow_blocks[kidx].get('text') or '').strip()
 
             block = list(q_tables)
+            
+            # ANTI-ORPHAN: Wenn pending_headers vorhanden, mit Zitat-Content zusammenfassen
+            if pending_headers:
+                block = pending_headers + block
+                pending_headers.clear()
+            
             if src_text:
                 # Quelle vorhanden - füge sie direkt nach dem Zitat hinzu (ohne Abstand dazwischen)
                 block += [Spacer(1, BLANK_MARKER_GAP_MM * mm), Paragraph('<i>'+xml_escape(src_text)+'</i>', style_source)]
@@ -3853,7 +4280,20 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 flow_tables = build_flow_tables(combined_block)
                 valid_tables = [t for t in flow_tables if t is not None]
                 if valid_tables:
-                    elements.extend(valid_tables)
+                    # ANTI-ORPHAN: Wenn pending_headers vorhanden, mit Content zusammenfassen
+                    if pending_headers:
+                        # Kombiniere Überschriften + erste Tabelle in KeepTogether
+                        first_table = valid_tables[0]
+                        elements.append(KeepTogether([*pending_headers, first_table]))
+                        pending_headers.clear()
+                        # Rest der Tabellen normal wrappen
+                        for table in valid_tables[1:]:
+                            elements.append(KeepTogether([table]))
+                    else:
+                        # KRITISCH: Jede Tabelle (GR+DE+EN Zeilen) in KeepTogether wrappen
+                        # Verhindert Page-Breaks zwischen antiker Zeile und ihren Übersetzungen!
+                        for table in valid_tables:
+                            elements.append(KeepTogether([table]))
                 
                 elements.append(Spacer(1, CONT_PAIR_GAP_MM * mm))
                 # WICHTIG: Übergebe combined_block statt b (enthält alle gesammelten Kommentare!)
@@ -3869,9 +4309,28 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         # NEU: Handler für einzelne Paare (Lyrik-Modus & Zitate mit Straußlogik)
         # Bewahrt die Zeilenstruktur wie bei Zitaten
         if t == 'pair':
-            gr_tokens = b.get('gr_tokens', [])
-            de_tokens = b.get('de_tokens', [])
-            en_tokens = b.get('en_tokens', [])
+            # KRITISCH: pair Blöcke haben ROHE Zeilen in 'gr', 'de', 'en' (mit Markern, Tags, etc.)
+            # Diese müssen durch tokenize() verarbeitet werden!
+            gr_line = b.get('gr_tokens') or b.get('gr', '')
+            de_line = b.get('de_tokens') or b.get('de', '')
+            en_line = b.get('en_tokens') or b.get('en', '')
+            
+            # Tokenisiere die rohen Zeilen (entfernt Marker, normalisiert, etc.)
+            if isinstance(gr_line, str):
+                gr_tokens = tokenize(gr_line) if gr_line else []
+            else:
+                gr_tokens = gr_line or []
+                
+            if isinstance(de_line, str):
+                de_tokens = tokenize(de_line) if de_line else []
+            else:
+                de_tokens = de_line or []
+                
+            if isinstance(en_line, str):
+                en_tokens = tokenize(en_line) if en_line else []
+            else:
+                en_tokens = en_line or []
+            
             para_label = b.get('para_label', '')
             speaker = b.get('speaker', '')
             is_lyrik = b.get('_is_lyrik', False)  # NEU: Prüfe ob Lyrik-Block
@@ -3907,6 +4366,7 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     line_comment_colors=line_comment_colors,
                     block=b,
                     tag_mode=tag_mode,
+                    color_mode=color_mode,  # NEU: Farb-Modus übergeben
                     # NEU: Übergebe Alternativen!
                     gr_tokens_alternatives=gr_alternatives if len(gr_alternatives) > 1 else None,
                     de_tokens_alternatives=de_alternatives if len(de_alternatives) > 1 else None,
@@ -3916,11 +4376,21 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 if pair_tables:
                     valid_tables = [t for t in pair_tables if t is not None]
                     if valid_tables:
-                        try:
-                            elements.append(KeepTogether(valid_tables))
-                        except (TypeError, ValueError) as e:
-                            logger.warning("Prosa_Code: KeepTogether failed for alternatives, appending individually: %s", e)
-                            elements.extend(valid_tables)
+                        # ANTI-ORPHAN: Wenn pending_headers vorhanden, mit Content zusammenfassen
+                        if pending_headers:
+                            try:
+                                elements.append(KeepTogether([*pending_headers, *valid_tables]))
+                            except (TypeError, ValueError) as e:
+                                logger.warning("Prosa_Code: KeepTogether failed for alternatives with headers: %s", e)
+                                elements.extend(pending_headers)
+                                elements.extend(valid_tables)
+                            pending_headers.clear()
+                        else:
+                            try:
+                                elements.append(KeepTogether(valid_tables))
+                            except (TypeError, ValueError) as e:
+                                logger.warning("Prosa_Code: KeepTogether failed for alternatives, appending individually: %s", e)
+                                elements.extend(valid_tables)
                         
                         # Abstand nach Alternativen (Lyrik hat größeren Abstand)
                         if is_lyrik:
@@ -3951,12 +4421,24 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                 # DEFENSIVE: Prüfe auf gültige Tables (nicht None/leer)
                 valid_tables = [t for t in pair_tables if t is not None]
                 if valid_tables:
-                    try:
-                        elements.append(KeepTogether(valid_tables))
-                    except (TypeError, ValueError) as e:
-                        # Fallback: Einzeln hinzufügen
-                        logger.warning("Prosa_Code: KeepTogether failed for pair, appending individually: %s", e)
-                        elements.extend(valid_tables)
+                    # ANTI-ORPHAN: Wenn pending_headers vorhanden, mit Content zusammenfassen
+                    if pending_headers:
+                        # Kombiniere Überschriften + alle Tabellen in KeepTogether
+                        try:
+                            elements.append(KeepTogether([*pending_headers, *valid_tables]))
+                        except (TypeError, ValueError) as e:
+                            logger.warning("Prosa_Code: KeepTogether failed for pair with headers: %s", e)
+                            elements.extend(pending_headers)
+                            elements.extend(valid_tables)
+                        pending_headers.clear()
+                    else:
+                        # Keine pending_headers - normale Behandlung
+                        try:
+                            elements.append(KeepTogether(valid_tables))
+                        except (TypeError, ValueError) as e:
+                            # Fallback: Einzeln hinzufügen
+                            logger.warning("Prosa_Code: KeepTogether failed for pair, appending individually: %s", e)
+                            elements.extend(valid_tables)
                     
                     # WICHTIG: Lyrik-Bereiche brauchen größeren Zeilenabstand (wie in Poesie)!
                     # Verwende gleichen Abstand wie normale Prosa-Zeilen (3-4mm)
@@ -3974,6 +4456,14 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
     # DIAGNOSE: Logging nach Element-Erstellung, vor doc.build()
     logger.info("Prosa_Code.create_pdf: Element creation complete (elements=%d)", len(elements))
     print(f"Prosa_Code: Element creation complete (elements={len(elements)})", flush=True)
+    
+    # ANTI-ORPHAN: Flush pending_headers am Dokumentende (Edge Case)
+    # Falls am Ende noch Überschriften ohne folgenden Content existieren
+    if pending_headers:
+        logger.warning("Prosa_Code: %d pending headers at document end - adding directly", len(pending_headers))
+        elements.extend(pending_headers)
+        pending_headers.clear()
+    
     try:
         sys.stdout.flush()
     except Exception:

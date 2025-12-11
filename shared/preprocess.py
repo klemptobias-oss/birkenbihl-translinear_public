@@ -885,12 +885,21 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                     manual_color_symbol = sym
                     break
             
-            # Wenn manuelles Symbol gefunden: Zu allen Übersetzungen hinzufügen und in token_meta speichern
-            if manual_color_symbol:
+            # ZUSÄTZLICH: Prüfe ob deutsche/englische Tokens SELBST ein manuelles Symbol haben
+            # (direkt in translinear.txt bei Übersetzungen gesetzt)
+            de_has_manual_symbol = False
+            en_has_manual_symbol = False
+            if i < len(de_tokens) and de_tokens[i]:
+                de_has_manual_symbol = any(sym in de_tokens[i] for sym in COLOR_SYMBOLS)
+            if i < len(en_tokens) and en_tokens[i]:
+                en_has_manual_symbol = any(sym in en_tokens[i] for sym in COLOR_SYMBOLS)
+            
+            # Wenn IRGENDEIN Token ein manuelles Symbol hat, setze force_color=True!
+            if manual_color_symbol or de_has_manual_symbol or en_has_manual_symbol:
                 # Symbol zu deutschem Token hinzufügen (wenn noch nicht vorhanden)
                 if i < len(de_tokens):
                     de_tok = de_tokens[i]
-                    if de_tok and not any(c in de_tok for c in COLOR_SYMBOLS):
+                    if de_tok and not any(c in de_tok for c in COLOR_SYMBOLS) and manual_color_symbol:
                         de_match = RE_WORD_START.search(de_tok)
                         if de_match:
                             new_de_tokens[i] = de_tok[:de_match.start(2)] + manual_color_symbol + de_tok[de_match.start(2):]
@@ -900,7 +909,7 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                 # Symbol zu englischem Token hinzufügen (wenn noch nicht vorhanden)
                 if i < len(new_en_tokens):
                     en_tok = en_tokens[i]
-                    if en_tok and not any(c in en_tok for c in COLOR_SYMBOLS):
+                    if en_tok and not any(c in en_tok for c in COLOR_SYMBOLS) and manual_color_symbol:
                         en_match = RE_WORD_START.search(en_tok)
                         if en_match:
                             new_en_tokens[i] = en_tok[:en_match.start(2)] + manual_color_symbol + en_tok[en_match.start(2):]
@@ -909,13 +918,16 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                 
                 # WICHTIG: Symbol in token_meta speichern mit FORCE_COLOR Flag!
                 # Dies signalisiert, dass diese Farbe AUCH in BlackWhite-PDFs gezeigt werden soll!
+                # Das gilt für ALLE manuellen Symbole (egal ob im griechischen oder Übersetzungs-Token)
                 if i < len(token_meta):
-                    token_meta[i]['color_symbol'] = manual_color_symbol
+                    if manual_color_symbol:
+                        token_meta[i]['color_symbol'] = manual_color_symbol
                     token_meta[i]['force_color'] = True  # Manuelle Farbe überschreibt BlackWhite-Modus!
                 else:
                     while len(token_meta) <= i:
                         token_meta.append({})
-                    token_meta[i]['color_symbol'] = manual_color_symbol
+                    if manual_color_symbol:
+                        token_meta[i]['color_symbol'] = manual_color_symbol
                     token_meta[i]['force_color'] = True
                 
                 # Fahre mit nächstem Token fort (keine automatische Farbzuweisung mehr nötig)
@@ -2115,7 +2127,10 @@ def _strip_colors_from_block(block: dict, tag_config: dict = None) -> dict:
             for i, t in enumerate(block['en_tokens'])
         ]
     
-    # STRAUßLOGIK: Entferne Farbsymbole auch aus Multi-Row-Arrays!
+    # STRAUßLOGIK: Entferne Farbsymbole aus Multi-Row-Arrays!
+    # WICHTIG: _de_rows[0] entspricht de_tokens, _de_rows[1+] sind Alternativen (nach / Split)
+    # Wenn de_tokens[i] ein händisches Symbol hatte (force_color=True), dann BEHALTE
+    # alle Alternativen in _de_rows[j][i] (weil sie vom händischen Symbol stammen)!
     if '_gr_rows' in block and isinstance(block['_gr_rows'], list):
         block['_gr_rows'] = [
             [t if not t else remove_color_symbols_from_token(t) for t in row]
@@ -2123,16 +2138,32 @@ def _strip_colors_from_block(block: dict, tag_config: dict = None) -> dict:
         ]
     
     if '_de_rows' in block and isinstance(block['_de_rows'], list):
-        block['_de_rows'] = [
-            [t if not t else remove_color_symbols_from_token(t) for t in row]
-            for row in block['_de_rows']
-        ]
+        new_de_rows = []
+        for row in block['_de_rows']:
+            new_row = []
+            for i, t in enumerate(row):
+                # Wenn dieser Token-Index force_color hat, behalte Farbsymbol!
+                if i in force_color_indices or not t:
+                    new_row.append(t)
+                else:
+                    # Automatisches Symbol → entfernen
+                    new_row.append(remove_color_symbols_from_token(t))
+            new_de_rows.append(new_row)
+        block['_de_rows'] = new_de_rows
     
     if '_en_rows' in block and isinstance(block['_en_rows'], list):
-        block['_en_rows'] = [
-            [t if not t else remove_color_symbols_from_token(t) for t in row]
-            for row in block['_en_rows']
-        ]
+        new_en_rows = []
+        for row in block['_en_rows']:
+            new_row = []
+            for i, t in enumerate(row):
+                # Wenn dieser Token-Index force_color hat, behalte Farbsymbol!
+                if i in force_color_indices or not t:
+                    new_row.append(t)
+                else:
+                    # Automatisches Symbol → entfernen
+                    new_row.append(remove_color_symbols_from_token(t))
+            new_en_rows.append(new_row)
+        block['_en_rows'] = new_en_rows
     
     # Entferne color_symbol aus token_meta (NUR wenn NICHT force_color!)
     if 'token_meta' in block and isinstance(block['token_meta'], list):
