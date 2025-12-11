@@ -468,9 +468,11 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
             # Bei BLACK_WHITE werden nur die automatischen Farben entfernt, händische Symbole bleiben.
             blocks_with_colors = preprocess.apply_colors(variant_blocks, final_tag_config, disable_comment_bg=disable_comment_bg_flag)
             
-            # SCHRITT 3: Gruppiere pair-Blöcke zu flow-Blöcken (NACH apply_colors!)
-            # Dies MUSS nach apply_colors passieren, damit die Farbsymbole bereits in den Tokens sind!
-            blocks_with_colors = group_pairs_into_flows(blocks_with_colors)
+            # WICHTIG: group_pairs_into_flows() wird NICHT mehr hier aufgerufen!
+            # Grund: variant_blocks sind bereits flow-Blöcke (von der ersten Konvertierung in Zeile 280).
+            # Ein zweiter Aufruf würde die Speaker-Informationen verlieren, weil flow-Blöcke
+            # keine Sprecher-Tokens mehr enthalten (die wurden bereits in Zeile 280 extrahiert).
+            # Die Farbsymbole aus apply_colors() sind bereits in den Token-Strings enthalten.
             
             t2 = time.time()
             logging.getLogger(__name__).info("prosa_pdf: apply_colors END (%.2fs)", t2 - t1)

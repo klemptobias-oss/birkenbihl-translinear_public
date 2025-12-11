@@ -3413,9 +3413,13 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
 
     # Meta-Flag: ob irgendwo Sprecher auftraten
     any_speaker = False
+    print(f"DEBUG RENDER: Checking for _meta block in {len(flow_blocks)} blocks", flush=True)
     if flow_blocks and flow_blocks[-1].get('type') == '_meta':
         any_speaker = bool(flow_blocks[-1].get('any_speaker'))
+        print(f"DEBUG RENDER: Found _meta block! any_speaker={any_speaker}", flush=True)
         flow_blocks = flow_blocks[:-1]
+    else:
+        print(f"DEBUG RENDER: No _meta block found! Last block type: {flow_blocks[-1].get('type') if flow_blocks else 'NO BLOCKS'}", flush=True)
 
     def para_width_pt(text:str) -> float:
         # Zeilennummern (123) werden nicht angezeigt, aber Paragraphen-Marker (§ 1) schon
