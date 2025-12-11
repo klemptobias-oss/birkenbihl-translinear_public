@@ -2595,7 +2595,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                             color_mode:str="COLOR",  # NEU: Farb-Modus (COLOR oder BLACK_WHITE)
                             gr_tokens_alternatives=None,  # NEU: STRAUßLOGIK - GR Alternativen (Liste von Token-Listen)
                             de_tokens_alternatives=None,  # NEU: STRAUßLOGIK - DE Alternativen (Liste von Token-Listen)
-                            en_tokens_alternatives=None):  # NEU: STRAUßLOGIK - EN Alternativen (Liste von Token-Listen)
+                            en_tokens_alternatives=None,  # NEU: STRAUßLOGIK - EN Alternativen (Liste von Token-Listen)
+                            is_quote=False):  # NEU: Ist dies ein Zitat? (für größeres Padding in nested tables)
     if en_tokens is None:
         en_tokens = []
     if de_tokens is None:
@@ -3131,12 +3132,14 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                 
                 # KRITISCHER FIX: Normale Paddings (0pt) für korrekte Abstände!
                 # Negatives Padding zieht Zeilen zu eng zusammen (Tags ragen in vorherige Zeile)
+                # FÜR ZITATE: Verwende MEHR Padding (1.5pt) damit Tags nicht überlappen!
+                padding_value = 1.5 if is_quote else 0  # Zitate: 1.5pt, Normal: 0pt
                 nested_style = TableStyle([
                     ('VALIGN', (0, 0), (-1, -1), 'TOP'),
                     ('LEFTPADDING', (0, 0), (-1, -1), 0),
                     ('RIGHTPADDING', (0, 0), (-1, -1), 0),
-                    ('BOTTOMPADDING', (0, 0), (-1, -1), 0),  # 0pt statt -0.5pt für korrekte Abstände
-                    ('TOPPADDING', (0, 0), (-1, -1), 0),     # 0pt Standard
+                    ('BOTTOMPADDING', (0, 0), (-1, -1), padding_value),  # Zitate: 1.5pt statt 0pt!
+                    ('TOPPADDING', (0, 0), (-1, -1), padding_value),     # Zitate: 1.5pt statt 0pt!
                 ])
                 
                 # KRITISCH: Erste Zeile braucht KEIN extra Padding (bleibt bei 0pt)
@@ -4113,7 +4116,8 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                         hide_pipes=hide_pipes,  # NEU: Pipes (|) in Übersetzungen verstecken
                         tag_config=tag_config,  # NEU: Tag-Konfiguration für individuelle Breitenberechnung
                         tag_mode=tag_mode,  # NEU: Tag-Modus übergeben
-                        color_mode=color_mode  # NEU: Farb-Modus übergeben
+                        color_mode=color_mode,  # NEU: Farb-Modus übergeben
+                        is_quote=True  # KRITISCH: Zitate brauchen mehr Padding in nested tables!
                     )
                     q_tables.extend(line_tables)
             
