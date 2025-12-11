@@ -3392,9 +3392,11 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
         fontName='DejaVu-Bold' if gr_bold else 'DejaVu',
         fontSize=gr_size, leading=_leading_for(gr_size),
         alignment=TA_CENTER, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)
+    # KRITISCH: token_de mit 1.1× Leading für ENGEN Abstand in normalen Texten!
+    # Zitate verwenden quote_de_style mit normalem 1.3× Leading (_leading_for)
     token_de = ParagraphStyle('TokDE', parent=base['Normal'],
         fontName='DejaVu-Bold' if de_bold else 'DejaVu',
-        fontSize=de_size, leading=_leading_for(de_size),
+        fontSize=de_size, leading=de_size * 1.1,  # 1.1× = ENGER Abstand für normale Texte!
         alignment=TA_CENTER, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)
 
     # §-Label / Quelle / Sprecher
