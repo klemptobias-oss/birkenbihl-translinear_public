@@ -1310,21 +1310,27 @@ def _resolve_tags_for_rule(normalized_rule_id: str) -> List[str]:
 
 def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[str, Dict[str, Any]]]) -> bool:
     """
-    DEFENSIVE LOGIK (konsistent mit Tag-Ausblendung):
+    EINFACHE, DIREKTE LOGIK:
     Übersetzung wird NUR ausgeblendet wenn ALLE Tags des Tokens auf "hideTranslation" stehen.
     Solange mindestens EIN Tag noch sichtbar sein will → Übersetzung bleibt!
     
-    WICHTIG: Bei enklitischen Wörtern (z.B. Eumque(Pr)(A)(Kon)) müssen ALLE Wortarten
-    separat geprüft werden - Kon, Pt, Adv sind EIGENE Wortarten, nicht Teil der Hauptwortart!
+    WICHTIG: Wir prüfen JEDES TAG EINZELN, unabhängig von Wortarten!
+    - Wenn ein Tag explizit auf hideTranslation steht → will ausblenden
+    - Wenn ein Tag NICHT auf hideTranslation steht → will sichtbar bleiben
+    - Nur wenn ALLE Tags ausblenden wollen → Übersetzung verschwindet
     
-    Beispiel:
+    Beispiele:
       Token: Sorōrem(Adj)(A)
-      Config: 'adj' auf hideTranslation, 'adj_A' NICHT
-      → Übersetzung bleibt, weil (A) noch sichtbar sein will!
+      Config: 'adjektiv' → all=true, ABER 'adjektiv_A' → hideTranslation=false
+      → (Adj) will ausblenden, (A) will NICHT ausblenden → Übersetzung bleibt!
+      
+      Token: τὼ(Art)(Du)(N)
+      Config: 'artikel' → all=true, 'nomen_Du' → hideTranslation=true, 'nomen_N' → hideTranslation=true
+      → ALLE drei Tags wollen ausblenden → Übersetzung verschwindet!
       
       Token: Eumque(Pr)(A)(Kon)
-      Config: 'pronomen' auf hideTranslation, 'kon' auf hideTranslation
-      → Übersetzung wird ausgeblendet, weil BEIDE Wortarten (Pr und Kon) ausgeblendet sind!
+      Config: 'pronomen' → all=true, 'kon' → all=true
+      → ALLE Tags wollen ausblenden → Übersetzung verschwindet!
     """
     if not token or not translation_rules:
         return False
@@ -1338,122 +1344,59 @@ def _token_should_hide_translation(token: str, translation_rules: Optional[Dict[
     if not tags:
         return False
     
-    # WICHTIG: Verwende ORIGINALE Tags (nicht normalisiert) für Wortart-Erkennung
+    # Sammle ALLE Tags die auf "hideTranslation" stehen
+    # NEUER ANSATZ: Prüfe jedes Tag direkt, nicht über Wortarten!
     original_tags = set(tags)
     
     # Sammle ALLE Tags die auf "hideTranslation" stehen
+    # NEUER ANSATZ: Prüfe jedes Tag direkt, nicht über Wortarten!
+    original_tags = set(tags)
     tags_that_want_to_hide = set()
     
-    # NEU: Erkenne ALLE Wortarten im Token (z.B. Eumque(Pr)(A)(Kon) hat Pr UND Kon)
-    wortarten_im_token = set()
-    
-    # 1. Hauptwortart (z.B. Pronomen bei Eumque(Pr)(A)(Kon))
-    hauptwortart, _ = _get_wortart_and_relevant_tags(original_tags)
-    if hauptwortart:
-        wortarten_im_token.add(hauptwortart.lower())
-    
-    # 2. Enklitische Wortarten (Kon, Pt, Adv) separat prüfen
-    # Diese sind EIGENE Wortarten, auch wenn sie mit anderen kombiniert sind!
-    enklitische_wortarten = {
-        'Kon': 'kon',
-        'Pt': 'pt', 
-        'Adv': 'adv',
-        'Prp': 'prp',
-        'ij': 'ij'
-    }
-    for tag, wortart_name in enklitische_wortarten.items():
-        if tag in original_tags:
-            wortarten_im_token.add(wortart_name)
-    
-    # 3. Prüfe für JEDE Wortart im Token die hideTranslation-Regeln
-    for wortart_key in wortarten_im_token:
-        entry = translation_rules.get(wortart_key)
-        if entry:
-            # Wenn "all" gesetzt ist: ALLE Tags dieser Wortart wollen ausblenden
-            if entry.get("all"):
-                # Füge alle relevanten Tags hinzu (basierend auf HIERARCHIE/RULE_TAG_MAP)
-                if wortart_key in ['kon', 'pt', 'adv', 'prp', 'ij']:
-                    # Enklitische Wortarten: nur das eigene Tag
-                    for orig_tag in original_tags:
-                        if orig_tag in enklitische_wortarten:
-                            tags_that_want_to_hide.add(_normalize_tag_name(orig_tag))
-                else:
-                    # Hauptwortart: ALLE Tags die zur Wortart gehören (aus RULE_TAG_MAP)
-                    # z.B. adjektiv → ['Adj', 'N', 'G', 'D', 'A', 'V', 'Kmp', 'Sup']
-                    wortart_tags = RULE_TAG_MAP.get(wortart_key, [])
-                    for orig_tag in original_tags:
-                        # Füge alle Tags hinzu, die in der Wortart-Hierarchie sind
-                        # UND nicht enklitisch sind (Kon, Pt bleiben draußen)
-                        if orig_tag not in enklitische_wortarten:
-                            normalized = _normalize_tag_name(orig_tag)
-                            # Prüfe ob das Tag zur Wortart gehört
-                            if any(_normalize_tag_name(wt) == normalized for wt in wortart_tags):
-                                tags_that_want_to_hide.add(normalized)
-                            # ODER: Wenn es ein unbekanntes Tag ist, füge es trotzdem hinzu
-                            # (defensive: lieber zu viel ausblenden als zu wenig)
-                            elif orig_tag not in SUP_TAGS and orig_tag not in SUB_TAGS:
-                                tags_that_want_to_hide.add(normalized)
-                    
-                    # SPEZIALFALL: Gerundivum, Gerundium, Supinum (lateinische Verbformen)
-                    # Diese haben FEST zugehörige Tags, die IMMER mit ausgeblendet werden müssen!
-                    # - Gerundivum (Gdv): IMMER mit Fu1 + Pas + Kasus
-                    # - Gerundium (Ger): IMMER mit Kasus (kein Fu1/Pas)
-                    # - Supinum (Spn): IMMER mit Kasus
-                    # WICHTIG: Wenn Gdv ausgeblendet wird, müssen Fu1 und Pas auch verschwinden!
-                    if wortart_key == 'gerundivum':
-                        # Gdv hat IMMER: Gdv + Fu1 + Pas + Kasus
-                        # Wenn "all" gesetzt: Füge Fu1 und Pas hinzu (gehören fest zum Gdv!)
-                        tags_that_want_to_hide.add('Fu1')
-                        tags_that_want_to_hide.add('Pas')
-                        print(f"DEBUG: Gerundivum 'all' → Füge Fu1 und Pas zu tags_that_want_to_hide hinzu")
-                    elif wortart_key == 'gerundium':
-                        # Gerundium hat: Ger + Kasus (kein Fu1/Pas)
-                        # Keine Extra-Tags nötig
-                        pass
-                    elif wortart_key == 'supinum':
-                        # Supinum hat: Spn + Kasus
-                        # Keine Extra-Tags nötig
-                        pass
-            else:
-                # Nur spezifische Tags dieser Wortart wollen ausblenden
+    # Für jedes Tag am Token: Prüfe ob es auf hideTranslation steht
+    for tag in original_tags:
+        tag_normalized = _normalize_tag_name(tag)
+        tag_wants_to_hide = False
+        
+        # Prüfe alle Regeln in translation_rules
+        for rule_id, entry in translation_rules.items():
+            if not isinstance(entry, dict):
+                continue
+            
+            # FALL 1: Globale Regel (_global mit all=true)
+            if rule_id == TRANSLATION_HIDE_GLOBAL and entry.get("all"):
+                tag_wants_to_hide = True
+                break
+            
+            # FALL 2: Globale Regel (_global mit spezifischen tags)
+            if rule_id == TRANSLATION_HIDE_GLOBAL:
                 entry_tags = entry.get("tags", set())
-                if entry_tags:
-                    normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
-                    tags_that_want_to_hide.update(normalized_entry_tags)
-                    
-                    # SPEZIALFALL: Wenn Gdv UND alle Kasus ausgeblendet werden → Auch Fu1+Pas ausblenden
-                    if wortart_key == 'gerundivum':
-                        # Prüfe ob Gdv selbst ausgeblendet wird
-                        if 'Gdv' in entry_tags or 'gdv' in {t.lower() for t in entry_tags}:
-                            # Prüfe ob alle Kasus ausgeblendet werden
-                            kasus_in_tags = {_normalize_tag_name(t) for t in entry_tags if t in KASUS_TAGS}
-                            kasus_im_token = {t for t in original_tags if t in KASUS_TAGS}
-                            if kasus_im_token and kasus_im_token.issubset(kasus_in_tags):
-                                # Alle Kasus des Tokens werden ausgeblendet → Fu1 + Pas auch!
-                                tags_that_want_to_hide.add('Fu1')
-                                tags_that_want_to_hide.add('Pas')
-                                print(f"DEBUG: Gerundivum Gdv+Kasus ausgeblendet → Füge Fu1 und Pas hinzu")
-    
-    # 4. Prüfe globale Regeln (z.B. '_global')
-    global_entry = translation_rules.get(TRANSLATION_HIDE_GLOBAL)
-    if global_entry:
-        if global_entry.get("all"):
-            # Alle Tags wollen ausblenden
-            for orig_tag in original_tags:
-                # KRITISCH: M/P ist ein EINZELNES Tag, NICHT zwei separate Tags!
-                if orig_tag == 'M/P':
-                    tags_that_want_to_hide.add('M/P')
-                else:
-                    parts = [p for p in orig_tag.split('/') if p]
-                    for part in parts:
-                        tags_that_want_to_hide.add(_normalize_tag_name(part))
-        else:
-            entry_tags = global_entry.get("tags", set())
+                if tag in entry_tags or tag_normalized in {_normalize_tag_name(t) for t in entry_tags}:
+                    tag_wants_to_hide = True
+                    break
+            
+            # FALL 3: Wortart-Regel mit all=true (z.B. 'adjektiv' → all=true)
+            # Prüfe ob das Tag zu dieser Wortart gehört
+            if entry.get("all"):
+                # Hole die Tags die zu dieser Wortart gehören
+                wortart_tags = _get_tags_for_rule_id(rule_id)
+                if tag in wortart_tags or tag_normalized in {_normalize_tag_name(t) for t in wortart_tags}:
+                    tag_wants_to_hide = True
+                    break
+            
+            # FALL 4: Spezifische Tag-Regel (z.B. 'adjektiv_A' → hideTranslation=true)
+            # oder Wortart-Regel mit spezifischen tags (z.B. 'nomen' → tags=['N', 'G'])
+            entry_tags = entry.get("tags", set())
             if entry_tags:
-                normalized_entry_tags = {_normalize_tag_name(t) for t in entry_tags}
-                tags_that_want_to_hide.update(normalized_entry_tags)
+                if tag in entry_tags or tag_normalized in {_normalize_tag_name(t) for t in entry_tags}:
+                    tag_wants_to_hide = True
+                    break
+        
+        # Wenn dieses Tag ausblenden will, füge es zur Liste hinzu
+        if tag_wants_to_hide:
+            tags_that_want_to_hide.add(tag_normalized)
     
-    # 5. DEFENSIVE PRÜFUNG: Gibt es mindestens EIN Tag das NICHT ausgeblendet werden will?
+    # DEFENSIVE PRÜFUNG: Gibt es mindestens EIN Tag das NICHT ausgeblendet werden will?
     for orig_tag in original_tags:
         # KRITISCH: M/P ist ein EINZELNES Tag, NICHT zwei separate Tags!
         if orig_tag == 'M/P':
@@ -1632,31 +1575,44 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         # mark blocks inside quotes
         b['_in_quote'] = in_quote or b.get('_in_quote_marker', False)
     
+    # KRITISCHER FIX: Translation-Rules müssen IMMER aus tag_config extrahiert werden,
+    # AUCH wenn hidden_tags_by_wortart bereits übergeben wurde (z.B. bei Zitaten)!
     translation_rules: Dict[str, Dict[str, Any]] = {}
     
-    if tag_config and not hidden_tags_by_wortart:
-        # If adapter already provided hidden_tags array, use it (globale hidden tags)
-        global_hidden_tags = set()
-        if isinstance(tag_config.get('hidden_tags'), (list, tuple, set)):
-            for t in tag_config.get('hidden_tags', []):
-                if isinstance(t, str) and t:
-                    global_hidden_tags.add(t)
-        
-        # Collect from rules with hide=true
+    if tag_config:
+        # SCHRITT 1: Extrahiere IMMER translation_rules (auch wenn hidden_tags_by_wortart bereits gesetzt!)
+        # Dies ist kritisch für Zitate, wo hidden_tags_by_wortart übergeben wird, aber translation_rules fehlt!
         for rule_id, conf in (tag_config.items() if isinstance(tag_config, dict) else []):
             if not isinstance(conf, dict):
                 continue
-            
-            # Register translation rules
+            # Register translation rules - IMMER, unabhängig von hidden_tags_by_wortart!
             normalized_rule_id = _normalize_rule_id(rule_id)
             _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
+        
+        # SCHRITT 2: Baue hidden_tags_by_wortart NUR auf wenn es NICHT übergeben wurde
+        # (Falls es schon von Prosa_Code.py gesetzt wurde, überspringen wir diesen Schritt)
+        if not hidden_tags_by_wortart or len(hidden_tags_by_wortart) == 0:
+            # If adapter already provided hidden_tags array, use it (globale hidden tags)
+            global_hidden_tags = set()
+            if isinstance(tag_config.get('hidden_tags'), (list, tuple, set)):
+                for t in tag_config.get('hidden_tags', []):
+                    if isinstance(t, str) and t:
+                        global_hidden_tags.add(t)
             
-            hide_val = conf.get('hide')
-            if hide_val in (True, 'true', 'True', 'hide', 'Hide'):
-                rid = rule_id.strip()
+            # Collect from rules with hide=true
+            for rule_id, conf in (tag_config.items() if isinstance(tag_config, dict) else []):
+                if not isinstance(conf, dict):
+                    continue
                 
-                # Bestimme Wortart und Tags
-                if '_' in rid:
+                # HINWEIS: translation_rules wurden bereits oben extrahiert (Schritt 1)
+                # Hier nur noch hide_val für hidden_tags_by_wortart verarbeiten
+                
+                hide_val = conf.get('hide')
+                if hide_val in (True, 'true', 'True', 'hide', 'Hide'):
+                    rid = rule_id.strip()
+                    
+                    # Bestimme Wortart und Tags
+                    if '_' in rid:
                     # Spezifische Regel: z.B. 'nomen_N' oder 'adj_A'
                     parts = rid.split('_', 1)
                     wortart_key = parts[0].lower()
@@ -1727,11 +1683,11 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         # → Nichts hinzufügen! Diese sind nur UI-Convenience zum schnellen Markieren
                         # Die einzelnen Subtags (nomen_N, nomen_G, etc.) werden über spezifische Regeln behandelt
                         pass
-        
-        # Füge globale hidden tags zu allen Wortarten hinzu (falls nötig)
-        if global_hidden_tags:
-            for wortart in hidden_tags_by_wortart:
-                hidden_tags_by_wortart[wortart].update(global_hidden_tags)
+            
+            # Füge globale hidden tags zu allen Wortarten hinzu (falls nötig)
+            if global_hidden_tags:
+                for wortart in hidden_tags_by_wortart:
+                    hidden_tags_by_wortart[wortart].update(global_hidden_tags)
     
     # Normalisiere alle Keys zu lowercase für konsistente Lookups (falls noch nicht normalisiert)
     if hidden_tags_by_wortart and not any(k != k.lower() for k in hidden_tags_by_wortart.keys()):
