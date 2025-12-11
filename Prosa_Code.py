@@ -2896,9 +2896,9 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # ROBUSTE BREITENBERECHNUNG BASIEREND AUF SICHTBARKEIT
         
         # Basis-Sicherheitspuffer: Konsistent für alle Wörter (verhindert Überlappungen)
-        # WICHTIG: Erhöht auf 3% um Wort-Überlappungen zu verhindern (von 1.2%)
-        # Bei 10pt Font → 0.3pt Mindestabstand, bei 11pt → 0.33pt
-        base_safety = max(token_gr_style.fontSize * 0.03, 0.5)  # 3% der Font-Size oder mindestens 0.5pt
+        # WICHTIG: Erhöht auf 5% um alle Wort-Überlappungen zu verhindern (von 1.2% → 3% → 5%)
+        # Bei 10pt Font → 0.5pt Mindestabstand, bei 11pt → 0.55pt
+        base_safety = max(token_gr_style.fontSize * 0.05, 0.6)  # 5% der Font-Size oder mindestens 0.6pt
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
@@ -2975,16 +2975,20 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # Para/Speaker-Spalten werden nur beim ersten Slice angezeigt, aber der Platz wird immer reserviert
         # für konsistente Ausrichtung aller Zeilen im gleichen Block
         # WICHTIG: SPEAKER_GAP_MM ist jetzt gleich PARA_GAP_MM für konsistente Formatierung
-        # If block looks like a speaker line, reduce speaker column and use full content area for text
         avail_w = doc_width_pt
         has_speaker = bool(speaker_display) or (block and block.get('speaker'))
         if has_speaker and speaker_width_pt > 0:
-            # ensure speaker column is as small as reasonable, gap equals paragraph gap
+            # Diese Zeile HAT einen Sprecher → verwende minimale Spaltenbreite
             effective_speaker_width = min(speaker_width_pt, SPEAKER_COL_MIN_MM*mm)
             effective_speaker_gap = SPEAKER_GAP_MM*mm
             avail_w -= (effective_speaker_width + effective_speaker_gap)
         elif speaker_width_pt > 0:
-            avail_w -= (speaker_width_pt + SPEAKER_GAP_MM*mm)
+            # Sprecher-Spalte existiert, aber diese Zeile hat KEINEN Sprecher
+            # WICHTIG: Verwende auch hier NUR minimale Breite (3mm), nicht die volle speaker_width_pt!
+            # Sonst werden Zeilen ohne Sprecher zu stark gequetscht!
+            effective_speaker_width = SPEAKER_COL_MIN_MM*mm
+            effective_speaker_gap = SPEAKER_GAP_MM*mm
+            avail_w -= (effective_speaker_width + effective_speaker_gap)
         if para_width_pt > 0:
             avail_w -= (para_width_pt + PARA_GAP_MM*mm)
 
@@ -4138,8 +4142,10 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
             # Außerdem: Zitate linksbündig mit 10% kleinerer Breite (Einrückung)
             
             # Für Zitate verwenden wir den gleichen Stil wie normale Tokens
+            # WICHTIG: Verwende 1.1× leading (wie normale Zeilen) statt 1.3× (_leading_for)!
+            # Grund: Zitate sollen den GLEICHEN Abstand haben wie normale 3-zeilige Zeilen!
             quote_de_style = ParagraphStyle('QuoteDE', parent=base['Normal'],
-                fontName='DejaVu-Bold' if de_bold else 'DejaVu', fontSize=de_size, leading=_leading_for(de_size),  # de_size statt gr_size!
+                fontName='DejaVu-Bold' if de_bold else 'DejaVu', fontSize=de_size, leading=de_size * 1.1,  # 1.1× = GLEICH wie normale Zeilen!
                 alignment=TA_CENTER, spaceAfter=0, spaceBefore=0, wordWrap='LTR', splitLongWords=0)
 
             # Reduziere die Breite um 10% für Einrückung
