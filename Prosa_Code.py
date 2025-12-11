@@ -2650,13 +2650,13 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
     de_tokens = de_tokens_alternatives[0] if de_tokens_alternatives else []
     en_tokens = en_tokens_alternatives[0] if en_tokens_alternatives else []
     
-    # KRITISCH: Erstelle token_de_style_tight mit engerem Leading (wie STRAUßLOGIK!)
-    # Dies sorgt für engere Abstände zwischen Übersetzungszeilen in nested tables
-    # KRITISCH: Erstelle token_de_style_tight mit korrektem Leading für Übersetzungszeilen
-    # 1.1× ist OPTIMAL: Sehr eng für kompakte Darstellung, aber gerade weit genug für Tags
-    # ACHTUNG: Nicht auf 1.2 oder höher erhöhen - das macht die Abstände zu groß!
+    # KRITISCH: Erstelle token_de_style_tight für nested tables (multi-row Übersetzungen)
+    # WICHTIG: Verwende das Leading vom übergebenen token_de_style!
+    # - Für normalen Text: token_de_style hat 1.1× leading (eng, kompakt)
+    # - Für Zitate: quote_de_style hat _leading_for() = 1.3× (normal, damit Tags nicht überlappen)
+    # Indem wir das Leading vom parent übernehmen, respektieren wir die Intention des Aufrufers!
     token_de_style_tight = ParagraphStyle('TokDE_Tight', parent=token_de_style,
-        leading=token_de_style.fontSize * 1.1,  # 1.1× = OPTIMAL ENGER ABSTAND!
+        leading=token_de_style.leading,  # Übernehme Leading vom übergebenen Style!
         spaceBefore=0, spaceAfter=0)
     
     def is_only_symbols_or_stephanus(token: str) -> bool:
