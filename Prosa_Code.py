@@ -2128,13 +2128,13 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
     from reportlab.lib.styles import ParagraphStyle
     
     # WICHTIG: Leading (Zeilenabstand) für Alternativen mit <br/> Tags!
-    # Verwende fontSize * 1.2 - KOMPROMISS für konsistente Abstände bei vielen Alternativen
-    # (1.0 zu eng → Überlappung, 1.15 → πολλὰ Problem, 1.25 → zu viel Abstand zwischen wenigen)
+    # Verwende fontSize * 1.1 - OPTIMAL für konsistente, enge Abstände
+    # (1.0 zu eng → Überlappung, 1.1 → PERFEKT, 1.2+ → zu viel Abstand)
     token_gr_style_tight = ParagraphStyle('TokGR_Tight', parent=token_gr_style,
-        leading=token_gr_style.fontSize * 1.2,  # 1.2× = NEUER KOMPROMISS
+        leading=token_gr_style.fontSize * 1.1,  # 1.1× = OPTIMAL ENGER ABSTAND
         spaceBefore=0, spaceAfter=0)
     token_de_style_tight = ParagraphStyle('TokDE_Tight', parent=token_de_style,
-        leading=token_de_style.fontSize * 1.2,  # 1.2× = NEUER KOMPROMISS
+        leading=token_de_style.fontSize * 1.1,  # 1.1× = OPTIMAL ENGER ABSTAND
         spaceBefore=0, spaceAfter=0)
     
     # Handle None inputs
@@ -2647,10 +2647,10 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
     # KRITISCH: Erstelle token_de_style_tight mit engerem Leading (wie STRAUßLOGIK!)
     # Dies sorgt für engere Abstände zwischen Übersetzungszeilen in nested tables
     # KRITISCH: Erstelle token_de_style_tight mit korrektem Leading für Übersetzungszeilen
-    # 1.2× ist der RICHTIGE WERT: Eng genug für kompakte Darstellung, weit genug für Tags
-    # ACHTUNG: Nicht auf 1.4 erhöhen - das macht die Abstände zu groß!
+    # 1.1× ist OPTIMAL: Sehr eng für kompakte Darstellung, aber gerade weit genug für Tags
+    # ACHTUNG: Nicht auf 1.2 oder höher erhöhen - das macht die Abstände zu groß!
     token_de_style_tight = ParagraphStyle('TokDE_Tight', parent=token_de_style,
-        leading=token_de_style.fontSize * 1.2,  # 1.2× = KORREKTER ABSTAND (wie STRAUßLOGIK!)
+        leading=token_de_style.fontSize * 1.1,  # 1.1× = OPTIMAL ENGER ABSTAND!
         spaceBefore=0, spaceAfter=0)
     
     def is_only_symbols_or_stephanus(token: str) -> bool:

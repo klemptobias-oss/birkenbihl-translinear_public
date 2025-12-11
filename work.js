@@ -692,36 +692,7 @@ function buildVariantSuffix(localizedBase) {
   suffix += state.color === "BlackWhite" ? "_BlackWhite" : "_Colour";
   suffix += state.tags === "NoTags" ? "_NoTags" : "_Tag";
 
-  // KRITISCH: Prüfe ob ALLE Übersetzungen ausgeblendet sind (_NoTrans Suffix)
-  // Python-Code fügt _NoTrans hinzu wenn alle Übersetzungen hidden sind
-  // JavaScript muss das gleiche Muster erkennen für korrekte PDF-URL!
-  const allTransHidden = checkAllTranslationsHidden();
-  if (allTransHidden) {
-    suffix += "_NoTrans";
-  }
-
   return suffix;
-}
-
-/**
- * Prüft, ob ALLE Übersetzungen ausgeblendet sind (für _NoTrans Suffix)
- * WICHTIG: Diese Logik muss mit Python-Code (prosa_pdf.py) übereinstimmen!
- * Python prüft: Mindestens 1 Tag-Konfiguration existiert UND alle haben hideTranslation=true
- */
-function checkAllTranslationsHidden() {
-  if (!state.tagConfig || typeof state.tagConfig !== 'object') {
-    return false; // Keine Tag-Konfiguration = keine ausgeblendeten Übersetzungen
-  }
-  
-  const entries = Object.entries(state.tagConfig);
-  if (entries.length === 0) {
-    return false; // Keine Einträge = keine ausgeblendeten Übersetzungen
-  }
-  
-  // Prüfe ob ALLE Einträge hideTranslation=true haben
-  return entries.every(([key, config]) => {
-    return config && config.hideTranslation === true;
-  });
 }
 
 function buildReleaseBase() {
@@ -3460,33 +3431,6 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
     console.error("Fehler beim Laden des PDFs:", error);
     console.error("PDF URL war:", pdfUrl);
     const message = error?.message || "";
-    
-    // KRITISCHER FALLBACK: Wenn URL _NoTrans enthält und 404 zurückgibt,
-    // versuche automatisch die Variante OHNE _NoTrans!
-    // Grund: Python und JavaScript können unterschiedlich entscheiden, ob _NoTrans hinzugefügt wird
-    // (z.B. bei Dokumenten mit Sprechern aber ohne Übersetzungen)
-    if (pdfUrl.includes("_NoTrans") && 
-        (/Missing PDF/i.test(message) || 
-         /Unexpected server response/i.test(message) || 
-         message.includes("404"))) {
-      console.warn("⚠️ _NoTrans PDF nicht gefunden, versuche Variante ohne _NoTrans...");
-      const fallbackUrl = pdfUrl.replace(/_NoTrans/g, "");
-      console.log("🔄 Fallback URL:", fallbackUrl);
-      
-      // Rekursiver Aufruf mit Fallback-URL (aber nur einmal!)
-      if (!pdfUrl._fallbackAttempted) {
-        fallbackUrl._fallbackAttempted = true;
-        try {
-          await loadPdfIntoRendererDirect(fallbackUrl);
-          console.log("✅ Fallback erfolgreich: PDF ohne _NoTrans gefunden!");
-          return; // Erfolgreich geladen, nichts weiter zu tun
-        } catch (fallbackError) {
-          console.error("❌ Auch Fallback fehlgeschlagen:", fallbackError);
-          // Weiter mit normaler Fehlerbehandlung unten
-        }
-      }
-    }
-    
     if (state.source === "draft") {
       // NEU: Spezialfall für 404 bei Draft-PDFs
       // GitHub Raw-Content cached aggressiv → PDF kann 1-3 Minuten brauchen
