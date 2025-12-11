@@ -1901,6 +1901,7 @@ def group_pairs_into_flows(blocks):
     in_lyrik_mode = False  # NEU: Lyrik-Modus für Boethius
     current_base_num = None  # NEU: Zeilennummer für Hinterlegung
     accumulated_comments = []  # NEU: Sammle Kommentare von pair-Blöcken für flow-Block
+    after_comment = False  # NEU: Track ob wir gerade nach einem Kommentar sind
     
     # STRAUßLOGIK + FLIEßTEXT: Speichere Token-Zeilen separat für Multi-Row!
     strauss_gr_rows = []  # Liste von Token-Listen: [[tok1, tok2, ...], [alt1, alt2, ...], ...]
@@ -1911,7 +1912,7 @@ def group_pairs_into_flows(blocks):
     is_first_flow_in_para = True
 
     def flush():
-        nonlocal buf_gr, buf_de, buf_en, active_speaker, current_base_num, accumulated_comments
+        nonlocal buf_gr, buf_de, buf_en, active_speaker, current_base_num, accumulated_comments, after_comment
         nonlocal strauss_gr_rows, strauss_de_rows, strauss_en_rows, is_first_flow_in_para
         
         if buf_gr or buf_de or buf_en:
@@ -1946,6 +1947,7 @@ def group_pairs_into_flows(blocks):
             flows.append(flow_block)
             buf_gr, buf_de, buf_en = [], [], []
             current_base_num = None  # Reset für nächsten Block
+            after_comment = False  # Nach flush() sind wir nicht mehr "nach Kommentar"
 
 
 
@@ -2029,12 +2031,18 @@ def group_pairs_into_flows(blocks):
                 if sp_gr != active_speaker:
                     flush()
                     active_speaker = sp_gr
+                after_comment = False  # Neuer Sprecher gefunden → nicht mehr "nach Kommentar"
             else:
-                # WICHTIG: Wenn KEIN Sprecher im Input steht, setze active_speaker zurück!
-                # Sonst wird der alte Sprecher nach Kommentaren weiter verwendet.
-                if active_speaker is not None:
+                # KEIN Sprecher extrahiert
+                # UNTERSCHEIDE 2 Fälle:
+                # 1. Nach Kommentar → Sprecher zurücksetzen (sonst erscheint alter Sprecher nach Kommentar)
+                # 2. Mitten im FLIEßTEXT → Sprecher beibehalten (mehrere Zeilen gehören zum selben Sprecher)
+                if after_comment and active_speaker is not None:
+                    # Nach Kommentar + alter Sprecher noch aktiv → zurücksetzen
                     flush()
                     active_speaker = None
+                    after_comment = False
+                # Sonst: FLIEßTEXT → active_speaker bleibt wie er ist!
 
             # Breitenangleich: Jetzt mit 3 Zeilen
             max_len = max(len(gt), len(dt), len(et))
@@ -2123,7 +2131,10 @@ def group_pairs_into_flows(blocks):
                 flush()
             # Kommentar als separaten Block hinzufügen (OHNE active_speaker zu ändern!)
             flows.append(b)
-            # active_speaker bleibt erhalten → nächster pair-Block hat denselben Sprecher!
+            # WICHTIG: Markiere dass wir gerade nach einem Kommentar sind
+            # Dies erlaubt uns den Sprecher zurückzusetzen wenn die nächste Zeile keinen hat
+            after_comment = True
+            # active_speaker bleibt erhalten → wird erst beim nächsten pair-Block geprüft!
             continue
 
         # Strukturelle Blöcke → vorher flushen
