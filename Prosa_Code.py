@@ -3066,17 +3066,18 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # ob nach Filterung noch Content übrig bleibt
 
         # linke Zusatzspalten
-        sp_cell_gr = Paragraph(xml_escape(speaker_display), style_speaker) if (first_slice and speaker_width_pt>0 and speaker_display) else Paragraph('', style_speaker)
-        sp_cell_de = Paragraph('', style_speaker)
-        sp_cell_en = Paragraph('', style_speaker)  # NEU: Englische Zeile
-        sp_gap_gr  = Paragraph('', token_gr_style); sp_gap_de = Paragraph('', token_de_style)
-        sp_gap_en  = Paragraph('', token_de_style)  # NEU: Englische Zeile
+        # DEFENSIV: Verwende Leerzeichen statt leere Strings für leere Paragraphen (verhindert ReportLab-Crashes)
+        sp_cell_gr = Paragraph(xml_escape(speaker_display), style_speaker) if (first_slice and speaker_width_pt>0 and speaker_display) else Paragraph(' ', style_speaker)
+        sp_cell_de = Paragraph(' ', style_speaker)
+        sp_cell_en = Paragraph(' ', style_speaker)  # NEU: Englische Zeile
+        sp_gap_gr  = Paragraph(' ', token_gr_style); sp_gap_de = Paragraph(' ', token_de_style)
+        sp_gap_en  = Paragraph(' ', token_de_style)  # NEU: Englische Zeile
 
-        para_cell_gr = Paragraph(xml_escape(para_display), style_para) if (para_width_pt>0 and first_slice and para_display) else Paragraph('', style_para)
-        para_cell_de = Paragraph('', style_para)
-        para_cell_en = Paragraph('', style_para)  # NEU: Englische Zeile
-        para_gap_gr  = Paragraph('', token_gr_style); para_gap_de = Paragraph('', token_de_style)
-        para_gap_en  = Paragraph('', token_de_style)  # NEU: Englische Zeile
+        para_cell_gr = Paragraph(xml_escape(para_display), style_para) if (para_width_pt>0 and first_slice and para_display) else Paragraph(' ', style_para)
+        para_cell_de = Paragraph(' ', style_para)
+        para_cell_en = Paragraph(' ', style_para)  # NEU: Englische Zeile
+        para_gap_gr  = Paragraph(' ', token_gr_style); para_gap_de = Paragraph(' ', token_de_style)
+        para_gap_en  = Paragraph(' ', token_de_style)  # NEU: Englische Zeile
 
         def cell_markup(t, is_gr, tok_idx=None):
             # DEFENSIV: Entferne Tags aus Token, falls sie noch vorhanden sind
@@ -3150,7 +3151,15 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
 
         # JETZT erst die Paragraphs erstellen (nachdem wir wissen, dass Content vorhanden ist)
         # WICHTIG: Übergebe tok_idx an cell_markup, damit _strip_tags_from_token korrekt arbeitet
-        gr_cells = [Paragraph(cell_markup(t, True, tok_idx=slice_start + idx),  token_gr_style) if t else Paragraph('', token_gr_style) for idx, t in enumerate(slice_gr)]
+        # DEFENSIV: Wenn cell_markup() leer zurückgibt, verwende ' ' (Leerzeichen) statt '' (verhindert ReportLab-Crashes)
+        gr_cells = []
+        for idx, t in enumerate(slice_gr):
+            if t:
+                markup = cell_markup(t, True, tok_idx=slice_start + idx)
+                # KRITISCH: ReportLab crasht manchmal bei komplett leeren Paragraphen - verwende Leerzeichen als Fallback
+                gr_cells.append(Paragraph(markup if markup else ' ', token_gr_style))
+            else:
+                gr_cells.append(Paragraph(' ', token_gr_style))  # Leerzeichen statt '' für Stabilität
         
         # KRITISCHER FIX: DE und EN in NESTED TABLES kombinieren (wie STRAUßLOGIK!)
         # WICHTIG: Nur VORHANDENE Übersetzungen hinzufügen (nicht immer 2 Zeilen!)
@@ -3201,8 +3210,8 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                 nested_table.setStyle(nested_style)
                 de_en_combined_cells.append(nested_table)
             else:
-                # Kein Übersetzung vorhanden - leere Zelle
-                de_en_combined_cells.append(Paragraph('', token_de_style))
+                # Kein Übersetzung vorhanden - leere Zelle (Leerzeichen statt '' für Stabilität)
+                de_en_combined_cells.append(Paragraph(' ', token_de_style))
 
         # VEREINHEITLICHUNG: Nur 2 Rows (wie STRAUßLOGIK)!
         # Row 0: GR-Zeile
@@ -3213,16 +3222,16 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         if speaker_width_pt > 0:
             row_gr.append(sp_cell_gr)
             row_gr.append(sp_gap_gr)
-            row_de_en.append(Paragraph('', token_de_style))  # Leer in DE/EN-Row
-            row_de_en.append(Paragraph('', token_de_style))  # Leer für Gap
+            row_de_en.append(Paragraph(' ', token_de_style))  # Leer in DE/EN-Row (Leerzeichen statt '')
+            row_de_en.append(Paragraph(' ', token_de_style))  # Leer für Gap (Leerzeichen statt '')
             colWidths += [speaker_width_pt, SPEAKER_GAP_MM*mm]
             
         # Para-Spalte (nur in GR-Row sichtbar, in DE/EN-Row leer)
         if para_width_pt > 0:
             row_gr.append(para_cell_gr)
             row_gr.append(para_gap_gr)
-            row_de_en.append(Paragraph('', token_de_style))  # Leer in DE/EN-Row
-            row_de_en.append(Paragraph('', token_de_style))  # Leer für Gap
+            row_de_en.append(Paragraph(' ', token_de_style))  # Leer in DE/EN-Row (Leerzeichen statt '')
+            row_de_en.append(Paragraph(' ', token_de_style))  # Leer für Gap (Leerzeichen statt '')
             colWidths += [para_width_pt, PARA_GAP_MM*mm]
 
         # Token-Spalten
