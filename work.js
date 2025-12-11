@@ -3460,6 +3460,33 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
     console.error("Fehler beim Laden des PDFs:", error);
     console.error("PDF URL war:", pdfUrl);
     const message = error?.message || "";
+    
+    // KRITISCHER FALLBACK: Wenn URL _NoTrans enthält und 404 zurückgibt,
+    // versuche automatisch die Variante OHNE _NoTrans!
+    // Grund: Python und JavaScript können unterschiedlich entscheiden, ob _NoTrans hinzugefügt wird
+    // (z.B. bei Dokumenten mit Sprechern aber ohne Übersetzungen)
+    if (pdfUrl.includes("_NoTrans") && 
+        (/Missing PDF/i.test(message) || 
+         /Unexpected server response/i.test(message) || 
+         message.includes("404"))) {
+      console.warn("⚠️ _NoTrans PDF nicht gefunden, versuche Variante ohne _NoTrans...");
+      const fallbackUrl = pdfUrl.replace(/_NoTrans/g, "");
+      console.log("🔄 Fallback URL:", fallbackUrl);
+      
+      // Rekursiver Aufruf mit Fallback-URL (aber nur einmal!)
+      if (!pdfUrl._fallbackAttempted) {
+        fallbackUrl._fallbackAttempted = true;
+        try {
+          await loadPdfIntoRendererDirect(fallbackUrl);
+          console.log("✅ Fallback erfolgreich: PDF ohne _NoTrans gefunden!");
+          return; // Erfolgreich geladen, nichts weiter zu tun
+        } catch (fallbackError) {
+          console.error("❌ Auch Fallback fehlgeschlagen:", fallbackError);
+          // Weiter mit normaler Fehlerbehandlung unten
+        }
+      }
+    }
+    
     if (state.source === "draft") {
       // NEU: Spezialfall für 404 bei Draft-PDFs
       // GitHub Raw-Content cached aggressiv → PDF kann 1-3 Minuten brauchen
