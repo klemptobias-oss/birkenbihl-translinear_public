@@ -2896,8 +2896,9 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
         # ROBUSTE BREITENBERECHNUNG BASIEREND AUF SICHTBARKEIT
         
         # Basis-Sicherheitspuffer: Konsistent für alle Wörter (verhindert Überlappungen)
-        # Dieser Puffer ist minimal und berücksichtigt nur Rundungsfehler und Rendering-Ungenauigkeiten
-        base_safety = max(token_gr_style.fontSize * 0.012, 0.3)  # 1.2% der Font-Size oder mindestens 0.3pt (leicht reduziert für Apologie TAG-PDFs)
+        # WICHTIG: Erhöht auf 3% um Wort-Überlappungen zu verhindern (von 1.2%)
+        # Bei 10pt Font → 0.3pt Mindestabstand, bei 11pt → 0.33pt
+        base_safety = max(token_gr_style.fontSize * 0.03, 0.5)  # 3% der Font-Size oder mindestens 0.5pt
         
         # Wenn Übersetzungen ausgeblendet sind: Nur GR-Breite mit angepasstem Puffer
         if not translations_visible:
@@ -3179,14 +3180,15 @@ def build_tables_for_stream(gr_tokens, de_tokens=None, *,
                 
                 # KRITISCHER FIX: Normale Paddings (0pt) für korrekte Abstände!
                 # Negatives Padding zieht Zeilen zu eng zusammen (Tags ragen in vorherige Zeile)
-                # FÜR ZITATE: Verwende MEHR Padding (1.5pt) damit Tags nicht überlappen!
-                padding_value = 1.5 if is_quote else 0  # Zitate: 1.5pt, Normal: 0pt
+                # FÜR ZITATE: Verwende das GLEICHE Padding wie normale Zeilen (0pt)!
+                # Der Abstand zwischen Zitat-Blöcken wird durch TOPPADDING auf der äußeren Tabelle kontrolliert.
+                padding_value = 0  # Immer 0pt - Abstand wird auf Table-Ebene kontrolliert!
                 nested_style = TableStyle([
                     ('VALIGN', (0, 0), (-1, -1), 'TOP'),
                     ('LEFTPADDING', (0, 0), (-1, -1), 0),
                     ('RIGHTPADDING', (0, 0), (-1, -1), 0),
-                    ('BOTTOMPADDING', (0, 0), (-1, -1), padding_value),  # Zitate: 1.5pt statt 0pt!
-                    ('TOPPADDING', (0, 0), (-1, -1), padding_value),     # Zitate: 1.5pt statt 0pt!
+                    ('BOTTOMPADDING', (0, 0), (-1, -1), padding_value),
+                    ('TOPPADDING', (0, 0), (-1, -1), padding_value),
                 ])
                 
                 # KRITISCH: Erste Zeile braucht KEIN extra Padding (bleibt bei 0pt)
