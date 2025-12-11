@@ -4121,9 +4121,19 @@ def create_pdf(blocks, pdf_name:str, *, strength:str="NORMAL",
                     )
                     q_tables.extend(line_tables)
             
-            # WICHTIG: KEINE extra Spacer zwischen Zitat-Zeilen!
-            # Die Zeilenabstände werden automatisch durch build_tables_for_stream() gesetzt.
-            # (Die alte LYRIK_GAP_MM Logik war falsch und wurde entfernt)
+            # KRITISCH: Setze TOPPADDING für Zitat-Zeilen (außer der ersten)!
+            # build_tables_for_stream() setzt das Padding NICHT automatisch!
+            # Für Zitate brauchen wir MEHR Abstand als für normalen Text:
+            # - Normal: CONT_PAIR_GAP_MM (1-2mm)
+            # - Zitate: CONT_PAIR_GAP_MM * 2.5 (2.5-5mm) für bessere Lesbarkeit
+            from reportlab.platypus import TableStyle
+            for table_idx, table in enumerate(q_tables):
+                if table_idx > 0:  # Erste Zeile braucht kein TOPPADDING
+                    # 2.5× mehr Abstand für Zitate als für normalen Text!
+                    quote_gap = CONT_PAIR_GAP_MM * 2.5 * mm
+                    table.setStyle(TableStyle([('TOPPADDING', (0,0), (-1,0), quote_gap)]))
+            
+            # Die Zeilenabstände werden jetzt durch TOPPADDING kontrolliert, nicht durch Spacer
 
 
             kidx, src_text = idx + 1, ''
