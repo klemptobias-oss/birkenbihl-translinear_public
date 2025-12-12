@@ -117,6 +117,9 @@ SUP_TAGS = {'N','D','G','A','V','Du','Adj','Pt','Prp','Adv','Kon','Art','≈','K
 SUB_TAGS = {'Prä','Imp','Aor','Per','Plq','Fu','Inf','Imv','Akt','Med','Pas','Knj','Op','Pr','AorS','M/P','Gdv','Ger','Spn','Fu1','Fu2'}  # NEU: Gdv, Ger, Spn, Fu1, Fu2 für Latein
 
 # ======= Regexe =======
+# KRITISCH: Unicode-Normalisierung für ä und / in Tags!
+# WICHTIG: Prä und M/P müssen korrekt erkannt werden, unabhängig von der Unicode-Kodierung des ä!
+# Der Schrägstrich / in M/P ist Teil des Tag-Namens und muss im Pattern enthalten sein.
 RE_PAREN_TAG     = re.compile(r'\(([A-Za-z0-9/≈äöüßÄÖÜ]+)\)')
 RE_LEAD_BAR_COLOR= re.compile(r'^\|\s*([+\-#§$])')  # |+ |# |- |§ |$ (Farbcode NACH leitender '|')
 RE_WORD_START = re.compile(r'([(\[|]*)([\w\u0370-\u03FF\u1F00-\u1FFF\u1F00-\u1FFF]+)') # Findet den Anfang eines Wortes, auch mit Präfixen wie (, [ oder |
@@ -686,17 +689,27 @@ def _remove_selected_tags(token: str,
       - remove_all=True  → alle bekannten SUP/SUB-Tags weg
       - sonst: entferne alle bekannten SUP/SUB-Tags, die NICHT in sup_keep/sub_keep enthalten sind.
     Unbekannte Tags (weder SUP noch SUB) bleiben unangetastet.
+    
+    KRITISCH: Unicode-Normalisierung für ä und / in Tags!
+    WICHTIG: (Prä) und (M/P) müssen korrekt erkannt werden, unabhängig von der Unicode-Kodierung!
+    Dies ist ESSENTIELL und darf NICHT entfernt werden!
     """
     if not token:
         return token
 
+    # KRITISCH: Unicode-Normalisierung des gesamten Tokens ZUERST!
+    # Dies stellt sicher, dass ä in (Prä) konsistent erkannt wird.
+    import unicodedata
+    token = unicodedata.normalize('NFC', token)
+
     def repl(m):
         tag = m.group(1)
         
-        # NEU: Normalisiere Umlaute für den Vergleich
-        tag_normalized = tag.replace('Prä', 'Prä')
-        # Zusätzliche Normalisierung für konsistenten Vergleich
-        tag_normalized = _normalize_tag_name(tag_normalized)
+        # KRITISCH: Normalisiere Umlaute für den Vergleich (Unicode NFC)
+        # WICHTIG: Ohne diese Normalisierung werden (Prä) und (M/P) NICHT korrekt entfernt!
+        import unicodedata
+        tag = unicodedata.normalize('NFC', tag)
+        tag_normalized = _normalize_tag_name(tag)
 
         # ZUERST: Prüfe ob das gesamte Tag direkt in den Listen enthalten ist
         is_sup_direct = tag_normalized in SUP_TAGS
@@ -1249,22 +1262,29 @@ def _normalize_tag_name(tag: str) -> str:
     """
     Normalisiert Tag-Namen für Kompatibilität mit Draft-Dateien.
     
-    WICHTIG: Behandelt auch Sonderzeichen wie / und ä in Tags!
+    KRITISCH: Behandelt auch Sonderzeichen wie / und ä in Tags!
+    WICHTIG: Diese Normalisierung ist ESSENTIELL für korrekte Tag-Erkennung!
+    NICHT ENTFERNEN: Ohne diese Funktion werden (Prä) und (M/P) NICHT korrekt ausgeblendet!
+    
     - (M/P) → 'M/P' (bleibt unverändert, wird korrekt erkannt)
-    - (Prä) → 'Prä' (Umlaut wird normalisiert)
+    - (Prä) → 'Prä' (Umlaut wird normalisiert via Unicode NFC)
     - (Pra) → 'Prä' (ASCII-Variante wird zu Umlaut konvertiert)
     """
-    # KRITISCH: Normalisiere Umlaute (Prä, Präsens)
-    # Verschiedene Encodings können "ä" unterschiedlich darstellen!
-    # WICHTIG: Prüfe ZUERST auf ASCII-Variante "Pra" (ohne Umlaut)!
+    # KRITISCH: Unicode-Normalisierung ZUERST (wichtig für ä in verschiedenen Encodings)!
+    # Verschiedene Encodings können "ä" unterschiedlich darstellen:
+    # - Composed: U+00E4 (ä als ein Zeichen)
+    # - Decomposed: U+0061 U+0308 (a + Umlaut-Kombinator)
+    # NFC = Normalized Form Composed (bevorzugt für Vergleiche)
+    import unicodedata
+    tag = unicodedata.normalize('NFC', tag)
+    
+    # WICHTIG: Prüfe DANACH auf ASCII-Variante "Pra" (ohne Umlaut)!
+    # Manche alte Texte verwenden "Pra" statt "Prä"
     if 'Pra' in tag and 'ä' not in tag:
         # ASCII-Variante: "Pra" → "Prä"
         tag = tag.replace('Pra', 'Prä')
-    
-    # Dann normalisiere verschiedene Unicode-Varianten von ä
-    # (Combining Characters, verschiedene Encodings)
-    import unicodedata
-    tag = unicodedata.normalize('NFC', tag)  # Normalisiere zu composed form
+        # Nach dem Ersetzen nochmal normalisieren
+        tag = unicodedata.normalize('NFC', tag)
     
     # KRITISCH: (M/P) Tag muss unverändert bleiben!
     # Der Slash "/" ist bereits Teil des Tag-Namens und darf nicht ersetzt werden.
@@ -1297,7 +1317,7 @@ def _normalize_tag_name(tag: str) -> str:
         return 'Adv'
     elif tag == 'ij':
         return 'ij'
-    elif tag == 'MP':
+    elif tag == 'MP':  # KRITISCH: MP ohne Schrägstrich → M/P mit Schrägstrich!
         return 'M/P'
     
     return tag
@@ -1622,6 +1642,10 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                         wortart_key = parts[0].lower()
                         tag = parts[1]
                         
+                        # KRITISCH: Normalisiere den Tag-Namen (Pra → Prä, MP → M/P)!
+                        # WICHTIG: Ohne diese Normalisierung werden (Prä) und (M/P) NICHT erkannt!
+                        tag = _normalize_tag_name(tag)
+                        
                         # Normalisiere wortart_key zur vollen Form BEVOR wir prüfen
                         # 'adj' → 'adjektiv', 'art' → 'artikel', etc.
                         wortart_key_capitalized = wortart_key.capitalize()
@@ -1716,6 +1740,9 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         # callback für jede Klammergruppe
         def repl(m):
             tag = m.group(1).strip()
+            # KRITISCH: Unicode-Normalisierung für (Prä) und (M/P) Tags!
+            import unicodedata
+            tag = unicodedata.normalize('NFC', tag)
             # falls Gruppe aus mehreren Subtags besteht (sollte selten sein), check jedes Einzelne:
             # Wir behandeln einzelne rohe Tags (z.B. 'N', 'G', 'Adj'), remove wenn eines matcht.
             if tag in tags_to_remove:
@@ -1764,6 +1791,12 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             de_tokens = block.get('de_tokens', [])
             en_tokens = block.get('en_tokens', [])
             
+            # KRITISCH: Unterstützung für /slash/-Alternativen!
+            # WICHTIG: Wenn de_tokens_alternatives existiert, müssen ALLE Alternativen ausgeblendet werden!
+            de_tokens_alternatives = block.get('de_tokens_alternatives')
+            en_tokens_alternatives = block.get('en_tokens_alternatives')
+            trans3_tokens_alternatives = block.get('trans3_tokens_alternatives')
+            
             for idx, gr_token in enumerate(gr_tokens_original):
                 # WICHTIG: Prüfe per-token HideTrans Flag in token_meta (für einzelne Tokens ohne Gruppenanführer)
                 hide_trans_from_flag = False
@@ -1776,9 +1809,15 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                 
                 # Entweder Flag ODER Tabellen-Regel -> beide wirksam
                 if hide_trans_from_flag or hide_trans_from_table:
-                    # Entferne Übersetzung, aber prüfe auch ob sie trivial ist (nur Interpunktion/Stephanus)
-                    # WICHTIG: Wenn Übersetzung trivial ist, entferne sie auch wenn hide_translation nicht aktiv ist
-                    if idx < len(de_tokens):
+                    # KRITISCH: Wenn de_tokens_alternatives existiert, blende ALLE Alternativen aus!
+                    # WICHTIG: Ohne diesen Fix werden /slash/-getrennte Übersetzungen NICHT ausgeblendet!
+                    if de_tokens_alternatives:
+                        # Für jede Alternative: setze Token auf ''
+                        for alt_idx in range(len(de_tokens_alternatives)):
+                            if idx < len(de_tokens_alternatives[alt_idx]):
+                                de_tokens_alternatives[alt_idx][idx] = ''
+                    elif idx < len(de_tokens):
+                        # Standard-Fall: nur de_tokens (keine Alternativen)
                         de_text = de_tokens[idx].strip() if isinstance(de_tokens[idx], str) else ''
                         # Wenn Übersetzung trivial ist (nur Interpunktion/Stephanus), entferne sie komplett
                         if is_trivial_translation(de_text):
@@ -1787,16 +1826,28 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                             # Ansonsten: entferne nur wenn hide_translation aktiv ist (was hier der Fall ist, da wir in diesem if-Block sind)
                             de_tokens[idx] = ''
                     
-                    if idx < len(en_tokens):
+                    # Gleiches für EN-Alternativen
+                    if en_tokens_alternatives:
+                        for alt_idx in range(len(en_tokens_alternatives)):
+                            if idx < len(en_tokens_alternatives[alt_idx]):
+                                en_tokens_alternatives[alt_idx][idx] = ''
+                    elif idx < len(en_tokens):
                         en_text = en_tokens[idx].strip() if isinstance(en_tokens[idx], str) else ''
                         if is_trivial_translation(en_text):
                             en_tokens[idx] = ''
                         else:
                             en_tokens[idx] = ''
+                    
+                    # Gleiches für TRANS3-Alternativen
+                    if trans3_tokens_alternatives:
+                        for alt_idx in range(len(trans3_tokens_alternatives)):
+                            if idx < len(trans3_tokens_alternatives[alt_idx]):
+                                trans3_tokens_alternatives[alt_idx][idx] = ''
             
             # Aktualisiere die Token-Listen im Block
             block['de_tokens'] = de_tokens
             block['en_tokens'] = en_tokens
+            # WICHTIG: Alternativen wurden direkt modifiziert (sind bereits Listen, keine Kopien nötig)
         
         # DANACH: Tag-Entfernung (wortart-spezifisch)
         # neue, sichere Logik: benutze orig_tags (falls vorhanden), bestimme wortart davon,

@@ -2699,6 +2699,10 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             """
             Wendet Farbsymbol auf Token an: Manuell hat Vorrang vor automatisch.
             
+            KRITISCH: Bei Multi-Wort-Tokens (mit | getrennt) muss JEDES Wort die Farbe erhalten!
+            WICHTIG: Dies behebt das Problem, dass bei "Götter/(Klammer: oder?)/Test 2*" nur
+                     "(Klammer: oder?)" gefärbt wird, aber "Test 2*" schwarz bleibt.
+            
             Args:
                 token_text: Der Token-Text (möglicherweise mit manuellem Symbol)
                 token_index: Index des Tokens in der Zeile (für token_meta Lookup)
@@ -2706,9 +2710,22 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             
             Returns:
                 Token mit genau EINEM Farbsymbol (oder ohne wenn keine Färbung)
+                Bei Multi-Wort-Tokens: JEDES Wort erhält das gleiche Farbsymbol
             """
-            # Prüfe ob Token MANUELLES Symbol hat (#+-§$~*)
-            has_manual_color = any(sym in token_text for sym in ['#', '+', '-', '§', '$', '~', '*'])
+            # ═══════════════════════════════════════════════════════════════════
+            # KRITISCH: Prüfe ob Token MANUELLES Farbsymbol hat (#+-§$~)
+            # ═══════════════════════════════════════════════════════════════════
+            # WICHTIG: * (Sternchen) ist KEIN Farbsymbol, sondern ein linguistischer Marker!
+            #          Es erscheint oft am ENDE von Tokens (z.B. "Test|2*", "Wort*")
+            #          Farbsymbole stehen immer am ANFANG eines Wortes!
+            #
+            # WARUM?
+            #   - * wird für rekonstruierte Formen verwendet (z.B. "indo-europäisch *kʷetwóres")
+            #   - ~ wird für ungefähre Transkription verwendet
+            #   - Beide sind KEINE Farbsymbole, sondern Metadaten!
+            #
+            # LÖSUNG: Prüfe nur auf #+-§$ (echte Farbsymbole), NICHT auf ~*
+            has_manual_color = any(sym in token_text for sym in ['#', '+', '-', '§', '$'])
             
             if has_manual_color:
                 # MANUELL gefärbt → nutze Token as-is (Symbol bereits vorhanden)
@@ -2716,11 +2733,21 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             else:
                 # NICHT manuell gefärbt → prüfe token_meta für automatische Färbung
                 token_meta = block.get('token_meta', [])
+                color_symbol = None
                 if token_index < len(token_meta):
                     meta = token_meta[token_index]
                     color_symbol = meta.get('color_symbol')
-                    if color_symbol:
-                        # Füge automatisches Symbol hinzu
+                
+                if color_symbol:
+                    # KRITISCH: Bei Multi-Wort-Tokens (mit | getrennt) JEDES Wort färben!
+                    # WICHTIG: Dies behebt das "schwarze Lücke"-Problem bei Alternativen!
+                    if '|' in token_text:
+                        # Splitte bei | und färbe jedes Teil einzeln
+                        parts = token_text.split('|')
+                        colored_parts = [color_symbol + part if part.strip() else part for part in parts]
+                        return '|'.join(colored_parts)
+                    else:
+                        # Einfacher Token: Symbol nur einmal hinzufügen
                         return color_symbol + token_text
                 
                 # Kein Symbol (weder manuell noch automatisch)
@@ -2870,8 +2897,18 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         # Build table rows dynamically based on which translations are visible
         table_rows = [row_gr]  # Ancient line always included
         
+        # ═══════════════════════════════════════════════════════════════════
+        # KRITISCH: Zähle tatsächlich gerenderte DE-Alternativen
+        # ═══════════════════════════════════════════════════════════════════
+        # WARUM?
+        #   - Einige Alternativen werden übersprungen (continue), wenn leer
+        #   - Padding-Berechnung braucht ECHTE Anzahl, nicht len(de_lines)
+        #   - Beispiel: 3 Alternativen, aber 2 sind leer → nur 1 gerendert!
+        num_rendered_de_alternatives = 0
+        
         if has_visible_de:
             table_rows.append(row_de)
+            num_rendered_de_alternatives += 1
         
         # ═══════════════════════════════════════════════════════════════════
         # NEU: BEDEUTUNGS-STRAUß - Zusätzliche Übersetzungsalternativen
@@ -2889,7 +2926,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         #   2. Iteriere über Alternativen 1, 2, 3... (Index 0 ist bereits als row_de gebaut)
         #   3. Für jede Alternative: Baue Zellen GENAU WIE für row_de
         #   4. Wichtig: KEINE Zeilennummer, KEIN Sprecher (leere Paragraphs)
-        #   5. Füge Zeile zu table_rows hinzu
+        #   5. Füge Zeile zu table_rows hinzu NUR wenn sichtbare Tokens vorhanden
         #
         # RESULTAT:
         #   table_rows = [row_gr, row_de_alt0, row_de_alt1, row_de_alt2, row_en?, row_trans3?]
@@ -2898,9 +2935,30 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
         
         if len(de_lines) > 1:
             # Es gibt Alternativen! Rendere sie alle
+            block_label = block.get('label', '')
+            if block_label == '1':
+                print(f"DEBUG: Block label={block_label} hat {len(de_lines)} DE-Alternativen")
+                for alt_idx, alt in enumerate(de_lines):
+                    print(f"  Alt {alt_idx}: {alt[:3]}")  # Zeige erste 3 Tokens
+            
             for alt_idx in range(1, len(de_lines)):
                 de_alt = de_lines[alt_idx]
                 slice_de_alt = de_alt[i:j]
+                
+                # ═══════════════════════════════════════════════════════════════
+                # KRITISCHER FIX: Prüfe ob Alternative sichtbare Tokens hat
+                # ═══════════════════════════════════════════════════════════════
+                # PROBLEM: Wenn ALLE Tokens (HideTrans) oder leer sind, soll Zeile kollabieren!
+                # LÖSUNG: Prüfe ob irgendein Token in dieser Alternative sichtbar ist
+                # WICHTIG: Genau wie bei has_visible_de (Zeile 2882) - nur für diese Alternative!
+                has_visible_de_alt = any(
+                    de_alt[i_global] and not (hide_trans_flags[i_global] if i_global < len(hide_trans_flags) else False) 
+                    for i_global in range(i, j)
+                )
+                
+                # Wenn Alternative KEINE sichtbaren Tokens hat → überspringe!
+                if not has_visible_de_alt:
+                    continue
                 
                 # ═══════════════════════════════════════════════════════════════
                 # Baue Zellen für diese Alternative - GENAU WIE für row_de!
@@ -2944,6 +3002,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
                 
                 row_de_alt = [num_para_de_alt, num_gap_de_alt, sp_para_de_alt, sp_gap_de_alt, indent_de_alt] + de_alt_cells
                 table_rows.append(row_de_alt)
+                num_rendered_de_alternatives += 1  # Zähle gerenderte Alternative
         
         if has_visible_en:
             row_en = [num_para_en, num_gap_en, sp_para_en, sp_gap_en, indent_en] + en_cells
@@ -3041,10 +3100,11 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             #     alt_idx=2: row_idx=3 → Padding zwischen Index 2↔3 (DE1↔DE2)
             #   en_row_idx = 1+3 = 4 → Padding zwischen Index 3↔4 (DE2↔EN)
             
-            num_de_alternatives = len(de_lines)
-            if num_de_alternatives > 1:
+            # KRITISCH: Verwende GERENDERTE Alternativen, nicht len(de_lines)!
+            # (Einige Alternativen wurden mit continue übersprungen)
+            if num_rendered_de_alternatives > 1:
                 # Erste DE-Zeile ist an Index 1, weitere Alternativen folgen
-                for alt_idx in range(1, num_de_alternatives):
+                for alt_idx in range(1, num_rendered_de_alternatives):
                     row_idx = 1 + alt_idx  # Index der Alternative in table_rows
                     # MINIMALES Padding zwischen DE-Alternativen (wie DE zu EN)
                     style_list.append(('BOTTOMPADDING', (0,row_idx-1), (-1,row_idx-1), gap_de_to_en))
@@ -3052,7 +3112,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             
             # NEU: Für 3-sprachige Texte: Padding zwischen Zeilen
             # Berechne Index von EN-Zeile (kommt nach allen DE-Alternativen)
-            en_row_idx = 1 + num_de_alternatives if has_visible_en else None
+            en_row_idx = 1 + num_rendered_de_alternatives if has_visible_en else None
             if has_visible_en and en_row_idx:
                 # Abstand zwischen letzter DE-Alternative und EN
                 style_list.append(('BOTTOMPADDING', (0,en_row_idx-1), (-1,en_row_idx-1), gap_de_to_en))
@@ -3086,10 +3146,11 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             # NEU: BEDEUTUNGS-STRAUß - Padding zwischen Übersetzungsalternativen
             # Alternativen sollen ENG untereinander stehen (wie EN unter DE)
             # ═══════════════════════════════════════════════════════════════════
-            num_de_alternatives = len(de_lines)
-            if num_de_alternatives > 1:
+            # KRITISCH: Verwende GERENDERTE Alternativen, nicht len(de_lines)!
+            # (Einige Alternativen wurden mit continue übersprungen)
+            if num_rendered_de_alternatives > 1:
                 # Erste DE-Zeile ist an Index 1, weitere Alternativen folgen
-                for alt_idx in range(1, num_de_alternatives):
+                for alt_idx in range(1, num_rendered_de_alternatives):
                     row_idx = 1 + alt_idx  # Index der Alternative in table_rows
                     # MINIMALES Padding zwischen DE-Alternativen (wie DE zu EN)
                     style_list.append(('BOTTOMPADDING', (0,row_idx-1), (-1,row_idx-1), gap_de_to_en))
@@ -3097,7 +3158,7 @@ def build_tables_for_pair(gr_tokens: list[str], de_tokens: list[str] = None,
             
             # NEU: Für 3-sprachige Texte: Padding zwischen Zeilen
             # Berechne Index von EN-Zeile (kommt nach allen DE-Alternativen)
-            en_row_idx = 1 + num_de_alternatives if has_visible_en else None
+            en_row_idx = 1 + num_rendered_de_alternatives if has_visible_en else None
             if has_visible_en and en_row_idx:
                 # Abstand zwischen letzter DE-Alternative und EN
                 style_list.append(('BOTTOMPADDING', (0,en_row_idx-1), (-1,en_row_idx-1), gap_de_to_en))
