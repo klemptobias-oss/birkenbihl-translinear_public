@@ -251,6 +251,18 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     base = base_from_input_path(Path(infile))
     print(f"→ Base-Name aus Datei: {base}")
     
+    # KRITISCH: Lese Metadaten aus der Datei (für ORIGINAL_SIZE_BYTES)
+    metadata = {}
+    try:
+        import re
+        with open(infile, 'r', encoding='utf-8') as f:
+            first_lines = ''.join(f.readline() for _ in range(20))  # Erste 20 Zeilen
+        meta_pattern = re.compile(r'<!--\s*(\w+):(.*?)\s*-->', re.DOTALL | re.IGNORECASE)
+        for key, value in meta_pattern.findall(first_lines):
+            metadata[key.strip().upper()] = value.strip()
+    except Exception as e:
+        print(f"⚠ Fehler beim Lesen der Metadaten: {e}")
+    
     logger = logging.getLogger(__name__)
     logger.info("prosa_pdf: START processing file=%s", str(base))
     start_time = time.time()
@@ -328,7 +340,19 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # ═══════════════════════════════════════════════════════════════════════════════════════
     # DATEIGRÖSSE-PRÜFUNG: Stufenweise Varianten-Reduktion
     # ═══════════════════════════════════════════════════════════════════════════════════════
-    input_size_bytes = os.path.getsize(infile)
+    # KRITISCH: Verwende ORIGINAL_SIZE_BYTES aus Metadaten (falls vorhanden)!
+    # Der Adapter entfernt Metadaten, daher wäre os.path.getsize(infile) zu klein!
+    original_size_from_meta = metadata.get('ORIGINAL_SIZE_BYTES')
+    if original_size_from_meta:
+        try:
+            input_size_bytes = int(original_size_from_meta)
+            print(f"✓ Verwende Original-Dateigröße aus Metadaten: {input_size_bytes / 1024:.1f} KB")
+        except (ValueError, TypeError):
+            input_size_bytes = os.path.getsize(infile)
+            print(f"⚠ ORIGINAL_SIZE_BYTES ungültig, verwende Fallback: {input_size_bytes / 1024:.1f} KB")
+    else:
+        input_size_bytes = os.path.getsize(infile)
+    
     input_size_kb = input_size_bytes / 1024
     input_size_mb = input_size_kb / 1024
     

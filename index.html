@@ -356,7 +356,7 @@
           <h3>Benutzerhinweise Antike Translinear-Texte</h3>
            <ul>
             <li>
-            <strong>Einleitung:</strong> Dies ist eine neue, experimentelle Webseite (11.12.25), welche translineare Übersetzungen
+            <strong>Einleitung:</strong> Dies ist eine neue, experimentelle Webseite (12.12.25), welche translineare Übersetzungen
             klassischer griechischer und lateinischer Texte zum Herunterladen anbietet. Der Prozess der "Übersetzung" wurde dabei vom
             relativ neuen Modell Chat-GPT5 (August 2025) im Modus Thinking durchgeführt. Ebenfalls
             wurden die grammatikalischen Kürzel darüber generiert. Bei
@@ -1537,13 +1537,13 @@
             categoryNode.li.classList.add(`category-${category}`);
             kindNode.ul.appendChild(categoryNode.li);
 
-            // Ebene 4: Autoren
+            // Ebene 4: Autoren (EINGEKLAPPT beim Seitenstart!)
             const authors = listAuthors(cat, lang, kind, category);
             for (const a of authors) {
-              const aNode = createToggleable(a.display, true, "author-label");
+              const aNode = createToggleable(a.display, false, "author-label");
               categoryNode.ul.appendChild(aNode.li);
 
-              // Ebene 5: Werke
+              // Ebene 5: Werke (EINGEKLAPPT beim Seitenstart!)
               const works = listWorks(cat, lang, kind, category, a.author);
               for (const w of works) {
                 const workNode = createToggleable(w.title, false, "work-label");

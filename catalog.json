@@ -2391,16 +2391,6 @@
               "bucket": "LAT_HISTORIE",
               "meta_prefix": "LAT_prosa_Historie_Livius_Ab_urbe_condita_21",
               "release_tag": "lat-historie-v1"
-            },
-            "ab_urbe_conditia_1": {
-              "path": "latein/prosa/Historie/Livius/ab_urbe_conditia_1",
-              "versmass": false,
-              "filename_base": "ab_urbe_conditia_1",
-              "title": "ab urbe conditia 1",
-              "author_display": "Livius",
-              "bucket": "LAT_HISTORIE",
-              "meta_prefix": "LAT_prosa_Historie_Livius_ab_urbe_conditia_1",
-              "release_tag": "lat-historie-v1"
             }
           },
           "Tacitus": {

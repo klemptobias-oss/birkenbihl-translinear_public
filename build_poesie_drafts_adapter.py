@@ -9,7 +9,7 @@ DST_BASE = ROOT / "pdf_drafts" / "poesie_drafts"         # Ausgaben (spiegelbild
 RUNNER = ROOT / "poesie_pdf.py"                          # 24 Varianten (Poesie)
 
 META_HEADER_RE = re.compile(
-    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|PATH_PREFIX|RELEASE_NAME|VERSMASS|METER_MODE|HIDE_PIPES|SPRACHE|GATTUNG|KATEGORIE|AUTOR|WERK):(.*?)\s*-->',
+    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|PATH_PREFIX|RELEASE_NAME|VERSMASS|METER_MODE|HIDE_PIPES|SPRACHE|GATTUNG|KATEGORIE|AUTOR|WERK|ORIGINAL_SIZE_BYTES):(.*?)\s*-->',
     re.DOTALL | re.IGNORECASE
 )
 
@@ -43,6 +43,11 @@ def run_one(input_path: Path) -> None:
     text_content = input_path.read_text(encoding="utf-8")
     metadata = extract_metadata_sections(text_content)
     print(f"→ Extrahierte Metadaten: {list(metadata.keys())}")
+    
+    # KRITISCH: Messe Original-Dateigröße BEVOR Metadaten entfernt werden!
+    # Dies ist wichtig falls wir später auch Poesie-Varianten reduzieren wollen
+    original_size_bytes = input_path.stat().st_size
+    print(f"→ Original-Dateigröße: {original_size_bytes / 1024:.1f} KB")
     
     # KRITISCH: Baue Verzeichnisstruktur aus Metadaten ODER aus Input-Pfad
     # Frontend erwartet: pdf_drafts/griechisch/poesie/Epos/Homer/Ilias/
@@ -116,9 +121,14 @@ def run_one(input_path: Path) -> None:
 
     clean_text = strip_metadata_comments(text_content)
     
+    # KRITISCH: Füge Original-Dateigröße als Metadata hinzu!
+    # poesie_pdf.py könnte dies später für Varianten-Reduktion brauchen
+    size_metadata = f"<!-- ORIGINAL_SIZE_BYTES:{original_size_bytes} -->\n"
+    clean_text_with_size = size_metadata + clean_text
+    
     # Schreibe bereinigten Text in temporäre Datei
     temp_input = ROOT / f"temp_{input_path.name}"
-    temp_input.write_text(clean_text, encoding="utf-8")
+    temp_input.write_text(clean_text_with_size, encoding="utf-8")
     
     # NEUE Position (RICHTIG) - Zeile ~145 (NACH temp_input.write_text, VOR subprocess.Popen):
     before = {p.name for p in ROOT.glob("*.pdf")}  # ← GENAU HIER!

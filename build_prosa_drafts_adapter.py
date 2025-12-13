@@ -9,7 +9,7 @@ DST_BASE = ROOT / "pdf_drafts" / "prosa_drafts"          # Ausgaben (spiegelbild
 RUNNER = ROOT / "prosa_pdf.py"                           # 12 Varianten (Prosa)
 
 META_HEADER_RE = re.compile(
-    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|PATH_PREFIX|RELEASE_NAME|VERSMASS|METER_MODE|HIDE_PIPES):(.*?)\s*-->',
+    r'<!--\s*(TAG_CONFIG|RELEASE_BASE|PATH_PREFIX|RELEASE_NAME|VERSMASS|METER_MODE|HIDE_PIPES|ORIGINAL_SIZE_BYTES):(.*?)\s*-->',
     re.DOTALL | re.IGNORECASE
 )
 
@@ -61,6 +61,11 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     metadata = extract_metadata_sections(text_content)
     print(f"→ Extrahierte Metadaten: {list(metadata.keys())}")
     
+    # KRITISCH: Messe Original-Dateigröße BEVOR Metadaten entfernt werden!
+    # Dies ist wichtig für die stufenweise Varianten-Reduktion bei großen Dateien
+    original_size_bytes = input_path.stat().st_size
+    print(f"→ Original-Dateigröße: {original_size_bytes / 1024:.1f} KB")
+    
     release_base = normalize_release_base(metadata.get("RELEASE_BASE", ""))
     print(f"→ Release Base: {release_base}")
     
@@ -80,9 +85,14 @@ def run_one(input_path: Path, tag_config: dict = None) -> None:
     # Entferne Metadaten-Kommentare aus dem Text für die Verarbeitung
     clean_text = strip_metadata_comments(text_content)
     
+    # KRITISCH: Füge Original-Dateigröße als Metadata hinzu!
+    # prosa_pdf.py braucht dies für die stufenweise Varianten-Reduktion
+    size_metadata = f"<!-- ORIGINAL_SIZE_BYTES:{original_size_bytes} -->\n"
+    clean_text_with_size = size_metadata + clean_text
+    
     # Schreibe bereinigten Text in temporäre Datei
     temp_input = ROOT / f"temp_{input_path.name}"
-    temp_input.write_text(clean_text, encoding="utf-8")
+    temp_input.write_text(clean_text_with_size, encoding="utf-8")
     
     before = {p.name for p in ROOT.glob("*.pdf")}
     print(f"→ Erzeuge PDFs für: {input_path}")
