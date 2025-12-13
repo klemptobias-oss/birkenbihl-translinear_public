@@ -251,15 +251,29 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     base = base_from_input_path(Path(infile))
     print(f"→ Base-Name aus Datei: {base}")
     
-    # KRITISCH: Lese Metadaten aus der Datei (für ORIGINAL_SIZE_BYTES)
+    # KRITISCH: Lese Metadaten aus der Datei (für ORIGINAL_SIZE_BYTES UND TAG_CONFIG)
     metadata = {}
     try:
         import re
+        import json
         with open(infile, 'r', encoding='utf-8') as f:
             first_lines = ''.join(f.readline() for _ in range(20))  # Erste 20 Zeilen
         meta_pattern = re.compile(r'<!--\s*(\w+):(.*?)\s*-->', re.DOTALL | re.IGNORECASE)
         for key, value in meta_pattern.findall(first_lines):
-            metadata[key.strip().upper()] = value.strip()
+            key_upper = key.strip().upper()
+            value_stripped = value.strip()
+            
+            # Spezialbehandlung für TAG_CONFIG: JSON parsen
+            if key_upper == 'TAG_CONFIG':
+                try:
+                    parsed_tag_config = json.loads(value_stripped)
+                    metadata[key_upper] = parsed_tag_config
+                    print(f"→ TAG_CONFIG aus Datei gelesen: {len(parsed_tag_config)} Einträge", flush=True)
+                except json.JSONDecodeError as e:
+                    print(f"⚠ TAG_CONFIG JSON parsing fehlgeschlagen: {e}", flush=True)
+                    metadata[key_upper] = value_stripped
+            else:
+                metadata[key_upper] = value_stripped
     except Exception as e:
         print(f"⚠ Fehler beim Lesen der Metadaten: {e}")
     
@@ -393,9 +407,17 @@ def _process_one_input(infile: str, tag_config: dict = None, hide_pipes: bool = 
     # Verwende die neue Standard-Farbkonfiguration basierend auf der Sprache
     default_prosa_tag_config = _get_default_tag_config(ancient_lang_strength)
     
-    # Wenn keine spezifische tag_config übergeben wird (Standardfall für build_prosa_adapter),
-    # verwende die Standard-Farbkonfiguration.
-    final_tag_config = tag_config if tag_config is not None else default_prosa_tag_config
+    # KRITISCH: Wenn TAG_CONFIG in metadata vorhanden ist, verwende es!
+    # Priorität: 1) tag_config Parameter, 2) TAG_CONFIG aus Datei, 3) default_prosa_tag_config
+    if tag_config is not None:
+        final_tag_config = tag_config
+        print(f"→ Verwende tag_config aus Parameter ({len(tag_config)} Einträge)", flush=True)
+    elif 'TAG_CONFIG' in metadata and isinstance(metadata['TAG_CONFIG'], dict):
+        final_tag_config = metadata['TAG_CONFIG']
+        print(f"→ Verwende TAG_CONFIG aus Datei-Metadaten ({len(final_tag_config)} Einträge)", flush=True)
+    else:
+        final_tag_config = default_prosa_tag_config
+        print(f"→ Verwende Standard-TAG_CONFIG ({len(final_tag_config)} Einträge)", flush=True)
 
     # --- KORREKTE VERARBEITUNGS-PIPELINE ---
     # WICHTIG: Reihenfolge - Farben ZUERST (basierend auf ORIGINALEN Tags), dann Tags entfernen

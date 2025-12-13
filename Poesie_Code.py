@@ -1498,7 +1498,14 @@ def process_input_file(infile: str) -> List[Dict[str, Any]]:
     logger.info("Poesie_Code.process_input_file: START reading %s", infile)
     
     with open(infile, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
+        raw_text = f.read()
+    
+    # KRITISCH: Entferne ALLE Metadata-Kommentare am Anfang (<!-- ... -->)
+    # Dies verhindert, dass sie als Text im PDF erscheinen
+    import re
+    raw_text = re.sub(r'^(<!--.*?-->\s*)+', '', raw_text, flags=re.DOTALL | re.MULTILINE)
+    
+    lines = raw_text.split('\n')
     
     # NEU: Log Zeilenanzahl
     logger.info("Poesie_Code.process_input_file: read %d lines", len(lines))

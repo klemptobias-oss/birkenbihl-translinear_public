@@ -931,30 +931,42 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                         else:
                             new_en_tokens[i] = manual_color_symbol + en_tok
                 
-                # WICHTIG: Symbol in token_meta speichern mit FORCE_COLOR Flag!
+                # WICHTIG: Symbol in token_meta speichern mit FORCE_COLOR_GR Flag!
                 # Dies signalisiert, dass diese Farbe AUCH in BlackWhite-PDFs gezeigt werden soll!
+                # NUR für GR-Token setzen, nicht für DE/EN!
                 if i < len(token_meta):
                     token_meta[i]['color_symbol'] = manual_color_symbol
-                    token_meta[i]['force_color'] = True  # Manuelle Farbe überschreibt BlackWhite-Modus!
+                    token_meta[i]['force_color_gr'] = True  # GR-Token behält Farbe in BlackWhite
                 else:
                     while len(token_meta) <= i:
                         token_meta.append({})
                     token_meta[i]['color_symbol'] = manual_color_symbol
-                    token_meta[i]['force_color'] = True
+                    token_meta[i]['force_color_gr'] = True
                 
                 # Fahre mit nächstem Token fort (keine automatische Farbzuweisung mehr nötig)
                 continue
             
             # WICHTIG: Wenn NUR die Übersetzung ein manuelles Symbol hat, markiere das in token_meta
             # Aber lass TAG_CONFIG Färbung für das GR-Wort trotzdem zu!
-            if de_has_manual_symbol or en_has_manual_symbol:
-                # Speichere nur das Flag, aber KEIN continue - TAG_CONFIG läuft weiter!
+            # KRITISCH: Setze force_color_de/force_color_en SEPARAT, NICHT force_color_gr!
+            # Sonst würde GR-Wort auch Farbe in BlackWhite behalten!
+            if de_has_manual_symbol:
                 if i < len(token_meta):
                     token_meta[i]['translation_has_manual_color'] = True
+                    token_meta[i]['force_color_de'] = True  # NUR DE-Übersetzung behält Farbe
                 else:
                     while len(token_meta) <= i:
                         token_meta.append({})
                     token_meta[i]['translation_has_manual_color'] = True
+                    token_meta[i]['force_color_de'] = True
+            
+            if en_has_manual_symbol:
+                if i < len(token_meta):
+                    token_meta[i]['force_color_en'] = True  # NUR EN-Übersetzung behält Farbe
+                else:
+                    while len(token_meta) <= i:
+                        token_meta.append({})
+                    token_meta[i]['force_color_en'] = True
 
             # WICHTIG: Für Farbberechnung HideTags/HideTrans entfernen, damit sie die Farbzuordnung nicht beeinflussen
             tags_for_color = orig_tags - {TAG_HIDE_TAGS, TRANSLATION_HIDE_TAG}
@@ -1480,6 +1492,8 @@ def _register_translation_rule(rules: Dict[str, Dict[str, Any]], normalized_rule
     - Gruppenanführer MIT eigenem Tag (Adj, Art, Pr): Nur das Tag selbst registrieren
     - Gruppenanführer OHNE eigenem Tag (Nomen, Verb): Nichts (Subtags via spezifische Regeln)
     """
+    print(f"DEBUG _register_translation_rule: normalized_rule_id={normalized_rule_id}", flush=True)
+    
     if not normalized_rule_id:
         return
     
@@ -1492,6 +1506,8 @@ def _register_translation_rule(rules: Dict[str, Dict[str, Any]], normalized_rule
 
     normalized_wordart = wordart.lower()
     
+    print(f"DEBUG _register_translation_rule: wordart={wordart}, tag={tag}, normalized_wordart={normalized_wordart}", flush=True)
+    
     # WICHTIG: Normalisiere Wortart-Key zu voller Form (wie bei Tag-Visibility)
     # 'adj' → 'adjektiv', 'art' → 'artikel', 'pr' → 'pronomen', etc.
     wordart_capitalized = wordart.capitalize()
@@ -1499,9 +1515,12 @@ def _register_translation_rule(rules: Dict[str, Dict[str, Any]], normalized_rule
         # Map z.B. 'adj' → 'adjektiv'
         normalized_wordart = WORTART_IDENTIFIER_TAGS[wordart_capitalized]
     
+    print(f"DEBUG _register_translation_rule: After WORTART_IDENTIFIER_TAGS: normalized_wordart={normalized_wordart}, wordart_capitalized={wordart_capitalized}", flush=True)
+    
     # Prüfe ob normalisierte Wortart bekannt ist
     if normalized_wordart not in RULE_TAG_MAP and normalized_wordart not in HIERARCHIE:
         # Unbekannte Wortart → global
+        print(f"DEBUG _register_translation_rule: Unknown wortart {normalized_wordart} - adding to GLOBAL", flush=True)
         normalized_tag = _normalize_tag_name(normalized_rule_id)
         entry = rules.setdefault(TRANSLATION_HIDE_GLOBAL, {"all": False, "tags": set()})
         if normalized_tag:
@@ -1510,30 +1529,46 @@ def _register_translation_rule(rules: Dict[str, Dict[str, Any]], normalized_rule
 
     entry = rules.setdefault(normalized_wordart, {"all": False, "tags": set()})
     
+    print(f"DEBUG _register_translation_rule: Set entry for {normalized_wordart}, tag={tag}", flush=True)
+    
     if tag:
         # Spezifische Regel (z.B. 'adj_A') -> füge nur dieses Tag hinzu
         entry["tags"].add(_normalize_tag_name(tag))
+        print(f"DEBUG _register_translation_rule: Added specific tag {tag} to {normalized_wordart}", flush=True)
     else:
         # Gruppen-Regel (z.B. 'adj') - DEFENSIVE LOGIK:
         # Prüfe ob wordart ein Tag ist (Adj, Art, Pr) oder nur organizational (Nomen, Verb)
         rid_upper = wordart if wordart in SUP_TAGS or wordart in SUB_TAGS else wordart.capitalize()
         is_tag_itself = rid_upper in SUP_TAGS or rid_upper in SUB_TAGS
         
+        print(f"DEBUG _register_translation_rule: Group rule, rid_upper={rid_upper}, is_tag_itself={is_tag_itself}", flush=True)
+        
         if is_tag_itself:
             # Gruppenanführer MIT eigenem Tag (z.B. "Adj", "Art", "Pr")
             # → Nur dieses Tag registrieren, NICHT alle Subtags
             entry["tags"].add(rid_upper)
+            print(f"DEBUG _register_translation_rule: Added tag {rid_upper} (tag_itself)", flush=True)
         else:
             # Gruppenanführer OHNE eigenem Tag (z.B. "nomen", "verb")
             # → Setze "all" flag (bedeutet: alle Subtags dieser Wortart)
             entry["all"] = True
+            print(f"DEBUG _register_translation_rule: Set 'all'=True for {normalized_wordart}", flush=True)
 
 def _should_hide_translation(conf: Dict[str, Any]) -> bool:
-    return bool(conf.get('hideTranslation'))
+    result = bool(conf.get('hideTranslation'))
+    if not result:
+        print(f"DEBUG _should_hide_translation: conf={conf}, hideTranslation={conf.get('hideTranslation')}, result={result}", flush=True)
+    return result
 
 def _maybe_register_translation_rule(rules: Dict[str, Dict[str, Any]], normalized_rule_id: str, conf: Dict[str, Any]) -> None:
-    if _should_hide_translation(conf):
+    print(f"DEBUG _maybe_register_translation_rule: normalized_rule_id={normalized_rule_id}, conf keys={list(conf.keys())}", flush=True)
+    should_hide = _should_hide_translation(conf)
+    print(f"DEBUG _maybe_register_translation_rule: should_hide={should_hide}", flush=True)
+    if should_hide:
+        print(f"DEBUG _maybe_register_translation_rule: Calling _register_translation_rule for {normalized_rule_id}", flush=True)
         _register_translation_rule(rules, normalized_rule_id)
+    else:
+        print(f"DEBUG _maybe_register_translation_rule: SKIPPING {normalized_rule_id} (hideTranslation not true)", flush=True)
 
 # ======= Öffentliche, granulare API =======
 
@@ -1613,6 +1648,8 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
     # AUCH wenn hidden_tags_by_wortart bereits übergeben wurde (z.B. bei Zitaten)!
     translation_rules: Dict[str, Dict[str, Any]] = {}
     
+    print(f"DEBUG apply_tag_visibility: tag_config type={type(tag_config)}, has {len(tag_config) if isinstance(tag_config, dict) else 0} entries", flush=True)
+    
     if tag_config:
         # SCHRITT 1: Extrahiere IMMER translation_rules (auch wenn hidden_tags_by_wortart bereits gesetzt!)
         # Dies ist kritisch für Zitate, wo hidden_tags_by_wortart übergeben wird, aber translation_rules fehlt!
@@ -1622,6 +1659,11 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
             # Register translation rules - IMMER, unabhängig von hidden_tags_by_wortart!
             normalized_rule_id = _normalize_rule_id(rule_id)
             _maybe_register_translation_rule(translation_rules, normalized_rule_id, conf)
+        
+        print(f"DEBUG apply_tag_visibility: Built {len(translation_rules)} translation_rules", flush=True)
+        if translation_rules:
+            sample_keys = list(translation_rules.keys())[:5]
+            print(f"DEBUG apply_tag_visibility: Sample keys: {sample_keys}", flush=True)
         
         # SCHRITT 2: Baue hidden_tags_by_wortart NUR auf wenn es NICHT übergeben wurde
         # (Falls es schon von Prosa_Code.py gesetzt wurde, überspringen wir diesen Schritt)
@@ -1797,15 +1839,24 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
         # WICHTIG: Übersetzungs-Ausblendung ZUERST (bevor Tags entfernt werden)
         # Verwende ORIGINAL-Tokens (mit allen Tags) für die Erkennung
         if translation_rules:
+            print(f"DEBUG apply_tag_visibility: Block {bi} has translation_rules with {len(translation_rules)} entries", flush=True)
             gr_tokens_original = block.get('gr_tokens', [])
             de_tokens = block.get('de_tokens', [])
             en_tokens = block.get('en_tokens', [])
+            
+            # DEBUG: Print first 5 gr_tokens to see what they contain
+            if bi < 10:
+                print(f"  Block {bi}: gr_tokens_original[:5] = {gr_tokens_original[:5]}", flush=True)
+                print(f"  Block {bi}: de_tokens[:5] = {de_tokens[:5]}", flush=True)
             
             # KRITISCH: Unterstützung für /slash/-Alternativen!
             # WICHTIG: Wenn de_tokens_alternatives existiert, müssen ALLE Alternativen ausgeblendet werden!
             de_tokens_alternatives = block.get('de_tokens_alternatives')
             en_tokens_alternatives = block.get('en_tokens_alternatives')
             trans3_tokens_alternatives = block.get('trans3_tokens_alternatives')
+            
+            if de_tokens_alternatives or en_tokens_alternatives:
+                print(f"  Block {bi}: Found alternatives! de_alts={len(de_tokens_alternatives) if de_tokens_alternatives else 0}, en_alts={len(en_tokens_alternatives) if en_tokens_alternatives else 0}", flush=True)
             
             for idx, gr_token in enumerate(gr_tokens_original):
                 # WICHTIG: Prüfe per-token HideTrans Flag in token_meta (für einzelne Tokens ohne Gruppenanführer)
@@ -1817,8 +1868,22 @@ def apply_tag_visibility(blocks: List[Dict[str, Any]], tag_config: Optional[Dict
                 # Wenn EINE der beiden Bedingungen erfüllt ist, wird die Übersetzung ausgeblendet
                 hide_trans_from_table = _token_should_hide_translation(gr_token, translation_rules)
                 
-                # Entweder Flag ODER Tabellen-Regel -> beide wirksam
-                if hide_trans_from_flag or hide_trans_from_table:
+                # KRITISCHER FIX: Wenn gr_token leer oder ∅ ist (Alternative-Zeilen!), UND translation_rules existiert,
+                # blende die Übersetzung aus! Dies ist KRITISCH für /slash/-Alternativen!
+                # Beispiel: "des|Dareios/UND/SO/WEITER" wird zu 4 Zeilen gesplittet:
+                # - Zeile 1: gr="Δαρείου(G)", de="des|Dareios" → hide wegen (G)
+                # - Zeile 2: gr="∅", de="UND" → hide wegen diesem Fix!
+                # - Zeile 3: gr="∅", de="SO" → hide wegen diesem Fix!
+                # - Zeile 4: gr="∅", de="WEITER" → hide wegen diesem Fix!
+                hide_trans_from_empty_gr = False
+                if translation_rules and gr_token in ('', '∅', 'ͺ', '#∅', '$∅', '+∅', '-∅', '§∅'):
+                    # Griechisches Token ist leer/Platzhalter, ABER es gibt translation_rules
+                    # → Dies ist eine Alternative-Zeile, blende Übersetzung aus!
+                    hide_trans_from_empty_gr = True
+                    print(f"  Block {bi}: Hiding translation for empty gr_token at idx={idx} (de={de_tokens[idx] if idx < len(de_tokens) else 'N/A'})", flush=True)
+                
+                # Entweder Flag ODER Tabellen-Regel ODER leeres GR mit Rules -> alle wirksam
+                if hide_trans_from_flag or hide_trans_from_table or hide_trans_from_empty_gr:
                     # KRITISCH: Wenn de_tokens_alternatives existiert, blende ALLE Alternativen aus!
                     # WICHTIG: Ohne diesen Fix werden /slash/-getrennte Übersetzungen NICHT ausgeblendet!
                     if de_tokens_alternatives:
@@ -2114,60 +2179,76 @@ def _strip_colors_from_block(block: dict, tag_config: dict = None) -> dict:
     Entfernt Farbsymbole (#, +, -, §, $) aus einem Block.
     Wird für BLACK_WHITE PDFs verwendet.
     
-    WICHTIG: Manuelle Farbsymbole (mit force_color=True) werden BEIBEHALTEN!
-    Dies ermöglicht es, einzelne Wörter auch in BlackWhite-PDFs zu färben.
+    WICHTIG: Manuelle Farbsymbole werden BEIBEHALTEN, aber SPRACH-SPEZIFISCH!
+    - force_color_gr=True → GR-Token behält Farbe
+    - force_color_de=True → DE-Token behält Farbe  
+    - force_color_en=True → EN-Token behält Farbe
     """
     if not isinstance(block, dict):
         return block
     
-    # Prüfe welche Tokens manuelle Farben haben (force_color=True)
-    force_color_indices = set()
+    # Prüfe SPRACH-SPEZIFISCH welche Tokens manuelle Farben haben
+    gr_force_color_indices = set()
+    de_force_color_indices = set()
+    en_force_color_indices = set()
+    
     if 'token_meta' in block and isinstance(block['token_meta'], list):
         for i, meta in enumerate(block['token_meta']):
-            if isinstance(meta, dict) and meta.get('force_color') == True:
-                force_color_indices.add(i)
+            if isinstance(meta, dict):
+                if meta.get('force_color_gr') == True:
+                    gr_force_color_indices.add(i)
+                if meta.get('force_color_de') == True:
+                    de_force_color_indices.add(i)
+                if meta.get('force_color_en') == True:
+                    en_force_color_indices.add(i)
     
-    # Entferne Farbsymbole aus gr_tokens (NUR wenn NICHT force_color!)
+    # Entferne Farbsymbole aus gr_tokens (NUR wenn NICHT force_color_gr!)
     if 'gr_tokens' in block and isinstance(block['gr_tokens'], list):
         block['gr_tokens'] = [
-            t if (i in force_color_indices or not t) else remove_color_symbols_from_token(t)
+            t if (i in gr_force_color_indices or not t) else remove_color_symbols_from_token(t)
             for i, t in enumerate(block['gr_tokens'])
         ]
     
-    # Entferne Farbsymbole aus de_tokens (NUR wenn NICHT force_color!)
+    # Entferne Farbsymbole aus de_tokens (NUR wenn NICHT force_color_de!)
     if 'de_tokens' in block and isinstance(block['de_tokens'], list):
         block['de_tokens'] = [
-            t if (i in force_color_indices or not t) else remove_color_symbols_from_token(t)
+            t if (i in de_force_color_indices or not t) else remove_color_symbols_from_token(t)
             for i, t in enumerate(block['de_tokens'])
         ]
     
-    # Entferne Farbsymbole aus en_tokens (NUR wenn NICHT force_color!)
+    # Entferne Farbsymbole aus en_tokens (NUR wenn NICHT force_color_en!)
     if 'en_tokens' in block and isinstance(block['en_tokens'], list):
         block['en_tokens'] = [
-            t if (i in force_color_indices or not t) else remove_color_symbols_from_token(t)
+            t if (i in en_force_color_indices or not t) else remove_color_symbols_from_token(t)
             for i, t in enumerate(block['en_tokens'])
         ]
     
     # STRAUßLOGIK: Entferne Farbsymbole aus Multi-Row-Arrays!
-    # WICHTIG: _de_rows[0] entspricht de_tokens, _de_rows[1+] sind Alternativen (nach / Split)
-    # Wenn de_tokens[i] ein händisches Symbol hatte (force_color=True), dann BEHALTE
-    # alle Alternativen in _de_rows[j][i] (weil sie vom händischen Symbol stammen)!
+    # SPRACH-SPEZIFISCH: _gr_rows verwendet gr_force_color_indices,
+    # _de_rows verwendet de_force_color_indices, _en_rows verwendet en_force_color_indices
+    
     if '_gr_rows' in block and isinstance(block['_gr_rows'], list):
-        block['_gr_rows'] = [
-            [t if not t else remove_color_symbols_from_token(t) for t in row]
-            for row in block['_gr_rows']
-        ]
+        new_gr_rows = []
+        for row in block['_gr_rows']:
+            new_row = []
+            for i, t in enumerate(row):
+                # KRITISCHER FIX: Wenn dieser Token-Index force_color_gr hat, behalte Farbsymbol!
+                if i in gr_force_color_indices or not t:
+                    new_row.append(t)
+                else:
+                    new_row.append(remove_color_symbols_from_token(t))
+            new_gr_rows.append(new_row)
+        block['_gr_rows'] = new_gr_rows
     
     if '_de_rows' in block and isinstance(block['_de_rows'], list):
         new_de_rows = []
         for row in block['_de_rows']:
             new_row = []
             for i, t in enumerate(row):
-                # Wenn dieser Token-Index force_color hat, behalte Farbsymbol!
-                if i in force_color_indices or not t:
+                # Wenn dieser Token-Index force_color_de hat, behalte Farbsymbol!
+                if i in de_force_color_indices or not t:
                     new_row.append(t)
                 else:
-                    # Automatisches Symbol → entfernen
                     new_row.append(remove_color_symbols_from_token(t))
             new_de_rows.append(new_row)
         block['_de_rows'] = new_de_rows
@@ -2177,22 +2258,13 @@ def _strip_colors_from_block(block: dict, tag_config: dict = None) -> dict:
         for row in block['_en_rows']:
             new_row = []
             for i, t in enumerate(row):
-                # Wenn dieser Token-Index force_color hat, behalte Farbsymbol!
-                if i in force_color_indices or not t:
+                # Wenn dieser Token-Index force_color_en hat, behalte Farbsymbol!
+                if i in en_force_color_indices or not t:
                     new_row.append(t)
                 else:
-                    # Automatisches Symbol → entfernen
                     new_row.append(remove_color_symbols_from_token(t))
             new_en_rows.append(new_row)
         block['_en_rows'] = new_en_rows
-    
-    # Entferne color_symbol aus token_meta (NUR wenn NICHT force_color!)
-    if 'token_meta' in block and isinstance(block['token_meta'], list):
-        for meta in block['token_meta']:
-            if isinstance(meta, dict) and 'color_symbol' in meta:
-                # Behalte Symbol wenn force_color=True
-                if not meta.get('force_color'):
-                    del meta['color_symbol']
     
     return block
 
@@ -2247,6 +2319,7 @@ def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
     Versteckt Übersetzungen für Tokens mit (HideTrans) Tag.
     
     WICHTIG: Diese Funktion wird von apply_colors() aufgerufen!
+    KRITISCH: Unterstützt auch /slash/-Alternativen (de_tokens_alternatives/en_tokens_alternatives)!
     """
     if not isinstance(block, dict) or block.get('type') not in ('pair', 'flow'):
         return block
@@ -2254,6 +2327,8 @@ def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
     gr_tokens = block.get('gr_tokens', [])
     de_tokens = block.get('de_tokens', [])
     en_tokens = block.get('en_tokens', [])
+    de_tokens_alternatives = block.get('de_tokens_alternatives')
+    en_tokens_alternatives = block.get('en_tokens_alternatives')
     
     TRANSLATION_HIDE_TAG = '(HideTrans)'
     
@@ -2263,15 +2338,30 @@ def _hide_manual_translations_in_block(block: Dict[str, Any]) -> Dict[str, Any]:
         
         # Prüfe auf (HideTrans) Tag
         if TRANSLATION_HIDE_TAG in gr_token or '(hidetrans)' in gr_token.lower():
-            # Verstecke deutsche Übersetzung
-            if idx < len(de_tokens):
+            # KRITISCH: Wenn de_tokens_alternatives existiert, blende ALLE Alternativen aus!
+            if de_tokens_alternatives:
+                for alt_idx in range(len(de_tokens_alternatives)):
+                    if idx < len(de_tokens_alternatives[alt_idx]):
+                        de_tokens_alternatives[alt_idx][idx] = ''
+            elif idx < len(de_tokens):
+                # Standard-Fall: nur de_tokens (keine Alternativen)
                 de_tokens[idx] = ''
-            # Verstecke englische Übersetzung
-            if idx < len(en_tokens):
+            
+            # Gleiches für EN-Alternativen
+            if en_tokens_alternatives:
+                for alt_idx in range(len(en_tokens_alternatives)):
+                    if idx < len(en_tokens_alternatives[alt_idx]):
+                        en_tokens_alternatives[alt_idx][idx] = ''
+            elif idx < len(en_tokens):
+                # Standard-Fall: nur en_tokens (keine Alternativen)
                 en_tokens[idx] = ''
     
     block['de_tokens'] = de_tokens
     block['en_tokens'] = en_tokens
+    if de_tokens_alternatives:
+        block['de_tokens_alternatives'] = de_tokens_alternatives
+    if en_tokens_alternatives:
+        block['en_tokens_alternatives'] = en_tokens_alternatives
     return block
 
 def _hide_stephanus_in_translations(block: Dict[str, Any], translation_rules: Optional[Dict[str, Dict[str, Any]]]) -> Dict[str, Any]:

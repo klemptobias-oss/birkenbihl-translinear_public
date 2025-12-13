@@ -935,10 +935,6 @@ def _inline_badge(text_inside:str, base_font_size:float) -> str:
     return f'<font name="DejaVu" color="{INLINE_COLOR_HEX}" size="{small:.2f}">[{xml_escape(text_inside)}]</font>'
 
 def format_token_markup(token:str, *, reverse_mode:bool=False, is_greek_row:bool, base_font_size:float, color_mode:str="COLOR") -> str:
-    # DEBUG: Print incoming token if it contains color symbols
-    if any(sym in token for sym in ['$', '+', '-']):
-        print(f"DEBUG format_token_markup: INPUT token='{token}', color_mode={color_mode}", flush=True)
-    
     raw = (token or '').strip()
     if not raw: return ''
     # Inline-Marken wie "(1)" → kleines graues Badge (nur in GR-Zeile sichtbar)
@@ -965,16 +961,9 @@ def format_token_markup(token:str, *, reverse_mode:bool=False, is_greek_row:bool
     elif '$' in raw:
         color_pos = raw.find('$'); color = '#FFA500'  # Orange
 
-    # DEBUG: Print color detection
-    if any(sym in token for sym in ['$', '+', '-']):
-        print(f"DEBUG format_token_markup: color={color}, color_pos={color_pos}, raw='{raw}'", flush=True)
-
     # Entferne den Farbcode aus dem raw-Text
     if color_pos >= 0:
         raw = raw[:color_pos] + raw[color_pos+1:]
-        # DEBUG: Print after removal
-        if any(sym in token for sym in ['$', '+', '-']):
-            print(f"DEBUG format_token_markup: After removal raw='{raw}'", flush=True)
 
     # Stärke/Tags
     strong = '~' in raw; raw = raw.replace('~','')
@@ -1015,13 +1004,7 @@ def format_token_markup(token:str, *, reverse_mode:bool=False, is_greek_row:bool
     if color:   parts.append('</font>')
     if is_bold: parts.append('</b>')
     
-    result = ''.join(parts)
-    
-    # DEBUG: Print final output
-    if any(sym in token for sym in ['$', '+', '-']):
-        print(f"DEBUG format_token_markup: OUTPUT result='{result}'", flush=True)
-    
-    return result
+    return ''.join(parts)
 
 def visible_measure_token(token:str, *, font:str, size:float, is_greek_row:bool=True, reverse_mode:bool=False) -> float:
     t = (token or '').strip()
@@ -1473,7 +1456,14 @@ def process_input_file(fname:str):
     - GR/DE-Paare werden wie gehabt gebildet; reflow zu Streams in group_pairs_into_flows().
     """
     with open(fname, encoding='utf-8') as f:
-        raw = [ln.rstrip('\n') for ln in f]
+        raw_text = f.read()
+    
+    # KRITISCH: Entferne ALLE Metadata-Kommentare am Anfang (<!-- ... -->)
+    # Dies verhindert, dass sie als Text im PDF erscheinen
+    import re
+    raw_text = re.sub(r'^(<!--.*?-->\s*)+', '', raw_text, flags=re.DOTALL | re.MULTILINE)
+    
+    raw = [ln.rstrip('\n') for ln in raw_text.split('\n')]
     
     # ═══════════════════════════════════════════════════════════════════
     # STRAUßLOGIK: Expandiere GRUPPEN von 3 Zeilen (GR, DE, EN) zusammen!
@@ -2277,6 +2267,7 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
     # ═══════════════════════════════════════════════════════════════════
     # SLICE-LOGIK: Teile Tokens in Slices (wie in normalem Flow!)
     # ═══════════════════════════════════════════════════════════════════
+    
     avail_w = doc_width_pt
     if speaker_display and speaker_width_pt > 0:
         avail_w -= (speaker_width_pt + 2.0)  # SPEAKER_GAP_MM
@@ -2409,6 +2400,61 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
         # NEUE STRAUßLOGIK: Alternativen IN DERSELBEN ZELLE statt separate Rows!
         # ============================================================
         
+        # ═══════════════════════════════════════════════════════════════════
+        # KRITISCH: Prüfe, ob dies eine leere Alternative ist, die versteckt werden soll!
+        # ═══════════════════════════════════════════════════════════════════
+        # Wenn ALLE griechischen Tokens leer sind (∅, '', ͺ etc.) UND hideTranslation aktiv ist,
+        # dann ist dies eine Alternative-Zeile, die komplett übersprungen werden soll!
+        
+        skip_this_gr_row = False
+        if tag_config and slice_gr_lines and len(slice_gr_lines) > 0:
+            first_gr_line = slice_gr_lines[0]
+            # Prüfe, ob ALLE Tokens in dieser Zeile leer/∅ sind
+            # KRITISCH: Symbole können VOR ∅/ͺ stehen!
+            all_empty = all(
+                tok in (
+                    '', '∅', 'ͺ',
+                    '#∅', '$∅', '+∅', '-∅', '§∅',
+                    '#ͺ', '$ͺ', '+ͺ', '-ͺ', '§ͺ',
+                    'ͺ ∅', '∅ ∅', '∅ ∅ ∅'
+                )
+                for tok in first_gr_line
+            )
+            
+            if all_empty:
+                # Prüfe, ob für IRGENDEINEN DE/EN Token hideTranslation aktiv ist
+                for de_line in slice_de_lines:
+                    for de_tok in de_line:
+                        if de_tok and de_tok.strip():
+                            # Entferne |, strip $#+-§
+                            clean_tok = de_tok.replace('|', '').lstrip('$#+-§').strip()
+                            if clean_tok and clean_tok.lower() in tag_config:
+                                config = tag_config[clean_tok.lower()]
+                                if isinstance(config, dict) and config.get('hideTranslation') == True:
+                                    skip_this_gr_row = True
+                                    break
+                    if skip_this_gr_row:
+                        break
+                
+                # Prüfe auch EN-Tokens
+                if not skip_this_gr_row:
+                    for en_line in slice_en_lines:
+                        for en_tok in en_line:
+                            if en_tok and en_tok.strip():
+                                clean_tok = en_tok.replace('|', '').lstrip('$#+-§').strip()
+                                if clean_tok and clean_tok.lower() in tag_config:
+                                    config = tag_config[clean_tok.lower()]
+                                    if isinstance(config, dict) and config.get('hideTranslation') == True:
+                                        skip_this_gr_row = True
+                                        break
+                        if skip_this_gr_row:
+                            break
+        
+        if skip_this_gr_row:
+            # ÜBERSPRINGE diese gesamte GR-Zeile komplett! Erstelle KEINE rows dafür!
+            # Gehe direkt zum nächsten Slice weiter
+            continue
+        
         # 1. GR-Zeile: Kombiniere ALLE Alternativen in EINER Zeile
         gr_row = []
         
@@ -2457,6 +2503,10 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
         if speaker_display:
             de_en_row.append('')
         
+        # KRITISCHER ZÄHLER: Tracke ob IRGENDEINE Spalte Übersetzungen hat
+        # Wenn ALLE Spalten leer sind (alle Alternativen übersprungen), überspringe DE/EN Zeile!
+        has_any_translation = False
+        
         for col_idx in range(num_cols):
             # Sammle ALLE Übersetzungen (DE + EN) für diese Spalte
             all_translations = []
@@ -2470,6 +2520,38 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                     tok = de_line[col_idx]
                     # WICHTIG: Filtere ∅ auch mit Farbsymbolen (#∅, $∅, +∅, -∅, §∅)
                     is_placeholder = (tok == '∅' or tok in ('#∅', '$∅', '+∅', '-∅', '§∅'))
+                    
+                    # KRITISCHER FIX: Überspringe Übersetzungen in Alternativ-Zeilen wenn hideTranslation:true!
+                    # Alternative-Zeilen haben leere GR-Tokens (ͺ, ∅) und sollten ausgeblendet werden wenn
+                    # tag_config hideTranslation:true für IRGENDEINE Wortart hat!
+                    # Beispiel: "des|Dareios/UND/SO/WEITER" → Zeile 1 hat GR-Token, Zeilen 2-4 haben ∅
+                    # Wenn hideTranslation:true, blende Zeilen 2-4 aus (UND, SO, WEITER)!
+                    gr_is_empty_for_alternative = False
+                    if de_idx > 0:  # Nicht erste Zeile (Alternative!)
+                        # Prüfe ob GR-Token für diese Zeile leer/∅ ist
+                        gr_tok_in_alt = ''
+                        if de_idx < len(slice_gr_lines) and col_idx < len(slice_gr_lines[de_idx]):
+                            gr_tok_in_alt = slice_gr_lines[de_idx][col_idx]
+                        
+                        # KRITISCH: Symbole können VOR ∅/ͺ stehen! ($∅, #ͺ, +ͺ, etc.)
+                        gr_is_empty_for_alternative = gr_tok_in_alt in (
+                            '', '∅', 'ͺ',
+                            '#∅', '$∅', '+∅', '-∅', '§∅',
+                            '#ͺ', '$ͺ', '+ͺ', '-ͺ', '§ͺ',
+                            'ͺ ∅', '∅ ∅', '∅ ∅ ∅'
+                        )
+                        
+                        # Wenn GR leer UND tag_config hat hideTranslation, überspringe!
+                        if gr_is_empty_for_alternative and tag_config:
+                            # Prüfe ob IRGENDEINE Wortart hideTranslation:true hat
+                            has_hide_translation = any(
+                                isinstance(conf, dict) and conf.get('hideTranslation') == True
+                                for conf in tag_config.values()
+                            )
+                            if has_hide_translation:
+                                # Überspringe diesen Token - er ist eine Alternative ohne GR-Token!
+                                continue
+                    
                     if tok and not is_placeholder:
                         display_tok = tok.replace('|', ' ') if hide_pipes else tok
                         
@@ -2485,26 +2567,18 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                                 rest = rest[1:]
                             display_tok = first_symbol + rest
                         
-                        # DEBUG: Print token before formatting
-                        if any(sym in tok for sym in ['$', '+', '-']):
-                            print(f"DEBUG DE alt: tok='{tok}', display_tok='{display_tok}'", flush=True)
-                        
-                        formatted = format_token_markup(display_tok, is_greek_row=False, base_font_size=token_de_style.fontSize, color_mode=color_mode)
-                        
-                        # DEBUG: Print after formatting
-                        if any(sym in tok for sym in ['$', '+', '-']):
-                            print(f"DEBUG DE alt: formatted='{formatted}'", flush=True)
+                        try:
+                            formatted = format_token_markup(display_tok, is_greek_row=False, base_font_size=token_de_style.fontSize, color_mode=color_mode)
+                        except Exception as e:
+                            formatted = display_tok  # Fallback
                         
                         # KRITISCH: GR-Farbe übertragen, wenn dieses WORT SELBST keine eigene Farbe hat!
-                        # WICHTIG: Prüfe display_tok (nach Symbol-Cleanup), nicht tok!
-                        # Dies bewahrt TAG_CONFIG Farben und überschreibt sie nur bei manuellen Symbolen
-                        has_own_color = display_tok and display_tok[0] in ['#', '+', '-', '§', '$']
+                        # WICHTIG: Prüfe ob formatted TATSÄCHLICH eine <font color=> hat!
+                        # Wenn display_tok ein Symbol hat ABER format_token_markup() keine Farbe setzte,
+                        # nutze gr_color als Fallback (wichtig für BlackWhite-Modus!)
+                        has_own_color = '<font color=' in formatted
                         if gr_color and not has_own_color:
                             formatted = f'<font color="{gr_color}">{formatted}</font>'
-                        
-                        # DEBUG: Print final
-                        if any(sym in tok for sym in ['$', '+', '-']):
-                            print(f"DEBUG DE alt: final='{formatted}', has_own_color={has_own_color}, gr_color={gr_color}", flush=True)
                         
                         all_translations.append(formatted)
             
@@ -2514,6 +2588,32 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                     tok = en_line[col_idx]
                     # WICHTIG: Filtere ∅ auch mit Farbsymbolen (#∅, $∅, +∅, -∅, §∅)
                     is_placeholder = (tok == '∅' or tok in ('#∅', '$∅', '+∅', '-∅', '§∅'))
+                    
+                    # KRITISCHER FIX: Überspringe EN-Übersetzungen in Alternativ-Zeilen wenn hideTranslation:true!
+                    # (Gleiche Logik wie bei DE-Alternativen oben)
+                    gr_is_empty_for_alternative = False
+                    if en_idx > 0 and col_idx < len(slice_gr_lines[0]):  # Nicht erste Zeile (Alternative!)
+                        # Prüfe ob GR-Token für diese Zeile leer/∅ ist
+                        gr_tok_in_alt = slice_gr_lines[en_idx][col_idx] if en_idx < len(slice_gr_lines) and col_idx < len(slice_gr_lines[en_idx]) else ''
+                        # KRITISCH: Symbole können VOR ∅/ͺ stehen! ($∅, #ͺ, +ͺ, etc.)
+                        gr_is_empty_for_alternative = gr_tok_in_alt in (
+                            '', '∅', 'ͺ',
+                            '#∅', '$∅', '+∅', '-∅', '§∅',
+                            '#ͺ', '$ͺ', '+ͺ', '-ͺ', '§ͺ',
+                            'ͺ ∅', '∅ ∅', '∅ ∅ ∅'
+                        )
+                        
+                        # Wenn GR leer UND tag_config hat hideTranslation, überspringe!
+                        if gr_is_empty_for_alternative and tag_config:
+                            # Prüfe ob IRGENDEINE Wortart hideTranslation:true hat
+                            has_hide_translation = any(
+                                isinstance(conf, dict) and conf.get('hideTranslation') == True
+                                for conf in tag_config.values()
+                            )
+                            if has_hide_translation:
+                                # Überspringe diesen Token - er ist eine Alternative ohne GR-Token!
+                                continue
+                    
                     if tok and not is_placeholder:
                         display_tok = tok.replace('|', ' ') if hide_pipes else tok
                         
@@ -2525,26 +2625,15 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                                 rest = rest[1:]
                             display_tok = first_symbol + rest
                         
-                        # DEBUG: Print token before formatting
-                        if any(sym in tok for sym in ['$', '+', '-']):
-                            print(f"DEBUG EN alt: tok='{tok}', display_tok='{display_tok}'", flush=True)
-                        
                         formatted = format_token_markup(display_tok, is_greek_row=False, base_font_size=token_de_style.fontSize, color_mode=color_mode)
                         
-                        # DEBUG: Print after formatting
-                        if any(sym in tok for sym in ['$', '+', '-']):
-                            print(f"DEBUG EN alt: formatted='{formatted}'", flush=True)
-                        
                         # KRITISCH: GR-Farbe übertragen, wenn dieses WORT SELBST keine eigene Farbe hat!
-                        # WICHTIG: Prüfe display_tok (nach Symbol-Cleanup), nicht tok!
-                        # Dies bewahrt TAG_CONFIG Farben und überschreibt sie nur bei manuellen Symbolen
-                        has_own_color = display_tok and display_tok[0] in ['#', '+', '-', '§', '$']
+                        # WICHTIG: Prüfe ob formatted TATSÄCHLICH eine <font color=> hat!
+                        # Wenn display_tok ein Symbol hat ABER format_token_markup() keine Farbe setzte,
+                        # nutze gr_color als Fallback (wichtig für BlackWhite-Modus!)
+                        has_own_color = '<font color=' in formatted
                         if gr_color and not has_own_color:
                             formatted = f'<font color="{gr_color}">{formatted}</font>'
-                        
-                        # DEBUG: Print final
-                        if any(sym in tok for sym in ['$', '+', '-']):
-                            print(f"DEBUG EN alt: final='{formatted}', has_own_color={has_own_color}, gr_color={gr_color}", flush=True)
                         
                         all_translations.append(formatted)
             
@@ -2552,6 +2641,8 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
             # <br/> führt zu inkonsistenten Abständen bei vielen Alternativen (πολλὰ Problem)
             # Mit separaten Paragraphs in nested Table: KONSISTENTE, ENGE Abstände!
             if all_translations:
+                has_any_translation = True  # Diese Spalte hat Übersetzungen!
+                
                 # Erstelle Paragraph für jede Alternative
                 translation_paragraphs = []
                 for trans in all_translations:
@@ -2583,7 +2674,11 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
             else:
                 de_en_row.append('')
         
-        rows.append(de_en_row)
+        # KRITISCHER FIX: Wenn ALLE Spalten leer sind (alle Alternativen übersprungen),
+        # überspringe die gesamte DE/EN Zeile! Sonst bekommen wir riesige weiße Flächen!
+        if has_any_translation:
+            rows.append(de_en_row)
+
 
         
         if not rows:
