@@ -9,9 +9,13 @@ import Prosa_Code
 
 # Test-Dateien
 test_files = [
-    'prosa_test1_apologieartig.txt',
-    'prosa_test2_platon_sprecherartig.txt', 
-    'prosa_test3_paragraphthukydidesartig.txt'
+    'testdokument1_apologiartiger_text.txt',
+    'testdokument2_2_sprachig_menon.txt',
+    'testdokument3_politeia-3-sprachig.txt',
+    'testdokument4_politeia3_sprachig_und_2_srpachig.txt',
+    'testdokument5_Caesar_Commentarii_de_bello_civil_2_lat_en_translinear_SESSION_5b7b69c4fe719bc5_DRAFT_20251212_194333.txt',
+    'testdokument6_Cicero_De_re_publica_3_lat_de_translinear_SESSION_42ba80182c9f69a7_DRAFT_20251212_194423.txt',
+    'testdokument7_Platon_Gorgias_gr_de_en_translinear_SESSION_5df245b99388dca5_DRAFT_20251212_195725.txt'
 ]
 
 # Alle 8 Varianten  
@@ -34,7 +38,7 @@ def main():
     current = 0
     
     print(f"\n{'='*70}")
-    print(f"Generiere {total_pdfs} PDFs (3 Dateien × 8 Varianten)")
+    print(f"Generiere {total_pdfs} PDFs (7 Dateien × 8 Varianten)")
     print(f"Output-Verzeichnis: {output_dir}")
     print(f"{'='*70}\n")
     
@@ -43,7 +47,7 @@ def main():
             print(f"⚠️  Datei nicht gefunden: {test_file}")
             continue
         
-        base_name = test_file.replace('.txt', '').replace('prosa_', '')
+        base_name = test_file.replace('.txt', '').replace('testdokument', 'test').replace('_SESSION_', '_S_')
         print(f"\n📄 {test_file}")
         print(f"   {'─'*60}")
         

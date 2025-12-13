@@ -907,12 +907,14 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
             if i < len(en_tokens) and en_tokens[i]:
                 en_has_manual_symbol = any(sym in en_tokens[i] for sym in COLOR_SYMBOLS)
             
-            # Wenn IRGENDEIN Token ein manuelles Symbol hat, setze force_color=True!
-            if manual_color_symbol or de_has_manual_symbol or en_has_manual_symbol:
+            # KRITISCHER FIX: Manuelle Symbole sollen NUR das griechische Wort beeinflussen!
+            # Wenn NUR die Übersetzung ein manuelles Symbol hat, soll das GR-Wort trotzdem TAG_CONFIG Farbe bekommen!
+            # Nur wenn das GRIECHISCHE Wort selbst ein Symbol hat, setze force_color und skip TAG_CONFIG!
+            if manual_color_symbol:  # NUR wenn GR-Token ein Symbol hat!
                 # Symbol zu deutschem Token hinzufügen (wenn noch nicht vorhanden)
                 if i < len(de_tokens):
                     de_tok = de_tokens[i]
-                    if de_tok and not any(c in de_tok for c in COLOR_SYMBOLS) and manual_color_symbol:
+                    if de_tok and not any(c in de_tok for c in COLOR_SYMBOLS):
                         de_match = RE_WORD_START.search(de_tok)
                         if de_match:
                             new_de_tokens[i] = de_tok[:de_match.start(2)] + manual_color_symbol + de_tok[de_match.start(2):]
@@ -922,7 +924,7 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                 # Symbol zu englischem Token hinzufügen (wenn noch nicht vorhanden)
                 if i < len(new_en_tokens):
                     en_tok = en_tokens[i]
-                    if en_tok and not any(c in en_tok for c in COLOR_SYMBOLS) and manual_color_symbol:
+                    if en_tok and not any(c in en_tok for c in COLOR_SYMBOLS):
                         en_match = RE_WORD_START.search(en_tok)
                         if en_match:
                             new_en_tokens[i] = en_tok[:en_match.start(2)] + manual_color_symbol + en_tok[en_match.start(2):]
@@ -931,20 +933,28 @@ def _apply_colors_and_placements(blocks: List[Dict[str, Any]], config: Dict[str,
                 
                 # WICHTIG: Symbol in token_meta speichern mit FORCE_COLOR Flag!
                 # Dies signalisiert, dass diese Farbe AUCH in BlackWhite-PDFs gezeigt werden soll!
-                # Das gilt für ALLE manuellen Symbole (egal ob im griechischen oder Übersetzungs-Token)
                 if i < len(token_meta):
-                    if manual_color_symbol:
-                        token_meta[i]['color_symbol'] = manual_color_symbol
+                    token_meta[i]['color_symbol'] = manual_color_symbol
                     token_meta[i]['force_color'] = True  # Manuelle Farbe überschreibt BlackWhite-Modus!
                 else:
                     while len(token_meta) <= i:
                         token_meta.append({})
-                    if manual_color_symbol:
-                        token_meta[i]['color_symbol'] = manual_color_symbol
+                    token_meta[i]['color_symbol'] = manual_color_symbol
                     token_meta[i]['force_color'] = True
                 
                 # Fahre mit nächstem Token fort (keine automatische Farbzuweisung mehr nötig)
                 continue
+            
+            # WICHTIG: Wenn NUR die Übersetzung ein manuelles Symbol hat, markiere das in token_meta
+            # Aber lass TAG_CONFIG Färbung für das GR-Wort trotzdem zu!
+            if de_has_manual_symbol or en_has_manual_symbol:
+                # Speichere nur das Flag, aber KEIN continue - TAG_CONFIG läuft weiter!
+                if i < len(token_meta):
+                    token_meta[i]['translation_has_manual_color'] = True
+                else:
+                    while len(token_meta) <= i:
+                        token_meta.append({})
+                    token_meta[i]['translation_has_manual_color'] = True
 
             # WICHTIG: Für Farbberechnung HideTags/HideTrans entfernen, damit sie die Farbzuordnung nicht beeinflussen
             tags_for_color = orig_tags - {TAG_HIDE_TAGS, TRANSLATION_HIDE_TAG}

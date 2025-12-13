@@ -21,14 +21,29 @@
 (9) ἄρχοντες(N), ἄγοντες(Prä)(Akt)(N) τοὺς(Art)(A) στρατιώτας(A) κατοικιοῦσιν(Prä)(Akt) εἰς(Prp) οἰκήσεις(A) οἵας(Pr)(A) προείπομεν(AorS)(Akt), ἴδιον(Adj)(A)
 (9) Herrscher, führend die Soldaten siedeln|an in Wohnungen welche|Art vorher|sagten|wir, Eigenes
 (9) rulers, leading the soldiers they|settle into dwellings such|as we|declared|before, private
+(491) [Zitat Anfang]
+(492) Φερσεφόνα(N) ποινὰν(A) παλαιοῦ(Adj)(G) πένθεος(G)
+(492) Persephone Strafe des|alten Kummers
+(493) δέξεται(Fu)(M/P), εἰς(Prp) τὸν(Art)(A) ὕπερθεν(Adv) ἅλιον(A) κείνων(Pr)(G) ἐνάτῳ(Adj)(D) ἔτεϊ(D)
+(493) wird|empfangen, in den oberen Sonne jener im|neunten Jahr
+(494) ἀνδιδοῖ(Fu)(Akt) ψυχὰς(A) πάλιν(Adv),
+(494) gibt|zurück Seelen wieder,
+(495) ἐκ(Prp) τᾶν(Art)(G) βασιλῆες(N) ἀγαυοὶ(Adj)(N)
+(495) aus den Könige edle
+(496) καὶ(Kon) σθένει(D) κραιπνοὶ(Adj)(N) σοφίᾳ(D) τε(Pt) μέγιστοι(Adj)(N)(Sup)
+(496) und an|Kraft schnell|kräftige an|Weisheit und die|größten
+(497) ἄνδρες(N) αὔξοντʼ(Prä)(Akt)· ἐς(Prp) δὲ(Kon) τὸν(Art)(A) λοιπὸν(Adj)(A) χρόνον(A) ἥρωες(N) ἁγνοὶ(Adj)(N) πρὸς(Prp) ἀνθρώπων(G) καλεῦνται(Prä)(M/P).
+(497) Männer wachsen· in aber die übrige Zeit Helden reine bei den|Menschen werden|genannt.
+(498) [Zitat Ende]
+(499) [Quelle Anfang] Pind. fr. 133 Bergk [Quelle Ende]
 (10) μὲν(Pt) οὐδὲν(Pr)(A) οὐδενὶ(Pr)(D) ἐχούσας(Prä)(Akt)(A), κοινὰς(Adj)(A) δὲ(Pt) πᾶσι(Adj)(D)· πρὸς(Prp) δὲ(Pt) ταῖς(Art)(D)
 (10) zwar nichts niemandem habend, gemeinsame aber allen· zu aber den
 (10) indeed nothing to|no|one having, common but to|all· in|addition but to|the
 (11) τοιαύταις(Adj)(D) οἰκήσεσι(D), καὶ(Kon) τὰς(Art)(A) κτήσεις(A), εἰ(Kon) μνημονεύεις(Prä)(Akt), διωμολογησάμεθά(Aor)(Med) που(Pt) οἷαι(Pr)(N)
 (11) solchen Wohnungen, auch die Besitzungen, wenn du|erinnerst|dich, wir|vereinbarten wohl welcher|Art
-(11) such dwellings, also the possessions, if you|remember, we|swore|together somewhere what|kind
-(12) ἔσονται(Fu)(M/P) αὐτοῖς(Pr)(D). ἀλλὰ(Kon) μνημονεύω(Prä)(Akt), ἔφη(Imp)(Akt), ὅτι(Kon) γε(Pt) οὐδὲν(Pr)(A) οὐδένα(Pr)(A) ᾠόμεθα(Imp)(M/P)
-(12) werden|sie ihnen. aber ich|erinnere|mich, sprach|er, dass ja nichts niemanden meinten|wir
+(11) [Σωκράτης:] such dwellings, also the possessions, if you|remember, we|swore|together somewhere what|kind
+(12) [Σωκράτης:] ἔσονται(Fu)(M/P) αὐτοῖς(Pr)(D). ἀλλὰ(Kon) μνημονεύω(Prä)(Akt), ἔφη(Imp)(Akt), ὅτι(Kon) γε(Pt) οὐδὲν(Pr)(A) οὐδένα(Pr)(A) ᾠόμεθα(Imp)(M/P)
+(12) [Σωκράτης:] werden|sie ihnen. aber ich|erinnere|mich, sprach|er, dass ja nichts niemanden meinten|wir
 (12) they|will|be for|them. but I|remember, he|said, that indeed nothing no|one we|thought
 (13) δεῖν(Prä)(Inf)(Akt) κεκτῆσθαι(Per)(Med)(Inf) ὧν(Pr)(G) νῦν(Adv) οἱ(Art)(N) ἄλλοι(Adj)(N), ὥσπερ(Kon) δὲ(Pt) ἀθλητάς(A) τε(Pt)
 (13) nötig|sein besessen|haben deren jetzt die anderen, gleichwie aber Athleten und
@@ -39,6 +54,27 @@
 (15) τὴν(Art)(A) εἰς(Prp) ταῦτα(Pr)(A) τροφὴν(A) παρὰ(Prp) τῶν(Art)(G) ἄλλων(G), αὑτῶν(Pr)(G) τε(Pt) δεῖν(Prä)(Inf)(Akt)
 (15) die für dieses Ernährung von den anderen, ihr|er|selbst und nötig|sein
 (15) the into these sustenance from the others, of|themselves and necessary
+(491) [Zitat Anfang]
+(492) Φερσεφόνα(N) ποινὰν(A) παλαιοῦ(Adj)(G) πένθεος(G)
+(492) Persephone Strafe des|alten Kummers
+(492) Persephone Strafe des|alten Kummers
+(493) δέξεται(Fu)(M/P), εἰς(Prp) τὸν(Art)(A) ὕπερθεν(Adv) ἅλιον(A) κείνων(Pr)(G) ἐνάτῳ(Adj)(D) ἔτεϊ(D)
+(493) wird|empfangen, in den oberen Sonne jener im|neunten Jahr
+(493) Persephone Strafe des|alten Kummers
+(494) ἀνδιδοῖ(Fu)(Akt) ψυχὰς(A) πάλιν(Adv),
+(494) gibt|zurück Seelen wieder,
+(494) Persephone Strafe des|alten Kummers
+(495) ἐκ(Prp) τᾶν(Art)(G) βασιλῆες(N) ἀγαυοὶ(Adj)(N)
+(495) aus den Könige edle
+(495) Persephone Strafe des|alten Kummers
+(496) καὶ(Kon) σθένει(D) κραιπνοὶ(Adj)(N) σοφίᾳ(D) τε(Pt) μέγιστοι(Adj)(N)(Sup)
+(496) und an|Kraft schnell|kräftige an|Weisheit und die|größten
+(496) Persephone Strafe des|alten Kummers
+(497) ἄνδρες(N) αὔξοντʼ(Prä)(Akt)· ἐς(Prp) δὲ(Kon) τὸν(Art)(A) λοιπὸν(Adj)(A) χρόνον(A) ἥρωες(N) ἁγνοὶ(Adj)(N) πρὸς(Prp) ἀνθρώπων(G) καλεῦνται(Prä)(M/P).
+(497) Männer wachsen· in aber die übrige Zeit Helden reine bei den|Menschen werden|genannt.
+(497) Persephone Strafe des|alten Kummers
+(498) [Zitat Ende]
+(499) [Quelle Anfang] Pind. fr. 133 Bergk [Quelle Ende]
 (16) καὶ(Kon) τῆς(Art)(G) ἄλλης(Adj)(G) πόλεως(G) ἐπιμελεῖσθαι(Prä)(M/P)(Inf). ὀρθῶς(Adv), ἔφην(Imp)(Akt), λέγεις(Prä)(Akt). ἀλλʼ(Kon) ἄγʼ(Imv)(Akt),
 (16) auch der anderen Stadt sich|kümmern. richtig, sagte|ich, du|sagst. aber komm|schon,
 (16) also of|the other city to|care. rightly, I|said, you|say. but come,

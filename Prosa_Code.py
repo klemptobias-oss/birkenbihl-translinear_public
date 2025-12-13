@@ -2495,9 +2495,10 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                         if any(sym in tok for sym in ['$', '+', '-']):
                             print(f"DEBUG DE alt: formatted='{formatted}'", flush=True)
                         
-                        # KRITISCH: Nur GR-Farbe übertragen, wenn Token KEINE eigene Farbe hat!
-                        # Prüfe ob Token eigene Farbsymbole (#, +, -, §, $) hat
-                        has_own_color = any(sym in tok for sym in ['#', '+', '-', '§', '$'])
+                        # KRITISCH: GR-Farbe übertragen, wenn dieses WORT SELBST keine eigene Farbe hat!
+                        # WICHTIG: Prüfe display_tok (nach Symbol-Cleanup), nicht tok!
+                        # Dies bewahrt TAG_CONFIG Farben und überschreibt sie nur bei manuellen Symbolen
+                        has_own_color = display_tok and display_tok[0] in ['#', '+', '-', '§', '$']
                         if gr_color and not has_own_color:
                             formatted = f'<font color="{gr_color}">{formatted}</font>'
                         
@@ -2534,9 +2535,10 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                         if any(sym in tok for sym in ['$', '+', '-']):
                             print(f"DEBUG EN alt: formatted='{formatted}'", flush=True)
                         
-                        # KRITISCH: Nur GR-Farbe übertragen, wenn Token KEINE eigene Farbe hat!
-                        # Prüfe ob Token eigene Farbsymbole (#, +, -, §, $) hat
-                        has_own_color = any(sym in tok for sym in ['#', '+', '-', '§', '$'])
+                        # KRITISCH: GR-Farbe übertragen, wenn dieses WORT SELBST keine eigene Farbe hat!
+                        # WICHTIG: Prüfe display_tok (nach Symbol-Cleanup), nicht tok!
+                        # Dies bewahrt TAG_CONFIG Farben und überschreibt sie nur bei manuellen Symbolen
+                        has_own_color = display_tok and display_tok[0] in ['#', '+', '-', '§', '$']
                         if gr_color and not has_own_color:
                             formatted = f'<font color="{gr_color}">{formatted}</font>'
                         
@@ -2558,14 +2560,15 @@ def build_tables_for_alternatives(gr_tokens_alternatives, de_tokens_alternatives
                 # Erstelle nested Table mit ALLEN Alternativen als separate Zeilen
                 nested_table = Table(translation_paragraphs, colWidths=[None])
                 
-                # SANFTE Abstände zwischen Alternativen (nicht zu eng für Z/g, aber eng genug)
-                # -0.5pt = KOMPROMISS: Vermeidet Z/g Overlaps, bleibt aber schön dicht
+                # Abstände zwischen Übersetzungszeilen (der/zwar/denn)
+                # 0.3pt = MINIMAL erhöht von -0.5pt für bessere Lesbarkeit
+                # Verhindert Z/g Overlaps, bleibt aber dicht gestapelt
                 nested_style = TableStyle([
                     ('VALIGN', (0, 0), (-1, -1), 'TOP'),
                     ('LEFTPADDING', (0, 0), (-1, -1), 0),
                     ('RIGHTPADDING', (0, 0), (-1, -1), 0),
-                    ('BOTTOMPADDING', (0, 0), (-1, -1), -0.5),  # -0.5pt zwischen Zeilen
-                    ('TOPPADDING', (0, 0), (-1, -1), -0.5),     # -0.5pt Standard
+                    ('BOTTOMPADDING', (0, 0), (-1, -1), 0.3),  # 0.3pt zwischen Zeilen (minimal erhöht)
+                    ('TOPPADDING', (0, 0), (-1, -1), 0),       # 0pt Standard
                 ])
                 
                 # KRITISCH: Erste Zeile der nested_table darf KEIN negatives TOPPADDING haben!

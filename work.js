@@ -3431,14 +3431,59 @@ async function loadPdfIntoRendererDirect(pdfUrl) {
     console.error("Fehler beim Laden des PDFs:", error);
     console.error("PDF URL war:", pdfUrl);
     const message = error?.message || "";
+
+    // NEU: Fallback für NoTrans PDFs
+    // Wenn ein PDF mit _Tag nicht gefunden wird, versuche _Tag_NoTrans und umgekehrt
+    const is404 =
+      /Missing PDF/i.test(message) ||
+      /Unexpected server response/i.test(message) ||
+      message.includes("404");
+
+    if (is404 && state.source === "draft") {
+      // Extrahiere Dateinamen aus URL (entferne Cache-Buster)
+      const urlWithoutCache = pdfUrl.split("?")[0];
+      const filename = urlWithoutCache.substring(
+        urlWithoutCache.lastIndexOf("/") + 1
+      );
+
+      // Versuche die andere Variante (mit/ohne _NoTrans)
+      let alternativeFilename = null;
+      if (filename.includes("_Tag_NoTrans.pdf")) {
+        // NoTrans → Standard (ohne NoTrans)
+        alternativeFilename = filename.replace("_Tag_NoTrans.pdf", "_Tag.pdf");
+      } else if (
+        filename.includes("_Tag.pdf") &&
+        !filename.includes("_NoTags")
+      ) {
+        // Standard → NoTrans
+        alternativeFilename = filename.replace("_Tag.pdf", "_Tag_NoTrans.pdf");
+      }
+
+      if (alternativeFilename) {
+        console.log(
+          `404 für ${filename}, versuche Fallback: ${alternativeFilename}`
+        );
+        const alternativeUrl = buildDraftPdfUrl(alternativeFilename);
+
+        // Rekursiver Aufruf mit Fallback-URL (nur 1x, um Endlosschleife zu vermeiden)
+        // Verhindere doppelten Fallback mit Flag
+        if (!pdfUrl.includes("_FALLBACK_")) {
+          const markedUrl = alternativeUrl.replace(".pdf", "_FALLBACK_.pdf");
+          try {
+            await loadPdfIntoRendererDirect(alternativeUrl);
+            return; // Erfolg! Beende diese Funktion
+          } catch (fallbackError) {
+            console.log(`Fallback fehlgeschlagen, zeige Fehlerplatzhalter`);
+            // Fallback hat auch nicht funktioniert, zeige ursprünglichen Fehler
+          }
+        }
+      }
+    }
+
     if (state.source === "draft") {
       // NEU: Spezialfall für 404 bei Draft-PDFs
       // GitHub Raw-Content cached aggressiv → PDF kann 1-3 Minuten brauchen
-      if (
-        /Missing PDF/i.test(message) ||
-        /Unexpected server response/i.test(message) ||
-        message.includes("404")
-      ) {
+      if (is404) {
         // Zeige Hinweis dass PDF noch nicht verfügbar ist (GitHub Cache)
         showPdfPlaceholder("draft-waiting", {
           icon: "⏳",
