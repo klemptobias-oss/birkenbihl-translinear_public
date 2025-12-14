@@ -1,0 +1,1758 @@
+<!-- RELEASE_BASE:Caesar_Commentarii_de_bello_civil_2_lat_en_birkenbihl -->
+<!-- PATH_PREFIX:LAT_prosa_Historie_Caesar_Commentarii_de_bello_civil_2 -->
+<!-- RELEASE_NAME:Caesar_Commentarii_de_bello_civil_2_lat_en -->
+<!-- TAG_CONFIG:{"nomen":{"color":"orange","hide":true,"hideTranslation":true},"nomen_N":{"color":"orange","hide":true,"hideTranslation":true},"nomen_G":{"color":"orange","hide":true,"hideTranslation":true},"nomen_D":{"color":"orange","hide":true,"hideTranslation":true},"nomen_A":{"color":"orange","hide":true,"hideTranslation":true},"nomen_Abl":{"color":"orange","hide":true,"hideTranslation":true},"nomen_V":{"color":"orange","hide":true,"hideTranslation":true},"verb":{"hide":true,"hideTranslation":true,"color":"orange"},"verb_Pra":{"hide":true,"hideTranslation":true,"color":"orange"},"verb_Imp":{"hide":true,"hideTranslation":true,"color":"orange"},"verb_Per":{"hide":true,"hideTranslation":true,"color":"orange"},"verb_Plq":{"hide":true,"hideTranslation":true,"color":"orange"},"verb_Fu1":{"hide":true,"hideTranslation":true,"color":"orange"},"verb_Fu2":{"hide":true,"hideTranslation":true,"color":"orange"},"verb_Akt":{"hide":true,"hideTranslation":true,"color":"orange"},"verb_Pas":{"hide":true,"hideTranslation":true,"color":"orange"},"verb_Inf":{"hide":true,"hideTranslation":true,"color":"orange"},"verb_Knj":{"hide":true,"hideTranslation":true,"color":"orange"},"verb_Imv":{"hide":true,"hideTranslation":true,"color":"orange"},"partizip":{"color":"violett"},"partizip_Pra":{"color":"violett","placement":"sub"},"partizip_Per":{"color":"violett","placement":"sub"},"partizip_Fu1":{"color":"violett","placement":"sub"},"partizip_N":{"color":"violett","placement":"sup"},"partizip_G":{"color":"violett","placement":"sup"},"partizip_D":{"color":"violett","placement":"sup"},"partizip_A":{"color":"violett","placement":"sup"},"partizip_Abl":{"color":"violett","placement":"sup"},"partizip_V":{"color":"violett","placement":"sup"},"partizip_Akt":{"color":"violett","placement":"sub"},"partizip_Pas":{"color":"violett","placement":"sub"},"adjektiv":{"color":"blue","placement":"sup"},"adjektiv_N":{"color":"blue","placement":"sup"},"adjektiv_G":{"color":"blue","placement":"sup"},"adjektiv_D":{"color":"blue","placement":"sup"},"adjektiv_A":{"color":"blue","placement":"sup"},"adjektiv_Abl":{"color":"blue","placement":"sup"},"adjektiv_V":{"color":"blue","placement":"sup"},"adjektiv_Kmp":{"color":"blue","placement":"sup"},"adjektiv_Sup":{"color":"blue","placement":"sup"},"gerundium":{"color":"violett","placement":"sub"},"gerundium_G":{"color":"violett","placement":"sup"},"gerundium_D":{"color":"violett","placement":"sup"},"gerundium_A":{"color":"violett","placement":"sup"},"gerundium_Abl":{"color":"violett","placement":"sup"},"gerundivum":{"color":"violett","placement":"sub"},"gerundivum_N":{"color":"violett","placement":"sup"},"gerundivum_G":{"color":"violett","placement":"sup"},"gerundivum_D":{"color":"violett","placement":"sup"},"gerundivum_A":{"color":"violett","placement":"sup"},"gerundivum_Abl":{"color":"violett","placement":"sup"},"gerundivum_V":{"color":"violett","placement":"sup"},"supinum":{"color":"violett","placement":"sub"},"supinum_A":{"color":"violett","placement":"sup"},"supinum_Abl":{"color":"violett","placement":"sup"},"adverb":{"placement":"sup"},"adverb_Kmp":{"placement":"sup"},"adverb_Sup":{"placement":"sup"},"pronomen":{"placement":"sub"},"pronomen_N":{"placement":"sup"},"pronomen_G":{"placement":"sup"},"pronomen_D":{"placement":"sup"},"pronomen_A":{"placement":"sup"},"pronomen_Abl":{"placement":"sup"},"prp":{"placement":"sup"},"kon":{"placement":"sup"},"pt":{"placement":"sup"},"ij":{"placement":"sup"}} -->
+<!-- VERSMASS:false -->
+<!-- METER_MODE:without -->
+<!-- HIDE_PIPES:true -->
+==== Commentarii de bello civil 2 ====
+=== C. Iuli Caesaris Commentariorum De Bello Civili, Liber Secundus ===
+=== Kapitel 1 ===
+= § 1 =
+(5) Dum(Kon) haec(Pr)(N) in(Prp) Hispania(Abl) geruntur(Prä)(Pas), C(N). Trebonius(N) legatus(N), qui(Pr)(N) ad(Prp)
+(5) while these|things in in|Spain are|being|done, Gaius. Trebonius legate, who to
+(6) oppugnationem(A) Massiliae(G) relictus(Per)(Pas)(N) erat(Imp)(Akt), duabus(Adj)(Abl) ex(Prp) partibus(Abl) aggerem(A), vineas(A) turresque(A)(Kon)
+(6) for|the|siege of|Massilia having|been|left was, with|two from parts rampart, sheds towers|and
+(7) ad(Prp) oppidum(A) agere(Prä)(Inf)(Akt) instituit(Per)(Akt).
+(7) to the|town to|build he|began.
+= § 2 =
+(9) una(Adj)(N) erat(Imp)(Akt) proxima(Adj)(N) portu(Abl) navalibusque(Abl)(Kon), altera(Adj)(N) ad(Prp) portam(A), qua(Pr)(Abl) est(Prä)(Akt)
+(9) one was nearest to|the|harbor dockyards|and, the|other to the|gate, by|which is
+(10) aditus(N) ex(Prp) Gallia(Abl) atque(Kon) Hispania(Abl), ad(Prp) id(Pr)(A) mare(A), quod(Pr)(N) adiacet(Prä)(Akt)
+(10) approach from Gaul and Spain, to that sea, which lies|near
+(11) ad(Prp) ostium(A) Rhodani(G).
+(11) to the|mouth of|the|Rhone.
+= § 3 =
+(13) Massilia(N) enim(Pt) fere(Adv) tribus(Adj)(Abl) ex(Prp) oppidi(G) partibus(Abl) mari(Abl) alluitur(Prä)(Pas); reliqua(Adj)(N)
+(13) Massilia for almost by|three from of|the|town parts by|the|sea is|washed; the|rest
+(14) quarta(Adj)(N) est(Prä)(Akt), quae(Pr)(N) aditum(A) habeat(Prä)(Knj)(Akt) ab(Prp) terra(Abl). huius(Pr)(G) quoque(Pt) spatii(G)
+(14) the|fourth is, which approach may|have from the|land. of|this also of|space
+(15) pars(N) ea(Pr)(N) quae(Pr)(N) ad(Prp) arcem(A) pertinet(Prä)(Akt), loci(G) natura(Abl) et(Kon) valle(Abl)
+(15) part that which to the|stronghold extends|to, of|the|place by|nature and by|a|valley
+(16) altissima(Adj)(Sup)(Abl) munita(Per)(Pas)(N) longam(Adj)(A) et(Kon) difficilem(Adj)(A) habet(Prä)(Akt) oppugnationem(A).
+(16) very|deep having|been|fortified long and difficult has a|siege.
+= § 4 =
+(18) ad(Prp) ea(Pr)(A) perficienda(Gdv)(Fu1)(Pas)(A) opera(A) C(N). Trebonius(N) magnam(Adj)(A) iumentorum(G) atque(Kon) hominum(G)
+(18) for those|things to|be|completed works Gaius. Trebonius great of|beasts|of|burden and of|men
+(19) multitudinem(A) ex(Prp) omni(Adj)(Abl) provincia(Abl) vocat(Prä)(Akt), vimina(A) materiamque(A)(Kon) comportari(Prä)(Inf)(Pas) iubet(Prä)(Akt). quibus(Pr)(Abl)
+(19) multitude from every province he|summons, wicker|rods timber|and to|be|brought|together he|orders. with|which
+(20) conparatis(Per)(Pas)(Abl) rebus(Abl) aggerem(A) in(Prp) altitudinem(A) pedum(G) lxxx(Adj)(G) exstruit(Prä)(Akt).
+(20) with|having|been|prepared things a|rampart to height of|feet eighty he|builds.
+=== Kapitel 2 ===
+= § 1 =
+(23) Sed(Kon) tanti(G) erant(Imp)(Akt) antiquitus(Adv) in(Prp) oppido(Abl) omnium(G) rerum(G) ad(Prp) bellum(A)
+(23) but of|such|value were long|ago in in|the|town of|all things for war
+(24) apparatus(N) tantaque(Adj)(N)(Kon) multitudo(N) tormentorum(G), ut(Kon) eorum(Pr)(G) vim(A) nullae(Adj)(N) contextae(Per)(Pas)(N) viminibus(Abl)
+(24) equipment and|so|great multitude of|siege|engines, so|that of|them force no having|been|woven with|wicker|rods
+(25) vineae(N) sustinere(Prä)(Inf)(Akt) possent(Imp)(Knj)(Akt).
+(25) sheds to|withstand they|could.
+= § 2 =
+(27) asseres(N) enim(Pt) pedum(G) xii(Adj)(G) cuspidibus(Abl) praefixi(Per)(Pas)(N) atque(Kon) hi(Pr)(N) maximis(Adj)(Sup)(Abl) balistis(Abl)
+(27) beams for of|feet twelve with|points having|been|tipped and these with|very|great ballistae
+(28) missi(Per)(Pas)(N) per(Prp) quattuor(Adj) ordines(A) cratium(G) in(Prp) terram(A) defigebantur(Imp)(Pas).
+(28) having|been|shot through four rows of|hurdles into the|ground were|being|driven|in.
+= § 3 =
+(30) itaque(Kon) pedalibus(Adj)(Abl) lignis(Abl) coniunctis(Per)(Pas)(Abl) inter(Prp) se(Pr)(A) porticus(N) integebantur(Imp)(Pas), atque(Kon) hac(Pr)(Abl)
+(30) and|so of|a|foot timbers having|been|joined among themselves sheds were|being|covered, and with|this
+(31) agger(N) inter(Prp) manus(A) proferebatur(Imp)(Pas).
+(31) rampart among hands was|being|brought|forward.
+= § 4 =
+(33) antecedebat(Imp)(Akt) testudo(N) pedum(G) lx(Adj)(G) aequandi(Ger)(G) loci(G) causa(Abl) facta(Per)(Pas)(N) item(Adv) ex(Prp)
+(33) was|going|ahead tortoise of|feet sixty for|leveling of|the|place for|the|sake having|been|made likewise from
+(34) fortissimis(Adj)(Sup)(Abl) lignis(Abl), convoluta(Per)(Pas)(N) omnibus(Adj)(Abl) rebus(Abl), quibus(Pr)(Abl) ignis(N) iactus(N) et(Kon) lapides(N)
+(34) very|strong timbers, having|been|wrapped with|all things, with|which fire throwing and stones
+(35) defendi(Prä)(Inf)(Pas) possent(Imp)(Knj)(Akt).
+(35) to|be|defended they|could.
+= § 5 =
+(37) sed(Kon) magnitudo(N) operum(G), altitudo(N) muri(G) atque(Kon) turrium(G), multitudo(N) tormentorum(G) omnem(Adj)(A)
+(37) but size of|the|works, height of|the|wall and of|the|towers, multitude of|the|engines all
+(38) administrationem(A) tardabat(Imp)(Akt).
+(38) management was|delaying.
+= § 6 =
+(40) crebrae(Adj)(N) etiam(Adv) per(Prp) Albicos(A) eruptiones(N) fiebant(Imp)(Akt) ex(Prp) oppido(Abl), ignesque(A)(Kon) aggeri(D)
+(40) frequent also through the|Albici sorties were|occurring from the|town, fires|and to|the|rampart
+(41) et(Kon) turribus(D) inferebantur(Imp)(Pas). quae(Pr)(N) facile(Adv) nostri(Adj)(N) milites(N) repellebant(Imp)(Akt) magnisque(Adj)(Abl)(Kon) ultro(Adv)
+(41) and to|the|towers were|being|brought|in. which easily our soldiers were|driving|back and|great in|return
+(42) inlatis(Per)(Pas)(Abl) detrimentis(Abl) eos(Pr)(A), qui(Pr)(N) eruptionem(A) fecerant(Plq)(Akt), in(Prp) oppidum(A) reiciebant(Imp)(Akt).
+(42) with|having|been|brought losses them, who a|sortie had|made, into the|town they|were|driving|back.
+=== Kapitel 3 ===
+= § 1 =
+(45) Interim(Adv) L(N). Nasidius(N) ab(Prp) Cn(Abl). Pompeio(Abl) cum(Prp) classe(Abl) navium(G) ivx(Adj)(G),
+(45) meanwhile Lucius. Nasidius by Gnaeus. Pompey with a|fleet of|ships ivx,
+(46) in(Prp) quibus(Pr)(Abl) paucae(Adj)(N) erant(Imp)(Akt) aeratae(Adj)(N), L(N). Domitio(D) Massiliensibusque(D)(Kon) subsidio(D) missus(Per)(Pas)(N)
+(46) in among|which few were bronze|clad, Lucius. to|Domitius to|the|Massiliots|and for|aid having|been|sent
+(47) freto(Abl) Siciliae(G) imprudente(Adj)(Abl) atque(Kon) inopinante(Adj)(Abl) Curione(Abl) pervehitur(Prä)(Pas)
+(47) by|the|strait of|Sicily with|unaware and not|expecting Curio he|is|carried|across
+= § 2 =
+(49) appulsisque(Per)(Pas)(Abl)(Kon) Messanam(A) navibus(Abl) atque(Kon) inde(Adv) propter(Prp) repentinum(Adj)(A) terrorem(A) principum(G) ac(Kon)
+(49) and|with|having|been|brought|to Messana ships and from|there because|of sudden terror of|the|chiefs and
+(50) senatus(G) fuga(Abl) facta(Per)(Pas)(Abl) ex(Prp) navalibus(Abl) eorum(Pr)(G) navem(A) deducit(Prä)(Akt).
+(50) of|the|senate flight having|been|made from dockyards of|them a|ship he|launches.
+= § 3 =
+(52) hac(Pr)(Abl) adiuncta(Per)(Pas)(Abl) ad(Prp) reliquas(Adj)(A) naves(A) cursum(A) Massiliam(A) versus(Prp) perficit(Prä)(Akt) praemissaque(Per)(Pas)(Abl)(Kon)
+(52) with|this having|been|added to the|remaining ships course to|Massilia towards he|finishes and|having|been|sent|ahead
+(53) clam(Adv) navicula(Abl) Domitium(A) Massiliensisque(A)(Kon) de(Prp) suo(Adj)(Abl) adventu(Abl) certiores(Adj)(Kmp)(A) facit(Prä)(Akt) eosque(Pr)(A)(Kon)
+(53) secretly by|a|small|boat Domitius and|the|Massiliots about his|own arrival more|informed he|makes them|and
+(54) magnopere(Adv) hortatur(Prä)(Pas), ut(Kon) rursus(Adv) cum(Prp) Bruti(G) classe(Abl) additis(Per)(Pas)(Abl) suis(Adj)(Abl) auxiliis(Abl)
+(54) greatly he|urges, that again with of|Brutus fleet with|having|been|added their|own reinforcements
+(55) confligant(Prä)(Knj)(Akt).
+(55) they|may|contend.
+=== Kapitel 4 ===
+= § 1 =
+(58) Massilienses(N) post(Prp) superius(Adj)(Kmp)(A) incommodum(A) veteres(Adj)(A) ad(Prp) eundem(Adj)(A) numerum(A) ex(Prp) navalibus(Abl)
+(58) the|Massiliots after earlier setback old to the|same number from dockyards
+(59) productas(Per)(Pas)(A) navis(A) refecerant(Plq)(Akt) summaque(Adj)(Abl)(Kon)(Sup) industria(Abl) armaverant(Plq)(Akt) — remigum(G), gubernatorum(G) magna(Adj)(N)
+(59) having|been|brought|out ships they|had|repaired and|with|the|highest industry they|had|equipped — of|rowers, of|helmsmen great
+(60) copia(N) subpetebat(Imp)(Akt) —
+(60) supply was|at|hand —
+= § 2 =
+(62) piscatoriasque(Adj)(A)(Kon) adiecerant(Plq)(Akt) atque(Kon) contexerant(Plq)(Akt), ut(Kon) essent(Imp)(Knj)(Akt) ab(Prp) ictu(Abl) telorum(G) remiges(N)
+(62) fishing|vessels|and they|had|added and they|had|woven|together, so|that they|might|be from the|blow of|missiles rowers
+(63) tuti(Adj)(N); has(Pr)(A) sagittariis(Abl) tormentisque(Abl)(Kon) conpleverunt(Per)(Akt).
+(63) safe; these with|archers and|engines they|filled.
+= § 3 =
+(65) tali(Adj)(Abl) modo(Abl) instructa(Per)(Pas)(Abl) classe(Abl) omnium(G) seniorum(G), matrum(G) familiae(G), virginum(G) precibus(Abl)
+(65) in|such manner having|been|fitted|out fleet of|all of|elders, of|mothers of|household, of|maidens with|prayers
+(66) et(Kon) fletu(Abl) excitati(Per)(Pas)(N), extremo(Adj)(Sup)(Abl) tempore(Abl) civitati(D) subvenirent(Imp)(Knj)(Akt), non(Pt) minore(Adj)(Kmp)(Abl) animo(Abl)
+(66) and with|weeping having|been|aroused, at|the|last time to|the|state they|might|come|to|aid, not with|less spirit
+(67) ac(Kon) fiducia(Abl) quam(Kon) ante(Adv) dimicaverant(Plq)(Akt), naves(A) conscendunt(Prä)(Akt).
+(67) and with|confidence than before they|had|fought, ships they|board.
+= § 4 =
+(69) communi(Adj)(Abl) enim(Pt) fit(Prä)(Akt) vitio(Abl) naturae(G), ut(Kon) invisitatis(Adj)(Abl) atque(Kon) incognitis(Adj)(Abl) rebus(Abl)
+(69) by|a|common for it|happens by|fault of|nature, that to|unseen and unknown things
+(70) magis(Adv) confidamus(Prä)(Knj)(Akt) vehementiusque(Adv)(Kmp)(Kon) exterreamur(Prä)(Knj)(Pas); ut(Kon) tum(Adv) accidit(Per)(Akt). adventus(N) enim(Pt) L(N).
+(70) more we|may|trust more|vehemently|and we|may|be|terrified; as then it|happened. arrival for Lucius.
+(71) Nasidi(G) summa(Adj)(Sup)(Abl) spe(Abl) et(Kon) voluntate(Abl) civitatem(A) conpleverat(Plq)(Akt).
+(71) of|Nasidius with|the|highest hope and goodwill the|state he|had|filled.
+= § 5 =
+(73) nacti(Per)(Akt)(N) idoneum(Adj)(A) ventum(A) ex(Prp) portu(Abl) exeunt(Prä)(Akt) et(Kon) Tauroenta(A), quod(Pr)(N) est(Prä)(Akt)
+(73) having|obtained suitable wind from harbor they|go|out and Tauroenta, which is
+(74) castellum(N) Massiliensium(G), ad(Prp) Nasidium(A) perveniunt(Prä)(Akt) ibique(Adv)(Kon) naves(A) expediunt(Prä)(Akt) rursusque(Adv)(Kon) se(Pr)(A)
+(74) a|fort of|the|Massiliots, to Nasidius they|arrive and|there ships they|ready again|and themselves
+(75) ad(Prp) confligendum(Ger)(A) animo(Abl) confirmant(Prä)(Akt) et(Kon) consilia(A) communicant(Prä)(Akt). dextra(Adj)(N) pars(N) attribuitur(Prä)(Pas)
+(75) to for|fighting in|spirit they|fortify and plans they|share. right part is|assigned
+(76) Massiliensibus(D), sinistra(Adj)(N) Nasidio(D).
+(76) to|the|Massiliots, left to|Nasidius.
+=== Kapitel 5 ===
+= § 1 =
+(79) Eodem(Adv) Brutus(N) contendit(Prä)(Akt) aucto(Per)(Pas)(Abl) navium(G) numero(Abl). nam(Pt) ad(Prp) eas(Pr)(A), quae(Pr)(N)
+(79) to|the|same|place Brutus hastens having|been|increased of|ships with|the|number. for to those, which
+(80) factae(Per)(Pas)(N) erant(Imp)(Akt) Arelate(Abl) per(Prp) Caesarem(A), captivae(Adj)(N) Massiliensium(G) accesserant(Plq)(Akt) sex(Adj). has(Pr)(A)
+(80) having|been|made were at|Arles by Caesar, captured of|the|Massiliots had|come six. these
+(81) superioribus(Adj)(Kmp)(Abl) diebus(Abl) refecerat(Plq)(Akt) atque(Kon) omnibus(Adj)(Abl) rebus(Abl) instruxerat(Plq)(Akt).
+(81) in|earlier days he|had|repaired and with|all things he|had|equipped.
+= § 2 =
+(83) itaque(Kon) suos(Adj)(A) cohortatus(Per)(Pas)(N), quos(Pr)(A) integros(Adj)(A) superavissent(Plq)(Knj)(Akt), ut(Kon) victos(Per)(Pas)(A) contemnerent(Imp)(Knj)(Akt), plenus(Adj)(N)
+(83) and|so his|own having|encouraged, whom intact they|had|overcome, so|that conquered they|might|despise, full
+(84) spei(G) bonae(Adj)(G) atque(Kon) animi(G) adversus(Prp) eos(Pr)(A) proficiscitur(Prä)(Pas).
+(84) of|hope good and of|courage against them he|sets|out.
+= § 3 =
+(86) facile(Adv) erat(Imp)(Akt) ex(Prp) castris(Abl) C(N). Treboni(G) atque(Kon) omnibus(Adj)(Abl) superioribus(Adj)(Kmp)(Abl) locis(Abl)
+(86) easily it|was from the|camp Gaius. of|Trebonius and all higher places
+(87) prospicere(Prä)(Inf)(Akt) in(Prp) urbem(A), ut(Kon) omnis(Adj)(N) iuventus(N), quae(Pr)(N) in(Prp) oppido(Abl) remanserat(Plq)(Akt),
+(87) to|look|out into the|city, that all youth, who in the|town had|remained,
+(88) omnesque(Adj)(N)(Kon) superioris(Adj)(G) aetatis(G) cum(Prp) liberis(Abl) atque(Kon) uxoribus(Abl) publicis(Adj)(Abl) custodiisque(Abl)(Kon) aut(Kon)
+(88) all|and of|elder of|age with children and wives public guards|and or
+(89) muro(Abl) ad(Prp) caelum(A) manus(A) tenderent(Imp)(Knj)(Akt) aut(Kon) templa(A) deorum(G) immortalium(Adj)(G) adirent(Imp)(Knj)(Akt)
+(89) on|the|wall to|the sky hands they|might|stretch or temples of|the|gods of|immortal they|might|approach
+(90) et(Kon) ante(Prp) simulacra(A) proiecti(Per)(Pas)(N) victoriam(A) ab(Prp) dis(Abl) exposcerent(Imp)(Knj)(Akt).
+(90) and before images having|been|cast|down victory from the|gods they|might|demand|earnestly.
+= § 4 =
+(92) neque(Kon) erat(Imp)(Akt) quisquam(Pr)(N) omnium(G), quin(Kon) in(Prp) eius(Pr)(G) diei(G) casu(Abl) suarum(Pr)(G)
+(92) nor there|was anyone of|all, but|that in of|that of|day event of|their|own
+(93) omnium(Adj)(G) fortunarum(G) eventum(A) consistere(Prä)(Inf)(Akt) existimaret(Imp)(Knj)(Akt).
+(93) of|all of|fortunes outcome to|depend he|would|think.
+= § 5 =
+(95) nam(Pt) et(Kon) honesti(Adj)(N) ex(Prp) iuventute(Abl) et(Kon) cuiusque(Pr)(G) aetatis(G) amplissimi(Adj)(Sup)(N) nominatim(Adv)
+(95) for and honorable from the|youth and of|each of|age most|distinguished by|name
+(96) evocati(Per)(Pas)(N) atque(Kon) obsecrati(Per)(Pas)(N) navis(A) conscenderant(Plq)(Akt), ut(Kon) siquid(Kon) adversi(G) accidisset(Plq)(Knj)(Akt), ne(Pt)
+(96) having|been|called|out and having|been|entreated ships they|had|boarded, so|that if|anything of|adverse had|happened, lest
+(97) ad(Prp) conandum(Ger)(A) quidem(Pt) sibi(Pr)(D) quicquam(Pr)(A) reliqui(G) fore(Fu1)(Inf)(Akt) viderent(Imp)(Knj)(Akt); si(Kon) superavissent(Plq)(Knj)(Akt),
+(97) for trying indeed to|themselves anything of|left would|be they|might|see; if they|had|overcome,
+(98) vel(Kon) domesticis(Adj)(Abl) opibus(Abl) vel(Kon) externis(Adj)(Abl) auxiliis(Abl) de(Prp) salute(A) urbis(G) confiderent(Imp)(Knj)(Akt).
+(98) either domestic resources or external aid about safety of|the|city they|might|trust.
+=== Kapitel 6 ===
+= § 1 =
+(101) Commisso(Per)(Pas)(Abl) proelio(Abl) Massiliensibus(D) res(N) nulla(Adj)(N) ad(Prp) virtutem(A) defuit(Per)(Akt). sed(Kon) memores(Adj)(N)
+(101) with|having|been|joined battle to|the|Massiliots resource no toward valor failed. but mindful
+(102) eorum(Pr)(G) praeceptorum(G), quae(Pr)(N) paulo(Adv) ante(Adv) ab(Prp) suis(Pr)(Abl) acceperant(Plq)(Akt), hoc(Pr)(Abl) animo(Abl)
+(102) of|those of|precepts, which a|little before from their|own they|had|received, with|this mind
+(103) decertabant(Imp)(Akt), ut(Kon) nullum(Adj)(A) aliud(Adj)(A) tempus(N) ad(Prp) conandum(Ger)(A) habituri(Fu1)(Akt)(N) viderentur(Imp)(Knj)(Pas), et(Kon)
+(103) they|were|contending, that no other time for trying about|to|have they|might|seem, and
+(104) quibus(Pr)(D) in(Prp) pugna(Abl) vitae(G) periculum(N) accideret(Imp)(Knj)(Akt), non(Pt) ita(Adv) multo(Adv) se(Pr)(A)
+(104) to|whom in battle of|life danger might|befall, not so by|much themselves
+(105) reliquorum(Adj)(G) civium(G) fatum(N) antecedere(Prä)(Inf)(Akt) existimarent(Imp)(Knj)(Akt), quibus(Pr)(D) urbe(Abl) capta(Per)(Pas)(Abl) eadem(Pr)(N) esset(Imp)(Knj)(Akt)
+(105) of|the|rest of|citizens fate to|go|before they|would|think, for|whom with|the|city having|been|taken the|same would|be
+(106) belli(G) fortuna(N) patienda(Gdv)(Fu1)(Pas)(N).
+(106) of|war fortune to|be|endured.
+= § 2 =
+(108) diductisque(Per)(Pas)(Abl)(Kon) nostris(Adj)(Abl) paulatim(Adv) navibus(Abl) et(Kon) artificio(Abl) gubernatorum(G) et(Kon) mobilitati(D) navium(G)
+(108) and|with|having|been|drawn|apart our gradually ships and by|skill of|helmsmen and to|the|mobility of|ships
+(109) locus(N) dabatur(Imp)(Pas), et(Kon) siquando(Kon) nostri(Pr)(N) facultatem(A) nacti(Per)(Pas)(N) ferreis(Adj)(Abl) manibus(Abl) iniectis(Per)(Pas)(Abl)
+(109) room was|being|given, and if|ever our|men opportunity having|obtained iron hands having|been|thrown|in
+(110) navem(A) religaverant(Plq)(Akt), undique(Adv) suis(Pr)(D) laborantibus(Prä)(Akt)(D) succurrebant(Imp)(Akt).
+(110) the|ship they|had|tied, from|everywhere to|their|own struggling they|were|helping.
+= § 3 =
+(112) neque(Kon) vero(Pt) coniuncti(Per)(Pas)(N) Albici(N) comminus(Adv) pugnando(Ger)(Abl) deficiebant(Imp)(Akt) neque(Kon) multum(Adv) cedebant(Imp)(Akt)
+(112) nor indeed having|been|joined the|Albici at|close|quarters by|fighting were|failing nor much were|yielding
+(113) virtute(Abl) nostris(Pr)(D). simul(Adv) ex(Prp) minoribus(Adj)(Abl) navibus(Abl) magna(Adj)(N) vis(N) eminus(Adv) missa(Per)(Pas)(N)
+(113) in|courage to|our|men. at|the|same|time from smaller ships great force from|a|distance having|been|sent
+(114) telorum(G) multa(Adj)(A) nostris(Pr)(D) de(Prp) improviso(Abl) imprudentibus(Adj)(D) atque(Kon) inpeditis(Adj)(D) vulnera(A) inferebant(Imp)(Akt).
+(114) of|missiles many to|our|men from the|unexpected unaware and hampered wounds they|were|bringing|in.
+= § 4 =
+(116) conspicataeque(Per)(Pas)(N)(Kon) naves(N) triremes(N) duae(Adj)(N) navem(A) D(N). Bruti(G), quae(Pr)(N) ex(Prp) insigni(Abl)
+(116) having|caught|sight|and ships triremes two the|ship Decimus. of|Brutus, which from the|emblem
+(117) facile(Adv) agnosci(Prä)(Inf)(Pas) poterat(Imp)(Akt), duabus(Adj)(Abl) ex(Prp) partibus(Abl) sese(Pr)(A) in(Prp) eam(Pr)(A) incitaverant(Plq)(Akt).
+(117) easily to|be|recognized was|able, with|two from sides themselves against it they|had|rushed.
+(118) sed(Kon) tantum(Adv) re(Abl) provisa(Per)(Pas)(Abl) Brutus(N) celeritate(Abl) navis(G) enisus(Per)(Pas)(N) est(Prä)(Akt) ut(Kon)
+(118) but so|much with|the|matter having|been|foreseen Brutus by|speed of|the|ship having|striven|out has that
+(119) parvo(Adj)(Abl) momento(N) antecederet(Imp)(Knj)(Akt).
+(119) by|a|small moment he|might|get|ahead.
+= § 5 =
+(121) illae(Pr)(N) adeo(Adv) graviter(Adv) inter(Prp) se(Pr)(A) incitatae(Per)(Pas)(N) conflixerunt(Per)(Akt), ut(Kon) vehementissime(Adv)(Sup) utraque(Pr)(N)
+(121) those so heavily among themselves having|been|driven they|clashed, so|that most|violently each|of|the|two
+(122) ex(Prp) concursu(Abl) laborarent(Imp)(Knj)(Akt), altera(Pr)(N) vero(Pt) praefracto(Per)(Pas)(Abl) rostro(Abl) tota(Adj)(N) conlabefieret(Imp)(Knj)(Pas).
+(122) from the|collision they|might|be|in|distress, the|other indeed with|having|been|broken|off beak whole might|collapse.
+= § 6 =
+(124) qua(Pr)(Abl) re(Abl) animadversa(Per)(Pas)(Abl), quae(Pr)(N) proximae(Adj)(Kmp)(N) ei(Pr)(D) loco(Abl) ex(Prp) Bruti(G) classe(Abl)
+(124) with|which thing having|been|noticed, which nearest to|her in|place from of|Brutus fleet
+(125) naves(N) erant(Imp)(Akt), in(Prp) eas(Pr)(A) inpeditas(Per)(Pas)(A) impetum(N) faciunt(Prä)(Akt) celeriterque(Adv)(Kon) ambas(Adj)(A) deprimunt(Prä)(Akt).
+(125) ships were, against them having|been|entangled attack they|make quickly|and both they|sink.
+=== Kapitel 7 ===
+= § 1 =
+(128) Sed(Kon) Nasidianae(Adj)(N) naves(N) nullo(Adj)(Abl) usui(D) fuerunt(Per)(Akt) celeriterque(Adv)(Kon) pugna(Abl) excesserunt(Per)(Akt). non(Pt)
+(128) but Nasidian ships of|no use were quickly|and from|the|battle they|left. not
+(129) enim(Pt) has(Pr)(A) aut(Kon) conspectus(N) patriae(G) aut(Kon) propinquorum(G) praecepta(N) ad(Prp) extremum(Adj)(A)
+(129) for these either sight of|fatherland or of|kinsmen precepts to the|last
+(130) vitae(G) periculum(A) adire(Prä)(Inf)(Akt) cogebant(Imp)(Akt).
+(130) of|life danger to|approach they|were|forcing.
+= § 2 =
+(132) itaque(Kon) ex(Prp) eo(Pr)(Abl) numero(N) navium(G) nulla(Adj)(N) desiderata(Per)(Pas)(N) est(Prä)(Akt); ex(Prp) Massiliensium(G)
+(132) and|so from that number of|ships no|one having|been|missed was; from of|the|Massiliots
+(133) classe(Abl) v(Adj) sunt(Prä)(Akt) depressae(Per)(Pas)(N), iiii(Adj) captae(Per)(Pas)(N), una(Adj)(N) cum(Prp) Nasidianis(Adj)(Abl) profugit(Per)(Akt);
+(133) fleet five have|been sunk, four captured, one with the|Nasidians has|fled;
+(134) quae(Pr)(N) omnes(Adj)(N) citeriorem(Adj)(A) Hispaniam(A) petiverunt(Per)(Akt).
+(134) which all nearer Spain they|sought.
+= § 3 =
+(136) at(Kon) ex(Prp) reliquis(Adj)(Abl) una(Adj)(N) praemissa(Per)(Pas)(N) Massiliam(A) huius(Pr)(G) nuntii(G) perferendi(Gdv)(Fu1)(Pas)(G) gratia(Abl)
+(136) but from the|rest one having|been|sent|ahead to|Massilia of|this of|message for|carrying for|the|sake
+(137) cum(Kon) iam(Adv) adpropinquaret(Imp)(Knj)(Akt) urbi(D), omnis(Adj)(N) sese(Pr)(N) multitudo(N) ad(Prp) cognoscendum(Ger)(A) effudit(Per)(Akt),
+(137) when now it|was|approaching the|city, all itself multitude for finding|out poured|out,
+(138) et(Kon) re(Abl) cognita(Per)(Pas)(Abl) tantus(Adj)(N) luctus(N) excepit(Per)(Akt), ut(Kon) urbs(N) ab(Prp) hostibus(Abl)
+(138) and with|the|thing having|been|learned so|great grief seized, that the|city by the|enemies
+(139) capta(Per)(Pas)(N) eodem(Adj)(Abl) vestigio(Abl) videretur(Imp)(Knj)(Pas).
+(139) having|been|taken on|the|same footstep it|might|seem.
+= § 4 =
+(141) Massilienses(N) tamen(Pt) nihilo(Abl) setius(Adv)(Kmp) ad(Prp) defensionem(A) urbis(G) reliqua(Adj)(A) apparare(Prä)(Inf)(Akt) coeperunt(Per)(Akt).
+(141) the|Massiliots however by|nothing less for defense of|the|city remaining to|prepare they|began.
+=== Kapitel 8 ===
+= § 1 =
+(144) Est(Prä)(Akt) animadversum(Per)(Pas)(N) ab(Prp) legionariis(Abl), qui(Pr)(N) dextram(Adj)(A) partem(A) operis(G) administrabant(Imp)(Akt), ex(Prp)
+(144) it|is having|been|noticed by the|legionaries, who right part of|the|work were|managing, from
+(145) crebris(Adj)(Abl) hostium(G) eruptionibus(Abl) magno(Adj)(Abl) sibi(Pr)(D) esse(Prä)(Inf)(Akt) praesidio(D) posse(Prä)(Inf)(Akt), si(Kon) ibi(Adv)
+(145) frequent of|the|enemies sallies great to|themselves to|be as|a|protection to|be|able, if there
+(146) pro(Prp) castello(N) ac(Kon) receptaculo(N) turrim(A) ex(Prp) latere(Abl) sub(Prp) muro(Abl) fecissent(Plq)(Knj)(Akt).
+(146) as a|fort and refuge a|tower from brick under the|wall they|had|made.
+(147) quam(Pr)(A) primo(Adv) ad(Prp) repentinos(Adj)(A) incursus(A) humilem(Adj)(A) parvamque(Adj)(A)(Kon) fecerunt(Per)(Akt).
+(147) which at|first for sudden attacks low small|and they|made.
+= § 2 =
+(149) huc(Adv) se(Pr)(A) referebant(Imp)(Akt); hinc(Adv), siqua(Pr)(N) maior(Adj)(Kmp)(N) oppresserat(Plq)(Akt) vis(N), propugnabant(Imp)(Akt); hinc(Adv)
+(149) hither themselves they|were|withdrawing; from|here, if|any greater had|pressed|upon force, they|were|fighting; from|here
+(150) ad(Prp) repellendum(Ger)(A) et(Kon) prosequendum(Ger)(A) hostem(A) procurrebant(Imp)(Akt). patebat(Imp)(Akt) haec(Pr)(N) quoquoversus(Adv) pedes(A)
+(150) for driving|back and pursuing the|enemy they|were|running|forward. it|was|lying|open this everywhere feet
+(151) xxx(Adj), sed(Kon) parietum(G) crassitudo(N) pedes(A) v(Adj).
+(151) thirty, but of|the|walls thickness feet five.
+= § 3 =
+(153) postea(Adv) vero(Pt), ut(Kon) est(Prä)(Akt) rerum(G) omnium(Adj)(G) magister(N) usus(N), hominum(G) adhibita(Per)(Pas)(Abl)
+(153) afterwards indeed, as is of|things of|all teacher experience, of|men with|having|been|applied
+(154) sollertia(Abl) inventum(Per)(Pas)(N) est(Prä)(Akt) magno(Adj)(D) esse(Prä)(Inf)(Akt) usui(D) posse(Prä)(Inf)(Akt), si(Kon) haec(Pr)(N) esset(Imp)(Knj)(Akt)
+(154) skill having|been|found has|been of|great to|be use to|be|able, if this were
+(155) in(Prp) altitudinem(A) turris(G) elata(Per)(Pas)(N). id(Pr)(N) hac(Pr)(Abl) ratione(Abl) perfectum(Per)(Pas)(N) est(Prä)(Akt).
+(155) to height of|the|tower having|been|raised. this by|this method having|been|completed has|been.
+=== Kapitel 9 ===
+= § 1 =
+(158) Ubi(Kon) turris(G) altitudo(N) perducta(Per)(Pas)(N) est(Prä)(Akt) ad(Prp) contabulationem(A), eam(Pr)(A) in(Prp) parietes(A)
+(158) when of|the|tower height having|been|brought|through has|been to the|flooring, it into walls
+(159) instruxerunt(Per)(Akt), ita(Adv) ut(Kon) capita(N) tignorum(G) extrema(Adj)(N) parietum(G) structura(Abl) tegerentur(Imp)(Knj)(Pas), nequid(Pt)
+(159) they|arranged, so that heads of|beams ends of|walls by|a|structure might|be|covered, lest|anything
+(160) emineret(Imp)(Knj)(Akt), ubi(Kon) ignis(N) hostium(G) adhaeresceret(Imp)(Knj)(Akt).
+(160) might|stick|out, where fire of|enemies might|cling.
+= § 2 =
+(162) hanc(Pr)(A) insuper(Adv) contignationem(A), quantum(Adv) tectum(N) plutei(G) ac(Kon) vinearum(G) passum(Per)(Pas)(N) est(Prä)(Akt),
+(162) this on|top decking, as|much cover of|mantelets and of|vineae having|allowed is,
+(163) latericulo(Abl) adstruxerunt(Per)(Akt) supraque(Adv)(Kon) eum(Pr)(A) locum(A) duo(Adj) tigna(A) transversa(Adj)(A) iniecerunt(Per)(Akt) non(Pt)
+(163) with|brickwork they|built|up above|and that place two beams crosswise they|threw|on not
+(164) longe(Adv) ab(Prp) extremis(Adj)(Abl) parietibus(Abl), quibus(Pr)(Abl) suspenderent(Imp)(Knj)(Akt) eam(Pr)(A) contignationem(A) quae(Pr)(N) turri(D)
+(164) far from outermost walls, by|which they|might|hang that flooring which for|the|tower
+(165) tegimento(D) esset(Imp)(Knj)(Akt) futura(Fu1)(Akt)(N), supraque(Adv)(Kon) ea(Pr)(A) tigna(A) derecto(Adv) transversas(Adj)(A) trabes(A) iniecerunt(Per)(Akt)
+(165) as|a|covering might|be about|to|be, above|and those beams straight crosswise beams they|threw|on
+(166) easque(Pr)(A)(Kon) axibus(Abl) religaverunt(Per)(Akt).
+(166) and|them with|axles they|fastened.
+= § 3 =
+(168) has(Pr)(A) trabes(A) paulo(Adv) longiores(Adj)(A) atque(Kon) eminentiores(Adj)(A) quam(Kon) extremi(Adj)(N) parietes(N) erant(Imp)(Akt),
+(168) these beams a|little longer and more|projecting than outermost walls were,
+(169) effecerunt(Per)(Akt) ut(Kon) esset(Imp)(Knj)(Akt) ubi(Kon) tegimenta(A) praependere(Prä)(Inf)(Akt) possent(Imp)(Knj)(Akt) ad(Prp) defendendos(Gdv)(Fu1)(Pas)(A) ictus(A)
+(169) they|brought|about that there|might|be where coverings to|hang|in|front they|could for to|be|defended blows
+(170) ac(Kon) repellendos(Gdv)(Fu1)(Pas)(A), cum(Kon) infra(Prp) eam(Pr)(A) contignationem(A) parietes(N) extruerentur(Imp)(Knj)(Pas);
+(170) and to|be|driven|back, when below that decking walls were|being|built;
+= § 4 =
+(172) eamque(Pr)(A)(Kon) contabulationem(A) summam(Adj)(A) lateribus(N)(Abl) lutoque(N)(Abl)(Kon) constraverunt(Per)(Akt), nequid(Pt) ignis(N) hostium(G) nocere(Prä)(Inf)(Akt)
+(172) and|that flooring top with|bricks and|with|mud they|covered, lest|anything fire of|enemies to|harm
+(173) posset(Imp)(Knj)(Akt), centonesque(A)(Kon) insuper(Adv) iniecerunt(Per)(Akt), ne(Pt) aut(Kon) tela(N) tormentis(Abl) missa(Per)(Pas)(N) tabulationem(A)
+(173) might|be|able, patchworks|and on|top they|threw, lest or missiles by|engines having|been|sent flooring
+(174) perfringerent(Imp)(Knj)(Akt), aut(Kon) saxa(N) ex(Prp) catapultis(Abl) latericium(A) discuterent(Imp)(Knj)(Akt).
+(174) might|shatter, or stones from catapults brickwork might|scatter.
+= § 5 =
+(176) storias(A) autem(Pt) ex(Prp) funibus(Abl) ancorariis(Adj)(Abl) tres(Adj) in(Prp) longitudinem(A) parietum(G) turris(G)
+(176) mats but|now from ropes for|anchors three into length of|walls of|the|tower
+(177) latas(Adj)(A) iiii(Adj) pedes(A) fecerunt(Per)(Akt) easque(Pr)(A)(Kon) ex(Prp) tribus(Adj)(Abl) partibus(Abl) quae(Pr)(N) ad(Prp)
+(177) broad four feet they|made and|them from three parts which to
+(178) hostes(A) vergebant(Imp)(Akt), eminentibus(Prä)(Akt)(Abl) trabibus(Abl) circum(Prp) turrim(A) praependentes(Prä)(Akt)(N) religaverunt(Per)(Akt); quod(Pr)(N) unum(Adj)(N)
+(178) the|enemy were|turning, with|projecting beams around tower hanging|in|front they|fastened; which one
+(179) genus(N) tegimenti(G) aliis(Adj)(Abl) locis(Abl) erant(Imp)(Akt) experti(Per)(Pas)(N) nullo(Adj)(Abl) telo(Abl) neque(Kon) tormento(Abl)
+(179) kind of|covering in|other places had tried with|no weapon nor by|engine
+(180) traici(Prä)(Inf)(Pas) posse(Prä)(Inf)(Akt).
+(180) to|be|pierced to|be|able.
+= § 6 =
+(182) ubi(Kon) vero(Pt) ea(Pr)(N) pars(N) turris(G), quae(Pr)(N) erat(Imp)(Akt) perfecta(Per)(Pas)(N), tecta(Per)(Pas)(N) atque(Kon)
+(182) when indeed that part of|the|tower, which was finished, covered and
+(183) munita(Per)(Pas)(N) est(Prä)(Akt) ab(Prp) omni(Adj)(Abl) ictu(Abl) hostium(G), pluteos(A) ad(Prp) alia(Adj)(A) opera(A)
+(183) fortified is from every blow of|enemies, mantelets to other works
+(184) abduxerunt(Per)(Akt); turris(G) tectum(N) per(Prp) se(Pr)(Abl) ipsum(Adj)(Abl) pressionibus(N)(Abl) ex(Prp) contignatione(N)(Abl) prima(Adj)(Abl)
+(184) they|led|away; of|the|tower roof by itself itself by|pressures from flooring first
+(185) suspendere(Prä)(Inf)(Akt) ac(Kon) tollere(Prä)(Inf)(Akt) coeperunt(Per)(Akt).
+(185) to|suspend and to|raise they|began.
+= § 7 =
+(187) ubi(Kon) quantum(Adv) storiarum(G) demissio(N) patiebatur(Imp)(Akt), tantum(Adv) elevarant(Plq)(Akt), intra(Prp) haec(Pr)(A) tegimenta(A)
+(187) when as|much of|mats lowering was|allowing, so|much they|had|raised, within these coverings
+(188) abditi(Per)(Pas)(N) atque(Kon) muniti(Per)(Pas)(N) parietes(A) lateribus(Abl) exstruebant(Imp)(Akt), rursusque(Adv)(Kon) alia(Adj)(Abl) pressione(Abl) ad(Prp)
+(188) hidden and protected walls with|bricks they|were|building, again|and other by|pressure to
+(189) aedificandum(Ger)(A) sibi(Pr)(D) locum(A) expediebant(Imp)(Akt).
+(189) for|building for|themselves place they|were|clearing.
+= § 8 =
+(191) ubi(Kon) tempus(N) alterius(Adj)(G) contabulationis(G) videbatur(Imp)(Akt), tigna(A) item(Adv) ut(Kon) primo(Adv) tecta(Per)(Pas)(A)
+(191) when time of|another of|flooring seemed, beams likewise as at|first having|been|covered
+(192) extremis(Adj)(Abl) lateribus(Abl) instruebant(Imp)(Akt) exque(Prp)(Kon) ea(Pr)(Abl) contignatione(Abl) rursus(Adv) summam(Adj)(A) contabulationem(A) storiasque(A)(Kon)
+(192) at|the|outermost walls they|were|arranging out|of|and from|that flooring again highest flooring and|mats
+(193) elevabant(Imp)(Akt).
+(193) they|were|raising.
+= § 9 =
+(195) ita(Adv) tuto(Adv) ac(Kon) sine(Prp) ullo(Adj)(Abl) vulnere(Abl) ac(Kon) periculo(Abl) vi(Abl) tabulata(A)
+(195) thus safely and without any wound and danger by|force floors
+(196) exstruxerunt(Per)(Akt) fenestrasque(A)(Kon), quibus(Pr)(Abl) in(Prp) locis(N)(Abl) visum(Per)(Pas)(N) est(Prä)(Akt), ad(Prp) tormenta(A) mittenda(Gdv)(Fu1)(Pas)(A)
+(196) they|built windows|and, which in places having|seemed it|is, for engines to|be|discharged
+(197) in(Prp) struendo(Ger)(Abl) reliquerunt(Per)(Akt).
+(197) in building they|left.
+=== Kapitel 10 ===
+= § 1 =
+(200) Ubi(Kon) ex(Prp) ea(Pr)(Abl) turri(Abl) quae(Pr)(N) circum(Prp) essent(Imp)(Knj)(Akt) opera(N) tueri(Prä)(Inf)(Akt) se(Pr)(A)
+(200) when from that tower which around were works to|protect themselves
+(201) posse(Prä)(Inf)(Akt) sunt(Prä)(Akt) confisi(Per)(Pas)(N), musculum(A) pedes(A) lx(Adj) longum(Adj)(A) ex(Prp) materia(Abl) bipedali(Adj)(Abl),
+(201) to|be|able they|were having|trusted, shed feet sixty long from timber two|foot,
+(202) quem(Pr)(A) a(Prp) turri(Abl) latericia(Adj)(Abl) ad(Prp) hostium(G) turrim(A) murumque(A)(Kon) perducerent(Imp)(Knj)(Akt), facere(Prä)(Inf)(Akt)
+(202) which from tower brick to of|enemies tower and|wall they|might|lead, to|make
+(203) instituerunt(Per)(Akt).
+(203) they|began.
+= § 2 =
+(205) cuius(Pr)(G) musculi(G) haec(Pr)(N) erat(Imp)(Akt) forma(N). duae(Adj)(N) primum(Adv) trabes(N) in(Prp) solo(Abl)
+(205) of|which of|the|shed these was form. two first beams on ground
+(206) aeque(Adv) longae(Adj)(N) distantes(Prä)(Akt)(N) inter(Prp) se(Pr)(A) pedes(A) iiii(Adj) collocantur(Prä)(Pas) inque(Prp)(Kon) eis(Pr)(Abl)
+(206) equally long standing|apart between themselves feet four are|placed in|and them
+(207) columellae(N) pedum(G) in(Prp) altitudinem(A) v(Adj) defiguntur(Prä)(Pas).
+(207) small|columns of|feet into height five are|fixed.
+= § 3 =
+(209) has(Pr)(A) inter(Prp) se(Pr)(A) capreolis(Abl) molli(Adj)(Abl) fastigio(Abl) coniungunt(Prä)(Akt), ubi(Kon) tigna(N) quae(Pr)(N)
+(209) these between themselves with|props with|gentle gable they|join, where beams which
+(210) musculi(G) tegendi(Ger)(G) causa(N) ponant(Prä)(Knj)(Akt) collocentur(Prä)(Knj)(Pas). eo(Pr)(Abl) super(Prp) tigna(A) bipedalia(Adj)(A) iniciunt(Prä)(Akt)
+(210) of|the|shed for|covering for|the|sake they|may|place they|may|be|placed. there above beams two|foot they|throw|on
+(211) eaque(Pr)(A)(Kon) aminis(Abl) clavisque(Abl)(Kon) religant(Prä)(Akt).
+(211) and|them with|bands and|nails they|fasten.
+= § 4 =
+(213) lad(Prp) extremum(Adj)(A) musculi(G) tectum(A) trabesque(A)(Kon) extremas(Adj)(A) quadratas(Adj)(A) regulas(A) iiii(Adj) patentis(Adj)(A)
+(213) to farthest of|the|shed roof and|beams endmost square bars four spreading
+(214) digitos(A) defigunt(Prä)(Akt), quae(Pr)(N) lateres(A), qui(Pr)(N) super(Prp) musculo(Abl) struantur(Prä)(Knj)(Pas), contineant(Prä)(Knj)(Akt).
+(214) fingers they|fix, which bricks, which above on|the|shed may|be|built, they|may|hold|together.
+= § 5 =
+(216) ita(Adv) fastigato(Per)(Pas)(Abl) atque(Kon) ordinatim(Adv) structo(Per)(Pas)(Abl) ut(Kon) trabes(N) erant(Imp)(Akt) in(Prp) capreolis(Abl)
+(216) thus with|gable|made and in|order having|been|built as beams were in props
+(217) collocatae(Per)(Pas)(N), lateribus(N)(Abl) lutoque(N)(Abl)(Kon) musculus(N), ut(Kon) ab(Prp) igni(N)(Abl) qui(Pr)(N) ex(Prp) muro(N)(Abl)
+(217) placed, with|bricks and|with|mud the|shed, so|that from fire which from wall
+(218) iaceretur(Imp)(Knj)(Pas) tutus(Adj)(N) esset(Imp)(Knj)(Akt), contegitur(Prä)(Pas).
+(218) might|be|thrown safe might|be, is|covered.
+= § 6 =
+(220) super(Prp) lateres(A) coria(N) inducuntur(Prä)(Pas), ne(Pt) canalibus(Abl) aqua(N) immissa(Per)(Pas)(N) lateres(A) diluere(Prä)(Inf)(Akt)
+(220) over bricks hides are|put, lest by|channels water having|been|let|in bricks to|dissolve
+(221) posset(Imp)(Knj)(Akt). coria(N) autem(Pt) ne(Pt) rursus(Adv) igni(Abl) ac(Kon) lapidibus(Abl) corrumpantur(Prä)(Knj)(Pas), centonibus(Abl)
+(221) might|be|able. hides but|now lest again by|fire and by|stones may|be|spoiled, with|quilts
+(222) conteguntur(Prä)(Pas).
+(222) are|covered.
+= § 7 =
+(224) hoc(Pr)(N) opus(N) omne(Adj)(N) tectum(Per)(Pas)(N) vineis(Abl) ad(Prp) ipsam(Adj)(A) turrim(A) perficiunt(Prä)(Akt) subitoque(Adv)(Kon)
+(224) this work all having|been|covered with|vineae to the|very tower they|finish suddenly|and
+(225) inopinantibus(Per)(Pas)(Abl) hostibus(Abl) machinatione(Abl) navali(Adj)(Abl) phalangis(Abl) subiectis(Per)(Pas)(Abl) ad(Prp) turrim(A) hostium(G) admovent(Prä)(Akt),
+(225) with|the|enemies unsuspecting by|machinery naval with|phalanx|beams having|been|set|under to tower of|enemies they|bring|up,
+(226) ut(Kon) aedificio(D) iungatur(Prä)(Knj)(Pas).
+(226) so|that to|the|building it|may|be|joined.
+=== Kapitel 11 ===
+= § 1 =
+(229) Quo(Pr)(Abl) malo(Abl) perterriti(Per)(Pas)(N) subito(Adv) oppidani(N) saxa(A), quam(Adv) maxima(Adj)(A) possunt(Prä)(Akt), vectibus(Abl)
+(229) by|which mischief terrified suddenly townspeople stones, as greatest they|can, with|levers
+(230) promovent(Prä)(Akt), praecipitataque(Per)(Pas)(A)(Kon) muro(Abl) in(Prp) musculum(A) devolvunt(Prä)(Akt). ictum(A) firmitas(N) materiae(G) sustinet(Prä)(Akt),
+(230) they|push|forward, and|having|cast|down from|the|wall onto shed they|roll. blow strength of|material sustains,
+(231) et(Kon) quidquid(Pr)(N) incidit(Prä)(Akt), fastigio(Abl) musculi(G) elabitur(Prä)(Akt).
+(231) and whatever falls, by|the|slope of|the|shed slips|off.
+= § 2 =
+(233) id(Pr)(A) ubi(Kon) vident(Prä)(Akt), mutant(Prä)(Akt) consilium(A); cupas(A) taeda(Abl) ac(Kon) pice(Abl) refertas(Per)(Pas)(A)
+(233) this when they|see, they|change plan; barrels with|pine|wood and with|pitch stuffed
+(234) incendunt(Prä)(Akt) easque(Pr)(A)(Kon) de(Prp) muro(Abl) in(Prp) musculum(A) devolvunt(Prä)(Akt). involutae(Per)(Pas)(N) labuntur(Prä)(Akt), delapsae(Per)(Pas)(N)
+(234) they|set|on|fire and|them from wall onto shed they|roll. wrapped they|glide, having|slipped|down
+(235) ab(Prp) lateribus(Abl) longuriis(Abl) furcisque(Abl)(Kon) ab(Prp) opere(Abl) removentur(Prä)(Pas).
+(235) from sides with|poles and|forks from work are|removed.
+= § 3 =
+(237) interim(Adv) sub(Prp) musculo(Abl) milites(N) vectibus(Abl) infima(Adj)(A) saxa(A) turris(G) hostium(G), quibus(Pr)(Abl)
+(237) meanwhile under shed soldiers with|levers lowest stones of|the|tower of|enemies, by|which
+(238) fundamenta(N) continebantur(Imp)(Pas), convellunt(Prä)(Akt). musculus(N) ex(Prp) turri(Abl) latericia(Adj)(Abl) a(Prp) nostris(Adj)(Abl) telis(Abl)
+(238) foundations were|held|together, they|wrench. the|shed from tower brick by our missiles
+(239) tormentisque(Abl)(Kon) defenditur(Prä)(Pas); hostes(N) ex(Prp) muro(Abl) ac(Kon) turribus(Abl) submoventur(Prä)(Pas); non(Pt) datur(Prä)(Pas)
+(239) and|engines is|defended; enemies from wall and towers are|driven|back; not is|given
+(240) libera(Adj)(N) muri(G) defendendi(Gdv)(Fu1)(Pas)(G) facultas(N).
+(240) free of|the|wall to|be|defended opportunity.
+= § 4 =
+(242) compluribus(Adj)(Abl) iam(Adv) lapidibus(N)(Abl) ex(Prp) illa(Pr)(Abl) quae(Pr)(N) suberat(Imp)(Akt) turri(D) subductis(Per)(Pas)(Abl) repentina(Adj)(N)
+(242) several already stones from that which was|under to|the|tower having|been|removed sudden
+(243) ruina(N) pars(N) eius(Pr)(G) turris(G) concidit(Per)(Akt), pars(N) reliqua(Adj)(N) consequens(Prä)(Akt)(N) procumbebat(Imp)(Akt), cum(Kon)
+(243) collapse part of|that of|tower fell|down, part remaining following was|sinking, when
+(244) hostes(N) urbis(G) direptione(N)(Abl) perterriti(Per)(Pas)(N) inermes(Adj)(N) cum(Prp) infulis(N)(Abl) se(Pr)(A) porta(N)(Abl) foras(Adv)
+(244) enemies of|the|city by|plundering having|been|terrified unarmed with fillets themselves from|the|gate out
+(245) universi(Adj)(N) proripiunt(Prä)(Akt), ad(Prp) legatos(A) atque(Kon) exercitum(A) supplices(Adj)(A) manus(A) tendunt(Prä)(Akt).
+(245) all|together rush|out, to envoys and army suppliant hands they|stretch.
+=== Kapitel 12 ===
+= § 1 =
+(248) Qua(Pr)(Abl) nova(Adj)(Abl) re(N)(Abl) oblata(Per)(Pas)(Abl) omnis(Adj)(N) administratio(N) belli(G) consistit(Prä)(Akt), militesque(N)(Kon) aversi(Per)(Pas)(N)
+(248) by|which new thing having|been|offered all management of|war halts, soldiers|and turned|away|having|been
+(249) a(Prp) proelio(N)(Abl) ad(Prp) studium(A) audiendi(Ger)(G) et(Kon) cognoscendi(Ger)(G) feruntur(Prä)(Pas).
+(249) from battle to zeal of|hearing and of|learning they|are|carried.
+= § 2 =
+(251) ubi(Kon) hostes(N) ad(Prp) legatos(A) exercitumque(A)(Kon) pervenerunt(Per)(Akt), universi(Adj)(N) se(Pr)(A) ad(Prp) pedes(A)
+(251) when enemies to envoys army|and they|arrived, all themselves to feet
+(252) proiciunt(Prä)(Akt); orant(Prä)(Akt), ut(Kon) adventus(N) Caesaris(G) expectetur(Prä)(Knj)(Pas).
+(252) they|throw|down; they|beg, that arrival of|Caesar may|be|awaited.
+= § 3 =
+(254) captam(Per)(Pas)(A) suam(Adj)(A) urbem(A) videre(Prä)(Inf)(Akt), opera(N) perfecta(Per)(Pas)(N), turrim(A) subrutam(Per)(Pas)(A); itaque(Kon) ab(Prp)
+(254) taken their|own city to|see, works having|been|completed, tower having|been|undermined; and|so from
+(255) defensione(N)(Abl) desistere(Prä)(Inf)(Akt). nullam(Adj)(A) exoriri(Prä)(Inf)(Pas) moram(A) posse(Prä)(Inf)(Akt), quominus(Kon) cum(Kon) venisset(Plq)(Knj)(Akt), si(Kon)
+(255) defense to|desist. no to|arise delay to|be|able, that|not when he|had|come, if
+(256) imperata(A) non(Pt) facerent(Imp)(Knj)(Akt) ad(Prp) nutum(A), e(Prp) vestigio(N)(Abl) diriperentur(Imp)(Knj)(Pas).
+(256) the|commands not they|might|do at nod, from the|spot they|might|be|plundered.
+= § 4 =
+(258) docent(Prä)(Akt), si(Kon) omnino(Adv) turris(N) concidisset(Plq)(Knj)(Akt), non(Pt) posse(Prä)(Inf)(Akt) milites(A) contineri(Prä)(Inf)(Pas), quin(Kon)
+(258) they|show, if altogether tower had|fallen, not to|be|able soldiers to|be|held, but|that
+(259) spe(N)(Abl) praedae(G) in(Prp) urbem(A) inrumperent(Imp)(Knj)(Akt) urbemque(A)(Kon) delerent(Imp)(Knj)(Akt). haec(Pr)(N) atque(Kon) eiusdem(Adj)(G)
+(259) with of|booty into city they|might|burst|in city|and they|might|destroy. these and|also of|the|same
+(260) generis(G) complura(Adj)(N) ut(Kon) ab(Prp) hominibus(N)(Abl) doctis(Adj)(Abl) magna(Adj)(Abl) cum(Prp) misericordia(N)(Abl) fletuque(N)(Abl)(Kon)
+(260) of|kind more|things as by men learned great with pity weeping|and
+(261) pronuntiantur(Prä)(Pas).
+(261) are|proclaimed.
+=== Kapitel 13 ===
+= § 1 =
+(264) Quibus(Pr)(Abl) rebus(N)(Abl) commoti(Per)(Pas)(N) legati(N) milites(A) ex(Prp) opere(N)(Abl) deducunt(Prä)(Akt), oppugnatione(N)(Abl) desistunt(Prä)(Akt);
+(264) by|which things having|been|moved envoys soldiers from work they|lead|down, from|the|assault they|cease;
+(265) operibus(N)(Abl) custodias(A) relinquunt(Prä)(Akt).
+(265) at|the|works guards they|leave.
+= § 2 =
+(267) indutiarum(G) quodam(Adj)(Abl) genere(N)(Abl) misericordia(N)(Abl) facto(Per)(Pas)(Abl) adventus(N) Caesaris(G) expectatur(Prä)(Pas). nullum(Adj)(N) ex(Prp)
+(267) of|truce a|certain kind by|pity having|been|done arrival of|Caesar is|expected. no from
+(268) muro(N)(Abl), nullum(Adj)(N) a(Prp) nostris(Adj)(Abl) mittitur(Prä)(Pas) telum(N); ut(Kon) re(N)(Abl) confecta(Per)(Pas)(Abl) omnes(Adj)(N)
+(268) wall, no by our|men is|sent missile; as thing having|been|completed all
+(269) curam(A) et(Kon) diligentiam(A) remittunt(Prä)(Akt).
+(269) care and diligence they|let|go.
+= § 3 =
+(271) Caesar(N) enim(Pt) per(Prp) litteras(N)(Abl) Trebonio(D) magnopere(Adv) mandaverat(Plq)(Akt), ne(Kon) per(Prp) vim(A)
+(271) Caesar for through letters to|Trebonius greatly had|ordered, that|not through force
+(272) oppidum(A) expugnari(Prä)(Inf)(Pas) pateretur(Imp)(Knj)(Akt), ne(Kon) gravius(Adv)(Kmp) permoti(Per)(Pas)(N) milites(N) et(Kon) defectionis(G) odio(N)(Abl)
+(272) town to|be|stormed he|might|allow, that|not more|heavily having|been|moved soldiers and of|defection by|hatred
+(273) et(Kon) contemptione(N)(Abl) sui(Pr)(G) et(Kon) diutino(Adj)(Abl) labore(N)(Abl) omnes(Adj)(A) puberes(Adj)(A) interficerent(Imp)(Knj)(Akt);
+(273) and by|contempt of|himself and by|long labor all of|age they|might|kill;
+= § 4 =
+(275) quod(Kon) se(Pr)(A) facturos(Fu1)(Akt)(A) minabantur(Imp)(Pas) aegreque(Adv)(Kon) tunc(Adv) sunt(Prä)(Akt) retenti(Per)(Pas)(N), quin(Kon) oppidum(A)
+(275) because themselves about|to|do they|were|threatening with|difficulty|and then they|were held|back, but|that town
+(276) inrumperent(Imp)(Knj)(Akt), graviterque(Adv)(Kon) eam(Pr)(A) rem(A) tulerunt(Per)(Akt), quod(Kon) stetisse(Per)(Inf)(Akt) per(Prp) Trebonium(A), quominus(Kon)
+(276) they|might|burst|in, heavily|and that matter they|bore, because to|have|stood through Trebonius, so|that|not
+(277) oppido(N)(Abl) potirentur(Imp)(Knj)(Pas), videbatur(Imp)(Pas).
+(277) of|the|town they|might|get|possession, it|seemed.
+=== Kapitel 14 ===
+= § 1 =
+(280) At(Kon) hostes(N) sine(Prp) fide(N)(Abl) tempus(A) atque(Kon) occasionem(A) fraudis(G) ac(Kon) doli(G)
+(280) but enemies without faith time and opportunity of|fraud and of|trickery
+(281) quaerunt(Prä)(Akt), interiectisque(Per)(Pas)(Abl) aliquot(Adj) diebus(N)(Abl), nostris(Adj)(Abl) languentibus(Prä)(Akt)(Abl) atque(Kon) animo(N)(Abl) remissis(Per)(Pas)(Abl), subito(Adv)
+(281) seek, and|with|having|been|thrown|between several days, our|men languishing and spirit having|been|relaxed, suddenly
+(282) meridiano(Adj)(Abl) tempore(N)(Abl), cum(Kon) alius(Pr)(N) discessisset(Plq)(Knj)(Akt), alius(Pr)(N) ex(Prp) diutino(Adj)(Abl) labore(N)(Abl) in(Prp)
+(282) at|midday time, when one had|departed, another from long labor into
+(283) ipsis(Adj)(Abl) operibus(N)(Abl) quieti(D) se(Pr)(A) dedisset(Plq)(Knj)(Akt), arma(N) vero(Pt) omnia(Adj)(N) reposita(Per)(Pas)(N) contectaque(Per)(Pas)(N)(Kon)
+(283) the|very works to|rest himself had|given, arms indeed all having|been|put|back having|been|covered|and
+(284) essent(Imp)(Knj)(Akt), portis(N)(Abl) se(Pr)(A) foras(Adv) erumpunt(Prä)(Akt), secundo(Adj)(Abl) magnoque(Adj)(Abl)(Kon) vento(N)(Abl) ignem(A) operibus(D)
+(284) were, at|the|gates themselves out break|out, favorable great|and wind fire to|the|works
+(285) inferunt(Prä)(Akt).
+(285) they|bring|in.
+= § 2 =
+(287) hunc(Pr)(A) sic(Adv) distulit(Per)(Akt) ventus(N), uti(Kon) uno(Adj)(Abl) tempore(N)(Abl) agger(N) plutei(G) testudo(N)
+(287) this thus carried|apart wind, so|that one time rampart of|mantelet tortoise
+(288) turris(N) tormenta(N) flammam(A) conciperent(Imp)(Knj)(Akt) et(Kon) prius(Adv) haec(Pr)(N) omnia(Adj)(N) consumerentur(Imp)(Knj)(Pas), quam(Kon)
+(288) tower engines flame they|might|catch and sooner these all might|be|consumed, before
+(289) quemadmodum(Kon) accidisset(Plq)(Knj)(Akt), animadverti(Prä)(Inf)(Pas) posset(Imp)(Knj)(Akt).
+(289) how had|happened, to|be|noticed could.
+= § 3 =
+(291) nostri(Adj)(N) repentina(Adj)(Abl) fortuna(N)(Abl) permoti(Per)(Pas)(N) arma(A) quae(Pr)(N) possunt(Prä)(Akt) adripiunt(Prä)(Akt), alii(Pr)(N) ex(Prp)
+(291) our|men by|sudden fortune having|been|moved arms which they|can snatch|up, others from
+(292) castris(N)(Abl) sese(Pr)(A) incitant(Prä)(Akt). fit(Prä)(Akt) in(Prp) hostis(A) impetus(N) eorum(Pr)(G), sed(Kon) de(Prp)
+(292) from|the|camp themselves they|urge|on. there|is|made against the|enemy attack of|them, but from
+(293) muro(N)(Abl) sagittis(N)(Abl) tormentisque(N)(Abl)(Kon) fugientes(Prä)(Akt)(A) persequi(Prä)(Inf)(Akt) prohibentur(Prä)(Pas).
+(293) the|wall arrows and|engines fleeing to|pursue are|prevented.
+= § 4 =
+(295) illi(Pr)(N) sub(Prp) murum(A) se(Pr)(A) recipiunt(Prä)(Akt) ibique(Adv)(Kon) musculum(A) turrimque(A)(Kon) latericiam(Adj)(A) libere(Adv)
+(295) they under wall themselves withdraw there|and shed tower|and brick freely
+(296) incendunt(Prä)(Akt). ita(Adv) multorum(Adj)(G) mensum(G) labor(N) hostium(G) perfidia(N)(Abl) et(Kon) vi(N)(Abl) tempestatis(G)
+(296) burn. thus of|many of|months labor of|the|enemies by|treachery and by|force of|weather
+(297) puncto(N)(Abl) temporis(G) interiit(Per)(Akt).
+(297) in|a|moment of|time perished.
+= § 5 =
+(299) temptaverunt(Per)(Akt) hoc(Pr)(A) idem(Adj)(A) Massilienses(N) postero(Adj)(Abl) die(N)(Abl). eandem(Adj)(A) nacti(Per)(Pas)(N) tempestatem(A) maiore(Adj)(Abl)(Kmp)
+(299) they|attempted this same the|Massiliots on|the|next day. the|same having|obtained storm with|greater
+(300) cum(Prp) fiducia(Abl) ad(Prp) alteram(Adj)(A) turrim(A) aggeremque(A)(Kon) eruptione(Abl) pugnaverunt(Per)(Akt) multumque(Adj)(A)(Kon) ignem(A)
+(300) with confidence to the|other tower rampart|and by|a|sally they|fought much|and fire
+(301) intulerunt(Per)(Akt).
+(301) they|brought|in.
+= § 6 =
+(303) sed(Kon) ut(Kon) superioris(Adj)(G)(Kmp) temporis(G) contentionem(A) nostri(Adj)(N) omnem(Adj)(A) remiserant(Plq)(Akt), ita(Adv) proximi(Adj)(G)
+(303) but as of|the|earlier of|time effort our|men all had|relaxed, so of|the|next
+(304) diei(G) casu(N)(Abl) admoniti(Per)(Pas)(N) omnia(Adj)(A) ad(Prp) defensionem(A) paraverant(Plq)(Akt). itaque(Kon) multis(Adj)(Abl) interfectis(Per)(Pas)(Abl)
+(304) of|the|day by|chance having|been|warned all|things to defense they|had|prepared. and|so many having|been|killed
+(305) reliquos(Adj)(A) infecta(Per)(Pas)(Abl) re(N)(Abl) in(Prp) oppidum(A) reppulerunt(Per)(Akt).
+(305) the|rest with|the|thing unfinished into town they|drove|back.
+=== Kapitel 15 ===
+= § 1 =
+(308) Trebonius(N) ea(Pr)(A) quae(Pr)(N) sunt(Prä)(Akt) amissa(Per)(Pas)(N) multo(Adj)(Abl) maiore(Adj)(Abl)(Kmp) militum(G) studio(N)(Abl) administrare(Prä)(Inf)(Akt)
+(308) Trebonius those|things which are having|been|lost by|much greater of|the|soldiers zeal to|manage
+(309) et(Kon) reficere(Prä)(Inf)(Akt) instituit(Per)(Akt). nam(Pt) ubi(Kon) tantos(Adj)(A) suos(Adj)(A) labores(A) et(Kon) apparatus(A)
+(309) and to|repair he|began. for when so|great his|own labors and equipment
+(310) male(Adv) cecidisse(Per)(Inf)(Akt) viderunt(Per)(Akt), indutiisque(N)(Abl)(Kon) per(Prp) scelus(A) violatis(Per)(Pas)(Abl) suam(Adj)(D) virtutem(A) inrisui(D)
+(310) badly to|have|fallen they|saw, truces|and through crime having|been|violated their|own valor for|mockery
+(311) fore(Fu1)(Inf)(Akt) perdoluerunt(Per)(Akt), quod(Kon), unde(Kon) agger(N) omnino(Adv) conportari(Prä)(Inf)(Pas) posset(Imp)(Knj)(Akt), nihil(Pr)(N) erat(Imp)(Akt)
+(311) would|be they|grieved|deeply, because, whence rampart at|all to|be|brought|together could, nothing was
+(312) reliquum(Adj)(N), omnibus(Adj)(Abl) arboribus(N)(Abl) longe(Adv) lateque(Adv)(Kon) in(Prp) finibus(N)(Abl) Massiliensium(G) excisis(Per)(Pas)(Abl) et(Kon)
+(312) remaining, with|all trees far wide|and in territories of|the|Massiliots having|been|cut|down and
+(313) convectis(Per)(Pas)(Abl), aggerem(A) novi(Adj)(G) generis(G) atque(Kon) inauditum(Adj)(A) ex(Prp) latericiis(Adj)(Abl) duobus(Adj)(Abl) muris(N)(Abl)
+(313) having|been|carried|together, rampart of|new of|kind and unheard from brick two walls
+(314) senum(Adj)(G) pedum(G) crassitudine(N)(Abl) atque(Kon) eorum(Pr)(G) murorum(G) contignatione(N)(Abl) facere(Prä)(Inf)(Akt) instituerunt(Per)(Akt) aequa(Adj)(Abl)
+(314) of|six of|feet with|thickness and of|those of|walls with|flooring to|make they|began equal
+(315) fere(Adv) altitudine(N)(Abl), atque(Kon) ille(Pr)(N) congesticius(Adj)(N) ex(Prp) materia(N)(Abl) fuerat(Plq)(Akt) agger(N).
+(315) almost in|height, and that heapedup from timber had|been rampart.
+= § 2 =
+(317) ubi(Kon) aut(Kon) spatium(N) inter(Prp) muros(A) aut(Kon) imbecillitas(N) materiae(G) postulare(Prä)(Inf)(Akt) videretur(Imp)(Knj)(Pas),
+(317) when or space between walls or weakness of|material to|demand might|seem,
+(318) pilae(N) interponuntur(Prä)(Pas), traversaria(Adj)(A) tigna(N) iniciuntur(Prä)(Pas), quae(Pr)(N) firmamento(D) esse(Prä)(Inf)(Akt) possint(Prä)(Knj)(Akt), et(Kon)
+(318) posts are|put|between, cross beams are|thrown|on, which for|strengthening to|be may|be|able, and
+(319) quidquid(Pr)(N) est(Prä)(Akt) contignatum(Per)(Pas)(N), cratibus(Abl) consternitur(Prä)(Pas), crates(N) luto(Abl) integuntur(Prä)(Pas).
+(319) whatever is boarded|over, with|hurdles is|covered, hurdles with|mud are|covered.
+= § 3 =
+(321) sub(Prp) tecto(Abl) miles(N) dextra(Abl) ac(Kon) sinistra(Abl) muro(Abl) tectus(Per)(Pas)(N), adversus(Prp) plutei(G)
+(321) under roof soldier on|the|right and on|the|left by|the|wall covered, facing of|the|mantelet
+(322) obiectu(Abl), operi(D) quaecumque(Pr)(N) sunt(Prä)(Akt) usui(D), sine(Prp) periculo(Abl) subportat(Prä)(Akt).
+(322) by|the|interposition, for|the|work whatever|things are for|use, without danger he|brings|up.
+= § 4 =
+(324) celeriter(Adv) res(N) administratur(Prä)(Pas); diuturni(Adj)(G) laboris(G) detrimentum(N) sollertia(Abl) et(Kon) virtute(Abl) militum(G)
+(324) swiftly the|matter is|managed; of|long of|labor loss by|skill and by|courage of|soldiers
+(325) brevi(Abl) reconciliatur(Prä)(Pas). portae(N), quibus(Pr)(Abl) locis(N)(Abl) videtur(Prä)(Pas), eruptionis(G) causa(N)(Abl) in(Prp) muro(N)(Abl)
+(325) in|a|short|time is|restored. gates, in|which places it|seems, of|a|sally for|the|sake in the|wall
+(326) relinquuntur(Prä)(Pas).
+(326) are|left.
+=== Kapitel 16 ===
+= § 1 =
+(329) Quod(Pr)(A) ubi(Kon) hostes(N) viderunt(Per)(Akt), ea(Pr)(A), quae(Pr)(A) diu(Adv) longoque(Adj)(Abl)(Kon) spatio(Abl) refici(Prä)(Inf)(Pas)
+(329) which when the|enemies saw, those|things, which for|long long|and space to|be|repaired
+(330) non(Pt) posse(Prä)(Inf)(Akt) sperassent(Plq)(Knj)(Akt), paucorum(Adj)(G) dierum(G) opera(Abl) et(Kon) labore(Abl) ita(Adv) refecta(Per)(Pas)(A),
+(330) not to|be|able they|had|hoped, of|few of|days by|work and by|labor thus having|been|repaired,
+(331) ut(Kon) nullus(Adj)(N) perfidiae(G) neque(Kon) eruptioni(D) locus(N) esset(Imp)(Knj)(Akt), neque(Kon) quicquam(Pr)(N) omnino(Adv)
+(331) so|that no of|treachery nor for|a|sally place might|be, nor anything at|all
+(332) relinqueretur(Imp)(Knj)(Pas), qua(Pr)(Abl) aut(Kon) telis(Abl) militibus(D) aut(Kon) igni(Abl) operibus(D) noceri(Prä)(Inf)(Pas) posset(Imp)(Knj)(Akt),
+(332) might|be|left, where|by or by|weapons to|the|soldiers or by|fire to|the|works to|be|harmed could,
+= § 2 =
+(334) eodemque(Pr)(Abl)(Kon) exemplo(Abl) sentiunt(Prä)(Akt) totam(Adj)(A) urbem(A), qua(Pr)(Abl) sit(Prä)(Knj)(Akt) aditus(N) ab(Prp) terra(Abl),
+(334) by|the|same|and example they|perceive the|whole city, where there|is approach from the|land,
+(335) muro(Abl) turribusque(Abl)(Kon) circumiri(Prä)(Inf)(Pas) posse(Prä)(Inf)(Akt), sic(Adv) ut(Kon) ipsis(Pr)(D) consistendi(Ger)(G) in(Prp) suis(Pr)(Abl)
+(335) by|a|wall and|towers to|be|surrounded to|be|able, thus that for|themselves of|standing in their|own
+(336) munitionibus(Abl) locus(N) non(Pt) esset(Imp)(Knj)(Akt), cum(Kon) paene(Adv) inaedificata(Per)(Pas)(N) in(Prp) muris(Abl) ab(Prp)
+(336) fortifications place not might|be, when almost built|in on the|walls by
+(337) exercitu(Abl) nostro(Abl) moenia(N) viderentur(Imp)(Knj)(Pas), ac(Kon) telum(N) manu(Abl) coiceretur(Imp)(Knj)(Pas) suorumque(Pr)(G)(Kon) tormentorum(G)
+(337) the|army our walls might|seem, and a|missile by|hand might|be|thrown of|their|own|and of|engines
+(338) usum(A),
+(338) use,
+= § 3 =
+(340) quibus(Pr)(Abl) ipsi(Pr)(N) magna(Adj)(A) speravissent(Plq)(Knj)(Akt), spatii(G) propinquitate(Abl) interire(Prä)(Inf)(Akt) parique(Adj)(Abl)(Kon) condicione(Abl) ex(Prp)
+(340) in|which they|themselves great|things had|hoped, of|distance by|nearness to|perish and|equal condition from
+(341) muro(Abl) ac(Kon) turribus(Abl) bellandi(Ger)(G) data(Per)(Pas)(Abl) se(Pr)(A) virtute(Abl) nostris(Pr)(D) adaequare(Prä)(Inf)(Akt) non(Pt)
+(341) the|wall and towers of|fighting given themselves in|courage to|our|men to|equal not
+(342) posse(Prä)(Inf)(Akt) intellegunt(Prä)(Akt), ad(Prp) easdem(Adj)(A) deditionis(G) condiciones(A) recurrunt(Prä)(Akt).
+(342) to|be|able they|understand, to the|same of|surrender terms they|return.
+=== Kapitel 17 ===
+= § 1 =
+(345) M(N). Varro(N) in(Prp) ulteriore(Adj)(Abl) Hispania(Abl) initio(Abl) cognitis(Per)(Pas)(Abl) iis(Pr)(Abl) rebus(Abl) quae(Pr)(N)
+(345) M. Varro in farther Spain at|the|beginning with|having|been|learned those things which
+(346) sunt(Prä)(Akt) in(Prp) Italia(Abl) gestae(Per)(Pas)(N), diffidens(Prä)(Akt)(N) Pompeianis(Adj)(D) rebus(D) amicissime(Adv)(Sup) de(Prp) Caesare(Abl)
+(346) have|been in Italy done, distrusting to|Pompeian affairs very|friendly about Caesar
+(347) loquebatur(Imp)(Pas):
+(347) he|was|speaking:
+= § 2 =
+(349) praeoccupatum(Per)(Pas)(A) sese(Pr)(A) legatione(Abl) ab(Prp) Cn(N)(Abl). Pompeio(Abl), teneri(Prä)(Inf)(Pas) obstrictum(Per)(Pas)(A) fide(Abl); necessitudinem(N)
+(349) pre|occupied himself by|the|embassy by Cn. Pompey, to|be|held bound by|pledge; connection
+(350) quidem(Pt) sibi(Pr)(D) nihilo(Abl) minorem(Adj)(A) cum(Prp) Caesare(Abl) intercedere(Prä)(Inf)(Akt), neque(Kon) se(Pr)(A) ignorare(Prä)(Inf)(Akt),
+(350) indeed to|himself by|nothing lesser with Caesar to|intervene, nor himself to|be|ignorant,
+(351) quod(Kon) esset(Imp)(Knj)(Akt) officium(N) legati(G), qui(Pr)(N) fiduciariam(Adj)(A) operam(A) obtineret(Imp)(Knj)(Akt), quae(Pr)(N) vires(N)
+(351) what might|be the|duty of|a|legate, who fiduciary service might|hold, what forces
+(352) suae(Adj)(N), quae(Pr)(N) voluntas(N) erga(Prp) Caesarem(A) totius(Adj)(G) provinciae(G).
+(352) his|own, what will toward Caesar of|the|whole province.
+= § 3 =
+(354) haec(Pr)(A) omnibus(Adj)(Abl) ferebat(Imp)(Akt) sermonibus(Abl) neque(Kon) se(Pr)(A) in(Prp) ullam(Adj)(A) partem(A) movebat(Imp)(Akt).
+(354) these|things in|all he|was|saying conversations and|not himself into any direction he|was|moving.
+= § 4 =
+(356) postea(Adv) vero(Pt) quam(Kon) Caesarem(A) ad(Prp) Massiliam(A) detineri(Prä)(Inf)(Pas) cognovit(Per)(Akt), copias(A) Petrei(G)
+(356) afterwards indeed after Caesar to Massilia to|be|kept he|learned, forces of|Petreius
+(357) cum(Prp) exercitu(Abl) Afrani(G) esse(Prä)(Inf)(Akt) coniunctas(Per)(Pas)(A), magna(Adj)(A) auxilia(A) convenisse(Per)(Inf)(Akt), magna(Adj)(N) esse(Prä)(Inf)(Akt)
+(357) with the|army of|Afranius to|be joined, great reinforcements to|have|assembled, great to|be
+(358) in(Prp) spe(Abl) atque(Kon) expectari(Prä)(Inf)(Pas), et(Kon) consentire(Prä)(Inf)(Akt) omnem(Adj)(A) citeriorem(Adj)(Kmp)(A) provinciam(A), quaeque(Pr)(N)(Kon)
+(358) in hope and to|be|expected, and to|agree the|whole nearer province, and|which
+(359) postea(Adv) acciderant(Plq)(Akt), de(Prp) angustiis(Abl) ad(Prp) Ilerdam(A) rei(G) frumentariae(G) accepit(Per)(Akt), atque(Kon)
+(359) afterwards had|happened, about straits|difficulties to Ilerda of|the|matter of|grain he|received, and
+(360) haec(Pr)(A) ad(Prp) eum(Pr)(A) elatius(Adv)(Kmp) atque(Kon) inflatius(Adv)(Kmp) Afranius(N) perscribebat(Imp)(Akt), se(Pr)(A) quoque(Pt)
+(360) these|things to him more|loftily and more|boastfully Afranius was|writing|at|length, himself also
+(361) ad(Prp) motus(A) fortunae(G) movere(Prä)(Inf)(Akt) coepit(Per)(Akt).
+(361) toward movements of|fortune to|move he|began.
+=== Kapitel 18 ===
+= § 1 =
+(364) Dilectum(A) habuit(Per)(Akt) tota(Adj)(Abl) provincia(Abl), legionibus(Abl) conpletis(Per)(Pas)(Abl) duabus(Adj)(Abl) cohortes(A) circiter(Adv) xxx(Adj)
+(364) a|levy he|held in|the|whole province, with|the|legions having|been|filled two cohorts about thirty
+(365) alarias(Adj)(A) addidit(Per)(Akt). frumenti(G) magnum(Adj)(A) numerum(A) coegit(Per)(Akt), quod(Pr)(A) Massiliensibus(D), item(Adv) quod(Pr)(A)
+(365) auxiliary he|added. of|grain a|great number he|collected, which to|the|Massilians, likewise which
+(366) Afranio(D) Petreioque(D)(Kon) mitteret(Imp)(Knj)(Akt). naves(A) longas(Adj)(A) x(Adj) Gaditanis(D) ut(Kon) facerent(Imp)(Knj)(Akt) imperavit(Per)(Akt),
+(366) to|Afranius and|to|Petreius he|might|send. ships long ten to|the|Gaditanians that they|might|make he|ordered,
+(367) compluris(Adj)(A) praeterea(Adv) Hispali(Abl) faciendas(Gdv)(Fu1)(Pas)(A) curavit(Per)(Akt).
+(367) several besides at|Hispalis to|be|made he|saw|to|it.
+= § 2 =
+(369) pecuniam(A) omnem(Adj)(A) omniaque(Adj)(A)(Kon) ornamenta(A) ex(Prp) fano(Abl) Herculis(G) in(Prp) oppidum(A) Gadis(A)
+(369) money all and|all ornaments out|of the|shrine of|Hercules into the|town Gades
+(370) contulit(Per)(Akt); eo(Adv) sex(Adj) cohortes(A) praesidii(G) causa(Abl) ex(Prp) provincia(Abl) misit(Per)(Akt) Gaiumque(A)(Kon)
+(370) he|transferred; there six cohorts of|garrison for|the|sake from the|province he|sent and|Gaius
+(371) Gallonium(A) equitem(A) Romanum(Adj)(A) familiarem(Adj)(A) Domiti(G), qui(Pr)(N) eo(Adv) procurandae(Gdv)(Fu1)(Pas)(G) hereditatis(G) causa(Abl)
+(371) Gallonius a|knight Roman friend of|Domitius, who there of|managing of|the|inheritance for|the|sake
+(372) venerat(Plq)(Akt) missus(Per)(Pas)(N) a(Prp) Domitio(Abl), oppido(D) Gadibus(Abl) praefecit(Per)(Akt); arma(A) omnia(Adj)(A) privata(Adj)(A)
+(372) had|come having|been|sent by Domitius, to|the|town of|Gades he|put|in|charge; arms all private
+(373) ac(Kon) publica(Adj)(A) in(Prp) domum(A) Galloni(G) contulit(Per)(Akt).
+(373) and public into the|house of|Gallonius he|transferred.
+= § 3 =
+(375) ipse(Pr)(N) habuit(Per)(Akt) graves(Adj)(A) in(Prp) Caesarem(A) contiones(A). saepe(Adv) ex(Prp) tribunali(Abl) praedicavit(Per)(Akt)
+(375) he|himself he|held serious against Caesar assemblies|speeches. often from the|platform he|proclaimed
+(376) adversa(Adj)(A) Caesarem(A) proelia(A) fecisse(Per)(Inf)(Akt), magnum(Adj)(A) numerum(A) ab(Prp) eo(Pr)(A) militum(G) ad(Prp)
+(376) adverse to|Caesar battles to|have|fought, a|great number from him of|soldiers to
+(377) Afranium(A) perfugisse(Per)(Inf)(Akt); haec(Pr)(A) se(Pr)(A) certis(Adj)(Abl) nuntiis(Abl), certis(Adj)(Abl) auctoribus(Abl) comperisse(Per)(Inf)(Akt).
+(377) Afranius to|have|deserted; these|things himself by|reliable messengers, by|reliable sources to|have|ascertained.
+= § 4 =
+(379) quibus(Pr)(Abl) rebus(Abl) perterritos(Per)(Pas)(A) civis(A) Romanos(Adj)(A) eius(Pr)(G) provinciae(G) sibi(Pr)(D) ad(Prp) rem(A)
+(379) by|which things frightened citizens Roman of|that province to|himself for the|state
+(380) publicam(Adj)(A) administrandam(Gdv)(Fu1)(Pas)(A) HS(N) ccxxx(Adj) et(Kon) argenti(G) pondo(Abl) xx(Adj) milia(A), tritici(G)
+(380) public to|be|managed sesterces two|hundred|thirty and of|silver by|weight twenty thousands, of|grain
+(381) modios(A) cxx(Adj) milia(A) polliceri(Prä)(Inf)(Pas) coegit(Per)(Akt).
+(381) bushels one|hundred|twenty thousands to|promise he|compelled.
+= § 5 =
+(383) quas(Pr)(A) Caesari(D) esse(Prä)(Inf)(Akt) amicas(Adj)(A) civitates(A) arbitrabatur(Imp)(Pas), his(Pr)(D) graviora(Adj)(Kmp)(A) onera(A) iniungebat(Imp)(Akt)
+(383) which to|Caesar to|be friendly states he|was|judging, on|these heavier burdens he|was|laying|on
+(384) praesidiaque(A)(Kon) eo(Adv) deducebat(Imp)(Akt), et(Kon) iudicia(A) in(Prp) privatos(A) reddebat(Imp)(Akt), qui(Pr)(N) verba(A)
+(384) garrisons|and there he|was|bringing|down, and judgments against private|citizens he|was|rendering, who words
+(385) atque(Kon) orationem(A) adversus(Prp) rem(A) publicam(Adj)(A) habuissent(Plq)(Knj)(Akt); eorum(Pr)(G) bona(A) in(Prp) publicum(A)
+(385) and a|speech against the|state public they|had|held; of|them goods into the|public
+(386) addicebat(Imp)(Akt). provinciam(A) omnem(Adj)(A) in(Prp) sua(Adj)(A) et(Kon) Pompei(G) verba(A) iusiurandum(A) adigebat(Imp)(Akt).
+(386) he|was|auctioning. the|province all to his|own and of|Pompey words oath he|was|compelling.
+= § 6 =
+(388) cognitis(Per)(Pas)(Abl) iis(Pr)(Abl) rebus(Abl) quae(Pr)(N) sunt(Prä)(Akt) gestae(Per)(Pas)(N) in(Prp) citeriore(Adj)(Abl) Hispania(Abl), bellum(A)
+(388) with|having|been|learned these things which have|been done in nearer Spain, war
+(389) parabat(Imp)(Akt). ratio(N) autem(Pt) haec(Pr)(N) erat(Imp)(Akt) belli(G), ut(Kon) se(Pr)(A) cum(Prp) ii(Adj)
+(389) he|was|preparing. the|plan but|now this was of|the|war, that himself with two
+(390) legionibus(Abl) Gadis(A) conferret(Imp)(Knj)(Akt), naves(A) frumentumque(A)(Kon) omne(Adj)(A) ibi(Adv) contineret(Imp)(Knj)(Akt); provinciam(A) enim(Pt)
+(390) legions to|Gades he|might|betake, ships and|grain all there he|might|keep; the|province for
+(391) omnem(Adj)(A) Caesaris(G) rebus(D) favere(Prä)(Inf)(Akt) cognoverat(Plq)(Akt). in(Prp) insula(Abl) frumento(Abl) navibusque(Abl)(Kon) comparatis(Per)(Pas)(Abl)
+(391) all of|Caesar to|the|affairs to|favor he|had|learned. on the|island with|grain and|ships having|been|made|ready
+(392) bellum(A) duci(Prä)(Inf)(Pas) non(Pt) difficile(Adj)(A) existimabat(Imp)(Akt).
+(392) war to|be|prolonged not difficult he|was|considering.
+= § 7 =
+(394) Caesar(N) etsi(Kon) multis(Adj)(Abl) necessariisque(Adj)(Abl)(Kon) rebus(Abl) in(Prp) Italiam(A) revocabatur(Imp)(Pas), tamen(Pt) constituerat(Plq)(Akt)
+(394) Caesar although by|many and|necessary matters into Italy he|was|being|recalled, nevertheless he|had|resolved
+(395) nullam(Adj)(A) partem(A) belli(G) in(Prp) Hispaniis(N)(Abl) relinquere(Prä)(Inf)(Akt), quod(Kon) magna(Adj)(N) esse(Prä)(Inf)(Akt) Pompei(G)
+(395) no part of|war in the|Spains to|leave, because great to|be of|Pompey
+(396) beneficia(A) et(Kon) magnas(Adj)(A) clientelas(A) in(Prp) citeriore(Adj)(Abl) provincia(N)(Abl) sciebat(Imp)(Akt).
+(396) benefits and great client|ties in nearer province he|knew.
+=== Kapitel 19 ===
+= § 1 =
+(399) Itaque(Pt) duabus(Adj)(Abl) legionibus(N)(Abl) missis(Per)(Pas)(Abl) in(Prp) ulteriorem(Adj)(A) Hispaniam(A) cum(Prp) Q(N). Cassio(N)(Abl),
+(399) and|so two legions having|been|sent into farther Spain with Q. Cassius,
+(400) tribuno(N)(Abl) plebis(G), ipse(Pr)(N) cum(Prp) dc(Adj)(Abl) equitibus(N)(Abl) magnis(Adj)(Abl) itineribus(N)(Abl) praegreditur(Prä)(Pas) edictumque(A)(Kon)
+(400) tribune of|the|plebs, himself with six|hundred horsemen by|great marches he|advances|ahead edict|and
+(401) praemittit(Prä)(Akt), ad(Prp) quam(Pr)(A) diem(A) magistratus(N) principesque(N)(Kon) omnium(Adj)(G) civitatum(G) sibi(Pr)(D) esse(Prä)(Inf)(Akt)
+(401) he|sends|ahead, to which day magistrates chiefs|and of|all of|states to|himself to|be
+(402) praesto(Adv) Cordubae(N)(Abl) vellet(Imp)(Knj)(Akt).
+(402) at|hand at|Corduba he|might|wish.
+= § 2 =
+(404) quo(Pr)(Abl) edicto(N)(Abl) tota(Adj)(Abl) provincia(N)(Abl) pervulgato(Per)(Pas)(Abl) nulla(Adj)(N) fuit(Per)(Akt) civitas(N), quin(Kon) ad(Prp)
+(404) by|which edict whole province having|been|spread|abroad no was city, but|that to
+(405) id(Pr)(A) tempus(A) partem(A) senatus(G) Cordubam(A) mitteret(Imp)(Knj)(Akt), non(Pt) civis(N) Romanus(Adj)(N) paulo(Adv)
+(405) that time part of|the|senate to|Corduba might|send, not citizen Roman a|little
+(406) notior(Adj)(N)(Kmp), quin(Kon) ad(Prp) diem(A) conveniret(Imp)(Knj)(Akt).
+(406) better|known, but|that to day might|assemble.
+= § 3 =
+(408) simul(Adv) ipse(Pr)(N) Cordubae(N)(Abl) conventus(N) per(Prp) se(Pr)(Abl) portas(A) Varroni(D) clausit(Per)(Akt), custodias(A)
+(408) at|the|same|time himself at|Corduba assembly through itself gates to|Varro closed, guards
+(409) vigiliasque(A)(Kon) in(Prp) turribus(N)(Abl) muroque(N)(Abl)(Kon) disposuit(Per)(Akt), cohortis(A) duas(Adj)(A), quae(Pr)(N) colonicae(Adj)(N) appellabantur(Imp)(Pas),
+(409) watches|and in towers wall|and he|arranged, cohorts two, who colonial were|called,
+(410) cum(Kon) eo(Pr)(Abl) casu(N)(Abl) venissent(Plq)(Knj)(Akt), tuendi(Ger)(G) oppidi(G) causa(N)(Abl) apud(Prp) se(Pr)(A) retinuit(Per)(Akt).
+(410) when by|that chance they|had|come, of|protecting of|the|town for|the|sake at himself he|kept.
+= § 4 =
+(412) isdem(Adj)(Abl) diebus(N)(Abl) Carmonenses(N), quae(Pr)(N) est(Prä)(Akt) longe(Adv) firmissima(Adj)(Sup)(N) totius(Adj)(G) provinciae(G) civitas(N),
+(412) the|same days the|Carmonenses, which is far firmest of|the|whole of|province city,
+(413) deductis(Per)(Pas)(Abl) tribus(Adj)(Abl) in(Prp) arcem(A) oppidi(G) cohortibus(N)(Abl) a(Prp) Varrone(N)(Abl) praesidio(N)(Abl), per(Prp)
+(413) with|having|been|led|down three into citadel of|the|town cohorts by Varro as|a|garrison, through
+(414) se(Pr)(N) cohortes(A) eiecit(Per)(Akt) portasque(A)(Kon) praeclusit(Per)(Akt).
+(414) itself cohorts he|cast|out gates|and he|shut.
+=== Kapitel 20 ===
+= § 1 =
+(417) Hoc(Pr)(N) vero(Pt) magis(Adv)(Kmp) properare(Prä)(Inf)(Akt) Varro(N), ut(Kon) cum(Prp) legionibus(N)(Abl) quam(Adv) primum(Adv)
+(417) this but|now more to|hasten Varro, so|that with legions as soon|as|possible
+(418) Gadis(A) contenderet(Imp)(Knj)(Akt), ne(Kon) itinere(N)(Abl) aut(Kon) traiectu(N)(Abl) intercluderetur(Imp)(Knj)(Pas); tanta(Adj)(N) ac(Kon) tam(Adv)
+(418) to|Gades he|might|contend, lest by|journey or by|passage he|might|be|shut|off; so|great and so
+(419) secunda(Adj)(N) in(Prp) Caesarem(A) voluntas(N) provinciae(G) reperiebatur(Imp)(Pas).
+(419) favorable toward Caesar goodwill of|the|province was|being|found.
+= § 2 =
+(421) progresso(Per)(Pas)(Abl) ei(Pr)(D) paulo(Adv) longius(Adv)(Kmp) litterae(N) Gadibus(N)(Abl) redduntur(Prä)(Pas), simulatque(Adv) sit(Prä)(Knj)(Akt) cognitum(Per)(Pas)(N)
+(421) with|having|advanced to|him a|little farther letters at|Gades are|delivered, as|soon|as it|may|be having|been|learned
+(422) de(Prp) edicto(N)(Abl) Caesaris(G), consensisse(Per)(Inf)(Akt) Gaditanos(A) principes(A) cum(Prp) tribunis(N)(Abl) cohortium(G) quae(Pr)(N)
+(422) about edict of|Caesar, to|have|agreed the|Gaditanians chiefs with tribunes of|cohorts who
+(423) essent(Imp)(Knj)(Akt) ibi(Adv) in(Prp) praesidio(N)(Abl), ut(Kon) Gallonium(A) ex(Prp) oppido(N)(Abl) expellerent(Imp)(Knj)(Akt), urbem(A)
+(423) were there in garrison, so|that Gallonius out|of town they|might|drive|out, city
+(424) insulamque(A)(Kon) Caesari(D) servarent(Imp)(Knj)(Akt).
+(424) island|and for|Caesar they|might|preserve.
+= § 3 =
+(426) hoc(Pr)(Abl) inito(Per)(Pas)(Abl) consilio(N)(Abl) denuntiavisse(Per)(Inf)(Akt) Gallonio(D), ut(Kon) sua(Pr)(Abl) sponte(N)(Abl), dum(Kon) sine(Prp)
+(426) with|this having|been|entered plan to|have|given|notice to|Gallonius, that of|his|own accord, while without
+(427) periculo(N)(Abl) liceret(Imp)(Knj)(Akt), excederet(Imp)(Knj)(Akt) Gadibus(N)(Abl); si(Kon) id(Pr)(A) non(Pt) fecisset(Plq)(Knj)(Akt), sibi(Pr)(D) consilium(A)
+(427) danger it|might|be|permitted, he|might|depart from|Gades; if that not he|had|done, to|himself plan
+(428) capturos(Fu1)(Akt)(A). hoc(Pr)(Abl) timore(N)(Abl) adductum(Per)(Pas)(A) Gallonium(A) Gadibus(N)(Abl) excessisse(Per)(Inf)(Akt).
+(428) about|to|take. by|this fear having|been|led Gallonius from|Gades to|have|departed.
+= § 4 =
+(430) his(Pr)(Abl) cognitis(Per)(Pas)(Abl) rebus(N)(Abl) altera(Adj)(N) ex(Prp) duabus(Adj)(Abl) legionibus(N)(Abl), quae(Pr)(N) vernacula(Adj)(N) appellabatur(Imp)(Pas),
+(430) with|these having|been|learned things the|other out|of two legions, which home|born was|called,
+(431) ex(Prp) castris(N)(Abl) Varronis(G) adstante(Prä)(Akt)(Abl) et(Kon) inspectante(Prä)(Akt)(Abl) ipso(Pr)(Abl) signa(A) sustulit(Per)(Akt) seseque(Pr)(A)(Kon)
+(431) out|of camp of|Varro standing and watching himself standards he|raised himself|and
+(432) Hispalim(A) recepit(Per)(Akt) atque(Kon) in(Prp) foro(N)(Abl) et(Kon) porticibus(N)(Abl) sine(Prp) maleficio(N)(Abl) consedit(Per)(Akt).
+(432) to|Hispalis he|withdrew and in forum and colonnades without wrongdoing he|settled.
+= § 5 =
+(434) quod(Kon) factum(N) adeo(Adv) eius(Pr)(G) conventus(G) cives(N) Romani(Adj)(N) comprobaverunt(Per)(Akt), ut(Kon) domum(A)
+(434) which deed so of|that assembly citizens Roman approved, that home
+(435) ad(Prp) se(Pr)(A) quisque(Pr)(N) hospitio(N)(Abl) cupidissime(Adv)(Sup) reciperet(Imp)(Knj)(Akt).
+(435) to him each with|hospitality most|eagerly might|receive.
+= § 6 =
+(437) quibus(Pr)(Abl) rebus(N)(Abl) perterritus(Per)(Pas)(N) Varro(N), cum(Kon) itinere(N)(Abl) converso(Per)(Pas)(Abl) sese(Pr)(A) Italicam(A) venturum(Fu1)(Akt)(A)
+(437) by|which things terrified Varro, when with|journey having|been|turned himself to|Italica about|to|come
+(438) praemisisset(Plq)(Knj)(Akt), certior(Adj)(N)(Kmp) ab(Prp) suis(Pr)(Abl) factus(Per)(Pas)(N) est(Prä)(Akt) praeclusas(Per)(Pas)(A) esse(Prä)(Inf)(Akt) portas(A).
+(438) he|had|sent|ahead, more|sure by his|men having|been|made is having|been|shut to|be gates.
+= § 7 =
+(440) tum(Adv) vero(Pt) omni(Adj)(Abl) interclusus(Per)(Pas)(N) itinere(N)(Abl) ad(Prp) Caesarem(A) mittit(Prä)(Akt) paratum(Per)(Pas)(A) se(Pr)(A)
+(440) then but|now by|all having|been|shut|off route to Caesar he|sends prepared himself
+(441) esse(Prä)(Inf)(Akt) legionem(A), cui(Pr)(D) iusserit(Fu2)(Akt), tradere(Prä)(Inf)(Akt). ille(Pr)(N) ad(Prp) eum(Pr)(A) Sex(N). Caesarem(A)
+(441) to|be legion, to|whom he|will|have|ordered, to|hand|over. he to him Sextus. Caesar
+(442) mittit(Prä)(Akt) atque(Kon) huic(Pr)(D) tradi(Prä)(Inf)(Pas) iubet(Prä)(Akt).
+(442) he|sends and to|this to|be|handed|over he|orders.
+= § 8 =
+(444) tradita(Per)(Pas)(Abl) legione(N)(Abl) Varro(N) Cordubam(A) ad(Prp) Caesarem(A) venit(Per)(Akt); relatis(Per)(Pas)(Abl) ad(Prp) eum(Pr)(A)
+(444) with|having|been|handed|over legion Varro to|Corduba to Caesar came; with|having|been|brought|back to him
+(445) publicis(Adj)(Abl) cum(Prp) fide(N)(Abl) rationibus(N)(Abl), quod(Pr)(N) penes(Prp) eum(Pr)(A) est(Prä)(Akt) pecuniae(G), tradit(Prä)(Akt),
+(445) public with good|faith accounts, what in|the|power|of him is of|money, he|hands|over,
+(446) et(Kon), quid(Pr)(A) ubique(Adv) habeat(Prä)(Knj)(Akt) frumenti(G) ac(Kon) navium(G), ostendit(Prä)(Akt).
+(446) and, what everywhere he|may|have of|grain and of|ships, he|shows.
+=== Kapitel 21 ===
+= § 1 =
+(449) Caesar(N) contione(N)(Abl) habita(Per)(Pas)(Abl) Cordubae(N)(Abl) omnibus(Adj)(D) generatim(Adv) gratias(A) agit(Prä)(Akt): civibus(D) Romanis(Adj)(D),
+(449) Caesar with|assembly having|been|held at|Corduba to|all generally thanks gives: to|citizens Roman,
+(450) quod(Kon) oppidum(A) in(Prp) sua(Pr)(Abl) potestate(N)(Abl) studuissent(Plq)(Knj)(Akt) habere(Prä)(Inf)(Akt), Hispanis(D), quod(Kon) praesidia(A)
+(450) because town in his|own power they|had|striven to|have, to|the|Spaniards, because garrisons
+(451) expulissent(Plq)(Knj)(Akt), Gaditanis(D), quod(Kon) conatus(A) adversariorum(G) infregissent(Plq)(Knj)(Akt) seseque(Pr)(A)(Kon) in(Prp) libertatem(A) vindicavissent(Plq)(Knj)(Akt),
+(451) they|had|driven|out, to|the|Gaditanians, because attempts of|opponents they|had|broken themselves|and into freedom they|had|claimed,
+(452) tribunis(D) militum(G) centurionibusque(D)(Kon), qui(Pr)(N) eo(Pr)(Abl) praesidii(G) causa(N)(Abl) venerant(Plq)(Akt), quod(Kon) eorum(Pr)(G)
+(452) to|tribunes of|soldiers and|centurions, who there of|garrison for|the|sake had|come, because of|them
+(453) consilia(A) sua(Pr)(A) virtute(N)(Abl) confirmavissent(Plq)(Knj)(Akt).
+(453) plans by|their|own valor they|had|strengthened.
+= § 2 =
+(455) pecunias(A), quas(Pr)(A) erant(Imp)(Akt) in(Prp) publicum(A) Varroni(D) cives(N) Romani(Adj)(N) polliciti(Per)(Pas)(N), remittit(Prä)(Akt);
+(455) moneys, which were into public to|Varro citizens Roman having|promised, he|sends|back;
+(456) bona(A) restituit(Prä)(Akt) iis(Pr)(D) quos(Pr)(A) liberius(Adv)(Kmp) locutos(Per)(Pas)(A) hanc(Pr)(A) poenam(A) tulisse(Per)(Inf)(Akt) cognoverat(Plq)(Akt).
+(456) goods he|restores to|those whom more|freely having|spoken this penalty to|have|borne he|had|learned.
+= § 3 =
+(458) tributis(Per)(Pas)(Abl) quibusdam(Adj)(Abl) publicis(Adj)(Abl) privatisque(Adj)(Abl)(Kon) praemiis(N)(Abl) reliquos(Adj)(A) in(Prp) posterum(A) bona(Adj)(Abl) spe(N)(Abl)
+(458) with|having|been|granted certain public and|private rewards the|rest for the|future good hope
+(459) complet(Prä)(Akt) biduumque(A)(Kon) Cordubae(N)(Abl) commoratus(Per)(Pas)(N) Gadis(A) proficiscitur(Prä)(Pas); pecunias(A) monimentaque(A)(Kon) quae(Pr)(N) ex(Prp)
+(459) he|fills two|days|and at|Corduba having|stayed to|Gades he|sets|out; moneys memorials|and which out|of
+(460) fano(N)(Abl) Herculis(G) collata(Per)(Pas)(N) erant(Imp)(Akt) in(Prp) privatam(Adj)(A) domum(A), referri(Prä)(Inf)(Pas) in(Prp) templum(A)
+(460) shrine of|Hercules having|been|brought|together were into private house, to|be|carried|back into temple
+(461) iubet(Prä)(Akt).
+(461) he|orders.
+= § 4 =
+(463) provinciae(D) Q(N). Cassium(A) praeficit(Prä)(Akt); huic(Pr)(D) iiii(Adj)(A) legiones(A) adtribuit(Prä)(Akt). ipse(Pr)(N) iis(Pr)(Abl)
+(463) of|the|province Q. Cassius he|puts|in|charge; to|this four legions he|assigns. himself with|those
+(464) navibus(N)(Abl) quas(Pr)(A) M(N). Varro(N) quasque(Pr)(A)(Kon) Gaditani(N) iussu(N)(Abl) Varronis(G) fecerant(Plq)(Akt), Tarraconem(A)
+(464) ships which M. Varro and|which the|Gaditanians by|order of|Varro had|made, to|Tarraco
+(465) paucis(Adj)(Abl) diebus(N)(Abl) pervenit(Per)(Akt). ibi(Adv) totius(Adj)(G) fere(Adv) citerioris(Adj)(G) provinciae(G) legationes(N) Caesaris(G)
+(465) in|few days he|arrived. there of|the|whole almost of|nearer province delegations of|Caesar
+(466) adventum(A) exspectabant(Imp)(Akt).
+(466) arrival they|were|awaiting.
+= § 5 =
+(468) eadem(Adj)(Abl) ratione(N)(Abl) privatim(Adv) ac(Kon) publice(Adv) quibusdam(Adj)(Abl) civitatibus(N)(Abl) habitis(Per)(Pas)(Abl) honoribus(N)(Abl) Tarracone(N)(Abl)
+(468) by|the|same method privately and publicly to|certain cities having|been|held honors at|Tarraco
+(469) discedit(Prä)(Akt) pedibusque(N)(Abl)(Kon) Narbonem(A) atque(Kon) inde(Adv) Massiliam(A) pervenit(Per)(Akt). ibi(Adv) legem(A) de(Prp)
+(469) he|departs on|foot|and to|Narbo and from|there to|Massilia he|arrived. there law about
+(470) dictatore(N)(Abl) latam(Per)(Pas)(A) seseque(Pr)(A)(Kon) dictatorem(A) dictum(Per)(Pas)(A) a(Prp) M(N). Lepido(N)(Abl) praetore(N)(Abl) cognoscit(Prä)(Akt).
+(470) dictator having|been|passed himself|and dictator having|been|declared by M. Lepidus praetor he|learns.
+=== Kapitel 22 ===
+= § 1 =
+(473) Massilienses(N) omnibus(Adj)(Abl) defessi(Per)(Pas)(N) malis(N)(Abl), rei(G) frumentariae(Adj)(G) ad(Prp) summam(Adj)(A) inopiam(A) adducti(Per)(Pas)(N),
+(473) the|Massiliots by|all having|been|wearied by|misfortunes, of|the|supply of|grain to to|the|extreme want|lack having|been|led,
+(474) bis(Adv) proelio(N)(Abl) navali(Adj)(Abl) superati(Per)(Pas)(N), crebris(Adj)(Abl) eruptionibus(N)(Abl) fusi(Per)(Pas)(N), gravi(Adj)(Abl) etiam(Adv) pestilentia(N)(Abl)
+(474) twice in|battle naval having|been|overcome, by|frequent sallies having|been|routed, by|severe also pestilence
+(475) conflictati(Per)(Pas)(N) ex(Prp) diutina(Adj)(Abl) conclusione(N)(Abl) et(Kon) mutatione(N)(Abl) victus(G) — panico(N)(Abl) enim(Pt)
+(475) having|been|afflicted from long confinement and change of|diet — with|millet for
+(476) vetere(Adj)(Abl) atque(Kon) hordeo(N)(Abl) corrupto(Per)(Pas)(Abl) omnes(Pr)(N) alebantur(Imp)(Pas), quod(Pr)(N) ad(Prp) huiusmodi(Adj)(G) casus(A)
+(476) old and with|barley having|been|spoiled all were|being|nourished, which for of|this|kind cases
+(477) antiquitus(Adv) paratum(Per)(Pas)(A) in(Prp) publicum(A) contulerant(Plq)(Akt) — deiecta(Per)(Pas)(Abl) turri(N)(Abl), labefacta(Per)(Pas)(Abl) magna(Adj)(Abl)
+(477) from|ancient|times having|been|prepared into the|public they|had|brought|together — with|having|been|cast|down tower, having|been|undermined great
+(478) parte(N)(Abl) muri(G), auxiliis(N)(Abl) provinciarum(G) et(Kon) exercituum(G) desperatis(Per)(Pas)(Abl), quos(Pr)(A) in(Prp) Caesaris(G)
+(478) by|part of|the|wall, with|supports of|provinces and of|armies having|been|despaired|of, whom into of|Caesar
+(479) potestatem(A) venisse(Per)(Inf)(Akt) cognoverant(Plq)(Akt), sese(Pr)(A) dedere(Prä)(Inf)(Akt) sine(Prp) fraude(N)(Abl) constituunt(Prä)(Akt).
+(479) power to|have|come they|had|learned, themselves to|surrender without fraud they|determine.
+= § 2 =
+(481) sed(Kon) paucis(Adj)(Abl) ante(Adv) diebus(N)(Abl) L(N). Domitius(N) cognita(Per)(Pas)(Abl) Massiliensium(G) voluntate(N)(Abl) navibus(N)(Abl)
+(481) but in|few before days L. Domitius with|having|been|learned of|the|Massiliots will with|ships
+(482) iii(Adj) comparatis(Per)(Pas)(Abl), ex(Prp) quibus(Pr)(Abl) duas(Adj)(A) familiaribus(Adj)(Abl) suis(Pr)(Abl) adtribuerat(Plq)(Akt), unam(Adj)(A) ipse(Pr)(N)
+(482) three having|been|prepared, out|of which two to|intimates|friends their|own he|had|assigned, one himself
+(483) conscenderat(Plq)(Akt), nactus(Per)(Akt)(N) turbidam(Adj)(A) tempestatem(A) profectus(Per)(Akt)(N) est(Prä)(Akt).
+(483) he|had|embarked, having|obtained troubled storm having|set|out has.
+= § 3 =
+(485) hunc(Pr)(A) conspicatae(Per)(Pas)(N) naves(N) quae(Pr)(N) iussu(N)(Abl) Bruti(G) consuetudine(N)(Abl) cotidiana(Adj)(Abl) ad(Prp) portum(A)
+(485) him having|caught|sight ships who by|order of|Brutus by|custom daily to harbor
+(486) excubabant(Imp)(Akt), sublatis(Per)(Pas)(Abl) ancoris(N)(Abl) sequi(Prä)(Inf)(Akt) coeperunt(Per)(Akt).
+(486) they|were|keeping|watch, with|having|been|raised anchors to|follow they|began.
+= § 4 =
+(488) ex(Prp) his(Pr)(Abl) unum(Adj)(N) ipsius(Pr)(G) navigium(N) contendit(Per)(Akt) et(Kon) fugere(Prä)(Inf)(Akt) perseveravit(Per)(Akt) auxilioque(N)(Abl)(Kon)
+(488) out|of these one of|him ship it|hurried and to|flee he|persisted by|the|help|and
+(489) tempestatis(G) ex(Prp) conspectu(N)(Abl) abiit(Per)(Akt), duo(Adj)(N) perterrita(Per)(Pas)(N) concursu(N)(Abl) nostrarum(Adj)(G) navium(G) sese(Pr)(N)
+(489) of|the|storm out|of sight he|went|away, two frightened by|the|onrush of|our ships themselves
+(490) in(Prp) portum(A) receperunt(Per)(Akt).
+(490) into harbor they|withdrew.
+= § 5 =
+(492) Massilienses(N) arma(A) tormentaque(A)(Kon) ex(Prp) oppido(N)(Abl), ut(Kon) est(Prä)(Akt) imperatum(Per)(Pas)(N), proferunt(Prä)(Akt), navis(A)
+(492) the|Massiliots arms engines|and out|of the|town, as is having|been|ordered, they|bring|forth, ships
+(493) ex(Prp) portu(N)(Abl) navalibusque(N)(Abl)(Kon) educunt(Prä)(Akt), pecuniam(A) ex(Prp) publico(N)(Abl) tradunt(Prä)(Akt).
+(493) out|of harbor dockyards|and they|lead|out, money out|of the|public they|hand|over.
+= § 6 =
+(495) quibus(Pr)(Abl) rebus(N)(Abl) confectis(Per)(Pas)(Abl) Caesar(N) magis(Adv) eos(Pr)(A) pro(Prp) nomine(N)(Abl) et(Kon) vetustate(N)(Abl)
+(495) by|which things with|having|been|completed Caesar more them for reputation|name and antiquity
+(496) quam(Kon) pro(Prp) meritis(N)(Abl) in(Prp) se(Pr)(Abl) civitatis(G) conservans(Prä)(Akt)(N), duas(Adj)(A) ibi(Adv) legiones(A)
+(496) than for deserts|merits toward himself of|the|state preserving, two there legions
+(497) praesidio(D) relinquit(Prä)(Akt), ceteras(Adj)(A) in(Prp) Italiam(A) mittit(Prä)(Akt); ipse(Pr)(N) ad(Prp) urbem(A) proficiscitur(Prä)(Akt).
+(497) as|a|garrison he|leaves, the|rest into Italy he|sends; he|himself to the|city he|sets|out.
+=== Kapitel 23 ===
+= § 1 =
+(500) Isdem(Adj)(Abl) temporibus(N)(Abl) C(N). Curio(N) in(Prp) Africam(A) profectus(Per)(Akt)(N) ex(Prp) Sicilia(N)(Abl) et(Kon)
+(500) at|the|same times C. Curio into Africa having|set|out from Sicily and
+(501) iam(Adv) ab(Prp) initio(N)(Abl) copias(A) P(N). Atti(G) Vari(G) despiciens(Prä)(Akt)(N) duas(Adj)(A) legiones(A)
+(501) already from the|beginning forces P. of|Attius of|Varus despising two legions
+(502) ex(Prp) iiii(Adj) quas(Pr)(A) a(Prp) Caesare(N)(Abl) acceperat(Plq)(Akt), d(Adj) equites(A) transportabat(Imp)(Akt) biduoque(N)(Abl)(Kon)
+(502) from four which from Caesar he|had|received, five|hundred horsemen he|was|transporting in|two|days|and
+(503) et(Kon) noctibus(N)(Abl) tribus(Adj)(Abl) navigatione(N)(Abl) consumptis(Per)(Pas)(Abl) adpellit(Per)(Akt) ad(Prp) eum(Pr)(A) locum(A) qui(Pr)(N)
+(503) and nights three by|a|sailing with|having|been|spent he|lands to that place which
+(504) appellatur(Prä)(Pas) Anquillaria(N).
+(504) is|called Anquillaria.
+= § 2 =
+(506) hic(Pr)(N) locus(N) abest(Prä)(Akt) a(Prp) Clupeis(N)(Abl) passuum(G) xxii(Adj) milia(A) habetque(Prä)(Akt)(Kon) non(Pt)
+(506) this place is|distant from Clupea of|paces twenty|two thousands has|and not
+(507) incommodam(Adj)(A) aestate(N)(Abl) stationem(A) et(Kon) duobus(Adj)(Abl) eminentibus(Prä)(Akt)(Abl) promunturiis(N)(Abl) continetur(Prä)(Pas).
+(507) inconvenient in|summer anchorage and by|two projecting headlands is|enclosed.
+= § 3 =
+(509) huius(Pr)(G) adventum(A) L(N). Caesar(N) filius(N) cum(Prp) x(Adj) longis(Adj)(Abl) navibus(N)(Abl) ad(Prp)
+(509) of|this arrival L. Caesar son with ten long ships to
+(510) Clupeas(A) praestolans(Prä)(Akt)(N), quas(Pr)(A) navis(A) Uticae(G) ex(Prp) praedonum(G) bello(N)(Abl) subductas(Per)(Pas)(A) P(N).
+(510) Clupea waiting, which ships of|Utica from of|pirates war having|been|drawn|up P.
+(511) Attius(N) reficiendas(Gdv)(Fu1)(Pas)(A) huius(Pr)(G) belli(G) causa(Abl) curaverat(Plq)(Akt), veritus(Per)(Akt)(N) navium(G) multitudinem(A) ex(Prp)
+(511) Attius to|be|repaired of|this of|war for|the|sake he|had|seen|to|it, having|feared of|ships multitude from
+(512) alto(N)(Abl) refugerat(Plq)(Akt) appulsaque(Per)(Pas)(N)(Kon) ad(Prp) proximum(Adj)(A) litus(A) trireme(N) constrata(Per)(Pas)(N) et(Kon) in(Prp)
+(512) the|deep he|had|fled|back having|been|driven|to|and to nearest shore trireme decked and on
+(513) litore(N)(Abl) relicta(Per)(Pas)(Abl) pedibus(N)(Abl) Hadrumetum(A) perfugerat(Plq)(Akt).
+(513) the|shore having|been|left on|foot Hadrumetum he|had|fled|for|refuge.
+= § 4 =
+(515) id(Pr)(N) oppidum(N) C(N). Considius(N) Longus(N) unius(Adj)(G) legionis(G) praesidio(N)(Abl) tuebatur(Imp)(Pas). reliquae(Adj)(N)
+(515) that town C. Considius Longus of|one legion by|a|garrison he|was|guarding. the|rest
+(516) Caesaris(G) naves(N) eius(Pr)(G) fuga(N)(Abl) se(Pr)(A) Hadrumetum(A) receperunt(Per)(Akt).
+(516) of|Caesar ships of|him by|flight themselves to|Hadrumetum withdrew.
+= § 5 =
+(518) hunc(Pr)(A) secutus(Per)(Akt)(N) Marcius(N) Rufus(N) quaestor(N) navibus(N)(Abl) xii(Adj), quas(Pr)(A) praesidio(D) onerariis(Adj)(Abl)
+(518) him having|followed Marcius Rufus quaestor with|ships twelve, which as|a|garrison transport
+(519) navibus(N)(Abl) Curio(N) ex(Prp) Sicilia(Abl) eduxerat(Plq)(Akt), postquam(Kon) in(Prp) litore(N)(Abl) relictam(Per)(Pas)(A) navem(A)
+(519) ships Curio from Sicily he|had|led|out, after on the|shore having|been|left ship
+(520) conspexit(Per)(Akt), hanc(Pr)(A) remulco(N)(Abl) abstraxit(Per)(Akt); ipse(Pr)(N) ad(Prp) C(N). Curionem(A) cum(Prp) classe(N)(Abl)
+(520) he|caught|sight|of, this with|a|tow he|hauled|off; himself to C. Curio with fleet
+(521) redit(Prä)(Akt).
+(521) he|returns.
+=== Kapitel 24 ===
+= § 1 =
+(524) Curio(N) Marcium(A) Uticam(A) navibus(N)(Abl) praemittit(Prä)(Akt); ipse(Pr)(N) eodem(Adv) cum(Prp) exercitu(N)(Abl) proficiscitur(Prä)(Akt)
+(524) Curio Marcius to|Utica with|ships he|sends|ahead; himself to|the|same|place with army he|sets|out
+(525) biduique(G)(Kon) iter(A) progressus(Per)(Akt)(N) ad(Prp) flumen(A) Bagradam(A) pervenit(Per)(Akt).
+(525) of|two|days|and march|journey having|advanced to river Bagrada he|arrives.
+= § 2 =
+(527) ibi(Adv) C(N). Caninium(N) Rebilum(N) legatum(A) cum(Prp) legionibus(N)(Abl) relinquit(Prä)(Akt); ipse(Pr)(N) cum(Prp)
+(527) there C. Caninius Rebilus as|legate with legions he|leaves; himself with
+(528) equitatu(N)(Abl) antecedit(Prä)(Akt) ad(Prp) Castra(A) exploranda(Gdv)(Fu1)(Pas)(A) Cornelia(N), quod(Kon) is(Pr)(N) locus(N) peridoneus(Adj)(N)
+(528) cavalry he|goes|ahead to Camp to|be|reconnoitered Cornelia, because this place very|suitable
+(529) castris(N)(Abl) habebatur(Imp)(Pas).
+(529) for|a|camp was|held.
+= § 3 =
+(531) id(Pr)(N) autem(Pt) est(Prä)(Akt) iugum(N) derectum(Per)(Pas)(N) eminens(Prä)(Akt)(N) in(Prp) mare(A), utraque(Adj)(N) ex(Prp)
+(531) that but|now is ridge straight jutting into sea, each from
+(532) parte(N)(Abl) praeruptum(Per)(Pas)(N) atque(Kon) asperum(Adj)(N), sed(Kon) tamen(Pt) paulo(Adv) leniore(Adj)(Abl)(Kmp) fastigio(N)(Abl) ab(Prp)
+(532) side steep and rough, but nevertheless a|little gentler slope from
+(533) ea(Pr)(Abl) parte(N)(Abl), quae(Pr)(N) ad(Prp) Uticam(A) vergit(Prä)(Akt).
+(533) that side, which toward Utica slopes.
+= § 4 =
+(535) abest(Prä)(Akt) derecto(Adj)(Abl) itinere(N)(Abl) ab(Prp) Utica(N)(Abl) paulo(Adv) amplius(Adv)(Kmp) passus(A) mille(Adj). sed(Kon)
+(535) it|is|distant straight path from Utica a|little more paces thousand. but
+(536) hoc(Pr)(Abl) itinere(N)(Abl) est(Prä)(Akt) fons(N), quo(Pr)(Abl) mare(N) succedit(Prä)(Akt) longius(Adv)(Kmp), lateque(Adv)(Kon) is(Pr)(N)
+(536) on|this path there|is a|spring, where sea comes|up farther, broadly|and it
+(537) locus(N) restagnat(Prä)(Akt); quem(Pr)(A) siqui(Pr)(N) vitare(Prä)(Inf)(Akt) voluerit(Fu2)(Akt), vi(Adj) milium(G) circuitu(N)(Abl) in(Prp)
+(537) place stagnates; which if|someone to|avoid will|have|wished, six of|miles by|a|detour into
+(538) oppidum(A) pervenit(Per)(Akt).
+(538) the|town he|arrives.
+=== Kapitel 25 ===
+= § 1 =
+(541) Hoc(Pr)(Abl) explorato(Per)(Pas)(Abl) loco(N)(Abl) Curio(N) castra(A) Vari(G) conspicit(Prä)(Akt) muro(N)(Abl) oppidoque(N)(Abl)(Kon) coniuncta(Per)(Pas)(A)
+(541) with|this having|been|examined place Curio camp of|Varus he|observes by|the|wall and|by|the|town joined
+(542) ad(Prp) portam(A), quae(Pr)(N) appellatur(Prä)(Pas) Belica(N), admodum(Adv) munita(Per)(Pas)(A) natura(N)(Abl) loci(G), una(Adj)(Abl)
+(542) at the|gate, which is|called Belica, very fortified by|nature of|the|place, on|one
+(543) ex(Prp) parte(N)(Abl) ipso(Adj)(Abl) oppido(N)(Abl) Utica(N)(Abl), altera(Adj)(Abl) a(Prp) theatro(N)(Abl), quod(Pr)(N) est(Prä)(Akt)
+(543) from side itself town Utica, on|the|other from theatre, which is
+(544) ante(Prp) oppidum(A), substructionibus(N)(Abl) eius(Pr)(G) operis(G) maximis(Adj)(Abl)(Sup), aditu(N)(Abl) ad(Prp) castra(A) difficili(Adj)(Abl)
+(544) before the|town, by|substructures of|its work very|great, by|an|approach to the|camp difficult
+(545) et(Kon) angusto(Adj)(Abl).
+(545) and narrow.
+= § 2 =
+(547) simul(Adv) animadvertit(Per)(Akt) multa(Adj)(N) undique(Adv) portari(Prä)(Inf)(Pas) atque(Kon) agi(Prä)(Inf)(Pas) plenissimis(Adj)(Abl)(Sup) viis(N)(Abl), quae(Pr)(N)
+(547) at|the|same|time he|notices many|things from|everywhere to|be|carried and to|be|driven very|full roads, which
+(548) repentini(Adj)(G) tumultus(G) timore(N)(Abl) ex(Prp) agris(N)(Abl) in(Prp) urbem(A) conferebantur(Imp)(Pas).
+(548) of|sudden disturbance by|fear out|of fields into the|city were|being|carried.
+= § 3 =
+(550) huc(Adv) equitatum(A) mittit(Prä)(Akt), ut(Kon) diriperet(Imp)(Knj)(Akt) atque(Kon) haberet(Imp)(Knj)(Akt) loco(N)(Abl) praedae(G); eodemque(Adv)(Kon)
+(550) hither cavalry he|sends, so|that he|might|plunder and he|might|have as|a|place of|booty; to|the|same|place|and
+(551) tempore(Abl) his(Pr)(D) rebus(D) subsidio(D) dc(Adj)(N) equites(N) Numidae(N) ex(Prp) oppido(N)(Abl) peditesque(N)(Kon)
+(551) at|that|time for|these things as|a|relief six|hundred horsemen Numidians from the|town foot|soldiers|and
+(552) cccc(Adj)(N) mittuntur(Prä)(Pas) a(Prp) Varo(N)(Abl), quos(Pr)(A) auxilii(G) causa(N)(Abl) rex(N) Iuba(N) paucis(Adj)(Abl)
+(552) four|hundred are|sent by Varus, whom of|aid for|the|sake king Juba a|few
+(553) diebus(N)(Abl) ante(Adv) Uticam(A) miserat(Plq)(Akt).
+(553) days before Utica had|sent.
+= § 4 =
+(555) huic(Pr)(D) et(Kon) paternum(Adj)(N) hospitium(N) cum(Prp) Pompeio(N)(Abl) et(Kon) simultas(N) cum(Prp) Curione(N)(Abl)
+(555) for|him and paternal guest|friendship with Pompey and feud with Curio
+(556) intercedebat(Imp)(Akt), quod(Kon) tribunus(N) plebis(G) legem(A) promulgaverat(Plq)(Akt), qua(Pr)(Abl) lege(N)(Abl) regnum(A) Iubae(G)
+(556) stood|between, because tribune of|the|plebs a|law had|promulgated, by|which law kingdom of|Juba
+(557) publicaverat(Plq)(Akt).
+(557) had|confiscated.
+= § 5 =
+(559) concurrunt(Prä)(Akt) equites(N) inter(Prp) se(Pr)(A); neque(Kon) vero(Pt) primum(Adj)(A) impetum(A) nostrorum(Adj)(G) Numidae(N)
+(559) run|together horsemen among themselves; nor indeed first attack of|our|men the|Numidians
+(560) ferre(Prä)(Inf)(Akt) potuerunt(Per)(Akt), sed(Kon) interfectis(Per)(Pas)(Abl) circiter(Adv) cxx(Adj) reliqui(Adj)(N) se(Pr)(A) in(Prp) castra(A)
+(560) to|bear were|able, but with|having|been|killed about one|hundred|twenty the|rest themselves into the|camp
+(561) ad(Prp) oppidum(A) receperunt(Per)(Akt).
+(561) to the|town took|themselves|back.
+= § 6 =
+(563) interim(Adv) adventu(N)(Abl) longarum(Adj)(G) navium(G) Curio(N) pronuntiari(Prä)(Inf)(Pas) onerariis(Adj)(Abl) navibus(N)(Abl) iubet(Prä)(Akt), quae(Pr)(N)
+(563) meanwhile at|the|arrival of|long ships Curio to|be|announced to|the|transport ships orders, which
+(564) stabant(Imp)(Akt) ad(Prp) Uticam(A) numero(N)(Abl) circiter(Adv) cc(Adj), se(Pr)(A) in(Prp) hostium(G) habiturum(Fu1)(Akt)(A)
+(564) were|standing at Utica in|number about two|hundred, himself in of|enemies about|to|have
+(565) loco(N)(Abl), qui(Pr)(N) non(Pt) ex(Prp) vestigio(N)(Abl) ad(Prp) Castra(A) Cornelia(A) naves(A) traduxisset(Plq)(Knj)(Akt).
+(565) as|a|place, who not from the|spot to Camp Cornelia ships had|led|across.
+= § 7 =
+(567) qua(Pr)(Abl) pronuntiatione(N)(Abl) facta(Per)(Pas)(Abl) temporis(G) puncto(N)(Abl) sublatis(Per)(Pas)(Abl) ancoris(N)(Abl) omnes(Adj)(N) Uticam(A) relinquunt(Prä)(Akt)
+(567) by|which proclamation having|been|made of|time at|a|point with|having|been|raised anchors all Utica leave
+(568) et(Kon), quo(Adv) imperatum(Per)(Pas)(N) est(Prä)(Akt), transeunt(Prä)(Akt). quae(Pr)(N) res(N) omnium(Adj)(G) rerum(G) copia(N)
+(568) and, whither having|been|ordered is, they|cross. which thing of|all things abundance|supply
+(569) complevit(Per)(Akt) exercitum(A).
+(569) filled the|army.
+=== Kapitel 26 ===
+= § 1 =
+(572) His(Pr)(Abl) rebus(N)(Abl) gestis(Per)(Pas)(Abl) Curio(N) se(Pr)(A) in(Prp) castra(A) ad(Prp) Bagradam(A) recipit(Prä)(Akt)
+(572) with|these things having|been|done Curio himself into the|camp to the|Bagrada withdraws
+(573) atque(Kon) universi(Adj)(G) exercitus(G) conclamatione(N)(Abl) imperator(N) appellatur(Prä)(Pas), posteroque(Adj)(Abl)(Kon) die(N)(Abl) Uticam(A) exercitum(A)
+(573) and of|the|whole army by|acclamation commander is|called, on|the|next|and day to|Utica the|army
+(574) ducit(Prä)(Akt) et(Kon) prope(Prp) oppidum(A) castra(A) ponit(Prä)(Akt).
+(574) leads and near the|town a|camp places.
+= § 2 =
+(576) nondum(Adv) opere(N)(Abl) castrorum(G) perfecto(Per)(Pas)(Abl) equites(N) ex(Prp) statione(N)(Abl) nuntiant(Prä)(Akt) magna(Adj)(N) auxilia(N)
+(576) not|yet the|work of|the|camp having|been|completed horsemen from the|picket announce great reinforcements
+(577) equitum(G) peditumque(G)(Kon) ab(Prp) rege(N)(Abl) missa(Per)(Pas)(N) Uticam(A) venire(Prä)(Inf)(Akt); eodemque(Adj)(Abl)(Kon) tempore(N)(Abl) vis(N)
+(577) of|horsemen and|of|foot|soldiers by the|king having|been|sent to|Utica to|come; in|the|same|and time a|force
+(578) magna(Adj)(N) pulveris(G) cernebatur(Imp)(Pas), et(Kon) vestigio(N)(Abl) temporis(G) primum(Adj)(N) agmen(N) erat(Imp)(Akt) in(Prp)
+(578) great of|dust was|discerned, and in|a|moment of|time the|first column was in
+(579) conspectu(N)(Abl).
+(579) view.
+= § 3 =
+(581) novitate(N)(Abl) rei(G) Curio(N) permotus(Per)(Pas)(N) praemittit(Prä)(Akt) equites(A), qui(Pr)(N) primum(Adj)(A) impetum(A) sustineant(Prä)(Knj)(Akt)
+(581) by|novelty of|the|thing Curio having|been|moved sends|ahead horsemen, who the|first attack may|withstand
+(582) ac(Kon) morentur(Prä)(Knj)(Pas); ipse(Pr)(N) celeriter(Adv) ab(Prp) opere(N)(Abl) deductis(Per)(Pas)(Abl) legionibus(N)(Abl) aciem(A) instruit(Prä)(Akt).
+(582) and may|delay; himself quickly from the|work with|having|been|withdrawn legions the|line draws|up.
+= § 4 =
+(584) equitesque(N)(Kon) committunt(Prä)(Akt) proelium(A), et(Kon), priusquam(Kon) plane(Adv) legiones(N) explicari(Prä)(Inf)(Pas) et(Kon) consistere(Prä)(Inf)(Akt)
+(584) horsemen|and join battle, and, before plainly the|legions to|be|deployed and to|take|position
+(585) possent(Imp)(Knj)(Akt), tota(Adj)(N) auxilia(N) regis(G) impedita(Per)(Pas)(N) ac(Kon) perturbata(Per)(Pas)(N), quod(Kon) nullo(Adj)(Abl) ordine(N)(Abl)
+(585) could, all the|auxiliaries of|the|king hindered and thrown|into|confusion, because with|no order
+(586) et(Kon) sine(Prp) timore(N)(Abl) iter(A) fecerant(Plq)(Akt), in(Prp) fugam(A) coiciunt(Prä)(Akt) equitatuque(N)(Abl)(Kon) omni(Adj)(Abl)
+(586) and without fear a|march had|made, into flight they|throw with|the|cavalry|and all
+(587) fere(Adv) incolumi(Adj)(Abl), quod(Kon) se(Pr)(A) per(Prp) litora(A) celeriter(Adv) in(Prp) oppidum(A) recipit(Prä)(Akt),
+(587) almost unharmed, because itself along the|shores quickly into the|town withdraws,
+(588) magnum(Adj)(A) peditum(G) numerum(A) interficiunt(Prä)(Akt).
+(588) a|great of|foot|soldiers number they|kill.
+=== Kapitel 27 ===
+= § 1 =
+(591) Proxima(Adj)(Abl) nocte(N)(Abl) centuriones(N) Marsi(Adj)(N) duo(Adj)(N) ex(Prp) castris(N)(Abl) Curionis(G) cum(Prp) manipularibus(N)(Abl)
+(591) on|the|next night centurions Marsian two from the|camp of|Curio with rank|and|file
+(592) suis(Pr)(Abl) xxii(Adj)(N) ad(Prp) Attium(A) Varum(A) perfugiunt(Prä)(Akt).
+(592) their|own twenty|two to Attius Varus desert.
+= § 2 =
+(594) hi(Pr)(N) sive(Kon) vere(Adv) quam(Pr)(A) habuerant(Plq)(Akt) opinionem(A) ad(Prp) eum(Pr)(A) perferunt(Prä)(Akt), sive(Kon)
+(594) these or|if truly what they|had|had opinion to him report, or|if
+(595) etiam(Adv) auribus(N)(Abl) Vari(G) serviunt(Prä)(Akt) — nam(Pt) quae(Pr)(N) volumus(Prä)(Akt), ea(Pr)(A) credimus(Prä)(Akt)
+(595) also to|the|ears of|Varus they|serve — for which we|wish, those|things we|believe
+(596) libenter(Adv), et(Kon) quae(Pr)(N) sentimus(Prä)(Akt) ipsi(Pr)(N), reliquos(Adj)(A) sentire(Prä)(Inf)(Akt) speramus(Prä)(Akt) — confirmant(Prä)(Akt)
+(596) gladly, and which we|feel ourselves, the|rest to|feel we|hope — they|affirm
+(597) quidem(Pt) certe(Adv) totius(Adj)(G) exercitus(G) animos(A) alienos(Adj)(A) esse(Prä)(Inf)(Akt) a(Prp) Curione(N)(Abl), maximeque(Adv)(Sup)(Kon)
+(597) indeed certainly of|the|whole army minds estranged to|be from Curio, most|of|all|and
+(598) opus(N) esse(Prä)(Inf)(Akt) in(Prp) conspectum(A) exercitus(G) venire(Prä)(Inf)(Akt) et(Kon) colloquendi(Ger)(G) dare(Prä)(Inf)(Akt) facultatem(A).
+(598) need to|be into sight of|the|army to|come and of|conversing to|give opportunity.
+= § 3 =
+(600) qua(Pr)(Abl) opinione(N)(Abl) adductus(Per)(Pas)(N) Varus(N) postero(Adj)(Abl) die(N)(Abl) mane(Adv) legiones(A) ex(Prp) castris(N)(Abl)
+(600) by|which opinion having|been|led Varus on|the|next day in|the|morning the|legions from the|camp
+(601) educit(Prä)(Akt). facit(Prä)(Akt) idem(Pr)(N) Curio(N), atque(Kon) una(Adj)(Abl) valle(N)(Abl) non(Pt) magna(Adj)(Abl) interiecta(Per)(Pas)(Abl)
+(601) leads|out. does the|same Curio, and with|one valley not great having|been|interposed
+(602) suas(Pr)(A) uterque(Pr)(N) copias(A) instruit(Prä)(Akt).
+(602) his|own each forces arranges.
+=== Kapitel 28 ===
+= § 1 =
+(605) Erat(Imp)(Akt) in(Prp) exercitu(N)(Abl) Vari(G) Sex(N). Quintilius(N) Varus(N) quem(Pr)(A) fuisse(Per)(Inf)(Akt) Corfinii(G)
+(605) there|was in the|army of|Varus Sextus. Quintilius Varus whom to|have|been at|Corfinium
+(606) supra(Adv) demonstratum(Per)(Pas)(N) est(Prä)(Akt). hic(Pr)(N) dimissus(Per)(Pas)(N) a(Prp) Caesare(N)(Abl) in(Prp) Africam(A) venerat(Plq)(Akt),
+(606) above having|been|shown it|is. this|man having|been|sent|away by Caesar into Africa had|come,
+(607) legionesque(A)(Kon) eas(Pr)(A) traduxerat(Plq)(Akt) Curio(N), quas(Pr)(A) superioribus(Adj)(Abl) temporibus(N)(Abl) Corfinio(N)(Abl) receperat(Plq)(Akt) Caesar(N),
+(607) legions|and those had|brought|over Curio, which in|earlier times at|Corfinium had|received Caesar,
+(608) adeo(Adv) ut(Kon) paucis(Adj)(Abl) mutatis(Per)(Pas)(Abl) centurionibus(N)(Abl) idem(Pr)(N) ordines(N) manipulique(N)(Kon) constarent(Imp)(Knj)(Akt).
+(608) so|much that with|few having|been|changed centurions the|same ranks maniples|and might|consist.
+= § 2 =
+(610) hanc(Pr)(A) nanctus(Per)(Akt)(N) appellationis(G) causam(A) Quintilius(N) circumire(Prä)(Inf)(Akt) aciem(A) Curionis(G) atque(Kon) obsecrare(Prä)(Inf)(Akt)
+(610) this having|obtained of|designation cause Quintilius to|go|around the|line of|Curio and to|beseech
+(611) milites(A) coepit(Per)(Akt), ne(Kon) primi(Adj)(G) sacramenti(G), quod(Pr)(N) apud(Prp) Domitium(A) atque(Kon) apud(Prp)
+(611) the|soldiers he|began, that|not of|the|first oath, which at Domitius and at
+(612) se(Pr)(A) quaestorem(A) dixissent(Plq)(Knj)(Akt), memoriam(A) deponerent(Imp)(Knj)(Akt), neu(Kon) contra(Prp) eos(Pr)(A) arma(A) ferrent(Imp)(Knj)(Akt),
+(612) himself quaestor they|had|declared, the|memory they|should|lay|aside, nor against them arms they|should|bear,
+(613) qui(Pr)(N) eadem(Pr)(N) essent(Imp)(Knj)(Akt) usi(Per)(Akt)(N) fortuna(N)(Abl) eademque(Pr)(Abl)(Kon) in(Prp) obsidione(N)(Abl) perpessi(Per)(Pas)(N), neu(Kon)
+(613) who the|same|things were having|used fortune and|the|same in the|siege having|suffered, nor
+(614) pro(Prp) iis(Pr)(Abl) pugnarent(Imp)(Knj)(Akt), a(Prp) quibus(Pr)(Abl) contumelia(N)(Abl) perfugae(N) appellarentur(Imp)(Knj)(Pas).
+(614) for those they|should|fight, by whom by|insult deserters they|might|be|called.
+= § 3 =
+(616) huc(Adv) pauca(Adj)(A) ad(Prp) spem(A) largitionis(G) addidit(Per)(Akt), quae(Pr)(N) ab(Prp) sua(Pr)(Abl) liberalitate(N)(Abl),
+(616) to|this a|few to hope of|largesse he|added, which from his|own generosity,
+(617) si(Kon) se(Pr)(A) atque(Kon) Attium(A) secuti(Per)(Akt)(N) essent(Imp)(Knj)(Akt), expectare(Prä)(Inf)(Akt) deberent(Imp)(Knj)(Akt).
+(617) if him and Attius having|followed were, to|expect they|ought.
+= § 4 =
+(619) hac(Pr)(Abl) habita(Per)(Pas)(Abl) oratione(N)(Abl) nullam(Adj)(A) in(Prp) partem(A) ab(Prp) exercitu(N)(Abl) Curionis(G) fit(Prä)(Akt)
+(619) with|this having|been|delivered speech no into part by the|army of|Curio there|is|made
+(620) significatio(N), atque(Kon) ita(Adv) suas(Pr)(A) uterque(Pr)(N) copias(A) reducit(Prä)(Akt).
+(620) a|signal, and thus his|own each forces leads|back.
+=== Kapitel 29 ===
+= § 1 =
+(623) Atque(Kon) in(Prp) castris(N)(Abl) Curionis(G) magnus(Adj)(N) omnium(Adj)(G) incessit(Per)(Akt) timor(N) animis(D); is(Pr)(N)
+(623) and in the|camp of|Curio great of|all came|upon fear into|minds; this
+(624) variis(Adj)(Abl) hominum(G) sermonibus(N)(Abl) celeriter(Adv) augetur(Prä)(Pas). unusquisque(Pr)(N) enim(Pt) opiniones(A) fingebat(Imp)(Akt), et(Kon)
+(624) by|various of|men conversations quickly is|augmented. each|one for opinions was|inventing, and
+(625) ad(Prp) id(Pr)(A), quod(Pr)(A) ab(Prp) alio(Pr)(Abl) audierat(Plq)(Akt), sui(Pr)(G) aliquid(Pr)(A) timoris(G) addebat(Imp)(Akt).
+(625) to that, which from another he|had|heard, of|his|own something of|fear he|was|adding.
+= § 2 =
+(627) hoc(Pr)(Abl) ubi(Kon) uno(Adj)(Abl) auctore(N)(Abl) ad(Prp) plures(Adj)(A) permanaverat(Plq)(Akt) atque(Kon) alius(Pr)(N) alii(Pr)(D)
+(627) with|this when with|one author to more had|spread and one to|another
+(628) tradiderat(Plq)(Akt), plures(Adj)(N) auctores(N) eius(Pr)(G) rei(G) videbantur(Imp)(Pas).
+(628) had|passed|along, more reporters of|this matter were|seeming.
+= § 3 =
+(630) civile(Adj)(A) bellum(A); genus(N) hominum(G) cui(Pr)(D) id(Pr)(A) liceret(Imp)(Knj)(Akt) libere(Adv) facere(Prä)(Inf)(Akt) et(Kon)
+(630) civil war; kind of|men to|whom that might|be|permitted freely to|do and
+(631) sequi(Prä)(Inf)(Akt) quod(Pr)(A) vellet(Imp)(Knj)(Akt); legiones(N) hae(Pr)(N) quae(Pr)(N) paulo(Adv) ante(Adv) apud(Prp) adversarios(A)
+(631) to|follow what he|might|wish; legions these which a|little before among opponents
+(632) fuerant(Plq)(Akt) [Zeile Lost] . nam(Pt) etiam(Adv) Caesaris(Pr)(G) beneficia(A) mutaverat(Plq)(Akt) consuetudo(N)
+(632) had|been [Zeile Lost] . for also of|Caesar benefits had|changed custom
+(633) qua(Pr)(Abl) offerrentur(Imp)(Knj)(Pas) [Zeile Lost] . municipia(N) etiam(Adv) diversis(Adj)(Abl) partibus(N)(Abl) coniuncta(Per)(Pas)(N). .
+(633) by|which were|offered [Zeile Lost] . towns also with different parties. . having|been|joined
+(634) municipia(N) etiam(Adv) diversis(Adj)(Abl) partibus(N)(Abl) coniuncta(Per)(Pas)(N). [Zeile Lost] ;neque(Kon) enim(Pt) ex(Prp)
+(634) towns also with different parties. [having|been|joined Zeile] ;Lost nor indeed from
+(635) Marsis(N)(Abl) Paelignisque(N)(Abl)(Kon) veniebant(Imp)(Akt) ut(Kon) qui(Pr)(N) superiore(Adj)(Abl) nocte(N)(Abl) in(Prp) contuberniis(N)(Abl) commilitonesque(N)(Kon); neque(Kon)
+(635) from|the|Marsi and|from|the|Paeligni were|coming so|that those|who on|the|previous night in tents comrades|and; nor
+(636) enim(Pt) ex(Prp) Marsis(N)(Abl) Paelignisque(N)(Abl)(Kon) veniebant(Imp)(Akt) ut(Kon) qui(Pr)(N) superiore(Adj)(Abl) nocte(N)(Abl) in(Prp)
+(636) indeed from the|Marsi the|Paeligni|and were|coming so|that those|who on|the|previous night in
+(637) contuberniis(N)(Abl) commilitonesque(N)(Kon) [Zeile Lost] ..
+(637) tents comrades|and [Zeile Lost] ..
+= § 4 =
+(639) non(Pt) nulli(Adj)(N) graviora(Adj)(Kmp)(A) sermones(A) militum(G); dubia(N) durius(Adv)(Kmp) accipiebantur(Imp)(Pas), nonnulla(Adj)(N) etiam(Adv)
+(639) not some more|serious reports of|soldiers; doubts more|harshly were|being|received, some|things even
+(640) ab(Prp) his(Pr)(Abl), qui(Pr)(N) diligentiores(Adj)(Kmp)(N) videri(Prä)(Inf)(Pas) volebant(Imp)(Akt) fingebantur(Imp)(Pas).
+(640) by these, who more|diligent to|seem were|wanting were|being|invented.
+=== Kapitel 30 ===
+= § 1 =
+(643) Quibus(Pr)(Abl) de(Prp) causis(N)(Abl) consilio(N)(Abl) convocato(Per)(Pas)(Abl) de(Prp) summa(Adj)(Abl) rerum(G) deliberare(Prä)(Inf)(Akt) incipit(Prä)(Akt).
+(643) by|which about causes with|a|council having|been|called about highest of|things to|deliberate he|begins.
+= § 2 =
+(645) erant(Imp)(Akt) sententiae(N), quae(Pr)(N) conandum(Gdv)(Fu1)(Pas)(N) omnibus(Adj)(Abl) modis(N)(Abl) castraque(N)(Kon) Vari(G) oppugnanda(Gdv)(Fu1)(Pas)(N) censerent(Imp)(Knj)(Akt),
+(645) there|were opinions, which needing|to|be|tried by|all ways camps|and of|Varus needing|to|be|assaulted they|judged,
+(646) quod(Kon) in(Prp) huius(Pr)(G) modi(G) militum(G) consiliis(N)(Abl) otium(N) maxime(Adv)(Sup) contrarium(Adj)(N) esse(Prä)(Inf)(Akt)
+(646) because in of|this kind of|soldiers counsels leisure most opposite to|be
+(647) arbitrarentur(Imp)(Knj)(Akt). postremo(Adv) praestare(Prä)(Inf)(Akt) dicebant(Imp)(Akt) per(Prp) virtutem(A) in(Prp) pugna(N)(Abl) belli(G) fortunam(A)
+(647) they|were|thinking. finally to|be|better they|were|saying through valor in battle of|war fortune
+(648) experiri(Prä)(Inf)(Akt), quam(Kon) desertos(Per)(Pas)(A) et(Kon) circumventos(Per)(Pas)(A) ab(Prp) suis(Pr)(Abl) gravissimum(Adj)(Sup)(A) supplicium(A) perpeti(Prä)(Inf)(Akt).
+(648) to|try, than having|been|deserted and having|been|surrounded by their very|heavy punishment to|endure.
+= § 3 =
+(650) erant(Imp)(Akt), qui(Pr)(N) censerent(Imp)(Knj)(Akt) de(Prp) tertia(Adj)(Abl) vigilia(N)(Abl) in(Prp) Castra(A) Cornelia(A) recedendum(Gdv)(Fu1)(Pas)(N),
+(650) there|were, who they|judged about third watch into Camp Cornelia needing|to|be|withdrawn,
+(651) ut(Kon) maiore(Adj)(Kmp)(Abl) spatio(N)(Abl) temporis(G) interiecto(Per)(Pas)(Abl) militum(G) mentes(N) sanarentur(Imp)(Knj)(Pas), simul(Adv) siquid(Pr)(N)
+(651) so|that by|greater space of|time having|been|thrown|between of|the|soldiers minds might|be|healed, at|the|same|time if|anything
+(652) gravius(Adv)(Kmp) accidisset(Plq)(Knj)(Akt), magna(Adj)(Abl) multitudine(N)(Abl) navium(G) et(Kon) tutius(Adv)(Kmp) et(Kon) facilius(Adv)(Kmp) in(Prp)
+(652) more|seriously had|happened, with|great multitude of|ships and more|safely and more|easily into
+(653) Siciliam(A) receptus(N) daretur(Imp)(Knj)(Pas).
+(653) Sicily retreat be|given.
+=== Kapitel 31 ===
+= § 1 =
+(656) Curio(N) utrumque(Adj)(A) improbans(Prä)(Akt)(N) consilium(A), quantum(Adv) alteri(Adj)(D) sententiae(D) deesset(Imp)(Knj)(Akt) animi(G), tantum(Adv)
+(656) Curio both disapproving plan, how|much to|the|other opinion was|lacking of|spirit, so|much
+(657) alteri(Adj)(D) superesse(Prä)(Inf)(Akt) dicebat(Imp)(Akt); hos(Pr)(A) turpissimae(Adj)(Sup)(G) fugae(G) rationem(A) habere(Prä)(Inf)(Akt), illos(Pr)(A) etiam(Adv)
+(657) to|the|other to|be|in|excess he|was|saying; these of|the|most|shameful of|flight plan to|have, those even
+(658) iniquo(Adj)(Abl) loco(N)(Abl) dimicandum(Gdv)(A) putare(Prä)(Inf)(Akt).
+(658) in|unfavourable place needing|to|be|fought to|think.
+= § 2 =
+(660) qua(Pr)(Abl) enim(Pt), inquit(Prä)(Akt), fiducia(N)(Abl) et(Kon) opere(N)(Abl) et(Kon) natura(N)(Abl) loci(G) munitissima(Adj)(Sup)(N)
+(660) by|what indeed, he|says, confidence and by|work and by|nature of|the|place most|fortified
+(661) castra(N) expugnari(Prä)(Inf)(Pas) posse(Prä)(Inf)(Akt) confidimus(Prä)(Akt)?
+(661) camp to|be|stormed to|be|able we|trust?
+= § 3 =
+(663) aut(Kon) vero(Pt) quid(Pr)(A) proficimus(Prä)(Akt), si(Kon) accepto(Per)(Pas)(Abl) magno(Adj)(Abl) detrimento(N)(Abl) ab(Prp) oppugnatione(N)(Abl)
+(663) or indeed what do|we|gain, if with|having|been|received great loss from assault
+(664) castrorum(G) discedimus(Prä)(Akt)? quasi(Pt) non(Pt) et(Kon) felicitas(N) rerum(G) gestarum(Per)(Pas)(G) exercitus(G) benevolentiam(A)
+(664) of|the|camp we|depart? as|if not and success of|things having|been|done of|the|army goodwill
+(665) imperatoribus(D) et(Kon) res(N) adversae(Adj)(N) odia(A) concilient(Prä)(Knj)(Akt)!
+(665) to|the|commanders and things adverse hatreds may|win|over!
+= § 4 =
+(667) castrorum(G) autem(Pt) mutatio(N) quid(Pr)(N) habet(Prä)(Akt) nisi(Kon) turpem(Adj)(A) fugam(A) et(Kon) desperationem(A)
+(667) of|the|camp however change what has unless shameful flight and despair
+(668) omnium(Adj)(G) et(Kon) alienationem(A) exercitus(G)? nam(Pt) neque(Kon) pudentis(Adj)(G) suspicari(Prä)(Inf)(Akt) oportet(Prä)(Akt) sibi(Pr)(D)
+(668) of|all and estrangement of|the|army? for nor of|a|modest to|suspect it|is|proper to|oneself
+(669) parum(Adv) credi(Prä)(Inf)(Pas) neque(Kon) improbos(Adj)(A) scire(Prä)(Inf)(Akt) sese(Pr)(A) timeri(Prä)(Inf)(Pas), quod(Kon) illis(Pr)(D) licentiam(A)
+(669) too|little to|be|trusted nor wicked to|know themselves to|be|feared, because to|those license
+(670) timor(N) augeat(Prä)(Knj)(Akt) noster(Adj)(N), his(Pr)(D) studia(A) deminuat(Prä)(Knj)(Akt).
+(670) fear may|increase our, for|these pursuits may|diminish.
+= § 5 =
+(672) quod(Kon) si(Kon) iam(Adv), inquit(Prä)(Akt), haec(Pr)(A) explorata(Per)(Pas)(A) habeamus(Prä)(Knj)(Akt), quae(Pr)(N) de(Prp) exercitus(G)
+(672) because if now, he|says, these having|been|examined we|may|have, which about of|the|army
+(673) alienatione(N)(Abl) dicuntur(Prä)(Pas), quae(Pr)(N) quidem(Pt) ego(Pr)(N) aut(Kon) omnino(Adv) falsa(Adj)(N) aut(Kon) certe(Adv)
+(673) alienation are|said, which indeed I either altogether false or certainly
+(674) minora(Adj)(Kmp)(N) opinione(N)(Abl) esse(Prä)(Inf)(Akt) confido(Prä)(Akt), quanto(Adv) haec(Pr)(N) dissimulari(Prä)(Inf)(Pas) et(Kon) occultari(Prä)(Inf)(Pas), quam(Kon)
+(674) smaller than|opinion to|be I|am|confident, by|how|much these to|be|disguised and to|be|hidden, than
+(675) per(Prp) nos(Pr)(A) confirmari(Prä)(Inf)(Pas) praestet(Prä)(Knj)(Akt)?
+(675) through us to|be|confirmed it|should|be|preferable?
+= § 6 =
+(677) an(Kon) non(Pt), uti(Kon) corporis(G) vulnera(N), ita(Adv) exercitus(G) incommoda(N) sunt(Prä)(Akt) tegenda(Gdv)(Fu1)(Pas)(N),
+(677) or not, as of|the|body wounds, so of|the|army inconveniences are needing|to|be|covered,
+(678) ne(Kon) spem(A) adversariis(D) augeamus(Prä)(Knj)(Akt)?
+(678) lest hope to|opponents we|may|increase?
+= § 7 =
+(680) at(Kon) etiam(Adv), ut(Kon) media(Adj)(Abl) nocte(N)(Abl) proficiscamur(Prä)(Knj)(Akt), addunt(Prä)(Akt), quo(Kon) maiorem(Adj)(Kmp)(A), credo(Prä)(Akt),
+(680) but also, that at|middle night we|may|set|out, they|add, in|order|that greater, I|believe,
+(681) licentiam(A) habeant(Prä)(Knj)(Akt), qui(Pr)(N) peccare(Prä)(Inf)(Akt) conentur(Prä)(Knj)(Akt). namque(Pt) huiusmodi(Adj)(N) res(N) aut(Kon) pudore(N)(Abl)
+(681) license they|may|have, who to|sin may|try. for|indeed of|this|kind things either by|shame
+(682) aut(Kon) metu(N)(Abl) tenentur(Prä)(Pas), quibus(Pr)(Abl) rebus(N)(Abl) nox(N) maxime(Adv)(Sup) adversaria(Adj)(N) est(Prä)(Akt).
+(682) or by|fear are|held, by|which things night most adverse is.
+= § 8 =
+(684) quare(Adv) neque(Kon) tanti(Adj)(G) sum(Prä)(Akt) animi(G), ut(Kon) sine(Prp) spe(N)(Abl) castra(N) obpugnanda(Gdv)(Fu1)(Pas)(N)
+(684) wherefore nor of|so|great I|am of|spirit, that without hope camp needing|to|be|stormed
+(685) censeam(Prä)(Knj)(Akt), neque(Kon) tanti(Adj)(G) timoris(G), uti(Kon) spe(N)(Abl) deficiam(Prä)(Knj)(Akt), atque(Kon) omnia(Adj)(A) prius(Adv)
+(685) I|may|judge, nor of|so|great of|fear, that by|hope I|may|fail, and all|things earlier
+(686) experienda(Gdv)(Fu1)(Pas)(N) arbitror(Prä)(Akt) magnaque(Adj)(Abl)(Kon) ex(Prp) parte(N)(Abl) iam(Adv) me(Pr)(A) una(Adv) vobiscum(Pr)(Abl)(Prp) de(Prp)
+(686) needing|to|be|tried I|think and|greatly from part now me together with|you|pl about
+(687) re(N)(Abl) iudicium(A) facturum(Fu1)(Akt)(A) confido(Prä)(Akt).
+(687) matter judgment about|to|make I|trust.
+=== Kapitel 32 ===
+= § 1 =
+(690) Dimisso(Per)(Pas)(Abl) consilio(N)(Abl) contionem(A) advocat(Prä)(Akt) militum(G). commemorat(Prä)(Akt), quo(Pr)(Abl) sit(Prä)(Knj)(Akt) eorum(Pr)(G) usus(N)
+(690) with|having|been|dismissed council assembly he|calls of|soldiers. he|reminds, by|which may|be of|them use
+(691) studio(N)(Abl) ad(Prp) Corfinium(A) Caesar(N), ut(Kon) magnam(Adj)(A) partem(A) Italiae(G) beneficio(N)(Abl) atque(Kon)
+(691) by|zeal to Corfinium Caesar, that great part of|Italy by|kindness and
+(692) auctoritate(N)(Abl) eorum(Pr)(G) suam(Adj)(A) fecerit(Per)(Knj)(Akt).
+(692) by|authority of|them his|own he|may|have|made.
+= § 2 =
+(694) vos(Pr)(N) enim(Pt) vestrumque(Adj)(A)(Kon) factum(A), inquit(Prä)(Akt), omnia(Adj)(N) deinceps(Adv) municipia(N) sunt(Prä)(Akt) secuta(Per)(Pas)(N),
+(694) you indeed and|your deed, he|says, all in|turn towns are have|followed,
+(695) neque(Kon) sine(Prp) causa(N)(Abl) et(Kon) Caesar(N) amicissime(Adv)(Sup) de(Prp) vobis(Pr)(Abl) et(Kon) illi(Pr)(N)
+(695) nor without cause and Caesar very|friendly about you and those
+(696) gravissime(Adv)(Sup) iudicaverunt(Per)(Akt).
+(696) very|severely have|judged.
+= § 3 =
+(698) Pompeius(N) enim(Pt) nullo(Adj)(Abl) proelio(N)(Abl) pulsus(Per)(Pas)(N) vestri(Adj)(G) facti(G) praeiudicio(N)(Abl) demotus(Per)(Pas)(N) Italia(A)
+(698) Pompey indeed by|no battle having|been|driven of|your deed by|prejudice having|been|removed Italy
+(699) excessit(Per)(Akt); Caesar(N) me(Pr)(A), quem(Pr)(A) sibi(Pr)(D) carissimum(Adj)(Sup)(A) habuit(Per)(Akt), provinciam(A) Siciliam(A) atque(Kon)
+(699) departed; Caesar me, whom to|himself dearest he|held, province Sicily and
+(700) Africam(A), sine(Prp) quibus(Pr)(Abl) urbem(A) atque(Kon) Italiam(A) tueri(Prä)(Inf)(Akt) non(Pt) potest(Prä)(Akt), vestrae(Adj)(G)
+(700) Africa, without which city and Italy to|guard not he|is|able, of|your
+(701) fidei(D) commisit(Per)(Akt).
+(701) trust he|entrusted.
+= § 4 =
+(703) at(Kon) sunt(Prä)(Akt) qui(Pr)(N) vos(Pr)(A) hortentur(Prä)(Knj)(Akt), ut(Kon) a(Prp) nobis(Pr)(Abl) desciscatis(Prä)(Knj)(Akt). quid(Pr)(A)
+(703) but there|are who you they|may|urge, that from us you|may|desert. what
+(704) enim(Pt) est(Prä)(Akt) illis(Pr)(D) optatius(Adj)(Kmp)(N) quam(Kon) uno(Adj)(Abl) tempore(N)(Abl) et(Kon) nos(Pr)(A) circumvenire(Prä)(Inf)(Akt)
+(704) indeed is to|those more|desirable than at|one time and us to|surround
+(705) et(Kon) vos(Pr)(A) nefario(Adj)(Abl) scelere(N)(Abl) obstringere(Prä)(Inf)(Akt)? aut(Kon) quid(Pr)(A) irati(Adj)(N) gravius(Adv)(Kmp) de(Prp)
+(705) and you by|nefarious crime to|bind? or what angry more|seriously about
+(706) vobis(Pr)(Abl) sentire(Prä)(Inf)(Akt) possunt(Prä)(Akt), quam(Kon) ut(Kon) eos(Pr)(A) prodatis(Prä)(Knj)(Akt), qui(Pr)(N) se(Pr)(A) vobis(Pr)(D)
+(706) you to|think they|can, than that them you|may|betray, who themselves to|you
+(707) omnia(Adj)(A) debere(Prä)(Inf)(Akt) iudicant(Prä)(Akt), in(Prp) eorum(Pr)(G) potestatem(A) veniatis(Prä)(Knj)(Akt), qui(Pr)(N) se(Pr)(A) per(Prp)
+(707) all|things to|owe they|judge, in of|them power you|may|come, who themselves through
+(708) vos(Pr)(A) perisse(Per)(Inf)(Akt) existimant(Prä)(Akt)?
+(708) you to|have|perished they|think?
+= § 5 =
+(710) an(Kon) vero(Pt) in(Prp) Hispania(Abl) res(A) gestas(Per)(Pas)(A) Caesaris(G) non(Pt) audistis(Per)(Akt)? duos(Adj)(A)
+(710) or indeed in Spain things having|been|done of|Caesar not have|you|heard? two
+(711) pulsos(Per)(Pas)(A) exercitus(A), duos(Adj)(A) superatos(Per)(Pas)(A) duces(A), duas(Adj)(A) receptas(Per)(Pas)(A) provincias(A)? haec(Pr)(N) acta(Per)(Pas)(N)
+(711) routed armies, two overcome leaders, two recovered provinces? these having|been|done
+(712) diebus(Abl) xl(Adj), quibus(Pr)(Abl) in(Prp) conspectum(A) adversariorum(G) venerit(Per)(Knj)(Akt) Caesar(N)? , quibus(Pr)(Abl) in(Prp)
+(712) in|days forty, within|which into view of|opponents he|may|have|come Caesar? , within|which into
+(713) conspectum(A) adversariorum(G) venerit(Per)(Knj)(Akt) Caesar(N)?
+(713) view of|opponents he|may|have|come Caesar?
+= § 6 =
+(715) an(Kon) qui(Pr)(N) incolumes(Adj)(N) resistere(Prä)(Inf)(Akt) non(Pt) potuerunt(Per)(Akt), perditi(Per)(Pas)(N) resistant(Prä)(Knj)(Akt)? vos(Pr)(N) autem(Pt)
+(715) or who unharmed to|resist not were|able, ruined may|they|resist? you but|now
+(716) incerta(Adj)(Abl) victoria(Abl) Caesarem(A) secuti(Per)(Akt)(N) diiudicata(Per)(Pas)(Abl) iam(Adv) belli(G) fortuna(Abl) victum(Per)(Pas)(A) sequamini(Prä)(Knj)(Akt),
+(716) with|uncertain victory Caesar having|followed with|decided now of|war fortune the|defeated you|may|follow,
+(717) cum(Kon) vestri(Pr)(G) officii(G) praemia(A) percipere(Prä)(Inf)(Akt) debeatis(Prä)(Knj)(Akt)?
+(717) since of|your duty rewards to|receive you|ought?
+= § 7 =
+(719) desertos(Per)(Pas)(A) enim(Pt) se(Pr)(A) ac(Kon) proditos(Per)(Pas)(A) a(Prp) vobis(Pr)(Abl) dicunt(Prä)(Akt) et(Kon) prioris(Adj)(G)(Kmp)
+(719) deserted for themselves and betrayed by you they|say and of|earlier
+(720) sacramenti(G) mentionem(A) faciunt(Prä)(Akt).
+(720) oath the|mention they|make.
+= § 8 =
+(722) vosne(Pr)(N)(Pt) vero(Pt) L(N). Domitium(A), an(Kon) vos(Pr)(N) Domitius(N) deseruit(Per)(Akt)? nonne(Pt) extremam(Adj)(A)
+(722) you|? indeed L. Domitius, or you Domitius deserted? not|? extreme
+(723) pati(Prä)(Inf)(Akt) fortunam(A) paratos(Adj)(A) proiecit(Per)(Akt) ille(Pr)(N)? non(Pt) sibi(Pr)(D) clam(Adv) vobis(Pr)(Abl) salutem(A)
+(723) to|suffer fortune prepared he|cast|forth that|man? not to|himself secretly for|you safety
+(724) fuga(Abl) petivit(Per)(Akt)? non(Pt) proditi(Per)(Pas)(N) per(Prp) illum(Pr)(A) Caesaris(G) beneficio(Abl) estis(Prä)(Akt) conservati(Per)(Pas)(N)?
+(724) by|flight he|sought? not having|been|betrayed through that|man of|Caesar by|favor you|are having|been|saved?
+= § 9 =
+(726) sacramento(Abl) quidem(Pt) vos(Pr)(A) tenere(Prä)(Inf)(Akt) qui(Pr)(N) potuit(Per)(Akt), cum(Kon) proiectis(Per)(Pas)(Abl) fascibus(Abl) et(Kon)
+(726) by|oath indeed you to|hold who was|able, when with|having|been|thrown|down bundles|of|rods and
+(727) deposito(Per)(Pas)(Abl) imperio(Abl) privatus(Adj)(N) et(Kon) captus(Per)(Pas)(N) ipse(Pr)(N) in(Prp) alienam(Adj)(A) venisset(Plq)(Knj)(Akt) potestatem(A)?
+(727) with|having|been|set|down command a|private and having|been|captured himself into anothers power he|had|come?
+= § 10 =
+(729) relinquitur(Prä)(Pas) nova(Adj)(N) religio(N), ut(Kon) eo(Pr)(Abl) neglecto(Per)(Pas)(Abl) sacramento(Abl), quo(Pr)(Abl) tenemini(Prä)(Pas), respiciatis(Prä)(Knj)(Akt)
+(729) is|left new scruple, that by|that having|been|neglected oath, by|which you|are|held, you|may|look|back
+(730) illud(Pr)(A), quod(Pr)(N) deditione(N)(Abl) ducis(G) et(Kon) capitis(G) deminutione(N)(Abl) sublatum(Per)(Pas)(N) est(Prä)(Akt).
+(730) that, which by|surrender of|the|leader and of|status by|diminution having|been|removed is.
+= § 11 =
+(732) at(Kon), credo(Prä)(Akt), si(Kon) Caesarem(A) probatis(Prä)(Akt), in(Prp) me(Pr)(A) offenditis(Prä)(Akt). qui(Pr)(N) de(Prp)
+(732) but, I|believe, if Caesar you|approve, against me you|take|offense. who about
+(733) meis(Adj)(Abl) in(Prp) vos(Pr)(A) meritis(Abl) praedicaturus(Fu1)(Akt)(N) non(Pt) sum(Prä)(Akt), quae(Pr)(N) sunt(Prä)(Akt) adhuc(Adv)
+(733) my toward you services about|to|declare not I|am, which are until|now
+(734) et(Kon) mea(Adj)(Abl) voluntate(Abl) et(Kon) vestra(Adj)(Abl) exspectatione(Abl) leviora(Adj)(N)(Kmp); sed(Kon) tamen(Adv) sui(Pr)(G)
+(734) both by|my will and by|your expectation lighter; but however of|their|own
+(735) laboris(G) milites(N) semper(Adv) eventu(Abl) belli(G) praemia(A) petiverunt(Per)(Akt), qui(Pr)(N) qualis(Adj)(N) sit(Prä)(Knj)(Akt)
+(735) toil soldiers always by|the|event of|war rewards have|sought, which of|what|kind may|be
+(736) futurus(Fu1)(Akt)(N), ne(Pt) vos(Pr)(N) quidem(Pt) dubitatis(Prä)(Akt). diligentiam(A) quidem(Pt) nostram(Adj)(A) aut(Kon), quem(Pr)(A)
+(736) about|to|be, not you indeed you|doubt. diligence indeed our or, which
+(737) ad(Prp) finem(A) adhuc(Adv) res(N) processit(Per)(Akt), fortunam(A) cur(Adv) praeteream(Prä)(Knj)(Akt)?
+(737) to limit until|now the|matter has|advanced, fortune why I|should|pass|over?
+= § 12 =
+(739) an(Kon) paenitet(Prä)(Akt) vos(Pr)(A), quod(Kon) salvum(Adj)(A) atque(Kon) incolumem(Adj)(A) exercitum(A) nulla(Adj)(Abl) omnino(Adv)
+(739) or does|it|repent you, that safe and unharmed army by|no at|all
+(740) navi(Abl) desiderata(Per)(Pas)(Abl) traduxerim(Per)(Knj)(Akt)? quod(Kon) classem(A) hostium(G) primo(Adj)(Abl) impetu(Abl) adveniens(Prä)(Akt)(N) profligaverim(Per)(Knj)(Akt)?
+(740) ship having|been|missed I|have|led|across? that the|fleet of|enemies at|first assault arriving I|may|have|routed?
+(741) quod(Kon) bis(Adv) per(Prp) biduum(A) equestri(Adj)(Abl) proelio(Abl) superaverim(Per)(Knj)(Akt)? quod(Kon) ex(Prp) portu(Abl)
+(741) that twice through two|day|period in|equestrian battle I|may|have|overcome? that out|of harbor
+(742) sinuque(N)(Abl)(Kon) adversariorum(G) cc(Adj) naves(A) oneratas(Per)(Pas)(A) abduxerim(Per)(Knj)(Akt) eoque(Adv)(Kon) illos(Pr)(A) compulerim(Per)(Knj)(Akt), ut(Kon)
+(742) bay|and of|opponents two|hundred ships loaded I|may|have|led|away and|there them I|may|have|driven, so|that
+(743) neque(Kon) pedestri(Adj)(Abl) itinere(Abl) neque(Kon) navibus(Abl) commeatu(Abl) iuvari(Prä)(Inf)(Pas) possint(Prä)(Knj)(Akt)? naves(A) oneratas(Per)(Pas)(A)
+(743) nor by|foot march nor by|ships by|supply to|be|helped they|may|be|able? ships loaded
+(744) abduxerim(Per)(Knj)(Akt) eoque(Adv)(Kon) illos(Pr)(A) compulerim(Per)(Knj)(Akt), ut(Kon) neque(Kon) pedestri(Adj)(Abl) itinere(Abl) neque(Kon) navibus(Abl)
+(744) I|may|have|led|away and|there them I|may|have|driven, so|that nor by|foot march nor by|ships
+(745) commeatu(Abl) iuvari(Prä)(Inf)(Pas) possint(Prä)(Knj)(Akt)?
+(745) by|supply to|be|helped they|may|be|able?
+= § 13 =
+(747) hac(Pr)(Abl) vos(Pr)(N) fortuna(Abl) atque(Kon) his(Pr)(Abl) ducibus(Abl) repudiatis(Per)(Pas)(Abl) Corfiniensem(Adj)(A) ignominiam(A), Italiae(G)
+(747) by|this you by|fortune and by|these leaders with|having|been|rejected Corfinian disgrace, of|Italy
+(748) fugam(A), Hispaniarum(G) deditionem(A), Hispaniarum(G) deditionem(A), Africi(G) belli(G) praeiudicia(A) sequimini(Prä)(Imv)(Akt)! Africi(G) belli(G)
+(748) flight, of|the|Spains surrender, of|the|Spains surrender, of|Africa of|war precedents you|follow! of|Africa of|war
+(749) praeiudicia(A) sequimini(Prä)(Imv)(Akt)!
+(749) precedents you|follow!
+= § 14 =
+(751) equidem(Pt) me(Pr)(A) Caesaris(G) militem(A) dici(Prä)(Inf)(Pas) volui(Per)(Akt), vos(Pr)(N) me(Pr)(A) imperatoris(G) nomine(Abl)
+(751) indeed me of|Caesar soldier to|be|called I|wished, you me of|the|commander by|name
+(752) appellavistis(Per)(Akt). cuius(Pr)(G) si(Kon) vos(Pr)(N) paenitet(Prä)(Akt), vestrum(Adj)(A) vobis(Pr)(D) beneficium(A) remitto(Prä)(Akt), mihi(Pr)(D)
+(752) you|have|named. of|which if you it|repents, your to|you kindness I|send|back, to|me
+(753) meum(Adj)(A) restituite(Prä)(Imv)(Akt) nomen(A), ne(Kon) ad(Prp) contumeliam(A) honorem(A) dedisse(Per)(Inf)(Akt) videamini(Prä)(Knj)(Pas).
+(753) my restore name, lest to insult honor to|have|given you|may|seem.
+=== Kapitel 33 ===
+= § 1 =
+(756) Qua(Pr)(Abl) oratione(Abl) permoti(Per)(Pas)(N) milites(N) crebro(Adv) etiam(Adv) dicentem(Prä)(Akt)(A) interpellabant(Imp)(Akt), ut(Kon) magno(Adj)(Abl)
+(756) by|which speech having|been|moved soldiers frequently also speaking they|were|interrupting, so|that with|great
+(757) cum(Prp) dolore(Abl) infidelitatis(G) suspicionem(A) sustinere(Prä)(Inf)(Akt) viderentur(Imp)(Knj)(Pas), discedentem(Prä)(Akt)(A) vero(Pt) ex(Prp) contione(Abl)
+(757) with pain of|disloyalty suspicion to|endure they|seemed, departing indeed out|of assembly
+(758) universi(Adj)(N) cohortantur(Prä)(Akt), magno(Adj)(Abl) sit(Prä)(Knj)(Akt) animo(Abl) neubi(Kon)(Adv) dubitet(Prä)(Knj)(Akt) proelium(A) committere(Prä)(Inf)(Akt) et(Kon)
+(758) all they|exhort, with|great may|he|be spirit lest|where he|may|hesitate battle to|join and
+(759) suam(Adj)(A) fidem(A) virtutemque(A)(Kon) experiri(Prä)(Inf)(Akt).
+(759) his|own faith courage|and to|try.
+= § 2 =
+(761) quo(Pr)(Abl) facto(Per)(Pas)(Abl) commutata(Per)(Pas)(N) omnium(Pr)(G) et(Kon) voluntate(Abl) et(Kon) opinione(Abl) consensu(Abl) suorum(Pr)(G)
+(761) with|which having|been|done having|been|changed of|all both in|will and in|opinion by|agreement of|his|men
+(762) constituit(Prä)(Akt) Curio(N), cum(Kon) primum(Adv) sit(Prä)(Knj)(Akt) data(Per)(Pas)(N) potestas(N), proelio(Abl) rem(A) committere(Prä)(Inf)(Akt),
+(762) decides Curio, when first may|be having|been|given power, in|battle the|matter to|join,
+(763) posteroque(Adj)(Abl)(Kon) die(Abl) productos(Per)(Pas)(A) eodem(Pr)(Abl) loco(Abl), quo(Pr)(Abl) superioribus(Adj)(Abl)(Kmp) diebus(Abl) constiterat(Plq)(Akt), in(Prp)
+(763) on|the|next|and day having|been|led|forth in|the|same place, where in|earlier days he|had|stood, into
+(764) acie(Abl) collocat(Prä)(Akt).
+(764) battleline he|arranges.
+= § 3 =
+(766) ne(Pt) Varus(N) quidem(Pt) Attius(N) dubitat(Prä)(Akt) copias(A) producere(Prä)(Inf)(Akt), sive(Kon) sollicitandi(Ger)(G) milites(A)
+(766) not|even Varus indeed Attius hesitates forces to|lead|out, whether of|stirring soldiers
+(767) sive(Kon) aequo(Adj)(Abl) loco(Abl) dimicandi(Ger)(G) detur(Prä)(Knj)(Pas) occasio(N), ne(Pt) facultatem(A) praetermittat(Prä)(Knj)(Akt).
+(767) or on|equal ground of|fighting may|be|given opportunity, lest chance he|let|slip.
+=== Kapitel 34 ===
+= § 1 =
+(770) Erat(Imp)(Akt) vallis(N) inter(Prp) duas(Adj)(A) acies(A), ut(Kon) supra(Adv) demonstratum(Per)(Pas)(N) est(Prä)(Akt), non(Pt)
+(770) there|was a|valley between two lines, as above having|been|shown is, not
+(771) ita(Adv) magna(Adj)(N), at(Kon) difficili(Adj)(Abl) et(Kon) arduo(Adj)(Abl) ascensu(Abl). hanc(Pr)(A) uterque(Pr)(N) si(Kon)
+(771) so great, but with|difficult and steep ascent. this each if
+(772) adversariorum(G) copiae(N) transire(Prä)(Inf)(Akt) conarentur(Imp)(Knj)(Akt), expectabat(Imp)(Akt), quo(Pr)(Abl) aequiore(Adj)(Abl)(Kmp) loco(Abl) proelium(A) committeret(Imp)(Knj)(Akt).
+(772) of|opponents forces to|cross were|attempting, he|was|waiting, where by|a|more|level place battle he|might|join.
+= § 2 =
+(774) simul(Adv) ab(Prp) sinistro(Adj)(Abl) cornu(Abl) P(N). Atti(G) equitatus(N) omnis(Adj)(N) et(Kon) una(Adv)
+(774) at|the|same|time from left wing P. of|Attius cavalry all and together
+(775) levis(Adj)(G) armaturae(G) interiecti(Per)(Pas)(N) conplures(Adj)(N), cum(Kon) se(Pr)(A) in(Prp) vallem(A) demitterent(Imp)(Knj)(Akt), cernebantur(Imp)(Pas).
+(775) of|light of|armament having|been|scattered several, when themselves into valley they|were|descending, were|being|seen.
+= § 3 =
+(777) ad(Prp) eos(Pr)(A) Curio(N) equitatum(A) et(Kon) duas(Adj)(A) Marrucinorum(G) cohortis(A) mittit(Prä)(Akt); quorum(Pr)(G)
+(777) to them Curio cavalry and two of|the|Marrucini cohorts sends; of|whom
+(778) primum(Adj)(A) impetum(A) equites(N) hostium(G) non(Pt) tulerunt(Per)(Akt), sed(Kon) admissis(Per)(Pas)(Abl) equis(Abl) ad(Prp)
+(778) the|first attack horsemen of|enemies not bore, but with|having|been|let|loose horses to
+(779) suos(Adj)(A) refugerunt(Per)(Akt); relicti(Per)(Pas)(N) ab(Prp) his(Pr)(Abl), qui(Pr)(N) una(Adv) procurrerant(Plq)(Akt) levis(Adj)(G) armaturae(G),
+(779) their|own they|fled|back; having|been|left by these, who together had|run|forward of|light of|armament,
+(780) circumveniebantur(Imp)(Pas) atque(Kon) interficiebantur(Imp)(Pas) ab(Prp) nostris(Pr)(Abl). huc(Adv) tota(Adj)(N) Vari(G) conversa(Per)(Pas)(N) acies(N)
+(780) were|being|surrounded and were|being|killed by ours. hither whole of|Varus having|been|turned line
+(781) suos(Adj)(A) fugere(Prä)(Inf)(Akt) et(Kon) concidi(Prä)(Inf)(Pas) videbat(Imp)(Akt).
+(781) his|own to|flee and to|be|cut|down he|was|seeing.
+= § 4 =
+(783) tum(Adv) Rebilus(N), legatus(N) Caesaris(G), quem(Pr)(A) Curio(V) secum(Pr)(Abl)(Prp) ex(Prp) Sicilia(Abl) duxerat(Plq)(Akt),
+(783) then Rebilus, legate of|Caesar, whom Curio with|him from Sicily had|led,
+(784) quod(Kon) magnum(Adj)(A) habere(Prä)(Inf)(Akt) usum(A) in(Prp) re(Abl) militari(Adj)(Abl) sciebat(Imp)(Akt), perterritum(Per)(Pas)(A), inquit(Prä)(Akt)
+(784) because great to|have use in matter military he|knew, terrified, he|says
+(785) hostem(A) vides(Prä)(Akt), Curio(V); quid(Pr)(A) dubitas(Prä)(Akt) uti(Prä)(Inf)(Akt) temporis(G) opportunitate(Abl)?
+(785) enemy you|see, Curio; what do|you|hesitate to|use of|time opportunity?
+= § 5 =
+(787) ille(Pr)(N) unum(Adj)(A) elocutus(Per)(Akt)(N), ut(Kon) memoria(Abl) tenerent(Imp)(Knj)(Akt) milites(N) ea(Pr)(A) quae(Pr)(N) pridie(Adv)
+(787) that|man one having|spoken|out, so|that in|memory they|might|hold soldiers those|things which the|day|before
+(788) sibi(Pr)(D) confirmassent(Plq)(Knj)(Akt), sequi(Prä)(Inf)(Akt) se(Pr)(A) iubet(Prä)(Akt) et(Kon) praecurrit(Prä)(Akt) ante(Prp) omnes(N). adeoque(Adv)
+(788) to|himself they|had|confirmed, to|follow himself he|orders and he|runs|ahead before all. and|so
+(789) erat(Imp)(Akt) impedita(Per)(Pas)(N) vallis(N), ut(Kon) in(Prp) ascensu(N)(Abl) nisi(Kon) sublevati(Per)(Pas)(N) a(Prp) suis(Pr)(Abl)
+(789) was obstructed the|valley, so|that in ascent unless having|been|lifted by their|own
+(790) primi(N) non(Pt) facile(Adv) eniterentur(Imp)(Knj)(Pas).
+(790) the|first not easily they|might|struggle|up.
+= § 6 =
+(792) sed(Kon) praeoccupatus(Per)(Pas)(N) animus(N) Attianorum(Adj)(G) militum(G) timore(Abl) et(Kon) fuga(Abl) et(Kon) caede(Abl)
+(792) but preoccupied mind of|Attian of|soldiers with|fear and flight and slaughter
+(793) suorum(Pr)(G) nihil(N) de(Prp) resistendo(Ger)(Abl) cogitabat(Imp)(Akt), omnesque(Adj)(N)(Kon) iam(Adv) se(Pr)(A) ab(Prp) equitatu(Abl)
+(793) of|their|own nothing about resisting he|was|thinking, all|and already themselves from cavalry
+(794) circumveniri(Prä)(Inf)(Pas) arbitrabantur(Imp)(Pas). itaque(Kon) priusquam(Kon) telum(N) adigi(Prä)(Inf)(Pas) possit(Prä)(Knj)(Akt) aut(Kon) nostri(Adj)(N) propius(Adv)(Kmp)
+(794) to|be|surrounded they|were|thinking. and|so before a|missile to|be|driven may|be|able or our|men nearer
+(795) accederent(Imp)(Knj)(Akt), omnis(Adj)(N) Vari(G) acies(N) terga(N) vertit(Per)(Akt) seque(Pr)(A)(Kon) in(Prp) castra(A) recepit(Per)(Akt).
+(795) might|approach, the|whole of|Varus battleline backs he|turned himself|and into camp he|withdrew.
+=== Kapitel 35 ===
+= § 1 =
+(798) Qua(Pr)(Abl) in(Prp) fuga(Abl) Fabius(N) Paelignus(Adj)(N) quidam(Pr)(N) ex(Prp) infimis(Adj)(Abl) ordinibus(Abl) de(Prp)
+(798) in|which in flight Fabius Paelignian a|certain out|of lowest ranks about
+(799) exercitu(Abl) Curionis(G) primum(Adj)(A) agmen(A) fugientium(Prä)(Akt)(G) consecutus(Per)(Akt)(N) magna(Adj)(Abl) voce(Abl) Varum(A) nomine(Abl)
+(799) from|army of|Curio the|first column of|fleeing having|followed with|great voice Varus by|name
+(800) appellans(Prä)(Akt)(N) requirebat(Imp)(Akt), uti(Kon) unus(Adj)(N) esse(Prä)(Inf)(Akt) ex(Prp) eius(Pr)(G) militibus(Abl) et(Kon) monere(Prä)(Inf)(Akt)
+(800) calling he|was|asking, that one to|be from of|him soldiers and to|warn
+(801) aliquid(Pr)(A) velle(Prä)(Inf)(Akt) ac(Kon) dicere(Prä)(Inf)(Akt) videretur(Imp)(Knj)(Pas).
+(801) something to|wish and to|say might|seem.
+= § 2 =
+(803) ubi(Kon) ille(Pr)(N) saepius(Adv)(Kmp) appellatus(Per)(Pas)(N) aspexit(Per)(Akt) ac(Kon) restitit(Per)(Akt) et(Kon) quis(Pr)(N) esset(Imp)(Knj)(Akt)
+(803) when that|man rather|often having|been|called he|looked|at and he|stopped and who he|might|be
+(804) aut(Kon) quid(Pr)(A) vellet(Imp)(Knj)(Akt) quaesivit(Per)(Akt), umerum(A) apertum(Per)(Pas)(A) gladio(Abl) appetit(Per)(Akt), paulumque(Adv)(Kon) afuit(Per)(Akt)
+(804) or what he|might|wish he|asked, shoulder open with|sword he|attacked, a|little|and was|away
+(805) quin(Kon) Varum(A) interficeret(Imp)(Knj)(Akt); quod(Kon) ille(Pr)(N) periculum(A) sublato(Per)(Pas)(Abl) ad(Prp) eius(Pr)(G) conatum(A)
+(805) but|that Varus he|might|kill; because that|man danger with|having|been|raised to of|him attempt
+(806) scuto(Abl) vitavit(Per)(Akt). Fabius(N) a(Prp) proximis(Adj)(Abl) militibus(Abl) circumventus(Per)(Pas)(N) interficitur(Prä)(Pas).
+(806) with|shield he|avoided. Fabius by nearest soldiers having|been|surrounded is|killed.
+= § 3 =
+(808) hac(Pr)(Abl) fugientium(Prä)(Akt)(G) multitudine(N)(Abl) ac(Kon) turba(N)(Abl) portae(N) castrorum(G) occupantur(Prä)(Pas) atque(Kon) iter(N)
+(808) by|this of|fleeing multitude and crowd gates of|the|camp are|seized and|also way
+(809) impeditur(Prä)(Pas), pluresque(Adj)(N)(Kon) in(Prp) eo(Pr)(Abl) loco(Abl) sine(Prp) vulnere(Abl) quam(Kon) in(Prp) proelio(Abl)
+(809) is|hindered, more|and in that place without wound than in battle
+(810) aut(Kon) fuga(Abl) intereunt(Prä)(Akt), neque(Kon) multum(Adj)(A) afuit(Per)(Akt) quin(Kon) etiam(Adv) castris(Abl) expellerentur(Imp)(Knj)(Pas),
+(810) or flight they|perish, and|not much was|away but|that also from|the|camp they|might|be|driven|out,
+(811) ac(Kon) nonnulli(Adj)(N) protinus(Adv) eodem(Adj)(Abl) cursu(Abl) in(Prp) oppidum(A) contenderunt(Per)(Akt).
+(811) and some immediately with|the|same course into town they|hurried.
+= § 4 =
+(813) sed(Kon) cum(Kon) loci(G) natura(N) et(Kon) munitio(N) castrorum(G) aditum(A) prohibebat(Imp)(Akt), tum(Adv)
+(813) but when of|the|place nature and fortification of|the|camp approach was|hindering, then
+(814) quod(Kon) ad(Prp) proelium(A) egressi(Per)(Akt)(N) Curionis(G) milites(N) iis(Pr)(Abl) rebus(Abl) indigebant(Imp)(Akt) quae(Pr)(N)
+(814) because to battle having|gone|out of|Curio soldiers of|those|things things were|in|need which
+(815) ad(Prp) oppugnationem(A) castrorum(G) erant(Imp)(Akt) usui(D).
+(815) for siege of|the|camp were for|use.
+= § 5 =
+(817) itaque(Kon) Curio(N) exercitum(A) in(Prp) castra(A) reducit(Prä)(Akt) suis(Pr)(Abl) omnibus(Adj)(Abl) praeter(Prp) Fabium(A)
+(817) and|so Curio army into camp leads|back with|his with|all except Fabius
+(818) incolumibus(Adj)(Abl), ex(Prp) numero(Abl) adversariorum(G) circiter(Adv) dc(Adj)(N) interfectis(Per)(Pas)(Abl) ac(Kon) m(Adj)(N) vulneratis(Per)(Pas)(Abl);
+(818) safe, out|of number of|opponents about six|hundred having|been|killed and thousand having|been|wounded;
+(819) qui(Pr)(N) omnes(Adj)(N) discessu(N)(Abl) Curionis(G) multique(Adj)(N)(Kon) praeterea(Adv) per(Prp) simulationem(A) vulnerum(G) ex(Prp)
+(819) who all by|departure of|Curio many|and besides through pretense of|wounds from
+(820) castris(Abl) in(Prp) oppidum(A) propter(Prp) timorem(A) sese(Pr)(A) recipiunt(Prä)(Akt).
+(820) the|camp into town because|of fear themselves they|withdraw.
+= § 6 =
+(822) qua(Pr)(Abl) re(N)(Abl) animadversa(Per)(Pas)(Abl) Varus(N) et(Kon) terrore(Abl) exercitus(G) cognito(Per)(Pas)(Abl) bucinatore(N)(Abl) in(Prp)
+(822) with|which thing having|been|noticed Varus and by|terror of|the|army with|having|been|learned with|a|trumpeter in
+(823) castris(Abl) et(Kon) paucis(Adj)(Abl) ad(Prp) speciem(A) tabernaculis(Abl) relictis(Per)(Pas)(Abl) de(Prp) tertia(Adj)(Abl) vigilia(Abl)
+(823) the|camp and with|few for appearance tents with|having|been|left at|the third watch
+(824) silentio(Abl) exercitum(A) in(Prp) oppidum(A) reducit(Prä)(Akt).
+(824) in|silence army into town he|leads|back.
+=== Kapitel 36 ===
+= § 1 =
+(827) Postero(Adj)(Abl) die(Abl) Curio(N) obsidere(Prä)(Inf)(Akt) Uticam(A) valloque(N)(Abl)(Kon) circummunire(Prä)(Inf)(Akt) instituit(Per)(Akt). erat(Imp)(Akt) in(Prp)
+(827) on|the next|day Curio to|besiege Utica with|a|rampart|and to|fortify|around he|undertook. there|was in
+(828) oppido(Abl) multitudo(N) insolens(Prä)(Akt)(N) belli(G) diuturnitate(N)(Abl) otii(G), Uticenses(N) pro(Prp) quibusdam(Adj)(Abl) Caesaris(G)
+(828) the|town multitude unaccustomed of|war by|long|duration of|leisure, the|Uticans for certain of|Caesar
+(829) in(Prp) se(Pr)(Abl) beneficiis(Abl) illi(Pr)(D) amicissimi(Adj)(Sup)(N), conventus(N) is(Pr)(N) qui(Pr)(N) ex(Prp) variis(Adj)(Abl)
+(829) toward themselves benefits to|him most|friendly, assembly this who out|of various
+(830) generibus(Abl) constaret(Imp)(Knj)(Akt), terror(N) ex(Prp) superioribus(Adj)(Abl)(Kmp) proeliis(Abl) magnus(Adj)(N).
+(830) kinds might|consist, fear from earlier battles great.
+= § 2 =
+(832) itaque(Kon) de(Prp) deditione(Abl) omnes(Adj)(N) iam(Adv) palam(Adv) loquebantur(Imp)(Pas) et(Kon) cum(Prp) P(N).
+(832) and|so about surrender all already openly were|speaking and with Publius.
+(833) Attio(Abl) agebant(Imp)(Akt), ne(Kon) sua(Adj)(A) pertinacia(Abl) omnium(Adj)(G) fortunas(A) perturbari(Prä)(Inf)(Pas) vellet(Imp)(Knj)(Akt).
+(833) Attius they|were|urging, lest by|his obstinacy of|all fortunes to|be|disturbed he|might|wish.
+= § 3 =
+(835) haec(Pr)(N) cum(Kon) agerentur(Imp)(Knj)(Pas), nuntii(N) praemissi(Per)(Pas)(N) ab(Prp) rege(N)(Abl) Iuba(N) venerunt(Per)(Akt), qui(Pr)(N)
+(835) these|things when were|being|done, messengers having|been|sent|ahead by king Juba came, who
+(836) illum(Pr)(A) adesse(Prä)(Inf)(Akt) cum(Prp) magnis(Adj)(Abl) copiis(Abl) dicerent(Imp)(Knj)(Akt) et(Kon) de(Prp) custodia(Abl) ac(Kon)
+(836) him to|be|present with great troops they|were|saying and about guard and
+(837) defensione(Abl) urbis(G) hortarentur(Imp)(Knj)(Pas). quae(Pr)(N) res(N) eorum(Pr)(G) perterritos(Per)(Pas)(A) animos(A) confirmavit(Per)(Akt).
+(837) defense of|the|city they|were|urging. which thing of|them terrified minds strengthened.
+=== Kapitel 37 ===
+= § 1 =
+(840) Nuntiabantur(Imp)(Pas) haec(Pr)(N) eadem(Adj)(N) Curioni(D), sed(Kon) aliquamdiu(Adv) fides(N) fieri(Prä)(Inf)(Pas) non(Pt) poterat(Imp)(Akt);
+(840) were|being|announced these same to|Curio, but for|some|time belief to|happen not was|able;
+(841) tantam(Adj)(A) habebat(Imp)(Akt) suarum(Pr)(G) rerum(G) fiduciam(A).
+(841) so|great he|had of|his|own of|affairs confidence.
+= § 2 =
+(843) iamque(Adv)(Kon) Caesaris(G) in(Prp) Hispania(Abl) res(N) secundae(Adj)(N) in(Prp) Africam(A) nuntiis(Abl) ac(Kon)
+(843) and|already of|Caesar in Spain affairs favorable into Africa by|messages and
+(844) litteris(Abl) perferebantur(Imp)(Pas). quibus(Pr)(Abl) omnibus(Adj)(Abl) rebus(Abl) sublatus(Per)(Pas)(N) nihil(Pr)(N) contra(Prp) se(Pr)(A) regem(A)
+(844) by|letters were|conveyed. by|which all things having|been|lifted nothing against himself king
+(845) nisurum(Fu1)(Akt)(A) existimabat(Imp)(Akt).
+(845) about|to|attempt he|was|thinking.
+= § 3 =
+(847) sed(Kon) ubi(Kon) certis(Adj)(Abl) auctoribus(Abl) comperit(Per)(Akt) minus(Adv) v(Adj)(N) et(Kon) xx(Adj)(N) milibus(Abl)
+(847) but when by|sure sources he|learned less five and twenty thousands
+(848) longe(Adv) ab(Prp) Utica(Abl) eius(Pr)(G) copias(A) abesse(Prä)(Inf)(Akt), relictis(Per)(Pas)(Abl) munitionibus(Abl) sese(Pr)(A) in(Prp)
+(848) far from Utica of|him forces to|be|away, with|having|been|left fortifications himself into
+(849) Castra(A) Cornelia(Adj)(A) recepit(Per)(Akt).
+(849) Camp Cornelia he|withdrew.
+= § 4 =
+(851) huc(Adv) frumentum(A) comportare(Prä)(Inf)(Akt), castra(A) munire(Prä)(Inf)(Akt), materiam(A) conferre(Prä)(Inf)(Akt) coepit(Per)(Akt), statimque(Adv)(Kon) in(Prp)
+(851) hither grain to|bring|together, camp to|fortify, timber to|carry|together he|began, immediately|and into
+(852) Siciliam(A) misit(Per)(Akt), uti(Kon) duae(Adj)(N) legiones(N) reliquusque(Adj)(N)(Kon) equitatus(N) ad(Prp) se(Pr)(A) mitteretur(Imp)(Knj)(Pas).
+(852) Sicily he|sent, that two legions the|rest|and cavalry to himself might|be|sent.
+= § 5 =
+(854) castra(N) erant(Imp)(Akt) ad(Prp) bellum(A) ducendum(Gdv)(Fu1)(Pas)(A) aptissima(Adj)(Sup)(N) natura(Abl) et(Kon) loci(G) munitione(Abl)
+(854) camp were for war needing|to|be|led most|suitable by|nature and of|the|place by|fortification
+(855) et(Kon) maris(G) propinquitate(Abl) et(Kon) aquae(G) et(Kon) salis(G) copia(N), cuius(Pr)(G) magna(Adj)(N)
+(855) and of|the|sea by|nearness and of|water and of|salt supply, of|which great
+(856) vis(N) iam(Adv) ex(Prp) proximis(Adj)(Abl) erat(Imp)(Akt) salinis(Abl) eo(Adv) congesta(Per)(Pas)(N).
+(856) force already from nearest was salt|works there having|been|piled.
+= § 6 =
+(858) non(Pt) materia(N) multitudine(Abl) arborum(G), non(Pt) frumentum(N), cuius(Pr)(G) erant(Imp)(Akt) plenissimi(Adj)(Sup)(N) agri(N),
+(858) not timber by|multitude of|trees, not grain, of|which were very|full fields,
+(859) deficere(Prä)(Inf)(Akt) poterat(Imp)(Akt). itaque(Kon) omnium(Adj)(G) suorum(Pr)(G) consensu(N)(Abl) Curio(N) reliquas(Adj)(A) copias(A) expectare(Prä)(Inf)(Akt)
+(859) to|be|lacking was|able. and|so of|all of|his|own by|agreement Curio remaining forces to|await
+(860) et(Kon) bellum(A) ducere(Prä)(Inf)(Akt) parabat(Imp)(Akt).
+(860) and war to|protract he|was|preparing.
+=== Kapitel 38 ===
+= § 1 =
+(863) His(Pr)(Abl) constitutis(Per)(Pas)(Abl) rebus(N)(Abl) probatisque(Per)(Pas)(Abl)(Kon) consiliis(N)(Abl) ex(Prp) perfugis(N)(Abl) quibusdam(Adj)(Abl) oppidanis(Adj)(Abl) audit(Prä)(Akt)
+(863) with|these having|been|set|up things having|been|approved|and plans from deserters certain townsmen he|hears
+(864) Iubam(A) revocatum(Per)(Pas)(A) finitimo(Adj)(Abl) bello(N)(Abl) et(Kon) controversiis(N)(Abl) Leptitanorum(G) restitisse(Per)(Inf)(Akt) in(Prp) regno(N)(Abl)
+(864) Juba having|been|called|back by|neighboring war and by|disputes of|the|Leptitani to|have|stayed in the|kingdom
+(865) et(Kon) Saburram(A), eius(Pr)(G) praefectum(A), cum(Prp) mediocribus(Adj)(Abl) copiis(N)(Abl) missum(Per)(Pas)(A) Uticae(D) adpropinquare(Prä)(Inf)(Akt).
+(865) and Saburra, of|him prefect, with moderate forces having|been|sent to|Utica to|approach.
+= § 2 =
+(867) his(Pr)(Abl) auctoribus(N)(Abl) temere(Adv) credens(Prä)(Akt)(N) consilium(A) commutat(Prä)(Akt) et(Kon) proelio(N)(Abl) rem(A) committere(Prä)(Inf)(Akt)
+(867) with|these informers rashly trusting plan he|changes and with|a|battle the|matter to|commit
+(868) constituit(Prä)(Akt). multum(Adv) ad(Prp) hanc(Pr)(A) rem(A) probandam(Gdv)(Fu1)(Pas)(A) adiuvat(Prä)(Akt) adulescentia(N), magnitudo(N) animi(G),
+(868) he|decides. much to this thing needing|to|be|approved helps youth, greatness of|spirit,
+(869) superioris(Adj)(G) temporis(G) proventus(N), fiducia(N) rei(G) bene(Adv) gerendae(Gdv)(Fu1)(Pas)(G).
+(869) of|the|earlier of|time outcome, confidence of|the|thing well needing|to|be|managed.
+= § 3 =
+(871) his(Pr)(Abl) rebus(N)(Abl) impulsus(Per)(Pas)(N) equitatum(A) omnem(Adj)(A) prima(Adj)(Abl) nocte(N)(Abl) ad(Prp) castra(A) hostium(G)
+(871) by|these things having|been|impelled cavalry all in|the|first night to the|camp of|the|enemies
+(872) mittit(Prä)(Akt) ad(Prp) flumen(A) Bagradam(A). quibus(Pr)(D) praeerat(Imp)(Akt) Saburra(N), de(Prp) quo(Pr)(Abl) ante(Adv)
+(872) he|sends to river Bagrada. to|whom was|in|command Saburra, about whom before
+(873) erat(Imp)(Akt) auditum(Per)(Pas)(N), sed(Kon) rex(N) cum(Prp) omnibus(Adj)(Abl) copiis(N)(Abl) insequebatur(Imp)(Akt) et(Kon) vi(N)(Abl)
+(873) had|been heard, but the|king with all forces was|following and by|force
+(874) milium(G) passuum(G) intervallo(N)(Abl) ab(Prp) Saburra(N)(Abl) consederat(Plq)(Akt).
+(874) of|thousands of|paces by|an|interval from Saburra he|had|sat|down.
+= § 4 =
+(876) equites(N) missi(Per)(Pas)(N) nocte(N)(Abl) iter(A) conficiunt(Prä)(Akt) imprudentisque(Adj)(G)(Kon) atque(Kon) inopinantis(Adj)(G) hostis(G) adgrediuntur(Prä)(Pas).
+(876) horsemen having|been|sent by|night march they|complete of|unaware|and and unexpecting of|the|enemy they|attack.
+(877) Numidae(N) enim(Pt) quadam(Adj)(Abl) barbara(Adj)(Abl) consuetudine(N)(Abl) nullis(Adj)(Abl) ordinibus(N)(Abl) passim(Adv) consederant(Plq)(Akt).
+(877) the|Numidians indeed by|a|certain barbarian custom with|no ranks here|and|there had|sat|down.
+= § 5 =
+(879) hos(Pr)(A) oppressos(Per)(Pas)(A) somno(N)(Abl) dispersos(Per)(Pas)(A) adorti(Per)(Akt)(N) magnum(Adj)(A) eorum(Pr)(G) numerum(A) interficiunt(Prä)(Akt); multi(Adj)(N)
+(879) these overpowered by|sleep scattered having|attacked great of|them number they|kill; many
+(880) perterriti(Per)(Pas)(N) profugiunt(Prä)(Akt). quo(Pr)(Abl) facto(Per)(Pas)(Abl) ad(Prp) Curionem(A) equites(N) revertuntur(Prä)(Pas) captivosque(A)(Kon) ad(Prp)
+(880) terrified they|flee. by|which having|been|done to Curio horsemen they|return captives|and to
+(881) eum(Pr)(A) reducunt(Prä)(Akt).
+(881) him they|lead|back.
+=== Kapitel 39 ===
+= § 1 =
+(884) Curio(N) cum(Prp) omnibus(Adj)(Abl) copiis(N)(Abl) quarta(Adj)(Abl) vigilia(N)(Abl) exierat(Plq)(Akt) cohortibus(N)(Abl) v(Adj) castris(N)(Abl)
+(884) Curio with all forces at|the|fourth watch had|gone|out with|cohorts five from|the|camp
+(885) praesidio(D) relictis(Per)(Pas)(Abl). progressus(Per)(Akt)(N) milia(A) passuum(G) vi(Adj) equites(A) convenit(Prä)(Akt), rem(A) gestam(Per)(Pas)(A)
+(885) as|a|garrison having|been|left. having|advanced miles of|paces six horsemen he|meets, thing having|been|done
+(886) cognovit(Per)(Akt); ex(Prp) captivis(N)(Abl) quaerit(Prä)(Akt), quis(Pr)(N) castris(D) ad(Prp) Bagradam(A) praesit(Prä)(Knj)(Akt); respondent(Prä)(Akt)
+(886) he|learned; from captives he|asks, who to|the|camp at Bagrada may|be|in|command; they|reply
+(887) Saburram(A).
+(887) Saburra.
+= § 2 =
+(889) reliqua(Adj)(A) studio(N)(Abl) itineris(G) conficiendi(Gdv)(Fu1)(Pas)(G) quaerere(Prä)(Inf)(Akt) praetermittit(Prä)(Akt) proximaque(Adj)(A)(Kon) respiciens(Prä)(Akt)(N) signa(A), videtisne(Prä)(Akt)(Pt),
+(889) the|rest by|zeal of|the|march needing|to|be|completed to|seek he|omits nearest|and looking|back standards, do|you|see|,
+(890) inquit(Prä)(Akt) milites(A), captivorum(G) orationem(A) cum(Prp) perfugis(N)(Abl) convenire(Prä)(Inf)(Akt)? abesse(Prä)(Inf)(Akt) regem(A), exiguas(Adj)(A)
+(890) he|says soldiers, of|captives speech with deserters to|agree? to|be|away the|king, small
+(891) esse(Prä)(Inf)(Akt) copias(A) missas(Per)(Pas)(A), quae(Pr)(N) paucis(Adj)(Abl) equitibus(Abl) pares(Adj)(N) esse(Prä)(Inf)(Akt) non(Pt) potuerint(Per)(Knj)(Akt)?
+(891) to|be forces having|been|sent, who with|few horsemen equal to|be not may|have|been|able|??
+= § 3 =
+(893) proinde(Adv) ad(Prp) praedam(A), ad(Prp) gloriam(A) properate(Prä)(Imv)(Akt), ut(Kon) iam(Adv) de(Prp) praemiis(N)(Abl)
+(893) therefore to booty, to glory hurry, that already about rewards
+(894) vestris(Adj)(Abl) et(Kon) de(Prp) referenda(Gdv)(Fu1)(Pas)(Abl) gratia(N)(Abl) cogitare(Prä)(Inf)(Akt) incipiamus(Prä)(Knj)(Akt).
+(894) of|yours and about needing|to|be|returned favor to|think we|may|begin.
+= § 4 =
+(896) erant(Imp)(Akt) per(Prp) se(Pr)(Abl) magna(Adj)(N) quae(Pr)(N) gesserant(Plq)(Akt) equites(N), praesertim(Adv) cum(Kon) eorum(Pr)(G)
+(896) there|were by themselves great which had|done horsemen, especially when of|them
+(897) exiguus(Adj)(N) numerus(N) cum(Prp) tanta(Adj)(Abl) multitudine(N)(Abl) Numidarum(G) conferretur(Imp)(Knj)(Pas). haec(Pr)(N) tamen(Pt) ab(Prp)
+(897) small number with so|great multitude of|the|Numidians might|be|compared. these however by
+(898) ipsis(Pr)(Abl) inflatius(Adv)(Kmp) commemorabantur(Imp)(Pas), ut(Kon) de(Prp) suis(Pr)(Abl) homines(N) laudibus(N)(Abl) libenter(Adv) praedicant(Prä)(Akt).
+(898) themselves more|puffingly were|recounted, so|that about their men praises gladly they|proclaim.
+= § 5 =
+(900) multa(Adj)(N) praeterea(Adv) spolia(N) praeferebantur(Imp)(Pas), capti(Per)(Pas)(N) homines(N) equitesque(N)(Kon) producebantur(Imp)(Pas), ut(Kon) quidquid(Pr)(N)
+(900) many besides spoils were|borne|before, captured men horsemen|and were|led|forward, so|that whatever
+(901) intercederet(Imp)(Knj)(Akt) temporis(G), hoc(Pr)(N) omne(Adj)(N) victoriam(A) morari(Prä)(Inf)(Akt) videretur(Imp)(Knj)(Pas). ita(Adv) spei(G) Curionis(G)
+(901) might|intervene of|time, this all victory to|delay might|seem. thus of|hope of|Curios
+(902) militum(G) studia(N) non(Pt) deerant(Imp)(Akt).
+(902) of|the|soldiers desires not were|lacking.
+= § 6 =
+(904) equites(A) sequi(Prä)(Inf)(Akt) iubet(Prä)(Akt) sese(Pr)(A) iterque(A)(Kon) accelerat(Prä)(Akt), ut(Kon) quam(Adv) maxime(Adv)(Sup) ex(Prp)
+(904) horsemen to|follow he|orders himself march|and he|hastens, that as very|much from
+(905) fuga(A) perterritos(Per)(Pas)(A) adoriri(Prä)(Inf)(Akt) posset(Imp)(Knj)(Akt). at(Kon) illi(Pr)(N) itinere(N)(Abl) totius(Adj)(G) noctis(G) confecti(Per)(Pas)(N)
+(905) flight terrified to|attack he|could. but those by|a|march of|all of|night having|been|worn|out
+(906) subsequi(Prä)(Inf)(Akt) non(Pt) poterant(Imp)(Akt) atque(Kon) alii(Pr)(N) alio(Pr)(Abl) loco(N)(Abl) resistebant(Imp)(Akt). ne(Pt) haec(Pr)(N)
+(906) to|follow not they|were|able and others in|another place were|resisting. not these
+(907) quidem(Pt) res(N) Curionem(A) ad(Prp) spem(A) morabatur(Imp)(Akt).
+(907) even the|thing Curio toward hope was|delaying.
+=== Kapitel 40 ===
+= § 1 =
+(910) Iuba(N) certior(Adj)(N)(Kmp) factus(Per)(Pas)(N) a(Prp) Saburra(N)(Abl) de(Prp) nocturno(Adj)(Abl) proelio(N)(Abl) ii(Adj) milia(A)
+(910) Juba more|sure having|been|made by Saburra about nocturnal battle two thousands
+(911) Hispanorum(G) et(Kon) Gallorum(G) equitum(G), quos(Pr)(A) suae(Adj)(G) custodiae(G) causa(N)(Abl) circum(Prp) se(Pr)(A)
+(911) of|Spaniards and of|Gauls of|horsemen, whom of|his guard for|the|sake around himself
+(912) habere(Prä)(Inf)(Akt) consuerat(Plq)(Akt), et(Kon) peditum(G) eam(Pr)(A) partem(A), cui(Pr)(D) maxime(Adv)(Sup) confidebat(Imp)(Akt), Saburrae(D)
+(912) to|have he|had|been|accustomed, and of|foot|soldiers that part, to|which most he|was|trusting, to|Saburra
+(913) summittit(Prä)(Akt); ipse(Pr)(N) cum(Prp) reliquis(Adj)(Abl) copiis(N)(Abl) elephantisque(N)(Abl)(Kon) lx(Adj) lentius(Adv)(Kmp) subsequitur(Prä)(Pas).
+(913) he|sends|up; he with remaining forces and|elephants sixty more|slowly follows.
+= § 2 =
+(915) suspicatus(Per)(Akt)(N) praemissis(Per)(Pas)(Abl) equitibus(N)(Abl) ipsum(Pr)(A) adfore(Fu1)(Inf)(Akt) Curionem(A) Saburra(N) copias(A) equitum(G) peditumque(G)(Kon)
+(915) having|suspected with|having|been|sent|ahead horsemen himself to|be|about|to|be|present Curio Saburra forces of|horsemen and|of|foot|soldiers
+(916) instruit(Prä)(Akt) atque(Kon) his(Pr)(D) imperat(Prä)(Akt), ut(Kon) simulatione(N)(Abl) timoris(G) paulatim(Adv) cedant(Prä)(Knj)(Akt) ac(Kon)
+(916) draws|up and to|these he|orders, that by|a|pretense of|fear gradually they|may|yield and
+(917) pedem(A) referant(Prä)(Knj)(Akt); sese(Pr)(A), cum(Kon) opus(N) esset(Imp)(Knj)(Akt), signum(A) proelii(G) daturum(Fu1)(Akt)(A) et(Kon)
+(917) step they|may|draw|back; himself, when need might|be, a|signal of|battle about|to|give and
+(918) quod(Pr)(A) rem(A) postulare(Prä)(Inf)(Akt) cognovisset(Plq)(Knj)(Akt) imperaturum(Fu1)(Akt)(A).
+(918) what the|matter to|demand he|had|learned about|to|order.
+= § 3 =
+(920) Curio(N) ad(Prp) superiorem(Adj)(A) spem(A) addita(Per)(Pas)(Abl) praesentis(Adj)(G) temporis(G) opinione(N)(Abl) hostes(A) fugere(Prä)(Inf)(Akt)
+(920) Curio to higher hope having|been|added of|the|present of|time with|the|opinion enemies to|flee
+(921) arbitratus(Per)(Akt)(N) copias(A) ex(Prp) locis(N)(Abl) superioribus(Adj)(Abl) in(Prp) campum(A) deducit(Prä)(Akt).
+(921) having|judged forces from places higher into plain he|leads|down.
+=== Kapitel 41 ===
+= § 1 =
+(924) Quibus(Pr)(Abl) ex(Prp) locis(N)(Abl) cum(Kon) longius(Adv)(Kmp) esset(Imp)(Knj)(Akt) progressus(Per)(Akt)(N), confecto(Per)(Pas)(Abl) iam(Adv) labore(N)(Abl)
+(924) from|which from places when farther he|might|have|been having|advanced, with|having|been|completed already toil
+(925) exercitu(N)(Abl) xvi(Adj) milium(G) spatio(N)(Abl) constitit(Per)(Akt).
+(925) with|the|army sixteen of|thousands by|a|space he|halted.
+= § 2 =
+(927) dat(Prä)(Akt) suis(Pr)(D) signum(A) Saburra(N), aciem(A) constituit(Prä)(Akt) et(Kon) circumire(Prä)(Inf)(Akt) ordines(A) atque(Kon)
+(927) gives to|his signal Saburra, battleline he|forms and to|go|around ranks and
+(928) hortari(Prä)(Inf)(Akt) incipit(Prä)(Akt). sed(Kon) peditatu(N)(Abl) dumtaxat(Adv) procul(Adv) ad(Prp) speciem(A) utitur(Prä)(Pas), equites(A)
+(928) to|encourage he|begins. but with|infantry only at|a|distance for appearance he|uses, horsemen
+(929) in(Prp) aciem(A) immittit(Prä)(Akt).
+(929) into battleline he|sends|in.
+= § 3 =
+(931) non(Pt) deest(Prä)(Akt) negotio(D) Curio(N) suosque(Pr)(A)(Kon) hortatur(Prä)(Pas), ut(Kon) spem(A) omnem(Adj)(A) in(Prp)
+(931) not is|lacking to|the|business Curio his|men|and urges, that hope all in
+(932) virtute(N)(Abl) reponant(Prä)(Knj)(Akt). ne(Pt) militibus(D) quidem(Pt), ut(Kon) defessis(Per)(Pas)(Abl), neque(Kon) equitibus(D), ut(Kon)
+(932) courage they|may|place. not to|the|soldiers indeed, as to|the|wearied, nor to|the|horsemen, as
+(933) paucis(Adj)(D) et(Kon) labore(N)(Abl) confectis(Per)(Pas)(D), studium(N) ad(Prp) pugnandum(Ger)(A) virtusque(N)(Kon) deerat(Imp)(Akt); sed(Kon)
+(933) to|few and by|labor having|been|exhausted, zeal to for|fighting courage|and was|lacking; but
+(934) hi(Pr)(N) erant(Imp)(Akt) numero(N)(Abl) cc(Adj), reliqui(Adj)(N) in(Prp) itinere(N)(Abl) substiterant(Plq)(Akt).
+(934) these were in|number two|hundred, the|rest on the|march had|stopped.
+= § 4 =
+(936) hi(Pr)(N) quamcumque(Pr)(A) in(Prp) partem(A) impetum(A) fecerant(Plq)(Akt), hostes(A) loco(N)(Abl) cedere(Prä)(Inf)(Akt) cogebant(Imp)(Akt),
+(936) these whichever into part attack they|had|made, the|enemies from|position to|withdraw they|were|compelling,
+(937) sed(Kon) neque(Kon) longius(Adv)(Kmp) fugientes(Prä)(Akt)(A) prosequi(Prä)(Inf)(Akt), nec(Kon) vehementius(Adv)(Kmp) equos(A) incitare(Prä)(Inf)(Akt) poterant(Imp)(Akt).
+(937) but nor farther those|fleeing to|pursue, nor more|strongly horses to|urge|on were|able.
+= § 5 =
+(939) at(Kon) equitatus(N) hostium(G) ab(Prp) utroque(Adj)(Abl) cornu(N)(Abl) circumire(Prä)(Inf)(Akt) aciem(A) nostram(Adj)(A) et(Kon)
+(939) but cavalry of|the|enemies from both wing to|around|go battleline our and
+(940) aversos(Per)(Pas)(A) proterere(Prä)(Inf)(Akt) incipit(Prä)(Akt).
+(940) having|been|turned|away to|trample|down begins.
+= § 6 =
+(942) cum(Kon) cohortes(N) ex(Prp) acie(N)(Abl) procucurrissent(Plq)(Knj)(Akt), Numidae(N) integri(Adj)(N) celeritate(N)(Abl) impetum(A) nostrorum(Pr)(G)
+(942) when cohorts out|of the|battleline had|run|forward, Numidians fresh with|speed attack of|our|men
+(943) effugiebant(Imp)(Akt), rursusque(Adv)(Kon) ad(Prp) ordines(A) suos(Adj)(A) se(Pr)(A) recipientes(Prä)(Akt)(A) circumibant(Imp)(Akt) et(Kon) ab(Prp)
+(943) were|escaping, again|and to ranks their|own themselves withdrawing were|going|around and from
+(944) acie(N)(Abl) excludebant(Imp)(Akt). sic(Adv) neque(Kon) in(Prp) loco(N)(Abl) manere(Prä)(Inf)(Akt) ordinesque(A)(Kon) servare(Prä)(Inf)(Akt), neque(Kon)
+(944) the|battleline they|were|shutting|out. thus nor in place to|remain ranks|and to|keep, nor
+(945) procurrere(Prä)(Inf)(Akt) et(Kon) casum(A) subire(Prä)(Inf)(Akt) tutum(Adj)(N) videbatur(Imp)(Pas).
+(945) to|run|forward and risk to|undergo safe seemed.
+= § 7 =
+(947) hostium(G) copiae(N) submissis(Per)(Pas)(Abl) ab(Prp) rege(N)(Abl) auxiliis(N)(Abl) crebro(Adv) augebantur(Imp)(Pas); nostros(Pr)(A) vires(N)
+(947) of|the|enemies forces with|having|been|sent|up by the|king reinforcements frequently were|being|increased; our|men strength
+(948) lassitudine(N)(Abl) deficiebant(Imp)(Akt), simul(Adv) ii(Pr)(N) qui(Pr)(N) vulnera(A) acceperant(Plq)(Akt), neque(Kon) acie(N)(Abl) excedere(Prä)(Inf)(Akt),
+(948) from|fatigue were|failing, at|the|same|time those who wounds had|received, nor from|the|battleline to|go|out,
+(949) neque(Kon) in(Prp) locum(A) tutum(Adj)(A) referri(Prä)(Inf)(Pas) poterant(Imp)(Akt), quod(Kon) tota(Adj)(N) acies(N) equitatu(N)(Abl)
+(949) nor into a|place safe to|be|brought|back were|able, because whole battleline by|the|cavalry
+(950) hostium(G) circumdata(Per)(Pas)(N) tenebatur(Imp)(Pas).
+(950) of|the|enemies having|been|surrounded was|held.
+= § 8 =
+(952) hi(Pr)(N) de(Prp) sua(Adj)(Abl) salute(N)(Abl) desperantes(Prä)(Akt)(N), ut(Kon) extremo(Adj)(Abl) vitae(G) tempore(N)(Abl) homines(N)
+(952) these about their|own safety despairing, as at|the|last of|life time men
+(953) facere(Prä)(Inf)(Akt) consuerunt(Per)(Akt), aut(Kon) suam(Adj)(A) mortem(A) miserabantur(Imp)(Pas) aut(Kon) parentes(A) suos(Adj)(A) commendabant(Imp)(Akt),
+(953) to|do have|been|accustomed, or their|own death were|lamenting or parents their|own were|commending,
+(954) siquos(Pr)(A) ex(Prp) eo(Pr)(Abl) periculo(N)(Abl) fortuna(N) servare(Prä)(Inf)(Akt) potuisset(Plq)(Knj)(Akt). plena(Adj)(N) erant(Imp)(Akt) omnia(Adj)(N)
+(954) if|any out|of that danger fortune to|save might|have|been|able. full were all|things
+(955) timoris(G) et(Kon) luctus(G).
+(955) of|fear and of|grief.
+=== Kapitel 42 ===
+= § 1 =
+(958) Curio(N) ubi(Kon) perterritis(Per)(Pas)(Abl) omnibus(Pr)(Abl) neque(Kon) cohortationes(A) suas(Adj)(A) neque(Kon) preces(A) audiri(Prä)(Inf)(Pas)
+(958) Curio when with|having|been|terrified all neither exhortations his|own nor entreaties to|be|heard
+(959) intellegit(Prä)(Akt), unam(Adj)(A) ut(Kon) in(Prp) miseris(Adj)(Abl) rebus(N)(Abl) spem(A) reliquam(Adj)(A) salutis(G) esse(Prä)(Inf)(Akt)
+(959) understands, one that in wretched circumstances hope remaining of|safety to|be
+(960) arbitratus(Per)(Pas)(N) proximos(Adj)(A) colles(A) capere(Prä)(Inf)(Akt) universos(Adj)(A) atque(Kon) eo(Adv) signa(A) inferri(Prä)(Inf)(Pas) iubet(Prä)(Akt).
+(960) having|judged nearest hills to|seize all|together and|also thither standards to|be|carried|in he|orders.
+(961) hos(Pr)(A) quoque(Pt) praeoccupat(Prä)(Akt) missus(Per)(Pas)(N) a(Prp) Saburra(N)(Abl) equitatus(N).
+(961) these also pre|seizes having|been|sent by Saburra cavalry.
+= § 2 =
+(963) tum(Adv) vero(Pt) ad(Prp) summam(Adj)(A) desperationem(A) nostri(Pr)(N) perveniunt(Prä)(Akt) et(Kon) partim(Adv) fugientes(Prä)(Akt)(N)
+(963) then indeed to the|utmost despair our|men arrive and partly fleeing
+(964) ab(Prp) equitatu(N)(Abl) interficiuntur(Prä)(Pas), partim(Adv) integri(Adj)(N) procumbunt(Prä)(Akt).
+(964) by the|cavalry are|killed, partly unharmed fall|down.
+= § 3 =
+(966) hortatur(Prä)(Pas) Curionem(A) Cn(N). Domitius(N) praefectus(N) equitum(G), cum(Prp) paucis(Adj)(Abl) equitibus(N)(Abl) circumsistens(Prä)(Akt)(N),
+(966) urges Curio Gnaeus. Domitius prefect of|cavalry, with a|few horsemen standing|around,
+(967) ut(Kon) fuga(N)(Abl) salutem(A) petat(Prä)(Knj)(Akt) atque(Kon) in(Prp) castra(A) contendat(Prä)(Knj)(Akt), et(Kon) se(Pr)(A)
+(967) that by|flight safety he|may|seek and|also into the|camp he|may|hurry, and himself
+(968) ab(Prp) eo(Pr)(Abl) non(Pt) discessurum(Fu1)(Akt)(A) pollicetur(Prä)(Pas).
+(968) from him not about|to|depart he|promises.
+= § 4 =
+(970) at(Kon) Curio(N) numquam(Adv) se(Pr)(A) amisso(Per)(Pas)(Abl) exercitu(N)(Abl), quem(Pr)(A) a(Prp) Caesare(N)(Abl) fidei(D)
+(970) but Curio never himself with|having|been|lost the|army, which by Caesar to|trust
+(971) commissum(Per)(Pas)(A) acceperit(Per)(Knj)(Akt), in(Prp) eius(Pr)(G) conspectum(A) reversurum(Fu1)(Akt)(A) confirmat(Prä)(Akt) atque(Kon) ita(Adv) proelians(Prä)(Akt)(N)
+(971) having|been|entrusted he|may|have|received, into of|him sight about|to|return affirms and|also thus fighting
+(972) interficitur(Prä)(Pas).
+(972) is|killed.
+= § 5 =
+(974) equites(N) ex(Prp) proelio(N)(Abl) perpauci(Adj)(N) se(Pr)(A) recipiunt(Prä)(Akt); sed(Kon) ii(Pr)(N) quos(Pr)(A) ad(Prp)
+(974) horsemen from the|battle very|few themselves withdraw; but those whom to
+(975) novissimum(Adj)(A) agmen(A) equorum(G) reficiendorum(Gdv)(Fu1)(Pas)(G) causa(N)(Abl) substitisse(Per)(Inf)(Akt) demonstratum(Per)(Pas)(N) est(Prä)(Akt), fuga(N)(Abl) totius(Adj)(G)
+(975) rearmost column of|horses of|being|repaired for|the|sake to|have|stopped having|been|shown is, by|flight of|the|whole
+(976) exercitus(G) procul(Adv) animadversa(Per)(Pas)(Abl) sese(Pr)(A) incolumes(Adj)(A) in(Prp) castra(A) conferunt(Prä)(Akt). milites(N) ad(Prp)
+(976) army from|afar with|having|been|noticed themselves unharmed into the|camp betake|themselves. soldiers to
+(977) unum(Adj)(A) omnes(Adj)(N) interficiuntur(Prä)(Pas).
+(977) to|a|single all are|killed.
+=== Kapitel 43 ===
+= § 1 =
+(980) His(Pr)(Abl) rebus(N)(Abl) cognitis(Per)(Pas)(Abl) Marcius(N) Rufus(N) quaestor(N) in(Prp) castris(N)(Abl) relictus(Per)(Pas)(N) a(Prp)
+(980) with|these things having|been|learned Marcius Rufus quaestor in the|camp having|been|left by
+(981) Curione(N)(Abl) cohortatur(Prä)(Pas) suos(Pr)(A), ne(Kon) animo(N)(Abl) deficiant(Prä)(Knj)(Akt). illi(Pr)(N) orant(Prä)(Akt) atque(Kon) obsecrant(Prä)(Akt),
+(981) Curio exhorts his|men, lest in|spirit they|may|fail. they pray and|also beseech,
+(982) ut(Kon) in(Prp) Siciliam(A) navibus(N)(Abl) reportentur(Prä)(Knj)(Pas). pollicetur(Prä)(Pas) magistrisque(D)(Kon) imperat(Prä)(Akt) navium(G), ut(Kon)
+(982) that into Sicily by|ships they|may|be|brought|back. he|promises and|to|the|captains he|orders of|ships, that
+(983) primo(Adj)(Abl) vespere(N)(Abl) omnes(Adj)(A) scaphas(A) ad(Prp) litus(A) adpulsas(Per)(Pas)(A) habeant(Prä)(Knj)(Akt).
+(983) at|first evening all skiffs to the|shore having|been|driven|to they|may|have.
+= § 2 =
+(985) sed(Kon) tantus(Adj)(N) fuit(Per)(Akt) omnium(Pr)(G) terror(N), ut(Kon) alii(Pr)(N) adesse(Prä)(Inf)(Akt) copias(A) Iubae(G)
+(985) but so|great was of|all terror, that some to|be|present forces of|Juba
+(986) dicerent(Imp)(Knj)(Akt), alii(Pr)(N) cum(Prp) legionibus(N)(Abl) instare(Prä)(Inf)(Akt) Varum(A) iamque(Adv)(Kon) se(Pr)(A) pulverem(A) venientium(Prä)(Akt)(G)
+(986) were|saying, others with legions to|press|hard Varus and|now themselves dust of|those|coming
+(987) cernere(Prä)(Inf)(Akt), quarum(Pr)(G) rerum(G) nihil(Pr)(N) omnino(Adv) acciderat(Plq)(Akt), alii(Pr)(N) classem(A) hostium(G) celeriter(Adv)
+(987) to|perceive, of|which things nothing at|all had|happened, others fleet of|the|enemies quickly
+(988) advolaturam(Fu1)(Akt)(A) suspicarentur(Imp)(Knj)(Pas). itaque(Kon) perterritis(Per)(Pas)(Abl) omnibus(Pr)(Abl) sibi(Pr)(D) quisque(Pr)(N) consulebat(Imp)(Akt).
+(988) about|to|fly|toward they|were|suspecting. and|so with|having|been|terrified all for|themselves each was|looking|out.
+= § 3 =
+(990) qui(Pr)(N) in(Prp) classe(N)(Abl) erant(Imp)(Akt), proficisci(Prä)(Inf)(Pas) properabant(Imp)(Akt). horum(Pr)(G) fuga(N) navium(G) onerariarum(Adj)(G)
+(990) who in the|fleet were, to|set|out were|hastening. of|these flight of|ships of|transport
+(991) magistros(A) incitabat(Imp)(Akt); pauci(Adj)(N) lenunculi(N) ad(Prp) officium(A) imperiumque(A)(Kon) conveniebant(Imp)(Akt).
+(991) captains was|urging|on; few little|boats to duty and|command were|assembling.
+= § 4 =
+(993) sed(Kon) tanta(Adj)(N) erat(Imp)(Akt) completis(Per)(Pas)(Abl) litoribus(N)(Abl) contentio(N), qui(Pr)(N) potissimum(Adv) ex(Prp) magno(Adj)(Abl)
+(993) but so|great was with|having|been|filled shores struggle, who especially from great
+(994) numero(N)(Abl) conscenderent(Imp)(Knj)(Akt), ut(Kon) multitudine(N)(Abl) atque(Kon) onere(N)(Abl) nonnulli(Adj)(N) deprimerentur(Imp)(Knj)(Pas), reliqui(Adj)(N) hoc(Pr)(Abl)
+(994) number they|might|embark, that by|the|multitude and|also by|the|weight some might|be|sunk, the|rest by|this
+(995) timore(N)(Abl) propius(Adv)(Kmp) adire(Prä)(Inf)(Akt) tardarentur(Imp)(Knj)(Pas).
+(995) by|fear more|near to|approach might|be|delayed.
+=== Kapitel 44 ===
+= § 1 =
+(998) Quibus(Pr)(Abl) rebus(N)(Abl) accidit(Prä)(Akt), ut(Kon) pauci(Adj)(N) milites(N) patresque(N)(Kon) familiae(G), qui(Pr)(N) aut(Kon)
+(998) by|which things it|happens, that few soldiers and|heads of|household, who or
+(999) gratia(N)(Abl) aut(Kon) misericordia(N)(Abl) valerent(Imp)(Knj)(Akt) aut(Kon) naves(N) adnare(Prä)(Inf)(Akt) possent(Imp)(Knj)(Akt), recepti(Per)(Pas)(N) in(Prp)
+(999) by|favor or by|pity might|prevail or ships to|sail|to might|be|able, having|been|taken|in into
+(1000) Siciliam(A) incolumes(Adj)(N) pervenirent(Imp)(Knj)(Akt). reliquae(Adj)(N) copiae(N) missis(Per)(Pas)(Abl) ad(Prp) Varum(A) noctu(Adv) legatorum(G)
+(1000) Sicily safe they|might|arrive. remaining forces with|having|been|sent to Varus by|night of|envoys
+(1001) numero(N)(Abl) centurionibus(N)(Abl) sese(Pr)(A) ei(Pr)(D) dediderunt(Per)(Akt).
+(1001) in|the|number of|centurions themselves to|him surrendered.
+= § 2 =
+(1003) quorum(Pr)(G) cohortes(A) militum(G) postero(Adj)(Abl) die(N)(Abl) ante(Prp) oppidum(A) Iuba(N) conspicatus(Per)(Pas)(N), suam(Adj)(A)
+(1003) of|whom cohorts of|soldiers on|the|next day before the|town Juba having|caught|sight, his|own
+(1004) esse(Prä)(Inf)(Akt) praedicans(Prä)(Akt)(N) praedam(A), magnam(Adj)(A) partem(A) eorum(Pr)(G) interfici(Prä)(Inf)(Pas) iussit(Per)(Akt), paucos(Adj)(A) electos(Per)(Pas)(A)
+(1004) to|be proclaiming booty, a|great part of|them to|be|killed he|ordered, a|few chosen
+(1005) in(Prp) regnum(A) remisit(Per)(Akt), cum(Kon) Varus(N) suam(Adj)(A) fidem(A) ab(Prp) eo(Pr)(Abl) laedi(Prä)(Inf)(Pas)
+(1005) into the|kingdom he|sent|back, since Varus his|own good|faith by him to|be|harmed
+(1006) uereretur(Imp)(Knj)(Pas) neque(Kon) resistere(Prä)(Inf)(Akt) auderet(Imp)(Knj)(Akt).
+(1006) he|might|fear nor to|resist he|might|dare.
+= § 3 =
+(1008) ipse(Pr)(N) equo(N)(Abl) in(Prp) oppidum(A) vectus(Per)(Pas)(N) prosequentibus(Prä)(Akt)(Abl) compluribus(Adj)(Abl) senatoribus(N)(Abl), quo(Pr)(Abl) in(Prp)
+(1008) himself on|a|horse into the|town having|been|borne following several senators, among|whom in
+(1009) numero(N)(Abl) erat(Imp)(Akt) Ser(N). Sulpicius(N) et(Kon) Licinius(N) Damasippus(N), paucis(Adj)(Abl) quae(Pr)(A) fieri(Prä)(Inf)(Pas)
+(1009) number was Servius. Sulpicius and Licinius Damasippus, with|a|few things|which to|be|done
+(1010) vellet(Imp)(Knj)(Akt), Uticae(N)(Abl) constituit(Per)(Akt) atque(Kon) imperavit(Per)(Akt), diebus(N)(Abl) aeque(Adv) post(Prp) paucis(Adj)(Abl) se(Pr)(A)
+(1010) he|might|wish, at|Utica he|decided and|also he|ordered, days likewise after a|few himself
+(1011) in(Prp) regnum(A) cum(Prp) omnibus(Adj)(Abl) copiis(N)(Abl) recepit(Per)(Akt).
+(1011) into the|kingdom with all forces he|withdrew.
